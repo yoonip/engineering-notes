@@ -1,5 +1,7 @@
 # 연구 및 학술 활동
 
+[한국어](#연구-및-학술-활동) · [English](#english)
+
 [처음으로](../README.md) · [분야별 목차](../CATALOG.md) · [GitHub 프로필](https://github.com/yoonip)
 
 저전력 AI 연산, 메모리 회로, 신경망 에너지 모델링과 FPGA 계측 자동화 연구에 참여했다.
@@ -160,6 +162,163 @@ TOEIC Speaking IH (Intermediate High)
 
 연구·개발 협업, 기술 교류 및 채용 제안: [dlfvud777@naver.com](mailto:dlfvud777@naver.com)
 
-## Overview
+## English
 
-Research on low-power AI hardware, memory circuits, neural-network energy modeling, and FPGA-based measurement automation. Work spans circuit design and physical verification, SystemVerilog implementation, hardware control, and software tools for analysis and validation.
+[Home](../README.md) · [Topic Index](../CATALOG.md) · [GitHub Profile](https://github.com/yoonip)
+
+I have participated in research on low-power AI computation, memory circuits, neural-network energy modeling, and FPGA-based measurement automation.
+
+### Researcher Information
+
+| Field | Details |
+| --- | --- |
+| Name | Yoon IlPyung |
+| National Researcher Number (IRIS, Korea) | 12944496 |
+
+### Research and Projects
+
+#### Low-Power Neural-Network Computation
+
+This research aims to reduce the power consumed by neural-network computation on edge devices. It combines Bit-Drop circuits, which omit selected operations in INT6/INT8 MACs, with model quantization to analyze the relationship between power and classification accuracy. The focus is hardware–software co-design that brings together circuit simulation and neural-network evaluation.
+
+Master's thesis: Low-power computing techniques of artificial neural networks for edge devices, Kookmin University, 2025.
+
+#### 65nm 8KB SRAM
+
+This industry–university research project investigates 65nm 8KB SRAM with reduced standby leakage. It examines voltage and bias control alongside circuit and physical structures, using simulations under different conditions to study the relationship between leakage current and operating characteristics.
+
+#### AI Energy Modeling and DRAM-PIM
+
+This research analyzes weight-memory access and computation energy in CNNs and transformers and examines processing-in-memory architectures. It compares energy bottlenecks across model architectures and batch sizes and represents DRAM-PIM behavior in RTL for verification.
+
+#### Transformer DRAM-PiM Research
+
+This project aims to improve the energy efficiency of GPT-family models through DRAM-PiM. It analyzes memory–computation bottlenecks and energy-use characteristics across models, then connects the findings to the determination of DRAM-PiM design parameters, including bandwidth and computation ratios. It also covers the implementation and simulation of an RTL prototype with additional PUs and an Adder-tree.
+
+| Field | Details |
+| --- | --- |
+| Project title | Transformer DRAM-PiM Research |
+| Program | 2024 Research Grant Program for Master's Students |
+| Funding organization | National Research Foundation of Korea |
+| Project number | RS-2024-00395426 |
+| Total research period | 2024.07.01. ~ 2025.06.30. |
+| Affiliated institution | Kookmin University |
+
+#### FPGA-Based Mixed-Signal Measurement Automation
+
+This project concerns a mixed-signal measurement environment in which an FPGA transmits digital patterns and collects ADC/DAC responses. Its purpose is to automate repeated measurements by connecting hardware control with measurement-data acquisition and visualization.
+
+#### Solar Energy Harvesting System
+
+This self-powered Arduino system adjusts the ratio of Active to Sleep time according to solar intensity. It monitors the energy source and adjusts operating modes so that system operation matches the energy available for harvesting.
+
+#### T5-Based Braille Back-Translation
+
+This project uses T5 to convert Braille into contextually appropriate Korean sentences. It uses the structure of 6-bit Braille and sentence data to learn correspondences between Braille and Korean text.
+
+### Research Topics
+
+| Category | Topic |
+| --- | --- |
+| National research project | Artificial neural networks based on BEOL resistive-switching synapse arrays |
+| National research project | Integration technology, circuits, and architectures for 3D FeRAM |
+| National research project | Local learning with hybrid memristor–IGZO DRAM devices |
+| National research project | RRAM-based mixed-signal neuromorphic architectures and local-learning circuits |
+| Research grant for master's students | Transformer DRAM-PIM |
+| Industry–university collaboration | Ultra Low Leakage SRAM |
+
+### Publications and Technical Articles
+
+#### 2025 · Energy Analysis of AI Models
+
+“Comparative Study on Energy Consumption of Neural Networks by Scaling of Weight-Memory Energy Versus Computing Energy for Implementing Low-Power Edge Intelligence.” Electronics, 14(13), 2718, 2025.
+
+[Publication information](https://doi.org/10.3390/electronics14132718)
+
+This study compares the energy consumed by weight-memory access and MAC operations in CNNs and transformers. It examines how bottlenecks change with model architecture, batch size, and energy scaling.
+
+#### 2024 · Memristor Crossbar Mapping Optimization
+
+“Optimization of Memristor Crossbar’s Mapping Using Lagrange Multiplier Method and Genetic Algorithm for Reducing Crossbar’s Area and Delay Time.” Information, 15(7), 409, 2024.
+
+[Publication information](https://doi.org/10.3390/info15070409)
+
+This research examines resource allocation for CNN crossbars using the Lagrange multiplier method and a genetic algorithm. It addresses optimization under area and delay constraints and minimization of the area–delay product.
+
+#### 2024 · Unconventional Computing Hardware Technologies
+
+“Unconventional Computing Hardware Technologies.” The Magazine of the IEIE, 51(3), March 2024. Special feature article.
+
+[IEIE magazine contents](https://paper.cricit.kr/user/listview/ieie2018/gby_cmag.asp?dbcode=&organCode=ieie&organCode2=ieie04&seid=&step=4&usernum=0&yearmonth=202403)
+
+#### 2022 · Self-Powered Arduino System
+
+“Design and Operation of a Self-Powered Arduino System for Solar Energy Harvesting.” Journal of IKEEE, 26(3), 483–487, 2022.
+
+[Publication information](https://doi.org/10.7471/ikeee.2022.26.3.483) · [KCI](https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002883800)
+
+This article covers the design and operation of a system that adjusts its Active/Sleep duty cycle in response to changes in sunlight.
+
+### Awards
+
+| Year | Awarding Institution | Award |
+| --- | --- | --- |
+| 2025 | Kookmin University | Outstanding Talent Award |
+| 2024 | Institute of Korean Electrical and Electronics Engineers | Outstanding Journal Paper Award |
+| 2023 | Institute of Korean Electrical and Electronics Engineers | Outstanding Journal Paper Award |
+| 2022 | Center for Engineering Education Innovation, Kookmin University | Grand Prize, Prototype (Convergence) Category, KMU Capstone Design Competition |
+| 2022 | Center for Engineering Education Innovation, Kookmin University | Gold Prize, Intellectual Property Camp |
+| 2022 | Kookmin University | Silver Prize, Intellectual Property Category, Capstone Design Competition |
+
+### Technical Areas
+
+Technical areas span semiconductor circuits, digital hardware design, firmware, silicon validation, measurement automation, and AI model analysis.
+
+| Area | Technologies and Tools |
+| --- | --- |
+| Semiconductor and memory circuits | CMOS, SRAM, DRAM-PIM, AI accelerators, MAC, Adder Tree |
+| SRAM architecture | Bank, Sub-block, Bitcell Array, WL Driver, Decoder, MUX, Sense Amplifier |
+| Circuit design and simulation | Cadence Virtuoso, Spectre, Verilog-A, PVT analysis, SNM, DVS, RBB |
+| Layout and physical verification | Full-Chip Layout, Tape-out, TEG Layout, Calibre DRC/LVS, PEX, Assura |
+| Process and design environments | 45nm and 65nm PDKs, EDA and Ruledeck environments |
+| RTL design and verification | Verilog, SystemVerilog, FIFO, clock domains, cycle-level functional verification, Xcelium, QuestaSim |
+| Mixed-signal modeling | XMODEL, Glister, Modelzen |
+| FPGA and bring-up | Vivado, Opal Kelly XEM8320, Nexys 4 DDR, SYZYGY, FrontPanel API |
+| MCU and embedded platforms | STM32, ESP32, Arm Cortex-M, Raspberry Pi, Arduino, STM32CubeIDE, PlatformIO |
+| Hardware and firmware | MCU, embedded firmware, Linux drivers, power circuits, PCB, UART, SPI, GPIO, ADC/DAC, boot process, memory maps, interrupts, DMA, FreeRTOS |
+| Post-silicon validation | Silicon Bring-up, device characterization and parameter analysis, DC and pulse measurements, Probe-card Testing |
+| Measurement and test automation | Test vectors and sequences, Telemetry, Logging, data acquisition and visualization, Tkinter, Matplotlib |
+| System debugging | JTAG, SWD, ST-Link, OpenOCD, GDB, signal integrity and bus timing analysis |
+| Architecture and virtual labs | Arm, RISC-V, Renode, Spike, instruction-level execution, memory regression testing, fault injection |
+
+### Programming Languages and Development Environments
+
+| Area | Languages and Tools |
+| --- | --- |
+| Systems and embedded programming | C, C++ |
+| Analysis, automation, and numerical computing | Python, MATLAB, Bash |
+| AI and model analysis | PyTorch, TensorFlow, Hugging Face, CNN, LLM, T5, model quantization, energy modeling for memory, MAC, and KV Cache, memory-bound and compute-bound analysis |
+| Development and GPU environments | Linux (CentOS, Ubuntu), GPU servers, Jupyter Notebook, CUDA, cuDNN, Docker, Git |
+
+### Measurement Equipment
+
+| Category | Equipment |
+| --- | --- |
+| Semiconductor and device measurements | Keithley 4200A-SCS (SMU, high-speed PMU), HP 4155B |
+| Probing and temperature control | Vacuum probe station, probe card, Hot Chuck |
+| Waveform observation | Digital oscilloscope |
+| Digital signal analysis | Logic analyzer |
+
+### English Proficiency
+
+TOEIC Speaking IH (Intermediate High)
+
+| Skill | Use |
+| --- | --- |
+| Reading | Reading English-language research papers, technical documentation, and current affairs articles |
+| Writing | Documenting research and technical experience in English |
+| Speaking | Communicating in English about everyday and work-related topics |
+
+### Contact
+
+For research and development collaboration, technical exchange, and career opportunities: [dlfvud777@naver.com](mailto:dlfvud777@naver.com)
