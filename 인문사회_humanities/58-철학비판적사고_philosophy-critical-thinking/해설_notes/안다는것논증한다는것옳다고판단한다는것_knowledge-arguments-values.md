@@ -12,6 +12,21 @@
 
 예를 들어 단위가 잘못된 계산 두 곳이 우연히 상쇄되어 답만 맞았다고 하겠습니다. 답의 일치와 계산 과정의 신뢰성은 별도로 평가해야 합니다. 이는 개념 설명을 위한 예이며 실제 시험 결과가 아닙니다. 공학에서 식의 유도와 조건, 독립적인 계산을 함께 남기는 이유도 여기에 있습니다.
 
+#### 고장 센서의 표시가 우연히 맞았다면
+
+다음은 직접 구성한 설비 온도 센서 사례입니다. 실제 사고나 측정 결과를 보고하는 것이 아닙니다. 담당자는 점검 이력이 정상인 센서가 80도를 표시하므로 설비가 80도라고 믿습니다. 모르는 사이 센서 출력이 고정되었고, 실제 온도가 우연히 80도였다고 가정합니다.
+
+| 구분 | 이 사례에서 확인할 것 |
+| --- | --- |
+| 참 | 실제 온도가 80도라는 사실입니다. |
+| 믿음 | 담당자가 설비 온도를 80도라고 받아들입니다. |
+| 근거 | 화면과 정상 점검 이력이 담당자에게는 믿을 이유를 제공합니다. |
+| 반론 | 출력이 고정되어 실제 온도가 달라도 같은 답이 나왔을 것입니다. |
+
+센서 고장이라는 반론은 현재 온도가 80도라는 사실을 곧바로 거짓으로 만들지 않습니다. 그 사실을 안다고 할 경로에 문제를 제기합니다. 주체가 가진 증거를 중시하는지, 실제 측정 과정의 신뢰성을 중시하는지에 따라 정당화의 평가도 달라질 수 있습니다. 위의 단위 오류 상쇄는 단지 답의 참과 추론의 질을 나눈 예이며, 그것만으로 JTB의 세 조건을 모두 만족하는 Gettier 반례라고 보장되지는 않습니다.
+
+[지식과 근거](../개념_concepts/지식과근거_knowledge-and-justification.md)에서 경험론·합리론·회의주의와 Gettier 문제를 더 자세히 배웁니다. 별도 측정 원리의 교차 확인이나 기록 시각 검사는 구체적인 오류 가능성을 줄이는 방법이지만, 지식의 모든 철학적 조건을 자동으로 해결하는 공식은 아닙니다.
+
 ### 전제의 참과 추론의 타당성
 
 논증은 결론을 뒷받침하는 전제와 추론으로 이루어집니다. 고전 연역논리에서 타당성은 전제가 모두 참인데 결론만 거짓인 경우가 불가능하다는 뜻입니다. 전제도 실제로 참인 타당한 논증을 건전하다고 합니다. 결론이 마음에 들거나 우연히 참이라는 사실만으로 추론이 타당해지지는 않습니다. [SEP, Informal Logic §4.1](https://plato.stanford.edu/entries/logic-informal/)
@@ -38,6 +53,14 @@ $$P\Rightarrow Q,\quad P\quad\therefore Q$$
 
 도덕적 숙고에서는 결과와 피해, 권리와 의무, 공정한 절차, 관계와 책임 등 서로 다른 고려가 충돌할 수 있습니다. 어떤 관점이든 이름만 붙이는 것으로 판단이 끝나지는 않습니다. 누구의 이익과 부담을 세었는지, 놓친 사람이 없는지, 비교한 대안이 실제로 가능한지 설명해야 합니다. [SEP, Moral Reasoning §2](https://plato.stanford.edu/entries/reasoning-moral/)
 
+#### 전력 절감과 수리 가능성이 갈리는 설계
+
+직접 만든 비교에서 같은 기능과 안전 조건을 충족하는 장치 A는 8W, B는 10W를 쓰며 연간 사용시간은 1,000시간이라고 하겠습니다. 사용 중 전력만 계산하면 A는 8kWh, B는 10kWh이므로 A가 연간 2kWh를 덜 씁니다. 하지만 A는 배터리를 교체할 수 없고 B는 교체할 수 있다고 추가합니다. 제조·폐기 영향과 실제 수명은 아직 조사하지 않았습니다.
+
+결과를 평가하려면 사용 전력 외에 수명·제조·수리·폐기의 영향을 더 알아야 합니다. 정보 제공 의무를 중시한다면 교체 불가능성을 구매자에게 숨겼는지도 중요합니다. 덕의 관점에서는 설계자가 유리한 수치만 알리지 않고 한계와 불확실성을 정직하게 설명하는지 물을 수 있습니다. 접근성·분배를 중시하면 초기 가격이나 수리 비용을 감당하기 어려운 이용자에게 어떤 부담이 생기는지도 확인합니다.
+
+따라서 ‘A의 사용 전력이 낮습니다’는 이 설정에서 계산된 사실이지만 ‘A를 채택해야 합니다’는 아직 완성되지 않은 결론입니다. 반대로 자료가 덜 모였다고 모든 선택이 똑같이 옳은 것도 아닙니다. 적용할 기준과 필요한 자료를 구분해 조건부 판단을 만들 수 있습니다. [윤리와 정의](../개념_concepts/윤리와정의_ethics-and-justice.md)에서는 결과·의무·덕과 권리·자유·평등의 논거를 비교합니다.
+
 ![안다는 것, 논증한다는 것, 옳다고 판단한다는 것 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/knowledge-arguments-values.png)
 
 [SVG](../../../자료_assets/도식_diagrams/knowledge-arguments-values.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/knowledge-arguments-values.mmd)
@@ -60,6 +83,12 @@ Epistemology studies knowledge, belief, and justification. Believing something i
 
 Suppose two unit errors accidentally cancel and leave a correct answer. Agreement of the answer and reliability of the reasoning deserve separate evaluation. This is a conceptual example, not an actual test result. It explains why engineering accounts preserve derivations, conditions, and independent calculations.
 
+#### A faulty sensor can display a true value
+
+In this constructed example, a maintained sensor displays 80 degrees and the operator believes the equipment is at that temperature. Unknown to the operator, the output has become stuck; the actual temperature happens to be 80 degrees. Truth concerns the actual temperature, belief concerns what the operator accepts, and the display and maintenance history provide apparent grounds. The objection targets the belief-forming route: a different temperature would have produced the same display. It does not make the present temperature false.
+
+Justification can be evaluated differently depending on whether the focus is accessible evidence or the actual process. The earlier unit-error example separates a correct answer from good reasoning; it does not by itself establish all three conditions of a Gettier counterexample. [Knowledge and justification](../개념_concepts/지식과근거_knowledge-and-justification.md) develops the distinctions, sources of knowledge, skepticism and Gettier's challenge. No physical sensor test was performed here.
+
 ### Are the premises true, and does the conclusion follow?
 
 An argument supports a conclusion using premises and inference. In classical deductive logic, validity means that true premises and a false conclusion are impossible together. A valid argument with true premises is sound. A pleasing or accidentally true conclusion does not establish validity. [SEP, Informal Logic §4.1](https://plato.stanford.edu/entries/logic-informal/)
@@ -75,6 +104,12 @@ Induction infers patterns from observations; inference to a good explanation com
 “This design consumes less power” is a claim to examine through measurements and conditions. “It should therefore outrank every alternative” adds a priority among energy, price, accessibility, safety, and other considerations. Measurement does not automatically supply that priority.
 
 Moral deliberation can involve competing consequences and harms, rights and duties, fair procedures, relationships, and responsibilities. Naming a perspective does not finish the reasoning. Explain whose benefits and burdens count, who may have been omitted, and whether the alternatives are feasible. [SEP, Moral Reasoning §2](https://plato.stanford.edu/entries/reasoning-moral/)
+
+#### Power consumption and repairability can favor different designs
+
+Assume two devices provide the same function and meet the same safety conditions. A uses 8 W and B uses 10 W for 1,000 hours per year. Their operational consumption is 8 and 10 kWh, a 2 kWh difference. Now assume A has a non-replaceable battery while B allows replacement. Manufacturing, disposal and service life have not been assessed. These are constructed assumptions, not measured product specifications.
+
+A consequence-based assessment needs more than operational electricity. An obligation-based assessment can ask whether the repair limitation was concealed. A character-based assessment can examine honest disclosure of limitations and uncertainty, while distributional analysis asks who bears purchase and repair costs. The lower operational consumption is established within the example; an unconditional recommendation is not. [Ethics and justice](../개념_concepts/윤리와정의_ethics-and-justice.md) compares the reasons and objections without treating missing data as proof that every option is equally good.
 
 The original diagram above combines factual evidence and value priorities with premises, objections, a qualified conclusion, and revision. Values do not remove the need for factual checking; factual knowledge does not remove the need to disclose value choices.
 
