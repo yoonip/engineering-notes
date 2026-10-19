@@ -10,6 +10,8 @@ I believe engineering should improve people's lives. I value technology that red
 
 [Foundations: concepts, derivations, models, and verification](docs/FOUNDATIONS.md#english)
 
+[Reasoning, assessments and humanities](docs/REASONING_AND_HUMANITIES.md#english)
+
 ## Contents
 
 - [Linux & Bash](topics/01-linux-bash/README.md)
@@ -68,6 +70,12 @@ I believe engineering should improve people's lives. I value technology that red
 - [Research Frontiers](topics/54-research-frontiers/README.md)
 - [Applications, Resumes & Assessment Experiences](topics/55-applications-assessments/README.md)
 - [Physics Foundations](topics/56-physics-foundations/README.md)
+
+- [Reasoning, Reading and Aptitude Assessments](topics/57-reasoning-assessments/README.md#english)
+- [Philosophy and Critical Thinking](topics/58-philosophy-critical-thinking/README.md#english)
+- [Economics, Choices and Indicators](topics/59-economics/README.md#english)
+- [Society, Institutions and Evidence](topics/60-society-institutions/README.md#english)
+- [Law Foundations and Legal Reading](topics/61-law-foundations/README.md#english)
 
 ## Author
 

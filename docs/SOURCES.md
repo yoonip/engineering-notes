@@ -62,8 +62,12 @@
 
 [기초 문서의 출처·교차 확인·검증 범위](FOUNDATIONS_REVIEW.md)에서 문서별 근거와 실행 검사를 연결했다. 각 기초 글에도 해당 정의와 식을 뒷받침하는 직접 링크가 있다.
 
+[추론·인문·사회 문서의 출처](REASONING_SOURCES.json)는 기출·개념·연구 근거를 글별로 연결한다.
+
 ## English
 
 The links above collect official documentation, open teaching materials, and project references used throughout these notes. Each topic page also links to the sources most relevant to its subject. [Official model references](../model-lab/PROVIDERS.md) are grouped by provider.
 
 [Foundation sources, cross-checks and verification scope](FOUNDATIONS_REVIEW.md#english) connect article-level references with executable checks. Each foundation article links directly to the sources supporting its definitions and equations.
+
+[Reasoning and humanities references](REASONING_SOURCES.json) index official exam, conceptual and research sources by article.

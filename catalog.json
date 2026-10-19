@@ -1264,6 +1264,122 @@
       ],
       "summary_ko": "힘과 에너지 보존에서 출발해 진동과 열전도를 모델링한다. 초기·경계조건을 정하고 해석해, 시간 간격과 격자 수렴으로 계산을 확인한다.",
       "summary_en": "Models oscillation and heat conduction from force and energy balances, specifying initial and boundary conditions and checking calculations with analytical solutions and time/grid refinement."
+    },
+    {
+      "number": 57,
+      "slug": "57-reasoning-assessments",
+      "title": "추론·독해·적성시험",
+      "english_title": "Reasoning, Reading and Aptitude Assessments",
+      "sections": [
+        "형식 논리와 추론",
+        "논증 독해와 반례",
+        "비율·자료해석·확률 추론",
+        "조건·제약·판단",
+        "연습·피드백·통찰",
+        "공식 시험과 기출 자료",
+        "공식 기출 분석"
+      ],
+      "english_sections": [
+        "Formal logic and inference",
+        "Argument reading and counterexamples",
+        "Quantitative data reasoning",
+        "Constraint and decision reasoning",
+        "Practice, feedback and insight",
+        "Official exams and past-paper sources",
+        "Verified past-paper walkthroughs"
+      ],
+      "keywords": "LEET, PSAT, SKCT, GSAT, HMAT, Logic, Reading, Data Interpretation, Decision Making",
+      "path": "topics/57-reasoning-assessments/README.md",
+      "references": [
+        "https://info.leet.or.kr/",
+        "https://www.akls.kr/",
+        "https://www.mpm.go.kr/"
+      ],
+      "summary_ko": "논증을 읽고 조건을 모델링하며 자료의 단위와 비율을 확인한다. LEET·PSAT와 기업 적성시험의 공식 자료를 구분하고, 실제 기출은 확인한 출처와 문항 번호로 분석한다.",
+      "summary_en": "Reads arguments, models constraints, and checks units and ratios. Distinguishes official LEET, PSAT and corporate assessment sources and analyzes verified past questions by source and question identifier."
+    },
+    {
+      "number": 58,
+      "slug": "58-philosophy-critical-thinking",
+      "title": "철학·비판적 사고",
+      "english_title": "Philosophy and Critical Thinking",
+      "sections": [
+        "지식·논증·가치"
+      ],
+      "english_sections": [
+        "Knowledge, arguments and values"
+      ],
+      "keywords": "Epistemology, Ethics, Critical Thinking, Arguments, Values",
+      "path": "topics/58-philosophy-critical-thinking/README.md",
+      "references": [
+        "https://plato.stanford.edu/"
+      ],
+      "summary_ko": "지식과 근거, 사실과 가치, 좋은 논증과 반론의 관계를 살핀다. 개념을 정의하고 입장을 비교하며 무엇이 결론을 바꿀 수 있는지 검토한다.",
+      "summary_en": "Examines knowledge, justification, facts, values and arguments by defining concepts, comparing positions and identifying what could change a conclusion."
+    },
+    {
+      "number": 59,
+      "slug": "59-economics",
+      "title": "경제·선택·지표",
+      "english_title": "Economics, Choices and Indicators",
+      "sections": [
+        "희소성·기회비용·유인",
+        "GDP·물가·실질가치"
+      ],
+      "english_sections": [
+        "Scarcity, opportunity cost and incentives",
+        "GDP, inflation and real values"
+      ],
+      "keywords": "Opportunity Cost, Incentives, GDP, CPI, Inflation, Nominal and Real",
+      "path": "topics/59-economics/README.md",
+      "references": [
+        "https://www.bok.or.kr/",
+        "https://www.bea.gov/",
+        "https://www.oecd.org/"
+      ],
+      "summary_ko": "희소성·기회비용·유인에서 출발해 경제적 선택을 분석하고, GDP와 물가를 정의·분모·기준시점에 맞게 읽는다.",
+      "summary_en": "Analyzes choice through scarcity, opportunity cost and incentives, and reads GDP and prices with their definitions, denominators and reference periods."
+    },
+    {
+      "number": 60,
+      "slug": "60-society-institutions",
+      "title": "사회·제도·증거",
+      "english_title": "Society, Institutions and Evidence",
+      "sections": [
+        "증거·인과·제도"
+      ],
+      "english_sections": [
+        "Evidence, causality and institutions"
+      ],
+      "keywords": "Institutions, Causality, Evidence, Sampling, Confounding, Social Indicators",
+      "path": "topics/60-society-institutions/README.md",
+      "references": [
+        "https://www.povertyactionlab.org/",
+        "https://www.worldbank.org/"
+      ],
+      "summary_ko": "사회 현상을 설명하는 지표와 제도를 읽고, 표본·비교집단·교란요인을 통해 자료가 지지하는 결론의 범위를 살핀다.",
+      "summary_en": "Studies social indicators and institutions, examining how samples, comparisons and confounding limit evidence-based conclusions."
+    },
+    {
+      "number": 61,
+      "slug": "61-law-foundations",
+      "title": "법의 기초·법령 읽기",
+      "english_title": "Law Foundations and Legal Reading",
+      "sections": [
+        "법의 출처·효력·해석"
+      ],
+      "english_sections": [
+        "Legal sources, validity and interpretation"
+      ],
+      "keywords": "Korean Constitution, Statutes, Legal Interpretation, Effective Dates, Case Law",
+      "path": "topics/61-law-foundations/README.md",
+      "references": [
+        "https://www.law.go.kr/",
+        "https://www.moleg.go.kr/",
+        "https://www.ccourt.go.kr/"
+      ],
+      "summary_ko": "대한민국의 헌법·법률·명령·조례와 법령의 시행시점을 구분하고, 법적 요건과 효과를 원문에 근거해 읽는다.",
+      "summary_en": "Distinguishes Korean constitutional, statutory and subordinate legal sources and their effective dates, reading legal conditions and effects against the authoritative text."
     }
   ],
   "providers": [

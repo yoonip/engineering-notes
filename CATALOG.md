@@ -87,6 +87,16 @@
 
 [AI 기업과 모델](model-lab/PROVIDERS.md) · [코드 예제](examples/README.md) · [English overview](README.en.md)
 
+## 추론·철학·경제·사회·법
+
+[분야를 연결해 읽기](docs/REASONING_AND_HUMANITIES.md)
+
+- [추론·독해·적성시험](topics/57-reasoning-assessments/README.md) — 형식 논리와 추론 · 논증 독해와 반례 · 비율·자료해석·확률 추론 · 조건·제약·판단 · 연습·피드백·통찰 · 공식 시험과 기출 자료 · 공식 기출 분석
+- [철학·비판적 사고](topics/58-philosophy-critical-thinking/README.md) — 지식·논증·가치
+- [경제·선택·지표](topics/59-economics/README.md) — 희소성·기회비용·유인 · GDP·물가·실질가치
+- [사회·제도·증거](topics/60-society-institutions/README.md) — 증거·인과·제도
+- [법의 기초·법령 읽기](topics/61-law-foundations/README.md) — 법의 출처·효력·해석
+
 ## English
 
 [24 foundational articles: concepts, derivations, models and verification](docs/FOUNDATIONS.md#english)
@@ -175,3 +185,13 @@ Concepts connecting circuits and semiconductor devices with systems, software, a
 - [Applications, Resumes & Assessment Experiences](topics/55-applications-assessments/README.md) — Company application records · Coding tests · Contact
 
 [AI models and providers](model-lab/PROVIDERS.md) · [Code examples](examples/README.md) · [English introduction](README.en.md)
+
+### Reasoning, philosophy, economics, society and law
+
+[Reading guide](docs/REASONING_AND_HUMANITIES.md#english)
+
+- [Reasoning, Reading and Aptitude Assessments](topics/57-reasoning-assessments/README.md#english) — Formal logic and inference · Argument reading and counterexamples · Quantitative data reasoning · Constraint and decision reasoning · Practice, feedback and insight · Official exams and past-paper sources · Verified past-paper walkthroughs
+- [Philosophy and Critical Thinking](topics/58-philosophy-critical-thinking/README.md#english) — Knowledge, arguments and values
+- [Economics, Choices and Indicators](topics/59-economics/README.md#english) — Scarcity, opportunity cost and incentives · GDP, inflation and real values
+- [Society, Institutions and Evidence](topics/60-society-institutions/README.md#english) — Evidence, causality and institutions
+- [Law Foundations and Legal Reading](topics/61-law-foundations/README.md#english) — Legal sources, validity and interpretation

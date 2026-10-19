@@ -19,6 +19,10 @@
 
 연구·협업·채용 관련 연락: [dlfvud777@naver.com](mailto:dlfvud777@naver.com)
 
+## 추론·적성시험 자료
+
+[별도 학습 문서](../57-reasoning-assessments/README.md)는 LEET·PSAT와 기업 적성시험의 공식 자료, 논증·자료해석·조건 판단을 다룬다. 개인의 지원 이력과 시험 개념 자료를 구분해 찾아볼 수 있다.
+
 ## English
 
 ### Applications and assessments
@@ -39,3 +43,7 @@ Data structures, algorithms, and problem-solving records are collected in [Algor
 #### Contact
 
 For research, collaboration, or career opportunities: [dlfvud777@naver.com](mailto:dlfvud777@naver.com).
+
+### Reasoning and assessment material
+
+[Separate learning notes](../57-reasoning-assessments/README.md#english) cover official LEET, PSAT and corporate-assessment sources, arguments, data interpretation and constraints. These are distinct from personal application records.
