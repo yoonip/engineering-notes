@@ -6,13 +6,13 @@
 
 ### 스위치를 꺼도 전류가 계속 흐르는 이유
 
-Buck converter는 입력 전압을 스위칭하고 인덕터·커패시터로 평활해 낮은 DC 전압을 만든다. 인덕터 전류는 순간적으로 바뀔 수 없으므로 switch가 꺼진 구간에도 diode 또는 동기식 하단 MOSFET을 통한 전류 경로가 필요하다. 여기서는 주기 정상상태, 이상적인 switch·diode, 일정한 입력, 작은 출력 ripple, 양의 inductor current가 한 주기 내내 유지되는 CCM을 가정한다. [TI SLVA057의 CCM 해석](https://www.ti.com/lit/an/slva057/slva057.pdf)
+Buck converter는 입력 전압을 스위칭하고 인덕터·커패시터로 평활해 낮은 DC 전압을 만듭니다. 인덕터 전류는 순간적으로 바뀔 수 없으므로 switch가 꺼진 구간에도 diode 또는 동기식 하단 MOSFET을 통한 전류 경로가 필요합니다. 여기서는 주기 정상상태, 이상적인 switch·diode, 일정한 입력, 작은 출력 ripple, 양의 inductor current가 한 주기 내내 유지되는 CCM을 가정합니다. [TI SLVA057의 CCM 해석](https://www.ti.com/lit/an/slva057/slva057.pdf)
 
-기호는 입력 $`V_{in}`$, 평균 출력 $`V_o`$, 인덕턴스 L(H), 출력 C(F), 주파수 $`f_s`$(Hz), 주기 $`T_s=1/f_s`$, duty $`D=t_{on}/T_s`$, 평균 부하전류 $`I_o`$다. 출력 capacitor의 한 주기 평균 전류가 0이므로 평균 inductor current도 $`I_o`$다.
+기호는 입력 $`V_{in}`$, 평균 출력 $`V_o`$, 인덕턴스 L(H), 출력 C(F), 주파수 $`f_s`$(Hz), 주기 $`T_s=1/f_s`$, duty $`D=t_{on}/T_s`$, 평균 부하전류 $`I_o`$입니다. 출력 capacitor의 한 주기 평균 전류가 0이므로 평균 inductor current도 $`I_o`$입니다.
 
 ### Volt-second balance에서 변환비 유도
 
-On 구간의 인덕터 전압은 $`V_{in}-V_o`$, off 구간은 $`-V_o`$다. $`v_L=L\,di_L/dt`$를 한 주기 적분하고 정상상태의 $`i_L(T_s)=i_L(0)`$를 사용하면
+On 구간의 인덕터 전압은 $`V_{in}-V_o`$, off 구간은 $`-V_o`$입니다. $`v_L=L\,di_L/dt`$를 한 주기 적분하고 정상상태의 $`i_L(T_s)=i_L(0)`$를 사용하면
 
 $$0=(V_{in}-V_o)DT_s-V_o(1-D)T_s,\qquad V_o=DV_{in}.$$
 
@@ -22,26 +22,26 @@ $$\Delta I_L=\frac{(V_{in}-V_o)D}{Lf_s}
 =\frac{V_o(1-D)}{Lf_s},\quad
 I_{min}=I_o-\Delta I_L/2,\quad I_{max}=I_o+\Delta I_L/2.$$
 
-이 양의 CCM 모델은 $`I_o>\Delta I_L/2`$에서 적용한다. Diode 방식에서 전류가 0에 닿아 머무르면 DCM이고 단순 $`V_o=DV_{in}`$ 관계를 그대로 유지할 수 없다. 강제 PWM 동기식 구조는 음의 전류도 허용할 수 있어 diode의 DCM과 동작을 구분한다.
+이 양의 CCM 모델은 $`I_o>\Delta I_L/2`$에서 적용합니다. Diode 방식에서 전류가 0에 닿아 머무르면 DCM이고 단순 $`V_o=DV_{in}`$ 관계를 그대로 유지할 수 없습니다. 강제 PWM 동기식 구조는 음의 전류도 허용할 수 있어 diode의 DCM과 동작을 구분합니다.
 
-실제 손실은 switch 저항·diode 전압·인덕터 DCR 등으로 전압 균형에 들어간다. 효율 하나를 duty의 정확한 보정식으로 일반화하지 않는다. TI의 power-stage 계산 자료도 부품의 제한과 권장 L/C 범위를 함께 보도록 한다. 열람한 URL의 실제 본문은 2026-09 개정 SLVA477C다. [TI SLVA477](https://www.ti.com/lit/an/slva477b/slva477b.pdf)
+실제 손실은 switch 저항·diode 전압·인덕터 DCR 등으로 전압 균형에 들어갑니다. 효율 하나를 duty의 정확한 보정식으로 일반화하지 않습니다. TI의 power-stage 계산 자료도 부품의 제한과 권장 L/C 범위를 함께 보도록 합니다. 열람한 URL의 실제 본문은 2026-09 개정 SLVA477C입니다. [TI SLVA477](https://www.ti.com/lit/an/slva477b/slva477b.pdf)
 
 ### 전류 삼각형이 출력 전압에 남기는 흔적
 
-부하가 주기 내 거의 일정하면 $`i_C=i_L-I_o`$는 평균 0인 삼각파다. 양의 전류 부분은 밑변 $`T_s/2`$, 높이 $`\Delta I_L/2`$인 삼각형이므로 전하 변화가 $`\Delta Q=\Delta I_LT_s/8`$이다. 따라서 ideal capacitor의 전압 ripple은
+부하가 주기 내 거의 일정하면 $`i_C=i_L-I_o`$는 평균 0인 삼각파입니다. 양의 전류 부분은 밑변 $`T_s/2`$, 높이 $`\Delta I_L/2`$인 삼각형이므로 전하 변화가 $`\Delta Q=\Delta I_LT_s/8`$입니다. 따라서 ideal capacitor의 전압 ripple은
 
 $$\Delta V_{C,pp}\approx\frac{\Delta I_L}{8f_sC},\qquad
 \Delta V_{ESR,pp}=ESR\,\Delta I_L.$$
 
-두 성분의 최대·최소 시점은 다를 수 있다. 합은 보수적인 간단 추정에 쓸 수 있지만 정확한 파형의 peak-to-peak 합이라고 단정하지 않는다. ESL, switching spike, control-loop transient는 이 두 식 밖이다. [ADI MAXREFDES1269, Step 6의 출력 ripple 식](https://www.analog.com/media/en/reference-design-documentation/reference-designs/maxrefdes1269.pdf)
+두 성분의 최대·최소 시점은 다를 수 있습니다. 합은 보수적인 간단 추정에 쓸 수 있지만 정확한 파형의 peak-to-peak 합이라고 단정하지 않습니다. ESL, switching spike, control-loop transient는 이 두 식 밖입니다. [ADI MAXREFDES1269, Step 6의 출력 ripple 식](https://www.analog.com/media/en/reference-design-documentation/reference-designs/maxrefdes1269.pdf)
 
-$`V_{in}=12`$ V, $`V_o=3.3`$ V, L=10 µH, $`f_s=500`$ kHz, C=22 µF, $`I_o=2`$ A이면 D=0.275, $`\Delta I_L=0.4785`$ A, $`I_{min}=1.76075`$ A, $`I_{max}=2.23925`$ A다. C만의 ripple은 약 5.44 mV다. C의 유효값과 부품 정격을 이상값과 구분한다.
+$`V_{in}=12`$ V, $`V_o=3.3`$ V, L=10 µH, $`f_s=500`$ kHz, C=22 µF, $`I_o=2`$ A이면 D=0.275, $`\Delta I_L=0.4785`$ A, $`I_{min}=1.76075`$ A, $`I_{max}=2.23925`$ A입니다. C만의 ripple은 약 5.44 mV입니다. C의 유효값과 부품 정격을 이상값과 구분합니다.
 
 ### 구현과 독립 검증
 
-`buck_ccm`은 이 이상적 정상상태 식을 계산하고 양의 CCM이 아니면 결과를 거부한다. 테스트는 on/off 전압의 시간 적분이 0인지 확인한다. 이어 전류 삼각파를 별도로 촘촘히 적분해 capacitor 전압의 최대·최소 차이를 구하고 $`\Delta I_L/(8f_sC)`$와 비교한다. 따라서 ripple 식을 그대로 다시 평가하는 검사가 아니다.
+`buck_ccm`은 이 이상적 정상상태 식을 계산하고 양의 CCM이 아니면 결과를 거부합니다. 테스트는 on/off 전압의 시간 적분이 0인지 확인합니다. 이어 전류 삼각파를 별도로 촘촘히 적분해 capacitor 전압의 최대·최소 차이를 구하고 $`\Delta I_L/(8f_sC)`$와 비교합니다. 따라서 ripple 식을 그대로 다시 평가하는 검사가 아닙니다.
 
-실제 설계의 다음 단계는 부품 모델·동작 모드·보상 조건을 고정한 switching simulation이다. 입력·부하·온도 범위를 sweep하고 $`i_L`$, switch-node 전압과 출력 ripple, startup·load step, 안정성을 각각 확인한다. 인덕터 saturation current와 peak current limit, RMS 발열, capacitor DC bias도 검토한다. 측정에서는 probe loop와 대역폭 조건을 명시해 switching spike와 저주파 ripple을 분리한다. Python의 전하 균형 검사는 controller 안정성이나 실제 power-stage 효율의 검증 결과가 아니다.
+실제 설계의 다음 단계는 부품 모델·동작 모드·보상 조건을 고정한 switching simulation입니다. 입력·부하·온도 범위를 sweep하고 $`i_L`$, switch-node 전압과 출력 ripple, startup·load step, 안정성을 각각 확인합니다. 인덕터 saturation current와 peak current limit, RMS 발열, capacitor DC bias도 검토합니다. 측정에서는 probe loop와 대역폭 조건을 명시해 switching spike와 저주파 ripple을 분리합니다. Python의 전하 균형 검사는 controller 안정성이나 실제 power-stage 효율의 검증 결과가 아닙니다.
 
 ## English
 
@@ -85,4 +85,4 @@ Actual design verification additionally fixes device models, control mode and co
 
 ## 출처 대조 / Source cross-check
 
-TI의 CCM·부품 산정 자료와 ADI의 실제 buck 설계 절차를 대조하고 이상 모델의 전하·전압 균형을 독립 계산했다. / TI's CCM analysis and ADI's design procedure were cross-checked; the ideal model was independently checked by charge and voltage balance. 확인 / checked: 2026-10-19.
+TI의 CCM·부품 산정 자료와 ADI의 실제 buck 설계 절차를 대조하고 이상 모델의 전하·전압 균형을 독립 계산했습니다. / TI's CCM analysis and ADI's design procedure were cross-checked; the ideal model was independently checked by charge and voltage balance. 확인 / checked: 2026-10-19.

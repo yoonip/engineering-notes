@@ -14,7 +14,7 @@ Both strings have length 2–1000. Form case-insensitive multisets of adjacent E
 
 Collect lowercase adjacent two-letter fragments containing only English letters. Use multiplicities rather than a set. Multiset intersection sums minimum counts; union sums maximum counts.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 각 조각별 min·max가 다중집합 교집합·합집합의 정의입니다. 독립 조각의 빈도를 합쳐 비율을 구하며, 합집합이 비면 문제의 특별 규칙으로 65536을 반환합니다.
 

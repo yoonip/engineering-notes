@@ -14,7 +14,7 @@ There are 1–15 disks. Never place a larger disk on a smaller one. Return a min
 
 Move the top n−1 disks to the spare peg, move the largest disk to the target, then move the smaller disks onto it.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 가장 큰 원판의 이동 전후에는 n−1개 원판을 각각 옮겨야 하므로 T(n)≥2T(n−1)+1입니다. 재귀 방식은 그 하한을 달성하여 정확히 2ⁿ−1번 이동합니다.
 

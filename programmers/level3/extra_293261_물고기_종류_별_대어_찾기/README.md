@@ -16,7 +16,7 @@ Each species has a unique largest fish longer than 10cm. Join its species name a
 
 Compare each fish’s length with the maximum within its species. Join the species name for matching rows and sort by ID. NULL lengths cannot satisfy that equality.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 상관 서브쿼리는 현재 행과 같은 종류만 보므로 종류별 최댓값을 정확히 구합니다. 공식 조건에서 종류별 최대 물고기는 유일하므로 종류당 한 행이 남습니다.
 

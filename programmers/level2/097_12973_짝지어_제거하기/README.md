@@ -14,7 +14,7 @@ The lowercase string has length 1–1000000. Repeatedly remove equal adjacent pa
 
 Maintain the reduced prefix as a stack. Remove its top when the next character matches it; otherwise push the character. Success means the final stack is empty.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 이미 처리한 접두부 내부에는 지울 같은 인접 쌍이 없습니다. 새 문자 때문에 생길 수 있는 쌍은 스택의 끝뿐이므로 한 번의 비교로 접두부의 올바른 축약 상태를 유지합니다.
 

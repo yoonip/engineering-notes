@@ -14,7 +14,7 @@ The prerequisite chain has 1–26 characters; there are 1–20 trees of length 2
 
 Keep only skills that appear in the prerequisite chain. The remaining sequence must be a prefix of that chain; unrelated skills may occur anywhere.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 배울 수 있는 선행 스킬은 항상 chain의 첫 k개뿐입니다. 따라서 조건 대상만 추출한 결과가 접두부라는 조건은 필요충분합니다.
 

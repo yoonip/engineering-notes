@@ -14,7 +14,7 @@
 
 Keep only the previous two Fibonacci numbers. Their sum gives the next one, reduced modulo 1234567 at every step.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 F(n)=F(n−1)+F(n−2)이고 덧셈의 나머지는 각 항의 나머지로 계산해도 같습니다. 두 변수의 의미를 한 칸씩 이동하면 목표 항에 도달합니다.
 

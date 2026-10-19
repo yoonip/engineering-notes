@@ -14,7 +14,7 @@ The array has 1–15 integers in [1,100]. Return their least common multiple.
 
 Fold the identity lcm(a,b)=a/gcd(a,b)×b across the list. Dividing before multiplying keeps intermediate values smaller.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 누적값은 앞서 처리한 모든 수의 공배수 중 가장 작습니다. 그 값과 다음 수의 최소공배수를 취하면 처리 범위 전체의 최소공배수가 되어 귀납적으로 답을 얻습니다.
 

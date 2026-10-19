@@ -14,7 +14,7 @@ Capacity is 0–30; there are at most 100000 city names of at most 20 letters. I
 
 Normalize city names to lowercase. Keep recently used entries at the end of an ordered dictionary, moving hits there and evicting the oldest front entry when capacity is exceeded.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 순서 사전은 사용 시각이 오래된 순서를 항상 유지합니다. 맨 앞을 제거하는 동작은 정확히 LRU 정책이며 hit·miss마다 정해진 비용을 더하면 총 실행 시간입니다.
 

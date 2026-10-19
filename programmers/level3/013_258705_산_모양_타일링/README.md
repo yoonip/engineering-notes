@@ -14,7 +14,7 @@
 
 Track two states according to whether the rightmost triangle is paired with its left neighbor as a rhombus. A top triangle changes the number of ways to leave the new end free. Update the two states modulo 10007.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 새 오른쪽 삼각형을 왼쪽과 묶는 경우는 이전 두 상태에서 각각 하나씩입니다. 단독으로 두면 이전 끝이 묶였는지와 top 유무에 따라 1+top 또는 2+top개로 나뉩니다. 이 경우들은 서로 겹치지 않고 모든 타일 배치를 포함합니다.
 

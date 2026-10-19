@@ -16,7 +16,7 @@ Size≤100 is LOW, 100<size≤1000 is MEDIUM, and size>1000 is HIGH. Output ID a
 
 First check whether size is at most 100, then whether it is at most 1000. Failing the first branch already implies greater than 100.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 CASE는 처음 참인 조건의 결과를 반환합니다. 따라서 ≤100, 100~1000, >1000 세 구간이 겹치지 않고 모든 크기를 포함합니다.
 

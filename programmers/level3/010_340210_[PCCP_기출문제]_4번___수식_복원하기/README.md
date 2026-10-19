@@ -14,7 +14,7 @@ There are 2–100 equations in an unknown base 2–9. Operands have at most two 
 
 Only bases 2–9 greater than every written digit are possible. Keep bases satisfying every known equation. For X expressions, encode the result in each remaining base and accept it only if all strings agree.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 올바른 진법은 모든 알려진 등식을 만족하므로 후보에서 빠지지 않습니다. 가능한 모든 후보의 결과가 같을 때만 값이 유일하게 결정되고, 서로 다르면 정보가 부족하므로 ?입니다.
 

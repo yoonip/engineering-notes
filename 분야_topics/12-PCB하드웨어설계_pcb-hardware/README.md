@@ -2,17 +2,17 @@
 
 [전체 목차](../../분야별목차_CATALOG.md) · [처음으로](../../README.md)
 
-PCB는 부품을 고정하고 전기적으로 연결하는 기판이다. 회로도에는 논리적인 연결을, 레이아웃에는 실제 부품 위치와 배선, 층 구조, 전류 경로를 담는다. 같은 회로도라도 배치·배선에 따라 잡음과 신호 품질이 달라진다.
+PCB는 부품을 고정하고 전기적으로 연결하는 기판입니다. 회로도에는 논리적인 연결을, 레이아웃에는 실제 부품 위치와 배선, 층 구조, 전류 경로를 담습니다. 같은 회로도라도 배치·배선에 따라 잡음과 신호 품질이 달라집니다.
 
 ## 부품과 제조 데이터
 
-부품 선정에는 정격, 오차, 주파수 특성, 패키지, 공급 조건이 함께 들어간다. BOM은 부품 명세, netlist는 연결 정보, Gerber와 drill 데이터는 제조에 사용하는 파일이다. KiCad·Altium Designer·OrCAD/Allegro·PADS/Xpedition·EasyEDA는 회로도와 PCB 작업에 쓰인다.
+부품 선정에는 정격, 오차, 주파수 특성, 패키지, 공급 조건이 함께 들어갑니다. BOM은 부품 명세, netlist는 연결 정보, Gerber와 drill 데이터는 제조에 사용하는 파일입니다. KiCad·Altium Designer·OrCAD/Allegro·PADS/Xpedition·EasyEDA는 회로도와 PCB 작업에 쓰입니다.
 
 ## 신호와 전원의 경로
 
-디커플링 커패시터는 부하 가까이에서 빠른 전류 변화를 공급한다. 고속 신호의 귀환 전류는 배선만큼 중요하며, 기준면 단절은 루프와 방사를 키울 수 있다. SI는 신호 파형과 타이밍, PI는 전원망의 임피던스와 전압 변동, EMI/EMC는 전자파 방출과 내성을 다룬다. IBIS 모델은 디지털 입출력 버퍼의 신호 특성 해석에 쓰인다.
+디커플링 커패시터는 부하 가까이에서 빠른 전류 변화를 공급합니다. 고속 신호의 귀환 전류는 배선만큼 중요하며, 기준면 단절은 루프와 방사를 키울 수 있습니다. SI는 신호 파형과 타이밍, PI는 전원망의 임피던스와 전압 변동, EMI/EMC는 전자파 방출과 내성을 다룹니다. IBIS 모델은 디지털 입출력 버퍼의 신호 특성 해석에 쓰입니다.
 
-제작 후 bring-up에서는 전원·클록·리셋·통신을 차례로 확인하며 보드를 구동한다. DFM은 제조 가능성과 조립 조건을 설계에 반영한다.
+제작 후 bring-up에서는 전원·클록·리셋·통신을 차례로 확인하며 보드를 구동합니다. DFM은 제조 가능성과 조립 조건을 설계에 반영합니다.
 
 ## 관련 기술
 
@@ -24,7 +24,7 @@ KiCad, Altium Designer, OrCAD, Allegro, PADS, Xpedition, EasyEDA, IBIS, SI/PI, E
 
 ## 기초 해설
 
-- [전원은 배선까지 포함한다: PDN, decoupling과 귀환 전류](해설_notes/전원은배선까지포함한다_pdn-decoupling-return-current.md)
+- [전원 배선까지 함께 보기: PDN, decoupling과 귀환 전류](해설_notes/전원은배선까지포함한다_pdn-decoupling-return-current.md)
 
 ## English
 
@@ -42,7 +42,7 @@ Board bring-up works through power, clocks, reset, and communication to establis
 
 ### Foundation article
 
-- [전원은 배선까지 포함한다: PDN, decoupling과 귀환 전류](해설_notes/전원은배선까지포함한다_pdn-decoupling-return-current.md#english)
+- [전원 배선까지 함께 보기: PDN, decoupling과 귀환 전류](해설_notes/전원은배선까지포함한다_pdn-decoupling-return-current.md#english)
 
 
 ## 심화 해설 | Advanced article

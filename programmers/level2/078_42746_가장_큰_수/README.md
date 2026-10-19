@@ -14,7 +14,7 @@ There are 1–100000 integers in [0,1000]. Concatenate every value once and retu
 
 Convert numbers to strings and order them so that earlier concatenations are larger. Under the problem’s at-most-four-digit bound, repeated-string keys determine this order. Collapse an all-zero result to one zero.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 인접한 a,b에서 ab가 ba보다 작다면 순서를 바꾸는 것이 전체 수를 키웁니다. ab≥ba인 순서로 정렬하면 이런 역전이 없어 최댓값을 얻습니다.
 

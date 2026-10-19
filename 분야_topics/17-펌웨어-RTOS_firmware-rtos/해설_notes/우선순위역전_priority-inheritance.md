@@ -1,38 +1,38 @@
-# RTOS의 우선순위 역전: 누가 mutex를 놓을 수 있을까
+# RTOS의 우선순위 역전: 누가 mutex를 놓을 수 있을까요
 
 [분야 안내](../README.md) · [실행 예제](../../../예제_examples/심화_advanced/systems/advanced_models.py) · [독립 테스트](../../../예제_examples/심화_advanced/systems/test_advanced_models.py) · [실행 안내](../../../예제_examples/심화_advanced/systems/README.md)
 
 ## 한국어
 
-### 높은 우선순위도 자원을 기다릴 수 있다
+### 높은 우선순위도 자원을 기다릴 수 있습니다
 
-높은 우선순위 task H가 실행되지 않는다고 해서 scheduler가 잘못된 것은 아니다. 필요한 mutex를 낮은 우선순위 task L이 보유하면 H는 기다린다. 그 사이 중간 우선순위 task M이 L을 계속 선점하면 H는 자신보다 낮은 M의 실행 때문에 간접적으로 늦어진다. 이를 priority inversion이라고 한다. H가 기다리는 이유는 mutex인데, 실제 지연에는 그 mutex와 상관없는 M이 끼어든 셈이다.
+높은 우선순위 task H가 실행되지 않는다고 해서 scheduler가 잘못된 것은 아닙니다. 필요한 mutex를 낮은 우선순위 task L이 보유하면 H는 기다립니다. 그 사이 중간 우선순위 task M이 L을 계속 선점하면 H는 자신보다 낮은 M의 실행 때문에 간접적으로 늦어집니다. 이를 priority inversion이라고 합니다. H가 기다리는 이유는 mutex인데, 실제 지연에는 그 mutex와 상관없는 M이 끼어든 셈입니다.
 
-L이 임계 구역을 마치도록 H의 우선순위를 잠시 빌려 주는 방식이 priority inheritance다. Linux RT-mutex 설명과 Zephyr mutex 문서는 같은 의존 관계를 설명하지만 구현의 세부 우선순위 규칙은 각 kernel의 계약을 따라야 한다. 이 예제에서는 숫자가 클수록 우선순위가 높다. Zephyr의 실제 숫자 방향과 그대로 대응시키지 않는다. [Linux RT-mutex design](https://docs.kernel.org/locking/rt-mutex-design.html), [Zephyr mutexes](https://docs.zephyrproject.org/latest/kernel/services/synchronization/mutexes.html)
+L이 임계 구역을 마치도록 H의 우선순위를 잠시 빌려 주는 방식이 priority inheritance입니다. Linux RT-mutex 설명과 Zephyr mutex 문서는 같은 의존 관계를 설명하지만 구현의 세부 우선순위 규칙은 각 kernel의 계약을 따라야 합니다. 이 예제에서는 숫자가 클수록 우선순위가 높습니다. Zephyr의 실제 숫자 방향과 그대로 대응시키지 않습니다. [Linux RT-mutex design](https://docs.kernel.org/locking/rt-mutex-design.html), [Zephyr mutexes](https://docs.zephyrproject.org/latest/kernel/services/synchronization/mutexes.html)
 
-### 의존 관계를 따라 우선순위를 전파한다
+### 의존 관계를 따라 우선순위를 전파합니다
 
-task의 본래 우선순위를 $`p_0(t)`$, 유효 우선순위를 $`p(t)`$라 하자. task t가 가진 mutex를 기다리는 task 집합을 W라고 하면 모델의 조건은
+task의 본래 우선순위를 $`p_0(t)`$, 유효 우선순위를 $`p(t)`$라 하겠습니다. task t가 가진 mutex를 기다리는 task 집합을 W라고 하면 모델의 조건은
 
 ```math
 p(t)=\max\left(p_0(t),\max_{w\in W}p(w)\right).
 ```
 
-대기자가 또 다른 mutex의 소유자일 수 있으므로 전파는 한 번으로 끝나지 않는다. H가 M의 lock을 기다리고 M이 L의 lock을 기다리면 H의 우선순위가 L까지 이어져야 한다. `inherited_priorities()`는 변화가 없어질 때까지 이 관계를 반복한다. 유효 값은 주어진 유한한 기본 우선순위 집합에서만 증가하므로 고정점에 도달한다. 큰 task 집합을 위한 최적 kernel 알고리즘이 아니라 의존성을 보는 작은 모델이다.
+대기자가 또 다른 mutex의 소유자일 수 있으므로 전파는 한 번으로 끝나지 않습니다. H가 M의 lock을 기다리고 M이 L의 lock을 기다리면 H의 우선순위가 L까지 이어져야 합니다. `inherited_priorities()`는 변화가 없어질 때까지 이 관계를 반복합니다. 유효 값은 주어진 유한한 기본 우선순위 집합에서만 증가하므로 고정점에 도달합니다. 큰 task 집합을 위한 최적 kernel 알고리즘이 아니라 의존성을 보는 작은 모델입니다.
 
-### 같은 작업량으로 간섭을 비교한다
+### 같은 작업량으로 간섭을 비교합니다
 
-demo의 시작 상태는 L이 mutex를 보유한 채 CPU 3 tick을 더 써야 하고, M은 독립 작업 4 tick, H는 그 mutex가 풀린 뒤 1 tick이 필요하다고 정의한다. 모두 이미 준비되었으며 H는 lock 대기 상태다. inheritance가 없으면 순서는 `MMMMLLLH`라서 H는 8번째 tick에 끝난다. 있으면 L이 먼저 3 tick을 마쳐 `LLLHMMMM`이 되고 H는 4번째 tick에 끝난다. CPU 작업 총량은 둘 다 8 tick이다.
+demo의 시작 상태는 L이 mutex를 보유한 채 CPU 3 tick을 더 써야 하고, M은 독립 작업 4 tick, H는 그 mutex가 풀린 뒤 1 tick이 필요하다고 정의합니다. 모두 이미 준비되었으며 H는 lock 대기 상태입니다. inheritance가 없으면 순서는 `MMMMLLLH`라서 H는 8번째 tick에 끝납니다. 있으면 L이 먼저 3 tick을 마쳐 `LLLHMMMM`이 되고 H는 4번째 tick에 끝납니다. CPU 작업 총량은 둘 다 8 tick입니다.
 
-이 숫자는 특정 보드나 RTOS의 응답 시간 측정이 아니다. context switch, interrupt, lock 획득 자체의 시간과 task release jitter를 0으로 둔 구성 예시다. 여기서 줄어든 것은 관계없는 M의 간섭이며 L의 임계 구역 시간은 여전히 H를 block한다. 실제 deadline 보장은 최악 실행 시간과 다른 task 간섭까지 포함한 분석이 필요하다.
+이 숫자는 특정 보드나 RTOS의 응답 시간 측정이 아닙니다. context switch, interrupt, lock 획득 자체의 시간과 task release jitter를 0으로 둔 구성 예시입니다. 여기서 줄어든 것은 관계없는 M의 간섭이며 L의 임계 구역 시간은 여전히 H를 block합니다. 실제 deadline 보장은 최악 실행 시간과 다른 task 간섭까지 포함한 분석이 필요합니다.
 
 ### inheritance가 해결하지 않는 문제
 
-서로의 mutex를 기다리는 cycle은 deadlock이다. 우선순위를 높여도 어느 task도 진행하지 못하면 해결되지 않는다. lock 순서를 정하거나 다른 자원 획득 규약이 필요하다. mutex를 가진 채 긴 I/O를 기다리는 문제, 장시간 임계 구역, interrupt가 사용할 수 없는 API도 별도다. semaphore가 소유자를 갖지 않는 구성에서는 mutex와 같은 inheritance 규약을 기대할 수 없다.
+서로의 mutex를 기다리는 cycle은 deadlock입니다. 우선순위를 높여도 어느 task도 진행하지 못하면 해결되지 않습니다. lock 순서를 정하거나 다른 자원 획득 규약이 필요합니다. mutex를 가진 채 긴 I/O를 기다리는 문제, 장시간 임계 구역, interrupt가 사용할 수 없는 API도 별도입니다. semaphore가 소유자를 갖지 않는 구성에서는 mutex와 같은 inheritance 규약을 기대할 수 없습니다.
 
-테스트는 위 실행 순서를 정확히 비교하고 H→M→L 두 단계 상속을 확인한다. 기본 우선순위 사전을 바꾸지 않는지도 검사한다. 실제 RTOS의 unlock 때 우선순위 복원, 여러 mutex 보유, 재귀 mutex와 priority ceiling 설정은 구현마다 조건이 있으므로 문서의 구체적 규약과 trace를 함께 읽어야 한다. Python 결과는 우선순위 의존 모델의 검증이지 target scheduler의 timing 증명이 아니다.
+테스트는 위 실행 순서를 정확히 비교하고 H→M→L 두 단계 상속을 확인합니다. 기본 우선순위 사전을 바꾸지 않는지도 검사합니다. 실제 RTOS의 unlock 때 우선순위 복원, 여러 mutex 보유, 재귀 mutex와 priority ceiling 설정은 구현마다 조건이 있으므로 문서의 구체적 규약과 trace를 함께 읽어야 합니다. Python 결과는 우선순위 의존 모델의 검증이지 target scheduler의 timing 증명이 아닙니다.
 
-저장소 루트에서 실행한다. 첫 명령은 입력과 계산 결과를 출력하고, 두 번째 명령은 이 디렉터리의 전체 테스트를 실행한다.
+저장소 루트에서 실행합니다. 첫 명령은 입력과 계산 결과를 출력하고, 두 번째 명령은 이 디렉터리의 전체 테스트를 실행합니다.
 
 ```sh
 python "예제_examples/심화_advanced/systems/demo.py" rtos

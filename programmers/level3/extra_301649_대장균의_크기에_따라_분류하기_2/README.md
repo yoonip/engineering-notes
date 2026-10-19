@@ -16,7 +16,7 @@ The row count is divisible by four and equal sizes never cross group boundaries.
 
 Use NTILE(4) over descending colony sizes to divide individuals into four equally sized groups. Map groups 1–4 to CRITICAL, HIGH, MEDIUM and LOW, then order by ID.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 총 행 수가 4의 배수이고 같은 크기가 분류 경계를 가로지르지 않는다는 조건 덕분에 네 그룹이 정확한 사분위 분류입니다. NTILE을 크기 값의 사분위수와 혼동하지 않습니다.
 

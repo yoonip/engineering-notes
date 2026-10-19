@@ -2,17 +2,17 @@
 
 [전체 목차](../../분야별목차_CATALOG.md) · [처음으로](../../README.md)
 
-패키지는 die를 기판·전원·외부 신호·냉각 구조와 연결한다. 반도체 시스템의 성능과 신뢰성은 칩 내부 회로뿐 아니라 패키지의 전기적·기계적·열적 조건에도 영향을 받는다.
+패키지는 die를 기판·전원·외부 신호·냉각 구조와 연결합니다. 반도체 시스템의 성능과 신뢰성은 칩 내부 회로뿐 아니라 패키지의 전기적·기계적·열적 조건에도 영향을 받습니다.
 
 ## 연결 구조
 
-Wire bonding·flip-chip은 die의 연결 방식이고, interposer는 die 사이의 고밀도 연결을 제공한다. 2.5D·3D integration은 배치·적층 구조를 확장한다. Chiplet은 기능을 여러 die로 나누어 연결하는 방식이다. UCIe는 die 간 연결에 쓰이는 인터커넥트 생태계다.
+Wire bonding·flip-chip은 die의 연결 방식이고, interposer는 die 사이의 고밀도 연결을 제공합니다. 2.5D·3D integration은 배치·적층 구조를 확장합니다. Chiplet은 기능을 여러 die로 나누어 연결하는 방식입니다. UCIe는 die 간 연결에 쓰이는 인터커넥트 생태계입니다.
 
 ## 전원과 열
 
-PDN은 부하에 전원을 전달하는 경로다. IR drop은 저항에 의한 전압 강하, electromigration은 전류와 관련된 배선 신뢰성 문제다. 열저항 모델의 단순 정상상태에서는 `온도 상승 = 손실 전력 × 열저항`으로 관계를 볼 수 있지만 실제 구조는 여러 열 경로와 시간 응답을 가진다.
+PDN은 부하에 전원을 전달하는 경로입니다. IR drop은 저항에 의한 전압 강하, electromigration은 전류와 관련된 배선 신뢰성 문제입니다. 열저항 모델의 단순 정상상태에서는 `온도 상승 = 손실 전력 × 열저항`으로 관계를 볼 수 있지만 실제 구조는 여러 열 경로와 시간 응답을 가집니다.
 
-Ansys·COMSOL 같은 해석 도구는 열·구조·전자기 문제를 모델링한다. 냉각·열팽창·재료 계면·반복 온도 변화는 장기 신뢰성과 연결된다. 높은 연산 성능도 전력 공급과 열 제거가 받쳐 주어야 유지할 수 있다.
+Ansys·COMSOL 같은 해석 도구는 열·구조·전자기 문제를 모델링합니다. 냉각·열팽창·재료 계면·반복 온도 변화는 장기 신뢰성과 연결됩니다. 높은 연산 성능도 전력 공급과 열 제거가 받쳐 주어야 유지할 수 있습니다.
 
 ## 관련 기술
 
@@ -24,7 +24,7 @@ Chiplets, UCIe, 2.5D/3D IC, Interposer, COMSOL, Ansys, Thermal RC, EM/IR
 
 ## 기초 해설
 
-- [열은 바로 빠져나가지 않는다: thermal RC와 과도 온도](해설_notes/열은바로빠져나가지않는다_thermal-rc-steady-transient.md)
+- [시간에 따라 달라지는 방열: thermal RC와 과도 온도](해설_notes/열은바로빠져나가지않는다_thermal-rc-steady-transient.md)
 
 ## English
 
@@ -44,7 +44,7 @@ Tools such as Ansys and COMSOL model thermal, structural, and electromagnetic be
 
 ### Foundation article
 
-- [열은 바로 빠져나가지 않는다: thermal RC와 과도 온도](해설_notes/열은바로빠져나가지않는다_thermal-rc-steady-transient.md#english)
+- [시간에 따라 달라지는 방열: thermal RC와 과도 온도](해설_notes/열은바로빠져나가지않는다_thermal-rc-steady-transient.md#english)
 
 
 ## 심화 해설 | Advanced article

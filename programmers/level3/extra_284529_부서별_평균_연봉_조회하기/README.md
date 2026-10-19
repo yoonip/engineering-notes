@@ -16,7 +16,7 @@ Join by department ID. Output ID, English name and average salary rounded to an 
 
 Join departments and employees by department ID, compute each department’s average salary, round it to an integer and order departments by descending average salary.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 부서 ID 조인은 각 사원의 연봉을 소속 부서에 대응시킵니다. 부서 ID·이름별 집계로 부서 평균을 만들고 ROUND(...,0)이 소수점 첫째 자리 반올림을 수행합니다.
 

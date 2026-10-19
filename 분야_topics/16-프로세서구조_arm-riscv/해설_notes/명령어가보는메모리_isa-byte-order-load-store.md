@@ -6,42 +6,42 @@
 
 ### 같은 계산을 다른 회로가 실행할 수 있는 이유
 
-ISA(instruction set architecture)는 프로그램이 관찰할 수 있는 명령어·레지스터·동작의 약속이다. Pipeline 단계 수, cache 크기, 실행 유닛 수 같은 microarchitecture와는 구분한다. ABI는 함수 호출, 레지스터 사용, 데이터 배치 등 소프트웨어 간의 약속이다. ISA 이름이 같아도 지원 extension, privilege, 실행 환경과 ABI를 확인해야 같은 binary의 실행 가능성을 판단할 수 있다. 아래 구체적인 명령어 의미는 RISC-V RV32I를 기준으로 한다. Arm 프로세서의 세부 동작을 이 예제에 그대로 대입하지 않는다. [RISC-V 공식 ISA, 소개와 RV32I](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf)
+ISA(instruction set architecture)는 프로그램이 관찰할 수 있는 명령어·레지스터·동작의 약속입니다. Pipeline 단계 수, cache 크기, 실행 유닛 수 같은 microarchitecture와는 구분합니다. ABI는 함수 호출, 레지스터 사용, 데이터 배치 등 소프트웨어 간의 약속입니다. ISA 이름이 같아도 지원 extension, privilege, 실행 환경과 ABI를 확인해야 같은 binary의 실행 가능성을 판단할 수 있습니다. 아래 구체적인 명령어 의미는 RISC-V RV32I를 기준으로 합니다. Arm 프로세서의 세부 동작을 이 예제에 그대로 대입하지 않습니다. [RISC-V 공식 ISA, 소개와 RV32I](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf)
 
-RV32I는 load/store 구조다. 정수 산술은 register에서 수행하고 메모리와의 데이터 이동은 load/store로 한다. “CPU가 메모리를 전혀 사용하지 않는다”는 뜻은 아니다. 명령어 fetch나 실제 cache·bus 동작은 별도의 층위다.
+RV32I는 load/store 구조입니다. 정수 산술은 register에서 수행하고 메모리와의 데이터 이동은 load/store로 합니다. “CPU가 메모리를 전혀 사용하지 않는다”는 뜻은 아닙니다. 명령어 fetch나 실제 cache·bus 동작은 별도의 층위입니다.
 
-### 주소는 byte를 가리킨다
+### 주소는 byte를 가리킵니다
 
-Byte-addressed memory에서 주소 a와 a+1은 인접 byte다. 32-bit word가 4 byte라면 인접 word의 시작 주소 차이는 4다. 예를 들어 `lw x5, 12(x6)`은 x6의 byte 주소에 부호 있는 offset 12를 더한 위치에서 word를 읽는다. 배열 index를 자동으로 4배 하는 명령이 아니다. 일반적으로 effective address는 $`EA=x[rs1]+sext(imm)`$에서 계산하며 주소 폭·접근 권한은 ISA와 실행 환경의 규칙을 따른다. [Berkeley CS61C data transfer](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
+Byte-addressed memory에서 주소 a와 a+1은 인접 byte입니다. 32-bit word가 4 byte라면 인접 word의 시작 주소 차이는 4입니다. 예를 들어 `lw x5, 12(x6)`은 x6의 byte 주소에 부호 있는 offset 12를 더한 위치에서 word를 읽습니다. 배열 index를 자동으로 4배 하는 명령이 아닙니다. 일반적으로 effective address는 $`EA=x[rs1]+sext(imm)`$에서 계산하며 주소 폭·접근 권한은 ISA와 실행 환경의 규칙을 따릅니다. [Berkeley CS61C data transfer](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
 
-숫자 $`w=\sum_{k=0}^{B-1}b_k2^{8k}`$에서 $`b_k`$는 0…255인 byte다. Little-endian은 $`M[a+k]=b_k`$, big-endian은 $`M[a+k]=b_{B-1-k}`$로 배치한다.
+숫자 $`w=\sum_{k=0}^{B-1}b_k2^{8k}`$에서 $`b_k`$는 0…255인 byte입니다. Little-endian은 $`M[a+k]=b_k`$, big-endian은 $`M[a+k]=b_{B-1-k}`$로 배치합니다.
 
 | 값 0x12345678 | 주소 a | a+1 | a+2 | a+3 |
 |---|---|---|---|---|
 | Little-endian | 78 | 56 | 34 | 12 |
 | Big-endian | 12 | 34 | 56 | 78 |
 
-Endianness는 여러 byte가 숫자를 이루는 순서다. Byte 내부의 bit 번호나 통신선의 bit 전송 순서를 자동으로 정하지 않는다. RISC-V는 byte-address invariance를 정의하며, 실제 메모리의 endian 설정은 EEI(execution environment interface)가 정한다. 모든 RISC-V가 한 가지 설정만 허용한다고 적어서는 안 된다. [공식 ISA §2.6](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf)
+Endianness는 여러 byte가 숫자를 이루는 순서입니다. Byte 내부의 bit 번호나 통신선의 bit 전송 순서를 자동으로 정하지 않습니다. RISC-V는 byte-address invariance를 정의하며, 실제 메모리의 endian 설정은 EEI(execution environment interface)가 정합니다. 모든 RISC-V가 한 가지 설정만 허용한다고 적어서는 안 됩니다. [공식 ISA §2.6](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf)
 
 ### 폭과 부호를 구분하기
 
-같은 byte 0x80도 unsigned 8-bit로는 128, signed two's-complement로는 −128이다. k-bit pattern u를 정수로 해석하면
+같은 byte 0x80도 unsigned 8-bit로는 128, signed two's-complement로는 −128입니다. k-bit pattern u를 정수로 해석하면
 
 $$signed(u)=\begin{cases}u,&u<2^{k-1}\\u-2^k,&u\ge2^{k-1}.\end{cases}$$
 
-RV32I의 `LB`는 8-bit를 읽어 32-bit로 sign-extend하고 `LBU`는 zero-extend한다. `LH/LHU`도 같은 구분을 16-bit에 적용한다. `SB/SH/SW`는 register의 낮은 8/16/32 bit를 저장한다. 따라서 signed와 unsigned load의 결과 차이는 memory가 바뀌어서가 아니라 읽은 bit의 확장 방식 때문이다.
+RV32I의 `LB`는 8-bit를 읽어 32-bit로 sign-extend하고 `LBU`는 zero-extend합니다. `LH/LHU`도 같은 구분을 16-bit에 적용합니다. `SB/SH/SW`는 register의 낮은 8/16/32 bit를 저장합니다. 따라서 signed와 unsigned load의 결과 차이는 memory가 바뀌어서가 아니라 읽은 bit의 확장 방식 때문입니다.
 
-### 정렬과 장치 접근은 추가 조건이다
+### 정렬과 장치 접근은 추가 조건입니다
 
-폭 B의 자연 정렬은 $`EA\bmod B=0`$이다. RV32I의 자연 정렬 접근은 address-misaligned 예외를 만들지 않지만, 범위·권한 등 다른 이유의 fault까지 없어진다는 뜻은 아니다. 비정렬 접근의 지원·trap·성능과 atomicity는 EEI에 달린다. “항상 성공” 또는 “항상 CPU가 멈춘다”로 일반화하지 않는다. [RISC-V §2.6](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf), [CS61C 정렬 설명](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
+폭 B의 자연 정렬은 $`EA\bmod B=0`$입니다. RV32I의 자연 정렬 접근은 address-misaligned 예외를 만들지 않지만, 범위·권한 등 다른 이유의 fault까지 없어진다는 뜻은 아닙니다. 비정렬 접근의 지원·trap·성능과 atomicity는 EEI에 달립니다. “항상 성공” 또는 “항상 CPU가 멈춘다”로 일반화하지 않습니다. [RISC-V §2.6](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf), [CS61C 정렬 설명](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
 
-MMIO register는 읽기 부작용이나 허용 접근 폭이 있을 수 있다. RAM용 byte 조합을 장치 register에 그대로 적용하면 읽기 횟수 자체가 달라질 수 있다. Endianness와 memory ordering도 다른 문제다. 바이트 순서를 맞췄다고 여러 core·DMA의 관찰 순서가 보장되지는 않는다.
+MMIO register는 읽기 부작용이나 허용 접근 폭이 있을 수 있습니다. RAM용 byte 조합을 장치 register에 그대로 적용하면 읽기 횟수 자체가 달라질 수 있습니다. Endianness와 memory ordering도 다른 문제입니다. 바이트 순서를 맞췄다고 여러 core·DMA의 관찰 순서가 보장되지는 않습니다.
 
 ### 구현과 검증
 
-`ByteMemory`는 유한한 bytearray에 자연 정렬된 1·2·4·8-byte 접근을 제공한다. Store는 낮은 bit만 보관하고 load는 byte를 shift/OR로 조립한 뒤 선택적으로 signed 해석을 한다. 이 모델은 RAM의 byte 배치를 보여 주며 RV32/RV64 CPU, trap handler, cache, MMIO를 실행하지 않는다.
+`ByteMemory`는 유한한 bytearray에 자연 정렬된 1·2·4·8-byte 접근을 제공합니다. Store는 낮은 bit만 보관하고 load는 byte를 shift/OR로 조립한 뒤 선택적으로 signed 해석을 합니다. 이 모델은 RAM의 byte 배치를 보여 주며 RV32/RV64 CPU, trap handler, cache, MMIO를 실행하지 않습니다.
 
-검산에서는 직접 작성한 shift/OR 구현을 Python의 `int.to_bytes`·`int.from_bytes`와 비교한다. 두 endian과 네 폭에서 무작위 값, 0x12345678의 명시적 byte 표, 0x80의 부호, 경계·비정렬 거부를 확인한다. 실제 ISA 검증은 compiler/ABI와 target을 고정하고 assembly·disassembly, simulator 또는 보드의 register/memory trace를 명세와 비교하는 단계가 더 필요하다. 기능 trace가 맞더라도 성능이나 memory ordering 전체를 검증한 것은 아니다.
+검산에서는 직접 작성한 shift/OR 구현을 Python의 `int.to_bytes`·`int.from_bytes`와 비교합니다. 두 endian과 네 폭에서 무작위 값, 0x12345678의 명시적 byte 표, 0x80의 부호, 경계·비정렬 거부를 확인합니다. 실제 ISA 검증은 compiler/ABI와 target을 고정하고 assembly·disassembly, simulator 또는 보드의 register/memory trace를 명세와 비교하는 단계가 더 필요합니다. 기능 trace가 맞더라도 성능이나 memory ordering 전체를 검증한 것은 아닙니다.
 
 ## English
 
@@ -77,4 +77,4 @@ Tests compare that implementation against independent `int.to_bytes`/`int.from_b
 
 ## 출처 대조 / Source cross-check
 
-RISC-V 공식 20260120 문서의 RV32I §2.6과 Berkeley의 독립 교육 설명을 대조했다. / The official 20260120 ISA's RV32I §2.6 was cross-checked against Berkeley's independent teaching explanation. 확인 / checked: 2026-10-19.
+RISC-V 공식 20260120 문서의 RV32I §2.6과 Berkeley의 독립 교육 설명을 대조했습니다. / The official 20260120 ISA's RV32I §2.6 was cross-checked against Berkeley's independent teaching explanation. 확인 / checked: 2026-10-19.

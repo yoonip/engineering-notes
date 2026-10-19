@@ -14,7 +14,7 @@ There are 1–10 floors sharing a 2–40 by 2–40 layout, with 2–15 panels an
 
 Run BFS from panel coordinates to obtain within-floor distances. Cross-floor travel goes via the elevator plus the floor difference. A state consists of the activated-panel set and current panel, and only prerequisite-satisfied panels may activate next.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 한 층의 최단거리는 BFS로 정확하고 층 사이 유일한 연결은 엘리베이터입니다. 이후 방문 순서는 현재 위치·활성 집합에만 의존하므로 비트마스크 DP가 모든 유효 순서를 비교합니다. 1번도 선행 조건이 있으면 출발 때 켜지지 않습니다.
 

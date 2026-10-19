@@ -16,7 +16,7 @@ Output type, name and intake sex status in ID order, replacing only NULL names b
 
 Replace only NULL names with No name. An empty string is different from NULL and is preserved. Ordering by ID is valid even when ID is not displayed.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 COALESCE는 앞에서 처음 NULL이 아닌 값을 반환하므로 이름이 있으면 그대로, 없으면 대체 문자열이 됩니다.
 

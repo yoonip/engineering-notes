@@ -4,15 +4,15 @@
 
 ## 한국어
 
-### 코드 모양이 달라도 같은 회로일 수 있다
+### 코드 모양이 달라도 같은 회로일 수 있습니다
 
-`q+1`로 쓴 카운터와 각 비트의 XOR·carry를 직접 연결한 카운터는 소스 모양이 다르다. 중요한 것은 같은 상태와 입력에서 다음 상태와 관찰 가능한 출력이 같으냐는 것이다. 합성 도구도 RTL을 gate 구조로 바꾸므로 이런 비교가 필요하다. 다만 기능이 같다는 결과는 지연·전력·배치가 같다는 뜻이 아니다.
+`q+1`로 쓴 카운터와 각 비트의 XOR·carry를 직접 연결한 카운터는 소스 모양이 다릅니다. 중요한 것은 같은 상태와 입력에서 다음 상태와 관찰 가능한 출력이 같으냐는 것입니다. 합성 도구도 RTL을 gate 구조로 바꾸므로 이런 비교가 필요합니다. 다만 기능이 같다는 결과는 지연·전력·배치가 같다는 뜻이 아닙니다.
 
-[YosysHQ EQY](https://yosyshq.readthedocs.io/projects/eqy/en/latest/)는 formal equivalence 도구의 역할을 설명한다. [OpenROAD flow 문서](https://openroad-flow-scripts.readthedocs.io/en/latest/user/UserGuide.html)는 합성, 물리 구현, DRC·LVS를 구분한다. 이 예제는 두 표현의 카운터를 Python으로 전수 비교하고 실제 RTL 시뮬레이션으로 대조한다. EQY·Yosys 합성이나 physical flow를 실행했다는 주장은 하지 않는다.
+[YosysHQ EQY](https://yosyshq.readthedocs.io/projects/eqy/en/latest/)는 formal equivalence 도구의 역할을 설명합니다. [OpenROAD flow 문서](https://openroad-flow-scripts.readthedocs.io/en/latest/user/UserGuide.html)는 합성, 물리 구현, DRC·LVS를 구분합니다. 이 예제는 두 표현의 카운터를 Python으로 전수 비교하고 실제 RTL 시뮬레이션으로 대조합니다. EQY·Yosys 합성이나 physical flow를 실행했다는 주장은 하지 않습니다.
 
 ### 카운터의 기능 계약
 
-8비트 상태 q, enable e, synchronous active-high reset r을 둔다. reset은 enable보다 우선한다. reset이 아니면 enable=1에서만 1 증가하고 255 다음은 0이다.
+8비트 상태 q, enable e, synchronous active-high reset r을 둡니다. reset은 enable보다 우선합니다. reset이 아니면 enable=1에서만 1 증가하고 255 다음은 0입니다.
 
 ```math
 q'=\begin{cases}
@@ -22,13 +22,13 @@ q&r=0,\ e=0.
 \end{cases}
 ```
 
-bit-slice 표현에서는 carry0=e, 다음 비트 $`q'_k=q_k\oplus carry_k`$, $`carry_{k+1}=q_k\land carry_k`$다. 가장 낮은 비트는 매 enable마다 뒤집힌다. 그 위 비트는 아래 비트가 모두 1이고 enable일 때만 뒤집힌다. 이는 이진수 덧셈에서 올림이 전파되는 규칙과 같다. 최상위 carry를 버리면 modulo 256이 된다.
+bit-slice 표현에서는 carry0=e, 다음 비트 $`q'_k=q_k\oplus carry_k`$, $`carry_{k+1}=q_k\land carry_k`$입니다. 가장 낮은 비트는 매 enable마다 뒤집힙니다. 그 위 비트는 아래 비트가 모두 1이고 enable일 때만 뒤집힙니다. 이는 이진수 덧셈에서 올림이 전파되는 규칙과 같습니다. 최상위 carry를 버리면 modulo 256이 됩니다.
 
-### 한 단계가 같으면 실행 전체는 언제 같은가
+### 한 단계가 같으면 실행 전체는 언제 같습니까
 
-두 모델의 초기 상태가 같고 모든 q,e,r에서 next-state 함수가 같다고 하자. 첫 cycle 뒤 상태가 같고, 같은 함수와 같은 입력을 다시 적용하므로 두 번째 상태도 같다. 이 귀납을 반복하면 임의 길이 입력열에서 같다는 결론을 얻는다. Python 테스트는 256×2×2=1024개 상태·입력 조합을 전부 비교한다.
+두 모델의 초기 상태가 같고 모든 q,e,r에서 next-state 함수가 같다고 하겠습니다. 첫 cycle 뒤 상태가 같고, 같은 함수와 같은 입력을 다시 적용하므로 두 번째 상태도 같습니다. 이 귀납을 반복하면 임의 길이 입력열에서 같다는 결론을 얻습니다. Python 테스트는 256×2×2=1024개 상태·입력 조합을 전부 비교합니다.
 
-하지만 실제 RTL의 uninitialized X, reset 종류, enable의 알려지지 않은 값, blocking/nonblocking scheduling은 0/1 정수 함수에 모두 들어 있지 않다. 이 때문에 Python 전수 비교만으로 실제 RTL equivalence proof를 했다고 부르지 않는다. RTL에서는 reset으로 알려진 상태를 만든 뒤 같은 clock edge에서 비교한다.
+하지만 실제 RTL의 uninitialized X, reset 종류, enable의 알려지지 않은 값, blocking/nonblocking scheduling은 0/1 정수 함수에 모두 들어 있지 않습니다. 이 때문에 Python 전수 비교만으로 실제 RTL equivalence proof를 했다고 부르지 않습니다. RTL에서는 reset으로 알려진 상태를 만든 뒤 같은 clock edge에서 비교합니다.
 
 ### 실제 Icarus 실행
 
@@ -38,7 +38,7 @@ python -m unittest -v test_models.HardwareModels.test_counter_all_states_inputs 
 python run_rtl.py
 ```
 
-`counter_equiv.sv`의 첫 module은 덧셈 연산자로, 두 번째는 bit-slice XOR/AND로 next state를 만든다. testbench는 reset 1 cycle, 연속 enable 256 cycle로 한 바퀴, LFSR 입력으로 reset·enable을 바꾸는 10000 cycle을 실행한다. 두 RTL 출력과 별도 scoreboard를 매 edge의 nonblocking 갱신 뒤 비교한다. 총 10257 cycle이 Icarus 12.0에서 통과했다.
+`counter_equiv.sv`의 첫 module은 덧셈 연산자로, 두 번째는 bit-slice XOR/AND로 next state를 만듭니다. testbench는 reset 1 cycle, 연속 enable 256 cycle로 한 바퀴, LFSR 입력으로 reset·enable을 바꾸는 10000 cycle을 실행합니다. 두 RTL 출력과 별도 scoreboard를 매 edge의 nonblocking 갱신 뒤 비교합니다. 총 10257 cycle이 Icarus 12.0에서 통과했습니다.
 
 | 검증 | 이번 예제가 실제 한 것 | 결과가 보장하지 않는 것 |
 |---|---|---|
@@ -49,9 +49,9 @@ python run_rtl.py
 
 ### 합성 후 비교로 확장할 때
 
-실제 flow에서는 gold RTL, gate netlist, library cell의 기능 모델과 clock/reset 조건을 고정한다. scan·test enable·clock gating 조건, 메모리 초기화, black box, unreachable state 처리도 명시한다. state encoding이나 retiming으로 레지스터 대응이 달라지면 단순 신호별 equality보다 정교한 매칭이 필요하다. `PASS`뿐 아니라 unmatched·unproven partition과 assumption을 함께 읽는다.
+실제 flow에서는 gold RTL, gate netlist, library cell의 기능 모델과 clock/reset 조건을 고정합니다. scan·test enable·clock gating 조건, 메모리 초기화, black box, unreachable state 처리도 명시합니다. state encoding이나 retiming으로 레지스터 대응이 달라지면 단순 신호별 equality보다 정교한 매칭이 필요합니다. `PASS`뿐 아니라 unmatched·unproven partition과 assumption을 함께 읽습니다.
 
-equivalence가 통과해도 setup/hold, CDC, analog interface나 layout 규칙은 별도 검사다. 반대로 timing이 좋아졌다고 기능이 보존됐다는 뜻도 아니다. 이 예제는 작은 회로에서 어떤 동일성을 확인했는지, 그리고 어느 도구 단계까지 실제 실행했는지를 구분하는 출발점이다.
+equivalence가 통과해도 setup/hold, CDC, analog interface나 layout 규칙은 별도 검사입니다. 반대로 timing이 좋아졌다고 기능이 보존됐다는 뜻도 아닙니다. 이 예제는 작은 회로에서 어떤 동일성을 확인했는지, 그리고 어느 도구 단계까지 실제 실행했는지를 구분하는 출발점입니다.
 
 ## English
 

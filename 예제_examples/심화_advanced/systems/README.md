@@ -2,18 +2,18 @@
 
 ## 한국어
 
-Python 3.10 이상과 표준 라이브러리로 실행한다. 외부 package 설치는 필요하지 않다. 아래 명령은 저장소 루트 기준이다.
+Python 3.10 이상과 표준 라이브러리로 실행합니다. 외부 package 설치는 필요하지 않습니다. 아래 명령은 저장소 루트 기준입니다.
 
 ```sh
 python "예제_examples/심화_advanced/systems/demo.py" all
 python "예제_examples/심화_advanced/systems/test_advanced_models.py" -v
 ```
 
-`all` 대신 표의 demo 이름을 넣으면 한 주제만 실행한다. `advanced_models.py`는 상태 전이와 계산을, `demo.py`는 입력과 출력 관찰을, `test_advanced_models.py`는 독립 참조·경계·순열 검사를 담는다. 출력 JSON은 매 실행에서 계산하며 임의로 작성한 측정 결과가 아니다. 예시 입력 중 실측이 아닌 값은 구성값으로 설명한다.
+`all` 대신 표의 demo 이름을 넣으면 한 주제만 실행합니다. `advanced_models.py`는 상태 전이와 계산을, `demo.py`는 입력과 출력 관찰을, `test_advanced_models.py`는 독립 참조·경계·순열 검사를 담습니다. 출력 JSON은 매 실행에서 계산하며 임의로 작성한 측정 결과가 아닙니다. 예시 입력 중 실측이 아닌 값은 구성값으로 설명합니다.
 
-42개 테스트를 CPython 3.12.14와 Windows에서 실행했다. socket 예제는 실제 local socketpair와 selector를 사용했다. 그 밖의 큐·cache·scheduler·bus·debug·보안·UI 모델 결과를 Linux syscall, RTOS 보드, I2C 파형, GDB, MATLAB, HTTP 서버 또는 모바일 framework의 실행 결과로 보지 않는다. 보드 timing과 실제 toolchain은 각 문서의 별도 검증 범위를 따른다.
+42개 테스트를 CPython 3.12.14와 Windows에서 실행했습니다. socket 예제는 실제 local socketpair와 selector를 사용했습니다. 그 밖의 큐·cache·scheduler·bus·debug·보안·UI 모델 결과를 Linux syscall, RTOS 보드, I2C 파형, GDB, MATLAB, HTTP 서버 또는 모바일 framework의 실행 결과로 보지 않습니다. 보드 timing과 실제 toolchain은 각 문서의 별도 검증 범위를 따릅니다.
 
-`ring_buffer.c`는 C11 단일 실행 흐름용 고정 큐다. C compiler 실행은 검증 결과에 포함하지 않았다. C11 toolchain이 있는 경우 이 디렉터리에서 다음처럼 실행할 수 있다.
+`ring_buffer.c`는 C11 단일 실행 흐름용 고정 큐입니다. C compiler 실행은 검증 결과에 포함하지 않았습니다. C11 toolchain이 있는 경우 이 디렉터리에서 다음처럼 실행할 수 있습니다.
 
 ```sh
 cc -std=c11 -Wall -Wextra -Werror ring_buffer.c -o ring_buffer

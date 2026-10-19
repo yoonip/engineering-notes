@@ -16,7 +16,7 @@ Output ANIMAL_ID, NAME and DATETIME from ANIMAL_INS, formatting the timestamp as
 
 Display only year, month and day from the intake timestamp in YYYY-MM-DD format. Retain the ID and name and order rows by animal ID.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 DATE_FORMAT은 행을 합치거나 제거하지 않고 각 시각을 요구한 표시 문자열로 바꿉니다. ORDER BY가 출력 순서를 확정합니다.
 

@@ -4,35 +4,35 @@
 
 ## 한국어
 
-### 문자열을 바로 실행하지 않고 의미를 만든다
+### 문자열을 바로 실행하지 않고 의미를 만듭니다
 
-`2+3*4`를 왼쪽부터 계산하면 20이지만 곱셈 우선순위를 적용하면 14다. 문자 목록만으로는 연산 구조가 정해지지 않는다. parser는 문법과 우선순위에 따라 그 구조를 결정한다. compiler 입문에서 작은 수식 언어를 만드는 이유는 토큰·구조·실행 단계를 작은 입력으로 연결해 볼 수 있기 때문이다.
+`2+3*4`를 왼쪽부터 계산하면 20이지만 곱셈 우선순위를 적용하면 14입니다. 문자 목록만으로는 연산 구조가 정해지지 않습니다. parser는 문법과 우선순위에 따라 그 구조를 결정합니다. compiler 입문에서 작은 수식 언어를 만드는 이유는 토큰·구조·실행 단계를 작은 입력으로 연결해 볼 수 있기 때문입니다.
 
-예제 언어는 10진 음이 아닌 정수 literal, 괄호, 단항 minus, 이항 `+ - *`만 허용한다. 변수, 함수 호출, 나눗셈과 거듭제곱은 없다. 공백은 토큰 사이에서 무시한다. 허용 문법을 작게 정하면 입력 오류와 실행 의미를 정확하게 검사하기 쉽다. Python의 `eval()`에 이 문자열을 넘기지 않는다.
+예제 언어는 10진 음이 아닌 정수 literal, 괄호, 단항 minus, 이항 `+ - *`만 허용합니다. 변수, 함수 호출, 나눗셈과 거듭제곱은 없습니다. 공백은 토큰 사이에서 무시합니다. 허용 문법을 작게 정하면 입력 오류와 실행 의미를 정확하게 검사하기 쉽습니다. Python의 `eval()`에 이 문자열을 넘기지 않습니다.
 
-### binding power로 괄호 없는 구조를 읽는다
+### binding power로 괄호 없는 구조를 읽습니다
 
-tokenizer가 `2`, `+`, `3`, `*`, `4`를 구분한 뒤 parser가 `expression(minimum)`을 호출한다. 먼저 literal·단항 minus·괄호 안 수식 중 하나를 읽는다. 이어지는 이항 연산자의 우선순위가 minimum 이상이면 그 연산자를 소비하고 오른쪽 부분을 더 높은 minimum으로 읽는다. `+ -`는 10, `*`는 20, 단항 minus는 30을 사용한다.
+tokenizer가 `2`, `+`, `3`, `*`, `4`를 구분한 뒤 parser가 `expression(minimum)`을 호출합니다. 먼저 literal·단항 minus·괄호 안 수식 중 하나를 읽습니다. 이어지는 이항 연산자의 우선순위가 minimum 이상이면 그 연산자를 소비하고 오른쪽 부분을 더 높은 minimum으로 읽습니다. `+ -`는 10, `*`는 20, 단항 minus는 30을 사용합니다.
 
-같은 우선순위의 이항 연산을 왼쪽 결합으로 만들기 위해 오른쪽 호출의 minimum을 현재 우선순위+1로 둔다. 따라서 `10-3-2`는 `(10-3)-2`이고, `2+3*4`의 오른쪽에서는 *가 먼저 묶인다. LLVM tutorial은 operator-precedence parsing과 AST를 설명한다. 여기서는 그 원리를 binding-power 방식으로 구현하고 AST를 저장하는 대신 stack code를 바로 만든다. [LLVM parser tutorial](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl02.html)
+같은 우선순위의 이항 연산을 왼쪽 결합으로 만들기 위해 오른쪽 호출의 minimum을 현재 우선순위+1로 둡니다. 따라서 `10-3-2`는 `(10-3)-2`이고, `2+3*4`의 오른쪽에서는 *가 먼저 묶입니다. LLVM tutorial은 operator-precedence parsing과 AST를 설명합니다. 여기서는 그 원리를 binding-power 방식으로 구현하고 AST를 저장하는 대신 stack code를 바로 만듭니다. [LLVM parser tutorial](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl02.html)
 
-### 후위 순서가 stack 연산이 된다
+### 후위 순서가 stack 연산이 됩니다
 
-literal은 `PUSH n`, 단항 minus는 operand code 뒤 `NEG`, binary operator는 왼쪽 code·오른쪽 code·연산 instruction 순으로 출력한다. `2+3*4`는 `PUSH 2, PUSH 3, PUSH 4, MUL, ADD`가 된다. MUL은 오른쪽 4와 왼쪽 3을 꺼내 12를 넣고 ADD가 2와 12를 합친다. SUB에서 pop 순서를 뒤집으면 답이 바뀌므로 right를 먼저 꺼내고 left-right를 계산한다.
+literal은 `PUSH n`, 단항 minus는 operand code 뒤 `NEG`, binary operator는 왼쪽 code·오른쪽 code·연산 instruction 순으로 출력합니다. `2+3*4`는 `PUSH 2, PUSH 3, PUSH 4, MUL, ADD`가 됩니다. MUL은 오른쪽 4와 왼쪽 3을 꺼내 12를 넣고 ADD가 2와 12를 합칩니다. SUB에서 pop 순서를 뒤집으면 답이 바뀌므로 right를 먼저 꺼내고 left-right를 계산합니다.
 
-stack 높이는 PUSH에서 +1, NEG에서 0, binary operation에서 -1 변한다. NEG 전에는 최소 한 값, 이항 전에는 최소 두 값이 있어야 한다. 완성된 수식은 마지막에 정확히 한 값을 남겨야 한다. 이 조건으로 잘못된 bytecode의 underflow나 남은 operand를 검출한다. Python AST 문서는 syntax tree가 source 구조를 표현하는 별도 단계임을 보여 주며, 테스트에서는 이를 독립적인 구조 해석 경로로 사용한다. [Python ast](https://docs.python.org/3/library/ast.html)
+stack 높이는 PUSH에서 +1, NEG에서 0, binary operation에서 -1 변합니다. NEG 전에는 최소 한 값, 이항 전에는 최소 두 값이 있어야 합니다. 완성된 수식은 마지막에 정확히 한 값을 남겨야 합니다. 이 조건으로 잘못된 bytecode의 underflow나 남은 operand를 검출합니다. Python AST 문서는 syntax tree가 source 구조를 표현하는 별도 단계임을 보여 주며, 테스트에서는 이를 독립적인 구조 해석 경로로 사용합니다. [Python ast](https://docs.python.org/3/library/ast.html)
 
-### 입력 크기와 실행 범위를 제한한다
+### 입력 크기와 실행 범위를 제한합니다
 
-`compile_expression()`는 source 512문자, 재귀 깊이 64를 상한으로 둔다. 알 수 없는 token, 남은 token, 닫히지 않은 괄호를 거부한다. 전체 토큰 수 T에 대한 tokenization·parsing·instruction 생성은 이 문법에서 선형 작업을 한다. 정수는 Python 임의 정밀도이므로 산술 instruction의 비용까지 항상 O(1)이라고 세면 안 된다. 큰 정수 곱셈은 operand의 bit 수에 따라 달라진다.
+`compile_expression()`는 source 512문자, 재귀 깊이 64를 상한으로 둡니다. 알 수 없는 token, 남은 token, 닫히지 않은 괄호를 거부합니다. 전체 토큰 수 T에 대한 tokenization·parsing·instruction 생성은 이 문법에서 선형 작업을 합니다. 정수는 Python 임의 정밀도이므로 산술 instruction의 비용까지 항상 O(1)이라고 세면 안 됩니다. 큰 정수 곱셈은 operand의 bit 수에 따라 달라집니다.
 
-이 VM은 instruction tuple을 해석하는 작은 계산기이며 실제 CPU instruction이나 ELF를 생성하지 않는다. 허용 operation을 좁혔다고 범용 sandbox가 완성된 것도 아니다. 입력 경계와 자원 한도는 서비스를 붙일 때에도 그대로 유지해야 한다.
+이 VM은 instruction tuple을 해석하는 작은 계산기이며 실제 CPU instruction이나 ELF를 생성하지 않습니다. 허용 operation을 좁혔다고 범용 sandbox가 완성된 것도 아닙니다. 입력 경계와 자원 한도는 서비스를 붙일 때에도 그대로 유지해야 합니다.
 
-### 서로 다른 parser로 결과를 비교한다
+### 서로 다른 parser로 결과를 비교합니다
 
-테스트는 생성한 500개 수식을 이 parser로 compile·실행한 결과와 Python `ast.parse()`가 만든 tree를 허용 node만 순회해 계산한 결과를 비교한다. 이 참조는 eval을 사용하지 않으며 `Constant`, unary minus와 세 이항 연산만 인정한다. 별도 고정 예시는 우선순위, 왼쪽 결합, 괄호, 음수 곱셈을 확인한다. 빈 입력·함수 호출·지원하지 않는 나눗셈·끊긴 수식과 invalid bytecode도 거부한다. demo는 source, bytecode와 최종 값 1을 보여 준다.
+테스트는 생성한 500개 수식을 이 parser로 compile·실행한 결과와 Python `ast.parse()`가 만든 tree를 허용 node만 순회해 계산한 결과를 비교합니다. 이 참조는 eval을 사용하지 않으며 `Constant`, unary minus와 세 이항 연산만 인정합니다. 별도 고정 예시는 우선순위, 왼쪽 결합, 괄호, 음수 곱셈을 확인합니다. 빈 입력·함수 호출·지원하지 않는 나눗셈·끊긴 수식과 invalid bytecode도 거부합니다. demo는 source, bytecode와 최종 값 1을 보여 줍니다.
 
-저장소 루트에서 실행한다. 첫 명령은 입력과 계산 결과를 출력하고, 두 번째 명령은 이 디렉터리의 전체 테스트를 실행한다.
+저장소 루트에서 실행합니다. 첫 명령은 입력과 계산 결과를 출력하고, 두 번째 명령은 이 디렉터리의 전체 테스트를 실행합니다.
 
 ```sh
 python "예제_examples/심화_advanced/systems/demo.py" parser

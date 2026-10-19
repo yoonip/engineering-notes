@@ -1,21 +1,36 @@
 # 공학 노트 | Engineering Notes
 
-회로와 반도체부터 RTL·펌웨어, 시스템 소프트웨어, GPU와 AI까지 다루는 기술 기록입니다. 개념을 정리하고, 수식을 코드로 옮기고, 직접 실행한 결과를 함께 모았습니다. 논증과 자료를 읽는 추론, 철학·경제·사회·법의 기초도 함께 다룹니다.
+회로와 반도체부터 RTL·펌웨어, 시스템 소프트웨어, GPU와 AI까지 다루는 기술 기록입니다. 개념을 정리하고 수식을 코드로 옮기며, 직접 실행한 결과와 그 조건을 함께 모았습니다. 추론·시험, 언어 학습, 인문사회는 공학과 구분하여 읽으실 수 있습니다.
 
-각 주제에서는 무엇에 쓰이는지, 왜 그 방식으로 구현하는지부터 살펴봅니다. 설명은 한국어와 영어로 나누고, 코드 주석은 한국어로 적었습니다. Linux·Bash 같은 기술명은 익숙한 표기를 그대로 씁니다.
+## 학습 분야
 
-- [주제별 원리와 구현 | Concepts and implementations](문서_docs/심화해설_ADVANCED.md)
-- [공학 기초 개념과 계산 | Engineering foundations](문서_docs/공학기초_FOUNDATIONS.md)
-- [분야별 기초 해설 | Technical foundations by topic](문서_docs/분야별기초해설_EXTENDED_FOUNDATIONS.md)
-- [추론·인문사회 | Reasoning & humanities](문서_docs/추론과인문사회_REASONING_AND_HUMANITIES.md)
-- [연구·프로젝트·논문·수상 | Research & publications](연구_research/README.md)
-- [분야별 목차 | Topic index](분야별목차_CATALOG.md)
-- [AI 기업과 모델 | AI providers & models](AI모델실험_model-lab/PROVIDERS.md)
-- [도구 목록 | Tools](문서_docs/도구목록_TOOLS_INDEX.md)
-- [구현 프로젝트 | Projects](프로젝트_projects/README.md) · [코드 예제 | Code examples](예제_examples/README.md)
-- [알고리즘과 코딩테스트 | Algorithms](분야_topics/08-알고리즘_problem-solving/README.md) · [프로그래머스 학습 기록 | Programmers](programmers/README.md)
-- [지원·시험·면접 | Applications & interviews](분야_topics/55-지원시험면접_applications-assessments/README.md)
-- [작성자와 연락처 | Author & contact](문서_docs/작성자소개_PROFILE_TEMPLATE.md) · [참고 자료 | References](문서_docs/참고자료_SOURCES.md)
+| 분야 | 내용 |
+| --- | --- |
+| [공학 기초](공학기초_foundations/README.md) | 수학·물리·회로·시스템·AI의 기초, 분야별 학습과 심화 계산 |
+| [공학 분야별 해설](분야_topics/README.md) | 소프트웨어, 회로·반도체, 임베디드·제어, GPU·AI |
+| [추론과 시험](추론과시험_reasoning/README.md) | 논리·독해·자료해석·조건 추론, LEET·PSAT·GSAT·SKCT |
+| [언어 학습](언어학습_languages/README.md) | 기술 영어, 영어와 제2외국어, 읽기·쓰기 연습 |
+| [인문사회](인문사회_humanities/README.md) | 철학, 경제, 사회·제도, 법령 읽기 |
+
+## 논문과 기술 분석
+
+| 분야 | 내용 |
+| --- | --- |
+| [논문 해설](논문해설_papers/README.md) | 주장·수식·구현·실험 조건을 연결한 개별 논문 분석 |
+| [기술 동향](기술동향_technology/README.md) | 날짜와 근거를 갖춘 기술 현황, 표준과 벤치마크의 변화 |
+| [제품과 모델 리뷰](제품리뷰_reviews/README.md) | 실제 프로그램·배포 모델의 기능, 동작, 사용 조건 |
+| [AI 모델 실험](AI모델실험_model-lab/README.md) | 공급사별 모델 분석, 구조·배포 방식, CPU 계산 실험 |
+
+## 구현과 기록
+
+| 분야 | 내용 |
+| --- | --- |
+| [프로젝트](프로젝트_projects/README.md) · [실행 예제](예제_examples/README.md) | 소스, 실행 방법, 검증 결과 |
+| [알고리즘과 코딩테스트](programmers/README.md) | 프로그래머스 정답 672개와 풀이·문법 설명, 미완료 시도 분석 |
+| [연구 기록](연구_research/README.md) | 참여 연구, 논문, 학술 활동과 수상 |
+| [작성자 소개](소개_about/README.md) · [연락](소개_about/연락_CONTACT.md) | 학력, 관심 분야, 협업 연락처 |
+
+[도구와 환경](도구와환경_tools/README.md) · [출처와 참고 자료](참고자료_references/README.md) · [전체 분야별 목차](분야별목차_CATALOG.md) · [기여 안내](기여안내_contributing/README.md)
 
 ## 공학과 지식 공유
 
@@ -33,20 +48,12 @@
 
 ## English
 
-These notes connect circuits and semiconductors with RTL, firmware, systems software, GPU computing, and AI. They bring together technical explanations, equations translated into code, and results from the implementations. The collection also covers reasoning about arguments and data, alongside foundations of philosophy, economics, society and law.
+These notes connect circuits, semiconductors, RTL, firmware, systems software, GPUs and AI. They pair explanations with equations, implementations and recorded checks. Reasoning, language learning and humanities have separate reading paths.
 
-Each topic starts with what it is used for and why the implementation works that way. Explanations are available in Korean and English, while code comments stay in Korean. Familiar technical names such as Linux and Bash keep their usual spelling.
-
-- [60 advanced explanations and executable examples](문서_docs/심화해설_ADVANCED.md#english)
-- [Foundations: concepts, derivations, models, and verification](문서_docs/공학기초_FOUNDATIONS.md#english)
-- [Technical foundations by topic](문서_docs/분야별기초해설_EXTENDED_FOUNDATIONS.md)
-- [Reasoning, assessments, philosophy, economics, society and law](문서_docs/추론과인문사회_REASONING_AND_HUMANITIES.md#english)
-- [Research, papers, and awards](연구_research/README.md)
-- [Topic index](분야별목차_CATALOG.md) · [AI companies and models](AI모델실험_model-lab/PROVIDERS.md)
-- [Tools](문서_docs/도구목록_TOOLS_INDEX.md) · [Implemented projects](프로젝트_projects/README.md) · [Code examples](예제_examples/README.md)
-- [Algorithms and coding tests](분야_topics/08-알고리즘_problem-solving/README.md) · [672 archived Programmers solutions](programmers/README.md)
-- [Applications, assessments, and interviews](분야_topics/55-지원시험면접_applications-assessments/README.md)
-- [Author and contact](문서_docs/작성자소개_PROFILE_TEMPLATE.md) · [References](문서_docs/참고자료_SOURCES.md)
+- Learning: [Engineering foundations](공학기초_foundations/README.md#english), [technical topics](분야_topics/README.md), [reasoning and exams](추론과시험_reasoning/README.md), [languages](언어학습_languages/README.md), [humanities](인문사회_humanities/README.md).
+- Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [software and model reviews](제품리뷰_reviews/README.md), [AI model lab](AI모델실험_model-lab/README.md).
+- Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [672 Programmers solutions](programmers/README.md).
+- Background: [Research](연구_research/README.md), [author](소개_about/README.md), [contact](소개_about/연락_CONTACT.md), [tools](도구와환경_tools/README.md), [references](참고자료_references/README.md), [contributing](기여안내_contributing/README.md).
 
 ### Engineering and shared knowledge
 

@@ -14,7 +14,7 @@ Each matrix dimension is 2–100 and entries are in [−10,20]. Inner dimensions
 
 Transpose the second matrix into columns and sum pairwise products for each row-column pair. Entry (i,j) is the dot product of row i and column j.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 행렬 곱의 정의 C[i,j]=Σ A[i,k]B[k,j]를 그대로 계산합니다. 전치는 원소의 위치 표현만 바꾸므로 내적에 필요한 k 순서가 유지됩니다.
 

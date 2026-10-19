@@ -2,19 +2,19 @@
 
 [전체 목차](../../분야별목차_CATALOG.md) · [처음으로](../../README.md)
 
-CUDA는 NVIDIA GPU에서 병렬 연산을 작성하고 실행하는 플랫폼이다. CUDA C++의 kernel은 GPU에서 여러 thread로 실행되며, thread는 block에, block은 grid에 묶인다. CUDA 지원 여부는 대상 GPU에 따라 달라진다.
+CUDA는 NVIDIA GPU에서 병렬 연산을 작성하고 실행하는 플랫폼입니다. CUDA C++의 kernel은 GPU에서 여러 thread로 실행되며, thread는 block에, block은 grid에 묶입니다. CUDA 지원 여부는 대상 GPU에 따라 달라집니다.
 
 ## 실행 단위와 데이터 이동
 
-Block 안의 thread는 shared memory와 동기화를 사용할 수 있다. Global memory는 큰 데이터를 저장하지만 접근 패턴이 성능에 영향을 준다. 인접 thread가 인접 메모리에 접근하는 coalescing은 메모리 요청 효율과 관련된다. Stream은 작업의 순서를 구성하며, 서로 다른 작업이 실제로 겹치는지는 의존성과 하드웨어 조건에 달려 있다.
+Block 안의 thread는 shared memory와 동기화를 사용할 수 있습니다. Global memory는 큰 데이터를 저장하지만 접근 패턴이 성능에 영향을 줍니다. 인접 thread가 인접 메모리에 접근하는 coalescing은 메모리 요청 효율과 관련됩니다. Stream은 작업의 순서를 구성하며, 서로 다른 작업이 실제로 겹치는지는 의존성과 하드웨어 조건에 달려 있습니다.
 
 ## 라이브러리와 직접 작성한 kernel
 
-cuBLAS는 선형대수, cuDNN은 신경망 연산, CUTLASS는 고성능 행렬 연산 구성요소를 제공한다. Triton은 GPU kernel을 작성하는 별도 언어·컴파일러 생태계다. 직접 작성한 kernel은 산술 결과와 함께 경계 인덱스와 동기화 조건을 확인한다.
+cuBLAS는 선형대수, cuDNN은 신경망 연산, CUTLASS는 고성능 행렬 연산 구성요소를 제공합니다. Triton은 GPU kernel을 작성하는 별도 언어·컴파일러 생태계입니다. 직접 작성한 kernel은 산술 결과와 함께 경계 인덱스와 동기화 조건을 확인합니다.
 
-Nsight Systems는 시스템 수준의 실행 타임라인, Nsight Compute는 kernel 내부 성능 분석에 쓰인다. GPU 작업은 비동기로 실행되므로 CPU에서 호출 시간만 재면 실제 계산 시간을 놓칠 수 있다. CUDA event나 적절한 동기화를 포함한 측정이 필요하다.
+Nsight Systems는 시스템 수준의 실행 타임라인, Nsight Compute는 kernel 내부 성능 분석에 쓰입니다. GPU 작업은 비동기로 실행되므로 CPU에서 호출 시간만 재면 실제 계산 시간을 놓칠 수 있습니다. CUDA event나 적절한 동기화를 포함한 측정이 필요합니다.
 
-드라이버·CUDA Toolkit·프레임워크에 포함된 runtime은 구분된다. TensorRT는 추론 최적화에, ROCm·HIP은 AMD GPU 생태계에, SYCL·oneAPI·OpenCL·Metal은 다른 이기종 연산 환경에 쓰인다. OpenMP·OpenACC도 가속기 연산을 표현하는 방법이다.
+드라이버·CUDA Toolkit·프레임워크에 포함된 runtime은 구분됩니다. TensorRT는 추론 최적화에, ROCm·HIP은 AMD GPU 생태계에, SYCL·oneAPI·OpenCL·Metal은 다른 이기종 연산 환경에 쓰입니다. OpenMP·OpenACC도 가속기 연산을 표현하는 방법입니다.
 
 ## 관련 기술
 
@@ -27,9 +27,9 @@ CUDA, cuBLAS, cuDNN, CUTLASS, Triton, Nsight, ROCm/HIP, SYCL/oneAPI, OpenCL, Met
 
 ## 개념·유도·모델·검증
 
-[기초부터 읽기](../../문서_docs/공학기초_FOUNDATIONS.md)
+[기초부터 읽기](../../공학기초_foundations/README.md)
 
-- [계산이 느린가, 데이터를 기다리는가: Roofline과 병렬화](해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md)
+- [계산 병목과 데이터 대기: Roofline과 병렬화](해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md)
 
 ## English
 
@@ -50,7 +50,7 @@ The driver, CUDA Toolkit, and a framework's bundled runtime are separate compone
 
 ### Concepts, derivations, models, and verification
 
-[Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
+[Foundations reading guide](../../공학기초_foundations/README.md#english)
 
 - [Roofline and parallel performance limits](해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md#english)
 

@@ -8,7 +8,7 @@
 
 ## 코드와 줄별 설명
 
-빈칸 채우기·한 줄 수정 형식이라 사이트에는 지정된 부분만 제출했다. 아래 전체 주석본은 학습용으로 보관한다.
+빈칸 채우기·한 줄 수정 형식이라 사이트에는 지정된 부분만 제출했습니다. 아래 전체 주석본은 학습용으로 보관합니다.
 
 [코드 파일 / Source](solution.py) · [채점 기록 / Grade](grading.json)
 
@@ -37,6 +37,6 @@ print(answer)
 
 ## 채점 기록 / Grading record
 
-저장된 사이트 채점 결과는 100점이다. 코드 파일의 SHA-256과 채점 기록의 SHA-256을 `grading.json`에 남겼다. 이 기록을 정리하면서 새로 제출한 것은 아니다.
+저장된 사이트 채점 결과는 100점입니다. 코드 파일의 SHA-256과 채점 기록의 SHA-256을 `grading.json`에 남겼습니다. 이 기록을 정리하면서 새로 제출한 것은 아닙니다.
 
 The saved website result is 100/100. The file contains executable code followed by an exact commented copy with Korean notes on syntax and purpose. Source and saved-result hashes are in `grading.json`. This archive update did not resubmit the solution.

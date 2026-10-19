@@ -14,7 +14,7 @@ There are 1–1000000 distinct phone numbers of length 1–20. Return False if a
 
 Sort phone numbers lexicographically. If a number prefixes any later number, it also prefixes its immediate successor, so adjacent comparisons suffice.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 같은 접두사로 시작하는 문자열은 사전순 정렬에서 연속한 구간입니다. 짧은 접두사 번호가 존재하면 그 구간의 첫 번호와 바로 뒤 번호가 반드시 충돌합니다.
 

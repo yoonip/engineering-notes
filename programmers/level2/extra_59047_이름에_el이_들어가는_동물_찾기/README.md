@@ -16,7 +16,7 @@ Output IDs and names of dogs containing el case-insensitively, ordered by name.
 
 Find dogs whose names contain el without regard to case. Lowercase only the search expression and preserve the original displayed name.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 두 WHERE 조건의 AND가 개이면서 이름 조건을 만족하는 교집합을 고릅니다. NULL 이름은 포함 비교가 참이 아니어서 자동으로 제외됩니다.
 

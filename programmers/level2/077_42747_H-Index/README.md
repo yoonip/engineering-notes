@@ -14,7 +14,7 @@ There are 1–1000 papers with 0–10000 citations. Return the largest h for whi
 
 Sort citations descending. If the count-th paper has at least count citations, the first count papers all satisfy that threshold. The last passing count is the answer.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 내림차순에서 h번째 값이 h 이상인 것과 h편 이상이 h회 이상 인용된 것은 동치입니다. 조건이 한 번 깨지면 이후 값은 더 작고 순번은 더 커져 다시 만족할 수 없습니다.
 

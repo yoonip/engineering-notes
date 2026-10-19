@@ -16,7 +16,7 @@ Cat과 Dog인 행을 종류별로 묶어 마릿수를 셉니다. 종류 이름 �
 
 Group Cat and Dog rows by animal type and count them. Alphabetic type ordering places Cat before Dog, as required.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 동물 한 행은 한 종류 그룹에만 속합니다. COUNT(*)는 이름 유무와 관계없이 그 종류의 모든 동물을 셉니다.
 

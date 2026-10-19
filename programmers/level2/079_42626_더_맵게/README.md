@@ -14,7 +14,7 @@ There are 2–1000000 values in [0,1000000], with K in [0,1000000000]. Replace t
 
 A min-heap supplies the two least spicy foods at each step. Once the minimum reaches K, all foods qualify. If a single insufficient food remains, the task is impossible.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 heap의 뿌리는 항상 남은 음식의 최솟값입니다. 문제에서 정한 혼합을 그대로 반복하며 최솟값으로 종료 조건을 판정하므로 필요한 혼합 횟수가 정확합니다.
 

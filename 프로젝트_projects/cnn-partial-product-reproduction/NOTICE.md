@@ -1,6 +1,6 @@
 # 코드 출처와 구현 범위
 
-Python·SystemVerilog 연산 모델과 교육용 Level1 회로 모델을 포함한다. `metrics/`에는 이 구현에서 얻은 실험 집계치를 정리했다.
+Python·SystemVerilog 연산 모델과 교육용 Level1 회로 모델을 포함합니다. `metrics/`에는 이 구현에서 얻은 실험 집계치를 정리했습니다.
 
 | 구성 | 출처와 역할 | 배포 범위 |
 |---|---|---|
@@ -12,7 +12,7 @@ Python·SystemVerilog 연산 모델과 교육용 Level1 회로 모델을 포함�
 | 회로 시뮬레이터 | [ngspice](https://ngspice.sourceforge.io/) | 실행 파일·라이브러리 미포함 |
 | 선택적 공정 모델 | [공식 SKY130 primitive 저장소](https://github.com/google/skywater-pdk-libs-sky130_fd_pr), commit `f62031a1be9aefe902d6d54cddd6f59b57627436` | 외부 로컬 모델만 읽음; 공급사 코드·모델·계수 사본 미포함 |
 
-`circuit/models/educational_level1.pm`은 직접 작성한 예시 모델이며 공정 보정이 없다. SKY130 및 다른 공급사의 모델과 출처가 다르다. 외부 라이브러리·데이터·PDK의 이용 조건은 각 배포물에 따른다. 자체 소스의 오픈소스 라이선스는 지정하지 않았다.
+`circuit/models/educational_level1.pm`은 직접 작성한 예시 모델이며 공정 보정이 없습니다. SKY130 및 다른 공급사의 모델과 출처가 다릅니다. 외부 라이브러리·데이터·PDK의 이용 조건은 각 배포물에 따릅니다. 자체 소스의 오픈소스 라이선스는 지정하지 않았습니다.
 
 ## English
 

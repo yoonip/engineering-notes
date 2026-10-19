@@ -1,6 +1,6 @@
 # 회로·디지털 하드웨어 기초 모델 | Circuit and digital hardware foundation models
 
-저장소 루트에서 실행한다. Python 표준 라이브러리만 사용한다.
+저장소 루트에서 실행합니다. Python 표준 라이브러리만 사용합니다.
 
 Run from the repository root. The Python examples use only the standard library.
 
@@ -17,11 +17,11 @@ python -m unittest discover -s 예제_examples/공학기초_foundations/circuits
 | Lossless line | 반사 경계, 전력 보존, 직류 극한 / Reflection boundaries, power conservation, DC limit |
 | Probe and uncertainty | 직류 분압, 극점, 상관 및 표본 검산 / DC divider, pole, correlation and sampling checks |
 
-FIFO의 Python 모델과 RTL은 같은 명세를 구현하지만 서로 다른 프로그램이다. Python 테스트의 통과를 RTL 시뮬레이션 통과로 해석하지 않는다. `sync_fifo.sv`의 파라미터는 `WIDTH >= 1`, `DEPTH >= 1`이며 `PTR_W`, `COUNT_W`는 기본값을 사용한다. 동기식 active-high 리셋이며 메모리 내용 대신 유효 점유량을 초기화한다. 읽기 데이터는 수락한 상승 에지 뒤에 `rd_valid`와 함께 유효하다.
+FIFO의 Python 모델과 RTL은 같은 명세를 구현하지만 서로 다른 프로그램입니다. Python 테스트의 통과를 RTL 시뮬레이션 통과로 해석하지 않습니다. `sync_fifo.sv`의 파라미터는 `WIDTH >= 1`, `DEPTH >= 1`이며 `PTR_W`, `COUNT_W`는 기본값을 사용합니다. 동기식 active-high 리셋이며 메모리 내용 대신 유효 점유량을 초기화합니다. 읽기 데이터는 수락한 상승 에지 뒤에 `rd_valid`와 함께 유효합니다.
 
 The Python FIFO and RTL implement the same contract as separate programs. Passing the Python tests does not establish RTL simulation success. `sync_fifo.sv` requires `WIDTH >= 1` and `DEPTH >= 1`; keep the default `PTR_W` and `COUNT_W`. It uses a synchronous active-high reset and resets occupancy rather than clearing the memory array. Read data becomes valid with `rd_valid` after the accepting rising edge.
 
-Icarus Verilog가 설치된 환경에서는 다음과 같이 깊이 1과 3을 각각 검사한다. 산출물은 추적하지 않는 `build/`에 둔다.
+Icarus Verilog가 설치된 환경에서는 다음과 같이 깊이 1과 3을 각각 검사합니다. 산출물은 추적하지 않는 `build/`에 둡니다.
 
 With Icarus Verilog installed, exercise depths one and three separately. Keep generated files in the ignored `build/` directory.
 
@@ -33,6 +33,6 @@ iverilog -g2012 -s tb_sync_fifo -Ptb_sync_fifo.DEPTH=3 -o build/fifo3 예제_exa
 vvp build/fifo3
 ```
 
-수치 모델은 명시된 이상화 조건을 검사한다. 실제 부품의 공정 모델, FPGA 합성·타이밍 보고서, 계측기 교정 성적서나 실측 자료를 대신하지 않는다.
+수치 모델은 명시된 이상화 조건을 검사합니다. 실제 부품의 공정 모델, FPGA 합성·타이밍 보고서, 계측기 교정 성적서나 실측 자료를 대신하지 않습니다.
 
 The numerical models check the stated idealizations. They do not substitute for process models, FPGA synthesis and timing reports, instrument calibration certificates, or physical measurements.

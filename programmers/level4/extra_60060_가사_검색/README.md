@@ -6,32 +6,32 @@ Level 4 · `60060` · Python3 · [공식 문제](https://school.programmers.co.k
 
 ## 문제와 조건
 
-?가 정확히 한 글자를 뜻하는 패턴과 일치하는 단어 수를 구한다. ?는 한쪽 끝에 연속해서만 나온다.
+?가 정확히 한 글자를 뜻하는 패턴과 일치하는 단어 수를 구합니다. ?는 한쪽 끝에 연속해서만 나옵니다.
 
-입력 범위와 상수는 다음과 같다. 기호는 코드의 매개변수에 맞췄다.
+입력 범위와 상수는 다음과 같습니다. 기호는 코드의 매개변수에 맞췄습니다.
 
 `2≤word/query counts≤100000; individual lengths:1..10000; each total length≤1000000; distinct lowercase words; ? forms one nonempty prefix or suffix.`
 
 ## 풀이를 따라가기
 
-단어를 길이별로 정렬한다. 고정 접두사를 공유하는 같은 길이 단어는 정렬 결과에서 연속이다. ?를 a·z로 바꾼 두 경계를 이진 탐색한다. 접미사는 단어와 질의를 뒤집어 접두사 문제로 만든다.
+단어를 길이별로 정렬합니다. 고정 접두사를 공유하는 같은 길이 단어는 정렬 결과에서 연속입니다. ?를 a·z로 바꾼 두 경계를 이진 탐색합니다. 접미사는 단어와 질의를 뒤집어 접두사 문제로 만듭니다.
 
-길이가 먼저 같고 문자가 소문자이므로 두 사전순 경계 사이가 정확히 일치 집합이다. 가운데 ?나 양쪽 ? 패턴에는 이 경계식을 그대로 쓸 수 없다.
+길이가 먼저 같고 문자가 소문자이므로 두 사전순 경계 사이가 정확히 일치 집합입니다. 가운데 ?나 양쪽 ? 패턴에는 이 경계식을 그대로 쓸 수 없습니다.
 
 ## 다른 방법과 비교
 
-대안은 길이별 정방향·역방향 trie에 접두사별 단어 수를 저장한다. 총 글자 수에 비례해 검색할 수 있지만 Python의 작은 딕셔너리 노드가 많아 메모리 상수가 커질 수 있다.
+대안은 길이별 정방향·역방향 trie에 접두사별 단어 수를 저장합니다. 총 글자 수에 비례해 검색할 수 있지만 Python의 작은 딕셔너리 노드가 많아 메모리 상수가 커질 수 있습니다.
 
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O((W+Q) log N), 문자열 비교 포함 / including comparisons` | `O(W)` |
 | 대안 풀이 | `O(W+Q) 평균 해시 / expected hashing` | `O(W)` |
 
-W는 단어의 총 글자 수, Q는 질의의 총 글자 수, N은 단어 수다.
+W는 단어의 총 글자 수, Q는 질의의 총 글자 수, N은 단어 수입니다.
 
 ## 코드와 검증
 
-`solution.py`에는 상태의 뜻과 경계조건을 한국어 주석으로 적었다. `alternative.py`는 별도의 풀이이며, `test_solution.py`에서 공식 예제와 생성 입력을 비교한다. 실행 기록은 [validation.json](validation.json)에 있다. 원본 제출 파일은 [submitted_original.py](submitted_original.py)에 그대로 보관했다.
+`solution.py`에는 상태의 뜻과 경계조건을 한국어 주석으로 적었습니다. `alternative.py`는 별도의 풀이이며, `test_solution.py`에서 공식 예제와 생성 입력을 비교합니다. 실행 기록은 [validation.json](validation.json)에 있습니다. 원본 제출 파일은 [submitted_original.py](submitted_original.py)에 그대로 보관했습니다.
 
 ```bash
 python test_solution.py

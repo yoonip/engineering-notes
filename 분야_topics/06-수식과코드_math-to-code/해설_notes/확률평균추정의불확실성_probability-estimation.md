@@ -4,44 +4,44 @@
 
 ## 한국어
 
-### 한 번의 측정과 평균은 다른 질문에 답한다
+### 한 번의 측정과 평균은 다른 질문에 답합니다
 
-같은 전압을 여러 번 읽어도 값은 조금씩 달라진다. 한 번의 측정값이 얼마나 흔들리는지와, 여러 번 평균 낸 값이 얼마나 불확실한지는 다르다. 전자는 표준편차, 후자는 평균의 표준오차로 구분할 수 있다. 표준편차가 큰 센서도 독립적인 반복 측정을 모으면 평균의 흔들림은 줄일 수 있다. 그러나 모든 측정에 같은 오프셋이 있다면 평균도 그만큼 치우친다.
+같은 전압을 여러 번 읽어도 값은 조금씩 달라집니다. 한 번의 측정값이 얼마나 흔들리는지와, 여러 번 평균 낸 값이 얼마나 불확실한지는 다릅니다. 전자는 표준편차, 후자는 평균의 표준오차로 구분할 수 있습니다. 표준편차가 큰 센서도 독립적인 반복 측정을 모으면 평균의 흔들림은 줄일 수 있습니다. 그러나 모든 측정에 같은 오프셋이 있다면 평균도 그만큼 치우칩니다.
 
-확률변수 $`X`$는 측정 전에 결과를 수로 표현하는 모델이고, 관측값 $`x`$는 실제로 얻은 한 값이다. 이산 확률변수의 기댓값과 분산은
+확률변수 $`X`$는 측정 전에 결과를 수로 표현하는 모델이고, 관측값 $`x`$는 실제로 얻은 한 값입니다. 이산 확률변수의 기댓값과 분산은
 
 $$\mu=E[X]=\sum_x xp(x),\qquad \sigma^2=E[(X-\mu)^2].$$
 
-연속형에서는 합 대신 확률밀도에 대한 적분을 쓴다. $`X`$가 V 단위라면 평균과 표준편차는 V, 분산은 V²다. 이 글은 유한한 평균과 분산을 가진 같은 분포의 독립 표본을 기본 모델로 삼는다. 추정량과 표본분포의 구분은 [MIT 18.05 통계 자료](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_statistics.pdf)에서 확인할 수 있다.
+연속형에서는 합 대신 확률밀도에 대한 적분을 씁니다. $`X`$가 V 단위라면 평균과 표준편차는 V, 분산은 V²입니다. 이 글은 유한한 평균과 분산을 가진 같은 분포의 독립 표본을 기본 모델로 삼습니다. 추정량과 표본분포의 구분은 [MIT 18.05 통계 자료](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_statistics.pdf)에서 확인할 수 있습니다.
 
-### 왜 평균의 흔들림은 제곱근으로 줄어드는가
+### 왜 평균의 흔들림은 제곱근으로 줄어듭니까
 
-$`\bar X=(X_1+\cdots+X_n)/n`$의 기댓값은 $`\mu`$다. 독립이면 공분산이 0이므로
+$`\bar X=(X_1+\cdots+X_n)/n`$의 기댓값은 $`\mu`$입니다. 독립이면 공분산이 0이므로
 
 $$\mathrm{Var}(\bar X)=\frac{1}{n^2}\sum_i\mathrm{Var}(X_i)
 =\frac{\sigma^2}{n},\qquad \mathrm{SE}(\bar X)=\frac{\sigma}{\sqrt n}.$$
 
-표본을 4배 모아야 표준오차가 절반이 된다. 단순히 데이터를 복사해 개수를 늘리는 것은 독립 표본을 추가하는 일이 아니다. 상관이 있으면 정확한 분산식에 $`2\sum_{i<j}\mathrm{cov}(X_i,X_j)/n^2`$가 추가된다. 시간 순서가 있는 센서 데이터에서는 드리프트와 자기상관부터 확인한다. [NIST TN 1297 Appendix A](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty)의 독립 반복 측정 공식도 같은 관계를 사용한다.
+표본을 4배 모아야 표준오차가 절반이 됩니다. 단순히 데이터를 복사해 개수를 늘리는 것은 독립 표본을 추가하는 일이 아닙니다. 상관이 있으면 정확한 분산식에 $`2\sum_{i<j}\mathrm{cov}(X_i,X_j)/n^2`$가 추가됩니다. 시간 순서가 있는 센서 데이터에서는 드리프트와 자기상관부터 확인합니다. [NIST TN 1297 Appendix A](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty)의 독립 반복 측정 공식도 같은 관계를 사용합니다.
 
 모집단 분산을 모를 때의 표본분산은
 
 $$s^2=\frac{1}{n-1}\sum_i(x_i-\bar x)^2,\qquad \widehat{\mathrm{SE}}=s/\sqrt n.$$
 
-분모가 $`n-1`$인 이유는 평균 하나를 데이터로 추정하면서 잔차 합이 0이라는 제약 하나가 생기기 때문이다. 독립·동일 분포, 유한 분산 조건에서 $`E[s^2]=\sigma^2`$다. 이것이 $`s`$ 자체까지 불편 추정량이라는 뜻은 아니다.
+분모가 $`n-1`$인 이유는 평균 하나를 데이터로 추정하면서 잔차 합이 0이라는 제약 하나가 생기기 때문입니다. 독립·동일 분포, 유한 분산 조건에서 $`E[s^2]=\sigma^2`$입니다. 이것이 $`s`$ 자체까지 불편 추정량이라는 뜻은 아닙니다.
 
-### 신뢰구간은 계산 절차의 성질이다
+### 신뢰구간은 계산 절차의 성질입니다
 
 독립 정규 표본이고 모집단 표준편차 $`\sigma`$를 안다면
 
 $$\bar x\pm z_{1-\alpha/2}\frac{\sigma}{\sqrt n}$$
 
-은 평균의 $`100(1-\alpha)`$ % 신뢰구간이다. 정규 표본에서 $`\sigma`$를 표본의 $`s`$로 추정했다면 $`z`$ 대신 자유도 $`n-1`$의 Student $`t`$ 분위수를 사용한다. 정규성이 없으면 이 결과는 일반적으로 정확한 유한 표본 결과가 아니며, 적절한 중심극한 근사나 분포에 맞는 방법이 필요하다. 이 구분은 [NIST의 알려진 분산 구간](https://itl.nist.gov/div898/handbook/prc/section1/prc14.htm)과 [평균의 t 구간](https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm)을 대조했다.
+은 평균의 $`100(1-\alpha)`$ % 신뢰구간입니다. 정규 표본에서 $`\sigma`$를 표본의 $`s`$로 추정했다면 $`z`$ 대신 자유도 $`n-1`$의 Student $`t`$ 분위수를 사용합니다. 정규성이 없으면 이 결과는 일반적으로 정확한 유한 표본 결과가 아니며, 적절한 중심극한 근사나 분포에 맞는 방법이 필요합니다. 이 구분은 [NIST의 알려진 분산 구간](https://itl.nist.gov/div898/handbook/prc/section1/prc14.htm)과 [평균의 t 구간](https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm)을 대조했습니다.
 
-95 %는 같은 조건에서 표본을 다시 뽑고 같은 계산을 반복했을 때 구간이 모평균을 포함하는 장기 비율이다. 이미 계산한 특정 구간에 참평균이 95 % 확률로 들어 있다는 빈도주의 해석은 하지 않는다. 개별 측정값 95 %가 이 구간 안에 있다는 뜻도 아니다.
+95 %는 같은 조건에서 표본을 다시 뽑고 같은 계산을 반복했을 때 구간이 모평균을 포함하는 장기 비율입니다. 이미 계산한 특정 구간에 참평균이 95 % 확률로 들어 있다는 빈도주의 해석은 하지 않습니다. 개별 측정값 95 %가 이 구간 안에 있다는 뜻도 아닙니다.
 
 ### 안정적인 구현과 확인
 
-분산을 `평균(x*x) - 평균(x)**2`로 계산하면 큰 수 둘을 빼면서 정밀도를 잃을 수 있다. 구현은 Welford 갱신을 쓴다. 표본 $`x`$가 추가되면 $`\delta=x-\bar x_{old}`$, $`\bar x_{new}=\bar x_{old}+\delta/n`$, $`M_{2,new}=M_{2,old}+\delta(x-\bar x_{new})`$다. 한 번 순회하고 상태 세 개만 유지해 시간 $`O(n)`$, 추가 메모리 $`O(1)`$이다. 갱신식과 상쇄 오차는 [Chan, Golub, LeVeque (1983), §§1–2](https://math.pku.edu.cn/teachers/litj/notes/numer_anal/AmerStat_37_242_Chan_Variance.pdf)와 대조했다.
+분산을 `평균(x*x) - 평균(x)**2`로 계산하면 큰 수 둘을 빼면서 정밀도를 잃을 수 있습니다. 구현은 Welford 갱신을 씁니다. 표본 $`x`$가 추가되면 $`\delta=x-\bar x_{old}`$, $`\bar x_{new}=\bar x_{old}+\delta/n`$, $`M_{2,new}=M_{2,old}+\delta(x-\bar x_{new})`$입니다. 한 번 순회하고 상태 세 개만 유지해 시간 $`O(n)`$, 추가 메모리 $`O(1)`$입니다. 갱신식과 상쇄 오차는 [Chan, Golub, LeVeque (1983), §§1–2](https://math.pku.edu.cn/teachers/litj/notes/numer_anal/AmerStat_37_242_Chan_Variance.pdf)와 대조했습니다.
 
 ```python
 from math import sqrt
@@ -55,7 +55,7 @@ interval = normal_mean_interval(mean, sigma=0.02, count=n)
 print(mean, estimated_se, interval)
 ```
 
-`normal_mean_interval`은 알려진 $`\sigma`$의 정규 모델만 구현한다. 표본 표준편차를 그대로 넣어 소표본 t 구간인 것처럼 사용하지 않는다. 검사는 표준 라이브러리의 평균·분산, 알려진 정규 분위수, 표본 수 4배에서 구간 폭 절반, 상수 표본, 잘못된 입력을 확인한다. 고정 시드의 2,000개 정규 모의 표본으로 구간 포함 비율도 검사하지만, 이 빈도 검사가 모든 분포에서 95 %를 보장하지는 않는다. 실제 데이터에서는 표본 수, 수집 조건, 이상값 처리, 드리프트 여부를 함께 기록한다.
+`normal_mean_interval`은 알려진 $`\sigma`$의 정규 모델만 구현합니다. 표본 표준편차를 그대로 넣어 소표본 t 구간인 것처럼 사용하지 않습니다. 검사는 표준 라이브러리의 평균·분산, 알려진 정규 분위수, 표본 수 4배에서 구간 폭 절반, 상수 표본, 잘못된 입력을 확인합니다. 고정 시드의 2,000개 정규 모의 표본으로 구간 포함 비율도 검사하지만, 이 빈도 검사가 모든 분포에서 95 %를 보장하지는 않습니다. 실제 데이터에서는 표본 수, 수집 조건, 이상값 처리, 드리프트 여부를 함께 기록합니다.
 
 ## English
 
@@ -90,4 +90,4 @@ The example estimates mean, variance, and standard error from four readings. Its
 - NIST statistical handbook, sections 7.1.4 and 1.3.5.2: 알려진 분산·추정 분산의 구분과 신뢰구간 해석 / known versus estimated variance and interval interpretation.
 - Chan, Golub, LeVeque, The American Statistician 37(3), 242–247 (1983), DOI 10.1080/00031305.1983.10483115: 분산 계산의 갱신식과 반올림 오차 / updating variance and roundoff error.
 
-계산 예와 모의 표본은 실제 측정 데이터가 아니다. / Calculation examples and simulated samples are not experimental measurements.
+계산 예와 모의 표본은 실제 측정 데이터가 아닙니다. / Calculation examples and simulated samples are not experimental measurements.

@@ -14,7 +14,7 @@
 
 This is bijective base three, with no zero digit. Divide n−1 by three, map remainders 0,1,2 to 1,2,4, and repeat on the quotient.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 끝자리 1·2·4는 차례대로 세 개씩 반복됩니다. 1을 뺀 뒤 나누면 3의 배수일 때 필요한 자리 빌림까지 함께 처리되어 각 양의 정수와 표현이 일대일 대응합니다.
 

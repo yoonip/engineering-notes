@@ -14,7 +14,7 @@ The lowercase string has length 1–1000. Compress consecutive equal fixed-width
 
 Try every chunk width and count consecutive equal chunks from the beginning. A single chunk has no count prefix. Include any shorter trailing chunk in the encoded length.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 압축은 앞에서 고정 길이로 나눈 조각의 연속 묶음으로 결정됩니다. 같은 묶음을 한 번씩 정확히 계산하고 모든 유효한 단위 길이를 비교하므로 최소 길이를 얻습니다.
 

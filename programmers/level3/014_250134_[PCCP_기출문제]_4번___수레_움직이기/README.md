@@ -14,7 +14,7 @@ Both dimensions are 1–4 with one start and goal for each cart. Carts cannot re
 
 Store both positions and separate visited-cell sets. Choose both moves simultaneously, rejecting same-cell arrivals and swaps. A cart stays at its goal; Manhattan-distance lower bounds prune unhelpful branches.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 미래 이동 가능성은 두 위치와 두 방문 집합으로 완전히 정해집니다. 모든 합법 동시 이동을 탐색하고, 현재 최선보다 나을 수 없는 거리 하한만 제거하므로 최소 턴 해를 보존합니다.
 

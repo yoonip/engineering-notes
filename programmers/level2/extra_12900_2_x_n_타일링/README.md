@@ -14,7 +14,7 @@
 
 The right end is either one vertical domino, leaving width n−1, or two horizontal dominoes, leaving width n−2. Add these counts iteratively.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 2행의 마지막 열은 위 두 형태로만 채울 수 있고 서로 겹치지 않습니다. 따라서 f(n)=f(n−1)+f(n−2), f(0)=f(1)=1입니다.
 

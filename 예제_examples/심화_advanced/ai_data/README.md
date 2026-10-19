@@ -1,6 +1,6 @@
 # AI·데이터 심화 실행 예제
 
-Python 표준 라이브러리로 수식을 직접 계산하고 독립 기준과 비교한다. 외부 패키지 설치는 필요하지 않다. 저장소 최상위에서 실행한다.
+Python 표준 라이브러리로 수식을 직접 계산하고 독립 기준과 비교합니다. 외부 패키지 설치는 필요하지 않습니다. 저장소 최상위에서 실행합니다.
 
 ```bash
 python "예제_examples/심화_advanced/ai_data/demo.py" all
@@ -23,15 +23,15 @@ python -m unittest discover -s "예제_examples/심화_advanced/ai_data" -p "tes
 | quantization | 출력 채널별 scale을 쓰는 정수 내적 |
 | raster | 화면 보간과 원근 보정 보간 비교 |
 
-한 명령만 실행할 때는 all 대신 표의 명령을 사용한다. `--output 결과.json` 옵션은 실행 결과를 JSON 파일에 저장한다. SQLite는 임시 폴더의 파일을 사용하고 연결을 닫은 뒤 정리한다. 타이밍은 실행한 환경의 값이며 보편적인 성능 수치가 아니다.
+한 명령만 실행할 때는 all 대신 표의 명령을 사용합니다. `--output 결과.json` 옵션은 실행 결과를 JSON 파일에 저장합니다. SQLite는 임시 폴더의 파일을 사용하고 연결을 닫은 뒤 정리합니다. 타이밍은 실행한 환경의 값이며 보편적인 성능 수치가 아닙니다.
 
-CUDA 예제 `tiled_matmul.cu`는 별도 소스다. CUDA Toolkit과 호환되는 host compiler가 있는 환경에서 컴파일할 수 있다.
+CUDA 예제 `tiled_matmul.cu`는 별도 소스입니다. CUDA Toolkit과 호환되는 host compiler가 있는 환경에서 컴파일할 수 있습니다.
 
 ```bash
 nvcc -O2 -std=c++17 "예제_examples/심화_advanced/ai_data/tiled_matmul.cu" -o tiled_matmul
 ```
 
-Windows 실행 파일은 `.\tiled_matmul.exe 37 45 29`로 실행한다. Kernel은 16×16 타일을 사용하고 경계 load는 0으로 채운다. 실행 파일 자체가 double CPU 기준과 전 출력을 비교하고, 실패 수·오차·CUDA event 시간을 JSON으로 출력한다. Kernel 시간에는 전송을 포함하지 않는다. Python CLI의 matrix 결과는 CPU 계산이며 `cuda_executed: false`를 명시한다. 이 저장소의 Python 검증 통과가 CUDA 컴파일·장치 실행을 뜻하지는 않는다.
+Windows 실행 파일은 `.\tiled_matmul.exe 37 45 29`로 실행합니다. Kernel은 16×16 타일을 사용하고 경계 load는 0으로 채웁니다. 실행 파일 자체가 double CPU 기준과 전 출력을 비교하고, 실패 수·오차·CUDA event 시간을 JSON으로 출력합니다. Kernel 시간에는 전송을 포함하지 않습니다. Python CLI의 matrix 결과는 CPU 계산이며 `cuda_executed: false`를 명시합니다. 이 저장소의 Python 검증 통과가 CUDA 컴파일·장치 실행을 뜻하지는 않습니다.
 
 ## English
 

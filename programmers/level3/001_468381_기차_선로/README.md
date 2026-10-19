@@ -14,7 +14,7 @@ Each dimension is 2–8, with at most 20 cells overall. −1 is blocked, zero is
 
 Explore the train’s actual route and choose only rail shapes compatible with its entry direction. Traversing an empty cell once horizontally and once vertically makes a crossing; every existing crossing must be used on both axes.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 진입·진출 연결을 만족하는 선택만 생성하며 같은 축 재방문은 순환으로 막습니다. 기존 선로 미방문 집합과 교차 선로의 미완료 집합이 모두 비었을 때만 도착을 인정해 사용 조건을 함께 보장합니다.
 

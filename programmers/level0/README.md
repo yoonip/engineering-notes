@@ -1,6 +1,6 @@
 # Level 0 — 풀이와 코드 / Solutions and code
 
-언어 필터 없이 전체 목록을 대조한 240문제를 모았다. 모든 문제에 코드와 줄별 문법 설명이 있다. 예전에 완료한 제출본도 포함하며, 당시 100점 원본과 이번 주석본을 구분했다.
+언어 필터 없이 전체 목록을 대조한 240문제를 모았습니다. 모든 문제에 코드와 줄별 문법 설명이 있습니다. 예전에 완료한 제출본도 포함하며, 당시 100점 원본과 이번 주석본을 구분했습니다.
 
 240 problems, matched against the complete unfiltered list for this level. Every entry has code and Korean line-by-line syntax notes. Older accepted submissions are included, with their original source and the newly annotated copy distinguished.
 
@@ -8,243 +8,243 @@
 
 | ID | 문제 / Problem | 언어 / Language | 코드 / Source |
 |---|---|---|---|
-| 340207 | [&#91;PCCE 기출문제&#93; 1번 / 문자 출력](extra_340207_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%AC%B8%EC%9E%90_%EC%B6%9C%EB%A0%A5/README.md) | Python3 | [코드](extra_340207_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%AC%B8%EC%9E%90_%EC%B6%9C%EB%A0%A5/solution.py) |
-| 340206 | [&#91;PCCE 기출문제&#93; 2번 / 각도 합치기](extra_340206_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_2%EB%B2%88___%EA%B0%81%EB%8F%84_%ED%95%A9%EC%B9%98%EA%B8%B0/README.md) | Python3 | [코드](extra_340206_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_2%EB%B2%88___%EA%B0%81%EB%8F%84_%ED%95%A9%EC%B9%98%EA%B8%B0/solution.py) |
-| 340205 | [&#91;PCCE 기출문제&#93; 3번 / 수 나누기](extra_340205_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_3%EB%B2%88___%EC%88%98_%EB%82%98%EB%88%84%EA%B8%B0/README.md) | Python3 | [코드](extra_340205_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_3%EB%B2%88___%EC%88%98_%EB%82%98%EB%88%84%EA%B8%B0/solution.py) |
-| 340204 | [&#91;PCCE 기출문제&#93; 4번 / 병과분류](extra_340204_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EB%B3%91%EA%B3%BC%EB%B6%84%EB%A5%98/README.md) | Python3 | [코드](extra_340204_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EB%B3%91%EA%B3%BC%EB%B6%84%EB%A5%98/solution.py) |
-| 340203 | [&#91;PCCE 기출문제&#93; 5번 / 심폐소생술](extra_340203_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_5%EB%B2%88___%EC%8B%AC%ED%8F%90%EC%86%8C%EC%83%9D%EC%88%A0/README.md) | Python3 | [코드](extra_340203_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_5%EB%B2%88___%EC%8B%AC%ED%8F%90%EC%86%8C%EC%83%9D%EC%88%A0/solution.py) |
-| 340202 | [&#91;PCCE 기출문제&#93; 6번 / 물 부족](extra_340202_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_6%EB%B2%88___%EB%AC%BC_%EB%B6%80%EC%A1%B1/README.md) | Python3 | [코드](extra_340202_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_6%EB%B2%88___%EB%AC%BC_%EB%B6%80%EC%A1%B1/solution.py) |
-| 340201 | [&#91;PCCE 기출문제&#93; 7번 / 버스](extra_340201_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_7%EB%B2%88___%EB%B2%84%EC%8A%A4/README.md) | Python3 | [코드](extra_340201_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_7%EB%B2%88___%EB%B2%84%EC%8A%A4/solution.py) |
-| 340200 | [&#91;PCCE 기출문제&#93; 8번 / 닉네임 규칙](extra_340200_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_8%EB%B2%88___%EB%8B%89%EB%84%A4%EC%9E%84_%EA%B7%9C%EC%B9%99/README.md) | Python3 | [코드](extra_340200_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_8%EB%B2%88___%EB%8B%89%EB%84%A4%EC%9E%84_%EA%B7%9C%EC%B9%99/solution.py) |
-| 250133 | [&#91;PCCE 기출문제&#93; 1번 / 출력](extra_250133_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EC%B6%9C%EB%A0%A5/README.md) | Python3 | [코드](extra_250133_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EC%B6%9C%EB%A0%A5/solution.py) |
-| 250132 | [&#91;PCCE 기출문제&#93; 2번 / 피타고라스의 정리](extra_250132_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_2%EB%B2%88___%ED%94%BC%ED%83%80%EA%B3%A0%EB%9D%BC%EC%8A%A4%EC%9D%98_%EC%A0%95%EB%A6%AC/README.md) | Python3 | [코드](extra_250132_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_2%EB%B2%88___%ED%94%BC%ED%83%80%EA%B3%A0%EB%9D%BC%EC%8A%A4%EC%9D%98_%EC%A0%95%EB%A6%AC/solution.py) |
-| 250131 | [&#91;PCCE 기출문제&#93; 3번 / 나이 계산](extra_250131_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_3%EB%B2%88___%EB%82%98%EC%9D%B4_%EA%B3%84%EC%82%B0/README.md) | Python3 | [코드](extra_250131_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_3%EB%B2%88___%EB%82%98%EC%9D%B4_%EA%B3%84%EC%82%B0/solution.py) |
-| 250130 | [&#91;PCCE 기출문제&#93; 4번 / 저축](extra_250130_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EC%A0%80%EC%B6%95/README.md) | Python3 | [코드](extra_250130_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EC%A0%80%EC%B6%95/solution.py) |
-| 250129 | [&#91;PCCE 기출문제&#93; 5번 / 산책](extra_250129_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_5%EB%B2%88___%EC%82%B0%EC%B1%85/README.md) | Python3 | [코드](extra_250129_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_5%EB%B2%88___%EC%82%B0%EC%B1%85/solution.py) |
-| 250128 | [&#91;PCCE 기출문제&#93; 6번 / 가채점](extra_250128_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_6%EB%B2%88___%EA%B0%80%EC%B1%84%EC%A0%90/README.md) | Python3 | [코드](extra_250128_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_6%EB%B2%88___%EA%B0%80%EC%B1%84%EC%A0%90/solution.py) |
-| 250127 | [&#91;PCCE 기출문제&#93; 7번 / 가습기](extra_250127_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_7%EB%B2%88___%EA%B0%80%EC%8A%B5%EA%B8%B0/README.md) | Python3 | [코드](extra_250127_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_7%EB%B2%88___%EA%B0%80%EC%8A%B5%EA%B8%B0/solution.py) |
-| 250126 | [&#91;PCCE 기출문제&#93; 8번 / 창고 정리](extra_250126_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_8%EB%B2%88___%EC%B0%BD%EA%B3%A0_%EC%A0%95%EB%A6%AC/README.md) | Python3 | [코드](extra_250126_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_8%EB%B2%88___%EC%B0%BD%EA%B3%A0_%EC%A0%95%EB%A6%AC/solution.py) |
-| 181952 | [문자열 출력하기](extra_181952_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181952_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.py) |
-| 181951 | [a와 b 출력하기](extra_181951_a%EC%99%80_b_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181951_a%EC%99%80_b_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.py) |
-| 181950 | [문자열 반복해서 출력하기](extra_181950_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181950_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.py) |
-| 181949 | [대소문자 바꿔서 출력하기](extra_181949_%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90_%EB%B0%94%EA%BF%94%EC%84%9C_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181949_%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90_%EB%B0%94%EA%BF%94%EC%84%9C_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.py) |
-| 181948 | [특수문자 출력하기](extra_181948_%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181948_%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.py) |
-| 181947 | [덧셈식 출력하기](extra_181947_%EB%8D%A7%EC%85%88%EC%8B%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181947_%EB%8D%A7%EC%85%88%EC%8B%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.py) |
-| 181946 | [문자열 붙여서 출력하기](extra_181946_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%B6%99%EC%97%AC%EC%84%9C_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181946_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%B6%99%EC%97%AC%EC%84%9C_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.py) |
-| 181945 | [문자열 돌리기](extra_181945_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%8F%8C%EB%A6%AC%EA%B8%B0/README.md) | Python3 | [코드](extra_181945_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%8F%8C%EB%A6%AC%EA%B8%B0/solution.py) |
-| 181944 | [홀짝 구분하기](extra_181944_%ED%99%80%EC%A7%9D_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181944_%ED%99%80%EC%A7%9D_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/solution.py) |
-| 181943 | [문자열 겹쳐쓰기](extra_181943_%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/README.md) | Python3 | [코드](extra_181943_%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/solution.py) |
-| 181942 | [문자열 섞기](extra_181942_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%84%9E%EA%B8%B0/README.md) | Python3 | [코드](extra_181942_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%84%9E%EA%B8%B0/solution.py) |
-| 181941 | [문자 리스트를 문자열로 변환하기](extra_181941_%EB%AC%B8%EC%9E%90_%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181941_%EB%AC%B8%EC%9E%90_%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/solution.py) |
-| 181940 | [문자열 곱하기](extra_181940_%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B3%B1%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181940_%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B3%B1%ED%95%98%EA%B8%B0/solution.py) |
-| 181939 | [더 크게 합치기](extra_181939_%EB%8D%94_%ED%81%AC%EA%B2%8C_%ED%95%A9%EC%B9%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181939_%EB%8D%94_%ED%81%AC%EA%B2%8C_%ED%95%A9%EC%B9%98%EA%B8%B0/solution.py) |
-| 181938 | [두 수의 연산값 비교하기](extra_181938_%EB%91%90_%EC%88%98%EC%9D%98_%EC%97%B0%EC%82%B0%EA%B0%92_%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181938_%EB%91%90_%EC%88%98%EC%9D%98_%EC%97%B0%EC%82%B0%EA%B0%92_%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/solution.py) |
-| 181937 | [n의 배수](extra_181937_n%EC%9D%98_%EB%B0%B0%EC%88%98/README.md) | Python3 | [코드](extra_181937_n%EC%9D%98_%EB%B0%B0%EC%88%98/solution.py) |
-| 181936 | [공배수](extra_181936_%EA%B3%B5%EB%B0%B0%EC%88%98/README.md) | Python3 | [코드](extra_181936_%EA%B3%B5%EB%B0%B0%EC%88%98/solution.py) |
-| 181935 | [홀짝에 따라 다른 값 반환하기](extra_181935_%ED%99%80%EC%A7%9D%EC%97%90_%EB%94%B0%EB%9D%BC_%EB%8B%A4%EB%A5%B8_%EA%B0%92_%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181935_%ED%99%80%EC%A7%9D%EC%97%90_%EB%94%B0%EB%9D%BC_%EB%8B%A4%EB%A5%B8_%EA%B0%92_%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/solution.py) |
-| 181934 | [조건 문자열](extra_181934_%EC%A1%B0%EA%B1%B4_%EB%AC%B8%EC%9E%90%EC%97%B4/README.md) | Python3 | [코드](extra_181934_%EC%A1%B0%EA%B1%B4_%EB%AC%B8%EC%9E%90%EC%97%B4/solution.py) |
-| 181933 | [flag에 따라 다른 값 반환하기](extra_181933_flag%EC%97%90_%EB%94%B0%EB%9D%BC_%EB%8B%A4%EB%A5%B8_%EA%B0%92_%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181933_flag%EC%97%90_%EB%94%B0%EB%9D%BC_%EB%8B%A4%EB%A5%B8_%EA%B0%92_%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/solution.py) |
-| 181932 | [코드 처리하기](extra_181932_%EC%BD%94%EB%93%9C_%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181932_%EC%BD%94%EB%93%9C_%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 181931 | [등차수열의 특정한 항만 더하기](extra_181931_%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98_%ED%8A%B9%EC%A0%95%ED%95%9C_%ED%95%AD%EB%A7%8C_%EB%8D%94%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181931_%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98_%ED%8A%B9%EC%A0%95%ED%95%9C_%ED%95%AD%EB%A7%8C_%EB%8D%94%ED%95%98%EA%B8%B0/solution.py) |
-| 181930 | [주사위 게임 2](extra_181930_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B2%8C%EC%9E%84_2/README.md) | Python3 | [코드](extra_181930_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B2%8C%EC%9E%84_2/solution.py) |
-| 181929 | [원소들의 곱과 합](extra_181929_%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98_%EA%B3%B1%EA%B3%BC_%ED%95%A9/README.md) | Python3 | [코드](extra_181929_%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98_%EA%B3%B1%EA%B3%BC_%ED%95%A9/solution.py) |
-| 181928 | [이어 붙인 수](extra_181928_%EC%9D%B4%EC%96%B4_%EB%B6%99%EC%9D%B8_%EC%88%98/README.md) | Python3 | [코드](extra_181928_%EC%9D%B4%EC%96%B4_%EB%B6%99%EC%9D%B8_%EC%88%98/solution.py) |
-| 181927 | [마지막 두 원소](extra_181927_%EB%A7%88%EC%A7%80%EB%A7%89_%EB%91%90_%EC%9B%90%EC%86%8C/README.md) | Python3 | [코드](extra_181927_%EB%A7%88%EC%A7%80%EB%A7%89_%EB%91%90_%EC%9B%90%EC%86%8C/solution.py) |
-| 181926 | [수 조작하기 1](extra_181926_%EC%88%98_%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0_1/README.md) | Python3 | [코드](extra_181926_%EC%88%98_%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0_1/solution.py) |
-| 181925 | [수 조작하기 2](extra_181925_%EC%88%98_%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0_2/README.md) | Python3 | [코드](extra_181925_%EC%88%98_%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0_2/solution.py) |
-| 181924 | [수열과 구간 쿼리 3](extra_181924_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_3/README.md) | Python3 | [코드](extra_181924_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_3/solution.py) |
-| 181923 | [수열과 구간 쿼리 2](extra_181923_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_2/README.md) | Python3 | [코드](extra_181923_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_2/solution.py) |
-| 181922 | [수열과 구간 쿼리 4](extra_181922_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_4/README.md) | Python3 | [코드](extra_181922_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_4/solution.py) |
-| 181921 | [배열 만들기 2](extra_181921_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_2/README.md) | Python3 | [코드](extra_181921_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_2/solution.py) |
-| 181920 | [카운트 업](extra_181920_%EC%B9%B4%EC%9A%B4%ED%8A%B8_%EC%97%85/README.md) | Python3 | [코드](extra_181920_%EC%B9%B4%EC%9A%B4%ED%8A%B8_%EC%97%85/solution.py) |
-| 181919 | [콜라츠 수열 만들기](extra_181919_%EC%BD%9C%EB%9D%BC%EC%B8%A0_%EC%88%98%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_181919_%EC%BD%9C%EB%9D%BC%EC%B8%A0_%EC%88%98%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 181918 | [배열 만들기 4](extra_181918_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_4/README.md) | Python3 | [코드](extra_181918_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_4/solution.py) |
-| 181917 | [간단한 논리 연산](extra_181917_%EA%B0%84%EB%8B%A8%ED%95%9C_%EB%85%BC%EB%A6%AC_%EC%97%B0%EC%82%B0/README.md) | Python3 | [코드](extra_181917_%EA%B0%84%EB%8B%A8%ED%95%9C_%EB%85%BC%EB%A6%AC_%EC%97%B0%EC%82%B0/solution.py) |
-| 181916 | [주사위 게임 3](extra_181916_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B2%8C%EC%9E%84_3/README.md) | Python3 | [코드](extra_181916_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B2%8C%EC%9E%84_3/solution.py) |
-| 181915 | [글자 이어 붙여 문자열 만들기](extra_181915_%EA%B8%80%EC%9E%90_%EC%9D%B4%EC%96%B4_%EB%B6%99%EC%97%AC_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_181915_%EA%B8%80%EC%9E%90_%EC%9D%B4%EC%96%B4_%EB%B6%99%EC%97%AC_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 181914 | [9로 나눈 나머지](extra_181914_9%EB%A1%9C_%EB%82%98%EB%88%88_%EB%82%98%EB%A8%B8%EC%A7%80/README.md) | Python3 | [코드](extra_181914_9%EB%A1%9C_%EB%82%98%EB%88%88_%EB%82%98%EB%A8%B8%EC%A7%80/solution.py) |
-| 181913 | [문자열 여러 번 뒤집기](extra_181913_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%97%AC%EB%9F%AC_%EB%B2%88_%EB%92%A4%EC%A7%91%EA%B8%B0/README.md) | Python3 | [코드](extra_181913_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%97%AC%EB%9F%AC_%EB%B2%88_%EB%92%A4%EC%A7%91%EA%B8%B0/solution.py) |
-| 181912 | [배열 만들기 5](extra_181912_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_5/README.md) | Python3 | [코드](extra_181912_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_5/solution.py) |
-| 181911 | [부분 문자열 이어 붙여 문자열 만들기](extra_181911_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%9D%B4%EC%96%B4_%EB%B6%99%EC%97%AC_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_181911_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%9D%B4%EC%96%B4_%EB%B6%99%EC%97%AC_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 181910 | [문자열의 뒤의 n글자](extra_181910_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98_%EB%92%A4%EC%9D%98_n%EA%B8%80%EC%9E%90/README.md) | Python3 | [코드](extra_181910_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98_%EB%92%A4%EC%9D%98_n%EA%B8%80%EC%9E%90/solution.py) |
-| 181909 | [접미사 배열](extra_181909_%EC%A0%91%EB%AF%B8%EC%82%AC_%EB%B0%B0%EC%97%B4/README.md) | Python3 | [코드](extra_181909_%EC%A0%91%EB%AF%B8%EC%82%AC_%EB%B0%B0%EC%97%B4/solution.py) |
-| 181908 | [접미사인지 확인하기](extra_181908_%EC%A0%91%EB%AF%B8%EC%82%AC%EC%9D%B8%EC%A7%80_%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181908_%EC%A0%91%EB%AF%B8%EC%82%AC%EC%9D%B8%EC%A7%80_%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/solution.py) |
-| 181907 | [문자열의 앞의 n글자](extra_181907_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98_%EC%95%9E%EC%9D%98_n%EA%B8%80%EC%9E%90/README.md) | Python3 | [코드](extra_181907_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98_%EC%95%9E%EC%9D%98_n%EA%B8%80%EC%9E%90/solution.py) |
-| 181906 | [접두사인지 확인하기](extra_181906_%EC%A0%91%EB%91%90%EC%82%AC%EC%9D%B8%EC%A7%80_%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181906_%EC%A0%91%EB%91%90%EC%82%AC%EC%9D%B8%EC%A7%80_%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/solution.py) |
-| 181905 | [문자열 뒤집기](extra_181905_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%92%A4%EC%A7%91%EA%B8%B0/README.md) | Python3 | [코드](extra_181905_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%92%A4%EC%A7%91%EA%B8%B0/solution.py) |
-| 181904 | [세로 읽기](extra_181904_%EC%84%B8%EB%A1%9C_%EC%9D%BD%EA%B8%B0/README.md) | Python3 | [코드](extra_181904_%EC%84%B8%EB%A1%9C_%EC%9D%BD%EA%B8%B0/solution.py) |
+| 340207 | [&#91;PCCE 기출문제&#93; 1번 / 문자 출력](extra_340207_[PCCE_기출문제]_1번___문자_출력/README.md) | Python3 | [코드](extra_340207_[PCCE_기출문제]_1번___문자_출력/solution.py) |
+| 340206 | [&#91;PCCE 기출문제&#93; 2번 / 각도 합치기](extra_340206_[PCCE_기출문제]_2번___각도_합치기/README.md) | Python3 | [코드](extra_340206_[PCCE_기출문제]_2번___각도_합치기/solution.py) |
+| 340205 | [&#91;PCCE 기출문제&#93; 3번 / 수 나누기](extra_340205_[PCCE_기출문제]_3번___수_나누기/README.md) | Python3 | [코드](extra_340205_[PCCE_기출문제]_3번___수_나누기/solution.py) |
+| 340204 | [&#91;PCCE 기출문제&#93; 4번 / 병과분류](extra_340204_[PCCE_기출문제]_4번___병과분류/README.md) | Python3 | [코드](extra_340204_[PCCE_기출문제]_4번___병과분류/solution.py) |
+| 340203 | [&#91;PCCE 기출문제&#93; 5번 / 심폐소생술](extra_340203_[PCCE_기출문제]_5번___심폐소생술/README.md) | Python3 | [코드](extra_340203_[PCCE_기출문제]_5번___심폐소생술/solution.py) |
+| 340202 | [&#91;PCCE 기출문제&#93; 6번 / 물 부족](extra_340202_[PCCE_기출문제]_6번___물_부족/README.md) | Python3 | [코드](extra_340202_[PCCE_기출문제]_6번___물_부족/solution.py) |
+| 340201 | [&#91;PCCE 기출문제&#93; 7번 / 버스](extra_340201_[PCCE_기출문제]_7번___버스/README.md) | Python3 | [코드](extra_340201_[PCCE_기출문제]_7번___버스/solution.py) |
+| 340200 | [&#91;PCCE 기출문제&#93; 8번 / 닉네임 규칙](extra_340200_[PCCE_기출문제]_8번___닉네임_규칙/README.md) | Python3 | [코드](extra_340200_[PCCE_기출문제]_8번___닉네임_규칙/solution.py) |
+| 250133 | [&#91;PCCE 기출문제&#93; 1번 / 출력](extra_250133_[PCCE_기출문제]_1번___출력/README.md) | Python3 | [코드](extra_250133_[PCCE_기출문제]_1번___출력/solution.py) |
+| 250132 | [&#91;PCCE 기출문제&#93; 2번 / 피타고라스의 정리](extra_250132_[PCCE_기출문제]_2번___피타고라스의_정리/README.md) | Python3 | [코드](extra_250132_[PCCE_기출문제]_2번___피타고라스의_정리/solution.py) |
+| 250131 | [&#91;PCCE 기출문제&#93; 3번 / 나이 계산](extra_250131_[PCCE_기출문제]_3번___나이_계산/README.md) | Python3 | [코드](extra_250131_[PCCE_기출문제]_3번___나이_계산/solution.py) |
+| 250130 | [&#91;PCCE 기출문제&#93; 4번 / 저축](extra_250130_[PCCE_기출문제]_4번___저축/README.md) | Python3 | [코드](extra_250130_[PCCE_기출문제]_4번___저축/solution.py) |
+| 250129 | [&#91;PCCE 기출문제&#93; 5번 / 산책](extra_250129_[PCCE_기출문제]_5번___산책/README.md) | Python3 | [코드](extra_250129_[PCCE_기출문제]_5번___산책/solution.py) |
+| 250128 | [&#91;PCCE 기출문제&#93; 6번 / 가채점](extra_250128_[PCCE_기출문제]_6번___가채점/README.md) | Python3 | [코드](extra_250128_[PCCE_기출문제]_6번___가채점/solution.py) |
+| 250127 | [&#91;PCCE 기출문제&#93; 7번 / 가습기](extra_250127_[PCCE_기출문제]_7번___가습기/README.md) | Python3 | [코드](extra_250127_[PCCE_기출문제]_7번___가습기/solution.py) |
+| 250126 | [&#91;PCCE 기출문제&#93; 8번 / 창고 정리](extra_250126_[PCCE_기출문제]_8번___창고_정리/README.md) | Python3 | [코드](extra_250126_[PCCE_기출문제]_8번___창고_정리/solution.py) |
+| 181952 | [문자열 출력하기](extra_181952_문자열_출력하기/README.md) | Python3 | [코드](extra_181952_문자열_출력하기/solution.py) |
+| 181951 | [a와 b 출력하기](extra_181951_a와_b_출력하기/README.md) | Python3 | [코드](extra_181951_a와_b_출력하기/solution.py) |
+| 181950 | [문자열 반복해서 출력하기](extra_181950_문자열_반복해서_출력하기/README.md) | Python3 | [코드](extra_181950_문자열_반복해서_출력하기/solution.py) |
+| 181949 | [대소문자 바꿔서 출력하기](extra_181949_대소문자_바꿔서_출력하기/README.md) | Python3 | [코드](extra_181949_대소문자_바꿔서_출력하기/solution.py) |
+| 181948 | [특수문자 출력하기](extra_181948_특수문자_출력하기/README.md) | Python3 | [코드](extra_181948_특수문자_출력하기/solution.py) |
+| 181947 | [덧셈식 출력하기](extra_181947_덧셈식_출력하기/README.md) | Python3 | [코드](extra_181947_덧셈식_출력하기/solution.py) |
+| 181946 | [문자열 붙여서 출력하기](extra_181946_문자열_붙여서_출력하기/README.md) | Python3 | [코드](extra_181946_문자열_붙여서_출력하기/solution.py) |
+| 181945 | [문자열 돌리기](extra_181945_문자열_돌리기/README.md) | Python3 | [코드](extra_181945_문자열_돌리기/solution.py) |
+| 181944 | [홀짝 구분하기](extra_181944_홀짝_구분하기/README.md) | Python3 | [코드](extra_181944_홀짝_구분하기/solution.py) |
+| 181943 | [문자열 겹쳐쓰기](extra_181943_문자열_겹쳐쓰기/README.md) | Python3 | [코드](extra_181943_문자열_겹쳐쓰기/solution.py) |
+| 181942 | [문자열 섞기](extra_181942_문자열_섞기/README.md) | Python3 | [코드](extra_181942_문자열_섞기/solution.py) |
+| 181941 | [문자 리스트를 문자열로 변환하기](extra_181941_문자_리스트를_문자열로_변환하기/README.md) | Python3 | [코드](extra_181941_문자_리스트를_문자열로_변환하기/solution.py) |
+| 181940 | [문자열 곱하기](extra_181940_문자열_곱하기/README.md) | Python3 | [코드](extra_181940_문자열_곱하기/solution.py) |
+| 181939 | [더 크게 합치기](extra_181939_더_크게_합치기/README.md) | Python3 | [코드](extra_181939_더_크게_합치기/solution.py) |
+| 181938 | [두 수의 연산값 비교하기](extra_181938_두_수의_연산값_비교하기/README.md) | Python3 | [코드](extra_181938_두_수의_연산값_비교하기/solution.py) |
+| 181937 | [n의 배수](extra_181937_n의_배수/README.md) | Python3 | [코드](extra_181937_n의_배수/solution.py) |
+| 181936 | [공배수](extra_181936_공배수/README.md) | Python3 | [코드](extra_181936_공배수/solution.py) |
+| 181935 | [홀짝에 따라 다른 값 반환하기](extra_181935_홀짝에_따라_다른_값_반환하기/README.md) | Python3 | [코드](extra_181935_홀짝에_따라_다른_값_반환하기/solution.py) |
+| 181934 | [조건 문자열](extra_181934_조건_문자열/README.md) | Python3 | [코드](extra_181934_조건_문자열/solution.py) |
+| 181933 | [flag에 따라 다른 값 반환하기](extra_181933_flag에_따라_다른_값_반환하기/README.md) | Python3 | [코드](extra_181933_flag에_따라_다른_값_반환하기/solution.py) |
+| 181932 | [코드 처리하기](extra_181932_코드_처리하기/README.md) | Python3 | [코드](extra_181932_코드_처리하기/solution.py) |
+| 181931 | [등차수열의 특정한 항만 더하기](extra_181931_등차수열의_특정한_항만_더하기/README.md) | Python3 | [코드](extra_181931_등차수열의_특정한_항만_더하기/solution.py) |
+| 181930 | [주사위 게임 2](extra_181930_주사위_게임_2/README.md) | Python3 | [코드](extra_181930_주사위_게임_2/solution.py) |
+| 181929 | [원소들의 곱과 합](extra_181929_원소들의_곱과_합/README.md) | Python3 | [코드](extra_181929_원소들의_곱과_합/solution.py) |
+| 181928 | [이어 붙인 수](extra_181928_이어_붙인_수/README.md) | Python3 | [코드](extra_181928_이어_붙인_수/solution.py) |
+| 181927 | [마지막 두 원소](extra_181927_마지막_두_원소/README.md) | Python3 | [코드](extra_181927_마지막_두_원소/solution.py) |
+| 181926 | [수 조작하기 1](extra_181926_수_조작하기_1/README.md) | Python3 | [코드](extra_181926_수_조작하기_1/solution.py) |
+| 181925 | [수 조작하기 2](extra_181925_수_조작하기_2/README.md) | Python3 | [코드](extra_181925_수_조작하기_2/solution.py) |
+| 181924 | [수열과 구간 쿼리 3](extra_181924_수열과_구간_쿼리_3/README.md) | Python3 | [코드](extra_181924_수열과_구간_쿼리_3/solution.py) |
+| 181923 | [수열과 구간 쿼리 2](extra_181923_수열과_구간_쿼리_2/README.md) | Python3 | [코드](extra_181923_수열과_구간_쿼리_2/solution.py) |
+| 181922 | [수열과 구간 쿼리 4](extra_181922_수열과_구간_쿼리_4/README.md) | Python3 | [코드](extra_181922_수열과_구간_쿼리_4/solution.py) |
+| 181921 | [배열 만들기 2](extra_181921_배열_만들기_2/README.md) | Python3 | [코드](extra_181921_배열_만들기_2/solution.py) |
+| 181920 | [카운트 업](extra_181920_카운트_업/README.md) | Python3 | [코드](extra_181920_카운트_업/solution.py) |
+| 181919 | [콜라츠 수열 만들기](extra_181919_콜라츠_수열_만들기/README.md) | Python3 | [코드](extra_181919_콜라츠_수열_만들기/solution.py) |
+| 181918 | [배열 만들기 4](extra_181918_배열_만들기_4/README.md) | Python3 | [코드](extra_181918_배열_만들기_4/solution.py) |
+| 181917 | [간단한 논리 연산](extra_181917_간단한_논리_연산/README.md) | Python3 | [코드](extra_181917_간단한_논리_연산/solution.py) |
+| 181916 | [주사위 게임 3](extra_181916_주사위_게임_3/README.md) | Python3 | [코드](extra_181916_주사위_게임_3/solution.py) |
+| 181915 | [글자 이어 붙여 문자열 만들기](extra_181915_글자_이어_붙여_문자열_만들기/README.md) | Python3 | [코드](extra_181915_글자_이어_붙여_문자열_만들기/solution.py) |
+| 181914 | [9로 나눈 나머지](extra_181914_9로_나눈_나머지/README.md) | Python3 | [코드](extra_181914_9로_나눈_나머지/solution.py) |
+| 181913 | [문자열 여러 번 뒤집기](extra_181913_문자열_여러_번_뒤집기/README.md) | Python3 | [코드](extra_181913_문자열_여러_번_뒤집기/solution.py) |
+| 181912 | [배열 만들기 5](extra_181912_배열_만들기_5/README.md) | Python3 | [코드](extra_181912_배열_만들기_5/solution.py) |
+| 181911 | [부분 문자열 이어 붙여 문자열 만들기](extra_181911_부분_문자열_이어_붙여_문자열_만들기/README.md) | Python3 | [코드](extra_181911_부분_문자열_이어_붙여_문자열_만들기/solution.py) |
+| 181910 | [문자열의 뒤의 n글자](extra_181910_문자열의_뒤의_n글자/README.md) | Python3 | [코드](extra_181910_문자열의_뒤의_n글자/solution.py) |
+| 181909 | [접미사 배열](extra_181909_접미사_배열/README.md) | Python3 | [코드](extra_181909_접미사_배열/solution.py) |
+| 181908 | [접미사인지 확인하기](extra_181908_접미사인지_확인하기/README.md) | Python3 | [코드](extra_181908_접미사인지_확인하기/solution.py) |
+| 181907 | [문자열의 앞의 n글자](extra_181907_문자열의_앞의_n글자/README.md) | Python3 | [코드](extra_181907_문자열의_앞의_n글자/solution.py) |
+| 181906 | [접두사인지 확인하기](extra_181906_접두사인지_확인하기/README.md) | Python3 | [코드](extra_181906_접두사인지_확인하기/solution.py) |
+| 181905 | [문자열 뒤집기](extra_181905_문자열_뒤집기/README.md) | Python3 | [코드](extra_181905_문자열_뒤집기/solution.py) |
+| 181904 | [세로 읽기](extra_181904_세로_읽기/README.md) | Python3 | [코드](extra_181904_세로_읽기/solution.py) |
 | 181903 | [qr code](extra_181903_qr_code/README.md) | Python3 | [코드](extra_181903_qr_code/solution.py) |
-| 181902 | [문자 개수 세기](extra_181902_%EB%AC%B8%EC%9E%90_%EA%B0%9C%EC%88%98_%EC%84%B8%EA%B8%B0/README.md) | Python3 | [코드](extra_181902_%EB%AC%B8%EC%9E%90_%EA%B0%9C%EC%88%98_%EC%84%B8%EA%B8%B0/solution.py) |
-| 181901 | [배열 만들기 1](extra_181901_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_1/README.md) | Python3 | [코드](extra_181901_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_1/solution.py) |
-| 181900 | [글자 지우기](extra_181900_%EA%B8%80%EC%9E%90_%EC%A7%80%EC%9A%B0%EA%B8%B0/README.md) | Python3 | [코드](extra_181900_%EA%B8%80%EC%9E%90_%EC%A7%80%EC%9A%B0%EA%B8%B0/solution.py) |
-| 181899 | [카운트 다운](extra_181899_%EC%B9%B4%EC%9A%B4%ED%8A%B8_%EB%8B%A4%EC%9A%B4/README.md) | Python3 | [코드](extra_181899_%EC%B9%B4%EC%9A%B4%ED%8A%B8_%EB%8B%A4%EC%9A%B4/solution.py) |
-| 181898 | [가까운 1 찾기](extra_181898_%EA%B0%80%EA%B9%8C%EC%9A%B4_1_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_181898_%EA%B0%80%EA%B9%8C%EC%9A%B4_1_%EC%B0%BE%EA%B8%B0/solution.py) |
-| 181897 | [리스트 자르기](extra_181897_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md) | Python3 | [코드](extra_181897_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EC%9E%90%EB%A5%B4%EA%B8%B0/solution.py) |
-| 181896 | [첫 번째로 나오는 음수](extra_181896_%EC%B2%AB_%EB%B2%88%EC%A7%B8%EB%A1%9C_%EB%82%98%EC%98%A4%EB%8A%94_%EC%9D%8C%EC%88%98/README.md) | Python3 | [코드](extra_181896_%EC%B2%AB_%EB%B2%88%EC%A7%B8%EB%A1%9C_%EB%82%98%EC%98%A4%EB%8A%94_%EC%9D%8C%EC%88%98/solution.py) |
-| 181895 | [배열 만들기 3](extra_181895_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_3/README.md) | Python3 | [코드](extra_181895_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_3/solution.py) |
-| 181894 | [2의 영역](extra_181894_2%EC%9D%98_%EC%98%81%EC%97%AD/README.md) | Python3 | [코드](extra_181894_2%EC%9D%98_%EC%98%81%EC%97%AD/solution.py) |
-| 181893 | [배열 조각하기](extra_181893_%EB%B0%B0%EC%97%B4_%EC%A1%B0%EA%B0%81%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181893_%EB%B0%B0%EC%97%B4_%EC%A1%B0%EA%B0%81%ED%95%98%EA%B8%B0/solution.py) |
-| 181892 | [n 번째 원소부터](extra_181892_n_%EB%B2%88%EC%A7%B8_%EC%9B%90%EC%86%8C%EB%B6%80%ED%84%B0/README.md) | Python3 | [코드](extra_181892_n_%EB%B2%88%EC%A7%B8_%EC%9B%90%EC%86%8C%EB%B6%80%ED%84%B0/solution.py) |
-| 181891 | [순서 바꾸기](extra_181891_%EC%88%9C%EC%84%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/README.md) | Python3 | [코드](extra_181891_%EC%88%9C%EC%84%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/solution.py) |
-| 181890 | [왼쪽 오른쪽](extra_181890_%EC%99%BC%EC%AA%BD_%EC%98%A4%EB%A5%B8%EC%AA%BD/README.md) | Python3 | [코드](extra_181890_%EC%99%BC%EC%AA%BD_%EC%98%A4%EB%A5%B8%EC%AA%BD/solution.py) |
-| 181889 | [n 번째 원소까지](extra_181889_n_%EB%B2%88%EC%A7%B8_%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/README.md) | Python3 | [코드](extra_181889_n_%EB%B2%88%EC%A7%B8_%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/solution.py) |
-| 181888 | [n개 간격의 원소들](extra_181888_n%EA%B0%9C_%EA%B0%84%EA%B2%A9%EC%9D%98_%EC%9B%90%EC%86%8C%EB%93%A4/README.md) | Python3 | [코드](extra_181888_n%EA%B0%9C_%EA%B0%84%EA%B2%A9%EC%9D%98_%EC%9B%90%EC%86%8C%EB%93%A4/solution.py) |
-| 181887 | [홀수 vs 짝수](extra_181887_%ED%99%80%EC%88%98_vs_%EC%A7%9D%EC%88%98/README.md) | Python3 | [코드](extra_181887_%ED%99%80%EC%88%98_vs_%EC%A7%9D%EC%88%98/solution.py) |
-| 181886 | [5명씩](extra_181886_5%EB%AA%85%EC%94%A9/README.md) | Python3 | [코드](extra_181886_5%EB%AA%85%EC%94%A9/solution.py) |
-| 181885 | [할 일 목록](extra_181885_%ED%95%A0_%EC%9D%BC_%EB%AA%A9%EB%A1%9D/README.md) | Python3 | [코드](extra_181885_%ED%95%A0_%EC%9D%BC_%EB%AA%A9%EB%A1%9D/solution.py) |
-| 181884 | [n보다 커질 때까지 더하기](extra_181884_n%EB%B3%B4%EB%8B%A4_%EC%BB%A4%EC%A7%88_%EB%95%8C%EA%B9%8C%EC%A7%80_%EB%8D%94%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181884_n%EB%B3%B4%EB%8B%A4_%EC%BB%A4%EC%A7%88_%EB%95%8C%EA%B9%8C%EC%A7%80_%EB%8D%94%ED%95%98%EA%B8%B0/solution.py) |
-| 181883 | [수열과 구간 쿼리 1](extra_181883_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_1/README.md) | Python3 | [코드](extra_181883_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_1/solution.py) |
-| 181882 | [조건에 맞게 수열 변환하기 1](extra_181882_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EA%B2%8C_%EC%88%98%EC%97%B4_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0_1/README.md) | Python3 | [코드](extra_181882_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EA%B2%8C_%EC%88%98%EC%97%B4_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0_1/solution.py) |
-| 181881 | [조건에 맞게 수열 변환하기 2](extra_181881_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EA%B2%8C_%EC%88%98%EC%97%B4_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0_2/README.md) | Python3 | [코드](extra_181881_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EA%B2%8C_%EC%88%98%EC%97%B4_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0_2/solution.py) |
-| 181880 | [1로 만들기](extra_181880_1%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_181880_1%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 181879 | [길이에 따른 연산](extra_181879_%EA%B8%B8%EC%9D%B4%EC%97%90_%EB%94%B0%EB%A5%B8_%EC%97%B0%EC%82%B0/README.md) | Python3 | [코드](extra_181879_%EA%B8%B8%EC%9D%B4%EC%97%90_%EB%94%B0%EB%A5%B8_%EC%97%B0%EC%82%B0/solution.py) |
-| 181878 | [원하는 문자열 찾기](extra_181878_%EC%9B%90%ED%95%98%EB%8A%94_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_181878_%EC%9B%90%ED%95%98%EB%8A%94_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%B0%BE%EA%B8%B0/solution.py) |
-| 181877 | [대문자로 바꾸기](extra_181877_%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/README.md) | Python3 | [코드](extra_181877_%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/solution.py) |
-| 181876 | [소문자로 바꾸기](extra_181876_%EC%86%8C%EB%AC%B8%EC%9E%90%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/README.md) | Python3 | [코드](extra_181876_%EC%86%8C%EB%AC%B8%EC%9E%90%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/solution.py) |
-| 181875 | [배열에서 문자열 대소문자 변환하기](extra_181875_%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181875_%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/solution.py) |
-| 181874 | [A 강조하기](extra_181874_A_%EA%B0%95%EC%A1%B0%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181874_A_%EA%B0%95%EC%A1%B0%ED%95%98%EA%B8%B0/solution.py) |
-| 181873 | [특정한 문자를 대문자로 바꾸기](extra_181873_%ED%8A%B9%EC%A0%95%ED%95%9C_%EB%AC%B8%EC%9E%90%EB%A5%BC_%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/README.md) | Python3 | [코드](extra_181873_%ED%8A%B9%EC%A0%95%ED%95%9C_%EB%AC%B8%EC%9E%90%EB%A5%BC_%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/solution.py) |
-| 181872 | [특정 문자열로 끝나는 가장 긴 부분 문자열 찾기](extra_181872_%ED%8A%B9%EC%A0%95_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%81%9D%EB%82%98%EB%8A%94_%EA%B0%80%EC%9E%A5_%EA%B8%B4_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_181872_%ED%8A%B9%EC%A0%95_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%81%9D%EB%82%98%EB%8A%94_%EA%B0%80%EC%9E%A5_%EA%B8%B4_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%B0%BE%EA%B8%B0/solution.py) |
-| 181871 | [문자열이 몇 번 등장하는지 세기](extra_181871_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%B4_%EB%AA%87_%EB%B2%88_%EB%93%B1%EC%9E%A5%ED%95%98%EB%8A%94%EC%A7%80_%EC%84%B8%EA%B8%B0/README.md) | Python3 | [코드](extra_181871_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%B4_%EB%AA%87_%EB%B2%88_%EB%93%B1%EC%9E%A5%ED%95%98%EB%8A%94%EC%A7%80_%EC%84%B8%EA%B8%B0/solution.py) |
-| 181870 | [ad 제거하기](extra_181870_ad_%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181870_ad_%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/solution.py) |
-| 181869 | [공백으로 구분하기 1](extra_181869_%EA%B3%B5%EB%B0%B1%EC%9C%BC%EB%A1%9C_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0_1/README.md) | Python3 | [코드](extra_181869_%EA%B3%B5%EB%B0%B1%EC%9C%BC%EB%A1%9C_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0_1/solution.py) |
-| 181868 | [공백으로 구분하기 2](extra_181868_%EA%B3%B5%EB%B0%B1%EC%9C%BC%EB%A1%9C_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0_2/README.md) | Python3 | [코드](extra_181868_%EA%B3%B5%EB%B0%B1%EC%9C%BC%EB%A1%9C_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0_2/solution.py) |
-| 181867 | [x 사이의 개수](extra_181867_x_%EC%82%AC%EC%9D%B4%EC%9D%98_%EA%B0%9C%EC%88%98/README.md) | Python3 | [코드](extra_181867_x_%EC%82%AC%EC%9D%B4%EC%9D%98_%EA%B0%9C%EC%88%98/solution.py) |
-| 181866 | [문자열 잘라서 정렬하기](extra_181866_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%9E%98%EB%9D%BC%EC%84%9C_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181866_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%9E%98%EB%9D%BC%EC%84%9C_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 181865 | [간단한 식 계산하기](extra_181865_%EA%B0%84%EB%8B%A8%ED%95%9C_%EC%8B%9D_%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181865_%EA%B0%84%EB%8B%A8%ED%95%9C_%EC%8B%9D_%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0/solution.py) |
-| 181864 | [문자열 바꿔서 찾기](extra_181864_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%B0%94%EA%BF%94%EC%84%9C_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_181864_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%B0%94%EA%BF%94%EC%84%9C_%EC%B0%BE%EA%B8%B0/solution.py) |
+| 181902 | [문자 개수 세기](extra_181902_문자_개수_세기/README.md) | Python3 | [코드](extra_181902_문자_개수_세기/solution.py) |
+| 181901 | [배열 만들기 1](extra_181901_배열_만들기_1/README.md) | Python3 | [코드](extra_181901_배열_만들기_1/solution.py) |
+| 181900 | [글자 지우기](extra_181900_글자_지우기/README.md) | Python3 | [코드](extra_181900_글자_지우기/solution.py) |
+| 181899 | [카운트 다운](extra_181899_카운트_다운/README.md) | Python3 | [코드](extra_181899_카운트_다운/solution.py) |
+| 181898 | [가까운 1 찾기](extra_181898_가까운_1_찾기/README.md) | Python3 | [코드](extra_181898_가까운_1_찾기/solution.py) |
+| 181897 | [리스트 자르기](extra_181897_리스트_자르기/README.md) | Python3 | [코드](extra_181897_리스트_자르기/solution.py) |
+| 181896 | [첫 번째로 나오는 음수](extra_181896_첫_번째로_나오는_음수/README.md) | Python3 | [코드](extra_181896_첫_번째로_나오는_음수/solution.py) |
+| 181895 | [배열 만들기 3](extra_181895_배열_만들기_3/README.md) | Python3 | [코드](extra_181895_배열_만들기_3/solution.py) |
+| 181894 | [2의 영역](extra_181894_2의_영역/README.md) | Python3 | [코드](extra_181894_2의_영역/solution.py) |
+| 181893 | [배열 조각하기](extra_181893_배열_조각하기/README.md) | Python3 | [코드](extra_181893_배열_조각하기/solution.py) |
+| 181892 | [n 번째 원소부터](extra_181892_n_번째_원소부터/README.md) | Python3 | [코드](extra_181892_n_번째_원소부터/solution.py) |
+| 181891 | [순서 바꾸기](extra_181891_순서_바꾸기/README.md) | Python3 | [코드](extra_181891_순서_바꾸기/solution.py) |
+| 181890 | [왼쪽 오른쪽](extra_181890_왼쪽_오른쪽/README.md) | Python3 | [코드](extra_181890_왼쪽_오른쪽/solution.py) |
+| 181889 | [n 번째 원소까지](extra_181889_n_번째_원소까지/README.md) | Python3 | [코드](extra_181889_n_번째_원소까지/solution.py) |
+| 181888 | [n개 간격의 원소들](extra_181888_n개_간격의_원소들/README.md) | Python3 | [코드](extra_181888_n개_간격의_원소들/solution.py) |
+| 181887 | [홀수 vs 짝수](extra_181887_홀수_vs_짝수/README.md) | Python3 | [코드](extra_181887_홀수_vs_짝수/solution.py) |
+| 181886 | [5명씩](extra_181886_5명씩/README.md) | Python3 | [코드](extra_181886_5명씩/solution.py) |
+| 181885 | [할 일 목록](extra_181885_할_일_목록/README.md) | Python3 | [코드](extra_181885_할_일_목록/solution.py) |
+| 181884 | [n보다 커질 때까지 더하기](extra_181884_n보다_커질_때까지_더하기/README.md) | Python3 | [코드](extra_181884_n보다_커질_때까지_더하기/solution.py) |
+| 181883 | [수열과 구간 쿼리 1](extra_181883_수열과_구간_쿼리_1/README.md) | Python3 | [코드](extra_181883_수열과_구간_쿼리_1/solution.py) |
+| 181882 | [조건에 맞게 수열 변환하기 1](extra_181882_조건에_맞게_수열_변환하기_1/README.md) | Python3 | [코드](extra_181882_조건에_맞게_수열_변환하기_1/solution.py) |
+| 181881 | [조건에 맞게 수열 변환하기 2](extra_181881_조건에_맞게_수열_변환하기_2/README.md) | Python3 | [코드](extra_181881_조건에_맞게_수열_변환하기_2/solution.py) |
+| 181880 | [1로 만들기](extra_181880_1로_만들기/README.md) | Python3 | [코드](extra_181880_1로_만들기/solution.py) |
+| 181879 | [길이에 따른 연산](extra_181879_길이에_따른_연산/README.md) | Python3 | [코드](extra_181879_길이에_따른_연산/solution.py) |
+| 181878 | [원하는 문자열 찾기](extra_181878_원하는_문자열_찾기/README.md) | Python3 | [코드](extra_181878_원하는_문자열_찾기/solution.py) |
+| 181877 | [대문자로 바꾸기](extra_181877_대문자로_바꾸기/README.md) | Python3 | [코드](extra_181877_대문자로_바꾸기/solution.py) |
+| 181876 | [소문자로 바꾸기](extra_181876_소문자로_바꾸기/README.md) | Python3 | [코드](extra_181876_소문자로_바꾸기/solution.py) |
+| 181875 | [배열에서 문자열 대소문자 변환하기](extra_181875_배열에서_문자열_대소문자_변환하기/README.md) | Python3 | [코드](extra_181875_배열에서_문자열_대소문자_변환하기/solution.py) |
+| 181874 | [A 강조하기](extra_181874_A_강조하기/README.md) | Python3 | [코드](extra_181874_A_강조하기/solution.py) |
+| 181873 | [특정한 문자를 대문자로 바꾸기](extra_181873_특정한_문자를_대문자로_바꾸기/README.md) | Python3 | [코드](extra_181873_특정한_문자를_대문자로_바꾸기/solution.py) |
+| 181872 | [특정 문자열로 끝나는 가장 긴 부분 문자열 찾기](extra_181872_특정_문자열로_끝나는_가장_긴_부분_문자열_찾기/README.md) | Python3 | [코드](extra_181872_특정_문자열로_끝나는_가장_긴_부분_문자열_찾기/solution.py) |
+| 181871 | [문자열이 몇 번 등장하는지 세기](extra_181871_문자열이_몇_번_등장하는지_세기/README.md) | Python3 | [코드](extra_181871_문자열이_몇_번_등장하는지_세기/solution.py) |
+| 181870 | [ad 제거하기](extra_181870_ad_제거하기/README.md) | Python3 | [코드](extra_181870_ad_제거하기/solution.py) |
+| 181869 | [공백으로 구분하기 1](extra_181869_공백으로_구분하기_1/README.md) | Python3 | [코드](extra_181869_공백으로_구분하기_1/solution.py) |
+| 181868 | [공백으로 구분하기 2](extra_181868_공백으로_구분하기_2/README.md) | Python3 | [코드](extra_181868_공백으로_구분하기_2/solution.py) |
+| 181867 | [x 사이의 개수](extra_181867_x_사이의_개수/README.md) | Python3 | [코드](extra_181867_x_사이의_개수/solution.py) |
+| 181866 | [문자열 잘라서 정렬하기](extra_181866_문자열_잘라서_정렬하기/README.md) | Python3 | [코드](extra_181866_문자열_잘라서_정렬하기/solution.py) |
+| 181865 | [간단한 식 계산하기](extra_181865_간단한_식_계산하기/README.md) | Python3 | [코드](extra_181865_간단한_식_계산하기/solution.py) |
+| 181864 | [문자열 바꿔서 찾기](extra_181864_문자열_바꿔서_찾기/README.md) | Python3 | [코드](extra_181864_문자열_바꿔서_찾기/solution.py) |
 | 181863 | [rny_string](extra_181863_rny_string/README.md) | Python3 | [코드](extra_181863_rny_string/solution.py) |
-| 181862 | [세 개의 구분자](extra_181862_%EC%84%B8_%EA%B0%9C%EC%9D%98_%EA%B5%AC%EB%B6%84%EC%9E%90/README.md) | Python3 | [코드](extra_181862_%EC%84%B8_%EA%B0%9C%EC%9D%98_%EA%B5%AC%EB%B6%84%EC%9E%90/solution.py) |
-| 181861 | [배열의 원소만큼 추가하기](extra_181861_%EB%B0%B0%EC%97%B4%EC%9D%98_%EC%9B%90%EC%86%8C%EB%A7%8C%ED%81%BC_%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181861_%EB%B0%B0%EC%97%B4%EC%9D%98_%EC%9B%90%EC%86%8C%EB%A7%8C%ED%81%BC_%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/solution.py) |
-| 181860 | [빈 배열에 추가, 삭제하기](extra_181860_%EB%B9%88_%EB%B0%B0%EC%97%B4%EC%97%90_%EC%B6%94%EA%B0%80%2C_%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181860_%EB%B9%88_%EB%B0%B0%EC%97%B4%EC%97%90_%EC%B6%94%EA%B0%80%2C_%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/solution.py) |
-| 181859 | [배열 만들기 6](extra_181859_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_6/README.md) | Python3 | [코드](extra_181859_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_6/solution.py) |
-| 181858 | [무작위로 K개의 수 뽑기](extra_181858_%EB%AC%B4%EC%9E%91%EC%9C%84%EB%A1%9C_K%EA%B0%9C%EC%9D%98_%EC%88%98_%EB%BD%91%EA%B8%B0/README.md) | Python3 | [코드](extra_181858_%EB%AC%B4%EC%9E%91%EC%9C%84%EB%A1%9C_K%EA%B0%9C%EC%9D%98_%EC%88%98_%EB%BD%91%EA%B8%B0/solution.py) |
-| 181857 | [배열의 길이를 2의 거듭제곱으로 만들기](extra_181857_%EB%B0%B0%EC%97%B4%EC%9D%98_%EA%B8%B8%EC%9D%B4%EB%A5%BC_2%EC%9D%98_%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1%EC%9C%BC%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_181857_%EB%B0%B0%EC%97%B4%EC%9D%98_%EA%B8%B8%EC%9D%B4%EB%A5%BC_2%EC%9D%98_%EA%B1%B0%EB%93%AD%EC%A0%9C%EA%B3%B1%EC%9C%BC%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 181856 | [배열 비교하기](extra_181856_%EB%B0%B0%EC%97%B4_%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181856_%EB%B0%B0%EC%97%B4_%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/solution.py) |
-| 181855 | [문자열 묶기](extra_181855_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%AC%B6%EA%B8%B0/README.md) | Python3 | [코드](extra_181855_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%AC%B6%EA%B8%B0/solution.py) |
-| 181854 | [배열의 길이에 따라 다른 연산하기](extra_181854_%EB%B0%B0%EC%97%B4%EC%9D%98_%EA%B8%B8%EC%9D%B4%EC%97%90_%EB%94%B0%EB%9D%BC_%EB%8B%A4%EB%A5%B8_%EC%97%B0%EC%82%B0%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181854_%EB%B0%B0%EC%97%B4%EC%9D%98_%EA%B8%B8%EC%9D%B4%EC%97%90_%EB%94%B0%EB%9D%BC_%EB%8B%A4%EB%A5%B8_%EC%97%B0%EC%82%B0%ED%95%98%EA%B8%B0/solution.py) |
-| 181853 | [뒤에서 5등까지](extra_181853_%EB%92%A4%EC%97%90%EC%84%9C_5%EB%93%B1%EA%B9%8C%EC%A7%80/README.md) | Python3 | [코드](extra_181853_%EB%92%A4%EC%97%90%EC%84%9C_5%EB%93%B1%EA%B9%8C%EC%A7%80/solution.py) |
-| 181852 | [뒤에서 5등 위로](extra_181852_%EB%92%A4%EC%97%90%EC%84%9C_5%EB%93%B1_%EC%9C%84%EB%A1%9C/README.md) | Python3 | [코드](extra_181852_%EB%92%A4%EC%97%90%EC%84%9C_5%EB%93%B1_%EC%9C%84%EB%A1%9C/solution.py) |
-| 181851 | [전국 대회 선발 고사](extra_181851_%EC%A0%84%EA%B5%AD_%EB%8C%80%ED%9A%8C_%EC%84%A0%EB%B0%9C_%EA%B3%A0%EC%82%AC/README.md) | Python3 | [코드](extra_181851_%EC%A0%84%EA%B5%AD_%EB%8C%80%ED%9A%8C_%EC%84%A0%EB%B0%9C_%EA%B3%A0%EC%82%AC/solution.py) |
-| 181850 | [정수 부분](extra_181850_%EC%A0%95%EC%88%98_%EB%B6%80%EB%B6%84/README.md) | Python3 | [코드](extra_181850_%EC%A0%95%EC%88%98_%EB%B6%80%EB%B6%84/solution.py) |
-| 181849 | [문자열 정수의 합](extra_181849_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%A0%95%EC%88%98%EC%9D%98_%ED%95%A9/README.md) | Python3 | [코드](extra_181849_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%A0%95%EC%88%98%EC%9D%98_%ED%95%A9/solution.py) |
-| 181848 | [문자열을 정수로 변환하기](extra_181848_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84_%EC%A0%95%EC%88%98%EB%A1%9C_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181848_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84_%EC%A0%95%EC%88%98%EB%A1%9C_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/solution.py) |
-| 181847 | [0 떼기](extra_181847_0_%EB%96%BC%EA%B8%B0/README.md) | Python3 | [코드](extra_181847_0_%EB%96%BC%EA%B8%B0/solution.py) |
-| 181846 | [두 수의 합](extra_181846_%EB%91%90_%EC%88%98%EC%9D%98_%ED%95%A9/README.md) | Python3 | [코드](extra_181846_%EB%91%90_%EC%88%98%EC%9D%98_%ED%95%A9/solution.py) |
-| 181845 | [문자열로 변환](extra_181845_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%B3%80%ED%99%98/README.md) | Python3 | [코드](extra_181845_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%B3%80%ED%99%98/solution.py) |
-| 181844 | [배열의 원소 삭제하기](extra_181844_%EB%B0%B0%EC%97%B4%EC%9D%98_%EC%9B%90%EC%86%8C_%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181844_%EB%B0%B0%EC%97%B4%EC%9D%98_%EC%9B%90%EC%86%8C_%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/solution.py) |
-| 181843 | [부분 문자열인지 확인하기](extra_181843_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%B8%EC%A7%80_%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181843_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%B8%EC%A7%80_%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/solution.py) |
-| 181842 | [부분 문자열](extra_181842_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4/README.md) | Python3 | [코드](extra_181842_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4/solution.py) |
-| 181841 | [꼬리 문자열](extra_181841_%EA%BC%AC%EB%A6%AC_%EB%AC%B8%EC%9E%90%EC%97%B4/README.md) | Python3 | [코드](extra_181841_%EA%BC%AC%EB%A6%AC_%EB%AC%B8%EC%9E%90%EC%97%B4/solution.py) |
-| 181840 | [정수 찾기](extra_181840_%EC%A0%95%EC%88%98_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_181840_%EC%A0%95%EC%88%98_%EC%B0%BE%EA%B8%B0/solution.py) |
-| 181839 | [주사위 게임 1](extra_181839_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B2%8C%EC%9E%84_1/README.md) | Python3 | [코드](extra_181839_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B2%8C%EC%9E%84_1/solution.py) |
-| 181838 | [날짜 비교하기](extra_181838_%EB%82%A0%EC%A7%9C_%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181838_%EB%82%A0%EC%A7%9C_%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/solution.py) |
-| 181837 | [커피 심부름](extra_181837_%EC%BB%A4%ED%94%BC_%EC%8B%AC%EB%B6%80%EB%A6%84/README.md) | Python3 | [코드](extra_181837_%EC%BB%A4%ED%94%BC_%EC%8B%AC%EB%B6%80%EB%A6%84/solution.py) |
-| 181836 | [그림 확대](extra_181836_%EA%B7%B8%EB%A6%BC_%ED%99%95%EB%8C%80/README.md) | Python3 | [코드](extra_181836_%EA%B7%B8%EB%A6%BC_%ED%99%95%EB%8C%80/solution.py) |
-| 181835 | [조건에 맞게 수열 변환하기 3](extra_181835_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EA%B2%8C_%EC%88%98%EC%97%B4_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0_3/README.md) | Python3 | [코드](extra_181835_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EA%B2%8C_%EC%88%98%EC%97%B4_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0_3/solution.py) |
-| 181834 | [l로 만들기](extra_181834_l%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_181834_l%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 181833 | [특별한 이차원 배열 1](extra_181833_%ED%8A%B9%EB%B3%84%ED%95%9C_%EC%9D%B4%EC%B0%A8%EC%9B%90_%EB%B0%B0%EC%97%B4_1/README.md) | Python3 | [코드](extra_181833_%ED%8A%B9%EB%B3%84%ED%95%9C_%EC%9D%B4%EC%B0%A8%EC%9B%90_%EB%B0%B0%EC%97%B4_1/solution.py) |
-| 181832 | [정수를 나선형으로 배치하기](extra_181832_%EC%A0%95%EC%88%98%EB%A5%BC_%EB%82%98%EC%84%A0%ED%98%95%EC%9C%BC%EB%A1%9C_%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181832_%EC%A0%95%EC%88%98%EB%A5%BC_%EB%82%98%EC%84%A0%ED%98%95%EC%9C%BC%EB%A1%9C_%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0/solution.py) |
-| 181831 | [특별한 이차원 배열 2](extra_181831_%ED%8A%B9%EB%B3%84%ED%95%9C_%EC%9D%B4%EC%B0%A8%EC%9B%90_%EB%B0%B0%EC%97%B4_2/README.md) | Python3 | [코드](extra_181831_%ED%8A%B9%EB%B3%84%ED%95%9C_%EC%9D%B4%EC%B0%A8%EC%9B%90_%EB%B0%B0%EC%97%B4_2/solution.py) |
-| 181830 | [정사각형으로 만들기](extra_181830_%EC%A0%95%EC%82%AC%EA%B0%81%ED%98%95%EC%9C%BC%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_181830_%EC%A0%95%EC%82%AC%EA%B0%81%ED%98%95%EC%9C%BC%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 181829 | [이차원 배열 대각선 순회하기](extra_181829_%EC%9D%B4%EC%B0%A8%EC%9B%90_%EB%B0%B0%EC%97%B4_%EB%8C%80%EA%B0%81%EC%84%A0_%EC%88%9C%ED%9A%8C%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_181829_%EC%9D%B4%EC%B0%A8%EC%9B%90_%EB%B0%B0%EC%97%B4_%EB%8C%80%EA%B0%81%EC%84%A0_%EC%88%9C%ED%9A%8C%ED%95%98%EA%B8%B0/solution.py) |
-| 120956 | [옹알이 (1)](extra_120956_%EC%98%B9%EC%95%8C%EC%9D%B4_%281%29/README.md) | Python3 | [코드](extra_120956_%EC%98%B9%EC%95%8C%EC%9D%B4_%281%29/solution.py) |
-| 120924 | [다음에 올 숫자](extra_120924_%EB%8B%A4%EC%9D%8C%EC%97%90_%EC%98%AC_%EC%88%AB%EC%9E%90/README.md) | Python3 | [코드](extra_120924_%EB%8B%A4%EC%9D%8C%EC%97%90_%EC%98%AC_%EC%88%AB%EC%9E%90/solution.py) |
-| 120923 | [연속된 수의 합](extra_120923_%EC%97%B0%EC%86%8D%EB%90%9C_%EC%88%98%EC%9D%98_%ED%95%A9/README.md) | Python3 | [코드](extra_120923_%EC%97%B0%EC%86%8D%EB%90%9C_%EC%88%98%EC%9D%98_%ED%95%A9/solution.py) |
-| 120922 | [종이 자르기](extra_120922_%EC%A2%85%EC%9D%B4_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md) | Python3 | [코드](extra_120922_%EC%A2%85%EC%9D%B4_%EC%9E%90%EB%A5%B4%EA%B8%B0/solution.py) |
-| 120921 | [문자열 밀기](extra_120921_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%B0%80%EA%B8%B0/README.md) | Python3 | [코드](extra_120921_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%B0%80%EA%B8%B0/solution.py) |
-| 120913 | [잘라서 배열로 저장하기](extra_120913_%EC%9E%98%EB%9D%BC%EC%84%9C_%EB%B0%B0%EC%97%B4%EB%A1%9C_%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120913_%EC%9E%98%EB%9D%BC%EC%84%9C_%EB%B0%B0%EC%97%B4%EB%A1%9C_%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/solution.py) |
-| 120912 | [7의 개수](extra_120912_7%EC%9D%98_%EA%B0%9C%EC%88%98/README.md) | Python3 | [코드](extra_120912_7%EC%9D%98_%EA%B0%9C%EC%88%98/solution.py) |
-| 120911 | [문자열 정렬하기 (2)](extra_120911_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0_%282%29/README.md) | Python3 | [코드](extra_120911_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0_%282%29/solution.py) |
-| 120910 | [세균 증식](extra_120910_%EC%84%B8%EA%B7%A0_%EC%A6%9D%EC%8B%9D/README.md) | Python3 | [코드](extra_120910_%EC%84%B8%EA%B7%A0_%EC%A6%9D%EC%8B%9D/solution.py) |
-| 120909 | [제곱수 판별하기](extra_120909_%EC%A0%9C%EA%B3%B1%EC%88%98_%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120909_%EC%A0%9C%EA%B3%B1%EC%88%98_%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/solution.py) |
-| 120908 | [문자열안에 문자열](extra_120908_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%95%88%EC%97%90_%EB%AC%B8%EC%9E%90%EC%97%B4/README.md) | Python3 | [코드](extra_120908_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%95%88%EC%97%90_%EB%AC%B8%EC%9E%90%EC%97%B4/solution.py) |
-| 120907 | [OX퀴즈](extra_120907_OX%ED%80%B4%EC%A6%88/README.md) | Python3 | [코드](extra_120907_OX%ED%80%B4%EC%A6%88/solution.py) |
-| 120906 | [자릿수 더하기](extra_120906_%EC%9E%90%EB%A6%BF%EC%88%98_%EB%8D%94%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120906_%EC%9E%90%EB%A6%BF%EC%88%98_%EB%8D%94%ED%95%98%EA%B8%B0/solution.py) |
-| 120905 | [n의 배수 고르기](extra_120905_n%EC%9D%98_%EB%B0%B0%EC%88%98_%EA%B3%A0%EB%A5%B4%EA%B8%B0/README.md) | Python3 | [코드](extra_120905_n%EC%9D%98_%EB%B0%B0%EC%88%98_%EA%B3%A0%EB%A5%B4%EA%B8%B0/solution.py) |
-| 120904 | [숫자 찾기](extra_120904_%EC%88%AB%EC%9E%90_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_120904_%EC%88%AB%EC%9E%90_%EC%B0%BE%EA%B8%B0/solution.py) |
-| 120903 | [배열의 유사도](extra_120903_%EB%B0%B0%EC%97%B4%EC%9D%98_%EC%9C%A0%EC%82%AC%EB%8F%84/README.md) | Python3 | [코드](extra_120903_%EB%B0%B0%EC%97%B4%EC%9D%98_%EC%9C%A0%EC%82%AC%EB%8F%84/solution.py) |
-| 120902 | [문자열 계산하기](extra_120902_%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120902_%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0/solution.py) |
-| 120899 | [가장 큰 수 찾기](extra_120899_%EA%B0%80%EC%9E%A5_%ED%81%B0_%EC%88%98_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_120899_%EA%B0%80%EC%9E%A5_%ED%81%B0_%EC%88%98_%EC%B0%BE%EA%B8%B0/solution.py) |
-| 120898 | [편지](extra_120898_%ED%8E%B8%EC%A7%80/README.md) | Python3 | [코드](extra_120898_%ED%8E%B8%EC%A7%80/solution.py) |
-| 120897 | [약수 구하기](extra_120897_%EC%95%BD%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120897_%EC%95%BD%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 120896 | [한 번만 등장한 문자](extra_120896_%ED%95%9C_%EB%B2%88%EB%A7%8C_%EB%93%B1%EC%9E%A5%ED%95%9C_%EB%AC%B8%EC%9E%90/README.md) | Python3 | [코드](extra_120896_%ED%95%9C_%EB%B2%88%EB%A7%8C_%EB%93%B1%EC%9E%A5%ED%95%9C_%EB%AC%B8%EC%9E%90/solution.py) |
-| 120895 | [인덱스 바꾸기](extra_120895_%EC%9D%B8%EB%8D%B1%EC%8A%A4_%EB%B0%94%EA%BE%B8%EA%B8%B0/README.md) | Python3 | [코드](extra_120895_%EC%9D%B8%EB%8D%B1%EC%8A%A4_%EB%B0%94%EA%BE%B8%EA%B8%B0/solution.py) |
-| 120894 | [영어가 싫어요](extra_120894_%EC%98%81%EC%96%B4%EA%B0%80_%EC%8B%AB%EC%96%B4%EC%9A%94/README.md) | Python3 | [코드](extra_120894_%EC%98%81%EC%96%B4%EA%B0%80_%EC%8B%AB%EC%96%B4%EC%9A%94/solution.py) |
-| 120893 | [대문자와 소문자](extra_120893_%EB%8C%80%EB%AC%B8%EC%9E%90%EC%99%80_%EC%86%8C%EB%AC%B8%EC%9E%90/README.md) | Python3 | [코드](extra_120893_%EB%8C%80%EB%AC%B8%EC%9E%90%EC%99%80_%EC%86%8C%EB%AC%B8%EC%9E%90/solution.py) |
-| 120892 | [암호 해독](extra_120892_%EC%95%94%ED%98%B8_%ED%95%B4%EB%8F%85/README.md) | Python3 | [코드](extra_120892_%EC%95%94%ED%98%B8_%ED%95%B4%EB%8F%85/solution.py) |
-| 120891 | [369게임](extra_120891_369%EA%B2%8C%EC%9E%84/README.md) | Python3 | [코드](extra_120891_369%EA%B2%8C%EC%9E%84/solution.py) |
-| 120890 | [가까운 수](extra_120890_%EA%B0%80%EA%B9%8C%EC%9A%B4_%EC%88%98/README.md) | Python3 | [코드](extra_120890_%EA%B0%80%EA%B9%8C%EC%9A%B4_%EC%88%98/solution.py) |
-| 120889 | [삼각형의 완성조건 (1)](extra_120889_%EC%82%BC%EA%B0%81%ED%98%95%EC%9D%98_%EC%99%84%EC%84%B1%EC%A1%B0%EA%B1%B4_%281%29/README.md) | Python3 | [코드](extra_120889_%EC%82%BC%EA%B0%81%ED%98%95%EC%9D%98_%EC%99%84%EC%84%B1%EC%A1%B0%EA%B1%B4_%281%29/solution.py) |
-| 120888 | [중복된 문자 제거](extra_120888_%EC%A4%91%EB%B3%B5%EB%90%9C_%EB%AC%B8%EC%9E%90_%EC%A0%9C%EA%B1%B0/README.md) | Python3 | [코드](extra_120888_%EC%A4%91%EB%B3%B5%EB%90%9C_%EB%AC%B8%EC%9E%90_%EC%A0%9C%EA%B1%B0/solution.py) |
-| 120887 | [k의 개수](extra_120887_k%EC%9D%98_%EA%B0%9C%EC%88%98/README.md) | Python3 | [코드](extra_120887_k%EC%9D%98_%EA%B0%9C%EC%88%98/solution.py) |
-| 120886 | [A로 B 만들기](extra_120886_A%EB%A1%9C_B_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_120886_A%EB%A1%9C_B_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 120885 | [이진수 더하기](extra_120885_%EC%9D%B4%EC%A7%84%EC%88%98_%EB%8D%94%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120885_%EC%9D%B4%EC%A7%84%EC%88%98_%EB%8D%94%ED%95%98%EA%B8%B0/solution.py) |
-| 120884 | [치킨 쿠폰](extra_120884_%EC%B9%98%ED%82%A8_%EC%BF%A0%ED%8F%B0/README.md) | Python3 | [코드](extra_120884_%EC%B9%98%ED%82%A8_%EC%BF%A0%ED%8F%B0/solution.py) |
-| 120883 | [로그인 성공?](extra_120883_%EB%A1%9C%EA%B7%B8%EC%9D%B8_%EC%84%B1%EA%B3%B5_/README.md) | Python3 | [코드](extra_120883_%EB%A1%9C%EA%B7%B8%EC%9D%B8_%EC%84%B1%EA%B3%B5_/solution.py) |
-| 120882 | [등수 매기기](extra_120882_%EB%93%B1%EC%88%98_%EB%A7%A4%EA%B8%B0%EA%B8%B0/README.md) | Python3 | [코드](extra_120882_%EB%93%B1%EC%88%98_%EB%A7%A4%EA%B8%B0%EA%B8%B0/solution.py) |
-| 120880 | [특이한 정렬](extra_120880_%ED%8A%B9%EC%9D%B4%ED%95%9C_%EC%A0%95%EB%A0%AC/README.md) | Python3 | [코드](extra_120880_%ED%8A%B9%EC%9D%B4%ED%95%9C_%EC%A0%95%EB%A0%AC/solution.py) |
-| 120878 | [유한소수 판별하기](extra_120878_%EC%9C%A0%ED%95%9C%EC%86%8C%EC%88%98_%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120878_%EC%9C%A0%ED%95%9C%EC%86%8C%EC%88%98_%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/solution.py) |
-| 120876 | [겹치는 선분의 길이](extra_120876_%EA%B2%B9%EC%B9%98%EB%8A%94_%EC%84%A0%EB%B6%84%EC%9D%98_%EA%B8%B8%EC%9D%B4/README.md) | Python3 | [코드](extra_120876_%EA%B2%B9%EC%B9%98%EB%8A%94_%EC%84%A0%EB%B6%84%EC%9D%98_%EA%B8%B8%EC%9D%B4/solution.py) |
-| 120875 | [평행](extra_120875_%ED%8F%89%ED%96%89/README.md) | Python3 | [코드](extra_120875_%ED%8F%89%ED%96%89/solution.py) |
-| 120871 | [저주의 숫자 3](extra_120871_%EC%A0%80%EC%A3%BC%EC%9D%98_%EC%88%AB%EC%9E%90_3/README.md) | Python3 | [코드](extra_120871_%EC%A0%80%EC%A3%BC%EC%9D%98_%EC%88%AB%EC%9E%90_3/solution.py) |
-| 120869 | [외계어 사전](extra_120869_%EC%99%B8%EA%B3%84%EC%96%B4_%EC%82%AC%EC%A0%84/README.md) | Python3 | [코드](extra_120869_%EC%99%B8%EA%B3%84%EC%96%B4_%EC%82%AC%EC%A0%84/solution.py) |
-| 120868 | [삼각형의 완성조건 (2)](extra_120868_%EC%82%BC%EA%B0%81%ED%98%95%EC%9D%98_%EC%99%84%EC%84%B1%EC%A1%B0%EA%B1%B4_%282%29/README.md) | Python3 | [코드](extra_120868_%EC%82%BC%EA%B0%81%ED%98%95%EC%9D%98_%EC%99%84%EC%84%B1%EC%A1%B0%EA%B1%B4_%282%29/solution.py) |
-| 120866 | [안전지대](extra_120866_%EC%95%88%EC%A0%84%EC%A7%80%EB%8C%80/README.md) | Python3 | [코드](extra_120866_%EC%95%88%EC%A0%84%EC%A7%80%EB%8C%80/solution.py) |
-| 120864 | [숨어있는 숫자의 덧셈 (2)](extra_120864_%EC%88%A8%EC%96%B4%EC%9E%88%EB%8A%94_%EC%88%AB%EC%9E%90%EC%9D%98_%EB%8D%A7%EC%85%88_%282%29/README.md) | Python3 | [코드](extra_120864_%EC%88%A8%EC%96%B4%EC%9E%88%EB%8A%94_%EC%88%AB%EC%9E%90%EC%9D%98_%EB%8D%A7%EC%85%88_%282%29/solution.py) |
-| 120863 | [다항식 더하기](extra_120863_%EB%8B%A4%ED%95%AD%EC%8B%9D_%EB%8D%94%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120863_%EB%8B%A4%ED%95%AD%EC%8B%9D_%EB%8D%94%ED%95%98%EA%B8%B0/solution.py) |
-| 120862 | [최댓값 만들기 (2)](extra_120862_%EC%B5%9C%EB%8C%93%EA%B0%92_%EB%A7%8C%EB%93%A4%EA%B8%B0_%282%29/README.md) | Python3 | [코드](extra_120862_%EC%B5%9C%EB%8C%93%EA%B0%92_%EB%A7%8C%EB%93%A4%EA%B8%B0_%282%29/solution.py) |
-| 120861 | [캐릭터의 좌표](extra_120861_%EC%BA%90%EB%A6%AD%ED%84%B0%EC%9D%98_%EC%A2%8C%ED%91%9C/README.md) | Python3 | [코드](extra_120861_%EC%BA%90%EB%A6%AD%ED%84%B0%EC%9D%98_%EC%A2%8C%ED%91%9C/solution.py) |
-| 120860 | [직사각형 넓이 구하기](extra_120860_%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95_%EB%84%93%EC%9D%B4_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120860_%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95_%EB%84%93%EC%9D%B4_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 120854 | [배열 원소의 길이](extra_120854_%EB%B0%B0%EC%97%B4_%EC%9B%90%EC%86%8C%EC%9D%98_%EA%B8%B8%EC%9D%B4/README.md) | Python3 | [코드](extra_120854_%EB%B0%B0%EC%97%B4_%EC%9B%90%EC%86%8C%EC%9D%98_%EA%B8%B8%EC%9D%B4/solution.py) |
-| 120853 | [컨트롤 제트](extra_120853_%EC%BB%A8%ED%8A%B8%EB%A1%A4_%EC%A0%9C%ED%8A%B8/README.md) | Python3 | [코드](extra_120853_%EC%BB%A8%ED%8A%B8%EB%A1%A4_%EC%A0%9C%ED%8A%B8/solution.py) |
-| 120852 | [소인수분해](extra_120852_%EC%86%8C%EC%9D%B8%EC%88%98%EB%B6%84%ED%95%B4/README.md) | Python3 | [코드](extra_120852_%EC%86%8C%EC%9D%B8%EC%88%98%EB%B6%84%ED%95%B4/solution.py) |
-| 120851 | [숨어있는 숫자의 덧셈 (1)](extra_120851_%EC%88%A8%EC%96%B4%EC%9E%88%EB%8A%94_%EC%88%AB%EC%9E%90%EC%9D%98_%EB%8D%A7%EC%85%88_%281%29/README.md) | Python3 | [코드](extra_120851_%EC%88%A8%EC%96%B4%EC%9E%88%EB%8A%94_%EC%88%AB%EC%9E%90%EC%9D%98_%EB%8D%A7%EC%85%88_%281%29/solution.py) |
-| 120850 | [문자열 정렬하기 (1)](extra_120850_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0_%281%29/README.md) | Python3 | [코드](extra_120850_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0_%281%29/solution.py) |
-| 120849 | [모음 제거](extra_120849_%EB%AA%A8%EC%9D%8C_%EC%A0%9C%EA%B1%B0/README.md) | Python3 | [코드](extra_120849_%EB%AA%A8%EC%9D%8C_%EC%A0%9C%EA%B1%B0/solution.py) |
-| 120848 | [팩토리얼](extra_120848_%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/README.md) | Python3 | [코드](extra_120848_%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/solution.py) |
-| 120847 | [최댓값 만들기(1)](extra_120847_%EC%B5%9C%EB%8C%93%EA%B0%92_%EB%A7%8C%EB%93%A4%EA%B8%B0%281%29/README.md) | Python3 | [코드](extra_120847_%EC%B5%9C%EB%8C%93%EA%B0%92_%EB%A7%8C%EB%93%A4%EA%B8%B0%281%29/solution.py) |
-| 120846 | [합성수 찾기](extra_120846_%ED%95%A9%EC%84%B1%EC%88%98_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_120846_%ED%95%A9%EC%84%B1%EC%88%98_%EC%B0%BE%EA%B8%B0/solution.py) |
-| 120845 | [주사위의 개수](extra_120845_%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98_%EA%B0%9C%EC%88%98/README.md) | Python3 | [코드](extra_120845_%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98_%EA%B0%9C%EC%88%98/solution.py) |
-| 120844 | [배열 회전시키기](extra_120844_%EB%B0%B0%EC%97%B4_%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_120844_%EB%B0%B0%EC%97%B4_%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/solution.py) |
-| 120843 | [공 던지기](extra_120843_%EA%B3%B5_%EB%8D%98%EC%A7%80%EA%B8%B0/README.md) | Python3 | [코드](extra_120843_%EA%B3%B5_%EB%8D%98%EC%A7%80%EA%B8%B0/solution.py) |
-| 120842 | [2차원으로 만들기](extra_120842_2%EC%B0%A8%EC%9B%90%EC%9C%BC%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_120842_2%EC%B0%A8%EC%9B%90%EC%9C%BC%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 120841 | [점의 위치 구하기](extra_120841_%EC%A0%90%EC%9D%98_%EC%9C%84%EC%B9%98_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120841_%EC%A0%90%EC%9D%98_%EC%9C%84%EC%B9%98_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 120840 | [구슬을 나누는 경우의 수](extra_120840_%EA%B5%AC%EC%8A%AC%EC%9D%84_%EB%82%98%EB%88%84%EB%8A%94_%EA%B2%BD%EC%9A%B0%EC%9D%98_%EC%88%98/README.md) | Python3 | [코드](extra_120840_%EA%B5%AC%EC%8A%AC%EC%9D%84_%EB%82%98%EB%88%84%EB%8A%94_%EA%B2%BD%EC%9A%B0%EC%9D%98_%EC%88%98/solution.py) |
-| 120839 | [가위 바위 보](extra_120839_%EA%B0%80%EC%9C%84_%EB%B0%94%EC%9C%84_%EB%B3%B4/README.md) | Python3 | [코드](extra_120839_%EA%B0%80%EC%9C%84_%EB%B0%94%EC%9C%84_%EB%B3%B4/solution.py) |
-| 120838 | [모스부호 (1)](extra_120838_%EB%AA%A8%EC%8A%A4%EB%B6%80%ED%98%B8_%281%29/README.md) | Python3 | [코드](extra_120838_%EB%AA%A8%EC%8A%A4%EB%B6%80%ED%98%B8_%281%29/solution.py) |
-| 120837 | [개미 군단](extra_120837_%EA%B0%9C%EB%AF%B8_%EA%B5%B0%EB%8B%A8/README.md) | Python3 | [코드](extra_120837_%EA%B0%9C%EB%AF%B8_%EA%B5%B0%EB%8B%A8/solution.py) |
-| 120836 | [순서쌍의 개수](extra_120836_%EC%88%9C%EC%84%9C%EC%8C%8D%EC%9D%98_%EA%B0%9C%EC%88%98/README.md) | Python3 | [코드](extra_120836_%EC%88%9C%EC%84%9C%EC%8C%8D%EC%9D%98_%EA%B0%9C%EC%88%98/solution.py) |
-| 120835 | [진료순서 정하기](extra_120835_%EC%A7%84%EB%A3%8C%EC%88%9C%EC%84%9C_%EC%A0%95%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120835_%EC%A7%84%EB%A3%8C%EC%88%9C%EC%84%9C_%EC%A0%95%ED%95%98%EA%B8%B0/solution.py) |
-| 120834 | [외계행성의 나이](extra_120834_%EC%99%B8%EA%B3%84%ED%96%89%EC%84%B1%EC%9D%98_%EB%82%98%EC%9D%B4/README.md) | Python3 | [코드](extra_120834_%EC%99%B8%EA%B3%84%ED%96%89%EC%84%B1%EC%9D%98_%EB%82%98%EC%9D%B4/solution.py) |
-| 120833 | [배열 자르기](extra_120833_%EB%B0%B0%EC%97%B4_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md) | Python3 | [코드](extra_120833_%EB%B0%B0%EC%97%B4_%EC%9E%90%EB%A5%B4%EA%B8%B0/solution.py) |
-| 120831 | [짝수의 합](extra_120831_%EC%A7%9D%EC%88%98%EC%9D%98_%ED%95%A9/README.md) | Python3 | [코드](extra_120831_%EC%A7%9D%EC%88%98%EC%9D%98_%ED%95%A9/solution.py) |
-| 120830 | [양꼬치](extra_120830_%EC%96%91%EA%BC%AC%EC%B9%98/README.md) | Python3 | [코드](extra_120830_%EC%96%91%EA%BC%AC%EC%B9%98/solution.py) |
-| 120829 | [각도기](extra_120829_%EA%B0%81%EB%8F%84%EA%B8%B0/README.md) | Python3 | [코드](extra_120829_%EA%B0%81%EB%8F%84%EA%B8%B0/solution.py) |
-| 120826 | [특정 문자 제거하기](extra_120826_%ED%8A%B9%EC%A0%95_%EB%AC%B8%EC%9E%90_%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120826_%ED%8A%B9%EC%A0%95_%EB%AC%B8%EC%9E%90_%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/solution.py) |
-| 120825 | [문자 반복 출력하기](extra_120825_%EB%AC%B8%EC%9E%90_%EB%B0%98%EB%B3%B5_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120825_%EB%AC%B8%EC%9E%90_%EB%B0%98%EB%B3%B5_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.py) |
-| 120824 | [짝수 홀수 개수](extra_120824_%EC%A7%9D%EC%88%98_%ED%99%80%EC%88%98_%EA%B0%9C%EC%88%98/README.md) | Python3 | [코드](extra_120824_%EC%A7%9D%EC%88%98_%ED%99%80%EC%88%98_%EA%B0%9C%EC%88%98/solution.py) |
-| 120823 | [직각삼각형 출력하기](extra_120823_%EC%A7%81%EA%B0%81%EC%82%BC%EA%B0%81%ED%98%95_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120823_%EC%A7%81%EA%B0%81%EC%82%BC%EA%B0%81%ED%98%95_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.py) |
-| 120822 | [뒤집힌 문자열](extra_120822_%EB%92%A4%EC%A7%91%ED%9E%8C_%EB%AC%B8%EC%9E%90%EC%97%B4/README.md) | Python3 | [코드](extra_120822_%EB%92%A4%EC%A7%91%ED%9E%8C_%EB%AC%B8%EC%9E%90%EC%97%B4/solution.py) |
-| 120821 | [배열 뒤집기](extra_120821_%EB%B0%B0%EC%97%B4_%EB%92%A4%EC%A7%91%EA%B8%B0/README.md) | Python3 | [코드](extra_120821_%EB%B0%B0%EC%97%B4_%EB%92%A4%EC%A7%91%EA%B8%B0/solution.py) |
-| 120820 | [나이 출력](extra_120820_%EB%82%98%EC%9D%B4_%EC%B6%9C%EB%A0%A5/README.md) | Python3 | [코드](extra_120820_%EB%82%98%EC%9D%B4_%EC%B6%9C%EB%A0%A5/solution.py) |
-| 120819 | [아이스 아메리카노](extra_120819_%EC%95%84%EC%9D%B4%EC%8A%A4_%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8/README.md) | Python3 | [코드](extra_120819_%EC%95%84%EC%9D%B4%EC%8A%A4_%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8/solution.py) |
-| 120818 | [옷가게 할인 받기](extra_120818_%EC%98%B7%EA%B0%80%EA%B2%8C_%ED%95%A0%EC%9D%B8_%EB%B0%9B%EA%B8%B0/README.md) | Python3 | [코드](extra_120818_%EC%98%B7%EA%B0%80%EA%B2%8C_%ED%95%A0%EC%9D%B8_%EB%B0%9B%EA%B8%B0/solution.py) |
-| 120817 | [배열의 평균값](extra_120817_%EB%B0%B0%EC%97%B4%EC%9D%98_%ED%8F%89%EA%B7%A0%EA%B0%92/README.md) | Python3 | [코드](extra_120817_%EB%B0%B0%EC%97%B4%EC%9D%98_%ED%8F%89%EA%B7%A0%EA%B0%92/solution.py) |
-| 120816 | [피자 나눠 먹기 (3)](extra_120816_%ED%94%BC%EC%9E%90_%EB%82%98%EB%88%A0_%EB%A8%B9%EA%B8%B0_%283%29/README.md) | Python3 | [코드](extra_120816_%ED%94%BC%EC%9E%90_%EB%82%98%EB%88%A0_%EB%A8%B9%EA%B8%B0_%283%29/solution.py) |
-| 120815 | [피자 나눠 먹기 (2)](extra_120815_%ED%94%BC%EC%9E%90_%EB%82%98%EB%88%A0_%EB%A8%B9%EA%B8%B0_%282%29/README.md) | Python3 | [코드](extra_120815_%ED%94%BC%EC%9E%90_%EB%82%98%EB%88%A0_%EB%A8%B9%EA%B8%B0_%282%29/solution.py) |
-| 120814 | [피자 나눠 먹기 (1)](extra_120814_%ED%94%BC%EC%9E%90_%EB%82%98%EB%88%A0_%EB%A8%B9%EA%B8%B0_%281%29/README.md) | Python3 | [코드](extra_120814_%ED%94%BC%EC%9E%90_%EB%82%98%EB%88%A0_%EB%A8%B9%EA%B8%B0_%281%29/solution.py) |
-| 120813 | [짝수는 싫어요](extra_120813_%EC%A7%9D%EC%88%98%EB%8A%94_%EC%8B%AB%EC%96%B4%EC%9A%94/README.md) | Python3 | [코드](extra_120813_%EC%A7%9D%EC%88%98%EB%8A%94_%EC%8B%AB%EC%96%B4%EC%9A%94/solution.py) |
-| 120812 | [최빈값 구하기](extra_120812_%EC%B5%9C%EB%B9%88%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120812_%EC%B5%9C%EB%B9%88%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 120811 | [중앙값 구하기](extra_120811_%EC%A4%91%EC%95%99%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120811_%EC%A4%91%EC%95%99%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 120810 | [나머지 구하기](extra_120810_%EB%82%98%EB%A8%B8%EC%A7%80_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120810_%EB%82%98%EB%A8%B8%EC%A7%80_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 120809 | [배열 두 배 만들기](extra_120809_%EB%B0%B0%EC%97%B4_%EB%91%90_%EB%B0%B0_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_120809_%EB%B0%B0%EC%97%B4_%EB%91%90_%EB%B0%B0_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 120808 | [분수의 덧셈](extra_120808_%EB%B6%84%EC%88%98%EC%9D%98_%EB%8D%A7%EC%85%88/README.md) | Python3 | [코드](extra_120808_%EB%B6%84%EC%88%98%EC%9D%98_%EB%8D%A7%EC%85%88/solution.py) |
-| 120807 | [숫자 비교하기](extra_120807_%EC%88%AB%EC%9E%90_%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120807_%EC%88%AB%EC%9E%90_%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/solution.py) |
-| 120806 | [두 수의 나눗셈](extra_120806_%EB%91%90_%EC%88%98%EC%9D%98_%EB%82%98%EB%88%97%EC%85%88/README.md) | Python3 | [코드](extra_120806_%EB%91%90_%EC%88%98%EC%9D%98_%EB%82%98%EB%88%97%EC%85%88/solution.py) |
-| 120805 | [몫 구하기](extra_120805_%EB%AA%AB_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120805_%EB%AA%AB_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 120804 | [두 수의 곱 구하기](extra_120804_%EB%91%90_%EC%88%98%EC%9D%98_%EA%B3%B1_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120804_%EB%91%90_%EC%88%98%EC%9D%98_%EA%B3%B1_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 120803 | [두 수의 차 구하기](extra_120803_%EB%91%90_%EC%88%98%EC%9D%98_%EC%B0%A8_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120803_%EB%91%90_%EC%88%98%EC%9D%98_%EC%B0%A8_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 120802 | [두 수의 합 구하기](extra_120802_%EB%91%90_%EC%88%98%EC%9D%98_%ED%95%A9_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_120802_%EB%91%90_%EC%88%98%EC%9D%98_%ED%95%A9_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 120585 | [머쓱이보다 키 큰 사람](extra_120585_%EB%A8%B8%EC%93%B1%EC%9D%B4%EB%B3%B4%EB%8B%A4_%ED%82%A4_%ED%81%B0_%EC%82%AC%EB%9E%8C/README.md) | Python3 | [코드](extra_120585_%EB%A8%B8%EC%93%B1%EC%9D%B4%EB%B3%B4%EB%8B%A4_%ED%82%A4_%ED%81%B0_%EC%82%AC%EB%9E%8C/solution.py) |
-| 120583 | [중복된 숫자 개수](extra_120583_%EC%A4%91%EB%B3%B5%EB%90%9C_%EC%88%AB%EC%9E%90_%EA%B0%9C%EC%88%98/README.md) | Python3 | [코드](extra_120583_%EC%A4%91%EB%B3%B5%EB%90%9C_%EC%88%AB%EC%9E%90_%EA%B0%9C%EC%88%98/solution.py) |
+| 181862 | [세 개의 구분자](extra_181862_세_개의_구분자/README.md) | Python3 | [코드](extra_181862_세_개의_구분자/solution.py) |
+| 181861 | [배열의 원소만큼 추가하기](extra_181861_배열의_원소만큼_추가하기/README.md) | Python3 | [코드](extra_181861_배열의_원소만큼_추가하기/solution.py) |
+| 181860 | [빈 배열에 추가, 삭제하기](extra_181860_빈_배열에_추가,_삭제하기/README.md) | Python3 | [코드](extra_181860_빈_배열에_추가,_삭제하기/solution.py) |
+| 181859 | [배열 만들기 6](extra_181859_배열_만들기_6/README.md) | Python3 | [코드](extra_181859_배열_만들기_6/solution.py) |
+| 181858 | [무작위로 K개의 수 뽑기](extra_181858_무작위로_K개의_수_뽑기/README.md) | Python3 | [코드](extra_181858_무작위로_K개의_수_뽑기/solution.py) |
+| 181857 | [배열의 길이를 2의 거듭제곱으로 만들기](extra_181857_배열의_길이를_2의_거듭제곱으로_만들기/README.md) | Python3 | [코드](extra_181857_배열의_길이를_2의_거듭제곱으로_만들기/solution.py) |
+| 181856 | [배열 비교하기](extra_181856_배열_비교하기/README.md) | Python3 | [코드](extra_181856_배열_비교하기/solution.py) |
+| 181855 | [문자열 묶기](extra_181855_문자열_묶기/README.md) | Python3 | [코드](extra_181855_문자열_묶기/solution.py) |
+| 181854 | [배열의 길이에 따라 다른 연산하기](extra_181854_배열의_길이에_따라_다른_연산하기/README.md) | Python3 | [코드](extra_181854_배열의_길이에_따라_다른_연산하기/solution.py) |
+| 181853 | [뒤에서 5등까지](extra_181853_뒤에서_5등까지/README.md) | Python3 | [코드](extra_181853_뒤에서_5등까지/solution.py) |
+| 181852 | [뒤에서 5등 위로](extra_181852_뒤에서_5등_위로/README.md) | Python3 | [코드](extra_181852_뒤에서_5등_위로/solution.py) |
+| 181851 | [전국 대회 선발 고사](extra_181851_전국_대회_선발_고사/README.md) | Python3 | [코드](extra_181851_전국_대회_선발_고사/solution.py) |
+| 181850 | [정수 부분](extra_181850_정수_부분/README.md) | Python3 | [코드](extra_181850_정수_부분/solution.py) |
+| 181849 | [문자열 정수의 합](extra_181849_문자열_정수의_합/README.md) | Python3 | [코드](extra_181849_문자열_정수의_합/solution.py) |
+| 181848 | [문자열을 정수로 변환하기](extra_181848_문자열을_정수로_변환하기/README.md) | Python3 | [코드](extra_181848_문자열을_정수로_변환하기/solution.py) |
+| 181847 | [0 떼기](extra_181847_0_떼기/README.md) | Python3 | [코드](extra_181847_0_떼기/solution.py) |
+| 181846 | [두 수의 합](extra_181846_두_수의_합/README.md) | Python3 | [코드](extra_181846_두_수의_합/solution.py) |
+| 181845 | [문자열로 변환](extra_181845_문자열로_변환/README.md) | Python3 | [코드](extra_181845_문자열로_변환/solution.py) |
+| 181844 | [배열의 원소 삭제하기](extra_181844_배열의_원소_삭제하기/README.md) | Python3 | [코드](extra_181844_배열의_원소_삭제하기/solution.py) |
+| 181843 | [부분 문자열인지 확인하기](extra_181843_부분_문자열인지_확인하기/README.md) | Python3 | [코드](extra_181843_부분_문자열인지_확인하기/solution.py) |
+| 181842 | [부분 문자열](extra_181842_부분_문자열/README.md) | Python3 | [코드](extra_181842_부분_문자열/solution.py) |
+| 181841 | [꼬리 문자열](extra_181841_꼬리_문자열/README.md) | Python3 | [코드](extra_181841_꼬리_문자열/solution.py) |
+| 181840 | [정수 찾기](extra_181840_정수_찾기/README.md) | Python3 | [코드](extra_181840_정수_찾기/solution.py) |
+| 181839 | [주사위 게임 1](extra_181839_주사위_게임_1/README.md) | Python3 | [코드](extra_181839_주사위_게임_1/solution.py) |
+| 181838 | [날짜 비교하기](extra_181838_날짜_비교하기/README.md) | Python3 | [코드](extra_181838_날짜_비교하기/solution.py) |
+| 181837 | [커피 심부름](extra_181837_커피_심부름/README.md) | Python3 | [코드](extra_181837_커피_심부름/solution.py) |
+| 181836 | [그림 확대](extra_181836_그림_확대/README.md) | Python3 | [코드](extra_181836_그림_확대/solution.py) |
+| 181835 | [조건에 맞게 수열 변환하기 3](extra_181835_조건에_맞게_수열_변환하기_3/README.md) | Python3 | [코드](extra_181835_조건에_맞게_수열_변환하기_3/solution.py) |
+| 181834 | [l로 만들기](extra_181834_l로_만들기/README.md) | Python3 | [코드](extra_181834_l로_만들기/solution.py) |
+| 181833 | [특별한 이차원 배열 1](extra_181833_특별한_이차원_배열_1/README.md) | Python3 | [코드](extra_181833_특별한_이차원_배열_1/solution.py) |
+| 181832 | [정수를 나선형으로 배치하기](extra_181832_정수를_나선형으로_배치하기/README.md) | Python3 | [코드](extra_181832_정수를_나선형으로_배치하기/solution.py) |
+| 181831 | [특별한 이차원 배열 2](extra_181831_특별한_이차원_배열_2/README.md) | Python3 | [코드](extra_181831_특별한_이차원_배열_2/solution.py) |
+| 181830 | [정사각형으로 만들기](extra_181830_정사각형으로_만들기/README.md) | Python3 | [코드](extra_181830_정사각형으로_만들기/solution.py) |
+| 181829 | [이차원 배열 대각선 순회하기](extra_181829_이차원_배열_대각선_순회하기/README.md) | Python3 | [코드](extra_181829_이차원_배열_대각선_순회하기/solution.py) |
+| 120956 | [옹알이 (1)](extra_120956_옹알이_(1)/README.md) | Python3 | [코드](extra_120956_옹알이_(1)/solution.py) |
+| 120924 | [다음에 올 숫자](extra_120924_다음에_올_숫자/README.md) | Python3 | [코드](extra_120924_다음에_올_숫자/solution.py) |
+| 120923 | [연속된 수의 합](extra_120923_연속된_수의_합/README.md) | Python3 | [코드](extra_120923_연속된_수의_합/solution.py) |
+| 120922 | [종이 자르기](extra_120922_종이_자르기/README.md) | Python3 | [코드](extra_120922_종이_자르기/solution.py) |
+| 120921 | [문자열 밀기](extra_120921_문자열_밀기/README.md) | Python3 | [코드](extra_120921_문자열_밀기/solution.py) |
+| 120913 | [잘라서 배열로 저장하기](extra_120913_잘라서_배열로_저장하기/README.md) | Python3 | [코드](extra_120913_잘라서_배열로_저장하기/solution.py) |
+| 120912 | [7의 개수](extra_120912_7의_개수/README.md) | Python3 | [코드](extra_120912_7의_개수/solution.py) |
+| 120911 | [문자열 정렬하기 (2)](extra_120911_문자열_정렬하기_(2)/README.md) | Python3 | [코드](extra_120911_문자열_정렬하기_(2)/solution.py) |
+| 120910 | [세균 증식](extra_120910_세균_증식/README.md) | Python3 | [코드](extra_120910_세균_증식/solution.py) |
+| 120909 | [제곱수 판별하기](extra_120909_제곱수_판별하기/README.md) | Python3 | [코드](extra_120909_제곱수_판별하기/solution.py) |
+| 120908 | [문자열안에 문자열](extra_120908_문자열안에_문자열/README.md) | Python3 | [코드](extra_120908_문자열안에_문자열/solution.py) |
+| 120907 | [OX퀴즈](extra_120907_OX퀴즈/README.md) | Python3 | [코드](extra_120907_OX퀴즈/solution.py) |
+| 120906 | [자릿수 더하기](extra_120906_자릿수_더하기/README.md) | Python3 | [코드](extra_120906_자릿수_더하기/solution.py) |
+| 120905 | [n의 배수 고르기](extra_120905_n의_배수_고르기/README.md) | Python3 | [코드](extra_120905_n의_배수_고르기/solution.py) |
+| 120904 | [숫자 찾기](extra_120904_숫자_찾기/README.md) | Python3 | [코드](extra_120904_숫자_찾기/solution.py) |
+| 120903 | [배열의 유사도](extra_120903_배열의_유사도/README.md) | Python3 | [코드](extra_120903_배열의_유사도/solution.py) |
+| 120902 | [문자열 계산하기](extra_120902_문자열_계산하기/README.md) | Python3 | [코드](extra_120902_문자열_계산하기/solution.py) |
+| 120899 | [가장 큰 수 찾기](extra_120899_가장_큰_수_찾기/README.md) | Python3 | [코드](extra_120899_가장_큰_수_찾기/solution.py) |
+| 120898 | [편지](extra_120898_편지/README.md) | Python3 | [코드](extra_120898_편지/solution.py) |
+| 120897 | [약수 구하기](extra_120897_약수_구하기/README.md) | Python3 | [코드](extra_120897_약수_구하기/solution.py) |
+| 120896 | [한 번만 등장한 문자](extra_120896_한_번만_등장한_문자/README.md) | Python3 | [코드](extra_120896_한_번만_등장한_문자/solution.py) |
+| 120895 | [인덱스 바꾸기](extra_120895_인덱스_바꾸기/README.md) | Python3 | [코드](extra_120895_인덱스_바꾸기/solution.py) |
+| 120894 | [영어가 싫어요](extra_120894_영어가_싫어요/README.md) | Python3 | [코드](extra_120894_영어가_싫어요/solution.py) |
+| 120893 | [대문자와 소문자](extra_120893_대문자와_소문자/README.md) | Python3 | [코드](extra_120893_대문자와_소문자/solution.py) |
+| 120892 | [암호 해독](extra_120892_암호_해독/README.md) | Python3 | [코드](extra_120892_암호_해독/solution.py) |
+| 120891 | [369게임](extra_120891_369게임/README.md) | Python3 | [코드](extra_120891_369게임/solution.py) |
+| 120890 | [가까운 수](extra_120890_가까운_수/README.md) | Python3 | [코드](extra_120890_가까운_수/solution.py) |
+| 120889 | [삼각형의 완성조건 (1)](extra_120889_삼각형의_완성조건_(1)/README.md) | Python3 | [코드](extra_120889_삼각형의_완성조건_(1)/solution.py) |
+| 120888 | [중복된 문자 제거](extra_120888_중복된_문자_제거/README.md) | Python3 | [코드](extra_120888_중복된_문자_제거/solution.py) |
+| 120887 | [k의 개수](extra_120887_k의_개수/README.md) | Python3 | [코드](extra_120887_k의_개수/solution.py) |
+| 120886 | [A로 B 만들기](extra_120886_A로_B_만들기/README.md) | Python3 | [코드](extra_120886_A로_B_만들기/solution.py) |
+| 120885 | [이진수 더하기](extra_120885_이진수_더하기/README.md) | Python3 | [코드](extra_120885_이진수_더하기/solution.py) |
+| 120884 | [치킨 쿠폰](extra_120884_치킨_쿠폰/README.md) | Python3 | [코드](extra_120884_치킨_쿠폰/solution.py) |
+| 120883 | [로그인 성공?](extra_120883_로그인_성공_/README.md) | Python3 | [코드](extra_120883_로그인_성공_/solution.py) |
+| 120882 | [등수 매기기](extra_120882_등수_매기기/README.md) | Python3 | [코드](extra_120882_등수_매기기/solution.py) |
+| 120880 | [특이한 정렬](extra_120880_특이한_정렬/README.md) | Python3 | [코드](extra_120880_특이한_정렬/solution.py) |
+| 120878 | [유한소수 판별하기](extra_120878_유한소수_판별하기/README.md) | Python3 | [코드](extra_120878_유한소수_판별하기/solution.py) |
+| 120876 | [겹치는 선분의 길이](extra_120876_겹치는_선분의_길이/README.md) | Python3 | [코드](extra_120876_겹치는_선분의_길이/solution.py) |
+| 120875 | [평행](extra_120875_평행/README.md) | Python3 | [코드](extra_120875_평행/solution.py) |
+| 120871 | [저주의 숫자 3](extra_120871_저주의_숫자_3/README.md) | Python3 | [코드](extra_120871_저주의_숫자_3/solution.py) |
+| 120869 | [외계어 사전](extra_120869_외계어_사전/README.md) | Python3 | [코드](extra_120869_외계어_사전/solution.py) |
+| 120868 | [삼각형의 완성조건 (2)](extra_120868_삼각형의_완성조건_(2)/README.md) | Python3 | [코드](extra_120868_삼각형의_완성조건_(2)/solution.py) |
+| 120866 | [안전지대](extra_120866_안전지대/README.md) | Python3 | [코드](extra_120866_안전지대/solution.py) |
+| 120864 | [숨어있는 숫자의 덧셈 (2)](extra_120864_숨어있는_숫자의_덧셈_(2)/README.md) | Python3 | [코드](extra_120864_숨어있는_숫자의_덧셈_(2)/solution.py) |
+| 120863 | [다항식 더하기](extra_120863_다항식_더하기/README.md) | Python3 | [코드](extra_120863_다항식_더하기/solution.py) |
+| 120862 | [최댓값 만들기 (2)](extra_120862_최댓값_만들기_(2)/README.md) | Python3 | [코드](extra_120862_최댓값_만들기_(2)/solution.py) |
+| 120861 | [캐릭터의 좌표](extra_120861_캐릭터의_좌표/README.md) | Python3 | [코드](extra_120861_캐릭터의_좌표/solution.py) |
+| 120860 | [직사각형 넓이 구하기](extra_120860_직사각형_넓이_구하기/README.md) | Python3 | [코드](extra_120860_직사각형_넓이_구하기/solution.py) |
+| 120854 | [배열 원소의 길이](extra_120854_배열_원소의_길이/README.md) | Python3 | [코드](extra_120854_배열_원소의_길이/solution.py) |
+| 120853 | [컨트롤 제트](extra_120853_컨트롤_제트/README.md) | Python3 | [코드](extra_120853_컨트롤_제트/solution.py) |
+| 120852 | [소인수분해](extra_120852_소인수분해/README.md) | Python3 | [코드](extra_120852_소인수분해/solution.py) |
+| 120851 | [숨어있는 숫자의 덧셈 (1)](extra_120851_숨어있는_숫자의_덧셈_(1)/README.md) | Python3 | [코드](extra_120851_숨어있는_숫자의_덧셈_(1)/solution.py) |
+| 120850 | [문자열 정렬하기 (1)](extra_120850_문자열_정렬하기_(1)/README.md) | Python3 | [코드](extra_120850_문자열_정렬하기_(1)/solution.py) |
+| 120849 | [모음 제거](extra_120849_모음_제거/README.md) | Python3 | [코드](extra_120849_모음_제거/solution.py) |
+| 120848 | [팩토리얼](extra_120848_팩토리얼/README.md) | Python3 | [코드](extra_120848_팩토리얼/solution.py) |
+| 120847 | [최댓값 만들기(1)](extra_120847_최댓값_만들기(1)/README.md) | Python3 | [코드](extra_120847_최댓값_만들기(1)/solution.py) |
+| 120846 | [합성수 찾기](extra_120846_합성수_찾기/README.md) | Python3 | [코드](extra_120846_합성수_찾기/solution.py) |
+| 120845 | [주사위의 개수](extra_120845_주사위의_개수/README.md) | Python3 | [코드](extra_120845_주사위의_개수/solution.py) |
+| 120844 | [배열 회전시키기](extra_120844_배열_회전시키기/README.md) | Python3 | [코드](extra_120844_배열_회전시키기/solution.py) |
+| 120843 | [공 던지기](extra_120843_공_던지기/README.md) | Python3 | [코드](extra_120843_공_던지기/solution.py) |
+| 120842 | [2차원으로 만들기](extra_120842_2차원으로_만들기/README.md) | Python3 | [코드](extra_120842_2차원으로_만들기/solution.py) |
+| 120841 | [점의 위치 구하기](extra_120841_점의_위치_구하기/README.md) | Python3 | [코드](extra_120841_점의_위치_구하기/solution.py) |
+| 120840 | [구슬을 나누는 경우의 수](extra_120840_구슬을_나누는_경우의_수/README.md) | Python3 | [코드](extra_120840_구슬을_나누는_경우의_수/solution.py) |
+| 120839 | [가위 바위 보](extra_120839_가위_바위_보/README.md) | Python3 | [코드](extra_120839_가위_바위_보/solution.py) |
+| 120838 | [모스부호 (1)](extra_120838_모스부호_(1)/README.md) | Python3 | [코드](extra_120838_모스부호_(1)/solution.py) |
+| 120837 | [개미 군단](extra_120837_개미_군단/README.md) | Python3 | [코드](extra_120837_개미_군단/solution.py) |
+| 120836 | [순서쌍의 개수](extra_120836_순서쌍의_개수/README.md) | Python3 | [코드](extra_120836_순서쌍의_개수/solution.py) |
+| 120835 | [진료순서 정하기](extra_120835_진료순서_정하기/README.md) | Python3 | [코드](extra_120835_진료순서_정하기/solution.py) |
+| 120834 | [외계행성의 나이](extra_120834_외계행성의_나이/README.md) | Python3 | [코드](extra_120834_외계행성의_나이/solution.py) |
+| 120833 | [배열 자르기](extra_120833_배열_자르기/README.md) | Python3 | [코드](extra_120833_배열_자르기/solution.py) |
+| 120831 | [짝수의 합](extra_120831_짝수의_합/README.md) | Python3 | [코드](extra_120831_짝수의_합/solution.py) |
+| 120830 | [양꼬치](extra_120830_양꼬치/README.md) | Python3 | [코드](extra_120830_양꼬치/solution.py) |
+| 120829 | [각도기](extra_120829_각도기/README.md) | Python3 | [코드](extra_120829_각도기/solution.py) |
+| 120826 | [특정 문자 제거하기](extra_120826_특정_문자_제거하기/README.md) | Python3 | [코드](extra_120826_특정_문자_제거하기/solution.py) |
+| 120825 | [문자 반복 출력하기](extra_120825_문자_반복_출력하기/README.md) | Python3 | [코드](extra_120825_문자_반복_출력하기/solution.py) |
+| 120824 | [짝수 홀수 개수](extra_120824_짝수_홀수_개수/README.md) | Python3 | [코드](extra_120824_짝수_홀수_개수/solution.py) |
+| 120823 | [직각삼각형 출력하기](extra_120823_직각삼각형_출력하기/README.md) | Python3 | [코드](extra_120823_직각삼각형_출력하기/solution.py) |
+| 120822 | [뒤집힌 문자열](extra_120822_뒤집힌_문자열/README.md) | Python3 | [코드](extra_120822_뒤집힌_문자열/solution.py) |
+| 120821 | [배열 뒤집기](extra_120821_배열_뒤집기/README.md) | Python3 | [코드](extra_120821_배열_뒤집기/solution.py) |
+| 120820 | [나이 출력](extra_120820_나이_출력/README.md) | Python3 | [코드](extra_120820_나이_출력/solution.py) |
+| 120819 | [아이스 아메리카노](extra_120819_아이스_아메리카노/README.md) | Python3 | [코드](extra_120819_아이스_아메리카노/solution.py) |
+| 120818 | [옷가게 할인 받기](extra_120818_옷가게_할인_받기/README.md) | Python3 | [코드](extra_120818_옷가게_할인_받기/solution.py) |
+| 120817 | [배열의 평균값](extra_120817_배열의_평균값/README.md) | Python3 | [코드](extra_120817_배열의_평균값/solution.py) |
+| 120816 | [피자 나눠 먹기 (3)](extra_120816_피자_나눠_먹기_(3)/README.md) | Python3 | [코드](extra_120816_피자_나눠_먹기_(3)/solution.py) |
+| 120815 | [피자 나눠 먹기 (2)](extra_120815_피자_나눠_먹기_(2)/README.md) | Python3 | [코드](extra_120815_피자_나눠_먹기_(2)/solution.py) |
+| 120814 | [피자 나눠 먹기 (1)](extra_120814_피자_나눠_먹기_(1)/README.md) | Python3 | [코드](extra_120814_피자_나눠_먹기_(1)/solution.py) |
+| 120813 | [짝수는 싫어요](extra_120813_짝수는_싫어요/README.md) | Python3 | [코드](extra_120813_짝수는_싫어요/solution.py) |
+| 120812 | [최빈값 구하기](extra_120812_최빈값_구하기/README.md) | Python3 | [코드](extra_120812_최빈값_구하기/solution.py) |
+| 120811 | [중앙값 구하기](extra_120811_중앙값_구하기/README.md) | Python3 | [코드](extra_120811_중앙값_구하기/solution.py) |
+| 120810 | [나머지 구하기](extra_120810_나머지_구하기/README.md) | Python3 | [코드](extra_120810_나머지_구하기/solution.py) |
+| 120809 | [배열 두 배 만들기](extra_120809_배열_두_배_만들기/README.md) | Python3 | [코드](extra_120809_배열_두_배_만들기/solution.py) |
+| 120808 | [분수의 덧셈](extra_120808_분수의_덧셈/README.md) | Python3 | [코드](extra_120808_분수의_덧셈/solution.py) |
+| 120807 | [숫자 비교하기](extra_120807_숫자_비교하기/README.md) | Python3 | [코드](extra_120807_숫자_비교하기/solution.py) |
+| 120806 | [두 수의 나눗셈](extra_120806_두_수의_나눗셈/README.md) | Python3 | [코드](extra_120806_두_수의_나눗셈/solution.py) |
+| 120805 | [몫 구하기](extra_120805_몫_구하기/README.md) | Python3 | [코드](extra_120805_몫_구하기/solution.py) |
+| 120804 | [두 수의 곱 구하기](extra_120804_두_수의_곱_구하기/README.md) | Python3 | [코드](extra_120804_두_수의_곱_구하기/solution.py) |
+| 120803 | [두 수의 차 구하기](extra_120803_두_수의_차_구하기/README.md) | Python3 | [코드](extra_120803_두_수의_차_구하기/solution.py) |
+| 120802 | [두 수의 합 구하기](extra_120802_두_수의_합_구하기/README.md) | Python3 | [코드](extra_120802_두_수의_합_구하기/solution.py) |
+| 120585 | [머쓱이보다 키 큰 사람](extra_120585_머쓱이보다_키_큰_사람/README.md) | Python3 | [코드](extra_120585_머쓱이보다_키_큰_사람/solution.py) |
+| 120583 | [중복된 숫자 개수](extra_120583_중복된_숫자_개수/README.md) | Python3 | [코드](extra_120583_중복된_숫자_개수/solution.py) |

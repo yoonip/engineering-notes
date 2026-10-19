@@ -14,7 +14,7 @@ The number has 2–1000000 digits and 1≤k<length. Preserve relative order, rem
 
 Earlier digits dominate the resulting number. While deletions remain, remove smaller stack-tail digits before appending a larger digit; remove any leftover deletions from the end.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 같은 길이의 수는 첫 다른 자리로 대소가 정해집니다. 뒤의 큰 숫자를 앞으로 당길 수 있는데 작은 앞자리를 남기는 선택은 최적일 수 없습니다. 각 숫자는 한 번 들어가고 최대 한 번 나옵니다.
 

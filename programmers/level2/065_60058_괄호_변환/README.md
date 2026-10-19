@@ -14,7 +14,7 @@ p has even length 2–1000 and equal opening/closing counts. Return the result o
 
 Scan the opening-minus-closing balance and split at its first zero into the shortest balanced prefix u and suffix v. Preserve a valid u; otherwise wrap the converted v and flip the interior of u as required.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 가장 짧은 균형 접두부를 찾으므로 분할이 유일합니다. 빈 문자열을 기저로 두면 각 재귀 호출은 더 짧은 v에 공식 변환 규칙을 적용하므로 귀납적으로 요구한 결과를 만듭니다.
 

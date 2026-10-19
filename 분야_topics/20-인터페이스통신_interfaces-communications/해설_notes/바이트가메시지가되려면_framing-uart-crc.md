@@ -4,15 +4,15 @@
 
 ## 한국어
 
-### UART가 보내는 바이트와 프로그램의 메시지는 다르다
+### UART가 보내는 바이트와 프로그램의 메시지는 다릅니다
 
-UART로 `온도=25`라는 데이터를 보냈다고 해도 수신 함수가 이를 한 번에 돌려준다는 보장은 없다. 일부 바이트씩 나뉘거나 여러 메시지가 함께 도착할 수 있다. UART는 비트의 시작과 끝을 정하고, 애플리케이션 프레임은 메시지의 시작과 끝을 정한다. 전기적 신호와 상위 데이터의 경계를 나눠 생각해야 한다.
+UART로 `온도=25`라는 데이터를 보냈다고 해도 수신 함수가 이를 한 번에 돌려준다는 보장은 없습니다. 일부 바이트씩 나뉘거나 여러 메시지가 함께 도착할 수 있습니다. UART는 비트의 시작과 끝을 정하고, 애플리케이션 프레임은 메시지의 시작과 끝을 정합니다. 전기적 신호와 상위 데이터의 경계를 나눠 생각해야 합니다.
 
-8N1은 시작 비트 1개, 데이터 8비트, parity 없음, 정지 비트 1개다. 비트 시간을 $`1/B`$초라 하면 한 바이트의 전송 시간은 $`10/B`$초다. 쉬는 구간이 없다는 가정에서 $`115200`$ bit/s의 UART는 최대 $`11520`$ data byte/s를 전송한다. 메시지 헤더와 CRC, escape 바이트를 빼면 실제 데이터 처리율은 더 낮아진다. baud와 bit/s가 일반적으로 같은 뜻인 것은 아니지만, 여기서는 한 심벌에 한 비트를 보내는 UART를 다룬다. [TI UART configuration](https://software-dl.ti.com/C2000/docs/C2000_driverlib_api_guide/f28p65x/build/html/modules/uart.html)
+8N1은 시작 비트 1개, 데이터 8비트, parity 없음, 정지 비트 1개입니다. 비트 시간을 $`1/B`$초라 하면 한 바이트의 전송 시간은 $`10/B`$초입니다. 쉬는 구간이 없다는 가정에서 $`115200`$ bit/s의 UART는 최대 $`11520`$ data byte/s를 전송합니다. 메시지 헤더와 CRC, escape 바이트를 빼면 실제 데이터 처리율은 더 낮아집니다. baud와 bit/s가 일반적으로 같은 뜻인 것은 아니지만, 여기서는 한 심벌에 한 비트를 보내는 UART를 다룹니다. [TI UART configuration](https://software-dl.ti.com/C2000/docs/C2000_driverlib_api_guide/f28p65x/build/html/modules/uart.html)
 
 ### 경계 표시가 데이터 안에도 나오면?
 
-이 예제는 `0x7E`를 경계로 사용한다. 데이터나 CRC 안의 `0x7E`와 `0x7D`는 `0x7D` 뒤에 원래 바이트 XOR `0x20`을 보내는 방식으로 바꾼다. 수신기는 escape 상태를 기억해 원래 바이트를 복원한다. 한 바이트씩 들어와도 이 상태를 유지하므로 분할 수신을 처리할 수 있다. 이 방식은 RFC1662의 octet stuffing과 FCS 계산을 참고한 작은 애플리케이션 프레임이며, 주소·제어·프로토콜 필드나 ACCM 협상 등을 갖춘 완전한 PPP 구현은 아니다. [RFC1662 §4·Appendix C](https://www.rfc-editor.org/rfc/rfc1662.html)
+이 예제는 `0x7E`를 경계로 사용합니다. 데이터나 CRC 안의 `0x7E`와 `0x7D`는 `0x7D` 뒤에 원래 바이트 XOR `0x20`을 보내는 방식으로 바꿉니다. 수신기는 escape 상태를 기억해 원래 바이트를 복원합니다. 한 바이트씩 들어와도 이 상태를 유지하므로 분할 수신을 처리할 수 있습니다. 이 방식은 RFC1662의 octet stuffing과 FCS 계산을 참고한 작은 애플리케이션 프레임이며, 주소·제어·프로토콜 필드나 ACCM 협상 등을 갖춘 완전한 PPP 구현은 아닙니다. [RFC1662 §4·Appendix C](https://www.rfc-editor.org/rfc/rfc1662.html)
 
 ![바이트가 메시지가 되려면: UART, 프레이밍과 CRC — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/framing-uart-crc.png)
 
@@ -30,15 +30,15 @@ UART로 `온도=25`라는 데이터를 보냈다고 해도 수신 함수가 이�
 | 8 | COLLECT | COLLECT | 0x7E에서 검사·초기화 / Validate and restart |
 | 9 | ESCAPE | COLLECT | 0x7E에서 폐기·초기화 / Abort and restart |
 
-직접 작성한 상태도다. `DROP` 상태는 경계가 나올 때까지 모든 내용을 버린다. 입력이 잘못되어도 저장 공간을 끝없이 늘리지 않는다. 경계 직전이 escape이면 미완성 프레임으로 버린다. 전송 중단 후의 timeout은 이 바이트 모델 밖에서 시간 기준을 정해 추가할 수 있다.
+직접 작성한 상태도입니다. `DROP` 상태는 경계가 나올 때까지 모든 내용을 버립니다. 입력이 잘못되어도 저장 공간을 끝없이 늘리지 않습니다. 경계 직전이 escape이면 미완성 프레임으로 버립니다. 전송 중단 후의 timeout은 이 바이트 모델 밖에서 시간 기준을 정해 추가할 수 있습니다.
 
 ### CRC를 다항식으로 보기
 
-CRC는 비트열을 $`GF(2)`$ 위의 다항식으로 보고, 정한 생성 다항식으로 나눈 나머지를 이용한다. 계수는 0 또는 1이고 덧셈·뺄셈은 XOR다. 여기서는
+CRC는 비트열을 $`GF(2)`$ 위의 다항식으로 보고, 정한 생성 다항식으로 나눈 나머지를 이용합니다. 계수는 0 또는 1이고 덧셈·뺄셈은 XOR입니다. 여기서는
 
 $$G(x)=x^{16}+x^{12}+x^5+1$$
 
-을 사용한다. 다항식만 같다고 CRC가 같은 것은 아니다. 입력 비트 순서, 초기값, 최종 XOR와 전송 순서까지 맞아야 한다.
+을 사용합니다. 다항식만 같다고 CRC가 같은 것은 아닙니다. 입력 비트 순서, 초기값, 최종 XOR와 전송 순서까지 맞아야 합니다.
 
 | 항목 | 이 예제의 CRC-16/X-25, CRC-16/IBM-SDLC 설정 |
 | --- | --- |
@@ -50,17 +50,17 @@ $$G(x)=x^{16}+x^{12}+x^5+1$$
 | `123456789`의 결과 | `0x906E` |
 | payload+FCS의 raw residue | 최종 XOR 전 `0xF0B8` |
 
-구현의 오른쪽 시프트는 다항식 나눗셈을 비트 순서에 맞춰 수행한다. 매 바이트에 8번 반복하므로 길이 $`N`$에서 $`O(N)`$ 시간, CRC 상태는 $`O(1)`$ 공간이다. 처리율이 부족하면 같은 규칙으로 만든 lookup table이나 하드웨어 CRC를 사용할 수 있지만, 장치의 reflection과 초기·최종 처리 설정까지 비교해야 한다.
+구현의 오른쪽 시프트는 다항식 나눗셈을 비트 순서에 맞춰 수행합니다. 매 바이트에 8번 반복하므로 길이 $`N`$에서 $`O(N)`$ 시간, CRC 상태는 $`O(1)`$ 공간입니다. 처리율이 부족하면 같은 규칙으로 만든 lookup table이나 하드웨어 CRC를 사용할 수 있지만, 장치의 reflection과 초기·최종 처리 설정까지 비교해야 합니다.
 
 ### 검출과 보안의 경계
 
-CRC는 잡음이나 전송 오류의 검출 수단이다. 공격자는 데이터를 바꾸고 CRC도 다시 계산할 수 있으므로 인증 수단이 아니다. 검출되지 않는 오류도 존재한다. 예를 들어 코드 다항식에 $`G(x)`$의 배수인 오류를 XOR하면 나머지가 변하지 않는다. 따라서 “CRC가 맞으니 내용이 반드시 정확하다”는 결론은 성립하지 않는다. [보안과 신뢰성의 경계](../../38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md)
+CRC는 잡음이나 전송 오류의 검출 수단입니다. 공격자는 데이터를 바꾸고 CRC도 다시 계산할 수 있으므로 인증 수단이 아닙니다. 검출되지 않는 오류도 존재합니다. 예를 들어 코드 다항식에 $`G(x)`$의 배수인 오류를 XOR하면 나머지가 변하지 않습니다. 따라서 “CRC가 맞으니 내용이 반드시 정확하다”는 결론은 성립하지 않습니다. [보안과 신뢰성의 경계](../../38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md)
 
 ### 구현과 검증
 
-프레임의 최대 payload를 $`M`$으로 제한하면 수신 내부 버퍼는 CRC를 포함해 $`M+2`$ 바이트다. 최악의 escape 확장까지 포함한 송신 크기는 $`2(M+2)+2`$ 바이트 이하이며, 8N1 전송 시간은 그 바이트 수에 $`10/B`$를 곱한 값이다. `FrameParser.feed()`는 결과를 순차적으로 내보내는 generator여서 반환 프레임을 내부에 누적하지 않는다. 호출자가 결과를 무제한 모으면 그 공간은 별도로 늘어난다.
+프레임의 최대 payload를 $`M`$으로 제한하면 수신 내부 버퍼는 CRC를 포함해 $`M+2`$ 바이트입니다. 최악의 escape 확장까지 포함한 송신 크기는 $`2(M+2)+2`$ 바이트 이하이며, 8N1 전송 시간은 그 바이트 수에 $`10/B`$를 곱한 값입니다. `FrameParser.feed()`는 결과를 순차적으로 내보내는 generator여서 반환 프레임을 내부에 누적하지 않습니다. 호출자가 결과를 무제한 모으면 그 공간은 별도로 늘어납니다.
 
-테스트는 `123456789` 벡터와 RFC1662 residue를 확인한다. CRC를 정방향 `binascii.crc_hqx()`와 비트 반전으로 독립 계산해 비교하고, 모든 256종 바이트, 빈 메시지, 다양한 chunk 크기를 검사한다. 80개 단일 비트 오류, 10,000바이트 초과 프레임의 저장 상한, 다음 정상 경계에서 복구, escape 중단도 확인한다. 테스트는 특정 UART의 baud 오차·배선·FIFO overrun을 측정하지 않는다. [실행 안내](../../../예제_examples/공학기초_foundations/systems/README.md)
+테스트는 `123456789` 벡터와 RFC1662 residue를 확인합니다. CRC를 정방향 `binascii.crc_hqx()`와 비트 반전으로 독립 계산해 비교하고, 모든 256종 바이트, 빈 메시지, 다양한 chunk 크기를 검사합니다. 80개 단일 비트 오류, 10,000바이트 초과 프레임의 저장 상한, 다음 정상 경계에서 복구, escape 중단도 확인합니다. 테스트는 특정 UART의 baud 오차·배선·FIFO overrun을 측정하지 않습니다. [실행 안내](../../../예제_examples/공학기초_foundations/systems/README.md)
 
 ## English
 
@@ -110,4 +110,4 @@ Tests check the `123456789` value and RFC1662 residue, and independently compare
 
 - TI UART API: 데이터 폭·parity·정지 비트 구성 / data width, parity, and stop-bit configuration.
 - RFC1662 §4·Appendix C: escape 방식·생성 다항식·FCS 잔여값 / escaping, generator, and FCS residue.
-- 식의 처리율·최대 길이는 프레임 정의에서 직접 계산했으며 CRC는 별도 구현과 비교했다. / Throughput and maximum size follow from the defined format; CRC is compared against an independent implementation.
+- 식의 처리율·최대 길이는 프레임 정의에서 직접 계산했으며 CRC는 별도 구현과 비교했습니다. / Throughput and maximum size follow from the defined format; CRC is compared against an independent implementation.

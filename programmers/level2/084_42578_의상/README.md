@@ -14,7 +14,7 @@ There are 1–30 uniquely named garments; names/categories have 1–20 lowercase
 
 Count clothes per category. Each category offers count+1 choices, including wearing nothing from it. Multiply these independent choices and subtract the all-empty outfit.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 종류마다 최대 하나만 선택하므로 각 의상은 종류별 독립 선택과 일대일 대응합니다. 곱셈 원리로 모든 조합을 세고 금지된 공집합 하나만 제외하면 됩니다.
 

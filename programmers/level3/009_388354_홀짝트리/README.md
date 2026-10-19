@@ -14,7 +14,7 @@ There are 1–400000 distinct node labels in [1,1000000] and 1–1000000 edges f
 
 A root has degree-many children; every other node has degree−1 children. Count nodes whose number parity matches degree parity in each component. Exactly one match permits a normal parity tree; exactly one mismatch permits a reversed tree.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 루트로 고른 한 노드만 번호·차수의 일치 성질이 자식 수와 그대로 연결되고, 나머지는 뒤집힙니다. 따라서 원하는 종류에 해당하는 유일한 예외 노드를 루트로 고를 수 있어야 하고 그 조건이 충분합니다.
 

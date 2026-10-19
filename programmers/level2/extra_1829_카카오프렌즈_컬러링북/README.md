@@ -14,7 +14,7 @@ Both dimensions are 1–100 and colors are in [0,2³¹−1]. Zero is empty; only
 
 Start a new region at every unvisited nonzero cell. Traverse equal-colored orthogonal neighbors with DFS and count the area. Diagonal-only contact is not connected.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 DFS는 시작점에서 같은 색으로 연결된 칸을 모두, 그리고 그 칸만 방문합니다. 방문 시 표시하므로 영역을 중복 세지 않으며 각 영역의 크기 중 최댓값을 얻습니다.
 

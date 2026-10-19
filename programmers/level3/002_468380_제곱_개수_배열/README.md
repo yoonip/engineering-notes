@@ -14,7 +14,7 @@ Array length and values are each 1–100000; the expanded array’s total sum is
 
 Do not materialize the array where value v repeats v times. Prefix lengths and weighted sums support prefix queries. While both window endpoints remain inside fixed runs, moving the window changes its sum by a constant slope.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 창을 한 칸 옮길 때 빠지는 값과 들어오는 값은 묶음 경계 전까지 일정합니다. 따라서 해당 구간에서 target=current+slope·offset의 정수해를 세면 모든 시작 위치를 중복 없이 계산합니다.
 

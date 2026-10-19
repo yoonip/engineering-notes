@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "timeout_seconds": 0,
+  "observations": [
+    {
+      "mode": "delete",
+      "reader_before": 10,
+      "writer_commit": "SQLITE_BUSY",
+      "reader_same_transaction": 10,
+      "reader_new_transaction": 10
+    },
+    {
+      "mode": "wal",
+      "reader_before": 10,
+      "writer_commit": "committed",
+      "reader_same_transaction": 10,
+      "reader_new_transaction": 20
+    }
+  ]
+}

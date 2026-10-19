@@ -14,7 +14,7 @@ brown is 8–5000 and yellow is 1–2000000. A one-cell brown border surrounds t
 
 Enumerate factor pairs of brown+yellow. Removing the one-cell border must leave exactly yellow interior cells. Since width is at least height, test heights only up to the square root.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 정답의 가로·세로는 전체 넓이의 약수 쌍이며 내부 넓이는 (w−2)(h−2)입니다. 모든 가능한 세로를 검사하므로 조건을 만족하는 정답 쌍을 놓치지 않습니다.
 

@@ -1,0 +1,277 @@
+{
+  "scope": "Offline educational arithmetic, not inference or training of any released model",
+  "environment": {
+    "python": "3.12.14",
+    "implementation": "CPython",
+    "platform": "win32"
+  },
+  "script_sha256": "7d9beb87b6bbb8d49f11a140ce9dc2eef509828d8c33964e08f4da0738081721",
+  "memory_estimates": {
+    "configuration_checked": "2026-10-19",
+    "configurations": [
+      {
+        "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+        "layers": 28,
+        "kv_heads": 2,
+        "head_dim": 128,
+        "parameters_approx": 1500000000,
+        "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/raw/main/config.json"
+      },
+      {
+        "id": "Qwen/Qwen3-0.6B",
+        "layers": 28,
+        "kv_heads": 8,
+        "head_dim": 128,
+        "parameters_approx": 600000000,
+        "source": "https://huggingface.co/Qwen/Qwen3-0.6B/raw/main/config.json"
+      }
+    ],
+    "rows": [
+      {
+        "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+        "tokens": 4096,
+        "weight_bf16_GiB_approx": 2.793968,
+        "weight_int4_GiB_ideal_approx": 0.698492,
+        "kv_bf16_GiB": 0.109375
+      },
+      {
+        "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+        "tokens": 16384,
+        "weight_bf16_GiB_approx": 2.793968,
+        "weight_int4_GiB_ideal_approx": 0.698492,
+        "kv_bf16_GiB": 0.4375
+      },
+      {
+        "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+        "tokens": 32768,
+        "weight_bf16_GiB_approx": 2.793968,
+        "weight_int4_GiB_ideal_approx": 0.698492,
+        "kv_bf16_GiB": 0.875
+      },
+      {
+        "id": "Qwen/Qwen3-0.6B",
+        "tokens": 4096,
+        "weight_bf16_GiB_approx": 1.117587,
+        "weight_int4_GiB_ideal_approx": 0.279397,
+        "kv_bf16_GiB": 0.4375
+      },
+      {
+        "id": "Qwen/Qwen3-0.6B",
+        "tokens": 16384,
+        "weight_bf16_GiB_approx": 1.117587,
+        "weight_int4_GiB_ideal_approx": 0.279397,
+        "kv_bf16_GiB": 1.75
+      },
+      {
+        "id": "Qwen/Qwen3-0.6B",
+        "tokens": 32768,
+        "weight_bf16_GiB_approx": 1.117587,
+        "weight_int4_GiB_ideal_approx": 0.279397,
+        "kv_bf16_GiB": 3.5
+      }
+    ]
+  },
+  "recursive_state": {
+    "input_x": 1.0,
+    "inner_steps": 3,
+    "rows": [
+      {
+        "latent_gain": 0.5,
+        "outer_step": 1,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 4,
+        "y": 0.109375,
+        "z": 0.4375
+      },
+      {
+        "latent_gain": 0.5,
+        "outer_step": 2,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 8,
+        "y": 0.189697266,
+        "z": 0.540039062
+      },
+      {
+        "latent_gain": 0.5,
+        "outer_step": 3,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 12,
+        "y": 0.241847992,
+        "z": 0.587997437
+      },
+      {
+        "latent_gain": 0.5,
+        "outer_step": 4,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 16,
+        "y": 0.27512604,
+        "z": 0.616808176
+      },
+      {
+        "latent_gain": 0.5,
+        "outer_step": 5,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 20,
+        "y": 0.296305186,
+        "z": 0.634968664
+      },
+      {
+        "latent_gain": 0.5,
+        "outer_step": 6,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 24,
+        "y": 0.309778744,
+        "z": 0.646504602
+      },
+      {
+        "latent_gain": 0.5,
+        "outer_step": 7,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 28,
+        "y": 0.318349691,
+        "z": 0.653841276
+      },
+      {
+        "latent_gain": 0.5,
+        "outer_step": 8,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 32,
+        "y": 0.323801883,
+        "z": 0.658508149
+      },
+      {
+        "latent_gain": 1.2,
+        "outer_step": 1,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 4,
+        "y": 0.2275,
+        "z": 0.91
+      },
+      {
+        "latent_gain": 1.2,
+        "outer_step": 2,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 8,
+        "y": 0.78612625,
+        "z": 2.689505
+      },
+      {
+        "latent_gain": 1.2,
+        "outer_step": 3,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 12,
+        "y": 1.961273007,
+        "z": 6.272839527
+      },
+      {
+        "latent_gain": 1.2,
+        "outer_step": 4,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 16,
+        "y": 4.364192788,
+        "z": 13.53422514
+      },
+      {
+        "latent_gain": 1.2,
+        "outer_step": 5,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 20,
+        "y": 9.249235514,
+        "z": 28.268556479
+      },
+      {
+        "latent_gain": 1.2,
+        "outer_step": 6,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 24,
+        "y": 19.168335235,
+        "z": 58.174869913
+      },
+      {
+        "latent_gain": 1.2,
+        "outer_step": 7,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 28,
+        "y": 39.304007686,
+        "z": 118.879360274
+      },
+      {
+        "latent_gain": 1.2,
+        "outer_step": 8,
+        "shared_scalar_coefficients": 4,
+        "state_updates": 32,
+        "y": 80.17704923,
+        "z": 242.100181549
+      }
+    ]
+  },
+  "teacher_student": {
+    "seed": "deterministic; no random number generator",
+    "rows": [
+      {
+        "target": "teacher_argmax",
+        "train_points": 7,
+        "held_out_points": 40,
+        "gradient_steps": 1200,
+        "learning_rate": 0.2,
+        "mean_KL_teacher_to_student": 0.379719331,
+        "argmax_agreement": 0.9,
+        "weights": [
+          [
+            -1.50926825,
+            -6.50328352
+          ],
+          [
+            3.018536499,
+            -0.0
+          ],
+          [
+            -1.50926825,
+            6.50328352
+          ]
+        ]
+      },
+      {
+        "target": "teacher_probabilities",
+        "train_points": 7,
+        "held_out_points": 40,
+        "gradient_steps": 1200,
+        "learning_rate": 0.2,
+        "mean_KL_teacher_to_student": 1e-09,
+        "argmax_agreement": 1.0,
+        "weights": [
+          [
+            -0.333305547,
+            -1.9998725
+          ],
+          [
+            0.666611095,
+            0.0
+          ],
+          [
+            -0.333305547,
+            1.9998725
+          ]
+        ]
+      }
+    ]
+  },
+  "uniform_quantization": {
+    "values": 64,
+    "reference_dot": 2.955841745,
+    "rows": [
+      {
+        "bits": 4,
+        "ideal_payload_bytes": 32,
+        "max_weight_error": 0.066000616,
+        "dot_absolute_error": 0.263219193
+      },
+      {
+        "bits": 8,
+        "ideal_payload_bytes": 64,
+        "max_weight_error": 0.003722161,
+        "dot_absolute_error": 0.006814564
+      }
+    ]
+  }
+}

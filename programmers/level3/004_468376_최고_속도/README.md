@@ -14,7 +14,7 @@ There are 2–100 cities and 1–1000 axis-aligned, even-length roads with midpo
 
 Split roads at camera locations and merge pieces connected through camera-free intersections into free-travel regions. On the remaining camera graph, maximize the minimum camera limit along the route.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 카메라가 없는 연결 구역에서는 제한 없이 이동할 수 있으므로 압축해도 가능한 경로와 통과 카메라는 같습니다. max-min 다익스트라는 경로 병목값이 가장 큰 상태를 먼저 확정해 목적지별 최댓값을 구합니다.
 

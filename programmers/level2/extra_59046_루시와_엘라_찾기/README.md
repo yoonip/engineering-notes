@@ -16,7 +16,7 @@ Target names are Lucy,Ella,Pickle,Rogan,Sabrina,Mitty. Output ID, name and sex s
 
 Select animals whose complete name equals one of the six listed names. This is exact-name membership, not substring matching. Order by animal ID.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 IN은 나열된 값과의 동등 비교를 OR로 연결한 조건과 같습니다. 정확히 대상 이름인 행만 남습니다.
 

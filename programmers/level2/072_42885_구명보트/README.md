@@ -14,7 +14,7 @@ There are 1–50000 people; weights and capacity are in [40,240]. Each boat carr
 
 Sort weights and always place the heaviest remaining person. Pair them with the lightest when possible; otherwise send the heaviest alone.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 가장 가벼운 사람과도 한도를 넘으면 무거운 사람은 누구와도 함께 탈 수 없습니다. 함께 탈 수 있으면 가벼운 사람과 짝지어도 다른 최적 해의 짝을 교환해 보트 수를 늘리지 않을 수 있습니다.
 

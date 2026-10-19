@@ -14,7 +14,7 @@ At least two space-separated integers are provided. Return the numerical minimum
 
 Parse space-separated values as integers, then find the minimum and maximum. Comparing raw strings would misorder negative or differently sized numbers.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 정수 비교는 문제의 수 크기와 일치합니다. 모든 입력에 min·max를 적용하고 작은 값부터 문자열로 출력하므로 요구 형식을 만족합니다.
 

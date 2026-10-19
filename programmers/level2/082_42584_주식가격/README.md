@@ -14,7 +14,7 @@ There are 2–100000 prices in [1,10000]. Count seconds until the first lower pr
 
 Keep indices whose first price drop is still unknown in a stack. A lower current price resolves those entries; unresolved indices last until the final time.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 스택에 남아 있던 가격은 그 이후 지금 전까지 더 낮은 값을 만나지 않았습니다. 따라서 처음 작아진 현재 인덱스가 정확한 종료 시점입니다. 각 인덱스는 한 번 들어가고 한 번 이하로 나옵니다.
 

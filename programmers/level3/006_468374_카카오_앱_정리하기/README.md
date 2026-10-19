@@ -14,7 +14,7 @@ Both board dimensions are 2–10, with consecutive app IDs from one and square a
 
 Represent apps by top-left coordinate and square size. Normalize the movement direction and build minimum-spacing constraints between apps that can push each other. Crossing a boundary jumps to the next cycle start; propagate the necessary movements with a queue.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 이동축에 수직인 구간이 겹치는 앱의 앞뒤 순서는 원형 격자에서도 유지됩니다. 간격 제약을 위반한 앱만 앞으로 밀며 최소 필요 좌표로 갱신하므로 충돌을 해소하는 최소 밀림 상태를 얻습니다.
 

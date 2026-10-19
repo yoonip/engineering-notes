@@ -16,7 +16,7 @@ Lengths at most 10cm are NULL and count as ten in the average. Output total fish
 
 Group by species to count all fish and obtain maximum length. Replace NULL lengths by 10cm only for the average and keep groups averaging at least 33cm. Short fish still belong in the denominator.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 AVG는 원래 NULL을 무시하므로 먼저 10으로 바꿔야 문제의 평균입니다. MAX는 실제 측정 최대 길이이고 qualifying 그룹에는 33 이상 값이 반드시 있어 NULL 보정이 최대값을 바꾸지 않습니다.
 

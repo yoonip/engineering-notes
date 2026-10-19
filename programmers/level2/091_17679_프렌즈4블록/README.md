@@ -14,7 +14,7 @@ Both board dimensions are 2–30. Simultaneously remove all equal-letter 2×2 bl
 
 Collect every matching 2×2 block before deleting anything, since immediate deletion could miss overlaps. Remove them simultaneously, compact each column downward and repeat.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 현재 판에서 지워야 할 칸의 합집합을 정확히 모아 중복 없이 셉니다. 열별 압축은 남은 블록의 위아래 순서를 유지하므로 중력 규칙과 같습니다. 지울 칸이 없으면 종료 상태입니다.
 

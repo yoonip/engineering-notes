@@ -14,7 +14,7 @@ There are 2–200 columns with depths 1–100000. money is at most the depth sum
 
 Choosing a column first always pays its excavation cost. Since the treasure may lie on either side, add the larger remaining cost. Interval DP selects the pivot minimizing this worst-case expense.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 구간 [l,r)의 최적 보장 비용은 min_p(depth[p]+max(dp[l,p],dp[p+1,r]))입니다. 두 응답 구간은 더 짧으므로 길이순 DP가 최적 전략을 만듭니다. 주어진 예산은 이 보장 비용 이상입니다.
 

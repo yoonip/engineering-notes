@@ -14,7 +14,7 @@ n is a power of two from 2¹ through 2²⁰; a,b are distinct indices in [1,n]. 
 
 After one round, a player’s next bracket number is (number+1)//2. Repeat until both numbers coincide and count the rounds.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 같은 다음 라운드 번호를 가진 두 선수는 바로 그 라운드에서 만납니다. 번호를 반복해서 부모 대진으로 바꾸면 처음 같아지는 깊이가 만나는 라운드입니다.
 

@@ -14,7 +14,7 @@ Both arrays have equal length 1–1000 and entries in [1,1000]. Pair each entry 
 
 Sort one array ascending and the other descending, then multiply corresponding entries. Pairing large values with small ones minimizes the sum.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 a≤b, x≤y일 때 ax+by−(ay+bx)=(b−a)(y−x)≥0입니다. 같은 방향의 짝을 반대로 교환하면 합이 늘지 않으므로 반대 정렬이 최솟값입니다.
 

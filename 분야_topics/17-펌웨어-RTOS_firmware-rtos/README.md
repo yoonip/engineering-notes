@@ -2,21 +2,21 @@
 
 [전체 목차](../../분야별목차_CATALOG.md) · [처음으로](../../README.md)
 
-Firmware는 장치의 부팅과 주변장치 제어, 통신, 동작 상태를 담당하는 소프트웨어다. Bare-metal 프로그램은 운영체제 없이 동작하고, RTOS는 태스크 스케줄링과 동기화 같은 실행 기반을 제공한다.
+Firmware는 장치의 부팅과 주변장치 제어, 통신, 동작 상태를 담당하는 소프트웨어입니다. Bare-metal 프로그램은 운영체제 없이 동작하고, RTOS는 태스크 스케줄링과 동기화 같은 실행 기반을 제공합니다.
 
 ## 리셋에서 main까지
 
-시작 코드는 스택과 메모리 영역을 준비하고 초기화된 데이터 복사와 BSS 초기화 등을 수행한다. 링커 스크립트는 코드·상수·데이터를 flash·RAM의 어느 영역에 둘지 정한다. 부트로더는 다음 프로그램을 검증하거나 선택해 실행하는 역할을 할 수 있다.
+시작 코드는 스택과 메모리 영역을 준비하고 초기화된 데이터 복사와 BSS 초기화 등을 수행합니다. 링커 스크립트는 코드·상수·데이터를 flash·RAM의 어느 영역에 둘지 정합니다. 부트로더는 다음 프로그램을 검증하거나 선택해 실행하는 역할을 할 수 있습니다.
 
 ## 주변장치와 시간
 
-GPIO는 디지털 입출력, timer는 시간과 이벤트 계수, ADC는 아날로그 입력 변환, PWM은 주기와 듀티비로 출력 파형을 만든다. 인터럽트는 이벤트에 반응하고 DMA는 데이터 전송의 CPU 부담을 줄인다. 드라이버는 레지스터 제어를 상위 코드에서 쓸 수 있는 인터페이스로 묶는다.
+GPIO는 디지털 입출력, timer는 시간과 이벤트 계수, ADC는 아날로그 입력 변환, PWM은 주기와 듀티비로 출력 파형을 만듭니다. 인터럽트는 이벤트에 반응하고 DMA는 데이터 전송의 CPU 부담을 줄입니다. 드라이버는 레지스터 제어를 상위 코드에서 쓸 수 있는 인터페이스로 묶습니다.
 
 ## RTOS의 동시성
 
-FreeRTOS·Zephyr·ThreadX·RT-Thread는 임베디드 실행 환경에서 쓰인다. 태스크·큐·세마포어·뮤텍스는 실행과 데이터 전달을 구성한다. 실시간 시스템에서는 평균 속도와 함께 마감시간 충족 여부와 최악 지연을 살펴본다. 우선순위 역전은 낮은 우선순위 태스크가 가진 자원을 높은 우선순위 태스크가 기다리며 발생할 수 있다.
+FreeRTOS·Zephyr·ThreadX·RT-Thread는 임베디드 실행 환경에서 쓰입니다. 태스크·큐·세마포어·뮤텍스는 실행과 데이터 전달을 구성합니다. 실시간 시스템에서는 평균 속도와 함께 마감시간 충족 여부와 최악 지연을 살펴봅니다. 우선순위 역전은 낮은 우선순위 태스크가 가진 자원을 높은 우선순위 태스크가 기다리며 발생할 수 있습니다.
 
-STM32·ESP32·Nordic nRF·NXP·TI·Microchip·Renesas·RP2040/RP2350은 MCU를 접하는 여러 생태계다. 코어 종류가 같아도 주변장치와 메모리 맵은 제조사·제품별로 다르다.
+STM32·ESP32·Nordic nRF·NXP·TI·Microchip·Renesas·RP2040/RP2350은 MCU를 접하는 여러 생태계입니다. 코어 종류가 같아도 주변장치와 메모리 맵은 제조사·제품별로 다릅니다.
 
 ## 관련 기술
 
@@ -28,9 +28,9 @@ STM32, ESP32/ESP-IDF, Nordic nRF, NXP, TI, Microchip AVR/PIC/SAM, Renesas, RP204
 
 ## 시작 코드와 메모리 배치
 
-펌웨어는 CPU가 실행하는 소프트웨어이며, 주변장치와 보드의 동작을 제어한다. 컴파일러와 어셈블러가 만든 목적 파일을 링커가 연결하면 ELF가 생성된다. ELF에는 실행 코드와 데이터의 배치 정보, 심볼과 디버그 정보가 포함될 수 있다.
+펌웨어는 CPU가 실행하는 소프트웨어이며, 주변장치와 보드의 동작을 제어합니다. 컴파일러와 어셈블러가 만든 목적 파일을 링커가 연결하면 ELF가 생성됩니다. ELF에는 실행 코드와 데이터의 배치 정보, 심볼과 디버그 정보가 포함될 수 있습니다.
 
-일반적인 Cortex-M 시작 코드에서는 벡터 테이블의 초기 스택 포인터와 Reset Handler 주소를 이용한다. Reset Handler는 `.data`의 초기값을 RAM으로 복사하고 `.bss`를 0으로 채운 뒤 `main()`을 호출한다. 링커 스크립트는 Flash와 RAM의 주소·크기, 각 섹션의 배치를 지정한다.
+일반적인 Cortex-M 시작 코드에서는 벡터 테이블의 초기 스택 포인터와 Reset Handler 주소를 이용합니다. Reset Handler는 `.data`의 초기값을 RAM으로 복사하고 `.bss`를 0으로 채운 뒤 `main()`을 호출합니다. 링커 스크립트는 Flash와 RAM의 주소·크기, 각 섹션의 배치를 지정합니다.
 
 | 영역 | 내용 |
 | --- | --- |
@@ -41,16 +41,16 @@ STM32, ESP32/ESP-IDF, Nordic nRF, NXP, TI, Microchip AVR/PIC/SAM, Renesas, RP204
 
 ## 인터럽트·DMA·FreeRTOS
 
-인터럽트는 이벤트에 따라 CPU의 실행 흐름을 처리 함수로 넘긴다. DMA는 설정한 규칙에 따라 주변장치와 메모리 사이의 데이터를 전송한다. CPU와 인터럽트·DMA가 데이터를 공유하면 버퍼 소유권, 갱신 시점과 캐시 상태도 함께 다룬다.
+인터럽트는 이벤트에 따라 CPU의 실행 흐름을 처리 함수로 넘깁니다. DMA는 설정한 규칙에 따라 주변장치와 메모리 사이의 데이터를 전송합니다. CPU와 인터럽트·DMA가 데이터를 공유하면 버퍼 소유권, 갱신 시점과 캐시 상태도 함께 다룹니다.
 
-RTOS는 작업을 task로 나누고 우선순위에 따라 실행을 관리한다. queue는 작업 사이의 데이터를 전달하고, mutex는 공유 자원에 대한 동시 접근을 조정한다. ESP32 예제에서는 UART 수신 루프가 명령을 파싱해 queue에 넣고, worker task가 메모리 검사와 연산 signature를 계산해 결과를 반환한다. 같은 sequence의 재요청에는 저장한 결과를 반환하며, 출력은 mutex로 보호한다. [Espressif FreeRTOS 문서](https://docs.espressif.com/projects/esp-idf/en/v5.1/esp32/api-guides/freertos-smp.html)
+RTOS는 작업을 task로 나누고 우선순위에 따라 실행을 관리합니다. queue는 작업 사이의 데이터를 전달하고, mutex는 공유 자원에 대한 동시 접근을 조정합니다. ESP32 예제에서는 UART 수신 루프가 명령을 파싱해 queue에 넣고, worker task가 메모리 검사와 연산 signature를 계산해 결과를 반환합니다. 같은 sequence의 재요청에는 저장한 결과를 반환하며, 출력은 mutex로 보호합니다. [Espressif FreeRTOS 문서](https://docs.espressif.com/projects/esp-idf/en/v5.1/esp32/api-guides/freertos-smp.html)
 
-`volatile`은 외부에서 값이 바뀔 수 있는 대상에 대한 접근이 최적화로 제거되거나 이전 값으로 대체되는 것을 제한한다. 원자성, 실행 흐름 사이의 동기화와 DMA·캐시 일관성은 별도로 다룬다.
+`volatile`은 외부에서 값이 바뀔 수 있는 대상에 대한 접근이 최적화로 제거되거나 이전 값으로 대체되는 것을 제한합니다. 원자성, 실행 흐름 사이의 동기화와 DMA·캐시 일관성은 별도로 다룹니다.
 
 
 ## 개념·유도·모델·검증
 
-[기초부터 읽기](../../문서_docs/공학기초_FOUNDATIONS.md)
+[기초부터 읽기](../../공학기초_foundations/README.md)
 
 - [CPU와 장치가 같은 데이터를 다룰 때: MMIO, 인터럽트, DMA](해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md)
 
@@ -89,7 +89,7 @@ In the ESP32 example, a UART receive loop parses commands and sends them to a qu
 
 ### Concepts, derivations, models, and verification
 
-[Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
+[Foundations reading guide](../../공학기초_foundations/README.md#english)
 
 - [MMIO, interrupts, DMA and cache ownership](해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md#english)
 

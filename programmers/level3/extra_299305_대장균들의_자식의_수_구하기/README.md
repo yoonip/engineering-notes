@@ -16,7 +16,7 @@ Root PARENT_ID values are NULL. Output each ID and its number of direct children
 
 Self-join the bacteria table in parent and child roles. LEFT JOIN retains individuals without children, and COUNT(child.ID) counts only actual children.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 자식이 없으면 LEFT JOIN이 만든 확장 행에서 자식 ID는 NULL입니다. COUNT(c.ID)는 이를 0으로 세지만 COUNT(*)는 1로 세므로 바꾸면 안 됩니다.
 

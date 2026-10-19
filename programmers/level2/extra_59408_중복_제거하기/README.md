@@ -16,7 +16,7 @@ NAME may be NULL and duplicated. Return one count of distinct non-NULL names.
 
 Count distinct present names. COUNT(DISTINCT NAME) ignores NULL and counts each repeated name once.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 DISTINCT가 중복 이름을 하나로 묶고 COUNT(열)이 NULL을 제외하므로 두 요구 조건을 함께 만족합니다.
 

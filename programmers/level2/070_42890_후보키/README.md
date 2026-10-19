@@ -14,7 +14,7 @@ There are 1–20 distinct rows and 1–8 columns; cell strings have 1–8 lowerc
 
 Inspect column combinations in increasing size. Skip any combination containing an existing candidate key, then test uniqueness using tuples of the selected values.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 작은 조합부터 찾으므로 새 조합에 포함될 수 있는 더 작은 키는 이미 검사했습니다. 그 키를 포함하지 않고 행들을 모두 구별하는 조합만 채택하므로 유일성과 최소성이 함께 성립합니다.
 

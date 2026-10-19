@@ -14,7 +14,7 @@ There are 1–500 U/D/R/L commands. Start at (0,0), remain in [−5,5] on both a
 
 Record edges rather than visited points. Sorting the two endpoints gives the same key for a move and its reverse. Ignore commands that would leave the grid.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 각 유효한 이동은 정확히 하나의 무방향 길에 대응합니다. 같은 길을 왕복해도 정렬된 키가 같으므로 집합의 크기는 처음 방문한 길의 수와 같습니다.
 

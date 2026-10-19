@@ -2,17 +2,17 @@
 
 [전체 목차](../../분야별목차_CATALOG.md) · [처음으로](../../README.md)
 
-센서는 온도·압력·빛·가속도·전류 같은 물리량을 전기적 신호로 바꾼다. 측정 시스템은 센서뿐 아니라 구동·증폭·필터·변환기·시간 기준·보정 과정을 포함한다.
+센서는 온도·압력·빛·가속도·전류 같은 물리량을 전기적 신호로 바꿉니다. 측정 시스템은 센서뿐 아니라 구동·증폭·필터·변환기·시간 기준·보정 과정을 포함합니다.
 
 ## 신호 경로와 오차
 
-AFE는 센서 신호의 증폭·필터·변환 전 처리를 담당한다. Bridge 회로는 저항 변화를 전압 차이로 읽는 데 쓰인다. Offset·gain error·비선형성·잡음·drift는 서로 다른 오차 요인이다. 정확도는 기준값에 얼마나 가까운지, 정밀도는 반복 측정값이 얼마나 모이는지를 나타낸다. 분해능이 높다고 정확도가 자동으로 높아지는 것은 아니다.
+AFE는 센서 신호의 증폭·필터·변환 전 처리를 담당합니다. Bridge 회로는 저항 변화를 전압 차이로 읽는 데 쓰입니다. Offset·gain error·비선형성·잡음·drift는 서로 다른 오차 요인입니다. 정확도는 기준값에 얼마나 가까운지, 정밀도는 반복 측정값이 얼마나 모이는지를 나타냅니다. 분해능이 높다고 정확도가 자동으로 높아지는 것은 아닙니다.
 
 ## 장비와 자동 측정
 
-DMM은 전압·전류·저항 등의 수치 측정, 오실로스코프는 시간 파형, VNA는 네트워크 특성, 로직애널라이저는 디지털 상태에 적합하다. Probe의 대역폭·입력 임피던스·접지 구조도 대상 회로를 바꿀 수 있다.
+DMM은 전압·전류·저항 등의 수치 측정, 오실로스코프는 시간 파형, VNA는 네트워크 특성, 로직애널라이저는 디지털 상태에 적합합니다. Probe의 대역폭·입력 임피던스·접지 구조도 대상 회로를 바꿀 수 있습니다.
 
-SCPI는 계측기 명령 체계다. VISA·PyVISA는 장비 통신에, LabVIEW·NI-DAQ은 계측과 데이터 수집에 쓰인다. 자동 측정에서는 장비 설정·대기 시간·단위·timestamp가 측정값을 해석하는 기준이 된다. Calibration과 측정 불확도는 값의 신뢰 범위를 설명한다.
+SCPI는 계측기 명령 체계입니다. VISA·PyVISA는 장비 통신에, LabVIEW·NI-DAQ은 계측과 데이터 수집에 쓰입니다. 자동 측정에서는 장비 설정·대기 시간·단위·timestamp가 측정값을 해석하는 기준이 됩니다. Calibration과 측정 불확도는 값의 신뢰 범위를 설명합니다.
 
 ## 관련 기술
 
@@ -25,7 +25,7 @@ SCPI, PyVISA, Sigrok, PulseView, LabVIEW, NI DAQ, Oscilloscope, VNA
 
 ## 개념·유도·모델·검증
 
-[기초부터 읽기](../../문서_docs/공학기초_FOUNDATIONS.md)
+[기초부터 읽기](../../공학기초_foundations/README.md)
 
 - [계측: 숫자를 읽는 것에서 믿을 수 있는 결과로](해설_notes/계측_measurement-loading-uncertainty.md)
 
@@ -48,7 +48,7 @@ SCPI defines instrument commands. VISA and PyVISA provide instrument communicati
 
 ### Concepts, derivations, models, and verification
 
-[Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
+[Foundations reading guide](../../공학기초_foundations/README.md#english)
 
 - [Measurement, probe loading and uncertainty](해설_notes/계측_measurement-loading-uncertainty.md#english)
 

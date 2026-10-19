@@ -14,7 +14,7 @@ The board is n×n with 1≤n≤12. Count placements of n queens with no shared r
 
 Place one queen per row. Bitmasks track occupied columns and the two diagonal attack directions; recurse only into unattacked columns.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 각 행에서 금지된 열의 합집합을 뺀 자리만 선택하므로 모든 배치는 안전합니다. 안전한 모든 선택을 빠짐없이 탐색하며 각 배치는 행별 선택으로 유일하게 생성됩니다.
 

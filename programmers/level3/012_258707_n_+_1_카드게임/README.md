@@ -14,7 +14,7 @@ n is a multiple of six with 6≤n<1000; cards permute 1…n. The first n/3 cards
 
 Pairs summing to n+1 never share a card. Classify completed pairs by cost: zero for two initial cards, one for one drawn card, and two for two drawn cards. Spend the cheapest available pair each round.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 한 카드의 짝은 유일하여 한 쌍을 써도 다른 쌍을 망가뜨리지 않습니다. 비싼 쌍보다 싼 쌍을 먼저 쓰는 교환은 이후 사용할 수 있는 총예산을 줄이지 않습니다. 쌍을 쓸 때 비용을 내는 결정은 그 카드를 뽑을 때 샀던 전략으로 되돌려 해석할 수 있습니다.
 

@@ -14,7 +14,7 @@ A의 주사위 절반 조합을 모두 고릅니다. 선택 주사위들의 합�
 
 Enumerate half-size selections for A. Compute sum distributions and a prefix count for B, then count B outcomes strictly below each A sum. Ties do not count as wins.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 각 선택의 전체 굴림 경우 수는 같아 승리 횟수만 비교하면 됩니다. A 합의 빈도에 그보다 작은 B 합의 누적 빈도를 곱해 합하면 모든 승리 쌍을 정확히 한 번 셉니다.
 

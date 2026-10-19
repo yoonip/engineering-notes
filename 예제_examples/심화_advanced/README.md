@@ -1,6 +1,6 @@
 # 심화 실행 예제 | Advanced executable examples
 
-수식과 상태 모델을 실제로 계산하는 예제를 모았다. 각 디렉터리의 README는 해당 해설, 실행 명령, 검산 방법을 연결한다. Python 예제와 테스트는 표준 라이브러리로 실행하며, 도표를 다시 그릴 때만 Matplotlib이 필요하다.
+수식과 상태 모델을 실제로 계산하는 예제를 모았습니다. 각 디렉터리의 README는 해당 해설, 실행 명령, 검산 방법을 연결합니다. Python 예제와 테스트는 표준 라이브러리로 실행하며, 도표를 다시 그릴 때만 Matplotlib이 필요합니다.
 
 These examples compute the equations and state models in the advanced articles. Each directory links explanations, commands and independent checks. Python examples and tests use the standard library; regenerating plots additionally requires Matplotlib.
 
@@ -13,7 +13,7 @@ These examples compute the equations and state models in the advanced articles. 
 
 ## 통합 검사 | Integrated checks
 
-저장소 루트에서 실행한다. 기초·추론·확장·심화 모델을 별도 프로세스로 검사하므로 서로 다른 예제의 모듈 이름이 충돌하지 않는다.
+저장소 루트에서 실행합니다. 기초·추론·확장·심화 모델을 별도 프로세스로 검사하므로 서로 다른 예제의 모듈 이름이 충돌하지 않습니다.
 
 Run from the repository root. Separate processes isolate the foundation, reasoning, extended and advanced model suites.
 
@@ -21,8 +21,8 @@ Run from the repository root. Separate processes isolate the foundation, reasoni
 python 예제_examples/run_checks.py --report results/verification.json
 ```
 
-검사별 결과와 Python 버전은 [통합 기록](../VALIDATION.json)에, RTL·CLI 등의 실행 범위는 각 예제의 README와 결과 파일에 담았다. 이 통합 명령은 Python 모델 검사이며 RTL 도구 실행은 하드웨어 README의 별도 명령으로 수행한다.
+검사별 결과와 Python 버전은 [통합 기록](../VALIDATION.json)에, RTL·CLI 등의 실행 범위는 각 예제의 README와 결과 파일에 담았습니다. 이 통합 명령은 Python 모델 검사이며 RTL 도구 실행은 하드웨어 README의 별도 명령으로 수행합니다.
 
 [The integrated record](../VALIDATION.json) lists suite results and Python versions. Individual READMEs and result files document RTL and CLI execution. The integrated command checks Python models; the hardware README provides the separate RTL-tool command.
 
-[심화 해설 60편 / 60 advanced articles](../../문서_docs/심화해설_ADVANCED.md)
+[심화 해설 60편 / 60 advanced articles](../../공학기초_foundations/심화학습_ADVANCED.md)

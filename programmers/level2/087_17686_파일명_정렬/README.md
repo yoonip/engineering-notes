@@ -14,7 +14,7 @@ There are at most 1000 filenames of at most 100 characters, starting with a lett
 
 Compare the leading HEAD case-insensitively, then the following NUMBER of at most five digits numerically. TAIL is not part of the key; ties retain their original order.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 정렬 키가 문제의 우선순위인 (소문자 HEAD, 정수 NUMBER)와 정확히 같습니다. Python의 안정 정렬은 두 키가 같을 때 입력 순서를 보존합니다.
 

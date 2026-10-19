@@ -1,6 +1,6 @@
 # 코드 예제 | Code examples
 
-개념 설명에 사용한 짧은 예제를 모았다. [기초 모델과 자동 검증](공학기초_foundations/README.md)은 수학·물리, 회로·하드웨어, 펌웨어·시스템, 신호·제어·AI의 참조 구현을 연결한다.
+개념 설명에 사용한 짧은 예제를 모았습니다. [기초 모델과 자동 검증](공학기초_foundations/README.md)은 수학·물리, 회로·하드웨어, 펌웨어·시스템, 신호·제어·AI의 참조 구현을 연결합니다.
 
 | 파일 | 내용 | 실행 환경 |
 |---|---|---|
@@ -24,31 +24,31 @@ g++ -std=c++17 -Wall -Wextra -Wpedantic mean.cpp -o mean_cpp
 ./mean_cpp
 ```
 
-Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)에 묶었다. 자동미분 파일은 각각 PyTorch 또는 TensorFlow가 필요하다. Scalar 미분 예제에는 GPU가 필요하지 않다. Framework 설치는 [Python & Jupyter](../분야_topics/03-python-jupyter/README.md)의 참고 자료와 [PyTorch](https://pytorch.org/get-started/locally/)·[TensorFlow](https://www.tensorflow.org/install) 설치 문서에서 환경별로 다룬다.
+Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)에 묶었습니다. 자동미분 파일은 각각 PyTorch 또는 TensorFlow가 필요합니다. Scalar 미분 예제에는 GPU가 필요하지 않습니다. Framework 설치는 [Python & Jupyter](../분야_topics/03-python-jupyter/README.md)의 참고 자료와 [PyTorch](https://pytorch.org/get-started/locally/)·[TensorFlow](https://www.tensorflow.org/install) 설치 문서에서 환경별로 다룹니다.
 
 ## 분야별 참조 모델과 통합 검사
 
-[분야별 계산 예제](확장기초_extended/README.md)에서는 타이밍·전력·통신·테스트를 포함한 하드웨어, OS·도구·디버깅·로봇 제어를 포함한 시스템, GPU·데이터베이스·분산 시스템·AI·수치해석을 계산하고 검증한다. 추론 모델까지 포함한 전체 검사는 저장소 루트에서 실행한다.
+[분야별 계산 예제](확장기초_extended/README.md)에서는 타이밍·전력·통신·테스트를 포함한 하드웨어, OS·도구·디버깅·로봇 제어를 포함한 시스템, GPU·데이터베이스·분산 시스템·AI·수치해석을 계산하고 검증합니다. 추론 모델까지 포함한 전체 검사는 저장소 루트에서 실행합니다.
 
 ```bash
 python 예제_examples/run_checks.py
 ```
 
-Python 3 표준 라이브러리로 298개 검사를 실행한다. 검사에는 독립 계산과의 비교, 경계 조건, 상태 불변식, 수렴률, 무작위 입력, 오류 주입이 포함된다. 실행 환경과 검사별 결과는 [검증 기록](VALIDATION.json)에 남겼다.
+Python 3 표준 라이브러리로 298개 검사를 실행합니다. 검사에는 독립 계산과의 비교, 경계 조건, 상태 불변식, 수렴률, 무작위 입력, 오류 주입이 포함됩니다. 실행 환경과 검사별 결과는 [검증 기록](VALIDATION.json)에 남겼습니다.
 
 ## 심화 구현과 검증
 
-[심화 예제](심화_advanced/README.md)는 회로·RTL, 펌웨어·시스템, AI·데이터, 수학·제어·추론의 구현과 독립 검사를 연결한다. [심화 해설 60편](../문서_docs/심화해설_ADVANCED.md)에서 단계별 유도와 실행 결과를 읽을 수 있다.
+[심화 예제](심화_advanced/README.md)는 회로·RTL, 펌웨어·시스템, AI·데이터, 수학·제어·추론의 구현과 독립 검사를 연결합니다. [심화 해설 60편](../공학기초_foundations/심화학습_ADVANCED.md)에서 단계별 유도와 실행 결과를 읽을 수 있습니다.
 
 ## MCU 펌웨어와 디버깅
 
-[Arm·RISC-V·STM32·ESP32 실습](임베디드디버깅_embedded-debug-labs/README.md)은 시작 코드, 메모리 배치, OpenOCD·GDB 연결, GPIO와 FreeRTOS 명령 처리를 다룬다.
+[Arm·RISC-V·STM32·ESP32 실습](임베디드디버깅_embedded-debug-labs/README.md)은 시작 코드, 메모리 배치, OpenOCD·GDB 연결, GPIO와 FreeRTOS 명령 처리를 다룹니다.
 
-[Embedded validation lab](../프로젝트_projects/embedded-validation-lab/README.md)은 RV32I CPU와 Python 참조 모델, Cortex-M7·STM32·ESP32 펌웨어, UART 호스트 검증을 하나의 프로젝트로 연결한다.
+[Embedded validation lab](../프로젝트_projects/embedded-validation-lab/README.md)은 RV32I CPU와 Python 참조 모델, Cortex-M7·STM32·ESP32 펌웨어, UART 호스트 검증을 하나의 프로젝트로 연결합니다.
 
 ## English
 
-[Advanced examples](심화_advanced/README.md) connect circuit/RTL, firmware/systems, AI/data and mathematical implementations with independent checks. [The 60 advanced articles](../문서_docs/심화해설_ADVANCED.md#english) provide step-by-step derivations and execution results.
+[Advanced examples](심화_advanced/README.md) connect circuit/RTL, firmware/systems, AI/data and mathematical implementations with independent checks. [The 60 advanced articles](../공학기초_foundations/심화학습_ADVANCED.md#english) provide step-by-step derivations and execution results.
 
 Short executable examples accompany the concept notes. [Foundation models and automated checks](공학기초_foundations/README.md#english) connect mathematics, physics, circuits, hardware, firmware, systems, signals, control and AI.
 

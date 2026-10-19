@@ -16,7 +16,7 @@ ANIMAL_ID is non-nullable while NAME may be NULL. Return a single count of all a
 
 Each row represents one animal, so count all rows. Missing names must not exclude animals; use COUNT(*) rather than COUNT(NAME).
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 COUNT(*)는 열 값의 NULL 여부와 관계없이 행 하나마다 1을 더하므로 전체 동물 수와 같습니다.
 

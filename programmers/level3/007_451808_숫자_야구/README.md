@@ -14,7 +14,7 @@ The secret uses four distinct digits from 1–9. The query budget n is 6–3024 
 
 Begin with 3024 permutations of four distinct digits from 1–9. Filter inconsistent candidates after each clue. Choose a next guess minimizing the largest response bucket, reducing the worst-case number of survivors.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 관측 단서와 같은 응답을 내는 후보만 남기므로 정답은 삭제되지 않습니다. 후보가 하나면 그 수가 답입니다. 전체 응답 트리 검사에서 3024개 비밀번호를 모두 구분하며 최악 질문 수가 6회임을 확인했습니다. 단순 평균 분할만으로는 이 최악 횟수가 보장되지 않습니다.
 

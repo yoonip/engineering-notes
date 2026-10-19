@@ -6,20 +6,20 @@
 
 ### 작은 변화부터 보는 이유
 
-트랜지스터의 입력을 두 배로 키운다고 출력도 항상 두 배가 되지는 않는다. 하지만 한 동작점 주변을 충분히 좁게 보면 곡선을 직선으로 근사할 수 있다. 소신호 해석은 이 국소적인 기울기로 증폭기의 이득과 주파수 응답을 구한다. 큰 신호에서의 clipping이나 왜곡을 없애 주는 방법은 아니다. [MIT 6.012 Lecture 19](https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2005/7a51249eb734152c5ce95df393cf4f1f_lec19.pdf)
+트랜지스터의 입력을 두 배로 키운다고 출력도 항상 두 배가 되지는 않습니다. 하지만 한 동작점 주변을 충분히 좁게 보면 곡선을 직선으로 근사할 수 있습니다. 소신호 해석은 이 국소적인 기울기로 증폭기의 이득과 주파수 응답을 구합니다. 큰 신호에서의 clipping이나 왜곡을 없애 주는 방법은 아닙니다. [MIT 6.012 Lecture 19](https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2005/7a51249eb734152c5ce95df393cf4f1f_lec19.pdf)
 
-먼저 DC 해석으로 전압·전류가 균형을 이루는 동작점 Q를 찾는다. 회로의 정적 방정식을 $`F(v_Q)=0`$이라 쓰고 작은 변화 $`\delta v`$를 더하면 Taylor 전개의 1차항은 $`F(v_Q+\delta v)\approx F(v_Q)+J_Q\delta v`$다. 동작점을 바꾸면 Jacobian $`J_Q`$도 달라진다. 같은 회로도라도 bias가 다르면 같은 AC 응답을 기대할 수 없는 이유다.
+먼저 DC 해석으로 전압·전류가 균형을 이루는 동작점 Q를 찾습니다. 회로의 정적 방정식을 $`F(v_Q)=0`$이라 쓰고 작은 변화 $`\delta v`$를 더하면 Taylor 전개의 1차항은 $`F(v_Q+\delta v)\approx F(v_Q)+J_Q\delta v`$입니다. 동작점을 바꾸면 Jacobian $`J_Q`$도 달라집니다. 같은 회로도라도 bias가 다르면 같은 AC 응답을 기대할 수 없는 이유입니다.
 
 MOSFET에서는
 
 $$\delta i_D=g_m\delta v_{GS}+g_{ds}\delta v_{DS}+g_{mb}\delta v_{BS},\qquad
 g_m=\left.\frac{\partial I_D}{\partial V_{GS}}\right\vert _Q,\quad r_o=1/g_{ds}.$$
 
-$`g_m,g_{ds},g_{mb}`$의 단위는 S=A/V, $`r_o`$는 Ω다. 독립적인 이상적 DC 전압원은 두 단자의 소신호 전압 차이가 0인 단락으로 치환한다. 한 단자가 기준 접지일 때 다른 단자도 AC ground가 되며, 떠 있는 전압원의 두 단자를 각각 접지하는 것은 아니다. 독립적인 이상적 DC 전류원은 소신호 개방으로 치환한다. 종속 전원은 소자 기울기를 나타내므로 남겨 둔다.
+$`g_m,g_{ds},g_{mb}`$의 단위는 S=A/V, $`r_o`$는 Ω입니다. 독립적인 이상적 DC 전압원은 두 단자의 소신호 전압 차이가 0인 단락으로 치환합니다. 한 단자가 기준 접지일 때 다른 단자도 AC ground가 되며, 떠 있는 전압원의 두 단자를 각각 접지하는 것은 아닙니다. 독립적인 이상적 DC 전류원은 소신호 개방으로 치환합니다. 종속 전원은 소자 기울기를 나타내므로 남겨 둡니다.
 
 ### 공통 소스의 한 pole 모델 유도
 
-source와 bulk가 AC ground인 common-source 단계에서 drain에 $`R_D`$, 소자 출력저항 $`r_o`$, 부하 $`R_L`$와 합성 출력 커패시턴스 $`C_o`$가 있다고 하자. 입력은 이상적인 gate 전압원이며 $`C_{gd}`$에 의한 입력 귀환 등은 생략한다. 출력 노드의 KCL은
+source와 bulk가 AC ground인 common-source 단계에서 drain에 $`R_D`$, 소자 출력저항 $`r_o`$, 부하 $`R_L`$와 합성 출력 커패시턴스 $`C_o`$가 있다고 하겠습니다. 입력은 이상적인 gate 전압원이며 $`C_{gd}`$에 의한 입력 귀환 등은 생략합니다. 출력 노드의 KCL은
 
 $$g_mv_i+\left(\frac1{R_D}+\frac1{r_o}+\frac1{R_L}+sC_o\right)v_o=0.$$
 
@@ -27,21 +27,21 @@ $`R=R_D\parallel r_o\parallel R_L`$로 두면
 
 $$A_v(s)=\frac{v_o}{v_i}=\frac{-g_mR}{1+sRC_o},\qquad f_p=\frac1{2\pi RC_o}.$$
 
-음수 이득은 입력이 올라갈 때 출력이 내려감을 뜻한다. pole에서는 저주파 이득에 비해 크기가 $`1/\sqrt2`$, 추가 위상 지연이 45°다. 이 출력 한 pole 모델은 실제 MOSFET의 여러 capacitance를 모두 포함한 결과가 아니다. 입력 구동원의 저항과 $`C_{gd}`$를 넣으면 Miller 효과와 추가 pole·zero를 살펴야 한다. [MIT Lecture 23](https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2005/44ed13d9b5e46dd459d9bca431fc547a_lec23.pdf)
+음수 이득은 입력이 올라갈 때 출력이 내려감을 뜻합니다. pole에서는 저주파 이득에 비해 크기가 $`1/\sqrt2`$, 추가 위상 지연이 45°입니다. 이 출력 한 pole 모델은 실제 MOSFET의 여러 capacitance를 모두 포함한 결과가 아닙니다. 입력 구동원의 저항과 $`C_{gd}`$를 넣으면 Miller 효과와 추가 pole·zero를 살펴야 합니다. [MIT Lecture 23](https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2005/44ed13d9b5e46dd459d9bca431fc547a_lec23.pdf)
 
-$`g_m=1`$ mS, $`R_D=10`$ kΩ, $`r_o=R_L=100`$ kΩ, $`C_o=20`$ pF이면 $`R=8.333`$ kΩ, $`A_v(0)=-8.333`$, $`f_p\approx0.955`$ MHz다. 이는 가정한 수치의 계산 예이며 특정 공정의 성능 수치가 아니다.
+$`g_m=1`$ mS, $`R_D=10`$ kΩ, $`r_o=R_L=100`$ kΩ, $`C_o=20`$ pF이면 $`R=8.333`$ kΩ, $`A_v(0)=-8.333`$, $`f_p\approx0.955`$ MHz입니다. 이는 가정한 수치의 계산 예이며 특정 공정의 성능 수치가 아닙니다.
 
-### AC 자극의 1은 큰 신호의 1 V와 다르다
+### AC 자극의 1은 큰 신호의 1 V와 다릅니다
 
-AC 해석은 선형화한 회로에서 복소 전압·전류를 계산한다. 입력의 AC magnitude를 1로 두면 출력과 전달함수의 수치가 같아져 편리하지만, 트랜지스터가 실제로 1 V 진폭까지 선형이라는 뜻은 아니다. $`20\log_{10}\vert v_o/v_i\vert `$와 위상을 함께 읽고 Hz와 rad/s를 구분한다. [ADI의 AC sweep 설명](https://www.analog.com/en/resources/technical-articles/ltspice-ac-analysis-using-the-step-command.html)
+AC 해석은 선형화한 회로에서 복소 전압·전류를 계산합니다. 입력의 AC magnitude를 1로 두면 출력과 전달함수의 수치가 같아져 편리하지만, 트랜지스터가 실제로 1 V 진폭까지 선형이라는 뜻은 아닙니다. $`20\log_{10}\vert v_o/v_i\vert `$와 위상을 함께 읽고 Hz와 rad/s를 구분합니다. [ADI의 AC sweep 설명](https://www.analog.com/en/resources/technical-articles/ltspice-ac-analysis-using-the-step-command.html)
 
-Spectre/ADE에서 재현할 때는 공정 모델·corner·온도·전원·부하를 고정하고 DC 동작점과 소자 영역을 먼저 저장한다. 이어 입력 AC magnitude를 설정하고 예상 pole을 충분히 포함하는 logarithmic sweep에서 $`V(out)/V(in)`$을 측정한다. 입력이 여러 개라면 다른 입력의 AC 자극을 0으로 설정한다. 수렴을 위해 강제한 초기조건이 실제 동작점을 대신하지 않는지도 확인한다. Cadence의 동작점 설명 역시 소신호 해석 전에 올바른 동작점을 얻어야 한다는 점을 강조한다. [Cadence 기술 답변](https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/49506/dc-operating-point-for-different-analyses/1379372)
+Spectre/ADE에서 재현할 때는 공정 모델·corner·온도·전원·부하를 고정하고 DC 동작점과 소자 영역을 먼저 저장합니다. 이어 입력 AC magnitude를 설정하고 예상 pole을 충분히 포함하는 logarithmic sweep에서 $`V(out)/V(in)`$을 측정합니다. 입력이 여러 개라면 다른 입력의 AC 자극을 0으로 설정합니다. 수렴을 위해 강제한 초기조건이 실제 동작점을 대신하지 않는지도 확인합니다. Cadence의 동작점 설명 역시 소신호 해석 전에 올바른 동작점을 얻어야 한다는 점을 강조합니다. [Cadence 기술 답변](https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/49506/dc-operating-point-for-different-analyses/1379372)
 
 ### 구현과 독립 검증
 
-`cs_gain`은 위 KCL의 복소수 해를 직접 계산한다. 검산은 DC 병렬저항, pole의 −3 dB 조건, 여러 주파수의 KCL 잔차를 따로 확인한다. 비선형 제곱 법칙을 별도로 전개하여 선형 근사의 잔차가 입력 변화의 제곱에 비례하는지도 검사한다. 따라서 단순히 같은 식을 두 번 호출하는 비교가 아니다.
+`cs_gain`은 위 KCL의 복소수 해를 직접 계산합니다. 검산은 DC 병렬저항, pole의 −3 dB 조건, 여러 주파수의 KCL 잔차를 따로 확인합니다. 비선형 제곱 법칙을 별도로 전개하여 선형 근사의 잔차가 입력 변화의 제곱에 비례하는지도 검사합니다. 따라서 단순히 같은 식을 두 번 호출하는 비교가 아닙니다.
 
-실제 회로에서는 작은 sine transient의 기본파 이득을 AC 결과와 비교하고 진폭을 절반으로 줄이며 차이가 줄어드는지 확인할 수 있다. 최대 시간 간격과 안정화 시간을 바꿔 수치 오차도 분리한다. Python 검산은 이 참조 모델의 확인이며 Spectre 실행, PDK 검증, noise·stability·공정 편차 분석을 대신하지 않는다.
+실제 회로에서는 작은 sine transient의 기본파 이득을 AC 결과와 비교하고 진폭을 절반으로 줄이며 차이가 줄어드는지 확인할 수 있습니다. 최대 시간 간격과 안정화 시간을 바꿔 수치 오차도 분리합니다. Python 검산은 이 참조 모델의 확인이며 Spectre 실행, PDK 검증, noise·stability·공정 편차 분석을 대신하지 않습니다.
 
 ## English
 
@@ -84,4 +84,4 @@ For a real circuit, compare the fundamental gain from a small-sine transient aga
 
 ## 출처 대조 / Source cross-check
 
-MIT의 소신호 KCL·주파수 모델을 ADI의 AC sweep 정의, Cadence의 동작점 설명과 대조했다. / MIT's small-signal equations were cross-checked against ADI's AC-sweep definition and Cadence's operating-point explanation. 확인 / checked: 2026-10-19.
+MIT의 소신호 KCL·주파수 모델을 ADI의 AC sweep 정의, Cadence의 동작점 설명과 대조했습니다. / MIT's small-signal equations were cross-checked against ADI's AC-sweep definition and Cadence's operating-point explanation. 확인 / checked: 2026-10-19.

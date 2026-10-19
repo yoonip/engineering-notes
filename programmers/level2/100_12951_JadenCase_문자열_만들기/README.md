@@ -14,7 +14,7 @@ Length is 1–200 with letters, digits and spaces; digits occur only at word sta
 
 Splitting on the literal space preserves empty words between repeated spaces. Capitalize the first character and lowercase the rest of each word, then join with the same spaces.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 명시적 공백 구분은 공백 개수와 위치를 보존합니다. capitalize는 숫자로 시작할 때도 나머지 문자를 소문자로 바꾸므로 문제의 단어 변환 규칙과 일치합니다.
 

@@ -1,6 +1,6 @@
 # M2M100 + LoRA 영한 번역
 
-Meta의 `facebook/m2m100_418M`에 LoRA를 적용한 영한 번역 프로젝트다. 학습·평가 코드와 CPU·GPU 추론 앱을 포함한다. 최신 버전은 중복 문장을 그룹으로 묶어 분할한 자료로 3 epoch 학습했다.
+Meta의 `facebook/m2m100_418M`에 LoRA를 적용한 영한 번역 프로젝트입니다. 학습·평가 코드와 CPU·GPU 추론 앱을 포함합니다. 최신 버전은 중복 문장을 그룹으로 묶어 분할한 자료로 3 epoch 학습했습니다.
 
 ## 모델과 실험
 
@@ -20,11 +20,11 @@ Meta의 `facebook/m2m100_418M`에 LoRA를 적용한 영한 번역 프로젝트�
 | BLEU | 10.2877 | 12.8599 |
 | chrF | 28.9328 | 31.2576 |
 
-평가는 SacreBLEU 2.6.0, beam 4, 한국어 forced BOS, 생성 최대 128토큰, CUDA FP16, batch 8로 수행했다. 동일 문장 ID와 정규화한 원문·번역문을 연결한 그룹이 한 분할에만 들어가도록 했다. 수치는 이 Tatoeba 시험 조건의 결과이며, CPU FP32·INT8 추론은 별도 조건이다. 집계 지표와 설정은 `results/`, `configs/`에 있다.
+평가는 SacreBLEU 2.6.0, beam 4, 한국어 forced BOS, 생성 최대 128토큰, CUDA FP16, batch 8로 수행했습니다. 동일 문장 ID와 정규화한 원문·번역문을 연결한 그룹이 한 분할에만 들어가도록 했습니다. 수치는 이 Tatoeba 시험 조건의 결과이며, CPU FP32·INT8 추론은 별도 조건입니다. 집계 지표와 설정은 `results/`, `configs/`에 있습니다.
 
 ## 실행
 
-Python 3.12와 PyTorch를 사용한다. CPU·CUDA 설치 명령은 [PyTorch 설치 안내](https://pytorch.org/get-started/locally/)에서 선택한다. 기준 실행 환경은 `environment/`에 기록했다.
+Python 3.12와 PyTorch를 사용합니다. CPU·CUDA 설치 명령은 [PyTorch 설치 안내](https://pytorch.org/get-started/locally/)에서 선택합니다. 기준 실행 환경은 `environment/`에 기록했습니다.
 
 ```powershell
 python -m pip install -r requirements.txt -r requirements-notebook.txt
@@ -32,7 +32,7 @@ python -m unittest discover -s tests -v
 python -m jupyterlab
 ```
 
-Tatoeba export의 로컬 사본은 다음 경로에 둔다.
+Tatoeba export의 로컬 사본은 다음 경로에 둡니다.
 
 ```text
 data/raw/tatoeba/eng_sentences.tsv.bz2
@@ -50,7 +50,7 @@ python cpu_app.py --checkpoint checkpoints/reference/adapter --quantization none
 python editable_app.py --checkpoint checkpoints/reference/adapter --device cpu
 ```
 
-`fetch_model.py`는 고정 revision의 기본 모델을 내려받는다. 학습은 기본 모델에서 새 LoRA를 시작하며 `--init-adapter`는 가중치만 가져와 optimizer와 scheduler를 새로 만든다. 앱은 로컬 기본 모델과 학습된 어댑터를 함께 사용한다. 기본 모델의 cache·어댑터·원자료는 소스 저장소와 별도로 관리한다.
+`fetch_model.py`는 고정 revision의 기본 모델을 내려받습니다. 학습은 기본 모델에서 새 LoRA를 시작하며 `--init-adapter`는 가중치만 가져와 optimizer와 scheduler를 새로 만듭니다. 앱은 로컬 기본 모델과 학습된 어댑터를 함께 사용합니다. 기본 모델의 cache·어댑터·원자료는 소스 저장소와 별도로 관리합니다.
 
 ## 소스 구성
 
@@ -62,7 +62,7 @@ python editable_app.py --checkpoint checkpoints/reference/adapter --device cpu
 - `fetch_model.py`: 기본 모델 다운로드
 - `notebooks/01_workflow.ipynb`: 학습·평가·추론을 연결한 노트북
 
-2026-10-19 검사에서는 작은 무작위 모델과 합성 자료 테스트 6개, CLI·노트북 기본 실행을 확인했다. 전체 번역 모델을 새로 학습하거나 다운로드하지 않았다. 세부 결과는 `validation.json`, 구성 안내는 `PROVENANCE.md`에 있다.
+2026-10-19 검사에서는 작은 무작위 모델과 합성 자료 테스트 6개, CLI·노트북 기본 실행을 확인했습니다. 전체 번역 모델을 새로 학습하거나 다운로드하지 않았습니다. 세부 결과는 `validation.json`, 구성 안내는 `PROVENANCE.md`에 있습니다.
 
 ## English
 

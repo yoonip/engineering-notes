@@ -14,7 +14,7 @@ The target n is 1–1000000000. A jump of k costs k, while doubling the current 
 
 Work backwards from the destination: halve an even position for free, or spend one unit to subtract one from an odd position and then halve. This counts one bits in binary.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 짝수 위치는 순간이동의 역연산으로 비용 없이 줄일 수 있습니다. 홀수는 순간이동만으로 만들 수 없어 최소 한 번의 단위 점프가 필요합니다. 이 최적 선택을 반복하면 1비트 수가 최소 비용입니다.
 

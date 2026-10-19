@@ -1,6 +1,6 @@
 # 수학·물리·추론의 심화 구현 | Advanced mathematics, physics and reasoning
 
-핵심 계산은 Python 3 표준 라이브러리로 실행한다. 아래 명령은 저장소 루트 기준이다. `--output`을 생략하면 요약만 출력하며, 지정하면 JSON과 세 개의 시계열·격자 CSV를 저장한다.
+핵심 계산은 Python 3 표준 라이브러리로 실행합니다. 아래 명령은 저장소 루트 기준입니다. `--output`을 생략하면 요약만 출력하며, 지정하면 JSON과 세 개의 시계열·격자 CSV를 저장합니다.
 
 ```bash
 python 예제_examples/심화_advanced/math_reasoning/demo.py --output results/advanced-math
@@ -19,9 +19,9 @@ python -m unittest discover -s 예제_examples/심화_advanced/math_reasoning -p
 | `standardized_rates` | 모집단 복제·층별 비율 / Replicated population and strata |
 | `VersionTimeline` | 361개 날짜의 선형 탐색 / Linear oracle over 361 dates |
 
-`results/`에는 본문의 기본 입력으로 실제 실행한 CSV와 요약을 보관했다. 물리량은 각 글에 정한 선형 모델과 단위를 따른다. 사회·경제·법령 예제의 자료는 계산 구조를 설명하는 구성 데이터이며 실제 기관의 통계나 법률 결론을 나타내지 않는다.
+`results/`에는 본문의 기본 입력으로 실제 실행한 CSV와 요약을 보관했습니다. 물리량은 각 글에 정한 선형 모델과 단위를 따릅니다. 사회·경제·법령 예제의 자료는 계산 구조를 설명하는 구성 데이터이며 실제 기관의 통계나 법률 결론을 나타내지 않습니다.
 
-`make_figures.py`는 같은 계산에서 PNG·SVG를 생성한다. 도표 생성에는 Matplotlib이 추가로 필요하다. SVG에는 확대 가능한 글자 윤곽과 선을 저장하며, 외부의 그림을 복사하지 않았다.
+`make_figures.py`는 같은 계산에서 PNG·SVG를 생성합니다. 도표 생성에는 Matplotlib이 추가로 필요합니다. SVG에는 확대 가능한 글자 윤곽과 선을 저장하며, 외부의 그림을 복사하지 않았습니다.
 
 ```bash
 python -m pip install -r 예제_examples/심화_advanced/math_reasoning/requirements-figures.txt

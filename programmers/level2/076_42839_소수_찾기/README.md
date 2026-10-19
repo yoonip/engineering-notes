@@ -14,7 +14,7 @@ The digit-piece string has length 1–7. Use any nonempty subset of pieces once 
 
 Generate permutations of every length, convert them to integers and deduplicate them. Repeated digits and leading zeros must not count a number twice. Test primality using divisors up to the square root.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 모든 가능한 조각 선택·배열은 어느 길이의 순열에 포함됩니다. 합성수에는 제곱근 이하의 약수가 하나 이상 있으므로 그 범위에서 나누어지지 않는 2 이상의 수만 소수입니다.
 

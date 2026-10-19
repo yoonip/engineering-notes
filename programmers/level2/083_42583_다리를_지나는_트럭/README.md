@@ -14,7 +14,7 @@ Bridge length, capacity and truck count are each 1–10000. At most one truck en
 
 Store each truck’s weight and exit time in a queue. If the next truck cannot enter, jump directly to the earliest exit event instead of simulating empty waiting seconds.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 진입 순서는 고정이고 다음 상태가 바뀌는 시점은 트럭 퇴장뿐입니다. 필요한 퇴장까지 시간을 건너뛰어도 중간에 가능한 진입을 놓치지 않으므로 초 단위 시뮬레이션과 같은 결과입니다.
 

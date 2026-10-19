@@ -14,7 +14,7 @@ There are 2–20 numbers in [1,50] and target is in [1,1000]. Use every number e
 
 For each number, branch into adding or subtracting it. Aggregate the counts of paths that reach the same sum in a Counter.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 i개 숫자를 처리한 합별 방법 수가 정확하다고 가정합니다. 다음 숫자에 부호를 붙인 모든 선택은 이전 상태와 두 부호 중 하나로 유일하게 분해되므로 점화식이 정확합니다.
 

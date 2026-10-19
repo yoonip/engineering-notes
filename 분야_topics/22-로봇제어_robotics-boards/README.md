@@ -2,19 +2,19 @@
 
 [전체 목차](../../분야별목차_CATALOG.md) · [처음으로](../../README.md)
 
-로봇은 센서로 상태를 관측하고 제어기의 판단에 따라 액추에이터를 움직인다. 기구·전원·회로·펌웨어·추정·계획 알고리즘이 함께 동작한다.
+로봇은 센서로 상태를 관측하고 제어기의 판단에 따라 액추에이터를 움직입니다. 기구·전원·회로·펌웨어·추정·계획 알고리즘이 함께 동작합니다.
 
 ## 보드의 역할
 
-Arduino는 보드와 개발 환경의 생태계이며 제품마다 MCU와 실행 환경이 다르다. Raspberry Pi의 대표적인 SBC 제품은 Linux 애플리케이션과 네트워크·카메라 처리에 쓰이고, Pico 계열은 MCU 보드다. STM32 Nucleo·ESP32·BeagleBone·Jetson도 각각 MCU 제어·연결·Linux·AI 연산에 활용된다.
+Arduino는 보드와 개발 환경의 생태계이며 제품마다 MCU와 실행 환경이 다릅니다. Raspberry Pi의 대표적인 SBC 제품은 Linux 애플리케이션과 네트워크·카메라 처리에 쓰이고, Pico 계열은 MCU 보드입니다. STM32 Nucleo·ESP32·BeagleBone·Jetson도 각각 MCU 제어·연결·Linux·AI 연산에 활용됩니다.
 
 ## 운동과 관측
 
-기구학은 관절 값과 위치·자세의 관계, 동역학은 힘·토크와 운동의 관계를 다룬다. 엔코더는 회전·위치 정보를, IMU는 가속도와 각속도 등을 제공한다. PWM 명령과 실제 토크의 관계에는 모터 드라이버·전원·기구 부하가 개입한다. SLAM은 지도 작성과 자기 위치 추정을 함께 다룬다.
+기구학은 관절 값과 위치·자세의 관계, 동역학은 힘·토크와 운동의 관계를 다룹니다. 엔코더는 회전·위치 정보를, IMU는 가속도와 각속도 등을 제공합니다. PWM 명령과 실제 토크의 관계에는 모터 드라이버·전원·기구 부하가 개입합니다. SLAM은 지도 작성과 자기 위치 추정을 함께 다룹니다.
 
 ## 소프트웨어와 시뮬레이션
 
-ROS 2는 노드와 메시지를 통해 로봇 기능을 연결한다. Topic은 연속 데이터 전달, service는 요청·응답, action은 진행 상태가 있는 작업에 사용된다. MoveIt은 조작·경로 계획, Nav2는 이동 로봇 내비게이션 생태계다. Gazebo·MuJoCo·Isaac Sim은 모델과 물리 시뮬레이션을 제공하며, 모델 오차와 센서·구동기의 차이가 실제 로봇으로 옮길 때 영향을 준다.
+ROS 2는 노드와 메시지를 통해 로봇 기능을 연결합니다. Topic은 연속 데이터 전달, service는 요청·응답, action은 진행 상태가 있는 작업에 사용됩니다. MoveIt은 조작·경로 계획, Nav2는 이동 로봇 내비게이션 생태계입니다. Gazebo·MuJoCo·Isaac Sim은 모델과 물리 시뮬레이션을 제공하며, 모델 오차와 센서·구동기의 차이가 실제 로봇으로 옮길 때 영향을 줍니다.
 
 ## 관련 기술
 
@@ -27,7 +27,7 @@ Arduino, Raspberry Pi, STM32 Nucleo, ESP32, BeagleBone, Jetson, ROS 2, MoveIt, N
 
 ## STM32·ESP32·Arduino·Raspberry Pi
 
-MCU와 보드 개발은 회로의 전원·클록·리셋, 핀 연결, 펌웨어와 호스트 프로그램을 함께 다룬다. GPIO는 디지털 입출력, ADC는 아날로그 신호의 수치 변환, 타이머는 주기·펄스 생성과 시간 측정에 쓰인다. UART·SPI·I²C는 외부 장치와 데이터를 주고받는 인터페이스다.
+MCU와 보드 개발은 회로의 전원·클록·리셋, 핀 연결, 펌웨어와 호스트 프로그램을 함께 다룹니다. GPIO는 디지털 입출력, ADC는 아날로그 신호의 수치 변환, 타이머는 주기·펄스 생성과 시간 측정에 쓰입니다. UART·SPI·I²C는 외부 장치와 데이터를 주고받는 인터페이스입니다.
 
 | 대상 | 하드웨어와 개발 환경 |
 | --- | --- |
@@ -36,13 +36,13 @@ MCU와 보드 개발은 회로의 전원·클록·리셋, 핀 연결, 펌웨어�
 | Arduino | 개발보드와 소프트웨어를 포함하는 플랫폼. 스케치는 일반적으로 C++로 컴파일되며 `setup()`·`loop()`와 장치 API를 사용 |
 | Raspberry Pi | Linux 환경에서 프로세스·드라이버와 GPIO·SPI 등 장치 인터페이스를 연결하는 보드 개발 |
 
-ESP32는 실행 대상 칩이고, Arduino 코어는 선택할 수 있는 소프트웨어 프레임워크다. VS Code에서는 ESP-IDF와 Arduino 등 여러 개발 환경을 사용할 수 있다. 편집기와 펌웨어 프레임워크는 역할이 다르다. [ESP32 Arduino 코어](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
+ESP32는 실행 대상 칩이고, Arduino 코어는 선택할 수 있는 소프트웨어 프레임워크입니다. VS Code에서는 ESP-IDF와 Arduino 등 여러 개발 환경을 사용할 수 있습니다. 편집기와 펌웨어 프레임워크는 역할이 다릅니다. [ESP32 Arduino 코어](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
 
 ## STM32 GPIO 레지스터 제어
 
-STM32F767ZI 예제는 `RCC->AHB1ENR`로 GPIOB의 클록을 활성화하고, `GPIOB->MODER`로 PB0을 출력으로 설정한다. `GPIOB->ODR`의 bit 0을 반전하면 해당 핀의 출력 상태가 바뀐다. 제조사 헤더는 레지스터의 주소, 구조체와 비트 마스크를 C 이름으로 제공한다. `->`, `|=`, `&= ~`는 일반 C 문법이다. [ST CMSIS Device F7](https://github.com/STMicroelectronics/cmsis-device-f7)
+STM32F767ZI 예제는 `RCC->AHB1ENR`로 GPIOB의 클록을 활성화하고, `GPIOB->MODER`로 PB0을 출력으로 설정합니다. `GPIOB->ODR`의 bit 0을 반전하면 해당 핀의 출력 상태가 바뀝니다. 제조사 헤더는 레지스터의 주소, 구조체와 비트 마스크를 C 이름으로 제공합니다. `->`, `|=`, `&= ~`는 일반 C 문법입니다. [ST CMSIS Device F7](https://github.com/STMicroelectronics/cmsis-device-f7)
 
-CPU 범용 레지스터는 계산값과 주소를 보관하고, 주변장치 레지스터는 GPIO 같은 회로의 설정과 상태를 나타낸다. 보드의 LED 동작은 핀의 출력값뿐 아니라 실제 회로의 연결과 활성 극성에 따라 정해진다.
+CPU 범용 레지스터는 계산값과 주소를 보관하고, 주변장치 레지스터는 GPIO 같은 회로의 설정과 상태를 나타냅니다. 보드의 LED 동작은 핀의 출력값뿐 아니라 실제 회로의 연결과 활성 극성에 따라 정해집니다.
 
 ## 기초 해설
 

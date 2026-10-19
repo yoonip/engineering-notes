@@ -14,7 +14,7 @@ There are 1–100 jobs with priorities 1–9 and a zero-based location. Rotate t
 
 Keep original indices and priorities in a queue. Rotate an item if a higher-priority one remains; otherwise execute it. Counts by priority avoid rescanning the full queue for its maximum.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 중요도별 개수는 큐의 내용과 항상 같습니다. 최댓값보다 낮은 항목만 뒤로 보내므로 실행 순서는 문제 규칙과 같고, 원래 위치로 목표 항목을 구별할 수 있습니다.
 

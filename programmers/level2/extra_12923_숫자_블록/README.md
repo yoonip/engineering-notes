@@ -14,7 +14,7 @@
 
 The final block at v is the largest proper divisor of v not exceeding 10000000. For each small divisor, inspect its larger paired divisor first; if that exceeds the cap, retain the smaller divisor as a candidate.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 블록 b는 자기 위치가 아닌 2b,3b,…를 덮고 큰 번호가 나중에 덮습니다. 따라서 답은 제한 안의 최대 진약수입니다. 약수 쌍을 제곱근까지 검사하면 모든 후보를 다룹니다.
 

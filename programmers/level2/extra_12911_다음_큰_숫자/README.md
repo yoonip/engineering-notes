@@ -14,7 +14,7 @@
 
 Add the lowest set bit to carry through the rightmost run of ones. Move the remaining displaced ones to the lowest positions, obtaining the nearest larger integer with the same one-bit count.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 더 큰 수를 만들 때 바뀌는 최상위 자리는 가능한 낮아야 합니다. 그 자리를 1로 올린 뒤 남은 1을 오른쪽 끝에 배치하면 그 접두부 아래에서 최솟값이 됩니다.
 

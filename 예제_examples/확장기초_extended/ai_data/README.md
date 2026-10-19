@@ -1,6 +1,6 @@
 # 계산 모델과 독립 검증 / Computational models and independent checks
 
-Python 표준 라이브러리만 사용하는 교육용 모델이다. 실행 위치는 저장소 루트다.
+Python 표준 라이브러리만 사용하는 교육용 모델입니다. 실행 위치는 저장소 루트입니다.
 
 ```bash
 python -m unittest discover -s 예제_examples/확장기초_extended/ai_data -p 'test_*.py' -v
@@ -18,7 +18,7 @@ python -m unittest discover -s 예제_examples/확장기초_extended/ai_data -p 
 | 수치해석 | `poisson_sine`, `decay_euler` | 이산 고유모드·격자/시간 수렴·플럭스 보존 |
 | HTTP 계약 | `IdempotencyStore`, `page_after` | 재시도·본문 충돌·페이지 누락/중복 |
 
-GPU 함수는 주소와 자원 계산이며 CUDA를 실행하지 않는다. 분산·HTTP 예제는 단일 프로세스 계약 모델이고 네트워크 장애·동시성·영속 저장을 구현하지 않는다. 학습·검색·양자화 검증은 작은 수학적 사례에 한정되며 실제 모델의 정확도나 배포 성능을 측정하지 않는다.
+GPU 함수는 주소와 자원 계산이며 CUDA를 실행하지 않습니다. 분산·HTTP 예제는 단일 프로세스 계약 모델이고 네트워크 장애·동시성·영속 저장을 구현하지 않습니다. 학습·검색·양자화 검증은 작은 수학적 사례에 한정되며 실제 모델의 정확도나 배포 성능을 측정하지 않습니다.
 
 ## English
 

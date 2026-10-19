@@ -14,7 +14,7 @@ There are 2–10 players and n–100 lowercase words of length 2–50. Return [p
 
 Use a set to detect repeated words and compare the previous word’s last letter with the current first letter. Convert the first failing index into player number and turn.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 정방향으로 검사하므로 처음 발견한 위반이 최초 탈락입니다. 0기반 인덱스 i에서 사람은 i%n+1, 그 사람의 차례는 i//n+1입니다.
 

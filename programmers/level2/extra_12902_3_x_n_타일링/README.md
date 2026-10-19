@@ -14,7 +14,7 @@
 
 A 3×n board must have even area, so odd n is impossible. Grouping ordinary width-two tilings and the longer special boundary patterns simplifies the recurrence to f(n)=4f(n−2)−f(n−4).
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 먼저 f(n)=3f(n−2)+2Σf(n−4),f(n−6),…를 얻습니다. n−2에 대한 같은 식을 빼면 합이 소거되어 4f(n−2)−f(n−4)가 됩니다. f(0)=1,f(2)=3입니다.
 

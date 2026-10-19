@@ -14,7 +14,7 @@ C와 C#을 다른 한 글자로 바꿔 한 음을 한 문자로 맞춥니다. �
 
 Normalize sharp notes to distinct single characters so one note occupies one character. Repeat each score for its playback duration, then choose the longest matching song, preserving the first on ties.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 정규화는 음과 문자 사이의 일대일 대응이므로 C와 C#의 부분 일치를 막습니다. 실제 재생 구간에서 연속 부분 문자열을 찾고 엄격히 더 긴 곡만 갱신하면 동률 규칙도 유지됩니다.
 

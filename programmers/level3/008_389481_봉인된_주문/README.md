@@ -14,7 +14,7 @@ n is 1–10¹⁵ and there are 1–300000 distinct banned lowercase words of len
 
 Encode words as bijective base-26 numbers, matching length-first then lexicographic order. Sort banned ranks and increment the target for every banned rank not exceeding it, then decode the result.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 정렬된 삭제 번호를 앞에서 처리할 때 현재 n은 이미 처리한 삭제만 반영한 정답 순위입니다. 그 이하의 삭제 한 개는 목표를 한 칸 밀고, 더 큰 삭제는 영향을 주지 않아 불변식이 유지됩니다.
 

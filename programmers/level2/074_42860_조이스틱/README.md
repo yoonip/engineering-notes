@@ -14,7 +14,7 @@ name has 1–20 uppercase letters. Start with all A characters and the cursor at
 
 Vertical changes from A are independent per character. For horizontal movement, consider skipping a consecutive A run by turning around, checking both choices of which side is traversed twice.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 필요한 위치를 방문하는 최단 경로는 불필요한 여러 번의 왕복을 지울 수 있어 최대 한 번 방향을 바꾸는 형태로 줄어듭니다. A 구간 앞 길이 i와 뒤 길이 t에 대해 2i+t, i+2t를 비교합니다.
 

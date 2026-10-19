@@ -14,7 +14,7 @@ Both dimensions are 1–1000 and cells are binary. Return the area, not the side
 
 Compute the largest all-one square ending at each bottom-right corner. At a one cell, add one to the minimum of the top, left and top-left sizes. Store one DP row and the old diagonal.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 변 길이 s의 정사각형을 늘리려면 세 인접 방향 모두 최소 s−1 크기를 갖춰야 합니다. 가장 작은 방향이 한계이며 현재 칸이 1이면 그 최소 크기를 실제로 함께 확장할 수 있습니다.
 

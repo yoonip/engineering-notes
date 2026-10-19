@@ -1,6 +1,6 @@
 # Level 1 — 풀이와 코드 / Solutions and code
 
-언어 필터 없이 전체 목록을 대조한 119문제를 모았다. 모든 문제에 코드와 줄별 문법 설명이 있다. 예전에 완료한 제출본도 포함하며, 당시 100점 원본과 이번 주석본을 구분했다.
+언어 필터 없이 전체 목록을 대조한 119문제를 모았습니다. 모든 문제에 코드와 줄별 문법 설명이 있습니다. 예전에 완료한 제출본도 포함하며, 당시 100점 원본과 이번 주석본을 구분했습니다.
 
 119 problems, matched against the complete unfiltered list for this level. Every entry has code and Korean line-by-line syntax notes. Older accepted submissions are included, with their original source and the newly annotated copy distinguished.
 
@@ -8,122 +8,122 @@
 
 | ID | 문제 / Problem | 언어 / Language | 코드 / Source |
 |---|---|---|---|
-| 468371 | [노란불 신호등](extra_468371_%EB%85%B8%EB%9E%80%EB%B6%88_%EC%8B%A0%ED%98%B8%EB%93%B1/README.md) | Python3 | [코드](extra_468371_%EB%85%B8%EB%9E%80%EB%B6%88_%EC%8B%A0%ED%98%B8%EB%93%B1/solution.py) |
-| 468370 | [중요한 단어를 스포 방지](extra_468370_%EC%A4%91%EC%9A%94%ED%95%9C_%EB%8B%A8%EC%96%B4%EB%A5%BC_%EC%8A%A4%ED%8F%AC_%EB%B0%A9%EC%A7%80/README.md) | Python3 | [코드](extra_468370_%EC%A4%91%EC%9A%94%ED%95%9C_%EB%8B%A8%EC%96%B4%EB%A5%BC_%EC%8A%A4%ED%8F%AC_%EB%B0%A9%EC%A7%80/solution.py) |
-| 389478 | [택배 상자 꺼내기](extra_389478_%ED%83%9D%EB%B0%B0_%EC%83%81%EC%9E%90_%EA%BA%BC%EB%82%B4%EA%B8%B0/README.md) | Python3 | [코드](extra_389478_%ED%83%9D%EB%B0%B0_%EC%83%81%EC%9E%90_%EA%BA%BC%EB%82%B4%EA%B8%B0/solution.py) |
-| 388351 | [유연근무제](extra_388351_%EC%9C%A0%EC%97%B0%EA%B7%BC%EB%AC%B4%EC%A0%9C/README.md) | Python3 | [코드](extra_388351_%EC%9C%A0%EC%97%B0%EA%B7%BC%EB%AC%B4%EC%A0%9C/solution.py) |
-| 340213 | [&#91;PCCP 기출문제&#93; 1번 / 동영상 재생기](extra_340213_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%8F%99%EC%98%81%EC%83%81_%EC%9E%AC%EC%83%9D%EA%B8%B0/README.md) | Python3 | [코드](extra_340213_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%8F%99%EC%98%81%EC%83%81_%EC%9E%AC%EC%83%9D%EA%B8%B0/solution.py) |
-| 340199 | [&#91;PCCE 기출문제&#93; 9번 / 지폐 접기](extra_340199_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_9%EB%B2%88___%EC%A7%80%ED%8F%90_%EC%A0%91%EA%B8%B0/README.md) | Python3 | [코드](extra_340199_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_9%EB%B2%88___%EC%A7%80%ED%8F%90_%EC%A0%91%EA%B8%B0/solution.py) |
-| 340198 | [&#91;PCCE 기출문제&#93; 10번 / 공원](extra_340198_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_10%EB%B2%88___%EA%B3%B5%EC%9B%90/README.md) | Python3 | [코드](extra_340198_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_10%EB%B2%88___%EA%B3%B5%EC%9B%90/solution.py) |
-| 301646 | [특정 형질을 가지는 대장균 찾기](extra_301646_%ED%8A%B9%EC%A0%95_%ED%98%95%EC%A7%88%EC%9D%84_%EA%B0%80%EC%A7%80%EB%8A%94_%EB%8C%80%EC%9E%A5%EA%B7%A0_%EC%B0%BE%EA%B8%B0/README.md) | MySQL | [코드](extra_301646_%ED%8A%B9%EC%A0%95_%ED%98%95%EC%A7%88%EC%9D%84_%EA%B0%80%EC%A7%80%EB%8A%94_%EB%8C%80%EC%9E%A5%EA%B7%A0_%EC%B0%BE%EA%B8%B0/solution.sql) |
-| 298517 | [가장 큰 물고기 10마리 구하기](extra_298517_%EA%B0%80%EC%9E%A5_%ED%81%B0_%EB%AC%BC%EA%B3%A0%EA%B8%B0_10%EB%A7%88%EB%A6%AC_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_298517_%EA%B0%80%EC%9E%A5_%ED%81%B0_%EB%AC%BC%EA%B3%A0%EA%B8%B0_10%EB%A7%88%EB%A6%AC_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 298516 | [한 해에 잡은 물고기 수 구하기](extra_298516_%ED%95%9C_%ED%95%B4%EC%97%90_%EC%9E%A1%EC%9D%80_%EB%AC%BC%EA%B3%A0%EA%B8%B0_%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_298516_%ED%95%9C_%ED%95%B4%EC%97%90_%EC%9E%A1%EC%9D%80_%EB%AC%BC%EA%B3%A0%EA%B8%B0_%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 298515 | [잡은 물고기 중 가장 큰 물고기의 길이 구하기](extra_298515_%EC%9E%A1%EC%9D%80_%EB%AC%BC%EA%B3%A0%EA%B8%B0_%EC%A4%91_%EA%B0%80%EC%9E%A5_%ED%81%B0_%EB%AC%BC%EA%B3%A0%EA%B8%B0%EC%9D%98_%EA%B8%B8%EC%9D%B4_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_298515_%EC%9E%A1%EC%9D%80_%EB%AC%BC%EA%B3%A0%EA%B8%B0_%EC%A4%91_%EA%B0%80%EC%9E%A5_%ED%81%B0_%EB%AC%BC%EA%B3%A0%EA%B8%B0%EC%9D%98_%EA%B8%B8%EC%9D%B4_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 293259 | [잡은 물고기의 평균 길이 구하기](extra_293259_%EC%9E%A1%EC%9D%80_%EB%AC%BC%EA%B3%A0%EA%B8%B0%EC%9D%98_%ED%8F%89%EA%B7%A0_%EA%B8%B8%EC%9D%B4_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_293259_%EC%9E%A1%EC%9D%80_%EB%AC%BC%EA%B3%A0%EA%B8%B0%EC%9D%98_%ED%8F%89%EA%B7%A0_%EA%B8%B8%EC%9D%B4_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 293258 | [잔챙이 잡은 수 구하기](extra_293258_%EC%9E%94%EC%B1%99%EC%9D%B4_%EC%9E%A1%EC%9D%80_%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_293258_%EC%9E%94%EC%B1%99%EC%9D%B4_%EC%9E%A1%EC%9D%80_%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 276013 | [Python 개발자 찾기](extra_276013_Python_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%B0%BE%EA%B8%B0/README.md) | MySQL | [코드](extra_276013_Python_%EA%B0%9C%EB%B0%9C%EC%9E%90_%EC%B0%BE%EA%B8%B0/solution.sql) |
-| 258712 | [가장 많이 받은 선물](extra_258712_%EA%B0%80%EC%9E%A5_%EB%A7%8E%EC%9D%B4_%EB%B0%9B%EC%9D%80_%EC%84%A0%EB%AC%BC/README.md) | Python3 | [코드](extra_258712_%EA%B0%80%EC%9E%A5_%EB%A7%8E%EC%9D%B4_%EB%B0%9B%EC%9D%80_%EC%84%A0%EB%AC%BC/solution.py) |
-| 250137 | [&#91;PCCP 기출문제&#93; 1번 / 붕대 감기](extra_250137_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%B6%95%EB%8C%80_%EA%B0%90%EA%B8%B0/README.md) | Python3 | [코드](extra_250137_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%B6%95%EB%8C%80_%EA%B0%90%EA%B8%B0/solution.py) |
-| 250125 | [&#91;PCCE 기출문제&#93; 9번 / 이웃한 칸](extra_250125_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_9%EB%B2%88___%EC%9D%B4%EC%9B%83%ED%95%9C_%EC%B9%B8/README.md) | Python3 | [코드](extra_250125_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_9%EB%B2%88___%EC%9D%B4%EC%9B%83%ED%95%9C_%EC%B9%B8/solution.py) |
-| 250121 | [&#91;PCCE 기출문제&#93; 10번 / 데이터 분석](extra_250121_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_10%EB%B2%88___%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%B6%84%EC%84%9D/README.md) | Python3 | [코드](extra_250121_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_10%EB%B2%88___%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%B6%84%EC%84%9D/solution.py) |
-| 178871 | [달리기 경주](extra_178871_%EB%8B%AC%EB%A6%AC%EA%B8%B0_%EA%B2%BD%EC%A3%BC/README.md) | Python3 | [코드](extra_178871_%EB%8B%AC%EB%A6%AC%EA%B8%B0_%EA%B2%BD%EC%A3%BC/solution.py) |
-| 176963 | [추억 점수](extra_176963_%EC%B6%94%EC%96%B5_%EC%A0%90%EC%88%98/README.md) | Python3 | [코드](extra_176963_%EC%B6%94%EC%96%B5_%EC%A0%90%EC%88%98/solution.py) |
-| 172928 | [공원 산책](extra_172928_%EA%B3%B5%EC%9B%90_%EC%82%B0%EC%B1%85/README.md) | Python3 | [코드](extra_172928_%EA%B3%B5%EC%9B%90_%EC%82%B0%EC%B1%85/solution.py) |
-| 164673 | [조건에 부합하는 중고거래 댓글 조회하기](extra_164673_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%B6%80%ED%95%A9%ED%95%98%EB%8A%94_%EC%A4%91%EA%B3%A0%EA%B1%B0%EB%9E%98_%EB%8C%93%EA%B8%80_%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_164673_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%B6%80%ED%95%A9%ED%95%98%EB%8A%94_%EC%A4%91%EA%B3%A0%EA%B1%B0%EB%9E%98_%EB%8C%93%EA%B8%80_%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/solution.sql) |
-| 161990 | [바탕화면 정리](extra_161990_%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4_%EC%A0%95%EB%A6%AC/README.md) | Python3 | [코드](extra_161990_%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4_%EC%A0%95%EB%A6%AC/solution.py) |
-| 161989 | [덧칠하기](extra_161989_%EB%8D%A7%EC%B9%A0%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_161989_%EB%8D%A7%EC%B9%A0%ED%95%98%EA%B8%B0/solution.py) |
-| 160586 | [대충 만든 자판](extra_160586_%EB%8C%80%EC%B6%A9_%EB%A7%8C%EB%93%A0_%EC%9E%90%ED%8C%90/README.md) | Python3 | [코드](extra_160586_%EB%8C%80%EC%B6%A9_%EB%A7%8C%EB%93%A0_%EC%9E%90%ED%8C%90/solution.py) |
-| 159994 | [카드 뭉치](extra_159994_%EC%B9%B4%EB%93%9C_%EB%AD%89%EC%B9%98/README.md) | Python3 | [코드](extra_159994_%EC%B9%B4%EB%93%9C_%EB%AD%89%EC%B9%98/solution.py) |
-| 157343 | [특정 옵션이 포함된 자동차 리스트 구하기](extra_157343_%ED%8A%B9%EC%A0%95_%EC%98%B5%EC%85%98%EC%9D%B4_%ED%8F%AC%ED%95%A8%EB%90%9C_%EC%9E%90%EB%8F%99%EC%B0%A8_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_157343_%ED%8A%B9%EC%A0%95_%EC%98%B5%EC%85%98%EC%9D%B4_%ED%8F%AC%ED%95%A8%EB%90%9C_%EC%9E%90%EB%8F%99%EC%B0%A8_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 155652 | [둘만의 암호](extra_155652_%EB%91%98%EB%A7%8C%EC%9D%98_%EC%95%94%ED%98%B8/README.md) | Python3 | [코드](extra_155652_%EB%91%98%EB%A7%8C%EC%9D%98_%EC%95%94%ED%98%B8/solution.py) |
-| 151138 | [자동차 대여 기록에서 장기/단기 대여 구분하기](extra_151138_%EC%9E%90%EB%8F%99%EC%B0%A8_%EB%8C%80%EC%97%AC_%EA%B8%B0%EB%A1%9D%EC%97%90%EC%84%9C_%EC%9E%A5%EA%B8%B0_%EB%8B%A8%EA%B8%B0_%EB%8C%80%EC%97%AC_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_151138_%EC%9E%90%EB%8F%99%EC%B0%A8_%EB%8C%80%EC%97%AC_%EA%B8%B0%EB%A1%9D%EC%97%90%EC%84%9C_%EC%9E%A5%EA%B8%B0_%EB%8B%A8%EA%B8%B0_%EB%8C%80%EC%97%AC_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/solution.sql) |
-| 151136 | [평균 일일 대여 요금 구하기](extra_151136_%ED%8F%89%EA%B7%A0_%EC%9D%BC%EC%9D%BC_%EB%8C%80%EC%97%AC_%EC%9A%94%EA%B8%88_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_151136_%ED%8F%89%EA%B7%A0_%EC%9D%BC%EC%9D%BC_%EB%8C%80%EC%97%AC_%EC%9A%94%EA%B8%88_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 150370 | [개인정보 수집 유효기간](extra_150370_%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4_%EC%88%98%EC%A7%91_%EC%9C%A0%ED%9A%A8%EA%B8%B0%EA%B0%84/README.md) | Python3 | [코드](extra_150370_%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4_%EC%88%98%EC%A7%91_%EC%9C%A0%ED%9A%A8%EA%B8%B0%EA%B0%84/solution.py) |
-| 147355 | [크기가 작은 부분 문자열](extra_147355_%ED%81%AC%EA%B8%B0%EA%B0%80_%EC%9E%91%EC%9D%80_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4/README.md) | Python3 | [코드](extra_147355_%ED%81%AC%EA%B8%B0%EA%B0%80_%EC%9E%91%EC%9D%80_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4/solution.py) |
-| 144853 | [조건에 맞는 도서 리스트 출력하기](extra_144853_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EB%8A%94_%EB%8F%84%EC%84%9C_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_144853_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EB%8A%94_%EB%8F%84%EC%84%9C_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.sql) |
-| 142086 | [가장 가까운 같은 글자](extra_142086_%EA%B0%80%EC%9E%A5_%EA%B0%80%EA%B9%8C%EC%9A%B4_%EA%B0%99%EC%9D%80_%EA%B8%80%EC%9E%90/README.md) | Python3 | [코드](extra_142086_%EA%B0%80%EC%9E%A5_%EA%B0%80%EA%B9%8C%EC%9A%B4_%EA%B0%99%EC%9D%80_%EA%B8%80%EC%9E%90/solution.py) |
-| 140108 | [문자열 나누기](extra_140108_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%82%98%EB%88%84%EA%B8%B0/README.md) | Python3 | [코드](extra_140108_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%82%98%EB%88%84%EA%B8%B0/solution.py) |
-| 138477 | [명예의 전당 (1)](extra_138477_%EB%AA%85%EC%98%88%EC%9D%98_%EC%A0%84%EB%8B%B9_%281%29/README.md) | Python3 | [코드](extra_138477_%EB%AA%85%EC%98%88%EC%9D%98_%EC%A0%84%EB%8B%B9_%281%29/solution.py) |
-| 136798 | [기사단원의 무기](extra_136798_%EA%B8%B0%EC%82%AC%EB%8B%A8%EC%9B%90%EC%9D%98_%EB%AC%B4%EA%B8%B0/README.md) | Python3 | [코드](extra_136798_%EA%B8%B0%EC%82%AC%EB%8B%A8%EC%9B%90%EC%9D%98_%EB%AC%B4%EA%B8%B0/solution.py) |
-| 135808 | [과일 장수](extra_135808_%EA%B3%BC%EC%9D%BC_%EC%9E%A5%EC%88%98/README.md) | Python3 | [코드](extra_135808_%EA%B3%BC%EC%9D%BC_%EC%9E%A5%EC%88%98/solution.py) |
-| 134240 | [푸드 파이트 대회](extra_134240_%ED%91%B8%EB%93%9C_%ED%8C%8C%EC%9D%B4%ED%8A%B8_%EB%8C%80%ED%9A%8C/README.md) | Python3 | [코드](extra_134240_%ED%91%B8%EB%93%9C_%ED%8C%8C%EC%9D%B4%ED%8A%B8_%EB%8C%80%ED%9A%8C/solution.py) |
-| 133502 | [햄버거 만들기](extra_133502_%ED%96%84%EB%B2%84%EA%B1%B0_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_133502_%ED%96%84%EB%B2%84%EA%B1%B0_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 133499 | [옹알이 (2)](extra_133499_%EC%98%B9%EC%95%8C%EC%9D%B4_%282%29/README.md) | Python3 | [코드](extra_133499_%EC%98%B9%EC%95%8C%EC%9D%B4_%282%29/solution.py) |
-| 133025 | [과일로 만든 아이스크림 고르기](extra_133025_%EA%B3%BC%EC%9D%BC%EB%A1%9C_%EB%A7%8C%EB%93%A0_%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC_%EA%B3%A0%EB%A5%B4%EA%B8%B0/README.md) | MySQL | [코드](extra_133025_%EA%B3%BC%EC%9D%BC%EB%A1%9C_%EB%A7%8C%EB%93%A0_%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC_%EA%B3%A0%EB%A5%B4%EA%B8%B0/solution.sql) |
-| 133024 | [인기있는 아이스크림](extra_133024_%EC%9D%B8%EA%B8%B0%EC%9E%88%EB%8A%94_%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC/README.md) | MySQL | [코드](extra_133024_%EC%9D%B8%EA%B8%B0%EC%9E%88%EB%8A%94_%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC/solution.sql) |
-| 132267 | [콜라 문제](extra_132267_%EC%BD%9C%EB%9D%BC_%EB%AC%B8%EC%A0%9C/README.md) | Python3 | [코드](extra_132267_%EC%BD%9C%EB%9D%BC_%EB%AC%B8%EC%A0%9C/solution.py) |
-| 132203 | [흉부외과 또는 일반외과 의사 목록 출력하기](extra_132203_%ED%9D%89%EB%B6%80%EC%99%B8%EA%B3%BC_%EB%98%90%EB%8A%94_%EC%9D%BC%EB%B0%98%EC%99%B8%EA%B3%BC_%EC%9D%98%EC%82%AC_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_132203_%ED%9D%89%EB%B6%80%EC%99%B8%EA%B3%BC_%EB%98%90%EB%8A%94_%EC%9D%BC%EB%B0%98%EC%99%B8%EA%B3%BC_%EC%9D%98%EC%82%AC_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.sql) |
-| 132201 | [12세 이하인 여자 환자 목록 출력하기](extra_132201_12%EC%84%B8_%EC%9D%B4%ED%95%98%EC%9D%B8_%EC%97%AC%EC%9E%90_%ED%99%98%EC%9E%90_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_132201_12%EC%84%B8_%EC%9D%B4%ED%95%98%EC%9D%B8_%EC%97%AC%EC%9E%90_%ED%99%98%EC%9E%90_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.sql) |
-| 131705 | [삼총사](extra_131705_%EC%82%BC%EC%B4%9D%EC%82%AC/README.md) | Python3 | [코드](extra_131705_%EC%82%BC%EC%B4%9D%EC%82%AC/solution.py) |
-| 131697 | [가장 비싼 상품 구하기](extra_131697_%EA%B0%80%EC%9E%A5_%EB%B9%84%EC%8B%BC_%EC%83%81%ED%92%88_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_131697_%EA%B0%80%EC%9E%A5_%EB%B9%84%EC%8B%BC_%EC%83%81%ED%92%88_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 131535 | [조건에 맞는 회원수 구하기](extra_131535_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EB%8A%94_%ED%9A%8C%EC%9B%90%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_131535_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EB%8A%94_%ED%9A%8C%EC%9B%90%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 131528 | [나이 정보가 없는 회원 수 구하기](extra_131528_%EB%82%98%EC%9D%B4_%EC%A0%95%EB%B3%B4%EA%B0%80_%EC%97%86%EB%8A%94_%ED%9A%8C%EC%9B%90_%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_131528_%EB%82%98%EC%9D%B4_%EC%A0%95%EB%B3%B4%EA%B0%80_%EC%97%86%EB%8A%94_%ED%9A%8C%EC%9B%90_%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 131128 | [숫자 짝꿍](extra_131128_%EC%88%AB%EC%9E%90_%EC%A7%9D%EA%BF%8D/README.md) | Python3 | [코드](extra_131128_%EC%88%AB%EC%9E%90_%EC%A7%9D%EA%BF%8D/solution.py) |
-| 131114 | [경기도에 위치한 식품창고 목록 출력하기](extra_131114_%EA%B2%BD%EA%B8%B0%EB%8F%84%EC%97%90_%EC%9C%84%EC%B9%98%ED%95%9C_%EC%8B%9D%ED%92%88%EC%B0%BD%EA%B3%A0_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_131114_%EA%B2%BD%EA%B8%B0%EB%8F%84%EC%97%90_%EC%9C%84%EC%B9%98%ED%95%9C_%EC%8B%9D%ED%92%88%EC%B0%BD%EA%B3%A0_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.sql) |
-| 131112 | [강원도에 위치한 생산공장 목록 출력하기](extra_131112_%EA%B0%95%EC%9B%90%EB%8F%84%EC%97%90_%EC%9C%84%EC%B9%98%ED%95%9C_%EC%83%9D%EC%82%B0%EA%B3%B5%EC%9E%A5_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_131112_%EA%B0%95%EC%9B%90%EB%8F%84%EC%97%90_%EC%9C%84%EC%B9%98%ED%95%9C_%EC%83%9D%EC%82%B0%EA%B3%B5%EC%9E%A5_%EB%AA%A9%EB%A1%9D_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/solution.sql) |
-| 118666 | [성격 유형 검사하기](extra_118666_%EC%84%B1%EA%B2%A9_%EC%9C%A0%ED%98%95_%EA%B2%80%EC%82%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_118666_%EC%84%B1%EA%B2%A9_%EC%9C%A0%ED%98%95_%EA%B2%80%EC%82%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 92334 | [신고 결과 받기](extra_92334_%EC%8B%A0%EA%B3%A0_%EA%B2%B0%EA%B3%BC_%EB%B0%9B%EA%B8%B0/README.md) | Python3 | [코드](extra_92334_%EC%8B%A0%EA%B3%A0_%EA%B2%B0%EA%B3%BC_%EB%B0%9B%EA%B8%B0/solution.py) |
-| 87389 | [나머지가 1이 되는 수 찾기](extra_87389_%EB%82%98%EB%A8%B8%EC%A7%80%EA%B0%80_1%EC%9D%B4_%EB%90%98%EB%8A%94_%EC%88%98_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_87389_%EB%82%98%EB%A8%B8%EC%A7%80%EA%B0%80_1%EC%9D%B4_%EB%90%98%EB%8A%94_%EC%88%98_%EC%B0%BE%EA%B8%B0/solution.py) |
-| 86491 | [최소직사각형](extra_86491_%EC%B5%9C%EC%86%8C%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95/README.md) | Python3 | [코드](extra_86491_%EC%B5%9C%EC%86%8C%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95/solution.py) |
-| 86051 | [없는 숫자 더하기](extra_86051_%EC%97%86%EB%8A%94_%EC%88%AB%EC%9E%90_%EB%8D%94%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_86051_%EC%97%86%EB%8A%94_%EC%88%AB%EC%9E%90_%EB%8D%94%ED%95%98%EA%B8%B0/solution.py) |
-| 82612 | [부족한 금액 계산하기](extra_82612_%EB%B6%80%EC%A1%B1%ED%95%9C_%EA%B8%88%EC%95%A1_%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_82612_%EB%B6%80%EC%A1%B1%ED%95%9C_%EA%B8%88%EC%95%A1_%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0/solution.py) |
-| 81301 | [숫자 문자열과 영단어](extra_81301_%EC%88%AB%EC%9E%90_%EB%AC%B8%EC%9E%90%EC%97%B4%EA%B3%BC_%EC%98%81%EB%8B%A8%EC%96%B4/README.md) | Python3 | [코드](extra_81301_%EC%88%AB%EC%9E%90_%EB%AC%B8%EC%9E%90%EC%97%B4%EA%B3%BC_%EC%98%81%EB%8B%A8%EC%96%B4/solution.py) |
-| 77884 | [약수의 개수와 덧셈](extra_77884_%EC%95%BD%EC%88%98%EC%9D%98_%EA%B0%9C%EC%88%98%EC%99%80_%EB%8D%A7%EC%85%88/README.md) | Python3 | [코드](extra_77884_%EC%95%BD%EC%88%98%EC%9D%98_%EA%B0%9C%EC%88%98%EC%99%80_%EB%8D%A7%EC%85%88/solution.py) |
-| 77484 | [로또의 최고 순위와 최저 순위](extra_77484_%EB%A1%9C%EB%98%90%EC%9D%98_%EC%B5%9C%EA%B3%A0_%EC%88%9C%EC%9C%84%EC%99%80_%EC%B5%9C%EC%A0%80_%EC%88%9C%EC%9C%84/README.md) | Python3 | [코드](extra_77484_%EB%A1%9C%EB%98%90%EC%9D%98_%EC%B5%9C%EA%B3%A0_%EC%88%9C%EC%9C%84%EC%99%80_%EC%B5%9C%EC%A0%80_%EC%88%9C%EC%9C%84/solution.py) |
-| 76501 | [음양 더하기](extra_76501_%EC%9D%8C%EC%96%91_%EB%8D%94%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_76501_%EC%9D%8C%EC%96%91_%EB%8D%94%ED%95%98%EA%B8%B0/solution.py) |
-| 72410 | [신규 아이디 추천](extra_72410_%EC%8B%A0%EA%B7%9C_%EC%95%84%EC%9D%B4%EB%94%94_%EC%B6%94%EC%B2%9C/README.md) | Python3 | [코드](extra_72410_%EC%8B%A0%EA%B7%9C_%EC%95%84%EC%9D%B4%EB%94%94_%EC%B6%94%EC%B2%9C/solution.py) |
-| 70128 | [내적](extra_70128_%EB%82%B4%EC%A0%81/README.md) | Python3 | [코드](extra_70128_%EB%82%B4%EC%A0%81/solution.py) |
-| 68935 | [3진법 뒤집기](extra_68935_3%EC%A7%84%EB%B2%95_%EB%92%A4%EC%A7%91%EA%B8%B0/README.md) | Python3 | [코드](extra_68935_3%EC%A7%84%EB%B2%95_%EB%92%A4%EC%A7%91%EA%B8%B0/solution.py) |
-| 68644 | [두 개 뽑아서 더하기](extra_68644_%EB%91%90_%EA%B0%9C_%EB%BD%91%EC%95%84%EC%84%9C_%EB%8D%94%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_68644_%EB%91%90_%EA%B0%9C_%EB%BD%91%EC%95%84%EC%84%9C_%EB%8D%94%ED%95%98%EA%B8%B0/solution.py) |
-| 67256 | [키패드 누르기](extra_67256_%ED%82%A4%ED%8C%A8%EB%93%9C_%EB%88%84%EB%A5%B4%EA%B8%B0/README.md) | Python3 | [코드](extra_67256_%ED%82%A4%ED%8C%A8%EB%93%9C_%EB%88%84%EB%A5%B4%EA%B8%B0/solution.py) |
-| 64061 | [크레인 인형뽑기 게임](extra_64061_%ED%81%AC%EB%A0%88%EC%9D%B8_%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0_%EA%B2%8C%EC%9E%84/README.md) | Python3 | [코드](extra_64061_%ED%81%AC%EB%A0%88%EC%9D%B8_%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0_%EA%B2%8C%EC%9E%84/solution.py) |
-| 59415 | [최댓값 구하기](extra_59415_%EC%B5%9C%EB%8C%93%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_59415_%EC%B5%9C%EB%8C%93%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 59407 | [이름이 있는 동물의 아이디](extra_59407_%EC%9D%B4%EB%A6%84%EC%9D%B4_%EC%9E%88%EB%8A%94_%EB%8F%99%EB%AC%BC%EC%9D%98_%EC%95%84%EC%9D%B4%EB%94%94/README.md) | MySQL | [코드](extra_59407_%EC%9D%B4%EB%A6%84%EC%9D%B4_%EC%9E%88%EB%8A%94_%EB%8F%99%EB%AC%BC%EC%9D%98_%EC%95%84%EC%9D%B4%EB%94%94/solution.sql) |
-| 59405 | [상위 n개 레코드](extra_59405_%EC%83%81%EC%9C%84_n%EA%B0%9C_%EB%A0%88%EC%BD%94%EB%93%9C/README.md) | MySQL | [코드](extra_59405_%EC%83%81%EC%9C%84_n%EA%B0%9C_%EB%A0%88%EC%BD%94%EB%93%9C/solution.sql) |
-| 59404 | [여러 기준으로 정렬하기](extra_59404_%EC%97%AC%EB%9F%AC_%EA%B8%B0%EC%A4%80%EC%9C%BC%EB%A1%9C_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_59404_%EC%97%AC%EB%9F%AC_%EA%B8%B0%EC%A4%80%EC%9C%BC%EB%A1%9C_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 59403 | [동물의 아이디와 이름](extra_59403_%EB%8F%99%EB%AC%BC%EC%9D%98_%EC%95%84%EC%9D%B4%EB%94%94%EC%99%80_%EC%9D%B4%EB%A6%84/README.md) | MySQL | [코드](extra_59403_%EB%8F%99%EB%AC%BC%EC%9D%98_%EC%95%84%EC%9D%B4%EB%94%94%EC%99%80_%EC%9D%B4%EB%A6%84/solution.sql) |
-| 59039 | [이름이 없는 동물의 아이디](extra_59039_%EC%9D%B4%EB%A6%84%EC%9D%B4_%EC%97%86%EB%8A%94_%EB%8F%99%EB%AC%BC%EC%9D%98_%EC%95%84%EC%9D%B4%EB%94%94/README.md) | MySQL | [코드](extra_59039_%EC%9D%B4%EB%A6%84%EC%9D%B4_%EC%97%86%EB%8A%94_%EB%8F%99%EB%AC%BC%EC%9D%98_%EC%95%84%EC%9D%B4%EB%94%94/solution.sql) |
-| 59037 | [어린 동물 찾기](extra_59037_%EC%96%B4%EB%A6%B0_%EB%8F%99%EB%AC%BC_%EC%B0%BE%EA%B8%B0/README.md) | MySQL | [코드](extra_59037_%EC%96%B4%EB%A6%B0_%EB%8F%99%EB%AC%BC_%EC%B0%BE%EA%B8%B0/solution.sql) |
-| 59036 | [아픈 동물 찾기](extra_59036_%EC%95%84%ED%94%88_%EB%8F%99%EB%AC%BC_%EC%B0%BE%EA%B8%B0/README.md) | MySQL | [코드](extra_59036_%EC%95%84%ED%94%88_%EB%8F%99%EB%AC%BC_%EC%B0%BE%EA%B8%B0/solution.sql) |
-| 59035 | [역순 정렬하기](extra_59035_%EC%97%AD%EC%88%9C_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_59035_%EC%97%AD%EC%88%9C_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/solution.sql) |
-| 59034 | [모든 레코드 조회하기](extra_59034_%EB%AA%A8%EB%93%A0_%EB%A0%88%EC%BD%94%EB%93%9C_%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/README.md) | MySQL | [코드](extra_59034_%EB%AA%A8%EB%93%A0_%EB%A0%88%EC%BD%94%EB%93%9C_%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/solution.sql) |
-| 42889 | [실패율](extra_42889_%EC%8B%A4%ED%8C%A8%EC%9C%A8/README.md) | Python3 | [코드](extra_42889_%EC%8B%A4%ED%8C%A8%EC%9C%A8/solution.py) |
-| 42862 | [체육복](extra_42862_%EC%B2%B4%EC%9C%A1%EB%B3%B5/README.md) | Python3 | [코드](extra_42862_%EC%B2%B4%EC%9C%A1%EB%B3%B5/solution.py) |
-| 42840 | [모의고사](extra_42840_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/README.md) | Python3 | [코드](extra_42840_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/solution.py) |
-| 42748 | [K번째수](extra_42748_K%EB%B2%88%EC%A7%B8%EC%88%98/README.md) | Python3 | [코드](extra_42748_K%EB%B2%88%EC%A7%B8%EC%88%98/solution.py) |
-| 42576 | [완주하지 못한 선수](extra_42576_%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80_%EB%AA%BB%ED%95%9C_%EC%84%A0%EC%88%98/README.md) | Python3 | [코드](extra_42576_%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80_%EB%AA%BB%ED%95%9C_%EC%84%A0%EC%88%98/solution.py) |
-| 17682 | [&#91;1차&#93; 다트 게임](extra_17682_%5B1%EC%B0%A8%5D_%EB%8B%A4%ED%8A%B8_%EA%B2%8C%EC%9E%84/README.md) | Python3 | [코드](extra_17682_%5B1%EC%B0%A8%5D_%EB%8B%A4%ED%8A%B8_%EA%B2%8C%EC%9E%84/solution.py) |
-| 17681 | [&#91;1차&#93; 비밀지도](extra_17681_%5B1%EC%B0%A8%5D_%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84/README.md) | Python3 | [코드](extra_17681_%5B1%EC%B0%A8%5D_%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84/solution.py) |
-| 12982 | [예산](extra_12982_%EC%98%88%EC%82%B0/README.md) | Python3 | [코드](extra_12982_%EC%98%88%EC%82%B0/solution.py) |
-| 12977 | [소수 만들기](extra_12977_%EC%86%8C%EC%88%98_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_12977_%EC%86%8C%EC%88%98_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 12969 | [직사각형 별찍기](extra_12969_%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95_%EB%B3%84%EC%B0%8D%EA%B8%B0/README.md) | Python3 | [코드](extra_12969_%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95_%EB%B3%84%EC%B0%8D%EA%B8%B0/solution.py) |
-| 12954 | [x만큼 간격이 있는 n개의 숫자](extra_12954_x%EB%A7%8C%ED%81%BC_%EA%B0%84%EA%B2%A9%EC%9D%B4_%EC%9E%88%EB%8A%94_n%EA%B0%9C%EC%9D%98_%EC%88%AB%EC%9E%90/README.md) | Python3 | [코드](extra_12954_x%EB%A7%8C%ED%81%BC_%EA%B0%84%EA%B2%A9%EC%9D%B4_%EC%9E%88%EB%8A%94_n%EA%B0%9C%EC%9D%98_%EC%88%AB%EC%9E%90/solution.py) |
-| 12950 | [행렬의 덧셈](extra_12950_%ED%96%89%EB%A0%AC%EC%9D%98_%EB%8D%A7%EC%85%88/README.md) | Python3 | [코드](extra_12950_%ED%96%89%EB%A0%AC%EC%9D%98_%EB%8D%A7%EC%85%88/solution.py) |
-| 12948 | [핸드폰 번호 가리기](extra_12948_%ED%95%B8%EB%93%9C%ED%8F%B0_%EB%B2%88%ED%98%B8_%EA%B0%80%EB%A6%AC%EA%B8%B0/README.md) | Python3 | [코드](extra_12948_%ED%95%B8%EB%93%9C%ED%8F%B0_%EB%B2%88%ED%98%B8_%EA%B0%80%EB%A6%AC%EA%B8%B0/solution.py) |
-| 12947 | [하샤드 수](extra_12947_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/README.md) | Python3 | [코드](extra_12947_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/solution.py) |
-| 12944 | [평균 구하기](extra_12944_%ED%8F%89%EA%B7%A0_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_12944_%ED%8F%89%EA%B7%A0_%EA%B5%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 12943 | [콜라츠 추측](extra_12943_%EC%BD%9C%EB%9D%BC%EC%B8%A0_%EC%B6%94%EC%B8%A1/README.md) | Python3 | [코드](extra_12943_%EC%BD%9C%EB%9D%BC%EC%B8%A0_%EC%B6%94%EC%B8%A1/solution.py) |
-| 12940 | [최대공약수와 최소공배수](extra_12940_%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80_%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98/README.md) | Python3 | [코드](extra_12940_%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80_%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98/solution.py) |
-| 12937 | [짝수와 홀수](extra_12937_%EC%A7%9D%EC%88%98%EC%99%80_%ED%99%80%EC%88%98/README.md) | Python3 | [코드](extra_12937_%EC%A7%9D%EC%88%98%EC%99%80_%ED%99%80%EC%88%98/solution.py) |
-| 12935 | [제일 작은 수 제거하기](extra_12935_%EC%A0%9C%EC%9D%BC_%EC%9E%91%EC%9D%80_%EC%88%98_%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_12935_%EC%A0%9C%EC%9D%BC_%EC%9E%91%EC%9D%80_%EC%88%98_%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/solution.py) |
-| 12934 | [정수 제곱근 판별](extra_12934_%EC%A0%95%EC%88%98_%EC%A0%9C%EA%B3%B1%EA%B7%BC_%ED%8C%90%EB%B3%84/README.md) | Python3 | [코드](extra_12934_%EC%A0%95%EC%88%98_%EC%A0%9C%EA%B3%B1%EA%B7%BC_%ED%8C%90%EB%B3%84/solution.py) |
-| 12933 | [정수 내림차순으로 배치하기](extra_12933_%EC%A0%95%EC%88%98_%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C_%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_12933_%EC%A0%95%EC%88%98_%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C_%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0/solution.py) |
-| 12932 | [자연수 뒤집어 배열로 만들기](extra_12932_%EC%9E%90%EC%97%B0%EC%88%98_%EB%92%A4%EC%A7%91%EC%96%B4_%EB%B0%B0%EC%97%B4%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_12932_%EC%9E%90%EC%97%B0%EC%88%98_%EB%92%A4%EC%A7%91%EC%96%B4_%EB%B0%B0%EC%97%B4%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 12931 | [자릿수 더하기](extra_12931_%EC%9E%90%EB%A6%BF%EC%88%98_%EB%8D%94%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_12931_%EC%9E%90%EB%A6%BF%EC%88%98_%EB%8D%94%ED%95%98%EA%B8%B0/solution.py) |
-| 12930 | [이상한 문자 만들기](extra_12930_%EC%9D%B4%EC%83%81%ED%95%9C_%EB%AC%B8%EC%9E%90_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_12930_%EC%9D%B4%EC%83%81%ED%95%9C_%EB%AC%B8%EC%9E%90_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
-| 12928 | [약수의 합](extra_12928_%EC%95%BD%EC%88%98%EC%9D%98_%ED%95%A9/README.md) | Python3 | [코드](extra_12928_%EC%95%BD%EC%88%98%EC%9D%98_%ED%95%A9/solution.py) |
-| 12926 | [시저 암호](extra_12926_%EC%8B%9C%EC%A0%80_%EC%95%94%ED%98%B8/README.md) | Python3 | [코드](extra_12926_%EC%8B%9C%EC%A0%80_%EC%95%94%ED%98%B8/solution.py) |
-| 12925 | [문자열을 정수로 바꾸기](extra_12925_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84_%EC%A0%95%EC%88%98%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/README.md) | Python3 | [코드](extra_12925_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84_%EC%A0%95%EC%88%98%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/solution.py) |
-| 12922 | [수박수박수박수박수박수?](extra_12922_%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98_/README.md) | Python3 | [코드](extra_12922_%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98_/solution.py) |
-| 12921 | [소수 찾기](extra_12921_%EC%86%8C%EC%88%98_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_12921_%EC%86%8C%EC%88%98_%EC%B0%BE%EA%B8%B0/solution.py) |
-| 12919 | [서울에서 김서방 찾기](extra_12919_%EC%84%9C%EC%9A%B8%EC%97%90%EC%84%9C_%EA%B9%80%EC%84%9C%EB%B0%A9_%EC%B0%BE%EA%B8%B0/README.md) | Python3 | [코드](extra_12919_%EC%84%9C%EC%9A%B8%EC%97%90%EC%84%9C_%EA%B9%80%EC%84%9C%EB%B0%A9_%EC%B0%BE%EA%B8%B0/solution.py) |
-| 12918 | [문자열 다루기 기본](extra_12918_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%8B%A4%EB%A3%A8%EA%B8%B0_%EA%B8%B0%EB%B3%B8/README.md) | Python3 | [코드](extra_12918_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%8B%A4%EB%A3%A8%EA%B8%B0_%EA%B8%B0%EB%B3%B8/solution.py) |
-| 12917 | [문자열 내림차순으로 배치하기](extra_12917_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C_%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_12917_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C_%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0/solution.py) |
-| 12916 | [문자열 내 p와 y의 개수](extra_12916_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%82%B4_p%EC%99%80_y%EC%9D%98_%EA%B0%9C%EC%88%98/README.md) | Python3 | [코드](extra_12916_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%82%B4_p%EC%99%80_y%EC%9D%98_%EA%B0%9C%EC%88%98/solution.py) |
-| 12915 | [문자열 내 마음대로 정렬하기](extra_12915_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%82%B4_%EB%A7%88%EC%9D%8C%EB%8C%80%EB%A1%9C_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/README.md) | Python3 | [코드](extra_12915_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%82%B4_%EB%A7%88%EC%9D%8C%EB%8C%80%EB%A1%9C_%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/solution.py) |
-| 12912 | [두 정수 사이의 합](extra_12912_%EB%91%90_%EC%A0%95%EC%88%98_%EC%82%AC%EC%9D%B4%EC%9D%98_%ED%95%A9/README.md) | Python3 | [코드](extra_12912_%EB%91%90_%EC%A0%95%EC%88%98_%EC%82%AC%EC%9D%B4%EC%9D%98_%ED%95%A9/solution.py) |
-| 12910 | [나누어 떨어지는 숫자 배열](extra_12910_%EB%82%98%EB%88%84%EC%96%B4_%EB%96%A8%EC%96%B4%EC%A7%80%EB%8A%94_%EC%88%AB%EC%9E%90_%EB%B0%B0%EC%97%B4/README.md) | Python3 | [코드](extra_12910_%EB%82%98%EB%88%84%EC%96%B4_%EB%96%A8%EC%96%B4%EC%A7%80%EB%8A%94_%EC%88%AB%EC%9E%90_%EB%B0%B0%EC%97%B4/solution.py) |
-| 12906 | [같은 숫자는 싫어](extra_12906_%EA%B0%99%EC%9D%80_%EC%88%AB%EC%9E%90%EB%8A%94_%EC%8B%AB%EC%96%B4/README.md) | Python3 | [코드](extra_12906_%EA%B0%99%EC%9D%80_%EC%88%AB%EC%9E%90%EB%8A%94_%EC%8B%AB%EC%96%B4/solution.py) |
-| 12903 | [가운데 글자 가져오기](extra_12903_%EA%B0%80%EC%9A%B4%EB%8D%B0_%EA%B8%80%EC%9E%90_%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/README.md) | Python3 | [코드](extra_12903_%EA%B0%80%EC%9A%B4%EB%8D%B0_%EA%B8%80%EC%9E%90_%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/solution.py) |
-| 12901 | [2016년](extra_12901_2016%EB%85%84/README.md) | Python3 | [코드](extra_12901_2016%EB%85%84/solution.py) |
-| 1845 | [폰켓몬](extra_1845_%ED%8F%B0%EC%BC%93%EB%AA%AC/README.md) | Python3 | [코드](extra_1845_%ED%8F%B0%EC%BC%93%EB%AA%AC/solution.py) |
+| 468371 | [노란불 신호등](extra_468371_노란불_신호등/README.md) | Python3 | [코드](extra_468371_노란불_신호등/solution.py) |
+| 468370 | [중요한 단어를 스포 방지](extra_468370_중요한_단어를_스포_방지/README.md) | Python3 | [코드](extra_468370_중요한_단어를_스포_방지/solution.py) |
+| 389478 | [택배 상자 꺼내기](extra_389478_택배_상자_꺼내기/README.md) | Python3 | [코드](extra_389478_택배_상자_꺼내기/solution.py) |
+| 388351 | [유연근무제](extra_388351_유연근무제/README.md) | Python3 | [코드](extra_388351_유연근무제/solution.py) |
+| 340213 | [&#91;PCCP 기출문제&#93; 1번 / 동영상 재생기](extra_340213_[PCCP_기출문제]_1번___동영상_재생기/README.md) | Python3 | [코드](extra_340213_[PCCP_기출문제]_1번___동영상_재생기/solution.py) |
+| 340199 | [&#91;PCCE 기출문제&#93; 9번 / 지폐 접기](extra_340199_[PCCE_기출문제]_9번___지폐_접기/README.md) | Python3 | [코드](extra_340199_[PCCE_기출문제]_9번___지폐_접기/solution.py) |
+| 340198 | [&#91;PCCE 기출문제&#93; 10번 / 공원](extra_340198_[PCCE_기출문제]_10번___공원/README.md) | Python3 | [코드](extra_340198_[PCCE_기출문제]_10번___공원/solution.py) |
+| 301646 | [특정 형질을 가지는 대장균 찾기](extra_301646_특정_형질을_가지는_대장균_찾기/README.md) | MySQL | [코드](extra_301646_특정_형질을_가지는_대장균_찾기/solution.sql) |
+| 298517 | [가장 큰 물고기 10마리 구하기](extra_298517_가장_큰_물고기_10마리_구하기/README.md) | MySQL | [코드](extra_298517_가장_큰_물고기_10마리_구하기/solution.sql) |
+| 298516 | [한 해에 잡은 물고기 수 구하기](extra_298516_한_해에_잡은_물고기_수_구하기/README.md) | MySQL | [코드](extra_298516_한_해에_잡은_물고기_수_구하기/solution.sql) |
+| 298515 | [잡은 물고기 중 가장 큰 물고기의 길이 구하기](extra_298515_잡은_물고기_중_가장_큰_물고기의_길이_구하기/README.md) | MySQL | [코드](extra_298515_잡은_물고기_중_가장_큰_물고기의_길이_구하기/solution.sql) |
+| 293259 | [잡은 물고기의 평균 길이 구하기](extra_293259_잡은_물고기의_평균_길이_구하기/README.md) | MySQL | [코드](extra_293259_잡은_물고기의_평균_길이_구하기/solution.sql) |
+| 293258 | [잔챙이 잡은 수 구하기](extra_293258_잔챙이_잡은_수_구하기/README.md) | MySQL | [코드](extra_293258_잔챙이_잡은_수_구하기/solution.sql) |
+| 276013 | [Python 개발자 찾기](extra_276013_Python_개발자_찾기/README.md) | MySQL | [코드](extra_276013_Python_개발자_찾기/solution.sql) |
+| 258712 | [가장 많이 받은 선물](extra_258712_가장_많이_받은_선물/README.md) | Python3 | [코드](extra_258712_가장_많이_받은_선물/solution.py) |
+| 250137 | [&#91;PCCP 기출문제&#93; 1번 / 붕대 감기](extra_250137_[PCCP_기출문제]_1번___붕대_감기/README.md) | Python3 | [코드](extra_250137_[PCCP_기출문제]_1번___붕대_감기/solution.py) |
+| 250125 | [&#91;PCCE 기출문제&#93; 9번 / 이웃한 칸](extra_250125_[PCCE_기출문제]_9번___이웃한_칸/README.md) | Python3 | [코드](extra_250125_[PCCE_기출문제]_9번___이웃한_칸/solution.py) |
+| 250121 | [&#91;PCCE 기출문제&#93; 10번 / 데이터 분석](extra_250121_[PCCE_기출문제]_10번___데이터_분석/README.md) | Python3 | [코드](extra_250121_[PCCE_기출문제]_10번___데이터_분석/solution.py) |
+| 178871 | [달리기 경주](extra_178871_달리기_경주/README.md) | Python3 | [코드](extra_178871_달리기_경주/solution.py) |
+| 176963 | [추억 점수](extra_176963_추억_점수/README.md) | Python3 | [코드](extra_176963_추억_점수/solution.py) |
+| 172928 | [공원 산책](extra_172928_공원_산책/README.md) | Python3 | [코드](extra_172928_공원_산책/solution.py) |
+| 164673 | [조건에 부합하는 중고거래 댓글 조회하기](extra_164673_조건에_부합하는_중고거래_댓글_조회하기/README.md) | MySQL | [코드](extra_164673_조건에_부합하는_중고거래_댓글_조회하기/solution.sql) |
+| 161990 | [바탕화면 정리](extra_161990_바탕화면_정리/README.md) | Python3 | [코드](extra_161990_바탕화면_정리/solution.py) |
+| 161989 | [덧칠하기](extra_161989_덧칠하기/README.md) | Python3 | [코드](extra_161989_덧칠하기/solution.py) |
+| 160586 | [대충 만든 자판](extra_160586_대충_만든_자판/README.md) | Python3 | [코드](extra_160586_대충_만든_자판/solution.py) |
+| 159994 | [카드 뭉치](extra_159994_카드_뭉치/README.md) | Python3 | [코드](extra_159994_카드_뭉치/solution.py) |
+| 157343 | [특정 옵션이 포함된 자동차 리스트 구하기](extra_157343_특정_옵션이_포함된_자동차_리스트_구하기/README.md) | MySQL | [코드](extra_157343_특정_옵션이_포함된_자동차_리스트_구하기/solution.sql) |
+| 155652 | [둘만의 암호](extra_155652_둘만의_암호/README.md) | Python3 | [코드](extra_155652_둘만의_암호/solution.py) |
+| 151138 | [자동차 대여 기록에서 장기/단기 대여 구분하기](extra_151138_자동차_대여_기록에서_장기_단기_대여_구분하기/README.md) | MySQL | [코드](extra_151138_자동차_대여_기록에서_장기_단기_대여_구분하기/solution.sql) |
+| 151136 | [평균 일일 대여 요금 구하기](extra_151136_평균_일일_대여_요금_구하기/README.md) | MySQL | [코드](extra_151136_평균_일일_대여_요금_구하기/solution.sql) |
+| 150370 | [개인정보 수집 유효기간](extra_150370_개인정보_수집_유효기간/README.md) | Python3 | [코드](extra_150370_개인정보_수집_유효기간/solution.py) |
+| 147355 | [크기가 작은 부분 문자열](extra_147355_크기가_작은_부분_문자열/README.md) | Python3 | [코드](extra_147355_크기가_작은_부분_문자열/solution.py) |
+| 144853 | [조건에 맞는 도서 리스트 출력하기](extra_144853_조건에_맞는_도서_리스트_출력하기/README.md) | MySQL | [코드](extra_144853_조건에_맞는_도서_리스트_출력하기/solution.sql) |
+| 142086 | [가장 가까운 같은 글자](extra_142086_가장_가까운_같은_글자/README.md) | Python3 | [코드](extra_142086_가장_가까운_같은_글자/solution.py) |
+| 140108 | [문자열 나누기](extra_140108_문자열_나누기/README.md) | Python3 | [코드](extra_140108_문자열_나누기/solution.py) |
+| 138477 | [명예의 전당 (1)](extra_138477_명예의_전당_(1)/README.md) | Python3 | [코드](extra_138477_명예의_전당_(1)/solution.py) |
+| 136798 | [기사단원의 무기](extra_136798_기사단원의_무기/README.md) | Python3 | [코드](extra_136798_기사단원의_무기/solution.py) |
+| 135808 | [과일 장수](extra_135808_과일_장수/README.md) | Python3 | [코드](extra_135808_과일_장수/solution.py) |
+| 134240 | [푸드 파이트 대회](extra_134240_푸드_파이트_대회/README.md) | Python3 | [코드](extra_134240_푸드_파이트_대회/solution.py) |
+| 133502 | [햄버거 만들기](extra_133502_햄버거_만들기/README.md) | Python3 | [코드](extra_133502_햄버거_만들기/solution.py) |
+| 133499 | [옹알이 (2)](extra_133499_옹알이_(2)/README.md) | Python3 | [코드](extra_133499_옹알이_(2)/solution.py) |
+| 133025 | [과일로 만든 아이스크림 고르기](extra_133025_과일로_만든_아이스크림_고르기/README.md) | MySQL | [코드](extra_133025_과일로_만든_아이스크림_고르기/solution.sql) |
+| 133024 | [인기있는 아이스크림](extra_133024_인기있는_아이스크림/README.md) | MySQL | [코드](extra_133024_인기있는_아이스크림/solution.sql) |
+| 132267 | [콜라 문제](extra_132267_콜라_문제/README.md) | Python3 | [코드](extra_132267_콜라_문제/solution.py) |
+| 132203 | [흉부외과 또는 일반외과 의사 목록 출력하기](extra_132203_흉부외과_또는_일반외과_의사_목록_출력하기/README.md) | MySQL | [코드](extra_132203_흉부외과_또는_일반외과_의사_목록_출력하기/solution.sql) |
+| 132201 | [12세 이하인 여자 환자 목록 출력하기](extra_132201_12세_이하인_여자_환자_목록_출력하기/README.md) | MySQL | [코드](extra_132201_12세_이하인_여자_환자_목록_출력하기/solution.sql) |
+| 131705 | [삼총사](extra_131705_삼총사/README.md) | Python3 | [코드](extra_131705_삼총사/solution.py) |
+| 131697 | [가장 비싼 상품 구하기](extra_131697_가장_비싼_상품_구하기/README.md) | MySQL | [코드](extra_131697_가장_비싼_상품_구하기/solution.sql) |
+| 131535 | [조건에 맞는 회원수 구하기](extra_131535_조건에_맞는_회원수_구하기/README.md) | MySQL | [코드](extra_131535_조건에_맞는_회원수_구하기/solution.sql) |
+| 131528 | [나이 정보가 없는 회원 수 구하기](extra_131528_나이_정보가_없는_회원_수_구하기/README.md) | MySQL | [코드](extra_131528_나이_정보가_없는_회원_수_구하기/solution.sql) |
+| 131128 | [숫자 짝꿍](extra_131128_숫자_짝꿍/README.md) | Python3 | [코드](extra_131128_숫자_짝꿍/solution.py) |
+| 131114 | [경기도에 위치한 식품창고 목록 출력하기](extra_131114_경기도에_위치한_식품창고_목록_출력하기/README.md) | MySQL | [코드](extra_131114_경기도에_위치한_식품창고_목록_출력하기/solution.sql) |
+| 131112 | [강원도에 위치한 생산공장 목록 출력하기](extra_131112_강원도에_위치한_생산공장_목록_출력하기/README.md) | MySQL | [코드](extra_131112_강원도에_위치한_생산공장_목록_출력하기/solution.sql) |
+| 118666 | [성격 유형 검사하기](extra_118666_성격_유형_검사하기/README.md) | Python3 | [코드](extra_118666_성격_유형_검사하기/solution.py) |
+| 92334 | [신고 결과 받기](extra_92334_신고_결과_받기/README.md) | Python3 | [코드](extra_92334_신고_결과_받기/solution.py) |
+| 87389 | [나머지가 1이 되는 수 찾기](extra_87389_나머지가_1이_되는_수_찾기/README.md) | Python3 | [코드](extra_87389_나머지가_1이_되는_수_찾기/solution.py) |
+| 86491 | [최소직사각형](extra_86491_최소직사각형/README.md) | Python3 | [코드](extra_86491_최소직사각형/solution.py) |
+| 86051 | [없는 숫자 더하기](extra_86051_없는_숫자_더하기/README.md) | Python3 | [코드](extra_86051_없는_숫자_더하기/solution.py) |
+| 82612 | [부족한 금액 계산하기](extra_82612_부족한_금액_계산하기/README.md) | Python3 | [코드](extra_82612_부족한_금액_계산하기/solution.py) |
+| 81301 | [숫자 문자열과 영단어](extra_81301_숫자_문자열과_영단어/README.md) | Python3 | [코드](extra_81301_숫자_문자열과_영단어/solution.py) |
+| 77884 | [약수의 개수와 덧셈](extra_77884_약수의_개수와_덧셈/README.md) | Python3 | [코드](extra_77884_약수의_개수와_덧셈/solution.py) |
+| 77484 | [로또의 최고 순위와 최저 순위](extra_77484_로또의_최고_순위와_최저_순위/README.md) | Python3 | [코드](extra_77484_로또의_최고_순위와_최저_순위/solution.py) |
+| 76501 | [음양 더하기](extra_76501_음양_더하기/README.md) | Python3 | [코드](extra_76501_음양_더하기/solution.py) |
+| 72410 | [신규 아이디 추천](extra_72410_신규_아이디_추천/README.md) | Python3 | [코드](extra_72410_신규_아이디_추천/solution.py) |
+| 70128 | [내적](extra_70128_내적/README.md) | Python3 | [코드](extra_70128_내적/solution.py) |
+| 68935 | [3진법 뒤집기](extra_68935_3진법_뒤집기/README.md) | Python3 | [코드](extra_68935_3진법_뒤집기/solution.py) |
+| 68644 | [두 개 뽑아서 더하기](extra_68644_두_개_뽑아서_더하기/README.md) | Python3 | [코드](extra_68644_두_개_뽑아서_더하기/solution.py) |
+| 67256 | [키패드 누르기](extra_67256_키패드_누르기/README.md) | Python3 | [코드](extra_67256_키패드_누르기/solution.py) |
+| 64061 | [크레인 인형뽑기 게임](extra_64061_크레인_인형뽑기_게임/README.md) | Python3 | [코드](extra_64061_크레인_인형뽑기_게임/solution.py) |
+| 59415 | [최댓값 구하기](extra_59415_최댓값_구하기/README.md) | MySQL | [코드](extra_59415_최댓값_구하기/solution.sql) |
+| 59407 | [이름이 있는 동물의 아이디](extra_59407_이름이_있는_동물의_아이디/README.md) | MySQL | [코드](extra_59407_이름이_있는_동물의_아이디/solution.sql) |
+| 59405 | [상위 n개 레코드](extra_59405_상위_n개_레코드/README.md) | MySQL | [코드](extra_59405_상위_n개_레코드/solution.sql) |
+| 59404 | [여러 기준으로 정렬하기](extra_59404_여러_기준으로_정렬하기/README.md) | MySQL | [코드](extra_59404_여러_기준으로_정렬하기/solution.sql) |
+| 59403 | [동물의 아이디와 이름](extra_59403_동물의_아이디와_이름/README.md) | MySQL | [코드](extra_59403_동물의_아이디와_이름/solution.sql) |
+| 59039 | [이름이 없는 동물의 아이디](extra_59039_이름이_없는_동물의_아이디/README.md) | MySQL | [코드](extra_59039_이름이_없는_동물의_아이디/solution.sql) |
+| 59037 | [어린 동물 찾기](extra_59037_어린_동물_찾기/README.md) | MySQL | [코드](extra_59037_어린_동물_찾기/solution.sql) |
+| 59036 | [아픈 동물 찾기](extra_59036_아픈_동물_찾기/README.md) | MySQL | [코드](extra_59036_아픈_동물_찾기/solution.sql) |
+| 59035 | [역순 정렬하기](extra_59035_역순_정렬하기/README.md) | MySQL | [코드](extra_59035_역순_정렬하기/solution.sql) |
+| 59034 | [모든 레코드 조회하기](extra_59034_모든_레코드_조회하기/README.md) | MySQL | [코드](extra_59034_모든_레코드_조회하기/solution.sql) |
+| 42889 | [실패율](extra_42889_실패율/README.md) | Python3 | [코드](extra_42889_실패율/solution.py) |
+| 42862 | [체육복](extra_42862_체육복/README.md) | Python3 | [코드](extra_42862_체육복/solution.py) |
+| 42840 | [모의고사](extra_42840_모의고사/README.md) | Python3 | [코드](extra_42840_모의고사/solution.py) |
+| 42748 | [K번째수](extra_42748_K번째수/README.md) | Python3 | [코드](extra_42748_K번째수/solution.py) |
+| 42576 | [완주하지 못한 선수](extra_42576_완주하지_못한_선수/README.md) | Python3 | [코드](extra_42576_완주하지_못한_선수/solution.py) |
+| 17682 | [&#91;1차&#93; 다트 게임](extra_17682_[1차]_다트_게임/README.md) | Python3 | [코드](extra_17682_[1차]_다트_게임/solution.py) |
+| 17681 | [&#91;1차&#93; 비밀지도](extra_17681_[1차]_비밀지도/README.md) | Python3 | [코드](extra_17681_[1차]_비밀지도/solution.py) |
+| 12982 | [예산](extra_12982_예산/README.md) | Python3 | [코드](extra_12982_예산/solution.py) |
+| 12977 | [소수 만들기](extra_12977_소수_만들기/README.md) | Python3 | [코드](extra_12977_소수_만들기/solution.py) |
+| 12969 | [직사각형 별찍기](extra_12969_직사각형_별찍기/README.md) | Python3 | [코드](extra_12969_직사각형_별찍기/solution.py) |
+| 12954 | [x만큼 간격이 있는 n개의 숫자](extra_12954_x만큼_간격이_있는_n개의_숫자/README.md) | Python3 | [코드](extra_12954_x만큼_간격이_있는_n개의_숫자/solution.py) |
+| 12950 | [행렬의 덧셈](extra_12950_행렬의_덧셈/README.md) | Python3 | [코드](extra_12950_행렬의_덧셈/solution.py) |
+| 12948 | [핸드폰 번호 가리기](extra_12948_핸드폰_번호_가리기/README.md) | Python3 | [코드](extra_12948_핸드폰_번호_가리기/solution.py) |
+| 12947 | [하샤드 수](extra_12947_하샤드_수/README.md) | Python3 | [코드](extra_12947_하샤드_수/solution.py) |
+| 12944 | [평균 구하기](extra_12944_평균_구하기/README.md) | Python3 | [코드](extra_12944_평균_구하기/solution.py) |
+| 12943 | [콜라츠 추측](extra_12943_콜라츠_추측/README.md) | Python3 | [코드](extra_12943_콜라츠_추측/solution.py) |
+| 12940 | [최대공약수와 최소공배수](extra_12940_최대공약수와_최소공배수/README.md) | Python3 | [코드](extra_12940_최대공약수와_최소공배수/solution.py) |
+| 12937 | [짝수와 홀수](extra_12937_짝수와_홀수/README.md) | Python3 | [코드](extra_12937_짝수와_홀수/solution.py) |
+| 12935 | [제일 작은 수 제거하기](extra_12935_제일_작은_수_제거하기/README.md) | Python3 | [코드](extra_12935_제일_작은_수_제거하기/solution.py) |
+| 12934 | [정수 제곱근 판별](extra_12934_정수_제곱근_판별/README.md) | Python3 | [코드](extra_12934_정수_제곱근_판별/solution.py) |
+| 12933 | [정수 내림차순으로 배치하기](extra_12933_정수_내림차순으로_배치하기/README.md) | Python3 | [코드](extra_12933_정수_내림차순으로_배치하기/solution.py) |
+| 12932 | [자연수 뒤집어 배열로 만들기](extra_12932_자연수_뒤집어_배열로_만들기/README.md) | Python3 | [코드](extra_12932_자연수_뒤집어_배열로_만들기/solution.py) |
+| 12931 | [자릿수 더하기](extra_12931_자릿수_더하기/README.md) | Python3 | [코드](extra_12931_자릿수_더하기/solution.py) |
+| 12930 | [이상한 문자 만들기](extra_12930_이상한_문자_만들기/README.md) | Python3 | [코드](extra_12930_이상한_문자_만들기/solution.py) |
+| 12928 | [약수의 합](extra_12928_약수의_합/README.md) | Python3 | [코드](extra_12928_약수의_합/solution.py) |
+| 12926 | [시저 암호](extra_12926_시저_암호/README.md) | Python3 | [코드](extra_12926_시저_암호/solution.py) |
+| 12925 | [문자열을 정수로 바꾸기](extra_12925_문자열을_정수로_바꾸기/README.md) | Python3 | [코드](extra_12925_문자열을_정수로_바꾸기/solution.py) |
+| 12922 | [수박수박수박수박수박수?](extra_12922_수박수박수박수박수박수_/README.md) | Python3 | [코드](extra_12922_수박수박수박수박수박수_/solution.py) |
+| 12921 | [소수 찾기](extra_12921_소수_찾기/README.md) | Python3 | [코드](extra_12921_소수_찾기/solution.py) |
+| 12919 | [서울에서 김서방 찾기](extra_12919_서울에서_김서방_찾기/README.md) | Python3 | [코드](extra_12919_서울에서_김서방_찾기/solution.py) |
+| 12918 | [문자열 다루기 기본](extra_12918_문자열_다루기_기본/README.md) | Python3 | [코드](extra_12918_문자열_다루기_기본/solution.py) |
+| 12917 | [문자열 내림차순으로 배치하기](extra_12917_문자열_내림차순으로_배치하기/README.md) | Python3 | [코드](extra_12917_문자열_내림차순으로_배치하기/solution.py) |
+| 12916 | [문자열 내 p와 y의 개수](extra_12916_문자열_내_p와_y의_개수/README.md) | Python3 | [코드](extra_12916_문자열_내_p와_y의_개수/solution.py) |
+| 12915 | [문자열 내 마음대로 정렬하기](extra_12915_문자열_내_마음대로_정렬하기/README.md) | Python3 | [코드](extra_12915_문자열_내_마음대로_정렬하기/solution.py) |
+| 12912 | [두 정수 사이의 합](extra_12912_두_정수_사이의_합/README.md) | Python3 | [코드](extra_12912_두_정수_사이의_합/solution.py) |
+| 12910 | [나누어 떨어지는 숫자 배열](extra_12910_나누어_떨어지는_숫자_배열/README.md) | Python3 | [코드](extra_12910_나누어_떨어지는_숫자_배열/solution.py) |
+| 12906 | [같은 숫자는 싫어](extra_12906_같은_숫자는_싫어/README.md) | Python3 | [코드](extra_12906_같은_숫자는_싫어/solution.py) |
+| 12903 | [가운데 글자 가져오기](extra_12903_가운데_글자_가져오기/README.md) | Python3 | [코드](extra_12903_가운데_글자_가져오기/solution.py) |
+| 12901 | [2016년](extra_12901_2016년/README.md) | Python3 | [코드](extra_12901_2016년/solution.py) |
+| 1845 | [폰켓몬](extra_1845_폰켓몬/README.md) | Python3 | [코드](extra_1845_폰켓몬/solution.py) |

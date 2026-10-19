@@ -1,12 +1,12 @@
 # MNIST CNN
 
-28×28 손글씨 영상을 두 개의 convolution block과 fully connected layer로 분류한다. 학습 데이터 60,000장을 학습 55,000장·검증 5,000장으로 나누고, 별도의 시험 데이터 10,000장으로 최종 성능을 평가한다. 검증 loss가 가장 낮은 checkpoint를 저장한다.
+28×28 손글씨 영상을 두 개의 convolution block과 fully connected layer로 분류합니다. 학습 데이터 60,000장을 학습 55,000장·검증 5,000장으로 나누고, 별도의 시험 데이터 10,000장으로 최종 성능을 평가합니다. 검증 loss가 가장 낮은 checkpoint를 저장합니다.
 
-`train_mnist.py`는 학습과 평가, `infer_mnist.py`는 저장한 checkpoint의 단일 영상 추론, `plot_results.py`는 loss·accuracy 곡선과 confusion matrix, 정답·오답 영상 시각화를 담당한다. 코드와 의존성 목록을 제공하며 데이터와 가중치는 포함하지 않는다.
+`train_mnist.py`는 학습과 평가, `infer_mnist.py`는 저장한 checkpoint의 단일 영상 추론, `plot_results.py`는 loss·accuracy 곡선과 confusion matrix, 정답·오답 영상 시각화를 담당합니다. 코드와 의존성 목록을 제공하며 데이터와 가중치는 포함하지 않습니다.
 
 ## 실행
 
-이 디렉터리에서 실행한다.
+이 디렉터리에서 실행합니다.
 
 ```bash
 python -m pip install -r requirements.txt
@@ -15,11 +15,11 @@ python infer_mnist.py --checkpoint results/best.pt --data data --index 0
 python plot_results.py --data data
 ```
 
-데이터는 torchvision을 통해 받으며 결과는 `results/`에 저장한다. `train_mnist.py`의 `--device`로 학습 장치를 지정한다.
+데이터는 torchvision을 통해 받으며 결과는 `results/`에 저장합니다. `train_mnist.py`의 `--device`로 학습 장치를 지정합니다.
 
 ## 저장된 실행 결과
 
-기존 CPU 실행 기록은 seed 42, Adam, learning rate 0.001, batch size 128, 5 epoch 조건이다. 최종 시험 결과는 10,000장 중 9,903장 정답, accuracy 99.03%, cross-entropy loss 0.0305511763이다. 이 수치는 CPU 실행에서 얻었으며 GPU 학습 성능을 나타내지 않는다.
+기존 CPU 실행 기록은 seed 42, Adam, learning rate 0.001, batch size 128, 5 epoch 조건입니다. 최종 시험 결과는 10,000장 중 9,903장 정답, accuracy 99.03%, cross-entropy loss 0.0305511763입니다. 이 수치는 CPU 실행에서 얻었으며 GPU 학습 성능을 나타내지 않습니다.
 
 ## English
 

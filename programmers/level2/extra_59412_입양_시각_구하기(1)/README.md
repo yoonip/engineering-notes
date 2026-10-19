@@ -16,7 +16,7 @@ Count ANIMAL_OUTS adoptions for hours 9–19 inclusive. Output HOUR and COUNT or
 
 Keep adoption rows whose hour is between 9 and 19 inclusive. Group by hour, count rows and order by hour. An adoption at 19:59 is included.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 필터는 요청 시간대와 같고 각 행은 하나의 시간 그룹에만 속합니다. COUNT(*)는 이름 NULL 여부와 무관하게 모든 입양을 셉니다.
 

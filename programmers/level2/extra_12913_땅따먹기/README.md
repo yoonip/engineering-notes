@@ -14,7 +14,7 @@ There are 1–100000 rows, four columns and scores in [1,100]. Choose one cell p
 
 Maintain only four best scores for the current row. Since consecutive selections cannot share a column, add the best of the other three previous columns.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 현재 열이 정해지면 이전 경로의 영향은 직전 열과 최대 점수뿐입니다. 가능한 세 이전 열을 모두 비교하는 DP가 모든 유효 경로의 최댓값을 보존합니다.
 

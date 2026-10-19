@@ -6,21 +6,21 @@ Level 4 · `68647` · Python3 · [공식 문제](https://school.programmers.co.k
 
 ## 문제와 조건
 
-각 열의 1 개수는 유지하면서 모든 행의 합이 짝수인 이진 행렬의 개수를 센다.
+각 열의 1 개수는 유지하면서 모든 행의 합이 짝수인 이진 행렬의 개수를 셉니다.
 
-입력 범위와 상수는 다음과 같다. 기호는 코드의 매개변수에 맞췄다.
+입력 범위와 상수는 다음과 같습니다. 기호는 코드의 매개변수에 맞췄습니다.
 
 `1≤rows,cols≤300; binary matrix; preserve each column sum, require every row sum even; modulus 10000019.`
 
 ## 풀이를 따라가기
 
-처리한 열까지 짝수인 행 개수만 상태로 둔다. 짝수 행 e개 중 x개와 홀수 행 R−e개 중 c−x개에 1을 넣으면 새 짝수 행 수는 e+c−2x다.
+처리한 열까지 짝수인 행 개수만 상태로 둡니다. 짝수 행 e개 중 x개와 홀수 행 R−e개 중 c−x개에 1을 넣으면 새 짝수 행 수는 e+c−2x입니다.
 
-같은 홀짝 그룹 안의 행은 앞으로의 경우의 수에 대칭적이다. 선택 방법 수 C(e,x)C(R−e,c−x)를 곱해 상태를 합치고, 마지막에 짝수 행이 R개인 경우만 택한다.
+같은 홀짝 그룹 안의 행은 앞으로의 경우의 수에 대칭적입니다. 선택 방법 수 C(e,x)C(R−e,c−x)를 곱해 상태를 합치고, 마지막에 짝수 행이 R개인 경우만 택합니다.
 
 ## 다른 방법과 비교
 
-대안은 모든 행의 홀짝을 비트마스크로 저장한다. 1을 놓을 행 조합을 직접 만들고 XOR로 갱신한다. 행 8개 이하에서는 압축 상태의 조합 계수를 확인하기 좋다.
+대안은 모든 행의 홀짝을 비트마스크로 저장합니다. 1을 놓을 행 조합을 직접 만들고 XOR로 갱신합니다. 행 8개 이하에서는 압축 상태의 조합 계수를 확인하기 좋습니다.
 
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
@@ -29,7 +29,7 @@ Level 4 · `68647` · Python3 · [공식 문제](https://school.programmers.co.k
 
 ## 코드와 검증
 
-`solution.py`에는 상태의 뜻과 경계조건을 한국어 주석으로 적었다. `alternative.py`는 별도의 풀이이며, `test_solution.py`에서 공식 예제와 생성 입력을 비교한다. 실행 기록은 [validation.json](validation.json)에 있다. 원본 제출 파일은 [submitted_original.py](submitted_original.py)에 그대로 보관했다.
+`solution.py`에는 상태의 뜻과 경계조건을 한국어 주석으로 적었습니다. `alternative.py`는 별도의 풀이이며, `test_solution.py`에서 공식 예제와 생성 입력을 비교합니다. 실행 기록은 [validation.json](validation.json)에 있습니다. 원본 제출 파일은 [submitted_original.py](submitted_original.py)에 그대로 보관했습니다.
 
 ```bash
 python test_solution.py

@@ -16,7 +16,7 @@ Output the earliest DATETIME from ANIMAL_INS in the 시간 column.
 
 Find the minimum intake timestamp. Chronological timestamp order makes the minimum the earliest intake time.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 다른 열의 정보를 요구하지 않으므로 행 전체를 찾을 필요가 없습니다. MIN(DATETIME)은 필요한 시각 하나를 직접 반환합니다.
 

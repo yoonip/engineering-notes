@@ -1,0 +1,49 @@
+{
+  "python": "3.12.14",
+  "query": [
+    1,
+    0
+  ],
+  "keys": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "values": [
+    [
+      10.0,
+      0.0
+    ],
+    [
+      0.0,
+      20.0
+    ]
+  ],
+  "weights": [
+    0.6697615493266569,
+    0.3302384506733431
+  ],
+  "output": [
+    6.697615493266569,
+    6.604769013466862
+  ],
+  "causal_weights": [
+    1.0
+  ],
+  "causal_output": [
+    10.0,
+    0.0
+  ],
+  "checks": [
+    "normalization",
+    "nonnegative weights",
+    "closed-form value",
+    "causal first token",
+    "future-key invariance"
+  ]
+}

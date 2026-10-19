@@ -14,7 +14,7 @@ Base n is 2–16, t is 1–1000, players m is 2–100, and p is 1–m. Start at 
 
 Convert consecutive integers starting at zero to base n and concatenate their digits. Player p speaks at indices p−1, p−1+m, and so on; return the first t of these.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 전체 발화 순서는 각 자연수의 n진수 표현을 순서대로 나열한 것과 같습니다. 인덱스를 m으로 나눈 나머지가 p−1인 자리만 선택하면 정확히 그 사람의 차례입니다.
 

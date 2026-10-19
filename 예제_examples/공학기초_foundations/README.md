@@ -1,24 +1,24 @@
 # 기초 모델과 검증 예제
 
-[개념 문서 24편](../../문서_docs/공학기초_FOUNDATIONS.md) · [검토 범위와 출처](../../문서_docs/기초검증기록_FOUNDATIONS_REVIEW.md) · [English](#english)
+[개념 문서 24편](../../공학기초_foundations/README.md) · [검토 범위와 출처](../../공학기초_foundations/검증기록_VERIFICATION.md) · [English](#english)
 
-개념을 식으로 옮기고, 식을 프로그램으로 만들고, 별도의 기준과 비교하는 예제다. 계산에는 Python 표준 라이브러리만 사용한다. 도표를 다시 그릴 때만 Matplotlib이 추가로 필요하다.
+개념을 식으로 옮기고, 식을 프로그램으로 만들고, 별도의 기준과 비교하는 예제입니다. 계산에는 Python 표준 라이브러리만 사용합니다. 도표를 다시 그릴 때만 Matplotlib이 추가로 필요합니다.
 
 ## 전체 검사
 
-저장소 루트에서 실행한다. Python 3.12 이상을 기준으로 작성했다.
+저장소 루트에서 실행합니다. Python 3.12 이상을 기준으로 작성했습니다.
 
 ```bash
 python 예제_examples/공학기초_foundations/run_checks.py
 ```
 
-결과를 JSON으로 남기려면 다음 명령을 쓴다.
+결과를 JSON으로 남기려면 다음 명령을 씁니다.
 
 ```bash
 python 예제_examples/공학기초_foundations/run_checks.py --report build/foundation-checks.json
 ```
 
-실행기는 도메인마다 별도의 Python 프로세스를 사용한다. 각 폴더의 같은 이름을 가진 작은 모델들이 서로 섞이지 않게 하기 위한 구성이다. 검사는 [VERIFICATION.json](VERIFICATION.json)에 기록한 76개다.
+실행기는 도메인마다 별도의 Python 프로세스를 사용합니다. 각 폴더의 같은 이름을 가진 작은 모델들이 서로 섞이지 않게 하기 위한 구성입니다. 검사는 [VERIFICATION.json](VERIFICATION.json)에 기록한 76개입니다.
 
 | 폴더 | 다루는 모델 | 비교 기준 |
 | --- | --- | --- |
@@ -29,21 +29,21 @@ python 예제_examples/공학기초_foundations/run_checks.py --report build/fou
 
 ## 신호·제어·AI 예제 실행
 
-이 문서와 연결된 짧은 코드의 `from signals_ai.models import ...`는 아래 폴더에서 Python을 실행하면 사용할 수 있다.
+이 문서와 연결된 짧은 코드의 `from signals_ai.models import ...`는 아래 폴더에서 Python을 실행하면 사용할 수 있습니다.
 
 ```bash
 cd 예제_examples/foundations
 python -c "from signals_ai.models import alias_frequency; print(alias_frequency(900, 1000))"
 ```
 
-PowerShell에서 저장소 루트에 머물러 실행하려면 이 프로세스의 모듈 경로를 지정한다.
+PowerShell에서 저장소 루트에 머물러 실행하려면 이 프로세스의 모듈 경로를 지정합니다.
 
 ```powershell
 $env:PYTHONPATH = (Resolve-Path 예제_examples/foundations).Path
 python -c "from signals_ai.models import alias_frequency; print(alias_frequency(900, 1000))"
 ```
 
-다른 그룹의 문서 예제는 해당 그룹의 README에 적힌 폴더에서 실행한다. FPGA RTL은 [별도 시뮬레이션 명령과 규약](circuits_hardware/README.md)을 갖는다. Python 상태 모델 검사와 RTL 실행은 별개의 검사다.
+다른 그룹의 문서 예제는 해당 그룹의 README에 적힌 폴더에서 실행합니다. FPGA RTL은 [별도 시뮬레이션 명령과 규약](circuits_hardware/README.md)을 갖습니다. Python 상태 모델 검사와 RTL 실행은 별개의 검사입니다.
 
 ## 도표 다시 만들기
 
@@ -52,9 +52,9 @@ python -m pip install matplotlib==3.10.0
 python 예제_examples/공학기초_foundations/make_figures.py
 ```
 
-[figures](figures)의 PNG·SVG는 이 저장소의 수치 모델에서 직접 그렸다. 그래프 생성은 Matplotlib 3.10.0에서 확인했다. 축의 영문 기술 표기는 본문의 한국어·영어 캡션과 함께 읽을 수 있다. 대학·기업 자료의 그림을 복사하지 않았다.
+[figures](figures)의 PNG·SVG는 이 저장소의 수치 모델에서 직접 그렸습니다. 그래프 생성은 Matplotlib 3.10.0에서 확인했습니다. 축의 영문 기술 표기는 본문의 한국어·영어 캡션과 함께 읽을 수 있습니다. 대학·기업 자료의 그림을 복사하지 않았습니다.
 
-계산 검사는 명시한 수학 모델과 상태 규약을 확인한다. 실제 회로 측정, 공정 모델 검증, 합성·타이밍 확인, MCU 보드 시험이나 GPU benchmark는 각 환경에서 별도로 기록해야 하는 결과다.
+계산 검사는 명시한 수학 모델과 상태 규약을 확인합니다. 실제 회로 측정, 공정 모델 검증, 합성·타이밍 확인, MCU 보드 시험이나 GPU benchmark는 각 환경에서 별도로 기록해야 하는 결과입니다.
 
 ## English
 

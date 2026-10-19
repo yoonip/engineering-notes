@@ -14,7 +14,7 @@
 
 Permutations sharing their first element form blocks of (n−1)!. Convert k to zero-based indexing, use the quotient to select the next element, and carry the remainder into that block.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 사전순에서 선택 가능한 숫자마다 같은 크기의 순열 구간이 연속합니다. 몫·나머지로 정확한 구간을 고르는 과정을 반복하므로 k번째 순열을 유일하게 복원합니다.
 

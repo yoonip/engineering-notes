@@ -16,7 +16,7 @@ NULL 이름을 제외한 뒤 이름별 동물 수를 셉니다. 두 마리 이�
 
 Exclude NULL names, count animals per name, keep groups of at least two with HAVING, and order by name.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 WHERE는 이름 없는 행을 집계 전에 제거합니다. GROUP BY와 COUNT(*)가 이름별 마릿수를 만들고 HAVING이 그 집계값에 조건을 적용합니다.
 

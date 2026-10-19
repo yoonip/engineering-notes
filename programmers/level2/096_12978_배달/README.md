@@ -14,7 +14,7 @@ There are 1–50 villages and 1–2000 roads of weight 1–10000, with K in [1,5
 
 Use heap-based Dijkstra to compute only distances from village 1. Relax neighbors on improvement and skip stale heap entries whose distance is no longer current.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 도로 시간이 양수이므로 아직 처리하지 않은 경로를 우회해도 현재 최소 거리보다 작아질 수 없습니다. 최소 힙에서 확정한 거리는 최단거리이며 K 이하 마을만 세면 됩니다.
 

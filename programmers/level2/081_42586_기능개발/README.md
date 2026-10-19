@@ -14,7 +14,7 @@ There are at most 100 jobs, progress values 1–99 and speeds 1–100. Releases 
 
 Compute completion days with ceiling division. A later feature finishing no later than the front feature joins its release batch; a later completion starts a new batch.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 앞 기능이 배포될 때까지 뒤 기능은 기다려야 합니다. 따라서 현재 묶음의 배포일은 그 묶음에서 가장 늦은 앞쪽 완료일이며, 그 날까지 끝난 연속 기능들이 정확히 함께 배포됩니다.
 

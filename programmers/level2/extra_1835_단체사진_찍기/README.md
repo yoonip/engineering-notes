@@ -14,7 +14,7 @@ There are eight friends A,C,F,J,M,N,R,T and 1–100 constraints. A gap counts in
 
 Inspect all 40320 orders of the eight friends. Build a position lookup for each order and check that abs(position difference)−1 satisfies every distance constraint.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 여덟 명의 순열은 가능한 모든 사진 배치를 정확히 한 번씩 포함합니다. 모든 조건을 동시에 만족하는 배치만 더하므로 결과가 정확합니다.
 

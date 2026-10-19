@@ -2,17 +2,17 @@
 
 [전체 목차](../../분야별목차_CATALOG.md) · [처음으로](../../README.md)
 
-Mixed-signal 회로는 연속적인 아날로그 신호와 이산적인 디지털 표현을 연결한다. ADC는 아날로그 값을 코드로, DAC는 디지털 코드를 전압·전류 같은 물리량으로 변환한다.
+Mixed-signal 회로는 연속적인 아날로그 신호와 이산적인 디지털 표현을 연결합니다. ADC는 아날로그 값을 코드로, DAC는 디지털 코드를 전압·전류 같은 물리량으로 변환합니다.
 
 ## 샘플링과 양자화
 
-샘플링은 시간을 일정한 간격으로 나누고, 양자화는 신호의 크기를 정해진 단계로 표현한다. 이상적인 N비트 ADC의 step 크기는 입력 범위를 `2^N`개 수준으로 나눈 값이다. 이상적인 양자화 모델과 full-scale 정현파 조건에서 SNR은 약 `6.02N + 1.76 dB`로 표현된다. 실제 회로에서는 다른 잡음과 왜곡도 더해진다.
+샘플링은 시간을 일정한 간격으로 나누고, 양자화는 신호의 크기를 정해진 단계로 표현합니다. 이상적인 N비트 ADC의 step 크기는 입력 범위를 `2^N`개 수준으로 나눈 값입니다. 이상적인 양자화 모델과 full-scale 정현파 조건에서 SNR은 약 `6.02N + 1.76 dB`로 표현됩니다. 실제 회로에서는 다른 잡음과 왜곡도 더해집니다.
 
-SAR는 비교와 이진 탐색을 이용한 변환, pipeline은 여러 단계를 통한 높은 처리율, delta-sigma는 oversampling과 noise shaping에 기반한다. 시간 인터리빙은 변환 작업을 여러 변환기에 나누어 맡기며 채널 간 offset·gain·timing 차이가 오차를 만든다.
+SAR는 비교와 이진 탐색을 이용한 변환, pipeline은 여러 단계를 통한 높은 처리율, delta-sigma는 oversampling과 noise shaping에 기반합니다. 시간 인터리빙은 변환 작업을 여러 변환기에 나누어 맡기며 채널 간 offset·gain·timing 차이가 오차를 만듭니다.
 
 ## 정적·동적 지표와 클록
 
-INL·DNL은 정적 전달 특성의 비선형성을, SNDR·SFDR은 잡음·왜곡과 주파수 성분을 다룬다. ENOB는 SNDR을 이상적인 비트 수와 연결한 지표다. PLL·DLL·CDR은 클록의 주파수·위상·데이터 타이밍에 관여한다. Jitter는 시간 변동, phase noise는 위상 변동의 주파수 영역 표현과 관련된다.
+INL·DNL은 정적 전달 특성의 비선형성을, SNDR·SFDR은 잡음·왜곡과 주파수 성분을 다룹니다. ENOB는 SNDR을 이상적인 비트 수와 연결한 지표입니다. PLL·DLL·CDR은 클록의 주파수·위상·데이터 타이밍에 관여합니다. Jitter는 시간 변동, phase noise는 위상 변동의 주파수 영역 표현과 관련됩니다.
 
 ## 관련 기술
 
@@ -25,7 +25,7 @@ SAR ADC, Delta-Sigma, DAC, PLL, DLL, CDR, Spectre, Verilog-AMS
 
 ## 개념·유도·모델·검증
 
-[기초부터 읽기](../../문서_docs/공학기초_FOUNDATIONS.md)
+[기초부터 읽기](../../공학기초_foundations/README.md)
 
 - [ADC 양자화: 비트 수와 정확도를 구분하기](해설_notes/ADC양자화_adc-quantization.md)
 
@@ -50,7 +50,7 @@ Related technologies include SAR and delta-sigma ADCs, DACs, PLLs, DLLs, CDR, Sp
 
 ### Concepts, derivations, models, and verification
 
-[Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
+[Foundations reading guide](../../공학기초_foundations/README.md#english)
 
 - [ADC quantization and resolution](해설_notes/ADC양자화_adc-quantization.md#english)
 

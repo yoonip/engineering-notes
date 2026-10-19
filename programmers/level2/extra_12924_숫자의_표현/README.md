@@ -14,7 +14,7 @@
 
 For length consecutive positive integers, the sum is length×start+length(length−1)/2. Count lengths for which solving this equation yields a positive integer start.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 최소 합은 1+…+length이므로 이 값이 n보다 큰 길이는 불가능합니다. 가능한 각 길이에 시작값은 하나뿐이므로 나머지가 0인지 확인하는 것만으로 정확히 셉니다.
 

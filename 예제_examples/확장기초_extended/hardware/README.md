@@ -2,7 +2,7 @@
 
 ## 한국어
 
-[models.py](models.py)는 회로 식과 디지털 계약을 작은 Python 모델로 표현한다. [test_models.py](test_models.py)는 해석적 한계, 독립 계산, 완전 열거와 통계적 simulation으로 가정을 확인한다. 외부 패키지가 필요하지 않으며 저장소 root에서 다음처럼 실행한다.
+[models.py](models.py)는 회로 식과 디지털 계약을 작은 Python 모델로 표현합니다. [test_models.py](test_models.py)는 해석적 한계, 독립 계산, 완전 열거와 통계적 simulation으로 가정을 확인합니다. 외부 패키지가 필요하지 않으며 저장소 root에서 다음처럼 실행합니다.
 
 ```text
 python -m unittest discover -s 예제_examples/확장기초_extended/hardware -p "test_*.py" -v
@@ -23,9 +23,9 @@ python -m unittest discover -s 예제_examples/확장기초_extended/hardware -p
 | Scan·ATPG | `logic_output`, `detected_faults`, `scan_shift` | activation/propagation 직접 조건, pattern 부분집합 열거·직렬 bit 순서 |
 | PIM | `crossbar_currents`, `differential_conductances`, `quantize_symmetric` | 직접 내적, row KCL, 양자화 오차·clipping |
 
-입력은 각 글에 정의된 단위와 범위를 따른다. `timing_slack`은 한 clock의 인접 setup/same-edge hold만, PDN은 단일 부하 노드만, buck은 이상적 양의 CCM만, thermal은 일정 ambient의 한 pole만 다룬다. Byte memory는 자연 정렬된 유한 RAM이며 CPU나 MMIO가 아니다. 버퍼는 2-entry·empty bypass 없음·갱신 전 수락 판단을 사용한다. PIM의 row 저항은 분포 배선망이 아닌 공통 직렬저항이다.
+입력은 각 글에 정의된 단위와 범위를 따릅니다. `timing_slack`은 한 clock의 인접 setup/same-edge hold만, PDN은 단일 부하 노드만, buck은 이상적 양의 CCM만, thermal은 일정 ambient의 한 pole만 다룹니다. Byte memory는 자연 정렬된 유한 RAM이며 CPU나 MMIO가 아닙니다. 버퍼는 2-entry·empty bypass 없음·갱신 전 수락 판단을 사용합니다. PIM의 row 저항은 분포 배선망이 아닌 공통 직렬저항입니다.
 
-[VALIDATION.json](VALIDATION.json)은 실제 실행한 Python 검산의 범위를 남긴다. 실제 RTL simulator·formal solver·합성·배치배선·STA·DRC/LVS·Spectre·회로 제작·ATE·실물 온도·무선 측정의 실행 결과와는 구분한다.
+[VALIDATION.json](VALIDATION.json)은 실제 실행한 Python 검산의 범위를 남깁니다. 실제 RTL simulator·formal solver·합성·배치배선·STA·DRC/LVS·Spectre·회로 제작·ATE·실물 온도·무선 측정의 실행 결과와는 구분합니다.
 
 ## English
 

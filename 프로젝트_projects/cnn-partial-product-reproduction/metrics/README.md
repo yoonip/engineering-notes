@@ -1,6 +1,6 @@
 # 독립 실험 집계 지표
 
-`archived_metrics.json`은 2026-10-04의 독립 구현 실험을 집계한 파일이다. smoke 검증 결과는 저장소 최상위 `VALIDATION_RESULTS.json`에 별도로 기록한다. 이 JSON의 정확도·공급전력은 2026-10-19 검사의 새 측정값과는 구분한다.
+`archived_metrics.json`은 2026-10-04의 독립 구현 실험을 집계한 파일입니다. smoke 검증 결과는 저장소 최상위 `VALIDATION_RESULTS.json`에 별도로 기록합니다. 이 JSON의 정확도·공급전력은 2026-10-19 검사의 새 측정값과는 구분합니다.
 
 | 필드 | 의미 |
 |---|---|
@@ -15,11 +15,11 @@
 | `circuit_measurements` | Level1 28개와 SKY1308개 실행의 집계; idle 대조군 포함 |
 | `signed_exhaustive` | 548,864개 signed 입력쌍·mask 조합의 비트 행렬 비교 |
 
-`accuracy`는 퍼센트, `delta_pp`는 같은 bit의 k0 기준 퍼센트포인트다. 회로 전력의 단위는 µW, 에너지는 fJ/MAC이다. 공급전류 전체 적분값을 순수 dynamic power로 해석하지 않는다. clock-on idle도 순수 누설 전력만의 측정은 아니다.
+`accuracy`는 퍼센트, `delta_pp`는 같은 bit의 k0 기준 퍼센트포인트입니다. 회로 전력의 단위는 µW, 에너지는 fJ/MAC입니다. 공급전류 전체 적분값을 순수 dynamic power로 해석하지 않습니다. clock-on idle도 순수 누설 전력만의 측정은 아닙니다.
 
-전체 test 평가38행은 38개의 서로 다른 산술 설정이나38개 seed를 뜻하지 않는다. 주 실험, 보수적 k1 추가 평가, 다른 학습 seed, CIFAR100 평가를 합친 수다. 세 seed를 모두 실행한 설정은5개다. seed가1개인 설정의 표준편차는 null이다.
+전체 test 평가38행은 38개의 서로 다른 산술 설정이나38개 seed를 뜻하지 않습니다. 주 실험, 보수적 k1 추가 평가, 다른 학습 seed, CIFAR100 평가를 합친 수입니다. 세 seed를 모두 실행한 설정은5개입니다. seed가1개인 설정의 표준편차는 null입니다.
 
-원자료·원본 주장 표·개인 경로·dataset·checkpoint·sample별 label/prediction·실제 입력 CSV·원시 파형·시뮬레이터 로그·공급사 모델은 이 파일에 포함하지 않는다. 원본 논문의 약35% 절감과 약0.4pp 정확도 손실을 동일 동작점에서 재현한 데이터로 사용할 수 없다.
+원자료·원본 주장 표·개인 경로·dataset·checkpoint·sample별 label/prediction·실제 입력 CSV·원시 파형·시뮬레이터 로그·공급사 모델은 이 파일에 포함하지 않습니다. 원본 논문의 약35% 절감과 약0.4pp 정확도 손실을 동일 동작점에서 재현한 데이터로 사용할 수 없습니다.
 
 ## English
 

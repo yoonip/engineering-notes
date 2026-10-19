@@ -16,7 +16,7 @@ Output ID, name and neutering indicator in ID order. Neutered or Spayed yields O
 
 Produce O when the status contains Neutered or Spayed and X otherwise. Do not filter out unneutered animals, since both categories must remain in the output.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 CASE의 조건은 요구한 두 표시 문자열의 포함 여부와 같으며, 각 입력 행에서 O 또는 X 하나를 만들어 전체 행을 보존합니다.
 

@@ -14,7 +14,7 @@
 
 A final one-step jump extends a route to n−1, and a final two-step jump extends one to n−2. These disjoint cases are added.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 모든 이동열의 마지막 점프는 1 또는 2로 유일하게 구분됩니다. 따라서 f(n)=f(n−1)+f(n−2), f(0)=f(1)=1이며 두 변수로 이 점화식을 계산합니다.
 

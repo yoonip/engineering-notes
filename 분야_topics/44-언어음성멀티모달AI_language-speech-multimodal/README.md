@@ -2,17 +2,17 @@
 
 [전체 목차](../../분야별목차_CATALOG.md) · [처음으로](../../README.md)
 
-언어 모델은 token의 문맥적 관계를 학습한다. Token은 단어와 일대일로 대응하지 않을 수 있으며 tokenizer에 따라 같은 문장의 길이와 표현이 달라진다. Embedding은 입력을 벡터로 표현해 유사도·분류·검색 등에 사용한다.
+언어 모델은 token의 문맥적 관계를 학습합니다. Token은 단어와 일대일로 대응하지 않을 수 있으며 tokenizer에 따라 같은 문장의 길이와 표현이 달라집니다. Embedding은 입력을 벡터로 표현해 유사도·분류·검색 등에 사용합니다.
 
 ## 언어와 음성
 
-BERT는 문맥 표현을 학습하고, T5는 과제를 text-to-text 형식으로 다룬다. GPT 계열은 주로 다음 token을 예측하며 문장을 생성한다. ASR은 음성을 글로, TTS는 글을 음성으로 바꾼다. Whisper·wav2vec 계열은 음성 인식과 표현 학습의 사례다. torchaudio는 음성 데이터 처리, SentencePiece는 tokenization에 쓰인다.
+BERT는 문맥 표현을 학습하고, T5는 과제를 text-to-text 형식으로 다룹니다. GPT 계열은 주로 다음 token을 예측하며 문장을 생성합니다. ASR은 음성을 글로, TTS는 글을 음성으로 바꿉니다. Whisper·wav2vec 계열은 음성 인식과 표현 학습의 사례입니다. torchaudio는 음성 데이터 처리, SentencePiece는 tokenization에 쓰입니다.
 
 ## 여러 입력을 함께 다루기
 
-CLIP은 이미지와 텍스트 표현의 정렬, LLaVA 계열은 시각 정보와 언어 모델의 결합 사례다. Multimodal 시스템은 이미지·음성·영상·텍스트의 입력 처리와 시간·공간 정렬을 포함한다. 문장의 유창함과 입력 내용에 대한 정확성은 따로 평가한다.
+CLIP은 이미지와 텍스트 표현의 정렬, LLaVA 계열은 시각 정보와 언어 모델의 결합 사례입니다. Multimodal 시스템은 이미지·음성·영상·텍스트의 입력 처리와 시간·공간 정렬을 포함합니다. 문장의 유창함과 입력 내용에 대한 정확성은 따로 평가합니다.
 
-한국어·영어·제2외국어에서는 tokenizer 효율, 높임말과 문체, 문화적 맥락, 전문 용어, 번역 방향이 결과에 영향을 준다. 같은 의미의 질문도 언어마다 길이와 난도가 같지 않다.
+한국어·영어·제2외국어에서는 tokenizer 효율, 높임말과 문체, 문화적 맥락, 전문 용어, 번역 방향이 결과에 영향을 줍니다. 같은 의미의 질문도 언어마다 길이와 난도가 같지 않습니다.
 
 ## 관련 기술
 
@@ -25,7 +25,7 @@ BERT, T5, GPT, Whisper, wav2vec, CLIP, LLaVA, Transformers, torchaudio, Sentence
 
 ## 개념·유도·모델·검증
 
-[기초부터 읽기](../../문서_docs/공학기초_FOUNDATIONS.md)
+[기초부터 읽기](../../공학기초_foundations/README.md)
 
 - [Attention: 필요한 정보를 가중합으로 모으기](해설_notes/attention-from-equations.md)
 
@@ -48,7 +48,7 @@ For Korean, English, and other languages, tokenizer efficiency, register and hon
 
 ### Concepts, derivations, models, and verification
 
-[Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
+[Foundations reading guide](../../공학기초_foundations/README.md#english)
 
 - [Attention from equations to implementation](해설_notes/attention-from-equations.md#english)
 

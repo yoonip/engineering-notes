@@ -14,7 +14,7 @@ Both dimensions are 1–100, excluding a 1×1 board. Zero is a wall and one is p
 
 All moves have equal cost, so use BFS. Start distance is one, and mark cells when enqueuing to prevent duplicates. The first dequeued target distance is shortest.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 BFS는 거리 k의 모든 칸을 거리 k+1보다 먼저 처리합니다. 따라서 처음 도착한 경로보다 짧은 미처리 경로가 있을 수 없습니다. 큐가 비면 도달 불가능입니다.
 

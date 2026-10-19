@@ -1,16 +1,16 @@
 # ST-AWFD 공정 이상 탐지
 
-공개 반도체 제조 시계열에서 정상 공정의 파형을 학습하고, 이상 징후가 있는 lot의 검토 순위를 계산한다. CNN autoencoder와 strict-causal multi-horizon Transformer를 같은 데이터 분할에서 비교했다. Python 학습·추론 코드, Jupyter notebook, Streamlit 화면과 실험 요약을 담았다.
+공개 반도체 제조 시계열에서 정상 공정의 파형을 학습하고, 이상 징후가 있는 lot의 검토 순위를 계산합니다. CNN autoencoder와 strict-causal multi-horizon Transformer를 같은 데이터 분할에서 비교했습니다. Python 학습·추론 코드, Jupyter notebook, Streamlit 화면과 실험 요약을 담았습니다.
 
 ## 데이터와 모델
 
-[STMicroelectronics ST-AWFD](https://github.com/STMicroelectronics/ST-AWFD)의 D2를 사용했다. 공식 정의에서 MaterialID는 생산 lot이고, `duration_ms`는 정규화된 상대 시간이다. Step 1의 익명 센서 20개를 64개 상대 시점으로 보간했다. 정상 lot 441개로 모델과 scaler를 맞추고, 정상 111개로 epoch와 경보 기준을 정했다. 공개 평가 집합은 정상 237개와 이상 367개다.
+[STMicroelectronics ST-AWFD](https://github.com/STMicroelectronics/ST-AWFD)의 D2를 사용했습니다. 공식 정의에서 MaterialID는 생산 lot이고, `duration_ms`는 정규화된 상대 시간입니다. Step 1의 익명 센서 20개를 64개 상대 시점으로 보간했습니다. 정상 lot 441개로 모델과 scaler를 맞추고, 정상 111개로 epoch와 경보 기준을 정했습니다. 공개 평가 집합은 정상 237개와 이상 367개입니다.
 
-CNN denoising autoencoder는 정상 파형을 복원한다. Transformer는 과거 방향 Conv1d embedding과 causal attention으로 1·2·4·8 시점 뒤 센서값의 평균과 불확실성을 예측한다. 관측값의 Gaussian NLL을 이상 점수로 사용한다. 저장 모델 추론은 학습 때 정한 scaler와 경보 기준을 그대로 적용한다.
+CNN denoising autoencoder는 정상 파형을 복원합니다. Transformer는 과거 방향 Conv1d embedding과 causal attention으로 1·2·4·8 시점 뒤 센서값의 평균과 불확실성을 예측합니다. 관측값의 Gaussian NLL을 이상 점수로 사용합니다. 저장 모델 추론은 학습 때 정한 scaler와 경보 기준을 그대로 적용합니다.
 
 ## 기록된 GPU 실험
 
-RTX 3070 Ti에서 Transformer를 271 epoch 학습했고, 정상 validation NLL이 가장 낮은 241 epoch 모델을 저장했다. 같은 공개 평가 집합의 결과는 다음과 같다.
+RTX 3070 Ti에서 Transformer를 271 epoch 학습했고, 정상 validation NLL이 가장 낮은 241 epoch 모델을 저장했습니다. 같은 공개 평가 집합의 결과는 다음과 같습니다.
 
 | 지표 | CNN autoencoder | Transformer | Transformer + 잔차 공분산 |
 |---|---:|---:|---:|
@@ -22,9 +22,9 @@ RTX 3070 Ti에서 Transformer를 271 epoch 학습했고, 정상 validation NLL�
 | Average Precision | 1.0000 | 1.0000 | 0.9854 |
 | 상위 61개 검토 대상 중 이상 | 61 | 61 | 59 |
 
-잔차 공분산 점수는 Transformer의 오경보를 줄이는 대신 순위 성능이 낮아졌다. 이 조건에서 정상 오경보는 CNN이 가장 적었다.
+잔차 공분산 점수는 Transformer의 오경보를 줄이는 대신 순위 성능이 낮아졌습니다. 이 조건에서 정상 오경보는 CNN이 가장 적었습니다.
 
-정상 111개를 epoch 선택과 경보 기준 설정에 함께 사용했고, 같은 holdout에서 여러 모델을 비교했다. 결과는 공개 데이터의 탐색 실험이다. 입력은 전체 step을 보간한 trace이므로 모델 내부의 미래 입력 차단 검사와 실시간 원시 데이터 예측은 구분한다. 이 데이터의 정답은 lot의 정상·이상 구분이며, 공정 조치에 따른 최종 die 수율 변화는 포함하지 않는다.
+정상 111개를 epoch 선택과 경보 기준 설정에 함께 사용했고, 같은 holdout에서 여러 모델을 비교했습니다. 결과는 공개 데이터의 탐색 실험입니다. 입력은 전체 step을 보간한 trace이므로 모델 내부의 미래 입력 차단 검사와 실시간 원시 데이터 예측은 구분합니다. 이 데이터의 정답은 lot의 정상·이상 구분이며, 공정 조치에 따른 최종 die 수율 변화는 포함하지 않습니다.
 
 ## 파일 구성
 
@@ -43,7 +43,7 @@ RTX 3070 Ti에서 Transformer를 271 epoch 학습했고, 정상 validation NLL�
 
 ## 실행
 
-Python 3.12 이상에서 가상환경을 만든다. [PyTorch 설치 선택기](https://pytorch.org/get-started/locally/)에서 운영체제와 CPU/CUDA 환경에 맞는 PyTorch를 설치한 뒤 나머지 패키지를 설치한다.
+Python 3.12 이상에서 가상환경을 만듭니다. [PyTorch 설치 선택기](https://pytorch.org/get-started/locally/)에서 운영체제와 CPU/CUDA 환경에 맞는 PyTorch를 설치한 뒤 나머지 패키지를 설치합니다.
 
 ```powershell
 python -m venv .venv
@@ -51,7 +51,7 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-공식 저장소의 `Datasets`에 있는 D2.zip을 `data/st_awfd/D2.zip`에 둔다. 원본 데이터와 학습 가중치는 이 source 폴더에 포함하지 않았다. 학습 명령은 `models/`와 `results/`에 새 결과를 저장한다.
+공식 저장소의 `Datasets`에 있는 D2.zip을 `data/st_awfd/D2.zip`에 둡니다. 원본 데이터와 학습 가중치는 이 source 폴더에 포함하지 않았습니다. 학습 명령은 `models/`와 `results/`에 새 결과를 저장합니다.
 
 ```powershell
 # CNN 기준선
@@ -68,13 +68,13 @@ python st_awfd_gpt_covariance_audit.py
 python -m streamlit run st_awfd_app.py
 ```
 
-Excel은 openpyxl로 작성한다. export가 불가능하면 저장된 모델·CSV를 유지하고 결과 요약에 `csv_only`를 기록한다.
+Excel은 openpyxl로 작성합니다. export가 불가능하면 저장된 모델·CSV를 유지하고 결과 요약에 `csv_only`를 기록합니다.
 
 ```powershell
 python -m unittest discover -s tests -v
 ```
 
-2026년 10월 19일에는 공개 데이터와 기존 학습 가중치 없이 CPU 모델의 causal 불변성·Gaussian loss·추론 batch 동등성, Node 없는 Excel 생성, Excel 의존성·쓰기 권한 오류 시 CSV 보존을 검사했다. 전체 GPU 재학습과 공개 D2 전체 실행은 이 검사에서 반복하지 않았다.
+2026년 10월 19일에는 공개 데이터와 기존 학습 가중치 없이 CPU 모델의 causal 불변성·Gaussian loss·추론 batch 동등성, Node 없는 Excel 생성, Excel 의존성·쓰기 권한 오류 시 CSV 보존을 검사했습니다. 전체 GPU 재학습과 공개 D2 전체 실행은 이 검사에서 반복하지 않았습니다.
 
 ## 출처
 
@@ -82,7 +82,7 @@ python -m unittest discover -s tests -v
 
 원 논문: [An Ensembled Anomaly Detector for Wafer Fault Detection, Sensors 2021](https://doi.org/10.3390/s21165465)
 
-모델 아이디어: [TRACE-GPT](https://arxiv.org/abs/2309.11427). 이 코드의 다변량·다중 horizon Gaussian 예측 구조는 별도 구현이다.
+모델 아이디어: [TRACE-GPT](https://arxiv.org/abs/2309.11427). 이 코드의 다변량·다중 horizon Gaussian 예측 구조는 별도 구현입니다.
 
 ## English
 

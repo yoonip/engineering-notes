@@ -14,7 +14,7 @@ There are 1–100000 valid records with case-sensitive IDs/names of length 1–1
 
 Store user IDs and enter/leave events rather than immediately formatting messages. Apply every nickname update, then render all events with the final nickname.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 출력의 닉네임은 해당 사용자의 마지막 닉네임으로 결정됩니다. 이벤트 순서와 최종 닉네임을 분리하면 변경으로 과거 메시지를 직접 수정할 필요 없이 같은 결과를 얻습니다.
 

@@ -14,7 +14,7 @@ The parenthesis string has length 1–100000. Return True exactly when all brack
 
 Increase a balance for an opening bracket and decrease it for a closing bracket. A negative prefix is invalid immediately, and the final balance must be zero.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 올바른 괄호열의 모든 접두부는 닫는 괄호가 더 많지 않아야 하고 전체 수는 같아야 합니다. 두 조건은 괄호를 왼쪽부터 짝짓는 데 충분하기도 합니다.
 

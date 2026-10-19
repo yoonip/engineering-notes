@@ -14,7 +14,7 @@ msg has 1–1000 uppercase letters. Start with A–Z at indices 1–26, repeated
 
 Start with dictionary entries A–Z. Extend the current word while the next character keeps it in the dictionary. On a missing extension, output the current index and register the extension.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 처리 중인 word는 항상 사전에 있는 가장 긴 현재 접두부입니다. 확장이 처음 실패한 시점에 출력하므로 LZW 규칙의 최장 일치 문자열을 정확히 선택합니다.
 

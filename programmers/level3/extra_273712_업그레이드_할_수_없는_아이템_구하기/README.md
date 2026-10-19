@@ -16,7 +16,7 @@ Root parent IDs are NULL and each item has at most one parent. Output ID,name,ra
 
 Check whether any next item has the current item as its parent. Keep only items with no matching child in the LEFT JOIN; these are terminal upgrades.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 더 업그레이드할 수 없다는 것은 자신의 ID가 다른 아이템의 부모 ID로 등장하지 않는다는 뜻입니다. 자식 ITEM_ID의 NULL 여부는 바로 이 부재 조건을 나타냅니다.
 

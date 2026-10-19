@@ -1,16 +1,16 @@
-# Bilinear warp: 없는 pixel 사이의 값을 어떻게 계산할까
+# Bilinear warp: 없는 pixel 사이의 값을 어떻게 계산할까요
 
 [계산 코드](../../../예제_examples/심화_advanced/ai_data/advanced_ai_models.py) · [CLI](../../../예제_examples/심화_advanced/ai_data/demo.py) · [독립 검증](../../../예제_examples/심화_advanced/ai_data/test_advanced_ai.py)
 
-## 좌표 변환과 영상의 값은 다른 계산이다
+## 좌표 변환과 영상의 값은 다른 계산입니다
 
-카메라·좌표 변환으로 목적지 pixel이 원본의 어디를 볼지 정했어도 원본 좌표가 2.4, 1.7처럼 정수가 아닐 수 있다. 원본 배열에는 이 좌표의 값이 직접 저장되어 있지 않다. Resampling은 이웃 표본으로 그 값을 추정한다. Bilinear interpolation은 x·y 방향의 선형 보간을 결합하는 방법이다.
+카메라·좌표 변환으로 목적지 pixel이 원본의 어디를 볼지 정했어도 원본 좌표가 2.4, 1.7처럼 정수가 아닐 수 있습니다. 원본 배열에는 이 좌표의 값이 직접 저장되어 있지 않습니다. Resampling은 이웃 표본으로 그 값을 추정합니다. Bilinear interpolation은 x·y 방향의 선형 보간을 결합하는 방법입니다.
 
-예제의 영상은 단일 channel 실수 배열이며 pixel 중심은 정수 좌표 $`(x,y)`$다. Array index는 `image[y][x]`로 둔다. 정수 중심 규약과 배열 순서를 먼저 고정해야 전치·반 pixel 오차를 구분할 수 있다. OpenCV도 기하 변환에서 좌표 매핑과 interpolation을 나누어 설명한다. [OpenCV geometric transforms](https://docs.opencv.org/4.x/da/d54/group__imgproc__transform.html)
+예제의 영상은 단일 channel 실수 배열이며 pixel 중심은 정수 좌표 $`(x,y)`$입니다. Array index는 `image[y][x]`로 둡니다. 정수 중심 규약과 배열 순서를 먼저 고정해야 전치·반 pixel 오차를 구분할 수 있습니다. OpenCV도 기하 변환에서 좌표 매핑과 interpolation을 나누어 설명합니다. [OpenCV geometric transforms](https://docs.opencv.org/4.x/da/d54/group__imgproc__transform.html)
 
-## 한 축을 보간하고 다른 축을 보간한다
+## 한 축을 보간하고 다른 축을 보간합니다
 
-$`i=\lfloor x\rfloor`$, $`j=\lfloor y\rfloor`$, $`a=x-i`$, $`b=y-j`$라 하면 a,b는 0~1 범위의 비율이다. 위 행과 아래 행의 수평 보간은 각각
+$`i=\lfloor x\rfloor`$, $`j=\lfloor y\rfloor`$, $`a=x-i`$, $`b=y-j`$라 하면 a,b는 0~1 범위의 비율입니다. 위 행과 아래 행의 수평 보간은 각각
 
 ```math
 r_0=(1-a)I_{j,i}+aI_{j,i+1},\qquad
@@ -25,13 +25,13 @@ I(x,y)=(1-b)r_0+br_1
 w_x(u)w_y(v)I_{j+v,i+u}.
 ```
 
-네 가중치는 음이 아니며 합이 1이다. 네 이웃 값이 모두 같은 c면 결과도 c이고, 범위 안의 네 값 사이를 벗어나지 않는다. 다만 경계 밖을 0으로 채우면 원래 영상의 최솟값보다 작아질 수 있다. 그 경우 네 이웃에 이미 경계값 0이 포함되어 있다는 뜻이다.
+네 가중치는 음이 아니며 합이 1입니다. 네 이웃 값이 모두 같은 c면 결과도 c이고, 범위 안의 네 값 사이를 벗어나지 않습니다. 다만 경계 밖을 0으로 채우면 원래 영상의 최솟값보다 작아질 수 있습니다. 그 경우 네 이웃에 이미 경계값 0이 포함되어 있다는 뜻입니다.
 
-이 보간은 각 축에 대해 1차이며 2차원 전체에서 반드시 affine 함수인 것은 아니다. 반면 원본 값이 $`I(x,y)=ux+vy+c`$인 평면이면 내부에서 그 값을 정확히 재현한다. 이것이 테스트의 독립 oracle이다. 예를 들어 $`2x+3y+5`$를 저장한 영상의 소수 좌표 결과를 식에 직접 대입해 비교한다.
+이 보간은 각 축에 대해 1차이며 2차원 전체에서 반드시 affine 함수인 것은 아닙니다. 반면 원본 값이 $`I(x,y)=ux+vy+c`$인 평면이면 내부에서 그 값을 정확히 재현합니다. 이것이 테스트의 독립 oracle입니다. 예를 들어 $`2x+3y+5`$를 저장한 영상의 소수 좌표 결과를 식에 직접 대입해 비교합니다.
 
-## 왜 inverse mapping을 사용하는가
+## 왜 inverse mapping을 사용합니까
 
-원본 pixel을 목적지로 하나씩 보내는 forward mapping은 반올림 뒤 일부 목적지가 비거나 여러 원본이 겹칠 수 있다. Inverse mapping은 출력 pixel마다 원본의 연속 좌표를 구해 값을 하나씩 채운다.
+원본 pixel을 목적지로 하나씩 보내는 forward mapping은 반올림 뒤 일부 목적지가 비거나 여러 원본이 겹칠 수 있습니다. Inverse mapping은 출력 pixel마다 원본의 연속 좌표를 구해 값을 하나씩 채웁니다.
 
 ```math
 \begin{bmatrix}x_s\\y_s\end{bmatrix}
@@ -40,13 +40,13 @@ w_x(u)w_y(v)I_{j+v,i+u}.
 \begin{bmatrix}x_d\\y_d\\1\end{bmatrix}.
 ```
 
-코드의 `inverse_map`은 이미 목적지→원본 방향의 행렬이다. 원본을 오른쪽으로 반 pixel 이동해 보이게 하려면 목적지 x에서 원본의 x-0.5를 읽는다. 변환 방향과 물체가 화면에서 움직이는 방향의 부호가 반대라는 점을 유도하면 외워서 바꾸는 일을 줄일 수 있다. OpenCV의 `remap`도 목적지 위치에서 원본 좌표를 지정한다.
+코드의 `inverse_map`은 이미 목적지→원본 방향의 행렬입니다. 원본을 오른쪽으로 반 pixel 이동해 보이게 하려면 목적지 x에서 원본의 x-0.5를 읽습니다. 변환 방향과 물체가 화면에서 움직이는 방향의 부호가 반대라는 점을 유도하면 외워서 바꾸는 일을 줄일 수 있습니다. OpenCV의 `remap`도 목적지 위치에서 원본 좌표를 지정합니다.
 
 ## 라이브러리 좌표를 맞추는 법
 
-PyTorch `grid_sample`은 기본적으로 -1~1 정규화 좌표를 받으며 `align_corners`가 의미를 바꾼다. 이 예제의 정수 pixel 중심 x와 연결하면 `align_corners=False`에서 정규화 값은 $`u=2(x+1/2)/W-1`$이다. True이며 W>1일 때는 $`u=2x/(W-1)-1`$이다. 같은 u라도 설정이 다르면 같은 원본 위치가 아니다. [PyTorch grid_sample](https://docs.pytorch.org/docs/2.9/generated/torch.nn.functional.grid_sample.html)
+PyTorch `grid_sample`은 기본적으로 -1~1 정규화 좌표를 받으며 `align_corners`가 의미를 바꿉니다. 이 예제의 정수 pixel 중심 x와 연결하면 `align_corners=False`에서 정규화 값은 $`u=2(x+1/2)/W-1`$입니다. True이며 W>1일 때는 $`u=2x/(W-1)-1`$입니다. 같은 u라도 설정이 다르면 같은 원본 위치가 아닙니다. [PyTorch grid_sample](https://docs.pytorch.org/docs/2.9/generated/torch.nn.functional.grid_sample.html)
 
-코드는 정규화 grid를 받지 않고 직접 pixel 좌표를 사용한다. 경계는 constant 0이며 clamp·reflection을 쓰지 않는다. 영상 [10] 하나를 x=-0.25,y=0에서 읽으면 내부 값 10의 가중치가 0.75라 결과는 7.5다. 좌표가 밖에 있다는 이유로 결과 전체를 즉시 0으로 만드는 정책과 다르다.
+코드는 정규화 grid를 받지 않고 직접 pixel 좌표를 사용합니다. 경계는 constant 0이며 clamp·reflection을 쓰지 않습니다. 영상 [10] 하나를 x=-0.25,y=0에서 읽으면 내부 값 10의 가중치가 0.75라 결과는 7.5입니다. 좌표가 밖에 있다는 이유로 결과 전체를 즉시 0으로 만드는 정책과 다릅니다.
 
 ## 실행과 검증
 
@@ -55,11 +55,11 @@ python "예제_examples/심화_advanced/ai_data/demo.py" warp
 python -m unittest discover -s "예제_examples/심화_advanced/ai_data" -p "test_*.py" -v
 ```
 
-CLI는 $`I[y,x]=10y+x`$인 5×4 입력을 실제 resampling한다. 역매핑에 x-0.5,y-0.25를 사용하므로 내부의 출력 (1,1)은 원본 (0.5,0.75)의 값 8이다. JSON에는 입력, 변환, 출력 배열 전체가 있어 경계와 내부를 비교할 수 있다.
+CLI는 $`I[y,x]=10y+x`$인 5×4 입력을 실제 resampling합니다. 역매핑에 x-0.5,y-0.25를 사용하므로 내부의 출력 (1,1)은 원본 (0.5,0.75)의 값 8입니다. JSON에는 입력, 변환, 출력 배열 전체가 있어 경계와 내부를 비교할 수 있습니다.
 
-테스트는 평면 재현, 항등 변환, 정수 이동에서 알려진 배열, 영상 한 점의 경계 가중치를 검사한다. 원본 파일이나 학습 모델 없이 좌표·표본화 계산을 검증한다. 전체 변환은 원본의 직사각형 여부를 한 번 검사하고, 각 출력 위치에서 네 표본을 사용한다. 원본 높이를 $`H_s`$라 하면 행 길이 검사와 보간의 시간은 $`O(H_s+H_dW_d)`$, 출력 저장 공간은 $`O(H_dW_d)`$다.
+테스트는 평면 재현, 항등 변환, 정수 이동에서 알려진 배열, 영상 한 점의 경계 가중치를 검사합니다. 원본 파일이나 학습 모델 없이 좌표·표본화 계산을 검증합니다. 전체 변환은 원본의 직사각형 여부를 한 번 검사하고, 각 출력 위치에서 네 표본을 사용합니다. 원본 높이를 $`H_s`$라 하면 행 길이 검사와 보간의 시간은 $`O(H_s+H_dW_d)`$, 출력 저장 공간은 $`O(H_dW_d)`$입니다.
 
-크게 축소하는 영상은 고주파가 낮은 표본 격자에서 겹칠 수 있다. Bilinear라고 충분한 anti-aliasing filter를 항상 제공하는 것은 아니다. 실제 영상 비교는 축소율·전처리·좌표 convention·색 공간을 맞추고, 선명도와 aliasing을 과제에 맞게 검토한다. Interpolation 정확성과 인식 성능은 별개의 평가다.
+크게 축소하는 영상은 고주파가 낮은 표본 격자에서 겹칠 수 있습니다. Bilinear라고 충분한 anti-aliasing filter를 항상 제공하는 것은 아닙니다. 실제 영상 비교는 축소율·전처리·좌표 convention·색 공간을 맞추고, 선명도와 aliasing을 과제에 맞게 검토합니다. Interpolation 정확성과 인식 성능은 별개의 평가입니다.
 
 ## English
 

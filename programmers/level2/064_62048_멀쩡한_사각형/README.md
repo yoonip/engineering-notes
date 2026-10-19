@@ -14,7 +14,7 @@ w and h are integers in [1,100000000]. Return the number of unit cells not cut b
 
 Count the cells crossed by the diagonal and subtract them from the whole rectangle. Crossing a vertical or horizontal grid line enters another cell; the greatest common divisor corrects simultaneous crossings.
 
-## 왜 맞는가 / Why it works
+## 정답이 되는 이유 / Why it works
 
 w와 h를 최대공약수 g로 나누면 같은 모양의 구간이 g개입니다. 각 구간에서 내부 격자점은 없으므로 잘린 칸은 w/g+h/g−1개이고, 전체는 w+h−g개입니다.
 
