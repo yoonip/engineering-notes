@@ -16,6 +16,19 @@
 | FPGA·계측 자동화 | FPGA와 ADC/DAC를 연결한 혼성신호 제어 및 데이터 수집 |
 | 임베디드·AI 응용 | 태양에너지 하베스팅 시스템, T5 기반 점자 역번역 모델 |
 
+## 활용 기술
+
+| 분야 | 언어·도구 |
+| --- | --- |
+| 프로그래밍 | Python, C/C++, MATLAB, Bash |
+| 하드웨어 기술 언어 | Verilog, SystemVerilog, Verilog-A |
+| 회로 설계·물리 검증 | Cadence Virtuoso·Spectre, Calibre DRC/LVS·PEX, PVT 분석 |
+| RTL·FPGA 도구 | Xcelium, Vivado, Opal Kelly FrontPanel |
+| AI | PyTorch, Hugging Face |
+| 개발 환경 | Linux(CentOS·Ubuntu), Jupyter Notebook, CUDA·cuDNN 환경 구성 |
+| 임베디드 | Arduino, Raspberry Pi |
+| 계측 | Keithley 4200A-SCS, HP 4155B, 프로브 스테이션, 오실로스코프, 로직 아날라이저 |
+
 ## 논문 및 기술 글
 
 - 2025 · AI 모델의 메모리·연산 에너지 비교 연구 — Electronics. [DOI](https://doi.org/10.3390/electronics14132718)
@@ -39,6 +52,16 @@
 - 국민대학교 지능형반도체 및 디스플레이 석사
 - 국민대학교 전자공학부 학사
 - ISL
+
+## 영어
+
+TOEIC Speaking IH (Intermediate High)
+
+| 구분 | 활용 |
+| --- | --- |
+| 읽기 | 영문 논문·기술 문서와 시사 기사 독해 |
+| 쓰기 | 연구 내용과 기술 경험을 영어 문서로 정리 |
+| 말하기 | 일상 및 업무 관련 주제에 대한 영어 의사소통 |
 
 ## 기록과 연락
 
