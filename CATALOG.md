@@ -79,6 +79,6 @@
 ## 연구와 지원 경험
 
 - [새로운 소자와 컴퓨팅](topics/54-research-frontiers/README.md) — Neuromorphic와 메모리 연산 · 빛, 양자, 생체 인터페이스
-- [지원 · 시험 · 면접](topics/55-applications-assessments/README.md) — 문서와 기술 자료 · 전형의 유형 · 지원과 제안
+- [지원 · 시험 · 면접](topics/55-applications-assessments/README.md) — 기업별 전형 기록 · 코딩테스트 · 연락
 
 [AI 기업과 모델](model-lab/PROVIDERS.md) · [코드 예제](examples/README.md) · [English overview](README.en.md)
