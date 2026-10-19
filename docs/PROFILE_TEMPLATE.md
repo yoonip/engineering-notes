@@ -16,18 +16,42 @@
 | FPGA·계측 자동화 | FPGA와 ADC/DAC를 연결한 혼성신호 제어 및 데이터 수집 |
 | 임베디드·AI 응용 | 태양에너지 하베스팅 시스템, T5 기반 점자 역번역 모델 |
 
-## 활용 기술
+## 기술 분야
+
+반도체 회로와 디지털 하드웨어 설계, 펌웨어, 실리콘 검증, 계측 자동화와 AI 모델 분석을 다룹니다.
+
+| 분야 | 기술·도구 |
+| --- | --- |
+| 반도체·메모리 회로 | CMOS, SRAM, DRAM-PIM, AI 가속기, MAC·Adder Tree |
+| SRAM 아키텍처 | Bank·Sub-block·Bitcell Array, WL Driver, Decoder, MUX, Sense Amplifier |
+| 회로 설계·시뮬레이션 | Cadence Virtuoso·Spectre, Verilog-A, PVT 분석, SNM, DVS·RBB |
+| 레이아웃·물리 검증 | Full-Chip Layout·Tape-out, TEG Layout, Calibre DRC/LVS·PEX, Assura |
+| 공정·설계 환경 | 45nm·65nm PDK, EDA·Ruledeck 환경 |
+| RTL 설계·검증 | Verilog, SystemVerilog, FIFO·Clock Domain, 사이클 단위 기능 검증, Xcelium, QuestaSim |
+| 혼성신호 모델링 | XMODEL, Glister, Modelzen |
+| FPGA·Bring-up | Vivado, Opal Kelly XEM8320, Nexys 4 DDR, SYZYGY, FrontPanel API |
+| 하드웨어·펌웨어 | Raspberry Pi, Arduino, MCU, 임베디드 펌웨어, Linux 드라이버, 전원 회로·PCB, SPI·GPIO, ADC/DAC |
+| Post-Silicon 검증 | Silicon Bring-up, 소자 특성·파라미터 분석, DC·펄스 계측, Probe-card Testing |
+| 계측·테스트 자동화 | 테스트 벡터·시퀀스, Telemetry·Logging, 데이터 수집·시각화, Tkinter·Matplotlib |
+| 시스템 디버깅 | JTAG·OpenOCD, 신호 무결성·버스 타이밍 분석 |
+
+## 언어와 개발 환경
 
 | 분야 | 언어·도구 |
 | --- | --- |
-| 프로그래밍 | Python, C/C++, MATLAB, Bash |
-| 하드웨어 기술 언어 | Verilog, SystemVerilog, Verilog-A |
-| 회로 설계·물리 검증 | Cadence Virtuoso·Spectre, Calibre DRC/LVS·PEX, PVT 분석 |
-| RTL·FPGA 도구 | Xcelium, Vivado, Opal Kelly FrontPanel |
-| AI | PyTorch, Hugging Face |
-| 개발 환경 | Linux(CentOS·Ubuntu), Jupyter Notebook, CUDA·cuDNN 환경 구성 |
-| 임베디드 | Arduino, Raspberry Pi |
-| 계측 | Keithley 4200A-SCS, HP 4155B, 프로브 스테이션, 오실로스코프, 로직 아날라이저 |
+| 시스템·임베디드 프로그래밍 | C, C++ |
+| 분석·자동화·수치해석 | Python, MATLAB, Bash |
+| AI·모델 분석 | PyTorch, TensorFlow, Hugging Face, CNN·LLM·T5, 모델 양자화, 메모리·MAC·KV Cache 에너지 모델링, Memory-bound·Compute-bound 분석 |
+| 개발·GPU 환경 | Linux(CentOS·Ubuntu), GPU 서버, Jupyter Notebook, CUDA·cuDNN, Docker, Git |
+
+## 계측 장비
+
+| 구분 | 장비 |
+| --- | --- |
+| 반도체·소자 계측 | Keithley 4200A-SCS(SMU·고속 PMU), HP 4155B |
+| 프로빙·온도 제어 | 진공 프로브 스테이션, 프로브 카드, Hot Chuck |
+| 파형 관측 | 디지털 오실로스코프 |
+| 디지털 신호 분석 | 로직 아날라이저 |
 
 ## 논문 및 기술 글
 
