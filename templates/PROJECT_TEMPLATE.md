@@ -1,16 +1,13 @@
-# Project title
-Korean version: add a link to README.ko.md after creating that file.
-Status: Planned
+# 설계 산출물의 관계
 
-## Problem and requirements
-## My contribution
-Distinguish original work, upstream components and reproduced examples.
-## System overview
-## Hardware and software environment
-## How to build and run
-## Verification and measurements
-## Results
-No results recorded yet.
-## Design choices and trade-offs
-## Known limitations
-## References and upstream licenses
+요구사항은 목표와 동작 조건을, 설계 문서는 구성요소와 인터페이스를 설명한다. 소스·회로도·설정 파일은 구현을 표현하고, 테스트·로그·파형·측정 데이터는 동작을 관찰하는 근거가 된다.
+
+| 구분 | 포함되는 정보 |
+|---|---|
+| 문제 | 입력, 출력, 제한 조건 |
+| 구조 | 모듈, 인터페이스, 데이터 흐름 |
+| 구현 | 소스 revision, 설정, 의존성 |
+| 검증 | 기대 동작, 입력 조건, 비교 기준 |
+| 결과 | 관찰값, 단위, 오차, 적용 범위 |
+
+하나의 결과가 여러 설계 선택에 의해 만들어질 수 있다. 변경 이력은 어떤 선택과 결과가 연결되는지 남긴다.

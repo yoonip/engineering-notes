@@ -1,7 +1,11 @@
-# Open Model Lab
-[Samsung TRM investigation](samsung-trm/README.md) · [DeepSeek-R1-Distill investigation](deepseek-r1-distill/README.md)
+# AI 모델
 
-The work sequence is: source and paper → environment → baseline → code reading → one modification → controlled comparison → report.
+모델을 이해하는 경로는 논문, 구조와 코드, 가중치, 실행 환경으로 이어진다. 같은 계열에서도 checkpoint와 tokenizer, 추론 설정에 따라 결과가 달라진다.
 
-All entries are currently **Planned**. Model choice and experiment size depend on available hardware.
-Use the [experiment template](../templates/MODEL_EXPERIMENT_TEMPLATE.md).
+- [기업과 모델 안내](PROVIDERS.md)
+- [Tiny Recursive Models](samsung-trm/README.md)
+- [DeepSeek-R1-Distill](deepseek-r1-distill/README.md)
+- [모델의 구성과 실행 방식](../topics/26-open-model-lab/README.md)
+- [학습·미세조정·경량화](../topics/45-ai-training-optimization/README.md)
+- [응용·RAG·에이전트·평가](../topics/46-ai-agents-evaluation/README.md)
+- [모델 평가 지표](../templates/MODEL_EXPERIMENT_TEMPLATE.md)

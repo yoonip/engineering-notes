@@ -1,399 +1,1074 @@
 {
-  "schema_version": 1,
-  "initial_status": "Planned",
+  "schema_version": 3,
+  "primary_language": "ko",
   "areas": [
     {
+      "number": 1,
       "slug": "01-linux-bash",
-      "en": "Linux & Bash",
-      "ko": "리눅스와 셸",
-      "topics": [
-        "Linux/Ubuntu 설치, WSL2, 파일시스템·권한·패키지 관리",
-        "Bash 명령어·파이프·리다이렉션·스크립트",
-        "프로세스·환경변수·SSH·원격 서버",
-        "개발 환경 설치와 오류 해결 기록"
+      "title": "Linux & Bash",
+      "english_title": "Linux & Bash",
+      "sections": [
+        "터미널, 셸, Bash",
+        "파일과 권한",
+        "프로세스와 개발 환경"
       ],
-      "first": "Record a reproducible development-environment setup.",
-      "status": "Planned"
+      "keywords": "Ubuntu, Debian, Fedora, Arch Linux, WSL2, Bash, Zsh, systemd, SSH, tmux, rsync",
+      "path": "topics/01-linux-bash/README.md",
+      "references": [
+        "https://docs.kernel.org/",
+        "https://www.gnu.org/software/bash/manual/bash.html"
+      ]
     },
     {
+      "number": 2,
       "slug": "02-git-development-tools",
-      "en": "Git & Development Tools",
-      "ko": "깃과 개발 도구",
-      "topics": [
-        "Git·GitHub·브랜치·커밋·병합·충돌 해결",
-        "GitHub CLI·GitHub Desktop·이슈·PR",
-        "VS Code·GCC·Clang·Make·CMake",
-        "Docker·의존성·버전 고정·실행 환경 기록"
+      "title": "Git & Development Tools",
+      "english_title": "Git & Development Tools",
+      "sections": [
+        "작업에서 공유까지",
+        "편집, 빌드, 실행 환경"
       ],
-      "first": "Document a branch-and-review workflow using a small example.",
-      "status": "Planned"
+      "keywords": "Git, GitHub, GitLab, GitHub CLI/Desktop, VS Code, Vim/Neovim, GCC, Clang/LLVM, Make, CMake, Meson, Ninja, Docker, Podman",
+      "path": "topics/02-git-development-tools/README.md",
+      "references": [
+        "https://git-scm.com/book/en/v2",
+        "https://gcc.gnu.org/onlinedocs/gcc/Standards.html"
+      ]
     },
     {
+      "number": 3,
       "slug": "03-python-jupyter",
-      "en": "Python & Jupyter Environments",
-      "ko": "파이썬과 주피터 환경",
-      "topics": [
-        "Python·pip·venv·Conda 환경 관리",
-        "Jupyter Notebook·JupyterLab·커널 등록",
-        "NumPy·SciPy·pandas·Matplotlib",
-        "PyTorch·TensorFlow 설치와 GPU 인식 확인",
-        "환경 파일·노트북 실행 순서·재현 방법"
+      "title": "Python & Jupyter",
+      "english_title": "Python & Jupyter Environments",
+      "sections": [
+        "환경을 나누는 이유",
+        "계산과 시각화"
       ],
-      "first": "Create an environment guide and a notebook that verifies the installation.",
-      "status": "Planned"
+      "keywords": "Python, pip, uv, venv, Conda/Mamba, Jupyter Notebook/Lab, IPython, NumPy, SciPy, pandas, Matplotlib, Seaborn, Plotly",
+      "path": "topics/03-python-jupyter/README.md",
+      "references": [
+        "https://docs.python.org/3/tutorial/",
+        "https://jupyter.org/install",
+        "https://numpy.org/doc/"
+      ]
     },
     {
+      "number": 4,
       "slug": "04-c-cpp-python",
-      "en": "C, C++ & Python",
-      "ko": "프로그래밍 언어",
-      "topics": [
-        "C: 포인터·배열·구조체·메모리·비트 연산",
-        "C++: 객체·RAII·STL·템플릿·동시성",
-        "Python: 자료구조·모듈·타입·테스트",
-        "어셈블리 읽기·C/C++과 Python 연결",
-        "주석·API 설계·자료형·수치 오차"
+      "title": "C, C++ & Python",
+      "english_title": "C, C++ & Python",
+      "sections": [
+        "C: 데이터와 메모리",
+        "C++: 자원 수명과 추상화",
+        "Python과 다른 언어의 연결"
       ],
-      "first": "Implement one algorithm in C, C++ and Python and compare the results.",
-      "status": "Planned"
+      "keywords": "C, C++, Python, Rust, Go, Java, C#, JavaScript/TypeScript, Julia, R, Tcl, Lua, Assembly",
+      "path": "topics/04-c-cpp-python/README.md",
+      "references": [
+        "https://gcc.gnu.org/onlinedocs/gcc/Standards.html",
+        "https://docs.python.org/3/tutorial/"
+      ]
     },
     {
+      "number": 5,
       "slug": "05-matlab-scientific",
-      "en": "MATLAB & Scientific Computing",
-      "ko": "매트랩과 과학 계산",
-      "topics": [
-        "MATLAB 문법·행렬 연산·시각화",
-        "Simulink 모델링과 시뮬레이션",
-        "Python/MATLAB 구현 비교",
-        "수치 적분·미분·최적화·행렬 계산",
-        "계산 결과·단위·오차 검증"
+      "title": "MATLAB & Scientific Computing",
+      "english_title": "MATLAB & Scientific Computing",
+      "sections": [
+        "행렬 연산과 원소별 연산",
+        "수치 해석과 모델링"
       ],
-      "first": "Compare MATLAB and Python implementations of one numerical method.",
-      "status": "Planned"
+      "keywords": "MATLAB, Simulink, GNU Octave, SciPy, SymPy, Mathematica, Maple, Julia",
+      "path": "topics/05-matlab-scientific/README.md",
+      "references": [
+        "https://www.mathworks.com/help/matlab/learn_matlab/matrices-and-arrays.html",
+        "https://docs.scipy.org/doc/scipy/"
+      ]
     },
     {
+      "number": 6,
       "slug": "06-math-to-code",
-      "en": "Math to Code",
-      "ko": "수식을 코드로",
-      "topics": [
-        "미적분·선형대수·확률·통계",
-        "미분방정식·이산수학·복소수",
-        "최적화·수치해석·선형 시스템",
-        "공식 유도 → 구현 → 그래프 → 검증",
-        "단위·경계 조건·안정성·오차 분석"
+      "title": "수식을 코드로",
+      "english_title": "Math to Code",
+      "sections": [
+        "미분방정식에서 반복문으로",
+        "수치적으로 같은 식인가"
       ],
-      "first": "Turn an equation into code with an analytical or numerical reference.",
-      "status": "Planned"
+      "keywords": "Calculus, Linear Algebra, Probability, Statistics, ODE/PDE, Numerical Analysis, Optimization, Information Theory, Graph Theory",
+      "path": "topics/06-math-to-code/README.md",
+      "references": [
+        "https://numpy.org/doc/",
+        "https://docs.scipy.org/doc/scipy/"
+      ]
     },
     {
+      "number": 7,
       "slug": "07-cs-foundations",
-      "en": "Computer Science Foundations",
-      "ko": "컴퓨터공학 기초",
-      "topics": [
-        "자료구조·알고리즘·계산복잡도",
-        "운영체제·메모리·프로세스·스레드",
-        "컴퓨터 네트워크·파일시스템·데이터베이스",
-        "컴파일러·링커·실행 파일",
-        "병렬성·동시성·시스템 프로그래밍"
+      "title": "컴퓨터공학 기초",
+      "english_title": "Computer Science Foundations",
+      "sections": [
+        "자료구조와 실행 비용",
+        "운영체제와 동시성",
+        "저장, 통신, 빌드"
       ],
-      "first": "Explain a core concept through a small executable example.",
-      "status": "Planned"
+      "keywords": "Linux, xv6, OSTEP topics, Networking, TCP/IP, Filesystems, Databases, Compilers, Concurrency",
+      "path": "topics/07-cs-foundations/README.md",
+      "references": [
+        "https://docs.kernel.org/",
+        "https://llvm.org/docs/"
+      ]
     },
     {
+      "number": 8,
       "slug": "08-problem-solving",
-      "en": "Problem Solving",
-      "ko": "알고리즘과 실전 문제",
-      "topics": [
-        "프로그래머스·백준·LeetCode",
-        "탐색·정렬·해시·스택·큐",
-        "그래프·트리·동적계획법·그리디",
-        "문제 링크·핵심 아이디어·시간/공간 복잡도",
-        "실패한 접근·반례·다른 풀이 비교"
+      "title": "알고리즘과 코딩테스트",
+      "english_title": "Problem Solving",
+      "sections": [
+        "알고리즘을 선택하는 기준",
+        "이진 탐색의 경계"
       ],
-      "first": "Add a solution with the source link, reasoning, complexity and edge cases.",
-      "status": "Planned"
+      "keywords": "프로그래머스 / Programmers, 백준 / Baekjoon, LeetCode, Codeforces, AtCoder, HackerRank, Codility, SWEA",
+      "path": "topics/08-problem-solving/README.md",
+      "references": [
+        "https://school.programmers.co.kr/learn/challenges"
+      ]
     },
     {
+      "number": 9,
       "slug": "09-circuits-electronics",
-      "en": "Circuits & Electronics",
-      "ko": "회로와 전자공학",
-      "topics": [
-        "회로이론·RLC·과도응답·주파수응답",
-        "다이오드·BJT·MOSFET·연산증폭기",
-        "아날로그/디지털 회로·필터·증폭기",
-        "전원·전력전자 기초·센서 신호처리",
-        "전자기학·전송선·신호 무결성 기초"
+      "title": "회로와 전자공학",
+      "english_title": "Circuits & Electronics",
+      "sections": [
+        "RLC와 시간·주파수 응답",
+        "능동 소자와 증폭"
       ],
-      "first": "Compare a hand calculation, a circuit simulation and a measurement when available.",
-      "status": "Planned"
+      "keywords": "RLC, Op-Amp, BJT, MOSFET, CMOS, Filters, Oscillators, Regulators, SPICE, Breadboard Measurements",
+      "path": "topics/09-circuits-electronics/README.md",
+      "references": [
+        "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+      ]
     },
     {
+      "number": 10,
       "slug": "10-semiconductors",
-      "en": "Semiconductor Devices",
-      "ko": "반도체 소자",
-      "topics": [
-        "반도체 물리·캐리어·PN 접합",
-        "MOSFET·CMOS·소자 모델·기생 성분",
-        "공정·PVT·소자 편차·메모리",
-        "소자 특성과 회로 성능의 연결",
-        "소자 모델을 이용한 계산·시뮬레이션"
+      "title": "반도체 소자",
+      "english_title": "Semiconductor Devices",
+      "sections": [
+        "MOSFET에서 CMOS로",
+        "구조와 재료",
+        "소자 모델과 공정 변동"
       ],
-      "first": "Plot and explain a device characteristic with stated assumptions.",
-      "status": "Planned"
+      "keywords": "PN, MOS, BJT, CMOS, FinFET, GAA, SOI, SiC/GaN, BSIM, SRAM/DRAM/NAND, TCAD",
+      "path": "topics/10-semiconductors/README.md",
+      "references": [
+        "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+      ]
     },
     {
+      "number": 11,
       "slug": "11-analog-ic-cadence",
-      "en": "Analog IC Design: Cadence & Spectre",
-      "ko": "아날로그 IC와 케이던스",
-      "topics": [
-        "Cadence Virtuoso: 회로도·심벌·레이아웃",
-        "Spectre·Virtuoso ADE: 시뮬레이션 설정과 분석",
-        "DC·AC·Transient·Noise·Corner·Monte Carlo",
-        "Verilog-A·혼성신호·SKILL·OCEAN 자동화",
-        "증폭기·비교기·기준전압·ADC/DAC·PLL",
-        "칩 레이아웃·DRC·LVS·PEX·추출 후 검증"
+      "title": "Analog IC · Cadence · Spectre",
+      "english_title": "Analog IC Design: Cadence & Spectre",
+      "sections": [
+        "도구의 역할",
+        "해석이 알려주는 것",
+        "회로도에서 레이아웃으로"
       ],
-      "first": "Write a design report linking specifications, schematic decisions and simulation results.",
-      "status": "Planned"
+      "keywords": "Cadence Virtuoso, Spectre, ADE, SKILL, OCEAN, Synopsys Custom Compiler, HSPICE, PrimeSim, Siemens Eldo, LTspice, ngspice, Xschem",
+      "path": "topics/11-analog-ic-cadence/README.md",
+      "references": [
+        "https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation.html"
+      ]
     },
     {
+      "number": 12,
       "slug": "12-pcb-hardware",
-      "en": "PCB & Hardware Design",
-      "ko": "PCB와 하드웨어 설계",
-      "topics": [
-        "회로도·부품 선정·데이터시트·BOM",
-        "KiCad·Altium·OrCAD/Allegro 등 설계 도구",
-        "PCB 배치·배선·접지·전원·디커플링",
-        "신호/전원 무결성·EMI/EMC 기초",
-        "제작·조립·보드 bring-up·측정"
+      "title": "PCB & Hardware Design",
+      "english_title": "PCB & Hardware Design",
+      "sections": [
+        "부품과 제조 데이터",
+        "신호와 전원의 경로"
       ],
-      "first": "Document a small board from requirements to bring-up.",
-      "status": "Planned"
+      "keywords": "KiCad, Altium Designer, OrCAD, Allegro, PADS, Xpedition, EasyEDA, IBIS, SI/PI, EMC/EMI, DFM",
+      "path": "topics/12-pcb-hardware/README.md",
+      "references": [
+        "https://www.kicad.org/about/kicad/"
+      ]
     },
     {
+      "number": 13,
       "slug": "13-verilog-systemverilog",
-      "en": "Verilog, SystemVerilog & RTL",
-      "ko": "HDL과 RTL 설계",
-      "topics": [
-        "Verilog·SystemVerilog 문법과 합성 가능한 RTL",
-        "조합/순차 논리·FSM·파이프라인",
-        "리셋·클록·CDC·고정소수점",
-        "FIFO·메모리·인터페이스·연산 블록",
-        "Verilog-A와 디지털 HDL의 역할 구분"
+      "title": "Verilog · SystemVerilog · RTL",
+      "english_title": "Verilog, SystemVerilog & RTL",
+      "sections": [
+        "조합논리와 순차논리",
+        "구조를 만드는 개념"
       ],
-      "first": "Implement and simulate a small RTL block with a clear interface.",
-      "status": "Planned"
+      "keywords": "Verilog, SystemVerilog, VHDL, Verilog-A/AMS, Chisel, SpinalHDL, Amaranth, HLS",
+      "path": "topics/13-verilog-systemverilog/README.md",
+      "references": [
+        "https://verilator.org/guide/latest/"
+      ]
     },
     {
+      "number": 14,
       "slug": "14-hardware-verification",
-      "en": "Hardware Verification",
-      "ko": "하드웨어 검증",
-      "topics": [
-        "테스트벤치·self-checking test·파형 분석",
-        "SystemVerilog Assertions·커버리지",
-        "랜덤 테스트·UVM 기초·회귀 실행",
-        "Verilator·Icarus Verilog·GTKWave",
-        "상용 시뮬레이터 사용 기록·형식검증 기초"
+      "title": "Hardware Verification",
+      "english_title": "Hardware Verification",
+      "sections": [
+        "시뮬레이션과 coverage",
+        "Assertion과 formal"
       ],
-      "first": "Verify normal, boundary and error conditions of an RTL block.",
-      "status": "Planned"
+      "keywords": "UVM, SVA, cocotb, Verilator, Icarus Verilog, GTKWave, Questa, Xcelium, VCS, SymbiYosys, Formal/Equivalence",
+      "path": "topics/14-hardware-verification/README.md",
+      "references": [
+        "https://docs.cocotb.org/en/stable/",
+        "https://verilator.org/guide/latest/"
+      ]
     },
     {
+      "number": 15,
       "slug": "15-fpga-asic",
-      "en": "FPGA & ASIC Design",
-      "ko": "FPGA와 ASIC 설계",
-      "topics": [
-        "FPGA 구성·합성·구현·타이밍 제약",
-        "STA·PPA·자원 사용량·최대 동작 주파수",
-        "ASIC 설계 흐름·배치배선·클록 트리",
-        "Vivado·Quartus·Genus·Innovus 등 도구별 기록",
-        "공개 EDA 도구와 공개 PDK를 이용한 실습"
+      "title": "FPGA & ASIC",
+      "english_title": "FPGA & ASIC Design",
+      "sections": [
+        "구현 흐름",
+        "타이밍과 PPA"
       ],
-      "first": "Compare resource use and timing before and after one RTL change.",
-      "status": "Planned"
+      "keywords": "AMD/Xilinx Vivado/Vitis, Intel/Altera Quartus, Lattice Radiant, Yosys, nextpnr, OpenROAD/OpenLane, Genus/Innovus, Design Compiler/Fusion Compiler, PrimeTime",
+      "path": "topics/15-fpga-asic/README.md",
+      "references": [
+        "https://openroad.readthedocs.io/en/latest/"
+      ]
     },
     {
+      "number": 16,
       "slug": "16-arm-riscv",
-      "en": "Arm, RISC-V & Computer Architecture",
-      "ko": "프로세서와 컴퓨터 구조",
-      "topics": [
-        "Arm Cortex-M/Cortex-A·RISC-V ISA",
-        "어셈블리·레지스터·호출 규약·예외·인터럽트",
-        "RV32/RV64·명령어 디코딩·권한 모드",
-        "파이프라인·캐시·MMU·메모리 계층",
-        "버스·DMA·SoC·간단한 CPU 설계"
+      "title": "Arm · RISC-V · Computer Architecture",
+      "english_title": "Arm, RISC-V & Computer Architecture",
+      "sections": [
+        "Arm과 RISC-V",
+        "명령 실행과 메모리"
       ],
-      "first": "Trace a short program from C to instructions and processor behavior.",
-      "status": "Planned"
+      "keywords": "Arm Cortex-M/A/R, RISC-V RV32/RV64, x86-64, MIPS, AVR, PicoRV32, Ibex, CVA6, Rocket Chip, BOOM, gem5, QEMU",
+      "path": "topics/16-arm-riscv/README.md",
+      "references": [
+        "https://docs.riscv.org/",
+        "https://developer.arm.com/documentation"
+      ]
     },
     {
+      "number": 17,
       "slug": "17-firmware-rtos",
-      "en": "Firmware & RTOS",
-      "ko": "펌웨어와 실시간 운영체제",
-      "topics": [
-        "Bare-metal·시작 코드·링커 스크립트",
-        "MCU 레지스터·GPIO·타이머·ADC·PWM",
-        "드라이버·인터럽트·DMA·부트로더",
-        "STM32·ESP32 등 MCU",
-        "FreeRTOS·Zephyr·태스크·동기화·실시간성"
+      "title": "Firmware & RTOS",
+      "english_title": "Firmware & RTOS",
+      "sections": [
+        "리셋 이후의 실행",
+        "주변장치와 시간",
+        "RTOS의 동시성"
       ],
-      "first": "Build a peripheral driver and explain its interrupt and timing behavior.",
-      "status": "Planned"
+      "keywords": "STM32, ESP32/ESP-IDF, Nordic nRF, NXP, TI, Microchip AVR/PIC/SAM, Renesas, RP2040/RP2350, FreeRTOS, Zephyr, ThreadX, RT-Thread",
+      "path": "topics/17-firmware-rtos/README.md",
+      "references": [
+        "https://docs.zephyrproject.org/latest/introduction/index.html"
+      ]
     },
     {
+      "number": 18,
       "slug": "18-embedded-linux",
-      "en": "Embedded Linux",
-      "ko": "임베디드 리눅스",
-      "topics": [
-        "크로스 컴파일·툴체인·BSP",
-        "부팅·U-Boot·커널·디바이스 트리",
-        "디바이스 드라이버·사용자 공간 프로그램",
-        "Buildroot·Yocto·루트 파일시스템",
-        "QEMU·실제 보드·원격 배포"
+      "title": "Embedded Linux",
+      "english_title": "Embedded Linux",
+      "sections": [
+        "부팅의 구성요소",
+        "빌드와 이식"
       ],
-      "first": "Document a reproducible build-and-boot procedure.",
-      "status": "Planned"
+      "keywords": "Linux Kernel, U-Boot, Device Tree, Buildroot, Yocto/OpenEmbedded, BusyBox, QEMU, BSP, Drivers",
+      "path": "topics/18-embedded-linux/README.md",
+      "references": [
+        "https://www.buildroot.org/docs.html",
+        "https://docs.kernel.org/"
+      ]
     },
     {
+      "number": 19,
       "slug": "19-openocd-debugging",
-      "en": "OpenOCD, GDB & Instrumentation",
-      "ko": "디버깅과 계측",
-      "topics": [
-        "OpenOCD·GDB·JTAG·SWD",
-        "ST-Link·J-Link·펌웨어 다운로드",
-        "브레이크포인트·메모리·레지스터·HardFault",
-        "오실로스코프·로직애널라이저·시리얼 로그",
-        "증상 → 가설 → 측정 → 원인 → 수정 기록"
+      "title": "OpenOCD · GDB · Debugging",
+      "english_title": "OpenOCD, GDB & Instrumentation",
+      "sections": [
+        "연결 구조",
+        "관찰 도구의 차이"
       ],
-      "first": "Create a debugging note that includes evidence before and after the fix.",
-      "status": "Planned"
+      "keywords": "OpenOCD, GDB, LLDB, J-Link, ST-Link, pyOCD, probe-rs, JTAG, SWD, SWO, ETM, Saleae, PulseView, Sigrok",
+      "path": "topics/19-openocd-debugging/README.md",
+      "references": [
+        "https://openocd.org/doc/html/About.html",
+        "https://sourceware.org/gdb/documentation/"
+      ]
     },
     {
+      "number": 20,
       "slug": "20-interfaces-communications",
-      "en": "Interfaces & Communications",
-      "ko": "인터페이스와 통신",
-      "topics": [
-        "UART·SPI·I2C·CAN·USB",
-        "Ethernet·TCP/IP·Wi-Fi·Bluetooth/BLE",
-        "AXI·AHB·APB 등 온칩 버스",
-        "통신 프로토콜·패킷·타이밍·오류 처리",
-        "대역폭·지연·신뢰성·통신 실험"
+      "title": "Interfaces & Communications",
+      "english_title": "Interfaces & Communications",
+      "sections": [
+        "보드와 장치 사이",
+        "네트워크와 온칩 연결"
       ],
-      "first": "Implement or analyze one interface with captured timing or packets.",
-      "status": "Planned"
+      "keywords": "UART, SPI, I2C, I3C, CAN/CAN-FD, USB, Ethernet, PCIe, MIPI, DDR, AXI/AHB/APB, MQTT, Modbus, BLE, Wi-Fi, Zigbee, LoRa",
+      "path": "topics/20-interfaces-communications/README.md",
+      "references": [
+        "https://developer.arm.com/documentation",
+        "https://docs.zephyrproject.org/latest/introduction/index.html"
+      ]
     },
     {
+      "number": 21,
       "slug": "21-signals-control",
-      "en": "Signals, DSP & Control",
-      "ko": "신호처리와 제어",
-      "topics": [
-        "신호와 시스템·샘플링·푸리에/라플라스/Z 변환",
-        "FFT·FIR/IIR·필터·스펙트럼",
-        "PID·상태공간·안정성·주파수응답",
-        "칼만 필터·상태 추정·센서 잡음",
-        "Python/MATLAB 시뮬레이션과 MCU 구현"
+      "title": "신호처리와 제어",
+      "english_title": "Signals, DSP & Control",
+      "sections": [
+        "샘플링과 변환",
+        "필터와 피드백"
       ],
-      "first": "Compare a control or filtering model against a numerical implementation.",
-      "status": "Planned"
+      "keywords": "FFT, FIR/IIR, PID, State Space, LQR/LQG, MPC, Kalman/EKF/UKF, System Identification, SciPy Signal, MATLAB Control",
+      "path": "topics/21-signals-control/README.md",
+      "references": [
+        "https://docs.scipy.org/doc/scipy/"
+      ]
     },
     {
+      "number": 22,
       "slug": "22-robotics-boards",
-      "en": "Robotics, Arduino & Raspberry Pi",
-      "ko": "로봇과 실습 보드",
-      "topics": [
-        "Arduino·Raspberry Pi·센서·액추에이터",
-        "모터·엔코더·PWM·제어 루프",
-        "운동학·동역학·좌표 변환·경로 계획",
-        "ROS 2·센서 융합·로봇 통신",
-        "회로·펌웨어·알고리즘 통합 실험"
+      "title": "Robotics · Arduino · Raspberry Pi",
+      "english_title": "Robotics, Arduino & Raspberry Pi",
+      "sections": [
+        "보드의 역할",
+        "운동과 관측",
+        "소프트웨어와 시뮬레이션"
       ],
-      "first": "Build an integration demo and record wiring, timing and measured behavior.",
-      "status": "Planned"
+      "keywords": "Arduino, Raspberry Pi, STM32 Nucleo, ESP32, BeagleBone, Jetson, ROS 2, MoveIt, Nav2, Gazebo, MuJoCo, Isaac Sim, SLAM",
+      "path": "topics/22-robotics-boards/README.md",
+      "references": [
+        "https://docs.ros.org/",
+        "https://www.raspberrypi.com/documentation/"
+      ]
     },
     {
+      "number": 23,
       "slug": "23-ai-machine-learning",
-      "en": "AI, PyTorch & TensorFlow",
-      "ko": "인공지능과 딥러닝",
-      "topics": [
-        "머신러닝 기초·데이터 처리·평가",
-        "PyTorch·TensorFlow·자동미분·학습 루프",
-        "CNN·RNN·Transformer·Attention·MoE",
-        "생성 모델·확산 모델·강화학습 기초",
-        "재현성·학습/검증/테스트 분리·실험 기록"
+      "title": "AI · Machine Learning · Deep Learning",
+      "english_title": "AI, PyTorch & TensorFlow",
+      "sections": [
+        "학습과 평가",
+        "모델 구조",
+        "자동미분 예제"
       ],
-      "first": "Train or reproduce a small baseline and report its evaluation setup.",
-      "status": "Planned"
+      "keywords": "PyTorch, TensorFlow/Keras, JAX, scikit-learn, XGBoost, LightGBM, CatBoost, Hugging Face, Lightning, fastai",
+      "path": "topics/23-ai-machine-learning/README.md",
+      "references": [
+        "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
+        "https://www.tensorflow.org/guide"
+      ]
     },
     {
+      "number": 24,
       "slug": "24-gpu-architecture",
-      "en": "GPU & Graphics Hardware",
-      "ko": "GPU와 그래픽카드",
-      "topics": [
-        "CPU/GPU 차이·GPU 구조·병렬 실행",
-        "SM·Warp·Tensor Core·메모리 계층",
-        "VRAM·메모리 대역폭·PCIe·연산 정밀도",
-        "성능·소비전력·프로파일링·벤치마크",
-        "그래픽스 파이프라인·셰이더·OpenGL/Vulkan 기초"
+      "title": "GPU Architecture",
+      "english_title": "GPU & Graphics Hardware",
+      "sections": [
+        "실행과 메모리",
+        "성능을 해석하는 관점"
       ],
-      "first": "Explain one measured workload using compute and memory behavior.",
-      "status": "Planned"
+      "keywords": "NVIDIA, AMD, Intel, Apple GPU, SIMT/SIMD, Cache/VRAM, HBM/GDDR, PCIe/NVLink, Roofline, Vulkan, OpenGL, DirectX",
+      "path": "topics/24-gpu-architecture/README.md",
+      "references": [
+        "https://docs.nvidia.com/cuda/cuda-programming-guide/index.html"
+      ]
     },
     {
+      "number": 25,
       "slug": "25-cuda-performance",
-      "en": "CUDA & GPU Optimization",
-      "ko": "쿠다와 GPU 최적화",
-      "topics": [
-        "NVIDIA 드라이버·CUDA Toolkit·프레임워크 호환성",
-        "CUDA C++·Kernel·Grid·Block·Thread",
-        "메모리 접근·공유 메모리·동기화·Stream",
-        "행렬곱·Reduction·cuBLAS·cuDNN",
-        "Nsight Systems/Compute·PyTorch Profiler",
-        "혼합정밀도·Triton·커스텀 연산·추론 최적화"
+      "title": "CUDA & GPU Optimization",
+      "english_title": "CUDA & GPU Optimization",
+      "sections": [
+        "실행 단위와 데이터 이동",
+        "라이브러리와 직접 작성한 kernel"
       ],
-      "first": "Compare a simple CPU baseline, GPU implementation and optimized version.",
-      "status": "Planned"
+      "keywords": "CUDA, cuBLAS, cuDNN, CUTLASS, Triton, Nsight, ROCm/HIP, SYCL/oneAPI, OpenCL, Metal, OpenMP/OpenACC, TensorRT, OpenVINO",
+      "path": "topics/25-cuda-performance/README.md",
+      "references": [
+        "https://docs.nvidia.com/cuda/cuda-programming-guide/index.html"
+      ]
     },
     {
+      "number": 26,
       "slug": "26-open-model-lab",
-      "en": "Open Model Experiments",
-      "ko": "공개 AI 모델 실험",
-      "topics": [
-        "삼성 공개 연구 모델·DeepSeek 등 모델별 조사",
-        "논문·공식 코드·가중치·데이터 공개 범위 기록",
-        "설치·추론·구조 분석·기준 결과 재현",
-        "LoRA/미세조정·양자화·추론 설정·구조 변경",
-        "정확도·지연·메모리·실패 사례·변경 전후 비교",
-        "ONNX·엣지 AI·CPU/GPU/보드 실행 검토"
+      "title": "AI Models & APIs",
+      "english_title": "AI Providers, Public Models & APIs",
+      "sections": [
+        "모델을 구성하는 파일",
+        "수정과 비교"
       ],
-      "first": "Record an upstream baseline before testing one clearly defined modification.",
-      "status": "Planned"
+      "keywords": "OpenAI, Google/DeepMind, Microsoft, Meta, Anthropic, Samsung, DeepSeek, Qwen, Mistral, IBM, NVIDIA, LG, NAVER, Kakao, Upstage, SKT",
+      "path": "topics/26-open-model-lab/README.md",
+      "references": [
+        "https://huggingface.co/docs",
+        "https://developers.openai.com/api/docs/models"
+      ]
     },
     {
+      "number": 27,
       "slug": "27-papers-code-patents",
-      "en": "Paper, Code & Patent Reviews",
-      "ko": "논문과 코드와 특허 리뷰",
-      "topics": [
-        "논문: 문제·기여·수식·실험·한계",
-        "유명 오픈소스: 구조·핵심 함수·설계 이유",
-        "특허: 문헌 번호·공개 정보·기술적 아이디어",
-        "논문 수식과 실제 구현 연결",
-        "자체 재현·작은 수정·원본과의 차이 설명"
+      "title": "논문 · 코드 · 특허",
+      "english_title": "Paper, Code & Patent Reviews",
+      "sections": [
+        "논문과 코드의 연결",
+        "특허와 문헌 관리"
       ],
-      "first": "Review a source with versioned references and your own analysis.",
-      "status": "Planned"
+      "keywords": "arXiv, IEEE, ACM, NeurIPS, ICML, ICLR, CVPR, ISSCC, DAC, DATE, KIPRIS, Google Patents, Zotero, BibTeX",
+      "path": "topics/27-papers-code-patents/README.md",
+      "references": [
+        "https://www.wipo.int/en/web/patents",
+        "https://huggingface.co/docs"
+      ]
     },
     {
+      "number": 28,
       "slug": "28-automation-portfolio",
-      "en": "Automation & Portfolio",
-      "ko": "자동화와 포트폴리오",
-      "topics": [
-        "Python/Bash 실험 자동화·로그·그래프 생성",
-        "GitHub Actions·문서 생성·블로그 발행",
-        "테스트·벤치마크·환경 고정·리포트",
-        "프로젝트 설명·본인 기여·영문 README",
-        "실패 기록·설계 선택·재현 가능한 결과"
+      "title": "자동화와 기술 기록",
+      "english_title": "Automation & Portfolio",
+      "sections": [
+        "스크립트와 CI",
+        "문서 생성 도구"
       ],
-      "first": "Automate one repeated step and document the input, output and limitations.",
-      "status": "Planned"
+      "keywords": "Python, Bash, PowerShell, GitHub Actions, GitLab CI, Docker, Quarto, Jekyll, Hugo, MkDocs, Sphinx, Doxygen, Jupyter Book",
+      "path": "topics/28-automation-portfolio/README.md",
+      "references": [
+        "https://quarto.org/docs/publishing/github-pages.html",
+        "https://git-scm.com/book/en/v2"
+      ]
+    },
+    {
+      "number": 29,
+      "slug": "29-electromagnetics-rf",
+      "title": "전자기학 · RF · 안테나",
+      "english_title": "Electromagnetics, RF & Antennas",
+      "sections": [
+        "반사와 정합",
+        "RF 회로와 안테나"
+      ],
+      "keywords": "HFSS, CST, ADS, AWR, Sonnet, openEMS, scikit-rf, VNA, Spectrum Analyzer",
+      "path": "topics/29-electromagnetics-rf/README.md",
+      "references": [
+        "https://scikit-rf.readthedocs.io/en/latest/"
+      ]
+    },
+    {
+      "number": 30,
+      "slug": "30-communications-wireless",
+      "title": "통신이론과 무선 시스템",
+      "english_title": "Communication Systems & Information Theory",
+      "sections": [
+        "변조, 부호화, 채널",
+        "다중 반송파와 다중 안테나"
+      ],
+      "keywords": "GNU Radio, SDR, USRP, RTL-SDR, OFDM, QAM, MIMO, LDPC, Polar Codes",
+      "path": "topics/30-communications-wireless/README.md",
+      "references": [
+        "https://www.gnuradio.org/doc/"
+      ]
+    },
+    {
+      "number": 31,
+      "slug": "31-power-energy",
+      "title": "전력전자와 에너지",
+      "english_title": "Power Electronics & Energy",
+      "sections": [
+        "변환기와 스위칭",
+        "소자와 구동"
+      ],
+      "keywords": "PLECS, PSIM, LTspice, Simulink, Buck/Boost, LLC, BMS, PMIC",
+      "path": "topics/31-power-energy/README.md",
+      "references": [
+        "https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html"
+      ]
+    },
+    {
+      "number": 32,
+      "slug": "32-mixed-signal-data-converters",
+      "title": "Mixed-Signal · ADC · DAC · Clock",
+      "english_title": "Mixed-Signal, Data Converters & Clocks",
+      "sections": [
+        "샘플링과 양자화",
+        "정적·동적 지표와 클록"
+      ],
+      "keywords": "SAR ADC, Delta-Sigma, DAC, PLL, DLL, CDR, Spectre, Verilog-AMS",
+      "path": "topics/32-mixed-signal-data-converters/README.md",
+      "references": [
+        "https://www.analog.com/en/resources.html"
+      ]
+    },
+    {
+      "number": 33,
+      "slug": "33-memory-storage",
+      "title": "Memory & Storage",
+      "english_title": "Memory & Storage Systems",
+      "sections": [
+        "소자와 인터페이스",
+        "SSD와 신뢰성"
+      ],
+      "keywords": "SRAM, DRAM, NAND, DDR, LPDDR, GDDR, HBM, NVMe, fio, CXL",
+      "path": "topics/33-memory-storage/README.md",
+      "references": [
+        "https://fio.readthedocs.io/en/latest/"
+      ]
+    },
+    {
+      "number": 34,
+      "slug": "34-soc-interconnects",
+      "title": "SoC & Interconnects",
+      "english_title": "SoC & Interconnects",
+      "sections": [
+        "버스와 네트워크",
+        "주소와 데이터 일관성"
+      ],
+      "keywords": "AXI, AMBA, TileLink, Wishbone, NoC, PCIe, CXL, Chiplet, CHI",
+      "path": "topics/34-soc-interconnects/README.md",
+      "references": [
+        "https://developer.arm.com/documentation",
+        "https://docs.riscv.org/"
+      ]
+    },
+    {
+      "number": 35,
+      "slug": "35-eda-open-hardware",
+      "title": "EDA & Open Hardware",
+      "english_title": "EDA & Open Hardware Ecosystems",
+      "sections": [
+        "흐름을 잇는 데이터",
+        "PDK와 도구"
+      ],
+      "keywords": "Cadence, Synopsys, Siemens EDA, Yosys, OpenROAD, OpenLane, KLayout, Magic, Netgen, SKY130, GF180, IHP SG13G2",
+      "path": "topics/35-eda-open-hardware/README.md",
+      "references": [
+        "https://openroad.readthedocs.io/en/latest/"
+      ]
+    },
+    {
+      "number": 36,
+      "slug": "36-packaging-thermal",
+      "title": "Packaging · Chiplets · Thermal",
+      "english_title": "Packaging, Chiplets, Thermal & Reliability",
+      "sections": [
+        "연결 구조",
+        "전원과 열"
+      ],
+      "keywords": "Chiplets, UCIe, 2.5D/3D IC, Interposer, COMSOL, Ansys, Thermal RC, EM/IR",
+      "path": "topics/36-packaging-thermal/README.md",
+      "references": [
+        "https://www.comsol.com/comsol-multiphysics"
+      ]
+    },
+    {
+      "number": 37,
+      "slug": "37-sensors-instrumentation",
+      "title": "센서와 계측",
+      "english_title": "Sensors, Instrumentation & Experiments",
+      "sections": [
+        "신호 경로와 오차",
+        "장비와 자동 측정"
+      ],
+      "keywords": "SCPI, PyVISA, Sigrok, PulseView, LabVIEW, NI DAQ, Oscilloscope, VNA",
+      "path": "topics/37-sensors-instrumentation/README.md",
+      "references": [
+        "https://pyvisa.readthedocs.io/en/latest/"
+      ]
+    },
+    {
+      "number": 38,
+      "slug": "38-security-cryptography",
+      "title": "Security · Cryptography · Hardware Trust",
+      "english_title": "Security, Cryptography & Hardware Trust",
+      "sections": [
+        "암호의 역할",
+        "부팅과 실행의 신뢰"
+      ],
+      "keywords": "TLS, AES, RSA, ECC, Secure Boot, TrustZone, TPM, Sanitizers, Fuzzing, CodeQL",
+      "path": "topics/38-security-cryptography/README.md",
+      "references": [
+        "https://docs.openssl.org/",
+        "https://docs.kernel.org/"
+      ]
+    },
+    {
+      "number": 39,
+      "slug": "39-compilers-languages",
+      "title": "Compilers · Languages · Runtimes",
+      "english_title": "Compilers, Languages & Runtimes",
+      "sections": [
+        "AST에서 machine code로",
+        "도구와 실행 방식"
+      ],
+      "keywords": "LLVM, MLIR, GCC, Clang, Rust, Go, Java/JVM, CPython, Julia, Tcl, SKILL",
+      "path": "topics/39-compilers-languages/README.md",
+      "references": [
+        "https://llvm.org/docs/",
+        "https://gcc.gnu.org/onlinedocs/gcc/Standards.html"
+      ]
+    },
+    {
+      "number": 40,
+      "slug": "40-databases-data-engineering",
+      "title": "Databases & Data Engineering",
+      "english_title": "Databases & Data Engineering",
+      "sections": [
+        "SQL과 실행 계획",
+        "파이프라인과 검색"
+      ],
+      "keywords": "SQLite, PostgreSQL, MySQL, DuckDB, Redis, Parquet, Arrow, Spark, Kafka, FAISS, pgvector",
+      "path": "topics/40-databases-data-engineering/README.md",
+      "references": [
+        "https://www.postgresql.org/docs/current/tutorial.html"
+      ]
+    },
+    {
+      "number": 41,
+      "slug": "41-cloud-distributed",
+      "title": "Cloud & Distributed Systems",
+      "english_title": "Cloud, Distributed Systems & Operations",
+      "sections": [
+        "실패와 일관성",
+        "배포와 운영"
+      ],
+      "keywords": "AWS, Azure, Google Cloud, Docker, Kubernetes, Terraform, Prometheus, Grafana, OpenTelemetry",
+      "path": "topics/41-cloud-distributed/README.md",
+      "references": [
+        "https://kubernetes.io/docs/concepts/"
+      ]
+    },
+    {
+      "number": 42,
+      "slug": "42-hpc-parallel",
+      "title": "HPC & Parallel Computing",
+      "english_title": "HPC, Parallel & Distributed Computing",
+      "sections": [
+        "공유 메모리와 분산 메모리",
+        "GPU와 분산 작업"
+      ],
+      "keywords": "OpenMP, MPI, OpenACC, SIMD, AVX/NEON, NCCL, Slurm, Ray, Dask, perf",
+      "path": "topics/42-hpc-parallel/README.md",
+      "references": [
+        "https://www.mpi-forum.org/docs/",
+        "https://www.openmp.org/specifications/"
+      ]
+    },
+    {
+      "number": 43,
+      "slug": "43-computer-vision",
+      "title": "Computer Vision",
+      "english_title": "Computer Vision & Image Processing",
+      "sections": [
+        "영상 처리와 기하",
+        "인식 과제와 구조"
+      ],
+      "keywords": "OpenCV, torchvision, timm, ResNet, ViT, YOLO, SAM, DINO, Detectron2, MMDetection, Kornia",
+      "path": "topics/43-computer-vision/README.md",
+      "references": [
+        "https://docs.opencv.org/4.x/d9/df8/tutorial_root.html"
+      ]
+    },
+    {
+      "number": 44,
+      "slug": "44-language-speech-multimodal",
+      "title": "Language · Speech · Multimodal AI",
+      "english_title": "Language, Speech & Multimodal AI",
+      "sections": [
+        "언어와 음성",
+        "여러 입력을 함께 다루기"
+      ],
+      "keywords": "BERT, T5, GPT, Whisper, wav2vec, CLIP, LLaVA, Transformers, torchaudio, SentencePiece",
+      "path": "topics/44-language-speech-multimodal/README.md",
+      "references": [
+        "https://huggingface.co/docs"
+      ]
+    },
+    {
+      "number": 45,
+      "slug": "45-ai-training-optimization",
+      "title": "AI Training & Optimization",
+      "english_title": "AI Training, Optimization & Compression",
+      "sections": [
+        "학습을 구성하는 상태",
+        "자원 사용을 줄이는 방법"
+      ],
+      "keywords": "PEFT, TRL, Accelerate, DeepSpeed, FSDP, DDP, MLflow, W&B, TensorBoard, Optuna, bitsandbytes",
+      "path": "topics/45-ai-training-optimization/README.md",
+      "references": [
+        "https://huggingface.co/docs/peft/"
+      ]
+    },
+    {
+      "number": 46,
+      "slug": "46-ai-agents-evaluation",
+      "title": "AI Applications · Agents · Evaluation",
+      "english_title": "AI Applications, Agents & Evaluation",
+      "sections": [
+        "API와 도구 실행",
+        "RAG와 workflow",
+        "평가의 단위"
+      ],
+      "keywords": "OpenAI APIs, Claude API, Gemini API, LangChain, LlamaIndex, DSPy, MCP, lm-evaluation-harness, Ragas, promptfoo",
+      "path": "topics/46-ai-agents-evaluation/README.md",
+      "references": [
+        "https://developers.openai.com/api/docs/models",
+        "https://huggingface.co/docs"
+      ]
+    },
+    {
+      "number": 47,
+      "slug": "47-edge-tinyml",
+      "title": "Edge AI · TinyML · NPU",
+      "english_title": "Edge AI, TinyML & NPUs",
+      "sections": [
+        "모델에서 장치 실행으로",
+        "경량화와 측정"
+      ],
+      "keywords": "ONNX Runtime, TensorRT, OpenVINO, LiteRT/TFLite, TFLite Micro, CMSIS-NN, ExecuTorch, TVM, Jetson, Coral",
+      "path": "topics/47-edge-tinyml/README.md",
+      "references": [
+        "https://onnx.ai/onnx/"
+      ]
+    },
+    {
+      "number": 48,
+      "slug": "48-software-quality",
+      "title": "Software Design & Quality",
+      "english_title": "Software Quality, Design & Testing",
+      "sections": [
+        "테스트의 범위",
+        "분석과 진단"
+      ],
+      "keywords": "pytest, unittest, GoogleTest, Catch2, CTest, Hypothesis, Valgrind, ASan/UBSan/TSan, clang-tidy, Ruff",
+      "path": "topics/48-software-quality/README.md",
+      "references": [
+        "https://docs.pytest.org/en/stable/"
+      ]
+    },
+    {
+      "number": 49,
+      "slug": "49-graphics-simulation",
+      "title": "Graphics & Rendering",
+      "english_title": "Computer Graphics, Rendering & Simulation",
+      "sections": [
+        "좌표에서 pixel까지",
+        "광선과 재질"
+      ],
+      "keywords": "OpenGL, Vulkan, DirectX, WebGPU, GLSL, HLSL, Blender, Mitsuba, PBRT, Unreal, Unity",
+      "path": "topics/49-graphics-simulation/README.md",
+      "references": [
+        "https://pbr-book.org/"
+      ]
+    },
+    {
+      "number": 50,
+      "slug": "50-physical-scientific-simulation",
+      "title": "물리·과학 시뮬레이션",
+      "english_title": "Physics, Multiphysics & Scientific Simulation",
+      "sections": [
+        "이산화와 해법",
+        "해석 대상과 검증"
+      ],
+      "keywords": "COMSOL, Ansys, HFSS, CST, OpenFOAM, FEniCS, MEEP, openEMS, LAMMPS",
+      "path": "topics/50-physical-scientific-simulation/README.md",
+      "references": [
+        "https://fenicsproject.org/documentation/"
+      ]
+    },
+    {
+      "number": 51,
+      "slug": "51-test-manufacturing",
+      "title": "DFT · Test · Manufacturing",
+      "english_title": "DFT, Semiconductor Test & Manufacturing",
+      "sections": [
+        "Scan과 pattern",
+        "내장 테스트와 양산"
+      ],
+      "keywords": "DFT, Scan, ATPG, MBIST/LBIST, ATE, JTAG/Boundary Scan, Tessent, TestMAX, Modus",
+      "path": "topics/51-test-manufacturing/README.md",
+      "references": [
+        "https://eda.sw.siemens.com/en-US/ic/tessent/"
+      ]
+    },
+    {
+      "number": 52,
+      "slug": "52-web-api-applications",
+      "title": "Web · API · Applications",
+      "english_title": "Web, APIs & Desktop Applications",
+      "sections": [
+        "통신과 데이터",
+        "화면과 서버"
+      ],
+      "keywords": "FastAPI, Flask, Django, Node.js, Spring, React, Vue, Svelte, TypeScript, Qt/PySide, Electron, Streamlit, Gradio",
+      "path": "topics/52-web-api-applications/README.md",
+      "references": [
+        "https://fastapi.tiangolo.com/"
+      ]
+    },
+    {
+      "number": 53,
+      "slug": "53-mobile-crossplatform",
+      "title": "Mobile & Cross-Platform",
+      "english_title": "Mobile, Cross-Platform & Device Integration",
+      "sections": [
+        "플랫폼과 연결",
+        "자원과 사용자 경험"
+      ],
+      "keywords": "Kotlin, Java, Android, Swift, iOS, Flutter, Dart, React Native, Kotlin Multiplatform, Core ML",
+      "path": "topics/53-mobile-crossplatform/README.md",
+      "references": [
+        "https://developer.android.com/guide"
+      ]
+    },
+    {
+      "number": 54,
+      "slug": "54-research-frontiers",
+      "title": "새로운 소자와 컴퓨팅",
+      "english_title": "Research Frontiers",
+      "sections": [
+        "Neuromorphic와 메모리 연산",
+        "빛, 양자, 생체 인터페이스"
+      ],
+      "keywords": "SNN, Neuromorphic, Event Camera, Quantum, Photonics, Compute-in-Memory, Memristor, Wearables",
+      "path": "topics/54-research-frontiers/README.md",
+      "references": [
+        "https://snntorch.readthedocs.io/en/latest/"
+      ]
+    },
+    {
+      "number": 55,
+      "slug": "55-applications-assessments",
+      "title": "지원 · 시험 · 면접",
+      "english_title": "Applications, Resumes & Assessment Experiences",
+      "sections": [
+        "문서와 기술 자료",
+        "전형의 유형",
+        "지원과 제안"
+      ],
+      "keywords": "국민대학교 / Kookmin University, 기업별 전형 / Company Applications, Resume/CV, 코딩테스트 / Coding Tests, 역량검사 / Competency Assessments",
+      "path": "topics/55-applications-assessments/README.md",
+      "references": [
+        "https://school.programmers.co.kr/learn/challenges"
+      ]
+    }
+  ],
+  "providers": [
+    {
+      "name": "OpenAI",
+      "description": "GPT 계열은 텍스트·이미지 등 입력을 처리하는 API 모델 생태계이고, gpt-oss는 내려받아 실행할 수 있는 공개 가중치 모델 계열이다. Hosted API 활용과 로컬 추론은 실행 환경과 수정 범위가 다르다. 도구 호출, 구조화된 출력, 추론 runtime의 차이를 함께 다룬다.",
+      "references": [
+        "https://developers.openai.com/learn/gpt-oss",
+        "https://developers.openai.com/api/docs/models"
+      ]
+    },
+    {
+      "name": "Google / DeepMind",
+      "description": "Gemini는 Google의 생성형 AI 모델·API 생태계다. Gemma는 직접 실행하고 조정할 수 있는 공개 가중치 계열이며, 언어·시각 입력 등 지원 범위는 모델별로 다르다. 두 계열은 이름뿐 아니라 제공 방식과 실행 도구도 구분된다.",
+      "references": [
+        "https://ai.google.dev/gemini-api/docs",
+        "https://ai.google.dev/gemma"
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "description": "Phi는 비교적 작은 언어 모델을 중심으로 한 Microsoft의 모델 계열이다. PhiCookBook은 로컬 실행·미세조정·배포를 연결하는 공식 예제를 제공한다. 소형 모델의 추론 자원과 양자화·장치 배포를 살펴보는 사례다.",
+      "references": [
+        "https://github.com/microsoft/PhiCookBook"
+      ]
+    },
+    {
+      "name": "Meta",
+      "description": "Llama는 Meta의 공개 가중치 언어 모델 계열이다. 모델 버전별로 크기·입력 형식·라이선스가 다르다. Meta의 연구 저장소에는 언어 외에 비전·표현 학습 관련 프로젝트도 있으며, 모델 구조와 학습 방법을 코드와 함께 읽을 수 있다.",
+      "references": [
+        "https://github.com/meta-llama/llama-models",
+        "https://github.com/facebookresearch"
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "description": "Claude는 API 기반의 언어·멀티모달 모델 생태계다. 긴 문서 처리, 코드, 도구 사용을 애플리케이션과 연결할 수 있다. API의 메시지·도구 인터페이스를 사용하는 작업과 모델 가중치 자체를 수정하는 작업은 구분된다.",
+      "references": [
+        "https://platform.claude.com/docs/en/intro"
+      ]
+    },
+    {
+      "name": "Samsung",
+      "description": "Samsung SAIL Montréal의 Tiny Recursive Models는 작은 네트워크를 반복 적용해 답과 내부 표현을 갱신하는 추론 연구 코드다. 일반적인 대화형 LLM과 문제 구성·학습 방식이 다르다. 재귀 단계와 학습 구조가 핵심 분석 대상이며 [TRM 문서](samsung-trm/README.md)에 구조를 정리했다.",
+      "references": [
+        "https://github.com/SamsungSAILMontreal/TinyRecursiveModels"
+      ]
+    },
+    {
+      "name": "DeepSeek",
+      "description": "DeepSeek는 언어·코드·추론 모델과 관련 코드를 공개하는 생태계다. R1은 추론 학습, V3는 대규모 언어 모델 구조, R1-Distill은 다른 기반 모델로 추론 능력을 전달한 사례와 연결된다. 원본 모델과 distill checkpoint는 구조와 자원 요구가 다르다.",
+      "references": [
+        "https://github.com/deepseek-ai"
+      ]
+    },
+    {
+      "name": "Alibaba / Qwen",
+      "description": "Qwen은 언어·코드·시각언어 등 여러 작업을 다루는 모델 계열이다. 모델별 tokenizer·대화 형식·입력 범위가 다르다. 공개 가중치 실행과 framework 통합, 다국어 처리, 모델 크기에 따른 자원 사용을 연결해 볼 수 있다.",
+      "references": [
+        "https://github.com/QwenLM/Qwen3"
+      ]
+    },
+    {
+      "name": "Mistral AI",
+      "description": "Mistral은 공개 가중치 모델과 hosted API를 함께 제공하는 생태계다. Dense·MoE 구조, 언어·코드·문서 처리 등 모델별 목적이 다르다. 같은 회사의 모델이라도 배포 방식과 사용 조건은 release별로 나뉜다.",
+      "references": [
+        "https://docs.mistral.ai/"
+      ]
+    },
+    {
+      "name": "IBM",
+      "description": "Granite는 IBM의 언어·코드·기업용 AI 활용과 관련된 모델 계열이다. 공개 model card와 코드에서 학습 목적·평가·사용 조건을 읽을 수 있다. 검색·문서 처리·작은 모델의 배포를 연결하는 사례가 된다.",
+      "references": [
+        "https://github.com/ibm-granite/granite-language-models"
+      ]
+    },
+    {
+      "name": "NVIDIA",
+      "description": "Nemotron은 언어·추론 모델, Cosmos는 물리 세계와 영상·시뮬레이션 응용에 관련된 모델 생태계다. GPU 추론 도구와 로봇·합성 데이터 흐름도 함께 연결된다. 모델 성능과 TensorRT 등 runtime 최적화의 영향을 나누어 분석할 수 있다.",
+      "references": [
+        "https://huggingface.co/nvidia"
+      ]
+    },
+    {
+      "name": "Apple",
+      "description": "MLX는 Apple silicon을 위한 배열 연산·머신러닝 framework이며 Core ML은 Apple 플랫폼의 모델 통합·실행 생태계다. 두 이름은 단일 언어 모델의 이름이 아니다. 공개 모델을 Apple 장치에 올릴 때 구조 변환과 메모리·실행 조건을 다루게 된다.",
+      "references": [
+        "https://ml-explore.github.io/mlx/build/html/index.html"
+      ]
+    },
+    {
+      "name": "Amazon / AWS",
+      "description": "Nova는 Amazon의 생성형 AI 모델 계열이며 AWS 서비스와 연결해 사용한다. 모델 API와 데이터·권한·응용 인프라를 함께 구성하는 흐름을 볼 수 있다. 서비스 사용료와 지연은 모델 추론뿐 아니라 호출·전송·작업량 조건과 연결된다.",
+      "references": [
+        "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html"
+      ]
+    },
+    {
+      "name": "Cohere",
+      "description": "Command는 생성형 모델, Aya는 다국어 연구 모델, embedding·rerank는 검색 품질과 관련된 생태계다. 문서 검색에서는 생성 모델 외에 검색용 표현과 재정렬 모델도 결과를 크게 바꾼다. 공개 모델과 API의 제공 범위는 각각 다르다.",
+      "references": [
+        "https://docs.cohere.com/"
+      ]
+    },
+    {
+      "name": "xAI",
+      "description": "Grok은 xAI의 모델 계열이다. 공개된 Grok-1 저장소와 서비스 API에서 제공하는 모델을 동일한 배포물로 볼 수는 없다. 공개 release의 구조 분석과 API 응용은 서로 다른 실행 경로를 가진다.",
+      "references": [
+        "https://github.com/xai-org/grok-1",
+        "https://docs.x.ai/overview"
+      ]
+    },
+    {
+      "name": "Baidu",
+      "description": "ERNIE는 Baidu의 언어·지식·멀티모달 모델 연구 생태계다. PaddlePaddle 도구와 연결되는 구현을 접할 수 있다. 중국어와 다국어 데이터, 모델 구조와 학습 framework의 결합을 살펴보는 사례다.",
+      "references": [
+        "https://github.com/PaddlePaddle/ERNIE"
+      ]
+    },
+    {
+      "name": "Tencent",
+      "description": "Hunyuan은 언어·이미지·영상·3D 등 여러 생성 모델 프로젝트를 포함한다. 작업마다 입력 데이터와 출력 표현, 추론 비용이 다르다. 텍스트 생성과 시각·공간 생성 모델의 실행 흐름을 구분해 읽을 수 있다.",
+      "references": [
+        "https://github.com/Tencent-Hunyuan"
+      ]
+    },
+    {
+      "name": "Z.ai",
+      "description": "GLM은 언어·추론·도구 활용 등과 관련된 모델 계열이다. 공개 저장소에서 모델 설명과 실행 예제를 제공한다. 대화 형식과 도구 인터페이스, 지원 runtime은 선택한 release의 문서와 연결된다.",
+      "references": [
+        "https://github.com/zai-org/GLM-4.5"
+      ]
+    },
+    {
+      "name": "Moonshot AI",
+      "description": "Kimi는 긴 문맥 처리와 추론·도구 활용에 관련된 모델 생태계다. Kimi-K2는 MoE 기반 공개 모델을 읽는 사례다. 전체 파라미터 수, token당 활성화되는 파라미터, 실제 가중치 저장량은 서로 다른 개념이다.",
+      "references": [
+        "https://github.com/MoonshotAI/Kimi-K2"
+      ]
+    },
+    {
+      "name": "Stability AI",
+      "description": "Stable Diffusion을 포함한 이미지·미디어 생성 모델 생태계다. 확산 과정, latent 표현, 텍스트 조건, sampler가 결과 생성에 관여한다. Prompt 변경과 fine-tuning·LoRA는 모델에 영향을 주는 단계가 다르다.",
+      "references": [
+        "https://github.com/Stability-AI/generative-models"
+      ]
+    },
+    {
+      "name": "Black Forest Labs",
+      "description": "FLUX는 텍스트 조건의 이미지 생성·편집과 연결되는 모델 계열이다. 언어 모델과 달리 이미지 표현, 생성 step, 해상도 조건이 메모리와 시간에 직접 영향을 준다. 코드와 모델 variant별 가중치 조건은 따로 구분된다.",
+      "references": [
+        "https://github.com/black-forest-labs/flux"
+      ]
+    },
+    {
+      "name": "Hugging Face",
+      "description": "Hugging Face는 모델·데이터셋 배포와 학습·추론 도구를 제공하는 플랫폼이다. Transformers·Datasets·Tokenizers·Safetensors 같은 도구와 SmolLM 계열 모델을 접할 수 있다. Hub에 있는 모델의 원저작자와 라이선스는 각 model card에 따른다.",
+      "references": [
+        "https://huggingface.co/HuggingFaceTB",
+        "https://huggingface.co/docs"
+      ]
+    },
+    {
+      "name": "LG AI Research",
+      "description": "EXAONE은 LG AI Research의 언어·추론 모델 계열이다. 한국어·영어 문맥과 공개 checkpoint의 실행을 연결하는 국내 사례다. 공개 가중치의 사용 범위는 해당 release의 라이선스에 따라 달라진다.",
+      "references": [
+        "https://github.com/LG-AI-EXAONE/EXAONE-4.0"
+      ]
+    },
+    {
+      "name": "NAVER",
+      "description": "HyperCLOVA X는 NAVER의 한국어·다국어·멀티모달 AI 생태계다. 서비스형 활용과 공개된 모델 release가 나뉜다. 한국어 문체·전문 용어·문서 처리에서 입력과 평가 데이터의 영향을 살펴볼 수 있다.",
+      "references": [
+        "https://huggingface.co/naver-hyperclovax"
+      ]
+    },
+    {
+      "name": "Kakao",
+      "description": "Kanana는 Kakao의 언어 모델 생태계다. 공개 저장소에서 모델 구성·사용 예제·model card를 읽을 수 있다. 한국어 표현과 tokenizer, 대화 형식, 작은 모델의 활용 조건을 비교하는 사례다.",
+      "references": [
+        "https://github.com/kakao/kanana"
+      ]
+    },
+    {
+      "name": "Upstage",
+      "description": "Solar는 Upstage의 언어 모델 계열이다. 공개 checkpoint와 서비스 제공 방식은 모델별로 구분된다. 문서·한국어 응용과 언어 모델의 학습·추론 구성을 연결해 볼 수 있다.",
+      "references": [
+        "https://huggingface.co/upstage"
+      ]
+    },
+    {
+      "name": "SK Telecom",
+      "description": "A.X는 SK Telecom의 언어 모델 계열이다. 공개 model card에는 모델 목적과 실행·사용 조건이 담긴다. 한국어 응답과 다국어 처리, 추론 자원과 모델 배포의 관계를 다루는 국내 사례다.",
+      "references": [
+        "https://huggingface.co/skt"
+      ]
+    },
+    {
+      "name": "KT",
+      "description": "Midm은 KT의 한국어 중심 언어 모델 계열이다. 공개 배포물은 K-intelligence 계정에서 접할 수 있다. 한국어 데이터와 모델 크기, 학습·추론 환경을 함께 살펴볼 수 있다.",
+      "references": [
+        "https://huggingface.co/K-intelligence"
+      ]
+    },
+    {
+      "name": "NCSoft",
+      "description": "VARCO는 NCSOFT의 AI 모델 생태계다. 공개 모델은 언어·멀티모달 등 release별 목적을 갖는다. 모델 이름만으로 지원 입력과 언어·라이선스를 판단하지 않고 개별 model card의 범위를 기준으로 구분한다.",
+      "references": [
+        "https://huggingface.co/NCSOFT"
+      ]
     }
   ]
 }

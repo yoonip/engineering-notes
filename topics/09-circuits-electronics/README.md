@@ -1,23 +1,23 @@
-# Circuits & Electronics
-회로와 전자공학 · **Status: Planned / 계획**
+# 회로와 전자공학
 
-[Home](../../README.md) · [Full catalog](../../CATALOG.md)
+[전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-## Planned topics / 기록할 내용
-- [ ] 회로이론·RLC·과도응답·주파수응답
-- [ ] 다이오드·BJT·MOSFET·연산증폭기
-- [ ] 아날로그/디지털 회로·필터·증폭기
-- [ ] 전원·전력전자 기초·센서 신호처리
-- [ ] 전자기학·전송선·신호 무결성 기초
+회로는 전압·전류·전하의 관계를 소자와 연결 구조로 표현한 모델이다. Kirchhoff 전류 법칙은 노드의 전하 보존, 전압 법칙은 회로 모델에서 폐경로의 전압 관계를 나타낸다. 고주파·분포 회로에서는 배선의 전파 지연과 전자기장도 고려한다.
 
-## Suggested first artifact
-Compare a hand calculation, a circuit simulation and a measurement when available.
+## RLC와 시간·주파수 응답
 
-## Evidence and progress / 진행 기록
-No work has been recorded yet. 실제 학습/실험을 수행한 뒤 날짜·코드·결과 링크를 추가합니다.
+저항은 전력을 소모하고, 커패시터는 전기장에, 인덕터는 자기장에 에너지를 저장한다. RC 회로의 시정수는 `RC`, 이상적인 LC 공진의 각주파수는 `1/sqrt(LC)`다. 과도응답은 입력 변화 직후의 시간 동작, 주파수응답은 주파수에 따른 크기와 위상 변화를 보여준다.
 
-| Date | Question or task | Evidence | Status |
-|---|---|---|---|
-| — | — | — | Planned |
+## 능동 소자와 증폭
 
-Use the [note template](../../templates/NOTE_TEMPLATE.md) or [project template](../../templates/PROJECT_TEMPLATE.md).
+다이오드는 비선형 전류·전압 특성을 갖는다. BJT·MOSFET은 바이어스에 따라 전류를 제어하고 신호를 증폭하거나 스위칭한다. 연산증폭기 회로의 폐루프 동작은 피드백과 소자의 이득·대역폭·출력 범위에 영향을 받는다. 이상적인 모델의 결과와 실제 동작 범위는 구분된다.
+
+필터는 신호의 주파수 성분을 선택하고, 발진기는 에너지를 공급받아 주기 신호를 만든다. 레귤레이터는 부하와 입력 변화에 대응해 전원을 유지한다. 부품 오차·잡음·기생 성분·접지 경로는 회로도에서 생략되기 쉽지만 실제 성능을 좌우한다.
+
+## 관련 기술
+
+RLC, Op-Amp, BJT, MOSFET, CMOS, Filters, Oscillators, Regulators, SPICE, Breadboard Measurements
+
+## 참고 자료
+
+- [MIT OCW — Circuits and Electronics](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)

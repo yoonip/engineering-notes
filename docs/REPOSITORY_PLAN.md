@@ -1,16 +1,13 @@
-# Repository Plan
-Start with **engineering-notes**, which contains the full catalog. Avoid creating dozens of empty repositories.
+# 문서와 코드 구성
 
-| Repository | When useful |
+| 경로 | 내용 |
 |---|---|
-| Your exact GitHub username | A profile README linking selected work. |
-| engineering-notes | The current learning index, small examples and setup notes. |
-| math-to-code | Split out when equation implementations form a coherent collection. |
-| problem-solving | Split out when problem solutions accumulate. |
-| ai-model-lab | Split out when model experiments have runnable code and reports. |
-| code-reading | Optional separate collection of substantial source-code analyses. |
-| Individual project name | A runnable, substantive project with its own documentation. |
-| username.github.io | A future blog/portfolio website. |
+| topics/ | 분야별 개념·활용처·도구 설명 |
+| model-lab/ | 기업·모델·실행 방식과 구조 |
+| examples/ | 문서의 계산·언어·RTL 예제 |
+| projects/ | 구현물과 설계의 연결 |
+| docs/ | 용어·환경·작성자·참고 자료 |
+| templates/ | 노트·프로젝트·평가·지원 기록의 데이터 구조 |
+| catalog.json | 문서 경로·키워드·참고 링크의 기계 판독용 목차 |
 
-Keep the main README in English and link a Korean version when available.
-Use statuses: Planned → In progress → Reproduced / Modified / Completed, supported by actual evidence.
+[분야별 목차](../CATALOG.md) · [처음으로](../README.md)

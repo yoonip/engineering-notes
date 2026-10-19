@@ -1,23 +1,26 @@
-# Paper, Code & Patent Reviews
-논문과 코드와 특허 리뷰 · **Status: Planned / 계획**
+# 논문 · 코드 · 특허
 
-[Home](../../README.md) · [Full catalog](../../CATALOG.md)
+[전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-## Planned topics / 기록할 내용
-- [ ] 논문: 문제·기여·수식·실험·한계
-- [ ] 유명 오픈소스: 구조·핵심 함수·설계 이유
-- [ ] 특허: 문헌 번호·공개 정보·기술적 아이디어
-- [ ] 논문 수식과 실제 구현 연결
-- [ ] 자체 재현·작은 수정·원본과의 차이 설명
+논문은 문제와 방법, 근거를 통해 주장을 전달한다. 코드는 그 방법을 실행 가능한 형태로 구현하고, 특허 문헌은 발명의 설명과 청구항을 포함한다. 같은 기술을 다루더라도 문서의 목적과 읽는 기준이 다르다.
 
-## Suggested first artifact
-Review a source with versioned references and your own analysis.
+## 논문과 코드의 연결
 
-## Evidence and progress / 진행 기록
-No work has been recorded yet. 실제 학습/실험을 수행한 뒤 날짜·코드·결과 링크를 추가합니다.
+Abstract는 논문의 주장과 범위를 압축한다. 방법의 수식은 가정·입력·출력과 함께 읽어야 하고, 실험의 수치는 데이터 분할·비교 대상·계산 자원·평가 지표의 영향을 받는다. Ablation은 구성요소의 영향을 분리해 보는 분석이다.
 
-| Date | Question or task | Evidence | Status |
-|---|---|---|---|
-| — | — | — | Planned |
+공개 코드에서는 entry point에서 데이터 로더·모델·손실·학습 루프·평가 코드로 실행 흐름을 따라갈 수 있다. 수식의 변수와 tensor shape, padding·normalization·mask 같은 구현 조건을 연결하면 문장만으로 생략된 세부사항이 드러난다. commit과 release는 분석한 코드의 기준을 남긴다.
 
-Use the [note template](../../templates/NOTE_TEMPLATE.md) or [project template](../../templates/PROJECT_TEMPLATE.md).
+## 특허와 문헌 관리
+
+특허 문헌에는 공개번호·등록번호·출원인·발명자·우선일 같은 서지 정보가 있다. 청구항은 보호를 구하는 구성을 기술하고 명세서·도면은 그 내용을 설명한다. 공개 문헌의 기술 설명과 개별 권리의 법적 판단은 다른 작업이다.
+
+arXiv·IEEE Xplore·ACM Digital Library는 논문을, KIPRIS·Google Patents는 특허 문헌을 찾는 경로다. NeurIPS·ICML·ICLR·CVPR은 AI, ISSCC는 회로, DAC·DATE는 설계·자동화 분야의 연구를 접할 수 있는 학회다. Zotero·BibTeX는 서지 정보와 인용을 관리한다.
+
+## 관련 기술
+
+arXiv, IEEE, ACM, NeurIPS, ICML, ICLR, CVPR, ISSCC, DAC, DATE, KIPRIS, Google Patents, Zotero, BibTeX
+
+## 참고 자료
+
+- [WIPO — Patents](https://www.wipo.int/en/web/patents)
+- [Hugging Face documentation](https://huggingface.co/docs)

@@ -1,12 +1,13 @@
-# Note title / 노트 제목
-Status: Planned | In progress | Completed
+# 기술 노트: RC 충전 응답
 
-## Question / 해결할 질문
-## Prerequisites and environment / 준비물과 버전
-## Principle or equation / 원리와 수식
-## Commands or implementation / 명령어와 구현
-## Checks and observations / 확인 방법과 관찰
-## Errors and debugging / 오류와 해결 과정
-## Results and limitations / 결과와 한계
-## References / 출처
-Include source URLs, exact versions and the date checked.
+## 모델
+
+이상적인 전압원·저항·커패시터의 직렬 회로에서 초기 커패시터 전압을 0으로 둔다. 일정한 입력 Vin에 대한 식은 `dv/dt=(Vin-v)/(RC)`다.
+
+## 해
+
+`v(t)=Vin*(1-exp(-t/(RC)))`. 시정수 `tau=RC`이고 t=tau에서 최종값의 약 63.2%에 도달한다. 이 결과는 이상적인 1차 회로 모델의 해다.
+
+## 계산과 관계
+
+[Euler 근사 코드](../examples/rc_euler.py)는 미분방정식을 반복문으로 계산한다. [Jupyter 문서](../examples/rc_response.ipynb)는 수식·수치·그래프를 묶는다. 모델의 가정, 수식, 구현, 비교 기준이 한 기술 노트를 구성한다.

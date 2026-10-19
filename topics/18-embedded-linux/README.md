@@ -1,23 +1,24 @@
 # Embedded Linux
-임베디드 리눅스 · **Status: Planned / 계획**
 
-[Home](../../README.md) · [Full catalog](../../CATALOG.md)
+[전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-## Planned topics / 기록할 내용
-- [ ] 크로스 컴파일·툴체인·BSP
-- [ ] 부팅·U-Boot·커널·디바이스 트리
-- [ ] 디바이스 드라이버·사용자 공간 프로그램
-- [ ] Buildroot·Yocto·루트 파일시스템
-- [ ] QEMU·실제 보드·원격 배포
+Embedded Linux는 특정 장치의 기능과 자원에 맞춰 Linux 시스템을 구성하는 분야다. 커널만으로 제품이 동작하지는 않는다. 부트로더·커널·장치 정보·루트 파일시스템·사용자 프로그램이 연결되어야 한다.
 
-## Suggested first artifact
-Document a reproducible build-and-boot procedure.
+## 부팅의 구성요소
 
-## Evidence and progress / 진행 기록
-No work has been recorded yet. 실제 학습/실험을 수행한 뒤 날짜·코드·결과 링크를 추가합니다.
+U-Boot 같은 부트로더는 커널과 필요한 데이터를 메모리에 올리고 제어를 넘긴다. Device Tree는 하드웨어 구성을 커널에 전달하는 방식 중 하나다. 커널 드라이버는 장치를 운영체제 인터페이스에 연결하고, root filesystem에는 초기화 프로그램과 라이브러리·명령·애플리케이션이 들어간다.
 
-| Date | Question or task | Evidence | Status |
-|---|---|---|---|
-| — | — | — | Planned |
+## 빌드와 이식
 
-Use the [note template](../../templates/NOTE_TEMPLATE.md) or [project template](../../templates/PROJECT_TEMPLATE.md).
+크로스 컴파일은 개발 PC와 다른 대상 플랫폼용 코드를 만드는 일이다. 툴체인에는 컴파일러·링커·라이브러리 등이 포함된다. BSP는 보드에 필요한 지원 코드를 묶는다. Buildroot는 임베디드 시스템 이미지 구성에, Yocto Project는 재사용 가능한 메타데이터와 레시피 기반의 배포판 구성에 쓰인다. BusyBox는 여러 기본 명령을 작은 실행 파일로 묶는다.
+
+QEMU는 지원하는 보드·장치 모델에서 시스템을 시험하는 데 쓰인다. 실제 보드에서는 전원·부트 설정·장치 트리·드라이버·사용자 공간을 구분해 로그를 읽어야 부팅 실패 지점을 좁힐 수 있다.
+
+## 관련 기술
+
+Linux Kernel, U-Boot, Device Tree, Buildroot, Yocto/OpenEmbedded, BusyBox, QEMU, BSP, Drivers
+
+## 참고 자료
+
+- [Buildroot documentation](https://www.buildroot.org/docs.html)
+- [Linux Kernel documentation](https://docs.kernel.org/)
