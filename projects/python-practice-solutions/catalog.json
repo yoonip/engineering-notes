@@ -1,0 +1,353 @@
+[
+  {
+    "title": "공원 산책",
+    "category": "구현 / 시뮬레이션",
+    "lesson_id": 172928,
+    "number": 1,
+    "file": "solutions/01_park.py",
+    "algorithm": "격자 시뮬레이션",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/172928"
+  },
+  {
+    "title": "게임 맵 최단거리",
+    "category": "BFS",
+    "lesson_id": 1844,
+    "number": 2,
+    "file": "solutions/02_game_map.py",
+    "algorithm": "BFS / deque",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/1844"
+  },
+  {
+    "title": "배달",
+    "category": "다익스트라",
+    "lesson_id": 12978,
+    "number": 3,
+    "file": "solutions/03_delivery.py",
+    "algorithm": "Dijkstra / 최소 힙",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12978"
+  },
+  {
+    "title": "유연근무제",
+    "category": "구현 / 시뮬레이션",
+    "lesson_id": 388351,
+    "number": 4,
+    "file": "solutions/04_flexible_work.py",
+    "algorithm": "시간 변환 / 시뮬레이션",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/388351"
+  },
+  {
+    "title": "노란불 신호등",
+    "category": "주기 / 수학",
+    "lesson_id": 468371,
+    "number": 5,
+    "file": "solutions/05_yellow_lights.py",
+    "algorithm": "최소공배수 / 주기 탐색",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/468371"
+  },
+  {
+    "title": "공원 / 돗자리",
+    "category": "완전탐색",
+    "lesson_id": 340198,
+    "number": 6,
+    "file": "solutions/06_park_mats.py",
+    "algorithm": "완전탐색",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/340198"
+  },
+  {
+    "title": "가장 많이 받은 선물",
+    "category": "해시 / 집합",
+    "lesson_id": 258712,
+    "number": 7,
+    "file": "solutions/07_most_gifts.py",
+    "algorithm": "해시 / 쌍 비교",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/258712"
+  },
+  {
+    "title": "데이터 분석",
+    "category": "정렬",
+    "lesson_id": 250121,
+    "number": 8,
+    "file": "solutions/08_data_analysis.py",
+    "algorithm": "필터 / 정렬",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/250121"
+  },
+  {
+    "title": "붕대 감기",
+    "category": "구현 / 시뮬레이션",
+    "lesson_id": 250137,
+    "number": 9,
+    "file": "solutions/09_bandage.py",
+    "algorithm": "시뮬레이션",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/250137"
+  },
+  {
+    "title": "이웃한 칸",
+    "category": "구현 / 시뮬레이션",
+    "lesson_id": 250125,
+    "number": 10,
+    "file": "solutions/10_neighbor_cells.py",
+    "algorithm": "격자 탐색",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/250125"
+  },
+  {
+    "title": "둘만의 암호",
+    "category": "문자열",
+    "lesson_id": 155652,
+    "number": 11,
+    "file": "solutions/11_secret_code.py",
+    "algorithm": "문자열 / 나머지 연산",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/155652"
+  },
+  {
+    "title": "중력 작용",
+    "category": "고급 부록",
+    "lesson_id": 77887,
+    "number": 12,
+    "file": "solutions/12_gravity.py",
+    "algorithm": "HLD / implicit treap / 구간 합",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/77887"
+  },
+  {
+    "title": "명예의 전당 (1)",
+    "category": "스택 / 힙",
+    "lesson_id": 138477,
+    "number": 13,
+    "file": "solutions/13_hall_of_fame.py",
+    "algorithm": "최소 힙",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/138477"
+  },
+  {
+    "title": "햄버거 만들기",
+    "category": "스택 / 힙",
+    "lesson_id": 133502,
+    "number": 14,
+    "file": "solutions/14_hamburger.py",
+    "algorithm": "스택",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/133502"
+  },
+  {
+    "title": "삼총사",
+    "category": "완전탐색",
+    "lesson_id": 131705,
+    "number": 15,
+    "file": "solutions/15_three_friends.py",
+    "algorithm": "완전탐색 / 조합",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/131705"
+  },
+  {
+    "title": "성격 유형 검사하기",
+    "category": "해시 / 집합",
+    "lesson_id": 118666,
+    "number": 16,
+    "file": "solutions/16_personality_test.py",
+    "algorithm": "해시 / 집계",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/118666"
+  },
+  {
+    "title": "신고 결과 받기",
+    "category": "해시 / 집합",
+    "lesson_id": 92334,
+    "number": 17,
+    "file": "solutions/17_report_results.py",
+    "algorithm": "집합 / 해시",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/92334"
+  },
+  {
+    "title": "나머지가 1이 되는 수 찾기",
+    "category": "기본 연산",
+    "lesson_id": 87389,
+    "number": 18,
+    "file": "solutions/18_remainder_one.py",
+    "algorithm": "선형 탐색",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/87389"
+  },
+  {
+    "title": "숫자 문자열과 영단어",
+    "category": "문자열",
+    "lesson_id": 81301,
+    "number": 19,
+    "file": "solutions/19_number_words.py",
+    "algorithm": "문자열 치환",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/81301"
+  },
+  {
+    "title": "약수의 개수와 덧셈",
+    "category": "기본 연산",
+    "lesson_id": 77884,
+    "number": 20,
+    "file": "solutions/20_divisor_count_sum.py",
+    "algorithm": "약수 완전탐색",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/77884"
+  },
+  {
+    "title": "음양 더하기",
+    "category": "기본 연산",
+    "lesson_id": 76501,
+    "number": 21,
+    "file": "solutions/21_signed_sum.py",
+    "algorithm": "반복 / 조건",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/76501"
+  },
+  {
+    "title": "신규 아이디 추천",
+    "category": "문자열",
+    "lesson_id": 72410,
+    "number": 22,
+    "file": "solutions/22_new_id.py",
+    "algorithm": "문자열 처리",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/72410"
+  },
+  {
+    "title": "크레인 인형뽑기 게임",
+    "category": "스택 / 힙",
+    "lesson_id": 64061,
+    "number": 23,
+    "file": "solutions/23_crane_game.py",
+    "algorithm": "스택 / 시뮬레이션",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/64061"
+  },
+  {
+    "title": "다트 게임",
+    "category": "구현 / 시뮬레이션",
+    "lesson_id": 17682,
+    "number": 24,
+    "file": "solutions/24_dart_game.py",
+    "algorithm": "문자열 파싱",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/17682"
+  },
+  {
+    "title": "실패율",
+    "category": "정렬",
+    "lesson_id": 42889,
+    "number": 25,
+    "file": "solutions/25_failure_rate.py",
+    "algorithm": "빈도 집계 / 정렬",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/42889"
+  },
+  {
+    "title": "2016년",
+    "category": "기본 연산",
+    "lesson_id": 12901,
+    "number": 26,
+    "file": "solutions/26_year_2016.py",
+    "algorithm": "누적 일수 / 나머지 연산",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12901"
+  },
+  {
+    "title": "문자열 내 마음대로 정렬하기",
+    "category": "정렬",
+    "lesson_id": 12915,
+    "number": 27,
+    "file": "solutions/27_custom_string_sort.py",
+    "algorithm": "튜플 정렬 키",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12915"
+  },
+  {
+    "title": "예산",
+    "category": "그리디",
+    "lesson_id": 12982,
+    "number": 28,
+    "file": "solutions/28_budget.py",
+    "algorithm": "그리디 / 정렬",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12982"
+  },
+  {
+    "title": "행렬의 덧셈",
+    "category": "기본 연산",
+    "lesson_id": 12950,
+    "number": 29,
+    "file": "solutions/29_matrix_addition.py",
+    "algorithm": "중첩 반복",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12950"
+  },
+  {
+    "title": "핸드폰 번호 가리기",
+    "category": "기본 연산",
+    "lesson_id": 12948,
+    "number": 30,
+    "file": "solutions/30_phone_mask.py",
+    "algorithm": "문자열 슬라이싱",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12948"
+  },
+  {
+    "title": "평균 구하기",
+    "category": "기본 연산",
+    "lesson_id": 12944,
+    "number": 31,
+    "file": "solutions/31_average.py",
+    "algorithm": "합계 / 평균",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12944"
+  },
+  {
+    "title": "짝수와 홀수",
+    "category": "기본 연산",
+    "lesson_id": 12937,
+    "number": 32,
+    "file": "solutions/32_even_odd.py",
+    "algorithm": "나머지 연산",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12937"
+  },
+  {
+    "title": "정수 제곱근 판별",
+    "category": "기본 연산",
+    "lesson_id": 12934,
+    "number": 33,
+    "file": "solutions/33_square_root_check.py",
+    "algorithm": "정수 제곱근",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12934"
+  },
+  {
+    "title": "자릿수 더하기",
+    "category": "기본 연산",
+    "lesson_id": 12931,
+    "number": 34,
+    "file": "solutions/34_digit_sum.py",
+    "algorithm": "형 변환 / 반복",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12931"
+  },
+  {
+    "title": "시저 암호",
+    "category": "문자열",
+    "lesson_id": 12926,
+    "number": 35,
+    "file": "solutions/35_caesar_cipher.py",
+    "algorithm": "문자 코드 / 나머지 연산",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12926"
+  },
+  {
+    "title": "문자열을 정수로 바꾸기",
+    "category": "문자열",
+    "lesson_id": 12925,
+    "number": 36,
+    "file": "solutions/36_string_to_integer.py",
+    "algorithm": "정수 형 변환",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12925"
+  },
+  {
+    "title": "문자열 내 p와 y의 개수",
+    "category": "문자열",
+    "lesson_id": 12916,
+    "number": 37,
+    "file": "solutions/37_count_p_y.py",
+    "algorithm": "대소문자 정규화 / 개수 집계",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12916"
+  },
+  {
+    "title": "나누어 떨어지는 숫자 배열",
+    "category": "정렬",
+    "lesson_id": 12910,
+    "number": 38,
+    "file": "solutions/38_divisible_array.py",
+    "algorithm": "조건 필터 / 정렬",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12910"
+  },
+  {
+    "title": "가운데 글자 가져오기",
+    "category": "문자열",
+    "lesson_id": 12903,
+    "number": 39,
+    "file": "solutions/39_middle_character.py",
+    "algorithm": "인덱스 / 슬라이싱",
+    "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12903"
+  }
+]

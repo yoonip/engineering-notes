@@ -8,8 +8,8 @@
 - [분야별 목차](CATALOG.md)
 - [AI 기업과 모델](model-lab/PROVIDERS.md)
 - [도구 찾아보기](docs/TOOLS_INDEX.md)
-- [코드 예제](examples/README.md) · [프로젝트 구성](projects/README.md)
-- [알고리즘과 코딩테스트](topics/08-problem-solving/README.md)
+- [구현 프로젝트](projects/README.md) · [코드 예제](examples/README.md)
+- [알고리즘과 코딩테스트](topics/08-problem-solving/README.md) · [Programmers 풀이 100개](programmers/README.md)
 - [지원·시험·면접](topics/55-applications-assessments/README.md)
 - [작성자와 연락처](docs/PROFILE_TEMPLATE.md) · [참고 자료](docs/SOURCES.md)
 

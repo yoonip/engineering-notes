@@ -1,0 +1,48 @@
+{
+  "recorded_date": "2026-10-05",
+  "scope": "Historical completed experiment recorded in the source project; not a new training run during source publication.",
+  "dataset": "STMicroelectronics ST-AWFD public D2",
+  "group_unit": "MaterialID production lot",
+  "split": {
+    "normal_fit": 441,
+    "normal_validation_calibration": 111,
+    "holdout_normal": 237,
+    "holdout_abnormal": 367
+  },
+  "training": {
+    "device": "NVIDIA GeForce RTX 3070 Ti",
+    "epochs_completed": 271,
+    "selected_epoch": 241,
+    "best_normal_validation_nll": -1.1177387237548828
+  },
+  "models": {
+    "cnn": {
+      "normal_false_alarms": 57,
+      "recall": 1.0,
+      "precision": 0.8656,
+      "f1": 0.9279,
+      "average_precision": 1.0
+    },
+    "transformer": {
+      "normal_false_alarms": 76,
+      "recall": 1.0,
+      "precision": 0.8284424379232506,
+      "f1": 0.9061728395061729,
+      "average_precision": 1.0
+    },
+    "transformer_residual_covariance": {
+      "normal_false_alarms": 70,
+      "recall": 1.0,
+      "precision": 0.8398169336384439,
+      "f1": 0.9129353233830846,
+      "average_precision": 0.9854461891870194
+    }
+  },
+  "saved_inference_roundtrip": {
+    "lots": 604,
+    "all_fixed_limit_decisions_equal": true,
+    "max_absolute_score_delta": 2.890625000873115e-05
+  },
+  "evaluation_scope": "Same mixed holdout repeatedly inspected across research comparisons; normal111 reused for early stopping and threshold; completed-step interpolation.",
+  "measured_yield_uplift": false
+}

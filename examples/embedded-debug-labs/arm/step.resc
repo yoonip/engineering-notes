@@ -1,0 +1,6 @@
+using sysbus
+mach create "STM32F767_Step_Lab"
+machine LoadPlatformDescription @platforms/boards/nucleo_f767zi.repl
+cpu PerformanceInMips 50
+sysbus LoadELF @arm/build/step.elf
+machine StartGdbServer 3341 false

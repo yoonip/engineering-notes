@@ -1,0 +1,19 @@
+{
+  "title_ko": "Q8.8 가짜 양자화 인식 fine-tuning 실행 기록",
+  "source_checkpoint": "output\\tiny_gpt_full_ops\\tiny_gpt_float_state.pt",
+  "data_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "steps": 1000,
+  "seed": 20261007,
+  "learning_rate": 0.0001,
+  "elapsed_seconds": 10.43,
+  "fake_quant_validation_loss_before": 2.429671655098597,
+  "fake_quant_validation_loss_after": 2.422375410795212,
+  "fake_quant_method_ko": "activation은 Q8.8 격자로 floor 절삭, embedding과 weight는 round-to-nearest, signed 16-bit saturation, gradient는 STE로 통과.",
+  "limitation_ko": "학습의 softmax는 PyTorch 연산, LayerNorm은 PyTorch 실수 연산을 거친 뒤 Q8.8 가짜 양자화하므로 RTL LUT/정수 LayerNorm과 비트 동일하지 않다. 실제 Q8.8 정수 validation 결과를 별도로 비교해야 한다.",
+  "generated_q88_sample": "ROMEO:\nSerat be hisard noush ounghe mele,\nI bllat sou sther beralled te mour hanthy,\nT",
+  "files": [
+    "tiny_gpt_qat_float_state.pt",
+    "tiny_gpt_qat_q88.json",
+    "mem/*.mem"
+  ]
+}

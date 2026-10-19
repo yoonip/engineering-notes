@@ -1,0 +1,18 @@
+[
+  {
+    "input": "3\naba\ncab\nz\n",
+    "output": "3 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1\n"
+  },
+  {
+    "input": "1\na\n",
+    "output": "1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n"
+  },
+  {
+    "input": "2\nzzz\nzz\n",
+    "output": "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5\n"
+  },
+  {
+    "input": "2\nabcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxyz\n",
+    "output": "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n"
+  }
+]

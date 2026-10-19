@@ -1,0 +1,42 @@
+{
+  "base_model": "facebook/m2m100_418M",
+  "base_model_commit": "55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636",
+  "examples": 1155,
+  "best_epoch": 3,
+  "generation": {
+    "num_beams": 4,
+    "max_new_tokens": 128,
+    "max_input_tokens": 256,
+    "forced_language": "ko"
+  },
+  "device": "cuda",
+  "dtype": "torch.float16",
+  "batch_size": 8,
+  "versions": {
+    "torch": "2.14.0+cu132",
+    "transformers": "4.57.6",
+    "peft": "0.21.2",
+    "sacrebleu": "2.6.0"
+  },
+  "limits": "Tatoeba short sentences; no exact current-finetuning split overlap. Unknown original pretraining overlap. Single reference. Not a general professional-translation benchmark.",
+  "base": {
+    "BLEU": 10.287674329410041,
+    "chrF": 28.932754840786597,
+    "BLEU_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+    "chrF_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+    "seconds": 34.831,
+    "output_cap_count": 0
+  },
+  "best": {
+    "BLEU": 12.859923803728549,
+    "chrF": 31.257615565769427,
+    "BLEU_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+    "chrF_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+    "seconds": 42.012,
+    "output_cap_count": 0
+  },
+  "delta": {
+    "BLEU": 2.5722494743185074,
+    "chrF": 2.3248607249828304
+  }
+}

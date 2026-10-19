@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "verified_date": "2026-10-19",
+  "status": "passed",
+  "scope": "Latest custom source export; lightweight offline tests and archived aggregate consistency only",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "torch": "2.8.0+cu128",
+    "microtest_device": "cuda",
+    "ngspice": "47, external executable"
+  },
+  "checks": [
+    {
+      "name": "unit_tests",
+      "status": "passed",
+      "tests": 23,
+      "command": "python -B -m unittest discover -s tests -v"
+    },
+    {
+      "name": "signed_arithmetic_exhaustive",
+      "status": "passed",
+      "pair_mask_cases": 548864,
+      "mismatches": 0,
+      "command": "python -B circuit/run_circuit.py --exhaustive-only --output-dir results/arithmetic"
+    },
+    {
+      "name": "cnn_integer_convolution",
+      "status": "passed",
+      "configurations": 14,
+      "outputs": 2800,
+      "maximum_absolute_error": 0,
+      "command": "python -B cnn/run_cifar.py microtests --out results/cnn_microtests"
+    },
+    {
+      "name": "large_integer_dot",
+      "status": "passed",
+      "positive_expected_and_actual": 74322432,
+      "signed_minimum_expected_and_actual": 75497472
+    },
+    {
+      "name": "recipe_cpu_smoke",
+      "status": "passed",
+      "synthetic_updates": 2,
+      "command": "python -B cnn/thesis_recipe.py --smoke --output results/recipe_smoke.json"
+    },
+    {
+      "name": "netlist_generation",
+      "status": "passed",
+      "level1_netlists": 14,
+      "sky130_netlists": 4,
+      "mac_transient_rerun": false
+    },
+    {
+      "name": "external_sky130_model_preparation",
+      "status": "passed",
+      "selected_bins": 8,
+      "original_block_hashes_unchanged": true,
+      "vendor_files_in_public_export": false
+    },
+    {
+      "name": "external_ngspice_tiny_inverter",
+      "status": "passed",
+      "functional_samples": 3,
+      "power_benchmark": false
+    },
+    {
+      "name": "relocation_and_cli",
+      "status": "passed",
+      "relocated_folder_with_spaces": true,
+      "relocated_tests": 23,
+      "relocated_netlist_generation": true,
+      "simulator_resolution": [
+        "explicit argument",
+        "environment",
+        "PATH"
+      ]
+    },
+    {
+      "name": "archived_aggregate_cross_check",
+      "status": "passed",
+      "cnn_evaluation_rows": 38,
+      "circuit_runs": 36,
+      "new_full_experiments": false
+    },
+    {
+      "name": "source_only_privacy_policy",
+      "status": "passed",
+      "absolute_personal_paths_or_contacts_found": 0,
+      "original_document_identifiers_found": 0,
+      "forbidden_payloads_found": 0,
+      "relative_markdown_links": "passed"
+    },
+    {
+      "name": "original_artifacts_preserved",
+      "status": "passed",
+      "manifest_files_verified": 1306
+    }
+  ],
+  "excluded": [
+    "original documents and translations",
+    "conversation history",
+    "personal, contact, application and interview material",
+    "credentials and machine-specific absolute paths",
+    "datasets and per-sample predictions",
+    "checkpoints and pretrained weights",
+    "vendor code and PDK model coefficients",
+    "ngspice distributions",
+    "raw waveforms, simulator logs, generated netlists and intermediate files",
+    "runtime caches, virtual environments and private audit evidence"
+  ],
+  "limits": [
+    "Archived metrics are not new full-training or full-test measurements.",
+    "No original-paper energy-accuracy reproduction is claimed.",
+    "No new full MAC transient sweep, PVT, layout, synthesis, timing or board validation.",
+    "Inference requires a separately generated local checkpoint and dataset.",
+    "ngspice and optional SKY130 models must be supplied separately.",
+    "No open-source license has been designated."
+  ],
+  "integrity": "MANIFEST_SHA256.json records the final supplied files; verify using python tools/manifest.py --verify"
+}

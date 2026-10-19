@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "scope": "offline software models and mocked transports only",
+  "status": "PASS",
+  "runtime": {
+    "python_version": "3.12.14",
+    "implementation": "CPython",
+    "os_family": "Windows"
+  },
+  "counts": {
+    "total": 19,
+    "passed": 19,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "tests": [
+    {
+      "name": "CorrelationTests.test_invalid_truth_classification_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "CorrelationTests.test_synthetic_matrix_and_distinct_false_accept_denominators",
+      "status": "PASS"
+    },
+    {
+      "name": "CorrelationTests.test_unmatched_and_duplicate_serials_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "CorrelationTests.test_zero_denominators_are_unavailable_not_zero",
+      "status": "PASS"
+    },
+    {
+      "name": "LinuxClientMockTests.test_bad_checksum_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "LinuxClientMockTests.test_normal_device_response",
+      "status": "PASS"
+    },
+    {
+      "name": "LinuxClientMockTests.test_short_write_closes_descriptor_before_raising",
+      "status": "PASS"
+    },
+    {
+      "name": "ModelCliTests.test_coverage_example_distinguishes_attempts_from_valid_results",
+      "status": "PASS"
+    },
+    {
+      "name": "ModelCliTests.test_existing_bench_checks",
+      "status": "PASS"
+    },
+    {
+      "name": "ModelCliTests.test_npu_cli_reference_faults_and_input_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "SourceTests.test_all_python_sources_parse",
+      "status": "PASS"
+    },
+    {
+      "name": "TapTests.test_all_16_states_reset_with_five_ones",
+      "status": "PASS"
+    },
+    {
+      "name": "TapTests.test_invalid_tms_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "TapTests.test_ir_dr_shift_pause_update_paths",
+      "status": "PASS"
+    },
+    {
+      "name": "TrainingTests.test_ber_exact_bound_and_invalid_arguments",
+      "status": "PASS"
+    },
+    {
+      "name": "TrainingTests.test_window_empty_singleton_duplicates_tie_and_split",
+      "status": "PASS"
+    },
+    {
+      "name": "VisaMockTests.test_mock_query_configuration_and_normal_close",
+      "status": "PASS"
+    },
+    {
+      "name": "VisaMockTests.test_open_failure_closes_manager",
+      "status": "PASS"
+    },
+    {
+      "name": "VisaMockTests.test_query_failure_is_cleaned_up_by_caller_finally",
+      "status": "PASS"
+    }
+  ],
+  "limits": {
+    "physical_hardware": "NOT_RUN",
+    "firmware_and_kernel_module_compilation": "NOT_RUN",
+    "qemu_or_other_external_simulator": "NOT_RUN",
+    "actual_visa_transport_and_linux_device_io": "NOT_RUN; mocked only",
+    "openocd_gdb_daemon_and_external_services": "NOT_RUN",
+    "power_timing_signal_integrity_and_silicon_coverage": "NOT_MEASURED"
+  },
+  "export_audit": {
+    "source_allowlist_count": 28,
+    "original_source_tree_unchanged": true,
+    "latest_linux_valdemo_c_byte_identical": true,
+    "latest_linux_valdemo_c_sha256": "47dcf58a0768bb4c694718cd0d4d12451b7694bfc0fca35afb18d2f0fa5419f5",
+    "copied_source_hashes_match_source_manifest": true,
+    "text_only_allowlisted_export": true,
+    "private_context_and_binary_scan": "PASS",
+    "file_count_including_sha256_manifest": 39,
+    "excluded": [
+      "private documents",
+      "recruiting material",
+      "third-party databases",
+      "vendor and toolchain files",
+      "compiled artifacts",
+      "caches"
+    ],
+    "execution_policy": "No physical devices, daemons, downloads or external services used"
+  }
+}

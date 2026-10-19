@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "source_root": "outputs/practical-silicon-lab",
+  "source_file_count": 28,
+  "copy_policy": "explicit allowlist; source tree preserved; no compiled artifacts",
+  "files": [
+    {
+      "path": "arm64/build.sh",
+      "original_sha256": "417a00246c866491cd21a6bd4d687ef87028219ec5dc2733c963d7453613d21f",
+      "exported_sha256": "417a00246c866491cd21a6bd4d687ef87028219ec5dc2733c963d7453613d21f",
+      "transformations": []
+    },
+    {
+      "path": "arm64/check.sh",
+      "original_sha256": "7b470aeb53396197c5ab834201e6c717426be6c5d9038f6826abf9ce1ce0c46e",
+      "exported_sha256": "7b470aeb53396197c5ab834201e6c717426be6c5d9038f6826abf9ce1ce0c46e",
+      "transformations": []
+    },
+    {
+      "path": "arm64/debug.gdb",
+      "original_sha256": "3bd1566c01b41e7271b401acf079e5445b2199a9abb7427dadba77048cb692e2",
+      "exported_sha256": "3bd1566c01b41e7271b401acf079e5445b2199a9abb7427dadba77048cb692e2",
+      "transformations": []
+    },
+    {
+      "path": "arm64/dump-dtb.sh",
+      "original_sha256": "742d5759c502ec6c91d1e3111e5ca52c8fb4b97fce38c3571318b54220535477",
+      "exported_sha256": "742d5759c502ec6c91d1e3111e5ca52c8fb4b97fce38c3571318b54220535477",
+      "transformations": []
+    },
+    {
+      "path": "arm64/entry.S",
+      "original_sha256": "8320da0fbe116a532c96a6178a91a24d1a8e46bca7aab06b6ae328338d4a7d71",
+      "exported_sha256": "8320da0fbe116a532c96a6178a91a24d1a8e46bca7aab06b6ae328338d4a7d71",
+      "transformations": []
+    },
+    {
+      "path": "arm64/linker.ld",
+      "original_sha256": "1694f87c078433cbb16651b3a4b658c5706d7e17e4ab52992c4a0de956553596",
+      "exported_sha256": "6fccc67f444d26e3c53465c02ba4691f0c5220d66731be7ffc659913f2f2ee52",
+      "transformations": [
+        "Context-specific comment replaced with standalone description"
+      ]
+    },
+    {
+      "path": "arm64/run.sh",
+      "original_sha256": "87db62b0e77a5f61a38e31a8faaaf4fabbacf2aa38369f0e82eff00572c0dede",
+      "exported_sha256": "87db62b0e77a5f61a38e31a8faaaf4fabbacf2aa38369f0e82eff00572c0dede",
+      "transformations": []
+    },
+    {
+      "path": "arm64/uart.c",
+      "original_sha256": "b16d83503b2c7f4792a6c7929e41f60e12c202ad3c8eb6bd7551c542003a4178",
+      "exported_sha256": "b16d83503b2c7f4792a6c7929e41f60e12c202ad3c8eb6bd7551c542003a4178",
+      "transformations": []
+    },
+    {
+      "path": "jtag/blink.c",
+      "original_sha256": "26cc60abb678bb4669f51b001aa90bbce533eae5e9221b7e91570bef5e6341c8",
+      "exported_sha256": "26cc60abb678bb4669f51b001aa90bbce533eae5e9221b7e91570bef5e6341c8",
+      "transformations": []
+    },
+    {
+      "path": "jtag/build.sh",
+      "original_sha256": "66afa3003fb1bd5e1b4d01660360d27fa11ed155ff611aa59e2f7b54962205a7",
+      "exported_sha256": "66afa3003fb1bd5e1b4d01660360d27fa11ed155ff611aa59e2f7b54962205a7",
+      "transformations": []
+    },
+    {
+      "path": "jtag/debug.gdb",
+      "original_sha256": "e038f479c68933372b7e6964f697fe0fec4d8ae8e931a5d20bb76f140fcc18b8",
+      "exported_sha256": "6881922fdc7d49a9f4b5444d9d4b28d79465c76740f108e9dc415fb73bb8834e",
+      "transformations": [
+        "Context-specific comment replaced with standalone description"
+      ]
+    },
+    {
+      "path": "jtag/nucleo_f401re_hla012.cfg",
+      "original_sha256": "9aa14d6fe2cdb4b1e28690e77030510afddd302c2f70590432eb5838aa1b7e9d",
+      "exported_sha256": "9aa14d6fe2cdb4b1e28690e77030510afddd302c2f70590432eb5838aa1b7e9d",
+      "transformations": []
+    },
+    {
+      "path": "jtag/nucleo_f401re_openocd012.cfg",
+      "original_sha256": "8d23f53e8842a74390b492b9a0eadc25324dcae629eaf9411af1219a930f4d51",
+      "exported_sha256": "8d23f53e8842a74390b492b9a0eadc25324dcae629eaf9411af1219a930f4d51",
+      "transformations": []
+    },
+    {
+      "path": "jtag/startup.S",
+      "original_sha256": "4b117fff952fc4e6de15305f19bb0c708c0e351ae2e5accfccce6a0b0ff91abe",
+      "exported_sha256": "4b117fff952fc4e6de15305f19bb0c708c0e351ae2e5accfccce6a0b0ff91abe",
+      "transformations": []
+    },
+    {
+      "path": "jtag/stm32f401re.ld",
+      "original_sha256": "bc7fb9a1c36bcf0dfeb264275eb02d6d2332697d220c2a26dc151f79c085a509",
+      "exported_sha256": "bc7fb9a1c36bcf0dfeb264275eb02d6d2332697d220c2a26dc151f79c085a509",
+      "transformations": []
+    },
+    {
+      "path": "jtag/tap_walk.py",
+      "original_sha256": "4ea99a39b9838b811264c80cd8b54867b347eda8478346c9e5b5cda205a84c82",
+      "exported_sha256": "4ea99a39b9838b811264c80cd8b54867b347eda8478346c9e5b5cda205a84c82",
+      "transformations": []
+    },
+    {
+      "path": "linux/client.py",
+      "original_sha256": "3283b6c9ae409030d5b426e3c3f6f2ae92156aea6b0f3ce1b6e7a59df311d2e1",
+      "exported_sha256": "3283b6c9ae409030d5b426e3c3f6f2ae92156aea6b0f3ce1b6e7a59df311d2e1",
+      "transformations": []
+    },
+    {
+      "path": "linux/Makefile",
+      "original_sha256": "d03c308ad5220bd5198b43c8c6dd11df31c7f3c473c5bfdc519182b3d9e918e7",
+      "exported_sha256": "d03c308ad5220bd5198b43c8c6dd11df31c7f3c473c5bfdc519182b3d9e918e7",
+      "transformations": []
+    },
+    {
+      "path": "linux/valdemo.c",
+      "original_sha256": "47dcf58a0768bb4c694718cd0d4d12451b7694bfc0fca35afb18d2f0fa5419f5",
+      "exported_sha256": "47dcf58a0768bb4c694718cd0d4d12451b7694bfc0fca35afb18d2f0fa5419f5",
+      "transformations": []
+    },
+    {
+      "path": "validation/bench.py",
+      "original_sha256": "6da0ed9a5ce6220cdc29f7d1b2c31b99c55951737811e5b938add655176bf3d0",
+      "exported_sha256": "6da0ed9a5ce6220cdc29f7d1b2c31b99c55951737811e5b938add655176bf3d0",
+      "transformations": []
+    },
+    {
+      "path": "validation/check_examples.py",
+      "original_sha256": "085005e74b4d4cff756010403dea3ef5cb33c87d79aa34e1c791a0020f3940d2",
+      "exported_sha256": "085005e74b4d4cff756010403dea3ef5cb33c87d79aa34e1c791a0020f3940d2",
+      "transformations": []
+    },
+    {
+      "path": "validation/correlation.py",
+      "original_sha256": "9b2a14c8db5a0a84453572fbf5fca0485f0dc1f67e9d5eaf6e929c0e70933aa1",
+      "exported_sha256": "9b2a14c8db5a0a84453572fbf5fca0485f0dc1f67e9d5eaf6e929c0e70933aa1",
+      "transformations": []
+    },
+    {
+      "path": "validation/coverage_account.py",
+      "original_sha256": "e88ca6e76284adc42cff83b881fbc7d61fa33aa5781e5673ba73fe8daad92a9a",
+      "exported_sha256": "e88ca6e76284adc42cff83b881fbc7d61fa33aa5781e5673ba73fe8daad92a9a",
+      "transformations": []
+    },
+    {
+      "path": "validation/coverage_example.csv",
+      "original_sha256": "359f7c9c2a4a1ee585f51b6e071d8c8fe2dc1ee5d750d00655a2d3a8a6420ff9",
+      "exported_sha256": "359f7c9c2a4a1ee585f51b6e071d8c8fe2dc1ee5d750d00655a2d3a8a6420ff9",
+      "transformations": []
+    },
+    {
+      "path": "validation/npu.py",
+      "original_sha256": "bff0977773810c77cf5c93369ec96b53ab2f83f42c4792265e6afe78989d7a68",
+      "exported_sha256": "bff0977773810c77cf5c93369ec96b53ab2f83f42c4792265e6afe78989d7a68",
+      "transformations": []
+    },
+    {
+      "path": "validation/training_ber.py",
+      "original_sha256": "100c6632d1111475b9b5a047231694a18c077b6c8faa22a75b1fd4d3b1732dc4",
+      "exported_sha256": "100c6632d1111475b9b5a047231694a18c077b6c8faa22a75b1fd4d3b1732dc4",
+      "transformations": []
+    },
+    {
+      "path": "validation/validation_plan.yaml",
+      "original_sha256": "852af1db276d3db0bc8f62c9d61388800171b6a907a6079ed308dacbee1f5445",
+      "exported_sha256": "852af1db276d3db0bc8f62c9d61388800171b6a907a6079ed308dacbee1f5445",
+      "transformations": []
+    },
+    {
+      "path": "validation/visa_readonly.py",
+      "original_sha256": "316b5f392d71fd235d6a6a52cdf2133f6fa3a7f097cd59808e175998c5d8e9f6",
+      "exported_sha256": "316b5f392d71fd235d6a6a52cdf2133f6fa3a7f097cd59808e175998c5d8e9f6",
+      "transformations": []
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "model_name": "abstract_open_page_dram_and_dram_pim_command_model",
+  "date_note": "기능·트래픽 모델이며 실제 DRAM/PIM 계측값이 아님",
+  "configuration": {
+    "tokens": 16,
+    "d_model": 32,
+    "heads": 4,
+    "d_ff": 64,
+    "layers": 2,
+    "bytes_per_element": 2,
+    "banks": 8,
+    "row_bytes": 8192,
+    "burst_bytes": 64,
+    "t_rcd": 14,
+    "t_rp": 14,
+    "t_cas": 14,
+    "t_ccd": 4,
+    "pim_mac_lanes_per_bank": 16,
+    "pim_cycles_per_mac_chunk": 1,
+    "pu_softmax_cycles_per_vector": 12,
+    "pu_layernorm_cycles_per_vector": 10
+  },
+  "unfused_baseline": {
+    "bytes_crossing_host_memory_boundary": 114688,
+    "read_commands": 1216,
+    "write_commands": 576,
+    "activate_commands": 48,
+    "precharge_commands": 40,
+    "row_hits": 1744,
+    "row_misses": 48,
+    "row_conflicts": 40,
+    "estimated_memory_service_cycles": 8414
+  },
+  "pim_data_resident": {
+    "bytes_crossing_host_memory_boundary": 34816,
+    "read_commands": 16,
+    "write_commands": 528,
+    "activate_commands": 16,
+    "precharge_commands": 8,
+    "row_hits": 528,
+    "row_misses": 16,
+    "row_conflicts": 8,
+    "estimated_memory_service_cycles": 2526
+  },
+  "comparison": {
+    "offchip_bytes_saved": 79872,
+    "offchip_byte_reduction_percent": 69.64,
+    "interpretation": "가중치를 prompt 계산당 1회 읽고, PIM은 중간 activation이 bank 근처에 머문다고 가정한 모델 결과"
+  },
+  "pim_internal_compute_estimate": {
+    "vmm_multiply_accumulates": 294912,
+    "nonvmm_vectors": 288,
+    "abstract_pim_commands": 10528,
+    "estimated_bank_parallel_compute_cycles": 2972
+  },
+  "autoregressive_kv_cache_capacity": {
+    "maximum_cached_tokens": 16,
+    "layers": 2,
+    "channels_per_layer": 32,
+    "key_and_value_elements": 2048,
+    "bytes_per_element": 2,
+    "total_bytes": 4096,
+    "bytes_per_added_token": 256,
+    "interpretation_ko": "각 layer의 Key와 Value를 저장하는 논리 용량 산술이다. 실제 memory macro 크기, port, 배치, FPGA BRAM 추론 또는 PIM 내부 용량을 증명하지 않는다."
+  },
+  "memory_model_exclusions": [
+    "refresh와 ECC",
+    "DDR/HBM PHY·채널·rank·실제 command queue",
+    "전력·열·공정·timing closure",
+    "GPU cache와 fused kernel",
+    "실제 PIM 명령 규격 및 bank 내부 데이터 경로",
+    "PU/VMM 동시 실행 스케줄링과 bank conflict에 대한 업체별 구현 세부사항"
+  ]
+}

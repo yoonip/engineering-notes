@@ -1,0 +1,32 @@
+{
+  "title_ko": "작은 GPT-style character language model 학습 기록",
+  "data_source": "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt",
+  "data_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "data_characters": 1115394,
+  "vocabulary_size": 65,
+  "parameter_count": 7105,
+  "steps": 1600,
+  "seed": 20261006,
+  "device": "CPU",
+  "elapsed_training_seconds": 11.09,
+  "loss_before_training": {
+    "train": 4.426603619257609,
+    "validation": 4.417626682917277
+  },
+  "loss_after_training": {
+    "train": 2.4199540535608928,
+    "validation": 2.4056844393412273
+  },
+  "float32_sample": "ROMEO:\nALise would hoy to thiey hand soure wounett. west temindin, wa cyou splaxc witokil.\n\nTind ISI helanthe, whisiy bbloshir",
+  "q8_8_sample": "ROMEO:\nTo blerou bo toust hetonge amand ar wealare hel manout, to at thome he manee hot tho o the ar man thitou t mou soun and",
+  "output_files": [
+    "tiny_gpt_float_state.pt",
+    "tiny_gpt_q88.json",
+    "mem/*.mem"
+  ],
+  "limitations": [
+    "소규모 character corpus와 CPU로 학습한 연구용 모델이며 사람 수준 텍스트 생성 모델이 아니다.",
+    "Q8.8은 float32 학습 가중치를 사후 양자화한 것으로 QAT/재학습을 하지 않았다.",
+    "RTL에는 문자 tokenizer와 sampling loop/KV cache가 포함되지 않고, 토큰 ID·logits 사이를 계산한다."
+  ]
+}

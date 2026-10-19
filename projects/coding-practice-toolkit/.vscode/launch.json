@@ -1,0 +1,134 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${fileDirname}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "name": "Python 현재 파일 (input.txt 자동 입력)",
+      "program": "${workspaceFolder}\\scripts\\python_input_launcher.py",
+      "args": [
+        "${file}"
+      ],
+      "presentation": {
+        "order": 1,
+        "group": "input.txt"
+      }
+    },
+    {
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\build\\${relativeFileDirname}\\${fileBasename}.exe",
+      "cwd": "${fileDirname}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb.exe",
+      "externalConsole": false,
+      "avoidWindowsConsoleRedirection": false,
+      "stopAtEntry": false,
+      "name": "C++ 현재 파일 (input.txt 자동 입력)",
+      "preLaunchTask": "현재 파일 디버깅 준비 (input.txt)",
+      "environment": [
+        {
+          "name": "LIG_INPUT_FILE",
+          "value": "${workspaceFolder}\\build\\${relativeFileDirname}\\${fileBasename}.stdin.txt"
+        }
+      ],
+      "presentation": {
+        "order": 2,
+        "group": "input.txt"
+      }
+    },
+    {
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\build\\${relativeFileDirname}\\${fileBasename}.exe",
+      "cwd": "${fileDirname}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb.exe",
+      "externalConsole": false,
+      "avoidWindowsConsoleRedirection": false,
+      "stopAtEntry": false,
+      "name": "C 현재 파일 (input.txt 자동 입력)",
+      "preLaunchTask": "현재 파일 디버깅 준비 (input.txt)",
+      "environment": [
+        {
+          "name": "LIG_INPUT_FILE",
+          "value": "${workspaceFolder}\\build\\${relativeFileDirname}\\${fileBasename}.stdin.txt"
+        }
+      ],
+      "presentation": {
+        "order": 3,
+        "group": "input.txt"
+      }
+    },
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${fileDirname}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "name": "Python 현재 파일 (키보드 입력)",
+      "program": "${file}",
+      "presentation": {
+        "order": 4,
+        "group": "키보드 입력"
+      }
+    },
+    {
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\build\\${relativeFileDirname}\\${fileBasename}.exe",
+      "cwd": "${fileDirname}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb.exe",
+      "externalConsole": false,
+      "avoidWindowsConsoleRedirection": false,
+      "stopAtEntry": false,
+      "name": "C++ 현재 파일 (키보드 입력)",
+      "preLaunchTask": "현재 파일 디버깅 준비 (키보드)",
+      "environment": [
+        {
+          "name": "LIG_INPUT_FILE",
+          "value": ""
+        }
+      ],
+      "presentation": {
+        "order": 5,
+        "group": "키보드 입력"
+      }
+    },
+    {
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\build\\${relativeFileDirname}\\${fileBasename}.exe",
+      "cwd": "${fileDirname}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb.exe",
+      "externalConsole": false,
+      "avoidWindowsConsoleRedirection": false,
+      "stopAtEntry": false,
+      "name": "C 현재 파일 (키보드 입력)",
+      "preLaunchTask": "현재 파일 디버깅 준비 (키보드)",
+      "environment": [
+        {
+          "name": "LIG_INPUT_FILE",
+          "value": ""
+        }
+      ],
+      "presentation": {
+        "order": 6,
+        "group": "키보드 입력"
+      }
+    }
+  ]
+}

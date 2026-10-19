@@ -1,0 +1,18 @@
+[
+  {
+    "input": "5\n80 zoe\n95 bob\n95 amy\n80 ann\n95 amy\n",
+    "output": "95 amy\n95 amy\n95 bob\n80 ann\n80 zoe\n"
+  },
+  {
+    "input": "1\n-5 solo\n",
+    "output": "-5 solo\n"
+  },
+  {
+    "input": "4\n0 ab\n0 aa\n0 a\n0 aa\n",
+    "output": "0 a\n0 aa\n0 aa\n0 ab\n"
+  },
+  {
+    "input": "3\n-1000000000 a\n1000000000 z\n0 m\n",
+    "output": "1000000000 z\n0 m\n-1000000000 a\n"
+  }
+]

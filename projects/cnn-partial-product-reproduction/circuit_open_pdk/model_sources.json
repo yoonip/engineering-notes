@@ -1,0 +1,13 @@
+{
+  "vendor_models_included": false,
+  "official_source_repository": "https://github.com/google/skywater-pdk-libs-sky130_fd_pr",
+  "reference_commit": "f62031a1be9aefe902d6d54cddd6f59b57627436",
+  "reference_commit_is_automatically_verified": false,
+  "model_preparation": "Read existing user-provided nfet_01v8 and pfet_01v8 TT, mismatch defaults, and lod parameter files; select unchanged W/L model blocks; record actual source hashes in the private output directory.",
+  "documentation": [
+    "https://skywater-pdk.readthedocs.io/en/main/sim.html",
+    "https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html"
+  ],
+  "license_scope": "Acquire and follow the vendor model license separately. This source export does not distribute vendor model cards, vendor licenses, simulator binaries, generated netlists, waveforms, datasets, or raw historical experiment artifacts. Aggregate independent metrics are separate.",
+  "simulation_scope": "130 nm TT schematic estimation; not Cadence GPDK45, not calibrated 45 nm, no extracted layout parasitics or PVT signoff. External operand, clock, nonoverlap-clock and EN driver energy excluded."
+}

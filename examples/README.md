@@ -25,3 +25,9 @@ g++ -std=c++17 -Wall -Wextra -Wpedantic mean.cpp -o mean_cpp
 ```
 
 Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)에 묶었다. 자동미분 파일은 각각 PyTorch 또는 TensorFlow가 필요하다. Scalar 미분 예제에는 GPU가 필요하지 않다. Framework 설치는 [Python & Jupyter](../topics/03-python-jupyter/README.md)의 참고 자료와 [PyTorch](https://pytorch.org/get-started/locally/)·[TensorFlow](https://www.tensorflow.org/install) 설치 문서에서 환경별로 다룬다.
+
+## MCU 펌웨어와 디버깅
+
+[Arm·RISC-V·STM32·ESP32 실습](embedded-debug-labs/README.md)은 시작 코드, 메모리 배치, OpenOCD·GDB 연결, GPIO와 FreeRTOS 명령 처리를 다룬다.
+
+[Embedded validation lab](../projects/embedded-validation-lab/README.md)은 RV32I CPU와 Python 참조 모델, Cortex-M7·STM32·ESP32 펌웨어, UART 호스트 검증을 하나의 프로젝트로 연결한다.

@@ -1,0 +1,26 @@
+# ARM64 가상 타깃
+
+호스트는 Linux이고, 실행 타깃은 QEMU `virt`의 Cortex-A53 한 코어다. 게스트 Linux 없이 `entry.S`가 stack과 BSS를 준비하고 `uart.c`로 진입한다. `linker.ld`는 RAM 안의 ELF 배치를 정한다.
+
+필요한 도구는 `aarch64-linux-gnu-gcc`와 binutils, `qemu-system-aarch64`, Bash, GNU timeout이다. DTB를 읽으려면 `dtc`, 대화형 디버깅에는 `gdb-multiarch`가 필요하다. 도구는 별도로 설치된 환경을 전제로 한다.
+
+```sh
+cd arm64
+bash dump-dtb.sh
+bash check.sh
+```
+
+`check.sh`는 정상 이미지를 빌드하고 4초 안에 B0(C 진입), B1(RAM smoke), B2(idle)를 관측한다. 펌웨어는 끝에서 계속 대기하므로 timeout 종료 124를 허용한다. 검사는 UART 문자열 기반이며 전기적 타이밍을 측정하지 않는다.
+
+```sh
+bash build.sh stuck
+timeout 4s bash run.sh run
+```
+
+`stuck`은 UART FIFO flag를 잘못 해석하는 오류다. 정상 상태의 phase=4에 도달하지 못하고 polling 경로에 머무르는 것이 기대 결과다. `wrong-base`는 잘못된 UART 주소를 넣는 별도 이미지이며, exception handler가 없는 이 최소 예제에서의 결과를 실물의 동작으로 일반화하지 않는다.
+
+대화형 GDB를 사용할 때는 첫 터미널에서 `bash build.sh normal` 후 `bash run.sh debug`, 두 번째 터미널에서 `gdb-multiarch -x debug.gdb`를 실행한다. debug 모드는 localhost 1234에 GDB endpoint를 열고 첫 명령 전에 멈춘다. QEMU terminal 종료 키는 Ctrl+A를 누르고 놓은 뒤 X다. 이번 배포 검사에서는 이 debug endpoint를 열지 않았다.
+
+RAM base는 `0x40000000`, ELF entry는 `0x40080000`으로 설정되어 있다. PL011 base `0x09000000`은 이 machine 구성의 값이다. `build/virt.dts`의 `reg`와 실제 QEMU 버전을 대조한다. 이 firmware는 DTB를 직접 파싱하지 않는다. QEMU의 ELF loader가 RAM을 준비한 시작 조건이므로 실물 Boot ROM·DDR training·전원 시퀀스는 포함하지 않는다.
+
+공식 문서: [QEMU Arm virt](https://www.qemu.org/docs/master/system/arm/virt.html), [QEMU GDB](https://www.qemu.org/docs/master/system/gdb.html).

@@ -1,0 +1,468 @@
+{
+  "scope": "Historical Vivado implementation and XSim records, summarized from original receipts; no new Vivado/SDF run during publication.",
+  "board_implementations": [
+    {
+      "source_record": "build/nexys4_ddr/board/result.json",
+      "source_record_sha256": "f850b81a330050cfef78ed611a8890843da26e03bdcc430b0766038a648dfea2",
+      "record": {
+        "device": "xc7a100tcsg324-1",
+        "board": "Nexys 4 DDR",
+        "vivado": "2024.1",
+        "max_context": 8,
+        "cache_storage": "registers",
+        "model": {
+          "vocab": 65,
+          "d_model": 16,
+          "heads": 4,
+          "d_ff": 32,
+          "layers": 2,
+          "bias": true,
+          "layernorm_affine": true,
+          "activation": "GELU",
+          "format": "signed Q8.8"
+        },
+        "clock_hz": 5000000,
+        "clock_period_ns": 200.0,
+        "host_baud": 115200,
+        "resources_routed": {
+          "LUT": {
+            "used": 29243,
+            "available": 63400,
+            "percent": 46.12
+          },
+          "FF": {
+            "used": 13578,
+            "available": 126800,
+            "percent": 10.71
+          },
+          "DSP": {
+            "used": 194,
+            "available": 240,
+            "percent": 80.83
+          },
+          "BRAM36_tiles": {
+            "used": 0,
+            "available": 135,
+            "percent": 0.0
+          },
+          "LUT_memory": {
+            "used": 24,
+            "available": 19000,
+            "percent": 0.13
+          }
+        },
+        "timing": {
+          "WNS_ns": 27.699,
+          "TNS_ns": 0.0,
+          "setup_failing_endpoints": 0.0,
+          "setup_endpoints": 29904.0,
+          "WHS_ns": 0.092,
+          "THS_ns": 0.0,
+          "hold_failing_endpoints": 0.0,
+          "hold_endpoints": 29904.0,
+          "WPWS_ns": 3.0,
+          "TPWS_ns": 0.0,
+          "pulse_failing_endpoints": 0.0,
+          "pulse_endpoints": 13632.0
+        },
+        "no_clock_endpoints": 0,
+        "unconstrained_internal_endpoints": 0,
+        "drc": {
+          "error_count": 0,
+          "warning_count": 774,
+          "rules": [
+            {
+              "rule": "DPIP-1",
+              "severity": "Warning",
+              "count": 386
+            },
+            {
+              "rule": "DPOP-1",
+              "severity": "Warning",
+              "count": 194
+            },
+            {
+              "rule": "DPOP-2",
+              "severity": "Warning",
+              "count": 194
+            }
+          ]
+        },
+        "methodology": {
+          "rules": [
+            {
+              "rule": "LUTAR-1",
+              "severity": "Warning",
+              "count": 1
+            },
+            {
+              "rule": "SYNTH-10",
+              "severity": "Warning",
+              "count": 64
+            }
+          ]
+        },
+        "checkpoint_sha256": "903d6216ba9461d857d7663ada1247053bf65349e996448b1fecfec9efbe09ac",
+        "routed_checkpoint": {
+          "file": "routed.dcp",
+          "sha256": "73a12825920dda942ea27afbfa525347403e7b4c7415edba710b934e872fb877",
+          "bytes": 90929113
+        },
+        "source_snapshot": [
+          {
+            "file": "dram_pim_pu_synth.sv",
+            "sha256": "b83939f3ac15fb7aa66c854450eab02fc29236e597ef0aae737b2c6aae7a8559"
+          },
+          {
+            "file": "dram_pim_vmm_bank.sv",
+            "sha256": "0e6e4e5ef801103c34cd29e467877287f3f823eb7a5cdbca985952b1398e9fbb"
+          },
+          {
+            "file": "fpga/nexys4_ddr/build_bitstream.tcl",
+            "sha256": "53ca762da7c764f9ed0ea3b433bd2249528f2d3209f82628a4181235afb59792"
+          },
+          {
+            "file": "fpga/nexys4_ddr/nexys4_ddr_gpt.xdc",
+            "sha256": "9bea8d21ac6cd6f84fe797aa5914940d7432ad1b450219bf5ccc6d39f1e26c26"
+          },
+          {
+            "file": "gpt_kvcache_rom_board_top.sv",
+            "sha256": "c4951c72f335291ec4a2f339784267bdfa1e7942faa6238f3fb28c6cc25ba522"
+          },
+          {
+            "file": "nexys4_ddr_gpt_top.sv",
+            "sha256": "30cd28370de842937c5af1c36921cbd806f4681cf74ccf7e047e29de39e172d9"
+          },
+          {
+            "file": "nexys4_ddr_gpt_uart_bridge.sv",
+            "sha256": "6eacb85972c9afe05a8181a818ac684a12994704f9cc7d918e99d080d3d2cc61"
+          },
+          {
+            "file": "nexys4_ddr_uart.sv",
+            "sha256": "e7dca63f4369e8c5ef32b4069114254df17b483cc512da60fc3858602662b909"
+          },
+          {
+            "file": "transformer_gpt_kvcache_seq.sv",
+            "sha256": "be8fcb0895998361f8bf1575375318532681df90238a048b46ff22bf85e7638e"
+          }
+        ],
+        "physical_programming_performed": false,
+        "physical_board_measured": false,
+        "notes": [
+          "이 기록은 Vivado 합성·배치·배선·제약 검증이며 실제 보드 출력 측정은 아니다.",
+          "DSP pipeline 권고와 조합 reset gating의 LUTAR-1 경고가 남아 있다.",
+          "DDR2 핀/컨트롤러를 사용하지 않으며 메모리 칩 자체의 PIM을 구현한 것은 아니다."
+        ],
+        "bitstream": {
+          "bytes": 2770173,
+          "sha256": "b6e56523d12358a5370f32415fff86102dc932d2617a0ebb71b9b6ee66121939",
+          "header": {
+            "design": "nexys4_ddr_gpt_top;COMPRESS=TRUE;UserID=0XFFFFFFFF;Version=2024.1",
+            "part": "7a100tcsg324",
+            "date": "2026/10/04",
+            "time": "02:28:54",
+            "configuration_payload_bytes": 2770044
+          }
+        }
+      }
+    },
+    {
+      "source_record": "build/nexys4_ddr/board_context32_distributed/result.json",
+      "source_record_sha256": "fea75568558251588fd29407801bca0d4cb8fb085d1c7b85c13c0fede75df852",
+      "record": {
+        "device": "xc7a100tcsg324-1",
+        "board": "Nexys 4 DDR",
+        "vivado": "2024.1",
+        "max_context": 32,
+        "cache_storage": "distributed",
+        "model": {
+          "vocab": 65,
+          "d_model": 16,
+          "heads": 4,
+          "d_ff": 32,
+          "layers": 2,
+          "bias": true,
+          "layernorm_affine": true,
+          "activation": "GELU",
+          "format": "signed Q8.8"
+        },
+        "clock_hz": 2500000,
+        "clock_period_ns": 400.0,
+        "host_baud": 57600,
+        "resources_routed": {
+          "LUT": {
+            "used": 46374,
+            "available": 63400,
+            "percent": 73.15
+          },
+          "FF": {
+            "used": 8473,
+            "available": 126800,
+            "percent": 6.68
+          },
+          "DSP": {
+            "used": 194,
+            "available": 240,
+            "percent": 80.83
+          },
+          "BRAM36_tiles": {
+            "used": 0,
+            "available": 135,
+            "percent": 0.0
+          },
+          "LUT_memory": {
+            "used": 728,
+            "available": 19000,
+            "percent": 3.83
+          }
+        },
+        "timing": {
+          "WNS_ns": 33.471,
+          "TNS_ns": 0.0,
+          "setup_failing_endpoints": 0.0,
+          "setup_endpoints": 24197.0,
+          "WHS_ns": 0.047,
+          "THS_ns": 0.0,
+          "hold_failing_endpoints": 0.0,
+          "hold_endpoints": 24197.0,
+          "WPWS_ns": 3.0,
+          "TPWS_ns": 0.0,
+          "pulse_failing_endpoints": 0.0,
+          "pulse_endpoints": 9231.0
+        },
+        "no_clock_endpoints": 0,
+        "unconstrained_internal_endpoints": 0,
+        "drc": {
+          "error_count": 0,
+          "warning_count": 774,
+          "rules": [
+            {
+              "rule": "DPIP-1",
+              "severity": "Warning",
+              "count": 386
+            },
+            {
+              "rule": "DPOP-1",
+              "severity": "Warning",
+              "count": 194
+            },
+            {
+              "rule": "DPOP-2",
+              "severity": "Warning",
+              "count": 194
+            }
+          ]
+        },
+        "methodology": {
+          "rules": [
+            {
+              "rule": "LUTAR-1",
+              "severity": "Warning",
+              "count": 1
+            },
+            {
+              "rule": "SYNTH-10",
+              "severity": "Warning",
+              "count": 64
+            }
+          ]
+        },
+        "checkpoint_sha256": "903d6216ba9461d857d7663ada1247053bf65349e996448b1fecfec9efbe09ac",
+        "routed_checkpoint": {
+          "file": "routed.dcp",
+          "sha256": "613c2b12b05b67ea79c57d173cc0c80aed1db5edaa9f12ab864d8094677f7413",
+          "bytes": 133201105
+        },
+        "source_snapshot": [
+          {
+            "file": "fpga/nexys4_ddr/build_bitstream.tcl",
+            "sha256": "05c7f1ad110d2bf72dc789753b97afdbfac0df6ac088daf33fd3aae682ebd1d9"
+          },
+          {
+            "file": "fpga/nexys4_ddr/nexys4_ddr_gpt.xdc",
+            "sha256": "9bea8d21ac6cd6f84fe797aa5914940d7432ad1b450219bf5ccc6d39f1e26c26"
+          },
+          {
+            "file": "rtl/dram_pim_pu_synth.sv",
+            "sha256": "b83939f3ac15fb7aa66c854450eab02fc29236e597ef0aae737b2c6aae7a8559"
+          },
+          {
+            "file": "rtl/dram_pim_vmm_bank.sv",
+            "sha256": "0e6e4e5ef801103c34cd29e467877287f3f823eb7a5cdbca985952b1398e9fbb"
+          },
+          {
+            "file": "rtl/gpt_kvcache_rom_board_top.sv",
+            "sha256": "689cbad0c77f4867dc8aeccafe84d8c74c50d11a40dd4ce4e02fde7fd8ea85bd"
+          },
+          {
+            "file": "rtl/nexys4_ddr_gpt_top.sv",
+            "sha256": "8f192d8e63f11dd0d4fbd8ac48d196751009e3bbc027ff0fae97c34bf476673c"
+          },
+          {
+            "file": "rtl/nexys4_ddr_gpt_uart_bridge.sv",
+            "sha256": "ac93691081a1e2a3cd6971830637ba0ccd814e27c7eca9c71e8a6b35f2d8be60"
+          },
+          {
+            "file": "rtl/nexys4_ddr_uart.sv",
+            "sha256": "e7dca63f4369e8c5ef32b4069114254df17b483cc512da60fc3858602662b909"
+          },
+          {
+            "file": "rtl/transformer_gpt_kvcache_seq.sv",
+            "sha256": "696a9650f5da68399222037b91d96bfb98406c9d86827d57be409b54abf7de38"
+          }
+        ],
+        "physical_programming_performed": false,
+        "physical_board_measured": false,
+        "notes": [
+          "이 기록은 Vivado 합성·배치·배선·제약 검증이며 실제 보드 출력 측정은 아니다.",
+          "DSP pipeline 권고와 조합 reset gating의 LUTAR-1 경고가 남아 있다.",
+          "DDR2 핀/컨트롤러를 사용하지 않으며 메모리 칩 자체의 PIM을 구현한 것은 아니다."
+        ],
+        "bitstream": {
+          "bytes": 2793049,
+          "sha256": "a34a3f50953c7b98b4235a11baf90f8f8fafe85fd481b8e423d451ded3e3ea81",
+          "header": {
+            "design": "nexys4_ddr_gpt_top;COMPRESS=TRUE;UserID=0XFFFFFFFF;Version=2024.1",
+            "part": "7a100tcsg324",
+            "date": "2026/10/04",
+            "time": "12:44:23",
+            "configuration_payload_bytes": 2792920
+          }
+        }
+      }
+    }
+  ],
+  "sdf_inertial100": [
+    {
+      "source_record": "build/nexys4_ddr/timing_netlist8_inertial100_slow_max/result.json",
+      "source_record_sha256": "223a66f369d43c28861324dcffafb47ce0608ec3c7eb7080bd0628dfd8b7d0e1",
+      "record": {
+        "mode": "post_route_sdf_timing_netlist_simulation",
+        "passed": true,
+        "simulation_performed": true,
+        "sdf_annotated": true,
+        "routed_delays_simulated": true,
+        "timing_corner": "slow",
+        "delay_mode": "max",
+        "timing_checks_enabled": true,
+        "specify_paths_enabled": true,
+        "interconnect_delays_enabled": true,
+        "pulse_r_percent": 100,
+        "pulse_int_r_percent": 100,
+        "pulse_e_percent": 100,
+        "pulse_int_e_percent": 100,
+        "pulse_reject_policy": "additional_inertial_filter_100",
+        "optimization_level": 2,
+        "core_context": 8,
+        "board_clock_hz": 5000000,
+        "physical_board_measured": false,
+        "physical_programming_performed": false,
+        "expected_reply_frames": 3,
+        "expected_exact_logit_comparisons": 130,
+        "reply_frames": 3,
+        "exact_logit_comparisons": 130,
+        "actual_logit_rows": 2,
+        "timing_violation_free": true
+      }
+    },
+    {
+      "source_record": "build/nexys4_ddr/timing_netlist8_inertial100_fast_min/result.json",
+      "source_record_sha256": "c2674f4fc3a6a2a7b97066e9fe9367371d15b72fcf74fa604c367af577c0e6a4",
+      "record": {
+        "mode": "post_route_sdf_timing_netlist_simulation",
+        "passed": true,
+        "simulation_performed": true,
+        "sdf_annotated": true,
+        "routed_delays_simulated": true,
+        "timing_corner": "fast",
+        "delay_mode": "min",
+        "timing_checks_enabled": true,
+        "specify_paths_enabled": true,
+        "interconnect_delays_enabled": true,
+        "pulse_r_percent": 100,
+        "pulse_int_r_percent": 100,
+        "pulse_e_percent": 100,
+        "pulse_int_e_percent": 100,
+        "pulse_reject_policy": "additional_inertial_filter_100",
+        "optimization_level": 2,
+        "core_context": 8,
+        "board_clock_hz": 5000000,
+        "physical_board_measured": false,
+        "physical_programming_performed": false,
+        "expected_reply_frames": 3,
+        "expected_exact_logit_comparisons": 130,
+        "reply_frames": 3,
+        "exact_logit_comparisons": 130,
+        "actual_logit_rows": 2,
+        "timing_violation_free": true
+      }
+    },
+    {
+      "source_record": "build/nexys4_ddr/timing_netlist32_inertial100_slow_max/result.json",
+      "source_record_sha256": "b319ab4b5bde99a827f2f7e80e59e4290d29436ee656b7da338b1c4abdcbc5f7",
+      "record": {
+        "mode": "post_route_sdf_timing_netlist_simulation",
+        "passed": true,
+        "simulation_performed": true,
+        "sdf_annotated": true,
+        "routed_delays_simulated": true,
+        "timing_corner": "slow",
+        "delay_mode": "max",
+        "timing_checks_enabled": true,
+        "specify_paths_enabled": true,
+        "interconnect_delays_enabled": true,
+        "pulse_r_percent": 100,
+        "pulse_int_r_percent": 100,
+        "pulse_e_percent": 100,
+        "pulse_int_e_percent": 100,
+        "pulse_reject_policy": "additional_inertial_filter_100",
+        "optimization_level": 2,
+        "core_context": 32,
+        "board_clock_hz": 2500000,
+        "physical_board_measured": false,
+        "physical_programming_performed": false,
+        "expected_reply_frames": 3,
+        "expected_exact_logit_comparisons": 130,
+        "reply_frames": 3,
+        "exact_logit_comparisons": 130,
+        "actual_logit_rows": 2,
+        "timing_violation_free": true
+      }
+    },
+    {
+      "source_record": "build/nexys4_ddr/timing_netlist32_inertial100_fast_min/result.json",
+      "source_record_sha256": "6660c99dda77dbcc0f0e0bfb12dce55e6a242f1d9287cdc121715fe6be9c951d",
+      "record": {
+        "mode": "post_route_sdf_timing_netlist_simulation",
+        "passed": true,
+        "simulation_performed": true,
+        "sdf_annotated": true,
+        "routed_delays_simulated": true,
+        "timing_corner": "fast",
+        "delay_mode": "min",
+        "timing_checks_enabled": true,
+        "specify_paths_enabled": true,
+        "interconnect_delays_enabled": true,
+        "pulse_r_percent": 100,
+        "pulse_int_r_percent": 100,
+        "pulse_e_percent": 100,
+        "pulse_int_e_percent": 100,
+        "pulse_reject_policy": "additional_inertial_filter_100",
+        "optimization_level": 2,
+        "core_context": 32,
+        "board_clock_hz": 2500000,
+        "physical_board_measured": false,
+        "physical_programming_performed": false,
+        "expected_reply_frames": 3,
+        "expected_exact_logit_comparisons": 130,
+        "reply_frames": 3,
+        "exact_logit_comparisons": 130,
+        "actual_logit_rows": 2,
+        "timing_violation_free": true
+      }
+    }
+  ],
+  "default_transport0_completed": false,
+  "physical_fpga_measured": false,
+  "physical_dram_pim_measured": false
+}

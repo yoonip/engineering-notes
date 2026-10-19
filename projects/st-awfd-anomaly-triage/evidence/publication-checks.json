@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-19",
+  "scope": "Data-free CPU model and portable reporting regression checks. No new public-dataset training or full application benchmark.",
+  "tests_run": 9,
+  "passed": true,
+  "torch": "2.10.0+cpu",
+  "causal_model_definitions_ast_identical_after_move": true,
+  "checks": [
+    "future-perturbation invariance",
+    "Gaussian NLL normalization constant",
+    "finite multi-horizon loss and tensor shapes",
+    "batch partition score invariance",
+    "no-Node7sheetXLSX export",
+    "missingopenpyxl CSV fallback",
+    "permissionfailure CSV fallback",
+    "missingtable no false XLSX success",
+    "label-free fulltrace demoCSV construction"
+  ],
+  "cleared_notebooks": [
+    {
+      "path": "ST_AWFD_PE_Anomaly_Lab.ipynb",
+      "code_cells": 7,
+      "outputs_cleared": true
+    },
+    {
+      "path": "ST_AWFD_Strict_Causal_GPT_실습.ipynb",
+      "code_cells": 7,
+      "outputs_cleared": true
+    },
+    {
+      "path": "ST_AWFD_저장모델_추론.ipynb",
+      "code_cells": 5,
+      "outputs_cleared": true
+    }
+  ]
+}

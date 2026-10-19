@@ -1,0 +1,14 @@
+**/__pycache__/
+*.py[cod]
+**/build/
+/results/
+*.o
+*.ko
+*.bin
+*.elf
+*.mod
+*.mod.c
+*.cmd
+Module.symvers
+modules.order
+verification.local.json

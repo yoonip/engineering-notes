@@ -1,0 +1,40 @@
+# Contract model. Replace named limits/profiles with approved board specs.
+# Device register/API/limit values come from approved project documents.
+schema_version: 1
+plan_id: PUBLIC-VALIDATION-EXAMPLE
+artifact_identity:
+  required: [part_id, lot, stepping, board_rev, fw_hash, driver_hash]
+  instruments: [model, serial, calibration_id, probe_point]
+corners:
+  - {id: C00, temp: nominal, voltage: nominal, reset: warm, load: cpu}
+  - {id: C01, temp: cold, voltage: nominal, reset: cold, load: cpu_dma}
+  - {id: C02, temp: hot, voltage: nominal, reset: warm, load: camera_npu}
+  - {id: C03, temp: hot, voltage: supported_low, reset: cold, load: mixed}
+requirements:
+  - id: MEM-INTEGRITY
+    risk: wrong_data_or_stale_dma_output
+    stimulus: seeded_address_pattern_plus_concurrent_dma
+    oracle: exact_output_compare_and_ecc_delta
+    acceptance: no_mismatch_and_no_uncorrected_ecc
+    repetitions_per_corner: 100
+    evidence: [input_hash, output_hash, seed, error_address, ecc_before_after]
+    screening_link: minimal_reproducer_then_holdout_validation
+  - id: RESET-RECOVERY
+    risk: retained_bad_state_or_late_dma_after_reset
+    stimulus: active_transfer_then_approved_reset_and_restart
+    oracle: reset_cause_plus_queue_ownership_and_fresh_job_output
+    acceptance: no_late_write_and_recovery_within_spec_deadline
+    repetitions_per_corner: 100
+    evidence: [reset_kind, reset_cause, last_phase, timestamps, queue_state]
+    screening_link: repeatable_transition_signature
+  - id: POWER-PERF
+    risk: false_efficiency_gain_from_incomplete_or_wrong_work
+    stimulus: fixed_dataset_at_declared_performance_profile
+    oracle: correctness_plus_energy_latency_and_measured_rail_limits
+    acceptance: correct_output_and_all_named_spec_limits_met
+    repetitions_per_corner: 100
+    evidence: [dataset_hash, scope_raw, rail_probe, junction_temp, latency]
+    screening_link: power_timing_failure_signature_if_discriminating
+result_statuses: [PASS, DUT_FAIL, INFRA_ERROR, NOT_RUN, UNSUPPORTED]
+# UNSUPPORTED is allowed only for a documented legal-plan exclusion.
+# Timeout is classified from evidence, not from the word timeout alone.

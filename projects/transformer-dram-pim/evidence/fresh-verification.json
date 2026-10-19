@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-19",
+  "scope": "Fresh Python and Icarus tests run from the curated project copy. No training, Vivado implementation, SDF simulation or physical measurement was run for this check.",
+  "passed": true,
+  "checks": [
+    {
+      "name": "dram_event_40",
+      "exit_code": 0,
+      "wall_seconds": 0.125
+    },
+    {
+      "name": "rtl_core",
+      "exit_code": 0,
+      "wall_seconds": 0.969
+    },
+    {
+      "name": "qat_cached_generation",
+      "exit_code": 0,
+      "wall_seconds": 0.906
+    },
+    {
+      "name": "offline_host",
+      "exit_code": 0,
+      "wall_seconds": 0.047
+    },
+    {
+      "name": "dram_traffic",
+      "exit_code": 0,
+      "wall_seconds": 0.078
+    },
+    {
+      "name": "dram_event_full",
+      "exit_code": 0,
+      "wall_seconds": 0.328
+    },
+    {
+      "name": "pooling_rtl",
+      "exit_code": 0,
+      "wall_seconds": 0.312
+    },
+    {
+      "name": "maxex_rtl",
+      "exit_code": 0,
+      "wall_seconds": 0.438
+    },
+    {
+      "name": "python_regression_final",
+      "exit_code": 0,
+      "wall_seconds": 1.156
+    },
+    {
+      "name": "pairwise_rtl",
+      "exit_code": 0,
+      "wall_seconds": 2.359
+    },
+    {
+      "name": "weights_export",
+      "exit_code": 0,
+      "wall_seconds": 0.11
+    },
+    {
+      "name": "cached_python",
+      "exit_code": 0,
+      "wall_seconds": 0.078
+    }
+  ],
+  "python_regression_count": 55,
+  "dram_boundary_test_count": 40,
+  "qat_cached_generation": {
+    "transactions": 7,
+    "exact_logits": 455,
+    "exact_hidden": 112,
+    "cycles": 38465,
+    "macs": 37744
+  },
+  "pooling": {
+    "windows": [
+      1,
+      3,
+      16
+    ],
+    "comb_exact": 200,
+    "registered_exact": 260
+  },
+  "maxex": {
+    "lanes": [
+      3,
+      16
+    ],
+    "guards": [
+      16,
+      32
+    ],
+    "exact_output_words": 248
+  },
+  "dram_event": {
+    "input_memory_requests": 2336,
+    "baseline_finish_cycle": 12246,
+    "pim_finish_cycle": 3760
+  },
+  "physical_board_measured": false
+}

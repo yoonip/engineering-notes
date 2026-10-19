@@ -1,0 +1,29 @@
+{
+  "architecture": "64-50-10 MLP, ReLU hidden, linear logits, biases enabled",
+  "training_backend": "NumPy CPU software",
+  "training_samples": 50000,
+  "validation_samples": 10000,
+  "test_samples": 10000,
+  "seed": 20261011,
+  "epochs": 20,
+  "selected_epoch": 19,
+  "software_test_accuracy": 0.9591,
+  "quantized_64_state_test_accuracy": 0.9595,
+  "historical_spice_samples": [
+    {
+      "sample_index": 8,
+      "true_label": 5,
+      "prediction": 6,
+      "sample_time_s": 8e-06,
+      "max_logit_error_vs_python_finite_gain": 1.2165024543264735e-10
+    },
+    {
+      "sample_index": 15,
+      "true_label": 5,
+      "prediction": 5,
+      "sample_time_s": 8e-06,
+      "max_logit_error_vs_python_finite_gain": 7.80016051749044e-11
+    }
+  ],
+  "scope": "Software test accuracy uses 10000 images. SPICE evidence covers two full fixed-resistor networks, one correctly classified and one misclassified. No transistor-level amplifier, programmed memristor, Spectre execution or physical silicon measurement."
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+data/
+inputs.npz
+circuit_exports/
+pwl/
+network.cir
+network.scs
+neuron.va
+*.scs
+ngspice_sample_*.log
+ngspice_sample_*_logits.txt
+ngspice_sample_*_parsed.json
+verified_execution.json
+training_results.json
+circuit_export_results.json
+test_*.png

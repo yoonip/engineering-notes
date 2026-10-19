@@ -1,0 +1,54 @@
+{
+  "name": "lig-practice-runner",
+  "displayName": "Practice: 현재 파일 언어 자동 실행",
+  "description": "연습 프로젝트의 현재 Python/C++/C 파일에 맞춰 실행 설정을 선택합니다.",
+  "version": "0.1.2",
+  "publisher": "lig-local",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "license": "MIT",
+  "main": "./extension.js",
+  "extensionKind": [
+    "workspace"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onDebugResolve:debugpy",
+    "onDebugResolve:cppdbg"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false
+    }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "ligPractice.debugCurrent",
+        "title": "Practice: 현재 코드 디버깅 (언어 자동)",
+        "enablement": "ligPractice.workspace"
+      },
+      {
+        "command": "ligPractice.runCurrent",
+        "title": "Practice: 현재 코드 실행 (언어 자동)",
+        "enablement": "ligPractice.workspace"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "ligPractice.debugCurrent",
+        "key": "f5",
+        "when": "ligPractice.workspace && editorTextFocus && debugState == inactive && resourceExtname =~ /\\.(py|cpp|c|cc|cxx)$/i"
+      },
+      {
+        "command": "ligPractice.runCurrent",
+        "key": "ctrl+f5",
+        "when": "ligPractice.workspace && editorTextFocus && debugState == inactive && resourceExtname =~ /\\.(py|cpp|c|cc|cxx)$/i"
+      }
+    ]
+  }
+}

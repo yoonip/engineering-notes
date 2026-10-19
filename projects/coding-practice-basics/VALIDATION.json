@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "runtime": {
+    "python": "3.12.14",
+    "compilers": {
+      "c": "gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.2.0",
+      "cpp": "g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.2.0"
+    }
+  },
+  "source_count": 18,
+  "native_builds_passed": 12,
+  "python_syntax_checks_passed": 6,
+  "fixture_runs_passed": 18,
+  "fixture_runs_total": 18,
+  "command": "python -B verify.py --cc gcc --cxx g++",
+  "output_comparison": "whitespace-token normalized",
+  "records": [
+    {
+      "source": "c/01_sensor_summary.c",
+      "language": "c",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/01_sensor_summary.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "cpp/01_sensor_summary.cpp",
+      "language": "cpp",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/01_sensor_summary.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "python/01_sensor_summary.py",
+      "language": "python",
+      "build_or_syntax": "python_syntax",
+      "fixture": "fixtures/01_sensor_summary.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "c/02_digit_frequency.c",
+      "language": "c",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/02_digit_frequency.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "cpp/02_digit_frequency.cpp",
+      "language": "cpp",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/02_digit_frequency.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "python/02_digit_frequency.py",
+      "language": "python",
+      "build_or_syntax": "python_syntax",
+      "fixture": "fixtures/02_digit_frequency.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "c/03_sort_values.c",
+      "language": "c",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/03_sort_values.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "cpp/03_sort_values.cpp",
+      "language": "cpp",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/03_sort_values.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "python/03_sort_values.py",
+      "language": "python",
+      "build_or_syntax": "python_syntax",
+      "fixture": "fixtures/03_sort_values.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "c/04_grid_bfs.c",
+      "language": "c",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/04_grid_bfs.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "cpp/04_grid_bfs.cpp",
+      "language": "cpp",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/04_grid_bfs.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "python/04_grid_bfs.py",
+      "language": "python",
+      "build_or_syntax": "python_syntax",
+      "fixture": "fixtures/04_grid_bfs.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "c/05_stair_cost_dp.c",
+      "language": "c",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/05_stair_cost_dp.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "cpp/05_stair_cost_dp.cpp",
+      "language": "cpp",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/05_stair_cost_dp.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "python/05_stair_cost_dp.py",
+      "language": "python",
+      "build_or_syntax": "python_syntax",
+      "fixture": "fixtures/05_stair_cost_dp.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "c/06_lower_bound.c",
+      "language": "c",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/06_lower_bound.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "cpp/06_lower_bound.cpp",
+      "language": "cpp",
+      "build_or_syntax": "native_compile",
+      "fixture": "fixtures/06_lower_bound.in",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "source": "python/06_lower_bound.py",
+      "language": "python",
+      "build_or_syntax": "python_syntax",
+      "fixture": "fixtures/06_lower_bound.in",
+      "passed": true,
+      "exit_code": 0
+    }
+  ],
+  "limitations": [
+    "One valid fixture per implementation.",
+    "No maximum-input performance or memory testing.",
+    "Malformed input handling is outside the validation scope.",
+    "No online judge submission or company assessment is verified."
+  ]
+}

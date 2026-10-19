@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "project": "braille-transformer",
+  "status": "PASS",
+  "scope": "Existing environment; synthetic data unit tests, CLI help, notebook default safe execution, static privacy/artifact scan",
+  "unit_tests": 6,
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "train.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "prepare_data.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "evaluate.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "inference.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "export_weights.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "app.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "command": [
+        "python",
+        "<cleared workflow cells; all run flags false>"
+      ],
+      "exit_code": 0,
+      "passed": true
+    }
+  ],
+  "inspection": {
+    "issues": [],
+    "python_files_parsed": 8,
+    "notebooks_validated": 1,
+    "utf8_text_only": true
+  },
+  "synthetic_training_smoke": "Synthetic tiny Transformer forward/backward and causal-mask isolation; no optimizer step",
+  "limitations": [
+    "No full training or original-model quality evaluation rerun",
+    "No model or corpus downloads",
+    "No clean-machine dependency installation",
+    "No GUI window interaction or executable rebuild",
+    "Historical metrics are imported aggregates, not reproduced by these tests"
+  ],
+  "originals_modified": false,
+  "public_weights_or_corpus_included": false
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+build/
+.pio/
+mnist/data/
+mnist/results/
+validation_results/
+*.pt
+*.bin
+*.elf
+*.vvp

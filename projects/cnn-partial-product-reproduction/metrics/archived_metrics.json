@@ -1,0 +1,1823 @@
+{
+  "schema_version": 1,
+  "measurement_date": "2026-10-04",
+  "scope": "Archived independent implementation measurements; export smoke tests do not rerun these datasets or SPICE sweeps",
+  "original_paper_accuracy_or_energy_claim_reproduced": false,
+  "cnn_conditions": {
+    "architecture": "CIFAR ResNet18; 3x3 stride1 stem, no maxpool",
+    "training_epochs": 30,
+    "batch_size": 128,
+    "split_seed": 2026,
+    "train_n": 45000,
+    "validation_n": 5000,
+    "test_n": 10000,
+    "calibration_validation_n": 1024,
+    "optimizer": "SGD",
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "scheduler": "cosine",
+    "label_smoothing": 0.1,
+    "amp_training": true,
+    "normalization_cifar10": {
+      "mean": [
+        0.491,
+        0.482,
+        0.446
+      ],
+      "std": [
+        0.202,
+        0.199,
+        0.201
+      ]
+    },
+    "normalization_cifar100": {
+      "mean": [
+        0.507,
+        0.487,
+        0.441
+      ],
+      "std": [
+        0.267,
+        0.257,
+        0.276
+      ]
+    },
+    "integer_only_accelerator": false,
+    "scale": "per-layer activation validation absmax; per-tensor weight absmax; zero point 0",
+    "rounding": "ties to even",
+    "ranges": {
+      "INT6": [
+        -32,
+        31
+      ],
+      "INT8": [
+        -128,
+        127
+      ]
+    },
+    "inference": "FP32 BN/residual/dequantization; exact bounded integer dots; TF32 and AMP disabled",
+    "hardware": "NVIDIA GeForce RTX 3070 Ti",
+    "software": {
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "numpy": "2.3.5"
+    },
+    "selection": "validation BEST and calibration; later k1 and bias runs are exploratory"
+  },
+  "cnn_test_evaluations": [
+    {
+      "name": "fp32",
+      "run": "cifar100_seed2026",
+      "bits": null,
+      "mode": "fp32",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 74.33,
+      "correct": 7433,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int6_k0",
+      "run": "cifar100_seed2026",
+      "bits": 6,
+      "mode": "quant",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 73.0,
+      "correct": 7300,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int6_columns_k4",
+      "run": "cifar100_seed2026",
+      "bits": 6,
+      "mode": "columns",
+      "stage_k": {
+        "all": 4
+      },
+      "accuracy": 1.0,
+      "correct": 100,
+      "n": 10000,
+      "delta_pp": -72.0,
+      "paired_bootstrap95_pp": [
+        -72.9,
+        -71.1
+      ],
+      "baseline_only_correct": 7235,
+      "variant_only_correct": 35,
+      "changed_predictions": 9902
+    },
+    {
+      "name": "int8_k0",
+      "run": "cifar100_seed2026",
+      "bits": 8,
+      "mode": "quant",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 74.21,
+      "correct": 7421,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int8_columns_k4",
+      "run": "cifar100_seed2026",
+      "bits": 8,
+      "mode": "columns",
+      "stage_k": {
+        "all": 4
+      },
+      "accuracy": 1.43,
+      "correct": 143,
+      "n": 10000,
+      "delta_pp": -72.78,
+      "paired_bootstrap95_pp": [
+        -73.67,
+        -71.89
+      ],
+      "baseline_only_correct": 7318,
+      "variant_only_correct": 40,
+      "changed_predictions": 9857
+    },
+    {
+      "name": "int8_columns_k1",
+      "run": "cifar100_seed2026",
+      "bits": 8,
+      "mode": "columns",
+      "stage_k": {
+        "all": 1
+      },
+      "accuracy": 74.42,
+      "correct": 7442,
+      "n": 10000,
+      "delta_pp": 0.21,
+      "paired_bootstrap95_pp": [
+        -0.09,
+        0.51
+      ],
+      "baseline_only_correct": 109,
+      "variant_only_correct": 130,
+      "changed_predictions": 438
+    },
+    {
+      "name": "fp32",
+      "run": "conservative_seed2026",
+      "bits": null,
+      "mode": "fp32",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 93.45,
+      "correct": 9345,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int6_k0",
+      "run": "conservative_seed2026",
+      "bits": 6,
+      "mode": "quant",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 93.0,
+      "correct": 9300,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int6_columns_k1",
+      "run": "conservative_seed2026",
+      "bits": 6,
+      "mode": "columns",
+      "stage_k": {
+        "all": 1
+      },
+      "accuracy": 67.25,
+      "correct": 6725,
+      "n": 10000,
+      "delta_pp": -25.75,
+      "paired_bootstrap95_pp": [
+        -26.68025,
+        -24.82
+      ],
+      "baseline_only_correct": 2742,
+      "variant_only_correct": 167,
+      "changed_predictions": 3160
+    },
+    {
+      "name": "int8_k0",
+      "run": "conservative_seed2026",
+      "bits": 8,
+      "mode": "quant",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 93.46,
+      "correct": 9346,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int8_columns_k1",
+      "run": "conservative_seed2026",
+      "bits": 8,
+      "mode": "columns",
+      "stage_k": {
+        "all": 1
+      },
+      "accuracy": 93.49,
+      "correct": 9349,
+      "n": 10000,
+      "delta_pp": 0.03,
+      "paired_bootstrap95_pp": [
+        -0.15,
+        0.22
+      ],
+      "baseline_only_correct": 43,
+      "variant_only_correct": 46,
+      "changed_predictions": 107
+    },
+    {
+      "name": "fp32",
+      "run": "run_seed2026",
+      "bits": null,
+      "mode": "fp32",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 93.45,
+      "correct": 9345,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int6_k0",
+      "run": "run_seed2026",
+      "bits": 6,
+      "mode": "quant",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 93.0,
+      "correct": 9300,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int6_postacc_k2",
+      "run": "run_seed2026",
+      "bits": 6,
+      "mode": "postacc",
+      "stage_k": {
+        "all": 2
+      },
+      "accuracy": 92.99,
+      "correct": 9299,
+      "n": 10000,
+      "delta_pp": -0.01,
+      "paired_bootstrap95_pp": [
+        -0.24,
+        0.24
+      ],
+      "baseline_only_correct": 78,
+      "variant_only_correct": 77,
+      "changed_predictions": 177
+    },
+    {
+      "name": "int6_columns_k2",
+      "run": "run_seed2026",
+      "bits": 6,
+      "mode": "columns",
+      "stage_k": {
+        "all": 2
+      },
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000,
+      "delta_pp": -83.0,
+      "paired_bootstrap95_pp": [
+        -83.8,
+        -82.17975000000001
+      ],
+      "baseline_only_correct": 8430,
+      "variant_only_correct": 130,
+      "changed_predictions": 8965
+    },
+    {
+      "name": "int6_postacc_k4",
+      "run": "run_seed2026",
+      "bits": 6,
+      "mode": "postacc",
+      "stage_k": {
+        "all": 4
+      },
+      "accuracy": 92.67,
+      "correct": 9267,
+      "n": 10000,
+      "delta_pp": -0.33,
+      "paired_bootstrap95_pp": [
+        -0.63,
+        0.0
+      ],
+      "baseline_only_correct": 141,
+      "variant_only_correct": 108,
+      "changed_predictions": 293
+    },
+    {
+      "name": "int6_columns_k4",
+      "run": "run_seed2026",
+      "bits": 6,
+      "mode": "columns",
+      "stage_k": {
+        "all": 4
+      },
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000,
+      "delta_pp": -83.0,
+      "paired_bootstrap95_pp": [
+        -83.77,
+        -82.23975
+      ],
+      "baseline_only_correct": 8356,
+      "variant_only_correct": 56,
+      "changed_predictions": 8965
+    },
+    {
+      "name": "int6_postacc_k5",
+      "run": "run_seed2026",
+      "bits": 6,
+      "mode": "postacc",
+      "stage_k": {
+        "all": 5
+      },
+      "accuracy": 91.61,
+      "correct": 9161,
+      "n": 10000,
+      "delta_pp": -1.39,
+      "paired_bootstrap95_pp": [
+        -1.79,
+        -1.0
+      ],
+      "baseline_only_correct": 272,
+      "variant_only_correct": 133,
+      "changed_predictions": 478
+    },
+    {
+      "name": "int6_columns_k5",
+      "run": "run_seed2026",
+      "bits": 6,
+      "mode": "columns",
+      "stage_k": {
+        "all": 5
+      },
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000,
+      "delta_pp": -83.0,
+      "paired_bootstrap95_pp": [
+        -83.77,
+        -82.23975
+      ],
+      "baseline_only_correct": 8356,
+      "variant_only_correct": 56,
+      "changed_predictions": 8965
+    },
+    {
+      "name": "int6_columns_k5_stem_fc_protected",
+      "run": "run_seed2026",
+      "bits": 6,
+      "mode": "columns",
+      "stage_k": {
+        "conv1": 0,
+        "layer1": 5,
+        "layer2": 5,
+        "layer3": 5,
+        "layer4": 5,
+        "fc": 0
+      },
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000,
+      "delta_pp": -83.0,
+      "paired_bootstrap95_pp": [
+        -83.77,
+        -82.23975
+      ],
+      "baseline_only_correct": 8356,
+      "variant_only_correct": 56,
+      "changed_predictions": 8965
+    },
+    {
+      "name": "int8_k0",
+      "run": "run_seed2026",
+      "bits": 8,
+      "mode": "quant",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 93.46,
+      "correct": 9346,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int8_postacc_k4",
+      "run": "run_seed2026",
+      "bits": 8,
+      "mode": "postacc",
+      "stage_k": {
+        "all": 4
+      },
+      "accuracy": 93.5,
+      "correct": 9350,
+      "n": 10000,
+      "delta_pp": 0.04,
+      "paired_bootstrap95_pp": [
+        -0.08,
+        0.16
+      ],
+      "baseline_only_correct": 17,
+      "variant_only_correct": 21,
+      "changed_predictions": 46
+    },
+    {
+      "name": "int8_columns_k4",
+      "run": "run_seed2026",
+      "bits": 8,
+      "mode": "columns",
+      "stage_k": {
+        "all": 4
+      },
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000,
+      "delta_pp": -83.46000000000001,
+      "paired_bootstrap95_pp": [
+        -84.25,
+        -82.66
+      ],
+      "baseline_only_correct": 8479,
+      "variant_only_correct": 133,
+      "changed_predictions": 8995
+    },
+    {
+      "name": "int8_postacc_k6",
+      "run": "run_seed2026",
+      "bits": 8,
+      "mode": "postacc",
+      "stage_k": {
+        "all": 6
+      },
+      "accuracy": 93.49,
+      "correct": 9349,
+      "n": 10000,
+      "delta_pp": 0.03,
+      "paired_bootstrap95_pp": [
+        -0.11,
+        0.17
+      ],
+      "baseline_only_correct": 26,
+      "variant_only_correct": 29,
+      "changed_predictions": 63
+    },
+    {
+      "name": "int8_columns_k6",
+      "run": "run_seed2026",
+      "bits": 8,
+      "mode": "columns",
+      "stage_k": {
+        "all": 6
+      },
+      "accuracy": 10.02,
+      "correct": 1002,
+      "n": 10000,
+      "delta_pp": -83.44,
+      "paired_bootstrap95_pp": [
+        -84.23025,
+        -82.64
+      ],
+      "baseline_only_correct": 8477,
+      "variant_only_correct": 133,
+      "changed_predictions": 8995
+    },
+    {
+      "name": "int8_postacc_k7",
+      "run": "run_seed2026",
+      "bits": 8,
+      "mode": "postacc",
+      "stage_k": {
+        "all": 7
+      },
+      "accuracy": 93.36,
+      "correct": 9336,
+      "n": 10000,
+      "delta_pp": -0.1,
+      "paired_bootstrap95_pp": [
+        -0.28024999999999994,
+        0.09
+      ],
+      "baseline_only_correct": 49,
+      "variant_only_correct": 39,
+      "changed_predictions": 109
+    },
+    {
+      "name": "int8_columns_k7",
+      "run": "run_seed2026",
+      "bits": 8,
+      "mode": "columns",
+      "stage_k": {
+        "all": 7
+      },
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000,
+      "delta_pp": -83.46000000000001,
+      "paired_bootstrap95_pp": [
+        -84.22,
+        -82.7
+      ],
+      "baseline_only_correct": 8403,
+      "variant_only_correct": 57,
+      "changed_predictions": 8969
+    },
+    {
+      "name": "int8_columns_k7_stem_fc_protected",
+      "run": "run_seed2026",
+      "bits": 8,
+      "mode": "columns",
+      "stage_k": {
+        "conv1": 0,
+        "layer1": 7,
+        "layer2": 7,
+        "layer3": 7,
+        "layer4": 7,
+        "fc": 0
+      },
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000,
+      "delta_pp": -83.46000000000001,
+      "paired_bootstrap95_pp": [
+        -84.22,
+        -82.7
+      ],
+      "baseline_only_correct": 8403,
+      "variant_only_correct": 57,
+      "changed_predictions": 8969
+    },
+    {
+      "name": "fp32",
+      "run": "run_seed2027",
+      "bits": null,
+      "mode": "fp32",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 93.33,
+      "correct": 9333,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int6_k0",
+      "run": "run_seed2027",
+      "bits": 6,
+      "mode": "quant",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 92.88,
+      "correct": 9288,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int6_columns_k4",
+      "run": "run_seed2027",
+      "bits": 6,
+      "mode": "columns",
+      "stage_k": {
+        "all": 4
+      },
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000,
+      "delta_pp": -82.88,
+      "paired_bootstrap95_pp": [
+        -83.65,
+        -82.09
+      ],
+      "baseline_only_correct": 8368,
+      "variant_only_correct": 80,
+      "changed_predictions": 8921
+    },
+    {
+      "name": "int8_k0",
+      "run": "run_seed2027",
+      "bits": 8,
+      "mode": "quant",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 93.23,
+      "correct": 9323,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int8_columns_k4",
+      "run": "run_seed2027",
+      "bits": 8,
+      "mode": "columns",
+      "stage_k": {
+        "all": 4
+      },
+      "accuracy": 10.03,
+      "correct": 1003,
+      "n": 10000,
+      "delta_pp": -83.2,
+      "paired_bootstrap95_pp": [
+        -84.01025,
+        -82.37
+      ],
+      "baseline_only_correct": 8472,
+      "variant_only_correct": 152,
+      "changed_predictions": 9015
+    },
+    {
+      "name": "fp32",
+      "run": "run_seed2028",
+      "bits": null,
+      "mode": "fp32",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 92.99,
+      "correct": 9299,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int6_k0",
+      "run": "run_seed2028",
+      "bits": 6,
+      "mode": "quant",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 92.5,
+      "correct": 9250,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int6_columns_k4",
+      "run": "run_seed2028",
+      "bits": 6,
+      "mode": "columns",
+      "stage_k": {
+        "all": 4
+      },
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000,
+      "delta_pp": -82.5,
+      "paired_bootstrap95_pp": [
+        -83.3,
+        -81.67
+      ],
+      "baseline_only_correct": 8343,
+      "variant_only_correct": 93,
+      "changed_predictions": 8925
+    },
+    {
+      "name": "int8_k0",
+      "run": "run_seed2028",
+      "bits": 8,
+      "mode": "quant",
+      "stage_k": {
+        "all": 0
+      },
+      "accuracy": 92.93,
+      "correct": 9293,
+      "n": 10000,
+      "delta_pp": 0.0,
+      "paired_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "baseline_only_correct": 0,
+      "variant_only_correct": 0,
+      "changed_predictions": 0
+    },
+    {
+      "name": "int8_columns_k4",
+      "run": "run_seed2028",
+      "bits": 8,
+      "mode": "columns",
+      "stage_k": {
+        "all": 4
+      },
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000,
+      "delta_pp": -82.93,
+      "paired_bootstrap95_pp": [
+        -83.78,
+        -82.07
+      ],
+      "baseline_only_correct": 8460,
+      "variant_only_correct": 167,
+      "changed_predictions": 9036
+    }
+  ],
+  "cifar10_training_seed_statistics": [
+    {
+      "config": "fp32",
+      "n_seeds": 3,
+      "mean_accuracy": 93.25666666666666,
+      "std_accuracy": 0.23860706890898084,
+      "accuracies": [
+        93.45,
+        93.33,
+        92.99
+      ]
+    },
+    {
+      "config": "int6_k0",
+      "n_seeds": 3,
+      "mean_accuracy": 92.79333333333334,
+      "std_accuracy": 0.26102362600602447,
+      "accuracies": [
+        93.0,
+        92.88,
+        92.5
+      ]
+    },
+    {
+      "config": "int6_postacc_k2",
+      "n_seeds": 1,
+      "mean_accuracy": 92.99,
+      "std_accuracy": null,
+      "accuracies": [
+        92.99
+      ]
+    },
+    {
+      "config": "int6_columns_k2",
+      "n_seeds": 1,
+      "mean_accuracy": 10.0,
+      "std_accuracy": null,
+      "accuracies": [
+        10.0
+      ]
+    },
+    {
+      "config": "int6_postacc_k4",
+      "n_seeds": 1,
+      "mean_accuracy": 92.67,
+      "std_accuracy": null,
+      "accuracies": [
+        92.67
+      ]
+    },
+    {
+      "config": "int6_columns_k4",
+      "n_seeds": 3,
+      "mean_accuracy": 10.0,
+      "std_accuracy": 0.0,
+      "accuracies": [
+        10.0,
+        10.0,
+        10.0
+      ]
+    },
+    {
+      "config": "int6_postacc_k5",
+      "n_seeds": 1,
+      "mean_accuracy": 91.61,
+      "std_accuracy": null,
+      "accuracies": [
+        91.61
+      ]
+    },
+    {
+      "config": "int6_columns_k5",
+      "n_seeds": 1,
+      "mean_accuracy": 10.0,
+      "std_accuracy": null,
+      "accuracies": [
+        10.0
+      ]
+    },
+    {
+      "config": "int6_columns_k5_stem_fc_protected",
+      "n_seeds": 1,
+      "mean_accuracy": 10.0,
+      "std_accuracy": null,
+      "accuracies": [
+        10.0
+      ]
+    },
+    {
+      "config": "int8_k0",
+      "n_seeds": 3,
+      "mean_accuracy": 93.20666666666666,
+      "std_accuracy": 0.2657693235370289,
+      "accuracies": [
+        93.46,
+        93.23,
+        92.93
+      ]
+    },
+    {
+      "config": "int8_postacc_k4",
+      "n_seeds": 1,
+      "mean_accuracy": 93.5,
+      "std_accuracy": null,
+      "accuracies": [
+        93.5
+      ]
+    },
+    {
+      "config": "int8_columns_k4",
+      "n_seeds": 3,
+      "mean_accuracy": 10.01,
+      "std_accuracy": 0.017320508075688402,
+      "accuracies": [
+        10.0,
+        10.03,
+        10.0
+      ]
+    },
+    {
+      "config": "int8_postacc_k6",
+      "n_seeds": 1,
+      "mean_accuracy": 93.49,
+      "std_accuracy": null,
+      "accuracies": [
+        93.49
+      ]
+    },
+    {
+      "config": "int8_columns_k6",
+      "n_seeds": 1,
+      "mean_accuracy": 10.02,
+      "std_accuracy": null,
+      "accuracies": [
+        10.02
+      ]
+    },
+    {
+      "config": "int8_postacc_k7",
+      "n_seeds": 1,
+      "mean_accuracy": 93.36,
+      "std_accuracy": null,
+      "accuracies": [
+        93.36
+      ]
+    },
+    {
+      "config": "int8_columns_k7",
+      "n_seeds": 1,
+      "mean_accuracy": 10.0,
+      "std_accuracy": null,
+      "accuracies": [
+        10.0
+      ]
+    },
+    {
+      "config": "int8_columns_k7_stem_fc_protected",
+      "n_seeds": 1,
+      "mean_accuracy": 10.0,
+      "std_accuracy": null,
+      "accuracies": [
+        10.0
+      ]
+    }
+  ],
+  "qat": {
+    "bits": 6,
+    "k": 4,
+    "stem_fc_k": 0,
+    "epochs": 5,
+    "best_epoch": 4,
+    "train_n_per_epoch": 45000,
+    "batch": 64,
+    "fixed_learning_rate": 0.01,
+    "gradient": "FP surrogate STE; BN updates enabled",
+    "before": {
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000
+    },
+    "after": {
+      "accuracy": 18.709999999999997,
+      "correct": 1871,
+      "n": 10000,
+      "delta_pp": 8.709999999999999,
+      "paired_bootstrap95_pp": [
+        7.7,
+        9.720249999999997
+      ]
+    }
+  },
+  "bn_only": {
+    "bits": 6,
+    "k": 4,
+    "stem_fc_k": 0,
+    "train_n": 4096,
+    "before": {
+      "accuracy": 10.0,
+      "correct": 1000,
+      "n": 10000
+    },
+    "after": {
+      "accuracy": 7.340000000000001,
+      "correct": 734,
+      "n": 10000
+    }
+  },
+  "bias_compensation": [
+    {
+      "bits": 6,
+      "k": 4,
+      "stem_fc_k": 0,
+      "test": {
+        "accuracy": 10.0,
+        "correct": 1000,
+        "n": 10000,
+        "delta_pp": -83.0,
+        "paired_bootstrap95_pp": [
+          -83.77,
+          -82.23975
+        ]
+      },
+      "same_schedule_uncorrected": {},
+      "paired_compensation_vs_uncorrected": {},
+      "extra_additions_per_image": 548864,
+      "full_offset_map_storage_int32_bytes": 2195456,
+      "compressed_boundary_class_unique_offsets_int32_bytes": 123120
+    },
+    {
+      "bits": 8,
+      "k": 1,
+      "stem_fc_k": 0,
+      "test": {
+        "accuracy": 93.45,
+        "correct": 9345,
+        "n": 10000,
+        "delta_pp": -0.01,
+        "paired_bootstrap95_pp": [
+          -0.1,
+          0.08
+        ]
+      },
+      "same_schedule_uncorrected": {
+        "accuracy": 93.55,
+        "correct": 9355,
+        "n": 10000
+      },
+      "paired_compensation_vs_uncorrected": {
+        "delta_pp": -0.1,
+        "paired_bootstrap95_pp": [
+          -0.28,
+          0.08
+        ],
+        "baseline_only_correct": 47,
+        "variant_only_correct": 37,
+        "changed_predictions": 104
+      },
+      "extra_additions_per_image": 548864,
+      "full_offset_map_storage_int32_bytes": 2195456,
+      "compressed_boundary_class_unique_offsets_int32_bytes": 102432
+    }
+  ],
+  "saved_replay": [
+    {
+      "name": "QAT INT6 PP k4, protected stem/FC",
+      "n": 10000,
+      "correct": 1871,
+      "accuracy": 18.71,
+      "labels_equal": true,
+      "predictions_equal": true,
+      "logits_equal": true,
+      "maximum_absolute_logit_difference": 0.0
+    },
+    {
+      "name": "Independent INT8 PP k1 static bias compensation",
+      "n": 10000,
+      "correct": 9345,
+      "accuracy": 93.45,
+      "labels_equal": true,
+      "predictions_equal": true,
+      "logits_equal": true,
+      "maximum_absolute_logit_difference": 0.0
+    }
+  ],
+  "circuit_conditions": {
+    "circuit": "Authored educational Level1, 1V, 25C, 10MHz; INT6 accumulator21, INT8 accumulator25; 24 inputs per setting",
+    "circuit_open_pdk": "Official SKY130 TT, 1.8V, 25C, 10MHz; accumulator32; 12 inputs per setting",
+    "models_bundled": "Only authored educational Level1; no foundry or vendor coefficients",
+    "integration": "Gear, reltol0.001, maxstep1ns",
+    "included_supply": "multiplier, accumulator, register, internal clock inverters",
+    "excluded_supply": "ideal external operand, clock, EN and non-overlap generator",
+    "layout_parasitics": false,
+    "trace": "Same 12-pair slice captured from INT8 k1 network used for k0/k1 counterfactual circuit comparison; first9 activations zero",
+    "whole_cnn_energy_measured": false,
+    "equivalence_to_45nm_process": false
+  },
+  "circuit_measurements": {
+    "circuit": {
+      "status": "complete",
+      "runs": [
+        {
+          "name": "mac_n6_k0",
+          "n": 6,
+          "k": 0,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 4.898949267250461,
+          "energy_per_operation_fJ": 489.89492672504605,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k5",
+          "n": 6,
+          "k": 5,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 3.11174669603355,
+          "energy_per_operation_fJ": 311.17466960335497,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k1",
+          "n": 6,
+          "k": 1,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 4.579235601807084,
+          "energy_per_operation_fJ": 457.9235601807084,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k2",
+          "n": 6,
+          "k": 2,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 4.818398138501728,
+          "energy_per_operation_fJ": 481.83981385017273,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k3",
+          "n": 6,
+          "k": 3,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 3.98737678744955,
+          "energy_per_operation_fJ": 398.737678744955,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k4",
+          "n": 6,
+          "k": 4,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 3.5614096908519834,
+          "energy_per_operation_fJ": 356.1409690851983,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k1",
+          "n": 8,
+          "k": 1,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 7.602967652694321,
+          "energy_per_operation_fJ": 760.2967652694322,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k0",
+          "n": 8,
+          "k": 0,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 7.879875281515219,
+          "energy_per_operation_fJ": 787.9875281515218,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k2",
+          "n": 8,
+          "k": 2,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 7.574463069351147,
+          "energy_per_operation_fJ": 757.4463069351146,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k3",
+          "n": 8,
+          "k": 3,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 7.233306931706391,
+          "energy_per_operation_fJ": 723.3306931706392,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k5",
+          "n": 8,
+          "k": 5,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 6.19353696931622,
+          "energy_per_operation_fJ": 619.3536969316219,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k4",
+          "n": 8,
+          "k": 4,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 6.682933629125801,
+          "energy_per_operation_fJ": 668.2933629125799,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k7",
+          "n": 8,
+          "k": 7,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 4.408919899582685,
+          "energy_per_operation_fJ": 440.8919899582684,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k6",
+          "n": 8,
+          "k": 6,
+          "idle": false,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 5.252270386096885,
+          "energy_per_operation_fJ": 525.2270386096884,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k1_idle",
+          "n": 6,
+          "k": 1,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.08795455111860301,
+          "energy_per_operation_fJ": 8.7954551118603,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k0_idle",
+          "n": 6,
+          "k": 0,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.08795455108716249,
+          "energy_per_operation_fJ": 8.795455108716247,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k3_idle",
+          "n": 6,
+          "k": 3,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.08795455120050814,
+          "energy_per_operation_fJ": 8.795455120050812,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k2_idle",
+          "n": 6,
+          "k": 2,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.08795455117083241,
+          "energy_per_operation_fJ": 8.795455117083241,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k4_idle",
+          "n": 6,
+          "k": 4,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.08795455134697429,
+          "energy_per_operation_fJ": 8.795455134697427,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n6_k5_idle",
+          "n": 6,
+          "k": 5,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 21,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.08795455154381802,
+          "energy_per_operation_fJ": 8.795455154381802,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k1_idle",
+          "n": 8,
+          "k": 1,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.10240878915076825,
+          "energy_per_operation_fJ": 10.240878915076824,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k0_idle",
+          "n": 8,
+          "k": 0,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.10240878909793548,
+          "energy_per_operation_fJ": 10.240878909793548,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k2_idle",
+          "n": 8,
+          "k": 2,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.10240878932370667,
+          "energy_per_operation_fJ": 10.240878932370666,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k3_idle",
+          "n": 8,
+          "k": 3,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.10240878955533869,
+          "energy_per_operation_fJ": 10.24087895553387,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k4_idle",
+          "n": 8,
+          "k": 4,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.1024087898657377,
+          "energy_per_operation_fJ": 10.24087898657377,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k5_idle",
+          "n": 8,
+          "k": 5,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.10240879028864616,
+          "energy_per_operation_fJ": 10.240879028864617,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k6_idle",
+          "n": 8,
+          "k": 6,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.10240879076353825,
+          "energy_per_operation_fJ": 10.240879076353824,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "mac_n8_k7_idle",
+          "n": 8,
+          "k": 7,
+          "idle": true,
+          "samples": 24,
+          "accumulator_bits": 25,
+          "vdd_V": 1.0,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "average_supply_power_uW": 0.10240879131342427,
+          "energy_per_operation_fJ": 10.240879131342426,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        }
+      ]
+    },
+    "circuit_open_pdk": {
+      "status": "complete",
+      "runs": [
+        {
+          "name": "sky130_mac_n6_k0",
+          "n": 6,
+          "k": 0,
+          "idle": false,
+          "samples": 12,
+          "accumulator_bits": 32,
+          "vdd_V": 1.8,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "corner": "TT",
+          "average_supply_power_uW": 94.71622520269473,
+          "energy_per_operation_fJ": 9471.622520269473,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "sky130_mac_n6_k5",
+          "n": 6,
+          "k": 5,
+          "idle": false,
+          "samples": 12,
+          "accumulator_bits": 32,
+          "vdd_V": 1.8,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "corner": "TT",
+          "average_supply_power_uW": 64.55066167627577,
+          "energy_per_operation_fJ": 6455.066167627577,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "sky130_mac_n8_k0",
+          "n": 8,
+          "k": 0,
+          "idle": false,
+          "samples": 12,
+          "accumulator_bits": 32,
+          "vdd_V": 1.8,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "corner": "TT",
+          "average_supply_power_uW": 127.87636852295144,
+          "energy_per_operation_fJ": 12787.636852295143,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "sky130_mac_n8_k7",
+          "n": 8,
+          "k": 7,
+          "idle": false,
+          "samples": 12,
+          "accumulator_bits": 32,
+          "vdd_V": 1.8,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "corner": "TT",
+          "average_supply_power_uW": 81.98271429616041,
+          "energy_per_operation_fJ": 8198.27142961604,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "sky130_mac_n6_k1",
+          "n": 6,
+          "k": 1,
+          "idle": false,
+          "samples": 12,
+          "accumulator_bits": 32,
+          "vdd_V": 1.8,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "corner": "TT",
+          "average_supply_power_uW": 93.50168195071583,
+          "energy_per_operation_fJ": 9350.168195071585,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "sky130_mac_n8_k1",
+          "n": 8,
+          "k": 1,
+          "idle": false,
+          "samples": 12,
+          "accumulator_bits": 32,
+          "vdd_V": 1.8,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "corner": "TT",
+          "average_supply_power_uW": 127.75210143711426,
+          "energy_per_operation_fJ": 12775.210143711427,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "cnn_trace_mac_n8_k0",
+          "n": 8,
+          "k": 0,
+          "idle": false,
+          "samples": 12,
+          "accumulator_bits": 32,
+          "vdd_V": 1.8,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "corner": "TT",
+          "scenario": "cnn_operand_trace",
+          "average_supply_power_uW": 14.703001289742973,
+          "energy_per_operation_fJ": 1470.3001289742972,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        },
+        {
+          "name": "cnn_trace_mac_n8_k1",
+          "n": 8,
+          "k": 1,
+          "idle": false,
+          "samples": 12,
+          "accumulator_bits": 32,
+          "vdd_V": 1.8,
+          "temperature_C": 25,
+          "period_ns": 100.0,
+          "frequency_MHz": 10.0,
+          "corner": "TT",
+          "scenario": "cnn_operand_trace",
+          "average_supply_power_uW": 14.34724736390208,
+          "energy_per_operation_fJ": 1434.724736390208,
+          "product_mismatches": 0,
+          "accumulator_mismatches": 0
+        }
+      ]
+    }
+  },
+  "signed_exhaustive": {
+    "total_cases": 548864,
+    "rows": [
+      {
+        "bits": 6,
+        "k": 0,
+        "cases": 4096,
+        "mismatches": 0
+      },
+      {
+        "bits": 6,
+        "k": 1,
+        "cases": 4096,
+        "mismatches": 0
+      },
+      {
+        "bits": 6,
+        "k": 2,
+        "cases": 4096,
+        "mismatches": 0
+      },
+      {
+        "bits": 6,
+        "k": 3,
+        "cases": 4096,
+        "mismatches": 0
+      },
+      {
+        "bits": 6,
+        "k": 4,
+        "cases": 4096,
+        "mismatches": 0
+      },
+      {
+        "bits": 6,
+        "k": 5,
+        "cases": 4096,
+        "mismatches": 0
+      },
+      {
+        "bits": 8,
+        "k": 0,
+        "cases": 65536,
+        "mismatches": 0
+      },
+      {
+        "bits": 8,
+        "k": 1,
+        "cases": 65536,
+        "mismatches": 0
+      },
+      {
+        "bits": 8,
+        "k": 2,
+        "cases": 65536,
+        "mismatches": 0
+      },
+      {
+        "bits": 8,
+        "k": 3,
+        "cases": 65536,
+        "mismatches": 0
+      },
+      {
+        "bits": 8,
+        "k": 4,
+        "cases": 65536,
+        "mismatches": 0
+      },
+      {
+        "bits": 8,
+        "k": 5,
+        "cases": 65536,
+        "mismatches": 0
+      },
+      {
+        "bits": 8,
+        "k": 6,
+        "cases": 65536,
+        "mismatches": 0
+      },
+      {
+        "bits": 8,
+        "k": 7,
+        "cases": 65536,
+        "mismatches": 0
+      }
+    ]
+  }
+}

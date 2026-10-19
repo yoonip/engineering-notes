@@ -1,0 +1,38 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 1.5368378047411546,
+    "validation_loss": 1.291177615954565,
+    "elapsed_seconds": 627.53,
+    "optimizer_windows": 578,
+    "skipped_updates": 0,
+    "target_tokens": 112659,
+    "peak_gpu_gib": 1.178,
+    "saved_best": true,
+    "learning_rate_end": 3.887469308476905e-05
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.399438937984028,
+    "validation_loss": 1.2743271144742552,
+    "elapsed_seconds": 519.84,
+    "optimizer_windows": 578,
+    "skipped_updates": 0,
+    "target_tokens": 112659,
+    "peak_gpu_gib": 1.177,
+    "saved_best": true,
+    "learning_rate_end": 1.3207360921304046e-05
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.3849333707106604,
+    "validation_loss": 1.2709528293391932,
+    "elapsed_seconds": 541.11,
+    "optimizer_windows": 578,
+    "skipped_updates": 0,
+    "target_tokens": 112659,
+    "peak_gpu_gib": 1.178,
+    "saved_best": true,
+    "learning_rate_end": 0.0
+  }
+]

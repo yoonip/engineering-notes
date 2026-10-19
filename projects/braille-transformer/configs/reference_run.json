@@ -1,0 +1,43 @@
+{
+  "model": {
+    "source_vocab_size": 68,
+    "target_vocab_size": 243,
+    "d_model": 256,
+    "heads": 8,
+    "encoder_layers": 3,
+    "decoder_layers": 3,
+    "ffn_dim": 1024,
+    "dropout": 0.1,
+    "max_source_length": 560,
+    "max_target_length": 560
+  },
+  "training": {
+    "epochs": 16,
+    "batch_size": 32,
+    "grad_accum": 1,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.05,
+    "clip_grad": 1.0,
+    "patience": 4,
+    "min_delta": 0.0,
+    "seed": 20261006,
+    "deterministic": false,
+    "length_policy": "error",
+    "train_samples": 0,
+    "validation_samples": 0,
+    "cpu_threads": 4,
+    "device": "cuda",
+    "amp": true,
+    "updates_per_epoch": 2089,
+    "total_updates": 33424,
+    "warmup_updates": 1671,
+    "sampler": "shuffled_length_pools_v1"
+  },
+  "splits": {
+    "train": 66824,
+    "validation": 8352,
+    "test": 8352
+  },
+  "note": "Reference configuration only; vocabulary is rebuilt from the authorized training split. No checkpoint is bundled."
+}

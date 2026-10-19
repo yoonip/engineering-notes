@@ -1,0 +1,143 @@
+{
+  "algorithm": "SHA256",
+  "scope": "supplied source files; manifest itself excluded",
+  "file_count": 27,
+  "total_bytes": 185318,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 190,
+      "sha256": "2e857b910f84ffabc359da2c052e6fc54d834697a90ae4737779581e33f05b6d"
+    },
+    {
+      "path": "circuit/arithmetic.py",
+      "bytes": 2231,
+      "sha256": "993db6448777480f353066d35012598536f02f811d7e0a00f2497da30c3aaad8"
+    },
+    {
+      "path": "circuit/column_mask_mac.sv",
+      "bytes": 1431,
+      "sha256": "44ec20c3d17a0e3bf32602aebae732079ae0ad86e68eb48dc6a36c01fbb5cb65"
+    },
+    {
+      "path": "circuit/models/educational_level1.pm",
+      "bytes": 523,
+      "sha256": "6d9a42c2c72d6935d8c8b0745d3cf23e620dbe5be9f581fed6940d8dff92d214"
+    },
+    {
+      "path": "circuit/plot_results.py",
+      "bytes": 4975,
+      "sha256": "f3779c4644bda6088ef4b8b708924e02f097ef26ec81f63372c8837ed8f7c1de"
+    },
+    {
+      "path": "circuit/run_circuit.py",
+      "bytes": 17289,
+      "sha256": "9c34762b17492d33078b1e3ccd1683d2c490d38dc815422fbc5f1f079b1dfec7"
+    },
+    {
+      "path": "circuit_open_pdk/model_sources.json",
+      "bytes": 1153,
+      "sha256": "c6a4f6702fe9ce082fc830db630ed1ed241b561ca7606624dfe45face046dc99"
+    },
+    {
+      "path": "circuit_open_pdk/plot_results.py",
+      "bytes": 1436,
+      "sha256": "8b4e4a8c9d13f02e51f4524bff925f69db293760257670a6004de3dcef17cd95"
+    },
+    {
+      "path": "circuit_open_pdk/prepare_models.py",
+      "bytes": 5360,
+      "sha256": "cd96ee39433a93e83ae5f65194643c5b950e51b0d00d7a1c1ee856f774e21a15"
+    },
+    {
+      "path": "circuit_open_pdk/README.md",
+      "bytes": 3509,
+      "sha256": "b5e445d7a69e11707e67bdfd56d400fc8f1e29af2ba1c173d37606f68dd7ac8c"
+    },
+    {
+      "path": "circuit_open_pdk/run_sky130.py",
+      "bytes": 10372,
+      "sha256": "76cee2e08bd693f6241d01bd4a02982119f3a573c8472a17dc3d42854aeac067"
+    },
+    {
+      "path": "cnn/run_cifar.py",
+      "bytes": 41870,
+      "sha256": "96f488720d28d6823ff8da39826723cdc2598227b81f0a4c6a16010ffa25fbdc"
+    },
+    {
+      "path": "cnn/thesis_recipe.py",
+      "bytes": 15476,
+      "sha256": "b70ff844938726b78f3c40e73e85a5b6b261210c32efca694e948131894457a7"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 134,
+      "sha256": "baf6f437929dc389b4d964e54389f54ae7d8e59eff610e13c5aeec345d2c7dbf"
+    },
+    {
+      "path": "metrics/archived_metrics.json",
+      "bytes": 45848,
+      "sha256": "09cdcb05ba09f3850df33af75e8fb930de1c7f425c79dffa6fa61df2495fcdaa"
+    },
+    {
+      "path": "metrics/README.md",
+      "bytes": 2192,
+      "sha256": "37064e0da7917bdc007027fae98c25fb52c83d05a9aecd032a0ed87dde0933b1"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 2073,
+      "sha256": "905e5e62772d19c9d653b48cdf23392aa4ec1b44a285210872465b3b64b5e2db"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7848,
+      "sha256": "9fada28d19e7b356dd0982428858fab7af550bc23bab849cae82b32c061a5b61"
+    },
+    {
+      "path": "requirements-circuit.txt",
+      "bytes": 44,
+      "sha256": "a4034de6e6540fc893ed5c96877e6a56690756c92aa8cac9479b1ca6ac1d9dbf"
+    },
+    {
+      "path": "requirements-core.txt",
+      "bytes": 13,
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 61,
+      "sha256": "3d158b31d3853f0f79a9918e3d2deba3f1479daeb8597a7ac2a56ff148eecf22"
+    },
+    {
+      "path": "tests/test_arithmetic.py",
+      "bytes": 5691,
+      "sha256": "d330e007fc22da255722f473fe4bbc82f6c5144bcad8588cfbdd33a1425b6d00"
+    },
+    {
+      "path": "tests/test_manifest.py",
+      "bytes": 1896,
+      "sha256": "8f8967ec0214ce6023a7f363da5326e664e0be7715687bd19ebd75ae8b2735a7"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "bytes": 2552,
+      "sha256": "aa25eb0273107cba8ec758c6f43f9b1068e943aa7080892099f2164f9be5af06"
+    },
+    {
+      "path": "tests/test_public_policy.py",
+      "bytes": 4007,
+      "sha256": "87ad226422b095e377b1e88445b3c7d6b8c51775fac70c8d2c37e1c8eb476889"
+    },
+    {
+      "path": "tools/manifest.py",
+      "bytes": 3149,
+      "sha256": "6b3dd17289ffe3de7cd8b7b4f1cea0739c9cef8fd8a699236feef5919a105035"
+    },
+    {
+      "path": "VALIDATION_RESULTS.json",
+      "bytes": 3995,
+      "sha256": "2afa750210407ac6719c5b5aa5b3b6c831723066f5054915b12371132dac0984"
+    }
+  ]
+}

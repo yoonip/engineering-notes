@@ -1,0 +1,8 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows x64",
+  "torch": "2.14.0+cu132",
+  "cuda_runtime": "13.2",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti",
+  "scope": "Recorded original environment, not a fresh-machine installation guarantee"
+}

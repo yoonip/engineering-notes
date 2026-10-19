@@ -33,3 +33,7 @@ def lower_bound(values, target):
 ## 참고 자료
 
 - [프로그래머스 코딩테스트 연습](https://school.programmers.co.kr/learn/challenges)
+
+## Programmers 풀이
+
+[Level 2 Python 풀이 100개](../../programmers/README.md)를 문제 번호와 공식 문제 링크로 정리했다. 각 파일에서 실행 코드와 풀이를 확인할 수 있다.

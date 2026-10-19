@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-19",
+  "status": "passed",
+  "scope": "39 public practice solutions; AI-generated learning code",
+  "runtime": {
+    "implementation": "CPython",
+    "python": "3.12.14",
+    "dependencies": "Python standard library only"
+  },
+  "command": "python -B -m unittest discover -s tests -v",
+  "results": {
+    "test_methods": 50,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "example_and_boundary_cases": 123,
+    "total_solution_calls": 1359,
+    "solution_files_covered": 39,
+    "per_solution_calls": {
+      "01": 3,
+      "02": 63,
+      "03": 63,
+      "04": 3,
+      "05": 4,
+      "06": 3,
+      "07": 2,
+      "08": 2,
+      "09": 4,
+      "10": 2,
+      "11": 3,
+      "12": 122,
+      "13": 62,
+      "14": 103,
+      "15": 64,
+      "16": 3,
+      "17": 2,
+      "18": 3,
+      "19": 4,
+      "20": 3,
+      "21": 2,
+      "22": 5,
+      "23": 2,
+      "24": 7,
+      "25": 3,
+      "26": 370,
+      "27": 2,
+      "28": 63,
+      "29": 2,
+      "30": 2,
+      "31": 3,
+      "32": 4,
+      "33": 304,
+      "34": 3,
+      "35": 54,
+      "36": 4,
+      "37": 4,
+      "38": 3,
+      "39": 4
+    },
+    "annotated_code_ast_matches": 39,
+    "python_files_syntax_checked": 40,
+    "python38_syntax_parse_only": true,
+    "source_files_unchanged": true
+  },
+  "comparisons": {
+    "bfs": 60,
+    "dijkstra": 60,
+    "gravity_small_trees": 120,
+    "heap": 60,
+    "hamburger": 100,
+    "three_friends": 60,
+    "greedy_budget": 60,
+    "dates_2016": 366,
+    "integer_square_root": 300,
+    "caesar_roundtrips": 25
+  },
+  "publication_review": {
+    "source_files_allowlisted": 39,
+    "raw_logs_and_source_mapping_included": false,
+    "full_problem_statements_included": false,
+    "screenshots_included": false,
+    "public_problem_source_links": 39
+  },
+  "changes": [
+    {
+      "file": "solutions/36_string_to_integer.py",
+      "change": "Removed diagnostic print in active and annotated code; return behavior unchanged."
+    }
+  ],
+  "verification_scope": {
+    "execution": "local CPython standard-library test suite",
+    "inputs": "examples, boundary cases, and small synthetic comparisons",
+    "online_judge_result": "not_verified"
+  }
+}

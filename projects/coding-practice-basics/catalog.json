@@ -1,0 +1,80 @@
+[
+  {
+    "id": "01_sensor_summary",
+    "title": "센서 기록 요약",
+    "algorithm": "배열 / 최솟값·최댓값 / 누적합",
+    "input_output": "N과 정수 N개를 받아 최솟값, 최댓값, 합계를 출력합니다.",
+    "sources": {
+      "c": "c/01_sensor_summary.c",
+      "cpp": "cpp/01_sensor_summary.cpp",
+      "python": "python/01_sensor_summary.py"
+    },
+    "fixture_input": "fixtures/01_sensor_summary.in",
+    "fixture_output": "fixtures/01_sensor_summary.out"
+  },
+  {
+    "id": "02_digit_frequency",
+    "title": "숫자별 빈도",
+    "algorithm": "문자 코드 / 빈도 배열",
+    "input_output": "숫자 문자열을 받아 0~9의 개수를 순서대로 출력합니다.",
+    "sources": {
+      "c": "c/02_digit_frequency.c",
+      "cpp": "cpp/02_digit_frequency.cpp",
+      "python": "python/02_digit_frequency.py"
+    },
+    "fixture_input": "fixtures/02_digit_frequency.in",
+    "fixture_output": "fixtures/02_digit_frequency.out"
+  },
+  {
+    "id": "03_sort_values",
+    "title": "오름차순 정렬",
+    "algorithm": "정렬 / 비교 함수",
+    "input_output": "N과 정수 N개를 받아 중복을 유지하며 오름차순으로 출력합니다.",
+    "sources": {
+      "c": "c/03_sort_values.c",
+      "cpp": "cpp/03_sort_values.cpp",
+      "python": "python/03_sort_values.py"
+    },
+    "fixture_input": "fixtures/03_sort_values.in",
+    "fixture_output": "fixtures/03_sort_values.out"
+  },
+  {
+    "id": "04_grid_bfs",
+    "title": "격자 최단 경로",
+    "algorithm": "큐 / BFS",
+    "input_output": "N×M의 0/1 격자에서 시작·도착을 포함한 최단 칸 수를 출력합니다. 도달 불가는 -1입니다.",
+    "sources": {
+      "c": "c/04_grid_bfs.c",
+      "cpp": "cpp/04_grid_bfs.cpp",
+      "python": "python/04_grid_bfs.py"
+    },
+    "fixture_input": "fixtures/04_grid_bfs.in",
+    "fixture_output": "fixtures/04_grid_bfs.out"
+  },
+  {
+    "id": "05_stair_cost_dp",
+    "title": "계단 최소 비용",
+    "algorithm": "DP / 점화식",
+    "input_output": "0번 계단부터 N-1번까지 1칸 또는 2칸씩 이동하며 밟는 비용의 최솟값을 출력합니다.",
+    "sources": {
+      "c": "c/05_stair_cost_dp.c",
+      "cpp": "cpp/05_stair_cost_dp.cpp",
+      "python": "python/05_stair_cost_dp.py"
+    },
+    "fixture_input": "fixtures/05_stair_cost_dp.in",
+    "fixture_output": "fixtures/05_stair_cost_dp.out"
+  },
+  {
+    "id": "06_lower_bound",
+    "title": "정렬된 기록 검색",
+    "algorithm": "이분 탐색 / lower_bound",
+    "input_output": "정렬된 정수 N개와 Q개 질의를 받아 첫 인덱스(0부터)를 출력합니다. 없는 값은 -1입니다.",
+    "sources": {
+      "c": "c/06_lower_bound.c",
+      "cpp": "cpp/06_lower_bound.cpp",
+      "python": "python/06_lower_bound.py"
+    },
+    "fixture_input": "fixtures/06_lower_bound.in",
+    "fixture_output": "fixtures/06_lower_bound.out"
+  }
+]

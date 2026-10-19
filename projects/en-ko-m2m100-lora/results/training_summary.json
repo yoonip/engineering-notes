@@ -1,0 +1,26 @@
+{
+  "train_examples": 9242,
+  "validation_examples": 1155,
+  "truncation_counts": {
+    "train": {
+      "source_truncated": 0,
+      "target_truncated": 1
+    },
+    "validation": {
+      "source_truncated": 0,
+      "target_truncated": 0
+    }
+  },
+  "baseline_validation_loss": 1.980710591639643,
+  "best_validation_loss": 1.2709528293391932,
+  "best_epoch": 3,
+  "last_completed_epoch": 3,
+  "total_parameters": 485085184,
+  "trainable_parameters": 1179648,
+  "scheduler": {
+    "type": "cosine",
+    "warmup_fraction": 0.03,
+    "total_updates": 1734
+  },
+  "split_caveat": "Connected components of source/target IDs and normalized text; exact cross-split overlap zero. Pretraining overlap unknown."
+}
