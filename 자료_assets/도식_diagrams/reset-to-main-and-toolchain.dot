@@ -1,0 +1,20 @@
+digraph Diagram {
+graph [rankdir=TB,bgcolor="white",pad="0.2",nodesep="0.45",ranksep="0.48",splines=polyline,outputorder=edgesfirst];
+node [fontname="Malgun Gothic",fontsize=14,shape=box,style=filled,color="#596570",fillcolor="#ffffff",fontcolor="#252c33",penwidth=0.9,margin="0.12,0.08"];
+edge [fontname="Malgun Gothic",fontsize=12,color="#596570",fontcolor="#374a59",penwidth=1.0,arrowsize=0.65];
+"A"[label="소스\nSource",shape="box",width=0.972,height=0.750,fixedsize=true];
+"B"[label="컴파일·어셈블\nCompile and assemble",shape="box",width=2.306,height=0.750,fixedsize=true];
+"C"[label="목적 파일\nObject files",shape="box",width=1.319,height=0.750,fixedsize=true];
+"D"[label="링크·배치\nLink and place",shape="box",width=1.625,height=0.750,fixedsize=true];
+"E"[label="ELF",shape="box",width=0.653,height=0.486,fixedsize=true];
+"F"[label="로더 또는 플래시 기록\nLoader or flash programming",shape="box",width=2.889,height=0.750,fixedsize=true];
+"G"[label="시작 코드\nStartup",shape="box",width=1.208,height=0.750,fixedsize=true];
+"H"[label="main 또는 앱 진입점\nApplication entry",shape="box",width=2.139,height=0.750,fixedsize=true];
+"A"->"B"[label=""];
+"B"->"C"[label=""];
+"C"->"D"[label=""];
+"D"->"E"[label=""];
+"E"->"F"[label=""];
+"F"->"G"[label=""];
+"G"->"H"[label=""];
+}

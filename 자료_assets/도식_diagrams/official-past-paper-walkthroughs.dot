@@ -1,0 +1,14 @@
+digraph Diagram {
+graph [rankdir=LR,bgcolor="white",pad="0.2",nodesep="0.45",ranksep="0.48",splines=polyline,outputorder=edgesfirst];
+node [fontname="Malgun Gothic",fontsize=14,shape=box,style=filled,color="#596570",fillcolor="#ffffff",fontcolor="#252c33",penwidth=0.9,margin="0.12,0.08"];
+edge [fontname="Malgun Gothic",fontsize=12,color="#596570",fontcolor="#374a59",penwidth=1.0,arrowsize=0.65];
+"S"[label="문제의 사고 조건\nGiven incident conditions",shape="box",width=2.556,height=0.750,fixedsize=true];
+"C"[label="국가 보상 대상?\nCompensation eligible?",shape="diamond",width=3.733,height=1.200,fixedsize=true];
+"P"[label="피해자에게 지급\nPay injured party",shape="box",width=1.847,height=0.750,fixedsize=true];
+"R"[label="사후 청구 조건?\nRecourse condition?",shape="diamond",width=3.356,height=1.200,fixedsize=true];
+"D"[label="의료인에게 청구 가능\nRecourse permitted",shape="box",width=2.250,height=0.750,fixedsize=true];
+"S"->"C"[label=""];
+"C"->"P"[label="해당\nYes"];
+"P"->"R"[label=""];
+"R"->"D"[label="해당\nYes"];
+}

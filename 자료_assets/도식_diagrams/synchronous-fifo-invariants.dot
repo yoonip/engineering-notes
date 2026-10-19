@@ -1,0 +1,17 @@
+digraph Diagram {
+graph [rankdir=TB,bgcolor="white",pad="0.2",nodesep="0.45",ranksep="0.48",splines=polyline,outputorder=edgesfirst];
+node [fontname="Malgun Gothic",fontsize=14,shape=box,style=filled,color="#596570",fillcolor="#ffffff",fontcolor="#252c33",penwidth=0.9,margin="0.12,0.08"];
+edge [fontname="Malgun Gothic",fontsize=12,color="#596570",fontcolor="#374a59",penwidth=1.0,arrowsize=0.65];
+"P"[label="생산자\nProducer",shape="box",width=1.153,height=0.750,fixedsize=true];
+"G"[label="수락 판단\nAcceptance",shape="box",width=1.389,height=0.750,fixedsize=true];
+"M"[label="순환 저장 배열\nRing memory",shape="box",width=1.653,height=0.750,fixedsize=true];
+"R"[label="읽기 레지스터\nRead register",shape="box",width=1.569,height=0.750,fixedsize=true];
+"C"[label="소비자\nConsumer",shape="box",width=1.250,height=0.750,fixedsize=true];
+"N"[label="점유량 n\nOccupancy",shape="box",width=1.347,height=0.750,fixedsize=true];
+"P"->"G"[label="write + data"];
+"G"->"M"[label=""];
+"M"->"R"[label=""];
+"R"->"C"[label=""];
+"N"->"G"[label=""];
+"G"->"N"[label=""];
+}

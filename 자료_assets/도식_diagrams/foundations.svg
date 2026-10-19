@@ -1,0 +1,94 @@
+<svg width="479pt" height="496pt"
+ viewBox="0.00 0.00 479.00 496.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 481.42)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-481.42 464.88,-481.42 464.88,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#596570" d="M343.88,-412.92C336.47,-403.97 328.09,-393.84 320.32,-384.45"/>
+<polygon fill="#596570" stroke="#596570" points="322.18,-383.13 316.28,-379.58 318.68,-386.03 322.18,-383.13"/>
+</g>
+
+<g id="edge7" class="edge">
+<title>A&#45;&gt;F</title>
+<path fill="none" stroke="#596570" d="M373.22,-412.8C378.1,-396.27 383.48,-378.02 383.48,-378.02 383.48,-378.02 404.48,-181.02 404.48,-181.02 404.48,-181.02 404.48,-108.01 404.48,-108.01 404.48,-108.01 381.64,-93.5 356.69,-77.65"/>
+<polygon fill="#596570" stroke="#596570" points="357.94,-75.75 351.24,-74.19 355.5,-79.59 357.94,-75.75"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>B&#45;&gt;C</title>
+<path fill="none" stroke="#596570" d="M247.3,-323.65C230.85,-314.26 211.94,-303.46 193.97,-293.2"/>
+<polygon fill="#596570" stroke="#596570" points="195.49,-291.44 188.71,-290.2 193.23,-295.4 195.49,-291.44"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>B&#45;&gt;E</title>
+<path fill="none" stroke="#596570" d="M293.48,-323.71C293.48,-286.97 293.48,-220.27 293.48,-179.72"/>
+<polygon fill="#596570" stroke="#596570" points="295.76,-179.74 293.48,-173.24 291.21,-179.74 295.76,-179.74"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M110.6,-215.63C107.26,-207 103.66,-197.68 100.21,-188.75"/>
+<polygon fill="#596570" stroke="#596570" points="102.36,-188.02 97.9,-182.78 98.12,-189.66 102.36,-188.02"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>D&#45;&gt;F</title>
+<path fill="none" stroke="#596570" d="M154.58,-107.62C174.17,-97.74 195.51,-86.96 215.47,-76.89"/>
+<polygon fill="#596570" stroke="#596570" points="216.33,-79 221.11,-74.04 214.28,-74.94 216.33,-79"/>
+</g>
+
+<g id="edge6" class="edge">
+<title>E&#45;&gt;F</title>
+<path fill="none" stroke="#596570" d="M293.48,-117.31C293.48,-106.44 293.48,-93.54 293.48,-81.31"/>
+<polygon fill="#596570" stroke="#596570" points="295.76,-81.42 293.48,-74.92 291.21,-81.42 295.76,-81.42"/>
+</g>
+
+<g id="node1" class="node">
+<title>A</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="450.48,-467.02 280.49,-467.02 280.49,-413.02 450.48,-413.02 450.48,-467.02"/>
+<text xml:space="preserve" text-anchor="middle" x="365.48" y="-444.22" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">단위·수학</text>
+<text xml:space="preserve" text-anchor="middle" x="365.48" y="-427.42" font-family="Malgun Gothic" font-size="12" fill="#596570">Units and mathematics</text>
+</g>
+
+<g id="node2" class="node">
+<title>B</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="367.5,-378.02 219.47,-378.02 219.47,-324.02 367.5,-324.02 367.5,-378.02"/>
+<text xml:space="preserve" text-anchor="middle" x="293.48" y="-355.22" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">물리·회로</text>
+<text xml:space="preserve" text-anchor="middle" x="293.48" y="-338.42" font-family="Malgun Gothic" font-size="12" fill="#596570">Physics and circuits</text>
+</g>
+
+<g id="node3" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="203.97,-289.02 45,-289.02 45,-216.02 203.97,-216.02 203.97,-289.02"/>
+<text xml:space="preserve" text-anchor="middle" x="124.48" y="-265.12" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">소자·디지털 하드웨어</text>
+<text xml:space="preserve" text-anchor="middle" x="124.48" y="-248.32" font-family="Malgun Gothic" font-size="12" fill="#596570">Devices and digital</text>
+<text xml:space="preserve" text-anchor="middle" x="124.48" y="-231.52" font-family="Malgun Gothic" font-size="12" fill="#596570">hardware</text>
+</g>
+
+<g id="node4" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="166.97,-181.02 0,-181.02 0,-108.01 166.97,-108.01 166.97,-181.02"/>
+<text xml:space="preserve" text-anchor="middle" x="83.48" y="-157.11" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">메모리·펌웨어·시스템</text>
+<text xml:space="preserve" text-anchor="middle" x="83.48" y="-140.31" font-family="Malgun Gothic" font-size="12" fill="#596570">Memory, firmware and</text>
+<text xml:space="preserve" text-anchor="middle" x="83.48" y="-123.51" font-family="Malgun Gothic" font-size="12" fill="#596570">systems</text>
+</g>
+
+<g id="node5" class="node">
+<title>E</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="388.49,-171.51 198.48,-171.51 198.48,-117.51 388.49,-117.51 388.49,-171.51"/>
+<text xml:space="preserve" text-anchor="middle" x="293.48" y="-148.71" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">센서·ADC·신호</text>
+<text xml:space="preserve" text-anchor="middle" x="293.48" y="-131.91" font-family="Malgun Gothic" font-size="12" fill="#596570">Sensors, ADCs and signals</text>
+</g>
+
+<g id="node6" class="node">
+<title>F</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="372,-73.01 214.97,-73.01 214.97,0 372,0 372,-73.01"/>
+<text xml:space="preserve" text-anchor="middle" x="293.48" y="-49.1" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">제어·학습·병렬 계산</text>
+<text xml:space="preserve" text-anchor="middle" x="293.48" y="-32.3" font-family="Malgun Gothic" font-size="12" fill="#596570">Control, learning and</text>
+<text xml:space="preserve" text-anchor="middle" x="293.48" y="-15.5" font-family="Malgun Gothic" font-size="12" fill="#596570">parallel computing</text>
+</g>
+</g>
+</svg>

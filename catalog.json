@@ -5,7 +5,7 @@
     {
       "number": 1,
       "slug": "01-linux-bash",
-      "title": "Linux & Bash",
+      "title": "Linux·Bash",
       "english_title": "Linux & Bash",
       "sections": [
         "터미널, 셸, Bash",
@@ -13,7 +13,7 @@
         "프로세스와 개발 환경"
       ],
       "keywords": "Ubuntu, Debian, Fedora, Arch Linux, WSL2, Bash, Zsh, systemd, SSH, tmux, rsync",
-      "path": "topics/01-linux-bash/README.md",
+      "path": "분야_topics/01-linux-bash/README.md",
       "references": [
         "https://docs.kernel.org/",
         "https://www.gnu.org/software/bash/manual/bash.html"
@@ -28,15 +28,15 @@
     },
     {
       "number": 2,
-      "slug": "02-git-development-tools",
-      "title": "Git & Development Tools",
+      "slug": "02-개발도구_git-development-tools",
+      "title": "Git과 개발 도구",
       "english_title": "Git & Development Tools",
       "sections": [
         "작업에서 공유까지",
         "편집, 빌드, 실행 환경"
       ],
       "keywords": "Git, GitHub, GitLab, GitHub CLI/Desktop, VS Code, Vim/Neovim, GCC, Clang/LLVM, Make, CMake, Meson, Ninja, Docker, Podman",
-      "path": "topics/02-git-development-tools/README.md",
+      "path": "분야_topics/02-개발도구_git-development-tools/README.md",
       "references": [
         "https://git-scm.com/book/en/v2",
         "https://gcc.gnu.org/onlinedocs/gcc/Standards.html"
@@ -51,14 +51,14 @@
     {
       "number": 3,
       "slug": "03-python-jupyter",
-      "title": "Python & Jupyter",
+      "title": "Python·Jupyter",
       "english_title": "Python & Jupyter Environments",
       "sections": [
         "환경을 나누는 이유",
         "계산과 시각화"
       ],
       "keywords": "Python, pip, uv, venv, Conda/Mamba, Jupyter Notebook/Lab, IPython, NumPy, SciPy, pandas, Matplotlib, Seaborn, Plotly",
-      "path": "topics/03-python-jupyter/README.md",
+      "path": "분야_topics/03-python-jupyter/README.md",
       "references": [
         "https://docs.python.org/3/tutorial/",
         "https://jupyter.org/install",
@@ -74,7 +74,7 @@
     {
       "number": 4,
       "slug": "04-c-cpp-python",
-      "title": "C, C++ & Python",
+      "title": "C·C++·Python",
       "english_title": "C, C++ & Python",
       "sections": [
         "C: 데이터와 메모리",
@@ -82,7 +82,7 @@
         "Python과 다른 언어의 연결"
       ],
       "keywords": "C, C++, Python, Rust, Go, Java, C#, JavaScript/TypeScript, Julia, R, Tcl, Lua, Assembly",
-      "path": "topics/04-c-cpp-python/README.md",
+      "path": "분야_topics/04-c-cpp-python/README.md",
       "references": [
         "https://gcc.gnu.org/onlinedocs/gcc/Standards.html",
         "https://docs.python.org/3/tutorial/"
@@ -97,15 +97,15 @@
     },
     {
       "number": 5,
-      "slug": "05-matlab-scientific",
-      "title": "MATLAB & Scientific Computing",
+      "slug": "05-과학계산_matlab-scientific",
+      "title": "MATLAB과 과학 계산",
       "english_title": "MATLAB & Scientific Computing",
       "sections": [
         "행렬 연산과 원소별 연산",
         "수치 해석과 모델링"
       ],
       "keywords": "MATLAB, Simulink, GNU Octave, SciPy, SymPy, Mathematica, Maple, Julia",
-      "path": "topics/05-matlab-scientific/README.md",
+      "path": "분야_topics/05-과학계산_matlab-scientific/README.md",
       "references": [
         "https://www.mathworks.com/help/matlab/learn_matlab/matrices-and-arrays.html",
         "https://docs.scipy.org/doc/scipy/"
@@ -119,15 +119,15 @@
     },
     {
       "number": 6,
-      "slug": "06-math-to-code",
-      "title": "수식을 코드로",
+      "slug": "06-수식과코드_math-to-code",
+      "title": "수식과 코드",
       "english_title": "Math to Code",
       "sections": [
         "미분방정식에서 반복문으로",
         "수치적으로 같은 식인가"
       ],
       "keywords": "Calculus, Linear Algebra, Probability, Statistics, ODE/PDE, Numerical Analysis, Optimization, Information Theory, Graph Theory",
-      "path": "topics/06-math-to-code/README.md",
+      "path": "분야_topics/06-수식과코드_math-to-code/README.md",
       "references": [
         "https://numpy.org/doc/",
         "https://docs.scipy.org/doc/scipy/"
@@ -141,7 +141,7 @@
     },
     {
       "number": 7,
-      "slug": "07-cs-foundations",
+      "slug": "07-컴퓨터공학기초_cs-foundations",
       "title": "컴퓨터공학 기초",
       "english_title": "Computer Science Foundations",
       "sections": [
@@ -150,7 +150,7 @@
         "저장, 통신, 빌드"
       ],
       "keywords": "Linux, xv6, OSTEP topics, Networking, TCP/IP, Filesystems, Databases, Compilers, Concurrency",
-      "path": "topics/07-cs-foundations/README.md",
+      "path": "분야_topics/07-컴퓨터공학기초_cs-foundations/README.md",
       "references": [
         "https://docs.kernel.org/",
         "https://llvm.org/docs/"
@@ -165,8 +165,8 @@
     },
     {
       "number": 8,
-      "slug": "08-problem-solving",
-      "title": "알고리즘과 코딩테스트",
+      "slug": "08-알고리즘_problem-solving",
+      "title": "알고리즘과 문제 해결",
       "english_title": "Problem Solving",
       "sections": [
         "알고리즘을 선택하는 기준",
@@ -175,7 +175,7 @@
         "Programmers 풀이"
       ],
       "keywords": "프로그래머스 / Programmers, 백준 / Baekjoon, LeetCode, Codeforces, AtCoder, HackerRank, Codility, SWEA",
-      "path": "topics/08-problem-solving/README.md",
+      "path": "분야_topics/08-알고리즘_problem-solving/README.md",
       "references": [
         "https://school.programmers.co.kr/learn/challenges"
       ],
@@ -189,7 +189,7 @@
     },
     {
       "number": 9,
-      "slug": "09-circuits-electronics",
+      "slug": "09-회로전자공학_circuits-electronics",
       "title": "회로와 전자공학",
       "english_title": "Circuits & Electronics",
       "sections": [
@@ -197,7 +197,7 @@
         "능동 소자와 증폭"
       ],
       "keywords": "RLC, Op-Amp, BJT, MOSFET, CMOS, Filters, Oscillators, Regulators, SPICE, Breadboard Measurements",
-      "path": "topics/09-circuits-electronics/README.md",
+      "path": "분야_topics/09-회로전자공학_circuits-electronics/README.md",
       "references": [
         "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
       ],
@@ -210,7 +210,7 @@
     },
     {
       "number": 10,
-      "slug": "10-semiconductors",
+      "slug": "10-반도체소자_semiconductors",
       "title": "반도체 소자",
       "english_title": "Semiconductor Devices",
       "sections": [
@@ -219,7 +219,7 @@
         "소자 모델과 공정 변동"
       ],
       "keywords": "PN, MOS, BJT, CMOS, FinFET, GAA, SOI, SiC/GaN, BSIM, SRAM/DRAM/NAND, TCAD",
-      "path": "topics/10-semiconductors/README.md",
+      "path": "분야_topics/10-반도체소자_semiconductors/README.md",
       "references": [
         "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
       ],
@@ -233,8 +233,8 @@
     },
     {
       "number": 11,
-      "slug": "11-analog-ic-cadence",
-      "title": "Analog IC · Cadence · Spectre",
+      "slug": "11-아날로그IC설계_analog-ic-cadence",
+      "title": "아날로그 IC 설계·Cadence·Spectre",
       "english_title": "Analog IC Design: Cadence & Spectre",
       "sections": [
         "도구의 역할",
@@ -242,7 +242,7 @@
         "회로도에서 레이아웃으로"
       ],
       "keywords": "Cadence Virtuoso, Spectre, ADE, SKILL, OCEAN, Synopsys Custom Compiler, HSPICE, PrimeSim, Siemens Eldo, LTspice, ngspice, Xschem",
-      "path": "topics/11-analog-ic-cadence/README.md",
+      "path": "분야_topics/11-아날로그IC설계_analog-ic-cadence/README.md",
       "references": [
         "https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation.html"
       ],
@@ -256,15 +256,15 @@
     },
     {
       "number": 12,
-      "slug": "12-pcb-hardware",
-      "title": "PCB & Hardware Design",
+      "slug": "12-PCB하드웨어설계_pcb-hardware",
+      "title": "PCB와 하드웨어 설계",
       "english_title": "PCB & Hardware Design",
       "sections": [
         "부품과 제조 데이터",
         "신호와 전원의 경로"
       ],
       "keywords": "KiCad, Altium Designer, OrCAD, Allegro, PADS, Xpedition, EasyEDA, IBIS, SI/PI, EMC/EMI, DFM",
-      "path": "topics/12-pcb-hardware/README.md",
+      "path": "분야_topics/12-PCB하드웨어설계_pcb-hardware/README.md",
       "references": [
         "https://www.kicad.org/about/kicad/"
       ],
@@ -277,15 +277,15 @@
     },
     {
       "number": 13,
-      "slug": "13-verilog-systemverilog",
-      "title": "Verilog · SystemVerilog · RTL",
+      "slug": "13-RTL설계_verilog-systemverilog",
+      "title": "Verilog·SystemVerilog·RTL",
       "english_title": "Verilog, SystemVerilog & RTL",
       "sections": [
         "조합논리와 순차논리",
         "FSM·파이프라인·메모리"
       ],
       "keywords": "Verilog, SystemVerilog, VHDL, Verilog-A/AMS, Chisel, SpinalHDL, Amaranth, HLS",
-      "path": "topics/13-verilog-systemverilog/README.md",
+      "path": "분야_topics/13-RTL설계_verilog-systemverilog/README.md",
       "references": [
         "https://verilator.org/guide/latest/"
       ],
@@ -298,15 +298,15 @@
     },
     {
       "number": 14,
-      "slug": "14-hardware-verification",
-      "title": "Hardware Verification",
+      "slug": "14-하드웨어검증_hardware-verification",
+      "title": "하드웨어 검증",
       "english_title": "Hardware Verification",
       "sections": [
         "시뮬레이션과 coverage",
         "Assertion과 formal"
       ],
       "keywords": "UVM, SVA, cocotb, Verilator, Icarus Verilog, GTKWave, Questa, Xcelium, VCS, SymbiYosys, Formal/Equivalence",
-      "path": "topics/14-hardware-verification/README.md",
+      "path": "분야_topics/14-하드웨어검증_hardware-verification/README.md",
       "references": [
         "https://docs.cocotb.org/en/stable/",
         "https://verilator.org/guide/latest/"
@@ -320,15 +320,15 @@
     },
     {
       "number": 15,
-      "slug": "15-fpga-asic",
-      "title": "FPGA & ASIC",
+      "slug": "15-FPGA-ASIC설계_fpga-asic",
+      "title": "FPGA·ASIC 설계",
       "english_title": "FPGA & ASIC Design",
       "sections": [
         "구현 흐름",
         "타이밍과 PPA"
       ],
       "keywords": "AMD/Xilinx Vivado/Vitis, Intel/Altera Quartus, Lattice Radiant, Yosys, nextpnr, OpenROAD/OpenLane, Genus/Innovus, Design Compiler/Fusion Compiler, PrimeTime",
-      "path": "topics/15-fpga-asic/README.md",
+      "path": "분야_topics/15-FPGA-ASIC설계_fpga-asic/README.md",
       "references": [
         "https://openroad.readthedocs.io/en/latest/"
       ],
@@ -341,8 +341,8 @@
     },
     {
       "number": 16,
-      "slug": "16-arm-riscv",
-      "title": "Arm · RISC-V · Computer Architecture",
+      "slug": "16-프로세서구조_arm-riscv",
+      "title": "Arm·RISC-V와 프로세서 구조",
       "english_title": "Arm, RISC-V & Computer Architecture",
       "sections": [
         "Arm과 RISC-V",
@@ -350,7 +350,7 @@
         "Arm·RISC-V 실행 구조"
       ],
       "keywords": "Arm Cortex-M/A/R, RISC-V RV32/RV64, x86-64, MIPS, AVR, PicoRV32, Ibex, CVA6, Rocket Chip, BOOM, gem5, QEMU",
-      "path": "topics/16-arm-riscv/README.md",
+      "path": "분야_topics/16-프로세서구조_arm-riscv/README.md",
       "references": [
         "https://docs.riscv.org/",
         "https://developer.arm.com/documentation"
@@ -365,8 +365,8 @@
     },
     {
       "number": 17,
-      "slug": "17-firmware-rtos",
-      "title": "Firmware & RTOS",
+      "slug": "17-펌웨어-RTOS_firmware-rtos",
+      "title": "펌웨어·RTOS",
       "english_title": "Firmware & RTOS",
       "sections": [
         "리셋에서 main까지",
@@ -376,7 +376,7 @@
         "인터럽트·DMA·FreeRTOS"
       ],
       "keywords": "STM32, ESP32/ESP-IDF, Nordic nRF, NXP, TI, Microchip AVR/PIC/SAM, Renesas, RP2040/RP2350, FreeRTOS, Zephyr, ThreadX, RT-Thread",
-      "path": "topics/17-firmware-rtos/README.md",
+      "path": "분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md",
       "references": [
         "https://docs.zephyrproject.org/latest/introduction/index.html"
       ],
@@ -392,15 +392,15 @@
     },
     {
       "number": 18,
-      "slug": "18-embedded-linux",
-      "title": "Embedded Linux",
+      "slug": "18-임베디드Linux_embedded-linux",
+      "title": "임베디드 Linux",
       "english_title": "Embedded Linux",
       "sections": [
         "부팅의 구성요소",
         "빌드와 이식"
       ],
       "keywords": "Linux Kernel, U-Boot, Device Tree, Buildroot, Yocto/OpenEmbedded, BusyBox, QEMU, BSP, Drivers",
-      "path": "topics/18-embedded-linux/README.md",
+      "path": "분야_topics/18-임베디드Linux_embedded-linux/README.md",
       "references": [
         "https://www.buildroot.org/docs.html",
         "https://docs.kernel.org/"
@@ -414,8 +414,8 @@
     },
     {
       "number": 19,
-      "slug": "19-openocd-debugging",
-      "title": "OpenOCD · GDB · Debugging",
+      "slug": "19-시스템디버깅_openocd-debugging",
+      "title": "OpenOCD·GDB와 시스템 디버깅",
       "english_title": "OpenOCD, GDB & Instrumentation",
       "sections": [
         "연결 구조",
@@ -424,7 +424,7 @@
         "메모리 검사와 오류 주입"
       ],
       "keywords": "OpenOCD, GDB, LLDB, J-Link, ST-Link, pyOCD, probe-rs, JTAG, SWD, SWO, ETM, Saleae, PulseView, Sigrok",
-      "path": "topics/19-openocd-debugging/README.md",
+      "path": "분야_topics/19-시스템디버깅_openocd-debugging/README.md",
       "references": [
         "https://openocd.org/doc/html/About.html",
         "https://sourceware.org/gdb/documentation/"
@@ -440,15 +440,15 @@
     },
     {
       "number": 20,
-      "slug": "20-interfaces-communications",
-      "title": "Interfaces & Communications",
+      "slug": "20-인터페이스통신_interfaces-communications",
+      "title": "인터페이스와 통신",
       "english_title": "Interfaces & Communications",
       "sections": [
         "보드와 장치 사이",
         "네트워크와 온칩 연결"
       ],
       "keywords": "UART, SPI, I2C, I3C, CAN/CAN-FD, USB, Ethernet, PCIe, MIPI, DDR, AXI/AHB/APB, MQTT, Modbus, BLE, Wi-Fi, Zigbee, LoRa",
-      "path": "topics/20-interfaces-communications/README.md",
+      "path": "분야_topics/20-인터페이스통신_interfaces-communications/README.md",
       "references": [
         "https://developer.arm.com/documentation",
         "https://docs.zephyrproject.org/latest/introduction/index.html"
@@ -462,7 +462,7 @@
     },
     {
       "number": 21,
-      "slug": "21-signals-control",
+      "slug": "21-신호처리제어_signals-control",
       "title": "신호처리와 제어",
       "english_title": "Signals, DSP & Control",
       "sections": [
@@ -470,7 +470,7 @@
         "필터와 피드백"
       ],
       "keywords": "FFT, FIR/IIR, PID, State Space, LQR/LQG, MPC, Kalman/EKF/UKF, System Identification, SciPy Signal, MATLAB Control",
-      "path": "topics/21-signals-control/README.md",
+      "path": "분야_topics/21-신호처리제어_signals-control/README.md",
       "references": [
         "https://docs.scipy.org/doc/scipy/"
       ],
@@ -483,8 +483,8 @@
     },
     {
       "number": 22,
-      "slug": "22-robotics-boards",
-      "title": "Robotics · Arduino · Raspberry Pi",
+      "slug": "22-로봇제어_robotics-boards",
+      "title": "로봇 제어·Arduino·Raspberry Pi",
       "english_title": "Robotics, Arduino & Raspberry Pi",
       "sections": [
         "보드의 역할",
@@ -494,7 +494,7 @@
         "STM32 GPIO 레지스터 제어"
       ],
       "keywords": "Arduino, Raspberry Pi, STM32 Nucleo, ESP32, BeagleBone, Jetson, ROS 2, MoveIt, Nav2, Gazebo, MuJoCo, Isaac Sim, SLAM",
-      "path": "topics/22-robotics-boards/README.md",
+      "path": "분야_topics/22-로봇제어_robotics-boards/README.md",
       "references": [
         "https://docs.ros.org/",
         "https://www.raspberrypi.com/documentation/"
@@ -511,16 +511,16 @@
     },
     {
       "number": 23,
-      "slug": "23-ai-machine-learning",
-      "title": "AI · Machine Learning · Deep Learning",
-      "english_title": "AI, PyTorch & TensorFlow",
+      "slug": "23-AI머신러닝_ai-machine-learning",
+      "title": "AI·머신러닝·딥러닝",
+      "english_title": "AI, Machine Learning & Deep Learning",
       "sections": [
         "학습과 평가",
         "모델 구조",
         "자동미분 예제"
       ],
       "keywords": "PyTorch, TensorFlow/Keras, JAX, scikit-learn, XGBoost, LightGBM, CatBoost, Hugging Face, Lightning, fastai",
-      "path": "topics/23-ai-machine-learning/README.md",
+      "path": "분야_topics/23-AI머신러닝_ai-machine-learning/README.md",
       "references": [
         "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
         "https://www.tensorflow.org/guide"
@@ -535,15 +535,15 @@
     },
     {
       "number": 24,
-      "slug": "24-gpu-architecture",
-      "title": "GPU Architecture",
-      "english_title": "GPU & Graphics Hardware",
+      "slug": "24-GPU구조_gpu-architecture",
+      "title": "GPU 구조",
+      "english_title": "GPU Architecture",
       "sections": [
         "실행과 메모리",
         "처리량과 병목 읽기"
       ],
       "keywords": "NVIDIA, AMD, Intel, Apple GPU, SIMT/SIMD, Cache/VRAM, HBM/GDDR, PCIe/NVLink, Roofline, Vulkan, OpenGL, DirectX",
-      "path": "topics/24-gpu-architecture/README.md",
+      "path": "분야_topics/24-GPU구조_gpu-architecture/README.md",
       "references": [
         "https://docs.nvidia.com/cuda/cuda-programming-guide/index.html"
       ],
@@ -556,15 +556,15 @@
     },
     {
       "number": 25,
-      "slug": "25-cuda-performance",
-      "title": "CUDA & GPU Optimization",
+      "slug": "25-CUDA성능최적화_cuda-performance",
+      "title": "CUDA와 GPU 성능 최적화",
       "english_title": "CUDA & GPU Optimization",
       "sections": [
         "실행 단위와 데이터 이동",
         "라이브러리와 직접 작성한 kernel"
       ],
       "keywords": "CUDA, cuBLAS, cuDNN, CUTLASS, Triton, Nsight, ROCm/HIP, SYCL/oneAPI, OpenCL, Metal, OpenMP/OpenACC, TensorRT, OpenVINO",
-      "path": "topics/25-cuda-performance/README.md",
+      "path": "분야_topics/25-CUDA성능최적화_cuda-performance/README.md",
       "references": [
         "https://docs.nvidia.com/cuda/cuda-programming-guide/index.html"
       ],
@@ -577,15 +577,15 @@
     },
     {
       "number": 26,
-      "slug": "26-open-model-lab",
-      "title": "AI Models & APIs",
+      "slug": "26-AI모델-API_open-model-lab",
+      "title": "AI 모델과 API",
       "english_title": "AI Providers, Public Models & APIs",
       "sections": [
         "모델을 구성하는 파일",
         "수정과 비교"
       ],
       "keywords": "OpenAI, Google/DeepMind, Microsoft, Meta, Anthropic, Samsung, DeepSeek, Qwen, Mistral, IBM, NVIDIA, LG, NAVER, Kakao, Upstage, SKT",
-      "path": "topics/26-open-model-lab/README.md",
+      "path": "분야_topics/26-AI모델-API_open-model-lab/README.md",
       "references": [
         "https://huggingface.co/docs",
         "https://developers.openai.com/api/docs/models"
@@ -599,15 +599,15 @@
     },
     {
       "number": 27,
-      "slug": "27-papers-code-patents",
-      "title": "논문 · 코드 · 특허",
+      "slug": "27-논문코드특허_papers-code-patents",
+      "title": "논문·코드·특허",
       "english_title": "Paper, Code & Patent Reviews",
       "sections": [
         "논문과 코드의 연결",
         "특허와 문헌 관리"
       ],
       "keywords": "arXiv, IEEE, ACM, NeurIPS, ICML, ICLR, CVPR, ISSCC, DAC, DATE, KIPRIS, Google Patents, Zotero, BibTeX",
-      "path": "topics/27-papers-code-patents/README.md",
+      "path": "분야_topics/27-논문코드특허_papers-code-patents/README.md",
       "references": [
         "https://www.wipo.int/en/web/patents",
         "https://huggingface.co/docs"
@@ -621,7 +621,7 @@
     },
     {
       "number": 28,
-      "slug": "28-automation-portfolio",
+      "slug": "28-자동화기술기록_automation-portfolio",
       "title": "자동화와 기술 기록",
       "english_title": "Automation & Portfolio",
       "sections": [
@@ -629,7 +629,7 @@
         "문서 생성 도구"
       ],
       "keywords": "Python, Bash, PowerShell, GitHub Actions, GitLab CI, Docker, Quarto, Jekyll, Hugo, MkDocs, Sphinx, Doxygen, Jupyter Book",
-      "path": "topics/28-automation-portfolio/README.md",
+      "path": "분야_topics/28-자동화기술기록_automation-portfolio/README.md",
       "references": [
         "https://quarto.org/docs/publishing/github-pages.html",
         "https://git-scm.com/book/en/v2"
@@ -643,15 +643,15 @@
     },
     {
       "number": 29,
-      "slug": "29-electromagnetics-rf",
-      "title": "전자기학 · RF · 안테나",
+      "slug": "29-전자기학-RF_electromagnetics-rf",
+      "title": "전자기학·RF·안테나",
       "english_title": "Electromagnetics, RF & Antennas",
       "sections": [
         "반사와 정합",
         "RF 회로와 안테나"
       ],
       "keywords": "HFSS, CST, ADS, AWR, Sonnet, openEMS, scikit-rf, VNA, Spectrum Analyzer",
-      "path": "topics/29-electromagnetics-rf/README.md",
+      "path": "분야_topics/29-전자기학-RF_electromagnetics-rf/README.md",
       "references": [
         "https://scikit-rf.readthedocs.io/en/latest/"
       ],
@@ -665,7 +665,7 @@
     },
     {
       "number": 30,
-      "slug": "30-communications-wireless",
+      "slug": "30-통신이론무선시스템_communications-wireless",
       "title": "통신이론과 무선 시스템",
       "english_title": "Communication Systems & Information Theory",
       "sections": [
@@ -673,7 +673,7 @@
         "다중 반송파와 다중 안테나"
       ],
       "keywords": "GNU Radio, SDR, USRP, RTL-SDR, OFDM, QAM, MIMO, LDPC, Polar Codes",
-      "path": "topics/30-communications-wireless/README.md",
+      "path": "분야_topics/30-통신이론무선시스템_communications-wireless/README.md",
       "references": [
         "https://www.gnuradio.org/doc/"
       ],
@@ -687,7 +687,7 @@
     },
     {
       "number": 31,
-      "slug": "31-power-energy",
+      "slug": "31-전력전자에너지_power-energy",
       "title": "전력전자와 에너지",
       "english_title": "Power Electronics & Energy",
       "sections": [
@@ -695,7 +695,7 @@
         "소자와 구동"
       ],
       "keywords": "PLECS, PSIM, LTspice, Simulink, Buck/Boost, LLC, BMS, PMIC",
-      "path": "topics/31-power-energy/README.md",
+      "path": "분야_topics/31-전력전자에너지_power-energy/README.md",
       "references": [
         "https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html"
       ],
@@ -709,15 +709,15 @@
     },
     {
       "number": 32,
-      "slug": "32-mixed-signal-data-converters",
-      "title": "Mixed-Signal · ADC · DAC · Clock",
+      "slug": "32-혼성신호-ADC-DAC_mixed-signal-data-converters",
+      "title": "혼성신호·ADC·DAC·클록",
       "english_title": "Mixed-Signal, Data Converters & Clocks",
       "sections": [
         "샘플링과 양자화",
         "정적·동적 지표와 클록"
       ],
       "keywords": "SAR ADC, Delta-Sigma, DAC, PLL, DLL, CDR, Spectre, Verilog-AMS",
-      "path": "topics/32-mixed-signal-data-converters/README.md",
+      "path": "분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/README.md",
       "references": [
         "https://www.analog.com/en/resources.html"
       ],
@@ -731,15 +731,15 @@
     },
     {
       "number": 33,
-      "slug": "33-memory-storage",
-      "title": "Memory & Storage",
+      "slug": "33-메모리저장장치_memory-storage",
+      "title": "메모리와 저장장치",
       "english_title": "Memory & Storage Systems",
       "sections": [
         "소자와 인터페이스",
         "SSD와 신뢰성"
       ],
       "keywords": "SRAM, DRAM, NAND, DDR, LPDDR, GDDR, HBM, NVMe, fio, CXL",
-      "path": "topics/33-memory-storage/README.md",
+      "path": "분야_topics/33-메모리저장장치_memory-storage/README.md",
       "references": [
         "https://fio.readthedocs.io/en/latest/"
       ],
@@ -753,15 +753,15 @@
     },
     {
       "number": 34,
-      "slug": "34-soc-interconnects",
-      "title": "SoC & Interconnects",
+      "slug": "34-SoC연결구조_soc-interconnects",
+      "title": "SoC와 연결 구조",
       "english_title": "SoC & Interconnects",
       "sections": [
         "버스와 네트워크",
         "주소와 데이터 일관성"
       ],
       "keywords": "AXI, AMBA, TileLink, Wishbone, NoC, PCIe, CXL, Chiplet, CHI",
-      "path": "topics/34-soc-interconnects/README.md",
+      "path": "분야_topics/34-SoC연결구조_soc-interconnects/README.md",
       "references": [
         "https://developer.arm.com/documentation",
         "https://docs.riscv.org/"
@@ -776,15 +776,15 @@
     },
     {
       "number": 35,
-      "slug": "35-eda-open-hardware",
-      "title": "EDA & Open Hardware",
+      "slug": "35-EDA오픈하드웨어_eda-open-hardware",
+      "title": "EDA와 오픈 하드웨어",
       "english_title": "EDA & Open Hardware Ecosystems",
       "sections": [
         "흐름을 잇는 데이터",
         "PDK와 도구"
       ],
       "keywords": "Cadence, Synopsys, Siemens EDA, Yosys, OpenROAD, OpenLane, KLayout, Magic, Netgen, SKY130, GF180, IHP SG13G2",
-      "path": "topics/35-eda-open-hardware/README.md",
+      "path": "분야_topics/35-EDA오픈하드웨어_eda-open-hardware/README.md",
       "references": [
         "https://openroad.readthedocs.io/en/latest/"
       ],
@@ -798,15 +798,15 @@
     },
     {
       "number": 36,
-      "slug": "36-packaging-thermal",
-      "title": "Packaging · Chiplets · Thermal",
+      "slug": "36-패키징열설계_packaging-thermal",
+      "title": "패키징·Chiplet·열 설계",
       "english_title": "Packaging, Chiplets, Thermal & Reliability",
       "sections": [
         "연결 구조",
         "전원과 열"
       ],
       "keywords": "Chiplets, UCIe, 2.5D/3D IC, Interposer, COMSOL, Ansys, Thermal RC, EM/IR",
-      "path": "topics/36-packaging-thermal/README.md",
+      "path": "분야_topics/36-패키징열설계_packaging-thermal/README.md",
       "references": [
         "https://www.comsol.com/comsol-multiphysics"
       ],
@@ -820,7 +820,7 @@
     },
     {
       "number": 37,
-      "slug": "37-sensors-instrumentation",
+      "slug": "37-센서계측_sensors-instrumentation",
       "title": "센서와 계측",
       "english_title": "Sensors, Instrumentation & Experiments",
       "sections": [
@@ -828,7 +828,7 @@
         "장비와 자동 측정"
       ],
       "keywords": "SCPI, PyVISA, Sigrok, PulseView, LabVIEW, NI DAQ, Oscilloscope, VNA",
-      "path": "topics/37-sensors-instrumentation/README.md",
+      "path": "분야_topics/37-센서계측_sensors-instrumentation/README.md",
       "references": [
         "https://pyvisa.readthedocs.io/en/latest/"
       ],
@@ -842,15 +842,15 @@
     },
     {
       "number": 38,
-      "slug": "38-security-cryptography",
-      "title": "Security · Cryptography · Hardware Trust",
+      "slug": "38-보안암호하드웨어신뢰_security-cryptography",
+      "title": "보안·암호·하드웨어 신뢰",
       "english_title": "Security, Cryptography & Hardware Trust",
       "sections": [
         "암호의 역할",
         "부팅과 실행의 신뢰"
       ],
       "keywords": "TLS, AES, RSA, ECC, Secure Boot, TrustZone, TPM, Sanitizers, Fuzzing, CodeQL",
-      "path": "topics/38-security-cryptography/README.md",
+      "path": "분야_topics/38-보안암호하드웨어신뢰_security-cryptography/README.md",
       "references": [
         "https://docs.openssl.org/",
         "https://docs.kernel.org/"
@@ -865,15 +865,15 @@
     },
     {
       "number": 39,
-      "slug": "39-compilers-languages",
-      "title": "Compilers · Languages · Runtimes",
+      "slug": "39-컴파일러언어런타임_compilers-languages",
+      "title": "컴파일러·언어·런타임",
       "english_title": "Compilers, Languages & Runtimes",
       "sections": [
         "AST에서 machine code로",
         "도구와 실행 방식"
       ],
       "keywords": "LLVM, MLIR, GCC, Clang, Rust, Go, Java/JVM, CPython, Julia, Tcl, SKILL",
-      "path": "topics/39-compilers-languages/README.md",
+      "path": "분야_topics/39-컴파일러언어런타임_compilers-languages/README.md",
       "references": [
         "https://llvm.org/docs/",
         "https://gcc.gnu.org/onlinedocs/gcc/Standards.html"
@@ -888,15 +888,15 @@
     },
     {
       "number": 40,
-      "slug": "40-databases-data-engineering",
-      "title": "Databases & Data Engineering",
+      "slug": "40-데이터베이스데이터공학_databases-data-engineering",
+      "title": "데이터베이스와 데이터 공학",
       "english_title": "Databases & Data Engineering",
       "sections": [
         "SQL과 실행 계획",
         "파이프라인과 검색"
       ],
       "keywords": "SQLite, PostgreSQL, MySQL, DuckDB, Redis, Parquet, Arrow, Spark, Kafka, FAISS, pgvector",
-      "path": "topics/40-databases-data-engineering/README.md",
+      "path": "분야_topics/40-데이터베이스데이터공학_databases-data-engineering/README.md",
       "references": [
         "https://www.postgresql.org/docs/current/tutorial.html"
       ],
@@ -910,15 +910,15 @@
     },
     {
       "number": 41,
-      "slug": "41-cloud-distributed",
-      "title": "Cloud & Distributed Systems",
+      "slug": "41-클라우드분산시스템_cloud-distributed",
+      "title": "클라우드와 분산 시스템",
       "english_title": "Cloud, Distributed Systems & Operations",
       "sections": [
         "실패와 일관성",
         "배포와 운영"
       ],
       "keywords": "AWS, Azure, Google Cloud, Docker, Kubernetes, Terraform, Prometheus, Grafana, OpenTelemetry",
-      "path": "topics/41-cloud-distributed/README.md",
+      "path": "분야_topics/41-클라우드분산시스템_cloud-distributed/README.md",
       "references": [
         "https://kubernetes.io/docs/concepts/"
       ],
@@ -932,15 +932,15 @@
     },
     {
       "number": 42,
-      "slug": "42-hpc-parallel",
-      "title": "HPC & Parallel Computing",
+      "slug": "42-고성능병렬계산_hpc-parallel",
+      "title": "고성능·병렬 계산",
       "english_title": "HPC, Parallel & Distributed Computing",
       "sections": [
         "공유 메모리와 분산 메모리",
         "GPU와 분산 작업"
       ],
       "keywords": "OpenMP, MPI, OpenACC, SIMD, AVX/NEON, NCCL, Slurm, Ray, Dask, perf",
-      "path": "topics/42-hpc-parallel/README.md",
+      "path": "분야_topics/42-고성능병렬계산_hpc-parallel/README.md",
       "references": [
         "https://www.mpi-forum.org/docs/",
         "https://www.openmp.org/specifications/"
@@ -955,15 +955,15 @@
     },
     {
       "number": 43,
-      "slug": "43-computer-vision",
-      "title": "Computer Vision",
+      "slug": "43-컴퓨터비전_computer-vision",
+      "title": "컴퓨터 비전과 영상 처리",
       "english_title": "Computer Vision & Image Processing",
       "sections": [
         "영상 처리와 기하",
         "인식 과제와 구조"
       ],
       "keywords": "OpenCV, torchvision, timm, ResNet, ViT, YOLO, SAM, DINO, Detectron2, MMDetection, Kornia",
-      "path": "topics/43-computer-vision/README.md",
+      "path": "분야_topics/43-컴퓨터비전_computer-vision/README.md",
       "references": [
         "https://docs.opencv.org/4.x/d9/df8/tutorial_root.html"
       ],
@@ -977,15 +977,15 @@
     },
     {
       "number": 44,
-      "slug": "44-language-speech-multimodal",
-      "title": "Language · Speech · Multimodal AI",
+      "slug": "44-언어음성멀티모달AI_language-speech-multimodal",
+      "title": "언어·음성·멀티모달 AI",
       "english_title": "Language, Speech & Multimodal AI",
       "sections": [
         "언어와 음성",
         "여러 입력을 함께 다루기"
       ],
       "keywords": "BERT, T5, GPT, Whisper, wav2vec, CLIP, LLaVA, Transformers, torchaudio, SentencePiece",
-      "path": "topics/44-language-speech-multimodal/README.md",
+      "path": "분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/README.md",
       "references": [
         "https://huggingface.co/docs"
       ],
@@ -999,15 +999,15 @@
     },
     {
       "number": 45,
-      "slug": "45-ai-training-optimization",
-      "title": "AI Training & Optimization",
+      "slug": "45-AI학습최적화_ai-training-optimization",
+      "title": "AI 학습과 최적화",
       "english_title": "AI Training, Optimization & Compression",
       "sections": [
         "학습을 구성하는 상태",
         "자원 사용을 줄이는 방법"
       ],
       "keywords": "PEFT, TRL, Accelerate, DeepSpeed, FSDP, DDP, MLflow, W&B, TensorBoard, Optuna, bitsandbytes",
-      "path": "topics/45-ai-training-optimization/README.md",
+      "path": "분야_topics/45-AI학습최적화_ai-training-optimization/README.md",
       "references": [
         "https://huggingface.co/docs/peft/"
       ],
@@ -1021,8 +1021,8 @@
     },
     {
       "number": 46,
-      "slug": "46-ai-agents-evaluation",
-      "title": "AI Applications · Agents · Evaluation",
+      "slug": "46-AI응용에이전트평가_ai-agents-evaluation",
+      "title": "AI 응용·에이전트·평가",
       "english_title": "AI Applications, Agents & Evaluation",
       "sections": [
         "API와 도구 실행",
@@ -1030,7 +1030,7 @@
         "평가 항목"
       ],
       "keywords": "OpenAI APIs, Claude API, Gemini API, LangChain, LlamaIndex, DSPy, MCP, lm-evaluation-harness, Ragas, promptfoo",
-      "path": "topics/46-ai-agents-evaluation/README.md",
+      "path": "분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md",
       "references": [
         "https://developers.openai.com/api/docs/models",
         "https://huggingface.co/docs"
@@ -1046,15 +1046,15 @@
     },
     {
       "number": 47,
-      "slug": "47-edge-tinyml",
-      "title": "Edge AI · TinyML · NPU",
+      "slug": "47-엣지AI-TinyML_edge-tinyml",
+      "title": "엣지 AI·TinyML·NPU",
       "english_title": "Edge AI, TinyML & NPUs",
       "sections": [
         "모델에서 장치 실행으로",
         "경량화와 측정"
       ],
       "keywords": "ONNX Runtime, TensorRT, OpenVINO, LiteRT/TFLite, TFLite Micro, CMSIS-NN, ExecuTorch, TVM, Jetson, Coral",
-      "path": "topics/47-edge-tinyml/README.md",
+      "path": "분야_topics/47-엣지AI-TinyML_edge-tinyml/README.md",
       "references": [
         "https://onnx.ai/onnx/"
       ],
@@ -1068,15 +1068,15 @@
     },
     {
       "number": 48,
-      "slug": "48-software-quality",
-      "title": "Software Design & Quality",
+      "slug": "48-소프트웨어설계품질_software-quality",
+      "title": "소프트웨어 설계와 품질",
       "english_title": "Software Quality, Design & Testing",
       "sections": [
         "테스트의 범위",
         "분석과 진단"
       ],
       "keywords": "pytest, unittest, GoogleTest, Catch2, CTest, Hypothesis, Valgrind, ASan/UBSan/TSan, clang-tidy, Ruff",
-      "path": "topics/48-software-quality/README.md",
+      "path": "분야_topics/48-소프트웨어설계품질_software-quality/README.md",
       "references": [
         "https://docs.pytest.org/en/stable/"
       ],
@@ -1090,15 +1090,15 @@
     },
     {
       "number": 49,
-      "slug": "49-graphics-simulation",
-      "title": "Graphics & Rendering",
+      "slug": "49-그래픽스렌더링_graphics-simulation",
+      "title": "그래픽스와 렌더링",
       "english_title": "Computer Graphics, Rendering & Simulation",
       "sections": [
         "좌표에서 pixel까지",
         "광선과 재질"
       ],
       "keywords": "OpenGL, Vulkan, DirectX, WebGPU, GLSL, HLSL, Blender, Mitsuba, PBRT, Unreal, Unity",
-      "path": "topics/49-graphics-simulation/README.md",
+      "path": "분야_topics/49-그래픽스렌더링_graphics-simulation/README.md",
       "references": [
         "https://pbr-book.org/"
       ],
@@ -1112,7 +1112,7 @@
     },
     {
       "number": 50,
-      "slug": "50-physical-scientific-simulation",
+      "slug": "50-과학시뮬레이션_physical-scientific-simulation",
       "title": "물리·과학 시뮬레이션",
       "english_title": "Physics, Multiphysics & Scientific Simulation",
       "sections": [
@@ -1120,7 +1120,7 @@
         "해석 대상과 검증"
       ],
       "keywords": "COMSOL, Ansys, HFSS, CST, OpenFOAM, FEniCS, MEEP, openEMS, LAMMPS",
-      "path": "topics/50-physical-scientific-simulation/README.md",
+      "path": "분야_topics/50-과학시뮬레이션_physical-scientific-simulation/README.md",
       "references": [
         "https://fenicsproject.org/documentation/"
       ],
@@ -1134,15 +1134,15 @@
     },
     {
       "number": 51,
-      "slug": "51-test-manufacturing",
-      "title": "DFT · Test · Manufacturing",
+      "slug": "51-반도체테스트제조_test-manufacturing",
+      "title": "DFT·반도체 테스트·제조",
       "english_title": "DFT, Semiconductor Test & Manufacturing",
       "sections": [
         "Scan과 pattern",
         "내장 테스트와 양산"
       ],
       "keywords": "DFT, Scan, ATPG, MBIST/LBIST, ATE, JTAG/Boundary Scan, Tessent, TestMAX, Modus",
-      "path": "topics/51-test-manufacturing/README.md",
+      "path": "분야_topics/51-반도체테스트제조_test-manufacturing/README.md",
       "references": [
         "https://eda.sw.siemens.com/en-US/ic/tessent/"
       ],
@@ -1156,15 +1156,15 @@
     },
     {
       "number": 52,
-      "slug": "52-web-api-applications",
-      "title": "Web · API · Applications",
+      "slug": "52-Web-API응용_web-api-applications",
+      "title": "Web·API·응용 프로그램",
       "english_title": "Web, APIs & Desktop Applications",
       "sections": [
         "통신과 데이터",
         "화면과 서버"
       ],
       "keywords": "FastAPI, Flask, Django, Node.js, Spring, React, Vue, Svelte, TypeScript, Qt/PySide, Electron, Streamlit, Gradio",
-      "path": "topics/52-web-api-applications/README.md",
+      "path": "분야_topics/52-Web-API응용_web-api-applications/README.md",
       "references": [
         "https://fastapi.tiangolo.com/"
       ],
@@ -1178,15 +1178,15 @@
     },
     {
       "number": 53,
-      "slug": "53-mobile-crossplatform",
-      "title": "Mobile & Cross-Platform",
+      "slug": "53-모바일크로스플랫폼_mobile-crossplatform",
+      "title": "모바일과 크로스플랫폼",
       "english_title": "Mobile, Cross-Platform & Device Integration",
       "sections": [
         "플랫폼과 연결",
         "자원과 사용자 경험"
       ],
       "keywords": "Kotlin, Java, Android, Swift, iOS, Flutter, Dart, React Native, Kotlin Multiplatform, Core ML",
-      "path": "topics/53-mobile-crossplatform/README.md",
+      "path": "분야_topics/53-모바일크로스플랫폼_mobile-crossplatform/README.md",
       "references": [
         "https://developer.android.com/guide"
       ],
@@ -1200,15 +1200,15 @@
     },
     {
       "number": 54,
-      "slug": "54-research-frontiers",
-      "title": "새로운 소자와 컴퓨팅",
+      "slug": "54-차세대소자컴퓨팅_research-frontiers",
+      "title": "차세대 소자와 컴퓨팅",
       "english_title": "Research Frontiers",
       "sections": [
         "Neuromorphic와 메모리 연산",
         "빛, 양자, 생체 인터페이스"
       ],
       "keywords": "SNN, Neuromorphic, Event Camera, Quantum, Photonics, Compute-in-Memory, Memristor, Wearables",
-      "path": "topics/54-research-frontiers/README.md",
+      "path": "분야_topics/54-차세대소자컴퓨팅_research-frontiers/README.md",
       "references": [
         "https://snntorch.readthedocs.io/en/latest/"
       ],
@@ -1222,16 +1222,16 @@
     },
     {
       "number": 55,
-      "slug": "55-applications-assessments",
-      "title": "지원 · 시험 · 면접",
-      "english_title": "Applications, Resumes & Assessment Experiences",
+      "slug": "55-지원시험면접_applications-assessments",
+      "title": "지원·시험·면접",
+      "english_title": "Applications, Assessments & Interviews",
       "sections": [
         "기업별 전형 기록",
         "코딩테스트",
         "연락"
       ],
       "keywords": "국민대학교 / Kookmin University, 기업별 전형 / Company Applications, Resume/CV, 코딩테스트 / Coding Tests, 역량검사 / Competency Assessments",
-      "path": "topics/55-applications-assessments/README.md",
+      "path": "분야_topics/55-지원시험면접_applications-assessments/README.md",
       "references": [
         "https://school.programmers.co.kr/learn/challenges"
       ],
@@ -1243,7 +1243,7 @@
     },
     {
       "number": 56,
-      "slug": "56-physics-foundations",
+      "slug": "56-물리기초_physics-foundations",
       "title": "물리 기초",
       "english_title": "Physics Foundations",
       "sections": [
@@ -1257,7 +1257,7 @@
         "Heat conduction and diffusion"
       ],
       "keywords": "Mechanics, Energy, Oscillation, Heat Conduction, Diffusion, Conservation Laws",
-      "path": "topics/56-physics-foundations/README.md",
+      "path": "분야_topics/56-물리기초_physics-foundations/README.md",
       "references": [
         "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
         "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node116.html"
@@ -1267,7 +1267,7 @@
     },
     {
       "number": 57,
-      "slug": "57-reasoning-assessments",
+      "slug": "57-추론적성시험_reasoning-assessments",
       "title": "추론·독해·적성시험",
       "english_title": "Reasoning, Reading and Aptitude Assessments",
       "sections": [
@@ -1289,7 +1289,7 @@
         "Verified past-paper walkthroughs"
       ],
       "keywords": "LEET, PSAT, SKCT, GSAT, HMAT, Logic, Reading, Data Interpretation, Decision Making",
-      "path": "topics/57-reasoning-assessments/README.md",
+      "path": "분야_topics/57-추론적성시험_reasoning-assessments/README.md",
       "references": [
         "https://info.leet.or.kr/",
         "https://www.akls.kr/",
@@ -1300,8 +1300,8 @@
     },
     {
       "number": 58,
-      "slug": "58-philosophy-critical-thinking",
-      "title": "철학·비판적 사고",
+      "slug": "58-철학비판적사고_philosophy-critical-thinking",
+      "title": "철학과 비판적 사고",
       "english_title": "Philosophy and Critical Thinking",
       "sections": [
         "지식·논증·가치"
@@ -1310,7 +1310,7 @@
         "Knowledge, arguments and values"
       ],
       "keywords": "Epistemology, Ethics, Critical Thinking, Arguments, Values",
-      "path": "topics/58-philosophy-critical-thinking/README.md",
+      "path": "분야_topics/58-철학비판적사고_philosophy-critical-thinking/README.md",
       "references": [
         "https://plato.stanford.edu/"
       ],
@@ -1319,7 +1319,7 @@
     },
     {
       "number": 59,
-      "slug": "59-economics",
+      "slug": "59-경제선택지표_economics",
       "title": "경제·선택·지표",
       "english_title": "Economics, Choices and Indicators",
       "sections": [
@@ -1331,7 +1331,7 @@
         "GDP, inflation and real values"
       ],
       "keywords": "Opportunity Cost, Incentives, GDP, CPI, Inflation, Nominal and Real",
-      "path": "topics/59-economics/README.md",
+      "path": "분야_topics/59-경제선택지표_economics/README.md",
       "references": [
         "https://www.bok.or.kr/",
         "https://www.bea.gov/",
@@ -1342,7 +1342,7 @@
     },
     {
       "number": 60,
-      "slug": "60-society-institutions",
+      "slug": "60-사회제도증거_society-institutions",
       "title": "사회·제도·증거",
       "english_title": "Society, Institutions and Evidence",
       "sections": [
@@ -1352,7 +1352,7 @@
         "Evidence, causality and institutions"
       ],
       "keywords": "Institutions, Causality, Evidence, Sampling, Confounding, Social Indicators",
-      "path": "topics/60-society-institutions/README.md",
+      "path": "분야_topics/60-사회제도증거_society-institutions/README.md",
       "references": [
         "https://www.povertyactionlab.org/",
         "https://www.worldbank.org/"
@@ -1362,8 +1362,8 @@
     },
     {
       "number": 61,
-      "slug": "61-law-foundations",
-      "title": "법의 기초·법령 읽기",
+      "slug": "61-법령읽기_law-foundations",
+      "title": "법의 기초와 법령 읽기",
       "english_title": "Law Foundations and Legal Reading",
       "sections": [
         "법의 출처·효력·해석"
@@ -1372,7 +1372,7 @@
         "Legal sources, validity and interpretation"
       ],
       "keywords": "Korean Constitution, Statutes, Legal Interpretation, Effective Dates, Case Law",
-      "path": "topics/61-law-foundations/README.md",
+      "path": "분야_topics/61-법령읽기_law-foundations/README.md",
       "references": [
         "https://www.law.go.kr/",
         "https://www.moleg.go.kr/",

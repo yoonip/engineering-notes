@@ -1,0 +1,79 @@
+<svg width="363pt" height="439pt"
+ viewBox="0.00 0.00 363.00 439.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 424.4)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-424.4 348.39,-424.4 348.39,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#596570" d="M75.49,-355.9C75.49,-347.54 75.49,-338.16 75.49,-329.32"/>
+<polygon fill="#596570" stroke="#596570" points="77.77,-329.4 75.49,-322.9 73.22,-329.4 77.77,-329.4"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>B&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M102.8,-266.9C112.34,-257.78 123.15,-247.43 133.13,-237.89"/>
+<polygon fill="#596570" stroke="#596570" points="134.67,-239.57 137.8,-233.43 131.53,-236.28 134.67,-239.57"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>D&#45;&gt;E</title>
+<path fill="none" stroke="#596570" d="M166.49,-177.9C166.49,-169.54 166.49,-160.16 166.49,-151.32"/>
+<polygon fill="#596570" stroke="#596570" points="168.77,-151.4 166.49,-144.9 164.22,-151.4 168.77,-151.4"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M230.19,-266.9C220.65,-257.78 209.83,-247.43 199.85,-237.89"/>
+<polygon fill="#596570" stroke="#596570" points="201.45,-236.28 195.18,-233.43 198.31,-239.57 201.45,-236.28"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>E&#45;&gt;F</title>
+<path fill="none" stroke="#596570" d="M166.49,-88.9C166.49,-80.54 166.49,-71.16 166.49,-62.32"/>
+<polygon fill="#596570" stroke="#596570" points="168.77,-62.4 166.49,-55.9 164.22,-62.4 168.77,-62.4"/>
+</g>
+
+<g id="node1" class="node">
+<title>A</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="150.98,-410 0,-410 0,-356 150.98,-356 150.98,-410"/>
+<text xml:space="preserve" text-anchor="middle" x="75.49" y="-387.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">질문과 용어</text>
+<text xml:space="preserve" text-anchor="middle" x="75.49" y="-370.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Question and terms</text>
+</g>
+
+<g id="node2" class="node">
+<title>B</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="148.5,-321 2.48,-321 2.48,-267 148.5,-267 148.5,-321"/>
+<text xml:space="preserve" text-anchor="middle" x="75.49" y="-298.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">사실·근거</text>
+<text xml:space="preserve" text-anchor="middle" x="75.49" y="-281.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Facts and evidence</text>
+</g>
+
+<g id="node3" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="254.48,-232 78.51,-232 78.51,-178 254.48,-178 254.48,-232"/>
+<text xml:space="preserve" text-anchor="middle" x="166.49" y="-209.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">전제·추론·반론</text>
+<text xml:space="preserve" text-anchor="middle" x="166.49" y="-192.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Premises and objections</text>
+</g>
+
+<g id="node4" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="333.99,-321 180.99,-321 180.99,-267 333.99,-267 333.99,-321"/>
+<text xml:space="preserve" text-anchor="middle" x="257.49" y="-298.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">가치·우선순위</text>
+<text xml:space="preserve" text-anchor="middle" x="257.49" y="-281.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Values and priorities</text>
+</g>
+
+<g id="node5" class="node">
+<title>E</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="242.49,-143 90.5,-143 90.5,-89 242.49,-89 242.49,-143"/>
+<text xml:space="preserve" text-anchor="middle" x="166.49" y="-120.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">범위를 밝힌 결론</text>
+<text xml:space="preserve" text-anchor="middle" x="166.49" y="-103.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Qualified conclusion</text>
+</g>
+
+<g id="node6" class="node">
+<title>F</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="264.99,-54 68,-54 68,0 264.99,0 264.99,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="166.49" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">새 근거에 따른 수정</text>
+<text xml:space="preserve" text-anchor="middle" x="166.49" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Revision with new evidence</text>
+</g>
+</g>
+</svg>

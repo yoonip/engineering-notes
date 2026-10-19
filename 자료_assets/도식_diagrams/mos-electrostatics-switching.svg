@@ -1,0 +1,66 @@
+<svg width="756pt" height="83pt"
+ viewBox="0.00 0.00 756.00 83.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 68.4)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-68.4 741.42,-68.4 741.42,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#596570" d="M88.12,-27C96.59,-27 105.66,-27 114.71,-27"/>
+<polygon fill="#596570" stroke="#596570" points="114.63,-29.28 121.13,-27 114.63,-24.73 114.63,-29.28"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>B&#45;&gt;C</title>
+<path fill="none" stroke="#596570" d="M244.31,-27C253.02,-27 262.07,-27 270.97,-27"/>
+<polygon fill="#596570" stroke="#596570" points="270.73,-29.28 277.23,-27 270.73,-24.73 270.73,-29.28"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M406.16,-27C415.04,-27 424.2,-27 433.12,-27"/>
+<polygon fill="#596570" stroke="#596570" points="432.87,-29.28 439.37,-27 432.87,-24.73 432.87,-29.28"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>D&#45;&gt;E</title>
+<path fill="none" stroke="#596570" d="M556.29,-27C564.95,-27 573.99,-27 582.97,-27"/>
+<polygon fill="#596570" stroke="#596570" points="582.81,-29.28 589.31,-27 582.81,-24.73 582.81,-29.28"/>
+</g>
+
+<g id="node1" class="node">
+<title>A</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="87.98,-54 0,-54 0,0 87.98,0 87.98,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="43.99" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">Gate 전압</text>
+<text xml:space="preserve" text-anchor="middle" x="43.99" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Voltage</text>
+</g>
+
+<g id="node2" class="node">
+<title>B</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="244.02,-54 122.98,-54 122.98,0 244.02,0 244.02,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="183.5" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">표면 전하</text>
+<text xml:space="preserve" text-anchor="middle" x="183.5" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Surface charge</text>
+</g>
+
+<g id="node3" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="406.02,-54 279.02,-54 279.02,0 406.02,0 406.02,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="342.52" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">채널 전류</text>
+<text xml:space="preserve" text-anchor="middle" x="342.52" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Channel current</text>
+</g>
+
+<g id="node4" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="556.01,-54 441.02,-54 441.02,0 556.01,0 556.01,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="498.52" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">부하 충전</text>
+<text xml:space="preserve" text-anchor="middle" x="498.52" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Load charging</text>
+</g>
+
+<g id="node5" class="node">
+<title>E</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="727.02,-54 591.01,-54 591.01,0 727.02,0 727.02,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="659.01" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">지연·에너지</text>
+<text xml:space="preserve" text-anchor="middle" x="659.01" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Delay and energy</text>
+</g>
+</g>
+</svg>

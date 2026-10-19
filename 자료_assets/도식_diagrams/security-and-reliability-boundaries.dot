@@ -1,0 +1,14 @@
+digraph Diagram {
+graph [rankdir=LR,bgcolor="white",pad="0.2",nodesep="0.45",ranksep="0.48",splines=polyline,outputorder=edgesfirst];
+node [fontname="Malgun Gothic",fontsize=14,shape=box,style=filled,color="#596570",fillcolor="#ffffff",fontcolor="#252c33",penwidth=0.9,margin="0.12,0.08"];
+edge [fontname="Malgun Gothic",fontsize=12,color="#596570",fontcolor="#374a59",penwidth=1.0,arrowsize=0.65];
+"A"[label="외부 바이트\nUntrusted bytes",shape="box",width=1.750,height=0.750,fixedsize=true];
+"B"[label="길이·형식 제한\nBound and parse",shape="box",width=1.847,height=0.750,fixedsize=true];
+"C"[label="무결성·인증\nIntegrity and\nauthentication",shape="box",width=1.597,height=1.014,fixedsize=true];
+"D"[label="재전송·권한·범위 검사\nFreshness and authorization",shape="box",width=2.778,height=0.750,fixedsize=true];
+"E"[label="허용된 동작\nPermitted action",shape="box",width=1.792,height=0.750,fixedsize=true];
+"A"->"B"[label=""];
+"B"->"C"[label=""];
+"C"->"D"[label=""];
+"D"->"E"[label=""];
+}

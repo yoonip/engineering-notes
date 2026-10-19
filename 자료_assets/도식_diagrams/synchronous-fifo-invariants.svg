@@ -1,0 +1,86 @@
+<svg width="286pt" height="460pt"
+ viewBox="0.00 0.00 286.00 460.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 445.8)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-445.8 271.32,-445.8 271.32,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>P&#45;&gt;G</title>
+<path fill="none" stroke="#596570" d="M199.51,-377.03C199.51,-364.25 199.51,-348.75 199.51,-335.08"/>
+<polygon fill="#596570" stroke="#596570" points="201.78,-335.29 199.51,-328.79 197.23,-335.29 201.78,-335.29"/>
+<text xml:space="preserve" text-anchor="middle" x="228.21" y="-348.6" font-family="Malgun Gothic" font-size="12" fill="#596570">write + data</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>G&#45;&gt;M</title>
+<path fill="none" stroke="#596570" d="M158.26,-272.78C142.31,-262.64 123.95,-250.97 107.42,-240.46"/>
+<polygon fill="#596570" stroke="#596570" points="108.93,-238.72 102.22,-237.15 106.49,-242.56 108.93,-238.72"/>
+</g>
+
+<g id="edge6" class="edge">
+<title>G&#45;&gt;N</title>
+<path fill="none" stroke="#596570" d="M188.46,-272.78C187.47,-263.81 187.25,-253.63 187.8,-244.13"/>
+<polygon fill="#596570" stroke="#596570" points="190.05,-244.52 188.32,-237.85 185.52,-244.14 190.05,-244.52"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>M&#45;&gt;R</title>
+<path fill="none" stroke="#596570" d="M59.51,-181.78C59.51,-172.81 59.51,-162.63 59.51,-153.13"/>
+<polygon fill="#596570" stroke="#596570" points="61.78,-153.36 59.51,-146.86 57.23,-153.36 61.78,-153.36"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>R&#45;&gt;C</title>
+<path fill="none" stroke="#596570" d="M59.51,-90.78C59.51,-81.81 59.51,-71.63 59.51,-62.13"/>
+<polygon fill="#596570" stroke="#596570" points="61.78,-62.36 59.51,-55.86 57.23,-62.36 61.78,-62.36"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>N&#45;&gt;G</title>
+<path fill="none" stroke="#596570" d="M210.57,-236.34C211.55,-245.33 211.76,-255.5 211.21,-265"/>
+<polygon fill="#596570" stroke="#596570" points="208.96,-264.6 210.68,-271.27 213.49,-264.98 208.96,-264.6"/>
+</g>
+
+<g id="node1" class="node">
+<title>P</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="241.02,-431.4 158,-431.4 158,-377.4 241.02,-377.4 241.02,-431.4"/>
+<text xml:space="preserve" text-anchor="middle" x="199.51" y="-408.6" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">생산자</text>
+<text xml:space="preserve" text-anchor="middle" x="199.51" y="-391.8" font-family="Malgun Gothic" font-size="12" fill="#596570">Producer</text>
+</g>
+
+<g id="node2" class="node">
+<title>G</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="249.51,-327 149.5,-327 149.5,-273 249.51,-273 249.51,-327"/>
+<text xml:space="preserve" text-anchor="middle" x="199.51" y="-304.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">수락 판단</text>
+<text xml:space="preserve" text-anchor="middle" x="199.51" y="-287.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Acceptance</text>
+</g>
+
+<g id="node3" class="node">
+<title>M</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="119.02,-236 0,-236 0,-182 119.02,-182 119.02,-236"/>
+<text xml:space="preserve" text-anchor="middle" x="59.51" y="-213.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">순환 저장 배열</text>
+<text xml:space="preserve" text-anchor="middle" x="59.51" y="-196.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Ring memory</text>
+</g>
+
+<g id="node4" class="node">
+<title>R</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="115.99,-145 3.02,-145 3.02,-91 115.99,-91 115.99,-145"/>
+<text xml:space="preserve" text-anchor="middle" x="59.51" y="-122.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">읽기 레지스터</text>
+<text xml:space="preserve" text-anchor="middle" x="59.51" y="-105.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Read register</text>
+</g>
+
+<g id="node5" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="104.51,-54 14.51,-54 14.51,0 104.51,0 104.51,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="59.51" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">소비자</text>
+<text xml:space="preserve" text-anchor="middle" x="59.51" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Consumer</text>
+</g>
+
+<g id="node6" class="node">
+<title>N</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="248,-236 151.02,-236 151.02,-182 248,-182 248,-236"/>
+<text xml:space="preserve" text-anchor="middle" x="199.51" y="-213.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">점유량 n</text>
+<text xml:space="preserve" text-anchor="middle" x="199.51" y="-196.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Occupancy</text>
+</g>
+</g>
+</svg>

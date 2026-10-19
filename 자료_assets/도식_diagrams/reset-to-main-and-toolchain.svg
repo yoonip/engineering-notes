@@ -1,0 +1,104 @@
+<svg width="237pt" height="687pt"
+ viewBox="0.00 0.00 237.00 687.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 672.39)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-672.39 222.41,-672.39 222.41,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#596570" d="M104,-603.89C104,-595.54 104,-586.16 104,-577.31"/>
+<polygon fill="#596570" stroke="#596570" points="106.28,-577.39 104,-570.89 101.73,-577.39 106.28,-577.39"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>B&#45;&gt;C</title>
+<path fill="none" stroke="#596570" d="M104,-514.89C104,-506.54 104,-497.16 104,-488.31"/>
+<polygon fill="#596570" stroke="#596570" points="106.28,-488.39 104,-481.89 101.73,-488.39 106.28,-488.39"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M104,-425.89C104,-417.54 104,-408.16 104,-399.31"/>
+<polygon fill="#596570" stroke="#596570" points="106.28,-399.39 104,-392.89 101.73,-399.39 106.28,-399.39"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>D&#45;&gt;E</title>
+<path fill="none" stroke="#596570" d="M104,-336.76C104,-328.1 104,-318.52 104,-310"/>
+<polygon fill="#596570" stroke="#596570" points="106.28,-310.24 104,-303.74 101.73,-310.24 106.28,-310.24"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>E&#45;&gt;F</title>
+<path fill="none" stroke="#596570" d="M104,-266.68C104,-258.9 104,-249.36 104,-240.17"/>
+<polygon fill="#596570" stroke="#596570" points="106.28,-240.25 104,-233.75 101.73,-240.25 106.28,-240.25"/>
+</g>
+
+<g id="edge6" class="edge">
+<title>F&#45;&gt;G</title>
+<path fill="none" stroke="#596570" d="M104,-177.9C104,-169.54 104,-160.16 104,-151.32"/>
+<polygon fill="#596570" stroke="#596570" points="106.28,-151.4 104,-144.9 101.73,-151.4 106.28,-151.4"/>
+</g>
+
+<g id="edge7" class="edge">
+<title>G&#45;&gt;H</title>
+<path fill="none" stroke="#596570" d="M104,-88.9C104,-80.54 104,-71.16 104,-62.32"/>
+<polygon fill="#596570" stroke="#596570" points="106.28,-62.4 104,-55.9 101.73,-62.4 106.28,-62.4"/>
+</g>
+
+<g id="node1" class="node">
+<title>A</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="139,-657.99 69.01,-657.99 69.01,-603.99 139,-603.99 139,-657.99"/>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-635.19" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">소스</text>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-618.39" font-family="Malgun Gothic" font-size="12" fill="#596570">Source</text>
+</g>
+
+<g id="node2" class="node">
+<title>B</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="187.02,-568.99 20.99,-568.99 20.99,-514.99 187.02,-514.99 187.02,-568.99"/>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-546.19" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">컴파일·어셈블</text>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-529.39" font-family="Malgun Gothic" font-size="12" fill="#596570">Compile and assemble</text>
+</g>
+
+<g id="node3" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="151.49,-479.99 56.52,-479.99 56.52,-425.99 151.49,-425.99 151.49,-479.99"/>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-457.19" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">목적 파일</text>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-440.39" font-family="Malgun Gothic" font-size="12" fill="#596570">Object files</text>
+</g>
+
+<g id="node4" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="162.5,-390.99 45.5,-390.99 45.5,-336.99 162.5,-336.99 162.5,-390.99"/>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-368.19" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">링크·배치</text>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-351.39" font-family="Malgun Gothic" font-size="12" fill="#596570">Link and place</text>
+</g>
+
+<g id="node5" class="node">
+<title>E</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="127.51,-301.99 80.5,-301.99 80.5,-267 127.51,-267 127.51,-301.99"/>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-280.3" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">ELF</text>
+</g>
+
+<g id="node6" class="node">
+<title>F</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="208.01,-232 0,-232 0,-178 208.01,-178 208.01,-232"/>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-209.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">로더 또는 플래시 기록</text>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-192.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Loader or flash programming</text>
+</g>
+
+<g id="node7" class="node">
+<title>G</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="147.49,-143 60.52,-143 60.52,-89 147.49,-89 147.49,-143"/>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-120.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">시작 코드</text>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-103.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Startup</text>
+</g>
+
+<g id="node8" class="node">
+<title>H</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="181.01,-54 27,-54 27,0 181.01,0 181.01,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">main 또는 앱 진입점</text>
+<text xml:space="preserve" text-anchor="middle" x="104" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Application entry</text>
+</g>
+</g>
+</svg>

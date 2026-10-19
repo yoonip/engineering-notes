@@ -1,0 +1,14 @@
+digraph Diagram {
+graph [rankdir=LR,bgcolor="white",pad="0.2",nodesep="0.45",ranksep="0.48",splines=polyline,outputorder=edgesfirst];
+node [fontname="Malgun Gothic",fontsize=14,shape=box,style=filled,color="#596570",fillcolor="#ffffff",fontcolor="#252c33",penwidth=0.9,margin="0.12,0.08"];
+edge [fontname="Malgun Gothic",fontsize=12,color="#596570",fontcolor="#374a59",penwidth=1.0,arrowsize=0.65];
+"A"[label="Gate 전압\nVoltage",shape="box",width=1.222,height=0.750,fixedsize=true];
+"B"[label="표면 전하\nSurface charge",shape="box",width=1.681,height=0.750,fixedsize=true];
+"C"[label="채널 전류\nChannel current",shape="box",width=1.764,height=0.750,fixedsize=true];
+"D"[label="부하 충전\nLoad charging",shape="box",width=1.597,height=0.750,fixedsize=true];
+"E"[label="지연·에너지\nDelay and energy",shape="box",width=1.889,height=0.750,fixedsize=true];
+"A"->"B"[label=""];
+"B"->"C"[label=""];
+"C"->"D"[label=""];
+"D"->"E"[label=""];
+}

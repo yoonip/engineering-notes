@@ -1,0 +1,1586 @@
+{
+  "schema_version": 1,
+  "original_figures": true,
+  "graphviz": "14.1.3",
+  "figures": [
+    {
+      "document": "문서_docs/공학기초_FOUNDATIONS.md",
+      "stem": "foundations",
+      "nodes": [
+        {
+          "id": "A",
+          "label": "단위·수학 / Units and mathematics",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "물리·회로 / Physics and circuits",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "소자·디지털 하드웨어 / Devices and digital hardware",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "메모리·펌웨어·시스템 / Memory, firmware and systems",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "센서·ADC·신호 / Sensors, ADCs and signals",
+          "shape": "box"
+        },
+        {
+          "id": "F",
+          "label": "제어·학습·병렬 계산 / Control, learning and parallel computing",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "A",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "F",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "E",
+          "head": "F",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "A",
+          "head": "F",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart TD"
+    },
+    {
+      "document": "문서_docs/추론과인문사회_REASONING_AND_HUMANITIES.md",
+      "stem": "reasoning_and_humanities",
+      "nodes": [
+        {
+          "id": "A",
+          "label": "정확한 독해 / Precise reading",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "논증과 반례 / Arguments and counterexamples",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "숫자와 자료 / Quantities and data",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "지식·가치 / Knowledge and values",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "경제·사회 / Economy and society",
+          "shape": "box"
+        },
+        {
+          "id": "F",
+          "label": "조건·법령 / Conditions and legal texts",
+          "shape": "box"
+        },
+        {
+          "id": "G",
+          "label": "근거와 범위가 드러나는 판단 / Judgment with explicit grounds and scope",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "A",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "A",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "F",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "F",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "G",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "E",
+          "head": "G",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "F",
+          "head": "G",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart TD"
+    },
+    {
+      "document": "분야_topics/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md",
+      "stem": "processes-memory-concurrency",
+      "nodes": [
+        {
+          "id": "VA",
+          "label": "가상 주소 / Virtual address",
+          "shape": "box"
+        },
+        {
+          "id": "SPLIT",
+          "label": "페이지 번호 + 오프셋 / VPN + offset",
+          "shape": "box"
+        },
+        {
+          "id": "LOOKUP",
+          "label": "TLB 또는 페이지 테이블 / Translation lookup",
+          "shape": "box"
+        },
+        {
+          "id": "CHECK",
+          "label": "매핑·권한 유효? / Valid mapping and permission?",
+          "shape": "diamond"
+        },
+        {
+          "id": "PA",
+          "label": "물리 프레임 + 오프셋 / PFN + offset",
+          "shape": "box"
+        },
+        {
+          "id": "FAULT",
+          "label": "예외·커널 처리 / Fault handling",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "VA",
+          "head": "SPLIT",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "SPLIT",
+          "head": "LOOKUP",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "LOOKUP",
+          "head": "CHECK",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "CHECK",
+          "head": "PA",
+          "label": "Yes",
+          "dashed": false
+        },
+        {
+          "tail": "CHECK",
+          "head": "FAULT",
+          "label": "No",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md",
+      "stem": "rc-rlc-response",
+      "nodes": [
+        {
+          "id": "A",
+          "label": "전압원 u / Source",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "저항 R / Dissipation",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "인덕터 L / Magnetic energy",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "커패시터 C / Electric energy",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "A",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "A",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md",
+      "stem": "mos-electrostatics-switching",
+      "nodes": [
+        {
+          "id": "A",
+          "label": "Gate 전압 / Voltage",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "표면 전하 / Surface charge",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "채널 전류 / Channel current",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "부하 충전 / Load charging",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "지연·에너지 / Delay and energy",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "A",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md",
+      "stem": "synchronous-fifo-invariants",
+      "nodes": [
+        {
+          "id": "P",
+          "label": "생산자 / Producer",
+          "shape": "box"
+        },
+        {
+          "id": "G",
+          "label": "수락 판단 / Acceptance",
+          "shape": "box"
+        },
+        {
+          "id": "M",
+          "label": "순환 저장 배열 / Ring memory",
+          "shape": "box"
+        },
+        {
+          "id": "R",
+          "label": "읽기 레지스터 / Read register",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "소비자 / Consumer",
+          "shape": "box"
+        },
+        {
+          "id": "N",
+          "label": "점유량 n / Occupancy",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "P",
+          "head": "G",
+          "label": "write + data",
+          "dashed": false
+        },
+        {
+          "tail": "G",
+          "head": "M",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "M",
+          "head": "R",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "R",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "N",
+          "head": "G",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "G",
+          "head": "N",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md",
+      "stem": "mmio-interrupt-dma",
+      "nodes": [
+        {
+          "id": "CPU",
+          "label": "CPU",
+          "shape": "box"
+        },
+        {
+          "id": "DEVICE_TX",
+          "label": "DEVICE_TX",
+          "shape": "box"
+        },
+        {
+          "id": "DEVICE_RX",
+          "label": "DEVICE_RX",
+          "shape": "box"
+        },
+        {
+          "id": "DONE_RX",
+          "label": "DONE_RX",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "CPU",
+          "head": "DEVICE_TX",
+          "label": "작성·clean 후 송신 시작 / Prepare and start TX",
+          "dashed": false
+        },
+        {
+          "tail": "DEVICE_TX",
+          "head": "CPU",
+          "label": "송신 완료 / TX complete",
+          "dashed": false
+        },
+        {
+          "tail": "CPU",
+          "head": "DEVICE_RX",
+          "label": "수신 버퍼 준비 / Prepare RX",
+          "dashed": false
+        },
+        {
+          "tail": "DEVICE_RX",
+          "head": "DONE_RX",
+          "label": "수신 완료 / RX complete",
+          "dashed": false
+        },
+        {
+          "tail": "DONE_RX",
+          "head": "CPU",
+          "label": "invalidate 후 반환 / Invalidate and acquire",
+          "dashed": false
+        }
+      ],
+      "source_type": "stateDiagram-v2"
+    },
+    {
+      "document": "분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md",
+      "stem": "framing-uart-crc",
+      "nodes": [
+        {
+          "id": "__START",
+          "label": "",
+          "shape": "point"
+        },
+        {
+          "id": "WAIT",
+          "label": "WAIT",
+          "shape": "box"
+        },
+        {
+          "id": "COLLECT",
+          "label": "COLLECT",
+          "shape": "box"
+        },
+        {
+          "id": "ESCAPE",
+          "label": "ESCAPE",
+          "shape": "box"
+        },
+        {
+          "id": "DROP",
+          "label": "DROP",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "__START",
+          "head": "WAIT",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "WAIT",
+          "head": "COLLECT",
+          "label": "0x7E",
+          "dashed": false
+        },
+        {
+          "tail": "COLLECT",
+          "head": "ESCAPE",
+          "label": "0x7D",
+          "dashed": false
+        },
+        {
+          "tail": "ESCAPE",
+          "head": "COLLECT",
+          "label": "XOR 0x20 후 저장 / Decode and append",
+          "dashed": false
+        },
+        {
+          "tail": "COLLECT",
+          "head": "COLLECT",
+          "label": "일반 바이트 저장 / Append byte",
+          "dashed": false
+        },
+        {
+          "tail": "COLLECT",
+          "head": "DROP",
+          "label": "길이 상한 초과 / Capacity exceeded",
+          "dashed": false
+        },
+        {
+          "tail": "DROP",
+          "head": "COLLECT",
+          "label": "0x7E",
+          "dashed": false
+        },
+        {
+          "tail": "COLLECT",
+          "head": "COLLECT",
+          "label": "0x7E에서 검사·초기화 / Validate and restart",
+          "dashed": false
+        },
+        {
+          "tail": "ESCAPE",
+          "head": "COLLECT",
+          "label": "0x7E에서 폐기·초기화 / Abort and restart",
+          "dashed": false
+        }
+      ],
+      "source_type": "stateDiagram-v2"
+    },
+    {
+      "document": "분야_topics/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md",
+      "stem": "feedback-discrete-model",
+      "nodes": [
+        {
+          "id": "R",
+          "label": "목표 r / Reference",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "오차 r-y / Error",
+          "shape": "box"
+        },
+        {
+          "id": "K",
+          "label": "비례 제어 K / P controller",
+          "shape": "box"
+        },
+        {
+          "id": "H",
+          "label": "입력 유지 / Hold",
+          "shape": "box"
+        },
+        {
+          "id": "P",
+          "label": "대상 시스템 / Plant",
+          "shape": "box"
+        },
+        {
+          "id": "Y",
+          "label": "출력 y / Output",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "R",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "E",
+          "head": "K",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "K",
+          "head": "H",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "H",
+          "head": "P",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "P",
+          "head": "Y",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "Y",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md",
+      "stem": "sampling-aliasing",
+      "nodes": [
+        {
+          "id": "A",
+          "label": "연속 신호 / Continuous signal",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "아날로그 대역 제한 / Analog band limiting",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "시간 표본 / Time samples",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "양자화 / Quantization",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "디지털 처리 / Digital processing",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "A",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md",
+      "stem": "gradients-and-learning",
+      "nodes": [
+        {
+          "id": "X",
+          "label": "입력 x / Input",
+          "shape": "box"
+        },
+        {
+          "id": "Z",
+          "label": "wx+b",
+          "shape": "box"
+        },
+        {
+          "id": "S",
+          "label": "sigmoid",
+          "shape": "box"
+        },
+        {
+          "id": "L",
+          "label": "손실 / Loss",
+          "shape": "box"
+        },
+        {
+          "id": "Y",
+          "label": "정답 y / Label",
+          "shape": "box"
+        },
+        {
+          "id": "W",
+          "label": "갱신 / Update w,b",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "X",
+          "head": "Z",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "Z",
+          "head": "S",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "S",
+          "head": "L",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "Y",
+          "head": "L",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "L",
+          "head": "Z",
+          "label": "기울기 / Gradient",
+          "dashed": true
+        },
+        {
+          "tail": "Z",
+          "head": "W",
+          "label": "",
+          "dashed": true
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md",
+      "stem": "transmission-lines-reflections",
+      "nodes": [
+        {
+          "id": "S",
+          "label": "Source"
+        },
+        {
+          "id": "L",
+          "label": "Load"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "S",
+          "head": "L",
+          "label": "a0, arrival td"
+        },
+        {
+          "tail": "L",
+          "head": "S",
+          "label": "GammaL a0, arrival 2td"
+        },
+        {
+          "tail": "S",
+          "head": "L",
+          "label": "GammaS GammaL a0, arrival 3td"
+        }
+      ],
+      "source_type": "sequenceDiagram"
+    },
+    {
+      "document": "분야_topics/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md",
+      "stem": "locality-cache-amat",
+      "nodes": [
+        {
+          "id": "A",
+          "label": "요청 / Request",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "L1 hit?",
+          "shape": "diamond"
+        },
+        {
+          "id": "C",
+          "label": "데이터 반환 / Return",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "하위 계층 접근 / Lower level",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "Line 채움 / Fill",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "A",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "C",
+          "label": "yes",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "D",
+          "label": "no",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "E",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md",
+      "stem": "measurement-loading-uncertainty",
+      "nodes": [
+        {
+          "id": "F",
+          "label": "SMU Force HI",
+          "shape": "box"
+        },
+        {
+          "id": "A",
+          "label": "DUT 단자 A / Terminal A",
+          "shape": "box"
+        },
+        {
+          "id": "R",
+          "label": "DUT R",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "DUT 단자 B / Terminal B",
+          "shape": "box"
+        },
+        {
+          "id": "L",
+          "label": "SMU Force LO",
+          "shape": "box"
+        },
+        {
+          "id": "V",
+          "label": "높은 입력 임피던스 / Voltmeter",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "F",
+          "head": "A",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "A",
+          "head": "R",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "R",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "L",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "A",
+          "head": "V",
+          "label": "전압 감지 / Sense",
+          "dashed": true
+        },
+        {
+          "tail": "B",
+          "head": "V",
+          "label": "전압 감지 / Sense",
+          "dashed": true
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md",
+      "stem": "security-and-reliability-boundaries",
+      "nodes": [
+        {
+          "id": "A",
+          "label": "외부 바이트 / Untrusted bytes",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "길이·형식 제한 / Bound and parse",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "무결성·인증 / Integrity and authentication",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "재전송·권한·범위 검사 / Freshness and authorization",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "허용된 동작 / Permitted action",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "A",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md",
+      "stem": "reset-to-main-and-toolchain",
+      "nodes": [
+        {
+          "id": "A",
+          "label": "소스 / Source",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "컴파일·어셈블 / Compile and assemble",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "목적 파일 / Object files",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "링크·배치 / Link and place",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "ELF",
+          "shape": "box"
+        },
+        {
+          "id": "F",
+          "label": "로더 또는 플래시 기록 / Loader or flash programming",
+          "shape": "box"
+        },
+        {
+          "id": "G",
+          "label": "시작 코드 / Startup",
+          "shape": "box"
+        },
+        {
+          "id": "H",
+          "label": "main 또는 앱 진입점 / Application entry",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "A",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "E",
+          "head": "F",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "F",
+          "head": "G",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "G",
+          "head": "H",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md",
+      "stem": "attention-from-equations",
+      "nodes": [
+        {
+          "id": "Q",
+          "label": "Q",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "QK transpose",
+          "shape": "box"
+        },
+        {
+          "id": "K",
+          "label": "K",
+          "shape": "box"
+        },
+        {
+          "id": "S",
+          "label": "Scale and mask",
+          "shape": "box"
+        },
+        {
+          "id": "A",
+          "label": "Row softmax",
+          "shape": "box"
+        },
+        {
+          "id": "O",
+          "label": "Weighted sum",
+          "shape": "box"
+        },
+        {
+          "id": "V",
+          "label": "V",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "Q",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "K",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "S",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "S",
+          "head": "A",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "A",
+          "head": "O",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "V",
+          "head": "O",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md",
+      "stem": "heat-diffusion",
+      "nodes": [
+        {
+          "id": "L",
+          "label": "T i-1, 현재 / current",
+          "shape": "box"
+        },
+        {
+          "id": "N",
+          "label": "T i, 다음 / next",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "T i, 현재 / current",
+          "shape": "box"
+        },
+        {
+          "id": "R",
+          "label": "T i+1, 현재 / current",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "L",
+          "head": "N",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "N",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "R",
+          "head": "N",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md",
+      "stem": "mechanics-energy-oscillation",
+      "nodes": [
+        {
+          "id": "U",
+          "label": "스프링 위치에너지 / Spring energy",
+          "shape": "box"
+        },
+        {
+          "id": "K",
+          "label": "물체 운동에너지 / Kinetic energy",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "U",
+          "head": "K",
+          "label": "평형점으로 이동 / Toward equilibrium",
+          "dashed": false
+        },
+        {
+          "tail": "K",
+          "head": "U",
+          "label": "평형점을 지나 스프링 변형 / Spring deformation",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/57-추론적성시험_reasoning-assessments/해설_notes/논증독해_argument-reading-and-counterexamples.md",
+      "stem": "argument-reading-and-counterexamples",
+      "nodes": [
+        {
+          "id": "P",
+          "label": "근거 / Evidence",
+          "shape": "box"
+        },
+        {
+          "id": "I",
+          "label": "연결 가정 / Inferential link",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "결론 / Conclusion",
+          "shape": "box"
+        },
+        {
+          "id": "A",
+          "label": "대안 설명 / Alternative",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "반대 자료 / Contrary evidence",
+          "shape": "box"
+        },
+        {
+          "id": "S",
+          "label": "적용 범위 / Scope",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "P",
+          "head": "I",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "I",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "A",
+          "head": "I",
+          "label": "",
+          "dashed": true
+        },
+        {
+          "tail": "E",
+          "head": "P",
+          "label": "",
+          "dashed": true
+        },
+        {
+          "tail": "S",
+          "head": "C",
+          "label": "",
+          "dashed": true
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/57-추론적성시험_reasoning-assessments/해설_notes/공식기출분석_official-past-paper-walkthroughs.md",
+      "stem": "official-past-paper-walkthroughs",
+      "nodes": [
+        {
+          "id": "S",
+          "label": "문제의 사고 조건 / Given incident conditions",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "국가 보상 대상? / Compensation eligible?",
+          "shape": "diamond"
+        },
+        {
+          "id": "P",
+          "label": "피해자에게 지급 / Pay injured party",
+          "shape": "box"
+        },
+        {
+          "id": "R",
+          "label": "사후 청구 조건? / Recourse condition?",
+          "shape": "diamond"
+        },
+        {
+          "id": "D",
+          "label": "의료인에게 청구 가능 / Recourse permitted",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "S",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "P",
+          "label": "해당 / Yes",
+          "dashed": false
+        },
+        {
+          "tail": "P",
+          "head": "R",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "R",
+          "head": "D",
+          "label": "해당 / Yes",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/57-추론적성시험_reasoning-assessments/해설_notes/추론연습과통찰_practice-feedback-and-insight.md",
+      "stem": "practice-feedback-and-insight",
+      "nodes": [
+        {
+          "id": "A",
+          "label": "원문과 조건 / Source and conditions",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "독립 풀이 / Independent attempt",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "공식 답과 검산 / Official answer and check",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "오류 원인 수정 / Correct the cause",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "시간 뒤 인출 / Delayed retrieval",
+          "shape": "box"
+        },
+        {
+          "id": "F",
+          "label": "새 자료에서 확인 / Check on unseen material",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "A",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "C",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "E",
+          "head": "F",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/58-철학비판적사고_philosophy-critical-thinking/해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md",
+      "stem": "knowledge-arguments-values",
+      "nodes": [
+        {
+          "id": "A",
+          "label": "질문과 용어 / Question and terms",
+          "shape": "box"
+        },
+        {
+          "id": "B",
+          "label": "사실·근거 / Facts and evidence",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "전제·추론·반론 / Premises and objections",
+          "shape": "box"
+        },
+        {
+          "id": "C",
+          "label": "가치·우선순위 / Values and priorities",
+          "shape": "box"
+        },
+        {
+          "id": "E",
+          "label": "범위를 밝힌 결론 / Qualified conclusion",
+          "shape": "box"
+        },
+        {
+          "id": "F",
+          "label": "새 근거에 따른 수정 / Revision with new evidence",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "A",
+          "head": "B",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "B",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "C",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "E",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "E",
+          "head": "F",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    },
+    {
+      "document": "분야_topics/60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md",
+      "stem": "evidence-causality-institutions",
+      "nodes": [
+        {
+          "id": "U",
+          "label": "기존 역량·기회 / Prior skills and opportunities",
+          "shape": "box"
+        },
+        {
+          "id": "D",
+          "label": "훈련 참여 / Participation",
+          "shape": "box"
+        },
+        {
+          "id": "Y",
+          "label": "취업 결과 / Employment outcome",
+          "shape": "box"
+        }
+      ],
+      "edges": [
+        {
+          "tail": "U",
+          "head": "D",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "U",
+          "head": "Y",
+          "label": "",
+          "dashed": false
+        },
+        {
+          "tail": "D",
+          "head": "Y",
+          "label": "",
+          "dashed": false
+        }
+      ],
+      "source_type": "flowchart LR"
+    }
+  ],
+  "visual_style": "technical-line-art-v2",
+  "design_references": [
+    "https://mitcommlab.mit.edu/aeroastro/commkit/figure-design/",
+    "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-graphics-for-your-article/file-formatting/"
+  ]
+}

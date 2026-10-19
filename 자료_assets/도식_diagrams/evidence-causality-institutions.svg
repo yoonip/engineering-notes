@@ -1,0 +1,47 @@
+<svg width="212pt" height="280pt"
+ viewBox="0.00 0.00 212.00 280.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 265.41)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-265.41 197.92,-265.41 197.92,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>U&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M82.9,-177.57C78.25,-168.61 73.29,-159.03 68.72,-150.21"/>
+<polygon fill="#596570" stroke="#596570" points="70.86,-149.38 65.85,-144.66 66.82,-151.48 70.86,-149.38"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>U&#45;&gt;Y</title>
+<path fill="none" stroke="#596570" d="M110.62,-177.84C115.09,-160.35 119.52,-143 119.52,-143 119.52,-143 119.52,-89 119.52,-89 119.52,-89 115.61,-75.77 111.44,-61.63"/>
+<polygon fill="#596570" stroke="#596570" points="113.7,-61.27 109.68,-55.68 109.34,-62.55 113.7,-61.27"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>D&#45;&gt;Y</title>
+<path fill="none" stroke="#596570" d="M66.52,-88.9C71.51,-80.2 77.15,-70.4 82.41,-61.24"/>
+<polygon fill="#596570" stroke="#596570" points="84.33,-62.47 85.6,-55.7 80.39,-60.2 84.33,-62.47"/>
+</g>
+
+<g id="node1" class="node">
+<title>U</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="160.02,-251.01 43.02,-251.01 43.02,-178 160.02,-178 160.02,-251.01"/>
+<text xml:space="preserve" text-anchor="middle" x="101.52" y="-227.1" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">기존 역량·기회</text>
+<text xml:space="preserve" text-anchor="middle" x="101.52" y="-210.3" font-family="Malgun Gothic" font-size="12" fill="#596570">Prior skills and</text>
+<text xml:space="preserve" text-anchor="middle" x="101.52" y="-193.5" font-family="Malgun Gothic" font-size="12" fill="#596570">opportunities</text>
+</g>
+
+<g id="node2" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="103.03,-143 0,-143 0,-89 103.03,-89 103.03,-143"/>
+<text xml:space="preserve" text-anchor="middle" x="51.52" y="-120.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">훈련 참여</text>
+<text xml:space="preserve" text-anchor="middle" x="51.52" y="-103.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Participation</text>
+</g>
+
+<g id="node3" class="node">
+<title>Y</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="183.52,-54 19.51,-54 19.51,0 183.52,0 183.52,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="101.52" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">취업 결과</text>
+<text xml:space="preserve" text-anchor="middle" x="101.52" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Employment outcome</text>
+</g>
+</g>
+</svg>

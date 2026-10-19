@@ -1,0 +1,85 @@
+<svg width="215pt" height="344pt"
+ viewBox="0.00 0.00 215.00 344.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 329.36)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-329.36 200.9,-329.36 200.9,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>Q&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M35.64,-279.66C39.92,-271.34 45.16,-261.16 49.84,-252.08"/>
+<polygon fill="#596570" stroke="#596570" points="51.79,-253.25 52.75,-246.43 47.75,-251.17 51.79,-253.25"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>D&#45;&gt;S</title>
+<path fill="none" stroke="#596570" d="M61.99,-209.66C61.99,-201.6 61.99,-191.77 61.99,-182.9"/>
+<polygon fill="#596570" stroke="#596570" points="64.27,-183.11 61.99,-176.61 59.72,-183.11 64.27,-183.11"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>K&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M88.34,-279.66C84.06,-271.34 78.82,-261.16 74.14,-252.08"/>
+<polygon fill="#596570" stroke="#596570" points="76.23,-251.17 71.24,-246.43 72.19,-253.25 76.23,-251.17"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>S&#45;&gt;A</title>
+<path fill="none" stroke="#596570" d="M61.99,-139.67C61.99,-131.6 61.99,-121.78 61.99,-112.91"/>
+<polygon fill="#596570" stroke="#596570" points="64.27,-113.12 61.99,-106.62 59.72,-113.12 64.27,-113.12"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>A&#45;&gt;O</title>
+<path fill="none" stroke="#596570" d="M74.85,-69.68C81.39,-61.12 89.45,-50.58 96.55,-41.3"/>
+<polygon fill="#596570" stroke="#596570" points="98.22,-42.86 100.37,-36.31 94.61,-40.09 98.22,-42.86"/>
+</g>
+
+<g id="edge6" class="edge">
+<title>V&#45;&gt;O</title>
+<path fill="none" stroke="#596570" d="M153.89,-69.68C147.22,-61.12 139,-50.58 131.77,-41.3"/>
+<polygon fill="#596570" stroke="#596570" points="133.66,-40.03 127.87,-36.3 130.07,-42.83 133.66,-40.03"/>
+</g>
+
+<g id="node1" class="node">
+<title>Q</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="47.01,-314.96 6.98,-314.96 6.98,-279.97 47.01,-279.97 47.01,-314.96"/>
+<text xml:space="preserve" text-anchor="middle" x="26.99" y="-293.26" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">Q</text>
+</g>
+
+<g id="node2" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="118.01,-244.97 5.98,-244.97 5.98,-209.98 118.01,-209.98 118.01,-244.97"/>
+<text xml:space="preserve" text-anchor="middle" x="61.99" y="-223.27" font-family="Malgun Gothic" font-size="12" fill="#596570">QK transpose</text>
+</g>
+
+<g id="node3" class="node">
+<title>K</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="114.49,-314.96 79.5,-314.96 79.5,-279.97 114.49,-279.97 114.49,-314.96"/>
+<text xml:space="preserve" text-anchor="middle" x="96.99" y="-293.26" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">K</text>
+</g>
+
+<g id="node4" class="node">
+<title>S</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="123.98,-174.98 0,-174.98 0,-139.98 123.98,-139.98 123.98,-174.98"/>
+<text xml:space="preserve" text-anchor="middle" x="61.99" y="-153.28" font-family="Malgun Gothic" font-size="12" fill="#596570">Scale and mask</text>
+</g>
+
+<g id="node5" class="node">
+<title>A</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="115.49,-104.98 8.5,-104.98 8.5,-69.99 115.49,-69.99 115.49,-104.98"/>
+<text xml:space="preserve" text-anchor="middle" x="61.99" y="-83.29" font-family="Malgun Gothic" font-size="12" fill="#596570">Row softmax</text>
+</g>
+
+<g id="node6" class="node">
+<title>O</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="172.49,-34.99 55.49,-34.99 55.49,0 172.49,0 172.49,-34.99"/>
+<text xml:space="preserve" text-anchor="middle" x="113.99" y="-13.3" font-family="Malgun Gothic" font-size="12" fill="#596570">Weighted sum</text>
+</g>
+
+<g id="node7" class="node">
+<title>V</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="186.5,-104.98 147.48,-104.98 147.48,-69.99 186.5,-69.99 186.5,-104.98"/>
+<text xml:space="preserve" text-anchor="middle" x="166.99" y="-83.29" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">V</text>
+</g>
+</g>
+</svg>

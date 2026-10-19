@@ -1,0 +1,37 @@
+<svg width="239pt" height="202pt"
+ viewBox="0.00 0.00 239.00 202.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 187.2)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-187.2 224.39,-187.2 224.39,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>U&#45;&gt;K</title>
+<path fill="none" stroke="#596570" d="M29.47,-118.44C14.71,-109.07 1.68,-100.8 1.68,-100.8 1.68,-100.8 1.68,-72 1.68,-72 1.68,-72 10.96,-66.11 22.72,-58.64"/>
+<polygon fill="#596570" stroke="#596570" points="23.93,-60.57 28.2,-55.17 21.49,-56.73 23.93,-60.57"/>
+<text xml:space="preserve" text-anchor="middle" x="49.84" y="-90" font-family="Malgun Gothic" font-size="12.00" fill="#374a59">평형점으로 이동</text>
+<text xml:space="preserve" text-anchor="middle" x="49.84" y="-75.6" font-family="Malgun Gothic" font-size="12" fill="#596570">Toward equilibrium</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>K&#45;&gt;U</title>
+<path fill="none" stroke="#596570" d="M89.56,-54.36C96.16,-63.73 101.99,-72 101.99,-72 101.99,-72 101.99,-100.8 101.99,-100.8 101.99,-100.8 98.58,-105.65 94.01,-112.13"/>
+<polygon fill="#596570" stroke="#596570" points="92.32,-110.58 90.43,-117.21 96.04,-113.2 92.32,-110.58"/>
+<text xml:space="preserve" text-anchor="middle" x="155.99" y="-90" font-family="Malgun Gothic" font-size="12.00" fill="#374a59">평형점을 지나 스프링 변형</text>
+<text xml:space="preserve" text-anchor="middle" x="155.99" y="-75.6" font-family="Malgun Gothic" font-size="12" fill="#596570">Spring deformation</text>
+</g>
+
+<g id="node1" class="node">
+<title>U</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="141.98,-172.8 0,-172.8 0,-118.8 141.98,-118.8 141.98,-172.8"/>
+<text xml:space="preserve" text-anchor="middle" x="70.99" y="-150" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">스프링 위치에너지</text>
+<text xml:space="preserve" text-anchor="middle" x="70.99" y="-133.2" font-family="Malgun Gothic" font-size="12" fill="#596570">Spring energy</text>
+</g>
+
+<g id="node2" class="node">
+<title>K</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="135,-54 6.98,-54 6.98,0 135,0 135,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="70.99" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">물체 운동에너지</text>
+<text xml:space="preserve" text-anchor="middle" x="70.99" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Kinetic energy</text>
+</g>
+</g>
+</svg>

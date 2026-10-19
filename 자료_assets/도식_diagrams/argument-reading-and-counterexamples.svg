@@ -1,0 +1,79 @@
+<svg width="334pt" height="350pt"
+ viewBox="0.00 0.00 334.00 350.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 335.4)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-335.4 319.37,-335.4 319.37,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>P&#45;&gt;I</title>
+<path fill="none" stroke="#596570" d="M216.98,-177.9C210.93,-169.12 204.09,-159.2 197.72,-149.97"/>
+<polygon fill="#596570" stroke="#596570" points="199.6,-148.69 194.04,-144.63 195.86,-151.27 199.6,-148.69"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>I&#45;&gt;C</title>
+<path fill="none" stroke="#596570" d="M155.18,-88.9C148.46,-80.03 140.86,-70.01 133.79,-60.7"/>
+<polygon fill="#596570" stroke="#596570" points="135.66,-59.39 129.92,-55.59 132.03,-62.14 135.66,-59.39"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>A&#45;&gt;I</title>
+<path fill="none" stroke="#596570" stroke-dasharray="5,2" d="M132.99,-177.9C139.04,-169.12 145.88,-159.2 152.25,-149.97"/>
+<polygon fill="#596570" stroke="#596570" points="154.11,-151.27 155.93,-144.63 150.36,-148.69 154.11,-151.27"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>E&#45;&gt;P</title>
+<path fill="none" stroke="#596570" stroke-dasharray="5,2" d="M234.98,-266.9C234.98,-258.54 234.98,-249.16 234.98,-240.32"/>
+<polygon fill="#596570" stroke="#596570" points="237.26,-240.4 234.98,-233.9 232.71,-240.4 237.26,-240.4"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>S&#45;&gt;C</title>
+<path fill="none" stroke="#596570" stroke-dasharray="5,2" d="M62.79,-88.9C69.51,-80.03 77.11,-70.01 84.18,-60.7"/>
+<polygon fill="#596570" stroke="#596570" points="85.94,-62.14 88.05,-55.59 82.31,-59.39 85.94,-62.14"/>
+</g>
+
+<g id="node1" class="node">
+<title>P</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="275.48,-232 194.48,-232 194.48,-178 275.48,-178 275.48,-232"/>
+<text xml:space="preserve" text-anchor="middle" x="234.98" y="-209.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">근거</text>
+<text xml:space="preserve" text-anchor="middle" x="234.98" y="-192.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Evidence</text>
+</g>
+
+<g id="node2" class="node">
+<title>I</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="231.97,-143 118,-143 118,-89 231.97,-89 231.97,-143"/>
+<text xml:space="preserve" text-anchor="middle" x="174.98" y="-120.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">연결 가정</text>
+<text xml:space="preserve" text-anchor="middle" x="174.98" y="-103.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Inferential link</text>
+</g>
+
+<g id="node3" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="156,-54 61.97,-54 61.97,0 156,0 156,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="108.98" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">결론</text>
+<text xml:space="preserve" text-anchor="middle" x="108.98" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Conclusion</text>
+</g>
+
+<g id="node4" class="node">
+<title>A</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="162,-232 67.97,-232 67.97,-178 162,-178 162,-232"/>
+<text xml:space="preserve" text-anchor="middle" x="114.98" y="-209.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">대안 설명</text>
+<text xml:space="preserve" text-anchor="middle" x="114.98" y="-192.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Alternative</text>
+</g>
+
+<g id="node5" class="node">
+<title>E</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="304.97,-321 165,-321 165,-267 304.97,-267 304.97,-321"/>
+<text xml:space="preserve" text-anchor="middle" x="234.98" y="-298.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">반대 자료</text>
+<text xml:space="preserve" text-anchor="middle" x="234.98" y="-281.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Contrary evidence</text>
+</g>
+
+<g id="node6" class="node">
+<title>S</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="85.97,-143 0,-143 0,-89 85.97,-89 85.97,-143"/>
+<text xml:space="preserve" text-anchor="middle" x="42.98" y="-120.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">적용 범위</text>
+<text xml:space="preserve" text-anchor="middle" x="42.98" y="-103.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Scope</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,79 @@
+<svg width="217pt" height="528pt"
+ viewBox="0.00 0.00 217.00 528.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 513.4)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-513.4 202.39,-513.4 202.39,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#596570" d="M94,-444.9C94,-436.54 94,-427.16 94,-418.32"/>
+<polygon fill="#596570" stroke="#596570" points="96.27,-418.4 94,-411.9 91.72,-418.4 96.27,-418.4"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>B&#45;&gt;C</title>
+<path fill="none" stroke="#596570" d="M94,-355.9C94,-347.54 94,-338.16 94,-329.32"/>
+<polygon fill="#596570" stroke="#596570" points="96.27,-329.4 94,-322.9 91.72,-329.4 96.27,-329.4"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M94,-266.9C94,-258.54 94,-249.16 94,-240.32"/>
+<polygon fill="#596570" stroke="#596570" points="96.27,-240.4 94,-233.9 91.72,-240.4 96.27,-240.4"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>D&#45;&gt;E</title>
+<path fill="none" stroke="#596570" d="M94,-177.9C94,-169.54 94,-160.16 94,-151.32"/>
+<polygon fill="#596570" stroke="#596570" points="96.27,-151.4 94,-144.9 91.72,-151.4 96.27,-151.4"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>E&#45;&gt;F</title>
+<path fill="none" stroke="#596570" d="M94,-88.9C94,-80.54 94,-71.16 94,-62.32"/>
+<polygon fill="#596570" stroke="#596570" points="96.27,-62.4 94,-55.9 91.72,-62.4 96.27,-62.4"/>
+</g>
+
+<g id="node1" class="node">
+<title>A</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="177.01,-499 10.98,-499 10.98,-445 177.01,-445 177.01,-499"/>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-476.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">원문과 조건</text>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-459.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Source and conditions</text>
+</g>
+
+<g id="node2" class="node">
+<title>B</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="173.48,-410 14.51,-410 14.51,-356 173.48,-356 173.48,-410"/>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-387.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">독립 풀이</text>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-370.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Independent attempt</text>
+</g>
+
+<g id="node3" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="186.98,-321 1.01,-321 1.01,-267 186.98,-267 186.98,-321"/>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-298.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">공식 답과 검산</text>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-281.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Official answer and check</text>
+</g>
+
+<g id="node4" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="163.01,-232 24.98,-232 24.98,-178 163.01,-178 163.01,-232"/>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-209.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">오류 원인 수정</text>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-192.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Correct the cause</text>
+</g>
+
+<g id="node5" class="node">
+<title>E</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="158.51,-143 29.48,-143 29.48,-89 158.51,-89 158.51,-143"/>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-120.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">시간 뒤 인출</text>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-103.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Delayed retrieval</text>
+</g>
+
+<g id="node6" class="node">
+<title>F</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="187.99,-54 0,-54 0,0 187.99,0 187.99,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">새 자료에서 확인</text>
+<text xml:space="preserve" text-anchor="middle" x="94" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Check on unseen material</text>
+</g>
+</g>
+</svg>

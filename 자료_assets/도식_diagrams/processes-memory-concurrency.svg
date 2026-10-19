@@ -1,0 +1,82 @@
+<svg width="341pt" height="523pt"
+ viewBox="0.00 0.00 341.00 523.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 508.58)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-508.58 326.4,-508.58 326.4,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>VA&#45;&gt;SPLIT</title>
+<path fill="none" stroke="#596570" d="M167.5,-439.96C167.5,-430.99 167.5,-420.82 167.5,-411.31"/>
+<polygon fill="#596570" stroke="#596570" points="169.78,-411.54 167.5,-405.04 165.23,-411.54 169.78,-411.54"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>SPLIT&#45;&gt;LOOKUP</title>
+<path fill="none" stroke="#596570" d="M167.5,-348.96C167.5,-339.99 167.5,-329.82 167.5,-320.31"/>
+<polygon fill="#596570" stroke="#596570" points="169.78,-320.54 167.5,-314.04 165.23,-320.54 169.78,-320.54"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>LOOKUP&#45;&gt;CHECK</title>
+<path fill="none" stroke="#596570" d="M167.5,-257.76C167.5,-249.16 167.5,-239.19 167.5,-229.03"/>
+<polygon fill="#596570" stroke="#596570" points="169.78,-229.26 167.5,-222.76 165.23,-229.26 169.78,-229.26"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>CHECK&#45;&gt;PA</title>
+<path fill="none" stroke="#596570" d="M139.58,-118.35C127.55,-99.63 113.7,-78.09 102.55,-60.75"/>
+<polygon fill="#596570" stroke="#596570" points="104.51,-59.59 99.08,-55.35 100.68,-62.05 104.51,-59.59"/>
+<text xml:space="preserve" text-anchor="middle" x="126.13" y="-75.6" font-family="Malgun Gothic" font-size="12.00" fill="#374a59">Yes</text>
+</g>
+
+<g id="edge5" class="edge">
+<title>CHECK&#45;&gt;FAULT</title>
+<path fill="none" stroke="#596570" d="M195.43,-118.35C207.46,-99.63 221.3,-78.09 232.46,-60.75"/>
+<polygon fill="#596570" stroke="#596570" points="234.32,-62.05 235.92,-55.35 230.5,-59.59 234.32,-62.05"/>
+<text xml:space="preserve" text-anchor="middle" x="230.57" y="-75.6" font-family="Malgun Gothic" font-size="12.00" fill="#374a59">No</text>
+</g>
+
+<g id="node1" class="node">
+<title>VA</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="227.52,-494.18 107.49,-494.18 107.49,-440.18 227.52,-440.18 227.52,-494.18"/>
+<text xml:space="preserve" text-anchor="middle" x="167.5" y="-471.38" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">가상 주소</text>
+<text xml:space="preserve" text-anchor="middle" x="167.5" y="-454.58" font-family="Malgun Gothic" font-size="12" fill="#596570">Virtual address</text>
+</g>
+
+<g id="node2" class="node">
+<title>SPLIT</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="249.01,-403.18 86,-403.18 86,-349.18 249.01,-349.18 249.01,-403.18"/>
+<text xml:space="preserve" text-anchor="middle" x="167.5" y="-380.38" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">페이지 번호 + 오프셋</text>
+<text xml:space="preserve" text-anchor="middle" x="167.5" y="-363.58" font-family="Malgun Gothic" font-size="12" fill="#596570">VPN + offset</text>
+</g>
+
+<g id="node3" class="node">
+<title>LOOKUP</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="255.49,-312.18 79.52,-312.18 79.52,-258.18 255.49,-258.18 255.49,-312.18"/>
+<text xml:space="preserve" text-anchor="middle" x="167.5" y="-289.38" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">TLB 또는 페이지 테이블</text>
+<text xml:space="preserve" text-anchor="middle" x="167.5" y="-272.58" font-family="Malgun Gothic" font-size="12" fill="#596570">Translation lookup</text>
+</g>
+
+<g id="node4" class="node">
+<title>CHECK</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="167.5,-221.18 52.3,-162.79 167.5,-104.4 282.7,-162.79 167.5,-221.18"/>
+<text xml:space="preserve" text-anchor="middle" x="167.5" y="-175.39" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">매핑·권한 유효?</text>
+<text xml:space="preserve" text-anchor="middle" x="167.5" y="-158.59" font-family="Malgun Gothic" font-size="12" fill="#596570">Valid mapping and</text>
+<text xml:space="preserve" text-anchor="middle" x="167.5" y="-141.79" font-family="Malgun Gothic" font-size="12" fill="#596570">permission?</text>
+</g>
+
+<g id="node5" class="node">
+<title>PA</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="163.01,-54 0,-54 0,0 163.01,0 163.01,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="81.5" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">물리 프레임 + 오프셋</text>
+<text xml:space="preserve" text-anchor="middle" x="81.5" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">PFN + offset</text>
+</g>
+
+<g id="node6" class="node">
+<title>FAULT</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="312,-54 195,-54 195,0 312,0 312,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="253.5" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">예외·커널 처리</text>
+<text xml:space="preserve" text-anchor="middle" x="253.5" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Fault handling</text>
+</g>
+</g>
+</svg>

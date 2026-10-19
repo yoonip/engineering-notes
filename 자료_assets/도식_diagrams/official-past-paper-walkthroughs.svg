@@ -1,0 +1,70 @@
+<svg width="1202pt" height="115pt"
+ viewBox="0.00 0.00 1202.00 115.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 100.8)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-100.8 1187.15,-100.8 1187.15,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>S&#45;&gt;C</title>
+<path fill="none" stroke="#596570" d="M184.44,-43.2C193.41,-43.2 202.66,-43.2 211.98,-43.2"/>
+<polygon fill="#596570" stroke="#596570" points="211.82,-45.48 218.32,-43.2 211.82,-40.93 211.82,-45.48"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>C&#45;&gt;P</title>
+<path fill="none" stroke="#596570" d="M490.99,-43.2C506.59,-43.2 522.03,-43.2 536.36,-43.2"/>
+<polygon fill="#596570" stroke="#596570" points="536.19,-45.48 542.69,-43.2 536.19,-40.93 536.19,-45.48"/>
+<text xml:space="preserve" text-anchor="middle" x="517.14" y="-61.2" font-family="Malgun Gothic" font-size="12.00" fill="#374a59">해당</text>
+<text xml:space="preserve" text-anchor="middle" x="517.14" y="-46.8" font-family="Malgun Gothic" font-size="12.00" fill="#374a59">Yes</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>P&#45;&gt;R</title>
+<path fill="none" stroke="#596570" d="M677.76,-43.2C686.56,-43.2 695.82,-43.2 705.26,-43.2"/>
+<polygon fill="#596570" stroke="#596570" points="705.21,-45.48 711.71,-43.2 705.21,-40.93 705.21,-45.48"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>R&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M957.17,-43.2C972.57,-43.2 988.09,-43.2 1002.84,-43.2"/>
+<polygon fill="#596570" stroke="#596570" points="1002.45,-45.48 1008.95,-43.2 1002.45,-40.93 1002.45,-45.48"/>
+<text xml:space="preserve" text-anchor="middle" x="983.42" y="-61.2" font-family="Malgun Gothic" font-size="12.00" fill="#374a59">해당</text>
+<text xml:space="preserve" text-anchor="middle" x="983.42" y="-46.8" font-family="Malgun Gothic" font-size="12.00" fill="#374a59">Yes</text>
+</g>
+
+<g id="node1" class="node">
+<title>S</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="184.03,-70.2 0,-70.2 0,-16.2 184.03,-16.2 184.03,-70.2"/>
+<text xml:space="preserve" text-anchor="middle" x="92.02" y="-47.4" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">문제의 사고 조건</text>
+<text xml:space="preserve" text-anchor="middle" x="92.02" y="-30.6" font-family="Malgun Gothic" font-size="12" fill="#596570">Given incident conditions</text>
+</g>
+
+<g id="node2" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="355.42,-86.4 221.03,-43.2 355.42,0 489.81,-43.2 355.42,-86.4"/>
+<text xml:space="preserve" text-anchor="middle" x="355.42" y="-47.4" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">국가 보상 대상?</text>
+<text xml:space="preserve" text-anchor="middle" x="355.42" y="-30.6" font-family="Malgun Gothic" font-size="12" fill="#596570">Compensation eligible?</text>
+</g>
+
+<g id="node3" class="node">
+<title>P</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="677.45,-70.2 544.47,-70.2 544.47,-16.2 677.45,-16.2 677.45,-70.2"/>
+<text xml:space="preserve" text-anchor="middle" x="610.96" y="-47.4" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">피해자에게 지급</text>
+<text xml:space="preserve" text-anchor="middle" x="610.96" y="-30.6" font-family="Malgun Gothic" font-size="12" fill="#596570">Pay injured party</text>
+</g>
+
+<g id="node4" class="node">
+<title>R</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="835.27,-86.4 714.45,-43.2 835.27,0 956.09,-43.2 835.27,-86.4"/>
+<text xml:space="preserve" text-anchor="middle" x="835.27" y="-47.4" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">사후 청구 조건?</text>
+<text xml:space="preserve" text-anchor="middle" x="835.27" y="-30.6" font-family="Malgun Gothic" font-size="12" fill="#596570">Recourse condition?</text>
+</g>
+
+<g id="node5" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="1172.75,-70.2 1010.75,-70.2 1010.75,-16.2 1172.75,-16.2 1172.75,-70.2"/>
+<text xml:space="preserve" text-anchor="middle" x="1091.75" y="-47.4" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">의료인에게 청구 가능</text>
+<text xml:space="preserve" text-anchor="middle" x="1091.75" y="-30.6" font-family="Malgun Gothic" font-size="12" fill="#596570">Recourse permitted</text>
+</g>
+</g>
+</svg>

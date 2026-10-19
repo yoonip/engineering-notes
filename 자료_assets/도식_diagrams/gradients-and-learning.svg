@@ -1,0 +1,85 @@
+<svg width="436pt" height="337pt"
+ viewBox="0.00 0.00 436.00 337.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 322.39)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-322.39 421.92,-322.39 421.92,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>X&#45;&gt;Z</title>
+<path fill="none" stroke="#596570" d="M155.01,-253.96C155.01,-244.67 155.01,-234.24 155.01,-225.07"/>
+<polygon fill="#596570" stroke="#596570" points="157.28,-225.1 155.01,-218.6 152.73,-225.1 157.28,-225.1"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>Z&#45;&gt;S</title>
+<path fill="none" stroke="#596570" d="M129.98,-181.64C112.07,-169.57 87.82,-153.23 68.58,-140.27"/>
+<polygon fill="#596570" stroke="#596570" points="69.91,-138.43 63.25,-136.68 67.37,-142.2 69.91,-138.43"/>
+</g>
+
+<g id="edge6" class="edge">
+<title>Z&#45;&gt;W</title>
+<path fill="none" stroke="#596570" stroke-dasharray="5,2" d="M155.01,-181.64C155.01,-173.29 155.01,-162.91 155.01,-153.01"/>
+<polygon fill="#596570" stroke="#596570" points="157.28,-153.24 155.01,-146.74 152.73,-153.24 157.28,-153.24"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>S&#45;&gt;L</title>
+<path fill="none" stroke="#596570" d="M72.12,-100.09C82.44,-95.13 91.01,-91 91.01,-91 91.01,-91 181.88,-58.47 233.03,-40.16"/>
+<polygon fill="#596570" stroke="#596570" points="233.5,-42.41 238.85,-38.08 231.97,-38.13 233.5,-42.41"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>L&#45;&gt;Z</title>
+<path fill="none" stroke="#596570" stroke-dasharray="5,2" d="M256.24,-54.26C242.08,-88.75 219.01,-145 219.01,-145 219.01,-145 198.83,-161.87 181.13,-176.66"/>
+<polygon fill="#596570" stroke="#596570" points="179.95,-174.68 176.42,-180.6 182.87,-178.18 179.95,-174.68"/>
+<text xml:space="preserve" text-anchor="middle" x="261.6" y="-121.6" font-family="Malgun Gothic" font-size="12.00" fill="#374a59">기울기</text>
+<text xml:space="preserve" text-anchor="middle" x="261.6" y="-107.2" font-family="Malgun Gothic" font-size="12" fill="#596570">Gradient</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>Y&#45;&gt;L</title>
+<path fill="none" stroke="#596570" d="M342.48,-90.78C329.01,-79.57 313.29,-66.5 299.69,-55.19"/>
+<polygon fill="#596570" stroke="#596570" points="301.23,-53.5 294.78,-51.1 298.32,-57 301.23,-53.5"/>
+</g>
+
+<g id="node1" class="node">
+<title>X</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="188.02,-307.99 122,-307.99 122,-253.99 188.02,-253.99 188.02,-307.99"/>
+<text xml:space="preserve" text-anchor="middle" x="155.01" y="-285.19" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">입력 x</text>
+<text xml:space="preserve" text-anchor="middle" x="155.01" y="-268.39" font-family="Malgun Gothic" font-size="12" fill="#596570">Input</text>
+</g>
+
+<g id="node2" class="node">
+<title>Z</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="186,-216.99 124.01,-216.99 124.01,-182 186,-182 186,-216.99"/>
+<text xml:space="preserve" text-anchor="middle" x="155.01" y="-195.3" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">wx+b</text>
+</g>
+
+<g id="node3" class="node">
+<title>S</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="74.02,-135.5 0,-135.5 0,-100.5 74.02,-100.5 74.02,-135.5"/>
+<text xml:space="preserve" text-anchor="middle" x="37.01" y="-113.8" font-family="Malgun Gothic" font-size="12" fill="#596570">sigmoid</text>
+</g>
+
+<g id="node4" class="node">
+<title>L</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="293.5,-54 240.51,-54 240.51,0 293.5,0 293.5,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="267.01" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">손실</text>
+<text xml:space="preserve" text-anchor="middle" x="267.01" y="-14.4" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">Loss</text>
+</g>
+
+<g id="node5" class="node">
+<title>Y</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="407.52,-145 340.49,-145 340.49,-91 407.52,-91 407.52,-145"/>
+<text xml:space="preserve" text-anchor="middle" x="374.01" y="-122.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">정답 y</text>
+<text xml:space="preserve" text-anchor="middle" x="374.01" y="-105.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Label</text>
+</g>
+
+<g id="node6" class="node">
+<title>W</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="203.5,-145 106.52,-145 106.52,-91 203.5,-91 203.5,-145"/>
+<text xml:space="preserve" text-anchor="middle" x="155.01" y="-122.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">갱신</text>
+<text xml:space="preserve" text-anchor="middle" x="155.01" y="-105.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Update w,b</text>
+</g>
+</g>
+</svg>

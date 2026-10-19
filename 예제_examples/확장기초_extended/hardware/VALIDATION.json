@@ -1,0 +1,22 @@
+{
+  "checked_on": "2026-10-19",
+  "runtime": "CPython 3.12.14",
+  "command": "python -m unittest discover -s 예제_examples/확장기초_extended/hardware -p \"test_*.py\" -v",
+  "tests_run": 12,
+  "failures": 0,
+  "errors": 0,
+  "result": "PASS",
+  "scope": "Standard-library reference models and independent numerical/logical checks",
+  "bpsk_simulated_bits": 600000,
+  "ready_valid_random_cycles": 5000,
+  "counter_depths_checked": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+  "fault_model": "Ten uncollapsed single stuck-at faults on a,b,c,n,y of n=a AND b; y=n OR c",
+  "not_executed": [
+    "RTL simulator or formal solver",
+    "Spectre or another transistor-level simulator",
+    "Synthesis, placement, routing or production STA",
+    "DRC, LVS, foundry signoff or ATPG tool",
+    "FPGA/ASIC board, ATE or manufacturing yield measurement",
+    "Physical PDN, radio, thermal or memristive-array measurement"
+  ]
+}

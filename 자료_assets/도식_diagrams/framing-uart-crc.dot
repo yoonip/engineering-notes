@@ -1,0 +1,19 @@
+digraph Diagram {
+graph [rankdir=TB,bgcolor="white",pad="0.2",nodesep="0.45",ranksep="0.48",splines=polyline,outputorder=edgesfirst];
+node [fontname="Malgun Gothic",fontsize=14,shape=box,style=filled,color="#596570",fillcolor="#ffffff",fontcolor="#252c33",penwidth=0.9,margin="0.12,0.08"];
+edge [fontname="Malgun Gothic",fontsize=12,color="#596570",fontcolor="#374a59",penwidth=1.0,arrowsize=0.65];
+"__START"[label="",shape=point,width=0.07,height=0.07];
+"WAIT"[label="WAIT",shape="box",width=0.847,height=0.486,fixedsize=true];
+"COLLECT"[label="COLLECT",shape="box",width=1.167,height=0.486,fixedsize=true];
+"ESCAPE"[label="ESCAPE",shape="box",width=1.028,height=0.486,fixedsize=true];
+"DROP"[label="DROP",shape="box",width=0.875,height=0.486,fixedsize=true];
+"__START"->"WAIT"[label="1"];
+"WAIT"->"COLLECT"[label="2"];
+"COLLECT"->"ESCAPE"[label="3"];
+"ESCAPE"->"COLLECT"[label="4"];
+"COLLECT"->"COLLECT"[label="5"];
+"COLLECT"->"DROP"[label="6"];
+"DROP"->"COLLECT"[label="7"];
+"COLLECT"->"COLLECT"[label="8"];
+"ESCAPE"->"COLLECT"[label="9"];
+}

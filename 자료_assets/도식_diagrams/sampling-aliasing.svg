@@ -1,0 +1,66 @@
+<svg width="814pt" height="83pt"
+ viewBox="0.00 0.00 814.00 83.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 68.4)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-68.4 799.45,-68.4 799.45,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#596570" d="M137.38,-27C146.05,-27 155.02,-27 163.93,-27"/>
+<polygon fill="#596570" stroke="#596570" points="163.72,-29.28 170.22,-27 163.72,-24.73 163.72,-29.28"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>B&#45;&gt;C</title>
+<path fill="none" stroke="#596570" d="M328.21,-27C337.15,-27 346.19,-27 354.9,-27"/>
+<polygon fill="#596570" stroke="#596570" points="354.78,-29.28 361.28,-27 354.78,-24.73 354.78,-29.28"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M473.16,-27C481.93,-27 491.06,-27 499.96,-27"/>
+<polygon fill="#596570" stroke="#596570" points="499.69,-29.28 506.19,-27 499.69,-24.73 499.69,-29.28"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>D&#45;&gt;E</title>
+<path fill="none" stroke="#596570" d="M614.18,-27C622.75,-27 631.79,-27 640.79,-27"/>
+<polygon fill="#596570" stroke="#596570" points="640.66,-29.28 647.16,-27 640.66,-24.73 640.66,-29.28"/>
+</g>
+
+<g id="node1" class="node">
+<title>A</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="137.02,-54 0,-54 0,0 137.02,0 137.02,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="68.51" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">연속 신호</text>
+<text xml:space="preserve" text-anchor="middle" x="68.51" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Continuous signal</text>
+</g>
+
+<g id="node2" class="node">
+<title>B</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="328.04,-54 172.02,-54 172.02,0 328.04,0 328.04,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="250.03" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">아날로그 대역 제한</text>
+<text xml:space="preserve" text-anchor="middle" x="250.03" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Analog band limiting</text>
+</g>
+
+<g id="node3" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="473.06,-54 363.04,-54 363.04,0 473.06,0 473.06,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="418.05" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">시간 표본</text>
+<text xml:space="preserve" text-anchor="middle" x="418.05" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Time samples</text>
+</g>
+
+<g id="node4" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="614.04,-54 508.06,-54 508.06,0 614.04,0 614.04,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="561.05" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">양자화</text>
+<text xml:space="preserve" text-anchor="middle" x="561.05" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Quantization</text>
+</g>
+
+<g id="node5" class="node">
+<title>E</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="785.05,-54 649.04,-54 649.04,0 785.05,0 785.05,-54"/>
+<text xml:space="preserve" text-anchor="middle" x="717.04" y="-31.2" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">디지털 처리</text>
+<text xml:space="preserve" text-anchor="middle" x="717.04" y="-14.4" font-family="Malgun Gothic" font-size="12" fill="#596570">Digital processing</text>
+</g>
+</g>
+</svg>

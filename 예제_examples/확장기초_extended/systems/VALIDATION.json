@@ -1,0 +1,23 @@
+{
+  "checked_on": "2026-10-19",
+  "command": "python -m unittest discover -s 예제_examples/확장기초_extended/systems -p 'test_*.py' -v",
+  "runtime": "CPython 3.12.14",
+  "platform": "Windows",
+  "tests_run": 25,
+  "result": "passed",
+  "independent_checks": [
+    "2x2 partial-pivot solve compared with exact Fraction reference for nonsingular generated integer systems",
+    "Dijkstra compared with Bellman-Ford on 240 generated graphs",
+    "Known record bytes, bounded malformed input and 100 generated round trips",
+    "Closed-form straight/spin/quarter-circle odometry plus subdivision and inverse travel",
+    "All six completion orders for three UI requests",
+    "Publication idempotency and injected replacement failure preserving old output",
+    "All 512 ordinary Unix modes and requested bit patterns"
+  ],
+  "scope": "Portable mathematical/state/file models; not a Linux, Jupyter, MATLAB, Git object, hardware, robot or mobile execution claim.",
+  "limitations": [
+    "Numerical model is 2x2 and not a production solver",
+    "Publication does not test power loss, concurrent writers, hostile paths or remote exactly-once effects",
+    "UI state calls are sequential, not thread-safe"
+  ]
+}

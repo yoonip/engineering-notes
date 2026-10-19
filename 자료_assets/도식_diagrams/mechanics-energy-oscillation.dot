@@ -1,0 +1,9 @@
+digraph Diagram {
+graph [rankdir=TB,bgcolor="white",pad="0.2",nodesep="0.45",ranksep="0.48",splines=polyline,outputorder=edgesfirst];
+node [fontname="Malgun Gothic",fontsize=14,shape=box,style=filled,color="#596570",fillcolor="#ffffff",fontcolor="#252c33",penwidth=0.9,margin="0.12,0.08"];
+edge [fontname="Malgun Gothic",fontsize=12,color="#596570",fontcolor="#374a59",penwidth=1.0,arrowsize=0.65];
+"U"[label="스프링 위치에너지\nSpring energy",shape="box",width=1.972,height=0.750,fixedsize=true];
+"K"[label="물체 운동에너지\nKinetic energy",shape="box",width=1.778,height=0.750,fixedsize=true];
+"U"->"K"[label="평형점으로 이동\nToward equilibrium"];
+"K"->"U"[label="평형점을 지나 스프링 변형\nSpring deformation"];
+}

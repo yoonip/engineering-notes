@@ -1,0 +1,67 @@
+<svg width="872pt" height="102pt"
+ viewBox="0.00 0.00 872.00 102.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 87.41)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-87.41 857.41,-87.41 857.41,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#596570" d="M126.36,-36.5C135.08,-36.5 144.11,-36.5 153.01,-36.5"/>
+<polygon fill="#596570" stroke="#596570" points="152.78,-38.78 159.28,-36.5 152.78,-34.23 152.78,-38.78"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>B&#45;&gt;C</title>
+<path fill="none" stroke="#596570" d="M294.16,-36.5C302.91,-36.5 311.87,-36.5 320.61,-36.5"/>
+<polygon fill="#596570" stroke="#596570" points="320.54,-38.78 327.04,-36.5 320.54,-34.23 320.54,-38.78"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M444.37,-36.5C452.77,-36.5 461.64,-36.5 470.66,-36.5"/>
+<polygon fill="#596570" stroke="#596570" points="470.6,-38.78 477.1,-36.5 470.6,-34.23 470.6,-38.78"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>D&#45;&gt;E</title>
+<path fill="none" stroke="#596570" d="M679.31,-36.5C688.29,-36.5 697.25,-36.5 705.92,-36.5"/>
+<polygon fill="#596570" stroke="#596570" points="705.77,-38.78 712.27,-36.5 705.77,-34.23 705.77,-38.78"/>
+</g>
+
+<g id="node1" class="node">
+<title>A</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="126,-63.5 0,-63.5 0,-9.5 126,-9.5 126,-63.5"/>
+<text xml:space="preserve" text-anchor="middle" x="63" y="-40.7" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">외부 바이트</text>
+<text xml:space="preserve" text-anchor="middle" x="63" y="-23.9" font-family="Malgun Gothic" font-size="12" fill="#596570">Untrusted bytes</text>
+</g>
+
+<g id="node2" class="node">
+<title>B</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="293.98,-63.5 161,-63.5 161,-9.5 293.98,-9.5 293.98,-63.5"/>
+<text xml:space="preserve" text-anchor="middle" x="227.49" y="-40.7" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">길이·형식 제한</text>
+<text xml:space="preserve" text-anchor="middle" x="227.49" y="-23.9" font-family="Malgun Gothic" font-size="12" fill="#596570">Bound and parse</text>
+</g>
+
+<g id="node3" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="443.97,-73.01 328.98,-73.01 328.98,0 443.97,0 443.97,-73.01"/>
+<text xml:space="preserve" text-anchor="middle" x="386.48" y="-49.1" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">무결성·인증</text>
+<text xml:space="preserve" text-anchor="middle" x="386.48" y="-32.3" font-family="Malgun Gothic" font-size="12" fill="#596570">Integrity and</text>
+<text xml:space="preserve" text-anchor="middle" x="386.48" y="-15.5" font-family="Malgun Gothic" font-size="12" fill="#596570">authentication</text>
+</g>
+
+<g id="node4" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="678.98,-63.5 478.97,-63.5 478.97,-9.5 678.98,-9.5 678.98,-63.5"/>
+<text xml:space="preserve" text-anchor="middle" x="578.98" y="-40.7" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">재전송·권한·범위 검사</text>
+<text xml:space="preserve" text-anchor="middle" x="578.98" y="-23.9" font-family="Malgun Gothic" font-size="12" fill="#596570">Freshness and authorization</text>
+</g>
+
+<g id="node5" class="node">
+<title>E</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="843.01,-63.5 713.98,-63.5 713.98,-9.5 843.01,-9.5 843.01,-63.5"/>
+<text xml:space="preserve" text-anchor="middle" x="778.5" y="-40.7" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">허용된 동작</text>
+<text xml:space="preserve" text-anchor="middle" x="778.5" y="-23.9" font-family="Malgun Gothic" font-size="12" fill="#596570">Permitted action</text>
+</g>
+</g>
+</svg>

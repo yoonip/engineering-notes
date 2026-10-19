@@ -1,0 +1,16 @@
+digraph Diagram {
+graph [rankdir=TB,bgcolor="white",pad="0.2",nodesep="0.45",ranksep="0.48",splines=polyline,outputorder=edgesfirst];
+node [fontname="Malgun Gothic",fontsize=14,shape=box,style=filled,color="#596570",fillcolor="#ffffff",fontcolor="#252c33",penwidth=0.9,margin="0.12,0.08"];
+edge [fontname="Malgun Gothic",fontsize=12,color="#596570",fontcolor="#374a59",penwidth=1.0,arrowsize=0.65];
+"A"[label="질문과 용어\nQuestion and terms",shape="box",width=2.097,height=0.750,fixedsize=true];
+"B"[label="사실·근거\nFacts and evidence",shape="box",width=2.028,height=0.750,fixedsize=true];
+"D"[label="전제·추론·반론\nPremises and objections",shape="box",width=2.444,height=0.750,fixedsize=true];
+"C"[label="가치·우선순위\nValues and priorities",shape="box",width=2.125,height=0.750,fixedsize=true];
+"E"[label="범위를 밝힌 결론\nQualified conclusion",shape="box",width=2.111,height=0.750,fixedsize=true];
+"F"[label="새 근거에 따른 수정\nRevision with new evidence",shape="box",width=2.736,height=0.750,fixedsize=true];
+"A"->"B"[label=""];
+"B"->"D"[label=""];
+"C"->"D"[label=""];
+"D"->"E"[label=""];
+"E"->"F"[label=""];
+}

@@ -1,0 +1,11 @@
+digraph Diagram {
+graph [rankdir=TB,bgcolor="white",pad="0.2",nodesep="0.45",ranksep="0.48",splines=polyline,outputorder=edgesfirst];
+node [fontname="Malgun Gothic",fontsize=14,shape=box,style=filled,color="#596570",fillcolor="#ffffff",fontcolor="#252c33",penwidth=0.9,margin="0.12,0.08"];
+edge [fontname="Malgun Gothic",fontsize=12,color="#596570",fontcolor="#374a59",penwidth=1.0,arrowsize=0.65];
+"U"[label="기존 역량·기회\nPrior skills and\nopportunities",shape="box",width=1.625,height=1.014,fixedsize=true];
+"D"[label="훈련 참여\nParticipation",shape="box",width=1.431,height=0.750,fixedsize=true];
+"Y"[label="취업 결과\nEmployment outcome",shape="box",width=2.278,height=0.750,fixedsize=true];
+"U"->"D"[label=""];
+"U"->"Y"[label=""];
+"D"->"Y"[label=""];
+}

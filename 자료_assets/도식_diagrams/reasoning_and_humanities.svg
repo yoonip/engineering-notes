@@ -1,0 +1,112 @@
+<svg width="605pt" height="388pt"
+ viewBox="0.00 0.00 605.00 388.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 373.42)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-14.4,14.4 -14.4,-373.42 590.4,-373.42 590.4,14.4 -14.4,14.4"/>
+
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#596570" d="M266.51,-304.65C258.68,-295.87 249.76,-285.86 241.16,-276.21"/>
+<polygon fill="#596570" stroke="#596570" points="242.89,-274.73 236.87,-271.39 239.5,-277.75 242.89,-274.73"/>
+</g>
+
+<g id="edge2" class="edge">
+<title>A&#45;&gt;C</title>
+<path fill="none" stroke="#596570" d="M313.51,-304.65C323.94,-292.94 336.31,-279.06 347.28,-266.75"/>
+<polygon fill="#596570" stroke="#596570" points="348.9,-268.35 351.53,-261.98 345.51,-265.32 348.9,-268.35"/>
+</g>
+
+<g id="edge3" class="edge">
+<title>B&#45;&gt;D</title>
+<path fill="none" stroke="#596570" d="M158.58,-196.58C146.35,-186.9 133.22,-176.52 121.36,-167.13"/>
+<polygon fill="#596570" stroke="#596570" points="122.97,-165.51 116.46,-163.26 120.15,-169.08 122.97,-165.51"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>B&#45;&gt;F</title>
+<path fill="none" stroke="#596570" d="M236.03,-196.58C244.34,-187.26 253.23,-177.28 261.35,-168.17"/>
+<polygon fill="#596570" stroke="#596570" points="262.92,-169.82 265.55,-163.45 259.53,-166.79 262.92,-169.82"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>C&#45;&gt;E</title>
+<path fill="none" stroke="#596570" d="M408.8,-206.14C423.75,-194.12 441.55,-179.8 457.17,-167.24"/>
+<polygon fill="#596570" stroke="#596570" points="458.44,-169.14 462.08,-163.29 455.59,-165.6 458.44,-169.14"/>
+</g>
+
+<g id="edge6" class="edge">
+<title>C&#45;&gt;F</title>
+<path fill="none" stroke="#596570" d="M352.51,-206.14C342.08,-194.44 329.71,-180.56 318.74,-168.25"/>
+<polygon fill="#596570" stroke="#596570" points="320.51,-166.82 314.49,-163.48 317.11,-169.84 320.51,-166.82"/>
+</g>
+
+<g id="edge7" class="edge">
+<title>D&#45;&gt;G</title>
+<path fill="none" stroke="#596570" d="M138.84,-107.64C159.36,-98.12 182.98,-87.16 205.36,-76.78"/>
+<polygon fill="#596570" stroke="#596570" points="206.26,-78.87 211.2,-74.07 204.35,-74.74 206.26,-78.87"/>
+</g>
+
+<g id="edge8" class="edge">
+<title>E&#45;&gt;G</title>
+<path fill="none" stroke="#596570" d="M439.72,-107.64C419.4,-98.12 396.01,-87.16 373.84,-76.78"/>
+<polygon fill="#596570" stroke="#596570" points="374.92,-74.77 368.07,-74.07 372.99,-78.89 374.92,-74.77"/>
+</g>
+
+<g id="edge9" class="edge">
+<title>F&#45;&gt;G</title>
+<path fill="none" stroke="#596570" d="M290.01,-107.64C290.01,-99.44 290.01,-90.17 290.01,-81.11"/>
+<polygon fill="#596570" stroke="#596570" points="292.28,-81.26 290.01,-74.76 287.73,-81.26 292.28,-81.26"/>
+</g>
+
+<g id="node1" class="node">
+<title>A</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="350.02,-359.02 230,-359.02 230,-305.02 350.02,-305.02 350.02,-359.02"/>
+<text xml:space="preserve" text-anchor="middle" x="290.01" y="-336.22" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">정확한 독해</text>
+<text xml:space="preserve" text-anchor="middle" x="290.01" y="-319.42" font-family="Malgun Gothic" font-size="12" fill="#596570">Precise reading</text>
+</g>
+
+<g id="node2" class="node">
+<title>B</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="269.49,-270.02 138.52,-270.02 138.52,-197.01 269.49,-197.01 269.49,-270.02"/>
+<text xml:space="preserve" text-anchor="middle" x="204.01" y="-246.11" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">논증과 반례</text>
+<text xml:space="preserve" text-anchor="middle" x="204.01" y="-229.31" font-family="Malgun Gothic" font-size="12" fill="#596570">Arguments and</text>
+<text xml:space="preserve" text-anchor="middle" x="204.01" y="-212.51" font-family="Malgun Gothic" font-size="12" fill="#596570">counterexamples</text>
+</g>
+
+<g id="node3" class="node">
+<title>C</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="451,-260.51 301.02,-260.51 301.02,-206.51 451,-206.51 451,-260.51"/>
+<text xml:space="preserve" text-anchor="middle" x="376.01" y="-237.71" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">숫자와 자료</text>
+<text xml:space="preserve" text-anchor="middle" x="376.01" y="-220.91" font-family="Malgun Gothic" font-size="12" fill="#596570">Quantities and data</text>
+</g>
+
+<g id="node4" class="node">
+<title>D</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="164.02,-162.01 0,-162.01 0,-108.01 164.02,-108.01 164.02,-162.01"/>
+<text xml:space="preserve" text-anchor="middle" x="82.01" y="-139.21" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">지식·가치</text>
+<text xml:space="preserve" text-anchor="middle" x="82.01" y="-122.41" font-family="Malgun Gothic" font-size="12" fill="#596570">Knowledge and values</text>
+</g>
+
+<g id="node5" class="node">
+<title>E</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="576,-162.01 416.02,-162.01 416.02,-108.01 576,-108.01 576,-162.01"/>
+<text xml:space="preserve" text-anchor="middle" x="496.01" y="-139.21" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">경제·사회</text>
+<text xml:space="preserve" text-anchor="middle" x="496.01" y="-122.41" font-family="Malgun Gothic" font-size="12" fill="#596570">Economy and society</text>
+</g>
+
+<g id="node6" class="node">
+<title>F</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="384,-162.01 196.01,-162.01 196.01,-108.01 384,-108.01 384,-162.01"/>
+<text xml:space="preserve" text-anchor="middle" x="290.01" y="-139.21" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">조건·법령</text>
+<text xml:space="preserve" text-anchor="middle" x="290.01" y="-122.41" font-family="Malgun Gothic" font-size="12" fill="#596570">Conditions and legal texts</text>
+</g>
+
+<g id="node7" class="node">
+<title>G</title>
+<polygon fill="#ffffff" stroke="#596570" stroke-width="0.9" points="394.52,-73.01 185.5,-73.01 185.5,0 394.52,0 394.52,-73.01"/>
+<text xml:space="preserve" text-anchor="middle" x="290.01" y="-49.1" font-family="Malgun Gothic" font-size="14.00" fill="#252c33">근거와 범위가 드러나는 판단</text>
+<text xml:space="preserve" text-anchor="middle" x="290.01" y="-32.3" font-family="Malgun Gothic" font-size="12" fill="#596570">Judgment with explicit</text>
+<text xml:space="preserve" text-anchor="middle" x="290.01" y="-15.5" font-family="Malgun Gothic" font-size="12" fill="#596570">grounds and scope</text>
+</g>
+</g>
+</svg>
