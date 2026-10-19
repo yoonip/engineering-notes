@@ -14,6 +14,8 @@
 
 ## 본문
 
+- [AI의 마음과 인간의 판단](해설_notes/AI의마음과인간의판단_minds-bodies-and-judgment.md): 행동·기능·경험의 동일성, 호르몬 연구의 인과 해석, 사실에서 가치 판단으로 넘어갈 때 필요한 전제를 다룹니다. [AI·마음 철학 논문](../../논문해설_papers/마음과인공지능철학_mind-ai-philosophy/README.md)과 [호르몬·행동 논문](../../논문해설_papers/호르몬과행동_hormones-behaviour/README.md)을 함께 읽으실 수 있습니다.
+
 - [철학 지문의 개념과 논증](해설_notes/철학지문과논증_PHILOSOPHICAL_READING.md): 철학의 주요 질문, 가상 지문의 입장 비교, 다섯 선택지의 근거와 조건 분석을 다룹니다.
 
 - [지식·논증·가치](해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md)
