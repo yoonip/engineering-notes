@@ -35,8 +35,8 @@
 양변의 분산을 취하면 공분산 행렬 $`\Sigma`$에 대해
 
 ```math
-u_c^2(y)\approx \mathbf c^T\Sigma\mathbf c
-=\sum_i c_i^2u_i^2+2\sum_{i<j}c_ic_j\mathrm{cov}(x_i,x_j).
+u_c^2(y)\approx \mathbf{c}^T\Sigma\mathbf{c}
+=\sum_i c_i^2u_i^2+2\sum_{i\lt j}c_ic_j\mathrm{cov}(x_i,x_j).
 ```
 
 입력 사이의 공분산이 0이면 교차항이 사라진다. 독립이면 이 조건을 만족하지만 무상관이 항상 독립을 뜻하지는 않는다. 비선형성이 크거나 입력이 분모의 0 근처에 있으면 1차 근사가 부적절할 수 있다. 이 유도와 조건은 [NIST TN 1297, Appendix A](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty)를 기준으로 확인했다.
@@ -80,8 +80,8 @@ Error is a difference from a reference value. Measurement uncertainty describes 
 Linearizing $`y=f(x_1,\ldots,x_n)`$ gives $`\delta y\approx\sum_i c_i\delta x_i`$, where $`c_i=\partial f/\partial x_i`$. Taking the variance yields
 
 ```math
-u_c^2(y)\approx\mathbf c^T\Sigma\mathbf c
-=\sum_i c_i^2u_i^2+2\sum_{i<j}c_ic_j\mathrm{cov}(x_i,x_j).
+u_c^2(y)\approx\mathbf{c}^T\Sigma\mathbf{c}
+=\sum_i c_i^2u_i^2+2\sum_{i\lt j}c_ic_j\mathrm{cov}(x_i,x_j).
 ```
 
 The cross terms vanish when the input covariances are zero. Independence is sufficient for this, but uncorrelated inputs are not necessarily independent. Strong nonlinearity or a denominator near zero can invalidate this first-order approximation. [NIST TN 1297, Appendix A](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty) provides the propagation law and its assumptions.
