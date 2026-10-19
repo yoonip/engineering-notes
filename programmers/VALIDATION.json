@@ -1,0 +1,615 @@
+{
+  "checked_at": "2026-10-19",
+  "environment": {
+    "python": "3.13.14",
+    "platform": "Windows"
+  },
+  "scope": "풀이 100개의 구문·주석 형식·기준 커밋과의 실행 AST 비교, 변경한 8개와 정규식 2개의 로컬 회귀 검사",
+  "baseline_commit": "53310235e967ce59e009b495d5aad6ec8e8b63fb",
+  "solution_files": 100,
+  "syntax_checks_passed": 100,
+  "executable_ast_changed": [
+    468373,
+    131130,
+    87946,
+    67257,
+    42860,
+    42587,
+    17680,
+    12978
+  ],
+  "executable_ast_unchanged_count": 92,
+  "comment_style": "한국어 문제명·공식 링크·자료구조 선택 이유·시간과 추가 공간 비용",
+  "regressions": {
+    "command": "python -X utf8 -B -m unittest discover -s tests -v",
+    "tests_run": 24,
+    "failures": 0,
+    "errors": 0,
+    "status": "PASS",
+    "asserted_comparisons": 5103,
+    "references": {
+      "12978": "작은 그래프의 Floyd-Warshall",
+      "17680": "리스트 기반 LRU",
+      "67257": "반복 축약식 우선순위 계산",
+      "87946": "던전 순열 전수 조사",
+      "131130": "사이클 전체 수집·정렬",
+      "42587": "큐 전체 우선순위 검사",
+      "468373": "집합·간선 탐색 기반 모든 도달 상태",
+      "42860": "위치·방문집합 BFS 최단 이동",
+      "64065": "무작위 중첩집합을 생성한 원래 튜플",
+      "17686": "문자별 수동 HEAD/NUMBER 스캐너와 안정 정렬"
+    },
+    "joystick_exhaustive_binary_names": 510,
+    "synthetic_stress": {
+      "expression_terms": 3000,
+      "consecutive_A_characters": 100000,
+      "equal_priority_processes": 20000
+    },
+    "stress_note": "스트레스 입력은 구현의 반복 비용 확인용 합성 자료이며 일부는 공식 문제의 입력 상한보다 크다.",
+    "regex_note": "튜플·파일명 정규식은 기준 코드에서도 정상 패턴이었다. 패턴을 변경하지 않고 회귀 검사로 확인했다."
+  },
+  "algorithm_changes": [
+    {
+      "id": 12978,
+      "change": "전체 쌍 Floyd-Warshall 대신 출발점 1의 최소 힙 Dijkstra",
+      "before": "O(V³+E)",
+      "after": "O((V+E) log(V+E))"
+    },
+    {
+      "id": 17680,
+      "change": "deque 검색·중간 삭제 대신 OrderedDict LRU",
+      "before": "O(NC)",
+      "after": "문자 정규화를 제외한 평균 O(N)"
+    },
+    {
+      "id": 67257,
+      "change": "연산자 반복 검색·중간 삭제 대신 단계별 선형 접기",
+      "before": "O(T²)",
+      "after": "O(T)"
+    },
+    {
+      "id": 87946,
+      "change": "모든 순열 대신 방문집합 비트마스크 DP",
+      "before": "O(N!·N)",
+      "after": "O(N·2^N)"
+    },
+    {
+      "id": 131130,
+      "change": "사이클 전체 정렬 대신 상위 두 크기 갱신",
+      "before": "O(N log N)",
+      "after": "O(N)"
+    },
+    {
+      "id": 42587,
+      "change": "우선순위 Counter와 현재 최댓값 유지",
+      "before": "O(N²)",
+      "after": "P≤9에서 O(NP)=O(N)"
+    },
+    {
+      "id": 468373,
+      "change": "감염집합별 최대 남은 횟수를 기록해 지배되는 DFS 상태 생략",
+      "before": "중복 상태를 포함한 선택 순서 탐색",
+      "after": "실제 확장 상태 S에 대해 O(N+E+SG); 최악 지수적 상태 수는 남는다"
+    },
+    {
+      "id": 42860,
+      "change": "같은 연속 A 구간의 반복 탐색 제거",
+      "before": "O(N²)",
+      "after": "O(N)"
+    }
+  ],
+  "limits": [
+    "온라인 채점은 이 검사에 포함하지 않는다.",
+    "100개 전체의 공식 예제·모든 유효 입력을 검증한 결과는 아니다.",
+    "로컬 회귀 검사는 변경한 8개 풀이와 기존 정규식 2개를 중심으로 한다.",
+    "복잡도는 소스 분석값이며 온라인 채점기의 실행시간 측정값이 아니다."
+  ],
+  "files": [
+    {
+      "problem_id": 468379,
+      "path": "level2/001_468379_선인장_숨기기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 468377,
+      "path": "level2/002_468377_힌트_스테이지/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 468373,
+      "path": "level2/003_468373_바이러스_파이프/solution.py",
+      "executable_ast_changed": true
+    },
+    {
+      "problem_id": 468372,
+      "path": "level2/004_468372_리프_노드_수_최대화/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 389480,
+      "path": "level2/005_389480_완전범죄/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 389479,
+      "path": "level2/006_389479_서버_증설_횟수/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 388353,
+      "path": "level2/007_388353_지게차와_크레인/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 388352,
+      "path": "level2/008_388352_비밀_코드_해독/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 340212,
+      "path": "level2/009_340212_퍼즐_게임_챌린지/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 340211,
+      "path": "level2/010_340211_충돌위험_찾기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 258711,
+      "path": "level2/011_258711_도넛과_막대_그래프/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 250136,
+      "path": "level2/012_250136_석유_시추/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 250135,
+      "path": "level2/013_250135_아날로그_시계/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 181188,
+      "path": "level2/014_181188_요격_시스템/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 181187,
+      "path": "level2/015_181187_두_원_사이의_정수_쌍/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 178870,
+      "path": "level2/016_178870_연속된_부분_수열의_합/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 176962,
+      "path": "level2/017_176962_과제_진행하기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 172927,
+      "path": "level2/018_172927_광물_캐기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 169199,
+      "path": "level2/019_169199_리코쳇_로봇/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 169198,
+      "path": "level2/020_169198_당구_연습/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 160585,
+      "path": "level2/021_160585_혼자서_하는_틱택토/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 159993,
+      "path": "level2/022_159993_미로_탈출/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 155651,
+      "path": "level2/023_155651_호텔_대실/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 154540,
+      "path": "level2/024_154540_무인도_여행/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 154539,
+      "path": "level2/025_154539_뒤에_있는_큰_수_찾기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 154538,
+      "path": "level2/026_154538_숫자_변환하기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 152996,
+      "path": "level2/027_152996_시소_짝꿍/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 150369,
+      "path": "level2/028_150369_택배_배달과_수거하기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 150368,
+      "path": "level2/029_150368_이모티콘_할인행사/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 148653,
+      "path": "level2/030_148653_마법의_엘리베이터/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 148652,
+      "path": "level2/031_148652_유사_칸토어_비트열/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 147354,
+      "path": "level2/032_147354_테이블_해시_함수/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 142085,
+      "path": "level2/033_142085_디펜스_게임/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 140107,
+      "path": "level2/034_140107_점_찍기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 138476,
+      "path": "level2/035_138476_귤_고르기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 135807,
+      "path": "level2/036_135807_숫자_카드_나누기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 134239,
+      "path": "level2/037_134239_우박수열_정적분/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 132265,
+      "path": "level2/038_132265_롤케이크_자르기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 131704,
+      "path": "level2/039_131704_택배상자/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 131701,
+      "path": "level2/040_131701_연속_부분_수열_합의_개수/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 131130,
+      "path": "level2/041_131130_혼자_놀기의_달인/solution.py",
+      "executable_ast_changed": true
+    },
+    {
+      "problem_id": 131127,
+      "path": "level2/042_131127_할인_행사/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 118667,
+      "path": "level2/043_118667_두_큐_합_같게_만들기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 92342,
+      "path": "level2/044_92342_양궁대회/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 92341,
+      "path": "level2/045_92341_주차_요금_계산/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 92335,
+      "path": "level2/046_92335_k진수에서_소수_개수_구하기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 87946,
+      "path": "level2/047_87946_피로도/solution.py",
+      "executable_ast_changed": true
+    },
+    {
+      "problem_id": 87390,
+      "path": "level2/048_87390_n제곱_배열_자르기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 87377,
+      "path": "level2/049_87377_교점에_별_만들기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 86971,
+      "path": "level2/050_86971_전력망을_둘로_나누기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 86052,
+      "path": "level2/051_86052_빛의_경로_사이클/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 84512,
+      "path": "level2/052_84512_모음사전/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 81302,
+      "path": "level2/053_81302_거리두기_확인하기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 77885,
+      "path": "level2/054_77885_2개_이하로_다른_비트/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 77485,
+      "path": "level2/055_77485_행렬_테두리_회전하기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 76502,
+      "path": "level2/056_76502_괄호_회전하기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 72412,
+      "path": "level2/057_72412_순위_검색/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 72411,
+      "path": "level2/058_72411_메뉴_리뉴얼/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 70129,
+      "path": "level2/059_70129_이진_변환_반복하기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 68936,
+      "path": "level2/060_68936_쿼드압축_후_개수_세기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 68645,
+      "path": "level2/061_68645_삼각_달팽이/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 67257,
+      "path": "level2/062_67257_수식_최대화/solution.py",
+      "executable_ast_changed": true
+    },
+    {
+      "problem_id": 64065,
+      "path": "level2/063_64065_튜플/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 62048,
+      "path": "level2/064_62048_멀쩡한_사각형/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 60058,
+      "path": "level2/065_60058_괄호_변환/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 60057,
+      "path": "level2/066_60057_문자열_압축/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 49994,
+      "path": "level2/067_49994_방문_길이/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 49993,
+      "path": "level2/068_49993_스킬트리/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 43165,
+      "path": "level2/069_43165_타겟_넘버/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42890,
+      "path": "level2/070_42890_후보키/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42888,
+      "path": "level2/071_42888_오픈채팅방/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42885,
+      "path": "level2/072_42885_구명보트/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42883,
+      "path": "level2/073_42883_큰_수_만들기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42860,
+      "path": "level2/074_42860_조이스틱/solution.py",
+      "executable_ast_changed": true
+    },
+    {
+      "problem_id": 42842,
+      "path": "level2/075_42842_카펫/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42839,
+      "path": "level2/076_42839_소수_찾기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42747,
+      "path": "level2/077_42747_H-Index/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42746,
+      "path": "level2/078_42746_가장_큰_수/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42626,
+      "path": "level2/079_42626_더_맵게/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42587,
+      "path": "level2/080_42587_프로세스/solution.py",
+      "executable_ast_changed": true
+    },
+    {
+      "problem_id": 42586,
+      "path": "level2/081_42586_기능개발/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42584,
+      "path": "level2/082_42584_주식가격/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42583,
+      "path": "level2/083_42583_다리를_지나는_트럭/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42578,
+      "path": "level2/084_42578_의상/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 42577,
+      "path": "level2/085_42577_전화번호_목록/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 17687,
+      "path": "level2/086_17687_n진수_게임/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 17686,
+      "path": "level2/087_17686_파일명_정렬/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 17684,
+      "path": "level2/088_17684_압축/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 17683,
+      "path": "level2/089_17683_방금그곡/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 17680,
+      "path": "level2/090_17680_캐시/solution.py",
+      "executable_ast_changed": true
+    },
+    {
+      "problem_id": 17679,
+      "path": "level2/091_17679_프렌즈4블록/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 17677,
+      "path": "level2/092_17677_뉴스_클러스터링/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 12985,
+      "path": "level2/093_12985_예상_대진표/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 12981,
+      "path": "level2/094_12981_영어_끝말잇기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 12980,
+      "path": "level2/095_12980_점프와_순간_이동/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 12978,
+      "path": "level2/096_12978_배달/solution.py",
+      "executable_ast_changed": true
+    },
+    {
+      "problem_id": 12973,
+      "path": "level2/097_12973_짝지어_제거하기/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 12953,
+      "path": "level2/098_12953_N개의_최소공배수/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 12952,
+      "path": "level2/099_12952_N-Queen/solution.py",
+      "executable_ast_changed": false
+    },
+    {
+      "problem_id": 12951,
+      "path": "level2/100_12951_JadenCase_문자열_만들기/solution.py",
+      "executable_ast_changed": false
+    }
+  ],
+  "revision_checks": {
+    "date": "2026-10-19",
+    "python": "3.12.14",
+    "unit_tests": 24,
+    "status": "passed"
+  }
+}

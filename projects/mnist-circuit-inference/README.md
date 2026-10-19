@@ -12,7 +12,7 @@
 
 기존 NumPy 학습 기록은 seed 20261011, Adam, 20 epoch 조건이며 검증 정확도로 선택된 checkpoint는 19 epoch다. 시험 데이터 10,000장의 소프트웨어 정확도는 부동소수점 95.91%, 64상태 가중치 양자화 95.95%다.
 
-SPICE에서는 정답이 5인 첫 두 시험 표본을 사용했다. 표본 선택에 예측 결과를 사용하지 않았다. 2026년 10월 19일 공개용 소스와 netlist로 두 회로를 다시 실행했고, 저장된 모델에서 netlist를 재생성했을 때도 원본과 byte 단위로 같았다.
+SPICE에서는 정답이 5인 첫 두 시험 표본을 사용했다. 표본 선택에 예측 결과를 사용하지 않았다. 2026년 10월 19일 소스와 netlist로 두 회로를 다시 실행했고, 저장된 모델에서 netlist를 재생성했을 때도 원본과 byte 단위로 같았다.
 
 | 시험 표본 인덱스 | 정답 | Python 참조 예측 | SPICE 예측 |
 | --- | --- | --- | --- |
@@ -64,11 +64,39 @@ python export_circuit.py
 
 내보내기 스크립트는 ngspice와 Spectre 형식을 생성한다. 저장된 실행 근거와 이 프로젝트의 재실행 검사는 ngspice 기준이다. Spectre 형식과 Verilog-A 출력은 별도 Cadence 환경에서 확인할 대상이다.
 
-## English overview
-
-A trained 64–50–10 MLP is mapped to differential positive conductances and simulated as two full fixed-resistor networks. Both ngspice results match the finite-gain Python reference. The first digit-5 sample is predicted as 6 by both paths; the second is predicted as 5. The recorded 95.91% floating-point and 95.95% quantized accuracies come from software evaluation on 10,000 images. SPICE validation covers the two listed samples. Numeric model parameters and generated decks are included; datasets and simulator binaries are not bundled.
 
 ## 참고 자료
 
 - [MNIST](https://yann.lecun.org/exdb/mnist/)
 - [ngspice documentation](https://ngspice.sourceforge.io/docs.html)
+
+## English
+
+This project maps trained neural-network weights to resistor arrays and input images to voltage waveforms. Python and ngspice connect an 8×8 MNIST input, a 64–50–10 MLP, differential conductances and finite-gain TIAs.
+
+### Model and circuit
+
+The network has a ReLU hidden layer and a linear output layer. Each weight is the difference of two positive conductances, each quantized to 64 states from 1 to 100 µS. Logical matrices of 64×50 and 50×10 map to physical arrays of 64×100 and 50×20, totaling 7,400 weight resistors.
+
+The circuit uses fixed resistors, finite-gain VCVS amplifiers and behavioral bias/normalization/ReLU. The Python KCL reference includes TIA input-node voltage and column loading. Output voltages sampled at 8 µs are converted to logits and compared with that reference.
+
+### Recorded results
+
+The NumPy run used seed 20261011, Adam and twenty epochs; validation accuracy selected epoch 19. On 10,000 test images, floating-point software accuracy was 95.91% and 64-state quantized-weight accuracy was 95.95%.
+
+SPICE uses the first two test samples labeled 5, selected without consulting predictions. Both circuits were rerun from the source/netlists on October 19, 2026, and exporting from the stored model reproduced the netlists byte for byte.
+
+| Test index | Label | Python reference | SPICE |
+| --- | --- | --- | --- |
+| 8 | 5 | 6 | 6 |
+| 15 | 5 | 5 | 5 |
+
+Maximum logit errors against the finite-gain reference were approximately 1.22×10⁻¹⁰ and 7.80×10⁻¹¹. The first sample's misclassification is retained: reproducing a model calculation and classifying correctly are separate checks. The 10,000-image accuracy is software evaluation; SPICE covers only these two samples.
+
+### Files and execution
+
+`prepare_demo.py` preprocesses MNIST, trains in NumPy and saves checkpoints/evaluation records. `export_circuit.py` quantizes/maps weights, computes the KCL reference and generates circuits. `verify_run.py` runs the two circuits, parses waveforms and compares logits/predictions; `run_demo.ps1` is the Windows runner. `model.npz` contains only four numeric arrays, `w1`, `b1`, `w2` and `b2`. The two `circuit_sample_*.cir` files contain input PWL and both layers; companion JSON records references, and `recorded_results.json` describes the training and simulation scope. Datasets and simulator binaries are not bundled.
+
+Use Python 3, NumPy, Pillow and a separate ngspice installation. Run the listed commands from this directory. `--ngspice` can be omitted when ngspice is on PATH or set through `NGSPICE`; use `ngspice_con.exe` on Windows. Execution creates waveforms, logs and `verified_execution.json` locally. `python verify_run.py` rechecks existing logs/waveforms without a new simulation.
+
+Retraining uses the official MNIST files with checksum verification and separates 50,000 training, 10,000 validation and 10,000 test images. The exporter reads the generated `inputs.npz` and model. Evaluate newly trained weights using their new records. The exporter supports ngspice and Spectre formats; recorded execution checks use ngspice. Spectre/Verilog-A outputs require verification in a Cadence environment. Official MNIST and ngspice references are linked above.

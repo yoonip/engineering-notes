@@ -1,32 +1,21 @@
-from itertools import permutations
+# 문제: 피로도
+# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/87946
+# 풀이: 방문한 던전 집합을 비트마스크 DP로 관리한다. 같은 집합의 총 소모량은 순서와 무관해 순열마다 다시 계산할 필요가 없다.
+# 복잡도: 던전 N개: 시간 O(N·2^N), 추가 공간 O(2^N). 각 던전의 소모량은 최소 필요량 이하인 입력 조건을 사용한다.
 
 def solution(k, dungeons):
+    n = len(dungeons)
+    remaining = [-1] * (1 << n)
+    remaining[0] = k
     answer = 0
-    for order in permutations(dungeons):
-        remaining, count = k, 0
-        for required, cost in order:
-            if remaining < required:
-                break
-            remaining -= cost
-            count += 1
-        answer = max(answer, count)
+    for mask, fatigue in enumerate(remaining):
+        if fatigue < 0:
+            continue
+        answer = max(answer, mask.bit_count())
+        for index, (required, cost) in enumerate(dungeons):
+            if mask & (1 << index) or fatigue < required:
+                continue
+            # 같은 방문 집합의 소모량은 순서와 무관하므로 상태를 합친다.
+            next_mask = mask | (1 << index)
+            remaining[next_mask] = max(remaining[next_mask], fatigue - cost)
     return answer
-
-# 전체 코드 줄별 설명
-# from itertools import permutations  # itertools의 permutations를 import. 모든 방문 순서인 순열을 만드는 함수.
-# 
-# def solution(k, dungeons):  # def는 함수 정의. k는 초기 피로도, dungeons는 필요·소모 피로도 목록.
-#     answer = 0  # =는 대입. 최대 방문 수 초기화.
-#     for order in permutations(dungeons):  # for~in으로 모든 던전 방문 순서 검사.
-#         remaining, count = k, 0  # 각 순서를 초기 피로도·방문 수 0부터 시작.
-#         for required, cost in order:  # 던전의 두 값을 최소 필요량·소모량으로 언패킹.
-#             if remaining < required:  # if는 분기, <는 작음. 입장할 수 없는 경우 검사.
-#                 break  # break는 가장 가까운 반복문 종료. 이 순서의 가능한 방문 접두부만 평가.
-#             remaining -= cost  # -=는 빼서 저장. 탐험 비용 차감.
-#             count += 1  # +=는 더해 저장. 방문 수 증가.
-#         answer = max(answer, count)  # max는 최댓값. 모든 순서 중 최대 방문 수 갱신.
-#     return answer  # return으로 최대 던전 방문 수 반환.
-
-# 풀이 요약
-# 던전이 최대 8개이므로 모든 방문 순서를 검사합니다. 입장 조건을 만족하는 동안 피로도를 차감해 방문 수를 셉니다.
-# 예: 80에서 80/20→30/10→50/40 순으로 세 곳 방문 가능. 던전 N개일 때 시간 O(N!*N), 순열 작업 공간 O(N).

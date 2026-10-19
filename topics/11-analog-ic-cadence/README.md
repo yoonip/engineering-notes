@@ -2,11 +2,11 @@
 
 [전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-아날로그 IC 설계는 소자의 전기적 특성을 이용해 신호를 증폭·비교·변환하고 기준 전압과 클록을 만드는 일이다. 회로도에서 정한 소자 크기와 바이어스가 레이아웃·기생 성분·공정 변동을 거쳐 어떤 성능을 내는지 연결해 본다.
+아날로그 IC는 소자의 전기적 특성을 이용해 신호를 증폭·비교·변환하고 기준 전압과 클록을 만든다. 회로도에서 정한 소자 크기와 바이어스가 레이아웃·기생 성분·공정 변동을 거쳐 어떤 성능을 내는지 연결해 본다.
 
 ## 도구의 역할
 
-Cadence는 회사 이름이다. Virtuoso는 custom IC의 회로도·레이아웃 설계 환경, Spectre는 회로 시뮬레이터, ADE는 테스트 조건과 해석·결과를 관리하는 환경이다. SKILL은 Virtuoso 환경의 확장과 자동화에, OCEAN은 시뮬레이션과 결과 처리 자동화에 쓰인다. Synopsys Custom Compiler·PrimeSim·HSPICE, Siemens Eldo도 관련 설계·해석 생태계다. LTspice·ngspice·Xschem은 회로 해석과 회로도 작업에서 만나는 다른 도구들이다.
+Cadence의 Virtuoso는 custom IC의 회로도·레이아웃 설계 환경, Spectre는 회로 시뮬레이터, ADE는 테스트 조건과 해석·결과를 관리하는 환경이다. SKILL은 Virtuoso 환경의 확장과 자동화에, OCEAN은 시뮬레이션과 결과 처리 자동화에 쓰인다. Synopsys Custom Compiler·PrimeSim·HSPICE, Siemens Eldo도 관련 설계·해석 생태계다. LTspice·ngspice·Xschem은 회로 해석과 회로도 작업에서 만나는 도구다.
 
 ## 해석이 알려주는 것
 
@@ -25,3 +25,21 @@ Cadence Virtuoso, Spectre, ADE, SKILL, OCEAN, Synopsys Custom Compiler, HSPICE, 
 ## 참고 자료
 
 - [Cadence Circuit Simulation](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation.html)
+
+## English
+
+Analog IC design uses device behavior to amplify, compare, and convert signals, and to generate reference voltages and clocks. It connects schematic choices such as device sizing and bias with the effects of layout, parasitics, and process variation.
+
+### Tool roles
+
+Cadence is the vendor. Virtuoso is a custom IC schematic and layout environment, Spectre is a circuit simulator, and ADE manages test conditions, analyses, and results. SKILL extends and automates the Virtuoso environment; OCEAN automates simulation and result processing. Synopsys Custom Compiler, PrimeSim, HSPICE, and Siemens Eldo belong to related design and simulation ecosystems. LTspice, ngspice, and Xschem are other tools used for circuit simulation and schematic work.
+
+### What the analyses show
+
+DC analysis finds bias and operating points. AC analysis calculates small-signal frequency response around an operating point, and transient analysis computes nonlinear time-domain behavior. Noise analysis evaluates noise sources included in device models. Corner analysis examines representative model and environmental conditions, while Monte Carlo analysis samples statistical variation.
+
+### From schematic to layout
+
+Amplifier design brings together gain, bandwidth, stability, noise, and power. Comparators, references, ADCs, DACs, and PLLs balance speed, precision, and power differently depending on the application. Verilog-A describes analog behavior, while Verilog-AMS supports mixed analog and digital modeling.
+
+DRC checks manufacturing rules, LVS compares schematic and layout devices and connectivity, and PEX extracts parasitics. Post-layout simulation includes wiring and surrounding-structure effects. Circuit data and the process design kit can have separate usage and distribution terms.

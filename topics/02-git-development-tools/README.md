@@ -6,7 +6,7 @@ Git은 파일 변경을 커밋 단위로 관리하는 분산 버전 관리 도�
 
 ## 작업에서 공유까지
 
-작업 디렉터리에서 수정한 파일을 `git add`로 스테이징하고 `git commit`으로 기록한다. `git push`는 로컬 커밋을 원격 저장소에 전송한다. 파일 저장과 커밋, 원격 전송은 서로 다른 단계다.
+작업 디렉터리에서 수정한 파일을 `git add`로 스테이징하고 `git commit`으로 기록한다. `git push`는 로컬 커밋을 원격 저장소에 전송한다. 파일을 저장한 뒤 커밋으로 묶고, push로 공유하는 흐름이다.
 
 ```bash
 git status
@@ -23,7 +23,7 @@ git push
 
 VS Code·Vim·Neovim은 소스 편집에, GCC·Clang은 C/C++ 컴파일에 쓰인다. Make·Ninja는 빌드 작업을 실행하고, CMake·Meson은 프로젝트의 빌드 구성을 생성한다. 편집기와 컴파일러, 빌드 시스템은 역할이 다르다.
 
-Docker·Podman의 컨테이너는 애플리케이션과 사용자 공간 의존성을 묶는다. 호스트 커널과 GPU 드라이버까지 독립적으로 복제하는 것은 아니므로 컨테이너 이미지와 호스트 조건을 함께 보아야 한다.
+Docker·Podman의 컨테이너는 애플리케이션과 사용자 공간 의존성을 묶는다. 호스트 커널과 GPU 드라이버까지 독립적으로 복제하는 것은 아니므로 실행 환경을 재현할 때는 컨테이너 이미지와 호스트 조건을 함께 기록한다.
 
 ## 관련 기술
 
@@ -33,3 +33,19 @@ Git, GitHub, GitLab, GitHub CLI/Desktop, VS Code, Vim/Neovim, GCC, Clang/LLVM, M
 
 - [Pro Git](https://git-scm.com/book/en/v2)
 - [GCC language standards](https://gcc.gnu.org/onlinedocs/gcc/Standards.html)
+
+## English
+
+Git is a distributed version control tool that records file changes as commits. Each commit captures a file state and its relationship to earlier commits. GitHub and GitLab add collaboration features such as issues, code review, CI, and access control around Git repositories.
+
+### From local changes to a shared repository
+
+`git add` stages changes from the working directory, and `git commit` records them locally. `git push` sends local commits to a remote repository. Saving a file, making a commit, and publishing that commit are separate steps. The command sequence above checks the working tree and staged changes before committing and pushing a README update.
+
+A branch is a name that points to a commit. A merge brings diverging histories together; conflicting edits require a decision about the resulting content. A Pull Request is GitHub's workflow for proposing and reviewing changes. GitHub CLI exposes these operations as commands, while GitHub Desktop provides a graphical interface.
+
+### Editing, building, and running
+
+VS Code, Vim, and Neovim are source editors. GCC and Clang compile C and C++. Make and Ninja execute build steps, while CMake and Meson generate build configurations. These tools participate in the same workflow but have different roles.
+
+Docker and Podman containers package an application with its user-space dependencies. They still depend on the host kernel and, for GPU workloads, host drivers. A reproducible environment therefore includes both the container image and its host requirements.

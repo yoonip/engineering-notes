@@ -13,8 +13,29 @@
 
 ## 코딩테스트
 
-자료구조·알고리즘과 문제 풀이 기록은 [알고리즘과 코딩테스트](../08-problem-solving/README.md)에 정리한다.
+자료구조·알고리즘 설명과 문제 풀이 기록은 [알고리즘과 코딩테스트](../08-problem-solving/README.md)에 정리한다.
 
 ## 연락
 
 연구·협업·채용 관련 연락: [dlfvud777@naver.com](mailto:dlfvud777@naver.com)
+
+## English
+
+### Applications and assessments
+
+#### Application records
+
+| Company | Role | Result |
+| --- | --- | --- |
+| SK hynix | PE | Passed application screening |
+| LIG D&A | SW | Passed application screening |
+| Tesla | Post Silicon Validation Engineer, Korea | Passed application screening |
+| Korea Electric Power Corporation | ICT | Passed application screening |
+
+#### Coding tests
+
+Data structures, algorithms, and problem-solving records are collected in [Algorithms and coding tests](../08-problem-solving/README.md).
+
+#### Contact
+
+For research, collaboration, or career opportunities: [dlfvud777@naver.com](mailto:dlfvud777@naver.com).

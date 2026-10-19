@@ -164,15 +164,24 @@ def gravity_oracle(values, edges, queries):
 
 
 class ComparisonTests(unittest.TestCase):
-    def test_annotated_code_matches_active_code(self):
+    def test_solution_contract_and_explanations(self):
         for row in CATALOG:
             text = (ROOT / row['file']).read_text(encoding='utf-8')
-            marker = '# 같은 코드의 문법 설명: 아래 부분은 전체 주석입니다.\n'
-            clean, annotated = text.split(marker, 1)
-            decoded = '\n'.join(line[2:] if line.startswith('# ') else line[1:] if line.startswith('#') else ''
-                                for line in annotated.splitlines())
             with self.subTest(file=row['file']):
-                self.assertEqual(ast.dump(ast.parse(clean)), ast.dump(ast.parse(decoded)))
+                tree = ast.parse(text)
+                definitions = [node for node in tree.body
+                               if isinstance(node, ast.FunctionDef) and node.name == 'solution']
+                self.assertEqual(len(definitions), 1)
+                self.assertEqual(len(definitions[0].args.args), len(CASES[row['number']][0][0]))
+                self.assertIn('# 선택 이유: ', text)
+                self.assertIn('# 비용: ', text)
+                self.assertIn(row['url'], text)
+                self.assertNotIn('# 같은 코드의 문법 설명:', text)
+                captured = io.StringIO()
+                with contextlib.redirect_stdout(captured):
+                    loaded = runpy.run_path(str(ROOT / row['file']))
+                self.assertTrue(callable(loaded['solution']))
+                self.assertEqual(captured.getvalue(), '')
 
     def test_bfs_against_repeated_edge_relaxation(self):
         rng = random.Random(20261019)

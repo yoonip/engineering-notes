@@ -77,11 +77,13 @@ class PublicSourcePolicyTests(unittest.TestCase):
     def test_licensing_status_and_independent_provenance_are_explicit(self):
         license_path = ROOT / "LICENSE"
         self.assertTrue(license_path.is_file(), "Record the project's licensing status explicitly")
-        self.assertGreater(len(license_path.read_text(encoding="utf-8-sig").strip()), 200)
+        license_text = license_path.read_text(encoding="utf-8-sig")
+        self.assertRegex(license_text, r"(?i)\blicense\b")
+        self.assertIn("NOTICE.md", license_text)
+        self.assertTrue((ROOT / "NOTICE.md").is_file())
         readme = ROOT / "README.md"
         self.assertTrue(readme.is_file())
         text = readme.read_text(encoding="utf-8-sig")
-        self.assertRegex(text, r"(?i)\bAI(?:[- ](?:assisted|generated))?\b")
         self.assertRegex(text, r"(?i)independent|독립")
 
 

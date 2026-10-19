@@ -8,3 +8,16 @@
 | 한국전력공사 | ICT 직군 | 서류전형 합격 |
 
 [지원·시험·면접](../topics/55-applications-assessments/README.md)
+
+## English
+
+### Application records
+
+| Company | Role | Result |
+| --- | --- | --- |
+| SK hynix | PE | Passed application screening |
+| LIG D&A | SW | Passed application screening |
+| Tesla | Post Silicon Validation Engineer, Korea | Passed application screening |
+| Korea Electric Power Corporation | ICT | Passed application screening |
+
+[Applications and assessments](../topics/55-applications-assessments/README.md)

@@ -2,7 +2,7 @@
 
 [전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-로봇은 센서로 상태를 관측하고 제어기로 결정을 내려 액추에이터를 움직이는 시스템이다. 기구·전원·회로·펌웨어·추정·계획 알고리즘이 함께 동작한다.
+로봇은 센서로 상태를 관측하고 제어기의 판단에 따라 액추에이터를 움직인다. 기구·전원·회로·펌웨어·추정·계획 알고리즘이 함께 동작한다.
 
 ## 보드의 역할
 
@@ -36,10 +36,45 @@ MCU와 보드 개발은 회로의 전원·클록·리셋, 핀 연결, 펌웨어�
 | Arduino | 개발보드와 소프트웨어를 포함하는 플랫폼. 스케치는 일반적으로 C++로 컴파일되며 `setup()`·`loop()`와 장치 API를 사용 |
 | Raspberry Pi | Linux 환경에서 프로세스·드라이버와 GPIO·SPI 등 장치 인터페이스를 연결하는 보드 개발 |
 
-ESP32는 실행 대상 칩이고, Arduino 코어는 선택할 수 있는 소프트웨어 프레임워크다. VS Code는 편집·개발 도구이므로 VS Code 사용 여부만으로 Arduino 프레임워크의 사용 여부가 결정되지는 않는다. [ESP32 Arduino 코어](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
+ESP32는 실행 대상 칩이고, Arduino 코어는 선택할 수 있는 소프트웨어 프레임워크다. VS Code에서는 ESP-IDF와 Arduino 등 여러 개발 환경을 사용할 수 있다. 편집기와 펌웨어 프레임워크는 역할이 다르다. [ESP32 Arduino 코어](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
 
 ## STM32 GPIO 레지스터 제어
 
 STM32F767ZI 예제는 `RCC->AHB1ENR`로 GPIOB의 클록을 활성화하고, `GPIOB->MODER`로 PB0을 출력으로 설정한다. `GPIOB->ODR`의 bit 0을 반전하면 해당 핀의 출력 상태가 바뀐다. 제조사 헤더는 레지스터의 주소, 구조체와 비트 마스크를 C 이름으로 제공한다. `->`, `|=`, `&= ~`는 일반 C 문법이다. [ST CMSIS Device F7](https://github.com/STMicroelectronics/cmsis-device-f7)
 
 CPU 범용 레지스터는 계산값과 주소를 보관하고, 주변장치 레지스터는 GPIO 같은 회로의 설정과 상태를 나타낸다. 보드의 LED 동작은 핀의 출력값뿐 아니라 실제 회로의 연결과 활성 극성에 따라 정해진다.
+
+## English
+
+A robot observes its state through sensors, makes control decisions, and drives actuators. Mechanical structures, power supplies, circuits, firmware, estimation, and planning algorithms operate together.
+
+### Board roles
+
+Arduino is an ecosystem of boards and development tools; MCU and execution environment vary by product. Raspberry Pi's main SBC products support Linux applications, networking, and cameras, while the Pico family consists of MCU boards. STM32 Nucleo, ESP32, BeagleBone, and Jetson support different combinations of MCU control, connectivity, Linux, and AI computation.
+
+### Motion and observation
+
+Kinematics relates joint values to position and orientation. Dynamics relates forces and torques to motion. Encoders report position or rotation, and IMUs measure quantities such as acceleration and angular velocity. The relationship between a PWM command and actual torque also depends on the driver, supply, and mechanical load. SLAM combines mapping with localization.
+
+### Software and simulation
+
+ROS 2 connects robot functions through nodes and messages. Topics carry ongoing data, services handle requests and responses, and actions support longer-running work with progress and results. MoveIt supports manipulation and motion planning, and Nav2 supports mobile-robot navigation. Gazebo, MuJoCo, and Isaac Sim provide models and physics simulation. Model error and differences in sensing and actuation affect transfer to a physical robot.
+
+### STM32, ESP32, Arduino, and Raspberry Pi
+
+Board development connects power, clocks, reset, pin wiring, firmware, and host software. GPIO provides digital I/O, ADC converts analog signals to numbers, and timers generate periods and pulses or measure time. UART, SPI, and I²C exchange data with peripherals.
+
+| Target | Hardware and development environment |
+| --- | --- |
+| STM32 | Arm Cortex-M MCU family; firmware and register control with CubeIDE, GCC, and CMSIS |
+| ESP32 | SoC family using Xtensa or RISC-V cores, depending on the device; development with ESP-IDF or Arduino |
+| Arduino | Boards and software platform; sketches generally compile as C++ and use `setup()`, `loop()`, and device APIs |
+| Raspberry Pi | Linux processes and drivers connected to device interfaces such as GPIO and SPI |
+
+ESP32 is the target chip family, while the Arduino core is one available software framework. VS Code is an editor and development tool; using it does not determine the framework. See the [ESP32 Arduino core](https://docs.espressif.com/projects/arduino-esp32/en/latest/).
+
+### STM32 GPIO register control
+
+The STM32F767ZI example enables the GPIOB clock through `RCC->AHB1ENR` and configures PB0 as an output through `GPIOB->MODER`. Toggling bit 0 of `GPIOB->ODR` changes the pin output. Vendor headers expose register addresses, structures, and bit masks as C names. `->`, `|=`, and `&= ~` are ordinary C syntax. See [ST CMSIS Device F7](https://github.com/STMicroelectronics/cmsis-device-f7).
+
+CPU general-purpose registers hold values and addresses. Peripheral registers hold configuration and state for hardware blocks such as GPIO. Whether an LED lights depends on the pin value, board wiring, and active polarity.

@@ -21,6 +21,12 @@ python plot_results.py --data data
 
 기존 CPU 실행 기록은 seed 42, Adam, learning rate 0.001, batch size 128, 5 epoch 조건이다. 최종 시험 결과는 10,000장 중 9,903장 정답, accuracy 99.03%, cross-entropy loss 0.0305511763이다. 이 수치는 CPU 실행에서 얻었으며 GPU 학습 성능을 나타내지 않는다.
 
-## English overview
+## English
 
-A small CNN classifies MNIST digits with separate training, validation, and test sets. The stored CPU run reached 99.03% test accuracy after five epochs with seed 42. This directory contains source code and dependencies; datasets and model weights are generated locally.
+This CNN classifies 28×28 handwritten digits using two convolution blocks and a fully connected layer. The 60,000 training images are divided into 55,000 training and 5,000 validation images; 10,000 separate test images provide final evaluation. The lowest validation loss selects the checkpoint.
+
+`train_mnist.py` handles training/evaluation, `infer_mnist.py` runs one image from a saved checkpoint, and `plot_results.py` plots loss, accuracy, a confusion matrix and correct/incorrect examples. Source and dependencies are included; data and weights are generated locally.
+
+Run the commands above from this directory. Torchvision downloads MNIST and results go in `results/`. Select the training device with `train_mnist.py --device`.
+
+The recorded CPU run used seed 42, Adam, learning rate 0.001, batch 128 and five epochs. It classified 9,903 of 10,000 test images correctly: 99.03% accuracy and cross-entropy loss 0.0305511763. These are CPU results, not GPU training measurements.

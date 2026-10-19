@@ -1,4 +1,4 @@
-"""AI-assisted independent educational implementation of a reference recipe.
+"""Independent educational implementation of a reference recipe.
 
 This helper implements explicitly declared training choices, not a missing original
 TruncConv2d kernel, checkpoint, quantization metadata or reported accuracy.

@@ -63,9 +63,6 @@ python host/run_validation.py --port COM6 --board ESP32 --runs 100
 
 ESP32 프로젝트는 `esp32/`에서 `pio run`으로 빌드한다. PlatformIO 설정은 classic ESP32 Dev Module과 Arduino 프레임워크를 사용한다.
 
-## English overview
-
-This lab connects C memory tests, an RV32I CPU and reference model, MCU firmware, and Python UART automation. The current checks passed 14 RTL simulations, Cortex-M7 execution in QEMU, an STM32 firmware build, and 10 host protocol tests. ESP32 compilation is supported by an earlier build record. These results cover simulation, compilation, and host-side tests; they do not represent physical-board measurements. The separate MNIST example includes training, inference, and plotting code.
 
 ## 참고 자료
 
@@ -74,3 +71,38 @@ This lab connects C memory tests, an RV32I CPU and reference model, MCU firmware
 - [STM32F7 CMSIS Device](https://github.com/STMicroelectronics/cmsis-device-f7)
 - [QEMU Arm system emulation](https://www.qemu.org/docs/master/system/target-arm.html)
 - [Arduino core for ESP32](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
+
+## English
+
+This lab implements memory-pattern checks and an arithmetic signature in C, then compares results through CPU simulation and UART automation. Targets include Arm Cortex-M7, a SystemVerilog RV32I CPU, STM32F767ZI and ESP32.
+
+### Components and protocol
+
+| Path | Content |
+| --- | --- |
+| `common/` | March C− test, first-error capture, arithmetic signature and freestanding runtime |
+| `arm/` | Cortex-M7 startup and QEMU semihosting |
+| `riscv/` | RV32I firmware and directed instruction tests |
+| `rtl/` | RV32I CPU, SystemVerilog testbench and Python instruction reference |
+| `stm32/` | STM32F767ZI clock, GPIO, UART and command handling |
+| `esp32/` | UART commands with FreeRTOS tasks, queues and mutexes |
+| `host/` | Sequence checks, retries, timeout, JSON verdicts and CSV/JSONL export |
+| `mnist/` | CNN training, evaluation, inference and plots |
+
+The memory test writes and reads 1,024 32-bit words, recording mismatch count and first failure. A separate fixed-input calculation produces signature `0x6fda2ac4`. Checking both helps distinguish memory faults from computation faults.
+
+The RV32I testbench compares retired PC, instruction, destination register and value against the Python trace. It injects random memory-response delays and checks illegal instructions, misaligned accesses, access faults and ECALL. Firmware mailbox values supply the memory-error count and signature.
+
+The host sends `RUN,<sequence>` and checks board, sequence, version, test length, field types and signature. Retries reuse the same sequence; the ESP32 worker caches its latest response to avoid duplicate execution. Raw responses are saved as JSONL and per-run summaries as CSV.
+
+### Verification
+
+The October 19, 2026 source checks passed Cortex-M7 compilation/linking and QEMU memory/signature execution, STM32F767ZI compilation/linking with CMSIS, fourteen RV32I runs and ten host tests. RV32I coverage includes firmware/directed cases with seeds 1, 7 and 42 and eight exception types. Host cases include stale responses, fragmented reads, timeout and malformed fields. An earlier ESP32 record covers compilation, linking and image generation. These are simulation/build/host checks rather than physical-board UART measurements.
+
+### Running the lab
+
+Use Python 3, Arm/RISC-V GNU toolchains, QEMU and Icarus Verilog. The runner discovers `arm-none-eabi-gcc`, `riscv-none-elf-gcc`, `qemu-system-arm`, `iverilog` and `vvp` on PATH. Override them with `ARM_GCC`, `RISCV_GCC`, `QEMU_ARM`, `IVERILOG` and `VVP`. `RISCV_OBJCOPY` can be set separately or resolved beside RISC-V GCC.
+
+STM32 compilation also needs `CMSIS_CORE_INCLUDE` containing `core_cm7.h` and `CMSIS_DEVICE_INCLUDE` containing `stm32f767xx.h`. `python build_all.py` creates logs, reference traces, ELF/HEX files and `verification.json` under ignored `build/`.
+
+The listed host commands install dependencies and run protocol tests. For hardware communication, specify the actual port and board, as in `--port COM6 --board ESP32 --runs 100`. Build ESP32 from `esp32/` with `pio run`; its PlatformIO target is the classic ESP32 Dev Module with the Arduino framework. Official RISC-V, CMSIS, QEMU and ESP32 references are linked above.

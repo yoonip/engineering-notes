@@ -2,7 +2,7 @@
   "algorithm": "SHA256",
   "scope": "supplied source files; manifest itself excluded",
   "file_count": 27,
-  "total_bytes": 185318,
+  "total_bytes": 196835,
   "files": [
     {
       "path": ".gitignore",
@@ -31,8 +31,8 @@
     },
     {
       "path": "circuit/run_circuit.py",
-      "bytes": 17289,
-      "sha256": "9c34762b17492d33078b1e3ccd1683d2c490d38dc815422fbc5f1f079b1dfec7"
+      "bytes": 17426,
+      "sha256": "0e3331de5346a4c9781c357e182afbb334b4d14f7a007437f28107e82a6cf1d2"
     },
     {
       "path": "circuit_open_pdk/model_sources.json",
@@ -51,8 +51,8 @@
     },
     {
       "path": "circuit_open_pdk/README.md",
-      "bytes": 3509,
-      "sha256": "b5e445d7a69e11707e67bdfd56d400fc8f1e29af2ba1c173d37606f68dd7ac8c"
+      "bytes": 5822,
+      "sha256": "557283910b303919e7d6802d6f538e360743f47981837aa6aa22e90cd98640d9"
     },
     {
       "path": "circuit_open_pdk/run_sky130.py",
@@ -61,13 +61,13 @@
     },
     {
       "path": "cnn/run_cifar.py",
-      "bytes": 41870,
-      "sha256": "96f488720d28d6823ff8da39826723cdc2598227b81f0a4c6a16010ffa25fbdc"
+      "bytes": 41858,
+      "sha256": "09441174bb0373eba59db95b6fe457233358b5bb86ed2bbdc2502ca9214cb17f"
     },
     {
       "path": "cnn/thesis_recipe.py",
-      "bytes": 15476,
-      "sha256": "b70ff844938726b78f3c40e73e85a5b6b261210c32efca694e948131894457a7"
+      "bytes": 15464,
+      "sha256": "896bfdb83e7cbb4522cd88d5384803dd1f06952ace62ef8b277712848daa44f0"
     },
     {
       "path": "LICENSE",
@@ -81,18 +81,18 @@
     },
     {
       "path": "metrics/README.md",
-      "bytes": 2192,
-      "sha256": "37064e0da7917bdc007027fae98c25fb52c83d05a9aecd032a0ed87dde0933b1"
+      "bytes": 4290,
+      "sha256": "d2c0695417324821ba82b0580f6eb08c7c9bf119aba1193d9bc4eb3f51e17071"
     },
     {
       "path": "NOTICE.md",
-      "bytes": 2073,
-      "sha256": "905e5e62772d19c9d653b48cdf23392aa4ec1b44a285210872465b3b64b5e2db"
+      "bytes": 3372,
+      "sha256": "34f5e4da3dca834c5cc07be479b588c70b90fc77d12d7fa502d447efa0a907c1"
     },
     {
       "path": "README.md",
-      "bytes": 7848,
-      "sha256": "9fada28d19e7b356dd0982428858fab7af550bc23bab849cae82b32c061a5b61"
+      "bytes": 13437,
+      "sha256": "ebb68c27a7a2fc79b520635512b860fbbf708b70ea2acf75ef349d916c673790"
     },
     {
       "path": "requirements-circuit.txt",
@@ -126,8 +126,8 @@
     },
     {
       "path": "tests/test_public_policy.py",
-      "bytes": 4007,
-      "sha256": "87ad226422b095e377b1e88445b3c7d6b8c51775fac70c8d2c37e1c8eb476889"
+      "bytes": 4071,
+      "sha256": "ea6f50bb3b5659cf7f41897225ad99263b037489c48cd5185ba5b1d9859738f0"
     },
     {
       "path": "tools/manifest.py",
@@ -136,8 +136,8 @@
     },
     {
       "path": "VALIDATION_RESULTS.json",
-      "bytes": 3995,
-      "sha256": "2afa750210407ac6719c5b5aa5b3b6c831723066f5054915b12371132dac0984"
+      "bytes": 4036,
+      "sha256": "73b0f339282dfd685107e0e596a4f0ed9dcb58f277a5ddc36386d8a5e5843e36"
     }
   ]
 }

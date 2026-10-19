@@ -13,3 +13,19 @@ Samsung SAIL Montréal의 TRM은 작은 신경망을 반복 적용해 답을 개
 모델의 파라미터 수가 작아도 학습의 메모리·시간이 자동으로 작아지지는 않는다. 반복 횟수·batch·데이터 증강이 계산량을 바꾼다. 원본 저장소는 2026년 4월 1일 archive 상태로 전환되었다.
 
 [공식 코드와 논문 링크](https://github.com/SamsungSAILMontreal/TinyRecursiveModels) · [AI 기업과 모델](../PROVIDERS.md)
+
+## English
+
+TRM, from Samsung SAIL Montréal, studies how a small neural network can improve an answer through repeated computation. The paper is titled “Less is More: Recursive Reasoning with Tiny Networks.” Its design differs from simply shrinking a conversational large language model.
+
+### Architecture
+
+The model works with an input representation x, an answer representation y, and an internal state z. It updates z several times using the input and current answer, then updates y and repeats. Sharing parameters across these steps separates network size from computational depth.
+
+### Code and tasks
+
+The official repository contains the model, training entry points, data-generation and conversion scripts, and configurations. Tasks include Sudoku, mazes, and ARC-style problems, each with its own input and answer format and evaluation split. The recursion count, state updates, loss, and gradient flow explain how the system works.
+
+A small parameter count does not automatically mean low training memory or short training time. Recursion, batch size, and data augmentation all affect the work required. The original repository was archived on April 1, 2026.
+
+[Official code and paper](https://github.com/SamsungSAILMontreal/TinyRecursiveModels) · [Companies and models](../PROVIDERS.md)

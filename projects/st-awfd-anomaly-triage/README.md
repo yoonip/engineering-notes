@@ -39,7 +39,7 @@ RTX 3070 Ti에서 Transformer를 271 epoch 학습했고, 정상 validation NLL�
 | `ST_AWFD_PE_Anomaly_Lab.ipynb` | CNN 학습·평가 |
 | `ST_AWFD_Strict_Causal_GPT_실습.ipynb` | Transformer 학습·평가 |
 | `ST_AWFD_저장모델_추론.ipynb` | 학습 결과와 무라벨 예제 CSV를 읽는 추론 |
-| `evidence/` | 과거 GPU 실험과 공개 준비 과정의 검증 요약 |
+| `evidence/` | 과거 GPU 실험과 소스 검증 요약 |
 
 ## 실행
 
@@ -74,7 +74,7 @@ Excel은 openpyxl로 작성한다. export가 불가능하면 저장된 모델·C
 python -m unittest discover -s tests -v
 ```
 
-2026년 10월 19일에는 공개 데이터와 기존 학습 가중치 없이 CPU 모델의 causal 불변성·Gaussian loss·추론 batch 동등성, Node 없는 Excel 생성, Excel 의존성·쓰기 권한 오류 시 CSV 보존을 검사했다. 전체 GPU 재학습과 공개 D2 전체 실행은 이번 source 정리 과정에서 반복하지 않았다.
+2026년 10월 19일에는 공개 데이터와 기존 학습 가중치 없이 CPU 모델의 causal 불변성·Gaussian loss·추론 batch 동등성, Node 없는 Excel 생성, Excel 의존성·쓰기 권한 오류 시 CSV 보존을 검사했다. 전체 GPU 재학습과 공개 D2 전체 실행은 이 검사에서 반복하지 않았다.
 
 ## 출처
 
@@ -86,9 +86,38 @@ python -m unittest discover -s tests -v
 
 ## English
 
-Anomaly detection and review prioritization for public semiconductor manufacturing traces from ST-AWFD D2. The project compares a CNN denoising autoencoder with a strict-causal multi-horizon Transformer trained on normal production lots.
+The project learns normal waveforms from public semiconductor manufacturing time series and ranks lots for anomaly review. It compares a CNN denoising autoencoder with a strict-causal multi-horizon Transformer on the same split. Source includes training/inference, Jupyter notebooks, a Streamlit UI and experiment summaries.
 
-The recorded RTX 3070 Ti experiment completed 271 epochs and selected epoch 241. Residual covariance scoring reduced the Transformer's false alarms from 76 to 70, with lower ranking performance; the CNN produced 57 false alarms on the same 237 normal holdout lots. This is an exploratory public benchmark, without measured yield improvement from process interventions.
+### Data and models
 
-The source includes training and saved-model inference, cleared notebooks, a Streamlit UI, and portable openpyxl export with CSV fallback. A separate CPU check covers model causality and reporting failures. Raw data and trained weights are obtained or generated separately.
+The data is D2 from [STMicroelectronics ST-AWFD](https://github.com/STMicroelectronics/ST-AWFD). MaterialID denotes a production lot; `duration_ms` is normalized relative time. Twenty anonymized Step-1 sensors are interpolated to 64 relative time points. Models/scalers use 441 normal lots; 111 normal validation lots select epochs and alarm thresholds. The public holdout has 237 normal and 367 anomalous lots.
 
+The CNN reconstructs normal traces. The Transformer uses past-facing Conv1d embeddings and causal attention to predict sensor means/uncertainties at horizons 1, 2, 4 and 8. Gaussian NLL scores observed values; saved-model inference reuses training scalers and thresholds.
+
+### Recorded GPU experiment
+
+Training on an RTX 3070 Ti ran for 271 epochs and selected epoch 241 by normal-validation NLL.
+
+| Metric | CNN autoencoder | Transformer | Transformer + residual covariance |
+| --- | ---: | ---: | ---: |
+| Anomaly recall | 100% | 100% | 100% |
+| Normal false alarms | 57 / 237 | 76 / 237 | 70 / 237 |
+| Normal false-alarm rate | 24.05% | 32.07% | 29.54% |
+| Precision | 86.56% | 82.84% | 83.98% |
+| F1 | 0.9279 | 0.9062 | 0.9129 |
+| Average Precision | 1.0000 | 1.0000 | 0.9854 |
+| Anomalies among top 61 review items | 61 | 61 | 59 |
+
+Covariance scoring reduced Transformer false alarms while lowering ranking performance; the CNN had the fewest normal false alarms here. The same 111 normal lots select epochs and thresholds, and several models are compared on the same holdout, so these are exploratory benchmark results. Full-step interpolation is separate from the model's internal causal-mask guarantee and does not establish raw-stream online forecasting. Labels describe normal/anomalous lots; no intervention-based die-yield improvement is measured.
+
+### Files and execution
+
+`st_awfd_model.py` defines the Transformer, Gaussian loss, fixed-model inference and causal checks. `st_awfd_causal_gpt_multihorizon.py` trains/evaluates it and runs checkpoint CSV inference. `st_awfd_pipeline.py` processes D2 and implements CNN/statistical baselines; `st_awfd_gpt_covariance_audit.py` compares residual scoring. `workbook_export.py` uses openpyxl with CSV fallback, and `st_awfd_app.py` provides training progress, comparisons and inference. Three notebooks cover CNN, causal Transformer and label-free saved-model inference. `evidence/` stores historical GPU and source-check summaries.
+
+Use Python 3.12+, create a virtual environment and select a suitable CPU/CUDA installation through [PyTorch](https://pytorch.org/get-started/locally/), then install the remaining requirements. Place official `Datasets/D2.zip` at `data/st_awfd/D2.zip`; raw data and trained weights are not bundled. The commands above run baselines, Transformer training, demo CSV generation, saved inference, covariance analysis and Streamlit. New results go in `models/` and `results/`.
+
+Excel export uses openpyxl. If it fails, model/CSV files are retained and the summary records `csv_only`. The October 19, 2026 CPU check covered causal invariance, Gaussian loss, batch-equivalent inference, Excel generation without Node and CSV preservation after missing dependencies or write failures. Full GPU training and D2 execution were not repeated.
+
+### Attribution
+
+Data and terms: [ST-AWFD](https://github.com/STMicroelectronics/ST-AWFD), [CC BY-NC-SA 4.0](https://github.com/STMicroelectronics/ST-AWFD/blob/main/LICENSE). Original paper: [An Ensembled Anomaly Detector for Wafer Fault Detection, Sensors 2021](https://doi.org/10.3390/s21165465). [TRACE-GPT](https://arxiv.org/abs/2309.11427) informs the modeling idea; the multivariate, multi-horizon Gaussian architecture here is a separate implementation.

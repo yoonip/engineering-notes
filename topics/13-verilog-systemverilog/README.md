@@ -2,7 +2,7 @@
 
 [전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-HDL은 하드웨어의 구조와 동작을 기술하는 언어다. 소프트웨어의 문장 실행과 달리 여러 회로 블록이 동시에 동작한다. RTL은 레지스터와 그 사이의 조합논리로 데이터 이동을 표현하며, 합성 도구는 이를 논리 회로로 변환한다.
+HDL은 하드웨어의 구조와 동작을 기술하는 언어다. 여러 회로 블록이 동시에 동작한다. RTL은 레지스터와 그 사이의 조합논리로 데이터 이동을 표현하며, 합성 도구는 이를 논리 회로로 변환한다.
 
 ## 조합논리와 순차논리
 
@@ -26,7 +26,7 @@ endmodule
 
 이 카운터는 동기식 active-low 리셋을 사용한다. `rst_n`이 낮은 상태에서 클록 상승 에지가 들어오면 0이 되고, 8비트 범위를 넘으면 0으로 순환한다. 순차논리의 nonblocking assignment는 같은 에지에서 이전 상태를 기준으로 다음 상태를 계산하게 한다.
 
-## 구조를 만드는 개념
+## FSM·파이프라인·메모리
 
 FSM은 상태와 전이 조건을, 파이프라인은 연산을 여러 클록 단계로 나누는 구조를 표현한다. FIFO는 생산자·소비자의 속도 차이를 흡수한다. CDC는 서로 다른 클록 도메인 사이의 신호 전달 문제이며 메타안정성과 데이터 일관성을 함께 다룬다. 고정소수점에서는 비트 폭·부호·소수점 위치·오버플로 처리가 정확도에 영향을 준다.
 
@@ -39,3 +39,19 @@ Verilog, SystemVerilog, VHDL, Verilog-A/AMS, Chisel, SpinalHDL, Amaranth, HLS
 ## 참고 자료
 
 - [Verilator documentation](https://verilator.org/guide/latest/)
+
+## English
+
+A hardware description language expresses circuit structure and behavior. Multiple circuit blocks operate concurrently. RTL describes data movement between registers through combinational logic, and synthesis maps that description into a logic circuit.
+
+### Combinational and sequential logic
+
+Combinational outputs depend on current inputs. Sequential logic also depends on stored state. SystemVerilog's `always_comb` expresses combinational logic, while `always_ff` expresses flip-flop-based behavior. A combinational block can infer a latch if an output is not assigned on every path.
+
+The counter above uses a synchronous active-low reset. It clears on a rising clock edge when `rst_n` is low and wraps to zero beyond its 8-bit range. Nonblocking assignments calculate next-state values from the pre-edge state.
+
+### Building larger structures
+
+An FSM describes states and transition conditions. Pipelining divides computation into clocked stages, and a FIFO absorbs differences in producer and consumer rates. Clock-domain crossing involves both metastability and data consistency. For fixed-point arithmetic, width, signedness, binary-point position, and overflow handling affect numerical accuracy.
+
+VHDL is another HDL. Chisel, SpinalHDL, and Amaranth build hardware using other host languages, while HLS generates hardware structures from higher-level programs.

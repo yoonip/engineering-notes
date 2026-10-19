@@ -22,15 +22,42 @@
 | --- | --- | --- |
 | [Coding practice toolkit](coding-practice-toolkit/README.md) | C·C++·Python 주석 예제, 입력 fixture, VS Code 실행·디버깅 도구 | 주석 코드 66개, fixture 실행 255회, 한글 경로 실행 |
 | [기초 알고리즘 · 세 언어 비교](coding-practice-basics/README.md) | 센서 요약·빈도·정렬·BFS·DP·이분 탐색의 독립 실행 예제 | C/C++ 빌드 12개, Python 문법 검사 6개, 실행 18회 |
-| [Python 연습문제 풀이](python-practice-solutions/README.md) | 공개 연습문제 39개의 AI 작성 학습 코드와 알고리즘별 목차 | 로컬 테스트 50개, 함수 호출 1,359회 |
+| [Python 연습문제 풀이](python-practice-solutions/README.md) | 공개 연습문제 39개의 풀이와 알고리즘별 학습 기록 | 로컬 테스트 65개, 함수 호출 4,190회 |
 | [Python 기초 실습](python-foundations-practice/README.md) | 콘솔 예제와 독립 실행 HTML 50문항 | 허용 정답 68건 실행, 콘솔·화면 상태 전환 검사 |
 
 ## 코드와 검증
 
 RTL의 출력은 Python 정수 기준 모델과 대조하고, 펌웨어는 컴파일·시뮬레이션·통신 검사로 확인했다. 합성·배치배선 결과와 소프트웨어 시뮬레이션 결과는 해당 프로젝트의 검증 기록에서 구분한다.
 
-짧은 계산·언어 예제는 [examples](../examples/README.md), Arm·RISC-V의 명령 단위 실행과 OpenOCD·GDB 실습은 [embedded-debug-labs](../examples/embedded-debug-labs/README.md)에 있다. [Programmers](../programmers/README.md)에는 풀이 코드와 출처를 정리했다.
+짧은 계산·언어 예제는 [examples](../examples/README.md), Arm·RISC-V의 명령 단위 실행과 OpenOCD·GDB 실습은 [embedded-debug-labs](../examples/embedded-debug-labs/README.md)에 있다. [Programmers](../programmers/README.md)에는 문제 풀이와 학습 기록을 정리했다.
 
 ## English
 
-Implemented projects connecting digital design, firmware, reference models, and machine learning. The collection includes manufacturing-trace anomaly detection, Braille and English-to-Korean translation, fixed-point Transformer RTL and DRAM-PIM models, circuit-level CNN experiments, MCU and silicon-validation labs, energy models, and programming tools. Each project includes source code, execution steps, and verification conditions. Recorded training and implementation results are distinguished from the checks run while preparing this source release.
+These projects connect circuits, firmware, integer reference models and machine-learning experiments. Each directory contains the source, execution steps and verification conditions.
+
+### Hardware, models and machine learning
+
+| Project | Implementation | Recorded checks |
+| --- | --- | --- |
+| [Manufacturing-trace anomaly detection](st-awfd-anomaly-triage/README.md) | Strict-causal Transformer/CNN comparison, saved-model inference, CSV/Excel export | Nine CPU model, causal-mask and export regression checks |
+| [Braille-to-Korean Transformer](braille-transformer/README.md) | Character-level encoder–decoder, preprocessing, training, generation evaluation and CPU app | Recorded 16-epoch experiment and six synthetic-data checks |
+| [M2M100/LoRA English-to-Korean translation](en-ko-m2m100-lora/README.md) | Grouped data split, LoRA training/evaluation and CPU/GPU apps | Recorded three-epoch experiment and six synthetic-data checks |
+| [Transformer/DRAM-PIM](transformer-dram-pim/README.md) | Two-layer GPT RTL, Q8.8 reference, K/V cache, E8M7 arithmetic and DRAM event analysis | Python regressions/boundaries, RTL numerical comparisons and recorded Vivado implementation |
+| [Partial-product removal/CNN](cnn-partial-product-reproduction/README.md) | Signed partial-product removal, CMOS MAC netlists and quantized CIFAR ResNets | 548,864 exhaustive arithmetic cases, 23 regressions and integer-output comparisons |
+| [MNIST circuit inference](mnist-circuit-inference/README.md) | Trained-weight resistor mapping and two-layer analog inference netlists | Two ngspice samples replayed against a Python reference |
+| [Embedded validation lab](embedded-validation-lab/README.md) | RV32I CPU, Arm/STM32/ESP32 firmware and UART automation | Fourteen RTL runs, QEMU execution, STM32 build and ten UART tests |
+| [FPGA validation harness](fpga-validation-harness/README.md) | Input/output frames, ADC fault scenarios and automated validation | Sixty-four RTL patterns and Python fault/frame checks |
+| [Practical Silicon Lab](practical-silicon-lab/README.md) | Arm64 startup, JTAG TAP, Linux driver and virtual bench | Nineteen offline/mock checks |
+| [Neural-network energy models](neural-network-energy-models/README.md) | Precision, data movement and analytical energy models | Eight unit tests and 108 numerical conditions |
+| [Tiny Transformer RTL](tiny-transformer-rtl/README.md) | NumPy training, Q8.8 weight export and SystemVerilog token generation | Four input cases, causal masking, EOS and matching RTL/JSON weights |
+
+### Algorithms and development tools
+
+| Project | Content | Recorded checks |
+| --- | --- | --- |
+| [Coding practice toolkit](coding-practice-toolkit/README.md) | Annotated C/C++/Python examples, fixtures and VS Code execution/debugging tools | Sixty-six annotated programs, 255 fixture executions and Korean-path execution |
+| [Basic algorithms across three languages](coding-practice-basics/README.md) | Aggregation, counting, sorting, BFS, DP and binary search | Twelve C/C++ builds, six Python syntax checks and eighteen executions |
+| [Python practice solutions](python-practice-solutions/README.md) | Thirty-nine public exercises with an algorithm index | Sixty-five local tests and 4,190 solution calls |
+| [Python foundations](python-foundations-practice/README.md) | Console examples and a standalone 50-question HTML exercise | Sixty-eight accepted answers, console checks and UI-state checks |
+
+RTL outputs are compared with Python integer references. Firmware checks cover compilation, simulation and communication behavior; synthesis/place-and-route results are identified separately in each project. Short examples are in [examples](../examples/README.md), instruction-level Arm/RISC-V and OpenOCD/GDB exercises are in [embedded-debug-labs](../examples/embedded-debug-labs/README.md), and [Programmers](../programmers/README.md) contains problem solutions and study records.

@@ -15,7 +15,7 @@
 
 ## 수치 검증
 
-2026년 10월 19일 공개용 폴더에서 Python 회귀 55개와 DRAM 이벤트 경계 시험 40개를 실행했다. 기본 RTL, 학습 checkpoint의 K/V cache 생성, Pooling, MAX-EX, 일반 E8M7 트리, 가중치 export도 다시 실행했다.
+2026년 10월 19일에 Python 회귀 55개와 DRAM 이벤트 경계 시험 40개를 실행했다. 기본 RTL, 학습 checkpoint의 K/V cache 생성, Pooling, MAX-EX, 일반 E8M7 트리, 가중치 export도 다시 실행했다.
 
 | 검사 | 결과 |
 |---|---|
@@ -26,7 +26,7 @@
 | MAX-EX 표본 | 3·16 lane, guard 16·32의 출력 248개가 정수 기준과 일치 |
 | DRAM 이벤트 입력 | READ/WRITE 2,336개, FIFO·refresh 조건에서 baseline 12,246 / PIM 3,760 cycle |
 
-이전 Vivado 2024.1 구현에서는 Nexys 4 DDR의 32-token distributed cache 구성을 2.5 MHz로 배치·배선했다. LUT 46,374개, FF 8,473개, DSP 194개, WNS +33.471 ns, WHS +0.047 ns였고 bitstream을 생성했다. 배선 지연 XSim은 Inertial100 정책의 context 8·32 × slow/max·fast/min 네 조건에서 각각 logits 130개가 일치했다. 기본 Transport0 실행은 중단된 기록으로 남아 있다. 해당 수치는 저장된 구현 기록이며 이번 공개 준비 과정에서 Vivado를 다시 실행한 값은 아니다.
+이전 Vivado 2024.1 구현에서는 Nexys 4 DDR의 32-token distributed cache 구성을 2.5 MHz로 배치·배선했다. LUT 46,374개, FF 8,473개, DSP 194개, WNS +33.471 ns, WHS +0.047 ns였고 bitstream을 생성했다. 배선 지연 XSim은 Inertial100 정책의 context 8·32 × slow/max·fast/min 네 조건에서 각각 logits 130개가 일치했다. 기본 Transport0 실행은 중단된 기록으로 남아 있다. 해당 수치는 저장된 구현 기록이며 2026-10-19 검사에서 Vivado를 다시 실행한 값은 아니다.
 
 실물 FPGA의 UART 출력·지연·전력과 DRAM-PIM 칩은 측정 범위에 포함하지 않는다. 보드 이름의 DDR2를 Transformer의 외부 메모리로 연결한 설계도 아니다. 수치 일치는 회로 구현의 검증이고, 작은 문자 모델의 문장 품질 평가는 별개다.
 
@@ -64,9 +64,44 @@ CPU 재학습은 `requirements-training.txt`, 보드 UART 연결은 `requirement
 
 ## English
 
-A SystemVerilog implementation of a small character-level Transformer, with Python integer reference models, CPU training/QAT code, token-stream K/V caching, E8M7 arithmetic units, pooling, and DRAM traffic/event models.
+This character-level Transformer is implemented in SystemVerilog and compared with a Python integer reference using the same inputs and weights. The design connects matrix arithmetic, attention, LayerNorm, GELU, residuals and a K/V cache, alongside memory-traffic analysis.
 
-The model uses 65 characters, a hidden width of 16, four attention heads and two decoder layers. The QAT checkpoint reproduced 455 logits and 112 hidden values exactly across seven RTL transactions. A fresh publication check ran 55 Python regressions, 40 DRAM boundary tests and lightweight RTL comparisons on October 19, 2026.
+### Implementation
 
-Historical Vivado and XSim results cover Nexys 4 DDR implementation and selected post-route timing simulations. FPGA measurements, external DDR2 integration and physical PIM/power measurements are outside this experiment. The 69.64% reduction is a modeled host-memory traffic comparison under stated residency assumptions.
+- GPT decoder: 65 characters, hidden width 16, four attention heads, FFN width 32 and two decoder layers.
+- Signed Q8.8, trained biases/LayerNorm gamma-beta and a GELU LUT.
+- Full-context recomputation and token-stream K/V-cache paths.
+- E8M7 MAX-EX accumulator, conventional multiply/add tree and max/average pooling units.
+- DRAM bank/row traffic model and FIFO/shared-bus/refresh event simulation.
+- Nexys 4 DDR clock/UART/pin constraints and Vivado build tools.
 
+`model/` contains integer references and CPU training/QAT; `rtl/` contains circuits, `tb/` testbenches and `analysis/` memory models. Board build/UART tools are in `fpga/nexys4_ddr/`. Small trained checkpoints are in `output/tiny_gpt_full_ops/` and `output/tiny_gpt_full_ops_qat/`.
+
+### Numerical checks and historical implementation
+
+On October 19, 2026, 55 Python regressions and 40 DRAM-event boundary tests ran alongside basic RTL, checkpoint K/V generation, pooling, MAX-EX, conventional E8M7 trees and weight export.
+
+| Check | Result |
+| --- | --- |
+| QAT K/V generation | Seven transactions; all 455 logits and 112 hidden values matched Python |
+| Generation input | `ROMEO:` → extra `\nA`; 38,465 simulated cycles and 37,744 MACs |
+| Offline Python | `RO` → `RORI` |
+| Pooling | Windows 1/3/16; 200 combinational and 260 registered outputs matched |
+| MAX-EX | Three/sixteen lanes, guards 16/32; 248 outputs matched the integer reference |
+| DRAM events | 2,336 READ/WRITE commands with FIFO/refresh; baseline 12,246 versus PIM 3,760 cycles |
+
+A historical Vivado 2024.1 run placed/routed the 32-token distributed-cache Nexys 4 DDR configuration at 2.5 MHz: 46,374 LUTs, 8,473 FFs, 194 DSPs, WNS +33.471 ns and WHS +0.047 ns, with a generated bitstream. Post-route XSim with Inertial100 matched 130 logits in each of four context-8/32 × slow/max/fast/min conditions. The default Transport0 run remains recorded as interrupted. These are archived implementation records, not a new Vivado run.
+
+Physical UART latency/power and a DRAM-PIM chip were not measured. The design does not connect the board's external DDR2 as Transformer memory. Arithmetic agreement validates the implementation; language quality is a separate property of the small model.
+
+### DRAM-PIM analysis
+
+The basic traffic model compares an unfused baseline that reads weights once per prompt with a PIM assumption that keeps weights/intermediate activations near memory. Host-memory traffic is 114,688 versus 34,816 bytes. The resulting 69.64% difference is modeled traffic, not measured speed or power.
+
+Cache/repetition analysis varies weight reuse and intermediate residency. An ideal host retaining the same data at the same boundary can have the same traffic as PIM. The event model separately handles finite FIFOs, bank timing, shared command/data buses and all-bank refresh.
+
+### Execution and data
+
+Use Python 3.12+ and Icarus Verilog, with `iverilog`/`vvp` on PATH. Integer references and RTL tests need no PyTorch. The commands above run Python/event/RTL checks, QAT generation and offline host inference, then generate traffic/event reports and Vivado weights. CPU retraining uses `requirements-training.txt`; board UART uses `requirements-uart.txt`. `fpga/nexys4_ddr/build.ps1` accepts tool, temporary-path, context and cache options. Runs create artifacts under `build/`.
+
+Training text comes from [Tiny Shakespeare in karpathy/char-rnn](https://github.com/karpathy/char-rnn/tree/master/data/tinyshakespeare), with SHA-256 `86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed`. Corpus text, external tools and libraries are not bundled.

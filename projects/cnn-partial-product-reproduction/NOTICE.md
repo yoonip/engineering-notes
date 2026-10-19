@@ -1,6 +1,6 @@
 # 코드 출처와 구현 범위
 
-Python, SystemVerilog, 교육용 Level1 모델의 작성·수정 과정에서 AI 코딩 도구를 사용했다. 연산 사양을 별도로 구현했으며 `metrics/`는 이 구현으로 수행한 실험의 집계치다.
+Python·SystemVerilog 연산 모델과 교육용 Level1 회로 모델을 포함한다. `metrics/`에는 이 구현에서 얻은 실험 집계치를 정리했다.
 
 | 구성 | 출처와 역할 | 배포 범위 |
 |---|---|---|
@@ -14,6 +14,18 @@ Python, SystemVerilog, 교육용 Level1 모델의 작성·수정 과정에서 AI
 
 `circuit/models/educational_level1.pm`은 직접 작성한 예시 모델이며 공정 보정이 없다. SKY130 및 다른 공급사의 모델과 출처가 다르다. 외부 라이브러리·데이터·PDK의 이용 조건은 각 배포물에 따른다. 자체 소스의 오픈소스 라이선스는 지정하지 않았다.
 
-## English attribution
+## English
 
-AI coding tools were used while developing this independent implementation. External libraries are imported, and ngspice is a separate dependency. Datasets and process models are managed separately. Component attribution is listed above.
+The project includes Python and SystemVerilog arithmetic models and an educational Level1 circuit model. `metrics/` stores aggregate measurements from this implementation.
+
+| Component | Attribution and role | Distribution |
+| --- | --- | --- |
+| ResNet18/50 | [torchvision](https://docs.pytorch.org/vision/0.23/models/resnet.html) and the [ResNet paper](https://arxiv.org/abs/1512.03385) | Library API calls; no library copy or pretrained weights |
+| Training/tensor operations | [PyTorch](https://pytorch.org/) and [NumPy](https://numpy.org/) | External dependencies |
+| Data | [CIFAR10/100](https://www.cs.toronto.edu/~kriz/cifar.html) | Not bundled |
+| SAM | [Paper](https://arxiv.org/abs/2010.01412) and [official reference](https://github.com/google-research/sam) | Separate implementation of the two-step gradient method; no repository copy |
+| Signed partial products | [Baugh–Wooley method](https://ieeexplore.ieee.org/document/1672241/) | Separate bit-matrix and column-removal implementation |
+| Circuit simulation | [ngspice](https://ngspice.sourceforge.io/) | No binaries or libraries |
+| Optional process model | [Official SKY130 primitives](https://github.com/google/skywater-pdk-libs-sky130_fd_pr), commit `f62031a1be9aefe902d6d54cddd6f59b57627436` | Reads a local model; no vendor source, model or coefficient copy |
+
+`circuit/models/educational_level1.pm` is an example model without process calibration. It is separate from SKY130 and other vendor models. External libraries, datasets and PDKs retain their own terms. An open-source license has not been assigned to the project source.

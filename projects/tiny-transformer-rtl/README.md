@@ -114,8 +114,33 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\train.ps1
 
 ## English
 
-This project implements a small decoder-only Transformer in SystemVerilog. A NumPy trainer computes the forward pass, gradients and Adam updates, then exports signed Q8.8 weights into RTL ROMs. The model has one decoder block, one attention head, model dimension 8, FFN dimension 16, vocabulary size 13 and context length 8.
+A small decoder-only Transformer exports trained weights to Q8.8 and generates tokens sequentially in SystemVerilog. The NumPy trainer implements the forward pass, backpropagation and Adam. RTL computes embeddings, LayerNorm, causal self-attention, FFN and vocabulary projection. PowerShell handles question classification and optional weather queries; neural inference runs in RTL.
 
-The RTL generates four short responses conditioned on a question ID and a precipitation category. Keyword classification and optional Open-Meteo requests run on the host. The model itself performs fixed-point Transformer inference; its training set contains four curated sequences.
+### Model and inputs
 
-Both testbenches passed all four conditions with Icarus on 2026-10-19. Checks cover output tokens, causal masking, integer softmax tolerance and EOS termination. The saved-weight Python reference and RTL ROM values were also checked. Live API calls, retraining and FPGA synthesis or timing were outside this verification run.
+The model has one decoder block/head, model width 8, FFN width 16, vocabulary 13 and context length 8. Weights are signed Q8.8 with scale 256. Training uses four sequences, seed 1234, Adam and 2,500 epochs. Generation uses argmax, appends each token to the context and stops at EOS.
+
+| Question/category | Response meaning | Output token IDs |
+| --- | --- | --- |
+| Rain (2), high precipitation (4) | Rain is likely | 6 7 8 9 |
+| Rain (2), low precipitation (5) | Rain is unlikely | 6 7 8 10 |
+| Clear (3), high precipitation (4) | Clear skies are unlikely | 12 8 10 |
+| Clear (3), low precipitation (5) | Clear skies are likely | 12 8 9 |
+
+The prefix is `[BOS, question ID, precipitation-category ID]`. Clear-sky answers invert the precipitation category. Host keyword rules recognize Korean rain/clear terms plus `rain`/`clear`; the vocabulary encodes these four short Korean sentences.
+
+### RTL and execution
+
+The flow is token/position embedding → LayerNorm/QKV → causal attention/output projection/residual → LayerNorm/ReLU FFN/residual → final LayerNorm/vocabulary projection/argmax → context append until EOS. Softmax subtracts the maximum score, uses an exponential LUT and integer division. LayerNorm uses an integer square root. Weight ROMs are embedded, so simulation needs neither Python nor an external weight file.
+
+Use Icarus Verilog and `vvp`. OSS CAD Suite users can initialize its `environment.ps1` or `environment.bat`. The listed PowerShell runner checks all four cases offline; `-Iverilog` supplies an explicit compiler path. The direct terminal commands compile each testbench separately because both use the same top-module name. Query IDs are 2/3 and forecast IDs are 4/5.
+
+Supplying `-Prompt` and `-City` makes the host query Open-Meteo for coordinates and the daily maximum precipitation probability. The default 50% threshold becomes a high/low input token. The model has no measured-weather training data. See the [forecast](https://open-meteo.com/en/docs) and [geocoding](https://open-meteo.com/en/docs/geocoding-api) documentation for API fields/terms.
+
+### Training and files
+
+`train_numpy.py` includes forward/cross-entropy/backpropagation/Adam and integer reference inference. `train.ps1` runs training with Python 3/NumPy and exports `rtl/tiny_gpt.sv` plus `weights/trained_weights_q8.json`. `rtl/tiny_gpt_template.sv` is the exporter template. `tb/tb_tiny_gpt.sv` checks four cases, token sequences, masks and EOS; `tb/tb_query.sv` selects one case using plusargs. `run.ps1`/`run_demo.bat` launch simulation. The JSON weights match the RTL ROM values.
+
+### Verification
+
+On October 19, 2026, both Icarus testbenches passed all four conditions. Output tokens, causal masking, integer softmax-sum tolerance and EOS passed; the saved-weight Python reference matched all four cases, all RTL/JSON integers matched and the PowerShell runner passed offline. Training was not repeated. Live forecast queries had an HTTPS error in an earlier run and were not called during this check. FPGA synthesis, placement/routing, utilization and timing are outside the recorded verification.

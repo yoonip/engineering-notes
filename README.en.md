@@ -1,6 +1,6 @@
 # Engineering Notes
 
-Technical notes on electronics, computer engineering, and AI by [yoonip](https://github.com/yoonip). The articles explain concepts, tools, and their roles in practical systems. The main text is in Korean; technical names retain their conventional spelling.
+Technical notes on electronics, computer engineering, and AI by [yoonip](https://github.com/yoonip). The collection connects circuits and semiconductors with RTL, firmware, systems software, GPU computing, and AI. It includes technical explanations, equations translated into code, and implementation results. Explanations appear in Korean followed by English; code comments are in Korean, and technical names retain their usual spelling.
 
 ## Contents
 

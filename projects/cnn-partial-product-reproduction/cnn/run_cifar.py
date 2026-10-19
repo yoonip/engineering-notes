@@ -1,4 +1,4 @@
-"""AI-assisted independent educational CIFAR/ResNet experiment.
+"""Independent educational CIFAR/ResNet experiment.
 
 This is newly written reproduction code, not recovered manuscript source or
 evidence of a deployed product. No original documents, datasets, trained

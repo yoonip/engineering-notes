@@ -117,5 +117,12 @@
     "ngspice and optional SKY130 models must be supplied separately.",
     "No open-source license has been designated."
   ],
-  "integrity": "MANIFEST_SHA256.json records the final supplied files; verify using python tools/manifest.py --verify"
+  "integrity": "MANIFEST_SHA256.json records the final supplied files; verify using python tools/manifest.py --verify",
+  "revision_checks": {
+    "date": "2026-10-19",
+    "python": "3.12.14",
+    "unit_tests": 23,
+    "status": "passed",
+    "netlist_equivalence_cases": 112
+  }
 }

@@ -2,7 +2,7 @@
 
 [전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-ISA는 소프트웨어에서 보이는 명령어·레지스터·메모리 동작의 약속이다. 마이크로아키텍처는 그 약속을 실제 회로로 구현하는 방식이다. 같은 ISA를 구현한 프로세서도 파이프라인·캐시·실행 자원에 따라 속도와 전력이 달라진다.
+ISA는 소프트웨어에서 사용하는 명령어와 레지스터, 메모리 동작을 정의한다. 마이크로아키텍처는 그 약속을 실제 회로로 구현하는 방식이다. 같은 ISA를 구현한 프로세서도 파이프라인·캐시·실행 자원에 따라 속도와 전력이 달라진다.
 
 ## Arm과 RISC-V
 
@@ -12,7 +12,7 @@ Arm의 Cortex-M은 마이크로컨트롤러, Cortex-A는 운영체제를 사용�
 
 호출 규약은 함수 인자, 반환값, 레지스터 보존 방식을 정한다. 예외와 인터럽트는 실행 흐름을 처리 루틴으로 옮긴다. 캐시는 자주 쓰는 데이터를 가까이 두고, MMU는 가상 주소 변환과 보호에 관여한다. DMA는 CPU가 매 바이트를 복사하지 않고 주변장치와 메모리 사이의 전송을 진행하도록 한다.
 
-PicoRV32·Ibex·CVA6·Rocket·BOOM은 RISC-V 구현을 읽을 수 있는 프로젝트다. QEMU는 시스템·명령 실행 에뮬레이션, gem5는 컴퓨터 구조 시뮬레이션에 쓰인다. ISA를 이해하는 일과 특정 코어의 성능을 분석하는 일은 서로 이어지지만 분석 대상은 다르다.
+PicoRV32·Ibex·CVA6·Rocket·BOOM은 RISC-V 구현을 읽을 수 있는 프로젝트다. QEMU는 시스템·명령 실행 에뮬레이션, gem5는 컴퓨터 구조 시뮬레이션에 쓰인다. ISA의 동작을 이해한 뒤에는 특정 코어의 파이프라인과 메모리 구조로 분석 범위를 넓힐 수 있다.
 
 ## 관련 기술
 
@@ -43,3 +43,27 @@ trace[1] = result + 1;
 Renode의 Cortex-M7과 Spike의 RV64IMAC에서 명령 단위로 실행했다. 덧셈 직후에는 결과 4가 CPU 레지스터에 있고, 저장 명령 뒤에 `result` 메모리가 4로 바뀐다. 최종 상태는 두 대상 모두 `result=4`, `trace={4,5}`였다. 이 기록은 가상 대상에서 수집한 실행 결과다.
 
 Renode는 MCU와 주변장치 모델을 제공하고, Spike는 RISC-V ISA 시뮬레이터다. 이 실습의 Arm 경로는 Renode의 GDB 서버에 직접 연결하며, RISC-V 경로는 OpenOCD의 `remote_bitbang`으로 Spike의 가상 JTAG에 연결한다. [Renode GDB 문서](https://renode.readthedocs.io/en/latest/debugging/gdb.html), [Spike 프로젝트](https://github.com/riscv-software-src/riscv-isa-sim)
+
+## English
+
+An instruction set architecture defines the instructions, registers, and memory behavior visible to software. A microarchitecture implements that contract as a circuit. Processors implementing the same ISA can differ in performance and power because of their pipelines, caches, and execution resources.
+
+### Arm and RISC-V
+
+Arm Cortex-M targets microcontrollers, Cortex-A application processing with operating systems, and Cortex-R real-time applications. RISC-V is an open ISA with modular extensions. RV32 and RV64 identify integer register widths; supported extensions depend on the implementation. x86-64, MIPS, and AVR have their own instruction ecosystems.
+
+### Instructions and memory
+
+A calling convention defines argument passing, return values, and register preservation. Exceptions and interrupts transfer execution to handlers. Caches keep frequently used data near the processor, and an MMU handles address translation and protection. DMA transfers data between peripherals and memory without having the CPU copy each byte.
+
+PicoRV32, Ibex, CVA6, Rocket, and BOOM provide readable RISC-V implementations. QEMU supports instruction and system emulation, while gem5 supports computer-architecture simulation. ISA behavior and the performance of a particular core are related but distinct subjects.
+
+### From architecture to a running target
+
+An ISA defines instruction encoding, registers, memory access, and exception behavior. A CPU core implements these rules; an MCU combines a core with Flash, SRAM, and peripherals. STM32F767ZI contains an Arm Cortex-M7 core. Arm is the architecture family, Cortex-M7 the core, STM32F767ZI the MCU, and NUCLEO-F767ZI the development board. These are different layers of the same system; the [ST product page](https://www.st.com/en/microcontrollers-microprocessors/stm32f767zi.html) describes the MCU.
+
+The same C expression compiles to different instructions for Arm and RISC-V. Computing `input_a + input_b` involves loading values, adding them, and storing the result. A line of C does not correspond to a single CPU instruction.
+
+The C example above was stepped instruction by instruction on Renode's Cortex-M7 model and Spike's RV64IMAC target. Immediately after addition, the value 4 was in a CPU register; after the store, `result` in memory became 4. Both targets ended with `result=4` and `trace={4,5}`. These are execution results from virtual targets.
+
+Renode models MCUs and peripherals; Spike simulates the RISC-V ISA. The Arm exercise connects directly to Renode's GDB server. The RISC-V exercise connects OpenOCD's `remote_bitbang` interface to Spike's virtual JTAG. See the [Renode GDB documentation](https://renode.readthedocs.io/en/latest/debugging/gdb.html) and [Spike project](https://github.com/riscv-software-src/riscv-isa-sim).

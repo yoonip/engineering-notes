@@ -2,7 +2,7 @@
 
 [전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-프로그램의 동작은 알고리즘뿐 아니라 자료구조, 운영체제, 메모리, 입출력 방식에 의해 결정된다. 같은 계산 복잡도를 가진 구현도 메모리 접근 패턴과 실행 환경에 따라 성능이 달라진다.
+프로그램은 알고리즘과 자료구조, 운영체제, 메모리, 입출력 방식이 맞물려 동작한다. 같은 계산 복잡도를 가진 구현도 메모리 접근 패턴과 실행 환경에 따라 성능이 달라진다.
 
 ## 자료구조와 실행 비용
 
@@ -14,7 +14,7 @@
 
 ## 저장, 통신, 빌드
 
-파일시스템은 이름과 디렉터리를 저장 장치의 데이터에 연결한다. 데이터베이스는 질의와 동시 접근, 트랜잭션을 다룬다. TCP는 순서 있는 바이트 스트림을 제공하므로 애플리케이션 메시지 경계는 별도로 정의한다. 컴파일러는 소스를 변환하고 링커는 여러 목적 파일과 라이브러리를 결합한다. Linux와 xv6의 코드는 운영체제 내부 구조를 읽는 자료가 된다.
+파일시스템은 이름과 디렉터리를 저장 장치의 데이터에 연결한다. 데이터베이스는 질의와 동시 접근, 트랜잭션을 다룬다. TCP는 순서 있는 바이트 스트림을 제공하므로 애플리케이션 메시지 경계는 별도로 정의한다. 컴파일러는 소스를 변환하고 링커는 여러 목적 파일과 라이브러리를 결합한다. Linux와 xv6의 소스에서는 운영체제의 내부 구조를 직접 살펴볼 수 있다.
 
 ## 관련 기술
 
@@ -24,3 +24,19 @@ Linux, xv6, OSTEP topics, Networking, TCP/IP, Filesystems, Databases, Compilers,
 
 - [Linux Kernel documentation](https://docs.kernel.org/)
 - [LLVM documentation](https://llvm.org/docs/)
+
+## English
+
+Program behavior depends on data structures, the operating system, memory, and I/O as well as the algorithm itself. Two implementations with the same asymptotic complexity can perform differently because of memory access patterns and their execution environments.
+
+### Data structures and execution cost
+
+Arrays suit indexed access and contiguous traversal. Linked lists connect nodes through pointers. Hash tables map keys to hash values, with performance affected by collision handling and hash distribution. Trees support hierarchy, ordering, and search; graphs represent more general relationships.
+
+### Operating systems and concurrency
+
+A process has its own address space, while threads within a process share memory. Virtual memory maps a program's addresses to physical storage. A race condition occurs when the result depends on execution order. Locks, atomic operations, and message passing are ways to coordinate shared state.
+
+### Storage, communication, and builds
+
+A filesystem maps names and directories to stored data. A database adds query processing, concurrent access, and transactions. TCP provides an ordered byte stream, so an application must define its own message boundaries. Compilers translate source, and linkers combine object files and libraries. Linux and xv6 provide source code for studying how operating systems are built.

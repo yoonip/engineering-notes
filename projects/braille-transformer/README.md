@@ -49,8 +49,41 @@ CPU 앱은 checkpoint의 `best.pt`, `config.json`, `vocab.json`을 함께 읽는
 - `evaluate.py`, `export_weights.py`: 생성 결과 평가와 가중치 추출
 - `notebooks/01_workflow.ipynb`: 데이터 준비부터 학습·추론까지 연결한 노트북
 
-2026-10-19의 공개본 검사에서는 합성 자료 테스트 6개와 CLI·노트북 기본 실행을 확인했다. 위 학습 지표는 저장된 최종 실험의 결과이며, 이번 소스 정리 과정에서 전체 모델을 다시 학습하지 않았다. 세부 기록은 `validation.json`, 작성 경위는 `PROVENANCE.md`에 있다.
+2026-10-19 검사에서는 합성 자료 테스트 6개와 CLI·노트북 기본 실행을 확인했다. 위 학습 지표는 저장된 최종 실험의 결과이며, 이 검사에서 전체 모델을 다시 학습하지 않았다. 세부 기록은 `validation.json`, 구성 안내는 `PROVENANCE.md`에 있다.
 
 ## English
 
-A character-level encoder–decoder Transformer for Unicode six-dot Braille to Korean. The model was trained from scratch for 16 epochs and evaluated on all 8,352 held-out newspaper sentences using autoregressive greedy decoding. The recorded NFC CER is 0.145706%, with 93.6782% exact sentence match. Source code, reproducible configuration, notebooks and aggregate metrics are included; the corpus and trained weights are managed separately.
+This PyTorch project converts Unicode six-dot Braille to Korean with a character-level encoder–decoder Transformer trained from scratch. Input tokens are Braille characters; output tokens are NFD Hangul components, recomposed to NFC after generation.
+
+### Model and recorded experiment
+
+| Item | Configuration or result |
+| --- | --- |
+| Architecture | Three encoder and three decoder layers; d_model 256, eight heads, FFN 1024, dropout 0.1 |
+| Parameters and vocabulary | 5,672,691 parameters; 68 input and 243 output tokens |
+| Data | Newspaper sentences from the National Institute of Korean Language's 2025 print–Braille parallel corpus |
+| Split | 66,824 training / 8,352 validation / 8,352 test pairs |
+| Training | Sixteen epochs, batch 32, AdamW 0.0005, seed 20261006 |
+| Checkpoint | Epoch 16, selected by the lowest validation loss |
+| Evaluation | All 8,352 test pairs; autoregressive greedy decoding, beam 1 |
+| Character error rate | NFC 0.145706%; NFD 0.088645% |
+| Exact sentence match | 7,824 / 8,352 = 93.6782% |
+
+Evaluation includes spaces, digits and punctuation, using CUDA FP16 autocast and batch 32. Generation receives no target prefix. Inferred document units and connected duplicate inputs/targets are grouped before splitting. These aggregate results describe newspaper-domain text; they are stored in `results/`.
+
+### Running the project
+
+Use Python 3.12 and a CPU/CUDA installation of [PyTorch](https://pytorch.org/get-started/locally/). The reference environment is recorded in `environment/`. The commands above install dependencies, run tests and start JupyterLab.
+
+Place an authorized local corpus copy in `data/raw/nikl`, then use the listed preprocessing, training, evaluation and export commands. Training writes to `checkpoints/reference`; the CPU app reads `best.pt`, `config.json` and `vocab.json` together. Source, configuration and aggregate metrics are included; the corpus and trained weights are managed separately.
+
+### Source and verification
+
+- `model.py`: vocabulary, NFD/NFC, positional encoding, pre-LN Transformer, causal/PAD masks and greedy generation.
+- `train.py`: length bucketing, valid-token gradient accumulation, AMP, AdamW, warmup/cosine scheduling and epoch-level resume.
+- `prepare_data.py`: reviewed Braille selection, duplicate grouping, splits and content hashes.
+- `inference.py` and `app.py`: input checks, CPU/GPU inference and Tkinter UI.
+- `evaluate.py` and `export_weights.py`: generated-text evaluation and weight export.
+- `notebooks/01_workflow.ipynb`: preprocessing, training and inference workflow.
+
+The October 19, 2026 check covered six synthetic-data tests and basic CLI/notebook execution. The metrics above come from the recorded final experiment; full training was not repeated during that check. See `validation.json` for details and `PROVENANCE.md` for package information.

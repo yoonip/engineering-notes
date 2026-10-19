@@ -67,3 +67,23 @@ pio run
 ## STM32 GPIO
 
 `stm32-gpio/main.c`는 STM32CubeIDE의 STM32F767ZI 프로젝트에 사용하는 소스다. ST의 CMSIS 코어·디바이스 헤더와 시작 코드, 링커 스크립트가 필요하다. Cortex-M7 컴파일 대상과 보드 핀 배치는 해당 프로젝트 설정을 따른다.
+
+## English
+
+Run the Arm and RISC-V commands above from this example's root. ELF files contain executable code, data layout, symbols and debug information.
+
+### Arm Cortex-M7
+
+The GNU Arm commands compile Cortex-M7/Thumb startup and C code using `arm/link.ld`, then disassemble the ELF. In Renode, `include @arm/step.resc` loads the platform/ELF and opens its GDB server. Run `arm-none-eabi-gdb` with `arm/verify.gdb` in a second terminal to inspect execution/results.
+
+### RISC-V RV64IMAC
+
+Compile with `-march=rv64imac -mabi=lp64 -mcmodel=medany`, using the startup and linker files shown above. Spike, OpenOCD and GDB are separate long-running processes. Spike's remote-bitbang port is 9824 and OpenOCD's GDB port is 3334; both are local connections.
+
+### Instruction-level observation
+
+After `break main` and `continue`, use the listed disassembly, register and memory commands around `stepi`. `stepi` executes one CPU instruction; source-level `step` may execute several instructions for one C line.
+
+### MCU builds
+
+Build ESP32 with `pio run` from `esp32/`, using `platformio.ini`. `stm32-gpio/main.c` belongs in a STM32CubeIDE STM32F767ZI project with official ST CMSIS core/device headers, startup and linker files. Use that project's Cortex-M7 target and board pin settings.

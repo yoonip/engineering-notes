@@ -2,7 +2,7 @@
 
 [전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-AI 응용은 모델 호출에 데이터 검색, 도구 실행, 사용자 인터페이스, 오류 처리, 평가를 연결한 시스템이다. 모델 자체의 지식과 외부 자료·도구에서 얻은 정보를 구분하면 실패 원인을 나누어 볼 수 있다.
+AI 응용은 모델 호출에 데이터 검색, 도구 실행, 사용자 인터페이스, 오류 처리, 평가를 연결한 구조다. 모델 지식과 외부 자료·도구에서 얻은 정보를 구분해 두면 오류가 어디서 생겼는지 찾기 쉽다.
 
 ## API와 도구 실행
 
@@ -10,9 +10,9 @@ Structured output은 출력 형식을 schema와 연결하고, function calling�
 
 ## RAG와 workflow
 
-RAG는 검색한 자료를 생성 과정의 문맥으로 제공한다. 문서 분할·embedding·retrieval·reranking·인용 연결이 답변 품질에 영향을 준다. 검색이 틀린 경우와 검색 자료를 잘못 해석한 경우는 다른 오류다. LangChain·LlamaIndex·DSPy는 이런 응용을 구성하는 도구 생태계다.
+RAG는 검색한 자료를 생성 과정의 문맥으로 제공한다. 문서 분할·embedding·retrieval·reranking·인용 연결이 답변 품질에 영향을 준다. 검색이 틀린 경우와 검색 자료를 잘못 해석한 경우는 다른 오류다. LangChain·LlamaIndex·DSPy는 이런 응용을 구성하는 데 쓰인다.
 
-## 평가의 단위
+## 평가 항목
 
 정확성, 근거 일치, 한국어·영어 응답 품질, tool 성공률, latency, token·API 비용을 나누어 본다. lm-evaluation-harness·Ragas·promptfoo는 서로 다른 평가 작업에 쓰인다. Prompt나 모델 버전 변경 후 같은 질문 집합을 다시 실행하면 개선과 회귀를 비교할 수 있다.
 
@@ -24,3 +24,23 @@ OpenAI APIs, Claude API, Gemini API, LangChain, LlamaIndex, DSPy, MCP, lm-evalua
 
 - [OpenAI model documentation](https://developers.openai.com/api/docs/models)
 - [Hugging Face documentation](https://huggingface.co/docs)
+
+## English
+
+### AI applications, agents, and evaluation
+
+An AI application connects model calls to retrieval, tool execution, a user interface, error handling, and evaluation. Separating model knowledge from information obtained through external sources and tools makes it easier to identify where a failure occurred.
+
+### APIs and tool execution
+
+Structured output constrains a response through a schema. With function calling, an application handles the tool name and arguments requested by a model. Changing a file or performing an external action is an execution step separate from generating text. An agent can repeatedly observe, plan, call tools, and update state. MCP is a protocol for connecting tools and resources to applications.
+
+### RAG and workflows
+
+Retrieval-augmented generation supplies retrieved material as context for generation. Document chunking, embeddings, retrieval, reranking, and citation links all affect answer quality. Retrieving the wrong material and misinterpreting correctly retrieved material are distinct errors. LangChain, LlamaIndex, and DSPy support the construction of these applications.
+
+### What to evaluate
+
+Evaluation can separate correctness, agreement with evidence, Korean and English response quality, tool success rates, latency, and token or API cost. lm-evaluation-harness, Ragas, and promptfoo serve different evaluation tasks. Running the same question set after a prompt or model-version change helps identify improvements and regressions.
+
+The related APIs and tools include OpenAI APIs, Claude API, Gemini API, LangChain, LlamaIndex, DSPy, MCP, lm-evaluation-harness, Ragas, and promptfoo.

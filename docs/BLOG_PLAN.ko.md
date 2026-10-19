@@ -15,3 +15,21 @@
 TIME 같은 매체의 기사는 특정 사건을 사람·제도·사회적 맥락으로 설명한다. 연구 논문은 문제와 방법·실험 근거를 중심으로 구성된다. 기사에서 소개한 기술의 주장과 원 논문의 범위가 어디서 만나는지 연결하면 해석의 차이가 보인다. 특허 문헌은 기술의 공개와 권리 체계가 만나는 또 다른 자료다.
 
 [논문·코드·특허](../topics/27-papers-code-patents/README.md) · [자동화와 문서 생성](../topics/28-automation-portfolio/README.md)
+
+## English
+
+Technology sits within language, institutions, investment, and industry. Alongside electronics and computer engineering, these notes explore the writing and ideas around technology.
+
+### English and other languages
+
+Technical English differs from everyday conversation in both vocabulary and sentence structure. A paper's claim and evidence serve a different purpose from a manual's requirement and recommendation. Translation needs to preserve definitions, assumptions, and cause-and-effect relationships rather than just sentence shape. A term can also mean different things across fields.
+
+### Society and economics
+
+Productivity, investment, employment, interest rates, exchange rates, and supply chains shape decisions in technology. Semiconductors and AI infrastructure bring together design, manufacturing, equipment, memory, power, and service costs. Revenue, market size, and growth rates need to be read with their reporting period, currency, and nominal or real basis in mind.
+
+### Articles and research
+
+Publications such as TIME explain events through people, institutions, and social context. Research papers organize their argument around a problem, method, and experimental evidence. Reading an article alongside its underlying paper shows where their claims and scope meet or differ. Patent literature connects the disclosure of a technology with the rights surrounding it.
+
+[Papers, code, and patents](../topics/27-papers-code-patents/README.md) · [Automation and publishing](../topics/28-automation-portfolio/README.md)

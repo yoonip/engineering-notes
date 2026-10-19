@@ -7,6 +7,7 @@ All mask settings keep the same transistor topology and stimulus per bitwidth.
 from __future__ import annotations
 import argparse, csv, hashlib, json, os, re, shutil, subprocess, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from collections import deque
 from pathlib import Path
 import numpy as np
 from arithmetic import column_mask_mul, signed_value, baugh_wooley_mul, accumulator_width
@@ -130,7 +131,8 @@ def generate(n, k, count, dest, mode='mac', idle=False):
         lines.append(pwl_bits(f'b{bit}',[b for a,b in vectors],bit))
     for c in range(n-1):
         lines.append(f'Ven{c} en{c} 0 {int(c >= k)}')
-    columns = [[] for _ in range(2*n+1)]
+    # 앞의 비트를 계속 꺼내므로 deque를 써서 남은 원소 이동을 피한다.
+    columns = [deque() for _ in range(2*n+1)]
     gates = {'and2':0,'and3':0,'nand2':0,'fa':0,'ha':0,'dff':0,'inv':2}
     for i in range(n):
         for j in range(n):
@@ -156,11 +158,11 @@ def generate(n, k, count, dest, mode='mac', idle=False):
             counter += 1
             s,carry = f'cs{counter}',f'cc{counter}'
             if len(columns[c]) >= 3:
-                a,b,ci = [columns[c].pop(0) for _ in range(3)]
+                a,b,ci = [columns[c].popleft() for _ in range(3)]
                 lines.append(f'Xreduce{counter} {a} {b} {ci} {s} {carry} vdd 0 fa')
                 gates['fa'] += 1
             else:
-                a,b = [columns[c].pop(0) for _ in range(2)]
+                a,b = [columns[c].popleft() for _ in range(2)]
                 lines.append(f'Xreduce{counter} {a} {b} {s} {carry} vdd 0 ha')
                 gates['ha'] += 1
             columns[c].append(s)

@@ -2,7 +2,7 @@
 
 [전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-디버깅은 관찰한 현상과 원인을 연결하는 과정이다. 소프트웨어 디버거, 디버그 프로브, 칩의 디버그 인터페이스는 서로 다른 구성요소다. 회로 문제와 펌웨어 문제는 비슷한 증상을 만들기도 한다.
+디버깅에서는 관찰한 증상에서 출발해 원인을 좁혀 간다. 소프트웨어 디버거, 디버그 프로브, 칩의 디버그 인터페이스는 서로 다른 구성요소다. 회로 문제와 펌웨어 문제는 비슷한 증상을 만들기도 한다.
 
 ## 연결 구조
 
@@ -45,10 +45,48 @@ OpenOCD가 C 코드를 컴파일하거나 CPU를 가상으로 실행하는 것�
 | `info registers` | CPU 레지스터 조회 |
 | `x/wx &result` | `result` 주소의 32비트 값 조회 |
 
-`3334`는 현재 Spike 실습의 설정값이다. 기본값이나 모든 타깃의 공통 포트라는 뜻은 아니다. STM32의 Flash 기록과 리셋 절차는 대상의 메모리 맵과 OpenOCD 설정을 따른다.
+`3334`는 이 Spike 실습에 설정한 포트이며, 대상에 따라 다른 값을 사용한다. STM32의 Flash 기록과 리셋 절차는 대상의 메모리 맵과 OpenOCD 설정을 따른다.
 
 ## 메모리 검사와 오류 주입
 
 패턴을 기록하고 다시 읽어 기대값과 비교한다. 결과에는 오류 수, 첫 오류 인덱스, 기대값과 관찰값을 남긴다. 정상·오류 주입·복원을 같은 절차로 실행해 판정 경로를 확인한다.
 
 Spike+OpenOCD의 저장된 실행 기록에서는 정상 상태의 오류 수가 0이었고, 인덱스 17의 bit 0을 바꾼 뒤에는 오류 1개가 검출됐으며, 복원 뒤에는 다시 0이었다. Renode의 소프트웨어 메모리 회귀검사는 29개 사례를 포함한다. 모두 가상 대상의 소프트웨어 검사 결과다.
+
+## English
+
+Debugging connects an observed symptom to its cause. A software debugger, a debug probe, and a chip's debug interface occupy different places in that process. Circuit faults and firmware faults can produce similar symptoms.
+
+### Connection layers
+
+GDB controls execution and reads variables and memory. OpenOCD connects supported probes and targets, offering a GDB server, Flash programming, and target control. JTAG and SWD are chip debug interfaces. ST-Link and J-Link are probe families; pyOCD and probe-rs provide other target-dependent debugging tools.
+
+### What each instrument observes
+
+A breakpoint stops execution at a location, while a watchpoint reacts to a memory-access condition. Stopping the target can change timing. HardFault analysis combines fault-status registers, the exception stack frame, and execution information such as PC and LR. SWO and ETM provide trace on supported devices.
+
+An oscilloscope observes voltage over time; a logic analyzer observes digital states and protocols. Saleae, PulseView, and sigrok support digital signal analysis. Aligning software logs with physical pin activity helps explain communication failures and response delays.
+
+### Connecting a debugger to a target
+
+GDB reads symbols and debug information from an ELF to relate source code and variables to CPU state. OpenOCD translates debugger requests into target debug operations. A physical board uses a probe such as ST-LINK and a JTAG or SWD connection to the chip. USB, JTAG, and SWD have different positions and roles in that connection.
+
+The connection diagram above shows three paths: GDB through OpenOCD and a physical probe to a chip; GDB through OpenOCD's `remote_bitbang` to Spike's virtual JTAG; and GDB directly to Renode's GDB server. OpenOCD provides halt/resume and register/memory access; it does not compile C or emulate a CPU. See [GDB and OpenOCD](https://openocd.org/doc/html/GDB-and-OpenOCD.html).
+
+| GDB command | Meaning in this exercise |
+| --- | --- |
+| `target extended-remote localhost:3334` | Connect to the OpenOCD GDB server |
+| `monitor halt` | Ask the debug server to halt the target |
+| `load` | Write loadable ELF code and data to target memory |
+| `break main` | Set a breakpoint at `main` |
+| `stepi` | Execute one machine instruction |
+| `info registers` | Inspect CPU registers |
+| `x/wx &result` | Read a 32-bit value at the address of `result` |
+
+Port `3334` is configured for this Spike exercise; other targets may use different ports. STM32 Flash programming and reset procedures depend on the target memory map and OpenOCD configuration.
+
+### Memory checks and fault injection
+
+The check writes patterns, reads them back, and compares them with expected values. Results record the error count, first failing index, expected value, and observed value. Normal operation, fault injection, and restoration follow the same procedure to exercise the detection path.
+
+The saved Spike/OpenOCD run reported zero errors initially, one error after flipping bit 0 at index 17, and zero after restoration. The Renode software memory regression includes 29 cases. These results come from software checks on virtual targets.

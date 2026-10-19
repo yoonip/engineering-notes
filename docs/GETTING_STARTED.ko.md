@@ -14,3 +14,20 @@ Linux·WSL은 운영체제 환경, GCC·Clang은 compiler, Python은 interpreter
 ## 재현에 필요한 정보
 
 소스 revision은 코드의 기준을, package version은 라이브러리의 기준을, configuration은 실행 선택을 나타낸다. 같은 코드도 운영체제·CPU/GPU·입력 데이터·random seed에 따라 다른 결과를 낼 수 있다. 환경 정보는 이 차이를 해석하는 근거다.
+
+## English
+
+A development environment combines an operating system, tools, dependencies, and computing resources. An editor handles source files, a compiler or interpreter prepares or runs them, and a package manager manages libraries.
+
+### How the layers fit together
+
+Linux and WSL provide operating environments. GCC and Clang are compilers; Python is an interpreter. venv and Conda separate project dependencies. A Jupyter kernel is the process that actually runs notebook code. GPU work adds compatibility requirements between the driver, runtime, and framework.
+
+- [Linux and Bash](../topics/01-linux-bash/README.md)
+- [Git and build tools](../topics/02-git-development-tools/README.md)
+- [Python environments and Jupyter](../topics/03-python-jupyter/README.md)
+- [CUDA execution](../topics/25-cuda-performance/README.md)
+
+### What makes a run reproducible
+
+The source revision identifies the code, package versions identify the libraries, and the configuration records execution choices. The same code can produce different results with a different operating system, CPU or GPU, input dataset, or random seed. Recording these details makes those differences easier to understand.

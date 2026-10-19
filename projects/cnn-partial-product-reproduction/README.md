@@ -26,7 +26,7 @@ CNN의 정수 내적은 절대합이 `2**24` 미만인 FP32 부분 내적으로 
 | `cnn/` | ResNet18/50, 양자화 추론, STE 재학습, BN 및 평균 오차 보정 |
 | `tests/` | 데이터가 필요 없는 산술·공개 파일 정책·집계 지표·해시 검증 |
 | `metrics/` | 기존 독립 실험의 집계 지표 |
-| `VALIDATION_RESULTS.json` | 이번 공개 소스 사본의 가벼운 검증 결과 |
+| `VALIDATION_RESULTS.json` | 소스 검증 결과 |
 | `MANIFEST_SHA256.json` | 배포 파일별 상대 경로·크기·SHA256 |
 
 ## 설치와 가벼운 검증
@@ -66,7 +66,7 @@ python circuit/run_circuit.py --bits 6 --masks 0 5 --samples 24 --skip-exhaustiv
 
 SKY130 경로는 별도 로컬 모델이 필요하다. 공식 primitive 저장소의 TT nfet_01v8/pfet_01v8을 사용하며, 모델·계수·PDK vendor 파일을 배포하지 않는다. 준비와 실행 명령은 [공개 PDK 어댑터 설명](circuit_open_pdk/README.md)에 있다.
 
-SystemVerilog 파일은 산술 참조다. 이번 공개 소스 검증에서는 합성·배치배선·타이밍·실제 보드 동작을 검증하지 않았다.
+SystemVerilog 파일은 산술 참조다. 소스 검증에서는 합성·배치배선·타이밍·실제 보드 동작을 검증하지 않았다.
 
 ## CNN 학습과 평가
 
@@ -85,7 +85,7 @@ CIFAR100은 train/infer 양쪽에 `--dataset cifar100`, ResNet50은 `--arch resn
 
 ## 기존 독립 측정
 
-다음은 2026-10-04에 실행한 ResNet18 seed2026의 집계값이다. 이번 공개 사본 정리에서는 전체 학습·test 평가·트랜지스터 sweep을 다시 실행하지 않았다. 원시 예측·가중치·파형은 포함하지 않는다.
+다음은 2026-10-04에 실행한 ResNet18 seed2026의 집계값이다. 2026-10-19 검사에서는 전체 학습·test 평가·트랜지스터 sweep을 다시 실행하지 않았다. 원시 예측·가중치·파형은 포함하지 않는다.
 
 | 실험 | 정확도 또는 공급전력 |
 |---|---|
@@ -100,6 +100,60 @@ INT8 k1의 정확도 차이에 대한 paired95% 구간은 CIFAR10에서 −0.15~
 
 38개 전체 test 평가의 집계, 3개 학습 seed 통계, 재학습·보정·회로 조건은 [metrics/README.md](metrics/README.md)와 [archived_metrics.json](metrics/archived_metrics.json)에 있다. 자체 소스의 오픈소스 라이선스는 지정하지 않았으며, 현재 상태는 [LICENSE](LICENSE)에 명시했다.
 
-## English overview
+부분곱 열의 비트는 `deque`로 관리한다. 앞의 비트를 꺼낼 때 남은 원소를 매번 옮기지 않으면서 기존 처리 순서를 유지한다. INT6·INT8의 mask·연산 모드·idle·표본 수를 조합한 112개 조건에서 기존 코드와 같은 netlist가 생성되는 것을 확인했다.
 
-An independent implementation of signed partial-product column removal, CMOS MAC netlist generation, and CIFAR ResNet quantization experiments. Dataset-free arithmetic and recipe smoke checks are included, with ngspice and optional SKY130 models as external dependencies. Archived aggregate measurements describe this implementation under the documented circuit and evaluation conditions. Datasets and checkpoints are managed separately.
+## English
+
+The netlist generator keeps each partial-product column in a `deque`, so removing bits from the front does not shift the remaining elements. The processing order stays the same. Across 112 combinations of INT6/INT8 width, column mask, operation mode, idle state, and sample count, the generated netlists matched the previous implementation exactly.
+
+The project implements low-order partial-product column removal for INT6/INT8 in Python and CMOS netlists, then compares CNN quantization, accumulator truncation and partial-product removal. It includes Baugh–Wooley signed multiplication, a feedback accumulator, ngspice stimulus generation and CIFAR-style ResNet training/inference. Attribution is in [NOTICE.md](NOTICE.md).
+
+### Arithmetic and source layout
+
+Both operands are signed two's-complement values. INT6 supports `k=0..5`; INT8 supports `k=0..7`. The formula above removes low-order partial products before carry propagation. For `a=w=3, k=2`, exact multiplication gives 9, truncating the completed product gives 8, and partial-product removal gives 4.
+
+Integer CNN dot products are split into FP32 partial sums whose absolute sum stays below `2**24`, then combined in INT64. BN, residual additions and dequantization remain FP32. This is an arithmetic/evaluation implementation rather than an integer-only accelerator or low-power GPU kernel.
+
+| Path | Content |
+| --- | --- |
+| `circuit/` | Signed arithmetic, CMOS netlist generation/execution and optional SystemVerilog reference |
+| `circuit/models/educational_level1.pm` | Educational MOS model without process calibration |
+| `circuit_open_pdk/` | Adapter for separately supplied local SKY130 models |
+| `cnn/` | ResNet18/50, quantized inference, STE fine-tuning, BN and mean-error correction |
+| `tests/` | Dataset-free arithmetic, file-policy, metric and hash checks |
+| `metrics/` | Archived aggregate experiments |
+| `VALIDATION_RESULTS.json` | Source-check results |
+| `MANIFEST_SHA256.json` | Relative paths, sizes and SHA256 hashes |
+
+### Installation and circuit execution
+
+The recorded environment uses Python 3.12. `requirements-core.txt` supplies the NumPy-only arithmetic path. The commands above run unit tests, verify hashes and exhaustively compare arithmetic. CNN microtests and recipe smoke checks additionally require PyTorch/torchvision and use synthetic input without downloading CIFAR or training the full model.
+
+Netlist generation works without ngspice. Transient simulation needs a separate installation, resolved through `--ngspice`, `NGSPICE_EXECUTABLE`, then PATH. Archived runs used ngspice 47; binaries and libraries are not bundled.
+
+The default MOS model is educational Level1 at 1 V. Its 45 nm geometry is not a calibrated process model. Reported supply power covers the multiplier, accumulator, registers and internal clock inverter. It excludes ideal external stimulus, clock/EN/non-overlap clock generation, extracted interconnect parasitics and PVT sweeps. The optional SKY130 path uses local TT nfet_01v8/pfet_01v8 models; setup is in the [adapter guide](circuit_open_pdk/README.md). SystemVerilog files serve as arithmetic references; synthesis, placement/routing, timing and board operation were not part of this source check.
+
+### CNN training and evaluation
+
+The default is CIFAR-style ResNet18 with 30 epochs, SGD, crop/flip, label smoothing and cosine learning rate. The official 50k training set is split into fixed 45k training/5k validation sets; validation determines BEST and scales. The final test set has 10k images. The default worker count is zero.
+
+The listed `train`, `infer`, `finetune` and `qat_eval` commands run new experiments. Data and weights are not bundled; torchvision may download missing CIFAR archives during training or inference. Select CIFAR100 with `--dataset cifar100` in both train/infer commands, and ResNet50 with `--arch resnet50`; these must match the checkpoint's architecture and class count.
+
+`--recipe thesis` selects a separate recipe with RandAugment, three repeated augmentations, Mixup/CutMix and SAM. Setting `--epochs 300` alone does not select it. Full 300-epoch and ResNet50 accuracy runs are outside the archived measurements. `--resume` is a weights-only warm start; optimizer, scheduler and RNG state are recreated.
+
+### Archived measurements
+
+These ResNet18/seed-2026 results were recorded on October 4, 2026. Full training, test evaluation and transistor sweeps were not repeated during the October 19 source check. Raw predictions, weights and waveforms are managed separately.
+
+| Experiment | Accuracy or supply power |
+| --- | --- |
+| CIFAR10 FP32 / INT8 k0 / partial-product k1 | 93.45% / 93.46% / 93.49% |
+| CIFAR100 FP32 / INT8 k0 / partial-product k1 | 74.33% / 74.21% / 74.42% |
+| INT6 k4, Conv1/FC k0, five-epoch fine-tuning | 10.00% → 18.71% |
+| SKY130, same twelve CNN input pairs, INT8 k0 / k1 | 14.703 / 14.347 µW |
+
+Paired 95% intervals for the INT8 k1 accuracy difference are −0.15 to +0.22 percentage points on CIFAR10 and −0.09 to +0.51 on CIFAR100. These intervals do not establish an accuracy gain. Later k1/error-correction runs are exploratory follow-ups; the short fine-tuning result describes that schedule.
+
+The twelve circuit input pairs are the same short partial dot products captured from the k1 network; the first nine activations are zero. Their power difference is not converted into a whole-CNN energy reduction. Educational Level1, SKY130 130 nm and the original paper's 45 nm conditions are distinct.
+
+See [metrics/README.md](metrics/README.md) and [archived_metrics.json](metrics/archived_metrics.json) for 38 full-test evaluation rows, three-seed statistics and fine-tuning/correction/circuit conditions. The source's current license status is in [LICENSE](LICENSE).

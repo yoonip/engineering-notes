@@ -2,7 +2,7 @@
 
 [전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-C는 자료의 표현과 메모리 접근을 직접 다루기 좋은 언어다. MCU 펌웨어, 운영체제, 드라이버, 통신 라이브러리에서 많이 쓰인다. C++는 여기에 클래스·템플릿·표준 라이브러리 등을 더해 복잡한 프로그램을 구성한다. Python은 제어 흐름을 간결하게 표현하고 분석 도구를 연결하는 데 강점이 있다.
+C는 데이터 표현과 메모리 접근을 직접 다룬다. MCU 펌웨어, 운영체제, 드라이버, 통신 라이브러리에서 많이 쓰인다. C++는 여기에 클래스·템플릿·표준 라이브러리 등을 더해 복잡한 프로그램을 구성한다. Python은 제어 흐름을 간결하게 표현하고 분석 도구를 연결하는 데 강점이 있다.
 
 ## C: 데이터와 메모리
 
@@ -52,7 +52,7 @@ int main() {
 
 Python에서는 `sum(values) / len(values)`로 같은 계산을 표현할 수 있다. 대량의 수치 계산은 NumPy·PyTorch처럼 내부가 C/C++·GPU 코드로 구현된 라이브러리에 맡기는 경우가 많다. ctypes·CFFI·pybind11은 언어 경계를 연결한다.
 
-Rust는 소유권과 차용을 이용한 메모리 안전성, Go는 서비스와 동시성, Java·C#은 관리형 런타임과 애플리케이션 생태계, JavaScript·TypeScript는 웹, Julia는 수치 계산에 자주 쓰인다. Tcl·SKILL은 EDA 자동화에서 만나기 쉽고, Assembly는 명령어와 호출 규약을 직접 확인하는 데 쓰인다.
+Rust는 소유권과 차용을 이용한 메모리 안전성, Go는 서비스와 동시성, Java·C#은 관리형 런타임과 애플리케이션 생태계, JavaScript·TypeScript는 웹, Julia는 수치 계산에 자주 쓰인다. Tcl·SKILL은 EDA 자동화에 쓰이고, Assembly는 명령어와 호출 규약을 직접 확인하는 데 쓰인다.
 
 ## 관련 기술
 
@@ -62,3 +62,25 @@ C, C++, Python, Rust, Go, Java, C#, JavaScript/TypeScript, Julia, R, Tcl, Lua, A
 
 - [GCC language standards](https://gcc.gnu.org/onlinedocs/gcc/Standards.html)
 - [Python Tutorial](https://docs.python.org/3/tutorial/)
+
+## English
+
+C gives direct control over data representation and memory access. It is widely used in MCU firmware, operating systems, drivers, and communication libraries. C++ adds tools such as classes, templates, and the standard library for structuring larger programs. Python offers concise control flow and convenient connections to analysis libraries.
+
+### C: data and memory
+
+An array stores elements of one type contiguously. A pointer refers to an object or function, but a pointer passed to a function does not automatically carry an array's length. Structures group related values, and bit operations are useful for register fields and communication packets.
+
+The C example above computes the mean of three voltage measurements. Its `mean` function expects `count > 0` and an array with at least that many readable elements. `const` prevents modification through that pointer. With GCC on Linux, `gcc -std=c17 -Wall -Wextra -Wpedantic mean.c -o mean` builds it and `./mean` runs it. The mean of the example array is 3.200 V.
+
+Memory allocated with `malloc` needs explicit lifetime management. Out-of-bounds access, use after free, uninitialized values, and signed integer overflow are common sources of errors. `volatile` is useful for accesses such as device registers, but does not provide thread synchronization or atomicity.
+
+### C++: resource lifetime and abstraction
+
+RAII ties resource lifetime to object lifetime. An object that owns a file or memory releases it when the object leaves scope. `std::vector` provides a resizable contiguous array, `std::unique_ptr` expresses exclusive ownership, and templates allow algorithms to work across types. The C++ example performs the same mean calculation with a vector and `std::accumulate`.
+
+### Connecting Python and other languages
+
+Python expresses the same calculation as `sum(values) / len(values)`. Large numerical workloads often run through libraries such as NumPy and PyTorch, whose implementations include C, C++, and GPU code. ctypes, CFFI, and pybind11 connect these language boundaries.
+
+Rust uses ownership and borrowing for memory safety; Go is common in services and concurrent programs. Java and C# have managed runtimes and broad application ecosystems, JavaScript and TypeScript are central to web development, and Julia targets numerical computing. Tcl and SKILL appear in EDA automation, while Assembly exposes instructions and calling conventions directly.

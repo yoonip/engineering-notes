@@ -59,3 +59,7 @@
 - [WIPO — Patents](https://www.wipo.int/en/web/patents)
 
 [AI 모델별 공식 자료](../model-lab/PROVIDERS.md)
+
+## English
+
+The links above collect official documentation, open teaching materials, and project references used throughout these notes. Each topic page also links to the sources most relevant to its subject. [Official model references](../model-lab/PROVIDERS.md) are grouped by provider.

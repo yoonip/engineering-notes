@@ -4,7 +4,7 @@
 
 [처음으로](../README.md) · [분야별 목차](../CATALOG.md) · [GitHub 프로필](https://github.com/yoonip)
 
-저전력 AI 연산, 메모리 회로, 신경망 에너지 모델링과 FPGA 계측 자동화 연구에 참여했다.
+저전력 AI 연산, 메모리 회로, 신경망 에너지 모델링과 FPGA 계측 자동화 연구에 참여했다. 관련 프로젝트와 논문, 수상 기록을 여기에 모았다.
 
 ## 연구자 정보
 
@@ -166,7 +166,7 @@ TOEIC Speaking IH (Intermediate High)
 
 [Home](../README.md) · [Topic Index](../CATALOG.md) · [GitHub Profile](https://github.com/yoonip)
 
-I have participated in research on low-power AI computation, memory circuits, neural-network energy modeling, and FPGA-based measurement automation.
+I have taken part in research on low-power AI computation, memory circuits, neural-network energy modeling, and FPGA-based measurement automation. This page brings together the related projects, publications, and awards.
 
 ### Researcher Information
 

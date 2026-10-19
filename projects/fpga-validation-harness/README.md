@@ -44,6 +44,18 @@ Testbench는 정상 32개와 오류 주입 32개의 패턴, pause, reset을 검�
 
 ## English
 
-This project studies pattern generation, integrity checks, fault injection and failure evidence. Python exercises simulate a signed ADC stream and eight-channel binary frames. The RTL generates reference patterns and injected mismatches for a Nexys4 DDR target.
+This validation exercise covers pattern generation, integrity checks, fault injection and failure records. Python simulates an ADC stream and eight-channel binary frames; RTL generates sequence numbers and expected values for normal/fault-injected comparisons.
 
-Checks on 2026-10-19 covered five ADC scenarios, seven binary-frame scenarios and 64 RTL samples, including pause and reset. Failure snapshots and cleanup were verified. The current verification used PC simulation; board measurements and a new Vivado build were outside this run.
+### Python paths
+
+`validation_lab.py` generates 12-bit signed ADC codes and checks sample count, order and voltage error. It saves CSV, JSON and event records, preserving a failure snapshot before reset and cleanup. The scenarios listed above cover healthy, offset, data loss, timeout and an unsigned-decoding mismatch. Exit codes are PASS=0, FAIL=1, TIMEOUT=2 and ERROR=3.
+
+`offline_fpga_measurement_lab.py` checks eight-channel uint16 little-endian frames against byte swap, channel swap, missing frame, short read, zero fill and timeout scenarios. Both programs use software-generated inputs; a physical ADC/FPGA acquisition interface is outside this code.
+
+### RTL and verification
+
+`nexys4_ddr/validation_top.v` generates patterns from a 100 MHz input clock. `SW[0]` enables samples; `SW[1]` injects one bit error every sixteenth sample. Expected values, observed values and error counts are marked for ILA observation. The commands above compile and run the Icarus testbench.
+
+The testbench checks 32 normal and 32 fault-injected patterns, pause and reset. `build.tcl` and `build_ila.tcl` target the Nexys4 DDR Artix-7; `nexys4_ddr.xdc` supplies board pin/clock constraints with attribution to the pin-map source.
+
+On October 19, 2026, five ADC scenarios, seven frame scenarios and 64 RTL patterns verified verdicts, failure snapshots and cleanup through PC simulation. Board measurements and a new Vivado build were outside that run.

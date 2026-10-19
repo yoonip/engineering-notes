@@ -31,3 +31,25 @@ Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)�
 [Arm·RISC-V·STM32·ESP32 실습](embedded-debug-labs/README.md)은 시작 코드, 메모리 배치, OpenOCD·GDB 연결, GPIO와 FreeRTOS 명령 처리를 다룬다.
 
 [Embedded validation lab](../projects/embedded-validation-lab/README.md)은 RV32I CPU와 Python 참조 모델, Cortex-M7·STM32·ESP32 펌웨어, UART 호스트 검증을 하나의 프로젝트로 연결한다.
+
+## English
+
+Short executable examples accompany the concept notes.
+
+| File | Content | Runtime |
+| --- | --- | --- |
+| [mean.c](mean.c) | Mean from an array and length | C17, GCC/Clang |
+| [mean.cpp](mean.cpp) | vector and accumulate | C++17+ |
+| [lower_bound.py](lower_bound.py) | First-boundary search in a sorted array | Python 3 |
+| [rc_euler.py](rc_euler.py) | Euler approximation and analytic RC solution | Python standard library |
+| [rc_plot.py](rc_plot.py) | RC charging waveform | NumPy/Matplotlib |
+| [rc_response.m](rc_response.m) | RC response | MATLAB or compatible runtime |
+| [rc_response.ipynb](rc_response.ipynb) | Equations, calculation and plots | Jupyter/NumPy/Matplotlib |
+| [counter.sv](counter.sv) | Synchronous-reset eight-bit counter | SystemVerilog tools |
+| [pytorch_autograd.py](pytorch_autograd.py) | Automatic derivative of x² | PyTorch |
+| [tensorflow_autograd.py](tensorflow_autograd.py) | The same derivative with GradientTape | TensorFlow |
+| [files.sh](files.sh) | Directory, CSV and file search | Bash |
+
+The commands above run the RC calculation and build/run the C/C++ examples. [requirements.txt](requirements.txt) lists notebook/plot dependencies. Autograd files additionally require their respective framework; these scalar examples need no GPU. See [Python & Jupyter](../topics/03-python-jupyter/README.md), [PyTorch](https://pytorch.org/get-started/locally/) and [TensorFlow](https://www.tensorflow.org/install) for installation references.
+
+[Embedded debug labs](embedded-debug-labs/README.md) cover Arm/RISC-V startup, memory layout, OpenOCD/GDB, GPIO and FreeRTOS command processing. The [embedded validation lab](../projects/embedded-validation-lab/README.md) connects an RV32I CPU/Python reference with Cortex-M7/STM32/ESP32 firmware and UART validation.

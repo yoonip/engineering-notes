@@ -35,10 +35,31 @@ python model_demo.py --out results
 
 정규화 비교는 [Electronics 2025, 14(13), 2718](https://doi.org/10.3390/electronics14132718)의 Table 2 성분을 사용한다. 반올림된 표 수치의 계산을 비교하는 것이므로 실측 전력의 재측정과는 구분한다.
 
-2026-10-19에 단위 검사 8개와 Excel 없는 실행 경로를 확인했다. 원본 Excel과 개인 경로, 기존 결과·이미지는 공개본에 포함하지 않았다.
+2026-10-19에 단위 검사 8개와 Excel 없는 실행 경로를 확인했다. 원본 Excel과 개인 경로, 기존 결과·이미지는 이 폴더에 포함하지 않았다.
 
 ## English
 
-This code estimates Transformer parameter counts, FLOPs, weight reads and KV-cache traffic. It compares analytical energy components across batch sizes and context lengths using explicit coefficients. The decode model includes the output LM head and reports the omitted components.
+These analytical tools estimate Transformer parameter counts, operations, weight reads and KV-cache traffic. They compare the memory/compute energy balance across batch sizes and context lengths using explicit coefficients rather than power-meter or GPU measurements.
 
-The standalone demo runs without the original spreadsheets. Eight unit tests cover hand calculations, batch reuse, KV boundaries, dimensional validation and restricted formula evaluation. The normalized comparison uses rounded values from Table 2 of Electronics 2025, 14(13), 2718. These are analytical results rather than measured GPU or silicon power.
+### Model scope
+
+| Component | Assumption |
+| --- | --- |
+| Parameters | GPT-style embedding, attention and FFN approximation |
+| Full-prefix computation | Dense forward pass at the selected context length |
+| Single-token decode | Reuse KV while computing new Q/K/V and the output LM head |
+| Weight traffic | One weight read per batch step |
+| KV traffic | Read existing entries and write new K/V entries |
+| Normalized comparison | One hundred conditions using published rounded ResNet18/Llama-7B components |
+
+Activation, normalization, softmax, leakage and I/O energy are excluded from decode totals. `max_positions` controls positional-embedding capacity; `context` is the currently used length. The approximation does not reconstruct checkpoint-specific structures such as Llama GQA.
+
+### Execution and files
+
+The commands above install dependencies, run tests and launch `model_demo.py`. This demo needs no Excel input: it compares two model sizes at batches 1, 4, 8 and 16 and writes 100 normalized conditions to CSV.
+
+`energy_analysis.py` contains formula evaluation, parameter/FLOP/decode-energy models and normalization. `test_energy_analysis.py` checks hand calculations, batch reuse, KV boundaries and invalid dimensions/formulas. `model_demo.py` provides the spreadsheet-free path.
+
+An optional read-only path accepts `--energy-xlsx` and `--memory-xlsx` to compare formula/cached values in a specific workbook layout. Those workbooks are not bundled. FormulaEvaluator accepts arithmetic, cell references and SUM ranges, rejecting cycles and executable code.
+
+Normalized comparisons use rounded Table 2 components from [Electronics 2025, 14(13), 2718](https://doi.org/10.3390/electronics14132718); recalculation of rounded table values is distinct from measuring power again. The October 19, 2026 check covered eight unit tests and the spreadsheet-free path. Original workbooks, personal paths and earlier result images are not included.

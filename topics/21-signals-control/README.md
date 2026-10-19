@@ -2,11 +2,11 @@
 
 [전체 목차](../../CATALOG.md) · [처음으로](../../README.md)
 
-신호처리는 관측한 데이터를 변환·필터링·분석하는 분야이고, 제어는 원하는 동작에 가까워지도록 시스템 입력을 결정하는 분야다. 센서에서 얻은 신호가 상태 추정과 피드백 제어로 이어진다.
+신호처리는 관측한 데이터를 변환·필터링·분석하는 분야이고, 제어는 원하는 동작에 가까워지도록 시스템 입력을 결정하는 분야다. 센서 신호를 처리한 결과는 상태 추정과 피드백 제어에 쓰인다.
 
 ## 샘플링과 변환
 
-연속 신호를 일정한 간격으로 관측하면 이산 신호가 된다. 제한된 대역의 신호를 복원하려면 표본화 조건과 anti-aliasing 필터가 중요하다. Fourier 변환은 주파수 성분, Laplace·Z 변환은 연속·이산 시스템의 동작을 해석한다. FFT는 DFT를 빠르게 계산하는 알고리즘이다.
+연속 신호를 일정한 간격으로 관측하면 이산 신호가 된다. 대역이 제한된 신호를 복원할 때는 표본화 조건과 anti-aliasing 필터를 함께 고려한다. Fourier 변환은 주파수 성분, Laplace·Z 변환은 연속·이산 시스템의 동작을 해석한다. FFT는 DFT를 빠르게 계산하는 알고리즘이다.
 
 ## 필터와 피드백
 
@@ -21,3 +21,17 @@ FFT, FIR/IIR, PID, State Space, LQR/LQG, MPC, Kalman/EKF/UKF, System Identificat
 ## 참고 자료
 
 - [SciPy documentation](https://docs.scipy.org/doc/scipy/)
+
+## English
+
+Signal processing transforms, filters, and analyzes observations. Control chooses system inputs to produce desired behavior. Sensor signals connect these fields through state estimation and feedback.
+
+### Sampling and transforms
+
+Sampling a continuous signal at fixed intervals produces a discrete-time signal. Reconstructing a band-limited signal depends on sampling conditions and anti-aliasing filtering. The Fourier transform reveals frequency components; Laplace and Z transforms describe continuous- and discrete-time systems. The FFT is an efficient algorithm for computing the DFT.
+
+### Filters and feedback
+
+FIR filters have a finite impulse response; IIR filters use recursive feedback. PID combines present error, accumulated error, and rate of change. Integration can reduce steady-state error but may cause windup under saturation. The derivative term is sensitive to high-frequency noise.
+
+A state-space model relates internal states, inputs, and outputs. LQR minimizes a quadratic cost, while MPC optimizes over a future horizon with constraints. A Kalman filter combines model and observation uncertainty; EKF and UKF extend this approach to nonlinear systems. System identification estimates a model from measurements.

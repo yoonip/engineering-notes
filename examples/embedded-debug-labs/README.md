@@ -40,3 +40,27 @@ PlatformIO 설정은 classic ESP32 Dev Module과 Arduino 프레임워크를 지�
 - [OpenOCD GDB connection](https://openocd.org/doc/html/GDB-and-OpenOCD.html)
 - [Spike RISC-V ISA simulator](https://github.com/riscv-software-src/riscv-isa-sim)
 - [Arduino core for ESP32](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
+
+## English
+
+These exercises follow C code into CPU instructions and observe register/memory changes. Arm Cortex-M7 and RISC-V RV64IMAC run the same calculation, with GDB comparing the states before and after instructions.
+
+| Directory | Target | Content |
+| --- | --- | --- |
+| `arm/` | Renode STM32F767ZI | Cortex-M7 startup, memory layout and GDB verification |
+| `riscv/` | Spike/OpenOCD | RV64IMAC startup, virtual JTAG and GDB |
+| `stm32-gpio/` | STM32F767ZI | CMSIS-register GPIO control |
+| `esp32/` | ESP32/Arduino | FreeRTOS task/queue/mutex command handling |
+| `common/` | Shared C | Memory-pattern checks and arithmetic signature |
+
+### CPU state and debug paths
+
+`main.c` reads `input_a=1` and `input_b=3`, then stores `result=4` and `trace={4,5}`. Arithmetic completion and memory stores happen at different instructions: Arm `add` and RISC-V `addw` precede their stores. Recorded virtual runs ended with the expected values on both targets. MCU GPIO/ESP32 examples have build/link records rather than physical-board validation.
+
+Arm uses GDB → Renode GDB server → Cortex-M7 model. RISC-V uses GDB → OpenOCD → remote_bitbang → Spike, exercising JTAG debug access. Direct Renode GDB and OpenOCD are separate configurations. Commands are in [BUILD.md](BUILD.md).
+
+### MCU examples
+
+STM32 enables GPIOB through `RCC->AHB1ENR`, sets PB0 output mode through `GPIOB->MODER` and toggles bit 0 of `GPIOB->ODR`. `stm32f767xx.h` and CMSIS come from STMicroelectronics.
+
+For ESP32, the host sends `RUN,<sequence>` over UART. The receive loop parses/enqueues it; a worker runs internal-RAM pattern checks and an arithmetic signature, then returns JSON. A mutex prevents interleaved output, and repeated sequences receive the cached result. PlatformIO selects the classic ESP32 Dev Module and Arduino software framework. Official ST, Renode, OpenOCD, Spike and ESP32 references are linked above.

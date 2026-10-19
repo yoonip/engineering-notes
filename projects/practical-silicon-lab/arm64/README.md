@@ -19,8 +19,22 @@ timeout 4s bash run.sh run
 
 `stuck`은 UART FIFO flag를 잘못 해석하는 오류다. 정상 상태의 phase=4에 도달하지 못하고 polling 경로에 머무르는 것이 기대 결과다. `wrong-base`는 잘못된 UART 주소를 넣는 별도 이미지이며, exception handler가 없는 이 최소 예제에서의 결과를 실물의 동작으로 일반화하지 않는다.
 
-대화형 GDB를 사용할 때는 첫 터미널에서 `bash build.sh normal` 후 `bash run.sh debug`, 두 번째 터미널에서 `gdb-multiarch -x debug.gdb`를 실행한다. debug 모드는 localhost 1234에 GDB endpoint를 열고 첫 명령 전에 멈춘다. QEMU terminal 종료 키는 Ctrl+A를 누르고 놓은 뒤 X다. 이번 배포 검사에서는 이 debug endpoint를 열지 않았다.
+대화형 GDB를 사용할 때는 첫 터미널에서 `bash build.sh normal` 후 `bash run.sh debug`, 두 번째 터미널에서 `gdb-multiarch -x debug.gdb`를 실행한다. debug 모드는 localhost 1234에 GDB endpoint를 열고 첫 명령 전에 멈춘다. QEMU terminal 종료 키는 Ctrl+A를 누르고 놓은 뒤 X다. 2026-10-19 검사에서는 이 debug endpoint를 열지 않았다.
 
 RAM base는 `0x40000000`, ELF entry는 `0x40080000`으로 설정되어 있다. PL011 base `0x09000000`은 이 machine 구성의 값이다. `build/virt.dts`의 `reg`와 실제 QEMU 버전을 대조한다. 이 firmware는 DTB를 직접 파싱하지 않는다. QEMU의 ELF loader가 RAM을 준비한 시작 조건이므로 실물 Boot ROM·DDR training·전원 시퀀스는 포함하지 않는다.
 
 공식 문서: [QEMU Arm virt](https://www.qemu.org/docs/master/system/arm/virt.html), [QEMU GDB](https://www.qemu.org/docs/master/system/gdb.html).
+
+## English
+
+The build host is Linux and the execution target is one Cortex-A53 core in QEMU `virt`. Without a guest Linux kernel, `entry.S` prepares the stack/BSS and enters `uart.c`; `linker.ld` places the ELF in RAM.
+
+Use `aarch64-linux-gnu-gcc`/binutils, `qemu-system-aarch64`, Bash and GNU timeout. Reading the DTB needs `dtc`; interactive debugging needs `gdb-multiarch`. The tools are installed separately. Run `dump-dtb.sh` and `check.sh` from `arm64/` as shown above.
+
+`check.sh` builds the normal image and observes B0 (C entry), B1 (RAM smoke) and B2 (idle) within four seconds. Firmware remains idle, so timeout exit 124 is accepted. The check observes UART text, not electrical timing.
+
+The `stuck` image intentionally misinterprets a UART FIFO flag. It should remain in polling rather than reach normal phase 4. `wrong-base` uses an incorrect UART address. This minimal example has no exception handler; its behavior does not describe every physical target.
+
+For GDB, run `bash build.sh normal` followed by `bash run.sh debug` in one terminal and `gdb-multiarch -x debug.gdb` in another. Debug mode binds localhost port 1234 and stops before the first instruction; QEMU exits with Ctrl+A, release, then X. The October 19 check did not open that debug endpoint.
+
+RAM starts at `0x40000000`; ELF entry is `0x40080000`. PL011 base `0x09000000` belongs to this machine configuration. Compare `reg` in `build/virt.dts` with the actual QEMU version; firmware does not parse the DTB. QEMU's ELF loader prepares RAM, so physical Boot ROM, DDR training and power sequencing are outside this example. Official QEMU machine/GDB documentation is linked above.

@@ -62,8 +62,46 @@ python editable_app.py --checkpoint checkpoints/reference/adapter --device cpu
 - `fetch_model.py`: 기본 모델 다운로드
 - `notebooks/01_workflow.ipynb`: 학습·평가·추론을 연결한 노트북
 
-2026-10-19의 공개본 검사에서는 작은 무작위 모델과 합성 자료 테스트 6개, CLI·노트북 기본 실행을 확인했다. 전체 번역 모델을 새로 학습하거나 다운로드하지 않았다. 세부 결과는 `validation.json`, 작성 경위는 `PROVENANCE.md`에 있다.
+2026-10-19 검사에서는 작은 무작위 모델과 합성 자료 테스트 6개, CLI·노트북 기본 실행을 확인했다. 전체 번역 모델을 새로 학습하거나 다운로드하지 않았다. 세부 결과는 `validation.json`, 구성 안내는 `PROVENANCE.md`에 있다.
 
 ## English
 
-English-to-Korean fine-tuning of Meta M2M100 with rank-8 LoRA. The reference experiment used a connected-group split of Tatoeba sentence IDs and normalized texts, trained for three epochs, and evaluated 1,155 held-out pairs. BLEU changed from 10.2877 to 12.8599 and chrF from 28.9328 to 31.2576. The source includes training, evaluation and CPU/GPU application code, notebooks and aggregate metrics. Data, base-model weights and adapters are managed separately.
+This English-to-Korean translation project applies LoRA to Meta's `facebook/m2m100_418M`. It includes training/evaluation code and CPU/GPU inference apps. The reference run trained for three epochs after grouping connected duplicate sentences before splitting.
+
+### Model and experiment
+
+| Item | Configuration or result |
+| --- | --- |
+| Base-model revision | `55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636` |
+| LoRA | q_proj/v_proj, rank 8, alpha 16, dropout 0.05 |
+| Parameters | 485,085,184 total; 1,179,648 trainable |
+| Corpus | 11,552 Tatoeba English–Korean pairs |
+| Grouped split | 9,242 training / 1,155 validation / 1,155 test |
+| Training | Three epochs, batch 2, accumulation 8, max_length 96 |
+| Optimization | AdamW 0.00005, 3% warmup/cosine, clip norm 1.0 |
+| Checkpoint | Epoch 3, selected by the lowest validation loss |
+
+| Same 1,155-pair test set | Base model | After LoRA |
+| --- | --- | --- |
+| BLEU | 10.2877 | 12.8599 |
+| chrF | 28.9328 | 31.2576 |
+
+Evaluation used SacreBLEU 2.6.0, beam 4, Korean forced BOS, a 128-token generation limit, CUDA FP16 and batch 8. Connected groups of sentence IDs and normalized source/target text remain within one split. These scores describe this Tatoeba test condition; CPU FP32/INT8 inference is a separate condition. Metrics and settings are in `results/` and `configs/`.
+
+### Running the project
+
+Use Python 3.12 and a suitable [PyTorch CPU/CUDA installation](https://pytorch.org/get-started/locally/). `environment/` records the reference runtime. Install dependencies and run the tests/JupyterLab using the commands above.
+
+Place local Tatoeba exports at the three listed `data/raw/tatoeba/` paths, then run preparation, grouped splitting, base-model download, training and evaluation. `fetch_model.py` downloads the pinned revision. Training starts a new LoRA adapter from the base model; `--init-adapter` loads only adapter weights and creates a new optimizer/scheduler. The apps need both the local base model and trained adapter. Caches, adapters and raw data are managed outside the source set.
+
+### Source and checks
+
+- `train_extended.py`: configuration-driven CLI, token-weighted loss and gradient accumulation.
+- `prepare_tatoeba.py` / `prepare_grouped_split.py`: corpus preparation and connected-group splitting.
+- `evaluate_extended.py`: base/adapter comparison on the same test set.
+- `cpu_app.py`: CPU FP32 or optional dynamic INT8 Linear quantization with Tkinter.
+- `editable_app.py`: selectable CPU/GPU inference app.
+- `fetch_model.py`: base-model download.
+- `notebooks/01_workflow.ipynb`: training, evaluation and inference workflow.
+
+The October 19, 2026 check ran six synthetic-data tests with a small random model, plus basic CLI/notebook execution. It did not retrain or download the full translation model. See `validation.json` and `PROVENANCE.md` for the recorded checks and package information.

@@ -1,21 +1,21 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "prepared_date": "2026-10-19",
   "status": "passed",
-  "scope": "39 public practice solutions; AI-generated learning code",
+  "scope": "39 public practice solutions and learning notes",
   "runtime": {
     "implementation": "CPython",
-    "python": "3.12.14",
+    "python": "3.13.14",
     "dependencies": "Python standard library only"
   },
   "command": "python -B -m unittest discover -s tests -v",
   "results": {
-    "test_methods": 50,
+    "test_methods": 65,
     "failures": 0,
     "errors": 0,
     "skipped": 0,
-    "example_and_boundary_cases": 123,
-    "total_solution_calls": 1359,
+    "example_and_boundary_cases": 147,
+    "total_solution_calls": 4190,
     "solution_files_covered": 39,
     "per_solution_calls": {
       "01": 3,
@@ -23,24 +23,24 @@
       "03": 63,
       "04": 3,
       "05": 4,
-      "06": 3,
+      "06": 307,
       "07": 2,
       "08": 2,
-      "09": 4,
+      "09": 507,
       "10": 2,
-      "11": 3,
+      "11": 406,
       "12": 122,
       "13": 62,
       "14": 103,
       "15": 64,
       "16": 3,
       "17": 2,
-      "18": 3,
+      "18": 504,
       "19": 4,
-      "20": 3,
+      "20": 316,
       "21": 2,
-      "22": 5,
-      "23": 2,
+      "22": 409,
+      "23": 405,
       "24": 7,
       "25": 3,
       "26": 370,
@@ -58,10 +58,15 @@
       "38": 3,
       "39": 4
     },
-    "annotated_code_ast_matches": 39,
-    "python_files_syntax_checked": 40,
-    "python38_syntax_parse_only": true,
-    "source_files_unchanged": true
+    "python_files_syntax_checked": 41,
+    "source_files_unchanged": false,
+    "single_solution_definition_checks": 39,
+    "source_comment_contract_checks": 39,
+    "silent_load_checks": 39,
+    "unchanged_executable_asts_against_previous_publication": 32,
+    "algorithm_changes": 7,
+    "additional_regression_calls": 2831,
+    "additional_input_immutability_checks": 2831
   },
   "comparisons": {
     "bfs": 60,
@@ -73,7 +78,16 @@
     "greedy_budget": 60,
     "dates_2016": 366,
     "integer_square_root": 300,
-    "caesar_roundtrips": 25
+    "caesar_roundtrips": 25,
+    "park_mats_random_exhaustive_regions": 300,
+    "bandage_random_secondwise_oracle": 500,
+    "cipher_random_single_letter_stepping": 400,
+    "remainder_direct_search_integers": 498,
+    "divisor_sum_random_full_divisor_counts": 300,
+    "new_id_random_separate_steps": 400,
+    "crane_random_top_down_scan": 400,
+    "additional_large_and_boundary_cases": 24,
+    "large_divisor_interval_partition_cases": 3
   },
   "publication_review": {
     "source_files_allowlisted": 39,
@@ -86,11 +100,128 @@
     {
       "file": "solutions/36_string_to_integer.py",
       "change": "Removed diagnostic print in active and annotated code; return behavior unchanged."
+    },
+    {
+      "file": "solutions/06_park_mats.py",
+      "change": "최대 정사각형 DP"
+    },
+    {
+      "file": "solutions/09_bandage.py",
+      "change": "공격 간격 일괄 회복"
+    },
+    {
+      "file": "solutions/11_secret_code.py",
+      "change": "알파벳 위치 표 / 나머지 연산"
+    },
+    {
+      "file": "solutions/18_remainder_one.py",
+      "change": "n-1의 최소 약수"
+    },
+    {
+      "file": "solutions/20_divisor_count_sum.py",
+      "change": "등차합 / 제곱합 수식"
+    },
+    {
+      "file": "solutions/22_new_id.py",
+      "change": "한 번의 순회 / 문자열 정규화"
+    },
+    {
+      "file": "solutions/23_crane_game.py",
+      "change": "열별 스택 / 시뮬레이션"
+    },
+    {
+      "scope": "solutions/*.py",
+      "change": "Use one executable implementation per file with concise Korean choice and complexity comments; remove duplicate commented implementations."
     }
   ],
   "verification_scope": {
     "execution": "local CPython standard-library test suite",
-    "inputs": "examples, boundary cases, and small synthetic comparisons",
+    "inputs": "Examples, boundary cases, independent small/random-input comparisons, and targeted large-input regressions",
     "online_judge_result": "not_verified"
+  },
+  "verified_date": "2026-10-19",
+  "history": [
+    {
+      "runtime": {
+        "implementation": "CPython",
+        "python": "3.12.14",
+        "dependencies": "Python standard library only"
+      },
+      "command": "python -B -m unittest discover -s tests -v",
+      "results": {
+        "test_methods": 50,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "example_and_boundary_cases": 123,
+        "total_solution_calls": 1359,
+        "solution_files_covered": 39,
+        "per_solution_calls": {
+          "01": 3,
+          "02": 63,
+          "03": 63,
+          "04": 3,
+          "05": 4,
+          "06": 3,
+          "07": 2,
+          "08": 2,
+          "09": 4,
+          "10": 2,
+          "11": 3,
+          "12": 122,
+          "13": 62,
+          "14": 103,
+          "15": 64,
+          "16": 3,
+          "17": 2,
+          "18": 3,
+          "19": 4,
+          "20": 3,
+          "21": 2,
+          "22": 5,
+          "23": 2,
+          "24": 7,
+          "25": 3,
+          "26": 370,
+          "27": 2,
+          "28": 63,
+          "29": 2,
+          "30": 2,
+          "31": 3,
+          "32": 4,
+          "33": 304,
+          "34": 3,
+          "35": 54,
+          "36": 4,
+          "37": 4,
+          "38": 3,
+          "39": 4
+        },
+        "annotated_code_ast_matches": 39,
+        "python_files_syntax_checked": 40,
+        "python38_syntax_parse_only": true,
+        "source_files_unchanged": true
+      },
+      "comparisons": {
+        "bfs": 60,
+        "dijkstra": 60,
+        "gravity_small_trees": 120,
+        "heap": 60,
+        "hamburger": 100,
+        "three_friends": 60,
+        "greedy_budget": 60,
+        "dates_2016": 366,
+        "integer_square_root": 300,
+        "caesar_roundtrips": 25
+      },
+      "stage": "initial_publication",
+      "date": "2026-10-19"
+    }
+  ],
+  "revision_checks": {
+    "date": "2026-10-19",
+    "python": "3.12.14",
+    "unit_tests": 65,
+    "status": "passed"
   }
 }

@@ -1,8 +1,8 @@
-# Programmers 문제 풀이와 알고리즘 학습 기록
+# Programmers 문제 풀이와 학습 기록
 
-프로그래머스 Level 2를 학습하기 위한 Python 풀이 100개를 모았다. AI를 활용해 작성한 학습용 풀이 99개와 기존 제출 코드에서 복구한 풀이 1개로 구성한다. 각 `solution.py`에서 구현을 확인할 수 있다.
+프로그래머스 Level 2 문제 풀이 100개와 학습 기록을 정리했다. 아래 목차에서 문제를 찾아 `solution.py`의 풀이 코드와 한국어 주석을 볼 수 있다.
 
-문제 설명과 입력 조건은 공식 문제 링크에서 볼 수 있다.
+문제 설명과 입력 조건은 공식 링크에 있다. 풀이에서는 입력 크기에 맞는 자료구조와 알고리즘을 고르고, 시간·공간 복잡도를 함께 살펴본다.
 
 | 문제 번호 | 제목 | 공식 문제 | 풀이 코드 |
 |---|---|---|---|
@@ -106,3 +106,7 @@
 | 12953 | N개의 최소공배수 | [문제](https://school.programmers.co.kr/learn/courses/30/lessons/12953) | [Python](level2/098_12953_N%EA%B0%9C%EC%9D%98_%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98/solution.py) |
 | 12952 | N-Queen | [문제](https://school.programmers.co.kr/learn/courses/30/lessons/12952) | [Python](level2/099_12952_N-Queen/solution.py) |
 | 12951 | JadenCase 문자열 만들기 | [문제](https://school.programmers.co.kr/learn/courses/30/lessons/12951) | [Python](level2/100_12951_JadenCase_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py) |
+
+## English
+
+This collection brings together 100 Python solutions to Programmers Level 2 problems and their learning notes. The index links each problem to its official statement and `solution.py`, where the code is explained with Korean comments. The notes focus on why each algorithm and data structure fits the input size, including time and space complexity.

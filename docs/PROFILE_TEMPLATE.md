@@ -4,7 +4,7 @@
 
 저전력 AI 하드웨어와 메모리·연산 구조 연구에 참여해 온 윤일평입니다. 국민대학교 지능형반도체 및 디스플레이 전공으로 석사 학위를 취득했으며, ISL에서 연구했습니다.
 
-주요 참여 연구는 저전력 AI 연산, SRAM, DRAM-PIM과 FPGA 계측 자동화입니다. AI 모델의 에너지 효율, 메모리 구조와 회로·시스템의 동작을 다룹니다.
+저전력 AI 연산, SRAM, DRAM-PIM과 FPGA 계측 자동화 연구에 참여했습니다. AI 모델의 에너지 효율, 메모리 구조와 회로·시스템의 동작을 다룹니다.
 
 [연구·프로젝트·학술 활동](https://github.com/yoonip/engineering-notes/blob/main/research/README.md) · [engineering-notes](https://github.com/yoonip/engineering-notes) · [분야별 목차](https://github.com/yoonip/engineering-notes/blob/main/CATALOG.md)
 
@@ -119,7 +119,7 @@ TOEIC Speaking IH (Intermediate High)
 
 I am Yoon IlPyung. My research experience spans low-power AI hardware, memory, and computing architectures. I hold a master's degree in Intelligent Semiconductors and Displays from Kookmin University and conducted research at ISL.
 
-The research I have participated in covers low-power AI computation, SRAM, DRAM-PIM, and FPGA-based measurement automation. These projects address the energy efficiency of AI models, memory architectures, and circuit and system operation.
+I have taken part in research on low-power AI computation, SRAM, DRAM-PIM, and FPGA-based measurement automation. These projects address the energy efficiency of AI models, memory architectures, and circuit and system operation.
 
 [Research, Projects, and Publications](https://github.com/yoonip/engineering-notes/blob/main/research/README.md) · [engineering-notes](https://github.com/yoonip/engineering-notes) · [Topic Index](https://github.com/yoonip/engineering-notes/blob/main/CATALOG.md)
 

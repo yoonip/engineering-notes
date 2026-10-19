@@ -6,4 +6,10 @@
 - GitHub: [yoonip](https://github.com/yoonip)
 - [학력과 관심 분야](PROFILE_TEMPLATE.md)
 
-For research, collaboration, technical exchange, or career opportunities, please contact me by email.
+## English
+
+I welcome research and development collaborations, technical discussions, and career opportunities in electronics, computer engineering, and AI.
+
+- Email: [dlfvud777@naver.com](mailto:dlfvud777@naver.com)
+- GitHub: [yoonip](https://github.com/yoonip)
+- [Education and technical background](PROFILE_TEMPLATE.md)

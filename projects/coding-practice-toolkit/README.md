@@ -1,6 +1,6 @@
 # Coding Practice Toolkit
 
-C, C++, Python으로 같은 알고리즘을 구현하고 입력·출력을 비교하는 연습 프로젝트다. 자료구조와 탐색, 정렬, 동적 계획법 예제에 한국어 주석을 붙였고, 파일 입력과 언어별 실행 설정을 함께 정리했다. AI를 활용해 작성한 창작 연습 코드와 로컬 검증 기록을 관리한다.
+C, C++, Python으로 같은 알고리즘을 구현하고 입력·출력을 비교하는 연습 프로젝트다. 자료구조와 탐색, 정렬, 동적 계획법 예제에 한국어 주석을 붙였고, 파일 입력과 언어별 실행 설정을 함께 정리했다. 연습 코드와 입력별 실행 결과를 함께 기록했다.
 
 ## 구성
 
@@ -52,6 +52,22 @@ MinGW linker의 한글 출력 경로 문제는 임시 영문 경로에서 링크
 
 ## English
 
-This toolkit contains annotated C, C++ and Python implementations of common algorithms, input/output fixtures and a Windows execution harness. The exercises were created with AI assistance and checked locally. Four additional C function exercises cover batching, category combinations, greedy pairing and grid BFS.
+This project implements the same algorithms in C, C++ and Python and compares their input/output behavior. Korean comments explain data structures, searching, sorting and dynamic programming. Fixtures and execution settings keep the exercises easy to rerun.
 
-The source of a VS Code language router is included. It is based on version 0.1.2 with fixed machine paths removed. Tests cover the three-language examples, C function boundaries, routing and mocked editor commands, plus actual PowerShell execution. The runner links through a unique temporary ASCII filename and moves the executable into the project build directory. Three-language execution and C debug-input preparation were checked from a Korean project path.
+### Contents
+
+The `samples/` topics cover arrays/functions, function return values, sums/integer ranges, frequency counts, sorting/greedy methods, prefix sums, stacks, grid BFS, binary search, two pointers, coin DP, backtracking, string frequency, multi-key sorting and connected components. `mock1_*` and `mock2_*` combine these concepts into practice tasks. `c_functions/` contains batching, category-combination, greedy-pairing and game-map C functions. `scripts/` handles input, compilation and execution; `extensions/lig-practice-runner/` holds the VS Code language-router source.
+
+Each example directory contains `main_explained.c`, `main_explained.cpp`, `main_explained.py`, `input.txt`, `expected.txt` and `tests.json`. Unannotated duplicate sources are omitted. `samples/sum_explained.*` checks the environment; `c_functions` uses a local exercise interface.
+
+### Running and debugging
+
+On Windows, put Python 3, `gcc.exe` and `g++.exe` on PATH; C/C++ debugging in VS Code also uses `gdb.exe`. The PowerShell examples above run the selected source through `scripts/run.ps1`.
+
+The runner first looks for `input.txt` beside the source, then at the project root. It strips a UTF-8 BOM, supplies standard input and terminates processes that exceed the timeout. `-InputFile` selects another input; build artifacts go in `build/`.
+
+To handle MinGW linking from Korean paths, the runner links to a unique temporary ASCII path and then moves the executable into `build/`. Windows TEMP is the default; `PRACTICE_BUILD_TEMP` selects another writable ASCII path. Three-language execution and C debug-input preparation were checked from a Korean project directory.
+
+`.vscode` provides file-input and keyboard-input configurations for Python/C/C++; debugger extensions are installed separately. The language router is based on version 0.1.2, with fixed drive paths removed. It checks the current workspace's `scripts/run.ps1` and `samples` directories, then routes tasks/debugging by file extension. Load `extensions/lig-practice-runner` in extension development mode; a compiled VSIX is not included.
+
+The October 19, 2026 checks covered three-language exercises and fixtures, boundaries for four C functions, language routing and execution commands. VS Code API calls were mocked; PowerShell execution was tested from a separate path.

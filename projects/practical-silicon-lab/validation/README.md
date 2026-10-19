@@ -25,3 +25,25 @@ Correlation 예제의 ATE/SLT matrix는 PASS/PASS=900, PASS/FAIL=60, FAIL/PASS=2
 BER 상한은 독립이고 같은 오류확률을 갖는 bit trial 모델에서 관측 오류가 0일 때의 단측 상한이다. 실제 burst error나 시험 조건 변화를 이 식 하나로 설명하지 않는다. Tap의 개수와 두 끝 사이의 간격도 구분한다.
 
 VISA 코드를 실물에 사용하려면 별도의 PyVISA/backend와 정확한 resource가 필요하다. 이번 오프라인 테스트는 `pyvisa` module을 mock으로 대체하여 식별 query와 close 경로만 확인한다. 이 transport는 완성된 power/scope bench adapter가 아니다.
+
+## English
+
+`bench.py` uses an educational 0.80 V/600 MHz setting and ten milliseconds of synthetic voltage/current samples. It does not control an instrument or rail. The `droop` model lowers the entire capture by 120 mV rather than modeling a transient waveform. Energy is trapezoidal integration of synchronized V/I samples.
+
+| Program | Check | Scope |
+| --- | --- | --- |
+| `bench.py` | Verdicts, fault classification, cleanup and hashes | none/droop/mismatch/timeout/malformed models |
+| `npu.py` | Independent scalar reference versus flat-buffer calculation | Cross-correlation of a 3×3 input and 2×2 kernel |
+| `training_ber.py` | Contiguous passing taps and zero-error BER bound | No physical DDR PHY or bitstream |
+| `correlation.py` | Join synthetic ATE/SLT by serial | One thousand synthetic parts and independent synthetic truth |
+| `coverage_account.py` | Attempt/valid-verdict/pass denominators | Included fixed CSV examples |
+| `validation_plan.yaml` | Requirements, corners, observations and verdict structure | No hardware configuration engine |
+| `visa_readonly.py` | Minimal PyVISA transport reference | CLI sends only the `*IDN?` identification query |
+
+The example commands run checks, overflow injection and correlation. NPU `layout`, `stale` and `overflow` deliberately produce incorrect results; they are not throughput/accuracy benchmarks. Bench/NPU reject existing output directories. Correlation can reuse a directory and regenerates synthetic CSVs by default; `--analyse-existing` reads existing CSVs but still marks reports simulation-only.
+
+The synthetic ATE/SLT matrix is PASS/PASS=900, PASS/FAIL=60, FAIL/PASS=20 and FAIL/FAIL=20. Independent truth gives 940 good, 60 bad and 920 SLT-pass parts. False accept is 10/60, false reject is 30/940, and defect fraction among passes is 10/920; the denominators answer different questions. Serial mismatch, duplicates, inconsistent conditions and invalid truth are errors. Zero-denominator statistics are `null`.
+
+The BER calculation is a one-sided bound after zero observed errors under independent equal-probability bit trials. Burst errors and changing conditions need a different analysis. The number of taps is also distinct from the intervals between the endpoints.
+
+Real VISA use requires separately installed PyVISA/backend and the correct resource. Offline checks replace `pyvisa` with a mock and verify only identification and close behavior. The transport is a minimal reference rather than a complete power/scope bench adapter.

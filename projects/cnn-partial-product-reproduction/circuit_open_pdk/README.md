@@ -42,4 +42,22 @@ python circuit_open_pdk/plot_results.py --output-dir results/sky130
 
 `--vectors-csv`는 별도 로컬 CSV의 정수 `a,b` 열을 읽는다. 행 수는 `--samples`와 같아야 한다. 실제 CNN 입력을 새로 만들 때는 `cnn/run_cifar.py export_stimulus`에 학습된 로컬 checkpoint를 전달한다. dataset·checkpoint·과거 입력 CSV는 배포하지 않는다.
 
-이번 공개 사본 검증에서는 외부 모델 bin 준비·hash 일치와 netlist 생성을 확인했다. SKY130 전체 MAC transient sweep은 다시 실행하지 않았다.
+소스 검증에서는 외부 모델 bin 준비·hash 일치와 netlist 생성을 확인했다. SKY130 전체 MAC transient sweep은 다시 실행하지 않았다.
+
+## English
+
+This directory contains adapter code that prepares a local SKY130 model and connects it to CMOS MAC netlists. It neither bundles nor automatically downloads PDKs, vendor coefficients or executables. The reference is [skywater-pdk-libs-sky130_fd_pr](https://github.com/google/skywater-pdk-libs-sky130_fd_pr), with archived experiment commit `f62031a1be9aefe902d6d54cddd6f59b57627436`. Preparation records input-file SHA256 hashes rather than checking the checkout commit automatically.
+
+### Preparing the model
+
+Supply an existing local model through `--model-root`, using the nfet/pfet TT, corner, mismatch and LOD files listed above. `parameters/lod.spice` is also accepted for LOD. Prepared output contains vendor coefficients and is written outside the source checkout. The model distribution's usage and redistribution terms apply.
+
+The example commands use `../external-models/sky130_fd_pr` as input and `../private-models/sky130` as output. They prepare a model and generate netlists; they do not install or download it. The selector retains bins at L=0.15 µm: nfet W=0.42/0.84/1.26 µm and pfet W=1.26 µm. Coefficients are unchanged; hashes identify the input files and selected blocks. Other versions may have different bin layouts and behavior.
+
+### Simulation and measurement conditions
+
+Install ngspice separately. Executable resolution uses `--ngspice`, `NGSPICE_EXECUTABLE`, then PATH. `SKY130_MODEL_WRAPPER` can replace the `--model-wrapper` argument. The commands above run cases and plot results.
+
+The circuit uses 1.8 V, TT, 25°C, 10 MHz and a 32-bit feedback accumulator. Topology and input sequences are shared within each bit width. Runs with functional mismatches are excluded from power comparison. The power boundary excludes ideal external stimulus, clock/EN/non-overlap generation and extracted interconnect parasitics. These conditions do not reproduce a 45 nm process or manufacturing test.
+
+`--vectors-csv` reads integer `a,b` columns from a local CSV with exactly `--samples` rows. New CNN stimuli can be exported with `cnn/run_cifar.py export_stimulus` and a trained local checkpoint. Datasets, checkpoints and historical stimulus CSVs are not bundled. The source check verified bin preparation, hashes and netlist generation; the full SKY130 MAC transient sweep was not repeated.

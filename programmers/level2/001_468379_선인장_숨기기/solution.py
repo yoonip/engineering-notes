@@ -1,3 +1,8 @@
+# 문제: 선인장 숨기기
+# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/468379
+# 풀이: 행과 열에 단조 deque를 차례로 적용한다. 각 인덱스를 한 번씩 넣고 빼면서 직사각형 안의 첫 빗방울 시각을 구한다.
+# 복잡도: 행 M·열 N·비 기록 D개: 시간 O(MN+D), 추가 공간 O(MN).
+
 from collections import deque
 
 
