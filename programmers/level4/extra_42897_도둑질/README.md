@@ -25,7 +25,7 @@ Level 4 · `42897` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(n)` | `O(1)` |
-| 대안 풀이 | `O(n·2^n)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(n·2^n)` | `O(1), n≤22` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ Every valid circular choice omits at least one endpoint, so these cases cover al
 
 The alternative rejects selection masks overlapping their one-position circular rotation. It independently checks circular boundaries for at most twenty-two houses.
 
-The primary solution takes `O(n)` time and `O(1)` additional space. The alternative takes `O(n·2^n)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(n)` time and `O(1)` additional space. The alternative takes `O(n·2^n)` time. Its additional space is `O(1), n≤22`.
 
 ### Code and verification
 

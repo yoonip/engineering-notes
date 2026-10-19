@@ -25,7 +25,7 @@ Level 4 · `49995` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(n²)` | `O(1)` |
-| 대안 풀이 | `O(n² log n), O(n) 공간 / space` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(n² log n), O(n) 공간 / space` | `O(n)` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ Every feasible equal-sum pair can be reached by these expansions. Each pointer m
 
 The alternative uses prefix sums and binary searches for the right endpoint matching each left interval. It checks the condition differently but adds a logarithmic factor and prefix-array storage.
 
-The primary solution takes `O(n²)` time and `O(1)` additional space. The alternative takes `O(n² log n), O(n) 공간 / space` time. Its code shows the states and storage it uses.
+The primary solution takes `O(n²)` time and `O(1)` additional space. The alternative takes `O(n² log n), O(n) space` time. Its additional space is `O(n)`.
 
 ### Code and verification
 

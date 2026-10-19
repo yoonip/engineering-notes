@@ -25,7 +25,7 @@ Level 4 · `12984` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(V log V), V=N²` | `O(V)` |
-| 대안 풀이 | `O(V log H), H=높이 범위/height range` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(V log H), H=높이 범위/height range` | `O(V)` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ For V cells, the slope crosses zero at rank V·Q/(P+Q) in sorted heights. Evalua
 
 The alternative binary-searches the discrete convex cost by comparing cost(h) with cost(h+1). It avoids sorting but rescans every cell per height-range search step.
 
-The primary solution takes `O(V log V), V=N²` time and `O(V)` additional space. The alternative takes `O(V log H), H=높이 범위/height range` time. Its code shows the states and storage it uses.
+The primary solution takes `O(V log V), V=N²` time and `O(V)` additional space. The alternative takes `O(V log H), H=height range` time. Its additional space is `O(V)`.
 
 ### Code and verification
 

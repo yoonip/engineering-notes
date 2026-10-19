@@ -25,7 +25,7 @@ Level 4 · `389629` · Python3 · [공식 문제](https://school.programmers.co.
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(N·M)` | `O(N·M)` |
-| 대안 풀이 | `O(3^(N·M) · N · M)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(3^(N·M) · N · M)` | `O(N·M)` |
 
 N·M은 정사각형 수다. 각 칸에 삼각형이 두 개씩 있다.
 
@@ -59,7 +59,7 @@ The alternative selects upper, lower or neither triangle per square and checks c
 
 N·M is the square count; each square has two triangles.
 
-The primary solution takes `O(N·M)` time and `O(N·M)` additional space. The alternative takes `O(3^(N·M) · N · M)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(N·M)` time and `O(N·M)` additional space. The alternative takes `O(3^(N·M) · N · M)` time. Its additional space is `O(N·M)`.
 
 ### Code and verification
 

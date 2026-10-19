@@ -25,7 +25,7 @@ ShiftRow는 마지막 행을 맨 위로 옮기고, Rotate는 가장 바깥 테�
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(rows·cols + operations)` | `O(rows·cols)` |
-| 대안 풀이 | `O(operations · (rows+cols) + rows·cols)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(operations · (rows+cols) + rows·cols)` | `O(rows·cols)` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ Deque order always represents its current matrix region. With two columns, inser
 
 The alternative enumerates perimeter coordinates and physically moves entries. It makes the operation visible but pays perimeter-length work per rotation.
 
-The primary solution takes `O(rows·cols + operations)` time and `O(rows·cols)` additional space. The alternative takes `O(operations · (rows+cols) + rows·cols)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(rows·cols + operations)` time and `O(rows·cols)` additional space. The alternative takes `O(operations · (rows+cols) + rows·cols)` time. Its additional space is `O(rows·cols)`.
 
 ### Code and verification
 

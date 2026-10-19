@@ -25,7 +25,9 @@ Level 4 · `86054` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(N log S), S=전체 질량/total mass` | `O(N)` |
-| 대안 풀이 | `지수 상태 탐색 / exponential state enumeration` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(S·N)` | `O(S·N)` |
+
+대안 비용에서 S는 저장되는 실제 스택 상태 수, N은 구간 길이다. 스택 튜플을 복사하고 해시하는 비용까지 포함하면 시간과 저장 공간의 상한은 O(S·N)이다.
 
 ## 코드와 검증
 
@@ -55,7 +57,9 @@ Positivity makes a boundary unique for a fixed endpoint and mass. Sum prefix DP 
 
 The alternative follows the actual mass stack and branches on merge versus stop. It is an independent process enumeration limited to segments of length fourteen.
 
-The primary solution takes `O(N log S), S=전체 질량/total mass` time and `O(N)` additional space. The alternative takes `지수 상태 탐색 / exponential state enumeration` time. Its code shows the states and storage it uses.
+The primary solution takes `O(N log S), S=total mass` time and `O(N)` additional space. The alternative takes `O(S·N)` time. Its additional space is `O(S·N)`.
+
+For the alternative, S counts memoized stack states and N is segment length. Including tuple copying and hashing gives O(S·N) time and storage.
 
 ### Code and verification
 

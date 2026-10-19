@@ -25,7 +25,7 @@ Level 4 · `42891` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(N log N)` | `O(N)` |
-| 대안 풀이 | `O(N+k)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(N+k)` | `O(N)` |
 
 ## 코드와 검증
 
@@ -43,7 +43,7 @@ Eat one second from foods cyclically, skipping exhausted foods, and identify the
 
 Input limits and constants, using the parameter names in the code:
 
-`효율성/efficiency: 1≤N≤200000; 1≤food_times[i]≤10^8; 1≤k≤2·10^13; return −1 if all consumed.`
+`efficiency: 1≤N≤200000; 1≤food_times[i]≤10^8; 1≤k≤2·10^13; return −1 if all consumed.`
 
 ### Following the solution
 
@@ -55,7 +55,7 @@ Each removed layer matches full cyclic rounds. Sort surviving foods by original 
 
 The alternative simulates every second with a deque. Its k≤200000 cap makes it a readable small-time reference rather than the efficiency solution.
 
-The primary solution takes `O(N log N)` time and `O(N)` additional space. The alternative takes `O(N+k)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(N log N)` time and `O(N)` additional space. The alternative takes `O(N+k)` time. Its additional space is `O(N)`.
 
 ### Code and verification
 

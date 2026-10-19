@@ -25,7 +25,7 @@ Level 4 · `1839` · C++ · [공식 문제](https://school.programmers.co.kr/lea
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(V²), V=m·n` | `O(V)` |
-| 대안 풀이 | `O(V·s log(V·s)), 작은 정수 s / small integer budget` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(V·s log(V·s)), 작은 정수 s / small integer budget` | `O(V·s)` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ At identical cells and move counts, lower time dominates. Nonnegative times let 
 
 The alternative searches position/time states with a heap ordered by moves then conversation time. At most twenty-five cells and budget 1000 independently check this lexicographic objective.
 
-The primary solution takes `O(V²), V=m·n` time and `O(V)` additional space. The alternative takes `O(V·s log(V·s)), 작은 정수 s / small integer budget` time. Its code shows the states and storage it uses.
+The primary solution takes `O(V²), V=m·n` time and `O(V)` additional space. The alternative takes `O(V·s log(V·s)), small integer budget` time. Its additional space is `O(V·s)`.
 
 ### Code and verification
 

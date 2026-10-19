@@ -25,7 +25,7 @@ d 한 번을 처리해 출발 칸별·도착 칸별 경로 수를 행렬에 저�
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(len(d)·V² + V³ log k), V=n·m` | `O(V²)` |
-| 대안 풀이 | `O(k · len(d) · V)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(k · len(d) · V)` | `O(V)` |
 
 V는 전체 칸 수이고 k는 수열 d의 반복 횟수다.
 
@@ -59,7 +59,7 @@ The alternative advances the ordinary grid DP for every step. It is a simpler in
 
 V is the cell count and k is the repetition count of d.
 
-The primary solution takes `O(len(d)·V² + V³ log k), V=n·m` time and `O(V²)` additional space. The alternative takes `O(k · len(d) · V)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(len(d)·V² + V³ log k), V=n·m` time and `O(V²)` additional space. The alternative takes `O(k · len(d) · V)` time. Its additional space is `O(V)`.
 
 ### Code and verification
 

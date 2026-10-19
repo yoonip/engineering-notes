@@ -25,7 +25,7 @@ Level 4 · `43236` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(R log R + R log distance)` | `O(R)` |
-| 대안 풀이 | `O(comb(R,removed) · R)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(comb(R,removed) · R)` | `O(R)` |
 
 R은 바위 수다. 정렬한 뒤, 후보 간격마다 필요한 제거 수를 센다.
 
@@ -59,7 +59,7 @@ The alternative enumerates retained subsets and compares actual gaps, restricted
 
 R is the rock count; after sorting, each candidate gap is checked by counting necessary removals.
 
-The primary solution takes `O(R log R + R log distance)` time and `O(R)` additional space. The alternative takes `O(comb(R,removed) · R)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(R log R + R log distance)` time and `O(R)` additional space. The alternative takes `O(comb(R,removed) · R)` time. Its additional space is `O(R)`.
 
 ### Code and verification
 

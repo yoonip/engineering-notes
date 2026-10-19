@@ -25,7 +25,7 @@ Level 4 · `64063` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(Q log Q) 경로 압축 상계 / path-compression bound` | `O(Q)` |
-| 대안 풀이 | `O(Q²)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(Q²)` | `O(Q)` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ Only already assigned rooms are skipped, preserving the smallest-free-room invar
 
 The alternative increments room numbers against an occupied set. Repeated requests rescan runs and can take quadratic time, so its comparison implementation caps requests at 5000.
 
-The primary solution takes `O(Q log Q) 경로 압축 상계 / path-compression bound` time and `O(Q)` additional space. The alternative takes `O(Q²)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(Q log Q) path-compression bound` time and `O(Q)` additional space. The alternative takes `O(Q²)` time. Its additional space is `O(Q)`.
 
 ### Code and verification
 

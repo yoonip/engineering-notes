@@ -25,9 +25,11 @@ Level 4 · `42894` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(N²+B²·N)` | `O(N²+B)` |
-| 대안 풀이 | `제거 상태 수에 지수적 / exponential in removable-block states` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `제거 상태 수에 지수적 / exponential in removable-block states` | `O(S·N²)` |
 
 N은 보드 한 변의 길이, B는 블록 수다.
+
+대안 비용에서 S는 서로 다른 보드 상태 수다. 각 상태의 판 N²칸을 캐시하므로 저장 공간은 O(S·N²)이다.
 
 ## 코드와 검증
 
@@ -59,7 +61,9 @@ The alternative memoizes board states and explores every feasible removal order 
 
 N is the board side length and B is the block count.
 
-The primary solution takes `O(N²+B²·N)` time and `O(N²+B)` additional space. The alternative takes `제거 상태 수에 지수적 / exponential in removable-block states` time. Its code shows the states and storage it uses.
+The primary solution takes `O(N²+B²·N)` time and `O(N²+B)` additional space. The alternative takes `exponential in removable-block states` time. Its additional space is `O(S·N²)`.
+
+For the alternative, S counts distinct board states. Memoizing an N²-cell board per state uses O(S·N²) storage.
 
 ### Code and verification
 

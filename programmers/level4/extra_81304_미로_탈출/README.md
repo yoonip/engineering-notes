@@ -25,7 +25,7 @@ Level 4 · `81304` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O((n+E)·2^T log(n·2^T))` | `O(n·2^T+E)` |
-| 대안 풀이 | `O(n·E·4^T)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(n·E·4^T)` | `O(n·2^T+E)` |
 
 E는 통로 수, T는 함정 수다. 함정 조합은 2^T가지다.
 
@@ -59,7 +59,7 @@ The alternative relaxes the expanded graph with Bellman–Ford. It independently
 
 E counts roads and T counts traps, giving 2^T activation masks.
 
-The primary solution takes `O((n+E)·2^T log(n·2^T))` time and `O(n·2^T+E)` additional space. The alternative takes `O(n·E·4^T)` time. Its code shows the states and storage it uses.
+The primary solution takes `O((n+E)·2^T log(n·2^T))` time and `O(n·2^T+E)` additional space. The alternative takes `O(n·E·4^T)` time. Its additional space is `O(n·2^T+E)`.
 
 ### Code and verification
 

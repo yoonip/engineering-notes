@@ -25,7 +25,7 @@ Level 4 · `62050` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(N² log N)` | `O(N²)` |
-| 대안 풀이 | `O(N² log N)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(N² log N)` | `O(N²)` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ By the cut property, a cheapest crossing edge can extend an optimum safely. Subt
 
 Kruskal instead sorts all neighboring edges and merges distinct components with DSU. It constructs an optimum in a different order while storing an edge list and component structure.
 
-The primary solution takes `O(N² log N)` time and `O(N²)` additional space. The alternative takes `O(N² log N)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(N² log N)` time and `O(N²)` additional space. The alternative takes `O(N² log N)` time. Its additional space is `O(N²)`.
 
 ### Code and verification
 

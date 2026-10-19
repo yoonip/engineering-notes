@@ -25,7 +25,7 @@ Level 4 · `60060` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O((W+Q) log N), 문자열 비교 포함 / including comparisons` | `O(W)` |
-| 대안 풀이 | `O(W+Q) 평균 해시 / expected hashing` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(W+Q) 평균 해시 / expected hashing` | `O(W)` |
 
 W는 단어의 총 글자 수, Q는 질의의 총 글자 수, N은 단어 수다.
 
@@ -59,7 +59,7 @@ The alternative stores prefix counts in forward/reversed tries by word length. E
 
 W and Q are total characters in words and queries, and N is the word count.
 
-The primary solution takes `O((W+Q) log N), 문자열 비교 포함 / including comparisons` time and `O(W)` additional space. The alternative takes `O(W+Q) 평균 해시 / expected hashing` time. Its code shows the states and storage it uses.
+The primary solution takes `O((W+Q) log N), including comparisons` time and `O(W)` additional space. The alternative takes `O(W+Q) expected hashing` time. Its additional space is `O(W)`.
 
 ### Code and verification
 

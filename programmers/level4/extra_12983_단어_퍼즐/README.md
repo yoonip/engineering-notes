@@ -25,7 +25,7 @@ Level 4 · `12983` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(len(t)·5² + total piece characters)` | `O(len(t)+total piece characters)` |
-| 대안 풀이 | `O(len(t)·5² + total piece characters)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(len(t)·5² + total piece characters)` | `O(len(t)+total piece characters)` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ Every construction decomposes into its final piece and preceding prefix. Exhaust
 
 The alternative treats prefix lengths as graph vertices and appending a piece as a unit-cost edge. BFS reaches the goal with the minimum piece count.
 
-The primary solution takes `O(len(t)·5² + total piece characters)` time and `O(len(t)+total piece characters)` additional space. The alternative takes `O(len(t)·5² + total piece characters)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(len(t)·5² + total piece characters)` time and `O(len(t)+total piece characters)` additional space. The alternative takes `O(len(t)·5² + total piece characters)` time. Its additional space is `O(len(t)+total piece characters)`.
 
 ### Code and verification
 

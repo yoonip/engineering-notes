@@ -25,7 +25,7 @@ Level 4 · `17685` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(L log N), 비교 문자 포함 / including character comparisons` | `O(N)` |
-| 대안 풀이 | `O(L) 시간·공간 / time and space` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(L) 시간·공간 / time and space` | `O(L)` |
 
 L은 모든 단어의 총 글자 수, N은 단어 수다.
 
@@ -59,7 +59,7 @@ The trie alternative counts words traversing every prefix and stops at the first
 
 L is the total character count and N is the number of words.
 
-The primary solution takes `O(L log N), 비교 문자 포함 / including character comparisons` time and `O(N)` additional space. The alternative takes `O(L) 시간·공간 / time and space` time. Its code shows the states and storage it uses.
+The primary solution takes `O(L log N), including character comparisons` time and `O(N)` additional space. The alternative takes `O(L) time and space` time. Its additional space is `O(L)`.
 
 ### Code and verification
 

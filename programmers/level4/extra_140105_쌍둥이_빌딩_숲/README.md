@@ -25,7 +25,7 @@ Level 4 · `140105` · Python3 · [공식 문제](https://school.programmers.co.
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(n·count)` | `O(count)` |
-| 대안 풀이 | `O(n · (2n−1)!!), 작은 n / small n` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(n · (2n−1)!!), 작은 n / small n` | `O(n·(2n−1)!!)` |
 
 n은 높이 종류 수다. (2n−1)!!는 1·3·5·…·(2n−1)을 뜻한다.
 
@@ -59,7 +59,7 @@ The alternative constructs every insertion arrangement and counts records direct
 
 n is the number of height classes; (2n−1)!! means 1·3·5·…·(2n−1).
 
-The primary solution takes `O(n·count)` time and `O(count)` additional space. The alternative takes `O(n · (2n−1)!!), 작은 n / small n` time. Its code shows the states and storage it uses.
+The primary solution takes `O(n·count)` time and `O(count)` additional space. The alternative takes `O(n · (2n−1)!!), small n` time. Its additional space is `O(n·(2n−1)!!)`.
 
 ### Code and verification
 

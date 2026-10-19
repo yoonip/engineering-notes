@@ -25,7 +25,7 @@ Level 4 · `72416` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(n)` | `O(n)` |
-| 대안 풀이 | `O(2^n · n)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(2^n · n)` | `O(n)` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ Child states already satisfy lower teams, leaving only the current team to enfor
 
 The alternative enumerates attendee subsets and checks every team, independently establishing optima for at most twenty employees.
 
-The primary solution takes `O(n)` time and `O(n)` additional space. The alternative takes `O(2^n · n)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(n)` time and `O(n)` additional space. The alternative takes `O(2^n · n)` time. Its additional space is `O(n)`.
 
 ### Code and verification
 

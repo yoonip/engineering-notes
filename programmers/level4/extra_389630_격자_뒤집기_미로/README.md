@@ -25,7 +25,7 @@ Level 4 · `389630` · Python3 · [공식 문제](https://school.programmers.co.
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(2^n · n · m)` | `O(n)` |
-| 대안 풀이 | `O(2^(n+m) · 단순 경로 수 / number of simple paths)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(2^(n+m) · 단순 경로 수 / number of simple paths)` | `O(n·m)` |
 
 n은 행 수, m은 열 수다.
 
@@ -59,7 +59,7 @@ The alternative enumerates flips and actual simple paths, independently checking
 
 n and m denote row and column counts.
 
-The primary solution takes `O(2^n · n · m)` time and `O(n)` additional space. The alternative takes `O(2^(n+m) · 단순 경로 수 / number of simple paths)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(2^n · n · m)` time and `O(n)` additional space. The alternative takes `O(2^(n+m) · number of simple paths)` time. Its additional space is `O(n·m)`.
 
 ### Code and verification
 

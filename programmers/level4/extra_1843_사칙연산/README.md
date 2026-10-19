@@ -25,7 +25,9 @@ Level 4 · `1843` · Python3 · [공식 문제](https://school.programmers.co.kr
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(N³), N=숫자 수/numbers` | `O(N²)` |
-| 대안 풀이 | `가능한 구간 값 집합에 비례 / proportional to attainable interval-value sets` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(Σ(l≤k<r) \|S[l,k]\|·\|S[k+1,r]\|)` | `O(Σ \|S[l,r]\|)` |
+
+대안의 S[l,r]는 숫자 l부터 r까지 만들 수 있는 값의 집합이다. 모든 분할 k에서 왼쪽·오른쪽 값의 조합을 확인하므로 시간은 O(Σ(l≤k<r) |S[l,k]|·|S[k+1,r]|), 공간은 O(Σ |S[l,r]|)다.
 
 ## 코드와 검증
 
@@ -55,7 +57,9 @@ Every parenthesization splits into two contiguous subexpressions at its final op
 
 The alternative stores every attainable interval value in a set, independently checking the extrema compression. It is limited to twelve numbers.
 
-The primary solution takes `O(N³), N=숫자 수/numbers` time and `O(N²)` additional space. The alternative takes `가능한 구간 값 집합에 비례 / proportional to attainable interval-value sets` time. Its code shows the states and storage it uses.
+The primary solution takes `O(N³), N=number count` time and `O(N²)` additional space. The alternative takes `O(Σ(l≤k<r) |S[l,k]|·|S[k+1,r]|)` time. Its additional space is `O(Σ |S[l,r]|)`.
+
+For the alternative, S[l,r] is the attainable-value set for interval l through r. Combining every pair across every split k takes O(Σ(l≤k<r) |S[l,k]|·|S[k+1,r]|) time and O(Σ |S[l,r]|) storage.
 
 ### Code and verification
 

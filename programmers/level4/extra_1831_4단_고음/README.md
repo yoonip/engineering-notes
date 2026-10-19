@@ -25,7 +25,9 @@ Level 4 · `1831` · C++ · [공식 문제](https://school.programmers.co.kr/lea
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(S log S) C++ map; O(S) Python cache 평균/expected` | `O(S), S=방문 상태/visited states` |
-| 대안 풀이 | `정방향 상태 수에 비례 / proportional to forward states` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(S)` | `O(S)` |
+
+대안의 S는 정방향 탐색에서 방문하는 (현재 높이, 남은 + 수) 상태 수다. 각 상태에서 두 전이만 검사하므로 평균 해시 비용 기준 시간·공간 O(S)다.
 
 ## 코드와 검증
 
@@ -55,7 +57,9 @@ Every valid prefix has at most twice as many increments as multiplications. The 
 
 The alternative grows strings forward while tracking outstanding increment obligations, checking the reverse search independently for target pitch at most 10000.
 
-The primary solution takes `O(S log S) C++ map; O(S) Python cache 평균/expected` time and `O(S), S=방문 상태/visited states` additional space. The alternative takes `정방향 상태 수에 비례 / proportional to forward states` time. Its code shows the states and storage it uses.
+The primary solution takes `O(S log S) C++ map; O(S) Python cache expected` time and `O(S), S=visited states` additional space. The alternative takes `O(S)` time. Its additional space is `O(S)`.
+
+For the alternative, S counts forward states of pitch and pending additions. At most two transitions per state give expected O(S) time and space.
 
 ### Code and verification
 

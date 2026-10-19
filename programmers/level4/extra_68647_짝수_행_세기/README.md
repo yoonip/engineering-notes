@@ -25,7 +25,7 @@ Level 4 · `68647` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(cols·rows²)` | `O(rows²)` |
-| 대안 풀이 | `O(cols·2^rows·max binomial(rows,column_ones))` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(cols·2^rows·max binomial(rows,column_ones))` | `O(2^rows + max binomial(rows,column_ones))` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ Rows within a parity group are symmetric for future counts. Multiply by C(e,x)C(
 
 The alternative retains the entire row-parity bitmask and enumerates row subsets for each column. At most eight rows independently check the compressed combinatorial transitions.
 
-The primary solution takes `O(cols·rows²)` time and `O(rows²)` additional space. The alternative takes `O(cols·2^rows·max binomial(rows,column_ones))` time. Its code shows the states and storage it uses.
+The primary solution takes `O(cols·rows²)` time and `O(rows²)` additional space. The alternative takes `O(cols·2^rows·max binomial(rows,column_ones))` time. Its additional space is `O(2^rows + max binomial(rows,column_ones))`.
 
 ### Code and verification
 

@@ -25,7 +25,7 @@ BFS로 지름 양 끝점을 구한다. 한 끝점에서 지름 거리의 정점�
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(n)` | `O(n)` |
-| 대안 풀이 | `O(n³+n²)` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(n³+n²)` | `O(n²)` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ Otherwise both endpoint checks have a unique opposite extremity, preventing two 
 
 The alternative computes every pair distance and enumerates triples for at most sixty vertices, independently checking the endpoint criterion.
 
-The primary solution takes `O(n)` time and `O(n)` additional space. The alternative takes `O(n³+n²)` time. Its code shows the states and storage it uses.
+The primary solution takes `O(n)` time and `O(n)` additional space. The alternative takes `O(n³+n²)` time. Its additional space is `O(n²)`.
 
 ### Code and verification
 

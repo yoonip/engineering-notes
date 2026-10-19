@@ -25,7 +25,7 @@ Level 4 · `67260` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(n)` | `O(n)` |
-| 대안 풀이 | `O(n+len(order))` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `O(n+len(order))` | `O(n+len(order))` |
 
 ## 코드와 검증
 
@@ -55,7 +55,7 @@ Every processed room satisfies both reachability and prerequisite conditions. If
 
 The alternative roots the tree at zero and topologically sorts parent-to-child edges together with prerequisites. A unique tree route must pass through the parent, making a complete topological order equivalent to feasible visitation.
 
-The primary solution takes `O(n)` time and `O(n)` additional space. The alternative takes `O(n+len(order))` time. Its code shows the states and storage it uses.
+The primary solution takes `O(n)` time and `O(n)` additional space. The alternative takes `O(n+len(order))` time. Its additional space is `O(n+len(order))`.
 
 ### Code and verification
 

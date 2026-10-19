@@ -25,7 +25,9 @@ Level 4 · `12929` · Python3 · [공식 문제](https://school.programmers.co.k
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(n²)` | `O(n)` |
-| 대안 풀이 | `조합 계산 비용 / binomial arithmetic cost` | 코드의 상태·탐색 구조 참조 |
+| 대안 풀이 | `조합 계산 비용 / binomial arithmetic cost` | `O(n) bits` |
+
+대안은 반사 원리의 이항계수 두 개를 math.comb로 계산한다. 반환 정수는 O(n)비트이고, 실제 조합 계산 시간은 정수 연산 구현에 달려 있다. n≤14에서는 모두 작은 정수 범위다.
 
 ## 코드와 검증
 
@@ -55,7 +57,9 @@ This decomposition is unique. Sum over all i and initialize the empty string wit
 
 The alternative uses the reflection principle: subtract C(2n,n+1) invalid-prefix strings from C(2n,n) balanced strings. Integer binomial arithmetic avoids floating-point division.
 
-The primary solution takes `O(n²)` time and `O(n)` additional space. The alternative takes `조합 계산 비용 / binomial arithmetic cost` time. Its code shows the states and storage it uses.
+The primary solution takes `O(n²)` time and `O(n)` additional space. The alternative takes `binomial arithmetic cost` time. Its additional space is `O(n) bits`.
+
+The alternative computes two reflection-principle binomial coefficients with math.comb. The returned integers have O(n) bits; exact arithmetic runtime depends on the binomial implementation. All values are small within n≤14.
 
 ### Code and verification
 
