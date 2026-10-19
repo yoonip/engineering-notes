@@ -1,0 +1,35 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/72410",
+  "cases": [
+    {
+      "arguments": [
+        "...!@BaT#*..y.abcdefghijklm"
+      ],
+      "expected": "bat.y.abcdefghi"
+    },
+    {
+      "arguments": [
+        "z-+.^."
+      ],
+      "expected": "z--"
+    },
+    {
+      "arguments": [
+        "=.="
+      ],
+      "expected": "aaa"
+    },
+    {
+      "arguments": [
+        "123_.def"
+      ],
+      "expected": "123_.def"
+    },
+    {
+      "arguments": [
+        "abcdefghijklmn.p"
+      ],
+      "expected": "abcdefghijklmn"
+    }
+  ]
+}

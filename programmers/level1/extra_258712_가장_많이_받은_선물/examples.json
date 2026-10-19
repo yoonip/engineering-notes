@@ -1,0 +1,63 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/258712",
+  "cases": [
+    {
+      "arguments": [
+        [
+          "muzi",
+          "ryan",
+          "frodo",
+          "neo"
+        ],
+        [
+          "muzi frodo",
+          "muzi frodo",
+          "ryan muzi",
+          "ryan muzi",
+          "ryan muzi",
+          "frodo muzi",
+          "frodo ryan",
+          "neo muzi"
+        ]
+      ],
+      "expected": 2
+    },
+    {
+      "arguments": [
+        [
+          "joy",
+          "brad",
+          "alessandro",
+          "conan",
+          "david"
+        ],
+        [
+          "alessandro brad",
+          "alessandro joy",
+          "alessandro conan",
+          "david alessandro",
+          "alessandro david"
+        ]
+      ],
+      "expected": 4
+    },
+    {
+      "arguments": [
+        [
+          "a",
+          "b",
+          "c"
+        ],
+        [
+          "a b",
+          "b a",
+          "c a",
+          "a c",
+          "a c",
+          "c a"
+        ]
+      ],
+      "expected": 0
+    }
+  ]
+}

@@ -2,7 +2,9 @@
 
 확인일: 2026-10-19. 총 309문제의 조건과 예제를 공식 페이지에서 확인하고, 각 폴더에 다시 실행할 수 있는 검증 코드를 넣었다.
 
-레벨 0·1과 레벨 5에서 따로 보관한 277개 제출본의 범위는 [보관 범위](COVERAGE.md)에 있다. 그 파일들의 해시·주석본·Python 구문 대조는 `python programmers/tests/verify_archive.py`로 실행한다. 아래 알고리즘 검증 309개와는 확인 범위가 다르다.
+레벨 0·1과 레벨 5의 줄별 주석본 363개는 [보관 범위](COVERAGE.md)에 있다. 파일 해시·주석본·Python 구문 대조는 `python programmers/tests/verify_archive.py`로 실행한다. 아래 알고리즘 검증 309개와는 확인 범위가 다르다.
+
+과거 제출본 86개는 `python programmers/tests/verify_history.py`로 원본과 새 주석본의 실행 구문 AST를 비교하고 공개 예제 197개를 각각 실행했다. 394회 검사가 모두 통과했다. [과거 제출 검증 기록](HISTORICAL_VALIDATION.json)에 입력별 결과를 남겼다. 사이트의 100점은 보존한 원본의 과거 채점 결과이며, 이번에 주석을 붙여 다시 제출한 결과는 아니다.
 
 ## 확인한 범위
 
@@ -53,6 +55,8 @@ python programmers/tests/test_cpp.py --compiler /path/to/g++
 ## English
 
 Checked on 2026-10-19. Official statements and examples were consulted for all 309 problems, and each folder includes reproducible verification code.
+
+The 363 annotated submissions at Levels 0, 1 and 5 have separate [archive coverage](COVERAGE.md). For the 86 historical entries, `tests/verify_history.py` checked identical executable ASTs and ran both source versions on 197 public examples. All 394 executions passed; [records](HISTORICAL_VALIDATION.json) identify each case. The preserved originals have accepted website results, while the newly annotated copies were tested locally without resubmission.
 
 The 309 per-problem scripts passed under both Python 3.12.14 and 3.13.14. Ten C++ implementations compiled as C++17 with Zig 0.17.0 and passed 26 official examples; six Level 3 implementations were additionally cross-checked against Python comparisons on 180 small generated inputs. All 75 SQL problems were compared using SQLite compatibility fixtures. The 24 existing regression tests also passed. The complete 3,024-secret strategy tree for problem 451808 required at most six queries. SHA-256 checks matched all 309 preserved submissions, and the local originals were unchanged.
 

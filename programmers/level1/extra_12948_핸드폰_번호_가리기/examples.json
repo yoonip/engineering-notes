@@ -1,0 +1,17 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/12948",
+  "cases": [
+    {
+      "arguments": [
+        "01033334444"
+      ],
+      "expected": "*******4444"
+    },
+    {
+      "arguments": [
+        "027778888"
+      ],
+      "expected": "*****8888"
+    }
+  ]
+}

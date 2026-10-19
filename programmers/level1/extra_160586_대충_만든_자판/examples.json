@@ -1,0 +1,50 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/160586",
+  "cases": [
+    {
+      "arguments": [
+        [
+          "ABACD",
+          "BCEFD"
+        ],
+        [
+          "ABCD",
+          "AABB"
+        ]
+      ],
+      "expected": [
+        9,
+        4
+      ]
+    },
+    {
+      "arguments": [
+        [
+          "AA"
+        ],
+        [
+          "B"
+        ]
+      ],
+      "expected": [
+        -1
+      ]
+    },
+    {
+      "arguments": [
+        [
+          "AGZ",
+          "BSSS"
+        ],
+        [
+          "ASA",
+          "BGZ"
+        ]
+      ],
+      "expected": [
+        4,
+        6
+      ]
+    }
+  ]
+}

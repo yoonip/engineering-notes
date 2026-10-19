@@ -1,0 +1,18 @@
+{
+  "id": 12932,
+  "public_examples": 1,
+  "checks": [
+    {
+      "case": 1,
+      "original_passed": true,
+      "annotated_passed": true
+    }
+  ],
+  "original_hash_match": true,
+  "annotated_hash_match": true,
+  "executable_ast_match": true,
+  "exact_commented_copy": true,
+  "nonempty_line_notes": true,
+  "saved_website_grade": 100,
+  "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+}

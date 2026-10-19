@@ -1,0 +1,17 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/12931",
+  "cases": [
+    {
+      "arguments": [
+        123
+      ],
+      "expected": 6
+    },
+    {
+      "arguments": [
+        987
+      ],
+      "expected": 24
+    }
+  ]
+}

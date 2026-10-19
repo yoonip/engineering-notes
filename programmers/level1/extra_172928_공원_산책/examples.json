@@ -1,0 +1,60 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/172928",
+  "cases": [
+    {
+      "arguments": [
+        [
+          "SOO",
+          "OOO",
+          "OOO"
+        ],
+        [
+          "E 2",
+          "S 2",
+          "W 1"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ]
+    },
+    {
+      "arguments": [
+        [
+          "SOO",
+          "OXX",
+          "OOO"
+        ],
+        [
+          "E 2",
+          "S 2",
+          "W 1"
+        ]
+      ],
+      "expected": [
+        0,
+        1
+      ]
+    },
+    {
+      "arguments": [
+        [
+          "OSO",
+          "OOO",
+          "OXO",
+          "OOO"
+        ],
+        [
+          "E 2",
+          "S 3",
+          "W 1"
+        ]
+      ],
+      "expected": [
+        0,
+        0
+      ]
+    }
+  ]
+}

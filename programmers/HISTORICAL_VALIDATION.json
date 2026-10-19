@@ -1,0 +1,2113 @@
+{
+  "checked_on": "2026-10-19",
+  "python": "3.12.14",
+  "problems": 86,
+  "public_examples": 197,
+  "execution_comparisons": 394,
+  "passed": 86,
+  "records": [
+    {
+      "id": 468371,
+      "public_examples": 4,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 4,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 468370,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 389478,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 388351,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 340213,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 340207,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 340206,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 340205,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 340204,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 340199,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 340198,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 258712,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 250137,
+      "public_examples": 4,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 4,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 250125,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 250121,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 178871,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 176963,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 172928,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 161990,
+      "public_examples": 4,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 4,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 161989,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 160586,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 159994,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 155652,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 150370,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 147355,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 142086,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 140108,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 138477,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 136798,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 135808,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 134240,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 133502,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 133499,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 132267,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 131705,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 131128,
+      "public_examples": 5,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 4,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 5,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 118666,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 92334,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 87389,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 86491,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 86051,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 82612,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 81301,
+      "public_examples": 4,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 4,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 77884,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 77484,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 76501,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 72410,
+      "public_examples": 5,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 4,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 5,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 70128,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 68935,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 68644,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 67256,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 64061,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 42889,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 42862,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 42840,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 42748,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 42576,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 17682,
+      "public_examples": 7,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 4,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 5,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 6,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 7,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 17681,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12982,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12977,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12969,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12954,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12950,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12948,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12947,
+      "public_examples": 4,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 4,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12944,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12943,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12940,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12937,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12935,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12934,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12933,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12932,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12931,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12930,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12928,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12925,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12921,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12919,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12916,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12912,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12910,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12906,
+      "public_examples": 2,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 12901,
+      "public_examples": 1,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    },
+    {
+      "id": 1845,
+      "public_examples": 3,
+      "checks": [
+        {
+          "case": 1,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 2,
+          "original_passed": true,
+          "annotated_passed": true
+        },
+        {
+          "case": 3,
+          "original_passed": true,
+          "annotated_passed": true
+        }
+      ],
+      "original_hash_match": true,
+      "annotated_hash_match": true,
+      "executable_ast_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_website_grade": 100,
+      "scope": "Original website submission plus local public-example comparisons; not a new judge submission"
+    }
+  ]
+}

@@ -1,0 +1,2529 @@
+{
+  "checked_on": "2026-10-19",
+  "total": 359,
+  "pages": 18,
+  "filters": {
+    "levels": [
+      0,
+      1
+    ],
+    "language": null,
+    "status": null,
+    "order": "recent"
+  },
+  "problems": [
+    {
+      "id": 468371,
+      "level": 1,
+      "title": "노란불 신호등",
+      "page": 1,
+      "position": 1
+    },
+    {
+      "id": 468370,
+      "level": 1,
+      "title": "중요한 단어를 스포 방지",
+      "page": 1,
+      "position": 2
+    },
+    {
+      "id": 389478,
+      "level": 1,
+      "title": "택배 상자 꺼내기",
+      "page": 1,
+      "position": 3
+    },
+    {
+      "id": 388351,
+      "level": 1,
+      "title": "유연근무제",
+      "page": 1,
+      "position": 4
+    },
+    {
+      "id": 340213,
+      "level": 1,
+      "title": "[PCCP 기출문제] 1번 / 동영상 재생기",
+      "page": 1,
+      "position": 5
+    },
+    {
+      "id": 340207,
+      "level": 0,
+      "title": "[PCCE 기출문제] 1번 / 문자 출력",
+      "page": 1,
+      "position": 6
+    },
+    {
+      "id": 340206,
+      "level": 0,
+      "title": "[PCCE 기출문제] 2번 / 각도 합치기",
+      "page": 1,
+      "position": 7
+    },
+    {
+      "id": 340205,
+      "level": 0,
+      "title": "[PCCE 기출문제] 3번 / 수 나누기",
+      "page": 1,
+      "position": 8
+    },
+    {
+      "id": 340204,
+      "level": 0,
+      "title": "[PCCE 기출문제] 4번 / 병과분류",
+      "page": 1,
+      "position": 9
+    },
+    {
+      "id": 340203,
+      "level": 0,
+      "title": "[PCCE 기출문제] 5번 / 심폐소생술",
+      "page": 1,
+      "position": 10
+    },
+    {
+      "id": 340202,
+      "level": 0,
+      "title": "[PCCE 기출문제] 6번 / 물 부족",
+      "page": 1,
+      "position": 11
+    },
+    {
+      "id": 340201,
+      "level": 0,
+      "title": "[PCCE 기출문제] 7번 / 버스",
+      "page": 1,
+      "position": 12
+    },
+    {
+      "id": 340200,
+      "level": 0,
+      "title": "[PCCE 기출문제] 8번 / 닉네임 규칙",
+      "page": 1,
+      "position": 13
+    },
+    {
+      "id": 340199,
+      "level": 1,
+      "title": "[PCCE 기출문제] 9번 / 지폐 접기",
+      "page": 1,
+      "position": 14
+    },
+    {
+      "id": 340198,
+      "level": 1,
+      "title": "[PCCE 기출문제] 10번 / 공원",
+      "page": 1,
+      "position": 15
+    },
+    {
+      "id": 301646,
+      "level": 1,
+      "title": "특정 형질을 가지는 대장균 찾기",
+      "page": 1,
+      "position": 16
+    },
+    {
+      "id": 298517,
+      "level": 1,
+      "title": "가장 큰 물고기 10마리 구하기",
+      "page": 1,
+      "position": 17
+    },
+    {
+      "id": 298516,
+      "level": 1,
+      "title": "한 해에 잡은 물고기 수 구하기",
+      "page": 1,
+      "position": 18
+    },
+    {
+      "id": 298515,
+      "level": 1,
+      "title": "잡은 물고기 중 가장 큰 물고기의 길이 구하기",
+      "page": 1,
+      "position": 19
+    },
+    {
+      "id": 293259,
+      "level": 1,
+      "title": "잡은 물고기의 평균 길이 구하기",
+      "page": 1,
+      "position": 20
+    },
+    {
+      "id": 293258,
+      "level": 1,
+      "title": "잔챙이 잡은 수 구하기",
+      "page": 2,
+      "position": 21
+    },
+    {
+      "id": 276013,
+      "level": 1,
+      "title": "Python 개발자 찾기",
+      "page": 2,
+      "position": 22
+    },
+    {
+      "id": 258712,
+      "level": 1,
+      "title": "가장 많이 받은 선물",
+      "page": 2,
+      "position": 23
+    },
+    {
+      "id": 250137,
+      "level": 1,
+      "title": "[PCCP 기출문제] 1번 / 붕대 감기",
+      "page": 2,
+      "position": 24
+    },
+    {
+      "id": 250133,
+      "level": 0,
+      "title": "[PCCE 기출문제] 1번 / 출력",
+      "page": 2,
+      "position": 25
+    },
+    {
+      "id": 250132,
+      "level": 0,
+      "title": "[PCCE 기출문제] 2번 / 피타고라스의 정리",
+      "page": 2,
+      "position": 26
+    },
+    {
+      "id": 250131,
+      "level": 0,
+      "title": "[PCCE 기출문제] 3번 / 나이 계산",
+      "page": 2,
+      "position": 27
+    },
+    {
+      "id": 250130,
+      "level": 0,
+      "title": "[PCCE 기출문제] 4번 / 저축",
+      "page": 2,
+      "position": 28
+    },
+    {
+      "id": 250129,
+      "level": 0,
+      "title": "[PCCE 기출문제] 5번 / 산책",
+      "page": 2,
+      "position": 29
+    },
+    {
+      "id": 250128,
+      "level": 0,
+      "title": "[PCCE 기출문제] 6번 / 가채점",
+      "page": 2,
+      "position": 30
+    },
+    {
+      "id": 250127,
+      "level": 0,
+      "title": "[PCCE 기출문제] 7번 / 가습기",
+      "page": 2,
+      "position": 31
+    },
+    {
+      "id": 250126,
+      "level": 0,
+      "title": "[PCCE 기출문제] 8번 / 창고 정리",
+      "page": 2,
+      "position": 32
+    },
+    {
+      "id": 250125,
+      "level": 1,
+      "title": "[PCCE 기출문제] 9번 / 이웃한 칸",
+      "page": 2,
+      "position": 33
+    },
+    {
+      "id": 250121,
+      "level": 1,
+      "title": "[PCCE 기출문제] 10번 / 데이터 분석",
+      "page": 2,
+      "position": 34
+    },
+    {
+      "id": 181952,
+      "level": 0,
+      "title": "문자열 출력하기",
+      "page": 2,
+      "position": 35
+    },
+    {
+      "id": 181951,
+      "level": 0,
+      "title": "a와 b 출력하기",
+      "page": 2,
+      "position": 36
+    },
+    {
+      "id": 181950,
+      "level": 0,
+      "title": "문자열 반복해서 출력하기",
+      "page": 2,
+      "position": 37
+    },
+    {
+      "id": 181949,
+      "level": 0,
+      "title": "대소문자 바꿔서 출력하기",
+      "page": 2,
+      "position": 38
+    },
+    {
+      "id": 181948,
+      "level": 0,
+      "title": "특수문자 출력하기",
+      "page": 2,
+      "position": 39
+    },
+    {
+      "id": 181947,
+      "level": 0,
+      "title": "덧셈식 출력하기",
+      "page": 2,
+      "position": 40
+    },
+    {
+      "id": 181946,
+      "level": 0,
+      "title": "문자열 붙여서 출력하기",
+      "page": 3,
+      "position": 41
+    },
+    {
+      "id": 181945,
+      "level": 0,
+      "title": "문자열 돌리기",
+      "page": 3,
+      "position": 42
+    },
+    {
+      "id": 181944,
+      "level": 0,
+      "title": "홀짝 구분하기",
+      "page": 3,
+      "position": 43
+    },
+    {
+      "id": 181943,
+      "level": 0,
+      "title": "문자열 겹쳐쓰기",
+      "page": 3,
+      "position": 44
+    },
+    {
+      "id": 181942,
+      "level": 0,
+      "title": "문자열 섞기",
+      "page": 3,
+      "position": 45
+    },
+    {
+      "id": 181941,
+      "level": 0,
+      "title": "문자 리스트를 문자열로 변환하기",
+      "page": 3,
+      "position": 46
+    },
+    {
+      "id": 181940,
+      "level": 0,
+      "title": "문자열 곱하기",
+      "page": 3,
+      "position": 47
+    },
+    {
+      "id": 181939,
+      "level": 0,
+      "title": "더 크게 합치기",
+      "page": 3,
+      "position": 48
+    },
+    {
+      "id": 181938,
+      "level": 0,
+      "title": "두 수의 연산값 비교하기",
+      "page": 3,
+      "position": 49
+    },
+    {
+      "id": 181937,
+      "level": 0,
+      "title": "n의 배수",
+      "page": 3,
+      "position": 50
+    },
+    {
+      "id": 181936,
+      "level": 0,
+      "title": "공배수",
+      "page": 3,
+      "position": 51
+    },
+    {
+      "id": 181935,
+      "level": 0,
+      "title": "홀짝에 따라 다른 값 반환하기",
+      "page": 3,
+      "position": 52
+    },
+    {
+      "id": 181934,
+      "level": 0,
+      "title": "조건 문자열",
+      "page": 3,
+      "position": 53
+    },
+    {
+      "id": 181933,
+      "level": 0,
+      "title": "flag에 따라 다른 값 반환하기",
+      "page": 3,
+      "position": 54
+    },
+    {
+      "id": 181932,
+      "level": 0,
+      "title": "코드 처리하기",
+      "page": 3,
+      "position": 55
+    },
+    {
+      "id": 181931,
+      "level": 0,
+      "title": "등차수열의 특정한 항만 더하기",
+      "page": 3,
+      "position": 56
+    },
+    {
+      "id": 181930,
+      "level": 0,
+      "title": "주사위 게임 2",
+      "page": 3,
+      "position": 57
+    },
+    {
+      "id": 181929,
+      "level": 0,
+      "title": "원소들의 곱과 합",
+      "page": 3,
+      "position": 58
+    },
+    {
+      "id": 181928,
+      "level": 0,
+      "title": "이어 붙인 수",
+      "page": 3,
+      "position": 59
+    },
+    {
+      "id": 181927,
+      "level": 0,
+      "title": "마지막 두 원소",
+      "page": 3,
+      "position": 60
+    },
+    {
+      "id": 181926,
+      "level": 0,
+      "title": "수 조작하기 1",
+      "page": 4,
+      "position": 61
+    },
+    {
+      "id": 181925,
+      "level": 0,
+      "title": "수 조작하기 2",
+      "page": 4,
+      "position": 62
+    },
+    {
+      "id": 181924,
+      "level": 0,
+      "title": "수열과 구간 쿼리 3",
+      "page": 4,
+      "position": 63
+    },
+    {
+      "id": 181923,
+      "level": 0,
+      "title": "수열과 구간 쿼리 2",
+      "page": 4,
+      "position": 64
+    },
+    {
+      "id": 181922,
+      "level": 0,
+      "title": "수열과 구간 쿼리 4",
+      "page": 4,
+      "position": 65
+    },
+    {
+      "id": 181921,
+      "level": 0,
+      "title": "배열 만들기 2",
+      "page": 4,
+      "position": 66
+    },
+    {
+      "id": 181920,
+      "level": 0,
+      "title": "카운트 업",
+      "page": 4,
+      "position": 67
+    },
+    {
+      "id": 181919,
+      "level": 0,
+      "title": "콜라츠 수열 만들기",
+      "page": 4,
+      "position": 68
+    },
+    {
+      "id": 181918,
+      "level": 0,
+      "title": "배열 만들기 4",
+      "page": 4,
+      "position": 69
+    },
+    {
+      "id": 181917,
+      "level": 0,
+      "title": "간단한 논리 연산",
+      "page": 4,
+      "position": 70
+    },
+    {
+      "id": 181916,
+      "level": 0,
+      "title": "주사위 게임 3",
+      "page": 4,
+      "position": 71
+    },
+    {
+      "id": 181915,
+      "level": 0,
+      "title": "글자 이어 붙여 문자열 만들기",
+      "page": 4,
+      "position": 72
+    },
+    {
+      "id": 181914,
+      "level": 0,
+      "title": "9로 나눈 나머지",
+      "page": 4,
+      "position": 73
+    },
+    {
+      "id": 181913,
+      "level": 0,
+      "title": "문자열 여러 번 뒤집기",
+      "page": 4,
+      "position": 74
+    },
+    {
+      "id": 181912,
+      "level": 0,
+      "title": "배열 만들기 5",
+      "page": 4,
+      "position": 75
+    },
+    {
+      "id": 181911,
+      "level": 0,
+      "title": "부분 문자열 이어 붙여 문자열 만들기",
+      "page": 4,
+      "position": 76
+    },
+    {
+      "id": 181910,
+      "level": 0,
+      "title": "문자열의 뒤의 n글자",
+      "page": 4,
+      "position": 77
+    },
+    {
+      "id": 181909,
+      "level": 0,
+      "title": "접미사 배열",
+      "page": 4,
+      "position": 78
+    },
+    {
+      "id": 181908,
+      "level": 0,
+      "title": "접미사인지 확인하기",
+      "page": 4,
+      "position": 79
+    },
+    {
+      "id": 181907,
+      "level": 0,
+      "title": "문자열의 앞의 n글자",
+      "page": 4,
+      "position": 80
+    },
+    {
+      "id": 181906,
+      "level": 0,
+      "title": "접두사인지 확인하기",
+      "page": 5,
+      "position": 81
+    },
+    {
+      "id": 181905,
+      "level": 0,
+      "title": "문자열 뒤집기",
+      "page": 5,
+      "position": 82
+    },
+    {
+      "id": 181904,
+      "level": 0,
+      "title": "세로 읽기",
+      "page": 5,
+      "position": 83
+    },
+    {
+      "id": 181903,
+      "level": 0,
+      "title": "qr code",
+      "page": 5,
+      "position": 84
+    },
+    {
+      "id": 181902,
+      "level": 0,
+      "title": "문자 개수 세기",
+      "page": 5,
+      "position": 85
+    },
+    {
+      "id": 181901,
+      "level": 0,
+      "title": "배열 만들기 1",
+      "page": 5,
+      "position": 86
+    },
+    {
+      "id": 181900,
+      "level": 0,
+      "title": "글자 지우기",
+      "page": 5,
+      "position": 87
+    },
+    {
+      "id": 181899,
+      "level": 0,
+      "title": "카운트 다운",
+      "page": 5,
+      "position": 88
+    },
+    {
+      "id": 181898,
+      "level": 0,
+      "title": "가까운 1 찾기",
+      "page": 5,
+      "position": 89
+    },
+    {
+      "id": 181897,
+      "level": 0,
+      "title": "리스트 자르기",
+      "page": 5,
+      "position": 90
+    },
+    {
+      "id": 181896,
+      "level": 0,
+      "title": "첫 번째로 나오는 음수",
+      "page": 5,
+      "position": 91
+    },
+    {
+      "id": 181895,
+      "level": 0,
+      "title": "배열 만들기 3",
+      "page": 5,
+      "position": 92
+    },
+    {
+      "id": 181894,
+      "level": 0,
+      "title": "2의 영역",
+      "page": 5,
+      "position": 93
+    },
+    {
+      "id": 181893,
+      "level": 0,
+      "title": "배열 조각하기",
+      "page": 5,
+      "position": 94
+    },
+    {
+      "id": 181892,
+      "level": 0,
+      "title": "n 번째 원소부터",
+      "page": 5,
+      "position": 95
+    },
+    {
+      "id": 181891,
+      "level": 0,
+      "title": "순서 바꾸기",
+      "page": 5,
+      "position": 96
+    },
+    {
+      "id": 181890,
+      "level": 0,
+      "title": "왼쪽 오른쪽",
+      "page": 5,
+      "position": 97
+    },
+    {
+      "id": 181889,
+      "level": 0,
+      "title": "n 번째 원소까지",
+      "page": 5,
+      "position": 98
+    },
+    {
+      "id": 181888,
+      "level": 0,
+      "title": "n개 간격의 원소들",
+      "page": 5,
+      "position": 99
+    },
+    {
+      "id": 181887,
+      "level": 0,
+      "title": "홀수 vs 짝수",
+      "page": 5,
+      "position": 100
+    },
+    {
+      "id": 181886,
+      "level": 0,
+      "title": "5명씩",
+      "page": 6,
+      "position": 101
+    },
+    {
+      "id": 181885,
+      "level": 0,
+      "title": "할 일 목록",
+      "page": 6,
+      "position": 102
+    },
+    {
+      "id": 181884,
+      "level": 0,
+      "title": "n보다 커질 때까지 더하기",
+      "page": 6,
+      "position": 103
+    },
+    {
+      "id": 181883,
+      "level": 0,
+      "title": "수열과 구간 쿼리 1",
+      "page": 6,
+      "position": 104
+    },
+    {
+      "id": 181882,
+      "level": 0,
+      "title": "조건에 맞게 수열 변환하기 1",
+      "page": 6,
+      "position": 105
+    },
+    {
+      "id": 181881,
+      "level": 0,
+      "title": "조건에 맞게 수열 변환하기 2",
+      "page": 6,
+      "position": 106
+    },
+    {
+      "id": 181880,
+      "level": 0,
+      "title": "1로 만들기",
+      "page": 6,
+      "position": 107
+    },
+    {
+      "id": 181879,
+      "level": 0,
+      "title": "길이에 따른 연산",
+      "page": 6,
+      "position": 108
+    },
+    {
+      "id": 181878,
+      "level": 0,
+      "title": "원하는 문자열 찾기",
+      "page": 6,
+      "position": 109
+    },
+    {
+      "id": 181877,
+      "level": 0,
+      "title": "대문자로 바꾸기",
+      "page": 6,
+      "position": 110
+    },
+    {
+      "id": 181876,
+      "level": 0,
+      "title": "소문자로 바꾸기",
+      "page": 6,
+      "position": 111
+    },
+    {
+      "id": 181875,
+      "level": 0,
+      "title": "배열에서 문자열 대소문자 변환하기",
+      "page": 6,
+      "position": 112
+    },
+    {
+      "id": 181874,
+      "level": 0,
+      "title": "A 강조하기",
+      "page": 6,
+      "position": 113
+    },
+    {
+      "id": 181873,
+      "level": 0,
+      "title": "특정한 문자를 대문자로 바꾸기",
+      "page": 6,
+      "position": 114
+    },
+    {
+      "id": 181872,
+      "level": 0,
+      "title": "특정 문자열로 끝나는 가장 긴 부분 문자열 찾기",
+      "page": 6,
+      "position": 115
+    },
+    {
+      "id": 181871,
+      "level": 0,
+      "title": "문자열이 몇 번 등장하는지 세기",
+      "page": 6,
+      "position": 116
+    },
+    {
+      "id": 181870,
+      "level": 0,
+      "title": "ad 제거하기",
+      "page": 6,
+      "position": 117
+    },
+    {
+      "id": 181869,
+      "level": 0,
+      "title": "공백으로 구분하기 1",
+      "page": 6,
+      "position": 118
+    },
+    {
+      "id": 181868,
+      "level": 0,
+      "title": "공백으로 구분하기 2",
+      "page": 6,
+      "position": 119
+    },
+    {
+      "id": 181867,
+      "level": 0,
+      "title": "x 사이의 개수",
+      "page": 6,
+      "position": 120
+    },
+    {
+      "id": 181866,
+      "level": 0,
+      "title": "문자열 잘라서 정렬하기",
+      "page": 7,
+      "position": 121
+    },
+    {
+      "id": 181865,
+      "level": 0,
+      "title": "간단한 식 계산하기",
+      "page": 7,
+      "position": 122
+    },
+    {
+      "id": 181864,
+      "level": 0,
+      "title": "문자열 바꿔서 찾기",
+      "page": 7,
+      "position": 123
+    },
+    {
+      "id": 181863,
+      "level": 0,
+      "title": "rny_string",
+      "page": 7,
+      "position": 124
+    },
+    {
+      "id": 181862,
+      "level": 0,
+      "title": "세 개의 구분자",
+      "page": 7,
+      "position": 125
+    },
+    {
+      "id": 181861,
+      "level": 0,
+      "title": "배열의 원소만큼 추가하기",
+      "page": 7,
+      "position": 126
+    },
+    {
+      "id": 181860,
+      "level": 0,
+      "title": "빈 배열에 추가, 삭제하기",
+      "page": 7,
+      "position": 127
+    },
+    {
+      "id": 181859,
+      "level": 0,
+      "title": "배열 만들기 6",
+      "page": 7,
+      "position": 128
+    },
+    {
+      "id": 181858,
+      "level": 0,
+      "title": "무작위로 K개의 수 뽑기",
+      "page": 7,
+      "position": 129
+    },
+    {
+      "id": 181857,
+      "level": 0,
+      "title": "배열의 길이를 2의 거듭제곱으로 만들기",
+      "page": 7,
+      "position": 130
+    },
+    {
+      "id": 181856,
+      "level": 0,
+      "title": "배열 비교하기",
+      "page": 7,
+      "position": 131
+    },
+    {
+      "id": 181855,
+      "level": 0,
+      "title": "문자열 묶기",
+      "page": 7,
+      "position": 132
+    },
+    {
+      "id": 181854,
+      "level": 0,
+      "title": "배열의 길이에 따라 다른 연산하기",
+      "page": 7,
+      "position": 133
+    },
+    {
+      "id": 181853,
+      "level": 0,
+      "title": "뒤에서 5등까지",
+      "page": 7,
+      "position": 134
+    },
+    {
+      "id": 181852,
+      "level": 0,
+      "title": "뒤에서 5등 위로",
+      "page": 7,
+      "position": 135
+    },
+    {
+      "id": 181851,
+      "level": 0,
+      "title": "전국 대회 선발 고사",
+      "page": 7,
+      "position": 136
+    },
+    {
+      "id": 181850,
+      "level": 0,
+      "title": "정수 부분",
+      "page": 7,
+      "position": 137
+    },
+    {
+      "id": 181849,
+      "level": 0,
+      "title": "문자열 정수의 합",
+      "page": 7,
+      "position": 138
+    },
+    {
+      "id": 181848,
+      "level": 0,
+      "title": "문자열을 정수로 변환하기",
+      "page": 7,
+      "position": 139
+    },
+    {
+      "id": 181847,
+      "level": 0,
+      "title": "0 떼기",
+      "page": 7,
+      "position": 140
+    },
+    {
+      "id": 181846,
+      "level": 0,
+      "title": "두 수의 합",
+      "page": 8,
+      "position": 141
+    },
+    {
+      "id": 181845,
+      "level": 0,
+      "title": "문자열로 변환",
+      "page": 8,
+      "position": 142
+    },
+    {
+      "id": 181844,
+      "level": 0,
+      "title": "배열의 원소 삭제하기",
+      "page": 8,
+      "position": 143
+    },
+    {
+      "id": 181843,
+      "level": 0,
+      "title": "부분 문자열인지 확인하기",
+      "page": 8,
+      "position": 144
+    },
+    {
+      "id": 181842,
+      "level": 0,
+      "title": "부분 문자열",
+      "page": 8,
+      "position": 145
+    },
+    {
+      "id": 181841,
+      "level": 0,
+      "title": "꼬리 문자열",
+      "page": 8,
+      "position": 146
+    },
+    {
+      "id": 181840,
+      "level": 0,
+      "title": "정수 찾기",
+      "page": 8,
+      "position": 147
+    },
+    {
+      "id": 181839,
+      "level": 0,
+      "title": "주사위 게임 1",
+      "page": 8,
+      "position": 148
+    },
+    {
+      "id": 181838,
+      "level": 0,
+      "title": "날짜 비교하기",
+      "page": 8,
+      "position": 149
+    },
+    {
+      "id": 181837,
+      "level": 0,
+      "title": "커피 심부름",
+      "page": 8,
+      "position": 150
+    },
+    {
+      "id": 181836,
+      "level": 0,
+      "title": "그림 확대",
+      "page": 8,
+      "position": 151
+    },
+    {
+      "id": 181835,
+      "level": 0,
+      "title": "조건에 맞게 수열 변환하기 3",
+      "page": 8,
+      "position": 152
+    },
+    {
+      "id": 181834,
+      "level": 0,
+      "title": "l로 만들기",
+      "page": 8,
+      "position": 153
+    },
+    {
+      "id": 181833,
+      "level": 0,
+      "title": "특별한 이차원 배열 1",
+      "page": 8,
+      "position": 154
+    },
+    {
+      "id": 181832,
+      "level": 0,
+      "title": "정수를 나선형으로 배치하기",
+      "page": 8,
+      "position": 155
+    },
+    {
+      "id": 181831,
+      "level": 0,
+      "title": "특별한 이차원 배열 2",
+      "page": 8,
+      "position": 156
+    },
+    {
+      "id": 181830,
+      "level": 0,
+      "title": "정사각형으로 만들기",
+      "page": 8,
+      "position": 157
+    },
+    {
+      "id": 181829,
+      "level": 0,
+      "title": "이차원 배열 대각선 순회하기",
+      "page": 8,
+      "position": 158
+    },
+    {
+      "id": 178871,
+      "level": 1,
+      "title": "달리기 경주",
+      "page": 8,
+      "position": 159
+    },
+    {
+      "id": 176963,
+      "level": 1,
+      "title": "추억 점수",
+      "page": 8,
+      "position": 160
+    },
+    {
+      "id": 172928,
+      "level": 1,
+      "title": "공원 산책",
+      "page": 9,
+      "position": 161
+    },
+    {
+      "id": 164673,
+      "level": 1,
+      "title": "조건에 부합하는 중고거래 댓글 조회하기",
+      "page": 9,
+      "position": 162
+    },
+    {
+      "id": 161990,
+      "level": 1,
+      "title": "바탕화면 정리",
+      "page": 9,
+      "position": 163
+    },
+    {
+      "id": 161989,
+      "level": 1,
+      "title": "덧칠하기",
+      "page": 9,
+      "position": 164
+    },
+    {
+      "id": 160586,
+      "level": 1,
+      "title": "대충 만든 자판",
+      "page": 9,
+      "position": 165
+    },
+    {
+      "id": 159994,
+      "level": 1,
+      "title": "카드 뭉치",
+      "page": 9,
+      "position": 166
+    },
+    {
+      "id": 157343,
+      "level": 1,
+      "title": "특정 옵션이 포함된 자동차 리스트 구하기",
+      "page": 9,
+      "position": 167
+    },
+    {
+      "id": 155652,
+      "level": 1,
+      "title": "둘만의 암호",
+      "page": 9,
+      "position": 168
+    },
+    {
+      "id": 151138,
+      "level": 1,
+      "title": "자동차 대여 기록에서 장기/단기 대여 구분하기",
+      "page": 9,
+      "position": 169
+    },
+    {
+      "id": 151136,
+      "level": 1,
+      "title": "평균 일일 대여 요금 구하기",
+      "page": 9,
+      "position": 170
+    },
+    {
+      "id": 150370,
+      "level": 1,
+      "title": "개인정보 수집 유효기간",
+      "page": 9,
+      "position": 171
+    },
+    {
+      "id": 147355,
+      "level": 1,
+      "title": "크기가 작은 부분 문자열",
+      "page": 9,
+      "position": 172
+    },
+    {
+      "id": 144853,
+      "level": 1,
+      "title": "조건에 맞는 도서 리스트 출력하기",
+      "page": 9,
+      "position": 173
+    },
+    {
+      "id": 142086,
+      "level": 1,
+      "title": "가장 가까운 같은 글자",
+      "page": 9,
+      "position": 174
+    },
+    {
+      "id": 140108,
+      "level": 1,
+      "title": "문자열 나누기",
+      "page": 9,
+      "position": 175
+    },
+    {
+      "id": 138477,
+      "level": 1,
+      "title": "명예의 전당 (1)",
+      "page": 9,
+      "position": 176
+    },
+    {
+      "id": 136798,
+      "level": 1,
+      "title": "기사단원의 무기",
+      "page": 9,
+      "position": 177
+    },
+    {
+      "id": 135808,
+      "level": 1,
+      "title": "과일 장수",
+      "page": 9,
+      "position": 178
+    },
+    {
+      "id": 134240,
+      "level": 1,
+      "title": "푸드 파이트 대회",
+      "page": 9,
+      "position": 179
+    },
+    {
+      "id": 133502,
+      "level": 1,
+      "title": "햄버거 만들기",
+      "page": 9,
+      "position": 180
+    },
+    {
+      "id": 133499,
+      "level": 1,
+      "title": "옹알이 (2)",
+      "page": 10,
+      "position": 181
+    },
+    {
+      "id": 133025,
+      "level": 1,
+      "title": "과일로 만든 아이스크림 고르기",
+      "page": 10,
+      "position": 182
+    },
+    {
+      "id": 133024,
+      "level": 1,
+      "title": "인기있는 아이스크림",
+      "page": 10,
+      "position": 183
+    },
+    {
+      "id": 132267,
+      "level": 1,
+      "title": "콜라 문제",
+      "page": 10,
+      "position": 184
+    },
+    {
+      "id": 132203,
+      "level": 1,
+      "title": "흉부외과 또는 일반외과 의사 목록 출력하기",
+      "page": 10,
+      "position": 185
+    },
+    {
+      "id": 132201,
+      "level": 1,
+      "title": "12세 이하인 여자 환자 목록 출력하기",
+      "page": 10,
+      "position": 186
+    },
+    {
+      "id": 131705,
+      "level": 1,
+      "title": "삼총사",
+      "page": 10,
+      "position": 187
+    },
+    {
+      "id": 131697,
+      "level": 1,
+      "title": "가장 비싼 상품 구하기",
+      "page": 10,
+      "position": 188
+    },
+    {
+      "id": 131535,
+      "level": 1,
+      "title": "조건에 맞는 회원수 구하기",
+      "page": 10,
+      "position": 189
+    },
+    {
+      "id": 131528,
+      "level": 1,
+      "title": "나이 정보가 없는 회원 수 구하기",
+      "page": 10,
+      "position": 190
+    },
+    {
+      "id": 131128,
+      "level": 1,
+      "title": "숫자 짝꿍",
+      "page": 10,
+      "position": 191
+    },
+    {
+      "id": 131114,
+      "level": 1,
+      "title": "경기도에 위치한 식품창고 목록 출력하기",
+      "page": 10,
+      "position": 192
+    },
+    {
+      "id": 131112,
+      "level": 1,
+      "title": "강원도에 위치한 생산공장 목록 출력하기",
+      "page": 10,
+      "position": 193
+    },
+    {
+      "id": 120956,
+      "level": 0,
+      "title": "옹알이 (1)",
+      "page": 10,
+      "position": 194
+    },
+    {
+      "id": 120924,
+      "level": 0,
+      "title": "다음에 올 숫자",
+      "page": 10,
+      "position": 195
+    },
+    {
+      "id": 120923,
+      "level": 0,
+      "title": "연속된 수의 합",
+      "page": 10,
+      "position": 196
+    },
+    {
+      "id": 120922,
+      "level": 0,
+      "title": "종이 자르기",
+      "page": 10,
+      "position": 197
+    },
+    {
+      "id": 120921,
+      "level": 0,
+      "title": "문자열 밀기",
+      "page": 10,
+      "position": 198
+    },
+    {
+      "id": 120913,
+      "level": 0,
+      "title": "잘라서 배열로 저장하기",
+      "page": 10,
+      "position": 199
+    },
+    {
+      "id": 120912,
+      "level": 0,
+      "title": "7의 개수",
+      "page": 10,
+      "position": 200
+    },
+    {
+      "id": 120911,
+      "level": 0,
+      "title": "문자열 정렬하기 (2)",
+      "page": 11,
+      "position": 201
+    },
+    {
+      "id": 120910,
+      "level": 0,
+      "title": "세균 증식",
+      "page": 11,
+      "position": 202
+    },
+    {
+      "id": 120909,
+      "level": 0,
+      "title": "제곱수 판별하기",
+      "page": 11,
+      "position": 203
+    },
+    {
+      "id": 120908,
+      "level": 0,
+      "title": "문자열안에 문자열",
+      "page": 11,
+      "position": 204
+    },
+    {
+      "id": 120907,
+      "level": 0,
+      "title": "OX퀴즈",
+      "page": 11,
+      "position": 205
+    },
+    {
+      "id": 120906,
+      "level": 0,
+      "title": "자릿수 더하기",
+      "page": 11,
+      "position": 206
+    },
+    {
+      "id": 120905,
+      "level": 0,
+      "title": "n의 배수 고르기",
+      "page": 11,
+      "position": 207
+    },
+    {
+      "id": 120904,
+      "level": 0,
+      "title": "숫자 찾기",
+      "page": 11,
+      "position": 208
+    },
+    {
+      "id": 120903,
+      "level": 0,
+      "title": "배열의 유사도",
+      "page": 11,
+      "position": 209
+    },
+    {
+      "id": 120902,
+      "level": 0,
+      "title": "문자열 계산하기",
+      "page": 11,
+      "position": 210
+    },
+    {
+      "id": 120899,
+      "level": 0,
+      "title": "가장 큰 수 찾기",
+      "page": 11,
+      "position": 211
+    },
+    {
+      "id": 120898,
+      "level": 0,
+      "title": "편지",
+      "page": 11,
+      "position": 212
+    },
+    {
+      "id": 120897,
+      "level": 0,
+      "title": "약수 구하기",
+      "page": 11,
+      "position": 213
+    },
+    {
+      "id": 120896,
+      "level": 0,
+      "title": "한 번만 등장한 문자",
+      "page": 11,
+      "position": 214
+    },
+    {
+      "id": 120895,
+      "level": 0,
+      "title": "인덱스 바꾸기",
+      "page": 11,
+      "position": 215
+    },
+    {
+      "id": 120894,
+      "level": 0,
+      "title": "영어가 싫어요",
+      "page": 11,
+      "position": 216
+    },
+    {
+      "id": 120893,
+      "level": 0,
+      "title": "대문자와 소문자",
+      "page": 11,
+      "position": 217
+    },
+    {
+      "id": 120892,
+      "level": 0,
+      "title": "암호 해독",
+      "page": 11,
+      "position": 218
+    },
+    {
+      "id": 120891,
+      "level": 0,
+      "title": "369게임",
+      "page": 11,
+      "position": 219
+    },
+    {
+      "id": 120890,
+      "level": 0,
+      "title": "가까운 수",
+      "page": 11,
+      "position": 220
+    },
+    {
+      "id": 120889,
+      "level": 0,
+      "title": "삼각형의 완성조건 (1)",
+      "page": 12,
+      "position": 221
+    },
+    {
+      "id": 120888,
+      "level": 0,
+      "title": "중복된 문자 제거",
+      "page": 12,
+      "position": 222
+    },
+    {
+      "id": 120887,
+      "level": 0,
+      "title": "k의 개수",
+      "page": 12,
+      "position": 223
+    },
+    {
+      "id": 120886,
+      "level": 0,
+      "title": "A로 B 만들기",
+      "page": 12,
+      "position": 224
+    },
+    {
+      "id": 120885,
+      "level": 0,
+      "title": "이진수 더하기",
+      "page": 12,
+      "position": 225
+    },
+    {
+      "id": 120884,
+      "level": 0,
+      "title": "치킨 쿠폰",
+      "page": 12,
+      "position": 226
+    },
+    {
+      "id": 120883,
+      "level": 0,
+      "title": "로그인 성공?",
+      "page": 12,
+      "position": 227
+    },
+    {
+      "id": 120882,
+      "level": 0,
+      "title": "등수 매기기",
+      "page": 12,
+      "position": 228
+    },
+    {
+      "id": 120880,
+      "level": 0,
+      "title": "특이한 정렬",
+      "page": 12,
+      "position": 229
+    },
+    {
+      "id": 120878,
+      "level": 0,
+      "title": "유한소수 판별하기",
+      "page": 12,
+      "position": 230
+    },
+    {
+      "id": 120876,
+      "level": 0,
+      "title": "겹치는 선분의 길이",
+      "page": 12,
+      "position": 231
+    },
+    {
+      "id": 120875,
+      "level": 0,
+      "title": "평행",
+      "page": 12,
+      "position": 232
+    },
+    {
+      "id": 120871,
+      "level": 0,
+      "title": "저주의 숫자 3",
+      "page": 12,
+      "position": 233
+    },
+    {
+      "id": 120869,
+      "level": 0,
+      "title": "외계어 사전",
+      "page": 12,
+      "position": 234
+    },
+    {
+      "id": 120868,
+      "level": 0,
+      "title": "삼각형의 완성조건 (2)",
+      "page": 12,
+      "position": 235
+    },
+    {
+      "id": 120866,
+      "level": 0,
+      "title": "안전지대",
+      "page": 12,
+      "position": 236
+    },
+    {
+      "id": 120864,
+      "level": 0,
+      "title": "숨어있는 숫자의 덧셈 (2)",
+      "page": 12,
+      "position": 237
+    },
+    {
+      "id": 120863,
+      "level": 0,
+      "title": "다항식 더하기",
+      "page": 12,
+      "position": 238
+    },
+    {
+      "id": 120862,
+      "level": 0,
+      "title": "최댓값 만들기 (2)",
+      "page": 12,
+      "position": 239
+    },
+    {
+      "id": 120861,
+      "level": 0,
+      "title": "캐릭터의 좌표",
+      "page": 12,
+      "position": 240
+    },
+    {
+      "id": 120860,
+      "level": 0,
+      "title": "직사각형 넓이 구하기",
+      "page": 13,
+      "position": 241
+    },
+    {
+      "id": 120854,
+      "level": 0,
+      "title": "배열 원소의 길이",
+      "page": 13,
+      "position": 242
+    },
+    {
+      "id": 120853,
+      "level": 0,
+      "title": "컨트롤 제트",
+      "page": 13,
+      "position": 243
+    },
+    {
+      "id": 120852,
+      "level": 0,
+      "title": "소인수분해",
+      "page": 13,
+      "position": 244
+    },
+    {
+      "id": 120851,
+      "level": 0,
+      "title": "숨어있는 숫자의 덧셈 (1)",
+      "page": 13,
+      "position": 245
+    },
+    {
+      "id": 120850,
+      "level": 0,
+      "title": "문자열 정렬하기 (1)",
+      "page": 13,
+      "position": 246
+    },
+    {
+      "id": 120849,
+      "level": 0,
+      "title": "모음 제거",
+      "page": 13,
+      "position": 247
+    },
+    {
+      "id": 120848,
+      "level": 0,
+      "title": "팩토리얼",
+      "page": 13,
+      "position": 248
+    },
+    {
+      "id": 120847,
+      "level": 0,
+      "title": "최댓값 만들기(1)",
+      "page": 13,
+      "position": 249
+    },
+    {
+      "id": 120846,
+      "level": 0,
+      "title": "합성수 찾기",
+      "page": 13,
+      "position": 250
+    },
+    {
+      "id": 120845,
+      "level": 0,
+      "title": "주사위의 개수",
+      "page": 13,
+      "position": 251
+    },
+    {
+      "id": 120844,
+      "level": 0,
+      "title": "배열 회전시키기",
+      "page": 13,
+      "position": 252
+    },
+    {
+      "id": 120843,
+      "level": 0,
+      "title": "공 던지기",
+      "page": 13,
+      "position": 253
+    },
+    {
+      "id": 120842,
+      "level": 0,
+      "title": "2차원으로 만들기",
+      "page": 13,
+      "position": 254
+    },
+    {
+      "id": 120841,
+      "level": 0,
+      "title": "점의 위치 구하기",
+      "page": 13,
+      "position": 255
+    },
+    {
+      "id": 120840,
+      "level": 0,
+      "title": "구슬을 나누는 경우의 수",
+      "page": 13,
+      "position": 256
+    },
+    {
+      "id": 120839,
+      "level": 0,
+      "title": "가위 바위 보",
+      "page": 13,
+      "position": 257
+    },
+    {
+      "id": 120838,
+      "level": 0,
+      "title": "모스부호 (1)",
+      "page": 13,
+      "position": 258
+    },
+    {
+      "id": 120837,
+      "level": 0,
+      "title": "개미 군단",
+      "page": 13,
+      "position": 259
+    },
+    {
+      "id": 120836,
+      "level": 0,
+      "title": "순서쌍의 개수",
+      "page": 13,
+      "position": 260
+    },
+    {
+      "id": 120835,
+      "level": 0,
+      "title": "진료순서 정하기",
+      "page": 14,
+      "position": 261
+    },
+    {
+      "id": 120834,
+      "level": 0,
+      "title": "외계행성의 나이",
+      "page": 14,
+      "position": 262
+    },
+    {
+      "id": 120833,
+      "level": 0,
+      "title": "배열 자르기",
+      "page": 14,
+      "position": 263
+    },
+    {
+      "id": 120831,
+      "level": 0,
+      "title": "짝수의 합",
+      "page": 14,
+      "position": 264
+    },
+    {
+      "id": 120830,
+      "level": 0,
+      "title": "양꼬치",
+      "page": 14,
+      "position": 265
+    },
+    {
+      "id": 120829,
+      "level": 0,
+      "title": "각도기",
+      "page": 14,
+      "position": 266
+    },
+    {
+      "id": 120826,
+      "level": 0,
+      "title": "특정 문자 제거하기",
+      "page": 14,
+      "position": 267
+    },
+    {
+      "id": 120825,
+      "level": 0,
+      "title": "문자 반복 출력하기",
+      "page": 14,
+      "position": 268
+    },
+    {
+      "id": 120824,
+      "level": 0,
+      "title": "짝수 홀수 개수",
+      "page": 14,
+      "position": 269
+    },
+    {
+      "id": 120823,
+      "level": 0,
+      "title": "직각삼각형 출력하기",
+      "page": 14,
+      "position": 270
+    },
+    {
+      "id": 120822,
+      "level": 0,
+      "title": "뒤집힌 문자열",
+      "page": 14,
+      "position": 271
+    },
+    {
+      "id": 120821,
+      "level": 0,
+      "title": "배열 뒤집기",
+      "page": 14,
+      "position": 272
+    },
+    {
+      "id": 120820,
+      "level": 0,
+      "title": "나이 출력",
+      "page": 14,
+      "position": 273
+    },
+    {
+      "id": 120819,
+      "level": 0,
+      "title": "아이스 아메리카노",
+      "page": 14,
+      "position": 274
+    },
+    {
+      "id": 120818,
+      "level": 0,
+      "title": "옷가게 할인 받기",
+      "page": 14,
+      "position": 275
+    },
+    {
+      "id": 120817,
+      "level": 0,
+      "title": "배열의 평균값",
+      "page": 14,
+      "position": 276
+    },
+    {
+      "id": 120816,
+      "level": 0,
+      "title": "피자 나눠 먹기 (3)",
+      "page": 14,
+      "position": 277
+    },
+    {
+      "id": 120815,
+      "level": 0,
+      "title": "피자 나눠 먹기 (2)",
+      "page": 14,
+      "position": 278
+    },
+    {
+      "id": 120814,
+      "level": 0,
+      "title": "피자 나눠 먹기 (1)",
+      "page": 14,
+      "position": 279
+    },
+    {
+      "id": 120813,
+      "level": 0,
+      "title": "짝수는 싫어요",
+      "page": 14,
+      "position": 280
+    },
+    {
+      "id": 120812,
+      "level": 0,
+      "title": "최빈값 구하기",
+      "page": 15,
+      "position": 281
+    },
+    {
+      "id": 120811,
+      "level": 0,
+      "title": "중앙값 구하기",
+      "page": 15,
+      "position": 282
+    },
+    {
+      "id": 120810,
+      "level": 0,
+      "title": "나머지 구하기",
+      "page": 15,
+      "position": 283
+    },
+    {
+      "id": 120809,
+      "level": 0,
+      "title": "배열 두 배 만들기",
+      "page": 15,
+      "position": 284
+    },
+    {
+      "id": 120808,
+      "level": 0,
+      "title": "분수의 덧셈",
+      "page": 15,
+      "position": 285
+    },
+    {
+      "id": 120807,
+      "level": 0,
+      "title": "숫자 비교하기",
+      "page": 15,
+      "position": 286
+    },
+    {
+      "id": 120806,
+      "level": 0,
+      "title": "두 수의 나눗셈",
+      "page": 15,
+      "position": 287
+    },
+    {
+      "id": 120805,
+      "level": 0,
+      "title": "몫 구하기",
+      "page": 15,
+      "position": 288
+    },
+    {
+      "id": 120804,
+      "level": 0,
+      "title": "두 수의 곱 구하기",
+      "page": 15,
+      "position": 289
+    },
+    {
+      "id": 120803,
+      "level": 0,
+      "title": "두 수의 차 구하기",
+      "page": 15,
+      "position": 290
+    },
+    {
+      "id": 120802,
+      "level": 0,
+      "title": "두 수의 합 구하기",
+      "page": 15,
+      "position": 291
+    },
+    {
+      "id": 120585,
+      "level": 0,
+      "title": "머쓱이보다 키 큰 사람",
+      "page": 15,
+      "position": 292
+    },
+    {
+      "id": 120583,
+      "level": 0,
+      "title": "중복된 숫자 개수",
+      "page": 15,
+      "position": 293
+    },
+    {
+      "id": 118666,
+      "level": 1,
+      "title": "성격 유형 검사하기",
+      "page": 15,
+      "position": 294
+    },
+    {
+      "id": 92334,
+      "level": 1,
+      "title": "신고 결과 받기",
+      "page": 15,
+      "position": 295
+    },
+    {
+      "id": 87389,
+      "level": 1,
+      "title": "나머지가 1이 되는 수 찾기",
+      "page": 15,
+      "position": 296
+    },
+    {
+      "id": 86491,
+      "level": 1,
+      "title": "최소직사각형",
+      "page": 15,
+      "position": 297
+    },
+    {
+      "id": 86051,
+      "level": 1,
+      "title": "없는 숫자 더하기",
+      "page": 15,
+      "position": 298
+    },
+    {
+      "id": 82612,
+      "level": 1,
+      "title": "부족한 금액 계산하기",
+      "page": 15,
+      "position": 299
+    },
+    {
+      "id": 81301,
+      "level": 1,
+      "title": "숫자 문자열과 영단어",
+      "page": 15,
+      "position": 300
+    },
+    {
+      "id": 77884,
+      "level": 1,
+      "title": "약수의 개수와 덧셈",
+      "page": 16,
+      "position": 301
+    },
+    {
+      "id": 77484,
+      "level": 1,
+      "title": "로또의 최고 순위와 최저 순위",
+      "page": 16,
+      "position": 302
+    },
+    {
+      "id": 76501,
+      "level": 1,
+      "title": "음양 더하기",
+      "page": 16,
+      "position": 303
+    },
+    {
+      "id": 72410,
+      "level": 1,
+      "title": "신규 아이디 추천",
+      "page": 16,
+      "position": 304
+    },
+    {
+      "id": 70128,
+      "level": 1,
+      "title": "내적",
+      "page": 16,
+      "position": 305
+    },
+    {
+      "id": 68935,
+      "level": 1,
+      "title": "3진법 뒤집기",
+      "page": 16,
+      "position": 306
+    },
+    {
+      "id": 68644,
+      "level": 1,
+      "title": "두 개 뽑아서 더하기",
+      "page": 16,
+      "position": 307
+    },
+    {
+      "id": 67256,
+      "level": 1,
+      "title": "키패드 누르기",
+      "page": 16,
+      "position": 308
+    },
+    {
+      "id": 64061,
+      "level": 1,
+      "title": "크레인 인형뽑기 게임",
+      "page": 16,
+      "position": 309
+    },
+    {
+      "id": 59415,
+      "level": 1,
+      "title": "최댓값 구하기",
+      "page": 16,
+      "position": 310
+    },
+    {
+      "id": 59407,
+      "level": 1,
+      "title": "이름이 있는 동물의 아이디",
+      "page": 16,
+      "position": 311
+    },
+    {
+      "id": 59405,
+      "level": 1,
+      "title": "상위 n개 레코드",
+      "page": 16,
+      "position": 312
+    },
+    {
+      "id": 59404,
+      "level": 1,
+      "title": "여러 기준으로 정렬하기",
+      "page": 16,
+      "position": 313
+    },
+    {
+      "id": 59403,
+      "level": 1,
+      "title": "동물의 아이디와 이름",
+      "page": 16,
+      "position": 314
+    },
+    {
+      "id": 59039,
+      "level": 1,
+      "title": "이름이 없는 동물의 아이디",
+      "page": 16,
+      "position": 315
+    },
+    {
+      "id": 59037,
+      "level": 1,
+      "title": "어린 동물 찾기",
+      "page": 16,
+      "position": 316
+    },
+    {
+      "id": 59036,
+      "level": 1,
+      "title": "아픈 동물 찾기",
+      "page": 16,
+      "position": 317
+    },
+    {
+      "id": 59035,
+      "level": 1,
+      "title": "역순 정렬하기",
+      "page": 16,
+      "position": 318
+    },
+    {
+      "id": 59034,
+      "level": 1,
+      "title": "모든 레코드 조회하기",
+      "page": 16,
+      "position": 319
+    },
+    {
+      "id": 42889,
+      "level": 1,
+      "title": "실패율",
+      "page": 16,
+      "position": 320
+    },
+    {
+      "id": 42862,
+      "level": 1,
+      "title": "체육복",
+      "page": 17,
+      "position": 321
+    },
+    {
+      "id": 42840,
+      "level": 1,
+      "title": "모의고사",
+      "page": 17,
+      "position": 322
+    },
+    {
+      "id": 42748,
+      "level": 1,
+      "title": "K번째수",
+      "page": 17,
+      "position": 323
+    },
+    {
+      "id": 42576,
+      "level": 1,
+      "title": "완주하지 못한 선수",
+      "page": 17,
+      "position": 324
+    },
+    {
+      "id": 17682,
+      "level": 1,
+      "title": "[1차] 다트 게임",
+      "page": 17,
+      "position": 325
+    },
+    {
+      "id": 17681,
+      "level": 1,
+      "title": "[1차] 비밀지도",
+      "page": 17,
+      "position": 326
+    },
+    {
+      "id": 12982,
+      "level": 1,
+      "title": "예산",
+      "page": 17,
+      "position": 327
+    },
+    {
+      "id": 12977,
+      "level": 1,
+      "title": "소수 만들기",
+      "page": 17,
+      "position": 328
+    },
+    {
+      "id": 12969,
+      "level": 1,
+      "title": "직사각형 별찍기",
+      "page": 17,
+      "position": 329
+    },
+    {
+      "id": 12954,
+      "level": 1,
+      "title": "x만큼 간격이 있는 n개의 숫자",
+      "page": 17,
+      "position": 330
+    },
+    {
+      "id": 12950,
+      "level": 1,
+      "title": "행렬의 덧셈",
+      "page": 17,
+      "position": 331
+    },
+    {
+      "id": 12948,
+      "level": 1,
+      "title": "핸드폰 번호 가리기",
+      "page": 17,
+      "position": 332
+    },
+    {
+      "id": 12947,
+      "level": 1,
+      "title": "하샤드 수",
+      "page": 17,
+      "position": 333
+    },
+    {
+      "id": 12944,
+      "level": 1,
+      "title": "평균 구하기",
+      "page": 17,
+      "position": 334
+    },
+    {
+      "id": 12943,
+      "level": 1,
+      "title": "콜라츠 추측",
+      "page": 17,
+      "position": 335
+    },
+    {
+      "id": 12940,
+      "level": 1,
+      "title": "최대공약수와 최소공배수",
+      "page": 17,
+      "position": 336
+    },
+    {
+      "id": 12937,
+      "level": 1,
+      "title": "짝수와 홀수",
+      "page": 17,
+      "position": 337
+    },
+    {
+      "id": 12935,
+      "level": 1,
+      "title": "제일 작은 수 제거하기",
+      "page": 17,
+      "position": 338
+    },
+    {
+      "id": 12934,
+      "level": 1,
+      "title": "정수 제곱근 판별",
+      "page": 17,
+      "position": 339
+    },
+    {
+      "id": 12933,
+      "level": 1,
+      "title": "정수 내림차순으로 배치하기",
+      "page": 17,
+      "position": 340
+    },
+    {
+      "id": 12932,
+      "level": 1,
+      "title": "자연수 뒤집어 배열로 만들기",
+      "page": 18,
+      "position": 341
+    },
+    {
+      "id": 12931,
+      "level": 1,
+      "title": "자릿수 더하기",
+      "page": 18,
+      "position": 342
+    },
+    {
+      "id": 12930,
+      "level": 1,
+      "title": "이상한 문자 만들기",
+      "page": 18,
+      "position": 343
+    },
+    {
+      "id": 12928,
+      "level": 1,
+      "title": "약수의 합",
+      "page": 18,
+      "position": 344
+    },
+    {
+      "id": 12926,
+      "level": 1,
+      "title": "시저 암호",
+      "page": 18,
+      "position": 345
+    },
+    {
+      "id": 12925,
+      "level": 1,
+      "title": "문자열을 정수로 바꾸기",
+      "page": 18,
+      "position": 346
+    },
+    {
+      "id": 12922,
+      "level": 1,
+      "title": "수박수박수박수박수박수?",
+      "page": 18,
+      "position": 347
+    },
+    {
+      "id": 12921,
+      "level": 1,
+      "title": "소수 찾기",
+      "page": 18,
+      "position": 348
+    },
+    {
+      "id": 12919,
+      "level": 1,
+      "title": "서울에서 김서방 찾기",
+      "page": 18,
+      "position": 349
+    },
+    {
+      "id": 12918,
+      "level": 1,
+      "title": "문자열 다루기 기본",
+      "page": 18,
+      "position": 350
+    },
+    {
+      "id": 12917,
+      "level": 1,
+      "title": "문자열 내림차순으로 배치하기",
+      "page": 18,
+      "position": 351
+    },
+    {
+      "id": 12916,
+      "level": 1,
+      "title": "문자열 내 p와 y의 개수",
+      "page": 18,
+      "position": 352
+    },
+    {
+      "id": 12915,
+      "level": 1,
+      "title": "문자열 내 마음대로 정렬하기",
+      "page": 18,
+      "position": 353
+    },
+    {
+      "id": 12912,
+      "level": 1,
+      "title": "두 정수 사이의 합",
+      "page": 18,
+      "position": 354
+    },
+    {
+      "id": 12910,
+      "level": 1,
+      "title": "나누어 떨어지는 숫자 배열",
+      "page": 18,
+      "position": 355
+    },
+    {
+      "id": 12906,
+      "level": 1,
+      "title": "같은 숫자는 싫어",
+      "page": 18,
+      "position": 356
+    },
+    {
+      "id": 12903,
+      "level": 1,
+      "title": "가운데 글자 가져오기",
+      "page": 18,
+      "position": 357
+    },
+    {
+      "id": 12901,
+      "level": 1,
+      "title": "2016년",
+      "page": 18,
+      "position": 358
+    },
+    {
+      "id": 1845,
+      "level": 1,
+      "title": "폰켓몬",
+      "page": 18,
+      "position": 359
+    }
+  ]
+}

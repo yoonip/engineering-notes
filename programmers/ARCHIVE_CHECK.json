@@ -1,18 +1,21 @@
 {
   "checked_on": "2026-10-19",
-  "accepted": 586,
+  "accepted": 672,
   "full_study_notes": 309,
-  "commented_submissions": 277,
+  "commented_submissions": 363,
   "by_level": {
-    "0": 236,
-    "1": 37,
+    "0": 240,
+    "1": 119,
     "2": 155,
     "3": 109,
     "4": 45,
     "5": 4
   },
+  "historical_submissions": 86,
+  "level0_1_site_count": 359,
+  "level0_1_missing_ids": [],
   "languages": {
-    "Python3": 468,
+    "Python3": 554,
     "MySQL": 108,
     "C++": 10
   },
@@ -4082,6 +4085,694 @@
     },
     {
       "id": 49190,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 468371,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 468370,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 389478,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 388351,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 340213,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 340207,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 340206,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 340205,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 340204,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 340199,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 340198,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 258712,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 250137,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 250125,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 250121,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 178871,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 176963,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 172928,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 161990,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 161989,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 160586,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 159994,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 155652,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 150370,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 147355,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 142086,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 140108,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 138477,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 136798,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 135808,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 134240,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 133502,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 133499,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 132267,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 131705,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 131128,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 118666,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 92334,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 87389,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 86491,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 86051,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 82612,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 81301,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 77884,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 77484,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 76501,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 72410,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 70128,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 68935,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 68644,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 67256,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 64061,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 42889,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 42862,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 42840,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 42748,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 42576,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 17682,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 17681,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12982,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12977,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12969,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12954,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12950,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12948,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12947,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12944,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12943,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12940,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12937,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12935,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12934,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12933,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12932,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12931,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12930,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12928,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12925,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12921,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12919,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12916,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12912,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12910,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12906,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 12901,
+      "documentation": "commented_submission",
+      "source_hash_match": true,
+      "exact_commented_copy": true,
+      "nonempty_line_notes": true,
+      "saved_grade": 100
+    },
+    {
+      "id": 1845,
       "documentation": "commented_submission",
       "source_hash_match": true,
       "exact_commented_copy": true,

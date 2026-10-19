@@ -1,0 +1,28 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/133499",
+  "cases": [
+    {
+      "arguments": [
+        [
+          "aya",
+          "yee",
+          "u",
+          "maa"
+        ]
+      ],
+      "expected": 1
+    },
+    {
+      "arguments": [
+        [
+          "ayaye",
+          "uuu",
+          "yeye",
+          "yemawoo",
+          "ayaayaa"
+        ]
+      ],
+      "expected": 2
+    }
+  ]
+}

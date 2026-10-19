@@ -1,0 +1,12 @@
+def solution(nums):
+    answer = min(len(set(nums)), len(nums) // 2)
+    return answer
+
+# 전체 코드 줄별 설명
+# def solution(nums):  # def는 함수 정의, () 안은 입력 매개변수, : 뒤 들여쓰기는 함수 본문. nums: 폰켓몬의 종류 번호가 들어 있는 리스트
+#     answer = min(len(set(nums)), len(nums) // 2)  # len은 길이. min은 최솟값. set은 중복 없는 집합. //는 내림한 정수 몫. =는 값 저장. 서로 다른 종류 수와 선택 가능한 마릿수 중 작은 값을 저장
+#     return answer  # return은 결과를 돌려주고 함수 종료. 선택할 수 있는 폰켓몬 종류의 최댓값 반환
+
+# 풀이 요약
+# 고를 수 있는 마릿수는 전체의 절반이고, 서로 다른 종류 수보다 많은 종류를 고를 수는 없다. 종류가 충분하면 고를 수 있는 수만큼, 부족하면 종류 수만큼 고르므로 두 값의 최솟값이 답이다.
+# 입력 N개, 종류 U개: 평균 시간 O(N), 공간 O(U).

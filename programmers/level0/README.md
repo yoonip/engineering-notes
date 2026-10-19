@@ -1,17 +1,17 @@
 # Level 0 — 풀이와 코드 / Solutions and code
 
-저장된 제출 코드 236개를 모았다. 각 문제에 짧은 풀이와 코드 전체의 줄별 설명이 있다. 사이트 채점은 모두 100점이다.
+언어 필터 없이 전체 목록을 대조한 240문제를 모았다. 모든 문제에 코드와 줄별 문법 설명이 있다. 예전에 완료한 제출본도 포함하며, 당시 100점 원본과 이번 주석본을 구분했다.
 
-236 saved submissions, each with a short method note and a fully annotated copy of the code. All have a saved 100/100 website result. Syntax notes are in Korean.
+240 problems, matched against the complete unfiltered list for this level. Every entry has code and Korean line-by-line syntax notes. Older accepted submissions are included, with their original source and the newly annotated copy distinguished.
 
-이 목록은 레벨 0·1에서 미완료로 남아 있던 문제를 풀며 보관한 자료다. 계정에 예전부터 완료돼 있던 문제의 제출 코드는 포함하지 않는다.
-
-This list covers the previously unfinished problems solved during the recorded session; it does not include older submissions already completed on the account.
-
-[전체 목록 / All levels](../README.md)
+[전체 목록 / All levels](../README.md) · [레벨 0·1 사이트 목록 / Site catalog](../level0_1_catalog.json) · [보관 범위 / Coverage](../COVERAGE.md)
 
 | ID | 문제 / Problem | 언어 / Language | 코드 / Source |
 |---|---|---|---|
+| 340207 | [&#91;PCCE 기출문제&#93; 1번 / 문자 출력](extra_340207_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%AC%B8%EC%9E%90_%EC%B6%9C%EB%A0%A5/README.md) | Python3 | [코드](extra_340207_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%AC%B8%EC%9E%90_%EC%B6%9C%EB%A0%A5/solution.py) |
+| 340206 | [&#91;PCCE 기출문제&#93; 2번 / 각도 합치기](extra_340206_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_2%EB%B2%88___%EA%B0%81%EB%8F%84_%ED%95%A9%EC%B9%98%EA%B8%B0/README.md) | Python3 | [코드](extra_340206_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_2%EB%B2%88___%EA%B0%81%EB%8F%84_%ED%95%A9%EC%B9%98%EA%B8%B0/solution.py) |
+| 340205 | [&#91;PCCE 기출문제&#93; 3번 / 수 나누기](extra_340205_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_3%EB%B2%88___%EC%88%98_%EB%82%98%EB%88%84%EA%B8%B0/README.md) | Python3 | [코드](extra_340205_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_3%EB%B2%88___%EC%88%98_%EB%82%98%EB%88%84%EA%B8%B0/solution.py) |
+| 340204 | [&#91;PCCE 기출문제&#93; 4번 / 병과분류](extra_340204_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EB%B3%91%EA%B3%BC%EB%B6%84%EB%A5%98/README.md) | Python3 | [코드](extra_340204_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EB%B3%91%EA%B3%BC%EB%B6%84%EB%A5%98/solution.py) |
 | 340203 | [&#91;PCCE 기출문제&#93; 5번 / 심폐소생술](extra_340203_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_5%EB%B2%88___%EC%8B%AC%ED%8F%90%EC%86%8C%EC%83%9D%EC%88%A0/README.md) | Python3 | [코드](extra_340203_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_5%EB%B2%88___%EC%8B%AC%ED%8F%90%EC%86%8C%EC%83%9D%EC%88%A0/solution.py) |
 | 340202 | [&#91;PCCE 기출문제&#93; 6번 / 물 부족](extra_340202_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_6%EB%B2%88___%EB%AC%BC_%EB%B6%80%EC%A1%B1/README.md) | Python3 | [코드](extra_340202_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_6%EB%B2%88___%EB%AC%BC_%EB%B6%80%EC%A1%B1/solution.py) |
 | 340201 | [&#91;PCCE 기출문제&#93; 7번 / 버스](extra_340201_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_7%EB%B2%88___%EB%B2%84%EC%8A%A4/README.md) | Python3 | [코드](extra_340201_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_7%EB%B2%88___%EB%B2%84%EC%8A%A4/solution.py) |

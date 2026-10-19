@@ -1,0 +1,62 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/250125",
+  "cases": [
+    {
+      "arguments": [
+        [
+          [
+            "blue",
+            "red",
+            "orange",
+            "red"
+          ],
+          [
+            "red",
+            "red",
+            "blue",
+            "orange"
+          ],
+          [
+            "blue",
+            "orange",
+            "red",
+            "red"
+          ],
+          [
+            "orange",
+            "orange",
+            "red",
+            "blue"
+          ]
+        ],
+        1,
+        1
+      ],
+      "expected": 2
+    },
+    {
+      "arguments": [
+        [
+          [
+            "yellow",
+            "green",
+            "blue"
+          ],
+          [
+            "blue",
+            "green",
+            "yellow"
+          ],
+          [
+            "yellow",
+            "blue",
+            "blue"
+          ]
+        ],
+        0,
+        1
+      ],
+      "expected": 1
+    }
+  ]
+}

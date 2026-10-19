@@ -1,0 +1,47 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/17682",
+  "cases": [
+    {
+      "arguments": [
+        "1S2D*3T"
+      ],
+      "expected": 37
+    },
+    {
+      "arguments": [
+        "1D2S#10S"
+      ],
+      "expected": 9
+    },
+    {
+      "arguments": [
+        "1D2S0T"
+      ],
+      "expected": 3
+    },
+    {
+      "arguments": [
+        "1S*2T*3S"
+      ],
+      "expected": 23
+    },
+    {
+      "arguments": [
+        "1D#2S*3S"
+      ],
+      "expected": 5
+    },
+    {
+      "arguments": [
+        "1T2D3D#"
+      ],
+      "expected": -4
+    },
+    {
+      "arguments": [
+        "1D2S3T*"
+      ],
+      "expected": 59
+    }
+  ]
+}

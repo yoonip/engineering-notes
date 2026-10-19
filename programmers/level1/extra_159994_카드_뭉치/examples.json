@@ -1,0 +1,47 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/159994",
+  "cases": [
+    {
+      "arguments": [
+        [
+          "i",
+          "drink",
+          "water"
+        ],
+        [
+          "want",
+          "to"
+        ],
+        [
+          "i",
+          "want",
+          "to",
+          "drink",
+          "water"
+        ]
+      ],
+      "expected": "Yes"
+    },
+    {
+      "arguments": [
+        [
+          "i",
+          "water",
+          "drink"
+        ],
+        [
+          "want",
+          "to"
+        ],
+        [
+          "i",
+          "want",
+          "to",
+          "drink",
+          "water"
+        ]
+      ],
+      "expected": "No"
+    }
+  ]
+}

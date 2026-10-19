@@ -1,0 +1,22 @@
+def solution(s):
+    words = [
+        "zero", "one", "two", "three", "four",
+        "five", "six", "seven", "eight", "nine"
+    ]
+    for number, word in enumerate(words):
+        s = s.replace(word, str(number))
+    return int(s)
+
+# 전체 코드 줄별 설명
+# def solution(s):  # def는 함수 정의, () 안은 입력 매개변수, : 뒤 들여쓰기는 함수 본문. def로 함수를 정의합니다. s는 입력 문자열을 받습니다.
+#     words = [  # []는 리스트. =는 값 저장. 대괄호로 리스트를 만듭니다. 숫자 순서대로 영단어를 저장합니다.
+#         "zero", "one", "two", "three", "four",  # 인덱스는 0부터입니다. words[0]은 "zero"입니다.
+#         "five", "six", "seven", "eight", "nine"  # 쉼표로 원소를 구분합니다. 따옴표 안의 값은 문자열입니다.
+#     ]  # 리스트 정의의 닫는 대괄호. 리스트의 끝입니다.
+#     for number, word in enumerate(words):  # for·in은 원소를 차례로 꺼내는 반복문. enumerate는 인덱스·값을 함께 제공. ()로 묶은 여러 값은 변경 불가 튜플. enumerate는 인덱스와 원소를 함께 제공합니다. 예: number=1, word="one".
+#         s = s.replace(word, str(number))  # str은 문자열 변환. replace는 문자열 치환. =는 값 저장. str()로 숫자를 문자열로 바꿉니다. replace(기존, 새값)는 일치하는 부분을 모두 교체합니다.
+#     return int(s)  # return은 결과를 돌려주고 함수 종료. int는 정수 변환. int()로 숫자 문자열을 정수로 바꾸어 반환하고 함수를 종료합니다.
+
+# 풀이 요약
+# 숫자 영어 이름을 0부터 9 순서의 리스트에 둔다. enumerate로 이름과 숫자를 함께 얻어 해당 영어 단어를 숫자 한 글자로 바꾼다. 모든 단어를 처리한 뒤 전체 문자열을 정수로 바꾼다.
+# 문자열 길이 N: 시간 O(N), 공간 O(N). 단어 종류와 길이는 고정이다.

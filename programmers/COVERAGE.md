@@ -5,24 +5,43 @@
 | 범위 | 코드·설명 | 확인한 내용 |
 |---|---|---|
 | 레벨 2~4, 309문제 | 조건, 풀이 원리, 정답 근거, 기본·대안 구현, 한영 설명 | 원본 제출 해시, 문제별 로컬 검증 스크립트 |
-| 레벨 0·1, 273문제 | 제출 코드, 같은 코드의 전체 주석본, 짧은 풀이 | 저장된 100점 기록, 코드 일치, 각 줄의 설명, Python 구문 |
-| 레벨 5, 4문제 | 제출 코드, 같은 코드의 전체 주석본, 풀이 원리 | 저장된 100점 기록, 코드 일치, 각 줄의 설명, Python 구문 |
+| 앞서 보관한 277문제 | 레벨 0·1의 273개와 레벨 5의 4개, 제출 코드와 전체 줄별 주석본 | 저장된 100점 기록, 코드 일치, 각 줄의 설명, Python 구문 |
+| 과거 제출본 86문제 | 레벨 0의 4개와 레벨 1의 82개, 원본·주석본·풀이 원리·비용·유형 | 제출 내역 100점, AST 일치, 전체 주석본 일치, 공개 예제 197개 |
 | 레벨 5, 389632 | Python 네 버전과 시간 초과 분석 | 저장된 부분 통과 기록, 작은 입력 비교, 로컬 실행시간 |
 
-통과한 586문제는 [전체 목록](all_problems.json)에 중복 없이 들어 있다. 기존 309문제의 상세 풀이 목록은 [catalog.json](catalog.json), 나중에 보관한 277개 제출본은 [recent_submissions.json](recent_submissions.json)에서 구분한다. 파일별 해시와 확인 결과는 [제출본 대조 결과](ARCHIVE_CHECK.json)에 있다.
+## 레벨 0·1 전체 대조
 
-레벨 0·1에서 새로 푼 273문제는 모두 보관했다. 이 작업 전에 계정에서 이미 완료돼 있던 문제의 코드는 이번 보관 목록에 없다. 따라서 계정의 모든 과거 제출까지 빠짐없이 정리한 자료라고 부르지는 않는다.
+언어·상태 필터 없이 레벨 0·1의 전체 18페이지를 확인했다. [사이트 목록](level0_1_catalog.json)의 359개 문제 번호와 보관한 코드의 문제 번호 집합이 같다.
 
-레벨 5는 21문제 중 4문제 통과, 1문제 시간 초과, 16문제 미작성 상태다. 미완료 17문제를 통과 개수에 합산하지 않는다. 시간 초과 코드는 [별도 폴더](level5/attempts/389632/README.md)에 두었다.
+| 난이도 | 사이트 문제 수 | 코드·줄별 설명 | 빠진 문제 | 중복 번호 |
+|---|---:|---:|---:|---:|
+| 레벨 0 | 240 | 240 | 0 | 0 |
+| 레벨 1 | 119 | 119 | 0 | 0 |
+| 합계 | 359 | 359 | 0 | 0 |
 
-새로 보관한 277개 코드의 채점은 저장된 사이트 결과다. 이 문서를 정리하며 새로 제출한 결과는 아니다. 빈칸·한 줄 수정 형식의 12문제는 사이트 제출 범위와 전체 학습용 주석본을 구분했다. 코드 대조 검사는 알고리즘 정답성이나 SQL 실행계획을 새로 검증하는 검사가 아니다.
+기존에 미완료였던 273문제뿐 아니라 그 전에 완료한 86문제도 포함했다. 과거 제출은 사이트의 정답 100/100 항목을 열어 원본 코드와 제출 시각을 확인했다. 원본의 해시와 주석본의 해시는 문제별 `grading.json`과 [과거 제출 목록](historical_submissions.json)에 있다.
+
+새 주석본은 원본에서 기존 설명 주석과 빈 줄을 정리하고 줄별 설명을 덧붙였다. 원본과 같은 순서의 실행 구문을 유지하며, Python AST 대조로 이를 확인했다. 함수가 반복 정의된 원본도 그대로 보존하고 마지막 정의가 호출되는 점을 설명했다. 996개 코드 줄에 설명을 붙였으며, 원본과 새 파일을 공개 예제 197개에 각각 실행한 394회 검사가 모두 통과했다. [실행 기록](HISTORICAL_VALIDATION.json)과 재실행 코드가 있다.
+
+```bash
+python programmers/tests/verify_history.py
+python programmers/tests/verify_archive.py
+```
+
+## 전체 보관 수와 채점 범위
+
+통과한 672문제는 [전체 목록](all_problems.json)에 중복 없이 들어 있다. 309개의 상세 풀이, 277개의 기존 제출본, 86개의 과거 제출본을 구분한다. [파일 대조 결과](ARCHIVE_CHECK.json)에서 해시·주석본과 레벨 0·1의 누락 여부를 확인할 수 있다.
+
+과거 86개 주석본은 사이트에 다시 제출하지 않았다. 100점은 보존한 원본의 사이트 채점 결과이며 공개 예제 비교는 로컬 검사다. 빈칸·한 줄 수정 형식 16문제의 전체 주석본도 학습용 파일로 구분했다.
+
+레벨 5는 21문제 중 4문제 통과, 1문제 시간 초과, 16문제 미작성 상태다. 미완료 17문제는 통과 개수에 합산하지 않는다. 시간 초과 코드는 [별도 폴더](level5/attempts/389632/README.md)에 있다.
 
 ## English
 
-Checked on 2026-10-19. The [combined catalog](all_problems.json) contains 586 distinct accepted problems. The original 309 Level 2–4 entries include full study notes, alternatives and local test scripts. The later 277 entries preserve accepted submissions, exact commented copies and short Korean method notes. [Archive checks](ARCHIVE_CHECK.json) verify file hashes, annotations and Python syntax; they do not add algorithm-correctness or SQL execution-plan coverage.
+Checked on 2026-10-19. All 359 Level 0–1 IDs from the complete 18-page unfiltered listing match the archived code: 240 Level 0 problems and 119 Level 1 problems, with zero missing or duplicate IDs. The collection includes both 273 previously unfinished problems and 86 older accepted submissions.
 
-All 273 previously unfinished Level 0–1 problems solved during the recorded session are archived. Older submissions that were already completed on the account are outside this collection. This is not a claim to preserve every historical submission.
+The 86 historical Python submissions were copied from accepted 100/100 entries in the website history. Their original source, timestamps and hashes are preserved. Annotated copies keep the same executable AST, including repeated function definitions in their original order. The notes explain that the final definition binds the function name. All 996 code lines have annotations. Both source versions passed 197 public examples, for 394 executions. [Execution records](HISTORICAL_VALIDATION.json) and `tests/verify_history.py` reproduce those comparisons.
 
-Level 5 consists of four accepted problems, one timed-out attempt and 16 problems without archived solutions. The [failed attempt](level5/attempts/389632/README.md) is excluded from accepted totals. Its analysis separates saved judge outcomes from local comparisons.
+The [combined catalog](all_problems.json) contains 672 distinct accepted problems: 309 full study notes, 277 earlier archived submissions and 86 historical submissions. [Archive checks](ARCHIVE_CHECK.json) verify file integrity, exact commented copies and complete Level 0–1 ID coverage. The newly annotated copies were not resubmitted; website scores belong to the preserved accepted originals, while public-example comparisons are local checks. Sixteen restricted-editing exercises distinguish their original format from complete study files.
 
-The later submissions retain saved 100/100 results; this documentation update did not resubmit them. Twelve restricted-editing exercises distinguish the submitted changes from the complete annotated reference files.
+Level 5 remains four accepted problems, one timed-out attempt and 16 problems without archived solutions. The [failed attempt](level5/attempts/389632/README.md) is excluded from accepted totals.

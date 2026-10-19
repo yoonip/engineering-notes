@@ -1,0 +1,29 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/178871",
+  "cases": [
+    {
+      "arguments": [
+        [
+          "mumu",
+          "soe",
+          "poe",
+          "kai",
+          "mine"
+        ],
+        [
+          "kai",
+          "kai",
+          "mine",
+          "mine"
+        ]
+      ],
+      "expected": [
+        "mumu",
+        "kai",
+        "mine",
+        "soe",
+        "poe"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42576",
+  "cases": [
+    {
+      "arguments": [
+        [
+          "leo",
+          "kiki",
+          "eden"
+        ],
+        [
+          "eden",
+          "kiki"
+        ]
+      ],
+      "expected": "leo"
+    },
+    {
+      "arguments": [
+        [
+          "marina",
+          "josipa",
+          "nikola",
+          "vinko",
+          "filipa"
+        ],
+        [
+          "josipa",
+          "filipa",
+          "marina",
+          "nikola"
+        ]
+      ],
+      "expected": "vinko"
+    },
+    {
+      "arguments": [
+        [
+          "mislav",
+          "stanko",
+          "mislav",
+          "ana"
+        ],
+        [
+          "stanko",
+          "ana",
+          "mislav"
+        ]
+      ],
+      "expected": "mislav"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/340213",
+  "cases": [
+    {
+      "arguments": [
+        "34:33",
+        "13:00",
+        "00:55",
+        "02:55",
+        [
+          "next",
+          "prev"
+        ]
+      ],
+      "expected": "13:00"
+    },
+    {
+      "arguments": [
+        "10:55",
+        "00:05",
+        "00:15",
+        "06:55",
+        [
+          "prev",
+          "next",
+          "next"
+        ]
+      ],
+      "expected": "06:55"
+    },
+    {
+      "arguments": [
+        "07:22",
+        "04:05",
+        "00:15",
+        "04:07",
+        [
+          "next"
+        ]
+      ],
+      "expected": "04:17"
+    }
+  ]
+}
