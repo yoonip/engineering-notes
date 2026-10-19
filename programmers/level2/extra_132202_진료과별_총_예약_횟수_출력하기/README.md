@@ -31,15 +31,13 @@ ORDER BY COUNT(*), MCDP_CD
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+5월 1일 이상, 6월 1일 미만 조건은 시각이 포함돼 있어도 5월 전체를 정확히 고른다. 남은 예약을 진료과별로 세고 건수와 코드순으로 정렬한다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 예약의 날짜 필터와 진료과 집계가 필요하며 G개 결과 비교 정렬은 O(G log G)이다. 날짜 인덱스가 범위 검색에 쓰일 수 있다.
 
 주의할 점: 문제는 예약 취소 여부 필터를 요구하지 않는다. 5월의 마지막 시각을 인위적으로 만들 필요가 없다.
 
 ## 다른 방법: 윈도 COUNT 후 DISTINCT
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT DISTINCT MCDP_CD AS `진료과 코드`,
@@ -52,7 +50,7 @@ ORDER BY `5월예약건수`,`진료과 코드`;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 5월 1일 이상·6월 1일 미만으로 필터한다. 진료과별 행 수를 세고 건수 오름차순·진료과 코드 오름차순으로 정렬한다. | 윈도 COUNT 후 DISTINCT |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 예약의 날짜 필터와 진료과 집계가 필요하며 G개 결과 비교 정렬은 O(G log G)이다. 날짜 인덱스가 범위 검색에 쓰일 수 있다. | 5월 예약 각각에 진료과별 횟수를 붙이고 DISTINCT로 진료과당 한 행을 남긴다. |
 
 ## 검증
 
@@ -80,17 +78,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+The half-open May 1–June 1 interval includes all of May even with time components. Count the retained appointments per department, then order by count and code.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Filter N appointments and aggregate departments; sorting G results costs O(G log G) comparisons. A date index may support the range lookup.
 
 Boundary cases: The task does not request excluding canceled appointments. A half-open range avoids inventing a last timestamp for May.
 
 ### Alternative: Window COUNT followed by DISTINCT
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses window count followed by distinct; compare its intermediate state and cost with the main implementation before choosing it.
+Annotate each May appointment with its department count, then deduplicate department results.
 
 ### Verification
 

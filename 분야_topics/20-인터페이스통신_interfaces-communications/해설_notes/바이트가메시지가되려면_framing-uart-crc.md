@@ -16,7 +16,7 @@ UART로 `온도=25`라는 데이터를 보냈다고 해도 수신 함수가 이�
 
 ![바이트가 메시지가 되려면: UART, 프레이밍과 CRC — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/framing-uart-crc.png)
 
-[SVG](../../../자료_assets/도식_diagrams/framing-uart-crc.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/framing-uart-crc.mmd)
+[SVG](../../../자료_assets/도식_diagrams/framing-uart-crc.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/framing-uart-crc.mmd)
 
 | 번호 / No. | 출발 / From | 도착 / To | 조건·동작 / Condition and action |
 | --- | --- | --- | --- |

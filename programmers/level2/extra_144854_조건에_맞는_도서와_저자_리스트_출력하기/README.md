@@ -32,15 +32,13 @@ ORDER BY b.PUBLISHED_DATE
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+경제 분류의 도서만 고른 뒤 AUTHOR_ID로 저자 이름을 붙인다. 저자 키가 고유하므로 같은 책의 행이 조인으로 늘어나지 않는다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+도서 N개를 필터하고 저자 M개와 연결한 뒤 R권을 출판일순으로 정렬한다. 저자 키 인덱스와 조인 계획에 따라 비용이 달라지며 결과 비교 정렬은 O(R log R)이다.
 
 주의할 점: 출력 날짜는 YYYY-MM-DD다. 도서 ID와 저자 ID를 서로 연결하면 안 된다.
 
 ## 다른 방법: 상관 서브쿼리로 저자 이름 조회
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT b.BOOK_ID,
@@ -54,7 +52,7 @@ ORDER BY b.PUBLISHED_DATE;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 도서의 AUTHOR_ID로 저자 테이블을 조인한다. CATEGORY가 경제인 행만 남기고 출판일 오름차순으로 출력한다. | 상관 서브쿼리로 저자 이름 조회 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | 도서 N개를 필터하고 저자 M개와 연결한 뒤 R권을 출판일순으로 정렬한다. 저자 키 인덱스와 조인 계획에 따라 비용이 달라지며 결과 비교 정렬은 O(R log R)이다. | 책마다 상관 하위쿼리로 저자 이름과 존재 여부를 확인한다. 저자 키 인덱스와 하위쿼리 변환 여부에 따라 비용이 달라진다. |
 
 ## 검증
 
@@ -83,17 +81,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Select economics books and attach author names through AUTHOR_ID. A unique author key prevents the join from multiplying a book row.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Filter N books, look up authors among M rows, then order R books by publication date. Author-key indexes and join plans affect lookup cost; result sorting is O(R log R).
 
 Boundary cases: Format dates as YYYY-MM-DD. Do not join book IDs directly to author IDs.
 
 ### Alternative: Correlated scalar lookup of author names
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses correlated scalar lookup of author names; compare its intermediate state and cost with the main implementation before choosing it.
+Use correlated author lookups per book; key indexes and subquery transformations determine cost.
 
 ### Verification
 

@@ -30,15 +30,13 @@ ORDER BY PRICE_GROUP
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+가격을 10,000으로 나눈 몫의 바닥값에 10,000을 곱하면 해당 가격대의 시작값이 된다. 같은 시작값으로 묶으므로 경계 가격도 정확한 구간에 들어간다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 상품의 구간을 계산해 집계한 뒤 G개 가격대를 정렬한다. 결과 비교 정렬은 O(G log G); 윈도 대안은 DISTINCT 처리도 필요하다.
 
 주의할 점: 정확히 10000원인 상품은 10000~19999원 구간이다. 문자열 앞자리로 나누면 가격 자릿수에 따라 잘못될 수 있다.
 
 ## 다른 방법: 윈도 COUNT와 중복 가격대 제거
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT DISTINCT FLOOR(PRICE/10000)*10000 AS PRICE_GROUP,
@@ -49,7 +47,7 @@ FROM PRODUCT ORDER BY PRICE_GROUP;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | floor(PRICE/10000)×10000으로 가격대의 시작값을 구한다. 같은 시작값으로 묶어 개수를 세고 가격대순으로 정렬한다. | 윈도 COUNT와 중복 가격대 제거 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 상품의 구간을 계산해 집계한 뒤 G개 가격대를 정렬한다. 결과 비교 정렬은 O(G log G); 윈도 대안은 DISTINCT 처리도 필요하다. | 각 상품 행에 가격대별 개수를 붙인 뒤 DISTINCT로 줄인다. 윈도 계산과 중복 제거가 추가된다. |
 
 ## 검증
 
@@ -77,17 +75,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Flooring price divided by 10,000 and multiplying back produces its band start. Grouping by that start assigns boundary prices to the correct bands.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Compute and aggregate bands for N products, then sort G results in O(G log G) comparisons. The window alternative also needs DISTINCT.
 
 Boundary cases: A price of exactly 10000 belongs to the 10000–19999 band. String-prefix grouping is unsafe when digit lengths vary.
 
 ### Alternative: Window COUNT followed by price-band deduplication
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses window count followed by price-band deduplication; compare its intermediate state and cost with the main implementation before choosing it.
+Attach band counts to product rows, then deduplicate; window computation and DISTINCT add work.
 
 ### Verification
 

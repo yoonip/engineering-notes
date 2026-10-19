@@ -59,7 +59,7 @@ Main complexity: O(target·C) time, O(target) space; C≤43.
 
 Treat scores as vertices with lexicographic costs (throws, negative single/bull hits). Tuple comparison encodes both priorities; Dijkstra adds heap overhead compared with score-ordered DP.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(target·C log target), space O(target).
 

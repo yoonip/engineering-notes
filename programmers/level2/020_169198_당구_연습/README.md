@@ -46,8 +46,6 @@ def solution(m, n, startX, startY, balls):
 
 ## 다른 방법: 정확한 유리수 반사점 계산
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from fractions import Fraction
 
@@ -109,9 +107,7 @@ Boundary cases: Return squared distance, not distance. For horizontal or vertica
 
 ### Alternative: Compute reflection points using exact fractions
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(B), 공간 O(B) / Time and space O(B)
-
-The main approach follows the steps described above. The alternative uses compute reflection points using exact fractions; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(B), 공간 O(B) / Time and space O(B)
 
 ### Verification
 

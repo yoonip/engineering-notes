@@ -63,7 +63,7 @@ Main complexity: O(N²) time and space under the six-cell component bound.
 
 Extract holes and pieces, compare all four rotations pairwise, and use bipartite matching to prevent reuse. This differs from counting canonical shapes in a Counter.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: piece counts H,Pwith O(HP·6 log 6+H²P), space O(N²+HP).
 

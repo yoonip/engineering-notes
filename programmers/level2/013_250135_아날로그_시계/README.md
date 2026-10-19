@@ -41,8 +41,6 @@ def solution(h1, m1, s1, h2, m2, s2):
 
 ## 다른 방법: 유리수로 겹침 시각 직접 열거
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from fractions import Fraction
 
@@ -95,9 +93,7 @@ Boundary cases: Count triple meetings at midnight and noon once. Integer arithme
 
 ### Alternative: Enumerate meeting instants with exact fractions
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(T/60), 공간 O(T/60) / Time and space O(T/60); T=종료 초 / ending second
-
-The main approach follows the steps described above. The alternative uses enumerate meeting instants with exact fractions; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(T/60), 공간 O(T/60) / Time and space O(T/60); T=종료 초 / ending second
 
 ### Verification
 

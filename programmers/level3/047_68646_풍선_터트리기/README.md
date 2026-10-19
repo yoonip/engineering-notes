@@ -59,7 +59,7 @@ Main complexity: O(N) time, O(1) extra state.
 
 Precompute prefix and suffix minima. A balloon is impossible to retain exactly when a smaller balloon exists on both sides. This uses arrays instead of counting record minima in two scans.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N), space O(N).
 

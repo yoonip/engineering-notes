@@ -62,7 +62,7 @@ Main complexity: O(N log N) time, O(N) space.
 
 Insert nodes in descending height order into an x-ordered BST. This directly implements the parent rule, although it can take quadratic time unlike the monotone-stack construction.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: worst case O(N²), space O(N).
 

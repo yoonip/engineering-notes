@@ -45,8 +45,6 @@ def solution(arr):
 
 ## 다른 방법: 2차원 누적합으로 균일성 상수 시간 판정
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(arr):
     n=len(arr)
@@ -104,9 +102,7 @@ Boundary cases: The side length is a power of two. Once a uniform square is coun
 
 ### Alternative: Use 2D prefix sums for constant-time uniformity tests
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N²), 공간 O(N²) / Time and space O(N²)
-
-The main approach follows the steps described above. The alternative uses use 2d prefix sums for constant-time uniformity tests; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N²), 공간 O(N²) / Time and space O(N²)
 
 ### Verification
 

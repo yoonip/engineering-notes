@@ -58,7 +58,7 @@ Main complexity: O(H²) time, O(H) extra space.
 
 Propagate maximum path sums from the top using the two possible parents. Unlike bottom-up DP, the answer is the maximum value in the final row.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(H²), space O(H).
 

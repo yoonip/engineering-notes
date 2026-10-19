@@ -38,8 +38,6 @@ def solution(s):
 
 ## 다른 방법: 집합 크기순 정렬 후 차집합
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(s):
     groups=[set(map(int,chunk.split(','))) for chunk in s[2:-2].split('},{')]
@@ -91,9 +89,7 @@ Boundary cases: The sets may appear in any order. Recover by frequency or set si
 
 ### Alternative: Sort sets by size and extract newly added elements
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(L+U log U), 공간 O(L) / Time O(L+U log U), space O(L)
-
-The main approach follows the steps described above. The alternative uses sort sets by size and extract newly added elements; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(L+U log U), 공간 O(L) / Time O(L+U log U), space O(L)
 
 ### Verification
 

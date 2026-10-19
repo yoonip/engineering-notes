@@ -62,7 +62,7 @@ Main complexity: O(N³) time, O(N²) space.
 
 Recursively choose the final multiplication split and cache interval costs. It evaluates the same optimal-substructure recurrence on demand rather than by increasing interval length.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N³), space O(N²).
 

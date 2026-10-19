@@ -51,8 +51,6 @@ def solution(places):
 
 ## 다른 방법: 응시자별 깊이 2 BFS
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from collections import deque
 
@@ -114,9 +112,7 @@ Boundary cases: Both intermediate diagonal cells must be X. Blocking only one le
 
 ### Alternative: Depth-two BFS from each participant
 
-It computes the same result using different intermediate states or evaluation steps. 방마다 O(P)개의 상수 크기 탐색, 공간 O(1) / O(P) constant-size searches per room, space O(1)
-
-The main approach follows the steps described above. The alternative uses depth-two bfs from each participant; compare its intermediate state and cost with the main implementation before choosing it.
+방마다 O(P)개의 상수 크기 탐색, 공간 O(1) / O(P) constant-size searches per room, space O(1)
 
 ### Verification
 

@@ -47,8 +47,6 @@ def solution(x, y, n):
 
 ## 다른 방법: 역방향 최단 거리 DP
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(x,y,n):
     inf=y+1
@@ -101,9 +99,7 @@ Boundary cases: Return zero when x equals y. Enqueue each reachable integer only
 
 ### Alternative: Backward dynamic programming from y
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(y−x+1), 공간 O(y−x+1) / Time and space O(y−x+1)
-
-The main approach follows the steps described above. The alternative uses backward dynamic programming from y; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(y−x+1), 공간 O(y−x+1) / Time and space O(y−x+1)
 
 ### Verification
 

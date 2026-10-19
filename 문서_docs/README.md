@@ -9,7 +9,7 @@
 | [분야별 기초 해설 / Technical foundations](분야별기초해설_EXTENDED_FOUNDATIONS.md) | 개발 환경부터 하드웨어·AI까지의 36편 / 36 domain articles |
 | [추론과 인문사회 / Reasoning and humanities](추론과인문사회_REASONING_AND_HUMANITIES.md) | 논리·시험·철학·경제·사회·법 / Logic, assessments and humanities |
 | [용어와 직관 / Terms and intuition](용어와직관_TERMS_AND_INTUITION.md) | 기술 용어의 의미와 뉘앙스 / Technical meaning and nuance |
-| [도식 편집 기준 / Figure style](도식편집기준_FIGURE_STYLE.md) | 도식·도표의 라벨과 표현 / Labels and visual conventions |
+| [그림과 표의 표기 / Figure style](도식편집기준_FIGURE_STYLE.md) | 그림과 표의 라벨과 표현 / Labels and visual conventions |
 | [도구 목록 / Tool index](도구목록_TOOLS_INDEX.md) | 분야와 도구 연결 / Tools by field |
 | [작성자 소개 / Author profile](작성자소개_PROFILE_TEMPLATE.md) | 연구·기술·논문·수상 / Research, skills, publications and awards |
 | [시작 안내 / Getting started](시작안내_GETTING_STARTED.ko.md) | 저장소 사용과 실행 / Navigation and execution |

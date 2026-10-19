@@ -1,0 +1,46 @@
+{
+  "python": "3.12.14",
+  "seed": 389632,
+  "reference_cases": 24,
+  "scope": "Local comparisons only; not an accepted solution or a judge replay",
+  "benchmark": [
+    {
+      "version": "v1",
+      "characters": 29978,
+      "queries": 6001,
+      "seconds": 0.9339,
+      "outputs_equal": true
+    },
+    {
+      "version": "v2",
+      "characters": 29978,
+      "queries": 6001,
+      "seconds": 0.714,
+      "outputs_equal": true
+    },
+    {
+      "version": "v3",
+      "characters": 29978,
+      "queries": 6001,
+      "seconds": 0.0977,
+      "outputs_equal": true
+    },
+    {
+      "version": "v4",
+      "characters": 29978,
+      "queries": 6001,
+      "seconds": 0.1395,
+      "outputs_equal": true
+    }
+  ],
+  "v1_profile_calls": {
+    "assign": {
+      "primitive_calls": 80511,
+      "total_calls": 3546124
+    },
+    "find": {
+      "primitive_calls": 1441603,
+      "total_calls": 1441603
+    }
+  }
+}

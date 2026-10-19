@@ -42,8 +42,6 @@ def solution(data, col, row_begin, row_end):
 
 ## 다른 방법: 안정 정렬 두 번 + XOR 누적합
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(data,col,row_begin,row_end):
     rows=sorted(data,key=lambda row:row[0],reverse=True)
@@ -92,9 +90,7 @@ Boundary cases: The modulus uses the sorted one-based row number. The main imple
 
 ### Alternative: Two stable sorts with prefix XOR
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N log N+NM), 공간 O(NM) / Time O(N log N+NM), space O(NM) with copied rows
-
-The main approach follows the steps described above. The alternative uses two stable sorts with prefix xor; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N log N+NM), 공간 O(NM) / Time O(N log N+NM), space O(NM) with copied rows
 
 ### Verification
 

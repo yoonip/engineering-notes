@@ -37,8 +37,6 @@ def solution(word):
 
 ## 다른 방법: 사전순 DFS로 단어 생성
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(word):
     rank=0
@@ -91,9 +89,7 @@ Boundary cases: Add one at each position because the prefix precedes its extensi
 
 ### Alternative: Generate dictionary order with DFS
 
-It computes the same result using different intermediate states or evaluation steps. 최대 3905단어, 시간 O(5^5), 공간 O(5) / At most 3905 words, time O(5^5), space O(5)
-
-The main approach follows the steps described above. The alternative uses generate dictionary order with dfs; compare its intermediate state and cost with the main implementation before choosing it.
+최대 3905단어, 시간 O(5^5), 공간 O(5) / At most 3905 words, time O(5^5), space O(5)
 
 ### Verification
 

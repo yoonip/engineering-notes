@@ -58,7 +58,7 @@ Main complexity: O(N³) time, O(N²) space.
 
 For every player, search both win and loss directions. A rank is fixed when all other players are reachable in one direction. This uses graph searches instead of Floyd closure.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N(N+E)), space O(N+E).
 

@@ -40,7 +40,7 @@ $$P\Rightarrow Q,\quad P\quad\therefore Q$$
 
 ![안다는 것, 논증한다는 것, 옳다고 판단한다는 것 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/knowledge-arguments-values.png)
 
-[SVG](../../../자료_assets/도식_diagrams/knowledge-arguments-values.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/knowledge-arguments-values.mmd)
+[SVG](../../../자료_assets/도식_diagrams/knowledge-arguments-values.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/knowledge-arguments-values.mmd)
 
 이 문서를 위해 작성한 논증 검토 흐름도다. 가치가 들어간다는 이유로 사실 확인을 포기할 필요도, 사실을 안다는 이유로 가치 선택을 숨길 필요도 없다.
 

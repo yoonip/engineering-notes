@@ -40,8 +40,6 @@ def solution(storey):
 
 ## 다른 방법: 올림·내림을 모두 비교하는 메모이제이션
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from functools import lru_cache
 
@@ -91,9 +89,7 @@ Boundary cases: Always rounding five down fails for values such as 55. Carrying 
 
 ### Alternative: Memoized recursion comparing both rounding directions
 
-It computes the same result using different intermediate states or evaluation steps. 시간·공간 O(log storey) 상태 / O(log storey) time and space states
-
-The main approach follows the steps described above. The alternative uses memoized recursion comparing both rounding directions; compare its intermediate state and cost with the main implementation before choosing it.
+시간·공간 O(log storey) 상태 / O(log storey) time and space states
 
 ### Verification
 

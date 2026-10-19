@@ -31,15 +31,13 @@ ORDER BY YEAR, YEAR_DEV
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+윈도 MAX는 같은 연도의 최고 크기를 각 행에 붙이면서 개체 ID를 보존한다. 그 값에서 자기 크기를 빼면 연도별 편차가 되며, 대안의 연도별 집계 조인도 같은 최댓값을 붙인다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 개체의 연도별 윈도 계산과 N개 결과 정렬이 필요하다. 비교 정렬을 쓰면 O(N log N) 규모이며 윈도·조인 계획과 인덱스에 따라 실제 비용은 달라진다.
 
 주의할 점: GROUP BY만으로 원본 개체 행을 합치지 않는다. 같은 연도 최고 크기는 편차 0이다.
 
 ## 다른 방법: 연도별 집계 테이블 조인
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT YEAR(c.DIFFERENTIATION_DATE) AS YEAR,
@@ -55,7 +53,7 @@ ORDER BY YEAR, YEAR_DEV;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 연도별 윈도 MAX로 각 행에 최댓값을 붙이고 자기 크기를 뺀다. ID를 보존하면서 연도·편차 오름차순으로 정렬한다. | 연도별 집계 테이블 조인 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 개체의 연도별 윈도 계산과 N개 결과 정렬이 필요하다. 비교 정렬을 쓰면 O(N log N) 규모이며 윈도·조인 계획과 인덱스에 따라 실제 비용은 달라진다. | 연도별 최대 크기를 별도 집계한 뒤 원본에 조인한다. 윈도 계산 대신 연도 집계와 키 연결을 사용한다. |
 
 ## 검증
 
@@ -83,17 +81,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Window MAX attaches the same-year maximum without collapsing individual IDs. Subtracting each size gives its annual deviation; the grouped-join alternative attaches the same maxima.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Compute annual windows and order N result rows. Comparison sorting has O(N log N) scale; window/join plans and indexes determine actual execution costs.
 
 Boundary cases: Do not collapse colony rows with a standalone GROUP BY. The yearly maximum has deviation zero.
 
 ### Alternative: Join against a yearly aggregate table
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses join against a yearly aggregate table; compare its intermediate state and cost with the main implementation before choosing it.
+Aggregate annual maxima separately and join them to original rows, replacing window computation with grouping and key joins.
 
 ### Verification
 

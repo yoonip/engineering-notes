@@ -4,8 +4,8 @@
 
 각 주제에서는 무엇에 쓰이는지, 왜 그 방식으로 구현하는지부터 살펴봅니다. 설명은 한국어와 영어로 나누고, 코드 주석은 한국어로 적었습니다. Linux·Bash 같은 기술명은 익숙한 표기를 그대로 씁니다.
 
-- [심화 해설·구현·검증 | Advanced explanations and implementations](문서_docs/심화해설_ADVANCED.md)
-- [기초 개념·유도·모델·검증 | Engineering foundations](문서_docs/공학기초_FOUNDATIONS.md)
+- [주제별 원리와 구현 | Concepts and implementations](문서_docs/심화해설_ADVANCED.md)
+- [공학 기초 개념과 계산 | Engineering foundations](문서_docs/공학기초_FOUNDATIONS.md)
 - [분야별 기초 해설 | Technical foundations by topic](문서_docs/분야별기초해설_EXTENDED_FOUNDATIONS.md)
 - [추론·인문사회 | Reasoning & humanities](문서_docs/추론과인문사회_REASONING_AND_HUMANITIES.md)
 - [연구·프로젝트·논문·수상 | Research & publications](연구_research/README.md)
@@ -44,7 +44,7 @@ Each topic starts with what it is used for and why the implementation works that
 - [Research, papers, and awards](연구_research/README.md)
 - [Topic index](분야별목차_CATALOG.md) · [AI companies and models](AI모델실험_model-lab/PROVIDERS.md)
 - [Tools](문서_docs/도구목록_TOOLS_INDEX.md) · [Implemented projects](프로젝트_projects/README.md) · [Code examples](예제_examples/README.md)
-- [Algorithms and coding tests](분야_topics/08-알고리즘_problem-solving/README.md) · [309 Programmers solutions](programmers/README.md)
+- [Algorithms and coding tests](분야_topics/08-알고리즘_problem-solving/README.md) · [586 archived Programmers solutions](programmers/README.md)
 - [Applications, assessments, and interviews](분야_topics/55-지원시험면접_applications-assessments/README.md)
 - [Author and contact](문서_docs/작성자소개_PROFILE_TEMPLATE.md) · [References](문서_docs/참고자료_SOURCES.md)
 

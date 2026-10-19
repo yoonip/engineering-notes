@@ -32,15 +32,13 @@ ORDER BY FISH_COUNT DESC
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+종류 키로 물고기 이름을 붙인 후 같은 종류의 행 수를 센다. 길이가 NULL이어도 잡은 물고기 한 마리이므로 COUNT(*)로 포함한다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+물고기 N개와 종류 M개의 조인 후 G개 종류를 집계·정렬한다. 종류 키 조회 계획이 조인 비용을 정하며 결과 비교 정렬은 O(G log G)이다.
 
 주의할 점: COUNT(LENGTH)는 NULL 길이 행을 누락한다. 이름을 붙이는 조인이 포획 기록을 증식시키지 않아야 한다.
 
 ## 다른 방법: 포획 수 선집계 후 이름 조인
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT x.FISH_COUNT, n.FISH_NAME
@@ -52,7 +50,7 @@ ORDER BY x.FISH_COUNT DESC;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 이름 테이블과 연결하고 종류별 COUNT(*)를 구한다. 잡은 수를 내림차순으로 정렬한다. | 포획 수 선집계 후 이름 조인 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | 물고기 N개와 종류 M개의 조인 후 G개 종류를 집계·정렬한다. 종류 키 조회 계획이 조인 비용을 정하며 결과 비교 정렬은 O(G log G)이다. | 물고기를 종류별로 먼저 집계하고 이름을 붙인다. 조인에 들어가는 행을 개체 수에서 종류 수로 줄인다. |
 
 ## 검증
 
@@ -81,17 +79,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Attach species names by the type key and count rows of each type. A fish with NULL length still counts as a catch, so COUNT(*) includes it.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Join N catches with M species, aggregate and sort G types. Species-key access determines join cost; result comparison sorting is O(G log G).
 
 Boundary cases: COUNT(LENGTH) would omit NULL lengths. The name join must not multiply catch rows.
 
 ### Alternative: Preaggregate catches before joining names
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses preaggregate catches before joining names; compare its intermediate state and cost with the main implementation before choosing it.
+Aggregate catches by type before joining names, reducing join input from fish rows to species groups.
 
 ### Verification
 

@@ -55,7 +55,7 @@ $$v(t)=e^{-\alpha t}\left[v_0\cos(\omega_dt)+\frac{d_0+\alpha v_0}{\omega_d}\sin
 
 ![RC·RLC: 회로 법칙에서 시간·주파수 응답까지 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/rc-rlc-response.png)
 
-[SVG](../../../자료_assets/도식_diagrams/rc-rlc-response.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/rc-rlc-response.mmd)
+[SVG](../../../자료_assets/도식_diagrams/rc-rlc-response.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/rc-rlc-response.mmd)
 
 직접 작성한 직렬 RLC 연결도다. 출력은 C 양단이다. 전달함수는 `Hc(s)=1/(LCs²+RCs+1)`이다. ω₀를 모든 경우의 출력 공진 주파수라고 부르면 틀린다. 이 출력의 크기 피크는 `0<ζ<1/√2`일 때 `ωp=ω₀√(1-2ζ²)`에서 생긴다. 진동 주파수 `ωd=ω₀√(1-ζ²)`와도 다르다.
 
@@ -113,4 +113,4 @@ Acceptance checks cover initial and final values, the RC time constant, analytic
 
 - MIT 18.03SC, *RLC Circuits*, pp. 1–2: 소자 관계·직렬 회로 방정식·복소 임피던스 / element relations, series-circuit equations, complex impedance.
 - MIT 6.002, *Lecture 15: Second-order systems*: 초기값·특성근·감쇠 응답 / initial conditions, characteristic roots and damping. 두 강의의 방정식을 같은 C 출력으로 정리해 부호와 계수를 대조했다 / equations were expressed for the same capacitor output to check signs and coefficients.
-- 도식·수치 예제·테스트는 이 문서의 모델에서 작성했다 / the diagram, numerical examples and tests were constructed for this model. 출처 확인 / sources checked: 2026-10-19.
+- 그림·수치 예제·테스트는 이 문서의 모델에서 작성했다 / the diagram, numerical examples and tests were constructed for this model. 출처 확인 / sources checked: 2026-10-19.

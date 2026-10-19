@@ -63,6 +63,6 @@ Each link opens the Korean explanation followed by an equivalent English section
 
 ## 구현과 검증 | Implementation and verification
 
-[확장 예제와 실행 방법](../예제_examples/확장기초_extended/README.md)에서 하드웨어, 시스템, AI·데이터 모델의 구현과 검산을 확인할 수 있다. 도식과 도표의 표기 방식은 [편집 기준](도식편집기준_FIGURE_STYLE.md)에 정리했다.
+[분야별 예제와 실행 방법](../예제_examples/확장기초_extended/README.md)에서 하드웨어, 시스템, AI·데이터 모델의 구현과 검산을 확인할 수 있다. 그림과 표의 표기 방식은 [편집 기준](도식편집기준_FIGURE_STYLE.md)에 정리했다.
 
 The [extended examples](../예제_examples/확장기초_extended/README.md) provide implementations and independent checks for hardware, systems, and AI/data models. [The figure-style guide](도식편집기준_FIGURE_STYLE.md) records visual conventions.

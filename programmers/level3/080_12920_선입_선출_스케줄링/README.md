@@ -58,7 +58,7 @@ Main complexity: O(C log U) time, O(1) extra space.
 
 Initially assign one job to each core, then pop (next free time, core index) events. The heap directly enforces the smaller-index priority at simultaneous completion times.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(C+n log C), space O(C).
 

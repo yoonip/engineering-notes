@@ -48,9 +48,9 @@ def lower_bound(values, target):
 
 ## Programmers 풀이
 
-[Level 2~4 풀이 309개](../../programmers/README.md)를 문제 번호와 공식 문제 링크로 정리했다. Python·C++·MySQL 코드에 문제 조건, 풀이 설명, 대안 구현과 비교, 실행 가능한 검증을 함께 넣었다.
+[프로그래머스 풀이 586개](../../programmers/README.md)를 문제 번호와 공식 링크로 정리했다. 레벨 2~4의 309문제에는 조건, 풀이 설명, 대안 구현과 검증 코드가 있다. 레벨 0·1과 레벨 5의 277문제에는 제출 코드 전체의 줄별 문법 설명과 짧은 풀이를 적었다. 레벨 5의 시간 초과 시도는 별도 분석으로 남겼다.
 
-[309 solutions at Levels 2–4](../../programmers/README.md) include Python, C++ and MySQL implementations, problem conditions, explanations, alternatives with comparisons, and executable checks.
+[586 archived Programmers solutions](../../programmers/README.md) include 309 Level 2–4 study notes with conditions, explanations, alternatives and executable checks. The other 277 entries at Levels 0, 1 and 5 preserve submitted code with Korean line-by-line syntax notes and short method explanations. A failed Level 5 attempt has a separate timeout analysis.
 
 ## 기초 해설
 

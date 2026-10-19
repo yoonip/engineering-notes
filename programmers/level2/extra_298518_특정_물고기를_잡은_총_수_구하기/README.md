@@ -31,15 +31,13 @@ WHERE names.FISH_NAME IN ('BASS', 'SNAPPER')
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+종류 키로 이름을 확인해 BASS 또는 SNAPPER인 포획 행만 센다. COUNT(*)이므로 길이가 NULL인 행도 포함된다. EXISTS 대안은 각 포획 행의 해당 종류 존재 여부를 검사한다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+물고기 N개와 종류 M개의 조인 또는 존재 검사 비용이 필요하다. 종류 키 인덱스로 조회를 줄일 수 있으며 출력은 합계 한 행이라 정렬하지 않는다.
 
 주의할 점: 종류별 두 행이 아니라 전체 합계 한 행이다. 길이가 NULL인 포획도 센다.
 
 ## 다른 방법: EXISTS 세미 조인
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT COUNT(*) AS FISH_COUNT
@@ -53,7 +51,7 @@ WHERE EXISTS (
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 물고기 종류 번호로 이름을 조인하고 두 이름을 고른 뒤 COUNT(*)로 행을 센다. | EXISTS 세미 조인 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | 물고기 N개와 종류 M개의 조인 또는 존재 검사 비용이 필요하다. 종류 키 인덱스로 조회를 줄일 수 있으며 출력은 합계 한 행이라 정렬하지 않는다. | 각 물고기의 종류가 대상 이름인지 EXISTS로 검사한다. 결과는 한 행이며 종류 키 접근 방식에 따라 비용이 달라진다. |
 
 ## 검증
 
@@ -82,17 +80,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Resolve species names and count catches of BASS or SNAPPER. COUNT(*) includes NULL lengths. The EXISTS alternative tests the matching species for each catch.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Cost comes from joining or existence-checking N catches against M species. A species-key index can reduce lookups. The single aggregate row requires no sorting.
 
 Boundary cases: Return one combined total, not one row per species. Include catches with NULL length.
 
 ### Alternative: EXISTS semijoin
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses exists semijoin; compare its intermediate state and cost with the main implementation before choosing it.
+Use EXISTS to check each catch's species name. The result is one row; species-key access determines lookup cost.
 
 ### Verification
 

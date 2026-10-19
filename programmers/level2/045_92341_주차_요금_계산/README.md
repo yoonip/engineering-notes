@@ -55,8 +55,6 @@ def solution(fees, records):
 
 ## 다른 방법: 차량별 기록 그룹 후 시간 쌍 계산
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from collections import defaultdict
 
@@ -115,9 +113,7 @@ Boundary cases: 23:59 is minute 1439. Do not add another unit when the extra tim
 
 ### Alternative: Group records per vehicle and pair timestamps
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(R+V log V), 공간 O(R) / Time O(R+V log V), space O(R)
-
-The main approach follows the steps described above. The alternative uses group records per vehicle and pair timestamps; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(R+V log V), 공간 O(R) / Time O(R+V log V), space O(R)
 
 ### Verification
 

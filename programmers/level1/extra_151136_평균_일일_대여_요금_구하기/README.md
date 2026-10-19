@@ -1,0 +1,32 @@
+# 평균 일일 대여 요금 구하기
+
+[공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/151136) · Level 1 · MySQL
+
+## 풀이
+
+SUV 자동차의 일일 요금만 평균 내고 정수 자리까지 반올림합니다.
+
+## 코드와 줄별 설명
+
+[코드 파일 / Source](solution.sql) · [채점 기록 / Grade](grading.json)
+
+```sql
+SELECT ROUND(AVG(DAILY_FEE), 0) AS AVERAGE_FEE
+FROM CAR_RENTAL_COMPANY_CAR
+WHERE CAR_TYPE = 'SUV'
+
+-- 전체 코드 줄별 설명
+-- SELECT ROUND(AVG(DAILY_FEE), 0) AS AVERAGE_FEE  -- AVG는 평균, ROUND(값,0)는 소수 첫째 자리에서 반올림, AS는 출력 열 별칭.
+-- FROM CAR_RENTAL_COMPANY_CAR  -- FROM은 자동차 정보 테이블 지정.
+-- WHERE CAR_TYPE = 'SUV'  -- WHERE는 조건 필터, =은 SQL의 같음 비교. SUV 차종만 선택.
+
+-- 풀이 요약
+-- SUV 자동차의 일일 요금만 평균 내고 정수 자리까지 반올림합니다.
+--
+```
+
+## 채점 기록 / Grading record
+
+저장된 사이트 채점 결과는 100점이다. 코드 파일의 SHA-256과 채점 기록의 SHA-256을 `grading.json`에 남겼다. 이 기록을 정리하면서 새로 제출한 것은 아니다.
+
+The saved website result is 100/100. The file contains executable code followed by an exact commented copy with Korean notes on syntax and purpose. Source and saved-result hashes are in `grading.json`. This archive update did not resubmit the solution.

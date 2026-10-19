@@ -63,7 +63,7 @@ Main complexity: O(2500Q) time, O(2500+output) space.
 
 Store a member set for each group. Merge and unmerge visit actual members rather than scanning the full board, at the cost of set bookkeeping.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: worst case O(2500Q), space O(2500+output).
 

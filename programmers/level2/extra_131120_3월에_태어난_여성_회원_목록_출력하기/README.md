@@ -32,15 +32,13 @@ ORDER BY MEMBER_ID
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+AND로 연결한 세 조건을 모두 만족하는 회원만 남긴다. 날짜 형식 변경은 표시만 바꾸며, 출력 순서는 MEMBER_ID로 결정한다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N명 검사와 R명 결과 정렬이 필요하다. 비교 정렬은 O(R log R)이며 날짜 함수와 인덱스 사용 여부에 따라 검색 비용이 달라진다.
 
 주의할 점: NULL은 빈 문자열과 다르다. 생년이 아니라 생일 월이 3인지 검사한다.
 
 ## 다른 방법: 조건 ID 집합 INTERSECT 대신 EXISTS 세미 조인
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 WITH eligible AS (
@@ -57,7 +55,7 @@ ORDER BY m.MEMBER_ID;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 성별·생일 월·전화번호 NOT NULL 조건을 동시에 적용한다. 생일을 YYYY-MM-DD로 표시하고 회원 ID순으로 정렬한다. | 조건 ID 집합 INTERSECT 대신 EXISTS 세미 조인 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N명 검사와 R명 결과 정렬이 필요하다. 비교 정렬은 O(R log R)이며 날짜 함수와 인덱스 사용 여부에 따라 검색 비용이 달라진다. | 같은 조건으로 고른 회원을 EXISTS로 다시 확인한다. 더 빠른 풀이로 간주하지 않으며 단순 WHERE와 실행계획을 비교한다. |
 
 ## 검증
 
@@ -85,17 +83,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+All three AND-connected predicates must hold. Date formatting changes presentation only; MEMBER_ID determines output order.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Inspect N members and order R results. Comparison sorting costs O(R log R); date expressions and index access affect filtering.
 
 Boundary cases: NULL and an empty string are different. Test the birth month, not the birth year.
 
 ### Alternative: EXISTS semijoin over the qualifying member-ID set
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses exists semijoin over the qualifying member-id set; compare its intermediate state and cost with the main implementation before choosing it.
+EXISTS rechecks the eligible member set. It is not assumed faster than the direct WHERE filter.
 
 ### Verification
 

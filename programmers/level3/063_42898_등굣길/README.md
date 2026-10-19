@@ -58,7 +58,7 @@ Main complexity: O(MN) time, O(M+puddles) extra space.
 
 Memoize path counts backwards from school through the upper and left cells. Boundaries and puddles contribute zero. This evaluates the recurrence on demand rather than iteratively.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(MN), space O(MN).
 

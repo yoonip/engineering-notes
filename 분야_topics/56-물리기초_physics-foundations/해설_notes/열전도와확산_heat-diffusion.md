@@ -40,9 +40,9 @@ FTCS라는 이름은 forward time, centred space에서 왔다. 충분히 매끄�
 
 ![열전도와 확산 | Heat conduction and diffusion — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/heat-diffusion.png)
 
-[SVG](../../../자료_assets/도식_diagrams/heat-diffusion.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/heat-diffusion.mmd)
+[SVG](../../../자료_assets/도식_diagrams/heat-diffusion.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/heat-diffusion.mmd)
 
-도식은 한 격자점의 갱신 의존 관계다. / The original diagram shows one stencil update.
+그림은 한 격자점의 갱신 의존 관계다. / The original diagram shows one stencil update.
 
 ### 구현과 비용
 
@@ -98,4 +98,4 @@ Fixed endpoint temperatures allow energy exchange with the environment, so requi
 - MIT §16.2 and RWTH Aachen §§11.1–11.3: Fourier 법칙·에너지 수지·열확산계수 / Fourier law, energy balance, and diffusivity.
 - Cambridge and TU Delft: FTCS 차분식·안정 조건 / FTCS stencil and stability bound.
 
-도식과 해석해 비교용 수치 예는 직접 구성했다. / Diagrams and numerical examples for analytical comparison were constructed for this article.
+그림과 해석해 비교용 수치 예는 직접 구성했다. / Diagrams and numerical examples for analytical comparison were constructed for this article.

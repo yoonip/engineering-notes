@@ -64,8 +64,6 @@ def solution(points, routes):
 
 ## 다른 방법: 로봇별 경로 전개 + 시공간 해시
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from collections import Counter
 
@@ -126,9 +124,7 @@ Boundary cases: Include time zero and the final arrival instant. Four robots at 
 
 ### Alternative: Expand each trajectory into a time-position hash table
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(총 이동량), 공간 O(총 이동량) / Time and space O(total trajectory length)
-
-The main approach follows the steps described above. The alternative uses expand each trajectory into a time-position hash table; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(총 이동량), 공간 O(총 이동량) / Time and space O(total trajectory length)
 
 ### Verification
 

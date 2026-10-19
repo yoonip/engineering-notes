@@ -41,8 +41,6 @@ def solution(targets):
 
 ## 다른 방법: 시작점 정렬 + 교집합 유지
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(targets):
     end = None
@@ -94,9 +92,7 @@ Boundary cases: Endpoints are excluded. The stored end represents a shot just be
 
 ### Alternative: Sort by starts and maintain the common intersection
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N log N), 공간 O(N) / Time O(N log N), space O(N)
-
-The main approach follows the steps described above. The alternative uses sort by starts and maintain the common intersection; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N log N), 공간 O(N) / Time O(N log N), space O(N)
 
 ### Verification
 

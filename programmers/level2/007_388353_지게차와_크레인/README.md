@@ -146,8 +146,6 @@ Boundary cases: A two-letter request denotes a crane. A forklift must not remove
 
 This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 시간 O(Q(RC)^2), 공간 O(RC) / Time O(Q(RC)^2), space O(RC); 작은 창고 비교용 / small-warehouse comparison
 
-The main approach follows the steps described above. The alternative uses fixed-point expansion of the outside region; compare its intermediate state and cost with the main implementation before choosing it.
-
 ### Verification
 
 Local checks covered 2 official examples and 40 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.

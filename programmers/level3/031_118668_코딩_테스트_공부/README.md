@@ -59,7 +59,7 @@ Main complexity: O(AC(P+2)) time, O(AC) space.
 
 Use skill pairs as vertices and study/problem actions as edges. Both versions cap skills at their targets, but Dijkstra expands by elapsed time rather than by skill coordinates.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(AC(P+2) log(AC)), space O(AC).
 

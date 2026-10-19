@@ -60,7 +60,7 @@ Main complexity: O(BN(L+2^N)) time, O(2^N) states.
 
 Enumerate ordered user assignments to patterns, check each wildcard match, and deduplicate final user sets. This is more repetitive than bitmask DP but follows the assignment definition directly.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N!/(N-B)!·BL), space O(C(N,B)).
 

@@ -99,8 +99,6 @@ Boundary cases: Reject a closing bracket with an empty stack. No rotation of an 
 
 This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 시간 O(N³), 공간 O(N) / Time O(N³), space O(N)
 
-The main approach follows the steps described above. The alternative uses repeated elimination of adjacent pairs; compare its intermediate state and cost with the main implementation before choosing it.
-
 ### Verification
 
 Local checks covered 4 official examples and 80 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.

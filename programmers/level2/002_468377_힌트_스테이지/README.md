@@ -58,8 +58,6 @@ def solution(cost, hint):
 
 ## 다른 방법: 구매 집합 비트마스크 열거
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(cost, hint):
     n = len(cost)
@@ -118,9 +116,7 @@ Boundary cases: A bundle may repeat a ticket number. Cap the lookup at n−1 tic
 
 ### Alternative: Enumerating purchase subsets with a bitmask
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(2^n(n+nK)), 공간 O(n) / Time O(2^n(n+nK)), space O(n)
-
-The main approach follows the steps described above. The alternative uses enumerating purchase subsets with a bitmask; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(2^n(n+nK)), 공간 O(n) / Time O(2^n(n+nK)), space O(n)
 
 ### Verification
 

@@ -55,8 +55,6 @@ def solution(picks, minerals):
 
 ## 다른 방법: 어려운 묶음부터 좋은 곡괭이 배정
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(picks,minerals):
     usable = minerals[:sum(picks)*5]
@@ -114,9 +112,7 @@ Boundary cases: Stop when no picks remain. The last mineral block may contain fe
 
 ### Alternative: Greedy assignment of better picks to harder blocks
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N+B log B), 공간 O(B) / Time O(N+B log B), space O(B)
-
-The main approach follows the steps described above. The alternative uses greedy assignment of better picks to harder blocks; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N+B log B), 공간 O(B) / Time O(N+B log B), space O(B)
 
 ### Verification
 

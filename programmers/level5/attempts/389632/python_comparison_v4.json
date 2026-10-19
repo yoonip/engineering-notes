@@ -1,0 +1,14 @@
+[
+  {
+    "case": "random_ranges_100000",
+    "v3_seconds": 2.36,
+    "v4_seconds": 2.439,
+    "outputs_equal": true
+  },
+  {
+    "case": "mixed_90000",
+    "v3_seconds": 4.105,
+    "v4_seconds": 4.276,
+    "outputs_equal": true
+  }
+]

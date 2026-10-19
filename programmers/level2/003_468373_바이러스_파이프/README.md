@@ -77,8 +77,6 @@ def solution(n, infection, edges, k):
 
 ## 다른 방법: 감염 집합의 너비 우선 탐색
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(n, infection, edges, k):
     graph = [[[] for _ in range(n)] for _ in range(3)]
@@ -142,9 +140,7 @@ Boundary cases: A no-change activation can be skipped because at most k actions 
 
 ### Alternative: Breadth-first search over infected sets
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(3^k(n+E)), 공간 O(3^k+n+E) / Time O(3^k(n+E)), space O(3^k+n+E)
-
-The main approach follows the steps described above. The alternative uses breadth-first search over infected sets; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(3^k(n+E)), 공간 O(3^k+n+E) / Time O(3^k(n+E)), space O(3^k+n+E)
 
 ### Verification
 

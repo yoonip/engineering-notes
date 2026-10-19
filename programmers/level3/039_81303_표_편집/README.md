@@ -63,7 +63,7 @@ Main complexity: O(n+Q+sum of movement distances) time, O(n+Q) space.
 
 Store live rows as ones in a Fenwick tree. Movement changes the current live rank, and order-statistic search converts that rank back to an original row index.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(n+Q log n), space O(n).
 

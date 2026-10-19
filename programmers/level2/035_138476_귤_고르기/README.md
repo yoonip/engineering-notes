@@ -39,8 +39,6 @@ def solution(k, tangerine):
 
 ## 다른 방법: 빈도별 버킷 집계
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from collections import Counter
 
@@ -92,9 +90,7 @@ Boundary cases: Only part of the last size may be needed, but it still counts as
 
 ### Alternative: Bucket counts by frequency
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N+U), 공간 O(N+U) / Time O(N+U), space O(N+U)
-
-The main approach follows the steps described above. The alternative uses bucket counts by frequency; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N+U), 공간 O(N+U) / Time O(N+U), space O(N+U)
 
 ### Verification
 

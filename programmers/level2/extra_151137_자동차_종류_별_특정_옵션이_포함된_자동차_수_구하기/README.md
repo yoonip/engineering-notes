@@ -33,15 +33,13 @@ ORDER BY CAR_TYPE
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+세 옵션 중 하나라도 있으면 OR 조건을 만족한다. 한 자동차에 여러 옵션이 있어도 원본 행은 하나만 남으므로 COUNT(*)가 중복 없이 자동차를 센다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 옵션 문자열에서 부분 문자열을 찾고 종류별 집계를 한다. 문자열 길이가 L이면 검색은 O(NL) 규모이며 G개 결과 비교 정렬은 O(G log G)이다.
 
 주의할 점: 옵션이 둘 이상 맞아도 자동차는 한 번 센다. AND가 아니라 OR 조건이다.
 
 ## 다른 방법: 정규식 조건부 집계
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT CAR_TYPE,
@@ -55,7 +53,7 @@ ORDER BY CAR_TYPE;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 옵션 문자열에 세 조건을 OR로 적용한다. 조건에 맞는 자동차를 종류별로 묶어 COUNT(*)를 구한다. | 정규식 조건부 집계 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 옵션 문자열에서 부분 문자열을 찾고 종류별 집계를 한다. 문자열 길이가 L이면 검색은 O(NL) 규모이며 G개 결과 비교 정렬은 O(G log G)이다. | 정규식으로 옵션을 확인하며 종류별 조건부 합계를 구한다. 정규식이 LIKE 세 번보다 빠르다고 단정할 수 없다. |
 
 ## 검증
 
@@ -83,17 +81,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+OR accepts a car with any of the three options. Matching several options still retains only one source row, so COUNT(*) does not double-count that car.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Search N option strings and aggregate car types. For string length L, containment checks have O(NL) scale; sorting G groups costs O(G log G) comparisons.
 
 Boundary cases: Count a car once even when several options match. Combine conditions with OR, not AND.
 
 ### Alternative: Conditional aggregation with a regular-expression predicate
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses conditional aggregation with a regular-expression predicate; compare its intermediate state and cost with the main implementation before choosing it.
+Use a regular expression and conditional sums; regex matching is not assumed faster than three LIKE checks.
 
 ### Verification
 

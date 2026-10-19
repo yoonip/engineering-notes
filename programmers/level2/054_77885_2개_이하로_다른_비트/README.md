@@ -38,8 +38,6 @@ def solution(numbers):
 
 ## 다른 방법: 이진 문자열에서 가장 오른쪽 0 찾기
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(numbers):
     answer=[]
@@ -89,9 +87,7 @@ Boundary cases: Treat an all-one bit string as having a leading zero. Both one-b
 
 ### Alternative: Locate the rightmost zero in a binary string
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N log V), 공간 O(log V)+출력 / Time O(N log V), space O(log V) plus output
-
-The main approach follows the steps described above. The alternative uses locate the rightmost zero in a binary string; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N log V), 공간 O(log V)+출력 / Time O(N log V), space O(log V) plus output
 
 ### Verification
 

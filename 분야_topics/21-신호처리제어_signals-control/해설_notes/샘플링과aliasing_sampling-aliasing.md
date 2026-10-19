@@ -16,9 +16,9 @@
 
 ![샘플링과 aliasing: 숫자로 바꾼 뒤에는 되돌릴 수 없는 정보 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/sampling-aliasing.png)
 
-[SVG](../../../자료_assets/도식_diagrams/sampling-aliasing.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/sampling-aliasing.mmd)
+[SVG](../../../자료_assets/도식_diagrams/sampling-aliasing.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/sampling-aliasing.mmd)
 
-이 문서의 도식은 설명을 위해 직접 구성했다.
+이 문서의 그림은 설명을 위해 직접 구성했다.
 
 ## 정의와 수식
 

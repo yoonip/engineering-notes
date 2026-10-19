@@ -56,8 +56,6 @@ def solution(board):
 
 ## 다른 방법: 정지점 전처리 후 BFS
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from collections import deque
 
@@ -131,9 +129,7 @@ Boundary cases: An adjacent obstacle may cause no movement. Mark the start visit
 
 ### Alternative: Precompute slide endpoints before BFS
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(RC), 공간 O(RC) / Time and space O(RC)
-
-The main approach follows the steps described above. The alternative uses precompute slide endpoints before bfs; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(RC), 공간 O(RC) / Time and space O(RC)
 
 ### Verification
 

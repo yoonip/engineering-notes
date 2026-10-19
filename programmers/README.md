@@ -1,40 +1,38 @@
-# 프로그래머스 — 문제 풀이와 학습 기록
+# 프로그래머스 풀이 | Programmers solutions
 
-문제를 읽고 풀이를 고르는 과정부터 코드가 답을 만드는 이유까지 정리합니다. 입력이 커질 때 어떤 연산이 병목이 되는지, 같은 문제를 다른 방법으로 풀면 무엇이 달라지는지도 함께 살펴봅니다.
+제출 코드, 줄별 문법 설명, 풀이 과정과 채점 기록을 모았다. 현재 보관한 통과 코드는 586문제다.
 
-## 문제 찾기
-
-| 난이도 / Level | 문제 수 / Count | 제출 언어 / Submission languages |
+| 난이도 / Level | 보관한 통과 코드 / Accepted submissions | 언어 / Languages |
 |---|---:|---|
+| [Level 0](level0/README.md) | 236 | Python3 236 |
+| [Level 1](level1/README.md) | 37 | Python3 6 · MySQL 31 |
 | [Level 2](level2/README.md) | 155 | Python3 117 · MySQL 36 · C++ 2 |
 | [Level 3](level3/README.md) | 109 | Python3 82 · MySQL 21 · C++ 6 |
 | [Level 4](level4/README.md) | 45 | Python3 25 · MySQL 18 · C++ 2 |
+| [Level 5](level5/README.md) | 4 | Python3 2 · MySQL 2 |
 
-총 309문제이며 제출 언어별로 Python 224개, MySQL 75개, C++ 10개입니다. C++ 문제에는 별도의 Python 비교 구현도 있습니다.
+[알고리즘별 설명](ALGORITHMS.md) · [보관 범위와 확인 결과](COVERAGE.md) · [검증 기록](VALIDATION.md) · [전체 검색 목록](all_problems.json)
 
-[알고리즘 길잡이](ALGORITHMS.md) · [검증 내용과 실행 방법](VALIDATION.md) · [검색용 목록](catalog.json)
+## 자료를 읽는 방법
 
-## 각 문제에 담은 내용
+레벨 2~4의 309문제는 입력 조건, 알고리즘 선택, 정답이 되는 이유, 기본·대안 코드, 시간·공간 비용, 예제와 검증 코드를 함께 정리했다. 설명은 한국어와 영어로 적고 코드 주석은 한국어로 썼다. [해당 목록](catalog.json)과 [검증 실행 방법](VALIDATION.md)에서 확인할 수 있다.
 
-- 문제의 목표, 입력 범위, 예외와 정렬 조건
-- 자료구조와 알고리즘을 선택한 이유, 코드가 답을 만드는 과정
-- 한국어 주석을 단 기본 코드와 별도의 대안 코드
-- 시간·공간 비용과 두 방법의 차이
-- 공식 예제, 경계 입력, 생성 입력을 이용한 검증 코드
-- 공식 문제 링크와 원본 제출 파일
+레벨 0·1의 273문제와 레벨 5의 4문제는 제출 당시 코드를 그대로 보관했다. 코드 위에는 실행 부분이 있고, 아래에는 동일한 코드 전체를 주석 처리해 각 줄의 문법과 목적을 적었다. 문제별 README에서도 코드와 짧은 풀이를 바로 읽을 수 있다. 이 277문제의 주석과 풀이 요약은 한국어이며, [제출 목록](recent_submissions.json)에 파일 해시와 기록 범위가 있다.
 
-설명은 한국어를 먼저 읽은 뒤 같은 내용을 영어로 확인할 수 있게 구성했습니다. 문제의 긴 배경과 그림은 공식 페이지에서 확인하고, 여기에서는 풀이에 필요한 조건을 요약합니다. 느린 전수 탐색은 작은 입력의 기준값을 확인하는 용도로 표시했습니다. 효율적인 기본 풀이와 적용 범위를 비교해 볼 수 있습니다.
+레벨 0·1 목록은 미완료로 남아 있던 문제를 풀며 저장한 자료다. 계정에서 그 전에 완료한 문제의 코드까지 모두 보관했다는 뜻은 아니다. 빈칸 채우기·한 줄 수정 문제 12개는 사이트 편집 형식 때문에 지정된 부분만 제출했고, 전체 주석본은 여기에서 볼 수 있다.
 
-SQL에서는 NULL, 중복, 공동 최댓값, 날짜 경계, 최종 정렬을 특히 구분합니다. 원본 채점 기록과 새로 실행한 로컬 검증은 [검증 기록](VALIDATION.md)에 따로 적었습니다.
+레벨 5는 전체 21문제 중 4문제가 통과했다. [문자열과 알파벳과 쿼리](level5/attempts/389632/README.md)는 Python 네 버전의 코드, 부분 통과 기록과 시간 초과 원인을 따로 정리했다. 이 시도는 통과 코드 586개에 포함하지 않는다. 나머지 16문제는 아직 풀이를 추가하지 않았다.
 
 ## English
 
-This collection follows the reasoning from problem conditions to an implementation: why an algorithm fits, how it produces the answer, and which operations become expensive as inputs grow. Alternative implementations make the trade-offs concrete.
+The archive contains 586 accepted submissions: 236 at Level 0, 37 at Level 1, 155 at Level 2, 109 at Level 3, 45 at Level 4, and four at Level 5. Languages total 468 Python, 108 MySQL, and ten C++ submissions.
 
-The collection contains 309 problems: 155 at Level 2, 109 at Level 3, and 45 at Level 4. Submission languages are Python for 224 problems, MySQL for 75, and C++ for 10. C++ problems also have Python comparison implementations.
+The 309 Level 2–4 study notes include conditions, algorithm choice, correctness reasoning, primary and alternative implementations, complexity, examples and executable checks. Explanations are in Korean and English; code comments are in Korean. Their [catalog](catalog.json) and [validation record](VALIDATION.md) describe the checks.
 
-Each problem includes its objective and bounds, relevant edge and ordering rules, algorithm choice, correctness reasoning, commented primary code, a separate alternative, time and space costs, executable checks and an official source link. Explanations appear in Korean first and English second; code comments remain in Korean.
+The other 277 entries preserve submitted code, followed by an exact commented copy with Korean syntax and purpose notes. Their README files contain the code and a short Korean method note. The [submission catalog](recent_submissions.json) records hashes and grading metadata; these entries do not claim the same alternative-solution or local-test coverage as the Level 2–4 notes.
 
-Long problem narratives and figures remain on the official pages. These notes summarize the conditions needed for solving them. Exhaustive references are labeled with their small-input scope and compared with the efficient primary solution. SQL notes distinguish NULLs, duplicates, tied maxima, date boundaries and final ordering.
+Level 0–1 covers the previously unfinished problems solved during the recorded session, rather than every older submission on the account. Twelve restricted editing exercises have full annotations in this archive, while only the required blanks or edited lines were submitted on the website.
 
-[Algorithm guide](ALGORITHMS.md) · [Validation and reproducible commands](VALIDATION.md) · [Machine-readable index](catalog.json)
+Level 5 has four accepted solutions out of 21 problems. The [failed Python attempt](level5/attempts/389632/README.md) has its own code comparisons and timeout analysis and is excluded from the accepted count. The remaining 16 problems have no archived solution.
+
+[Coverage](COVERAGE.md) · [All accepted problems](all_problems.json) · [Algorithm guide](ALGORITHMS.md)

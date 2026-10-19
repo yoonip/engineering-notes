@@ -40,8 +40,6 @@ def solution(order):
 
 ## 다른 방법: 요청 상자 기준의 역방향 시뮬레이션
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(order):
     incoming=1
@@ -94,9 +92,7 @@ Boundary cases: You cannot remove a middle box from the auxiliary belt. Each box
 
 ### Alternative: Drive the simulation by requested box numbers
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N), 공간 O(N) / Time and space O(N)
-
-The main approach follows the steps described above. The alternative uses drive the simulation by requested box numbers; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N), 공간 O(N) / Time and space O(N)
 
 ### Verification
 

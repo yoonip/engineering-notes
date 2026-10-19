@@ -50,8 +50,6 @@ B의 흔적이 같으면 A의 흔적이 더 큰 상태는 이후에도 이득이
 
 ## 다른 방법: A·B 흔적 쌍의 집합 DP
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(info, n, m):
     states = {(0, 0)}
@@ -104,9 +102,7 @@ Boundary cases: Traces must be strictly below the thresholds. A fresh array prev
 
 ### Alternative: Set-based DP over both trace totals
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(Nnm), 공간 O(nm) / Time O(Nnm), space O(nm)
-
-The main approach follows the steps described above. The alternative uses set-based dp over both trace totals; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(Nnm), 공간 O(nm) / Time O(Nnm), space O(nm)
 
 ### Verification
 

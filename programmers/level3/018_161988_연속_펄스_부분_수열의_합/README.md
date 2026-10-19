@@ -58,7 +58,7 @@ Main complexity: O(N) time, O(1) extra space.
 
 Run Kadane DP for both alternating signs. Unlike the prefix-range solution, it explicitly decides whether to extend the current subarray.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N), space O(1).
 

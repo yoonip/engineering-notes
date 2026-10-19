@@ -62,7 +62,7 @@ Main complexity: O(N log N) time, O(N) space.
 
 Scan all arrived unfinished jobs and choose the minimum (duration, request time, job index). This follows the specified priority directly without a heap.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N²), space O(N).
 

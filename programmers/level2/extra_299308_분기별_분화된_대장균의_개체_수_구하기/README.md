@@ -30,15 +30,13 @@ ORDER BY QUARTER
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+QUARTER는 각 날짜를 정확히 1~4분기 중 하나에 배정한다. 같은 분기를 세고 Q를 붙이며, 1Q~4Q의 문자열 순서는 분기 숫자순과 같다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 날짜를 읽고 최대 4개 그룹을 집계한다. 순차 집계가 가능하면 O(N) 규모이며 결과 정렬 크기는 4 이하로 고정된다.
 
 주의할 점: 연도가 아니라 분기만 묶는다. 실제 행이 없는 그룹을 임의로 추가하지 않는다.
 
 ## 다른 방법: CASE로 분기를 계산한 뒤 집계
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 WITH categorized AS (
@@ -56,7 +54,7 @@ FROM categorized GROUP BY Q ORDER BY Q;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | QUARTER로 1~4분기를 구해 GROUP BY한 뒤 Q를 붙인다. 집계 결과를 분기순으로 출력한다. | CASE로 분기를 계산한 뒤 집계 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 날짜를 읽고 최대 4개 그룹을 집계한다. 순차 집계가 가능하면 O(N) 규모이며 결과 정렬 크기는 4 이하로 고정된다. | MONTH의 범위를 CASE로 나눠 분기 번호를 만든 뒤 집계한다. QUARTER를 이용한 집계와 같은 네 그룹을 만든다. |
 
 ## 검증
 
@@ -84,17 +82,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+QUARTER assigns every date to one of four quarters. Count equal quarters and append Q; ordering 1Q through 4Q matches numeric quarter order.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Read N dates and aggregate at most four groups. Sequential aggregation has O(N) scale, with sorting bounded by four quarter results.
 
 Boundary cases: Group by quarter rather than year. Do not invent groups absent from the input.
 
 ### Alternative: Compute quarter with CASE before grouping
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses compute quarter with case before grouping; compare its intermediate state and cost with the main implementation before choosing it.
+Map month ranges with CASE and aggregate the same four quarter groups as QUARTER.
 
 ### Verification
 

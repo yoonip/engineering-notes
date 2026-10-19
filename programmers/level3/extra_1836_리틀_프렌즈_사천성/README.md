@@ -61,7 +61,7 @@ Main complexity: O(mn+T²(m+n)) time, O(mn) space; T≤26.
 
 Search tile connectivity with (cell, direction, turn count) states rather than testing two L-shaped paths. Remove the smallest connectable letter, allowing at most one turn.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(T²MN), space O(MN).
 

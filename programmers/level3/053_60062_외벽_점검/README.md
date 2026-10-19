@@ -63,7 +63,7 @@ Main complexity: O(F! W²) time, O(F!F+W) space for materialized permutations.
 
 For each circular starting point, store the farthest covered weak-point index for every subset of used friends. For a fixed subset, farther coverage dominates shorter coverage.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(W²F2^F), space O(2^F+W).
 

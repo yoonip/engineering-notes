@@ -48,8 +48,6 @@ def solution(rows, columns, queries):
 
 ## 다른 방법: 임시 값 하나로 네 변 제자리 교환
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(rows,columns,queries):
     board=[[r*columns+c+1 for c in range(columns)] for r in range(rows)]
@@ -103,9 +101,7 @@ Boundary cases: Input coordinates are one-based. Every rotation uses the matrix 
 
 ### Alternative: In-place four-edge rotation with one carried value
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(RC+ΣP), 공간 O(RC) / Time O(RC+ΣP), space O(RC)
-
-The main approach follows the steps described above. The alternative uses in-place four-edge rotation with one carried value; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(RC+ΣP), 공간 O(RC) / Time O(RC+ΣP), space O(RC)
 
 ### Verification
 

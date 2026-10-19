@@ -63,7 +63,7 @@ Main complexity: O(W²L) time, O(W) auxiliary space.
 
 Group words by patterns with one character replaced by a wildcard. Words in a bucket differ in one position, avoiding repeated full pairwise comparisons.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(WL²+W²L), space O(WL²).
 

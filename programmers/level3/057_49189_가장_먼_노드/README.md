@@ -58,7 +58,7 @@ Main complexity: O(N+E) time and space.
 
 Apply Dijkstra with unit edge weights. Distances match BFS, but heap operations are unnecessary overhead, so BFS is preferable for this unweighted graph.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O((N+E) log N), space O(N+E).
 

@@ -52,8 +52,6 @@ def solution(users, emoticons):
 
 ## 다른 방법: 사용자별 누적 구매액을 갱신하는 DFS
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(users,emoticons):
     spending=[0]*len(users)
@@ -114,9 +112,7 @@ Boundary cases: Do not add subscribers’ canceled purchases to revenue. A disco
 
 ### Alternative: DFS with incremental per-user spending
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(4^M·U), 공간 O(U+M) / Time O(4^M·U), space O(U+M)
-
-The main approach follows the steps described above. The alternative uses dfs with incremental per-user spending; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(4^M·U), 공간 O(U+M) / Time O(4^M·U), space O(U+M)
 
 ### Verification
 

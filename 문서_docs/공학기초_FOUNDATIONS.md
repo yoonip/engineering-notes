@@ -8,7 +8,7 @@
 
 ![기초에서 구현과 검증까지 — 개념도 / Concept diagram](../자료_assets/도식_diagrams/foundations.png)
 
-[SVG](../자료_assets/도식_diagrams/foundations.svg) · [도식 원본 / Diagram source](../자료_assets/도식_diagrams/foundations.mmd)
+[SVG](../자료_assets/도식_diagrams/foundations.svg) · [그림 원본 / Diagram source](../자료_assets/도식_diagrams/foundations.mmd)
 
 직접 구성한 연결도다. 위아래는 기술의 우열이 아니라 모델 사이의 관계를 뜻한다. 소프트웨어에서 출발해 하드웨어로 내려가도 되고, 측정하려는 현상에서 필요한 수학으로 돌아가도 된다.
 

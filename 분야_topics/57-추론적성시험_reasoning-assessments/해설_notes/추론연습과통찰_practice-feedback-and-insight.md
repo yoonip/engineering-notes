@@ -43,7 +43,7 @@ $`n`$개 문항 중 맞힌 수가 $`k`$면 관찰 정확도는 $`k/n`$이다. �
 
 ![추론 연습과 통찰: 익숙함을 이해로 착각하지 않기 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/practice-feedback-and-insight.png)
 
-[SVG](../../../자료_assets/도식_diagrams/practice-feedback-and-insight.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/practice-feedback-and-insight.mmd)
+[SVG](../../../자료_assets/도식_diagrams/practice-feedback-and-insight.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/practice-feedback-and-insight.mmd)
 
 이 문서를 위해 구성한 학습 기록 흐름이다. 실제 기출의 공개 경로와 식별 방법은 [공식 시험 자료 안내](LEETPSAT기업검사_official-exams-and-past-papers.md)에 정리한다.
 

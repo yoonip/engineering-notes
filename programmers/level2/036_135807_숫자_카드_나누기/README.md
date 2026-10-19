@@ -43,8 +43,6 @@ def solution(arrayA, arrayB):
 
 ## 다른 방법: 첫 원소의 약수 열거
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from math import isqrt
 
@@ -100,9 +98,7 @@ Boundary cases: The candidate must divide no value in the opposite array, not me
 
 ### Alternative: Enumerate divisors of the first element
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(sqrt(V)+N·τ(V)), 공간 O(τ(V)) / Time O(sqrt(V)+N·τ(V)), space O(τ(V)); τ=약수 수 / divisor count
-
-The main approach follows the steps described above. The alternative uses enumerate divisors of the first element; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(sqrt(V)+N·τ(V)), 공간 O(τ(V)) / Time O(sqrt(V)+N·τ(V)), space O(τ(V)); τ=약수 수 / divisor count
 
 ### Verification
 

@@ -59,7 +59,7 @@ Main complexity: O(k(n+m)) time, O(n+m) space.
 
 Memoize by time and current vertex, considering staying and every adjacent move. The final recorded vertex is fixed. This computes the recurrence on demand rather than layer by layer.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(K(N+M)), space O(KN+N+M).
 

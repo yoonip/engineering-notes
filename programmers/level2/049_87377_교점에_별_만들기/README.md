@@ -55,8 +55,6 @@ def solution(line):
 
 ## 다른 방법: 유리수 가우스 소거로 교점 계산
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from itertools import combinations
 from fractions import Fraction
@@ -119,9 +117,7 @@ Boundary cases: Do not test integrality with floating point. Render larger y val
 
 ### Alternative: Rational Gaussian elimination for each intersection
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(L²+A), 공간 O(L²+A), 유리수 연산 비용 추가 / Time and space O(L²+A), with rational-arithmetic overhead
-
-The main approach follows the steps described above. The alternative uses rational gaussian elimination for each intersection; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(L²+A), 공간 O(L²+A), 유리수 연산 비용 추가 / Time and space O(L²+A), with rational-arithmetic overhead
 
 ### Verification
 

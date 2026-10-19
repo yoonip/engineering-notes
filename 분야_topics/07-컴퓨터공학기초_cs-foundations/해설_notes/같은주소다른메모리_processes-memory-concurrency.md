@@ -26,7 +26,7 @@ $$a=\mathrm{PFN}\,P+o$$
 
 ![같은 주소, 다른 메모리: 프로세스·가상 메모리·동시성 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/processes-memory-concurrency.png)
 
-[SVG](../../../자료_assets/도식_diagrams/processes-memory-concurrency.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/processes-memory-concurrency.mmd)
+[SVG](../../../자료_assets/도식_diagrams/processes-memory-concurrency.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/processes-memory-concurrency.mmd)
 
 직접 작성한 개념도다. TLB는 주소 변환 결과를 저장하는 캐시다. 페이지 테이블을 바꾸면 오래된 TLB 항목이 남지 않도록 아키텍처가 요구하는 동기화도 필요하다. TLB hit와 data cache hit는 서로 다른 사건이다.
 

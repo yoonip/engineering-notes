@@ -62,7 +62,7 @@ Main complexity: O(N log N) time, O(N) space.
 
 Aggregate genre totals, then use nsmallest to select only two songs per genre. This avoids fully sorting every genre’s songs.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N+G log G), space O(N).
 

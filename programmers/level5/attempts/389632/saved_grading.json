@@ -1,0 +1,516 @@
+[
+  {
+    "version": 1,
+    "score": "15.0",
+    "total": 62,
+    "passed": 46,
+    "time_limit_exceeded": 16,
+    "tests": [
+      {
+        "test": 1,
+        "result": "통과 (0.07ms, 12.1MB)"
+      },
+      {
+        "test": 2,
+        "result": "통과 (0.08ms, 12.3MB)"
+      },
+      {
+        "test": 3,
+        "result": "통과 (0.05ms, 12MB)"
+      },
+      {
+        "test": 4,
+        "result": "통과 (0.06ms, 12.1MB)"
+      },
+      {
+        "test": 5,
+        "result": "통과 (0.15ms, 11.8MB)"
+      },
+      {
+        "test": 6,
+        "result": "통과 (0.15ms, 12.2MB)"
+      },
+      {
+        "test": 7,
+        "result": "통과 (0.09ms, 12.1MB)"
+      },
+      {
+        "test": 8,
+        "result": "통과 (0.13ms, 12MB)"
+      },
+      {
+        "test": 9,
+        "result": "통과 (0.22ms, 12.2MB)"
+      },
+      {
+        "test": 10,
+        "result": "통과 (0.28ms, 12.2MB)"
+      },
+      {
+        "test": 11,
+        "result": "통과 (0.41ms, 12.1MB)"
+      },
+      {
+        "test": 12,
+        "result": "통과 (0.28ms, 12MB)"
+      },
+      {
+        "test": 13,
+        "result": "통과 (0.20ms, 11.8MB)"
+      },
+      {
+        "test": 14,
+        "result": "통과 (0.20ms, 12.1MB)"
+      },
+      {
+        "test": 15,
+        "result": "통과 (0.22ms, 12.1MB)"
+      },
+      {
+        "test": 16,
+        "result": "통과 (0.25ms, 11.9MB)"
+      },
+      {
+        "test": 17,
+        "result": "통과 (0.25ms, 12MB)"
+      },
+      {
+        "test": 18,
+        "result": "통과 (29.69ms, 12.2MB)"
+      },
+      {
+        "test": 19,
+        "result": "통과 (12.82ms, 12.4MB)"
+      },
+      {
+        "test": 20,
+        "result": "통과 (11.79ms, 12.3MB)"
+      },
+      {
+        "test": 21,
+        "result": "통과 (13.03ms, 12.2MB)"
+      },
+      {
+        "test": 22,
+        "result": "통과 (11.59ms, 12.1MB)"
+      },
+      {
+        "test": 23,
+        "result": "통과 (48.42ms, 12.4MB)"
+      },
+      {
+        "test": 24,
+        "result": "통과 (4.92ms, 12.2MB)"
+      },
+      {
+        "test": 25,
+        "result": "통과 (5.51ms, 12.2MB)"
+      },
+      {
+        "test": 26,
+        "result": "통과 (50.42ms, 12.2MB)"
+      },
+      {
+        "test": 27,
+        "result": "통과 (25.79ms, 12.2MB)"
+      },
+      {
+        "test": 28,
+        "result": "통과 (10.86ms, 12.2MB)"
+      },
+      {
+        "test": 29,
+        "result": "통과 (36.30ms, 12.3MB)"
+      },
+      {
+        "test": 30,
+        "result": "통과 (26.12ms, 12.1MB)"
+      },
+      {
+        "test": 31,
+        "result": "통과 (345.10ms, 16.2MB)"
+      },
+      {
+        "test": 32,
+        "result": "통과 (747.10ms, 17.6MB)"
+      },
+      {
+        "test": 33,
+        "result": "통과 (756.22ms, 17.2MB)"
+      },
+      {
+        "test": 34,
+        "result": "통과 (834.33ms, 17.5MB)"
+      },
+      {
+        "test": 35,
+        "result": "통과 (445.54ms, 16.5MB)"
+      },
+      {
+        "test": 36,
+        "result": "통과 (453.71ms, 18.4MB)"
+      },
+      {
+        "test": 37,
+        "result": "통과 (2648.86ms, 21.8MB)"
+      },
+      {
+        "test": 38,
+        "result": "통과 (287.85ms, 15.9MB)"
+      },
+      {
+        "test": 39,
+        "result": "통과 (703.51ms, 17MB)"
+      },
+      {
+        "test": 40,
+        "result": "통과 (725.88ms, 17.1MB)"
+      },
+      {
+        "test": 41,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 42,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 43,
+        "result": "통과 (6771.83ms, 53.1MB)"
+      },
+      {
+        "test": 44,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 45,
+        "result": "통과 (7397.47ms, 48.5MB)"
+      },
+      {
+        "test": 46,
+        "result": "통과 (3519.12ms, 47.2MB)"
+      },
+      {
+        "test": 47,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 48,
+        "result": "통과 (3685.83ms, 43.3MB)"
+      },
+      {
+        "test": 49,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 50,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 51,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 52,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 53,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 54,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 55,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 56,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 57,
+        "result": "통과 (6027.39ms, 52MB)"
+      },
+      {
+        "test": 58,
+        "result": "통과 (6557.32ms, 77.8MB)"
+      },
+      {
+        "test": 59,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 60,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 61,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 62,
+        "result": "실패 (시간 초과)"
+      }
+    ]
+  },
+  {
+    "version": 4,
+    "score": "15.0",
+    "total": 62,
+    "passed": 58,
+    "time_limit_exceeded": 4,
+    "tests": [
+      {
+        "test": 1,
+        "result": "통과 (55.52ms, 43MB)"
+      },
+      {
+        "test": 2,
+        "result": "통과 (53.20ms, 43.2MB)"
+      },
+      {
+        "test": 3,
+        "result": "통과 (54.84ms, 43.1MB)"
+      },
+      {
+        "test": 4,
+        "result": "통과 (55.20ms, 43.3MB)"
+      },
+      {
+        "test": 5,
+        "result": "통과 (53.97ms, 43.4MB)"
+      },
+      {
+        "test": 6,
+        "result": "통과 (54.73ms, 43.2MB)"
+      },
+      {
+        "test": 7,
+        "result": "통과 (63.81ms, 43MB)"
+      },
+      {
+        "test": 8,
+        "result": "통과 (56.08ms, 43.1MB)"
+      },
+      {
+        "test": 9,
+        "result": "통과 (53.35ms, 43.1MB)"
+      },
+      {
+        "test": 10,
+        "result": "통과 (54.02ms, 43.1MB)"
+      },
+      {
+        "test": 11,
+        "result": "통과 (53.29ms, 43.1MB)"
+      },
+      {
+        "test": 12,
+        "result": "통과 (55.11ms, 43.2MB)"
+      },
+      {
+        "test": 13,
+        "result": "통과 (53.35ms, 43.3MB)"
+      },
+      {
+        "test": 14,
+        "result": "통과 (55.37ms, 42.9MB)"
+      },
+      {
+        "test": 15,
+        "result": "통과 (54.62ms, 43.2MB)"
+      },
+      {
+        "test": 16,
+        "result": "통과 (52.16ms, 43.3MB)"
+      },
+      {
+        "test": 17,
+        "result": "통과 (50.91ms, 43.1MB)"
+      },
+      {
+        "test": 18,
+        "result": "통과 (60.98ms, 43.3MB)"
+      },
+      {
+        "test": 19,
+        "result": "통과 (60.25ms, 43.3MB)"
+      },
+      {
+        "test": 20,
+        "result": "통과 (58.49ms, 43.4MB)"
+      },
+      {
+        "test": 21,
+        "result": "통과 (59.83ms, 43.3MB)"
+      },
+      {
+        "test": 22,
+        "result": "통과 (58.98ms, 43.5MB)"
+      },
+      {
+        "test": 23,
+        "result": "통과 (58.45ms, 43.1MB)"
+      },
+      {
+        "test": 24,
+        "result": "통과 (56.84ms, 43.3MB)"
+      },
+      {
+        "test": 25,
+        "result": "통과 (59.75ms, 43.4MB)"
+      },
+      {
+        "test": 26,
+        "result": "통과 (55.86ms, 43.3MB)"
+      },
+      {
+        "test": 27,
+        "result": "통과 (57.97ms, 43.2MB)"
+      },
+      {
+        "test": 28,
+        "result": "통과 (59.10ms, 43.4MB)"
+      },
+      {
+        "test": 29,
+        "result": "통과 (57.98ms, 43.4MB)"
+      },
+      {
+        "test": 30,
+        "result": "통과 (59.14ms, 43.2MB)"
+      },
+      {
+        "test": 31,
+        "result": "통과 (250.62ms, 46.2MB)"
+      },
+      {
+        "test": 32,
+        "result": "통과 (334.65ms, 46MB)"
+      },
+      {
+        "test": 33,
+        "result": "통과 (334.58ms, 46MB)"
+      },
+      {
+        "test": 34,
+        "result": "통과 (321.93ms, 46.1MB)"
+      },
+      {
+        "test": 35,
+        "result": "통과 (253.43ms, 46.1MB)"
+      },
+      {
+        "test": 36,
+        "result": "통과 (389.42ms, 46.5MB)"
+      },
+      {
+        "test": 37,
+        "result": "통과 (328.51ms, 46.2MB)"
+      },
+      {
+        "test": 38,
+        "result": "통과 (147.08ms, 45.5MB)"
+      },
+      {
+        "test": 39,
+        "result": "통과 (320.94ms, 46.2MB)"
+      },
+      {
+        "test": 40,
+        "result": "통과 (296.76ms, 45.8MB)"
+      },
+      {
+        "test": 41,
+        "result": "통과 (9470.95ms, 66.9MB)"
+      },
+      {
+        "test": 42,
+        "result": "통과 (9452.04ms, 66.8MB)"
+      },
+      {
+        "test": 43,
+        "result": "통과 (7674.33ms, 68.1MB)"
+      },
+      {
+        "test": 44,
+        "result": "통과 (8806.75ms, 68.4MB)"
+      },
+      {
+        "test": 45,
+        "result": "통과 (6617.01ms, 66MB)"
+      },
+      {
+        "test": 46,
+        "result": "통과 (6684.13ms, 68.1MB)"
+      },
+      {
+        "test": 47,
+        "result": "통과 (9252.10ms, 68.3MB)"
+      },
+      {
+        "test": 48,
+        "result": "통과 (3700.23ms, 65.4MB)"
+      },
+      {
+        "test": 49,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 50,
+        "result": "통과 (9106.33ms, 66.4MB)"
+      },
+      {
+        "test": 51,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 52,
+        "result": "통과 (7753.42ms, 67.4MB)"
+      },
+      {
+        "test": 53,
+        "result": "통과 (7457.71ms, 68.8MB)"
+      },
+      {
+        "test": 54,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 55,
+        "result": "통과 (8816.45ms, 68MB)"
+      },
+      {
+        "test": 56,
+        "result": "통과 (9289.00ms, 68.5MB)"
+      },
+      {
+        "test": 57,
+        "result": "통과 (6755.27ms, 68.3MB)"
+      },
+      {
+        "test": 58,
+        "result": "실패 (시간 초과)"
+      },
+      {
+        "test": 59,
+        "result": "통과 (8333.64ms, 68.3MB)"
+      },
+      {
+        "test": 60,
+        "result": "통과 (9452.85ms, 68.2MB)"
+      },
+      {
+        "test": 61,
+        "result": "통과 (8120.06ms, 68.4MB)"
+      },
+      {
+        "test": 62,
+        "result": "통과 (8193.29ms, 68.4MB)"
+      }
+    ]
+  }
+]

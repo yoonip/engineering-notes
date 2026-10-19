@@ -59,7 +59,7 @@ Main complexity: O(NM) time and space.
 
 Enumerate row flips, then each column must either match entirely or be entirely opposite. Column choices are forced. This directly checks the faster XOR characterization.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(2^N NM), space O(N+M).
 

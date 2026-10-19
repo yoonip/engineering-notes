@@ -58,7 +58,7 @@ Main complexity: O(N) time, O(k) deque space.
 
 For p people to cross, there must be no run of k stones with original durability below p. Binary-search the largest feasible p; it is slower than the monotone deque but checks feasibility directly.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N log max durability), space O(1).
 

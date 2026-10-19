@@ -32,15 +32,13 @@ ORDER BY SALES DESC, p.PRODUCT_CODE
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+판매 행을 상품 키로 연결하면 각 판매 수량에 해당 상품 가격을 곱할 수 있다. 이를 상품 코드별로 더하면 오프라인 매출이 된다. 대안은 수량을 먼저 합쳐 같은 곱셈의 분배법칙을 적용한다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+상품 P개와 판매 S개의 조인·집계 뒤 G개 매출을 정렬한다. 조인 비용은 키 인덱스와 계획에 따르며 결과 비교 정렬은 O(G log G)이다.
 
 주의할 점: 판매 기록 수가 아니라 판매 수량을 곱한다. 판매가 없는 상품은 내부 조인 결과에 없다.
 
 ## 다른 방법: 상품별 판매 수량 선집계
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 WITH quantities AS (
@@ -54,7 +52,7 @@ GROUP BY p.PRODUCT_CODE ORDER BY SALES DESC,p.PRODUCT_CODE;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | PRODUCT_ID로 상품과 판매 기록을 연결한다. PRODUCT_CODE별 PRICE×SALES_AMOUNT 합계를 구하고 매출 내림차순·코드 오름차순으로 출력한다. | 상품별 판매 수량 선집계 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | 상품 P개와 판매 S개의 조인·집계 뒤 G개 매출을 정렬한다. 조인 비용은 키 인덱스와 계획에 따르며 결과 비교 정렬은 O(G log G)이다. | 판매 수량을 상품별로 먼저 합쳐 조인 행 수를 줄인다. 상품당 판매가 여러 건일 때 중간 조인 크기가 작아진다. |
 
 ## 검증
 
@@ -83,17 +81,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+The product-key join attaches a unit price to each sale. Summing price times quantity by product code gives revenue. Preaggregating quantities uses the same distributive identity.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Join P products with S sales, aggregate and sort G totals. Key indexes and the plan determine join cost; result comparison sorting is O(G log G).
 
 Boundary cases: Multiply by sales quantity, not sale-record count. Products without sales are absent from the inner join.
 
 ### Alternative: Preaggregate sold quantities per product
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses preaggregate sold quantities per product; compare its intermediate state and cost with the main implementation before choosing it.
+Preaggregate quantities by product, reducing joined rows when products have multiple sales.
 
 ### Verification
 

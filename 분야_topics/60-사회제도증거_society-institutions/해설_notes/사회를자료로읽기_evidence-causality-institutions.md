@@ -18,9 +18,9 @@
 
 ![사회를 자료로 읽기: 제도, 규범과 인과관계 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/evidence-causality-institutions.png)
 
-[SVG](../../../자료_assets/도식_diagrams/evidence-causality-institutions.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/evidence-causality-institutions.mmd)
+[SVG](../../../자료_assets/도식_diagrams/evidence-causality-institutions.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/evidence-causality-institutions.mmd)
 
-직접 작성한 가설 도식이다. 화살표는 자료로 입증된 사실이 아니라 검토할 인과 가정을 나타낸다. 기존 역량이 참여와 결과 모두에 영향을 주면, 두 집단을 그대로 비교할 때 선택 차이가 섞인다.
+직접 작성한 인과관계 그림이다. 화살표는 자료로 입증된 사실이 아니라 검토할 인과 가정을 나타낸다. 기존 역량이 참여와 결과 모두에 영향을 주면, 두 집단을 그대로 비교할 때 선택 차이가 섞인다.
 
 개인 $`i`$의 훈련 참여 결과를 $`Y_i(1)`$, 비참여 결과를 $`Y_i(0)`$라고 쓴다. 한 사람에게 같은 시점의 두 상태를 모두 관찰할 수 없다는 점이 평가의 어려움이다. 평균 효과는 $`E[Y(1)-Y(0)]`$로 정의할 수 있지만, 그 정의만으로 관측 자료에서 값을 계산할 수 있는 것은 아니다. [World Bank, Impact Evaluation in Practice, 2nd ed., Chapter 3](https://documents1.worldbank.org/curated/en/698441474029568469/pdf/Impact-evaluation-in-practice.pdf)
 
@@ -100,4 +100,4 @@ Effectiveness and justification are distinct questions. A positive average effec
 - Gertler 외, World Bank, *Impact Evaluation in Practice*, 2nd ed., 2016, Chapters 3–9: 반사실·비교 집단·평가 설계·불이행 / counterfactuals, comparison groups, evaluation design, and noncompliance.
 - MIT J-PAL: 무작위 배정의 의미, 파급과 적용 한계 / assignment, spillovers, and limitations.
 
-효과의 정의와 실제 식별 조건을 World Bank와 J-PAL의 설명으로 대조했다. 도식·수치 예와 식의 재배열은 개념 설명용이다. / Effect definitions and identification conditions were cross-checked between World Bank and J-PAL. The diagram, numerical examples, and algebraic decomposition are explanatory. 확인 / checked: 2026-10-19.
+효과의 정의와 실제 식별 조건을 World Bank와 J-PAL의 설명으로 대조했다. 그림·수치 예와 식의 재배열은 개념 설명용이다. / Effect definitions and identification conditions were cross-checked between World Bank and J-PAL. The diagram, numerical examples, and algebraic decomposition are explanatory. 확인 / checked: 2026-10-19.

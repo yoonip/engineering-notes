@@ -63,7 +63,7 @@ Main complexity: O(sales·log maximum sale profit) time, O(members) space.
 
 Recursively pass ten percent of each individual sale to the referrer. Never merge sales before rounding, because integer division is per transaction. This expresses propagation recursively rather than iteratively.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(sales·log(max sale profit)), space O(members+propagation depth).
 

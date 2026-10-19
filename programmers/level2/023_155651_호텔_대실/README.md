@@ -43,8 +43,6 @@ def solution(book_time):
 
 ## 다른 방법: 시작순 정렬 + 종료 시각 최소 힙
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from heapq import heappush,heappop
 
@@ -99,9 +97,7 @@ Boundary cases: A room is reusable exactly at end+10. Allow the cleanup interval
 
 ### Alternative: Start-order scheduling with a min-heap of availability times
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N log N), 공간 O(N) / Time O(N log N), space O(N)
-
-The main approach follows the steps described above. The alternative uses start-order scheduling with a min-heap of availability times; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N log N), 공간 O(N) / Time O(N log N), space O(N)
 
 ### Verification
 

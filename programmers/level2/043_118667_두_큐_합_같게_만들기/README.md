@@ -53,8 +53,6 @@ def solution(queue1, queue2):
 
 ## 다른 방법: 배열을 복사하지 않는 원형 투 포인터
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(queue1,queue2):
     values=queue1+queue2
@@ -113,9 +111,7 @@ Boundary cases: The combined sum can be large. A bounded search terminates impos
 
 ### Alternative: Circular-array two pointers
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N), 공간 O(N) / Time and space O(N)
-
-The main approach follows the steps described above. The alternative uses circular-array two pointers; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N), 공간 O(N) / Time and space O(N)
 
 ### Verification
 

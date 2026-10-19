@@ -36,7 +36,7 @@ LEET와 PSAT는 문항의 학년도·시행연도·영역·책형·최종 정답
 
 ![추론과 인문·사회: 근거를 읽고 판단하기 — 개념도 / Concept diagram](../자료_assets/도식_diagrams/reasoning_and_humanities.png)
 
-[SVG](../자료_assets/도식_diagrams/reasoning_and_humanities.svg) · [도식 원본 / Diagram source](../자료_assets/도식_diagrams/reasoning_and_humanities.mmd)
+[SVG](../자료_assets/도식_diagrams/reasoning_and_humanities.svg) · [그림 원본 / Diagram source](../자료_assets/도식_diagrams/reasoning_and_humanities.mmd)
 
 직접 구성한 연결도다. 예를 들어 정책 자료를 읽을 때는 지표의 변화를 계산하는 것, 정책이 그 변화를 일으켰는지 판단하는 것, 그 정책을 바람직하다고 평가하는 것을 분리한다. 법적 허용 여부도 별도로 확인한다. 같은 숫자 하나로 이 질문들이 모두 해결되지는 않는다.
 

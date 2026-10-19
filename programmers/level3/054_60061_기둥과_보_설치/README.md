@@ -63,7 +63,7 @@ Main complexity: O(Q²+Q log Q) time, O(Q) space.
 
 Temporarily apply an operation and validate only nearby structures whose supports could change. This avoids rechecking every installed structure after each deletion.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(Q+Q log Q), space O(Q).
 

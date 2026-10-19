@@ -52,9 +52,9 @@ $$
 
 ![Attention: 필요한 정보를 가중합으로 모으기 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/attention-from-equations.png)
 
-[SVG](../../../자료_assets/도식_diagrams/attention-from-equations.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/attention-from-equations.mmd)
+[SVG](../../../자료_assets/도식_diagrams/attention-from-equations.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/attention-from-equations.mmd)
 
-직접 구성한 계산 도식이다.
+직접 구성한 계산 그림이다.
 
 ## 구현: 점수 행렬을 통째로 저장하지 않기
 

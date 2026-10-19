@@ -58,8 +58,6 @@ def solution(land):
 
 ## 다른 방법: 분리 집합으로 덩어리 연결
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(land):
     rows, cols = len(land), len(land[0])
@@ -124,9 +122,7 @@ Boundary cases: The main implementation marks visited oil as zero. Pass a copy w
 
 ### Alternative: Disjoint-set union for component labeling
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(RC α(RC)), 공간 O(RC) / Time O(RC α(RC)), space O(RC)
-
-The main approach follows the steps described above. The alternative uses disjoint-set union for component labeling; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(RC α(RC)), 공간 O(RC) / Time O(RC α(RC)), space O(RC)
 
 ### Verification
 

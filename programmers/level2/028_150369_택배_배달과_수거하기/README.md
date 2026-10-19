@@ -45,8 +45,6 @@ def solution(cap, n, deliveries, pickups):
 
 ## 다른 방법: 왕복마다 먼 물량을 실제로 소진
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(cap,n,deliveries,pickups):
     delivery,pickup=list(deliveries),list(pickups)
@@ -104,9 +102,7 @@ Boundary cases: Delivery and pickup capacities are usable separately within a tr
 
 ### Alternative: Explicitly consume farthest loads on each trip
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(n+총 운행 수), 공간 O(n) / Time O(n+number of trips), space O(n)
-
-The main approach follows the steps described above. The alternative uses explicitly consume farthest loads on each trip; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(n+총 운행 수), 공간 O(n) / Time O(n+number of trips), space O(n)
 
 ### Verification
 

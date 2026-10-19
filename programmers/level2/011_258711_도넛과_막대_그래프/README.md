@@ -51,8 +51,6 @@ def solution(edges):
 
 ## 다른 방법: 추가 정점 제거 후 연결 부분별 간선 수 분류
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from collections import defaultdict
 
@@ -116,9 +114,7 @@ Boundary cases: Skip unused vertex IDs. Added edges may increase the original in
 
 ### Alternative: Remove the added vertex and classify reachable components by edge count
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(V+E), 공간 O(V+E) / Time and space O(V+E)
-
-The main approach follows the steps described above. The alternative uses remove the added vertex and classify reachable components by edge count; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(V+E), 공간 O(V+E) / Time and space O(V+E)
 
 ### Verification
 

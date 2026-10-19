@@ -62,7 +62,7 @@ Main complexity: O(E log E) time, O(N+E) space.
 
 Grow one connected set by repeatedly choosing its cheapest outgoing edge. This is Prim’s MST algorithm, unlike Kruskal’s globally sorted edge selection.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(E log E), space O(N+E).
 

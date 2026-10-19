@@ -54,8 +54,6 @@ def solution(grid):
 
 ## 다른 방법: 상태 전이 간선을 분리 집합으로 합치기
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from collections import Counter
 
@@ -121,9 +119,7 @@ Boundary cases: Different directions at one cell are different states. Modulo wr
 
 ### Alternative: Union successor states with disjoint-set union
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(RC α(RC)+I log I), 공간 O(RC) / Time O(RC α(RC)+I log I), space O(RC)
-
-The main approach follows the steps described above. The alternative uses union successor states with disjoint-set union; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(RC α(RC)+I log I), 공간 O(RC) / Time O(RC α(RC)+I log I), space O(RC)
 
 ### Verification
 

@@ -53,8 +53,6 @@ def solution(n, q, ans):
 
 ## 다른 방법: 숫자 선택 DFS + 남은 일치 수 가지치기
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(n, q, ans):
     attempts = [set(row) for row in q]
@@ -115,9 +113,7 @@ Boundary cases: Handle match counts of both zero and five. A code is a set of va
 
 ### Alternative: Selection DFS with intersection bounds
 
-It computes the same result using different intermediate states or evaluation steps. 최악 O(C(n,5)Qn), 공간 O(Q+n) / Worst-case O(C(n,5)Qn), space O(Q+n)
-
-The main approach follows the steps described above. The alternative uses selection dfs with intersection bounds; compare its intermediate state and cost with the main implementation before choosing it.
+최악 O(C(n,5)Qn), 공간 O(Q+n) / Worst-case O(C(n,5)Qn), space O(Q+n)
 
 ### Verification
 

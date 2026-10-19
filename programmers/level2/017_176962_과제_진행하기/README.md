@@ -58,8 +58,6 @@ def solution(plans):
 
 ## 다른 방법: 분 단위 시간 시뮬레이션
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(plans):
     tasks = []
@@ -123,9 +121,7 @@ Boundary cases: A task finishing exactly at the next start counts as completed. 
 
 ### Alternative: Minute-by-minute simulation
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(정렬+총 수행 시간), 공간 O(N) / Time O(N log N + total work duration), space O(N)
-
-The main approach follows the steps described above. The alternative uses minute-by-minute simulation; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(정렬+총 수행 시간), 공간 O(N) / Time O(N log N + total work duration), space O(N)
 
 ### Verification
 

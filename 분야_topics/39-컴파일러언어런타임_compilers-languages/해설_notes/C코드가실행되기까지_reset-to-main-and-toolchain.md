@@ -12,7 +12,7 @@ ABI(Application Binary Interface)는 서로 따로 만든 코드가 만나는 �
 
 ![C 코드가 실행되기까지: 컴파일, 링크, 리셋과 main — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/reset-to-main-and-toolchain.png)
 
-[SVG](../../../자료_assets/도식_diagrams/reset-to-main-and-toolchain.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/reset-to-main-and-toolchain.mmd)
+[SVG](../../../자료_assets/도식_diagrams/reset-to-main-and-toolchain.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/reset-to-main-and-toolchain.mmd)
 
 그림은 이 문서를 위해 작성한 흐름도다. OS 로더와 MCU 플래시 부팅은 같은 절차가 아니며, ELF 파일 자체가 MCU 리셋 회로의 동작을 결정하지도 않는다.
 

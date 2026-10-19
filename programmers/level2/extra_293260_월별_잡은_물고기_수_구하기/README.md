@@ -30,15 +30,13 @@ ORDER BY MONTH
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+MONTH로 같은 월 번호를 그룹 키로 만들고 COUNT(*)로 모든 포획 행을 센다. 문제는 연도별이 아닌 월별 집계이므로 연도를 추가 키로 두지 않는다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 날짜를 읽고 최대 12개 월 그룹을 집계한다. 순차 집계가 가능하면 O(N) 규모이며 월 결과의 정렬 크기는 12 이하로 고정된다.
 
 주의할 점: 연도가 다른 같은 월도 함께 센다. 포획이 없는 월은 출력하지 않는다.
 
 ## 다른 방법: 윈도 COUNT와 DISTINCT
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT DISTINCT COUNT(*) OVER (PARTITION BY MONTH(TIME)) AS FISH_COUNT,
@@ -49,7 +47,7 @@ FROM FISH_INFO ORDER BY MONTH;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 날짜에서 MONTH를 추출하고 같은 월끼리 묶는다. 월은 숫자로 출력하고 오름차순 정렬한다. | 윈도 COUNT와 DISTINCT |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 날짜를 읽고 최대 12개 월 그룹을 집계한다. 순차 집계가 가능하면 O(N) 규모이며 월 결과의 정렬 크기는 12 이하로 고정된다. | 각 포획 행에 월별 횟수를 붙인 뒤 DISTINCT를 적용한다. 월 그룹은 같지만 중간 행 수는 줄지 않는다. |
 
 ## 검증
 
@@ -77,17 +75,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+MONTH supplies the month-number grouping key and COUNT(*) counts catch rows. The task groups by month rather than by year-month, so no year key is added.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Read N dates and aggregate at most 12 month groups. A sequential aggregation has O(N) scale, with a final sort bounded by 12 results.
 
 Boundary cases: Combine the same month across years. Omit months without catches.
 
 ### Alternative: Window COUNT followed by DISTINCT
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses window count followed by distinct; compare its intermediate state and cost with the main implementation before choosing it.
+Attach monthly counts to every catch, then apply DISTINCT. The intermediate row count remains the number of catches.
 
 ### Verification
 

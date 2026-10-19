@@ -31,15 +31,13 @@ ORDER BY USER_ID, PRODUCT_ID DESC
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+회원과 상품을 함께 묶어야 같은 회원이 같은 상품을 산 횟수가 된다. HAVING의 2회 이상 조건이 재구매인 쌍만 남긴다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 판매를 회원·상품 쌍으로 집계한 뒤 R개 해당 쌍을 정렬한다. 결과 비교 정렬은 O(R log R); 윈도 대안은 행별 횟수 계산과 DISTINCT도 수행한다.
 
 주의할 점: 회원 또는 상품 하나만으로 묶으면 다른 구매가 섞인다. 결과는 회원 오름차순·상품 내림차순이다.
 
 ## 다른 방법: 회원·상품별 윈도 COUNT
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 WITH counted AS (
@@ -53,7 +51,7 @@ WHERE N>=2 ORDER BY USER_ID,PRODUCT_ID DESC;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | USER_ID와 PRODUCT_ID를 함께 GROUP BY한다. COUNT(*)가 2 이상인 그룹만 HAVING으로 남긴다. | 회원·상품별 윈도 COUNT |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 판매를 회원·상품 쌍으로 집계한 뒤 R개 해당 쌍을 정렬한다. 결과 비교 정렬은 O(R log R); 윈도 대안은 행별 횟수 계산과 DISTINCT도 수행한다. | 각 판매 행에 쌍별 구매 횟수를 붙이고 DISTINCT로 회원·상품 쌍을 한 번만 출력한다. |
 
 ## 검증
 
@@ -81,17 +79,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Grouping by both member and product counts repeated purchases of that exact pair. HAVING retains only pairs with at least two purchases.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Aggregate N sales by member-product pair and sort R qualifying pairs in O(R log R) comparisons. The window version also deduplicates per-row counts.
 
 Boundary cases: Grouping on only one key mixes unrelated purchases. Sort users ascending and products descending.
 
 ### Alternative: Window COUNT per user-product pair
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses window count per user-product pair; compare its intermediate state and cost with the main implementation before choosing it.
+Annotate each sale with its pair count, then deduplicate member-product pairs.
 
 ### Verification
 

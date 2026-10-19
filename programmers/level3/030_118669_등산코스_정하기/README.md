@@ -65,7 +65,7 @@ Main complexity: O((N+E) log N) time, O(N+E) space.
 
 Binary-search an intensity threshold and run multi-source BFS using only allowed edges. Reachability is monotone, and summits are terminal vertices rather than transit nodes.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O((N+E) log W), space O(N+E).
 

@@ -39,17 +39,15 @@ ORDER BY e.EMP_NO
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+2022년 점수를 사원별로 합친 후 합계 내림차순의 공동 1위를 고른다. DENSE_RANK가 동률을 같은 순위로 두므로 최고 점수 사원을 누락하지 않는다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+평가 N개를 G명별로 집계하고 G개 점수의 순위를 계산한 뒤 사원 정보를 조회한다. 일반 비교 정렬 기준 순위 비용은 O(G log G); 대안은 합계의 MAX를 사용한다.
 
 주의할 점: 공동 최고점이 있다면 함께 보존한다. 집계 전에 연도를 필터해야 다른 연도 점수가 섞이지 않는다.
 
 공식 예제의 사원 원본 키는 `2020002`인데 결과 표에는 `202002`로 적혀 있다. 이 기록에서는 원본 테이블의 키를 유지한다.
 
 ## 다른 방법: 합계 CTE와 MAX 서브쿼리
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 WITH totals AS (
@@ -65,7 +63,7 @@ ORDER BY e.EMP_NO;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 사원별 상·하반기 점수를 합산한다. 합계 내림차순 DENSE_RANK가 1인 행에 사원 정보를 붙인다. | 합계 CTE와 MAX 서브쿼리 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | 평가 N개를 G명별로 집계하고 G개 점수의 순위를 계산한 뒤 사원 정보를 조회한다. 일반 비교 정렬 기준 순위 비용은 O(G log G); 대안은 합계의 MAX를 사용한다. | 사원별 합계 중 MAX와 같은 점수만 고른다. 점수 전체의 순위를 만드는 대신 최댓값만 찾는다. |
 
 ## 검증
 
@@ -95,9 +93,9 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Sum 2022 scores per employee and retain rank one in descending total order. DENSE_RANK gives tied totals the same rank, preserving every top employee.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Aggregate N grades into G employee totals, rank them and look up employee details. Comparison-based ranking costs O(G log G); the alternative uses MAX over the totals.
 
 Boundary cases: Preserve tied maxima. Filter the year before aggregation to avoid mixing years.
 
@@ -105,9 +103,7 @@ The official example input uses employee key `2020002`, while its result table p
 
 ### Alternative: Grouped totals CTE with a MAX subquery
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses grouped totals cte with a max subquery; compare its intermediate state and cost with the main implementation before choosing it.
+Select totals equal to MAX, finding only the maximum instead of ranking every total.
 
 ### Verification
 

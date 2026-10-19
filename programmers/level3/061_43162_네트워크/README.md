@@ -59,7 +59,7 @@ Main complexity: O(N²) time, O(N) extra space.
 
 Union connected computer pairs and count distinct representatives. This builds components incrementally instead of exploring them by DFS.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N² α(N)), space O(N).
 

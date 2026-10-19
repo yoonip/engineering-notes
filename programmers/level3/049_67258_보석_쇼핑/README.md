@@ -61,7 +61,7 @@ Main complexity: O(N) time, O(gem types) space.
 
 Binary-search a window length and test whether any window contains every gem type. Feasibility is monotone in length, giving a different formulation from two pointers.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N log N), space O(distinct types).
 

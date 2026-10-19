@@ -66,7 +66,7 @@ Main complexity: O(C²) grid space and O(RC²) construction time; R≤4.
 
 Build only rectangle perimeter points at doubled coordinates, discard points strictly inside another rectangle, and run BFS. This checks the filled-grid boundary construction.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(R²C+RC), space O(RC).
 

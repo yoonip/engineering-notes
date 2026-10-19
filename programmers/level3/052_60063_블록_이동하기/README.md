@@ -62,7 +62,7 @@ Main complexity: O(N²) time and space.
 
 Represent a robot by its upper/left anchor and horizontal/vertical orientation rather than a pair of cells. Every rotation requires the swept 2×2 region to be empty.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N²), space O(N²).
 

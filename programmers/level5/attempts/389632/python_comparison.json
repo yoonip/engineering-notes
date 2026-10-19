@@ -1,0 +1,29 @@
+[
+  {
+    "case": "full_alphabet_range_20000",
+    "characters": 100000,
+    "queries": 20001,
+    "v1_seconds": 0.458,
+    "v2_seconds": 0.489,
+    "v3_bitset_seconds": 0.577,
+    "outputs_equal": true
+  },
+  {
+    "case": "random_alphabet_ranges_20000",
+    "characters": 100000,
+    "queries": 20001,
+    "v1_seconds": 8.004,
+    "v2_seconds": 5.245,
+    "v3_bitset_seconds": 0.501,
+    "outputs_equal": true
+  },
+  {
+    "case": "mixed_split_merge_30000",
+    "characters": 100000,
+    "queries": 30001,
+    "v1_seconds": 4.37,
+    "v2_seconds": 3.178,
+    "v3_bitset_seconds": 1.313,
+    "outputs_equal": true
+  }
+]

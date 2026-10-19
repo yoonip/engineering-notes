@@ -40,9 +40,9 @@ $`M`$개 표본의 평균 손실 $`L=M^{-1}\sum_i\ell_i`$는 각 미분을 평�
 
 ![미분에서 학습까지: 모델이 바뀌는 이유 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/gradients-and-learning.png)
 
-[SVG](../../../자료_assets/도식_diagrams/gradients-and-learning.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/gradients-and-learning.mmd)
+[SVG](../../../자료_assets/도식_diagrams/gradients-and-learning.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/gradients-and-learning.mmd)
 
-직접 구성한 도식이다. 여러 경로가 같은 변수로 돌아오면 기울기는 더한다.
+직접 구성한 그림이다. 여러 경로가 같은 변수로 돌아오면 기울기는 더한다.
 
 ## 수학적으로 같은 식도 코드에서는 다르다
 

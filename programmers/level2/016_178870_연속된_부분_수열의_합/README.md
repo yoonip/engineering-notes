@@ -45,8 +45,6 @@ def solution(sequence, k):
 
 ## 다른 방법: 누적합과 해시 맵
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(sequence,k):
     latest = {0:-1}
@@ -101,9 +99,7 @@ Boundary cases: Keeping equal-length ties preserves the earlier start. This two-
 
 ### Alternative: Prefix sums with a hash map
 
-It computes the same result using different intermediate states or evaluation steps. 평균 시간 O(N), 공간 O(N) / Expected time O(N), space O(N)
-
-The main approach follows the steps described above. The alternative uses prefix sums with a hash map; compare its intermediate state and cost with the main implementation before choosing it.
+평균 시간 O(N), 공간 O(N) / Expected time O(N), space O(N)
 
 ### Verification
 

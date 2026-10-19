@@ -44,8 +44,6 @@ def solution(want, number, discount):
 
 ## 다른 방법: 빠지는 상품과 들어오는 상품만 갱신
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from collections import Counter
 
@@ -98,9 +96,7 @@ Boundary cases: Skip starts with fewer than ten days remaining. Matching product
 
 ### Alternative: Incremental sliding-window frequencies
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(NU), 공간 O(U+10) / Time O(NU), space O(U+10); U≤10
-
-The main approach follows the steps described above. The alternative uses incremental sliding-window frequencies; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(NU), 공간 O(U+10) / Time O(NU), space O(U+10); U≤10
 
 ### Verification
 

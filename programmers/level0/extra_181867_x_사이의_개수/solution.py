@@ -1,0 +1,10 @@
+def solution(myString):
+    return [len(part) for part in myString.split('x')]
+
+# 전체 코드 줄별 설명
+# def solution(myString):  # def는 함수 정의. 문자 x를 포함하는 문자열 입력.
+#     return [len(part) for part in myString.split('x')]  # split('x')는 x 기준 분리하며 빈 조각도 유지. 리스트 내포에서 len으로 각 조각 길이 계산.
+
+# 풀이 요약
+# 연속된 x 사이와 양 끝의 빈 조각도 길이 0으로 기록합니다.
+# 

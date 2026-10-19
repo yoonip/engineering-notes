@@ -31,9 +31,9 @@ Read the original questions and choices at the linked source, then compare them 
 
 ![공식 기출 분석: 조건의 범위와 비교 대상을 놓치지 않기 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/official-past-paper-walkthroughs.png)
 
-[SVG](../../../자료_assets/도식_diagrams/official-past-paper-walkthroughs.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/official-past-paper-walkthroughs.mmd)
+[SVG](../../../자료_assets/도식_diagrams/official-past-paper-walkthroughs.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/official-past-paper-walkthroughs.mmd)
 
-직접 작성한 논리 흐름도다. 실제 국가배상·의료법 제도를 설명하는 도식은 아니다.
+직접 작성한 논리 흐름도다. 실제 국가배상·의료법 제도를 설명하는 그림은 아니다.
 
 ### 2. 28번: 가설을 시험하는 비교인지 먼저 확인하기
 

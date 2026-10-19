@@ -29,15 +29,13 @@ WHERE PRICE = (SELECT MAX(PRICE) FROM FOOD_PRODUCT)
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+MAX가 전체 최고 가격을 한 값으로 구하고, 바깥 WHERE가 그 값과 같은 행을 모두 남긴다. 최고가가 같은 상품이 있어도 빠뜨리지 않는다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+순차 스캔으로 최대값과 일치 행을 찾으면 O(N)이다. 대안의 순위 계산은 가격 정렬이 필요할 수 있다.
 
 주의할 점: 최댓값만 출력하는 것이 아니라 해당 상품 정보가 필요하다. 일반적으로 동점 행을 함께 보존한다.
 
 ## 다른 방법: DENSE_RANK로 최고 가격 선택
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 WITH ranked AS (
@@ -52,7 +50,7 @@ FROM ranked WHERE R=1 AND PRICE IS NOT NULL;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 하위 쿼리 MAX(PRICE)로 최고 가격을 구한다. 그 값과 같은 가격을 가진 원본 행을 선택한다. | DENSE_RANK로 최고 가격 선택 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | 순차 스캔으로 최대값과 일치 행을 찾으면 O(N)이다. 대안의 순위 계산은 가격 정렬이 필요할 수 있다. | DENSE_RANK가 가격순으로 순위를 계산하므로, 정렬이 필요한 계획에서는 MAX 스캔보다 비용이 크다. |
 
 ## 검증
 
@@ -80,17 +78,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+MAX finds the global maximum price, and the outer equality retains every row with that price, including ties.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Sequential maximum and equality scans take O(N); the ranking alternative may require sorting prices.
 
 Boundary cases: Return the product information, not just the maximum price. The query also preserves tied maxima.
 
 ### Alternative: Select top prices with DENSE_RANK
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses select top prices with dense_rank; compare its intermediate state and cost with the main implementation before choosing it.
+DENSE_RANK orders prices; a sorting plan costs more than a maximum scan.
 
 ### Verification
 

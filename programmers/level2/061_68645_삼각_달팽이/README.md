@@ -43,8 +43,6 @@ def solution(n):
 
 ## 다른 방법: 다음 칸의 경계·방문 여부로 방향 전환
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(n):
     board=[[0]*(r+1) for r in range(n)]
@@ -99,9 +97,7 @@ Boundary cases: A full n-by-n square is unnecessary. Flatten by rows, not by tra
 
 ### Alternative: Turn when the next cell is outside or already filled
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(n²), 공간 O(n²) / Time and space O(n²)
-
-The main approach follows the steps described above. The alternative uses turn when the next cell is outside or already filled; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(n²), 공간 O(n²) / Time and space O(n²)
 
 ### Verification
 

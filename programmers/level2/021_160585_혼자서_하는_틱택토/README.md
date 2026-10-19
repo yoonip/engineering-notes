@@ -50,8 +50,6 @@ def solution(board):
 
 ## 다른 방법: 합법 게임 상태 전체 생성
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(board):
     target=''.join(board)
@@ -105,9 +103,7 @@ Boundary cases: Both players cannot win simultaneously. The empty board and unfi
 
 ### Alternative: Generate all legally reachable game states
 
-It computes the same result using different intermediate states or evaluation steps. 최대 3^9 상태, 고정 크기 / At most 3^9 states, fixed board size
-
-The main approach follows the steps described above. The alternative uses generate all legally reachable game states; compare its intermediate state and cost with the main implementation before choosing it.
+최대 3^9 상태, 고정 크기 / At most 3^9 states, fixed board size
 
 ### Verification
 

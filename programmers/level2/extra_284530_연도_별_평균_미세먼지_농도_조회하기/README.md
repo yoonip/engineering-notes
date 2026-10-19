@@ -33,15 +33,13 @@ ORDER BY YEAR
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+수원 행만 남긴 뒤 연도로 묶으므로 다른 지역 값이 평균에 섞이지 않는다. 측정값마다 미리 반올림하지 않고 AVG 결과를 반올림해 요구한 평균을 표시한다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 측정값을 지역 필터 후 연도별로 집계하고 G개 연도를 정렬한다. 결과 비교 정렬은 O(G log G); 윈도 대안은 행별 결과와 DISTINCT를 처리한다.
 
 주의할 점: 개별 측정값을 먼저 반올림하지 않는다. PM2.5 별칭은 점을 포함하므로 식별자 구분이 필요하다.
 
 ## 다른 방법: 지역 필터 + 연도별 윈도 평균
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT DISTINCT YEAR(YM) AS YEAR,
@@ -54,7 +52,7 @@ ORDER BY YEAR;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 지역 조건을 먼저 적용한다. 측정 연도로 그룹을 만든 후 평균을 구하고 마지막에 반올림한다. | 지역 필터 + 연도별 윈도 평균 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 측정값을 지역 필터 후 연도별로 집계하고 G개 연도를 정렬한다. 결과 비교 정렬은 O(G log G); 윈도 대안은 행별 결과와 DISTINCT를 처리한다. | 측정 행마다 연도별 평균을 붙인 뒤 DISTINCT로 연도당 한 행을 남긴다. |
 
 ## 검증
 
@@ -82,17 +80,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Filtering Suwon before grouping prevents other locations from entering its averages. Rounding the AVG results, rather than individual observations, preserves the requested means.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Filter N observations, aggregate years and sort G results in O(G log G) comparisons. The window alternative also handles per-row results and DISTINCT.
 
 Boundary cases: Do not round individual measurements first. Quote the PM2.5 alias because it contains a period.
 
 ### Alternative: Location filtering with yearly window averages
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses location filtering with yearly window averages; compare its intermediate state and cost with the main implementation before choosing it.
+Attach annual averages to observations, then deduplicate to one row per year.
 
 ### Verification
 

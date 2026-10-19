@@ -29,17 +29,15 @@ WHERE RARITY = 'LEGEND'
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+WHERE가 LEGEND 행만 남기므로 SUM에는 그 가격들만 들어간다. 조건부 SUM도 다른 행을 NULL로 만들어 같은 합을 구하며, 해당 값이 없으면 두 쿼리 모두 NULL을 반환한다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 아이템을 순차 검사하면 시간 O(N), 누적 합계 상태는 O(1)이다. 결과는 한 행이며 정렬은 없다. 희귀도 인덱스가 있으면 접근 계획이 달라질 수 있다.
 
 주의할 점: 개수나 평균이 아니라 가격 합계다. 대상 행이 없으면 SQL SUM의 결과는 NULL이다.
 
 공식 스키마 표의 RARITY 자료형 표기와 달리 예제·조회 조건은 `COMMON`, `RARE`, `LEGEND` 문자열을 사용한다. 쿼리에서도 이 문자열 값으로 비교한다.
 
 ## 다른 방법: 조건부 SUM
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT SUM(CASE WHEN RARITY='LEGEND' THEN PRICE END) AS TOTAL_PRICE
@@ -49,7 +47,7 @@ FROM ITEM_INFO;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | LEGEND 행만 필터하고 SUM으로 가격을 더한다. 그룹 구분이 없으므로 전체 합계 한 행을 출력한다. | 조건부 SUM |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 아이템을 순차 검사하면 시간 O(N), 누적 합계 상태는 O(1)이다. 결과는 한 행이며 정렬은 없다. 희귀도 인덱스가 있으면 접근 계획이 달라질 수 있다. | N개 행에서 CASE를 평가하며 하나의 합계를 누적한다. 정렬·윈도 함수 없이 O(N) 순차 집계가 가능하다. |
 
 ## 검증
 
@@ -77,9 +75,9 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+WHERE restricts SUM to LEGEND prices. Conditional SUM turns other rows into NULL and yields the same aggregate; both return NULL when there are no contributing values.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+A sequential scan takes O(N) time and O(1) aggregate state. The result is one row with no sorting. A rarity index can change the access plan.
 
 Boundary cases: Return a price sum, not a count or mean. SQL SUM returns NULL when no rows qualify.
 
@@ -87,9 +85,7 @@ Although the official schema’s RARITY type label is inconsistent, its examples
 
 ### Alternative: Conditional SUM
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses conditional sum; compare its intermediate state and cost with the main implementation before choosing it.
+Evaluate CASE for N rows and accumulate one sum. A sequential O(N) aggregation needs no sorting or window function.
 
 ### Verification
 

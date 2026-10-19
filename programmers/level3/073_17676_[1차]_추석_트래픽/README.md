@@ -62,7 +62,7 @@ Main complexity: O(N²) time, O(N) space.
 
 A closed request interval [s,e] overlaps a 1000-ms window starting at t exactly for t in [s−999,e]. Sweep these feasible start intervals with integer difference events.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N log N), space O(N).
 

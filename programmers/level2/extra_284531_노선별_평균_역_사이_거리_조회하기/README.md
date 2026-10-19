@@ -32,15 +32,13 @@ ORDER BY SUM(D_BETWEEN_DIST) DESC
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+같은 노선의 구간 거리로 SUM과 AVG를 구한다. km 문자열은 출력할 때만 붙이고 정렬에는 숫자 합계를 사용하므로 문자열 사전순 정렬을 피한다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 구간을 G개 노선으로 집계하고 G개 합계를 정렬한다. 결과 비교 정렬은 O(G log G); 윈도 대안은 노선별 중복 제거도 필요하다.
 
 주의할 점: 누계 거리 열을 다시 합산하지 않는다. km가 붙은 문자열을 정렬하면 숫자순이 아니다.
 
 ## 다른 방법: 윈도 집계 후 중복 노선 제거
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 WITH x AS (
@@ -57,7 +55,7 @@ ORDER BY TOTAL DESC;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 노선별 SUM·AVG를 구한다. 출력 직전에 반올림과 단위 문자열 처리를 하고 정렬에는 숫자 SUM을 쓴다. | 윈도 집계 후 중복 노선 제거 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 구간을 G개 노선으로 집계하고 G개 합계를 정렬한다. 결과 비교 정렬은 O(G log G); 윈도 대안은 노선별 중복 제거도 필요하다. | 각 구간에 노선 합계와 평균을 붙인 뒤 DISTINCT로 노선을 줄인다. |
 
 ## 검증
 
@@ -85,17 +83,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+SUM and AVG operate on segment distances within each route. Add km only for display and order by numeric totals, avoiding lexicographic string order.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Aggregate N segments into G routes and sort their totals in O(G log G) comparisons. The window alternative also deduplicates route results.
 
 Boundary cases: Do not sum a cumulative-distance column. Sorting formatted km strings is not numeric sorting.
 
 ### Alternative: Window aggregation followed by route deduplication
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses window aggregation followed by route deduplication; compare its intermediate state and cost with the main implementation before choosing it.
+Attach route totals and means to segments, then deduplicate route rows.
 
 ### Verification
 

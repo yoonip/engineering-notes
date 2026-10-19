@@ -1,0 +1,30 @@
+# 문자열의 뒤의 n글자
+
+[공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/181910) · Level 0 · Python3
+
+## 풀이
+
+뒤에서 n번째 글자부터 끝까지 잘라냅니다.
+
+## 코드와 줄별 설명
+
+[코드 파일 / Source](solution.py) · [채점 기록 / Grade](grading.json)
+
+```python
+def solution(my_string, n):
+    return my_string[-n:]
+
+# 전체 코드 줄별 설명
+# def solution(my_string, n):  # def는 함수 정의. 문자열과 가져올 글자 수 입력.
+#     return my_string[-n:]  # 음수 인덱스 -n은 뒤에서 n번째 위치. [시작:] 슬라이싱으로 그 위치부터 끝까지 반환.
+
+# 풀이 요약
+# 뒤에서 n번째 글자부터 끝까지 잘라냅니다.
+#
+```
+
+## 채점 기록 / Grading record
+
+저장된 사이트 채점 결과는 100점이다. 코드 파일의 SHA-256과 채점 기록의 SHA-256을 `grading.json`에 남겼다. 이 기록을 정리하면서 새로 제출한 것은 아니다.
+
+The saved website result is 100/100. The file contains executable code followed by an exact commented copy with Korean notes on syntax and purpose. Source and saved-result hashes are in `grading.json`. This archive update did not resubmit the solution.

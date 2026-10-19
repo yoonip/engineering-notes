@@ -30,15 +30,13 @@ ORDER BY CATEGORY
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+상품 코드의 앞 두 글자가 같을 때만 같은 그룹에 들어간다. COUNT(*)는 그 그룹의 모든 상품 행을 세므로 카테고리별 개수가 된다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 상품을 집계하고 G개 카테고리를 정렬한다. 결과 비교 정렬은 O(G log G)이며, 대안은 행별 윈도 결과에서 중복도 제거한다.
 
 주의할 점: 상품 코드 전체가 아니라 처음 두 글자만 쓴다. 숫자로 바꾸지 않아 앞의 0을 보존한다.
 
 ## 다른 방법: 윈도 COUNT로 원본 행 보존 후 DISTINCT
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT DISTINCT SUBSTR(PRODUCT_CODE,1,2) AS CATEGORY,
@@ -49,7 +47,7 @@ FROM PRODUCT ORDER BY CATEGORY;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | LEFT(PRODUCT_CODE,2)로 카테고리 키를 만들고 GROUP BY한다. 카테고리 오름차순으로 출력한다. | 윈도 COUNT로 원본 행 보존 후 DISTINCT |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 상품을 집계하고 G개 카테고리를 정렬한다. 결과 비교 정렬은 O(G log G)이며, 대안은 행별 윈도 결과에서 중복도 제거한다. | 각 상품 행에 카테고리별 개수를 붙인 뒤 DISTINCT로 한 행만 남긴다. GROUP BY보다 중간 결과가 많다. |
 
 ## 검증
 
@@ -77,17 +75,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Rows share a group exactly when their first two product-code characters match. COUNT(*) therefore gives the product count for each category.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Aggregate N products and sort G categories, with O(G log G) comparison sorting. The window alternative also deduplicates per-row results.
 
 Boundary cases: Use only the first two characters, preserving leading zeros by keeping them as text.
 
 ### Alternative: Preserve rows with window COUNT, then deduplicate
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses preserve rows with window count, then deduplicate; compare its intermediate state and cost with the main implementation before choosing it.
+Attach a category count to each product row, then deduplicate. This retains more intermediate rows than GROUP BY.
 
 ### Verification
 

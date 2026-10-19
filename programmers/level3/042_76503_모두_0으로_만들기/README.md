@@ -63,7 +63,7 @@ Main complexity: O(N) time and space.
 
 Repeatedly move a leaf weight to its only remaining neighbor, then remove the leaf. This uses degree-based pruning rather than a precomputed parent/postorder traversal.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N), space O(N).
 

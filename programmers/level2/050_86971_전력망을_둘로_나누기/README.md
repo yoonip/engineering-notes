@@ -50,8 +50,6 @@ def solution(n, wires):
 
 ## 다른 방법: 간선마다 실제 제거 후 BFS
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(n,wires):
     answer=n
@@ -109,9 +107,7 @@ Boundary cases: The tree assumption is essential. Skip the parent edge during DF
 
 ### Alternative: Remove each edge and BFS the remaining component
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(n²), 공간 O(n) / Time O(n²), space O(n)
-
-The main approach follows the steps described above. The alternative uses remove each edge and bfs the remaining component; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(n²), 공간 O(n) / Time O(n²), space O(n)
 
 ### Verification
 

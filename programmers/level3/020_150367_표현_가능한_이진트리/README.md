@@ -59,7 +59,7 @@ Main complexity: O(L log L) time with substring copies, O(L) peak extra space pe
 
 Pass index intervals and whether an ancestor is absent. Once an absent node is found, every descendant must also be absent. This avoids substring copies.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(L), recursive space O(log L) plus string O(L).
 

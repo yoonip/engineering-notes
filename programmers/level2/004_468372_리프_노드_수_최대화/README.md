@@ -131,8 +131,6 @@ Boundary cases: Zero distributors leave one leaf. Binary and ternary distributor
 
 This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 상한 O(SD^3) 시간, O(SD^2) 공간 / upper bounds O(SD^3) time, O(SD^2) space; D=dist_limit
 
-The main approach follows the steps described above. The alternative uses exhaustive level-by-level branching for small inputs; compare its intermediate state and cost with the main implementation before choosing it.
-
 ### Verification
 
 Local checks covered 4 official examples and 550 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.

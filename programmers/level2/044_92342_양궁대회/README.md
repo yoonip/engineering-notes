@@ -119,8 +119,6 @@ Boundary cases: Use all n arrows. A zero score difference is not a win and yield
 
 This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 시간 O(C(n+10,10)·11), 공간 O(11) / Time O(C(n+10,10)·11), space O(11)
 
-The main approach follows the steps described above. The alternative uses enumerate all arrow allocations for small n; compare its intermediate state and cost with the main implementation before choosing it.
-
 ### Verification
 
 Local checks covered 4 official examples and 25 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.

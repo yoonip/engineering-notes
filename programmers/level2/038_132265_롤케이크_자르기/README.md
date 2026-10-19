@@ -46,8 +46,6 @@ def solution(topping):
 
 ## 다른 방법: 접두·접미 종류 수 배열
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(topping):
     n=len(topping)
@@ -101,9 +99,7 @@ Boundary cases: Compare distinct-type counts, not item counts. An empty final ri
 
 ### Alternative: Prefix and suffix distinct-count arrays
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N), 공간 O(N+U) / Time O(N), space O(N+U)
-
-The main approach follows the steps described above. The alternative uses prefix and suffix distinct-count arrays; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N), 공간 O(N+U) / Time O(N), space O(N+U)
 
 ### Verification
 

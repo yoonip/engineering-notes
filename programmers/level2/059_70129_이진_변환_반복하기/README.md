@@ -40,8 +40,6 @@ def solution(s):
 
 ## 다른 방법: 정수의 bit_count로 1 수 추적
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(s):
     value=int(s,2)
@@ -93,9 +91,7 @@ Boundary cases: An initial one returns [0,0]. The input contains a one, so a zer
 
 ### Alternative: Track one counts using integer bit_count
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N), 공간 O(N)비트 / Time O(N), space O(N) bits
-
-The main approach follows the steps described above. The alternative uses track one counts using integer bit_count; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N), 공간 O(N)비트 / Time O(N), space O(N) bits
 
 ### Verification
 

@@ -63,7 +63,7 @@ Main complexity: Sum of pairwise result-set products over splits; space is the s
 
 Recursively generate and cache values using exactly k copies of N. Division truncates toward zero even for negative values. Both operand orders and concatenation are included.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: with result-set sizes S_k: Σ S_i S_(k-i), space Σ S_k.
 

@@ -90,8 +90,6 @@ Boundary cases: Include boundaries. A negative inner radicand gives a minimum y 
 
 This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 시간 O(r2²), 공간 O(1) / Time O(r2²), space O(1)
 
-The main approach follows the steps described above. The alternative uses exhaustive lattice-point counting for small radii; compare its intermediate state and cost with the main implementation before choosing it.
-
 ### Verification
 
 Local checks covered 1 official examples and 171 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.

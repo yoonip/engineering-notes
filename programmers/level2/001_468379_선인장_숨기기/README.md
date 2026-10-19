@@ -90,8 +90,6 @@ def solution(m, n, h, w, drops):
 
 ## 다른 방법: 시각 이진 탐색 + 2차원 누적합
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(m, n, h, w, drops):
     def find(dry_until):
@@ -160,9 +158,7 @@ Boundary cases: Use a sentinel later than every real drop. Do not rotate the rec
 
 ### Alternative: Binary search on time with 2D prefix sums
 
-It computes the same result using different intermediate states or evaluation steps. O(mn log(D+1)) 시간, O(mn) 공간 / time O(mn log(D+1)), space O(mn); D=len(drops)
-
-The main approach follows the steps described above. The alternative uses binary search on time with 2d prefix sums; compare its intermediate state and cost with the main implementation before choosing it.
+O(mn log(D+1)) 시간, O(mn) 공간 / time O(mn log(D+1)), space O(mn); D=len(drops)
 
 ### Verification
 

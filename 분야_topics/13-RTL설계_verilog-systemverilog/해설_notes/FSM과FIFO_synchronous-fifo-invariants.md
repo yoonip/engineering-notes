@@ -32,9 +32,9 @@ state는 저장 배열, read pointer, write pointer, 점유량으로 구성된�
 
 ![FSM과 FIFO: 요청과 실제 전송을 구분하기 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/synchronous-fifo-invariants.png)
 
-[SVG](../../../자료_assets/도식_diagrams/synchronous-fifo-invariants.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/synchronous-fifo-invariants.mmd)
+[SVG](../../../자료_assets/도식_diagrams/synchronous-fifo-invariants.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/synchronous-fifo-invariants.mmd)
 
-직접 작성한 동기 FIFO 도식이다. `sync_fifo.sv`는 수락한 상승 에지 뒤에 `rd_data`와 `rd_valid`를 내보낸다. `rd_valid=0`일 때 `rd_data`에 이전 값이 남아도 새로운 데이터가 아니다. `wr_ack` 역시 그 에지에서 쓰기가 수락되었음을 나타낸다. reset은 동기식 active-high이며 pointer·점유량·출력 유효 신호를 초기화한다. 메모리 전체를 0으로 지우지 않아도 점유량이 0이면 이전 데이터는 읽힐 수 없다.
+직접 작성한 동기 FIFO 그림이다. `sync_fifo.sv`는 수락한 상승 에지 뒤에 `rd_data`와 `rd_valid`를 내보낸다. `rd_valid=0`일 때 `rd_data`에 이전 값이 남아도 새로운 데이터가 아니다. `wr_ack` 역시 그 에지에서 쓰기가 수락되었음을 나타낸다. reset은 동기식 active-high이며 pointer·점유량·출력 유효 신호를 초기화한다. 메모리 전체를 0으로 지우지 않아도 점유량이 0이면 이전 데이터는 읽힐 수 없다.
 
 ### 4. 무엇을 검증해야 할까
 
@@ -80,4 +80,4 @@ The [Python model](../../../예제_examples/공학기초_foundations/circuits_ha
 
 - MIT 6.004: 상태·조합 논리·클록 및 타이밍 전제 / state, combinational logic, clock and timing assumptions.
 - AMD PG327, *Read Operation* and *Independent Clocks*: 수락과 읽기 모드·클록 경계 / acceptance, read modes and clock boundaries. 예제는 자체 명세이며 AMD IP와의 비트 단위 동등성을 주장하지 않는다 / the example has its own contract and does not claim bit-level equivalence with AMD IP.
-- 코드·상태 도식·시험열은 직접 작성했다 / code, state diagram and stimulus sequences constructed here. 출처 확인 / sources checked: 2026-10-19.
+- 코드·상태 그림·시험열은 직접 작성했다 / code, state diagram and stimulus sequences constructed here. 출처 확인 / sources checked: 2026-10-19.

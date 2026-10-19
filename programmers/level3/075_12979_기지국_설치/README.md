@@ -59,7 +59,7 @@ Main complexity: O(existing stations) time, O(1) extra space.
 
 Track the leftmost uncovered apartment. Skip an existing covered interval or place a new station as far right as possible while covering that apartment. This directly constructs a placement instead of dividing gap lengths.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(existing+new stations), space O(1).
 

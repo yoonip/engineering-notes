@@ -1,4 +1,4 @@
-# 도식 자료 | Figure assets
+# 그림 자료 | Figure assets
 
 [개념도와 편집 원본 / Concept diagrams and editable sources](도식_diagrams/README.md)
 

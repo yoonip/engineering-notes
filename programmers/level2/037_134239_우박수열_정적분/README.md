@@ -45,8 +45,6 @@ def solution(k, ranges):
 
 ## 다른 방법: 유리수 사다리꼴을 구간마다 직접 합산
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from fractions import Fraction
 
@@ -102,9 +100,7 @@ Boundary cases: Return −1 for reversed endpoints and zero for an empty-width r
 
 ### Alternative: Direct per-range summation with exact rational trapezoids
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(LQ), 공간 O(L) / Time O(LQ), space O(L)
-
-The main approach follows the steps described above. The alternative uses direct per-range summation with exact rational trapezoids; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(LQ), 공간 O(L) / Time O(LQ), space O(L)
 
 ### Verification
 

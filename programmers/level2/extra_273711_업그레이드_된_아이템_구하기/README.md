@@ -33,17 +33,15 @@ ORDER BY child.ITEM_ID DESC
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+관계 행으로 자식과 부모 정보를 각각 연결한 뒤 부모의 희귀도가 RARE인지 검사한다. 따라서 자식 자신의 희귀도와 관계없이 RARE 부모에서 바로 업그레이드된 아이템이 남는다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+관계 M개에 부모·자식 정보 N개를 조회하고 R개 결과를 정렬한다. 두 키 조회의 계획이 주요 비용이며 결과 비교 정렬은 O(R log R)이다.
 
 주의할 점: 자식 자체가 RARE일 필요는 없다. 모든 후손이 아니라 바로 다음 단계만 반환한다.
 
 공식 스키마 표의 RARITY 자료형 표기와 달리 예제·조회 조건은 `COMMON`, `RARE`, `LEGEND` 문자열을 사용한다. 쿼리에서도 이 문자열 값으로 비교한다.
 
 ## 다른 방법: 부모 ID 집합의 IN 서브쿼리
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT i.ITEM_ID,i.ITEM_NAME,i.RARITY FROM ITEM_INFO i
@@ -56,7 +54,7 @@ WHERE i.ITEM_ID IN (
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 아이템 관계로 부모와 자식 정보를 연결한다. 부모의 희귀도를 검사하고 자식 정보를 내림차순 ID로 출력한다. | 부모 ID 집합의 IN 서브쿼리 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | 관계 M개에 부모·자식 정보 N개를 조회하고 R개 결과를 정렬한다. 두 키 조회의 계획이 주요 비용이며 결과 비교 정렬은 O(R log R)이다. | RARE 부모의 ID 집합에서 자식 ID 집합을 구해 IN으로 검사한다. 집합의 구체화·세미조인 계획을 확인해야 한다. |
 
 ## 검증
 
@@ -85,9 +83,9 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Join each relation to both child and parent records, then test the parent rarity. This selects direct upgrades from a RARE parent regardless of the child rarity.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Look up parent and child information for M relations among N items, then sort R results in O(R log R) comparisons. The two key-lookup plans determine join cost.
 
 Boundary cases: The child need not itself be RARE. Return direct upgrades, not all descendants.
 
@@ -95,9 +93,7 @@ Although the official schema’s RARITY type label is inconsistent, its examples
 
 ### Alternative: IN subquery over qualifying parent IDs
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses in subquery over qualifying parent ids; compare its intermediate state and cost with the main implementation before choosing it.
+Use nested IN sets for RARE parents and their children; materialization and semijoin plans determine cost.
 
 ### Verification
 

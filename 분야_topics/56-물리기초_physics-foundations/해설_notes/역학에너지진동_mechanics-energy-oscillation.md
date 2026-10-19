@@ -24,9 +24,9 @@ $$m\ddot x=-kx,\qquad \ddot x+\omega^2x=0.$$
 
 ![역학, 에너지, 진동 | Mechanics, energy, and oscillation — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/mechanics-energy-oscillation.png)
 
-[SVG](../../../자료_assets/도식_diagrams/mechanics-energy-oscillation.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/mechanics-energy-oscillation.mmd)
+[SVG](../../../자료_assets/도식_diagrams/mechanics-energy-oscillation.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/mechanics-energy-oscillation.mmd)
 
-도식은 위 모델의 에너지 교환을 나타낸다. / The original diagram represents energy exchange in this model.
+그림은 위 모델의 에너지 교환을 나타낸다. / The original diagram represents energy exchange in this model.
 
 ### 초기 상태에서 해석해 얻기
 

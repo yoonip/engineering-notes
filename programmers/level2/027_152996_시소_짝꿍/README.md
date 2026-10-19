@@ -93,8 +93,6 @@ Boundary cases: Use divisibility and integer division rather than floating-point
 
 This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 시간 O(N²), 공간 O(1) / Time O(N²), space O(1)
 
-The main approach follows the steps described above. The alternative uses check every person pair and distance combination; compare its intermediate state and cost with the main implementation before choosing it.
-
 ### Verification
 
 Local checks covered 1 official examples and 71 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases. Saved tests also include a size or numeric boundary at the stated upper limit.

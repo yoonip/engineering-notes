@@ -42,8 +42,6 @@ def solution(elements):
 
 ## 다른 방법: 길이별 슬라이딩 윈도
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(elements):
     n=len(elements)
@@ -95,9 +93,7 @@ Boundary cases: Include length-n segments. Equal sums count once even when start
 
 ### Alternative: Slide a window separately for each length
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N²), 공간 O(N²) / Time and worst-case space O(N²)
-
-The main approach follows the steps described above. The alternative uses slide a window separately for each length; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N²), 공간 O(N²) / Time and worst-case space O(N²)
 
 ### Verification
 

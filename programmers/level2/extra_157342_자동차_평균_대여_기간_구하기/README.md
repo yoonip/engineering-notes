@@ -31,15 +31,13 @@ ORDER BY AVERAGE_DURATION DESC, CAR_ID DESC
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+DATEDIFF에 1을 더해야 대여 시작일과 종료일을 모두 센다. HAVING은 반올림 전 평균으로 7일을 검사하므로 6.96일 같은 값이 잘못 포함되지 않는다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 대여 이력을 자동차별로 집계하고 R개 통과 차량을 정렬한다. 결과 비교 정렬은 O(R log R)이며 집계 방식은 실행계획에 따른다.
 
 주의할 점: 하루 대여도 1일이다. 반올림해서 7.0이 된 6.96일을 조건에 통과시키면 안 된다.
 
 ## 다른 방법: 기간 합계와 횟수로 평균 계산
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 WITH totals AS (
@@ -54,7 +52,7 @@ ORDER BY AVERAGE_DURATION DESC,CAR_ID DESC;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 종료일−시작일에 1을 더해 양 끝 날짜를 포함한다. 자동차별 평균을 구하고 반올림 전 평균으로 7일 조건을 검사한다. | 기간 합계와 횟수로 평균 계산 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 대여 이력을 자동차별로 집계하고 R개 통과 차량을 정렬한다. 결과 비교 정렬은 O(R log R)이며 집계 방식은 실행계획에 따른다. | 자동차별 총 대여 일수와 횟수를 구해 평균을 계산한다. 두 방법 모두 대여 이력별 기간을 집계한다. |
 
 ## 검증
 
@@ -82,17 +80,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Adding one to DATEDIFF includes both rental endpoints. HAVING checks the unrounded average, preventing a value such as 6.96 days from qualifying after display rounding.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Aggregate N rentals by car and sort R qualifying cars in O(R log R) comparisons; aggregation strategy depends on the execution plan.
 
 Boundary cases: A same-day rental lasts one day. An average of 6.96 must not qualify merely because it rounds to 7.0.
 
 ### Alternative: Compute the mean from total duration and rental count
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses compute the mean from total duration and rental count; compare its intermediate state and cost with the main implementation before choosing it.
+Compute total days and rental counts per car. Both approaches aggregate rental durations.
 
 ### Verification
 

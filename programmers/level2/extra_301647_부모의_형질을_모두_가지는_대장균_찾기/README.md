@@ -31,15 +31,13 @@ ORDER BY child.ID
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+자식과 부모를 ID로 연결하면 비교 대상 부모가 정해진다. child AND parent가 parent와 같다는 것은 부모의 모든 1비트가 자식에도 있다는 뜻이다. 자식의 추가 형질은 허용한다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+N개 자식에서 부모 키를 조회하고 비트를 비교한 뒤 R개 결과를 정렬한다. 부모 키 인덱스와 조인 계획이 조회 비용을 정하며 결과 비교 정렬은 O(R log R)이다.
 
 주의할 점: 정수 크기가 크다고 형질을 포함하는 것은 아니다. 부모가 없는 행은 제외한다.
 
 ## 다른 방법: 상관 서브쿼리와 비트 OR
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT c.ID, c.GENOTYPE,
@@ -55,7 +53,7 @@ ORDER BY c.ID;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 같은 테이블을 부모·자식 역할로 조인한다. 자식 AND 부모가 부모와 같으면 부모의 모든 켜진 비트를 보존한 것이다. | 상관 서브쿼리와 비트 OR |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | N개 자식에서 부모 키를 조회하고 비트를 비교한 뒤 R개 결과를 정렬한다. 부모 키 인덱스와 조인 계획이 조회 비용을 정하며 결과 비교 정렬은 O(R log R)이다. | 부모 정보를 상관 하위쿼리로 읽고 OR의 포함 관계를 검사한다. 부모 키 조회가 반복될 수 있어 실제 계획을 비교해야 한다. |
 
 ## 검증
 
@@ -83,17 +81,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+The ID join identifies each child's parent. child AND parent equals parent exactly when every parent bit is present in the child; additional child traits are allowed.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Look up parents for N children, test bits and sort R matches. Parent-key indexes and join plans determine lookup cost; result comparison sorting is O(R log R).
 
 Boundary cases: Numerical magnitude does not imply bit containment. Exclude rows without a parent.
 
 ### Alternative: Correlated parent lookup with bitwise OR
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses correlated parent lookup with bitwise or; compare its intermediate state and cost with the main implementation before choosing it.
+Use correlated parent lookups and the equivalent OR subset test. Repeated key lookups require plan inspection.
 
 ### Verification
 

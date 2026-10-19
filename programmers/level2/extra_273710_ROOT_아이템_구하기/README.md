@@ -32,17 +32,15 @@ ORDER BY i.ITEM_ID
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+부모 ID가 NULL인 관계 행이 ROOT를 뜻한다. 아이템 ID로 이름을 연결하므로 부모가 없는 아이템의 번호와 이름만 출력한다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+정보 N개와 관계 M개의 조인·필터 뒤 R개 ROOT를 정렬한다. 키 인덱스와 조인 계획에 따라 비용이 달라지며 결과 비교 정렬은 O(R log R)이다.
 
 주의할 점: NULL은 = NULL이 아니라 IS NULL로 검사한다. ROOT는 업그레이드할 수 없는 마지막 아이템과 다르다.
 
 공식 스키마 표의 RARITY 자료형 표기와 달리 예제·조회 조건은 `COMMON`, `RARE`, `LEGEND` 문자열을 사용한다. 쿼리에서도 이 문자열 값으로 비교한다.
 
 ## 다른 방법: EXISTS로 ROOT 관계 확인
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 SELECT i.ITEM_ID,i.ITEM_NAME FROM ITEM_INFO i
@@ -53,7 +51,7 @@ ORDER BY i.ITEM_ID;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 관계 테이블의 PARENT_ITEM_ID가 NULL인지 검사한 뒤 정보 테이블에서 이름을 가져온다. | EXISTS로 ROOT 관계 확인 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | 정보 N개와 관계 M개의 조인·필터 뒤 R개 ROOT를 정렬한다. 키 인덱스와 조인 계획에 따라 비용이 달라지며 결과 비교 정렬은 O(R log R)이다. | 각 아이템에 부모 없는 관계 행이 있는지 EXISTS로 확인한다. ITEM_ID 인덱스와 세미조인 변환이 비용에 영향을 준다. |
 
 ## 검증
 
@@ -82,9 +80,9 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+A relation with a NULL parent ID identifies a root. Joining by item ID retrieves exactly those root items and their names.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Join/filter N item records and M relations, then sort R roots. Key indexes and join strategy affect cost; result comparison sorting is O(R log R).
 
 Boundary cases: Use IS NULL, not = NULL. A ROOT item is distinct from a terminal upgrade item.
 
@@ -92,9 +90,7 @@ Although the official schema’s RARITY type label is inconsistent, its examples
 
 ### Alternative: EXISTS over root relationship rows
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses exists over root relationship rows; compare its intermediate state and cost with the main implementation before choosing it.
+Check root relations with EXISTS per item; ITEM_ID indexes and semijoin transformations affect cost.
 
 ### Verification
 

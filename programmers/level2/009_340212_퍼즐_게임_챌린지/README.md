@@ -108,8 +108,6 @@ Boundary cases: The time before the first puzzle is zero. Stop evaluating a skil
 
 This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 시간 O(ND), 공간 O(1) / Time O(ND), space O(1)
 
-The main approach follows the steps described above. The alternative uses linear skill search for small difficulty ranges; compare its intermediate state and cost with the main implementation before choosing it.
-
 ### Verification
 
 Local checks covered 4 official examples and 50 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases. Saved tests also include a size or numeric boundary at the stated upper limit.

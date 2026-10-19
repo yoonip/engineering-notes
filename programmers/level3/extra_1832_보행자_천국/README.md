@@ -59,7 +59,7 @@ Main complexity: O(mn) time, O(n) extra space.
 
 Keep separate incoming-down and incoming-right counts for every cell. A straight-only cell permits departure only in the incoming direction. This is an explicit 2D state model before memory compression.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(MN), space O(MN).
 

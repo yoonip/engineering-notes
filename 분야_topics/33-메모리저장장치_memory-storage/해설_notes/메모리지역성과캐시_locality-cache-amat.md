@@ -42,7 +42,7 @@ p를 miss의 전체 시간으로 정의했다면 식은 `(1-m)h+mp`가 된다. �
 
 ![메모리 지역성과 캐시: 평균 지연과 대역폭을 나눠 보기 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/locality-cache-amat.png)
 
-[SVG](../../../자료_assets/도식_diagrams/locality-cache-amat.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/locality-cache-amat.mmd)
+[SVG](../../../자료_assets/도식_diagrams/locality-cache-amat.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/locality-cache-amat.mmd)
 
 직접 작성한 blocking 읽기 경로다. latency는 한 요청이 끝날 때까지 걸리는 시간이고 bandwidth는 일정 기간에 옮긴 byte 수를 시간으로 나눈 값이다. line이 64 byte인데 4 byte만 쓴다면 유효 데이터와 실제 전송량이 다를 수 있다. GPU에서는 여러 thread의 인접 접근을 적은 transaction으로 합치는 coalescing이 이 낭비를 줄인다. [NVIDIA의 global memory 접근 분석](https://developer.nvidia.com/blog/unlock-gpu-performance-global-memory-access-in-cuda/)
 
@@ -97,4 +97,4 @@ AMAT is checked against an explicit trace sum: h for every hit and h+p for every
 - CMU 15-213/14-513/15-513, *Cache Memories* (2025): 지역성·주소 분해·직접 매핑·추가 miss penalty / locality, address decomposition, direct mapping and additional miss penalty.
 - CMU 15-740, *Memory Hierarchy* (2019): 계층 성능·AMAT 정의 / hierarchy performance and AMAT convention. 두 자료의 평균 시간 정의를 대조했다 / average-time conventions cross-checked between both lectures.
 - NVIDIA, *Unlock GPU Performance: Global Memory Access in CUDA*: 전송 단위·coalescing·counter 관점 / transaction granularity, coalescing and counters. CPU와 GPU의 세부 캐시가 같다고 가정하지 않았다 / no assumption of identical CPU and GPU cache details.
-- 도식·trace·테스트는 직접 구성했다 / diagram, traces and tests constructed here. 출처 확인 / sources checked: 2026-10-19.
+- 그림·trace·테스트는 직접 구성했다 / diagram, traces and tests constructed here. 출처 확인 / sources checked: 2026-10-19.

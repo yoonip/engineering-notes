@@ -58,7 +58,7 @@ Main complexity: O(e log log e+Q log Q) time, O(e+Q) space.
 
 Count divisors by visiting multiples, then build a suffix best-index array. Queries become constant-time; the direct divisor sieve is simpler but slower than the prime-power sieve.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(E log E+Q), space O(E+Q).
 

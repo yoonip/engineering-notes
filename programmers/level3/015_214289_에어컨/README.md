@@ -65,7 +65,7 @@ Main complexity: O(51T) time, O(51) space.
 
 Dijkstra searches a time–temperature graph. The main DP scans each time layer; this alternative expands states in increasing energy cost.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(51T log(51T)), space O(51T).
 

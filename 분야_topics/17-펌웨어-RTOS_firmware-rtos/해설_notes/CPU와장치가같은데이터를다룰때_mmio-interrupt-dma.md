@@ -33,7 +33,7 @@ ST AN4839는 STM32F7/H7의 Cortex-M7 캐시와 DMA 예를 제공한다. Espressi
 
 ![CPU와 장치가 같은 데이터를 다룰 때: MMIO, 인터럽트, DMA — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/mmio-interrupt-dma.png)
 
-[SVG](../../../자료_assets/도식_diagrams/mmio-interrupt-dma.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/mmio-interrupt-dma.mmd)
+[SVG](../../../자료_assets/도식_diagrams/mmio-interrupt-dma.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/mmio-interrupt-dma.mmd)
 
 | 번호 / No. | 출발 / From | 도착 / To | 조건·동작 / Condition and action |
 | --- | --- | --- | --- |

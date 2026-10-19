@@ -46,8 +46,6 @@ def solution(k, dungeons):
 
 ## 다른 방법: 방문 집합 비트마스크 DP
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(k,dungeons):
     n=len(dungeons)
@@ -101,9 +99,7 @@ Boundary cases: Entry requirement and consumed fatigue are distinct. Identical d
 
 ### Alternative: Bitmask DP over visited subsets
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(N·2^N), 공간 O(2^N) / Time O(N·2^N), space O(2^N)
-
-The main approach follows the steps described above. The alternative uses bitmask dp over visited subsets; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(N·2^N), 공간 O(2^N) / Time O(N·2^N), space O(2^N)
 
 ### Verification
 

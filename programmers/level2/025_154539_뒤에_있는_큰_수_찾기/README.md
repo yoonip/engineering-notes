@@ -41,8 +41,6 @@ def solution(numbers):
 
 ## 다른 방법: 오른쪽부터 답 인덱스 건너뛰기
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(numbers):
     n=len(numbers)
@@ -92,9 +90,7 @@ Boundary cases: Equal values do not qualify. Any index left unresolved keeps −
 
 ### Alternative: Right-to-left jumping through next-greater links
 
-It computes the same result using different intermediate states or evaluation steps. 최악 시간 O(N²), 공간 O(N) / Worst-case time O(N²), space O(N); 스택 풀이가 선형 보장 / the stack guarantees linear time
-
-The main approach follows the steps described above. The alternative uses right-to-left jumping through next-greater links; compare its intermediate state and cost with the main implementation before choosing it.
+최악 시간 O(N²), 공간 O(N) / Worst-case time O(N²), space O(N); 스택 풀이가 선형 보장 / the stack guarantees linear time
 
 ### Verification
 

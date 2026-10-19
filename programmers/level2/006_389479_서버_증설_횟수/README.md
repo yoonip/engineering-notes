@@ -45,8 +45,6 @@ def solution(players, m, k):
 
 ## 다른 방법: 만료 시각을 저장하는 최소 힙
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from heapq import heappush, heappop
 
@@ -103,9 +101,7 @@ Boundary cases: A server covers exactly k hourly slots starting at installation.
 
 ### Alternative: Min-heap of expiration events
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(H log H), 공간 O(H) / Time O(H log H), space O(H)
-
-The main approach follows the steps described above. The alternative uses min-heap of expiration events; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(H log H), 공간 O(H) / Time O(H log H), space O(H)
 
 ### Verification
 

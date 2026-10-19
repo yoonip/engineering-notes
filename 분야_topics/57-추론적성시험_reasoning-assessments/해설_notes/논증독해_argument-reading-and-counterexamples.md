@@ -34,9 +34,9 @@ $$
 
 ![논증 독해: 무엇을 근거로 어디까지 말할 수 있는가 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.png)
 
-[SVG](../../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.mmd)
+[SVG](../../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.mmd)
 
-직접 구성한 도식이다. 반론은 결론뿐 아니라 근거의 신뢰성이나 연결 가정에도 향할 수 있다.
+직접 구성한 그림이다. 반론은 결론뿐 아니라 근거의 신뢰성이나 연결 가정에도 향할 수 있다.
 
 ## 문제의 요구를 바꿔 읽지 않기
 

@@ -58,7 +58,7 @@ Main complexity: O((N+M)²M²+N²) time, O(N²+M²) space.
 
 Place the lock in a padded board and add each rotated key placement. Every lock cell must sum to exactly one, independently checking the coordinate-set formulation.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O((N+M)²(N²+M²)), space O((N+M)²).
 

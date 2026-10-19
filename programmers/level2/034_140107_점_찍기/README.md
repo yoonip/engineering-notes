@@ -40,8 +40,6 @@ def solution(k, d):
 
 ## 다른 방법: 단조 감소하는 y 포인터
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 def solution(k,d):
     top=d//k
@@ -89,9 +87,7 @@ Boundary cases: Include the circumference and origin. Use isqrt for an exact int
 
 ### Alternative: Monotonically decreasing y pointer
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(d/k+1), 공간 O(1) / Time O(d/k+1), space O(1)
-
-The main approach follows the steps described above. The alternative uses monotonically decreasing y pointer; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(d/k+1), 공간 O(1) / Time O(d/k+1), space O(1)
 
 ### Verification
 

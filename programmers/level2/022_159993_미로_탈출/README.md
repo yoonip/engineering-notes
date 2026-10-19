@@ -57,8 +57,6 @@ def solution(maps):
 
 ## 다른 방법: 레버 상태를 포함한 한 번의 BFS
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from collections import deque
 
@@ -119,9 +117,7 @@ Boundary cases: The exit is traversable before activation. A fresh visited set p
 
 ### Alternative: One BFS with a lever-state bit
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(RC), 공간 O(RC), 정점 수 최대 2RC / Time and space O(RC), at most 2RC states
-
-The main approach follows the steps described above. The alternative uses one bfs with a lever-state bit; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(RC), 공간 O(RC), 정점 수 최대 2RC / Time and space O(RC), at most 2RC states
 
 ### Verification
 

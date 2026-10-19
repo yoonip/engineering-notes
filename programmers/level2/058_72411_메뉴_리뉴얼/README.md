@@ -51,8 +51,6 @@ def solution(orders, course):
 
 ## 다른 방법: 후보 집합 생성 후 주문 포함 검사
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from itertools import combinations
 
@@ -106,9 +104,7 @@ Boundary cases: Exclude combinations occurring only once. Find the maximum separ
 
 ### Alternative: Generate candidate sets, then test order containment
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(C·N·L), 공간 O(C·L) / Time O(C·N·L), space O(C·L); C=후보 수 / candidate count
-
-The main approach follows the steps described above. The alternative uses generate candidate sets, then test order containment; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(C·N·L), 공간 O(C·L) / Time O(C·N·L), space O(C·L); C=후보 수 / candidate count
 
 ### Verification
 

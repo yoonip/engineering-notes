@@ -64,7 +64,7 @@ Main complexity: O((N+E) log N) time for three searches, O(N+E) space.
 
 Compute all-pairs shortest fares, then test every shared-ride split point. Floyd–Warshall is simple for dense graphs but uses cubic time instead of three Dijkstra runs.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(N³), space O(N²).
 

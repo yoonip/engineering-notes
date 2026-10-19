@@ -32,15 +32,13 @@ ORDER BY TOTAL_ORDER
 
 ## 왜 맞는가
 
-행 조건을 먼저 적용하고, 필요한 키로 연결·집계한 뒤 요구한 열과 정렬을 만든다. 이 순서를 바꾸어 행을 누락하거나 중복하지 않는 것이 핵심이다.
+맛 키로 주문과 성분 유형을 연결하면 각 주문량이 해당 성분 그룹에 배정된다. 성분별 SUM은 그 성분을 쓰는 맛들의 주문량 합이다.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+주문 N개와 성분 정보 M개의 조인 뒤 G개 성분 합계를 정렬한다. 조인 방식·키 인덱스가 비용을 좌우하며 결과 비교 정렬은 O(G log G)이다.
 
 주의할 점: 맛별 행 수를 세는 문제가 아니라 주문량 합을 구한다. 두 테이블의 연결 키는 FLAVOR다.
 
 ## 다른 방법: 맛별 주문 선집계 후 성분별 합산
-
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
 
 ```sql
 WITH flavor_totals AS (
@@ -54,7 +52,7 @@ GROUP BY i.INGREDIENT_TYPE ORDER BY TOTAL_ORDER;
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 맛을 키로 주문 테이블과 성분 테이블을 연결한다. 성분 유형별 TOTAL_ORDER를 합하고 총 주문량 오름차순으로 정렬한다. | 맛별 주문 선집계 후 성분별 합산 |
-| 비용 | N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan. | 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance. |
+| 비용 | 주문 N개와 성분 정보 M개의 조인 뒤 G개 성분 합계를 정렬한다. 조인 방식·키 인덱스가 비용을 좌우하며 결과 비교 정렬은 O(G log G)이다. | 맛별 주문량을 먼저 합친 뒤 성분별로 다시 합친다. 맛이 고유한 입력에서는 앞선 집계가 행 수를 줄이지 않는다. |
 
 ## 검증
 
@@ -83,17 +81,15 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-Apply row predicates, join or aggregate on the required keys, then produce the requested projection and ordering. Correctness depends on neither dropping nor duplicating qualifying rows.
+Joining on flavor assigns each order total to its ingredient type. SUM by ingredient combines the totals of its associated flavors.
 
-N=입력 행 수, G=출력 그룹 수. 논리적으로 입력을 읽고 결과를 정렬한다. 실제 시간·공간은 인덱스, 조인 방식, 윈도 정렬과 실행 계획에 따라 달라진다. / N=input rows, G=output groups. Scanning and result ordering are required logically; physical cost depends on indexes, joins, window sorts and the query plan.
+Join N order rows with M ingredient rows and sort G ingredient totals. Join strategy and key indexes affect cost; result comparison sorting is O(G log G).
 
 Boundary cases: Sum order quantities rather than counting flavors. FLAVOR is the join key.
 
 ### Alternative: Preaggregate orders by flavor before ingredient grouping
 
-It computes the same result using different intermediate states or evaluation steps. 대안도 같은 결과를 내지만 중간 집계·윈도·서브쿼리의 비용이 다르다. 성능 우열은 실행 계획으로 확인한다. / Equivalent results with different intermediate grouping, window or subquery costs; inspect the execution plan before comparing performance.
-
-The main approach follows the steps described above. The alternative uses preaggregate orders by flavor before ingredient grouping; compare its intermediate state and cost with the main implementation before choosing it.
+Aggregate by flavor before ingredient. With unique flavor rows, the first aggregation does not reduce row count.
 
 ### Verification
 

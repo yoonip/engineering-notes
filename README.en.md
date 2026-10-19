@@ -22,7 +22,7 @@ I hope this repository will be more than a store of finished answers. One reader
 
 [Reasoning, assessments and humanities](문서_docs/추론과인문사회_REASONING_AND_HUMANITIES.md#english)
 
-[36 additional technical foundation articles](문서_docs/분야별기초해설_EXTENDED_FOUNDATIONS.md)
+[36 technical foundation articles](문서_docs/분야별기초해설_EXTENDED_FOUNDATIONS.md)
 
 ## Contents
 

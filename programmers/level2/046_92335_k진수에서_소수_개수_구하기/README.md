@@ -49,8 +49,6 @@ def solution(n, k):
 
 ## 다른 방법: 체로 소수 약수를 먼저 준비
 
-기본 풀이와 같은 결과를 구하되 중간 상태와 계산 방식이 다르다.
-
 ```python
 from math import isqrt
 
@@ -118,9 +116,7 @@ Boundary cases: Read tokens in decimal, not base k. One is not prime, and consec
 
 ### Alternative: Sieve prime trial divisors once
 
-It computes the same result using different intermediate states or evaluation steps. 시간 O(sqrt(M) log log M+Σπ(sqrt(P))), 공간 O(sqrt(M)) / Time O(sqrt(M) log log M+Σπ(sqrt(P))), space O(sqrt(M)); M=최대 조각 / largest token
-
-The main approach follows the steps described above. The alternative uses sieve prime trial divisors once; compare its intermediate state and cost with the main implementation before choosing it.
+시간 O(sqrt(M) log log M+Σπ(sqrt(P))), 공간 O(sqrt(M)) / Time O(sqrt(M) log log M+Σπ(sqrt(P))), space O(sqrt(M)); M=최대 조각 / largest token
 
 ### Verification
 

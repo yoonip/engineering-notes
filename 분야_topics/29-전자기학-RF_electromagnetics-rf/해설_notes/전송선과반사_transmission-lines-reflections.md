@@ -47,9 +47,9 @@ $$a_k=a_0(\Gamma_L\Gamma_S)^k,\qquad
 
 ![전송선과 반사: 배선도 신호를 저장하고 전달한다 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/transmission-lines-reflections.png)
 
-[SVG](../../../자료_assets/도식_diagrams/transmission-lines-reflections.svg) · [도식 원본 / Diagram source](../../../자료_assets/도식_diagrams/transmission-lines-reflections.mmd)
+[SVG](../../../자료_assets/도식_diagrams/transmission-lines-reflections.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/transmission-lines-reflections.mmd)
 
-직접 작성한 첫 반사들의 시간 도식이다. VS=3.3 V, RS=Z₀=50 Ω, open load이면 a₀=1.65 V가 td 뒤 load에서 3.3 V가 된다. 돌아온 파는 ΓS=0인 source에서 흡수된다. 반대로 load도 50 Ω로 종단하면 load의 정상 전압은 1.65 V다. 종단 저항의 분압과 전력도 설계에 포함해야 한다.
+직접 작성한 첫 반사들의 시간 그림이다. VS=3.3 V, RS=Z₀=50 Ω, open load이면 a₀=1.65 V가 td 뒤 load에서 3.3 V가 된다. 돌아온 파는 ΓS=0인 source에서 흡수된다. 반대로 load도 50 Ω로 종단하면 load의 정상 전압은 1.65 V다. 종단 저항의 분압과 전력도 설계에 포함해야 한다.
 
 `|ΓLΓS|<1`일 때 등비급수를 더하면, 유한한 저항 load의 정상 전압이 `VSRL/(RS+RL)`로 DC 분압과 일치한다. 이상적인 무손실·무감쇠 경계에서는 이 수렴 조건이 성립하지 않을 수 있다.
 
@@ -99,4 +99,4 @@ A lumped approximation can be useful when `td/tr` is sufficiently small, but no 
 
 - Texas Instruments, *AN-807 Reflections: Computations and Waveforms*, §§3–7: 경계 조건·반사 계수·lattice 계산 / boundary conditions, reflection coefficients and lattice computation.
 - Analog Devices, *Interfacing High-Speed Signals*: 분포 L′·C′, 무손실 가정과 source/load 반사 / distributed L′/C′, lossless assumptions and source/load reflection. 두 문서의 부호·정합 및 open 극한을 대조했다 / signs, matched boundaries and open-load limits cross-checked between the documents.
-- 도식·파동 합산·테스트는 직접 구성했다 / diagram, wave summation and tests constructed here. 출처 확인 / sources checked: 2026-10-19.
+- 그림·파동 합산·테스트는 직접 구성했다 / diagram, wave summation and tests constructed here. 출처 확인 / sources checked: 2026-10-19.

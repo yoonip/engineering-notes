@@ -62,7 +62,7 @@ Main complexity: O(S+E) parsing and aggregation, excluding big-integer Fraction 
 
 Extract addresses and links with HTMLParser, then accumulate scores as exact Fractions. This independently checks the regular-expression parser in the main solution.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(S+E), space O(S+E), excluding Fraction arithmetic.
 

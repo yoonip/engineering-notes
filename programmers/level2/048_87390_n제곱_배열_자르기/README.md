@@ -90,8 +90,6 @@ Boundary cases: left and right are zero-based. Allocating n² entries is infeasi
 
 This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 시간 O(n²), 공간 O(n²) / Time and space O(n²)
 
-The main approach follows the steps described above. The alternative uses materialize square borders for small n; compare its intermediate state and cost with the main implementation before choosing it.
-
 ### Verification
 
 Local checks covered 2 official examples and 60 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases. Saved tests also include a size or numeric boundary at the stated upper limit.

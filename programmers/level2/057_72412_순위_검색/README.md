@@ -110,8 +110,6 @@ Boundary cases: Scores equal to the threshold qualify. A wildcard ignores that a
 
 This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 시간 O(NQ), 공간 O(N+Q) / Time O(NQ), space O(N+Q)
 
-The main approach follows the steps described above. The alternative uses full applicant scan per query for small inputs; compare its intermediate state and cost with the main implementation before choosing it.
-
 ### Verification
 
 Local checks covered 1 official examples and 40 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.

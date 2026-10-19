@@ -63,7 +63,7 @@ Main complexity: O(N+E+S) time, O(N+E) space.
 
 Run BFS separately from each source. Undirected distances match the single reverse BFS, but repeated searches duplicate work when many sources are queried.
 
-Code: [alternative.py](alternative.py). Scope: alternative implementation.
+Code: [alternative.py](alternative.py).
 
 Complexity: O(S(N+E)), space O(N+E).
 
