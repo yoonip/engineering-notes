@@ -1,6 +1,6 @@
 # 논문 해설 | Paper studies
 
-계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명공학·신소재·우주 탐사까지 논문 130편을 한국어로 읽습니다. 기존 30편에 서로 다른 논문 100편의 해설을 더했습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
+계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명공학·의약품·신소재·우주 탐사와 사회 데이터 연구까지 논문 138편을 한국어로 읽습니다. 기존 30편에 서로 다른 논문 108편의 해설을 더했습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
 
 ## 분야별 목록
 
@@ -15,8 +15,10 @@
 | [뇌와 신경공학](뇌와신경공학_neuroengineering/README.md) | 25 | 뉴런, 기억·공간, 연결지도, 초파리 모형, BCI와 유전체 |
 | [반도체와 소재](반도체와소재_semiconductors-materials/README.md) | 9 | FinFET, 원자층 재료, 메모리 물리, 재료 탐색·합성, 태양전지 |
 | [우주 탐사와 정밀 관측](우주와관측_space-observation/README.md) | 6 | 상태 추정, 화성 비행, 소행성 충돌, 광통신, JWST와 LIGO |
+| [의약품과 대사 연구](의약품과대사_metabolic-medicine/README.md) | 2 | STEP 1·SURMOUNT-1의 설계, 감량 효과, 결측·중단·이상사건 |
+| [게임·생물·사회 데이터를 활용한 연구](뜻밖의연결_interdisciplinary/README.md) | 6 | WoW와 감염병, Foldit과 단백질, 점균과 연결망, 검색과 독감, 음악과 사회적 영향 |
 
-각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 130편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
+각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 138편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
 
 ## 처음 읽으실 때
 
@@ -68,6 +70,12 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 [반도체와 소재 9편](반도체와소재_semiconductors-materials/README.md)에서는 단일 소자의 성능, 웨이퍼 수율, 계산으로 찾은 결정, 로봇이 합성한 물질, 외부 인증 태양전지를 구별합니다. A-Lab은 2026년 정정된 본문과 수치를 함께 읽습니다.
 
+## 약물 효과와 뜻밖의 연구 재료
+
+[의약품과 대사 연구](의약품과대사_metabolic-medicine/README.md)는 위고비·마운자로와 연결되는 두 대표 임상 논문을 읽습니다. 평균 감량, 개인의 결과, 관찰한 참여자와 무작위 배정 전체, 치료 중단과 결측 처리의 차이를 자체 계산으로 확인합니다. 작용 원리·발견 경위와 현재 상품의 허가는 [의약품·생명공학 리뷰](../제품리뷰_reviews/의약품과생명공학_biomedical/README.md)에서 이어집니다.
+
+[게임·생물·사회 데이터를 활용한 연구](뜻밖의연결_interdisciplinary/README.md)는 연구 재료를 새롭게 고른 사례 여섯 편입니다. WoW의 감염 사건에 대한 제안, Foldit 참가자의 구조 탐색, 점균의 적응 연결망은 무엇을 검증했는지 나누어 읽습니다. Google Flu의 가능성과 후속 실패 분석을 함께 다루며, 음악시장 실험에서는 사회적 영향과 예측 불가능성을 살펴봅니다. 착상의 흥미와 실제 유용성의 근거를 구별합니다.
+
 ## 우주 탐사·관측을 가능하게 하는 공학
 
 [우주·관측 6편](우주와관측_space-observation/README.md)은 칼만 필터의 불확실성 계산과 자율 항법, 검출기·광학·통계를 연결합니다. 당시의 개발 계획과 이후 실제 임무 결과를 섞지 않고, 논문에서 확인한 시점과 조건을 적었습니다.
@@ -82,7 +90,7 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 후속 연구에서 다시 사용한 개념, 공개 교육과정에서 다루는 내용, 실제 시스템 설계로 이어진 영향을 기준으로 읽을 논문을 골랐습니다. 예를 들어 [Stanford CS231n 2025 강의 일정](https://cs231n.stanford.edu/2025/schedule.html)은 역전파·AlexNet·ResNet·BatchNorm·attention을 연결하고, [MIT 분산 시스템의 논문 질문](https://pdos.csail.mit.edu/6.824/questions.html)은 GFS와 MapReduce 등의 설계 조건을 검토합니다. 개별 글에서는 해당 논문의 원문과 확인 가능한 후속 논문·명세를 연결합니다.
 
-발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 130편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
+발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 138편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
 
 ## 모델별 분석과 재현 사례
 
@@ -96,4 +104,4 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## English
 
-One hundred and thirty distinct papers span information theory, electronics, computer systems, AI, neuroscience, materials and space engineering. One hundred studies were added to the earlier selection of thirty; preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
+One hundred and thirty-eight distinct papers span information theory, electronics, computer systems, AI, neuroscience, metabolic medicine, materials, space engineering and interdisciplinary studies using games, organisms and social data. One hundred and eight studies were added to the earlier thirty; preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
