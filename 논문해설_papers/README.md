@@ -1,6 +1,22 @@
 # 논문 해설 | Paper studies
 
-계산 이론·정보·전자소자·분산 시스템·신경망의 설계에 큰 영향을 준 논문 30편을 한국어로 읽습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
+계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명공학·신소재·우주 탐사까지 논문 130편을 한국어로 읽습니다. 기존 30편에 서로 다른 논문 100편의 해설을 더했습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
+
+## 분야별 목록
+
+| 분야 | 논문 수 | 읽을 내용 |
+|---|---:|---|
+| [정보·전자공학·프로세서](정보와전자공학_information-electronics/README.md) | 7 | 정보량, 트랜지스터, FFT, 병렬화와 집적 |
+| [컴퓨팅과 분산 시스템의 기초](컴퓨팅과시스템_computing-systems/README.md) | 8 | 계산 모형, 관계형 데이터, 통신망과 분산 저장 |
+| [알고리즘·보안·운영체제와 시스템](알고리즘과컴퓨터시스템_algorithms-systems/README.md) | 30 | 탐색과 복잡도, 암호, 합의, 커널 검증, 최근 GPU·메모리 연구 |
+| [신경망의 기초](딥러닝_deep-learning/README.md) | 11 | 역전파, 합성곱, 정규화, 잔차, 확률 생성 |
+| [머신러닝과 생성 모델](머신러닝과생성모델_machine-learning/README.md) | 30 | SVM부터 강화학습·3D·단백질·효율적인 언어·멀티모달 모델 |
+| [Transformer](Transformer의계산_ATTENTION.md)와 [언어·멀티모달](언어와멀티모달_language-multimodal/README.md) | 4 | attention, 문맥 학습, 이미지·문장 연결, 저비용 적응 |
+| [뇌와 신경공학](뇌와신경공학_neuroengineering/README.md) | 25 | 뉴런, 기억·공간, 연결지도, 초파리 모형, BCI와 유전체 |
+| [반도체와 소재](반도체와소재_semiconductors-materials/README.md) | 9 | FinFET, 원자층 재료, 메모리 물리, 재료 탐색·합성, 태양전지 |
+| [우주 탐사와 정밀 관측](우주와관측_space-observation/README.md) | 6 | 상태 추정, 화성 비행, 소행성 충돌, 광통신, JWST와 LIGO |
+
+각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 130편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
 
 ## 처음 읽으실 때
 
@@ -44,11 +60,29 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 | [CLIP](언어와멀티모달_language-multimodal/clip.md), 2021 | 이미지·설명 두 쌍의 유사도와 양방향 비교를 확인합니다. |
 | [LoRA](언어와멀티모달_language-multimodal/lora.md), 2021 공개·2022 발표 | 작은 행렬 두 개로 변화량을 표현하고 병합 계산·학습 변수 수를 대조합니다. |
 
+## 뇌 회로·초파리와 신경 인터페이스
+
+[뇌와 신경공학 25편](뇌와신경공학_neuroengineering/README.md)은 논리 뉴런·막전위에서 연결지도와 음성 BCI, AlphaGenome까지 이어집니다. 구조를 모두 그렸다는 말, 일부 회로 기능을 예측했다는 말, 몸의 움직임을 모사했다는 말의 차이를 각 논문의 검증 범위로 설명합니다. 뇌의 모든 기능이나 의식을 복제했다는 표현으로 합치지 않습니다.
+
+## 재료·반도체에서 장치와 제조로
+
+[반도체와 소재 9편](반도체와소재_semiconductors-materials/README.md)에서는 단일 소자의 성능, 웨이퍼 수율, 계산으로 찾은 결정, 로봇이 합성한 물질, 외부 인증 태양전지를 구별합니다. A-Lab은 2026년 정정된 본문과 수치를 함께 읽습니다.
+
+## 우주 탐사·관측을 가능하게 하는 공학
+
+[우주·관측 6편](우주와관측_space-observation/README.md)은 칼만 필터의 불확실성 계산과 자율 항법, 검출기·광학·통계를 연결합니다. 당시의 개발 계획과 이후 실제 임무 결과를 섞지 않고, 논문에서 확인한 시점과 조건을 적었습니다.
+
+## 최근 연구를 읽는 경로
+
+[머신러닝·생성 모델](머신러닝과생성모델_machine-learning/README.md)에서는 AlphaFold 3, Mamba-2, Titans, DeepSeek-V3.2, Qwen3·Qwen3.5-Omni를 읽습니다. [시스템](알고리즘과컴퓨터시스템_algorithms-systems/README.md)에서는 Harmonic, Rex, PageFlex, KPerfIR, Soar·Alto를 읽습니다. [신경공학](뇌와신경공학_neuroengineering/README.md)의 초파리·음성 합성·유전체 연구와 [최근 소재 연구](반도체와소재_semiconductors-materials/README.md)도 연결됩니다.
+
+최근이라는 이유로 장래의 영향이나 모든 비교 우위를 확정하지 않습니다. 기술 보고서·사전논문·심사 논문·정정본의 상태를 나누고, 결과가 나온 입력·장비·과제와 한계를 먼저 확인합니다.
+
 ## 논문을 선정한 기준
 
 후속 연구에서 다시 사용한 개념, 공개 교육과정에서 다루는 내용, 실제 시스템 설계로 이어진 영향을 기준으로 읽을 논문을 골랐습니다. 예를 들어 [Stanford CS231n 2025 강의 일정](https://cs231n.stanford.edu/2025/schedule.html)은 역전파·AlexNet·ResNet·BatchNorm·attention을 연결하고, [MIT 분산 시스템의 논문 질문](https://pdos.csail.mit.edu/6.824/questions.html)은 GFS와 MapReduce 등의 설계 조건을 검토합니다. 개별 글에서는 해당 논문의 원문과 확인 가능한 후속 논문·명세를 연결합니다.
 
-발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 이 30편은 정보·컴퓨팅·공학·AI의 여러 출발점을 함께 공부하기 위한 선정 범위입니다.
+발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 130편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
 
 ## 모델별 분석과 재현 사례
 
@@ -62,4 +96,4 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## English
 
-Thirty selected papers span information theory, electronics, computing, distributed systems and deep learning. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
+One hundred and thirty distinct papers span information theory, electronics, computer systems, AI, neuroscience, materials and space engineering. One hundred studies were added to the earlier selection of thirty; preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
