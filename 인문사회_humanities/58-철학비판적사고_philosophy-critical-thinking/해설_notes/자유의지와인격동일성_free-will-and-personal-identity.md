@@ -112,4 +112,6 @@ AI가 ‘저도 어제의 저입니다’라고 답하는 것은 자기 보고 �
 
 </details>
 
+[철학 개념 학습](../개념_concepts/README.md)에서는 이 글에 등장하는 용어를 기초부터 다룹니다. [최근 AI 연구와 고전의 비교](AI연구와고전개념_ai-evidence-and-classical-concepts.md)는 내부 상태 보고·공유·역할 제어의 실험과 [List의 2025년 AI 자유의지 논문](../../../논문해설_papers/자유의지와책임_free-will-responsibility/list2025.md)을 연결합니다. 새 자료가 어떤 전제를 지지하는지와 어떤 철학적 결론까지 따라오는지는 구분합니다.
+
 [철학과 비판적 사고](../README.md) · [마음과 인공지능 철학 논문](../../../논문해설_papers/마음과인공지능철학_mind-ai-philosophy/README.md) · [호르몬과 행동 논문](../../../논문해설_papers/호르몬과행동_hormones-behaviour/README.md)

@@ -4,6 +4,8 @@
 
 논문은 계산 이론·시스템·AI·전자공학에서 뇌신경·생명공학·소재·우주 연구로 이어집니다. 제품 리뷰는 [반도체·산업 컴퓨팅](제품리뷰_reviews/반도체와산업컴퓨팅_chips-industrial/README.md), [기기·모빌리티](제품리뷰_reviews/기기와모빌리티_devices-mobility/README.md), [AI·로봇](제품리뷰_reviews/AI와로봇_ai-robotics/README.md), [우주·운송](제품리뷰_reviews/우주와운송_space-transport/README.md), [방산 전자](제품리뷰_reviews/방산전자_defense-electronics/README.md), [의약품·생명공학](제품리뷰_reviews/의약품과생명공학_biomedical/README.md)으로 나누었습니다. 실제 본문에서 용어와 원리·비교 근거를 함께 읽으실 수 있습니다.
 
+철학은 [기본 개념 다섯 장](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)에서 질문·실재·지식·윤리·마음을 먼저 익힙니다. 대표 논증과 [최근 AI 연구 비교](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)는 각 개념의 근거와 반론을 더 읽는 자료입니다.
+
 | 이어서 읽을 분야 | 논문 해설 | 제품·산업 분석 |
 |---|---|---|
 | 에너지·물·환경 | [태양전지·전해질·담수화·탄소](논문해설_papers/에너지와환경_energy-environment/README.md) | [히트펌프·풍력·지열·물·저장](제품리뷰_reviews/에너지와물_energy-water/README.md) |

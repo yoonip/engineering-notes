@@ -18,3 +18,7 @@
 ## English
 
 Philosophy examines justification and value judgments; economics examines choices and comparable indicators; social analysis examines evidence and institutions; legal reading examines sources, dates and conditions. A constructed education example separates a score difference from causal attribution, policy evaluation and legal eligibility. Reading and argument reasoning, and foreign-language study, have their own categories.
+
+## 철학 개념을 먼저 읽기
+
+[기본 개념 다섯 장](58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)은 질문과 시대, 실재와 원인, 지식과 근거, 윤리와 정의, 마음·자유·동일성을 다룹니다. 각 장은 자체 사례와 입장별 이유·반론, 확인 문제로 구성합니다. [최근 AI 연구 비교](58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)는 선별한 실험과 고전 논증을 연결합니다.
