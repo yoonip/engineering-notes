@@ -22,3 +22,24 @@ Arm Cortex-M/A/R, RISC-V RV32/RV64, x86-64, MIPS, AVR, PicoRV32, Ibex, CVA6, Roc
 
 - [RISC-V specifications](https://docs.riscv.org/)
 - [Arm documentation](https://developer.arm.com/documentation)
+
+## Arm·RISC-V 실행 구조
+
+ISA는 명령어의 표현, 레지스터, 메모리 접근과 예외 처리처럼 프로그램에서 관찰할 수 있는 동작을 정의한다. CPU 코어는 이 규칙을 회로로 구현하며, MCU는 코어에 Flash, SRAM과 주변장치를 결합한다. STM32F767ZI에는 Arm Cortex-M7 코어가 들어 있다. Arm은 아키텍처, Cortex-M7은 코어, STM32F767ZI는 MCU, NUCLEO-F767ZI는 개발보드라는 서로 다른 계층이다. [ST 제품 설명](https://www.st.com/en/microcontrollers-microprocessors/stm32f767zi.html)
+
+같은 C 코드도 대상 ISA에 따라 다른 기계 명령으로 바뀐다. `input_a + input_b`를 Arm과 RISC-V로 각각 빌드하면, 값을 읽는 명령, 더하는 명령, 결과를 저장하는 명령으로 나뉜다. C 한 줄과 CPU 명령 한 개는 같은 단위가 아니다.
+
+```c
+volatile uint32_t input_a = 1;
+volatile uint32_t input_b = 3;
+volatile uint32_t result;
+volatile uint32_t trace[2];
+
+result = input_a + input_b;
+trace[0] = result;
+trace[1] = result + 1;
+```
+
+Renode의 Cortex-M7과 Spike의 RV64IMAC에서 명령 단위로 실행했다. 덧셈 직후에는 결과 4가 CPU 레지스터에 있고, 저장 명령 뒤에 `result` 메모리가 4로 바뀐다. 최종 상태는 두 대상 모두 `result=4`, `trace={4,5}`였다. 이 기록은 가상 대상에서 수집한 실행 결과다.
+
+Renode는 MCU와 주변장치 모델을 제공하고, Spike는 RISC-V ISA 시뮬레이터다. 이 실습의 Arm 경로는 Renode의 GDB 서버에 직접 연결하며, RISC-V 경로는 OpenOCD의 `remote_bitbang`으로 Spike의 가상 JTAG에 연결한다. [Renode GDB 문서](https://renode.readthedocs.io/en/latest/debugging/gdb.html), [Spike 프로젝트](https://github.com/riscv-software-src/riscv-isa-sim)
