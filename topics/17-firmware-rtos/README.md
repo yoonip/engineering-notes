@@ -25,3 +25,24 @@ STM32, ESP32/ESP-IDF, Nordic nRF, NXP, TI, Microchip AVR/PIC/SAM, Renesas, RP204
 ## 참고 자료
 
 - [Zephyr introduction](https://docs.zephyrproject.org/latest/introduction/index.html)
+
+## 시작 코드와 메모리 배치
+
+펌웨어는 CPU가 실행하는 소프트웨어이며, 주변장치와 보드의 동작을 제어한다. 컴파일러와 어셈블러가 만든 목적 파일을 링커가 연결하면 ELF가 생성된다. ELF에는 실행 코드와 데이터의 배치 정보, 심볼과 디버그 정보가 포함될 수 있다.
+
+일반적인 Cortex-M 시작 코드에서는 벡터 테이블의 초기 스택 포인터와 Reset Handler 주소를 이용한다. Reset Handler는 `.data`의 초기값을 RAM으로 복사하고 `.bss`를 0으로 채운 뒤 `main()`을 호출한다. 링커 스크립트는 Flash와 RAM의 주소·크기, 각 섹션의 배치를 지정한다.
+
+| 영역 | 내용 |
+| --- | --- |
+| `.text` | 실행 코드 |
+| `.rodata` | 읽기 전용 상수 |
+| `.data` | 초기값이 있는 전역·정적 변수 |
+| `.bss` | 0으로 초기화하는 전역·정적 변수 |
+
+## 인터럽트·DMA·FreeRTOS
+
+인터럽트는 이벤트에 따라 CPU의 실행 흐름을 처리 함수로 넘긴다. DMA는 설정한 규칙에 따라 주변장치와 메모리 사이의 데이터를 전송한다. CPU와 인터럽트·DMA가 데이터를 공유하면 버퍼 소유권, 갱신 시점과 캐시 상태도 함께 다룬다.
+
+RTOS는 작업을 task로 나누고 우선순위에 따라 실행을 관리한다. queue는 작업 사이의 데이터를 전달하고, mutex는 공유 자원에 대한 동시 접근을 조정한다. ESP32 예제에서는 UART 수신 루프가 명령을 파싱해 queue에 넣고, worker task가 메모리 검사와 연산 signature를 계산해 결과를 반환한다. 같은 sequence의 재요청에는 저장한 결과를 반환하며, 출력은 mutex로 보호한다. [Espressif FreeRTOS 문서](https://docs.espressif.com/projects/esp-idf/en/v5.1/esp32/api-guides/freertos-smp.html)
+
+`volatile`은 외부에서 값이 바뀔 수 있는 대상에 대한 접근이 최적화로 제거되거나 이전 값으로 대체되는 것을 제한한다. 원자성, 실행 흐름 사이의 동기화와 DMA·캐시 일관성은 별도로 다룬다.
