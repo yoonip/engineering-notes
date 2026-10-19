@@ -16,6 +16,17 @@
 | FPGA·계측 자동화 | FPGA와 ADC/DAC를 연결한 혼성신호 제어 및 데이터 수집 |
 | 임베디드·AI 응용 | 태양에너지 하베스팅 시스템, T5 기반 점자 역번역 모델 |
 
+## 한국연구재단 연구과제
+
+| 항목 | 내용 |
+| --- | --- |
+| 연구과제명 | 트랜스포머 DRAM-PiM 연구 |
+| 사업명 | 2024년도 석사과정생연구장려금지원사업 |
+| 지원기관 | 한국연구재단 |
+| 과제번호 | RS-2024-00395426 |
+| 총연구기간 | 2024.07.01. ~ 2025.06.30. |
+| 소속기관 | 국민대학교 |
+
 ## 기술 분야
 
 반도체 회로와 디지털 하드웨어 설계, 펌웨어, 실리콘 검증, 계측 자동화와 AI 모델 분석을 다룹니다.
@@ -30,10 +41,12 @@
 | RTL 설계·검증 | Verilog, SystemVerilog, FIFO·Clock Domain, 사이클 단위 기능 검증, Xcelium, QuestaSim |
 | 혼성신호 모델링 | XMODEL, Glister, Modelzen |
 | FPGA·Bring-up | Vivado, Opal Kelly XEM8320, Nexys 4 DDR, SYZYGY, FrontPanel API |
-| 하드웨어·펌웨어 | Raspberry Pi, Arduino, MCU, 임베디드 펌웨어, Linux 드라이버, 전원 회로·PCB, SPI·GPIO, ADC/DAC |
+| MCU·임베디드 플랫폼 | STM32, ESP32, Arm Cortex-M, Raspberry Pi, Arduino, STM32CubeIDE, PlatformIO |
+| 하드웨어·펌웨어 | MCU, 임베디드 펌웨어, Linux 드라이버, 전원 회로·PCB, UART·SPI·GPIO, ADC/DAC, 부팅·메모리 맵·인터럽트·DMA·FreeRTOS |
 | Post-Silicon 검증 | Silicon Bring-up, 소자 특성·파라미터 분석, DC·펄스 계측, Probe-card Testing |
 | 계측·테스트 자동화 | 테스트 벡터·시퀀스, Telemetry·Logging, 데이터 수집·시각화, Tkinter·Matplotlib |
-| 시스템 디버깅 | JTAG·OpenOCD, 신호 무결성·버스 타이밍 분석 |
+| 시스템 디버깅 | JTAG·SWD, ST-Link, OpenOCD, GDB, 신호 무결성·버스 타이밍 분석 |
+| 아키텍처·가상 실습 | Arm·RISC-V, Renode, Spike, 명령 단위 실행·메모리 회귀검사·오류 주입 |
 
 ## 언어와 개발 환경
 
@@ -76,6 +89,13 @@
 - 국민대학교 지능형반도체 및 디스플레이 석사
 - 국민대학교 전자공학부 학사
 - ISL
+
+## 연구자 정보
+
+| 항목 | 내용 |
+| --- | --- |
+| 이름 | 윤일평 |
+| 국가연구자번호(IRIS) | 12944496 |
 
 ## 영어
 
