@@ -88,15 +88,52 @@ CNN과 트랜스포머의 가중치 메모리 접근·MAC 연산 에너지를 �
 | 2022 | 국민대학교 공학교육혁신센터 | 지식재산캠프 금상 |
 | 2022 | 국민대학교 | 캡스톤디자인 경진대회 지식재산 부문 은상 |
 
-## 연구 환경과 기술
+## 기술 분야
 
-| 분야 | 관련 기술 |
+반도체 회로와 디지털 하드웨어 설계, 펌웨어, 실리콘 검증, 계측 자동화와 AI 모델 분석을 다룬다.
+
+| 분야 | 기술·도구 |
 | --- | --- |
-| 회로·물리 검증 | Cadence Virtuoso·Spectre, Calibre DRC/LVS·PEX, PVT 분석 |
-| RTL·FPGA | Verilog, SystemVerilog, Verilog-A, Xcelium, Vivado, Opal Kelly FrontPanel |
-| 소프트웨어·AI | Python, C/C++, MATLAB, PyTorch, Hugging Face |
-| 시스템 | CentOS·Ubuntu, Bash, GPU 서버, CUDA·cuDNN 환경 구성 |
-| 계측 | Keithley 4200A-SCS, HP 4155B, 프로브 스테이션, 오실로스코프, 로직 아날라이저 |
+| 반도체·메모리 회로 | CMOS, SRAM, DRAM-PIM, AI 가속기, MAC·Adder Tree |
+| SRAM 아키텍처 | Bank·Sub-block·Bitcell Array, WL Driver, Decoder, MUX, Sense Amplifier |
+| 회로 설계·시뮬레이션 | Cadence Virtuoso·Spectre, Verilog-A, PVT 분석, SNM, DVS·RBB |
+| 레이아웃·물리 검증 | Full-Chip Layout·Tape-out, TEG Layout, Calibre DRC/LVS·PEX, Assura |
+| 공정·설계 환경 | 45nm·65nm PDK, EDA·Ruledeck 환경 |
+| RTL 설계·검증 | Verilog, SystemVerilog, FIFO·Clock Domain, 사이클 단위 기능 검증, Xcelium, QuestaSim |
+| 혼성신호 모델링 | XMODEL, Glister, Modelzen |
+| FPGA·Bring-up | Vivado, Opal Kelly XEM8320, Nexys 4 DDR, SYZYGY, FrontPanel API |
+| 하드웨어·펌웨어 | Raspberry Pi, Arduino, MCU, 임베디드 펌웨어, Linux 드라이버, 전원 회로·PCB, SPI·GPIO, ADC/DAC |
+| Post-Silicon 검증 | Silicon Bring-up, 소자 특성·파라미터 분석, DC·펄스 계측, Probe-card Testing |
+| 계측·테스트 자동화 | 테스트 벡터·시퀀스, Telemetry·Logging, 데이터 수집·시각화, Tkinter·Matplotlib |
+| 시스템 디버깅 | JTAG·OpenOCD, 신호 무결성·버스 타이밍 분석 |
+
+## 언어와 개발 환경
+
+| 분야 | 언어·도구 |
+| --- | --- |
+| 시스템·임베디드 프로그래밍 | C, C++ |
+| 분석·자동화·수치해석 | Python, MATLAB, Bash |
+| AI·모델 분석 | PyTorch, TensorFlow, Hugging Face, CNN·LLM·T5, 모델 양자화, 메모리·MAC·KV Cache 에너지 모델링, Memory-bound·Compute-bound 분석 |
+| 개발·GPU 환경 | Linux(CentOS·Ubuntu), GPU 서버, Jupyter Notebook, CUDA·cuDNN, Docker, Git |
+
+## 계측 장비
+
+| 구분 | 장비 |
+| --- | --- |
+| 반도체·소자 계측 | Keithley 4200A-SCS(SMU·고속 PMU), HP 4155B |
+| 프로빙·온도 제어 | 진공 프로브 스테이션, 프로브 카드, Hot Chuck |
+| 파형 관측 | 디지털 오실로스코프 |
+| 디지털 신호 분석 | 로직 아날라이저 |
+
+## 영어
+
+TOEIC Speaking IH (Intermediate High)
+
+| 구분 | 활용 |
+| --- | --- |
+| 읽기 | 영문 논문·기술 문서와 시사 기사 독해 |
+| 쓰기 | 연구 내용과 기술 경험을 영어 문서로 정리 |
+| 말하기 | 일상 및 업무 관련 주제에 대한 영어 의사소통 |
 
 ## 연락
 
