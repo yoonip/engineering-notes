@@ -17,14 +17,14 @@
 
 ### 상태와 전이를 먼저 정하기
 
-깊이 D의 버퍼 점유량 $n_t$를 예로 들자. 같은 에지의 입력은 갱신 전 점유량으로 판단하고, full에서 쓰기를 거부하며 empty에서 읽기를 거부한다. 요청 $w_t,r_t\in\{0,1\}$에 대해
+깊이 D의 버퍼 점유량 $`n_t`$를 예로 들자. 같은 에지의 입력은 갱신 전 점유량으로 판단하고, full에서 쓰기를 거부하며 empty에서 읽기를 거부한다. 요청 $`w_t,r_t\in\{0,1\}`$에 대해
 
 $$a_t=w_t\land(n_t<D),\quad b_t=r_t\land(n_t>0),\qquad
 n_{t+1}=n_t+a_t-b_t.$$
 
-초기상태는 $n_0=0$이다. 내부에서는 동시 읽기·쓰기가 점유량을 유지하지만, empty에서 동시 요청은 쓰기만, full에서는 읽기만 수락된다. 다른 FIFO 계약에서는 이 경계 동작이 달라질 수 있다.
+초기상태는 $`n_0=0`$이다. 내부에서는 동시 읽기·쓰기가 점유량을 유지하지만, empty에서 동시 요청은 쓰기만, full에서는 읽기만 수락된다. 다른 FIFO 계약에서는 이 경계 동작이 달라질 수 있다.
 
-불변식 $0\le n_t\le D$는 귀납으로 검토할 수 있다. 시작값이 범위 안에 있고, 내부 상태에서는 변화량이 −1·0·1이다. 0에서는 감소가, D에서는 증가가 차단되므로 다음 상태도 범위 안이다. 하지만 이것만으로 데이터 순서·중복·유실을 검증하지는 못한다. 같은 점유량을 유지하면서 데이터를 뒤바꾸는 구현도 있기 때문이다.
+불변식 $`0\le n_t\le D`$는 귀납으로 검토할 수 있다. 시작값이 범위 안에 있고, 내부 상태에서는 변화량이 −1·0·1이다. 0에서는 감소가, D에서는 증가가 차단되므로 다음 상태도 범위 안이다. 하지만 이것만으로 데이터 순서·중복·유실을 검증하지는 못한다. 같은 점유량을 유지하면서 데이터를 뒤바꾸는 구현도 있기 때문이다.
 
 ### 시간 속성과 가정의 역할
 
@@ -58,14 +58,14 @@ Code coverage describes exercised implementation constructs, not their correctne
 
 ### Define the transition relation first
 
-For a depth-D buffer, let $n_t$ be occupancy, and accept operations using pre-edge state. Reject writes at full and reads at empty:
+For a depth-D buffer, let $`n_t`$ be occupancy, and accept operations using pre-edge state. Reject writes at full and reads at empty:
 
 $$a_t=w_t\land(n_t<D),\quad b_t=r_t\land(n_t>0),\quad
 n_{t+1}=n_t+a_t-b_t,\qquad n_0=0.$$
 
 Simultaneous requests preserve interior occupancy, but accept only the write at empty and only the read at full. Another FIFO contract may use different boundary semantics.
 
-The invariant $0\le n_t\le D$ follows inductively: reset establishes it; interior steps change occupancy by at most one; decrement at zero and increment at D are blocked. Occupancy alone does not establish data ordering or absence of duplication and loss. An implementation could reorder data while preserving the count.
+The invariant $`0\le n_t\le D`$ follows inductively: reset establishes it; interior steps change occupancy by at most one; decrement at zero and increment at D are blocked. Occupancy alone does not establish data ordering or absence of duplication and loss. An implementation could reorder data while preserving the count.
 
 ### Temporal properties and assumptions
 

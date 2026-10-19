@@ -37,7 +37,7 @@ Owen 등의 [2010년 연구](https://www.nature.com/articles/nature09042)에서�
 
 ## 측정도 모델이다
 
-$n$개 문항 중 맞힌 수가 $k$면 관찰 정확도는 $k/n$이다. 하지만 서로 다른 난이도의 두 세트에서 정답률만 비교하면 학습 효과와 세트 차이가 섞인다. 답을 이미 아는 문항, 시간 제한 변화, 중간 방해, 도구 사용도 조건을 바꾼다.
+$`n`$개 문항 중 맞힌 수가 $`k`$면 관찰 정확도는 $`k/n`$이다. 하지만 서로 다른 난이도의 두 세트에서 정답률만 비교하면 학습 효과와 세트 차이가 섞인다. 답을 이미 아는 문항, 시간 제한 변화, 중간 방해, 도구 사용도 조건을 바꾼다.
 
 시간은 푼 문항의 중앙값과 함께 분포를 보고, 미완료 문항 수를 따로 남긴다. 오답을 버리고 정답 문항의 시간만 비교하면 결과가 편향될 수 있다. 새 자료·일정 기간 뒤의 자료를 별도로 두고 정확도와 속도를 함께 관찰한다. 한 사람의 전후 기록만으로 인과적 효과나 일반 능력 향상을 확정하지 않는다. [확률·추정](../../06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md)과 [사회 자료의 인과 해석](../../60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md)에서 측정 조건을 더 다룬다.
 
@@ -79,7 +79,7 @@ After a delay, reconstruct the explanation with the source closed; then test the
 
 ### Measurement conditions matter
 
-Observed accuracy is $k/n$ for $k$ correct responses among $n$ items. Different item difficulty can confound comparisons between two sets. Previously seen answers, timing changes, interruptions and tools also alter conditions.
+Observed accuracy is $`k/n`$ for $`k`$ correct responses among $`n`$ items. Different item difficulty can confound comparisons between two sets. Previously seen answers, timing changes, interruptions and tools also alter conditions.
 
 Report timing distributions, medians and unfinished items. Discarding wrong responses and comparing only correct-response times can bias the result. Use unseen and delayed material, and examine speed alongside accuracy. A single person's before/after record does not establish causal improvement or a change in general ability. See [probability and estimation](../../06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md#english) and [causal interpretation](../../60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md#english).
 

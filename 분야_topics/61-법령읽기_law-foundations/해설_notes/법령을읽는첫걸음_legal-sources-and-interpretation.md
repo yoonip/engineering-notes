@@ -70,7 +70,7 @@ Submission and review of a bill differ from enactment, promulgation, and commenc
 
 Identify the regulated persons, conditions, exceptions, and consequence. Distinguish permissive and mandatory language, the main sentence and proviso, and connections between enumerated items. A permission does not necessarily create unlimited discretion; purpose and other provisions can constrain it.
 
-An invented conceptual rule, “if A and B hold and exception E does not, C applies,” has the structure $A\land B\land\neg E\Rightarrow C$. It is not a real statute or test question. Unverified A differs from A established to be false. Legal application also involves facts, evidence, procedure, and interpretation, so notation alone cannot decide a case.
+An invented conceptual rule, “if A and B hold and exception E does not, C applies,” has the structure $`A\land B\land\neg E\Rightarrow C`$. It is not a real statute or test question. Unverified A differs from A established to be false. Legal application also involves facts, evidence, procedure, and interpretation, so notation alone cannot decide a case.
 
 Definitions can differ from ordinary usage. Read incorporated provisions, annexes, forms, and delegated details where relevant. Establish coverage before inferring consequences; a similar word does not establish that another case belongs to the same rule.
 

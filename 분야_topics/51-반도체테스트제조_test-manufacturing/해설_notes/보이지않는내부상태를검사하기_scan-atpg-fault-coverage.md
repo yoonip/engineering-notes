@@ -18,15 +18,15 @@ $$detect(x,f)=[y_{good}(x)\ne y_f(x)].$$
 
 이를 위해 fault 지점에서 정상값을 stuck 값의 반대로 만드는 activation과, 그 차이를 출력이나 scan cell까지 전달하는 propagation이 필요하다.
 
-예제로 $n=a\land b$, $y=n\lor c$를 보자. n stuck-at-0을 활성화하려면 a=b=1이어야 하고, OR 출력까지 차이를 보내려면 c=0이어야 한다. 따라서 입력 (1,1,0)이 검출한다. n stuck-at-1은 n의 정상값이 0이고 c=0일 때 드러난다. c=1이면 y가 항상 1이 되어 내부 차이를 가린다. 단순히 모든 입력을 0과 1로 한 번씩 바꾸는 것만으로 충분하지 않은 이유다.
+예제로 $`n=a\land b`$, $`y=n\lor c`$를 보자. n stuck-at-0을 활성화하려면 a=b=1이어야 하고, OR 출력까지 차이를 보내려면 c=0이어야 한다. 따라서 입력 (1,1,0)이 검출한다. n stuck-at-1은 n의 정상값이 0이고 c=0일 때 드러난다. c=1이면 y가 항상 1이 되어 내부 차이를 가린다. 단순히 모든 입력을 0과 1로 한 번씩 바꾸는 것만으로 충분하지 않은 이유다.
 
 ### Coverage의 분모를 먼저 읽기
 
 이 글의 toy model은 a,b,c,n,y 다섯 지점의 stuck-at-0/1, 총 10개를 fault list로 정한다. Branch별 fault나 cell 내부 결함은 넣지 않고 fault collapsing도 하지 않는다. Pattern 집합 P의 검출 집합은
 
-$$D(P)=\bigcup_{x\in P}\{f:detect(x,f)\},\qquad FC(P)=|D(P)|/10.$$
+$$D(P)=\bigcup_{x\in P}\{f:detect(x,f)\},\qquad FC(P)=\vert D(P)\vert /10.$$
 
-검출된 fault 수, 전체 modeled 수, 증명된 untestable 수, 미해결·중단 수를 따로 기록한다. Tool이 test coverage 또는 efficiency에서 untestable을 분모에서 제외하는 경우도 있으므로 용어만 보고 수치를 비교하지 않는다. 이 글에서는 예를 들어 $N_{det}/(N_{modeled}-N_{proven\,untestable})$처럼 정의를 명시해야 그 비율을 해석할 수 있다고 본다. ATPG가 시간을 다 썼다는 사실은 untestable의 증명이 아니다.
+검출된 fault 수, 전체 modeled 수, 증명된 untestable 수, 미해결·중단 수를 따로 기록한다. Tool이 test coverage 또는 efficiency에서 untestable을 분모에서 제외하는 경우도 있으므로 용어만 보고 수치를 비교하지 않는다. 이 글에서는 예를 들어 $`N_{det}/(N_{modeled}-N_{proven\,untestable})`$처럼 정의를 명시해야 그 비율을 해석할 수 있다고 본다. ATPG가 시간을 다 썼다는 사실은 untestable의 증명이 아니다.
 
 100% stuck-at coverage는 이 fault list에 대한 결과다. Transition, path-delay, bridging, cell-aware fault, analog 특성은 별도 대상이다. 설계 자체의 기능 오류가 모두 사라졌거나 제조 불량이 전혀 없다는 선언도 아니다. [Synopsys의 fault-model 구분](https://www.synopsys.com/glossary/what-is-design-for-test.html)
 
@@ -54,17 +54,17 @@ A scan flop commonly selects functional or serial data. Shift mode loads interna
 
 ### Abstract defects as faults
 
-A single stuck-at fault forces one site to 0 or 1. It is not a complete physical description of shorts, opens or resistive defects. Detection requires $detect(x,f)=[y_{good}(x)\ne y_f(x)]$: activate a difference at the fault site and propagate it to an observable output or scan cell.
+A single stuck-at fault forces one site to 0 or 1. It is not a complete physical description of shorts, opens or resistive defects. Detection requires $`detect(x,f)=[y_{good}(x)\ne y_f(x)]`$: activate a difference at the fault site and propagate it to an observable output or scan cell.
 
-For $n=a\land b$, $y=n\lor c$, detecting n stuck-at-0 requires a=b=1 to activate the fault and c=0 to propagate it, giving (1,1,0). Detecting n stuck-at-1 requires normal n=0 and c=0. Setting c=1 masks the difference. Merely toggling each input both ways does not ensure detection.
+For $`n=a\land b`$, $`y=n\lor c`$, detecting n stuck-at-0 requires a=b=1 to activate the fault and c=0 to propagate it, giving (1,1,0). Detecting n stuck-at-1 requires normal n=0 and c=0. Setting c=1 masks the difference. Merely toggling each input both ways does not ensure detection.
 
 ### Read the denominator before comparing coverage
 
 The toy model defines stuck-at-0/1 at a,b,c,n,y: ten uncollapsed faults, excluding separate branches and cell-internal defects. For pattern set P,
 
-$$D(P)=\bigcup_{x\in P}\{f:detect(x,f)\},\qquad FC=|D(P)|/10.$$
+$$D(P)=\bigcup_{x\in P}\{f:detect(x,f)\},\qquad FC=\vert D(P)\vert /10.$$
 
-Keep detected, total modeled, proven-untestable and unresolved/aborted counts separate. Some reports exclude untestable faults when defining test coverage or efficiency, so compare explicit formulas rather than labels. A ratio such as $N_{det}/(N_{modeled}-N_{proven\,untestable})$ needs that definition stated. ATPG timeout is not proof of untestability.
+Keep detected, total modeled, proven-untestable and unresolved/aborted counts separate. Some reports exclude untestable faults when defining test coverage or efficiency, so compare explicit formulas rather than labels. A ratio such as $`N_{det}/(N_{modeled}-N_{proven\,untestable})`$ needs that definition stated. ATPG timeout is not proof of untestability.
 
 100% stuck-at coverage concerns the selected list. Transition, path-delay, bridging, cell-aware faults and analog properties require other models. It also does not prove complete functional correctness or zero manufacturing defects. [Synopsys fault-model distinctions](https://www.synopsys.com/glossary/what-is-design-for-test.html)
 

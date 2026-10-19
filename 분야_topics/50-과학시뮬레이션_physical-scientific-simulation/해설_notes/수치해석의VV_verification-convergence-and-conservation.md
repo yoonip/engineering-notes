@@ -8,17 +8,17 @@
 
 ## 답을 정하고 방정식을 만드는 manufactured solution
 
-구간 $0\le x\le1$에서 $u(0)=u(1)=0$인 Poisson 문제를 보자.
+구간 $`0\le x\le1`$에서 $`u(0)=u(1)=0`$인 Poisson 문제를 보자.
 
 $$-u''(x)=f(x).$$
 
-정답을 $u_*(x)=\sin(\pi x)$로 정하면 두 번 미분해 $f(x)=\pi^2\sin(\pi x)$를 얻는다. 정답을 알고 있으므로 구현의 오차를 직접 계산할 수 있다. 이는 실제 측정에 맞춘 보정과 다르다. 코드는 정한 방정식을 제대로 푸는지 검사한다.
+정답을 $`u_*(x)=\sin(\pi x)`$로 정하면 두 번 미분해 $`f(x)=\pi^2\sin(\pi x)`$를 얻는다. 정답을 알고 있으므로 구현의 오차를 직접 계산할 수 있다. 이는 실제 측정에 맞춘 보정과 다르다. 코드는 정한 방정식을 제대로 푸는지 검사한다.
 
-균일 격자 $x_i=ih$, $h=1/N$에서 Taylor 전개를 양쪽으로 더하면
+균일 격자 $`x_i=ih`$, $`h=1/N`$에서 Taylor 전개를 양쪽으로 더하면
 
 $$u(x+h)-2u(x)+u(x-h)=h^2u''(x)+\frac{h^4}{12}u^{(4)}(x)+O(h^6).$$
 
-따라서 (-u'')의 중심 차분은 $O(h^2)$의 절단 오차를 가진다. 이 문제의 이산식은
+따라서 (-u'')의 중심 차분은 $`O(h^2)`$의 절단 오차를 가진다. 이 문제의 이산식은
 
 $$-u_{i-1}+2u_i-u_{i+1}=h^2f_i,\qquad i=1,\ldots,N-1.$$
 
@@ -26,21 +26,21 @@ $$-u_{i-1}+2u_i-u_{i+1}=h^2f_i,\qquad i=1,\ldots,N-1.$$
 
 ## 잔차가 작다는 것과 격자가 충분하다는 것은 다르다
 
-격자 해의 잔차는 $r_i=(-u_{i-1}+2u_i-u_{i+1})/h^2-f_i$다. 잔차는 이산 방정식을 얼마나 잘 풀었는지 보여 주지만 연속 방정식과의 오차를 직접 없애지 않는다. 아주 거친 격자에서도 이산식을 정확히 풀면 잔차가 작을 수 있다. NASA verification 자료도 반복 수렴, 보존, 격자 수렴, 시간 수렴을 별도 항목으로 둔다. [NASA verification assessment](https://www.grc.nasa.gov/www/wind/valid/tutorial/verassess.html)
+격자 해의 잔차는 $`r_i=(-u_{i-1}+2u_i-u_{i+1})/h^2-f_i`$다. 잔차는 이산 방정식을 얼마나 잘 풀었는지 보여 주지만 연속 방정식과의 오차를 직접 없애지 않는다. 아주 거친 격자에서도 이산식을 정확히 풀면 잔차가 작을 수 있다. NASA verification 자료도 반복 수렴, 보존, 격자 수렴, 시간 수렴을 별도 항목으로 둔다. [NASA verification assessment](https://www.grc.nasa.gov/www/wind/valid/tutorial/verassess.html)
 
-정답과의 최대 오차를 $e_h=\max_i|u_i-u_*(x_i)|$라 하자. 점근 구간에서 $e_h\approx Ch^p$이면 격자를 절반으로 줄였을 때 $e_h/e_{h/2}\approx2^p$, 관측 차수는 $p_{obs}=\log_2(e_h/e_{h/2})$다. 이 예제의 기대 차수는 2라서 비율은 약 4다. 매우 미세한 격자에서는 반올림이나 solver 오차가 지배해 이 비율이 유지되지 않을 수 있다.
+정답과의 최대 오차를 $`e_h=\max_i\vert u_i-u_*(x_i)\vert `$라 하자. 점근 구간에서 $`e_h\approx Ch^p`$이면 격자를 절반으로 줄였을 때 $`e_h/e_{h/2}\approx2^p`$, 관측 차수는 $`p_{obs}=\log_2(e_h/e_{h/2})`$다. 이 예제의 기대 차수는 2라서 비율은 약 4다. 매우 미세한 격자에서는 반올림이나 solver 오차가 지배해 이 비율이 유지되지 않을 수 있다.
 
-별도의 해석적 검사도 가능하다. 격자에서 $\sin(\pi ih)$는 이산 연산자의 고유모드이고 고유값은 $\lambda_h=4\sin^2(\pi h/2)/h^2$다. 따라서 정확한 “이산 해”는 $u_i^h=(\pi^2/\lambda_h)\sin(\pi ih)$다. 이것과 비교하면 solver 구현 오류와 연속 문제의 이산화 오차를 분리할 수 있다.
+별도의 해석적 검사도 가능하다. 격자에서 $`\sin(\pi ih)`$는 이산 연산자의 고유모드이고 고유값은 $`\lambda_h=4\sin^2(\pi h/2)/h^2`$다. 따라서 정확한 “이산 해”는 $`u_i^h=(\pi^2/\lambda_h)\sin(\pi ih)`$다. 이것과 비교하면 solver 구현 오류와 연속 문제의 이산화 오차를 분리할 수 있다.
 
 ## 보존식은 독립적인 균형 검사다
 
-면 flux를 $J_{i+1/2}=-(u_{i+1}-u_i)/h$로 정의하면 이산식은 $(J_{i+1/2}-J_{i-1/2})/h=f_i$다. 내부 점 전체를 더하면 중간 flux가 서로 지워져
+면 flux를 $`J_{i+1/2}=-(u_{i+1}-u_i)/h`$로 정의하면 이산식은 $`(J_{i+1/2}-J_{i-1/2})/h=f_i`$다. 내부 점 전체를 더하면 중간 flux가 서로 지워져
 
 $$J_{N-1/2}-J_{1/2}=h\sum_{i=1}^{N-1}f_i.$$
 
 이 식은 내부 격자 영역의 이산 균형이다. 경계 바로 바깥까지의 연속 적분을 정확히 계산했다는 뜻은 아니다. 국소 항의 부호나 경계 처리를 잘못했을 때 전역 균형이 오류를 드러낼 수 있다. 반대로 전역 합만 맞고 국소 값이 틀릴 수도 있으므로 보존만 검사하지 않는다.
 
-시간 수렴은 별도로 확인한다. $y'=-y,y(0)=1$을 Euler로 풀면 $y_{n+1}=(1-\Delta t)y_n$이고 정확해는 $e^{-t}$다. $0<\Delta t<2$는 이 문제의 절대 안정 구간이지만, 작은 오차를 보장하는 조건과 같지 않다. 같은 종료 시각에서 $\Delta t$를 절반씩 줄여 1차 방법의 오차 비율 약 2를 확인한다.
+시간 수렴은 별도로 확인한다. $`y'=-y,y(0)=1`$을 Euler로 풀면 $`y_{n+1}=(1-\Delta t)y_n`$이고 정확해는 $`e^{-t}`$다. $`0<\Delta t<2`$는 이 문제의 절대 안정 구간이지만, 작은 오차를 보장하는 조건과 같지 않다. 같은 종료 시각에서 $`\Delta t`$를 절반씩 줄여 1차 방법의 오차 비율 약 2를 확인한다.
 
 ## 구현과 검증
 
@@ -56,19 +56,19 @@ This dimensionless one-dimensional example performs verification, not validation
 
 ### Constructing a known answer
 
-For $-u''=f$ on ([0,1]) with zero Dirichlet boundaries, choosing $u_* = \sin(\pi x)$ gives $f=\pi^2\sin(\pi x)$. This manufactured solution makes the answer known before running the solver. It tests equation implementation rather than calibration against measurements.
+For $`-u''=f`$ on ([0,1]) with zero Dirichlet boundaries, choosing $`u_* = \sin(\pi x)`$ gives $`f=\pi^2\sin(\pi x)`$. This manufactured solution makes the answer known before running the solver. It tests equation implementation rather than calibration against measurements.
 
-Adding Taylor expansions at $x\pm h$ gives the central-difference formula above and a second-order truncation error. The resulting tridiagonal equations have diagonal two and neighboring coefficients minus one after multiplication by $h^2$. This Dirichlet matrix is positive definite. Thomas elimination solves it with (O(N)) work and memory; that does not make pivot-free elimination safe for every tridiagonal matrix.
+Adding Taylor expansions at $`x\pm h`$ gives the central-difference formula above and a second-order truncation error. The resulting tridiagonal equations have diagonal two and neighboring coefficients minus one after multiplication by $`h^2`$. This Dirichlet matrix is positive definite. Thomas elimination solves it with (O(N)) work and memory; that does not make pivot-free elimination safe for every tridiagonal matrix.
 
 ### Distinct checks for distinct errors
 
 Residuals measure satisfaction of the discrete equations, not distance from the continuous solution. A coarse-grid solution can have a tiny residual. NASA lists iterative convergence, consistency/conservation, grid convergence and temporal convergence separately. [Verification assessment](https://www.grc.nasa.gov/www/wind/valid/tutorial/verassess.html)
 
-If $e_h\approx Ch^p$, halving the spacing gives $e_h/e_{h/2}\approx2^p$. The expected ratio here is four. Roundoff or solver error may dominate at extremely small spacing. An independent exact discrete solution follows from the sine eigenmode: $\lambda_h=4\sin^2(\pi h/2)/h^2$, so $u_i^h=(\pi^2/\lambda_h)\sin(\pi ih)$. This separates solver error from discretization error.
+If $`e_h\approx Ch^p`$, halving the spacing gives $`e_h/e_{h/2}\approx2^p`$. The expected ratio here is four. Roundoff or solver error may dominate at extremely small spacing. An independent exact discrete solution follows from the sine eigenmode: $`\lambda_h=4\sin^2(\pi h/2)/h^2`$, so $`u_i^h=(\pi^2/\lambda_h)\sin(\pi ih)`$. This separates solver error from discretization error.
 
-Defining face flux $J_{i+1/2}=-(u_{i+1}-u_i)/h$ turns the discrete equation into flux divergence. Summing cancels interior faces and yields the balance above. This is a discrete interior-domain identity, not an exact continuous integral to the outer boundary. Global balance can catch signs and boundary errors, but correct global totals can coexist with incorrect local values.
+Defining face flux $`J_{i+1/2}=-(u_{i+1}-u_i)/h`$ turns the discrete equation into flux divergence. Summing cancels interior faces and yields the balance above. This is a discrete interior-domain identity, not an exact continuous integral to the outer boundary. Global balance can catch signs and boundary errors, but correct global totals can coexist with incorrect local values.
 
-Time refinement is separate. Euler applied to $y'=-y,y(0)=1$ gives $y_{n+1}=(1-\Delta t)y_n$, compared with $e^{-t}$. Its absolute-stability interval $0<\Delta t<2$ does not guarantee small error. At fixed final time, halving steps should asymptotically halve the first-order global error.
+Time refinement is separate. Euler applied to $`y'=-y,y(0)=1`$ gives $`y_{n+1}=(1-\Delta t)y_n`$, compared with $`e^{-t}`$. Its absolute-stability interval $`0<\Delta t<2`$ does not guarantee small error. At fixed final time, halving steps should asymptotically halve the first-order global error.
 
 ### Implementation and checks
 

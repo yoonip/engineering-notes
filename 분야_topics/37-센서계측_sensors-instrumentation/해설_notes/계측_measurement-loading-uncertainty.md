@@ -40,7 +40,7 @@ $$\frac{V_m}{V_S}=\frac1{1+R_S/R_P+j\omega R_SC_P}.$$
 
 $$u_R^2=\left(\frac{u_V}{I}\right)^2+
 \left(\frac{Vu_I}{I^2}\right)^2-
-\frac{2V}{I^3}\operatorname{cov}(V,I).$$
+\frac{2V}{I^3}\mathrm{cov}(V,I).$$
 
 독립 입력이면 공분산 항이 0이므로 상대 표준불확도는 `uR/|R|=√[(uV/V)²+(uI/I)²]`다. V도 0이 아니어야 이 상대식을 쓸 수 있다. 같은 기준 전압이나 보정으로 연결된 입력은 독립이 아닐 수 있다. [NIST의 전파 법칙](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty)
 
@@ -84,7 +84,7 @@ Error is a difference from a reference value; uncertainty quantifies incomplete 
 
 For `R=V/I`, nonzero I, and sufficiently small uncertainties for first-order propagation,
 
-$$u_R^2=(u_V/I)^2+(Vu_I/I^2)^2-2V\operatorname{cov}(V,I)/I^3.$$
+$$u_R^2=(u_V/I)^2+(Vu_I/I^2)^2-2V\mathrm{cov}(V,I)/I^3.$$
 
 Independent inputs have zero covariance. For nonzero V as well, the relative expression becomes `uR/|R|=√[(uV/V)²+(uI/I)²]`. Inputs sharing a reference or correction may be correlated. [NIST propagation law](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty)
 

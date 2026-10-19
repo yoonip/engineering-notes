@@ -16,11 +16,11 @@
 
 논증은 결론을 뒷받침하는 전제와 추론으로 이루어진다. 고전 연역논리에서 타당성은 전제가 모두 참인데 결론만 거짓인 경우가 불가능하다는 뜻이다. 전제도 실제로 참인 타당한 논증을 건전하다고 한다. 결론이 마음에 들거나 우연히 참이라는 사실만으로 추론이 타당해지지는 않는다. [SEP, Informal Logic §4.1](https://plato.stanford.edu/entries/logic-informal/)
 
-기호 $P$를 “이 정수는 4의 배수”, $Q$를 “이 정수는 짝수”로 정하자.
+기호 $`P`$를 “이 정수는 4의 배수”, $`Q`$를 “이 정수는 짝수”로 정하자.
 
 $$P\Rightarrow Q,\quad P\quad\therefore Q$$
 
-는 타당하다. 그러나 $P\Rightarrow Q$와 $Q$만으로 $P$를 결론 내릴 수는 없다. 6은 짝수지만 4의 배수는 아니므로 바로 반례가 된다. 일반 주장은 예를 많이 모으는 것만큼, 주장을 깨뜨릴 수 있는 경우를 찾아보는 일도 중요하다. 조건을 “모든 경우”라고 썼는지, “특정 범위”라고 썼는지도 확인한다.
+는 타당하다. 그러나 $`P\Rightarrow Q`$와 $`Q`$만으로 $`P`$를 결론 내릴 수는 없다. 6은 짝수지만 4의 배수는 아니므로 바로 반례가 된다. 일반 주장은 예를 많이 모으는 것만큼, 주장을 깨뜨릴 수 있는 경우를 찾아보는 일도 중요하다. 조건을 “모든 경우”라고 썼는지, “특정 범위”라고 썼는지도 확인한다.
 
 | 확인할 부분 | 쉬운 질문 |
 | --- | --- |
@@ -64,7 +64,7 @@ Suppose two unit errors accidentally cancel and leave a correct answer. Agreemen
 
 An argument supports a conclusion using premises and inference. In classical deductive logic, validity means that true premises and a false conclusion are impossible together. A valid argument with true premises is sound. A pleasing or accidentally true conclusion does not establish validity. [SEP, Informal Logic §4.1](https://plato.stanford.edu/entries/logic-informal/)
 
-Let $P$ mean “this integer is divisible by four” and $Q$ mean “this integer is even.” Then $P\Rightarrow Q$, together with $P$, entails $Q$. However, $P\Rightarrow Q$ and $Q$ do not entail $P$: six supplies a counterexample. Besides collecting supporting cases, look for a case that could refute a general claim. The difference between all cases and a specified range matters.
+Let $`P`$ mean “this integer is divisible by four” and $`Q`$ mean “this integer is even.” Then $`P\Rightarrow Q`$, together with $`P`$, entails $`Q`$. However, $`P\Rightarrow Q`$ and $`Q`$ do not entail $`P`$: six supplies a counterexample. Besides collecting supporting cases, look for a case that could refute a general claim. The difference between all cases and a specified range matters.
 
 Useful questions concern whether terms keep the same meaning, which premises are assumed, whether a counterexample breaks the inference, how far the observations support generalization, and how to state the strongest objection fairly.
 

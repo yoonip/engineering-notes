@@ -22,11 +22,11 @@
 
 직접 작성한 가설 도식이다. 화살표는 자료로 입증된 사실이 아니라 검토할 인과 가정을 나타낸다. 기존 역량이 참여와 결과 모두에 영향을 주면, 두 집단을 그대로 비교할 때 선택 차이가 섞인다.
 
-개인 $i$의 훈련 참여 결과를 $Y_i(1)$, 비참여 결과를 $Y_i(0)$라고 쓴다. 한 사람에게 같은 시점의 두 상태를 모두 관찰할 수 없다는 점이 평가의 어려움이다. 평균 효과는 $E[Y(1)-Y(0)]$로 정의할 수 있지만, 그 정의만으로 관측 자료에서 값을 계산할 수 있는 것은 아니다. [World Bank, Impact Evaluation in Practice, 2nd ed., Chapter 3](https://documents1.worldbank.org/curated/en/698441474029568469/pdf/Impact-evaluation-in-practice.pdf)
+개인 $`i`$의 훈련 참여 결과를 $`Y_i(1)`$, 비참여 결과를 $`Y_i(0)`$라고 쓴다. 한 사람에게 같은 시점의 두 상태를 모두 관찰할 수 없다는 점이 평가의 어려움이다. 평균 효과는 $`E[Y(1)-Y(0)]`$로 정의할 수 있지만, 그 정의만으로 관측 자료에서 값을 계산할 수 있는 것은 아니다. [World Bank, Impact Evaluation in Practice, 2nd ed., Chapter 3](https://documents1.worldbank.org/curated/en/698441474029568469/pdf/Impact-evaluation-in-practice.pdf)
 
 ### 관찰된 차이에 무엇이 섞이는지 유도하기
 
-$D=1$을 참여, $D=0$을 비참여로 놓고 실제 결과가 선택한 상태의 잠재결과와 같다고 가정하자. 이 두 상태 모형은 훈련 내용을 분명히 정하고 다른 사람의 참여가 주는 영향을 별도로 다루지 않은 단순화다. 다음 식은 $E[Y(0)\mid D=1]$을 더하고 빼서 얻는다.
+$`D=1`$을 참여, $`D=0`$을 비참여로 놓고 실제 결과가 선택한 상태의 잠재결과와 같다고 가정하자. 이 두 상태 모형은 훈련 내용을 분명히 정하고 다른 사람의 참여가 주는 영향을 별도로 다루지 않은 단순화다. 다음 식은 $`E[Y(0)\mid D=1]`$을 더하고 빼서 얻는다.
 
 $$\begin{aligned}
 E[Y\mid D=1]-E[Y\mid D=0]
@@ -68,11 +68,11 @@ Separate written provisions, actual implementation, and users' outcomes. A servi
 
 Higher employment among training participants is an observed association. Existing experience or motivation could account for some of the difference. The original diagram is a conceptual hypothesis, not an evaluation of a real program: prior skills and opportunities may affect both participation and employment, confounding a direct comparison.
 
-Let $Y_i(1)$ be person $i$'s outcome with training and $Y_i(0)$ without it. Both states cannot be observed for the same person at the same time. Defining an average effect as $E[Y(1)-Y(0)]$ does not itself identify it from observed data. [World Bank, Impact Evaluation in Practice, Chapter 3](https://documents1.worldbank.org/curated/en/698441474029568469/pdf/Impact-evaluation-in-practice.pdf)
+Let $`Y_i(1)`$ be person $`i`$'s outcome with training and $`Y_i(0)`$ without it. Both states cannot be observed for the same person at the same time. Defining an average effect as $`E[Y(1)-Y(0)]`$ does not itself identify it from observed data. [World Bank, Impact Evaluation in Practice, Chapter 3](https://documents1.worldbank.org/curated/en/698441474029568469/pdf/Impact-evaluation-in-practice.pdf)
 
 ### Decompose an observed difference
 
-With $D=1$ for participation and $D=0$ otherwise, assume the observed outcome equals the potential outcome under the received state. This two-state simplification requires a well-defined training intervention and does not separately model effects of other people's participation. Adding and subtracting $E[Y(0)\mid D=1]$ gives
+With $`D=1`$ for participation and $`D=0`$ otherwise, assume the observed outcome equals the potential outcome under the received state. This two-state simplification requires a well-defined training intervention and does not separately model effects of other people's participation. Adding and subtracting $`E[Y(0)\mid D=1]`$ gives
 
 $$\begin{aligned}
 E[Y\mid D=1]-E[Y\mid D=0]

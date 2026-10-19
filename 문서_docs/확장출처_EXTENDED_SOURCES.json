@@ -7,7 +7,7 @@
       "topic": "01-linux-bash",
       "topic_ko": "Linux·Bash",
       "topic_en": "Linux & Bash",
-      "path": "분야_topics/01-linux-bash/해설_notes/Linux에서프로그램권한과파이프가만나_processes-permissions-pipelines.md",
+      "path": "분야_topics/01-linux-bash/해설_notes/프로세스-권한-파이프_processes-permissions-pipelines.md",
       "title": "Linux에서 프로그램, 권한과 파이프가 만나는 곳",
       "reference_urls": [
         "https://man7.org/linux/man-pages/man2/fork.2.html",
@@ -175,7 +175,7 @@
       "topic": "24-GPU구조_gpu-architecture",
       "topic_ko": "GPU 구조",
       "topic_en": "GPU Architecture",
-      "path": "분야_topics/24-GPU구조_gpu-architecture/해설_notes/GPU의warp메모리접근occupan_warp-memory-occupancy.md",
+      "path": "분야_topics/24-GPU구조_gpu-architecture/해설_notes/GPU메모리와실행자원_warp-memory-occupancy.md",
       "title": "GPU의 warp, 메모리 접근, occupancy",
       "reference_urls": [
         "https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html",

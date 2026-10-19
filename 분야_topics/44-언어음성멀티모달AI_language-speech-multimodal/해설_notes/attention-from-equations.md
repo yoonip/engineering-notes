@@ -21,15 +21,15 @@ Self-attention의 self는 한 항목이 자기 자신만 본다는 뜻이 아니
 
 ## 모양부터 맞추기
 
-질의 수를 $m$, 키·값 수를 $n$, query/key 차원을 $d_k$, value 차원을 $d_v$라 두자.
+질의 수를 $`m`$, 키·값 수를 $`n`$, query/key 차원을 $`d_k`$, value 차원을 $`d_v`$라 두자.
 
 | 변수 | 모양 | 의미 |
 | --- | --- | --- |
-| $Q$ | $m\times d_k$ | 질의 벡터를 행으로 모음 |
-| $K$ | $n\times d_k$ | 비교할 키 |
-| $V$ | $n\times d_v$ | 가중합할 값 |
-| $S$ | $m\times n$ | 질의와 키의 점수 |
-| $O$ | $m\times d_v$ | 출력 |
+| $`Q`$ | $`m\times d_k`$ | 질의 벡터를 행으로 모음 |
+| $`K`$ | $`n\times d_k`$ | 비교할 키 |
+| $`V`$ | $`n\times d_v`$ | 가중합할 값 |
+| $`S`$ | $`m\times n`$ | 질의와 키의 점수 |
+| $`O`$ | $`m\times d_v`$ | 출력 |
 
 $$
 S=QK^\top/\sqrt{d_k},\qquad A_{ij}=\frac{e^{S_{ij}}}{\sum_l e^{S_{il}}},\qquad O=AV.
@@ -37,18 +37,18 @@ $$
 
 softmax는 행마다 적용한다. 각 행의 가중치는 음수가 아니며 합이 1이므로 출력은 허용된 value들의 가중 평균이다. 확률처럼 정규화된 가중치가 나온다는 사실만으로 이를 정답 확률이나 설명의 신뢰도로 해석하지 않는다.
 
-## 왜 $\sqrt{d_k}$로 나누는가
+## 왜 $`\sqrt{d_k}`$로 나누는가
 
-초기화를 이해하기 위한 단순화로 $q_l,k_l$가 서로 독립이고 평균 0, 분산 1이라고 하자. 그러면
+초기화를 이해하기 위한 단순화로 $`q_l,k_l`$가 서로 독립이고 평균 0, 분산 1이라고 하자. 그러면
 
 $$
-E[q_lk_l]=0,\quad\operatorname{Var}(q_lk_l)=1,\quad
-\operatorname{Var}\!\left(\sum_{l=1}^{d_k}q_lk_l\right)=d_k.
+E[q_lk_l]=0,\quad\mathrm{Var}(q_lk_l)=1,\quad
+\mathrm{Var}\!\left(\sum_{l=1}^{d_k}q_lk_l\right)=d_k.
 $$
 
-표준편차는 $\sqrt{d_k}$이므로 나누어 점수 크기를 조절한다. 학습 뒤 모든 벡터가 이 독립성 가정을 만족한다는 뜻은 아니다. 이 스케일은 벡터 길이를 각각 1로 만드는 cosine normalization과도 다르다.
+표준편차는 $`\sqrt{d_k}`$이므로 나누어 점수 크기를 조절한다. 학습 뒤 모든 벡터가 이 독립성 가정을 만족한다는 뜻은 아니다. 이 스케일은 벡터 길이를 각각 1로 만드는 cosine normalization과도 다르다.
 
-마스크는 허용하지 않는 위치의 점수를 $-\infty$로 취급해 softmax 가중치를 0으로 만든다. 인과적 self-attention은 $j\le i$만 허용하여 미래 입력을 보지 않게 한다. 한 행이 전부 금지되면 softmax를 그대로 계산할 수 없으므로 예제는 이를 오류로 처리한다.
+마스크는 허용하지 않는 위치의 점수를 $`-\infty`$로 취급해 softmax 가중치를 0으로 만든다. 인과적 self-attention은 $`j\le i`$만 허용하여 미래 입력을 보지 않게 한다. 한 행이 전부 금지되면 softmax를 그대로 계산할 수 없으므로 예제는 이를 오류로 처리한다.
 
 ![Attention: 필요한 정보를 가중합으로 모으기 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/attention-from-equations.png)
 
@@ -58,13 +58,13 @@ $$
 
 ## 구현: 점수 행렬을 통째로 저장하지 않기
 
-큰 양수 점수에서 지수가 overflow하지 않도록 각 행의 최댓값 $c$를 뺀다.
+큰 양수 점수에서 지수가 overflow하지 않도록 각 행의 최댓값 $`c`$를 뺀다.
 
 $$
 \frac{e^{s_j-c}}{\sum_l e^{s_l-c}}=\frac{e^{s_j}}{\sum_l e^{s_l}}.
 $$
 
-[참조 구현](../../../예제_examples/공학기초_foundations/signals_ai/models.py)은 질의 한 행씩 점수와 가중치를 계산한다. 연산량은 $O(mn(d_k+d_v))$, 입력·출력을 제외한 임시 공간은 $O(n+d_v)$다. 전체 $m\times n$ 점수 행렬을 유지하지 않는다. 일반적인 self-attention에서 $m=n$이므로 계산량은 길이에 대해 여전히 제곱으로 늘어난다. 실제 대형 모델은 최적화된 텐서 kernel을 사용한다. 이 작은 Python 모델을 GPU용 효율적인 kernel과 동일하게 보지는 않는다.
+[참조 구현](../../../예제_examples/공학기초_foundations/signals_ai/models.py)은 질의 한 행씩 점수와 가중치를 계산한다. 연산량은 $`O(mn(d_k+d_v))`$, 입력·출력을 제외한 임시 공간은 $`O(n+d_v)`$다. 전체 $`m\times n`$ 점수 행렬을 유지하지 않는다. 일반적인 self-attention에서 $`m=n`$이므로 계산량은 길이에 대해 여전히 제곱으로 늘어난다. 실제 대형 모델은 최적화된 텐서 kernel을 사용한다. 이 작은 Python 모델을 GPU용 효율적인 kernel과 동일하게 보지는 않는다.
 
 ```python
 from signals_ai.models import attention
@@ -104,7 +104,7 @@ In self-attention, self means Q/K/V originate from the same input sequence, not 
 
 This note covers one scaled dot-product attention head. A complete Transformer block additionally includes projections, multiple heads, positional information, residual paths, normalization and feed-forward layers. The [original paper §3.2](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf) and [Stanford's archived 2021 lecture](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/slides/cs224n-2021-lecture09-transformers.pdf) provide cross-checks.
 
-Let $Q\in\mathbb R^{m\times d_k}$, $K\in\mathbb R^{n\times d_k}$ and $V\in\mathbb R^{n\times d_v}$. Then
+Let $`Q\in\mathbb R^{m\times d_k}`$, $`K\in\mathbb R^{n\times d_k}`$ and $`V\in\mathbb R^{n\times d_v}`$. Then
 
 $$
 S=QK^\top/\sqrt{d_k}\in\mathbb R^{m\times n},\quad
@@ -113,19 +113,19 @@ $$
 
 Softmax operates across each row. Nonnegative weights summing to one make each output a weighted average of permitted values. These normalized weights are not automatically correctness probabilities or explanation confidence scores.
 
-Under the simplifying assumption of independent zero-mean, unit-variance query/key components, each product has variance 1 and their $d_k$-term sum has variance $d_k$. Dividing by $\sqrt{d_k}$ controls that scale. Learned vectors need not retain those assumptions. This is also different from normalizing each vector to unit length for cosine similarity.
+Under the simplifying assumption of independent zero-mean, unit-variance query/key components, each product has variance 1 and their $`d_k`$-term sum has variance $`d_k`$. Dividing by $`\sqrt{d_k}`$ controls that scale. Learned vectors need not retain those assumptions. This is also different from normalizing each vector to unit length for cosine similarity.
 
-Masking treats forbidden scores as $-\infty$. A causal self-attention mask permits $j\le i$ to exclude future inputs. An entirely forbidden row has no defined normalized distribution; the example rejects it. The original diagram above shows the computation.
+Masking treats forbidden scores as $`-\infty`$. A causal self-attention mask permits $`j\le i`$ to exclude future inputs. An entirely forbidden row has no defined normalized distribution; the example rejects it. The original diagram above shows the computation.
 
 ### Streaming rows and verifying behavior
 
-Subtracting a row maximum $c$ keeps the weights unchanged:
+Subtracting a row maximum $`c`$ keeps the weights unchanged:
 
 $$
 e^{s_j-c}/\sum_l e^{s_l-c}=e^{s_j}/\sum_l e^{s_l}.
 $$
 
-The [code](../../../예제_examples/공학기초_foundations/signals_ai/models.py) computes one query row at a time, avoiding a stored $m\times n$ score matrix. It costs $O(mn(d_k+d_v))$ arithmetic and $O(n+d_v)$ temporary storage excluding input/output. Self-attention with $m=n$ still has quadratic arithmetic in sequence length. Large models use optimized tensor kernels; this scalar Python reference is not such a GPU kernel. The example above returns `[[2.0], [3.0]]` under a causal mask.
+The [code](../../../예제_examples/공학기초_foundations/signals_ai/models.py) computes one query row at a time, avoiding a stored $`m\times n`$ score matrix. It costs $`O(mn(d_k+d_v))`$ arithmetic and $`O(n+d_v)`$ temporary storage excluding input/output. Self-attention with $`m=n`$ still has quadratic arithmetic in sequence length. Large models use optimized tensor kernels; this scalar Python reference is not such a GPU kernel. The example above returns `[[2.0], [3.0]]` under a causal mask.
 
 Tests cover a single key, uniform averaging for zero queries, a hand-calculated two-key case, and invariance under joint key/value permutations. Every output component must lie within the permitted value range. Changing a future value must leave earlier causal outputs unchanged. Large scores, invalid shapes, and entirely masked rows are also tested. See [run instructions](../../../예제_examples/공학기초_foundations/README.md).
 

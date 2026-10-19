@@ -43,11 +43,11 @@ ST AN4839는 STM32F7/H7의 Cortex-M7 캐시와 DMA 예를 제공한다. Espressi
 | 4 | DEVICE_RX | DONE_RX | 수신 완료 / RX complete |
 | 5 | DONE_RX | CPU | invalidate 후 반환 / Invalidate and acquire |
 
-이 문서를 위해 작성한 상태도다. 핵심 불변조건은 장치 소유인 동안 CPU가 버퍼를 읽거나 쓰지 않는다는 것이다. 버퍼 길이가 $N$, 입력 속도가 $R$ byte/s이면 한 버퍼가 담는 시간은 $T=N/R$이다. 두 버퍼를 번갈아 쓰는 경우에도 소비자가 반환하는 최악 시간과 스케줄링 지연이 재사용 시점보다 짧아야 한다. 평균 처리 속도만 높다고 overrun이 사라지지는 않는다. 버스 경쟁과 장치 FIFO도 실제 여유를 줄인다.
+이 문서를 위해 작성한 상태도다. 핵심 불변조건은 장치 소유인 동안 CPU가 버퍼를 읽거나 쓰지 않는다는 것이다. 버퍼 길이가 $`N`$, 입력 속도가 $`R`$ byte/s이면 한 버퍼가 담는 시간은 $`T=N/R`$이다. 두 버퍼를 번갈아 쓰는 경우에도 소비자가 반환하는 최악 시간과 스케줄링 지연이 재사용 시점보다 짧아야 한다. 평균 처리 속도만 높다고 overrun이 사라지지는 않는다. 버스 경쟁과 장치 FIFO도 실제 여유를 줄인다.
 
 ### 구현과 검증
 
-`DmaBuffer`는 RAM과 CPU 캐시를 별도 배열로 둔다. `start_tx()`는 dirty 데이터를 반영한 뒤 소유권을 넘기고, `acquire_rx()`는 수신 완료 확인 뒤 캐시를 무효화한다. 버퍼 전체가 독립된 캐시 라인 범위라고 가정하며 실제 명령어 배리어나 주변장치 레지스터는 시뮬레이션하지 않는다. 모델의 복사 비용은 $O(N)$이고, 상태 전환만의 비용은 $O(1)$이다.
+`DmaBuffer`는 RAM과 CPU 캐시를 별도 배열로 둔다. `start_tx()`는 dirty 데이터를 반영한 뒤 소유권을 넘기고, `acquire_rx()`는 수신 완료 확인 뒤 캐시를 무효화한다. 버퍼 전체가 독립된 캐시 라인 범위라고 가정하며 실제 명령어 배리어나 주변장치 레지스터는 시뮬레이션하지 않는다. 모델의 복사 비용은 $`O(N)`$이고, 상태 전환만의 비용은 $`O(1)`$이다.
 
 테스트는 clean 전 RAM이 옛 값임을 확인하고, 장치 소유 중 CPU 접근과 완료 전 반환을 거부하는지 검사한다. 수신 뒤 최신 값 읽기, 잘못된 길이, 100회의 송수신 반복도 확인한다. 실제 보드 검증에서는 cache on/off, 다양한 길이와 정렬, 최대 전송률, ISR 지연, 버퍼 overrun 계수를 함께 관찰해야 한다. Python 통과가 DMA 타이밍이나 MCU 캐시 명령의 적합성을 입증하는 것은 아니다.
 
@@ -80,11 +80,11 @@ ST AN4839 provides STM32F7/H7 Cortex-M7 examples. The Espressif reference below 
 
 ### Model ownership explicitly
 
-The original state diagram above distinguishes CPU ownership, active TX, active RX, and completed RX awaiting acquisition. Its central invariant forbids CPU access while the device owns the buffer. For capacity $N$ bytes and input rate $R$ byte/s, one buffer spans $T=N/R$. Even with double buffering, worst-case consumption time plus scheduling delay must meet the next reuse deadline. High average throughput alone does not prevent overruns; bus contention and device FIFOs affect margin too.
+The original state diagram above distinguishes CPU ownership, active TX, active RX, and completed RX awaiting acquisition. Its central invariant forbids CPU access while the device owns the buffer. For capacity $`N`$ bytes and input rate $`R`$ byte/s, one buffer spans $`T=N/R`$. Even with double buffering, worst-case consumption time plus scheduling delay must meet the next reuse deadline. High average throughput alone does not prevent overruns; bus contention and device FIFOs affect margin too.
 
 ### Implementation and verification
 
-`DmaBuffer` represents RAM and CPU cache as separate arrays. `start_tx()` cleans dirty data before handing ownership over; `acquire_rx()` invalidates after confirmed completion. The whole buffer is assumed to occupy dedicated cache-line ranges. The model does not simulate instruction barriers or actual registers. Copy operations cost $O(N)$, whereas ownership changes alone cost $O(1)$.
+`DmaBuffer` represents RAM and CPU cache as separate arrays. `start_tx()` cleans dirty data before handing ownership over; `acquire_rx()` invalidates after confirmed completion. The whole buffer is assumed to occupy dedicated cache-line ranges. The model does not simulate instruction barriers or actual registers. Copy operations cost $`O(N)`$, whereas ownership changes alone cost $`O(1)`$.
 
 Tests observe stale RAM before cleaning, reject CPU access during device ownership and acquisition before completion, and check received data freshness, invalid lengths, and 100 repeated TX/RX cycles. Board verification additionally examines caches enabled and disabled, lengths, alignment, maximum traffic, ISR delay, and overrun counters. Passing the Python model does not establish real DMA timing or correct target cache instructions.
 

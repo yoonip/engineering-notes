@@ -21,14 +21,14 @@
 
 ## 구조를 작게 모델링하기
 
-논증을 $P_1,P_2,\ldots,P_n\therefore C$로 적으면, $P_i$는 전제, $C$는 결론이다. 연역적 타당성을 보려면 전제들이 모두 참인 상황에서 결론만 거짓일 수 있는지 묻는다. 이런 상황이 하나라도 있으면 반례다.
+논증을 $`P_1,P_2,\ldots,P_n\therefore C`$로 적으면, $`P_i`$는 전제, $`C`$는 결론이다. 연역적 타당성을 보려면 전제들이 모두 참인 상황에서 결론만 거짓일 수 있는지 묻는다. 이런 상황이 하나라도 있으면 반례다.
 
 $$
 \Gamma\models C\quad\Longleftrightarrow\quad
 \text{전제 집합 }\Gamma\text{를 모두 만족하는 모든 해석이 }C\text{도 만족한다}.
 $$
 
-예를 들어 $P\Rightarrow Q$와 $Q$만으로 $P$를 확정할 수 없다. $P$가 거짓이고 $Q$가 참인 해석이 두 전제를 만족하기 때문이다. 이 짧은 식은 정의를 확인하는 예이며 기출 문항이 아니다. [형식 논리 글](명제와추론_formal-logic-and-inference.md)의 진리표와 연결해 검사할 수 있다.
+예를 들어 $`P\Rightarrow Q`$와 $`Q`$만으로 $`P`$를 확정할 수 없다. $`P`$가 거짓이고 $`Q`$가 참인 해석이 두 전제를 만족하기 때문이다. 이 짧은 식은 정의를 확인하는 예이며 기출 문항이 아니다. [형식 논리 글](명제와추론_formal-logic-and-inference.md)의 진리표와 연결해 검사할 수 있다.
 
 자연어 논증이 모두 이런 연역 형식은 아니다. 관측 자료로 원인을 추정하거나 정책 효과를 예상하는 글에서는 근거가 결론을 얼마나 지지하는지, 대안 설명이 남는지를 살핀다. “입증되지 않았다”와 “거짓으로 입증되었다”도 다르다. 정보가 부족한 상태를 임의로 참·거짓 중 하나로 확정하지 않는다.
 
@@ -67,14 +67,14 @@ Identify the issue, the conclusion the author asks readers to accept, the stated
 
 ### A compact model
 
-Write $P_1,\ldots,P_n\therefore C$. A deductively valid argument has no interpretation where every premise is true and the conclusion false:
+Write $`P_1,\ldots,P_n\therefore C`$. A deductively valid argument has no interpretation where every premise is true and the conclusion false:
 
 $$
 \Gamma\models C\quad\Longleftrightarrow\quad
 \text{every interpretation satisfying all of }\Gamma\text{ also satisfies }C.
 $$
 
-From $P\Rightarrow Q$ and $Q$, one cannot conclude $P$: $P$ false and $Q$ true is a counterexample. This small definition check is not a past exam question. The [formal-logic article](명제와추론_formal-logic-and-inference.md#english) connects it to truth-table checks.
+From $`P\Rightarrow Q`$ and $`Q`$, one cannot conclude $`P`$: $`P`$ false and $`Q`$ true is a counterexample. This small definition check is not a past exam question. The [formal-logic article](명제와추론_formal-logic-and-inference.md#english) connects it to truth-table checks.
 
 Not every natural-language argument is deductive. Inferring causes or policy effects requires assessing support and remaining alternatives. Failure to establish a claim is not proof that it is false. Insufficient information should not be arbitrarily forced into a true/false answer. The original diagram above distinguishes objections to evidence, inference and scope.
 

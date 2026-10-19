@@ -29,9 +29,9 @@ Liberty는 cell의 논리·timing·전력 특성을, LEF는 배치·배선에 �
 $$s=a\oplus b\oplus c_{in},\qquad
 c_{out}=ab\lor[c_{in}(a\oplus b)]$$
 
-이고 $s+2c_{out}=a+b+c_{in}$을 만족해야 한다. 입력 세 개의 가능한 8조합을 모두 확인하면 이 조합회로의 truth table을 완전히 대조할 수 있다. 하지만 이 작은 결과를 임의의 sequential RTL과 합성 netlist 전체의 동등성으로 확대할 수는 없다. 실제 equivalence에서는 reset·초기상태·parameter·black box·memory mapping과 비교할 mode를 맞춘다.
+이고 $`s+2c_{out}=a+b+c_{in}`$을 만족해야 한다. 입력 세 개의 가능한 8조합을 모두 확인하면 이 조합회로의 truth table을 완전히 대조할 수 있다. 하지만 이 작은 결과를 임의의 sequential RTL과 합성 netlist 전체의 동등성으로 확대할 수는 없다. 실제 equivalence에서는 reset·초기상태·parameter·black box·memory mapping과 비교할 mode를 맞춘다.
 
-Timing에서는 acyclic 조합 경로의 고정 지연 모델을 생각해 보자. 노드 v의 지연 $d_v$와 입력 도착시각 $A_u$에 대해
+Timing에서는 acyclic 조합 경로의 고정 지연 모델을 생각해 보자. 노드 v의 지연 $`d_v`$와 입력 도착시각 $`A_u`$에 대해
 
 $$A_v=d_v+\max_{u\in pred(v)}A_u.$$
 
@@ -72,7 +72,7 @@ s+2c_{out}=a+b+c_{in}.$$
 
 Exhausting all eight input combinations compares this complete combinational truth table. It does not establish equivalence of arbitrary sequential RTL and a synthesized design. Real equivalence work must align resets, initial-state assumptions, parameters, black boxes, memory mappings and modes.
 
-For an acyclic fixed-delay combinational model, latest arrival satisfies $A_v=d_v+\max_{u\in pred(v)}A_u$. A topological traversal computes it. `dag_arrivals` implements only this maximum-path abstraction, excluding pin-specific rise/fall arcs, slew/load dependencies, clocks, minimum delays and corners. Estimated pre-route wiring and extracted post-route wiring can produce different slack.
+For an acyclic fixed-delay combinational model, latest arrival satisfies $`A_v=d_v+\max_{u\in pred(v)}A_u`$. A topological traversal computes it. `dag_arrivals` implements only this maximum-path abstraction, excluding pin-specific rise/fall arcs, slew/load dependencies, clocks, minimum delays and corners. Estimated pre-route wiring and extracted post-route wiring can produce different slack.
 
 ### What do DRC and LVS establish?
 

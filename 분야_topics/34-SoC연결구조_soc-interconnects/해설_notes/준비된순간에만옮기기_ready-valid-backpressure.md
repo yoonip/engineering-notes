@@ -14,7 +14,7 @@
 
 첫째, 생산자는 ready가 올라오기를 기다린 뒤에만 valid를 올리도록 만들지 않는다. 소비자가 valid를 기다리도록 허용된 구조와 만나면 둘 다 기다리는 deadlock이 생길 수 있다. 둘째, valid를 올렸는데 수락되지 않았다면 valid와 해당 payload를 유지한다. Payload에는 data뿐 아니라 last, byte enable 등 그 beat에 속한 부가 정보도 포함된다. [Arm의 handshake 의존성](https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/IHI0022H_amba_axi_protocol_spec.pdf)
 
-샘플 t에서 transfer를 $h_t=v_t\land r_t$로 정의하면, stall 조건은 $v_t\land\neg r_t$다. Reset에 의해 취소되는 경우를 제외하고
+샘플 t에서 transfer를 $`h_t=v_t\land r_t`$로 정의하면, stall 조건은 $`v_t\land\neg r_t`$다. Reset에 의해 취소되는 경우를 제외하고
 
 $$v_t\land\neg r_t\Rightarrow v_{t+1}\land(data_{t+1}=data_t)$$
 
@@ -60,7 +60,7 @@ This article covers one ordered beat channel in one clock domain, not complete m
 
 A producer must not require ready before asserting valid; it could deadlock with a receiver allowed to wait for valid. Once valid is offered without acceptance, retain both valid and payload, including associated last/byte-enable information. [Arm handshake dependencies](https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/IHI0022H_amba_axi_protocol_spec.pdf)
 
-Define $h_t=v_t\land r_t$. Except for reset cancellation, $v_t\land\neg r_t$ requires $v_{t+1}$ and unchanged payload. When valid and ready remain high, each edge can accept a new beat. Counting only valid rising edges or treating ready as a one-shot acknowledgement loses transfers.
+Define $`h_t=v_t\land r_t`$. Except for reset cancellation, $`v_t\land\neg r_t`$ requires $`v_{t+1}`$ and unchanged payload. When valid and ready remain high, each edge can accept a new beat. Counting only valid rising edges or treating ready as a one-shot acknowledgement loses transfers.
 
 ### A two-entry state model
 

@@ -24,7 +24,7 @@ NVIDIA, AMD, Intel, Apple GPU, SIMT/SIMD, Cache/VRAM, HBM/GDDR, PCIe/NVLink, Roo
 
 ## 기초 해설
 
-- [GPU의 warp, 메모리 접근, occupancy](해설_notes/GPU의warp메모리접근occupan_warp-memory-occupancy.md)
+- [GPU의 warp, 메모리 접근, occupancy](해설_notes/GPU메모리와실행자원_warp-memory-occupancy.md)
 
 ## English
 
@@ -42,4 +42,4 @@ The Roofline model relates arithmetic intensity to memory bandwidth and compute 
 
 ### Foundation article
 
-- [GPU의 warp, 메모리 접근, occupancy](해설_notes/GPU의warp메모리접근occupan_warp-memory-occupancy.md#english)
+- [GPU의 warp, 메모리 접근, occupancy](해설_notes/GPU메모리와실행자원_warp-memory-occupancy.md#english)

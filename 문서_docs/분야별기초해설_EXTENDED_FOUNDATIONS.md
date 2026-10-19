@@ -14,7 +14,7 @@ Each link opens the Korean explanation followed by an equivalent English section
 
 | 분야 / Area | 해설 / Article |
 | --- | --- |
-| Linux·Bash<br>Linux & Bash | [Linux에서 프로그램, 권한과 파이프가 만나는 곳](../분야_topics/01-linux-bash/해설_notes/Linux에서프로그램권한과파이프가만나_processes-permissions-pipelines.md) · [English](../분야_topics/01-linux-bash/해설_notes/Linux에서프로그램권한과파이프가만나_processes-permissions-pipelines.md#english) |
+| Linux·Bash<br>Linux & Bash | [Linux에서 프로그램, 권한과 파이프가 만나는 곳](../분야_topics/01-linux-bash/해설_notes/프로세스-권한-파이프_processes-permissions-pipelines.md) · [English](../분야_topics/01-linux-bash/해설_notes/프로세스-권한-파이프_processes-permissions-pipelines.md#english) |
 | Git과 개발 도구<br>Git & Development Tools | [Git 이력과 다시 만들 수 있는 결과물](../분야_topics/02-개발도구_git-development-tools/해설_notes/Git이력과다시만들수있는결과물_commit-dag-reproducible-builds.md) · [English](../분야_topics/02-개발도구_git-development-tools/해설_notes/Git이력과다시만들수있는결과물_commit-dag-reproducible-builds.md#english) |
 | Python·Jupyter<br>Python & Jupyter Environments | [Python 환경과 Jupyter 실행 상태를 구분하기](../분야_topics/03-python-jupyter/해설_notes/Python환경과Jupyter실행상태_environments-kernel-state-reproducibility.md) · [English](../분야_topics/03-python-jupyter/해설_notes/Python환경과Jupyter실행상태_environments-kernel-state-reproducibility.md#english) |
 | MATLAB과 과학 계산<br>MATLAB & Scientific Computing | [MATLAB 수치해석: 답의 오차와 잔차는 왜 다를까](../분야_topics/05-과학계산_matlab-scientific/해설_notes/MATLAB수치해석_linear-solves-conditioning-residuals.md) · [English](../분야_topics/05-과학계산_matlab-scientific/해설_notes/MATLAB수치해석_linear-solves-conditioning-residuals.md#english) |
@@ -48,7 +48,7 @@ Each link opens the Korean explanation followed by an equivalent English section
 
 | 분야 / Area | 해설 / Article |
 | --- | --- |
-| GPU 구조<br>GPU Architecture | [GPU의 warp, 메모리 접근, occupancy](../분야_topics/24-GPU구조_gpu-architecture/해설_notes/GPU의warp메모리접근occupan_warp-memory-occupancy.md) · [English](../분야_topics/24-GPU구조_gpu-architecture/해설_notes/GPU의warp메모리접근occupan_warp-memory-occupancy.md#english) |
+| GPU 구조<br>GPU Architecture | [GPU의 warp, 메모리 접근, occupancy](../분야_topics/24-GPU구조_gpu-architecture/해설_notes/GPU메모리와실행자원_warp-memory-occupancy.md) · [English](../분야_topics/24-GPU구조_gpu-architecture/해설_notes/GPU메모리와실행자원_warp-memory-occupancy.md#english) |
 | AI 모델과 API<br>AI Providers, Public Models & APIs | [모델 파일에서 다음 토큰까지: 가중치, 토큰화, sampling](../분야_topics/26-AI모델-API_open-model-lab/해설_notes/모델파일에서다음토큰까지_weights-tokenizers-and-sampling.md) · [English](../분야_topics/26-AI모델-API_open-model-lab/해설_notes/모델파일에서다음토큰까지_weights-tokenizers-and-sampling.md#english) |
 | 데이터베이스와 데이터 공학<br>Databases & Data Engineering | [DB의 인덱스, 트랜잭션, SQL 집계](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/해설_notes/DB의인덱스트랜잭션SQL집계_indexes-transactions-and-aggregation.md) · [English](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/해설_notes/DB의인덱스트랜잭션SQL집계_indexes-transactions-and-aggregation.md#english) |
 | 클라우드와 분산 시스템<br>Cloud, Distributed Systems & Operations | [복제본의 교집합: quorum과 일관성의 조건](../분야_topics/41-클라우드분산시스템_cloud-distributed/해설_notes/복제본의교집합_quorums-failures-and-consistency.md) · [English](../분야_topics/41-클라우드분산시스템_cloud-distributed/해설_notes/복제본의교집합_quorums-failures-and-consistency.md#english) |

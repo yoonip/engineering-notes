@@ -10,7 +10,7 @@ Concepts and implementations connect hardware, software and AI. The article link
 
 | 번호 / No. | 분야 / Area | 해설 / Articles |
 | --- | --- | --- |
-| 01 | [Linux·Bash](분야_topics/01-linux-bash/README.md)<br>Linux & Bash | [Linux에서 프로그램, 권한과 파이프가 만나는 곳](분야_topics/01-linux-bash/해설_notes/Linux에서프로그램권한과파이프가만나_processes-permissions-pipelines.md) |
+| 01 | [Linux·Bash](분야_topics/01-linux-bash/README.md)<br>Linux & Bash | [Linux에서 프로그램, 권한과 파이프가 만나는 곳](분야_topics/01-linux-bash/해설_notes/프로세스-권한-파이프_processes-permissions-pipelines.md) |
 | 02 | [Git과 개발 도구](분야_topics/02-개발도구_git-development-tools/README.md)<br>Git & Development Tools | [Git 이력과 다시 만들 수 있는 결과물](분야_topics/02-개발도구_git-development-tools/해설_notes/Git이력과다시만들수있는결과물_commit-dag-reproducible-builds.md) |
 | 03 | [Python·Jupyter](분야_topics/03-python-jupyter/README.md)<br>Python & Jupyter Environments | [Python 환경과 Jupyter 실행 상태를 구분하기](분야_topics/03-python-jupyter/해설_notes/Python환경과Jupyter실행상태_environments-kernel-state-reproducibility.md) |
 | 04 | [C·C++·Python](분야_topics/04-c-cpp-python/README.md)<br>C, C++ & Python | [비트에서 수까지: 정수, 부동소수점, 고정소수점](분야_topics/04-c-cpp-python/해설_notes/비트에서수까지_numbers-and-quantization.md) |
@@ -60,7 +60,7 @@ Concepts and implementations connect hardware, software and AI. The article link
 | 번호 / No. | 분야 / Area | 해설 / Articles |
 | --- | --- | --- |
 | 23 | [AI·머신러닝·딥러닝](분야_topics/23-AI머신러닝_ai-machine-learning/README.md)<br>AI, Machine Learning & Deep Learning | [미분에서 학습까지: 모델이 바뀌는 이유](분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md) |
-| 24 | [GPU 구조](분야_topics/24-GPU구조_gpu-architecture/README.md)<br>GPU Architecture | [GPU의 warp, 메모리 접근, occupancy](분야_topics/24-GPU구조_gpu-architecture/해설_notes/GPU의warp메모리접근occupan_warp-memory-occupancy.md) |
+| 24 | [GPU 구조](분야_topics/24-GPU구조_gpu-architecture/README.md)<br>GPU Architecture | [GPU의 warp, 메모리 접근, occupancy](분야_topics/24-GPU구조_gpu-architecture/해설_notes/GPU메모리와실행자원_warp-memory-occupancy.md) |
 | 25 | [CUDA와 GPU 성능 최적화](분야_topics/25-CUDA성능최적화_cuda-performance/README.md)<br>CUDA & GPU Optimization | [계산이 느린가, 데이터를 기다리는가: Roofline과 병렬화](분야_topics/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md) |
 | 26 | [AI 모델과 API](분야_topics/26-AI모델-API_open-model-lab/README.md)<br>AI Providers, Public Models & APIs | [모델 파일에서 다음 토큰까지: 가중치, 토큰화, sampling](분야_topics/26-AI모델-API_open-model-lab/해설_notes/모델파일에서다음토큰까지_weights-tokenizers-and-sampling.md) |
 | 27 | [논문·코드·특허](분야_topics/27-논문코드특허_papers-code-patents/README.md)<br>Paper, Code & Patent Reviews | [논문·코드·특허 읽기: 주장과 재현 근거를 연결하기](분야_topics/27-논문코드특허_papers-code-patents/해설_notes/논문코드특허읽기_claims-evidence-reproduction-licenses.md) |

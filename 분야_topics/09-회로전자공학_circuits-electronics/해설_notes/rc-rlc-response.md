@@ -33,7 +33,7 @@ $$v(t)=U+(v_0-U)e^{-t/\tau}.$$
 
 초기값 0에서 Laplace 변환하면 `H(s)=V/U=1/(1+sRC)`다. s=jω를 넣으면
 
-$$|H(j\omega)|=\frac{1}{\sqrt{1+(\omega RC)^2}},\quad
+$$\vert H(j\omega)\vert =\frac{1}{\sqrt{1+(\omega RC)^2}},\quad
 \angle H=-\tan^{-1}(\omega RC),\quad f_c=\frac{1}{2\pi RC}.$$
 
 낮은 주파수는 통과하고 빠른 변화는 줄어드는 저역통과 특성이다. 주파수 응답은 정현파 정상상태의 비율이고, 비영 초기값에서의 전체 과도응답까지 그 비율 하나로 나타내는 것은 아니다.

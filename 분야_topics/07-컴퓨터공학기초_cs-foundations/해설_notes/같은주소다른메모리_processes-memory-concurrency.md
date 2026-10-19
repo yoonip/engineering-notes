@@ -12,7 +12,7 @@
 
 ### 페이지 단위로 주소를 나누기
 
-페이지 크기를 $P=2^p$ byte라 하면 가상 주소 $v$는
+페이지 크기를 $`P=2^p`$ byte라 하면 가상 주소 $`v`$는
 
 $$v=\mathrm{VPN}\,P+o,\quad0\le o<P$$
 
@@ -20,7 +20,7 @@ $$v=\mathrm{VPN}\,P+o,\quad0\le o<P$$
 
 $$a=\mathrm{PFN}\,P+o$$
 
-가 물리 주소다. 예를 들어 $P=4096$, 가상 페이지 1이 물리 프레임 9에 대응하면 가상 주소 4097은 물리 주소 $9\times4096+1=36865$가 된다. 다른 프로세스는 같은 가상 페이지 1을 프레임 20에 대응시킬 수 있다.
+가 물리 주소다. 예를 들어 $`P=4096`$, 가상 페이지 1이 물리 프레임 9에 대응하면 가상 주소 4097은 물리 주소 $`9\times4096+1=36865`$가 된다. 다른 프로세스는 같은 가상 페이지 1을 프레임 20에 대응시킬 수 있다.
 
 이는 단순화한 평면 모델이다. 실제 RISC-V Sv39는 계층적 페이지 테이블을 사용하고 더 큰 페이지도 지원한다. 4 KiB를 모든 CPU의 유일한 페이지 크기로 외우면 안 된다. 페이지 테이블 엔트리에는 주소 외에도 유효 여부와 읽기·쓰기·실행 등 권한이 들어간다. [MIT xv6, Chapter 3](https://pdos.csail.mit.edu/6.1810/2023/xv6/book-riscv-rev3.pdf)
 
@@ -44,7 +44,7 @@ $$a=\mathrm{PFN}\,P+o$$
 
 ### 구현과 검증
 
-주소 변환 모델은 딕셔너리 조회를 사용한다. 이 Python 예제의 평균 조회는 $O(1)$이며 실제 MMU의 캐시·계층 접근 시간을 나타내지 않는다. 페이지 1과 2를 같은 프레임에 연결해 alias를 확인하고, 별도 테이블의 같은 VPN이 다른 프레임으로 가는지도 검사한다. 페이지 첫 바이트와 마지막 바이트, 미매핑과 쓰기 금지 경계를 포함한다.
+주소 변환 모델은 딕셔너리 조회를 사용한다. 이 Python 예제의 평균 조회는 $`O(1)`$이며 실제 MMU의 캐시·계층 접근 시간을 나타내지 않는다. 페이지 1과 2를 같은 프레임에 연결해 alias를 확인하고, 별도 테이블의 같은 VPN이 다른 프레임으로 가는지도 검사한다. 페이지 첫 바이트와 마지막 바이트, 미매핑과 쓰기 금지 경계를 포함한다.
 
 동시성 테스트는 두 실행 흐름의 읽기·쓰기 순서를 모두 열거한다. 각 흐름의 읽기가 쓰기보다 앞선다는 조건 아래, 가능한 결과에 1과 2가 모두 있음을 확인한다. 실제 OS 스레드의 우연한 스케줄링에 기대지 않는 작은 model checking이다. 실제 프로그램에서는 ThreadSanitizer 같은 동적 분석, 잠금 규약 검토와 stress test가 추가 자료가 된다. 단일 실행의 성공은 모든 가능한 순서의 안전성을 증명하지 않는다. [예제 실행 안내](../../../예제_examples/공학기초_foundations/systems/README.md)
 
@@ -58,7 +58,7 @@ A process manages a running program through resource and protection boundaries. 
 
 ### Split the address into a page and an offset
 
-For page size $P=2^p$ bytes,
+For page size $`P=2^p`$ bytes,
 
 $$v=\mathrm{VPN}\,P+o,\quad0\le o<P.$$
 
@@ -66,7 +66,7 @@ If the page table maps VPN to physical frame number PFN, the physical address is
 
 $$a=\mathrm{PFN}\,P+o.$$
 
-For $P=4096$, virtual page 1 mapped to physical frame 9 translates address 4097 into $9\times4096+1=36865$. Another process can map the same virtual page to frame 20.
+For $`P=4096`$, virtual page 1 mapped to physical frame 9 translates address 4097 into $`9\times4096+1=36865`$. Another process can map the same virtual page to frame 20.
 
 This is a flat teaching model. Actual RISC-V Sv39 uses hierarchical page tables and supports larger pages too. Do not assume 4 KiB is the only page size on all CPUs. Page-table entries contain validity and permissions such as read, write, and execute in addition to an address. [MIT xv6, Chapter 3](https://pdos.csail.mit.edu/6.1810/2023/xv6/book-riscv-rev3.pdf)
 
@@ -86,7 +86,7 @@ A mutex-protected critical section or a suitable atomic read-modify-write can se
 
 ### Implementation and verification
 
-The Python translation model uses a dictionary, giving average $O(1)$ lookup in this example; it does not predict hardware MMU timing. Tests map pages 1 and 2 to one frame to check aliasing, then map the same VPN differently in a second table. They include first and last byte offsets, unmapped addresses, and write protection.
+The Python translation model uses a dictionary, giving average $`O(1)`$ lookup in this example; it does not predict hardware MMU timing. Tests map pages 1 and 2 to one frame to check aliasing, then map the same VPN differently in a second table. They include first and last byte offsets, unmapped addresses, and write protection.
 
 The concurrency test enumerates all read/write interleavings for two execution flows, preserving read-before-write within each. It confirms both 1 and 2 are possible in the abstract model. This is small model checking rather than a test relying on lucky OS thread scheduling. A real program can also use dynamic analysis such as ThreadSanitizer, lock-contract review, and stress tests. One successful execution does not prove safety for all schedules. [Execution guide](../../../예제_examples/공학기초_foundations/systems/README.md)
 

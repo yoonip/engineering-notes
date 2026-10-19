@@ -10,14 +10,14 @@ CUDA의 thread는 프로그램의 실행 단위이고, block은 협력하고 동
 
 32개 thread가 각각 4 byte를 읽으면 유효 요청량은 128 byte다. Compute capability 6.0 이상 장치의 일반적인 global memory coalescing 설명에서는 필요한 32 byte 구간 수를 센다. 시작 주소가 32 byte 경계에 있고 각 thread가 연속된 4 byte를 읽으면 네 구간이면 충분하다. 시작을 4 byte 옮기면 다섯 구간, thread 간 주소 간격이 32 byte이면 32개 구간이 필요하다. 캐시 재사용이나 실제 DRAM 거래까지 이 숫자만으로 결정되지는 않는다. [NVIDIA Best Practices §10.2.1](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#coalesced-access-to-global-memory)
 
-주소 $a_i$, 단어 크기 $w$, 구간 크기 $S$일 때 요청한 구간의 집합은 다음과 같다.
+주소 $`a_i`$, 단어 크기 $`w`$, 구간 크기 $`S`$일 때 요청한 구간의 집합은 다음과 같다.
 
 $$
 \mathcal S=\bigcup_i\left\{\left\lfloor\frac{a_i}{S}\right\rfloor,\ldots,
 \left\lfloor\frac{a_i+w-1}{S}\right\rfloor\right\}.
 $$
 
-따라서 단순 모델의 전송량은 $S|\mathcal S|$다. 모든 주소가 서로 다른 단어라면 유효 byte 비율을 $32w/(S|\mathcal S|)$로 계산할 수 있다. 여러 thread가 같은 주소를 읽는 broadcast에서는 이 분자가 중복 요청량이므로, 고유하게 사용한 byte 수와 구분한다. Coalescing은 thread 번호순 정렬 자체가 아니라 같은 명령의 주소들이 적은 구간에 모이는 성질이다. 네 구간 안에서 주소 순서를 바꾸어도 구간 수는 같다.
+따라서 단순 모델의 전송량은 $`S\vert \mathcal S\vert `$다. 모든 주소가 서로 다른 단어라면 유효 byte 비율을 $`32w/(S\vert \mathcal S\vert )`$로 계산할 수 있다. 여러 thread가 같은 주소를 읽는 broadcast에서는 이 분자가 중복 요청량이므로, 고유하게 사용한 byte 수와 구분한다. Coalescing은 thread 번호순 정렬 자체가 아니라 같은 명령의 주소들이 적은 구간에 모이는 성질이다. 네 구간 안에서 주소 순서를 바꾸어도 구간 수는 같다.
 
 | 32개 lane, 각 4 byte | 32 byte 구간 수 | 서로 다른 데이터의 유효 비율 |
 |---|---:|---:|
@@ -27,7 +27,7 @@ $$
 
 ## Occupancy는 속도계가 아니라 자원 수용률이다
 
-Occupancy는 SM에 상주하는 warp 수를 해당 SM의 최대 상주 warp 수로 나눈 값이다. 실행 중인 lane의 비율이나 GPU 사용률과 같은 뜻이 아니다. Block당 thread $T$, thread당 레지스터 $r$, block당 shared memory $s$를 사용한다고 하자. 총량만 고려한 block 수의 상한은
+Occupancy는 SM에 상주하는 warp 수를 해당 SM의 최대 상주 warp 수로 나눈 값이다. 실행 중인 lane의 비율이나 GPU 사용률과 같은 뜻이 아니다. Block당 thread $`T`$, thread당 레지스터 $`r`$, block당 shared memory $`s`$를 사용한다고 하자. 총량만 고려한 block 수의 상한은
 
 $$
 B\le\min\left(B_{\max},\left\lfloor\frac{T_{SM}}T\right\rfloor,
@@ -65,7 +65,7 @@ A CUDA thread is an execution unit and a block groups threads that can cooperate
 
 For the usual global-memory coalescing model on compute capability 6.0 or newer, count the required 32-byte regions. Thirty-two distinct aligned consecutive 4-byte loads touch four regions. Moving the first address by four bytes touches five; a 32-byte stride touches 32. The table above gives the corresponding useful-byte fractions. Cache reuse and actual DRAM traffic are additional effects. [NVIDIA coalescing](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#coalesced-access-to-global-memory)
 
-For addresses $a_i$, word width $w$ and region width $S$, the union in the equation above includes every region crossed by each word, including words spanning a boundary. The model transfers $S|\mathcal S|$ bytes. The fraction $32w/(S|\mathcal S|)$ assumes distinct requested words. Broadcast requests require distinguishing duplicate lane requests from unique useful bytes. Permuting addresses within the same four regions does not change the count: coalescing concerns locality within one warp instruction, not thread ordering by itself.
+For addresses $`a_i`$, word width $`w`$ and region width $`S`$, the union in the equation above includes every region crossed by each word, including words spanning a boundary. The model transfers $`S\vert \mathcal S\vert `$ bytes. The fraction $`32w/(S\vert \mathcal S\vert )`$ assumes distinct requested words. Broadcast requests require distinguishing duplicate lane requests from unique useful bytes. Permuting addresses within the same four regions does not change the count: coalescing concerns locality within one warp instruction, not thread ordering by itself.
 
 ### Occupancy measures residency
 

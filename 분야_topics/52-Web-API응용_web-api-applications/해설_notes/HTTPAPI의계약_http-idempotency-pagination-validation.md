@@ -10,7 +10,7 @@ API는 다른 프로그램이 호출할 수 있는 동작의 계약이다. HTTP�
 
 RFC 9110은 같은 요청을 여러 번 적용했을 때 서버에 의도한 효과가 한 번 적용한 것과 같으면 method가 idempotent라고 정의한다. PUT, DELETE와 safe method가 여기에 포함된다. 반환 status와 응답 body가 매번 같아야 한다는 뜻은 아니다. 예를 들어 같은 자원을 삭제할 때 첫 호출과 다음 호출의 응답은 달라도 최종 효과는 자원이 없는 상태다. [RFC 9110 §9.2.2](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2)
 
-POST가 이 성질을 자동으로 갖는 것은 아니다. 생성 API는 애플리케이션 계약으로 idempotency key를 둘 수 있다. 같은 사용자·동작 범위에서 키 $k$와 정규화한 요청 본문 $b$를 묶어 저장하고, 같은 쌍의 재시도에는 저장한 결과를 반환한다. 같은 키에 다른 본문이 오면 충돌로 처리한다. 여기서 body 정규화는 동등성 정책이며 단순 문자열 공백 차이와 JSON 객체의 key 순서를 구분할 수 있다.
+POST가 이 성질을 자동으로 갖는 것은 아니다. 생성 API는 애플리케이션 계약으로 idempotency key를 둘 수 있다. 같은 사용자·동작 범위에서 키 $`k`$와 정규화한 요청 본문 $`b`$를 묶어 저장하고, 같은 쌍의 재시도에는 저장한 결과를 반환한다. 같은 키에 다른 본문이 오면 충돌로 처리한다. 여기서 body 정규화는 동등성 정책이며 단순 문자열 공백 차이와 JSON 객체의 key 순서를 구분할 수 있다.
 
 중복 생성 방지 불변식은 같은 범위의 ((k,b))에 대해 생성 횟수가 최대 1이라는 것이다. 실제 서비스에서는 키 등록, 업무 변경, 결과 저장을 원자적으로 묶어야 동시 요청과 crash 사이의 틈을 막을 수 있다. 키의 사용자별 범위, 보관 시간, 만료 후 동작도 계약이다. 예제는 직렬 호출의 메모리 저장소이므로 이러한 영속·동시성 보장을 구현하지 않는다.
 
@@ -18,7 +18,7 @@ POST가 이 성질을 자동으로 갖는 것은 아니다. 생성 API는 애플
 
 목록이 커지면 전부 반환하기보다 page 크기를 제한한다. Google AIP-158은 page size, page token, next token과 요청 조건의 일치를 설명하며, token을 권한 증명으로 취급하지 않는다. [Google pagination](https://google.aip.dev/158)
 
-Offset 방식 `LIMIT k OFFSET j`는 이해하기 쉽지만 앞쪽에 삽입·삭제가 생기면 다음 page에서 중복이나 누락이 생길 수 있다. Keyset 방식은 마지막으로 받은 정렬 키 $c$ 이후를 읽는다.
+Offset 방식 `LIMIT k OFFSET j`는 이해하기 쉽지만 앞쪽에 삽입·삭제가 생기면 다음 page에서 중복이나 누락이 생길 수 있다. Keyset 방식은 마지막으로 받은 정렬 키 $`c`$ 이후를 읽는다.
 
 ```sql
 SELECT id, name
@@ -30,7 +30,7 @@ LIMIT :page_size;
 
 ID가 고유하고 정렬 순서가 안정적이라는 가정이다. `(time,id)`로 정렬한다면 cursor도 두 값을 포함해야 동일 시각의 여러 행을 빠짐없이 구분한다. Keyset이라고 조회 중 바뀐 값까지 일관된 snapshot이 저절로 제공되는 것은 아니다. 변경 없는 전체 목록이 필요하면 snapshot/version 정책을 별도로 둔다. 예제는 고정된 오름차순 unique ID 목록을 전제로 한다.
 
-[`page_after`](../../../예제_examples/확장기초_extended/ai_data/models.py)는 이진 탐색으로 cursor 뒤 시작점을 찾으므로 준비된 배열에서 $O(\log N+k)$에 page를 얻는다. 정렬·유일성 검사를 매 page마다 다시 하면 (O(N)) 비용이 생기므로 입력 계약으로 두었다. 실제 API의 token은 내부 key를 감춘 opaque 값일 수 있지만, base64 인코딩만으로 무결성이나 비밀성이 생기지는 않는다.
+[`page_after`](../../../예제_examples/확장기초_extended/ai_data/models.py)는 이진 탐색으로 cursor 뒤 시작점을 찾으므로 준비된 배열에서 $`O(\log N+k)`$에 page를 얻는다. 정렬·유일성 검사를 매 page마다 다시 하면 (O(N)) 비용이 생기므로 입력 계약으로 두었다. 실제 API의 token은 내부 key를 감춘 opaque 값일 수 있지만, base64 인코딩만으로 무결성이나 비밀성이 생기지는 않는다.
 
 ## 입력 검증은 문법과 의미를 모두 다룬다
 
@@ -70,7 +70,7 @@ Large lists need bounded pages. Google AIP-158 describes sizes, continuation tok
 
 Offsets can duplicate or skip records if earlier rows change. Keyset pagination requests ordered keys after the last key, as in the SQL above. Unique stable IDs support this example. Ordering by `(time,id)` needs both cursor components to disambiguate equal timestamps. Keyset traversal does not itself create a consistent snapshot under mutation; snapshot/version semantics are separate.
 
-The linked function assumes a fixed sorted unique array, locates the cursor with binary search and returns $k$ items in $O(\log N+k)$. Rechecking sortedness on every page would add (O(N)), so sorted uniqueness is an input contract. Real continuation tokens may be opaque; base64 alone provides neither integrity nor secrecy.
+The linked function assumes a fixed sorted unique array, locates the cursor with binary search and returns $`k`$ items in $`O(\log N+k)`$. Rechecking sortedness on every page would add (O(N)), so sorted uniqueness is an input contract. Real continuation tokens may be opaque; base64 alone provides neither integrity nor secrecy.
 
 ### Validate syntax and meaning
 

@@ -8,18 +8,18 @@ Chunk는 검색과 입력 길이를 위해 정한 단위다. 너무 짧으면 �
 
 ## 작은 검색 기준선: TF-IDF와 cosine
 
-단어 $t$가 문서 $d$에 나오는 횟수 $tf_{t,d}$, 전체 문서 수 $N$, 해당 단어가 있는 문서 수 $df_t$를 생각하자. 흔한 단어보다 구별력이 큰 단어에 더 가중치를 주는 TF-IDF가 한 기준선이다. [Stanford IR book](https://nlp.stanford.edu/IR-book/html/htmledition/tf-idf-weighting-1.html)
+단어 $`t`$가 문서 $`d`$에 나오는 횟수 $`tf_{t,d}`$, 전체 문서 수 $`N`$, 해당 단어가 있는 문서 수 $`df_t`$를 생각하자. 흔한 단어보다 구별력이 큰 단어에 더 가중치를 주는 TF-IDF가 한 기준선이다. [Stanford IR book](https://nlp.stanford.edu/IR-book/html/htmledition/tf-idf-weighting-1.html)
 
 예제는 다음의 smoothing 변형을 명시적으로 사용한다.
 
 $$w_{t,d}=tf_{t,d}\left[1+\ln\frac{N+1}{df_t+1}\right],
-\qquad s(q,d)=\frac{w_q\cdot w_d}{\|w_q\|_2\|w_d\|_2}.$$
+\qquad s(q,d)=\frac{w_q\cdot w_d}{\Vert w_q\Vert _2\Vert w_d\Vert _2}.$$
 
 질의에도 같은 문서 집합에서 만든 IDF를 쓴다. 빈 벡터의 유사도는 예제 정책상 0이다. 모든 성분이 음이 아니므로 이 모델의 cosine은 0~1이다. 벡터 길이로 나누면 문서가 길다는 이유만으로 점수가 계속 커지는 효과를 줄인다. 단어가 다르지만 의미가 같은 문장을 잘 찾는다는 보장은 없으며, 한국어 형태소 분석기나 모델 tokenizer를 구현한 예제도 아니다.
 
 ## 검색 성능과 답변 성능을 따로 본다
 
-정답 관련 문서 집합 $G$, 상위 $k$개 집합 $S_k$라면 $Recall@k=|G\cap S_k|/|G|$다. 첫 관련 문서의 순위가 $r$이면 reciprocal rank는 $1/r$, 상위 $k$개에 없으면 여기서는 0으로 둔다. 여러 질의의 평균이 cutoff가 있는 MRR이다. $G=\{1,2\}$, 검색 순서가 `[3,2,1]`이면 $k=2$에서 recall은 0.5, reciprocal rank도 0.5다. 순위 평가에는 정답 관련성 판단과 cutoff 정의가 함께 필요하다. [Stanford ranked retrieval evaluation](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html)
+정답 관련 문서 집합 $`G`$, 상위 $`k`$개 집합 $`S_k`$라면 $`Recall@k=\vert G\cap S_k\vert /\vert G\vert `$다. 첫 관련 문서의 순위가 $`r`$이면 reciprocal rank는 $`1/r`$, 상위 $`k`$개에 없으면 여기서는 0으로 둔다. 여러 질의의 평균이 cutoff가 있는 MRR이다. $`G=\{1,2\}`$, 검색 순서가 `[3,2,1]`이면 $`k=2`$에서 recall은 0.5, reciprocal rank도 0.5다. 순위 평가에는 정답 관련성 판단과 cutoff 정의가 함께 필요하다. [Stanford ranked retrieval evaluation](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html)
 
 검색 지표가 좋아도 생성 답변이 근거를 잘못 읽을 수 있다. 평가 항목을 다음처럼 나누면 어느 단계의 실패인지 드러난다.
 
@@ -37,7 +37,7 @@ $$w_{t,d}=tf_{t,d}\left[1+\ln\frac{N+1}{df_t+1}\right],
 
 모델이 함수 이름과 인자를 출력하는 것은 실행 요청의 표현이다. 실제 함수를 실행하는 주체는 애플리케이션이다. Google의 function calling 문서도 모델이 직접 함수를 실행하지 않는다고 구분한다. [Google function calling](https://ai.google.dev/gemini-api/docs/function-calling)
 
-검색 문서의 문장을 실행 명령으로 취급하면 신뢰 경계를 넘는다. 실행부는 등록된 함수 목록, 인자 schema, 허용 범위, 사용자 권한과 부작용 정책을 적용한다. 예제의 `bounded_tool`은 로컬 합산 함수 하나만 허용하며 인자는 최대 100개의 유한한 숫자, 절댓값 $10^6$ 이하로 제한한다. Shell 문자열 해석이나 파일·네트워크 작업은 구현하지 않는다. 이 검사는 외부 시스템 전체의 보안을 증명하는 것이 아니라 작은 실행 계약을 보여 준다.
+검색 문서의 문장을 실행 명령으로 취급하면 신뢰 경계를 넘는다. 실행부는 등록된 함수 목록, 인자 schema, 허용 범위, 사용자 권한과 부작용 정책을 적용한다. 예제의 `bounded_tool`은 로컬 합산 함수 하나만 허용하며 인자는 최대 100개의 유한한 숫자, 절댓값 $`10^6`$ 이하로 제한한다. Shell 문자열 해석이나 파일·네트워크 작업은 구현하지 않는다. 이 검사는 외부 시스템 전체의 보안을 증명하는 것이 아니라 작은 실행 계약을 보여 준다.
 
 ## 구현과 검증
 
@@ -57,7 +57,7 @@ TF-IDF combines term frequency with a weight that discounts common terms. [Stanf
 
 ### Separate evaluation layers
 
-Recall at $k$ divides the number of retrieved relevant IDs by all relevant IDs. Reciprocal rank is $1/r$ for the first relevant result; this implementation returns zero when none appears within $k$. Averaging across queries gives cutoff-based MRR. For relevant IDs $\{1,2\}$, ranking `[3,2,1]` has recall 0.5 and reciprocal rank 0.5 at two. Relevance labels and cutoffs must be defined with the metric. [Stanford ranking evaluation](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html)
+Recall at $`k`$ divides the number of retrieved relevant IDs by all relevant IDs. Reciprocal rank is $`1/r`$ for the first relevant result; this implementation returns zero when none appears within $`k`$. Averaging across queries gives cutoff-based MRR. For relevant IDs $`\{1,2\}`$, ranking `[3,2,1]` has recall 0.5 and reciprocal rank 0.5 at two. Relevance labels and cutoffs must be defined with the metric. [Stanford ranking evaluation](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html)
 
 Good retrieval can still lead to an incorrect answer. The table separates missing evidence, misuse of citations, incorrect conclusions, unsupported answers when evidence is absent and invalid tool use. Holdout queries are needed after repeated tuning on a development set. Dataset size, condition-specific results and failures give context to averages.
 
@@ -65,7 +65,7 @@ Good retrieval can still lead to an incorrect answer. The table separates missin
 
 A model's function name and arguments describe a proposed invocation. The application executes it. Google's documentation makes that division explicit. [Function calling](https://ai.google.dev/gemini-api/docs/function-calling) Retrieved text must not gain authority to execute commands merely by being in context. The executor enforces registered functions, argument schemas, bounds, user authorization and side-effect policy.
 
-The demonstration allows only a local summation function, with at most 100 finite numeric values bounded in magnitude by $10^6$. It does not interpret shell strings or implement file/network effects. This illustrates a bounded contract rather than proving security of an external system.
+The demonstration allows only a local summation function, with at most 100 finite numeric values bounded in magnitude by $`10^6`$. It does not interpret shell strings or implement file/network effects. This illustrates a bounded contract rather than proving security of an external system.
 
 ### Implementation and checks
 

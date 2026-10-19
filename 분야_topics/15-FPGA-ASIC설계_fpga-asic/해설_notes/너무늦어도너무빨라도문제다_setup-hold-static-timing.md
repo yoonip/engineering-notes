@@ -12,13 +12,13 @@ STA(static timing analysis)는 경로와 timing model, clock·I/O 제약으로 �
 
 ### 같은 clock의 인접 상승 에지에서 유도하기
 
-여기서는 edge-triggered register 두 개, 같은 주기 T, setup의 다음 주기 capture와 hold의 같은 주기 capture만 다룬다. Launch clock 지연을 $L$, capture clock 지연을 $C$, skew를 $S=C-L$로 정의한다. 모든 시간은 같은 단위다.
+여기서는 edge-triggered register 두 개, 같은 주기 T, setup의 다음 주기 capture와 hold의 같은 주기 capture만 다룬다. Launch clock 지연을 $`L`$, capture clock 지연을 $`C`$, skew를 $`S=C-L`$로 정의한다. 모든 시간은 같은 단위다.
 
-Setup의 가장 늦은 데이터는 $L+t_{cq,max}+d_{max}$에 도착한다. 다음 capture edge는 $T+C$이고, 그보다 $t_{su}+U_{su}$ 일찍 안정되어야 한다. 따라서
+Setup의 가장 늦은 데이터는 $`L+t_{cq,max}+d_{max}`$에 도착한다. 다음 capture edge는 $`T+C`$이고, 그보다 $`t_{su}+U_{su}`$ 일찍 안정되어야 한다. 따라서
 
 $$slack_{su}=T+S-t_{cq,max}-d_{max}-t_{su}-U_{su}.$$
 
-Hold에서는 새 데이터가 $L+t_{cq,min}+d_{min}$보다 일찍 바뀌지 않는다고 모델링한다. 같은 capture edge 뒤 $t_h+U_h$까지 이전 값이 필요하므로
+Hold에서는 새 데이터가 $`L+t_{cq,min}+d_{min}`$보다 일찍 바뀌지 않는다고 모델링한다. 같은 capture edge 뒤 $`t_h+U_h`$까지 이전 값이 필요하므로
 
 $$slack_h=t_{cq,min}+d_{min}-S-t_h-U_h.$$
 
@@ -56,11 +56,11 @@ STA calculates arrival and required times from paths, timing models, and clock/I
 
 ### Derivation for adjacent edges of one clock
 
-Assume two edge-triggered registers with period T, next-cycle setup capture and same-cycle hold capture. Let launch and capture clock delays be $L,C$, and define skew $S=C-L$. Latest data arrives at $L+t_{cq,max}+d_{max}$; setup requires stability by $T+C-t_{su}-U_{su}$:
+Assume two edge-triggered registers with period T, next-cycle setup capture and same-cycle hold capture. Let launch and capture clock delays be $`L,C`$, and define skew $`S=C-L`$. Latest data arrives at $`L+t_{cq,max}+d_{max}`$; setup requires stability by $`T+C-t_{su}-U_{su}`$:
 
 $$slack_{su}=T+S-t_{cq,max}-d_{max}-t_{su}-U_{su}.$$
 
-Earliest new-data arrival is $L+t_{cq,min}+d_{min}$, while hold requires the previous value until $C+t_h+U_h$:
+Earliest new-data arrival is $`L+t_{cq,min}+d_{min}`$, while hold requires the previous value until $`C+t_h+U_h`$:
 
 $$slack_h=t_{cq,min}+d_{min}-S-t_h-U_h.$$
 

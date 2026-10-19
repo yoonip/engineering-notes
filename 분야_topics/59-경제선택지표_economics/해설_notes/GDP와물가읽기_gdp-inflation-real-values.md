@@ -10,13 +10,13 @@
 
 부가가치는 산출에서 생산에 사용한 중간투입을 뺀 값이다. 중간재와 최종재의 판매액을 모두 단순 합산하면 같은 가치를 중복 계산할 수 있다. 시장가격 GDP는 기초가격으로 평가한 부가가치 합계에 생산물세를 더하고 생산물보조금을 뺀 값이다. 정부의 비시장 서비스 등은 별도의 국민계정 평가 규칙도 사용하므로 GDP를 현금 거래만의 합계로 설명하면 부족하다. [BEA의 GDP 설명](https://www.bea.gov/resources/learning-center/what-to-know-gdp), [BEA 부가가치 정의](https://bea.gov/help/faq/184), [OECD 국민계정 FAQ](https://www.oecd.org/en/data/insights/data-explainers/2024/03/annual-national-accounts-frequently-asked-questions.html)
 
-지출 측면의 기본 관계는 $Y=C+G+I+X-M$이다. 여기서는 $C$를 가계와 가계에 봉사하는 비영리단체의 최종소비, $G$를 정부 최종소비, $I$를 재고 증감과 귀중품 순취득을 포함한 총자본형성, $X,M$을 수출·수입으로 정한다. 정부 투자도 이 정의의 $I$에 포함한다. 수입을 빼는 것은 앞 항목에 포함될 수 있는 국외 생산분을 제외하기 위해서이지, 수입이 언제나 국민에게 손해라는 가치 판단이 아니다. 미국 BEA 설명처럼 정부 소비와 투자를 $G$로 묶는 표기도 있으므로 글자를 외우기보다 구성 항목을 확인한다. [OECD 국민계정 FAQ](https://www.oecd.org/en/data/insights/data-explainers/2024/03/annual-national-accounts-frequently-asked-questions.html), [BEA 지출 측정 설명](https://www.bea.gov/news/blog/2025-06-03/expenditures-approach-measuring-gdp)
+지출 측면의 기본 관계는 $`Y=C+G+I+X-M`$이다. 여기서는 $`C`$를 가계와 가계에 봉사하는 비영리단체의 최종소비, $`G`$를 정부 최종소비, $`I`$를 재고 증감과 귀중품 순취득을 포함한 총자본형성, $`X,M`$을 수출·수입으로 정한다. 정부 투자도 이 정의의 $`I`$에 포함한다. 수입을 빼는 것은 앞 항목에 포함될 수 있는 국외 생산분을 제외하기 위해서이지, 수입이 언제나 국민에게 손해라는 가치 판단이 아니다. 미국 BEA 설명처럼 정부 소비와 투자를 $`G`$로 묶는 표기도 있으므로 글자를 외우기보다 구성 항목을 확인한다. [OECD 국민계정 FAQ](https://www.oecd.org/en/data/insights/data-explainers/2024/03/annual-national-accounts-frequently-asked-questions.html), [BEA 지출 측정 설명](https://www.bea.gov/news/blog/2025-06-03/expenditures-approach-measuring-gdp)
 
 ### 가격과 수량을 분리하는 작은 계산
 
 다음은 한 종류의 최종재만 있는 가상 예다. 실제 국가 통계가 아니다.
 
-| 기간 | 수량 $q$ | 단가 $p$ | 당기 가격의 금액 $pq$ |
+| 기간 | 수량 $`q`$ | 단가 $`p`$ | 당기 가격의 금액 $`pq`$ |
 | --- | ---: | ---: | ---: |
 | 0 | 100 | 10,000원 | 1,000,000원 |
 | 1 | 110 | 12,000원 | 1,320,000원 |
@@ -32,7 +32,7 @@ Y_t^{real,0}=\sum_i p_{i0}q_{it}.$$
 
 $$D_t=100\frac{Y_t^{nom}}{Y_t^{real}}.$$
 
-가상 예에서는 120이다. 동일한 계열 정의로 보면 성장 배율은 $(1+g_{nom})=(1+g_{real})(1+g_D)$로 분해된다. 32%에서 20%를 빼 12%를 실질 증가율이라고 하면 틀린다. 정확한 계산은 $1.32/1.20-1=10\%$다.
+가상 예에서는 120이다. 동일한 계열 정의로 보면 성장 배율은 $`(1+g_{nom})=(1+g_{real})(1+g_D)`$로 분해된다. 32%에서 20%를 빼 12%를 실질 증가율이라고 하면 틀린다. 정확한 계산은 $`1.32/1.20-1=10\%`$다.
 
 ### 소비자물가지수와 GDP 디플레이터는 무엇이 다를까
 
@@ -52,9 +52,9 @@ $$P_t=100\frac{\sum_i p_{it}q_{i0}}{\sum_i p_{i0}q_{i0}}$$
 
 ### 상승률이 낮아져도 가격은 오를 수 있다
 
-같은 기준의 가상 CPI가 100, 110, 112.2라면 상승률은 10%에서 2%로 낮아지지만 가격 수준은 계속 높아졌다. 물가상승률 둔화와 물가 하락은 다르다. 상승률은 $(P_t/P_{t-k}-1)\times100$이며, 월별 자료에서 $k=1$이면 전월비, $k=12$이면 전년동월비다. 서로 다른 비교 기간을 섞지 않는다. [공식 등락률 설명](https://mods.go.kr/menu.es?mid=b70202020000)
+같은 기준의 가상 CPI가 100, 110, 112.2라면 상승률은 10%에서 2%로 낮아지지만 가격 수준은 계속 높아졌다. 물가상승률 둔화와 물가 하락은 다르다. 상승률은 $`(P_t/P_{t-k}-1)\times100`$이며, 월별 자료에서 $`k=1`$이면 전월비, $`k=12`$이면 전년동월비다. 서로 다른 비교 기간을 섞지 않는다. [공식 등락률 설명](https://mods.go.kr/menu.es?mid=b70202020000)
 
-개인의 구매력을 볼 때는 목적에 맞는 물가지수를 선택한다. 명목 임금이 3%, 해당 소비 가격지수가 5% 올랐다면 그 기준의 실질 임금 변화는 $1.03/1.05-1\approx-1.90\%$다. 이는 모든 가구의 체감 변화를 동일하게 뜻하지 않는다.
+개인의 구매력을 볼 때는 목적에 맞는 물가지수를 선택한다. 명목 임금이 3%, 해당 소비 가격지수가 5% 올랐다면 그 기준의 실질 임금 변화는 $`1.03/1.05-1\approx-1.90\%`$다. 이는 모든 가구의 체감 변화를 동일하게 뜻하지 않는다.
 
 ### 통계를 읽을 때 남겨야 할 조건
 
@@ -68,27 +68,27 @@ If a product's price rises from 10,000 to 12,000 won with unchanged quantity, re
 
 Value added subtracts intermediate inputs from output. Simply adding intermediate and final sales can double-count value. GDP at market prices adds taxes on products and subtracts subsidies on products from value added at basic prices. National accounts also use valuation rules for nonmarket government services, so GDP is more than a sum of cash transactions. [BEA GDP guide](https://www.bea.gov/resources/learning-center/what-to-know-gdp), [value-added definition](https://bea.gov/help/faq/184), [OECD national accounts FAQ](https://www.oecd.org/en/data/insights/data-explainers/2024/03/annual-national-accounts-frequently-asked-questions.html)
 
-The expenditure identity is $Y=C+G+I+X-M$. Here $C$ means household and nonprofit-institution-serving-households final consumption, $G$ government final consumption, $I$ total capital formation including inventory changes, net acquisitions of valuables, and government investment, and $X,M$ exports and imports. Imports remove foreign production potentially included in other components; subtraction does not establish that imports harm residents. Other conventions, including the BEA presentation, combine government consumption and investment in $G$. Check the component definitions rather than memorizing the letters alone. [OECD national accounts FAQ](https://www.oecd.org/en/data/insights/data-explainers/2024/03/annual-national-accounts-frequently-asked-questions.html), [BEA expenditure explanation](https://www.bea.gov/news/blog/2025-06-03/expenditures-approach-measuring-gdp)
+The expenditure identity is $`Y=C+G+I+X-M`$. Here $`C`$ means household and nonprofit-institution-serving-households final consumption, $`G`$ government final consumption, $`I`$ total capital formation including inventory changes, net acquisitions of valuables, and government investment, and $`X,M`$ exports and imports. Imports remove foreign production potentially included in other components; subtraction does not establish that imports harm residents. Other conventions, including the BEA presentation, combine government consumption and investment in $`G`$. Check the component definitions rather than memorizing the letters alone. [OECD national accounts FAQ](https://www.oecd.org/en/data/insights/data-explainers/2024/03/annual-national-accounts-frequently-asked-questions.html), [BEA expenditure explanation](https://www.bea.gov/news/blog/2025-06-03/expenditures-approach-measuring-gdp)
 
 ### Separate prices and quantities
 
 The table is a hypothetical one-final-good example, not national statistics. Quantity rises from 100 to 110 and price from 10,000 to 12,000 won. Nominal value rises from 1,000,000 to 1,320,000 won, or 32%. At period-zero prices, output becomes 1,100,000 won, a 10% volume increase.
 
-The teaching expressions are $Y_t^{nom}=\sum_i p_{it}q_{it}$ and $Y_t^{real,0}=\sum_i p_{i0}q_{it}$. Actual Korean real GDP uses chain volume measures reflecting changing relative prices and weights. Its component levels need not add directly to the total. [Bank of Korea GDP and contribution FAQ](https://www.bok.or.kr/portal/bbs/P0001949/list.do?menuNo=200658&searchOptn2=7)
+The teaching expressions are $`Y_t^{nom}=\sum_i p_{it}q_{it}`$ and $`Y_t^{real,0}=\sum_i p_{i0}q_{it}`$. Actual Korean real GDP uses chain volume measures reflecting changing relative prices and weights. Its component levels need not add directly to the total. [Bank of Korea GDP and contribution FAQ](https://www.bok.or.kr/portal/bbs/P0001949/list.do?menuNo=200658&searchOptn2=7)
 
-The corresponding implicit deflator is $D_t=100Y_t^{nom}/Y_t^{real}$, or 120 in the example. For consistently defined series, $(1+g_{nom})=(1+g_{real})(1+g_D)$. Subtracting 20% from 32% is not exact: $1.32/1.20-1$ gives 10%.
+The corresponding implicit deflator is $`D_t=100Y_t^{nom}/Y_t^{real}`$, or 120 in the example. For consistently defined series, $`(1+g_{nom})=(1+g_{real})(1+g_D)`$. Subtracting 20% from 32% is not exact: $`1.32/1.20-1`$ gives 10%.
 
 ### CPI and the GDP deflator answer different questions
 
-CPI aggregates consumer prices using expenditure weights. A simple fixed-basket representation is $P_t=100\sum_i p_{it}q_{i0}/\sum_i p_{i0}q_{i0}$. Official construction also involves representative products, price collection, quality adjustment, and weight updates. An individual household can have different expenditure shares. [Official Korean CPI calculation guide](https://mods.go.kr/menu.es?mid=b70101050000)
+CPI aggregates consumer prices using expenditure weights. A simple fixed-basket representation is $`P_t=100\sum_i p_{it}q_{i0}/\sum_i p_{i0}q_{i0}`$. Official construction also involves representative products, price collection, quality adjustment, and weight updates. An individual household can have different expenditure shares. [Official Korean CPI calculation guide](https://mods.go.kr/menu.es?mid=b70101050000)
 
 CPI can include imported consumer goods in its basket. The GDP deflator concerns domestic production and also relates to exports; its weights connect to production composition and volume measurement. Dividing nominal GDP by CPI does not generally produce official real GDP. Nor are import prices necessarily irrelevant to the deflator: imported-input costs can affect domestic value added and prices indirectly. [BLS comparison](https://www.bls.gov/opub/mlr/2016/article/comparing-the-cpi-with-the-gdp-price-index-and-gdp-implicit-price-deflator.htm)
 
 ### Slower inflation can still mean rising prices
 
-A hypothetical CPI path of 100, 110, and 112.2 has inflation falling from 10% to 2% while the price level continues rising. Disinflation differs from falling prices. Percentage change is $(P_t/P_{t-k}-1)\times100$: for monthly data, $k=1$ compares with the preceding month and $k=12$ with the same month a year earlier. [Official rate-of-change guide](https://mods.go.kr/menu.es?mid=b70202020000)
+A hypothetical CPI path of 100, 110, and 112.2 has inflation falling from 10% to 2% while the price level continues rising. Disinflation differs from falling prices. Percentage change is $`(P_t/P_{t-k}-1)\times100`$: for monthly data, $`k=1`$ compares with the preceding month and $`k=12`$ with the same month a year earlier. [Official rate-of-change guide](https://mods.go.kr/menu.es?mid=b70202020000)
 
-Choose a price index appropriate to the purchasing-power question. If nominal wages rise 3% and the chosen consumption-price index rises 5%, real wage growth on that basis is $1.03/1.05-1\approx-1.90\%$. This does not imply identical experiences across households.
+Choose a price index appropriate to the purchasing-power question. If nominal wages rise 3% and the chosen consumption-price index rises 5%, real wage growth on that basis is $`1.03/1.05-1\approx-1.90\%`$. This does not imply identical experiences across households.
 
 ### Preserve the statistical context
 

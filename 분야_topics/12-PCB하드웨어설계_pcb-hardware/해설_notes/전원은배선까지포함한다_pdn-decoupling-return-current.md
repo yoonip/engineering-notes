@@ -8,7 +8,7 @@
 
 전원장치가 1 V를 표시해도 IC의 두 전원 핀 사이가 언제나 1 V인 것은 아니다. 부하 전류가 빠르게 바뀌면 전원·귀환 경로의 저항과 인덕턴스에 전압이 생긴다. PDN(power delivery network)은 regulator, bulk capacitor, PCB plane·via·배선, package와 on-die 전원 경로를 함께 다룬다. Decoupling capacitor는 전류가 필요한 위치 가까이에서 전하를 공급하지만 연결 경로가 길면 그 효과가 줄어든다. [ADI MT-101](https://www.analog.com/media/en/training-seminars/tutorials/MT-101.pdf)
 
-부하가 보는 작은 변화는 주파수 영역에서 $\Delta V(f)=-Z_{PDN}(f)\Delta I(f)$로 나타낼 수 있다. 부하 전류 증가를 양수로 두었을 때의 부호다. 허용 변동 $\Delta V_{allow}$와 대표 전류 변화 $\Delta I$의 비
+부하가 보는 작은 변화는 주파수 영역에서 $`\Delta V(f)=-Z_{PDN}(f)\Delta I(f)`$로 나타낼 수 있다. 부하 전류 증가를 양수로 두었을 때의 부호다. 허용 변동 $`\Delta V_{allow}`$와 대표 전류 변화 $`\Delta I`$의 비
 
 $$Z_{target}=\Delta V_{allow}/\Delta I$$
 
@@ -20,11 +20,11 @@ $$Z_{target}=\Delta V_{allow}/\Delta I$$
 
 | 현상 | 식 | 의미 |
 |---|---|---|
-| 저항 손실 | $\Delta V=R\Delta I$ | 전류가 커질수록 DC drop 증가 |
-| capacitor 방전 | $C\Delta V=\int\Delta i\,dt$ | 공급이 뒤늦는 동안 전하를 내어 줌 |
-| 인덕턴스 | $v_L=L\,di/dt$ | 전류 변화가 빠를수록 큰 전압 발생 |
+| 저항 손실 | $`\Delta V=R\Delta I`$ | 전류가 커질수록 DC drop 증가 |
+| capacitor 방전 | $`C\Delta V=\int\Delta i\,dt`$ | 공급이 뒤늦는 동안 전하를 내어 줌 |
+| 인덕턴스 | $`v_L=L\,di/dt`$ | 전류 변화가 빠를수록 큰 전압 발생 |
 
-다른 공급이 없는 동안 1 A를 100 ns 공급하고 전압 하락을 50 mV 이내로 제한하려면 이상적으로 $C\ge2$ µF다. 실제 부품은 DC bias·온도·공차로 유효 C가 달라진다. ESR 20 mΩ의 1 A 변화는 20 mV의 저항성 변화를, 1 nH에서 1 A/ns는 1 V의 유도 전압 규모를 만든다. 이 세 수치의 최대값이 같은 순간에 발생한다고 단순히 더하지는 않는다.
+다른 공급이 없는 동안 1 A를 100 ns 공급하고 전압 하락을 50 mV 이내로 제한하려면 이상적으로 $`C\ge2`$ µF다. 실제 부품은 DC bias·온도·공차로 유효 C가 달라진다. ESR 20 mΩ의 1 A 변화는 20 mV의 저항성 변화를, 1 nH에서 1 A/ns는 1 V의 유도 전압 규모를 만든다. 이 세 수치의 최대값이 같은 순간에 발생한다고 단순히 더하지는 않는다.
 
 실제 capacitor를 C·ESR·ESL의 직렬 모델로 줄이면
 
@@ -41,7 +41,7 @@ f_{SR}=\frac1{2\pi\sqrt{ESL\,C}}.$$
 
 ### 모델, 구현과 검증
 
-`pdn_impedance`는 $R_s+j\omega L_s$ 전원 경로와 여러 직렬 RLC capacitor 가지의 admittance를 합한다. 이상적 전원은 AC ground이고 부하 위치는 단일 노드다. 이 모델은 board·package의 분포 공진이나 regulator 제어루프를 포함하지 않는다. 테스트는 단일 가지의 공진에서 $|Z|=ESR$인지 확인하고, 병렬망에 1 A를 주었을 때 각 가지 전류의 합이 1 A인지 독립 KCL로 검사한다.
+`pdn_impedance`는 $`R_s+j\omega L_s`$ 전원 경로와 여러 직렬 RLC capacitor 가지의 admittance를 합한다. 이상적 전원은 AC ground이고 부하 위치는 단일 노드다. 이 모델은 board·package의 분포 공진이나 regulator 제어루프를 포함하지 않는다. 테스트는 단일 가지의 공진에서 $`\vert Z\vert =ESR`$인지 확인하고, 병렬망에 1 A를 주었을 때 각 가지 전류의 합이 1 A인지 독립 KCL로 검사한다.
 
 보드 평가에서는 regulator·부품의 허용 범위를 먼저 맞추고, DC bias가 반영된 C와 package/via 추정치를 넣어 impedance sweep을 한다. 다음으로 실제 부하 step의 전압을 짧은 ground 연결로 측정하고 probe 대역폭·부하를 기록한다. VNA 측정은 fixture·reference plane 보정과 낮은 임피던스 측정법이 필요하다. 회로 모델의 공진 계산과 실제 EMI 적합성 시험은 별개의 증거다.
 
@@ -51,11 +51,11 @@ f_{SR}=\frac1{2\pi\sqrt{ESL\,C}}.$$
 
 A supply displaying 1 V does not guarantee a constant 1 V between an IC's power pins. Rapid current changes develop voltage across resistance and inductance in both supply and return paths. A PDN includes regulators, bulk capacitors, board planes, vias and traces, package connections and on-die distribution. Local decoupling supplies charge near the load, but long connections reduce its effectiveness. [ADI MT-101](https://www.analog.com/media/en/training-seminars/tutorials/MT-101.pdf)
 
-For a positive increase in load current, a small-signal model gives $\Delta V(f)=-Z_{PDN}(f)\Delta I(f)$. The ratio $Z_{target}=\Delta V_{allow}/\Delta I$ is a useful initial budget: 50 mV for 1 A gives 50 mΩ. Actual droop also depends on the current spectrum, impedance phase and resonances; this ratio alone is not a universal guarantee.
+For a positive increase in load current, a small-signal model gives $`\Delta V(f)=-Z_{PDN}(f)\Delta I(f)`$. The ratio $`Z_{target}=\Delta V_{allow}/\Delta I`$ is a useful initial budget: 50 mV for 1 A gives 50 mΩ. Actual droop also depends on the current spectrum, impedance phase and resonances; this ratio alone is not a universal guarantee.
 
 ### Resistance, missing charge and inductance
 
-The basic mechanisms are $\Delta V=R\Delta I$, $C\Delta V=\int\Delta i\,dt$, and $v_L=L\,di/dt$. Supplying 1 A for 100 ns with no other source contribution and at most 50 mV of ideal capacitor droop requires at least 2 µF. Effective capacitance changes with DC bias, temperature and tolerance. A 20 mΩ ESR produces a 20 mV resistive change for 1 A; 1 nH at 1 A/ns corresponds to 1 V of inductive voltage. Their separate peak estimates need not occur simultaneously.
+The basic mechanisms are $`\Delta V=R\Delta I`$, $`C\Delta V=\int\Delta i\,dt`$, and $`v_L=L\,di/dt`$. Supplying 1 A for 100 ns with no other source contribution and at most 50 mV of ideal capacitor droop requires at least 2 µF. Effective capacitance changes with DC bias, temperature and tolerance. A 20 mΩ ESR produces a 20 mV resistive change for 1 A; 1 nH at 1 A/ns corresponds to 1 V of inductive voltage. Their separate peak estimates need not occur simultaneously.
 
 A series C–ESR–ESL approximation gives
 
@@ -71,7 +71,7 @@ A layer transition also changes the reference geometry. A nearby stitching via c
 
 ### Model, implementation and verification
 
-`pdn_impedance` sums admittances of a source path $R_s+j\omega L_s$ and series-RLC capacitor branches. The ideal supply is AC ground and the load is one lumped node. Distributed board/package resonances and regulator feedback are excluded. Tests check that a branch reaches $|Z|=ESR$ at resonance and independently sum all branch currents for a 1 A excitation.
+`pdn_impedance` sums admittances of a source path $`R_s+j\omega L_s`$ and series-RLC capacitor branches. The ideal supply is AC ground and the load is one lumped node. Distributed board/package resonances and regulator feedback are excluded. Tests check that a branch reaches $`\vert Z\vert =ESR`$ at resonance and independently sum all branch currents for a 1 A excitation.
 
 Board evaluation begins with regulator/component limits, bias-adjusted capacitance and package/via estimates, followed by impedance sweeps. Measure an actual load step with a short probe return, recording bandwidth and loading. VNA work requires fixture/reference-plane calibration and a method suitable for low impedance. A circuit-model resonance check and an EMI compliance test provide different evidence.
 

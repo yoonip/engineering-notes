@@ -12,9 +12,9 @@ RV32I는 load/store 구조다. 정수 산술은 register에서 수행하고 메�
 
 ### 주소는 byte를 가리킨다
 
-Byte-addressed memory에서 주소 a와 a+1은 인접 byte다. 32-bit word가 4 byte라면 인접 word의 시작 주소 차이는 4다. 예를 들어 `lw x5, 12(x6)`은 x6의 byte 주소에 부호 있는 offset 12를 더한 위치에서 word를 읽는다. 배열 index를 자동으로 4배 하는 명령이 아니다. 일반적으로 effective address는 $EA=x[rs1]+sext(imm)$에서 계산하며 주소 폭·접근 권한은 ISA와 실행 환경의 규칙을 따른다. [Berkeley CS61C data transfer](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
+Byte-addressed memory에서 주소 a와 a+1은 인접 byte다. 32-bit word가 4 byte라면 인접 word의 시작 주소 차이는 4다. 예를 들어 `lw x5, 12(x6)`은 x6의 byte 주소에 부호 있는 offset 12를 더한 위치에서 word를 읽는다. 배열 index를 자동으로 4배 하는 명령이 아니다. 일반적으로 effective address는 $`EA=x[rs1]+sext(imm)`$에서 계산하며 주소 폭·접근 권한은 ISA와 실행 환경의 규칙을 따른다. [Berkeley CS61C data transfer](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
 
-숫자 $w=\sum_{k=0}^{B-1}b_k2^{8k}$에서 $b_k$는 0…255인 byte다. Little-endian은 $M[a+k]=b_k$, big-endian은 $M[a+k]=b_{B-1-k}$로 배치한다.
+숫자 $`w=\sum_{k=0}^{B-1}b_k2^{8k}`$에서 $`b_k`$는 0…255인 byte다. Little-endian은 $`M[a+k]=b_k`$, big-endian은 $`M[a+k]=b_{B-1-k}`$로 배치한다.
 
 | 값 0x12345678 | 주소 a | a+1 | a+2 | a+3 |
 |---|---|---|---|---|
@@ -33,7 +33,7 @@ RV32I의 `LB`는 8-bit를 읽어 32-bit로 sign-extend하고 `LBU`는 zero-exten
 
 ### 정렬과 장치 접근은 추가 조건이다
 
-폭 B의 자연 정렬은 $EA\bmod B=0$이다. RV32I의 자연 정렬 접근은 address-misaligned 예외를 만들지 않지만, 범위·권한 등 다른 이유의 fault까지 없어진다는 뜻은 아니다. 비정렬 접근의 지원·trap·성능과 atomicity는 EEI에 달린다. “항상 성공” 또는 “항상 CPU가 멈춘다”로 일반화하지 않는다. [RISC-V §2.6](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf), [CS61C 정렬 설명](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
+폭 B의 자연 정렬은 $`EA\bmod B=0`$이다. RV32I의 자연 정렬 접근은 address-misaligned 예외를 만들지 않지만, 범위·권한 등 다른 이유의 fault까지 없어진다는 뜻은 아니다. 비정렬 접근의 지원·trap·성능과 atomicity는 EEI에 달린다. “항상 성공” 또는 “항상 CPU가 멈춘다”로 일반화하지 않는다. [RISC-V §2.6](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf), [CS61C 정렬 설명](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
 
 MMIO register는 읽기 부작용이나 허용 접근 폭이 있을 수 있다. RAM용 byte 조합을 장치 register에 그대로 적용하면 읽기 횟수 자체가 달라질 수 있다. Endianness와 memory ordering도 다른 문제다. 바이트 순서를 맞췄다고 여러 core·DMA의 관찰 순서가 보장되지는 않는다.
 
@@ -53,19 +53,19 @@ RV32I is a load/store architecture: integer arithmetic operates on registers and
 
 ### Addresses identify bytes
 
-In byte-addressed memory, a and a+1 identify adjacent bytes. Consecutive 32-bit words begin four bytes apart. `lw x5, 12(x6)` adds a signed byte offset of 12 to the base address; it does not automatically scale an array index by four. The general form is $EA=x[rs1]+sext(imm)$, subject to address-width and access rules. [Berkeley CS61C](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
+In byte-addressed memory, a and a+1 identify adjacent bytes. Consecutive 32-bit words begin four bytes apart. `lw x5, 12(x6)` adds a signed byte offset of 12 to the base address; it does not automatically scale an array index by four. The general form is $`EA=x[rs1]+sext(imm)`$, subject to address-width and access rules. [Berkeley CS61C](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
 
-Write a B-byte value as $w=\sum b_k2^{8k}$, with each $b_k$ in 0…255. Little-endian places $b_k$ at address a+k; big-endian places $b_{B-1-k}$ there. Thus 0x12345678 occupies ascending byte addresses as 78/56/34/12 or 12/34/56/78 respectively. This says nothing automatically about bit numbering inside a byte or serial bit-transmission order.
+Write a B-byte value as $`w=\sum b_k2^{8k}`$, with each $`b_k`$ in 0…255. Little-endian places $`b_k`$ at address a+k; big-endian places $`b_{B-1-k}`$ there. Thus 0x12345678 occupies ascending byte addresses as 78/56/34/12 or 12/34/56/78 respectively. This says nothing automatically about bit numbering inside a byte or serial bit-transmission order.
 
 RISC-V specifies byte-address invariance, while the EEI selects the memory endian configuration. Do not assume every RISC-V environment permits only one setting. [ISA §2.6](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf)
 
 ### Width and signed interpretation
 
-The byte pattern 0x80 represents unsigned 128 or signed two's-complement −128. For a k-bit pattern u, signed interpretation is u below $2^{k-1}$ and $u-2^k$ otherwise. RV32I `LB` sign-extends an 8-bit load to 32 bits, while `LBU` zero-extends it. `LH/LHU` apply the distinction to 16 bits; `SB/SH/SW` store the register's low 8/16/32 bits. Different extended values do not imply different stored bytes.
+The byte pattern 0x80 represents unsigned 128 or signed two's-complement −128. For a k-bit pattern u, signed interpretation is u below $`2^{k-1}`$ and $`u-2^k`$ otherwise. RV32I `LB` sign-extends an 8-bit load to 32 bits, while `LBU` zero-extends it. `LH/LHU` apply the distinction to 16 bits; `SB/SH/SW` store the register's low 8/16/32 bits. Different extended values do not imply different stored bytes.
 
 ### Alignment and device access add constraints
 
-Natural alignment for B-byte access means $EA\bmod B=0$. Naturally aligned RV32I accesses do not raise address-misaligned exceptions, but may still fault for other reasons such as permissions or invalid regions. Support, traps, speed and atomicity of misaligned access depend on the EEI. Neither universal success nor universal failure is correct. [RISC-V §2.6](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf), [CS61C alignment](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
+Natural alignment for B-byte access means $`EA\bmod B=0`$. Naturally aligned RV32I accesses do not raise address-misaligned exceptions, but may still fault for other reasons such as permissions or invalid regions. Support, traps, speed and atomicity of misaligned access depend on the EEI. Neither universal success nor universal failure is correct. [RISC-V §2.6](https://docs.riscv.org/reference/isa/_attachments/riscv-unprivileged.pdf), [CS61C alignment](https://notes.cs61c.org/content/rv-data-transfer/rv-load-store/)
 
 MMIO can restrict widths and attach side effects to reads. Replacing one register access with several byte accesses may change behavior. Endianness is also distinct from memory ordering: correct byte order does not establish observation order across cores or DMA.
 

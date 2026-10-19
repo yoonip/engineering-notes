@@ -41,7 +41,7 @@ Ubuntu, Debian, Fedora, Arch Linux, WSL2, Bash, Zsh, systemd, SSH, tmux, rsync
 
 ## 기초 해설
 
-- [Linux에서 프로그램, 권한과 파이프가 만나는 곳](해설_notes/Linux에서프로그램권한과파이프가만나_processes-permissions-pipelines.md)
+- [Linux에서 프로그램, 권한과 파이프가 만나는 곳](해설_notes/프로세스-권한-파이프_processes-permissions-pipelines.md)
 
 ## English
 
@@ -67,4 +67,4 @@ WSL2 provides a Linux development environment on Windows. Access to physical dev
 
 ### Foundation article
 
-- [Linux에서 프로그램, 권한과 파이프가 만나는 곳](해설_notes/Linux에서프로그램권한과파이프가만나_processes-permissions-pipelines.md#english)
+- [Linux에서 프로그램, 권한과 파이프가 만나는 곳](해설_notes/프로세스-권한-파이프_processes-permissions-pipelines.md#english)

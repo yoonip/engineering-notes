@@ -8,7 +8,7 @@
 
 ## 인덱스는 별도의 탐색 구조다
 
-책의 찾아보기처럼 인덱스는 조건에 맞는 행의 위치를 찾는 데 도움을 준다. 균형 잡힌 B-tree 인덱스에서 단일 키 탐색은 대략 $O(\log N)$, 결과 $K$개를 읽는 비용은 그 뒤에 더해진다. 실제 비용에는 페이지 I/O, 캐시, 중복도, 테이블 접근이 포함된다. 인덱스가 없는 전체 scan은 (O(N))이며 대부분의 행이 필요한 경우 오히려 합리적일 수 있다. [SQLite 탐색·covering index 설명](https://www.sqlite.org/queryplanner.html)
+책의 찾아보기처럼 인덱스는 조건에 맞는 행의 위치를 찾는 데 도움을 준다. 균형 잡힌 B-tree 인덱스에서 단일 키 탐색은 대략 $`O(\log N)`$, 결과 $`K`$개를 읽는 비용은 그 뒤에 더해진다. 실제 비용에는 페이지 I/O, 캐시, 중복도, 테이블 접근이 포함된다. 인덱스가 없는 전체 scan은 (O(N))이며 대부분의 행이 필요한 경우 오히려 합리적일 수 있다. [SQLite 탐색·covering index 설명](https://www.sqlite.org/queryplanner.html)
 
 `(region, time)` 복합 인덱스는 region이 먼저, 같은 region 안에서는 time 순으로 정렬한 사전과 비슷하다. 실제 사용 가능 여부는 조건, 정렬, planner와 DB 버전에 따른다. 인덱스는 저장 공간과 쓰기 유지 비용이 필요하므로 개수가 많다고 항상 좋은 것은 아니다. `EXPLAIN QUERY PLAN` 같은 계획 확인과 실제 데이터 크기에서의 측정을 구분한다. 실행 계획이 달라도 결과가 같아야 한다는 점이 첫 번째 검증 기준이다.
 
@@ -16,7 +16,7 @@
 
 계좌 A에서 30을 빼고 B에 30을 더하는 작업을 생각하자. 두 문장 사이에 실패하면 총액이 줄어들 수 있다. 트랜잭션은 묶음 전체를 commit하거나 rollback한다. PostgreSQL 문서는 이를 all-or-nothing 연산으로 설명하며 `BEGIN`, `COMMIT`, `ROLLBACK`을 구분한다. 격리 수준은 동시 트랜잭션이 어떤 상태를 볼 수 있는지 정한다. 트랜잭션이 있다는 사실만으로 모든 업무 규칙과 모든 동시성 문제가 해결되는 것은 아니다. [PostgreSQL transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html)
 
-잔액 $A,B$, 양의 이체액 $d\le A$라면
+잔액 $`A,B`$, 양의 이체액 $`d\le A`$라면
 
 $$A'=A-d,\qquad B'=B+d,\qquad A'+B'=A+B.$$
 
@@ -26,7 +26,7 @@ $$A'=A-d,\qquad B'=B+d,\qquad A'+B'=A+B.$$
 
 ## 집계에서 행의 의미와 NULL을 구분한다
 
-그룹 $g$의 총액은 $S_g=\sum_{i:\,region_i=g}a_i$다.
+그룹 $`g`$의 총액은 $`S_g=\sum_{i:\,region_i=g}a_i`$다.
 
 ```sql
 SELECT region, SUM(amount) AS total
@@ -37,7 +37,7 @@ ORDER BY region;
 
 `WHERE`는 집계 전 행을 거르고 `HAVING`은 집계 후 그룹을 거른다. `COUNT(*)`는 행 수, `COUNT(column)`은 해당 열이 NULL이 아닌 행 수다. `AVG`와 `SUM`도 보통 NULL 입력을 제외한다. PostgreSQL에서 빈 입력의 `SUM`은 0이 아니라 NULL이다. 0이 업무상 맞는 경우 `COALESCE`로 그 정책을 표현한다. NULL은 자동으로 0이나 “측정값 0”이 되지 않는다. [PostgreSQL aggregates](https://www.postgresql.org/docs/current/functions-aggregate.html)
 
-행별 평균을 다시 단순 평균하면 그룹 크기가 다를 때 틀린다. 그룹 평균 $m_g$, 표본 수 $n_g$라면 전체 평균은 $\sum_gn_gm_g/\sum_gn_g$다. Join 후에 행이 복제되면 합계가 부풀 수 있으므로 집계 단위가 주문인지, 품목인지, 센서 측정인지 먼저 정의한다.
+행별 평균을 다시 단순 평균하면 그룹 크기가 다를 때 틀린다. 그룹 평균 $`m_g`$, 표본 수 $`n_g`$라면 전체 평균은 $`\sum_gn_gm_g/\sum_gn_g`$다. Join 후에 행이 복제되면 합계가 부풀 수 있으므로 집계 단위가 주문인지, 품목인지, 센서 측정인지 먼저 정의한다.
 
 ## 실행과 검증
 
@@ -53,11 +53,11 @@ Keys identify rows and constraints reject invalid states. The account example us
 
 ### Index costs
 
-An index resembles a book's index. A balanced B-tree lookup is approximately $O(\log N)$, followed by the cost of reading $K$ matches. Real costs include pages, caching, duplicates and table lookups. Scanning all $N$ rows can be reasonable when most rows are needed. A composite `(region, time)` index orders by region, then time within a region. Eligibility depends on predicates, ordering, planner and version. Indexes consume space and add write maintenance, so more indexes do not automatically improve performance. A plan inspection and a representative timing measurement answer different questions. [SQLite indexes](https://www.sqlite.org/queryplanner.html)
+An index resembles a book's index. A balanced B-tree lookup is approximately $`O(\log N)`$, followed by the cost of reading $`K`$ matches. Real costs include pages, caching, duplicates and table lookups. Scanning all $`N`$ rows can be reasonable when most rows are needed. A composite `(region, time)` index orders by region, then time within a region. Eligibility depends on predicates, ordering, planner and version. Indexes consume space and add write maintenance, so more indexes do not automatically improve performance. A plan inspection and a representative timing measurement answer different questions. [SQLite indexes](https://www.sqlite.org/queryplanner.html)
 
 ### Atomic changes
 
-A transfer subtracts $d$ from one balance and adds it to another. The equations above independently establish total conservation. A failure between separate updates could violate that property. A transaction groups the changes for commit or rollback. Isolation specifies visibility between concurrent transactions; transactions alone do not establish every business invariant or eliminate every concurrency issue. [PostgreSQL transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html)
+A transfer subtracts $`d`$ from one balance and adds it to another. The equations above independently establish total conservation. A failure between separate updates could violate that property. A transaction groups the changes for commit or rollback. Isolation specifies visibility between concurrent transactions; transactions alone do not establish every business invariant or eliminate every concurrency issue. [PostgreSQL transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html)
 
 The linked `transfer` explicitly starts its own SQL `BEGIN`, performs a conditional debit and checks affected rows. It executes SQL `COMMIT` on success and SQL `ROLLBACK` after failures such as a missing recipient. Python's connection context manager does not open a new transaction, so the implementation does not depend on implicit transaction startup. [Python sqlite3 transaction control](https://docs.python.org/3.12/library/sqlite3.html#transaction-control)
 
@@ -65,9 +65,9 @@ The function requires `in_transaction=False` on entry and rejects an existing ca
 
 ### Aggregation semantics
 
-The SQL query implements $S_g=\sum_{i:region_i=g}a_i$. `WHERE` filters input rows; `HAVING` filters aggregate groups. `COUNT(*)` counts rows, whereas `COUNT(column)` counts non-NULL values. `SUM` and `AVG` generally exclude NULL input. PostgreSQL returns NULL for `SUM` over no rows; `COALESCE` can express a deliberate zero policy. A missing measurement is not automatically a measured zero. [PostgreSQL aggregates](https://www.postgresql.org/docs/current/functions-aggregate.html)
+The SQL query implements $`S_g=\sum_{i:region_i=g}a_i`$. `WHERE` filters input rows; `HAVING` filters aggregate groups. `COUNT(*)` counts rows, whereas `COUNT(column)` counts non-NULL values. `SUM` and `AVG` generally exclude NULL input. PostgreSQL returns NULL for `SUM` over no rows; `COALESCE` can express a deliberate zero policy. A missing measurement is not automatically a measured zero. [PostgreSQL aggregates](https://www.postgresql.org/docs/current/functions-aggregate.html)
 
-When groups have different sizes, the overall mean is $\sum_gn_gm_g/\sum_gn_g$, not the unweighted mean of group means. A join can duplicate input rows and inflate totals. Define whether the aggregation unit is an order, line item or sensor observation before interpreting results.
+When groups have different sizes, the overall mean is $`\sum_gn_gm_g/\sum_gn_g`$, not the unweighted mean of group means. A join can duplicate input rows and inflate totals. Define whether the aggregation unit is an order, line item or sensor observation before interpreting results.
 
 ### Implementation and checks
 

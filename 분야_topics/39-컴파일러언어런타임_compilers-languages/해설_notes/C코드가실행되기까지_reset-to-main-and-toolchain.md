@@ -39,11 +39,11 @@ Arm CMSIS의 Cortex-M 예에서는 벡터 테이블에 초기 MSP 값과 `Reset_
 
 ### 메모리 초기화의 작은 모델
 
-Flash 초기값의 시작을 $L$, RAM 목적지 시작을 $D$, 크기를 $N$이라 하면 복사는
+Flash 초기값의 시작을 $`L`$, RAM 목적지 시작을 $`D`$, 크기를 $`N`$이라 하면 복사는
 
 $$\mathrm{RAM}[D+i]\leftarrow\mathrm{Flash}[L+i],\quad0\le i<N$$
 
-이다. BSS는 별도의 $B,M$에 대해 $\mathrm{RAM}[B+j]\leftarrow0$으로 둔다. 모델의 불변조건은 모든 접근이 유효 범위 안에 있고, `.data`와 `.bss`가 겹치지 않으며, 지정한 영역 바깥은 변하지 않는 것이다. 복사·0 초기화 연산은 $O(N+M)$ 시간이다. 예제 함수는 RAM 전체 $R$바이트를 배열로 만드므로 전체 모델의 시간은 $O(R+N+M)$, 공간은 $O(R)$이다. 실제 시작 코드의 복사 루프는 별도 전체 배열을 만들 필요가 없다.
+이다. BSS는 별도의 $`B,M`$에 대해 $`\mathrm{RAM}[B+j]\leftarrow0`$으로 둔다. 모델의 불변조건은 모든 접근이 유효 범위 안에 있고, `.data`와 `.bss`가 겹치지 않으며, 지정한 영역 바깥은 변하지 않는 것이다. 복사·0 초기화 연산은 $`O(N+M)`$ 시간이다. 예제 함수는 RAM 전체 $`R`$바이트를 배열로 만드므로 전체 모델의 시간은 $`O(R+N+M)`$, 공간은 $`O(R)`$이다. 실제 시작 코드의 복사 루프는 별도 전체 배열을 만들 필요가 없다.
 
 `initialize_ram()`은 Flash 경계, RAM 경계, 음수 크기와 겹침을 먼저 검사한다. 테스트는 복사 결과와 BSS뿐 아니라 손대지 않아야 할 바이트도 확인한다. 크기 0과 마지막 주소 경계도 포함한다.
 
@@ -82,11 +82,11 @@ Before an ordinary C function executes, the stack and memory it uses must be rea
 
 ### A small initialization model
 
-For a Flash source $L$, RAM destination $D$, and length $N$, copying means
+For a Flash source $`L`$, RAM destination $`D`$, and length $`N`$, copying means
 
 $$\mathrm{RAM}[D+i]\leftarrow\mathrm{Flash}[L+i],\quad0\le i<N.$$
 
-For a separate BSS interval $B,M$, set $\mathrm{RAM}[B+j]\leftarrow0$. The model's invariants are valid address ranges, nonoverlapping data and BSS destinations, and unchanged bytes elsewhere. Copying and clearing take $O(N+M)$ time. Creating the observable $R$-byte RAM array makes the full model $O(R+N+M)$ time and $O(R)$ space; a real startup loop does not need a second whole-RAM array.
+For a separate BSS interval $`B,M`$, set $`\mathrm{RAM}[B+j]\leftarrow0`$. The model's invariants are valid address ranges, nonoverlapping data and BSS destinations, and unchanged bytes elsewhere. Copying and clearing take $`O(N+M)`$ time. Creating the observable $`R`$-byte RAM array makes the full model $`O(R+N+M)`$ time and $`O(R)`$ space; a real startup loop does not need a second whole-RAM array.
 
 `initialize_ram()` checks Flash and RAM bounds, negative sizes, and overlap before modifying the model. Tests check copied bytes, zeroed bytes, untouched bytes, empty intervals, and end boundaries.
 

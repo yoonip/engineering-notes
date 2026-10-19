@@ -6,17 +6,17 @@
 
 ### 빠르다는 말을 입력 크기로 바꾸기
 
-원소가 열 개일 때의 실행 시간만으로 큰 입력을 판단하기 어렵다. 시간복잡도는 입력 크기가 늘 때 필요한 연산량의 증가를 나타낸다. $O(n)$은 상수 배까지 포함한 점근적 상계이며 “항상 정확히 n번”이나 특정 초 단위를 뜻하지 않는다. 메모리, 상수 비용, 입력 분포와 최악 상황도 함께 본다.
+원소가 열 개일 때의 실행 시간만으로 큰 입력을 판단하기 어렵다. 시간복잡도는 입력 크기가 늘 때 필요한 연산량의 증가를 나타낸다. $`O(n)`$은 상수 배까지 포함한 점근적 상계이며 “항상 정확히 n번”이나 특정 초 단위를 뜻하지 않는다. 메모리, 상수 비용, 입력 분포와 최악 상황도 함께 본다.
 
-반복해서 최소값을 꺼낼 때마다 전체 목록을 탐색하면 누적 비용이 커진다. 이진 min-heap은 각 부모가 자식보다 크지 않다는 불변식을 유지한다. 최소 원소는 루트에 있지만 나머지 배열 전체가 정렬된 것은 아니다. 삽입과 최소값 제거는 $O(\log n)$, 이미 있는 배열의 `heapify`는 $O(n)$이다. [Python heapq](https://docs.python.org/3/library/heapq.html)
+반복해서 최소값을 꺼낼 때마다 전체 목록을 탐색하면 누적 비용이 커진다. 이진 min-heap은 각 부모가 자식보다 크지 않다는 불변식을 유지한다. 최소 원소는 루트에 있지만 나머지 배열 전체가 정렬된 것은 아니다. 삽입과 최소값 제거는 $`O(\log n)`$, 이미 있는 배열의 `heapify`는 $`O(n)`$이다. [Python heapq](https://docs.python.org/3/library/heapq.html)
 
 ### Dijkstra가 성립하는 전제
 
-시작점 $s$에서 각 정점까지의 거리 추정 $d[v]$를 두고, 간선 $(u,v)$를 통해 $d[u]+w(u,v)$가 더 작으면 갱신한다. 이를 relaxation이라고 한다. Dijkstra는 남은 추정 중 최소인 정점을 먼저 확정한다. 모든 간선 가중치가 음이 아니어야 이 확정 규칙을 사용할 수 있다. [MIT 6.006 Lecture 16](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/6277a1f06100c26a7ff21031af6757b5_MIT6_006F11_lec16.pdf)
+시작점 $`s`$에서 각 정점까지의 거리 추정 $`d[v]`$를 두고, 간선 $`(u,v)`$를 통해 $`d[u]+w(u,v)`$가 더 작으면 갱신한다. 이를 relaxation이라고 한다. Dijkstra는 남은 추정 중 최소인 정점을 먼저 확정한다. 모든 간선 가중치가 음이 아니어야 이 확정 규칙을 사용할 수 있다. [MIT 6.006 Lecture 16](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/6277a1f06100c26a7ff21031af6757b5_MIT6_006F11_lec16.pdf)
 
 직관은 “앞으로 가면서 비용을 되돌려 받지 않는다”는 것이다. 아직 확정하지 않은 정점을 거쳐 더 짧아지려면 그 경로의 첫 미확정 정점에 이미 더 작은 후보가 있어야 한다. 최소 후보를 먼저 선택했다는 사실과 모순된다. 음수 간선이 있으면 나중에 비용을 크게 줄일 수 있어 이 논리가 깨진다. 0 가중치는 허용된다.
 
-간선 가중치가 모두 같으면 BFS가 더 간단할 수 있다. 음수 가중치에는 조건에 맞는 다른 알고리즘이 필요하다. 조밀한 그래프에서는 배열 기반 $O(V^2)$ 구현도 합리적일 수 있으므로 heap이 언제나 더 빠르다는 규칙은 없다.
+간선 가중치가 모두 같으면 BFS가 더 간단할 수 있다. 음수 가중치에는 조건에 맞는 다른 알고리즘이 필요하다. 조밀한 그래프에서는 배열 기반 $`O(V^2)`$ 구현도 합리적일 수 있으므로 heap이 언제나 더 빠르다는 규칙은 없다.
 
 ### 오래된 후보를 어떻게 처리할까
 
@@ -24,7 +24,7 @@
 
 이 버전은 음이 아닌 정수 가중치를 요구한다. Python 정수는 고정 폭 정수 overflow 문제를 피하지만 무한한 자원을 쓰는 것은 아니다. 실수 가중치를 허용하려면 NaN·무한대·반올림과 비교 규칙을 다시 정해야 한다. 도달 불가능한 정점은 무한대로 남으며, 그래프 전체의 입력 검증은 시작점에서 닿지 않는 음수 간선도 거부한다.
 
-lazy heap에는 정점당 하나보다 많은 후보가 쌓일 수 있다. 거리의 덧셈·비교를 상수 비용으로 세는 모형에서 일반적인 상계는 시간 $O((V+E)\log(V+E+1))$, 보조 공간 $O(V+E)$다. 매우 큰 정수의 실제 연산 비용은 자릿수에도 달려 있다. 인덱스 heap의 decrease-key 구현과 복잡도·메모리 조건이 다르다.
+lazy heap에는 정점당 하나보다 많은 후보가 쌓일 수 있다. 거리의 덧셈·비교를 상수 비용으로 세는 모형에서 일반적인 상계는 시간 $`O((V+E)\log(V+E+1))`$, 보조 공간 $`O(V+E)`$다. 매우 큰 정수의 실제 연산 비용은 자릿수에도 달려 있다. 인덱스 heap의 decrease-key 구현과 복잡도·메모리 조건이 다르다.
 
 ### 검증은 다른 계산 경로로
 
@@ -34,15 +34,15 @@ lazy heap에는 정점당 하나보다 많은 후보가 쌓일 수 있다. 거�
 
 ### Express speed through input growth
 
-A run on ten elements says little about much larger inputs. Complexity describes growth in operations; $O(n)$ is an asymptotic upper bound, not exactly n operations or a number of seconds. Memory, constants, distributions, and worst cases still matter.
+A run on ten elements says little about much larger inputs. Complexity describes growth in operations; $`O(n)`$ is an asymptotic upper bound, not exactly n operations or a number of seconds. Memory, constants, distributions, and worst cases still matter.
 
-A min-heap maintains parents no greater than children. Its root is minimal, but its array is not fully sorted. Insert and remove-min take $O(\log n)$, while `heapify` takes $O(n)$. Repeated full scans to find minima can therefore be avoidable. [heapq](https://docs.python.org/3/library/heapq.html)
+A min-heap maintains parents no greater than children. Its root is minimal, but its array is not fully sorted. Insert and remove-min take $`O(\log n)`$, while `heapify` takes $`O(n)`$. Repeated full scans to find minima can therefore be avoidable. [heapq](https://docs.python.org/3/library/heapq.html)
 
 ### Why Dijkstra requires nonnegative costs
 
-Relaxation improves $d[v]$ through a candidate $d[u]+w(u,v)$. Dijkstra repeatedly finalizes the minimum remaining estimate. Nonnegative edge weights make that rule valid. A supposedly shorter route through an unfinalized vertex would have required a smaller frontier candidate already, contradicting the choice of the minimum. Negative edges break the argument by allowing later cost reductions; zero weights are valid. [MIT lecture notes](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/6277a1f06100c26a7ff21031af6757b5_MIT6_006F11_lec16.pdf)
+Relaxation improves $`d[v]`$ through a candidate $`d[u]+w(u,v)`$. Dijkstra repeatedly finalizes the minimum remaining estimate. Nonnegative edge weights make that rule valid. A supposedly shorter route through an unfinalized vertex would have required a smaller frontier candidate already, contradicting the choice of the minimum. Negative edges break the argument by allowing later cost reductions; zero weights are valid. [MIT lecture notes](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/6277a1f06100c26a7ff21031af6757b5_MIT6_006F11_lec16.pdf)
 
-Equal-cost edges may allow simpler BFS. Negative weights require a suitable different algorithm. Dense graphs can favor an array-based $O(V^2)$ implementation, so a heap is not universally faster.
+Equal-cost edges may allow simpler BFS. Negative weights require a suitable different algorithm. Dense graphs can favor an array-based $`O(V^2)`$ implementation, so a heap is not universally faster.
 
 ### Handle stale candidates explicitly
 
@@ -50,7 +50,7 @@ The implementation pushes a new heap entry after an improvement and skips an ent
 
 This version accepts only nonnegative integer weights. Python integers avoid fixed-width overflow but still consume finite resources. Floating weights need a separate NaN, infinity, rounding, and comparison policy. Unreachable vertices retain infinity; validation also rejects negative edges outside the reachable component.
 
-A lazy heap can hold several entries per vertex. Counting distance arithmetic and comparisons as constant-cost operations gives $O((V+E)\log(V+E+1))$ time and $O(V+E)$ auxiliary space. Actual operations on very large integers also depend on digit count. These bounds differ from indexed decrease-key heaps.
+A lazy heap can hold several entries per vertex. Counting distance arithmetic and comparisons as constant-cost operations gives $`O((V+E)\log(V+E+1))`$ time and $`O(V+E)`$ auxiliary space. Actual operations on very large integers also depend on digit count. These bounds differ from indexed decrease-key heaps.
 
 ### Independent verification
 

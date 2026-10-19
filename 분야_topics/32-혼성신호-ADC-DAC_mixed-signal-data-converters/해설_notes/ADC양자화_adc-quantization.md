@@ -16,7 +16,7 @@
 
 ## 구간, 코드, 복원값
 
-입력 범위를 $[V_{min},V_{max}]$ [V], 비트 수를 $N$이라 두자. 코드 개수는 $L=2^N$, 이상적인 구간 폭은
+입력 범위를 $`[V_{min},V_{max}]`$ [V], 비트 수를 $`N`$이라 두자. 코드 개수는 $`L=2^N`$, 이상적인 구간 폭은
 
 $$
 \Delta=\frac{V_{max}-V_{min}}{2^N}\quad[\mathrm V].
@@ -25,11 +25,11 @@ $$
 여기서는 구간 중앙을 복원값으로 쓰는 mid-rise 모델을 정한다.
 
 $$
-c=\operatorname{clip}\!\left(\left\lfloor\frac{x-V_{min}}{\Delta}\right\rfloor,0,L-1\right),\qquad
+c=\mathrm{clip}\!\left(\left\lfloor\frac{x-V_{min}}{\Delta}\right\rfloor,0,L-1\right),\qquad
 \hat{x}=V_{min}+(c+1/2)\Delta.
 $$
 
-범위 안에서는 $|\hat{x}-x|\le\Delta/2$다. 범위를 넘는 입력은 최하위·최상위 코드로 포화되며 이 오차 경계가 더 이상 성립하지 않는다. 실제 부품의 첫·마지막 코드 전이와 출력 형식은 데이터시트가 기준이다. 위 식은 모든 ADC의 transfer curve를 대신하는 규격이 아니다.
+범위 안에서는 $`\vert \hat{x}-x\vert \le\Delta/2`$다. 범위를 넘는 입력은 최하위·최상위 코드로 포화되며 이 오차 경계가 더 이상 성립하지 않는다. 실제 부품의 첫·마지막 코드 전이와 출력 형식은 데이터시트가 기준이다. 위 식은 모든 ADC의 transfer curve를 대신하는 규격이 아니다.
 
 | 예시 | 값 |
 | --- | --- |
@@ -38,15 +38,15 @@ $$
 | 이상적인 구간 폭 | 약 0.806 mV |
 | 구간 내 최대 양자화 오차 | 약 0.403 mV |
 
-## $6.02N+1.76$은 어디서 나오는가
+## $`6.02N+1.76`$은 어디서 나오는가
 
-양자화 오차 $e$를 $[-\Delta/2,\Delta/2]$의 균일 분포로 근사하면 평균은 0이고
+양자화 오차 $`e`$를 $`[-\Delta/2,\Delta/2]`$의 균일 분포로 근사하면 평균은 0이고
 
 $$
 \sigma_e^2=\frac{1}{\Delta}\int_{-\Delta/2}^{\Delta/2}e^2\,de=\frac{\Delta^2}{12}.
 $$
 
-전체 입력 폭을 $V_{pp}=2^N\Delta$라 하면 full-scale 정현파의 AC RMS는 $V_{pp}/(2\sqrt2)$다. 따라서
+전체 입력 폭을 $`V_{pp}=2^N\Delta`$라 하면 full-scale 정현파의 AC RMS는 $`V_{pp}/(2\sqrt2)`$다. 따라서
 
 $$
 \mathrm{SNR}_{dB}=20\log_{10}\frac{V_{pp}/(2\sqrt2)}{\Delta/\sqrt{12}}
@@ -68,7 +68,7 @@ print(code, restored, restored - 1.0)
 print(ideal_snr_db(12))
 ```
 
-검사는 범위의 양 끝·모든 코드 구간·포화를 확인하고, 균일한 구간 중점 표본으로 $\Delta^2/12$ 적분을 독립적으로 근사한다. 4 bit, 구간당 200개 표본에서는 상대 오차 $3\times10^{-5}$ 이하를 기준으로 삼는다. 별도로 12 bit의 이상적인 SNR이 약 74.008 dB인지 확인한다. [실행 방법](../../../예제_examples/공학기초_foundations/README.md).
+검사는 범위의 양 끝·모든 코드 구간·포화를 확인하고, 균일한 구간 중점 표본으로 $`\Delta^2/12`$ 적분을 독립적으로 근사한다. 4 bit, 구간당 200개 표본에서는 상대 오차 $`3\times10^{-5}`$ 이하를 기준으로 삼는다. 별도로 12 bit의 이상적인 SNR이 약 74.008 dB인지 확인한다. [실행 방법](../../../예제_examples/공학기초_foundations/README.md).
 
 실제 장치 검증에서는 DC sweep으로 전이·offset·gain·INL/DNL을, 동적 입력으로 SNR·SINAD·왜곡을 평가한다. 기준원과 신호 발생기, 입력 구동기, clock, FFT의 대역·window·coherence가 결과에 영향을 준다. 비트 수 하나만으로 이 성능을 보장하지 않는다.
 
@@ -80,22 +80,22 @@ Finer ruler marks improve resolution but cannot fix a bent ruler or a wrong zero
 
 ### Model and derivation
 
-For an input span $[V_{min},V_{max}]$ [V] and $N$ bits, $L=2^N$ and $\Delta=(V_{max}-V_{min})/2^N$. Our mid-rise model uses
+For an input span $`[V_{min},V_{max}]`$ [V] and $`N`$ bits, $`L=2^N`$ and $`\Delta=(V_{max}-V_{min})/2^N`$. Our mid-rise model uses
 
 $$
-c=\operatorname{clip}\!\left(\left\lfloor\frac{x-V_{min}}{\Delta}\right\rfloor,0,L-1\right),\qquad
+c=\mathrm{clip}\!\left(\left\lfloor\frac{x-V_{min}}{\Delta}\right\rfloor,0,L-1\right),\qquad
 \hat{x}=V_{min}+(c+1/2)\Delta.
 $$
 
-Inside the range, $|\hat{x}-x|\le\Delta/2$. Clipped out-of-range inputs do not satisfy that bound. Actual endpoint transitions and output formats belong to the device datasheet. At 12 bits over 0–3.3 V, the ideal step is about 0.806 mV and the in-range error bound about 0.403 mV.
+Inside the range, $`\vert \hat{x}-x\vert \le\Delta/2`$. Clipped out-of-range inputs do not satisfy that bound. Actual endpoint transitions and output formats belong to the device datasheet. At 12 bits over 0–3.3 V, the ideal step is about 0.806 mV and the in-range error bound about 0.403 mV.
 
-Approximating error as uniform on $[-\Delta/2,\Delta/2]$ gives
+Approximating error as uniform on $`[-\Delta/2,\Delta/2]`$ gives
 
 $$
 E[e]=0,\qquad E[e^2]=\frac1\Delta\int_{-\Delta/2}^{\Delta/2}e^2de=\Delta^2/12.
 $$
 
-A full-scale sinusoid has AC RMS $V_{pp}/(2\sqrt2)$ where $V_{pp}=2^N\Delta$. Its ideal SNR is
+A full-scale sinusoid has AC RMS $`V_{pp}/(2\sqrt2)`$ where $`V_{pp}=2^N\Delta`$. Its ideal SNR is
 
 $$
 20\log_{10}\frac{V_{pp}/(2\sqrt2)}{\Delta/\sqrt{12}}
@@ -108,7 +108,7 @@ This assumes ideal quantization, a full-scale sinusoid, and noise integrated ove
 
 The [implementation](../../../예제_examples/공학기초_foundations/signals_ai/models.py) converts one input using a constant number of arithmetic operations for a 1–24-bit teaching model. It is not an ADC driver. The example above prints its code, reconstructed voltage, error, and ideal SNR.
 
-Tests check endpoints, code intervals, clipping, and a numerical second-moment integration. A 4-bit quantizer with 200 midpoint samples per interval must match $\Delta^2/12$ within $3\times10^{-5}$ relative error; the 12-bit SNR is approximately 74.008 dB. See [execution instructions](../../../예제_examples/공학기초_foundations/README.md).
+Tests check endpoints, code intervals, clipping, and a numerical second-moment integration. A 4-bit quantizer with 200 midpoint samples per interval must match $`\Delta^2/12`$ within $`3\times10^{-5}`$ relative error; the 12-bit SNR is approximately 74.008 dB. See [execution instructions](../../../예제_examples/공학기초_foundations/README.md).
 
 Physical characterization instead uses DC sweeps for transitions, offset, gain and INL/DNL, plus dynamic tests for SNR, SINAD and distortion. The reference source, signal generator, driver, clock, FFT bandwidth, window and coherence affect those results. Code resolution alone does not guarantee them.
 

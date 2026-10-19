@@ -23,19 +23,19 @@ CRC가 붙은 메시지를 바꾼 뒤 CRC를 다시 계산하는 데는 비밀�
 
 ### 오류 정정 능력은 거리로 생각할 수 있다
 
-길이가 같은 두 비트열에서 다른 위치의 수를 Hamming distance라 한다. 코드워드 사이 최소 거리가 $d_{\min}$이면, 서로 다른 코드워드가 섞이지 않게 반지름 $t$의 오류 영역을 나누려면
+길이가 같은 두 비트열에서 다른 위치의 수를 Hamming distance라 한다. 코드워드 사이 최소 거리가 $`d_{\min}`$이면, 서로 다른 코드워드가 섞이지 않게 반지름 $`t`$의 오류 영역을 나누려면
 
 $$2t<d_{\min}$$
 
-이어야 한다. 따라서 최소 거리 $2t+1$ 이상인 코드는 그 범위에서 $t$개 비트 오류의 유일 정정을 보장할 수 있다. $d_{\min}-1$개 이하 오류는 다른 코드워드로 곧바로 바뀔 수 없어 검출할 수 있다. 이는 고정 길이 비트 오류 모델의 수학적 조건이며, 실제 decoder가 어떤 정정·검출 정책을 구현하는지는 별도 문제다. burst 오류, 지워진 위치를 아는 erasure, 하드웨어 고장 모델도 구분한다.
+이어야 한다. 따라서 최소 거리 $`2t+1`$ 이상인 코드는 그 범위에서 $`t`$개 비트 오류의 유일 정정을 보장할 수 있다. $`d_{\min}-1`$개 이하 오류는 다른 코드워드로 곧바로 바뀔 수 없어 검출할 수 있다. 이는 고정 길이 비트 오류 모델의 수학적 조건이며, 실제 decoder가 어떤 정정·검출 정책을 구현하는지는 별도 문제다. burst 오류, 지워진 위치를 아는 erasure, 하드웨어 고장 모델도 구분한다.
 
 ### HMAC은 비밀 키로 메시지를 묶는다
 
 HMAC은 hash를 단순히 `hash(key + message)`로 쓰지 않고 다음 구조로 결합한다.
 
-$$\operatorname{HMAC}(K,m)=H\bigl((K'\oplus opad)\,\|\,H((K'\oplus ipad)\,\|\,m)\bigr).$$
+$$\mathrm{HMAC}(K,m)=H\bigl((K'\oplus opad)\,\Vert \,H((K'\oplus ipad)\,\Vert \,m)\bigr).$$
 
-$K'$는 hash block 크기에 맞춰 처리한 키, $\|$는 바이트 연결이다. HMAC-SHA-256은 32바이트 tag를 만들 수 있다. 구조와 규칙은 RFC2104, SHA-256을 사용하는 검증 벡터는 RFC4231에서 확인할 수 있다. 여기서는 검증된 표준 라이브러리를 사용한다. [RFC2104 §2](https://www.rfc-editor.org/rfc/rfc2104.html), [RFC4231 §4](https://www.rfc-editor.org/rfc/rfc4231.html)
+$`K'`$는 hash block 크기에 맞춰 처리한 키, $`\Vert `$는 바이트 연결이다. HMAC-SHA-256은 32바이트 tag를 만들 수 있다. 구조와 규칙은 RFC2104, SHA-256을 사용하는 검증 벡터는 RFC4231에서 확인할 수 있다. 여기서는 검증된 표준 라이브러리를 사용한다. [RFC2104 §2](https://www.rfc-editor.org/rfc/rfc2104.html), [RFC4231 §4](https://www.rfc-editor.org/rfc/rfc4231.html)
 
 메시지에 장치 식별자, 동작, sequence 등을 모호하지 않게 인코딩하고 tag에 포함하면 다른 맥락으로 바꾸는 것을 제한할 수 있다. 그러나 과거의 정상 메시지와 tag를 그대로 다시 보내면 MAC 검증은 다시 성공한다. 재전송 방지는 sequence·nonce와 수신 측 상태, 재부팅·롤오버 규칙까지 설계해야 한다. MAC이 맞더라도 해당 동작의 범위와 권한 검사를 통과해야 실행한다.
 
@@ -53,7 +53,7 @@ $K'$는 hash block 크기에 맞춰 처리한 키, $\|$는 바이트 연결이�
 
 `verify_tag()`는 `hmac.digest(..., sha256)`와 `compare_digest()`를 사용한다. 이 예제는 32바이트 이상 키를 입력 정책으로 요구한다. 이는 모든 HMAC 구현의 최소 키 길이를 정의한 것이 아니며, 길이가 충분해도 예측 가능한 값이면 안전한 비밀 키가 아니다. 테스트에 등장하는 반복 바이트 키는 공개 검증 벡터다.
 
-검증은 RFC4231 case 6의 tag와 비교하고, 메시지 변경·다른 키·잘린 tag의 거부를 확인한다. 같은 정상 메시지는 두 번째에도 통과하는 것을 테스트해 재전송 방지의 별도 필요성을 보여 준다. 해시 연산은 메시지 길이에 대해 $O(N)$이며 실제 서비스의 요청 크기도 제한해야 한다. 키 생성·저장·교체, fault injection과 side channel, secure boot 구현은 이 작은 함수의 검증 범위에 포함되지 않는다. [실행과 검증 범위](../../../예제_examples/공학기초_foundations/systems/README.md)
+검증은 RFC4231 case 6의 tag와 비교하고, 메시지 변경·다른 키·잘린 tag의 거부를 확인한다. 같은 정상 메시지는 두 번째에도 통과하는 것을 테스트해 재전송 방지의 별도 필요성을 보여 준다. 해시 연산은 메시지 길이에 대해 $`O(N)`$이며 실제 서비스의 요청 크기도 제한해야 한다. 키 생성·저장·교체, fault injection과 side channel, secure boot 구현은 이 작은 함수의 검증 범위에 포함되지 않는다. [실행과 검증 범위](../../../예제_examples/공학기초_foundations/systems/README.md)
 
 ## English
 
@@ -76,19 +76,19 @@ An adversary needs no secret to modify data and recalculate its CRC. A public ha
 
 ### Distance explains error-correction capability
 
-Hamming distance counts differing positions between equal-length bit strings. If codewords have minimum distance $d_{\min}$, nonoverlapping error neighborhoods of radius $t$ require
+Hamming distance counts differing positions between equal-length bit strings. If codewords have minimum distance $`d_{\min}`$, nonoverlapping error neighborhoods of radius $`t`$ require
 
 $$2t<d_{\min}.$$
 
-A code with minimum distance at least $2t+1$ can therefore guarantee unique correction of up to $t$ bit errors in that model. Up to $d_{\min}-1$ changed bits cannot directly turn one valid codeword into another and can be detected. Actual decoder policy is a separate implementation choice. Burst errors, erasures with known missing positions, and hardware fault models require their own treatment.
+A code with minimum distance at least $`2t+1`$ can therefore guarantee unique correction of up to $`t`$ bit errors in that model. Up to $`d_{\min}-1`$ changed bits cannot directly turn one valid codeword into another and can be detected. Actual decoder policy is a separate implementation choice. Burst errors, erasures with known missing positions, and hardware fault models require their own treatment.
 
 ### HMAC binds a message to a secret key
 
 HMAC does not simply compute `hash(key + message)`. Its construction is
 
-$$\operatorname{HMAC}(K,m)=H\bigl((K'\oplus opad)\,\|\,H((K'\oplus ipad)\,\|\,m)\bigr),$$
+$$\mathrm{HMAC}(K,m)=H\bigl((K'\oplus opad)\,\Vert \,H((K'\oplus ipad)\,\Vert \,m)\bigr),$$
 
-where $K'$ is the block-sized processed key and $\|$ denotes byte concatenation. HMAC-SHA-256 can produce a 32-byte tag. RFC2104 defines the construction; RFC4231 provides SHA-256 test vectors. The example uses the standard library rather than a new cryptographic implementation. [RFC2104 §2](https://www.rfc-editor.org/rfc/rfc2104.html), [RFC4231 §4](https://www.rfc-editor.org/rfc/rfc4231.html)
+where $`K'`$ is the block-sized processed key and $`\Vert `$ denotes byte concatenation. HMAC-SHA-256 can produce a 32-byte tag. RFC2104 defines the construction; RFC4231 provides SHA-256 test vectors. The example uses the standard library rather than a new cryptographic implementation. [RFC2104 §2](https://www.rfc-editor.org/rfc/rfc2104.html), [RFC4231 §4](https://www.rfc-editor.org/rfc/rfc4231.html)
 
 Unambiguously encoding device identity, operation, and sequence within authenticated data helps bind context. However, replaying an unchanged valid message and tag still passes MAC verification. Replay defense needs sequence or nonce tracking, receiver state, and reboot and rollover rules. A valid MAC does not remove action-specific authorization and range checks.
 
@@ -102,7 +102,7 @@ Firmware updates also need recovery from interruption and damage. NIST SP800-193
 
 `verify_tag()` uses `hmac.digest(..., sha256)` and `compare_digest()`. This example's input policy requires at least 32 key bytes; it does not define a universal HMAC minimum. Sufficient length does not make predictable bytes a safe secret. Repeated-byte keys in tests are public verification vectors.
 
-Tests compare RFC4231 case 6 and reject altered messages, a different key, and a truncated tag. They deliberately confirm that a valid message passes again, exposing the separate replay-defense requirement. Hashing is $O(N)$ in message length, so real services also need request-size limits. Key generation, storage and rotation, fault injection, side channels, and secure boot implementation are outside this small function's verification scope. [Commands and scope](../../../예제_examples/공학기초_foundations/systems/README.md)
+Tests compare RFC4231 case 6 and reject altered messages, a different key, and a truncated tag. They deliberately confirm that a valid message passes again, exposing the separate replay-defense requirement. Hashing is $`O(N)`$ in message length, so real services also need request-size limits. Key generation, storage and rotation, fault injection, side channels, and secure boot implementation are outside this small function's verification scope. [Commands and scope](../../../예제_examples/공학기초_foundations/systems/README.md)
 
 ## 출처와 교차 확인 / Sources and cross-check
 
