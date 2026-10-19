@@ -24,6 +24,13 @@ PN, MOS, BJT, CMOS, FinFET, GAA, SOI, SiC/GaN, BSIM, SRAM/DRAM/NAND, TCAD
 
 - [MIT OCW — Microelectronic Devices and Circuits](https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계](notes/mos-electrostatics-switching.md)
+
 ## English
 
 Semiconductor behavior depends on energy bands, electron and hole concentrations, mobility, and electric fields. Doping controls carrier concentration, and a PN junction forms a depletion region and a potential barrier.
@@ -39,3 +46,10 @@ FinFET and GAA structures improve gate control over the channel. SOI forms devic
 ### Device models and process variation
 
 PVT describes process, voltage, and temperature variation. Compact models such as BSIM calculate device behavior in circuit simulators. TCAD analyzes process and device physics more directly. Model parameters and extracted layout parasitics can change the performance of the same circuit topology.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [MOS electrostatics and switching](notes/mos-electrostatics-switching.md#english)

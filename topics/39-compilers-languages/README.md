@@ -23,6 +23,13 @@ LLVM, MLIR, GCC, Clang, Rust, Go, Java/JVM, CPython, Julia, Tcl, SKILL
 - [LLVM documentation](https://llvm.org/docs/)
 - [GCC language standards](https://gcc.gnu.org/onlinedocs/gcc/Standards.html)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [C 코드가 실행되기까지: 컴파일, 링크, 리셋과 main](notes/reset-to-main-and-toolchain.md)
+
 ## English
 
 ### Compilers, languages, and runtimes
@@ -38,3 +45,10 @@ An abstract syntax tree represents source syntax. An intermediate representation
 Clang is a frontend for C-family languages. LLVM provides IR, optimization, and code-generation infrastructure, while MLIR supports representations at multiple abstraction levels. GCC supports many languages and target architectures. Interpreters, JIT compilation, and AOT compilation differ in when and how translation takes place; runtimes can combine them.
 
 The JVM, CPython, and Julia runtimes provide object, memory, and execution models. At an FFI boundary, the ABI, type sizes, calling conventions, and object lifetimes must agree across languages. Tcl and SKILL scripts in EDA also depend on their tools' runtimes and APIs.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [From reset to main: ABI, ELF and linking](notes/reset-to-main-and-toolchain.md#english)

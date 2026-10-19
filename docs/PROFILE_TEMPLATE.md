@@ -6,7 +6,13 @@
 
 저전력 AI 연산, SRAM, DRAM-PIM과 FPGA 계측 자동화 연구에 참여했습니다. AI 모델의 에너지 효율, 메모리 구조와 회로·시스템의 동작을 다룹니다.
 
-[연구·프로젝트·학술 활동](https://github.com/yoonip/engineering-notes/blob/main/research/README.md) · [engineering-notes](https://github.com/yoonip/engineering-notes) · [분야별 목차](https://github.com/yoonip/engineering-notes/blob/main/CATALOG.md)
+## 공학과 지식 공유
+
+사람의 시간은 유한하지만, 지식은 다음 세대로 이어지며 더 나아질 수 있습니다. 제가 이해한 원리와 검증한 방법을 누구나 다시 살펴보고 활용할 수 있는 형태로 남기려 합니다. 결과만 보여주기보다 그 결과에 이른 근거와 조건을 함께 기록하는 이유입니다.
+
+공학은 사람의 삶에 도움이 되어야 한다고 생각합니다. 장애로 인한 일상의 불편을 줄이고, 에너지를 더 효율적으로 쓰며, 환경과 지속가능성을 지키는 기술에 가치를 둡니다. 한국의 과학기술과 산업 경쟁력에 보탬이 되는 일도 그 연장선에 있습니다. 이 기록이 지금의 동료와 독자는 물론, 훗날 제 아이와 조카를 비롯한 다음 세대가 배우고 발전시키는 데 작은 기반이 되기를 바랍니다.
+
+[연구·프로젝트·학술 활동](https://github.com/yoonip/engineering-notes/blob/main/research/README.md) · [engineering-notes](https://github.com/yoonip/engineering-notes) · [분야별 목차](https://github.com/yoonip/engineering-notes/blob/main/CATALOG.md) · [기초 개념·모델·검증](https://github.com/yoonip/engineering-notes/blob/main/docs/FOUNDATIONS.md)
 
 ## 참여 연구
 
@@ -121,7 +127,13 @@ I am Yoon IlPyung. My research experience spans low-power AI hardware, memory, a
 
 I have taken part in research on low-power AI computation, SRAM, DRAM-PIM, and FPGA-based measurement automation. These projects address the energy efficiency of AI models, memory architectures, and circuit and system operation.
 
-[Research, Projects, and Publications](https://github.com/yoonip/engineering-notes/blob/main/research/README.md) · [engineering-notes](https://github.com/yoonip/engineering-notes) · [Topic Index](https://github.com/yoonip/engineering-notes/blob/main/CATALOG.md)
+### Engineering and shared knowledge
+
+Our time is finite, but knowledge can pass to the next generation and continue to improve. I want to leave the principles I understand and the methods I have checked in a form that others can examine and use. That is why I document the reasoning and conditions behind a result as well as the result itself.
+
+I believe engineering should improve people's lives. I value technology that reduces everyday barriers associated with disability, uses energy more efficiently, and supports the environment and sustainability. Contributing to Korea's scientific progress and industrial competitiveness is part of that purpose. I hope these records can provide a small foundation for today's colleagues and readers, and for future generations—including my children and nieces or nephews—to learn from and build upon.
+
+[Research, Projects, and Publications](https://github.com/yoonip/engineering-notes/blob/main/research/README.md) · [engineering-notes](https://github.com/yoonip/engineering-notes) · [Topic Index](https://github.com/yoonip/engineering-notes/blob/main/CATALOG.md) · [Foundations, models and verification](https://github.com/yoonip/engineering-notes/blob/main/docs/FOUNDATIONS.md#english)
 
 ### Research Participation
 

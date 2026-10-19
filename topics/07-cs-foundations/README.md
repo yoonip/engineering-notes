@@ -25,6 +25,13 @@ Linux, xv6, OSTEP topics, Networking, TCP/IP, Filesystems, Databases, Compilers,
 - [Linux Kernel documentation](https://docs.kernel.org/)
 - [LLVM documentation](https://llvm.org/docs/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [같은 주소, 다른 메모리: 프로세스·가상 메모리·동시성](notes/processes-memory-concurrency.md)
+
 ## English
 
 Program behavior depends on data structures, the operating system, memory, and I/O as well as the algorithm itself. Two implementations with the same asymptotic complexity can perform differently because of memory access patterns and their execution environments.
@@ -40,3 +47,10 @@ A process has its own address space, while threads within a process share memory
 ### Storage, communication, and builds
 
 A filesystem maps names and directories to stored data. A database adds query processing, concurrent access, and transactions. TCP provides an ordered byte stream, so an application must define its own message boundaries. Compilers translate source, and linkers combine object files and libraries. Linux and xv6 provide source code for studying how operating systems are built.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Processes, virtual memory and concurrency](notes/processes-memory-concurrency.md#english)

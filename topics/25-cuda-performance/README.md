@@ -24,6 +24,13 @@ CUDA, cuBLAS, cuDNN, CUTLASS, Triton, Nsight, ROCm/HIP, SYCL/oneAPI, OpenCL, Met
 
 - [CUDA Programming Guide](https://docs.nvidia.com/cuda/cuda-programming-guide/index.html)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [계산이 느린가, 데이터를 기다리는가: Roofline과 병렬화](notes/roofline-and-parallel-limits.md)
+
 ## English
 
 CUDA is a platform for writing and running parallel programs on NVIDIA GPUs. A CUDA C++ kernel executes across threads; threads form blocks, and blocks form a grid. CUDA support depends on the target GPU.
@@ -39,3 +46,10 @@ cuBLAS provides linear algebra, cuDNN neural-network operations, and CUTLASS com
 Nsight Systems shows a system-wide execution timeline, while Nsight Compute analyzes individual kernels. GPU work is asynchronous, so CPU call duration alone may miss the actual computation time. CUDA events or appropriate synchronization are used to measure completed GPU work.
 
 The driver, CUDA Toolkit, and a framework's bundled runtime are separate components. TensorRT optimizes inference. ROCm and HIP support the AMD GPU ecosystem; SYCL, oneAPI, OpenCL, and Metal cover other heterogeneous-computing environments. OpenMP and OpenACC also express accelerated computation.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Roofline and parallel performance limits](notes/roofline-and-parallel-limits.md#english)

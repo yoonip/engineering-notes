@@ -22,6 +22,13 @@ BERT, T5, GPT, Whisper, wav2vec, CLIP, LLaVA, Transformers, torchaudio, Sentence
 
 - [Hugging Face documentation](https://huggingface.co/docs)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [Attention: 필요한 정보를 가중합으로 모으기](notes/attention-from-equations.md)
+
 ## English
 
 ### Language, speech, and multimodal AI
@@ -37,3 +44,10 @@ BERT learns contextual representations, T5 uses a text-to-text formulation, and 
 CLIP aligns image and text representations. LLaVA models illustrate ways to combine visual information with language models. Multimodal systems process images, audio, video, and text, including their alignment in time and space. Fluency and accurate grounding in the input are separate evaluation targets.
 
 For Korean, English, and other languages, tokenizer efficiency, register and honorifics, cultural context, terminology, and translation direction affect results. Questions with the same meaning do not necessarily have the same length or difficulty in every language.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Attention from equations to implementation](notes/attention-from-equations.md#english)

@@ -40,6 +40,13 @@ Verilog, SystemVerilog, VHDL, Verilog-A/AMS, Chisel, SpinalHDL, Amaranth, HLS
 
 - [Verilator documentation](https://verilator.org/guide/latest/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [FSM과 FIFO: 요청과 실제 전송을 구분하기](notes/synchronous-fifo-invariants.md)
+
 ## English
 
 A hardware description language expresses circuit structure and behavior. Multiple circuit blocks operate concurrently. RTL describes data movement between registers through combinational logic, and synthesis maps that description into a logic circuit.
@@ -55,3 +62,10 @@ The counter above uses a synchronous active-low reset. It clears on a rising clo
 An FSM describes states and transition conditions. Pipelining divides computation into clocked stages, and a FIFO absorbs differences in producer and consumer rates. Clock-domain crossing involves both metastability and data consistency. For fixed-point arithmetic, width, signedness, binary-point position, and overflow handling affect numerical accuracy.
 
 VHDL is another HDL. Chisel, SpinalHDL, and Amaranth build hardware using other host languages, while HLS generates hardware structures from higher-level programs.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Synchronous FIFO state and invariants](notes/synchronous-fifo-invariants.md#english)

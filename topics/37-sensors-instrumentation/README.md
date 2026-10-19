@@ -22,6 +22,13 @@ SCPI, PyVISA, Sigrok, PulseView, LabVIEW, NI DAQ, Oscilloscope, VNA
 
 - [PyVISA documentation](https://pyvisa.readthedocs.io/en/latest/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [계측: 숫자를 읽는 것에서 믿을 수 있는 결과로](notes/measurement-loading-uncertainty.md)
+
 ## English
 
 ### Sensors and instrumentation
@@ -37,3 +44,10 @@ An analog front end amplifies and filters a sensor signal before conversion. Bri
 A DMM measures quantities such as voltage, current, and resistance. An oscilloscope shows waveforms over time, a VNA measures network behavior, and a logic analyzer captures digital states. A probe's bandwidth, input impedance, and grounding arrangement can affect the circuit being measured.
 
 SCPI defines instrument commands. VISA and PyVISA provide instrument communication, while LabVIEW and NI-DAQ support measurement and data acquisition. Instrument settings, settling time, units, and timestamps give automated measurements their meaning. Calibration and measurement uncertainty describe the confidence associated with a value.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Measurement, probe loading and uncertainty](notes/measurement-loading-uncertainty.md#english)

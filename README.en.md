@@ -2,6 +2,14 @@
 
 Technical notes on electronics, computer engineering, and AI by [yoonip](https://github.com/yoonip). The collection connects circuits and semiconductors with RTL, firmware, systems software, GPU computing, and AI. It includes technical explanations, equations translated into code, and implementation results. Explanations appear in Korean followed by English; code comments are in Korean, and technical names retain their usual spelling.
 
+## Engineering and shared knowledge
+
+Our time is finite, but knowledge can pass to the next generation and continue to improve. I want to leave the principles I understand and the methods I have checked in a form that others can examine and use. That is why I document the reasoning and conditions behind a result as well as the result itself.
+
+I believe engineering should improve people's lives. I value technology that reduces everyday barriers associated with disability, uses energy more efficiently, and supports the environment and sustainability. Contributing to Korea's scientific progress and industrial competitiveness is part of that purpose. I hope these records can provide a small foundation for today's colleagues and readers, and for future generations—including my children and nieces or nephews—to learn from and build upon.
+
+[Foundations: concepts, derivations, models, and verification](docs/FOUNDATIONS.md#english)
+
 ## Contents
 
 - [Linux & Bash](topics/01-linux-bash/README.md)
@@ -59,6 +67,7 @@ Technical notes on electronics, computer engineering, and AI by [yoonip](https:/
 - [Mobile, Cross-Platform & Device Integration](topics/53-mobile-crossplatform/README.md)
 - [Research Frontiers](topics/54-research-frontiers/README.md)
 - [Applications, Resumes & Assessment Experiences](topics/55-applications-assessments/README.md)
+- [Physics Foundations](topics/56-physics-foundations/README.md)
 
 ## Author
 

@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-19",
+  "articles": [
+    {
+      "path": "topics/04-c-cpp-python/notes/numbers-and-quantization.md",
+      "title": "비트에서 수까지: 정수, 부동소수점, 고정소수점",
+      "reference_urls": [
+        "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/integers-int/int32-c/",
+        "https://docs.oracle.com/cd/E19957-01/806-3568/ncg_math.html",
+        "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf"
+      ]
+    },
+    {
+      "path": "topics/06-math-to-code/notes/differential-equations-numerics.md",
+      "title": "미분방정식에서 수치해로 | From differential equations to numerical solutions",
+      "reference_urls": [
+        "https://math.mit.edu/icg/resources/notes330.pdf",
+        "https://www.math.iit.edu/~fass/478578_Chapter_4.pdf"
+      ]
+    },
+    {
+      "path": "topics/06-math-to-code/notes/linear-algebra-least-squares.md",
+      "title": "선형대수와 최소제곱 | Linear algebra and least squares",
+      "reference_urls": [
+        "https://ee263.stanford.edu/archive/ls.pdf",
+        "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/4d876a9159e32543eb0d73b4d4382f4c_MIT18_06S10ZoomNotes.pdf",
+        "https://www.math.kent.edu/~reichel/courses/intr.num.comp.1/fall13/lecture6/lecture6.pdf"
+      ]
+    },
+    {
+      "path": "topics/06-math-to-code/notes/probability-estimation.md",
+      "title": "확률, 평균, 추정의 불확실성 | Probability, means, and uncertainty in estimation",
+      "reference_urls": [
+        "https://itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
+        "https://math.pku.edu.cn/teachers/litj/notes/numer_anal/AmerStat_37_242_Chan_Variance.pdf",
+        "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_statistics.pdf",
+        "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+        "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty"
+      ]
+    },
+    {
+      "path": "topics/06-math-to-code/notes/units-dimensional-analysis-uncertainty.md",
+      "title": "단위, 차원, 측정 불확도 | Units, dimensions, and measurement uncertainty",
+      "reference_urls": [
+        "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/mit8_01scs22_chapter2.pdf",
+        "https://www.bipm.org/en/publications/si-brochure",
+        "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty"
+      ]
+    },
+    {
+      "path": "topics/07-cs-foundations/notes/processes-memory-concurrency.md",
+      "title": "같은 주소, 다른 메모리: 프로세스·가상 메모리·동시성",
+      "reference_urls": [
+        "https://docs.kernel.org/core-api/wrappers/memory-barriers.html",
+        "https://pdos.csail.mit.edu/6.1810/2023/xv6/book-riscv-rev3.pdf",
+        "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf"
+      ]
+    },
+    {
+      "path": "topics/09-circuits-electronics/notes/rc-rlc-response.md",
+      "title": "RC·RLC: 회로 법칙에서 시간·주파수 응답까지",
+      "reference_urls": [
+        "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/34dd2fd3821b725a8b2191558673296b_6002_l15.pdf",
+        "https://www.ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/035929616dc2553a2fee2aa787a96652_MIT18_03SCF11_s20_1text.pdf"
+      ]
+    },
+    {
+      "path": "topics/10-semiconductors/notes/mos-electrostatics-switching.md",
+      "title": "MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계",
+      "reference_urls": [
+        "https://rfic.eecs.berkeley.edu/courses/ee240sp06/pdf/lect3.pdf",
+        "https://web.mit.edu/6.012/www/SP07-L8.pdf",
+        "https://web.mit.edu/6.012/www/SP07-L9.pdf"
+      ]
+    },
+    {
+      "path": "topics/13-verilog-systemverilog/notes/synchronous-fifo-invariants.md",
+      "title": "FSM과 FIFO: 요청과 실제 전송을 구분하기",
+      "reference_urls": [
+        "https://docs.amd.com/r/en-US/pg327-emb-fifo-gen/Independent-Clocks-Block-RAM-and-Distributed-RAM",
+        "https://docs.amd.com/r/en-US/pg327-emb-fifo-gen/Read-Operation",
+        "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2009/13f0393a7c56840b8d15efb89f84fe65_MIT6_004s09_lec06.pdf"
+      ]
+    },
+    {
+      "path": "topics/17-firmware-rtos/notes/mmio-interrupt-dma.md",
+      "title": "CPU와 장치가 같은 데이터를 다룰 때: MMIO, 인터럽트, DMA",
+      "reference_urls": [
+        "https://docs.espressif.com/projects/esp-idf/en/v5.5.5/esp32p4/api-reference/system/mm_sync.html",
+        "https://docs.kernel.org/core-api/dma-api-howto.html",
+        "https://docs.kernel.org/core-api/wrappers/memory-barriers.html",
+        "https://docs.kernel.org/process/volatile-considered-harmful.html",
+        "https://www.st.com/resource/en/application_note/DM00272913-.pdf"
+      ]
+    },
+    {
+      "path": "topics/20-interfaces-communications/notes/framing-uart-crc.md",
+      "title": "바이트가 메시지가 되려면: UART, 프레이밍과 CRC",
+      "reference_urls": [
+        "https://software-dl.ti.com/C2000/docs/C2000_driverlib_api_guide/f28p65x/build/html/modules/uart.html",
+        "https://www.rfc-editor.org/rfc/rfc1662.html"
+      ]
+    },
+    {
+      "path": "topics/21-signals-control/notes/feedback-discrete-model.md",
+      "title": "피드백 제어: 오차를 줄이는 힘에도 한계가 있다",
+      "reference_urls": [
+        "https://courses.grainger.illinois.edu/ece486/sp2025/documentation/handbook/lec21.html",
+        "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/25129dabd19249e15c1df8034335aafa_MIT16_30F10_lec20.pdf"
+      ]
+    },
+    {
+      "path": "topics/21-signals-control/notes/sampling-aliasing.md",
+      "title": "샘플링과 aliasing: 숫자로 바꾼 뒤에는 되돌릴 수 없는 정보",
+      "reference_urls": [
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/8708ec068ebdea2c4ee2f38fad39fb83_MITRES_6_007S11_lec16.pdf",
+        "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-16-sampling/",
+        "https://www.ti.com/video/5831231183001"
+      ]
+    },
+    {
+      "path": "topics/23-ai-machine-learning/notes/gradients-and-learning.md",
+      "title": "미분에서 학습까지: 모델이 바뀌는 이유",
+      "reference_urls": [
+        "https://cs231n.github.io/neural-networks-3/",
+        "https://cs231n.github.io/optimization-2/",
+        "https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes03-neuralnets.pdf"
+      ]
+    },
+    {
+      "path": "topics/25-cuda-performance/notes/roofline-and-parallel-limits.md",
+      "title": "계산이 느린가, 데이터를 기다리는가: Roofline과 병렬화",
+      "reference_urls": [
+        "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html",
+        "https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#roofline-charts",
+        "https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial",
+        "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-134.html"
+      ]
+    },
+    {
+      "path": "topics/29-electromagnetics-rf/notes/transmission-lines-reflections.md",
+      "title": "전송선과 반사: 배선도 신호를 저장하고 전달한다",
+      "reference_urls": [
+        "https://www.analog.com/en/resources/technical-articles/interfacing-highspeed-signals.html",
+        "https://www.ti.com/lit/an/snla027b/snla027b.pdf"
+      ]
+    },
+    {
+      "path": "topics/32-mixed-signal-data-converters/notes/adc-quantization.md",
+      "title": "ADC 양자화: 비트 수와 정확도를 구분하기",
+      "reference_urls": [
+        "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf",
+        "https://www.ti.com/document-viewer/lit/html/SSZT554/GUID-5FCFDA62-4CDD-403A-969C-EB377113CA8A"
+      ]
+    },
+    {
+      "path": "topics/33-memory-storage/notes/locality-cache-amat.md",
+      "title": "메모리 지역성과 캐시: 평균 지연과 대역폭을 나눠 보기",
+      "reference_urls": [
+        "https://developer.nvidia.com/blog/unlock-gpu-performance-global-memory-access-in-cuda/",
+        "https://www.cs.cmu.edu/afs/cs/academic/class/15213-s25/www/lectures/10-cache-memories.pdf",
+        "https://www.cs.cmu.edu/afs/cs/academic/class/15740-f19/www/lectures/02-03-memory-hierarchy.pdf"
+      ]
+    },
+    {
+      "path": "topics/37-sensors-instrumentation/notes/measurement-loading-uncertainty.md",
+      "title": "계측: 숫자를 읽는 것에서 믿을 수 있는 결과로",
+      "reference_urls": [
+        "https://download.tek.com/document/LCHR_E-Handbook_071712.pdf",
+        "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-5-combined-standard-uncertainty",
+        "https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty",
+        "https://www.tek.com/en/documents/product-article/keithley-low-level-measurements-handbook---7th-edition",
+        "https://www.tek.com/en/documents/whitepaper/abcs-probes-primer"
+      ]
+    },
+    {
+      "path": "topics/38-security-cryptography/notes/security-and-reliability-boundaries.md",
+      "title": "오류를 찾는 것과 공격을 막는 것: 신뢰성·보안의 경계",
+      "reference_urls": [
+        "https://csrc.nist.gov/pubs/sp/800/193/final",
+        "https://www.rfc-editor.org/rfc/rfc2104.html",
+        "https://www.rfc-editor.org/rfc/rfc4231.html"
+      ]
+    },
+    {
+      "path": "topics/39-compilers-languages/notes/reset-to-main-and-toolchain.md",
+      "title": "C 코드가 실행되기까지: 컴파일, 링크, 리셋과 main",
+      "reference_urls": [
+        "https://github.com/ARM-software/CMSIS_6/blob/main/CMSIS/Documentation/Doxygen/Core/src/core_startup_c.md",
+        "https://github.com/ARM-software/abi-aa/blob/main/aapcs32/aapcs32.rst",
+        "https://sourceware.org/binutils/docs/ld/Output-Section-LMA.html"
+      ]
+    },
+    {
+      "path": "topics/44-language-speech-multimodal/notes/attention-from-equations.md",
+      "title": "Attention: 필요한 정보를 가중합으로 모으기",
+      "reference_urls": [
+        "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf",
+        "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/slides/cs224n-2021-lecture09-transformers.pdf"
+      ]
+    },
+    {
+      "path": "topics/56-physics-foundations/notes/heat-diffusion.md",
+      "title": "열전도와 확산 | Heat conduction and diffusion",
+      "reference_urls": [
+        "https://mbd.pages.rwth-aachen.de/courses/cmm/content/script/chapters/heatequation.html",
+        "https://mude.citg.tudelft.nl/book/2025/numerical_methods_for_PDEs/diffusion_equation.html",
+        "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node116.html",
+        "https://www.damtp.cam.ac.uk/user/hf323/M21-II-NA/demos/pde_stability/pde_stability.html"
+      ]
+    },
+    {
+      "path": "topics/56-physics-foundations/notes/mechanics-energy-oscillation.md",
+      "title": "역학, 에너지, 진동 | Mechanics, energy, and oscillation",
+      "reference_urls": [
+        "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/mit8_01scs22_chapter23.pdf",
+        "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion",
+        "https://openstax.org/books/university-physics-volume-1/pages/15-2-energy-in-simple-harmonic-motion"
+      ]
+    }
+  ]
+}

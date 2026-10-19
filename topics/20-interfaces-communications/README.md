@@ -23,6 +23,13 @@ UART, SPI, I2C, I3C, CAN/CAN-FD, USB, Ethernet, PCIe, MIPI, DDR, AXI/AHB/APB, MQ
 - [Arm documentation](https://developer.arm.com/documentation)
 - [Zephyr introduction](https://docs.zephyrproject.org/latest/introduction/index.html)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [바이트가 메시지가 되려면: UART, 프레이밍과 CRC](notes/framing-uart-crc.md)
+
 ## English
 
 An interface defines electrical signals, topology, timing, and data format. Exchanging the same bytes still requires compatible voltage levels and clock conditions.
@@ -36,3 +43,10 @@ UART provides asynchronous serial communication. SPI uses clock and data lines f
 Ethernet provides wired link-layer communication, with the TCP/IP protocol family building communication above it. Wi-Fi, BLE, Zigbee, and LoRa differ in range, power, data rate, and network structure. MQTT and Modbus are application protocols for exchanging device data.
 
 AXI, AHB, and APB connect components inside an SoC. PCIe is a high-speed serial link, DDR is a memory interface, and MIPI covers a family of interfaces including display and camera links. Bandwidth measures data transferred per unit time; latency measures time from a request to its result. Protocol overhead and flow control make useful throughput different from nominal link speed.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [UART framing and CRC](notes/framing-uart-crc.md#english)

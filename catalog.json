@@ -1240,6 +1240,30 @@
       ],
       "summary_ko": "자료구조·알고리즘 설명과 문제 풀이 기록은 [알고리즘과 코딩테스트](../08-problem-solving/README.md)에 정리한다.",
       "summary_en": "Data structures, algorithms, and problem-solving records are collected in [Algorithms and coding tests](../08-problem-solving/README.md)."
+    },
+    {
+      "number": 56,
+      "slug": "56-physics-foundations",
+      "title": "물리 기초",
+      "english_title": "Physics Foundations",
+      "sections": [
+        "힘과 에너지",
+        "진동과 상태 모델",
+        "열전도와 확산"
+      ],
+      "english_sections": [
+        "Force and energy",
+        "Oscillation and state models",
+        "Heat conduction and diffusion"
+      ],
+      "keywords": "Mechanics, Energy, Oscillation, Heat Conduction, Diffusion, Conservation Laws",
+      "path": "topics/56-physics-foundations/README.md",
+      "references": [
+        "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
+        "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node116.html"
+      ],
+      "summary_ko": "힘과 에너지 보존에서 출발해 진동과 열전도를 모델링한다. 초기·경계조건을 정하고 해석해, 시간 간격과 격자 수렴으로 계산을 확인한다.",
+      "summary_en": "Models oscillation and heat conduction from force and energy balances, specifying initial and boundary conditions and checking calculations with analytical solutions and time/grid refinement."
     }
   ],
   "providers": [

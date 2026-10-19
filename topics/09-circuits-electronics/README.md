@@ -22,6 +22,13 @@ RLC, Op-Amp, BJT, MOSFET, CMOS, Filters, Oscillators, Regulators, SPICE, Breadbo
 
 - [MIT OCW — Circuits and Electronics](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [RC·RLC: 회로 법칙에서 시간·주파수 응답까지](notes/rc-rlc-response.md)
+
 ## English
 
 A circuit models the relationships between voltage, current, and charge through devices and their connections. Kirchhoff's current law expresses charge conservation at a node, and the voltage law describes the voltage relationship around a closed path in a circuit model. High-frequency and distributed circuits also involve propagation delay and electromagnetic fields.
@@ -35,3 +42,10 @@ Resistors dissipate power, capacitors store energy in electric fields, and induc
 A diode has a nonlinear current-voltage characteristic. BJT and MOSFET operation depends on bias, allowing current control, amplification, and switching. An op-amp circuit's closed-loop behavior depends on feedback and the device's gain, bandwidth, and output range. Idealized models help explain operation, while device limits determine the available operating range.
 
 Filters select frequency components. Oscillators use supplied energy to sustain periodic signals, and regulators maintain a supply as input and load conditions change. Component tolerances, noise, parasitics, and ground paths can strongly affect performance even when they are absent from the schematic.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [RC/RLC laws and response](notes/rc-rlc-response.md#english)

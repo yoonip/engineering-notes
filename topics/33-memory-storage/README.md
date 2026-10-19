@@ -22,6 +22,13 @@ SRAM, DRAM, NAND, DDR, LPDDR, GDDR, HBM, NVMe, fio, CXL
 
 - [fio documentation](https://fio.readthedocs.io/en/latest/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [메모리 지역성과 캐시: 평균 지연과 대역폭을 나눠 보기](notes/locality-cache-amat.md)
+
 ## English
 
 ### Memory and storage
@@ -37,3 +44,10 @@ SRAM stores state in latch-based circuits. DRAM stores charge in capacitors and 
 NVMe is a protocol for nonvolatile storage devices. An SSD's flash translation layer maps logical addresses to physical flash locations and manages work such as garbage collection and wear leveling. ECC detects and corrects errors. Even a high-bandwidth device can be limited by latency and queue depth when handling small random requests.
 
 fio generates and measures storage I/O workloads. Read versus write, sequential versus random access, block size, and cache conditions all affect the meaning of a result. CXL extends this topic to device and memory interconnects with coherency features.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Locality, cache and average memory access time](notes/locality-cache-amat.md#english)

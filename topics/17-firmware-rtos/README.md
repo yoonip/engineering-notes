@@ -47,6 +47,13 @@ RTOS는 작업을 task로 나누고 우선순위에 따라 실행을 관리한�
 
 `volatile`은 외부에서 값이 바뀔 수 있는 대상에 대한 접근이 최적화로 제거되거나 이전 값으로 대체되는 것을 제한한다. 원자성, 실행 흐름 사이의 동기화와 DMA·캐시 일관성은 별도로 다룬다.
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [CPU와 장치가 같은 데이터를 다룰 때: MMIO, 인터럽트, DMA](notes/mmio-interrupt-dma.md)
+
 ## English
 
 Firmware controls device startup, peripherals, communication, and operating state. Bare-metal code runs without an operating system. An RTOS provides execution services such as task scheduling and synchronization.
@@ -78,3 +85,10 @@ An interrupt diverts CPU execution to a handler. DMA moves data between peripher
 In the ESP32 example, a UART receive loop parses commands and sends them to a queue. A worker task performs memory checks and computes an arithmetic signature before returning the result. Repeated requests with the same sequence number use a cached response, and a mutex protects output. The [Espressif FreeRTOS documentation](https://docs.espressif.com/projects/esp-idf/en/v5.1/esp32/api-guides/freertos-smp.html) describes its execution environment.
 
 `volatile` constrains optimizations that could remove accesses or reuse an earlier value for an object that can change externally. Atomicity, synchronization, and DMA/cache coherence require separate mechanisms.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [MMIO, interrupts, DMA and cache ownership](notes/mmio-interrupt-dma.md#english)

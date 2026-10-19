@@ -22,6 +22,14 @@ FFT, FIR/IIR, PID, State Space, LQR/LQG, MPC, Kalman/EKF/UKF, System Identificat
 
 - [SciPy documentation](https://docs.scipy.org/doc/scipy/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [피드백 제어: 오차를 줄이는 힘에도 한계가 있다](notes/feedback-discrete-model.md)
+- [샘플링과 aliasing: 숫자로 바꾼 뒤에는 되돌릴 수 없는 정보](notes/sampling-aliasing.md)
+
 ## English
 
 Signal processing transforms, filters, and analyzes observations. Control chooses system inputs to produce desired behavior. Sensor signals connect these fields through state estimation and feedback.
@@ -35,3 +43,11 @@ Sampling a continuous signal at fixed intervals produces a discrete-time signal.
 FIR filters have a finite impulse response; IIR filters use recursive feedback. PID combines present error, accumulated error, and rate of change. Integration can reduce steady-state error but may cause windup under saturation. The derivative term is sensitive to high-frequency noise.
 
 A state-space model relates internal states, inputs, and outputs. LQR minimizes a quadratic cost, while MPC optimizes over a future horizon with constraints. A Kalman filter combines model and observation uncertainty; EKF and UKF extend this approach to nonlinear systems. System identification estimates a model from measurements.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Feedback and discrete-time models](notes/feedback-discrete-model.md#english)
+- [Sampling and aliasing](notes/sampling-aliasing.md#english)

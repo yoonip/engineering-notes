@@ -23,6 +23,13 @@ TLS, AES, RSA, ECC, Secure Boot, TrustZone, TPM, Sanitizers, Fuzzing, CodeQL
 - [OpenSSL documentation](https://docs.openssl.org/)
 - [Linux Kernel documentation](https://docs.kernel.org/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [오류를 찾는 것과 공격을 막는 것: 신뢰성·보안의 경계](notes/security-and-reliability-boundaries.md)
+
 ## English
 
 ### Security, cryptography, and hardware trust
@@ -38,3 +45,10 @@ Symmetric ciphers such as AES protect data with a shared secret key. RSA and ell
 Secure boot checks the trustworthiness of code before execution. A secure update process combines signature verification, version policy, and recovery from failure. TrustZone separates security states; TPM hardware supports keys and measurements of trust. Authentication establishes identity, while authorization determines permitted actions.
 
 Out-of-bounds accesses, use-after-free, and race conditions can become implementation vulnerabilities. Sanitizers detect errors during execution, static analysis checks code without running it, and fuzzing explores behavior across varied inputs. CodeQL is another code-analysis tool. Power consumption, timing, and electromagnetic emissions can expose information through side channels outside the software interface.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Security and reliability boundaries](notes/security-and-reliability-boundaries.md#english)

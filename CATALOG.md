@@ -2,7 +2,11 @@
 
 회로와 소자에서 시스템·소프트웨어·AI로 이어지는 개념을 정리했다. 각 문서에서 기본 원리와 활용처를 설명하고, 관련 도구와 참고 자료를 함께 정리했다.
 
+[기초 개념·수식 유도·모델·검증 24편](docs/FOUNDATIONS.md)
+
 ## 개발 환경과 기초
+
+- [물리 기초](topics/56-physics-foundations/README.md) — 힘과 에너지 · 진동 · 열전도와 확산
 
 - [Linux & Bash](topics/01-linux-bash/README.md) — 터미널, 셸, Bash · 파일과 권한 · 프로세스와 개발 환경
 - [Git & Development Tools](topics/02-git-development-tools/README.md) — 작업에서 공유까지 · 편집, 빌드, 실행 환경
@@ -84,6 +88,10 @@
 [AI 기업과 모델](model-lab/PROVIDERS.md) · [코드 예제](examples/README.md) · [English overview](README.en.md)
 
 ## English
+
+[24 foundational articles: concepts, derivations, models and verification](docs/FOUNDATIONS.md#english)
+
+- [Physics Foundations](topics/56-physics-foundations/README.md#english) — Force, energy, oscillation and heat diffusion
 
 Concepts connecting circuits and semiconductor devices with systems, software, and AI. Each document explains the principles and applications, with related tools and references.
 

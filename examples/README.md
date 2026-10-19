@@ -1,6 +1,6 @@
 # 코드 예제
 
-개념 설명에 사용한 짧은 예제를 모았다.
+개념 설명에 사용한 짧은 예제를 모았다. [기초 모델과 자동 검증](foundations/README.md)은 수학·물리, 회로·하드웨어, 펌웨어·시스템, 신호·제어·AI의 참조 구현을 연결한다.
 
 | 파일 | 내용 | 실행 환경 |
 |---|---|---|
@@ -34,7 +34,7 @@ Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)�
 
 ## English
 
-Short executable examples accompany the concept notes.
+Short executable examples accompany the concept notes. [Foundation models and automated checks](foundations/README.md#english) connect mathematics, physics, circuits, hardware, firmware, systems, signals, control and AI.
 
 | File | Content | Runtime |
 | --- | --- | --- |

@@ -63,6 +63,13 @@ C, C++, Python, Rust, Go, Java, C#, JavaScript/TypeScript, Julia, R, Tcl, Lua, A
 - [GCC language standards](https://gcc.gnu.org/onlinedocs/gcc/Standards.html)
 - [Python Tutorial](https://docs.python.org/3/tutorial/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [비트에서 수까지: 정수, 부동소수점, 고정소수점](notes/numbers-and-quantization.md)
+
 ## English
 
 C gives direct control over data representation and memory access. It is widely used in MCU firmware, operating systems, drivers, and communication libraries. C++ adds tools such as classes, templates, and the standard library for structuring larger programs. Python offers concise control flow and convenient connections to analysis libraries.
@@ -84,3 +91,10 @@ RAII ties resource lifetime to object lifetime. An object that owns a file or me
 Python expresses the same calculation as `sum(values) / len(values)`. Large numerical workloads often run through libraries such as NumPy and PyTorch, whose implementations include C, C++, and GPU code. ctypes, CFFI, and pybind11 connect these language boundaries.
 
 Rust uses ownership and borrowing for memory safety; Go is common in services and concurrent programs. Java and C# have managed runtimes and broad application ecosystems, JavaScript and TypeScript are central to web development, and Julia targets numerical computing. Tcl and SKILL appear in EDA automation, while Assembly exposes instructions and calling conventions directly.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Integer, floating-point and fixed-point representation](notes/numbers-and-quantization.md#english)

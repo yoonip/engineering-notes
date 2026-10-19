@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "python": "3.12.14",
+  "scope_ko": "기초 참조 모델의 계산 검증. 실제 장치 측정과 GPU benchmark는 별도 범위다.",
+  "scope_en": "Foundational reference-model verification; physical measurements and GPU benchmarks are separate.",
+  "groups": [
+    {
+      "group": "math_physics",
+      "tests": 24,
+      "passed": true
+    },
+    {
+      "group": "circuits_hardware",
+      "tests": 15,
+      "passed": true
+    },
+    {
+      "group": "systems",
+      "tests": 19,
+      "passed": true
+    },
+    {
+      "group": "signals_ai",
+      "tests": 18,
+      "passed": true
+    }
+  ],
+  "total_tests": 76,
+  "passed": true
+}

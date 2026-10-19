@@ -22,6 +22,13 @@ HFSS, CST, ADS, AWR, Sonnet, openEMS, scikit-rf, VNA, Spectrum Analyzer
 
 - [scikit-rf documentation](https://scikit-rf.readthedocs.io/en/latest/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [전송선과 반사: 배선도 신호를 저장하고 전달한다](notes/transmission-lines-reflections.md)
+
 ## English
 
 ### Electromagnetics, RF, and antennas
@@ -37,3 +44,10 @@ A mismatch between a transmission line's characteristic impedance and its load i
 An LNA amplifies received signals while adding little noise. A mixer translates frequencies, and VCOs and PLLs generate and control frequency and phase. Antenna gain, radiation pattern, bandwidth, and efficiency describe different properties. Noise figure and linearity matter when weak signals coexist with strong interferers.
 
 HFSS, CST, Sonnet, and openEMS support electromagnetic analysis. ADS and AWR support RF circuit and system design, while scikit-rf handles RF data in Python. A VNA measures network S-parameters; a spectrum analyzer shows signal components across frequency.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Transmission lines and reflections](notes/transmission-lines-reflections.md#english)

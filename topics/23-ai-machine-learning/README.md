@@ -50,6 +50,13 @@ PyTorch, TensorFlow/Keras, JAX, scikit-learn, XGBoost, LightGBM, CatBoost, Huggi
 - [PyTorch — Learn the Basics](https://docs.pytorch.org/tutorials/beginner/basics/intro.html)
 - [TensorFlow Guide](https://www.tensorflow.org/guide)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [미분에서 학습까지: 모델이 바뀌는 이유](notes/gradients-and-learning.md)
+
 ## English
 
 Machine learning learns relationships between inputs and outputs or structure within data. Supervised learning uses labeled data, unsupervised learning studies distributions and structure, and reinforcement learning concerns actions, rewards, and changing state. Deep learning learns representations through multilayer neural networks.
@@ -69,3 +76,10 @@ PyTorch, TensorFlow, Keras, and JAX provide tensor computation and model trainin
 For `y=x²`, the derivative is `dy/dx=2x`. The PyTorch example above calculates a gradient of 6 at `x=3` using `requires_grad`, `backward()`, and `x.grad`. The TensorFlow example obtains the same result using `GradientTape`, which records the operations required for differentiation.
 
 These examples compute a local derivative of a scalar function. Neural-network training calculates gradients for many parameters and passes them to an optimizer.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Gradients, backpropagation and learning](notes/gradients-and-learning.md#english)

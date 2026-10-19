@@ -22,6 +22,13 @@ SAR ADC, Delta-Sigma, DAC, PLL, DLL, CDR, Spectre, Verilog-AMS
 
 - [Analog Devices technical resources](https://www.analog.com/en/resources.html)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [ADC 양자화: 비트 수와 정확도를 구분하기](notes/adc-quantization.md)
+
 ## English
 
 ### Mixed-signal circuits, ADCs, DACs, and clocks
@@ -39,3 +46,10 @@ SAR conversion uses comparisons and binary search. Pipeline ADCs use multiple st
 INL and DNL describe static transfer nonlinearity. SNDR and SFDR describe noise, distortion, and spectral components. ENOB expresses SNDR as an equivalent ideal bit count. PLLs, DLLs, and CDR circuits control clock frequency, phase, and data timing. Jitter describes timing variation, while phase noise describes phase fluctuations in the frequency domain.
 
 Related technologies include SAR and delta-sigma ADCs, DACs, PLLs, DLLs, CDR, Spectre, and Verilog-AMS.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [ADC quantization and resolution](notes/adc-quantization.md#english)

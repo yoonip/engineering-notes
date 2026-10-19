@@ -36,6 +36,16 @@ Calculus, Linear Algebra, Probability, Statistics, ODE/PDE, Numerical Analysis, 
 - [NumPy documentation](https://numpy.org/doc/)
 - [SciPy documentation](https://docs.scipy.org/doc/scipy/)
 
+
+## 개념·유도·모델·검증
+
+[기초부터 읽기](../../docs/FOUNDATIONS.md)
+
+- [미분방정식에서 수치해로](notes/differential-equations-numerics.md)
+- [선형대수와 최소제곱](notes/linear-algebra-least-squares.md)
+- [확률, 평균, 추정의 불확실성](notes/probability-estimation.md)
+- [단위, 차원, 측정 불확도](notes/units-dimensional-analysis-uncertainty.md)
+
 ## English
 
 Turning an equation into code starts with the meaning, units, and valid range of its variables. Implementation also depends on whether the model uses continuous or sampled time, and whether computation uses floating-point or fixed-point values.
@@ -49,3 +59,13 @@ An RC charging circuit follows `dv/dt = (Vin - v)/(RC)`. Forward Euler estimates
 Floating-point numbers use a finite number of bits. Subtracting values that are close together can lose significant digits, and repeated accumulation introduces rounding error. A linear system `Ax=b` is usually solved with a factorization-based method rather than by forming an explicit inverse.
 
 Linear algebra supports coordinate transforms, least squares, and neural-network operations. Calculus describes rates of change and optimization; probability and statistics describe noise and estimation. Graph theory handles connections and paths, while information-theoretic entropy quantifies uncertainty in a probability distribution. Discretization, precision, and boundary conditions connect these mathematical models to executable calculations.
+
+
+### Concepts, derivations, models, and verification
+
+[Foundations reading guide](../../docs/FOUNDATIONS.md#english)
+
+- [Differential equations and numerical methods](notes/differential-equations-numerics.md#english)
+- [Linear algebra and least squares](notes/linear-algebra-least-squares.md#english)
+- [Probability and estimation](notes/probability-estimation.md#english)
+- [Units, dimensional analysis and uncertainty](notes/units-dimensional-analysis-uncertainty.md#english)
