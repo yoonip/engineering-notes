@@ -1,5 +1,7 @@
 # 윤일평 | Yoon IlPyung
 
+[한국어](#윤일평--yoon-ilpyung) · [English](#english)
+
 저전력 AI 하드웨어와 메모리·연산 구조 연구에 참여해 온 윤일평입니다. 국민대학교 지능형반도체 및 디스플레이 전공으로 석사 학위를 취득했으며, ISL에서 연구했습니다.
 
 주요 참여 연구는 저전력 AI 연산, SRAM, DRAM-PIM과 FPGA 계측 자동화입니다. AI 모델의 에너지 효율, 메모리 구조와 회로·시스템의 동작을 다룹니다.
@@ -113,8 +115,117 @@ TOEIC Speaking IH (Intermediate High)
 
 연구·개발 협업, 기술 교류 및 채용 제안: [dlfvud777@naver.com](mailto:dlfvud777@naver.com)
 
-## About
+## English
 
-I have participated in research on low-power AI hardware, memory circuits, and hardware validation. I hold a master's degree in Intelligent Semiconductors and Displays from Kookmin University and participated in research at ISL. Research topics include low-power AI computation, SRAM, DRAM-PIM, neural-network energy modeling, and FPGA-based measurement systems.
+I am Yoon IlPyung. My research experience spans low-power AI hardware, memory, and computing architectures. I hold a master's degree in Intelligent Semiconductors and Displays from Kookmin University and conducted research at ISL.
 
-For research, engineering collaboration, and career opportunities: [dlfvud777@naver.com](mailto:dlfvud777@naver.com).
+The research I have participated in covers low-power AI computation, SRAM, DRAM-PIM, and FPGA-based measurement automation. These projects address the energy efficiency of AI models, memory architectures, and circuit and system operation.
+
+[Research, Projects, and Publications](https://github.com/yoonip/engineering-notes/blob/main/research/README.md) · [engineering-notes](https://github.com/yoonip/engineering-notes) · [Topic Index](https://github.com/yoonip/engineering-notes/blob/main/CATALOG.md)
+
+### Research Participation
+
+| Topic | Project Overview |
+| --- | --- |
+| Low-power AI computation | Power and accuracy trade-offs associated with Bit-Drop and model quantization |
+| SRAM | 65nm 8KB SRAM, leakage reduction, PVT analysis, and physical verification |
+| DRAM-PIM | Energy bottlenecks in AI workloads and processing-in-memory architectures |
+| FPGA and measurement automation | Mixed-signal control and data acquisition through FPGA connections to ADCs and DACs |
+| Embedded and AI applications | Solar energy harvesting systems and T5-based Braille back-translation models |
+
+### National Research Foundation of Korea Project
+
+| Field | Details |
+| --- | --- |
+| Project title | Transformer DRAM-PiM Research |
+| Program | 2024 Research Grant Program for Master's Students |
+| Funding organization | National Research Foundation of Korea |
+| Project number | RS-2024-00395426 |
+| Total research period | July 1, 2024 – June 30, 2025 |
+| Affiliated institution | Kookmin University |
+
+### Technical Areas
+
+My technical work spans semiconductor circuits, digital hardware design, firmware, silicon validation, measurement automation, and AI model analysis.
+
+| Area | Technologies and Tools |
+| --- | --- |
+| Semiconductor and memory circuits | CMOS, SRAM, DRAM-PIM, AI accelerators, MAC, Adder Tree |
+| SRAM architecture | Bank, Sub-block, Bitcell Array, WL Driver, Decoder, MUX, Sense Amplifier |
+| Circuit design and simulation | Cadence Virtuoso, Spectre, Verilog-A, PVT analysis, SNM, DVS, RBB |
+| Layout and physical verification | Full-Chip Layout, Tape-out, TEG Layout, Calibre DRC/LVS, PEX, Assura |
+| Process and design environments | 45nm and 65nm PDKs, EDA and Ruledeck environments |
+| RTL design and verification | Verilog, SystemVerilog, FIFO, clock domains, cycle-level functional verification, Xcelium, QuestaSim |
+| Mixed-signal modeling | XMODEL, Glister, Modelzen |
+| FPGA and bring-up | Vivado, Opal Kelly XEM8320, Nexys 4 DDR, SYZYGY, FrontPanel API |
+| MCU and embedded platforms | STM32, ESP32, Arm Cortex-M, Raspberry Pi, Arduino, STM32CubeIDE, PlatformIO |
+| Hardware and firmware | MCU, embedded firmware, Linux drivers, power circuits, PCB, UART, SPI, GPIO, ADC/DAC, boot process, memory maps, interrupts, DMA, FreeRTOS |
+| Post-silicon validation | Silicon Bring-up, device characterization and parameter analysis, DC and pulse measurements, Probe-card Testing |
+| Measurement and test automation | Test vectors and sequences, Telemetry, Logging, data acquisition and visualization, Tkinter, Matplotlib |
+| System debugging | JTAG, SWD, ST-Link, OpenOCD, GDB, signal integrity and bus timing analysis |
+| Architecture and virtual labs | Arm, RISC-V, Renode, Spike, instruction-level execution, memory regression testing, fault injection |
+
+### Programming Languages and Development Environments
+
+| Area | Languages and Tools |
+| --- | --- |
+| Systems and embedded programming | C, C++ |
+| Analysis, automation, and numerical computing | Python, MATLAB, Bash |
+| AI and model analysis | PyTorch, TensorFlow, Hugging Face, CNN, LLM, T5, model quantization, energy modeling for memory, MAC, and KV Cache, memory-bound and compute-bound analysis |
+| Development and GPU environments | Linux (CentOS, Ubuntu), GPU servers, Jupyter Notebook, CUDA, cuDNN, Docker, Git |
+
+### Measurement Equipment
+
+| Category | Equipment |
+| --- | --- |
+| Semiconductor and device measurements | Keithley 4200A-SCS (SMU, high-speed PMU), HP 4155B |
+| Probing and temperature control | Vacuum probe station, probe card, Hot Chuck |
+| Waveform observation | Digital oscilloscope |
+| Digital signal analysis | Logic analyzer |
+
+### Publications and Technical Articles
+
+- 2025 · Comparative study of memory and computation energy in AI models — Electronics. [DOI](https://doi.org/10.3390/electronics14132718)
+- 2024 · Memristor crossbar mapping optimization — Information. [DOI](https://doi.org/10.3390/info15070409)
+- 2024 · Unconventional Computing Hardware Technologies — Special feature article in The Magazine of the IEIE. [Magazine contents](https://paper.cricit.kr/user/listview/ieie2018/gby_cmag.asp?dbcode=&organCode=ieie&organCode2=ieie04&seid=&step=4&usernum=0&yearmonth=202403)
+- 2022 · Design and operation of a self-powered Arduino system for solar energy harvesting — Journal of IKEEE. [DOI](https://doi.org/10.7471/ikeee.2022.26.3.483)
+
+### Awards
+
+| Year | Awarding Institution | Award |
+| --- | --- | --- |
+| 2025 | Kookmin University | Outstanding Talent Award |
+| 2024 | Institute of Korean Electrical and Electronics Engineers | Outstanding Journal Paper Award |
+| 2023 | Institute of Korean Electrical and Electronics Engineers | Outstanding Journal Paper Award |
+| 2022 | Center for Engineering Education Innovation, Kookmin University | Grand Prize, Prototype (Convergence) Category, KMU Capstone Design Competition |
+| 2022 | Center for Engineering Education Innovation, Kookmin University | Gold Prize, Intellectual Property Camp |
+| 2022 | Kookmin University | Silver Prize, Intellectual Property Category, Capstone Design Competition |
+
+### Education and Research Lab
+
+- Master's degree in Intelligent Semiconductors and Displays, Kookmin University
+- Bachelor's degree in Electronic Engineering, Kookmin University
+- ISL
+
+### Researcher Information
+
+| Field | Details |
+| --- | --- |
+| Name | Yoon IlPyung |
+| National Researcher Number (IRIS, Korea) | 12944496 |
+
+### English Proficiency
+
+TOEIC Speaking IH (Intermediate High)
+
+| Skill | Use |
+| --- | --- |
+| Reading | Reading English-language research papers, technical documentation, and current affairs articles |
+| Writing | Documenting research and technical experience in English |
+| Speaking | Communicating in English about everyday and work-related topics |
+
+### Notes and Contact
+
+In [engineering-notes](https://github.com/yoonip/engineering-notes), I document concepts, implementation methods, and code analysis across electronics, computer engineering, and AI. The repository also covers [AI companies and models](https://github.com/yoonip/engineering-notes/blob/main/model-lab/PROVIDERS.md), [algorithms and coding tests](https://github.com/yoonip/engineering-notes/tree/main/topics/08-problem-solving), and [applications, assessments, and interviews](https://github.com/yoonip/engineering-notes/tree/main/topics/55-applications-assessments).
+
+For research and development collaboration, technical exchange, and career opportunities: [dlfvud777@naver.com](mailto:dlfvud777@naver.com)
