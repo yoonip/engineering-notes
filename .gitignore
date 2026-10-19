@@ -1,0 +1,30 @@
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Build and generated outputs
+build/
+dist/
+*.o
+*.obj
+*.exe
+*.vcd
+*.fst
+
+# Model weights and local datasets
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+data/
+datasets/
