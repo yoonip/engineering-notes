@@ -4,6 +4,13 @@
 
 저전력 AI 연산, 메모리 회로, 신경망 에너지 모델링과 FPGA 계측 자동화 연구에 참여했다.
 
+## 연구자 정보
+
+| 항목 | 내용 |
+| --- | --- |
+| 이름 | 윤일평 |
+| 국가연구자번호(IRIS) | 12944496 |
+
 ## 주요 연구와 프로젝트
 
 ### 저전력 인공신경망 연산
@@ -20,7 +27,19 @@
 
 CNN과 트랜스포머의 가중치 메모리 접근·연산 에너지를 분석하고, 메모리 내부 연산 구조를 검토하는 연구다. 모델 구조와 배치 크기에 따른 에너지 병목을 비교하고, DRAM-PIM의 동작을 RTL로 표현해 확인한다.
 
-트랜스포머 DRAM-PIM 연구는 2024–2025년 한국연구재단 석사과정생연구장려금 과제로 진행됐다.
+### 트랜스포머 DRAM-PiM 연구
+
+DRAM-PiM을 이용한 GPT 계열 모델의 에너지 효율화를 목표로 한다. 메모리와 연산 사이의 병목, 모델별 에너지 사용 특성을 분석하고, 그 결과를 대역폭과 연산비 등 DRAM-PiM 설계 파라미터 산정에 연결한다. 추가 PU와 Adder-tree를 포함하는 RTL 프로토타입의 구현 및 시뮬레이션도 다룬다.
+
+| 항목 | 내용 |
+| --- | --- |
+| 연구과제명 | 트랜스포머 DRAM-PiM 연구 |
+| 사업명 | 2024년도 석사과정생연구장려금지원사업 |
+| 지원기관 | 한국연구재단 |
+| 과제번호 | RS-2024-00395426 |
+| 총연구기간 | 2024.07.01. ~ 2025.06.30. |
+| 소속기관 | 국민대학교 |
+
 
 ### FPGA 기반 혼성신호 계측 자동화
 
@@ -102,10 +121,12 @@ CNN과 트랜스포머의 가중치 메모리 접근·MAC 연산 에너지를 �
 | RTL 설계·검증 | Verilog, SystemVerilog, FIFO·Clock Domain, 사이클 단위 기능 검증, Xcelium, QuestaSim |
 | 혼성신호 모델링 | XMODEL, Glister, Modelzen |
 | FPGA·Bring-up | Vivado, Opal Kelly XEM8320, Nexys 4 DDR, SYZYGY, FrontPanel API |
-| 하드웨어·펌웨어 | Raspberry Pi, Arduino, MCU, 임베디드 펌웨어, Linux 드라이버, 전원 회로·PCB, SPI·GPIO, ADC/DAC |
+| MCU·임베디드 플랫폼 | STM32, ESP32, Arm Cortex-M, Raspberry Pi, Arduino, STM32CubeIDE, PlatformIO |
+| 하드웨어·펌웨어 | MCU, 임베디드 펌웨어, Linux 드라이버, 전원 회로·PCB, UART·SPI·GPIO, ADC/DAC, 부팅·메모리 맵·인터럽트·DMA·FreeRTOS |
 | Post-Silicon 검증 | Silicon Bring-up, 소자 특성·파라미터 분석, DC·펄스 계측, Probe-card Testing |
 | 계측·테스트 자동화 | 테스트 벡터·시퀀스, Telemetry·Logging, 데이터 수집·시각화, Tkinter·Matplotlib |
-| 시스템 디버깅 | JTAG·OpenOCD, 신호 무결성·버스 타이밍 분석 |
+| 시스템 디버깅 | JTAG·SWD, ST-Link, OpenOCD, GDB, 신호 무결성·버스 타이밍 분석 |
+| 아키텍처·가상 실습 | Arm·RISC-V, Renode, Spike, 명령 단위 실행·메모리 회귀검사·오류 주입 |
 
 ## 언어와 개발 환경
 
