@@ -53,3 +53,8 @@ SciPy provides scientific computing in Python. SymPy, Mathematica, and Maple sup
 ### Foundation article
 
 - [MATLAB 수치해석: 답의 오차와 잔차는 왜 다를까](해설_notes/MATLAB수치해석_linear-solves-conditioning-residuals.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [비선형 방정식: 빠른 Newton과 안전한 구간 좁히기](해설_notes/구간을지키는근찾기_safeguarded-root-finding.md) · [English](해설_notes/구간을지키는근찾기_safeguarded-root-finding.md#english)

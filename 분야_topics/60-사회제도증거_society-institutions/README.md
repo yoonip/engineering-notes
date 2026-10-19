@@ -17,3 +17,8 @@ Studies social indicators and institutions, examining how samples, comparisons a
 - [Evidence, causality and institutions](해설_notes/사회를자료로읽기_evidence-causality-institutions.md#english)
 
 Each article defines its terms, assumptions and scope and provides checkable analysis with primary references. Small explanatory calculations are distinguished from verified past-paper analysis.
+
+
+## 심화 해설 | Advanced article
+
+- [전체 비율이 층별 비교를 뒤집을 때: Simpson 역설과 표준화](해설_notes/집계와표준화_simpson-standardized-rates.md) · [English](해설_notes/집계와표준화_simpson-standardized-rates.md#english)

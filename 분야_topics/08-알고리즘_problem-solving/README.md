@@ -83,3 +83,8 @@ Application-related records are kept in [Applications and assessments](../55-지
 ### Foundation article
 
 - [복잡도와 자료구조: heap으로 최단 경로 찾기](해설_notes/복잡도와자료구조_complexity-heaps-shortest-paths.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [A*: 좋은 예상값으로 탐색을 줄이고 정답은 지키기](해설_notes/휴리스틱최단경로_astar-reopening.md) · [English](해설_notes/휴리스틱최단경로_astar-reopening.md#english)

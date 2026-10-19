@@ -45,3 +45,8 @@ torchvision, timm, Detectron2, and MMDetection provide models and training or ev
 ### Foundation article
 
 - [카메라 모델, 영상 필터, CV 검증](해설_notes/카메라모델영상필터CV검증_camera-filtering-and-validation.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [Bilinear warp: 없는 pixel 사이의 값을 어떻게 계산할까](해설_notes/역매핑과쌍선형보간_bilinear-warp.md) · [English](해설_notes/역매핑과쌍선형보간_bilinear-warp.md#english)

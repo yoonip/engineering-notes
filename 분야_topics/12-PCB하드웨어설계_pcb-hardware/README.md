@@ -43,3 +43,8 @@ Board bring-up works through power, clocks, reset, and communication to establis
 ### Foundation article
 
 - [전원은 배선까지 포함한다: PDN, decoupling과 귀환 전류](해설_notes/전원은배선까지포함한다_pdn-decoupling-return-current.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [커패시터를 더 달았는데 왜 전원 임피던스가 커질까](해설_notes/커패시터사이의공진_pdn-antiresonance.md) · [English](해설_notes/커패시터사이의공진_pdn-antiresonance.md#english)

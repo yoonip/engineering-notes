@@ -45,3 +45,8 @@ Batch processing works on accumulated data, while streaming handles incoming eve
 ### Foundation article
 
 - [DB의 인덱스, 트랜잭션, SQL 집계](해설_notes/DB의인덱스트랜잭션SQL집계_indexes-transactions-and-aggregation.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [SQLite WAL에서 snapshot과 낙관적 갱신을 관찰하기](해설_notes/WAL스냅샷과버전충돌_wal-snapshots.md) · [English](해설_notes/WAL스냅샷과버전충돌_wal-snapshots.md#english)

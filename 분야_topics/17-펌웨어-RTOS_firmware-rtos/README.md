@@ -92,3 +92,8 @@ In the ESP32 example, a UART receive loop parses commands and sends them to a qu
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [MMIO, interrupts, DMA and cache ownership](해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [RTOS의 우선순위 역전: 누가 mutex를 놓을 수 있을까](해설_notes/우선순위역전_priority-inheritance.md) · [English](해설_notes/우선순위역전_priority-inheritance.md#english)

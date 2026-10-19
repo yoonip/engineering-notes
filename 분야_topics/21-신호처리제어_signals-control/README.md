@@ -51,3 +51,8 @@ A state-space model relates internal states, inputs, and outputs. LQR minimizes 
 
 - [Feedback and discrete-time models](해설_notes/피드백제어_feedback-discrete-model.md#english)
 - [Sampling and aliasing](해설_notes/샘플링과aliasing_sampling-aliasing.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [이산 PI 제어: 표본 주기, 안정성과 적분 포화](해설_notes/이산PI와적분포화_sampled-pi-antiwindup.md) · [English](해설_notes/이산PI와적분포화_sampled-pi-antiwindup.md#english)

@@ -52,3 +52,8 @@ The related APIs and tools include OpenAI APIs, Claude API, Gemini API, LangChai
 ### Foundation article
 
 - [RAG와 도구 실행: 검색, 근거, 평가의 경계](해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [Macro·micro 지표와 평가의 불확실성](해설_notes/평가지표와불확실성_metrics-uncertainty.md) · [English](해설_notes/평가지표와불확실성_metrics-uncertainty.md#english)

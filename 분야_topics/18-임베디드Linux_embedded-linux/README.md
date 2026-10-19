@@ -44,3 +44,8 @@ QEMU can test systems using supported board and device models. On physical board
 ### Foundation article
 
 - [Embedded Linux: 부팅, Device Tree와 드라이버의 경계](해설_notes/boot-devicetree-driver-boundaries.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [Embedded Linux의 readiness: 바이트를 끝까지 읽는 상태](해설_notes/준비이벤트와레코드_poll-record-streams.md) · [English](해설_notes/준비이벤트와레코드_poll-record-streams.md#english)

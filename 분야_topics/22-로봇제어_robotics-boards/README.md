@@ -86,3 +86,8 @@ CPU general-purpose registers hold values and addresses. Peripheral registers ho
 ### Foundation article
 
 - [차동구동 로봇: 바퀴 회전에서 위치 추정까지](해설_notes/차동구동로봇_differential-drive-kinematics-odometry.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [바퀴 속도 PI 제어: 포화된 모터에 적분을 계속 더하면](해설_notes/속도PI와포화_speed-pi-anti-windup.md) · [English](해설_notes/속도PI와포화_speed-pi-anti-windup.md#english)

@@ -1,0 +1,45 @@
+{
+  "ridge": [
+    0.999000999000999,
+    0.0019980019980019984
+  ],
+  "pi_characteristic_trace_determinant": [
+    1.902458849001428,
+    0.9073359065513567
+  ],
+  "pi_release_integrals": {
+    "plain": 42.05032356053474,
+    "antiwindup": -3.0020566376025653e-05
+  },
+  "fem_max_nodal_error": 7.771561172376096e-16,
+  "coupled_final_error": 0.0004780288944646882,
+  "modus_ponens_negated_conclusion_sat": null,
+  "bayes_models": {
+    "log_bayes_factor_fair": 1.3083701411269733,
+    "posterior_fair": 0.7872402937068276,
+    "flexible_posterior_mean": 0.5
+  },
+  "leontief": {
+    "output": [
+      99.99999999996956,
+      99.99999999994728
+    ],
+    "error_bound_inf": 6.608047442568932e-11,
+    "iterations": 29
+  },
+  "rates": [
+    {
+      "crude": "29/110",
+      "standardized": "11/20"
+    },
+    {
+      "crude": "81/110",
+      "standardized": "9/20"
+    }
+  ],
+  "version_on_2024_12_01": {
+    "id": "v1",
+    "promulgated": "2024-01-01",
+    "effective": "2024-02-01"
+  }
+}

@@ -45,3 +45,8 @@ A battery management system monitors voltage, current, and temperature, estimate
 ### Foundation article
 
 - [스위칭으로 낮은 전압 만들기: buck의 CCM과 ripple](해설_notes/스위칭으로낮은전압만들기_buck-ccm-ripple.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [부하가 갑자기 바뀔 때: buck의 평균 과도모델](해설_notes/부하변화의과도응답_buck-transient.md) · [English](해설_notes/부하변화의과도응답_buck-transient.md#english)

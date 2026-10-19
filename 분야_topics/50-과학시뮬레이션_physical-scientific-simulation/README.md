@@ -45,3 +45,8 @@ COMSOL, Ansys, HFSS, and CST support multiphysics or electromagnetic analysis. O
 ### Foundation article
 
 - [수치해석의 V&V: 수렴, 잔차, 보존을 따로 확인하기](해설_notes/수치해석의VV_verification-convergence-and-conservation.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [미분방정식에서 요소 행렬까지: 1차원 열전도 FEM](해설_notes/열전도유한요소_weak-form-linear-fem.md) · [English](해설_notes/열전도유한요소_weak-form-linear-fem.md#english)

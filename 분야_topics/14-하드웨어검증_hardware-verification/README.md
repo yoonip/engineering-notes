@@ -44,3 +44,8 @@ UVM provides a methodology and library for reusable verification components. Ver
 ### Foundation article
 
 - [검증에서 무엇을 확인했는가: assertion, coverage와 formal](해설_notes/검증에서무엇을확인했는가_assertions-coverage-formal.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [개수는 맞는데 순서는 틀렸다: 작은 모델의 전수검사](해설_notes/불변식의빈틈_model-checking.md) · [English](해설_notes/불변식의빈틈_model-checking.md#english)

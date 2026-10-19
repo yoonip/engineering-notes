@@ -17,3 +17,8 @@ Examines knowledge, justification, facts, values and arguments by defining conce
 - [Knowledge, arguments and values](해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md#english)
 
 Each article defines its terms, assumptions and scope and provides checkable analysis with primary references. Small explanatory calculations are distinguished from verified past-paper analysis.
+
+
+## 심화 해설 | Advanced article
+
+- [증거는 믿음을 어떻게 바꾸는가: 모형 비교와 Bayes factor](해설_notes/증거와모형비교_bayes-factors-and-beliefs.md) · [English](해설_notes/증거와모형비교_bayes-factors-and-beliefs.md#english)

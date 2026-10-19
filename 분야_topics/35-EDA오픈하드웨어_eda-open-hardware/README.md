@@ -45,3 +45,8 @@ Cadence, Synopsys, and Siemens provide commercial tools across the design flow. 
 ### Foundation article
 
 - [RTL에서 layout까지: 서로 다른 검증을 연결하는 EDA 흐름](해설_notes/RTL에서layout까지_rtl-netlist-timing-physical-checks.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [다른 회로, 같은 상태 전이: equivalence를 확인하는 기준](해설_notes/같은상태전이_equivalence.md) · [English](해설_notes/같은상태전이_equivalence.md#english)

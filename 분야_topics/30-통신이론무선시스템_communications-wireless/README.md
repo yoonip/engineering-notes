@@ -45,3 +45,8 @@ OFDM uses orthogonal subcarriers, while MIMO uses spatial channels between multi
 ### Foundation article
 
 - [잡음 속에서 bit를 고르기: BPSK, Eb/N0와 BER](해설_notes/잡음속에서bit를고르기_bpsk-awgn-ber.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [정합필터로 읽는 QPSK: 에너지와 잡음의 눈금 맞추기](해설_notes/정합필터로읽는QPSK_qpsk.md) · [English](해설_notes/정합필터로읽는QPSK_qpsk.md#english)

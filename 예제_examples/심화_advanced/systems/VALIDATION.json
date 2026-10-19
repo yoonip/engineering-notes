@@ -1,0 +1,25 @@
+{
+  "checked_on": "2026-10-19",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "tests": 42,
+  "tests_exit_code": 0,
+  "demos": 19,
+  "demo_exit_code": 0,
+  "math_counts": {
+    "inline": 155,
+    "display": 22
+  },
+  "local_errors": [],
+  "scope": "19 new notes and dedicated advanced systems examples; no Programmers access",
+  "not_executed": [
+    "C compiler",
+    "MATLAB",
+    "Linux poll syscall",
+    "RTOS board",
+    "I2C hardware",
+    "GDB/OpenOCD",
+    "HTTP server",
+    "mobile framework"
+  ]
+}

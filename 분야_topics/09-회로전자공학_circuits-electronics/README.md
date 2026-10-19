@@ -49,3 +49,8 @@ Filters select frequency components. Oscillators use supplied energy to sustain 
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [RC/RLC laws and response](해설_notes/rc-rlc-response.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [회로를 행렬로 풀기: Modified Nodal Analysis](해설_notes/회로를행렬로풀기_mna.md) · [English](해설_notes/회로를행렬로풀기_mna.md#english)

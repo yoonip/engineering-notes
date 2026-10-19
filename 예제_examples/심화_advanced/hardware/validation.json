@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-19",
+  "python_version": "3.12.14",
+  "python_unittest_count": 39,
+  "python_result": "PASS",
+  "demo_cases": 19,
+  "rtl_tool": "Icarus Verilog 12.0 (devel), vvp",
+  "qmul_vectors": 10121,
+  "counter_cycles": 10257,
+  "rtl_result": "PASS",
+  "qmul_diagnostic": "Icarus includes all bits for constant selects in always_comb sensitivity; no output mismatches observed.",
+  "not_executed": [
+    "synthesis",
+    "post-route STA",
+    "formal RTL solver proof",
+    "physical device measurements"
+  ]
+}

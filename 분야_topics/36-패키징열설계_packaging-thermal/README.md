@@ -45,3 +45,8 @@ Tools such as Ansys and COMSOL model thermal, structural, and electromagnetic be
 ### Foundation article
 
 - [열은 바로 빠져나가지 않는다: thermal RC와 과도 온도](해설_notes/열은바로빠져나가지않는다_thermal-rc-steady-transient.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [die와 package가 다른 속도로 뜨거워질 때: 두 노드 열망](해설_notes/두노드의열흐름_thermal-network.md) · [English](해설_notes/두노드의열흐름_thermal-network.md#english)

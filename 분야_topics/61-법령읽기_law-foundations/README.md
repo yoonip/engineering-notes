@@ -17,3 +17,8 @@ Distinguishes Korean constitutional, statutory and subordinate legal sources and
 - [Legal sources, validity and interpretation](해설_notes/법령을읽는첫걸음_legal-sources-and-interpretation.md#english)
 
 Each article defines its terms, assumptions and scope and provides checkable analysis with primary references. Small explanatory calculations are distinguished from verified past-paper analysis.
+
+
+## 심화 해설 | Advanced article
+
+- [법령의 시간을 데이터로 읽기: 공포일, 시행일과 이력 조회](해설_notes/법령이력과시간구간_version-timelines-and-scope.md) · [English](해설_notes/법령이력과시간구간_version-timelines-and-scope.md#english)

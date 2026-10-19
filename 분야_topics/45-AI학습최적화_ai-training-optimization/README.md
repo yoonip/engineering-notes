@@ -45,3 +45,8 @@ LoRA trains low-rank adapters. QLoRA trains adapters with a quantized base model
 ### Foundation article
 
 - [학습의 계산과 평가: loss, batch, 학습률, data leakage](해설_notes/학습의계산과평가_loss-batches-schedules-and-leakage.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [Adam의 상태, bias correction과 학습 재개](해설_notes/Adam상태와재시작_adam-state.md) · [English](해설_notes/Adam상태와재시작_adam-state.md#english)

@@ -98,3 +98,8 @@ The saved Spike/OpenOCD run reported zero errors initially, one error after flip
 ### Foundation article
 
 - [OpenOCD와 GDB: 연결, 정지 상태와 관찰의 의미](해설_notes/OpenOCD와GDB_debug-transport-state-observation.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [Watchpoint: 값이 바뀐 순간과 메모리 접근은 다르다](해설_notes/접근을잡는관찰점_watchpoints-access-values.md) · [English](해설_notes/접근을잡는관찰점_watchpoints-access-values.md#english)

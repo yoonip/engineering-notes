@@ -57,3 +57,8 @@ Docker and Podman containers package an application with its user-space dependen
 ### Foundation article
 
 - [Git 이력과 다시 만들 수 있는 결과물](해설_notes/Git이력과다시만들수있는결과물_commit-dag-reproducible-builds.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [바뀐 입력만 다시 만들기: 내용 기반 빌드와 캐시](해설_notes/내용기반빌드_content-addressed-build.md) · [English](해설_notes/내용기반빌드_content-addressed-build.md#english)

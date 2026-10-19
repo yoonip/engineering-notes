@@ -34,7 +34,11 @@ Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)�
 python 예제_examples/run_checks.py
 ```
 
-Python 3 표준 라이브러리로 158개 검사를 실행한다. 검사에는 독립 계산과의 비교, 경계 조건, 상태 불변식, 수렴률, 무작위 입력, 오류 주입이 포함된다. 실행 환경과 검사별 결과는 [검증 기록](VALIDATION.json)에 남겼다.
+Python 3 표준 라이브러리로 298개 검사를 실행한다. 검사에는 독립 계산과의 비교, 경계 조건, 상태 불변식, 수렴률, 무작위 입력, 오류 주입이 포함된다. 실행 환경과 검사별 결과는 [검증 기록](VALIDATION.json)에 남겼다.
+
+## 심화 구현과 검증
+
+[심화 예제](심화_advanced/README.md)는 회로·RTL, 펌웨어·시스템, AI·데이터, 수학·제어·추론의 구현과 독립 검사를 연결한다. [심화 해설 60편](../문서_docs/심화해설_ADVANCED.md)에서 단계별 유도와 실행 결과를 읽을 수 있다.
 
 ## MCU 펌웨어와 디버깅
 
@@ -43,6 +47,8 @@ Python 3 표준 라이브러리로 158개 검사를 실행한다. 검사에는 �
 [Embedded validation lab](../프로젝트_projects/embedded-validation-lab/README.md)은 RV32I CPU와 Python 참조 모델, Cortex-M7·STM32·ESP32 펌웨어, UART 호스트 검증을 하나의 프로젝트로 연결한다.
 
 ## English
+
+[Advanced examples](심화_advanced/README.md) connect circuit/RTL, firmware/systems, AI/data and mathematical implementations with independent checks. [The 60 advanced articles](../문서_docs/심화해설_ADVANCED.md#english) provide step-by-step derivations and execution results.
 
 Short executable examples accompany the concept notes. [Foundation models and automated checks](공학기초_foundations/README.md#english) connect mathematics, physics, circuits, hardware, firmware, systems, signals, control and AI.
 
@@ -66,6 +72,6 @@ The commands above run the RC calculation and build/run the C/C++ examples. [req
 
 The [extended foundation models](확장기초_extended/README.md) cover hardware timing, power, communications and test; systems tools, debugging and robot control; and GPU, database, distributed-system, AI and numerical models. Run the command above from the repository root to include the reasoning models as well.
 
-The runner executes 158 checks using the Python 3 standard library. They include independent calculations, boundary conditions, state invariants, convergence rates, randomized inputs and fault injection. The [validation record](VALIDATION.json) contains the execution environment and per-suite results.
+The runner executes 298 checks using the Python 3 standard library. They include independent calculations, boundary conditions, state invariants, convergence rates, randomized inputs and fault injection. The [validation record](VALIDATION.json) contains the execution environment and per-suite results.
 
 [Embedded debug labs](임베디드디버깅_embedded-debug-labs/README.md) cover Arm/RISC-V startup, memory layout, OpenOCD/GDB, GPIO and FreeRTOS command processing. The [embedded validation lab](../프로젝트_projects/embedded-validation-lab/README.md) connects an RV32I CPU/Python reference with Cortex-M7/STM32/ESP32 firmware and UART validation.

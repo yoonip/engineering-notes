@@ -1,4 +1,4 @@
-"""기초·추론·확장 모델을 각각 독립 프로세스에서 검사한다."""
+"""기초·추론·확장·심화 모델을 각각 독립 프로세스에서 검사한다."""
 
 import argparse
 import json
@@ -20,6 +20,8 @@ def main():
     ]
     suites += [(f'확장기초_extended/{group}', [sys.executable, '-m', 'unittest', 'discover', '-s', str(base / '확장기초_extended' / group), '-p', 'test_*.py', '-v'])
                for group in ('hardware', 'systems', 'ai_data')]
+    suites += [(f'심화_advanced/{group}', [sys.executable, '-m', 'unittest', 'discover', '-s', str(base / '심화_advanced' / group), '-p', 'test_*.py', '-v'])
+               for group in ('hardware', 'systems', 'ai_data', 'math_reasoning')]
     results = []
     for name, command in suites:
         result = subprocess.run(command, cwd=base, env=dict(os.environ, PYTHONUTF8='1'),

@@ -51,3 +51,8 @@ SCPI defines instrument commands. VISA and PyVISA provide instrument communicati
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [Measurement, probe loading and uncertainty](해설_notes/계측_measurement-loading-uncertainty.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [직선 교정의 불확도: 기울기와 절편을 함께 다루기](해설_notes/직선교정의불확도_linear-calibration.md) · [English](해설_notes/직선교정의불확도_linear-calibration.md#english)

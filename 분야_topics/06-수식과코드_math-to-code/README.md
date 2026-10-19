@@ -69,3 +69,8 @@ Linear algebra supports coordinate transforms, least squares, and neural-network
 - [Linear algebra and least squares](해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md#english)
 - [Probability and estimation](해설_notes/확률평균추정의불확실성_probability-estimation.md#english)
 - [Units, dimensional analysis and uncertainty](해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [작은 특잇값이 오차를 키울 때: ridge 정규화](해설_notes/정규화와작은특잇값_ridge-spectral-filtering.md) · [English](해설_notes/정규화와작은특잇값_ridge-spectral-filtering.md#english)

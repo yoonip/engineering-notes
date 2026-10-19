@@ -51,3 +51,8 @@ fio generates and measures storage I/O workloads. Read versus write, sequential 
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [Locality, cache and average memory access time](해설_notes/메모리지역성과캐시_locality-cache-amat.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [SRAM을 읽을 때 저장 노드가 올라가는 이유](해설_notes/SRAM읽기교란_read-disturb.md) · [English](해설_notes/SRAM읽기교란_read-disturb.md#english)

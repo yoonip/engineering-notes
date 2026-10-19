@@ -44,3 +44,8 @@ GitHub Pages serves generated static files. Python computations and model infere
 ### Foundation article
 
 - [자동화의 기본: 검증, 재실행과 원자적 게시](해설_notes/자동화의기본_ci-idempotency-atomic-publication.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [CI를 줄여도 검증은 빠뜨리지 않기: 변경 영향과 캐시](해설_notes/변경영향과CI캐시_incremental-ci-cache.md) · [English](해설_notes/변경영향과CI캐시_incremental-ci-cache.md#english)

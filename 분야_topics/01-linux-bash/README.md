@@ -68,3 +68,8 @@ WSL2 provides a Linux development environment on Windows. Access to physical dev
 ### Foundation article
 
 - [Linux에서 프로그램, 권한과 파이프가 만나는 곳](해설_notes/프로세스-권한-파이프_processes-permissions-pipelines.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [파이프가 꽉 찼을 때: backpressure와 종료 조건](해설_notes/파이프역압력_pipe-backpressure.md) · [English](해설_notes/파이프역압력_pipe-backpressure.md#english)

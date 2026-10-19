@@ -4,6 +4,7 @@
 
 각 주제에서는 무엇에 쓰이는지, 왜 그 방식으로 구현하는지부터 살펴봅니다. 설명은 한국어와 영어로 나누고, 코드 주석은 한국어로 적었습니다. Linux·Bash 같은 기술명은 익숙한 표기를 그대로 씁니다.
 
+- [심화 해설·구현·검증 | Advanced explanations and implementations](문서_docs/심화해설_ADVANCED.md)
 - [기초 개념·유도·모델·검증 | Engineering foundations](문서_docs/공학기초_FOUNDATIONS.md)
 - [분야별 기초 해설 | Technical foundations by topic](문서_docs/분야별기초해설_EXTENDED_FOUNDATIONS.md)
 - [추론·인문사회 | Reasoning & humanities](문서_docs/추론과인문사회_REASONING_AND_HUMANITIES.md)
@@ -36,6 +37,7 @@ These notes connect circuits and semiconductors with RTL, firmware, systems soft
 
 Each topic starts with what it is used for and why the implementation works that way. Explanations are available in Korean and English, while code comments stay in Korean. Familiar technical names such as Linux and Bash keep their usual spelling.
 
+- [60 advanced explanations and executable examples](문서_docs/심화해설_ADVANCED.md#english)
 - [Foundations: concepts, derivations, models, and verification](문서_docs/공학기초_FOUNDATIONS.md#english)
 - [Technical foundations by topic](문서_docs/분야별기초해설_EXTENDED_FOUNDATIONS.md)
 - [Reasoning, assessments, philosophy, economics, society and law](문서_docs/추론과인문사회_REASONING_AND_HUMANITIES.md#english)

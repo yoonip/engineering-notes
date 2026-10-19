@@ -45,3 +45,8 @@ TensorRT, OpenVINO, LiteRT, TensorFlow Lite Micro, CMSIS-NN, ExecuTorch, and TVM
 ### Foundation article
 
 - [정수 양자화: scale, zero-point, 배포 오차](해설_notes/정수양자화_integer-quantization-and-deployment-error.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [채널별 정수 양자화와 오차의 크기](해설_notes/채널별정수양자화_per-channel-quantization.md) · [English](해설_notes/채널별정수양자화_per-channel-quantization.md#english)

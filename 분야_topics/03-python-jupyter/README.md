@@ -73,3 +73,8 @@ Notebook state depends on the order in which cells run. Restarting the kernel an
 ### Foundation article
 
 - [Python 환경과 Jupyter 실행 상태를 구분하기](해설_notes/Python환경과Jupyter실행상태_environments-kernel-state-reproducibility.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [노트북 결과를 다시 얻으려면: 데이터와 분할의 재현성](해설_notes/데이터와분할재현성_data-split-reproducibility.md) · [English](해설_notes/데이터와분할재현성_data-split-reproducibility.md#english)

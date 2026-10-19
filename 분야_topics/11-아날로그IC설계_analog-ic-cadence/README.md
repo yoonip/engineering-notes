@@ -51,3 +51,8 @@ DRC checks manufacturing rules, LVS compares schematic and layout devices and co
 ### Foundation article
 
 - [동작점에서 주파수 응답까지: 소신호와 AC 해석](해설_notes/동작점에서주파수응답까지_small-signal-ac-operating-point.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [피드백을 걸면 이득과 대역폭은 어떻게 바뀌는가](해설_notes/피드백과대역폭_feedback.md) · [English](해설_notes/피드백과대역폭_feedback.md#english)

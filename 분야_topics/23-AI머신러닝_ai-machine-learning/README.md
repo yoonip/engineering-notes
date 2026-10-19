@@ -83,3 +83,8 @@ These examples compute a local derivative of a scalar function. Neural-network t
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [Gradients, backpropagation and learning](해설_notes/미분에서학습까지_gradients-and-learning.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [작은 MLP로 역전파를 끝까지 계산하기](해설_notes/다층신경망역전파_mlp-backprop.md) · [English](해설_notes/다층신경망역전파_mlp-backprop.md#english)

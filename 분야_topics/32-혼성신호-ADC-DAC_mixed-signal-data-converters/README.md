@@ -53,3 +53,8 @@ Related technologies include SAR and delta-sigma ADCs, DACs, PLLs, DLLs, CDR, Sp
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [ADC quantization and resolution](해설_notes/ADC양자화_adc-quantization.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [전이 전압으로 읽는 ADC 선형성: DNL과 INL](해설_notes/전이전압의오차_adc-linearity.md) · [English](해설_notes/전이전압의오차_adc-linearity.md#english)

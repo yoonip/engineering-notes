@@ -51,3 +51,8 @@ For Korean, English, and other languages, tokenizer efficiency, register and hon
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [Attention from equations to implementation](해설_notes/attention-from-equations.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [Attention의 역전파와 causal KV cache 검증](해설_notes/어텐션역전파와캐시_attention-gradients.md) · [English](해설_notes/어텐션역전파와캐시_attention-gradients.md#english)

@@ -45,3 +45,8 @@ ATE is automated test equipment. Wafer, package, and system-level tests have dif
 ### Foundation article
 
 - [보이지 않는 내부 상태를 검사하기: scan, ATPG와 fault coverage](해설_notes/보이지않는내부상태를검사하기_scan-atpg-fault-coverage.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [다른 출력이 같은 signature가 될 때: aliasing을 계산하기](해설_notes/서명이같아지는오류_signature-aliasing.md) · [English](해설_notes/서명이같아지는오류_signature-aliasing.md#english)

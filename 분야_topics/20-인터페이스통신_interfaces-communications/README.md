@@ -50,3 +50,8 @@ AXI, AHB, and APB connect components inside an SoC. PCIe is a high-speed serial 
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [UART framing and CRC](해설_notes/바이트가메시지가되려면_framing-uart-crc.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [I2C 레지스터 읽기: repeated START와 마지막 NACK](해설_notes/I2C묶음전송_i2c-combined-transactions.md) · [English](해설_notes/I2C묶음전송_i2c-combined-transactions.md#english)

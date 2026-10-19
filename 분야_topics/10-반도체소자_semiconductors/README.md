@@ -53,3 +53,8 @@ PVT describes process, voltage, and temperature variation. Compact models such a
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [MOS electrostatics and switching](해설_notes/mos-electrostatics-switching.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [작은 전류의 증폭 효율: subthreshold와 gm/Id](해설_notes/작은전류의증폭효율_subthreshold.md) · [English](해설_notes/작은전류의증폭효율_subthreshold.md#english)

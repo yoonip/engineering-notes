@@ -52,3 +52,8 @@ The JVM, CPython, and Julia runtimes provide object, memory, and execution model
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [From reset to main: ABI, ELF and linking](해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [작은 수식 언어 만들기: 우선순위에서 stack bytecode까지](해설_notes/수식에서바이트코드_expression-bytecode.md) · [English](해설_notes/수식에서바이트코드_expression-bytecode.md#english)

@@ -4,6 +4,7 @@
 
 | 문서 / Document | 내용 / Contents |
 | --- | --- |
+| [심화 해설과 구현 / Advanced implementations](심화해설_ADVANCED.md) | 단계별 유도와 실행 예제 60편 / 60 advanced articles |
 | [공학 기초 / Engineering foundations](공학기초_FOUNDATIONS.md) | 수학·물리·회로·시스템·AI의 기본 모델 / Foundational models |
 | [분야별 기초 해설 / Technical foundations](분야별기초해설_EXTENDED_FOUNDATIONS.md) | 개발 환경부터 하드웨어·AI까지의 36편 / 36 domain articles |
 | [추론과 인문사회 / Reasoning and humanities](추론과인문사회_REASONING_AND_HUMANITIES.md) | 논리·시험·철학·경제·사회·법 / Logic, assessments and humanities |

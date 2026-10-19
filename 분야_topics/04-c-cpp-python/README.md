@@ -98,3 +98,8 @@ Rust uses ownership and borrowing for memory safety; Go is common in services an
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [Integer, floating-point and fixed-point representation](해설_notes/비트에서수까지_numbers-and-quantization.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [C의 고정 크기 ring buffer: 경계와 소유권부터](해설_notes/고정크기링버퍼_bounded-ring-buffer.md) · [English](해설_notes/고정크기링버퍼_bounded-ring-buffer.md#english)

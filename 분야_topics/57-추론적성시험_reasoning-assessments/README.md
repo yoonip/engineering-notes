@@ -29,3 +29,8 @@ Reads arguments, models constraints, and checks units and ratios. Distinguishes 
 - [Verified past-paper walkthroughs](해설_notes/공식기출분석_official-past-paper-walkthroughs.md#english)
 
 Each article defines its terms, assumptions and scope and provides checkable analysis with primary references. Small explanatory calculations are distinguished from verified past-paper analysis.
+
+
+## 심화 해설 | Advanced article
+
+- [주장의 반례를 계산하기: CNF와 DPLL](해설_notes/반례탐색과단위전파_sat-dpll-counterexamples.md) · [English](해설_notes/반례탐색과단위전파_sat-dpll-counterexamples.md#english)

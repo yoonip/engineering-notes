@@ -75,3 +75,8 @@ Renode models MCUs and peripherals; Spike simulates the RISC-V ISA. The Arm exer
 ### Foundation article
 
 - [명령어가 보는 메모리: ISA, byte 순서와 load/store](해설_notes/명령어가보는메모리_isa-byte-order-load-store.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [페이지 안에서 캐시를 찾기: VIPT와 alias 조건](해설_notes/페이지안의캐시인덱스_vipt.md) · [English](해설_notes/페이지안의캐시인덱스_vipt.md#english)

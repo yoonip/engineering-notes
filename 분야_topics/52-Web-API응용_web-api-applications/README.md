@@ -45,3 +45,8 @@ In device control, the time a command is sent from the interface can differ from
 ### Foundation article
 
 - [HTTP API의 계약: 멱등성, pagination, 입력 검증](해설_notes/HTTPAPI의계약_http-idempotency-pagination-validation.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [두 사용자의 수정이 겹치면: ETag와 조건부 갱신](해설_notes/버전조건부갱신_optimistic-concurrency-etag.md) · [English](해설_notes/버전조건부갱신_optimistic-concurrency-etag.md#english)

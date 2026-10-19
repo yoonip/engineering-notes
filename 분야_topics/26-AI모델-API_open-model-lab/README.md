@@ -44,3 +44,8 @@ Accuracy, latency, throughput, memory use, and API cost measure different aspect
 ### Foundation article
 
 - [모델 파일에서 다음 토큰까지: 가중치, 토큰화, sampling](해설_notes/모델파일에서다음토큰까지_weights-tokenizers-and-sampling.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [Beam search의 목적함수와 KV cache의 메모리 예산](해설_notes/빔탐색과캐시예산_beam-cache-budget.md) · [English](해설_notes/빔탐색과캐시예산_beam-cache-budget.md#english)

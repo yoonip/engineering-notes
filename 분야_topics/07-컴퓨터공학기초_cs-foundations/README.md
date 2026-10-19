@@ -54,3 +54,8 @@ A filesystem maps names and directories to stored data. A database adds query pr
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [Processes, virtual memory and concurrency](해설_notes/같은주소다른메모리_processes-memory-concurrency.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [같은 계산, 다른 메모리 배치: AoS·SoA와 캐시](해설_notes/배치와캐시_memory-layout-locality.md) · [English](해설_notes/배치와캐시_memory-layout-locality.md#english)

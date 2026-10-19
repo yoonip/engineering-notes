@@ -46,3 +46,8 @@ Arbitration decides the order of competing requests; QoS controls service requir
 ### Foundation article
 
 - [준비된 순간에만 옮기기: ready/valid와 backpressure](해설_notes/준비된순간에만옮기기_ready-valid-backpressure.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [멀리 있는 버퍼를 넘치지 않게 쓰기: credit flow control](해설_notes/크레딧으로흐름제어_credit-flow.md) · [English](해설_notes/크레딧으로흐름제어_credit-flow.md#english)

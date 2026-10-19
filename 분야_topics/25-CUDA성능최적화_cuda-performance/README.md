@@ -53,3 +53,8 @@ The driver, CUDA Toolkit, and a framework's bundled runtime are separate compone
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [Roofline and parallel performance limits](해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [경계 tile까지 계산하는 행렬곱: CPU 기준선과 CUDA kernel](해설_notes/경계타일행렬곱_tiled-matmul.md) · [English](해설_notes/경계타일행렬곱_tiled-matmul.md#english)

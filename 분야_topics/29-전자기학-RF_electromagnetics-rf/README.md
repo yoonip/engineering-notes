@@ -51,3 +51,8 @@ HFSS, CST, Sonnet, and openEMS support electromagnetic analysis. ADS and AWR sup
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [Transmission lines and reflections](해설_notes/전송선과반사_transmission-lines-reflections.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [사분파장 정합: 선로 길이로 임피던스 바꾸기](해설_notes/사분파장정합_quarter-wave.md) · [English](해설_notes/사분파장정합_quarter-wave.md#english)

@@ -16,6 +16,8 @@ I hope this work can strengthen scientific and technological capacity and indust
 
 I hope this repository will be more than a store of finished answers. One reader may use it to understand a concept for the first time; another may improve a program or begin a new research project. I want future generations, including my children and nieces or nephews, to be able to follow not only what was built but also why it was designed and checked that way. By sharing knowledge in a readable, reusable form, I hope learning and improvement can continue as tools and technologies change.
 
+[60 advanced explanations and executable examples](문서_docs/심화해설_ADVANCED.md#english)
+
 [Foundations: concepts, derivations, models, and verification](문서_docs/공학기초_FOUNDATIONS.md#english)
 
 [Reasoning, assessments and humanities](문서_docs/추론과인문사회_REASONING_AND_HUMANITIES.md#english)

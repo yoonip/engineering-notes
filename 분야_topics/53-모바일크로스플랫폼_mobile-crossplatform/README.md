@@ -45,3 +45,8 @@ Runtimes such as Core ML and LiteRT support device inference. Continuous inferen
 ### Foundation article
 
 - [모바일 UI 상태: 생명주기와 늦게 도착한 결과](해설_notes/모바일UI상태_ui-state-lifecycle-stale-results.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [UI 상태를 한곳에서 바꾸기: reducer와 비동기 효과](해설_notes/UI이벤트리듀서_ui-event-reducer.md) · [English](해설_notes/UI이벤트리듀서_ui-event-reducer.md#english)

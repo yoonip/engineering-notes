@@ -43,3 +43,8 @@ The Roofline model relates arithmetic intensity to memory bandwidth and compute 
 ### Foundation article
 
 - [GPU의 warp, 메모리 접근, occupancy](해설_notes/GPU메모리와실행자원_warp-memory-occupancy.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [타일 재사용과 shared-memory bank conflict](해설_notes/타일메모리와은행충돌_tiled-memory.md) · [English](해설_notes/타일메모리와은행충돌_tiled-memory.md#english)

@@ -45,3 +45,8 @@ A device's operating principle, a circuit's function, and a system's effective p
 ### Foundation article
 
 - [전류의 합으로 내적 계산하기: memristive PIM과 비이상성](해설_notes/전류의합으로내적계산하기_memristive-pim-dot-products.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [PIM 출력 교정: gain·offset을 고칠 수 있는 범위](해설_notes/PIM출력교정_pim-calibration.md) · [English](해설_notes/PIM출력교정_pim-calibration.md#english)

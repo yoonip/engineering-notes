@@ -19,3 +19,8 @@ Analyzes choice through scarcity, opportunity cost and incentives, and reads GDP
 - [GDP, inflation and real values](해설_notes/GDP와물가읽기_gdp-inflation-real-values.md#english)
 
 Each article defines its terms, assumptions and scope and provides checkable analysis with primary references. Small explanatory calculations are distinguished from verified past-paper analysis.
+
+
+## 심화 해설 | Advanced article
+
+- [산업 간 연결을 행렬로 읽기: 투입산출 모형과 고정점](해설_notes/산업연관과고정점_leontief-input-output.md) · [English](해설_notes/산업연관과고정점_leontief-input-output.md#english)

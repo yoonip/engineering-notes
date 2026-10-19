@@ -52,3 +52,8 @@ Out-of-bounds accesses, use-after-free, and race conditions can become implement
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [Security and reliability boundaries](해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [인증된 메시지도 다시 올 수 있다: replay window](해설_notes/인증후재전송검사_authenticated-replay-window.md) · [English](해설_notes/인증후재전송검사_authenticated-replay-window.md#english)

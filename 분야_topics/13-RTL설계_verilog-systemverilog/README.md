@@ -69,3 +69,8 @@ VHDL is another HDL. Chisel, SpinalHDL, and Amaranth build hardware using other 
 [Foundations reading guide](../../문서_docs/공학기초_FOUNDATIONS.md#english)
 
 - [Synchronous FIFO state and invariants](해설_notes/FSM과FIFO_synchronous-fifo-invariants.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [고정소수점 곱셈: 비트 폭, 반올림, 포화를 따로 결정하기](해설_notes/고정소수점의경계_fixed-point.md) · [English](해설_notes/고정소수점의경계_fixed-point.md#english)

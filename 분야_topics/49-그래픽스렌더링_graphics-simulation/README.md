@@ -45,3 +45,8 @@ OpenGL, Vulkan, DirectX, and WebGPU expose GPU functionality, while GLSL and HLS
 ### Foundation article
 
 - [좌표 변환에서 pixel까지: 동차 좌표와 rasterization](해설_notes/좌표변환에서pixel까지_transforms-projection-and-rasterization.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [원근 투영 뒤에도 표면의 속성을 맞추는 보간](해설_notes/원근보정속성보간_perspective-interpolation.md) · [English](해설_notes/원근보정속성보간_perspective-interpolation.md#english)

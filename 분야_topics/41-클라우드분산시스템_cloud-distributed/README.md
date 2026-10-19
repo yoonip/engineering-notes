@@ -45,3 +45,8 @@ Logs record events, metrics record numerical time series, and traces follow a re
 ### Foundation article
 
 - [복제본의 교집합: quorum과 일관성의 조건](해설_notes/복제본의교집합_quorums-failures-and-consistency.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [Lamport clock: 시각을 맞추지 않고 인과 순서를 기록하기](해설_notes/논리시계와인과관계_lamport-clocks.md) · [English](해설_notes/논리시계와인과관계_lamport-clocks.md#english)

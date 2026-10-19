@@ -45,3 +45,8 @@ A profiler shows where time is spent. Memory tools examine allocations, lifetime
 ### Foundation article
 
 - [소프트웨어 검증: 예제, 계약과 변환 성질](해설_notes/소프트웨어검증_contracts-properties-metamorphic-testing.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [테스트가 실패한 뒤: 재현 가능한 반례와 shrinking](해설_notes/실패입력줄이기_property-counterexample-shrinking.md) · [English](해설_notes/실패입력줄이기_property-counterexample-shrinking.md#english)

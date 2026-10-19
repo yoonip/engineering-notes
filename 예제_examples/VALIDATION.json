@@ -27,9 +27,29 @@
       "suite": "확장기초_extended/ai_data",
       "tests": 26,
       "passed": true
+    },
+    {
+      "suite": "심화_advanced/hardware",
+      "tests": 39,
+      "passed": true
+    },
+    {
+      "suite": "심화_advanced/systems",
+      "tests": 42,
+      "passed": true
+    },
+    {
+      "suite": "심화_advanced/ai_data",
+      "tests": 27,
+      "passed": true
+    },
+    {
+      "suite": "심화_advanced/math_reasoning",
+      "tests": 32,
+      "passed": true
     }
   ],
-  "total_tests": 158,
+  "total_tests": 298,
   "passed": true,
   "scope_ko": "계산·상태·검증 참조 모델의 자동 검사. 실제 보드·계측·EDA·GPU 실행 결과는 각 문서에서 별도로 다룬다.",
   "scope_en": "Automated checks of computational, state and verification reference models; board, instrument, EDA and GPU execution are addressed separately in the articles.",
@@ -40,12 +60,12 @@
   "runs": [
     {
       "python": "3.12.14",
-      "total_tests": 158,
+      "total_tests": 298,
       "passed": true
     },
     {
       "python": "3.13.14",
-      "total_tests": 158,
+      "total_tests": 298,
       "passed": true
     }
   ]

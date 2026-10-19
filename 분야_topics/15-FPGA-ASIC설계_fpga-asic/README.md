@@ -43,3 +43,8 @@ Vivado and Vitis belong to the AMD FPGA ecosystem, Quartus to Altera, and Radian
 ### Foundation article
 
 - [너무 늦어도, 너무 빨라도 문제다: setup·hold와 STA](해설_notes/너무늦어도너무빨라도문제다_setup-hold-static-timing.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [여러 주기를 쓰는 경로: multicycle과 hold 관계](해설_notes/여러주기를쓰는경로_multicycle.md) · [English](해설_notes/여러주기를쓰는경로_multicycle.md#english)

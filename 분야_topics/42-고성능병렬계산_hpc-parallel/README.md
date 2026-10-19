@@ -46,3 +46,8 @@ Speedup is `baseline execution time / parallel execution time`. Holding total pr
 ### Foundation article
 
 - [병렬 계산의 분할, reduction, 통신 비용](해설_notes/병렬계산의분할reduction통신비용_partition-reduction-and-communication.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [Parallel prefix scan: 누적합으로 위치를 배정하기](해설_notes/트리누적합과압축_parallel-prefix.md) · [English](해설_notes/트리누적합과압축_parallel-prefix.md#english)

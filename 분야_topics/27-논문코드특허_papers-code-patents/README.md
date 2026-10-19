@@ -48,3 +48,8 @@ arXiv, IEEE Xplore, and ACM Digital Library provide research papers; KIPRIS and 
 ### Foundation article
 
 - [논문·코드·특허 읽기: 주장과 재현 근거를 연결하기](해설_notes/논문코드특허읽기_claims-evidence-reproduction-licenses.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [재현 실험 설계: 같은 조건에서 차이를 비교하기](해설_notes/쌍체비교와재현실험_paired-reproducible-experiments.md) · [English](해설_notes/쌍체비교와재현실험_paired-reproducible-experiments.md#english)

@@ -23,3 +23,8 @@ Physics explains motion and energy exchange. Connecting quantities such as force
 | [Heat conduction and diffusion](해설_notes/열전도와확산_heat-diffusion.md) | Derive the heat equation from energy balance and Fourier's law, then verify a stable grid calculation. |
 
 [Units, dimensions, and uncertainty](../06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md) and [differential equations and numerical methods](../06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md) provide shared foundations. Each article records assumptions, units, boundary conditions, and references, while distinguishing computational verification from physical-model validation.
+
+
+## 심화 해설 | Advanced article
+
+- [두 진동자가 연결되면: 정상 모드와 에너지 검증](해설_notes/결합진동과정상모드_coupled-modes-verlet.md) · [English](해설_notes/결합진동과정상모드_coupled-modes-verlet.md#english)
