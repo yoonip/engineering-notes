@@ -1,0 +1,69 @@
+
+<svg role="img" aria-label="practice-feedback-and-insight" width="262pt" height="643pt"
+ viewBox="0.00 0.00 262.00 643.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 624.95)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-18,18 -18,-624.95 244.08,-624.95 244.08,18 -18,18"/>
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M113.04,-544.3C113.04,-532.99 113.04,-520.01 113.04,-508"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="115.67,-508.17 113.04,-500.67 110.42,-508.17 115.67,-508.17"/>
+</g>
+<g id="edge2" class="edge">
+<title>B&#45;&gt;C</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M113.04,-435.3C113.04,-424 113.04,-411.02 113.04,-399.01"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="115.67,-399.18 113.04,-391.68 110.42,-399.18 115.67,-399.18"/>
+</g>
+<g id="edge3" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M113.04,-326.31C113.04,-315.01 113.04,-302.03 113.04,-290.02"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="115.67,-290.19 113.04,-282.69 110.42,-290.19 115.67,-290.19"/>
+</g>
+<g id="edge4" class="edge">
+<title>D&#45;&gt;E</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M113.04,-217.32C113.04,-206.02 113.04,-193.04 113.04,-181.03"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="115.67,-181.2 113.04,-173.7 110.42,-181.2 115.67,-181.2"/>
+</g>
+<g id="edge5" class="edge">
+<title>E&#45;&gt;F</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M113.04,-108.33C113.04,-97.02 113.04,-84.05 113.04,-72.03"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="115.67,-72.2 113.04,-64.7 110.42,-72.2 115.67,-72.2"/>
+</g>
+<g id="node1" class="node">
+<title>A</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M201.12,-606.95C201.12,-606.95 24.96,-606.95 24.96,-606.95 18.96,-606.95 12.96,-600.95 12.96,-594.95 12.96,-594.95 12.96,-556.96 12.96,-556.96 12.96,-550.96 18.96,-544.96 24.96,-544.96 24.96,-544.96 201.12,-544.96 201.12,-544.96 207.12,-544.96 213.12,-550.96 213.12,-556.96 213.12,-556.96 213.12,-594.95 213.12,-594.95 213.12,-600.95 207.12,-606.95 201.12,-606.95"/>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-580.46" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">원문과 조건</text>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-562.46" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Source and conditions</text>
+</g>
+<g id="node2" class="node">
+<title>B</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M196.8,-497.96C196.8,-497.96 29.28,-497.96 29.28,-497.96 23.28,-497.96 17.28,-491.96 17.28,-485.96 17.28,-485.96 17.28,-447.97 17.28,-447.97 17.28,-441.97 23.28,-435.97 29.28,-435.97 29.28,-435.97 196.8,-435.97 196.8,-435.97 202.8,-435.97 208.8,-441.97 208.8,-447.97 208.8,-447.97 208.8,-485.96 208.8,-485.96 208.8,-491.96 202.8,-497.96 196.8,-497.96"/>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-471.46" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">독립 풀이</text>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-453.46" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Independent attempt</text>
+</g>
+<g id="node3" class="node">
+<title>C</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M213.54,-388.97C213.54,-388.97 12.54,-388.97 12.54,-388.97 6.54,-388.97 0.54,-382.97 0.54,-376.97 0.54,-376.97 0.54,-338.98 0.54,-338.98 0.54,-332.98 6.54,-326.98 12.54,-326.98 12.54,-326.98 213.54,-326.98 213.54,-326.98 219.54,-326.98 225.54,-332.98 225.54,-338.98 225.54,-338.98 225.54,-376.97 225.54,-376.97 225.54,-382.97 219.54,-388.97 213.54,-388.97"/>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-362.47" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">공식 답과 검산</text>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-344.47" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Official answer and check</text>
+</g>
+<g id="node4" class="node">
+<title>D</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M182.22,-279.98C182.22,-279.98 43.86,-279.98 43.86,-279.98 37.86,-279.98 31.86,-273.98 31.86,-267.98 31.86,-267.98 31.86,-229.98 31.86,-229.98 31.86,-223.98 37.86,-217.98 43.86,-217.98 43.86,-217.98 182.22,-217.98 182.22,-217.98 188.22,-217.98 194.22,-223.98 194.22,-229.98 194.22,-229.98 194.22,-267.98 194.22,-267.98 194.22,-273.98 188.22,-279.98 182.22,-279.98"/>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-253.48" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">오류 원인 수정</text>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-235.48" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Correct the cause</text>
+</g>
+<g id="node5" class="node">
+<title>E</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M178.98,-170.98C178.98,-170.98 47.1,-170.98 47.1,-170.98 41.1,-170.98 35.1,-164.98 35.1,-158.98 35.1,-158.98 35.1,-120.99 35.1,-120.99 35.1,-114.99 41.1,-108.99 47.1,-108.99 47.1,-108.99 178.98,-108.99 178.98,-108.99 184.98,-108.99 190.98,-114.99 190.98,-120.99 190.98,-120.99 190.98,-158.98 190.98,-158.98 190.98,-164.98 184.98,-170.98 178.98,-170.98"/>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-144.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">시간 뒤 인출</text>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-126.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Delayed retrieval</text>
+</g>
+<g id="node6" class="node">
+<title>F</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M214.08,-61.99C214.08,-61.99 12,-61.99 12,-61.99 6,-61.99 0,-55.99 0,-49.99 0,-49.99 0,-12 0,-12 0,-6 6,0 12,0 12,0 214.08,0 214.08,0 220.08,0 226.08,-6 226.08,-12 226.08,-12 226.08,-49.99 226.08,-49.99 226.08,-55.99 220.08,-61.99 214.08,-61.99"/>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-35.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">새 자료에서 확인</text>
+<text xml:space="preserve" text-anchor="middle" x="113.04" y="-17.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Check on unseen material</text>
+</g>
+</g>
+</svg>

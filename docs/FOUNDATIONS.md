@@ -6,16 +6,9 @@
 
 ## 어떻게 이어지는가
 
-```mermaid
-flowchart TD
-    A[단위·수학 / Units and mathematics] --> B[물리·회로 / Physics and circuits]
-    B --> C[소자·디지털 하드웨어 / Devices and digital hardware]
-    C --> D[메모리·펌웨어·시스템 / Memory, firmware and systems]
-    B --> E[센서·ADC·신호 / Sensors, ADCs and signals]
-    D --> F[제어·학습·병렬 계산 / Control, learning and parallel computing]
-    E --> F
-    A --> F
-```
+![기초에서 구현과 검증까지 — 개념도 / Concept diagram](../assets/diagrams/foundations.png)
+
+[SVG](../assets/diagrams/foundations.svg) · [도식 원본 / Diagram source](../assets/diagrams/foundations.mmd)
 
 직접 구성한 연결도다. 위아래는 기술의 우열이 아니라 모델 사이의 관계를 뜻한다. 소프트웨어에서 출발해 하드웨어로 내려가도 되고, 측정하려는 현상에서 필요한 수학으로 돌아가도 된다.
 

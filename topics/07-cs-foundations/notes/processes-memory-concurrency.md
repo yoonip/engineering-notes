@@ -24,14 +24,9 @@ $$a=\mathrm{PFN}\,P+o$$
 
 이는 단순화한 평면 모델이다. 실제 RISC-V Sv39는 계층적 페이지 테이블을 사용하고 더 큰 페이지도 지원한다. 4 KiB를 모든 CPU의 유일한 페이지 크기로 외우면 안 된다. 페이지 테이블 엔트리에는 주소 외에도 유효 여부와 읽기·쓰기·실행 등 권한이 들어간다. [MIT xv6, Chapter 3](https://pdos.csail.mit.edu/6.1810/2023/xv6/book-riscv-rev3.pdf)
 
-```mermaid
-flowchart LR
-    VA[가상 주소 / Virtual address] --> SPLIT[페이지 번호 + 오프셋 / VPN + offset]
-    SPLIT --> LOOKUP[TLB 또는 페이지 테이블 / Translation lookup]
-    LOOKUP --> CHECK{매핑·권한 유효? / Valid mapping and permission?}
-    CHECK -->|Yes| PA[물리 프레임 + 오프셋 / PFN + offset]
-    CHECK -->|No| FAULT[예외·커널 처리 / Fault handling]
-```
+![같은 주소, 다른 메모리: 프로세스·가상 메모리·동시성 — 개념도 / Concept diagram](../../../assets/diagrams/processes-memory-concurrency.png)
+
+[SVG](../../../assets/diagrams/processes-memory-concurrency.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/processes-memory-concurrency.mmd)
 
 직접 작성한 개념도다. TLB는 주소 변환 결과를 저장하는 캐시다. 페이지 테이블을 바꾸면 오래된 TLB 항목이 남지 않도록 아키텍처가 요구하는 동기화도 필요하다. TLB hit와 data cache hit는 서로 다른 사건이다.
 

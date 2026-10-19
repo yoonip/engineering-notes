@@ -1,0 +1,5 @@
+flowchart LR
+    S[문제의 사고 조건 / Given incident conditions] --> C{국가 보상 대상? / Compensation eligible?}
+    C -->|해당 / Yes| P[피해자에게 지급 / Pay injured party]
+    P --> R{사후 청구 조건? / Recourse condition?}
+    R -->|해당 / Yes| D[의료인에게 청구 가능 / Recourse permitted]

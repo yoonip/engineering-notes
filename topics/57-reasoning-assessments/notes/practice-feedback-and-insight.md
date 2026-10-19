@@ -41,14 +41,9 @@ $n$개 문항 중 맞힌 수가 $k$면 관찰 정확도는 $k/n$이다. 하지�
 
 시간은 푼 문항의 중앙값과 함께 분포를 보고, 미완료 문항 수를 따로 남긴다. 오답을 버리고 정답 문항의 시간만 비교하면 결과가 편향될 수 있다. 새 자료·일정 기간 뒤의 자료를 별도로 두고 정확도와 속도를 함께 관찰한다. 한 사람의 전후 기록만으로 인과적 효과나 일반 능력 향상을 확정하지 않는다. [확률·추정](../../06-math-to-code/notes/probability-estimation.md)과 [사회 자료의 인과 해석](../../60-society-institutions/notes/evidence-causality-institutions.md)에서 측정 조건을 더 다룬다.
 
-```mermaid
-flowchart LR
-    A[원문과 조건 / Source and conditions] --> B[독립 풀이 / Independent attempt]
-    B --> C[공식 답과 검산 / Official answer and check]
-    C --> D[오류 원인 수정 / Correct the cause]
-    D --> E[시간 뒤 인출 / Delayed retrieval]
-    E --> F[새 자료에서 확인 / Check on unseen material]
-```
+![추론 연습과 통찰: 익숙함을 이해로 착각하지 않기 — 개념도 / Concept diagram](../../../assets/diagrams/practice-feedback-and-insight.png)
+
+[SVG](../../../assets/diagrams/practice-feedback-and-insight.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/practice-feedback-and-insight.mmd)
 
 이 문서를 위해 구성한 학습 기록 흐름이다. 실제 기출의 공개 경로와 식별 방법은 [공식 시험 자료 안내](official-exams-and-past-papers.md)에 정리한다.
 

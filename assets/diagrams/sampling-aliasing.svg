@@ -1,0 +1,58 @@
+
+<svg role="img" aria-label="sampling-aliasing" width="229pt" height="534pt"
+ viewBox="0.00 0.00 229.00 534.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 515.96)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-18,18 -18,-515.96 210.6,-515.96 210.6,18 -18,18"/>
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M96.3,-435.3C96.3,-424 96.3,-411.02 96.3,-399.01"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="98.93,-399.18 96.3,-391.68 93.68,-399.18 98.93,-399.18"/>
+</g>
+<g id="edge2" class="edge">
+<title>B&#45;&gt;C</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M96.3,-326.31C96.3,-315.01 96.3,-302.03 96.3,-290.02"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="98.93,-290.19 96.3,-282.69 93.68,-290.19 98.93,-290.19"/>
+</g>
+<g id="edge3" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M96.3,-217.32C96.3,-206.02 96.3,-193.04 96.3,-181.03"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="98.93,-181.2 96.3,-173.7 93.68,-181.2 98.93,-181.2"/>
+</g>
+<g id="edge4" class="edge">
+<title>D&#45;&gt;E</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M96.3,-108.33C96.3,-97.02 96.3,-84.05 96.3,-72.03"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="98.93,-72.2 96.3,-64.7 93.68,-72.2 98.93,-72.2"/>
+</g>
+<g id="node1" class="node">
+<title>A</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M167.64,-497.96C167.64,-497.96 24.96,-497.96 24.96,-497.96 18.96,-497.96 12.96,-491.96 12.96,-485.96 12.96,-485.96 12.96,-447.97 12.96,-447.97 12.96,-441.97 18.96,-435.97 24.96,-435.97 24.96,-435.97 167.64,-435.97 167.64,-435.97 173.64,-435.97 179.64,-441.97 179.64,-447.97 179.64,-447.97 179.64,-485.96 179.64,-485.96 179.64,-491.96 173.64,-497.96 167.64,-497.96"/>
+<text xml:space="preserve" text-anchor="middle" x="96.3" y="-471.46" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">연속 신호</text>
+<text xml:space="preserve" text-anchor="middle" x="96.3" y="-453.46" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Continuous signal</text>
+</g>
+<g id="node2" class="node">
+<title>B</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M180.6,-388.97C180.6,-388.97 12,-388.97 12,-388.97 6,-388.97 0,-382.97 0,-376.97 0,-376.97 0,-338.98 0,-338.98 0,-332.98 6,-326.98 12,-326.98 12,-326.98 180.6,-326.98 180.6,-326.98 186.6,-326.98 192.6,-332.98 192.6,-338.98 192.6,-338.98 192.6,-376.97 192.6,-376.97 192.6,-382.97 186.6,-388.97 180.6,-388.97"/>
+<text xml:space="preserve" text-anchor="middle" x="96.3" y="-362.47" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">아날로그 대역 제한</text>
+<text xml:space="preserve" text-anchor="middle" x="96.3" y="-344.47" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Analog band limiting</text>
+</g>
+<g id="node3" class="node">
+<title>C</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M151.98,-279.98C151.98,-279.98 40.62,-279.98 40.62,-279.98 34.62,-279.98 28.62,-273.98 28.62,-267.98 28.62,-267.98 28.62,-229.98 28.62,-229.98 28.62,-223.98 34.62,-217.98 40.62,-217.98 40.62,-217.98 151.98,-217.98 151.98,-217.98 157.98,-217.98 163.98,-223.98 163.98,-229.98 163.98,-229.98 163.98,-267.98 163.98,-267.98 163.98,-273.98 157.98,-279.98 151.98,-279.98"/>
+<text xml:space="preserve" text-anchor="middle" x="96.3" y="-253.48" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">시간 표본</text>
+<text xml:space="preserve" text-anchor="middle" x="96.3" y="-235.48" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Time samples</text>
+</g>
+<g id="node4" class="node">
+<title>D</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M149.82,-170.98C149.82,-170.98 42.78,-170.98 42.78,-170.98 36.78,-170.98 30.78,-164.98 30.78,-158.98 30.78,-158.98 30.78,-120.99 30.78,-120.99 30.78,-114.99 36.78,-108.99 42.78,-108.99 42.78,-108.99 149.82,-108.99 149.82,-108.99 155.82,-108.99 161.82,-114.99 161.82,-120.99 161.82,-120.99 161.82,-158.98 161.82,-158.98 161.82,-164.98 155.82,-170.98 149.82,-170.98"/>
+<text xml:space="preserve" text-anchor="middle" x="96.3" y="-144.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">양자화</text>
+<text xml:space="preserve" text-anchor="middle" x="96.3" y="-126.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Quantization</text>
+</g>
+<g id="node5" class="node">
+<title>E</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M167.1,-61.99C167.1,-61.99 25.5,-61.99 25.5,-61.99 19.5,-61.99 13.5,-55.99 13.5,-49.99 13.5,-49.99 13.5,-12 13.5,-12 13.5,-6 19.5,0 25.5,0 25.5,0 167.1,0 167.1,0 173.1,0 179.1,-6 179.1,-12 179.1,-12 179.1,-49.99 179.1,-49.99 179.1,-55.99 173.1,-61.99 167.1,-61.99"/>
+<text xml:space="preserve" text-anchor="middle" x="96.3" y="-35.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">디지털 처리</text>
+<text xml:space="preserve" text-anchor="middle" x="96.3" y="-17.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Digital processing</text>
+</g>
+</g>
+</svg>

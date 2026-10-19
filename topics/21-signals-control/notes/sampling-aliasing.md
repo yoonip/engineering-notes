@@ -14,13 +14,9 @@
 
 샘플링은 시간을 골라 값을 읽는 일이고, 양자화는 읽은 값을 유한한 숫자로 반올림하는 일이다. 표본율을 높이는 것과 ADC 비트 수를 늘리는 것은 서로 다른 문제를 해결한다. [MIT의 sampling 강의](https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-16-sampling/)는 시간 표본과 연속 신호의 관계를, [TI의 anti-aliasing 강의](https://www.ti.com/video/5831231183001)는 ADC 앞단의 필터를 다룬다.
 
-```mermaid
-flowchart LR
-    A[연속 신호 / Continuous signal] --> B[아날로그 대역 제한 / Analog band limiting]
-    B --> C[시간 표본 / Time samples]
-    C --> D[양자화 / Quantization]
-    D --> E[디지털 처리 / Digital processing]
-```
+![샘플링과 aliasing: 숫자로 바꾼 뒤에는 되돌릴 수 없는 정보 — 개념도 / Concept diagram](../../../assets/diagrams/sampling-aliasing.png)
+
+[SVG](../../../assets/diagrams/sampling-aliasing.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/sampling-aliasing.mmd)
 
 이 문서의 도식은 설명을 위해 직접 구성했다.
 

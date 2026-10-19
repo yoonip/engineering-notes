@@ -16,15 +16,9 @@ Keithley SMU는 전압 또는 전류를 공급하면서 전압·전류를 측정
 
 2선 저항 측정에서 양쪽 lead 저항을 r₁,r₂, DUT를 R이라고 하면 이상적인 측정값은 `R2w=R+r₁+r₂`다. 4선 Kelvin 연결은 force 선으로 전류를 흘리고 DUT 양단의 sense 선으로 전압을 읽는다. sense 전류가 충분히 작고 연결이 적절하다면 lead 전압 강하의 영향을 크게 줄인다. sense 위치 사이에 포함된 접촉 저항이나 DUT 내부의 저항까지 사라지는 것은 아니다. remote-sense 허용 전압 차이도 장비 규격을 따라야 한다. [Keithley handbook의 force/sense 설명](https://www.tek.com/en/documents/product-article/keithley-low-level-measurements-handbook---7th-edition)
 
-```mermaid
-flowchart LR
-    F[SMU Force HI] --> A[DUT 단자 A / Terminal A]
-    A --> R[DUT R]
-    R --> B[DUT 단자 B / Terminal B]
-    B --> L[SMU Force LO]
-    A -. 전압 감지 / Sense .-> V[높은 입력 임피던스 / Voltmeter]
-    B -. 전압 감지 / Sense .-> V
-```
+![계측: 숫자를 읽는 것에서 믿을 수 있는 결과로 — 개념도 / Concept diagram](../../../assets/diagrams/measurement-loading-uncertainty.png)
+
+[SVG](../../../assets/diagrams/measurement-loading-uncertainty.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/measurement-loading-uncertainty.mmd)
 
 직접 작성한 Kelvin 연결도다. 이를 재료의 비저항 측정에서 사용하는 4-point probe와 혼동하지 않는다. 비저항으로 환산하려면 시료 두께·형상·probe 간격과 보정 계수 등 별도 모델이 필요하다.
 

@@ -1,0 +1,7 @@
+flowchart LR
+    F[SMU Force HI] --> A[DUT 단자 A / Terminal A]
+    A --> R[DUT R]
+    R --> B[DUT 단자 B / Terminal B]
+    B --> L[SMU Force LO]
+    A -. 전압 감지 / Sense .-> V[높은 입력 임피던스 / Voltmeter]
+    B -. 전압 감지 / Sense .-> V

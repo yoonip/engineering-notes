@@ -53,13 +53,9 @@ $$v(t)=e^{-\alpha t}\left[v_0\cos(\omega_dt)+\frac{d_0+\alpha v_0}{\omega_d}\sin
 
 임계감쇠는 `v(t)=e^(−αt)[v₀+(d₀+αv₀)t]`, 과감쇠는 `Ae^(s₁t)+Be^(s₂t)`이며 A+B=v₀, s₁A+s₂B=d₀로 계수를 정한다. 이 초기값 조건이 빠지면 같은 회로에서도 하나의 응답을 정할 수 없다.
 
-```mermaid
-flowchart LR
-    A[전압원 u / Source] --> B[저항 R / Dissipation]
-    B --> C[인덕터 L / Magnetic energy]
-    C --> D[커패시터 C / Electric energy]
-    D --> A
-```
+![RC·RLC: 회로 법칙에서 시간·주파수 응답까지 — 개념도 / Concept diagram](../../../assets/diagrams/rc-rlc-response.png)
+
+[SVG](../../../assets/diagrams/rc-rlc-response.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/rc-rlc-response.mmd)
 
 직접 작성한 직렬 RLC 연결도다. 출력은 C 양단이다. 전달함수는 `Hc(s)=1/(LCs²+RCs+1)`이다. ω₀를 모든 경우의 출력 공진 주파수라고 부르면 틀린다. 이 출력의 크기 피크는 `0<ζ<1/√2`일 때 `ωp=ω₀√(1-2ζ²)`에서 생긴다. 진동 주파수 `ωd=ω₀√(1-ζ²)`와도 다르다.
 

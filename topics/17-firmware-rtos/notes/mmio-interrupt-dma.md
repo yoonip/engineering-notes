@@ -31,14 +31,17 @@ ST AN4839는 STM32F7/H7의 Cortex-M7 캐시와 DMA 예를 제공한다. Espressi
 
 ### 소유권 상태로 모델링하기
 
-```mermaid
-stateDiagram-v2
-    CPU --> DEVICE_TX: 작성·clean 후 송신 시작 / Prepare and start TX
-    DEVICE_TX --> CPU: 송신 완료 / TX complete
-    CPU --> DEVICE_RX: 수신 버퍼 준비 / Prepare RX
-    DEVICE_RX --> DONE_RX: 수신 완료 / RX complete
-    DONE_RX --> CPU: invalidate 후 반환 / Invalidate and acquire
-```
+![CPU와 장치가 같은 데이터를 다룰 때: MMIO, 인터럽트, DMA — 개념도 / Concept diagram](../../../assets/diagrams/mmio-interrupt-dma.png)
+
+[SVG](../../../assets/diagrams/mmio-interrupt-dma.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/mmio-interrupt-dma.mmd)
+
+| 번호 / No. | 출발 / From | 도착 / To | 조건·동작 / Condition and action |
+| --- | --- | --- | --- |
+| 1 | CPU | DEVICE_TX | 작성·clean 후 송신 시작 / Prepare and start TX |
+| 2 | DEVICE_TX | CPU | 송신 완료 / TX complete |
+| 3 | CPU | DEVICE_RX | 수신 버퍼 준비 / Prepare RX |
+| 4 | DEVICE_RX | DONE_RX | 수신 완료 / RX complete |
+| 5 | DONE_RX | CPU | invalidate 후 반환 / Invalidate and acquire |
 
 이 문서를 위해 작성한 상태도다. 핵심 불변조건은 장치 소유인 동안 CPU가 버퍼를 읽거나 쓰지 않는다는 것이다. 버퍼 길이가 $N$, 입력 속도가 $R$ byte/s이면 한 버퍼가 담는 시간은 $T=N/R$이다. 두 버퍼를 번갈아 쓰는 경우에도 소비자가 반환하는 최악 시간과 스케줄링 지연이 재사용 시점보다 짧아야 한다. 평균 처리 속도만 높다고 overrun이 사라지지는 않는다. 버스 경쟁과 장치 FIFO도 실제 여유를 줄인다.
 

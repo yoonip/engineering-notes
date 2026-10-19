@@ -1,0 +1,16 @@
+digraph Diagram {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.65", ranksep="0.65", splines=spline, outputorder=edgesfirst];
+node [fontname="Malgun Gothic", fontsize=15, shape=box, style="rounded,filled", color="#2563a3", fillcolor="#edf5ff", fontcolor="#172b45", penwidth=1.4, margin="0.20,0.13"];
+edge [fontname="Malgun Gothic", fontsize=12, color="#52677f", fontcolor="#243e5c", penwidth=1.35, arrowsize=0.75];
+"P" [label="근거\nEvidence", shape="box", width=1.370, height=0.861, fixedsize=true];
+"I" [label="연결 가정\nInferential link", shape="box", width=1.970, height=0.861, fixedsize=true];
+"C" [label="결론\nConclusion", shape="box", width=1.610, height=0.861, fixedsize=true];
+"A" [label="대안 설명\nAlternative", shape="box", width=1.580, height=0.861, fixedsize=true];
+"E" [label="반대 자료\nContrary evidence", shape="box", width=2.345, height=0.861, fixedsize=true];
+"S" [label="적용 범위\nScope", shape="box", width=1.430, height=0.861, fixedsize=true];
+"P" -> "I" [label=""];
+"I" -> "C" [label=""];
+"A" -> "I" [label="",style=dashed];
+"E" -> "P" [label="",style=dashed];
+"S" -> "C" [label="",style=dashed];
+}

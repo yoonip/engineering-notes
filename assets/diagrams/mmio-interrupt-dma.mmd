@@ -1,0 +1,6 @@
+stateDiagram-v2
+    CPU --> DEVICE_TX: 작성·clean 후 송신 시작 / Prepare and start TX
+    DEVICE_TX --> CPU: 송신 완료 / TX complete
+    CPU --> DEVICE_RX: 수신 버퍼 준비 / Prepare RX
+    DEVICE_RX --> DONE_RX: 수신 완료 / RX complete
+    DONE_RX --> CPU: invalidate 후 반환 / Invalidate and acquire

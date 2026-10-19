@@ -1,0 +1,6 @@
+flowchart LR
+    A[요청 / Request] --> B{L1 hit?}
+    B -->|yes| C[데이터 반환 / Return]
+    B -->|no| D[하위 계층 접근 / Lower level]
+    D --> E[Line 채움 / Fill]
+    E --> C

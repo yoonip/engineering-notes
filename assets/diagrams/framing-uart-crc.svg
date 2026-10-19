@@ -1,0 +1,86 @@
+
+<svg role="img" aria-label="framing-uart-crc" width="301pt" height="352pt"
+ viewBox="0.00 0.00 301.00 352.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 333.86)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-18,18 -18,-333.86 282.93,-333.86 282.93,18 -18,18"/>
+<g id="edge1" class="edge">
+<title>__START&#45;&gt;WAIT</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M115.61,-309.57C115.61,-301.96 115.61,-277.82 115.61,-257.8"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="118.23,-257.94 115.61,-250.44 112.98,-257.94 118.23,-257.94"/>
+<text xml:space="preserve" text-anchor="middle" x="118.61" y="-275.3" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">1</text>
+</g>
+<g id="edge2" class="edge">
+<title>WAIT&#45;&gt;COLLECT</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M115.61,-206.19C115.61,-191.34 115.61,-170.85 115.61,-154.16"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="118.23,-154.38 115.61,-146.88 112.98,-154.38 118.23,-154.38"/>
+<text xml:space="preserve" text-anchor="middle" x="118.61" y="-171.94" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">2</text>
+</g>
+<g id="edge5" class="edge">
+<title>COLLECT&#45;&gt;COLLECT</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M165.16,-128.55C189.88,-129.2 211.93,-127.64 211.93,-123.85 211.93,-120.55 195.2,-118.94 174.55,-119.01"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="174.67,-116.38 167.21,-119.12 174.75,-121.63 174.67,-116.38"/>
+<text xml:space="preserve" text-anchor="middle" x="214.93" y="-120.25" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">5</text>
+</g>
+<g id="edge8" class="edge">
+<title>COLLECT&#45;&gt;COLLECT</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M165.55,-131.82C210.63,-135.69 258.93,-133.04 258.93,-123.85 258.93,-115.29 217.01,-112.4 174.82,-115.18"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="174.87,-112.55 167.59,-115.73 175.26,-117.78 174.87,-112.55"/>
+<text xml:space="preserve" text-anchor="middle" x="261.93" y="-120.25" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">8</text>
+</g>
+<g id="edge3" class="edge">
+<title>COLLECT&#45;&gt;ESCAPE</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M65.76,-116.42C42.81,-110.69 17.63,-99.85 3.61,-79.37 -4.11,-68.1 2.3,-56.86 13.04,-47.32"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="14.37,-49.61 18.59,-42.89 11.09,-45.51 14.37,-49.61"/>
+<text xml:space="preserve" text-anchor="middle" x="6.61" y="-68.57" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">3</text>
+</g>
+<g id="edge6" class="edge">
+<title>COLLECT&#45;&gt;DROP</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M134.38,-102.82C149.08,-87.14 169.66,-65.17 185.74,-48.02"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="187.27,-50.23 190.48,-42.96 183.43,-46.64 187.27,-50.23"/>
+<text xml:space="preserve" text-anchor="middle" x="171.79" y="-68.57" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">6</text>
+</g>
+<g id="edge4" class="edge">
+<title>ESCAPE&#45;&gt;COLLECT</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M55.14,-41.58C54.63,-53.24 55.59,-67.85 61.61,-79.37 64.93,-85.75 69.65,-91.52 74.93,-96.61"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="72.95,-98.37 80.31,-101.36 76.42,-94.43 72.95,-98.37"/>
+<text xml:space="preserve" text-anchor="middle" x="64.61" y="-68.57" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">4</text>
+</g>
+<g id="edge9" class="edge">
+<title>ESCAPE&#45;&gt;COLLECT</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M69.04,-41.47C77.77,-56.73 89.91,-77.95 99.61,-94.89"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="97.13,-95.85 103.13,-101.05 101.69,-93.24 97.13,-95.85"/>
+<text xml:space="preserve" text-anchor="middle" x="93.08" y="-68.57" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">9</text>
+</g>
+<g id="edge7" class="edge">
+<title>DROP&#45;&gt;COLLECT</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M203.2,-41.5C198.11,-53.42 190.49,-68.32 180.61,-79.37 174.63,-86.05 167.42,-92.17 160,-97.59"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="158.9,-95.16 154.23,-101.59 161.89,-99.47 158.9,-95.16"/>
+<text xml:space="preserve" text-anchor="middle" x="194.14" y="-68.57" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">7</text>
+</g>
+<g id="node1" class="node">
+<title>__START</title>
+<ellipse fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" cx="115.61" cy="-312.98" rx="2.88" ry="2.88"/>
+</g>
+<g id="node2" class="node">
+<title>WAIT</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M140.51,-247.7C140.51,-247.7 90.71,-247.7 90.71,-247.7 84.71,-247.7 78.71,-241.7 78.71,-235.7 78.71,-235.7 78.71,-218.74 78.71,-218.74 78.71,-212.74 84.71,-206.74 90.71,-206.74 90.71,-206.74 140.51,-206.74 140.51,-206.74 146.51,-206.74 152.51,-212.74 152.51,-218.74 152.51,-218.74 152.51,-235.7 152.51,-235.7 152.51,-241.7 146.51,-247.7 140.51,-247.7"/>
+<text xml:space="preserve" text-anchor="middle" x="115.61" y="-222.72" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">WAIT</text>
+</g>
+<g id="node3" class="node">
+<title>COLLECT</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M152.93,-144.34C152.93,-144.34 78.29,-144.34 78.29,-144.34 72.29,-144.34 66.29,-138.34 66.29,-132.34 66.29,-132.34 66.29,-115.37 66.29,-115.37 66.29,-109.37 72.29,-103.37 78.29,-103.37 78.29,-103.37 152.93,-103.37 152.93,-103.37 158.93,-103.37 164.93,-109.37 164.93,-115.37 164.93,-115.37 164.93,-132.34 164.93,-132.34 164.93,-138.34 158.93,-144.34 152.93,-144.34"/>
+<text xml:space="preserve" text-anchor="middle" x="115.61" y="-119.35" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">COLLECT</text>
+</g>
+<g id="node4" class="node">
+<title>ESCAPE</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M91.15,-40.97C91.15,-40.97 24.07,-40.97 24.07,-40.97 18.07,-40.97 12.07,-34.97 12.07,-28.97 12.07,-28.97 12.07,-12 12.07,-12 12.07,-6 18.07,0 24.07,0 24.07,0 91.15,0 91.15,0 97.15,0 103.15,-6 103.15,-12 103.15,-12 103.15,-28.97 103.15,-28.97 103.15,-34.97 97.15,-40.97 91.15,-40.97"/>
+<text xml:space="preserve" text-anchor="middle" x="57.61" y="-15.98" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">ESCAPE</text>
+</g>
+<g id="node5" class="node">
+<title>DROP</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M237.67,-40.97C237.67,-40.97 183.55,-40.97 183.55,-40.97 177.55,-40.97 171.55,-34.97 171.55,-28.97 171.55,-28.97 171.55,-12 171.55,-12 171.55,-6 177.55,0 183.55,0 183.55,0 237.67,0 237.67,0 243.67,0 249.67,-6 249.67,-12 249.67,-12 249.67,-28.97 249.67,-28.97 249.67,-34.97 243.67,-40.97 237.67,-40.97"/>
+<text xml:space="preserve" text-anchor="middle" x="210.61" y="-15.98" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">DROP</text>
+</g>
+</g>
+</svg>

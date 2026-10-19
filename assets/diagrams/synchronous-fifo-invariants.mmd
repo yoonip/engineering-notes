@@ -1,0 +1,7 @@
+flowchart LR
+    P[생산자 / Producer] -->|write + data| G[수락 판단 / Acceptance]
+    G --> M[순환 저장 배열 / Ring memory]
+    M --> R[읽기 레지스터 / Read register]
+    R --> C[소비자 / Consumer]
+    N[점유량 n / Occupancy] --> G
+    G --> N

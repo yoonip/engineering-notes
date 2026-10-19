@@ -1,0 +1,60 @@
+
+<svg role="img" aria-label="security-and-reliability-boundaries" width="228pt" height="576pt"
+ viewBox="0.00 0.00 228.00 576.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 558.01)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-18,18 -18,-558.01 209.52,-558.01 209.52,18 -18,18"/>
+<g id="edge1" class="edge">
+<title>A&#45;&gt;B</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M95.76,-477.35C95.76,-466.05 95.76,-453.07 95.76,-441.06"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="98.39,-441.23 95.76,-433.73 93.14,-441.23 98.39,-441.23"/>
+</g>
+<g id="edge2" class="edge">
+<title>B&#45;&gt;C</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M95.76,-368.45C95.76,-357.29 95.76,-344.35 95.76,-331.92"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="98.39,-332.09 95.76,-324.59 93.14,-332.09 98.39,-332.09"/>
+</g>
+<g id="edge3" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M95.76,-238.66C95.76,-226.88 95.76,-213.89 95.76,-201.62"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="98.39,-201.95 95.76,-194.45 93.14,-201.95 98.39,-201.95"/>
+</g>
+<g id="edge4" class="edge">
+<title>D&#45;&gt;E</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M95.76,-108.4C95.76,-96.61 95.76,-83.78 95.76,-72.06"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="98.39,-72.06 95.76,-64.56 93.14,-72.06 98.39,-72.06"/>
+</g>
+<g id="node1" class="node">
+<title>A</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M159,-540.01C159,-540.01 32.52,-540.01 32.52,-540.01 26.52,-540.01 20.52,-534.01 20.52,-528.01 20.52,-528.01 20.52,-490.02 20.52,-490.02 20.52,-484.02 26.52,-478.02 32.52,-478.02 32.52,-478.02 159,-478.02 159,-478.02 165,-478.02 171,-484.02 171,-490.02 171,-490.02 171,-528.01 171,-528.01 171,-534.01 165,-540.01 159,-540.01"/>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-513.51" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">외부 바이트</text>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-495.51" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Untrusted bytes</text>
+</g>
+<g id="node2" class="node">
+<title>B</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M164.4,-431.02C164.4,-431.02 27.12,-431.02 27.12,-431.02 21.12,-431.02 15.12,-425.02 15.12,-419.02 15.12,-419.02 15.12,-381.02 15.12,-381.02 15.12,-375.02 21.12,-369.02 27.12,-369.02 27.12,-369.02 164.4,-369.02 164.4,-369.02 170.4,-369.02 176.4,-375.02 176.4,-381.02 176.4,-381.02 176.4,-419.02 176.4,-419.02 176.4,-425.02 170.4,-431.02 164.4,-431.02"/>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-404.52" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">길이·형식 제한</text>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-386.52" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Bound and parse</text>
+</g>
+<g id="node3" class="node">
+<title>C</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M154.14,-322.02C154.14,-322.02 37.38,-322.02 37.38,-322.02 31.38,-322.02 25.38,-316.02 25.38,-310.02 25.38,-310.02 25.38,-251.01 25.38,-251.01 25.38,-245.01 31.38,-239.01 37.38,-239.01 37.38,-239.01 154.14,-239.01 154.14,-239.01 160.14,-239.01 166.14,-245.01 166.14,-251.01 166.14,-251.01 166.14,-310.02 166.14,-310.02 166.14,-316.02 160.14,-322.02 154.14,-322.02"/>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-294.02" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">무결성·인증</text>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-276.02" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Integrity and</text>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-258.02" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">authentication</text>
+</g>
+<g id="node4" class="node">
+<title>D</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M179.52,-192.01C179.52,-192.01 12,-192.01 12,-192.01 6,-192.01 0,-186.01 0,-180.01 0,-180.01 0,-120.99 0,-120.99 0,-114.99 6,-108.99 12,-108.99 12,-108.99 179.52,-108.99 179.52,-108.99 185.52,-108.99 191.52,-114.99 191.52,-120.99 191.52,-120.99 191.52,-180.01 191.52,-180.01 191.52,-186.01 185.52,-192.01 179.52,-192.01"/>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-164" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">재전송·권한·범위 검사</text>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-146" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Freshness and</text>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-128" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">authorization</text>
+</g>
+<g id="node5" class="node">
+<title>E</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M161.16,-61.99C161.16,-61.99 30.36,-61.99 30.36,-61.99 24.36,-61.99 18.36,-55.99 18.36,-49.99 18.36,-49.99 18.36,-12 18.36,-12 18.36,-6 24.36,0 30.36,0 30.36,0 161.16,0 161.16,0 167.16,0 173.16,-6 173.16,-12 173.16,-12 173.16,-49.99 173.16,-49.99 173.16,-55.99 167.16,-61.99 161.16,-61.99"/>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-35.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">허용된 동작</text>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-17.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Permitted action</text>
+</g>
+</g>
+</svg>

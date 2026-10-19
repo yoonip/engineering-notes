@@ -1,0 +1,8 @@
+flowchart LR
+    A[소스 / Source] --> B[컴파일·어셈블 / Compile and assemble]
+    B --> C[목적 파일 / Object files]
+    C --> D[링크·배치 / Link and place]
+    D --> E[ELF]
+    E --> F[로더 또는 플래시 기록 / Loader or flash programming]
+    F --> G[시작 코드 / Startup]
+    G --> H[main 또는 앱 진입점 / Application entry]

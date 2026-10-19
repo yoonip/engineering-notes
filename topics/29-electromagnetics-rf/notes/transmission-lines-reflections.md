@@ -45,14 +45,9 @@ source는 Thevenin step VS와 저항 RS로 나타낸다. 아직 load의 정보�
 $$a_k=a_0(\Gamma_L\Gamma_S)^k,\qquad
 \Delta v_{L,k}=a_k(1+\Gamma_L),\quad t_k=(2k+1)t_d.$$
 
-```mermaid
-sequenceDiagram
-    participant S as Source
-    participant L as Load
-    S->>L: a0, arrival td
-    L->>S: GammaL a0, arrival 2td
-    S->>L: GammaS GammaL a0, arrival 3td
-```
+![전송선과 반사: 배선도 신호를 저장하고 전달한다 — 개념도 / Concept diagram](../../../assets/diagrams/transmission-lines-reflections.png)
+
+[SVG](../../../assets/diagrams/transmission-lines-reflections.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/transmission-lines-reflections.mmd)
 
 직접 작성한 첫 반사들의 시간 도식이다. VS=3.3 V, RS=Z₀=50 Ω, open load이면 a₀=1.65 V가 td 뒤 load에서 3.3 V가 된다. 돌아온 파는 ΓS=0인 source에서 흡수된다. 반대로 load도 50 Ω로 종단하면 load의 정상 전압은 1.65 V다. 종단 저항의 분압과 전력도 설계에 포함해야 한다.
 

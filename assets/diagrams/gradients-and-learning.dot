@@ -1,0 +1,17 @@
+digraph Diagram {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.65", ranksep="0.65", splines=spline, outputorder=edgesfirst];
+node [fontname="Malgun Gothic", fontsize=15, shape=box, style="rounded,filled", color="#2563a3", fillcolor="#edf5ff", fontcolor="#172b45", penwidth=1.4, margin="0.20,0.13"];
+edge [fontname="Malgun Gothic", fontsize=12, color="#52677f", fontcolor="#243e5c", penwidth=1.35, arrowsize=0.75];
+"X" [label="입력 x\nInput", shape="box", width=1.115, height=0.861, fixedsize=true];
+"Z" [label="wx+b", shape="box", width=1.055, height=0.569, fixedsize=true];
+"S" [label="sigmoid", shape="box", width=1.280, height=0.569, fixedsize=true];
+"L" [label="손실\nLoss", shape="box", width=0.905, height=0.861, fixedsize=true];
+"Y" [label="정답 y\nLabel", shape="box", width=1.115, height=0.861, fixedsize=true];
+"W" [label="갱신\nUpdate w,b", shape="box", width=1.640, height=0.861, fixedsize=true];
+"X" -> "Z" [label=""];
+"Z" -> "S" [label=""];
+"S" -> "L" [label=""];
+"Y" -> "L" [label=""];
+"L" -> "Z" [label="기울기\nGradient",style=dashed];
+"Z" -> "W" [label="",style=dashed];
+}

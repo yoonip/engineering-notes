@@ -14,18 +14,21 @@ UART로 `온도=25`라는 데이터를 보냈다고 해도 수신 함수가 이�
 
 이 예제는 `0x7E`를 경계로 사용한다. 데이터나 CRC 안의 `0x7E`와 `0x7D`는 `0x7D` 뒤에 원래 바이트 XOR `0x20`을 보내는 방식으로 바꾼다. 수신기는 escape 상태를 기억해 원래 바이트를 복원한다. 한 바이트씩 들어와도 이 상태를 유지하므로 분할 수신을 처리할 수 있다. 이 방식은 RFC1662의 octet stuffing과 FCS 계산을 참고한 작은 애플리케이션 프레임이며, 주소·제어·프로토콜 필드나 ACCM 협상 등을 갖춘 완전한 PPP 구현은 아니다. [RFC1662 §4·Appendix C](https://www.rfc-editor.org/rfc/rfc1662.html)
 
-```mermaid
-stateDiagram-v2
-    [*] --> WAIT
-    WAIT --> COLLECT: 0x7E
-    COLLECT --> ESCAPE: 0x7D
-    ESCAPE --> COLLECT: XOR 0x20 후 저장 / Decode and append
-    COLLECT --> COLLECT: 일반 바이트 저장 / Append byte
-    COLLECT --> DROP: 길이 상한 초과 / Capacity exceeded
-    DROP --> COLLECT: 0x7E
-    COLLECT --> COLLECT: 0x7E에서 검사·초기화 / Validate and restart
-    ESCAPE --> COLLECT: 0x7E에서 폐기·초기화 / Abort and restart
-```
+![바이트가 메시지가 되려면: UART, 프레이밍과 CRC — 개념도 / Concept diagram](../../../assets/diagrams/framing-uart-crc.png)
+
+[SVG](../../../assets/diagrams/framing-uart-crc.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/framing-uart-crc.mmd)
+
+| 번호 / No. | 출발 / From | 도착 / To | 조건·동작 / Condition and action |
+| --- | --- | --- | --- |
+| 1 | 시작 / Start | WAIT | 초기화 / Initialize |
+| 2 | WAIT | COLLECT | 0x7E |
+| 3 | COLLECT | ESCAPE | 0x7D |
+| 4 | ESCAPE | COLLECT | XOR 0x20 후 저장 / Decode and append |
+| 5 | COLLECT | COLLECT | 일반 바이트 저장 / Append byte |
+| 6 | COLLECT | DROP | 길이 상한 초과 / Capacity exceeded |
+| 7 | DROP | COLLECT | 0x7E |
+| 8 | COLLECT | COLLECT | 0x7E에서 검사·초기화 / Validate and restart |
+| 9 | ESCAPE | COLLECT | 0x7E에서 폐기·초기화 / Abort and restart |
 
 직접 작성한 상태도다. `DROP` 상태는 경계가 나올 때까지 모든 내용을 버린다. 입력이 잘못되어도 저장 공간을 끝없이 늘리지 않는다. 경계 직전이 escape이면 미완성 프레임으로 버린다. 전송 중단 후의 timeout은 이 바이트 모델 밖에서 시간 기준을 정해 추가할 수 있다.
 

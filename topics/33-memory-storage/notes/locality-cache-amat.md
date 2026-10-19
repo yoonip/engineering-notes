@@ -40,14 +40,9 @@ p를 miss의 전체 시간으로 정의했다면 식은 `(1-m)h+mp`가 된다. �
 
 ### 4. 지연을 줄이는 일과 전송량을 늘리는 일
 
-```mermaid
-flowchart LR
-    A[요청 / Request] --> B{L1 hit?}
-    B -->|yes| C[데이터 반환 / Return]
-    B -->|no| D[하위 계층 접근 / Lower level]
-    D --> E[Line 채움 / Fill]
-    E --> C
-```
+![메모리 지역성과 캐시: 평균 지연과 대역폭을 나눠 보기 — 개념도 / Concept diagram](../../../assets/diagrams/locality-cache-amat.png)
+
+[SVG](../../../assets/diagrams/locality-cache-amat.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/locality-cache-amat.mmd)
 
 직접 작성한 blocking 읽기 경로다. latency는 한 요청이 끝날 때까지 걸리는 시간이고 bandwidth는 일정 기간에 옮긴 byte 수를 시간으로 나눈 값이다. line이 64 byte인데 4 byte만 쓴다면 유효 데이터와 실제 전송량이 다를 수 있다. GPU에서는 여러 thread의 인접 접근을 적은 transaction으로 합치는 coalescing이 이 낭비를 줄인다. [NVIDIA의 global memory 접근 분석](https://developer.nvidia.com/blog/unlock-gpu-performance-global-memory-access-in-cuda/)
 

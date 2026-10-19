@@ -22,11 +22,9 @@ $$m\ddot x=-kx,\qquad \ddot x+\omega^2x=0.$$
 
 이 선형 모델과 적용 조건은 [MIT 8.01 Chapter 23](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/mit8_01scs22_chapter23.pdf)와 [Rice University OpenStax, §15.1](https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion)을 대조했다.
 
-```mermaid
-flowchart LR
-    U["스프링 위치에너지 / Spring energy"] -->|"평형점으로 이동 / Toward equilibrium"| K["물체 운동에너지 / Kinetic energy"]
-    K -->|"평형점을 지나 스프링 변형 / Spring deformation"| U
-```
+![역학, 에너지, 진동 | Mechanics, energy, and oscillation — 개념도 / Concept diagram](../../../assets/diagrams/mechanics-energy-oscillation.png)
+
+[SVG](../../../assets/diagrams/mechanics-energy-oscillation.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/mechanics-energy-oscillation.mmd)
 
 도식은 위 모델의 에너지 교환을 나타낸다. / The original diagram represents energy exchange in this model.
 

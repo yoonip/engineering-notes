@@ -38,12 +38,9 @@ r=\frac{\alpha\Delta t}{\Delta x^2}.$$
 
 FTCS라는 이름은 forward time, centred space에서 왔다. 충분히 매끄러운 해에서 시간 1차·공간 2차 정확도다. $0\le r\le1/2$이면 새 값은 이웃 두 점과 자신의 비음수 가중평균이다. 따라서 고정 경계와 초기값 범위를 벗어나는 새 극값을 만들지 않는다. Fourier 모드 $e^{\mathrm ji\theta}$를 대입해도 증폭계수 $G=1-4r\sin^2(\theta/2)$가 나와 $|G|\le1$인 동일 조건을 얻는다. 이 조건은 이 글의 1차원·균일 격자·상수 계수 FTCS에 대한 것이다. [Cambridge 수치해석 안정성 자료](https://www.damtp.cam.ac.uk/user/hf323/M21-II-NA/demos/pde_stability/pde_stability.html)와 [TU Delft diffusion equation](https://mude.citg.tudelft.nl/book/2025/numerical_methods_for_PDEs/diffusion_equation.html)에서 교차 확인했다.
 
-```mermaid
-flowchart LR
-    L["T i-1, 현재 / current"] --> N["T i, 다음 / next"]
-    C["T i, 현재 / current"] --> N
-    R["T i+1, 현재 / current"] --> N
-```
+![열전도와 확산 | Heat conduction and diffusion — 개념도 / Concept diagram](../../../assets/diagrams/heat-diffusion.png)
+
+[SVG](../../../assets/diagrams/heat-diffusion.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/heat-diffusion.mmd)
 
 도식은 한 격자점의 갱신 의존 관계다. / The original diagram shows one stencil update.
 

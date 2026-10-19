@@ -38,14 +38,9 @@ $$P\Rightarrow Q,\quad P\quad\therefore Q$$
 
 도덕적 숙고에서는 결과와 피해, 권리와 의무, 공정한 절차, 관계와 책임 등 서로 다른 고려가 충돌할 수 있다. 어떤 관점이든 이름만 붙이는 것으로 판단이 끝나지는 않는다. 누구의 이익과 부담을 세었는지, 놓친 사람이 없는지, 비교한 대안이 실제로 가능한지 설명해야 한다. [SEP, Moral Reasoning §2](https://plato.stanford.edu/entries/reasoning-moral/)
 
-```mermaid
-flowchart LR
-    A[질문과 용어 / Question and terms] --> B[사실·근거 / Facts and evidence]
-    B --> D[전제·추론·반론 / Premises and objections]
-    C[가치·우선순위 / Values and priorities] --> D
-    D --> E[범위를 밝힌 결론 / Qualified conclusion]
-    E --> F[새 근거에 따른 수정 / Revision with new evidence]
-```
+![안다는 것, 논증한다는 것, 옳다고 판단한다는 것 — 개념도 / Concept diagram](../../../assets/diagrams/knowledge-arguments-values.png)
+
+[SVG](../../../assets/diagrams/knowledge-arguments-values.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/knowledge-arguments-values.mmd)
 
 이 문서를 위해 작성한 논증 검토 흐름도다. 가치가 들어간다는 이유로 사실 확인을 포기할 필요도, 사실을 안다는 이유로 가치 선택을 숨길 필요도 없다.
 

@@ -1,0 +1,18 @@
+digraph Diagram {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.65", ranksep="0.65", splines=spline, outputorder=edgesfirst];
+node [fontname="Malgun Gothic", fontsize=15, shape=box, style="rounded,filled", color="#2563a3", fillcolor="#edf5ff", fontcolor="#172b45", penwidth=1.4, margin="0.20,0.13"];
+edge [fontname="Malgun Gothic", fontsize=12, color="#52677f", fontcolor="#243e5c", penwidth=1.35, arrowsize=0.75];
+"Q" [label="Q", shape="box", width=0.680, height=0.569, fixedsize=true];
+"D" [label="QK transpose", shape="box", width=1.850, height=0.569, fixedsize=true];
+"K" [label="K", shape="box", width=0.620, height=0.569, fixedsize=true];
+"S" [label="Scale and mask", shape="box", width=2.075, height=0.569, fixedsize=true];
+"A" [label="Row softmax", shape="box", width=1.790, height=0.569, fixedsize=true];
+"O" [label="Weighted sum", shape="box", width=1.970, height=0.569, fixedsize=true];
+"V" [label="V", shape="box", width=0.680, height=0.569, fixedsize=true];
+"Q" -> "D" [label=""];
+"K" -> "D" [label=""];
+"D" -> "S" [label=""];
+"S" -> "A" [label=""];
+"A" -> "O" [label=""];
+"V" -> "O" [label=""];
+}

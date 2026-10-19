@@ -1,0 +1,7 @@
+flowchart LR
+    R[목표 r / Reference] --> E[오차 r-y / Error]
+    E --> K[비례 제어 K / P controller]
+    K --> H[입력 유지 / Hold]
+    H --> P[대상 시스템 / Plant]
+    P --> Y[출력 y / Output]
+    Y --> E

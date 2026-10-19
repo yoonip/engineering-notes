@@ -1,0 +1,72 @@
+
+<svg role="img" aria-label="processes-memory-concurrency" width="415pt" height="643pt"
+ viewBox="0.00 0.00 415.00 643.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 624.77)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-18,18 -18,-624.77 397.14,-624.77 397.14,18 -18,18"/>
+<g id="edge1" class="edge">
+<title>VA&#45;&gt;SPLIT</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M201.76,-544.12C201.76,-532.18 201.76,-518.34 201.76,-505.64"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="204.39,-505.74 201.76,-498.24 199.14,-505.74 204.39,-505.74"/>
+</g>
+<g id="edge2" class="edge">
+<title>SPLIT&#45;&gt;LOOKUP</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M201.76,-433.13C201.76,-421.19 201.76,-407.34 201.76,-394.65"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="204.39,-394.75 201.76,-387.25 199.14,-394.75 204.39,-394.75"/>
+</g>
+<g id="edge3" class="edge">
+<title>LOOKUP&#45;&gt;CHECK</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M201.76,-322.25C201.76,-311.01 201.76,-297.66 201.76,-283.99"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="204.39,-284.04 201.76,-276.54 199.14,-284.04 204.39,-284.04"/>
+</g>
+<g id="edge4" class="edge">
+<title>CHECK&#45;&gt;PA</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M165.28,-140.93C150.48,-117.74 133.76,-91.55 120.43,-70.66"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="122.66,-69.27 116.42,-64.36 118.24,-72.1 122.66,-69.27"/>
+<text xml:space="preserve" text-anchor="middle" x="148.6" y="-89.59" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">Yes</text>
+</g>
+<g id="edge5" class="edge">
+<title>CHECK&#45;&gt;FAULT</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M238.28,-141.4C253.42,-117.9 270.58,-91.26 284.18,-70.15"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="286.25,-71.79 288.1,-64.07 281.83,-68.95 286.25,-71.79"/>
+<text xml:space="preserve" text-anchor="middle" x="278.43" y="-89.59" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">No</text>
+</g>
+<g id="node1" class="node">
+<title>VA</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M263.38,-606.77C263.38,-606.77 140.14,-606.77 140.14,-606.77 134.14,-606.77 128.14,-600.77 128.14,-594.77 128.14,-594.77 128.14,-556.78 128.14,-556.78 128.14,-550.78 134.14,-544.78 140.14,-544.78 140.14,-544.78 263.38,-544.78 263.38,-544.78 269.38,-544.78 275.38,-550.78 275.38,-556.78 275.38,-556.78 275.38,-594.77 275.38,-594.77 275.38,-600.77 269.38,-606.77 263.38,-606.77"/>
+<text xml:space="preserve" text-anchor="middle" x="201.76" y="-580.27" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">가상 주소</text>
+<text xml:space="preserve" text-anchor="middle" x="201.76" y="-562.27" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Virtual address</text>
+</g>
+<g id="node2" class="node">
+<title>SPLIT</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M286.6,-495.78C286.6,-495.78 116.92,-495.78 116.92,-495.78 110.92,-495.78 104.92,-489.78 104.92,-483.78 104.92,-483.78 104.92,-445.78 104.92,-445.78 104.92,-439.78 110.92,-433.78 116.92,-433.78 116.92,-433.78 286.6,-433.78 286.6,-433.78 292.6,-433.78 298.6,-439.78 298.6,-445.78 298.6,-445.78 298.6,-483.78 298.6,-483.78 298.6,-489.78 292.6,-495.78 286.6,-495.78"/>
+<text xml:space="preserve" text-anchor="middle" x="201.76" y="-469.28" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">페이지 번호 + 오프셋</text>
+<text xml:space="preserve" text-anchor="middle" x="201.76" y="-451.28" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">VPN + offset</text>
+</g>
+<g id="node3" class="node">
+<title>LOOKUP</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M293.08,-384.78C293.08,-384.78 110.44,-384.78 110.44,-384.78 104.44,-384.78 98.44,-378.78 98.44,-372.78 98.44,-372.78 98.44,-334.79 98.44,-334.79 98.44,-328.79 104.44,-322.79 110.44,-322.79 110.44,-322.79 293.08,-322.79 293.08,-322.79 299.08,-322.79 305.08,-328.79 305.08,-334.79 305.08,-334.79 305.08,-372.78 305.08,-372.78 305.08,-378.78 299.08,-384.78 293.08,-384.78"/>
+<text xml:space="preserve" text-anchor="middle" x="201.76" y="-358.29" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">TLB 또는 페이지 테이블</text>
+<text xml:space="preserve" text-anchor="middle" x="201.76" y="-340.29" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Translation lookup</text>
+</g>
+<g id="node4" class="node">
+<title>CHECK</title>
+<polygon fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" points="201.76,-273.79 43,-199.09 201.76,-124.39 360.52,-199.09 201.76,-273.79"/>
+<text xml:space="preserve" text-anchor="middle" x="201.76" y="-212.59" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">매핑·권한 유효?</text>
+<text xml:space="preserve" text-anchor="middle" x="201.76" y="-194.59" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Valid mapping and</text>
+<text xml:space="preserve" text-anchor="middle" x="201.76" y="-176.59" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">permission?</text>
+</g>
+<g id="node5" class="node">
+<title>PA</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M179.52,-61.99C179.52,-61.99 12,-61.99 12,-61.99 6,-61.99 0,-55.99 0,-49.99 0,-49.99 0,-12 0,-12 0,-6 6,0 12,0 12,0 179.52,0 179.52,0 185.52,0 191.52,-6 191.52,-12 191.52,-12 191.52,-49.99 191.52,-49.99 191.52,-55.99 185.52,-61.99 179.52,-61.99"/>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-35.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">물리 프레임 + 오프셋</text>
+<text xml:space="preserve" text-anchor="middle" x="95.76" y="-17.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">PFN + offset</text>
+</g>
+<g id="node6" class="node">
+<title>FAULT</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M367.14,-61.99C367.14,-61.99 250.38,-61.99 250.38,-61.99 244.38,-61.99 238.38,-55.99 238.38,-49.99 238.38,-49.99 238.38,-12 238.38,-12 238.38,-6 244.38,0 250.38,0 250.38,0 367.14,0 367.14,0 373.14,0 379.14,-6 379.14,-12 379.14,-12 379.14,-49.99 379.14,-49.99 379.14,-55.99 373.14,-61.99 367.14,-61.99"/>
+<text xml:space="preserve" text-anchor="middle" x="308.76" y="-35.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">예외·커널 처리</text>
+<text xml:space="preserve" text-anchor="middle" x="308.76" y="-17.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Fault handling</text>
+</g>
+</g>
+</svg>

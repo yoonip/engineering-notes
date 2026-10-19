@@ -1,0 +1,13 @@
+digraph Diagram {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.65", ranksep="0.65", splines=spline, outputorder=edgesfirst];
+node [fontname="Malgun Gothic", fontsize=15, shape=box, style="rounded,filled", color="#2563a3", fillcolor="#edf5ff", fontcolor="#172b45", penwidth=1.4, margin="0.20,0.13"];
+edge [fontname="Malgun Gothic", fontsize=12, color="#52677f", fontcolor="#243e5c", penwidth=1.35, arrowsize=0.75];
+"A" [label="전압원 u\nSource", shape="box", width=1.340, height=0.861, fixedsize=true];
+"B" [label="저항 R\nDissipation", shape="box", width=1.595, height=0.861, fixedsize=true];
+"C" [label="인덕터 L\nMagnetic energy", shape="box", width=2.210, height=0.861, fixedsize=true];
+"D" [label="커패시터 C\nElectric energy", shape="box", width=1.970, height=0.861, fixedsize=true];
+"A" -> "B" [label=""];
+"B" -> "C" [label=""];
+"C" -> "D" [label=""];
+"D" -> "A" [label=""];
+}

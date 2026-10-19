@@ -1,0 +1,75 @@
+
+<svg role="img" aria-label="synchronous-fifo-invariants" width="341pt" height="555pt"
+ viewBox="0.00 0.00 341.00 555.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 537.36)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-18,18 -18,-537.36 322.96,-537.36 322.96,18 -18,18"/>
+<g id="edge1" class="edge">
+<title>P&#45;&gt;G</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M245.38,-456.8C245.38,-441.02 245.38,-421.6 245.38,-404.68"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="248.01,-405.12 245.38,-397.62 242.76,-405.12 248.01,-405.12"/>
+<text xml:space="preserve" text-anchor="middle" x="274.09" y="-422.57" font-family="Malgun Gothic" font-size="12.00" fill="#243e5c">write + data</text>
+</g>
+<g id="edge2" class="edge">
+<title>G&#45;&gt;M</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M196.17,-332.32C174.83,-319.03 149.7,-303.38 127.54,-289.58"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="129.01,-287.41 121.26,-285.67 126.24,-291.86 129.01,-287.41"/>
+</g>
+<g id="edge6" class="edge">
+<title>G&#45;&gt;N</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M229.35,-332.32C227.65,-320.38 227.31,-306.54 228.33,-293.84"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="230.94,-294.18 229.16,-286.43 225.72,-293.59 230.94,-294.18"/>
+</g>
+<g id="edge3" class="edge">
+<title>M&#45;&gt;R</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M70.38,-221.33C70.38,-209.39 70.38,-195.54 70.38,-182.85"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="73.01,-182.95 70.38,-175.45 67.76,-182.95 73.01,-182.95"/>
+</g>
+<g id="edge4" class="edge">
+<title>R&#45;&gt;C</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M70.38,-110.34C70.38,-98.4 70.38,-84.55 70.38,-71.85"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="73.01,-71.96 70.38,-64.46 67.76,-71.96 73.01,-71.96"/>
+</g>
+<g id="edge5" class="edge">
+<title>N&#45;&gt;G</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M261.38,-284.4C263.1,-296.32 263.45,-310.16 262.45,-322.87"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="259.84,-322.55 261.63,-330.29 265.06,-323.12 259.84,-322.55"/>
+</g>
+<g id="node1" class="node">
+<title>P</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M283.78,-519.36C283.78,-519.36 206.98,-519.36 206.98,-519.36 200.98,-519.36 194.98,-513.36 194.98,-507.36 194.98,-507.36 194.98,-469.37 194.98,-469.37 194.98,-463.37 200.98,-457.37 206.98,-457.37 206.98,-457.37 283.78,-457.37 283.78,-457.37 289.78,-457.37 295.78,-463.37 295.78,-469.37 295.78,-469.37 295.78,-507.36 295.78,-507.36 295.78,-513.36 289.78,-519.36 283.78,-519.36"/>
+<text xml:space="preserve" text-anchor="middle" x="245.38" y="-492.86" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">생산자</text>
+<text xml:space="preserve" text-anchor="middle" x="245.38" y="-474.86" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Producer</text>
+</g>
+<g id="node2" class="node">
+<title>G</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M292.96,-394.97C292.96,-394.97 197.8,-394.97 197.8,-394.97 191.8,-394.97 185.8,-388.97 185.8,-382.97 185.8,-382.97 185.8,-344.98 185.8,-344.98 185.8,-338.98 191.8,-332.98 197.8,-332.98 197.8,-332.98 292.96,-332.98 292.96,-332.98 298.96,-332.98 304.96,-338.98 304.96,-344.98 304.96,-344.98 304.96,-382.97 304.96,-382.97 304.96,-388.97 298.96,-394.97 292.96,-394.97"/>
+<text xml:space="preserve" text-anchor="middle" x="245.38" y="-368.47" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">수락 판단</text>
+<text xml:space="preserve" text-anchor="middle" x="245.38" y="-350.47" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Acceptance</text>
+</g>
+<g id="node3" class="node">
+<title>M</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M128.76,-283.98C128.76,-283.98 12,-283.98 12,-283.98 6,-283.98 0,-277.98 0,-271.98 0,-271.98 0,-233.98 0,-233.98 0,-227.98 6,-221.98 12,-221.98 12,-221.98 128.76,-221.98 128.76,-221.98 134.76,-221.98 140.76,-227.98 140.76,-233.98 140.76,-233.98 140.76,-271.98 140.76,-271.98 140.76,-277.98 134.76,-283.98 128.76,-283.98"/>
+<text xml:space="preserve" text-anchor="middle" x="70.38" y="-257.48" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">순환 저장 배열</text>
+<text xml:space="preserve" text-anchor="middle" x="70.38" y="-239.48" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Ring memory</text>
+</g>
+<g id="node4" class="node">
+<title>R</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M125.52,-172.98C125.52,-172.98 15.24,-172.98 15.24,-172.98 9.24,-172.98 3.24,-166.98 3.24,-160.98 3.24,-160.98 3.24,-122.99 3.24,-122.99 3.24,-116.99 9.24,-110.99 15.24,-110.99 15.24,-110.99 125.52,-110.99 125.52,-110.99 131.52,-110.99 137.52,-116.99 137.52,-122.99 137.52,-122.99 137.52,-160.98 137.52,-160.98 137.52,-166.98 131.52,-172.98 125.52,-172.98"/>
+<text xml:space="preserve" text-anchor="middle" x="70.38" y="-146.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">읽기 레지스터</text>
+<text xml:space="preserve" text-anchor="middle" x="70.38" y="-128.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Read register</text>
+</g>
+<g id="node5" class="node">
+<title>C</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M113.1,-61.99C113.1,-61.99 27.66,-61.99 27.66,-61.99 21.66,-61.99 15.66,-55.99 15.66,-49.99 15.66,-49.99 15.66,-12 15.66,-12 15.66,-6 21.66,0 27.66,0 27.66,0 113.1,0 113.1,0 119.1,0 125.1,-6 125.1,-12 125.1,-12 125.1,-49.99 125.1,-49.99 125.1,-55.99 119.1,-61.99 113.1,-61.99"/>
+<text xml:space="preserve" text-anchor="middle" x="70.38" y="-35.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">소비자</text>
+<text xml:space="preserve" text-anchor="middle" x="70.38" y="-17.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Consumer</text>
+</g>
+<g id="node6" class="node">
+<title>N</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M291.34,-283.98C291.34,-283.98 199.42,-283.98 199.42,-283.98 193.42,-283.98 187.42,-277.98 187.42,-271.98 187.42,-271.98 187.42,-233.98 187.42,-233.98 187.42,-227.98 193.42,-221.98 199.42,-221.98 199.42,-221.98 291.34,-221.98 291.34,-221.98 297.34,-221.98 303.34,-227.98 303.34,-233.98 303.34,-233.98 303.34,-271.98 303.34,-271.98 303.34,-277.98 297.34,-283.98 291.34,-283.98"/>
+<text xml:space="preserve" text-anchor="middle" x="245.38" y="-257.48" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">점유량 n</text>
+<text xml:space="preserve" text-anchor="middle" x="245.38" y="-239.48" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">Occupancy</text>
+</g>
+</g>
+</svg>

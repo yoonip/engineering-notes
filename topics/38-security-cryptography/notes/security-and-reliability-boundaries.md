@@ -41,13 +41,9 @@ $K'$는 hash block 크기에 맞춰 처리한 키, $\|$는 바이트 연결이�
 
 ### 입력을 파싱하는 순간에도 경계가 필요하다
 
-```mermaid
-flowchart LR
-    A[외부 바이트 / Untrusted bytes] --> B[길이·형식 제한 / Bound and parse]
-    B --> C[무결성·인증 / Integrity and authentication]
-    C --> D[재전송·권한·범위 검사 / Freshness and authorization]
-    D --> E[허용된 동작 / Permitted action]
-```
+![오류를 찾는 것과 공격을 막는 것: 신뢰성·보안의 경계 — 개념도 / Concept diagram](../../../assets/diagrams/security-and-reliability-boundaries.png)
+
+[SVG](../../../assets/diagrams/security-and-reliability-boundaries.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/security-and-reliability-boundaries.mmd)
 
 직접 작성한 흐름도다. 실제 순서는 프로토콜과 인증 범위에 따라 달라질 수 있지만, 인증되지 않은 길이만 믿고 큰 메모리를 할당하거나 명령을 실행해서는 안 된다. 앞 글의 파서는 payload 상한을 넘으면 버리고 경계에서 복구한다. 여기에 오류 응답과 요청 횟수 제한을 더할 수 있다. 입력 하나가 유효하다는 것과 시스템이 과도한 요청을 견딘다는 것도 서로 다른 성질이다.
 

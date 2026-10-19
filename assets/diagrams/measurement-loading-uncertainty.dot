@@ -1,0 +1,17 @@
+digraph Diagram {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.65", ranksep="0.65", splines=spline, outputorder=edgesfirst];
+node [fontname="Malgun Gothic", fontsize=15, shape=box, style="rounded,filled", color="#2563a3", fillcolor="#edf5ff", fontcolor="#172b45", penwidth=1.4, margin="0.20,0.13"];
+edge [fontname="Malgun Gothic", fontsize=12, color="#52677f", fontcolor="#243e5c", penwidth=1.35, arrowsize=0.75];
+"F" [label="SMU Force HI", shape="box", width=1.865, height=0.569, fixedsize=true];
+"A" [label="DUT 단자 A\nTerminal A", shape="box", width=1.700, height=0.861, fixedsize=true];
+"R" [label="DUT R", shape="box", width=1.130, height=0.569, fixedsize=true];
+"B" [label="DUT 단자 B\nTerminal B", shape="box", width=1.655, height=0.861, fixedsize=true];
+"L" [label="SMU Force LO", shape="box", width=1.940, height=0.569, fixedsize=true];
+"V" [label="높은 입력 임피던스\nVoltmeter", shape="box", width=2.450, height=0.861, fixedsize=true];
+"F" -> "A" [label=""];
+"A" -> "R" [label=""];
+"R" -> "B" [label=""];
+"B" -> "L" [label=""];
+"A" -> "V" [label="전압 감지\nSense",style=dashed];
+"B" -> "V" [label="전압 감지\nSense",style=dashed];
+}

@@ -1,0 +1,10 @@
+stateDiagram-v2
+    [*] --> WAIT
+    WAIT --> COLLECT: 0x7E
+    COLLECT --> ESCAPE: 0x7D
+    ESCAPE --> COLLECT: XOR 0x20 후 저장 / Decode and append
+    COLLECT --> COLLECT: 일반 바이트 저장 / Append byte
+    COLLECT --> DROP: 길이 상한 초과 / Capacity exceeded
+    DROP --> COLLECT: 0x7E
+    COLLECT --> COLLECT: 0x7E에서 검사·초기화 / Validate and restart
+    ESCAPE --> COLLECT: 0x7E에서 폐기·초기화 / Abort and restart

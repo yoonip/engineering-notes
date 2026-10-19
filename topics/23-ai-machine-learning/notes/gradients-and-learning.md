@@ -38,15 +38,9 @@ $$
 
 $M$개 표본의 평균 손실 $L=M^{-1}\sum_i\ell_i$는 각 미분을 평균하면 된다. 역전파는 이렇게 중간 연산의 국소 미분을 뒤로 연결한다. optimizer는 그 기울기로 매개변수를 바꾼다. 두 개념을 구분하는 것이 중요하다. [Stanford CS231n](https://cs231n.github.io/optimization-2/)과 [Stanford CS224n Part III](https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes03-neuralnets.pdf)의 연쇄 법칙 설명을 대조했다.
 
-```mermaid
-flowchart LR
-    X[입력 x / Input] --> Z[wx+b]
-    Z --> S[sigmoid]
-    S --> L[손실 / Loss]
-    Y[정답 y / Label] --> L
-    L -. 기울기 / Gradient .-> Z
-    Z -.-> W[갱신 / Update w,b]
-```
+![미분에서 학습까지: 모델이 바뀌는 이유 — 개념도 / Concept diagram](../../../assets/diagrams/gradients-and-learning.png)
+
+[SVG](../../../assets/diagrams/gradients-and-learning.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/gradients-and-learning.mmd)
 
 직접 구성한 도식이다. 여러 경로가 같은 변수로 돌아오면 기울기는 더한다.
 

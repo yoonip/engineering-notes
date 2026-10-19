@@ -50,15 +50,9 @@ $$
 
 마스크는 허용하지 않는 위치의 점수를 $-\infty$로 취급해 softmax 가중치를 0으로 만든다. 인과적 self-attention은 $j\le i$만 허용하여 미래 입력을 보지 않게 한다. 한 행이 전부 금지되면 softmax를 그대로 계산할 수 없으므로 예제는 이를 오류로 처리한다.
 
-```mermaid
-flowchart LR
-    Q[Q] --> D[QK transpose]
-    K[K] --> D
-    D --> S[Scale and mask]
-    S --> A[Row softmax]
-    A --> O[Weighted sum]
-    V[V] --> O
-```
+![Attention: 필요한 정보를 가중합으로 모으기 — 개념도 / Concept diagram](../../../assets/diagrams/attention-from-equations.png)
+
+[SVG](../../../assets/diagrams/attention-from-equations.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/attention-from-equations.mmd)
 
 직접 구성한 계산 도식이다.
 

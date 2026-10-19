@@ -16,12 +16,9 @@
 
 직업훈련 참가자의 취업률이 비참가자보다 높다고 하자. 이것은 비교에서 관찰된 관련성이다. 참가자가 원래 다른 경력이나 동기를 가졌다면 훈련이 그 차이를 전부 만들었다고 말할 수 없다. 다음은 실제 사업의 효과가 아니라 인과관계를 설명하기 위한 개념 모형이다.
 
-```mermaid
-flowchart LR
-    U[기존 역량·기회 / Prior skills and opportunities] --> D[훈련 참여 / Participation]
-    U --> Y[취업 결과 / Employment outcome]
-    D --> Y
-```
+![사회를 자료로 읽기: 제도, 규범과 인과관계 — 개념도 / Concept diagram](../../../assets/diagrams/evidence-causality-institutions.png)
+
+[SVG](../../../assets/diagrams/evidence-causality-institutions.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/evidence-causality-institutions.mmd)
 
 직접 작성한 가설 도식이다. 화살표는 자료로 입증된 사실이 아니라 검토할 인과 가정을 나타낸다. 기존 역량이 참여와 결과 모두에 영향을 주면, 두 집단을 그대로 비교할 때 선택 차이가 섞인다.
 

@@ -44,13 +44,9 @@ triode를 언제나 선형이라고 부르기보다는 `VDS≪Vov`일 때 `ID≈
 
 ### 3. 소자에서 디지털 에너지로 연결하기
 
-```mermaid
-flowchart LR
-    A[Gate 전압 / Voltage] --> B[표면 전하 / Surface charge]
-    B --> C[채널 전류 / Channel current]
-    C --> D[부하 충전 / Load charging]
-    D --> E[지연·에너지 / Delay and energy]
-```
+![MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계 — 개념도 / Concept diagram](../../../assets/diagrams/mos-electrostatics-switching.png)
+
+[SVG](../../../assets/diagrams/mos-electrostatics-switching.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/mos-electrostatics-switching.mmd)
 
 직접 작성한 인과 관계도다. CMOS inverter의 NMOS는 출력 전하를 내보내고 PMOS는 채운다. 부하를 일정한 CL, 켜진 소자를 일정한 Ron으로 치환한 1차 근사에서는 50% 지연이 `ln(2)RonCL`다. 실제 소자 전류는 출력 전압에 따라 변하므로 이 값을 정확한 셀 지연으로 사용하지 않는다.
 

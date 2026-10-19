@@ -1,0 +1,7 @@
+flowchart LR
+    Q[Q] --> D[QK transpose]
+    K[K] --> D
+    D --> S[Scale and mask]
+    S --> A[Row softmax]
+    A --> O[Weighted sum]
+    V[V] --> O

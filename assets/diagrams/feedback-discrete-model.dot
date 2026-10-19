@@ -1,0 +1,17 @@
+digraph Diagram {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.65", ranksep="0.65", splines=spline, outputorder=edgesfirst];
+node [fontname="Malgun Gothic", fontsize=15, shape=box, style="rounded,filled", color="#2563a3", fillcolor="#edf5ff", fontcolor="#172b45", penwidth=1.4, margin="0.20,0.13"];
+edge [fontname="Malgun Gothic", fontsize=12, color="#52677f", fontcolor="#243e5c", penwidth=1.35, arrowsize=0.75];
+"R" [label="목표 r\nReference", shape="box", width=1.475, height=0.861, fixedsize=true];
+"E" [label="오차 r-y\nError", shape="box", width=1.280, height=0.861, fixedsize=true];
+"K" [label="비례 제어 K\nP controller", shape="box", width=1.670, height=0.861, fixedsize=true];
+"H" [label="입력 유지\nHold", shape="box", width=1.415, height=0.861, fixedsize=true];
+"P" [label="대상 시스템\nPlant", shape="box", width=1.655, height=0.861, fixedsize=true];
+"Y" [label="출력 y\nOutput", shape="box", width=1.220, height=0.861, fixedsize=true];
+"R" -> "E" [label=""];
+"E" -> "K" [label=""];
+"K" -> "H" [label=""];
+"H" -> "P" [label=""];
+"P" -> "Y" [label=""];
+"Y" -> "E" [label=""];
+}

@@ -49,15 +49,9 @@ $$
 
 비례 제어만으로는 일반적으로 step 입력의 정상상태 오차가 남는다. 적분 제어를 더하는 이유 중 하나지만, 포화가 있으면 적분 누적과 anti-windup도 함께 다뤄야 한다.
 
-```mermaid
-flowchart LR
-    R[목표 r / Reference] --> E[오차 r-y / Error]
-    E --> K[비례 제어 K / P controller]
-    K --> H[입력 유지 / Hold]
-    H --> P[대상 시스템 / Plant]
-    P --> Y[출력 y / Output]
-    Y --> E
-```
+![피드백 제어: 오차를 줄이는 힘에도 한계가 있다 — 개념도 / Concept diagram](../../../assets/diagrams/feedback-discrete-model.png)
+
+[SVG](../../../assets/diagrams/feedback-discrete-model.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/feedback-discrete-model.mmd)
 
 직접 구성한 도식이며 피드백 입력의 부호는 $r-y$다.
 

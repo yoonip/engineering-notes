@@ -10,16 +10,9 @@
 
 ABI(Application Binary Interface)는 서로 따로 만든 코드가 만나는 약속이다. 인자를 어느 레지스터나 스택 위치로 넘기는지, 어떤 레지스터를 호출 전후에 보존하는지, 데이터와 스택을 어떻게 정렬하는지 등이 여기에 속한다. 예를 들어 Arm AAPCS32에는 32비트 Arm의 호출 규약이 정리되어 있다. 이를 모든 CPU의 호출 규약으로 일반화하면 안 된다. [Arm AAPCS32](https://github.com/ARM-software/abi-aa/blob/main/aapcs32/aapcs32.rst)
 
-```mermaid
-flowchart LR
-    A[소스 / Source] --> B[컴파일·어셈블 / Compile and assemble]
-    B --> C[목적 파일 / Object files]
-    C --> D[링크·배치 / Link and place]
-    D --> E[ELF]
-    E --> F[로더 또는 플래시 기록 / Loader or flash programming]
-    F --> G[시작 코드 / Startup]
-    G --> H[main 또는 앱 진입점 / Application entry]
-```
+![C 코드가 실행되기까지: 컴파일, 링크, 리셋과 main — 개념도 / Concept diagram](../../../assets/diagrams/reset-to-main-and-toolchain.png)
+
+[SVG](../../../assets/diagrams/reset-to-main-and-toolchain.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/reset-to-main-and-toolchain.mmd)
 
 그림은 이 문서를 위해 작성한 흐름도다. OS 로더와 MCU 플래시 부팅은 같은 절차가 아니며, ELF 파일 자체가 MCU 리셋 회로의 동작을 결정하지도 않는다.
 

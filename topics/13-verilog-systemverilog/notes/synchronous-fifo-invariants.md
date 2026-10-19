@@ -30,15 +30,9 @@ write와 read는 같은 에지 이전의 n을 보고 각각 판단한다. 빈 FI
 
 state는 저장 배열, read pointer, write pointer, 점유량으로 구성된다. pointer는 수락한 동작에서만 증가하고 D−1 다음에는 0으로 돌아온다. D가 2의 거듭제곱이 아니어도 명시적으로 wrap한다. pointer 폭은 최소 1비트로 `max(1,ceil(log₂D))`, 점유량 폭은 0부터 D까지 표현하도록 `ceil(log₂(D+1))`다.
 
-```mermaid
-flowchart LR
-    P[생산자 / Producer] -->|write + data| G[수락 판단 / Acceptance]
-    G --> M[순환 저장 배열 / Ring memory]
-    M --> R[읽기 레지스터 / Read register]
-    R --> C[소비자 / Consumer]
-    N[점유량 n / Occupancy] --> G
-    G --> N
-```
+![FSM과 FIFO: 요청과 실제 전송을 구분하기 — 개념도 / Concept diagram](../../../assets/diagrams/synchronous-fifo-invariants.png)
+
+[SVG](../../../assets/diagrams/synchronous-fifo-invariants.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/synchronous-fifo-invariants.mmd)
 
 직접 작성한 동기 FIFO 도식이다. `sync_fifo.sv`는 수락한 상승 에지 뒤에 `rd_data`와 `rd_valid`를 내보낸다. `rd_valid=0`일 때 `rd_data`에 이전 값이 남아도 새로운 데이터가 아니다. `wr_ack` 역시 그 에지에서 쓰기가 수락되었음을 나타낸다. reset은 동기식 active-high이며 pointer·점유량·출력 유효 신호를 초기화한다. 메모리 전체를 0으로 지우지 않아도 점유량이 0이면 이전 데이터는 읽힐 수 없다.
 

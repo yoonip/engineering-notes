@@ -1,0 +1,18 @@
+digraph Diagram {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.65", ranksep="0.65", splines=spline, outputorder=edgesfirst];
+node [fontname="Malgun Gothic", fontsize=15, shape=box, style="rounded,filled", color="#2563a3", fillcolor="#edf5ff", fontcolor="#172b45", penwidth=1.4, margin="0.20,0.13"];
+edge [fontname="Malgun Gothic", fontsize=12, color="#52677f", fontcolor="#243e5c", penwidth=1.35, arrowsize=0.75];
+"A" [label="단위·수학\nUnits and mathematics", shape="box", width=2.840, height=0.861, fixedsize=true];
+"B" [label="물리·회로\nPhysics and circuits", shape="box", width=2.450, height=0.861, fixedsize=true];
+"C" [label="소자·디지털 하드웨어\nDevices and digital\nhardware", shape="box", width=2.585, height=1.153, fixedsize=true];
+"D" [label="메모리·펌웨어·시스템\nMemory, firmware and\nsystems", shape="box", width=2.795, height=1.153, fixedsize=true];
+"E" [label="센서·ADC·신호\nSensors, ADCs and signals", shape="box", width=3.170, height=0.861, fixedsize=true];
+"F" [label="제어·학습·병렬 계산\nControl, learning and\nparallel computing", shape="box", width=2.660, height=1.153, fixedsize=true];
+"A" -> "B" [label=""];
+"B" -> "C" [label=""];
+"C" -> "D" [label=""];
+"B" -> "E" [label=""];
+"D" -> "F" [label=""];
+"E" -> "F" [label=""];
+"A" -> "F" [label=""];
+}

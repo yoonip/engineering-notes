@@ -1,0 +1,47 @@
+
+<svg role="img" aria-label="heat-diffusion" width="446pt" height="207pt"
+ viewBox="0.00 0.00 446.00 207.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 188.98)">
+<title>Diagram</title>
+<polygon fill="white" stroke="none" points="-18,18 -18,-188.98 428.06,-188.98 428.06,18 -18,18"/>
+<g id="edge1" class="edge">
+<title>L&#45;&gt;N</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M96.59,-108.33C113.93,-95.79 134.12,-81.2 152.17,-68.15"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="153.57,-70.38 158.11,-63.86 150.49,-66.12 153.57,-70.38"/>
+</g>
+<g id="edge2" class="edge">
+<title>C&#45;&gt;N</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M202.18,-108.33C202.18,-97.02 202.18,-84.05 202.18,-72.03"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="204.81,-72.2 202.18,-64.7 199.56,-72.2 204.81,-72.2"/>
+</g>
+<g id="edge3" class="edge">
+<title>R&#45;&gt;N</title>
+<path fill="none" stroke="#52677f" stroke-width="1.35" d="M309.91,-108.33C292.22,-95.79 271.62,-81.2 253.2,-68.15"/>
+<polygon fill="#52677f" stroke="#52677f" stroke-width="1.35" points="254.76,-66.04 247.12,-63.84 251.73,-70.32 254.76,-66.04"/>
+</g>
+<g id="node1" class="node">
+<title>L</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M96.36,-170.98C96.36,-170.98 12,-170.98 12,-170.98 6,-170.98 0,-164.98 0,-158.98 0,-158.98 0,-120.99 0,-120.99 0,-114.99 6,-108.99 12,-108.99 12,-108.99 96.36,-108.99 96.36,-108.99 102.36,-108.99 108.36,-114.99 108.36,-120.99 108.36,-120.99 108.36,-158.98 108.36,-158.98 108.36,-164.98 102.36,-170.98 96.36,-170.98"/>
+<text xml:space="preserve" text-anchor="middle" x="54.18" y="-144.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">T i&#45;1, 현재</text>
+<text xml:space="preserve" text-anchor="middle" x="54.18" y="-126.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">current</text>
+</g>
+<g id="node2" class="node">
+<title>N</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M237.34,-61.99C237.34,-61.99 167.02,-61.99 167.02,-61.99 161.02,-61.99 155.02,-55.99 155.02,-49.99 155.02,-49.99 155.02,-12 155.02,-12 155.02,-6 161.02,0 167.02,0 167.02,0 237.34,0 237.34,0 243.34,0 249.34,-6 249.34,-12 249.34,-12 249.34,-49.99 249.34,-49.99 249.34,-55.99 243.34,-61.99 237.34,-61.99"/>
+<text xml:space="preserve" text-anchor="middle" x="202.18" y="-35.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">T i, 다음</text>
+<text xml:space="preserve" text-anchor="middle" x="202.18" y="-17.5" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">next</text>
+</g>
+<g id="node3" class="node">
+<title>C</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M236.8,-170.98C236.8,-170.98 167.56,-170.98 167.56,-170.98 161.56,-170.98 155.56,-164.98 155.56,-158.98 155.56,-158.98 155.56,-120.99 155.56,-120.99 155.56,-114.99 161.56,-108.99 167.56,-108.99 167.56,-108.99 236.8,-108.99 236.8,-108.99 242.8,-108.99 248.8,-114.99 248.8,-120.99 248.8,-120.99 248.8,-158.98 248.8,-158.98 248.8,-164.98 242.8,-170.98 236.8,-170.98"/>
+<text xml:space="preserve" text-anchor="middle" x="202.18" y="-144.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">T i, 현재</text>
+<text xml:space="preserve" text-anchor="middle" x="202.18" y="-126.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">current</text>
+</g>
+<g id="node4" class="node">
+<title>R</title>
+<path fill="#edf5ff" stroke="#2563a3" stroke-width="1.4" d="M398.06,-170.98C398.06,-170.98 308.3,-170.98 308.3,-170.98 302.3,-170.98 296.3,-164.98 296.3,-158.98 296.3,-158.98 296.3,-120.99 296.3,-120.99 296.3,-114.99 302.3,-108.99 308.3,-108.99 308.3,-108.99 398.06,-108.99 398.06,-108.99 404.06,-108.99 410.06,-114.99 410.06,-120.99 410.06,-120.99 410.06,-158.98 410.06,-158.98 410.06,-164.98 404.06,-170.98 398.06,-170.98"/>
+<text xml:space="preserve" text-anchor="middle" x="353.18" y="-144.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">T i+1, 현재</text>
+<text xml:space="preserve" text-anchor="middle" x="353.18" y="-126.49" font-family="Malgun Gothic" font-size="15.00" fill="#172b45">current</text>
+</g>
+</g>
+</svg>

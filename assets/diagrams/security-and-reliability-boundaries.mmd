@@ -1,0 +1,5 @@
+flowchart LR
+    A[외부 바이트 / Untrusted bytes] --> B[길이·형식 제한 / Bound and parse]
+    B --> C[무결성·인증 / Integrity and authentication]
+    C --> D[재전송·권한·범위 검사 / Freshness and authorization]
+    D --> E[허용된 동작 / Permitted action]

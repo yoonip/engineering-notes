@@ -1,0 +1,7 @@
+flowchart LR
+    X[입력 x / Input] --> Z[wx+b]
+    Z --> S[sigmoid]
+    S --> L[손실 / Loss]
+    Y[정답 y / Label] --> L
+    L -. 기울기 / Gradient .-> Z
+    Z -.-> W[갱신 / Update w,b]

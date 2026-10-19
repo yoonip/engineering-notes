@@ -1,0 +1,6 @@
+sequenceDiagram
+    participant S as Source
+    participant L as Load
+    S->>L: a0, arrival td
+    L->>S: GammaL a0, arrival 2td
+    S->>L: GammaS GammaL a0, arrival 3td

@@ -29,13 +29,9 @@ Read the original questions and choices at the linked source, then compare them 
 
 여기서 흔한 오류는 `국가 보상 → 언제나 의료인에게 청구 가능`이라고 없는 규칙을 추가하는 것이다. 또 `~한 경우에 한하여`는 청구의 필요조건을 제한하는 표현이므로, 어떤 행위에 붙은 조건인지 끝까지 묶어서 읽어야 한다. 돈이 이동하는 두 단계를 다른 화살표로 그리면 섞이기 어렵다.
 
-```mermaid
-flowchart LR
-    S[문제의 사고 조건 / Given incident conditions] --> C{국가 보상 대상? / Compensation eligible?}
-    C -->|해당 / Yes| P[피해자에게 지급 / Pay injured party]
-    P --> R{사후 청구 조건? / Recourse condition?}
-    R -->|해당 / Yes| D[의료인에게 청구 가능 / Recourse permitted]
-```
+![공식 기출 분석: 조건의 범위와 비교 대상을 놓치지 않기 — 개념도 / Concept diagram](../../../assets/diagrams/official-past-paper-walkthroughs.png)
+
+[SVG](../../../assets/diagrams/official-past-paper-walkthroughs.svg) · [도식 원본 / Diagram source](../../../assets/diagrams/official-past-paper-walkthroughs.mmd)
 
 직접 작성한 논리 흐름도다. 실제 국가배상·의료법 제도를 설명하는 도식은 아니다.
 

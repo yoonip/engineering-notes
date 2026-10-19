@@ -1,0 +1,21 @@
+digraph Diagram {
+graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.65", ranksep="0.65", splines=spline, outputorder=edgesfirst];
+node [fontname="Malgun Gothic", fontsize=15, shape=box, style="rounded,filled", color="#2563a3", fillcolor="#edf5ff", fontcolor="#172b45", penwidth=1.4, margin="0.20,0.13"];
+edge [fontname="Malgun Gothic", fontsize=12, color="#52677f", fontcolor="#243e5c", penwidth=1.35, arrowsize=0.75];
+"A" [label="정확한 독해\nPrecise reading", shape="box", width=2.030, height=0.861, fixedsize=true];
+"B" [label="논증과 반례\nArguments and\ncounterexamples", shape="box", width=2.225, height=1.153, fixedsize=true];
+"C" [label="숫자와 자료\nQuantities and data", shape="box", width=2.525, height=0.861, fixedsize=true];
+"D" [label="지식·가치\nKnowledge and values", shape="box", width=2.795, height=0.861, fixedsize=true];
+"E" [label="경제·사회\nEconomy and society", shape="box", width=2.645, height=0.861, fixedsize=true];
+"F" [label="조건·법령\nConditions and legal texts", shape="box", width=3.170, height=0.861, fixedsize=true];
+"G" [label="근거와 범위가 드러나는 판단\nJudgment with explicit\ngrounds and scope", shape="box", width=3.410, height=1.153, fixedsize=true];
+"A" -> "B" [label=""];
+"A" -> "C" [label=""];
+"B" -> "D" [label=""];
+"C" -> "E" [label=""];
+"B" -> "F" [label=""];
+"C" -> "F" [label=""];
+"D" -> "G" [label=""];
+"E" -> "G" [label=""];
+"F" -> "G" [label=""];
+}
