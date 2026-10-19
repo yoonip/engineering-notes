@@ -13,34 +13,27 @@
 
 각 목록은 해당 글에서 사용한 자료를 연결합니다. 동일한 글이 여러 학습 경로에 속할 수 있으므로 표의 숫자를 저장소 전체의 서로 다른 글 수로 합산하지 않습니다. [기초 계산의 검증 범위](../공학기초_foundations/검증기록_VERIFICATION.md)와 [AI 모델의 공식 자료](../AI모델실험_model-lab/PROVIDERS.md)도 함께 보실 수 있습니다.
 
-## 개발·언어·수치 계산
+## 개발 환경·프로그래밍
 
 - [GNU Bash manual](https://www.gnu.org/software/bash/manual/bash.html)
 - [Pro Git](https://git-scm.com/book/en/v2)
 - [Python Tutorial](https://docs.python.org/3/tutorial/)
 - [Installing Jupyter](https://jupyter.org/install)
 - [GCC language standards](https://gcc.gnu.org/onlinedocs/gcc/Standards.html)
+- [LLVM documentation](https://llvm.org/docs/)
+- [pytest documentation](https://docs.pytest.org/en/stable/)
+- [Quarto and GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)
+
+## 수학·과학·병렬 계산
+
 - [MATLAB matrices and arrays](https://www.mathworks.com/help/matlab/learn_matlab/matrices-and-arrays.html)
 - [NumPy documentation](https://numpy.org/doc/)
 - [SciPy documentation](https://docs.scipy.org/doc/scipy/)
-- [Quarto and GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)
-- [scikit-rf documentation](https://scikit-rf.readthedocs.io/en/latest/)
-- [GNU Radio documentation](https://www.gnuradio.org/doc/)
-- [fio documentation](https://fio.readthedocs.io/en/latest/)
 - [COMSOL Multiphysics](https://www.comsol.com/comsol-multiphysics)
-- [PyVISA documentation](https://pyvisa.readthedocs.io/en/latest/)
-- [OpenSSL documentation](https://docs.openssl.org/)
-- [LLVM documentation](https://llvm.org/docs/)
-- [Kubernetes concepts](https://kubernetes.io/docs/concepts/)
+- [FEniCS documentation](https://fenicsproject.org/documentation/)
+- [Physically Based Rendering](https://pbr-book.org/)
 - [OpenMP specifications](https://www.openmp.org/specifications/)
 - [MPI Forum](https://www.mpi-forum.org/docs/)
-- [OpenAI model documentation](https://developers.openai.com/api/docs/models)
-- [ONNX documentation](https://onnx.ai/onnx/)
-- [pytest documentation](https://docs.pytest.org/en/stable/)
-- [Physically Based Rendering](https://pbr-book.org/)
-- [FEniCS documentation](https://fenicsproject.org/documentation/)
-- [Siemens Tessent](https://eda.sw.siemens.com/en-US/ic/tessent/)
-- [FastAPI documentation](https://fastapi.tiangolo.com/)
 
 ## 회로·반도체·하드웨어
 
@@ -55,8 +48,9 @@
 - [Arm documentation](https://developer.arm.com/documentation)
 - [LTspice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)
 - [Analog Devices technical resources](https://www.analog.com/en/resources.html)
+- [Siemens Tessent](https://eda.sw.siemens.com/en-US/ic/tessent/)
 
-## 임베디드·통신·시스템
+## 임베디드·제어
 
 - [Linux Kernel documentation](https://docs.kernel.org/)
 - [Zephyr introduction](https://docs.zephyrproject.org/latest/introduction/index.html)
@@ -66,19 +60,34 @@
 - [ROS 2 documentation](https://docs.ros.org/)
 - [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/)
 
-## AI·데이터·응용
+## 통신·계측
+
+- [scikit-rf documentation](https://scikit-rf.readthedocs.io/en/latest/)
+- [GNU Radio documentation](https://www.gnuradio.org/doc/)
+- [PyVISA documentation](https://pyvisa.readthedocs.io/en/latest/)
+
+## 데이터·서비스·보안
+
+- [fio documentation](https://fio.readthedocs.io/en/latest/)
+- [PostgreSQL tutorial](https://www.postgresql.org/docs/current/tutorial.html)
+- [Kubernetes concepts](https://kubernetes.io/docs/concepts/)
+- [FastAPI documentation](https://fastapi.tiangolo.com/)
+- [Android Developers](https://developer.android.com/guide)
+- [OpenSSL documentation](https://docs.openssl.org/)
+
+## AI·GPU
 
 - [PyTorch — Learn the Basics](https://docs.pytorch.org/tutorials/beginner/basics/intro.html)
 - [TensorFlow Guide](https://www.tensorflow.org/guide)
 - [CUDA Programming Guide](https://docs.nvidia.com/cuda/cuda-programming-guide/index.html)
-- [PostgreSQL tutorial](https://www.postgresql.org/docs/current/tutorial.html)
+- [OpenAI model documentation](https://developers.openai.com/api/docs/models)
+- [ONNX documentation](https://onnx.ai/onnx/)
 - [OpenCV tutorials](https://docs.opencv.org/4.x/d9/df8/tutorial_root.html)
 - [Hugging Face documentation](https://huggingface.co/docs)
 - [PEFT documentation](https://huggingface.co/docs/peft/)
-- [Android Developers](https://developer.android.com/guide)
 - [snnTorch documentation](https://snntorch.readthedocs.io/en/latest/)
 
-## 논문·시험·권리
+## 문제 풀이·특허
 
 - [프로그래머스 코딩테스트 연습](https://school.programmers.co.kr/learn/challenges)
 - [WIPO — Patents](https://www.wipo.int/en/web/patents)
