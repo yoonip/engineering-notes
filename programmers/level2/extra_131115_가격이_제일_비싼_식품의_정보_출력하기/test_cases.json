@@ -1,0 +1,169 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "FOOD_PRODUCT",
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_NAME",
+          "PRODUCT_CD",
+          "CATEGORY",
+          "PRICE"
+        ],
+        "types": [
+          "VARCHAR(10)",
+          "VARCHAR(50)",
+          "VARCHAR(10)",
+          "VARCHAR(10)",
+          "NUMBER"
+        ],
+        "rows": [
+          [
+            "P0018",
+            "맛있는고추기름",
+            "CD_OL00008",
+            "식용유",
+            6100
+          ],
+          [
+            "P0019",
+            "맛있는카놀라유",
+            "CD_OL00009",
+            "식용유",
+            5100
+          ],
+          [
+            "P0020",
+            "맛있는산초유",
+            "CD_OL00010",
+            "식용유",
+            6500
+          ],
+          [
+            "P0021",
+            "맛있는케첩",
+            "CD_OL00001",
+            "소스",
+            4500
+          ],
+          [
+            "P0022",
+            "맛있는마요네즈",
+            "CD_OL00002",
+            "소스",
+            4700
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        "P0020",
+        "맛있는산초유",
+        "CD_OL00010",
+        "식용유",
+        6500
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "FOOD_PRODUCT",
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_NAME",
+          "PRODUCT_CD",
+          "CATEGORY",
+          "PRICE"
+        ],
+        "types": [
+          "VARCHAR(10)",
+          "VARCHAR(50)",
+          "VARCHAR(10)",
+          "VARCHAR(10)",
+          "NUMBER"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": []
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "FOOD_PRODUCT",
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_NAME",
+          "PRODUCT_CD",
+          "CATEGORY",
+          "PRICE"
+        ],
+        "types": [
+          "VARCHAR(10)",
+          "VARCHAR(50)",
+          "VARCHAR(10)",
+          "VARCHAR(10)",
+          "NUMBER"
+        ],
+        "rows": [
+          [
+            "P0018",
+            "맛있는고추기름",
+            "CD_OL00008",
+            "식용유",
+            6100
+          ],
+          [
+            "P0019",
+            "맛있는카놀라유",
+            "CD_OL00009",
+            "식용유",
+            5100
+          ],
+          [
+            "P0020",
+            "맛있는산초유",
+            "CD_OL00010",
+            "식용유",
+            6500
+          ],
+          [
+            "P0021",
+            "맛있는케첩",
+            "CD_OL00001",
+            "소스",
+            4500
+          ],
+          [
+            "P0022",
+            "맛있는마요네즈",
+            "CD_OL00002",
+            "소스",
+            4700
+          ],
+          [
+            "TEST_EXTRA",
+            "맛있는고추기름",
+            "CD_OL00008",
+            "식용유",
+            1
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        "P0020",
+        "맛있는산초유",
+        "CD_OL00010",
+        "식용유",
+        6500
+      ]
+    ]
+  }
+]

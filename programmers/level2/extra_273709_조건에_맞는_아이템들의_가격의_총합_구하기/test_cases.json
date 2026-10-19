@@ -1,0 +1,148 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "ITEM_INFO",
+        "columns": [
+          "ITEM_ID",
+          "ITEM_NAME",
+          "RARITY",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)",
+          "INTEGER",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            0,
+            "ITEM_A",
+            "COMMON",
+            10000
+          ],
+          [
+            1,
+            "ITEM_B",
+            "LEGEND",
+            9000
+          ],
+          [
+            2,
+            "ITEM_C",
+            "LEGEND",
+            11000
+          ],
+          [
+            3,
+            "ITEM_D",
+            "UNIQUE",
+            10000
+          ],
+          [
+            4,
+            "ITEM_E",
+            "LEGEND",
+            12000
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        32000
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "ITEM_INFO",
+        "columns": [
+          "ITEM_ID",
+          "ITEM_NAME",
+          "RARITY",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)",
+          "INTEGER",
+          "INTEGER"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": [
+      [
+        null
+      ]
+    ]
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "ITEM_INFO",
+        "columns": [
+          "ITEM_ID",
+          "ITEM_NAME",
+          "RARITY",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)",
+          "INTEGER",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            0,
+            "ITEM_A",
+            "COMMON",
+            10000
+          ],
+          [
+            1,
+            "ITEM_B",
+            "LEGEND",
+            9000
+          ],
+          [
+            2,
+            "ITEM_C",
+            "LEGEND",
+            11000
+          ],
+          [
+            3,
+            "ITEM_D",
+            "UNIQUE",
+            10000
+          ],
+          [
+            4,
+            "ITEM_E",
+            "LEGEND",
+            12000
+          ],
+          [
+            104,
+            "ITEM_A",
+            "COMMON",
+            10000
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        32000
+      ]
+    ]
+  }
+]

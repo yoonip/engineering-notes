@@ -1,0 +1,11 @@
+{
+  "id": 59412,
+  "cases": 20,
+  "official_examples": 0,
+  "passed": true,
+  "engine": "SQLite with compatibility functions",
+  "checked_on": "2026-10-19",
+  "python_version": "3.12.14",
+  "command": "python verify.py",
+  "new_site_submission": false
+}

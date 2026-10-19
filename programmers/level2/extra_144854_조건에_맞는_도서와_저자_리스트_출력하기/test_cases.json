@@ -1,0 +1,201 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "BOOK",
+        "columns": [
+          "BOOK_ID",
+          "CATEGORY",
+          "AUTHOR_ID",
+          "PRICE",
+          "PUBLISHED_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)",
+          "INTEGER",
+          "INTEGER",
+          "DATE"
+        ],
+        "rows": [
+          [
+            1,
+            "인문",
+            1,
+            10000,
+            "2020-01-01"
+          ],
+          [
+            2,
+            "경제",
+            1,
+            9000,
+            "2021-04-11"
+          ],
+          [
+            3,
+            "경제",
+            2,
+            11000,
+            "2021-02-05"
+          ]
+        ]
+      },
+      {
+        "name": "AUTHOR",
+        "columns": [
+          "AUTHOR_ID",
+          "AUTHOR_NAME"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)"
+        ],
+        "rows": [
+          [
+            1,
+            "홍길동"
+          ],
+          [
+            2,
+            "김영호"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        3,
+        "김영호",
+        "2021-02-05"
+      ],
+      [
+        2,
+        "홍길동",
+        "2021-04-11"
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "BOOK",
+        "columns": [
+          "BOOK_ID",
+          "CATEGORY",
+          "AUTHOR_ID",
+          "PRICE",
+          "PUBLISHED_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)",
+          "INTEGER",
+          "INTEGER",
+          "DATE"
+        ],
+        "rows": []
+      },
+      {
+        "name": "AUTHOR",
+        "columns": [
+          "AUTHOR_ID",
+          "AUTHOR_NAME"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": []
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "BOOK",
+        "columns": [
+          "BOOK_ID",
+          "CATEGORY",
+          "AUTHOR_ID",
+          "PRICE",
+          "PUBLISHED_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)",
+          "INTEGER",
+          "INTEGER",
+          "DATE"
+        ],
+        "rows": [
+          [
+            1,
+            "인문",
+            1,
+            10000,
+            "2020-01-01"
+          ],
+          [
+            2,
+            "경제",
+            1,
+            9000,
+            "2021-04-11"
+          ],
+          [
+            3,
+            "경제",
+            2,
+            11000,
+            "2021-02-05"
+          ],
+          [
+            103,
+            "인문",
+            1,
+            10000,
+            "2020-01-01"
+          ]
+        ]
+      },
+      {
+        "name": "AUTHOR",
+        "columns": [
+          "AUTHOR_ID",
+          "AUTHOR_NAME"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)"
+        ],
+        "rows": [
+          [
+            1,
+            "홍길동"
+          ],
+          [
+            2,
+            "김영호"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        3,
+        "김영호",
+        "2021-02-05"
+      ],
+      [
+        2,
+        "홍길동",
+        "2021-04-11"
+      ]
+    ]
+  }
+]

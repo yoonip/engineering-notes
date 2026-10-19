@@ -1,0 +1,214 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "USED_GOODS_BOARD",
+        "columns": [
+          "BOARD_ID",
+          "WRITER_ID",
+          "TITLE",
+          "CONTENTS",
+          "PRICE",
+          "CREATED_DATE",
+          "STATUS",
+          "VIEWS"
+        ],
+        "types": [
+          "VARCHAR(5)",
+          "VARCHAR(50)",
+          "VARCHAR(100)",
+          "VARCHAR(1000)",
+          "NUMBER",
+          "DATE",
+          "VARCHAR(10)",
+          "NUMBER"
+        ],
+        "rows": [
+          [
+            "B0007",
+            "s2s2123",
+            "커피글라인더",
+            "새상품처럼 깨끗합니다.",
+            7000,
+            "2022-10-04",
+            "DONE",
+            210
+          ],
+          [
+            "B0008",
+            "hong02",
+            "자전거 판매합니다",
+            "출퇴근용으로 구매했다가 사용하지 않아서 내놔요",
+            40000,
+            "2022-10-04",
+            "SALE",
+            301
+          ],
+          [
+            "B0009",
+            "yawoong67",
+            "선반 팝니다",
+            "6단 선반. 환불 반품 안됩니다.",
+            12000,
+            "2022-10-05",
+            "DONE",
+            202
+          ],
+          [
+            "B0010",
+            "keel1990",
+            "철제선반5단",
+            "철제선반 5단 조립식 팜",
+            10000,
+            "2022-10-05",
+            "SALE",
+            194
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        "B0010",
+        "keel1990",
+        "철제선반5단",
+        10000,
+        "판매중"
+      ],
+      [
+        "B0009",
+        "yawoong67",
+        "선반 팝니다",
+        12000,
+        "거래완료"
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "USED_GOODS_BOARD",
+        "columns": [
+          "BOARD_ID",
+          "WRITER_ID",
+          "TITLE",
+          "CONTENTS",
+          "PRICE",
+          "CREATED_DATE",
+          "STATUS",
+          "VIEWS"
+        ],
+        "types": [
+          "VARCHAR(5)",
+          "VARCHAR(50)",
+          "VARCHAR(100)",
+          "VARCHAR(1000)",
+          "NUMBER",
+          "DATE",
+          "VARCHAR(10)",
+          "NUMBER"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": []
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "USED_GOODS_BOARD",
+        "columns": [
+          "BOARD_ID",
+          "WRITER_ID",
+          "TITLE",
+          "CONTENTS",
+          "PRICE",
+          "CREATED_DATE",
+          "STATUS",
+          "VIEWS"
+        ],
+        "types": [
+          "VARCHAR(5)",
+          "VARCHAR(50)",
+          "VARCHAR(100)",
+          "VARCHAR(1000)",
+          "NUMBER",
+          "DATE",
+          "VARCHAR(10)",
+          "NUMBER"
+        ],
+        "rows": [
+          [
+            "B0007",
+            "s2s2123",
+            "커피글라인더",
+            "새상품처럼 깨끗합니다.",
+            7000,
+            "2022-10-04",
+            "DONE",
+            210
+          ],
+          [
+            "B0008",
+            "hong02",
+            "자전거 판매합니다",
+            "출퇴근용으로 구매했다가 사용하지 않아서 내놔요",
+            40000,
+            "2022-10-04",
+            "SALE",
+            301
+          ],
+          [
+            "B0009",
+            "yawoong67",
+            "선반 팝니다",
+            "6단 선반. 환불 반품 안됩니다.",
+            12000,
+            "2022-10-05",
+            "DONE",
+            202
+          ],
+          [
+            "B0010",
+            "keel1990",
+            "철제선반5단",
+            "철제선반 5단 조립식 팜",
+            10000,
+            "2022-10-05",
+            "SALE",
+            194
+          ],
+          [
+            "TEST_EXTRA",
+            "s2s2123",
+            "커피글라인더",
+            "새상품처럼 깨끗합니다.",
+            7000,
+            "2022-10-04",
+            "DONE",
+            210
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        "B0010",
+        "keel1990",
+        "철제선반5단",
+        10000,
+        "판매중"
+      ],
+      [
+        "B0009",
+        "yawoong67",
+        "선반 팝니다",
+        12000,
+        "거래완료"
+      ]
+    ]
+  }
+]

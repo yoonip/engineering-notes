@@ -1,0 +1,246 @@
+{
+  "problem_id": 42860,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        "JEROEN"
+      ],
+      "expected": 56,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "JAN"
+      ],
+      "expected": 23,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "AADACDDD"
+      ],
+      "expected": 20,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "CADDCCBAA"
+      ],
+      "expected": 19,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BACBAA"
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ADACDA"
+      ],
+      "expected": 12,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BDAACA"
+      ],
+      "expected": 10,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ADCBABA"
+      ],
+      "expected": 12,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BD"
+      ],
+      "expected": 5,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "AACCCAAD"
+      ],
+      "expected": 15,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ADBCDDCDB"
+      ],
+      "expected": 26,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DAABDDD"
+      ],
+      "expected": 17,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ACDDAACA"
+      ],
+      "expected": 16,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ABADA"
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ABCA"
+      ],
+      "expected": 5,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "AAAACDAAB"
+      ],
+      "expected": 11,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ACD"
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ABAAC"
+      ],
+      "expected": 6,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DAC"
+      ],
+      "expected": 6,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "CAA"
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "CCABDA"
+      ],
+      "expected": 12,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BDCAA"
+      ],
+      "expected": 8,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "CDA"
+      ],
+      "expected": 6,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "CBBCAAA"
+      ],
+      "expected": 9,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DDABDA"
+      ],
+      "expected": 14,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BB"
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "AAAD"
+      ],
+      "expected": 4,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "AAA"
+      ],
+      "expected": 0,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DDBA"
+      ],
+      "expected": 9,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DACD"
+      ],
+      "expected": 10,
+      "alternative_checked": true
+    }
+  ]
+}

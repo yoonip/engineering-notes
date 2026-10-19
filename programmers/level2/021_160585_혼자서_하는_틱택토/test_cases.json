@@ -1,0 +1,303 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "O.X",
+        ".O.",
+        "..X"
+      ]
+    ],
+    "expected": 1,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "OOO",
+        "...",
+        "XXX"
+      ]
+    ],
+    "expected": 0,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "...",
+        ".X.",
+        "..."
+      ]
+    ],
+    "expected": 0,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "...",
+        "...",
+        "..."
+      ]
+    ],
+    "expected": 1,
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "...",
+        "...",
+        "..."
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOO",
+        "XXX",
+        "..."
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOO",
+        "XOX",
+        "XXO"
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".OX",
+        "OOO",
+        "OX."
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "O.O",
+        "OO.",
+        ".OX"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".OX",
+        "..O",
+        "OOO"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "..X",
+        "X.X",
+        "O.O"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".O.",
+        "XOO",
+        ".OO"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OX.",
+        "XO.",
+        "..X"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OX.",
+        "X.X",
+        ".OO"
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OXX",
+        "XXO",
+        "OX."
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OO.",
+        "OXO",
+        "XXO"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XX.",
+        "XO.",
+        "X.O"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".XX",
+        ".O.",
+        ".XX"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".XX",
+        ".XO",
+        ".X."
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "...",
+        ".XX",
+        "XXO"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".OO",
+        "XXO",
+        "O.O"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XO.",
+        "XXO",
+        "XOO"
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "O.X",
+        ".X.",
+        "OO."
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XOO",
+        "..O",
+        "OXO"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".OX",
+        "OX.",
+        "O.O"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "O.X",
+        "XOX",
+        ".XX"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XX.",
+        "O.O",
+        ".O."
+      ]
+    ],
+    "expected": 1
+  }
+]

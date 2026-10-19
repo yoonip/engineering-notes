@@ -1,0 +1,356 @@
+[
+  {
+    "args": [
+      2
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3
+    ],
+    "expected": 10,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      1
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "boundary"
+  },
+  {
+    "args": [
+      6
+    ],
+    "expected": 170,
+    "check_alternative": true,
+    "kind": "boundary"
+  },
+  {
+    "args": [
+      88
+    ],
+    "expected": 977090233,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      50
+    ],
+    "expected": 103276951,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      49
+    ],
+    "expected": 376128785,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      14
+    ],
+    "expected": 409573,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      91
+    ],
+    "expected": 574120235,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      91
+    ],
+    "expected": 574120235,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      89
+    ],
+    "expected": 859097754,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      92
+    ],
+    "expected": 513692516,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      63
+    ],
+    "expected": 408813533,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      33
+    ],
+    "expected": 536942148,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      30
+    ],
+    "expected": 410206604,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      99
+    ],
+    "expected": 202898654,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      50
+    ],
+    "expected": 103276951,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      84
+    ],
+    "expected": 669291182,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      81
+    ],
+    "expected": 553906346,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      28
+    ],
+    "expected": 808214472,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      73
+    ],
+    "expected": 293299590,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      30
+    ],
+    "expected": 410206604,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      89
+    ],
+    "expected": 859097754,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      70
+    ],
+    "expected": 592332982,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      80
+    ],
+    "expected": 320149009,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      94
+    ],
+    "expected": 766192927,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      8
+    ],
+    "expected": 1173,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      31
+    ],
+    "expected": 215254129,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      25
+    ],
+    "expected": 741269041,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      36
+    ],
+    "expected": 342945316,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      55
+    ],
+    "expected": 274944094,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      63
+    ],
+    "expected": 408813533,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      30
+    ],
+    "expected": 410206604,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      46
+    ],
+    "expected": 117010553,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      4
+    ],
+    "expected": 23,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      18
+    ],
+    "expected": 20279829,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      20
+    ],
+    "expected": 142696606,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      81
+    ],
+    "expected": 553906346,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      28
+    ],
+    "expected": 808214472,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      51
+    ],
+    "expected": 746527680,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      49
+    ],
+    "expected": 376128785,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      13
+    ],
+    "expected": 154390,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      40
+    ],
+    "expected": 446033783,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      17
+    ],
+    "expected": 7645046,
+    "check_alternative": true,
+    "kind": "differential"
+  }
+]

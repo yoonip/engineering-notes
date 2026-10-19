@@ -1,0 +1,347 @@
+{
+  "problem_id": 17687,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        2,
+        4,
+        2,
+        1
+      ],
+      "expected": "0111",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        16,
+        16,
+        2,
+        1
+      ],
+      "expected": "02468ACE11111111",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        16,
+        16,
+        2,
+        2
+      ],
+      "expected": "13579BDF01234567",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4,
+        12,
+        2,
+        1
+      ],
+      "expected": "021111222233",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        15,
+        11,
+        5,
+        1
+      ],
+      "expected": "05A12171C22",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3,
+        9,
+        7,
+        1
+      ],
+      "expected": "012110201",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        9,
+        38,
+        8,
+        1
+      ],
+      "expected": "08372615048372615048017116215214313412",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        12,
+        64,
+        4,
+        1
+      ],
+      "expected": "048111111222222333333444444555555666666777777888888999999AAAAAAB",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        16,
+        40,
+        2,
+        1
+      ],
+      "expected": "02468ACE11111111111111112222222222222222",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        9,
+        12,
+        10,
+        1
+      ],
+      "expected": "005162738405",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        6,
+        29,
+        6,
+        1
+      ],
+      "expected": "01122334455111111111111111111",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        9,
+        41,
+        3,
+        1
+      ],
+      "expected": "03611141721242731343741444751545761646771",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        10,
+        5,
+        3,
+        1
+      ],
+      "expected": "03691",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        13,
+        64,
+        2,
+        1
+      ],
+      "expected": "02468AC0123456789ABC0123456789ABC0123456789ABC0123456789ABC01234",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        12,
+        61,
+        3,
+        1
+      ],
+      "expected": "03691114171A2124272A3134373A4144474A5154575A6164676A7174777A8",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3,
+        27,
+        8,
+        1
+      ],
+      "expected": "020122212021021021021021021",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        15,
+        42,
+        6,
+        1
+      ],
+      "expected": "06C147AD147AD147AD147AD147AD147AD147AD147A",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        11,
+        8,
+        6,
+        1
+      ],
+      "expected": "06036914",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4,
+        8,
+        7,
+        1
+      ],
+      "expected": "01201001",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        14,
+        65,
+        5,
+        1
+      ],
+      "expected": "05A0151A11262B32373C43484D545950656A61767B82878C93989DA4A9A0B5BAB",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        8,
+        6,
+        6,
+        1
+      ],
+      "expected": "061122",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        13,
+        24,
+        6,
+        1
+      ],
+      "expected": "06C258B147A0369C258B147A",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        15,
+        22,
+        3,
+        1
+      ],
+      "expected": "0369C1114171A1D2124272",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        47,
+        4,
+        1
+      ],
+      "expected": "04130241302410311212112013414320221121022423324",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        12,
+        13,
+        7,
+        1
+      ],
+      "expected": "07141B2621384",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        12,
+        39,
+        3,
+        1
+      ],
+      "expected": "03691114171A2124272A3134373A4144474A515",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3,
+        70,
+        2,
+        1
+      ],
+      "expected": "0201201201101011221122002212112022200010200010200010210111210111210111",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        11,
+        19,
+        2,
+        1
+      ],
+      "expected": "02468A0123456789A01",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        14,
+        36,
+        2,
+        1
+      ],
+      "expected": "02468AC11111111111111222222222222223",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        16,
+        58,
+        7,
+        1
+      ],
+      "expected": "07E21910272E353C434A41585F666D747B728980979EA5ACB3BAB1C8CF",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3,
+        45,
+        9,
+        1
+      ],
+      "expected": "021112220102011201220202021202220001101011020",
+      "alternative_checked": true
+    }
+  ]
+}

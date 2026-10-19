@@ -1,19 +1,18 @@
-# 문제: 후보키
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/42890
-# 풀이: 열 수가 작은 조합부터 검사한다. 기존 후보키를 포함하는 조합은 건너뛰고 행 튜플 set으로 유일성을 확인한다.
-# 복잡도: 열 C개·행 R개·최종 후보키 K개: 시간 상한 O(2^C C(R+K)), 추가 공간 O(C(R+K)).
-
 from itertools import combinations
 
 def solution(relation):
+    # 행 수·열 수 각각 대입.
     rows, columns = len(relation), len(relation[0])
     keys = []
     for size in range(1, columns + 1):
+        # 열 번호에서 size개를 선택한 튜플 순회.
         for selected in combinations(range(columns), size):
             selected_set = set(selected)
+            # 기존 후보키를 포함하면 최소성 위반.
             if any(key <= selected_set for key in keys):
                 continue
             values = {tuple(row[column] for column in selected) for row in relation}
+            # 모든 행의 묶음이 서로 다르면 유일성 만족.
             if len(values) == rows:
                 keys.append(selected_set)
     return len(keys)

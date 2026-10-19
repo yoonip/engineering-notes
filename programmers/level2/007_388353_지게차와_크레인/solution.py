@@ -1,8 +1,3 @@
-# 문제: 지게차와 크레인
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/388353
-# 풀이: 바깥 빈칸에서 deque BFS로 접근 가능한 컨테이너를 찾는다. 크레인은 종류 전체를, 지게차는 접근 가능한 목표만 동시에 제거한다.
-# 복잡도: 행 R·열 C·요청 Q개: 시간 O(QRC), 추가 공간 O(RC).
-
 from collections import deque
 
 
@@ -25,6 +20,7 @@ def solution(storage, requests):
                         removed.append((r, c))
         else:
             visited = [[False] * (m + 2) for _ in range(n + 2)]
+            # 추가한 바깥 테두리에서 접근 가능 영역을 찾는다.
             visited[0][0] = True
             queue = deque([(0, 0)])
             while queue:
@@ -36,11 +32,13 @@ def solution(storage, requests):
                     if visited[nr][nc]:
                         continue
                     visited[nr][nc] = True
+                    # 빈칸만 통과하며 대상 컨테이너를 지나가지는 않는다.
                     if board[nr][nc] == '.':
                         queue.append((nr, nc))
                     elif board[nr][nc] == target:
                         removed.append((nr, nc))
 
+        # 요청 한 번의 탐색이 끝난 뒤 한꺼번에 제거한다.
         for r, c in removed:
             board[r][c] = '.'
         remaining -= len(removed)

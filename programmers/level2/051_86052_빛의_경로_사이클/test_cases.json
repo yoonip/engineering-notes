@@ -1,0 +1,434 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "SL",
+        "LR"
+      ]
+    ],
+    "expected": [
+      16
+    ],
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "S"
+      ]
+    ],
+    "expected": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "R",
+        "R"
+      ]
+    ],
+    "expected": [
+      4,
+      4
+    ],
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "SSLLR",
+        "LLRSR",
+        "SRRLS",
+        "LRLSR",
+        "LSLRS",
+        "RRRRR"
+      ]
+    ],
+    "expected": [
+      19,
+      101
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "LR",
+        "LR",
+        "RL"
+      ]
+    ],
+    "expected": [
+      12,
+      12
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "RLLLSS",
+        "RRRRLR",
+        "LSLRRL",
+        "LLSLSS",
+        "SLRRRS"
+      ]
+    ],
+    "expected": [
+      25,
+      95
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "SL",
+        "RR",
+        "LR",
+        "SR",
+        "SL"
+      ]
+    ],
+    "expected": [
+      6,
+      6,
+      28
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "SSSL",
+        "SRLR",
+        "RSSS",
+        "RLSR"
+      ]
+    ],
+    "expected": [
+      20,
+      44
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "RLR",
+        "SSS",
+        "LSS",
+        "LSR",
+        "RRS"
+      ]
+    ],
+    "expected": [
+      3,
+      3,
+      17,
+      37
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "SRRRL",
+        "LSLLL",
+        "RSRLR",
+        "RRSRL",
+        "RSSSR"
+      ]
+    ],
+    "expected": [
+      17,
+      83
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "LRRL",
+        "SLSS",
+        "RLLL",
+        "RLRS",
+        "RLLR",
+        "RLSS"
+      ]
+    ],
+    "expected": [
+      12,
+      22,
+      26,
+      36
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "RRSS",
+        "LRLS",
+        "RLSS",
+        "LLLS",
+        "LLRL"
+      ]
+    ],
+    "expected": [
+      4,
+      6,
+      15,
+      55
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "SLRRS",
+        "RRRLS"
+      ]
+    ],
+    "expected": [
+      2,
+      2,
+      36
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "RSL",
+        "RLL",
+        "RLS",
+        "LSL",
+        "RRR",
+        "RSS"
+      ]
+    ],
+    "expected": [
+      5,
+      9,
+      58
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "SL",
+        "LL",
+        "SR",
+        "LR",
+        "RL",
+        "RS"
+      ]
+    ],
+    "expected": [
+      12,
+      16,
+      20
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "RLSS",
+        "RLSR",
+        "SLSL",
+        "SLSL",
+        "RRLR"
+      ]
+    ],
+    "expected": [
+      6,
+      6,
+      68
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "SSL",
+        "RLS",
+        "LLS"
+      ]
+    ],
+    "expected": [
+      12,
+      12,
+      12
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "SL",
+        "RR"
+      ]
+    ],
+    "expected": [
+      16
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "SL",
+        "RR",
+        "RS",
+        "SS"
+      ]
+    ],
+    "expected": [
+      2,
+      2,
+      14,
+      14
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "RSLL",
+        "SRLS",
+        "LLSS",
+        "RSSR"
+      ]
+    ],
+    "expected": [
+      14,
+      24,
+      26
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "RSSR"
+      ]
+    ],
+    "expected": [
+      1,
+      1,
+      1,
+      1,
+      4,
+      8
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "S",
+        "R",
+        "S",
+        "R"
+      ]
+    ],
+    "expected": [
+      1,
+      1,
+      1,
+      1,
+      6,
+      6
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "RL",
+        "LS"
+      ]
+    ],
+    "expected": [
+      16
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "LSSL",
+        "RSSR",
+        "SSLL",
+        "SSLR",
+        "RLLL"
+      ]
+    ],
+    "expected": [
+      6,
+      6,
+      12,
+      56
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "LS",
+        "RS",
+        "SL"
+      ]
+    ],
+    "expected": [
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "RSLRL"
+      ]
+    ],
+    "expected": [
+      1,
+      1,
+      4,
+      4,
+      4,
+      6
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "LSR",
+        "SSS"
+      ]
+    ],
+    "expected": [
+      2,
+      2,
+      3,
+      3,
+      6,
+      8
+    ]
+  }
+]

@@ -1,0 +1,255 @@
+[
+  {
+    "name": "공식 예제 입력; 정렬은 지시문 FILE_ID 내림차순 적용",
+    "tables": {
+      "USED_GOODS_BOARD": {
+        "columns": [
+          "BOARD_ID",
+          "WRITER_ID",
+          "TITLE",
+          "CONTENTS",
+          "PRICE",
+          "CREATED_DATE",
+          "STATUS",
+          "VIEWS"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            "B0001",
+            "kwag98",
+            "반려견 배변패드 팝니다",
+            "정말 저렴히 판매합니다. 전부 미개봉 새상품입니다.",
+            12000,
+            "2022-10-01",
+            "DONE",
+            250
+          ],
+          [
+            "B0002",
+            "lee871201",
+            "국내산 볶음참깨",
+            "직접 농사지은 참깨입니다.",
+            3000,
+            "2022-10-02",
+            "DONE",
+            121
+          ],
+          [
+            "B0003",
+            "goung12",
+            "배드민턴 라켓",
+            "사놓고 방치만 해서 팝니다.",
+            9000,
+            "2022-10-02",
+            "SALE",
+            212
+          ],
+          [
+            "B0004",
+            "keel1990",
+            "디올 귀걸이",
+            "신세계강남점에서 구입. 정품 아닐시 백퍼센트 환불",
+            130000,
+            "2022-10-02",
+            "SALE",
+            199
+          ],
+          [
+            "B0005",
+            "haphli01",
+            "스팸클래식 팔아요",
+            "유통기한 2025년까지에요",
+            10000,
+            "2022-10-02",
+            "SALE",
+            121
+          ]
+        ]
+      },
+      "USED_GOODS_FILE": {
+        "columns": [
+          "FILE_ID",
+          "FILE_EXT",
+          "FILE_NAME",
+          "BOARD_ID"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "IMG_000001",
+            ".jpg",
+            "photo1",
+            "B0001"
+          ],
+          [
+            "IMG_000002",
+            ".jpg",
+            "photo2",
+            "B0001"
+          ],
+          [
+            "IMG_000003",
+            ".png",
+            "사진",
+            "B0002"
+          ],
+          [
+            "IMG_000004",
+            ".jpg",
+            "사진",
+            "B0003"
+          ],
+          [
+            "IMG_000005",
+            ".jpg",
+            "photo",
+            "B0004"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "/home/grep/src/B0001/IMG_000002photo2.jpg"
+      ],
+      [
+        "/home/grep/src/B0001/IMG_000001photo1.jpg"
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/164671"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "USED_GOODS_BOARD": {
+        "columns": [
+          "BOARD_ID",
+          "WRITER_ID",
+          "TITLE",
+          "CONTENTS",
+          "PRICE",
+          "CREATED_DATE",
+          "STATUS",
+          "VIEWS"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": []
+      },
+      "USED_GOODS_FILE": {
+        "columns": [
+          "FILE_ID",
+          "FILE_EXT",
+          "FILE_NAME",
+          "BOARD_ID"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "USED_GOODS_BOARD": {
+        "columns": [
+          "BOARD_ID",
+          "WRITER_ID",
+          "TITLE",
+          "CONTENTS",
+          "PRICE",
+          "CREATED_DATE",
+          "STATUS",
+          "VIEWS"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            "B1",
+            "u1",
+            null,
+            null,
+            350000,
+            null,
+            "DONE",
+            10
+          ]
+        ]
+      },
+      "USED_GOODS_FILE": {
+        "columns": [
+          "FILE_ID",
+          "FILE_EXT",
+          "FILE_NAME",
+          "BOARD_ID"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "F2",
+            ".png",
+            "two",
+            "B1"
+          ],
+          [
+            "F1",
+            ".txt",
+            "one",
+            "B1"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "/home/grep/src/B1/F2two.png"
+      ],
+      [
+        "/home/grep/src/B1/F1one.txt"
+      ]
+    ]
+  }
+]

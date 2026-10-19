@@ -1,0 +1,11 @@
+{
+  "problem_id": 284527,
+  "python_version": "3.12.14",
+  "primary_cases_passed": 3,
+  "alternative_cases_passed": 3,
+  "original_submission_score": 100,
+  "source_sha256": "f32b4b5ee8ea47876490b12580ab44ac181ba7ebeaa8a91c7b9ec21c31ba2781",
+  "command": "python test_query.py",
+  "engine": "SQLite with explicit MySQL compatibility functions; no MySQL server execution",
+  "official_example_result_note": "Official result EMP_NO=202002 conflicts with input EMP_NO=2020002; verified against the input key."
+}

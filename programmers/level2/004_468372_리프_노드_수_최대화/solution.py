@@ -1,13 +1,10 @@
-# 문제: 리프 노드 수 최대화
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/468372
-# 풀이: 이진 분기 깊이와 가능한 삼진 분기 수를 비교한다. 비용이 단조인 구간은 이분 탐색으로 좁힌다.
-# 복잡도: 분기 한도 S·L=log₂S: 시간 상한 O(L³), 추가 공간 O(1). 큰 정수 연산 비용은 별도다.
-
 def solution(dist_limit, split_limit):
     def binary_cost(count, depth):
         total = 0
         for _ in range(depth):
+            # 이 깊이에 필요한 분배 노드 수를 더한다.
             total += count
+            # 한 층 위에서 필요한 부모 수를 올림 나눗셈으로 구한다.
             count = (count + 1) // 2
         return total
 
@@ -30,6 +27,7 @@ def solution(dist_limit, split_limit):
                     high = mid
                 else:
                     low = mid + 1
+            # 예산과 용량이 만나는 경계 양쪽을 확인한다.
             for count in (low - 1, low):
                 if count == 0:
                     continue

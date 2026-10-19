@@ -1,0 +1,163 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "PRODUCT",
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_CODE",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(8)",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            1,
+            "A1000011",
+            10000
+          ],
+          [
+            2,
+            "A1000045",
+            9000
+          ],
+          [
+            3,
+            "C3000002",
+            22000
+          ],
+          [
+            4,
+            "C3000006",
+            15000
+          ],
+          [
+            5,
+            "C3000010",
+            30000
+          ],
+          [
+            6,
+            "K1000023",
+            17000
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        0,
+        1
+      ],
+      [
+        10000,
+        3
+      ],
+      [
+        20000,
+        1
+      ],
+      [
+        30000,
+        1
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "PRODUCT",
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_CODE",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(8)",
+          "INTEGER"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": []
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "PRODUCT",
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_CODE",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(8)",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            1,
+            "A1000011",
+            10000
+          ],
+          [
+            2,
+            "A1000045",
+            9000
+          ],
+          [
+            3,
+            "C3000002",
+            22000
+          ],
+          [
+            4,
+            "C3000006",
+            15000
+          ],
+          [
+            5,
+            "C3000010",
+            30000
+          ],
+          [
+            6,
+            "K1000023",
+            17000
+          ],
+          [
+            106,
+            "A1000011",
+            10000
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        0,
+        1
+      ],
+      [
+        10000,
+        4
+      ],
+      [
+        20000,
+        1
+      ],
+      [
+        30000,
+        1
+      ]
+    ]
+  }
+]

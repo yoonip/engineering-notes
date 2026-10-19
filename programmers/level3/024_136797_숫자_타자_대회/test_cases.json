@@ -1,0 +1,356 @@
+[
+  {
+    "args": [
+      "1756"
+    ],
+    "expected": 10,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      "5123"
+    ],
+    "expected": 8,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      "4"
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "boundary"
+  },
+  {
+    "args": [
+      "666666"
+    ],
+    "expected": 6,
+    "check_alternative": true,
+    "kind": "boundary"
+  },
+  {
+    "args": [
+      "74169871"
+    ],
+    "expected": 14,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "09778486"
+    ],
+    "expected": 19,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "64013045"
+    ],
+    "expected": 21,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "06998413"
+    ],
+    "expected": 19,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "04610100"
+    ],
+    "expected": 19,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "97338300"
+    ],
+    "expected": 15,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "30615177"
+    ],
+    "expected": 23,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "22127771"
+    ],
+    "expected": 14,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "82038578"
+    ],
+    "expected": 19,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "61132244"
+    ],
+    "expected": 12,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "96368860"
+    ],
+    "expected": 15,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "67603501"
+    ],
+    "expected": 16,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "35286412"
+    ],
+    "expected": 18,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "54471424"
+    ],
+    "expected": 14,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "54735885"
+    ],
+    "expected": 15,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "74395490"
+    ],
+    "expected": 18,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "16089633"
+    ],
+    "expected": 17,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "19293647"
+    ],
+    "expected": 17,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "24661177"
+    ],
+    "expected": 16,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "02822640"
+    ],
+    "expected": 21,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "97511092"
+    ],
+    "expected": 19,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "06530391"
+    ],
+    "expected": 20,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "02152828"
+    ],
+    "expected": 19,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "77197712"
+    ],
+    "expected": 17,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "09552957"
+    ],
+    "expected": 19,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "08634688"
+    ],
+    "expected": 19,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "64588230"
+    ],
+    "expected": 14,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "60247888"
+    ],
+    "expected": 18,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "18966789"
+    ],
+    "expected": 18,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "20855812"
+    ],
+    "expected": 19,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "02135963"
+    ],
+    "expected": 24,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "81153093"
+    ],
+    "expected": 18,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "98545591"
+    ],
+    "expected": 14,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "65128428"
+    ],
+    "expected": 16,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "66531910"
+    ],
+    "expected": 17,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "79305821"
+    ],
+    "expected": 20,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "80367630"
+    ],
+    "expected": 18,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "80357686"
+    ],
+    "expected": 18,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "92819617"
+    ],
+    "expected": 18,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "94332860"
+    ],
+    "expected": 18,
+    "check_alternative": true,
+    "kind": "differential"
+  }
+]

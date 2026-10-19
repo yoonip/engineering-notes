@@ -1,0 +1,628 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "AZWQY",
+        "CAABX",
+        "BBDDA",
+        "ACACA"
+      ],
+      [
+        "A",
+        "BB",
+        "A"
+      ]
+    ],
+    "expected": 11,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "HAH",
+        "HBH",
+        "HHH",
+        "HAH",
+        "HBH"
+      ],
+      [
+        "C",
+        "B",
+        "B",
+        "B",
+        "B",
+        "H"
+      ]
+    ],
+    "expected": 4,
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "ACBCB",
+        "BBABC",
+        "ACCCC",
+        "CACBC",
+        "ABBCB",
+        "CBBBB"
+      ],
+      [
+        "C",
+        "B",
+        "B",
+        "B",
+        "A",
+        "CC",
+        "AA",
+        "CC",
+        "A",
+        "B"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "BBCAA",
+        "ABBCC"
+      ],
+      [
+        "C",
+        "AA",
+        "A",
+        "A",
+        "CC",
+        "BB",
+        "B",
+        "A",
+        "C",
+        "C"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "AA",
+        "CB"
+      ],
+      [
+        "A",
+        "CC",
+        "C",
+        "A",
+        "B",
+        "A",
+        "AA",
+        "B",
+        "CC",
+        "BB"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "ACAB",
+        "BBBC",
+        "AAAC",
+        "BABA",
+        "BBAA"
+      ],
+      [
+        "AA",
+        "BB",
+        "CC",
+        "A",
+        "AA",
+        "BB",
+        "AA",
+        "CC",
+        "AA",
+        "BB"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "ACBCA",
+        "AACCC",
+        "BABAC",
+        "AABAB",
+        "BCCAA",
+        "BABCA"
+      ],
+      [
+        "BB",
+        "AA",
+        "CC",
+        "C",
+        "A",
+        "A",
+        "A",
+        "CC",
+        "CC",
+        "BB"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "AAABCC",
+        "AABACA",
+        "BBBACB",
+        "ABACBC",
+        "ABCCCA"
+      ],
+      [
+        "BB",
+        "BB",
+        "BB",
+        "B",
+        "AA",
+        "C",
+        "CC",
+        "B",
+        "A",
+        "B"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "AAB",
+        "BCB",
+        "CCB",
+        "BAC",
+        "ABA",
+        "BBC"
+      ],
+      [
+        "BB",
+        "B",
+        "B",
+        "BB",
+        "A",
+        "BB",
+        "AA",
+        "BB",
+        "C",
+        "A"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "AC",
+        "CC",
+        "AA"
+      ],
+      [
+        "B",
+        "CC",
+        "AA",
+        "B",
+        "AA",
+        "C",
+        "B",
+        "AA",
+        "B",
+        "C"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "AAACAB",
+        "AACBAB",
+        "ACCBCC",
+        "ABAACB",
+        "CBBACB",
+        "CABBCB"
+      ],
+      [
+        "C",
+        "BB",
+        "B",
+        "BB",
+        "BB",
+        "C",
+        "AA",
+        "A",
+        "A",
+        "A"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "BAAC",
+        "ABAC",
+        "CBBC",
+        "CABB",
+        "ABAB"
+      ],
+      [
+        "BB",
+        "CC",
+        "CC",
+        "B",
+        "AA",
+        "C",
+        "A",
+        "A",
+        "CC",
+        "A"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "ABBBC",
+        "CAACA",
+        "CBBAC",
+        "ACCBC",
+        "ACBCB",
+        "CBACB"
+      ],
+      [
+        "B",
+        "AA",
+        "C",
+        "B",
+        "BB",
+        "B",
+        "BB",
+        "A",
+        "B",
+        "CC"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "ABBAB",
+        "AABAA"
+      ],
+      [
+        "BB",
+        "AA",
+        "C",
+        "CC",
+        "AA",
+        "B",
+        "B",
+        "AA",
+        "A",
+        "BB"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "BB",
+        "AC",
+        "CA",
+        "AB",
+        "BB"
+      ],
+      [
+        "CC",
+        "C",
+        "A",
+        "B",
+        "CC",
+        "B",
+        "B",
+        "B",
+        "A",
+        "B"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "CC",
+        "CA",
+        "AB",
+        "AA",
+        "BC",
+        "BB"
+      ],
+      [
+        "A",
+        "AA",
+        "B",
+        "AA",
+        "CC",
+        "B",
+        "BB",
+        "A",
+        "C",
+        "A"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "AABCA",
+        "CABBA",
+        "BABAB",
+        "CABCB"
+      ],
+      [
+        "BB",
+        "BB",
+        "CC",
+        "BB",
+        "CC",
+        "C",
+        "B",
+        "A",
+        "AA",
+        "CC"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "AA",
+        "AB",
+        "AC",
+        "CA",
+        "BB",
+        "CB"
+      ],
+      [
+        "B",
+        "B",
+        "BB",
+        "BB",
+        "BB",
+        "A",
+        "AA",
+        "C",
+        "C",
+        "A"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "BABABA",
+        "BCBAAB",
+        "BCBBAA"
+      ],
+      [
+        "CC",
+        "B",
+        "A",
+        "C",
+        "B",
+        "AA",
+        "B",
+        "CC",
+        "C",
+        "B"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "CBBAA",
+        "CAACB",
+        "AAAAA",
+        "CBCAB",
+        "BABBA",
+        "BBBBC"
+      ],
+      [
+        "AA",
+        "C",
+        "A",
+        "BB",
+        "CC",
+        "AA",
+        "AA",
+        "A",
+        "A",
+        "B"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "BCAC",
+        "ACBA",
+        "BAAA",
+        "BCAB",
+        "BABB",
+        "BCAA"
+      ],
+      [
+        "C",
+        "B",
+        "CC",
+        "AA",
+        "AA",
+        "AA",
+        "C",
+        "CC",
+        "C",
+        "B"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "ABACAA",
+        "BBCCBA",
+        "AACABB",
+        "AABBAA",
+        "AAACCA"
+      ],
+      [
+        "AA",
+        "AA",
+        "BB",
+        "A",
+        "B",
+        "C",
+        "BB",
+        "C",
+        "BB",
+        "C"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "AC",
+        "BB"
+      ],
+      [
+        "CC",
+        "BB",
+        "BB",
+        "A",
+        "BB",
+        "A",
+        "CC",
+        "BB",
+        "A",
+        "BB"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "CCCA",
+        "BACC",
+        "CBBB",
+        "BBCA",
+        "BBAC"
+      ],
+      [
+        "A",
+        "CC",
+        "C",
+        "B",
+        "CC",
+        "A",
+        "BB",
+        "CC",
+        "C",
+        "C"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "BB",
+        "CA"
+      ],
+      [
+        "C",
+        "AA",
+        "A",
+        "BB",
+        "C",
+        "A",
+        "B",
+        "CC",
+        "A",
+        "CC"
+      ]
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "CBBABC",
+        "BACAAB"
+      ],
+      [
+        "AA",
+        "AA",
+        "CC",
+        "B",
+        "B",
+        "CC",
+        "AA",
+        "B",
+        "C",
+        "BB"
+      ]
+    ],
+    "expected": 0
+  }
+]

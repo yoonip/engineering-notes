@@ -1,0 +1,329 @@
+[
+  {
+    "name": "공식 입력으로 할인식을 독립 재계산한 결과; 원문 결과표 오탈자 교정",
+    "tables": {
+      "CAR_RENTAL_COMPANY_CAR": {
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            "SUV",
+            25000,
+            "가죽시트,열선시트,후방카메라"
+          ],
+          [
+            2,
+            "세단",
+            14000,
+            "스마트키,네비게이션,열선시트"
+          ],
+          [
+            3,
+            "트럭",
+            32000,
+            "주차감지센서,후방카메라,가죽시트"
+          ],
+          [
+            4,
+            "세단",
+            12000,
+            "열선시트,후방카메라"
+          ],
+          [
+            5,
+            "세단",
+            22000,
+            "스마트키,주차감지센서"
+          ]
+        ]
+      },
+      "CAR_RENTAL_COMPANY_RENTAL_HISTORY": {
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            1,
+            "2022-08-27",
+            "2022-09-02"
+          ],
+          [
+            2,
+            1,
+            "2022-10-03",
+            "2022-10-04"
+          ],
+          [
+            3,
+            2,
+            "2022-10-05",
+            "2022-10-20"
+          ],
+          [
+            4,
+            2,
+            "2022-10-10",
+            "2022-11-12"
+          ],
+          [
+            5,
+            3,
+            "2022-10-16",
+            "2022-10-17"
+          ]
+        ]
+      },
+      "CAR_RENTAL_COMPANY_DISCOUNT_PLAN": {
+        "columns": [
+          "PLAN_ID",
+          "CAR_TYPE",
+          "DURATION_TYPE",
+          "DISCOUNT_RATE"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            1,
+            "트럭",
+            "7일 이상",
+            5
+          ],
+          [
+            2,
+            "트럭",
+            "30일 이상",
+            7
+          ],
+          [
+            3,
+            "트럭",
+            "90일 이상",
+            10
+          ],
+          [
+            4,
+            "세단",
+            "7일 이상",
+            5
+          ],
+          [
+            5,
+            "세단",
+            "30일 이상",
+            10
+          ],
+          [
+            6,
+            "세단",
+            "90일 이상",
+            15
+          ],
+          [
+            7,
+            "SUV",
+            "7일 이상",
+            3
+          ],
+          [
+            8,
+            "SUV",
+            "30일 이상",
+            8
+          ],
+          [
+            9,
+            "SUV",
+            "90일 이상",
+            12
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        1,
+        "SUV",
+        690000
+      ],
+      [
+        5,
+        "세단",
+        594000
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/157339"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "CAR_RENTAL_COMPANY_CAR": {
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": []
+      },
+      "CAR_RENTAL_COMPANY_RENTAL_HISTORY": {
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      },
+      "CAR_RENTAL_COMPANY_DISCOUNT_PLAN": {
+        "columns": [
+          "PLAN_ID",
+          "CAR_TYPE",
+          "DURATION_TYPE",
+          "DISCOUNT_RATE"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "CAR_RENTAL_COMPANY_CAR": {
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            "세단",
+            20000,
+            null
+          ],
+          [
+            2,
+            "세단",
+            20000,
+            null
+          ],
+          [
+            3,
+            "세단",
+            20000,
+            null
+          ]
+        ]
+      },
+      "CAR_RENTAL_COMPANY_RENTAL_HISTORY": {
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            1,
+            "2022-10-01",
+            "2022-11-01"
+          ]
+        ]
+      },
+      "CAR_RENTAL_COMPANY_DISCOUNT_PLAN": {
+        "columns": [
+          "PLAN_ID",
+          "CAR_TYPE",
+          "DURATION_TYPE",
+          "DISCOUNT_RATE"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            0,
+            "세단",
+            "7일 이상",
+            10
+          ],
+          [
+            1,
+            "세단",
+            "30일 이상",
+            20
+          ],
+          [
+            2,
+            "세단",
+            "90일 이상",
+            30
+          ]
+        ]
+      }
+    },
+    "expected": []
+  }
+]

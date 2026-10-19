@@ -44,7 +44,7 @@ Each topic starts with what it is used for and why the implementation works that
 - [Research, papers, and awards](연구_research/README.md)
 - [Topic index](분야별목차_CATALOG.md) · [AI companies and models](AI모델실험_model-lab/PROVIDERS.md)
 - [Tools](문서_docs/도구목록_TOOLS_INDEX.md) · [Implemented projects](프로젝트_projects/README.md) · [Code examples](예제_examples/README.md)
-- [Algorithms and coding tests](분야_topics/08-알고리즘_problem-solving/README.md) · [100 Programmers solutions](programmers/README.md)
+- [Algorithms and coding tests](분야_topics/08-알고리즘_problem-solving/README.md) · [309 Programmers solutions](programmers/README.md)
 - [Applications, assessments, and interviews](분야_topics/55-지원시험면접_applications-assessments/README.md)
 - [Author and contact](문서_docs/작성자소개_PROFILE_TEMPLATE.md) · [References](문서_docs/참고자료_SOURCES.md)
 

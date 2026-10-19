@@ -1,0 +1,319 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "FOOD_PRODUCT": {
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_NAME",
+          "PRODUCT_CD",
+          "CATEGORY",
+          "PRICE"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            "P0011",
+            "맛있는콩기름",
+            "CD_OL00001",
+            "식용유",
+            4880
+          ],
+          [
+            "P0012",
+            "맛있는올리브유",
+            "CD_OL00002",
+            "식용유",
+            7200
+          ],
+          [
+            "P0013",
+            "맛있는포도씨유",
+            "CD_OL00003",
+            "식용유",
+            5950
+          ],
+          [
+            "P0014",
+            "맛있는마조유",
+            "CD_OL00004",
+            "식용유",
+            8950
+          ],
+          [
+            "P0015",
+            "맛있는화조유",
+            "CD_OL00005",
+            "식용유",
+            8800
+          ],
+          [
+            "P0016",
+            "맛있는참기름",
+            "CD_OL00006",
+            "식용유",
+            7100
+          ],
+          [
+            "P0017",
+            "맛있는들기름",
+            "CD_OL00007",
+            "식용유",
+            7900
+          ],
+          [
+            "P0018",
+            "맛있는고추기름",
+            "CD_OL00008",
+            "식용유",
+            6100
+          ],
+          [
+            "P0019",
+            "맛있는카놀라유",
+            "CD_OL00009",
+            "식용유",
+            5100
+          ],
+          [
+            "P0020",
+            "맛있는산초유",
+            "CD_OL00010",
+            "식용유",
+            6500
+          ]
+        ]
+      },
+      "FOOD_ORDER": {
+        "columns": [
+          "ORDER_ID",
+          "PRODUCT_ID",
+          "AMOUNT",
+          "PRODUCE_DATE",
+          "IN_DATE",
+          "OUT_DATE",
+          "FACTORY_ID",
+          "WAREHOUSE_ID"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "OD00000056",
+            "P0012",
+            1000,
+            "2022-04-04",
+            "2022-04-21",
+            "2022-04-25",
+            "FT19980002",
+            "WH0032"
+          ],
+          [
+            "OD00000057",
+            "P0014",
+            2500,
+            "2022-04-14",
+            "2022-04-27",
+            "2022-05-01",
+            "FT19980002",
+            "WH0033"
+          ],
+          [
+            "OD00000058",
+            "P0017",
+            1200,
+            "2022-05-19",
+            "2022-05-28",
+            "2022-05-28",
+            "FT20070002",
+            "WH0033"
+          ],
+          [
+            "OD00000059",
+            "P0017",
+            1000,
+            "2022-05-24",
+            "2022-05-30",
+            "2022-05-30",
+            "FT20070002",
+            "WH0038"
+          ],
+          [
+            "OD00000060",
+            "P0019",
+            2000,
+            "2022-05-29",
+            "2022-06-08",
+            "2022-06-08",
+            "FT20070002",
+            "WH0035"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "P0017",
+        "맛있는들기름",
+        17380000
+      ],
+      [
+        "P0019",
+        "맛있는카놀라유",
+        10200000
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/131117"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "FOOD_PRODUCT": {
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_NAME",
+          "PRODUCT_CD",
+          "CATEGORY",
+          "PRICE"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": []
+      },
+      "FOOD_ORDER": {
+        "columns": [
+          "ORDER_ID",
+          "PRODUCT_ID",
+          "AMOUNT",
+          "PRODUCE_DATE",
+          "IN_DATE",
+          "OUT_DATE",
+          "FACTORY_ID",
+          "WAREHOUSE_ID"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "FOOD_PRODUCT": {
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_NAME",
+          "PRODUCT_CD",
+          "CATEGORY",
+          "PRICE"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            "P",
+            "Food",
+            null,
+            null,
+            100
+          ]
+        ]
+      },
+      "FOOD_ORDER": {
+        "columns": [
+          "ORDER_ID",
+          "PRODUCT_ID",
+          "AMOUNT",
+          "PRODUCE_DATE",
+          "IN_DATE",
+          "OUT_DATE",
+          "FACTORY_ID",
+          "WAREHOUSE_ID"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "0",
+            "P",
+            2,
+            "2022-05-01",
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "1",
+            "P",
+            3,
+            "2022-05-31",
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2",
+            "P",
+            100,
+            "2022-06-01",
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "P",
+        "Food",
+        500
+      ]
+    ]
+  }
+]

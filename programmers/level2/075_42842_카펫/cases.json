@@ -1,0 +1,378 @@
+{
+  "problem_id": 42842,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        10,
+        2
+      ],
+      "expected": [
+        4,
+        3
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        8,
+        1
+      ],
+      "expected": [
+        3,
+        3
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        24,
+        24
+      ],
+      "expected": [
+        8,
+        6
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        122,
+        714
+      ],
+      "expected": [
+        44,
+        19
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        126,
+        840
+      ],
+      "expected": [
+        42,
+        23
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        50,
+        112
+      ],
+      "expected": [
+        18,
+        9
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        56,
+        165
+      ],
+      "expected": [
+        17,
+        13
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        100,
+        215
+      ],
+      "expected": [
+        45,
+        7
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        44,
+        36
+      ],
+      "expected": [
+        20,
+        4
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        92,
+        483
+      ],
+      "expected": [
+        25,
+        23
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        100,
+        495
+      ],
+      "expected": [
+        35,
+        17
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        90,
+        372
+      ],
+      "expected": [
+        33,
+        14
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        82,
+        380
+      ],
+      "expected": [
+        22,
+        21
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        98,
+        280
+      ],
+      "expected": [
+        42,
+        9
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        102,
+        418
+      ],
+      "expected": [
+        40,
+        13
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        88,
+        416
+      ],
+      "expected": [
+        28,
+        18
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        72,
+        208
+      ],
+      "expected": [
+        28,
+        10
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        114,
+        714
+      ],
+      "expected": [
+        36,
+        23
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        60,
+        196
+      ],
+      "expected": [
+        16,
+        16
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        78,
+        286
+      ],
+      "expected": [
+        28,
+        13
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        130,
+        860
+      ],
+      "expected": [
+        45,
+        22
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        120,
+        672
+      ],
+      "expected": [
+        44,
+        18
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        108,
+        480
+      ],
+      "expected": [
+        42,
+        14
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        50,
+        112
+      ],
+      "expected": [
+        18,
+        9
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        104,
+        621
+      ],
+      "expected": [
+        29,
+        25
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        38,
+        72
+      ],
+      "expected": [
+        11,
+        10
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        84,
+        39
+      ],
+      "expected": [
+        41,
+        3
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        40,
+        65
+      ],
+      "expected": [
+        15,
+        7
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        82,
+        338
+      ],
+      "expected": [
+        28,
+        15
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        36,
+        55
+      ],
+      "expected": [
+        13,
+        7
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        32,
+        13
+      ],
+      "expected": [
+        15,
+        3
+      ],
+      "alternative_checked": true
+    }
+  ]
+}

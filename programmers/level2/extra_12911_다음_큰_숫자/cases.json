@@ -1,0 +1,326 @@
+{
+  "problem_id": 12911,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        78
+      ],
+      "expected": 83,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        15
+      ],
+      "expected": 23,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        205159
+      ],
+      "expected": 205163,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        250364
+      ],
+      "expected": 250431,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        816193
+      ],
+      "expected": 816194,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        388126
+      ],
+      "expected": 388135,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        503229
+      ],
+      "expected": 503230,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        42442
+      ],
+      "expected": 42444,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        618440
+      ],
+      "expected": 618448,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        152389
+      ],
+      "expected": 152390,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        354510
+      ],
+      "expected": 354515,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        143763
+      ],
+      "expected": 143765,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        258101
+      ],
+      "expected": 258102,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        460273
+      ],
+      "expected": 460274,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        925446
+      ],
+      "expected": 925449,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        275612
+      ],
+      "expected": 275619,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        557352
+      ],
+      "expected": 557360,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        894003
+      ],
+      "expected": 894005,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        202002
+      ],
+      "expected": 202004,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        999727
+      ],
+      "expected": 999735,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        724282
+      ],
+      "expected": 724284,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        427816
+      ],
+      "expected": 427824,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        563399
+      ],
+      "expected": 563403,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        206193
+      ],
+      "expected": 206194,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        571835
+      ],
+      "expected": 571837,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        547648
+      ],
+      "expected": 547712,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        330573
+      ],
+      "expected": 330574,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        527947
+      ],
+      "expected": 527949,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        701386
+      ],
+      "expected": 701388,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        736178
+      ],
+      "expected": 736180,
+      "alternative_checked": true
+    },
+    {
+      "label": "bit-boundary",
+      "args": [
+        1
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    },
+    {
+      "label": "bit-boundary",
+      "args": [
+        2
+      ],
+      "expected": 4,
+      "alternative_checked": true
+    },
+    {
+      "label": "bit-boundary",
+      "args": [
+        3
+      ],
+      "expected": 5,
+      "alternative_checked": true
+    },
+    {
+      "label": "bit-boundary",
+      "args": [
+        7
+      ],
+      "expected": 11,
+      "alternative_checked": true
+    },
+    {
+      "label": "bit-boundary",
+      "args": [
+        8
+      ],
+      "expected": 16,
+      "alternative_checked": true
+    },
+    {
+      "label": "bit-boundary",
+      "args": [
+        15
+      ],
+      "expected": 23,
+      "alternative_checked": true
+    },
+    {
+      "label": "bit-boundary",
+      "args": [
+        16
+      ],
+      "expected": 32,
+      "alternative_checked": true
+    },
+    {
+      "label": "bit-boundary",
+      "args": [
+        1023
+      ],
+      "expected": 1535,
+      "alternative_checked": true
+    },
+    {
+      "label": "bit-boundary",
+      "args": [
+        1024
+      ],
+      "expected": 2048,
+      "alternative_checked": true
+    },
+    {
+      "label": "bit-boundary",
+      "args": [
+        1000000
+      ],
+      "expected": 1000064,
+      "alternative_checked": true
+    }
+  ]
+}

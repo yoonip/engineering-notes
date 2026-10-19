@@ -1,0 +1,236 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "FISH_INFO",
+        "columns": [
+          "ID",
+          "FISH_TYPE",
+          "LENGTH",
+          "TIME"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "FLOAT",
+          "DATE"
+        ],
+        "rows": [
+          [
+            0,
+            0,
+            13.37,
+            "2021-12-04"
+          ],
+          [
+            1,
+            0,
+            50,
+            "2020-03-07"
+          ],
+          [
+            2,
+            0,
+            40,
+            "2020-03-07"
+          ],
+          [
+            3,
+            1,
+            43.33,
+            "2022-03-09"
+          ],
+          [
+            4,
+            1,
+            null,
+            "2022-04-08"
+          ],
+          [
+            5,
+            2,
+            32,
+            "2020-04-28"
+          ]
+        ]
+      },
+      {
+        "name": "FISH_NAME_INFO",
+        "columns": [
+          "FISH_TYPE",
+          "FISH_NAME"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR"
+        ],
+        "rows": [
+          [
+            0,
+            "BASS"
+          ],
+          [
+            1,
+            "SNAPPER"
+          ],
+          [
+            2,
+            "ANCHOVY"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        3,
+        "BASS"
+      ],
+      [
+        2,
+        "SNAPPER"
+      ],
+      [
+        1,
+        "ANCHOVY"
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "FISH_INFO",
+        "columns": [
+          "ID",
+          "FISH_TYPE",
+          "LENGTH",
+          "TIME"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "FLOAT",
+          "DATE"
+        ],
+        "rows": []
+      },
+      {
+        "name": "FISH_NAME_INFO",
+        "columns": [
+          "FISH_TYPE",
+          "FISH_NAME"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": []
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "FISH_INFO",
+        "columns": [
+          "ID",
+          "FISH_TYPE",
+          "LENGTH",
+          "TIME"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "FLOAT",
+          "DATE"
+        ],
+        "rows": [
+          [
+            0,
+            0,
+            13.37,
+            "2021-12-04"
+          ],
+          [
+            1,
+            0,
+            50,
+            "2020-03-07"
+          ],
+          [
+            2,
+            0,
+            40,
+            "2020-03-07"
+          ],
+          [
+            3,
+            1,
+            43.33,
+            "2022-03-09"
+          ],
+          [
+            4,
+            1,
+            null,
+            "2022-04-08"
+          ],
+          [
+            5,
+            2,
+            32,
+            "2020-04-28"
+          ],
+          [
+            105,
+            0,
+            13.37,
+            "2021-12-04"
+          ]
+        ]
+      },
+      {
+        "name": "FISH_NAME_INFO",
+        "columns": [
+          "FISH_TYPE",
+          "FISH_NAME"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR"
+        ],
+        "rows": [
+          [
+            0,
+            "BASS"
+          ],
+          [
+            1,
+            "SNAPPER"
+          ],
+          [
+            2,
+            "ANCHOVY"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        4,
+        "BASS"
+      ],
+      [
+        2,
+        "SNAPPER"
+      ],
+      [
+        1,
+        "ANCHOVY"
+      ]
+    ]
+  }
+]

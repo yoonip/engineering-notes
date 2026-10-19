@@ -1,0 +1,299 @@
+[
+  {
+    "args": [
+      "HaEaLaLaObWORLDb"
+    ],
+    "expected": "HELLO WORLD",
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "SpIpGpOpNpGJqOqA"
+    ],
+    "expected": "SIGONG JOA",
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "AxAxAxAoBoBoB"
+    ],
+    "expected": "invalid",
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "bDaBbcAAAcdBdB"
+    ],
+    "expected": "DB AAA B B",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "bBaBaAbdBcAcAcCdAB"
+    ],
+    "expected": "BBA BAAC AB",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "aBAacDbBbDbDcBDeBdCdAdCe"
+    ],
+    "expected": "BA DBDD BD BCAC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "aAabDCb"
+    ],
+    "expected": "A DC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "aAabBbcAcB"
+    ],
+    "expected": "A B A B",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "BaAbBBBCb"
+    ],
+    "expected": "BA BBBC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "aBCBacDbCbCbDcCdDdCdC"
+    ],
+    "expected": "BCB DCCD CDCC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "bCaDaAbcCc"
+    ],
+    "expected": "CDA C",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "bDaDb"
+    ],
+    "expected": "DD",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "CCaBaDaDbDACDbcDDc"
+    ],
+    "expected": "C CBDD DACD DD",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "BbAaCaAb"
+    ],
+    "expected": "B ACA",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "CDCbAaDaDaCbBcBdDd"
+    ],
+    "expected": "CDC ADDC BB D",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "A"
+    ],
+    "expected": "A",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "aBCAacBbDbAc"
+    ],
+    "expected": "BCA BDA",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "aCa"
+    ],
+    "expected": "C",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "bBaAaAaDb"
+    ],
+    "expected": "BAAD",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "bAaAaBbdCcDcAcCd"
+    ],
+    "expected": "AAB CDAC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "CaCDDaAbBbDADD"
+    ],
+    "expected": "C CDD A B DADD",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "AaCAbAbDbC"
+    ],
+    "expected": "AC AADC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "D"
+    ],
+    "expected": "D",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "caaB"
+    ],
+    "expected": "invalid",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "AcaACCbcC"
+    ],
+    "expected": "invalid",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "bCBAcAAbAA"
+    ],
+    "expected": "invalid",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "CaabcC"
+    ],
+    "expected": "invalid",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "ABbAC"
+    ],
+    "expected": "A BA C",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "bBaCcaac"
+    ],
+    "expected": "invalid",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "bc"
+    ],
+    "expected": "invalid",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "B"
+    ],
+    "expected": "B",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "CCCBabCcc"
+    ],
+    "expected": "invalid",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  },
+  {
+    "args": [
+      "cB"
+    ],
+    "expected": "invalid",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": true
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "args": [
+      "abcdcba"
+    ],
+    "expected": 7
+  },
+  {
+    "args": [
+      "abacde"
+    ],
+    "expected": 3
+  }
+]

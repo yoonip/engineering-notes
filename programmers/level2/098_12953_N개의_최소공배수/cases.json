@@ -1,0 +1,506 @@
+{
+  "problem_id": 12953,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        [
+          2,
+          6,
+          8,
+          14
+        ]
+      ],
+      "expected": 168,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "expected": 6,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          71,
+          20,
+          84,
+          34,
+          95,
+          4
+        ]
+      ],
+      "expected": 9631860,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          85,
+          77,
+          8,
+          50,
+          99
+        ]
+      ],
+      "expected": 2356200,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          43,
+          98,
+          13,
+          27,
+          93,
+          69,
+          68,
+          43
+        ]
+      ],
+      "expected": 35856681588,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          3,
+          50,
+          68,
+          24,
+          37,
+          2,
+          33,
+          76,
+          72,
+          92
+        ]
+      ],
+      "expected": 5442485400,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          55,
+          44,
+          36,
+          43,
+          40,
+          8,
+          55,
+          85,
+          16,
+          16,
+          3,
+          2,
+          68
+        ]
+      ],
+      "expected": 5789520,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          35,
+          32,
+          91,
+          44
+        ]
+      ],
+      "expected": 160160,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          60,
+          90,
+          64,
+          70,
+          40,
+          67,
+          51,
+          63,
+          81,
+          22,
+          63
+        ]
+      ],
+      "expected": 2273261760,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          98
+        ]
+      ],
+      "expected": 98,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          14,
+          96,
+          7,
+          72,
+          81,
+          67,
+          85,
+          49,
+          87,
+          34,
+          86,
+          61,
+          14,
+          59,
+          70
+        ]
+      ],
+      "expected": 3246183797683680,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          50,
+          71
+        ]
+      ],
+      "expected": 3550,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          47,
+          15,
+          23,
+          35,
+          33,
+          22,
+          10,
+          40,
+          71,
+          65
+        ]
+      ],
+      "expected": 9219330120,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          30,
+          31,
+          74,
+          65,
+          31,
+          48,
+          31,
+          6,
+          16,
+          90,
+          44,
+          55
+        ]
+      ],
+      "expected": 118095120,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          73,
+          64,
+          5,
+          35,
+          84,
+          99,
+          45,
+          47,
+          50,
+          51,
+          42,
+          59
+        ]
+      ],
+      "expected": 3815705678400,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          79,
+          83,
+          64
+        ]
+      ],
+      "expected": 419648,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          2,
+          86,
+          40,
+          49
+        ]
+      ],
+      "expected": 84280,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          41,
+          35,
+          95,
+          94,
+          31,
+          44,
+          12,
+          39,
+          59,
+          41,
+          8,
+          79,
+          10
+        ]
+      ],
+      "expected": 635464707837960,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          16,
+          60,
+          71,
+          86
+        ]
+      ],
+      "expected": 732720,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          21,
+          34
+        ]
+      ],
+      "expected": 714,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          75,
+          68,
+          73
+        ]
+      ],
+      "expected": 372300,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          94,
+          30,
+          28,
+          54,
+          16,
+          50,
+          28
+        ]
+      ],
+      "expected": 3553200,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          54,
+          94,
+          65,
+          42,
+          37,
+          63,
+          59,
+          36,
+          89,
+          29
+        ]
+      ],
+      "expected": 13012919714340,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          42,
+          65,
+          68,
+          56,
+          81,
+          56,
+          70,
+          17,
+          72,
+          19,
+          1,
+          71,
+          21,
+          49,
+          5
+        ]
+      ],
+      "expected": 47330960040,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          76,
+          80,
+          55,
+          7,
+          18,
+          56,
+          27,
+          47,
+          41,
+          25,
+          66,
+          74,
+          70,
+          72
+        ]
+      ],
+      "expected": 1126552719600,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          81,
+          95,
+          94,
+          33,
+          51,
+          29
+        ]
+      ],
+      "expected": 3922618590,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          24,
+          42,
+          73,
+          58,
+          64,
+          61
+        ]
+      ],
+      "expected": 173560128,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          46,
+          85,
+          25,
+          74,
+          60,
+          18,
+          73,
+          42,
+          43,
+          97,
+          90,
+          33,
+          94
+        ]
+      ],
+      "expected": 14347380757733100,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          21,
+          5,
+          88,
+          99,
+          76,
+          23,
+          86,
+          28,
+          7,
+          13,
+          64,
+          36
+        ]
+      ],
+      "expected": 54172198080,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          88,
+          64
+        ]
+      ],
+      "expected": 704,
+      "alternative_checked": true
+    }
+  ]
+}

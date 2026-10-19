@@ -1,0 +1,2988 @@
+[
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "official"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "official"
+  },
+  {
+    "args": [
+      [
+        [
+          1
+        ]
+      ]
+    ],
+    "expected": 1,
+    "kind": "official"
+  },
+  {
+    "args": [
+      [
+        [
+          -1
+        ]
+      ]
+    ],
+    "expected": 1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1
+        ]
+      ]
+    ],
+    "expected": 1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 3,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 3,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 3,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 3,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 3,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 3,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 6,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "expected": 5,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 4,
+    "kind": "generated"
+  }
+]

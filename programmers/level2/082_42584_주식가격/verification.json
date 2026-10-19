@@ -1,0 +1,13 @@
+{
+  "id": 42584,
+  "cases": 29,
+  "official_examples": 1,
+  "passed": true,
+  "checked_on": "2026-10-19",
+  "python_version": "3.12.14",
+  "command": "python verify.py",
+  "new_site_submission": false,
+  "alternative_cases": 29,
+  "stress_cases": 1,
+  "stress_label": "범위 안의 비증가 가격 10만 개 / One hundred thousand nonincreasing prices within bounds"
+}

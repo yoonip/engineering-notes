@@ -1,0 +1,27 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/49995",
+  "cases": [
+    {
+      "args": [
+        [
+          1,
+          1,
+          2,
+          3
+        ]
+      ],
+      "expected": 3
+    },
+    {
+      "args": [
+        [
+          1,
+          2,
+          4,
+          5
+        ]
+      ],
+      "expected": 0
+    }
+  ]
+}

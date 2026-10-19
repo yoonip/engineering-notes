@@ -1,0 +1,408 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "X591X",
+        "X1X5X",
+        "X231X",
+        "1XXX1"
+      ]
+    ],
+    "expected": [
+      1,
+      1,
+      27
+    ],
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "XXX",
+        "XXX",
+        "XXX"
+      ]
+    ],
+    "expected": [
+      -1
+    ],
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "634",
+        "6X5",
+        "592"
+      ]
+    ],
+    "expected": [
+      40
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "947X",
+        "3826",
+        "565X"
+      ]
+    ],
+    "expected": [
+      55
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "645733X3",
+        "772X6X8X",
+        "X64X8346",
+        "X5XX77XX"
+      ]
+    ],
+    "expected": [
+      3,
+      108
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "8X674XX",
+        "1X93296",
+        "X8X8X69"
+      ]
+    ],
+    "expected": [
+      8,
+      9,
+      69
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "3X492",
+        "55641",
+        "42759",
+        "52X49"
+      ]
+    ],
+    "expected": [
+      86
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "75735X6",
+        "2X74695",
+        "612X529",
+        "1291518",
+        "4419X59"
+      ]
+    ],
+    "expected": [
+      150
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "5X17X",
+        "5X729",
+        "3838X",
+        "781XX"
+      ]
+    ],
+    "expected": [
+      74
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XX2XX1X",
+        "59XX346",
+        "29117X9",
+        "1X4X154",
+        "56595X3",
+        "88X7633",
+        "9694278",
+        "59X7536"
+      ]
+    ],
+    "expected": [
+      2,
+      220
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "485164",
+        "XX2479",
+        "8277X8",
+        "13X2X5"
+      ]
+    ],
+    "expected": [
+      93
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "332126",
+        "5X72X6",
+        "627XX7",
+        "1X2X7X",
+        "X1983X",
+        "X25X36"
+      ]
+    ],
+    "expected": [
+      106
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "X99118",
+        "143X64",
+        "X88172",
+        "856XX6",
+        "51XX76",
+        "X93527"
+      ]
+    ],
+    "expected": [
+      142
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "6X92",
+        "1X18",
+        "24XX",
+        "1457",
+        "85X7"
+      ]
+    ],
+    "expected": [
+      20,
+      50
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "169",
+        "981",
+        "2XX",
+        "883",
+        "9X1",
+        "XX2"
+      ]
+    ],
+    "expected": [
+      67
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "8135",
+        "3333",
+        "6XX9",
+        "6855",
+        "3X17"
+      ]
+    ],
+    "expected": [
+      79
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "X3765",
+        "1X383",
+        "77266",
+        "X4XX2",
+        "59X45",
+        "42X21",
+        "4X8X8",
+        "2X984"
+      ]
+    ],
+    "expected": [
+      145
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "X8171",
+        "321X2",
+        "67899",
+        "944X9",
+        "41729"
+      ]
+    ],
+    "expected": [
+      113
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "97X68",
+        "X95X6",
+        "79386",
+        "122X5",
+        "43451"
+      ]
+    ],
+    "expected": [
+      110
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "26X4443X",
+        "561443XX",
+        "41X4558X",
+        "1986XX22"
+      ]
+    ],
+    "expected": [
+      101
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "5348644",
+        "232X31X",
+        "759X112",
+        "2236X62",
+        "48X478X",
+        "X62XXXX",
+        "X767X29",
+        "8X6718X"
+      ]
+    ],
+    "expected": [
+      8,
+      183
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "3X44881",
+        "8X96XX1",
+        "45X5755",
+        "6X8X379"
+      ]
+    ],
+    "expected": [
+      8,
+      26,
+      82
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XX435X6X",
+        "354XXX35",
+        "X5717X18",
+        "7176XX4X",
+        "83527795",
+        "8X16XX47",
+        "1XX6X1X7",
+        "232XXXX4"
+      ]
+    ],
+    "expected": [
+      1,
+      189
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "X387",
+        "X66X",
+        "2X84",
+        "2X45",
+        "8523",
+        "818X",
+        "7566"
+      ]
+    ],
+    "expected": [
+      114
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "88X719",
+        "8743X9",
+        "19XX68",
+        "956642",
+        "893425",
+        "1X95X4"
+      ]
+    ],
+    "expected": [
+      170
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "8778X5",
+        "615XX9",
+        "X7X154",
+        "12124X",
+        "X5864X"
+      ]
+    ],
+    "expected": [
+      106
+    ]
+  }
+]

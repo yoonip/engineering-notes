@@ -1,8 +1,3 @@
-# 문제: 충돌위험 찾기
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/340211
-# 풀이: 같은 시각의 좌표를 해시로 집계해 충돌 지점을 센다. 로봇을 행 우선으로 한 칸씩 옮긴 뒤 다음 시각을 처리한다.
-# 복잡도: 로봇 R대·최대 이동 시간 T: 시간 O(RT), 추가 공간 O(R).
-
 def solution(points, routes):
     robots = []
     for route in routes:
@@ -14,10 +9,12 @@ def solution(points, routes):
         next_robots = []
         for r, c, index, route in robots:
             position = (r, c)
+            # 같은 시각 같은 좌표에 있는 로봇 수를 센다.
             counts[position] = counts.get(position, 0) + 1
             if index == len(route):
                 continue
             target_r, target_c = points[route[index] - 1]
+            # 행을 먼저 맞춘 뒤 열을 움직인다.
             if r != target_r:
                 r += 1 if r < target_r else -1
             elif c != target_c:
@@ -26,6 +23,7 @@ def solution(points, routes):
                 index += 1
             next_robots.append((r, c, index, route))
         for count in counts.values():
+            # 여러 대가 모여도 좌표 하나의 위험은 한 번만 센다.
             if count >= 2:
                 answer += 1
         robots = next_robots

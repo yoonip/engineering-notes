@@ -1,0 +1,212 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      437674,
+      3
+    ],
+    "expected": 3,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      110011,
+      10
+    ],
+    "expected": 2,
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      7804,
+      5
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      3353,
+      10
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      7782,
+      6
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      1215,
+      8
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      7306,
+      3
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      9000,
+      9
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      8049,
+      8
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      6724,
+      5
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      8294,
+      5
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      5202,
+      8
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      9298,
+      4
+    ],
+    "expected": 2
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      6904,
+      6
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      7612,
+      10
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      4918,
+      5
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      9193,
+      9
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      9859,
+      3
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      6329,
+      8
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      7364,
+      5
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      6302,
+      3
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      6687,
+      5
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      232,
+      10
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      9423,
+      4
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      7403,
+      5
+    ],
+    "expected": 2
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      2362,
+      4
+    ],
+    "expected": 0
+  }
+]

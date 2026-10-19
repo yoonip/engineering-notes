@@ -1,0 +1,1506 @@
+[
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "JFK"
+        ],
+        [
+          "HND",
+          "IAD"
+        ],
+        [
+          "JFK",
+          "HND"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "JFK",
+      "HND",
+      "IAD"
+    ],
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "SFO"
+        ],
+        [
+          "ICN",
+          "ATL"
+        ],
+        [
+          "SFO",
+          "ATL"
+        ],
+        [
+          "ATL",
+          "ICN"
+        ],
+        [
+          "ATL",
+          "SFO"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "ATL",
+      "ICN",
+      "SFO",
+      "ATL",
+      "SFO"
+    ],
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "CCC",
+      "BBB",
+      "BBB",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "AAA",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "AAA"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "AAA",
+      "CCC",
+      "AAA",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "BBB",
+      "BBB",
+      "CCC",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "AAA"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "BBB",
+      "CCC",
+      "BBB",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "AAA",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "CCC",
+      "BBB",
+      "AAA",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "CCC",
+      "CCC",
+      "AAA",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "AAA",
+      "CCC",
+      "BBB",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "AAA",
+      "CCC",
+      "AAA",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "CCC",
+      "CCC",
+      "AAA",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "AAA",
+      "AAA",
+      "BBB",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "AAA",
+      "CCC",
+      "BBB",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "AAA"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "BBB",
+      "CCC",
+      "CCC",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "AAA",
+      "CCC",
+      "CCC",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "AAA",
+          "AAA"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "BBB",
+      "AAA",
+      "AAA",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "AAA",
+      "CCC",
+      "CCC",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "AAA",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "AAA",
+      "CCC",
+      "CCC",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "BBB",
+      "CCC",
+      "CCC",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "BBB",
+      "BBB",
+      "BBB",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "AAA"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "CCC",
+      "BBB",
+      "CCC",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "AAA",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "CCC",
+      "CCC",
+      "AAA",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "AAA",
+      "CCC",
+      "CCC",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "AAA"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "BBB",
+      "AAA",
+      "BBB",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "AAA",
+      "BBB",
+      "CCC",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "BBB",
+      "CCC",
+      "BBB",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "AAA",
+      "BBB",
+      "CCC",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "ICN",
+          "AAA"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "CCC",
+      "BBB",
+      "CCC",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "AAA",
+      "CCC",
+      "BBB",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "AAA",
+      "CCC",
+      "CCC",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "CCC",
+      "BBB",
+      "BBB",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "AAA",
+      "BBB",
+      "AAA",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "AAA",
+      "CCC",
+      "CCC",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "BBB",
+      "BBB",
+      "CCC",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "CCC",
+      "BBB",
+      "CCC",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "CCC",
+      "BBB",
+      "BBB",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "BBB",
+      "BBB",
+      "CCC",
+      "BBB"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "AAA"
+        ],
+        [
+          "AAA",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "AAA",
+      "CCC",
+      "BBB",
+      "BBB",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "CCC",
+      "BBB",
+      "CCC",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "BBB",
+          "CCC"
+        ],
+        [
+          "AAA",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "AAA"
+        ],
+        [
+          "ICN",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "BBB",
+      "AAA",
+      "BBB",
+      "BBB",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "AAA"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "BBB",
+      "CCC",
+      "CCC",
+      "AAA"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          "CCC",
+          "BBB"
+        ],
+        [
+          "ICN",
+          "CCC"
+        ],
+        [
+          "CCC",
+          "CCC"
+        ],
+        [
+          "BBB",
+          "BBB"
+        ],
+        [
+          "BBB",
+          "CCC"
+        ]
+      ]
+    ],
+    "expected": [
+      "ICN",
+      "CCC",
+      "BBB",
+      "BBB",
+      "CCC",
+      "CCC"
+    ],
+    "check_alternative": true,
+    "kind": "differential"
+  }
+]

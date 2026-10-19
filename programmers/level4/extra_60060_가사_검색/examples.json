@@ -1,0 +1,31 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/60060",
+  "cases": [
+    {
+      "args": [
+        [
+          "frodo",
+          "front",
+          "frost",
+          "frozen",
+          "frame",
+          "kakao"
+        ],
+        [
+          "fro??",
+          "????o",
+          "fr???",
+          "fro???",
+          "pro?"
+        ]
+      ],
+      "expected": [
+        3,
+        2,
+        4,
+        1,
+        0
+      ]
+    }
+  ]
+}

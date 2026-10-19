@@ -1,0 +1,20 @@
+[
+  {
+    "args": [
+      "HaEaLaLaObWORLDb"
+    ],
+    "expected": "HELLO WORLD"
+  },
+  {
+    "args": [
+      "SpIpGpOpNpGJqOqA"
+    ],
+    "expected": "SIGONG JOA"
+  },
+  {
+    "args": [
+      "AxAxAxAoBoBoB"
+    ],
+    "expected": "invalid"
+  }
+]

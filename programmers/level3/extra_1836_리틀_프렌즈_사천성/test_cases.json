@@ -1,0 +1,511 @@
+[
+  {
+    "args": [
+      3,
+      3,
+      [
+        "DBA",
+        "C*A",
+        "CDB"
+      ]
+    ],
+    "expected": "ABCD",
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      2,
+      4,
+      [
+        "NRYN",
+        "ARYA"
+      ]
+    ],
+    "expected": "RYAN",
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      4,
+      4,
+      [
+        ".ZI.",
+        "M.**",
+        "MZU.",
+        ".IU."
+      ]
+    ],
+    "expected": "MUZI",
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      2,
+      2,
+      [
+        "AB",
+        "BA"
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        ".A.B",
+        ".A..",
+        "B**."
+      ]
+    ],
+    "expected": "AB",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        ".**.",
+        "B.*.",
+        ".ABA"
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "A..C",
+        ".B*A",
+        "*CB."
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "C.*.",
+        ".*AB",
+        ".CAB"
+      ]
+    ],
+    "expected": "ABC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "A.A.",
+        "..*.",
+        "..*."
+      ]
+    ],
+    "expected": "A",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        ".A.*",
+        "*.A.",
+        "*..."
+      ]
+    ],
+    "expected": "A",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        ".*A.",
+        "B**.",
+        ".AB."
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "B.A.",
+        ".B.A",
+        "...*"
+      ]
+    ],
+    "expected": "AB",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "*.A.",
+        "CAB.",
+        "C*B."
+      ]
+    ],
+    "expected": "ABC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "CA..",
+        "ABCB",
+        "**.*"
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "A.A.",
+        "...*",
+        ".B*B"
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "...B",
+        "B..A",
+        "...A"
+      ]
+    ],
+    "expected": "AB",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        ".*A.",
+        "..AB",
+        "..*B"
+      ]
+    ],
+    "expected": "AB",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        ".A..",
+        "....",
+        "..A."
+      ]
+    ],
+    "expected": "A",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "*.BB",
+        "..A.",
+        "A..*"
+      ]
+    ],
+    "expected": "AB",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "C.B.",
+        "C*AB",
+        ".A.."
+      ]
+    ],
+    "expected": "ABC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "....",
+        "*A..",
+        ".A*."
+      ]
+    ],
+    "expected": "A",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        ".A..",
+        "B*A.",
+        ".*.B"
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        ".ACB",
+        "..B*",
+        ".A.C"
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "..BB",
+        ".AC.",
+        "C..A"
+      ]
+    ],
+    "expected": "ABC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "CA*A",
+        "B..C",
+        ".B.."
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "B*BC",
+        "C...",
+        ".AA."
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "*..A",
+        "A**.",
+        "...*"
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "A..B",
+        "*.*A",
+        "B..."
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "A..*",
+        "*...",
+        ".ABB"
+      ]
+    ],
+    "expected": "AB",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "..A.",
+        "*...",
+        "A.**"
+      ]
+    ],
+    "expected": "IMPOSSIBLE",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "B...",
+        ".A.C",
+        "ABC*"
+      ]
+    ],
+    "expected": "ABC",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "*.BA",
+        ".CA.",
+        "BC.."
+      ]
+    ],
+    "expected": "ACB",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "B...",
+        "B.A*",
+        "..A*"
+      ]
+    ],
+    "expected": "AB",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        "...*",
+        "A.A.",
+        "*..."
+      ]
+    ],
+    "expected": "A",
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  }
+]

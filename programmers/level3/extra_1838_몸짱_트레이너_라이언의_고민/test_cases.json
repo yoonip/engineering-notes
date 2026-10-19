@@ -1,0 +1,1013 @@
+[
+  {
+    "args": [
+      3,
+      2,
+      [
+        [
+          1170,
+          1210
+        ],
+        [
+          1200,
+          1260
+        ]
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      2,
+      1,
+      [
+        [
+          840,
+          900
+        ]
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      2,
+      2,
+      [
+        [
+          600,
+          630
+        ],
+        [
+          630,
+          700
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      4,
+      5,
+      [
+        [
+          1140,
+          1200
+        ],
+        [
+          1150,
+          1200
+        ],
+        [
+          1100,
+          1200
+        ],
+        [
+          1210,
+          1300
+        ],
+        [
+          1220,
+          1280
+        ]
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      3,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      2,
+      4,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      2,
+      2,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      1,
+      0,
+      []
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      2,
+      3,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      3,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      1,
+      0,
+      []
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      4,
+      8,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      8,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      8,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      5,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      2,
+      3,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      5,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      1,
+      0,
+      []
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      4,
+      16,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      1,
+      1,
+      [
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      1,
+      0,
+      []
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      5,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      9,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      1,
+      [
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      4,
+      14,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      3,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      7,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      4,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      1,
+      0,
+      []
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      4,
+      4,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      4,
+      14,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      2,
+      3,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      3,
+      5,
+      [
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ],
+        [
+          600,
+          610
+        ]
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "compiled_cpp_differential",
+    "multiple_decodings": false
+  }
+]

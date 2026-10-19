@@ -1,0 +1,157 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "CART_PRODUCTS": {
+        "columns": [
+          "ID",
+          "CART_ID",
+          "NAME",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            1630,
+            83,
+            "Cereal",
+            3980
+          ],
+          [
+            1631,
+            83,
+            "Multipurpose Supply",
+            3900
+          ],
+          [
+            5491,
+            286,
+            "Yogurt",
+            2980
+          ],
+          [
+            5504,
+            286,
+            "Milk",
+            1880
+          ],
+          [
+            8435,
+            448,
+            "Milk",
+            1880
+          ],
+          [
+            8437,
+            448,
+            "Yogurt",
+            2980
+          ],
+          [
+            8438,
+            448,
+            "Tea",
+            11000
+          ],
+          [
+            20236,
+            1034,
+            "Yogurt",
+            2980
+          ],
+          [
+            20237,
+            1034,
+            "Butter",
+            4890
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        286
+      ],
+      [
+        448
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/62284"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "CART_PRODUCTS": {
+        "columns": [
+          "ID",
+          "CART_ID",
+          "NAME",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "CART_PRODUCTS": {
+        "columns": [
+          "ID",
+          "CART_ID",
+          "NAME",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            0,
+            1,
+            "Milk",
+            null
+          ],
+          [
+            1,
+            1,
+            "Milk",
+            null
+          ],
+          [
+            2,
+            2,
+            "Milk",
+            null
+          ],
+          [
+            3,
+            2,
+            "Yogurt",
+            null
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        2
+      ]
+    ]
+  }
+]

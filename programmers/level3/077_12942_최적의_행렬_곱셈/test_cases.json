@@ -1,0 +1,1184 @@
+[
+  {
+    "args": [
+      [
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          10,
+          6
+        ]
+      ]
+    ],
+    "expected": 270,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      [
+        [
+          4,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          7
+        ]
+      ]
+    ],
+    "expected": 306,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          4,
+          8
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          3
+        ]
+      ]
+    ],
+    "expected": 143,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    ],
+    "expected": 68,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          6,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ]
+    ],
+    "expected": 93,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          7,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ]
+    ],
+    "expected": 146,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    ],
+    "expected": 114,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          3,
+          8
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          3,
+          10
+        ]
+      ]
+    ],
+    "expected": 405,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          7,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          9
+        ]
+      ]
+    ],
+    "expected": 117,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    ],
+    "expected": 124,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          7,
+          3
+        ]
+      ]
+    ],
+    "expected": 399,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          7,
+          10
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          10
+        ]
+      ]
+    ],
+    "expected": 2261,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          8,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          5,
+          1
+        ]
+      ]
+    ],
+    "expected": 90,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          10,
+          5
+        ]
+      ]
+    ],
+    "expected": 600,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          8,
+          10
+        ]
+      ]
+    ],
+    "expected": 268,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    ],
+    "expected": 248,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          10,
+          7
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ]
+    ],
+    "expected": 135,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          10,
+          1
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          2
+        ]
+      ]
+    ],
+    "expected": 112,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          10
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          9,
+          8
+        ]
+      ]
+    ],
+    "expected": 132,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          9,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          9
+        ]
+      ]
+    ],
+    "expected": 740,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          2,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          3,
+          8
+        ]
+      ]
+    ],
+    "expected": 171,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    ],
+    "expected": 227,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          9,
+          8
+        ]
+      ]
+    ],
+    "expected": 160,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          9,
+          1
+        ]
+      ]
+    ],
+    "expected": 93,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          9,
+          7
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "expected": 134,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          10,
+          1
+        ]
+      ]
+    ],
+    "expected": 181,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          8
+        ]
+      ]
+    ],
+    "expected": 514,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          5,
+          9
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          8,
+          6
+        ]
+      ]
+    ],
+    "expected": 1230,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          8
+        ]
+      ]
+    ],
+    "expected": 95,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          5,
+          8
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    ],
+    "expected": 528,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          8
+        ]
+      ]
+    ],
+    "expected": 66,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          8,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          9
+        ]
+      ]
+    ],
+    "expected": 1482,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          8,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          10
+        ]
+      ]
+    ],
+    "expected": 840,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          8,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          9,
+          8
+        ]
+      ]
+    ],
+    "expected": 824,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          6,
+          9
+        ]
+      ]
+    ],
+    "expected": 138,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          10,
+          2
+        ]
+      ]
+    ],
+    "expected": 54,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          6,
+          10
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          8
+        ]
+      ]
+    ],
+    "expected": 440,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          5,
+          10
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          7
+        ]
+      ]
+    ],
+    "expected": 92,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          10,
+          10
+        ]
+      ]
+    ],
+    "expected": 396,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    ],
+    "expected": 64,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    ],
+    "expected": 95,
+    "check_alternative": true,
+    "kind": "differential"
+  }
+]

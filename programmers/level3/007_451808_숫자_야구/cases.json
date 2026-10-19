@@ -1,0 +1,57 @@
+{
+  "problem_id": 451808,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        3024
+      ],
+      "expected": 1357,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        3024
+      ],
+      "expected": 3986,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        33
+      ],
+      "expected": 7685,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        6,
+        1532
+      ],
+      "expected": 1532,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        6,
+        8269
+      ],
+      "expected": 8269,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        6,
+        8243
+      ],
+      "expected": 8243,
+      "alternative_checked": true
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "FOOD_ORDER": {
+        "columns": [
+          "ORDER_ID",
+          "PRODUCT_ID",
+          "AMOUNT",
+          "PRODUCE_DATE",
+          "IN_DATE",
+          "OUT_DATE",
+          "FACTORY_ID",
+          "WAREHOUSE_ID"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "OD00000051",
+            "P0002",
+            4000,
+            "2022-04-01",
+            "2022-04-21",
+            "2022-04-21",
+            "FT19970003",
+            "WH0005"
+          ],
+          [
+            "OD00000052",
+            "P0003",
+            2500,
+            "2022-04-10",
+            "2022-04-27",
+            "2022-04-27",
+            "FT19970003",
+            "WH0006"
+          ],
+          [
+            "OD00000053",
+            "P0005",
+            6200,
+            "2022-04-15",
+            "2022-04-30",
+            "2022-05-01",
+            "FT19940003",
+            "WH0003"
+          ],
+          [
+            "OD00000054",
+            "P0006",
+            1000,
+            "2022-04-21",
+            "2022-04-30",
+            null,
+            "FT19940003",
+            "WH0009"
+          ],
+          [
+            "OD00000055",
+            "P0008",
+            1500,
+            "2022-04-25",
+            "2022-05-11",
+            "2022-05-11",
+            "FT19980003",
+            "WH0009"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "OD00000051",
+        "P0002",
+        "2022-04-21",
+        "출고완료"
+      ],
+      [
+        "OD00000052",
+        "P0003",
+        "2022-04-27",
+        "출고완료"
+      ],
+      [
+        "OD00000053",
+        "P0005",
+        "2022-05-01",
+        "출고완료"
+      ],
+      [
+        "OD00000054",
+        "P0006",
+        null,
+        "출고미정"
+      ],
+      [
+        "OD00000055",
+        "P0008",
+        "2022-05-11",
+        "출고대기"
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/131113"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "FOOD_ORDER": {
+        "columns": [
+          "ORDER_ID",
+          "PRODUCT_ID",
+          "AMOUNT",
+          "PRODUCE_DATE",
+          "IN_DATE",
+          "OUT_DATE",
+          "FACTORY_ID",
+          "WAREHOUSE_ID"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "FOOD_ORDER": {
+        "columns": [
+          "ORDER_ID",
+          "PRODUCT_ID",
+          "AMOUNT",
+          "PRODUCE_DATE",
+          "IN_DATE",
+          "OUT_DATE",
+          "FACTORY_ID",
+          "WAREHOUSE_ID"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "1",
+            "P",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2",
+            "P",
+            null,
+            null,
+            null,
+            "2022-05-01",
+            null,
+            null
+          ],
+          [
+            "3",
+            "P",
+            null,
+            null,
+            null,
+            "2022-05-02",
+            null,
+            null
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "1",
+        "P",
+        null,
+        "출고미정"
+      ],
+      [
+        "2",
+        "P",
+        "2022-05-01",
+        "출고완료"
+      ],
+      [
+        "3",
+        "P",
+        "2022-05-02",
+        "출고대기"
+      ]
+    ]
+  }
+]

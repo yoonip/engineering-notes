@@ -1,0 +1,8 @@
+-- SELECT는 동물 ID·이름 출력.
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS
+-- 개만 선택.
+WHERE ANIMAL_TYPE = 'Dog'
+  AND LOWER(NAME) LIKE '%el%'
+-- 이름 오름차순, 이름 동점이면 ID 오름차순.
+ORDER BY NAME, ANIMAL_ID

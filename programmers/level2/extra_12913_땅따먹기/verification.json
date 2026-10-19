@@ -1,0 +1,13 @@
+{
+  "id": 12913,
+  "cases": 29,
+  "official_examples": 1,
+  "passed": true,
+  "checked_on": "2026-10-19",
+  "python_version": "3.12.14",
+  "command": "python verify.py",
+  "new_site_submission": false,
+  "alternative_cases": 29,
+  "stress_cases": 1,
+  "stress_label": "10만 행에서 열 4·3 교대 / Alternate columns 4 and 3 across one hundred thousand rows"
+}

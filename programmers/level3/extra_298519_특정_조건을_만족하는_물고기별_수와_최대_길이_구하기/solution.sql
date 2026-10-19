@@ -1,0 +1,8 @@
+-- COUNT(*)는 행 수, MAX는 최댓값, AS는 출력 열 별칭.
+SELECT COUNT(*) AS FISH_COUNT, MAX(LENGTH) AS MAX_LENGTH, FISH_TYPE
+FROM FISH_INFO
+-- 종류가 같은 물고기끼리 묶어 집계.
+GROUP BY FISH_TYPE
+HAVING AVG(COALESCE(LENGTH, 10)) >= 33
+-- 종류 번호 오름차순 정렬.
+ORDER BY FISH_TYPE

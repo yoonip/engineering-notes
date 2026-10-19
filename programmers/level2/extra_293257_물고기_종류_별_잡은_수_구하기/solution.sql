@@ -1,0 +1,6 @@
+-- 이름 테이블과 연결하고 종류별 COUNT(*)를 구한다. 잡은 수를 내림차순으로 정렬한다.
+SELECT COUNT(*) AS FISH_COUNT, names.FISH_NAME
+FROM FISH_INFO AS f
+JOIN FISH_NAME_INFO AS names ON names.FISH_TYPE = f.FISH_TYPE
+GROUP BY f.FISH_TYPE, names.FISH_NAME
+ORDER BY FISH_COUNT DESC

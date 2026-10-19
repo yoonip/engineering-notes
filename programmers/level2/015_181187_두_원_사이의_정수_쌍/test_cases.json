@@ -1,0 +1,203 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      2,
+      3
+    ],
+    "expected": 20,
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      1,
+      2
+    ],
+    "expected": 12
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      1,
+      3
+    ],
+    "expected": 28
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      2,
+      3
+    ],
+    "expected": 20
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      1,
+      4
+    ],
+    "expected": 48
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      2,
+      4
+    ],
+    "expected": 40
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      3,
+      4
+    ],
+    "expected": 24
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      1,
+      5
+    ],
+    "expected": 80
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      2,
+      5
+    ],
+    "expected": 72
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      3,
+      5
+    ],
+    "expected": 56
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      4,
+      5
+    ],
+    "expected": 36
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      1,
+      6
+    ],
+    "expected": 112
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      2,
+      6
+    ],
+    "expected": 104
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      3,
+      6
+    ],
+    "expected": 88
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      4,
+      6
+    ],
+    "expected": 68
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      5,
+      6
+    ],
+    "expected": 44
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      1,
+      7
+    ],
+    "expected": 148
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      2,
+      7
+    ],
+    "expected": 140
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      3,
+      7
+    ],
+    "expected": 124
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      4,
+      7
+    ],
+    "expected": 104
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      5,
+      7
+    ],
+    "expected": 80
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      6,
+      7
+    ],
+    "expected": 40
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      1,
+      8
+    ],
+    "expected": 196
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      2,
+      8
+    ],
+    "expected": 188
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      3,
+      8
+    ],
+    "expected": 172
+  }
+]

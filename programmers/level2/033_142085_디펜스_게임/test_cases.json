@@ -1,0 +1,559 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      7,
+      3,
+      [
+        4,
+        2,
+        4,
+        5,
+        3,
+        3,
+        1
+      ]
+    ],
+    "expected": 5,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      2,
+      4,
+      [
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "expected": 4,
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      28,
+      6,
+      [
+        15,
+        17,
+        7,
+        11,
+        19,
+        3,
+        14,
+        4,
+        18,
+        2,
+        5,
+        7,
+        2,
+        11,
+        15,
+        19,
+        11,
+        7,
+        4
+      ]
+    ],
+    "expected": 12
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      43,
+      2,
+      [
+        5,
+        17,
+        19,
+        17,
+        13,
+        6,
+        6,
+        3,
+        18,
+        13,
+        14,
+        9,
+        1,
+        9,
+        18,
+        16
+      ]
+    ],
+    "expected": 6
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      55,
+      6,
+      [
+        5,
+        8,
+        13,
+        11,
+        12,
+        3,
+        2,
+        6,
+        15,
+        3
+      ]
+    ],
+    "expected": 10
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      2,
+      3,
+      [
+        17
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      50,
+      5,
+      [
+        15,
+        2,
+        7,
+        6,
+        11
+      ]
+    ],
+    "expected": 5
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      59,
+      2,
+      [
+        9,
+        17,
+        6,
+        20,
+        16,
+        14,
+        12,
+        18,
+        18,
+        10
+      ]
+    ],
+    "expected": 7
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      32,
+      6,
+      [
+        7,
+        2,
+        18,
+        5,
+        7,
+        3,
+        14,
+        1,
+        15,
+        10,
+        14,
+        18,
+        2
+      ]
+    ],
+    "expected": 13
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      28,
+      6,
+      [
+        17,
+        10,
+        1
+      ]
+    ],
+    "expected": 3
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      36,
+      6,
+      [
+        15,
+        13,
+        18,
+        12,
+        12,
+        10,
+        2,
+        2,
+        20,
+        4,
+        2,
+        18,
+        9,
+        15,
+        5,
+        9
+      ]
+    ],
+    "expected": 12
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      31,
+      3,
+      [
+        7
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      20,
+      6,
+      [
+        11,
+        14,
+        6,
+        11,
+        18,
+        2,
+        9,
+        19,
+        18,
+        13,
+        9,
+        20,
+        8,
+        11,
+        1,
+        20,
+        19,
+        13,
+        3,
+        18
+      ]
+    ],
+    "expected": 9
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      28,
+      6,
+      [
+        20,
+        3,
+        3,
+        5
+      ]
+    ],
+    "expected": 4
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      52,
+      5,
+      [
+        15,
+        19
+      ]
+    ],
+    "expected": 2
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      41,
+      4,
+      [
+        3,
+        14,
+        4,
+        4,
+        20,
+        2,
+        3,
+        16,
+        4,
+        10,
+        3,
+        17,
+        10,
+        4
+      ]
+    ],
+    "expected": 12
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      44,
+      5,
+      [
+        4,
+        12,
+        10,
+        7,
+        13,
+        20,
+        20,
+        20,
+        2,
+        14,
+        8,
+        14,
+        2,
+        13,
+        14,
+        16
+      ]
+    ],
+    "expected": 11
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      58,
+      5,
+      [
+        7,
+        3,
+        6,
+        17,
+        1,
+        6,
+        16,
+        17,
+        12,
+        15,
+        11,
+        20,
+        20,
+        17,
+        3,
+        19,
+        17,
+        9,
+        17,
+        5
+      ]
+    ],
+    "expected": 12
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      27,
+      1,
+      [
+        5,
+        10,
+        18,
+        14,
+        4,
+        10,
+        15,
+        9,
+        19,
+        16,
+        15,
+        18,
+        17,
+        12,
+        7,
+        5,
+        15,
+        16,
+        18,
+        10
+      ]
+    ],
+    "expected": 3
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      8,
+      1,
+      [
+        16,
+        14,
+        3,
+        3,
+        10,
+        17,
+        2,
+        4,
+        17,
+        11,
+        14,
+        11,
+        6,
+        8,
+        2,
+        7,
+        20,
+        17
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      23,
+      3,
+      [
+        10,
+        14,
+        10,
+        12,
+        7,
+        15,
+        3,
+        11,
+        12,
+        2,
+        9,
+        5,
+        18,
+        9,
+        2,
+        11
+      ]
+    ],
+    "expected": 5
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      60,
+      6,
+      [
+        1,
+        14,
+        18,
+        14,
+        17,
+        3,
+        12,
+        15,
+        7,
+        2,
+        15,
+        11,
+        9,
+        7,
+        5,
+        19,
+        13,
+        3,
+        4,
+        9
+      ]
+    ],
+    "expected": 15
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      27,
+      4,
+      [
+        6,
+        15,
+        1,
+        7,
+        3,
+        12,
+        10,
+        18,
+        3,
+        15,
+        18,
+        13,
+        19,
+        10,
+        4,
+        7,
+        11,
+        6
+      ]
+    ],
+    "expected": 9
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      27,
+      2,
+      [
+        19,
+        5,
+        2,
+        4,
+        5,
+        4,
+        14
+      ]
+    ],
+    "expected": 7
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      50,
+      3,
+      [
+        13,
+        6,
+        18,
+        19,
+        13,
+        13,
+        14
+      ]
+    ],
+    "expected": 7
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      15,
+      3,
+      [
+        15,
+        3,
+        15,
+        10,
+        3,
+        11,
+        4,
+        4
+      ]
+    ],
+    "expected": 5
+  }
+]

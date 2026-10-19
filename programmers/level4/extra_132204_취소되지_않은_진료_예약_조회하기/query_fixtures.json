@@ -1,0 +1,411 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "PATIENT": {
+        "columns": [
+          "PT_NO",
+          "PT_NAME",
+          "GEND_CD",
+          "AGE",
+          "TLNO"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "PT22000019",
+            "바라",
+            "W",
+            10,
+            "01079068799"
+          ],
+          [
+            "PT22000043",
+            "오스왈드",
+            "M",
+            68,
+            "01031294124"
+          ],
+          [
+            "PT22000052",
+            "제니",
+            "W",
+            60,
+            null
+          ],
+          [
+            "PT22000071",
+            "몬몬",
+            "M",
+            31,
+            "01076489209"
+          ],
+          [
+            "PT22000097",
+            "슈가",
+            "M",
+            19,
+            null
+          ]
+        ]
+      },
+      "DOCTOR": {
+        "columns": [
+          "DR_NAME",
+          "DR_ID",
+          "LCNS_NO",
+          "HIRE_YMD",
+          "MCDP_CD",
+          "TLNO"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "루피",
+            "DR20090029",
+            "LC00010001",
+            "2009-03-01",
+            "CS",
+            "01085482011"
+          ],
+          [
+            "니모",
+            "DR20200012",
+            "LC00911162",
+            "2020-03-01",
+            "CS",
+            "01089483921"
+          ],
+          [
+            "핑크퐁",
+            "DR20140011",
+            "LC00082201",
+            "2014-03-01",
+            "NP",
+            "01098428957"
+          ],
+          [
+            "젤라비",
+            "DR20160031",
+            "LC00340327",
+            "2016-11-01",
+            "OB",
+            "01023981922"
+          ],
+          [
+            "토리",
+            "DR20190129",
+            "LC00099911",
+            "2019-03-01",
+            "NS",
+            "01058390758"
+          ]
+        ]
+      },
+      "APPOINTMENT": {
+        "columns": [
+          "APNT_YMD",
+          "APNT_NO",
+          "PT_NO",
+          "MCDP_CD",
+          "MDDR_ID",
+          "APNT_CNCL_YN",
+          "APNT_CNCL_YMD"
+        ],
+        "types": [
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "2022-04-13 12:30:00.000000",
+            42,
+            "PT22000071",
+            "CS",
+            "DR20090029",
+            "N",
+            null
+          ],
+          [
+            "2022-04-13 15:30:00.000000",
+            43,
+            "PT22000019",
+            "CS",
+            "DR20200012",
+            "N",
+            null
+          ],
+          [
+            "2022-04-13 09:00:00.000000",
+            46,
+            "PT22000043",
+            "CS",
+            "DR20090029",
+            "N",
+            null
+          ],
+          [
+            "2022-07-09 11:00:00.000000",
+            74,
+            "PT22000042",
+            "NP",
+            "DR20100011",
+            "N",
+            null
+          ],
+          [
+            "2022-12-13 12:30:00.000000",
+            110,
+            "PT22000097",
+            "NP",
+            "DR20160011",
+            "Y",
+            "2022-12-03"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        46,
+        "오스왈드",
+        "PT22000043",
+        "CS",
+        "루피",
+        "2022-04-13 09:00:00.000000"
+      ],
+      [
+        42,
+        "몬몬",
+        "PT22000071",
+        "CS",
+        "루피",
+        "2022-04-13 12:30:00.000000"
+      ],
+      [
+        43,
+        "바라",
+        "PT22000019",
+        "CS",
+        "니모",
+        "2022-04-13 15:30:00.000000"
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/132204"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "PATIENT": {
+        "columns": [
+          "PT_NO",
+          "PT_NAME",
+          "GEND_CD",
+          "AGE",
+          "TLNO"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": []
+      },
+      "DOCTOR": {
+        "columns": [
+          "DR_NAME",
+          "DR_ID",
+          "LCNS_NO",
+          "HIRE_YMD",
+          "MCDP_CD",
+          "TLNO"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      },
+      "APPOINTMENT": {
+        "columns": [
+          "APNT_YMD",
+          "APNT_NO",
+          "PT_NO",
+          "MCDP_CD",
+          "MDDR_ID",
+          "APNT_CNCL_YN",
+          "APNT_CNCL_YMD"
+        ],
+        "types": [
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "PATIENT": {
+        "columns": [
+          "PT_NO",
+          "PT_NAME",
+          "GEND_CD",
+          "AGE",
+          "TLNO"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "P",
+            "Patient",
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      "DOCTOR": {
+        "columns": [
+          "DR_NAME",
+          "DR_ID",
+          "LCNS_NO",
+          "HIRE_YMD",
+          "MCDP_CD",
+          "TLNO"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "Doctor",
+            "D",
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      "APPOINTMENT": {
+        "columns": [
+          "APNT_YMD",
+          "APNT_NO",
+          "PT_NO",
+          "MCDP_CD",
+          "MDDR_ID",
+          "APNT_CNCL_YN",
+          "APNT_CNCL_YMD"
+        ],
+        "types": [
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "2022-04-13 00:00:00",
+            1,
+            "P",
+            "CS",
+            "D",
+            "N",
+            null
+          ],
+          [
+            "2022-04-13 23:59:59",
+            2,
+            "P",
+            "CS",
+            "D",
+            "N",
+            null
+          ],
+          [
+            "2022-04-14 00:00:00",
+            3,
+            "P",
+            "CS",
+            "D",
+            "N",
+            null
+          ],
+          [
+            "2022-04-13 12:00:00",
+            4,
+            "P",
+            "CS",
+            "D",
+            "Y",
+            null
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        1,
+        "Patient",
+        "P",
+        "CS",
+        "Doctor",
+        "2022-04-13 00:00:00"
+      ],
+      [
+        2,
+        "Patient",
+        "P",
+        "CS",
+        "Doctor",
+        "2022-04-13 23:59:59"
+      ]
+    ]
+  }
+]

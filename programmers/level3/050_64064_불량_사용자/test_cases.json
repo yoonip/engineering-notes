@@ -1,0 +1,763 @@
+[
+  {
+    "args": [
+      [
+        "frodo",
+        "fradi",
+        "crodo",
+        "abc123",
+        "frodoc"
+      ],
+      [
+        "fr*d*",
+        "abc1**"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      [
+        "frodo",
+        "fradi",
+        "crodo",
+        "abc123",
+        "frodoc"
+      ],
+      [
+        "*rodo",
+        "*rodo",
+        "******"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      [
+        "frodo",
+        "fradi",
+        "crodo",
+        "abc123",
+        "frodoc"
+      ],
+      [
+        "fr*d*",
+        "*rodo",
+        "******",
+        "******"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      [
+        "a"
+      ],
+      [
+        "*"
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "boundary"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "**"
+      ]
+    ],
+    "expected": 6,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "**"
+      ]
+    ],
+    "expected": 6,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "**",
+        "a*"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "a*",
+        "a*"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*",
+        "*a",
+        "a*"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "*a",
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "*a",
+        "a*"
+      ]
+    ],
+    "expected": 5,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*",
+        "a*",
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*",
+        "a*",
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "a*",
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "*a"
+      ]
+    ],
+    "expected": 5,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "a*"
+      ]
+    ],
+    "expected": 6,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "*a",
+        "*a"
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*",
+        "*a"
+      ]
+    ],
+    "expected": 5,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "*a",
+        "a*",
+        "*a"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "*a",
+        "a*",
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "*a",
+        "*a"
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*",
+        "**"
+      ]
+    ],
+    "expected": 6,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "*a",
+        "**",
+        "a*"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "*a",
+        "**",
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "**",
+        "*a"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "a*"
+      ]
+    ],
+    "expected": 6,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "a*",
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*",
+        "**"
+      ]
+    ],
+    "expected": 6,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*",
+        "*a"
+      ]
+    ],
+    "expected": 5,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*",
+        "*a"
+      ]
+    ],
+    "expected": 5,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "*a"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "*a"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "*a",
+        "*a"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "**",
+        "*a"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "a*",
+        "**",
+        "*a"
+      ]
+    ],
+    "expected": 4,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "**",
+        "**"
+      ]
+    ],
+    "expected": 6,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ac",
+        "ba"
+      ],
+      [
+        "*a",
+        "*a",
+        "*a"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  }
+]

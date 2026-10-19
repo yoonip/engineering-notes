@@ -1,11 +1,8 @@
-# 문제: 양궁대회
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/92342
-# 풀이: 점수 칸별 승리 여부를 비트마스크로 비교한다. 승리에는 상대보다 한 발만 더 쓰고 남은 화살은 0점에 모은다.
-# 복잡도: 점수 칸 11개 고정: 시간 O(2^10·11), 추가 공간 O(11).
-
 def solution(n, info):
+    # 뒤집은 배열로 낮은 점수 화살부터 동률을 비교한다.
     best_key = (0, [])
     answer = [-1]
+    # 각 득점 과녁을 이길지 포기할지 선택한다.
     for mask in range(1 << 10):
         shots = [0] * 11
         remaining = n
@@ -15,6 +12,7 @@ def solution(n, info):
                 remaining -= shots[index]
         if remaining < 0:
             continue
+        # 득점에 도움이 되지 않는 남은 화살은 0점에 몰아 동률 우선순위를 높인다.
         shots[10] = remaining
         difference = 0
         for index in range(10):

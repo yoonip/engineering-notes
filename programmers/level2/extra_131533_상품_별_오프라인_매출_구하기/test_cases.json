@@ -1,0 +1,248 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "PRODUCT",
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_CODE",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(8)",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            1,
+            "A1000011",
+            15000
+          ],
+          [
+            2,
+            "A1000045",
+            8000
+          ],
+          [
+            3,
+            "C3000002",
+            42000
+          ]
+        ]
+      },
+      {
+        "name": "OFFLINE_SALE",
+        "columns": [
+          "OFFLINE_SALE_ID",
+          "PRODUCT_ID",
+          "SALES_AMOUNT",
+          "SALES_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "INTEGER",
+          "DATE"
+        ],
+        "rows": [
+          [
+            1,
+            1,
+            2,
+            "2022-02-21"
+          ],
+          [
+            2,
+            1,
+            2,
+            "2022-03-02"
+          ],
+          [
+            3,
+            3,
+            3,
+            "2022-05-01"
+          ],
+          [
+            4,
+            2,
+            1,
+            "2022-05-24"
+          ],
+          [
+            5,
+            1,
+            2,
+            "2022-07-14"
+          ],
+          [
+            6,
+            2,
+            1,
+            "2022-09-22"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        "C3000002",
+        126000
+      ],
+      [
+        "A1000011",
+        90000
+      ],
+      [
+        "A1000045",
+        16000
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "PRODUCT",
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_CODE",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(8)",
+          "INTEGER"
+        ],
+        "rows": []
+      },
+      {
+        "name": "OFFLINE_SALE",
+        "columns": [
+          "OFFLINE_SALE_ID",
+          "PRODUCT_ID",
+          "SALES_AMOUNT",
+          "SALES_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "INTEGER",
+          "DATE"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": []
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "PRODUCT",
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_CODE",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(8)",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            1,
+            "A1000011",
+            15000
+          ],
+          [
+            2,
+            "A1000045",
+            8000
+          ],
+          [
+            3,
+            "C3000002",
+            42000
+          ]
+        ]
+      },
+      {
+        "name": "OFFLINE_SALE",
+        "columns": [
+          "OFFLINE_SALE_ID",
+          "PRODUCT_ID",
+          "SALES_AMOUNT",
+          "SALES_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "INTEGER",
+          "DATE"
+        ],
+        "rows": [
+          [
+            1,
+            1,
+            2,
+            "2022-02-21"
+          ],
+          [
+            2,
+            1,
+            2,
+            "2022-03-02"
+          ],
+          [
+            3,
+            3,
+            3,
+            "2022-05-01"
+          ],
+          [
+            4,
+            2,
+            1,
+            "2022-05-24"
+          ],
+          [
+            5,
+            1,
+            2,
+            "2022-07-14"
+          ],
+          [
+            6,
+            2,
+            1,
+            "2022-09-22"
+          ],
+          [
+            106,
+            1,
+            2,
+            "2022-02-21"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        "C3000002",
+        126000
+      ],
+      [
+        "A1000011",
+        120000
+      ],
+      [
+        "A1000045",
+        16000
+      ]
+    ]
+  }
+]

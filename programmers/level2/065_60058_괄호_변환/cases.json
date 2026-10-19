@@ -1,0 +1,262 @@
+{
+  "problem_id": 60058,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        "(()())()"
+      ],
+      "expected": "(()())()",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        ")("
+      ],
+      "expected": "()",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "()))((()"
+      ],
+      "expected": "()(())()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")((((()))(())()())"
+      ],
+      "expected": "((((()))(())()()))",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "))()()((()"
+      ],
+      "expected": "(())()()()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")(()"
+      ],
+      "expected": "(())",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "(()())"
+      ],
+      "expected": "(()())",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")()))()()(()((()()"
+      ],
+      "expected": "((()())(()()())())",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "(())()())()("
+      ],
+      "expected": "(())()()(())",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")))()(((()"
+      ],
+      "expected": "(())(()())",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "))()(("
+      ],
+      "expected": "()()()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")()()("
+      ],
+      "expected": "((()))",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "()))()(("
+      ],
+      "expected": "()()()()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "((()(((())))))))((()"
+      ],
+      "expected": "((()(((())))))(())()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")())((())(((()()))"
+      ],
+      "expected": "((()(((()()))))())",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "))(("
+      ],
+      "expected": "()()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "(()))(()"
+      ],
+      "expected": "(())(())",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "))()(())(()))(((())("
+      ],
+      "expected": "(((()())(()))())()()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")((()))(()"
+      ],
+      "expected": "((())(()))",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "()()()()(())"
+      ],
+      "expected": "()()()()(())",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")()(()"
+      ],
+      "expected": "((()))",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")((((())(()())))"
+      ],
+      "expected": "((((())(()()))))",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "()()"
+      ],
+      "expected": "()()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "))(())())((("
+      ],
+      "expected": "(()()(()))()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "()"
+      ],
+      "expected": "()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "))(())(()("
+      ],
+      "expected": "((())())()",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")())((()(())(())()"
+      ],
+      "expected": "((()(())(())())())",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")(())(()(()())"
+      ],
+      "expected": "(()(()(()())))",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        ")()(()())()(()"
+      ],
+      "expected": "((()()((()))))",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "((())(()())(())())"
+      ],
+      "expected": "((())(()())(())())",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "(())(()))()(())("
+      ],
+      "expected": "(())(())((()()))",
+      "alternative_checked": true
+    },
+    {
+      "label": "maximum-balanced-length",
+      "args": [
+        "()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()"
+      ],
+      "expected": "()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()",
+      "alternative_checked": true
+    }
+  ]
+}

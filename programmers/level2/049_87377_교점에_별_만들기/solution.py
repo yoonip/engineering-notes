@@ -1,8 +1,3 @@
-# 문제: 교점에 별 만들기
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/87377
-# 풀이: 직선 쌍의 교점을 정수 나눗셈으로 판정한다. 교점 set으로 중복을 없앤 뒤 최소 사각형에 별을 배치한다.
-# 복잡도: 직선 N개·고유 교점 P개·출력 넓이 A: 시간 O(N²+A), 추가 공간 O(P+A).
-
 from itertools import combinations
 
 def solution(line):
@@ -11,9 +6,11 @@ def solution(line):
         a, b, e = first
         c, d, f = second
         denominator = a * d - b * c
+        # 평행한 직선 쌍은 유일한 교점이 없다.
         if denominator == 0:
             continue
         nx, ny = b * f - e * d, e * c - a * f
+        # 나머지가 둘 다 0이어야 교점 좌표가 정수다.
         if nx % denominator == 0 and ny % denominator == 0:
             points.add((nx // denominator, ny // denominator))
     min_x = min(x for x, y in points)
@@ -22,5 +19,6 @@ def solution(line):
     max_y = max(y for x, y in points)
     board = [['.'] * (max_x - min_x + 1) for _ in range(max_y - min_y + 1)]
     for x, y in points:
+        # 화면 행은 아래로 증가하므로 y축 방향을 뒤집는다.
         board[max_y - y][x - min_x] = '*'
     return [''.join(row) for row in board]

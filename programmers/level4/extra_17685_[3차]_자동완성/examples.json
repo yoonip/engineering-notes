@@ -1,0 +1,37 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/17685",
+  "cases": [
+    {
+      "args": [
+        [
+          "go",
+          "gone",
+          "guild"
+        ]
+      ],
+      "expected": 7
+    },
+    {
+      "args": [
+        [
+          "abc",
+          "def",
+          "ghi",
+          "jklm"
+        ]
+      ],
+      "expected": 4
+    },
+    {
+      "args": [
+        [
+          "word",
+          "war",
+          "warrior",
+          "world"
+        ]
+      ],
+      "expected": 15
+    }
+  ]
+}

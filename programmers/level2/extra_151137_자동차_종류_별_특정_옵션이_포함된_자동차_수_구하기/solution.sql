@@ -1,0 +1,8 @@
+-- 옵션 문자열에 세 조건을 OR로 적용한다. 조건에 맞는 자동차를 종류별로 묶어 COUNT(*)를 구한다.
+SELECT CAR_TYPE, COUNT(*) AS CARS
+FROM CAR_RENTAL_COMPANY_CAR
+WHERE OPTIONS LIKE '%통풍시트%'
+   OR OPTIONS LIKE '%열선시트%'
+   OR OPTIONS LIKE '%가죽시트%'
+GROUP BY CAR_TYPE
+ORDER BY CAR_TYPE

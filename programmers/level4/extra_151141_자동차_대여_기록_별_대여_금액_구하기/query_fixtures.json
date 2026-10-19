@@ -1,0 +1,326 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "CAR_RENTAL_COMPANY_CAR": {
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            "트럭",
+            26000,
+            "가죽시트,열선시트,후방카메라"
+          ],
+          [
+            2,
+            "SUV",
+            14000,
+            "스마트키,네비게이션,열선시트"
+          ],
+          [
+            3,
+            "트럭",
+            32000,
+            "주차감지센서,후방카메라,가죽시트"
+          ]
+        ]
+      },
+      "CAR_RENTAL_COMPANY_RENTAL_HISTORY": {
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            1,
+            "2022-07-27",
+            "2022-08-02"
+          ],
+          [
+            2,
+            1,
+            "2022-08-03",
+            "2022-08-04"
+          ],
+          [
+            3,
+            2,
+            "2022-08-05",
+            "2022-08-05"
+          ],
+          [
+            4,
+            2,
+            "2022-08-09",
+            "2022-08-12"
+          ],
+          [
+            5,
+            3,
+            "2022-09-16",
+            "2022-10-15"
+          ]
+        ]
+      },
+      "CAR_RENTAL_COMPANY_DISCOUNT_PLAN": {
+        "columns": [
+          "PLAN_ID",
+          "CAR_TYPE",
+          "DURATION_TYPE",
+          "DISCOUNT_RATE"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            1,
+            "트럭",
+            "7일 이상",
+            5
+          ],
+          [
+            2,
+            "트럭",
+            "30일 이상",
+            7
+          ],
+          [
+            3,
+            "트럭",
+            "90일 이상",
+            10
+          ],
+          [
+            4,
+            "세단",
+            "7일 이상",
+            5
+          ],
+          [
+            5,
+            "세단",
+            "30일 이상",
+            10
+          ],
+          [
+            6,
+            "세단",
+            "90일 이상",
+            15
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        5,
+        892800
+      ],
+      [
+        1,
+        172900
+      ],
+      [
+        2,
+        52000
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/151141"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "CAR_RENTAL_COMPANY_CAR": {
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": []
+      },
+      "CAR_RENTAL_COMPANY_RENTAL_HISTORY": {
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      },
+      "CAR_RENTAL_COMPANY_DISCOUNT_PLAN": {
+        "columns": [
+          "PLAN_ID",
+          "CAR_TYPE",
+          "DURATION_TYPE",
+          "DISCOUNT_RATE"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "CAR_RENTAL_COMPANY_CAR": {
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            "트럭",
+            20000,
+            null
+          ],
+          [
+            2,
+            "트럭",
+            20000,
+            null
+          ],
+          [
+            3,
+            "트럭",
+            20000,
+            null
+          ]
+        ]
+      },
+      "CAR_RENTAL_COMPANY_RENTAL_HISTORY": {
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            1,
+            "2022-01-01",
+            "2022-01-06"
+          ],
+          [
+            2,
+            2,
+            "2022-01-01",
+            "2022-01-07"
+          ],
+          [
+            3,
+            3,
+            "2022-01-01",
+            "2022-01-30"
+          ]
+        ]
+      },
+      "CAR_RENTAL_COMPANY_DISCOUNT_PLAN": {
+        "columns": [
+          "PLAN_ID",
+          "CAR_TYPE",
+          "DURATION_TYPE",
+          "DISCOUNT_RATE"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            0,
+            "트럭",
+            "7일 이상",
+            10
+          ],
+          [
+            1,
+            "트럭",
+            "30일 이상",
+            20
+          ],
+          [
+            2,
+            "트럭",
+            "90일 이상",
+            30
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        3,
+        480000
+      ],
+      [
+        2,
+        126000
+      ],
+      [
+        1,
+        120000
+      ]
+    ]
+  }
+]

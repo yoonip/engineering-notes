@@ -1,0 +1,1000 @@
+{
+  "problem_id": 12981,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        3,
+        [
+          "tank",
+          "kick",
+          "know",
+          "wheel",
+          "land",
+          "dream",
+          "mother",
+          "robot",
+          "tank"
+        ]
+      ],
+      "expected": [
+        3,
+        3
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        5,
+        [
+          "hello",
+          "observe",
+          "effect",
+          "take",
+          "either",
+          "recognize",
+          "encourage",
+          "ensure",
+          "establish",
+          "hang",
+          "gather",
+          "refer",
+          "reference",
+          "estimate",
+          "executive"
+        ]
+      ],
+      "expected": [
+        0,
+        0
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        2,
+        [
+          "hello",
+          "one",
+          "even",
+          "never",
+          "now",
+          "world",
+          "draw"
+        ]
+      ],
+      "expected": [
+        1,
+        3
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4,
+        [
+          "bb",
+          "ab",
+          "aa",
+          "ab",
+          "aa",
+          "aa",
+          "bb",
+          "aa",
+          "bb",
+          "aa",
+          "da",
+          "bb",
+          "bb",
+          "bb",
+          "ab",
+          "cd",
+          "da",
+          "aa",
+          "ab",
+          "ab"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4,
+        [
+          "bc",
+          "ab",
+          "bc",
+          "aa",
+          "da",
+          "bc",
+          "bc",
+          "da",
+          "bb",
+          "bc",
+          "bb",
+          "bc",
+          "cd",
+          "cd",
+          "bc",
+          "ab",
+          "ab",
+          "ab",
+          "bb",
+          "cd"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3,
+        [
+          "cd",
+          "bb",
+          "da",
+          "aa",
+          "bb",
+          "bb",
+          "ab",
+          "bc",
+          "ab",
+          "cd",
+          "cd",
+          "ab",
+          "ab",
+          "cd",
+          "da",
+          "bc",
+          "bc",
+          "da",
+          "cd",
+          "bc"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        2,
+        [
+          "bc",
+          "bc",
+          "ab",
+          "aa",
+          "da",
+          "ab",
+          "ab",
+          "cd",
+          "bb",
+          "cd",
+          "cd",
+          "aa",
+          "cd",
+          "aa",
+          "cd",
+          "cd",
+          "ab",
+          "bb",
+          "ab",
+          "da"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "da",
+          "aa",
+          "bb",
+          "bc",
+          "aa",
+          "cd",
+          "da",
+          "aa",
+          "aa",
+          "bb",
+          "bb",
+          "bc",
+          "ab",
+          "ab",
+          "da",
+          "aa",
+          "da",
+          "da",
+          "cd",
+          "ab"
+        ]
+      ],
+      "expected": [
+        3,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4,
+        [
+          "bb",
+          "aa",
+          "da",
+          "ab",
+          "cd",
+          "bc",
+          "ab",
+          "da",
+          "aa",
+          "bb",
+          "da",
+          "bb",
+          "cd",
+          "cd",
+          "bb",
+          "cd",
+          "aa",
+          "bb",
+          "cd",
+          "aa"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "bb",
+          "bc",
+          "da",
+          "aa",
+          "cd",
+          "aa",
+          "ab",
+          "aa",
+          "da",
+          "da",
+          "bc",
+          "ab",
+          "bc",
+          "bb",
+          "cd",
+          "bc",
+          "da",
+          "bc",
+          "da",
+          "cd"
+        ]
+      ],
+      "expected": [
+        3,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "aa",
+          "cd",
+          "bc",
+          "bc",
+          "ab",
+          "bc",
+          "bb",
+          "bb",
+          "aa",
+          "aa",
+          "bb",
+          "aa",
+          "cd",
+          "bb",
+          "da",
+          "aa",
+          "da",
+          "cd",
+          "bc",
+          "da"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "da",
+          "da",
+          "bb",
+          "da",
+          "ab",
+          "bb",
+          "bc",
+          "cd",
+          "da",
+          "da",
+          "ab",
+          "bc",
+          "bc",
+          "cd",
+          "bc",
+          "bc",
+          "bb",
+          "aa",
+          "bc",
+          "cd"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        6,
+        [
+          "da",
+          "cd",
+          "bb",
+          "ab",
+          "aa",
+          "aa",
+          "aa",
+          "ab",
+          "da",
+          "cd",
+          "da",
+          "aa",
+          "cd",
+          "bb",
+          "aa",
+          "bc",
+          "cd",
+          "cd",
+          "bb",
+          "aa"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "cd",
+          "da",
+          "bb",
+          "bb",
+          "ab",
+          "bb",
+          "da",
+          "da",
+          "bb",
+          "bb",
+          "aa",
+          "aa",
+          "bc",
+          "bc",
+          "aa",
+          "ab",
+          "bb",
+          "cd",
+          "bb",
+          "ab"
+        ]
+      ],
+      "expected": [
+        3,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        2,
+        [
+          "bc",
+          "ab",
+          "aa",
+          "cd",
+          "cd",
+          "ab",
+          "bc",
+          "ab",
+          "ab",
+          "bc",
+          "bc",
+          "bc",
+          "cd",
+          "da",
+          "bb",
+          "da",
+          "aa",
+          "bc",
+          "cd",
+          "bb"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "cd",
+          "bc",
+          "bb",
+          "bc",
+          "bc",
+          "bb",
+          "bc",
+          "cd",
+          "da",
+          "cd",
+          "ab",
+          "cd",
+          "bb",
+          "bc",
+          "ab",
+          "bc",
+          "ab",
+          "bc",
+          "da",
+          "ab"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        6,
+        [
+          "cd",
+          "da",
+          "aa",
+          "bc",
+          "ab",
+          "bb",
+          "ab",
+          "bc",
+          "cd",
+          "bc",
+          "aa",
+          "bc",
+          "ab",
+          "aa",
+          "da",
+          "bb",
+          "da",
+          "bb",
+          "bb",
+          "bc"
+        ]
+      ],
+      "expected": [
+        4,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4,
+        [
+          "bc",
+          "aa",
+          "bc",
+          "bb",
+          "ab",
+          "bc",
+          "aa",
+          "da",
+          "bb",
+          "da",
+          "cd",
+          "da",
+          "bb",
+          "bc",
+          "cd",
+          "bc",
+          "da",
+          "bc",
+          "bb",
+          "aa"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "bc",
+          "da",
+          "da",
+          "da",
+          "aa",
+          "ab",
+          "ab",
+          "ab",
+          "cd",
+          "ab",
+          "bb",
+          "aa",
+          "bb",
+          "da",
+          "bb",
+          "bc",
+          "da",
+          "cd",
+          "bc",
+          "aa"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3,
+        [
+          "ab",
+          "da",
+          "da",
+          "aa",
+          "bc",
+          "bc",
+          "da",
+          "ab",
+          "ab",
+          "ab",
+          "aa",
+          "aa",
+          "bb",
+          "bb",
+          "bb",
+          "cd",
+          "bc",
+          "ab",
+          "ab",
+          "bc"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4,
+        [
+          "cd",
+          "bc",
+          "ab",
+          "aa",
+          "da",
+          "bb",
+          "da",
+          "da",
+          "aa",
+          "aa",
+          "cd",
+          "bb",
+          "da",
+          "da",
+          "bb",
+          "ab",
+          "bb",
+          "cd",
+          "bc",
+          "bc"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3,
+        [
+          "ab",
+          "bc",
+          "da",
+          "da",
+          "da",
+          "da",
+          "bb",
+          "aa",
+          "aa",
+          "bb",
+          "bc",
+          "cd",
+          "cd",
+          "aa",
+          "cd",
+          "bc",
+          "da",
+          "ab",
+          "cd",
+          "aa"
+        ]
+      ],
+      "expected": [
+        3,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "bb",
+          "ab",
+          "da",
+          "bb",
+          "ab",
+          "bc",
+          "bb",
+          "bc",
+          "aa",
+          "ab",
+          "aa",
+          "cd",
+          "aa",
+          "cd",
+          "bc",
+          "cd",
+          "bc",
+          "aa",
+          "aa",
+          "ab"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        2,
+        [
+          "bb",
+          "bc",
+          "bb",
+          "bb",
+          "aa",
+          "ab",
+          "da",
+          "ab",
+          "bb",
+          "aa",
+          "da",
+          "bc",
+          "ab",
+          "aa",
+          "cd",
+          "cd",
+          "bb",
+          "cd",
+          "bc",
+          "bb"
+        ]
+      ],
+      "expected": [
+        1,
+        2
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3,
+        [
+          "cd",
+          "da",
+          "bb",
+          "cd",
+          "bc",
+          "bb",
+          "ab",
+          "cd",
+          "ab",
+          "ab",
+          "bb",
+          "cd",
+          "cd",
+          "bb",
+          "bc",
+          "ab",
+          "bb",
+          "ab",
+          "bc",
+          "aa"
+        ]
+      ],
+      "expected": [
+        3,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4,
+        [
+          "bb",
+          "bc",
+          "bc",
+          "ab",
+          "da",
+          "da",
+          "da",
+          "aa",
+          "aa",
+          "aa",
+          "ab",
+          "da",
+          "da",
+          "cd",
+          "da",
+          "aa",
+          "cd",
+          "ab",
+          "cd",
+          "aa"
+        ]
+      ],
+      "expected": [
+        3,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        2,
+        [
+          "bc",
+          "da",
+          "da",
+          "da",
+          "bc",
+          "bb",
+          "ab",
+          "bb",
+          "aa",
+          "ab",
+          "bb",
+          "bb",
+          "da",
+          "ab",
+          "bc",
+          "aa",
+          "da",
+          "ab",
+          "bb",
+          "cd"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        2,
+        [
+          "bb",
+          "cd",
+          "aa",
+          "ab",
+          "aa",
+          "aa",
+          "bc",
+          "aa",
+          "aa",
+          "aa",
+          "da",
+          "aa",
+          "ab",
+          "aa",
+          "bb",
+          "cd",
+          "bb",
+          "bc",
+          "cd",
+          "cd"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4,
+        [
+          "bb",
+          "da",
+          "da",
+          "cd",
+          "bc",
+          "aa",
+          "bb",
+          "da",
+          "cd",
+          "cd",
+          "cd",
+          "cd",
+          "bb",
+          "ab",
+          "bc",
+          "bb",
+          "da",
+          "cd",
+          "ab",
+          "bb"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        6,
+        [
+          "bb",
+          "bb",
+          "bb",
+          "da",
+          "bc",
+          "bb",
+          "da",
+          "bc",
+          "ab",
+          "aa",
+          "ab",
+          "aa",
+          "bc",
+          "da",
+          "cd",
+          "bc",
+          "cd",
+          "bc",
+          "ab",
+          "bb"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        2,
+        [
+          "cd",
+          "aa",
+          "bc",
+          "bc",
+          "da",
+          "da",
+          "da",
+          "bc",
+          "da",
+          "ab",
+          "bc",
+          "ab",
+          "bb",
+          "da",
+          "ab",
+          "cd",
+          "aa",
+          "aa",
+          "ab",
+          "ab"
+        ]
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "alternative_checked": true
+    }
+  ]
+}

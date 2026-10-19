@@ -1,0 +1,1065 @@
+{
+  "problem_id": 42890,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        [
+          [
+            "100",
+            "ryan",
+            "music",
+            "2"
+          ],
+          [
+            "200",
+            "apeach",
+            "math",
+            "2"
+          ],
+          [
+            "300",
+            "tube",
+            "computer",
+            "3"
+          ],
+          [
+            "400",
+            "con",
+            "computer",
+            "4"
+          ],
+          [
+            "500",
+            "muzi",
+            "music",
+            "3"
+          ],
+          [
+            "600",
+            "apeach",
+            "music",
+            "2"
+          ]
+        ]
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b",
+            "a",
+            "c",
+            "b"
+          ],
+          [
+            "c",
+            "b",
+            "a",
+            "a"
+          ]
+        ]
+      ],
+      "expected": 4,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b",
+            "c",
+            "b",
+            "a"
+          ],
+          [
+            "a",
+            "c",
+            "b",
+            "c"
+          ],
+          [
+            "a",
+            "c",
+            "b",
+            "b"
+          ],
+          [
+            "a",
+            "a",
+            "b",
+            "c"
+          ],
+          [
+            "a",
+            "b",
+            "b",
+            "b"
+          ],
+          [
+            "c",
+            "b",
+            "c",
+            "b"
+          ],
+          [
+            "b",
+            "b",
+            "b",
+            "c"
+          ]
+        ]
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "a",
+            "a",
+            "a",
+            "b"
+          ]
+        ]
+      ],
+      "expected": 4,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "a",
+            "a",
+            "c",
+            "a",
+            "c"
+          ],
+          [
+            "a",
+            "c",
+            "a",
+            "c",
+            "a"
+          ],
+          [
+            "b",
+            "a",
+            "b",
+            "b",
+            "b"
+          ],
+          [
+            "a",
+            "b",
+            "a",
+            "b",
+            "a"
+          ],
+          [
+            "c",
+            "c",
+            "b",
+            "b",
+            "b"
+          ],
+          [
+            "a",
+            "a",
+            "a",
+            "a",
+            "a"
+          ],
+          [
+            "b",
+            "c",
+            "a",
+            "b",
+            "b"
+          ]
+        ]
+      ],
+      "expected": 5,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "a",
+            "a",
+            "b"
+          ],
+          [
+            "a",
+            "b",
+            "c"
+          ],
+          [
+            "b",
+            "a",
+            "b"
+          ],
+          [
+            "a",
+            "b",
+            "a"
+          ],
+          [
+            "a",
+            "c",
+            "b"
+          ],
+          [
+            "c",
+            "b",
+            "c"
+          ],
+          [
+            "c",
+            "b",
+            "b"
+          ],
+          [
+            "b",
+            "b",
+            "c"
+          ],
+          [
+            "b",
+            "b",
+            "a"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "c",
+            "a",
+            "b",
+            "a"
+          ],
+          [
+            "a",
+            "c",
+            "c",
+            "c"
+          ],
+          [
+            "a",
+            "c",
+            "b",
+            "b"
+          ],
+          [
+            "b",
+            "c",
+            "a",
+            "a"
+          ],
+          [
+            "a",
+            "a",
+            "a",
+            "a"
+          ],
+          [
+            "c",
+            "c",
+            "c",
+            "a"
+          ],
+          [
+            "c",
+            "b",
+            "c",
+            "a"
+          ],
+          [
+            "b",
+            "a",
+            "b",
+            "a"
+          ]
+        ]
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b"
+          ],
+          [
+            "a"
+          ],
+          [
+            "c"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b",
+            "c",
+            "b",
+            "a",
+            "a"
+          ],
+          [
+            "c",
+            "b",
+            "a",
+            "b",
+            "c"
+          ],
+          [
+            "c",
+            "c",
+            "c",
+            "c",
+            "c"
+          ],
+          [
+            "b",
+            "a",
+            "b",
+            "a",
+            "c"
+          ],
+          [
+            "c",
+            "a",
+            "a",
+            "b",
+            "a"
+          ],
+          [
+            "b",
+            "b",
+            "c",
+            "b",
+            "b"
+          ],
+          [
+            "a",
+            "c",
+            "a",
+            "b",
+            "c"
+          ],
+          [
+            "b",
+            "b",
+            "c",
+            "a",
+            "c"
+          ]
+        ]
+      ],
+      "expected": 6,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b",
+            "a",
+            "a",
+            "c",
+            "b"
+          ],
+          [
+            "b",
+            "a",
+            "b",
+            "c",
+            "b"
+          ],
+          [
+            "b",
+            "c",
+            "c",
+            "c",
+            "b"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "c"
+          ],
+          [
+            "a"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b"
+          ],
+          [
+            "c"
+          ],
+          [
+            "a"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b"
+          ],
+          [
+            "a"
+          ],
+          [
+            "c"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b"
+          ],
+          [
+            "a"
+          ],
+          [
+            "c"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b",
+            "b",
+            "c",
+            "c",
+            "c"
+          ],
+          [
+            "c",
+            "b",
+            "a",
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "c",
+            "c",
+            "c",
+            "a"
+          ],
+          [
+            "c",
+            "a",
+            "a",
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "a",
+            "c",
+            "c",
+            "a"
+          ],
+          [
+            "a",
+            "c",
+            "a",
+            "b",
+            "c"
+          ],
+          [
+            "b",
+            "a",
+            "c",
+            "b",
+            "c"
+          ],
+          [
+            "a",
+            "a",
+            "b",
+            "b",
+            "b"
+          ],
+          [
+            "a",
+            "a",
+            "a",
+            "c",
+            "b"
+          ],
+          [
+            "b",
+            "c",
+            "a",
+            "c",
+            "b"
+          ]
+        ]
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "a",
+            "a",
+            "c",
+            "a",
+            "c"
+          ],
+          [
+            "b",
+            "a",
+            "b",
+            "a",
+            "c"
+          ],
+          [
+            "a",
+            "c",
+            "c",
+            "c",
+            "a"
+          ],
+          [
+            "a",
+            "a",
+            "a",
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "a",
+            "c",
+            "a",
+            "c"
+          ]
+        ]
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "c",
+            "a",
+            "b",
+            "b"
+          ],
+          [
+            "a",
+            "c",
+            "a",
+            "b"
+          ],
+          [
+            "a",
+            "c",
+            "c",
+            "c"
+          ],
+          [
+            "c",
+            "b",
+            "a",
+            "c"
+          ],
+          [
+            "c",
+            "b",
+            "a",
+            "b"
+          ],
+          [
+            "c",
+            "b",
+            "c",
+            "c"
+          ],
+          [
+            "b",
+            "b",
+            "c",
+            "b"
+          ],
+          [
+            "a",
+            "a",
+            "b",
+            "b"
+          ],
+          [
+            "a",
+            "a",
+            "a",
+            "a"
+          ],
+          [
+            "c",
+            "c",
+            "a",
+            "c"
+          ],
+          [
+            "a",
+            "b",
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "a",
+            "c",
+            "b"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b",
+            "c",
+            "c",
+            "a"
+          ],
+          [
+            "a",
+            "a",
+            "c",
+            "a"
+          ],
+          [
+            "a",
+            "c",
+            "c",
+            "b"
+          ]
+        ]
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "a",
+            "a",
+            "a"
+          ],
+          [
+            "a",
+            "b",
+            "c"
+          ],
+          [
+            "a",
+            "c",
+            "c"
+          ],
+          [
+            "c",
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "b",
+            "c"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b"
+          ],
+          [
+            "a"
+          ],
+          [
+            "c"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "c",
+            "a"
+          ],
+          [
+            "c",
+            "c"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b",
+            "c",
+            "b",
+            "c"
+          ],
+          [
+            "c",
+            "c",
+            "a",
+            "b"
+          ],
+          [
+            "c",
+            "b",
+            "c",
+            "a"
+          ],
+          [
+            "a",
+            "c",
+            "b",
+            "a"
+          ]
+        ]
+      ],
+      "expected": 5,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b"
+          ],
+          [
+            "c"
+          ],
+          [
+            "a"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "a",
+            "a",
+            "c",
+            "b"
+          ],
+          [
+            "b",
+            "b",
+            "b",
+            "a"
+          ],
+          [
+            "b",
+            "c",
+            "a",
+            "a"
+          ],
+          [
+            "c",
+            "a",
+            "c",
+            "a"
+          ],
+          [
+            "c",
+            "c",
+            "a",
+            "c"
+          ],
+          [
+            "a",
+            "b",
+            "a",
+            "c"
+          ],
+          [
+            "c",
+            "c",
+            "a",
+            "a"
+          ],
+          [
+            "b",
+            "b",
+            "b",
+            "c"
+          ]
+        ]
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "b",
+            "b"
+          ],
+          [
+            "b",
+            "c"
+          ],
+          [
+            "c",
+            "c"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "c",
+            "c",
+            "b"
+          ],
+          [
+            "c",
+            "b",
+            "c"
+          ],
+          [
+            "a",
+            "a",
+            "b"
+          ],
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ]
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "a",
+            "b",
+            "c",
+            "a"
+          ],
+          [
+            "b",
+            "c",
+            "a",
+            "c"
+          ],
+          [
+            "a",
+            "c",
+            "a",
+            "a"
+          ],
+          [
+            "a",
+            "b",
+            "b",
+            "c"
+          ],
+          [
+            "c",
+            "b",
+            "c",
+            "c"
+          ],
+          [
+            "a",
+            "a",
+            "b",
+            "a"
+          ]
+        ]
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "a",
+            "a",
+            "a"
+          ],
+          [
+            "b",
+            "b",
+            "a"
+          ],
+          [
+            "b",
+            "a",
+            "c"
+          ],
+          [
+            "b",
+            "b",
+            "b"
+          ],
+          [
+            "b",
+            "c",
+            "b"
+          ]
+        ]
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          [
+            "c",
+            "c",
+            "c"
+          ],
+          [
+            "a",
+            "a",
+            "c"
+          ],
+          [
+            "a",
+            "a",
+            "a"
+          ],
+          [
+            "a",
+            "b",
+            "b"
+          ],
+          [
+            "c",
+            "a",
+            "b"
+          ]
+        ]
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    }
+  ]
+}

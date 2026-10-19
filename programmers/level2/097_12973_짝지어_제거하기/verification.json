@@ -1,0 +1,13 @@
+{
+  "id": 12973,
+  "cases": 30,
+  "official_examples": 2,
+  "passed": true,
+  "checked_on": "2026-10-19",
+  "python_version": "3.12.14",
+  "command": "python verify.py",
+  "new_site_submission": false,
+  "alternative_cases": 30,
+  "stress_cases": 1,
+  "stress_label": "100만 글자에서 인접 쌍 없음 / No removable pair in one million characters"
+}

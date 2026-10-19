@@ -1,0 +1,45 @@
+{
+  "source": "https://school.programmers.co.kr/learn/courses/30/lessons/12983",
+  "cases": [
+    {
+      "args": [
+        [
+          "ba",
+          "na",
+          "n",
+          "a"
+        ],
+        "banana"
+      ],
+      "expected": 3
+    },
+    {
+      "args": [
+        [
+          "app",
+          "ap",
+          "p",
+          "l",
+          "e",
+          "ple",
+          "pp"
+        ],
+        "apple"
+      ],
+      "expected": 2
+    },
+    {
+      "args": [
+        [
+          "ba",
+          "an",
+          "nan",
+          "ban",
+          "n"
+        ],
+        "banana"
+      ],
+      "expected": -1
+    }
+  ]
+}

@@ -1,8 +1,3 @@
-# 문제: 미로 탈출
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/159993
-# 풀이: 시작점에서 레버까지, 레버에서 출구까지 deque BFS를 수행한다. 두 최단 거리 중 하나라도 없으면 탈출할 수 없다.
-# 복잡도: 행 R·열 C: 시간·추가 공간 O(RC). BFS를 두 번 수행한다.
-
 from collections import deque
 
 def solution(maps):
@@ -25,6 +20,8 @@ def solution(maps):
                     visited.add((nr, nc))
                     queue.append((nr, nc, distance + 1))
         return -1
+    # 시작에서 레버까지, 레버에서 출구까지 최단 거리를 따로 구한다.
     first = bfs(positions['S'], positions['L'])
     second = bfs(positions['L'], positions['E'])
+    # 두 구간 중 하나라도 막혔으면 탈출할 수 없다.
     return first + second if first >= 0 and second >= 0 else -1

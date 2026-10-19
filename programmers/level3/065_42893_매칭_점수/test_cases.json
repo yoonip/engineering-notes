@@ -1,0 +1,589 @@
+[
+  {
+    "args": [
+      "blind",
+      [
+        "<html lang=\"ko\" xml:lang=\"ko\" xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta property=\"og:url\" content=\"https://a.com\"/>\n</head>  \n<body>\nBlind Lorem Blind ipsum dolor Blind test sit amet, consectetur adipiscing elit. \n<a href=\"https://b.com\"> Link to b </a>\n</body>\n</html>",
+        "<html lang=\"ko\" xml:lang=\"ko\" xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta property=\"og:url\" content=\"https://b.com\"/>\n</head>  \n<body>\nSuspendisse potenti. Vivamus venenatis tellus non turpis bibendum, \n<a href=\"https://a.com\"> Link to a </a>\nblind sed congue urna varius. Suspendisse feugiat nisl ligula, quis malesuada felis hendrerit ut.\n<a href=\"https://c.com\"> Link to c </a>\n</body>\n</html>",
+        "<html lang=\"ko\" xml:lang=\"ko\" xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta property=\"og:url\" content=\"https://c.com\"/>\n</head>  \n<body>\nUt condimentum urna at felis sodales rutrum. Sed dapibus cursus diam, non interdum nulla tempor nec. Phasellus rutrum enim at orci consectetu blind\n<a href=\"https://a.com\"> Link to a </a>\n</body>\n</html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      "Muzi",
+      [
+        "<html lang=\"ko\" xml:lang=\"ko\" xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta property=\"og:url\" content=\"https://careers.kakao.com/interview/list\"/>\n</head>  \n<body>\n<a href=\"https://programmers.co.kr/learn/courses/4673\"></a>#!MuziMuzi!)jayg07con&&\n\n</body>\n</html>",
+        "<html lang=\"ko\" xml:lang=\"ko\" xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta property=\"og:url\" content=\"https://www.kakaocorp.com\"/>\n</head>  \n<body>\ncon%\tmuzI92apeach&2<a href=\"https://hashcode.co.kr/tos\"></a>\n\n\t^\n</body>\n</html>"
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "official",
+    "multiple_decodings": false
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba word WORD wording wording word word WORD</body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>aba WORD aba word word wording wording WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>WORD word WORD aba wording wording aba aba<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>word word WORD wording WORD word wording WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba wording word word WORD aba WORD WORD<a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>word aba word wording aba WORD word word<a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording wording word WORD WORD wording word aba</body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba WORD wording aba wording wording aba aba<a href=\"https://site0.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>WORD aba WORD aba word aba WORD word<a href=\"https://site0.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording aba WORD aba word wording wording wording<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>WORD wording word wording WORD WORD wording aba<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>WORD wording word WORD aba WORD word aba<a href=\"https://site0.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba WORD wording wording wording WORD wording aba<a href=\"https://site1.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording aba aba word word aba aba word<a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording wording wording word wording WORD wording wording<a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>WORD aba aba WORD word aba WORD aba<a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording aba WORD aba aba aba WORD aba<a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording WORD WORD word WORD word word WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording wording word WORD aba WORD WORD WORD<a href=\"https://site0.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba wording WORD word WORD word aba WORD</body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba aba wording aba word WORD WORD word<a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>WORD aba wording aba WORD wording aba WORD<a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>word WORD WORD word wording word word wording<a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>WORD WORD wording word wording WORD aba word<a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording wording aba word word WORD WORD wording<a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>word wording wording aba word word wording word<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>aba aba WORD word word word WORD aba<a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba wording wording aba wording WORD aba wording<a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>word WORD word wording aba aba WORD word<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>aba word wording wording word aba word aba<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording aba word WORD aba WORD aba word<a href=\"https://site1.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>WORD word aba wording word word aba word<a href=\"https://site0.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording wording WORD wording WORD WORD word aba<a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>WORD wording aba WORD word aba word WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>aba word word aba word word wording WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba aba wording aba word aba wording WORD<a href=\"https://site3.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba aba word wording wording wording WORD aba<a href=\"https://site0.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>aba wording word WORD aba wording word aba<a href=\"https://site0.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>word aba wording WORD aba aba wording wording<a href=\"https://site1.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba word WORD WORD WORD wording WORD WORD<a href=\"https://site3.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording aba word word wording word wording wording</body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>aba aba aba wording WORD aba wording word<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording WORD word WORD WORD word aba aba<a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>wording wording word wording word word word aba<a href=\"https://site1.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>word word WORD aba WORD word WORD word<a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>WORD wording wording WORD aba wording aba wording<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording word aba aba aba aba aba WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba WORD word WORD wording aba wording aba<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba aba WORD word wording aba WORD wording<a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording WORD WORD aba wording wording WORD wording<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>aba wording aba aba aba WORD WORD wording<a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>word WORD aba WORD aba aba WORD WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording wording wording WORD WORD word aba word<a href=\"https://site0.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>aba wording aba aba wording WORD WORD word<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording aba word wording wording wording word WORD<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>wording aba wording word wording WORD wording word<a href=\"https://site3.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba aba word WORD word WORD WORD word</body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>word WORD wording aba WORD word wording aba<a href=\"https://site0.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>aba WORD wording word WORD wording aba wording<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>WORD wording wording WORD word WORD WORD WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording word word wording word word aba aba</body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>WORD word word wording aba word aba word<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording word WORD aba word wording aba WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>word WORD word WORD word wording WORD WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba aba wording wording WORD aba WORD aba<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording word wording wording word aba WORD wording</body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>word word aba aba aba WORD wording wording<a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba aba wording wording word word aba word<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba word WORD WORD wording WORD aba word<a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording aba aba word WORD wording WORD WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording wording WORD word WORD aba word WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba aba word word aba aba word WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba wording aba aba aba aba aba wording<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>WORD WORD wording aba aba wording WORD aba<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>aba wording word wording WORD word wording word<a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>wording wording word word WORD wording aba aba<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba WORD word word word aba word WORD<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>WORD wording WORD aba aba WORD wording wording<a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording WORD WORD word wording wording WORD WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>wording aba WORD wording WORD word wording word<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording WORD wording WORD wording word aba wording<a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>word word wording WORD word WORD WORD aba<a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>WORD word WORD word wording word word word<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>wording aba wording word wording wording WORD word<a href=\"https://site2.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>word WORD aba wording word word aba wording<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>word WORD WORD word word word WORD aba<a href=\"https://site0.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>aba word word wording word word aba word<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>wording word WORD wording wording WORD wording aba<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording WORD wording word aba wording word aba<a href=\"https://site1.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>word wording wording word WORD aba wording word<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>aba WORD WORD WORD word aba word WORD<a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba aba WORD aba word aba WORD word<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>word word WORD word WORD wording word WORD<a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>aba wording word WORD word word word wording<a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>word WORD word word wording word WORD wording<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>WORD WORD aba word wording wording wording wording<a href=\"https://site1.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>word WORD aba wording aba word WORD WORD<a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>word word wording wording word aba word wording<a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>word aba word word wording word word word<a href=\"https://site1.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba wording WORD aba aba aba word wording<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba aba wording word word word aba WORD<a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>aba word wording word WORD word word aba<a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>WORD wording WORD WORD WORD wording wording WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba aba wording wording WORD word wording word</body></html>"
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba word WORD wording aba word word aba<a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>WORD aba word wording word wording wording wording<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>aba word aba WORD WORD WORD wording WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>wording wording word word aba aba aba word<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording wording wording wording WORD wording WORD aba<a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording aba aba wording word word aba aba</body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>word WORD aba WORD aba word WORD wording<a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba wording aba aba WORD aba word WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording aba wording word WORD wording WORD word</body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>WORD aba word WORD WORD WORD wording WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording WORD WORD aba word WORD aba wording<a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>WORD wording aba WORD aba wording wording WORD<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording word aba wording WORD word aba WORD<a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>WORD aba WORD aba aba aba wording word<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>word wording wording WORD wording word wording word<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba word wording aba word word wording word<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>word wording aba wording aba aba WORD WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording wording word WORD wording word wording WORD<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>WORD wording wording word word WORD WORD aba<a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba word aba word word wording aba wording<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba aba aba aba wording word WORD word<a href=\"https://site0.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>word aba aba WORD wording word aba aba<a href=\"https://site0.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>wording wording aba WORD WORD wording wording wording<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>WORD WORD word word word WORD wording aba<a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>word aba wording wording word WORD WORD aba<a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording wording word aba word wording aba wording<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>WORD aba word word word WORD aba aba<a href=\"https://site0.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba aba word wording wording WORD aba WORD<a href=\"https://site2.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 2,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>word wording wording wording word wording word aba<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>word word word wording WORD word WORD word<a href=\"https://site0.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>WORD wording aba wording word WORD WORD WORD<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>wording wording aba aba aba wording aba aba<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>WORD word WORD word WORD WORD word WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording WORD aba word wording word WORD WORD<a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>WORD word WORD wording WORD WORD word aba<a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>WORD WORD word WORD aba word wording WORD<a href=\"https://site0.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba WORD aba wording wording word wording word<a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>wording word word WORD aba word wording aba<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>aba wording wording word word aba wording WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>aba word aba WORD word word aba WORD<a href=\"https://site0.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>aba wording wording aba WORD WORD aba word<a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>aba WORD aba word word wording wording word<a href=\"https://site0.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>WORD word wording WORD WORD aba wording WORD<a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>word WORD word WORD aba word WORD WORD<a href=\"https://site3.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>WORD wording aba wording WORD word word aba<a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>word wording word wording WORD aba word WORD<a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>word WORD word aba aba WORD aba WORD<a href=\"https://site0.com\">link</a><a href=\"https://site2.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>WORD word aba word word aba WORD WORD<a href=\"https://site3.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 3,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>WORD wording wording WORD aba WORD aba word<a href=\"https://site0.com\">link</a><a href=\"https://site1.com\">link</a><a href=\"https://site2.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>aba word WORD wording WORD WORD word aba</body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>WORD aba aba wording wording wording wording wording<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>wording aba WORD WORD wording word wording WORD<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a><a href=\"https://site4.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 1,
+    "check_alternative": true,
+    "kind": "differential"
+  },
+  {
+    "args": [
+      "word",
+      [
+        "<html><head><meta property=\"og:url\" content=\"https://site0.com\"/></head><body>wording WORD aba word word aba word word<a href=\"https://site0.com\">link</a><a href=\"https://site4.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site1.com\"/></head><body>aba word WORD WORD word word WORD wording<a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site2.com\"/></head><body>aba aba word wording word WORD aba wording<a href=\"https://site1.com\">link</a><a href=\"https://site3.com\">link</a></body></html>",
+        "<html><head><meta property=\"og:url\" content=\"https://site3.com\"/></head><body>word wording WORD wording WORD WORD WORD aba<a href=\"https://site0.com\">link</a></body></html>"
+      ]
+    ],
+    "expected": 0,
+    "check_alternative": true,
+    "kind": "differential"
+  }
+]

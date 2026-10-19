@@ -1,0 +1,204 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "CAR_RENTAL_COMPANY_CAR": {
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            "세단",
+            16000,
+            "가죽시트,열선시트,후방카메라"
+          ],
+          [
+            2,
+            "SUV",
+            14000,
+            "스마트키,네비게이션,열선시트"
+          ],
+          [
+            3,
+            "세단",
+            22000,
+            "주차감지센서,후방카메라,가죽시트"
+          ],
+          [
+            4,
+            "세단",
+            12000,
+            "주차감지센서"
+          ]
+        ]
+      },
+      "CAR_RENTAL_COMPANY_RENTAL_HISTORY": {
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            4,
+            "2022-09-27",
+            "2022-09-27"
+          ],
+          [
+            2,
+            3,
+            "2022-10-03",
+            "2022-10-04"
+          ],
+          [
+            3,
+            2,
+            "2022-10-05",
+            "2022-10-05"
+          ],
+          [
+            4,
+            1,
+            "2022-10-11",
+            "2022-10-14"
+          ],
+          [
+            5,
+            3,
+            "2022-10-13",
+            "2022-10-15"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        3
+      ],
+      [
+        1
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/157341"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "CAR_RENTAL_COMPANY_CAR": {
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": []
+      },
+      "CAR_RENTAL_COMPANY_RENTAL_HISTORY": {
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "CAR_RENTAL_COMPANY_CAR": {
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            "세단",
+            1,
+            null
+          ]
+        ]
+      },
+      "CAR_RENTAL_COMPANY_RENTAL_HISTORY": {
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            0,
+            1,
+            "2022-10-01",
+            "2022-10-01"
+          ],
+          [
+            1,
+            1,
+            "2022-10-31",
+            "2022-10-31"
+          ],
+          [
+            2,
+            1,
+            "2022-09-30",
+            "2022-09-30"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        1
+      ]
+    ]
+  }
+]

@@ -1,0 +1,246 @@
+{
+  "problem_id": 12945,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        3
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        5
+      ],
+      "expected": 5,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        78728
+      ],
+      "expected": 999215,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        61963
+      ],
+      "expected": 562826,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        72052
+      ],
+      "expected": 1161813,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        70114
+      ],
+      "expected": 574358,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        44788
+      ],
+      "expected": 566911,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        98238
+      ],
+      "expected": 1158882,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        62738
+      ],
+      "expected": 1140885,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        90547
+      ],
+      "expected": 9029,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        7427
+      ],
+      "expected": 431548,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        20134
+      ],
+      "expected": 680865,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        19503
+      ],
+      "expected": 828583,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        44523
+      ],
+      "expected": 957350,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        17042
+      ],
+      "expected": 327870,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        32106
+      ],
+      "expected": 443542,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        37017
+      ],
+      "expected": 1013873,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        15467
+      ],
+      "expected": 484100,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        15546
+      ],
+      "expected": 957749,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        92683
+      ],
+      "expected": 404711,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        72833
+      ],
+      "expected": 1186052,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        80907
+      ],
+      "expected": 871309,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        70439
+      ],
+      "expected": 177024,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        88376
+      ],
+      "expected": 1196442,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        75375
+      ],
+      "expected": 257610,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        16638
+      ],
+      "expected": 798321,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        19585
+      ],
+      "expected": 156717,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        37816
+      ],
+      "expected": 322732,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        58196
+      ],
+      "expected": 939979,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        39033
+      ],
+      "expected": 1091552,
+      "alternative_checked": true
+    }
+  ]
+}

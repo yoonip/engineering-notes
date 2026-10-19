@@ -1,8 +1,3 @@
-# 문제: 과제 진행하기
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/176962
-# 풀이: 시작 시각순으로 정렬하고 중단한 과제를 스택에 넣는다. 빈 시간이 생기면 가장 최근에 멈춘 과제부터 재개한다.
-# 복잡도: 과제 N개: 시간 O(N log N), 추가 공간 O(N).
-
 def solution(plans):
     tasks = []
     for name, start, duration in plans:
@@ -14,16 +9,19 @@ def solution(plans):
     previous = 0
     for start, name, duration in tasks:
         free = start - previous
+        # 다음 시작 전까지 가장 최근에 멈춘 과제부터 이어 한다.
         while free > 0 and stack:
             old_name, remaining = stack.pop()
             if remaining <= free:
                 free -= remaining
                 answer.append(old_name)
             else:
+                # 끝내지 못한 작업의 남은 시간을 보존한다.
                 stack.append((old_name, remaining - free))
                 free = 0
         stack.append((name, duration))
         previous = start
+    # 새 과제가 더 없으면 최근 중단 순서로 모두 끝낸다.
     while stack:
         answer.append(stack.pop()[0])
     return answer

@@ -1,0 +1,13 @@
+{
+  "id": 468380,
+  "cases": 34,
+  "official_examples": 6,
+  "passed": true,
+  "checked_on": "2026-10-19",
+  "python_version": "3.12.14",
+  "command": "python verify.py",
+  "new_site_submission": false,
+  "alternative_cases": 34,
+  "stress_cases": 1,
+  "stress_label": "펼치면 100억 원소인 상수 배열 / An implicit constant array of ten billion entries"
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "ANIMAL_INS": {
+        "columns": [
+          "ANIMAL_ID",
+          "ANIMAL_TYPE",
+          "DATETIME",
+          "INTAKE_CONDITION",
+          "NAME",
+          "SEX_UPON_INTAKE"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "A350276",
+            "Cat",
+            "2017-08-13 13:50:00",
+            "Normal",
+            "Jewel",
+            "Spayed Female"
+          ],
+          [
+            "A381217",
+            "Dog",
+            "2017-07-08 09:41:00",
+            "Sick",
+            "Cherokee",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "ANIMAL_OUTS": {
+        "columns": [
+          "ANIMAL_ID",
+          "ANIMAL_TYPE",
+          "DATETIME",
+          "NAME",
+          "SEX_UPON_OUTCOME"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "A350276",
+            "Cat",
+            "2018-01-28 17:51:00",
+            "Jewel",
+            "Spayed Female"
+          ],
+          [
+            "A381217",
+            "Dog",
+            "2017-06-09 18:51:00",
+            "Cherokee",
+            "Neutered Male"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "A381217",
+        "Cherokee"
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/59043"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "ANIMAL_INS": {
+        "columns": [
+          "ANIMAL_ID",
+          "ANIMAL_TYPE",
+          "DATETIME",
+          "INTAKE_CONDITION",
+          "NAME",
+          "SEX_UPON_INTAKE"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      },
+      "ANIMAL_OUTS": {
+        "columns": [
+          "ANIMAL_ID",
+          "ANIMAL_TYPE",
+          "DATETIME",
+          "NAME",
+          "SEX_UPON_OUTCOME"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "ANIMAL_INS": {
+        "columns": [
+          "ANIMAL_ID",
+          "ANIMAL_TYPE",
+          "DATETIME",
+          "INTAKE_CONDITION",
+          "NAME",
+          "SEX_UPON_INTAKE"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "A",
+            "Cat",
+            "2020-01-01 00:00:00",
+            null,
+            "A",
+            "Intact Male"
+          ],
+          [
+            "B",
+            "Cat",
+            "2020-01-02 00:00:00",
+            null,
+            "B",
+            "Intact Male"
+          ],
+          [
+            "C",
+            "Cat",
+            "2020-01-03 00:00:00",
+            null,
+            "C",
+            "Intact Male"
+          ],
+          [
+            "D",
+            "Cat",
+            "2020-01-04 00:00:00",
+            null,
+            "D",
+            "Intact Male"
+          ]
+        ]
+      },
+      "ANIMAL_OUTS": {
+        "columns": [
+          "ANIMAL_ID",
+          "ANIMAL_TYPE",
+          "DATETIME",
+          "NAME",
+          "SEX_UPON_OUTCOME"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "A",
+            "Cat",
+            "2020-02-01 00:00:00",
+            "A",
+            "Neutered Male"
+          ],
+          [
+            "B",
+            "Cat",
+            "2019-01-01 00:00:00",
+            "B",
+            "Intact Male"
+          ],
+          [
+            "D",
+            "Cat",
+            "2020-02-01 00:00:00",
+            "D",
+            "Intact Male"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "B",
+        "B"
+      ]
+    ]
+  }
+]

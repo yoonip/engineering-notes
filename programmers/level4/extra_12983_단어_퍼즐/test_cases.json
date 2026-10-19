@@ -1,0 +1,1854 @@
+[
+  {
+    "args": [
+      [
+        "ba",
+        "na",
+        "n",
+        "a"
+      ],
+      "banana"
+    ],
+    "expected": 3,
+    "kind": "official"
+  },
+  {
+    "args": [
+      [
+        "app",
+        "ap",
+        "p",
+        "l",
+        "e",
+        "ple",
+        "pp"
+      ],
+      "apple"
+    ],
+    "expected": 2,
+    "kind": "official"
+  },
+  {
+    "args": [
+      [
+        "ba",
+        "an",
+        "nan",
+        "ban",
+        "n"
+      ],
+      "banana"
+    ],
+    "expected": -1,
+    "kind": "official"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aab",
+        "abab",
+        "babb",
+        "bbbb"
+      ],
+      "baacaacbcbcbc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaab",
+        "b",
+        "ba"
+      ],
+      "caaaccaaabba"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaa",
+        "aaba",
+        "abab",
+        "ba",
+        "baab",
+        "bab"
+      ],
+      "bbb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaba",
+        "aabb",
+        "ba",
+        "baa",
+        "bbb"
+      ],
+      "abbacbbccacaacbcc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aab",
+        "ab",
+        "abab",
+        "b",
+        "ba",
+        "bb"
+      ],
+      "bbc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaaa",
+        "ab",
+        "abab",
+        "b",
+        "bba",
+        "bbaa"
+      ],
+      "baaabaaabbcccbccaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaa",
+        "aab",
+        "abaa",
+        "abb",
+        "b"
+      ],
+      "bcababcb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaab",
+        "abb",
+        "b",
+        "ba",
+        "bab"
+      ],
+      "bcabbcabb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "baaa",
+        "bab",
+        "bb"
+      ],
+      "ccb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaa",
+        "ab",
+        "abba",
+        "bb"
+      ],
+      "bcabbcabbcac"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaba",
+        "aba",
+        "ba",
+        "bab",
+        "bba",
+        "bbb"
+      ],
+      "acccccab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ab",
+        "abbb",
+        "babb",
+        "bbab",
+        "bbbb"
+      ],
+      "caabcacacba"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ab",
+        "baaa",
+        "bb",
+        "bbaa",
+        "bbba"
+      ],
+      "c"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaaa",
+        "ab",
+        "b",
+        "ba"
+      ],
+      "aa"
+    ],
+    "expected": 1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaaa",
+        "ab",
+        "abb",
+        "b",
+        "bb",
+        "bbab",
+        "bbba"
+      ],
+      "bbcaabab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "ba",
+        "bab",
+        "bba",
+        "bbb",
+        "bbbb"
+      ],
+      "cabaccbcaacacbbb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaba",
+        "ba",
+        "baaa",
+        "baba",
+        "bb",
+        "bbba"
+      ],
+      "c"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "b",
+        "bab",
+        "bba"
+      ],
+      "cbaaccabaabaacacc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaab",
+        "ab",
+        "aba",
+        "bb",
+        "bbb",
+        "bbba"
+      ],
+      "baccccaccaca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aba",
+        "abbb",
+        "babb",
+        "bbb"
+      ],
+      "ccccbcbccbaaccaac"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ab",
+        "abab",
+        "abb",
+        "ba",
+        "baab",
+        "bb"
+      ],
+      "caccbcaacaccaaabcbc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "b",
+        "bb",
+        "bbbb"
+      ],
+      "a"
+    ],
+    "expected": 1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaab",
+        "aaba",
+        "abb",
+        "ba",
+        "baba",
+        "bb",
+        "bba"
+      ],
+      "bcbbac"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaa",
+        "abaa",
+        "b",
+        "baa",
+        "bb",
+        "bbb"
+      ],
+      "acbaaccccbaacbccbb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaab",
+        "abbb",
+        "ba",
+        "baaa",
+        "bbbb"
+      ],
+      "babbbbbabccaacc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaab",
+        "aaba",
+        "aabb",
+        "abaa",
+        "b",
+        "bab",
+        "bb"
+      ],
+      "caaabac"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaaa",
+        "ab",
+        "baab",
+        "bb"
+      ],
+      "bcbcabacbaccbb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaab",
+        "aaba",
+        "aba",
+        "abab",
+        "b",
+        "ba",
+        "bbab"
+      ],
+      "ccacccccaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaaa",
+        "ab",
+        "abaa",
+        "abb",
+        "b",
+        "bb",
+        "bbba"
+      ],
+      "bbaaccbabacccbabc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aab",
+        "ba",
+        "bab",
+        "bb",
+        "bbab"
+      ],
+      "baaacccabbaab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "ab",
+        "aba",
+        "abb",
+        "ba",
+        "baaa",
+        "bab",
+        "bbaa"
+      ],
+      "ccacba"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aab",
+        "ab",
+        "abab",
+        "ba",
+        "babb",
+        "bba"
+      ],
+      "bbbcbcaaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "abbb",
+        "b",
+        "ba",
+        "bab"
+      ],
+      "caaacbbcaaccabaab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaa",
+        "ab",
+        "aba",
+        "abb",
+        "abba",
+        "bbaa"
+      ],
+      "bacaabcbaaabaaabcab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaba",
+        "ab",
+        "aba",
+        "bb",
+        "bbb"
+      ],
+      "bcccbcba"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aba",
+        "bb",
+        "bbb"
+      ],
+      "accbcacabcabcaccabbc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "ab",
+        "b",
+        "baba",
+        "bb"
+      ],
+      "cabaaabcacacca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaa",
+        "aab",
+        "b",
+        "bb",
+        "bbab"
+      ],
+      "aacaaacc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aabb",
+        "b",
+        "babb",
+        "bb",
+        "bbb"
+      ],
+      "cc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaa",
+        "aabb",
+        "abaa",
+        "b",
+        "ba",
+        "baa",
+        "bbba"
+      ],
+      "aaacac"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abba",
+        "b",
+        "ba",
+        "bab",
+        "babb",
+        "bbaa"
+      ],
+      "cbbbcbccab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aba",
+        "b",
+        "ba",
+        "bab"
+      ],
+      "ba"
+    ],
+    "expected": 1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aab",
+        "bab",
+        "babb"
+      ],
+      "bcbacbacccbcbc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aab",
+        "aaba",
+        "b",
+        "bb",
+        "bba",
+        "bbab"
+      ],
+      "aaac"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "b",
+        "ba",
+        "baa"
+      ],
+      "ccacbb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aab",
+        "aba",
+        "b",
+        "ba",
+        "baa",
+        "babb"
+      ],
+      "accccbbc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaba",
+        "ba",
+        "baab",
+        "bbb",
+        "bbbb"
+      ],
+      "abaabaacccbbbacabccc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaba",
+        "abba",
+        "bab",
+        "baba",
+        "bb"
+      ],
+      "baacabaaaabc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaa",
+        "b",
+        "babb",
+        "bb",
+        "bba",
+        "bbb"
+      ],
+      "aacbbbccaacbbbbcca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaba",
+        "aba",
+        "abaa",
+        "b",
+        "bbb",
+        "bbbb"
+      ],
+      "baabbbccaaaabaccbca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "abb",
+        "b",
+        "bab",
+        "babb",
+        "bb"
+      ],
+      "abcbbaacbb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aab",
+        "ab",
+        "abbb",
+        "b",
+        "bba"
+      ],
+      "acccbbbbbcbccacccba"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "b",
+        "baa",
+        "bbab",
+        "bbba"
+      ],
+      "cccccc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaa",
+        "abb",
+        "bba",
+        "bbaa",
+        "bbbb"
+      ],
+      "a"
+    ],
+    "expected": 1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaaa",
+        "baa",
+        "bab",
+        "bb",
+        "bbb",
+        "bbbb"
+      ],
+      "ccaaaab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaaa",
+        "ab",
+        "aba",
+        "b",
+        "bbb"
+      ],
+      "babcccabbcccca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaab",
+        "ab",
+        "abaa",
+        "b",
+        "ba",
+        "bb"
+      ],
+      "acbbbbacbbaaccaaab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "b",
+        "bab",
+        "bb"
+      ],
+      "abacacccaaabcbbabacc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abaa",
+        "abab",
+        "abb",
+        "bb",
+        "bbab"
+      ],
+      "abbcccbabbabababaaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaab",
+        "aba",
+        "abab",
+        "b",
+        "baa",
+        "bba",
+        "bbbb"
+      ],
+      "aabcbabbcab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "b",
+        "bbaa",
+        "bbab"
+      ],
+      "acbbacbbbbbaaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaab",
+        "ab",
+        "b",
+        "bb",
+        "bbaa"
+      ],
+      "baaccaaacbbbbb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abab",
+        "abba",
+        "b",
+        "baab",
+        "baba",
+        "bbb"
+      ],
+      "accbaaaabc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaaa",
+        "b",
+        "ba",
+        "bab",
+        "babb",
+        "bba"
+      ],
+      "acbaabbccbcaacccacc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaa",
+        "b",
+        "baa",
+        "bb",
+        "bbb"
+      ],
+      "abacccbcb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aab",
+        "ab",
+        "b",
+        "bab",
+        "bb",
+        "bba"
+      ],
+      "cbbc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaa",
+        "ab",
+        "abab",
+        "bbab"
+      ],
+      "aaccbcbbcab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaa",
+        "aaab",
+        "aaba",
+        "abb",
+        "abba",
+        "ba",
+        "bab"
+      ],
+      "abcbcaabaacbcbc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaa",
+        "abaa",
+        "b",
+        "baab",
+        "baba",
+        "bba",
+        "bbb"
+      ],
+      "cb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abab",
+        "b",
+        "ba",
+        "bab",
+        "bb",
+        "bbbb"
+      ],
+      "ccabcbaaba"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "abab",
+        "abbb",
+        "baba",
+        "bb",
+        "bba"
+      ],
+      "acac"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "ab",
+        "abb",
+        "b",
+        "baa",
+        "bb"
+      ],
+      "abbbb"
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaba",
+        "abaa",
+        "abb",
+        "ba",
+        "bbaa",
+        "bbb"
+      ],
+      "bcbbaccbbbbbccbaab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aab",
+        "abb",
+        "ba",
+        "bb",
+        "bbbb"
+      ],
+      "acaccb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "ab",
+        "abb",
+        "ba",
+        "baab",
+        "bb"
+      ],
+      "cbbbbabb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ab",
+        "b",
+        "babb",
+        "bb",
+        "bba",
+        "bbb"
+      ],
+      "bcccccbcaaccaacbaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaa",
+        "abaa",
+        "abb",
+        "abba",
+        "b",
+        "ba",
+        "bb"
+      ],
+      "cc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaaa",
+        "abb",
+        "abbb",
+        "b",
+        "bbb"
+      ],
+      "caccaaccb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abb",
+        "abbb",
+        "b",
+        "ba",
+        "bab",
+        "bba"
+      ],
+      "cbcacccbccaabbbaca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaa",
+        "b"
+      ],
+      "abaaaacaabaabbacca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaa",
+        "b",
+        "ba",
+        "bab",
+        "bb"
+      ],
+      "bcccbbccb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaba",
+        "abb",
+        "ba",
+        "bab",
+        "bba",
+        "bbab"
+      ],
+      "bbcabaacabbabacabbca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aba",
+        "b",
+        "baba",
+        "bb",
+        "bbba"
+      ],
+      "aabba"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaa",
+        "abaa",
+        "abb",
+        "ba",
+        "bab"
+      ],
+      "acbcbcccabbabcab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "bab",
+        "baba",
+        "bb",
+        "bbab"
+      ],
+      "ccbbbccbac"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "b",
+        "ba",
+        "baaa",
+        "baba",
+        "bbba"
+      ],
+      "cbbaacaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aabb",
+        "b",
+        "ba",
+        "baba"
+      ],
+      "accabcbbcbaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaba",
+        "abba",
+        "baa",
+        "baab",
+        "bab",
+        "bbab"
+      ],
+      "acbcbb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aab",
+        "babb",
+        "bb",
+        "bba",
+        "bbba"
+      ],
+      "bcbcb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ba",
+        "baa",
+        "bab",
+        "baba",
+        "bb"
+      ],
+      "abbbccbacbabbc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "ab",
+        "aba",
+        "baa",
+        "bb"
+      ],
+      "ab"
+    ],
+    "expected": 1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ab",
+        "abba",
+        "b",
+        "ba",
+        "bb"
+      ],
+      "cbabca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaab",
+        "aab",
+        "aabb",
+        "ba",
+        "bb",
+        "bbb"
+      ],
+      "cabacbbcbccaba"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abb",
+        "abba",
+        "b",
+        "baa"
+      ],
+      "ccccbca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ab",
+        "abbb",
+        "b",
+        "bb"
+      ],
+      "acbbccbcacaccccaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaba",
+        "ba",
+        "baaa",
+        "baba",
+        "bbaa",
+        "bbb"
+      ],
+      "ccaaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aab",
+        "aaba",
+        "abba",
+        "ba",
+        "bab"
+      ],
+      "aaacacaaabbaccbb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aab",
+        "abba",
+        "b",
+        "bbb"
+      ],
+      "bbcbbaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaa",
+        "abab",
+        "b",
+        "bbaa",
+        "bbb",
+        "bbbb"
+      ],
+      "aac"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaab",
+        "aabb",
+        "ab",
+        "abab",
+        "baba"
+      ],
+      "baabccabca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaaa",
+        "ab",
+        "abbb",
+        "b",
+        "bba"
+      ],
+      "bccbbaababbcbabaaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaa",
+        "ab",
+        "bab",
+        "bba"
+      ],
+      "ccbcbab"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aab",
+        "aaba",
+        "b",
+        "bbb"
+      ],
+      "cba"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaa",
+        "aaab",
+        "b",
+        "ba"
+      ],
+      "ccaccccbaacbaccc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "b",
+        "baa",
+        "babb"
+      ],
+      "cababccababbaaac"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "ab",
+        "abbb",
+        "b",
+        "baba",
+        "bb"
+      ],
+      "acb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaab",
+        "abb",
+        "ba",
+        "bb"
+      ],
+      "aaabcbcacc"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaa",
+        "abba",
+        "ba",
+        "baaa",
+        "bbaa"
+      ],
+      "bbabccbaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaa",
+        "babb",
+        "bb"
+      ],
+      "babaabcaabbcabaacca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "b",
+        "baab",
+        "bbaa",
+        "bbab"
+      ],
+      "c"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aab",
+        "abbb",
+        "baa",
+        "bab",
+        "bb",
+        "bba"
+      ],
+      "cb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaba",
+        "ab",
+        "b",
+        "bb"
+      ],
+      "cccccbbca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaab",
+        "aba",
+        "abba",
+        "bb",
+        "bbba",
+        "bbbb"
+      ],
+      "aa"
+    ],
+    "expected": 2,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aab",
+        "b",
+        "ba",
+        "bb"
+      ],
+      "caa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "baa",
+        "baaa",
+        "baba",
+        "bbb"
+      ],
+      "aababcccacaaccb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "abba",
+        "b",
+        "ba",
+        "bb",
+        "bbaa"
+      ],
+      "cbabcabbaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aab",
+        "abba",
+        "b",
+        "ba"
+      ],
+      "caabbabaabb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaa",
+        "aaaa",
+        "aaab",
+        "aab",
+        "b",
+        "bb",
+        "bbb"
+      ],
+      "cabacaacaaabcb"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aab",
+        "ab",
+        "abb",
+        "ba",
+        "bbba"
+      ],
+      "aaacaa"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaa",
+        "abaa",
+        "abb",
+        "baa",
+        "baab",
+        "bb"
+      ],
+      "cacbbbcccbbca"
+    ],
+    "expected": -1,
+    "kind": "generated"
+  }
+]

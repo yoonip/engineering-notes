@@ -1,0 +1,9 @@
+-- 년·월·성별별로 상품을 산 서로 다른 회원 수를 구합니다. 성별 NULL은 제외하고 년·월·성별 오름차순입니다.
+-- 판매와 회원을 조인한 후 COUNT(DISTINCT USER_ID)를 씁니다. 같은 회원의 같은 달 여러 구매가 한 명으로 집계됩니다.
+SELECT YEAR(s.SALES_DATE) AS YEAR, MONTH(s.SALES_DATE) AS MONTH, u.GENDER,
+       COUNT(DISTINCT s.USER_ID) AS USERS
+FROM ONLINE_SALE AS s
+JOIN USER_INFO AS u ON s.USER_ID = u.USER_ID
+WHERE u.GENDER IS NOT NULL
+GROUP BY YEAR(s.SALES_DATE), MONTH(s.SALES_DATE), u.GENDER
+ORDER BY YEAR, MONTH, u.GENDER

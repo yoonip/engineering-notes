@@ -1,0 +1,8 @@
+-- 2022년 5월 생산된 식품의 상품별 총매출(단가×생산량)을 구합니다. 총매출 내림차순, 동점은 상품 ID 오름차순입니다.
+-- 생산일을 먼저 제한하고 상품 가격과 생산량을 곱해 합칩니다. 주문의 출고일이 아니라 PRODUCE_DATE를 사용합니다.
+SELECT p.PRODUCT_ID, p.PRODUCT_NAME, SUM(p.PRICE * o.AMOUNT) AS TOTAL_SALES
+FROM FOOD_PRODUCT AS p
+JOIN FOOD_ORDER AS o ON p.PRODUCT_ID = o.PRODUCT_ID
+WHERE o.PRODUCE_DATE >= '2022-05-01' AND o.PRODUCE_DATE < '2022-06-01'
+GROUP BY p.PRODUCT_ID, p.PRODUCT_NAME
+ORDER BY TOTAL_SALES DESC, p.PRODUCT_ID ASC

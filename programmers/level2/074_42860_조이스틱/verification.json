@@ -1,0 +1,13 @@
+{
+  "id": 42860,
+  "cases": 30,
+  "official_examples": 2,
+  "passed": true,
+  "checked_on": "2026-10-19",
+  "python_version": "3.12.14",
+  "command": "python verify.py",
+  "new_site_submission": false,
+  "alternative_cases": 30,
+  "stress_cases": 1,
+  "stress_label": "최대 이름 길이의 전부 A / All-A at maximum name length"
+}

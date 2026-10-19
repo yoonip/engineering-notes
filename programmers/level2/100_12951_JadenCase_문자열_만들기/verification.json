@@ -1,0 +1,11 @@
+{
+  "id": 12951,
+  "cases": 30,
+  "official_examples": 2,
+  "passed": true,
+  "checked_on": "2026-10-19",
+  "python_version": "3.12.14",
+  "command": "python verify.py",
+  "new_site_submission": false,
+  "alternative_cases": 30
+}

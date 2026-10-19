@@ -1,0 +1,13 @@
+{
+  "id": 42577,
+  "cases": 31,
+  "official_examples": 3,
+  "passed": true,
+  "checked_on": "2026-10-19",
+  "python_version": "3.12.14",
+  "command": "python verify.py",
+  "new_site_submission": false,
+  "alternative_cases": 31,
+  "stress_cases": 1,
+  "stress_label": "동일 길이의 서로 다른 번호 100만 개 / One million distinct equal-length numbers"
+}

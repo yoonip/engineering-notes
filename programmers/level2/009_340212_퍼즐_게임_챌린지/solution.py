@@ -1,11 +1,7 @@
-# 문제: 퍼즐 게임 챌린지
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/340212
-# 풀이: 숙련도가 높아질수록 소요 시간이 늘지 않는 성질을 쓴다. 제한 시간 안에 가능한 최소 숙련도를 이분 탐색한다.
-# 복잡도: 퍼즐 N개·최대 난도 D: 시간 O(N log D), 추가 공간 O(1).
-
 def solution(diffs, times, limit):
     left = 1
     right = max(diffs)
+    # 소요 시간이 제한 안에 들어오는 최소 숙련도를 찾는다.
     while left < right:
         level = (left + right) // 2
         elapsed = 0
@@ -13,7 +9,9 @@ def solution(diffs, times, limit):
         for diff, current in zip(diffs, times):
             elapsed += current
             if diff > level:
+                # 실패 한 번에는 현재 퍼즐과 이전 퍼즐 시간이 함께 든다.
                 elapsed += (diff - level) * (current + previous)
+            # 이미 제한을 넘었으므로 이 숙련도의 나머지 계산은 필요 없다.
             if elapsed > limit:
                 break
             previous = current

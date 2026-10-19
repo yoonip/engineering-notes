@@ -1,0 +1,11 @@
+{
+  "problem_id": 273711,
+  "python_version": "3.12.14",
+  "primary_cases_passed": 3,
+  "alternative_cases_passed": 3,
+  "original_submission_score": 100,
+  "source_sha256": "22f11a4c07e89873c2e9b5291e9352edf5af9283f20f5d972f99abeae2a10c1c",
+  "command": "python test_query.py",
+  "engine": "SQLite with explicit MySQL compatibility functions; no MySQL server execution",
+  "official_example_result_note": null
+}

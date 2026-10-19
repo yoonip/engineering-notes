@@ -1,0 +1,236 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "ITEM_INFO",
+        "columns": [
+          "ITEM_ID",
+          "ITEM_NAME",
+          "RARITY",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)",
+          "INTEGER",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            0,
+            "ITEM_A",
+            "COMMON",
+            10000
+          ],
+          [
+            1,
+            "ITEM_B",
+            "LEGEND",
+            9000
+          ],
+          [
+            2,
+            "ITEM_C",
+            "LEGEND",
+            11000
+          ],
+          [
+            3,
+            "ITEM_D",
+            "UNIQUE",
+            10000
+          ],
+          [
+            4,
+            "ITEM_E",
+            "LEGEND",
+            12000
+          ]
+        ]
+      },
+      {
+        "name": "ITEM_TREE",
+        "columns": [
+          "ITEM_ID",
+          "PARENT_ITEM_ID"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            0,
+            null
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            null
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        0,
+        "ITEM_A"
+      ],
+      [
+        3,
+        "ITEM_D"
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "ITEM_INFO",
+        "columns": [
+          "ITEM_ID",
+          "ITEM_NAME",
+          "RARITY",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)",
+          "INTEGER",
+          "INTEGER"
+        ],
+        "rows": []
+      },
+      {
+        "name": "ITEM_TREE",
+        "columns": [
+          "ITEM_ID",
+          "PARENT_ITEM_ID"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": []
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "ITEM_INFO",
+        "columns": [
+          "ITEM_ID",
+          "ITEM_NAME",
+          "RARITY",
+          "PRICE"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(N)",
+          "INTEGER",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            0,
+            "ITEM_A",
+            "COMMON",
+            10000
+          ],
+          [
+            1,
+            "ITEM_B",
+            "LEGEND",
+            9000
+          ],
+          [
+            2,
+            "ITEM_C",
+            "LEGEND",
+            11000
+          ],
+          [
+            3,
+            "ITEM_D",
+            "UNIQUE",
+            10000
+          ],
+          [
+            4,
+            "ITEM_E",
+            "LEGEND",
+            12000
+          ],
+          [
+            104,
+            "ITEM_A",
+            "COMMON",
+            10000
+          ]
+        ]
+      },
+      {
+        "name": "ITEM_TREE",
+        "columns": [
+          "ITEM_ID",
+          "PARENT_ITEM_ID"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            0,
+            null
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            null
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            104,
+            0
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        0,
+        "ITEM_A"
+      ],
+      [
+        3,
+        "ITEM_D"
+      ]
+    ]
+  }
+]

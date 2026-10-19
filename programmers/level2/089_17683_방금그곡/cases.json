@@ -1,0 +1,462 @@
+{
+  "problem_id": 17683,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        "ABCDEFG",
+        [
+          "12:00,12:14,HELLO,CDEFGAB",
+          "13:00,13:05,WORLD,ABCDEF"
+        ]
+      ],
+      "expected": "HELLO",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "CC#BCC#BCC#BCC#B",
+        [
+          "03:00,03:30,FOO,CC#B",
+          "04:00,04:08,BAR,CC#BCC#BCC#B"
+        ]
+      ],
+      "expected": "FOO",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "ABC",
+        [
+          "12:00,12:14,HELLO,C#DEFGAB",
+          "13:00,13:05,WORLD,ABCDEF"
+        ]
+      ],
+      "expected": "WORLD",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "GFGF#BC",
+        [
+          "00:00,00:14,song0,DCFCEEB",
+          "00:00,00:37,song1,F#C#",
+          "00:00,00:24,song2,CF#B"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DC#A#CDD#",
+        [
+          "00:00,00:14,song0,C#",
+          "00:00,00:38,song1,F#DC#EF#",
+          "00:00,00:21,song2,ECFG#C#BG#D#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "CDG#",
+        [
+          "00:00,00:07,song0,D",
+          "00:00,00:23,song1,F#G#G#D#FF#",
+          "00:00,00:14,song2,CG",
+          "00:00,00:21,song3,GDDG#ADCA#G",
+          "00:00,00:14,song4,G#",
+          "00:00,00:22,song5,F#F#F"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "G#F#F#EF#",
+        [
+          "00:00,00:06,song0,BAB",
+          "00:00,00:50,song1,D#ECFB",
+          "00:00,00:11,song2,A#C#FC#EF#D#D#C#",
+          "00:00,00:15,song3,BD#F#DFBG#CF#E"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BD#G#",
+        [
+          "00:00,00:10,song0,EAFDA#E",
+          "00:00,00:12,song1,AAD#D#A",
+          "00:00,00:04,song2,BEAC#AECFF",
+          "00:00,00:14,song3,C#AD#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BFD#GAD#D#D#",
+        [
+          "00:00,00:03,song0,BDAG#FGD#",
+          "00:00,00:09,song1,CGA#AD",
+          "00:00,00:15,song2,AGEEA#",
+          "00:00,00:31,song3,AFDGEAF#FD",
+          "00:00,00:23,song4,A#A#GBA",
+          "00:00,00:19,song5,F#A#",
+          "00:00,00:39,song6,GE",
+          "00:00,00:35,song7,DAGF#D#G#FC#",
+          "00:00,00:30,song8,GG#C#AC#A#CDG#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "C#GD#EC#",
+        [
+          "00:00,00:47,song0,C#G#",
+          "00:00,00:14,song1,A#",
+          "00:00,00:38,song2,EFEDC",
+          "00:00,00:36,song3,FEG#AD#",
+          "00:00,00:07,song4,DAG#",
+          "00:00,00:39,song5,G#CA#AF",
+          "00:00,00:13,song6,D#",
+          "00:00,00:33,song7,BGFCGF#A#C#D",
+          "00:00,00:24,song8,DC#AA#EEF#FGG#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "AD#D#AFG#E",
+        [
+          "00:00,00:19,song0,D#F#",
+          "00:00,00:43,song1,EAB",
+          "00:00,00:29,song2,C#AB",
+          "00:00,00:10,song3,G#EG#C#F#EE",
+          "00:00,00:09,song4,EF#F#E",
+          "00:00,00:28,song5,EC#DD#F#GADD",
+          "00:00,00:33,song6,A#",
+          "00:00,00:18,song7,DAF#EBAG#F"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "C#C#",
+        [
+          "00:00,00:36,song0,F#D#GDG#E",
+          "00:00,00:34,song1,GD#BCD#FBF#D",
+          "00:00,00:02,song2,G#CA#G#F#AAG#C#",
+          "00:00,00:07,song3,FFA#D",
+          "00:00,00:09,song4,GF",
+          "00:00,00:13,song5,A#D#AC#CDAF#C#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DEBEBF#B",
+        [
+          "00:00,00:13,song0,BA#",
+          "00:00,00:27,song1,BDF#BC#DC#CB",
+          "00:00,00:02,song2,EGG#C",
+          "00:00,00:16,song3,D#GG#F#DG#FC#",
+          "00:00,00:34,song4,C",
+          "00:00,00:24,song5,A#CC#CC#ABF#B",
+          "00:00,00:08,song6,A",
+          "00:00,00:26,song7,A#C#EBGD#B",
+          "00:00,00:38,song8,G#A#G#EC#BDBC#",
+          "00:00,00:19,song9,D"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "GBA#EGDC#A",
+        [
+          "00:00,00:12,song0,G#EGBEF#",
+          "00:00,00:14,song1,DC#DA#DA#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BGBDG#E",
+        [
+          "00:00,00:30,song0,EGC#AFD#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "A#A#C#",
+        [
+          "00:00,00:16,song0,BEEEF#ACA",
+          "00:00,00:23,song1,C#FC#FA#BBB",
+          "00:00,00:38,song2,D#D#F#C#F#GDBG#F",
+          "00:00,00:21,song3,CDF#G#C#DG",
+          "00:00,00:29,song4,EF#BF#CAF#",
+          "00:00,00:35,song5,FED#CD#ADGD",
+          "00:00,00:38,song6,G#G#A"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DB",
+        [
+          "00:00,00:34,song0,CD#AFGA"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "A#BBD#",
+        [
+          "00:00,00:49,song0,G#DAA#ED#B",
+          "00:00,00:02,song1,ADGC#DFG#D#C#E",
+          "00:00,00:17,song2,D#A#AD",
+          "00:00,00:41,song3,DCCDEGEA#GA#",
+          "00:00,00:06,song4,FG#ABEF#A"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "E",
+        [
+          "00:00,00:29,song0,F#G#D#A#CD#C"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "D#F#ECF#",
+        [
+          "00:00,00:36,song0,G#BBFEGAF#G#E",
+          "00:00,00:09,song1,GF#AGCC#D#GD#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "EDBF",
+        [
+          "00:00,00:23,song0,FD#FD#G#",
+          "00:00,00:22,song1,GG#DAF#",
+          "00:00,00:21,song2,G#DECF#DE",
+          "00:00,00:29,song3,GGF#D",
+          "00:00,00:25,song4,F#A"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "E",
+        [
+          "00:00,00:25,song0,DF#G#A#B",
+          "00:00,00:24,song1,A#C#F#",
+          "00:00,00:02,song2,GBF#AD",
+          "00:00,00:48,song3,G#CDCED#AFGA",
+          "00:00,00:01,song4,D",
+          "00:00,00:20,song5,BDC#AFB"
+        ]
+      ],
+      "expected": "song3",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "D#GBFDD",
+        [
+          "00:00,00:13,song0,F",
+          "00:00,00:39,song1,D#ACA#",
+          "00:00,00:16,song2,CFF#",
+          "00:00,00:34,song3,F#G#F#GDA#BD#BB"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "GD",
+        [
+          "00:00,00:39,song0,A#",
+          "00:00,00:08,song1,G#ADG",
+          "00:00,00:08,song2,E",
+          "00:00,00:40,song3,C#",
+          "00:00,00:12,song4,ED#AC#C#",
+          "00:00,00:28,song5,G#D",
+          "00:00,00:42,song6,BGE",
+          "00:00,00:16,song7,G#G#GC#D#GD#AA#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "EDF",
+        [
+          "00:00,00:24,song0,ED#EFF#D#CDA",
+          "00:00,00:13,song1,GC",
+          "00:00,00:34,song2,AABDG#AB"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "A",
+        [
+          "00:00,00:39,song0,CG#F#DAA#EC",
+          "00:00,00:32,song1,C#G#C#",
+          "00:00,00:08,song2,D#F#AFGBD#EDB",
+          "00:00,00:37,song3,G#FAD#CA",
+          "00:00,00:48,song4,DA#BDED#A#BA#C"
+        ]
+      ],
+      "expected": "song0",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "F#CD#GADAB",
+        [
+          "00:00,00:34,song0,A#F#CE",
+          "00:00,00:33,song1,AC#AF#",
+          "00:00,00:37,song2,F#CDA#CA",
+          "00:00,00:13,song3,GGBG#F#CC"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "C#C#D#BD#D#F#B",
+        [
+          "00:00,00:41,song0,G#C#BCF#D#G",
+          "00:00,00:36,song1,C#",
+          "00:00,00:48,song2,BD#A",
+          "00:00,00:22,song3,C",
+          "00:00,00:33,song4,D#EDE",
+          "00:00,00:28,song5,EC",
+          "00:00,00:19,song6,G#FG#CC#ECGE",
+          "00:00,00:50,song7,G"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ECAC#",
+        [
+          "00:00,00:23,song0,F#G#G#FBF#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "GDG#A#D#EBF",
+        [
+          "00:00,00:05,song0,EA#C",
+          "00:00,00:24,song1,BAF#G#",
+          "00:00,00:42,song2,D#DC#D#F",
+          "00:00,00:11,song3,C#G",
+          "00:00,00:46,song4,GBDFD#DF#GA#",
+          "00:00,00:23,song5,CFAFFFC#A#G#",
+          "00:00,00:36,song6,D#G#C#CG#",
+          "00:00,00:42,song7,G#F#D",
+          "00:00,00:27,song8,DGF#A#FG#F#CFF#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "CCA#G#",
+        [
+          "00:00,00:35,song0,DA#F#BC#FACC#",
+          "00:00,00:09,song1,F#A#G#GEC#FB",
+          "00:00,00:40,song2,AFA#BAF#DC",
+          "00:00,00:18,song3,ADA#ADA#G#GC#",
+          "00:00,00:22,song4,DDC",
+          "00:00,00:37,song5,DAG#A#D#"
+        ]
+      ],
+      "expected": "(None)",
+      "alternative_checked": true
+    }
+  ]
+}

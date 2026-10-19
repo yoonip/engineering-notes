@@ -1,0 +1,246 @@
+{
+  "problem_id": 49994,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        "ULURRDLLU"
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "LULLLLLLU"
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DUDRDLRUDLRDULUDRUDDRDRLDUDDLDLUUR"
+      ],
+      "expected": 15,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "UURRUDLLUU"
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "LURULDUDLURDUDUURUDLRDULLRDLUDRDRDRLUDLUURRLRRLUULDDUUL"
+      ],
+      "expected": 23,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "RULLRRUDLRDLURLUDURURUDLRUURRUURRDUURDDUDDURRDLUDLURLLUULRDRUULURUULUULLDRURUDURUUDDUDUURDUDUDUDURRLDRLDURDRDDLDRDRURUULDRLRURDLRRDRRDLULU"
+      ],
+      "expected": 46,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "UUULLUULLLRULUURLULRDLRDURRDLD"
+      ],
+      "expected": 17,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "LDLLULDDLLURRURRDRDLRLDDLLLLDRUDUDRUDLRLULRLLLDDLDLRRRURRDDLDUUDRLURLRDRDDLLDRLRULLRUDLDRDRRRLDRLURDDUUDDLRLRDLLDRRURRDDRLDLUDRLLRLLUDD"
+      ],
+      "expected": 51,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "RDRDUDULUDDRURDLLULRLRDULUDDLRRUDUDDDLRDRLRULDRLULURULRURUURLRRRURDDURURRURU"
+      ],
+      "expected": 32,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ULUDULRRUDDUDLLURDUDLLRRRLLDLLULLURDUUULRDUDRDDUUDDDLRRLLDRURUURURLRLRLLUUDULDDURURDDU"
+      ],
+      "expected": 40,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DLRDDUULDLUDDLDLUURLULUDDLDRDRULRLLLDRUUUUULLLDDLULLDLRURLDLDRUULDUDURLRLLUURULLDULUULRULUDDRRDUUDLR"
+      ],
+      "expected": 41,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DLLDRUDLRLURLUUUDRRDDRDDRUUDRRRUUDLURLULLDDURRURLURRLLDDDDUUUUR"
+      ],
+      "expected": 41,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "RRDDDDUDLLUURDRDRRRRRDRDLULURLDRURDLUDLRLDLUURRLUDDUDRLUDRUULLLDDRLLDRDRDRUURLUDDUUULRURRDUURDUDRLDURLDDULDLRUURUDRRDLDDRURRRUDUUURRDRRURRDDDDRLRDLU"
+      ],
+      "expected": 51,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ULLDRLDDDRURURULLDDLUDUURUUUDRLUDDRDRURDLULURLURDUULRDLUURRRUDDDDULDLDULUUDRRDDLRL"
+      ],
+      "expected": 47,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "RDUULUULUDDDUUDDRURRLUDURRDRLLLLRDDRULRDRLUDLULLRULDDRU"
+      ],
+      "expected": 28,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DLDDRDDLDDUDRDLUDLLLLRRDUDDRRDDUULLDUUDLRUURLLRDRRDDULRLULRLDDLULDDDRLULDRURURRLDUDLURURDDDLRLDRLRLDDRRUDRDDUURLLRURRUUD"
+      ],
+      "expected": 44,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DLLUUULDDRDRLRUDRLRDLRULULUULRURLLULLLLLLUDDUDLUURRRLDLUUL"
+      ],
+      "expected": 27,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "UDUULLLULDRRRDDDDLDLDDULLURLLRUULURDDUDLRRRLD"
+      ],
+      "expected": 32,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "RLLRLRLDLDUDULLDRUDDRLRDDURUULDLLUDLRRDULURRURULDRLUUURULULRDRRDRLLUDDDDDDLDLLDUDDLUDDRULRDURRRRULRUDRLULURR"
+      ],
+      "expected": 55,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ULUDRDLURDDRDDDUDRLLRURUULLDLUURURLDUUULDLRRRLDLRUDRDLRLRRLURULDDRRR"
+      ],
+      "expected": 37,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "LDRRDLRLULLLRRURUDLRRURRRLDLDDLUDULDURDLLRRURDDRRLDDDUULUULLUURLLRDULRLRDUUUURLUUR"
+      ],
+      "expected": 36,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "UDLRLDLRRLUDUURLDUULRDRURLRULUURRLRDLLURUUURULUULRLLUDDUUUDLRUULUDLDDDLDUDULDUURLDDUULLDLRRRRRUUULLDRUUUDUDRLDLLRDUDURUUDRL"
+      ],
+      "expected": 44,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "LUDRULLURRDLRRDDRULDULLR"
+      ],
+      "expected": 16,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "LLDLUURDRRLLRRDURRUUUUDULURURRRLDDRDLRLLUDDLULDLURURRDLLUDLLDRRDRUUUULLLDUUDDLURLDURDRRLDDRDDRUULUULLURRUDLDURURD"
+      ],
+      "expected": 59,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "ULUU"
+      ],
+      "expected": 4,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "RRLLDUUUUDRRRURUULRDLLURDRLLUULRUDLLUDLDLURRDURDLULRDRRLRULRLUUUURLLRRLURUUURLLRRDUDULLLDDURUDRUL"
+      ],
+      "expected": 35,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "LUDULULDLDLLRURLLRLLUUR"
+      ],
+      "expected": 13,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "LURLLURDDU"
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "RDUDUURRDURURLUUDLLRRRD"
+      ],
+      "expected": 15,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "DRRRDURDDLUDDLDLRDDDDRRULRDLRURRLLLDLUDLRRDDRRUURDURDRUUURRDURLRUUUURLLLUURLDLDDURUDRRU"
+      ],
+      "expected": 42,
+      "alternative_checked": true
+    }
+  ]
+}

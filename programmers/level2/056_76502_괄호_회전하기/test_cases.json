@@ -1,0 +1,202 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      "[](){}"
+    ],
+    "expected": 3,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      "}]()[{"
+    ],
+    "expected": 2,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      "[)(]"
+    ],
+    "expected": 0,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      "}}}"
+    ],
+    "expected": 0,
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "{){)(](}[[}{]{"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "{{[(({)"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "]{(]]"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "]]{[(}[{)])]"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      ")}[])[[()]})]){]][[){[[])"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      ")}(}][])(]}])({"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "{({{{"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "[)}{[{}(({})]{[[(}[}}]"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "}())}{}[})[])]{)]}{](])["
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "()[)}])"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "{)]})}][})"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      ")]{}{}){"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "}}][)){[()["
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "[])[}"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "{({)]([}){{)"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "))][{}])]"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      ")({{({}(}"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      ")[))(]}}][{"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "([])){[)[)){])([}(}{"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "}}"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      ")}([()}]}{])](]({[{"
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "[}[[]][[})}()}{[)]][}})(["
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "{{{]))[}{)}[[][}}]})["
+    ],
+    "expected": 0
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      "[()}})(]{{[})]"
+    ],
+    "expected": 0
+  }
+]

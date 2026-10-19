@@ -1,0 +1,9 @@
+-- COUNT(*)는 그룹 안 행 수, AS는 별칭.
+SELECT NAME, COUNT(*) AS COUNT
+FROM ANIMAL_INS
+-- IS NOT NULL로 이름 없는 동물 제외.
+WHERE NAME IS NOT NULL
+GROUP BY NAME
+-- 두 번 이상 등장한 이름만 선택.
+HAVING COUNT(*) >= 2
+ORDER BY NAME

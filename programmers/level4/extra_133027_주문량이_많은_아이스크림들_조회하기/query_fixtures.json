@@ -1,0 +1,298 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "FIRST_HALF": {
+        "columns": [
+          "SHIPMENT_ID",
+          "FLAVOR",
+          "TOTAL_ORDER"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            101,
+            "chocolate",
+            3200
+          ],
+          [
+            102,
+            "vanilla",
+            2800
+          ],
+          [
+            103,
+            "mint_chocolate",
+            1700
+          ],
+          [
+            104,
+            "caramel",
+            2600
+          ],
+          [
+            105,
+            "white_chocolate",
+            3100
+          ],
+          [
+            106,
+            "peach",
+            2450
+          ],
+          [
+            107,
+            "watermelon",
+            2150
+          ],
+          [
+            108,
+            "mango",
+            2900
+          ],
+          [
+            109,
+            "strawberry",
+            3100
+          ],
+          [
+            110,
+            "melon",
+            3150
+          ],
+          [
+            111,
+            "orange",
+            2900
+          ],
+          [
+            112,
+            "pineapple",
+            2900
+          ]
+        ]
+      },
+      "JULY": {
+        "columns": [
+          "SHIPMENT_ID",
+          "FLAVOR",
+          "TOTAL_ORDER"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            101,
+            "chocolate",
+            520
+          ],
+          [
+            102,
+            "vanilla",
+            560
+          ],
+          [
+            103,
+            "mint_chocolate",
+            400
+          ],
+          [
+            104,
+            "caramel",
+            460
+          ],
+          [
+            105,
+            "white_chocolate",
+            350
+          ],
+          [
+            106,
+            "peach",
+            500
+          ],
+          [
+            107,
+            "watermelon",
+            780
+          ],
+          [
+            108,
+            "mango",
+            790
+          ],
+          [
+            109,
+            "strawberry",
+            520
+          ],
+          [
+            110,
+            "melon",
+            400
+          ],
+          [
+            111,
+            "orange",
+            250
+          ],
+          [
+            112,
+            "pineapple",
+            200
+          ],
+          [
+            208,
+            "mango",
+            110
+          ],
+          [
+            209,
+            "strawberry",
+            220
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "strawberry"
+      ],
+      [
+        "mango"
+      ],
+      [
+        "chocolate"
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/133027"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "FIRST_HALF": {
+        "columns": [
+          "SHIPMENT_ID",
+          "FLAVOR",
+          "TOTAL_ORDER"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": []
+      },
+      "JULY": {
+        "columns": [
+          "SHIPMENT_ID",
+          "FLAVOR",
+          "TOTAL_ORDER"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "FIRST_HALF": {
+        "columns": [
+          "SHIPMENT_ID",
+          "FLAVOR",
+          "TOTAL_ORDER"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            65,
+            "A",
+            10
+          ],
+          [
+            66,
+            "B",
+            20
+          ],
+          [
+            67,
+            "C",
+            30
+          ]
+        ]
+      },
+      "JULY": {
+        "columns": [
+          "SHIPMENT_ID",
+          "FLAVOR",
+          "TOTAL_ORDER"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            651,
+            "A",
+            10
+          ],
+          [
+            652,
+            "A",
+            10
+          ],
+          [
+            661,
+            "B",
+            20
+          ],
+          [
+            662,
+            "B",
+            20
+          ],
+          [
+            671,
+            "C",
+            30
+          ],
+          [
+            672,
+            "C",
+            30
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "C"
+      ],
+      [
+        "B"
+      ],
+      [
+        "A"
+      ]
+    ]
+  }
+]

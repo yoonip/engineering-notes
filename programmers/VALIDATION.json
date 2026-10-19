@@ -1,615 +1,3209 @@
 {
-  "checked_at": "2026-10-19",
-  "environment": {
-    "python": "3.13.14",
-    "platform": "Windows"
+  "checked_on": "2026-10-19",
+  "problems": 309,
+  "levels": {
+    "2": 155,
+    "3": 109,
+    "4": 45
   },
-  "scope": "풀이 100개의 구문·주석 형식·기준 커밋과의 실행 AST 비교, 변경한 8개와 정규식 2개의 로컬 회귀 검사",
-  "baseline_commit": "53310235e967ce59e009b495d5aad6ec8e8b63fb",
-  "solution_files": 100,
-  "syntax_checks_passed": 100,
-  "executable_ast_changed": [
-    468373,
-    131130,
-    87946,
-    67257,
-    42860,
-    42587,
-    17680,
-    12978
-  ],
-  "executable_ast_unchanged_count": 92,
-  "comment_style": "한국어 문제명·공식 링크·자료구조 선택 이유·시간과 추가 공간 비용",
-  "regressions": {
-    "command": "python -X utf8 -B -m unittest discover -s tests -v",
-    "tests_run": 24,
-    "failures": 0,
-    "errors": 0,
-    "status": "PASS",
-    "asserted_comparisons": 5103,
-    "references": {
-      "12978": "작은 그래프의 Floyd-Warshall",
-      "17680": "리스트 기반 LRU",
-      "67257": "반복 축약식 우선순위 계산",
-      "87946": "던전 순열 전수 조사",
-      "131130": "사이클 전체 수집·정렬",
-      "42587": "큐 전체 우선순위 검사",
-      "468373": "집합·간선 탐색 기반 모든 도달 상태",
-      "42860": "위치·방문집합 BFS 최단 이동",
-      "64065": "무작위 중첩집합을 생성한 원래 튜플",
-      "17686": "문자별 수동 HEAD/NUMBER 스캐너와 안정 정렬"
-    },
-    "joystick_exhaustive_binary_names": 510,
-    "synthetic_stress": {
-      "expression_terms": 3000,
-      "consecutive_A_characters": 100000,
-      "equal_priority_processes": 20000
-    },
-    "stress_note": "스트레스 입력은 구현의 반복 비용 확인용 합성 자료이며 일부는 공식 문제의 입력 상한보다 크다.",
-    "regex_note": "튜플·파일명 정규식은 기준 코드에서도 정상 패턴이었다. 패턴을 변경하지 않고 회귀 검사로 확인했다."
+  "submission_languages": {
+    "Python3": 224,
+    "MySQL": 75,
+    "C++": 10
   },
-  "algorithm_changes": [
+  "official_sources_checked": 309,
+  "python_runs": [
     {
-      "id": 12978,
-      "change": "전체 쌍 Floyd-Warshall 대신 출발점 1의 최소 힙 Dijkstra",
-      "before": "O(V³+E)",
-      "after": "O((V+E) log(V+E))"
+      "python": "3.12.14",
+      "problem_suites": 309,
+      "passed": 309,
+      "records": [
+        {
+          "id": 468379,
+          "script": "level2/001_468379_선인장_숨기기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 468377,
+          "script": "level2/002_468377_힌트_스테이지/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 468373,
+          "script": "level2/003_468373_바이러스_파이프/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 468372,
+          "script": "level2/004_468372_리프_노드_수_최대화/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 389480,
+          "script": "level2/005_389480_완전범죄/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 389479,
+          "script": "level2/006_389479_서버_증설_횟수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 388353,
+          "script": "level2/007_388353_지게차와_크레인/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 388352,
+          "script": "level2/008_388352_비밀_코드_해독/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 340212,
+          "script": "level2/009_340212_퍼즐_게임_챌린지/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 340211,
+          "script": "level2/010_340211_충돌위험_찾기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 301647,
+          "script": "level2/extra_301647_부모의_형질을_모두_가지는_대장균_찾기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 299310,
+          "script": "level2/extra_299310_연도별_대장균_크기의_편차_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 299308,
+          "script": "level2/extra_299308_분기별_분화된_대장균의_개체_수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 298518,
+          "script": "level2/extra_298518_특정_물고기를_잡은_총_수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 293260,
+          "script": "level2/extra_293260_월별_잡은_물고기_수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 293257,
+          "script": "level2/extra_293257_물고기_종류_별_잡은_수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 284531,
+          "script": "level2/extra_284531_노선별_평균_역_사이_거리_조회하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 284530,
+          "script": "level2/extra_284530_연도_별_평균_미세먼지_농도_조회하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 284527,
+          "script": "level2/extra_284527_조건에_맞는_사원_정보_조회하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 276034,
+          "script": "level2/extra_276034_조건에_맞는_개발자_찾기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 273711,
+          "script": "level2/extra_273711_업그레이드_된_아이템_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 273710,
+          "script": "level2/extra_273710_ROOT_아이템_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 273709,
+          "script": "level2/extra_273709_조건에_맞는_아이템들의_가격의_총합_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 258711,
+          "script": "level2/011_258711_도넛과_막대_그래프/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 250136,
+          "script": "level2/012_250136_석유_시추/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 250135,
+          "script": "level2/013_250135_아날로그_시계/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 181188,
+          "script": "level2/014_181188_요격_시스템/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 181187,
+          "script": "level2/015_181187_두_원_사이의_정수_쌍/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 178870,
+          "script": "level2/016_178870_연속된_부분_수열의_합/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 176962,
+          "script": "level2/017_176962_과제_진행하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 172927,
+          "script": "level2/018_172927_광물_캐기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 169199,
+          "script": "level2/019_169199_리코쳇_로봇/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 169198,
+          "script": "level2/020_169198_당구_연습/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 164672,
+          "script": "level2/extra_164672_조건에_부합하는_중고거래_상태_조회하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 160585,
+          "script": "level2/021_160585_혼자서_하는_틱택토/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 159993,
+          "script": "level2/022_159993_미로_탈출/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 157342,
+          "script": "level2/extra_157342_자동차_평균_대여_기간_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 155651,
+          "script": "level2/023_155651_호텔_대실/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 154540,
+          "script": "level2/024_154540_무인도_여행/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 154539,
+          "script": "level2/025_154539_뒤에_있는_큰_수_찾기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 154538,
+          "script": "level2/026_154538_숫자_변환하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 152996,
+          "script": "level2/027_152996_시소_짝꿍/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 151137,
+          "script": "level2/extra_151137_자동차_종류_별_특정_옵션이_포함된_자동차_수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 150369,
+          "script": "level2/028_150369_택배_배달과_수거하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 150368,
+          "script": "level2/029_150368_이모티콘_할인행사/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 148653,
+          "script": "level2/030_148653_마법의_엘리베이터/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 148652,
+          "script": "level2/031_148652_유사_칸토어_비트열/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 147354,
+          "script": "level2/032_147354_테이블_해시_함수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 144854,
+          "script": "level2/extra_144854_조건에_맞는_도서와_저자_리스트_출력하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 142085,
+          "script": "level2/033_142085_디펜스_게임/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 140107,
+          "script": "level2/034_140107_점_찍기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 138476,
+          "script": "level2/035_138476_귤_고르기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 135807,
+          "script": "level2/036_135807_숫자_카드_나누기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 134239,
+          "script": "level2/037_134239_우박수열_정적분/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 133026,
+          "script": "level2/extra_133026_성분으로_구분한_아이스크림_총_주문량/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 132265,
+          "script": "level2/038_132265_롤케이크_자르기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 132202,
+          "script": "level2/extra_132202_진료과별_총_예약_횟수_출력하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131704,
+          "script": "level2/039_131704_택배상자/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131701,
+          "script": "level2/040_131701_연속_부분_수열_합의_개수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131536,
+          "script": "level2/extra_131536_재구매가_일어난_상품과_회원_리스트_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131533,
+          "script": "level2/extra_131533_상품_별_오프라인_매출_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131530,
+          "script": "level2/extra_131530_가격대_별_상품_개수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131529,
+          "script": "level2/extra_131529_카테고리_별_상품_개수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131130,
+          "script": "level2/041_131130_혼자_놀기의_달인/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131127,
+          "script": "level2/042_131127_할인_행사/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131120,
+          "script": "level2/extra_131120_3월에_태어난_여성_회원_목록_출력하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131115,
+          "script": "level2/extra_131115_가격이_제일_비싼_식품의_정보_출력하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 118667,
+          "script": "level2/043_118667_두_큐_합_같게_만들기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92342,
+          "script": "level2/044_92342_양궁대회/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92341,
+          "script": "level2/045_92341_주차_요금_계산/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92335,
+          "script": "level2/046_92335_k진수에서_소수_개수_구하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 87946,
+          "script": "level2/047_87946_피로도/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 87390,
+          "script": "level2/048_87390_n제곱_배열_자르기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 87377,
+          "script": "level2/049_87377_교점에_별_만들기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 86971,
+          "script": "level2/050_86971_전력망을_둘로_나누기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 86052,
+          "script": "level2/051_86052_빛의_경로_사이클/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 84512,
+          "script": "level2/052_84512_모음사전/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 81302,
+          "script": "level2/053_81302_거리두기_확인하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 77885,
+          "script": "level2/054_77885_2개_이하로_다른_비트/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 77485,
+          "script": "level2/055_77485_행렬_테두리_회전하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 76502,
+          "script": "level2/056_76502_괄호_회전하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72412,
+          "script": "level2/057_72412_순위_검색/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72411,
+          "script": "level2/058_72411_메뉴_리뉴얼/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 70129,
+          "script": "level2/059_70129_이진_변환_반복하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 68936,
+          "script": "level2/060_68936_쿼드압축_후_개수_세기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 68645,
+          "script": "level2/061_68645_삼각_달팽이/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 67257,
+          "script": "level2/062_67257_수식_최대화/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 64065,
+          "script": "level2/063_64065_튜플/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 62048,
+          "script": "level2/064_62048_멀쩡한_사각형/verify.py",
+          "passed": true
+        },
+        {
+          "id": 60058,
+          "script": "level2/065_60058_괄호_변환/verify.py",
+          "passed": true
+        },
+        {
+          "id": 60057,
+          "script": "level2/066_60057_문자열_압축/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59414,
+          "script": "level2/extra_59414_DATETIME에서_DATE로_형_변환/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59412,
+          "script": "level2/extra_59412_입양_시각_구하기(1)/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59410,
+          "script": "level2/extra_59410_NULL_처리하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59409,
+          "script": "level2/extra_59409_중성화_여부_파악하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59408,
+          "script": "level2/extra_59408_중복_제거하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59406,
+          "script": "level2/extra_59406_동물_수_구하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59047,
+          "script": "level2/extra_59047_이름에_el이_들어가는_동물_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59046,
+          "script": "level2/extra_59046_루시와_엘라_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59041,
+          "script": "level2/extra_59041_동명_동물_수_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59040,
+          "script": "level2/extra_59040_고양이와_개는_몇_마리_있을까/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59038,
+          "script": "level2/extra_59038_최솟값_구하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 49994,
+          "script": "level2/067_49994_방문_길이/verify.py",
+          "passed": true
+        },
+        {
+          "id": 49993,
+          "script": "level2/068_49993_스킬트리/verify.py",
+          "passed": true
+        },
+        {
+          "id": 43165,
+          "script": "level2/069_43165_타겟_넘버/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42890,
+          "script": "level2/070_42890_후보키/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42888,
+          "script": "level2/071_42888_오픈채팅방/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42885,
+          "script": "level2/072_42885_구명보트/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42883,
+          "script": "level2/073_42883_큰_수_만들기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42860,
+          "script": "level2/074_42860_조이스틱/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42842,
+          "script": "level2/075_42842_카펫/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42839,
+          "script": "level2/076_42839_소수_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42747,
+          "script": "level2/077_42747_H-Index/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42746,
+          "script": "level2/078_42746_가장_큰_수/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42626,
+          "script": "level2/079_42626_더_맵게/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42587,
+          "script": "level2/080_42587_프로세스/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42586,
+          "script": "level2/081_42586_기능개발/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42584,
+          "script": "level2/082_42584_주식가격/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42583,
+          "script": "level2/083_42583_다리를_지나는_트럭/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42578,
+          "script": "level2/084_42578_의상/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42577,
+          "script": "level2/085_42577_전화번호_목록/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17687,
+          "script": "level2/086_17687_n진수_게임/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17686,
+          "script": "level2/087_17686_파일명_정렬/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17684,
+          "script": "level2/088_17684_압축/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17683,
+          "script": "level2/089_17683_방금그곡/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17680,
+          "script": "level2/090_17680_캐시/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17679,
+          "script": "level2/091_17679_프렌즈4블록/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17677,
+          "script": "level2/092_17677_뉴스_클러스터링/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12985,
+          "script": "level2/093_12985_예상_대진표/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12981,
+          "script": "level2/094_12981_영어_끝말잇기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12980,
+          "script": "level2/095_12980_점프와_순간_이동/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12978,
+          "script": "level2/096_12978_배달/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12973,
+          "script": "level2/097_12973_짝지어_제거하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12953,
+          "script": "level2/098_12953_N개의_최소공배수/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12952,
+          "script": "level2/099_12952_N-Queen/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12951,
+          "script": "level2/100_12951_JadenCase_문자열_만들기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12949,
+          "script": "level2/extra_12949_행렬의_곱셈/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12946,
+          "script": "level2/extra_12946_하노이의_탑/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12945,
+          "script": "level2/extra_12945_피보나치_수/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12941,
+          "script": "level2/extra_12941_최솟값_만들기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12939,
+          "script": "level2/extra_12939_최댓값과_최솟값/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12936,
+          "script": "level2/extra_12936_줄_서는_방법/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12924,
+          "script": "level2/extra_12924_숫자의_표현/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12923,
+          "script": "level2/extra_12923_숫자_블록/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12914,
+          "script": "level2/extra_12914_멀리_뛰기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12913,
+          "script": "level2/extra_12913_땅따먹기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12911,
+          "script": "level2/extra_12911_다음_큰_숫자/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12909,
+          "script": "level2/extra_12909_올바른_괄호/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12905,
+          "script": "level2/extra_12905_가장_큰_정사각형_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12902,
+          "script": "level2/extra_12902_3_x_n_타일링/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12900,
+          "script": "level2/extra_12900_2_x_n_타일링/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12899,
+          "script": "level2/extra_12899_124_나라의_숫자/verify.py",
+          "passed": true
+        },
+        {
+          "id": 1844,
+          "script": "level2/extra_1844_게임_맵_최단거리/verify.py",
+          "passed": true
+        },
+        {
+          "id": 1835,
+          "script": "level2/extra_1835_단체사진_찍기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 1829,
+          "script": "level2/extra_1829_카카오프렌즈_컬러링북/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468381,
+          "script": "level3/001_468381_기차_선로/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468380,
+          "script": "level3/002_468380_제곱_개수_배열/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468378,
+          "script": "level3/003_468378_보물_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468376,
+          "script": "level3/004_468376_최고_속도/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468375,
+          "script": "level3/005_468375_발전소_회로_복구/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468374,
+          "script": "level3/006_468374_카카오_앱_정리하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 451808,
+          "script": "level3/007_451808_숫자_야구/verify.py",
+          "passed": true
+        },
+        {
+          "id": 389481,
+          "script": "level3/008_389481_봉인된_주문/verify.py",
+          "passed": true
+        },
+        {
+          "id": 388354,
+          "script": "level3/009_388354_홀짝트리/verify.py",
+          "passed": true
+        },
+        {
+          "id": 340210,
+          "script": "level3/010_340210_[PCCP_기출문제]_4번___수식_복원하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 301649,
+          "script": "level3/extra_301649_대장균의_크기에_따라_분류하기_2/verify.py",
+          "passed": true
+        },
+        {
+          "id": 299307,
+          "script": "level3/extra_299307_대장균의_크기에_따라_분류하기_1/verify.py",
+          "passed": true
+        },
+        {
+          "id": 299305,
+          "script": "level3/extra_299305_대장균들의_자식의_수_구하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 298519,
+          "script": "level3/extra_298519_특정_조건을_만족하는_물고기별_수와_최대_길이_구하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 293261,
+          "script": "level3/extra_293261_물고기_종류_별_대어_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 284529,
+          "script": "level3/extra_284529_부서별_평균_연봉_조회하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 273712,
+          "script": "level3/extra_273712_업그레이드_할_수_없는_아이템_구하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 258709,
+          "script": "level3/011_258709_주사위_고르기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 258707,
+          "script": "level3/012_258707_n_+_1_카드게임/verify.py",
+          "passed": true
+        },
+        {
+          "id": 258705,
+          "script": "level3/013_258705_산_모양_타일링/verify.py",
+          "passed": true
+        },
+        {
+          "id": 250134,
+          "script": "level3/014_250134_[PCCP_기출문제]_4번___수레_움직이기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 214289,
+          "script": "level3/015_214289_에어컨/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 214288,
+          "script": "level3/016_214288_상담원_인원/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 181186,
+          "script": "level3/017_181186_아방가르드_타일링/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 164671,
+          "script": "level3/extra_164671_조회수가_가장_많은_중고거래_게시판의_첨부파일_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 164670,
+          "script": "level3/extra_164670_조건에_맞는_사용자_정보_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 164668,
+          "script": "level3/extra_164668_조건에_맞는_사용자와_총_거래금액_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 161988,
+          "script": "level3/018_161988_연속_펄스_부분_수열의_합/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 157341,
+          "script": "level3/extra_157341_대여_기록이_존재하는_자동차_리스트_구하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 157340,
+          "script": "level3/extra_157340_자동차_대여_기록에서_대여중___대여_가능_여부_구분하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 152995,
+          "script": "level3/019_152995_인사고과/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 151139,
+          "script": "level3/extra_151139_대여_횟수가_많은_자동차들의_월별_대여_횟수_구하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 150367,
+          "script": "level3/020_150367_표현_가능한_이진트리/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 150366,
+          "script": "level3/021_150366_표_병합/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 150365,
+          "script": "level3/022_150365_미로_탈출_명령어/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 144855,
+          "script": "level3/extra_144855_카테고리_별_도서_판매량_집계하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 138475,
+          "script": "level3/023_138475_억억단을_외우자/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 136797,
+          "script": "level3/024_136797_숫자_타자_대회/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 133500,
+          "script": "level3/025_133500_등대/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 132266,
+          "script": "level3/026_132266_부대복귀/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131703,
+          "script": "level3/027_131703_2차원_동전_뒤집기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131702,
+          "script": "level3/028_131702_고고학_최고의_발견/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131129,
+          "script": "level3/029_131129_카운트_다운/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131123,
+          "script": "level3/extra_131123_즐겨찾기가_가장_많은_식당_정보_출력하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131113,
+          "script": "level3/extra_131113_조건별로_분류하여_주문상태_출력하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 118669,
+          "script": "level3/030_118669_등산코스_정하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 118668,
+          "script": "level3/031_118668_코딩_테스트_공부/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92345,
+          "script": "level3/032_92345_사라지는_발판/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92344,
+          "script": "level3/033_92344_파괴되지_않은_건물/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92343,
+          "script": "level3/034_92343_양과_늑대/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 87694,
+          "script": "level3/035_87694_아이템_줍기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 87391,
+          "script": "level3/036_87391_공_이동_시뮬레이션/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 86053,
+          "script": "level3/037_86053_금과_은_운반하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 84021,
+          "script": "level3/038_84021_퍼즐_조각_채우기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 81303,
+          "script": "level3/039_81303_표_편집/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 77886,
+          "script": "level3/040_77886_110_옮기기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 77487,
+          "script": "level3/extra_77487_헤비_유저가_소유한_장소/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 77486,
+          "script": "level3/041_77486_다단계_칫솔_판매/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 76503,
+          "script": "level3/042_76503_모두_0으로_만들기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72415,
+          "script": "level3/043_72415_카드_짝_맞추기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72414,
+          "script": "level3/044_72414_광고_삽입/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72413,
+          "script": "level3/045_72413_합승_택시_요금/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 70130,
+          "script": "level3/046_70130_스타_수열/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 68646,
+          "script": "level3/047_68646_풍선_터트리기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 67259,
+          "script": "level3/048_67259_경주로_건설/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 67258,
+          "script": "level3/049_67258_보석_쇼핑/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 64064,
+          "script": "level3/050_64064_불량_사용자/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 64062,
+          "script": "level3/051_64062_징검다리_건너기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 60063,
+          "script": "level3/052_60063_블록_이동하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 60062,
+          "script": "level3/053_60062_외벽_점검/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 60061,
+          "script": "level3/054_60061_기둥과_보_설치/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 60059,
+          "script": "level3/055_60059_자물쇠와_열쇠/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 59411,
+          "script": "level3/extra_59411_오랜_기간_보호한_동물(2)/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 59044,
+          "script": "level3/extra_59044_오랜_기간_보호한_동물(1)/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 59043,
+          "script": "level3/extra_59043_있었는데요_없었습니다/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 59042,
+          "script": "level3/extra_59042_없어진_기록_찾기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 49191,
+          "script": "level3/056_49191_순위/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 49189,
+          "script": "level3/057_49189_가장_먼_노드/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43238,
+          "script": "level3/058_43238_입국심사/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43164,
+          "script": "level3/059_43164_여행경로/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43163,
+          "script": "level3/060_43163_단어_변환/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43162,
+          "script": "level3/061_43162_네트워크/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43105,
+          "script": "level3/062_43105_정수_삼각형/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42898,
+          "script": "level3/063_42898_등굣길/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42895,
+          "script": "level3/064_42895_N으로_표현/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42893,
+          "script": "level3/065_42893_매칭_점수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42892,
+          "script": "level3/066_42892_길_찾기_게임/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42884,
+          "script": "level3/067_42884_단속카메라/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42861,
+          "script": "level3/068_42861_섬_연결하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42628,
+          "script": "level3/069_42628_이중우선순위큐/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42627,
+          "script": "level3/070_42627_디스크_컨트롤러/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42579,
+          "script": "level3/071_42579_베스트앨범/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 17678,
+          "script": "level3/072_17678_[1차]_셔틀버스/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 17676,
+          "script": "level3/073_17676_[1차]_추석_트래픽/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12987,
+          "script": "level3/074_12987_숫자_게임/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12979,
+          "script": "level3/075_12979_기지국_설치/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12971,
+          "script": "level3/076_12971_스티커_모으기(2)/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12942,
+          "script": "level3/077_12942_최적의_행렬_곱셈/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12938,
+          "script": "level3/078_12938_최고의_집합/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12927,
+          "script": "level3/079_12927_야근_지수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12920,
+          "script": "level3/080_12920_선입_선출_스케줄링/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12907,
+          "script": "level3/081_12907_거스름돈/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12904,
+          "script": "level3/082_12904_가장_긴_팰린드롬/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1838,
+          "script": "level3/extra_1838_몸짱_트레이너_라이언의_고민/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1837,
+          "script": "level3/extra_1837_GPS/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1836,
+          "script": "level3/extra_1836_리틀_프렌즈_사천성/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1833,
+          "script": "level3/extra_1833_캠핑/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1832,
+          "script": "level3/extra_1832_보행자_천국/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1830,
+          "script": "level3/extra_1830_브라이언의_고민/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 389630,
+          "script": "level4/extra_389630_격자_뒤집기_미로/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 389629,
+          "script": "level4/extra_389629_가장_큰_삼각형_덩어리/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 301650,
+          "script": "level4/extra_301650_특정_세대의_대장균_찾기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 284528,
+          "script": "level4/extra_284528_연간_평가점수에_해당하는_평가_등급_및_성과금_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 276036,
+          "script": "level4/extra_276036_언어별_개발자_분류하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 276035,
+          "script": "level4/extra_276035_FrontEnd_개발자_찾기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 214290,
+          "script": "level4/extra_214290_경사로의_개수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 157339,
+          "script": "level4/extra_157339_특정_기간동안_대여_가능한_자동차들의_대여비용_구하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 151141,
+          "script": "level4/extra_151141_자동차_대여_기록_별_대여_금액_구하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 150364,
+          "script": "level4/extra_150364_1,2,3_떨어트리기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 144856,
+          "script": "level4/extra_144856_저자_별_카테고리_별_매출액_집계하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 140105,
+          "script": "level4/extra_140105_쌍둥이_빌딩_숲/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 133027,
+          "script": "level4/extra_133027_주문량이_많은_아이스크림들_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 132204,
+          "script": "level4/extra_132204_취소되지_않은_진료_예약_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131537,
+          "script": "level4/extra_131537_오프라인_온라인_판매_데이터_통합하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131532,
+          "script": "level4/extra_131532_년,_월,_성별_별_상품_구매_회원_수_구하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131124,
+          "script": "level4/extra_131124_그룹별_조건에_맞는_식당_목록_출력하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131118,
+          "script": "level4/extra_131118_서울에_위치한_식당_목록_출력하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131117,
+          "script": "level4/extra_131117_5월_식품들의_총매출_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131116,
+          "script": "level4/extra_131116_식품분류별_가장_비싼_식품의_정보_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 118670,
+          "script": "level4/extra_118670_행렬과_연산/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 86054,
+          "script": "level4/extra_86054_안티세포/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 81304,
+          "script": "level4/extra_81304_미로_탈출/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72416,
+          "script": "level4/extra_72416_매출_하락_최소화/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 68937,
+          "script": "level4/extra_68937_트리_트리오_중간값/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 68647,
+          "script": "level4/extra_68647_짝수_행_세기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 67260,
+          "script": "level4/extra_67260_동굴_탐험/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 64063,
+          "script": "level4/extra_64063_호텔_방_배정/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 62284,
+          "script": "level4/extra_62284_우유와_요거트가_담긴_장바구니/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 62050,
+          "script": "level4/extra_62050_지형_이동/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 60060,
+          "script": "level4/extra_60060_가사_검색/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 59413,
+          "script": "level4/extra_59413_입양_시각_구하기(2)/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 59045,
+          "script": "level4/extra_59045_보호소에서_중성화한_동물/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 49995,
+          "script": "level4/extra_49995_쿠키_구입/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43236,
+          "script": "level4/extra_43236_징검다리/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42897,
+          "script": "level4/extra_42897_도둑질/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42894,
+          "script": "level4/extra_42894_블록_게임/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42891,
+          "script": "level4/extra_42891_무지의_먹방_라이브/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 17685,
+          "script": "level4/extra_17685_[3차]_자동완성/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12984,
+          "script": "level4/extra_12984_지형_편집/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12983,
+          "script": "level4/extra_12983_단어_퍼즐/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12929,
+          "script": "level4/extra_12929_올바른_괄호의_갯수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1843,
+          "script": "level4/extra_1843_사칙연산/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1839,
+          "script": "level4/extra_1839_튜브의_소개팅/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1831,
+          "script": "level4/extra_1831_4단_고음/test_solution.py",
+          "passed": true
+        }
+      ]
     },
     {
-      "id": 17680,
-      "change": "deque 검색·중간 삭제 대신 OrderedDict LRU",
-      "before": "O(NC)",
-      "after": "문자 정규화를 제외한 평균 O(N)"
-    },
-    {
-      "id": 67257,
-      "change": "연산자 반복 검색·중간 삭제 대신 단계별 선형 접기",
-      "before": "O(T²)",
-      "after": "O(T)"
-    },
-    {
-      "id": 87946,
-      "change": "모든 순열 대신 방문집합 비트마스크 DP",
-      "before": "O(N!·N)",
-      "after": "O(N·2^N)"
-    },
-    {
-      "id": 131130,
-      "change": "사이클 전체 정렬 대신 상위 두 크기 갱신",
-      "before": "O(N log N)",
-      "after": "O(N)"
-    },
-    {
-      "id": 42587,
-      "change": "우선순위 Counter와 현재 최댓값 유지",
-      "before": "O(N²)",
-      "after": "P≤9에서 O(NP)=O(N)"
-    },
-    {
-      "id": 468373,
-      "change": "감염집합별 최대 남은 횟수를 기록해 지배되는 DFS 상태 생략",
-      "before": "중복 상태를 포함한 선택 순서 탐색",
-      "after": "실제 확장 상태 S에 대해 O(N+E+SG); 최악 지수적 상태 수는 남는다"
-    },
-    {
-      "id": 42860,
-      "change": "같은 연속 A 구간의 반복 탐색 제거",
-      "before": "O(N²)",
-      "after": "O(N)"
+      "python": "3.13.14",
+      "problem_suites": 309,
+      "passed": 309,
+      "records": [
+        {
+          "id": 468379,
+          "script": "level2/001_468379_선인장_숨기기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 468377,
+          "script": "level2/002_468377_힌트_스테이지/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 468373,
+          "script": "level2/003_468373_바이러스_파이프/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 468372,
+          "script": "level2/004_468372_리프_노드_수_최대화/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 389480,
+          "script": "level2/005_389480_완전범죄/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 389479,
+          "script": "level2/006_389479_서버_증설_횟수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 388353,
+          "script": "level2/007_388353_지게차와_크레인/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 388352,
+          "script": "level2/008_388352_비밀_코드_해독/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 340212,
+          "script": "level2/009_340212_퍼즐_게임_챌린지/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 340211,
+          "script": "level2/010_340211_충돌위험_찾기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 301647,
+          "script": "level2/extra_301647_부모의_형질을_모두_가지는_대장균_찾기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 299310,
+          "script": "level2/extra_299310_연도별_대장균_크기의_편차_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 299308,
+          "script": "level2/extra_299308_분기별_분화된_대장균의_개체_수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 298518,
+          "script": "level2/extra_298518_특정_물고기를_잡은_총_수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 293260,
+          "script": "level2/extra_293260_월별_잡은_물고기_수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 293257,
+          "script": "level2/extra_293257_물고기_종류_별_잡은_수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 284531,
+          "script": "level2/extra_284531_노선별_평균_역_사이_거리_조회하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 284530,
+          "script": "level2/extra_284530_연도_별_평균_미세먼지_농도_조회하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 284527,
+          "script": "level2/extra_284527_조건에_맞는_사원_정보_조회하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 276034,
+          "script": "level2/extra_276034_조건에_맞는_개발자_찾기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 273711,
+          "script": "level2/extra_273711_업그레이드_된_아이템_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 273710,
+          "script": "level2/extra_273710_ROOT_아이템_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 273709,
+          "script": "level2/extra_273709_조건에_맞는_아이템들의_가격의_총합_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 258711,
+          "script": "level2/011_258711_도넛과_막대_그래프/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 250136,
+          "script": "level2/012_250136_석유_시추/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 250135,
+          "script": "level2/013_250135_아날로그_시계/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 181188,
+          "script": "level2/014_181188_요격_시스템/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 181187,
+          "script": "level2/015_181187_두_원_사이의_정수_쌍/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 178870,
+          "script": "level2/016_178870_연속된_부분_수열의_합/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 176962,
+          "script": "level2/017_176962_과제_진행하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 172927,
+          "script": "level2/018_172927_광물_캐기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 169199,
+          "script": "level2/019_169199_리코쳇_로봇/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 169198,
+          "script": "level2/020_169198_당구_연습/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 164672,
+          "script": "level2/extra_164672_조건에_부합하는_중고거래_상태_조회하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 160585,
+          "script": "level2/021_160585_혼자서_하는_틱택토/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 159993,
+          "script": "level2/022_159993_미로_탈출/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 157342,
+          "script": "level2/extra_157342_자동차_평균_대여_기간_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 155651,
+          "script": "level2/023_155651_호텔_대실/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 154540,
+          "script": "level2/024_154540_무인도_여행/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 154539,
+          "script": "level2/025_154539_뒤에_있는_큰_수_찾기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 154538,
+          "script": "level2/026_154538_숫자_변환하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 152996,
+          "script": "level2/027_152996_시소_짝꿍/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 151137,
+          "script": "level2/extra_151137_자동차_종류_별_특정_옵션이_포함된_자동차_수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 150369,
+          "script": "level2/028_150369_택배_배달과_수거하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 150368,
+          "script": "level2/029_150368_이모티콘_할인행사/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 148653,
+          "script": "level2/030_148653_마법의_엘리베이터/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 148652,
+          "script": "level2/031_148652_유사_칸토어_비트열/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 147354,
+          "script": "level2/032_147354_테이블_해시_함수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 144854,
+          "script": "level2/extra_144854_조건에_맞는_도서와_저자_리스트_출력하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 142085,
+          "script": "level2/033_142085_디펜스_게임/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 140107,
+          "script": "level2/034_140107_점_찍기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 138476,
+          "script": "level2/035_138476_귤_고르기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 135807,
+          "script": "level2/036_135807_숫자_카드_나누기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 134239,
+          "script": "level2/037_134239_우박수열_정적분/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 133026,
+          "script": "level2/extra_133026_성분으로_구분한_아이스크림_총_주문량/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 132265,
+          "script": "level2/038_132265_롤케이크_자르기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 132202,
+          "script": "level2/extra_132202_진료과별_총_예약_횟수_출력하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131704,
+          "script": "level2/039_131704_택배상자/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131701,
+          "script": "level2/040_131701_연속_부분_수열_합의_개수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131536,
+          "script": "level2/extra_131536_재구매가_일어난_상품과_회원_리스트_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131533,
+          "script": "level2/extra_131533_상품_별_오프라인_매출_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131530,
+          "script": "level2/extra_131530_가격대_별_상품_개수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131529,
+          "script": "level2/extra_131529_카테고리_별_상품_개수_구하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131130,
+          "script": "level2/041_131130_혼자_놀기의_달인/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131127,
+          "script": "level2/042_131127_할인_행사/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131120,
+          "script": "level2/extra_131120_3월에_태어난_여성_회원_목록_출력하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 131115,
+          "script": "level2/extra_131115_가격이_제일_비싼_식품의_정보_출력하기/test_query.py",
+          "passed": true
+        },
+        {
+          "id": 118667,
+          "script": "level2/043_118667_두_큐_합_같게_만들기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92342,
+          "script": "level2/044_92342_양궁대회/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92341,
+          "script": "level2/045_92341_주차_요금_계산/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92335,
+          "script": "level2/046_92335_k진수에서_소수_개수_구하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 87946,
+          "script": "level2/047_87946_피로도/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 87390,
+          "script": "level2/048_87390_n제곱_배열_자르기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 87377,
+          "script": "level2/049_87377_교점에_별_만들기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 86971,
+          "script": "level2/050_86971_전력망을_둘로_나누기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 86052,
+          "script": "level2/051_86052_빛의_경로_사이클/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 84512,
+          "script": "level2/052_84512_모음사전/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 81302,
+          "script": "level2/053_81302_거리두기_확인하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 77885,
+          "script": "level2/054_77885_2개_이하로_다른_비트/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 77485,
+          "script": "level2/055_77485_행렬_테두리_회전하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 76502,
+          "script": "level2/056_76502_괄호_회전하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72412,
+          "script": "level2/057_72412_순위_검색/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72411,
+          "script": "level2/058_72411_메뉴_리뉴얼/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 70129,
+          "script": "level2/059_70129_이진_변환_반복하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 68936,
+          "script": "level2/060_68936_쿼드압축_후_개수_세기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 68645,
+          "script": "level2/061_68645_삼각_달팽이/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 67257,
+          "script": "level2/062_67257_수식_최대화/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 64065,
+          "script": "level2/063_64065_튜플/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 62048,
+          "script": "level2/064_62048_멀쩡한_사각형/verify.py",
+          "passed": true
+        },
+        {
+          "id": 60058,
+          "script": "level2/065_60058_괄호_변환/verify.py",
+          "passed": true
+        },
+        {
+          "id": 60057,
+          "script": "level2/066_60057_문자열_압축/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59414,
+          "script": "level2/extra_59414_DATETIME에서_DATE로_형_변환/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59412,
+          "script": "level2/extra_59412_입양_시각_구하기(1)/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59410,
+          "script": "level2/extra_59410_NULL_처리하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59409,
+          "script": "level2/extra_59409_중성화_여부_파악하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59408,
+          "script": "level2/extra_59408_중복_제거하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59406,
+          "script": "level2/extra_59406_동물_수_구하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59047,
+          "script": "level2/extra_59047_이름에_el이_들어가는_동물_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59046,
+          "script": "level2/extra_59046_루시와_엘라_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59041,
+          "script": "level2/extra_59041_동명_동물_수_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59040,
+          "script": "level2/extra_59040_고양이와_개는_몇_마리_있을까/verify.py",
+          "passed": true
+        },
+        {
+          "id": 59038,
+          "script": "level2/extra_59038_최솟값_구하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 49994,
+          "script": "level2/067_49994_방문_길이/verify.py",
+          "passed": true
+        },
+        {
+          "id": 49993,
+          "script": "level2/068_49993_스킬트리/verify.py",
+          "passed": true
+        },
+        {
+          "id": 43165,
+          "script": "level2/069_43165_타겟_넘버/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42890,
+          "script": "level2/070_42890_후보키/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42888,
+          "script": "level2/071_42888_오픈채팅방/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42885,
+          "script": "level2/072_42885_구명보트/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42883,
+          "script": "level2/073_42883_큰_수_만들기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42860,
+          "script": "level2/074_42860_조이스틱/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42842,
+          "script": "level2/075_42842_카펫/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42839,
+          "script": "level2/076_42839_소수_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42747,
+          "script": "level2/077_42747_H-Index/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42746,
+          "script": "level2/078_42746_가장_큰_수/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42626,
+          "script": "level2/079_42626_더_맵게/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42587,
+          "script": "level2/080_42587_프로세스/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42586,
+          "script": "level2/081_42586_기능개발/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42584,
+          "script": "level2/082_42584_주식가격/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42583,
+          "script": "level2/083_42583_다리를_지나는_트럭/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42578,
+          "script": "level2/084_42578_의상/verify.py",
+          "passed": true
+        },
+        {
+          "id": 42577,
+          "script": "level2/085_42577_전화번호_목록/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17687,
+          "script": "level2/086_17687_n진수_게임/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17686,
+          "script": "level2/087_17686_파일명_정렬/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17684,
+          "script": "level2/088_17684_압축/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17683,
+          "script": "level2/089_17683_방금그곡/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17680,
+          "script": "level2/090_17680_캐시/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17679,
+          "script": "level2/091_17679_프렌즈4블록/verify.py",
+          "passed": true
+        },
+        {
+          "id": 17677,
+          "script": "level2/092_17677_뉴스_클러스터링/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12985,
+          "script": "level2/093_12985_예상_대진표/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12981,
+          "script": "level2/094_12981_영어_끝말잇기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12980,
+          "script": "level2/095_12980_점프와_순간_이동/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12978,
+          "script": "level2/096_12978_배달/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12973,
+          "script": "level2/097_12973_짝지어_제거하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12953,
+          "script": "level2/098_12953_N개의_최소공배수/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12952,
+          "script": "level2/099_12952_N-Queen/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12951,
+          "script": "level2/100_12951_JadenCase_문자열_만들기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12949,
+          "script": "level2/extra_12949_행렬의_곱셈/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12946,
+          "script": "level2/extra_12946_하노이의_탑/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12945,
+          "script": "level2/extra_12945_피보나치_수/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12941,
+          "script": "level2/extra_12941_최솟값_만들기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12939,
+          "script": "level2/extra_12939_최댓값과_최솟값/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12936,
+          "script": "level2/extra_12936_줄_서는_방법/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12924,
+          "script": "level2/extra_12924_숫자의_표현/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12923,
+          "script": "level2/extra_12923_숫자_블록/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12914,
+          "script": "level2/extra_12914_멀리_뛰기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12913,
+          "script": "level2/extra_12913_땅따먹기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12911,
+          "script": "level2/extra_12911_다음_큰_숫자/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12909,
+          "script": "level2/extra_12909_올바른_괄호/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12905,
+          "script": "level2/extra_12905_가장_큰_정사각형_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12902,
+          "script": "level2/extra_12902_3_x_n_타일링/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12900,
+          "script": "level2/extra_12900_2_x_n_타일링/verify.py",
+          "passed": true
+        },
+        {
+          "id": 12899,
+          "script": "level2/extra_12899_124_나라의_숫자/verify.py",
+          "passed": true
+        },
+        {
+          "id": 1844,
+          "script": "level2/extra_1844_게임_맵_최단거리/verify.py",
+          "passed": true
+        },
+        {
+          "id": 1835,
+          "script": "level2/extra_1835_단체사진_찍기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 1829,
+          "script": "level2/extra_1829_카카오프렌즈_컬러링북/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468381,
+          "script": "level3/001_468381_기차_선로/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468380,
+          "script": "level3/002_468380_제곱_개수_배열/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468378,
+          "script": "level3/003_468378_보물_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468376,
+          "script": "level3/004_468376_최고_속도/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468375,
+          "script": "level3/005_468375_발전소_회로_복구/verify.py",
+          "passed": true
+        },
+        {
+          "id": 468374,
+          "script": "level3/006_468374_카카오_앱_정리하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 451808,
+          "script": "level3/007_451808_숫자_야구/verify.py",
+          "passed": true
+        },
+        {
+          "id": 389481,
+          "script": "level3/008_389481_봉인된_주문/verify.py",
+          "passed": true
+        },
+        {
+          "id": 388354,
+          "script": "level3/009_388354_홀짝트리/verify.py",
+          "passed": true
+        },
+        {
+          "id": 340210,
+          "script": "level3/010_340210_[PCCP_기출문제]_4번___수식_복원하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 301649,
+          "script": "level3/extra_301649_대장균의_크기에_따라_분류하기_2/verify.py",
+          "passed": true
+        },
+        {
+          "id": 299307,
+          "script": "level3/extra_299307_대장균의_크기에_따라_분류하기_1/verify.py",
+          "passed": true
+        },
+        {
+          "id": 299305,
+          "script": "level3/extra_299305_대장균들의_자식의_수_구하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 298519,
+          "script": "level3/extra_298519_특정_조건을_만족하는_물고기별_수와_최대_길이_구하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 293261,
+          "script": "level3/extra_293261_물고기_종류_별_대어_찾기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 284529,
+          "script": "level3/extra_284529_부서별_평균_연봉_조회하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 273712,
+          "script": "level3/extra_273712_업그레이드_할_수_없는_아이템_구하기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 258709,
+          "script": "level3/011_258709_주사위_고르기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 258707,
+          "script": "level3/012_258707_n_+_1_카드게임/verify.py",
+          "passed": true
+        },
+        {
+          "id": 258705,
+          "script": "level3/013_258705_산_모양_타일링/verify.py",
+          "passed": true
+        },
+        {
+          "id": 250134,
+          "script": "level3/014_250134_[PCCP_기출문제]_4번___수레_움직이기/verify.py",
+          "passed": true
+        },
+        {
+          "id": 214289,
+          "script": "level3/015_214289_에어컨/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 214288,
+          "script": "level3/016_214288_상담원_인원/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 181186,
+          "script": "level3/017_181186_아방가르드_타일링/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 164671,
+          "script": "level3/extra_164671_조회수가_가장_많은_중고거래_게시판의_첨부파일_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 164670,
+          "script": "level3/extra_164670_조건에_맞는_사용자_정보_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 164668,
+          "script": "level3/extra_164668_조건에_맞는_사용자와_총_거래금액_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 161988,
+          "script": "level3/018_161988_연속_펄스_부분_수열의_합/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 157341,
+          "script": "level3/extra_157341_대여_기록이_존재하는_자동차_리스트_구하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 157340,
+          "script": "level3/extra_157340_자동차_대여_기록에서_대여중___대여_가능_여부_구분하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 152995,
+          "script": "level3/019_152995_인사고과/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 151139,
+          "script": "level3/extra_151139_대여_횟수가_많은_자동차들의_월별_대여_횟수_구하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 150367,
+          "script": "level3/020_150367_표현_가능한_이진트리/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 150366,
+          "script": "level3/021_150366_표_병합/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 150365,
+          "script": "level3/022_150365_미로_탈출_명령어/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 144855,
+          "script": "level3/extra_144855_카테고리_별_도서_판매량_집계하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 138475,
+          "script": "level3/023_138475_억억단을_외우자/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 136797,
+          "script": "level3/024_136797_숫자_타자_대회/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 133500,
+          "script": "level3/025_133500_등대/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 132266,
+          "script": "level3/026_132266_부대복귀/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131703,
+          "script": "level3/027_131703_2차원_동전_뒤집기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131702,
+          "script": "level3/028_131702_고고학_최고의_발견/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131129,
+          "script": "level3/029_131129_카운트_다운/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 131123,
+          "script": "level3/extra_131123_즐겨찾기가_가장_많은_식당_정보_출력하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131113,
+          "script": "level3/extra_131113_조건별로_분류하여_주문상태_출력하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 118669,
+          "script": "level3/030_118669_등산코스_정하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 118668,
+          "script": "level3/031_118668_코딩_테스트_공부/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92345,
+          "script": "level3/032_92345_사라지는_발판/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92344,
+          "script": "level3/033_92344_파괴되지_않은_건물/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 92343,
+          "script": "level3/034_92343_양과_늑대/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 87694,
+          "script": "level3/035_87694_아이템_줍기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 87391,
+          "script": "level3/036_87391_공_이동_시뮬레이션/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 86053,
+          "script": "level3/037_86053_금과_은_운반하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 84021,
+          "script": "level3/038_84021_퍼즐_조각_채우기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 81303,
+          "script": "level3/039_81303_표_편집/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 77886,
+          "script": "level3/040_77886_110_옮기기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 77487,
+          "script": "level3/extra_77487_헤비_유저가_소유한_장소/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 77486,
+          "script": "level3/041_77486_다단계_칫솔_판매/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 76503,
+          "script": "level3/042_76503_모두_0으로_만들기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72415,
+          "script": "level3/043_72415_카드_짝_맞추기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72414,
+          "script": "level3/044_72414_광고_삽입/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72413,
+          "script": "level3/045_72413_합승_택시_요금/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 70130,
+          "script": "level3/046_70130_스타_수열/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 68646,
+          "script": "level3/047_68646_풍선_터트리기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 67259,
+          "script": "level3/048_67259_경주로_건설/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 67258,
+          "script": "level3/049_67258_보석_쇼핑/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 64064,
+          "script": "level3/050_64064_불량_사용자/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 64062,
+          "script": "level3/051_64062_징검다리_건너기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 60063,
+          "script": "level3/052_60063_블록_이동하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 60062,
+          "script": "level3/053_60062_외벽_점검/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 60061,
+          "script": "level3/054_60061_기둥과_보_설치/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 60059,
+          "script": "level3/055_60059_자물쇠와_열쇠/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 59411,
+          "script": "level3/extra_59411_오랜_기간_보호한_동물(2)/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 59044,
+          "script": "level3/extra_59044_오랜_기간_보호한_동물(1)/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 59043,
+          "script": "level3/extra_59043_있었는데요_없었습니다/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 59042,
+          "script": "level3/extra_59042_없어진_기록_찾기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 49191,
+          "script": "level3/056_49191_순위/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 49189,
+          "script": "level3/057_49189_가장_먼_노드/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43238,
+          "script": "level3/058_43238_입국심사/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43164,
+          "script": "level3/059_43164_여행경로/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43163,
+          "script": "level3/060_43163_단어_변환/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43162,
+          "script": "level3/061_43162_네트워크/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43105,
+          "script": "level3/062_43105_정수_삼각형/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42898,
+          "script": "level3/063_42898_등굣길/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42895,
+          "script": "level3/064_42895_N으로_표현/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42893,
+          "script": "level3/065_42893_매칭_점수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42892,
+          "script": "level3/066_42892_길_찾기_게임/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42884,
+          "script": "level3/067_42884_단속카메라/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42861,
+          "script": "level3/068_42861_섬_연결하기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42628,
+          "script": "level3/069_42628_이중우선순위큐/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42627,
+          "script": "level3/070_42627_디스크_컨트롤러/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42579,
+          "script": "level3/071_42579_베스트앨범/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 17678,
+          "script": "level3/072_17678_[1차]_셔틀버스/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 17676,
+          "script": "level3/073_17676_[1차]_추석_트래픽/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12987,
+          "script": "level3/074_12987_숫자_게임/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12979,
+          "script": "level3/075_12979_기지국_설치/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12971,
+          "script": "level3/076_12971_스티커_모으기(2)/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12942,
+          "script": "level3/077_12942_최적의_행렬_곱셈/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12938,
+          "script": "level3/078_12938_최고의_집합/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12927,
+          "script": "level3/079_12927_야근_지수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12920,
+          "script": "level3/080_12920_선입_선출_스케줄링/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12907,
+          "script": "level3/081_12907_거스름돈/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12904,
+          "script": "level3/082_12904_가장_긴_팰린드롬/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1838,
+          "script": "level3/extra_1838_몸짱_트레이너_라이언의_고민/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1837,
+          "script": "level3/extra_1837_GPS/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1836,
+          "script": "level3/extra_1836_리틀_프렌즈_사천성/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1833,
+          "script": "level3/extra_1833_캠핑/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1832,
+          "script": "level3/extra_1832_보행자_천국/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1830,
+          "script": "level3/extra_1830_브라이언의_고민/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 389630,
+          "script": "level4/extra_389630_격자_뒤집기_미로/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 389629,
+          "script": "level4/extra_389629_가장_큰_삼각형_덩어리/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 301650,
+          "script": "level4/extra_301650_특정_세대의_대장균_찾기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 284528,
+          "script": "level4/extra_284528_연간_평가점수에_해당하는_평가_등급_및_성과금_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 276036,
+          "script": "level4/extra_276036_언어별_개발자_분류하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 276035,
+          "script": "level4/extra_276035_FrontEnd_개발자_찾기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 214290,
+          "script": "level4/extra_214290_경사로의_개수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 157339,
+          "script": "level4/extra_157339_특정_기간동안_대여_가능한_자동차들의_대여비용_구하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 151141,
+          "script": "level4/extra_151141_자동차_대여_기록_별_대여_금액_구하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 150364,
+          "script": "level4/extra_150364_1,2,3_떨어트리기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 144856,
+          "script": "level4/extra_144856_저자_별_카테고리_별_매출액_집계하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 140105,
+          "script": "level4/extra_140105_쌍둥이_빌딩_숲/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 133027,
+          "script": "level4/extra_133027_주문량이_많은_아이스크림들_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 132204,
+          "script": "level4/extra_132204_취소되지_않은_진료_예약_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131537,
+          "script": "level4/extra_131537_오프라인_온라인_판매_데이터_통합하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131532,
+          "script": "level4/extra_131532_년,_월,_성별_별_상품_구매_회원_수_구하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131124,
+          "script": "level4/extra_131124_그룹별_조건에_맞는_식당_목록_출력하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131118,
+          "script": "level4/extra_131118_서울에_위치한_식당_목록_출력하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131117,
+          "script": "level4/extra_131117_5월_식품들의_총매출_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 131116,
+          "script": "level4/extra_131116_식품분류별_가장_비싼_식품의_정보_조회하기/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 118670,
+          "script": "level4/extra_118670_행렬과_연산/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 86054,
+          "script": "level4/extra_86054_안티세포/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 81304,
+          "script": "level4/extra_81304_미로_탈출/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 72416,
+          "script": "level4/extra_72416_매출_하락_최소화/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 68937,
+          "script": "level4/extra_68937_트리_트리오_중간값/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 68647,
+          "script": "level4/extra_68647_짝수_행_세기/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 67260,
+          "script": "level4/extra_67260_동굴_탐험/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 64063,
+          "script": "level4/extra_64063_호텔_방_배정/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 62284,
+          "script": "level4/extra_62284_우유와_요거트가_담긴_장바구니/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 62050,
+          "script": "level4/extra_62050_지형_이동/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 60060,
+          "script": "level4/extra_60060_가사_검색/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 59413,
+          "script": "level4/extra_59413_입양_시각_구하기(2)/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 59045,
+          "script": "level4/extra_59045_보호소에서_중성화한_동물/test_queries.py",
+          "passed": true
+        },
+        {
+          "id": 49995,
+          "script": "level4/extra_49995_쿠키_구입/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 43236,
+          "script": "level4/extra_43236_징검다리/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42897,
+          "script": "level4/extra_42897_도둑질/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42894,
+          "script": "level4/extra_42894_블록_게임/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 42891,
+          "script": "level4/extra_42891_무지의_먹방_라이브/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 17685,
+          "script": "level4/extra_17685_[3차]_자동완성/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12984,
+          "script": "level4/extra_12984_지형_편집/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12983,
+          "script": "level4/extra_12983_단어_퍼즐/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 12929,
+          "script": "level4/extra_12929_올바른_괄호의_갯수/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1843,
+          "script": "level4/extra_1843_사칙연산/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1839,
+          "script": "level4/extra_1839_튜브의_소개팅/test_solution.py",
+          "passed": true
+        },
+        {
+          "id": 1831,
+          "script": "level4/extra_1831_4단_고음/test_solution.py",
+          "passed": true
+        }
+      ]
     }
   ],
-  "limits": [
-    "온라인 채점은 이 검사에 포함하지 않는다.",
-    "100개 전체의 공식 예제·모든 유효 입력을 검증한 결과는 아니다.",
-    "로컬 회귀 검사는 변경한 8개 풀이와 기존 정규식 2개를 중심으로 한다.",
-    "복잡도는 소스 분석값이며 온라인 채점기의 실행시간 측정값이 아니다."
+  "cpp": {
+    "compiler": "Zig 0.17.0 C++17, x86_64-windows-gnu",
+    "header_adapter": "GCC umbrella header replaced by standard headers",
+    "official": {
+      "problems": 10,
+      "examples": 26,
+      "records": [
+        {
+          "id": 1835,
+          "examples": 2,
+          "passed": true
+        },
+        {
+          "id": 1829,
+          "examples": 1,
+          "passed": true
+        },
+        {
+          "id": 1838,
+          "examples": 4,
+          "passed": true
+        },
+        {
+          "id": 1837,
+          "examples": 2,
+          "passed": true
+        },
+        {
+          "id": 1836,
+          "examples": 4,
+          "passed": true
+        },
+        {
+          "id": 1833,
+          "examples": 1,
+          "passed": true
+        },
+        {
+          "id": 1832,
+          "examples": 2,
+          "passed": true
+        },
+        {
+          "id": 1830,
+          "examples": 3,
+          "passed": true
+        },
+        {
+          "id": 1839,
+          "examples": 3,
+          "passed": true
+        },
+        {
+          "id": 1831,
+          "examples": 4,
+          "passed": true
+        }
+      ]
+    },
+    "additional_level3_generated_cases": 180,
+    "final_1830_official_examples": 3,
+    "final_1830_uppercase_length": 1000
+  },
+  "sql": {
+    "problems": 75,
+    "local_engine": "SQLite with MySQL function/dialect adapters",
+    "actual_mysql_server_execution": false
+  },
+  "existing_regression_tests": 24,
+  "whole_strategy": {
+    "problem_id": 451808,
+    "secrets": 3024,
+    "max_queries": 6
+  },
+  "original_source_hash_matches": 309,
+  "auxiliary_python_originals": 10,
+  "original_sources_unchanged": true,
+  "markdown_relative_links_valid": true,
+  "source_discrepancies": [
+    284527,
+    273709,
+    273710,
+    273711,
+    164670,
+    164671,
+    157339
   ],
-  "files": [
-    {
-      "problem_id": 468379,
-      "path": "level2/001_468379_선인장_숨기기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 468377,
-      "path": "level2/002_468377_힌트_스테이지/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 468373,
-      "path": "level2/003_468373_바이러스_파이프/solution.py",
-      "executable_ast_changed": true
-    },
-    {
-      "problem_id": 468372,
-      "path": "level2/004_468372_리프_노드_수_최대화/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 389480,
-      "path": "level2/005_389480_완전범죄/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 389479,
-      "path": "level2/006_389479_서버_증설_횟수/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 388353,
-      "path": "level2/007_388353_지게차와_크레인/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 388352,
-      "path": "level2/008_388352_비밀_코드_해독/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 340212,
-      "path": "level2/009_340212_퍼즐_게임_챌린지/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 340211,
-      "path": "level2/010_340211_충돌위험_찾기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 258711,
-      "path": "level2/011_258711_도넛과_막대_그래프/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 250136,
-      "path": "level2/012_250136_석유_시추/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 250135,
-      "path": "level2/013_250135_아날로그_시계/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 181188,
-      "path": "level2/014_181188_요격_시스템/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 181187,
-      "path": "level2/015_181187_두_원_사이의_정수_쌍/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 178870,
-      "path": "level2/016_178870_연속된_부분_수열의_합/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 176962,
-      "path": "level2/017_176962_과제_진행하기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 172927,
-      "path": "level2/018_172927_광물_캐기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 169199,
-      "path": "level2/019_169199_리코쳇_로봇/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 169198,
-      "path": "level2/020_169198_당구_연습/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 160585,
-      "path": "level2/021_160585_혼자서_하는_틱택토/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 159993,
-      "path": "level2/022_159993_미로_탈출/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 155651,
-      "path": "level2/023_155651_호텔_대실/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 154540,
-      "path": "level2/024_154540_무인도_여행/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 154539,
-      "path": "level2/025_154539_뒤에_있는_큰_수_찾기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 154538,
-      "path": "level2/026_154538_숫자_변환하기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 152996,
-      "path": "level2/027_152996_시소_짝꿍/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 150369,
-      "path": "level2/028_150369_택배_배달과_수거하기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 150368,
-      "path": "level2/029_150368_이모티콘_할인행사/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 148653,
-      "path": "level2/030_148653_마법의_엘리베이터/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 148652,
-      "path": "level2/031_148652_유사_칸토어_비트열/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 147354,
-      "path": "level2/032_147354_테이블_해시_함수/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 142085,
-      "path": "level2/033_142085_디펜스_게임/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 140107,
-      "path": "level2/034_140107_점_찍기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 138476,
-      "path": "level2/035_138476_귤_고르기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 135807,
-      "path": "level2/036_135807_숫자_카드_나누기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 134239,
-      "path": "level2/037_134239_우박수열_정적분/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 132265,
-      "path": "level2/038_132265_롤케이크_자르기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 131704,
-      "path": "level2/039_131704_택배상자/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 131701,
-      "path": "level2/040_131701_연속_부분_수열_합의_개수/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 131130,
-      "path": "level2/041_131130_혼자_놀기의_달인/solution.py",
-      "executable_ast_changed": true
-    },
-    {
-      "problem_id": 131127,
-      "path": "level2/042_131127_할인_행사/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 118667,
-      "path": "level2/043_118667_두_큐_합_같게_만들기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 92342,
-      "path": "level2/044_92342_양궁대회/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 92341,
-      "path": "level2/045_92341_주차_요금_계산/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 92335,
-      "path": "level2/046_92335_k진수에서_소수_개수_구하기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 87946,
-      "path": "level2/047_87946_피로도/solution.py",
-      "executable_ast_changed": true
-    },
-    {
-      "problem_id": 87390,
-      "path": "level2/048_87390_n제곱_배열_자르기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 87377,
-      "path": "level2/049_87377_교점에_별_만들기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 86971,
-      "path": "level2/050_86971_전력망을_둘로_나누기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 86052,
-      "path": "level2/051_86052_빛의_경로_사이클/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 84512,
-      "path": "level2/052_84512_모음사전/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 81302,
-      "path": "level2/053_81302_거리두기_확인하기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 77885,
-      "path": "level2/054_77885_2개_이하로_다른_비트/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 77485,
-      "path": "level2/055_77485_행렬_테두리_회전하기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 76502,
-      "path": "level2/056_76502_괄호_회전하기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 72412,
-      "path": "level2/057_72412_순위_검색/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 72411,
-      "path": "level2/058_72411_메뉴_리뉴얼/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 70129,
-      "path": "level2/059_70129_이진_변환_반복하기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 68936,
-      "path": "level2/060_68936_쿼드압축_후_개수_세기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 68645,
-      "path": "level2/061_68645_삼각_달팽이/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 67257,
-      "path": "level2/062_67257_수식_최대화/solution.py",
-      "executable_ast_changed": true
-    },
-    {
-      "problem_id": 64065,
-      "path": "level2/063_64065_튜플/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 62048,
-      "path": "level2/064_62048_멀쩡한_사각형/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 60058,
-      "path": "level2/065_60058_괄호_변환/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 60057,
-      "path": "level2/066_60057_문자열_압축/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 49994,
-      "path": "level2/067_49994_방문_길이/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 49993,
-      "path": "level2/068_49993_스킬트리/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 43165,
-      "path": "level2/069_43165_타겟_넘버/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42890,
-      "path": "level2/070_42890_후보키/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42888,
-      "path": "level2/071_42888_오픈채팅방/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42885,
-      "path": "level2/072_42885_구명보트/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42883,
-      "path": "level2/073_42883_큰_수_만들기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42860,
-      "path": "level2/074_42860_조이스틱/solution.py",
-      "executable_ast_changed": true
-    },
-    {
-      "problem_id": 42842,
-      "path": "level2/075_42842_카펫/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42839,
-      "path": "level2/076_42839_소수_찾기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42747,
-      "path": "level2/077_42747_H-Index/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42746,
-      "path": "level2/078_42746_가장_큰_수/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42626,
-      "path": "level2/079_42626_더_맵게/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42587,
-      "path": "level2/080_42587_프로세스/solution.py",
-      "executable_ast_changed": true
-    },
-    {
-      "problem_id": 42586,
-      "path": "level2/081_42586_기능개발/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42584,
-      "path": "level2/082_42584_주식가격/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42583,
-      "path": "level2/083_42583_다리를_지나는_트럭/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42578,
-      "path": "level2/084_42578_의상/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 42577,
-      "path": "level2/085_42577_전화번호_목록/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 17687,
-      "path": "level2/086_17687_n진수_게임/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 17686,
-      "path": "level2/087_17686_파일명_정렬/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 17684,
-      "path": "level2/088_17684_압축/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 17683,
-      "path": "level2/089_17683_방금그곡/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 17680,
-      "path": "level2/090_17680_캐시/solution.py",
-      "executable_ast_changed": true
-    },
-    {
-      "problem_id": 17679,
-      "path": "level2/091_17679_프렌즈4블록/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 17677,
-      "path": "level2/092_17677_뉴스_클러스터링/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 12985,
-      "path": "level2/093_12985_예상_대진표/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 12981,
-      "path": "level2/094_12981_영어_끝말잇기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 12980,
-      "path": "level2/095_12980_점프와_순간_이동/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 12978,
-      "path": "level2/096_12978_배달/solution.py",
-      "executable_ast_changed": true
-    },
-    {
-      "problem_id": 12973,
-      "path": "level2/097_12973_짝지어_제거하기/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 12953,
-      "path": "level2/098_12953_N개의_최소공배수/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 12952,
-      "path": "level2/099_12952_N-Queen/solution.py",
-      "executable_ast_changed": false
-    },
-    {
-      "problem_id": 12951,
-      "path": "level2/100_12951_JadenCase_문자열_만들기/solution.py",
-      "executable_ast_changed": false
-    }
-  ],
-  "revision_checks": {
-    "date": "2026-10-19",
-    "python": "3.12.14",
-    "unit_tests": 24,
-    "status": "passed"
-  }
+  "corrected_tie_handling": 131124
 }

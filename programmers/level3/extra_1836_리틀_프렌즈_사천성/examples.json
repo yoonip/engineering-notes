@@ -1,0 +1,49 @@
+[
+  {
+    "args": [
+      3,
+      3,
+      [
+        "DBA",
+        "C*A",
+        "CDB"
+      ]
+    ],
+    "expected": "ABCD"
+  },
+  {
+    "args": [
+      2,
+      4,
+      [
+        "NRYN",
+        "ARYA"
+      ]
+    ],
+    "expected": "RYAN"
+  },
+  {
+    "args": [
+      4,
+      4,
+      [
+        ".ZI.",
+        "M.**",
+        "MZU.",
+        ".IU."
+      ]
+    ],
+    "expected": "MUZI"
+  },
+  {
+    "args": [
+      2,
+      2,
+      [
+        "AB",
+        "BA"
+      ]
+    ],
+    "expected": "IMPOSSIBLE"
+  }
+]

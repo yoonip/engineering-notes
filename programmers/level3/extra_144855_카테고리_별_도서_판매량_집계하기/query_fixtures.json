@@ -1,0 +1,207 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "BOOK": {
+        "columns": [
+          "BOOK_ID",
+          "CATEGORY",
+          "AUTHOR_ID",
+          "PRICE",
+          "PUBLISHED_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            "인문",
+            1,
+            10000,
+            "2020-01-01"
+          ],
+          [
+            2,
+            "경제",
+            1,
+            9000,
+            "2021-02-05"
+          ],
+          [
+            3,
+            "경제",
+            2,
+            9000,
+            "2021-03-11"
+          ]
+        ]
+      },
+      "BOOK_SALES": {
+        "columns": [
+          "BOOK_ID",
+          "SALES_DATE",
+          "SALES"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            1,
+            "2022-01-01",
+            2
+          ],
+          [
+            2,
+            "2022-01-02",
+            3
+          ],
+          [
+            1,
+            "2022-01-05",
+            1
+          ],
+          [
+            2,
+            "2022-01-20",
+            5
+          ],
+          [
+            2,
+            "2022-01-21",
+            6
+          ],
+          [
+            3,
+            "2022-01-22",
+            2
+          ],
+          [
+            2,
+            "2022-02-11",
+            3
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "경제",
+        16
+      ],
+      [
+        "인문",
+        3
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/144855"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "BOOK": {
+        "columns": [
+          "BOOK_ID",
+          "CATEGORY",
+          "AUTHOR_ID",
+          "PRICE",
+          "PUBLISHED_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": []
+      },
+      "BOOK_SALES": {
+        "columns": [
+          "BOOK_ID",
+          "SALES_DATE",
+          "SALES"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "BOOK": {
+        "columns": [
+          "BOOK_ID",
+          "CATEGORY",
+          "AUTHOR_ID",
+          "PRICE",
+          "PUBLISHED_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER",
+          "INTEGER",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            1,
+            "공학",
+            1,
+            10,
+            null
+          ]
+        ]
+      },
+      "BOOK_SALES": {
+        "columns": [
+          "BOOK_ID",
+          "SALES_DATE",
+          "SALES"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            1,
+            "2022-01-01",
+            2
+          ],
+          [
+            1,
+            "2022-01-31",
+            3
+          ],
+          [
+            1,
+            "2022-02-01",
+            100
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "공학",
+        5
+      ]
+    ]
+  }
+]

@@ -1,0 +1,301 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "MEMBER_PROFILE": {
+        "columns": [
+          "MEMBER_ID",
+          "MEMBER_NAME",
+          "TLNO",
+          "GENDER",
+          "DATE_OF_BIRTH"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "jiho92@naver.com",
+            "이지호",
+            "01076432111",
+            "W",
+            "1992-02-12"
+          ],
+          [
+            "jiyoon22@hotmail.com",
+            "김지윤",
+            "01032324117",
+            "W",
+            "1992-02-22"
+          ],
+          [
+            "jihoon93@hanmail.net",
+            "김지훈",
+            "01023258688",
+            "M",
+            "1993-02-23"
+          ],
+          [
+            "seoyeons@naver.com",
+            "박서연",
+            "01076482209",
+            "W",
+            "1993-03-16"
+          ],
+          [
+            "yelin1130@gmail.com",
+            "조예린",
+            "01017626711",
+            "W",
+            "1990-11-30"
+          ]
+        ]
+      },
+      "REST_REVIEW": {
+        "columns": [
+          "REVIEW_ID",
+          "REST_ID",
+          "MEMBER_ID",
+          "REVIEW_SCORE",
+          "REVIEW_TEXT",
+          "REVIEW_DATE"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "R000000065",
+            "00028",
+            "soobin97@naver.com",
+            5,
+            "부찌 국물에서 샤브샤브 맛이나고 깔끔",
+            "2022-04-12"
+          ],
+          [
+            "R000000066",
+            "00039",
+            "yelin1130@gmail.com",
+            5,
+            "김치찌개 최곱니다.",
+            "2022-02-12"
+          ],
+          [
+            "R000000067",
+            "00028",
+            "yelin1130@gmail.com",
+            5,
+            "햄이 많아서 좋아요",
+            "2022-02-22"
+          ],
+          [
+            "R000000068",
+            "00035",
+            "ksyi0316@gmail.com",
+            5,
+            "숙성회가 끝내줍니다.",
+            "2022-02-15"
+          ],
+          [
+            "R000000069",
+            "00035",
+            "yoonsy95@naver.com",
+            4,
+            "비린내가 전혀없어요.",
+            "2022-04-16"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "조예린",
+        "김치찌개 최곱니다.",
+        "2022-02-12"
+      ],
+      [
+        "조예린",
+        "햄이 많아서 좋아요",
+        "2022-02-22"
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/131124"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "MEMBER_PROFILE": {
+        "columns": [
+          "MEMBER_ID",
+          "MEMBER_NAME",
+          "TLNO",
+          "GENDER",
+          "DATE_OF_BIRTH"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      },
+      "REST_REVIEW": {
+        "columns": [
+          "REVIEW_ID",
+          "REST_ID",
+          "MEMBER_ID",
+          "REVIEW_SCORE",
+          "REVIEW_TEXT",
+          "REVIEW_DATE"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "MEMBER_PROFILE": {
+        "columns": [
+          "MEMBER_ID",
+          "MEMBER_NAME",
+          "TLNO",
+          "GENDER",
+          "DATE_OF_BIRTH"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "A",
+            "A",
+            null,
+            null,
+            null
+          ],
+          [
+            "B",
+            "B",
+            null,
+            null,
+            null
+          ],
+          [
+            "C",
+            "C",
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      "REST_REVIEW": {
+        "columns": [
+          "REVIEW_ID",
+          "REST_ID",
+          "MEMBER_ID",
+          "REVIEW_SCORE",
+          "REVIEW_TEXT",
+          "REVIEW_DATE"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "0",
+            null,
+            "A",
+            null,
+            "a",
+            "2022-01-01"
+          ],
+          [
+            "1",
+            null,
+            "A",
+            null,
+            "b",
+            "2022-01-01"
+          ],
+          [
+            "2",
+            null,
+            "B",
+            null,
+            "c",
+            "2022-01-01"
+          ],
+          [
+            "3",
+            null,
+            "B",
+            null,
+            "d",
+            "2022-01-01"
+          ],
+          [
+            "4",
+            null,
+            "C",
+            null,
+            "e",
+            "2022-01-01"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "A",
+        "a",
+        "2022-01-01"
+      ],
+      [
+        "A",
+        "b",
+        "2022-01-01"
+      ],
+      [
+        "B",
+        "c",
+        "2022-01-01"
+      ],
+      [
+        "B",
+        "d",
+        "2022-01-01"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+-- 날짜에서 MONTH를 추출하고 같은 월끼리 묶는다. 월은 숫자로 출력하고 오름차순 정렬한다.
+SELECT COUNT(*) AS FISH_COUNT, MONTH(TIME) AS MONTH
+FROM FISH_INFO
+GROUP BY MONTH(TIME)
+ORDER BY MONTH

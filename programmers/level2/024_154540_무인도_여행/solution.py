@@ -1,8 +1,3 @@
-# 문제: 무인도 여행
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/154540
-# 풀이: 연결된 땅을 스택으로 탐색하며 식량을 합산한다. 방문 표시는 보드에 남겨 같은 칸을 다시 합산하지 않는다.
-# 복잡도: 전체 칸 V개·섬 K개: 시간 O(V+K log K), 추가 공간 O(V).
-
 def solution(maps):
     board = [list(row) for row in maps]
     rows, cols = len(board), len(board[0])
@@ -12,6 +7,7 @@ def solution(maps):
             if board[r][c] == 'X':
                 continue
             food = int(board[r][c])
+            # 방문한 육지를 지워 같은 식량을 중복해서 더하지 않는다.
             board[r][c] = 'X'
             stack = [(r, c)]
             while stack:
@@ -19,6 +15,7 @@ def solution(maps):
                 for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                     nx, ny = x + dx, y + dy
                     if 0 <= nx < rows and 0 <= ny < cols and board[nx][ny] != 'X':
+                        # 상하좌우로 이어진 섬의 식량을 모두 합한다.
                         food += int(board[nx][ny])
                         board[nx][ny] = 'X'
                         stack.append((nx, ny))

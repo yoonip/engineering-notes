@@ -1,0 +1,262 @@
+{
+  "problem_id": 12899,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        1
+      ],
+      "expected": "1",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        2
+      ],
+      "expected": "2",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        3
+      ],
+      "expected": "4",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        4
+      ],
+      "expected": "11",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        32576401
+      ],
+      "expected": "1414421224441441",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3885304
+      ],
+      "expected": "14421441121411",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        19526521
+      ],
+      "expected": "424141224424111",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        39157693
+      ],
+      "expected": "2141122441414221",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        19804376
+      ],
+      "expected": "424414244444442",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        7166298
+      ],
+      "expected": "44444241421444",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        9392168
+      ],
+      "expected": "122122411121242",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        34232021
+      ],
+      "expected": "1424441411111122",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        6560460
+      ],
+      "expected": "42422421414224",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        21288848
+      ],
+      "expected": "444241114144212",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4516551
+      ],
+      "expected": "21444444112124",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        31244841
+      ],
+      "expected": "1411142441211424",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        7856082
+      ],
+      "expected": "112142244111224",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        49017864
+      ],
+      "expected": "2441412424211444",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        43352898
+      ],
+      "expected": "2224114112222214",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        29348567
+      ],
+      "expected": "1224412241122222",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        13463430
+      ],
+      "expected": "214422222424114",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        8484836
+      ],
+      "expected": "114221241222412",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        6187000
+      ],
+      "expected": "42121422221411",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        47577469
+      ],
+      "expected": "2422111411224111",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        34285232
+      ],
+      "expected": "1441111211444442",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        37128233
+      ],
+      "expected": "2114211421424142",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        35121145
+      ],
+      "expected": "1442241422244411",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5630840
+      ],
+      "expected": "41114241241122",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3654648
+      ],
+      "expected": "14212122412424",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        10472017
+      ],
+      "expected": "141124224214111",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        7660669
+      ],
+      "expected": "111441411444111",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        39235009
+      ],
+      "expected": "2141144422422111",
+      "alternative_checked": true
+    }
+  ]
+}

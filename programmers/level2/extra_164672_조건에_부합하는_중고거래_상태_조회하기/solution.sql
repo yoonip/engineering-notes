@@ -1,0 +1,10 @@
+-- 해당 날짜의 반열린 시각 구간을 필터한다. CASE로 SALE·RESERVED·DONE을 표시용 이름으로 바꾸고 게시글 ID를 내림차순 정렬한다.
+SELECT BOARD_ID, WRITER_ID, TITLE, PRICE,
+       CASE STATUS
+           WHEN 'SALE' THEN '판매중'
+           WHEN 'RESERVED' THEN '예약중'
+           WHEN 'DONE' THEN '거래완료'
+       END AS STATUS
+FROM USED_GOODS_BOARD
+WHERE CREATED_DATE >= '2022-10-05' AND CREATED_DATE < '2022-10-06'
+ORDER BY BOARD_ID DESC

@@ -1,15 +1,12 @@
-# 문제: 디펜스 게임
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/142085
-# 풀이: 최소 힙에 큰 공격 K개를 남겨 무적권에 배정한다. 힙에서 빠진 가장 작은 공격만 병사로 막아 매번 전체를 정렬하지 않는다.
-# 복잡도: 라운드 N개·무적권 K개: 시간 O(N log(min(K,N)+1)), 추가 공간 O(min(K,N)+1).
-
 from heapq import heappush, heappop
 
 def solution(n, k, enemy):
     shielded = []
     for index, count in enumerate(enemy):
+        # 현재까지 가장 큰 k개 공격에 무적권을 배정한다.
         heappush(shielded, count)
         if len(shielded) > k:
+            # k개를 넘으면 가장 작은 공격을 병사로 막는 편이 유리하다.
             n -= heappop(shielded)
         if n < 0:
             return index

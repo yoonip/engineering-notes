@@ -1,0 +1,24 @@
+{
+  "id": 451808,
+  "cases": 6,
+  "official_examples": 3,
+  "passed": true,
+  "checked_on": "2026-10-19",
+  "python_version": "3.12.14",
+  "command": "python verify.py",
+  "new_site_submission": false,
+  "alternative_cases": 6,
+  "whole_strategy": {
+    "secrets": 3024,
+    "max_queries": 6,
+    "failures": 0,
+    "leaf_depth_counts": {
+      "1": 1,
+      "2": 15,
+      "3": 207,
+      "4": 1354,
+      "5": 1373,
+      "6": 74
+    }
+  }
+}

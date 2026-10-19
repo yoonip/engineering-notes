@@ -1,0 +1,254 @@
+{
+  "problem_id": 12939,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        "1 2 3 4"
+      ],
+      "expected": "1 4",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "-1 -2 -3 -4"
+      ],
+      "expected": "-4 -1",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "-1 -1"
+      ],
+      "expected": "-1 -1",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-899 -615 826 -158 -881 498 -384 -382 929 87 494 -918 -857 127 343 -428 193 520 185 -690 824"
+      ],
+      "expected": "-918 929",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-783 -461 -558 -839 751 778 654 636 -590 811 -798 344 -291 -715 -181 -577 -671 -855 -308 4 -483 -142 322 411 597 -38 460"
+      ],
+      "expected": "-855 811",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-888 -52 230 288 338 -374 -724 332 876 -163 287 653 -33 -401 798 77 -28 -827 -704 -138 500 45 -572 693"
+      ],
+      "expected": "-888 876",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "104 349 979 -978 -943 -845 -93 -212 656 620 906 619 -427 410 362 -981 -968 854 997 -542"
+      ],
+      "expected": "-981 997",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-839 -954 480 -312 -538 58 -889 -302 237 72 -796 818 314 277 -775"
+      ],
+      "expected": "-954 818",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "409 607 628 905 212 -502 755 636 -377 -150 -532 134 539 -340 959 146 -290 214 54 87 -296 -297 -631 599 840"
+      ],
+      "expected": "-631 959",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-220 615 -914 520 -605 900 -309"
+      ],
+      "expected": "-914 900",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "762 -423 481"
+      ],
+      "expected": "-423 762",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "371 -916 -347 59 -164 -899 -181 -344 554 -390 -250 -632 259 -415 74 12 -416 721"
+      ],
+      "expected": "-916 721",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-826 -487 -574 70 -974 -845 -961 991 318 -426 411 10 833 915 633 -340 247 -797 -377 613 435 267 -496 760 -295"
+      ],
+      "expected": "-974 991",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-575 -264 -973 471 -153 -100 -640 925 685 105 -222 587 733 -837 -913"
+      ],
+      "expected": "-973 925",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "459 736 710 -134 -631 -294 -45 -385 810 153 -599 281 516 148 -611 635 876 696 -719 -48 -594 665 -950 -244 827 -349"
+      ],
+      "expected": "-950 876",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-612 -742 -584 -145 491 174 -826 -695 93 -156 -356"
+      ],
+      "expected": "-826 491",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-134 130 -931"
+      ],
+      "expected": "-931 130",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-339 -753 -942 672 988 -961 237 151 -720 -620 291 -563 282 512 328 -692 -712 584 81 -529 691 138 -689 -324 -401"
+      ],
+      "expected": "-961 988",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-872 -489 -263 -389 -117 -266 249 -918 884 403 -774 781 955 -486 -254 -236 -940 -184 -747 -954 -989 434"
+      ],
+      "expected": "-989 955",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "412 -218 -383 445 530 -100 145 -396 238 -49 -231 264 -14 -158 -452"
+      ],
+      "expected": "-452 530",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-996 -90"
+      ],
+      "expected": "-996 -90",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-911 -573 248 349 414 259 695 -367 597 439 378 489 323 562 736"
+      ],
+      "expected": "-911 736",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-727 416 -495 -586 183 33 222 611 -92 -920 -58 386 -891 837 -739 395 -246 -292 -820 187 168 -752 494 -188"
+      ],
+      "expected": "-920 837",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "78 260 243 -767 456 913 -490 868 967 655 773 -368 -936 499 288 -653 -906 -695 -400 625"
+      ],
+      "expected": "-936 967",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-314 -445 27 -304 182 -506 490 -861 -318 -60 -888 395 -558 -372 -180 369 -324 378 -885"
+      ],
+      "expected": "-888 490",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "653 917 -134 -687 -741 633 74 -241 -632 514 -99 18 160"
+      ],
+      "expected": "-741 917",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-291 135"
+      ],
+      "expected": "-291 135",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "777 -688 802 567 635 -724 -36 -480 586 730 233 -452 312 694 -728 590 169 715 639"
+      ],
+      "expected": "-728 802",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "116 -656 -877 -766 -94 -245"
+      ],
+      "expected": "-877 116",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-998 -406 -771 269 -864 -313 -943 -947"
+      ],
+      "expected": "-998 269",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "-521 -290 -20 184 -627 655 -607 -917 101 316 203 -605 850 -588 763 -158 -977 -717 902 -540 -383 535 -338 -965 -930 -483 -8 304 472"
+      ],
+      "expected": "-977 902",
+      "alternative_checked": true
+    }
+  ]
+}

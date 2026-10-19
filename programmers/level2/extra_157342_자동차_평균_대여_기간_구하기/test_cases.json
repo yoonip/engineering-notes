@@ -1,0 +1,166 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "CAR_RENTAL_COMPANY_RENTAL_HISTORY",
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "DATE",
+          "DATE"
+        ],
+        "rows": [
+          [
+            1,
+            1,
+            "2022-09-27",
+            "2022-10-01"
+          ],
+          [
+            2,
+            1,
+            "2022-10-03",
+            "2022-11-04"
+          ],
+          [
+            3,
+            2,
+            "2022-09-05",
+            "2022-09-05"
+          ],
+          [
+            4,
+            2,
+            "2022-09-08",
+            "2022-09-10"
+          ],
+          [
+            5,
+            3,
+            "2022-09-16",
+            "2022-10-15"
+          ],
+          [
+            6,
+            1,
+            "2022-11-07",
+            "2022-12-06"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        3,
+        30.0
+      ],
+      [
+        1,
+        22.7
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "CAR_RENTAL_COMPANY_RENTAL_HISTORY",
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "DATE",
+          "DATE"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": []
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "CAR_RENTAL_COMPANY_RENTAL_HISTORY",
+        "columns": [
+          "HISTORY_ID",
+          "CAR_ID",
+          "START_DATE",
+          "END_DATE"
+        ],
+        "types": [
+          "INTEGER",
+          "INTEGER",
+          "DATE",
+          "DATE"
+        ],
+        "rows": [
+          [
+            1,
+            1,
+            "2022-09-27",
+            "2022-10-01"
+          ],
+          [
+            2,
+            1,
+            "2022-10-03",
+            "2022-11-04"
+          ],
+          [
+            3,
+            2,
+            "2022-09-05",
+            "2022-09-05"
+          ],
+          [
+            4,
+            2,
+            "2022-09-08",
+            "2022-09-10"
+          ],
+          [
+            5,
+            3,
+            "2022-09-16",
+            "2022-10-15"
+          ],
+          [
+            6,
+            1,
+            "2022-11-07",
+            "2022-12-06"
+          ],
+          [
+            106,
+            1,
+            "2022-09-27",
+            "2022-10-01"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        3,
+        30.0
+      ],
+      [
+        1,
+        18.3
+      ]
+    ]
+  }
+]

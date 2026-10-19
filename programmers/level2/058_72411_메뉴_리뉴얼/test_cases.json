@@ -1,0 +1,791 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "ABCFG",
+        "AC",
+        "CDE",
+        "ACDE",
+        "BCFG",
+        "ACDEH"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "AC",
+      "ACDE",
+      "BCFG",
+      "CDE"
+    ],
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "ABCDE",
+        "AB",
+        "CD",
+        "ADE",
+        "XYZ",
+        "XYZ",
+        "ACD"
+      ],
+      [
+        2,
+        3,
+        5
+      ]
+    ],
+    "expected": [
+      "ACD",
+      "AD",
+      "ADE",
+      "CD",
+      "XYZ"
+    ],
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "XYZ",
+        "XWY",
+        "WXA"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "WX",
+      "XY"
+    ],
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "ADEFBCG",
+        "CGFBDE",
+        "FECBDA",
+        "GAE",
+        "ABEFGCD",
+        "AFE",
+        "BDCA",
+        "EF",
+        "BD",
+        "DBECF"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "BCD",
+      "BCDE",
+      "BCDF",
+      "BCEF",
+      "BD",
+      "BDEF",
+      "CDEF",
+      "EF"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "DBA",
+        "CADGBEF",
+        "EACFDG",
+        "CF",
+        "FCG",
+        "BG",
+        "DBCFGEA",
+        "BGAFE"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "AEF",
+      "AEFG",
+      "AEG",
+      "AFG",
+      "CF",
+      "CFG",
+      "EFG",
+      "FG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "DBFA",
+        "DBC",
+        "EADFB",
+        "BAECG",
+        "EDFBCAG",
+        "AC",
+        "BAFECG",
+        "BECFG",
+        "EFGD",
+        "GBECAD",
+        "GFEBC",
+        "BD"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "BC",
+      "BCE",
+      "BCEG",
+      "BCG",
+      "BE",
+      "BEG",
+      "CEG",
+      "EG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "FDEAGB",
+        "CAGED",
+        "AFEC",
+        "GFCDE"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "ADEG",
+      "AE",
+      "CDEG",
+      "CE",
+      "DE",
+      "DEFG",
+      "DEG",
+      "DG",
+      "EF",
+      "EG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "FEBDC",
+        "GBFCADE",
+        "DAE",
+        "FGEBD",
+        "ECF",
+        "EBDFAC",
+        "CAFE"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "BDEF",
+      "CEF",
+      "EF"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "DBCFE",
+        "BFGAC",
+        "EGACF",
+        "FEDGCBA",
+        "CBF"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "ACFG",
+      "BCF",
+      "CF"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "GBDACEF",
+        "BDFCA",
+        "FAGEC",
+        "BG",
+        "BEFGCA",
+        "CFEB",
+        "DGF",
+        "FDEGCAB"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "ABCF",
+      "ACEF",
+      "ACEG",
+      "ACF",
+      "ACFG",
+      "AEFG",
+      "BCEF",
+      "BCF",
+      "CEF",
+      "CEFG",
+      "CF"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "BEDA",
+        "EGFABC",
+        "FEGD",
+        "FGCDBA",
+        "GCFE",
+        "GBEACD",
+        "ADBCEG"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "AB",
+      "ABC",
+      "ABCG",
+      "ABD",
+      "ABE",
+      "ABG",
+      "ACG",
+      "BCG",
+      "CEG",
+      "CG",
+      "EG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "BCGAEDF",
+        "FDEC",
+        "DACGEBF",
+        "EA",
+        "AB",
+        "CDEAFG",
+        "GC",
+        "DG",
+        "DE"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "CDE",
+      "CDEF",
+      "CDF",
+      "CEF",
+      "DE",
+      "DEF"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "CEF",
+        "CGE",
+        "AFCBDGE",
+        "FB"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "CE",
+      "CEF",
+      "CEG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "FG",
+        "EGACDB",
+        "AEFCDG",
+        "CDFGE",
+        "FAGD",
+        "DBGFCEA",
+        "AGD",
+        "DCFGBE",
+        "CF",
+        "AGBDC",
+        "CFBDG"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "BCDG",
+      "CDEG",
+      "CDFG",
+      "CDG",
+      "DG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "CGDEBFA",
+        "BAD",
+        "BGFECA",
+        "FB",
+        "CGEAFB",
+        "FC",
+        "DBCEG",
+        "AEG"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "AEG",
+      "BCE",
+      "BCEG",
+      "BCG",
+      "BEG",
+      "CEG",
+      "EG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "ABE",
+        "DECFAB",
+        "FDE",
+        "DE",
+        "EGFBADC"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "ABCD",
+      "ABCE",
+      "ABCF",
+      "ABDE",
+      "ABDF",
+      "ABE",
+      "ABEF",
+      "ACDE",
+      "ACDF",
+      "ACEF",
+      "ADEF",
+      "BCDE",
+      "BCDF",
+      "BCEF",
+      "BDEF",
+      "CDEF",
+      "DE",
+      "DEF"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "DAGEB",
+        "FDCAEGB",
+        "GCEDAFB",
+        "EBC",
+        "ACG",
+        "BF",
+        "CG",
+        "FCEB",
+        "GEABFCD",
+        "ABDF",
+        "GFCB"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "ABD",
+      "ABDE",
+      "ABDF",
+      "ABDG",
+      "ABEG",
+      "ADEG",
+      "BCE",
+      "BCEF",
+      "BCF",
+      "BCFG",
+      "BDEG",
+      "BF"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "CAEFBGD",
+        "BDCA",
+        "CB",
+        "EGADB",
+        "ECA",
+        "AE",
+        "FE",
+        "GFBDC",
+        "FDBCA",
+        "EB",
+        "CEDFG",
+        "GBEDA"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "ABCD",
+      "ABD",
+      "ABDE",
+      "ABDG",
+      "ABEG",
+      "ADEG",
+      "BCDF",
+      "BD",
+      "BDEG",
+      "CDFG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "CF",
+        "ABDCE",
+        "EFDC",
+        "ABEDGCF",
+        "BECD"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "BCDE",
+      "CD",
+      "CDE",
+      "CE",
+      "DE"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "EAGDFB",
+        "DACEB",
+        "FCGB",
+        "BFAC",
+        "GDBCE",
+        "ACBGDF",
+        "DGE",
+        "ED",
+        "FGCE"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "ABC",
+      "ABCD",
+      "ABCF",
+      "ABD",
+      "ABDE",
+      "ABDF",
+      "ABDG",
+      "ABF",
+      "ABFG",
+      "ADFG",
+      "BC",
+      "BCD",
+      "BCDE",
+      "BCDG",
+      "BCF",
+      "BCFG",
+      "BCG",
+      "BDE",
+      "BDEG",
+      "BDFG",
+      "BDG",
+      "BFG",
+      "CFG",
+      "DE",
+      "DEG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "AF",
+        "GBCFED",
+        "DEFBC",
+        "EDBFG",
+        "EFCDGA",
+        "GFDEB"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "BDEF",
+      "DE",
+      "DEF",
+      "DEFG",
+      "DF",
+      "EF"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "EDFABGC",
+        "BDGCFEA",
+        "CFADB",
+        "FEDACGB",
+        "EC",
+        "BGDA",
+        "BEA",
+        "ABGE",
+        "EBFGDA",
+        "CFAEG"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "AB",
+      "ABD",
+      "ABDF",
+      "ABDG",
+      "ABE",
+      "ABEG",
+      "ABG",
+      "AEFG",
+      "AEG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "BFAGEC",
+        "EDG"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "EG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "EC",
+        "FAGDEB",
+        "DEBCFA",
+        "CGFADBE",
+        "AD",
+        "ECFBAGD",
+        "BGDCAEF",
+        "GFBEDCA"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "ABD",
+      "ABDE",
+      "ABDF",
+      "ABE",
+      "ABEF",
+      "ABF",
+      "AD",
+      "ADE",
+      "ADEF",
+      "ADF",
+      "AEF",
+      "BDE",
+      "BDEF",
+      "BDF",
+      "BEF",
+      "DEF"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "DCFE",
+        "FBDCAG"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "CD",
+      "CDF",
+      "CF",
+      "DF"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "FBAC",
+        "AECG",
+        "GBFCDAE",
+        "CE",
+        "GAB",
+        "BE",
+        "EGCF",
+        "AFD",
+        "EBDCGFA"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "ABCF",
+      "ACEG",
+      "CE",
+      "CEFG",
+      "CEG"
+    ]
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "AC",
+        "FGCBEDA",
+        "EGFBA",
+        "BECAD",
+        "BFG",
+        "CDBAFGE",
+        "BC",
+        "DBCFE",
+        "EFBGD",
+        "BFGEAC"
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "expected": [
+      "BE",
+      "BEF",
+      "BEFG",
+      "BF",
+      "BFG"
+    ]
+  }
+]

@@ -1,13 +1,10 @@
-# 문제: 의상
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/42578
-# 풀이: 종류별 의상 수를 Counter로 센다. 각 종류의 미착용 선택을 더해 곱한 뒤 아무것도 입지 않는 한 경우를 뺀다.
-# 복잡도: 의상 N개·종류 U개: 평균 시간 O(N), 추가 공간 O(U). 큰 정수 곱셈 비용은 별도다.
-
 from collections import Counter
 
 def solution(clothes):
+    # 생성식 for로 이름·종류를 언패킹하고 종류만 Counter로 집계.
     counts = Counter(kind for name, kind in clothes)
     answer = 1
     for count in counts.values():
+        # 해당 종류에서 하나 고르는 count가지+안 입는 1가지.
         answer *= count + 1
     return answer - 1

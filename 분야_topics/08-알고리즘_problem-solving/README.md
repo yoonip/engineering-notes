@@ -48,7 +48,9 @@ def lower_bound(values, target):
 
 ## Programmers 풀이
 
-[Level 2 Python 풀이 100개](../../programmers/README.md)를 문제 번호와 공식 문제 링크로 정리했다. 각 파일에서 실행 코드와 풀이를 확인할 수 있다.
+[Level 2~4 풀이 309개](../../programmers/README.md)를 문제 번호와 공식 문제 링크로 정리했다. Python·C++·MySQL 코드에 문제 조건, 풀이 설명, 대안 구현과 비교, 실행 가능한 검증을 함께 넣었다.
+
+[309 solutions at Levels 2–4](../../programmers/README.md) include Python, C++ and MySQL implementations, problem conditions, explanations, alternatives with comparisons, and executable checks.
 
 ## 기초 해설
 

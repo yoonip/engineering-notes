@@ -1,0 +1,294 @@
+{
+  "problem_id": 17677,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        "FRANCE",
+        "french"
+      ],
+      "expected": 16384,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "handshake",
+        "shake hands"
+      ],
+      "expected": 65536,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "aa1+aa2",
+        "AAAA12"
+      ],
+      "expected": 43690,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "E=M*C^2",
+        "e=m*c^2"
+      ],
+      "expected": 65536,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "bA2 2 +Aa b B B A+1 A+",
+        "ba1bbaa+A1A 1+   b22Aab1aBBb2+ aB b22b 1aBbAaBBabbAa1Ba2a"
+      ],
+      "expected": 5957,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "1a2 bB +   AaAaa1bB1Bab21a12bBb a+",
+        "Ab1AAB+B1abb bbAaBA aaB "
+      ],
+      "expected": 30583,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BB12bbAabB22b",
+        "+ "
+      ],
+      "expected": 0,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "121BAB1a22+22+a+a 1b+2Ab2ABAAb+++a21",
+        "1BBb+b+aba A 12b+AB1a+112 a21aB BBB+aBA1+2A2ab 21"
+      ],
+      "expected": 32768,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "+AaA bab22B+A  +a+  A1+AaabBBB11++AAB++1",
+        "B12ba1212b+ b1Ab2B2A21BA+2+Ab"
+      ],
+      "expected": 15123,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "+ a1BB2AaB+AA12AAA211ba++A22+1ab2 AaaaaaB+a1 bA B1+aBA2ABA",
+        "1bA1B++ A22bAa12B"
+      ],
+      "expected": 10347,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "Aba+12bB++A+b+AA+b1BBbB  a+bbB11a2b  +2b1",
+        "+2 b1a 11B++Ab+B"
+      ],
+      "expected": 7281,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "aaA+1  ",
+        "2AA2 aA+1 AbAaB+A1 +2Bb 1B1+ABbB1BB bBA+ b1 bba bb1"
+      ],
+      "expected": 8192,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "1BB2B1 Ab2bbBBB21 +bA111BAB12+ 2   bb2a2Aa B++2",
+        "2BBAbab12+B2 bB 11++ B bA+b a1+ BAB++1a2bB  1 bA2+ 1 1A+B + "
+      ],
+      "expected": 30583,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "+  ab",
+        "B22A1bbbb2+b+BAA 2abB1 Bb2a11 +2"
+      ],
+      "expected": 8192,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "aB a1b1B 1a1A1112B+B bBab1ba 1bb12BAAA + 1bA2",
+        "1bbA1a a1b"
+      ],
+      "expected": 13107,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        " 2AA2 2AA B+2 BBBab+11+aA +",
+        "b1bAb+a1Aa2+BB2211a+1 1BA+b"
+      ],
+      "expected": 32768,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "a2ABa1 +12AA2A +1A2aaAA+",
+        "1BA 1A BA21b B2bB22+1a1A2B"
+      ],
+      "expected": 8192,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "A+B1++ 2AbAb2+abb aaAbbb+a+A+2 ",
+        " 21a2A a+AAbbbaBa1 b 221+A2AB2Abb"
+      ],
+      "expected": 53620,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "b2B1AbaAA+A1BBB2+1 2112A12 b1BBA2",
+        "bB2B+2AB2B aAa1++   abB221A+B+b1 b2aB"
+      ],
+      "expected": 32768,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "a  +1A2Bababb Ba+B+aB1A1A+aAA2a2  1+b aaAa   aA11A2",
+        "a1B2a ABaaa2aa+A++bbbA+2AbA"
+      ],
+      "expected": 42130,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "A1bA++bB",
+        "aAB2 a2+a+BA "
+      ],
+      "expected": 16384,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "AB a2b ",
+        "+  1 bA Bb BABa BaBb2BABa +b21 B1a+"
+      ],
+      "expected": 5957,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "2 a11bA1B",
+        "bA bAAB +BBB1++B+b2aa 2b1BA 2+B 1A1babbA2"
+      ],
+      "expected": 5461,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "b2B 11BB2 2+1221aa2A A+ba221BBA +B1+bBB1bB2+2b ",
+        "b 1+A+A+ Ab21a+2++b++BBaaaa2BA21 A212 11b22a1"
+      ],
+      "expected": 23831,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "bB12A2A b2 12BBbbaA ",
+        "+a11"
+      ],
+      "expected": 0,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "B aaAB  ABB b B ",
+        "b2bAAa1+1+1bab11a+++B bbaBaa1BBaaA22 1++AA+bAB BBa "
+      ],
+      "expected": 17246,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "+aa2ABBaA2BBb1aBBB21 +1a2bBAAA1B2 2Aa+ +1A122B +",
+        "A1b  1A2BAabAbAbB1bBaA2 B+2+abbbB2a121+a1++ 21"
+      ],
+      "expected": 37941,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "2++2Ab+baA B2+A++11aa2bbaAA1a 22B 2b b 11bA",
+        "+ 2+aBabb21++aa2+B+a+A21 2+ABb AabBb+b+bABAA122A aA+b "
+      ],
+      "expected": 36864,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "aBb1 BBa2a 2A ",
+        "+aA2 2AA 22 a12+2 a+1+BB2A2baBb22Aa2 BaB B2 +b Ba+BB12"
+      ],
+      "expected": 23831,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "A1+2+2b 1a ",
+        "aa BAA+ 1+2B1ba B Ba211ba A2aA AB B"
+      ],
+      "expected": 0,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "abBb+aA 2aAa+12ABaAb21Bb+b22BA112BBb 2222b+11b2b2211a12b",
+        " 211++ab B1+bA12+a12BBab"
+      ],
+      "expected": 23405,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "B2+BA+2A2a11  bAAb",
+        " Ab+2a+1+aaA22bAb+ A+A1bA1"
+      ],
+      "expected": 43690,
+      "alternative_checked": true
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "USED_GOODS_BOARD": {
+        "columns": [
+          "BOARD_ID",
+          "WRITER_ID",
+          "TITLE",
+          "CONTENTS",
+          "PRICE",
+          "CREATED_DATE",
+          "STATUS",
+          "VIEWS"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            "B0001",
+            "dhfkzmf09",
+            "칼라거펠트 코트",
+            "양모 70%이상 코트입니다.",
+            120000,
+            "2022-10-14",
+            "DONE",
+            104
+          ],
+          [
+            "B0002",
+            "lee871201",
+            "국내산 볶음참깨",
+            "직접 농사지은 참깨입니다.",
+            3000,
+            "2022-10-02",
+            "DONE",
+            121
+          ],
+          [
+            "B0003",
+            "dhfkzmf09",
+            "나이키 숏패팅",
+            "사이즈는 M입니다.",
+            40000,
+            "2022-10-17",
+            "DONE",
+            98
+          ],
+          [
+            "B0004",
+            "kwag98",
+            "반려견 배변패드 팝니다",
+            "정말 저렴히 판매합니다. 전부 미개봉 새상품입니다.",
+            12000,
+            "2022-10-01",
+            "DONE",
+            250
+          ],
+          [
+            "B0005",
+            "dhfkzmf09",
+            "PS4",
+            "PS5 구매로인해 팝니다.",
+            250000,
+            "2022-11-03",
+            "DONE",
+            111
+          ]
+        ]
+      },
+      "USED_GOODS_USER": {
+        "columns": [
+          "USER_ID",
+          "NICKNAME",
+          "CITY",
+          "STREET_ADDRESS1",
+          "STREET_ADDRESS2",
+          "TLNO"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "dhfkzmf09",
+            "찐찐",
+            "성남시",
+            "분당구 수내로 13",
+            "A동 1107호",
+            "01053422914"
+          ],
+          [
+            "dlPcks90",
+            "썹썹",
+            "성남시",
+            "분당구 수내로 74",
+            "401호",
+            "01034573944"
+          ],
+          [
+            "cjfwls91",
+            "점심만금식",
+            "성남시",
+            "분당구 내정로 185",
+            "501호",
+            "01036344964"
+          ],
+          [
+            "dlfghks94",
+            "희망",
+            "성남시",
+            "분당구 내정로 101",
+            "203동 102호",
+            "01032634154"
+          ],
+          [
+            "rkdhs95",
+            "용기",
+            "성남시",
+            "분당구 수내로 23",
+            "501호",
+            "01074564564"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "dhfkzmf09",
+        "찐찐",
+        "성남시 분당구 수내로 13 A동 1107호",
+        "010-5342-2914"
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/164670"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "USED_GOODS_BOARD": {
+        "columns": [
+          "BOARD_ID",
+          "WRITER_ID",
+          "TITLE",
+          "CONTENTS",
+          "PRICE",
+          "CREATED_DATE",
+          "STATUS",
+          "VIEWS"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": []
+      },
+      "USED_GOODS_USER": {
+        "columns": [
+          "USER_ID",
+          "NICKNAME",
+          "CITY",
+          "STREET_ADDRESS1",
+          "STREET_ADDRESS2",
+          "TLNO"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "USED_GOODS_BOARD": {
+        "columns": [
+          "BOARD_ID",
+          "WRITER_ID",
+          "TITLE",
+          "CONTENTS",
+          "PRICE",
+          "CREATED_DATE",
+          "STATUS",
+          "VIEWS"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            "B1",
+            "u1",
+            null,
+            null,
+            350000,
+            null,
+            "DONE",
+            10
+          ],
+          [
+            "B2",
+            "u1",
+            null,
+            null,
+            350000,
+            null,
+            "DONE",
+            1
+          ],
+          [
+            "B3",
+            "u1",
+            null,
+            null,
+            999999,
+            null,
+            "SALE",
+            1
+          ]
+        ]
+      },
+      "USED_GOODS_USER": {
+        "columns": [
+          "USER_ID",
+          "NICKNAME",
+          "CITY",
+          "STREET_ADDRESS1",
+          "STREET_ADDRESS2",
+          "TLNO"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "u1",
+            "N",
+            "서울",
+            "길",
+            null,
+            "01012345678"
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "u1",
+        "N",
+        "서울 길",
+        "010-1234-5678"
+      ]
+    ]
+  }
+]

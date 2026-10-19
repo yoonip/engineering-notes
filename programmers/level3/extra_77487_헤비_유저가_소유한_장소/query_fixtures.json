@@ -1,0 +1,144 @@
+[
+  {
+    "name": "공식 예제 입력",
+    "tables": {
+      "PLACES": {
+        "columns": [
+          "ID",
+          "NAME",
+          "HOST_ID"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            4431977,
+            "BOUTIQUE STAYS - Somerset Terrace, Pet Friendly",
+            760849
+          ],
+          [
+            5194998,
+            "BOUTIQUE STAYS - Elwood Beaches 3, Pet Friendly",
+            760849
+          ],
+          [
+            16045624,
+            "Urban Jungle in the Heart of Melbourne",
+            30900122
+          ],
+          [
+            17810814,
+            "Stylish Bayside Retreat with a Luscious Garden",
+            760849
+          ],
+          [
+            22740286,
+            "FREE PARKING - The Velvet Lux in Melbourne CBD",
+            30900122
+          ],
+          [
+            22868779,
+            "★ Fresh Fitzroy Pad with City Views! ★",
+            21058208
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        4431977,
+        "BOUTIQUE STAYS - Somerset Terrace, Pet Friendly",
+        760849
+      ],
+      [
+        5194998,
+        "BOUTIQUE STAYS - Elwood Beaches 3, Pet Friendly",
+        760849
+      ],
+      [
+        16045624,
+        "Urban Jungle in the Heart of Melbourne",
+        30900122
+      ],
+      [
+        17810814,
+        "Stylish Bayside Retreat with a Luscious Garden",
+        760849
+      ],
+      [
+        22740286,
+        "FREE PARKING - The Velvet Lux in Melbourne CBD",
+        30900122
+      ]
+    ],
+    "source": "https://school.programmers.co.kr/learn/courses/30/lessons/77487"
+  },
+  {
+    "name": "독립 경계: 모든 입력 테이블이 빈 경우",
+    "tables": {
+      "PLACES": {
+        "columns": [
+          "ID",
+          "NAME",
+          "HOST_ID"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": []
+      }
+    },
+    "expected": []
+  },
+  {
+    "name": "독립 경계: 중복·동률·날짜 경계",
+    "tables": {
+      "PLACES": {
+        "columns": [
+          "ID",
+          "NAME",
+          "HOST_ID"
+        ],
+        "types": [
+          "INTEGER",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            1,
+            "1",
+            2
+          ],
+          [
+            2,
+            "2",
+            2
+          ],
+          [
+            3,
+            "3",
+            3
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        1,
+        "1",
+        2
+      ],
+      [
+        2,
+        "2",
+        2
+      ]
+    ]
+  }
+]

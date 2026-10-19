@@ -1,0 +1,246 @@
+{
+  "problem_id": 12951,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        "3people unFollowed me"
+      ],
+      "expected": "3people Unfollowed Me",
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        "for the last week"
+      ],
+      "expected": "For The Last Week",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BaB a  A Aaa a ABaAba b    bAB  BBBbA aA abBb"
+      ],
+      "expected": "Bab A  A Aaa A Abaaba B    Bab  Bbbba Aa Abbb",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "B bB Aa AbAa B BAaAbb  BBa bABAa b b    b  BAbA  A bbAb BAa  b  B bA"
+      ],
+      "expected": "B Bb Aa Abaa B Baaabb  Bba Babaa B B    B  Baba  A Bbab Baa  B  B Ba",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        " aAAaAB BA a  BAA b B"
+      ],
+      "expected": " Aaaaab Ba A  Baa B B",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "  bbabaBb AAbA   BA BbAB B aaa B AaaABBbAB BAbbaA a aaa  aB   aa"
+      ],
+      "expected": "  Bbababb Aaba   Ba Bbab B Aaa B Aaaabbbab Babbaa A Aaa  Ab   Aa",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "bb baaaABAbaa Abb ABA  b   ba B bb "
+      ],
+      "expected": "Bb Baaaababaa Abb Aba  B   Ba B Bb ",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "   AbaBbA B"
+      ],
+      "expected": "   Ababba B",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "aAAAaab   A Bb baabbA"
+      ],
+      "expected": "Aaaaaab   A Bb Baabba",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        " A  aaBB  A B Aaaaa b a BAaAaAb  AABaaaB a aB   B"
+      ],
+      "expected": " A  Aabb  A B Aaaaa B A Baaaaab  Aabaaab A Ab   B",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        " Aab      baAbAaabaab  a   a aBABbAbAbbA AAb   aa Ba BBaaA B a b"
+      ],
+      "expected": " Aab      Baabaaabaab  A   A Ababbababba Aab   Aa Ba Bbaaa B A B",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "AaBBbab aaB B ab  Baab b BBbbB A B   B bB abaBb"
+      ],
+      "expected": "Aabbbab Aab B Ab  Baab B Bbbbb A B   B Bb Ababb",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "aBa  bbBba A  ABB   ab ab  A  "
+      ],
+      "expected": "Aba  Bbbba A  Abb   Ab Ab  A  ",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "a  a aaabA B    bbBB BabaAAb B  B a BBbA a a  AbaaB  A     "
+      ],
+      "expected": "A  A Aaaba B    Bbbb Babaaab B  B A Bbba A A  Abaab  A     ",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "aAbab BBb "
+      ],
+      "expected": "Aabab Bbb ",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BAb aa  aA b  Bbaa"
+      ],
+      "expected": "Bab Aa  Aa B  Bbaa",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "aBbab A bBb aABB  b  A Bbbb Bba    Bb  b AaB ABAaB "
+      ],
+      "expected": "Abbab A Bbb Aabb  B  A Bbbb Bba    Bb  B Aab Abaab ",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "  bA ABBb bA Bba  ba bB aab aBA a bB  ababABbb A aB   ab  bBbab bb  b"
+      ],
+      "expected": "  Ba Abbb Ba Bba  Ba Bb Aab Aba A Bb  Abababbb A Ab   Ab  Bbbab Bb  B",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "aaB "
+      ],
+      "expected": "Aab ",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "aaB  AaA baaaB b  a BA BA bb b b  BBb "
+      ],
+      "expected": "Aab  Aaa Baaab B  A Ba Ba Bb B B  Bbb ",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "bABab AB aa b AAA abbAab  bbA Bbb"
+      ],
+      "expected": "Babab Ab Aa B Aaa Abbaab  Bba Bbb",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "Aa  BA bbB B  B"
+      ],
+      "expected": "Aa  Ba Bbb B  B",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        " B  Bbaa A bab Aabaabb b BbbBB  B AA bBABbBb  B ba BbaaABaa  bB B Ba a  bb  Ab "
+      ],
+      "expected": " B  Bbaa A Bab Aabaabb B Bbbbb  B Aa Bbabbbb  B Ba Bbaaabaa  Bb B Ba A  Bb  Ab ",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "A BAAbbA  B B bB a b BbB a   AbAB bBb AAbAAaBaAA    A b BA AAa"
+      ],
+      "expected": "A Baabba  B B Bb A B Bbb A   Abab Bbb Aabaaabaaa    A B Ba Aaa",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        " bAAbA A aab A  AaAa aaB BAabBBabB    bBB ba a  Baba B ab b BaB"
+      ],
+      "expected": " Baaba A Aab A  Aaaa Aab Baabbbabb    Bbb Ba A  Baba B Ab B Bab",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        " bAB"
+      ],
+      "expected": " Bab",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        " aA b B B"
+      ],
+      "expected": " Aa B B B",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "A B aAb  abbaba   aAa  ABb bb B baabB bb B BbA baAabaA a aAaA BAAa bBaAbA"
+      ],
+      "expected": "A B Aab  Abbaba   Aaa  Abb Bb B Baabb Bb B Bba Baaabaa A Aaaa Baaa Bbaaba",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        " "
+      ],
+      "expected": " ",
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        "BbAbBaA BAab"
+      ],
+      "expected": "Bbabbaa Baab",
+      "alternative_checked": true
+    }
+  ]
+}

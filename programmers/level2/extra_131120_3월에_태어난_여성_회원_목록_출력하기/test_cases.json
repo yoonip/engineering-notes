@@ -1,0 +1,167 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "MEMBER_PROFILE",
+        "columns": [
+          "MEMBER_ID",
+          "MEMBER_NAME",
+          "TLNO",
+          "GENDER",
+          "DATE_OF_BIRTH"
+        ],
+        "types": [
+          "VARCHAR(100)",
+          "VARCHAR(50)",
+          "VARCHAR(50)",
+          "VARCHAR(1)",
+          "DATE"
+        ],
+        "rows": [
+          [
+            "jiho92@naver.com",
+            "이지호",
+            "01076432111",
+            "W",
+            "1992-02-12"
+          ],
+          [
+            "jiyoon22@hotmail.com",
+            "김지윤",
+            "01032324117",
+            "W",
+            "1992-02-22"
+          ],
+          [
+            "jihoon93@hanmail.net",
+            "김지훈",
+            "01023258688",
+            "M",
+            "1993-02-23"
+          ],
+          [
+            "seoyeons@naver.com",
+            "박서연",
+            "01076482209",
+            "W",
+            "1993-03-16"
+          ],
+          [
+            "yoonsy94@gmail.com",
+            "윤서연",
+            null,
+            "W",
+            "1994-03-19"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        "seoyeons@naver.com",
+        "박서연",
+        "W",
+        "1993-03-16"
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "MEMBER_PROFILE",
+        "columns": [
+          "MEMBER_ID",
+          "MEMBER_NAME",
+          "TLNO",
+          "GENDER",
+          "DATE_OF_BIRTH"
+        ],
+        "types": [
+          "VARCHAR(100)",
+          "VARCHAR(50)",
+          "VARCHAR(50)",
+          "VARCHAR(1)",
+          "DATE"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": []
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "MEMBER_PROFILE",
+        "columns": [
+          "MEMBER_ID",
+          "MEMBER_NAME",
+          "TLNO",
+          "GENDER",
+          "DATE_OF_BIRTH"
+        ],
+        "types": [
+          "VARCHAR(100)",
+          "VARCHAR(50)",
+          "VARCHAR(50)",
+          "VARCHAR(1)",
+          "DATE"
+        ],
+        "rows": [
+          [
+            "jiho92@naver.com",
+            "이지호",
+            "01076432111",
+            "W",
+            "1992-02-12"
+          ],
+          [
+            "jiyoon22@hotmail.com",
+            "김지윤",
+            "01032324117",
+            "W",
+            "1992-02-22"
+          ],
+          [
+            "jihoon93@hanmail.net",
+            "김지훈",
+            "01023258688",
+            "M",
+            "1993-02-23"
+          ],
+          [
+            "seoyeons@naver.com",
+            "박서연",
+            "01076482209",
+            "W",
+            "1993-03-16"
+          ],
+          [
+            "yoonsy94@gmail.com",
+            "윤서연",
+            null,
+            "W",
+            "1994-03-19"
+          ],
+          [
+            "TEST_EXTRA",
+            "이지호",
+            "01076432111",
+            "W",
+            "1992-02-12"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        "seoyeons@naver.com",
+        "박서연",
+        "W",
+        "1993-03-16"
+      ]
+    ]
+  }
+]

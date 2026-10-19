@@ -1,0 +1,354 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "...D..R",
+        ".D.G...",
+        "....D.D",
+        "D....D.",
+        "..D...."
+      ]
+    ],
+    "expected": 7,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        ".D.R",
+        "....",
+        ".G..",
+        "...D"
+      ]
+    ],
+    "expected": -1,
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".......R",
+        "..GD.DD.",
+        ".D..DD..",
+        "D.DDD.D.",
+        "..D....D",
+        "DD...D.D",
+        ".D.D...."
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "GD.",
+        "...",
+        "..R",
+        ".D."
+      ]
+    ],
+    "expected": 2
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "....G.",
+        "D..D..",
+        "...D.D",
+        ".D..D.",
+        "D.DD..",
+        "D..R..",
+        "...D.."
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "D..G",
+        "..D.",
+        "R..."
+      ]
+    ],
+    "expected": 2
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "...",
+        "..D",
+        "...",
+        "...",
+        "...",
+        "R.G",
+        "..D",
+        ".D."
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".D..",
+        "D.RD",
+        ".G.D",
+        "...."
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "...DD.",
+        "......",
+        "...R.G",
+        "......"
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".GD.",
+        "D..D",
+        "D...",
+        ".D.D",
+        "....",
+        "..DD",
+        "..R."
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "..D...D",
+        ".D.D...",
+        ".D..D..",
+        "...D...",
+        "...DR.G",
+        "D....D.",
+        ".......",
+        "D......"
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".D...D.",
+        "..R....",
+        "DDDDD..",
+        ".....DD",
+        ".DG....",
+        ".....DD",
+        "..DD..."
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".....DR",
+        "..D..D.",
+        "D...D..",
+        "..DGD..",
+        "......D",
+        ".D...DD",
+        ".D.....",
+        "...D.DD"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".D..D.",
+        ".....G",
+        ".....R"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "......",
+        ".D.D..",
+        ".....D",
+        "R...DG"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "D....DD",
+        "D.D....",
+        ".....D.",
+        ".G.DD..",
+        ".D...D.",
+        ".......",
+        "D...DRD",
+        "..D...."
+      ]
+    ],
+    "expected": 7
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".....",
+        ".....",
+        "..D..",
+        "..D..",
+        ".D...",
+        ".....",
+        "DGD..",
+        "R..DD"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".GD",
+        "..D",
+        "...",
+        "...",
+        "...",
+        "..D",
+        "DDR"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "...G",
+        "....",
+        "..DR"
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "D.D...R.",
+        "GDD.....",
+        "........",
+        ".D.D.D.D"
+      ]
+    ],
+    "expected": 4
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".....D.",
+        "....DD.",
+        ".......",
+        ".....RG"
+      ]
+    ],
+    "expected": 1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "DD......",
+        "D.D.....",
+        "...D..D.",
+        "D...GR..",
+        "..D.....",
+        "..DD.D.."
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".D.RD...",
+        "GD......",
+        "...D...."
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "..DD..D",
+        "D..D...",
+        "DD....D",
+        "....G.D",
+        "D.D....",
+        "..D..D.",
+        "D.DD..R"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        ".D..",
+        ".DD.",
+        "D...",
+        "D.RD",
+        "D...",
+        "GDD."
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "...DDD..",
+        "D.G.....",
+        ".....DDR"
+      ]
+    ],
+    "expected": -1
+  }
+]

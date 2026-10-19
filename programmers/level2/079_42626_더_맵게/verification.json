@@ -1,0 +1,13 @@
+{
+  "id": 42626,
+  "cases": 29,
+  "official_examples": 1,
+  "passed": true,
+  "checked_on": "2026-10-19",
+  "python_version": "3.12.14",
+  "command": "python verify.py",
+  "new_site_submission": false,
+  "alternative_cases": 29,
+  "stress_cases": 1,
+  "stress_label": "100만 개 0의 불가능 판정 / One million zero values remain insufficient"
+}

@@ -1,0 +1,133 @@
+{
+  "problem_id": 1835,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        2,
+        [
+          "N~F=0",
+          "R~T>2"
+        ]
+      ],
+      "expected": 3648,
+      "alternative_checked": true
+    },
+    {
+      "label": "official-example",
+      "args": [
+        2,
+        [
+          "M~C<2",
+          "C~M>1"
+        ]
+      ],
+      "expected": 0,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        6,
+        [
+          "F~A<2",
+          "F~M=5",
+          "T~C>6",
+          "N~C=2",
+          "R~F=3",
+          "T~R>4"
+        ]
+      ],
+      "expected": 0,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "A~T<4",
+          "A~C=1",
+          "T~J=4",
+          "C~N<4",
+          "C~T>1"
+        ]
+      ],
+      "expected": 300,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        3,
+        [
+          "T~N=6",
+          "R~F<1",
+          "C~R<5"
+        ]
+      ],
+      "expected": 480,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "F~A>4",
+          "F~A<2",
+          "M~F=3",
+          "T~N=2",
+          "A~R<5"
+        ]
+      ],
+      "expected": 0,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "A~M>2",
+          "F~R=6",
+          "A~R=0",
+          "C~A=0",
+          "M~N=0"
+        ]
+      ],
+      "expected": 12,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        4,
+        [
+          "N~J>4",
+          "J~M=0",
+          "F~C=4",
+          "C~A<2"
+        ]
+      ],
+      "expected": 24,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        5,
+        [
+          "A~T=6",
+          "F~T>6",
+          "T~M>1",
+          "N~C=1",
+          "N~R<2"
+        ]
+      ],
+      "expected": 0,
+      "alternative_checked": true
+    }
+  ]
+}

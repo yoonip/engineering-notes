@@ -1,13 +1,9 @@
-# 문제: 두 큐 합 같게 만들기
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/118667
-# 풀이: 합이 큰 큐의 앞 원소를 작은 큐로 옮긴다. 양수 조건에서 두 포인터처럼 합을 조절하며 deque로 앞 삭제 비용을 줄인다.
-# 복잡도: 각 큐 길이 N: 시간·추가 공간 O(N). 원소는 양수다.
-
 from collections import deque
 
 def solution(queue1, queue2):
     current = sum(queue1)
     total = current + sum(queue2)
+    # 전체 합이 홀수이면 같은 정수 합 두 개로 나눌 수 없다.
     if total % 2:
         return -1
     target = total // 2
@@ -15,6 +11,7 @@ def solution(queue1, queue2):
     for moves in range(2 * (len(queue1) + len(queue2)) + 1):
         if current == target:
             return moves
+        # 양수이므로 합이 크면 빼고 작으면 가져온다.
         if current > target:
             value = first.popleft()
             second.append(value)

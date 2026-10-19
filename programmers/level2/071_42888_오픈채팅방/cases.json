@@ -1,0 +1,782 @@
+{
+  "problem_id": 42888,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        [
+          "Enter uid1234 Muzi",
+          "Enter uid4567 Prodo",
+          "Leave uid1234",
+          "Enter uid1234 Prodo",
+          "Change uid4567 Ryan"
+        ]
+      ],
+      "expected": [
+        "Prodo님이 들어왔습니다.",
+        "Ryan님이 들어왔습니다.",
+        "Prodo님이 나갔습니다.",
+        "Prodo님이 들어왔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 Z",
+          "Change u0 Z",
+          "Change u0 Y",
+          "Change u1 Y",
+          "Change u0 X",
+          "Change u1 Z",
+          "Change u0 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Y님이 들어왔습니다.",
+        "Z님이 들어왔습니다.",
+        "Y님이 나갔습니다.",
+        "Y님이 들어왔습니다.",
+        "Z님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 Z",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Z님이 들어왔습니다.",
+        "B님이 들어왔습니다.",
+        "Z님이 나갔습니다.",
+        "Z님이 들어왔습니다.",
+        "B님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 Z",
+          "Change u0 X",
+          "Change u1 X",
+          "Change u0 Y",
+          "Change u0 X",
+          "Change u0 X",
+          "Change u1 X",
+          "Change u1 X",
+          "Change u1 Z",
+          "Change u1 Z",
+          "Change u1 X",
+          "Change u1 Y",
+          "Change u0 Z",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Z님이 들어왔습니다.",
+        "Y님이 들어왔습니다.",
+        "Z님이 나갔습니다.",
+        "Z님이 들어왔습니다.",
+        "Y님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 X",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "C님이 들어왔습니다.",
+        "X님이 들어왔습니다.",
+        "C님이 나갔습니다.",
+        "C님이 들어왔습니다.",
+        "X님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 X",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "X님이 들어왔습니다.",
+        "B님이 들어왔습니다.",
+        "X님이 나갔습니다.",
+        "X님이 들어왔습니다.",
+        "B님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 Y",
+          "Change u0 Z",
+          "Change u0 X",
+          "Change u0 X",
+          "Change u1 X",
+          "Change u0 X",
+          "Change u1 Z",
+          "Change u1 X",
+          "Change u1 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "X님이 들어왔습니다.",
+        "Y님이 들어왔습니다.",
+        "X님이 나갔습니다.",
+        "X님이 들어왔습니다.",
+        "Y님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 Z",
+          "Change u0 Y",
+          "Change u1 Y",
+          "Change u0 Z",
+          "Change u1 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Z님이 들어왔습니다.",
+        "Y님이 들어왔습니다.",
+        "Z님이 나갔습니다.",
+        "Z님이 들어왔습니다.",
+        "Y님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 Y",
+          "Change u1 Y",
+          "Change u1 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Y님이 들어왔습니다.",
+        "Y님이 들어왔습니다.",
+        "Y님이 나갔습니다.",
+        "Y님이 들어왔습니다.",
+        "Y님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 Z",
+          "Change u0 Z",
+          "Change u1 X",
+          "Change u1 X",
+          "Change u1 X",
+          "Change u0 X",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "X님이 들어왔습니다.",
+        "X님이 들어왔습니다.",
+        "X님이 나갔습니다.",
+        "X님이 들어왔습니다.",
+        "X님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 Y",
+          "Change u1 X",
+          "Change u0 Z",
+          "Change u0 Z",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Z님이 들어왔습니다.",
+        "X님이 들어왔습니다.",
+        "Z님이 나갔습니다.",
+        "Z님이 들어왔습니다.",
+        "X님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 Z",
+          "Change u1 Z",
+          "Change u1 Z",
+          "Change u1 Z",
+          "Change u1 Z",
+          "Change u0 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Y님이 들어왔습니다.",
+        "Z님이 들어왔습니다.",
+        "Y님이 나갔습니다.",
+        "Y님이 들어왔습니다.",
+        "Z님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 X",
+          "Change u1 X",
+          "Change u1 Z",
+          "Change u0 Y",
+          "Change u0 X",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "X님이 들어왔습니다.",
+        "Z님이 들어왔습니다.",
+        "X님이 나갔습니다.",
+        "X님이 들어왔습니다.",
+        "Z님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 X",
+          "Change u0 X",
+          "Change u0 X",
+          "Change u0 Z",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Z님이 들어왔습니다.",
+        "B님이 들어왔습니다.",
+        "Z님이 나갔습니다.",
+        "Z님이 들어왔습니다.",
+        "B님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 Z",
+          "Change u1 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "C님이 들어왔습니다.",
+        "Y님이 들어왔습니다.",
+        "C님이 나갔습니다.",
+        "C님이 들어왔습니다.",
+        "Y님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 Y",
+          "Change u1 Y",
+          "Change u1 Z",
+          "Change u1 X",
+          "Change u0 Z",
+          "Change u0 X",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "X님이 들어왔습니다.",
+        "X님이 들어왔습니다.",
+        "X님이 나갔습니다.",
+        "X님이 들어왔습니다.",
+        "X님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 X",
+          "Change u1 Y",
+          "Change u1 Y",
+          "Change u0 X",
+          "Change u0 Z",
+          "Change u1 Y",
+          "Change u1 X",
+          "Change u0 Y",
+          "Change u1 Z",
+          "Change u1 Z",
+          "Change u1 X",
+          "Change u1 Y",
+          "Change u0 X",
+          "Change u0 X",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "X님이 들어왔습니다.",
+        "Y님이 들어왔습니다.",
+        "X님이 나갔습니다.",
+        "X님이 들어왔습니다.",
+        "Y님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 Z",
+          "Change u1 Z",
+          "Change u1 X",
+          "Change u1 Z",
+          "Change u0 X",
+          "Change u0 Y",
+          "Change u0 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Y님이 들어왔습니다.",
+        "Z님이 들어왔습니다.",
+        "Y님이 나갔습니다.",
+        "Y님이 들어왔습니다.",
+        "Z님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 X",
+          "Change u0 X",
+          "Change u0 X",
+          "Change u1 Z",
+          "Change u1 X",
+          "Change u1 Y",
+          "Change u1 Y",
+          "Change u1 Z",
+          "Change u0 Y",
+          "Change u1 Z",
+          "Change u1 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Y님이 들어왔습니다.",
+        "Y님이 들어왔습니다.",
+        "Y님이 나갔습니다.",
+        "Y님이 들어왔습니다.",
+        "Y님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 Z",
+          "Change u0 Z",
+          "Change u0 Y",
+          "Change u1 Z",
+          "Change u1 Y",
+          "Change u1 X",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Y님이 들어왔습니다.",
+        "X님이 들어왔습니다.",
+        "Y님이 나갔습니다.",
+        "Y님이 들어왔습니다.",
+        "X님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 X",
+          "Change u0 Z",
+          "Change u1 X",
+          "Change u0 X",
+          "Change u1 X",
+          "Change u0 Z",
+          "Change u1 X",
+          "Change u1 Y",
+          "Change u0 Y",
+          "Change u1 Y",
+          "Change u1 Y",
+          "Change u1 X",
+          "Change u0 X",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "X님이 들어왔습니다.",
+        "X님이 들어왔습니다.",
+        "X님이 나갔습니다.",
+        "X님이 들어왔습니다.",
+        "X님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 Z",
+          "Change u0 X",
+          "Change u0 Y",
+          "Change u0 Z",
+          "Change u0 Z",
+          "Change u0 Z",
+          "Change u0 Y",
+          "Change u1 Z",
+          "Change u0 Z",
+          "Change u0 Z",
+          "Change u0 Y",
+          "Change u1 Z",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Y님이 들어왔습니다.",
+        "Z님이 들어왔습니다.",
+        "Y님이 나갔습니다.",
+        "Y님이 들어왔습니다.",
+        "Z님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 X",
+          "Change u0 Y",
+          "Change u1 X",
+          "Change u1 Y",
+          "Change u0 Y",
+          "Change u0 X",
+          "Change u1 Z",
+          "Change u0 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Y님이 들어왔습니다.",
+        "Z님이 들어왔습니다.",
+        "Y님이 나갔습니다.",
+        "Y님이 들어왔습니다.",
+        "Z님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 X",
+          "Change u1 Z",
+          "Change u1 Z",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "C님이 들어왔습니다.",
+        "Z님이 들어왔습니다.",
+        "C님이 나갔습니다.",
+        "C님이 들어왔습니다.",
+        "Z님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 Y",
+          "Change u1 X",
+          "Change u1 Y",
+          "Change u1 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "C님이 들어왔습니다.",
+        "Y님이 들어왔습니다.",
+        "C님이 나갔습니다.",
+        "C님이 들어왔습니다.",
+        "Y님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 X",
+          "Change u0 Z",
+          "Change u1 X",
+          "Change u1 X",
+          "Change u1 Z",
+          "Change u1 Z",
+          "Change u1 X",
+          "Change u0 X",
+          "Change u1 Y",
+          "Change u1 Z",
+          "Change u1 X",
+          "Change u0 Z",
+          "Change u0 Y",
+          "Change u1 Y",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "Y님이 들어왔습니다.",
+        "Y님이 들어왔습니다.",
+        "Y님이 나갔습니다.",
+        "Y님이 들어왔습니다.",
+        "Y님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u0 Z",
+          "Change u0 Y",
+          "Change u0 Y",
+          "Change u0 Z",
+          "Change u0 Y",
+          "Change u1 Z",
+          "Change u0 Z",
+          "Change u1 X",
+          "Change u1 Z",
+          "Change u1 Y",
+          "Change u1 X",
+          "Change u1 Z",
+          "Change u0 Z",
+          "Change u0 X",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "X님이 들어왔습니다.",
+        "Z님이 들어왔습니다.",
+        "X님이 나갔습니다.",
+        "X님이 들어왔습니다.",
+        "Z님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 Y",
+          "Change u0 Z",
+          "Change u1 Y",
+          "Change u1 X",
+          "Change u1 Z",
+          "Change u1 Z",
+          "Change u0 X",
+          "Change u1 X",
+          "Change u1 X",
+          "Change u1 Y",
+          "Change u1 X",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "X님이 들어왔습니다.",
+        "X님이 들어왔습니다.",
+        "X님이 나갔습니다.",
+        "X님이 들어왔습니다.",
+        "X님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          "Enter u0 A",
+          "Enter u1 B",
+          "Leave u0",
+          "Enter u0 C",
+          "Change u1 Z",
+          "Change u1 Y",
+          "Change u0 X",
+          "Change u1 X",
+          "Change u1 Y",
+          "Change u1 Y",
+          "Change u1 Z",
+          "Leave u1"
+        ]
+      ],
+      "expected": [
+        "X님이 들어왔습니다.",
+        "Z님이 들어왔습니다.",
+        "X님이 나갔습니다.",
+        "X님이 들어왔습니다.",
+        "Z님이 나갔습니다."
+      ],
+      "alternative_checked": true
+    }
+  ]
+}

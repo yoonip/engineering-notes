@@ -1,0 +1,635 @@
+{
+  "problem_id": 42626,
+  "seed": 20261019,
+  "cases": [
+    {
+      "label": "official-example",
+      "args": [
+        [
+          1,
+          2,
+          3,
+          9,
+          10,
+          12
+        ],
+        7
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          42,
+          3,
+          17,
+          22,
+          23,
+          11,
+          19,
+          31,
+          50,
+          15,
+          13,
+          44,
+          29,
+          18,
+          30
+        ],
+        51
+      ],
+      "expected": 9,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          35,
+          25,
+          15,
+          34
+        ],
+        157
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          26,
+          16,
+          38,
+          9,
+          19,
+          48,
+          22,
+          6,
+          2,
+          48,
+          0,
+          34,
+          38
+        ],
+        78
+      ],
+      "expected": 9,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          15,
+          20,
+          5,
+          33,
+          43,
+          33,
+          34,
+          33,
+          4,
+          36
+        ],
+        20
+      ],
+      "expected": 2,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          44,
+          2,
+          34,
+          31,
+          8,
+          6,
+          26,
+          4,
+          41,
+          37,
+          34,
+          38,
+          49,
+          39,
+          50
+        ],
+        137
+      ],
+      "expected": 11,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          7,
+          16,
+          21,
+          14
+        ],
+        82
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          35,
+          0,
+          15,
+          37,
+          43,
+          17,
+          6,
+          5,
+          20,
+          30,
+          43,
+          4,
+          30
+        ],
+        16
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          23,
+          0,
+          8,
+          0,
+          31,
+          27,
+          24,
+          32,
+          27,
+          18,
+          50,
+          27,
+          12,
+          34,
+          42,
+          24,
+          18,
+          32,
+          15
+        ],
+        107
+      ],
+      "expected": 14,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          36,
+          28,
+          2,
+          20,
+          13,
+          39,
+          38,
+          29,
+          15,
+          31,
+          39,
+          46,
+          38,
+          1
+        ],
+        151
+      ],
+      "expected": 11,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          0,
+          22,
+          16,
+          48,
+          25,
+          49,
+          9,
+          10,
+          41,
+          33,
+          29,
+          44,
+          7,
+          24,
+          12,
+          45,
+          48,
+          36,
+          33,
+          40
+        ],
+        91
+      ],
+      "expected": 13,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          0,
+          11,
+          11,
+          40,
+          28,
+          33,
+          23,
+          13,
+          27,
+          34,
+          26,
+          36,
+          12,
+          31,
+          47,
+          46,
+          16,
+          41
+        ],
+        138
+      ],
+      "expected": 14,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          48,
+          3,
+          18,
+          36,
+          48,
+          40,
+          30,
+          11,
+          29,
+          34,
+          44
+        ],
+        79
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          16,
+          34,
+          25,
+          17,
+          3,
+          8,
+          20,
+          30
+        ],
+        162
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          11,
+          9,
+          27,
+          8,
+          17,
+          19,
+          47,
+          12,
+          37,
+          23,
+          44,
+          32,
+          14,
+          49,
+          2
+        ],
+        28
+      ],
+      "expected": 6,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          9,
+          26,
+          36,
+          5,
+          10,
+          4,
+          34,
+          37,
+          50,
+          16,
+          11,
+          4,
+          9,
+          49
+        ],
+        35
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          11,
+          18,
+          46,
+          45,
+          8,
+          23,
+          20
+        ],
+        141
+      ],
+      "expected": 6,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          10,
+          22,
+          34,
+          40,
+          44,
+          39,
+          25,
+          37,
+          49,
+          24,
+          49
+        ],
+        95
+      ],
+      "expected": 7,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          31,
+          18,
+          41,
+          25,
+          45,
+          8,
+          10,
+          39,
+          17,
+          18,
+          0,
+          25,
+          24,
+          35,
+          21,
+          24,
+          23,
+          7,
+          46,
+          46
+        ],
+        169
+      ],
+      "expected": 16,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          10,
+          9,
+          8,
+          42,
+          5,
+          42,
+          16,
+          37,
+          0,
+          6,
+          47,
+          9,
+          5,
+          7,
+          46,
+          33,
+          39,
+          26
+        ],
+        119
+      ],
+      "expected": 14,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          16,
+          33,
+          6,
+          0,
+          17,
+          3,
+          2,
+          23,
+          36,
+          3,
+          25,
+          15,
+          36
+        ],
+        2
+      ],
+      "expected": 1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          5,
+          43,
+          47,
+          32
+        ],
+        167
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          25,
+          42,
+          32,
+          5,
+          44,
+          33,
+          7,
+          48,
+          50,
+          17,
+          13
+        ],
+        99
+      ],
+      "expected": 8,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          8,
+          42,
+          9,
+          19
+        ],
+        116
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          44,
+          6,
+          19
+        ],
+        159
+      ],
+      "expected": -1,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          15,
+          36,
+          47,
+          10,
+          37,
+          38
+        ],
+        143
+      ],
+      "expected": 5,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          8,
+          36,
+          50,
+          49,
+          40,
+          31,
+          17,
+          45,
+          49,
+          42,
+          41
+        ],
+        41
+      ],
+      "expected": 3,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          12,
+          9,
+          29,
+          15,
+          30,
+          39,
+          23,
+          38,
+          18,
+          11,
+          21,
+          46,
+          8,
+          27,
+          39
+        ],
+        32
+      ],
+      "expected": 6,
+      "alternative_checked": true
+    },
+    {
+      "label": "seeded-small-reference",
+      "args": [
+        [
+          47,
+          39,
+          50,
+          23,
+          44,
+          38,
+          48,
+          2,
+          15,
+          17,
+          20,
+          37,
+          47,
+          40,
+          35,
+          10,
+          8
+        ],
+        83
+      ],
+      "expected": 11,
+      "alternative_checked": true
+    }
+  ]
+}

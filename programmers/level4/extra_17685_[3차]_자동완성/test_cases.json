@@ -1,0 +1,2758 @@
+[
+  {
+    "args": [
+      [
+        "go",
+        "gone",
+        "guild"
+      ]
+    ],
+    "expected": 7,
+    "kind": "official"
+  },
+  {
+    "args": [
+      [
+        "abc",
+        "def",
+        "ghi",
+        "jklm"
+      ]
+    ],
+    "expected": 4,
+    "kind": "official"
+  },
+  {
+    "args": [
+      [
+        "word",
+        "war",
+        "warrior",
+        "world"
+      ]
+    ],
+    "expected": 15,
+    "kind": "official"
+  },
+  {
+    "args": [
+      [
+        "aaac",
+        "aacdb",
+        "ac",
+        "acc",
+        "acdbbdda",
+        "b",
+        "badaa",
+        "bbaaaaa",
+        "bbb",
+        "bbbabcc",
+        "bddbdddb",
+        "c",
+        "cabc",
+        "cbaaad",
+        "d",
+        "daadcab",
+        "dabb",
+        "dcaaab"
+      ]
+    ],
+    "expected": 43,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abc",
+        "abdccb",
+        "acdadd",
+        "acdcc",
+        "adbc",
+        "ba",
+        "bbabd",
+        "bcca",
+        "bdcbca",
+        "cbcad",
+        "cc",
+        "ccbcab",
+        "cdabab",
+        "cdabdac",
+        "cdbaadb",
+        "cdbbda",
+        "d",
+        "db",
+        "dccc",
+        "dcdb"
+      ]
+    ],
+    "expected": 58,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abcc",
+        "abcdbdb",
+        "accdd",
+        "accddcdc",
+        "adaab",
+        "bb",
+        "bbddda",
+        "bcbadcb",
+        "bdadbadc",
+        "bdc",
+        "c",
+        "cad",
+        "cbabbcb",
+        "cdd",
+        "d",
+        "dcbadab",
+        "ddba",
+        "ddbaaad"
+      ]
+    ],
+    "expected": 54,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aacaabb",
+        "abdacb",
+        "ac",
+        "accb",
+        "adabbda",
+        "adddcbaa",
+        "b",
+        "baadc",
+        "bb",
+        "bccaacab",
+        "bdbdcd",
+        "cabb",
+        "cbacadbd",
+        "cdd",
+        "dbccc",
+        "dcdba"
+      ]
+    ],
+    "expected": 35,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaba",
+        "aacaa",
+        "abddadca",
+        "acdbcba",
+        "ba",
+        "bc",
+        "bcdbba",
+        "c",
+        "ca",
+        "caacdabb",
+        "caadcdaa",
+        "cadd",
+        "ccdd",
+        "daa",
+        "dbbbbd",
+        "dbcadb",
+        "dbdc",
+        "dcc",
+        "ddd"
+      ]
+    ],
+    "expected": 48,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaaccd",
+        "acdd",
+        "adc",
+        "b",
+        "bbaacd",
+        "bbada",
+        "bbccbcbd",
+        "bccdb",
+        "c",
+        "caa",
+        "cacaa",
+        "cbcb",
+        "ccacd",
+        "ccdadddc",
+        "ccdca",
+        "cdbcd",
+        "d",
+        "daadaba",
+        "dcbcdac",
+        "dcbdbc"
+      ]
+    ],
+    "expected": 53,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaacaad",
+        "aababdbd",
+        "b",
+        "baa",
+        "bada",
+        "badaa",
+        "cb",
+        "cbdcbc",
+        "cc",
+        "cca",
+        "ccac",
+        "d",
+        "dbabdacc",
+        "dbb",
+        "dcbcaaa",
+        "dddc",
+        "dddda"
+      ]
+    ],
+    "expected": 52,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "ababa",
+        "ababbb",
+        "abdad",
+        "accabbcd",
+        "bbbbb",
+        "bbddcbc",
+        "bc",
+        "bdacdba",
+        "bdccc",
+        "cabbdb",
+        "cbd",
+        "ccbdb",
+        "ccdb",
+        "cd",
+        "cdaabd",
+        "cdddddcc",
+        "dab",
+        "dabccc",
+        "ddbccbd",
+        "ddcacdc"
+      ]
+    ],
+    "expected": 60,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaccbc",
+        "accbbbad",
+        "acccbdb",
+        "adccbac",
+        "b",
+        "bac",
+        "badbabba",
+        "bbadca",
+        "bdabdda",
+        "bdd",
+        "cadda",
+        "cbcbba",
+        "cbd",
+        "cc",
+        "dabdb",
+        "dbcb",
+        "ddc",
+        "dddb"
+      ]
+    ],
+    "expected": 51,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aacabcbb",
+        "aacc",
+        "abc",
+        "acacac",
+        "b",
+        "baacb",
+        "bad",
+        "bcdb",
+        "bdccda",
+        "c",
+        "cbcbb",
+        "ccadadc",
+        "d",
+        "db",
+        "dbacadb",
+        "dcdc",
+        "ddcadac"
+      ]
+    ],
+    "expected": 40,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aab",
+        "abaadbac",
+        "abccd",
+        "acaa",
+        "acac",
+        "acbb",
+        "adcbd",
+        "addc",
+        "b",
+        "bbabdac",
+        "bcbabdab",
+        "bcbd",
+        "bcddbd",
+        "bdcdcdac",
+        "cabbda",
+        "cba",
+        "d",
+        "dcdcbab"
+      ]
+    ],
+    "expected": 49,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aabdca",
+        "ab",
+        "abc",
+        "acabdbba",
+        "addcacaa",
+        "b",
+        "bcddadb",
+        "bda",
+        "c",
+        "caca",
+        "cadcbdd",
+        "cbadc",
+        "ccdaddd",
+        "d",
+        "dad",
+        "dcdd",
+        "dd",
+        "ddbadcb",
+        "dddaaca"
+      ]
+    ],
+    "expected": 41,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "accabbda",
+        "accbcabb",
+        "ada",
+        "b",
+        "bad",
+        "bb",
+        "bbbada",
+        "bd",
+        "bdcbdbca",
+        "c",
+        "cad",
+        "cadbb",
+        "cd",
+        "cdb",
+        "d",
+        "dabbc",
+        "dadababb",
+        "dccabada",
+        "dcdacca"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaab",
+        "aaabaac",
+        "aacacdd",
+        "aadddcac",
+        "abdbbb",
+        "baadba",
+        "bbcbbb",
+        "bbdacdc",
+        "bcccc",
+        "bcdc",
+        "bdbbdaca",
+        "caaabd",
+        "cbdcbdcc",
+        "d",
+        "db",
+        "dc",
+        "dca",
+        "dcba",
+        "dcbcac"
+      ]
+    ],
+    "expected": 54,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "abadab",
+        "abc",
+        "b",
+        "baccddba",
+        "bb",
+        "bccbdbdc",
+        "bdab",
+        "bdcbdbdd",
+        "c",
+        "cbaa",
+        "cda",
+        "cdcdcc",
+        "d",
+        "da",
+        "dccb",
+        "ddacd",
+        "ddddab"
+      ]
+    ],
+    "expected": 41,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaacba",
+        "aabbd",
+        "abbbbacb",
+        "adbdccaa",
+        "addad",
+        "ba",
+        "baab",
+        "badba",
+        "d",
+        "db",
+        "dbbcb",
+        "dbbcdadb",
+        "dbcdda",
+        "dcaaac",
+        "dcacdaa",
+        "dccd",
+        "dccdbcdc",
+        "dd"
+      ]
+    ],
+    "expected": 58,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "ac",
+        "adccdb",
+        "b",
+        "bacbbdbb",
+        "bbdabbc",
+        "bcacad",
+        "bd",
+        "c",
+        "cad",
+        "ccc",
+        "cccccbba",
+        "cdbaca",
+        "cdbbca",
+        "cdbcb",
+        "daacbb",
+        "dac",
+        "dacacac",
+        "db"
+      ]
+    ],
+    "expected": 47,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abc",
+        "abdcdadb",
+        "acbcadc",
+        "acdabb",
+        "b",
+        "baabbcdd",
+        "bcb",
+        "bcbadaa",
+        "bcdcd",
+        "bd",
+        "bdcc",
+        "caadddb",
+        "cabb",
+        "cb",
+        "ccbdbaa",
+        "cdb",
+        "d",
+        "dd",
+        "ddb",
+        "ddcc"
+      ]
+    ],
+    "expected": 51,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aba",
+        "abdcdb",
+        "b",
+        "bbbdaab",
+        "bcdba",
+        "bcdc",
+        "bcdcbbb",
+        "c",
+        "cbbcad",
+        "ccccaba",
+        "cdbacabd",
+        "d",
+        "dbcb",
+        "dcabdac",
+        "dcbac",
+        "ddd",
+        "dddcacc"
+      ]
+    ],
+    "expected": 46,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aacabb",
+        "ababcdd",
+        "bb",
+        "bcb",
+        "bcbddb",
+        "bcdaccc",
+        "bddab",
+        "bddbabca",
+        "caad",
+        "ccbcc",
+        "cd",
+        "d",
+        "dac",
+        "db",
+        "dcdddd",
+        "ddbcadd"
+      ]
+    ],
+    "expected": 40,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aacaadbd",
+        "abadc",
+        "abd",
+        "ac",
+        "acbbbdda",
+        "bcbb",
+        "bdadddc",
+        "c",
+        "ca",
+        "cab",
+        "cb",
+        "cc",
+        "ccabbb",
+        "d",
+        "dbb",
+        "dbcdbcc",
+        "dc",
+        "dcc",
+        "dccdcd",
+        "dcddd"
+      ]
+    ],
+    "expected": 49,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "b",
+        "ba",
+        "baaba",
+        "bab",
+        "bdd",
+        "cabbaa",
+        "cadbbd",
+        "cbbb",
+        "cbcb",
+        "cdaacb",
+        "cdd",
+        "d",
+        "daacdd",
+        "dcbb",
+        "dcbdb",
+        "dcd",
+        "dcdcac"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaaaad",
+        "abba",
+        "acabda",
+        "baabb",
+        "bacc",
+        "bbabdad",
+        "bbbabba",
+        "bdccabdc",
+        "c",
+        "ccacaaa",
+        "d",
+        "da",
+        "dabdaa",
+        "dacabba",
+        "dbaa",
+        "dbd",
+        "dcb",
+        "dcdac",
+        "ddbc",
+        "ddcaa"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "acba",
+        "badc",
+        "bbbddddd",
+        "bcd",
+        "bcdcdcc",
+        "bdababdc",
+        "cababdad",
+        "caddac",
+        "cb",
+        "cbcbbdca",
+        "cca",
+        "ccadbdbc",
+        "ccdd",
+        "cdabbbc",
+        "d",
+        "dacbc",
+        "dc",
+        "ddaab",
+        "dddbd"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aacdbbbd",
+        "aba",
+        "abacb",
+        "ac",
+        "acadbdaa",
+        "adaaada",
+        "bacacc",
+        "bb",
+        "bbbbaba",
+        "bd",
+        "c",
+        "cacdaadc",
+        "cad",
+        "cbcc",
+        "cc",
+        "ccd",
+        "dbbdcdaa",
+        "dcbaacba",
+        "dccb"
+      ]
+    ],
+    "expected": 47,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abcbdb",
+        "acc",
+        "acccbcd",
+        "b",
+        "bb",
+        "bbd",
+        "bc",
+        "bcbad",
+        "bcdba",
+        "bd",
+        "bdaba",
+        "bdadbda",
+        "cbbcd",
+        "cbcdc",
+        "ccdddccc",
+        "cd",
+        "d",
+        "ddbadb",
+        "ddcbdb"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaccdbdb",
+        "abd",
+        "adacb",
+        "bcacbc",
+        "bcbdbcdc",
+        "cabbbd",
+        "cacb",
+        "cacd",
+        "cadccddc",
+        "cbb",
+        "cbdcac",
+        "cc",
+        "cca",
+        "cdccbd",
+        "cddbca",
+        "d",
+        "dacbbbd",
+        "dcbababa",
+        "dcbd",
+        "dda"
+      ]
+    ],
+    "expected": 56,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aabddb",
+        "aad",
+        "accc",
+        "addc",
+        "b",
+        "bbdbad",
+        "bc",
+        "bd",
+        "bdadd",
+        "bddba",
+        "cadaabba",
+        "cbbdcd",
+        "cca",
+        "ccba",
+        "d",
+        "dbcac",
+        "dbccadd",
+        "dcccc",
+        "dd"
+      ]
+    ],
+    "expected": 47,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aacbbdc",
+        "abaab",
+        "adaacca",
+        "baaac",
+        "bc",
+        "bcacbca",
+        "bdacad",
+        "bdccacdb",
+        "c",
+        "cad",
+        "cb",
+        "cbcbcdd",
+        "ccacdabd",
+        "cdabaaac",
+        "d",
+        "dcbdabdb",
+        "dcddba",
+        "dd"
+      ]
+    ],
+    "expected": 41,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "ab",
+        "acba",
+        "bbb",
+        "bcc",
+        "bd",
+        "bdcba",
+        "bddabcd",
+        "caabccdc",
+        "cacb",
+        "cadbb",
+        "cbbddcac",
+        "cbcbacdb",
+        "cdab",
+        "d",
+        "daac",
+        "daacdcba",
+        "dadcab"
+      ]
+    ],
+    "expected": 46,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaacdc",
+        "aaccaa",
+        "abcbadc",
+        "abdbbaaa",
+        "abddd",
+        "ad",
+        "bb",
+        "bc",
+        "bcaddcb",
+        "bcbccb",
+        "cbddc",
+        "cccaadb",
+        "ccda",
+        "cdbda",
+        "cdbdccdc",
+        "d",
+        "daba",
+        "dbdbc",
+        "ddabcbad",
+        "ddbacbda"
+      ]
+    ],
+    "expected": 58,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aacab",
+        "abbabbc",
+        "abdac",
+        "acddbdc",
+        "adbdaddc",
+        "add",
+        "b",
+        "bac",
+        "c",
+        "cadacad",
+        "cbbbda",
+        "cccbaa",
+        "cccbdaa",
+        "cddddd",
+        "da",
+        "dbc",
+        "dcbacb"
+      ]
+    ],
+    "expected": 43,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "adbccdd",
+        "b",
+        "baacddc",
+        "bbacbcdc",
+        "bcbaadd",
+        "bdaaac",
+        "cabd",
+        "cb",
+        "cbadca",
+        "cbbcbc",
+        "cc",
+        "ccccaaa",
+        "cdacab",
+        "cdccbadd",
+        "d",
+        "dadbcca",
+        "dba",
+        "ddcdccb"
+      ]
+    ],
+    "expected": 40,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aacccba",
+        "aadcc",
+        "abb",
+        "ada",
+        "adcaac",
+        "b",
+        "baadabca",
+        "bcdaa",
+        "bda",
+        "caddbcad",
+        "cbadcc",
+        "cbbb",
+        "ccabd",
+        "d",
+        "daccdabb",
+        "dad",
+        "ddd"
+      ]
+    ],
+    "expected": 41,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aac",
+        "aad",
+        "ab",
+        "b",
+        "baadba",
+        "bcaccbbd",
+        "bcbbdad",
+        "bcdd",
+        "bdccca",
+        "bddc",
+        "cba",
+        "cbdaba",
+        "cd",
+        "daabbbd",
+        "dabcdbab",
+        "dacc",
+        "dcaabab",
+        "ddbc",
+        "ddcbb"
+      ]
+    ],
+    "expected": 53,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ab",
+        "acbbacdc",
+        "b",
+        "ba",
+        "baaaa",
+        "babc",
+        "bbcca",
+        "bbcccd",
+        "bdbabbdb",
+        "cabcccab",
+        "cbaaccc",
+        "cbad",
+        "d",
+        "daddc",
+        "dca",
+        "dddada"
+      ]
+    ],
+    "expected": 43,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abdbab",
+        "adcb",
+        "bab",
+        "babccc",
+        "bbcda",
+        "bbdc",
+        "bcaac",
+        "bcdbd",
+        "c",
+        "cab",
+        "cb",
+        "cc",
+        "ccaaad",
+        "ccacabcc",
+        "cd",
+        "cdba",
+        "cddaadda",
+        "daca",
+        "dacbaca",
+        "dcaacd"
+      ]
+    ],
+    "expected": 56,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ababcda",
+        "ac",
+        "accabcab",
+        "acdadbd",
+        "acdbaadc",
+        "adddddbd",
+        "b",
+        "babbca",
+        "baccc",
+        "bcbd",
+        "bdabdd",
+        "bdada",
+        "caaabaaa",
+        "cdb",
+        "d",
+        "dccbdccc",
+        "dddaacdc",
+        "dddbdab"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abac",
+        "abbbc",
+        "abdaaa",
+        "adbacc",
+        "adbc",
+        "b",
+        "bd",
+        "bddbcbbd",
+        "cdab",
+        "cdbabda",
+        "da",
+        "daaa",
+        "dabb",
+        "dbbddaa",
+        "dbdab",
+        "dc",
+        "dcba",
+        "dda",
+        "ddd"
+      ]
+    ],
+    "expected": 54,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaaaa",
+        "ac",
+        "adad",
+        "adb",
+        "ba",
+        "bb",
+        "bcd",
+        "bcdbcdc",
+        "bcddd",
+        "bdbbab",
+        "cabbdab",
+        "cabc",
+        "cbbddc",
+        "ccaab",
+        "cd",
+        "cdaabaac",
+        "cdc",
+        "cddb",
+        "d",
+        "daadcaaa"
+      ]
+    ],
+    "expected": 53,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abaccccb",
+        "adcccc",
+        "bb",
+        "bbadcc",
+        "bbcca",
+        "c",
+        "caa",
+        "cabcdbc",
+        "cacbbcc",
+        "cacdd",
+        "cbcabd",
+        "ccabcba",
+        "cddbccd",
+        "dbc",
+        "dbcdc",
+        "dc",
+        "dcbaddb",
+        "dccbdacd",
+        "dd"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aacaabdb",
+        "aadad",
+        "abaacbbd",
+        "abdcd",
+        "ad",
+        "bacb",
+        "bad",
+        "bdcdacba",
+        "c",
+        "caaa",
+        "caacada",
+        "cacabb",
+        "cbac",
+        "ccb",
+        "ccc",
+        "cdddcc",
+        "dabaaa",
+        "dc",
+        "ddcbb"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aacbc",
+        "abc",
+        "abd",
+        "acbb",
+        "accbdcdb",
+        "acddddb",
+        "adba",
+        "bcc",
+        "bccdbb",
+        "bdcba",
+        "bddbbaba",
+        "c",
+        "cbcdcda",
+        "cdc",
+        "db",
+        "dcabd",
+        "dcbd",
+        "dcd",
+        "dcdc",
+        "ddbb"
+      ]
+    ],
+    "expected": 54,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaabcc",
+        "abdbbdba",
+        "acacccc",
+        "ad",
+        "adc",
+        "bcabbdb",
+        "bcadbbcc",
+        "bcc",
+        "c",
+        "caa",
+        "caac",
+        "cabb",
+        "cbbaca",
+        "ccbca",
+        "cdadca",
+        "da",
+        "dacbdbbb",
+        "ddbabb"
+      ]
+    ],
+    "expected": 47,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abd",
+        "accdaaad",
+        "acdb",
+        "adcdddaa",
+        "bacca",
+        "bb",
+        "bbdad",
+        "bcbdbbb",
+        "bdb",
+        "c",
+        "cbbbcc",
+        "cbc",
+        "ccbccccb",
+        "dbcb",
+        "dbccabab",
+        "dcbccddc",
+        "dd",
+        "ddbacc",
+        "ddcddb"
+      ]
+    ],
+    "expected": 48,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaaaa",
+        "aba",
+        "ad",
+        "adaaaacc",
+        "adabac",
+        "adabdb",
+        "adcabd",
+        "ba",
+        "bacdaba",
+        "c",
+        "ca",
+        "cdc",
+        "dababcc",
+        "dabcacbd",
+        "dadccbd",
+        "dbca",
+        "dcbbbadc",
+        "ddaddacb",
+        "ddc"
+      ]
+    ],
+    "expected": 54,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aaa",
+        "aabadbda",
+        "abaac",
+        "abacbd",
+        "ac",
+        "acadd",
+        "babb",
+        "bacccaaa",
+        "bb",
+        "bbbccbcd",
+        "bc",
+        "bdc",
+        "ca",
+        "cd",
+        "d",
+        "da",
+        "dadbbad",
+        "dc",
+        "ddadbadb"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abcaadb",
+        "abda",
+        "acbabdc",
+        "adb",
+        "b",
+        "baa",
+        "bbadcd",
+        "bbbc",
+        "bbda",
+        "bcb",
+        "bcddd",
+        "bddbbbb",
+        "caacddd",
+        "cabdc",
+        "caccddd",
+        "dbbdabb",
+        "dbcbca",
+        "dcadbabb",
+        "dd",
+        "ddaddd"
+      ]
+    ],
+    "expected": 52,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aad",
+        "acd",
+        "ada",
+        "adcbbab",
+        "b",
+        "bad",
+        "bbd",
+        "bdc",
+        "bdcdcad",
+        "c",
+        "cb",
+        "ccaadd",
+        "ccccacb",
+        "ccdbcbb",
+        "da",
+        "dbb",
+        "dbcaaac",
+        "dcbdcbb"
+      ]
+    ],
+    "expected": 44,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aab",
+        "abdb",
+        "acaba",
+        "adbbaa",
+        "adbdaad",
+        "baa",
+        "baacbbd",
+        "bbdbc",
+        "bccccaab",
+        "bd",
+        "c",
+        "ccabddcd",
+        "ccdbcb",
+        "cdacac",
+        "cdbcddaa",
+        "d",
+        "dd",
+        "ddcab"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "abbbaadc",
+        "accabab",
+        "adaabbda",
+        "adacbbb",
+        "b",
+        "bbadcb",
+        "bccbcc",
+        "bdbdb",
+        "c",
+        "cbb",
+        "cbbcdcc",
+        "cbbdbdd",
+        "cca",
+        "cdc",
+        "dac",
+        "dbadacd",
+        "dc",
+        "ddbddd"
+      ]
+    ],
+    "expected": 46,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aacddcbc",
+        "aca",
+        "adaab",
+        "bb",
+        "bbd",
+        "bca",
+        "cad",
+        "cb",
+        "cbaa",
+        "ccbbcb",
+        "ccca",
+        "cccacc",
+        "dc",
+        "dca",
+        "dcbadbb",
+        "dcbd",
+        "ddacb",
+        "ddcbcad",
+        "dddcabb"
+      ]
+    ],
+    "expected": 55,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abcb",
+        "abcba",
+        "abcc",
+        "acbabdbb",
+        "acbcdb",
+        "baaacc",
+        "bbbaba",
+        "bc",
+        "bcdbba",
+        "bdd",
+        "c",
+        "cacb",
+        "cddadd",
+        "d",
+        "dabc",
+        "dadadbc",
+        "dadba",
+        "dcacc",
+        "dd"
+      ]
+    ],
+    "expected": 53,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaabcbc",
+        "aab",
+        "aaddb",
+        "abcbc",
+        "ad",
+        "bbca",
+        "cab",
+        "cbccaac",
+        "cbdcb",
+        "cc",
+        "ccaccb",
+        "cdacbd",
+        "dababd",
+        "dabd",
+        "dadcbba",
+        "dda",
+        "ddcbbbc",
+        "ddcd"
+      ]
+    ],
+    "expected": 52,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaabddb",
+        "acc",
+        "bababdad",
+        "bba",
+        "bcadb",
+        "bdadcadb",
+        "bdd",
+        "c",
+        "caabbbdb",
+        "cab",
+        "cbccdccc",
+        "cc",
+        "ccb",
+        "ccbd",
+        "cdaad",
+        "dac",
+        "db",
+        "dc",
+        "ddaa",
+        "ddcc"
+      ]
+    ],
+    "expected": 48,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abdcdd",
+        "ac",
+        "acabdb",
+        "addc",
+        "b",
+        "bcadabdc",
+        "bdcbbbc",
+        "cdcaadb",
+        "cddbacaa",
+        "db",
+        "dbc",
+        "dbdaaab",
+        "dcbd",
+        "dcdbadbb",
+        "ddaca",
+        "ddbbc",
+        "ddc",
+        "dddaca"
+      ]
+    ],
+    "expected": 47,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aac",
+        "aadb",
+        "ababacd",
+        "abcbaaaa",
+        "abdddbbc",
+        "accb",
+        "accc",
+        "adbcc",
+        "adccccba",
+        "addcbc",
+        "bb",
+        "bdbdda",
+        "cac",
+        "cba",
+        "cccaa",
+        "ccda",
+        "cdcbdbc",
+        "daccdabc",
+        "ddcbd"
+      ]
+    ],
+    "expected": 53,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaccbbcb",
+        "ad",
+        "adbaa",
+        "adc",
+        "ba",
+        "baaa",
+        "babada",
+        "babbc",
+        "bb",
+        "bbb",
+        "bbbbdbdc",
+        "bcbdb",
+        "bcc",
+        "bdacdcca",
+        "c",
+        "cd",
+        "da",
+        "dbdb",
+        "dc",
+        "dccccd"
+      ]
+    ],
+    "expected": 52,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaa",
+        "aadabac",
+        "abddaac",
+        "bba",
+        "bbaabbdc",
+        "bdad",
+        "cb",
+        "cbddbc",
+        "ccadddad",
+        "ccda",
+        "cdccd",
+        "da",
+        "dadcb",
+        "dbdabaa",
+        "dcbbbad",
+        "ddbaad",
+        "ddbcbd",
+        "ddbdcaa",
+        "ddcb"
+      ]
+    ],
+    "expected": 55,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aacadd",
+        "abaababa",
+        "abd",
+        "accaadd",
+        "acd",
+        "add",
+        "addcbdb",
+        "ba",
+        "baca",
+        "bb",
+        "bbddb",
+        "bcbbb",
+        "bcdbdaba",
+        "caabba",
+        "caadacd",
+        "cbd",
+        "ccbcdad",
+        "d",
+        "dbdaaba"
+      ]
+    ],
+    "expected": 53,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaadbbd",
+        "aaddb",
+        "abb",
+        "abbdccdd",
+        "acabb",
+        "ad",
+        "adb",
+        "bbaddccd",
+        "bcab",
+        "bcc",
+        "cad",
+        "daaddcdc",
+        "dacc",
+        "daddd",
+        "db",
+        "dbc",
+        "dbcacad",
+        "dcbda",
+        "dcc",
+        "ddbcca"
+      ]
+    ],
+    "expected": 55,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaacbcbd",
+        "aacaddb",
+        "aaccdc",
+        "abac",
+        "abd",
+        "b",
+        "bbda",
+        "bd",
+        "c",
+        "caa",
+        "caabacb",
+        "cabdacba",
+        "cac",
+        "cba",
+        "cbbd",
+        "cbd",
+        "cccaccd",
+        "dcd"
+      ]
+    ],
+    "expected": 49,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "ab",
+        "abaa",
+        "abcacdbb",
+        "acb",
+        "acccbbba",
+        "b",
+        "ba",
+        "babaa",
+        "caacabdb",
+        "cbcb",
+        "cc",
+        "ccbabcc",
+        "cd",
+        "cda",
+        "cddddabd",
+        "dbaabcba",
+        "dbca",
+        "dcabdbcb",
+        "ddba"
+      ]
+    ],
+    "expected": 49,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aadad",
+        "abdcdca",
+        "abdd",
+        "ad",
+        "adadbaa",
+        "bbd",
+        "bcaccaca",
+        "bcdab",
+        "bcdbacd",
+        "bd",
+        "caaba",
+        "cb",
+        "cbaccccc",
+        "cc",
+        "ccab",
+        "cddbbbdc",
+        "da",
+        "dacb",
+        "dba"
+      ]
+    ],
+    "expected": 52,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aabdccbd",
+        "ac",
+        "acaaca",
+        "baba",
+        "bbddbcb",
+        "bdbaad",
+        "bdbdd",
+        "bddacb",
+        "c",
+        "cadbd",
+        "cbaacc",
+        "ccb",
+        "ccbccdca",
+        "cd",
+        "dbc",
+        "dbdb",
+        "dd",
+        "dda"
+      ]
+    ],
+    "expected": 48,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaccbcd",
+        "aadd",
+        "ab",
+        "abd",
+        "ac",
+        "addbdc",
+        "b",
+        "bacacc",
+        "bbdd",
+        "bbdda",
+        "c",
+        "caa",
+        "cb",
+        "ccdbcd",
+        "d",
+        "daba",
+        "dbbca",
+        "dcad"
+      ]
+    ],
+    "expected": 42,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abba",
+        "abd",
+        "abdba",
+        "adb",
+        "adcd",
+        "adcdcab",
+        "addddb",
+        "baddbba",
+        "bcbbdb",
+        "c",
+        "cbdba",
+        "cca",
+        "ccbdbb",
+        "ccdabbba",
+        "cdb",
+        "cddcad",
+        "d",
+        "dacddcda"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aabd",
+        "aacaad",
+        "abaddaa",
+        "acdccb",
+        "adbbcac",
+        "adbdaab",
+        "b",
+        "babbba",
+        "badb",
+        "bbc",
+        "bcbbcad",
+        "bcdc",
+        "bdaba",
+        "cbb",
+        "cbd",
+        "cbda",
+        "cd",
+        "cdd",
+        "ddbaddcc"
+      ]
+    ],
+    "expected": 52,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aab",
+        "aaba",
+        "ab",
+        "acaaabd",
+        "ad",
+        "adbacdca",
+        "b",
+        "badba",
+        "badcaba",
+        "bbdaabcd",
+        "bcc",
+        "bdcda",
+        "cabdc",
+        "cadc",
+        "cbdadc",
+        "cc",
+        "dabac",
+        "dbbccdb",
+        "ddddcabb"
+      ]
+    ],
+    "expected": 47,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aadb",
+        "ab",
+        "abdbba",
+        "acb",
+        "adddc",
+        "bcbcba",
+        "bccbcc",
+        "c",
+        "ca",
+        "cbcdad",
+        "cccbd",
+        "cda",
+        "dbcbbda",
+        "dc",
+        "dcadb",
+        "ddbc",
+        "ddbdc",
+        "dddbdad"
+      ]
+    ],
+    "expected": 45,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaaaaca",
+        "aababb",
+        "aacbcad",
+        "aacc",
+        "abdac",
+        "acddb",
+        "babc",
+        "bb",
+        "bbccb",
+        "bc",
+        "bccab",
+        "cb",
+        "ccdaaccc",
+        "cd",
+        "d",
+        "da",
+        "dabc",
+        "dabdcb",
+        "dbdcb",
+        "dddc"
+      ]
+    ],
+    "expected": 51,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abacadda",
+        "ac",
+        "acdadbd",
+        "addddcab",
+        "babc",
+        "bba",
+        "bc",
+        "bcaccadb",
+        "bdb",
+        "cabd",
+        "cadcdd",
+        "cbabbdbd",
+        "cbacac",
+        "cbdbd",
+        "daababa",
+        "dbacdba",
+        "dd",
+        "ddcaa",
+        "ddd"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abbbddb",
+        "abdaacd",
+        "acdc",
+        "ad",
+        "baa",
+        "bbacbad",
+        "bc",
+        "bcbccc",
+        "bdaad",
+        "bdabc",
+        "caadcdb",
+        "caccbb",
+        "cacdbd",
+        "cbbd",
+        "cbdd",
+        "ccbc",
+        "daa",
+        "dadccbcd",
+        "dba",
+        "dddbaabb"
+      ]
+    ],
+    "expected": 56,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abdcddb",
+        "ac",
+        "acacabc",
+        "adcccc",
+        "bacca",
+        "bccddbaa",
+        "cacc",
+        "cbddd",
+        "ccaaabb",
+        "ccabbaaa",
+        "ccd",
+        "cd",
+        "cdad",
+        "d",
+        "daccdbb",
+        "db",
+        "dd",
+        "ddc",
+        "ddddbbc"
+      ]
+    ],
+    "expected": 46,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aaca",
+        "acccccb",
+        "adadcd",
+        "adbdaaca",
+        "adc",
+        "b",
+        "bab",
+        "bb",
+        "bbdaabab",
+        "bcd",
+        "bdca",
+        "c",
+        "cdcab",
+        "cdda",
+        "dacadadd",
+        "dbaddbd",
+        "dcdcbaca",
+        "ddbadccd"
+      ]
+    ],
+    "expected": 41,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aabca",
+        "abcdcadd",
+        "ac",
+        "adbabb",
+        "adbad",
+        "adccd",
+        "b",
+        "bacddcb",
+        "bccd",
+        "c",
+        "cbddbbb",
+        "cdcdaaca",
+        "cddbd",
+        "d",
+        "dbaacbab",
+        "dda",
+        "ddbccd"
+      ]
+    ],
+    "expected": 43,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abbadbb",
+        "adddddd",
+        "bbcdaacc",
+        "bbda",
+        "bcbcb",
+        "bcbda",
+        "bcdcab",
+        "bd",
+        "bdddcbab",
+        "cab",
+        "cbbbbbd",
+        "cbc",
+        "ccddabc",
+        "cdbbdd",
+        "cdddbbdd",
+        "dadcbbcd",
+        "dba",
+        "dd",
+        "ddacb"
+      ]
+    ],
+    "expected": 52,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abacd",
+        "abcabad",
+        "abcbbb",
+        "ad",
+        "adddd",
+        "b",
+        "bacdbaac",
+        "bb",
+        "bbacbc",
+        "bbc",
+        "caa",
+        "cbb",
+        "ccbbccb",
+        "ccdabab",
+        "cdda",
+        "d",
+        "dcbabc"
+      ]
+    ],
+    "expected": 43,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abdad",
+        "acbd",
+        "ada",
+        "adaabcab",
+        "b",
+        "baba",
+        "bac",
+        "baccaba",
+        "baddacba",
+        "bbb",
+        "c",
+        "cbcddc",
+        "ccbc",
+        "d",
+        "dbbdbddb",
+        "ddacbbd",
+        "ddbacab",
+        "ddcacaa",
+        "ddda"
+      ]
+    ],
+    "expected": 48,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aabbc",
+        "aacbca",
+        "aaddaabc",
+        "aba",
+        "acd",
+        "bacbdaa",
+        "badcda",
+        "bb",
+        "bbcda",
+        "bbdbadbc",
+        "bcabddd",
+        "cacd",
+        "cbadb",
+        "cbccbabc",
+        "cbda",
+        "cd",
+        "cdca",
+        "d",
+        "dbd"
+      ]
+    ],
+    "expected": 48,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aadda",
+        "abbcc",
+        "accdc",
+        "acdccbd",
+        "ada",
+        "bad",
+        "bbabacdb",
+        "bbacddd",
+        "bbddb",
+        "bcc",
+        "bdbcacdc",
+        "c",
+        "ca",
+        "cabdbacd",
+        "cad",
+        "cbbdbda",
+        "cdacad",
+        "dabbd",
+        "dcdcbdaa",
+        "ddbdb"
+      ]
+    ],
+    "expected": 48,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aacbacc",
+        "aadaca",
+        "ac",
+        "acbdc",
+        "badacb",
+        "bbadc",
+        "bc",
+        "bcbdcddc",
+        "bd",
+        "bdadb",
+        "bdb",
+        "bdbbaba",
+        "c",
+        "cbaa",
+        "cbdd",
+        "ddbcd",
+        "ddbd",
+        "dddabbd"
+      ]
+    ],
+    "expected": 53,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aa",
+        "aaa",
+        "abad",
+        "abcb",
+        "acdab",
+        "ad",
+        "b",
+        "bb",
+        "bcccd",
+        "c",
+        "cb",
+        "ccaccb",
+        "cdaacb",
+        "cdac",
+        "cdb",
+        "daab",
+        "dadbaaab",
+        "dcbbaacd",
+        "dd"
+      ]
+    ],
+    "expected": 47,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abaccadd",
+        "acb",
+        "acbdd",
+        "ada",
+        "adddcb",
+        "ba",
+        "baaccb",
+        "babda",
+        "bcdddc",
+        "c",
+        "cabadcdb",
+        "cbaa",
+        "ccac",
+        "d",
+        "da",
+        "daad",
+        "daaddbb",
+        "dabdcd"
+      ]
+    ],
+    "expected": 48,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aabcdc",
+        "ab",
+        "abccc",
+        "adaab",
+        "addab",
+        "bcbaabdc",
+        "bccdadcc",
+        "bcdcbadb",
+        "c",
+        "caa",
+        "caabaaa",
+        "cacccaaa",
+        "cad",
+        "cbaad",
+        "cdadaca",
+        "cdccadc",
+        "daa",
+        "dac",
+        "dbbcaa"
+      ]
+    ],
+    "expected": 53,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aababd",
+        "abab",
+        "abb",
+        "ac",
+        "accbccbd",
+        "acccddd",
+        "ad",
+        "adcaacda",
+        "adcacab",
+        "bacaaacc",
+        "bbaccca",
+        "bccaad",
+        "bcccaaab",
+        "bdb",
+        "cbacadac",
+        "ccdb",
+        "d",
+        "dbab",
+        "dbcbcadc"
+      ]
+    ],
+    "expected": 55,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ab",
+        "acaaadd",
+        "accccad",
+        "ada",
+        "b",
+        "bcadb",
+        "bdcddcc",
+        "bddc",
+        "c",
+        "cbb",
+        "cbddc",
+        "ccdccaca",
+        "da",
+        "daa",
+        "db",
+        "dc",
+        "dcabcb"
+      ]
+    ],
+    "expected": 41,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aac",
+        "ab",
+        "ac",
+        "acbbc",
+        "accadbdb",
+        "adadda",
+        "bbadaad",
+        "bdcabdd",
+        "c",
+        "cab",
+        "cadddcb",
+        "cba",
+        "cbd",
+        "cbdabadc",
+        "cbdc",
+        "dbbacaba",
+        "dcbaa",
+        "dda",
+        "ddb"
+      ]
+    ],
+    "expected": 49,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abb",
+        "abba",
+        "abbd",
+        "abbdddbb",
+        "ac",
+        "b",
+        "bba",
+        "bbccab",
+        "bcacbacb",
+        "bdb",
+        "c",
+        "ccccdcab",
+        "cdbadb",
+        "cdbcdbbc",
+        "cdccdab",
+        "dabaab",
+        "dbb",
+        "dcabab",
+        "dcbdbaa"
+      ]
+    ],
+    "expected": 54,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "aabcbb",
+        "aacad",
+        "add",
+        "b",
+        "badbcbdd",
+        "bb",
+        "bcaabcba",
+        "bcc",
+        "bddcbd",
+        "ca",
+        "caa",
+        "cbab",
+        "cc",
+        "cccbab",
+        "cdbcc",
+        "dacaddad",
+        "daccbd",
+        "dad",
+        "ddbd"
+      ]
+    ],
+    "expected": 49,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "abc",
+        "acbbdc",
+        "add",
+        "b",
+        "bbbdaba",
+        "bbcbadcc",
+        "bcdabbba",
+        "bcdcbd",
+        "bd",
+        "bdcbab",
+        "cbbb",
+        "cbcca",
+        "cc",
+        "ccbbcac",
+        "cccacba",
+        "cd",
+        "d",
+        "dabd",
+        "dcaac"
+      ]
+    ],
+    "expected": 47,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aaaabcb",
+        "abddc",
+        "acc",
+        "adddccca",
+        "b",
+        "ba",
+        "bb",
+        "bbbacb",
+        "bc",
+        "bdd",
+        "c",
+        "cbba",
+        "ccaadb",
+        "ccbdb",
+        "cdbbac",
+        "daa",
+        "dbdacc",
+        "dcdcb"
+      ]
+    ],
+    "expected": 37,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "aabbc",
+        "aad",
+        "abbba",
+        "accbddab",
+        "bdaabcb",
+        "bdbd",
+        "bdccacd",
+        "bddcdddb",
+        "c",
+        "caabbccd",
+        "cdbd",
+        "d",
+        "da",
+        "dadbba",
+        "db",
+        "dbcaccda",
+        "ddaab"
+      ]
+    ],
+    "expected": 42,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "adaaaa",
+        "b",
+        "badbabac",
+        "bbacc",
+        "bbdbdd",
+        "bcabd",
+        "cabcdb",
+        "cacd",
+        "cb",
+        "cbdca",
+        "ccddbbb",
+        "cdbabdad",
+        "cddcda",
+        "d",
+        "daadbca",
+        "dac",
+        "dba",
+        "dbdccdcc",
+        "dcc"
+      ]
+    ],
+    "expected": 48,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aa",
+        "acadac",
+        "acbbd",
+        "acc",
+        "accac",
+        "baabda",
+        "babdbaa",
+        "baddad",
+        "bb",
+        "bbadd",
+        "bcaabbb",
+        "bccacdb",
+        "bd",
+        "bdccabba",
+        "ca",
+        "caa",
+        "daccac",
+        "dc",
+        "dca",
+        "dddadddc"
+      ]
+    ],
+    "expected": 54,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "addabca",
+        "bccbb",
+        "bdbaacad",
+        "c",
+        "caaa",
+        "ccaba",
+        "cccaa",
+        "cd",
+        "cdb",
+        "d",
+        "dadacac",
+        "db",
+        "dcbc",
+        "dccbbdc",
+        "dcccba",
+        "dd",
+        "ddbcb",
+        "ddcbcbba"
+      ]
+    ],
+    "expected": 45,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aabbcca",
+        "abcccbc",
+        "abddcb",
+        "acddadd",
+        "adbcd",
+        "addc",
+        "b",
+        "bbca",
+        "c",
+        "caac",
+        "caaca",
+        "cbd",
+        "cbdddc",
+        "cd",
+        "cdcd",
+        "daba",
+        "dbb",
+        "dbbbad"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "abcdc",
+        "ac",
+        "ad",
+        "bbab",
+        "bbbabdad",
+        "bbc",
+        "bbdac",
+        "bcbbccad",
+        "bd",
+        "bddbb",
+        "cabadba",
+        "cada",
+        "cbadaba",
+        "cbdcc",
+        "ccad",
+        "da",
+        "dcbdcc",
+        "dccb",
+        "ddddabca"
+      ]
+    ],
+    "expected": 50,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "a",
+        "ab",
+        "acadad",
+        "acbaacaa",
+        "acdddc",
+        "adcdbbdd",
+        "baac",
+        "baaccda",
+        "bbaaacb",
+        "bdadab",
+        "c",
+        "cbac",
+        "cbddca",
+        "cc",
+        "d",
+        "dadc",
+        "dbc",
+        "ddb",
+        "dddbbbbc"
+      ]
+    ],
+    "expected": 47,
+    "kind": "generated"
+  },
+  {
+    "args": [
+      [
+        "aacbad",
+        "abbb",
+        "adbacc",
+        "b",
+        "bb",
+        "bc",
+        "bcc",
+        "bd",
+        "bdb",
+        "c",
+        "cacdbdd",
+        "ccbadb",
+        "cdaadc",
+        "cdbccdcb",
+        "da",
+        "dbc",
+        "dcdbbdc",
+        "ddcaa"
+      ]
+    ],
+    "expected": 38,
+    "kind": "generated"
+  }
+]

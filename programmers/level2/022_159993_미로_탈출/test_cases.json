@@ -1,0 +1,374 @@
+[
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "SOOOL",
+        "XXXXO",
+        "OOOOO",
+        "OXXXX",
+        "OOOOE"
+      ]
+    ],
+    "expected": 16,
+    "alternative": true
+  },
+  {
+    "source": "official_example",
+    "args": [
+      [
+        "LOOXS",
+        "OOOOX",
+        "OOOOO",
+        "OOOOO",
+        "EOOOO"
+      ]
+    ],
+    "expected": -1,
+    "alternative": true
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OEOOXOXS",
+        "OOOOOXXO",
+        "OOLXOOOX",
+        "OOOOOOOX",
+        "XXXOXOOO",
+        "OOOXXOOO",
+        "OOOOOXOO",
+        "XOOOOOOX"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XOOOXO",
+        "EOOXOX",
+        "OOOOXL",
+        "OOOOOO",
+        "OOXOSO"
+      ]
+    ],
+    "expected": 11
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XOOOOOX",
+        "OEOXOXO",
+        "OSOOOOO",
+        "OOOOOXO",
+        "OXXOOOX",
+        "OOOOXOO",
+        "OOOOLOX",
+        "XOXOOOO"
+      ]
+    ],
+    "expected": 15
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOOSXOX",
+        "OXOOXXO",
+        "XOXXOXX",
+        "OXOLOOO",
+        "OXOOOXO",
+        "OOOOOOE"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "SLOOOOXO",
+        "XOXOOOOO",
+        "OOOXOXOO",
+        "OOOOOEOO",
+        "OXXOOXOO",
+        "XOOXXOOX"
+      ]
+    ],
+    "expected": 8
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOXOOOO",
+        "OOOOOXO",
+        "OOOLOOO",
+        "OXOOXOO",
+        "OSOOOXO",
+        "OXOOXOO",
+        "OOXOOEX"
+      ]
+    ],
+    "expected": 10
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOOXXOOX",
+        "OOOEOOOX",
+        "OOOOOXOX",
+        "OOXSOXXO",
+        "OXOLOXXO",
+        "XOXOXOXX",
+        "OOOOOOOX"
+      ]
+    ],
+    "expected": 4
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OSOXOO",
+        "OOOOLO",
+        "OOOOXO",
+        "OOXOOX",
+        "OXEOOX",
+        "OOOXOX"
+      ]
+    ],
+    "expected": 9
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XOOOOOO",
+        "OOXOXOX",
+        "XOEOOOX",
+        "OSOOXOL",
+        "OOOXOOO"
+      ]
+    ],
+    "expected": 12
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OXOXOOOO",
+        "XOOXXLXX",
+        "SOOOOXOO",
+        "OOXXOXOO",
+        "OXOOOXXO",
+        "OOOOXOOX",
+        "OOXOOOOO",
+        "OOOOOEOO"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OXEOOOX",
+        "OOXXOXO",
+        "XOOOOOO",
+        "OOXOXOX",
+        "XOOOSXO",
+        "LOOOXOX"
+      ]
+    ],
+    "expected": 16
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOSOO",
+        "XOOOO",
+        "EOOXO",
+        "OOOOO",
+        "OOOOX",
+        "OOOOO",
+        "OLOOO",
+        "OXXOO"
+      ]
+    ],
+    "expected": 12
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOOOO",
+        "EOOOO",
+        "OXSOO",
+        "OOOOO",
+        "OOLXX"
+      ]
+    ],
+    "expected": 7
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OXOLOXEO",
+        "XOOOOOOS",
+        "OOXOOXOO",
+        "OXOOOOOX",
+        "XXOXXOOX"
+      ]
+    ],
+    "expected": 10
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOOSO",
+        "OOOXX",
+        "OOOOO",
+        "XOOOO",
+        "EOXLO"
+      ]
+    ],
+    "expected": 11
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOOOOOOO",
+        "OOXOOOOO",
+        "XOXOXSXO",
+        "EXLXXOOO",
+        "OOXOOOOO",
+        "OXOOOXOO"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOOXOL",
+        "OOOOXO",
+        "OOOOXO",
+        "OOOOXO",
+        "OOXSOO",
+        "OOOOEX",
+        "OXOOOO"
+      ]
+    ],
+    "expected": 12
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XOOOXOOO",
+        "OOOOOOOO",
+        "LOXOOOOX",
+        "OXOOOOOO",
+        "EOOOOOOO",
+        "OOSXOOOO"
+      ]
+    ],
+    "expected": 7
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOXOO",
+        "XOLOE",
+        "SXOXO",
+        "XXOOX",
+        "OXOOO"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OLOOOO",
+        "OXXOOO",
+        "SOOOOO",
+        "XOOOOE",
+        "XOOOXO",
+        "XOOOOO"
+      ]
+    ],
+    "expected": 10
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XOOXOOOO",
+        "OXOXOOOO",
+        "OOOLOXOO",
+        "EOOOOOOO",
+        "OOXXOOOS"
+      ]
+    ],
+    "expected": 10
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "XOOOO",
+        "OOOOX",
+        "OOOOX",
+        "EOOOO",
+        "XOOOO",
+        "LOSOO"
+      ]
+    ],
+    "expected": 6
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OXOOO",
+        "OOXEO",
+        "SOOXX",
+        "OXOOO",
+        "OOOOO",
+        "OOOOX",
+        "OOOOO",
+        "OXLOX"
+      ]
+    ],
+    "expected": -1
+  },
+  {
+    "source": "generated_comparison",
+    "args": [
+      [
+        "OOXOOE",
+        "SOOXOO",
+        "OOOXXO",
+        "XOXOOO",
+        "OOLXOO",
+        "OOOOOX",
+        "XOOOOO",
+        "OOOOOO"
+      ]
+    ],
+    "expected": 14
+  }
+]

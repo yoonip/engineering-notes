@@ -1,8 +1,3 @@
-# 문제: 롤케이크 자르기
-# 원문: https://school.programmers.co.kr/learn/courses/30/lessons/132265
-# 풀이: 왼쪽 종류는 set, 오른쪽 남은 수는 Counter로 관리한다. 경계를 한 칸 옮길 때 필요한 두 상태만 갱신한다.
-# 복잡도: 토핑 N개·종류 U개: 평균 시간 O(N), 추가 공간 O(U).
-
 from collections import Counter
 
 def solution(topping):
@@ -12,8 +7,10 @@ def solution(topping):
     for value in topping:
         left.add(value)
         right[value] -= 1
+        # 오른쪽에서 사라진 종류의 키도 지워 종류 수를 맞춘다.
         if right[value] == 0:
             del right[value]
+        # 개수가 아니라 서로 다른 토핑 종류 수를 비교한다.
         if len(left) == len(right):
             answer += 1
     return answer

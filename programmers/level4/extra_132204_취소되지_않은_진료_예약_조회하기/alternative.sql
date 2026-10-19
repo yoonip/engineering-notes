@@ -1,0 +1,4 @@
+-- DATE 함수로 일자만 비교하는 CTE를 사용합니다. 명료하지만 원본 날짜 인덱스의 범위 탐색이 불리할 수 있습니다.
+WITH selected AS (SELECT * FROM APPOINTMENT WHERE DATE(APNT_YMD)='2022-04-13' AND MCDP_CD='CS' AND APNT_CNCL_YN='N')
+SELECT a.APNT_NO,p.PT_NAME,a.PT_NO,a.MCDP_CD,d.DR_NAME,a.APNT_YMD
+FROM selected a JOIN PATIENT p ON p.PT_NO=a.PT_NO JOIN DOCTOR d ON d.DR_ID=a.MDDR_ID ORDER BY a.APNT_YMD;

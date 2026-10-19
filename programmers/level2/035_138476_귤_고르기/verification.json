@@ -1,0 +1,12 @@
+{
+  "problem_id": 138476,
+  "python_version": "3.12.14",
+  "primary_cases_passed": 27,
+  "alternative_cases_passed": 27,
+  "original_submission_score": 100,
+  "source_sha256": "f173621f74c2ab7fcd5d9e9b7cf2c3fc41cd3ab94e2cf9301d8ddb6f9ee4f4bb",
+  "command": "python test_solution.py",
+  "official_examples_passed": 3,
+  "extended_generated_comparisons_passed": 70,
+  "upper_boundary_passed": false
+}

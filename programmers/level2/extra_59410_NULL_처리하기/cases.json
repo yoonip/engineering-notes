@@ -1,0 +1,3988 @@
+{
+  "problem_id": 59410,
+  "scope": "SQLite compatibility checks, not a live MySQL server",
+  "schemas": {
+    "ANIMAL_INS": [
+      "ANIMAL_ID",
+      "ANIMAL_TYPE",
+      "DATETIME",
+      "INTAKE_CONDITION",
+      "NAME",
+      "SEX_UPON_INTAKE"
+    ]
+  },
+  "cases": [
+    {
+      "label": "official-example",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A350276",
+            "Cat",
+            "2017-08-13 13:50:00",
+            "Normal",
+            "Jewel",
+            "Spayed Female"
+          ],
+          [
+            "A350375",
+            "Cat",
+            "2017-03-06 15:01:00",
+            "Normal",
+            "Meo",
+            "Neutered Male"
+          ],
+          [
+            "A368930",
+            "Dog",
+            "2014-06-08 13:20:00",
+            "Normal",
+            null,
+            "Spayed Female"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Cat",
+          "Jewel",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Meo",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "No name",
+          "Spayed Female"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Cat",
+            "2024-01-01 21:59:00",
+            "Normal",
+            "Pickle",
+            "Spayed Female"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 10:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Female"
+          ],
+          [
+            "A002",
+            "Dog",
+            "2024-01-03 23:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Female"
+          ],
+          [
+            "A003",
+            "Cat",
+            "2024-01-04 05:59:00",
+            "Normal",
+            "Zed",
+            "Neutered Male"
+          ],
+          [
+            "A004",
+            "Dog",
+            "2024-01-05 12:59:00",
+            "Normal",
+            "Bob",
+            "Intact Male"
+          ],
+          [
+            "A005",
+            "Dog",
+            "2024-01-06 11:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Male"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 02:59:00",
+            "Normal",
+            "Zed",
+            "Intact Male"
+          ],
+          [
+            "A007",
+            "Dog",
+            "2024-01-08 10:59:00",
+            "Normal",
+            "Bell",
+            "Intact Male"
+          ],
+          [
+            "A008",
+            "Cat",
+            "2024-01-09 00:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Female"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 05:59:00",
+            "Normal",
+            "Pickle",
+            "Neutered Male"
+          ],
+          [
+            "A010",
+            "Dog",
+            "2024-01-11 00:59:00",
+            "Normal",
+            "Bell",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Cat",
+          "Pickle",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Bob",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Bell",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Bell",
+          "Neutered Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 09:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Female"
+          ],
+          [
+            "A001",
+            "Dog",
+            "2024-01-02 10:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Male"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 08:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Male"
+          ],
+          [
+            "A003",
+            "Cat",
+            "2024-01-04 18:59:00",
+            "Normal",
+            "Bob",
+            "Intact Female"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 17:59:00",
+            "Normal",
+            "Sabrina",
+            "Neutered Male"
+          ],
+          [
+            "A005",
+            "Cat",
+            "2024-01-06 01:59:00",
+            "Normal",
+            "Zed",
+            "Intact Male"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 11:59:00",
+            "Normal",
+            "Lucy",
+            "Neutered Male"
+          ],
+          [
+            "A007",
+            "Dog",
+            "2024-01-08 17:59:00",
+            "Normal",
+            "Rogan",
+            "Spayed Female"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 13:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 22:59:00",
+            "Normal",
+            "Ella",
+            "Intact Female"
+          ],
+          [
+            "A010",
+            "Dog",
+            "2024-01-11 09:59:00",
+            "Normal",
+            "Lucy",
+            "Spayed Female"
+          ],
+          [
+            "A011",
+            "Dog",
+            "2024-01-12 01:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Male"
+          ],
+          [
+            "A012",
+            "Dog",
+            "2024-01-13 21:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A013",
+            "Cat",
+            "2024-01-14 10:59:00",
+            "Normal",
+            null,
+            "Intact Male"
+          ],
+          [
+            "A014",
+            "Cat",
+            "2024-01-15 13:59:00",
+            "Normal",
+            "Bell",
+            "Intact Female"
+          ],
+          [
+            "A015",
+            "Cat",
+            "2024-01-16 11:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Male"
+          ],
+          [
+            "A016",
+            "Cat",
+            "2024-01-17 06:59:00",
+            "Normal",
+            "",
+            "Intact Female"
+          ],
+          [
+            "A017",
+            "Dog",
+            "2024-01-18 12:59:00",
+            "Normal",
+            "Bob",
+            "Spayed Female"
+          ],
+          [
+            "A018",
+            "Cat",
+            "2024-01-19 12:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Male"
+          ],
+          [
+            "A019",
+            "Dog",
+            "2024-01-20 03:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Male"
+          ],
+          [
+            "A020",
+            "Dog",
+            "2024-01-21 18:59:00",
+            "Normal",
+            "Rogan",
+            "Neutered Male"
+          ],
+          [
+            "A021",
+            "Cat",
+            "2024-01-22 00:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ],
+          [
+            "A022",
+            "Dog",
+            "2024-01-23 19:59:00",
+            "Normal",
+            "Zed",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "Mitty",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Mitty",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Lucy",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Ella",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Lucy",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "No name",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Bell",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Bob",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Neutered Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Cat",
+            "2024-01-01 06:59:00",
+            "Normal",
+            "Rogan",
+            "Spayed Female"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 03:59:00",
+            "Normal",
+            "",
+            "Spayed Female"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 08:59:00",
+            "Normal",
+            "el",
+            "Neutered Male"
+          ],
+          [
+            "A003",
+            "Dog",
+            "2024-01-04 21:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Male"
+          ],
+          [
+            "A004",
+            "Dog",
+            "2024-01-05 20:59:00",
+            "Normal",
+            "Lucy",
+            "Neutered Male"
+          ],
+          [
+            "A005",
+            "Cat",
+            "2024-01-06 19:59:00",
+            "Normal",
+            null,
+            "Neutered Male"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 00:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Male"
+          ],
+          [
+            "A007",
+            "Cat",
+            "2024-01-08 11:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Male"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 11:59:00",
+            "Normal",
+            "Bell",
+            "Intact Female"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 21:59:00",
+            "Normal",
+            "el",
+            "Spayed Female"
+          ],
+          [
+            "A010",
+            "Cat",
+            "2024-01-11 03:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ],
+          [
+            "A011",
+            "Dog",
+            "2024-01-12 10:59:00",
+            "Normal",
+            "el",
+            "Spayed Female"
+          ],
+          [
+            "A012",
+            "Dog",
+            "2024-01-13 13:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Female"
+          ],
+          [
+            "A013",
+            "Cat",
+            "2024-01-14 13:59:00",
+            "Normal",
+            "Ella",
+            "Neutered Male"
+          ],
+          [
+            "A014",
+            "Cat",
+            "2024-01-15 08:59:00",
+            "Normal",
+            "Pickle",
+            "Spayed Female"
+          ],
+          [
+            "A015",
+            "Cat",
+            "2024-01-16 14:59:00",
+            "Normal",
+            "Rogan",
+            "Spayed Female"
+          ],
+          [
+            "A016",
+            "Dog",
+            "2024-01-17 16:59:00",
+            "Normal",
+            "",
+            "Intact Female"
+          ],
+          [
+            "A017",
+            "Dog",
+            "2024-01-18 13:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Male"
+          ],
+          [
+            "A018",
+            "Cat",
+            "2024-01-19 22:59:00",
+            "Normal",
+            "Lucy",
+            "Neutered Male"
+          ],
+          [
+            "A019",
+            "Cat",
+            "2024-01-20 10:59:00",
+            "Normal",
+            "Lucy",
+            "Intact Female"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Cat",
+          "Rogan",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "el",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Mitty",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Lucy",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "No name",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Bell",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "el",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "el",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Ella",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Mitty",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Intact Female"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 00:59:00",
+            "Normal",
+            "Mitty",
+            "Spayed Female"
+          ],
+          [
+            "A001",
+            "Dog",
+            "2024-01-02 06:59:00",
+            "Normal",
+            "Pickle",
+            "Neutered Male"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 03:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Female"
+          ],
+          [
+            "A003",
+            "Cat",
+            "2024-01-04 01:59:00",
+            "Normal",
+            "Pickle",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "Mitty",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Neutered Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 03:59:00",
+            "Normal",
+            "Sabrina",
+            "Neutered Male"
+          ],
+          [
+            "A001",
+            "Dog",
+            "2024-01-02 12:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 17:59:00",
+            "Normal",
+            "Zed",
+            "Neutered Male"
+          ],
+          [
+            "A003",
+            "Dog",
+            "2024-01-04 03:59:00",
+            "Normal",
+            "Lucy",
+            "Intact Female"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 20:59:00",
+            "Normal",
+            "Zed",
+            "Neutered Male"
+          ],
+          [
+            "A005",
+            "Dog",
+            "2024-01-06 22:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Male"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 08:59:00",
+            "Normal",
+            "Ella",
+            "Spayed Female"
+          ],
+          [
+            "A007",
+            "Dog",
+            "2024-01-08 22:59:00",
+            "Normal",
+            null,
+            "Neutered Male"
+          ],
+          [
+            "A008",
+            "Cat",
+            "2024-01-09 10:59:00",
+            "Normal",
+            "Bell",
+            "Spayed Female"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 04:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "Sabrina",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Lucy",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Ella",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "No name",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Bell",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Spayed Female"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 05:59:00",
+            "Normal",
+            null,
+            "Neutered Male"
+          ],
+          [
+            "A001",
+            "Dog",
+            "2024-01-02 07:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 11:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A003",
+            "Cat",
+            "2024-01-04 11:59:00",
+            "Normal",
+            "el",
+            "Intact Female"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 13:59:00",
+            "Normal",
+            "el",
+            "Spayed Female"
+          ],
+          [
+            "A005",
+            "Cat",
+            "2024-01-06 19:59:00",
+            "Normal",
+            "Lucy",
+            "Intact Male"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 09:59:00",
+            "Normal",
+            "Mitty",
+            "Spayed Female"
+          ],
+          [
+            "A007",
+            "Cat",
+            "2024-01-08 16:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 14:59:00",
+            "Normal",
+            "Bell",
+            "Spayed Female"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 06:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Female"
+          ],
+          [
+            "A010",
+            "Dog",
+            "2024-01-11 05:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ],
+          [
+            "A011",
+            "Cat",
+            "2024-01-12 06:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Female"
+          ],
+          [
+            "A012",
+            "Cat",
+            "2024-01-13 19:59:00",
+            "Normal",
+            "Pickle",
+            "Spayed Female"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "No name",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "el",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "el",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Mitty",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Bell",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Mitty",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Spayed Female"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 20:59:00",
+            "Normal",
+            "Bell",
+            "Neutered Male"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 00:59:00",
+            "Normal",
+            "el",
+            "Intact Female"
+          ],
+          [
+            "A002",
+            "Dog",
+            "2024-01-03 11:59:00",
+            "Normal",
+            "Ella",
+            "Spayed Female"
+          ],
+          [
+            "A003",
+            "Dog",
+            "2024-01-04 09:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Male"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 23:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ],
+          [
+            "A005",
+            "Cat",
+            "2024-01-06 10:59:00",
+            "Normal",
+            "Bob",
+            "Intact Female"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 15:59:00",
+            "Normal",
+            "Ella",
+            "Spayed Female"
+          ],
+          [
+            "A007",
+            "Dog",
+            "2024-01-08 18:59:00",
+            "Normal",
+            "Bob",
+            "Intact Male"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 10:59:00",
+            "Normal",
+            "el",
+            "Neutered Male"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 23:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Female"
+          ],
+          [
+            "A010",
+            "Cat",
+            "2024-01-11 22:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Male"
+          ],
+          [
+            "A011",
+            "Dog",
+            "2024-01-12 18:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Female"
+          ],
+          [
+            "A012",
+            "Cat",
+            "2024-01-13 04:59:00",
+            "Normal",
+            "",
+            "Neutered Male"
+          ],
+          [
+            "A013",
+            "Cat",
+            "2024-01-14 10:59:00",
+            "Normal",
+            "Zed",
+            "Intact Male"
+          ],
+          [
+            "A014",
+            "Cat",
+            "2024-01-15 06:59:00",
+            "Normal",
+            "Zed",
+            "Neutered Male"
+          ],
+          [
+            "A015",
+            "Dog",
+            "2024-01-16 02:59:00",
+            "Normal",
+            "Bob",
+            "Intact Female"
+          ],
+          [
+            "A016",
+            "Dog",
+            "2024-01-17 06:59:00",
+            "Normal",
+            "Rogan",
+            "Neutered Male"
+          ],
+          [
+            "A017",
+            "Dog",
+            "2024-01-18 05:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Female"
+          ],
+          [
+            "A018",
+            "Cat",
+            "2024-01-19 11:59:00",
+            "Normal",
+            "Bell",
+            "Intact Female"
+          ],
+          [
+            "A019",
+            "Dog",
+            "2024-01-20 22:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "Bell",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "el",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Ella",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Mitty",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Ella",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Bob",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "el",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Bob",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Bell",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Mitty",
+          "Neutered Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Cat",
+            "2024-01-01 15:59:00",
+            "Normal",
+            "",
+            "Intact Female"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 10:59:00",
+            "Normal",
+            "Ella",
+            "Intact Female"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 12:59:00",
+            "Normal",
+            "Lucy",
+            "Intact Male"
+          ],
+          [
+            "A003",
+            "Dog",
+            "2024-01-04 08:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Male"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 01:59:00",
+            "Normal",
+            "Lucy",
+            "Intact Female"
+          ],
+          [
+            "A005",
+            "Cat",
+            "2024-01-06 13:59:00",
+            "Normal",
+            "el",
+            "Intact Male"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 08:59:00",
+            "Normal",
+            "Lucy",
+            "Neutered Male"
+          ],
+          [
+            "A007",
+            "Cat",
+            "2024-01-08 17:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 09:59:00",
+            "Normal",
+            "Bob",
+            "Neutered Male"
+          ],
+          [
+            "A009",
+            "Dog",
+            "2024-01-10 18:59:00",
+            "Normal",
+            "Ella",
+            "Intact Female"
+          ],
+          [
+            "A010",
+            "Cat",
+            "2024-01-11 22:59:00",
+            "Normal",
+            "el",
+            "Spayed Female"
+          ],
+          [
+            "A011",
+            "Dog",
+            "2024-01-12 17:59:00",
+            "Normal",
+            "Mitty",
+            "Spayed Female"
+          ],
+          [
+            "A012",
+            "Cat",
+            "2024-01-13 15:59:00",
+            "Normal",
+            "",
+            "Intact Male"
+          ],
+          [
+            "A013",
+            "Cat",
+            "2024-01-14 13:59:00",
+            "Normal",
+            "Bob",
+            "Spayed Female"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Cat",
+          "",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Ella",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "el",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Lucy",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Bob",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Ella",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "el",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Mitty",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Spayed Female"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Cat",
+            "2024-01-01 00:59:00",
+            "Normal",
+            "Bob",
+            "Neutered Male"
+          ],
+          [
+            "A001",
+            "Dog",
+            "2024-01-02 15:59:00",
+            "Normal",
+            "Bob",
+            "Intact Male"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 16:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A003",
+            "Dog",
+            "2024-01-04 02:59:00",
+            "Normal",
+            "Pickle",
+            "Neutered Male"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 13:59:00",
+            "Normal",
+            null,
+            "Neutered Male"
+          ],
+          [
+            "A005",
+            "Cat",
+            "2024-01-06 23:59:00",
+            "Normal",
+            "Rogan",
+            "Spayed Female"
+          ],
+          [
+            "A006",
+            "Cat",
+            "2024-01-07 10:59:00",
+            "Normal",
+            "Bob",
+            "Intact Female"
+          ],
+          [
+            "A007",
+            "Cat",
+            "2024-01-08 16:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Female"
+          ],
+          [
+            "A008",
+            "Cat",
+            "2024-01-09 20:59:00",
+            "Normal",
+            "Bob",
+            "Intact Male"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 12:59:00",
+            "Normal",
+            "",
+            "Neutered Male"
+          ],
+          [
+            "A010",
+            "Dog",
+            "2024-01-11 10:59:00",
+            "Normal",
+            "Rogan",
+            "Spayed Female"
+          ],
+          [
+            "A011",
+            "Dog",
+            "2024-01-12 03:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Female"
+          ],
+          [
+            "A012",
+            "Cat",
+            "2024-01-13 05:59:00",
+            "Normal",
+            "el",
+            "Intact Male"
+          ],
+          [
+            "A013",
+            "Dog",
+            "2024-01-14 02:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A014",
+            "Dog",
+            "2024-01-15 17:59:00",
+            "Normal",
+            null,
+            "Intact Male"
+          ],
+          [
+            "A015",
+            "Cat",
+            "2024-01-16 12:59:00",
+            "Normal",
+            "",
+            "Intact Female"
+          ],
+          [
+            "A016",
+            "Dog",
+            "2024-01-17 02:59:00",
+            "Normal",
+            "Bell",
+            "Neutered Male"
+          ],
+          [
+            "A017",
+            "Dog",
+            "2024-01-18 14:59:00",
+            "Normal",
+            "el",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Cat",
+          "Bob",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Bob",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "No name",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Sabrina",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "el",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "No name",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Bell",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "el",
+          "Neutered Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 09:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Female"
+          ],
+          [
+            "A001",
+            "Dog",
+            "2024-01-02 00:59:00",
+            "Normal",
+            "Pickle",
+            "Neutered Male"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 04:59:00",
+            "Normal",
+            "Bob",
+            "Spayed Female"
+          ],
+          [
+            "A003",
+            "Cat",
+            "2024-01-04 01:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 09:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Female"
+          ],
+          [
+            "A005",
+            "Dog",
+            "2024-01-06 10:59:00",
+            "Normal",
+            "Rogan",
+            "Spayed Female"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 16:59:00",
+            "Normal",
+            "Bell",
+            "Intact Male"
+          ],
+          [
+            "A007",
+            "Dog",
+            "2024-01-08 22:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Male"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 17:59:00",
+            "Normal",
+            "Sabrina",
+            "Neutered Male"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 14:59:00",
+            "Normal",
+            "Rogan",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "Rogan",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Bell",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Sabrina",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Sabrina",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Neutered Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 23:59:00",
+            "Normal",
+            "Bob",
+            "Spayed Female"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 12:59:00",
+            "Normal",
+            "Sabrina",
+            "Spayed Female"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 11:59:00",
+            "Normal",
+            "Bob",
+            "Intact Male"
+          ],
+          [
+            "A003",
+            "Dog",
+            "2024-01-04 15:59:00",
+            "Normal",
+            "Ella",
+            "Intact Male"
+          ],
+          [
+            "A004",
+            "Dog",
+            "2024-01-05 15:59:00",
+            "Normal",
+            null,
+            "Intact Male"
+          ],
+          [
+            "A005",
+            "Cat",
+            "2024-01-06 02:59:00",
+            "Normal",
+            "Bell",
+            "Neutered Male"
+          ],
+          [
+            "A006",
+            "Cat",
+            "2024-01-07 10:59:00",
+            "Normal",
+            "",
+            "Intact Male"
+          ],
+          [
+            "A007",
+            "Cat",
+            "2024-01-08 15:59:00",
+            "Normal",
+            "Lucy",
+            "Neutered Male"
+          ],
+          [
+            "A008",
+            "Cat",
+            "2024-01-09 00:59:00",
+            "Normal",
+            "el",
+            "Intact Male"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 18:59:00",
+            "Normal",
+            "Pickle",
+            "Spayed Female"
+          ],
+          [
+            "A010",
+            "Dog",
+            "2024-01-11 23:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Female"
+          ],
+          [
+            "A011",
+            "Dog",
+            "2024-01-12 05:59:00",
+            "Normal",
+            "Bell",
+            "Neutered Male"
+          ],
+          [
+            "A012",
+            "Cat",
+            "2024-01-13 22:59:00",
+            "Normal",
+            "Bob",
+            "Spayed Female"
+          ],
+          [
+            "A013",
+            "Cat",
+            "2024-01-14 22:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Male"
+          ],
+          [
+            "A014",
+            "Cat",
+            "2024-01-15 00:59:00",
+            "Normal",
+            "Pickle",
+            "Spayed Female"
+          ],
+          [
+            "A015",
+            "Dog",
+            "2024-01-16 12:59:00",
+            "Normal",
+            "Zed",
+            "Intact Male"
+          ],
+          [
+            "A016",
+            "Dog",
+            "2024-01-17 17:59:00",
+            "Normal",
+            "Bell",
+            "Intact Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "Bob",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Ella",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "No name",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Bell",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "el",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Sabrina",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Bell",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Bell",
+          "Intact Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Cat",
+            "2024-01-01 01:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Male"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 23:59:00",
+            "Normal",
+            "Rogan",
+            "Spayed Female"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 12:59:00",
+            "Normal",
+            "Pickle",
+            "Spayed Female"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Cat",
+          "Rogan",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Spayed Female"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 01:59:00",
+            "Normal",
+            "",
+            "Intact Female"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 22:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A002",
+            "Dog",
+            "2024-01-03 22:59:00",
+            "Normal",
+            "Zed",
+            "Intact Male"
+          ],
+          [
+            "A003",
+            "Dog",
+            "2024-01-04 02:59:00",
+            "Normal",
+            "Ella",
+            "Spayed Female"
+          ],
+          [
+            "A004",
+            "Dog",
+            "2024-01-05 01:59:00",
+            "Normal",
+            null,
+            "Spayed Female"
+          ],
+          [
+            "A005",
+            "Dog",
+            "2024-01-06 05:59:00",
+            "Normal",
+            "",
+            "Intact Male"
+          ],
+          [
+            "A006",
+            "Cat",
+            "2024-01-07 04:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Male"
+          ],
+          [
+            "A007",
+            "Cat",
+            "2024-01-08 12:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Female"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 22:59:00",
+            "Normal",
+            null,
+            "Intact Female"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 09:59:00",
+            "Normal",
+            "Sabrina",
+            "Neutered Male"
+          ],
+          [
+            "A010",
+            "Cat",
+            "2024-01-11 19:59:00",
+            "Normal",
+            "Bob",
+            "Intact Female"
+          ],
+          [
+            "A011",
+            "Cat",
+            "2024-01-12 02:59:00",
+            "Normal",
+            "",
+            "Spayed Female"
+          ],
+          [
+            "A012",
+            "Dog",
+            "2024-01-13 20:59:00",
+            "Normal",
+            "Sabrina",
+            "Neutered Male"
+          ],
+          [
+            "A013",
+            "Dog",
+            "2024-01-14 09:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A014",
+            "Dog",
+            "2024-01-15 08:59:00",
+            "Normal",
+            "Ella",
+            "Intact Male"
+          ],
+          [
+            "A015",
+            "Cat",
+            "2024-01-16 05:59:00",
+            "Normal",
+            "Zed",
+            "Intact Male"
+          ],
+          [
+            "A016",
+            "Cat",
+            "2024-01-17 21:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Male"
+          ],
+          [
+            "A017",
+            "Cat",
+            "2024-01-18 02:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A018",
+            "Cat",
+            "2024-01-19 14:59:00",
+            "Normal",
+            "el",
+            "Neutered Male"
+          ],
+          [
+            "A019",
+            "Cat",
+            "2024-01-20 10:59:00",
+            "Normal",
+            "Lucy",
+            "Spayed Female"
+          ],
+          [
+            "A020",
+            "Cat",
+            "2024-01-21 09:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A021",
+            "Dog",
+            "2024-01-22 18:59:00",
+            "Normal",
+            "",
+            "Spayed Female"
+          ],
+          [
+            "A022",
+            "Cat",
+            "2024-01-23 13:59:00",
+            "Normal",
+            "Pickle",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Ella",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "No name",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "No name",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Sabrina",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Ella",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "el",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Neutered Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 03:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 09:59:00",
+            "Normal",
+            "Bell",
+            "Spayed Female"
+          ],
+          [
+            "A002",
+            "Dog",
+            "2024-01-03 11:59:00",
+            "Normal",
+            "Sabrina",
+            "Neutered Male"
+          ],
+          [
+            "A003",
+            "Cat",
+            "2024-01-04 12:59:00",
+            "Normal",
+            "Zed",
+            "Intact Male"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 17:59:00",
+            "Normal",
+            "Bell",
+            "Neutered Male"
+          ],
+          [
+            "A005",
+            "Cat",
+            "2024-01-06 10:59:00",
+            "Normal",
+            "Lucy",
+            "Spayed Female"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 18:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A007",
+            "Dog",
+            "2024-01-08 19:59:00",
+            "Normal",
+            "Mitty",
+            "Spayed Female"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 02:59:00",
+            "Normal",
+            "el",
+            "Neutered Male"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 23:59:00",
+            "Normal",
+            "Bob",
+            "Intact Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "Mitty",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Bell",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Sabrina",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Bell",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Mitty",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "el",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Intact Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Cat",
+            "2024-01-01 14:59:00",
+            "Normal",
+            "Bell",
+            "Neutered Male"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 20:59:00",
+            "Normal",
+            "Bell",
+            "Intact Male"
+          ],
+          [
+            "A002",
+            "Dog",
+            "2024-01-03 13:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A003",
+            "Cat",
+            "2024-01-04 16:59:00",
+            "Normal",
+            "Lucy",
+            "Spayed Female"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 22:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A005",
+            "Dog",
+            "2024-01-06 12:59:00",
+            "Normal",
+            "Sabrina",
+            "Spayed Female"
+          ],
+          [
+            "A006",
+            "Cat",
+            "2024-01-07 18:59:00",
+            "Normal",
+            "Ella",
+            "Spayed Female"
+          ],
+          [
+            "A007",
+            "Cat",
+            "2024-01-08 22:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Female"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 00:59:00",
+            "Normal",
+            "el",
+            "Intact Female"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 16:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A010",
+            "Cat",
+            "2024-01-11 11:59:00",
+            "Normal",
+            "",
+            "Intact Male"
+          ],
+          [
+            "A011",
+            "Cat",
+            "2024-01-12 07:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A012",
+            "Cat",
+            "2024-01-13 08:59:00",
+            "Normal",
+            "",
+            "Intact Female"
+          ],
+          [
+            "A013",
+            "Cat",
+            "2024-01-14 22:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Male"
+          ],
+          [
+            "A014",
+            "Cat",
+            "2024-01-15 08:59:00",
+            "Normal",
+            "",
+            "Neutered Male"
+          ],
+          [
+            "A015",
+            "Dog",
+            "2024-01-16 20:59:00",
+            "Normal",
+            "Zed",
+            "Intact Male"
+          ],
+          [
+            "A016",
+            "Cat",
+            "2024-01-17 16:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A017",
+            "Cat",
+            "2024-01-18 16:59:00",
+            "Normal",
+            "",
+            "Intact Male"
+          ],
+          [
+            "A018",
+            "Dog",
+            "2024-01-19 22:59:00",
+            "Normal",
+            "Rogan",
+            "Spayed Female"
+          ],
+          [
+            "A019",
+            "Cat",
+            "2024-01-20 00:59:00",
+            "Normal",
+            null,
+            "Intact Male"
+          ],
+          [
+            "A020",
+            "Dog",
+            "2024-01-21 07:59:00",
+            "Normal",
+            "el",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Cat",
+          "Bell",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Bell",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Sabrina",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Ella",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "el",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Rogan",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "No name",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "el",
+          "Neutered Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 16:59:00",
+            "Normal",
+            "",
+            "Spayed Female"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 07:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 20:59:00",
+            "Normal",
+            "Bell",
+            "Spayed Female"
+          ],
+          [
+            "A003",
+            "Cat",
+            "2024-01-04 13:59:00",
+            "Normal",
+            "el",
+            "Intact Male"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 21:59:00",
+            "Normal",
+            "Rogan",
+            "Neutered Male"
+          ],
+          [
+            "A005",
+            "Dog",
+            "2024-01-06 13:59:00",
+            "Normal",
+            "Pickle",
+            "Neutered Male"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 21:59:00",
+            "Normal",
+            "Bob",
+            "Neutered Male"
+          ],
+          [
+            "A007",
+            "Dog",
+            "2024-01-08 21:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Male"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 15:59:00",
+            "Normal",
+            "Ella",
+            "Spayed Female"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 00:59:00",
+            "Normal",
+            null,
+            "Neutered Male"
+          ],
+          [
+            "A010",
+            "Dog",
+            "2024-01-11 10:59:00",
+            "Normal",
+            "Bell",
+            "Neutered Male"
+          ],
+          [
+            "A011",
+            "Cat",
+            "2024-01-12 00:59:00",
+            "Normal",
+            null,
+            "Intact Female"
+          ],
+          [
+            "A012",
+            "Cat",
+            "2024-01-13 14:59:00",
+            "Normal",
+            null,
+            "Intact Male"
+          ],
+          [
+            "A013",
+            "Dog",
+            "2024-01-14 19:59:00",
+            "Normal",
+            "Pickle",
+            "Neutered Male"
+          ],
+          [
+            "A014",
+            "Cat",
+            "2024-01-15 19:59:00",
+            "Normal",
+            null,
+            "Intact Female"
+          ],
+          [
+            "A015",
+            "Dog",
+            "2024-01-16 22:59:00",
+            "Normal",
+            "Lucy",
+            "Intact Female"
+          ],
+          [
+            "A016",
+            "Dog",
+            "2024-01-17 00:59:00",
+            "Normal",
+            "Ella",
+            "Intact Male"
+          ],
+          [
+            "A017",
+            "Cat",
+            "2024-01-18 04:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Female"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Bell",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "el",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Bob",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Ella",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "No name",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Bell",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "No name",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "No name",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "No name",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Lucy",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Ella",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Intact Female"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Cat",
+            "2024-01-01 13:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 03:59:00",
+            "Normal",
+            "Lucy",
+            "Spayed Female"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 06:59:00",
+            "Normal",
+            "",
+            "Intact Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Cat",
+          "Mitty",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "",
+          "Intact Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Cat",
+            "2024-01-01 17:59:00",
+            "Normal",
+            "Bob",
+            "Intact Male"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 16:59:00",
+            "Normal",
+            "Mitty",
+            "Spayed Female"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 11:59:00",
+            "Normal",
+            "Sabrina",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Cat",
+          "Bob",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Neutered Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 22:59:00",
+            "Normal",
+            "",
+            "Intact Male"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 18:59:00",
+            "Normal",
+            "Rogan",
+            "Intact Male"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 10:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Female"
+          ],
+          [
+            "A003",
+            "Cat",
+            "2024-01-04 10:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 19:59:00",
+            "Normal",
+            "Rogan",
+            "Spayed Female"
+          ],
+          [
+            "A005",
+            "Cat",
+            "2024-01-06 07:59:00",
+            "Normal",
+            "Mitty",
+            "Spayed Female"
+          ],
+          [
+            "A006",
+            "Dog",
+            "2024-01-07 14:59:00",
+            "Normal",
+            "Ella",
+            "Intact Female"
+          ],
+          [
+            "A007",
+            "Dog",
+            "2024-01-08 13:59:00",
+            "Normal",
+            "Bob",
+            "Neutered Male"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 14:59:00",
+            "Normal",
+            "",
+            "Spayed Female"
+          ],
+          [
+            "A009",
+            "Cat",
+            "2024-01-10 07:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A010",
+            "Cat",
+            "2024-01-11 22:59:00",
+            "Normal",
+            "Bob",
+            "Intact Male"
+          ],
+          [
+            "A011",
+            "Dog",
+            "2024-01-12 19:59:00",
+            "Normal",
+            "Zed",
+            "Neutered Male"
+          ],
+          [
+            "A012",
+            "Cat",
+            "2024-01-13 08:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ],
+          [
+            "A013",
+            "Dog",
+            "2024-01-14 09:59:00",
+            "Normal",
+            "",
+            "Neutered Male"
+          ],
+          [
+            "A014",
+            "Dog",
+            "2024-01-15 14:59:00",
+            "Normal",
+            "",
+            "Neutered Male"
+          ],
+          [
+            "A015",
+            "Dog",
+            "2024-01-16 16:59:00",
+            "Normal",
+            "",
+            "Intact Male"
+          ],
+          [
+            "A016",
+            "Cat",
+            "2024-01-17 13:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Rogan",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Ella",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Bob",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Bob",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Neutered Male"
+        ]
+      ]
+    },
+    {
+      "label": "seeded-boundary-tables",
+      "tables": {
+        "ANIMAL_INS": [
+          [
+            "A000",
+            "Dog",
+            "2024-01-01 04:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Female"
+          ],
+          [
+            "A001",
+            "Cat",
+            "2024-01-02 14:59:00",
+            "Normal",
+            "Sabrina",
+            "Intact Male"
+          ],
+          [
+            "A002",
+            "Cat",
+            "2024-01-03 16:59:00",
+            "Normal",
+            "Zed",
+            "Intact Male"
+          ],
+          [
+            "A003",
+            "Cat",
+            "2024-01-04 10:59:00",
+            "Normal",
+            "Lucy",
+            "Spayed Female"
+          ],
+          [
+            "A004",
+            "Cat",
+            "2024-01-05 18:59:00",
+            "Normal",
+            "Mitty",
+            "Neutered Male"
+          ],
+          [
+            "A005",
+            "Dog",
+            "2024-01-06 21:59:00",
+            "Normal",
+            "",
+            "Spayed Female"
+          ],
+          [
+            "A006",
+            "Cat",
+            "2024-01-07 12:59:00",
+            "Normal",
+            null,
+            "Intact Male"
+          ],
+          [
+            "A007",
+            "Cat",
+            "2024-01-08 10:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A008",
+            "Dog",
+            "2024-01-09 21:59:00",
+            "Normal",
+            "Mitty",
+            "Intact Male"
+          ],
+          [
+            "A009",
+            "Dog",
+            "2024-01-10 15:59:00",
+            "Normal",
+            "Lucy",
+            "Intact Male"
+          ],
+          [
+            "A010",
+            "Dog",
+            "2024-01-11 13:59:00",
+            "Normal",
+            "Pickle",
+            "Neutered Male"
+          ],
+          [
+            "A011",
+            "Dog",
+            "2024-01-12 18:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Male"
+          ],
+          [
+            "A012",
+            "Cat",
+            "2024-01-13 13:59:00",
+            "Normal",
+            "Bell",
+            "Intact Female"
+          ],
+          [
+            "A013",
+            "Dog",
+            "2024-01-14 05:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Female"
+          ],
+          [
+            "A014",
+            "Cat",
+            "2024-01-15 13:59:00",
+            "Normal",
+            null,
+            "Intact Male"
+          ],
+          [
+            "A015",
+            "Dog",
+            "2024-01-16 01:59:00",
+            "Normal",
+            "Bob",
+            "Intact Female"
+          ],
+          [
+            "A016",
+            "Cat",
+            "2024-01-17 16:59:00",
+            "Normal",
+            "Pickle",
+            "Intact Female"
+          ],
+          [
+            "A017",
+            "Cat",
+            "2024-01-18 09:59:00",
+            "Normal",
+            "Zed",
+            "Intact Female"
+          ],
+          [
+            "A018",
+            "Dog",
+            "2024-01-19 07:59:00",
+            "Normal",
+            "Zed",
+            "Neutered Male"
+          ],
+          [
+            "A019",
+            "Cat",
+            "2024-01-20 16:59:00",
+            "Normal",
+            "",
+            "Intact Male"
+          ],
+          [
+            "A020",
+            "Cat",
+            "2024-01-21 20:59:00",
+            "Normal",
+            "",
+            "Intact Female"
+          ],
+          [
+            "A021",
+            "Dog",
+            "2024-01-22 12:59:00",
+            "Normal",
+            "Lucy",
+            "Intact Male"
+          ],
+          [
+            "A022",
+            "Dog",
+            "2024-01-23 01:59:00",
+            "Normal",
+            "",
+            "Neutered Male"
+          ],
+          [
+            "A023",
+            "Cat",
+            "2024-01-24 05:59:00",
+            "Normal",
+            "Pickle",
+            "Spayed Female"
+          ],
+          [
+            "A024",
+            "Dog",
+            "2024-01-25 15:59:00",
+            "Normal",
+            "",
+            "Intact Male"
+          ],
+          [
+            "A025",
+            "Dog",
+            "2024-01-26 12:59:00",
+            "Normal",
+            "Sabrina",
+            "Neutered Male"
+          ],
+          [
+            "A026",
+            "Cat",
+            "2024-01-27 02:59:00",
+            "Normal",
+            "Lucy",
+            "Intact Female"
+          ],
+          [
+            "A027",
+            "Dog",
+            "2024-01-28 08:59:00",
+            "Normal",
+            "Zed",
+            "Spayed Female"
+          ],
+          [
+            "A028",
+            "Dog",
+            "2024-01-01 04:59:00",
+            "Normal",
+            "Lucy",
+            "Intact Female"
+          ],
+          [
+            "A029",
+            "Cat",
+            "2024-01-02 16:59:00",
+            "Normal",
+            "Pickle",
+            "Neutered Male"
+          ]
+        ]
+      },
+      "expected": [
+        [
+          "Dog",
+          "Mitty",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Sabrina",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "Mitty",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "",
+          "Spayed Female"
+        ],
+        [
+          "Cat",
+          "No name",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Mitty",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Lucy",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Neutered Male"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "Bell",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Pickle",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "No name",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Bob",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Zed",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "",
+          "Intact Male"
+        ],
+        [
+          "Cat",
+          "",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Lucy",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "",
+          "Intact Male"
+        ],
+        [
+          "Dog",
+          "Sabrina",
+          "Neutered Male"
+        ],
+        [
+          "Cat",
+          "Lucy",
+          "Intact Female"
+        ],
+        [
+          "Dog",
+          "Zed",
+          "Spayed Female"
+        ],
+        [
+          "Dog",
+          "Lucy",
+          "Intact Female"
+        ],
+        [
+          "Cat",
+          "Pickle",
+          "Neutered Male"
+        ]
+      ]
+    }
+  ]
+}

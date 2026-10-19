@@ -1,0 +1,5 @@
+SELECT ANIMAL_ID, NAME,
+       IF(LOCATE('Neutered', SEX_UPON_INTAKE) > 0
+          OR LOCATE('Spayed', SEX_UPON_INTAKE) > 0, 'O', 'X') AS `중성화`
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID;

@@ -1,0 +1,162 @@
+[
+  {
+    "source": "official_example",
+    "fixtures": [
+      {
+        "name": "CAR_RENTAL_COMPANY_CAR",
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(255)",
+          "INTEGER",
+          "VARCHAR(255)"
+        ],
+        "rows": [
+          [
+            1,
+            "세단",
+            16000,
+            "가죽시트,열선시트,후방카메라"
+          ],
+          [
+            2,
+            "SUV",
+            14000,
+            "스마트키,네비게이션,열선시트"
+          ],
+          [
+            3,
+            "SUV",
+            22000,
+            "주차감지센서,후방카메라"
+          ],
+          [
+            4,
+            "트럭",
+            35000,
+            "주차감지센서,네비게이션,열선시트"
+          ],
+          [
+            5,
+            "SUV",
+            16000,
+            "가죽시트,네비게이션,열선시트,후방카메라,주차감지센서"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        "SUV",
+        2
+      ],
+      [
+        "세단",
+        1
+      ],
+      [
+        "트럭",
+        1
+      ]
+    ]
+  },
+  {
+    "source": "empty_tables",
+    "fixtures": [
+      {
+        "name": "CAR_RENTAL_COMPANY_CAR",
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(255)",
+          "INTEGER",
+          "VARCHAR(255)"
+        ],
+        "rows": []
+      }
+    ],
+    "expected": []
+  },
+  {
+    "source": "additional_record",
+    "fixtures": [
+      {
+        "name": "CAR_RENTAL_COMPANY_CAR",
+        "columns": [
+          "CAR_ID",
+          "CAR_TYPE",
+          "DAILY_FEE",
+          "OPTIONS"
+        ],
+        "types": [
+          "INTEGER",
+          "VARCHAR(255)",
+          "INTEGER",
+          "VARCHAR(255)"
+        ],
+        "rows": [
+          [
+            1,
+            "세단",
+            16000,
+            "가죽시트,열선시트,후방카메라"
+          ],
+          [
+            2,
+            "SUV",
+            14000,
+            "스마트키,네비게이션,열선시트"
+          ],
+          [
+            3,
+            "SUV",
+            22000,
+            "주차감지센서,후방카메라"
+          ],
+          [
+            4,
+            "트럭",
+            35000,
+            "주차감지센서,네비게이션,열선시트"
+          ],
+          [
+            5,
+            "SUV",
+            16000,
+            "가죽시트,네비게이션,열선시트,후방카메라,주차감지센서"
+          ],
+          [
+            105,
+            "세단",
+            16000,
+            "가죽시트,열선시트,후방카메라"
+          ]
+        ]
+      }
+    ],
+    "expected": [
+      [
+        "SUV",
+        2
+      ],
+      [
+        "세단",
+        2
+      ],
+      [
+        "트럭",
+        1
+      ]
+    ]
+  }
+]
