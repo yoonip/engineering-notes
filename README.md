@@ -4,6 +4,7 @@
 
 수식의 의미와 코드의 동작을 함께 설명하고, 도구가 쓰이는 이유와 설계에서 맡는 역할을 정리합니다. 본문은 한국어로 쓰고 기술명은 통용되는 표기를 사용합니다.
 
+- [연구·프로젝트·논문·수상](research/README.md)
 - [분야별 목차](CATALOG.md)
 - [AI 기업과 모델](model-lab/PROVIDERS.md)
 - [도구 찾아보기](docs/TOOLS_INDEX.md)
