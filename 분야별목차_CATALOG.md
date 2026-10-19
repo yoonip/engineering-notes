@@ -4,6 +4,14 @@
 
 논문은 계산 이론·시스템·AI·전자공학에서 뇌신경·생명공학·소재·우주 연구로 이어집니다. 제품 리뷰는 [반도체·산업 컴퓨팅](제품리뷰_reviews/반도체와산업컴퓨팅_chips-industrial/README.md), [기기·모빌리티](제품리뷰_reviews/기기와모빌리티_devices-mobility/README.md), [AI·로봇](제품리뷰_reviews/AI와로봇_ai-robotics/README.md), [우주·운송](제품리뷰_reviews/우주와운송_space-transport/README.md), [방산 전자](제품리뷰_reviews/방산전자_defense-electronics/README.md), [의약품·생명공학](제품리뷰_reviews/의약품과생명공학_biomedical/README.md)으로 나누었습니다. 실제 본문에서 용어와 원리·비교 근거를 함께 읽으실 수 있습니다.
 
+| 이어서 읽을 분야 | 논문 해설 | 제품·산업 분석 |
+|---|---|---|
+| 에너지·물·환경 | [태양전지·전해질·담수화·탄소](논문해설_papers/에너지와환경_energy-environment/README.md) | [히트펌프·풍력·지열·물·저장](제품리뷰_reviews/에너지와물_energy-water/README.md) |
+| 통신·측정 | [안테나·오류정정·광섬유·시계·중력](논문해설_papers/통신과측정_communications-metrology/README.md) | [해저 통신·NTN·위치 추정·센서](제품리뷰_reviews/통신과센서_communications-sensing/README.md) |
+| 생명과학·진단 | [DNA·PCR·RNA·조직 모델](논문해설_papers/생명과학과진단_life-science-diagnostics/README.md) | [시퀀싱·현장 진단·mRNA·바이오 제조](제품리뷰_reviews/진단과바이오제조_diagnostics-biomanufacturing/README.md) |
+| 제조·데이터센터 | [광경화와 광학 신경망](논문해설_papers/제조와광학_manufacturing-photonics/README.md) | [3D 프린터·CPO·액체 냉각](제품리뷰_reviews/제조와인프라_manufacturing-infrastructure/README.md) |
+| 산업·표준·경쟁 | [기술 채택·보완재·호환성과 전환](논문해설_papers/산업과표준_industry-standards/README.md) | [NVIDIA 생태계와 경쟁 대안](제품리뷰_reviews/산업과기술경쟁_industry-competition/README.md) |
+
 [처음으로](README.md) · [공학 기초](공학기초_foundations/README.md) · [출처](참고자료_references/README.md)
 
 ## 개발 환경과 언어 | Development environments and languages

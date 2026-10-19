@@ -1,6 +1,6 @@
 # 논문 해설 | Paper studies
 
-계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명공학·의약품·신소재·우주 탐사와 사회 데이터 연구까지 논문 138편을 한국어로 읽습니다. 기존 30편에 서로 다른 논문 108편의 해설을 더했습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
+계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명과학·에너지·통신·제조·우주 탐사와 산업·사회 연구까지 논문 162편을 한국어로 읽습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
 
 ## 분야별 목록
 
@@ -17,8 +17,13 @@
 | [우주 탐사와 정밀 관측](우주와관측_space-observation/README.md) | 6 | 상태 추정, 화성 비행, 소행성 충돌, 광통신, JWST와 LIGO |
 | [의약품과 대사 연구](의약품과대사_metabolic-medicine/README.md) | 2 | STEP 1·SURMOUNT-1의 설계, 감량 효과, 결측·중단·이상사건 |
 | [게임·생물·사회 데이터를 활용한 연구](뜻밖의연결_interdisciplinary/README.md) | 6 | WoW와 감염병, Foldit과 단백질, 점균과 연결망, 검색과 독감, 음악과 사회적 영향 |
+| [에너지와 환경](에너지와환경_energy-environment/README.md) | 6 | 태양전지 한계·페로브스카이트, 수계 전해질, 담수화, 공기 포집과 광물화 |
+| [통신과 정밀 측정](통신과측정_communications-metrology/README.md) | 6 | MIMO·오류정정·송신 다이버시티·광섬유, 원자시계와 중력계 |
+| [생명과학과 진단](생명과학과진단_life-science-diagnostics/README.md) | 6 | DNA 서열·PCR·RNA 변형·나노포어·오가노이드·Liver-Chip |
+| [제조와 광학](제조와광학_manufacturing-photonics/README.md) | 4 | 체적 광경화·수지 공급, 간섭·회절 신경망의 실제 검증 범위 |
+| [산업과 표준](산업과표준_industry-standards/README.md) | 2 | 기술 채택의 경로 의존, 보완재·호환성·전환 비용 |
 
-각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 138편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
+각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 162편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
 
 ## 처음 읽으실 때
 
@@ -86,11 +91,17 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 최근이라는 이유로 장래의 영향이나 모든 비교 우위를 확정하지 않습니다. 기술 보고서·사전논문·심사 논문·정정본의 상태를 나누고, 결과가 나온 입력·장비·과제와 한계를 먼저 확인합니다.
 
+## 물리적 원리에서 설비와 시장까지
+
+[에너지·환경 6편](에너지와환경_energy-environment/README.md)은 이상적인 효율 한계와 실제 전지·분리·포집 공정의 물질수지를 연결합니다. [통신·측정 6편](통신과측정_communications-metrology/README.md)은 여러 안테나, 오류를 고치는 부호, 광섬유와 정밀 센서의 신호·잡음·불확도를 다룹니다. [생명과학·진단 6편](생명과학과진단_life-science-diagnostics/README.md)은 분자의 정보를 읽고 늘리는 방법에서 조직 모델의 검증까지 이어집니다. 정정 논문과 읽지 못한 보충자료의 범위는 개별 글에 적습니다.
+
+[제조·광학 4편](제조와광학_manufacturing-photonics/README.md)은 출력 속도와 전체 생산 시간, 수치 모의와 선택된 시료의 실제 시험을 구분합니다. [산업·표준 2편](산업과표준_industry-standards/README.md)은 기술의 채택에 다른 사용자의 선택과 호환성이 영향을 주는 원리를 설명합니다. [AI 가속기 산업 분석](../제품리뷰_reviews/산업과기술경쟁_industry-competition/ai-accelerator-ecosystems2026.md)에서는 이 개념을 실제 도구·공급망·경쟁 대안과 연결하되, 경제학 모형을 특정 기업의 시장 지배 원인이 입증된 결과로 취급하지 않습니다.
+
 ## 논문을 선정한 기준
 
 후속 연구에서 다시 사용한 개념, 공개 교육과정에서 다루는 내용, 실제 시스템 설계로 이어진 영향을 기준으로 읽을 논문을 골랐습니다. 예를 들어 [Stanford CS231n 2025 강의 일정](https://cs231n.stanford.edu/2025/schedule.html)은 역전파·AlexNet·ResNet·BatchNorm·attention을 연결하고, [MIT 분산 시스템의 논문 질문](https://pdos.csail.mit.edu/6.824/questions.html)은 GFS와 MapReduce 등의 설계 조건을 검토합니다. 개별 글에서는 해당 논문의 원문과 확인 가능한 후속 논문·명세를 연결합니다.
 
-발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 138편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
+발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 162편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
 
 ## 모델별 분석과 재현 사례
 
@@ -104,4 +115,4 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## English
 
-One hundred and thirty-eight distinct papers span information theory, electronics, computer systems, AI, neuroscience, metabolic medicine, materials, space engineering and interdisciplinary studies using games, organisms and social data. One hundred and eight studies were added to the earlier thirty; preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
+The 162 distinct papers cover computing, AI, electronics, neuroscience, medicine, materials, space, energy, communications, diagnostics, manufacturing and economic theories of technology adoption. Preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.

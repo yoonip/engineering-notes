@@ -25,9 +25,9 @@ I hope this repository will be more than a store of finished answers. One reader
 | [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | Eleven actual CSAT/LEET items, choice-by-choice reasoning and original practice |
 | [Foreign languages and technical English](외국어와기술영어_foreign-languages/README.md) | Eight English foundation lessons with 64 exercises, study methods and technical reading |
 | [Humanities](인문사회_humanities/README.md) | Philosophy, economics, society and legal reading |
-| [Paper studies](논문해설_papers/README.md) | Korean explanations and worked examples across computing, AI, electronics, neuroscience, biotechnology, materials and space research |
+| [Paper studies](논문해설_papers/README.md) | 162 Korean studies across computing, AI, electronics, life sciences, energy, communications, manufacturing and industry |
 | [Technology landscape](기술동향_technology/README.md) | Dated analysis of benchmarks and technical developments |
-| [Product and technology reviews](제품리뷰_reviews/README.md) | Principles, original tests and operating conditions across chips, devices, AI, robotics, space, F1, defense and medicine |
+| [Product and technology reviews](제품리뷰_reviews/README.md) | 58 analyses of principles, competing technologies, evidence, supply chains, standards, business models and switching costs |
 | [AI model lab](AI모델실험_model-lab/README.md) | Provider-specific analyses and executed CPU numerical experiments |
 | [Projects](프로젝트_projects/README.md) · [examples](예제_examples/README.md) | Implementations, execution steps and recorded checks |
 | [Programmers](programmers/README.md) | 672 accepted solutions, study notes and incomplete attempt analysis |

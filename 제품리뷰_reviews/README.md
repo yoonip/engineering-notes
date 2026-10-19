@@ -1,6 +1,6 @@
 # 제품과 기술 리뷰 | Product and technology reviews
 
-반도체·기기·AI·로봇·우주·운송·방산·의료 기술을 39편으로 읽습니다. 무엇을 하는 제품인지부터 원리, 가능해진 배경, 경쟁 방식, 실제 시험과 남은 제약까지 설명합니다. 각 글에 기초 용어, 직접 따라갈 계산과 확인 문제 세 개를 넣었습니다. 자료 확인일은 2026-10-20이며 개별 시험의 실시일·제품 판은 본문에 따로 표시합니다.
+반도체·AI·로봇·우주·의료에서 에너지·물·통신·진단·제조와 산업 경쟁까지 58편으로 읽습니다. 무엇을 하는 제품인지부터 원리, 가능해진 배경, 경쟁 방식, 실제 시험과 남은 제약까지 설명합니다. 표준·공급망·서비스·사업 모델과 도입·전환 비용도 함께 살펴봅니다. 각 글에 기초 용어, 직접 따라갈 계산과 확인 문제 세 개를 넣었습니다. 자료 확인일은 2026-10-20이며 개별 시험의 실시일·제품 판은 본문에 따로 표시합니다.
 
 ## 분야별 목록
 
@@ -12,6 +12,11 @@
 | [우주와 운송](우주와운송_space-transport/README.md) | 4 | Falcon 9, Starship, Starlink, Roadster의 추진·열·통신·제어 |
 | [방산 전자](방산전자_defense-electronics/README.md) | 2 | AESA·GaN 레이더, Iron Beam·DragonFire의 광학·전력·운용 조건 |
 | [의약품과 생명공학](의약품과생명공학_biomedical/README.md) | 3 | 위고비·마운자로와 후속 약물, 카스게비의 유전자 편집, CAR-T의 세포치료 |
+| [에너지와 물](에너지와물_energy-water/README.md) | 5 | 히트펌프, 해상풍력, 차세대 지열, 담수화, 장주기 저장 |
+| [통신과 센서](통신과센서_communications-sensing/README.md) | 5 | 해저 광통신, 5G Advanced·NTN, 라이다·레이더, GNSS와 대안, 양자 센서 |
+| [진단과 바이오 제조](진단과바이오제조_diagnostics-biomanufacturing/README.md) | 5 | 시퀀싱, 현장 진단, mRNA·LNP, 장기 모델, 연속 제조 |
+| [제조와 인프라](제조와인프라_manufacturing-infrastructure/README.md) | 3 | 3D 프린터의 양산, CPO 광통신, 데이터센터 액체 냉각 |
+| [산업과 기술 경쟁](산업과기술경쟁_industry-competition/README.md) | 1 | NVIDIA 생태계와 AMD·자체 AI 칩의 대응, 표준과 전환 비용 |
 
 같은 글에서 다룬 경쟁 제품을 따로 세어 리뷰 수를 늘리지 않습니다. 공급사별 모델 카드는 [AI 모델 실험](../AI모델실험_model-lab/README.md), 여러 기술의 현황은 [기술 동향](../기술동향_technology/README.md), 연구 방법의 자세한 분석은 [논문 해설](../논문해설_papers/README.md)로 이어집니다.
 
@@ -28,6 +33,9 @@
 | 극한의 속도와 열을 어떻게 제어하나요? | [F1](기기와모빌리티_devices-mobility/f1_2026.md)·[Starship](우주와운송_space-transport/starship2026.md) | 에너지 회수·공력·냉각·재진입 |
 | 의료기기의 높은 수치가 임상 이익인가요? | [수술 로봇](기기와모빌리티_devices-mobility/surgical-robots2026.md)·[광자계수 CT](기기와모빌리티_devices-mobility/photon-counting-ct2026.md) | 허가 범위·측정 과제·환자 결과·비교 설계 |
 | 호르몬·유전자·면역세포가 어떻게 치료제가 되나요? | [위고비·마운자로](의약품과생명공학_biomedical/wegovy-mounjaro2026.md)·[카스게비](의약품과생명공학_biomedical/casgevy-crispr2026.md)·[CAR-T](의약품과생명공학_biomedical/car-t2026.md) | 발견·분자 설계·임상 분모·장기 효과·현행 허가 |
+| 다른 AI 칩이 있어도 NVIDIA를 선택하는 이유는 무엇인가요? | [AI 가속기 생태계](산업과기술경쟁_industry-competition/ai-accelerator-ecosystems2026.md) | 도구·보완재·인력·공급망·전환 비용 |
+| 오래 저장하거나 땅의 열을 쓰면 왜 항상 싸지는 않나요? | [장주기 저장](에너지와물_energy-water/long-duration-storage.md)·[차세대 지열](에너지와물_energy-water/geothermal.md) | 출력·에너지·충전비·지질·계약 |
+| 장비의 데이터가 산업 표준과 어떻게 이어지나요? | [시퀀싱](진단과바이오제조_diagnostics-biomanufacturing/sequencing2026.md)·[CPO](제조와인프라_manufacturing-infrastructure/co-packaged-optics2026.md) | 파일·소모품·검증·상호운용·정비 |
 
 ## 출처와 숫자를 읽는 방법
 
@@ -35,7 +43,7 @@
 
 수치에는 버전·시험 시점·장치·작업·설정·분모를 붙입니다. 최고 사양, 특정 조건의 시험 결과, 제조사 전망, 자체 계산을 서로 바꾸어 쓰지 않습니다. 예약·시제품 시연·판매·고객 인도·실제 운용도 구별합니다. 영상은 본문에서 확인한 범위를 밝히며 설명문만 읽고 장면 전체를 분석했다고 적지 않습니다.
 
-이 39편은 공개 자료를 읽은 기술 리뷰입니다. 직접 제품을 구매·운전·측정한 실험과는 다릅니다. 공개된 비교 자료가 부족한 제품은 그 부분을 명시하며 상상한 순위를 만들지 않습니다.
+이 58편은 공개 자료를 읽은 기술·산업 리뷰입니다. 직접 제품을 구매·운전·측정한 실험과는 다릅니다. 공개된 비교 자료가 부족한 제품은 그 부분을 명시하며 상상한 순위를 만들지 않습니다. 아래 SQLite 실습과 모델 평가 글 2개는 이 58편과 별도로 셉니다.
 
 ## 함께 읽을 실습과 평가
 
@@ -47,4 +55,4 @@
 
 ## English
 
-Thirty-nine Korean reviews explain semiconductors, devices, AI, robotics, space transport, defense electronics and biomedical technologies. Each pairs principles and terminology with product evidence, comparison conditions, worked calculations and three questions. Manufacturer documentation is cross-checked against research, original measurements and field reporting where available. Announced targets, demonstrations, reservations and actual operation are distinguished. Medical articles distinguish discovery, clinical evidence and current regional approvals. These are literature reviews; the SQLite article separately records a local executable experiment.
+Fifty-eight Korean reviews cover products, competing technologies and industrial ecosystems across computing, energy, communications, diagnostics, manufacturing and other fields. Each pairs principles with evidence, worked calculations and three questions. Standards, supply chains, business models and switching costs explain adoption alongside technical performance. Manufacturer documentation is cross-checked against research, original measurements and field reporting where available. Targets and actual operation are distinguished. These are literature reviews; the SQLite experiment and model-evaluation note are listed separately from the 58 reviews.
