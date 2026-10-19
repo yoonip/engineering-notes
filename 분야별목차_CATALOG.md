@@ -12,6 +12,7 @@
 | 제조·데이터센터 | [광경화와 광학 신경망](논문해설_papers/제조와광학_manufacturing-photonics/README.md) | [3D 프린터·CPO·액체 냉각](제품리뷰_reviews/제조와인프라_manufacturing-infrastructure/README.md) |
 | 산업·표준·경쟁 | [기술 채택·보완재·호환성과 전환](논문해설_papers/산업과표준_industry-standards/README.md) | [NVIDIA 생태계와 경쟁 대안](제품리뷰_reviews/산업과기술경쟁_industry-competition/README.md) |
 | 마음·의식·몸과 판단 | [AI·마음 철학](논문해설_papers/마음과인공지능철학_mind-ai-philosophy/README.md) · [호르몬과 행동](논문해설_papers/호르몬과행동_hormones-behaviour/README.md) | [행동·경험·생물학적 원인과 가치 판단](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI의마음과인간의판단_minds-bodies-and-judgment.md) |
+| 자유·책임·같은 사람의 지속 | [자유의지와 책임](논문해설_papers/자유의지와책임_free-will-responsibility/README.md) · [자아와 인격 동일성](논문해설_papers/자아와인격동일성_self-personal-identity/README.md) · [의도와 의사결정](논문해설_papers/의도와의사결정_intention-decision/README.md) | [입장별 비교와 AI·호르몬 사례](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/자유의지와인격동일성_free-will-and-personal-identity.md) |
 
 [처음으로](README.md) · [공학 기초](공학기초_foundations/README.md) · [출처](참고자료_references/README.md)
 

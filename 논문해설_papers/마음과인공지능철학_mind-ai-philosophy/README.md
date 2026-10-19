@@ -27,3 +27,7 @@
 - 논증을 직접 나눠 보는 연습은 [AI의 마음과 인간의 판단](../../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI의마음과인간의판단_minds-bodies-and-judgment.md)에서 이어집니다.
 
 [전체 논문 목록](../README.md)
+
+## 자유의지와 인격 동일성으로 이어 읽기
+
+[자유의지와 책임](../자유의지와책임_free-will-responsibility/README.md), [자아와 인격 동일성](../자아와인격동일성_self-personal-identity/README.md), [의도와 의사결정 실험](../의도와의사결정_intention-decision/README.md)을 함께 읽으실 수 있습니다. [입장별 비교 글](../../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/자유의지와인격동일성_free-will-and-personal-identity.md)은 경험의 존재, 같은 존재의 지속, 행동의 통제와 책임을 구분합니다.

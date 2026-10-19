@@ -26,3 +26,7 @@
 [마음과 AI 철학](../마음과인공지능철학_mind-ai-philosophy/README.md)은 행동·이해·경험의 관계를 묻습니다. 이 목록은 몸의 상태와 행동을 연결하는 관측·기전을 다룹니다. 생물학적 원인을 설명하는 일과 이성·자유·책임의 기준을 정하는 일 사이에는 추가 논증이 필요합니다. [AI의 마음과 인간의 판단](../../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI의마음과인간의판단_minds-bodies-and-judgment.md)에서 그 연결 전제를 직접 나누어 보실 수 있습니다.
 
 [뇌와 신경공학](../뇌와신경공학_neuroengineering/README.md) · [대사·감량 임상 논문](../의약품과대사_metabolic-medicine/README.md) · [전체 논문 목록](../README.md)
+
+## 자유의지와 인격 동일성으로 이어 읽기
+
+[자유의지와 책임](../자유의지와책임_free-will-responsibility/README.md), [자아와 인격 동일성](../자아와인격동일성_self-personal-identity/README.md), [의도와 의사결정 실험](../의도와의사결정_intention-decision/README.md)을 함께 읽으실 수 있습니다. [입장별 비교 글](../../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/자유의지와인격동일성_free-will-and-personal-identity.md)은 경험의 존재, 같은 존재의 지속, 행동의 통제와 책임을 구분합니다.
