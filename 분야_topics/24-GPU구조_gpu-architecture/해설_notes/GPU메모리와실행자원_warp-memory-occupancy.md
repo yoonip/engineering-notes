@@ -12,10 +12,10 @@ CUDA의 thread는 프로그램의 실행 단위이고, block은 협력하고 동
 
 주소 $`a_i`$, 단어 크기 $`w`$, 구간 크기 $`S`$일 때 요청한 구간의 집합은 다음과 같다.
 
-$$
+```math
 \mathcal S=\bigcup_i\left\{\left\lfloor\frac{a_i}{S}\right\rfloor,\ldots,
 \left\lfloor\frac{a_i+w-1}{S}\right\rfloor\right\}.
-$$
+```
 
 따라서 단순 모델의 전송량은 $`S\vert \mathcal S\vert `$다. 모든 주소가 서로 다른 단어라면 유효 byte 비율을 $`32w/(S\vert \mathcal S\vert )`$로 계산할 수 있다. 여러 thread가 같은 주소를 읽는 broadcast에서는 이 분자가 중복 요청량이므로, 고유하게 사용한 byte 수와 구분한다. Coalescing은 thread 번호순 정렬 자체가 아니라 같은 명령의 주소들이 적은 구간에 모이는 성질이다. 네 구간 안에서 주소 순서를 바꾸어도 구간 수는 같다.
 
@@ -29,12 +29,12 @@ $$
 
 Occupancy는 SM에 상주하는 warp 수를 해당 SM의 최대 상주 warp 수로 나눈 값이다. 실행 중인 lane의 비율이나 GPU 사용률과 같은 뜻이 아니다. Block당 thread $`T`$, thread당 레지스터 $`r`$, block당 shared memory $`s`$를 사용한다고 하자. 총량만 고려한 block 수의 상한은
 
-$$
+```math
 B\le\min\left(B_{\max},\left\lfloor\frac{T_{SM}}T\right\rfloor,
 \left\lfloor\frac{R_{SM}}{rT}\right\rfloor,
 \left\lfloor\frac{S_{SM}}s\right\rfloor,
 \left\lfloor\frac{W_{SM}}{\lceil T/32\rceil}\right\rfloor\right).
-$$
+```
 
 사용량이 0인 자원 항은 제외한다. 예를 들어 가정한 SM의 레지스터가 65,536개이고 block이 256 thread라면 thread당 32개 사용 시 레지스터로는 8개 block, 64개 사용 시 4개 block까지 들어간다. 실제 장치는 레지스터 할당 단위, SM 내부 분할, block당 제한도 있으므로 이 식은 정확한 occupancy 계산기를 대체하지 않는다. 레지스터를 과도하게 줄여 spill이 생기면 occupancy가 높아져도 느려질 수 있다. [NVIDIA occupancy 설명](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy)
 

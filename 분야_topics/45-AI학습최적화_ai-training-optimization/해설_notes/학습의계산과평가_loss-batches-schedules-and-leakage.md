@@ -6,8 +6,10 @@
 
 먼저 절편이 없는 작은 회귀 모델 $`\hat y=wx`$를 보자. $`n`$개 표본의 평균 제곱 오차에 편의상 $`1/2`$를 넣으면
 
-$$L(w)=\frac1{2n}\sum_{i=1}^n(wx_i-y_i)^2,
-\qquad\frac{dL}{dw}=\frac1n\sum_i(wx_i-y_i)x_i.$$
+```math
+L(w)=\frac1{2n}\sum_{i=1}^n(wx_i-y_i)^2,
+\qquad\frac{dL}{dw}=\frac1n\sum_i(wx_i-y_i)x_i.
+```
 
 도함수는 안쪽 $`wx_i-y_i`$의 미분 $`x_i`$를 곱하는 chain rule에서 나온다. $`x_i`$ 중 적어도 하나가 0이 아니어서 $`\sum x_i^2>0`$이면 stationary point는 $`w^*=\sum_i x_iy_i/\sum_i x_i^2`$다. 여기서 필요한 조건은 “모든 $`x_i`$가 0인 경우가 아님”이며 일부 표본의 $`x_i=0`$은 허용한다.
 
@@ -17,7 +19,9 @@ $$L(w)=\frac1{2n}\sum_{i=1}^n(wx_i-y_i)^2,
 
 위 회귀의 곡률은 $`a=\frac1n\sum x_i^2>0`$다. 정확한 full-batch gradient와 고정 학습률이면
 
-$$w_{t+1}-w^*=(1-\eta a)(w_t-w^*).$$
+```math
+w_{t+1}-w^*=(1-\eta a)(w_t-w^*).
+```
 
 따라서 이 1차원 이차함수에서 수렴 조건은 $`0<\eta a<2`$다. 너무 큰 보폭은 최적점을 넘나들며 발산할 수 있다. 이 식을 모든 비선형 신경망의 전역 수렴 보장으로 확장할 수는 없다.
 
@@ -25,7 +29,9 @@ $$w_{t+1}-w^*=(1-\eta a)(w_t-w^*).$$
 
 Mini-batch는 전체 데이터의 일부로 gradient를 추정한다. 같은 파라미터에서 두 batch의 평균 gradient가 $`g_1,g_2`$, 표본 수가 $`n_1,n_2`$라면 전체 gradient는
 
-$$g=\frac{n_1g_1+n_2g_2}{n_1+n_2}.$$
+```math
+g=\frac{n_1g_1+n_2g_2}{n_1+n_2}.
+```
 
 마지막 batch가 작을 때 batch 평균을 단순 평균하면 표본 가중치가 달라진다. 또한 batch마다 파라미터를 갱신한 여러 SGD step은 같은 파라미터에서 합친 full-batch step과 같지 않다. Gradient accumulation으로 큰 batch를 모사할 때도 loss reduction과 표본 수를 맞춰야 한다. Batch 크기는 메모리, gradient의 변동, step당 비용을 바꾸므로 “크면 항상 좋다”는 한 줄로 정할 수 없다.
 
@@ -33,7 +39,9 @@ $$g=\frac{n_1g_1+n_2g_2}{n_1+n_2}.$$
 
 한 번 감소하는 cosine schedule을 $`0\le t\le T`$에서
 
-$$\eta_t=\eta_{min}+\frac{\eta_{max}-\eta_{min}}2[1+\cos(\pi t/T)]$$
+```math
+\eta_t=\eta_{min}+\frac{\eta_{max}-\eta_{min}}2[1+\cos(\pi t/T)]
+```
 
 로 정의하면 시작은 $`\eta_{max}`$, 마지막은 $`\eta_{min}`$이다. $`t`$가 optimizer update 수인지 epoch 수인지 정해야 같은 schedule을 재현한다. 이 예제는 종료 구간 안의 값만 정의하며 restart를 구현하지 않는다. [PyTorch cosine schedule](https://docs.pytorch.org/docs/2.14/generated/torch.optim.lr_scheduler.CosineAnnealingLR.html)
 

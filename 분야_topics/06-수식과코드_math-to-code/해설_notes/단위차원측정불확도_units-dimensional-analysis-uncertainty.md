@@ -28,12 +28,16 @@
 
 측정 모델 $`y=f(x_1,\ldots,x_n)`$를 입력 추정값 근처에서 1차 전개하면
 
-$$\delta y\approx\sum_i c_i\delta x_i,\qquad c_i=\frac{\partial f}{\partial x_i}.$$
+```math
+\delta y\approx\sum_i c_i\delta x_i,\qquad c_i=\frac{\partial f}{\partial x_i}.
+```
 
 양변의 분산을 취하면 공분산 행렬 $`\Sigma`$에 대해
 
-$$u_c^2(y)\approx \mathbf c^T\Sigma\mathbf c
-=\sum_i c_i^2u_i^2+2\sum_{i<j}c_ic_j\mathrm{cov}(x_i,x_j).$$
+```math
+u_c^2(y)\approx \mathbf c^T\Sigma\mathbf c
+=\sum_i c_i^2u_i^2+2\sum_{i<j}c_ic_j\mathrm{cov}(x_i,x_j).
+```
 
 입력 사이의 공분산이 0이면 교차항이 사라진다. 독립이면 이 조건을 만족하지만 무상관이 항상 독립을 뜻하지는 않는다. 비선형성이 크거나 입력이 분모의 0 근처에 있으면 1차 근사가 부적절할 수 있다. 이 유도와 조건은 [NIST TN 1297, Appendix A](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty)를 기준으로 확인했다.
 
@@ -41,7 +45,9 @@ $$u_c^2(y)\approx \mathbf c^T\Sigma\mathbf c
 
 저항 모델 $`R=V/I`$에서 $`c_V=1/I`$, $`c_I=-V/I^2`$다. $`V=2.000\ \mathrm V`$, $`I=0.01000\ \mathrm A`$, 표준불확도 $`u_V=0.002\ \mathrm V`$, $`u_I=0.00001\ \mathrm A`$를 넣고 두 입력을 독립으로 가정하면
 
-$$R=200\ \Omega,\qquad u_R=\sqrt{(0.2)^2+(-0.2)^2}\ \Omega\approx0.283\ \Omega.$$
+```math
+R=200\ \Omega,\qquad u_R=\sqrt{(0.2)^2+(-0.2)^2}\ \Omega\approx0.283\ \Omega.
+```
 
 `±0.283 Ω`는 여기서 표준불확도를 뜻한다. 이것을 근거 없이 보장 범위나 95 % 구간이라고 부르지 않는다. 상관계수 $`\rho`$가 있다면 공분산은 $`\rho u_Vu_I`$다. 두 측정값에 같은 비율의 스케일 오차가 생기는 경우 저항 비율에서는 그 성분이 상쇄될 수 있다.
 
@@ -73,8 +79,10 @@ Error is a difference from a reference value. Measurement uncertainty describes 
 
 Linearizing $`y=f(x_1,\ldots,x_n)`$ gives $`\delta y\approx\sum_i c_i\delta x_i`$, where $`c_i=\partial f/\partial x_i`$. Taking the variance yields
 
-$$u_c^2(y)\approx\mathbf c^T\Sigma\mathbf c
-=\sum_i c_i^2u_i^2+2\sum_{i<j}c_ic_j\mathrm{cov}(x_i,x_j).$$
+```math
+u_c^2(y)\approx\mathbf c^T\Sigma\mathbf c
+=\sum_i c_i^2u_i^2+2\sum_{i<j}c_ic_j\mathrm{cov}(x_i,x_j).
+```
 
 The cross terms vanish when the input covariances are zero. Independence is sufficient for this, but uncorrelated inputs are not necessarily independent. Strong nonlinearity or a denominator near zero can invalidate this first-order approximation. [NIST TN 1297, Appendix A](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-law-propagation-uncertainty) provides the propagation law and its assumptions.
 
