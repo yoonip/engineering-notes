@@ -24,3 +24,22 @@ Arduino, Raspberry Pi, STM32 Nucleo, ESP32, BeagleBone, Jetson, ROS 2, MoveIt, N
 
 - [ROS 2 documentation](https://docs.ros.org/)
 - [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/)
+
+## STM32·ESP32·Arduino·Raspberry Pi
+
+MCU와 보드 개발은 회로의 전원·클록·리셋, 핀 연결, 펌웨어와 호스트 프로그램을 함께 다룬다. GPIO는 디지털 입출력, ADC는 아날로그 신호의 수치 변환, 타이머는 주기·펄스 생성과 시간 측정에 쓰인다. UART·SPI·I²C는 외부 장치와 데이터를 주고받는 인터페이스다.
+
+| 대상 | 하드웨어와 개발 환경 |
+| --- | --- |
+| STM32 | Arm Cortex-M 기반 MCU 제품군. CubeIDE, GCC와 CMSIS를 이용한 펌웨어·레지스터 제어 |
+| ESP32 | 제품군에 따라 Xtensa 또는 RISC-V 코어를 포함하는 SoC. ESP-IDF 또는 Arduino 프레임워크를 이용한 개발 |
+| Arduino | 개발보드와 소프트웨어를 포함하는 플랫폼. 스케치는 일반적으로 C++로 컴파일되며 `setup()`·`loop()`와 장치 API를 사용 |
+| Raspberry Pi | Linux 환경에서 프로세스·드라이버와 GPIO·SPI 등 장치 인터페이스를 연결하는 보드 개발 |
+
+ESP32는 실행 대상 칩이고, Arduino 코어는 선택할 수 있는 소프트웨어 프레임워크다. VS Code는 편집·개발 도구이므로 VS Code 사용 여부만으로 Arduino 프레임워크의 사용 여부가 결정되지는 않는다. [ESP32 Arduino 코어](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
+
+## STM32 GPIO 레지스터 제어
+
+STM32F767ZI 예제는 `RCC->AHB1ENR`로 GPIOB의 클록을 활성화하고, `GPIOB->MODER`로 PB0을 출력으로 설정한다. `GPIOB->ODR`의 bit 0을 반전하면 해당 핀의 출력 상태가 바뀐다. 제조사 헤더는 레지스터의 주소, 구조체와 비트 마스크를 C 이름으로 제공한다. `->`, `|=`, `&= ~`는 일반 C 문법이다. [ST CMSIS Device F7](https://github.com/STMicroelectronics/cmsis-device-f7)
+
+CPU 범용 레지스터는 계산값과 주소를 보관하고, 주변장치 레지스터는 GPIO 같은 회로의 설정과 상태를 나타낸다. 보드의 LED 동작은 핀의 출력값뿐 아니라 실제 회로의 연결과 활성 극성에 따라 정해진다.
