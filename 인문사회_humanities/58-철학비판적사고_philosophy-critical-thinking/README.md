@@ -1,6 +1,6 @@
 # 철학과 비판적 사고 | Philosophy and Critical Thinking
 
-[전체 분야](../../분야별목차_CATALOG.md) · [추론과 인문·사회](../../추론과시험_reasoning/추론과판단_REASONING_AND_JUDGMENT.md) · [English](#english)
+[전체 분야](../../분야별목차_CATALOG.md) · [추론과 인문·사회](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
 
 지식과 근거, 사실과 가치, 좋은 논증과 반론의 관계를 살핍니다. 개념을 정의하고 입장을 비교하며 무엇이 결론을 바꿀 수 있는지 검토합니다.
 
@@ -14,6 +14,8 @@
 
 ## 본문
 
+- [철학 지문의 개념과 논증](해설_notes/철학지문과논증_PHILOSOPHICAL_READING.md): 철학의 주요 질문, 가상 지문의 입장 비교, 다섯 선택지의 근거와 조건 분석을 다룹니다.
+
 - [지식·논증·가치](해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md)
 
 ## English
@@ -24,6 +26,7 @@
 
 Examines knowledge, justification, facts, values and arguments by defining concepts, comparing positions and identifying what could change a conclusion.
 
+- [Reading philosophical passages](해설_notes/철학지문과논증_PHILOSOPHICAL_READING.md#english)
 - [Knowledge, arguments and values](해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md#english)
 
 

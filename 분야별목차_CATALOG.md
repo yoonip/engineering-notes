@@ -1,6 +1,6 @@
 # 분야별 목차 | Subject index
 
-공학 분야는 계산·구현 대상을 기준으로 묶었습니다. 추론·시험과 인문사회, 작성자 이력은 별도의 큰 분류에 있습니다. [언어 학습](언어학습_languages/README.md), [논문 해설](논문해설_papers/README.md), [기술 동향](기술동향_technology/README.md), [제품 리뷰](제품리뷰_reviews/README.md)도 독립된 목차로 읽으실 수 있습니다.
+공학 분야는 계산·구현 대상을 기준으로 묶었습니다. 언어이해·추리논증과 인문사회, 작성자 이력은 별도의 큰 분류에 있습니다. [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md), [논문 해설](논문해설_papers/README.md), [기술 동향](기술동향_technology/README.md), [제품 리뷰](제품리뷰_reviews/README.md)도 독립된 목차로 읽으실 수 있습니다.
 
 [처음으로](README.md) · [공학 기초](공학기초_foundations/README.md) · [출처](참고자료_references/README.md)
 
@@ -104,17 +104,17 @@
 | --- | --- |
 | [논문·코드·특허](분야_topics/27-논문코드특허_papers-code-patents/README.md)<br>Paper, Code & Patent Reviews | [논문·코드·특허 읽기: 주장과 재현 근거를 연결하기](분야_topics/27-논문코드특허_papers-code-patents/해설_notes/논문코드특허읽기_claims-evidence-reproduction-licenses.md)<br>[부분곱 열 제거 실험 읽기](분야_topics/27-논문코드특허_papers-code-patents/해설_notes/부분곱실험의주장과근거_partial-product-reproduction-case.md)<br>[재현 실험 설계: 같은 조건에서 차이를 비교하기](분야_topics/27-논문코드특허_papers-code-patents/해설_notes/쌍체비교와재현실험_paired-reproducible-experiments.md) |
 
-## 추론·시험 | Reasoning and assessments
+## 언어이해·추리논증 | Reading comprehension and argument reasoning
 
 | 분야 | 실제 해설 |
 | --- | --- |
-| [추론·독해·적성시험](추론과시험_reasoning/57-추론적성시험_reasoning-assessments/README.md)<br>Reasoning, Reading and Aptitude Assessments | [LEET·PSAT·기업 검사: 공식 자료를 찾고 구분하는 방법](추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/LEETPSAT기업검사_official-exams-and-past-papers.md)<br>[공식 기출 분석: 조건의 범위와 비교 대상을 놓치지 않기](추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/공식기출분석_official-past-paper-walkthroughs.md)<br>[논증 독해: 무엇을 근거로 어디까지 말할 수 있습니까](추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/논증독해_argument-reading-and-counterexamples.md)<br>[명제와 추론: 참인 말에서 따라 나오는 말](추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/명제와추론_formal-logic-and-inference.md)<br>[주장의 반례를 계산하기: CNF와 DPLL](추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/반례탐색과단위전파_sat-dpll-counterexamples.md)<br>[자료를 숫자로 읽기: 기준, 비율, 평균](추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/자료를숫자로읽기_quantitative-data-reasoning.md)<br>[조건을 표로 바꾸고 반례로 확인하기](추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/조건을표로바꾸고반례로확인하기_constraint-and-decision-reasoning.md)<br>[추론 연습과 통찰: 익숙함을 이해로 착각하지 않기](추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/추론연습과통찰_practice-feedback-and-insight.md) |
+| [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md)<br>Reading comprehension and argument reasoning | [언어이해: 문장·구조·관점·선택지](언어이해와추리논증_reading-reasoning/언어이해_reading/README.md)<br>[추리논증: 조건·논리·근거·반론](언어이해와추리논증_reading-reasoning/추리논증_reasoning/README.md)<br>[공식 시험 자료](언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)<br>[자료해석](언어이해와추리논증_reading-reasoning/자료해석_quantitative/README.md) |
 
 ## 인문사회 | Humanities and social sciences
 
 | 분야 | 실제 해설 |
 | --- | --- |
-| [철학과 비판적 사고](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/README.md)<br>Philosophy and Critical Thinking | [안다는 것, 논증한다는 것, 옳다고 판단한다는 것](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md)<br>[증거는 믿음을 어떻게 바꿉니까: 모형 비교와 Bayes factor](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/증거와모형비교_bayes-factors-and-beliefs.md) |
+| [철학과 비판적 사고](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/README.md)<br>Philosophy and Critical Thinking | [안다는 것, 논증한다는 것, 옳다고 판단한다는 것](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md)<br>[증거는 믿음을 어떻게 바꿉니까: 모형 비교와 Bayes factor](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/증거와모형비교_bayes-factors-and-beliefs.md)<br>[철학 지문의 개념과 논증](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/철학지문과논증_PHILOSOPHICAL_READING.md) |
 | [경제·선택·지표](인문사회_humanities/59-경제선택지표_economics/README.md)<br>Economics, Choices and Indicators | [GDP와 물가 읽기: 명목 금액, 실질 변화, 지수의 차이](인문사회_humanities/59-경제선택지표_economics/해설_notes/GDP와물가읽기_gdp-inflation-real-values.md)<br>[산업 간 연결을 행렬로 읽기: 투입산출 모형과 고정점](인문사회_humanities/59-경제선택지표_economics/해설_notes/산업연관과고정점_leontief-input-output.md)<br>[희소성에서 선택으로: 기회비용, 한계와 유인](인문사회_humanities/59-경제선택지표_economics/해설_notes/희소성에서선택으로_scarcity-opportunity-cost-incentives.md) |
 | [사회·제도·증거](인문사회_humanities/60-사회제도증거_society-institutions/README.md)<br>Society, Institutions and Evidence | [사회를 자료로 읽기: 제도, 규범과 인과관계](인문사회_humanities/60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md)<br>[전체 비율이 층별 비교를 뒤집을 때: Simpson 역설과 표준화](인문사회_humanities/60-사회제도증거_society-institutions/해설_notes/집계와표준화_simpson-standardized-rates.md) |
 | [법의 기초와 법령 읽기](인문사회_humanities/61-법령읽기_law-foundations/README.md)<br>Law Foundations and Legal Reading | [법령을 읽는 첫걸음: 출처, 적용 시점과 해석](인문사회_humanities/61-법령읽기_law-foundations/해설_notes/법령을읽는첫걸음_legal-sources-and-interpretation.md)<br>[법령의 시간을 데이터로 읽기: 공포일, 시행일과 이력 조회](인문사회_humanities/61-법령읽기_law-foundations/해설_notes/법령이력과시간구간_version-timelines-and-scope.md) |

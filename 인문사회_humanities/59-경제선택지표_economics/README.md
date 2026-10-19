@@ -1,6 +1,6 @@
 # 경제·선택·지표 | Economics, Choices and Indicators
 
-[전체 분야](../../분야별목차_CATALOG.md) · [추론과 인문·사회](../../추론과시험_reasoning/추론과판단_REASONING_AND_JUDGMENT.md) · [English](#english)
+[전체 분야](../../분야별목차_CATALOG.md) · [추론과 인문·사회](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
 
 희소성·기회비용·유인에서 출발해 경제적 선택을 분석하고, GDP와 물가를 정의·분모·기준시점에 맞게 읽습니다.
 

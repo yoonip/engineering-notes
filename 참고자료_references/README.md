@@ -13,6 +13,8 @@
 
 각 목록은 해당 글에서 사용한 자료를 연결합니다. 동일한 글이 여러 학습 경로에 속할 수 있으므로 표의 숫자를 저장소 전체의 서로 다른 글 수로 합산하지 않습니다. [기초 계산의 검증 범위](../공학기초_foundations/검증기록_VERIFICATION.md)와 [AI 모델의 공식 자료](../AI모델실험_model-lab/PROVIDERS.md)도 함께 보실 수 있습니다.
 
+[언어이해·추리논증의 평가 범위와 출처](../언어이해와추리논증_reading-reasoning/출처와평가범위_SOURCES.md)는 독해·논증 학습과 공식 평가 설명을 연결합니다.
+
 ## 개발 환경·프로그래밍
 
 - [GNU Bash manual](https://www.gnu.org/software/bash/manual/bash.html)

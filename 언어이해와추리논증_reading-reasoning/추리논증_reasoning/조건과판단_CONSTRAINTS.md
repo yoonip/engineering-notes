@@ -1,6 +1,6 @@
 # 조건을 표로 바꾸고 반례로 확인하기 | Constraint and decision reasoning
 
-[추론·적성](../README.md) · [실행 코드](../../../예제_examples/추론_reasoning/README.md)
+[추론·적성](../README.md) · [실행 코드](../../예제_examples/추론_reasoning/README.md)
 
 ## 한국어
 

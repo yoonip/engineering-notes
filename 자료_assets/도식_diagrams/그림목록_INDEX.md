@@ -5,7 +5,7 @@
 | 그림 | 연결된 해설 | 파일 |
 | --- | --- | --- |
 | 기초에서 구현과 검증까지 | [해설](../../공학기초_foundations/README.md) | [PNG](foundations.png) · [SVG](foundations.svg) |
-| 추론과 인문·사회: 근거를 읽고 판단하기 | [해설](../../추론과시험_reasoning/추론과판단_REASONING_AND_JUDGMENT.md) | [PNG](reasoning_and_humanities.png) · [SVG](reasoning_and_humanities.svg) |
+| 추론과 인문·사회: 근거를 읽고 판단하기 | [해설](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) | [PNG](reasoning_and_humanities.png) · [SVG](reasoning_and_humanities.svg) |
 | 같은 주소, 다른 메모리: 프로세스·가상 메모리·동시성 | [해설](../../분야_topics/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md) | [PNG](processes-memory-concurrency.png) · [SVG](processes-memory-concurrency.svg) |
 | RC·RLC: 회로 법칙에서 시간·주파수 응답까지 | [해설](../../분야_topics/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md) | [PNG](rc-rlc-response.png) · [SVG](rc-rlc-response.svg) |
 | MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계 | [해설](../../분야_topics/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md) | [PNG](mos-electrostatics-switching.png) · [SVG](mos-electrostatics-switching.svg) |
@@ -23,9 +23,9 @@
 | Attention: 필요한 정보를 가중합으로 모으기 | [해설](../../분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md) | [PNG](attention-from-equations.png) · [SVG](attention-from-equations.svg) |
 | 열전도와 확산 | [해설](../../분야_topics/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md) | [PNG](heat-diffusion.png) · [SVG](heat-diffusion.svg) |
 | 역학, 에너지, 진동 | [해설](../../분야_topics/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md) | [PNG](mechanics-energy-oscillation.png) · [SVG](mechanics-energy-oscillation.svg) |
-| 논증 독해: 무엇을 근거로 어디까지 말할 수 있습니까 | [해설](../../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/논증독해_argument-reading-and-counterexamples.md) | [PNG](argument-reading-and-counterexamples.png) · [SVG](argument-reading-and-counterexamples.svg) |
-| 공식 기출 분석: 조건의 범위와 비교 대상을 놓치지 않기 | [해설](../../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/공식기출분석_official-past-paper-walkthroughs.md) | [PNG](official-past-paper-walkthroughs.png) · [SVG](official-past-paper-walkthroughs.svg) |
-| 추론 연습과 통찰: 익숙함을 이해로 착각하지 않기 | [해설](../../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/추론연습과통찰_practice-feedback-and-insight.md) | [PNG](practice-feedback-and-insight.png) · [SVG](practice-feedback-and-insight.svg) |
+| 논증 독해: 무엇을 근거로 어디까지 말할 수 있습니까 | [해설](../../언어이해와추리논증_reading-reasoning/추리논증_reasoning/논증독해_ARGUMENT_READING.md) | [PNG](argument-reading-and-counterexamples.png) · [SVG](argument-reading-and-counterexamples.svg) |
+| 공식 기출 분석: 조건의 범위와 비교 대상을 놓치지 않기 | [해설](../../언어이해와추리논증_reading-reasoning/시험자료_assessments/LEET기출분석_LEET_CASES.md) | [PNG](official-past-paper-walkthroughs.png) · [SVG](official-past-paper-walkthroughs.svg) |
+| 추론 연습과 통찰: 익숙함을 이해로 착각하지 않기 | [해설](../../언어이해와추리논증_reading-reasoning/학습방법_STUDY_METHODS.md) | [PNG](practice-feedback-and-insight.png) · [SVG](practice-feedback-and-insight.svg) |
 | 안다는 것, 논증한다는 것, 옳다고 판단한다는 것 | [해설](../../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md) | [PNG](knowledge-arguments-values.png) · [SVG](knowledge-arguments-values.svg) |
 | 사회를 자료로 읽기: 제도, 규범과 인과관계 | [해설](../../인문사회_humanities/60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md) | [PNG](evidence-causality-institutions.png) · [SVG](evidence-causality-institutions.svg) |
 

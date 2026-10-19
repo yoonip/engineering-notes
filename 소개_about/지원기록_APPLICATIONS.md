@@ -21,7 +21,7 @@
 
 ## 추론·적성시험 자료
 
-[별도 학습 문서](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/README.md)는 LEET·PSAT와 기업 적성시험의 공식 자료, 논증·자료해석·조건 판단을 다룹니다. 개인의 지원 이력과 시험 개념 자료를 구분해 찾아볼 수 있습니다.
+[별도 학습 문서](../언어이해와추리논증_reading-reasoning/README.md)는 LEET·PSAT와 기업 적성시험의 공식 자료, 논증·자료해석·조건 판단을 다룹니다. 개인의 지원 이력과 시험 개념 자료를 구분해 찾아볼 수 있습니다.
 
 ## English
 
@@ -46,4 +46,4 @@ For research, collaboration, or career opportunities: [dlfvud777@naver.com](mail
 
 ### Reasoning and assessment material
 
-[Separate learning notes](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/README.md#english) cover official LEET, PSAT and corporate-assessment sources, arguments, data interpretation and constraints. These are distinct from personal application records.
+[Separate learning notes](../언어이해와추리논증_reading-reasoning/README.md#english) cover official LEET, PSAT and corporate-assessment sources, arguments, data interpretation and constraints. These are distinct from personal application records.

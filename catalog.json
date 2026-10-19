@@ -1380,37 +1380,35 @@
     {
       "number": 57,
       "slug": "57-추론적성시험_reasoning-assessments",
-      "title": "추론·독해·적성시험",
-      "english_title": "Reasoning, Reading and Aptitude Assessments",
+      "title": "언어이해·추리논증",
+      "english_title": "Reading comprehension and argument reasoning",
       "sections": [
-        "형식 논리와 추론",
-        "논증 독해와 반례",
-        "비율·자료해석·확률 추론",
-        "조건·제약·판단",
-        "연습·피드백·통찰",
-        "공식 시험과 기출 자료",
-        "공식 기출 분석"
+        "문장과 지문의 이해",
+        "주제·구조·관점",
+        "선택지 판단과 적용",
+        "명제·조건·양화",
+        "논증과 근거의 평가",
+        "시험별 공식 자료"
       ],
       "english_sections": [
-        "Formal logic and inference",
-        "Argument reading and counterexamples",
-        "Quantitative data reasoning",
-        "Constraint and decision reasoning",
-        "Practice, feedback and insight",
-        "Official exams and past-paper sources",
-        "Verified past-paper walkthroughs"
+        "Sentence and passage meaning",
+        "Topics, structure and viewpoints",
+        "Answer choices and application",
+        "Propositions, conditions and quantifiers",
+        "Argument and evidence evaluation",
+        "Official assessment material"
       ],
       "keywords": "LEET, PSAT, SKCT, GSAT, HMAT, Logic, Reading, Data Interpretation, Decision Making",
-      "path": "추론과시험_reasoning/57-추론적성시험_reasoning-assessments/README.md",
+      "path": "언어이해와추리논증_reading-reasoning/README.md",
       "references": [
         "https://info.leet.or.kr/",
         "https://www.akls.kr/",
         "https://www.mpm.go.kr/"
       ],
-      "summary_ko": "논증을 읽고 조건을 모델링하며 자료의 단위와 비율을 확인합니다. LEET·PSAT와 기업 적성시험의 공식 자료를 구분하고, 실제 기출은 확인한 출처와 문항 번호로 분석합니다.",
-      "summary_en": "Reads arguments, models constraints, and checks units and ratios. Distinguishes official LEET, PSAT and corporate assessment sources and analyzes verified past questions by source and question identifier.",
-      "category_ko": "추론·시험",
-      "category_en": "Reasoning and assessments"
+      "summary_ko": "문장과 지문의 의미·구조·관점, 정보의 일치·불일치·추론을 다룹니다. 명제와 조건의 형식뿐 아니라 자연어 논증의 근거·가정·반례, 인과와 유추, 강화·약화를 함께 살펴봅니다. 철학과 인문사회 지문을 개념과 논증의 관계로 읽고 공식 시험 자료와 자체 연습을 구분합니다.",
+      "summary_en": "Reading tracks meaning, structure, viewpoints and answer-choice support. Reasoning covers formal conditions and natural-language arguments, assumptions, counterexamples, causation, analogy, strengthening and weakening. Philosophical passages connect concepts to arguments; official assessment material and constructed exercises are distinguished.",
+      "category_ko": "언어이해·추리논증",
+      "category_en": "Reading comprehension and argument reasoning"
     },
     {
       "number": 58,
@@ -1857,8 +1855,8 @@
       ]
     },
     {
-      "title_ko": "추론·시험",
-      "title_en": "Reasoning and assessments",
+      "title_ko": "언어이해·추리논증",
+      "title_en": "Reading comprehension and argument reasoning",
       "area_numbers": [
         57
       ]

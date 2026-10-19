@@ -1,6 +1,6 @@
 # 공학 노트 | Engineering Notes
 
-회로와 반도체부터 RTL·펌웨어, 시스템 소프트웨어, GPU와 AI까지 다루는 기술 기록입니다. 개념을 정리하고 수식을 코드로 옮기며, 직접 실행한 결과와 그 조건을 함께 모았습니다. 추론·시험, 언어 학습, 인문사회는 공학과 구분하여 읽으실 수 있습니다.
+회로와 반도체부터 RTL·펌웨어, 시스템 소프트웨어, GPU와 AI까지 다루는 기술 기록입니다. 개념을 정리하고 수식을 코드로 옮기며, 직접 실행한 결과와 그 조건을 함께 모았습니다. 언어이해·추리논증, 외국어·기술 영어, 인문사회는 공학과 구분하여 읽으실 수 있습니다.
 
 ## 학습 분야
 
@@ -8,8 +8,8 @@
 | --- | --- |
 | [공학 기초](공학기초_foundations/README.md) | 수학·물리·회로·시스템·AI의 기초, 분야별 학습과 심화 계산 |
 | [공학 분야별 해설](분야_topics/README.md) | 소프트웨어, 회로·반도체, 임베디드·제어, GPU·AI |
-| [추론과 시험](추론과시험_reasoning/README.md) | 논리·독해·자료해석·조건 추론, LEET·PSAT·GSAT·SKCT |
-| [언어 학습](언어학습_languages/README.md) | 기술 영어, 영어와 제2외국어, 읽기·쓰기 연습 |
+| [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md) | [문해력·독해·선택지 판단](언어이해와추리논증_reading-reasoning/언어이해_reading/README.md) · [논리·추론·논증 평가](언어이해와추리논증_reading-reasoning/추리논증_reasoning/README.md) |
+| [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md) | 영어·제2외국어의 학습, 기술 문서의 읽기와 번역 |
 | [인문사회](인문사회_humanities/README.md) | 철학, 경제, 사회·제도, 법령 읽기 |
 
 ## 논문과 기술 분석
@@ -48,9 +48,9 @@
 
 ## English
 
-These notes connect circuits, semiconductors, RTL, firmware, systems software, GPUs and AI. They pair explanations with equations, implementations and recorded checks. Reasoning, language learning and humanities have separate reading paths.
+These notes connect circuits, semiconductors, RTL, firmware, systems software, GPUs and AI. They pair explanations with equations, implementations and recorded checks. Reading comprehension and argument reasoning, foreign languages, and humanities have separate reading paths.
 
-- Learning: [Engineering foundations](공학기초_foundations/README.md#english), [technical topics](분야_topics/README.md), [reasoning and exams](추론과시험_reasoning/README.md), [languages](언어학습_languages/README.md), [humanities](인문사회_humanities/README.md).
+- Learning: [Engineering foundations](공학기초_foundations/README.md#english), [technical topics](분야_topics/README.md), [reading and argument reasoning](언어이해와추리논증_reading-reasoning/README.md), [foreign languages and technical English](외국어와기술영어_foreign-languages/README.md), [humanities](인문사회_humanities/README.md).
 - Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [software and model reviews](제품리뷰_reviews/README.md), [AI model lab](AI모델실험_model-lab/README.md).
 - Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [672 Programmers solutions](programmers/README.md).
 - Background: [Research](연구_research/README.md), [author](소개_about/README.md), [contact](소개_about/연락_CONTACT.md), [tools](도구와환경_tools/README.md), [references](참고자료_references/README.md), [contributing](기여안내_contributing/README.md).

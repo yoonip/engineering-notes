@@ -403,7 +403,7 @@
 
 ### 56. 주장의 반례를 계산하기: CNF와 DPLL
 
-[해설 읽기](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/반례탐색과단위전파_sat-dpll-counterexamples.md)
+[해설 읽기](../언어이해와추리논증_reading-reasoning/추리논증_reasoning/반례탐색_SAT.md)
 
 - [cs.cmu.edu · 16-dpll.pdf](https://www.cs.cmu.edu/~15414/s25/lectures/16-dpll.pdf)
 - [web.stanford.edu · NOT04.pdf](https://web.stanford.edu/class/cs357/NOT04.pdf)

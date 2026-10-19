@@ -22,8 +22,8 @@ I hope this repository will be more than a store of finished answers. One reader
 | --- | --- |
 | [Engineering foundations](공학기초_foundations/README.md) | Foundational and advanced derivations, calculations and checks |
 | [Technical topics](분야_topics/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
-| [Reasoning and exams](추론과시험_reasoning/README.md) | Logic, reading, data, constraints and official assessment sources |
-| [Languages](언어학습_languages/README.md) | Technical English and language practice |
+| [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | Meaning, structure, viewpoints, answer choices, inference and argument evaluation |
+| [Foreign languages and technical English](외국어와기술영어_foreign-languages/README.md) | English, other languages and technical translation |
 | [Humanities](인문사회_humanities/README.md) | Philosophy, economics, society and legal reading |
 | [Paper studies](논문해설_papers/README.md) | Claims, equations, implementations and experimental conditions |
 | [Technology landscape](기술동향_technology/README.md) | Dated analysis of benchmarks and technical developments |

@@ -1,4 +1,4 @@
-# 추론과 인문·사회: 근거를 읽고 판단하기
+# 개념과 근거, 판단의 관계 | Concepts, evidence and judgment
 
 [전체 분야](../분야별목차_CATALOG.md) · [공학 기초](../공학기초_foundations/README.md) · [문서별 출처](../참고자료_references/추론출처_REASONING_SOURCES.md) · [English](#english)
 
@@ -8,13 +8,13 @@
 
 | 글 | 다루는 내용 |
 | --- | --- |
-| [형식 논리와 추론](57-추론적성시험_reasoning-assessments/해설_notes/명제와추론_formal-logic-and-inference.md) | 조건·양화·역과 대우·타당성, 진리표와 반례 |
-| [논증 독해](57-추론적성시험_reasoning-assessments/해설_notes/논증독해_argument-reading-and-counterexamples.md) | 근거·결론·연결 가정, 필연과 약화의 차이 |
-| [자료해석과 확률 추론](57-추론적성시험_reasoning-assessments/해설_notes/자료를숫자로읽기_quantitative-data-reasoning.md) | 분모·단위·비율·가중평균·기저율과 Bayes |
-| [조건과 판단](57-추론적성시험_reasoning-assessments/해설_notes/조건을표로바꾸고반례로확인하기_constraint-and-decision-reasoning.md) | 제약 전파·경우 나누기·완전성·최소 비용 |
-| [연습·피드백·통찰](57-추론적성시험_reasoning-assessments/해설_notes/추론연습과통찰_practice-feedback-and-insight.md) | 인출·분산 학습, 오류 수정, 새 자료로의 적용과 연구의 한계 |
-| [공식 시험·기출 자료](57-추론적성시험_reasoning-assessments/해설_notes/LEETPSAT기업검사_official-exams-and-past-papers.md) | LEET·5급 PSAT·SKCT·GSAT·HMAT의 자료 구분과 공식 경로 |
-| [실제 기출 분석](57-추론적성시험_reasoning-assessments/해설_notes/공식기출분석_official-past-paper-walkthroughs.md) | AKLS 공식 자료에서 확인한 2025학년도 LEET 추리논증 6번·28번 |
+| [형식 논리와 추론](추리논증_reasoning/명제와추론_FORMAL_LOGIC.md) | 조건·양화·역과 대우·타당성, 진리표와 반례 |
+| [논증 독해](추리논증_reasoning/논증독해_ARGUMENT_READING.md) | 근거·결론·연결 가정, 필연과 약화의 차이 |
+| [자료해석과 확률 추론](자료해석_quantitative/자료와비율_DATA_AND_RATIOS.md) | 분모·단위·비율·가중평균·기저율과 Bayes |
+| [조건과 판단](추리논증_reasoning/조건과판단_CONSTRAINTS.md) | 제약 전파·경우 나누기·완전성·최소 비용 |
+| [연습·피드백·통찰](학습방법_STUDY_METHODS.md) | 인출·분산 학습, 오류 수정, 새 자료로의 적용과 연구의 한계 |
+| [공식 시험·기출 자료](시험자료_assessments/공식자료_OFFICIAL_SOURCES.md) | LEET·5급 PSAT·SKCT·GSAT·HMAT의 자료 구분과 공식 경로 |
+| [실제 기출 분석](시험자료_assessments/LEET기출분석_LEET_CASES.md) | AKLS 공식 자료에서 확인한 2025학년도 LEET 추리논증 6번·28번 |
 
 LEET와 PSAT는 문항의 학년도·시행연도·영역·책형·최종 정답 출처를 구분해 읽습니다. 기업 검사는 각 관계사·직무·시기의 공고가 기준이며, 인성검사와 적성검사도 같은 것으로 다루지 않습니다. 실제 기출 분석은 원문과 정답을 확인한 문항에만 붙입니다. 정의를 이해하기 위한 작은 수치·논리 예시는 기출 문항으로 표시하지 않습니다.
 
@@ -50,13 +50,13 @@ These notes examine precise reading, comparable quantities and the strength of r
 
 | Article | Coverage |
 | --- | --- |
-| [Formal logic and inference](57-추론적성시험_reasoning-assessments/해설_notes/명제와추론_formal-logic-and-inference.md#english) | Conditions, quantifiers, contraposition, validity, truth tables and countermodels |
-| [Argument reading](57-추론적성시험_reasoning-assessments/해설_notes/논증독해_argument-reading-and-counterexamples.md#english) | Evidence, conclusions, inferential assumptions, necessity versus weakening |
-| [Quantitative data reasoning](57-추론적성시험_reasoning-assessments/해설_notes/자료를숫자로읽기_quantitative-data-reasoning.md#english) | Denominators, units, ratios, weighted means, base rates and Bayes |
-| [Constraints and decisions](57-추론적성시험_reasoning-assessments/해설_notes/조건을표로바꾸고반례로확인하기_constraint-and-decision-reasoning.md#english) | Propagation, case splitting, completeness and minimum costs |
-| [Practice, feedback and insight](57-추론적성시험_reasoning-assessments/해설_notes/추론연습과통찰_practice-feedback-and-insight.md#english) | Retrieval, spacing, correction, transfer and limits of evidence |
-| [Official exams and past papers](57-추론적성시험_reasoning-assessments/해설_notes/LEETPSAT기업검사_official-exams-and-past-papers.md#english) | Official source distinctions for LEET, Grade 5 PSAT, SKCT, GSAT and HMAT |
-| [Verified past-paper analysis](57-추론적성시험_reasoning-assessments/해설_notes/공식기출분석_official-past-paper-walkthroughs.md#english) | 2025-academic-year LEET reasoning items 6 and 28 verified in AKLS material |
+| [Formal logic and inference](추리논증_reasoning/명제와추론_FORMAL_LOGIC.md#english) | Conditions, quantifiers, contraposition, validity, truth tables and countermodels |
+| [Argument reading](추리논증_reasoning/논증독해_ARGUMENT_READING.md#english) | Evidence, conclusions, inferential assumptions, necessity versus weakening |
+| [Quantitative data reasoning](자료해석_quantitative/자료와비율_DATA_AND_RATIOS.md#english) | Denominators, units, ratios, weighted means, base rates and Bayes |
+| [Constraints and decisions](추리논증_reasoning/조건과판단_CONSTRAINTS.md#english) | Propagation, case splitting, completeness and minimum costs |
+| [Practice, feedback and insight](학습방법_STUDY_METHODS.md#english) | Retrieval, spacing, correction, transfer and limits of evidence |
+| [Official exams and past papers](시험자료_assessments/공식자료_OFFICIAL_SOURCES.md#english) | Official source distinctions for LEET, Grade 5 PSAT, SKCT, GSAT and HMAT |
+| [Verified past-paper analysis](시험자료_assessments/LEET기출분석_LEET_CASES.md#english) | 2025-academic-year LEET reasoning items 6 and 28 verified in AKLS material |
 
 Keep academic-year labels, administration years, sections, booklet forms and final-answer sources distinct. Corporate requirements depend on the affiliate, role and recruitment round. Personality inventories and aptitude tests are not interchangeable. Only questions with checked originals and answers are labeled past-paper analysis; small conceptual calculations are not labeled exam questions.
 

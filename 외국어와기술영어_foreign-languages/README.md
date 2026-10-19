@@ -1,6 +1,6 @@
-# 언어 학습 | Language learning
+# 외국어와 기술 영어 | Foreign languages and technical English
 
-기술 문서를 정확히 읽는 영어와, 외국어를 꾸준히 익히는 방법을 나누어 다룹니다. 사회·경제의 개념은 [인문사회](../인문사회_humanities/README.md)에서, 논문의 주장과 실험은 [논문 해설](../논문해설_papers/README.md)에서 읽으실 수 있습니다.
+영어와 제2외국어의 학습, 외국어로 된 기술 문서의 읽기와 번역을 다룹니다. 국어 지문의 문해력과 선택지 판단은 [언어이해·추리논증](../언어이해와추리논증_reading-reasoning/README.md)에서 다룹니다. 사회·경제의 개념은 [인문사회](../인문사회_humanities/README.md)에서, 논문의 주장과 실험은 [논문 해설](../논문해설_papers/README.md)에서 읽으실 수 있습니다.
 
 | 분야 | 먼저 읽을 내용 | 연습 방법 |
 | --- | --- | --- |

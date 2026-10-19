@@ -8,21 +8,21 @@
 
 ### 1. 논증 독해: 무엇을 근거로 어디까지 말할 수 있습니까
 
-[해설 읽기](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/논증독해_argument-reading-and-counterexamples.md)
+[해설 읽기](../언어이해와추리논증_reading-reasoning/추리논증_reasoning/논증독해_ARGUMENT_READING.md)
 
 - [writingcenter.fas.harvard.edu · asking-analytical-questions](https://writingcenter.fas.harvard.edu/asking-analytical-questions)
 - [writingcenter.fas.harvard.edu · counterargument](https://writingcenter.fas.harvard.edu/counterargument)
 
 ### 2. 조건을 표로 바꾸고 반례로 확인하기 | Constraint and decision reasoning
 
-[해설 읽기](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/조건을표로바꾸고반례로확인하기_constraint-and-decision-reasoning.md)
+[해설 읽기](../언어이해와추리논증_reading-reasoning/추리논증_reasoning/조건과판단_CONSTRAINTS.md)
 
 - [aima.cs.berkeley.edu · chapter05.pdf](https://aima.cs.berkeley.edu/4th-ed/slides-pdf/chapter05.pdf)
 - [cs.cmu.edu · index.html](https://www.cs.cmu.edu/~15281-s24/coursenotes/constraints/index.html)
 
 ### 3. 명제와 추론: 참인 말에서 따라 나오는 말 | Propositions and inference
 
-[해설 읽기](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/명제와추론_formal-logic-and-inference.md)
+[해설 읽기](../언어이해와추리논증_reading-reasoning/추리논증_reasoning/명제와추론_FORMAL_LOGIC.md)
 
 - [courses.csail.mit.edu · predicate-logic2.pdf](https://courses.csail.mit.edu/6.042/spring18/predicate-logic2.pdf)
 - [logical.stanford.edu · section_03.html](https://logical.stanford.edu/intrologic/sections/section_03.html?section=1)
@@ -31,7 +31,7 @@
 
 ### 4. LEET·PSAT·기업 검사: 공식 자료를 찾고 구분하는 방법
 
-[해설 읽기](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/LEETPSAT기업검사_official-exams-and-past-papers.md)
+[해설 읽기](../언어이해와추리논증_reading-reasoning/시험자료_assessments/공식자료_OFFICIAL_SOURCES.md)
 
 - [akls.kr · purpose.php](https://akls.kr/company/purpose.php)
 - [akls.kr · notice03.php](https://akls.kr/notice/notice03.php?boardid=notice03&idx=3001&mode=view)
@@ -54,13 +54,13 @@
 
 ### 5. 공식 기출 분석: 조건의 범위와 비교 대상을 놓치지 않기
 
-[해설 읽기](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/공식기출분석_official-past-paper-walkthroughs.md)
+[해설 읽기](../언어이해와추리논증_reading-reasoning/시험자료_assessments/LEET기출분석_LEET_CASES.md)
 
 - [akls.kr · e2c5adeb5b9aafa5ca1306478d22a6951.pdf](https://akls.kr/uploaded/board/reference01/e2c5adeb5b9aafa5ca1306478d22a6951.pdf)
 
 ### 6. 추론 연습과 통찰: 익숙함을 이해로 착각하지 않기
 
-[해설 읽기](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/추론연습과통찰_practice-feedback-and-insight.md)
+[해설 읽기](../언어이해와추리논증_reading-reasoning/학습방법_STUDY_METHODS.md)
 
 - [learninglab.psych.purdue.edu · 2011_Karpicke_Blunt_Science.pdf](https://learninglab.psych.purdue.edu/downloads/2011/2011_Karpicke_Blunt_Science.pdf)
 - [kent.edu · effective-learning-strategies](https://www.kent.edu/kso/effective-learning-strategies)
@@ -68,7 +68,7 @@
 
 ### 7. 자료를 숫자로 읽기: 기준, 비율, 평균 | Quantitative data reasoning
 
-[해설 읽기](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/자료를숫자로읽기_quantitative-data-reasoning.md)
+[해설 읽기](../언어이해와추리논증_reading-reasoning/자료해석_quantitative/자료와비율_DATA_AND_RATIOS.md)
 
 - [web.stanford.edu · LN04_cond_bayes.pdf](https://web.stanford.edu/class/archive/cs/cs109/cs109.1206/lectureNotes/LN04_cond_bayes.pdf)
 - [web.stanford.edu · LN06_random_variables.pdf](https://web.stanford.edu/class/archive/cs/cs109/cs109.1206/lectureNotes/LN06_random_variables.pdf)

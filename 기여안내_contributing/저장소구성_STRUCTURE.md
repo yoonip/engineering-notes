@@ -6,8 +6,8 @@
 | --- | --- |
 | 공학기초_foundations/ | 기초·분야별·심화 학습과 용어·계산 검증 |
 | 분야_topics/ | 공학·개발 분야별 해설 |
-| 추론과시험_reasoning/ | 논리·독해·자료해석과 LEET·PSAT·GSAT·SKCT |
-| 언어학습_languages/ | 기술 영어와 외국어 학습 |
+| 언어이해와추리논증_reading-reasoning/ | 언어이해와 추리논증의 두 학습 축, 자료해석·학습 방법·공식 시험 자료 |
+| 외국어와기술영어_foreign-languages/ | 영어·제2외국어와 기술 문서 읽기·번역 |
 | 인문사회_humanities/ | 철학·경제·사회·법 |
 | 논문해설_papers/ | 개별 논문의 수식·구현·주장 분석 |
 | 기술동향_technology/ | 날짜가 있는 기술 현황과 비교 |
@@ -27,4 +27,4 @@
 
 ## English
 
-The root navigation separates technical learning, reasoning, languages, humanities, paper studies, technology analysis, reviews and model experiments. Research, author information, tools, references and contributor material have dedicated locations. JSON retains machine-readable paths while Markdown provides readable indexes.
+The root navigation separates technical learning, reading and argument reasoning, foreign languages, humanities, paper studies, technology analysis, reviews and model experiments. Research, author information, tools, references and contributor material have dedicated locations. JSON retains machine-readable paths while Markdown provides readable indexes.

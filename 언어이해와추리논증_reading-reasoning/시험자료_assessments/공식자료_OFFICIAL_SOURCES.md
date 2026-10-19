@@ -1,6 +1,6 @@
 # LEET·PSAT·기업 검사: 공식 자료를 찾고 구분하는 방법
 
-[상위 주제](../README.md) · [공식 기출 문항 분석](공식기출분석_official-past-paper-walkthroughs.md)
+[상위 주제](../README.md) · [공식 기출 문항 분석](LEET기출분석_LEET_CASES.md)
 
 확인일: 2026-10-19. 시험의 학년도, 실제 시행연도, 자료 발행일은 서로 다른 정보입니다. 아래 링크는 확인한 공식 자료의 위치이며, 지원할 전형의 최신 공고와 응시 안내가 실제 시험 구성의 기준입니다.
 
@@ -24,7 +24,7 @@ AKLS는 [주요사업과 2026년도 계획](https://akls.kr/company/purpose.php)
 
 기출은 [LEET 공식 홈페이지](https://www.leet.or.kr/)의 자료실·문제 및 정답 공개 공지에서 학년도와 영역을 확인합니다. AKLS도 공식 설명회 자료에 일부 실제 기출과 정답을 수록합니다. 바로 읽을 수 있는 자료는 [2026학년도 LEET 전국순회설명회 자료집](https://akls.kr/uploaded/board/reference01/e2c5adeb5b9aafa5ca1306478d22a6951.pdf)입니다. 자료집 발행은 2025년 4월이며, 분석에 사용한 것은 그 안의 2025학년도 추리논증 6번·28번, 인쇄 pp.10–11, PDF 6쪽입니다. 자료집의 학년도와 수록 기출의 학년도를 구분합니다.
 
-이 자료집의 2026학년도 안내에는 언어이해·추리논증·논술이 구분되어 있습니다. 해당 안내를 이후 모든 회차의 시간표로 고정하지 않으며, 논술의 활용도 각 법학전문대학원의 모집요강으로 확인합니다. 실제 문항 분석은 원문과 정답이 함께 확인된 문항만 [별도 글](공식기출분석_official-past-paper-walkthroughs.md)에 기록합니다.
+이 자료집의 2026학년도 안내에는 언어이해·추리논증·논술이 구분되어 있습니다. 해당 안내를 이후 모든 회차의 시간표로 고정하지 않으며, 논술의 활용도 각 법학전문대학원의 모집요강으로 확인합니다. 실제 문항 분석은 원문과 정답이 함께 확인된 문항만 [별도 글](LEET기출분석_LEET_CASES.md)에 기록합니다.
 
 ### 3. PSAT: 5급·7급·민경채를 섞지 않기
 
@@ -70,7 +70,7 @@ AKLS lists LEET development, administration, objections and answer confirmation 
 
 Use the resources and question/answer notices on the [official LEET website](https://www.leet.or.kr/) with the correct academic year and section. AKLS also publishes selected actual questions and answers in briefing materials. The [2026-academic-year nationwide briefing booklet](https://akls.kr/uploaded/board/reference01/e2c5adeb5b9aafa5ca1306478d22a6951.pdf), published in April 2025, includes 2025-academic-year Reasoning and Argumentation items 6 and 28, printed pp.10–11, PDF page 6. The booklet's year and the included questions' year are different.
 
-The booklet distinguishes Language Comprehension, Reasoning and Argumentation, and Essay Writing for the described administration. Its timetable should not be frozen as a rule for every later year; each law school also determines essay use through its admission rules. The [companion walkthrough](공식기출분석_official-past-paper-walkthroughs.md) covers only questions whose original text and official answers were jointly checked.
+The booklet distinguishes Language Comprehension, Reasoning and Argumentation, and Essay Writing for the described administration. Its timetable should not be frozen as a rule for every later year; each law school also determines essay use through its admission rules. The [companion walkthrough](LEET기출분석_LEET_CASES.md) covers only questions whose original text and official answers were jointly checked.
 
 ### 3. PSAT: preserve the recruitment category
 

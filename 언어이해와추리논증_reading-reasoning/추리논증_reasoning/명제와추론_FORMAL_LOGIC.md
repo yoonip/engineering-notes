@@ -1,6 +1,6 @@
 # 명제와 추론: 참인 말에서 따라 나오는 말 | Propositions and inference
 
-[추론·적성](../README.md) · [실행 코드](../../../예제_examples/추론_reasoning/README.md)
+[추론·적성](../README.md) · [실행 코드](../../예제_examples/추론_reasoning/README.md)
 
 ## 한국어
 

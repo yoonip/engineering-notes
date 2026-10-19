@@ -25,7 +25,7 @@
 - 10분: 요약하거나 상황을 바꿔 말합니다.
 - 5분: 틀린 부분과 다음 복습 대상을 남깁니다.
 
-회상과 분산 연습의 근거 및 적용 한계는 [학습 방법 해설](../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/해설_notes/추론연습과통찰_practice-feedback-and-insight.md)에 연결했습니다. [CEFR Companion Volume](https://www.coe.int/en/web/common-european-framework-reference-languages)은 이해·표현·상호작용 등의 능력을 구분할 때 참고할 수 있습니다. 특정 점수나 짧은 학습 시간만으로 실제 업무 수행을 보장하지는 않습니다.
+회상과 분산 연습의 근거 및 적용 한계는 [학습 방법 해설](../언어이해와추리논증_reading-reasoning/학습방법_STUDY_METHODS.md)에 연결했습니다. [CEFR Companion Volume](https://www.coe.int/en/web/common-european-framework-reference-languages)은 이해·표현·상호작용 등의 능력을 구분할 때 참고할 수 있습니다. 특정 점수나 짧은 학습 시간만으로 실제 업무 수행을 보장하지는 않습니다.
 
 ## 제2외국어에서 따로 확인할 부분
 

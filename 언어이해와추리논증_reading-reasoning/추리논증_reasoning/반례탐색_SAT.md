@@ -1,6 +1,6 @@
 # 주장의 반례를 계산하기: CNF와 DPLL
 
-[분야 목차](../README.md) · [SAT 구현](../../../예제_examples/심화_advanced/math_reasoning/models.py) · [독립 검증](../../../예제_examples/심화_advanced/math_reasoning/test_models.py)
+[분야 목차](../README.md) · [SAT 구현](../../예제_examples/심화_advanced/math_reasoning/models.py) · [독립 검증](../../예제_examples/심화_advanced/math_reasoning/test_models.py)
 
 ## 한국어
 

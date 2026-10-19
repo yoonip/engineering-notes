@@ -1,6 +1,6 @@
 # 추론을 계산으로 확인하기 | Verifying reasoning with computation
 
-[코드](models.py) · [검사](test_models.py) · [검증 기록 / Verification](VERIFICATION.json) · [추론·적성](../../추론과시험_reasoning/57-추론적성시험_reasoning-assessments/README.md)
+[코드](models.py) · [검사](test_models.py) · [검증 기록 / Verification](VERIFICATION.json) · [추론·적성](../../언어이해와추리논증_reading-reasoning/README.md)
 
 명제논리의 반례, 가중평균과 Bayes 계산, 유한 이항 제약의 해와 최소 비용을 확인하는 표준 라이브러리 예제입니다. 저장소 최상위 폴더에서 실행합니다.
 

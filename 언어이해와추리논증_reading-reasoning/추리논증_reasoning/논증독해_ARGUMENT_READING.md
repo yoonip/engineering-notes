@@ -1,6 +1,6 @@
 # 논증 독해: 무엇을 근거로 어디까지 말할 수 있습니까
 
-[추론과 적성시험](../README.md) · [인문·사회와 추론](../../추론과판단_REASONING_AND_JUDGMENT.md) · [English](#english)
+[추론과 적성시험](../README.md) · [인문·사회와 추론](../개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
 
 ## 내용을 기억하는 것과 논리를 따라가는 것
 
@@ -28,13 +28,13 @@ $$
 \text{전제 집합 }\Gamma\text{를 모두 만족하는 모든 해석이 }C\text{도 만족한다}.
 $$
 
-예를 들어 $`P\Rightarrow Q`$와 $`Q`$만으로 $`P`$를 확정할 수 없습니다. $`P`$가 거짓이고 $`Q`$가 참인 해석이 두 전제를 만족하기 때문입니다. 이 짧은 식은 정의를 확인하는 예이며 기출 문항이 아닙니다. [형식 논리 글](명제와추론_formal-logic-and-inference.md)의 진리표와 연결해 검사할 수 있습니다.
+예를 들어 $`P\Rightarrow Q`$와 $`Q`$만으로 $`P`$를 확정할 수 없습니다. $`P`$가 거짓이고 $`Q`$가 참인 해석이 두 전제를 만족하기 때문입니다. 이 짧은 식은 정의를 확인하는 예이며 기출 문항이 아닙니다. [형식 논리 글](명제와추론_FORMAL_LOGIC.md)의 진리표와 연결해 검사할 수 있습니다.
 
 자연어 논증이 모두 이런 연역 형식은 아닙니다. 관측 자료로 원인을 추정하거나 정책 효과를 예상하는 글에서는 근거가 결론을 얼마나 지지하는지, 대안 설명이 남는지를 살핍니다. “입증되지 않았다”와 “거짓으로 입증되었다”도 다릅니다. 정보가 부족한 상태를 임의로 참·거짓 중 하나로 확정하지 않습니다.
 
-![논증 독해: 무엇을 근거로 어디까지 말할 수 있는가 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.png)
+![논증 독해: 무엇을 근거로 어디까지 말할 수 있는가 — 개념도 / Concept diagram](../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.png)
 
-[SVG](../../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.mmd)
+[SVG](../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.svg) · [그림 원본 / Diagram source](../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.mmd)
 
 직접 구성한 그림입니다. 반론은 결론뿐 아니라 근거의 신뢰성이나 연결 가정에도 향할 수 있습니다.
 
@@ -74,7 +74,7 @@ $$
 \text{every interpretation satisfying all of }\Gamma\text{ also satisfies }C.
 $$
 
-From $`P\Rightarrow Q`$ and $`Q`$, one cannot conclude $`P`$: $`P`$ false and $`Q`$ true is a counterexample. This small definition check is not a past exam question. The [formal-logic article](명제와추론_formal-logic-and-inference.md#english) connects it to truth-table checks.
+From $`P\Rightarrow Q`$ and $`Q`$, one cannot conclude $`P`$: $`P`$ false and $`Q`$ true is a counterexample. This small definition check is not a past exam question. The [formal-logic article](명제와추론_FORMAL_LOGIC.md#english) connects it to truth-table checks.
 
 Not every natural-language argument is deductive. Inferring causes or policy effects requires assessing support and remaining alternatives. Failure to establish a claim is not proof that it is false. Insufficient information should not be arbitrarily forced into a true/false answer. The original diagram above distinguishes objections to evidence, inference and scope.
 
@@ -99,6 +99,6 @@ Verification starts by returning to the text: preserve its subject, quantifiers 
 
 - [Harvard College Writing Center: Counterargument](https://writingcenter.fas.harvard.edu/counterargument) — 근거·가정·결론을 겨냥하는 반론 / objections targeting evidence, assumptions and conclusions.
 - [Harvard College Writing Center: Asking Analytical Questions](https://writingcenter.fas.harvard.edu/asking-analytical-questions) — 자료 안의 모순·모호함·대안 분석 / tensions, ambiguities and alternatives within sources.
-- [형식 논리와 검증](명제와추론_formal-logic-and-inference.md) — 타당성·반례의 정의와 공식 논리 교재 / validity and counterexamples with primary logic references.
+- [형식 논리와 검증](명제와추론_FORMAL_LOGIC.md) — 타당성·반례의 정의와 공식 논리 교재 / validity and counterexamples with primary logic references.
 
 논증 구조와 반론의 역할을 대조하고, 작은 연역 예는 명제의 참·거짓 해석으로 확인했습니다. / Argument structure and objection roles were cross-checked; the small deduction was checked against its truth assignments.
