@@ -1,6 +1,6 @@
 # 논문 해설 | Paper studies
 
-계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명과학·에너지·통신·제조·우주 탐사와 산업·사회 연구까지 논문 162편을 한국어로 읽습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
+계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명과학·에너지·통신·제조·우주 탐사와 산업·사회·마음 철학과 호르몬 연구까지 논문 174편을 한국어로 읽습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
 
 ## 분야별 목록
 
@@ -22,8 +22,10 @@
 | [생명과학과 진단](생명과학과진단_life-science-diagnostics/README.md) | 6 | DNA 서열·PCR·RNA 변형·나노포어·오가노이드·Liver-Chip |
 | [제조와 광학](제조와광학_manufacturing-photonics/README.md) | 4 | 체적 광경화·수지 공급, 간섭·회절 신경망의 실제 검증 범위 |
 | [산업과 표준](산업과표준_industry-standards/README.md) | 2 | 기술 채택의 경로 의존, 보완재·호환성·전환 비용 |
+| [마음과 인공지능 철학](마음과인공지능철학_mind-ai-philosophy/README.md) | 6 | 모방 게임·중국어 방·지향적 설명·주관적 경험·의식의 지표 |
+| [호르몬과 행동](호르몬과행동_hormones-behaviour/README.md) | 6 | 렙틴·그렐린·스트레스 회로와 측정·옥시토신·집단 구분 |
 
-각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 162편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
+각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 174편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
 
 ## 처음 읽으실 때
 
@@ -99,9 +101,11 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## 논문을 선정한 기준
 
+AI의 행동과 마음의 관계는 [철학 논문 6편](마음과인공지능철학_mind-ai-philosophy/README.md)에서 입장과 반론을 따라갑니다. [호르몬·행동 논문 6편](호르몬과행동_hormones-behaviour/README.md)은 몸의 상태와 식욕·주의·사회적 과제를 연결합니다. 동물·세포 모형, 인간의 개입 시험, 관찰과 검토 논문을 구분하며 집단의 평균 효과를 모든 개인의 결정이나 존재의 가치로 일반화하지 않습니다. 두 분야를 연결하는 [논증 연습](../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI의마음과인간의판단_minds-bodies-and-judgment.md)도 있습니다.
+
 후속 연구에서 다시 사용한 개념, 공개 교육과정에서 다루는 내용, 실제 시스템 설계로 이어진 영향을 기준으로 읽을 논문을 골랐습니다. 예를 들어 [Stanford CS231n 2025 강의 일정](https://cs231n.stanford.edu/2025/schedule.html)은 역전파·AlexNet·ResNet·BatchNorm·attention을 연결하고, [MIT 분산 시스템의 논문 질문](https://pdos.csail.mit.edu/6.824/questions.html)은 GFS와 MapReduce 등의 설계 조건을 검토합니다. 개별 글에서는 해당 논문의 원문과 확인 가능한 후속 논문·명세를 연결합니다.
 
-발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 162편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
+발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 174편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
 
 ## 모델별 분석과 재현 사례
 
@@ -115,4 +119,4 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## English
 
-The 162 distinct papers cover computing, AI, electronics, neuroscience, medicine, materials, space, energy, communications, diagnostics, manufacturing and economic theories of technology adoption. Preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
+The 174 distinct papers cover computing, AI, electronics, neuroscience, medicine, materials, space, energy, communications, diagnostics, manufacturing and economic theories of technology adoption, philosophy of mind and hormonal influences on behaviour. Preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.

@@ -11,6 +11,7 @@
 | 생명과학·진단 | [DNA·PCR·RNA·조직 모델](논문해설_papers/생명과학과진단_life-science-diagnostics/README.md) | [시퀀싱·현장 진단·mRNA·바이오 제조](제품리뷰_reviews/진단과바이오제조_diagnostics-biomanufacturing/README.md) |
 | 제조·데이터센터 | [광경화와 광학 신경망](논문해설_papers/제조와광학_manufacturing-photonics/README.md) | [3D 프린터·CPO·액체 냉각](제품리뷰_reviews/제조와인프라_manufacturing-infrastructure/README.md) |
 | 산업·표준·경쟁 | [기술 채택·보완재·호환성과 전환](논문해설_papers/산업과표준_industry-standards/README.md) | [NVIDIA 생태계와 경쟁 대안](제품리뷰_reviews/산업과기술경쟁_industry-competition/README.md) |
+| 마음·의식·몸과 판단 | [AI·마음 철학](논문해설_papers/마음과인공지능철학_mind-ai-philosophy/README.md) · [호르몬과 행동](논문해설_papers/호르몬과행동_hormones-behaviour/README.md) | [행동·경험·생물학적 원인과 가치 판단](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI의마음과인간의판단_minds-bodies-and-judgment.md) |
 
 [처음으로](README.md) · [공학 기초](공학기초_foundations/README.md) · [출처](참고자료_references/README.md)
 
