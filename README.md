@@ -8,15 +8,15 @@
 | --- | --- |
 | [공학 기초](공학기초_foundations/README.md) | 수학·물리·회로·시스템·AI의 기초, 분야별 학습과 심화 계산 |
 | [공학 분야별 해설](분야_topics/README.md) | 소프트웨어, 회로·반도체, 임베디드·제어, GPU·AI |
-| [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md) | [문해력·독해·선택지 판단](언어이해와추리논증_reading-reasoning/언어이해_reading/README.md) · [논리·추론·논증 평가](언어이해와추리논증_reading-reasoning/추리논증_reasoning/README.md) |
-| [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md) | 영어·제2외국어의 학습, 기술 문서의 읽기와 번역 |
+| [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md) | 문해력·논리·논증, [실제 수능·LEET 11문항 분석](언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)과 자체 연습 |
+| [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md) | [영어 기초 8단원·64개 연습](외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), 외국어 학습 방법과 기술 문서 읽기 |
 | [인문사회](인문사회_humanities/README.md) | 철학, 경제, 사회·제도, 법령 읽기 |
 
 ## 논문과 기술 분석
 
 | 분야 | 내용 |
 | --- | --- |
-| [논문 해설](논문해설_papers/README.md) | 주장·수식·구현·실험 조건을 연결한 개별 논문 분석 |
+| [논문 해설](논문해설_papers/README.md) | 정보·전자공학, 컴퓨팅·시스템, 딥러닝의 주요 논문과 용어·계산 예제 |
 | [기술 동향](기술동향_technology/README.md) | 날짜와 근거를 갖춘 기술 현황, 표준과 벤치마크의 변화 |
 | [제품과 모델 리뷰](제품리뷰_reviews/README.md) | 실제 프로그램·배포 모델의 기능, 동작, 사용 조건 |
 | [AI 모델 실험](AI모델실험_model-lab/README.md) | 공급사별 모델 분석, 구조·배포 방식, CPU 계산 실험 |

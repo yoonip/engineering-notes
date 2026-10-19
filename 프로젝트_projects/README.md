@@ -27,6 +27,11 @@
 
 ## 코드와 검증
 
+세부 실습은 아래 본문으로 바로 들어가실 수 있습니다.
+
+- Practical Silicon Lab: [Arm64 시작과 UART](practical-silicon-lab/arm64/README.md), [JTAG TAP와 디버깅](practical-silicon-lab/jtag/README.md), [Linux 장치 I/O](practical-silicon-lab/linux/README.md), [검증 결과 판정](practical-silicon-lab/validation/README.md)
+- Embedded validation lab: [MNIST의 학습·검증·추론](embedded-validation-lab/mnist/README.md)
+
 RTL의 출력은 Python 정수 기준 모델과 대조하고, 펌웨어는 컴파일·시뮬레이션·통신 검사로 확인했습니다. 합성·배치배선 결과와 소프트웨어 시뮬레이션 결과는 해당 프로젝트의 검증 기록에서 구분합니다.
 
 짧은 계산·언어 예제는 [examples](../예제_examples/README.md), Arm·RISC-V의 명령 단위 실행과 OpenOCD·GDB 실습은 [embedded-debug-labs](../예제_examples/임베디드디버깅_embedded-debug-labs/README.md)에 있습니다. [Programmers](../programmers/README.md)에는 문제 풀이와 학습 기록을 정리했습니다.

@@ -15,6 +15,8 @@
 
 [언어이해·추리논증의 평가 범위와 출처](../언어이해와추리논증_reading-reasoning/출처와평가범위_SOURCES.md)는 독해·논증 학습과 공식 평가 설명을 연결합니다.
 
+[실제 수능·LEET 기출 분석](../언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)은 공식 문제·정답의 파일 위치까지 연결합니다. [영어 기초](../외국어와기술영어_foreign-languages/영어기초_english-basics/README.md)는 단원별로 British Council 문법과 Oxford 발음 자료를 연결합니다. [논문 해설](../논문해설_papers/README.md)은 각 논문의 원문과 분석한 절·쪽을 본문에 표시합니다.
+
 ## 개발 환경·프로그래밍
 
 - [GNU Bash manual](https://www.gnu.org/software/bash/manual/bash.html)

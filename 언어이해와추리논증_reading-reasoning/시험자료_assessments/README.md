@@ -4,13 +4,15 @@
 
 | 자료 | 확인할 내용 | 읽을 곳 |
 | --- | --- | --- |
-| LEET 언어이해 | 주제·구조·관점, 정보의 관계, 해석과 적용 | [공식 평가 설명과 출처](../출처와평가범위_SOURCES.md) · [언어이해 학습](../언어이해_reading/README.md) |
-| LEET 추리논증 | 주어진 정보의 귀결, 원리 적용, 논증과 반론의 평가 | [공식 자료](공식자료_OFFICIAL_SOURCES.md) · [확인한 기출 두 문항](LEET기출분석_LEET_CASES.md) |
-| 수능 국어 독서 | 지문 정보와 구조, 추론·평가·적용 | [평가원 안내서](../출처와평가범위_SOURCES.md) · [독해 연습](../언어이해_reading/README.md) |
+| LEET 언어이해 | 2025학년도 1~3번: 문단의 역할, 작가·비판자·독자의 관점, 15개 선지 | [공식 자료와 문항별 해설](LEET/README.md) |
+| LEET 추리논증 | 2025학년도 6번·28번: 규정의 지급·청구 조건, 가설을 검토하는 실험 비교 | [조건 분석과 조합 선지 해설](LEET/README.md) |
+| 수능 국어 독서 | 2025학년도 홀수형 4~9번: 개념의 변화, 과학·철학의 관점, 사례 적용과 문맥 어휘 | [한 지문 묶음 6문항·30개 선지](수능_CSAT/README.md) |
 | PSAT | 공식 문제·정답의 영역, 연도와 책형 | [공식 자료 경로](공식자료_OFFICIAL_SOURCES.md) |
 | GSAT·SKCT 등 기업 검사 | 해당 관계사·직무·시기의 검사 구성과 공개 예시 | [공식 채용 안내와 자료 구분](공식자료_OFFICIAL_SOURCES.md) |
 
-기존 LEET 기출 분석은 2025학년도 추리논증 6번·28번을 대상으로 합니다. 이 기록을 언어이해 기출 전체의 해설로 표시하지 않습니다. 새 학습 글의 지문과 문항은 직접 만든 예시이며, 실제 기출과 구분합니다.
+실제 기출 해설은 위 11문항을 다룹니다. 문항마다 공식 정답과 질문의 긍정·부정 방향을 확인하고, 각 선지의 근거 위치와 맞거나 어긋나는 관계를 적었습니다. 원문과 선택지 전체는 공식 PDF에서 읽으실 수 있습니다. 다른 문항이나 회차 전체의 해설을 포함했다는 뜻은 아닙니다.
+
+[기존 LEET 두 문항 요약](LEET기출분석_LEET_CASES.md)은 개념과 작은 계산을 연결하는 자료로 남겼습니다. 실제 문항별 상세 검토는 새 LEET 목차에서 읽으시면 됩니다. [자체 독해 8문항](../언어이해_reading/통합독해연습_READING_PRACTICE.md)과 [자체 추론 6문항](../추리논증_reasoning/통합추론연습_REASONING_EXERCISES.md)은 별도로 만든 연습이며 기출과 구분합니다.
 
 공식 문제를 분석하실 때에는 문항 번호뿐 아니라 어느 문장의 어떤 표현이 선지를 지지하거나 배제하는지 남깁니다. 오답을 고칠 때에는 빠뜨린 조건, 바꿔 읽은 주체나 범위, 추가한 가정을 적으시면 복습 지점이 분명해집니다.
 
@@ -18,4 +20,4 @@
 
 ## English
 
-Shared reading and reasoning skills are separated from the actual structure of each assessment. Official sources establish the exam, section, year, booklet and answer. The existing LEET analysis covers two verified reasoning items, not the reading-comprehension section. Constructed exercises are labeled separately. Corporate assessment formats depend on the specific recruitment process.
+The actual-paper analyses cover six 2025 CSAT Korean reading items and five 2025 LEET items. They identify the source and answer, passage structure, evidence locations and reasons for each choice. They do not cover a complete examination. Original practice exercises are labeled separately, and corporate assessment formats depend on the recruitment process.

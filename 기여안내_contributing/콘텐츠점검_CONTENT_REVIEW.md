@@ -38,6 +38,30 @@
 
 외부 문서는 AI 배포물과 새 분석의 핵심 근거를 공식 자료로 확인했습니다. 저장소의 모든 외부 URL을 실시간으로 검사하거나 기존 연구의 모든 실험을 재실행한 기록은 아닙니다. 모델 실험은 작은 수치 예제이며 공식 가중치 추론이나 GPU 벤치마크를 포함하지 않습니다.
 
+## 기출 분석·영어 기초·대표 논문 추가 점검
+
+앞선 분류 점검에 이어 2026-10-19에 다음 본문을 작성하고 확인했습니다. 제목이 있는지만 세지 않고, 문제 풀이·계산·정답 근거를 실제로 읽을 수 있는지 살폈습니다.
+
+| 대상 | 작성한 내용 | 확인 범위 |
+| --- | --- | --- |
+| 실제 기출 | 수능 국어 6문항과 LEET 5문항의 지문 구조·선택지별 판단 근거 | 공식 문제·정답의 연도, 문항 번호, 쪽 위치를 대조했습니다. 원문 전체를 복제하지 않고 관계와 판단 근거를 해설했습니다. |
+| 영어 기초 | 8단원, 연습 64개와 접어서 보는 정답·해설 | 문장 성분, be·일반동사, 관사, 시제·조동사, 연결 표현을 예제와 함께 확인했습니다. |
+| 기사와 연구 읽기 | 직접 만든 두 가지 영어 읽기 자료와 연습 8개 | 주장·조건·비교 기준과 근거가 허용하는 범위를 구분했습니다. 실제 기사나 실험 결과로 소개하지 않았습니다. |
+| 대표 논문 | 정보·전자공학 7편, 컴퓨팅·시스템 8편, 신경망 11편, Transformer·GPT-3·CLIP·LoRA 4편 | 원문 서지와 확인 위치, 한국어 개념 설명, 자체 계산, 자기점검과 답을 넣었습니다. 기존 Transformer 해설을 포함해 30편입니다. |
+| 모델별 분석 | 짧게 남아 있던 배포물·도구 설명 27개 | 구조·입출력의 의미와 자체 평가 입력·판정표 또는 산술을 추가했습니다. 기존 두 개의 상세 분석과 함께 기관별 목록은 29개입니다. |
+| 기초와 평가 | RC 충전, 모델 평가 지표, 기술 용어와 논문 용어 | 단위·가정·분모·행렬 모양과 계산 결과를 대조했습니다. |
+| 목차 연결 | 61개 분야의 본문 연결과 주요 학습 경로 | 외국어 읽기 글의 이름과 위치를 정리하고, RC·개발 도구·세부 실습의 찾기 어려운 링크를 연결했습니다. |
+
+[기출 목록](../언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md), [영어 기초](../외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), [논문 해설](../논문해설_papers/README.md), [모델별 분석](../AI모델실험_model-lab/models/README.md)에서 해당 본문으로 들어가실 수 있습니다. 논문은 교육과 후속 연구에 미친 영향을 기준으로 선정했으며 인용 횟수 순위를 산정한 목록은 아닙니다.
+
+수치 예제는 별도 계산과 교차 검토로 확인했습니다. 예를 들어 Amdahl의 추가 비용은 기준 시간으로 나눈 값이어야 하고, LayerNorm과 BatchNorm은 통계를 구하는 축이 다릅니다. CLIP의 한계 절 번호, Moore의 1975년 후속 원문 링크, NVIDIA 카드 안에서 서로 다른 언어 목록도 원문에 맞춰 바로잡았습니다.
+
+이 점검에서는 Markdown 1,139개의 상대 링크·목차 경로 검사와 출처 목록 일치 검사가 통과했습니다. 기존 attention 계산의 다섯 조건도 다시 확인했습니다. 이번 변경의 기준 커밋 `f8a086f`와 비교해 코드·데이터·그림 등 Markdown 이외의 기존 파일 3,699개는 바이트 단위로 같았습니다. 기존 제출 원본과 실행 기록은 보존되어 있습니다.
+
+새 모델 설명의 입력과 기대값은 학습용으로 구성한 자료입니다. 이번 작성 과정에서 공식 가중치 추론·유료 API 호출·이미지나 영상 생성·하드웨어 실측을 추가로 수행하지 않았습니다. 원 논문의 실험 결과, 기존에 실행한 수치 실험, 새로 만든 설명용 계산을 구분했습니다.
+
 ## English
 
 The review began with 1,031 Markdown files. Subject categories, model studies, paper calculations, dated technology analysis, executable product observations and readable references now have separate paths. Korean explanatory prose uses a polite register. Existing code, quotations, research facts and recorded measurements are preserved. Local document checks, six CPU numerical tests, attention properties, two SQLite journal observations and the 672-solution archive check were run. This is not a full rerun of every historical experiment or a continuous check of every external URL.
+
+The follow-up adds analyses of 11 actual exam questions, eight English units with 64 exercises, eight additional reading exercises, 30 selected paper studies including the expanded Transformer article, and fuller explanations for 27 model/runtime entries. Local checks pass across 1,139 Markdown files. All 3,699 existing non-Markdown files remain byte-identical to the follow-up baseline. Constructed examples are distinguished from published results and executed experiments.

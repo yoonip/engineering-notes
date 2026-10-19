@@ -2,6 +2,8 @@
 
 도구별 역할과 관련 문서를 정리했습니다.
 
+처음 설치와 실행의 관계를 정리하실 때에는 [개발 환경의 구성](개발환경_GETTING_STARTED.md), 언어·runtime·모델·단위를 구분하실 때에는 [기술 용어](기술용어_TERMINOLOGY.md)부터 읽으시면 됩니다.
+
 A guide to what each tool does and where its related notes are kept.
 
 ## 역할별 설명

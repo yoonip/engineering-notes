@@ -6,6 +6,8 @@
 
 ## 개념의 연결
 
+첫 시간 응답 계산으로 [RC 충전](RC충전_RC_RESPONSE.md)을 읽으실 수 있습니다. 전류와 전압 관계에서 출발해 시정수, 99%에 도달하는 시간, Euler 한 걸음의 오차를 계산합니다.
+
 ![기초에서 구현과 검증까지 — 개념도 / Concept diagram](../자료_assets/도식_diagrams/foundations.png)
 
 [SVG](../자료_assets/도식_diagrams/foundations.svg) · [그림 원본 / Diagram source](../자료_assets/도식_diagrams/foundations.mmd)

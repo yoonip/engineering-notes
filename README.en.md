@@ -1,6 +1,6 @@
 # Engineering Notes
 
-Technical notes on electronics, computer engineering, and AI by [yoonip](https://github.com/yoonip). The collection connects circuits and semiconductors with RTL, firmware, systems software, GPU computing, and AI. It includes technical explanations, equations translated into code, and implementation results. Explanations appear in Korean followed by English; code comments are in Korean, and technical names retain their usual spelling.
+Technical notes on electronics, computer engineering, and AI by [yoonip](https://github.com/yoonip). The collection connects circuits and semiconductors with RTL, firmware, systems software, GPU computing, and AI. It includes explanations, equations, implementations and recorded results. The paper studies explain the methods in Korean with original English terms; many technical notes also provide English summaries.
 
 ## Engineering and shared knowledge
 
@@ -22,10 +22,10 @@ I hope this repository will be more than a store of finished answers. One reader
 | --- | --- |
 | [Engineering foundations](공학기초_foundations/README.md) | Foundational and advanced derivations, calculations and checks |
 | [Technical topics](분야_topics/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
-| [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | Meaning, structure, viewpoints, answer choices, inference and argument evaluation |
-| [Foreign languages and technical English](외국어와기술영어_foreign-languages/README.md) | English, other languages and technical translation |
+| [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | Eleven actual CSAT/LEET items, choice-by-choice reasoning and original practice |
+| [Foreign languages and technical English](외국어와기술영어_foreign-languages/README.md) | Eight English foundation lessons with 64 exercises, study methods and technical reading |
 | [Humanities](인문사회_humanities/README.md) | Philosophy, economics, society and legal reading |
-| [Paper studies](논문해설_papers/README.md) | Claims, equations, implementations and experimental conditions |
+| [Paper studies](논문해설_papers/README.md) | Influential work in information, electronics, computing, systems and deep learning, with Korean explanations and worked examples |
 | [Technology landscape](기술동향_technology/README.md) | Dated analysis of benchmarks and technical developments |
 | [Software and model reviews](제품리뷰_reviews/README.md) | Behavior, deployment conditions and limits |
 | [AI model lab](AI모델실험_model-lab/README.md) | Provider-specific analyses and executed CPU numerical experiments |
