@@ -2,6 +2,8 @@
 
 공학 분야는 계산·구현 대상을 기준으로 묶었습니다. 언어이해·추리논증과 인문사회, 작성자 이력은 별도의 큰 분류에 있습니다. [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md), [논문 해설](논문해설_papers/README.md), [기술 동향](기술동향_technology/README.md), [제품 리뷰](제품리뷰_reviews/README.md)도 독립된 목차로 읽으실 수 있습니다.
 
+논문은 계산 이론·시스템·AI·전자공학에서 뇌신경·생명공학·소재·우주 연구로 이어집니다. 제품 리뷰는 [반도체·산업 컴퓨팅](제품리뷰_reviews/반도체와산업컴퓨팅_chips-industrial/README.md), [기기·모빌리티](제품리뷰_reviews/기기와모빌리티_devices-mobility/README.md), [AI·로봇](제품리뷰_reviews/AI와로봇_ai-robotics/README.md), [우주·운송](제품리뷰_reviews/우주와운송_space-transport/README.md), [방산 전자](제품리뷰_reviews/방산전자_defense-electronics/README.md), [의약품·생명공학](제품리뷰_reviews/의약품과생명공학_biomedical/README.md)으로 나누었습니다. 실제 본문에서 용어와 원리·비교 근거를 함께 읽으실 수 있습니다.
+
 [처음으로](README.md) · [공학 기초](공학기초_foundations/README.md) · [출처](참고자료_references/README.md)
 
 ## 개발 환경과 언어 | Development environments and languages

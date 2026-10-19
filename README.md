@@ -16,9 +16,9 @@
 
 | 분야 | 내용 |
 | --- | --- |
-| [논문 해설](논문해설_papers/README.md) | 정보·전자공학, 컴퓨팅·시스템, 딥러닝의 주요 논문과 용어·계산 예제 |
+| [논문 해설](논문해설_papers/README.md) | 컴퓨터·AI·전자공학, 뇌신경·생명공학·소재·우주 연구의 한국어 해설과 계산 예제 |
 | [기술 동향](기술동향_technology/README.md) | 날짜와 근거를 갖춘 기술 현황, 표준과 벤치마크의 변화 |
-| [제품과 모델 리뷰](제품리뷰_reviews/README.md) | 실제 프로그램·배포 모델의 기능, 동작, 사용 조건 |
+| [제품과 기술 리뷰](제품리뷰_reviews/README.md) | 반도체·기기·AI·로봇·우주·F1·방산·의료의 원리, 비교 시험과 사용 조건 |
 | [AI 모델 실험](AI모델실험_model-lab/README.md) | 공급사별 모델 분석, 구조·배포 방식, CPU 계산 실험 |
 
 ## 구현과 기록
@@ -51,7 +51,7 @@
 These notes connect circuits, semiconductors, RTL, firmware, systems software, GPUs and AI. They pair explanations with equations, implementations and recorded checks. Reading comprehension and argument reasoning, foreign languages, and humanities have separate reading paths.
 
 - Learning: [Engineering foundations](공학기초_foundations/README.md#english), [technical topics](분야_topics/README.md), [reading and argument reasoning](언어이해와추리논증_reading-reasoning/README.md), [foreign languages and technical English](외국어와기술영어_foreign-languages/README.md), [humanities](인문사회_humanities/README.md).
-- Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [software and model reviews](제품리뷰_reviews/README.md), [AI model lab](AI모델실험_model-lab/README.md).
+- Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [product and technology reviews](제품리뷰_reviews/README.md), [AI model lab](AI모델실험_model-lab/README.md).
 - Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [672 Programmers solutions](programmers/README.md).
 - Background: [Research](연구_research/README.md), [author](소개_about/README.md), [contact](소개_about/연락_CONTACT.md), [tools](도구와환경_tools/README.md), [references](참고자료_references/README.md), [contributing](기여안내_contributing/README.md).
 
