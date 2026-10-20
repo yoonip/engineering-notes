@@ -39,6 +39,27 @@ python "예제_examples/심화_advanced/systems/demo.py" rtos
 python "예제_examples/심화_advanced/systems/test_advanced_models.py" -v
 ```
 
+### FreeRTOS의 자원 소유권과 알림은 나누어 봅니다
+
+위의 고정점 모델은 상속 의존성을 이해하기 위한 모델입니다. 모든 RTOS가 같은 자료구조와 복원 규칙을 쓴다는 뜻은 아닙니다. FreeRTOS V11.1.0의 `xTaskPriorityInherit()`·`xTaskPriorityDisinherit()`에서는 대기자·소유자의 우선순위와 보유 뮤텍스 수를 다룹니다. 중첩 뮤텍스가 남아 있는 상태의 복원을 뮤텍스 하나의 예제로 단정하지 않습니다. [버전이 고정된 공식 tasks.c](https://github.com/FreeRTOS/FreeRTOS-Kernel/blob/V11.1.0/tasks.c)
+
+자체 적용 예로, 낮은 우선순위의 표시 작업이 통신 버스를 잡고 있고 제어 작업이 같은 버스를 기다린다고 하겠습니다. 표시 작업보다 높은 독립 계산 작업이 계속 실행되면 제어 작업의 대기가 늘 수 있습니다. 이때 제어 작업의 우선순위만 더 높여도, 그 작업이 이미 자원 대기 상태라는 사실은 바뀌지 않습니다. 버스 소유자의 임계 구역·실행 가능 상태·상속 적용을 확인해야 합니다.
+
+| 필요한 계약 | 살펴볼 선택 | 확인할 책임 |
+| --- | --- | --- |
+| 한 태스크가 자원을 소유하고 반환 | 뮤텍스 | 실제 소유자, 모든 오류 경로의 반환, 잠금 보유 시간 |
+| 항목을 보관하며 태스크로 전달 | 큐 | 큐 가득 참, payload 수명·복사, 대기와 수신의 연결 |
+| 특정 태스크에 작업 도착을 알림 | 태스크 알림 | 같은 인덱스·소거/감소 정책, 별도 payload 보관 |
+| ISR에서 태스크로 전달 | 해당 `FromISR` API | 포트의 허용 인터럽트 우선순위와 필요한 문맥 전환 |
+
+상속은 소유자가 CPU를 받아 잠금을 반환하도록 돕습니다. 잠금 안에서 외부 장치 응답을 오래 기다리면 그 물리적인 지연은 없어지지 않습니다. 상태를 짧게 갱신하고 잠금을 놓거나 장치 소유 태스크에 요청을 보내는 설계도 비교할 수 있습니다. 요청 큐를 사용하더라도 긴 요청 앞에 짧은 요청이 밀리는 시간은 남으므로, 설계 선택마다 대기 원인을 다시 분석합니다.
+
+새 [뮤텍스 대기와 마감시간 사례](../../../설계와검증사례_engineering-cases/뮤텍스대기와마감시간_rtos-priority-inversion.md)는 H/M의 준비 시각을 1로 두고 실제 모델의 작업 선택을 기록합니다. L=3·M=8·H=1이면 H의 완료는 상속 없는 경우 12, 있는 경우 4입니다. 270개 작업량 조합과 완료 직전/완료 시각의 540개 마감 경계를 독립적인 작업 블록 기대값과 비교합니다. 이는 앞의 모든 작업이 이미 준비된 3·4·1 예제와 입력 조건이 다릅니다.
+
+자원 대기와 별개로 “큐가 비었으면 잠든다”는 코드에는 검사와 대기 사이의 틈이 생길 수 있습니다. [검사와 대기 사이의 알림 유실 사례](../../../설계와검증사례_engineering-cases/검사와대기사이의알림유실_rtos-lost-wakeup.md)는 그 사이 도착한 단순 resume이 사라지는 경로와 알림을 보관하는 경로를 비교합니다. FreeRTOS V11.1.0의 `ulTaskGenericNotifyTake()`가 확인·대기 등록을 임계 구역에서 연결하는 이유도 함께 읽습니다. 일반 변수에 플래그를 두고 잠들기 직전에 지우는 방법과 같은 계약으로 취급하지 않습니다.
+
+실제 타깃 검증에서는 태스크 준비·잠금 요청·획득·반환·완료 시각, 소유자와 본래/유효 우선순위, ISR 구간을 한 시간축에 남깁니다. 알림에는 payload ID·공개 시각·알림 인덱스·값·대기 진입/복귀·소비를 추가합니다. Python 모형 통과, 커널 코드 열람, 실제 MCU의 지연 측정은 각각 다른 증거로 기록합니다. [공통 실행 방법](../../../예제_examples/실무검증_practical-validation/rtos/README.md)과 [2026-10-21 실행 기록](../../../설계와검증사례_engineering-cases/검증기록_evidence/RTOS스케줄과알림검사_20261021.md)을 연결했습니다.
+
 ## English
 
 ### High-priority work can still wait for a resource
@@ -76,7 +97,17 @@ python "예제_examples/심화_advanced/systems/demo.py" rtos
 python "예제_examples/심화_advanced/systems/test_advanced_models.py" -v
 ```
 
+### Resource ownership, notifications, and target evidence
+
+The dependency fixed point above is a teaching model, not every RTOS's implementation. FreeRTOS V11.1.0 has specific owner-priority and held-mutex restoration rules. Ownership, queued payload delivery, notification retention, and ISR-to-task handoff have different contracts. Inheritance cannot remove physical I/O delay while a mutex is held.
+
+The [release-time case study](../../../설계와검증사례_engineering-cases/뮤텍스대기와마감시간_rtos-priority-inversion.md) uses L=3, M=8 and H=1 with H/M released at time 1. A separate block-order oracle checks 270 parameter combinations and 540 deadline boundaries. The [lost-wakeup case](../../../설계와검증사례_engineering-cases/검사와대기사이의알림유실_rtos-lost-wakeup.md) contrasts resume-only signaling with retained notification state. Both are deterministic Python host models.
+
+Target evidence needs release/request/acquisition/release/completion timestamps, mutex ownership, base/effective priorities, and interrupt intervals. Notification traces additionally need payload identity, publication, index/value, wait entry/return, and consumption. Model execution, version-pinned source review, and MCU timing measurements must remain separate evidence. [Code and commands](../../../예제_examples/실무검증_practical-validation/rtos/README.md)
+
 ## 출처 / Sources
 
 - [Linux: RT-mutex implementation design](https://docs.kernel.org/locking/rt-mutex-design.html): 우선순위 역전·상속 chain / inversion and inheritance chains
 - [Zephyr: Mutexes](https://docs.zephyrproject.org/latest/kernel/services/synchronization/mutexes.html): 소유권·priority inheritance·설정 조건 / ownership and inheritance configuration
+- [FreeRTOS-Kernel V11.1.0 tasks.c](https://github.com/FreeRTOS/FreeRTOS-Kernel/blob/V11.1.0/tasks.c): 2026-10-21에 상속·복원 및 알림 확인·대기 등록 부분을 읽었습니다. / Version-pinned inheritance, restoration and notification wait-registration source review.
+- [FreeRTOS-Kernel V11.1.0 task.h](https://github.com/FreeRTOS/FreeRTOS-Kernel/blob/V11.1.0/include/task.h): 정지·재개 API의 동기화 한계를 확인했습니다. / Suspend/resume synchronization contract.
