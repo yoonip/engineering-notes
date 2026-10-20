@@ -114,6 +114,12 @@
 | [Web·API·응용 프로그램](분야_topics/52-Web-API응용_web-api-applications/README.md)<br>Web, APIs & Desktop Applications | [HTTP API의 계약: 멱등성, pagination, 입력 검증](분야_topics/52-Web-API응용_web-api-applications/해설_notes/HTTPAPI의계약_http-idempotency-pagination-validation.md)<br>[두 사용자의 수정이 겹치면: ETag와 조건부 갱신](분야_topics/52-Web-API응용_web-api-applications/해설_notes/버전조건부갱신_optimistic-concurrency-etag.md) |
 | [모바일과 크로스플랫폼](분야_topics/53-모바일크로스플랫폼_mobile-crossplatform/README.md)<br>Mobile, Cross-Platform & Device Integration | [UI 상태를 한곳에서 바꾸기: reducer와 비동기 효과](분야_topics/53-모바일크로스플랫폼_mobile-crossplatform/해설_notes/UI이벤트리듀서_ui-event-reducer.md)<br>[모바일 UI 상태: 생명주기와 늦게 도착한 결과](분야_topics/53-모바일크로스플랫폼_mobile-crossplatform/해설_notes/모바일UI상태_ui-state-lifecycle-stale-results.md) |
 
+## 의공학과 의료 AI | Biomedical engineering and medical AI
+
+| 분야 | 실제 해설 |
+|---|---|
+| [의공학과 의료 AI](분야_topics/62-의공학의료AI_medical-engineering/README.md) | [측정·지표·자료 분리·임상 평가](분야_topics/62-의공학의료AI_medical-engineering/해설_notes/측정에서진단과치료까지_medical-ai-evidence.md) · [의료영상](논문해설_papers/의료영상과진단_ai-medical-imaging/README.md) · [신경보철과 재활](논문해설_papers/신경보철과재활_neuroprosthetics-rehabilitation/README.md) · [AI 신약 개발](논문해설_papers/AI신약개발_ai-drug-discovery/README.md) |
+
 ## 논문·코드·특허 읽기 | Reading papers, code and patents
 
 | 분야 | 실제 해설 |

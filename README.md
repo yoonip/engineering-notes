@@ -16,10 +16,12 @@
 
 | 분야 | 내용 |
 | --- | --- |
-| [논문 해설](논문해설_papers/README.md) | 210편의 한국어 해설: 컴퓨팅·AI·전자·생명·산업, 마음·자유의지·인격 동일성과 계산 예제 |
+| [논문 해설](논문해설_papers/README.md) | 220편의 한국어 해설: 컴퓨팅·AI·전자·생명·산업, 마음·자유의지·인격 동일성과 계산 예제 |
 | [기술 동향](기술동향_technology/README.md) | 날짜와 근거를 갖춘 기술 현황, 표준과 벤치마크의 변화 |
 | [제품과 기술 리뷰](제품리뷰_reviews/README.md) | 68편의 기술·산업 분석: 원리·경쟁 방식·공급망·표준·사업 모델·전환 비용 |
 | [AI 모델 실험](AI모델실험_model-lab/README.md) | 공급사별 모델 분석, 구조·배포 방식, CPU 계산 실험 |
+
+[의공학과 의료 AI](분야_topics/62-의공학의료AI_medical-engineering/README.md)는 의료영상·진단, 신경보철·재활, AI 신약 연구를 측정·계산·임상 근거로 연결하는 학습 경로입니다.
 
 [철학 개념 학습](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)에서 기초 용어와 사례를 읽고, [최근 AI 연구와 고전의 비교](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)에서 의식·자유의지·인격 동일성의 주장과 근거·반론을 살펴봅니다.
 
