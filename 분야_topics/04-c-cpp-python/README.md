@@ -54,6 +54,14 @@ Python에서는 `sum(values) / len(values)`로 같은 계산을 표현할 수 �
 
 Rust는 소유권과 차용을 이용한 메모리 안전성, Go는 서비스와 동시성, Java·C#은 관리형 런타임과 애플리케이션 생태계, JavaScript·TypeScript는 웹, Julia는 수치 계산에 자주 쓰입니다. Tcl·SKILL은 EDA 자동화에 쓰이고, Assembly는 명령어와 호출 규약을 직접 확인하는 데 쓰입니다.
 
+## 길이·소유권·공유 상태를 실제 코드로 비교합니다
+
+[C 이진 프레임](../../설계와검증사례_engineering-cases/이진프레임의길이와바이트순서_c-frame-bounds.md)에서 헤더의 count가 2,147,483,648일 때 계산한 길이를 uint32_t로 좁히면 4가 됩니다. 4바이트만 받은 입력이 잘못 승인되는 경로와, 실제 공간으로 개수 상한을 확인해 거절하는 경로를 실행합니다. 포인터에는 배열 길이가 자동으로 들어 있지 않으므로 호출자와 파서의 계약이 모두 필요합니다.
+
+[C++ 뷰·소유 복사](../../설계와검증사례_engineering-cases/수신버퍼의소유권과뷰수명_cpp-view-ownership.md)는 원본 버퍼가 READY에서 ERROR로 덮어써질 때 뷰와 복사본의 결과가 달라지는 것을 보여 줍니다. 두 주소가 모두 유효해도 필요한 값의 보관 시점이 다를 수 있습니다. data()로 포인터만 전달해 필드 길이를 잃는 문제도 따로 비교합니다.
+
+[C11 SPSC 링버퍼](../../설계와검증사례_engineering-cases/링버퍼의공개순서와공유카운터_ring-publication.md)는 일반 정수 used를 두 문맥이 갱신할 때의 유실과, 각 문맥이 head·tail을 소유하고 release·acquire로 공개하는 규칙을 나눕니다. 호스트 빌드·사건 모델·순차 검사를 실제 ISR·보드 시험으로 확대하지 않습니다. [실행 코드와 명령](../../예제_examples/실무검증_practical-validation/native_firmware/README.md)에서 직접 대조하실 수 있습니다.
+
 ## 관련 기술
 
 C, C++, Python, Rust, Go, Java, C#, JavaScript/TypeScript, Julia, R, Tcl, Lua, Assembly
