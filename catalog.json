@@ -1525,6 +1525,193 @@
       "summary_en": "Biomedical engineering connects measured signals and computation to communication, movement, diagnosis and treatment. The studies distinguish reconstruction from diagnosis, device control from task performance, and AI-proposed candidates from clinical evidence.",
       "category_ko": "의공학과 의료 AI",
       "category_en": "Biomedical engineering and medical AI"
+    },
+    {
+      "number": 63,
+      "slug": "63-음악기초와듣기_music-foundations-listening",
+      "title": "음악의 기초와 듣기",
+      "english_title": "Music foundations and listening",
+      "sections": [
+        "박을 유지하며 리듬 읽기",
+        "음높이·음정·조율의 관계",
+        "선율과 화음이 만드는 마무리",
+        "반복과 대조로 곡의 흐름 듣기"
+      ],
+      "keywords": "Music foundations and listening",
+      "path": "인문사회_humanities/63-음악기초와듣기_music-foundations-listening/README.md",
+      "references": [
+        "https://viva.pressbooks.pub/openmusictheory/chapter/simple-meter-and-time-signatures/",
+        "https://viva.pressbooks.pub/openmusictheorycopy/chapter/rhythmic-rest-values/",
+        "https://open-musictheory.github.io/docs/fundamentals/meter/",
+        "https://www.phys.unsw.edu.au/jw/notes.html",
+        "https://viva.pressbooks.pub/openmusictheory/chapter/intervals/",
+        "https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory/content-section-7",
+        "https://viva.pressbooks.pub/openmusictheorycopy/chapter/intro-to-harmony/",
+        "https://viva.pressbooks.pub/openmusictheory/chapter/ternary-form/",
+        "https://milnepublishing.geneseo.edu/fundamentals-function-form/chapter/37-ternary-and-rondo-forms/"
+      ],
+      "english_sections": [
+        "Beats, meter and rhythm",
+        "Pitch, intervals and tuning",
+        "Melody, triads and cadences",
+        "Listening for repetition, contrast and form"
+      ],
+      "summary_ko": "박·리듬·음정·조율·선율·화음·형식을 자체 음열과 계산으로 익힙니다.",
+      "summary_en": "Learn beats, rhythm, intervals, tuning, melody, harmony and form through original examples and calculations.",
+      "category_ko": "인문사회와 예술",
+      "category_en": "Humanities, social sciences and arts"
+    },
+    {
+      "number": 64,
+      "slug": "64-역사와사료_history-sources",
+      "title": "역사와 사료 읽기",
+      "english_title": "History and historical sources",
+      "sections": [
+        "사료의 말과 연표의 날짜를 구분하기",
+        "교역과 도시의 세계사",
+        "산업화의 여러 원인",
+        "개항과 자주독립의 문장을 읽는 한국 근대사"
+      ],
+      "keywords": "History and historical sources",
+      "path": "인문사회_humanities/64-역사와사료_history-sources/README.md",
+      "references": [
+        "https://sillok.history.go.kr/id/kda_12512030_002",
+        "https://sillok.history.go.kr/id/kda_12809029_004",
+        "https://www.korean.go.kr/hangeul/origin/001.html",
+        "https://www.bnf.fr/en/jikji-treasure-world-printing",
+        "https://guides.loc.gov/gutenberg/introduction?loclr=blogbib",
+        "https://archive.asia.si.edu/Shipwrecked/shipcrew.asp",
+        "https://asia.si.edu/wp-content/uploads/2023/06/shipwrecked-03-wilsonflecker.pdf",
+        "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-silver-hoards-of-the-vikings/the-silver-hoard-from-terslev/",
+        "https://asia.si.edu/wp-content/uploads/2023/06/shipwrecked-02-guy.pdf",
+        "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/expeditions-and-raids/trade-in-the-viking-period/",
+        "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-silver-hoards-of-the-vikings/silvers-route-to-denmark-trading-with-the-arab-coins/",
+        "https://collection.sciencemuseumgroup.org.uk/objects/co50948/rotative-steam-engine-by-boulton-and-watt-1788-beam-engine-steam-engine",
+        "https://cdn.nationalarchives.gov.uk/documents/education/factory-actdoc.pdf",
+        "https://www.vam.ac.uk/articles/indian-textiles",
+        "https://contents.history.go.kr/front/hm/view.do?levelId=hm_115_0010",
+        "https://contents.history.go.kr/front/ht/view.do?levelId=ht_003_0030_0010_0040",
+        "https://sillok.history.go.kr/id/kza_13608017_002",
+        "https://contents.history.go.kr/mobile/hm/view.do?levelId=hm_120_0040"
+      ],
+      "english_sections": [
+        "Historical sources and chronology",
+        "Trade and Cities in World History",
+        "Industrialization and Causal Explanations",
+        "Opening, sovereignty and political authority in modern Korea"
+      ],
+      "summary_ko": "사료의 작성 시점과 목적을 확인하고 교역·산업화·한국 근대사를 자료와 인과의 질문으로 읽습니다.",
+      "summary_en": "Read sources in context, then compare trade, industrialization and Korean modern history through evidence and causal questions.",
+      "category_ko": "인문사회와 예술",
+      "category_en": "Humanities, social sciences and arts"
+    },
+    {
+      "number": 65,
+      "slug": "65-문학과작품읽기_literature-reading",
+      "title": "문학과 작품 읽기",
+      "english_title": "Literature and close reading",
+      "sections": [
+        "작가·서술자·화자를 구분하는 읽기",
+        "이미지·행갈이·반복으로 시 읽기",
+        "사건의 시간과 이야기하는 순서",
+        "대사·지문·행동으로 희곡 읽기"
+      ],
+      "keywords": "Literature and close reading",
+      "path": "인문사회_humanities/65-문학과작품읽기_literature-reading/README.md",
+      "references": [
+        "https://www.open.edu/openlearn/history-the-arts/literature/approaching-prose-fiction/content-section-2.3",
+        "https://www-archiv.fdm.uni-hamburg.de/lhn/node/18/revisions/211/view.html",
+        "https://poets.org/glossary/speaker",
+        "https://www.poetryfoundation.org/education/glossary/imagery",
+        "https://www.poetryfoundation.org/articles/70144/learning-the-poetic-line",
+        "https://www.open.edu/openlearn/history-the-arts/literature/approaching-prose-fiction/content-section-2.2",
+        "https://open.baypath.edu/eng134/chapter/elements-of-a-narrative/",
+        "https://www.folger.edu/explore/shakespeares-works/macbeth/reading-shakespeares-language-macbeth/",
+        "https://www.folger.edu/explore/shakespeares-works/macbeth/an-introduction-to-this-text/"
+      ],
+      "english_sections": [
+        "Author, narrator and speaker",
+        "Imagery, line breaks and rhythm",
+        "Story time and narrative order",
+        "Dialogue, stage directions and action"
+      ],
+      "summary_ko": "작가·서술자·화자, 시의 행갈이, 소설의 시간, 희곡의 행동을 짧은 작품과 해석의 근거로 공부합니다.",
+      "summary_en": "Study voice, poetic lines, narrative time and dramatic action through short original texts and evidence for interpretations.",
+      "category_ko": "인문사회와 예술",
+      "category_en": "Humanities, social sciences and arts"
+    },
+    {
+      "number": 66,
+      "slug": "66-예술과감상_arts-aesthetics",
+      "title": "예술의 감상·표현·사회",
+      "english_title": "Art, expression and society",
+      "sections": [
+        "감상에서 관찰과 해석 연결하기",
+        "매체를 바꾸면 무엇이 달라질까요?",
+        "공간과 관객이 바꾸는 공연",
+        "작품을 만들고 만나게 하는 제도"
+      ],
+      "keywords": "Art, expression and society",
+      "path": "인문사회_humanities/66-예술과감상_arts-aesthetics/README.md",
+      "references": [
+        "https://www.pz.harvard.edu/resources/see-think-wonder",
+        "https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html",
+        "https://www.moma.org/collection/works/117947",
+        "https://www.vam.ac.uk/articles/the-story-of-theatre",
+        "https://www.moma.org/collection/works/128840",
+        "https://www.sifacilities.si.edu/sites/default/files/Files/Accessibility/accessible-exhibition-design1.pdf",
+        "https://www.moma.org/calendar/groups/19",
+        "https://www.princeton.edu/~mjs3/salganik_dodds_watts06_full.pdf"
+      ],
+      "english_sections": [
+        "Evidence and interpretation in art",
+        "Choices of medium and expression",
+        "Performance space and audience",
+        "Arts institutions and public life"
+      ],
+      "summary_ko": "감상의 근거와 매체의 선택, 공연 공간과 관객, 예술의 제도·유통을 사례로 비교합니다.",
+      "summary_en": "Compare reasons for interpretations, choices of medium, performance spaces, audiences and arts institutions.",
+      "category_ko": "인문사회와 예술",
+      "category_en": "Humanities, social sciences and arts"
+    },
+    {
+      "number": 67,
+      "slug": "67-미술과조형_visual-arts",
+      "title": "미술의 조형과 작품 분석",
+      "english_title": "Visual form and art analysis",
+      "sections": [
+        "선·색·면과 구도",
+        "공간·원근과 매체",
+        "양식과 시대의 비교",
+        "작품 분석의 관찰과 근거"
+      ],
+      "keywords": "Visual form and art analysis",
+      "path": "인문사회_humanities/67-미술과조형_visual-arts/README.md",
+      "references": [
+        "https://www.getty.edu/education/teachers/building_lessons/elements_art.pdf",
+        "https://www.getty.edu/education/teachers/building_lessons/principles_design.pdf",
+        "https://www.metmuseum.org/art/collection/search/45434",
+        "https://www.clevelandart.org/perspective",
+        "https://education.asianart.org/resources/the-ukiyo-e-woodblock-printing-process/",
+        "https://www.metmuseum.org/art/collection/search/437881",
+        "https://images.metmuseum.org/CRDImages/ep/web-large/DP353257.jpg",
+        "https://images.metmuseum.org/CRDImages/as/web-large/DP130155.jpg",
+        "https://images.metmuseum.org/CRDImages/ep/web-large/DP-42549-001.jpg",
+        "https://www.metmuseum.org/art/collection/search/436535",
+        "https://www.metmuseum.org/pt/hubs/open-access",
+        "https://www.metmuseum.org/essays/post-impressionism",
+        "https://writingcenter.unc.edu/tips-and-tools/art-history/"
+      ],
+      "english_sections": [
+        "Line, shape, colour and composition",
+        "Space, perspective and materials",
+        "Style, context and comparison",
+        "Visual analysis and evidence"
+      ],
+      "summary_ko": "선·색·공간·재료를 그림과 작품에서 관찰하고 양식·맥락·해석의 근거를 비교합니다.",
+      "summary_en": "Observe line, colour, space and materials, then compare style, context and interpretive evidence in drawings and artworks.",
+      "category_ko": "인문사회와 예술",
+      "category_en": "Humanities, social sciences and arts"
     }
   ],
   "providers": [
@@ -1887,13 +2074,25 @@
       ]
     },
     {
-      "title_ko": "인문사회",
-      "title_en": "Humanities and social sciences",
+      "title_ko": "인문사회와 예술",
+      "title_en": "Humanities, social sciences and arts",
       "area_numbers": [
         58,
         59,
         60,
-        61
+        61,
+        63,
+        64,
+        65,
+        66,
+        67
+      ]
+    },
+    {
+      "title_ko": "의공학과 의료 AI",
+      "title_en": "Biomedical engineering and medical AI",
+      "area_numbers": [
+        62
       ]
     },
     {

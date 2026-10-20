@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "review_date": "2026-10-19",
+  "review_date": "2026-10-21",
   "articles": [
     {
       "path": "언어이해와추리논증_reading-reasoning/추리논증_reasoning/논증독해_ARGUMENT_READING.md",
@@ -146,6 +146,247 @@
         "https://www.moleg.go.kr/lawinfo/nwLwAnInfo.mo?cs_seq=358729&currentPage=308&keyField=&keyWord=&mid=null&sort=date",
         "https://www.moleg.go.kr/lawinfo/nwLwAnInfo.mo?cs_seq=441064&currentPage=22&keyField=&keyWord=&mid=a&pageCnt=30&sort=date",
         "https://www.moleg.go.kr/menu.es?mid=a10702000000"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/63-음악기초와듣기_music-foundations-listening/해설_notes/박과리듬_beats-meter-and-rhythm.md",
+      "title": "박을 유지하며 리듬 읽기 / Beats, meter and rhythm",
+      "reference_urls": [
+        "https://viva.pressbooks.pub/openmusictheory/chapter/simple-meter-and-time-signatures/",
+        "https://viva.pressbooks.pub/openmusictheorycopy/chapter/rhythmic-rest-values/",
+        "https://open-musictheory.github.io/docs/fundamentals/meter/"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/63-음악기초와듣기_music-foundations-listening/해설_notes/음높이와음정_pitch-intervals-and-tuning.md",
+      "title": "음높이·음정·조율의 관계 / Pitch, intervals and tuning",
+      "reference_urls": [
+        "https://www.phys.unsw.edu.au/jw/notes.html",
+        "https://viva.pressbooks.pub/openmusictheory/chapter/intervals/"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/63-음악기초와듣기_music-foundations-listening/해설_notes/선율과화음_melody-triads-and-cadences.md",
+      "title": "선율과 화음이 만드는 마무리 / Melody, triads and cadences",
+      "reference_urls": [
+        "https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory/content-section-7",
+        "https://viva.pressbooks.pub/openmusictheorycopy/chapter/intro-to-harmony/"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/63-음악기초와듣기_music-foundations-listening/해설_notes/반복대조와곡의형식_listening-repetition-contrast-and-form.md",
+      "title": "반복과 대조로 곡의 흐름 듣기 / Listening for repetition, contrast and form",
+      "reference_urls": [
+        "https://viva.pressbooks.pub/openmusictheory/chapter/ternary-form/",
+        "https://milnepublishing.geneseo.edu/fundamentals-function-form/chapter/37-ternary-and-rondo-forms/"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/64-역사와사료_history-sources/해설_notes/사료와연표_sources-and-chronology.md",
+      "title": "사료의 말과 연표의 날짜를 구분하기 / Historical sources and chronology",
+      "reference_urls": [
+        "https://sillok.history.go.kr/id/kda_12512030_002",
+        "https://sillok.history.go.kr/id/kda_12809029_004",
+        "https://www.korean.go.kr/hangeul/origin/001.html",
+        "https://www.bnf.fr/en/jikji-treasure-world-printing",
+        "https://guides.loc.gov/gutenberg/introduction?loclr=blogbib"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/64-역사와사료_history-sources/해설_notes/교역과도시의세계사_trade-and-cities-in-world-history.md",
+      "title": "교역과 도시의 세계사 / Trade and Cities in World History",
+      "reference_urls": [
+        "https://archive.asia.si.edu/Shipwrecked/shipcrew.asp",
+        "https://asia.si.edu/wp-content/uploads/2023/06/shipwrecked-03-wilsonflecker.pdf",
+        "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-silver-hoards-of-the-vikings/the-silver-hoard-from-terslev/",
+        "https://asia.si.edu/wp-content/uploads/2023/06/shipwrecked-02-guy.pdf",
+        "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/expeditions-and-raids/trade-in-the-viking-period/",
+        "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-silver-hoards-of-the-vikings/silvers-route-to-denmark-trading-with-the-arab-coins/"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/64-역사와사료_history-sources/해설_notes/산업화의여러원인_industrialization-and-causal-explanations.md",
+      "title": "산업화의 여러 원인 / Industrialization and Causal Explanations",
+      "reference_urls": [
+        "https://collection.sciencemuseumgroup.org.uk/objects/co50948/rotative-steam-engine-by-boulton-and-watt-1788-beam-engine-steam-engine",
+        "https://cdn.nationalarchives.gov.uk/documents/education/factory-actdoc.pdf",
+        "https://www.vam.ac.uk/articles/indian-textiles"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/64-역사와사료_history-sources/해설_notes/개항과주권의한국근대사_opening-sovereignty-and-korean-modern-history.md",
+      "title": "개항과 자주독립의 문장을 읽는 한국 근대사 / Opening, sovereignty and political authority in modern Korea",
+      "reference_urls": [
+        "https://contents.history.go.kr/front/hm/view.do?levelId=hm_115_0010",
+        "https://contents.history.go.kr/front/ht/view.do?levelId=ht_003_0030_0010_0040",
+        "https://sillok.history.go.kr/id/kza_13608017_002",
+        "https://contents.history.go.kr/mobile/hm/view.do?levelId=hm_120_0040"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/65-문학과작품읽기_literature-reading/해설_notes/화자서술자와작가_speaker-narrator-and-author.md",
+      "title": "작가·서술자·화자를 구분하는 읽기 / Author, narrator and speaker",
+      "reference_urls": [
+        "https://www.open.edu/openlearn/history-the-arts/literature/approaching-prose-fiction/content-section-2.3",
+        "https://www-archiv.fdm.uni-hamburg.de/lhn/node/18/revisions/211/view.html",
+        "https://poets.org/glossary/speaker"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/65-문학과작품읽기_literature-reading/해설_notes/시의이미지와운율_imagery-rhythm-and-poetry.md",
+      "title": "이미지·행갈이·반복으로 시 읽기 / Imagery, line breaks and rhythm",
+      "reference_urls": [
+        "https://www.poetryfoundation.org/education/glossary/imagery",
+        "https://www.poetryfoundation.org/articles/70144/learning-the-poetic-line"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/65-문학과작품읽기_literature-reading/해설_notes/소설의시간과관점_narrative-time-and-perspective.md",
+      "title": "사건의 시간과 이야기하는 순서 / Story time and narrative order",
+      "reference_urls": [
+        "https://www.open.edu/openlearn/history-the-arts/literature/approaching-prose-fiction/content-section-2.2",
+        "https://open.baypath.edu/eng134/chapter/elements-of-a-narrative/",
+        "https://www-archiv.fdm.uni-hamburg.de/lhn/node/18/revisions/211/view.html"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/65-문학과작품읽기_literature-reading/해설_notes/희곡의대사와장면_dialogue-stage-and-interpretation.md",
+      "title": "대사·지문·행동으로 희곡 읽기 / Dialogue, stage directions and action",
+      "reference_urls": [
+        "https://www.folger.edu/explore/shakespeares-works/macbeth/reading-shakespeares-language-macbeth/",
+        "https://www.folger.edu/explore/shakespeares-works/macbeth/an-introduction-to-this-text/"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/66-예술과감상_arts-aesthetics/해설_notes/감상의근거와해석_aesthetic-experience-and-interpretation.md",
+      "title": "감상에서 관찰과 해석 연결하기 / Evidence and interpretation in art",
+      "reference_urls": [
+        "https://www.pz.harvard.edu/resources/see-think-wonder",
+        "https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/66-예술과감상_arts-aesthetics/해설_notes/매체와표현의선택_choices-of-medium-and-expression.md",
+      "title": "매체를 바꾸면 무엇이 달라질까요? / Choices of medium and expression",
+      "reference_urls": [
+        "https://www.moma.org/collection/works/117947"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/66-예술과감상_arts-aesthetics/해설_notes/공연공간과관객_performance-space-and-audience.md",
+      "title": "공간과 관객이 바꾸는 공연 / Performance space and audience",
+      "reference_urls": [
+        "https://www.vam.ac.uk/articles/the-story-of-theatre",
+        "https://www.moma.org/collection/works/128840",
+        "https://www.sifacilities.si.edu/sites/default/files/Files/Accessibility/accessible-exhibition-design1.pdf"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/66-예술과감상_arts-aesthetics/해설_notes/예술제도와사회_arts-institutions-and-public-life.md",
+      "title": "작품을 만들고 만나게 하는 제도 / Arts institutions and public life",
+      "reference_urls": [
+        "https://www.moma.org/calendar/groups/19",
+        "https://www.sifacilities.si.edu/sites/default/files/Files/Accessibility/accessible-exhibition-design1.pdf",
+        "https://www.princeton.edu/~mjs3/salganik_dodds_watts06_full.pdf"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/67-미술과조형_visual-arts/해설_notes/선색면과구도_line-shape-colour-and-composition.md",
+      "title": "선·색·면과 구도 / Line, shape, colour and composition",
+      "reference_urls": [
+        "https://www.getty.edu/education/teachers/building_lessons/elements_art.pdf",
+        "https://www.getty.edu/education/teachers/building_lessons/principles_design.pdf",
+        "https://www.metmuseum.org/art/collection/search/45434"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/67-미술과조형_visual-arts/해설_notes/공간원근과매체_space-perspective-and-materials.md",
+      "title": "공간·원근과 매체 / Space, perspective and materials",
+      "reference_urls": [
+        "https://www.clevelandart.org/perspective",
+        "https://education.asianart.org/resources/the-ukiyo-e-woodblock-printing-process/",
+        "https://www.metmuseum.org/art/collection/search/437881",
+        "https://www.metmuseum.org/art/collection/search/45434"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/67-미술과조형_visual-arts/해설_notes/양식과시대의비교_style-context-and-comparison.md",
+      "title": "양식과 시대의 비교 / Style, context and comparison",
+      "reference_urls": [
+        "https://images.metmuseum.org/CRDImages/ep/web-large/DP353257.jpg",
+        "https://www.metmuseum.org/art/collection/search/437881",
+        "https://images.metmuseum.org/CRDImages/as/web-large/DP130155.jpg",
+        "https://www.metmuseum.org/art/collection/search/45434",
+        "https://images.metmuseum.org/CRDImages/ep/web-large/DP-42549-001.jpg",
+        "https://www.metmuseum.org/art/collection/search/436535",
+        "https://www.metmuseum.org/pt/hubs/open-access",
+        "https://www.metmuseum.org/essays/post-impressionism"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/67-미술과조형_visual-arts/해설_notes/작품분석의관찰과근거_visual-analysis-and-evidence.md",
+      "title": "작품 분석의 관찰과 근거 / Visual analysis and evidence",
+      "reference_urls": [
+        "https://writingcenter.unc.edu/tips-and-tools/art-history/",
+        "https://www.metmuseum.org/art/collection/search/437881"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/61-법령읽기_law-foundations/해설_notes/법적관계와권리의무_legal-relations-rights-and-duties.md",
+      "title": "누가 누구에게 무엇을 요구할 수 있나요 / Legal relations, rights and duties",
+      "reference_urls": [
+        "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0213&lsiSeq=284415&urlMode=lsScJoRltInfoR",
+        "https://law.go.kr/LSW/LsiJoLinkP.do?docType=JO&joNo=082000000&languageType=KO&lsNm=%EB%AF%BC%EB%B2%95&paras=1",
+        "https://www.law.go.kr/LSW/lsInfoP.do?ancYnChk=0&chrClsCd=010202&efYd=20260317&lsiSeq=284415&urlMode=lsEfInfoR&viewCls=lsRvsDocInfoR"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/61-법령읽기_law-foundations/해설_notes/법률요건과사실인정_rules-facts-and-evidence.md",
+      "title": "규칙의 조건과 증거가 말하는 사실 / Legal conditions, facts and evidence",
+      "reference_urls": [
+        "https://www.law.go.kr/lsLinkProc.do?joNo=020200&lnkJoNo=undefined&lsClsCd=L&lsId=001700&lsNm=%EB%AF%BC%EC%82%AC%EC%86%8C%EC%86%A1%EB%B2%95&mode=4",
+        "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0750&lsiSeq=284415&urlMode=lsScJoRltInfoR"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/61-법령읽기_law-foundations/해설_notes/분쟁의절차와구제_procedure-and-remedies.md",
+      "title": "요구에서 판단과 집행까지 / Procedures and remedies in a dispute",
+      "reference_urls": [
+        "https://www.scourt.go.kr/portal/information/event/guide/index14.html",
+        "https://www.law.go.kr/LSW/lsInfoP.do?efYd=20260201&lsiSeq=268837",
+        "https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1032034539"
+      ],
+      "content_type": "concept_or_source_guide"
+    },
+    {
+      "path": "인문사회_humanities/61-법령읽기_law-foundations/해설_notes/판결의쟁점과이유_reading-judgments-issues-and-reasons.md",
+      "title": "판결의 쟁점·이유·결론을 연결하기 / Reading judgments through issues and reasons",
+      "reference_urls": [
+        "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0208&lsiSeq=290113&urlMode=lsScJoRltInfoR",
+        "https://www.law.go.kr/LSW/precInfoP.do?precSeq=214581"
       ],
       "content_type": "concept_or_source_guide"
     }

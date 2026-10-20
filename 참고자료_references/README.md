@@ -7,9 +7,9 @@
 | 분야 | 읽기용 출처 | 연결한 해설 |
 | --- | --- | ---: |
 | 공학 기초 | [기초 출처](기초출처_FOUNDATIONS_SOURCES.md) | 24편 |
-| 분야별 학습 | [분야별 출처](확장출처_EXTENDED_SOURCES.md) | 36편 |
+| 분야별 학습 | [분야별 출처](확장출처_EXTENDED_SOURCES.md) | 37편 |
 | 심화 학습 | [심화 출처](심화출처_ADVANCED_SOURCES.md) | 60편 |
-| 추론·인문사회 | [추론 출처](추론출처_REASONING_SOURCES.md) | 12편 |
+| 추론·인문사회·예술 | [추론 출처](추론출처_REASONING_SOURCES.md) | 36편 |
 
 각 목록은 해당 글에서 사용한 자료를 연결합니다. 동일한 글이 여러 학습 경로에 속할 수 있으므로 표의 숫자를 저장소 전체의 서로 다른 글 수로 합산하지 않습니다. [기초 계산의 검증 범위](../공학기초_foundations/검증기록_VERIFICATION.md)와 [AI 모델의 공식 자료](../AI모델실험_model-lab/PROVIDERS.md)도 함께 보실 수 있습니다.
 

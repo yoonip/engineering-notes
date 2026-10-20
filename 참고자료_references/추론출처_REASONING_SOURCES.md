@@ -1,6 +1,6 @@
 # 추론과 인문사회의 출처 | Reasoning and humanities sources
 
-해설 12편의 출처입니다. 자료 목록의 확인 기준일은 2026-10-19입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
+해설 36편의 출처입니다. 자료 목록의 확인 기준일은 2026-10-21입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
 
 [전체 참고 자료](README.md)
 
@@ -129,6 +129,199 @@
 - [moleg.go.kr · nwLwAnInfo.mo](https://www.moleg.go.kr/lawinfo/nwLwAnInfo.mo?cs_seq=441064&currentPage=22&keyField=&keyWord=&mid=a&pageCnt=30&sort=date)
 - [moleg.go.kr · menu.es](https://www.moleg.go.kr/menu.es?mid=a10702000000)
 
+### 13. 박을 유지하며 리듬 읽기 / Beats, meter and rhythm
+
+[해설 읽기](../인문사회_humanities/63-음악기초와듣기_music-foundations-listening/해설_notes/박과리듬_beats-meter-and-rhythm.md)
+
+- [viva.pressbooks.pub · simple-meter-and-time-signatures](https://viva.pressbooks.pub/openmusictheory/chapter/simple-meter-and-time-signatures/)
+- [viva.pressbooks.pub · rhythmic-rest-values](https://viva.pressbooks.pub/openmusictheorycopy/chapter/rhythmic-rest-values/)
+- [open-musictheory.github.io · meter](https://open-musictheory.github.io/docs/fundamentals/meter/)
+
+### 14. 음높이·음정·조율의 관계 / Pitch, intervals and tuning
+
+[해설 읽기](../인문사회_humanities/63-음악기초와듣기_music-foundations-listening/해설_notes/음높이와음정_pitch-intervals-and-tuning.md)
+
+- [phys.unsw.edu.au · notes.html](https://www.phys.unsw.edu.au/jw/notes.html)
+- [viva.pressbooks.pub · intervals](https://viva.pressbooks.pub/openmusictheory/chapter/intervals/)
+
+### 15. 선율과 화음이 만드는 마무리 / Melody, triads and cadences
+
+[해설 읽기](../인문사회_humanities/63-음악기초와듣기_music-foundations-listening/해설_notes/선율과화음_melody-triads-and-cadences.md)
+
+- [open.edu · content-section-7](https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory/content-section-7)
+- [viva.pressbooks.pub · intro-to-harmony](https://viva.pressbooks.pub/openmusictheorycopy/chapter/intro-to-harmony/)
+
+### 16. 반복과 대조로 곡의 흐름 듣기 / Listening for repetition, contrast and form
+
+[해설 읽기](../인문사회_humanities/63-음악기초와듣기_music-foundations-listening/해설_notes/반복대조와곡의형식_listening-repetition-contrast-and-form.md)
+
+- [viva.pressbooks.pub · ternary-form](https://viva.pressbooks.pub/openmusictheory/chapter/ternary-form/)
+- [milnepublishing.geneseo.edu · 37-ternary-and-rondo-forms](https://milnepublishing.geneseo.edu/fundamentals-function-form/chapter/37-ternary-and-rondo-forms/)
+
+### 17. 사료의 말과 연표의 날짜를 구분하기 / Historical sources and chronology
+
+[해설 읽기](../인문사회_humanities/64-역사와사료_history-sources/해설_notes/사료와연표_sources-and-chronology.md)
+
+- [sillok.history.go.kr · kda_12512030_002](https://sillok.history.go.kr/id/kda_12512030_002)
+- [sillok.history.go.kr · kda_12809029_004](https://sillok.history.go.kr/id/kda_12809029_004)
+- [korean.go.kr · 001.html](https://www.korean.go.kr/hangeul/origin/001.html)
+- [bnf.fr · jikji-treasure-world-printing](https://www.bnf.fr/en/jikji-treasure-world-printing)
+- [guides.loc.gov · introduction](https://guides.loc.gov/gutenberg/introduction?loclr=blogbib)
+
+### 18. 교역과 도시의 세계사 / Trade and Cities in World History
+
+[해설 읽기](../인문사회_humanities/64-역사와사료_history-sources/해설_notes/교역과도시의세계사_trade-and-cities-in-world-history.md)
+
+- [archive.asia.si.edu · shipcrew.asp](https://archive.asia.si.edu/Shipwrecked/shipcrew.asp)
+- [asia.si.edu · shipwrecked-03-wilsonflecker.pdf](https://asia.si.edu/wp-content/uploads/2023/06/shipwrecked-03-wilsonflecker.pdf)
+- [en.natmus.dk · the-silver-hoard-from-terslev](https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-silver-hoards-of-the-vikings/the-silver-hoard-from-terslev/)
+- [asia.si.edu · shipwrecked-02-guy.pdf](https://asia.si.edu/wp-content/uploads/2023/06/shipwrecked-02-guy.pdf)
+- [en.natmus.dk · trade-in-the-viking-period](https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/expeditions-and-raids/trade-in-the-viking-period/)
+- [en.natmus.dk · silvers-route-to-denmark-trading-with-the-arab-coins](https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-silver-hoards-of-the-vikings/silvers-route-to-denmark-trading-with-the-arab-coins/)
+
+### 19. 산업화의 여러 원인 / Industrialization and Causal Explanations
+
+[해설 읽기](../인문사회_humanities/64-역사와사료_history-sources/해설_notes/산업화의여러원인_industrialization-and-causal-explanations.md)
+
+- [collection.sciencemuseumgroup.org.uk · rotative-steam-engine-by-boulton-and-watt-1788-beam-engine-steam-engine](https://collection.sciencemuseumgroup.org.uk/objects/co50948/rotative-steam-engine-by-boulton-and-watt-1788-beam-engine-steam-engine)
+- [cdn.nationalarchives.gov.uk · factory-actdoc.pdf](https://cdn.nationalarchives.gov.uk/documents/education/factory-actdoc.pdf)
+- [vam.ac.uk · indian-textiles](https://www.vam.ac.uk/articles/indian-textiles)
+
+### 20. 개항과 자주독립의 문장을 읽는 한국 근대사 / Opening, sovereignty and political authority in modern Korea
+
+[해설 읽기](../인문사회_humanities/64-역사와사료_history-sources/해설_notes/개항과주권의한국근대사_opening-sovereignty-and-korean-modern-history.md)
+
+- [contents.history.go.kr · view.do](https://contents.history.go.kr/front/hm/view.do?levelId=hm_115_0010)
+- [contents.history.go.kr · view.do](https://contents.history.go.kr/front/ht/view.do?levelId=ht_003_0030_0010_0040)
+- [sillok.history.go.kr · kza_13608017_002](https://sillok.history.go.kr/id/kza_13608017_002)
+- [contents.history.go.kr · view.do](https://contents.history.go.kr/mobile/hm/view.do?levelId=hm_120_0040)
+
+### 21. 작가·서술자·화자를 구분하는 읽기 / Author, narrator and speaker
+
+[해설 읽기](../인문사회_humanities/65-문학과작품읽기_literature-reading/해설_notes/화자서술자와작가_speaker-narrator-and-author.md)
+
+- [open.edu · content-section-2.3](https://www.open.edu/openlearn/history-the-arts/literature/approaching-prose-fiction/content-section-2.3)
+- [www-archiv.fdm.uni-hamburg.de · view.html](https://www-archiv.fdm.uni-hamburg.de/lhn/node/18/revisions/211/view.html)
+- [poets.org · speaker](https://poets.org/glossary/speaker)
+
+### 22. 이미지·행갈이·반복으로 시 읽기 / Imagery, line breaks and rhythm
+
+[해설 읽기](../인문사회_humanities/65-문학과작품읽기_literature-reading/해설_notes/시의이미지와운율_imagery-rhythm-and-poetry.md)
+
+- [poetryfoundation.org · imagery](https://www.poetryfoundation.org/education/glossary/imagery)
+- [poetryfoundation.org · learning-the-poetic-line](https://www.poetryfoundation.org/articles/70144/learning-the-poetic-line)
+
+### 23. 사건의 시간과 이야기하는 순서 / Story time and narrative order
+
+[해설 읽기](../인문사회_humanities/65-문학과작품읽기_literature-reading/해설_notes/소설의시간과관점_narrative-time-and-perspective.md)
+
+- [open.edu · content-section-2.2](https://www.open.edu/openlearn/history-the-arts/literature/approaching-prose-fiction/content-section-2.2)
+- [open.baypath.edu · elements-of-a-narrative](https://open.baypath.edu/eng134/chapter/elements-of-a-narrative/)
+- [www-archiv.fdm.uni-hamburg.de · view.html](https://www-archiv.fdm.uni-hamburg.de/lhn/node/18/revisions/211/view.html)
+
+### 24. 대사·지문·행동으로 희곡 읽기 / Dialogue, stage directions and action
+
+[해설 읽기](../인문사회_humanities/65-문학과작품읽기_literature-reading/해설_notes/희곡의대사와장면_dialogue-stage-and-interpretation.md)
+
+- [folger.edu · reading-shakespeares-language-macbeth](https://www.folger.edu/explore/shakespeares-works/macbeth/reading-shakespeares-language-macbeth/)
+- [folger.edu · an-introduction-to-this-text](https://www.folger.edu/explore/shakespeares-works/macbeth/an-introduction-to-this-text/)
+
+### 25. 감상에서 관찰과 해석 연결하기 / Evidence and interpretation in art
+
+[해설 읽기](../인문사회_humanities/66-예술과감상_arts-aesthetics/해설_notes/감상의근거와해석_aesthetic-experience-and-interpretation.md)
+
+- [pz.harvard.edu · see-think-wonder](https://www.pz.harvard.edu/resources/see-think-wonder)
+- [getty.edu · formal_analysis.html](https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html)
+
+### 26. 매체를 바꾸면 무엇이 달라질까요? / Choices of medium and expression
+
+[해설 읽기](../인문사회_humanities/66-예술과감상_arts-aesthetics/해설_notes/매체와표현의선택_choices-of-medium-and-expression.md)
+
+- [moma.org · 117947](https://www.moma.org/collection/works/117947)
+
+### 27. 공간과 관객이 바꾸는 공연 / Performance space and audience
+
+[해설 읽기](../인문사회_humanities/66-예술과감상_arts-aesthetics/해설_notes/공연공간과관객_performance-space-and-audience.md)
+
+- [vam.ac.uk · the-story-of-theatre](https://www.vam.ac.uk/articles/the-story-of-theatre)
+- [moma.org · 128840](https://www.moma.org/collection/works/128840)
+- [sifacilities.si.edu · accessible-exhibition-design1.pdf](https://www.sifacilities.si.edu/sites/default/files/Files/Accessibility/accessible-exhibition-design1.pdf)
+
+### 28. 작품을 만들고 만나게 하는 제도 / Arts institutions and public life
+
+[해설 읽기](../인문사회_humanities/66-예술과감상_arts-aesthetics/해설_notes/예술제도와사회_arts-institutions-and-public-life.md)
+
+- [moma.org · 19](https://www.moma.org/calendar/groups/19)
+- [sifacilities.si.edu · accessible-exhibition-design1.pdf](https://www.sifacilities.si.edu/sites/default/files/Files/Accessibility/accessible-exhibition-design1.pdf)
+- [princeton.edu · salganik_dodds_watts06_full.pdf](https://www.princeton.edu/~mjs3/salganik_dodds_watts06_full.pdf)
+
+### 29. 선·색·면과 구도 / Line, shape, colour and composition
+
+[해설 읽기](../인문사회_humanities/67-미술과조형_visual-arts/해설_notes/선색면과구도_line-shape-colour-and-composition.md)
+
+- [getty.edu · elements_art.pdf](https://www.getty.edu/education/teachers/building_lessons/elements_art.pdf)
+- [getty.edu · principles_design.pdf](https://www.getty.edu/education/teachers/building_lessons/principles_design.pdf)
+- [metmuseum.org · 45434](https://www.metmuseum.org/art/collection/search/45434)
+
+### 30. 공간·원근과 매체 / Space, perspective and materials
+
+[해설 읽기](../인문사회_humanities/67-미술과조형_visual-arts/해설_notes/공간원근과매체_space-perspective-and-materials.md)
+
+- [clevelandart.org · perspective](https://www.clevelandart.org/perspective)
+- [education.asianart.org · the-ukiyo-e-woodblock-printing-process](https://education.asianart.org/resources/the-ukiyo-e-woodblock-printing-process/)
+- [metmuseum.org · 437881](https://www.metmuseum.org/art/collection/search/437881)
+- [metmuseum.org · 45434](https://www.metmuseum.org/art/collection/search/45434)
+
+### 31. 양식과 시대의 비교 / Style, context and comparison
+
+[해설 읽기](../인문사회_humanities/67-미술과조형_visual-arts/해설_notes/양식과시대의비교_style-context-and-comparison.md)
+
+- [images.metmuseum.org · DP353257.jpg](https://images.metmuseum.org/CRDImages/ep/web-large/DP353257.jpg)
+- [metmuseum.org · 437881](https://www.metmuseum.org/art/collection/search/437881)
+- [images.metmuseum.org · DP130155.jpg](https://images.metmuseum.org/CRDImages/as/web-large/DP130155.jpg)
+- [metmuseum.org · 45434](https://www.metmuseum.org/art/collection/search/45434)
+- [images.metmuseum.org · DP-42549-001.jpg](https://images.metmuseum.org/CRDImages/ep/web-large/DP-42549-001.jpg)
+- [metmuseum.org · 436535](https://www.metmuseum.org/art/collection/search/436535)
+- [metmuseum.org · open-access](https://www.metmuseum.org/pt/hubs/open-access)
+- [metmuseum.org · post-impressionism](https://www.metmuseum.org/essays/post-impressionism)
+
+### 32. 작품 분석의 관찰과 근거 / Visual analysis and evidence
+
+[해설 읽기](../인문사회_humanities/67-미술과조형_visual-arts/해설_notes/작품분석의관찰과근거_visual-analysis-and-evidence.md)
+
+- [writingcenter.unc.edu · art-history](https://writingcenter.unc.edu/tips-and-tools/art-history/)
+- [metmuseum.org · 437881](https://www.metmuseum.org/art/collection/search/437881)
+
+### 33. 누가 누구에게 무엇을 요구할 수 있나요 / Legal relations, rights and duties
+
+[해설 읽기](../인문사회_humanities/61-법령읽기_law-foundations/해설_notes/법적관계와권리의무_legal-relations-rights-and-duties.md)
+
+- [law.go.kr · lsSideInfoP.do](https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0213&lsiSeq=284415&urlMode=lsScJoRltInfoR)
+- [law.go.kr · LsiJoLinkP.do](https://law.go.kr/LSW/LsiJoLinkP.do?docType=JO&joNo=082000000&languageType=KO&lsNm=%EB%AF%BC%EB%B2%95&paras=1)
+- [law.go.kr · lsInfoP.do](https://www.law.go.kr/LSW/lsInfoP.do?ancYnChk=0&chrClsCd=010202&efYd=20260317&lsiSeq=284415&urlMode=lsEfInfoR&viewCls=lsRvsDocInfoR)
+
+### 34. 규칙의 조건과 증거가 말하는 사실 / Legal conditions, facts and evidence
+
+[해설 읽기](../인문사회_humanities/61-법령읽기_law-foundations/해설_notes/법률요건과사실인정_rules-facts-and-evidence.md)
+
+- [law.go.kr · lsLinkProc.do](https://www.law.go.kr/lsLinkProc.do?joNo=020200&lnkJoNo=undefined&lsClsCd=L&lsId=001700&lsNm=%EB%AF%BC%EC%82%AC%EC%86%8C%EC%86%A1%EB%B2%95&mode=4)
+- [law.go.kr · lsSideInfoP.do](https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0750&lsiSeq=284415&urlMode=lsScJoRltInfoR)
+
+### 35. 요구에서 판단과 집행까지 / Procedures and remedies in a dispute
+
+[해설 읽기](../인문사회_humanities/61-법령읽기_law-foundations/해설_notes/분쟁의절차와구제_procedure-and-remedies.md)
+
+- [scourt.go.kr · index14.html](https://www.scourt.go.kr/portal/information/event/guide/index14.html)
+- [law.go.kr · lsInfoP.do](https://www.law.go.kr/LSW/lsInfoP.do?efYd=20260201&lsiSeq=268837)
+- [law.go.kr · lsLinkCommonInfo.do](https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1032034539)
+
+### 36. 판결의 쟁점·이유·결론을 연결하기 / Reading judgments through issues and reasons
+
+[해설 읽기](../인문사회_humanities/61-법령읽기_law-foundations/해설_notes/판결의쟁점과이유_reading-judgments-issues-and-reasons.md)
+
+- [law.go.kr · lsSideInfoP.do](https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0208&lsiSeq=290113&urlMode=lsScJoRltInfoR)
+- [law.go.kr · precInfoP.do](https://www.law.go.kr/LSW/precInfoP.do?precSeq=214581)
+
 ## 데이터와 문서
 
 [JSON 원본](추론출처_REASONING_SOURCES.json)은 문서 경로와 출처 URL을 연결하는 데이터입니다. 출처 문서 생성과 경로 검사에서 사용합니다. 읽기용 목록은 이 Markdown 문서입니다.
@@ -137,4 +330,4 @@
 
 ## English
 
-This readable index lists the references for 12 articles. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.
+This readable index lists the references for 36 articles. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.
