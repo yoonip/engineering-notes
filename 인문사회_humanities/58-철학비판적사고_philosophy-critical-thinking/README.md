@@ -4,7 +4,7 @@
 
 [전체 분야](../../분야별목차_CATALOG.md) · [언어이해·추리논증의 개념과 판단](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
 
-## 처음 읽는 다섯 장
+## 처음 읽는 일곱 장
 
 | 본문 | 읽을 내용 |
 |---|---|
@@ -13,6 +13,8 @@
 | [지식과 근거](개념_concepts/지식과근거_knowledge-and-justification.md) | 믿음·참·정당화, 이성과 경험, 회의와 반례를 다룹니다. |
 | [윤리와 정의](개념_concepts/윤리와정의_ethics-and-justice.md) | 결과·의무·덕과 권리·자유·평등·분배를 비교합니다. |
 | [마음·자유·동일성](개념_concepts/마음자유동일성_mind-freedom-identity.md) | 경험·기능·몸, 행동의 통제와 같은 사람의 지속을 구분합니다. |
+| [언어의 의미와 사용](개념_concepts/언어의의미와사용_meaning-and-use.md) | 맥락과 함축, 약속·주장·인용의 차이를 대화로 연습합니다. |
+| [과학의 설명과 검증](개념_concepts/과학의설명과검증_explanation-and-testing.md) | 센서·공장·검사기를 통해 예측·반증·보조 가정을 비교합니다. |
 
 [개념 학습 목차](개념_concepts/README.md)에는 한 사례를 여러 분야의 질문으로 나누는 연습도 있습니다. 장 끝의 확인 문제를 먼저 풀고 접힌 해설을 열어 보시면 됩니다. 용어 이름보다 무엇을 구분하려는 개념인지 자기 말로 설명해 보시는 편이 좋습니다.
 
@@ -36,7 +38,7 @@
 
 ## English
 
-The five concept chapters introduce philosophical questions and periods, reality and causation, knowledge and justification, ethics and justice, and mind, freedom and identity. Each uses concrete cases, competing reasons, objections and self-check questions. Established terminology is distinguished from agreement on every philosophical conclusion.
+The seven concept chapters introduce philosophical questions and periods, reality and causation, knowledge and justification, ethics and justice, mind, freedom and identity, meaning and language use, and scientific explanation and testing. Each uses concrete cases, competing reasons, objections and self-check questions. Established terminology is distinguished from agreement on every philosophical conclusion.
 
 The reading path starts with concepts, then moves to argument analysis and evidence. Selected classic papers and recent AI studies support specific questions. Behaviour, internal function, subjective experience, causal control, numerical identity and moral status remain distinct claims whose connections require arguments.
 
