@@ -27,7 +27,7 @@ I hope this repository will be more than a store of finished answers. One reader
 | [Humanities](인문사회_humanities/README.md) | [Nine philosophy concept chapters](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), economics, society and legal reading |
 | [Paper studies](논문해설_papers/README.md) | 220 Korean studies across computing, AI, electronics, life sciences, industry, philosophy of mind, free will and personal identity |
 | [Technology landscape](기술동향_technology/README.md) | Dated analysis of benchmarks and technical developments |
-| [Product and technology reviews](제품리뷰_reviews/README.md) | 68 analyses of principles, competing technologies, evidence, supply chains, standards, business models and switching costs |
+| [Product and technology reviews](제품리뷰_reviews/README.md) | 71 analyses of principles, competing technologies, evidence, supply chains, standards, business models and switching costs |
 | [AI model lab](AI모델실험_model-lab/README.md) | Provider-specific analyses and executed CPU numerical experiments |
 | [Projects](프로젝트_projects/README.md) · [examples](예제_examples/README.md) | Implementations, execution steps and recorded checks |
 | [Programmers](programmers/README.md) | 672 accepted solutions, study notes and incomplete attempt analysis |
