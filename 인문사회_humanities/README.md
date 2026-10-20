@@ -1,13 +1,18 @@
-# 인문사회 | Humanities and social sciences
+# 인문사회와 예술 | Humanities, social sciences and arts
 
-주장을 평가하는 철학, 선택과 지표를 다루는 경제, 증거와 제도를 읽는 사회, 규정의 요건과 효력을 확인하는 법을 나누어 다룹니다. 문장·지문·선택지 판단과 논리적 추론은 [언어이해·추리논증](../언어이해와추리논증_reading-reasoning/README.md), 외국어는 [외국어와 기술 영어](../외국어와기술영어_foreign-languages/README.md)에서 다룹니다.
+철학·경제·사회·법과 음악·역사·문학·예술·미술을 나누어 공부합니다. 주장의 근거, 과거의 자료, 작품의 구성과 감상의 이유를 각 분야의 사례로 읽습니다. 문장·지문·선택지 판단과 논리적 추론은 [언어이해·추리논증](../언어이해와추리논증_reading-reasoning/README.md), 외국어는 [외국어와 기술 영어](../외국어와기술영어_foreign-languages/README.md)에서 다룹니다.
 
 | 분야 | 기초에서 심화로 | 예시 질문 |
 | --- | --- | --- |
 | [철학과 비판적 사고](58-철학비판적사고_philosophy-critical-thinking/README.md) | 지식·정당화·가치 판단 → 증거와 모형 비교 | 참인 주장이라는 것과 충분한 근거로 믿는다는 것은 어떻게 다릅니까? |
 | [경제와 지표](59-경제선택지표_economics/README.md) | 기회비용·유인·GDP·물가 → 산업연관 모형 | 매출이 늘어도 실질 생산이 감소할 수 있습니까? |
 | [사회와 제도](60-사회제도증거_society-institutions/README.md) | 표본·교란·인과·제도 → 집계와 표준화 | 집단별 비율과 전체 비율이 다른 결론을 보이면 무엇을 확인합니까? |
-| [법령 읽기](61-법령읽기_law-foundations/README.md) | 출처·시행일·요건·효과 → 법령 이력 | 현재 조문이 과거 사건에도 그대로 적용됩니까? |
+| [법령 읽기](61-법령읽기_law-foundations/README.md) | 출처·시행일·요건·효과 → 권리·사실·절차·판결 | 현재 조문이 과거 사건에도 그대로 적용됩니까? |
+| [음악의 기초와 듣기](63-음악기초와듣기_music-foundations-listening/README.md) | 박·리듬·음정·조율·선율·화음·형식을 자체 음열과 계산으로 익힙니다. | 같은 박을 유지하면서 리듬을 바꿀 수 있습니까? |
+| [역사와 사료 읽기](64-역사와사료_history-sources/README.md) | 사료의 작성 시점과 목적을 확인하고 교역·산업화·한국 근대사를 자료와 인과의 질문으로 읽습니다. | 기록의 표제 날짜가 사건의 정확한 날짜입니까? |
+| [문학과 작품 읽기](65-문학과작품읽기_literature-reading/README.md) | 작가·서술자·화자, 시의 행갈이, 소설의 시간, 희곡의 행동을 짧은 작품과 해석의 근거로 공부합니다. | 인물의 판단과 작가의 생각을 같은 말로 읽어도 됩니까? |
+| [예술의 감상·표현·사회](66-예술과감상_arts-aesthetics/README.md) | 감상의 근거와 매체의 선택, 공연 공간과 관객, 예술의 제도·유통을 사례로 비교합니다. | 감상의 느낌을 어떤 관찰 근거와 연결할 수 있습니까? |
+| [미술의 조형과 작품 분석](67-미술과조형_visual-arts/README.md) | 선·색·공간·재료를 그림과 작품에서 관찰하고 양식·맥락·해석의 근거를 비교합니다. | 원근과 색의 선택이 시선의 흐름에 어떻게 작용합니까? |
 
 ## 같은 숫자에서 다른 질문을 구분하기
 
@@ -16,6 +21,8 @@
 철학 지문에서는 개념의 정의와 입장의 차이를 읽고, 그 근거와 반론을 재구성합니다. [철학 지문과 논증](58-철학비판적사고_philosophy-critical-thinking/해설_notes/철학지문과논증_PHILOSOPHICAL_READING.md)에 가상 지문과 선지별 분석을 연결했습니다. 먼저 자료가 무엇을 관찰했는지 확인하고, 그다음 설명과 가치 판단을 구분합니다. 분야별 글에서는 이 차이를 손계산과 반례, 공식 자료의 정의로 확인합니다.
 
 ## English
+
+Music, history, literature, arts and visual art each have four introductory lessons with worked examples and questions. Four further legal lessons connect rights and duties to facts, procedures, remedies and judgments. The five new paths have their own reading orders and source citations.
 
 Philosophy examines justification and value judgments; economics examines choices and comparable indicators; social analysis examines evidence and institutions; legal reading examines sources, dates and conditions. A constructed education example separates a score difference from causal attribution, policy evaluation and legal eligibility. Reading and argument reasoning, and foreign-language study, have their own categories.
 

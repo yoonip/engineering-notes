@@ -1,6 +1,6 @@
 # 공학 노트 | Engineering Notes
 
-회로와 반도체부터 RTL·펌웨어, 시스템 소프트웨어, GPU와 AI까지 다루는 기술 기록입니다. 개념을 정리하고 수식을 코드로 옮기며, 직접 실행한 결과와 그 조건을 함께 모았습니다. 언어이해·추리논증, 외국어·기술 영어, 인문사회는 공학과 구분하여 읽으실 수 있습니다.
+회로와 반도체부터 RTL·펌웨어, 시스템 소프트웨어, GPU와 AI까지 다루는 기술 기록입니다. 개념을 정리하고 수식을 코드로 옮기며, 직접 실행한 결과와 그 조건을 함께 모았습니다. 언어이해·추리논증, 외국어·기술 영어, 인문사회와 예술은 공학과 구분하여 읽으실 수 있습니다.
 
 ## 학습 분야
 
@@ -10,7 +10,12 @@
 | [공학 분야별 해설](분야_topics/README.md) | 소프트웨어, 회로·반도체, 임베디드·제어, GPU·AI |
 | [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md) | 문해력·논리·논증, [실제 수능·LEET 11문항 분석](언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)과 자체 연습 |
 | [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md) | [영어 기초 8단원·64개 연습](외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), 외국어 학습 방법과 기술 문서 읽기 |
-| [인문사회](인문사회_humanities/README.md) | [철학 기본 개념 9장](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), 경제, 사회·제도, 법령 읽기 |
+| [인문사회](인문사회_humanities/README.md) | [철학 기본 개념 9장](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), 경제, 사회·제도, 법의 권리·사실·절차·판결 |
+| [음악의 기초와 듣기](인문사회_humanities/63-음악기초와듣기_music-foundations-listening/README.md) | 박·리듬·음정·조율·선율·화음·형식을 자체 음열과 계산으로 익힙니다. |
+| [역사와 사료 읽기](인문사회_humanities/64-역사와사료_history-sources/README.md) | 사료의 작성 시점과 목적을 확인하고 교역·산업화·한국 근대사를 자료와 인과의 질문으로 읽습니다. |
+| [문학과 작품 읽기](인문사회_humanities/65-문학과작품읽기_literature-reading/README.md) | 작가·서술자·화자, 시의 행갈이, 소설의 시간, 희곡의 행동을 짧은 작품과 해석의 근거로 공부합니다. |
+| [예술의 감상·표현·사회](인문사회_humanities/66-예술과감상_arts-aesthetics/README.md) | 감상의 근거와 매체의 선택, 공연 공간과 관객, 예술의 제도·유통을 사례로 비교합니다. |
+| [미술의 조형과 작품 분석](인문사회_humanities/67-미술과조형_visual-arts/README.md) | 선·색·공간·재료를 그림과 작품에서 관찰하고 양식·맥락·해석의 근거를 비교합니다. |
 
 ## 논문과 기술 분석
 

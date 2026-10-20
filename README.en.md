@@ -24,7 +24,12 @@ I hope this repository will be more than a store of finished answers. One reader
 | [Technical topics](분야_topics/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
 | [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | Eleven actual CSAT/LEET items, choice-by-choice reasoning and original practice |
 | [Foreign languages and technical English](외국어와기술영어_foreign-languages/README.md) | Eight English foundation lessons with 64 exercises, study methods and technical reading |
-| [Humanities](인문사회_humanities/README.md) | [Nine philosophy concept chapters](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), economics, society and legal reading |
+| [Humanities](인문사회_humanities/README.md) | [Nine philosophy concept chapters](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), economics, society, legal rights, facts, procedure and judgments |
+| [Music foundations and listening](인문사회_humanities/63-음악기초와듣기_music-foundations-listening/README.md) | Learn beats, rhythm, intervals, tuning, melody, harmony and form through original examples and calculations. |
+| [History and historical sources](인문사회_humanities/64-역사와사료_history-sources/README.md) | Read sources in context, then compare trade, industrialization and Korean modern history through evidence and causal questions. |
+| [Literature and close reading](인문사회_humanities/65-문학과작품읽기_literature-reading/README.md) | Study voice, poetic lines, narrative time and dramatic action through short original texts and evidence for interpretations. |
+| [Art, expression and society](인문사회_humanities/66-예술과감상_arts-aesthetics/README.md) | Compare reasons for interpretations, choices of medium, performance spaces, audiences and arts institutions. |
+| [Visual form and art analysis](인문사회_humanities/67-미술과조형_visual-arts/README.md) | Observe line, colour, space and materials, then compare style, context and interpretive evidence in drawings and artworks. |
 | [Paper studies](논문해설_papers/README.md) | 220 Korean studies across computing, AI, electronics, life sciences, industry, philosophy of mind, free will and personal identity |
 | [Technology landscape](기술동향_technology/README.md) | Dated analysis of benchmarks and technical developments |
 | [Product and technology reviews](제품리뷰_reviews/README.md) | 71 analyses of principles, competing technologies, evidence, supply chains, standards, business models and switching costs |
