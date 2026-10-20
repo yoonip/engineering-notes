@@ -1,6 +1,6 @@
 # 논문 해설 | Paper studies
 
-계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명과학·에너지·통신·제조·우주 탐사와 산업·사회·마음 철학·자유의지·인격 동일성과 호르몬 연구까지 논문 210편을 한국어로 읽습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
+계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명과학·에너지·통신·제조·우주 탐사와 산업·사회·마음 철학·자유의지·인격 동일성과 호르몬 연구까지 논문 220편을 한국어로 읽습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
 
 ## 분야별 목록
 
@@ -13,6 +13,9 @@
 | [머신러닝과 생성 모델](머신러닝과생성모델_machine-learning/README.md) | 30 | SVM부터 강화학습·3D·단백질·효율적인 언어·멀티모달 모델 |
 | [Transformer](Transformer의계산_ATTENTION.md)와 [언어·멀티모달](언어와멀티모달_language-multimodal/README.md) | 4 | attention, 문맥 학습, 이미지·문장 연결, 저비용 적응 |
 | [뇌와 신경공학](뇌와신경공학_neuroengineering/README.md) | 25 | 뉴런, 기억·공간, 연결지도, 초파리 모형, BCI와 유전체 |
+| [의료영상과 AI 진단](의료영상과진단_ai-medical-imaging/README.md) | 5 | MRI 복원·판독, OCT 의뢰, 유방 검진, 희귀질환 탐색과 안정성 |
+| [신경보철과 재활](신경보철과재활_neuroprosthetics-rehabilitation/README.md) | 4 | 뇌–척수 연결, 활동별 자극, 광전 망막보철과 폐회로 신경자극 |
+| [AI 신약 개발과 임상 평가](AI신약개발_ai-drug-discovery/README.md) | 1 | 표적·후보 제안과 임상 안전성·폐기능·결측 해석 |
 | [반도체와 소재](반도체와소재_semiconductors-materials/README.md) | 10 | FinFET, 원자층 재료, 메모리 물리, 재료 탐색·합성, 태양전지 |
 | [우주 탐사와 정밀 관측](우주와관측_space-observation/README.md) | 6 | 상태 추정, 화성 비행, 소행성 충돌, 광통신, JWST와 LIGO |
 | [의약품과 대사 연구](의약품과대사_metabolic-medicine/README.md) | 2 | STEP 1·SURMOUNT-1의 설계, 감량 효과, 결측·중단·이상사건 |
@@ -36,7 +39,7 @@
 | [인과추론](인과추론_causal-inference/README.md) | 1 | 관측과 개입·뒷문과 앞문·공통 결과를 고르는 문제 |
 | [시장의 정보와 제도](시장과제도_markets-institutions/README.md) | 1 | 품질의 정보 비대칭·역선택·보증과 인증 비용 |
 
-각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 210편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
+각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 220편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
 
 ## 처음 읽으실 때
 
@@ -52,6 +55,12 @@
 | 회로·통신·성능이 궁금합니다. | [정보·소자·신호·프로세서](정보와전자공학_information-electronics/README.md) | 정보량, 소자 크기, 계산량과 실행시간은 어떻게 연결됩니까? |
 
 처음부터 논문의 모든 식을 외우실 필요는 없습니다. ‘어떤 문제를 해결하려 했습니까?’, ‘기존 방법에서 무엇을 바꾸었습니까?’, ‘그 변화가 왜 작동합니까?’를 자기 말로 설명한 뒤 예제를 계산합니다. 마지막에는 논문이 평가한 조건과 아직 알 수 없는 부분을 확인합니다. 각 해설 끝의 자기 점검을 답 상자를 닫고 풀어보시면 됩니다.
+
+## 의학과 AI·전자·컴퓨터공학
+
+[의공학과 의료 AI 학습](../분야_topics/62-의공학의료AI_medical-engineering/README.md)에서 측정·판독·제어·임상 근거를 먼저 구분합니다. [의료영상 5편](의료영상과진단_ai-medical-imaging/README.md)은 복원과 질환 판단을, [신경보철·재활 4편](신경보철과재활_neuroprosthetics-rehabilitation/README.md)은 신호·자극·실제 행동을 연결합니다. [AI 신약 임상 해설](AI신약개발_ai-drug-discovery/README.md)은 후보 개발의 경로와 사람 대상 평가를 나누어 읽습니다.
+
+기존 [음성·문자·로봇 팔 BCI](뇌와신경공학_neuroengineering/README.md), [AlphaFold 2·3](머신러닝과생성모델_machine-learning/README.md), [간 칩과 진단 모델](생명과학과진단_life-science-diagnostics/README.md)도 함께 읽으실 수 있습니다. 논문에서 수행한 과제, 환자 수·기간, 실험 모델과 실제 임상 결과는 개별 글에서 구별합니다.
 
 ## 정보이론·전자공학·프로세서의 기초 7편
 
@@ -138,7 +147,7 @@ AI의 행동과 마음의 관계는 [주요 논문 6편과 최근 내부 기능 
 
 후속 연구에서 다시 사용한 개념, 공개 교육과정에서 다루는 내용, 실제 시스템 설계로 이어진 영향을 기준으로 읽을 논문을 골랐습니다. 예를 들어 [Stanford CS231n 2025 강의 일정](https://cs231n.stanford.edu/2025/schedule.html)은 역전파·AlexNet·ResNet·BatchNorm·attention을 연결하고, [MIT 분산 시스템의 논문 질문](https://pdos.csail.mit.edu/6.824/questions.html)은 GFS와 MapReduce 등의 설계 조건을 검토합니다. 개별 글에서는 해당 논문의 원문과 확인 가능한 후속 논문·명세를 연결합니다.
 
-발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 210편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
+발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 220편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
 
 ## 모델별 분석과 재현 사례
 
@@ -152,4 +161,4 @@ AI의 행동과 마음의 관계는 [주요 논문 6편과 최근 내부 기능 
 
 ## English
 
-The 210 distinct papers cover computing, AI, electronics, neuroscience, medicine, materials, space, energy, communications, diagnostics, manufacturing and economic theories of technology adoption, philosophy of mind, free will, personal identity, intention and hormonal influences on behaviour, as well as privacy, safety control, housing, climate attitudes and public health. Studies of fluid simulation, causal identification and information asymmetry connect physical constraints, causal assumptions and market participation. Preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
+The 220 distinct papers cover computing, AI, electronics, neuroscience, medicine, materials, space, energy, communications, diagnostics, manufacturing and economic theories of technology adoption, philosophy of mind, free will, personal identity, intention and hormonal influences on behaviour, as well as privacy, safety control, housing, climate attitudes and public health. Studies of fluid simulation, causal identification and information asymmetry connect physical constraints, causal assumptions and market participation. Preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
