@@ -8,26 +8,26 @@
 
 | 글 | 살펴보는 차이 |
 | --- | --- |
-| [ChatGPT와 Claude](chatgpt-claude.md) | 서비스와 모델, 추론 설정, 도구 실행, 과제 점수와 비용을 구별합니다. |
-| [Gemini 4 Argon](gemini.md) | 멀티모달·긴 문맥·MoE와 근거 인용의 정확도를 설명합니다. |
-| [기기 내 AI](on-device-ai.md) | AFM·Gemini Nano를 통해 양자화, 메모리, 열과 로컬·서버 실행의 차이를 살펴봅니다. |
-| [DLSS·FSR·XeSS](dlss-fsr-xess.md) | 해상도 재구성·생성 프레임·신경 렌더링과 입력 지연을 나누어 비교합니다. |
+| [ChatGPT와 Claude](챗GPT와클로드_chatgpt-claude.md) | 서비스와 모델, 추론 설정, 도구 실행, 과제 점수와 비용을 구별합니다. |
+| [Gemini 4 Argon](제미나이의문맥과입력_gemini.md) | 멀티모달·긴 문맥·MoE와 근거 인용의 정확도를 설명합니다. |
+| [기기 내 AI](기기내인공지능_on-device-ai.md) | AFM·Gemini Nano를 통해 양자화, 메모리, 열과 로컬·서버 실행의 차이를 살펴봅니다. |
+| [DLSS·FSR·XeSS](신경렌더링과프레임생성_dlss-fsr-xess.md) | 해상도 재구성·생성 프레임·신경 렌더링과 입력 지연을 나누어 비교합니다. |
 
 ## 실제 공간에서 움직이는 시스템
 
 | 글 | 살펴보는 차이 |
 | --- | --- |
-| [FSD와 Waymo](fsd-waymo.md) | 감독형 운전 보조와 운전자 없는 서비스의 운행 영역·개입·사고율을 구별합니다. |
-| [Tesla Optimus](tesla-optimus.md) | 시연과 생산 계획, 자율·원격 조작, 손의 힘과 연속 작업의 어려움을 설명합니다. |
-| [Boston Dynamics Atlas](boston-dynamics-atlas.md) | 전동 제품형의 하중·배터리와 공장 통합 조건을 살펴봅니다. |
-| [Spot의 산업 점검](spot-inspection.md) | 사족보행 플랫폼과 센서·소프트웨어를 결합한 반복 측정의 장기 운용을 읽습니다. |
+| [FSD와 Waymo](운전보조와무인운전_fsd-waymo.md) | 감독형 운전 보조와 운전자 없는 서비스의 운행 영역·개입·사고율을 구별합니다. |
+| [Tesla Optimus](옵티머스의공장작업_tesla-optimus.md) | 시연과 생산 계획, 자율·원격 조작, 손의 힘과 연속 작업의 어려움을 설명합니다. |
+| [Boston Dynamics Atlas](아틀라스의부품운반_boston-dynamics-atlas.md) | 전동 제품형의 하중·배터리와 공장 통합 조건을 살펴봅니다. |
+| [Spot의 산업 점검](스팟의공장점검_spot-inspection.md) | 사족보행 플랫폼과 센서·소프트웨어를 결합한 반복 측정의 장기 운용을 읽습니다. |
 
 ## 신경 신호와 양자 정보를 사용하는 장치
 
 | 글 | 살펴보는 차이 |
 | --- | --- |
-| [실제 BCI 장치](bci-devices.md) | N1·Stentrode·Layer 7-T의 신호, 시험과 허가 범위, 임상 근거의 분모를 확인합니다. |
-| [IBM·Google 양자컴퓨터](quantum-computers.md) | 물리·논리 큐비트, 오류 정정·사후선택, 고전 재현 연구와 개정 논문의 차이를 설명합니다. |
+| [실제 BCI 장치](뇌컴퓨터인터페이스_bci-devices.md) | N1·Stentrode·Layer 7-T의 신호, 시험과 허가 범위, 임상 근거의 분모를 확인합니다. |
+| [IBM·Google 양자컴퓨터](양자컴퓨터와오류정정_quantum-computers.md) | 물리·논리 큐비트, 오류 정정·사후선택, 고전 재현 연구와 개정 논문의 차이를 설명합니다. |
 
 ## 숫자와 출처를 읽는 방법
 

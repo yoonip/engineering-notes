@@ -1,4 +1,4 @@
-# 모델 평가 지표
+# 모델 평가 지표 / Model evaluation metrics
 
 ## 품질
 

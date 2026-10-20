@@ -4,7 +4,7 @@
 
 | 분석 | 살펴볼 질문 |
 | --- | --- |
-| [NVIDIA·AMD·자체 AI 가속기의 경쟁](ai-accelerator-ecosystems2026.md) | CUDA 환경이 축적된 이유, ROCm·TPU·Trainium·Gaudi·중국 업체의 다른 접근, 호환과 비용·운영의 차이입니다. |
+| [NVIDIA·AMD·자체 AI 가속기의 경쟁](인공지능가속기의생태계경쟁_ai-accelerator-ecosystems2026.md) | CUDA 환경이 축적된 이유, ROCm·TPU·Trainium·Gaudi·중국 업체의 다른 접근, 호환과 비용·운영의 차이입니다. |
 
 [기술 채택과 표준의 경제학 논문](../../논문해설_papers/산업과표준_industry-standards/README.md)에서 개념을 먼저 읽으실 수 있습니다. 다른 기술 리뷰에서도 재료·인증·설치 기반·지원과 운영비 가운데 해당하는 산업 조건을 함께 설명합니다.
 

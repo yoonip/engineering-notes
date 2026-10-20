@@ -4,11 +4,11 @@
 
 | 주제 | 실제 사례와 비교 방식 | 본문 |
 |---|---|---|
-| 코히런트 광통신·해저 케이블 | Ciena WL6e, Cisco 800G ZR/ZR+, RIPE의 케이블 단절 관측 | [속도와 회선의 가치](coherent-submarine2026.md) |
-| 5G-Advanced·NTN | 3GPP 규격, T-Satellite, Iridium Certus 100과 UPM·Weplan 관측 | [표준과 실제 위성 서비스](5g-advanced-ntn2026.md) |
-| LiDAR·레이더·카메라 | Ouster Rev8 OS1 Max, TI AWR2944P, ZED X와 악천후 원본 자료 | [관측 신호와 통합 조건](lidar-radar-vision2026.md) |
-| GNSS·대체 위치 추정 | RTK·PPP-RTK 모듈, Galileo 자료, NIST UWB 시험, 관성항법 | [위치와 신호 차단](gnss-alternative-positioning2026.md) |
-| 원자시계·양자 중력 센서 | Microchip·Safran·Exail, BKG 독립 시험과 BIPM 적용 | [기준을 유지하는 장치](atomic-clocks-quantum-sensors2026.md) |
+| 코히런트 광통신·해저 케이블 | Ciena WL6e, Cisco 800G ZR/ZR+, RIPE의 케이블 단절 관측 | [속도와 회선의 가치](코히런트광통신과해저케이블_coherent-submarine2026.md) |
+| 5G-Advanced·NTN | 3GPP 규격, T-Satellite, Iridium Certus 100과 UPM·Weplan 관측 | [표준과 실제 위성 서비스](이동통신과위성직접연결_5g-advanced-ntn2026.md) |
+| LiDAR·레이더·카메라 | Ouster Rev8 OS1 Max, TI AWR2944P, ZED X와 악천후 원본 자료 | [관측 신호와 통합 조건](라이다레이더카메라의관측_lidar-radar-vision2026.md) |
+| GNSS·대체 위치 추정 | RTK·PPP-RTK 모듈, Galileo 자료, NIST UWB 시험, 관성항법 | [위치와 신호 차단](위성측위와대체위치추정_gnss-alternative-positioning2026.md) |
+| 원자시계·양자 중력 센서 | Microchip·Safran·Exail, BKG 독립 시험과 BIPM 적용 | [기준을 유지하는 장치](원자시계와양자중력계_atomic-clocks-quantum-sensors2026.md) |
 
 통신 속도와 지연, 센서 분해능과 정확도, 통계적 반복 정밀도와 절대 불확도는 다른 지표입니다. 각 본문의 직접 계산과 세 문항을 풀면서 단위와 분모를 확인하실 수 있습니다. 독립 관측도 시기·지역·장치가 달라 최신 제품의 일괄 순위로 사용하지 않습니다.
 

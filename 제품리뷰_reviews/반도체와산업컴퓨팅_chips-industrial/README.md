@@ -6,26 +6,26 @@
 
 | 글 | 구체적으로 살펴볼 내용 |
 | --- | --- |
-| [HBM3E와 HBM4](hbm.md) | 적층·핀 속도·전체 대역폭·열과 DDR/GDDR의 선택 조건입니다. |
-| [CMM-D와 CXL](cxl-memory.md) | MD220·MD310의 판, 용량 확장·요청 병렬성·페이지 이동 비용입니다. |
-| [9100 PRO와 SN8100](ssd.md) | pSLC 캐시·지속 쓰기·IOPS·TBW와 PCIe 4.0 대안입니다. |
+| [HBM3E와 HBM4](고대역폭메모리의용량과열_hbm.md) | 적층·핀 속도·전체 대역폭·열과 DDR/GDDR의 선택 조건입니다. |
+| [CMM-D와 CXL](메모리용량확장과지연_cxl-memory.md) | MD220·MD310의 판, 용량 확장·요청 병렬성·페이지 이동 비용입니다. |
+| [9100 PRO와 SN8100](저장장치의최고속도와지속쓰기_ssd.md) | pSLC 캐시·지속 쓰기·IOPS·TBW와 PCIe 4.0 대안입니다. |
 
 ## 연산기와 칩 제조
 
 | 글 | 구체적으로 살펴볼 내용 |
 | --- | --- |
-| [RTX 5090과 GPU 비교](gpu.md) | 렌더링·생성 프레임·CPU 병목·전력과 다른 제품 급의 비교 조건입니다. |
-| [M5와 Snapdragon SoC](soc.md) | 통합 메모리·앱 호환성·가속기·완제품의 지속 성능과 배터리입니다. |
-| [GAA와 후면 전력 공급](gaa-backside-power.md) | N2·18A의 적용 상태, 게이트 제어·전압 강하·공정 비교의 조건입니다. |
-| [칩렛과 3D V-Cache](chiplets-packaging.md) | 9950X3D·9950X3D2, 캐시 효과·양품 선별·적층과 패키지 연결입니다. |
-| [ASML EUV와 다른 패터닝](euv-lithography.md) | NXE·EXE의 NA·해상도·노광량·생산량과 DUV/NIL의 차이입니다. |
+| [RTX 5090과 GPU 비교](그래픽처리장치의성능과전력_gpu.md) | 렌더링·생성 프레임·CPU 병목·전력과 다른 제품 급의 비교 조건입니다. |
+| [M5와 Snapdragon SoC](통합시스템칩의지속성능_soc.md) | 통합 메모리·앱 호환성·가속기·완제품의 지속 성능과 배터리입니다. |
+| [GAA와 후면 전력 공급](게이트구조와후면전력공급_gaa-backside-power.md) | N2·18A의 적용 상태, 게이트 제어·전압 강하·공정 비교의 조건입니다. |
+| [칩렛과 3D V-Cache](칩렛과적층캐시_chiplets-packaging.md) | 9950X3D·9950X3D2, 캐시 효과·양품 선별·적층과 패키지 연결입니다. |
+| [ASML EUV와 다른 패터닝](극자외선노광의해상도와생산량_euv-lithography.md) | NXE·EXE의 NA·해상도·노광량·생산량과 DUV/NIL의 차이입니다. |
 
 ## 공장 자동화와 가상 검증
 
 | 글 | 구체적으로 살펴볼 내용 |
 | --- | --- |
-| [Xiaomi와 FANUC 공장](automated-factories.md) | 공정 자동화·무인 시간·정비 인력·병목·OEE와 투자 회수입니다. |
-| [Siemens와 BMW의 디지털트윈](industrial-digital-twins.md) | 가상 시운전·현장 적용·모델 오차·데이터와 검증의 범위입니다. |
+| [Xiaomi와 FANUC 공장](공장의자동화와무인운영_automated-factories.md) | 공정 자동화·무인 시간·정비 인력·병목·OEE와 투자 회수입니다. |
+| [Siemens와 BMW의 디지털트윈](공장의디지털트윈과검증_industrial-digital-twins.md) | 가상 시운전·현장 적용·모델 오차·데이터와 검증의 범위입니다. |
 
 ## 자료를 비교하는 방법
 
