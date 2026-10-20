@@ -1,6 +1,6 @@
 # 제품과 기술 리뷰 | Product and technology reviews
 
-반도체·AI·로봇·우주·의료에서 에너지·물·통신·진단·제조·보안·전력망·농업·식품과 산업 경쟁까지 68편으로 읽습니다. 무엇을 하는 제품인지부터 원리, 가능해진 배경, 경쟁 방식, 실제 시험과 남은 제약까지 설명합니다. 표준·공급망·서비스·사업 모델과 도입·전환 비용도 함께 살펴봅니다. 각 글에 기초 용어, 직접 따라갈 계산과 확인 문제 세 개를 넣었습니다. 자료 확인일은 2026-10-20이며 개별 시험의 실시일·제품 판은 본문에 따로 표시합니다.
+반도체·AI·로봇·우주·의료에서 에너지·물·통신·진단·제조·보안·전력망·농업·식품과 산업 경쟁까지 71편으로 읽습니다. 무엇을 하는 제품인지부터 원리, 가능해진 배경, 경쟁 방식, 실제 시험과 남은 제약까지 설명합니다. 표준·공급망·서비스·사업 모델과 도입·전환 비용도 함께 살펴봅니다. 각 글에 기초 용어, 직접 따라갈 계산과 확인 문제 세 개를 넣었습니다. 목차 기준일은 2026-10-21이며 자료 확인일·개별 시험의 실시일·제품 판은 본문에 따로 표시합니다.
 
 ## 분야별 목록
 
@@ -10,7 +10,7 @@
 | [기기와 모빌리티](기기와모빌리티_devices-mobility/README.md) | 10 | 폴더블, OLED·microLED, XR, 전자종이, Wi-Fi 7, Thunderbolt·USB4, 배터리, F1, 수술 로봇, 광자계수 CT |
 | [AI와 로봇](AI와로봇_ai-robotics/README.md) | 10 | ChatGPT·Claude, Gemini, 기기 내 AI, DLSS·FSR·XeSS, FSD·Waymo, Optimus, Atlas, Spot, BCI, 양자컴퓨터 |
 | [우주와 운송](우주와운송_space-transport/README.md) | 5 | Falcon 9, Starship, Starlink, Roadster와 항공 터보팬의 추진·통신·운용 |
-| [방산 전자](방산전자_defense-electronics/README.md) | 2 | AESA·GaN 레이더, Iron Beam·DragonFire의 광학·전력·운용 조건 |
+| [방산 전자](방산전자_defense-electronics/README.md) | 5 | AESA·GaN, 레이저, F-35·Rafale·KF-21, AMRAAM·Meteor·SCALP, Patriot·THAAD·SAMP/T |
 | [의약품과 생명공학](의약품과생명공학_biomedical/README.md) | 3 | 위고비·마운자로와 후속 약물, 카스게비의 유전자 편집, CAR-T의 세포치료 |
 | [에너지와 물](에너지와물_energy-water/README.md) | 7 | 히트펌프, 해상풍력, 차세대 지열, 담수화, 장주기 저장, 수소 전해조, 소형원자로 |
 | [통신과 센서](통신과센서_communications-sensing/README.md) | 5 | 해저 광통신, 5G Advanced·NTN, 라이다·레이더, GNSS와 대안, 양자 센서 |
@@ -22,6 +22,10 @@
 | [농업과 식품 공학](농업과식품_agriculture-food/README.md) | 2 | See & Spray의 표적 살포, HPP 식품 처리의 기전·살균·생산량 |
 
 같은 글에서 다룬 경쟁 제품을 따로 세어 리뷰 수를 늘리지 않습니다. 공급사별 모델 카드는 [AI 모델 실험](../AI모델실험_model-lab/README.md), 여러 기술의 현황은 [기술 동향](../기술동향_technology/README.md), 연구 방법의 자세한 분석은 [논문 해설](../논문해설_papers/README.md)로 이어집니다.
+
+## 전투기·유도무기·방공체계의 기술 연결
+
+[방산 전자](방산전자_defense-electronics/README.md)에서 센서·비행·정비, 항법·탐색·추진, 탐지·지휘·요격을 나누어 읽습니다. 구성품의 명칭뿐 아니라 항공기 통합 시험, 평가용 인도, 실제 운용, 공급망과 지원 계약을 함께 비교합니다. 기존 레이더·레이저 글의 전력·열·광학 개념을 실제 체계에 연결합니다.
 
 ## 로그인·전력망·식품 공정으로 이어 읽기
 
@@ -58,7 +62,7 @@
 
 수치에는 버전·시험 시점·장치·작업·설정·분모를 붙입니다. 최고 사양, 특정 조건의 시험 결과, 제조사 전망, 자체 계산을 서로 바꾸어 쓰지 않습니다. 예약·시제품 시연·판매·고객 인도·실제 운용도 구별합니다. 영상은 본문에서 확인한 범위를 밝히며 설명문만 읽고 장면 전체를 분석했다고 적지 않습니다.
 
-이 68편은 공개 자료를 읽은 기술·산업 리뷰입니다. 직접 제품을 구매·운전·측정한 실험과는 다릅니다. 공개된 비교 자료가 부족한 제품은 그 부분을 명시하며 상상한 순위를 만들지 않습니다. 아래 SQLite 실습과 모델 평가 글 2개는 이 68편과 별도로 셉니다.
+이 71편은 공개 자료를 읽은 기술·산업 리뷰입니다. 직접 제품을 구매·운전·측정한 실험과는 다릅니다. 공개된 비교 자료가 부족한 제품은 그 부분을 명시하며 상상한 순위를 만들지 않습니다. 아래 SQLite 실습과 모델 평가 글 2개는 이 71편과 별도로 셉니다.
 
 ## 함께 읽을 실습과 평가
 
@@ -70,4 +74,4 @@
 
 ## English
 
-Sixty-eight Korean reviews cover products, competing technologies and industrial ecosystems across computing, energy, communications, diagnostics, manufacturing and other fields. Each pairs principles with evidence, worked calculations and three questions. Standards, supply chains, business models and switching costs explain adoption alongside technical performance. Manufacturer documentation is cross-checked against research, original measurements and field reporting where available. Targets and actual operation are distinguished. These are literature reviews; the SQLite experiment and model-evaluation note are listed separately from the 68 reviews.
+Seventy-one Korean reviews cover products, competing technologies and industrial ecosystems across computing, energy, communications, diagnostics, manufacturing and other fields. Each pairs principles with evidence, worked calculations and three questions. Standards, supply chains, business models and switching costs explain adoption alongside technical performance. Manufacturer documentation is cross-checked against research, original measurements and field reporting where available. Targets and actual operation are distinguished. These are literature reviews; the SQLite experiment and model-evaluation note are listed separately from the 71 reviews.
