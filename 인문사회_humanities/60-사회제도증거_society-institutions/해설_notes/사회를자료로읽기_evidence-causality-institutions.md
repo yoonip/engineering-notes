@@ -40,6 +40,44 @@ E[Y\mid D=1]-E[Y\mid D=0]
 
 관찰 연구에서도 자연실험, 차이의 차이, 회귀불연속 등 적합한 설계를 사용할 수 있습니다. 각각 비교 가능성, 추세, 경계 주변의 행동 같은 가정을 검토해야 하며, 방법 이름이 인과성을 보장하지 않습니다. 통계적 통제에 관측 변수를 많이 넣는 것만으로 숨은 차이가 모두 사라지는 것도 아닙니다. [World Bank, Chapters 4–8](https://www.worldbank.org/en/programs/sief-trust-fund/publication/impact-evaluation-in-practice)
 
+### 차이의 차이를 네 칸으로 계산합니다
+
+다음 취업률은 실제 사업의 통계가 아닌 자체 예입니다. 훈련을 도입한 A지역과 도입하지 않은 B지역을 전후로 비교하겠습니다.
+
+| 지역 | 시행 전 | 시행 후 | 지역 안의 변화 |
+|---|---:|---:|---:|
+| A: 훈련 도입 | 60% | 70% | +10%p |
+| B: 미도입 | 50% | 56% | +6%p |
+
+시행 후 차이 14%p에는 시행 전 차이 10%p가 섞입니다. A의 증가 10%p에는 두 지역에 공통인 경기 변화 등이 섞일 수 있습니다. 차이의 차이 추정은 `(70−60)−(56−50)=4%p`입니다. B의 변화 6%p를 이용해 A가 훈련 없이 66%가 됐을 것으로 추정하면, 실제 70%와의 차이가 4%p가 됩니다.
+
+이 해석에는 개입이 없었을 때 두 집단의 평균 결과가 같은 폭으로 변했으리라는 공통추세 가정이 필요합니다. 시작점이 같아야 한다는 가정은 아닙니다. 또한 A의 시행 후 추세가 실제로 B와 같아야 한다는 뜻도 아닙니다. 바로 그 시점의 관측되지 않은 반사실을 다루는 가정입니다. [World Bank의 차이의 차이 설명](https://blogs.worldbank.org/en/impactevaluations/difference-differences-practice-case-mobile-phones-and-farmers-productivity)
+
+같은 표를 유지하되, A에만 새 공장이 들어서 훈련 없이도 68%가 됐을 것이라고 가상으로 설정해 보겠습니다. 실제 훈련 효과는 `70−68=2%p`인데 단순한 차이의 차이는 4%p입니다. A에만 작용한 상승분 2%p를 훈련 효과로 잘못 포함한 것입니다. 표의 산술이 맞아도 가정이 틀리면 효과 해석이 달라집니다.
+
+시행 전 여러 시점의 추세와 도입 경위, 다른 정책·일자리 변화, 영향을 받지 않을 결과를 이용한 대조를 살펴야 합니다. 사전 추세 차이가 통계적으로 유의하지 않았다는 것만으로 시행 후의 반사실 공통추세를 증명할 수는 없습니다. 여러 시점에 차례로 도입한 사업은 이미 참여한 집단을 비교군으로 쓰는 문제와 효과의 시간 변화까지 검토해야 합니다.
+
+### 학생 수와 무작위 배정 단위는 다릅니다
+
+직접 만든 예로 두 학교에 학생이 100명씩 있고, 학교 하나에만 새 수업을 도입했다고 하겠습니다. 관측한 학생은 200명이지만 처치를 따로 배정한 단위는 학교 두 개입니다. 같은 학교 학생들은 교사·시간표·시설의 영향을 함께 받습니다. 따라서 200명에게 처치를 독립적으로 배정한 실험처럼 오차를 계산하면 불확실성을 과소평가할 수 있습니다. 학교가 둘뿐이면 학교 효과와 수업 효과를 구분하는 근거도 매우 약합니다.
+
+학생-회기는 더 다른 단위입니다. 학생 100명을 네 번 관찰하면 400개의 학생-회기가 생기지만 사람이 400명이 되는 것은 아닙니다. 논문의 참여자 수, 배정 단위, 반복 관측 수, 분석에 실제 남은 수를 따로 적어야 합니다. 집단 배정과 집단 내 상관은 [J-PAL의 평가 설계](https://www.povertyactionlab.org/resource/elements-randomized-evaluation)와 [분석 방법](https://www.povertyactionlab.org/resource/data-analysis?lang=en)에서 연결해 읽으실 수 있습니다.
+
+### 계산 확인 문제
+
+1. 위 표에서 시행 후의 14%p 차이를 그대로 훈련 효과로 읽으면 어떤 차이를 무시할까요?
+2. A의 훈련 없는 반사실 취업률을 68%로 설정하면 효과는 얼마일까요?
+3. 학생 100명에게서 네 번 자료를 얻으면 서로 다른 참가자는 몇 명일까요?
+
+<details>
+<summary>답과 해설</summary>
+
+1. 시행 전부터 있던 10%p 차이를 무시합니다. 차이의 차이 4%p를 효과로 해석하는 데에도 공통추세 등 가정이 필요합니다.
+2. 2%p입니다. 반사실을 어떻게 식별하는지가 핵심이며, 그 값은 실제 자료에서 직접 관측한 수치가 아닙니다.
+3. 100명입니다. 관측 행 400개와 독립 참가자·배정 단위의 수를 구분합니다.
+
+</details>
+
 ### 통계와 제도의 평가를 연결하기
 
 | 자료에서 확인할 것 | 해석에 필요한 이유 |
@@ -85,6 +123,16 @@ The first term is the average effect for participants. The remaining difference 
 Random assignment removes systematic preassignment differences in expectation, rather than making every realized sample characteristic identical. Noncompliance distinguishes assignment effects from actual participation effects. Missing outcomes, attrition, and spillovers also matter, and random evaluation is not feasible or suitable for every institution. [MIT J-PAL introduction](https://www.povertyactionlab.org/resource/introduction-randomized-evaluations), [World Bank, Chapters 5 and 9](https://documents1.worldbank.org/curated/en/698441474029568469/pdf/Impact-evaluation-in-practice.pdf)
 
 Observational work can use designs such as natural experiments, difference-in-differences, and regression discontinuity when their assumptions fit. Examine comparability, trends, and behavior around thresholds; naming a method does not establish causality. Adding many observed controls does not automatically remove unobserved differences. [World Bank, Chapters 4–8](https://www.worldbank.org/en/programs/sief-trust-fund/publication/impact-evaluation-in-practice)
+
+### Compute a two-group, two-period comparison
+
+In an original teaching example, employment rises from 60% to 70% in region A after training and from 50% to 56% in untreated region B. The difference-in-differences is `(70−60)−(56−50)=4` percentage points. Interpreting this as an effect requires parallel changes in the untreated potential outcomes, not equal starting levels. A post-treatment gap of 14 points alone does not identify the effect.
+
+If a new factory would instead have raised A to 68% without training, the stipulated true effect is two points. The same observed table still yields four. Correct arithmetic cannot replace the identification assumption. Pre-treatment trends, implementation decisions, other shocks and suitable placebo comparisons inform credibility; a nonsignificant pre-trend test is not a proof. [World Bank methodological example](https://blogs.worldbank.org/en/impactevaluations/difference-differences-practice-case-mobile-phones-and-farmers-productivity)
+
+### Distinguish participants, assignments and repeated records
+
+Two schools with 100 students each provide 200 student observations, but only two treatment-assignment units if one school receives a program. Shared teachers and conditions create dependence, and two schools provide little basis to separate a school difference from a treatment effect. Similarly, 100 people observed four times produce 400 person-period records, not 400 participants. State the assignment unit, repeated observations, exclusions and actual analysis sample. [J-PAL evaluation design](https://www.povertyactionlab.org/resource/elements-randomized-evaluation), [data analysis](https://www.povertyactionlab.org/resource/data-analysis?lang=en)
 
 ### Connect evidence to institutional evaluation
 
