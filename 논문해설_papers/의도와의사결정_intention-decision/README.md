@@ -4,9 +4,9 @@
 
 | 논문 | 과제·방법 | 해설에서 확인할 것 |
 |---|---|---|
-| Libet 등, Time of conscious intention to act in relation to onset of cerebral activity, 1983 | 자발적 움직임, 준비전위, 의도를 처음 느낀 시각의 회상 보고를 비교합니다. | [시간 순서·참가자와 시행 묶음·보고 오차](libet1983.md) |
-| Schurger·Sitt·Dehaene, An accumulator model for spontaneous neural activity prior to self-initiated movement, 2012 | 신호가 누적되어 임계값에 이르는 모형과 EEG를 비교합니다. | [조건부 평균·모형의 가정·개별 시행](schurger2012.md) |
-| Maoz 등, Neural precursors of decisions that matter, 2019 | 임의 선택과 실제 기부 결과를 숙고하는 선택을 비교합니다. | [과제의 차이·EEG 차이·일반화의 범위](maoz2019.md) |
+| Libet 등, Time of conscious intention to act in relation to onset of cerebral activity, 1983 | 자발적 움직임, 준비전위, 의도를 처음 느낀 시각의 회상 보고를 비교합니다. | [시간 순서·참가자와 시행 묶음·보고 오차](의도보고시각과준비전위_libet1983.md) |
+| Schurger·Sitt·Dehaene, An accumulator model for spontaneous neural activity prior to self-initiated movement, 2012 | 신호가 누적되어 임계값에 이르는 모형과 EEG를 비교합니다. | [조건부 평균·모형의 가정·개별 시행](신경활동누적과움직임정렬평균_schurger2012.md) |
+| Maoz 등, Neural precursors of decisions that matter, 2019 | 임의 선택과 실제 기부 결과를 숙고하는 선택을 비교합니다. | [과제의 차이·EEG 차이·일반화의 범위](숙고선택과임의선택의준비전위_maoz2019.md) |
 
 ## 결과에서 결론으로 가는 단계를 적습니다
 

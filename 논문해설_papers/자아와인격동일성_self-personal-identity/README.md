@@ -4,10 +4,10 @@
 
 | 논문 | 분석하는 문제 | 해설 |
 |---|---|---|
-| Sydney Shoemaker, Persons and Their Pasts, 1970 | 기억으로 동일성을 설명하면서 이미 같은 사람임을 전제하는 순환을 피할 수 있을까요? | [유사 기억과 인과 관계](shoemaker1970.md) |
-| Bernard Williams, The Self and the Future, 1970 | 기억을 바꾸는 사례의 표현 방식에 따라 미래의 두려움은 달라질까요? | [신체와 일인칭의 미래](williams1970.md) |
-| Derek Parfit, Personal Identity, 1971 | 생존에서 중요한 심리적 관계와 동일성은 같은 것일까요? | [분기·연결성·연속성](parfit1971.md) |
-| Eric T. Olson, Was I Ever a Fetus?, 1997 | 심리적 능력이 없던 시기의 유기체와 지금의 나는 어떤 관계일까요? | [심리적 필요조건과 생물학적 지속](olson1997.md) |
+| Sydney Shoemaker, Persons and Their Pasts, 1970 | 기억으로 동일성을 설명하면서 이미 같은 사람임을 전제하는 순환을 피할 수 있을까요? | [유사 기억과 인과 관계](기억과과거의자아_shoemaker1970.md) |
+| Bernard Williams, The Self and the Future, 1970 | 기억을 바꾸는 사례의 표현 방식에 따라 미래의 두려움은 달라질까요? | [신체와 일인칭의 미래](기억변화와미래의고통_williams1970.md) |
+| Derek Parfit, Personal Identity, 1971 | 생존에서 중요한 심리적 관계와 동일성은 같은 것일까요? | [분기·연결성·연속성](인격동일성과심리적계속성_parfit1971.md) |
+| Eric T. Olson, Was I Ever a Fetus?, 1997 | 심리적 능력이 없던 시기의 유기체와 지금의 나는 어떤 관계일까요? | [심리적 필요조건과 생물학적 지속](태아와성인의생물학적동일성_olson1997.md) |
 
 ## 판단 기준을 확인하는 방법
 

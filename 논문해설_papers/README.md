@@ -1,6 +1,6 @@
 # 논문 해설 | Paper studies
 
-계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명과학·에너지·통신·제조·우주 탐사와 산업·사회·마음 철학·자유의지·인격 동일성과 호르몬 연구까지 논문 191편을 한국어로 읽습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
+계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명과학·에너지·통신·제조·우주 탐사와 산업·사회·마음 철학·자유의지·인격 동일성과 호르몬 연구까지 논문 201편을 한국어로 읽습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
 
 ## 분야별 목록
 
@@ -13,13 +13,13 @@
 | [머신러닝과 생성 모델](머신러닝과생성모델_machine-learning/README.md) | 30 | SVM부터 강화학습·3D·단백질·효율적인 언어·멀티모달 모델 |
 | [Transformer](Transformer의계산_ATTENTION.md)와 [언어·멀티모달](언어와멀티모달_language-multimodal/README.md) | 4 | attention, 문맥 학습, 이미지·문장 연결, 저비용 적응 |
 | [뇌와 신경공학](뇌와신경공학_neuroengineering/README.md) | 25 | 뉴런, 기억·공간, 연결지도, 초파리 모형, BCI와 유전체 |
-| [반도체와 소재](반도체와소재_semiconductors-materials/README.md) | 9 | FinFET, 원자층 재료, 메모리 물리, 재료 탐색·합성, 태양전지 |
+| [반도체와 소재](반도체와소재_semiconductors-materials/README.md) | 10 | FinFET, 원자층 재료, 메모리 물리, 재료 탐색·합성, 태양전지 |
 | [우주 탐사와 정밀 관측](우주와관측_space-observation/README.md) | 6 | 상태 추정, 화성 비행, 소행성 충돌, 광통신, JWST와 LIGO |
 | [의약품과 대사 연구](의약품과대사_metabolic-medicine/README.md) | 2 | STEP 1·SURMOUNT-1의 설계, 감량 효과, 결측·중단·이상사건 |
 | [게임·생물·사회 데이터를 활용한 연구](뜻밖의연결_interdisciplinary/README.md) | 6 | WoW와 감염병, Foldit과 단백질, 점균과 연결망, 검색과 독감, 음악과 사회적 영향 |
-| [에너지와 환경](에너지와환경_energy-environment/README.md) | 6 | 태양전지 한계·페로브스카이트, 수계 전해질, 담수화, 공기 포집과 광물화 |
-| [통신과 정밀 측정](통신과측정_communications-metrology/README.md) | 6 | MIMO·오류정정·송신 다이버시티·광섬유, 원자시계와 중력계 |
-| [생명과학과 진단](생명과학과진단_life-science-diagnostics/README.md) | 6 | DNA 서열·PCR·RNA 변형·나노포어·오가노이드·Liver-Chip |
+| [에너지와 환경](에너지와환경_energy-environment/README.md) | 7 | 태양전지 한계·페로브스카이트, 수계 전해질, 담수화, 공기 포집과 광물화 |
+| [통신과 정밀 측정](통신과측정_communications-metrology/README.md) | 7 | MIMO·오류정정·송신 다이버시티·광섬유, 원자시계와 중력계 |
+| [생명과학과 진단](생명과학과진단_life-science-diagnostics/README.md) | 7 | DNA 서열·PCR·RNA 변형·나노포어·오가노이드·Liver-Chip |
 | [제조와 광학](제조와광학_manufacturing-photonics/README.md) | 4 | 체적 광경화·수지 공급, 간섭·회절 신경망의 실제 검증 범위 |
 | [산업과 표준](산업과표준_industry-standards/README.md) | 2 | 기술 채택의 경로 의존, 보완재·호환성·전환 비용 |
 | [마음과 인공지능 철학](마음과인공지능철학_mind-ai-philosophy/README.md) | 9 | 고전의 질문, 의식 지표, 최근 내부 작업공간·자기 보고·역할 제어 |
@@ -27,19 +27,22 @@
 | [자유의지와 책임](자유의지와책임_free-will-responsibility/README.md) | 7 | 관계적 책임·대안 가능성·욕구·결정론·자기 형성·궁극적 책임 |
 | [자아와 인격 동일성](자아와인격동일성_self-personal-identity/README.md) | 4 | 기억의 인과·분기·신체·인간 유기체의 지속 |
 | [의도와 의사결정](의도와의사결정_intention-decision/README.md) | 3 | 의도 시각 보고·준비전위·누적 모형·임의 선택과 숙고 |
+| [기상과 지구 시스템](기상과지구시스템_weather-earth/README.md) | 1 | 관측 기반 초기 상태·전 지구와 지역 예보·격자와 오차 지표 |
+| [양자 정보와 오류 정정](양자정보_quantum-information/README.md) | 1 | 중성원자 논리 큐비트·반복 오류 정정·게이트와 제어 시간 |
+| [사회과학의 현장 자료와 실험](사회과학의실험_social-science-experiments/README.md) | 4 | 노동·교육·설득·현금 지급의 설계, 분모, 정정과 외적 타당도 |
 
-각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 191편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
+각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 201편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
 
 ## 처음 읽으실 때
 
-철학은 [기본 개념 다섯 장](../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)을 먼저 읽고 대표 논증으로 이어가실 수 있습니다. 최근 AI 연구는 [고전과의 비교](../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)에서 측정한 기능과 철학적 결론을 구분합니다.
+철학은 [기본 개념 일곱 장](../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)을 먼저 읽고 대표 논증으로 이어가실 수 있습니다. 최근 AI 연구는 [고전과의 비교](../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)에서 측정한 기능과 철학적 결론을 구분합니다.
 
 [논문에서 자주 만나는 말](논문을읽는용어_PAPER_TERMS.md)부터 읽으시면 attention, normalization, regularization, gradient, embedding과 inference를 예제로 구분하실 수 있습니다. 수식의 기호를 모를 때에는 그 기호가 나타내는 값, 모양과 단위를 먼저 확인합니다.
 
 | 관심 | 이어서 읽을 순서 | 따라갈 질문 |
 | --- | --- | --- |
-| AI가 처음입니다. | [역전파](딥러닝_deep-learning/backprop.md) → [ResNet](딥러닝_deep-learning/resnet.md) → [LayerNorm](딥러닝_deep-learning/layer-normalization.md) → [Transformer](Transformer의계산_ATTENTION.md) | 오차로 무엇을 바꾸고, 각 층은 어떤 계산을 합니까? |
-| Transformer 이후가 궁금합니다. | [Transformer](Transformer의계산_ATTENTION.md) → [BERT](딥러닝_deep-learning/bert.md)·[GPT-3](언어와멀티모달_language-multimodal/gpt3.md) → [CLIP](언어와멀티모달_language-multimodal/clip.md)·[LoRA](언어와멀티모달_language-multimodal/lora.md) | 구조가 이어져도 학습 목표와 적응 방식은 어떻게 달라집니까? |
+| AI가 처음입니다. | [역전파](딥러닝_deep-learning/역전파_backprop.md) → [ResNet](딥러닝_deep-learning/잔차연결신경망_resnet.md) → [LayerNorm](딥러닝_deep-learning/층정규화_layer-normalization.md) → [Transformer](Transformer의계산_ATTENTION.md) | 오차로 무엇을 바꾸고, 각 층은 어떤 계산을 합니까? |
+| Transformer 이후가 궁금합니다. | [Transformer](Transformer의계산_ATTENTION.md) → [BERT](딥러닝_deep-learning/양쪽문맥의가린토큰예측_bert.md)·[GPT-3](언어와멀티모달_language-multimodal/문맥의예시로수행하는언어과제_gpt3.md) → [CLIP](언어와멀티모달_language-multimodal/이미지와설명의공동표현_clip.md)·[LoRA](언어와멀티모달_language-multimodal/작은행렬의모델적응_lora.md) | 구조가 이어져도 학습 목표와 적응 방식은 어떻게 달라집니까? |
 | 컴퓨터와 서비스의 원리를 읽고 싶습니다. | [계산·데이터·네트워크와 분산 시스템](컴퓨팅과시스템_computing-systems/README.md) | 어떤 일을 계산할 수 있으며 데이터와 실패를 어떻게 다룹니까? |
 | 회로·통신·성능이 궁금합니다. | [정보·소자·신호·프로세서](정보와전자공학_information-electronics/README.md) | 정보량, 소자 크기, 계산량과 실행시간은 어떻게 연결됩니까? |
 
@@ -70,9 +73,9 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 | 논문 | 한국어 해설에서 직접 해볼 일 |
 | --- | --- |
 | [Attention Is All You Need](Transformer의계산_ATTENTION.md), 2017 | Q·K·V 두 토큰의 비율과 출력, 미래 마스크, 입력 길이와 비교 칸 수를 계산합니다. |
-| [Language Models are Few-Shot Learners](언어와멀티모달_language-multimodal/gpt3.md), 2020 | 문맥에 예시를 주는 방식과 가중치 갱신을 구분하고 조건부 확률을 계산합니다. |
-| [CLIP](언어와멀티모달_language-multimodal/clip.md), 2021 | 이미지·설명 두 쌍의 유사도와 양방향 비교를 확인합니다. |
-| [LoRA](언어와멀티모달_language-multimodal/lora.md), 2021 공개·2022 발표 | 작은 행렬 두 개로 변화량을 표현하고 병합 계산·학습 변수 수를 대조합니다. |
+| [Language Models are Few-Shot Learners](언어와멀티모달_language-multimodal/문맥의예시로수행하는언어과제_gpt3.md), 2020 | 문맥에 예시를 주는 방식과 가중치 갱신을 구분하고 조건부 확률을 계산합니다. |
+| [CLIP](언어와멀티모달_language-multimodal/이미지와설명의공동표현_clip.md), 2021 | 이미지·설명 두 쌍의 유사도와 양방향 비교를 확인합니다. |
+| [LoRA](언어와멀티모달_language-multimodal/작은행렬의모델적응_lora.md), 2021 공개·2022 발표 | 작은 행렬 두 개로 변화량을 표현하고 병합 계산·학습 변수 수를 대조합니다. |
 
 ## 뇌 회로·초파리와 신경 인터페이스
 
@@ -80,7 +83,7 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## 재료·반도체에서 장치와 제조로
 
-[반도체와 소재 9편](반도체와소재_semiconductors-materials/README.md)에서는 단일 소자의 성능, 웨이퍼 수율, 계산으로 찾은 결정, 로봇이 합성한 물질, 외부 인증 태양전지를 구별합니다. A-Lab은 2026년 정정된 본문과 수치를 함께 읽습니다.
+[반도체와 소재 10편](반도체와소재_semiconductors-materials/README.md)에서는 단일 소자의 성능, 웨이퍼 수율, 계산으로 찾은 결정, 로봇이 합성한 물질, 외부 인증 태양전지를 구별합니다. A-Lab은 2026년 정정된 본문과 수치를 함께 읽습니다.
 
 ## 약물 효과와 뜻밖의 연구 재료
 
@@ -92,6 +95,12 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 [우주·관측 6편](우주와관측_space-observation/README.md)은 칼만 필터의 불확실성 계산과 자율 항법, 검출기·광학·통계를 연결합니다. 당시의 개발 계획과 이후 실제 임무 결과를 섞지 않고, 논문에서 확인한 시점과 조건을 적었습니다.
 
+## 전지·재료·측정과 사회과학의 최근 연구
+
+[무음극 나트륨전지](에너지와환경_energy-environment/무음극나트륨전지의수명_anode-free-sodium2025.md), [열전 복합재료](반도체와소재_semiconductors-materials/전하와열을나누는열전재료_thermoelectric-composite2025.md), [루테튬 광시계](통신과측정_communications-metrology/루테튬광시계의불확도_lutetium-clock2026.md), [혈액 표지자와 치매 위험](생명과학과진단_life-science-diagnostics/혈액표지자와치매위험_blood-biomarkers2025.md)은 장치·분자·관측의 분모를 대조합니다. [관측 기반 기상 예보](기상과지구시스템_weather-earth/README.md)와 [중성원자 오류 정정](양자정보_quantum-information/README.md)은 모듈과 전체 체계의 성취를 나누어 읽습니다.
+
+[사회과학 4편](사회과학의실험_social-science-experiments/README.md)은 현장 도입과 무작위 배정을 구분하며 생산성·독립 학습·설득·노동 선택을 다룹니다. 발표된 평균 효과, 인과 해석의 가정, 다른 환경에 적용할 조건을 함께 확인합니다.
+
 ## 최근 연구를 읽는 경로
 
 [머신러닝·생성 모델](머신러닝과생성모델_machine-learning/README.md)에서는 AlphaFold 3, Mamba-2, Titans, DeepSeek-V3.2, Qwen3·Qwen3.5-Omni를 읽습니다. [시스템](알고리즘과컴퓨터시스템_algorithms-systems/README.md)에서는 Harmonic, Rex, PageFlex, KPerfIR, Soar·Alto를 읽습니다. [신경공학](뇌와신경공학_neuroengineering/README.md)의 초파리·음성 합성·유전체 연구와 [최근 소재 연구](반도체와소재_semiconductors-materials/README.md)도 연결됩니다.
@@ -100,9 +109,9 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## 물리적 원리에서 설비와 시장까지
 
-[에너지·환경 6편](에너지와환경_energy-environment/README.md)은 이상적인 효율 한계와 실제 전지·분리·포집 공정의 물질수지를 연결합니다. [통신·측정 6편](통신과측정_communications-metrology/README.md)은 여러 안테나, 오류를 고치는 부호, 광섬유와 정밀 센서의 신호·잡음·불확도를 다룹니다. [생명과학·진단 6편](생명과학과진단_life-science-diagnostics/README.md)은 분자의 정보를 읽고 늘리는 방법에서 조직 모델의 검증까지 이어집니다. 정정 논문과 읽지 못한 보충자료의 범위는 개별 글에 적습니다.
+[에너지·환경 7편](에너지와환경_energy-environment/README.md)은 이상적인 효율 한계와 실제 전지·분리·포집 공정의 물질수지를 연결합니다. [통신·측정 7편](통신과측정_communications-metrology/README.md)은 여러 안테나, 오류를 고치는 부호, 광섬유와 정밀 센서의 신호·잡음·불확도를 다룹니다. [생명과학·진단 7편](생명과학과진단_life-science-diagnostics/README.md)은 분자의 정보를 읽고 늘리는 방법에서 조직 모델의 검증까지 이어집니다. 정정 논문과 읽지 못한 보충자료의 범위는 개별 글에 적습니다.
 
-[제조·광학 4편](제조와광학_manufacturing-photonics/README.md)은 출력 속도와 전체 생산 시간, 수치 모의와 선택된 시료의 실제 시험을 구분합니다. [산업·표준 2편](산업과표준_industry-standards/README.md)은 기술의 채택에 다른 사용자의 선택과 호환성이 영향을 주는 원리를 설명합니다. [AI 가속기 산업 분석](../제품리뷰_reviews/산업과기술경쟁_industry-competition/ai-accelerator-ecosystems2026.md)에서는 이 개념을 실제 도구·공급망·경쟁 대안과 연결하되, 경제학 모형을 특정 기업의 시장 지배 원인이 입증된 결과로 취급하지 않습니다.
+[제조·광학 4편](제조와광학_manufacturing-photonics/README.md)은 출력 속도와 전체 생산 시간, 수치 모의와 선택된 시료의 실제 시험을 구분합니다. [산업·표준 2편](산업과표준_industry-standards/README.md)은 기술의 채택에 다른 사용자의 선택과 호환성이 영향을 주는 원리를 설명합니다. [AI 가속기 산업 분석](../제품리뷰_reviews/산업과기술경쟁_industry-competition/인공지능가속기의생태계경쟁_ai-accelerator-ecosystems2026.md)에서는 이 개념을 실제 도구·공급망·경쟁 대안과 연결하되, 경제학 모형을 특정 기업의 시장 지배 원인이 입증된 결과로 취급하지 않습니다.
 
 ## 자유로운 선택과 같은 사람의 지속
 
@@ -116,7 +125,7 @@ AI의 행동과 마음의 관계는 [주요 논문 6편과 최근 내부 기능 
 
 후속 연구에서 다시 사용한 개념, 공개 교육과정에서 다루는 내용, 실제 시스템 설계로 이어진 영향을 기준으로 읽을 논문을 골랐습니다. 예를 들어 [Stanford CS231n 2025 강의 일정](https://cs231n.stanford.edu/2025/schedule.html)은 역전파·AlexNet·ResNet·BatchNorm·attention을 연결하고, [MIT 분산 시스템의 논문 질문](https://pdos.csail.mit.edu/6.824/questions.html)은 GFS와 MapReduce 등의 설계 조건을 검토합니다. 개별 글에서는 해당 논문의 원문과 확인 가능한 후속 논문·명세를 연결합니다.
 
-발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 191편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
+발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 201편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
 
 ## 모델별 분석과 재현 사례
 
@@ -130,4 +139,4 @@ AI의 행동과 마음의 관계는 [주요 논문 6편과 최근 내부 기능 
 
 ## English
 
-The 191 distinct papers cover computing, AI, electronics, neuroscience, medicine, materials, space, energy, communications, diagnostics, manufacturing and economic theories of technology adoption, philosophy of mind, free will, personal identity, intention and hormonal influences on behaviour. Preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
+The 201 distinct papers cover computing, AI, electronics, neuroscience, medicine, materials, space, energy, communications, diagnostics, manufacturing and economic theories of technology adoption, philosophy of mind, free will, personal identity, intention and hormonal influences on behaviour. Preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.

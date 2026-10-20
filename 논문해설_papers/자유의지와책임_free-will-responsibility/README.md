@@ -4,13 +4,13 @@
 
 | 논문 | 주요 질문 | 해설 |
 |---|---|---|
-| P. F. Strawson, Freedom and Resentment, 1962 | 결정론이 관계 속 원망·감사·책임을 모두 무너뜨릴까요? | [관계와 반응적 태도](strawson1962.md) |
-| Harry G. Frankfurt, Alternate Possibilities and Moral Responsibility, 1969 | 다른 선택이 불가능하면 책임도 없을까요? | [대안 차단과 실제 행동 원인](frankfurt1969.md) |
-| Harry G. Frankfurt, Freedom of the Will and the Concept of a Person, 1971 | 어떤 욕구가 자신을 움직이기를 원할까요? | [일차 욕구와 이차적 의욕](frankfurt1971.md) |
-| Peter van Inwagen, The Incompatibility of Free Will and Determinism, 1975 | 바꿀 수 없는 과거와 법칙에서 행동이 따라오면 어떻게 될까요? | [다른 행동을 할 능력](van-inwagen1975.md) |
-| Galen Strawson, The Impossibility of Moral Responsibility, 1994 | 선택 기준까지 스스로 만들지 않았다면 궁극적 책임이 있을까요? | [자기 창조와 무한퇴행](galen-strawson1994.md) |
-| Robert Kane, Free Will and the Dialectic of Selfhood, 2009 | 갈등하는 선택으로 자신의 동기와 성격을 형성할 수 있을까요? | [비결정성과 자기 형성](kane2009.md) |
-| Christian List, Can AI systems have free will?, 2025 | 행위자 수준의 대안과 통제로 AI의 자유의지를 물을 수 있을까요? | [AI의 선택과 인과적 통제](list2025.md) |
+| P. F. Strawson, Freedom and Resentment, 1962 | 결정론이 관계 속 원망·감사·책임을 모두 무너뜨릴까요? | [관계와 반응적 태도](책임관계와반응적태도_strawson1962.md) |
+| Harry G. Frankfurt, Alternate Possibilities and Moral Responsibility, 1969 | 다른 선택이 불가능하면 책임도 없을까요? | [대안 차단과 실제 행동 원인](대안가능성과도덕적책임_frankfurt1969.md) |
+| Harry G. Frankfurt, Freedom of the Will and the Concept of a Person, 1971 | 어떤 욕구가 자신을 움직이기를 원할까요? | [일차 욕구와 이차적 의욕](이차의지와인격의조건_frankfurt1971.md) |
+| Peter van Inwagen, The Incompatibility of Free Will and Determinism, 1975 | 바꿀 수 없는 과거와 법칙에서 행동이 따라오면 어떻게 될까요? | [다른 행동을 할 능력](결정론과행동의통제_van-inwagen1975.md) |
+| Galen Strawson, The Impossibility of Moral Responsibility, 1994 | 선택 기준까지 스스로 만들지 않았다면 궁극적 책임이 있을까요? | [자기 창조와 무한퇴행](궁극적책임과자기형성_galen-strawson1994.md) |
+| Robert Kane, Free Will and the Dialectic of Selfhood, 2009 | 갈등하는 선택으로 자신의 동기와 성격을 형성할 수 있을까요? | [비결정성과 자기 형성](갈등하는선택과자기형성_kane2009.md) |
+| Christian List, Can AI systems have free will?, 2025 | 행위자 수준의 대안과 통제로 AI의 자유의지를 물을 수 있을까요? | [AI의 선택과 인과적 통제](인공지능의자유의지조건_list2025.md) |
 
 ## 비교하며 읽는 순서
 
