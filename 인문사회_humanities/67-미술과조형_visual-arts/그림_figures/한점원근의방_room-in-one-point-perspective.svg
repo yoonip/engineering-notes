@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">한 점 원근의 방 / Room in one-point perspective</title>
+  <desc id="desc">수평선은 눈높이이며 소실점은 그 위에 있습니다. 정면에 수직으로 멀어지는 방의 모서리를 연장하면 소실점에 모입니다. 정면 벽의 수평선과 수직선은 평행하게 남습니다. 같은 실제 높이를 가정한 두 수직판의 화면 높이는 100과 50입니다.</desc>
+  <defs><clipPath id="floor"><path d="M100 490H860L632 352H328Z"/></clipPath></defs>
+  <rect width="960" height="600" fill="#f6f7f4"/>
+  <g font-family="Malgun Gothic, Arial, sans-serif" fill="#182b34">
+    <text x="32" y="40" font-size="25">눈높이와 소실점으로 읽는 방</text>
+    <text x="32" y="70" font-size="16">자체 교육용 모형 · 정면 벽을 수직으로 바라보는 한 점 원근</text>
+    <path d="M100 100H860L632 196H328Z" fill="#eef0ef"/>
+    <path d="M100 100L328 196V352L100 490Z" fill="#dde5e6"/>
+    <path d="M860 100L632 196V352L860 490Z" fill="#d1dddf"/>
+    <path d="M100 490H860L632 352H328Z" fill="#e9ddc8"/>
+    <rect x="328" y="196" width="304" height="156" fill="#faf7ed" stroke="#647c85" stroke-width="2"/>
+    <g stroke="#ac9d83" stroke-width="1.5" clip-path="url(#floor)">
+      <path d="M100 490L480 260M252 490L480 260M404 490L480 260M556 490L480 260M708 490L480 260M860 490L480 260"/>
+      <path d="M100 450H860M100 410H860M100 380H860"/>
+    </g>
+    <rect x="100" y="100" width="760" height="390" fill="none" stroke="#647c85" stroke-width="2"/>
+    <path d="M100 100L480 260L860 100M100 490L480 260L860 490" fill="none" stroke="#1f7187" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <path d="M80 260H880" stroke="#b23f2e" stroke-width="2" stroke-dasharray="8 5"/>
+    <circle cx="480" cy="260" r="6" fill="#b23f2e"/>
+    <text x="494" y="247" font-size="18">소실점 / VP</text>
+    <text x="105" y="247" font-size="17">수평선 = 눈높이</text>
+    <rect x="340" y="310" width="40" height="50" fill="#32788c" stroke="#1d4b5b" stroke-width="2"/>
+    <rect x="200" y="360" width="80" height="100" fill="#32788c" stroke="#1d4b5b" stroke-width="2"/>
+    <text x="208" y="393" fill="#ffffff" font-size="19">A</text>
+    <text x="351" y="337" fill="#ffffff" font-size="16">B</text>
+    <text x="155" y="478" font-size="16">A: 화면 높이 100</text>
+    <text x="310" y="389" font-size="16">B: 화면 높이 50</text>
+    <text x="40" y="535" font-size="18">수직·정면 수평 모서리는 평행하게, 깊이 방향 모서리는 소실점으로 향합니다.</text>
+    <text x="40" y="570" font-size="16">A·B는 같은 실제 높이를 가정합니다. B의 깊이가 A의 2배인 단순 투영 모형입니다.</text>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="410" viewBox="0 0 1000 410" role="img" aria-labelledby="title desc">
+  <title id="title">배치와 명도의 구도 비교 / Composition and value</title>
+  <desc id="desc">9×6 격자 세 장입니다. A와 B는 같은 크기의 직사각형과 원의 간격을 바꾸며, B와 C는 위치를 유지하고 명도를 교환합니다. 모든 직사각형은 3×2칸입니다.</desc>
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#d9e0e3" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1000" height="410" fill="#f6f7f4"/>
+  <g font-family="Malgun Gothic, Arial, sans-serif" fill="#182b34">
+    <text x="32" y="40" font-size="25">같은 면적, 다른 배치와 명도</text>
+    <text x="32" y="70" font-size="16">A → B: 위치 변화 / B → C: 명도 교환</text>
+    <g transform="translate(35 110)">
+      <rect width="270" height="180" fill="#ffffff" stroke="#72838a"/>
+      <rect width="270" height="180" fill="url(#grid)"/>
+      <rect x="90" y="60" width="90" height="60" fill="#303030"/>
+      <circle cx="225" cy="90" r="18" fill="#bfbfbf"/>
+      <text x="0" y="212" font-size="19">A. 가까이 모은 배치</text>
+      <text x="0" y="240" font-size="16">직사각형 중심 x = 4.5칸</text>
+    </g>
+    <g transform="translate(365 110)">
+      <rect width="270" height="180" fill="#ffffff" stroke="#72838a"/>
+      <rect width="270" height="180" fill="url(#grid)"/>
+      <rect x="15" y="60" width="90" height="60" fill="#303030"/>
+      <circle cx="225" cy="90" r="18" fill="#bfbfbf"/>
+      <text x="0" y="212" font-size="19">B. 간격을 넓힌 배치</text>
+      <text x="0" y="240" font-size="16">직사각형 중심 x = 2칸</text>
+    </g>
+    <g transform="translate(695 110)">
+      <rect width="270" height="180" fill="#ffffff" stroke="#72838a"/>
+      <rect width="270" height="180" fill="url(#grid)"/>
+      <rect x="15" y="60" width="90" height="60" fill="#bfbfbf"/>
+      <circle cx="225" cy="90" r="18" fill="#303030"/>
+      <text x="0" y="212" font-size="19">C. 같은 위치, 명도 교환</text>
+      <text x="0" y="240" font-size="16">작은 원의 대비가 커집니다.</text>
+    </g>
+    <text x="35" y="390" font-size="16">자체 교육용 그림 · 각 화면 9×6칸 · 직사각형 면적 6칸 / 54칸 ≈ 11.1%</text>
+  </g>
+</svg>
