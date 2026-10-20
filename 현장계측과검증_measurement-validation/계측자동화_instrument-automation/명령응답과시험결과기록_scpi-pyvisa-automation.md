@@ -77,6 +77,16 @@ E = P × Δt = 1.6 × 0.010 = 0.016 J
 
 결과를 재검토할 때는 `run_id`, `serial`, `test_revision`, `instrument_id`, `configuration`, `raw_response`, `status`, `error_type`, `retry_of`, `cleanup_status` 같은 항목을 연결할 수 있어야 합니다. 이는 이 글에서 제시한 기록 항목입니다. 기존 `VisaTransport.log`는 성공한 query의 명령·응답·호스트 경과 시간만 담고, 실패한 query의 원문이나 장비 전체 상태는 기록하지 않습니다. 실제 어댑터에 붙일 때 채워야 할 부분입니다.
 
+## 자식 시험 프로그램의 결과도 현재성과 완전성을 확인합니다
+
+계측 프로그램이나 외부 시험 도구를 자식 프로세스로 호출할 때, 종료 코드 0을 제품 PASS로 바로 바꾸면 안 됩니다. 도구가 FAIL 보고서를 정상적으로 작성했을 수도 있고, 이전 실행의 결과 파일이 남았을 수도 있습니다. 표준출력에 PASS라는 단어가 있는 조건도 결과의 현재성·완전성·수치를 확인하지 못합니다.
+
+별도의 [칩 시험 작업 재현 예제](../../예제_examples/실무검증_practical-validation/chip_automation/README.md)는 실제 자식 Python 프로세스 16개에 정상·거짓 PASS·누락·중복·오래된 결과·잘못된 입력 hash·JSON 오류·시간초과를 적용합니다. 부모는 시도 ID·입력 바이트 hash·계획한 항목 ID·정수 수치와 독립 손계산 기대값을 검사합니다. 장비나 RTL 실행을 추가한 것은 아닙니다.
+
+2026-10-21의 대조에서는 자식 완료가 15/16, 종료 코드 0과 PASS 글자 검색의 수용이 각각 14/16이었습니다. 결과 계약까지 확인한 정상 수용은 1개, 유효한 DUT FAIL 보고도 1개입니다. 나머지는 다른 오류 상태로 보존합니다. 전체 러너의 16/16 확인 PASS는 의도한 잘못된 조건을 예상대로 구별했다는 뜻이며 생산 수율이 아닙니다. [종료 상태와 결과 계약 사례](../../설계와검증사례_engineering-cases/시험러너의종료상태와결과계약_chip-runner-result-contract.md)는 분모와 결과 파일을 연결합니다.
+
+실제 장비에서는 timeout이 장비 출력 OFF를 뜻하지 않습니다. 자식 프로세스 종료와 물리 상태 복구를 별도로 설계해야 합니다. 새 예제 역시 통제한 직접 자식만 종료하며, 장비 출력이나 여러 단계의 자식 프로세스 트리 정리는 시험하지 않습니다.
+
 ## 실제로 실행해 확인한 범위
 
 2026-10-21에 Windows, CPython 3.12.14에서 기존 `tests/test_offline.py`의 19개 검사를 다시 실행했습니다. 모두 통과했습니다. 그중 VISA 검사는 정상 식별 조회·초기 열기 실패·조회 timeout의 세 경우이며 `pyvisa` 모듈과 장비 객체를 mock으로 바꿉니다. mock은 실제 장비 대신 정해진 응답과 실패를 내도록 만든 모의 객체입니다. 설치한 VISA backend, PyVISA-sim, 실제 USB/LAN 연결을 시험한 것이 아닙니다.
@@ -105,4 +115,4 @@ python -B tests/test_offline.py --report /existing/folder/verification.local.jso
 
 ## English
 
-SCPI commands, VISA transport, instrument state, data validity and DUT verdicts belong to different layers. This note reads the repository's identification-only transport and deterministic bench model, then develops an explicitly proposed measurement workflow. All 19 existing offline tests passed, including three mocked VISA paths. No physical instrument, VISA backend or output control was exercised. The synthetic energy example is 0.016 J over 10 ms, or 0.008 J per assumed completed inference; undervoltage remains a failure even if the computed energy decreases.
+SCPI commands, VISA transport, instrument state, data validity and DUT verdicts belong to different layers. This note reads the repository's identification-only transport and deterministic bench model, then develops an explicitly proposed measurement workflow. All 19 existing offline tests passed, including three mocked VISA paths. No physical instrument, VISA backend or output control was exercised. The synthetic energy example is 0.016 J over 10 ms, or 0.008 J per assumed completed inference; undervoltage remains a failure even if the computed energy decreases. A separate sixteen-child replay distinguishes process exits from fresh, complete and numerically valid reports; its overall PASS records expected fault classification, not hardware yield.
