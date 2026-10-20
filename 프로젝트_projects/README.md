@@ -16,6 +16,10 @@
 | [신경망 에너지 모델](neural-network-energy-models/README.md) | 연산 정밀도·메모리 이동·에너지 수식의 수치 모델 | 단위 검사 8개와 수치 비교 108조건 |
 | [Tiny Transformer RTL](tiny-transformer-rtl/README.md) | NumPy 학습과 Q8.8 가중치 export, SystemVerilog token 생성 | 네 입력 조건의 token·causal mask·EOS, RTL·JSON 가중치 일치 |
 
+## 설계 선택과 새 실행 기록
+
+[설계와 검증 사례](../설계와검증사례_engineering-cases/README.md)에서 FPGA 프레임·제조 AI·SQLite의 요구사항과 대안, 2026-10-21의 재실행을 읽으실 수 있습니다. [현장 계측과 검증](../현장계측과검증_measurement-validation/README.md)은 장비 사용·펌웨어 오류·칩 시험·자동화 절차를 관련 구현으로 연결합니다. 프로젝트별 이전 결과와 새 검사의 범위는 각 기록에서 구별합니다.
+
 ## 알고리즘과 개발 도구
 
 | 프로젝트 | 내용 | 확인한 결과 |

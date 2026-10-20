@@ -20,6 +20,12 @@
 
 [처음으로](README.md) · [공학 기초](공학기초_foundations/README.md) · [출처](참고자료_references/README.md)
 
+## 계측·디버깅·설계 검증 | Measurement, debugging and validation
+
+[현장 계측과 검증](현장계측과검증_measurement-validation/README.md)은 계측기 4종의 모델별 사용 절차, DMA·캐시, Cortex-M 예외, PVT·shmoo, CAN·EtherCAT·Modbus, SCPI 자동화를 다룹니다. [업무 질문별 읽는 순서](현장계측과검증_measurement-validation/README.md#업무-질문에서-시작하기)는 C/C++·펌웨어·RTL·AI·Python의 기존 구현으로 이어집니다.
+
+[설계와 검증 사례](설계와검증사례_engineering-cases/README.md)는 FPGA 프레임 오류·제조 시계열의 미래 정보 참조·SQLite 갱신 충돌을 요구사항과 대안, 실행 기록으로 설명합니다. 장비 사양·구성한 계산·로컬 실행·실측의 범위는 각 본문에 구분해 두었습니다.
+
 ## 개발 환경과 언어 | Development environments and languages
 
 | 분야 | 실제 해설 |

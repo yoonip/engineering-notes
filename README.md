@@ -2,6 +2,15 @@
 
 회로와 반도체부터 RTL·펌웨어, 시스템 소프트웨어, GPU와 AI까지 다루는 기술 기록입니다. 개념을 정리하고 수식을 코드로 옮기며, 직접 실행한 결과와 그 조건을 함께 모았습니다. 언어이해·추리논증, 외국어·기술 영어, 인문사회와 예술은 공학과 구분하여 읽으실 수 있습니다.
 
+## 계측·디버깅·설계 검증
+
+| 분야 | 내용 |
+| --- | --- |
+| [현장 계측과 검증](현장계측과검증_measurement-validation/README.md) | 오실로스코프·DMM·SMU·로직 분석기의 연결과 설정, DMA·캐시·fault 추적, PVT 시험, 차량·설비 통신, SCPI 자동화 |
+| [설계와 검증 사례](설계와검증사례_engineering-cases/README.md) | FPGA 프레임 오류, 제조 AI의 미래 정보 참조, SQLite 갱신 충돌의 설계 선택·오류 대조·날짜별 실행 근거 |
+
+C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무 질문별 읽는 순서](현장계측과검증_measurement-validation/README.md#업무-질문에서-시작하기)로 찾아보실 수 있습니다.
+
 ## 학습 분야
 
 | 분야 | 내용 |
@@ -61,6 +70,8 @@ These notes connect circuits, semiconductors, RTL, firmware, systems software, G
 
 - Learning: [Engineering foundations](공학기초_foundations/README.md#english), [technical topics](분야_topics/README.md), [reading and argument reasoning](언어이해와추리논증_reading-reasoning/README.md), [foreign languages and technical English](외국어와기술영어_foreign-languages/README.md), [humanities](인문사회_humanities/README.md).
 - Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [product and technology reviews](제품리뷰_reviews/README.md), [AI model lab](AI모델실험_model-lab/README.md).
+- Practical work: [Measurement and debugging](현장계측과검증_measurement-validation/README.md), [engineering cases and dated checks](설계와검증사례_engineering-cases/README.md).
+
 - Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [672 Programmers solutions](programmers/README.md).
 - Background: [Research](연구_research/README.md), [author](소개_about/README.md), [contact](소개_about/연락_CONTACT.md), [tools](도구와환경_tools/README.md), [references](참고자료_references/README.md), [contributing](기여안내_contributing/README.md).
 
