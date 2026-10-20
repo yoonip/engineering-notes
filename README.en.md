@@ -24,10 +24,10 @@ I hope this repository will be more than a store of finished answers. One reader
 | [Technical topics](분야_topics/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
 | [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | Eleven actual CSAT/LEET items, choice-by-choice reasoning and original practice |
 | [Foreign languages and technical English](외국어와기술영어_foreign-languages/README.md) | Eight English foundation lessons with 64 exercises, study methods and technical reading |
-| [Humanities](인문사회_humanities/README.md) | [Seven philosophy concept chapters](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), economics, society and legal reading |
-| [Paper studies](논문해설_papers/README.md) | 201 Korean studies across computing, AI, electronics, life sciences, industry, philosophy of mind, free will and personal identity |
+| [Humanities](인문사회_humanities/README.md) | [Nine philosophy concept chapters](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), economics, society and legal reading |
+| [Paper studies](논문해설_papers/README.md) | 207 Korean studies across computing, AI, electronics, life sciences, industry, philosophy of mind, free will and personal identity |
 | [Technology landscape](기술동향_technology/README.md) | Dated analysis of benchmarks and technical developments |
-| [Product and technology reviews](제품리뷰_reviews/README.md) | 64 analyses of principles, competing technologies, evidence, supply chains, standards, business models and switching costs |
+| [Product and technology reviews](제품리뷰_reviews/README.md) | 66 analyses of principles, competing technologies, evidence, supply chains, standards, business models and switching costs |
 | [AI model lab](AI모델실험_model-lab/README.md) | Provider-specific analyses and executed CPU numerical experiments |
 | [Projects](프로젝트_projects/README.md) · [examples](예제_examples/README.md) | Implementations, execution steps and recorded checks |
 | [Programmers](programmers/README.md) | 672 accepted solutions, study notes and incomplete attempt analysis |
@@ -35,4 +35,4 @@ I hope this repository will be more than a store of finished answers. One reader
 
 [Tools and environments](도구와환경_tools/README.md) · [References](참고자료_references/README.md) · [Full subject index](분야별목차_CATALOG.md) · [Contributing](기여안내_contributing/README.md) · [한국어](README.md)
 
-[Philosophy concepts](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md) introduces reality, knowledge, ethics, mind, freedom and identity through worked cases. [Recent AI evidence and classical questions](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md) compares experiments and arguments while separating measured functions from claims about experience and identity.
+[Philosophy concepts](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md) introduces reality, knowledge, ethics, mind, freedom, identity, political legitimacy, and cultivation and action through worked cases. [Recent AI evidence and classical questions](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md) compares experiments and arguments while separating measured functions from claims about experience and identity.
