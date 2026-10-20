@@ -11,8 +11,10 @@
 | 에너지·물·환경 | [태양전지·전해질·담수화·탄소](논문해설_papers/에너지와환경_energy-environment/README.md) | [히트펌프·풍력·지열·물·저장](제품리뷰_reviews/에너지와물_energy-water/README.md) |
 | 통신·측정 | [안테나·오류정정·광섬유·시계·중력](논문해설_papers/통신과측정_communications-metrology/README.md) | [해저 통신·NTN·위치 추정·센서](제품리뷰_reviews/통신과센서_communications-sensing/README.md) |
 | 생명과학·진단 | [DNA·PCR·RNA·조직 모델](논문해설_papers/생명과학과진단_life-science-diagnostics/README.md) | [시퀀싱·현장 진단·mRNA·바이오 제조](제품리뷰_reviews/진단과바이오제조_diagnostics-biomanufacturing/README.md) |
-| 제조·데이터센터 | [광경화와 광학 신경망](논문해설_papers/제조와광학_manufacturing-photonics/README.md) | [3D 프린터·CPO·액체 냉각](제품리뷰_reviews/제조와인프라_manufacturing-infrastructure/README.md) |
+| 제조·데이터센터 | [광경화와 광학 신경망](논문해설_papers/제조와광학_manufacturing-photonics/README.md) | [3D 프린터·CPO·액체 냉각·배터리 재활용](제품리뷰_reviews/제조와인프라_manufacturing-infrastructure/README.md) |
 | 산업·표준·경쟁 | [기술 채택·보완재·호환성과 전환](논문해설_papers/산업과표준_industry-standards/README.md) | [NVIDIA 생태계와 경쟁 대안](제품리뷰_reviews/산업과기술경쟁_industry-competition/README.md) |
+| 유체·추진·냉각 | [비압축 유동과 압력 투영](논문해설_papers/유체와수치해석_fluids-numerical-methods/README.md) | [항공 터보팬의 추력과 정비](제품리뷰_reviews/우주와운송_space-transport/항공터보팬의추력과정비_turbofan-engines.md) |
+| 관측·시장·제도 | [관측과 개입](논문해설_papers/인과추론_causal-inference/README.md) · [품질 정보와 거래](논문해설_papers/시장과제도_markets-institutions/README.md) | [산업 생태계와 전환 비용](제품리뷰_reviews/산업과기술경쟁_industry-competition/README.md) |
 | 마음·의식·몸과 판단 | [AI·마음 철학](논문해설_papers/마음과인공지능철학_mind-ai-philosophy/README.md) · [호르몬과 행동](논문해설_papers/호르몬과행동_hormones-behaviour/README.md) | [행동·경험·생물학적 원인과 가치 판단](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI의마음과인간의판단_minds-bodies-and-judgment.md) |
 | 자유·책임·같은 사람의 지속 | [자유의지와 책임](논문해설_papers/자유의지와책임_free-will-responsibility/README.md) · [자아와 인격 동일성](논문해설_papers/자아와인격동일성_self-personal-identity/README.md) · [의도와 의사결정](논문해설_papers/의도와의사결정_intention-decision/README.md) | [입장별 비교와 AI·호르몬 사례](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/자유의지와인격동일성_free-will-and-personal-identity.md) |
 
