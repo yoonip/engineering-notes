@@ -1500,6 +1500,31 @@
       "summary_en": "Distinguishes Korean constitutional, statutory and subordinate legal sources and their effective dates, reading legal conditions and effects against the authoritative text.",
       "category_ko": "인문사회",
       "category_en": "Humanities and social sciences"
+    },
+    {
+      "number": 62,
+      "slug": "62-의공학의료AI_medical-engineering",
+      "title": "의공학과 의료 AI",
+      "english_title": "Biomedical Engineering and Medical AI",
+      "sections": [
+        "측정과 진단",
+        "보조공학과 임상 평가"
+      ],
+      "keywords": "Medical AI, MRI, OCT, Neuroprosthetics, Rehabilitation, Clinical Evidence, AI Drug Discovery",
+      "path": "분야_topics/62-의공학의료AI_medical-engineering/README.md",
+      "references": [
+        "https://www.nibib.nih.gov/science-education/science-topics/magnetic-resonance-imaging-mri",
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda",
+        "https://doi.org/10.1038/s41591-020-1034-x"
+      ],
+      "english_sections": [
+        "Sensing and diagnosis",
+        "Assistive technology and clinical evaluation"
+      ],
+      "summary_ko": "의공학은 몸의 신호를 측정하고 계산하며 의사소통·움직임·진단·치료에 연결합니다. 영상 복원과 판독, 보조 장치의 제어와 실제 과제, AI가 제안한 후보와 임상 결과를 각각의 분모와 비교 기준으로 읽습니다.",
+      "summary_en": "Biomedical engineering connects measured signals and computation to communication, movement, diagnosis and treatment. The studies distinguish reconstruction from diagnosis, device control from task performance, and AI-proposed candidates from clinical evidence.",
+      "category_ko": "의공학과 의료 AI",
+      "category_en": "Biomedical engineering and medical AI"
     }
   ],
   "providers": [

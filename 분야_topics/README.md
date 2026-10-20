@@ -98,6 +98,12 @@
 | Web·API·응용 프로그램 | [학습 내용과 해설](52-Web-API응용_web-api-applications/README.md) |
 | 모바일과 크로스플랫폼 | [학습 내용과 해설](53-모바일크로스플랫폼_mobile-crossplatform/README.md) |
 
+## 의공학과 의료 AI | Biomedical engineering and medical AI
+
+| 분야 | 연결 |
+|---|---|
+| 의공학과 의료 AI | [측정·진단·보조공학·임상 근거](62-의공학의료AI_medical-engineering/README.md) |
+
 ## 논문·코드·특허 읽기 | Reading papers, code and patents
 
 | 분야 | 연결 |

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "review_date": "2026-10-19",
+  "review_date": "2026-10-21",
   "articles": [
     {
       "number": 1,
@@ -464,6 +464,19 @@
         "https://research.ibm.com/blog/the-hardware-behind-analog-ai",
         "https://research.ibm.com/publications/demonstration-of-4-quadrant-analog-in-memory-matrix-multiplication-in-a-single-modulation",
         "https://www.nist.gov/programs-projects/hardware-accelerators-neural-networks"
+      ]
+    },
+    {
+      "number": 62,
+      "topic": "62-의공학의료AI_medical-engineering",
+      "topic_ko": "의공학과 의료 AI",
+      "topic_en": "Biomedical Engineering and Medical AI",
+      "path": "분야_topics/62-의공학의료AI_medical-engineering/해설_notes/측정에서진단과치료까지_medical-ai-evidence.md",
+      "title": "측정에서 진단과 치료까지",
+      "reference_urls": [
+        "https://www.nibib.nih.gov/science-education/science-topics/magnetic-resonance-imaging-mri",
+        "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda",
+        "https://doi.org/10.1038/s41591-020-1034-x"
       ]
     }
   ]

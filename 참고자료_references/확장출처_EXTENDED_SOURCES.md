@@ -1,6 +1,6 @@
 # 분야별 학습의 출처 | Technical topic sources
 
-해설 36편의 출처입니다. 자료 목록의 확인 기준일은 2026-10-19입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
+해설 37편의 출처입니다. 자료 목록의 확인 기준일은 2026-10-21입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
 
 [전체 참고 자료](README.md)
 
@@ -290,6 +290,14 @@
 - [research.ibm.com · demonstration-of-4-quadrant-analog-in-memory-matrix-multiplication-in-a-single-modulation](https://research.ibm.com/publications/demonstration-of-4-quadrant-analog-in-memory-matrix-multiplication-in-a-single-modulation)
 - [nist.gov · hardware-accelerators-neural-networks](https://www.nist.gov/programs-projects/hardware-accelerators-neural-networks)
 
+### 37. 측정에서 진단과 치료까지
+
+[해설 읽기](../분야_topics/62-의공학의료AI_medical-engineering/해설_notes/측정에서진단과치료까지_medical-ai-evidence.md)
+
+- [nibib.nih.gov · magnetic-resonance-imaging-mri](https://www.nibib.nih.gov/science-education/science-topics/magnetic-resonance-imaging-mri)
+- [fda.gov · statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda)
+- [doi.org · s41591-020-1034-x](https://doi.org/10.1038/s41591-020-1034-x)
+
 ## 데이터와 문서
 
 [JSON 원본](확장출처_EXTENDED_SOURCES.json)은 문서 경로와 출처 URL을 연결하는 데이터입니다. 출처 문서 생성과 경로 검사에서 사용합니다. 읽기용 목록은 이 Markdown 문서입니다.
@@ -298,4 +306,4 @@
 
 ## English
 
-This readable index lists the references for 36 articles. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.
+This readable index lists the references for 37 articles. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.
