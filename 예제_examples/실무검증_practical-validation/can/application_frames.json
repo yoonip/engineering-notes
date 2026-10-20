@@ -1,0 +1,29 @@
+{
+  "scope": "Invented Classical CAN application format; shared 32-bit millisecond clock",
+  "frames": [
+    {"name":"known_pattern", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":110, "now_ms":110, "data_hex":"01fe341264000000", "expected":"ACCEPT", "expected_mv":4660},
+    {"name":"wrong_id", "session":"main", "can_id":802, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":111, "now_ms":111, "data_hex":"01ff341265000000", "expected":"ID"},
+    {"name":"extended_alias", "session":"main", "can_id":801, "is_extended":true, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":112, "now_ms":112, "data_hex":"01ff341266000000", "expected":"ID_FORMAT"},
+    {"name":"remote_frame", "session":"main", "can_id":801, "is_extended":false, "is_remote":true, "is_fd":false, "is_error":false, "rx_ms":113, "now_ms":113, "data_hex":"01ff341267000000", "expected":"FRAME_TYPE"},
+    {"name":"fd_frame", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":true, "is_error":false, "rx_ms":114, "now_ms":114, "data_hex":"01ff341268000000", "expected":"FRAME_TYPE"},
+    {"name":"driver_error_event", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":true, "rx_ms":115, "now_ms":115, "data_hex":"01ff341269000000", "expected":"FRAME_TYPE"},
+    {"name":"short_payload", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":116, "now_ms":116, "data_hex":"01ff34126a0000", "expected":"LENGTH"},
+    {"name":"too_long_capture_record", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":117, "now_ms":117, "data_hex":"01ff34126b00000000", "expected":"LENGTH"},
+    {"name":"wrong_version", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":118, "now_ms":118, "data_hex":"02ff34126c000000", "expected":"VERSION"},
+    {"name":"sample_in_future", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":200, "now_ms":200, "data_hex":"01ff3412fa000000", "expected":"SAMPLE_CLOCK"},
+    {"name":"stale_sample", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":200, "now_ms":201, "data_hex":"01ff341264000000", "expected":"STALE"},
+    {"name":"next_sequence_255", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":210, "now_ms":210, "data_hex":"01ff3412c8000000", "expected":"ACCEPT", "expected_mv":4660},
+    {"name":"duplicate_255", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":211, "now_ms":211, "data_hex":"01ff3412c9000000", "expected":"DUPLICATE"},
+    {"name":"reordered_254", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":212, "now_ms":212, "data_hex":"01fe3412ca000000", "expected":"SEQUENCE"},
+    {"name":"gap_to_1", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":213, "now_ms":213, "data_hex":"01013412cb000000", "expected":"SEQUENCE"},
+    {"name":"wrap_to_0", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":230, "now_ms":230, "data_hex":"01003412dc000000", "expected":"ACCEPT", "expected_mv":4660},
+    {"name":"out_of_range", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":240, "now_ms":240, "data_hex":"0101e8fde6000000", "expected":"VALUE_RANGE"},
+    {"name":"queue_became_stale", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":250, "now_ms":341, "data_hex":"0101e40cf0000000", "expected":"STALE"},
+    {"name":"valid_3300_after_reject", "session":"main", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":350, "now_ms":350, "data_hex":"0101e40c54010000", "expected":"ACCEPT", "expected_mv":3300},
+    {"name":"age_exactly_100", "session":"age_boundary", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":199, "now_ms":200, "data_hex":"0100e40c64000000", "expected":"ACCEPT", "expected_mv":3300},
+    {"name":"age_101", "session":"age_boundary", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":200, "now_ms":201, "data_hex":"0101e40c64000000", "expected":"STALE"},
+    {"name":"millisecond_wrap", "session":"clock_wrap", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":1, "now_ms":3, "data_hex":"0100e40cfdffffff", "expected":"ACCEPT", "expected_mv":3300},
+    {"name":"capture_clock_in_future", "session":"clock_fault", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":401, "now_ms":400, "data_hex":"0100e40c86010000", "expected":"CAPTURE_CLOCK"},
+    {"name":"sample_after_capture", "session":"clock_order", "can_id":801, "is_extended":false, "is_remote":false, "is_fd":false, "is_error":false, "rx_ms":100, "now_ms":110, "data_hex":"0100e40c69000000", "expected":"SAMPLE_AFTER_CAPTURE"}
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "Synthetic observed controller events; not a CAN bit or error-counter simulator",
+  "cooldown_ms": 100,
+  "window_ms": 1000,
+  "max_requests_per_window": 2,
+  "events": [
+    {"time_ms": 0, "kind": "tx_queued", "expected": "LOG_QUEUED"},
+    {"time_ms": 1, "kind": "ack_error", "expected": "LOG_ACK_ERROR"},
+    {"time_ms": 2, "kind": "ack_error", "expected": "LOG_ACK_ERROR"},
+    {"time_ms": 30, "kind": "tx_complete", "expected": "LOG_TX_COMPLETE"},
+    {"time_ms": 40, "kind": "bus_off", "expected": "BLOCK_TX"},
+    {"time_ms": 41, "kind": "app_send", "expected": "DENY_TX"},
+    {"time_ms": 45, "kind": "bus_off", "expected": "BLOCK_TX"},
+    {"time_ms": 50, "kind": "tick", "expected": "WAIT_COOLDOWN"},
+    {"time_ms": 139, "kind": "tick", "expected": "WAIT_COOLDOWN"},
+    {"time_ms": 140, "kind": "tick", "expected": "REQUEST_RESTART"},
+    {"time_ms": 141, "kind": "app_send", "expected": "DENY_TX"},
+    {"time_ms": 142, "kind": "bus_off", "expected": "WAIT_ACTIVE"},
+    {"time_ms": 145, "kind": "tick", "expected": "WAIT_ACTIVE"},
+    {"time_ms": 150, "kind": "controller_active", "expected": "RESUME_TX"},
+    {"time_ms": 151, "kind": "app_send", "expected": "ALLOW_TX"},
+    {"time_ms": 200, "kind": "bus_off", "expected": "BLOCK_TX"},
+    {"time_ms": 300, "kind": "tick", "expected": "REQUEST_RESTART"},
+    {"time_ms": 310, "kind": "controller_active", "expected": "RESUME_TX"},
+    {"time_ms": 400, "kind": "bus_off", "expected": "BLOCK_TX"},
+    {"time_ms": 500, "kind": "tick", "expected": "HOLD_RATE_LIMIT"},
+    {"time_ms": 1139, "kind": "tick", "expected": "HOLD_RATE_LIMIT"},
+    {"time_ms": 1140, "kind": "tick", "expected": "REQUEST_RESTART"},
+    {"time_ms": 1141, "kind": "app_send", "expected": "DENY_TX"},
+    {"time_ms": 1150, "kind": "controller_active", "expected": "RESUME_TX"},
+    {"time_ms": 1151, "kind": "app_send", "expected": "ALLOW_TX"}
+  ]
+}
