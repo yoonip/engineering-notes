@@ -52,6 +52,12 @@ ST-AWFD 공정 이상 탐지 프로젝트에서 검토할 설계 문제는 ‘�
 
 [workbook_export.py](../프로젝트_projects/st-awfd-anomaly-triage/workbook_export.py)는 이미 작성된 CSV를 Excel로 정리하는 보조 단계입니다. 기존 [export 검사](../프로젝트_projects/st-awfd-anomaly-triage/tests/test_workbook_export.py)는 Node 없이 7개 시트를 만들고, 의존성 누락·쓰기 실패 때 `csv_only`와 CSV 보존을 확인합니다. 실제 권한을 바꾼 검사가 아니라 PermissionError를 주입한 검사입니다. 수율 입력이 빈 칸이면 빈 결과를 반환하도록 수식을 확인하며, 실측 수율이나 Excel의 수식 재계산 결과를 만든 검사는 아닙니다.
 
+## 모델 내부 검사와 배포·평가 검사를 연결합니다
+
+미래 입력을 차단해도 특성 순서나 전처리가 달라지면 배포 점수는 틀릴 수 있습니다. [별도 배포 재현](AI배포의전처리와특성순서_ai-preprocessing-contract.md)은 작은 선형 모델을 실제 학습해 열 순서 오류로 2/4 판정, scaler 누락으로 1/4 판정이 바뀌는 결과를 기록합니다. 이 Transformer의 장애를 발견했다는 뜻이 아니라, 모델 구조 밖에도 검사할 계약이 있음을 보여 주는 독립 예제입니다.
+
+평가 집합의 독립성도 다른 검사입니다. [group 분할 재현](생산묶음단위분할과평가누출_ai-group-evaluation.md)은 같은 묶음의 지문이 섞인 행 분할에서 80/80, 새 group만 남긴 분할에서 16/80을 관측했습니다. 동일한 합성 모형·한 seed의 결과이며 실제 제조 정확도가 아닙니다. 인과 마스크 검사, 저장 입력 계약, group 분리, 학습 통계의 고정이 각각 무엇을 막는지 구분해서 확인합니다.
+
 ## 재현 명령과 결과 보존
 
 이번 환경은 Windows 11, Python 3.12.14, PyTorch 2.10.0+cpu이며 CPU thread는 1개입니다. 기존 unittest 9개가 통과했습니다. 원본·오류 대조와 저장 추론 검사는 별도 probe로 실행했습니다. 프로젝트 소스·기존 요약 20개 파일의 실행 전후 SHA-256 차이는 0개였습니다.
