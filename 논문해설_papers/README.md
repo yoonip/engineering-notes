@@ -1,6 +1,6 @@
 # 논문 해설 | Paper studies
 
-계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명과학·에너지·통신·제조·우주 탐사와 산업·사회·마음 철학·자유의지·인격 동일성과 호르몬 연구까지 논문 207편을 한국어로 읽습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
+계산 이론·정보·전자소자·컴퓨터 시스템·AI부터 뇌신경·생명과학·에너지·통신·제조·우주 탐사와 산업·사회·마음 철학·자유의지·인격 동일성과 호르몬 연구까지 논문 210편을 한국어로 읽습니다. 처음 등장하는 전문 용어의 뜻과 뉘앙스를 풀고, 작은 숫자나 직접 만든 사례로 방법을 따라갑니다. 원 논문이 제시한 근거와 이 저장소의 예제·계산은 본문에서 구분합니다.
 
 ## 분야별 목록
 
@@ -32,8 +32,11 @@
 | [사회과학의 현장 자료와 실험](사회과학의실험_social-science-experiments/README.md) | 7 | 노동·교육·설득·현금 지급·주거·기후·접종의 설계와 분모 |
 | [개인정보보호](개인정보보호_privacy/README.md) | 1 | 차등정보보호·민감도·잡음과 반복 공개 |
 | [제어와 최적화](제어와최적화_control-optimization/README.md) | 1 | 안전 집합·제어 장벽 함수·이차계획과 입력 한계 |
+| [유체와 수치해석](유체와수치해석_fluids-numerical-methods/README.md) | 1 | 압력 투영·비압축 제약·격자와 시간 간격 |
+| [인과추론](인과추론_causal-inference/README.md) | 1 | 관측과 개입·뒷문과 앞문·공통 결과를 고르는 문제 |
+| [시장의 정보와 제도](시장과제도_markets-institutions/README.md) | 1 | 품질의 정보 비대칭·역선택·보증과 인증 비용 |
 
-각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 207편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
+각 분야 목록의 모든 논문은 별도의 본문으로 연결됩니다. 관련 모델 카드와 외부 자료는 논문 210편 수에 더하지 않았습니다. 같은 연구의 사전논문과 심사 후 논문도 두 편으로 중복 계산하지 않습니다.
 
 ## 처음 읽으실 때
 
@@ -125,13 +128,17 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 [의도·의사결정 3편](의도와의사결정_intention-decision/README.md)은 Libet의 시간 보고, Schurger의 누적 모형, Maoz의 임의·숙고 선택 비교를 읽습니다. [입장별 주장·근거·반론 비교](../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/자유의지와인격동일성_free-will-and-personal-identity.md)에서는 AI의 의식·복제와 호르몬에 따른 판단 변화로 연결할 때 필요한 전제를 밝힙니다. 실험 결과가 철학적 입장 하나를 바로 확정한다는 방식으로 설명하지 않습니다.
 
+## 유체 계산과 관측 자료·시장 모형
+
+[유체 수치해석](유체와수치해석_fluids-numerical-methods/README.md)은 압력으로 속도의 순유출을 바로잡는 계산과 시간 간격의 한계를 다룹니다. [인과추론](인과추론_causal-inference/README.md)은 관측된 비율과 개입 효과의 차이를, [시장의 정보와 제도](시장과제도_markets-institutions/README.md)는 가격이 참여자 구성을 바꾸는 과정을 계산합니다. 물리 모형·인과 가정·경제적 유인이라는 서로 다른 전제를 확인하며 읽으실 수 있습니다.
+
 ## 논문을 선정한 기준
 
 AI의 행동과 마음의 관계는 [주요 논문 6편과 최근 내부 기능 연구 3편](마음과인공지능철학_mind-ai-philosophy/README.md)에서 입장과 반론을 따라갑니다. [호르몬·행동 논문 6편](호르몬과행동_hormones-behaviour/README.md)은 몸의 상태와 식욕·주의·사회적 과제를 연결합니다. 동물·세포 모형, 인간의 개입 시험, 관찰과 검토 논문을 구분하며 집단의 평균 효과를 모든 개인의 결정이나 존재의 가치로 일반화하지 않습니다. 두 분야를 연결하는 [논증 연습](../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI의마음과인간의판단_minds-bodies-and-judgment.md)도 있습니다.
 
 후속 연구에서 다시 사용한 개념, 공개 교육과정에서 다루는 내용, 실제 시스템 설계로 이어진 영향을 기준으로 읽을 논문을 골랐습니다. 예를 들어 [Stanford CS231n 2025 강의 일정](https://cs231n.stanford.edu/2025/schedule.html)은 역전파·AlexNet·ResNet·BatchNorm·attention을 연결하고, [MIT 분산 시스템의 논문 질문](https://pdos.csail.mit.edu/6.824/questions.html)은 GFS와 MapReduce 등의 설계 조건을 검토합니다. 개별 글에서는 해당 논문의 원문과 확인 가능한 후속 논문·명세를 연결합니다.
 
-발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 207편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
+발표 시점과 사전 공개 시점이 다른 글은 두 연도를 함께 적었습니다. 인용 횟수는 집계 시점과 데이터베이스에 따라 달라지므로 여기의 배열을 인용 순위로 읽지는 않습니다. 2026-10-20에 확인한 이 210편은 여러 분야의 출발점과 최근 연구를 연결하기 위한 선정 범위입니다. 세계의 중요 논문 전체를 빠짐없이 모았다는 목록은 아닙니다. 소속 기관의 명성도 결과의 정확성이나 미래 영향력을 보장하지는 않습니다.
 
 ## 모델별 분석과 재현 사례
 
@@ -145,4 +152,4 @@ AI의 행동과 마음의 관계는 [주요 논문 6편과 최근 내부 기능 
 
 ## English
 
-The 207 distinct papers cover computing, AI, electronics, neuroscience, medicine, materials, space, energy, communications, diagnostics, manufacturing and economic theories of technology adoption, philosophy of mind, free will, personal identity, intention and hormonal influences on behaviour, as well as privacy, safety control, housing, climate attitudes and public health. Preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
+The 210 distinct papers cover computing, AI, electronics, neuroscience, medicine, materials, space, energy, communications, diagnostics, manufacturing and economic theories of technology adoption, philosophy of mind, free will, personal identity, intention and hormonal influences on behaviour, as well as privacy, safety control, housing, climate attitudes and public health. Studies of fluid simulation, causal identification and information asymmetry connect physical constraints, causal assumptions and market participation. Preprints and later publications of the same work are counted once. Korean studies explain terminology, mechanisms, worked examples, evidence and limitations, with self-check questions. Original claims and locally constructed calculations are identified separately. Publication and preprint dates are distinguished; the sequence is a reading selection rather than a citation ranking.
