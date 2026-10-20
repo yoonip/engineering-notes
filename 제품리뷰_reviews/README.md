@@ -1,6 +1,6 @@
 # 제품과 기술 리뷰 | Product and technology reviews
 
-반도체·AI·로봇·우주·의료에서 에너지·물·통신·진단·제조·보안·전력망·농업·식품과 산업 경쟁까지 66편으로 읽습니다. 무엇을 하는 제품인지부터 원리, 가능해진 배경, 경쟁 방식, 실제 시험과 남은 제약까지 설명합니다. 표준·공급망·서비스·사업 모델과 도입·전환 비용도 함께 살펴봅니다. 각 글에 기초 용어, 직접 따라갈 계산과 확인 문제 세 개를 넣었습니다. 자료 확인일은 2026-10-20이며 개별 시험의 실시일·제품 판은 본문에 따로 표시합니다.
+반도체·AI·로봇·우주·의료에서 에너지·물·통신·진단·제조·보안·전력망·농업·식품과 산업 경쟁까지 68편으로 읽습니다. 무엇을 하는 제품인지부터 원리, 가능해진 배경, 경쟁 방식, 실제 시험과 남은 제약까지 설명합니다. 표준·공급망·서비스·사업 모델과 도입·전환 비용도 함께 살펴봅니다. 각 글에 기초 용어, 직접 따라갈 계산과 확인 문제 세 개를 넣었습니다. 자료 확인일은 2026-10-20이며 개별 시험의 실시일·제품 판은 본문에 따로 표시합니다.
 
 ## 분야별 목록
 
@@ -9,13 +9,13 @@
 | [반도체와 산업 컴퓨팅](반도체와산업컴퓨팅_chips-industrial/README.md) | 10 | HBM, ASML, GPU, GAA·후면 전력, 칩렛, CXL, SSD, SoC, 자동화 공장, 디지털트윈 |
 | [기기와 모빌리티](기기와모빌리티_devices-mobility/README.md) | 10 | 폴더블, OLED·microLED, XR, 전자종이, Wi-Fi 7, Thunderbolt·USB4, 배터리, F1, 수술 로봇, 광자계수 CT |
 | [AI와 로봇](AI와로봇_ai-robotics/README.md) | 10 | ChatGPT·Claude, Gemini, 기기 내 AI, DLSS·FSR·XeSS, FSD·Waymo, Optimus, Atlas, Spot, BCI, 양자컴퓨터 |
-| [우주와 운송](우주와운송_space-transport/README.md) | 4 | Falcon 9, Starship, Starlink, Roadster의 추진·열·통신·제어 |
+| [우주와 운송](우주와운송_space-transport/README.md) | 5 | Falcon 9, Starship, Starlink, Roadster와 항공 터보팬의 추진·통신·운용 |
 | [방산 전자](방산전자_defense-electronics/README.md) | 2 | AESA·GaN 레이더, Iron Beam·DragonFire의 광학·전력·운용 조건 |
 | [의약품과 생명공학](의약품과생명공학_biomedical/README.md) | 3 | 위고비·마운자로와 후속 약물, 카스게비의 유전자 편집, CAR-T의 세포치료 |
 | [에너지와 물](에너지와물_energy-water/README.md) | 7 | 히트펌프, 해상풍력, 차세대 지열, 담수화, 장주기 저장, 수소 전해조, 소형원자로 |
 | [통신과 센서](통신과센서_communications-sensing/README.md) | 5 | 해저 광통신, 5G Advanced·NTN, 라이다·레이더, GNSS와 대안, 양자 센서 |
 | [진단과 바이오 제조](진단과바이오제조_diagnostics-biomanufacturing/README.md) | 5 | 시퀀싱, 현장 진단, mRNA·LNP, 장기 모델, 연속 제조 |
-| [제조와 인프라](제조와인프라_manufacturing-infrastructure/README.md) | 3 | 3D 프린터의 양산, CPO 광통신, 데이터센터 액체 냉각 |
+| [제조와 인프라](제조와인프라_manufacturing-infrastructure/README.md) | 4 | 3D 프린터의 양산, CPO 광통신, 데이터센터 액체 냉각, 배터리 재활용 |
 | [산업과 기술 경쟁](산업과기술경쟁_industry-competition/README.md) | 1 | NVIDIA 생태계와 AMD·자체 AI 칩의 대응, 표준과 전환 비용 |
 | [보안과 디지털 신원](보안과신원_security-identity/README.md) | 2 | 패스키의 로그인·복구, 양자내성 TLS의 키 합의와 인증 |
 | [전력망과 분산 에너지](전력망과분산에너지_grid-distributed-energy/README.md) | 2 | Powerwall VPP의 추가 공급·정산, GFM 인버터의 전압·주파수 응답 |
@@ -30,6 +30,10 @@
 ## 수소 생산량과 원자로의 발전 조건
 
 [수소 전해조](에너지와물_energy-water/수소전해조의전력과생산량_hydrogen-electrolysers.md)는 전극 반응·막·전력 조절과 생산량을 연결하고, 이미 운영한 설비와 후속 공사의 목표를 나눕니다. [소형모듈원자로](에너지와물_energy-water/소형원자로의냉각과건설_small-modular-reactors.md)는 냉각·연쇄반응·건설·운영의 차이를 경쟁 방식과 비교합니다. [핵융합 논문](../논문해설_papers/에너지와환경_energy-environment/핵융합점화와에너지이득_nif-target-gain2024.md)에서는 점화·표적 이득·시설 전체 에너지를 별도로 계산하실 수 있습니다.
+
+## 항공 추진과 자원 회수의 공정 경계
+
+[항공 터보팬](우주와운송_space-transport/항공터보팬의추력과정비_turbofan-engines.md)은 팬·압축기·터빈의 역할과 운동량 추력, 인증과 반복 정비를 연결합니다. [배터리 재활용](제조와인프라_manufacturing-infrastructure/배터리재활용의분리와회수_battery-recycling.md)은 팩 처리·분리·금속 회수·재료 재사용의 단계를 나누어 읽습니다. 실험에서 가능한 공정, 공개된 설비 능력, 실제 운영 성과는 서로 다른 근거입니다.
 
 ## 궁금한 질문에서 시작하기
 
@@ -54,7 +58,7 @@
 
 수치에는 버전·시험 시점·장치·작업·설정·분모를 붙입니다. 최고 사양, 특정 조건의 시험 결과, 제조사 전망, 자체 계산을 서로 바꾸어 쓰지 않습니다. 예약·시제품 시연·판매·고객 인도·실제 운용도 구별합니다. 영상은 본문에서 확인한 범위를 밝히며 설명문만 읽고 장면 전체를 분석했다고 적지 않습니다.
 
-이 66편은 공개 자료를 읽은 기술·산업 리뷰입니다. 직접 제품을 구매·운전·측정한 실험과는 다릅니다. 공개된 비교 자료가 부족한 제품은 그 부분을 명시하며 상상한 순위를 만들지 않습니다. 아래 SQLite 실습과 모델 평가 글 2개는 이 66편과 별도로 셉니다.
+이 68편은 공개 자료를 읽은 기술·산업 리뷰입니다. 직접 제품을 구매·운전·측정한 실험과는 다릅니다. 공개된 비교 자료가 부족한 제품은 그 부분을 명시하며 상상한 순위를 만들지 않습니다. 아래 SQLite 실습과 모델 평가 글 2개는 이 68편과 별도로 셉니다.
 
 ## 함께 읽을 실습과 평가
 
@@ -66,4 +70,4 @@
 
 ## English
 
-Sixty-six Korean reviews cover products, competing technologies and industrial ecosystems across computing, energy, communications, diagnostics, manufacturing and other fields. Each pairs principles with evidence, worked calculations and three questions. Standards, supply chains, business models and switching costs explain adoption alongside technical performance. Manufacturer documentation is cross-checked against research, original measurements and field reporting where available. Targets and actual operation are distinguished. These are literature reviews; the SQLite experiment and model-evaluation note are listed separately from the 66 reviews.
+Sixty-eight Korean reviews cover products, competing technologies and industrial ecosystems across computing, energy, communications, diagnostics, manufacturing and other fields. Each pairs principles with evidence, worked calculations and three questions. Standards, supply chains, business models and switching costs explain adoption alongside technical performance. Manufacturer documentation is cross-checked against research, original measurements and field reporting where available. Targets and actual operation are distinguished. These are literature reviews; the SQLite experiment and model-evaluation note are listed separately from the 68 reviews.
