@@ -21,4 +21,6 @@ Philosophy examines justification and value judgments; economics examines choice
 
 ## 철학 개념을 먼저 읽기
 
-[기본 개념 다섯 장](58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)은 질문과 시대, 실재와 원인, 지식과 근거, 윤리와 정의, 마음·자유·동일성을 다룹니다. 각 장은 자체 사례와 입장별 이유·반론, 확인 문제로 구성합니다. [최근 AI 연구 비교](58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)는 선별한 실험과 고전 논증을 연결합니다.
+[기본 개념 일곱 장](58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)은 질문과 시대, 실재와 원인, 지식과 근거, 윤리와 정의, 마음·자유·동일성, 언어의 의미와 사용, 과학의 설명과 검증을 다룹니다. 각 장은 자체 사례와 입장별 이유·반론, 확인 문제로 구성합니다. [최근 AI 연구 비교](58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)는 선별한 실험과 고전 논증을 연결합니다.
+
+[사회과학의 현장 자료와 실험](../논문해설_papers/사회과학의실험_social-science-experiments/README.md)은 노동·교육·설득·현금 지급의 원자료와 설계를 읽습니다. [사회를 자료로 읽기](60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md)에서 차이의 차이와 배정 단위를 계산하실 수 있습니다.
