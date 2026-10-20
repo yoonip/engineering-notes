@@ -4,7 +4,7 @@
 
 [전체 분야](../../분야별목차_CATALOG.md) · [언어이해·추리논증의 개념과 판단](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
 
-## 처음 읽는 일곱 장
+## 처음 읽는 아홉 장
 
 | 본문 | 읽을 내용 |
 |---|---|
@@ -15,6 +15,8 @@
 | [마음·자유·동일성](개념_concepts/마음자유동일성_mind-freedom-identity.md) | 경험·기능·몸, 행동의 통제와 같은 사람의 지속을 구분합니다. |
 | [언어의 의미와 사용](개념_concepts/언어의의미와사용_meaning-and-use.md) | 맥락과 함축, 약속·주장·인용의 차이를 대화로 연습합니다. |
 | [과학의 설명과 검증](개념_concepts/과학의설명과검증_explanation-and-testing.md) | 센서·공장·검사기를 통해 예측·반증·보조 가정을 비교합니다. |
+| [권력과 정당성](개념_concepts/권력과정당성_power-and-legitimacy.md) | 동의·협력·민주적 절차와 비지배 자유를 예약 제도로 비교합니다. |
+| [수양과 자연스러운 행동](개념_concepts/수양과자연스러운행동_cultivation-and-action.md) | 인·의·예, 도덕적 싹, 무위·자연과 관점의 한계를 팀 활동에 적용합니다. |
 
 [개념 학습 목차](개념_concepts/README.md)에는 한 사례를 여러 분야의 질문으로 나누는 연습도 있습니다. 장 끝의 확인 문제를 먼저 풀고 접힌 해설을 열어 보시면 됩니다. 용어 이름보다 무엇을 구분하려는 개념인지 자기 말로 설명해 보시는 편이 좋습니다.
 
@@ -38,7 +40,7 @@
 
 ## English
 
-The seven concept chapters introduce philosophical questions and periods, reality and causation, knowledge and justification, ethics and justice, mind, freedom and identity, meaning and language use, and scientific explanation and testing. Each uses concrete cases, competing reasons, objections and self-check questions. Established terminology is distinguished from agreement on every philosophical conclusion.
+The nine concept chapters introduce philosophical questions and periods, reality and causation, knowledge and justification, ethics and justice, mind, freedom and identity, meaning and language use, scientific explanation and testing, political legitimacy, and cultivation and action in early Chinese philosophy. Each uses concrete cases, competing reasons, objections and self-check questions. Established terminology is distinguished from agreement on every philosophical conclusion.
 
 The reading path starts with concepts, then moves to argument analysis and evidence. Selected classic papers and recent AI studies support specific questions. Behaviour, internal function, subjective experience, causal control, numerical identity and moral status remain distinct claims whose connections require arguments.
 
