@@ -8,7 +8,7 @@ A guide to what each tool does and where its related notes are kept.
 
 ## 계측 장비와 시험 자동화
 
-[계측기별 사용 절차](../현장계측과검증_measurement-validation/계측기_instruments/README.md)는 DSOX1204G 오실로스코프, 34461A DMM, 2450 SMU, Logic Pro 8의 특성과 설정을 다룹니다. [SCPI·PyVISA와 결과 기록](../현장계측과검증_measurement-validation/계측자동화_instrument-automation/명령응답과시험결과기록_scpi-pyvisa-automation.md)은 기존 전송 코드와 모의 검사를 바탕으로 명령·상태·유효성·판정·정리를 설명합니다.
+[계측기별 사용 절차](../현장계측과검증_measurement-validation/계측기_instruments/README.md)는 DSOX1204G, 34461A, 2450, Logic Pro 8, E36312A·DL3021, E4980AL, FPC1500, E5061B의 특성과 설정을 다룹니다. [SCPI·PyVISA와 결과 기록](../현장계측과검증_measurement-validation/계측자동화_instrument-automation/명령응답과시험결과기록_scpi-pyvisa-automation.md)은 기존 전송 코드와 모의 검사를 바탕으로 명령·상태·유효성·판정·정리를 설명합니다.
 
 ## 역할별 설명
 

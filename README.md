@@ -6,8 +6,8 @@
 
 | 분야 | 내용 |
 | --- | --- |
-| [현장 계측과 검증](현장계측과검증_measurement-validation/README.md) | 오실로스코프·DMM·SMU·로직 분석기의 연결과 설정, DMA·캐시·fault 추적, PVT 시험, 차량·설비 통신, SCPI 자동화 |
-| [설계와 검증 사례](설계와검증사례_engineering-cases/README.md) | FPGA 프레임 오류, 제조 AI의 미래 정보 참조, SQLite 갱신 충돌의 설계 선택·오류 대조·날짜별 실행 근거 |
+| [현장 계측과 검증](현장계측과검증_measurement-validation/README.md) | 오실로스코프·DMM·SMU·로직 분석기·전원/전자부하·LCR·스펙트럼·네트워크 분석기, DMA·고장 추적·PVT·통신·자동화 |
+| [설계와 검증 사례](설계와검증사례_engineering-cases/README.md) | C/C++·펌웨어·칩·AI·데이터의 10개 사례: 실제 코드, 오류 재현, 원인·해결과 날짜별 검증 기록 |
 
 C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무 질문별 읽는 순서](현장계측과검증_measurement-validation/README.md#업무-질문에서-시작하기)로 찾아보실 수 있습니다.
 

@@ -20,8 +20,8 @@ I hope this repository will be more than a store of finished answers. One reader
 
 | Section | Coverage |
 | --- | --- |
-| [Measurement, debugging and validation](현장계측과검증_measurement-validation/README.md) | Four named instruments, DMA/cache, fault tracing, PVT, industrial communications and SCPI automation |
-| [Engineering decisions and checks](설계와검증사례_engineering-cases/README.md) | FPGA frame faults, causal manufacturing AI and SQLite conflicts with dated execution evidence |
+| [Measurement, debugging and validation](현장계측과검증_measurement-validation/README.md) | Nine instrument models, DMA/cache, fault tracing, PVT, industrial communications and SCPI automation |
+| [Engineering decisions and checks](설계와검증사례_engineering-cases/README.md) | Ten C/C++, firmware, chip, AI and data cases with runnable faults, fixes and dated execution evidence |
 | [Engineering foundations](공학기초_foundations/README.md) | Foundational and advanced derivations, calculations and checks |
 | [Technical topics](분야_topics/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
 | [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | Eleven actual CSAT/LEET items, choice-by-choice reasoning and original practice |

@@ -10,6 +10,10 @@
 | [Keysight 34461A 정밀 멀티미터](계측기_instruments/정밀전압과낮은저항측정_keysight-34461a.md) | 범위와 정확도, 적분 시간·예열, 2선·4선 저항 측정과 오차 계산 |
 | [Keithley 2450 SMU](계측기_instruments/전압전류인가와소자특성측정_keithley-2450.md) | 전압·전류 인가와 측정, compliance, local·remote sense, 소자 I–V의 해석 |
 | [Saleae Logic Pro 8 로직 분석기](계측기_instruments/디지털타이밍과통신해석_saleae-logic-pro8.md) | 임계값과 디지털 샘플링, UART·I²C 해석, 파형과 디코더의 판단 차이 |
+| [Keysight E36312A 전원·Rigol DL3021 전자부하](계측기_instruments/전원과전자부하의전압전류제어_keysight-e36312a-rigol-dl3021.md) | CV·CC·OCP, remote sense, 부하 slew와 전원 과도 응답 |
+| [Keysight E4980AL LCR 미터](계측기_instruments/주파수에따른소자특성측정_keysight-e4980al.md) | 시험 주파수·레벨, 직렬·병렬 등가회로, 4TP와 치구 보정 |
+| [R&S FPC1500 스펙트럼 분석기](계측기_instruments/스펙트럼의대역폭과입력레벨_rohde-schwarz-fpc1500.md) | RBW·VBW, 입력 감쇠·전치증폭기, 잡음바닥과 내부 고조파 |
+| [Keysight E5061B 네트워크 분석기](계측기_instruments/반사와전달의기준면측정_keysight-e5061b.md) | S11·S21, SOLT 교정·기준면, 케이블 손실·위상과 port extension |
 
 ## 펌웨어·칩·설비의 오류 분리
 
@@ -20,6 +24,20 @@
 | [PVT·shmoo와 칩 시험](칩과시스템시험_chip-system-testing/조건별오동작과수율의경계_pvt-shmoo-characterization.md) | 온도·전압·주파수 조건, characterization·validation·양산 검사의 차이, 판정 여유와 분모 |
 | [CAN·EtherCAT·Modbus의 고장 분리](칩과시스템시험_chip-system-testing/차량과설비통신의고장분리_can-ethercat-modbus.md) | 배선·링크·프로토콜·응용 상태의 구분, 타임아웃·재시도·레지스터 해석 |
 | [SCPI·PyVISA와 시험 결과 기록](계측자동화_instrument-automation/명령응답과시험결과기록_scpi-pyvisa-automation.md) | 식별·명령·응답·상태·유효성·판정·정리, 실제 코드의 mock 검사와 합성 전력 계산 |
+
+## 오류를 코드로 재현하기
+
+[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 칩·AI 예제는 Python 모형과 합성 자료입니다.
+
+| 재현하는 문제 | 원인과 해결 | 본문 |
+| --- | --- | --- |
+| 4바이트만 받아도 거대한 프레임을 승인합니다. | 32비트로 좁힌 길이와 실제 공간을 구분하고 곱셈 전에 상한을 검사합니다. | [C 프레임 검사](../설계와검증사례_engineering-cases/이진프레임의길이와바이트순서_c-frame-bounds.md) |
+| 큐에 보관한 READY가 ERROR로 바뀝니다. | 빌린 뷰·소유 복사·길이 전달·재할당 핸들을 구분합니다. | [C++ 수신 버퍼](../설계와검증사례_engineering-cases/수신버퍼의소유권과뷰수명_cpp-view-ownership.md) |
+| 데이터가 있다고 표시됐는데 옛값을 읽습니다. | 기록 후 공개, 생산자·소비자 소유 필드, release·acquire를 비교합니다. | [링버퍼의 공개 순서](../설계와검증사례_engineering-cases/링버퍼의공개순서와공유카운터_ring-publication.md) |
+| 같은 NPU 입력에서 출력이 다릅니다. | 주소식·입력 복사본·누산 폭을 한 조건씩 바꿉니다. | [칩 산술의 계약](../설계와검증사례_engineering-cases/칩산술의레이아웃과누산폭_chip-arithmetic-contract.md) |
+| 결과 CSV가 완벽히 일치하지만 제품이 다릅니다. | 행 번호 대신 제품 ID·시험 조건을 검증하고 같은 ID로 연결합니다. | [시험 자료와 오판율](../설계와검증사례_engineering-cases/시험데이터의식별자와오판율_test-data-identity-metrics.md) |
+| 모델이 정상 응답하지만 판정이 바뀝니다. | 열 이름·단위·저장 scaler·모델 상태를 같은 계약으로 묶습니다. | [AI 배포 전처리](../설계와검증사례_engineering-cases/AI배포의전처리와특성순서_ai-preprocessing-contract.md) |
+| 평가 100%를 새 생산 묶음에서도 기대합니다. | 공유 group을 거절하고 평가 질문에 맞게 분할합니다. | [AI group 분리](../설계와검증사례_engineering-cases/생산묶음단위분할과평가누출_ai-group-evaluation.md) |
 
 ## 업무 질문에서 시작하기
 
@@ -45,4 +63,4 @@
 
 ## English
 
-This collection covers four named instruments, Cortex-M firmware debugging, silicon characterization, industrial communications and SCPI automation. Each note connects preparation, configuration, observation, interpretation and record keeping. Reading routes lead to existing C/C++, firmware, architecture, RTL, AI and Python implementations. Manufacturer specifications, constructed examples, local software checks and physical measurements are identified separately.
+This collection covers nine named instruments in eight notes, Cortex-M firmware debugging, silicon characterization, industrial communications and SCPI automation. Each note connects preparation, configuration, observation, interpretation and record keeping. Reading routes lead to existing C/C++, firmware, architecture, RTL, AI and Python implementations. Manufacturer specifications, constructed examples, local software checks and physical measurements are identified separately.

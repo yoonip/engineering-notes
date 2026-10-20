@@ -26,6 +26,10 @@ g++ -std=c++17 -Wall -Wextra -Wpedantic mean.cpp -o mean_cpp
 
 Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)에 묶었습니다. 자동미분 파일은 각각 PyTorch 또는 TensorFlow가 필요합니다. Scalar 미분 예제에는 GPU가 필요하지 않습니다. Framework 설치는 [Python & Jupyter](../분야_topics/03-python-jupyter/README.md)의 참고 자료와 [PyTorch](https://pytorch.org/get-started/locally/)·[TensorFlow](https://www.tensorflow.org/install) 설치 문서에서 환경별로 다룹니다.
 
+## 실무 오류 재현
+
+[C/C++·펌웨어·칩·AI 검증 코드](실무검증_practical-validation/README.md)는 프레임 길이, 소유권·공개 순서, 산술 폭·시험 ID, 배포 전처리·group 평가의 잘못된 조건과 해결한 조건을 실행합니다. [설계 사례](../설계와검증사례_engineering-cases/README.md)에서 원인·입력·검증 결과를 함께 읽으실 수 있습니다.
+
 ## 분야별 참조 모델과 통합 검사
 
 [분야별 계산 예제](확장기초_extended/README.md)에서는 타이밍·전력·통신·테스트를 포함한 하드웨어, OS·도구·디버깅·로봇 제어를 포함한 시스템, GPU·데이터베이스·분산 시스템·AI·수치해석을 계산하고 검증합니다. 추론 모델까지 포함한 전체 검사는 저장소 루트에서 실행합니다.
