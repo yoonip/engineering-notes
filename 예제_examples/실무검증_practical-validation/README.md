@@ -7,6 +7,9 @@
 | C·C++·펌웨어 | [native_firmware](native_firmware/README.md): C11·C++17 세 프로그램과 빌드 러너 | 프레임 길이 16,496조합, 뷰·소유 복사, 여섯 공개 순서, SPSC 순차 wrap 검사 |
 | 칩·시험 데이터 | [chip](chip/README.md): 표준 라이브러리 Python 실행기 | 레이아웃·누산 폭·명시적 wrap, 제품 ID 연결과 오판율, 분리된 통과 구간 |
 | AI 학습·배포·평가 | [ai](ai/README.md): 작은 합성 모델 두 실행기 | 특성 순서·저장 scaler·입력 거부, 행/group 분할과 평가 정보 유입 |
+| RTOS 동시성 | [rtos](rtos/README.md): 결정적 태스크·알림 모델 | 우선순위 상속·마감시간, 검사/대기 사이의 resume 유실과 누적 알림 |
+| CAN 장애·수신 계약 | [can](can/README.md): 합성 컨트롤러·프레임 trace 실행기 | 복구 요청/확인/횟수 제한, ID·길이·순번·나이와 상태 갱신 |
+| 칩 시험 자동화 | [chip_automation](chip_automation/README.md): 실제 자식프로그램과 판정 러너 | 종료0·PASS 문자열의 거짓 승인, timeout·오래된 결과·해시·누락·수치 오류 |
 
 [설계와 검증 사례](../../설계와검증사례_engineering-cases/README.md)에서 원인과 해결을 읽고, [현장 계측과 검증](../../현장계측과검증_measurement-validation/README.md)에서 장비·펌웨어·칩 시험 조건으로 연결합니다.
 
@@ -16,4 +19,4 @@
 
 ## English
 
-Three sets of runnable examples connect deliberately faulty controls with intended fixes: native frame/ownership/publication contracts, chip arithmetic/test-data analysis, and AI serving/group evaluation. New output directories preserve earlier failures. Software models and host checks are explicitly separated from physical measurements.
+Six sets of runnable examples compare faulty controls and intended fixes: native frame/ownership/publication contracts, chip arithmetic/test-data analysis, AI serving/group evaluation, RTOS concurrency, CAN diagnostics, and subprocess-based chip-test automation. New output directories preserve earlier failures. Deterministic scheduling and controller traces are models; automation workers are actual host child processes. These scopes are separated from physical measurements.

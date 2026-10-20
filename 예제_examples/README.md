@@ -28,7 +28,7 @@ Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)�
 
 ## 실무 오류 재현
 
-[C/C++·펌웨어·칩·AI 검증 코드](실무검증_practical-validation/README.md)는 프레임 길이, 소유권·공개 순서, 산술 폭·시험 ID, 배포 전처리·group 평가의 잘못된 조건과 해결한 조건을 실행합니다. [설계 사례](../설계와검증사례_engineering-cases/README.md)에서 원인·입력·검증 결과를 함께 읽으실 수 있습니다.
+[C/C++·펌웨어·칩·AI 검증 코드](실무검증_practical-validation/README.md)는 프레임 길이, 소유권·공개 순서, RTOS 동시성, CAN 복구·수신, 산술 폭·시험 ID·자식프로그램 판정, 배포 전처리·group 평가의 잘못된 조건과 해결한 조건을 실행합니다. [설계 사례](../설계와검증사례_engineering-cases/README.md)에서 원인·입력·검증 결과를 함께 읽으실 수 있습니다.
 
 ## 분야별 참조 모델과 통합 검사
 

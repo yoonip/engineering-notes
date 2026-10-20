@@ -27,7 +27,7 @@
 
 ## 오류를 코드로 재현하기
 
-[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 칩·AI 예제는 Python 모형과 합성 자료입니다.
+[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 RTOS·CAN·칩·AI 예제는 결정적 모델과 합성 자료입니다. 칩 시험 러너는 실제 호스트 자식프로그램을 실행해 프로세스 실패와 결과 계약 위반을 나눕니다.
 
 | 재현하는 문제 | 원인과 해결 | 본문 |
 | --- | --- | --- |
@@ -38,6 +38,11 @@
 | 결과 CSV가 완벽히 일치하지만 제품이 다릅니다. | 행 번호 대신 제품 ID·시험 조건을 검증하고 같은 ID로 연결합니다. | [시험 자료와 오판율](../설계와검증사례_engineering-cases/시험데이터의식별자와오판율_test-data-identity-metrics.md) |
 | 모델이 정상 응답하지만 판정이 바뀝니다. | 열 이름·단위·저장 scaler·모델 상태를 같은 계약으로 묶습니다. | [AI 배포 전처리](../설계와검증사례_engineering-cases/AI배포의전처리와특성순서_ai-preprocessing-contract.md) |
 | 평가 100%를 새 생산 묶음에서도 기대합니다. | 공유 group을 거절하고 평가 질문에 맞게 분할합니다. | [AI group 분리](../설계와검증사례_engineering-cases/생산묶음단위분할과평가누출_ai-group-evaluation.md) |
+| 높은 우선순위 태스크가 마감시간을 놓칩니다. | mutex 소유자와 중간 우선순위의 선점을 추적하고 상속 유무를 대조합니다. | [RTOS 우선순위 역전](../설계와검증사례_engineering-cases/뮤텍스대기와마감시간_rtos-priority-inversion.md) |
+| 데이터는 왔는데 태스크가 계속 잠들어 있습니다. | 검사·대기 사이의 resume 유실과 남는 알림 값을 비교합니다. | [RTOS 알림 유실](../설계와검증사례_engineering-cases/검사와대기사이의알림유실_rtos-lost-wakeup.md) |
+| CAN 재시작 요청은 성공했지만 통신이 돌아오지 않습니다. | 요청·컨트롤러 상태·재시도 예산을 별도로 판정합니다. | [CAN 복구 정책](../설계와검증사례_engineering-cases/CAN의ACK와복구정책_can-recovery-policy.md) |
+| CAN 값은 범위 안인데 오래됐거나 잘못 해석됐습니다. | ID·형식·길이·바이트 순서·순번·나이를 확인합니다. | [CAN 수신 계약](../설계와검증사례_engineering-cases/CAN수신값의형식과신선도_can-payload-contract.md) |
+| 시험 프로그램이 정상 종료했는데 결과를 믿을 수 없습니다. | 실행 ID·입력 해시·예정 case·수치를 대조하고 timeout을 구분합니다. | [칩 시험 러너](../설계와검증사례_engineering-cases/시험러너의종료상태와결과계약_chip-runner-result-contract.md) |
 
 ## 업무 질문에서 시작하기
 
