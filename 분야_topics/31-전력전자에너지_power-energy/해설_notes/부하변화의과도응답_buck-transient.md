@@ -38,11 +38,11 @@ $`\alpha=1/(2R_{new}C)`$, $`\omega_d=\sqrt{1/(LC)-\alpha^2}`$가 실수인 저�
 e^{-\alpha t}\sin(\omega_dt).
 ```
 
-중감쇠·과감쇠에서는 이 sin 식을 쓰지 않고 다른 해를 쓰거나 상태방정식을 직접 적분합니다.
+임계감쇠·과감쇠에서는 이 sin 식을 쓰지 않고 다른 해를 쓰거나 상태방정식을 직접 적분합니다.
 
 ### 12 V에서 6 V를 만드는 수치 예
 
-Vin=12 V, D=0.5, L=C=100 μH·100 μF, Rold=12 Ω, Rnew=6 Ω이면 전류 초기값은 0.5 A, 새 평형은 1 A입니다. $`\dot v(0^+)=-5000\ \mathrm{V/s}`$라서 처음에는 전압이 떨어집니다. 이상적인 고정 duty 모델의 최종 전압은 다시 6 V지만 실제 converter에서는 손실과 제어기 동작 때문에 결과가 달라집니다.
+Vin=12 V, D=0.5, L=100 μH, C=100 μF, Rold=12 Ω, Rnew=6 Ω이면 전류 초기값은 0.5 A, 새 평형은 1 A입니다. $`\dot v(0^+)=-5000\ \mathrm{V/s}`$라서 처음에는 전압이 떨어집니다. 이상적인 고정 duty 모델의 최종 전압은 다시 6 V지만 실제 converter에서는 손실과 제어기 동작 때문에 결과가 달라집니다.
 
 독립적인 물리 검산으로 편차 에너지를 쓸 수 있습니다.
 
@@ -92,5 +92,5 @@ Positive average current alone does not establish switching-level CCM. Inspect r
 
 ## 출처 / Sources
 
-- Texas Instruments, *SLVA057 Understanding Buck Power Stages*: averaged dynamics and operating modes.
-- Analog Devices, *MAXREFDES1269*: practical output-component and load requirements. Links appear above.
+- Texas Instruments, *SLVA057 Understanding Buck Power Stages* (March 1999), §§2.1·3.1: operating modes and the averaged power-stage model.
+- Analog Devices, *MAXREFDES1269*, Rev. 0 (August 2020), Step 6: output-capacitor sizing for load steps and ripple. Links appear above.
