@@ -41,7 +41,7 @@ flowchart LR
 
 ## Merlin은 가장 복잡한 엔진이라서 유리한가요?
 
-Merlin은 가스 발생기 방식입니다. 추진제 일부로 터빈·펌프를 구동하고 그 배기를 주 연소실에 모두 다시 넣지 않습니다. 모든 에너지를 회수하려는 복잡한 사이클과 비교하면 효율에서 손해가 있을 수 있지만 제작·운용·신뢰성까지 함께 판단해야 합니다. [SpaceX의 엔진 설명](https://www.spacex.com/vehicles/falcon-9), [Everyday Astronaut의 사이클 해설](https://everydayastronaut.com/rocket-engine-cycles/)
+Merlin은 가스 발생기 방식입니다. 추진제 일부로 터빈·펌프를 구동하고 그 배기를 주 연소실에 모두 다시 넣지 않습니다. 모든 에너지를 회수하려는 복잡한 사이클과 비교하면 효율에서 손해가 있을 수 있지만 제작·운용·신뢰성까지 함께 판단해야 합니다. [SpaceX 사용자 안내서 §2.3](https://www.spacex.com/assets/media/falcon-users-guide-2025-05-09.pdf)는 가스 발생기 사이클·터보펌프·1단 엔진 9개와 2단 진공 엔진을 구분합니다. [Everyday Astronaut의 사이클 해설](https://everydayastronaut.com/rocket-engine-cycles/)도 함께 읽으실 수 있습니다.
 
 Everyday Astronaut의 Andy Law가 쓴 2022년 글은 영상과 함께 배관 흐름을 설명합니다. 여기서는 그 글의 가스 발생기·단계식 연소 절을 읽고 공식 차량 설명과 대조했습니다. 해당 영상 전체를 시청하거나 오늘의 엔진 내부 설계를 확인한 것은 아닙니다. 당시 글의 전망을 현재 운용 현황으로 옮기지도 않습니다.
 
