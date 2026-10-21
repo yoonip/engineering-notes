@@ -34,7 +34,7 @@ be의 과거는 다릅니다. I·he·she·it·단수 명사는 was, you·we·the
 
 ## 현재진행형: be + -ing
 
-`I am reading now.`는 ‘저는 지금 읽고 있습니다’입니다. am이 주어와 현재 시점을 표시하고 reading이 진행 표현을 만듭니다. 부정은 `I am not reading now.`, 질문은 `Are you reading now?`처럼 be를 이용합니다.
+`I am reading now.`는 ‘저는 지금 읽고 있습니다’입니다. am이 주어와 현재 시점을 표시하고 reading이 진행 표현을 만듭니다. 같은 주어를 유지하면 부정은 `I am not reading now.`, 질문은 `Am I reading now?`입니다. 상대방에게 물을 때에는 주어를 you로 바꾸어 `Are you reading now?`라고 합니다.
 
 | 기본형 | -ing형 |
 |---|---|

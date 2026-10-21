@@ -15,23 +15,23 @@
 | 동사 verb | 동작·상태·관계를 나타냅니다. | read 읽다, need 필요로 하다, be ~이다·있다 |
 | 형용사 adjective | 명사의 성질을 나타내거나 상태를 설명합니다. | small 작은, quiet 조용한, ready 준비된 |
 | 부사 adverb | 행동의 방식·빈도, 형용사의 정도 등을 더합니다. | slowly 천천히, often 자주, very 매우 |
-| 한정사 determiner | 명사가 어떤 대상·수량인지 한정합니다. | a 하나의, the 그, my 제, two 둘의 |
+| 한정사 determiner | 명사가 어떤 대상·수량인지 한정합니다. | a 하나의, the 그, my 제, two 두 |
 | 전치사 preposition | 뒤 명사구와 다른 말 사이의 관계를 만듭니다. | in ~안에, on ~위에, with ~와 함께 |
 | 접속사 conjunction | 단어·구·절을 연결합니다. | and 그리고, but 그러나, because ~이므로 |
 
 관사 a·an·the는 한정사의 한 종류로 여기서 다룹니다. 교재마다 품사를 묶는 방식은 조금씩 다를 수 있습니다. 또한 `open`은 `an open door`에서는 형용사이고 `I open the door.`에서는 동사입니다. 한국어 뜻 하나만 보고 품사를 고정하지 않습니다.
 
-구(phrase)는 몇 단어가 한 덩어리로 역할을 하는 표현입니다. `a small room`은 명사구입니다. 절(clause)은 주어와 동사 관계를 갖춘 단위입니다. 여기서는 주로 절 하나로 된 짧은 문장을 연습합니다.
+구(phrase)는 문장 안에서 하나의 단위로 기능하는 표현입니다. `a small room`은 명사구이며, `Water helps.`의 `Water`처럼 단어 하나가 명사구를 이룰 수도 있습니다. 절(clause)은 보통 주어와 동사 표현을 중심으로 이루어집니다. 명령문 `Wait.`처럼 주어가 드러나지 않는 경우도 있습니다. 여기서는 주로 절 하나로 된 짧은 문장을 연습합니다. 구의 구성은 [Cambridge의 문장 성분 설명, 공개 요약](https://www.cambridge.org/core/books/abs/grammar-for-english-language-teachers/sentence-constituents-basic-principles/74A678594E3E1683EA9966FCE6CFB666)을 참고했습니다.
 
 ## 짧은 문장의 뼈대
 
 | 성분 | 확인할 일 | 예문에서의 부분 |
 |---|---|---|
-| 주어 subject, S | 누구·무엇에 관해 말합니까? | `Mina` reads a book. |
-| 동사 verb, V | 어떤 동작·상태입니까? | Mina `reads` a book. |
-| 목적어 object, O | 동사의 행동·관계가 향하는 대상은 무엇입니까? | Mina reads `a book`. |
-| 보어 complement, C | 주어 등의 정체·상태를 채워 줍니까? | Mina is `a student` / `ready`. |
-| 부가 정보 | 언제·어디서·어떻게인지 덧붙입니까? | Mina reads a book `at home`. |
+| 주어 subject, S | 동작·상태의 주체 | `Mina` reads a book. |
+| 동사 verb, V | 동작·상태를 나타내는 말 | Mina `reads` a book. |
+| 목적어 object, O | 동작·관계의 대상 | Mina reads `a book`. |
+| 보어 complement, C | 주어 등의 정체·상태를 설명하는 말 | Mina is `a student` / `ready`. |
+| 부가 정보 | 시간·장소·방식 등 추가 정보 | Mina reads a book `at home`. |
 
 `Mina is ready.`에서 ready는 미나가 어떤 상태인지 설명합니다. 읽는 대상인 a book과 역할이 다르므로 ‘동사 뒤에는 모두 목적어’라고 외우지 않습니다. 반대로 `Mina sleeps.`처럼 목적어 없이 완성되는 문장도 있습니다. sleep은 ‘자다’라는 뜻입니다.
 
