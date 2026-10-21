@@ -1,6 +1,6 @@
 # 카메라 모델, 영상 필터, CV 검증
 
-## 영상의 좌표는 어떻게 만들어집니까
+## 3차원 점에서 영상 좌표로
 
 카메라는 3차원 장면을 2차원 밝기 배열로 바꿉니다. 같은 물체도 거리와 방향, 조명, 렌즈에 따라 다르게 보입니다. 따라서 영상 인식의 앞에는 좌표계와 측정 모델이 있습니다. 이 글은 왜곡 없는 pinhole 카메라, 정지한 장면, 양의 깊이 $`Z_c>0`$를 가정합니다. 실제 렌즈의 왜곡, motion blur, rolling shutter와 노출 변화는 별도 모델입니다.
 
@@ -10,11 +10,11 @@ $$u=f_xX_c/Z_c+c_x,\qquad v=f_yY_c/Z_c+c_y.$$
 
 세계 좌표에서는 $`P_c=RP_w+t`$를 먼저 계산합니다. 이 식의 $`R,t`$는 세계에서 카메라로 바꾸는 변환이며 카메라 위치 자체와 $`t`$를 혼동하지 않습니다. OpenCV의 pinhole 정의도 이 방향과 내부 파라미터를 사용합니다. [OpenCV calibration](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html)
 
-예를 들어 $`f_x=f_y=800`$, $`c=(320,240)`$, $`P_c=(1,2,4)`$이면 영상 위치는 ((520,640))입니다. 점과 깊이를 함께 두 배로 늘린 ((2,4,8))도 같은 곳에 보입니다. 한 장의 영상만으로 절대 거리를 알아내기 어려운 이유가 이 광선 방향의 모호함에 있습니다. $`Z_c=0`$에서는 나눗셈이 정의되지 않습니다. 모델은 카메라 뒤의 점도 거부합니다.
+예를 들어 $`f_x=f_y=800`$, $`c=(320,240)`$, $`P_c=(1,2,4)`$이면 영상 위치는 $`(520,640)`$입니다. 점과 깊이를 함께 두 배로 늘린 $`(2,4,8)`$도 같은 곳에 보입니다. 한 장의 영상만으로 절대 거리를 알아내기 어려운 이유가 이 광선 방향의 모호함에 있습니다. $`Z_c=0`$에서는 나눗셈이 정의되지 않습니다. 모델은 카메라 뒤의 점도 거부합니다.
 
 ## 이웃 pixel을 결합하는 필터
 
-영상 (I[y,x])에 작은 가중치 배열 (K[j,i])를 적용하면 주변 정보를 결합할 수 있습니다. 커널을 뒤집지 않는 cross-correlation의 valid 영역 연산은
+영상 $`I[y,x]`$에 작은 가중치 배열 $`K[j,i]`$를 적용하면 주변 정보를 결합할 수 있습니다. 커널을 뒤집지 않는 cross-correlation의 valid 영역 연산은
 
 $$Y[y,x]=\sum_{j=0}^{k_h-1}\sum_{i=0}^{k_w-1}K[j,i]I[y+j,x+i].$$
 
@@ -48,7 +48,7 @@ A camera maps a scene to a brightness array. Geometry, illumination and optics c
 
 Similar triangles give normalized coordinates $`X_c/Z_c,Y_c/Z_c`$. Multiplication by focal lengths $`f_x,f_y`$ in pixels and addition of principal-point coordinates produce the projection equations above. First transform a world point using $`P_c=RP_w+t`$; this $`R,t`$ maps world coordinates to camera coordinates. Translation $`t`$ is not itself the camera position in the world. [OpenCV camera model](https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html)
 
-With focal lengths 800, principal point ((320,240)) and camera point ((1,2,4)), the pixel is ((520,640)). Scaling the point to ((2,4,8)) preserves its image. This ray ambiguity explains why a single image does not directly establish absolute distance. Projection at zero depth is undefined, and the model rejects points behind the camera.
+With focal lengths 800, principal point $`(320,240)`$ and camera point $`(1,2,4)`$, the pixel is $`(520,640)`$. Scaling the point to $`(2,4,8)`$ preserves its image. This ray ambiguity explains why a single image does not directly establish absolute distance. Projection at zero depth is undefined, and the model rejects points behind the camera.
 
 ### Local filtering
 
