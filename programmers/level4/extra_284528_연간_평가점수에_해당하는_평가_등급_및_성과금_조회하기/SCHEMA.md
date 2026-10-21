@@ -1,5 +1,7 @@
 # 입력 테이블 / Input schema — 연간 평가점수에 해당하는 평가 등급 및 성과금 조회하기
 
+[문제 풀이 / Solution](README.md) · [Level 4 목록 / Level 4 index](../README.md)
+
 풀이에서 사용하는 테이블의 열·자료형·NULL 허용 여부를 정리했습니다. NULL은 빈 문자열이나 숫자 0과 다른 값이므로 필터와 집계에서 구분합니다.
 
 Columns, types and nullability for the tables used by the solution. NULL is distinct from an empty string or numeric zero and must be handled separately in filtering and aggregation.

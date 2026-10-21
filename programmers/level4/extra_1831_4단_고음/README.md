@@ -1,5 +1,7 @@
 # 4단 고음
 
+[Level 4 목록 / Level 4 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 Level 4 · `1831` · C++ · [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/1831)
 
 [기본 풀이](solution.py) · [다른 풀이](alternative.py) · [예제 입력과 정답](examples.json) · [검증 코드](test_solution.py) · [C++ 제출 코드](solution.cpp)
