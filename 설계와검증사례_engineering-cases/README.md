@@ -1,6 +1,6 @@
 # 설계와 검증 사례 | Engineering decisions and checks
 
-요구사항과 실제 코드를 연결하고, 같은 입력에서 잘못된 조건과 해결한 조건을 비교합니다. 32개 사례의 본문에서 원인·대안·수정 방법을 읽고, 날짜별 기록에서 환경·명령·관측값을 확인하실 수 있습니다.
+요구사항과 실제 코드를 연결하고, 같은 입력에서 잘못된 조건과 해결한 조건을 비교합니다. 38개 사례의 본문에서 원인·대안·수정 방법을 읽고, 날짜별 기록에서 환경·명령·관측값을 확인하실 수 있습니다.
 
 ## C·C++·펌웨어
 
@@ -37,6 +37,12 @@
 | [NVMe 쓰기 완료·영속성](NVMe의쓰기완료와영속성_nvme-write-persistence.md) | 완료 상태와 휘발성 캐시, flush·FUA의 적용 범위를 비교합니다. | [2026-10-21](검증기록_evidence/저장장치완료와영속성검사_20261021.md) |
 | [eMMC·SD busy와 쓰기 실패](eMMC와SD의busy와쓰기실패_emmc-sd-write-status.md) | 자료 수신·busy 해제·상태 오류와 캐시 조건을 구분합니다. | [2026-10-21](검증기록_evidence/저장장치완료와영속성검사_20261021.md) |
 | [중단된 저널·트랜잭션 복구](중단된저널의트랜잭션복구_storage-journal-recovery.md) | 파일 기록 중단 뒤 유효한 commit과 손상·미완성 자료를 구분합니다. | [2026-10-21](검증기록_evidence/저장저널중단과복구검사_20261021.md) |
+| [NAND 불량 블록·마모 분산](NAND의불량블록과마모분산_nand-bad-block-wear.md) | 불량 블록 제외, 쓰기 실패와 동적·정적 마모 분산의 비용을 비교합니다. | [2026-10-21](검증기록_evidence/NAND블록과교란모델검사_20261021.md) |
+| [읽기 교란·데이터 이동](읽기교란의징후와데이터이동_nand-read-disturb-scrub.md) | 주입한 정정·복구 불가 상태에서 이동·검증·매핑 게시 순서를 확인합니다. | [2026-10-21](검증기록_evidence/NAND블록과교란모델검사_20261021.md) |
+| [FTL 매핑 게시·기록 중단](FTL의매핑게시와전원중단_ftl-map-publication.md) | 파일 기록의 각 중단 지점에서 데이터와 논리·물리 주소의 대응을 확인합니다. | [2026-10-21](검증기록_evidence/FTL매핑과GC중단검사_20261021.md) |
+| [FTL GC·TRIM·주소 재사용](FTL의GC와폐기된주소재사용_ftl-gc-trim-reuse.md) | 오래된 이동 계획, 삭제 상태와 재사용된 물리 주소의 세대를 구분합니다. | [2026-10-21](검증기록_evidence/FTL매핑과GC중단검사_20261021.md) |
+| [파일시스템 검사·사본 복구](파일시스템의손상검사와복구계획_filesystem-check-repair.md) | 학습 이미지의 구조·내용을 검사하고 원본 해시에 묶인 복구 계획을 실행합니다. | [2026-10-21](검증기록_evidence/파일시스템이미지검사와복구_20261021.md) |
+| [파일 이름·블록 소유권](파일이름과블록소유권의복구_filesystem-orphans-block-ownership.md) | 고아 파일·정상 하드 링크·블록 충돌과 복구를 거부해야 할 조건을 비교합니다. | [2026-10-21](검증기록_evidence/파일시스템이미지검사와복구_20261021.md) |
 
 ## RTL·칩 산술·시험 데이터
 
@@ -66,8 +72,8 @@
 - [계측 자동화의 offline 기록](검증기록_evidence/계측자동화모의검사_20261021.md): 기존 19개 mock·모형 검사의 범위입니다.
 - [구현 프로젝트](../프로젝트_projects/README.md): 기존 소스와 이전 실험·실행 결과입니다.
 
-인터럽트·캐시·워치독 정책과 원시 통신 해석은 호스트 모델이며, UDP loopback은 실제 로컬 socket을 사용합니다. RTL 내적기·비동기 FIFO와 DDR 명령 fixture는 HDL 컴파일·시뮬레이션과 Python 비교를 연결합니다. USB·PCIe는 호스트 전송 모델이며, 펌웨어 업데이트와 데이터 저널 복구는 실제 파일 기록과 별도 프로세스의 재시작을 사용합니다. NVMe·eMMC·SD는 제한된 전송·보존 모델이며 ECC는 고정 부호의 오류 주입을 실행합니다. 이전 FPGA의 성공 1회와 반복 컴파일 실패 기록, 기존 GPU 결과도 해당 시점의 근거로 보존합니다. 실물 측정·산업 데이터·동시 스트레스 검증의 범위는 각 관측에서 구분합니다.
+인터럽트·캐시·워치독 정책과 원시 통신 해석은 호스트 모델이며, UDP loopback은 실제 로컬 socket을 사용합니다. RTL 내적기·비동기 FIFO와 DDR 명령 fixture는 HDL 컴파일·시뮬레이션과 Python 비교를 연결합니다. USB·PCIe는 호스트 전송 모델이며, 펌웨어 업데이트와 데이터 저널 복구는 실제 파일 기록과 별도 프로세스의 재시작을 사용합니다. NVMe·eMMC·SD는 제한된 전송·보존 모델이며 ECC는 고정 부호의 오류 주입을 실행합니다. NAND는 작은 블록·마모·읽기 상태 모델이며, FTL은 호스트 파일의 매핑 기록과 별도 프로세스 종료를 사용합니다. 파일시스템 복구는 자체 학습 이미지의 사본에만 적용합니다. 이전 FPGA의 성공 1회와 반복 컴파일 실패 기록, 기존 GPU 결과도 해당 시점의 근거로 보존합니다. 실물 측정·산업 데이터·동시 스트레스 검증의 범위는 각 관측에서 구분합니다.
 
 ## English
 
-Thirty-two cases connect requirements, executable code, deliberately faulty controls, intended fixes and dated observations. They cover C/C++ ownership, firmware publication, RTOS scheduling/notifications, interrupt/DMA/cache contracts, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, file-backed firmware updates, NVMe/eMMC/SD, file-journal recovery, ECC fault injection, DDR command/pattern checks, RTL/reference and CDC/FIFO comparison, chip arithmetic, test identity, subprocess reports, AI serving/evaluation, FPGA frames and SQLite updates. HDL simulation, deterministic host models and physical measurements have distinct scopes.
+Thirty-eight cases connect requirements, executable code, deliberately faulty controls, intended fixes and dated observations. They cover C/C++ ownership, firmware publication, RTOS scheduling/notifications, interrupt/DMA/cache contracts, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, file-backed firmware updates, NVMe/eMMC/SD, file-journal recovery, NAND wear/read-disturb models, file-backed FTL mapping, educational filesystem repair, ECC fault injection, DDR command/pattern checks, RTL/reference and CDC/FIFO comparison, chip arithmetic, test identity, subprocess reports, AI serving/evaluation, FPGA frames and SQLite updates. HDL simulation, deterministic host models and physical measurements have distinct scopes.

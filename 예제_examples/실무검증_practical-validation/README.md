@@ -22,6 +22,9 @@
 | NVMe·eMMC·SD | [storage_protocols](storage_protocols/README.md): 완료 상태·busy·휘발성 보존 모델 | 요청 식별·실패 처리와 flush·FUA·캐시 지원 조건 |
 | 저널·데이터 복구 | [storage_recovery](storage_recovery/README.md): 파일 기록·별도 프로세스의 복구 검사 | 중단된 기록·commit·자료 손상과 재생 경계 |
 | ECC 오류 주입 | [ecc_secded](ecc_secded/README.md): 고정 extended Hamming 부호·독립 비교 | 단일 비트 정정·이중 비트 검출과 다중 오류 반례 |
+| NAND 불량·마모·교란 | [nand_management](nand_management/README.md): 블록·페이지와 정정 상태 모델 | 불량 제외·마모 분산 비용과 검증 후 매핑 게시 |
+| FTL 매핑·GC·TRIM | [ftl_mapping](ftl_mapping/README.md): 호스트 파일의 데이터·매핑 저널 | 기록 중단·논리 버전·물리 주소 세대와 오래된 GC 계획 |
+| 파일시스템 검사·복구 | [filesystem_repair](filesystem_repair/README.md): 자체 이미지·복구 계획·새 사본 | 구조·내용·이름·블록 소유권과 모호한 손상의 복구 거부 |
 
 [설계와 검증 사례](../../설계와검증사례_engineering-cases/README.md)에서 원인과 해결을 읽고, [현장 계측과 검증](../../현장계측과검증_measurement-validation/README.md)에서 장비·펌웨어·칩 시험 조건으로 연결합니다.
 
@@ -31,4 +34,4 @@
 
 ## English
 
-Eighteen sets of runnable examples compare faulty controls and intended fixes: native contracts, chip analysis, AI evaluation, RTOS concurrency, CAN, subprocess reports, interrupt/DMA/cache ownership, SPI/I2C, UART/Ethernet/UDP, watchdog/reset, RTL/reference and CDC/asynchronous FIFO comparison, USB/PCIe, file-backed firmware updates DDR command/pattern checks, NVMe/eMMC/SD, file-journal recovery and ECC fault injection. New output directories preserve earlier failures. HDL simulation, actual host child processes, deterministic software models and physical measurements have distinct scopes.
+Twenty-one sets of runnable examples compare faulty controls and intended fixes: native contracts, chip analysis, AI evaluation, RTOS concurrency, CAN, subprocess reports, interrupt/DMA/cache ownership, SPI/I2C, UART/Ethernet/UDP, watchdog/reset, RTL/reference and CDC/asynchronous FIFO comparison, USB/PCIe, file-backed firmware updates, DDR command/pattern checks, NVMe/eMMC/SD, file-journal recovery, NAND management, file-backed FTL mapping, educational filesystem repair and ECC fault injection. New output directories preserve earlier failures. HDL simulation, actual host child processes, deterministic software models and physical measurements have distinct scopes.
