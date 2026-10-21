@@ -8,7 +8,7 @@
 
 센서의 “온도 레지스터 0x12를 읽는다”는 동작은 CPU 메모리의 주소 0x12를 읽는 것과 다릅니다. I2C target에 먼저 내부 레지스터 번호를 알려 주고, 이어서 데이터 방향을 바꿔 bytes를 받아야 하는 장치가 많습니다. 이 내부 번호와 실제 bus 주소는 별개입니다. 레지스터 번호 크기와 auto-increment 여부도 장치의 데이터시트가 정합니다.
 
-NXP UM10204는 START·STOP, ACK/NACK와 combined format을 정의합니다. repeated START는 STOP으로 bus를 놓지 않고 다음 주소·방향 단계로 이어 갑니다. Linux `i2c_transfer()`의 combined transaction도 메시지 사이 STOP 대신 START가 오는 구조를 표현합니다. 모든 adapter가 모든 조합을 지원하는 것은 아니므로 driver가 기능을 확인해야 합니다. [NXP UM10204 §3.1](https://www.nxp.com/docs/en/user-guide/UM10204.pdf), [Linux I2C protocol](https://docs.kernel.org/i2c/i2c-protocol.html)
+NXP UM10204는 START·STOP, ACK/NACK와 combined format을 정의합니다. repeated START는 STOP으로 bus를 놓지 않고 다음 주소·방향 단계로 이어 갑니다. Linux `i2c_transfer()`의 combined transaction도 메시지 사이 STOP 대신 START가 오는 구조를 표현합니다. 모든 adapter가 모든 조합을 지원하는 것은 아니므로 driver가 기능을 확인해야 합니다. [NXP UM10204 §3.1](https://www.nxp.com/docs/en/user-guide/UM10204.pdf), [Linux I2C protocol](https://docs.kernel.org/6.12/i2c/i2c-protocol.html)
 
 ### 7비트 주소와 전송 byte를 구분합니다
 
@@ -73,7 +73,7 @@ NXP UM10204 Rev.7.0의 §3.1.1·§3.1.6·§3.1.16과 Microchip [DS21203Q §8.1~8
 
 Reading a sensor's register 0x12 is not reading CPU memory address 0x12. Many I2C targets first receive an internal register pointer, then send bytes after a direction change. That internal pointer differs from the bus address. Pointer width and auto-increment are device-specific.
 
-NXP UM10204 defines START/STOP, ACK/NACK, and combined formats. A repeated START continues the transaction without releasing the bus through STOP. Linux `i2c_transfer()` represents combined messages with START rather than STOP between them. Adapter support must be checked; not every adapter supports every combination. [NXP UM10204 §3.1](https://www.nxp.com/docs/en/user-guide/UM10204.pdf), [Linux I2C protocol](https://docs.kernel.org/i2c/i2c-protocol.html)
+NXP UM10204 defines START/STOP, ACK/NACK, and combined formats. A repeated START continues the transaction without releasing the bus through STOP. Linux `i2c_transfer()` represents combined messages with START rather than STOP between them. Adapter support must be checked; not every adapter supports every combination. [NXP UM10204 §3.1](https://www.nxp.com/docs/en/user-guide/UM10204.pdf), [Linux I2C protocol](https://docs.kernel.org/6.12/i2c/i2c-protocol.html)
 
 ### Separate seven-bit addresses from transmitted bytes
 
@@ -116,5 +116,5 @@ The linked 24LC256 read subset uses a two-byte internal address, giving 54 clock
 
 ## 출처 / Sources
 
-- [NXP UM10204 Rev.7](https://www.nxp.com/docs/en/user-guide/UM10204.pdf): START·combined format·ACK/NACK / START, combined format, ACK/NACK
-- [Linux: The I2C Protocol](https://docs.kernel.org/i2c/i2c-protocol.html): i2c_transfer와 combined transaction / combined transactions
+- [NXP UM10204 Rev.7.0 (2021-10-01), §§3.1.4–6·3.1.10](https://www.nxp.com/docs/en/user-guide/UM10204.pdf): START·combined format·ACK/NACK / START, combined format, ACK/NACK
+- [Linux 6.12: The I2C Protocol](https://docs.kernel.org/6.12/i2c/i2c-protocol.html): i2c_transfer와 combined transaction / combined transactions

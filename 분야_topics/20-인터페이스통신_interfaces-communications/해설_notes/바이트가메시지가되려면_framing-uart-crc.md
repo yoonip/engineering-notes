@@ -66,16 +66,16 @@ CRC는 잡음이나 전송 오류의 검출 수단입니다. 공격자는 데이
 
 [UART 분할 수신 사례](../../../설계와검증사례_engineering-cases/UART의분할수신과재동기화_uart-stream-resync.md)는 위 escape·CRC 형식과 구별되는 `A5 5A LEN SEQ DATA SUM8` 자체 형식을 사용합니다. SUM8은 단순 합이고 CRC가 아닙니다. 수신 함수의 반환 경계를 프레임 경계로 오해했을 때의 오류를 작은 리터럴로 확인합니다. pySerial의 timeout이 설정된 `read(size)`는 요청 수보다 적은 바이트를 반환할 수 있으므로 같은 객체의 상태를 다음 읽기까지 유지해야 합니다. [pySerial 3.5 read](https://pyserial.readthedocs.io/en/latest/pyserial_api.html#serial.Serial.read)
 
-첫 프레임 `A5 5A 02 01 11 22 36`은 `2+1+17+34=54=0x36`입니다. 7바이트를 2바이트·5바이트로 나눠 읽을 때 매번 새 파서를 만들면 복원하지 못합니다. 반대로 19바이트의 3프레임을 한 번에 읽고 첫 결과만 사용하면 나머지 2개를 잃습니다. [실행 코드](../../../예제_examples/실무검증_practical-validation/uart_ethernet/README.md)는 선택한 20가지 분할에서 동일한 3프레임을 확인합니다. payload에A55A가 있어도 유효한 길이 안에서는 데이터로 유지합니다.
+첫 프레임 `A5 5A 02 01 11 22 36`은 `2+1+17+34=54=0x36`입니다. 7바이트를 2바이트·5바이트로 나눠 읽을 때 매번 새 파서를 만들면 복원하지 못합니다. 반대로 19바이트의 3프레임을 한 번에 읽고 첫 결과만 사용하면 나머지 2개를 잃습니다. [실행 코드](../../../예제_examples/실무검증_practical-validation/uart_ethernet/README.md)는 선택한 20가지 분할에서 동일한 3프레임을 확인합니다. payload에 A5 5A가 있어도 유효한 길이 안에서는 데이터로 유지합니다.
 
 | 구분 | 새 사례의 결과 | 해석 |
 | --- | --- | --- |
 | checksum 36을 37로 바꾼 프레임 뒤 정상 프레임 |checksum 오류 1회, 후속 정상 payload를 복구합니다. |오류 검출과 재동기화를 함께 봅니다. |
-| LEN을FF로 바꾼 후보 뒤 정상 프레임 |길이 오류 1회, 다음 프레임을 복구합니다. |상한 밖의 길이를 계속 기다리지 않습니다. |
+| LEN을 FF로 바꾼 후보 뒤 정상 프레임 |길이 오류 1회, 다음 프레임을 복구합니다. |상한 밖의 길이를 계속 기다리지 않습니다. |
 | LEN 8 후보 뒤 정상 7바이트, 총 10바이트 |필요한 13바이트를 기다리다가 명시적 만료 후 복구합니다. |허용 길이의 미완성 후보는 별도 만료 정책이 필요합니다. |
-| payload 1122를 1221로 변경합니다. |같은SUM8=36으로 수락합니다. |단순 합은 이 두 데이터를 구별하지 못합니다. |
+| payload 1122를 1221로 변경합니다. |같은 SUM8=36으로 수락합니다. |단순 합은 이 두 데이터를 구별하지 못합니다. |
 
-`expire_partial()`은 호출자가 선언하는 만료 사건이며 실제 시계·UART timer를 실행하지 않습니다. 읽기 호출의 종료를 만료로 삼으면 정상 분할 데이터도 버릴 수 있습니다. 최대 프레임 전송 시간·드라이버 지연·응용 deadline을 구분해야 합니다. 8N1·115200 bit/s·idle 없음의 계산에서 7바이트는약 0.608 ms, 최대 13바이트는약 1.128ms입니다. 장치·USB·스케줄러 지연의 실측값은 아닙니다.
+`expire_partial()`은 호출자가 선언하는 만료 사건이며 실제 시계·UART timer를 실행하지 않습니다. 읽기 호출의 종료를 만료로 삼으면 정상 분할 데이터도 버릴 수 있습니다. 최대 프레임 전송 시간·드라이버 지연·응용 deadline을 구분해야 합니다. 8N1·115200 bit/s·idle 없음의 계산에서 7바이트는 약 0.608 ms, 최대 13바이트는 약 1.128 ms입니다. 장치·USB·스케줄러 지연의 실측값은 아닙니다.
 
 잡음 100,000바이트 뒤 정상 최대 프레임을 넣었을 때 내부 staging buffer 최고값은 13바이트였습니다. 반환 목록과 외부 큐 용량까지 제한한 것은 아닙니다. UART의 overrun·baud·배선·parity·framing 오류는 이 호스트 모델에서 측정하지 않으며, 실제 raw bytes가 사라지는 상황은 하드웨어 상태와 드라이버 기록으로 별도 확인합니다. 정상/-O·의도적 변이와 관측 범위는 [검증 기록](../../../설계와검증사례_engineering-cases/검증기록_evidence/UART와UDP수신경계검증_20261021.md)에 연결합니다.
 
@@ -134,6 +134,6 @@ The [UART case](../../../설계와검증사례_engineering-cases/UART의분할�
 ## 출처와 교차 확인 / Sources and cross-check
 
 - TI UART API: 데이터 폭·parity·정지 비트 구성 / data width, parity, and stop-bit configuration.
-- RFC1662 §4·Appendix C: escape 방식·생성 다항식·FCS 잔여값 / escaping, generator, and FCS residue.
+- RFC 1662 (July 1994), §§3.1·4.2–4.3 and Appendix C: escape 방식·생성 다항식·FCS 잔여값 / escaping, generator, and FCS residue.
 - 식의 처리율·최대 길이는 프레임 정의에서 직접 계산했으며 CRC는 별도 구현과 비교했습니다. / Throughput and maximum size follow from the defined format; CRC is compared against an independent implementation.
 - pySerial 3.5 API의 timeout·`read(size)` 반환 설명을 2026-10-21에 확인했습니다. 새 SUM8 예제의 분할·복구·시간 계산은 자체 구성입니다. / pySerial's documented partial-read contract motivates the separate host example.
