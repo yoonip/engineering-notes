@@ -66,7 +66,7 @@ flowchart LR
 
 지수식은 증가를 표현하는 모델이지, 제조 기술이 그 식을 반드시 따라야 한다는 원인은 아닙니다. 부품 수의 증가만으로 전압·주파수·소비전력·소프트웨어 실행 시간이 정해지지도 않습니다. 칩 A가 B보다 부품이 두 배라는 사실만으로 응용 프로그램이 두 배 빨라진다고 결론낼 수 없는 이유입니다.
 
-이 글의 후속 논의는 Moore가 1975년 발표한 [Progress in Digital Integrated Electronics](https://www.lithoguru.com/scientist/CHE323/Moore1975.pdf)와 연결해 읽을 수 있습니다. 1975년 글 13쪽은 향후 증가 간격이 연간에서 약 2년으로 바뀔 가능성을 논합니다. 이 후속 전망을 1965년 원문의 문장으로 소급하지 않고, 발표 시점과 관찰 대상을 함께 비교하는 것이 좋습니다.
+이 글의 후속 논의는 Moore가 1975년 발표한 [Progress in Digital Integrated Electronics](https://www.lithoguru.com/scientist/CHE323/Moore1975.pdf)와 연결해 읽을 수 있습니다. 1975년 글의 인쇄 13쪽(PDF 3쪽)은 향후 증가 간격이 연간에서 약 2년으로 바뀔 가능성을 논합니다. 이 후속 전망을 1965년 원문의 문장으로 소급하지 않고, 발표 시점과 관찰 대상을 함께 비교하는 것이 좋습니다.
 
 ## 자기점검
 
