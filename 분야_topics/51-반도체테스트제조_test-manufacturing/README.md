@@ -50,6 +50,38 @@ DFT, Scan, ATPG, MBIST/LBIST, ATE, JTAG/Boundary Scan, Tessent, TestMAX, Modus
 
 - [보이지 않는 내부 상태를 검사하기: scan, ATPG와 fault coverage](해설_notes/보이지않는내부상태를검사하기_scan-atpg-fault-coverage.md)
 
+## 읽은 값과 오류 기록을 함께 봅니다
+
+메모리를 쓴 뒤 같은 값이 나왔다는 관측은 중요하지만, 그것만으로 모든 오류가 없었다고 판단할 수는 없습니다. 예를 들어 ECC가 내부 오류를 수정한 뒤 올바른 값을 반환할 수 있습니다. Linux [EDAC의 오류 종류](https://docs.kernel.org/driver-api/edac.html#c.hw_event_mc_err_type)는 수정된 오류, 수정할 수 없는 오류, 지연 처리와 치명적 오류 등을 구분합니다. 지원하는 controller·driver와 오류 위치 정보도 함께 확인해야 합니다.
+
+아래는 직접 만든 관측값입니다. 반환 데이터는 같지만 같은 시험 구간에서 corrected-error 수가 10에서 12로 늘었다고 가정합니다. corrected error는 오류를 수정했다는 보고이며, 아무 오류도 발생하지 않았다는 뜻이 아닙니다.
+
+```python
+expected, returned = 0xA5, 0xA5  # 0x는 16진수이며 기대값과 반환값을 지정합니다.
+before = {"corrected": 10, "uncorrected": 0}  # {}는 이름과 값을 연결하는 사전입니다.
+after = {"corrected": 12, "uncorrected": 0}  # 같은 부팅·카운터 구간의 끝 값을 가정합니다.
+delta = {name: after[name] - before[name] for name in before}  # 사전 내포로 각 증가량을 계산합니다.
+print(returned == expected, delta)  # True와 {'corrected': 2, 'uncorrected': 0}입니다.
+```
+
+이 두 건을 실제 장비에서 관측한 결과로 제시하지 않습니다. counter reset·overflow·재부팅·다른 부하가 있으면 단순 차이가 이 시험의 오류 수가 아닐 수 있습니다. 시작과 끝을 같은 구간에 묶고, 발생 주소·채널·시험 입력·온도·전압·주파수 조건을 연결합니다. 수정된 오류를 어느 조건에서 허용할지도 제품의 요구사항으로 정해야 하며, 이 예의 수를 보편적인 합격 한도로 사용하지 않습니다.
+
+## DDR의 명령 간격을 cycle로 바꾸는 예
+
+DDR에서 한 행을 여는 ACT와 그 행에 접근하는 읽기·쓰기 사이에는 필요한 시간 간격이 있습니다. [AMD UG586 v4.2의 설정 표](https://docs.amd.com/r/en-US/ug586_7Series_MIS/Customizing-the-Core)는 tRCD를 ACTIVE에서 READ·WRITE까지의 지연으로 설명합니다. 추가 지연이 없는 단순 명령 계약에서 필요한 시간을 13.75 ns, 명령 클록 주기를 2.5 ns라고 가정하면 5 cycle은 12.5 ns여서 부족하고 최소 6 cycle이 필요합니다. 아래 숫자는 특정 메모리 부품의 정격이 아닌 계산용 입력입니다.
+
+```python
+required_ps, cycle_ps = 13750, 2500  # ps는 1 ns의 1/1000이며 정수 단위로 계산합니다.
+minimum_cycles = (required_ps + cycle_ps - 1) // cycle_ps  # //는 정수 나눗셈이며 필요한 cycle을 올림합니다.
+floor_cycles = required_ps // cycle_ps  # 잘못 내림한 대조는 5 cycle입니다.
+print(minimum_cycles, minimum_cycles * cycle_ps)  # 6과 15000 ps입니다.
+print(floor_cycles, floor_cycles * cycle_ps)  # 5와 12500 ps로 최소 시간보다 짧습니다.
+```
+
+실제 설정에는 시간 단위 제한과 최소 cycle 제한이 함께 있을 수 있습니다. 해당 장치·속도 등급·클록 조건을 확인한 뒤 둘 다 만족해야 합니다. 이 계산은 두 배의 데이터 전송률과 명령 클록을 섞지 않도록 정한 단일 명령 간격 예이며, DDR training·눈 다이어그램·배선 지연이나 실제 데이터 안정성을 측정하지 않습니다.
+
+[DDR 명령 간격과 메모리 패턴 사례](../../설계와검증사례_engineering-cases/DDR명령간격과메모리패턴_ddr-command-pattern-checks.md)는 명시한 cycle 계약의 명령 검사와 데이터 패턴을 연결합니다. 패턴이 검출하는 결함 모델, 제한된 RTL 실행, 실제 소자·보드 검증을 구분하여 읽으실 수 있습니다. 특정 패턴 통과, ECC 관측, timing 조건의 통과는 각각 다른 검사의 근거입니다.
+
 ## English
 
 ### DFT, test, and manufacturing
@@ -74,6 +106,10 @@ A constructed twelve-item plan starts ten tests. One times out; one of the nine 
 
 - [보이지 않는 내부 상태를 검사하기: scan, ATPG와 fault coverage](해설_notes/보이지않는내부상태를검사하기_scan-atpg-fault-coverage.md#english)
 
+
+### DDR observations and test criteria
+
+A constructed correct-read example still has two additional corrected-error reports, so returned data and error telemetry answer different questions. Counter deltas require the same observation epoch. In a separate assumed timing calculation, 13.75 ns with a 2.5 ns command clock requires six cycles, while rounding down to five violates the minimum. These are local arithmetic examples; the linked case distinguishes bounded command/pattern checks from physical DDR, ECC, training or board measurements.
 
 ## 심화 해설 | Advanced article
 

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "scope": "self-defined cycle contract; no JEDEC/device/PHY conformance claim",
+  "policy": {"additive_latency": 0, "refresh": "REF issue gap at most 40 cycles, including idle cycles; no postpone/pull-in", "initial_state": "both banks closed; memory cells uninitialized"},
+  "geometry": {"banks": 2, "rows": 4, "columns": 4, "data_bits": 16},
+  "timing_cycles": {"tRCD": 3, "tRAS": 6, "tRP": 2, "tRFC": 8, "tWR": 2, "tRTP": 2, "refresh_deadline": 40, "read_latency": 2},
+  "cases": [
+    {"name": "correct_address", "pattern": "address", "fault": 0, "change": "none", "expected": "PASS"},
+    {"name": "correct_checkerboard_inverse", "pattern": "checkerboard_inverse", "fault": 0, "change": "none", "expected": "PASS"},
+    {"name": "early_rcd", "pattern": "address", "fault": 0, "change": "rcd", "expected": "FUNCTIONAL_FAIL"},
+    {"name": "early_ras", "pattern": "address", "fault": 0, "change": "ras", "expected": "FUNCTIONAL_FAIL"},
+    {"name": "early_rp", "pattern": "address", "fault": 0, "change": "rp", "expected": "FUNCTIONAL_FAIL"},
+    {"name": "early_rfc", "pattern": "address", "fault": 0, "change": "rfc", "expected": "FUNCTIONAL_FAIL"},
+    {"name": "missing_refresh", "pattern": "address", "fault": 0, "change": "refresh", "expected": "FUNCTIONAL_FAIL"},
+    {"name": "stuck_address", "pattern": "address", "fault": 1, "change": "none", "expected": "FUNCTIONAL_FAIL"},
+    {"name": "alias_address", "pattern": "address", "fault": 2, "change": "none", "expected": "FUNCTIONAL_FAIL"},
+    {"name": "stuck_zero_blind_spot", "pattern": "zero", "fault": 1, "change": "none", "expected": "PASS"},
+    {"name": "alias_zero_blind_spot", "pattern": "zero", "fault": 2, "change": "none", "expected": "PASS"},
+    {"name": "read_unwritten", "pattern": "address", "fault": 0, "change": "unwritten", "expected": "FUNCTIONAL_FAIL"},
+    {"name": "drop_read_responses", "pattern": "address", "fault": 3, "change": "none", "expected": "FUNCTIONAL_FAIL"},
+    {"name": "unknown_read_data", "pattern": "address", "fault": 4, "change": "none", "expected": "FUNCTIONAL_FAIL"},
+    {"name": "incomplete_trace", "pattern": "address", "fault": 5, "change": "none", "expected": "INFRA_ERROR"}
+  ]
+}

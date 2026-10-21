@@ -54,6 +54,16 @@ p를 miss의 전체 시간으로 정의했다면 식은 `(1-m)h+mp`가 됩니다
 
 AMAT 검증에서는 실제 hit마다 h, miss마다 h+p를 더해 N으로 나눈 결과를 공식과 대조합니다. 이는 모델 계산의 확인입니다. 실제 성능 검증에서는 결과가 사용되도록 한 benchmark, 반복 측정, cache miss·전송량 counter, 컴파일러 최적화와 타이머 오버헤드를 함께 확인합니다. 추상 모델의 miss 수가 실제 CPU 실행 시간과 같다고 가정하지 않습니다.
 
+### 6. 캐시 성능과 DDR 자료 검증을 나누어 관측합니다
+
+같은 CPU 주소를 반복해서 읽는 시험은 cache hit를 관측할 수 있지만, 각 반복이 DDR까지 내려갔는지를 자동으로 보장하지 않습니다. AMAT는 접근 지연의 모델이고, 쓴 자료의 보존·주소선 구분·DRAM 명령 간격은 별도의 검사 대상입니다. 실제 시험에서는 시험 영역의 소유권, 플랫폼의 캐시 정책·DMA 동기화, controller/PHY에서 얻은 관측값을 함께 구분해야 합니다.
+
+[DDR 명령·메모리 패턴 실습](../../../예제_examples/실무검증_practical-validation/ddr_validation/README.md)은 캐시를 제외한 고정 명령·배열 fixture를 실제 Icarus에서 실행합니다. Python은 ACT 뒤 WR/RD의 간격, PRE·REF 조건, 예정한 읽기 응답의 cycle·tag·값을 따로 검사합니다. AL=0, tRCD=3 등 수치는 자체 cycle 계약이며 특정 부품의 정격이 아닙니다. REF 발행 간격 최대 40cycle도 실제 tREFI의 평균·연기 정책을 대체하지 않습니다.
+
+정상 주소 패턴은 32개의 16비트 논리 주소를 쓰고 읽어 32응답을 확인했습니다. column 주소 bit1을 지워 주소0/2를 겹치게 하면 기대한 A500 대신 A702가 돌아옵니다. 전체 0만 쓰면 같은 alias가 있어도 값이 일치합니다. 또한 모든 읽기 응답을 없애면 관측값 불일치는 0건이지만 예정 응답 32건이 누락되어 실패합니다. 표본 개수와 값의 일치를 함께 확인해야 하는 이유입니다.
+
+[원리·오류·수정 흐름](../../../설계와검증사례_engineering-cases/DDR명령간격과메모리패턴_ddr-command-pattern-checks.md)과 [일반 실행·-O 대조 기록](../../../설계와검증사례_engineering-cases/검증기록_evidence/DDR명령과패턴검증_20261021.md)을 연결했습니다. 이 실습에는 DDR 핀·burst·PHY training·셀 retention·ECC·실제 보드 시험이 없으므로 cache 성능, 명령 계약, 자료 패턴, 물리 신호 검증의 결과를 서로 대신하지 않습니다.
+
 ## English
 
 ### 1. A small desk and a large warehouse
@@ -91,6 +101,12 @@ Pointer chasing, where the next address depends on the previous result, tends to
 `direct_mapped_hits` processes single-byte read addresses from an initially empty cache. It does not model data values, writes, prefetch or multicore coherence. N addresses cost O(N) time; S tags require O(S) space. Tests compare the hand-worked trace, sequential spatial locality, index conflicts, and an independent block-number reference.
 
 AMAT is checked against an explicit trace sum: h for every hit and h+p for every miss, divided by N. This verifies the abstract calculation. Physical performance experiments additionally require an observable benchmark result, repeated timing, miss and traffic counters, and control of compiler optimization and timer overhead. A model miss count is not assumed to equal processor runtime.
+
+### 6. Separating cache observations from DDR checks
+
+Repeated CPU reads may hit in cache, so they do not establish that each access reached DDR. AMAT models access latency; data preservation, address distinction and command legality require different evidence. Physical experiments must distinguish ownership of the test region, platform-specific cache/DMA behavior and controller/PHY observations.
+
+The [runnable DDR-style command fixture](../../../예제_examples/실무검증_practical-validation/ddr_validation/README.md) excludes caches and executes a fixed command/array model with Icarus. Python independently checks timing gaps, bank state and scheduled read responses. Its AL=0 timing rules and strict REF issue deadline are educational contracts rather than device ratings or JEDEC refresh policy. Address-dependent data detects a controlled alias that all-zero traffic misses. Suppressing all responses produces zero observed value mismatches but thirty-two missing-response failures. See the linked [case](../../../설계와검증사례_engineering-cases/DDR명령간격과메모리패턴_ddr-command-pattern-checks.md) and [evidence](../../../설계와검증사례_engineering-cases/검증기록_evidence/DDR명령과패턴검증_20261021.md). Neither this fixture nor cache timing establishes PHY training, cell retention, ECC or measured board behavior.
 
 ## 출처와 대조한 내용 | Sources and cross-checks
 
