@@ -55,6 +55,38 @@ UART, SPI, I2C, I3C, CAN/CAN-FD, USB, Ethernet, PCIe, MIPI, DDR, AXI/AHB/APB, MQ
 
 - [바이트가 메시지가 되려면: UART, 프레이밍과 CRC](해설_notes/바이트가메시지가되려면_framing-uart-crc.md)
 
+## 길이 필드가 가리키는 범위
+
+payload는 해당 계층의 헤더를 뺀 내용입니다. 같은 바이트열도 Ethernet·IP·UDP 중 어느 계층을 보느냐에 따라 payload의 범위가 달라집니다. 캡처 버퍼의 끝까지를 모두 응용 데이터로 읽으면 Ethernet padding까지 결과에 붙을 수 있습니다. padding은 최소 프레임 크기를 맞추는 채움 바이트이며 IP의 Total Length에 포함되지 않습니다. [RFC 894의 Frame Format](https://www.rfc-editor.org/rfc/rfc894)에서 이 범위를 설명합니다.
+
+IPv4 옵션·UDP Options·VLAN·터널이 없고 IP 단편화도 없다고 정한 계산 예입니다. IPv4 헤더를 20바이트, UDP 헤더를 8바이트로 두고 응용 값 4바이트를 보냅니다. IP Total Length는 32, UDP Length는 12입니다. Ethernet 데이터 필드를 최소 46바이트로 맞추면 IP 바깥에 14바이트가 남습니다.
+
+```python
+ip_header, udp_header, data = 20, 8, 4  # 쉼표 대입으로 예제의 바이트 수를 저장합니다.
+udp_length = udp_header + data  # UDP 길이는 헤더와 응용 데이터를 포함합니다.
+ip_total = ip_header + udp_length  # IP 전체 길이는 이 예제에서 32입니다.
+padding = max(0, 46 - ip_total)  # max는 큰 값을 고르며 부족한 길이만 채웁니다.
+captured = 14 + ip_total + padding  # VLAN 없는 헤더 14바이트를 더하며 FCS는 제외합니다.
+wrong_data = captured - 14 - ip_header - udp_header  # 버퍼 끝까지 읽는 오류는 padding도 셉니다.
+print(udp_length, ip_total, padding, captured)  # 12 32 14 60입니다.
+print(wrong_data, udp_length - udp_header)  # 잘못 계산한 18과 올바른 4를 비교합니다.
+print(1500 - ip_header - udp_header)  # IP MTU 1500을 가정하면 응용 공간은 1472입니다.
+```
+
+MTU는 이 계산에서 한 번에 담는 IP 패킷의 상한입니다. 1,500바이트가 모두 응용 공간은 아니며, 옵션·터널 등이 있으면 남는 공간이 달라집니다. 위 수치는 프레임 전송률이나 네트워크 지연의 측정값이 아닙니다. 실제 캡처에는 FCS의 포함 여부, VLAN과 드라이버의 처리 방식도 확인해야 합니다.
+
+IPv4의 IHL은 32비트 단위의 헤더 길이이고, UDP Length의 최소값은 헤더 크기인 8입니다. [RFC 791 §3.1](https://www.rfc-editor.org/rfc/rfc791.html#section-3.1)과 [RFC 768 Fields](https://www.rfc-editor.org/rfc/rfc768)를 근거로 계층별 길이를 계산합니다. [RFC 9868 §21](https://www.rfc-editor.org/rfc/rfc9868.html#section-21)은 UDP 끝과 IP 끝 사이 surplus area를 UDP Options에 사용하도록 정의합니다. 따라서 IP payload가 UDP Length보다 길다는 이유만으로 모든 패킷을 잘못된 것으로 단정하지 않습니다. Ethernet padding은 IP 바깥, 이 surplus area는 IP 안쪽이라는 차이도 있습니다.
+
+| 수신 단계 | 분리해서 확인할 조건 |
+| --- | --- |
+| 원시 Ethernet 캡처 | 캡처된 바이트 수와 각 헤더가 요구하는 길이를 함께 검사합니다. |
+| IPv4 해석 | 헤더 길이·Total Length·단편화 상태와 지원 범위를 구분합니다. |
+| UDP 해석 | 헤더·길이·checksum 상태를 보고 응용 데이터 범위를 정합니다. |
+| socket 수신 | 원시 Ethernet 캡처와 달리 OS가 전달한 응용 데이터의 경계를 읽습니다. |
+| 응용 값 사용 | 순번·단위·신선도와 요청의 성공 여부를 별도로 판단합니다. |
+
+[UART 분할 수신 사례](../../설계와검증사례_engineering-cases/UART의분할수신과재동기화_uart-stream-resync.md)와 [Ethernet·UDP 길이 사례](../../설계와검증사례_engineering-cases/이더넷프레임의길이와UDP경계_ethernet-ipv4-udp.md)는 바이트 스트림과 데이터그램의 경계를 비교합니다. 링크가 연결되어 있다는 관측과 응용 메시지를 올바르게 읽었다는 판정은 다른 단계입니다.
+
 ## English
 
 An interface defines electrical signals, topology, timing, and data format. Exchanging the same bytes still requires compatible voltage levels and clock conditions.
@@ -80,6 +112,10 @@ The same bytes `34 12` decode to 4,660 in little-endian and 13,330 in big-endian
 
 - [UART framing and CRC](해설_notes/바이트가메시지가되려면_framing-uart-crc.md#english)
 
+
+### Lengths at different layers
+
+In a constructed IPv4/UDP example without options or fragmentation, four application bytes give UDP Length 12 and IP Total Length 32. Ethernet padding adds 14 bytes to a minimum 46-byte data field. A raw buffer length of 60, excluding FCS and VLAN, does not make the application payload 18 bytes. The assumed IP MTU of 1500 leaves 1472 bytes with 20-byte IPv4 and eight-byte UDP headers. RFC 9868 additionally defines a UDP Options surplus area inside IP; this differs from Ethernet padding outside IP.
 
 ## 심화 해설 | Advanced article
 

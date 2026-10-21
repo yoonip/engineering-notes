@@ -1,0 +1,173 @@
+{
+  "scope": "Invented UART frames and EthernetII/IPv4/UDP captures; not hardware data",
+  "uart": {
+    "frame_one_hex": "a55a0201112236",
+    "frame_two_hex": "a55a0202a55a03",
+    "empty_frame_hex": "a55a000303",
+    "expected_frames": [
+      {
+        "sequence": 1,
+        "payload_hex": "1122"
+      },
+      {
+        "sequence": 2,
+        "payload_hex": "a55a"
+      },
+      {
+        "sequence": 3,
+        "payload_hex": ""
+      }
+    ],
+    "bad_checksum_hex": "a55a0201112237",
+    "bad_length_prefix_hex": "a55aff00",
+    "partial_prefix_hex": "a55a08",
+    "collision_frame_hex": "a55a0201122136",
+    "expected_collision_payload_hex": "1221"
+  },
+  "ethernet": {
+    "cases": [
+      {
+        "name": "valid_padded",
+        "capture_hex": "0102030405061122334455660800450000201234400040113c62c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "ACCEPT",
+        "payload_hex": "41424344",
+        "checksum": "checked"
+      },
+      {
+        "name": "valid_no_padding",
+        "capture_hex": "0102030405061122334455660800450000201234400040113c62c0000201c63364021234abcd000cd11641424344",
+        "expected": "ACCEPT",
+        "payload_hex": "41424344",
+        "checksum": "checked"
+      },
+      {
+        "name": "odd_payload",
+        "capture_hex": "01020304050611223344556608004500001f1234400040113c63c0000201c63364021234abcd000bd15c414243000000000000000000000000000000",
+        "expected": "ACCEPT",
+        "payload_hex": "414243",
+        "checksum": "checked"
+      },
+      {
+        "name": "checksum_omitted_ipv4",
+        "capture_hex": "0102030405061122334455660800450000201234400040113c62c0000201c63364021234abcd000c0000414243440000000000000000000000000000",
+        "expected": "ACCEPT",
+        "payload_hex": "41424344",
+        "checksum": "omitted_ipv4"
+      },
+      {
+        "name": "ethernet_truncated",
+        "capture_hex": "01020304050611223344556608",
+        "expected": "ETHERNET_TRUNCATED"
+      },
+      {
+        "name": "ip_header_truncated",
+        "capture_hex": "0102030405061122334455660800450000201234400040113c62c0000201c63364",
+        "expected": "IP_TRUNCATED"
+      },
+      {
+        "name": "vlan_unsupported",
+        "capture_hex": "0102030405061122334455668100450000201234400040113c62c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "UNSUPPORTED_ETHERTYPE"
+      },
+      {
+        "name": "wrong_ip_version",
+        "capture_hex": "0102030405061122334455660800650000201234400040113c62c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "IP_VERSION"
+      },
+      {
+        "name": "ihl_too_small",
+        "capture_hex": "0102030405061122334455660800440000201234400040113c62c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "IP_IHL"
+      },
+      {
+        "name": "ip_options_unsupported",
+        "capture_hex": "0102030405061122334455660800460000201234400040113c62c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "UNSUPPORTED_IP_OPTIONS"
+      },
+      {
+        "name": "ip_total_too_small",
+        "capture_hex": "01020304050611223344556608004500001b1234400040113c67c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "IP_LENGTH"
+      },
+      {
+        "name": "ip_total_exceeds_capture",
+        "capture_hex": "0102030405061122334455660800450000401234400040113c42c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "IP_TRUNCATED"
+      },
+      {
+        "name": "bad_ip_checksum",
+        "capture_hex": "010203040506112233445566080045000020123440003f113c62c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "IP_CHECKSUM"
+      },
+      {
+        "name": "more_fragments",
+        "capture_hex": "0102030405061122334455660800450000201234200040115c62c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "UNSUPPORTED_FRAGMENT"
+      },
+      {
+        "name": "nonzero_fragment_offset",
+        "capture_hex": "0102030405061122334455660800450000201234000140117c61c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "UNSUPPORTED_FRAGMENT"
+      },
+      {
+        "name": "reserved_fragment_flag",
+        "capture_hex": "010203040506112233445566080045000020123480004011fc61c0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "IP_RESERVED_FLAG"
+      },
+      {
+        "name": "tcp_unsupported",
+        "capture_hex": "0102030405061122334455660800450000201234400040063c6dc0000201c63364021234abcd000cd116414243440000000000000000000000000000",
+        "expected": "UNSUPPORTED_PROTOCOL"
+      },
+      {
+        "name": "udp_length_too_small",
+        "capture_hex": "0102030405061122334455660800450000201234400040113c62c0000201c63364021234abcd0007d116414243440000000000000000000000000000",
+        "expected": "UDP_LENGTH"
+      },
+      {
+        "name": "udp_length_too_big",
+        "capture_hex": "0102030405061122334455660800450000201234400040113c62c0000201c63364021234abcd000dd116414243440000000000000000000000000000",
+        "expected": "UDP_TRUNCATED"
+      },
+      {
+        "name": "udp_surplus_unsupported",
+        "capture_hex": "0102030405061122334455660800450000201234400040113c62c0000201c63364021234abcd000bd116414243440000000000000000000000000000",
+        "expected": "UNSUPPORTED_UDP_SURPLUS"
+      },
+      {
+        "name": "udp_payload_corruption",
+        "capture_hex": "0102030405061122334455660800450000201234400040113c62c0000201c63364021234abcd000cd116414243450000000000000000000000000000",
+        "expected": "UDP_CHECKSUM"
+      },
+      {
+        "name": "wrong_destination_pseudoheader",
+        "capture_hex": "0102030405061122334455660800450000201234400040113c61c0000201c63364031234abcd000cd116414243440000000000000000000000000000",
+        "expected": "UDP_CHECKSUM"
+      }
+    ],
+    "expected_ports": [
+      4660,
+      43981
+    ],
+    "expected_ip_length": 32,
+    "expected_udp_length": 12,
+    "expected_padding": 14
+  },
+  "loopback": {
+    "payloads_hex": [
+      "41424344",
+      "",
+      "a55a0201112236"
+    ]
+  },
+  "checksum_vectors": [
+    {
+      "hex": "0001f203f4f5f6f7",
+      "expected": 8717
+    },
+    {
+      "hex": "0001f2",
+      "expected": 3582
+    }
+  ]
+}
