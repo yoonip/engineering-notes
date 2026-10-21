@@ -43,6 +43,26 @@ Ubuntu, Debian, Fedora, Arch Linux, WSL2, Bash, Zsh, systemd, SSH, tmux, rsync
 
 - [Linux에서 프로그램, 권한과 파이프가 만나는 곳](해설_notes/프로세스-권한-파이프_processes-permissions-pipelines.md)
 
+## 파일시스템의 구조와 파일 내용을 따로 확인합니다
+
+파일 경로는 이름→inode→데이터 블록으로 이어집니다. inode는 길이와 저장 위치를 담는 관리 레코드이며, 할당 bitmap은 사용 중인 저장 구간을 표시합니다. 이름이 없어진 파일, 길이와 블록 용량이 다른 파일, 서로 다른 파일의 블록 충돌은 각각 다른 문제입니다. 실제 파일시스템마다 허용 기능과 복구 정책도 다릅니다.
+
+[이미지 검사 실습](../../예제_examples/실무검증_practical-validation/filesystem_repair/README.md)은 새 호스트 파일에 자체 EDUFS1 JSON을 기록합니다. 실제 mount·ext4·e2fsck는 실행하지 않습니다. 손상 원본은 읽기만 하고, 원본/외부 목록 SHA에 묶인 계획을 새 사본에 적용한 뒤 다시 검사합니다. 블록 8바이트 두 개가 있어도 파일 길이는 10바이트일 수 있습니다. 길이를 용량 16으로 바꾸는 것만으로 원문을 복구한 것은 아닙니다.
+
+```python
+from pathlib import Path  # from/import는 파일 경로 객체를 가져옵니다.
+import json  # json은 저장한 계획의 문자열을 사전으로 읽습니다.
+def planned_actions(plan_path):  # def는 계획 파일 경로를 받는 함수를 정의합니다.
+    plan = json.loads(Path(plan_path).read_text(encoding="utf-8"))  # UTF-8 파일을 읽어 JSON을 해석합니다.
+    return plan["status"], len(plan["actions"])  # []로 상태를 읽고 len으로 동작 수를 셉니다.
+```
+
+정상 실습 출력의 metadata_damage/plan.json을 읽으면 `('READY', 4)`입니다. 끊어진 항목 제거·근거 있는 크기 정정·이름 참조 수 정정·누락 할당 비트 설정의 네 동작입니다. 복구 사본은 seed와 bytes가 같고 두 번째 계획은 비어 있습니다. [검사와 복구 계획](../../설계와검증사례_engineering-cases/파일시스템의손상검사와복구계획_filesystem-check-repair.md)에 원인과 실제 명령을 연결했습니다.
+
+[이름과 블록 소유권 사례](../../설계와검증사례_engineering-cases/파일이름과블록소유권의복구_filesystem-orphans-block-ownership.md)에서는 두 이름이 같은 inode를 가리키는 hard link와 다른 inode가 같은 데이터 블록을 가리키는 충돌을 구분합니다. 이름을 잃은 일반 파일은 새 이름으로 연결할 수 있지만 옛 이름까지 알게 된 것은 아닙니다. 내용이 사라진 파일은 metadata나 digest만으로 되살리지 않습니다. 외부 목록 없이 구조만 맞으면 원래 자료의 동일성은 NOT_ESTABLISHED입니다.
+
+[e2fsck 공식 매뉴얼](https://man7.org/linux/man-pages/man8/e2fsck.8.html)은 읽기 전용 모드와 수정·미수정 오류의 종료값을 구분합니다. 이 자체 예제의 CHECKED·종료 0도 명령이 처리됐다는 뜻이므로 structural/identity 결과를 별도로 읽습니다. 실제 장치 검사나 전원 오류 내구성을 확인한 실습은 아닙니다.
+
 ## English
 
 Linux is the kernel that manages processes, memory, file access, and devices. Distributions such as Ubuntu, Debian, Fedora, and Arch Linux combine it with package managers and user programs to provide a complete operating environment. Linux is widely used on servers, embedded devices, development PCs, and GPU training machines.
@@ -69,6 +89,12 @@ WSL2 provides a Linux development environment on Windows. Access to physical dev
 
 - [Linux에서 프로그램, 권한과 파이프가 만나는 곳](해설_notes/프로세스-권한-파이프_processes-permissions-pipelines.md#english)
 
+
+### Filesystem structure and historical content
+
+Names reference inodes, and inode block lists locate logical content. The separate EDUFS1 host-file example checks those relations, allocation bits and an external content inventory. A read-only plan binds input hashes and writes only a new repaired copy. Reading metadata_damage/plan.json returns `('READY', 4)`; the repaired bytes equal the seed and a second repair has no changes.
+
+The companion case distinguishes valid hard links from conflicting block owners. A new salvage name preserves an intact unreachable file without reconstructing its old name. Consistent metadata and checksums can coexist with changed or missing historical bytes; an external digest detects a mismatch but supplies no backup payload. No mounted disk, ext4, e2fsck or hardware power-loss test is executed.
 
 ## 심화 해설 | Advanced article
 

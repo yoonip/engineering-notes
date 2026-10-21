@@ -1,0 +1,236 @@
+{
+  "scope": "Invented fixed EDUFS1 images, not ext4 or any mounted filesystem",
+  "seed_image": {
+    "format": "EDUFS1",
+    "super": {
+      "block_size": 8,
+      "block_count": 8,
+      "root": 1,
+      "lost_found": 2,
+      "features": []
+    },
+    "inodes": [
+      {
+        "id": 1,
+        "kind": "dir",
+        "size": 0,
+        "blocks": [],
+        "nlink": 1
+      },
+      {
+        "id": 2,
+        "kind": "dir",
+        "size": 0,
+        "blocks": [],
+        "nlink": 1
+      },
+      {
+        "id": 3,
+        "kind": "file",
+        "size": 10,
+        "blocks": [
+          0,
+          1
+        ],
+        "nlink": 1
+      },
+      {
+        "id": 4,
+        "kind": "file",
+        "size": 3,
+        "blocks": [
+          2
+        ],
+        "nlink": 1
+      },
+      {
+        "id": 5,
+        "kind": "file",
+        "size": 7,
+        "blocks": [
+          3
+        ],
+        "nlink": 1
+      },
+      {
+        "id": 6,
+        "kind": "dir",
+        "size": 0,
+        "blocks": [],
+        "nlink": 1
+      }
+    ],
+    "dirs": [
+      {
+        "inode": 1,
+        "entries": [
+          {
+            "name": "lost+found",
+            "inode": 2
+          },
+          {
+            "name": "reports",
+            "inode": 6
+          },
+          {
+            "name": "config.bin",
+            "inode": 3
+          },
+          {
+            "name": "archive.bin",
+            "inode": 5
+          }
+        ]
+      },
+      {
+        "inode": 2,
+        "entries": []
+      },
+      {
+        "inode": 6,
+        "entries": [
+          {
+            "name": "readme.txt",
+            "inode": 4
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": 0,
+        "data": "4741494e3d312e32",
+        "sha256": "13caf8b21104444fcc6a03d3c9681b335aba3cf1e0f1b18d11c3e0ef9bac304d"
+      },
+      {
+        "id": 1,
+        "data": "350a000000000000",
+        "sha256": "c93fa52280083994a0a8fd07ecc0dda4fcac3d49424d98f8b138dc82c318a165"
+      },
+      {
+        "id": 2,
+        "data": "4f4b0a0000000000",
+        "sha256": "df6af1e1059a64debb819f1067e3a513889e50a5d40ffc3e08585af54a0b66e8"
+      },
+      {
+        "id": 3,
+        "data": "4f525048414e0a00",
+        "sha256": "a8a59448efaeb943f740c071501faa964d3e7a27b5ad255f2a1591545bde946d"
+      },
+      {
+        "id": 4,
+        "data": "0000000000000000",
+        "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+      },
+      {
+        "id": 5,
+        "data": "0000000000000000",
+        "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+      },
+      {
+        "id": 6,
+        "data": "0000000000000000",
+        "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+      },
+      {
+        "id": 7,
+        "data": "0000000000000000",
+        "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+      }
+    ],
+    "bitmap": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "checksum": "209219af120cb7e8ad169bb454868d80e12319cbabe25a56370bfaa50cb7cee1"
+  },
+  "trusted_manifest": {
+    "format": "EDUFS-MANIFEST1",
+    "files": [
+      {
+        "inode": 3,
+        "size": 10,
+        "sha256": "79e804ad217bee20bc841976bc3584522377a8267a2f9a14544123945fd15369"
+      },
+      {
+        "inode": 4,
+        "size": 3,
+        "sha256": "a12b7cb43c9d9134b5bb1b35e9096b66775d9e92e7611d1cc92b02edd6782a87"
+      },
+      {
+        "inode": 5,
+        "size": 7,
+        "sha256": "a6c057da1ee9e3c415b06d20f4bc255c112e50f7c83f791b5e493832bd33c450"
+      }
+    ]
+  },
+  "expected_files": [
+    {
+      "inode": 3,
+      "hex": "4741494e3d312e32350a",
+      "size": 10,
+      "sha256": "79e804ad217bee20bc841976bc3584522377a8267a2f9a14544123945fd15369"
+    },
+    {
+      "inode": 4,
+      "hex": "4f4b0a",
+      "size": 3,
+      "sha256": "a12b7cb43c9d9134b5bb1b35e9096b66775d9e92e7611d1cc92b02edd6782a87"
+    },
+    {
+      "inode": 5,
+      "hex": "4f525048414e0a",
+      "size": 7,
+      "sha256": "a6c057da1ee9e3c415b06d20f4bc255c112e50f7c83f791b5e493832bd33c450"
+    }
+  ],
+  "expected_paths": {
+    "/config.bin": 3,
+    "/archive.bin": 5,
+    "/reports/readme.txt": 4
+  },
+  "seed_image_sha256": "2dc79e0367f27c7e37c20c4ec80817a723684bfb56bbb84ea5a79b93252c0265",
+  "seed_file_bytes": 1673,
+  "expected_repair_actions": [
+    {
+      "op": "remove_entry",
+      "directory": 6,
+      "name": "ghost.txt",
+      "target": 31
+    },
+    {
+      "op": "set_size",
+      "inode": 3,
+      "value": 10
+    },
+    {
+      "op": "set_nlink",
+      "inode": 3,
+      "value": 1
+    },
+    {
+      "op": "set_bitmap",
+      "value": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "expected_orphan_actions": [
+    {
+      "op": "add_entry",
+      "directory": 2,
+      "name": "inode_5",
+      "target": 5
+    },
+    {
+      "op": "set_nlink",
+      "inode": 5,
+      "value": 1
+    }
+  ]
+}
