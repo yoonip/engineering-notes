@@ -6,7 +6,7 @@
 
 ### 두 방향에서 각각 한 비트를 고릅니다
 
-QPSK는 한 심벌에 두 비트를 싣습니다. 직교하는 I와 Q 방향에서 각각 + 또는 −를 고르면 네 점을 만들 수 있습니다. 같은 총 심벌 에너지를 네 점에 나눈다는 말과, 비트 에너지를 고정한다는 말은 다릅니다. BER을 비교할 때 이 눈금을 맞추지 않으면 3 dB 차이 같은 잘못된 결과를 얻습니다.
+QPSK는 한 심벌에 두 비트를 싣습니다. 직교하는 I와 Q 방향에서 각각 + 또는 −를 고르면 네 점을 만들 수 있습니다. 심벌 에너지 Es를 고정하는 것과 비트 에너지 Eb를 고정하는 것은 서로 다른 비교 조건입니다. BER을 비교할 때 이 눈금을 맞추지 않으면 3 dB 차이 같은 잘못된 결과를 얻습니다.
 
 여기서는 coherent detection, 완전한 carrier·symbol timing, AWGN, Gray mapping, 부호화 없는 전송을 가정합니다. 두 비트가 I와 Q의 부호에 하나씩 대응하므로 인접 점은 한 비트만 다릅니다. [MIT 통신 강의의 signal-space·Gaussian 판정](https://ocw.mit.edu/courses/16-36-communication-systems-engineering-spring-2009/ecba60e6759f2eb6683f340cc5fed6b2_MIT16_36s09_lec11.pdf)과 [MathWorks berawgn 수식](https://www.mathworks.com/help/comm/ug/analytical-expressions-used-in-berawgn-function-and-bit-error-rate-analysis-app.html)을 대조합니다.
 
@@ -19,13 +19,13 @@ r_k=a p_k+n_k,\qquad z=\sum_kp_kr_k
 =a+\sum_kp_kn_k.
 ```
 
-정합필터 출력의 신호는 a입니다. 잡음은 독립이므로 분산이 더해집니다.
+송신 심벌 a가 주어졌을 때 정합필터 출력의 평균은 a입니다. 독립적인 잡음 표본의 분산을 더하면 다음 조건부 분산을 얻습니다.
 
 ```math
-\mathrm{Var}(z)=\sum_kp_k^2\frac{N_0}{2}=\frac{N_0}{2}.
+\mathrm{Var}(z\mid a)=\sum_kp_k^2\frac{N_0}{2}=\frac{N_0}{2}.
 ```
 
-표본 수가 늘어도 pulse 에너지를 1로 고정했으므로 decision SNR이 저절로 좋아지지 않습니다. L개 평균이 잡음을 줄인다고만 생각하면서 송신 에너지 증가를 빠뜨리는 것이 흔한 정규화 오류입니다.
+a 자체도 같은 확률의 ±1 확률변수로 보고 잡음과 독립이라면 전체 분산은 Var(z)=1+N0/2입니다. 비트 판정에는 위의 조건부 잡음 분산을 사용합니다. 표본 수가 늘어도 pulse 에너지를 1로 고정했으므로 decision SNR이 저절로 좋아지지 않습니다. L개 평균이 잡음을 줄인다고만 생각하면서 송신 에너지 증가를 빠뜨리는 것이 흔한 정규화 오류입니다.
 
 ### 판정 확률에서 BER·SER까지
 
@@ -97,7 +97,7 @@ Assume coherent detection, perfect carrier and timing recovery, uncoded transmis
 
 Choose an L-sample real pulse pk=1/sqrt(L), so its squared samples sum to one. Sending amplitude ±1 on each axis gives axis energy one, symbol energy two and bit energy one. Independent real sample noise has variance N0/2. These are normalized discrete orthonormal coordinates; mapping them to voltage and sampling rate requires an additional physical normalization.
 
-The matched-filter statistic is the pulse inner product with received samples: $`z=\sum p_kr_k=a+\sum p_kn_k`$. Independent noise gives variance $`\sum p_k^2N_0/2=N_0/2`$. Increasing L therefore does not improve decision SNR when pulse energy remains fixed. Averaging arguments that ignore an accompanying change in transmit energy give the wrong comparison.
+The matched-filter statistic is the pulse inner product with received samples: $`z=\sum p_kr_k=a+\sum p_kn_k`$. Conditioned on the transmitted symbol a, independent noise gives $`\mathrm{Var}(z\mid a)=\sum p_k^2N_0/2=N_0/2`$. If a is itself an equiprobable ±1 random variable independent of the noise, the unconditional variance is $`1+N_0/2`$; detection uses the conditional noise variance. Increasing L therefore does not improve decision SNR when pulse energy remains fixed. Averaging arguments that ignore an accompanying change in transmit energy give the wrong comparison.
 
 ### Deriving BER and SER
 
@@ -113,5 +113,5 @@ Observing zero errors does not prove a zero underlying BER. Very small error rat
 
 ## 출처 / Sources
 
-- MIT, *16.36 Lecture 11*: signal-space detection and Gaussian error tails.
-- MathWorks, *Analytical Expressions Used in berawgn*: coherent QPSK BER and SER. Both sources are linked above.
+- MIT, *16.36 Lecture 11* (Spring 2009), slides 4–7: signal-space detection and Gaussian error tails.
+- MathWorks, *Analytical Expressions Used in berawgn* (R2026b), “M-PSK”: coherent QPSK BER and SER. Both sources are linked above.
