@@ -6,6 +6,8 @@
 
 저전력 AI 연산, 메모리 회로, 신경망 에너지 모델링과 FPGA 계측 자동화 연구에 참여했습니다. 관련 프로젝트와 논문, 수상 기록을 여기에 모았습니다.
 
+이 페이지는 작성자가 참여한 연구와 발표·수상 이력을 안내합니다. 공개 소스와 실행 기록은 [구현 프로젝트](../프로젝트_projects/README.md)에서, 다른 연구자의 논문을 읽고 분석한 학습 자료는 [논문 해설](../논문해설_papers/README.md)에서 보실 수 있습니다. 아래의 참여 연구 기록과 학습 목적으로 작성한 논문 해설은 성격이 다른 자료입니다.
+
 ## 연구자 정보
 
 | 항목 | 내용 |
@@ -167,6 +169,8 @@ TOEIC Speaking IH (Intermediate High)
 [Home](../README.md) · [Topic Index](../분야별목차_CATALOG.md) · [GitHub Profile](https://github.com/yoonip)
 
 I have taken part in research on low-power AI computation, memory circuits, neural-network energy modeling, and FPGA-based measurement automation. This page brings together the related projects, publications, and awards.
+
+This page records the author's research participation, publications and awards. Public source code and execution records are in [implementation projects](../프로젝트_projects/README.md); study notes on other researchers' work are in [paper studies](../논문해설_papers/README.md). Those study notes are separate from the research participation listed here.
 
 ### Researcher Information
 
