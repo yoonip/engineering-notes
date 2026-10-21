@@ -1,6 +1,6 @@
 # 예술의 감상·표현·사회 / Art, expression and society
 
-어떤 장면이 인상적이었다면 무엇을 보고 그렇게 느꼈는지 설명할 수 있을까요? 같은 주제를 문장·소리·움직임·이미지로 나타내면 무엇이 달라질까요? 네 편의 실제 학습 본문에서 자체 장면을 관찰하고 표현 대안을 비교하며 관객과 제도의 역할을 살펴봅니다. 전문 미술사나 음악 이론을 먼저 배울 필요는 없습니다.
+어떤 장면이 인상적이었다면 무엇을 보고 그렇게 느꼈는지 설명할 수 있을까요? 같은 주제를 문장·소리·움직임·이미지로 나타내면 무엇이 달라질까요? 직접 만든 장면을 관찰하고 표현 대안을 비교하며 관객과 제도의 역할을 살펴봅니다. 전문 미술사나 음악 이론을 먼저 배울 필요는 없습니다.
 
 예술은 음악·문학·미술·공연 등을 아우르는 상위 개념으로도 쓰입니다. 이 폴더는 그 여러 분야에 공통으로 물을 수 있는 감상·표현·관객·사회의 질문을 다루는 학습 경로입니다. 각 분야를 서로 배타적으로 정의하는 분류가 아닙니다. 선·색·공간·재료·양식의 시각적 분석은 별도의 67번 미술 경로에서 다루며, 소리의 시간·음정·화음은 [63번 음악 경로](../63-음악기초와듣기_music-foundations-listening/README.md)로 이어집니다.
 
@@ -19,6 +19,6 @@
 
 ## English overview
 
-These four lessons examine evidence in interpretation, choices of medium, audience experience and arts institutions. Art is an umbrella concept; this route concentrates on questions shared across media. Original exercises are distinguished from museum descriptions and research evidence.
+These lessons examine evidence in interpretation, choices of medium, audience experience and arts institutions. Art is an umbrella concept; this route concentrates on questions shared across media. Original exercises are distinguished from museum descriptions and research evidence.
 
 [인문사회 학습 목록](../README.md)
