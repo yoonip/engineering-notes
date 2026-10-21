@@ -29,6 +29,16 @@ OpenAI APIs, Claude API, Gemini API, LangChain, LlamaIndex, DSPy, MCP, lm-evalua
 
 - [RAG와 도구 실행: 검색, 근거, 평가의 경계](해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md)
 
+## 불량 비율과 경보의 정밀도
+
+경보를 검토할 때에는 전체 정확도뿐 아니라 “경보 중 실제 대상이 몇 개인가”를 봅니다. Precision은 `TP/(TP+FP)`로 경보 전체를 분모로 합니다. Recall은 `TP/(TP+FN)`로 실제 불량 전체를, FPR은 `FP/(FP+TN)`로 실제 정상 전체를 분모로 합니다. FPR 10%가 경보의 10%만 오경보라는 뜻은 아닙니다.
+
+[고정 점수의 실행 사례](../../설계와검증사례_engineering-cases/불량비율과경보의정밀도_ai-prevalence-precision.md)에서는 TPR 0.9·FPR 0.1을 같게 정하고 실제 불량 비율을 50%에서 1%로 바꿨습니다. A는 200행에서 TP 90·FP 10, B는 1,000행에서 TP 9·FP 99입니다. Precision은 90%에서 약 8.33%로 달라지며 경보는 각각 100개·108개입니다. 표본 수가 다르므로 경보 비율 50%·10.8%도 함께 기록했습니다. Accuracy가 둘 다 90%인 것은 TPR와 TNR을 모두 0.9로 정했기 때문이며 일반 법칙이 아닙니다.
+
+기저율은 집합 전체에서 대상이 원래 나타나는 비율입니다. 실제 새 공장에서는 class별 점수 분포까지 달라질 수 있으므로, 이 합성 대조를 배포처의 성능 보장으로 쓰지 않습니다. 점수 0.8도 보정된 불량 확률 80%라는 뜻이 아닙니다. label이 하나라도 미상이면 전체 성능과 비용을 미확정으로 두되, 점수에서 셀 수 있는 경보 수는 남깁니다. 경보가 없어 precision의 분모가 0이면 값은 None입니다.
+
+예제의 FP당 1·FN당 20이라는 자체 비용은 A 210·B 119, 표본당 1.05·0.119입니다. 실제 금액·인건비·안전 위험이 아닙니다. 비용의 절대 합계나 accuracy 하나로 서로 다른 모집단을 순위 매기지 않습니다. 평가 정답으로 threshold를 다시 골라 같은 집합을 최종 성능으로 보고하는 호출은 거부합니다. [코드와 입력 계약](../../예제_examples/실무검증_practical-validation/ai_prevalence/README.md), [실제 실행·오류 변이 기록](../../설계와검증사례_engineering-cases/검증기록_evidence/기저율과경보업무량검사_20261021.md)을 함께 볼 수 있습니다.
+
 ## English
 
 ### AI applications, agents, and evaluation
@@ -53,6 +63,12 @@ The related APIs and tools include OpenAI APIs, Claude API, Gemini API, LangChai
 
 - [RAG와 도구 실행: 검색, 근거, 평가의 경계](해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md#english)
 
+
+### Alert precision and defect prevalence
+
+Precision divides true positives by all alerts, whereas recall divides by actual positives and FPR divides by actual negatives. In the [synthetic fixed-score case](../../설계와검증사례_engineering-cases/불량비율과경보의정밀도_ai-prevalence-precision.md#english), TPR 0.9 and FPR 0.1 remain fixed while prevalence changes from 50% to 1%. Precision changes from 90/100 to 9/108; there are 100 alerts among 200 rows and 108 among 1,000. Accuracy stays at 0.9 here only because TPR and TNR are both 0.9.
+
+Unknown labels leave all label-dependent cohort metrics and losses unestablished, while observable alert counts remain available. A zero denominator gives a None value. Scores are not calibrated probabilities. The assigned loss `FP + 20*FN` and the count of review items are educational quantities, not monetary, labor, or safety measurements. The example rejects threshold selection using evaluation answers and does not change existing training data or checkpoints.
 
 ## 심화 해설 | Advanced article
 
