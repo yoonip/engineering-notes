@@ -4,7 +4,7 @@
 
 [전체 분야](../../분야별목차_CATALOG.md) · [언어이해·추리논증의 개념과 판단](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
 
-## 처음 읽는 아홉 장
+## 먼저 읽을 기본 개념
 
 | 본문 | 읽을 내용 |
 |---|---|
@@ -40,7 +40,7 @@
 
 ## English
 
-The nine concept chapters introduce philosophical questions and periods, reality and causation, knowledge and justification, ethics and justice, mind, freedom and identity, meaning and language use, scientific explanation and testing, political legitimacy, and cultivation and action in early Chinese philosophy. Each uses concrete cases, competing reasons, objections and self-check questions. Established terminology is distinguished from agreement on every philosophical conclusion.
+The concept chapters introduce philosophical questions and periods, reality and causation, knowledge and justification, ethics and justice, mind, freedom and identity, meaning and language use, scientific explanation and testing, political legitimacy, and cultivation and action in early Chinese philosophy. Each uses concrete cases, competing reasons, objections and self-check questions. Established terminology is distinguished from agreement on every philosophical conclusion.
 
 The reading path starts with concepts, then moves to argument analysis and evidence. Selected classic papers and recent AI studies support specific questions. Behaviour, internal function, subjective experience, causal control, numerical identity and moral status remain distinct claims whose connections require arguments.
 
