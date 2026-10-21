@@ -27,7 +27,7 @@
 
 ## 오류를 코드로 재현하기
 
-[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 RTOS·CAN·칩·AI 예제는 결정적 모델과 합성 자료입니다. 칩 시험 러너는 실제 호스트 자식프로그램을 실행해 프로세스 실패와 결과 계약 위반을 나눕니다. 인터럽트·DMA·캐시와 SPI·I2C의 호스트 모델, SystemVerilog와 Python을 비교하는 RTL 예제로 이어집니다.
+[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 RTOS·CAN·칩·AI 예제는 결정적 모델과 합성 자료입니다. 칩 시험 러너는 실제 호스트 자식프로그램을 실행해 프로세스 실패와 결과 계약 위반을 나눕니다. 인터럽트·DMA·캐시와 SPI·I2C의 호스트 모델, UART·이더넷 수신 경계와 워치독·리셋 정책, 실제 로컬 UDP socket, SystemVerilog와 Python을 비교하는 RTL·비동기 FIFO 예제로 이어집니다.
 
 | 재현하는 문제 | 원인과 해결 | 본문 |
 | --- | --- | --- |
@@ -48,6 +48,10 @@
 | SPI 읽기가 한 바이트 밀리거나 중간에 끊깁니다. | 해당 부품의 명령·주소·dummy·CS와 샘플링 에지를 대조합니다. | [SPI 전송 경계](../설계와검증사례_engineering-cases/SPI의선택선과더미클록_spi-cs-dummy-edges.md) |
 | I2C 응답은 왔는데 다른 주소의 데이터를 읽습니다. | 묶음 읽기의 START/STOP과 주소 단계, NACK의 주체를 나눕니다. | [I2C 묶음 읽기](../설계와검증사례_engineering-cases/I2C의묶음읽기와NACK_i2c-combined-read.md) |
 | RTL 값이나 출력 사이클이 기준과 다릅니다. | 부호·누산 폭·수락·지연·리셋 조건을 고정해 HDL 결과와 기대값을 비교합니다. | [RTL·기준 모델](../설계와검증사례_engineering-cases/RTL내적기의비트폭과전송계약_rtl-dot-handshake.md) |
+| UART를 읽을 때 메시지 일부만 오거나 여러 개가 붙습니다. | 수신 버퍼를 유지하고 길이·checksum 확인 뒤 완성된 프레임만 꺼냅니다. | [UART 수신 경계](../설계와검증사례_engineering-cases/UART의분할수신과재동기화_uart-stream-resync.md) |
+| UDP 응용 값에 채움 바이트가 붙거나 짧은 패킷을 승인합니다. | 캡처 길이·IP 길이·UDP 길이와 checksum·지원 범위를 구분합니다. | [Ethernet·UDP 경계](../설계와검증사례_engineering-cases/이더넷프레임의길이와UDP경계_ethernet-ipv4-udp.md) |
+| 제어 task가 멈췄는데 워치독이 계속 갱신됩니다. | task별 새 진행과 감시 구간을 검사하고 리셋 원인을 지우기 전에 저장합니다. | [워치독·리셋](../설계와검증사례_engineering-cases/작업진행을확인하는워치독과리셋기록_watchdog-health-reset.md) |
+| 서로 다른 클록 사이에서 FIFO의 값·개수·순서가 틀립니다. | 포인터 동기화·가득 참과 비어 있음·리셋 flush를 전송 기준 큐와 비교합니다. | [CDC·비동기 FIFO](../설계와검증사례_engineering-cases/비동기FIFO의Gray포인터와reset_cdc-async-fifo.md) |
 
 ## 업무 질문에서 시작하기
 
