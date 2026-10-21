@@ -17,7 +17,7 @@ CUDA의 thread는 프로그램의 실행 단위이고, block은 협력하고 동
 \left\lfloor\frac{a_i+w-1}{S}\right\rfloor\right\}.
 ```
 
-따라서 단순 모델의 전송량은 $`S\vert \mathcal S\vert `$입니다. 모든 주소가 서로 다른 단어라면 유효 byte 비율을 $`32w/(S\vert \mathcal S\vert )`$로 계산할 수 있습니다. 여러 thread가 같은 주소를 읽는 broadcast에서는 이 분자가 중복 요청량이므로, 고유하게 사용한 byte 수와 구분합니다. Coalescing은 thread 번호순 정렬 자체가 아니라 같은 명령의 주소들이 적은 구간에 모이는 성질입니다. 네 구간 안에서 주소 순서를 바꾸어도 구간 수는 같습니다.
+따라서 단순 모델의 전송량은 $`S\vert \mathcal S\vert `$입니다. 32개 thread의 w-byte 요청 영역이 서로 겹치지 않을 때 고유한 유효 byte 비율은 $`32w/(S\vert \mathcal S\vert )`$입니다. 주소가 다르더라도 요청 영역이 일부 겹치거나 같은 주소를 읽는 broadcast라면 이 분자는 중복을 포함합니다. 이때 고유 byte 수는 요청한 byte 주소의 합집합으로 따로 셉니다. Coalescing은 thread 번호순 정렬 자체가 아니라 같은 명령의 주소들이 적은 구간에 모이는 성질입니다. 네 구간 안에서 주소 순서를 바꾸어도 구간 수는 같습니다.
 
 | 32개 lane, 각 4 byte | 32 byte 구간 수 | 서로 다른 데이터의 유효 비율 |
 |---|---:|---:|
@@ -42,13 +42,14 @@ B\le\min\left(B_{\max},\left\lfloor\frac{T_{SM}}T\right\rfloor,
 
 [계산 모델](../../../예제_examples/확장기초_extended/ai_data/models.py)의 `memory_sectors`는 경계에 걸친 단어까지 포함해 집합을 계산합니다. `occupancy_bound`는 위 자원 상한을 구현하며 기본 용량은 설명용 가정입니다. 특정 GPU 사양으로 표시하지 않습니다.
 
-```python
-from models import memory_sectors, occupancy_bound
+다음 코드는 `예제_examples/확장기초_extended/ai_data`를 작업 폴더로 사용합니다. `models`가 이 폴더의 기존 계산 모델을 가리키는지 확인합니다.
 
-# 연속 접근과 큰 간격 접근이 요구하는 구간 수를 비교한다.
-print(memory_sectors([4 * i for i in range(32)]))   # 4
-print(memory_sectors([32 * i for i in range(32)]))  # 32
-print(occupancy_bound(256, 64, 0))                  # (4, 0.5)
+```python
+from models import memory_sectors, occupancy_bound  # from/import는 이 폴더의 계산 함수를 가져옵니다.
+
+print(memory_sectors([4 * i for i in range(32)]))  # 목록 내포로 연속 주소를 만들며 기대 구간 수는 4입니다.
+print(memory_sectors([32 * i for i in range(32)]))  # 주소 간격을 32 byte로 두면 기대 구간 수는 32입니다.
+print(occupancy_bound(256, 64, 0))  # block당 256 thread·thread당 64레지스터 가정의 상한은 (4, 0.5)입니다.
 ```
 
 [독립 검증](../../../예제_examples/확장기초_extended/ai_data/test_models.py)은 표의 세 패턴, 구간 경계를 넘는 단어, broadcast, 레지스터·shared memory 한계를 확인합니다. 이는 CPU에서 실행하는 주소·자원 계산 검증입니다. 실제 커널은 대상 GPU에서 결과 정확성, 전송 포함 실행 시간, profiler의 메모리 지표를 함께 측정해야 성능을 판단할 수 있습니다. Roofline의 연산량/전송량 분석에 이 글의 주소 배치와 자원 제한을 더하면 병목의 원인을 더 구체적으로 설명할 수 있습니다.
@@ -65,7 +66,7 @@ A CUDA thread is an execution unit and a block groups threads that can cooperate
 
 For the usual global-memory coalescing model on compute capability 6.0 or newer, count the required 32-byte regions. Thirty-two distinct aligned consecutive 4-byte loads touch four regions. Moving the first address by four bytes touches five; a 32-byte stride touches 32. The table above gives the corresponding useful-byte fractions. Cache reuse and actual DRAM traffic are additional effects. [NVIDIA coalescing](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#coalesced-access-to-global-memory)
 
-For addresses $`a_i`$, word width $`w`$ and region width $`S`$, the union in the equation above includes every region crossed by each word, including words spanning a boundary. The model transfers $`S\vert \mathcal S\vert `$ bytes. The fraction $`32w/(S\vert \mathcal S\vert )`$ assumes distinct requested words. Broadcast requests require distinguishing duplicate lane requests from unique useful bytes. Permuting addresses within the same four regions does not change the count: coalescing concerns locality within one warp instruction, not thread ordering by itself.
+For addresses $`a_i`$, word width $`w`$ and region width $`S`$, the union includes every region crossed by each word. The model transfers $`S\vert \mathcal S\vert `$ bytes. The unique useful-byte fraction $`32w/(S\vert \mathcal S\vert )`$ requires 32 nonoverlapping w-byte requests. Distinct starting addresses can still overlap; broadcasts duplicate entire requests. Count the union of requested byte addresses when unique useful bytes are needed. Permuting addresses within the same four regions does not change their count.
 
 ### Occupancy measures residency
 
@@ -75,9 +76,9 @@ Real allocation granularity, SM partitions and per-block limits can reduce resid
 
 ### Implementation and checks
 
-The linked `memory_sectors` computes the set of touched regions, and `occupancy_bound` implements the simplified bound. Its default capacities are illustrative assumptions, not specifications of a named GPU. The tests check aligned, misaligned, strided, boundary-spanning and broadcast accesses, plus register and shared-memory limits. They validate CPU calculations without running CUDA. Actual kernel performance requires correctness checks, timing including relevant transfers and profiler evidence on the target device. These address and residency models complement the operation/traffic analysis used by roofline.
+Run the existing snippet from `예제_examples/확장기초_extended/ai_data` so its `models` import resolves to that directory. `memory_sectors` counts touched regions; `occupancy_bound` implements the simplified bound with illustrative capacities. Tests cover aligned, misaligned, strided, boundary-spanning and broadcast accesses, plus resource limits. They validate CPU calculations without running CUDA. Actual performance requires correctness checks, relevant transfer timing and target profiler evidence. These address and residency models complement roofline's operation/traffic analysis.
 
 ## Sources
 
 - [NVIDIA CUDA Programming Guide, Writing SIMT Kernels](https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/writing-cuda-kernels.html): warp execution, divergence and global-memory transactions.
-- [NVIDIA CUDA Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html): coalescing examples, residency limits and the distinction between occupancy and performance. Reference date: 2026-10-19.
+- [NVIDIA CUDA C++ Best Practices Guide 13.4, §§10.2.1·11.1](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html): 32 byte 구간의 coalescing·상주 warp 비율·자원 할당 조건 / 32-byte coalescing, resident-warps ratio and allocation conditions. 해당 절 재확인 / sections rechecked: 2026-10-21.

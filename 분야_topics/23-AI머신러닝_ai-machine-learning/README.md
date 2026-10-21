@@ -19,27 +19,27 @@ PyTorch·TensorFlow·Keras·JAX는 텐서 연산과 모델 학습에 쓰입니�
 `y=x²`이면 `dy/dx=2x`입니다. PyTorch에서 x=3인 지점의 미분은 다음처럼 표현합니다.
 
 ```python
-import torch
+import torch  # import는 PyTorch 패키지를 불러옵니다.
 
-x = torch.tensor(3.0, requires_grad=True)
-y = x.square()
-y.backward()
-print(x.grad.item())  # dy/dx = 6.0
+x = torch.tensor(3.0, requires_grad=True)  # 미분 대상인 실수 scalar tensor를 만듭니다.
+y = x.square()  # .square()는 원소의 제곱을 계산하며 미분 경로를 기록합니다.
+y.backward()  # scalar y의 미분을 역으로 전파해 x.grad에 누적합니다.
+print(x.grad.item())  # .item()으로 scalar 값을 꺼냅니다. 새 x의 기대 미분값은 6.0입니다.
 ```
 
 TensorFlow에서는 GradientTape가 미분에 필요한 연산을 기록합니다.
 
 ```python
-import tensorflow as tf
+import tensorflow as tf  # as는 TensorFlow 패키지에 짧은 이름 tf를 붙입니다.
 
-x = tf.Variable(3.0)
-with tf.GradientTape() as tape:
-    y = x * x
-gradient = tape.gradient(y, x)
-print(gradient.numpy())  # dy/dx = 6.0
+x = tf.Variable(3.0)  # 기본적으로 미분을 추적하는 실수 변수를 만듭니다.
+with tf.GradientTape() as tape:  # with 블록 안에서 미분에 필요한 연산을 기록합니다.
+    y = x * x  # *는 곱셈이며 y=x²를 계산합니다.
+gradient = tape.gradient(y, x)  # 기록한 경로를 따라 dy/dx를 계산합니다.
+print(gradient.numpy())  # NumPy 값으로 꺼냅니다. 이 예제의 기대 미분값은 6.0입니다.
 ```
 
-두 예제는 scalar의 국소 미분을 구합니다. 신경망 학습에서는 많은 parameter에 대한 gradient를 계산해 optimizer에 전달합니다.
+두 예제는 scalar의 국소 미분을 구하며 파라미터를 갱신하지 않습니다. PyTorch의 `backward()`는 leaf tensor의 `.grad`에 미분을 누적하므로, 여러 학습 step에서 매번 새 gradient만 쓰려면 이전 gradient를 지워야 합니다. TensorFlow는 이 예제의 trainable `Variable`을 기본 추적하지만 일반 `Tensor`에는 `tape.watch()`가 필요할 수 있습니다. 기본 tape는 한 번의 `gradient()` 호출 뒤 자원을 해제합니다. [PyTorch 자동미분의 Computing Gradients·More on Computational Graphs](https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html), [TensorFlow의 추적 대상·tape 수명 설명](https://www.tensorflow.org/guide/autodiff)을 기준으로 한 코드 설명이며, 이 문서에서 두 프레임워크를 새로 실행한 결과는 아닙니다.
 
 ## 관련 기술
 
@@ -75,7 +75,7 @@ PyTorch, TensorFlow, Keras, and JAX provide tensor computation and model trainin
 
 For `y=x²`, the derivative is `dy/dx=2x`. The PyTorch example above calculates a gradient of 6 at `x=3` using `requires_grad`, `backward()`, and `x.grad`. The TensorFlow example obtains the same result using `GradientTape`, which records the operations required for differentiation.
 
-These examples compute a local derivative of a scalar function. Neural-network training calculates gradients for many parameters and passes them to an optimizer.
+These examples compute a local scalar derivative without updating parameters. PyTorch `backward()` accumulates into a leaf tensor's `.grad`, so clear old gradients when each training step should use a fresh gradient. TensorFlow watches the trainable `Variable` used here by default; an ordinary `Tensor` may require `tape.watch()`. A default tape releases its resources after one `gradient()` call. These explanations follow [PyTorch's gradient and computation-graph sections](https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html) and [TensorFlow's watching and tape-lifetime sections](https://www.tensorflow.org/guide/autodiff); they do not report a new execution of either framework.
 
 
 ### Concepts, derivations, models, and verification
