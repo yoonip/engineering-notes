@@ -7,9 +7,9 @@
 | 분야 | 다루는 대상 |
 | --- | --- |
 | [반도체·컴퓨팅 장치와 산업 시스템](반도체와산업컴퓨팅_chips-industrial/README.md) | HBM, ASML, GPU, GAA·후면 전력, 칩렛, CXL, SSD, SoC, 양자컴퓨터, 자동화 공장, 디지털트윈 |
-| [기기와 모빌리티](기기와모빌리티_devices-mobility/README.md) | 폴더블, OLED·microLED, XR, 전자종이, Wi-Fi 7, Thunderbolt·USB4, 배터리, F1 |
+| [기기와 모빌리티](기기와모빌리티_devices-mobility/README.md) | 폴더블, OLED·microLED, XR, 전자종이, Wi-Fi 7, Thunderbolt·USB4, 배터리, F1, Roadster |
 | [AI와 로봇](AI와로봇_ai-robotics/README.md) | ChatGPT·Claude, Gemini, 기기 내 AI, DLSS·FSR·XeSS, FSD·Waymo, Optimus, Atlas, Spot |
-| [우주와 운송](우주와운송_space-transport/README.md) | Falcon 9, Starship, Starlink, Roadster와 항공 터보팬의 추진·통신·운용 |
+| [우주와 운송](우주와운송_space-transport/README.md) | Falcon 9, Starship, Starlink와 항공 터보팬의 추진·통신·운용 |
 | [방산 전자](방산전자_defense-electronics/README.md) | AESA·GaN, 레이저, F-35·Rafale·KF-21, AMRAAM·Meteor·SCALP, Patriot·THAAD·SAMP/T |
 | [의약품과 생명공학](의약품과생명공학_biomedical/README.md) | 위고비·마운자로와 후속 약물, 카스게비의 유전자 편집, CAR-T의 세포치료 |
 | [에너지와 물](에너지와물_energy-water/README.md) | 히트펌프, 해상풍력, 차세대 지열, 담수화, 장주기 저장, 수소 전해조, 소형원자로 |
@@ -69,7 +69,7 @@
 | 글 | 확인할 내용 | 근거의 형태 |
 | --- | --- | --- |
 | [SQLite WAL](SQLite의동시접근_SQLITE.md) | 두 연결의 읽기·쓰기, 스냅샷·잠금·체크포인트 | 저장소의 실제 트랜잭션 실행과 추가 계산 |
-| [모델 평가 지표](모델평가지표_MODEL_EVALUATION.md) | 정확도·오류·정밀도·재현율·확률·속도 | 자체 예제와 공개 평가 정의 |
+| [모델 평가 지표](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/모델평가지표_MODEL_EVALUATION.md) | 정확도·오류·정밀도·재현율·확률·속도 | 자체 예제와 공개 평가 정의 |
 | [도구와 환경](../도구와환경_tools/README.md) | 언어·컴파일러·시뮬레이터·계측 도구 | 공식 문서와 저장소의 실행 예제 |
 
 ## English

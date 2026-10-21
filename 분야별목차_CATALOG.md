@@ -6,7 +6,7 @@
 
 철학은 [기본 개념과 대표 입장](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)에서 질문·실재·지식·윤리·마음·정치적 정당성과 수양의 개념을 익힙니다. 대표 논증과 [최근 AI 연구 비교](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)는 각 개념의 근거와 반론을 더 읽는 자료입니다.
 
-| 이어서 읽을 분야 | 논문 해설 | 제품·산업 분석 |
+| 이어서 읽을 분야 | 논문 해설 | 관련 해설과 제품 분석 |
 |---|---|---|
 | 에너지·물·환경 | [태양전지·전해질·담수화·탄소](논문해설_papers/에너지와환경_energy-environment/README.md) | [히트펌프·풍력·지열·물·저장](제품리뷰_reviews/에너지와물_energy-water/README.md) |
 | 통신·측정 | [안테나·오류정정·광섬유·시계·중력](논문해설_papers/통신과측정_communications-metrology/README.md) | [해저 통신·NTN·위치 추정·센서](제품리뷰_reviews/통신과센서_communications-sensing/README.md) |
@@ -16,7 +16,7 @@
 | 유체·추진·냉각 | [비압축 유동과 압력 투영](논문해설_papers/유체와수치해석_fluids-numerical-methods/README.md) | [항공 터보팬의 추력과 정비](제품리뷰_reviews/우주와운송_space-transport/항공터보팬의추력과정비_turbofan-engines.md) |
 | 관측·시장·제도 | [관측과 개입](논문해설_papers/인과추론_causal-inference/README.md) · [품질 정보와 거래](논문해설_papers/시장과제도_markets-institutions/README.md) | [산업 생태계와 전환 비용](제품리뷰_reviews/산업과기술경쟁_industry-competition/README.md) |
 | 마음·의식·몸과 판단 | [AI·마음 철학](논문해설_papers/마음과인공지능철학_mind-ai-philosophy/README.md) · [호르몬과 행동](논문해설_papers/호르몬과행동_hormones-behaviour/README.md) | [행동·경험·생물학적 원인과 가치 판단](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI의마음과인간의판단_minds-bodies-and-judgment.md) |
-| 자유·책임·같은 사람의 지속 | [자유의지와 책임](논문해설_papers/자유의지와책임_free-will-responsibility/README.md) · [자아와 인격 동일성](논문해설_papers/자아와인격동일성_self-personal-identity/README.md) · [의도와 의사결정](논문해설_papers/의도와의사결정_intention-decision/README.md) | [입장별 비교와 AI·호르몬 사례](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/자유의지와인격동일성_free-will-and-personal-identity.md) |
+| 자유의지·책임·인격 동일성 | [자유의지와 책임](논문해설_papers/자유의지와책임_free-will-responsibility/README.md) · [자아와 인격 동일성](논문해설_papers/자아와인격동일성_self-personal-identity/README.md) · [의도와 의사결정](논문해설_papers/의도와의사결정_intention-decision/README.md) | [입장별 비교와 AI·호르몬 사례](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/자유의지와인격동일성_free-will-and-personal-identity.md) |
 
 [처음으로](README.md) · [공학 기초](공학기초_foundations/README.md) · [출처](참고자료_references/README.md)
 
@@ -28,7 +28,7 @@
 
 ## 개발 환경과 언어 | Development environments and languages
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
 | [Linux·Bash](분야_topics/01-linux-bash/README.md)<br>Linux & Bash | [파이프가 꽉 찼을 때: backpressure와 종료 조건](분야_topics/01-linux-bash/해설_notes/파이프역압력_pipe-backpressure.md)<br>[Linux에서 프로그램, 권한과 파이프가 만나는 곳](분야_topics/01-linux-bash/해설_notes/프로세스-권한-파이프_processes-permissions-pipelines.md) |
 | [Git과 개발 도구](분야_topics/02-개발도구_git-development-tools/README.md)<br>Git & Development Tools | [Git 이력과 다시 만들 수 있는 결과물](분야_topics/02-개발도구_git-development-tools/해설_notes/Git이력과다시만들수있는결과물_commit-dag-reproducible-builds.md)<br>[바뀐 입력만 다시 만들기: 내용 기반 빌드와 캐시](분야_topics/02-개발도구_git-development-tools/해설_notes/내용기반빌드_content-addressed-build.md) |
@@ -38,7 +38,7 @@
 
 ## 수학·물리·알고리즘 | Mathematics, physics and algorithms
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
 | [MATLAB과 과학 계산](분야_topics/05-과학계산_matlab-scientific/README.md)<br>MATLAB & Scientific Computing | [MATLAB 수치해석: 답의 오차와 잔차는 왜 다를까요](분야_topics/05-과학계산_matlab-scientific/해설_notes/MATLAB수치해석_linear-solves-conditioning-residuals.md)<br>[비선형 방정식: 빠른 Newton과 안전한 구간 좁히기](분야_topics/05-과학계산_matlab-scientific/해설_notes/구간을지키는근찾기_safeguarded-root-finding.md) |
 | [수식과 코드](분야_topics/06-수식과코드_math-to-code/README.md)<br>Math to Code | [단위, 차원, 측정 불확도](분야_topics/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md)<br>[미분방정식에서 수치해로](분야_topics/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md)<br>[선형대수와 최소제곱](분야_topics/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md)<br>[작은 특잇값이 오차를 키울 때: ridge 정규화](분야_topics/06-수식과코드_math-to-code/해설_notes/정규화와작은특잇값_ridge-spectral-filtering.md)<br>[확률, 평균, 추정의 불확실성](분야_topics/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md) |
@@ -49,11 +49,11 @@
 
 ## 회로·소자·계측 | Circuits, devices and measurement
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
 | [회로와 전자공학](분야_topics/09-회로전자공학_circuits-electronics/README.md)<br>Circuits & Electronics | [RC·RLC: 회로 법칙에서 시간·주파수 응답까지](분야_topics/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md)<br>[회로를 행렬로 풀기: Modified Nodal Analysis](분야_topics/09-회로전자공학_circuits-electronics/해설_notes/회로를행렬로풀기_mna.md) |
 | [반도체 소자](분야_topics/10-반도체소자_semiconductors/README.md)<br>Semiconductor Devices | [MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계](분야_topics/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md)<br>[작은 전류의 증폭 효율: subthreshold와 gm/Id](분야_topics/10-반도체소자_semiconductors/해설_notes/작은전류의증폭효율_subthreshold.md) |
-| [아날로그 IC 설계·Cadence·Spectre](분야_topics/11-아날로그IC설계_analog-ic-cadence/README.md)<br>Analog IC Design: Cadence & Spectre | [동작점에서 주파수 응답까지: 소신호와 AC 해석](분야_topics/11-아날로그IC설계_analog-ic-cadence/해설_notes/동작점에서주파수응답까지_small-signal-ac-operating-point.md)<br>[피드백을 걸면 이득과 대역폭은 어떻게 바뀝니까](분야_topics/11-아날로그IC설계_analog-ic-cadence/해설_notes/피드백과대역폭_feedback.md) |
+| [아날로그 IC 설계·Cadence·Spectre](분야_topics/11-아날로그IC설계_analog-ic-cadence/README.md)<br>Analog IC Design: Cadence & Spectre | [동작점에서 주파수 응답까지: 소신호와 AC 해석](분야_topics/11-아날로그IC설계_analog-ic-cadence/해설_notes/동작점에서주파수응답까지_small-signal-ac-operating-point.md)<br>[피드백에 따른 이득과 대역폭](분야_topics/11-아날로그IC설계_analog-ic-cadence/해설_notes/피드백과대역폭_feedback.md) |
 | [PCB와 하드웨어 설계](분야_topics/12-PCB하드웨어설계_pcb-hardware/README.md)<br>PCB & Hardware Design | [전원 배선까지 함께 보기: PDN, decoupling과 귀환 전류](분야_topics/12-PCB하드웨어설계_pcb-hardware/해설_notes/전원은배선까지포함한다_pdn-decoupling-return-current.md)<br>[커패시터를 더 달았는데 왜 전원 임피던스가 커질까요](분야_topics/12-PCB하드웨어설계_pcb-hardware/해설_notes/커패시터사이의공진_pdn-antiresonance.md) |
 | [전자기학·RF·안테나](분야_topics/29-전자기학-RF_electromagnetics-rf/README.md)<br>Electromagnetics, RF & Antennas | [사분파장 정합: 선로 길이로 임피던스 바꾸기](분야_topics/29-전자기학-RF_electromagnetics-rf/해설_notes/사분파장정합_quarter-wave.md)<br>[전송선과 반사: 배선도 신호를 저장하고 전달합니다](분야_topics/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md) |
 | [전력전자와 에너지](분야_topics/31-전력전자에너지_power-energy/README.md)<br>Power Electronics & Energy | [부하가 갑자기 바뀔 때: buck의 평균 과도모델](분야_topics/31-전력전자에너지_power-energy/해설_notes/부하변화의과도응답_buck-transient.md)<br>[스위칭으로 낮은 전압 만들기: buck의 CCM과 ripple](분야_topics/31-전력전자에너지_power-energy/해설_notes/스위칭으로낮은전압만들기_buck-ccm-ripple.md) |
@@ -62,12 +62,12 @@
 
 ## 디지털 설계·구조·제조 | Digital design, architecture and manufacturing
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
 | [Verilog·SystemVerilog·RTL](분야_topics/13-RTL설계_verilog-systemverilog/README.md)<br>Verilog, SystemVerilog & RTL | [FSM과 FIFO: 요청과 실제 전송을 구분하기](분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md)<br>[고정소수점 곱셈: 비트 폭, 반올림, 포화를 따로 결정하기](분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/고정소수점의경계_fixed-point.md) |
 | [하드웨어 검증](분야_topics/14-하드웨어검증_hardware-verification/README.md)<br>Hardware Verification | [Assertion·coverage·formal의 검증 범위](분야_topics/14-하드웨어검증_hardware-verification/해설_notes/검증에서무엇을확인했는가_assertions-coverage-formal.md)<br>[개수는 맞아도 순서가 다른 경우: 작은 모델의 전수검사](분야_topics/14-하드웨어검증_hardware-verification/해설_notes/불변식의빈틈_model-checking.md) |
 | [FPGA·ASIC 설계](분야_topics/15-FPGA-ASIC설계_fpga-asic/README.md)<br>FPGA & ASIC Design | [너무 늦거나 빠른 신호의 문제: setup·hold와 STA](분야_topics/15-FPGA-ASIC설계_fpga-asic/해설_notes/너무늦어도너무빨라도문제다_setup-hold-static-timing.md)<br>[여러 주기를 쓰는 경로: multicycle과 hold 관계](분야_topics/15-FPGA-ASIC설계_fpga-asic/해설_notes/여러주기를쓰는경로_multicycle.md) |
-| [Arm·RISC-V와 프로세서 구조](분야_topics/16-프로세서구조_arm-riscv/README.md)<br>Arm, RISC-V & Computer Architecture | [명령어가 보는 메모리: ISA, byte 순서와 load/store](분야_topics/16-프로세서구조_arm-riscv/해설_notes/명령어가보는메모리_isa-byte-order-load-store.md)<br>[페이지 안에서 캐시를 찾기: VIPT와 alias 조건](분야_topics/16-프로세서구조_arm-riscv/해설_notes/페이지안의캐시인덱스_vipt.md) |
+| [Arm·RISC-V와 프로세서 구조](분야_topics/16-프로세서구조_arm-riscv/README.md)<br>Arm, RISC-V & Computer Architecture | [RISC-V 메모리 접근: 주소·바이트 순서·부호와 정렬](분야_topics/16-프로세서구조_arm-riscv/해설_notes/명령어가보는메모리_isa-byte-order-load-store.md)<br>[페이지 안에서 캐시를 찾기: VIPT와 alias 조건](분야_topics/16-프로세서구조_arm-riscv/해설_notes/페이지안의캐시인덱스_vipt.md) |
 | [메모리와 저장장치](분야_topics/33-메모리저장장치_memory-storage/README.md)<br>Memory & Storage Systems | [SRAM을 읽을 때 저장 노드가 올라가는 이유](분야_topics/33-메모리저장장치_memory-storage/해설_notes/SRAM읽기교란_read-disturb.md)<br>[메모리 지역성과 캐시: 평균 지연과 대역폭을 나눠 보기](분야_topics/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md) |
 | [SoC와 연결 구조](분야_topics/34-SoC연결구조_soc-interconnects/README.md)<br>SoC & Interconnects | [준비된 순간에만 옮기기: ready/valid와 backpressure](분야_topics/34-SoC연결구조_soc-interconnects/해설_notes/준비된순간에만옮기기_ready-valid-backpressure.md)<br>[멀리 있는 버퍼를 넘치지 않게 쓰기: credit flow control](분야_topics/34-SoC연결구조_soc-interconnects/해설_notes/크레딧으로흐름제어_credit-flow.md) |
 | [EDA와 오픈 하드웨어](분야_topics/35-EDA오픈하드웨어_eda-open-hardware/README.md)<br>EDA & Open Hardware Ecosystems | [RTL에서 layout까지: 서로 다른 검증을 연결하는 EDA 흐름](분야_topics/35-EDA오픈하드웨어_eda-open-hardware/해설_notes/RTL에서layout까지_rtl-netlist-timing-physical-checks.md)<br>[다른 회로, 같은 상태 전이: equivalence를 확인하는 기준](분야_topics/35-EDA오픈하드웨어_eda-open-hardware/해설_notes/같은상태전이_equivalence.md) |
@@ -77,9 +77,9 @@
 
 ## 임베디드·통신·제어 | Embedded systems, communications and control
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
-| [펌웨어·RTOS](분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md)<br>Firmware & RTOS | [CPU와 장치가 같은 데이터를 다룰 때: MMIO, 인터럽트, DMA](분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md)<br>[RTOS의 우선순위 역전: 누가 mutex를 놓을 수 있을까요](분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/우선순위역전_priority-inheritance.md) |
+| [펌웨어·RTOS](분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md)<br>Firmware & RTOS | [CPU와 장치가 같은 데이터를 다룰 때: MMIO, 인터럽트, DMA](분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md)<br>[뮤텍스 대기와 우선순위 상속](분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/우선순위역전_priority-inheritance.md) |
 | [임베디드 Linux](분야_topics/18-임베디드Linux_embedded-linux/README.md)<br>Embedded Linux | [Embedded Linux: 부팅, Device Tree와 드라이버의 경계](분야_topics/18-임베디드Linux_embedded-linux/해설_notes/boot-devicetree-driver-boundaries.md)<br>[Embedded Linux의 readiness: 바이트를 끝까지 읽는 상태](분야_topics/18-임베디드Linux_embedded-linux/해설_notes/준비이벤트와레코드_poll-record-streams.md) |
 | [OpenOCD·GDB와 시스템 디버깅](분야_topics/19-시스템디버깅_openocd-debugging/README.md)<br>OpenOCD, GDB & Instrumentation | [OpenOCD와 GDB: 연결, 정지 상태와 관찰의 의미](분야_topics/19-시스템디버깅_openocd-debugging/해설_notes/OpenOCD와GDB_debug-transport-state-observation.md)<br>[Watchpoint: 값이 바뀐 순간과 메모리 접근은 다릅니다](분야_topics/19-시스템디버깅_openocd-debugging/해설_notes/접근을잡는관찰점_watchpoints-access-values.md) |
 | [인터페이스와 통신](분야_topics/20-인터페이스통신_interfaces-communications/README.md)<br>Interfaces & Communications | [I2C 레지스터 읽기: repeated START와 마지막 NACK](분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/I2C묶음전송_i2c-combined-transactions.md)<br>[바이트가 메시지가 되려면: UART, 프레이밍과 CRC](분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md) |
@@ -89,7 +89,7 @@
 
 ## GPU·병렬 계산·그래픽스 | GPUs, parallel computing and graphics
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
 | [GPU 구조](분야_topics/24-GPU구조_gpu-architecture/README.md)<br>GPU Architecture | [GPU의 warp, 메모리 접근, occupancy](분야_topics/24-GPU구조_gpu-architecture/해설_notes/GPU메모리와실행자원_warp-memory-occupancy.md)<br>[타일 재사용과 shared-memory bank conflict](분야_topics/24-GPU구조_gpu-architecture/해설_notes/타일메모리와은행충돌_tiled-memory.md) |
 | [CUDA와 GPU 성능 최적화](분야_topics/25-CUDA성능최적화_cuda-performance/README.md)<br>CUDA & GPU Optimization | [경계 tile까지 계산하는 행렬곱: CPU 기준선과 CUDA kernel](분야_topics/25-CUDA성능최적화_cuda-performance/해설_notes/경계타일행렬곱_tiled-matmul.md)<br>[계산 병목과 데이터 대기: Roofline과 병렬화](분야_topics/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md) |
@@ -98,19 +98,19 @@
 
 ## AI·데이터·응용 | AI, data and applications
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
 | [AI·머신러닝·딥러닝](분야_topics/23-AI머신러닝_ai-machine-learning/README.md)<br>AI, Machine Learning & Deep Learning | [작은 MLP로 역전파를 끝까지 계산하기](분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/다층신경망역전파_mlp-backprop.md)<br>[미분에서 학습까지: 모델이 바뀌는 이유](분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md) |
 | [AI 모델과 API](분야_topics/26-AI모델-API_open-model-lab/README.md)<br>AI Providers, Public Models & APIs | [모델 파일에서 다음 토큰까지: 가중치, 토큰화, sampling](분야_topics/26-AI모델-API_open-model-lab/해설_notes/모델파일에서다음토큰까지_weights-tokenizers-and-sampling.md)<br>[Beam search의 목적함수와 KV cache의 메모리 예산](분야_topics/26-AI모델-API_open-model-lab/해설_notes/빔탐색과캐시예산_beam-cache-budget.md) |
 | [컴퓨터 비전과 영상 처리](분야_topics/43-컴퓨터비전_computer-vision/README.md)<br>Computer Vision & Image Processing | [역매핑과 쌍선형 보간 / Inverse mapping and bilinear interpolation](분야_topics/43-컴퓨터비전_computer-vision/해설_notes/역매핑과쌍선형보간_bilinear-warp.md)<br>[카메라 모델, 영상 필터, CV 검증](분야_topics/43-컴퓨터비전_computer-vision/해설_notes/카메라모델영상필터CV검증_camera-filtering-and-validation.md) |
 | [언어·음성·멀티모달 AI](분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/README.md)<br>Language, Speech & Multimodal AI | [Attention: 필요한 정보를 가중합으로 모으기](분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md)<br>[Attention의 역전파와 causal KV cache 검증](분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션역전파와캐시_attention-gradients.md) |
 | [AI 학습과 최적화](분야_topics/45-AI학습최적화_ai-training-optimization/README.md)<br>AI Training, Optimization & Compression | [Adam의 상태, bias correction과 학습 재개](분야_topics/45-AI학습최적화_ai-training-optimization/해설_notes/Adam상태와재시작_adam-state.md)<br>[학습의 계산과 평가: loss, batch, 학습률, data leakage](분야_topics/45-AI학습최적화_ai-training-optimization/해설_notes/학습의계산과평가_loss-batches-schedules-and-leakage.md) |
-| [AI 응용·에이전트·평가](분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md)<br>AI Applications, Agents & Evaluation | [RAG와 도구 실행: 검색, 근거, 평가의 경계](분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md)<br>[Macro·micro 지표와 평가의 불확실성](분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/평가지표와불확실성_metrics-uncertainty.md) |
+| [AI 응용·에이전트·평가](분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md)<br>AI Applications, Agents & Evaluation | [모델 평가 지표](분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/모델평가지표_MODEL_EVALUATION.md)<br>[RAG와 도구 실행: 검색, 근거, 평가의 경계](분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md)<br>[Macro·micro 지표와 평가의 불확실성](분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/평가지표와불확실성_metrics-uncertainty.md) |
 | [엣지 AI·TinyML·NPU](분야_topics/47-엣지AI-TinyML_edge-tinyml/README.md)<br>Edge AI, TinyML & NPUs | [정수 양자화: scale, zero-point, 배포 오차](분야_topics/47-엣지AI-TinyML_edge-tinyml/해설_notes/정수양자화_integer-quantization-and-deployment-error.md)<br>[채널별 정수 양자화와 오차의 크기](분야_topics/47-엣지AI-TinyML_edge-tinyml/해설_notes/채널별정수양자화_per-channel-quantization.md) |
 
 ## 소프트웨어·보안·서비스 | Software, security and services
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
 | [자동화와 기술 기록](분야_topics/28-자동화기술기록_automation-portfolio/README.md)<br>Automation & Portfolio | [CI를 줄여도 검증은 빠뜨리지 않기: 변경 영향과 캐시](분야_topics/28-자동화기술기록_automation-portfolio/해설_notes/변경영향과CI캐시_incremental-ci-cache.md)<br>[자동화의 기본: 검증, 재실행과 원자적 게시](분야_topics/28-자동화기술기록_automation-portfolio/해설_notes/자동화의기본_ci-idempotency-atomic-publication.md) |
 | [보안·암호·하드웨어 신뢰](분야_topics/38-보안암호하드웨어신뢰_security-cryptography/README.md)<br>Security, Cryptography & Hardware Trust | [오류를 찾는 것과 공격을 막는 것: 신뢰성·보안의 경계](분야_topics/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md)<br>[인증된 메시지의 재전송: replay window](분야_topics/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/인증후재전송검사_authenticated-replay-window.md) |
@@ -122,27 +122,27 @@
 
 ## 의공학과 의료 AI | Biomedical engineering and medical AI
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 |---|---|
 | [의공학과 의료 AI](분야_topics/62-의공학의료AI_medical-engineering/README.md) | [측정·지표·자료 분리·임상 평가](분야_topics/62-의공학의료AI_medical-engineering/해설_notes/측정에서진단과치료까지_medical-ai-evidence.md) · [의료영상](논문해설_papers/의료영상과진단_ai-medical-imaging/README.md) · [신경보철과 재활](논문해설_papers/신경보철과재활_neuroprosthetics-rehabilitation/README.md) · [AI 신약 개발](논문해설_papers/AI신약개발_ai-drug-discovery/README.md) |
 
 ## 논문·코드·특허 읽기 | Reading papers, code and patents
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
 | [논문·코드·특허](분야_topics/27-논문코드특허_papers-code-patents/README.md)<br>Paper, Code & Patent Reviews | [논문·코드·특허 읽기: 주장과 재현 근거를 연결하기](분야_topics/27-논문코드특허_papers-code-patents/해설_notes/논문코드특허읽기_claims-evidence-reproduction-licenses.md)<br>[부분곱 열 제거 실험 읽기](분야_topics/27-논문코드특허_papers-code-patents/해설_notes/부분곱실험의주장과근거_partial-product-reproduction-case.md)<br>[재현 실험 설계: 같은 조건에서 차이를 비교하기](분야_topics/27-논문코드특허_papers-code-patents/해설_notes/쌍체비교와재현실험_paired-reproducible-experiments.md) |
 
 ## 언어이해·추리논증 | Reading comprehension and argument reasoning
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
 | [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md)<br>Reading comprehension and argument reasoning | [언어이해: 문장·구조·관점·선택지](언어이해와추리논증_reading-reasoning/언어이해_reading/README.md)<br>[추리논증: 조건·논리·근거·반론](언어이해와추리논증_reading-reasoning/추리논증_reasoning/README.md)<br>[공식 시험 자료](언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)<br>[자료해석](언어이해와추리논증_reading-reasoning/자료해석_quantitative/README.md) |
 
 ## 인문사회와 예술 | Humanities, social sciences and arts
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
-| [철학과 비판적 사고](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/README.md)<br>Philosophy and Critical Thinking | [안다는 것, 논증한다는 것, 옳다고 판단한다는 것](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md)<br>[증거는 믿음을 어떻게 바꿉니까: 모형 비교와 Bayes factor](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/증거와모형비교_bayes-factors-and-beliefs.md)<br>[철학 지문의 개념과 논증](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/철학지문과논증_PHILOSOPHICAL_READING.md) |
+| [철학과 비판적 사고](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/README.md)<br>Philosophy and Critical Thinking | [안다는 것, 논증한다는 것, 옳다고 판단한다는 것](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md)<br>[증거와 믿음의 관계: 모형 비교와 베이즈 요인](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/증거와모형비교_bayes-factors-and-beliefs.md)<br>[철학 지문의 개념과 논증](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/철학지문과논증_PHILOSOPHICAL_READING.md) |
 | [경제·선택·지표](인문사회_humanities/59-경제선택지표_economics/README.md)<br>Economics, Choices and Indicators | [GDP와 물가 읽기: 명목 금액, 실질 변화, 지수의 차이](인문사회_humanities/59-경제선택지표_economics/해설_notes/GDP와물가읽기_gdp-inflation-real-values.md)<br>[산업 간 연결을 행렬로 읽기: 투입산출 모형과 고정점](인문사회_humanities/59-경제선택지표_economics/해설_notes/산업연관과고정점_leontief-input-output.md)<br>[희소성에서 선택으로: 기회비용, 한계와 유인](인문사회_humanities/59-경제선택지표_economics/해설_notes/희소성에서선택으로_scarcity-opportunity-cost-incentives.md) |
 | [사회·제도·증거](인문사회_humanities/60-사회제도증거_society-institutions/README.md)<br>Society, Institutions and Evidence | [사회를 자료로 읽기: 제도, 규범과 인과관계](인문사회_humanities/60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md)<br>[전체 비율이 층별 비교를 뒤집을 때: Simpson 역설과 표준화](인문사회_humanities/60-사회제도증거_society-institutions/해설_notes/집계와표준화_simpson-standardized-rates.md) |
 | [법의 기초와 법령 읽기](인문사회_humanities/61-법령읽기_law-foundations/README.md)<br>Law Foundations and Legal Reading | [법령을 읽는 첫걸음: 출처, 적용 시점과 해석](인문사회_humanities/61-법령읽기_law-foundations/해설_notes/법령을읽는첫걸음_legal-sources-and-interpretation.md)<br>[법령의 시간을 데이터로 읽기: 공포일, 시행일과 이력 조회](인문사회_humanities/61-법령읽기_law-foundations/해설_notes/법령이력과시간구간_version-timelines-and-scope.md)<br>[누가 누구에게 무엇을 요구할 수 있나요](인문사회_humanities/61-법령읽기_law-foundations/해설_notes/법적관계와권리의무_legal-relations-rights-and-duties.md)<br>[규칙의 조건과 증거가 말하는 사실](인문사회_humanities/61-법령읽기_law-foundations/해설_notes/법률요건과사실인정_rules-facts-and-evidence.md)<br>[요구에서 판단과 집행까지](인문사회_humanities/61-법령읽기_law-foundations/해설_notes/분쟁의절차와구제_procedure-and-remedies.md)<br>[판결의 쟁점·이유·결론을 연결하기](인문사회_humanities/61-법령읽기_law-foundations/해설_notes/판결의쟁점과이유_reading-judgments-issues-and-reasons.md) |
@@ -154,6 +154,6 @@
 
 ## 작성자의 지원 기록 | Author application records
 
-| 분야 | 실제 해설 |
+| 분야 | 주요 글 |
 | --- | --- |
 | [지원·시험·면접](소개_about/지원기록_APPLICATIONS.md)<br>Applications, Assessments & Interviews | [기록 읽기](소개_about/지원기록_APPLICATIONS.md) |

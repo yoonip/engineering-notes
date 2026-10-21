@@ -27,6 +27,7 @@ OpenAI APIs, Claude API, Gemini API, LangChain, LlamaIndex, DSPy, MCP, lm-evalua
 
 ## 기초 해설
 
+- [모델 평가 지표: 정확도·정밀도·재현율·속도·메모리](해설_notes/모델평가지표_MODEL_EVALUATION.md)
 - [RAG와 도구 실행: 검색, 근거, 평가의 경계](해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md)
 
 ## 불량 비율과 경보의 정밀도
@@ -61,6 +62,7 @@ The related APIs and tools include OpenAI APIs, Claude API, Gemini API, LangChai
 
 ### Foundation article
 
+- [Model evaluation metrics: quality, speed and memory](해설_notes/모델평가지표_MODEL_EVALUATION.md#english)
 - [RAG와 도구 실행: 검색, 근거, 평가의 경계](해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md#english)
 
 

@@ -13,6 +13,6 @@
 
 ## English
 
-These four studies connect neural recording, stimulation and functional assistance. Each article separates decoding measures from patient tasks, training duration and assistance conditions. The brain–spine interface, activity-specific spinal stimulation, photovoltaic retinal prosthesis and personalized closed-loop stimulation address different impairments and evidence levels.
+These studies connect neural recording, stimulation and functional assistance. Each article separates decoding measures from patient tasks, training duration and assistance conditions. The brain–spine interface, activity-specific spinal stimulation, photovoltaic retinal prosthesis and personalized closed-loop stimulation address different impairments and evidence levels.
 
 [의공학 학습](../../분야_topics/62-의공학의료AI_medical-engineering/README.md) · [논문 해설 목차](../README.md)

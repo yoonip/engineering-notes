@@ -25,6 +25,7 @@ OpenAI, Google/DeepMind, Microsoft, Meta, Anthropic, Samsung, DeepSeek, Qwen, Mi
 
 ## 기초 해설
 
+- [모델 평가 지표: 정확도·정밀도·재현율·속도·메모리](../46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/모델평가지표_MODEL_EVALUATION.md)
 - [모델 파일에서 다음 토큰까지: 가중치, 토큰화, sampling](해설_notes/모델파일에서다음토큰까지_weights-tokenizers-and-sampling.md)
 
 ## English
@@ -43,6 +44,7 @@ Accuracy, latency, throughput, memory use, and API cost measure different aspect
 
 ### Foundation article
 
+- [Model evaluation metrics: quality, speed and memory](../46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/모델평가지표_MODEL_EVALUATION.md#english)
 - [모델 파일에서 다음 토큰까지: 가중치, 토큰화, sampling](해설_notes/모델파일에서다음토큰까지_weights-tokenizers-and-sampling.md#english)
 
 

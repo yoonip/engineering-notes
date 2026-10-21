@@ -68,4 +68,4 @@ Performance overview와 개별 결과 절에서는 보지 않은 유전체 구�
 
 </details>
 
-[분야 목차로 돌아가기](README.md)
+[생명과학과 진단 목록](README.md)

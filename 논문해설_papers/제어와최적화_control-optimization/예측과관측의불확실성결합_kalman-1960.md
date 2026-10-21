@@ -2,11 +2,11 @@
 
 원문은 R. E. Kalman의 「A New Approach to Linear Filtering and Prediction Problems」입니다. Research Institute for Advanced Study에서 수행했으며, ASME Journal of Basic Engineering 82(1), 35–45에 1960년 실렸습니다. [DOI와 서지정보](https://doi.org/10.1115/1.3662552), [NTNU에서 공개한 원문 스캔](https://skoge.folk.ntnu.no/puublications_others/1960_Kalman%20-%20A%20new%20approach%20to%20linear%20filtering%20and%20prediction%20problems%20-%20Orinal%20version%20with%20comments.pdf)을 참고하실 수 있습니다.
 
-## 이 논문을 우주·관측 분야에서 읽는 이유
+## 잡음이 있는 관측에서 상태를 추정하기
 
 센서는 실제 상태를 그대로 알려 주지 않습니다. 위치 측정에는 잡음이 있고, 운동 예측에도 모델 오차가 있습니다. 어느 한쪽을 무조건 믿기보다 두 정보의 불확실성을 함께 계산할 필요가 있습니다. 이 논문은 과거 관측을 매번 전부 다시 처리하는 대신 상태 추정값과 오차 공분산을 갱신하는 방법을 제시합니다.
 
-1960년 원문 자체가 특정 현대 우주선의 실험 보고서는 아닙니다. 항법과 센서 융합을 이해하기 위한 기초 이론으로 분류했습니다. 실제 장치의 비선형 운동이나 이상 측정값을 다루려면 추가 설계가 필요합니다.
+[원문의 초록과 도입부](https://people.duke.edu/~hpgavin/SystemID/References/Kalman-JBE-1960.pdf)는 통신·제어에서의 선형 추정과 예측을 다룹니다. 항법과 센서 융합에도 연결되는 일반 이론이며 특정 현대 우주선의 실험 보고서는 아닙니다. 실제 장치의 비선형 운동이나 이상 측정값을 다루려면 추가 설계가 필요합니다.
 
 ## 원문이 전개하는 순서
 
@@ -105,4 +105,4 @@ K=\frac{1}{5}\begin{bmatrix}4\\2\end{bmatrix}.
 
 </details>
 
-[분야 목록](README.md)으로 돌아갑니다.
+[제어와 최적화 목록](README.md) · [우주 탐사와 관측](../우주와관측_space-observation/README.md)

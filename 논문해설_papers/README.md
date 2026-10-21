@@ -12,17 +12,17 @@
 | [신경망의 기초](딥러닝_deep-learning/README.md) | 역전파, 합성곱, 정규화, 잔차, 확률 생성 |
 | [머신러닝과 생성 모델](머신러닝과생성모델_machine-learning/README.md) | SVM부터 강화학습·3D·단백질·효율적인 언어·멀티모달 모델 |
 | [Transformer](Transformer의계산_ATTENTION.md)와 [언어·멀티모달](언어와멀티모달_language-multimodal/README.md) | attention, 문맥 학습, 이미지·문장 연결, 저비용 적응 |
-| [뇌와 신경공학](뇌와신경공학_neuroengineering/README.md) | 뉴런, 기억·공간, 연결지도, 초파리 모형, BCI와 유전체 |
+| [뇌와 신경공학](뇌와신경공학_neuroengineering/README.md) | 뉴런, 기억·공간, 연결지도, 초파리 모형과 BCI |
 | [의료영상과 AI 진단](의료영상과진단_ai-medical-imaging/README.md) | MRI 복원·판독, OCT 의뢰, 유방 검진, 희귀질환 탐색과 안정성 |
 | [신경보철과 재활](신경보철과재활_neuroprosthetics-rehabilitation/README.md) | 뇌–척수 연결, 활동별 자극, 광전 망막보철과 폐회로 신경자극 |
 | [AI 신약 개발과 임상 평가](AI신약개발_ai-drug-discovery/README.md) | 표적·후보 제안과 임상 안전성·폐기능·결측 해석 |
 | [반도체와 소재](반도체와소재_semiconductors-materials/README.md) | FinFET, 원자층 재료, 메모리 물리, 재료 탐색·합성, 태양전지 |
-| [우주 탐사와 정밀 관측](우주와관측_space-observation/README.md) | 상태 추정, 화성 비행, 소행성 충돌, 광통신, JWST와 LIGO |
+| [우주 탐사와 정밀 관측](우주와관측_space-observation/README.md) | 화성 비행, 소행성 충돌, 광통신, JWST와 LIGO |
 | [의약품과 대사 연구](의약품과대사_metabolic-medicine/README.md) | STEP 1·SURMOUNT-1의 설계, 감량 효과, 결측·중단·이상사건 |
 | [게임·생물·사회 데이터를 활용한 연구](뜻밖의연결_interdisciplinary/README.md) | WoW와 감염병, Foldit과 단백질, 점균과 연결망, 검색과 독감, 음악과 사회적 영향 |
 | [에너지와 환경](에너지와환경_energy-environment/README.md) | 태양전지·전지·분리·탄소 저장, 핵융합 점화와 에너지 이득 |
 | [통신과 정밀 측정](통신과측정_communications-metrology/README.md) | MIMO·오류정정·송신 다이버시티·광섬유, 원자시계와 중력계 |
-| [생명과학과 진단](생명과학과진단_life-science-diagnostics/README.md) | DNA 서열·PCR·RNA 변형·나노포어·오가노이드·Liver-Chip |
+| [생명과학과 진단](생명과학과진단_life-science-diagnostics/README.md) | DNA 서열·기능 예측, PCR·RNA 변형·나노포어·오가노이드·Liver-Chip |
 | [제조와 광학](제조와광학_manufacturing-photonics/README.md) | 체적 광경화·수지 공급, 간섭·회절 신경망의 실제 검증 범위 |
 | [산업과 표준](산업과표준_industry-standards/README.md) | 기술 채택의 경로 의존, 보완재·호환성·전환 비용 |
 | [마음과 인공지능 철학](마음과인공지능철학_mind-ai-philosophy/README.md) | 고전의 질문, 의식 지표, 최근 내부 작업공간·자기 보고·역할 제어 |
@@ -34,7 +34,7 @@
 | [양자 정보와 오류 정정](양자정보_quantum-information/README.md) | 중성원자 논리 큐비트·반복 오류 정정·게이트와 제어 시간 |
 | [사회과학의 현장 자료와 실험](사회과학의실험_social-science-experiments/README.md) | 노동·교육·설득·현금 지급·주거·기후·접종의 설계와 분모 |
 | [개인정보보호](개인정보보호_privacy/README.md) | 차등정보보호·민감도·잡음과 반복 공개 |
-| [제어와 최적화](제어와최적화_control-optimization/README.md) | 안전 집합·제어 장벽 함수·이차계획과 입력 한계 |
+| [제어와 최적화](제어와최적화_control-optimization/README.md) | 칼만 필터·상태 추정, 안전 집합·제어 장벽 함수·이차계획과 입력 한계 |
 | [유체와 수치해석](유체와수치해석_fluids-numerical-methods/README.md) | 압력 투영·비압축 제약·격자와 시간 간격 |
 | [인과추론](인과추론_causal-inference/README.md) | 관측과 개입·뒷문과 앞문·공통 결과를 고르는 문제 |
 | [시장의 정보와 제도](시장과제도_markets-institutions/README.md) | 품질의 정보 비대칭·역선택·보증과 인증 비용 |
@@ -93,7 +93,7 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## 뇌 회로·초파리와 신경 인터페이스
 
-[뇌와 신경공학](뇌와신경공학_neuroengineering/README.md)은 논리 뉴런·막전위에서 연결지도와 음성 BCI, AlphaGenome까지 이어집니다. 구조를 모두 그렸다는 말, 일부 회로 기능을 예측했다는 말, 몸의 움직임을 모사했다는 말의 차이를 각 논문의 검증 범위로 설명합니다. 뇌의 모든 기능이나 의식을 복제했다는 표현으로 합치지 않습니다.
+[뇌와 신경공학](뇌와신경공학_neuroengineering/README.md)은 논리 뉴런·막전위에서 연결지도와 음성 BCI까지 이어집니다. 구조를 모두 그렸다는 말, 일부 회로 기능을 예측했다는 말, 몸의 움직임을 모사했다는 말의 차이를 각 논문의 검증 범위로 설명합니다. 뇌의 모든 기능이나 의식을 복제했다는 표현으로 합치지 않습니다.
 
 ## 재료·반도체에서 장치와 제조로
 
@@ -107,7 +107,7 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## 우주 탐사·관측을 가능하게 하는 공학
 
-[우주·관측](우주와관측_space-observation/README.md)은 칼만 필터의 불확실성 계산과 자율 항법, 검출기·광학·통계를 연결합니다. 당시의 개발 계획과 이후 실제 임무 결과를 섞지 않고, 논문에서 확인한 시점과 조건을 적었습니다.
+[우주·관측](우주와관측_space-observation/README.md)은 자율 항법, 검출기·광학·통계를 연결합니다. 일반적인 상태 추정 이론은 [제어와 최적화](제어와최적화_control-optimization/README.md)의 칼만 필터 해설에서 읽으실 수 있습니다. 당시의 개발 계획과 이후 실제 임무 결과를 섞지 않고, 논문에서 확인한 시점과 조건을 적었습니다.
 
 ## 전지·재료·측정과 사회과학의 최근 연구
 
@@ -117,7 +117,7 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## 최근 연구를 읽는 경로
 
-[머신러닝·생성 모델](머신러닝과생성모델_machine-learning/README.md)에서는 AlphaFold 3, Mamba-2, Titans, DeepSeek-V3.2, Qwen3·Qwen3.5-Omni를 읽습니다. [시스템](알고리즘과컴퓨터시스템_algorithms-systems/README.md)에서는 Harmonic, Rex, PageFlex, KPerfIR, Soar·Alto를 읽습니다. [신경공학](뇌와신경공학_neuroengineering/README.md)의 초파리·음성 합성·유전체 연구와 [최근 소재 연구](반도체와소재_semiconductors-materials/README.md)도 연결됩니다.
+[머신러닝·생성 모델](머신러닝과생성모델_machine-learning/README.md)에서는 AlphaFold 3, Mamba-2, Titans, DeepSeek-V3.2, Qwen3·Qwen3.5-Omni를 읽습니다. [시스템](알고리즘과컴퓨터시스템_algorithms-systems/README.md)에서는 Harmonic, Rex, PageFlex, KPerfIR, Soar·Alto를 읽습니다. [신경공학](뇌와신경공학_neuroengineering/README.md)의 초파리·음성 합성, [생명과학](생명과학과진단_life-science-diagnostics/README.md)의 유전체 예측 연구와 [최근 소재 연구](반도체와소재_semiconductors-materials/README.md)도 연결됩니다.
 
 최근이라는 이유로 장래의 영향이나 모든 비교 우위를 확정하지 않습니다. 기술 보고서·사전논문·심사 논문·정정본의 상태를 나누고, 결과가 나온 입력·장비·과제와 한계를 먼저 확인합니다.
 

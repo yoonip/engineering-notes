@@ -16,6 +16,6 @@
 
 ## English
 
-Five reviews connect radar, RF semiconductors, lasers, fighters, guided missiles and air-defence systems. They explain sensing, propulsion, flight control, sustainment, integration and supply chains. Public tests, evaluation deliveries, operational use and development contracts are separate milestones. This index is dated 21 October 2026; individual reviews retain their own source dates and reading scopes.
+These reviews connect radar, RF semiconductors, lasers, fighters, guided missiles and air-defence systems. They explain sensing, propulsion, flight control, sustainment, integration and supply chains. Public tests, evaluation deliveries, operational use and development contracts are separate milestones. This index is dated 21 October 2026; individual reviews retain their own source dates and reading scopes.
 
 [제품·기술 리뷰 전체](../README.md)
