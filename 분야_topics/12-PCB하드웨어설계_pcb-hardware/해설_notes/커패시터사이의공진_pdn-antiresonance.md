@@ -8,7 +8,7 @@
 
 이상적인 커패시터는 주파수가 높을수록 임피던스가 작아집니다. 실제 부품과 배선에는 저항과 인덕턴스가 있어서, 충분히 높은 주파수에서는 오히려 인덕터처럼 동작합니다. 서로 다른 커패시터를 병렬로 놓으면 한쪽은 인덕터, 다른 쪽은 커패시터처럼 보이는 구간이 생깁니다. 두 가지의 전류가 서로 상쇄되면 외부에서 보이는 전체 전류는 작아지고 임피던스는 커집니다. 이것이 antiresonance를 이해하는 출발점입니다.
 
-[ADI MT-101](https://www.analog.com/media/en/training-seminars/tutorials/MT-101.pdf)은 ESR·ESL을 포함한 decoupling 모델을 설명합니다. [AVX의 *Introduction to Choosing MLC Capacitors for Bypass/Decoupling Applications*](https://bears.ece.ucsb.edu/class/ece124d/real_world_decoupling.pdf)은 서로 다른 커패시터와 연결 인덕턴스가 만드는 주파수 응답을 다룹니다. 후자는 UCSB 강의 서버가 보관한 Yun Chase의 제조사 원문이며 대학이 측정한 데이터라는 의미로 인용하지 않습니다.
+[ADI MT-101](https://www.analog.com/media/en/training-seminars/tutorials/MT-101.pdf)은 ESR·ESL을 포함한 decoupling 모델을 설명합니다. [AVX의 *Introduction to Choosing MLC Capacitors for Bypass/Decoupling Applications*](https://www.kyocera-avx.com/docs/techinfo/DecouplingLowInductance/mlcbypas.pdf)은 서로 다른 커패시터와 연결 인덕턴스가 만드는 주파수 응답을 다룹니다. 후자는 KYOCERA AVX에서 공개한 Yun Chase의 기술 문서입니다. pp. 7–8의 antiresonance와 연결 인덕턴스 설명을 참고합니다.
 
 ### 두 가지 RLC를 병렬로 놓은 모델
 
@@ -59,7 +59,7 @@ python -m unittest -v test_models.HardwareModels.test_pdn_antiresonance_and_loss
 
 An ideal capacitor becomes less impedant as frequency rises. A physical capacitor and its connection also contain resistance and inductance, eventually producing inductive behavior. With unlike capacitors in parallel, one branch may be inductive while the other remains capacitive. Their currents can cancel at the input, reducing total admittance and increasing the impedance seen by the load.
 
-[ADI MT-101](https://www.analog.com/media/en/training-seminars/tutorials/MT-101.pdf) establishes the ESR/ESL decoupling model. [AVX's *Introduction to Choosing MLC Capacitors for Bypass/Decoupling Applications*](https://bears.ece.ucsb.edu/class/ece124d/real_world_decoupling.pdf), by Yun Chase, discusses interactions among capacitors and connection inductance. The latter is a manufacturer's original document hosted on a UCSB course server, not a university measurement report.
+[ADI MT-101](https://www.analog.com/media/en/training-seminars/tutorials/MT-101.pdf) establishes the ESR/ESL decoupling model. [AVX's *Introduction to Choosing MLC Capacitors for Bypass/Decoupling Applications*](https://www.kyocera-avx.com/docs/techinfo/DecouplingLowInductance/mlcbypas.pdf), by Yun Chase, discusses interactions among capacitors and connection inductance. The latter is available from KYOCERA AVX; pp. 7–8 discuss antiresonance and connection inductance.
 
 ### Deriving the two-branch model
 
@@ -83,5 +83,5 @@ A PCB also contains common via and plane inductance, package and die impedances,
 
 ## 출처 / Sources
 
-- Analog Devices, *MT-101*: ESR/ESL and decoupling behavior.
-- AVX, Yun Chase, *Introduction to Choosing MLC Capacitors for Bypass/Decoupling Applications*, UCSB-hosted original: capacitor interactions and connection parasitics. Links are given above.
+- Analog Devices, *MT-101*, Rev. 0 (March 2009), pp. 2–4: ESR/ESL and decoupling behavior.
+- AVX, Yun Chase, *Introduction to Choosing MLC Capacitors for Bypass/Decoupling Applications*, manufacturer-hosted original, pp. 7–8: capacitor interactions and connection parasitics. Links are given above.
