@@ -1,0 +1,10 @@
+{
+  "scope": "Invented host fixtures; no MCU, register access, IRQ, DMA or cache instruction execution",
+  "line_bytes": 32,
+  "memory_bytes": 128,
+  "irq": {"pending": 10, "handled_mask": 2},
+  "tx": {"address": 0, "payload_hex": "11223344"},
+  "rx": {"address": 0, "payload_hex": "31323334"},
+  "neighbor": {"address": 0, "payload_hex": "41414141414141414141414141414141", "shared_flag_address": 16, "isolated_flag_address": 32, "flag_value": 1},
+  "ownership": {"first": 17, "second": 18, "replacement": 19}
+}

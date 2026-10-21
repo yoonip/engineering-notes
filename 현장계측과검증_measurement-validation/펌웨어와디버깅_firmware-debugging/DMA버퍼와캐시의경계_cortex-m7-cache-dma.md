@@ -88,6 +88,37 @@ DTCM 접근 여부도 CPU 이름만으로 결정하지 않습니다. AN4839의 D
 
 [링버퍼 공개 순서](../../설계와검증사례_engineering-cases/링버퍼의공개순서와공유카운터_ring-publication.md)는 여섯 사건 순서를 열거해 조기 공개의 오래된 값 읽기 1건과 기록 후 공개의 0건을 관측했습니다. 이는 CPU 간 공개 규칙을 읽는 호스트 모델입니다. C11 release·acquire가 DMA 완료나 D-cache clean을 대신하지 않으므로, 이 글의 캐시 유지·line 격리·완료 조건과 별도로 적용합니다.
 
+## 캐시와 RAM을 나눈 실행 예제
+
+앞의 관측 예시는 보드에서 측정한 값이 아니라 오류를 설명하기 위한 상황입니다. 별도로 [Python 호스트 모형](../../예제_examples/실무검증_practical-validation/interrupt_dma/README.md)을 2026-10-21에 실행했습니다. 모형은 128바이트 RAM과 32바이트 line의 CPU 복사본을 분리합니다. 다음 코드는 그 모형의 API이며 CMSIS 함수나 실제 캐시 명령을 실행하지 않습니다.
+
+```python
+from models import CacheMemory  # from/import는 예제의 메모리 모형 클래스를 가져옵니다.
+memory = CacheMemory()  # ()로 객체를 만들며 RAM은 0으로 시작합니다.
+payload = bytes.fromhex("11223344")  # 16진수 문자열을 네 바이트로 바꿉니다.
+memory.cpu_write(0, payload)  # CPU 캐시만 바꾸고 dirty 상태로 둡니다.
+print(memory.dma_read(0, 4).hex())  # RAM만 읽으므로 00000000을 출력합니다.
+memory.clean(0, 4)  # 요청 바이트가 속한 모형 line을 RAM에 반영합니다.
+print(memory.dma_read(0, 4).hex())  # 이제 11223344를 출력합니다.
+```
+
+같은 주소를 읽더라도 CPU와 DMA의 접근 경로를 구별해야 한다는 예입니다. 실제 디버거의 메모리 창이 어느 경로를 거치는지는 probe·대상·설정에 따라 확인해야 하며, 이 모형의 CPU 읽기 결과와 같다고 가정하지 않습니다.
+
+| 실행한 경로 | RAM 또는 수신 데이터 | CPU가 읽은 값·이웃 flag |
+| --- | --- | --- |
+| TX 사전 clean 생략 | DMA가 `00000000`을 읽습니다. | CPU는 `11223344`를 읽습니다. |
+| RX 사후 invalidate 생략 | RAM은 `31323334`입니다. | CPU는 오래된 `00000000`을 읽습니다. |
+| RX 사전 dirty 처리 생략 | 남은 사본의 clean으로 RAM이 `07070707`로 덮입니다. | 새 수신값 `31323334`가 사라집니다. |
+| RX 16바이트와 flag가 같은 line, 사후 invalidate | RX는 `41` 16개입니다. | dirty flag 1이 0으로 돌아갑니다. |
+| 같은 배치에서 사후 clean+invalidate | RX가 `00` 16개로 덮입니다. | flag 1은 남습니다. |
+| RX와 flag를 다른 line에 배치 | RX는 `41` 16개입니다. | flag 1도 남습니다. |
+
+RX의 오래된 clean 사본은 사전 처리 뒤 DMA가 쓰기 전에 채워졌다고 명시한 모형 사건입니다. 실제 speculation을 관측한 결과나 DMA 소유 중 CPU 접근을 허용하는 규칙이 아닙니다. 공유 line의 두 대조는 invalidate와 clean 중 하나를 고르는 것만으로 서로 다른 소유자의 자료를 모두 지킬 수 없다는 점을 보여 줍니다. line 배치와 소유권을 먼저 바꿔야 합니다.
+
+주소 범위는 코드의 반올림 식과 별개로 payload의 각 바이트가 속한 line 주소를 집합에 넣어 비교했습니다. 128바이트 공간의 시작·길이 8,385조합에는 빈 범위, 끝 주소 128, 경계 양쪽의 두 바이트도 포함합니다. W1C 소거와 완료 버퍼 재사용은 [별도 사례](../../설계와검증사례_engineering-cases/상태비트소거와완료버퍼소유권_irq-w1c-ownership.md)에서 다룹니다. 완료 비트를 지웠다는 사실은 캐시 유지나 CPU의 버퍼 반환을 대신하지 않습니다.
+
+[실행 기록](../../설계와검증사례_engineering-cases/검증기록_evidence/인터럽트DMA캐시모델검증_20261021.md)에는 정상 종료 0, 의도적 오류 세 종류의 종료 1, 독립 기대값, 입력·소스 해시와 확인한 공식 문서 범위를 적었습니다. cache way·교체·store buffer·버스 지연·MCU errata는 이 실행 범위에 없습니다. 실제 보드에서는 앞 절의 주소 배치·완료 조건·메모리 접근 가능 여부와 측정 기록이 추가로 필요합니다.
+
 ## 확인 문제
 
 1. `0x2002001F`부터 2바이트를 invalidate하면 영향을 받는 line의 총 크기는 얼마입니까?
