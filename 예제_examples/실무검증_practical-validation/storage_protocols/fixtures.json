@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "geometry": {"blocks": 8, "bytes_per_block": 4},
+  "scenarios": [
+    {"name": "nvme_cached_completion_lost", "model": "nvme", "config": {"vwc": true}, "steps": [
+      ["submit_write", [7, 0, ["aabbccdd"]], null],
+      ["complete", [7, "SUCCESS"], {"cid": 7, "kind": "WRITE", "status": "SUCCESS", "result": "SUCCESS", "durable_ack": false}],
+      ["read", [0], "aabbccdd"], ["power_loss", [], null], ["read", [0], "00000000"]
+    ]},
+    {"name": "nvme_out_of_order_then_flush", "model": "nvme", "config": {"vwc": true}, "steps": [
+      ["submit_write", [9, 0, ["11223344"]], null], ["submit_write", [10, 1, ["55667788"]], null],
+      ["complete", [10, "SUCCESS"], {"cid": 10, "kind": "WRITE", "status": "SUCCESS", "result": "SUCCESS", "durable_ack": false}],
+      ["complete", [9, "SUCCESS"], {"cid": 9, "kind": "WRITE", "status": "SUCCESS", "result": "SUCCESS", "durable_ack": false}],
+      ["submit_flush", [11], null],
+      ["complete", [11, "SUCCESS"], {"cid": 11, "kind": "FLUSH", "status": "SUCCESS", "result": "SUCCESS", "durable_ack": true}],
+      ["power_loss", [], null], ["read", [0], "11223344"], ["read", [1], "55667788"]
+    ]},
+    {"name": "nvme_fua_is_not_global_flush", "model": "nvme", "config": {"vwc": true}, "steps": [
+      ["submit_write", [20, 0, ["01020304"]], null],
+      ["complete", [20, "SUCCESS"], {"cid": 20, "kind": "WRITE", "status": "SUCCESS", "result": "SUCCESS", "durable_ack": false}],
+      ["submit_write", [21, 1, ["a1a2a3a4"], true], null],
+      ["complete", [21, "SUCCESS"], {"cid": 21, "kind": "WRITE", "status": "SUCCESS", "result": "SUCCESS", "durable_ack": true}],
+      ["power_loss", [], null], ["read", [0], "00000000"], ["read", [1], "a1a2a3a4"]
+    ]},
+    {"name": "nvme_no_vwc", "model": "nvme", "config": {"vwc": false}, "steps": [
+      ["submit_write", [65535, 7, ["fedcba98"]], null],
+      ["complete", [65535, "SUCCESS"], {"cid": 65535, "kind": "WRITE", "status": "SUCCESS", "result": "SUCCESS", "durable_ack": true}],
+      ["power_loss", [], null], ["read", [7], "fedcba98"]
+    ]},
+    {"name": "nvme_failed_write_has_partial_ground_truth", "model": "nvme", "config": {"vwc": true}, "steps": [
+      ["submit_write", [30, 4, ["11111111", "22222222"]], null],
+      ["complete", [30, "MEDIA_ERROR", 1], {"cid": 30, "kind": "WRITE", "status": "MEDIA_ERROR", "result": "FAILED_UNCERTAIN", "durable_ack": false}],
+      ["power_loss", [], null], ["read", [4], "11111111"], ["read", [5], "00000000"]
+    ]},
+    {"name": "nvme_failed_flush_does_not_ack", "model": "nvme", "config": {"vwc": true}, "steps": [
+      ["submit_write", [40, 2, ["cafebabe"]], null],
+      ["complete", [40, "SUCCESS"], {"cid": 40, "kind": "WRITE", "status": "SUCCESS", "result": "SUCCESS", "durable_ack": false}],
+      ["submit_flush", [41], null],
+      ["complete", [41, "ABORTED"], {"cid": 41, "kind": "FLUSH", "status": "ABORTED", "result": "FAILED_UNCERTAIN", "durable_ack": false}],
+      ["power_loss", [], null], ["read", [2], "00000000"]
+    ]},
+    {"name": "sd_busy_and_status_are_separate", "model": "card", "config": {"family": "sd", "cache_supported": false}, "steps": [
+      ["submit_write", [1, 0, ["10203040"]], null],
+      ["poll", [true, false, "PRG"], {"request_id": 1, "result": "WAIT_BUSY", "durable_ack": false}],
+      ["poll", [false, false, "PRG"], {"request_id": 1, "result": "WAIT_STATUS", "durable_ack": false}],
+      ["poll", [false, true, "PRG"], {"request_id": 1, "result": "WAIT_STATUS", "durable_ack": false}],
+      ["poll", [false, false, "TRAN"], {"request_id": 1, "result": "WAIT_STATUS", "durable_ack": false}],
+      ["poll", [false, true, "TRAN"], {"request_id": 1, "result": "SUCCESS", "durable_ack": true}],
+      ["power_loss", [], null], ["read", [0], "10203040"]
+    ]},
+    {"name": "sd_released_busy_with_write_error", "model": "card", "config": {"family": "sd", "cache_supported": false}, "steps": [
+      ["submit_write", [2, 2, ["abababab", "cdcdcdcd"]], null],
+      ["poll", [false, true, "TRAN", "WRITE_ERROR", 1], {"request_id": 2, "result": "FAILED_UNCERTAIN", "durable_ack": false, "error": "WRITE_ERROR"}],
+      ["power_loss", [], null], ["read", [2], "abababab"], ["read", [3], "00000000"]
+    ]},
+    {"name": "emmc_timeout_is_unknown_not_rollback", "model": "card", "config": {"family": "emmc", "cache_supported": false}, "steps": [
+      ["submit_write", [3, 5, ["12345678", "87654321"]], null],
+      ["timeout", [1], {"request_id": 3, "result": "TIMED_OUT_UNKNOWN", "durable_ack": false}],
+      ["power_loss", [], null], ["read", [5], "12345678"], ["read", [6], "00000000"]
+    ]},
+    {"name": "emmc_optional_cache_then_flush", "model": "card", "config": {"family": "emmc", "cache_supported": true}, "steps": [
+      ["enable_cache", [], null], ["submit_write", [4, 1, ["deadbeef"]], null],
+      ["poll", [false, true, "TRAN"], {"request_id": 4, "result": "SUCCESS", "durable_ack": false}],
+      ["read", [1], "deadbeef"], ["flush", [true], {"result": "SUCCESS", "durable_ack": true}],
+      ["power_loss", [], null], ["read", [1], "deadbeef"]
+    ]},
+    {"name": "sd_optional_cache_lost_without_flush", "model": "card", "config": {"family": "sd", "cache_supported": true}, "steps": [
+      ["enable_cache", [], null], ["submit_write", [5, 1, ["99887766"]], null],
+      ["poll", [false, true, "TRAN"], {"request_id": 5, "result": "SUCCESS", "durable_ack": false}],
+      ["power_loss", [], null], ["read", [1], "00000000"]
+    ]},
+    {"name": "emmc_failed_flush_is_unknown", "model": "card", "config": {"family": "emmc", "cache_supported": true}, "steps": [
+      ["enable_cache", [], null], ["submit_write", [6, 3, ["aabb0011"]], null],
+      ["poll", [false, true, "TRAN"], {"request_id": 6, "result": "SUCCESS", "durable_ack": false}],
+      ["flush", [false], {"result": "FAILED_UNCERTAIN", "durable_ack": false}],
+      ["power_loss", [], null], ["read", [3], "00000000"]
+    ]}
+  ]
+}

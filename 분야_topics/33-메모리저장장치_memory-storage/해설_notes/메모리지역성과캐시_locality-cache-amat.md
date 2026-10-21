@@ -64,6 +64,24 @@ AMAT 검증에서는 실제 hit마다 h, miss마다 h+p를 더해 N으로 나눈
 
 [원리·오류·수정 흐름](../../../설계와검증사례_engineering-cases/DDR명령간격과메모리패턴_ddr-command-pattern-checks.md)과 [일반 실행·-O 대조 기록](../../../설계와검증사례_engineering-cases/검증기록_evidence/DDR명령과패턴검증_20261021.md)을 연결했습니다. 이 실습에는 DDR 핀·burst·PHY training·셀 retention·ECC·실제 보드 시험이 없으므로 cache 성능, 명령 계약, 자료 패턴, 물리 신호 검증의 결과를 서로 대신하지 않습니다.
 
+### 7. 캐시에서 빨리 읽히는 값과 전원 뒤 남는 값을 나눕니다
+
+AMAT가 작다는 것은 이 지연 모델에서 평균 접근이 빠르다는 뜻입니다. 자료가 어디까지 저장되었는지나 전원 상실을 견디는지는 다른 계약입니다. CPU 캐시의 주소·일관성, 저장장치의 휘발 쓰기 캐시, 파일시스템의 동기화를 같은 ‘캐시 비우기’로 묶으면 필요한 관측 지점이 사라집니다.
+
+[NVMe·eMMC·SD 실습](../../../예제_examples/실무검증_practical-validation/storage_protocols/README.md)은 8개 4바이트 교육 블록의 cache와 media를 분리합니다. VWC가 켜진 일반 NVMe 쓰기는 성공 완료를 받고 바로 새 값을 읽어도 영속성을 승인하지 않습니다. 실제 fixture의 `aabbccdd`는 합성 손실 사건 뒤 초기화한 이전 값 `00000000`으로 돌아갑니다. FUA로 쓴 다른 LBA의 `a1a2a3a4`는 남지만 앞선 일반 쓰기의 `01020304`는 사라집니다. 후자의 2개×4바이트 중 4바이트가 남는 계산은 고정 모델의 결과이며 실제 SSD 손실률이 아닙니다.
+
+| 확인하는 질문 | 필요한 구분 |
+|---|---|
+| 캐시 hit가 늘어 빨라졌나요? | 접근 trace·hit/miss·지연 정의를 확인합니다. |
+| 쓰기 완료를 어떤 요청과 연결하나요? | NVMe는 SQID/CID를 확인하며 모델은 단일 SQ에서 CID를 사용합니다. |
+| 자료가 전원 상실 뒤 남는 조건을 만족했나요? | VWC 설정·해당 FUA·성공한 Flush의 대상을 나눕니다. |
+| 카드의 busy가 풀렸나요? | ready/state·오류·캐시 활성화·최종 Flush 결과도 따로 확인합니다. |
+| 실패했으므로 원래 값 그대로인가요? | 실패와 rollback을 동일시하지 않으며 부분 효과를 별도로 조사합니다. |
+
+Linux의 PREFLUSH는 앞선 완료 쓰기를 해당 I/O 전에 영속화하는 조건이고 FUA는 해당 요청의 완료 조건입니다. [공식 block cache 설명](https://docs.kernel.org/block/writeback_cache_control.html)의 구분을 참고했습니다. 이 실습의 Flush 직렬화와 카드 오류 뒤 진단 정지는 자체 정책이며 Linux API를 실행한 결과가 아닙니다. 카드의 캐시 기능 지원과 활성화도 별도 입력입니다.
+
+[NVMe 사례](../../../설계와검증사례_engineering-cases/NVMe의쓰기완료와영속성_nvme-write-persistence.md)와 [카드 사례](../../../설계와검증사례_engineering-cases/eMMC와SD의busy와쓰기실패_emmc-sd-write-status.md)는 잘못된 승인·다른 LBA까지 비우는 FUA·busy만 보는 판정을 재현합니다. 정상·최적화 Python의 관측값이 같고 오류 변이 5종이 두 모드에서 검출됐습니다. 합성 손실 뒤 read는 내부 media 조회이며 실제 꺼진 장치의 읽기 명령이 아닙니다. 지연 계산, 호스트 상태 정책, 물리 전원 차단 시험을 구분하여 해석해야 합니다.
+
 ## English
 
 ### 1. A small desk and a large warehouse
@@ -108,9 +126,16 @@ Repeated CPU reads may hit in cache, so they do not establish that each access r
 
 The [runnable DDR-style command fixture](../../../예제_examples/실무검증_practical-validation/ddr_validation/README.md) excludes caches and executes a fixed command/array model with Icarus. Python independently checks timing gaps, bank state and scheduled read responses. Its AL=0 timing rules and strict REF issue deadline are educational contracts rather than device ratings or JEDEC refresh policy. Address-dependent data detects a controlled alias that all-zero traffic misses. Suppressing all responses produces zero observed value mismatches but thirty-two missing-response failures. See the linked [case](../../../설계와검증사례_engineering-cases/DDR명령간격과메모리패턴_ddr-command-pattern-checks.md) and [evidence](../../../설계와검증사례_engineering-cases/검증기록_evidence/DDR명령과패턴검증_20261021.md). Neither this fixture nor cache timing establishes PHY training, cell retention, ECC or measured board behavior.
 
+### 7. Fast cached visibility is different from persistence
+
+A lower AMAT describes latency under a particular model. It does not establish persistence across power loss. CPU cache coherence, device volatile write caches and filesystem synchronization are different contracts. The [storage exercise](../../../예제_examples/실무검증_practical-validation/storage_protocols/README.md) separates teaching cache and media dictionaries: a successful readable cached write can be lost, while FUA preserves its own LBA without preserving an earlier unrelated cached write. Two four-byte writes leave four bytes after the chosen loss event; this is a deterministic example, not an SSD loss rate.
+
+The model matches completion CIDs in one SQ, serializes completed writes before Flush, and separates card busy, ready/state, error and cache capability. Linux [PREFLUSH and FUA documentation](https://docs.kernel.org/block/writeback_cache_control.html) helps distinguish earlier-write ordering from the current request's persistence. The linked [NVMe](../../../설계와검증사례_engineering-cases/NVMe의쓰기완료와영속성_nvme-write-persistence.md) and [card](../../../설계와검증사례_engineering-cases/eMMC와SD의busy와쓰기실패_emmc-sd-write-status.md) cases explain the counterexamples. These are decoded synthetic contracts; post-loss reads inspect internal media. No storage command, driver or physical power-cut test is performed.
+
 ## 출처와 대조한 내용 | Sources and cross-checks
 
 - CMU 15-213/14-513/15-513, *Cache Memories* (2025): 지역성·주소 분해·직접 매핑·추가 miss penalty / locality, address decomposition, direct mapping and additional miss penalty.
-- CMU 15-740, *Memory Hierarchy* (2019): 계층 성능·AMAT 정의 / hierarchy performance and AMAT convention. 두 자료의 평균 시간 정의를 대조했다 / average-time conventions cross-checked between both lectures.
-- NVIDIA, *Unlock GPU Performance: Global Memory Access in CUDA*: 전송 단위·coalescing·counter 관점 / transaction granularity, coalescing and counters. CPU와 GPU의 세부 캐시가 같다고 가정하지 않았다 / no assumption of identical CPU and GPU cache details.
-- 그림·trace·테스트는 직접 구성했다 / diagram, traces and tests constructed here. 출처 확인 / sources checked: 2026-10-19.
+- CMU 15-740, *Memory Hierarchy* (2019): 계층 성능·AMAT 정의 / hierarchy performance and AMAT convention. 두 자료의 평균 시간 정의를 대조했습니다 / average-time conventions cross-checked between both lectures.
+- NVIDIA, *Unlock GPU Performance: Global Memory Access in CUDA*: 전송 단위·coalescing·counter 관점 / transaction granularity, coalescing and counters. CPU와 GPU의 세부 캐시가 같다고 가정하지 않았습니다 / no assumption of identical CPU and GPU cache details.
+- 그림·trace·테스트는 직접 구성했습니다 / diagram, traces and tests constructed here. 출처 확인 / sources checked: 2026-10-19.
+- [NVM Express Base 1.4c §§4.6·6.8·6.15](https://nvmexpress.org/wp-content/uploads/NVM-Express-1_4c-2021.06.28-Ratified.pdf): 완료 식별·Flush·Write FUA를 대조했습니다 / completion identity, Flush and Write FUA cross-checks. © 2007 to 2021 NVM Express, Inc. ALL RIGHTS RESERVED. [Linux block cache 문서](https://docs.kernel.org/block/writeback_cache_control.html)의 PREFLUSH·FUA도 구분했습니다 / PREFLUSH and FUA are distinguished. 추가 확인일은 2026-10-21입니다 / additionally checked on 2026-10-21.

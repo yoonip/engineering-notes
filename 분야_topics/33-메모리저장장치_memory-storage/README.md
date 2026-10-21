@@ -51,6 +51,39 @@ SRAM, DRAM, NAND, DDR, LPDDR, GDDR, HBM, NVMe, fio, CXL
 
 - [메모리 지역성과 캐시: 평균 지연과 대역폭을 나눠 보기](해설_notes/메모리지역성과캐시_locality-cache-amat.md)
 
+## 쓰기 완료와 전원 차단 뒤의 보존
+
+바이너리 파일의 write가 반환됐다는 사실, 장치의 쓰기 명령이 끝났다는 사실, 재시작 뒤에도 바이트가 남는다는 사실은 서로 다른 관측입니다. CPU의 write-back cache와 저장장치의 volatile write cache도 같은 캐시가 아닙니다. 앞쪽은 CPU와 RAM 사이, 뒤쪽은 장치가 받은 자료와 비휘발성 매체 사이의 문제입니다.
+
+| 층 | 관측할 수 있는 것 | 추가로 확인할 조건 |
+| --- | --- | --- |
+| 바이너리 write 반환 | 호출이 받아들인 바이트 수입니다. | 짧은 쓰기·예외와 사용자 공간 buffering을 확인합니다. |
+| 파일 동기화 | 파일의 변경을 저장 계층으로 동기화하도록 요청합니다. | 반환 오류, 파일시스템과 하위 장치의 계약을 확인합니다. |
+| 장치의 명령 완료 | 해당 명령의 완료 상태입니다. | 휘발성 캐시·flush·FUA의 적용 조건을 확인합니다. |
+| 재시작 뒤 읽기 | 그 시험에서 남아 있는 바이트입니다. | 선택한 기록 순서·중단 위치·전원 조건을 함께 기록합니다. |
+
+Linux의 [write-back cache 제어](https://docs.kernel.org/block/writeback_cache_control.html)는 장치가 비휘발성 매체에 기록하기 전에 완료를 알릴 수 있다고 설명합니다. PREFLUSH는 앞서 완료한 쓰기의 캐시 반영을 먼저 요구하고, FUA는 해당 쓰기의 자료가 비휘발성 저장에 반영된 뒤 완료하도록 요구합니다. 두 요청의 순서와 대상이 다르므로 서로 바꾸어 외우지 않습니다. 실제 기능 지원과 하위 계층 전달 조건도 확인합니다.
+
+[fsync의 Linux 규약](https://man7.org/linux/man-pages/man2/fsync.2.html)은 파일 데이터·관련 메타데이터의 동기화와 디렉터리 항목의 동기화를 구별합니다. 파일의 fsync만으로 새 파일명·이름 변경의 디렉터리 항목까지 모두 동기화했다고 판단하지 않습니다. Windows에서 실행한 Python 파일 예제에 Linux 시스템 호출의 구현을 그대로 적용하지도 않습니다.
+
+## 논리 블록과 flash 페이지를 구별하는 계산
+
+논리 블록은 호스트가 주소를 붙이는 단위입니다. flash 페이지·erase block은 매체 내부의 단위이며 논리 블록 크기와 같다고 가정할 수 없습니다. 아래는 논리 블록을 512바이트, 첫 블록 번호를 100으로 가정한 계산입니다. 실제 장치 사양이나 NAND program 단위를 나타내는 값이 아닙니다.
+
+```python
+payload_bytes, block_bytes, first_lba = 3000, 512, 100  # 세 정수를 저장하며 LBA는 논리 블록 번호입니다.
+blocks = (payload_bytes + block_bytes - 1) // block_bytes  # //로 나누기 전에 더해 올림한 블록 수를 구합니다.
+last_lba = first_lba + blocks - 1  # 시작을 포함하므로 마지막 번호는 1을 뺍니다.
+print(blocks, last_lba, blocks * block_bytes - payload_bytes)  # 6블록·마지막105·남는72바이트입니다.
+```
+
+6블록을 사용한다는 계산만으로 3,000바이트가 한 번에 원자적으로 기록된다는 결론은 나오지 않습니다. 원자성은 중간 상태가 관측되지 않는 성질이고, 영속성은 완료 조건 뒤의 장애에서도 자료를 보존하는 성질입니다. 각 프로토콜·장치·파일시스템에서 보장하는 단위와 조건을 따로 확인합니다.
+
+- [NVMe의 쓰기 완료와 영속성](../../설계와검증사례_engineering-cases/NVMe의쓰기완료와영속성_nvme-write-persistence.md)은 완료 상태와 휘발성 자료의 차이를 실행합니다.
+- [eMMC·SD의 busy와 쓰기 실패](../../설계와검증사례_engineering-cases/eMMC와SD의busy와쓰기실패_emmc-sd-write-status.md)는 자료 수신·준비 상태·캐시 조건을 나누어 확인합니다.
+- [중단된 저널의 복구](../../설계와검증사례_engineering-cases/중단된저널의트랜잭션복구_storage-journal-recovery.md)는 유효한 트랜잭션을 실제 파일에서 다시 읽습니다.
+- [ECC의 정정과 검출](../../설계와검증사례_engineering-cases/ECC의단일비트정정과이중비트검출_ecc-secded.md)은 부호가 다루는 오류 수와 보장 밖 반례를 비교합니다.
+
 ## English
 
 ### Memory and storage
@@ -77,6 +110,13 @@ In the constructed non-coherent write-back example, CPU sequence 17 can remain i
 [Foundations reading guide](../../공학기초_foundations/README.md#english)
 
 - [Locality, cache and average memory access time](해설_notes/메모리지역성과캐시_locality-cache-amat.md#english)
+
+
+### Completion, persistence and block units
+
+Application write completion, file synchronization, device completion and a read after restart observe different layers. Linux PREFLUSH orders a flush before the dependent write; FUA requires persistence for that write before completion. File fsync and directory-entry synchronization also have separate conditions. These Linux contracts are not claims about a Windows file example's implementation.
+
+An assumed 3,000-byte payload with 512-byte logical blocks occupies six blocks, LBA 100 through 105, leaving 72 bytes. Logical blocks are not NAND page or erase units. The calculation establishes neither atomicity nor persistence. Linked cases separately exercise decoded storage contracts, file-journal recovery and an educational ECC code.
 
 
 ## 심화 해설 | Advanced article
