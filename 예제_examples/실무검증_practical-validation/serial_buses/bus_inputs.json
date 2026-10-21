@@ -1,0 +1,30 @@
+{
+  "spi": {
+    "part_subset": "W25Q64JV Revision C, Standard SPI Fast Read 0Bh only",
+    "memory_hex": {"18": "a5", "19": "5a", "20": "ff"},
+    "normal_tx_hex": "0b000012000000",
+    "short_tx_hex": "0b0000120000",
+    "expected_normal_rx_hex": "ffffffffffa55a",
+    "expected_payload_hex": "a55a",
+    "expected_skipped_dummy_hex": "ffa5",
+    "expected_split_payload_hex": "ffff",
+    "expected_late_falling_hex": "4ab5",
+    "expected_clocks": 56,
+    "expected_sample_edges": ["rising", "falling", "falling", "rising"]
+  },
+  "i2c": {
+    "part_subset": "24LC256 DS21203Q random/sequential read, pointer subset only",
+    "address7": 80,
+    "pointer": 18,
+    "memory_hex": {"18": "a5", "19": "5a", "32": "c3", "33": "3c", "32767": "66", "0": "99"},
+    "interloper_pointer": 32,
+    "expected_payload_hex": "a55a",
+    "expected_split_payload_hex": "c33c",
+    "expected_wrap_payload_hex": "6699",
+    "expected_clocks_combined": 54,
+    "expected_clocks_split_with_interloper": 81,
+    "expected_trace": ["C1:START", "C1:TX:A0", "TARGET:ACK", "C1:TX:00", "TARGET:ACK", "C1:TX:12", "TARGET:ACK", "C1:RESTART", "C1:TX:A1", "TARGET:ACK", "TARGET:TX:A5", "C1:ACK", "TARGET:TX:5A", "C1:NACK", "C1:STOP"],
+    "expected_nack_clocks": {"address_write": 9, "pointer_high": 18, "pointer_low": 27, "address_read": 36},
+    "expected_open_drain_levels": [1, 0, 0, 0]
+  }
+}

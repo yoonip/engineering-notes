@@ -45,6 +45,28 @@ python "예제_examples/심화_advanced/systems/demo.py" i2c
 python "예제_examples/심화_advanced/systems/test_advanced_models.py" -v
 ```
 
+### STOP 사이에 다른 요청이 들어가는 오류를 재현합니다
+
+추가한 [I2C 실행 사례](../../../설계와검증사례_engineering-cases/I2C의묶음읽기와NACK_i2c-combined-read.md)는 24LC256의 내부 주소 두 바이트를 사용하는 읽기 일부를 모델링합니다. 위의 내부 register 한 바이트 예제와 구분합니다. 실제 EEPROM의 읽기·쓰기나 Linux API를 실행하지 않고, 직접 정한 메모리와 요청 일정을 사용합니다.
+
+자체 메모리에서 내부 주소 0x0012의 두 값은 A5·5A이고 0x0020에는 C3·3C가 있습니다. 주소 설정 뒤 STOP을 넣으면 이 모형의 pointer가 저절로 지워지는 것은 아닙니다. 다른 요청이 없다면 A5·5A를 그대로 읽습니다. 그러나 bus를 놓은 사이 다른 요청이 같은 target의 pointer를 0x0020으로 바꾸면, 원래 요청의 후속 read는 C3·3C를 받습니다. 반복 START로 묶은 경로는 이 중간 STOP을 만들지 않습니다.
+
+이 차이는 “STOP만 있으면 모든 장치가 잘못 읽힌다”는 뜻이 아닙니다. 장치 상태를 공유하는 요청의 경계를 살펴보는 자체 일정입니다. 실제 adapter·driver에서는 combined transaction 지원, bus 소유권과 다른 호출의 끼어듦을 확인해야 합니다. 두 실제 controller의 arbitration이나 동시 thread 실행을 했다는 주장과 구분합니다.
+
+### NACK를 받은 위치와 보낸 주체를 검사합니다
+
+추가 실행기는 target NACK를 write 주소·내부 주소 상위·내부 주소 하위·read 주소에 각각 주입합니다. 그때까지 clock은 9·18·27·36이고, 수정 경로는 STOP한 뒤 데이터 없음과 단계별 실패를 돌려줍니다. 잘못된 경로는 read 주소 NACK 뒤에도 저장된 A5·5A를 반환해 이번 요청으로 읽지 않은 값을 정상처럼 보이게 합니다.
+
+다른 대조 경로는 NACK라는 단어가 있으면 모두 실패로 취급합니다. 정상 read의 마지막 controller NACK까지 실패가 되는 이유입니다. 마지막 NACK를 ACK로 바꾼 변이에서는 payload A5·5A는 같지만 전체 기대 trace가 달라져 검증기가 실패합니다. 값·종료 신호·오류 단계를 함께 비교해야 하는 사례입니다.
+
+이 장치의 두 바이트 내부 주소와 두 바이트 응답은 6×9=54클록이며 400 kHz의 clock 구간은 135 μs입니다. 앞의 45클록·112.5 μs는 내부 주소 한 바이트라는 원래 계약의 계산이고 그대로 유효합니다. 다른 요청의 pointer 지정 3바이트까지 넣은 자체 분리 일정은 81클록입니다. 어느 계산도 START/STOP·stretch·소프트웨어 지연의 실제 측정값은 아닙니다.
+
+### 선을 놓았다는 요청과 실제 HIGH를 구별합니다
+
+추가 예제의 open-drain 논리 모형은 양쪽이 release일 때1, 어느 한쪽이라도 LOW이면0입니다. controller가 release해도 target이나 stuck-low 원인이 선을 LOW로 유지할 수 있습니다. SDA_STUCK·SCL_STUCK 입력은 START 전에 중단해 데이터 없이 돌려주며, 자동 bus-clear 펄스나 GPIO 조작을 실행하지 않습니다.
+
+NXP UM10204 Rev.7.0의 §3.1.1·§3.1.6·§3.1.16과 Microchip [DS21203Q §8.1~8.3](https://ww1.microchip.com/downloads/en/DeviceDoc/21203Q.pdf)을 2026-10-21 확인했습니다. 추가 모형은 RC 상승시간·전압 threshold·실제 clock stretching·controller timeout을 검증하지 않습니다. [코드·실행 안내](../../../예제_examples/실무검증_practical-validation/serial_buses/README.md)와 [환경·해시·결과 기록](../../../설계와검증사례_engineering-cases/검증기록_evidence/SPI와I2C전송경계검증_20261021.md)에서 확인 범위를 볼 수 있습니다. 앞의 기존 코드·테스트·결과는 바꾸지 않았습니다.
+
 ## English
 
 ### Why a register read starts by writing
@@ -87,6 +109,10 @@ Run the following commands from the repository root. The first prints the input 
 python "예제_examples/심화_advanced/systems/demo.py" i2c
 python "예제_examples/심화_advanced/systems/test_advanced_models.py" -v
 ```
+
+### Additional fault examples
+
+The linked 24LC256 read subset uses a two-byte internal address, giving 54 clocks for two data bytes. The earlier one-byte-register fixture still uses 45 clocks. A constructed request inserted after STOP changes the target pointer; STOP alone does not erase it in this model. Target NACKs abort without data, while the controller's final NACK terminates a normal read. A wrong final ACK preserves the payload but fails the literal full-trace oracle. Open-drain and stuck-low checks do not establish electrical timing or bus recovery.
 
 ## 출처 / Sources
 
