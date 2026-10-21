@@ -32,7 +32,7 @@ S=\frac{dV_{GS}}{d\log_{10}I_D}=nU_T\ln 10.
 
 n=1.5, 300 K에서는 $`g_m/I_D\approx25.79\ \mathrm{V}^{-1}`$, $`S\approx89.3\ \mathrm{mV/dec}`$입니다. 같은 조건에서 gate 전압을 89.3 mV 높이면 전류가 10배가 됩니다. n=1의 약 59.5 mV/dec는 이 열적 모델의 300 K 기준값이며 모든 소자 기술의 보편적 한계라는 뜻은 아닙니다. [CERN Indico에 공개된 Valerio Re의 INFIERI 강의](https://indico.cern.ch/event/850479/contributions/3718283/attachments/2297665/3907771/Re_INFIERI_2021.pdf) 24쪽의 전류 효율 식과 의미를 교차 확인합니다.
 
-### 전류 효율이 높으면 항상 좋습니까
+### 전류 효율과 함께 확인할 성능
 
 | 양 | 이 단순 모델이 보여 주는 것 | 별도로 확인할 것 |
 |---|---|---|
