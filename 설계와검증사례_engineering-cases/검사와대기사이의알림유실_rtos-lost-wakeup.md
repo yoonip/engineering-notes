@@ -4,7 +4,7 @@
 
 [실행 모델](../예제_examples/실무검증_practical-validation/rtos/models.py), [독립 검사](../예제_examples/실무검증_practical-validation/rtos/verify.py), [실행 안내](../예제_examples/실무검증_practical-validation/rtos/README.md), [검증 기록](검증기록_evidence/RTOS스케줄과알림검사_20261021.md)을 연결했습니다. Python 표준 라이브러리로 구성한 결정적 모델이며 실제 FreeRTOS·인터럽트·DMA를 실행하지 않습니다.
 
-## 1. “비었다”는 사실은 얼마 동안 유효합니까?
+## 1. 빈 큐 확인과 대기 사이의 상태 변화
 
 소비자 태스크가 큐를 확인하는 사건을 C, 작업이 없다고 생각해 기다리는 사건을 W, 생산자가 데이터 42를 공개하고 깨우는 사건을 P로 둡니다. C는 반드시 W보다 먼저이지만 P는 그 전·사이·뒤에 올 수 있습니다. 모델은 실제 메모리 읽기를 경쟁 실행하지 않고 각 사건의 상태를 직접 기록합니다.
 

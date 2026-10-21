@@ -1,6 +1,6 @@
 # 설계와 검증 사례 | Engineering decisions and checks
 
-요구사항과 실제 코드를 연결하고, 같은 입력에서 잘못된 조건과 해결한 조건을 비교합니다. 42개 사례의 본문에서 원인·대안·수정 방법을 읽고, 날짜별 기록에서 환경·명령·관측값을 확인하실 수 있습니다.
+요구사항과 실제 코드를 연결하고, 같은 입력에서 잘못된 조건과 해결한 조건을 비교합니다. 각 사례의 본문에서 원인·대안·수정 방법을 읽고, 날짜별 기록에서 환경·명령·관측값을 확인하실 수 있습니다.
 
 ## C·C++·펌웨어
 
@@ -72,7 +72,7 @@
 ## 코드와 계측으로 연결하기
 
 - [오류 재현 코드](../예제_examples/실무검증_practical-validation/README.md): C/C++·RTOS·인터럽트·DMA·통신·RTL·칩·AI 예제의 실행 방법입니다.
-- [현장 계측과 검증](../현장계측과검증_measurement-validation/README.md): 장비 9개 모델의 특성과 사용 절차, DMA·캐시, 예외 추적, PVT, 통신, 계측 자동화입니다.
+- [현장 계측과 검증](../현장계측과검증_measurement-validation/README.md): 계측기의 특성과 사용 절차, DMA·캐시, 예외 추적, PVT, 통신, 계측 자동화입니다.
 - [계측 자동화의 offline 기록](검증기록_evidence/계측자동화모의검사_20261021.md): 기존 19개 mock·모형 검사의 범위입니다.
 - [구현 프로젝트](../프로젝트_projects/README.md): 기존 소스와 이전 실험·실행 결과입니다.
 
@@ -80,4 +80,4 @@
 
 ## English
 
-Forty-two cases connect requirements, executable code, deliberately faulty controls, intended fixes and dated observations. They cover C/C++ ownership, firmware publication, RTOS scheduling/notifications, interrupt/DMA/cache contracts, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, file-backed firmware updates, NVMe/eMMC/SD, file-journal recovery, NAND wear/read-disturb models, file-backed FTL mapping, educational filesystem repair, payload backup restoration, file-backed RAID parity, timed-out I/O retry models, ECC fault injection, DDR command/pattern checks, RTL/reference and CDC/FIFO comparison, chip arithmetic, test identity, subprocess reports, AI serving/evaluation, synthetic prevalence and alert precision, FPGA frames and SQLite updates. HDL simulation, deterministic host models and physical measurements have distinct scopes.
+The cases connect requirements, executable code, deliberately faulty controls, intended fixes and dated observations. They cover C/C++ ownership, firmware publication, RTOS scheduling/notifications, interrupt/DMA/cache contracts, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, file-backed firmware updates, NVMe/eMMC/SD, file-journal recovery, NAND wear/read-disturb models, file-backed FTL mapping, educational filesystem repair, payload backup restoration, file-backed RAID parity, timed-out I/O retry models, ECC fault injection, DDR command/pattern checks, RTL/reference and CDC/FIFO comparison, chip arithmetic, test identity, subprocess reports, AI serving/evaluation, synthetic prevalence and alert precision, FPGA frames and SQLite updates. HDL simulation, deterministic host models and physical measurements have distinct scopes.

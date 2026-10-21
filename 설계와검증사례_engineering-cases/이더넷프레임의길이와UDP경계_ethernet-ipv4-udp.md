@@ -4,7 +4,7 @@
 
 [코드·입력·실행 안내](../예제_examples/실무검증_practical-validation/uart_ethernet/README.md) · [실행 기록](검증기록_evidence/UART와UDP수신경계검증_20261021.md)
 
-## 1. 무엇을 파싱하는 코드인가요?
+## 1. 파싱할 프레임의 범위
 
 `parse_udp_capture()`는 FCS가 제거된 untagged EthernetII 안의 IPv4·IHL 5·비단편 UDP만 해석하는 교육용 함수입니다. 주소 수신 대상·TTL 유효성·모든 MAC 규칙을 확인하는 네트워크 스택은 아닙니다. IP options·VLAN·IPv6·TCP·fragment 재조립·UDP Options는 지원하지 않으며 각각 미지원 상태로 구분합니다.
 
