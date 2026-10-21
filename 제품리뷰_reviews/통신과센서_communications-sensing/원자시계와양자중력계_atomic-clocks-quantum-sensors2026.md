@@ -6,7 +6,7 @@
 
 [Microchip SA65 현행 페이지](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks/embedded-atomic-oscillators/csac)는 정상상태 전력 120 mW, 1초 Allan deviation 3×10⁻¹⁰ 미만과 41×35×12 mm를 설명합니다. [2026년 8월 발표](https://www.microchip.com/en-us/about/news-releases/products/microchip-advances-space-grade-timing-with-enhanced-radiation-tolerance)는 별도 Space CSAC-SA65의 방사선·온도 조건을 설명합니다. 일반 지상용 모델에 우주용 적격성을 그대로 붙이지 않습니다.
 
-[Safran mRO-50 Ruggedized](https://safran-navigation-timing.com/product/mro-50-ruggedized/)는 소형 루비듐 발진기입니다. 현행 페이지는 정상상태 5 V 조건 0.45 W, 선택 3.3 V 조건 0.36 W를 구분하고 기동 전력도 따로 적습니다. 같은 페이지의 하루 holdover 1 µs 미만 설명을 모든 환경에서 보장되는 무조건적 최대 오차로 확장하지 않습니다. 견적·사용 설명서의 옵션과 시험 조건을 함께 봅니다.
+[Safran mRO-50 Ruggedized](https://safran-navigation-timing.com/product/mro-50-ruggedized/)는 소형 루비듐 발진기입니다. 현행 웹 본문은 소비 전력을 0.36 W로 소개합니다. 그러나 그 페이지에 연결된 [2023-08-28 사양서](https://safran-navigation-timing.com/wp-content/uploads/2023/05/mRO-50-Ruggedized_SAFRAN_Datasheet_08-28-2023_US.pdf)의 전기 사양란은 25°C 정상상태에서 기본 5 V형 <0.57 W, 선택 3.3 V형 <0.5 W와 각각의 기동 전력을 제시합니다. 판본이 다른 수치를 같은 조건의 최신 보장치로 합치지 않습니다. 웹 본문의 하루 holdover 1 µs 미만 설명도 모든 환경의 무조건적 최대 오차로 확장하지 않으며, 구매 시 적용 형식·판본과 시험 조건을 맞춰야 합니다.
 
 [Exail의 현행 양자 중력 센서 안내](https://www.exail.com/photonics/quantum-gravity-sensing)는 실내 AQG-A, 현장용 AQG-B와 차등 DQG를 구분합니다. 2026년 봄 Reims의 rover DQG 탐사를 설명하지만 그것만으로 임의의 이동 속도에서 성능을 확인할 수는 없습니다. 같은 페이지의 ObQG는 2027년 말 인도와 2028년 비행 시험을 목표로 적고 있습니다. 이 미래 계획을 현재 납품 완료로 바꾸어 읽지 않습니다.
 
@@ -51,7 +51,7 @@
 
 [NIST-F4의 2025년 발표](https://www.nist.gov/news-events/news/2025/04/new-atomic-fountain-clock-joins-elite-group-keeps-world-time)는 세슘 분수 시계의 성능 평가와 국제 기준 기여 절차를 설명합니다. 소형 SA65와 같은 설치·전력 조건의 기기가 아닙니다. [BIPM 재정의 안내](https://www.bipm.org/en/faq-redefinition-second)는 2030년을 조건을 충족했을 때의 결정 시점으로 설명합니다. 광학 시계가 정밀하다는 사실과 SI 초의 정의가 이미 바뀌었다는 주장은 다릅니다.
 
-[BIPM의 2025년 중력 측정 기록](https://www.bipm.org/en/-/2025-04-02-new-quantum-gravimeter-reading)은 AQG-B01을 킬로그램 실현 연구의 중력 확인에 사용한 실제 사례입니다. Kibble balance처럼 질량과 전기량을 연결하는 측정에서는 g도 필요합니다. 단순 모형 m=K/g에서 g에 10 nm/s²의 상대 불확도 성분이 있으면 m에 기여하는 상대 성분은 약 10⁻⁸/9.81=1.02×10⁻⁹입니다. 다른 성분과의 상관·합성은 제외한 자체 계산입니다.
+[BIPM의 2025년 중력 측정 기록](https://www.bipm.org/en/-/2025-04-02-new-quantum-gravimeter-reading)은 AQG-B01을 킬로그램 실현 연구의 중력 확인에 사용한 실제 사례입니다. Kibble balance처럼 질량과 전기량을 연결하는 측정에서는 g도 필요합니다. 단순 모형 m=K/g에서 g의 표준불확도 성분을 10 nm/s²로 가정하면 m에 기여하는 상대 성분은 약 10⁻⁸/9.81=1.02×10⁻⁹입니다. 다른 성분과의 상관·합성은 제외한 자체 계산입니다.
 
 ## 생태계와 전환 비용
 
