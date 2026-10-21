@@ -17,6 +17,8 @@
 
 이 순서는 문장을 언제나 한 줄씩 분해하라는 절차가 아닙니다. 글의 전체 방향을 먼저 잡더라도, 판단이 갈리는 지점에서는 문장의 주체·범위·조건으로 돌아올 수 있어야 합니다. 반대로 문장마다 맞는 해석을 모았더라도 문단의 역할과 글 전체의 결론을 놓치면 주제를 잘못 잡을 수 있습니다.
 
+학습 기록도 이 층위에 맞춰 남기시면 됩니다. 문장에서는 주체·조건·범위를, 지문에서는 문단의 역할과 관점 차이를, 선택지에서는 지지·모순·판단 유보와 그 근거를 적습니다. 통합 연습에서 막힌 지점을 이 기록으로 찾은 뒤 해당 설명으로 돌아가실 수 있습니다.
+
 ## 공식 안내와 이 문서의 구성
 
 법학전문대학원협의회의 [2026학년도 전국순회설명회 자료집](https://akls.kr/uploaded/board/reference01/e2c5adeb5b9aafa5ca1306478d22a6951.pdf)은 언어이해의 문항 유형을 주제·구조·관점 파악, 정보의 확인과 재구성, 추론과 해석, 평가와 적용으로 구분합니다. 확인 위치는 인쇄 5쪽, PDF 3쪽이며 자료집은 2025년 4월에 발행되었습니다.
@@ -45,3 +47,5 @@
 Reading comprehension connects sentence meaning, discourse structure and evidence. The guides distinguish who makes a claim, its scope and conditions, the role of each paragraph, and what an option adds or changes. They cover reading used in Korean CSAT nonfiction and LEET language comprehension, rather than foreign-language learning.
 
 The four articles progress from sentence interpretation to passage structure, option evaluation and two original passages with eight questions. The examples are independently written teaching material, not official or reconstructed examination questions. Official exam texts and final answers must retain their year, section and booklet identity.
+
+Keep notes at the matching level: subject, conditions and scope for a sentence; paragraph roles and viewpoints for a passage; support, contradiction or withheld judgment for an option. Use those notes to locate which guide to revisit after an exercise.
