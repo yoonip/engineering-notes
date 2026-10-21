@@ -1717,240 +1717,264 @@
   "providers": [
     {
       "name": "OpenAI",
-      "description": "GPT 계열은 텍스트·이미지 등의 입력을 처리하는 API 모델이고, gpt-oss는 내려받아 실행할 수 있는 공개 가중치 모델 계열이다. Hosted API와 로컬 추론은 실행 환경과 수정 범위가 다르다. 도구 호출, 구조화된 출력과 추론 runtime도 함께 살펴본다.",
+      "description": "gpt-oss-20b의 MoE·Harmony·MXFP4 실행 조건을 설명합니다. 공개 모델과 비공개 GPT 서비스의 구조를 구분합니다.",
       "references": [
-        "https://developers.openai.com/learn/gpt-oss",
-        "https://developers.openai.com/api/docs/models"
+        "https://developers.openai.com/api/docs/models/gpt-oss-20b"
       ],
-      "description_en": "The GPT family provides API models that process inputs such as text and images. gpt-oss is a family of downloadable open-weight models. Hosted APIs and local inference differ in execution environment and the changes they allow. Tool calling, structured outputs, and inference runtimes are also part of this comparison."
+      "description_en": "Examines the gpt-oss-20b MoE, Harmony format and MXFP4 inference requirements without inferring private GPT architectures.",
+      "path": "AI모델실험_model-lab/models/openai.md"
     },
     {
       "name": "Google / DeepMind",
-      "description": "Gemini는 Google의 생성형 AI 모델·API 생태계다. Gemma는 직접 실행하고 조정할 수 있는 공개 가중치 계열이며, 언어·시각 입력 등 지원 범위는 모델별로 다르다. 제공 방식과 실행 도구를 기준으로 두 계열을 살펴본다.",
+      "description": "Gemma 3 1B IT의 텍스트 입력·학습 자료·32k 문맥을 다룹니다. 큰 Gemma의 시각 입력과 Gemini 서비스를 구분합니다.",
       "references": [
-        "https://ai.google.dev/gemini-api/docs",
-        "https://ai.google.dev/gemma"
+        "https://ai.google.dev/gemma/docs/core/model_card_3"
       ],
-      "description_en": "Gemini is Google's generative AI model and API ecosystem. Gemma provides open-weight models that can be run and adapted directly, with language and visual-input support varying by model. The two families are compared through their distribution methods and execution tools."
+      "description_en": "Examines the text-only Gemma 3 1B IT release, its training-data description and 32k context, separately from larger multimodal Gemma variants and Gemini services.",
+      "path": "AI모델실험_model-lab/models/google.md"
     },
     {
       "name": "Microsoft",
-      "description": "Phi는 비교적 작은 언어 모델을 중심으로 한 Microsoft의 모델 계열이다. 공식 PhiCookBook에는 로컬 실행·미세조정·배포 예제가 있다. 소형 모델이 사용하는 자원과 양자화, 장치 배포 과정을 살펴본다.",
+      "description": "Phi-4-mini-instruct의 합성 데이터·SFT·DPO와 실행 조건을 설명합니다. 긴 문맥 설정과 실제 회수 정확도를 구분합니다.",
       "references": [
-        "https://github.com/microsoft/PhiCookBook"
+        "https://huggingface.co/microsoft/Phi-4-mini-instruct"
       ],
-      "description_en": "Phi is Microsoft's model family centered on relatively small language models. The official PhiCookBook provides examples of local execution, fine-tuning, and deployment. It supports examination of small-model resource use, quantization, and deployment to devices."
+      "description_en": "Explains Phi-4-mini-instruct synthetic data, SFT, DPO and inference conditions, separating context capacity from retrieval accuracy.",
+      "path": "AI모델실험_model-lab/models/microsoft.md"
     },
     {
       "name": "Meta",
-      "description": "Llama는 Meta의 공개 가중치 언어 모델 계열이다. 버전별로 크기·입력 형식·라이선스가 다르다. Meta의 연구 저장소에는 비전과 표현 학습 프로젝트도 있으며, 모델 구조와 학습 방법을 소스에서 살펴볼 수 있다.",
+      "description": "Llama 3.2 1B Instruct의 GQA·지시 조정·지원 언어·사용 조건을 설명합니다. 원본과 공식 양자화 배포물의 문맥을 구분합니다.",
       "references": [
-        "https://github.com/meta-llama/llama-models",
-        "https://github.com/facebookresearch"
+        "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
       ],
-      "description_en": "Llama is Meta's open-weight language-model family, with sizes, input formats, and licenses varying by version. Meta's research repositories also include vision and representation-learning projects whose code exposes model architectures and training methods."
+      "description_en": "Explains Llama 3.2 1B Instruct GQA, instruction tuning, languages and release terms, distinguishing original and official quantized variants.",
+      "path": "AI모델실험_model-lab/models/meta.md"
     },
     {
       "name": "Anthropic",
-      "description": "Claude는 API 기반의 언어·멀티모달 모델 생태계다. 긴 문서 처리와 코드, 도구 사용을 애플리케이션에 연결한다. API의 메시지·도구 인터페이스를 구성하는 작업과 모델 가중치를 수정하는 작업은 다르다.",
+      "description": "Claude Sonnet 5.5의 공개 API 응답 블록과 예산·종료 처리를 다룹니다. 확인되지 않은 가중치 구조와 전체 학습 과정은 추정하지 않습니다.",
       "references": [
-        "https://platform.claude.com/docs/en/intro"
+        "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
       ],
-      "description_en": "Claude is an API-based language and multimodal model ecosystem. It connects long-document processing, coding, and tool use to applications. Configuring its message and tool interfaces is different from modifying model weights."
+      "description_en": "Examines Claude Sonnet 5.5 API content blocks, budgets and completion handling without inferring undisclosed weights or training recipes.",
+      "path": "AI모델실험_model-lab/models/anthropic.md"
     },
     {
       "name": "Samsung",
-      "description": "Samsung SAIL Montréal의 Tiny Recursive Models는 작은 네트워크를 반복 적용해 답과 내부 표현을 갱신하는 추론 연구 코드다. 재귀 단계와 학습 구조를 중심으로 읽는다. 일반적인 대화형 LLM과는 문제 구성·학습 방식이 다르며, [TRM 문서](samsung-trm/README.md)에 구조를 정리했다.",
+      "description": "Samsung SAIL Montréal TRM의 답·잠재 상태 반복과 gradient 경계를 설명합니다. 자체 스칼라 실험과 공식 퍼즐 모델 학습을 구분합니다.",
       "references": [
         "https://github.com/SamsungSAILMontreal/TinyRecursiveModels"
       ],
-      "description_en": "Tiny Recursive Models from Samsung SAIL Montréal is research code that repeatedly applies a small network to update answers and internal representations. Its recursive steps and training structure are the focus. Its problem formulation and training differ from conversational LLMs; the [TRM notes](samsung-trm/README.md) describe the architecture."
+      "description_en": "Explains Samsung SAIL Montréal TRM state recursion and gradient boundaries, separately from the educational scalar experiment.",
+      "path": "AI모델실험_model-lab/models/samsung-trm/README.md"
     },
     {
       "name": "DeepSeek",
-      "description": "DeepSeek는 언어·코드·추론 모델과 관련 코드를 공개한다. R1은 추론 학습, V3는 대규모 언어 모델 구조, R1-Distill은 다른 기반 모델로 추론 능력을 전달하는 방법과 관련된다. 원본 모델과 distill checkpoint는 구조와 자원 요구가 다르다.",
+      "description": "R1-Distill-Qwen-1.5B의 Qwen 기반 구조와 생성 풀이 학습을 설명합니다. 원본 R1의 MoE·강화학습과 학생 모델을 구분합니다.",
       "references": [
-        "https://github.com/deepseek-ai"
+        "https://github.com/deepseek-ai/DeepSeek-R1"
       ],
-      "description_en": "DeepSeek publishes language, code, and reasoning models together with related code. R1 concerns reasoning training, V3 large-language-model architecture, and R1-Distill the transfer of reasoning capabilities to other base models. Original models and distilled checkpoints differ in architecture and resource requirements."
+      "description_en": "Explains the Qwen-based R1-Distill-Qwen-1.5B student and generated-solution training, separately from the original R1 MoE and reinforcement learning.",
+      "path": "AI모델실험_model-lab/models/deepseek-r1-distill/README.md"
     },
     {
       "name": "Alibaba / Qwen",
-      "description": "Qwen은 언어·코드·시각언어 등 여러 작업을 다루는 모델 계열이다. Tokenizer·대화 형식·입력 범위는 모델별로 다르다. 공개 가중치 실행과 framework 통합, 다국어 처리, 모델 크기별 자원 사용을 살펴본다.",
+      "description": "Qwen3-0.6B의 dense 구조·사고 모드·KV 헤드와 명시적 head_dim을 설명합니다. 캐시 산술을 실제 생성 성능으로 쓰지 않습니다.",
       "references": [
-        "https://github.com/QwenLM/Qwen3"
+        "https://huggingface.co/Qwen/Qwen3-0.6B"
       ],
-      "description_en": "Qwen covers language, code, and vision-language tasks. Tokenizers, chat formats, and supported inputs vary by model. Relevant topics include open-weight inference, framework integration, multilingual processing, and resource use at different model sizes."
+      "description_en": "Examines Qwen3-0.6B dense architecture, thinking modes, KV heads and explicit head dimension; cache arithmetic is not an inference benchmark.",
+      "path": "AI모델실험_model-lab/models/qwen.md"
     },
     {
       "name": "Mistral AI",
-      "description": "Mistral은 공개 가중치 모델과 hosted API를 제공한다. Dense·MoE 구조, 언어·코드·문서 처리 등 모델마다 구조와 목적이 다르다. 배포 방식과 사용 조건도 release별로 살펴본다.",
+      "description": "Ministral 8B 2410의 층별 attention 범위와 지시 조정·실행기 지원·Research License를 설명합니다.",
       "references": [
-        "https://docs.mistral.ai/"
+        "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410"
       ],
-      "description_en": "Mistral provides open-weight models and hosted APIs. Models differ in architecture and purpose, including dense and MoE designs and language, code, and document tasks. Distribution methods and usage terms are examined per release."
+      "description_en": "Explains Ministral 8B 2410 interleaved attention, instruction tuning, runtime support and release-specific research license.",
+      "path": "AI모델실험_model-lab/models/mistral.md"
     },
     {
       "name": "IBM",
-      "description": "Granite는 IBM의 언어·코드·기업용 AI 활용을 위한 모델 계열이다. 공개 model card와 코드에 학습 목적·평가·사용 조건이 담겨 있다. 검색과 문서 처리, 소형 모델 배포를 살펴본다.",
+      "description": "Granite 3.3 2B Instruct의 Base 계보·합성 과제 학습·추론 태그를 설명합니다. 검색 성공과 근거에 맞는 답을 구분합니다.",
       "references": [
-        "https://github.com/ibm-granite/granite-language-models"
+        "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct"
       ],
-      "description_en": "Granite is IBM's model family for language, code, and enterprise AI applications. Published model cards and code describe training goals, evaluation, and usage terms. Retrieval, document processing, and small-model deployment are relevant areas of study."
+      "description_en": "Explains Granite 3.3 2B Instruct lineage, synthetic tasks and reasoning tags, separating retrieval success from grounded answering.",
+      "path": "AI모델실험_model-lab/models/ibm.md"
     },
     {
       "name": "NVIDIA",
-      "description": "Nemotron은 언어·추론 모델, Cosmos는 물리 세계와 영상·시뮬레이션 응용을 다룬다. GPU 추론 도구, 로봇과 합성 데이터 흐름도 함께 살펴본다. 모델 자체의 성능과 TensorRT 같은 runtime 최적화의 효과를 나눠 분석한다.",
+      "description": "Nemotron Nano 9B v2의 Mamba-2·MLP·attention 혼합 구조를 설명합니다. 내부 상태·KV 캐시·사고 예산과 runtime을 구분합니다.",
       "references": [
-        "https://huggingface.co/nvidia"
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2"
       ],
-      "description_en": "Nemotron covers language and reasoning models; Cosmos concerns the physical world and video/simulation applications. Related areas include GPU inference tools, robotics, and synthetic-data pipelines. Model performance is considered separately from optimization effects introduced by runtimes such as TensorRT."
+      "description_en": "Examines Nemotron Nano 9B v2 Mamba-2, MLP and attention architecture, separating state, KV cache, thinking budget and runtime.",
+      "path": "AI모델실험_model-lab/models/nvidia.md"
     },
     {
       "name": "Apple",
-      "description": "MLX는 Apple silicon을 위한 배열 연산·머신러닝 framework이고, Core ML은 Apple 플랫폼에 모델을 통합하고 실행하는 도구다. 공개 모델을 Apple 장치에서 실행할 때 모델 변환과 메모리 사용, 실행 조건을 살펴본다.",
+      "description": "MLX는 모델이 아닌 배열 연산·학습·추론 framework입니다. 지연 계산·평가 시점·공유 메모리와 측정 범위를 설명합니다.",
       "references": [
-        "https://ml-explore.github.io/mlx/build/html/index.html"
+        "https://ml-explore.github.io/mlx/build/html/usage/lazy_evaluation.html"
       ],
-      "description_en": "MLX is an array-computing and machine-learning framework for Apple silicon. Core ML integrates and runs models on Apple platforms. Running published models on Apple devices involves model conversion, memory use, and execution requirements."
+      "description_en": "MLX is an array and machine-learning framework, not a model. The note covers lazy evaluation, shared memory and timing boundaries.",
+      "path": "AI모델실험_model-lab/models/apple.md"
     },
     {
       "name": "Amazon / AWS",
-      "description": "Nova는 Amazon의 생성형 AI 모델 계열이며 AWS 서비스와 연결해 사용한다. 모델 API에 데이터·권한·응용 인프라를 연결하는 흐름을 살펴본다. 서비스 비용과 지연에는 모델 추론뿐 아니라 호출·전송·작업량도 영향을 준다.",
+      "description": "Nova Micro v1의 텍스트 입력과 Bedrock API 경로를 다룹니다. 모델·서비스·Converse 형식과 비공개 내부 구조를 구분합니다.",
       "references": [
         "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html"
       ],
-      "description_en": "Nova is Amazon's generative AI model family, used through AWS services. Its application flow connects model APIs with data, permissions, and supporting infrastructure. Service cost and latency depend on calls, transfers, and workload as well as model inference."
+      "description_en": "Examines Nova Micro v1 text input and Bedrock APIs, separating model, service and Converse interface from undisclosed internals.",
+      "path": "AI모델실험_model-lab/models/amazon.md"
     },
     {
       "name": "Cohere",
-      "description": "Command는 생성형 모델, Aya는 다국어 연구 모델 계열이다. Embedding·rerank 모델은 문서 검색의 표현과 순서를 다뤄 검색 품질에 영향을 준다. 공개 모델과 API의 제공 범위는 각각 살펴본다.",
+      "description": "Aya Expanse 8B의 자기회귀 구조·다국어 선호 학습·모델 결합을 설명합니다. 연구 가중치와 상용 Command API 조건을 구분합니다.",
       "references": [
-        "https://docs.cohere.com/"
+        "https://huggingface.co/CohereLabs/aya-expanse-8b"
       ],
-      "description_en": "Command is a generative-model family, and Aya is a multilingual research-model family. Embedding and reranking models affect document-search quality through representations and result ordering. Published models and APIs have their own availability and scope."
+      "description_en": "Explains Aya Expanse 8B autoregression, multilingual preference training and model merging, separately from commercial Command APIs.",
+      "path": "AI모델실험_model-lab/models/cohere.md"
     },
     {
       "name": "xAI",
-      "description": "Grok은 xAI의 모델 계열이다. 공개된 Grok-1 저장소와 서비스 API의 모델은 별도의 배포물이다. 공개 release의 구조 분석과 API 응용은 실행 경로를 나눠 살펴본다.",
+      "description": "Grok-1 공개 MoE의 사양과 JAX 참조 코드를 설명합니다. 해당 가중치·코드의 구조를 현재 Grok 서비스에 대입하지 않습니다.",
       "references": [
-        "https://github.com/xai-org/grok-1",
-        "https://docs.x.ai/overview"
+        "https://github.com/xai-org/grok-1"
       ],
-      "description_en": "Grok is xAI's model family. The published Grok-1 repository and models offered through the service API are separate distributions. Architecture analysis of a published release and API application development follow different execution paths."
+      "description_en": "Examines the public Grok-1 MoE specifications and JAX reference implementation without transferring them to current Grok services.",
+      "path": "AI모델실험_model-lab/models/xai.md"
     },
     {
       "name": "Baidu",
-      "description": "ERNIE는 Baidu의 언어·지식·멀티모달 모델 계열이다. PaddlePaddle과 연결된 구현에서 중국어·다국어 데이터와 모델 구조, 학습 framework의 관계를 살펴본다.",
+      "description": "ERNIE 4.5 0.3B PT의 dense 텍스트 구조와 PyTorch 배포 형식을 설명합니다. 계열의 대형 멀티모달 MoE와 구분합니다.",
       "references": [
-        "https://github.com/PaddlePaddle/ERNIE"
+        "https://huggingface.co/baidu/ERNIE-4.5-0.3B-PT"
       ],
-      "description_en": "ERNIE is Baidu's language, knowledge, and multimodal model family. Implementations connected to PaddlePaddle provide a way to examine Chinese and multilingual data alongside model architectures and training frameworks."
+      "description_en": "Explains ERNIE 4.5 0.3B PT dense text architecture and PyTorch weight format, separately from larger multimodal MoE variants.",
+      "path": "AI모델실험_model-lab/models/baidu.md"
     },
     {
       "name": "Tencent",
-      "description": "Hunyuan에는 언어·이미지·영상·3D 생성 모델 프로젝트가 있다. 작업마다 입력 데이터와 출력 표현, 추론 비용이 다르다. 텍스트 생성과 시각·공간 생성의 실행 흐름을 살펴본다.",
+      "description": "HunyuanVideo의 두 stream 결합·3D VAE·텍스트 조건을 설명합니다. 공식 가중치 ID와 코드 저장소·발표 평가 버전을 구분합니다.",
       "references": [
-        "https://github.com/Tencent-Hunyuan"
+        "https://github.com/Tencent-Hunyuan/HunyuanVideo"
       ],
-      "description_en": "Hunyuan includes language, image, video, and 3D generation projects. Input data, output representations, and inference costs differ by task. Text generation and visual/spatial generation have different execution flows."
+      "description_en": "Explains HunyuanVideo stream fusion, 3D VAE and text conditioning, distinguishing weight IDs, code repositories and evaluation variants.",
+      "path": "AI모델실험_model-lab/models/tencent.md"
     },
     {
       "name": "Z.ai",
-      "description": "GLM은 언어·추론·도구 활용을 다루는 모델 계열이다. 공개 저장소에 모델 설명과 실행 예제가 있다. 대화 형식과 도구 인터페이스, 지원 runtime은 release별 문서에서 살펴본다.",
+      "description": "GLM-4.5-Air의 MoE 전체·활성 파라미터와 두 사고 모드를 설명합니다. 뒤 버전의 추론·parser 특징을 구분합니다.",
       "references": [
-        "https://github.com/zai-org/GLM-4.5"
+        "https://huggingface.co/zai-org/GLM-4.5-Air"
       ],
-      "description_en": "GLM is a model family covering language, reasoning, and tool use. Its public repositories provide model descriptions and execution examples. Chat formats, tool interfaces, and supported runtimes are documented for each release."
+      "description_en": "Explains GLM-4.5-Air total and active MoE parameters and thinking modes, without importing later-version parser behavior.",
+      "path": "AI모델실험_model-lab/models/zai.md"
     },
     {
       "name": "Moonshot AI",
-      "description": "Kimi는 긴 문맥 처리와 추론·도구 활용을 다루는 모델 계열이다. Kimi-K2는 MoE 기반 공개 모델이다. 전체 파라미터 수, token당 활성 파라미터 수와 실제 가중치 저장량을 구분해 구조와 자원 사용을 살펴본다.",
+      "description": "원본 Kimi-K2-Instruct의 전문가 라우팅·MLA·도구 호출 연결을 설명합니다. 후속 K2 Thinking과 구분합니다.",
       "references": [
-        "https://github.com/MoonshotAI/Kimi-K2"
+        "https://huggingface.co/moonshotai/Kimi-K2-Instruct"
       ],
-      "description_en": "Kimi covers long-context processing, reasoning, and tool use. Kimi-K2 is a published MoE model. Architecture and resource use are examined by distinguishing total parameter count, active parameters per token, and actual weight storage."
+      "description_en": "Examines original Kimi-K2-Instruct expert routing, MLA and tool-call linkage, separately from later K2 Thinking releases.",
+      "path": "AI모델실험_model-lab/models/moonshot.md"
     },
     {
       "name": "Stability AI",
-      "description": "Stable Diffusion 등 이미지·미디어 생성 모델을 제공한다. 확산 과정과 latent 표현, 텍스트 조건, sampler가 생성 결과에 영향을 준다. Prompt는 입력 조건을, fine-tuning·LoRA는 학습을 통해 모델의 동작을 바꾼다.",
+      "description": "SD 3.5 Medium의 MMDiT-X·세 텍스트 인코더·VAE·혼합 해상도 학습을 설명합니다. 공식 카드의 불일치도 표시합니다.",
       "references": [
-        "https://github.com/Stability-AI/generative-models"
+        "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium"
       ],
-      "description_en": "Stability AI provides image and media generation models including Stable Diffusion. Diffusion processes, latent representations, text conditioning, and samplers affect the generated output. Prompts change input conditions, while fine-tuning and LoRA adapt model behavior through training."
+      "description_en": "Explains SD 3.5 Medium MMDiT-X, three text encoders, VAE and mixed-resolution training, noting inconsistencies in the card.",
+      "path": "AI모델실험_model-lab/models/stability.md"
     },
     {
       "name": "Black Forest Labs",
-      "description": "FLUX는 텍스트 조건의 이미지 생성·편집 모델 계열이다. 이미지 표현과 생성 step, 해상도에 따라 메모리 사용과 실행 시간이 달라진다. 코드와 각 모델 variant의 가중치 사용 조건도 나눠 살펴본다.",
+      "description": "FLUX.1-schnell의 rectified flow와 증류를 통한 적은 생성 step을 설명합니다. dev·pro와 사용 조건을 구분합니다.",
       "references": [
-        "https://github.com/black-forest-labs/flux"
+        "https://huggingface.co/black-forest-labs/FLUX.1-schnell"
       ],
-      "description_en": "FLUX is a model family for text-conditioned image generation and editing. Image representations, generation steps, and resolution affect memory use and execution time. Code terms and weight-usage terms are examined separately for each model variant."
+      "description_en": "Explains FLUX.1-schnell rectified flow and few-step distillation, separately from dev and pro variants and their terms.",
+      "path": "AI모델실험_model-lab/models/bfl.md"
     },
     {
       "name": "Hugging Face",
-      "description": "Hugging Face는 모델·데이터셋 배포와 학습·추론 도구를 제공하는 플랫폼이다. Transformers·Datasets·Tokenizers·Safetensors와 SmolLM 계열 모델을 제공한다. Hub 모델의 원저작자와 라이선스는 각 model card에서 확인할 수 있다.",
+      "description": "Hub 플랫폼·Transformers 도구와 자체 SmolLM2 135M Instruct를 구분합니다. 소형 모델의 사전학습·SFT·DPO를 설명합니다.",
       "references": [
-        "https://huggingface.co/HuggingFaceTB",
-        "https://huggingface.co/docs"
+        "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct"
       ],
-      "description_en": "Hugging Face is a platform for distributing models and datasets and for training and inference tooling. It provides Transformers, Datasets, Tokenizers, Safetensors, and the SmolLM model family. Each Hub model's model card identifies its original creator and license."
+      "description_en": "Separates the Hub platform and Transformers tooling from HuggingFaceTB SmolLM2 135M Instruct and its pretraining, SFT and DPO.",
+      "path": "AI모델실험_model-lab/models/huggingface.md"
     },
     {
       "name": "LG AI Research",
-      "description": "EXAONE은 LG AI Research의 언어·추론 모델 계열이다. 한국어·영어 문맥 처리와 공개 checkpoint의 실행을 살펴본다. 공개 가중치의 사용 범위는 release별 라이선스를 따른다.",
+      "description": "EXAONE 4.0 1.2B의 GQA·QK 정규화·사고 모드를 설명합니다. 32B 전용 hybrid attention과 구분합니다.",
       "references": [
-        "https://github.com/LG-AI-EXAONE/EXAONE-4.0"
+        "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B"
       ],
-      "description_en": "EXAONE is LG AI Research's language and reasoning model family. Relevant topics include Korean and English context processing and running published checkpoints. Usage of published weights is governed by the license for each release."
+      "description_en": "Explains EXAONE 4.0 1.2B GQA, QK normalization and thinking mode, separately from 32B-specific hybrid attention.",
+      "path": "AI모델실험_model-lab/models/lg.md"
     },
     {
       "name": "NAVER",
-      "description": "HyperCLOVA X는 NAVER의 한국어·다국어·멀티모달 AI 생태계다. 서비스와 공개 모델 release를 각각 제공한다. 한국어 문체와 전문 용어, 문서 처리 결과가 입력과 평가 데이터에 따라 어떻게 달라지는지 살펴본다.",
+      "description": "HyperCLOVAX SEED Text Instruct 1.5B의 사전학습·RFT·SFT와 16k 문맥을 설명합니다. CLOVA X 서비스 전체와 구분합니다.",
       "references": [
-        "https://huggingface.co/naver-hyperclovax"
+        "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B"
       ],
-      "description_en": "HyperCLOVA X is NAVER's Korean, multilingual, and multimodal AI ecosystem, offered through services and published model releases. Its study includes how inputs and evaluation data affect Korean style, technical terminology, and document-processing results."
+      "description_en": "Explains HyperCLOVAX SEED Text Instruct 1.5B pretraining, rejection-sampling fine-tuning, SFT and 16k context, separately from the full service.",
+      "path": "AI모델실험_model-lab/models/naver.md"
     },
     {
       "name": "Kakao",
-      "description": "Kanana는 Kakao의 언어 모델 계열이다. 공개 저장소에서 모델 구성과 사용 예제, model card를 읽을 수 있다. 한국어 표현과 tokenizer, 대화 형식, 소형 모델의 실행 조건을 비교한다.",
+      "description": "Kanana 1.5 2.1B 2505의 공개 config·후속 학습·YaRN 확장을 설명합니다. 구현 클래스와 가중치 계보를 구분합니다.",
       "references": [
-        "https://github.com/kakao/kanana"
+        "https://huggingface.co/kakaocorp/kanana-1.5-2.1b-instruct-2505"
       ],
-      "description_en": "Kanana is Kakao's language-model family. Public repositories provide model configurations, usage examples, and model cards. Korean expression, tokenizers, chat formats, and small-model execution requirements are compared."
+      "description_en": "Examines Kanana 1.5 2.1B 2505 configuration, post-training and YaRN extension, distinguishing implementation classes from weight lineage.",
+      "path": "AI모델실험_model-lab/models/kakao.md"
     },
     {
       "name": "Upstage",
-      "description": "Solar는 Upstage의 언어 모델 계열이다. 공개 checkpoint와 서비스 제공 방식은 모델마다 다르다. 문서·한국어 응용과 모델의 학습·추론 구성을 살펴본다.",
+      "description": "SOLAR 10.7B Instruct v1의 DUS·계속 사전학습·SFT·DPO를 설명합니다. 단일 턴 배포물과 Base의 조건을 구분합니다.",
       "references": [
-        "https://huggingface.co/upstage"
+        "https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0"
       ],
-      "description_en": "Solar is Upstage's language-model family. Published checkpoints and service offerings vary by model. Relevant topics include document and Korean-language applications and the organization of training and inference."
+      "description_en": "Explains SOLAR 10.7B Instruct v1 DUS, continued pretraining, SFT and DPO, distinguishing its single-turn use and terms from Base.",
+      "path": "AI모델실험_model-lab/models/upstage.md"
     },
     {
       "name": "SK Telecom",
-      "description": "A.X는 SK Telecom의 언어 모델 계열이다. 공개 model card에 모델의 목적과 실행·사용 조건이 담겨 있다. 한국어 응답과 다국어 처리, 추론 자원과 모델 배포의 관계를 살펴본다.",
+      "description": "A.X 4.0 Light의 Qwen2.5 기반 한국어 추가 학습과 16,384 문맥을 설명합니다. 72B 계열 표와 구분합니다.",
       "references": [
-        "https://huggingface.co/skt"
+        "https://huggingface.co/skt/A.X-4.0-Light"
       ],
-      "description_en": "A.X is SK Telecom's language-model family. Published model cards describe intended purposes and execution and usage conditions. Its study connects Korean responses and multilingual processing with inference resources and model deployment."
+      "description_en": "Explains Qwen2.5-based Korean adaptation and the 16,384 context of A.X 4.0 Light, separately from the 72B family tables.",
+      "path": "AI모델실험_model-lab/models/skt.md"
     },
     {
       "name": "KT",
-      "description": "Midm은 KT의 한국어 중심 언어 모델 계열이다. K-intelligence 계정에서 공개 배포물을 제공한다. 한국어 데이터와 모델 크기, 학습·추론 환경을 살펴본다.",
+      "description": "Mi:dm 2.0 Mini의 2.3B dense 구조와 Base에서의 프루닝·증류를 설명합니다. 자체 확률 회귀와 실제 학습을 구분합니다.",
       "references": [
-        "https://huggingface.co/K-intelligence"
+        "https://huggingface.co/K-intelligence/Midm-2.0-Mini-Instruct"
       ],
-      "description_en": "Midm is KT's Korean-centered language-model family. Published distributions are available through the K-intelligence account. Relevant topics include Korean data, model size, and training and inference environments."
+      "description_en": "Explains Mi:dm 2.0 Mini dense architecture, pruning and distillation from Base, separately from the local probability-regression example.",
+      "path": "AI모델실험_model-lab/models/kt.md"
     },
     {
       "name": "NCSoft",
-      "description": "VARCO는 NCSOFT의 AI 모델 계열이다. 언어·멀티모달 등 release마다 목적이 다르다. 지원 입력과 언어, 라이선스는 개별 model card의 범위를 기준으로 살펴본다.",
+      "description": "Llama VARCO 8B의 Meta Llama 3.1 기반 계속 사전학습과 한국어 SFT·DPO를 설명합니다. 원개발자와 조정 기관을 구분합니다.",
       "references": [
-        "https://huggingface.co/NCSOFT"
+        "https://huggingface.co/NCSOFT/Llama-VARCO-8B-Instruct"
       ],
-      "description_en": "VARCO is NCSOFT's AI model family, with language, multimodal, and other purposes varying by release. Supported inputs, languages, and licenses are examined through the scope described in each model card."
+      "description_en": "Explains Llama VARCO 8B continued pretraining and Korean SFT/DPO on Meta Llama 3.1, distinguishing original authorship and adaptation.",
+      "path": "AI모델실험_model-lab/models/ncsoft.md"
     }
   ],
   "secondary_languages": [

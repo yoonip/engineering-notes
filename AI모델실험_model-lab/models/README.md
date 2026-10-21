@@ -1,20 +1,20 @@
-# 모델과 실행 도구 분석 | Models and runtimes
+# 모델별 구조·학습·실행 조건 | Model architecture, training and execution
 
-기관마다 실제 배포물 하나를 골라 구조·입출력·사용 조건·재현 방법을 정리했습니다. 2026-10-19에 공식 자료를 확인했으며, 각 회사의 전체 제품이나 최신 모델을 대표하는 순위표는 아닙니다. 공개 모델의 파라미터 수와 서비스 API의 기능, 실행 도구의 역할을 구분했습니다.
+각 문서는 실제 배포물의 개발자·기반 계보·구조·학습 설명·실행 조건을 다룹니다. 공식 자료 재확인일은 2026-10-21입니다. 대상 버전은 표의 모델 식별자로 구분하며, 이 목록은 성능 순위표가 아닙니다.
 
-각 문서의 ‘재현 방법’은 해당 모델을 실행할 때 확인할 절차입니다. 이 저장소에서 실행한 것은 [네 가지 CPU 수치 실험](../experiments/README.md)이며, 아래 배포물의 가중치 추론과 유료 API 호출은 수행하지 않았습니다.
+공개 가중치 모델, 비공개 상용 API, 퍼즐 추론 연구, 이미지·영상 생성, 배열 framework를 구분합니다. 아래 표의 Apple MLX는 모델이 아니며, Hugging Face는 Hub 플랫폼을 운영하는 동시에 SmolLM2도 개발합니다. 모든 Hub 배포물이 Hugging Face의 자체 모델이라는 뜻은 아닙니다.
 
-배포물별 본문에는 입출력 흐름과 구조의 뜻, 직접 만든 평가 입력·판정 기준 또는 작은 수 계산이 있습니다. 예제의 기대값과 실제 모델 응답을 구분해서 읽으시면 됩니다. GQA·embedding·학습·추론 같은 말이 낯설면 [논문에서 자주 만나는 말](../../논문해설_papers/논문을읽는용어_PAPER_TERMS.md)과 [평가 지표의 계산](../../제품리뷰_reviews/모델평가지표_MODEL_EVALUATION.md)을 먼저 보실 수 있습니다.
+실제 로컬 실행은 [별도 CPU 수치 실험](../experiments/README.md)에 있습니다. 아래 모델의 가중치·유료 API·공식 학습은 실행하지 않았습니다. [자체 질문과 판정표](../experiments/평가입력과판정기준_evaluation-design.md)는 공식 모델 설명과 구분한 평가 설계입니다. [기관과 배포 경로의 구분](../PROVIDERS.md)을 함께 읽으시면 됩니다.
 
-| 기관 | 분석 대상 | 핵심 비교 |
+| 개발자·기관 | 분석 대상 | 구조·학습·실행의 구분 |
 |---|---|---|
 | OpenAI | [gpt-oss-20b](openai.md) | 전체·활성 파라미터, MXFP4, Harmony |
 | Google DeepMind | [Gemma 3 1B](google.md) | Gemini 서비스와 공개 Gemma, 크기별 입력 범위 |
 | Microsoft | [Phi-4-mini-instruct](microsoft.md) | 소형 모델의 합성 데이터와 실행 커널 |
 | Meta | [Llama 3.2 1B Instruct](meta.md) | GQA, 한국어 평가, 라이선스 |
 | Anthropic | [Claude Sonnet 5.5](anthropic.md) | API 계약과 출력 블록, 실행하지 않은 비교 |
-| Samsung SAIL Montréal | [TRM](../samsung-trm/README.md) | 답·잠재 상태 갱신과 반복 계산 |
-| DeepSeek | [R1-Distill-Qwen-1.5B](../deepseek-r1-distill/README.md) | 원본 R1과 기반 구조, KV 캐시 |
+| Samsung SAIL Montréal | [TRM](samsung-trm/README.md) | 답·잠재 상태 갱신과 반복 계산 |
+| DeepSeek | [R1-Distill-Qwen-1.5B](deepseek-r1-distill/README.md) | 원본 R1과 기반 구조, KV 캐시 |
 | Alibaba / Qwen | [Qwen3-0.6B](qwen.md) | thinking 설정과 KV 헤드 |
 | Mistral AI | [Ministral 8B 2410](mistral.md) | interleaved attention과 실행 지원 범위 |
 | IBM | [Granite 3.3 2B](ibm.md) | 근거 기반 응답과 추론 출력 형식 |
@@ -40,4 +40,4 @@
 
 ## English
 
-Each note examines a concrete release, its architecture or API interface, distribution terms, reproduction route, and limitations. These are source-based analyses, not a leaderboard. Apple MLX is listed as a runtime, not a model. Only the linked offline numerical experiments were executed locally; no listed model weights or paid APIs were run.
+Each note examines a specific release, its source-supported architecture, training description, inference conditions and limits of public disclosure. These are source-based analyses, not a leaderboard. Apple MLX is listed as a runtime, not a model. Only the linked offline numerical experiments were executed locally; no listed model weights or paid APIs were run.

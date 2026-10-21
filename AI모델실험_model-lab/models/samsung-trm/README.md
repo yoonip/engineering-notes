@@ -1,6 +1,6 @@
 # Samsung TRM의 반복 구조와 계산량 | TRM recursion and compute
 
-Samsung SAIL Montréal의 Tiny Recursive Models(TRM)는 작은 네트워크를 재사용해 퍼즐의 답 상태를 갱신하는 연구입니다. 일반 대화형 LLM의 축소판과는 과제·입출력·학습 방식이 다릅니다. 공식 자료 확인일은 2026-10-19입니다. 공식 코드는 MIT 라이선스이며, 저장소는 2026-04-01부터 읽기 전용 상태입니다. [공식 저장소](https://github.com/SamsungSAILMontreal/TinyRecursiveModels)
+Samsung SAIL Montréal의 Tiny Recursive Models(TRM)는 작은 네트워크를 재사용해 퍼즐의 답 상태를 갱신하는 연구입니다. 일반 대화형 LLM의 축소판과는 과제·입출력·학습 방식이 다릅니다. 공식 자료 재확인일은 2026-10-21입니다. 공식 코드는 MIT 라이선스입니다. 공식 README는 유지보수 여력 때문에 저장소를 임시로 읽기 전용으로 두었다고 안내합니다. [공식 저장소](https://github.com/SamsungSAILMontreal/TinyRecursiveModels)
 
 ## 입력과 두 상태의 역할
 
@@ -30,23 +30,22 @@ Samsung SAIL Montréal의 Tiny Recursive Models(TRM)는 작은 네트워크를 �
 
 가중치를 공유하므로 블록을 672개 저장하는 것은 아닙니다. 그러나 연산을 672번 수행하는 비용은 남습니다. 임베딩·출력·중단 head 등의 연산은 이 표에서 제외했으므로 전체 FLOP 수나 시간 측정값으로 해석하면 안 됩니다. 과제의 입력 길이와 batch도 계산량을 바꿉니다.
 
-## 실제로 실행한 작은 반복식
+## 공식 모델과 교육용 반복식의 차이
 
-[CPU 실험 2](../experiments/README.md#2-같은-계수를-반복해도-수렴이-보장되지는-않습니다)에서 x·y·z를 구분한 스칼라 갱신을 실행했습니다. 같은 계수 네 자리를 재사용하며 8단계, 총 32회 갱신했습니다.
+[별도 CPU 실험 2](../../experiments/README.md#2-같은-계수를-반복해도-수렴이-보장되지는-않습니다)는 x·y·z를 구분하는 스칼라 식입니다. 원래 신경망의 attention·학습 손실·gradient·중단 head를 구현하지 않습니다. 해당 식의 수렴과 발산을 TRM의 정답률이나 안정성으로 해석하지 않습니다. 실행값·코드·검사는 실험 폴더에 함께 있습니다.
 
-| 잠재 상태의 이전 값 계수 | 1단계 답 상태 | 8단계 답 상태 | 해석 |
-|---|---:|---:|---|
-| 0.5 | 0.109375 | 0.323802 | 이 식의 고정점 1/3에 가까워집니다. |
-| 1.2 | 0.227500 | 80.177049 | 반복할수록 값이 커지는 반례입니다. |
+## 학습의 gradient 경계
 
-이 결과는 파라미터 저장과 반복 계산을 구분하는 교육용 실험입니다. TRM 신경망을 학습하거나 Sudoku·ARC 정답률을 재현한 결과가 아닙니다. 반복한다는 사실만으로 정확도가 올라간다는 결론을 내릴 수 없다는 점을 확인했습니다.
+Gradient는 손실이 매개변수에 따라 어떻게 달라지는지 나타내는 기울기입니다. `torch.no_grad()`는 해당 구간의 역전파 기록을 만들지 않으며 `detach()`는 상태를 다음 단계에 넘기되 이전 계산 그래프와 연결을 끊습니다. 그렇다고 앞 구간을 계산하지 않았다는 뜻은 아닙니다. 같은 가중치로 여러 번 상태를 갱신하되 역전파가 지나가는 범위를 다르게 둔 것입니다. [공식 forward 코드](https://github.com/SamsungSAILMontreal/TinyRecursiveModels/blob/main/models/recursive_reasoning/trm.py)
+
+TRM의 연구 주체는 Samsung SAIL Montréal입니다. 이 문서는 해당 연구의 TRM을 다루며 Samsung의 모든 상용 AI나 범용 챗봇의 구조를 설명하지 않습니다.
 
 ## 공식 과제를 재현하려면
 
 공식 저장소에서 과제별 데이터 생성과 학습 명령을 선택하고 코드 revision·데이터 분할·증강·seed·전체 batch·반복 설정을 남겨야 합니다. ARC 계열의 학습·평가 데이터 중복 가능성을 먼저 확인하고, 문제 전체가 맞는 exact accuracy와 칸 단위 정확도를 구분합니다. 공식 학습은 GPU 조건을 전제로 안내되어 있어 이 저장소에서는 실행하지 않았습니다.
 
-[다른 기관의 모델 분석](../models/README.md) · [실험 코드와 결과](../experiments/README.md)
+[다른 기관의 모델 분석](../README.md) · [실험 코드와 결과](../../experiments/README.md)
 
 ## English
 
-TRM reuses one small network to update latent and answer states. The default configuration gives 21 reasoning-module calls, or 42 two-block evaluations, per inner forward; 16 evaluation steps give 672 block executions, excluding other operations. These are code-derived counts, not measured FLOPs or latency. The scalar state experiment demonstrates parameter sharing and a stability counterexample, not official TRM training or benchmark reproduction.
+TRM reuses one small network to update latent and answer states. The default configuration gives 21 reasoning-module calls, or 42 two-block evaluations, per inner forward; 16 evaluation steps give 672 block executions, excluding other operations. These are code-derived counts, not measured FLOPs or latency. The linked educational scalar experiment is kept under experiments; it does not implement TRM training, gradient flow, halting, or benchmark reproduction.

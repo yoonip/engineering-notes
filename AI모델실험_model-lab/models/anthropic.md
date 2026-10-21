@@ -1,6 +1,6 @@
-# Anthropic Claude Sonnet 5.5
+# 응답 블록과 공개 범위: Claude Sonnet 5.5 | API content blocks
 
-공식 자료 확인일: 2026-10-19입니다. 아래 내용은 특정 배포물의 자료 분석이며, 가중치 추론이나 유료 API 실험 결과는 아닙니다.
+공식 자료 재확인일: 2026-10-21입니다. 아래 내용은 특정 배포물의 자료 분석이며, 가중치 추론이나 유료 API 실험 결과는 아닙니다.
 
 | 항목 | 내용 |
 |---|---|
@@ -11,13 +11,17 @@
 
 ## 구조와 용도
 
+이 문서는 공개 API의 입출력 계약을 분석합니다. 확인한 공식 문서만으로 Sonnet 5.5의 층 수·전문가 수·가중치·학습 데이터 전체를 확정할 수 없습니다. `thinking`이라는 응답 블록 이름도 내부가 특정 반복 신경망이라는 증거가 아닙니다. 이 한계를 공개 가중치 모델의 구조 분석과 구별합니다.
+
+[공식 이전 안내](https://platform.claude.com/docs/en/models/sonnet-5-5/migration-guide)는 블록을 `type`으로 구분하고, 반환받은 thinking 블록을 다음 요청에 보존하는 방법을 설명합니다. 추론 요청의 effort나 예산 변경과 학습 과정은 다릅니다. 자체 덧셈·표 추출 예로 Claude의 학습이나 다른 모델보다 높은 성능을 입증하지 않습니다.
+
 공식 문서는 1M 문맥과 최대 128k 출력을 안내합니다. 중요한 구현 차이는 응답이 단일 문자열이 아니라 thinking·text·도구 관련 블록으로 구성된다는 점입니다. 도구 사이의 출력 블록 처리가 잘못되면 실제 응답이 있어도 사용자 화면이 비어 보일 수 있습니다.
 
-## 재현 방법과 비교 항목
+## 실행에 필요한 조건과 비교 항목
 
 공식 모델 ID를 고정하고 Messages 응답의 블록 유형·중단 이유·usage를 기록합니다. 문서 추출 과제에서는 정답 필드와 존재하지 않는 필드를 섞어 누락과 환각을 구분합니다. 호출 한도와 계정 접근은 실행 직전에 공식 설정에서 확인합니다.
 
-## 결과를 해석할 때
+## 공개 범위와 한계
 
 현재 카드에는 temperature·top_p·top_k를 기본값과 다르게 주면 오류가 난다는 조건이 있습니다. 공개 모델의 공통 sampling 예제를 그대로 옮기면 안 됩니다. 유료 API를 호출하지 않았으므로 응답 품질·지연·비용 측정치는 없습니다.
 
@@ -27,18 +31,7 @@ Messages의 `content`를 ‘첫 항목의 text’로만 읽으면 첫 블록이 
 
 `max_tokens`는 thinking과 text에 함께 쓰이는 예산입니다. 출력 예산을 매우 작게 잡고 최종 답만 짧으니 충분하다고 생각하면, 그 앞의 처리 때문에 답이 잘릴 수 있습니다. 모델이 지원하는 출력 한도, 요청에서 정한 예산, 실제 중단 이유는 서로 다른 값입니다. 이 카드의 128k는 모든 요청에서 그만큼 생성한다는 뜻이 아닙니다.
 
-## 직접 만든 표 추출과 도구 판정
-
-자체 평가 입력을 “A안 12개, B안 8개, C안은 수량 미정입니다. 확정 수량 합계와 미정인 항목을 알려 주세요.”로 정하겠습니다. 실행한 응답은 없으며, 정답 기준은 합계 20과 미정 항목 C안입니다. 20이라는 합계만 맞히고 C안까지 0개로 확정하면 정보 상태를 바꾼 오답입니다. ‘미정’과 ‘없음’의 구별을 볼 수 있는 입력입니다.
-
-| 구간 | 확인할 기준 |
-| --- | --- |
-| 최종 텍스트 | 12+8=20이며 C안 수량은 모른다고 남겨야 합니다. |
-| 블록 처리 | 비텍스트 블록을 버리며 최종 답까지 누락하지 않아야 합니다. |
-| 도구 요청 | 계산 요청을 제안한 것과 계산기가 실제 실행된 것을 구분합니다. |
-| 종료 | 정상 완료인지 출력 예산으로 잘렸는지 기록합니다. |
-
-이 작은 덧셈에는 도구가 필수라는 전제를 두지 않습니다. 도구 연동을 따로 시험한다면 애플리케이션이 돌려준 결과와 최종 답의 일치 여부를 추가로 봅니다. 모델이 ‘계산했습니다’라고 말한 문장만으로 실행 성공을 인정하지 않습니다. 따라서 내용 정답과 블록 처리 오류를 별도로 남길 수 있습니다. 이 구분은 특히 버전 이전 뒤 화면이 비는 문제를 곧바로 모델의 무응답으로 오해하지 않게 합니다.
+평가 입력과 판정 예는 [별도 문서](../experiments/평가입력과판정기준_evaluation-design.md#anthropic)에서 보실 수 있습니다. 실제 모델 응답을 얻은 기록은 아닙니다.
 
 [공식 모델 카드 또는 문서](https://platform.claude.com/docs/en/models/sonnet-5-5/overview) · [공식 실행 코드 또는 참고 자료](https://platform.claude.com/docs/en/models/overview)
 
@@ -46,4 +39,4 @@ Messages의 `content`를 ‘첫 항목의 text’로만 읽으면 첫 블록이 
 
 ## English
 
-This API analysis focuses on content blocks, limits, and supported parameters. No API calls, latency measurements, or quality comparisons were performed. This is a source-based release analysis; model inference was not run locally.
+This API analysis focuses on content blocks, limits, and supported parameters. No API calls, latency measurements, or quality comparisons were performed. The public API documentation does not establish its private weight architecture or complete training recipe.

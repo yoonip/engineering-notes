@@ -4,13 +4,24 @@ Python 표준 라이브러리만으로 네 가지 계산을 실행했습니다. 
 
 실행 환경은 CPython 3.12.14 / Windows이며, 실행일은 2026-10-19입니다. [실험 코드](cpu_lab.py), [수치 검사](test_cpu_lab.py), [계산 결과 JSON](results.json)을 함께 보실 수 있습니다. JSON은 다시 계산한 값과 비교하기 위한 기록이며, 본문 표에는 읽는 데 필요한 결과를 옮겼습니다.
 
+## 평가 입력과 실행 결과
+
+[평가 입력과 판정 기준](평가입력과판정기준_evaluation-design.md)은 모델별 자체 질문·정답표와 가상 채점 산술을 다룹니다. 그 질문으로 모델을 실행한 기록은 없으며, 아래 CPU 수치 실험의 실행 결과와 구분합니다.
+
+## 공식 모델 문서와의 관계
+
+[TRM 구조 설명](../models/samsung-trm/README.md)의 작은 반복식과 [R1-Distill 설명](../models/deepseek-r1-distill/README.md)의 확률 증류 예는 이 폴더에서 실행한 교육용 계산입니다. TRM의 신경망·역전파·중단 판정과 R1의 생성 풀이 학습을 구현한 것은 아닙니다. 아래 실행값은 해당 회사의 모델 성능이 아니라 코드가 정의한 작은 수치 과제의 결과입니다.
+
+기존 `cpu_lab.py`, `test_cpu_lab.py`, `results.json`은 그대로 보존합니다. 새 실행에서는 저장된 결과를 덮어쓰지 않도록 `--output`으로 별도 경로를 지정합니다. 기본 실행 명령은 `results.json`을 다시 쓰므로 기존 기록을 보관하려면 아래처럼 새 파일명을 사용합니다.
+
 ## 다시 실행하기
 
 저장소 루트에서 다음 명령을 실행하시면 됩니다. 외부 패키지와 네트워크 연결은 필요하지 않습니다.
 
 ```powershell
-python AI모델실험_model-lab/experiments/cpu_lab.py
-python -m unittest discover -s AI모델실험_model-lab/experiments -p "test_*.py" -v
+$runFile = Join-Path $env:TEMP ("cpu-lab-" + [guid]::NewGuid().ToString("N") + ".json") # 임시 폴더에 고유한 결과 파일명을 만듭니다.
+python AI모델실험_model-lab/experiments/cpu_lab.py --output $runFile # --output으로 기존 results.json과 다른 파일을 지정합니다.
+python -m unittest discover -s AI모델실험_model-lab/experiments -p "test_*.py" -v # unittest가 기존 수치 검사를 찾아 실행합니다.
 ```
 
 ## 1. 작은 모델의 KV 캐시가 더 클 수도 있습니다
