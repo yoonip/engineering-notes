@@ -8,7 +8,7 @@
 
 스위치를 켰다고 모든 회로의 출력이 즉시 입력과 같아지지는 않습니다. 커패시터에 전하가 쌓이고, 인덕터에는 자기장 에너지가 저장되기 때문입니다. 물통을 채우는 데 시간이 걸리는 것처럼 생각하면 첫 직관을 얻을 수 있습니다. 다만 전류가 물 자체라는 뜻은 아니며, 계산은 전하 보존과 소자의 전압·전류 관계로 합니다.
 
-여기서는 배선의 전파 지연을 무시할 수 있는 집중소자 회로, 일정한 양의 R·L·C, 이상적인 전압원, 선형 소자를 가정합니다. 커패시터 출력에는 별도 부하가 없습니다. 커패시터 전압이나 인덕터 전류를 불연속적으로 바꾸려면 이상적인 충격 전류·전압이 필요하므로, 유한한 입력을 다루는 이 모델에서는 초기값이 이어집니다. [MIT 18.03의 RLC 모델](https://www.ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/035929616dc2553a2fee2aa787a96652_MIT18_03SCF11_s20_1text.pdf)
+여기서는 배선의 전파 지연을 무시할 수 있는 집중소자 회로, 일정한 양의 R·L·C, 이상적인 전압원, 선형 소자를 가정합니다. 커패시터 출력에는 별도 부하가 없습니다. 커패시터 전압이나 인덕터 전류를 불연속적으로 바꾸려면 이상적인 충격 전류·전압이 필요하므로, 유한한 입력을 다루는 이 모델에서는 초기값이 이어집니다. [MIT 18.03의 RLC 모델](https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/035929616dc2553a2fee2aa787a96652_MIT18_03SCF11_s20_1text.pdf)
 
 | 기호 | 의미 | SI 단위 |
 |---|---|---|
@@ -73,7 +73,7 @@ RLC는 상태를 `(v,i)`로 두어 `v'=i/C`, `i'=(u-Ri-v)/L`를 RK4로 적분합
 
 Closing a switch does not make every output equal its input immediately. A capacitor accumulates charge, and an inductor stores magnetic-field energy. Filling a tank offers a useful first intuition, but circuit calculations use charge conservation and element equations rather than treating current literally as water.
 
-This article assumes lumped wiring with negligible propagation delay, positive constant R, L and C, ideal sources, linear elements, and no separate capacitor load. With finite inputs, capacitor voltage and inductor current retain their initial values across a switching instant; discontinuities would require ideal impulse current or voltage. The [MIT 18.03 circuit model](https://www.ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/035929616dc2553a2fee2aa787a96652_MIT18_03SCF11_s20_1text.pdf) supplies the element-law and differential-equation reference.
+This article assumes lumped wiring with negligible propagation delay, positive constant R, L and C, ideal sources, linear elements, and no separate capacitor load. With finite inputs, capacitor voltage and inductor current retain their initial values across a switching instant; discontinuities would require ideal impulse current or voltage. The [MIT 18.03 circuit model](https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/035929616dc2553a2fee2aa787a96652_MIT18_03SCF11_s20_1text.pdf) supplies the element-law and differential-equation reference.
 
 Voltage v is in volts, current i in amperes, resistance R in ohms, capacitance C in farads, inductance L in henries, time t in seconds, and angular frequency ω in rad/s. The passive sign convention gives `vR=Ri`, `iC=C dvC/dt`, and `vL=L diL/dt`. Stored energies are `CvC²/2` and `LiL²/2`; resistor dissipation is `Ri²`. KCL expresses node charge conservation; KVL expresses the closed-path voltage relation within this lumped model.
 
@@ -111,6 +111,6 @@ Acceptance checks cover initial and final values, the RC time constant, analytic
 
 ## 출처와 대조한 내용 | Sources and cross-checks
 
-- MIT 18.03SC, *RLC Circuits*, pp. 1–2: 소자 관계·직렬 회로 방정식·복소 임피던스 / element relations, series-circuit equations, complex impedance.
-- MIT 6.002, *Lecture 15: Second-order systems*: 초기값·특성근·감쇠 응답 / initial conditions, characteristic roots and damping. 두 강의의 방정식을 같은 C 출력으로 정리해 부호와 계수를 대조했다 / equations were expressed for the same capacitor output to check signs and coefficients.
-- 그림·수치 예제·테스트는 이 문서의 모델에서 작성했다 / the diagram, numerical examples and tests were constructed for this model. 출처 확인 / sources checked: 2026-10-19.
+- MIT 18.03SC, *RLC Circuits* (Fall 2011), pp. 1–2: 소자 관계·직렬 회로 방정식·복소 임피던스 / element relations, series-circuit equations, complex impedance.
+- MIT 6.002, *Lecture 15: Second-order systems*: 초기값·특성근·감쇠 응답 / initial conditions, characteristic roots and damping. 두 강의의 방정식을 같은 C 출력으로 정리해 부호와 계수를 대조했습니다 / equations were expressed for the same capacitor output to check signs and coefficients.
+- 그림·수치 예제·테스트는 이 문서의 모델에서 작성했습니다 / the diagram, numerical examples and tests were constructed for this model. 출처 확인 / sources checked: 2026-10-19.

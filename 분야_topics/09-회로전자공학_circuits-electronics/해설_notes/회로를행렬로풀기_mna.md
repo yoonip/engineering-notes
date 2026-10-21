@@ -84,5 +84,5 @@ The implementation uses partial-pivot elimination with an absolute pivot thresho
 
 ## 출처 / Sources
 
-- TU Delft, *Modified Nodal Analysis*: KCL augmentation, incidence signs and block matrix.
+- TU Delft, *Modified Nodal Analysis*, “The procedure”, steps 1–6 and the independent-voltage-source example: KCL augmentation, incidence signs and block matrix.
 - ngspice, *User's Manual*: independent-source conventions and matrix-based circuit analysis. Links appear at the relevant explanations above.
