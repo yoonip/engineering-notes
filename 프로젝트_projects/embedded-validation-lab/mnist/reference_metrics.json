@@ -1,0 +1,182 @@
+{
+  "torch_version": "2.14.1+cpu",
+  "device": "cpu",
+  "seed": 42,
+  "threads": 4,
+  "train_samples": 55000,
+  "validation_samples": 5000,
+  "test_samples": 10000,
+  "batch_size": 128,
+  "epochs": 5,
+  "best_epoch": 5,
+  "learning_rate": 0.001,
+  "parameters": 105866,
+  "test_loss": 0.030551176281133668,
+  "test_accuracy": 0.9903,
+  "correct": 9903,
+  "seconds": 35.0506549999991,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.3075784420067614,
+      "train_accuracy": 0.9078909090909091,
+      "validation_loss": 0.09165162526369094,
+      "validation_accuracy": 0.9728,
+      "seconds": 7.047852800023975
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.08900900345769795,
+      "train_accuracy": 0.9732363636363637,
+      "validation_loss": 0.05930311014652252,
+      "validation_accuracy": 0.9828,
+      "seconds": 6.785680200002389
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.06304403954283758,
+      "train_accuracy": 0.9806909090909091,
+      "validation_loss": 0.052367350381612776,
+      "validation_accuracy": 0.9854,
+      "seconds": 6.819468000001507
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.04951606870672919,
+      "train_accuracy": 0.9845818181818182,
+      "validation_loss": 0.05113496054410934,
+      "validation_accuracy": 0.986,
+      "seconds": 6.828589599987026
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.03960390624248169,
+      "train_accuracy": 0.9877090909090909,
+      "validation_loss": 0.039751697969436645,
+      "validation_accuracy": 0.9892,
+      "seconds": 6.8003383000032045
+    }
+  ],
+  "confusion_matrix": [
+    [
+      975,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1134,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      2,
+      1020,
+      1,
+      0,
+      0,
+      0,
+      3,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1004,
+      0,
+      4,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      972,
+      0,
+      0,
+      0,
+      2,
+      8
+    ],
+    [
+      1,
+      0,
+      0,
+      6,
+      0,
+      883,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      3,
+      2,
+      1,
+      0,
+      3,
+      3,
+      944,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      2,
+      10,
+      0,
+      0,
+      0,
+      0,
+      1011,
+      1,
+      4
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      964,
+      4
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      5,
+      3,
+      0,
+      1,
+      2,
+      996
+    ]
+  ]
+}
