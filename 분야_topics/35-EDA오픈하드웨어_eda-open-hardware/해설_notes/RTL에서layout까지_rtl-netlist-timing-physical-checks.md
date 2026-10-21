@@ -37,7 +37,7 @@ $$A_v=d_v+\max_{u\in pred(v)}A_u.$$
 
 이는 가장 늦게 오는 입력을 따라가므로 위상 순서로 계산할 수 있습니다. `dag_arrivals`가 구현한 것은 이 최대 경로 계산입니다. 실제 STA의 pin별·rise/fall arc, slew/load 의존성, clock 관계, 최소 지연과 corner 분석은 포함하지 않습니다. Synthesis 전 wire 추정값과 routing 후 추출값의 slack은 달라질 수 있습니다.
 
-### DRC와 LVS는 무엇을 보장합니까
+### DRC·LVS의 확인 대상과 한계
 
 DRC는 지정된 deck으로 폭·간격 등 형상 규칙을 확인합니다. LVS는 layout에서 추출한 소자·연결을 기준 회로와 비교합니다. KLayout의 LVS 문서에서 말하는 extracted netlist는 기생 R/C를 포함한 post-layout simulation netlist가 아니라 연결·소자 비교용 netlist입니다. 두 종류의 extraction을 같은 것으로 부르면 검증 단계를 혼동하게 됩니다. [KLayout LVS overview](https://www.klayout.org/downloads/master/doc-qt5/manual/lvs_overview.html)
 
