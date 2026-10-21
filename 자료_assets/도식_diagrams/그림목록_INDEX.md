@@ -1,5 +1,7 @@
 # 그림 목록 | Figure index
 
+[파일 형식과 원본 안내 / File formats and sources](README.md) · [분야별 목차 / Topic index](../../분야별목차_CATALOG.md)
+
 각 그림은 연결된 해설의 개념과 조건을 보여 줍니다. PNG는 읽기용, SVG는 확대·편집용 원본입니다.
 
 | 그림 | 연결된 해설 | 파일 |

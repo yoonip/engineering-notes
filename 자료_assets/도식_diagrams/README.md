@@ -1,6 +1,15 @@
 # 개념도 / Concept diagrams
 
-이 폴더의 24개 그림은 각 문서의 설명에 맞춰 직접 구성했습니다. 원리와 조건을 한눈에 보기 위한 그림이며, 실제 회로의 배선도나 장치 측정 결과는 해당 본문에서 별도로 구분합니다. 개념의 참고 문헌은 각 문서에 연결되어 있습니다.
+이 폴더의 그림은 각 문서의 설명에 맞춰 구성한 개념도입니다. 원리와 조건을 한눈에 보기 위한 그림이며, 실제 회로의 배선도나 장치 측정 결과는 해당 본문에서 별도로 구분합니다. 개념의 참고 문헌은 각 문서에 연결되어 있습니다.
+
+| 파일 형식 | 용도 |
+| --- | --- |
+| PNG | 해설 본문에서 읽는 이미지 |
+| SVG | 확대하거나 편집할 수 있는 벡터 원본 |
+| MMD·DOT | 개념과 연결 구조를 기록한 텍스트 |
+| [manifest.json](manifest.json) | 그림 파일과 해설 경로를 연결하는 기계 판독용 목록 |
+
+주제와 해설을 찾아보려면 [그림 목록](그림목록_INDEX.md)을 이용하시면 됩니다.
 
 본문에는 한글 글꼴로 렌더링한 PNG를 사용합니다. SVG는 확대하고 편집할 수 있는 벡터 원본입니다. 일반 개념도는 여백과 선 굵기를 통일한 사각형 배치로 정리했으며, RLC 회로·4선식 계측·샘플링 피드백·열확산 격자·전송선 왕복은 각각의 물리적 관계와 시간 순서에 맞춰 SVG로 그렸습니다. MMD와 DOT 파일에는 개념의 연결 구조가 남아 있습니다. 회로 기호와 파형, 상태 전이 등은 같은 모양으로 뭉뚱그리지 않고 대상에 맞는 표현을 사용합니다.
 
@@ -15,7 +24,9 @@
 
 ## English
 
-The 24 diagrams in this folder were composed for the corresponding articles. They show principles and conditions at a glance; the articles distinguish them from physical wiring diagrams or device measurements. Conceptual references are linked in each article.
+The diagrams in this folder illustrate concepts in the corresponding articles. They show principles and conditions at a glance; the articles distinguish them from physical wiring diagrams or device measurements. Conceptual references are linked in each article.
+
+PNG files are reading images, SVG files are editable vector originals, and MMD/DOT files record conceptual connections as text. The [manifest](manifest.json) provides machine-readable file and article mappings; the [figure index](그림목록_INDEX.md) provides navigation by subject.
 
 Articles embed PNG images rendered with Korean text. SVG files are scalable, editable vector originals. General concept diagrams use rectangular layouts with consistent spacing and line weights. The RLC circuit, four-wire measurement, sampled feedback, heat-diffusion grid and transmission-line round trip use custom SVG drawings that preserve their physical relationships and time order. MMD and DOT files retain the conceptual connections. Circuit symbols, waveforms and state transitions use representations suited to their subject.
 
