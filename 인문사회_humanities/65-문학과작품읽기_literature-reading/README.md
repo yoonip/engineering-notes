@@ -15,6 +15,6 @@
 
 ## English
 
-Four lessons use original prose, poetry and drama examples to study voice, information, rhythm, narrative order and staging. Each includes a worked analysis and three questions with explanations. This is an introduction to close reading rather than a complete literary history.
+These lessons use original prose, poetry and drama examples to study voice, information, rhythm, narrative order and staging. Each includes a worked analysis and three questions with explanations. This is an introduction to close reading rather than a complete literary history.
 
 [인문사회 목차](../README.md) · [전체 분야](../../분야별목차_CATALOG.md)
