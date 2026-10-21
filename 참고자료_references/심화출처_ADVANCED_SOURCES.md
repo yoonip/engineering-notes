@@ -76,7 +76,7 @@
 - [ocw.mit.edu · 282ca336565ffdd1aeda1c212c3b0696_MIT6_012F09_lec12.pdf](https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/282ca336565ffdd1aeda1c212c3b0696_MIT6_012F09_lec12.pdf)
 - [infoscience.epfl.ch · EPFL_TH9146.pdf](https://infoscience.epfl.ch/record/265275/files/EPFL_TH9146.pdf)
 
-### 11. 피드백을 걸면 이득과 대역폭은 어떻게 바뀝니까
+### 11. 피드백에 따른 이득과 대역폭 | Feedback gain and bandwidth
 
 [해설 읽기](../분야_topics/11-아날로그IC설계_analog-ic-cadence/해설_notes/피드백과대역폭_feedback.md)
 
@@ -118,7 +118,7 @@
 - [developer.arm.com · page-colouring-on-armv6-and-a-bit-on-armv7](https://developer.arm.com/community/arm-community-blogs/b/architectures-and-processors-blog/posts/page-colouring-on-armv6-and-a-bit-on-armv7)
 - [cs.cmu.edu · lec5_6-cache.pdf](https://www.cs.cmu.edu/~15346-s21/lectures/lec5_6-cache.pdf)
 
-### 17. RTOS의 우선순위 역전: 누가 mutex를 놓을 수 있을까요
+### 17. 뮤텍스 대기와 우선순위 상속 | Mutex waits and priority inheritance
 
 [해설 읽기](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/우선순위역전_priority-inheritance.md)
 
@@ -408,7 +408,7 @@
 - [cs.cmu.edu · 16-dpll.pdf](https://www.cs.cmu.edu/~15414/s25/lectures/16-dpll.pdf)
 - [web.stanford.edu · NOT04.pdf](https://web.stanford.edu/class/cs357/NOT04.pdf)
 
-### 57. 증거는 믿음을 어떻게 바꿉니까: 모형 비교와 Bayes factor
+### 57. 증거와 믿음의 관계: 모형 비교와 베이즈 요인
 
 [해설 읽기](../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/증거와모형비교_bayes-factors-and-beliefs.md)
 

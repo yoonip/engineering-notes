@@ -127,7 +127,7 @@
       "topic_ko": "아날로그 IC 설계·Cadence·Spectre",
       "topic_en": "Analog IC Design: Cadence & Spectre",
       "path": "분야_topics/11-아날로그IC설계_analog-ic-cadence/해설_notes/피드백과대역폭_feedback.md",
-      "title": "피드백을 걸면 이득과 대역폭은 어떻게 바뀝니까",
+      "title": "피드백에 따른 이득과 대역폭 | Feedback gain and bandwidth",
       "reference_urls": [
         "https://www.analog.com/media/en/training-seminars/tutorials/mt-033.pdf",
         "https://analog-electronics.tudelft.nl/webbook/SED/_build/html/freq_compensation/freq_compensation_Phase_margin_design.html"
@@ -199,7 +199,7 @@
       "topic_ko": "펌웨어·RTOS",
       "topic_en": "Firmware & RTOS",
       "path": "분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/우선순위역전_priority-inheritance.md",
-      "title": "RTOS의 우선순위 역전: 누가 mutex를 놓을 수 있을까요",
+      "title": "뮤텍스 대기와 우선순위 상속 | Mutex waits and priority inheritance",
       "reference_urls": [
         "https://docs.kernel.org/locking/rt-mutex-design.html",
         "https://docs.zephyrproject.org/latest/kernel/services/synchronization/mutexes.html"
@@ -689,7 +689,7 @@
       "topic_ko": "철학과 비판적 사고",
       "topic_en": "Philosophy and Critical Thinking",
       "path": "인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/증거와모형비교_bayes-factors-and-beliefs.md",
-      "title": "증거는 믿음을 어떻게 바꿉니까: 모형 비교와 Bayes factor",
+      "title": "증거와 믿음의 관계: 모형 비교와 베이즈 요인",
       "reference_urls": [
         "https://plato.stanford.edu/entries/epistemology-bayesian/",
         "https://ocw.mit.edu/courses/18-655-mathematical-statistics-spring-2016/9c7b5d5cfb5ad8127c4b9c1a0442f29b_MIT18_655S16_LecNote3.pdf"

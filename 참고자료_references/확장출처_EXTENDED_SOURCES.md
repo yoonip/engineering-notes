@@ -78,7 +78,7 @@
 - [docs.amd.com · Removal-Relationship](https://docs.amd.com/r/en-US/ug906-vivado-design-analysis/Hold/Removal-Relationship)
 - [ocw.mit.edu · c5s1](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c5/c5s1/)
 
-### 10. 명령어가 보는 메모리: ISA, byte 순서와 load/store
+### 10. RISC-V 메모리 접근: 주소·바이트 순서·부호와 정렬 | RISC-V memory access
 
 [해설 읽기](../분야_topics/16-프로세서구조_arm-riscv/해설_notes/명령어가보는메모리_isa-byte-order-load-store.md)
 
@@ -290,7 +290,7 @@
 - [research.ibm.com · demonstration-of-4-quadrant-analog-in-memory-matrix-multiplication-in-a-single-modulation](https://research.ibm.com/publications/demonstration-of-4-quadrant-analog-in-memory-matrix-multiplication-in-a-single-modulation)
 - [nist.gov · hardware-accelerators-neural-networks](https://www.nist.gov/programs-projects/hardware-accelerators-neural-networks)
 
-### 37. 측정에서 진단과 치료까지
+### 37. 측정에서 진단과 치료까지 / Signals, predictions and clinical evidence
 
 [해설 읽기](../분야_topics/62-의공학의료AI_medical-engineering/해설_notes/측정에서진단과치료까지_medical-ai-evidence.md)
 
