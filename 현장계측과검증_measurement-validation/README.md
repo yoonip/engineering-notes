@@ -69,6 +69,7 @@
 | 백업은 있는데 필요한 파일이 복원되지 않습니다. | 신뢰한 경로·내용·세대를 실제 payload 사본과 대조합니다. | [백업 복원·완전성](../설계와검증사례_engineering-cases/백업세트의내용복원과완전성_backup-restore-integrity.md) |
 | 중단된 stripe에서 XOR 복원값이 원문과 다릅니다. | 데이터·패리티의 시점과 결손, 유효한 redo 자료를 구분합니다. | [RAID 부분 갱신](../설계와검증사례_engineering-cases/RAID패리티의부분갱신과복원_raid-parity-write-hole.md) |
 | 재시도는 끝났는데 옛 쓰기가 새 값을 덮습니다. | 완료 통지의 식별과 옛 작업의 실행 종료를 따로 확인합니다. | [시간초과·늦은 쓰기](../설계와검증사례_engineering-cases/시간초과뒤늦은쓰기와재시도_block-io-timeout-retry.md) |
+| 정확도는 같은데 경보 대부분이 오경보입니다. | 실제 양성 비율과 정밀도의 분모, 경보량·검토 비용을 구분합니다. | [불량 비율·경보 정밀도](../설계와검증사례_engineering-cases/불량비율과경보의정밀도_ai-prevalence-precision.md) |
 
 ## 업무 질문에서 시작하기
 

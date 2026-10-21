@@ -21,7 +21,7 @@ I hope this repository will be more than a store of finished answers. One reader
 | Section | Coverage |
 | --- | --- |
 | [Measurement, debugging and validation](현장계측과검증_measurement-validation/README.md) | Nine instrument models, DMA/cache, fault tracing, PVT, industrial communications and SCPI automation |
-| [Engineering decisions and checks](설계와검증사례_engineering-cases/README.md) | Forty-one C/C++, RTOS, interrupt/DMA, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, firmware updates, NVMe/eMMC/SD, journal recovery, NAND management, FTL mapping, filesystem repair, backups, RAID parity recovery, I/O retries, ECC, DDR, RTL/CDC, chip, AI and data cases with runnable faults, fixes and dated execution evidence |
+| [Engineering decisions and checks](설계와검증사례_engineering-cases/README.md) | Forty-two C/C++, RTOS, interrupt/DMA, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, firmware updates, NVMe/eMMC/SD, journal recovery, NAND management, FTL mapping, filesystem repair, backups, RAID parity recovery, I/O retries, ECC, DDR, RTL/CDC, chip, AI and data cases with runnable faults, fixes and dated execution evidence |
 | [Engineering foundations](공학기초_foundations/README.md) | Foundational and advanced derivations, calculations and checks |
 | [Technical topics](분야_topics/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
 | [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | Eleven actual CSAT/LEET items, choice-by-choice reasoning and original practice |

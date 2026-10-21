@@ -28,6 +28,7 @@
 | 백업 복원·완전성 | [backup_restore](backup_restore/README.md): 실제 payload·요청 기준·새 복원 폴더 | 누락·변경·세대·경로와 완성 결과 게시 |
 | RAID 패리티·복원 | [raid_parity](raid_parity/README.md): 세 파일의 stripe·redo 자료 | 부분 갱신 뒤 잘못된 재구성·결손·기록 재생 |
 | I/O 시간초과·재시도 | [io_retry](io_retry/README.md): 고정 사건·요청/시도 식별 모델 | 늦은 쓰기·중복 통지·실행 종료·소유권과 재시도 한도 |
+| AI 기저율·경보 정밀도 | [ai_prevalence](ai_prevalence/README.md): 고정 점수·정답의 두 합성 집단 | 평가 분모·무정답 상태·경보량·검토 비용과 평가 자료 재사용 |
 
 [설계와 검증 사례](../../설계와검증사례_engineering-cases/README.md)에서 원인과 해결을 읽고, [현장 계측과 검증](../../현장계측과검증_measurement-validation/README.md)에서 장비·펌웨어·칩 시험 조건으로 연결합니다.
 
@@ -37,4 +38,4 @@
 
 ## English
 
-Twenty-four sets of runnable examples compare faulty controls and intended fixes: native contracts, chip analysis, AI evaluation, RTOS concurrency, CAN, subprocess reports, interrupt/DMA/cache ownership, SPI/I2C, UART/Ethernet/UDP, watchdog/reset, RTL/reference and CDC/asynchronous FIFO comparison, USB/PCIe, file-backed firmware updates, DDR command/pattern checks, NVMe/eMMC/SD, file-journal recovery, NAND management, file-backed FTL mapping, educational filesystem repair, payload backup restoration, file-backed RAID parity, I/O retry models and ECC fault injection. New output directories preserve earlier failures. HDL simulation, actual host child processes, deterministic software models and physical measurements have distinct scopes.
+Twenty-five sets of runnable examples compare faulty controls and intended fixes: native contracts, chip analysis, AI evaluation, RTOS concurrency, CAN, subprocess reports, interrupt/DMA/cache ownership, SPI/I2C, UART/Ethernet/UDP, watchdog/reset, RTL/reference and CDC/asynchronous FIFO comparison, USB/PCIe, file-backed firmware updates, DDR command/pattern checks, NVMe/eMMC/SD, file-journal recovery, NAND management, file-backed FTL mapping, educational filesystem repair, payload backup restoration, file-backed RAID parity, I/O retry models and ECC fault injection. New output directories preserve earlier failures. HDL simulation, actual host child processes, deterministic software models and physical measurements have distinct scopes.
