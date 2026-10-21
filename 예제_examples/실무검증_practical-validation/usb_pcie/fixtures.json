@@ -1,0 +1,29 @@
+{
+  "scope": "Invented USB API results and decoded PCIe completion fields, not hardware traces",
+  "usb_reads": [
+    {"requested": 8, "status": "COMPLETED", "data_hex": "aabbcc"},
+    {"requested": 8, "status": "TIMED_OUT", "data_hex": "ddee"},
+    {"requested": 8, "status": "COMPLETED", "data_hex": "ff"},
+    {"requested": 8, "status": "COMPLETED", "data_hex": ""}
+  ],
+  "usb_expected_records": ["aabbccddeeff"],
+  "usb_expected_actual_lengths": [3, 2, 1, 0],
+  "pcie_requests": [
+    {"tag": 5, "address": 4208, "length": 32},
+    {"tag": 9, "address": 8192, "length": 8}
+  ],
+  "pcie_completions": [
+    {"tag": 5, "lower_address": 112, "byte_count": 32, "data_hex": "000102030405060708090a0b0c0d0e0f"},
+    {"tag": 9, "lower_address": 0, "byte_count": 8, "data_hex": "a0a1a2a3a4a5a6a7"},
+    {"tag": 5, "lower_address": 0, "byte_count": 16, "data_hex": "101112131415161718191a1b1c1d1e1f"}
+  ],
+  "pcie_expected_states": [
+    {"tag": 5, "received": 16, "remaining": 16, "state": "ACTIVE"},
+    {"tag": 9, "received": 8, "remaining": 0, "state": "DONE"},
+    {"tag": 5, "received": 32, "remaining": 0, "state": "DONE"}
+  ],
+  "pcie_expected_payloads": {
+    "5": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+    "9": "a0a1a2a3a4a5a6a7"
+  }
+}

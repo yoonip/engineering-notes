@@ -51,6 +51,26 @@ ST AN4839는 STM32F7/H7의 Cortex-M7 캐시와 DMA 예를 제공합니다. Espre
 
 테스트는 clean 전 RAM이 옛 값임을 확인하고, 장치 소유 중 CPU 접근과 완료 전 반환을 거부하는지 검사합니다. 수신 뒤 최신 값 읽기, 잘못된 길이, 100회의 송수신 반복도 확인합니다. 실제 보드 검증에서는 cache on/off, 다양한 길이와 정렬, 최대 전송률, ISR 지연, 버퍼 overrun 계수를 함께 관찰해야 합니다. Python 통과가 DMA 타이밍이나 MCU 캐시 명령의 적합성을 입증하는 것은 아닙니다.
 
+### PCIe의 첫 Completion과 전체 요청 완료를 구분하기
+
+DMA 엔진이 PCIe Memory Read로 데이터를 가져오는 구성에서는 한 요청이 여러 Completion으로 돌아올 수 있습니다. tag는 미완료 요청을 식별하는 번호입니다. 첫 응답의 도착·전체 데이터 수신·DMA 엔진 작업 완료·CPU가 최신 값을 읽을 준비가 된 상태는 각각 따로 확인해야 합니다. [PCIe 태그와 분할 응답 사례](../../../설계와검증사례_engineering-cases/PCIe의태그와분할응답_pcie-split-completions.md)는 이 중 요청별 데이터 조립만 호스트에서 실행합니다.
+
+자체 예제에서 tag 5는 `0x1070`부터 32바이트를 읽고 16+16바이트로 받습니다. 첫 Byte Count는 현재 조각을 포함한 남은 양인 32, 다음 값은 16입니다. Lower Address는 첫 시작 주소 하위 7비트인 112에서 다음 주소 `0x1080`의 0으로 바뀝니다. 중간에 tag 9의 8바이트가 도착해도 tag 5를 완료로 바꾸지 않습니다. 전체 32바이트를 확인하기 전 CPU 읽기와 tag 재사용을 거부합니다.
+
+| 조건 | 자체 모델의 관측 | 실제 시스템에서 별도로 확인할 내용 |
+| --- | --- | --- |
+| 첫 Completion 도착 | 받은 16·남은 16·ACTIVE입니다. | controller가 완료를 어떤 단위로 보고하는지 확인합니다. |
+| 같은 요청의 나머지 Completion | 받은 32·남은 0·DONE입니다. | DMA 엔진 descriptor와 응용 buffer의 범위를 연결합니다. |
+| 틀린 Byte Count·Lower Address | 저장하기 전에 거부하며 앞 16바이트를 유지합니다. | error completion·timeout·abort 정책을 확인합니다. |
+| 조립 완료 뒤 CPU 읽기 | 모델의 bytes를 반환합니다. | 필요한 DMA 동기화·cache·메모리 순서를 확인합니다. |
+
+이 모델은 단일 Requester·DW 정렬·전체 byte-enable·SC·MPS 128·RCB 128로 제한합니다. RCB는 중간 분할 위치의 경계이며 MPS와 다릅니다. `0x1070`에서 단일 32바이트 Completion으로 전체 요청을 끝내는 대조도 허용합니다. 원 요청 시작과 끝에 대한 예외를 적용한 것이며 모든 조각을 128바이트 안에 가두는 규칙이 아닙니다. [AMD PG346 3.3의 Memory Read](https://docs.amd.com/r/3.3-English/pg346-cpm-pcie/Completer-Memory-Read-Operation?contentId=HESS8S8G5krVslhhZyT87w), [PG054 3.3의 RCB](https://docs.amd.com/r/en-US/pg054-7series-pcie/Read-Completion-Boundary)
+
+CPU virtual address·물리 주소·장치 DMA 주소도 구별합니다. IOMMU나 host bridge가 있으면 같은 숫자라고 가정할 수 없습니다. coherent DMA 메모리라도 descriptor 내용과 valid 표시의 순서 보장은 별도입니다. Linux 6.12의 DMA 문서에서 CPU and DMA addresses·Types of DMA mappings를 확인했습니다. [Linux 6.12 DMA mapping Guide](https://docs.kernel.org/6.12/core-api/dma-api-howto.html)
+
+새 검사는 해독된 필드의 합성 조립·소유권 계약입니다. 실제 PCIe 링크·root port·DMA mapping·배리어·cache 명령·원시 TLP·하드웨어 시간을 실행하지 않았습니다. 기존 `DmaBuffer`의 cache/RAM 예제와 결과도 별도로 유지합니다. 새 사례의 정상/-O·의도적 변이·실행 해시는 [검증 기록](../../../설계와검증사례_engineering-cases/검증기록_evidence/USB와PCIe전송계약검증_20261021.md)에 있습니다.
+
+
 ## English
 
 ### Data movement can dominate the work
@@ -88,8 +108,14 @@ The original state diagram above distinguishes CPU ownership, active TX, active 
 
 Tests observe stale RAM before cleaning, reject CPU access during device ownership and acquisition before completion, and check received data freshness, invalid lengths, and 100 repeated TX/RX cycles. Board verification additionally examines caches enabled and disabled, lengths, alignment, maximum traffic, ISR delay, and overrun counters. Passing the Python model does not establish real DMA timing or correct target cache instructions.
 
+### PCIe completions and buffer ownership
+
+A separate decoded-field host example assembles a 32-byte read from two 16-byte completions while an unrelated tag completes in between. The first completion does not release the partial buffer or tag. Byte Count includes the current piece in the remaining total; Lower Address follows the next byte address. Completion assembly, DMA-engine completion, and CPU cache visibility remain distinct. The example models no PCIe link, DMA mapping, actual barrier, or cache instruction.
+
+
 ## 출처와 교차 확인 / Sources and cross-check
 
 - Linux memory barriers·volatile·DMA API: 접근 순서, 동기화와 캐시 일관성의 구분 / distinctions among ordering, synchronization, and coherence.
 - ST AN4839와 Espressif ESP32-P4 문서: 서로 다른 MCU에서의 캐시 관리 조건 / platform-specific cache maintenance on different MCUs.
 - 모델의 상태 전이·데이터 검사는 개념적 소유권 규약을 확인합니다. / State and data checks verify the conceptual ownership contract.
+- AMD PG346 3.3 Memory Read·Completion descriptor, PG054 3.3 RCB, Linux 6.12 DMA 주소·mapping 구분을 2026-10-21에 확인했습니다. 새 PCIe 사례는 정렬된 일부 요청의 합성 필드를 사용합니다. / The PCIe addition uses a restricted aligned-request host contract.
