@@ -20,6 +20,8 @@
 
 65개 테스트에서 풀이 함수를 4,190회 호출했습니다. 기존 1,359회에 일곱 풀이의 추가 회귀 검사 2,831회를 더한 수치입니다. 공개 예제와 합성 입력을 사용하며, 테스트의 식별자와 데이터도 합성 값입니다. 현재 CPython 3.13.14의 결과와 이전 CPython 3.12.14의 결과는 `VALIDATION.json`에 구분해 남겼습니다.
 
+`SHA256SUMS`는 현재 공개 파일의 해시 목록입니다. 문서 해시의 갱신과 `VALIDATION.json`에 기록된 실행은 구분하며, 문서만 바꾼 뒤 기존 검사 결과를 새 실행으로 표시하지 않습니다.
+
 ## English
 
 This collection contains thirty-nine Python solutions to public Programmers exercises. Files are numbered 01–39; `catalog.json` records the problem names and original links.
@@ -41,3 +43,5 @@ Each file contains one executable implementation, with comments explaining its a
 The executable ASTs of the other thirty-two solutions match the previous published version. Checks now cover syntax, function definitions, explanatory comments, and no output during loading, matching the single-implementation structure. The original examples and independent-reference comparisons were retained.
 
 Sixty-five tests made 4,190 solution calls: the original 1,359 plus 2,831 regression calls for the seven changed solutions. Tests use public examples and synthetic inputs, including synthetic identifiers and data. `VALIDATION.json` separates the current CPython 3.13.14 results from the earlier CPython 3.12.14 results.
+
+`SHA256SUMS` lists hashes of the current published files. Refreshing document hashes is separate from the executions retained in `VALIDATION.json`; document-only changes are not reported as new test runs.
