@@ -49,6 +49,18 @@ Python 검산은 gate 식의 full adder를 정수 합산과 8입력 전체에서
 
 실제 flow를 실행할 때는 tool version·PDK revision·library corner·RTL hash와 SDC를 고정하고 다음 산출물을 남깁니다. 합성 단계의 warning과 구조를 읽고, 기능 simulation 또는 equivalence를 대조한 뒤 placement·clock tree·routing마다 timing·congestion 변화를 확인합니다. 추출 후에는 setup과 hold를 필요한 mode/corner에서 실행하고 unconstrained endpoint를 별도 검사합니다. 마지막으로 공정에 맞는 DRC/LVS·antenna·power integrity 검사를 각각 수행하고 결과를 같은 revision에 연결합니다. GDS 파일이 생성되었다는 사실만으로 모든 검증이 끝나지는 않습니다.
 
+### 실제 RTL과 독립 기준을 비교한 내적기
+
+별도 [RTL 내적기 예제](../../../예제_examples/실무검증_practical-validation/rtl_reference/README.md)는 `.sv` DUT·테스트벤치를 실제 Icarus Verilog로 컴파일하고 VVP로 실행합니다. 앞의 Python full adder·DAG 계산과 실행 범위가 다릅니다. signed int8 네 곱의 합을 int32로 보존하고, 한 번에 한 거래의 ready/valid·출력 전송 시점·reset 취소를 비교했습니다.
+
+기준은 RTL의 상태기를 그대로 복사하지 않습니다. Python은 수락한 거래의 정수 합·tag·가장 이른 출력 전송 에지를 보관합니다. 테스트벤치는 입력을 하강 에지에서 구동하고 다음 상승 에지의 nonblocking 갱신 전 값을 기록합니다. 입력을 받은 에지 n 뒤 n+2부터 출력 전송이 가능하다는 자체 계약이므로, 관측 시점 없이 단순히 ‘latency 2’라고 적지 않습니다.
+
+2026-10-21 Windows·Python 3.12.14·Icarus/VVP 12.0 devel에서 최종 소스를 두 번 실행했습니다. 각 실행의 6설정 compile·simulation은 모두 종료 0이었고, 정상은 288에지에서 불일치 0이었습니다. 의도적으로 만든 unsigned 곱·16비트 축소·ready 무시·빠른 valid·reset 미취소 설정은 각각 95·2·4·223·8개 신호/에지 차이를 냈습니다. 같은 잘못된 값이 여러 에지에 나타날 수 있으므로 독립 결함 수가 아닙니다.
+
+예를 들어 `4×(-128)×(-128)=65,536`을 16비트로 자르면 0입니다. 부호 변환을 뒤에 붙여도 잃은 비트는 복구되지 않습니다. ready가 0인 대기 중 출력을 새 입력으로 덮으면 수치는 어떤 입력의 정답이어도 거래 순서가 틀립니다. reset으로 취소한 4건은 출력 누락과 구분하여 수락 37건·소비 33건과 대응시켰습니다.
+
+[사례 본문](../../../설계와검증사례_engineering-cases/RTL내적기의비트폭과전송계약_rtl-dot-handshake.md)과 [실행 기록](../../../설계와검증사례_engineering-cases/검증기록_evidence/RTL내적기비교검증_20261021.md)에 소스·입력 hash, 도구 버전·명령·trace·불일치가 있습니다. 도구 실패나 정수가 아닌 X/Z trace는 비교 불성립으로 차단합니다. 이 새 실행에도 합성 netlist·equivalence·STA·layout·DRC/LVS·실물 성능 측정은 포함되지 않습니다. 기능 RTL 비교의 통과를 다음 단계의 통과로 대신하지 않습니다.
+
 ## English
 
 ### Different representations expose different errors
@@ -85,6 +97,10 @@ Passing DRC does not establish timing, IR drop, electromigration or functionalit
 Python checks compare gate-level full-adder equations against integer arithmetic for every input. A separate DAG test enumerates all possible paths and compares their delay sums against the topological computation, also rejecting invalid ordering. These are concept-model checks, not Yosys/OpenROAD/KLayout execution logs.
 
 Actual execution fixes tool versions, PDK/library revisions, corners, RTL hash and SDC. Inspect synthesis warnings and inferred structures; compare behavior by simulation or equivalence. Track timing/congestion after placement, clock-tree synthesis and routing. After extraction, check setup/hold across required modes/corners and inspect unconstrained endpoints separately. Run process-appropriate DRC/LVS, antenna and power-integrity checks, tying each result to the same design revision. Producing a GDS file alone does not complete validation.
+
+### An executed RTL/reference comparison
+
+A separate dot-product example invokes actual Icarus compilation and VVP simulation. An independent Python transaction oracle checks signed sums, acceptance, fixed transfer timing, held outputs and reset cancellation over 288 sampled edges. In two final-source runs, all six variants compiled and executed; the corrected RTL had no mismatches and five intentional mutations were detected. Missing tools or unsupported X/Z traces block comparison. This new functional simulation does not include synthesis, equivalence, STA, layout, DRC/LVS or physical measurements. [Code](../../../예제_examples/실무검증_practical-validation/rtl_reference/README.md) · [Dated record](../../../설계와검증사례_engineering-cases/검증기록_evidence/RTL내적기비교검증_20261021.md)
 
 ## 출처 대조 / Source cross-check
 
