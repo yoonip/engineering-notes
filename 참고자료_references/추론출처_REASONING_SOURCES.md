@@ -1,12 +1,12 @@
 # 추론과 인문사회의 출처 | Reasoning and humanities sources
 
-해설 36편의 출처입니다. 자료 목록의 확인 기준일은 2026-10-21입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
+해설에서 사용한 자료를 글별로 모았습니다. 자료 목록의 확인 기준일은 2026-10-21입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
 
 [전체 참고 자료](README.md)
 
 ## 글별 참고 자료
 
-### 1. 논증 독해: 무엇을 근거로 어디까지 말할 수 있습니까
+### 1. 논증 독해: 근거·결론·가정과 반론
 
 [해설 읽기](../언어이해와추리논증_reading-reasoning/추리논증_reasoning/논증독해_ARGUMENT_READING.md)
 
@@ -330,4 +330,4 @@
 
 ## English
 
-This readable index lists the references for 36 articles. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.
+This readable index groups the references by article. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.

@@ -20,7 +20,7 @@ def render(path):
     title, english = NAMES[path.stem]
     rows = data['articles']
     output = [f'# {title} | {english}', '',
-              f'해설 {len(rows)}편의 출처입니다. 자료 목록의 확인 기준일은 {data["review_date"]}입니다. '
+              f'해설에서 사용한 자료를 글별로 모았습니다. 자료 목록의 확인 기준일은 {data["review_date"]}입니다. '
               '각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.', '',
               '[전체 참고 자료](README.md)', '',
               '## 글별 참고 자료', '']
@@ -44,7 +44,7 @@ def render(path):
                    '기준일은 자료 목록의 기록 날짜이며 모든 외부 페이지를 매번 재검증했다는 뜻은 아닙니다. '
                    '구체적인 인용 범위와 실행 여부는 각 해설과 검증 기록에 있습니다.', '',
                    '## English', '',
-                   f'This readable index lists the references for {len(rows)} articles. '
+                   'This readable index groups the references by article. '
                    'The JSON record retains article paths and source URLs for generation and path checks. '
                    'Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.', ''])
     return '\n'.join(output)

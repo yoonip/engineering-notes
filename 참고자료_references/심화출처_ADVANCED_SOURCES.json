@@ -518,7 +518,7 @@
       "topic_ko": "컴퓨터 비전과 영상 처리",
       "topic_en": "Computer Vision & Image Processing",
       "path": "분야_topics/43-컴퓨터비전_computer-vision/해설_notes/역매핑과쌍선형보간_bilinear-warp.md",
-      "title": "Bilinear warp: 없는 pixel 사이의 값을 어떻게 계산할까요",
+      "title": "역매핑과 쌍선형 보간 / Inverse mapping and bilinear interpolation",
       "reference_urls": [
         "https://docs.opencv.org/4.x/da/d54/group__imgproc__transform.html",
         "https://docs.pytorch.org/docs/2.9/generated/torch.nn.functional.grid_sample.html"

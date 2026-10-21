@@ -1,6 +1,6 @@
 # 분야별 학습의 출처 | Technical topic sources
 
-해설 37편의 출처입니다. 자료 목록의 확인 기준일은 2026-10-21입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
+해설에서 사용한 자료를 글별로 모았습니다. 자료 목록의 확인 기준일은 2026-10-21입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
 
 [전체 참고 자료](README.md)
 
@@ -63,7 +63,7 @@
 - [analog.com · MT-101.pdf](https://www.analog.com/media/en/training-seminars/tutorials/MT-101.pdf)
 - [ti.com · scaa082a.pdf](https://www.ti.com/lit/an/scaa082a/scaa082a.pdf)
 
-### 8. 검증에서 무엇을 확인했습니까: assertion, coverage와 formal
+### 8. Assertion·coverage·formal의 검증 범위
 
 [해설 읽기](../분야_topics/14-하드웨어검증_hardware-verification/해설_notes/검증에서무엇을확인했는가_assertions-coverage-formal.md)
 
@@ -306,4 +306,4 @@
 
 ## English
 
-This readable index lists the references for 37 articles. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.
+This readable index groups the references by article. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.

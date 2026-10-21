@@ -1,6 +1,6 @@
 # 심화 학습의 출처 | Advanced sources
 
-해설 60편의 출처입니다. 자료 목록의 확인 기준일은 2026-10-19입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
+해설에서 사용한 자료를 글별로 모았습니다. 자료 목록의 확인 기준일은 2026-10-19입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
 
 [전체 참고 자료](README.md)
 
@@ -307,7 +307,7 @@
 - [cs.cmu.edu · Ble93.pdf](https://www.cs.cmu.edu/~guyb/papers/Ble93.pdf)
 - [developer.nvidia.com · chapter-39-parallel-prefix-sum-scan-cuda](https://developer.nvidia.com/gpugems/gpugems3/part-vi-gpu-computing/chapter-39-parallel-prefix-sum-scan-cuda)
 
-### 43. Bilinear warp: 없는 pixel 사이의 값을 어떻게 계산할까요
+### 43. 역매핑과 쌍선형 보간 / Inverse mapping and bilinear interpolation
 
 [해설 읽기](../분야_topics/43-컴퓨터비전_computer-vision/해설_notes/역매핑과쌍선형보간_bilinear-warp.md)
 
@@ -445,4 +445,4 @@
 
 ## English
 
-This readable index lists the references for 60 articles. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.
+This readable index groups the references by article. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.

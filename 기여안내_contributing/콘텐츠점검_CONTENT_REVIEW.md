@@ -1,10 +1,10 @@
-# 콘텐츠와 분류 점검 | Content and navigation review
+# 문서 점검 기록 | Document review history
 
-확인일은 2026-10-19입니다. 점검 전 Markdown 1,031개를 대상으로 문서 위치, 본문 유무, 반복 안내문, 코드와 본문의 구분을 살펴봤습니다. 출처·실행 조건·해설이 약한 부분을 아래와 같이 정리했습니다.
+이 문서는 2026-10-19 당시의 점검 기록입니다. 아래 글 수와 실행 수는 그때 확인한 범위이며 현재 목차의 총수를 뜻하지 않습니다. 점검 전 Markdown 1,031개를 대상으로 문서 위치, 본문 유무, 반복 안내문, 코드와 본문의 구분을 살펴봤습니다. 출처·실행 조건·해설이 약한 부분을 아래와 같이 정리했습니다.
 
 ## 분류와 본문
 
-| 대상 | 확인한 문제 | 현재 구성 |
+| 대상 | 당시 확인한 문제 | 당시 조치 |
 | --- | --- | --- |
 | 문서 목록 | 공학·언어·인문사회·이력·작성 기준이 한 경로에 섞여 있었습니다. | 학습 분야, 분석, 구현, 작성자 정보, 기여 안내를 나눴습니다. |
 | 블로그 운영 | 파일명과 달리 언어·사회·경제 소개였습니다. | 외국어·기술 영어를 독립시키고 사회·경제는 인문사회 본문으로 연결했습니다. |
@@ -60,8 +60,24 @@
 
 새 모델 설명의 입력과 기대값은 학습용으로 구성한 자료입니다. 이번 작성 과정에서 공식 가중치 추론·유료 API 호출·이미지나 영상 생성·하드웨어 실측을 추가로 수행하지 않았습니다. 원 논문의 실험 결과, 기존에 실행한 수치 실험, 새로 만든 설명용 계산을 구분했습니다.
 
+## 2026-10-21 분류·표기·출처 점검
+
+모델의 공식 구조·학습 설명은 `models`에 모으고, 직접 구성한 평가 질문과 기존 CPU 계산은 `experiments`로 구분했습니다. DeepSeek R1-Distill과 Samsung TRM도 모델별 문서 아래에서 찾으실 수 있습니다. 회사, 원개발자, 기반 모델, 배포 플랫폼과 실행 도구의 역할을 따로 설명합니다.
+
+제품 목차에서는 양자컴퓨터를 컴퓨팅 장치로, BCI·수술 로봇·광자 계수 CT를 의료기기로 분류했습니다. 글을 옮긴 경로와 관련 목차·출처 링크도 함께 확인했습니다. 질문을 기계적으로 존댓말로 바꾼 제목과 표 항목은 실제 다루는 내용을 나타내는 표현으로 정리했습니다.
+
+계속 늘어나는 목차의 소개에서는 고정된 글 수를 뺐습니다. 논문 표본 수, 실험 입력 수, 날짜가 있는 검증 기록의 수치는 보존했습니다. 출처 JSON의 제목과 독자용 Markdown 출처 목록도 본문의 제목에 맞췄습니다.
+
+공식 모델 카드·설정·API 문서, 논문 서지와 원문 판본, 제품 비교에 쓰인 평가표를 대조했습니다. 원문을 읽은 범위와 등록 서지만 확인한 범위는 구별하며, 접근하지 못한 자료를 확인한 것으로 세지 않았습니다. 제품 평가에는 판본·시점·분모와 평가 주체를 명시하고, 연구 결과와 자체 계산을 나눕니다.
+
+문서 검사는 내부 경로뿐 아니라 제목으로 연결되는 앵커도 확인합니다. 출처 목록의 재생성 검사, Python 구문·JSON 형식 검사와 기존 제출 자료의 무결성 검사를 실행했습니다. 기존 실험·프로젝트의 코드·데이터·그림은 보존했으며, MNIST의 과거 정확도에는 원본 지표 파일과 소스 해시를 연결했습니다. 모든 프로젝트를 재실행하거나 모든 원논문 전문을 다시 읽었다는 뜻은 아닙니다.
+
 ## English
+
+The counts in the following paragraphs describe the reviews on October 19, 2026, rather than the current collection size.
 
 The review began with 1,031 Markdown files. Subject categories, model studies, paper calculations, dated technology analysis, executable product observations and readable references now have separate paths. Korean explanatory prose uses a polite register. Existing code, quotations, research facts and recorded measurements are preserved. Local document checks, six CPU numerical tests, attention properties, two SQLite journal observations and the 672-solution archive check were run. This is not a full rerun of every historical experiment or a continuous check of every external URL.
 
 The follow-up adds analyses of 11 actual exam questions, eight English units with 64 exercises, eight additional reading exercises, 30 selected paper studies including the expanded Transformer article, and fuller explanations for 27 model/runtime entries. Local checks pass across 1,139 Markdown files. All 3,699 existing non-Markdown files remain byte-identical to the follow-up baseline. Constructed examples are distinguished from published results and executed experiments.
+
+The October 21 review separates official model descriptions from constructed evaluation designs and existing numerical examples, relocates computing and medical-device reviews, and aligns article titles, indexes and source registries. Growing indexes no longer state a fixed collection size. Source editions, benchmark versions and reading limits remain explicit. Local links and heading anchors, reference generation, Python syntax, JSON format and saved submission integrity were checked. This review does not rerun every project or revalidate every paper in full.

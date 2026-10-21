@@ -1,6 +1,6 @@
 # 공학 기초의 출처 | Foundations sources
 
-해설 24편의 출처입니다. 자료 목록의 확인 기준일은 2026-10-19입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
+해설에서 사용한 자료를 글별로 모았습니다. 자료 목록의 확인 기준일은 2026-10-19입니다. 각 글의 정의·수식·가정 가까이에 있는 인용과 함께 읽으시면 근거의 범위를 확인하기 쉽습니다.
 
 [전체 참고 자료](README.md)
 
@@ -207,4 +207,4 @@
 
 ## English
 
-This readable index lists the references for 24 articles. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.
+This readable index groups the references by article. The JSON record retains article paths and source URLs for generation and path checks. Read the citations beside each claim for the scope of support; the inventory date is not a claim of continuous link verification.

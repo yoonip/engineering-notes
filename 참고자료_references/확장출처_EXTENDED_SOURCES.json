@@ -100,7 +100,7 @@
       "topic_ko": "하드웨어 검증",
       "topic_en": "Hardware Verification",
       "path": "분야_topics/14-하드웨어검증_hardware-verification/해설_notes/검증에서무엇을확인했는가_assertions-coverage-formal.md",
-      "title": "검증에서 무엇을 확인했습니까: assertion, coverage와 formal",
+      "title": "Assertion·coverage·formal의 검증 범위",
       "reference_urls": [
         "https://blogs.sw.siemens.com/verificationhorizons/2019/06/03/the-beginning-of-the-end-for-coverage/",
         "https://symbiyosys.readthedocs.io/en/latest/verilog.html"
