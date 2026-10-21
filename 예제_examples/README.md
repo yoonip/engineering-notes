@@ -16,6 +16,8 @@
 | [tensorflow_autograd.py](tensorflow_autograd.py) | 같은 미분의 GradientTape 표현 | TensorFlow |
 | [files.sh](files.sh) | 디렉터리·CSV·파일 검색 | Bash |
 
+아래 명령은 Bash에서 `예제_examples` 디렉터리를 작업 위치로 하여 실행합니다.
+
 ```bash
 python3 rc_euler.py
 gcc -std=c17 -Wall -Wextra -Wpedantic mean.c -o mean
@@ -32,13 +34,13 @@ Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)�
 
 ## 분야별 참조 모델과 통합 검사
 
-[분야별 계산 예제](확장기초_extended/README.md)에서는 타이밍·전력·통신·테스트를 포함한 하드웨어, OS·도구·디버깅·로봇 제어를 포함한 시스템, GPU·데이터베이스·분산 시스템·AI·수치해석을 계산하고 검증합니다. 추론 모델까지 포함한 전체 검사는 저장소 루트에서 실행합니다.
+[분야별 계산 예제](확장기초_extended/README.md)에서는 타이밍·전력·통신·테스트를 포함한 하드웨어, OS·도구·디버깅·로봇 제어를 포함한 시스템, GPU·데이터베이스·분산 시스템·AI·수치해석을 계산하고 검증합니다. 기초·추론·확장·심화 참조 모델의 통합 검사는 저장소 루트에서 실행합니다. 실무 검증과 임베디드 실습은 각 디렉터리의 별도 명령을 사용합니다.
 
 ```bash
 python 예제_examples/run_checks.py
 ```
 
-Python 3 표준 라이브러리로 298개 검사를 실행합니다. 검사에는 독립 계산과의 비교, 경계 조건, 상태 불변식, 수렴률, 무작위 입력, 오류 주입이 포함됩니다. 실행 환경과 검사별 결과는 [검증 기록](VALIDATION.json)에 남겼습니다.
+2026-10-19 기록에서는 Python 표준 라이브러리를 사용하는 298개 검사가 통과했습니다. 검사에는 독립 계산과의 비교, 경계 조건, 상태 불변식, 수렴률, 무작위 입력, 오류 주입이 포함됩니다. 실행 환경과 검사별 결과는 [검증 기록](VALIDATION.json)에 남겼습니다.
 
 ## 심화 구현과 검증
 
@@ -52,7 +54,7 @@ Python 3 표준 라이브러리로 298개 검사를 실행합니다. 검사에�
 
 ## English
 
-[Advanced examples](심화_advanced/README.md) connect circuit/RTL, firmware/systems, AI/data and mathematical implementations with independent checks. [The 60 advanced articles](../공학기초_foundations/심화학습_ADVANCED.md#english) provide step-by-step derivations and execution results.
+[Advanced examples](심화_advanced/README.md) connect circuit/RTL, firmware/systems, AI/data and mathematical implementations with independent checks. [The advanced articles](../공학기초_foundations/심화학습_ADVANCED.md#english) provide step-by-step derivations and execution results.
 
 Short executable examples accompany the concept notes. [Foundation models and automated checks](공학기초_foundations/README.md#english) connect mathematics, physics, circuits, hardware, firmware, systems, signals, control and AI.
 
@@ -70,12 +72,12 @@ Short executable examples accompany the concept notes. [Foundation models and au
 | [tensorflow_autograd.py](tensorflow_autograd.py) | The same derivative with GradientTape | TensorFlow |
 | [files.sh](files.sh) | Directory, CSV and file search | Bash |
 
-The commands above run the RC calculation and build/run the C/C++ examples. [requirements.txt](requirements.txt) lists notebook/plot dependencies. Autograd files additionally require their respective framework; these scalar examples need no GPU. See [Python & Jupyter](../분야_topics/03-python-jupyter/README.md), [PyTorch](https://pytorch.org/get-started/locally/) and [TensorFlow](https://www.tensorflow.org/install) for installation references.
+The first command block runs the RC calculation and builds/runs the C/C++ examples from the `예제_examples` directory in Bash. [requirements.txt](requirements.txt) lists notebook/plot dependencies. Autograd files additionally require their respective framework; these scalar examples need no GPU. See [Python & Jupyter](../분야_topics/03-python-jupyter/README.md), [PyTorch](https://pytorch.org/get-started/locally/) and [TensorFlow](https://www.tensorflow.org/install) for installation references.
 
 ### Reference models by topic and integrated checks
 
-The [extended foundation models](확장기초_extended/README.md) cover hardware timing, power, communications and test; systems tools, debugging and robot control; and GPU, database, distributed-system, AI and numerical models. Run the command above from the repository root to include the reasoning models as well.
+The [extended foundation models](확장기초_extended/README.md) cover hardware timing, power, communications and test; systems tools, debugging and robot control; and GPU, database, distributed-system, AI and numerical models. The repository-root command runs the foundation, reasoning, extended and advanced reference suites. Practical-validation and embedded labs use their own commands.
 
-The runner executes 298 checks using the Python 3 standard library. They include independent calculations, boundary conditions, state invariants, convergence rates, randomized inputs and fault injection. The [validation record](VALIDATION.json) contains the execution environment and per-suite results.
+The 2026-10-19 record reports 298 passing checks using the Python standard library. They include independent calculations, boundary conditions, state invariants, convergence rates, randomized inputs and fault injection. The [validation record](VALIDATION.json) contains the execution environment and per-suite results.
 
 [Embedded debug labs](임베디드디버깅_embedded-debug-labs/README.md) cover Arm/RISC-V startup, memory layout, OpenOCD/GDB, GPIO and FreeRTOS command processing. The [embedded validation lab](../프로젝트_projects/embedded-validation-lab/README.md) connects an RV32I CPU/Python reference with Cortex-M7/STM32/ESP32 firmware and UART validation.

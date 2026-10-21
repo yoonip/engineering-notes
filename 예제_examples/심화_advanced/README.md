@@ -25,4 +25,4 @@ python 예제_examples/run_checks.py --report results/verification.json
 
 [The integrated record](../VALIDATION.json) lists suite results and Python versions. Individual READMEs and result files document RTL and CLI execution. The integrated command checks Python models; the hardware README provides the separate RTL-tool command.
 
-[심화 해설 60편 / 60 advanced articles](../../공학기초_foundations/심화학습_ADVANCED.md)
+[심화 해설 / Advanced articles](../../공학기초_foundations/심화학습_ADVANCED.md)

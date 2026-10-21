@@ -1,6 +1,6 @@
 # 기초 모델과 검증 예제
 
-[개념 문서 24편](../../공학기초_foundations/README.md) · [검토 범위와 출처](../../공학기초_foundations/검증기록_VERIFICATION.md) · [English](#english)
+[기초 개념 해설](../../공학기초_foundations/README.md) · [검토 범위와 출처](../../공학기초_foundations/검증기록_VERIFICATION.md) · [English](#english)
 
 개념을 식으로 옮기고, 식을 프로그램으로 만들고, 별도의 기준과 비교하는 예제입니다. 계산에는 Python 표준 라이브러리만 사용합니다. 도표를 다시 그릴 때만 Matplotlib이 추가로 필요합니다.
 
@@ -32,14 +32,14 @@ python 예제_examples/공학기초_foundations/run_checks.py --report build/fou
 이 문서와 연결된 짧은 코드의 `from signals_ai.models import ...`는 아래 폴더에서 Python을 실행하면 사용할 수 있습니다.
 
 ```bash
-cd 예제_examples/foundations
+cd 예제_examples/공학기초_foundations
 python -c "from signals_ai.models import alias_frequency; print(alias_frequency(900, 1000))"
 ```
 
 PowerShell에서 저장소 루트에 머물러 실행하려면 이 프로세스의 모듈 경로를 지정합니다.
 
 ```powershell
-$env:PYTHONPATH = (Resolve-Path 예제_examples/foundations).Path
+$env:PYTHONPATH = (Resolve-Path 예제_examples/공학기초_foundations).Path
 python -c "from signals_ai.models import alias_frequency; print(alias_frequency(900, 1000))"
 ```
 
@@ -69,7 +69,7 @@ Run `python 예제_examples/공학기초_foundations/run_checks.py` from the rep
 | [systems](systems/README.md) | Representations, boot memory, DMA, framing, CRC, translation, authentication | Exact rationals, RFC vectors, standard libraries, state and access contracts |
 | [signals_ai](signals_ai/models.py) | Sampling, ADC, feedback, gradients, attention, Roofline | Identical-sample counterexamples, error integration, exact sequences, centered differences, invariants |
 
-For `from signals_ai.models import ...`, change into `예제_examples/foundations` before starting Python, or set `PYTHONPATH` as shown in the PowerShell example above. Other groups describe their working directories in their own README files. [RTL simulation commands](circuits_hardware/README.md) are separate from the Python behavioral checks.
+For `from signals_ai.models import ...`, change into `예제_examples/공학기초_foundations` before starting Python, or set `PYTHONPATH` as shown in the PowerShell example above. Other groups describe their working directories in their own README files. [RTL simulation commands](circuits_hardware/README.md) are separate from the Python behavioral checks.
 
 To recreate plots, install Matplotlib 3.10.0 and run `python 예제_examples/공학기초_foundations/make_figures.py`. The PNG/SVG files in [figures](figures) were calculated and plotted from this repository's models. English axis labels have Korean and English captions in the articles. No university or company figure was copied.
 

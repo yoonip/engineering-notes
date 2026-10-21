@@ -1,6 +1,6 @@
 # 분야별 확장 예제 | Extended foundation examples
 
-회로에서 데이터와 AI까지의 기초 해설 36편에 연결된 참조 구현입니다. 계산식의 단위와 경계, 상태 전이와 불변식을 코드로 표현하고, 별도 계산 경로와 비교해 확인합니다.
+회로에서 데이터와 AI까지의 기초 해설에 연결된 참조 구현입니다. 계산식의 단위와 경계, 상태 전이와 불변식을 코드로 표현하고, 별도 계산 경로와 비교해 확인합니다.
 
 | 묶음 / Collection | 내용 / Coverage |
 | --- | --- |
@@ -12,6 +12,6 @@
 
 ## English
 
-These reference implementations accompany 36 foundation articles, spanning circuits, data and AI. They express dimensions, boundaries, state transitions and invariants in code, then check them through separate calculation paths.
+These reference implementations accompany the foundation articles, spanning circuits, data and AI. They express dimensions, boundaries, state transitions and invariants in code, then check them through separate calculation paths.
 
 The linked collections cover hardware, systems, and AI/data. Their READMEs connect implementations, independent checks and model assumptions. See the [article guide](../../공학기초_foundations/분야별학습_TOPIC_GUIDES.md) and [combined check runner](../run_checks.py).
