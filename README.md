@@ -7,7 +7,7 @@
 | 분야 | 내용 |
 | --- | --- |
 | [현장 계측과 검증](현장계측과검증_measurement-validation/README.md) | 오실로스코프·DMM·SMU·로직 분석기·전원/전자부하·LCR·스펙트럼·네트워크 분석기, DMA·고장 추적·PVT·통신·자동화 |
-| [설계와 검증 사례](설계와검증사례_engineering-cases/README.md) | C/C++·RTOS·인터럽트·DMA·통신·RTL·칩·AI·데이터의 28개 사례: 실제 코드, 오류 재현, 원인·해결과 날짜별 검증 기록 |
+| [설계와 검증 사례](설계와검증사례_engineering-cases/README.md) | C/C++·RTOS·인터럽트·DMA·통신·저장장치·RTL·칩·AI·데이터의 32개 사례: 실제 코드, 오류 재현, 원인·해결과 날짜별 검증 기록 |
 
 C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무 질문별 읽는 순서](현장계측과검증_measurement-validation/README.md#업무-질문에서-시작하기)로 찾아보실 수 있습니다.
 

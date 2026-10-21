@@ -19,6 +19,9 @@
 | USB·PCIe 전송 | [usb_pcie](usb_pcie/README.md): 부분 전송·재시도·분할 completion 모델 | 실제 길이·명령 ID·연결 세대와 tag·주소·응답 완성 |
 | 부트로더·펌웨어 업데이트 | [firmware_update](firmware_update/README.md): 파일 기반 A/B 슬롯·재시작 검사 | 기록 중단·이미지 검사·시험 부팅·확정과 롤백 |
 | DDR 명령·메모리 패턴 | [ddr_validation](ddr_validation/README.md): SV 명령 fixture·Python 감시기 | 시간 간격·refresh·주소와 데이터 결함·응답 누락·패턴 한계 |
+| NVMe·eMMC·SD | [storage_protocols](storage_protocols/README.md): 완료 상태·busy·휘발성 보존 모델 | 요청 식별·실패 처리와 flush·FUA·캐시 지원 조건 |
+| 저널·데이터 복구 | [storage_recovery](storage_recovery/README.md): 파일 기록·별도 프로세스의 복구 검사 | 중단된 기록·commit·자료 손상과 재생 경계 |
+| ECC 오류 주입 | [ecc_secded](ecc_secded/README.md): 고정 extended Hamming 부호·독립 비교 | 단일 비트 정정·이중 비트 검출과 다중 오류 반례 |
 
 [설계와 검증 사례](../../설계와검증사례_engineering-cases/README.md)에서 원인과 해결을 읽고, [현장 계측과 검증](../../현장계측과검증_measurement-validation/README.md)에서 장비·펌웨어·칩 시험 조건으로 연결합니다.
 
@@ -28,4 +31,4 @@
 
 ## English
 
-Fifteen sets of runnable examples compare faulty controls and intended fixes: native contracts, chip analysis, AI evaluation, RTOS concurrency, CAN, subprocess reports, interrupt/DMA/cache ownership, SPI/I2C, UART/Ethernet/UDP, watchdog/reset, RTL/reference and CDC/asynchronous FIFO comparison, USB/PCIe, file-backed firmware updates and DDR command/pattern checks. New output directories preserve earlier failures. HDL simulation, actual host child processes, deterministic software models and physical measurements have distinct scopes.
+Eighteen sets of runnable examples compare faulty controls and intended fixes: native contracts, chip analysis, AI evaluation, RTOS concurrency, CAN, subprocess reports, interrupt/DMA/cache ownership, SPI/I2C, UART/Ethernet/UDP, watchdog/reset, RTL/reference and CDC/asynchronous FIFO comparison, USB/PCIe, file-backed firmware updates DDR command/pattern checks, NVMe/eMMC/SD, file-journal recovery and ECC fault injection. New output directories preserve earlier failures. HDL simulation, actual host child processes, deterministic software models and physical measurements have distinct scopes.

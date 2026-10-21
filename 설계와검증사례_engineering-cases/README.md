@@ -1,6 +1,6 @@
 # 설계와 검증 사례 | Engineering decisions and checks
 
-요구사항과 실제 코드를 연결하고, 같은 입력에서 잘못된 조건과 해결한 조건을 비교합니다. 28개 사례의 본문에서 원인·대안·수정 방법을 읽고, 날짜별 기록에서 환경·명령·관측값을 확인하실 수 있습니다.
+요구사항과 실제 코드를 연결하고, 같은 입력에서 잘못된 조건과 해결한 조건을 비교합니다. 32개 사례의 본문에서 원인·대안·수정 방법을 읽고, 날짜별 기록에서 환경·명령·관측값을 확인하실 수 있습니다.
 
 ## C·C++·펌웨어
 
@@ -30,6 +30,14 @@
 | [USB 부분 전송·재시도](USB의부분전송과중복없는복구_usb-bulk-recovery.md) | status와 실제 길이, STALL 뒤 중복 적용, 연결 세대와 버퍼 소유권을 비교합니다. | [2026-10-21](검증기록_evidence/USB와PCIe전송계약검증_20261021.md) |
 | [PCIe 태그·분할 응답](PCIe의태그와분할응답_pcie-split-completions.md) | 제한된 read 요청의 tag·byte count·lower address와 응답 완성을 대조합니다. | [2026-10-21](검증기록_evidence/USB와PCIe전송계약검증_20261021.md) |
 
+## 저장장치와 데이터 복구
+
+| 사례 | 오류와 해결 | 실행 기록 |
+| --- | --- | --- |
+| [NVMe 쓰기 완료·영속성](NVMe의쓰기완료와영속성_nvme-write-persistence.md) | 완료 상태와 휘발성 캐시, flush·FUA의 적용 범위를 비교합니다. | [2026-10-21](검증기록_evidence/저장장치완료와영속성검사_20261021.md) |
+| [eMMC·SD busy와 쓰기 실패](eMMC와SD의busy와쓰기실패_emmc-sd-write-status.md) | 자료 수신·busy 해제·상태 오류와 캐시 조건을 구분합니다. | [2026-10-21](검증기록_evidence/저장장치완료와영속성검사_20261021.md) |
+| [중단된 저널·트랜잭션 복구](중단된저널의트랜잭션복구_storage-journal-recovery.md) | 파일 기록 중단 뒤 유효한 commit과 손상·미완성 자료를 구분합니다. | [2026-10-21](검증기록_evidence/저장저널중단과복구검사_20261021.md) |
+
 ## RTL·칩 산술·시험 데이터
 
 | 사례 | 오류와 해결 | 실행 기록 |
@@ -40,6 +48,7 @@
 | [RTL 내적기의 폭·전송 계약](RTL내적기의비트폭과전송계약_rtl-dot-handshake.md) | SystemVerilog 실행 결과를 Python 기대값과 대응시켜 부호·폭·지연·리셋·수락 오류를 검출합니다. | [2026-10-21](검증기록_evidence/RTL내적기비교검증_20261021.md) |
 | [CDC·비동기 FIFO](비동기FIFO의Gray포인터와reset_cdc-async-fifo.md) | 두 클록의 포인터 동기화·full/empty·순서·리셋 계약을 RTL과 기준 큐로 비교합니다. | [2026-10-21](검증기록_evidence/비동기FIFO비교검증_20261021.md) |
 | [DDR 명령 간격·메모리 패턴](DDR명령간격과메모리패턴_ddr-command-pattern-checks.md) | 명령표의 시간 위반, stuck bit·주소 alias·응답 누락과 패턴의 검출 한계를 구분합니다. | [2026-10-21](검증기록_evidence/DDR명령과패턴검증_20261021.md) |
+| [ECC 단일 정정·이중 검출](ECC의단일비트정정과이중비트검출_ecc-secded.md) | 고정 학습 부호의 오류 위치·검출·정정과 보장 밖 반례를 비교합니다. | [2026-10-21](검증기록_evidence/ECC오류주입과검출범위_20261021.md) |
 
 ## AI·데이터 시스템
 
@@ -57,8 +66,8 @@
 - [계측 자동화의 offline 기록](검증기록_evidence/계측자동화모의검사_20261021.md): 기존 19개 mock·모형 검사의 범위입니다.
 - [구현 프로젝트](../프로젝트_projects/README.md): 기존 소스와 이전 실험·실행 결과입니다.
 
-인터럽트·캐시·워치독 정책과 원시 통신 해석은 호스트 모델이며, UDP loopback은 실제 로컬 socket을 사용합니다. RTL 내적기·비동기 FIFO와 DDR 명령 fixture는 HDL 컴파일·시뮬레이션과 Python 비교를 연결합니다. USB·PCIe는 호스트 전송 모델이며, 펌웨어 업데이트는 실제 파일 기록과 별도 프로세스의 재시작을 사용합니다. 이전 FPGA의 성공 1회와 반복 컴파일 실패 기록, 기존 GPU 결과도 해당 시점의 근거로 보존합니다. 실물 측정·산업 데이터·동시 스트레스 검증의 범위는 각 관측에서 구분합니다.
+인터럽트·캐시·워치독 정책과 원시 통신 해석은 호스트 모델이며, UDP loopback은 실제 로컬 socket을 사용합니다. RTL 내적기·비동기 FIFO와 DDR 명령 fixture는 HDL 컴파일·시뮬레이션과 Python 비교를 연결합니다. USB·PCIe는 호스트 전송 모델이며, 펌웨어 업데이트와 데이터 저널 복구는 실제 파일 기록과 별도 프로세스의 재시작을 사용합니다. NVMe·eMMC·SD는 제한된 전송·보존 모델이며 ECC는 고정 부호의 오류 주입을 실행합니다. 이전 FPGA의 성공 1회와 반복 컴파일 실패 기록, 기존 GPU 결과도 해당 시점의 근거로 보존합니다. 실물 측정·산업 데이터·동시 스트레스 검증의 범위는 각 관측에서 구분합니다.
 
 ## English
 
-Twenty-eight cases connect requirements, executable code, deliberately faulty controls, intended fixes and dated observations. They cover C/C++ ownership, firmware publication, RTOS scheduling/notifications, interrupt/DMA/cache contracts, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, file-backed firmware updates, DDR command/pattern checks, RTL/reference and CDC/FIFO comparison, chip arithmetic, test identity, subprocess reports, AI serving/evaluation, FPGA frames and SQLite updates. HDL simulation, deterministic host models and physical measurements have distinct scopes.
+Thirty-two cases connect requirements, executable code, deliberately faulty controls, intended fixes and dated observations. They cover C/C++ ownership, firmware publication, RTOS scheduling/notifications, interrupt/DMA/cache contracts, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, file-backed firmware updates, NVMe/eMMC/SD, file-journal recovery, ECC fault injection, DDR command/pattern checks, RTL/reference and CDC/FIFO comparison, chip arithmetic, test identity, subprocess reports, AI serving/evaluation, FPGA frames and SQLite updates. HDL simulation, deterministic host models and physical measurements have distinct scopes.

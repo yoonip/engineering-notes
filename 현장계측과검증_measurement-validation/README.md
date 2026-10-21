@@ -27,7 +27,7 @@
 
 ## 오류를 코드로 재현하기
 
-[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 RTOS·CAN·칩·AI 예제는 결정적 모델과 합성 자료입니다. 칩 시험 러너는 실제 호스트 자식프로그램을 실행해 프로세스 실패와 결과 계약 위반을 나눕니다. 인터럽트·DMA·캐시와 SPI·I2C의 호스트 모델, UART·이더넷 수신 경계와 워치독·리셋 정책, 실제 로컬 UDP socket, SystemVerilog와 Python을 비교하는 RTL·비동기 FIFO 예제로 이어집니다. USB·PCIe의 제한된 전송 계약, 파일 기반 업데이트 중단과 재시작, DDR 명령·패턴 fixture의 실행 범위도 각각 구분합니다.
+[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 RTOS·CAN·칩·AI 예제는 결정적 모델과 합성 자료입니다. 칩 시험 러너는 실제 호스트 자식프로그램을 실행해 프로세스 실패와 결과 계약 위반을 나눕니다. 인터럽트·DMA·캐시와 SPI·I2C의 호스트 모델, UART·이더넷 수신 경계와 워치독·리셋 정책, 실제 로컬 UDP socket, SystemVerilog와 Python을 비교하는 RTL·비동기 FIFO 예제로 이어집니다. USB·PCIe의 제한된 전송 계약, 파일 기반 업데이트 중단과 재시작, DDR 명령·패턴 fixture의 실행 범위도 각각 구분합니다. 저장장치 완료·busy·영속성 모델, 파일 저널의 중단 복구와 ECC 부호의 오류 주입으로 이어집니다.
 
 | 재현하는 문제 | 원인과 해결 | 본문 |
 | --- | --- | --- |
@@ -56,6 +56,10 @@
 | PCIe read 응답을 받았지만 주소·길이·요청이 맞지 않습니다. | 태그와 남은 바이트, 시작 주소, 분할 응답의 완성 조건을 대조합니다. | [PCIe 분할 응답](../설계와검증사례_engineering-cases/PCIe의태그와분할응답_pcie-split-completions.md) |
 | 업데이트 중단 뒤 정상 이미지로 돌아가지 못합니다. | 비활성 슬롯 기록·선택 기록·시험 부팅·성공 확정을 순서대로 검사합니다. | [업데이트 중단과 롤백](../설계와검증사례_engineering-cases/중단된업데이트의슬롯선택과롤백_firmware-ab-update.md) |
 | 메모리 값 비교만 통과하고 명령 간격·응답 누락을 놓칩니다. | 시간 계약·응답 수·주소별 기대값과 패턴의 검출 한계를 함께 확인합니다. | [DDR 명령·패턴](../설계와검증사례_engineering-cases/DDR명령간격과메모리패턴_ddr-command-pattern-checks.md) |
+| 저장 명령은 끝났지만 재시작 뒤 새 자료가 없습니다. | 캐시와 영속성, flush·FUA의 대상과 성공 상태를 구분합니다. | [NVMe 완료·보존](../설계와검증사례_engineering-cases/NVMe의쓰기완료와영속성_nvme-write-persistence.md) |
+| 카드가 자료를 받았는데 다음 쓰기가 실패합니다. | busy 해제·후속 상태·캐시 지원을 함께 확인합니다. | [eMMC·SD 쓰기 상태](../설계와검증사례_engineering-cases/eMMC와SD의busy와쓰기실패_emmc-sd-write-status.md) |
+| 기록이 끊긴 뒤 미완성 변경을 정상 자료로 읽습니다. | commit 경계와 기록의 길이·순서·오류 검출을 확인합니다. | [저널 복구](../설계와검증사례_engineering-cases/중단된저널의트랜잭션복구_storage-journal-recovery.md) |
+| 오류 정정 결과를 근거로 모든 자료를 정상 처리합니다. | 정정 가능·검출 가능·보장 밖 오류와 자료 공개 조건을 구분합니다. | [ECC 오류 주입](../설계와검증사례_engineering-cases/ECC의단일비트정정과이중비트검출_ecc-secded.md) |
 
 ## 업무 질문에서 시작하기
 
