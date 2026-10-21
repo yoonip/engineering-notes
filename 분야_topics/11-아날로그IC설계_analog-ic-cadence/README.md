@@ -55,4 +55,4 @@ DRC checks manufacturing rules, LVS compares schematic and layout devices and co
 
 ## 심화 해설 | Advanced article
 
-- [피드백을 걸면 이득과 대역폭은 어떻게 바뀌는가](해설_notes/피드백과대역폭_feedback.md) · [English](해설_notes/피드백과대역폭_feedback.md#english)
+- [피드백에 따른 이득과 대역폭](해설_notes/피드백과대역폭_feedback.md) · [English](해설_notes/피드백과대역폭_feedback.md#english)

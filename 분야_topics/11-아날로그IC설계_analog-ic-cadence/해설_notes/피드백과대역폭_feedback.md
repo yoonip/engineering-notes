@@ -1,4 +1,4 @@
-# 피드백을 걸면 이득과 대역폭은 어떻게 바뀝니까
+# 피드백에 따른 이득과 대역폭 | Feedback gain and bandwidth
 
 [아날로그 IC 목차](../README.md) · [실행 코드](../../../예제_examples/심화_advanced/hardware/models.py) · [검산](../../../예제_examples/심화_advanced/hardware/test_models.py)
 
