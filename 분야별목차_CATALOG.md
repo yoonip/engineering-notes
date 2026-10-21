@@ -4,7 +4,7 @@
 
 논문은 계산 이론·시스템·AI·전자공학에서 뇌신경·생명공학·소재·우주 연구로 이어집니다. 제품 리뷰는 [반도체·산업 컴퓨팅](제품리뷰_reviews/반도체와산업컴퓨팅_chips-industrial/README.md), [기기·모빌리티](제품리뷰_reviews/기기와모빌리티_devices-mobility/README.md), [AI·로봇](제품리뷰_reviews/AI와로봇_ai-robotics/README.md), [우주·운송](제품리뷰_reviews/우주와운송_space-transport/README.md), [방산 전자](제품리뷰_reviews/방산전자_defense-electronics/README.md), [의약품·생명공학](제품리뷰_reviews/의약품과생명공학_biomedical/README.md)으로 나누었습니다. 실제 본문에서 용어와 원리·비교 근거를 함께 읽으실 수 있습니다.
 
-철학은 [기본 개념 아홉 장](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)에서 질문·실재·지식·윤리·마음·정치적 정당성과 수양의 개념을 익힙니다. 대표 논증과 [최근 AI 연구 비교](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)는 각 개념의 근거와 반론을 더 읽는 자료입니다.
+철학은 [기본 개념과 대표 입장](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)에서 질문·실재·지식·윤리·마음·정치적 정당성과 수양의 개념을 익힙니다. 대표 논증과 [최근 AI 연구 비교](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)는 각 개념의 근거와 반론을 더 읽는 자료입니다.
 
 | 이어서 읽을 분야 | 논문 해설 | 제품·산업 분석 |
 |---|---|---|
@@ -22,9 +22,9 @@
 
 ## 계측·디버깅·설계 검증 | Measurement, debugging and validation
 
-[현장 계측과 검증](현장계측과검증_measurement-validation/README.md)은 계측기 9개 모델의 사용 절차, DMA·캐시, Cortex-M 예외, PVT·shmoo, CAN·EtherCAT·Modbus, SCPI 자동화를 다룹니다. [업무 질문별 읽는 순서](현장계측과검증_measurement-validation/README.md#업무-질문에서-시작하기)는 C/C++·펌웨어·RTL·AI·Python의 기존 구현으로 이어집니다.
+[현장 계측과 검증](현장계측과검증_measurement-validation/README.md)은 계측기의 특성과 사용 절차, DMA·캐시, Cortex-M 예외, PVT·shmoo, CAN·EtherCAT·Modbus, SCPI 자동화를 다룹니다. [업무별 읽기 경로](현장계측과검증_measurement-validation/README.md#업무별-읽기-경로)는 C/C++·펌웨어·RTL·AI·Python의 기존 구현으로 이어집니다.
 
-[설계와 검증 사례](설계와검증사례_engineering-cases/README.md)는 C/C++의 길이·소유권, 펌웨어 공개 순서, RTOS 동시성, 인터럽트·DMA·캐시, CAN·SPI·I2C·UART·이더넷, 워치독·리셋, USB·PCIe, 부트로더·업데이트, NVMe·eMMC·SD, 저널 복구, NAND 관리, FTL 매핑, 파일시스템 복구, 백업 복원, RAID, I/O 재시도, ECC, DDR, RTL·CDC와 기준 모델, 칩 산술·시험 ID·자동화, AI 배포·평가와 경보 정밀도, FPGA·SQLite의 42개 사례를 실제 코드·원인·해결·실행 기록으로 설명합니다. 장비 사양·구성한 계산·로컬 실행·실측의 범위는 각 본문에 구분해 두었습니다.
+[설계와 검증 사례](설계와검증사례_engineering-cases/README.md)는 C/C++의 길이·소유권, 펌웨어 공개 순서, RTOS 동시성, 인터럽트·DMA·캐시, CAN·SPI·I2C·UART·이더넷, 워치독·리셋, USB·PCIe, 부트로더·업데이트, NVMe·eMMC·SD, 저널 복구, NAND 관리, FTL 매핑, 파일시스템 복구, 백업 복원, RAID, I/O 재시도, ECC, DDR, RTL·CDC와 기준 모델, 칩 산술·시험 ID·자동화, AI 배포·평가와 경보 정밀도, FPGA·SQLite의 오류와 설계 판단을 실제 코드·원인·해결·실행 기록으로 설명합니다. 장비 사양·구성한 계산·로컬 실행·실측의 범위는 각 본문에 구분해 두었습니다.
 
 ## 개발 환경과 언어 | Development environments and languages
 
@@ -65,7 +65,7 @@
 | 분야 | 실제 해설 |
 | --- | --- |
 | [Verilog·SystemVerilog·RTL](분야_topics/13-RTL설계_verilog-systemverilog/README.md)<br>Verilog, SystemVerilog & RTL | [FSM과 FIFO: 요청과 실제 전송을 구분하기](분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md)<br>[고정소수점 곱셈: 비트 폭, 반올림, 포화를 따로 결정하기](분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/고정소수점의경계_fixed-point.md) |
-| [하드웨어 검증](분야_topics/14-하드웨어검증_hardware-verification/README.md)<br>Hardware Verification | [검증에서 무엇을 확인했습니까: assertion, coverage와 formal](분야_topics/14-하드웨어검증_hardware-verification/해설_notes/검증에서무엇을확인했는가_assertions-coverage-formal.md)<br>[개수는 맞아도 순서가 다른 경우: 작은 모델의 전수검사](분야_topics/14-하드웨어검증_hardware-verification/해설_notes/불변식의빈틈_model-checking.md) |
+| [하드웨어 검증](분야_topics/14-하드웨어검증_hardware-verification/README.md)<br>Hardware Verification | [Assertion·coverage·formal의 검증 범위](분야_topics/14-하드웨어검증_hardware-verification/해설_notes/검증에서무엇을확인했는가_assertions-coverage-formal.md)<br>[개수는 맞아도 순서가 다른 경우: 작은 모델의 전수검사](분야_topics/14-하드웨어검증_hardware-verification/해설_notes/불변식의빈틈_model-checking.md) |
 | [FPGA·ASIC 설계](분야_topics/15-FPGA-ASIC설계_fpga-asic/README.md)<br>FPGA & ASIC Design | [너무 늦거나 빠른 신호의 문제: setup·hold와 STA](분야_topics/15-FPGA-ASIC설계_fpga-asic/해설_notes/너무늦어도너무빨라도문제다_setup-hold-static-timing.md)<br>[여러 주기를 쓰는 경로: multicycle과 hold 관계](분야_topics/15-FPGA-ASIC설계_fpga-asic/해설_notes/여러주기를쓰는경로_multicycle.md) |
 | [Arm·RISC-V와 프로세서 구조](분야_topics/16-프로세서구조_arm-riscv/README.md)<br>Arm, RISC-V & Computer Architecture | [명령어가 보는 메모리: ISA, byte 순서와 load/store](분야_topics/16-프로세서구조_arm-riscv/해설_notes/명령어가보는메모리_isa-byte-order-load-store.md)<br>[페이지 안에서 캐시를 찾기: VIPT와 alias 조건](분야_topics/16-프로세서구조_arm-riscv/해설_notes/페이지안의캐시인덱스_vipt.md) |
 | [메모리와 저장장치](분야_topics/33-메모리저장장치_memory-storage/README.md)<br>Memory & Storage Systems | [SRAM을 읽을 때 저장 노드가 올라가는 이유](분야_topics/33-메모리저장장치_memory-storage/해설_notes/SRAM읽기교란_read-disturb.md)<br>[메모리 지역성과 캐시: 평균 지연과 대역폭을 나눠 보기](분야_topics/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md) |
@@ -102,7 +102,7 @@
 | --- | --- |
 | [AI·머신러닝·딥러닝](분야_topics/23-AI머신러닝_ai-machine-learning/README.md)<br>AI, Machine Learning & Deep Learning | [작은 MLP로 역전파를 끝까지 계산하기](분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/다층신경망역전파_mlp-backprop.md)<br>[미분에서 학습까지: 모델이 바뀌는 이유](분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md) |
 | [AI 모델과 API](분야_topics/26-AI모델-API_open-model-lab/README.md)<br>AI Providers, Public Models & APIs | [모델 파일에서 다음 토큰까지: 가중치, 토큰화, sampling](분야_topics/26-AI모델-API_open-model-lab/해설_notes/모델파일에서다음토큰까지_weights-tokenizers-and-sampling.md)<br>[Beam search의 목적함수와 KV cache의 메모리 예산](분야_topics/26-AI모델-API_open-model-lab/해설_notes/빔탐색과캐시예산_beam-cache-budget.md) |
-| [컴퓨터 비전과 영상 처리](분야_topics/43-컴퓨터비전_computer-vision/README.md)<br>Computer Vision & Image Processing | [Bilinear warp: 없는 pixel 사이의 값을 어떻게 계산할까요](분야_topics/43-컴퓨터비전_computer-vision/해설_notes/역매핑과쌍선형보간_bilinear-warp.md)<br>[카메라 모델, 영상 필터, CV 검증](분야_topics/43-컴퓨터비전_computer-vision/해설_notes/카메라모델영상필터CV검증_camera-filtering-and-validation.md) |
+| [컴퓨터 비전과 영상 처리](분야_topics/43-컴퓨터비전_computer-vision/README.md)<br>Computer Vision & Image Processing | [역매핑과 쌍선형 보간 / Inverse mapping and bilinear interpolation](분야_topics/43-컴퓨터비전_computer-vision/해설_notes/역매핑과쌍선형보간_bilinear-warp.md)<br>[카메라 모델, 영상 필터, CV 검증](분야_topics/43-컴퓨터비전_computer-vision/해설_notes/카메라모델영상필터CV검증_camera-filtering-and-validation.md) |
 | [언어·음성·멀티모달 AI](분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/README.md)<br>Language, Speech & Multimodal AI | [Attention: 필요한 정보를 가중합으로 모으기](분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md)<br>[Attention의 역전파와 causal KV cache 검증](분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션역전파와캐시_attention-gradients.md) |
 | [AI 학습과 최적화](분야_topics/45-AI학습최적화_ai-training-optimization/README.md)<br>AI Training, Optimization & Compression | [Adam의 상태, bias correction과 학습 재개](분야_topics/45-AI학습최적화_ai-training-optimization/해설_notes/Adam상태와재시작_adam-state.md)<br>[학습의 계산과 평가: loss, batch, 학습률, data leakage](분야_topics/45-AI학습최적화_ai-training-optimization/해설_notes/학습의계산과평가_loss-batches-schedules-and-leakage.md) |
 | [AI 응용·에이전트·평가](분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md)<br>AI Applications, Agents & Evaluation | [RAG와 도구 실행: 검색, 근거, 평가의 경계](분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md)<br>[Macro·micro 지표와 평가의 불확실성](분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/평가지표와불확실성_metrics-uncertainty.md) |

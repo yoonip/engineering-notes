@@ -7,9 +7,9 @@
 | 분야 | 내용 |
 | --- | --- |
 | [현장 계측과 검증](현장계측과검증_measurement-validation/README.md) | 오실로스코프·DMM·SMU·로직 분석기·전원/전자부하·LCR·스펙트럼·네트워크 분석기, DMA·고장 추적·PVT·통신·자동화 |
-| [설계와 검증 사례](설계와검증사례_engineering-cases/README.md) | C/C++·RTOS·인터럽트·DMA·통신·저장장치·파일시스템·RTL·칩·AI·데이터의 42개 사례: 실제 코드, 오류 재현, 원인·해결과 날짜별 검증 기록 |
+| [설계와 검증 사례](설계와검증사례_engineering-cases/README.md) | C/C++·RTOS·인터럽트·DMA·통신·저장장치·파일시스템·RTL·칩·AI·데이터의 오류 분석: 실제 코드, 오류 재현, 원인·해결과 날짜별 검증 기록 |
 
-C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무 질문별 읽는 순서](현장계측과검증_measurement-validation/README.md#업무-질문에서-시작하기)로 찾아보실 수 있습니다.
+C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 읽기 경로](현장계측과검증_measurement-validation/README.md#업무별-읽기-경로)로 찾아보실 수 있습니다.
 
 ## 학습 분야
 
@@ -17,9 +17,9 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무 질�
 | --- | --- |
 | [공학 기초](공학기초_foundations/README.md) | 수학·물리·회로·시스템·AI의 기초, 분야별 학습과 심화 계산 |
 | [공학 분야별 해설](분야_topics/README.md) | 소프트웨어, 회로·반도체, 임베디드·제어, GPU·AI |
-| [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md) | 문해력·논리·논증, [실제 수능·LEET 11문항 분석](언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)과 자체 연습 |
-| [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md) | [영어 기초 8단원·64개 연습](외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), 외국어 학습 방법과 기술 문서 읽기 |
-| [인문사회](인문사회_humanities/README.md) | [철학 기본 개념 9장](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), 경제, 사회·제도, 법의 권리·사실·절차·판결 |
+| [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md) | 문해력·논리·논증, [수능·LEET 기출 분석](언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)과 자체 연습 |
+| [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md) | [영어 기초와 문법 연습](외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), 외국어 학습 방법과 기술 문서 읽기 |
+| [인문사회](인문사회_humanities/README.md) | [철학의 주요 개념](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), 경제, 사회·제도, 법의 권리·사실·절차·판결 |
 | [음악의 기초와 듣기](인문사회_humanities/63-음악기초와듣기_music-foundations-listening/README.md) | 박·리듬·음정·조율·선율·화음·형식을 자체 음열과 계산으로 익힙니다. |
 | [역사와 사료 읽기](인문사회_humanities/64-역사와사료_history-sources/README.md) | 사료의 작성 시점과 목적을 확인하고 교역·산업화·한국 근대사를 자료와 인과의 질문으로 읽습니다. |
 | [문학과 작품 읽기](인문사회_humanities/65-문학과작품읽기_literature-reading/README.md) | 작가·서술자·화자, 시의 행갈이, 소설의 시간, 희곡의 행동을 짧은 작품과 해석의 근거로 공부합니다. |
@@ -30,10 +30,10 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무 질�
 
 | 분야 | 내용 |
 | --- | --- |
-| [논문 해설](논문해설_papers/README.md) | 220편의 한국어 해설: 컴퓨팅·AI·전자·생명·산업, 마음·자유의지·인격 동일성과 계산 예제 |
+| [논문 해설](논문해설_papers/README.md) | 한국어로 읽는 연구의 배경·원리·근거: 컴퓨팅·AI·전자·생명·산업, 마음·자유의지·인격 동일성과 계산 예제 |
 | [기술 동향](기술동향_technology/README.md) | 날짜와 근거를 갖춘 기술 현황, 표준과 벤치마크의 변화 |
-| [제품과 기술 리뷰](제품리뷰_reviews/README.md) | 71편의 기술·산업 분석: 원리·경쟁 방식·공급망·표준·사업 모델·전환 비용 |
-| [AI 모델 실험](AI모델실험_model-lab/README.md) | 공급사별 모델 분석, 구조·배포 방식, CPU 계산 실험 |
+| [제품과 기술 리뷰](제품리뷰_reviews/README.md) | 제품·서비스의 기술과 산업 분석: 원리·경쟁 방식·공급망·표준·사업 모델·전환 비용 |
+| [AI 모델 자료](AI모델실험_model-lab/README.md) | 공식 자료를 바탕으로 정리한 모델 구조·공개 범위와 별도의 교육용 수치 예제 |
 
 [의공학과 의료 AI](분야_topics/62-의공학의료AI_medical-engineering/README.md)는 의료영상·진단, 신경보철·재활, AI 신약 연구를 측정·계산·임상 근거로 연결하는 학습 경로입니다.
 
@@ -44,7 +44,7 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무 질�
 | 분야 | 내용 |
 | --- | --- |
 | [프로젝트](프로젝트_projects/README.md) · [실행 예제](예제_examples/README.md) | 소스, 실행 방법, 검증 결과 |
-| [알고리즘과 코딩테스트](programmers/README.md) | 프로그래머스 정답 672개와 풀이·문법 설명, 미완료 시도 분석 |
+| [알고리즘과 코딩테스트](programmers/README.md) | 프로그래머스 제출 코드와 풀이·문법 설명, 미완료 시도 분석 |
 | [연구 기록](연구_research/README.md) | 참여 연구, 논문, 학술 활동과 수상 |
 | [작성자 소개](소개_about/README.md) · [연락](소개_about/연락_CONTACT.md) | 학력, 관심 분야, 협업 연락처 |
 
@@ -69,10 +69,10 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무 질�
 These notes connect circuits, semiconductors, RTL, firmware, systems software, GPUs and AI. They pair explanations with equations, implementations and recorded checks. Reading comprehension and argument reasoning, foreign languages, and humanities have separate reading paths.
 
 - Learning: [Engineering foundations](공학기초_foundations/README.md#english), [technical topics](분야_topics/README.md), [reading and argument reasoning](언어이해와추리논증_reading-reasoning/README.md), [foreign languages and technical English](외국어와기술영어_foreign-languages/README.md), [humanities](인문사회_humanities/README.md).
-- Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [product and technology reviews](제품리뷰_reviews/README.md), [AI model lab](AI모델실험_model-lab/README.md).
+- Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [product and technology reviews](제품리뷰_reviews/README.md), [AI model references](AI모델실험_model-lab/README.md).
 - Practical work: [Measurement and debugging](현장계측과검증_measurement-validation/README.md), [engineering cases and dated checks](설계와검증사례_engineering-cases/README.md).
 
-- Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [672 Programmers solutions](programmers/README.md).
+- Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [Programmers solutions](programmers/README.md).
 - Background: [Research](연구_research/README.md), [author](소개_about/README.md), [contact](소개_about/연락_CONTACT.md), [tools](도구와환경_tools/README.md), [references](참고자료_references/README.md), [contributing](기여안내_contributing/README.md).
 
 ### Engineering and shared knowledge
