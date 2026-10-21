@@ -22,7 +22,7 @@
 
 ## 이진 탐색의 경계
 
-아래 함수는 정렬된 배열에서 `target` 이상인 첫 위치를 찾습니다. 답이 항상 반열린 구간 `[left, right)`의 경계로 남도록 범위를 줄입니다.
+아래 함수는 정렬된 배열에서 `target` 이상인 첫 위치를 찾습니다. 아직 비교하지 않은 원소의 구간은 `[left, right)`이며, 반환할 삽입 위치는 양 끝을 포함한 `[left, right]` 안에 남도록 범위를 줄입니다. 모든 원소가 `target`보다 작으면 배열 끝인 `len(values)`를 반환합니다. 이는 Python [`bisect_left`의 삽입 위치 정의](https://docs.python.org/3/library/bisect.html#bisect.bisect_left)와 같습니다.
 
 ```python
 def lower_bound(values, target):
@@ -48,9 +48,9 @@ def lower_bound(values, target):
 
 ## Programmers 풀이
 
-[프로그래머스 풀이 672개](../../programmers/README.md)를 문제 번호와 공식 링크로 정리했습니다. 레벨 2~4의 309문제에는 조건, 풀이 설명, 대안 구현과 검증 코드가 있습니다. 레벨 0·1과 레벨 5의 363문제에는 제출 코드 전체의 줄별 문법 설명과 짧은 풀이를 적었습니다. 레벨 5의 시간 초과 시도는 별도 분석으로 남겼습니다.
+[프로그래머스 풀이](../../programmers/README.md)는 문제 번호와 공식 링크로 찾아볼 수 있습니다. 문제별 문서에는 제출 코드와 줄별 문법 설명, 풀이 원리를 담았습니다. 대안 구현과 검증 코드의 제공 여부, 제출 결과는 각 문서에서 확인할 수 있습니다. 레벨 5의 시간 초과 시도는 별도 분석으로 남겼습니다.
 
-[672 archived Programmers solutions](../../programmers/README.md) include 309 Level 2–4 study notes with conditions, explanations, alternatives and executable checks. The other 363 entries at Levels 0, 1 and 5 preserve submitted code with Korean line-by-line syntax notes and short method explanations. A failed Level 5 attempt has a separate timeout analysis.
+[Archived Programmers solutions](../../programmers/README.md) are indexed by problem number and official link. Individual notes contain submitted code, Korean line-by-line explanations and solution methods. Available alternatives, executable checks and submission results are recorded in each note. A failed Level 5 attempt has a separate timeout analysis.
 
 ## 기초 해설
 
@@ -78,9 +78,9 @@ BFS with adjacency lists and a visited array takes `O(V+E)` for `V` vertices and
 
 ### Binary-search boundaries
 
-The function above returns the first position whose value is at least `target` in a sorted array. It narrows a half-open search range, `[left, right)`, until the boundary is found. For `[1, 3, 3, 7]`, targets 3, 4, and 8 return indices 1, 3, and 4. Time complexity is `O(log n)` and extra space is `O(1)`. Empty arrays, duplicates, and targets outside the data range exercise its boundary handling.
+The function above returns the first position whose value is at least `target` in a sorted array. Unexamined elements occupy `[left, right)`, while the insertion position remains in the inclusive interval `[left, right]`. The return value can be `len(values)` when every element is smaller than the target. For `[1, 3, 3, 7]`, targets 3, 4, and 8 return indices 1, 3, and 4. Time complexity is `O(log n)` and extra space is `O(1)`. Empty arrays, duplicates, and targets outside the data range exercise its boundary handling.
 
-Application-related records are kept in [Applications and assessments](../../소개_about/지원기록_APPLICATIONS.md). The [672 archived solutions](../../programmers/README.md) are organized by level and problem number, with language and grading records kept alongside the code and explanation.
+Application-related records are kept in [Applications and assessments](../../소개_about/지원기록_APPLICATIONS.md). The [archived solutions](../../programmers/README.md) are organized by level and problem number, with language and grading records kept alongside the code and explanation.
 
 ### Foundation article
 
