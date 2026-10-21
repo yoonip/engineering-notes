@@ -14,7 +14,7 @@ $$\mu=E[X]=\sum_x xp(x),\qquad \sigma^2=E[(X-\mu)^2].$$
 
 연속형에서는 합 대신 확률밀도에 대한 적분을 씁니다. $`X`$가 V 단위라면 평균과 표준편차는 V, 분산은 V²입니다. 이 글은 유한한 평균과 분산을 가진 같은 분포의 독립 표본을 기본 모델로 삼습니다. 추정량과 표본분포의 구분은 [MIT 18.05 통계 자료](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_statistics.pdf)에서 확인할 수 있습니다.
 
-### 왜 평균의 흔들림은 제곱근으로 줄어듭니까
+### 표본 수와 평균의 표준오차
 
 $`\bar X=(X_1+\cdots+X_n)/n`$의 기댓값은 $`\mu`$입니다. 독립이면 공분산이 0이므로
 
