@@ -6,7 +6,7 @@
 
 ### 표면 온도가 같아도 내부 온도는 다를 수 있습니다
 
-작은 die는 빨리 뜨거워지고 큰 package·board는 더 천천히 온도가 변할 수 있습니다. 한 개의 thermal RC는 한 가지 완화 시간만 표현하므로 이런 차이를 놓칩니다. 두 노드 모델은 열을 저장하는 곳을 두 개로 나누고 그 사이의 열 흐름을 따로 계산합니다. 전기 RC처럼 식을 쓰지만, 전압은 온도 차, 전류는 열유속에 대응합니다.
+작은 die는 빨리 뜨거워지고 큰 package·board는 더 천천히 온도가 변할 수 있습니다. 한 개의 thermal RC는 한 가지 완화 시간만 표현하므로 이런 차이를 놓칩니다. 두 노드 모델은 열을 저장하는 곳을 두 개로 나누고 그 사이의 열 흐름을 따로 계산합니다. 전기 RC처럼 식을 쓰지만, 전압은 온도 차, 전류는 열전달률(W)에 대응합니다.
 
 [ADI의 transient thermal analysis](https://www.analog.com/en/resources/technical-articles/use-thermal-analysis-to-predict-an-ics-transient-behavior-and-avoid-overheating.html)는 내부 층을 나눈 열망을 설명합니다. [TI thermal dynamics](https://www.ti.com/video/6243719539001)는 thermal capacitance와 RC 모델의 역할을 설명합니다. 이 글의 R·C는 교육용 가정이며 어떤 package의 데이터시트에서 추출한 값이 아닙니다.
 
