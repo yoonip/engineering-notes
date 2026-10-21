@@ -1,5 +1,7 @@
 # 모음 제거
 
+[Level 0 목록 / Level 0 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/120849) · Level 0 · Python3
 
 ## 풀이

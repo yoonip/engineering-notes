@@ -1,5 +1,7 @@
 # 전국 대회 선발 고사
 
+[Level 0 목록 / Level 0 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/181851) · Level 0 · Python3
 
 ## 풀이

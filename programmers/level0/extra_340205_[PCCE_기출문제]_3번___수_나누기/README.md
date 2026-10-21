@@ -1,5 +1,7 @@
 # [PCCE 기출문제] 3번 / 수 나누기
 
+[Level 0 목록 / Level 0 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/340205) · Level 0 · Python3
 
 유형: 기초 문법 · 반복 · 자릿수
