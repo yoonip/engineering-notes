@@ -1,4 +1,4 @@
-# 증거는 믿음을 어떻게 바꿉니까: 모형 비교와 Bayes factor
+# 증거와 믿음의 관계: 모형 비교와 베이즈 요인
 
 [분야 목차](../README.md) · [계산 구현](../../../예제_examples/심화_advanced/math_reasoning/models.py) · [검증](../../../예제_examples/심화_advanced/math_reasoning/test_models.py)
 
@@ -20,7 +20,7 @@
 \frac{P(M_0)}{P(M_1)}.
 ```
 
-첫 비율이 Bayes factor입니다. 이것은 사후확률 자체가 아니라 사전 odds에 곱하는 증거의 배율입니다. 로그로 계산하면 곱셈이 덧셈으로 바뀝니다. 모형 안에 미지의 매개변수가 있으면, 가장 잘 맞는 한 값의 likelihood만 고르지 않고 사전분포 전체에 대해 평균합니다.
+오른쪽의 첫 번째 비율 $`P(D\mid M_0)/P(D\mid M_1)`$이 베이즈 요인(Bayes factor)입니다. 이것은 사후확률 자체가 아니라 사전 odds에 곱하는 증거의 배율입니다. 로그로 계산하면 곱셈이 덧셈으로 바뀝니다. 모형 안에 미지의 매개변수가 있으면, 가장 잘 맞는 한 값의 likelihood만 고르지 않고 사전분포 전체에 대해 평균합니다.
 
 ```math
 P(D\mid M)=\int P(D\mid\theta,M)\,p(\theta\mid M)\,d\theta.
