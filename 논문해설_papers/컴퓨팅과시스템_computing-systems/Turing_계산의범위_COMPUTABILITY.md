@@ -2,7 +2,7 @@
 
 대상 논문은 A. M. Turing의 「On Computable Numbers, with an Application to the Entscheidungsproblem」입니다. [원문](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf)의 접수일은 1936년 5월 28일, 학회 발표일은 1936년 11월 12일입니다. 학술지 서지는 Proceedings of the London Mathematical Society, s2-42, pp.230–265, 1937년입니다. [출판사 기록](https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/plms/s2-42.1.230)의 게재 연도와 접수 연도를 구분합니다.
 
-## 계산을 하는 사람에게 무엇이 필요합니까
+## 계산 과정의 규칙과 기록
 
 종이에 긴 나눗셈을 한다고 생각해 보겠습니다. 현재 보고 있는 자리, 종이에 쓴 숫자, 다음에 해야 할 규칙을 기억하면 한 단계를 진행할 수 있습니다. 이 설명에서 사람의 직관을 빼고도 계산을 표현할 수 있는지 묻는 것이 출발점입니다.
 

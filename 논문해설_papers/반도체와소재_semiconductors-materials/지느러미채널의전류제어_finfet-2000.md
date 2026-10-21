@@ -6,7 +6,8 @@
 | 저자 | Digh Hisamoto, Wen-Chin Lee, Jakub Kedzierski, Hideki Takeuchi, Kazuya Asano, Charles Kuo, Erik Anderson, Tsu-Jae King, Jeffrey Bokor, Chenming Hu |
 | 발표 | IEEE Transactions on Electron Devices 47(12), 2320–2325쪽, 2000년 12월 |
 | 연구 기관 | Hitachi, UC Berkeley, Lawrence Berkeley National Laboratory |
-| 읽을 곳 | [DOI](https://doi.org/10.1109/16.887014), [저자 Chenming Hu가 공개한 본문](https://www.researchgate.net/publication/3064204_FinFET-a_self-aligned_double-gate_MOSFET_scalable_to_20_nm) |
+| 읽을 곳 | [DOI](https://doi.org/10.1109/16.887014), [저자 Chenming Hu가 공개한 출판본](https://www.researchgate.net/publication/3064204_FinFET-a_self-aligned_double-gate_MOSFET_scalable_to_20_nm) |
+| 판본 확인 | 공개 본문의 IEEE 조판 머리글과 [공동저자의 Berkeley 서지](https://people.eecs.berkeley.edu/~tking/selectedpubs.html)를 2026-10-21에 대조했습니다. 학술지 권호는 2000년 12월이며, ResearchGate 페이지의 January 2001 표기를 발표 연도로 사용하지 않습니다. |
 | 원문 위치 | §I 문제, §II 구조·제작, §III-A 소자 특성, §III-B 게이트 재료, §III-C 자기정렬·여러 핀, §IV 결론 |
 
 ## 1. 왜 평평한 트랜지스터를 바꾸었나요?

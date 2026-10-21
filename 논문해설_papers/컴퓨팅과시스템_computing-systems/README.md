@@ -4,18 +4,18 @@
 
 ## 읽을 글
 
-| 순서 | 논문·발표 시점 | 살펴볼 질문 | 해설 |
+| 순서 | 논문·발표 시점 | 핵심 내용 | 해설 |
 | --- | --- | --- | --- |
-| 1 | Turing, 1936년 접수·발표 / 1937년 학술지 게재 | 규칙을 실행하는 기계와 모든 문제를 판정하는 기계는 어떻게 다릅니까? | [계산의 범위](Turing_계산의범위_COMPUTABILITY.md) |
-| 2 | Codd, 1970 | 저장 순서가 바뀌어도 질문의 뜻을 유지하려면 어떻게 해야 합니까? | [관계 모형](Codd_관계모형_RELATIONAL_MODEL.md) |
-| 3 | Cerf·Kahn, 1974 | 전달 규칙이 다른 망들을 어떻게 연결합니까? | [망 사이의 통신](CerfKahn_망간통신_INTERNETWORKING.md) |
-| 4 | Diffie·Hellman, 1976 | 비밀을 직접 보내지 않고 같은 값을 얻을 수 있습니까? | [공유 비밀과 인증](DiffieHellman_공유비밀_KEY_AGREEMENT.md) |
-| 5 | Lamport, 1978 | 서로 다른 컴퓨터에서 일어난 사건의 순서를 무엇으로 판단합니까? | [논리 시계](Lamport_사건의순서_LOGICAL_CLOCKS.md) |
-| 6 | Ghemawat·Gobioff·Leung, 2003 | 큰 파일의 위치·내용·복제는 누가 관리합니까? | [Google File System](GFS_큰파일과복제_GOOGLE_FILE_SYSTEM.md) |
-| 7 | Dean·Ghemawat, 2004 | 나눈 계산의 중간 결과와 실패한 작업을 어떻게 다룹니까? | [MapReduce](MapReduce_데이터분할_MAPREDUCE.md) |
-| 8 | DeCandia 외, 2007 | 응답을 이어 가면서 갈라진 데이터 버전을 어떻게 다룹니까? | [Dynamo](Dynamo_복제와충돌_DYNAMO.md) |
+| 1 | Turing, 1936년 접수·발표 / 1937년 학술지 게재 | 계산 모형과 판정 가능성 | [계산의 범위](Turing_계산의범위_COMPUTABILITY.md) |
+| 2 | Codd, 1970 | 저장 구조와 독립적인 관계형 데이터 질의 | [관계 모형](Codd_관계모형_RELATIONAL_MODEL.md) |
+| 3 | Cerf·Kahn, 1974 | 서로 다른 네트워크 간 패킷 전달 | [망 사이의 통신](CerfKahn_망간통신_INTERNETWORKING.md) |
+| 4 | Diffie·Hellman, 1976 | 공개 채널에서의 공유 비밀과 인증 | [공유 비밀과 인증](DiffieHellman_공유비밀_KEY_AGREEMENT.md) |
+| 5 | Lamport, 1978 | 분산 사건의 인과 순서와 논리 시계 | [논리 시계](Lamport_사건의순서_LOGICAL_CLOCKS.md) |
+| 6 | Ghemawat·Gobioff·Leung, 2003 | 파일 메타데이터와 청크 복제 | [Google File System](GFS_큰파일과복제_GOOGLE_FILE_SYSTEM.md) |
+| 7 | Dean·Ghemawat, 2004 | 분할 계산의 중간 결과와 실패한 작업의 재실행 | [MapReduce](MapReduce_데이터분할_MAPREDUCE.md) |
+| 8 | DeCandia 외, 2007 | 복제 데이터의 동시 갱신과 버전 충돌 | [Dynamo](Dynamo_복제와충돌_DYNAMO.md) |
 
-앞의 다섯 글은 각 개념의 전제를 읽는 데 도움이 됩니다. 뒤의 세 글은 저장 사본, 계산 작업, 데이터 버전이라는 서로 다른 단위의 장애 처리를 비교하기 좋습니다. 파일 복제가 작업의 중복 실행까지 막아 주거나, 사건 정렬이 합의까지 해결해 주는 것은 아닙니다.
+계산 모형·관계 모형·통신·키 합의·논리 시계는 각 개념의 전제를 읽는 데 도움이 됩니다. GFS·MapReduce·Dynamo는 저장 사본, 계산 작업, 데이터 버전이라는 서로 다른 단위의 장애 처리를 비교하기 좋습니다. 파일 복제가 작업의 중복 실행까지 막아 주거나, 사건 정렬이 합의까지 해결해 주는 것은 아닙니다.
 
 ## 예제와 논문 결과의 구분
 

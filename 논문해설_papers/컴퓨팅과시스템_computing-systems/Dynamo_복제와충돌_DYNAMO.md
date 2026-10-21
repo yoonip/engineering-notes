@@ -2,7 +2,7 @@
 
 「Dynamo: Amazon's Highly Available Key-value Store」는 Giuseppe DeCandia·Deniz Hastorun·Madan Jampani·Gunavardhan Kakulapati·Avinash Lakshman·Alex Pilchin·Swaminathan Sivasubramanian·Peter Vosshall·Werner Vogels가 작성한 SOSP 2007 논문입니다. [Amazon의 서지 안내](https://www.amazon.science/publications/dynamo-amazons-highly-available-key-value-store)와 [저자 공개 원문](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)을 기준으로 읽습니다. 주요 위치는 §4.4의 버전, §§4.5–4.6의 읽기·쓰기와 대체 복제, §6의 경험·평가입니다.
 
-## 일부 서버가 멈추면 변경도 전부 멈춰야 합니까
+## 일부 서버의 장애와 쓰기 가용성
 
 같은 장바구니를 여러 서버에 보관한다고 생각해 보겠습니다. 연결이 끊긴 동안 한쪽에서는 물건을 추가하고 다른 쪽에서는 삭제할 수 있습니다. 계속 응답하려면 변경을 받아 둘 수 있지만, 나중에 어떤 결과를 합칠지 문제가 남습니다.
 

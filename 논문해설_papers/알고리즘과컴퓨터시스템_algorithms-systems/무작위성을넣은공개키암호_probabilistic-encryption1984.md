@@ -7,7 +7,7 @@
 | 논문 | Shafi Goldwasser, Silvio Micali, Probabilistic Encryption |
 | 발표 | Journal of Computer and System Sciences 28(2), 1984년, 270–299쪽. 1982년 STOC 발표와 구분한 저널판입니다. |
 | 소속과 수행 장소 | 표제는 MIT Laboratory for Computer Science입니다. 각주는 Berkeley 재학 중 연구, 원고 준비 당시 Goldwasser는 MIT·Micali는 Toronto였다고 구분합니다. |
-| 원문 | [저자 공개 PDF](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Encryption/Probabilistic_Encryption.pdf) |
+| 원문 | [출판사·DOI](https://doi.org/10.1016/0022-0000(84)90070-9), [저자 공개 PDF](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Encryption/Probabilistic_Encryption.pdf) |
 | 읽을 위치 | §1–2 결정적 암호화의 부족함, §3–4 술어와 구성, §5 구별·의미론적 안전성, §6 수론 가정, §7 공격자와 정의의 범위입니다. |
 
 ## 맞힐 확률의 기준선

@@ -4,7 +4,7 @@
 |---|---|
 | 논문 | The Case for the Reduced Instruction Set Computer |
 | 저자·발표 | David A. Patterson·David R. Ditzel, ACM SIGARCH Computer Architecture News 8(6), 25–33쪽, 1980년 10월 |
-| 원문 | [Berkeley에서 제공하는 원문 PDF](https://people.eecs.berkeley.edu/~kubitron/courses/cs252-F00/handouts/papers/patterson80.pdf) · [저자 소속 대학의 서지 목록](https://www2.eecs.berkeley.edu/Pubs/Faculty/patterson.html) |
+| 원문 | [출판사·DOI](https://doi.org/10.1145/641914.641917) · [Berkeley에서 제공하는 원문 PDF](https://people.eecs.berkeley.edu/~kubitron/courses/cs252-F00/handouts/papers/patterson80.pdf) · [저자 소속 대학의 서지 목록](https://www2.eecs.berkeley.edu/Pubs/Faculty/patterson.html) |
 | 확인 위치 | 25쪽 서론·복잡화 이유, 27쪽 CISC 사용·구현, 28–29쪽 RISC and VLSI·Speed·면적, 29–31쪽 고급언어·진행 중 연구·결론 |
 | 정오표 | PDF 9쪽·인쇄 33쪽이 정오표입니다. 본문 각주를 인용할 때 함께 확인해야 합니다. |
 

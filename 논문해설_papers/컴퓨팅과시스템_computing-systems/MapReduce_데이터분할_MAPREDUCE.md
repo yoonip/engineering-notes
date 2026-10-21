@@ -2,7 +2,7 @@
 
 Jeffrey Dean과 Sanjay Ghemawat의 「MapReduce: Simplified Data Processing on Large Clusters」는 OSDI 2004에서 발표되었습니다. [USENIX 행사 기록](https://www.usenix.org/legacy/event/osdi04/tech/dean.html)은 proceedings pp.137–150을 안내합니다. 이 해설의 절 위치는 [Google 공개 원문](https://research.google.com/archive/mapreduce-osdi04.pdf)의 §2 프로그래밍 모형, §3 구현·장애 처리, §4.3 combiner, §5 평가입니다.
 
-## 여러 컴퓨터가 계산하면 누가 중간을 정리합니까
+## 분할 계산의 중간 결과와 작업 관리
 
 자료를 나누어 주는 것만으로 병렬 계산이 끝나지는 않습니다. 같은 대상을 센 결과가 여러 곳에서 나오면 합쳐야 하고, 작업자가 멈추면 다시 맡겨야 합니다. 느린 작업 하나가 전체 완료를 늦추는 문제도 있습니다.
 

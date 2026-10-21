@@ -6,7 +6,8 @@
 | 저자 | T. S. Böscke, J. Müller, D. Bräuhaus, U. Schröder, U. Böttger |
 | 발표 | Applied Physics Letters 99, 102903, 2011년 9월 8일 |
 | 연구 배경 | Fraunhofer CNT, RWTH Aachen, NaMLab 등이 참여했습니다. 초기 실험 당시 Qimonda 소속에 관한 주석은 원문 첫 쪽에 있습니다. |
-| 원문 | [DOI](https://doi.org/10.1063/1.3634052), [저자가 공개한 전체 본문](https://www.researchgate.net/publication/260702283_Ferroelectricity_in_Hafnium_Oxide_Thin_Films) |
+| 원문 | [DOI](https://doi.org/10.1063/1.3634052), [저자 배포용 출판본 PDF](https://www.researchgate.net/profile/Tim-Boescke/publication/260702283_Ferroelectricity_in_Hafnium_Oxide_Thin_Films/links/00b4951aee1a1ac80d000000/Ferroelectricity-in-Hafnium-Oxide-Thin-Films.pdf) |
+| 판본 확인 | PDF의 학술지·DOI·102903-1~3쪽과 “Author complimentary copy” 표기를 2026-10-21에 대조했습니다. 저자 배포용 출판본입니다. |
 | 읽은 위치 | 102903-1쪽 시료·전기 측정, -2쪽 압전·회절과 상 해석, -3쪽 구조 변화 가설·결론, 그림 1–5 |
 
 ## 1. 유전체와 강유전체를 구분합니다
