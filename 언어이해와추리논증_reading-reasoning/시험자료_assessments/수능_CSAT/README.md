@@ -34,6 +34,8 @@
 
 선지 표의 ‘적절’은 그 설명이 지문과 부합한다는 뜻입니다. ‘부적절한 것’을 묻는 문항에서는 부적절한 선지가 정답입니다. 해설의 판정과 수험생의 선택을 같은 표시로 합치지 않았습니다.
 
+먼저 문제지에서 해당 지문과 문항을 읽고, 각 선지가 지문과 맞는지 따로 표시해 보시면 됩니다. 이후 질문이 ‘적절한 것’과 ‘적절하지 않은 것’ 중 무엇을 요구하는지 확인하고 정답표와 대조합니다. 문항별 해설에서는 처음 판단과 달라진 선지의 근거 문단을 찾아 다시 읽으시면 됩니다.
+
 ## 공개 범위
 
 [공식 기출 게시판](https://www.suneung.re.kr/boardCnts/list.do?boardID=1500234&m=0403&s=suneung)의 저작권 안내를 확인했습니다. 이 문제지에 자유 재배포를 허용하는 공공누리 표시는 확인하지 못했습니다. 원문 파일·화면 이미지·지문과 선지의 전체 복제본은 저장소에 넣지 않았습니다. 여기에는 공식 파일의 식별 정보, 위치와 독립적으로 작성한 관계 분석을 남겼습니다.
@@ -41,3 +43,5 @@
 ## English
 
 This analysis covers six actual 2025-academic-year CSAT Korean reading questions, odd-numbered form, administered on November 14, 2024. The official paper, key and subsequent answer-confirmation notice are linked above. Original passages, options and PDF images are not republished. The rest of the examination is outside this record.
+
+Assess each option against the passage before applying the question's positive or negative instruction. Then compare with the official key and use the analysis to revisit the paragraph supporting or excluding the option.
