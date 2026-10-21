@@ -1,5 +1,7 @@
 # 알고리즘 길잡이 / Algorithm guide
 
+[풀이 전체 목차 / Solution index](README.md) · [보관 범위 / Archive scope](COVERAGE.md)
+
 입력 범위는 풀이 선택의 출발점입니다. 먼저 필요한 연산과 상태를 고른 뒤, 반복 횟수와 저장할 데이터가 제한 안에 들어오는지 확인합니다. 자료구조 이름만 바꾸는 것으로 효율이 좋아지는 것은 아니므로 실제 연산을 기준으로 비교합니다.
 
 Input bounds guide algorithm choice. Identify the needed operations and states, then check total work and storage. Compare actual operations rather than assuming a named data structure is automatically faster.
