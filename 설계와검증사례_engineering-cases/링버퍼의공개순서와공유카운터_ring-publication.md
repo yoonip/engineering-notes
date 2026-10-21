@@ -4,7 +4,7 @@
 
 [실행 코드](../예제_examples/실무검증_practical-validation/native_firmware/ring_publish_model.c), [재현 방법](../예제_examples/실무검증_practical-validation/native_firmware/README.md), [실행 기록](검증기록_evidence/C펌웨어경계검사_20261021.md)을 연결했습니다. 기존 [단일 실행 흐름용 ring_buffer.c](../예제_examples/심화_advanced/systems/ring_buffer.c)는 그대로 유지합니다. 기존 코드에 새로 발견된 동시성 버그가 있다는 주장이 아니라, 적용 범위가 다른 새 교육 예제입니다.
 
-## 1. 데이터와 인덱스 중 무엇을 먼저 보입니까?
+## 1. 데이터 기록과 인덱스 공개 순서
 
 값 42를 빈 슬롯에 넣는 작업을 두 사건으로 나눕니다. 하나는 슬롯에 42를 기록하는 일이고 다른 하나는 `head`를 움직여 새 데이터가 있다고 공개하는 일입니다. 소비자는 `head != tail`로 데이터 존재를 확인한 뒤 슬롯을 읽습니다.
 
