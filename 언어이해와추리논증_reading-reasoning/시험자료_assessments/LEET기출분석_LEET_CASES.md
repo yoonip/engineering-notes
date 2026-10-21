@@ -2,6 +2,8 @@
 
 [상위 주제](../README.md) · [공식 시험·기출 자료 경로](공식자료_OFFICIAL_SOURCES.md)
 
+[6번 상세 해설](LEET/추리6_COMPENSATION.md) · [28번 상세 해설](LEET/추리28_EXPERIMENTS.md)
+
 이 글은 추리논증 두 문항의 조건과 개념을 연결한 요약입니다. [LEET 실제 기출 목차](LEET/README.md)에서는 언어이해 1~3번과 추리논증 6·28번의 모든 선지 판단·근거 위치를 자세히 읽으실 수 있습니다.
 
 ## 원문 위치 | Source location
