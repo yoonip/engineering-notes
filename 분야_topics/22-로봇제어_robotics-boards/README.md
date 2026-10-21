@@ -34,7 +34,7 @@ MCU와 보드 개발은 회로의 전원·클록·리셋, 핀 연결, 펌웨어�
 | STM32 | Arm Cortex-M 기반 MCU 제품군. CubeIDE, GCC와 CMSIS를 이용한 펌웨어·레지스터 제어 |
 | ESP32 | 제품군에 따라 Xtensa 또는 RISC-V 코어를 포함하는 SoC. ESP-IDF 또는 Arduino 프레임워크를 이용한 개발 |
 | Arduino | 개발보드와 소프트웨어를 포함하는 플랫폼. 스케치는 일반적으로 C++로 컴파일되며 `setup()`·`loop()`와 장치 API를 사용 |
-| Raspberry Pi | Linux 환경에서 프로세스·드라이버와 GPIO·SPI 등 장치 인터페이스를 연결하는 보드 개발 |
+| Raspberry Pi SBC | Linux 환경에서 프로세스·드라이버와 GPIO·SPI 등 장치 인터페이스를 연결하는 보드 개발. [Pico 계열](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)은 별도의 MCU 보드 제품군 |
 
 ESP32는 실행 대상 칩이고, Arduino 코어는 선택할 수 있는 소프트웨어 프레임워크입니다. VS Code에서는 ESP-IDF와 Arduino 등 여러 개발 환경을 사용할 수 있습니다. 편집기와 펌웨어 프레임워크는 역할이 다릅니다. [ESP32 Arduino 코어](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
 
@@ -73,7 +73,7 @@ Board development connects power, clocks, reset, pin wiring, firmware, and host 
 | STM32 | Arm Cortex-M MCU family; firmware and register control with CubeIDE, GCC, and CMSIS |
 | ESP32 | SoC family using Xtensa or RISC-V cores, depending on the device; development with ESP-IDF or Arduino |
 | Arduino | Boards and software platform; sketches generally compile as C++ and use `setup()`, `loop()`, and device APIs |
-| Raspberry Pi | Linux processes and drivers connected to device interfaces such as GPIO and SPI |
+| Raspberry Pi SBC | Linux processes and drivers connected to interfaces such as GPIO and SPI; the [Pico family](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html) is a separate MCU-board family |
 
 ESP32 is the target chip family, while the Arduino core is one available software framework. VS Code is an editor and development tool; using it does not determine the framework. See the [ESP32 Arduino core](https://docs.espressif.com/projects/arduino-esp32/en/latest/).
 
