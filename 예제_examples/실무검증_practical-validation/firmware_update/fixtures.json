@@ -1,0 +1,23 @@
+{
+  "scope": "Invented byte images and disk-file state; not MCUboot format or executable firmware",
+  "old": {
+    "hex": "a1b2c3d4e5f60718",
+    "manifest": {"length": 8, "sha256": "af77ffdab817c17e7c062c04cf8280b18058778209630ea28912213bf1cbd03c"}
+  },
+  "new": {
+    "hex": "102030405060708090a0b0c0",
+    "manifest": {"length": 12, "sha256": "68c0393296d68771467b69ed526061059c3ef49008b7092ebdb446fdccb640c5"}
+  },
+  "corrupt_hex": "112030405060708090a0b0c0",
+  "forged_matching_sha256": "fd9fca44b23b9f2f26d077b714bd2ea0d7356015bd2face7ba1a82566920c699",
+  "expected": {
+    "old": {"selected": "A", "mode": "stable", "generation": 0, "active": "A", "pending": null, "attempted": false},
+    "trial": {"selected": "B", "mode": "trial", "generation": 2, "active": "A", "pending": "B", "attempted": true},
+    "rollback": {"selected": "A", "mode": "rollback", "generation": 3, "active": "A", "pending": null, "attempted": false},
+    "confirmed": {"selected": "B", "mode": "confirmed", "generation": 3, "active": "B", "pending": null, "attempted": false},
+    "new_stable": {"selected": "B", "mode": "stable", "generation": 3, "active": "B", "pending": null, "attempted": false},
+    "old_stable_after_rollback": {"selected": "A", "mode": "stable", "generation": 3, "active": "A", "pending": null, "attempted": false},
+    "invalid_pending": {"selected": "A", "mode": "invalid_pending", "generation": 2, "active": "A", "pending": null, "attempted": false},
+    "downgrade_trial": {"selected": "A", "mode": "trial", "generation": 5, "active": "B", "pending": "A", "attempted": true}
+  }
+}

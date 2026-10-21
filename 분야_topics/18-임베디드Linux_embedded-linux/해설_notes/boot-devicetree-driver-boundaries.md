@@ -45,6 +45,26 @@ ls /sys/bus/platform/devices
 
 실제 검증에는 보드·SoC revision, kernel commit/config, bootloader, DTB와 rootfs를 함께 기록합니다. 장치가 등록된 뒤 정상 데이터·오류 입력·재부팅 조건에서 기능을 확인해야 합니다. 이 예제 묶음의 Python 테스트는 실보드 부팅 성공이나 드라이버 적합성을 인증하지 않습니다.
 
+### 업데이트한 파일과 다음 부팅의 선택을 구분합니다
+
+새 kernel·firmware 파일을 받았다는 사실만으로 다음 부팅의 확정 대상으로 바꾸지는 않습니다. 별도 [A/B 업데이트 파일 모형](../../../예제_examples/실무검증_practical-validation/firmware_update/README.md)은 기존 A를 보존한 채 B를 기록·길이/해시 확인·pending 게시·trial 선택·checkpoint 뒤 confirm으로 나눕니다. 첫 trial 표시를 남긴 뒤 확인 없이 재시작하면 A로 rollback합니다. 실제 kernel 진입이나 firmware 분기를 실행하는 모형은 아닙니다.
+
+초기 상태는 active=A·generation0, 후보 게시 뒤 generation1, trial 표시 뒤 generation2입니다. 확인되면 active=B·generation3, 확인 없이 다시 시작하면 active=A·generation3입니다. 같은 generation3이라도 어느 전이를 했는지에 따라 선택 슬롯은 다릅니다. 숫자가 크다는 사실만으로 새 이미지가 업무를 정상 수행했거나 보안상 허가됐다고 판단하지 않습니다.
+
+```python
+from pathlib import Path  # from/import는 경로 객체를 가져옵니다.
+from models import load_state  # 새 예제 폴더의 CRC·상태 해석 함수를 가져옵니다.
+def recorded_slot(result_store):  # def는 파일이 있는 위치를 인수로 받는 함수를 정의합니다.
+    state = load_state(Path(result_store))  # 실제 파일 두 부 중 유효한 최신 상태를 읽습니다.
+    return state["active"], state["generation"]  # []로 키를 읽어 슬롯과 기록 세대를 반환합니다.
+```
+
+예제 코드 폴더에서 실행하며 `result_store`에는 새 검증 결과의 `happy/store` 경로를 줍니다. 로컬 정상 실행의 해당 경로를 읽은 결과는 `('B', 3)`입니다. 이는 저장된 metadata 해석이며 선택 이미지의 실제 실행·하드웨어 초기화 결과는 아닙니다.
+
+메타데이터 두 부는 generation과 CRC로 갱신 전후를 구분합니다. 새 기록을 전부 쓰기 전에 중단돼도 이전 부가 남도록 구성했습니다. [사례 본문](../../../설계와검증사례_engineering-cases/중단된업데이트의슬롯선택과롤백_firmware-ab-update.md)은 34개 선택한 파일 기록 지점에서 자식을 종료하고 새 프로세스로 다시 읽은 결과를 비교합니다. `flush`·`fsync` 뒤 명시적으로 끝낸 호스트 시험이며 실제 flash 전원 오류·erase 단위·마모·디렉터리 내구성을 시험하지 않았습니다.
+
+실제 Embedded Linux에서는 kernel 하나뿐 아니라 DTB·rootfs·boot 인자·저장장치 배치의 호환성도 업데이트 계약에 넣어야 합니다. 이 모형은 작은 단일 바이트 이미지를 사용합니다. 해시가 맞아도 권한 인증·anti-rollback은 별도이며, 본문에는 이미지와 해시를 함께 바꾼 입력과 이전 이미지의 재설치를 허용하는 한계 대조를 남겼습니다. MCUboot의 [v2.2.0 설계](https://github.com/mcu-tools/mcuboot/blob/v2.2.0/docs/design.md)와 [Zephyr 이미지 사용 안내](https://github.com/mcu-tools/mcuboot/blob/v2.2.0/docs/readme-zephyr.md)는 확인·복구·서명을 구분하는 원자료입니다. 자체 JSON 형식이 MCUboot image trailer와 같다는 뜻은 아닙니다.
+
 ## English
 
 ### Separate the stages behind a boot log
@@ -70,6 +90,12 @@ Locate the stage before assigning a cause: pre-kernel failures concern images an
 `probe_model` distinguishes identifier mismatch, missing resources, and readiness. It models neither the complete Linux matching machinery nor every probe return. Tests show that matching and resource readiness are distinct conditions.
 
 A board check records SoC/revision, kernel commit/config, bootloader, DTB, and rootfs, then verifies actual operation under normal, erroneous, and reboot conditions. The Python tests do not establish real-board boot success or driver compatibility.
+
+### Updated files and boot selection
+
+The separate A/B file model preserves A while writing and validating B. Generation 1 publishes a pending image; generation 2 records a trial before selection. Confirmation makes B active at generation 3; an unconfirmed restart rolls back to A at generation 3. The same generation number can therefore describe different decisions. Reading the successful run's stored state returns `('B', 3)` but does not execute firmware or a kernel.
+
+Thirty-four declared interruption checkpoints use flushed file prefixes and fresh Python processes. They do not model flash power loss or persistent filesystem guarantees. A real Linux update also needs a compatibility contract for the kernel, DTB, rootfs and boot arguments. Hash matching, authorization and anti-rollback remain distinct; the unsigned educational model intentionally demonstrates the latter two limits.
 
 ## 출처 / Sources
 
