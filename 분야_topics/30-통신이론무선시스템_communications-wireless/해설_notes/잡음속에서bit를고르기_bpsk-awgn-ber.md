@@ -33,7 +33,7 @@ $$Q(z)=\frac1{\sqrt{2\pi}}\int_z^\infty e^{-u^2/2}\,du.$$
 
 dB 입력은 $`\gamma_b=10^{dB/10}`$로 바꾼 뒤 제곱근을 취합니다. $`E_b=1`$로 정규화했다면 simulation noise의 표준편차는 $`\sigma=1/\sqrt{2\gamma_b}`$입니다. 분산과 표준편차를 혼동하거나 complex noise의 각 성분과 총 전력을 혼동하면 BER 곡선이 이동합니다. Sample SNR와 $`E_b/N_0`$도 sampling rate·bits/symbol·pulse 정규화·code rate를 정하지 않으면 같은 수치가 아닙니다.
 
-### 오류를 몇 개 보아야 합니까
+### 표본 수와 BER 추정의 불확실성
 
 N bit 중 오류 K개라면 추정량은 $`\hat p=K/N`$입니다. 독립 Bernoulli 모델에서 $`K\sim Binomial(N,p)`$이고 $`Var(\hat p)=p(1-p)/N`$입니다. 이론 p가 작을수록 같은 상대 오차를 얻으려면 더 긴 실행이 필요합니다. 기대 오류 수가 작을 때 정규근사의 신뢰구간을 무조건 사용하지 않습니다.
 
