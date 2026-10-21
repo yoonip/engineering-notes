@@ -27,7 +27,7 @@
 
 ## 오류를 코드로 재현하기
 
-[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 RTOS·CAN·칩·AI 예제는 결정적 모델과 합성 자료입니다. 칩 시험 러너는 실제 호스트 자식프로그램을 실행해 프로세스 실패와 결과 계약 위반을 나눕니다. 인터럽트·DMA·캐시와 SPI·I2C의 호스트 모델, UART·이더넷 수신 경계와 워치독·리셋 정책, 실제 로컬 UDP socket, SystemVerilog와 Python을 비교하는 RTL·비동기 FIFO 예제로 이어집니다.
+[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 RTOS·CAN·칩·AI 예제는 결정적 모델과 합성 자료입니다. 칩 시험 러너는 실제 호스트 자식프로그램을 실행해 프로세스 실패와 결과 계약 위반을 나눕니다. 인터럽트·DMA·캐시와 SPI·I2C의 호스트 모델, UART·이더넷 수신 경계와 워치독·리셋 정책, 실제 로컬 UDP socket, SystemVerilog와 Python을 비교하는 RTL·비동기 FIFO 예제로 이어집니다. USB·PCIe의 제한된 전송 계약, 파일 기반 업데이트 중단과 재시작, DDR 명령·패턴 fixture의 실행 범위도 각각 구분합니다.
 
 | 재현하는 문제 | 원인과 해결 | 본문 |
 | --- | --- | --- |
@@ -52,6 +52,10 @@
 | UDP 응용 값에 채움 바이트가 붙거나 짧은 패킷을 승인합니다. | 캡처 길이·IP 길이·UDP 길이와 checksum·지원 범위를 구분합니다. | [Ethernet·UDP 경계](../설계와검증사례_engineering-cases/이더넷프레임의길이와UDP경계_ethernet-ipv4-udp.md) |
 | 제어 task가 멈췄는데 워치독이 계속 갱신됩니다. | task별 새 진행과 감시 구간을 검사하고 리셋 원인을 지우기 전에 저장합니다. | [워치독·리셋](../설계와검증사례_engineering-cases/작업진행을확인하는워치독과리셋기록_watchdog-health-reset.md) |
 | 서로 다른 클록 사이에서 FIFO의 값·개수·순서가 틀립니다. | 포인터 동기화·가득 참과 비어 있음·리셋 flush를 전송 기준 큐와 비교합니다. | [CDC·비동기 FIFO](../설계와검증사례_engineering-cases/비동기FIFO의Gray포인터와reset_cdc-async-fifo.md) |
+| USB 요청이 성공했는데 메시지가 짧거나 명령이 두 번 적용됩니다. | 실제 전송 길이와 응용 메시지 완성·재시도 ID를 별도로 확인합니다. | [USB 부분 전송](../설계와검증사례_engineering-cases/USB의부분전송과중복없는복구_usb-bulk-recovery.md) |
+| PCIe read 응답을 받았지만 주소·길이·요청이 맞지 않습니다. | 태그와 남은 바이트, 시작 주소, 분할 응답의 완성 조건을 대조합니다. | [PCIe 분할 응답](../설계와검증사례_engineering-cases/PCIe의태그와분할응답_pcie-split-completions.md) |
+| 업데이트 중단 뒤 정상 이미지로 돌아가지 못합니다. | 비활성 슬롯 기록·선택 기록·시험 부팅·성공 확정을 순서대로 검사합니다. | [업데이트 중단과 롤백](../설계와검증사례_engineering-cases/중단된업데이트의슬롯선택과롤백_firmware-ab-update.md) |
+| 메모리 값 비교만 통과하고 명령 간격·응답 누락을 놓칩니다. | 시간 계약·응답 수·주소별 기대값과 패턴의 검출 한계를 함께 확인합니다. | [DDR 명령·패턴](../설계와검증사례_engineering-cases/DDR명령간격과메모리패턴_ddr-command-pattern-checks.md) |
 
 ## 업무 질문에서 시작하기
 

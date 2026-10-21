@@ -16,6 +16,9 @@
 | UART·Ethernet·UDP | [uart_ethernet](uart_ethernet/README.md): 스트림 파서·원시 캡처 해석·로컬 socket | 분할·병합 수신, 길이·padding·checksum, 데이터그램 경계 |
 | 워치독·리셋 | [watchdog_reset](watchdog_reset/README.md): 작업 진행·감시 구간·원인 플래그 모델 | 멈춘 task 은폐·오래된 완료 표시·tick 순환·capture-before-clear |
 | CDC·비동기 FIFO | [cdc_async_fifo](cdc_async_fifo/README.md): dual-clock SystemVerilog·Python 기준 큐 | Gray 포인터 동기화·full/empty·순서·reset flush와 기능 오류 주입 |
+| USB·PCIe 전송 | [usb_pcie](usb_pcie/README.md): 부분 전송·재시도·분할 completion 모델 | 실제 길이·명령 ID·연결 세대와 tag·주소·응답 완성 |
+| 부트로더·펌웨어 업데이트 | [firmware_update](firmware_update/README.md): 파일 기반 A/B 슬롯·재시작 검사 | 기록 중단·이미지 검사·시험 부팅·확정과 롤백 |
+| DDR 명령·메모리 패턴 | [ddr_validation](ddr_validation/README.md): SV 명령 fixture·Python 감시기 | 시간 간격·refresh·주소와 데이터 결함·응답 누락·패턴 한계 |
 
 [설계와 검증 사례](../../설계와검증사례_engineering-cases/README.md)에서 원인과 해결을 읽고, [현장 계측과 검증](../../현장계측과검증_measurement-validation/README.md)에서 장비·펌웨어·칩 시험 조건으로 연결합니다.
 
@@ -25,4 +28,4 @@
 
 ## English
 
-Twelve sets of runnable examples compare faulty controls and intended fixes: native contracts, chip analysis, AI evaluation, RTOS concurrency, CAN, subprocess reports, interrupt/DMA/cache ownership, SPI/I2C, UART/Ethernet/UDP, watchdog/reset, RTL/reference and CDC/asynchronous FIFO comparison. New output directories preserve earlier failures. HDL simulation, actual host child processes, deterministic software models and physical measurements have distinct scopes.
+Fifteen sets of runnable examples compare faulty controls and intended fixes: native contracts, chip analysis, AI evaluation, RTOS concurrency, CAN, subprocess reports, interrupt/DMA/cache ownership, SPI/I2C, UART/Ethernet/UDP, watchdog/reset, RTL/reference and CDC/asynchronous FIFO comparison, USB/PCIe, file-backed firmware updates and DDR command/pattern checks. New output directories preserve earlier failures. HDL simulation, actual host child processes, deterministic software models and physical measurements have distinct scopes.
