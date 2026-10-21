@@ -59,14 +59,14 @@ $$
 
 [모델 코드](../../../예제_examples/공학기초_foundations/signals_ai/models.py)의 `first_order_zoh`는 작은 $`T/\tau`$에서 $`1-e^{-T/\tau}`$의 뺄셈 손실을 줄이려고 `expm1`을 씁니다. `feedback_response`는 표본당 $`O(1)`$ 연산과 상태를 사용합니다. 반환 파형을 모두 저장하므로 전체 공간은 $`O(N)`$입니다.
 
-```python
-from signals_ai.models import first_order_zoh, feedback_response
+아래 코드는 저장소의 `예제_examples/공학기초_foundations` 폴더에서 실행합니다.
 
-a, b = first_order_zoh(tau=1.0, sample_period=0.1)
-gain = 2.0
-# 파형만 보지 않고 닫힌 루프의 극도 먼저 계산한다.
-print("pole", a - b * gain)
-print(feedback_response(a, b, gain, reference=1.0, steps=100)[-1])
+```python
+from signals_ai.models import first_order_zoh, feedback_response  # from/import로 이산화·응답 계산 함수를 가져옵니다.
+a, b = first_order_zoh(tau=1.0, sample_period=0.1)  # 이름=값으로 인수를 지정하고 반환한 계수 둘을 a, b에 나눠 담습니다.
+gain = 2.0  # =로 비례 이득 K를 저장합니다.
+print("pole", a - b * gain)  # *는 곱셈이며, print로 닫힌 루프 극 a−bK를 표시합니다.
+print(feedback_response(a, b, gain, reference=1.0, steps=100)[-1])  # [-1]로 반환된 응답의 마지막 값을 골라 표시합니다.
 ```
 
 $`r=1,y_0=0,K=2,g=1`$이면 $`y_*=2/3`$이고, 해석 수열은 $`y_k=y_*(1-p^k)`$입니다. 테스트는 모든 표본을 이 식과 절대 오차 $`10^{-12}`$ 수준으로 비교합니다. 별도로 일정 입력의 연속 해와 ZOH 갱신을 비교합니다. $`T=0.1,\tau=1,K=25`$에서는 $`\vert p\vert >1`$인 발산 반례도 검사합니다. [실행 안내](../../../예제_examples/공학기초_foundations/README.md).
