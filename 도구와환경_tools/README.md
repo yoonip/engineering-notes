@@ -1,10 +1,10 @@
 # 도구 찾아보기
 
-도구별 역할과 관련 문서를 정리했습니다.
+개발 도구·언어·규격의 역할과 관련 학습 문서를 정리했습니다.
 
 처음 설치와 실행의 관계를 정리하실 때에는 [개발 환경의 구성](개발환경_GETTING_STARTED.md), 언어·runtime·모델·단위를 구분하실 때에는 [기술 용어](기술용어_TERMINOLOGY.md)부터 읽으시면 됩니다.
 
-A guide to what each tool does and where its related notes are kept.
+A guide to development tools, languages and standards, with links to related study notes.
 
 ## 계측 장비와 시험 자동화
 
@@ -26,7 +26,7 @@ A guide to what each tool does and where its related notes are kept.
 | Docker · Podman | 컨테이너 이미지로 사용자 공간 의존성과 실행 환경을 묶고 관리합니다. | Package and manage user-space dependencies and execution environments as container images. |
 | Python · pip · venv · uv | Python 실행과 패키지 설치·환경 분리·프로젝트 의존성 관리를 구성하는 도구들입니다. | Python execution, package installation, isolated environments, and project dependency management. |
 | Conda · Mamba | Python과 바이너리 의존성을 환경 단위로 관리합니다. pip의 패키지 관리 범위와 다릅니다. | Manage Python and binary dependencies as environments, with a different scope from pip package management. |
-| Jupyter Notebook · JupyterLab · IPython | Notebook은 계산 문서, Lab은 작업 UI, IPython은 Python 대화형 실행·kernel 생태계입니다. | Notebook is a computational document; Lab provides its workspace UI; IPython supports interactive Python execution and kernels. |
+| Jupyter Notebook · JupyterLab · IPython | Notebook은 노트북 작성·실행 앱, Lab은 파일·터미널도 다루는 작업 환경, IPython은 Python 대화형 실행 환경입니다. `.ipynb`는 별도의 [문서 형식](https://nbformat.readthedocs.io/en/latest/format_description.html)입니다. | Notebook is a notebook-editing application, Lab a workspace, and IPython an interactive Python environment. `.ipynb` is the document format; see the [Notebook introduction](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html). |
 | NumPy · SciPy | 다차원 배열과 과학 계산. 선형대수·최적화·적분·신호처리를 코드로 연결합니다. | Multidimensional arrays and scientific computing, including linear algebra, optimization, integration, and signal processing. |
 | pandas · Matplotlib · Seaborn · Plotly | 표 데이터 처리와 정적·통계·대화형 시각화에 쓰입니다. | Tabular data processing and static, statistical, and interactive visualization. |
 | MATLAB · Simulink · Octave | 행렬 기반 계산, 블록선도 모델링, MATLAB 호환 수치 계산 환경입니다. | Matrix-based computation, block-diagram modeling, and MATLAB-compatible numerical computing, respectively. |
@@ -528,11 +528,3 @@ Kotlin, Java, Android, Swift, iOS, Flutter, Dart, React Native, Kotlin Multiplat
 Devices and new computing architectures
 
 SNN, Neuromorphic, Event Camera, Quantum, Photonics, Compute-in-Memory, Memristor, Wearables
-
-### [지원 · 시험 · 면접 · Applications, Resumes & Assessment Experiences](../소개_about/지원기록_APPLICATIONS.md)
-
-문서·평가·지원 과정
-
-Documents, assessments, and application processes
-
-Kookmin University, Company Applications, Resume/CV, Coding Tests, Competency Assessments
