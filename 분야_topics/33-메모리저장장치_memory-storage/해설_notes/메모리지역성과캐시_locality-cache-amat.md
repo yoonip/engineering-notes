@@ -18,6 +18,8 @@ $$b=\lfloor a/B\rfloor,\quad index=b\bmod S,\quad tag=\lfloor b/S\rfloor.$$
 
 offset은 `a mod B`입니다. 해당 index의 valid bit가 켜져 있고 저장 tag가 같으면 hit, 아니면 miss입니다. 한 블록을 가져오면 B byte를 담기 때문에 인접 데이터가 다음 접근에서 hit가 될 수 있습니다. 서로 다른 블록이 같은 index를 번갈아 쓰면 용량이 남아 보여도 conflict miss가 발생합니다. [CMU 강의의 주소 분해·읽기 추적](https://www.cs.cmu.edu/afs/cs/academic/class/15213-s25/www/lectures/10-cache-memories.pdf)
 
+아래 주소열은 CMU의 *Cache Memories* (2025-02-12), 슬라이드 17의 직접 매핑 예입니다. 같은 주소를 블록·index·tag로 나누어 계산했습니다.
+
 | B=2 byte, S=4인 경우 | 블록 b | index | tag | 초기 빈 캐시에서 결과 |
 |---|---:|---:|---:|---|
 | a=0 | 0 | 0 | 0 | miss |
@@ -117,7 +119,7 @@ SRAM and DRAM describe storage-cell technologies and access structures. A cache 
 
 For a direct-mapped cache with B bytes per line and S lines, a nonnegative byte address a maps to block `b=floor(a/B)`, index `b mod S`, tag `floor(b/S)`, and offset `a mod B`. A hit requires both a valid entry and a matching tag at that index. Fetching an entire line can make subsequent neighboring accesses hit. Alternating different blocks at the same index causes conflict misses even when other entries are unused. [CMU's address decomposition and trace examples](https://www.cs.cmu.edu/afs/cs/academic/class/15213-s25/www/lectures/10-cache-memories.pdf)
 
-For B=2 and S=4, the initially cold address sequence `0,1,7,8,0` produces `miss,hit,miss,miss,miss`. Addresses 0 and 1 share block zero; address 8 replaces that block at index zero. The last access to zero consequently misses. The table above gives the complete block, index and tag calculation.
+CMU's *Cache Memories* (2025-02-12), slide 17, uses B=2 and S=4. Its initially cold address sequence `0,1,7,8,0` produces `miss,hit,miss,miss,miss`. Addresses 0 and 1 share block zero; address 8 replaces that block at index zero. The last access to zero consequently misses. The table above gives the complete block, index and tag calculation.
 
 Power-of-two dimensions allow convenient address-bit fields. The Python model uses integer division and remainder and also supports other positive dimensions. It is an educational mapping, not a reproduction of a particular processor's index hashing.
 
@@ -168,5 +170,5 @@ Fresh processes reopen explicitly synced prefixes. Inspection defers partial tai
 - CMU 15-213/14-513/15-513, *Cache Memories* (2025): 지역성·주소 분해·직접 매핑·추가 miss penalty / locality, address decomposition, direct mapping and additional miss penalty.
 - CMU 15-740, *Memory Hierarchy* (2019): 계층 성능·AMAT 정의 / hierarchy performance and AMAT convention. 두 자료의 평균 시간 정의를 대조했습니다 / average-time conventions cross-checked between both lectures.
 - NVIDIA, *Unlock GPU Performance: Global Memory Access in CUDA*: 전송 단위·coalescing·counter 관점 / transaction granularity, coalescing and counters. CPU와 GPU의 세부 캐시가 같다고 가정하지 않았습니다 / no assumption of identical CPU and GPU cache details.
-- 그림·trace·테스트는 직접 구성했습니다 / diagram, traces and tests constructed here. 출처 확인 / sources checked: 2026-10-19.
+- 그림과 테스트 코드는 직접 작성했습니다. 위 직접 매핑 표의 주소열은 CMU 강의 예제에서 가져왔습니다 / the diagram and test code were constructed here; the address sequence in the direct-mapping table comes from the CMU lecture. 출처 확인 / sources checked: 2026-10-19.
 - [NVM Express Base 1.4c §§4.6·6.8·6.15](https://nvmexpress.org/wp-content/uploads/NVM-Express-1_4c-2021.06.28-Ratified.pdf): 완료 식별·Flush·Write FUA를 대조했습니다 / completion identity, Flush and Write FUA cross-checks. © 2007 to 2021 NVM Express, Inc. ALL RIGHTS RESERVED. [Linux block cache 문서](https://docs.kernel.org/block/writeback_cache_control.html)의 PREFLUSH·FUA도 구분했습니다 / PREFLUSH and FUA are distinguished. 추가 확인일은 2026-10-21입니다 / additionally checked on 2026-10-21.
