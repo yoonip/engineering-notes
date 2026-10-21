@@ -55,17 +55,18 @@ $$
 
 이는 이상적인 양자화, full-scale 정현파, 전체 Nyquist 대역의 잡음에 대한 식입니다. 오차가 입력과 강하게 연관되면 백색 잡음이라는 해석이 맞지 않습니다. DC나 작은 주기 신호가 대표적입니다. [MT-001 pp.1–3,5–7](https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf)의 가정과 대역 설명을 함께 확인합니다. 여기서 ENOB를 부품의 DC 절대 정확도나 입력 전압의 유효 자릿수로 바꿔 해석하지 않습니다.
 
+SNR은 통상 고조파를 제외하고 SINAD(SNDR)는 왜곡까지 포함하므로, 실제 SNR을 그대로 ENOB로 바꾸면 왜곡을 놓칩니다. Full-scale 정현파의 `ENOB=(SINAD_dB−1.76)/6.02`는 동적 성능의 환산값입니다. 작은 입력은 진폭 정규화가 필요하며 주파수·대역·제조사 정의도 확인합니다. [ADI MT-003, Rev. A(10/08), pp.5–6, 식 1–2](https://www.analog.com/media/en/training-seminars/tutorials/MT-003.pdf)
+
 ## 구현과 검사
 
 [참조 코드](../../../예제_examples/공학기초_foundations/signals_ai/models.py)의 `adc_midrise`는 입력 하나를 상수 개수의 연산으로 코드와 복원값으로 바꿉니다. 1–24 bit 범위의 작은 계산 모델입니다. 실제 ADC와 통신하는 코드는 아닙니다.
 
 ```python
-from signals_ai.models import adc_midrise, ideal_snr_db
+from signals_ai.models import adc_midrise, ideal_snr_db  # from/import는 모델 함수를 가져옵니다.
 
-code, restored = adc_midrise(1.0, bits=12, lower=0.0, upper=3.3)
-# 복원값과 실제 입력의 차이를 분해능과 함께 본다.
-print(code, restored, restored - 1.0)
-print(ideal_snr_db(12))
+code, restored = adc_midrise(1.0, bits=12, lower=0.0, upper=3.3)  # 두 반환값을 코드와 복원 전압에 나눠 담습니다.
+print(code, restored, restored - 1.0)  # print는 코드·복원값·모델의 양자화 오차를 출력합니다.
+print(ideal_snr_db(12))  # 12비트 이상 모델의 SNR을 dB로 계산해 출력합니다.
 ```
 
 검사는 범위의 양 끝·모든 코드 구간·포화를 확인하고, 균일한 구간 중점 표본으로 $`\Delta^2/12`$ 적분을 독립적으로 근사합니다. 4 bit, 구간당 200개 표본에서는 상대 오차 $`3\times10^{-5}`$ 이하를 기준으로 삼습니다. 별도로 12 bit의 이상적인 SNR이 약 74.008 dB인지 확인합니다. [실행 방법](../../../예제_examples/공학기초_foundations/README.md).
@@ -104,6 +105,8 @@ $$
 
 This assumes ideal quantization, a full-scale sinusoid, and noise integrated over the Nyquist band. Error correlated with a DC or small periodic input need not behave as white noise. ENOB must not be read as DC absolute accuracy or guaranteed significant input digits.
 
+SNR conventionally excludes harmonics; SINAD (SNDR) includes distortion. Using SNR for ENOB can hide distortion. For a full-scale sinusoid, `ENOB=(SINAD_dB−1.76)/6.02` expresses dynamic performance. Reduced amplitudes require normalization; also check frequency, bandwidth and manufacturer definitions. [ADI MT-003, Rev. A (10/08), pp.5–6, equations 1–2](https://www.analog.com/media/en/training-seminars/tutorials/MT-003.pdf)
+
 ### Implementation and verification
 
 The [implementation](../../../예제_examples/공학기초_foundations/signals_ai/models.py) converts one input using a constant number of arithmetic operations for a 1–24-bit teaching model. It is not an ADC driver. The example above prints its code, reconstructed voltage, error, and ideal SNR.
@@ -115,6 +118,7 @@ Physical characterization instead uses DC sweeps for transitions, offset, gain a
 ## 출처 / Sources
 
 - [Analog Devices, Walt Kester, MT-001](https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf) — 오차 적분·SNR·상관·대역 조건 / error integration, SNR, correlation and bandwidth conditions.
+- [Analog Devices, Walt Kester, MT-003, Rev. A(10/08), pp.5–6](https://www.analog.com/media/en/training-seminars/tutorials/MT-003.pdf) — SINAD·SNR의 구분과 ENOB의 진폭 조건 / SINAD versus SNR and ENOB amplitude assumptions.
 - [TI, How much noise does your ADC really produce?](https://www.ti.com/document-viewer/lit/html/SSZT554/GUID-5FCFDA62-4CDD-403A-969C-EB377113CA8A) — 양자화와 열잡음, 실제 ADC 해석 / quantization, thermal noise and physical ADC interpretation.
 
 이상 모델의 가정을 실제 잡음 설명과 대조하고, 코드 경계 및 오차 적분으로 계산을 확인했습니다. / The ideal assumptions were cross-checked against the physical noise discussion and verified using code boundaries and error integration.

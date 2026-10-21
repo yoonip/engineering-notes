@@ -12,7 +12,9 @@ SAR는 비교와 이진 탐색을 이용한 변환, pipeline은 여러 단계를
 
 ## 정적·동적 지표와 클록
 
-INL·DNL은 정적 전달 특성의 비선형성을, SNDR·SFDR은 잡음·왜곡과 주파수 성분을 다룹니다. ENOB는 SNDR을 이상적인 비트 수와 연결한 지표입니다. PLL·DLL·CDR은 클록의 주파수·위상·데이터 타이밍에 관여합니다. Jitter는 시간 변동, phase noise는 위상 변동의 주파수 영역 표현과 관련됩니다.
+INL·DNL은 정적 비선형성입니다. SINAD(SNDR)는 잡음·왜곡을 합쳐 비교하고 SFDR은 가장 큰 불요 성분과 비교합니다. ENOB의 진폭 조건과 DC 정확도의 차이는 [ADC 해설](해설_notes/ADC양자화_adc-quantization.md)에 정리했습니다. [ADI MT-003, pp.3–6](https://www.analog.com/media/en/training-seminars/tutorials/MT-003.pdf)
+
+PLL·DLL·CDR은 클록의 주파수·위상·데이터 타이밍에 관여합니다. Jitter는 시간 변동, phase noise는 위상 변동의 주파수 영역 표현과 관련됩니다.
 
 ## 관련 기술
 
@@ -20,7 +22,8 @@ SAR ADC, Delta-Sigma, DAC, PLL, DLL, CDR, Spectre, Verilog-AMS
 
 ## 참고 자료
 
-- [Analog Devices technical resources](https://www.analog.com/en/resources.html)
+- [ADI MT-001, Rev. A(10/08), pp.1–3](https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf) — 이상적 양자화·full-scale 정현파·전체 Nyquist 대역의 SNR.
+- [ADI MT-003, Rev. A(10/08), pp.3–6](https://www.analog.com/media/en/training-seminars/tutorials/MT-003.pdf) — SFDR·SINAD·SNR·ENOB의 서로 다른 분모와 입력 조건.
 
 
 ## 개념·유도·모델·검증
@@ -43,7 +46,9 @@ SAR conversion uses comparisons and binary search. Pipeline ADCs use multiple st
 
 ### Static and dynamic metrics, and clocking
 
-INL and DNL describe static transfer nonlinearity. SNDR and SFDR describe noise, distortion, and spectral components. ENOB expresses SNDR as an equivalent ideal bit count. PLLs, DLLs, and CDR circuits control clock frequency, phase, and data timing. Jitter describes timing variation, while phase noise describes phase fluctuations in the frequency domain.
+INL/DNL describe static nonlinearity. SINAD includes noise and distortion; SFDR compares the largest spur. The [ADC article](해설_notes/ADC양자화_adc-quantization.md#english) explains ENOB's amplitude conditions and its distinction from DC accuracy. [ADI MT-003, pp.3–6](https://www.analog.com/media/en/training-seminars/tutorials/MT-003.pdf)
+
+PLLs, DLLs and CDR circuits control clock frequency, phase and data timing. Jitter describes timing variation, while phase noise describes phase fluctuations in the frequency domain.
 
 Related technologies include SAR and delta-sigma ADCs, DACs, PLLs, DLLs, CDR, Spectre, and Verilog-AMS.
 

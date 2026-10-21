@@ -31,6 +31,8 @@ H(s)=\frac{A_0}{1+\beta A_0+s/\omega_p}
 
 A0=100000, fp=10 Hz, β=0.1이면 DC 이득은 약 9.9990 V/V, 폐루프 pole은 100010 Hz입니다. 유한한 open-loop gain 때문에 목표 10 V/V보다 조금 작습니다.
 
+이 식의 x는 `x−βy`로 비교하는 합산점의 기준 입력입니다. 실제 반전 op-amp의 외부 신호 이득과 `1/β`를 같다고 놓으면 안 됩니다. 이상적인 저항 반전 회로에서 신호 이득은 `−Rf/Rin`, noise gain은 `1/β=1+Rf/Rin`입니다. 안정성·대역폭을 볼 때는 noise gain과 loop gain을 구분합니다. [ADI MT-033, Rev.0(10/08), pp.2–4, 그림 2·식 2–4](https://www.analog.com/media/en/training-seminars/tutorials/mt-033.pdf)
+
 ### 두 번째 pole과 phase margin
 
 ```math
@@ -65,6 +67,8 @@ The model assumes linear small signals, a constant positive real feedback factor
 Starting with error $`e=x-\beta y`$ and output $`y=Ae`$ yields $`H=A/(1+\beta A)`$ and loop gain $`L=\beta A`$. Substituting the one-pole open-loop model and collecting terms gives the displayed closed-loop expression. Its DC gain is $`A_0/(1+\beta A_0)`$ and its pole is $`\omega_p(1+\beta A_0)`$. Large loop gain brings the DC gain near 1/β while expanding bandwidth.
 
 Within this particular one-pole model, the product of closed-loop DC gain and pole frequency is exactly $`A_0\omega_p`$. Treating gain-bandwidth as constant in a physical circuit is an approximation that can fail with additional poles, zeros or loading. Angular frequency and ordinary frequency differ by $`\omega=2\pi f`$. For A0=100000, fp=10 Hz and β=0.1, the DC gain is about 9.9990 V/V and the closed-loop pole is 100010 Hz. Finite open-loop gain explains the small error from the target gain of ten.
+
+Here x is the reference at the `x−βy` summing point. Do not identify `1/β` with every external signal gain: an ideal resistive inverting op-amp has signal gain `−Rf/Rin` but noise gain `1+Rf/Rin=1/β`. Use the noise gain and loop gain when assessing stability and bandwidth. [ADI MT-033, Rev.0 (10/08), pp.2–4, figure 2 and equations 2–4](https://www.analog.com/media/en/training-seminars/tutorials/mt-033.pdf)
 
 ### A second pole and phase margin
 

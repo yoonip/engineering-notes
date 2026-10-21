@@ -2,7 +2,7 @@
 
 ## 모델
 
-이상적인 전압원·저항·커패시터의 직렬 회로를 다룹니다. 커패시터의 초기 전압은 0이고, 입력 Vin은 일정합니다. 이때 전압 변화는 `dv/dt=(Vin-v)/(RC)`로 나타냅니다.
+이상적인 전압원·양의 일정한 저항·커패시터의 직렬 회로를 다룹니다. 커패시터의 초기 전압은 0이고, 입력 Vin은 일정하며 별도 부하와 누설은 생략합니다. 이때 전압 변화는 `dv/dt=(Vin-v)/(RC)`로 나타냅니다. [MIT 6.002 Lecture 12, pp.5–11](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/84f4b553fc6a1ddd7007465041c4e213_6002_l12.pdf)의 커패시터 법칙·노드 방정식·초기값 해가 기준입니다.
 
 ## 해
 
@@ -11,6 +11,8 @@
 ## 수식과 코드
 
 [Euler 근사 코드](../예제_examples/rc_euler.py)는 미분방정식을 반복문으로 계산합니다. [Jupyter 문서](../예제_examples/rc_response.ipynb)에서는 수식·수치·그래프를 함께 살펴봅니다. 모델의 가정과 수식, 구현, 비교 기준을 연결해 응답을 확인합니다.
+
+연결된 `rc_euler.py`의 입력은 R=1 kΩ·C=1 μF·Vin=3.3 V, 간격 10 μs·500단계입니다. 아래 손계산의 C=100 μF·Vin=5 V·간격 0.05 s와는 다른 입력입니다. 둘 다 같은 RC 식을 사용하지만 수치 결과를 직접 같은 실행 결과로 비교하지 않습니다.
 
 ## 왜 처음에는 빨리, 나중에는 천천히 변합니까?
 
@@ -56,13 +58,13 @@ $$v_{n+1}=v_n+\Delta t\frac{V_{in}-v_n}{RC}$$
 
 </details>
 
-배경 수업은 [MIT Circuits and Electronics](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)이며, 저항·커패시터·시간 응답의 관계를 이어서 공부하실 수 있습니다. 실제 회로에서는 전원·측정기의 영향, 부품 허용 오차와 누설 등이 이 모델과 다른 결과를 만들 수 있습니다.
+출처는 MIT 6.002의 *Capacitors and First-Order Systems*, Lecture 12입니다. PDF 본문은 Fall 2000 강의이며 Spring 2007 OCW 과정에 보관된 판본입니다. 실제 회로에서는 전원·측정기의 영향, 부품 허용 오차와 누설 등이 이 모델과 다른 결과를 만들 수 있습니다.
 
 ## English
 
 ### Model
 
-Consider a series circuit with an ideal voltage source, resistor, and capacitor. The capacitor starts at 0 V, and the input Vin is constant. Its voltage follows `dv/dt=(Vin-v)/(RC)`.
+Consider a series circuit with an ideal constant voltage source and positive constant R and C, without a separate load or leakage. The capacitor starts at 0 V and follows `dv/dt=(Vin-v)/(RC)`. [MIT 6.002 Lecture 12, pp.5–11](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/84f4b553fc6a1ddd7007465041c4e213_6002_l12.pdf) derives the element law, node equation and initial-value solution. Its pages are labeled Fall 2000 and archived in the Spring 2007 OCW course.
 
 ### Solution
 
@@ -71,3 +73,5 @@ The solution is `v(t)=Vin*(1-exp(-t/(RC)))`. The time constant is `tau=RC`. At t
 ### Equations and code
 
 The [Euler approximation](../예제_examples/rc_euler.py) computes the differential equation with a loop. The [Jupyter notebook](../예제_examples/rc_response.ipynb) brings together the equations, numerical results, and plots. The response can be checked by connecting the model assumptions, equations, implementation, and comparison criteria.
+
+The linked script uses 1 kΩ, 1 μF and 3.3 V with 500 steps of 10 μs. The Korean hand calculation uses 100 μF, 5 V and a 0.05 s step. These illustrate the same equation with different inputs; their numerical results are not the same run.

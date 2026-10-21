@@ -12,7 +12,7 @@
 
 ### 끝점 전이 기준의 정의
 
-N비트 ADC는 M=2^N개 코드와 M−1개 내부 전이 $`T_1,\ldots,T_{M-1}`$를 가집니다. 전이값은 V 단위이며 감소하지 않는다고 가정합니다. 첫 코드와 마지막 코드는 입력 한계 밖까지 이어질 수 있으므로 폭 계산에서 제외합니다. 여기서는 첫·마지막 내부 전이를 잇는 직선으로 offset과 gain을 제거합니다.
+이 계산은 N≥2인 ADC를 다루며 M=2^N개 코드와 M−1개 내부 전이 $`T_1,\ldots,T_{M-1}`$를 사용합니다. 전이값은 유한한 V 단위 값이며 감소하지 않고 $`T_1<T_{M-1}`$이어야 합니다. 모든 전이가 같으면 아래의 fitted LSB가 0이 되어 DNL·INL을 정의할 수 없습니다. 첫 코드와 마지막 코드는 입력 한계 밖까지 이어질 수 있으므로 폭 계산에서 제외합니다. 여기서는 첫·마지막 내부 전이를 잇는 직선으로 offset과 gain을 제거합니다.
 
 ```math
 \Delta_{fit}=\frac{T_{M-1}-T_1}{M-2},\qquad
@@ -62,7 +62,7 @@ Definitions and measurement interpretation are cross-checked against [TI's conve
 
 ### Defining the fitted transition scale
 
-An N-bit converter has M=2^N codes and M−1 internal transitions. Transitions are nondecreasing voltages. First and last code widths are excluded because their bins may extend beyond the specified input range. The reference line joins the first and last internal transitions, giving $`\Delta_{fit}=(T_{M-1}-T_1)/(M-2)`$ and ideal transition $`T_1+(k-1)\Delta_{fit}`$.
+This calculation requires N≥2, M=2^N codes and M−1 internal transitions. Transitions are finite, nondecreasing voltages with $`T_1<T_{M-1}`$; identical endpoints would give a zero fitted LSB and undefined normalized errors. First and last code widths are excluded because their bins may extend beyond the specified input range. Joining the first and last internal transitions gives $`\Delta_{fit}=(T_{M-1}-T_1)/(M-2)`$ and ideal transition $`T_1+(k-1)\Delta_{fit}`$.
 
 For an interior code, width is $`W_k=T_{k+1}-T_k`$. Signed DNL is width/Delta_fit−1. INL is transition deviation from the fitted line divided by Delta_fit. The unit is the fitted LSB used here. These signed code errors differ from a specification reporting only a maximum absolute error. Endpoint fitting also differs from a least-squares best-fit INL, and removes absolute offset and gain from this representation.
 
@@ -80,5 +80,5 @@ With a sufficiently sampled constant-speed uniform ramp, interior code counts ar
 
 ## 출처 / Sources
 
-- Texas Instruments, *SBAA004A Selecting an A/D Converter*: static linearity definitions and test context.
+- Texas Instruments, *SBAA004A Selecting an A/D Converter*, April 2015, pp.4–5 §§1.1.3–1.1.4: DNL의 폭 차이·INL의 기준선 관례 / bin-width DNL and INL reference-line conventions. 본문의 코드 수 M=2^N과 내부 전이 수 M−1은 구분합니다 / code count M=2^N is distinct from M−1 internal transitions.
 - Analog Devices, *INL/DNL Measurements for High-Speed ADCs*: reference-line choices and probabilistic transitions. Links are provided above.
