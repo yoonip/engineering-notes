@@ -2,11 +2,11 @@
 
 추리논증에서는 글이 제시한 조건을 연결하고, 근거가 결론을 어디까지 뒷받침하는지 판단합니다. 같은 문장이라도 규칙인지, 관측 사실인지, 필자가 검토하는 상대의 주장인지에 따라 역할이 달라집니다. 먼저 문장의 역할과 적용 범위를 정한 뒤 추론합니다.
 
-| 읽을 글 | 다루는 질문 | 직접 분석하는 사례 |
+| 읽을 글 | 다루는 내용 | 직접 분석하는 사례 |
 | --- | --- | --- |
-| [조건문·양화·가능성](조건문과가능성_CONDITIONALS_AND_POSSIBILITY.md) | 여러 조건을 어떻게 연결하며, 무엇을 뒤집을 수 있습니까? | 선발 규칙, 원고 심사 배정, 가능한 참석 조합 |
-| [근거와 논증 평가](근거와논증평가_ARGUMENT_EVALUATION.md) | 관측·원인·규범·유비의 결론을 어떤 기준으로 평가합니까? | 운영시간 변경, 교육 효과, 도시 간 정책 비교 |
-| [통합 추론 연습 6문항](통합추론연습_REASONING_EXERCISES.md) | 필연적 결론, 부정, 약화, 가설 평가를 구분할 수 있습니까? | 직접 구성한 지문·선지와 정답 근거·반례 |
+| [조건문·양화·가능성](조건문과가능성_CONDITIONALS_AND_POSSIBILITY.md) | 조건의 연결·양화 범위·가능성과 필연성 | 선발 규칙, 원고 심사 배정, 가능한 참석 조합 |
+| [근거와 논증 평가](근거와논증평가_ARGUMENT_EVALUATION.md) | 연역·귀납·설명·인과·규범·유비의 평가 | 운영시간 변경, 교육 효과, 도시 간 정책 비교 |
+| [통합 추론 연습](통합추론연습_REASONING_EXERCISES.md) | 필연적 결론·부정·약화·가설 평가 | 직접 구성한 지문·선지와 정답 근거·반례 |
 
 조건문을 읽는 데 익숙하지 않으시면 첫 글의 자연어 사례부터 읽으시면 됩니다. 글의 주장을 평가하는 연습이 필요하시면 두 번째 글에서 결론·근거·연결 가정을 나누어 보실 수 있습니다. 마지막 글에서는 선지가 그럴듯한지에 앞서, 문제에서 요구한 판단의 종류를 확인합니다.
 
@@ -29,4 +29,4 @@
 
 ## English
 
-These articles connect natural-language conditions with argument evaluation. The first develops chains, quantifier scope and possibility; the second distinguishes deduction, induction, explanation, causation, normative judgment and analogy. Six original exercises include answer rationales and counterexamples. Formal logic and SAT links offer optional checks after a passage has been interpreted.
+These articles connect natural-language conditions with argument evaluation. The first develops chains, quantifier scope and possibility; the second distinguishes deduction, induction, explanation, causation, normative judgment and analogy. Original exercises include answer rationales and counterexamples. Formal logic and SAT links offer optional checks after a passage has been interpreted.

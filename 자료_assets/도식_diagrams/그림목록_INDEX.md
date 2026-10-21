@@ -23,7 +23,7 @@
 | Attention: 필요한 정보를 가중합으로 모으기 | [해설](../../분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md) | [PNG](attention-from-equations.png) · [SVG](attention-from-equations.svg) |
 | 열전도와 확산 | [해설](../../분야_topics/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md) | [PNG](heat-diffusion.png) · [SVG](heat-diffusion.svg) |
 | 역학, 에너지, 진동 | [해설](../../분야_topics/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md) | [PNG](mechanics-energy-oscillation.png) · [SVG](mechanics-energy-oscillation.svg) |
-| 논증 독해: 무엇을 근거로 어디까지 말할 수 있습니까 | [해설](../../언어이해와추리논증_reading-reasoning/추리논증_reasoning/논증독해_ARGUMENT_READING.md) | [PNG](argument-reading-and-counterexamples.png) · [SVG](argument-reading-and-counterexamples.svg) |
+| 논증 독해: 근거·결론·가정과 반론 | [해설](../../언어이해와추리논증_reading-reasoning/추리논증_reasoning/논증독해_ARGUMENT_READING.md) | [PNG](argument-reading-and-counterexamples.png) · [SVG](argument-reading-and-counterexamples.svg) |
 | 공식 기출 분석: 조건의 범위와 비교 대상을 놓치지 않기 | [해설](../../언어이해와추리논증_reading-reasoning/시험자료_assessments/LEET기출분석_LEET_CASES.md) | [PNG](official-past-paper-walkthroughs.png) · [SVG](official-past-paper-walkthroughs.svg) |
 | 추론 연습과 통찰: 익숙함을 이해로 착각하지 않기 | [해설](../../언어이해와추리논증_reading-reasoning/학습방법_STUDY_METHODS.md) | [PNG](practice-feedback-and-insight.png) · [SVG](practice-feedback-and-insight.svg) |
 | 안다는 것, 논증한다는 것, 옳다고 판단한다는 것 | [해설](../../인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/안다는것논증한다는것옳다고판단한다는것_knowledge-arguments-values.md) | [PNG](knowledge-arguments-values.png) · [SVG](knowledge-arguments-values.svg) |
