@@ -1,5 +1,7 @@
 # 동물의 아이디와 이름
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/59403) · Level 1 · MySQL
 
 ## 풀이

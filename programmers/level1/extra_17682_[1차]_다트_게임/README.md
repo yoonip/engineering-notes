@@ -1,5 +1,7 @@
 # [1차] 다트 게임
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/17682) · Level 1 · Python3
 
 유형: 문자열 · 파싱 · 스택

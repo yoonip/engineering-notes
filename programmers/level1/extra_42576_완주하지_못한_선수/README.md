@@ -1,5 +1,7 @@
 # 완주하지 못한 선수
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/42576) · Level 1 · Python3
 
 유형: 정렬 · 동명이인 처리

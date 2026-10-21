@@ -1,5 +1,7 @@
 # 가장 많이 받은 선물
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/258712) · Level 1 · Python3
 
 유형: 해시 · 2차원 집계

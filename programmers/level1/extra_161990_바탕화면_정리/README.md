@@ -1,5 +1,7 @@
 # 바탕화면 정리
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/161990) · Level 1 · Python3
 
 유형: 구현 · 최솟값·최댓값

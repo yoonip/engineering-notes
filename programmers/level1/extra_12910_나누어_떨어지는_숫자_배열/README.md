@@ -1,5 +1,7 @@
 # 나누어 떨어지는 숫자 배열
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/12910) · Level 1 · Python3
 
 유형: 배열 · 필터 · 정렬

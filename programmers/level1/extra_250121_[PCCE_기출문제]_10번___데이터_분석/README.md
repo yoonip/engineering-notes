@@ -1,5 +1,7 @@
 # [PCCE 기출문제] 10번 / 데이터 분석
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/250121) · Level 1 · Python3
 
 유형: 필터 · 정렬 · 딕셔너리

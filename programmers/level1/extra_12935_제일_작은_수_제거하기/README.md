@@ -1,5 +1,7 @@
 # 제일 작은 수 제거하기
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/12935) · Level 1 · Python3
 
 유형: 배열 · 최솟값 제거

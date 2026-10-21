@@ -1,5 +1,7 @@
 # 잡은 물고기의 평균 길이 구하기
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/293259) · Level 1 · MySQL
 
 ## 풀이

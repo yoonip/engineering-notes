@@ -1,5 +1,7 @@
 # [1차] 비밀지도
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/17681) · Level 1 · Python3
 
 유형: 비트 연산 · 문자열

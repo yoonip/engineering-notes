@@ -1,5 +1,7 @@
 # 문자열을 정수로 바꾸기
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/12925) · Level 1 · Python3
 
 유형: 기초 문법 · 자료형 변환

@@ -1,5 +1,7 @@
 # 자동차 대여 기록에서 장기/단기 대여 구분하기
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/151138) · Level 1 · MySQL
 
 ## 풀이

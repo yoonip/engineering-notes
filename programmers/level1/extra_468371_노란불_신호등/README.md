@@ -1,5 +1,7 @@
 # 노란불 신호등
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/468371) · Level 1 · Python3
 
 유형: 수학 · 최소공배수 · 완전탐색

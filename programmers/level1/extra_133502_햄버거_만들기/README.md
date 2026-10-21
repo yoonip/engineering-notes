@@ -1,5 +1,7 @@
 # 햄버거 만들기
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/133502) · Level 1 · Python3
 
 유형: 스택 · 패턴 제거

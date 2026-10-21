@@ -1,5 +1,7 @@
 # 정수 제곱근 판별
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/12934) · Level 1 · Python3
 
 유형: 정수론 · 정수 제곱근

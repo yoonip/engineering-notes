@@ -1,5 +1,7 @@
 # 로또의 최고 순위와 최저 순위
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/77484) · Level 1 · Python3
 
 유형: 집계 · 경우 나누기

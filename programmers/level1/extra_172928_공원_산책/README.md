@@ -1,5 +1,7 @@
 # 공원 산책
 
+[Level 1 목록 / Level 1 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/172928) · Level 1 · Python3
 
 유형: 구현 · 격자 시뮬레이션
