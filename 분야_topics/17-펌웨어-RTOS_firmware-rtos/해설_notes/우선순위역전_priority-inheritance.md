@@ -15,10 +15,10 @@ L이 임계 구역을 마치도록 H의 우선순위를 잠시 빌려 주는 방
 task의 본래 우선순위를 $`p_0(t)`$, 유효 우선순위를 $`p(t)`$라 하겠습니다. task t가 가진 mutex를 기다리는 task 집합을 W라고 하면 모델의 조건은
 
 ```math
-p(t)=\max\left(p_0(t),\max_{w\in W}p(w)\right).
+p(t)=\max\left(\{p_0(t)\}\cup\{p(w):w\in W\}\right).
 ```
 
-대기자가 또 다른 mutex의 소유자일 수 있으므로 전파는 한 번으로 끝나지 않습니다. H가 M의 lock을 기다리고 M이 L의 lock을 기다리면 H의 우선순위가 L까지 이어져야 합니다. `inherited_priorities()`는 변화가 없어질 때까지 이 관계를 반복합니다. 유효 값은 주어진 유한한 기본 우선순위 집합에서만 증가하므로 고정점에 도달합니다. 큰 task 집합을 위한 최적 kernel 알고리즘이 아니라 의존성을 보는 작은 모델입니다.
+기본 우선순위를 집합에 넣었으므로 대기자가 없는 `W=∅`에서도 `p(t)=p₀(t)`로 정의됩니다. 대기자가 또 다른 mutex의 소유자일 수 있으므로 전파는 한 번으로 끝나지 않습니다. H가 M의 lock을 기다리고 M이 L의 lock을 기다리면 H의 우선순위가 L까지 이어져야 합니다. `inherited_priorities()`는 기본 우선순위에서 시작하여 변화가 없어질 때까지 이 관계를 반복합니다. 유효 값은 주어진 유한한 기본 우선순위 집합에서만 증가하므로 고정점에 도달합니다. 큰 task 집합을 위한 최적 kernel 알고리즘이 아니라 의존성을 보는 작은 모델입니다. [Linux 6.12 RT-mutex의 Priority adjustments](https://docs.kernel.org/6.12/locking/rt-mutex-design.html#priority-adjustments)는 소유자의 기본 우선순위와 최상위 대기자의 우선순위를 비교하는 규칙을 설명합니다. Linux `prio`의 숫자 방향은 이 모델과 반대입니다.
 
 ### 같은 작업량으로 간섭을 비교합니다
 
@@ -73,10 +73,10 @@ Priority inheritance temporarily lends the waiter's priority to the owner so the
 Let $`p_0(t)`$ be base priority, $`p(t)`$ effective priority, and W the tasks waiting on mutexes owned by t:
 
 ```math
-p(t)=\max\left(p_0(t),\max_{w\in W}p(w)\right).
+p(t)=\max\left(\{p_0(t)\}\cup\{p(w):w\in W\}\right).
 ```
 
-A waiter can itself own another mutex. If H waits for M's lock and M waits for L's, H's priority must propagate to L. `inherited_priorities()` iterates until no effective priority changes. Values increase only within the finite set of supplied base priorities, so it reaches a fixed point. This is a small dependency model rather than an optimized kernel implementation.
+Including the base priority makes the set nonempty: with no waiters, `p(t)=p₀(t)`. A waiter can itself own another mutex. If H waits for M's lock and M waits for L's, H's priority must propagate to L. Starting from base priorities, `inherited_priorities()` iterates until no effective priority changes. Values increase only within the finite set of supplied base priorities, so it reaches a fixed point. This is a dependency model rather than an optimized kernel. [Linux 6.12, Priority adjustments](https://docs.kernel.org/6.12/locking/rt-mutex-design.html#priority-adjustments) compares the owner's base priority with its top waiter; Linux `prio` numbering runs in the opposite direction from this model.
 
 ### Compare interference at equal total work
 

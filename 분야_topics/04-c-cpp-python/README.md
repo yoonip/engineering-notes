@@ -9,44 +9,50 @@ C는 데이터 표현과 메모리 접근을 직접 다룹니다. MCU 펌웨어,
 배열은 같은 형식의 원소가 연속으로 놓인 자료구조이고, 포인터는 객체나 함수의 주소를 다룹니다. 함수 인자로 전달된 포인터에는 배열 길이가 자동으로 포함되지 않습니다. 구조체는 관련 데이터를 묶고, 비트 연산은 레지스터 필드나 통신 패킷을 다루는 데 사용합니다.
 
 ```c
-#include <stddef.h>
-#include <stdio.h>
+#include <stddef.h>  // #include는 size_t 등의 선언이 있는 표준 헤더를 포함합니다.
+#include <stdio.h>  // printf 선언을 포함합니다.
 
-double mean(const double *values, size_t count) {
-    double sum = 0.0;
-    for (size_t i = 0; i < count; ++i) {
-        sum += values[i];
-    }
-    return sum / (double)count;
-}
+double mean(const double *values, size_t count) {  // double 결과를 반환하며 포인터와 원소 수를 받습니다.
+    double sum = 0.0;  // 합계를 실수 0으로 초기화합니다.
+    for (size_t i = 0; i < count; ++i) {  // i를 0부터 count 직전까지 1씩 증가시킵니다.
+        sum += values[i];  // []로 i번째 원소를 읽고 +=로 합계에 더합니다.
+    }  // for 블록의 끝입니다.
+    return sum / (double)count;  // count를 double로 변환한 뒤 나눈 값을 반환합니다.
+}  // mean 함수의 끝입니다.
 
-int main(void) {
-    const double voltage[] = {3.1, 3.2, 3.3};
-    const size_t count = sizeof voltage / sizeof voltage[0];
-    printf("%.3f V\n", mean(voltage, count));
-    return 0;
-}
+int main(void) {  // 인수 없는 프로그램 진입 함수를 정의합니다.
+    const double voltage[] = {3.1, 3.2, 3.3};  // 변경하지 않을 실수 배열을 {}의 값으로 초기화합니다.
+    const size_t count = sizeof voltage / sizeof voltage[0];  // 배열 전체 byte 수를 원소 하나의 크기로 나눕니다.
+    printf("%.3f V\n", mean(voltage, count));  // 평균을 소수 셋째 자리까지 출력하고 줄을 바꿉니다.
+    return 0;  // 정상 종료를 나타내는 정수를 반환합니다.
+}  // main 함수의 끝입니다.
 ```
 
 이 예의 `mean`은 `count > 0`이고 그 길이만큼 읽을 수 있는 배열을 입력으로 받습니다. `const`는 이 포인터를 통해 원소를 바꾸지 않는다는 뜻입니다. Linux에서 GCC가 설치되어 있다면 `gcc -std=c17 -Wall -Wextra -Wpedantic mean.c -o mean`으로 빌드하고 `./mean`으로 실행합니다. 위 배열의 평균은 3.200 V입니다.
+
+`sizeof voltage / sizeof voltage[0]`는 여기처럼 실제 배열이 보이는 위치에서 사용합니다. 함수 안의 포인터 `values`에 같은 식을 쓰면 포인터 크기를 나누게 되어 길이를 얻지 못합니다. [WG14 N1570(C11 초안), §6.5.3.4 예 2·주 103](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
 
 `malloc`으로 확보한 메모리는 수명 관리가 필요합니다. 범위를 벗어난 접근, 해제 후 사용, 초기화하지 않은 값, 부호 있는 정수의 오버플로는 대표적인 오류 원인입니다. `volatile`은 장치 레지스터 접근 등에 쓰이지만 스레드 동기화나 원자성을 보장하지 않습니다.
 
 ## C++: 자원 수명과 추상화
 
-RAII는 객체 수명과 자원 수명을 묶는 방식입니다. 파일과 메모리를 소유하는 객체가 범위를 벗어나면 정리 작업이 이루어집니다. `std::vector`는 크기가 변하는 연속 배열이고, `std::unique_ptr`는 단일 소유권을 표현합니다. 템플릿은 자료형에 걸쳐 알고리즘을 재사용하게 합니다.
+RAII는 자원 해제를 소유 객체의 소멸에 연결하는 방식입니다. 자동 저장 기간의 지역 객체는 정상적으로 범위를 벗어날 때 소멸하지만, `std::exit()`는 그 지역 객체의 소멸자를 호출하지 않습니다. `abort()`나 전원 상실까지 정리를 보장하는 방식으로 해석하지 않습니다. [C++ 작업 초안의 선언문 §2](https://eel.is/c++draft/stmt.dcl), [프로그램 종료 규칙](https://eel.is/c++draft/support.start.term)
+
+`std::vector`는 크기가 변하는 연속 배열이고, `std::unique_ptr`는 단일 소유권을 표현합니다. 템플릿은 자료형에 걸쳐 알고리즘을 재사용하게 합니다.
 
 ```cpp
-#include <iostream>
-#include <numeric>
-#include <vector>
+#include <iostream>  // 표준 출력 스트림 std::cout의 선언을 포함합니다.
+#include <numeric>  // std::accumulate의 선언을 포함합니다.
+#include <vector>  // 연속 동적 배열 std::vector의 선언을 포함합니다.
 
-int main() {
-    const std::vector<double> voltage{3.1, 3.2, 3.3};
-    const double sum = std::accumulate(voltage.begin(), voltage.end(), 0.0);
-    std::cout << sum / voltage.size() << '\n';
-}
+int main() {  // 프로그램 진입 함수를 정의합니다.
+    const std::vector<double> voltage{3.1, 3.2, 3.3};  // double 원소를 가진 vector를 {}로 초기화합니다.
+    const double sum = std::accumulate(voltage.begin(), voltage.end(), 0.0);  // [begin,end)의 원소를 double 합계에 더합니다.
+    std::cout << sum / voltage.size() << '\n';  // <<로 비어 있지 않은 vector의 평균과 개행을 출력합니다.
+}  // main의 끝에서는 0을 반환한 것처럼 정상 종료합니다.
 ```
+
+`accumulate`의 세 번째 인수는 초기값이면서 누산 타입을 정합니다. 여기의 `0.0`을 `0`으로 바꾸면 누산기가 `int`가 되어 덧셈마다 실수 부분을 잃을 수 있습니다. 반환 뒤 `double` 변수에 담아도 이미 버린 소수부는 돌아오지 않습니다. [C++ 작업 초안, accumulate §2](https://eel.is/c++draft/accumulate)
 
 ## Python과 다른 언어의 연결
 
@@ -88,11 +94,15 @@ An array stores elements of one type contiguously. A pointer refers to an object
 
 The C example above computes the mean of three voltage measurements. Its `mean` function expects `count > 0` and an array with at least that many readable elements. `const` prevents modification through that pointer. With GCC on Linux, `gcc -std=c17 -Wall -Wextra -Wpedantic mean.c -o mean` builds it and `./mean` runs it. The mean of the example array is 3.200 V.
 
+The `sizeof` ratio determines the element count where the actual array is in scope. Applying it to the function's pointer parameter measures the pointer, not the original array. [WG14 N1570, §6.5.3.4, example 2 and footnote 103](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
+
 Memory allocated with `malloc` needs explicit lifetime management. Out-of-bounds access, use after free, uninitialized values, and signed integer overflow are common sources of errors. `volatile` is useful for accesses such as device registers, but does not provide thread synchronization or atomicity.
 
 ### C++: resource lifetime and abstraction
 
-RAII ties resource lifetime to object lifetime. An object that owns a file or memory releases it when the object leaves scope. `std::vector` provides a resizable contiguous array, `std::unique_ptr` expresses exclusive ownership, and templates allow algorithms to work across types. The C++ example performs the same mean calculation with a vector and `std::accumulate`.
+RAII ties resource release to destruction of its owner. Automatic local objects are destroyed on ordinary scope exit, but `std::exit()` does not destroy them; `abort()` and power loss do not promise this cleanup. [C++ declaration statements](https://eel.is/c++draft/stmt.dcl), [termination rules](https://eel.is/c++draft/support.start.term)
+
+`std::vector` provides a resizable contiguous array, `std::unique_ptr` expresses exclusive ownership, and templates allow algorithms across types. In the existing C++ mean example, `accumulate` uses the initial value's type for its accumulator: `0.0` keeps a `double` sum, whereas `0` can truncate fractional parts during integer accumulation. Converting the final result to `double` cannot recover them. [C++ accumulate §2](https://eel.is/c++draft/accumulate)
 
 ### Connecting Python and other languages
 

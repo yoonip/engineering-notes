@@ -30,7 +30,9 @@ STM32, ESP32/ESP-IDF, Nordic nRF, NXP, TI, Microchip AVR/PIC/SAM, Renesas, RP204
 
 펌웨어는 CPU가 실행하는 소프트웨어이며, 주변장치와 보드의 동작을 제어합니다. 컴파일러와 어셈블러가 만든 목적 파일을 링커가 연결하면 ELF가 생성됩니다. ELF에는 실행 코드와 데이터의 배치 정보, 심볼과 디버그 정보가 포함될 수 있습니다.
 
-일반적인 Cortex-M 시작 코드에서는 벡터 테이블의 초기 스택 포인터와 Reset Handler 주소를 이용합니다. Reset Handler는 `.data`의 초기값을 RAM으로 복사하고 `.bss`를 0으로 채운 뒤 `main()`을 호출합니다. 링커 스크립트는 Flash와 RAM의 주소·크기, 각 섹션의 배치를 지정합니다.
+Cortex-M의 벡터 테이블에는 초기 스택 포인터와 Reset Handler 주소가 들어 있습니다. [CMSIS-Core 시작 파일 설명과 템플릿](https://arm-software.github.io/CMSIS_6/latest/Core/startup_c_pg.html)의 `Reset_Handler`는 `SystemInit()` 뒤 `__PROGRAM_START()`로 C/C++ 런타임에 제어를 넘깁니다. `.data` 복사·`.bss` 초기화·필요한 C++ 정적 객체 초기화와 `main()` 호출은 사용하는 시작 코드와 런타임의 역할 분담에 따라 수행됩니다. 직접 작성한 handler가 복사·초기화 루프까지 맡는 구현도 있으므로, 함수 이름만 보고 초기화 순서를 단정하지 않습니다.
+
+CMSIS 템플릿처럼 `SystemInit()`이 런타임 초기화보다 먼저 호출된다면 일반 전역·정적 변수의 C 초기값을 그 함수에서 이미 사용할 수 있다고 가정하면 안 됩니다. 실제 장치의 시작 파일·런타임 진입점·링커 배치를 함께 확인해야 합니다. 링커 스크립트는 Flash와 RAM의 주소·크기, 각 섹션의 배치를 지정합니다.
 
 | 영역 | 내용 |
 | --- | --- |
@@ -107,7 +109,9 @@ STM32, ESP32, Nordic nRF, NXP, TI, Microchip, Renesas, and RP2040/RP2350 represe
 
 A compiler and assembler produce object files, and the linker combines them into an ELF file. An ELF may contain executable code, data placement, symbols, and debug information.
 
-A typical Cortex-M startup sequence reads the initial stack pointer and Reset Handler address from the vector table. The handler copies `.data` initial values into RAM, clears `.bss`, and calls `main()`. The linker script defines Flash and RAM addresses, sizes, and section placement. `.text` holds executable code, `.rodata` read-only constants, `.data` initialized global and static variables, and `.bss` zero-initialized global and static variables.
+The Cortex-M vector table contains the initial stack pointer and Reset Handler address. The [CMSIS-Core template](https://arm-software.github.io/CMSIS_6/latest/Core/startup_c_pg.html) calls `SystemInit()`, then enters the C/C++ runtime through `__PROGRAM_START()`. Startup code and runtime divide memory initialization, C++ initialization and the call to `main()`; a custom handler may perform the memory loops itself.
+
+When `SystemInit()` precedes runtime initialization, ordinary global/static C initial values cannot be assumed there. Inspect the actual startup file, runtime and linker layout. Typical sections are `.text` for code, `.rodata` for constants, `.data` for initialized data and `.bss` for zero-initialized data.
 
 ### Interrupts, DMA, and FreeRTOS
 
