@@ -2,7 +2,7 @@
 
 [전체 목차](../../분야별목차_CATALOG.md) · [처음으로](../../README.md)
 
-Python은 자동화, 데이터 분석, 수치 계산, AI 모델 개발을 하나의 작업 흐름으로 연결합니다. Jupyter Notebook은 코드·설명·수식·그래프를 셀 단위로 구성하는 문서 형식이며, JupyterLab은 노트북과 파일·터미널을 함께 다루는 작업 환경입니다. 실제 코드는 커널이라는 별도 실행 프로세스에서 실행됩니다.
+Python은 자동화, 데이터 분석, 수치 계산, AI 모델 개발을 하나의 작업 흐름으로 연결합니다. Jupyter Notebook은 브라우저에서 노트북을 작성하고 실행하는 애플리케이션이며, JupyterLab은 노트북과 파일·터미널을 함께 다루는 작업 환경입니다. 두 환경에서 사용하는 `.ipynb`는 코드·설명·출력 등을 셀 단위로 저장하는 JSON 문서 형식입니다. 실제 코드는 커널이라는 별도 실행 프로세스에서 실행됩니다. [Notebook 문서의 소개](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)와 [노트북 파일 형식](https://nbformat.readthedocs.io/en/latest/format_description.html)에서 애플리케이션과 문서를 구분합니다.
 
 ## 환경을 나누는 이유
 
@@ -56,7 +56,7 @@ Python, pip, uv, venv, Conda/Mamba, Jupyter Notebook/Lab, IPython, NumPy, SciPy,
 
 ## English
 
-Python connects automation, data analysis, numerical computing, and AI development. A Jupyter Notebook combines code, explanations, equations, and plots in cells. JupyterLab provides a workspace for notebooks, files, and terminals. Code runs in a separate process called a kernel.
+Python connects automation, data analysis, numerical computing, and AI development. Jupyter Notebook is a browser-based application for editing and running notebooks. JupyterLab provides a workspace for notebooks, files, and terminals. Both use `.ipynb`, a JSON document format that stores code, explanations and outputs in cells. Code runs in a separate process called a kernel. See the [Notebook introduction](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html) and [notebook file format](https://nbformat.readthedocs.io/en/latest/format_description.html).
 
 ### Keeping project environments separate
 
