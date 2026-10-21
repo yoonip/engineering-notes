@@ -10,7 +10,7 @@
 
 [TI의 boundary-scan BIST 자료](https://www.ti.com/lit/pdf/scta043)는 signature 압축과 programmable polynomial tap을 설명합니다. [Verimag 저자들의 signature 효율 연구](https://www-verimag.imag.fr/~caspi/PAPIERS/ieeetc91.html)는 오류열 분포 가정·sequence 길이와 보장 범위의 관계를 설명합니다. 아래에서는 그 일반 문제를 작은 GF(2) 선형 map으로 직접 계산합니다.
 
-### 어떤 polynomial, 어떤 bit 순서입니까
+### 생성 다항식과 비트 순서
 
 width m=3, 생성다항식 $`g(x)=x^3+x+1`$을 씁니다. register 초기값은 0, 입력은 MSB-first, final XOR와 reflection은 없습니다. 매 bit b에서 feedback은 최상위 state bit XOR b입니다. register를 왼쪽으로 한 칸 밀어 3비트로 자르고, feedback=1이면 low polynomial 011을 XOR합니다.
 
