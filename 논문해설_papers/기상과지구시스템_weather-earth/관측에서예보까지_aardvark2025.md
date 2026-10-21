@@ -2,6 +2,8 @@
 
 날씨를 예측하려면 앞으로의 변화만 계산하면 될까요? 현재 대기의 상태부터 알아내야 합니다. 위성은 구름과 복사 신호를, 관측소는 특정 위치의 온도와 바람을 측정합니다. 서로 다른 자료를 지금의 대기 상태로 연결하는 단계도 예보의 일부입니다. 이 논문은 그 단계부터 지역 예보까지 학습하는 구조를 다룹니다.
 
+[관측으로 초기 상태를 추정하는 구조](#초기-상태와-미래-상태는-다른-문제입니다), [논문의 비교 조건](#무엇과-어떤-조건에서-비교했나요), [직접 계산하는 MAE·RMSE](#직접-계산하는-mae와-rmse) 순서로 읽으시면 입력 자료·시험 조건·평가 지표를 구분하실 수 있습니다. 원문 위치와 열람 범위는 바로 아래에 정리되어 있습니다.
+
 ## 원문과 읽은 범위
 
 Anna Allen, Stratis Markou, Will Tebbutt, James Requeima, Wessel P. Bruinsma, Tom R. Andersson, Michael Herzog, Nicholas D. Lane, Matthew Chantry, J. Scott Hosking, Richard E. Turner의 「End-to-end data-driven weather prediction」입니다. Cambridge·Toronto·Microsoft Research·British Antarctic Survey·ECMWF·Alan Turing Institute가 참여했습니다. Nature 641, 1172–1179, 온라인 2025년 3월 20일, 권호 5월 29일입니다. [출판 원문과 DOI](https://www.nature.com/articles/s41586-025-08897-0)
