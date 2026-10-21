@@ -10,13 +10,13 @@ SoC는 시스템에 필요한 여러 기능을 통합한 반도체입니다. CPU
 
 통합 메모리는 여러 연산 장치가 큰 메모리 풀에 접근하도록 하는 구조입니다. 자료 복사의 일부를 줄일 수 있지만 모든 접근이 같은 지연이거나 서로의 대역폭 경쟁이 없어지는 것은 아닙니다. 같은 총용량을 CPU와 GPU의 각각 독립적인 전용 용량처럼 두 번 세어서도 안 됩니다.
 
-## 제품 판을 고정하기
+## 모델별 사양과 비교 조건
 
 | 사례 | 공식 자료에서 확인한 내용 | 비교 조건 |
 | --- | --- | --- |
 | 기본 M5, 2025-10 | 최대 10코어 CPU·10코어 GPU, 통합 메모리 대역폭 153GB/s입니다. | Pro·Max의 사양과 섞지 않습니다. |
 | M5 Pro·Max, 2026-03 | 두 다이를 연결하는 Fusion 구조와 더 큰 메모리 구성을 제시합니다. | 기본 M5가 두 다이 구조라는 뜻은 아닙니다. |
-| Snapdragon 8 Elite Gen 5 | Oryon CPU·Adreno GPU·Hexagon NPU 등을 통합한 모바일 플랫폼입니다. | 제품 브리프에도 판별 최대 CPU 속도 차이를 명시합니다. |
+| Snapdragon 8 Elite Gen 5 | Oryon CPU·Adreno GPU·Hexagon NPU 등을 통합한 모바일 플랫폼입니다. | 제품 브리프는 플랫폼 버전에 따라 최대 CPU 속도가 다르다고 명시합니다. |
 
 근거는 [M5 출시 설명](https://www.apple.com/newsroom/2025/10/apple-unleashes-m5-the-next-big-leap-in-ai-performance-for-apple-silicon/), [M5 Pro·Max 구조 설명](https://www.apple.com/uk/newsroom/2026/03/apple-debuts-m5-pro-and-m5-max-to-supercharge-the-most-demanding-pro-workflows/), [Qualcomm 제품 브리프 Rev.B](https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/documents/Snapdragon-8-Elite-Gen-5-product-brief.pdf)입니다. 제조사의 최대 성능 비교는 지정한 작업의 주장으로 읽습니다.
 
