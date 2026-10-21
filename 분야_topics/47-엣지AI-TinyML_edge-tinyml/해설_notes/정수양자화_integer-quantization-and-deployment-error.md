@@ -21,7 +21,7 @@ $$\vert x-\hat x\vert \le s/2.$$
 
 반올림의 동점 처리도 계약의 일부입니다. 예제는 Python `round`의 ties-to-even을 사용합니다. $`0.25/0.5=0.5`$는 0으로, $`0.75/0.5=1.5`$는 2로 갑니다. ONNX `QuantizeLinear`도 최근접 짝수 반올림과 saturation을 명시합니다. 실제 kernel의 연산 순서·수치 형식은 대상 연산자 사양과 맞춰야 합니다. [ONNX QuantizeLinear](https://onnx.ai/onnx/operators/onnx__QuantizeLinear.html)
 
-## 정수 내적은 왜 누산 범위가 중요합니까
+## 정수 내적과 누산 범위
 
 벡터 $`x,w`$에 서로 다른 $`s_x,z_x,s_w,z_w`$를 사용하면
 
