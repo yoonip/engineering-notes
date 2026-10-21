@@ -31,7 +31,7 @@ Rasterization은 삼각형 같은 primitive를 화면 표본과 연결합니다.
 $$p=\lambda_a a+\lambda_b b+\lambda_c c,
 \qquad\lambda_a+\lambda_b+\lambda_c=1.$$
 
-퇴화하지 않은 삼각형에서는 signed area 비율로 계수를 구할 수 있습니다. 예를 들어 $`\lambda_a=\mathrm{cross}(b-p,c-p)/\mathrm{cross}(b-a,c-a)`$입니다. 나머지도 순환시켜 얻습니다. 모든 계수가 음이 아니면 삼각형 내부 또는 경계입니다. $`a=(0,0),b=(2,0),c=(0,2),p=(0.5,0.5)`$의 계수는 ((0.5,0.25,0.25))입니다.
+퇴화하지 않은 삼각형에서는 signed area 비율로 계수를 구할 수 있습니다. 예를 들어 $`\lambda_a=\mathrm{cross}(b-p,c-p)/\mathrm{cross}(b-a,c-a)`$입니다. 나머지도 순환시켜 얻습니다. 모든 계수가 음이 아니면 삼각형 내부 또는 경계입니다. $`a=(0,0),b=(2,0),c=(0,2),p=(0.5,0.5)`$의 계수는 $`(0.5,0.25,0.25)`$입니다.
 
 실제 rasterizer는 pixel center나 multisample 위치를 검사합니다. 공유 edge를 양쪽 삼각형이 중복해서 채우지 않도록 경계 소유 규칙이 필요합니다. 예제는 계수만 계산하며 top-left rule이나 완전한 rasterizer를 구현하지 않습니다. [OpenGL §14.6](https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf)
 
@@ -63,7 +63,7 @@ Division by depth creates perspective: the same physical size appears smaller fa
 
 ### Triangle sampling and interpolation
 
-Barycentric coordinates express $`p=\sum\lambda_i v_i`$ with coefficients summing to one. Signed area ratios compute them for a nondegenerate triangle. The example triangle and point above give ((0.5,0.25,0.25)); nonnegative coefficients identify its closed interior. Rasterizers evaluate pixel centers or multisample locations and need an ownership rule so adjacent triangles do not both fill a shared edge. The example computes coefficients only and implements neither a top-left rule nor a complete rasterizer. [OpenGL §14.6](https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf)
+Barycentric coordinates express $`p=\sum\lambda_i v_i`$ with coefficients summing to one. Signed area ratios compute them for a nondegenerate triangle. The example triangle and point above give $`(0.5,0.25,0.25)`$; nonnegative coefficients identify its closed interior. Rasterizers evaluate pixel centers or multisample locations and need an ownership rule so adjacent triangles do not both fill a shared edge. The example computes coefficients only and implements neither a top-left rule nor a complete rasterizer. [OpenGL §14.6](https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf)
 
 General perspective-correct interpolation uses the ratio involving $`f_i/w_i`$ and $`1/w_i`$. Screen-linear distance is not surface-linear distance. Equal $`w_i`$ reduces the expression to ordinary affine interpolation. Window depth and `noperspective` or `flat` attributes follow their own API rules rather than blindly using this formula.
 
