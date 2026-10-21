@@ -6,7 +6,7 @@
 
 ### 느린 계산과 느린 클록은 다릅니다
 
-클록은 10 ns마다 뛰지만 어떤 레지스터는 clock enable이 세 번에 한 번만 켜질 수 있습니다. 그 레지스터 사이의 데이터가 실제로 30 ns 동안 안정될 기회를 가진다면 timing 분석도 그 기능을 반영해야 합니다. multicycle은 이 기능상의 관계를 timing 도구에 알려 주는 제약입니다. 계산이 느려서 timing을 못 맞췄다는 이유만으로 주기를 늘려 적는 해결책은 아닙니다.
+클록은 10 ns마다 뛰지만 어떤 레지스터는 clock enable이 세 번에 한 번만 켜질 수 있습니다. 중간 에지에서는 데이터를 사용하지 않고 세 번째 에지에서만 받는 구조라면, timing 분석에도 3주기의 launch–capture 간격을 반영합니다. 조합 회로에 허용되는 지연은 이 간격에서 clock-to-Q, setup time 등 필요한 시간을 뺀 값입니다. multicycle은 이 기능상의 관계를 timing 도구에 알려 주는 제약입니다. 계산이 느려서 timing을 못 맞췄다는 이유만으로 주기를 늘려 적는 해결책은 아닙니다.
 
 이 글은 launch와 capture가 같은 주파수·같은 위상의 한 clock이고, 관련 enable이 N주기마다 함께 열리며 중간 capture가 기능적으로 무효인 경우만 다룹니다. 다른 주파수, 위상 이동, latch, CDC에는 같은 숫자 규칙을 그대로 적용하지 않습니다. [AMD의 enable 기반 예](https://docs.amd.com/r/2020.2-English/ug1387-acap-hardware-ip-platform-dev-methodology/Relaxing-the-Setup-Requirement-While-Keeping-Hold-Unchanged?contentId=mDPen7K8UpE03COFvi9s_g)와 [Altera Timing Analyzer 25.3](https://docs.altera.com/r/docs/683243/25.3/quartus-prime-pro-edition-user-guide-timing-analyzer/relaxing-setup-with-multicycle-set_multicyle_path)의 setup/hold 쌍을 교차 확인했습니다.
 
@@ -40,8 +40,8 @@ T=10 ns, s=0.1 ns, $`t_{cq,max}=1`$, $`d_{max}=12`$, setup=1 ns, $`t_{cq,min}=0.
 setup이 좋아졌는데 hold가 갑자기 매우 나빠진 이유는 배선이 변해서가 아니라 검사 edge의 의미가 달라졌기 때문입니다. 같은 clock과 명확히 한정한 레지스터 집합을 대상으로 하는 개념적인 Tcl 예는 다음과 같습니다.
 
 ```tcl
-set_multicycle_path 3 -setup -from [get_cells src_reg*] -to [get_cells dst_reg*]
-set_multicycle_path 2 -hold  -from [get_cells src_reg*] -to [get_cells dst_reg*]
+set_multicycle_path 3 -setup -from [get_cells src_reg*] -to [get_cells dst_reg*]; # []는 셀 목록을 구하고, setup 검사를 3주기 간격으로 지정합니다.
+set_multicycle_path 2 -hold  -from [get_cells src_reg*] -to [get_cells dst_reg*]; # hold 에지를 2주기 되돌려 원래 같은 에지 검사를 유지합니다.
 ```
 
 `get_cells`와 register matching, hierarchy 표기, start/end 기본값은 사용하는 도구에서 확인해야 합니다. 특히 clock 전체에 예외를 주면 의도하지 않은 다른 경로까지 완화될 수 있습니다. 먼저 정확한 startpoint와 endpoint 목록이 잡혔는지 보고, 변경 전후의 launch/capture edge를 timing report에서 읽습니다.
@@ -61,7 +61,7 @@ python -m unittest -v test_models.HardwareModels.test_multicycle_setup_and_hold
 
 ### A slow operation is not necessarily a slow clock
 
-A clock can tick every 10 ns while a register group enables once every three cycles. If the functional contract genuinely gives a path 30 ns, a multicycle constraint communicates that relationship to timing analysis. It is not justified merely because an otherwise single-cycle path misses timing.
+A clock can tick every 10 ns while a register group enables once every three cycles. If intermediate captures are unused and the destination accepts data only on the third edge, a multicycle constraint communicates the three-period launch–capture interval. The available combinational delay excludes clock-to-Q, setup time and other timing adjustments. It is not justified merely because an otherwise single-cycle path misses timing.
 
 This treatment assumes one same-frequency, same-phase clock, matching enables every N cycles and functionally irrelevant intermediate captures. Different frequencies, shifted clocks, latches and CDC require their own edge analysis. The paired setup/hold interpretation is checked against [AMD's enable-based example](https://docs.amd.com/r/2020.2-English/ug1387-acap-hardware-ip-platform-dev-methodology/Relaxing-the-Setup-Requirement-While-Keeping-Hold-Unchanged?contentId=mDPen7K8UpE03COFvi9s_g) and [Altera Timing Analyzer 25.3](https://docs.altera.com/r/docs/683243/25.3/quartus-prime-pro-edition-user-guide-timing-analyzer/relaxing-setup-with-multicycle-set_multicyle_path).
 
@@ -87,5 +87,5 @@ Functional verification must confirm that intermediate destination captures are 
 
 ## 출처 / Sources
 
-- AMD, *UG1387*: relaxing setup while retaining hold for clock-enabled paths.
+- AMD, *UG1387*, 2020.2 (2021-03-26), “Relaxing the Setup Requirement While Keeping Hold Unchanged”: relaxing setup while retaining hold for clock-enabled paths.
 - Altera, *Quartus Prime Pro Timing Analyzer 25.3*, 2026-09-03: N setup and N−1 hold examples. Links are given above.
