@@ -2,7 +2,7 @@
 
 [실행 코드](../../../예제_examples/심화_advanced/ai_data/advanced_ai_models.py) · [CLI](../../../예제_examples/심화_advanced/ai_data/demo.py) · [검증](../../../예제_examples/심화_advanced/ai_data/test_advanced_ai.py)
 
-## 다음 한 글자와 전체 경로의 점수
+## 다음 토큰과 전체 경로의 점수
 
 확률이 가장 높은 다음 token만 고르는 greedy는 각 시점의 선택입니다. 전체 문장의 확률이 가장 높은 경로를 찾는 문제와 같지 않습니다. 첫 선택이 조금 불리해도 이후 선택의 조건부 확률이 높을 수 있습니다. Beam search는 매 단계 여러 prefix를 남겨 이 차이를 일부 탐색합니다. 유한한 beam으로 버린 prefix는 다시 돌아오지 않으므로 전역 최적해를 항상 찾는 알고리즘은 아닙니다. [Hugging Face generation strategies](https://huggingface.co/docs/transformers/en/generation_strategies)
 
