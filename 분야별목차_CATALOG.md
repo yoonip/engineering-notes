@@ -24,7 +24,7 @@
 
 [현장 계측과 검증](현장계측과검증_measurement-validation/README.md)은 계측기 9개 모델의 사용 절차, DMA·캐시, Cortex-M 예외, PVT·shmoo, CAN·EtherCAT·Modbus, SCPI 자동화를 다룹니다. [업무 질문별 읽는 순서](현장계측과검증_measurement-validation/README.md#업무-질문에서-시작하기)는 C/C++·펌웨어·RTL·AI·Python의 기존 구현으로 이어집니다.
 
-[설계와 검증 사례](설계와검증사례_engineering-cases/README.md)는 C/C++의 길이·소유권, 펌웨어 공개 순서, RTOS 동시성, 인터럽트·DMA·캐시, CAN·SPI·I2C·UART·이더넷, 워치독·리셋, USB·PCIe, 부트로더·업데이트, NVMe·eMMC·SD, 저널 복구, NAND 관리, FTL 매핑, 파일시스템 복구, ECC, DDR, RTL·CDC와 기준 모델, 칩 산술·시험 ID·자동화, AI 배포·평가, FPGA·SQLite의 38개 사례를 실제 코드·원인·해결·실행 기록으로 설명합니다. 장비 사양·구성한 계산·로컬 실행·실측의 범위는 각 본문에 구분해 두었습니다.
+[설계와 검증 사례](설계와검증사례_engineering-cases/README.md)는 C/C++의 길이·소유권, 펌웨어 공개 순서, RTOS 동시성, 인터럽트·DMA·캐시, CAN·SPI·I2C·UART·이더넷, 워치독·리셋, USB·PCIe, 부트로더·업데이트, NVMe·eMMC·SD, 저널 복구, NAND 관리, FTL 매핑, 파일시스템 복구, 백업 복원, RAID, I/O 재시도, ECC, DDR, RTL·CDC와 기준 모델, 칩 산술·시험 ID·자동화, AI 배포·평가, FPGA·SQLite의 41개 사례를 실제 코드·원인·해결·실행 기록으로 설명합니다. 장비 사양·구성한 계산·로컬 실행·실측의 범위는 각 본문에 구분해 두었습니다.
 
 ## 개발 환경과 언어 | Development environments and languages
 

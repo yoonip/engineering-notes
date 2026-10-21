@@ -1,6 +1,6 @@
 # 설계와 검증 사례 | Engineering decisions and checks
 
-요구사항과 실제 코드를 연결하고, 같은 입력에서 잘못된 조건과 해결한 조건을 비교합니다. 38개 사례의 본문에서 원인·대안·수정 방법을 읽고, 날짜별 기록에서 환경·명령·관측값을 확인하실 수 있습니다.
+요구사항과 실제 코드를 연결하고, 같은 입력에서 잘못된 조건과 해결한 조건을 비교합니다. 41개 사례의 본문에서 원인·대안·수정 방법을 읽고, 날짜별 기록에서 환경·명령·관측값을 확인하실 수 있습니다.
 
 ## C·C++·펌웨어
 
@@ -43,6 +43,9 @@
 | [FTL GC·TRIM·주소 재사용](FTL의GC와폐기된주소재사용_ftl-gc-trim-reuse.md) | 오래된 이동 계획, 삭제 상태와 재사용된 물리 주소의 세대를 구분합니다. | [2026-10-21](검증기록_evidence/FTL매핑과GC중단검사_20261021.md) |
 | [파일시스템 검사·사본 복구](파일시스템의손상검사와복구계획_filesystem-check-repair.md) | 학습 이미지의 구조·내용을 검사하고 원본 해시에 묶인 복구 계획을 실행합니다. | [2026-10-21](검증기록_evidence/파일시스템이미지검사와복구_20261021.md) |
 | [파일 이름·블록 소유권](파일이름과블록소유권의복구_filesystem-orphans-block-ownership.md) | 고아 파일·정상 하드 링크·블록 충돌과 복구를 거부해야 할 조건을 비교합니다. | [2026-10-21](검증기록_evidence/파일시스템이미지검사와복구_20261021.md) |
+| [백업 내용 복원·완전성](백업세트의내용복원과완전성_backup-restore-integrity.md) | 실제 payload 사본으로 이름·내용·세대를 복원하고 누락·미완성 게시를 검사합니다. | [2026-10-21](검증기록_evidence/백업복원과누락검사_20261021.md) |
+| [RAID 패리티 부분 갱신](RAID패리티의부분갱신과복원_raid-parity-write-hole.md) | 서로 다른 시점의 데이터·패리티에서 생기는 오복원과 redo 자료의 범위를 비교합니다. | [2026-10-21](검증기록_evidence/RAID패리티중단과복원검사_20261021.md) |
+| [시간초과·늦은 쓰기·재시도](시간초과뒤늦은쓰기와재시도_block-io-timeout-retry.md) | 완료 통지 무시와 옛 쓰기의 실행 종료, 버퍼 소유권·후속 접근을 구분합니다. | [2026-10-21](검증기록_evidence/IO재시도와늦은완료검사_20261021.md) |
 
 ## RTL·칩 산술·시험 데이터
 
@@ -72,8 +75,8 @@
 - [계측 자동화의 offline 기록](검증기록_evidence/계측자동화모의검사_20261021.md): 기존 19개 mock·모형 검사의 범위입니다.
 - [구현 프로젝트](../프로젝트_projects/README.md): 기존 소스와 이전 실험·실행 결과입니다.
 
-인터럽트·캐시·워치독 정책과 원시 통신 해석은 호스트 모델이며, UDP loopback은 실제 로컬 socket을 사용합니다. RTL 내적기·비동기 FIFO와 DDR 명령 fixture는 HDL 컴파일·시뮬레이션과 Python 비교를 연결합니다. USB·PCIe는 호스트 전송 모델이며, 펌웨어 업데이트와 데이터 저널 복구는 실제 파일 기록과 별도 프로세스의 재시작을 사용합니다. NVMe·eMMC·SD는 제한된 전송·보존 모델이며 ECC는 고정 부호의 오류 주입을 실행합니다. NAND는 작은 블록·마모·읽기 상태 모델이며, FTL은 호스트 파일의 매핑 기록과 별도 프로세스 종료를 사용합니다. 파일시스템 복구는 자체 학습 이미지의 사본에만 적용합니다. 이전 FPGA의 성공 1회와 반복 컴파일 실패 기록, 기존 GPU 결과도 해당 시점의 근거로 보존합니다. 실물 측정·산업 데이터·동시 스트레스 검증의 범위는 각 관측에서 구분합니다.
+인터럽트·캐시·워치독 정책과 원시 통신 해석은 호스트 모델이며, UDP loopback은 실제 로컬 socket을 사용합니다. RTL 내적기·비동기 FIFO와 DDR 명령 fixture는 HDL 컴파일·시뮬레이션과 Python 비교를 연결합니다. USB·PCIe는 호스트 전송 모델이며, 펌웨어 업데이트와 데이터 저널 복구는 실제 파일 기록과 별도 프로세스의 재시작을 사용합니다. NVMe·eMMC·SD는 제한된 전송·보존 모델이며 ECC는 고정 부호의 오류 주입을 실행합니다. NAND는 작은 블록·마모·읽기 상태 모델이며, FTL은 호스트 파일의 매핑 기록과 별도 프로세스 종료를 사용합니다. 파일시스템 복구는 자체 학습 이미지의 사본에만 적용합니다. 백업은 실제 payload 파일을 새 폴더로 복원하고, RAID는 세 호스트 파일의 패리티·복원 계약을 검사합니다. I/O 재시도는 고정 사건 모델로 옛 작업의 실행과 완료 통지를 구분합니다. 이전 FPGA의 성공 1회와 반복 컴파일 실패 기록, 기존 GPU 결과도 해당 시점의 근거로 보존합니다. 실물 측정·산업 데이터·동시 스트레스 검증의 범위는 각 관측에서 구분합니다.
 
 ## English
 
-Thirty-eight cases connect requirements, executable code, deliberately faulty controls, intended fixes and dated observations. They cover C/C++ ownership, firmware publication, RTOS scheduling/notifications, interrupt/DMA/cache contracts, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, file-backed firmware updates, NVMe/eMMC/SD, file-journal recovery, NAND wear/read-disturb models, file-backed FTL mapping, educational filesystem repair, ECC fault injection, DDR command/pattern checks, RTL/reference and CDC/FIFO comparison, chip arithmetic, test identity, subprocess reports, AI serving/evaluation, FPGA frames and SQLite updates. HDL simulation, deterministic host models and physical measurements have distinct scopes.
+Forty-one cases connect requirements, executable code, deliberately faulty controls, intended fixes and dated observations. They cover C/C++ ownership, firmware publication, RTOS scheduling/notifications, interrupt/DMA/cache contracts, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, file-backed firmware updates, NVMe/eMMC/SD, file-journal recovery, NAND wear/read-disturb models, file-backed FTL mapping, educational filesystem repair, payload backup restoration, file-backed RAID parity, timed-out I/O retry models, ECC fault injection, DDR command/pattern checks, RTL/reference and CDC/FIFO comparison, chip arithmetic, test identity, subprocess reports, AI serving/evaluation, FPGA frames and SQLite updates. HDL simulation, deterministic host models and physical measurements have distinct scopes.
