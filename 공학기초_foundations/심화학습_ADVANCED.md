@@ -2,7 +2,7 @@
 
 [전체 목차](../분야별목차_CATALOG.md) · [기초 해설](분야별학습_TOPIC_GUIDES.md) · [심화 실행 예제](../예제_examples/심화_advanced/README.md) · [문서별 출처](../참고자료_references/심화출처_ADVANCED_SOURCES.md)
 
-기초 개념에서 한 걸음 더 들어가, 계산식이 나오는 과정과 실행 가능한 구현을 연결한 60편입니다. 회로의 노드 방정식, RTL의 수 표현, RTOS 자원 대기, 학습의 역전파처럼 분야마다 중요한 동작을 직접 계산합니다.
+기초 개념에서 한 걸음 더 들어가, 계산식이 나오는 과정과 실행 가능한 구현을 연결한 심화 학습 자료입니다. 회로의 노드 방정식, RTL의 수 표현, RTOS 자원 대기, 학습의 역전파처럼 분야마다 중요한 동작을 직접 계산합니다.
 
 각 글은 한국어 설명 뒤에 같은 내용을 영어로 담습니다. 수식은 가정과 중간 단계를 함께 적고, 코드에는 독립적인 기준 계산·경계 조건·불변식 검사를 연결했습니다. 상태 전이가 중심인 주제는 수식 대신 실행 순서와 반례를 따라갑니다.
 
@@ -10,7 +10,7 @@
 
 ## English
 
-These 60 advanced articles connect step-by-step reasoning with executable implementations: nodal circuit equations, fixed-point RTL, RTOS resource dependencies, backpropagation and more. Each Korean explanation is followed by an equivalent English section.
+These advanced articles connect step-by-step reasoning with executable implementations: nodal circuit equations, fixed-point RTL, RTOS resource dependencies, backpropagation and more. Each Korean explanation is followed by an equivalent English section.
 
 Derivations state assumptions and intermediate steps. Independent calculations, boundary cases and invariants check the implementations. State-oriented topics use transitions and counterexamples where equations alone would not explain the behavior.
 
@@ -81,7 +81,7 @@ Commands and inputs appear in the articles and example READMEs. Verification rec
 | 40 데이터베이스와 데이터 공학<br>Databases & Data Engineering | [SQLite WAL에서 snapshot과 낙관적 갱신을 관찰하기](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/해설_notes/WAL스냅샷과버전충돌_wal-snapshots.md) · [English](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/해설_notes/WAL스냅샷과버전충돌_wal-snapshots.md#english) |
 | 41 클라우드와 분산 시스템<br>Cloud, Distributed Systems & Operations | [Lamport clock: 시각을 맞추지 않고 인과 순서를 기록하기](../분야_topics/41-클라우드분산시스템_cloud-distributed/해설_notes/논리시계와인과관계_lamport-clocks.md) · [English](../분야_topics/41-클라우드분산시스템_cloud-distributed/해설_notes/논리시계와인과관계_lamport-clocks.md#english) |
 | 42 고성능·병렬 계산<br>HPC, Parallel & Distributed Computing | [Parallel prefix scan: 누적합으로 위치를 배정하기](../분야_topics/42-고성능병렬계산_hpc-parallel/해설_notes/트리누적합과압축_parallel-prefix.md) · [English](../분야_topics/42-고성능병렬계산_hpc-parallel/해설_notes/트리누적합과압축_parallel-prefix.md#english) |
-| 43 컴퓨터 비전과 영상 처리<br>Computer Vision & Image Processing | [Bilinear warp: 없는 pixel 사이의 값을 어떻게 계산할까요](../분야_topics/43-컴퓨터비전_computer-vision/해설_notes/역매핑과쌍선형보간_bilinear-warp.md) · [English](../분야_topics/43-컴퓨터비전_computer-vision/해설_notes/역매핑과쌍선형보간_bilinear-warp.md#english) |
+| 43 컴퓨터 비전과 영상 처리<br>Computer Vision & Image Processing | [역매핑과 쌍선형 보간 / Inverse mapping and bilinear interpolation](../분야_topics/43-컴퓨터비전_computer-vision/해설_notes/역매핑과쌍선형보간_bilinear-warp.md) · [English](../분야_topics/43-컴퓨터비전_computer-vision/해설_notes/역매핑과쌍선형보간_bilinear-warp.md#english) |
 | 44 언어·음성·멀티모달 AI<br>Language, Speech & Multimodal AI | [Attention의 역전파와 causal KV cache 검증](../분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션역전파와캐시_attention-gradients.md) · [English](../분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션역전파와캐시_attention-gradients.md#english) |
 | 45 AI 학습과 최적화<br>AI Training, Optimization & Compression | [Adam의 상태, bias correction과 학습 재개](../분야_topics/45-AI학습최적화_ai-training-optimization/해설_notes/Adam상태와재시작_adam-state.md) · [English](../분야_topics/45-AI학습최적화_ai-training-optimization/해설_notes/Adam상태와재시작_adam-state.md#english) |
 | 46 AI 응용·에이전트·평가<br>AI Applications, Agents & Evaluation | [Macro·micro 지표와 평가의 불확실성](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/평가지표와불확실성_metrics-uncertainty.md) · [English](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/평가지표와불확실성_metrics-uncertainty.md#english) |

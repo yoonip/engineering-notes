@@ -48,7 +48,7 @@ UVM, SVA, cocotb, Verilator, Icarus Verilog, GTKWave, Questa, Xcelium, VCS, Symb
 
 ## 기초 해설
 
-- [검증에서 무엇을 확인했습니까: assertion, coverage와 formal](해설_notes/검증에서무엇을확인했는가_assertions-coverage-formal.md)
+- [Assertion·coverage·formal의 검증 범위](해설_notes/검증에서무엇을확인했는가_assertions-coverage-formal.md)
 
 ## English
 
@@ -70,7 +70,7 @@ In the constructed ready/valid contract, reset takes priority and a transaction 
 
 ### Foundation article
 
-- [검증에서 무엇을 확인했습니까: assertion, coverage와 formal](해설_notes/검증에서무엇을확인했는가_assertions-coverage-formal.md#english)
+- [Assertion·coverage·formal의 검증 범위](해설_notes/검증에서무엇을확인했는가_assertions-coverage-formal.md#english)
 
 
 ## 심화 해설 | Advanced article

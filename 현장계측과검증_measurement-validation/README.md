@@ -69,23 +69,23 @@
 | 백업은 있는데 필요한 파일이 복원되지 않습니다. | 신뢰한 경로·내용·세대를 실제 payload 사본과 대조합니다. | [백업 복원·완전성](../설계와검증사례_engineering-cases/백업세트의내용복원과완전성_backup-restore-integrity.md) |
 | 중단된 stripe에서 XOR 복원값이 원문과 다릅니다. | 데이터·패리티의 시점과 결손, 유효한 redo 자료를 구분합니다. | [RAID 부분 갱신](../설계와검증사례_engineering-cases/RAID패리티의부분갱신과복원_raid-parity-write-hole.md) |
 | 재시도는 끝났는데 옛 쓰기가 새 값을 덮습니다. | 완료 통지의 식별과 옛 작업의 실행 종료를 따로 확인합니다. | [시간초과·늦은 쓰기](../설계와검증사례_engineering-cases/시간초과뒤늦은쓰기와재시도_block-io-timeout-retry.md) |
-| 정확도는 같은데 경보 대부분이 오경보입니다. | 실제 양성 비율과 정밀도의 분모, 경보량·검토 비용을 구분합니다. | [불량 비율·경보 정밀도](../설계와검증사례_engineering-cases/불량비율과경보의정밀도_ai-prevalence-precision.md) |
+| 정확도는 같은데 경보 대부분이 오경보입니다. | 실제 양성 비율과 정밀도의 분모, 경보량·자체 오류 비용을 구분합니다. | [불량 비율·경보 정밀도](../설계와검증사례_engineering-cases/불량비율과경보의정밀도_ai-prevalence-precision.md) |
 
-## 업무 질문에서 시작하기
+## 업무별 읽기 경로
 
 반도체·전자·차량·산업 설비의 공통 기술 질문에서 해당 본문과 기존 구현으로 연결합니다.
 
 | 확인하려는 문제 | 먼저 읽을 글 | 이어서 볼 구현·분야 |
 | --- | --- | --- |
-| 전압 숫자가 기대와 다른 이유를 나누고 싶습니다. | DMM·SMU → 오실로스코프 | [센서·계측](../분야_topics/37-센서계측_sensors-instrumentation/README.md), [PCB 전원·귀환 경로](../분야_topics/12-PCB하드웨어설계_pcb-hardware/README.md) |
-| 전송은 끝났는데 데이터가 달라집니다. | DMA·캐시 → 로직 분석기 | [FPGA 프레임 오류 사례](../설계와검증사례_engineering-cases/프레임오류와FPGA검증_fpga-frame-validation.md), [UART 호스트·펌웨어](../프로젝트_projects/embedded-validation-lab/README.md) |
-| 최적화를 켜면 고장이 재현되지 않습니다. | Cortex-M 예외 추적 | [C·C++·Python](../분야_topics/04-c-cpp-python/README.md), [펌웨어·RTOS](../분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md), [시스템 디버깅](../분야_topics/19-시스템디버깅_openocd-debugging/README.md) |
-| 칩이 특정 조건에서만 틀리거나 시험 결과가 서로 다릅니다. | PVT·shmoo → 계측 자동화 | [DFT·제조 시험](../분야_topics/51-반도체테스트제조_test-manufacturing/README.md), [검증 모델과 결과 집계](../프로젝트_projects/practical-silicon-lab/validation/README.md) |
-| 차량·설비의 통신이 간헐적으로 멈춥니다. | CAN·EtherCAT·Modbus → 로직 분석기 | [인터페이스·통신](../분야_topics/20-인터페이스통신_interfaces-communications/README.md), [제어·신호처리](../분야_topics/21-신호처리제어_signals-control/README.md) |
-| RTL과 소프트웨어의 정수 결과가 다릅니다. | 프레임 사례의 바이트·채널 해석 | [컴퓨터구조](../분야_topics/16-프로세서구조_arm-riscv/README.md), [Transformer·DRAM-PIM](../프로젝트_projects/transformer-dram-pim/README.md), [부분곱·CNN](../프로젝트_projects/cnn-partial-product-reproduction/README.md) |
-| AI의 높은 점수가 입력 누출 때문인지 확인하고 싶습니다. | [제조 시계열의 인과 경계](../설계와검증사례_engineering-cases/제조시계열의인과경계_causal-trace-validation.md) | [제조 이상 탐지 코드](../프로젝트_projects/st-awfd-anomaly-triage/README.md), [AI 평가](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md) |
-| 서버·자동화 도구가 같은 기록을 덮어씁니다. | [SQLite 갱신 충돌 사례](../설계와검증사례_engineering-cases/동시갱신과SQLite검증_sqlite-concurrency.md) | [Linux](../분야_topics/01-linux-bash/README.md), [DB·데이터공학](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/README.md) |
-| 알고리즘과 언어 구현을 함께 확인하고 싶습니다. | [세 언어의 기초 알고리즘](../프로젝트_projects/coding-practice-basics/README.md) | [C·C++·Python 실행 도구](../프로젝트_projects/coding-practice-toolkit/README.md), [코딩테스트 풀이·줄별 문법](../programmers/README.md) |
+| 전압 측정의 오차 원인 | DMM·SMU → 오실로스코프 | [센서·계측](../분야_topics/37-센서계측_sensors-instrumentation/README.md), [PCB 전원·귀환 경로](../분야_topics/12-PCB하드웨어설계_pcb-hardware/README.md) |
+| 전송 완료와 데이터 일치 | DMA·캐시 → 로직 분석기 | [FPGA 프레임 오류 사례](../설계와검증사례_engineering-cases/프레임오류와FPGA검증_fpga-frame-validation.md), [UART 호스트·펌웨어](../프로젝트_projects/embedded-validation-lab/README.md) |
+| 최적화에 따른 고장 재현 차이 | Cortex-M 예외 추적 | [C·C++·Python](../분야_topics/04-c-cpp-python/README.md), [펌웨어·RTOS](../분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md), [시스템 디버깅](../분야_topics/19-시스템디버깅_openocd-debugging/README.md) |
+| 조건별 칩 오동작과 시험 간 차이 | PVT·shmoo → 계측 자동화 | [DFT·제조 시험](../분야_topics/51-반도체테스트제조_test-manufacturing/README.md), [검증 모델과 결과 집계](../프로젝트_projects/practical-silicon-lab/validation/README.md) |
+| 차량·설비의 간헐적 통신 장애 | CAN·EtherCAT·Modbus → 로직 분석기 | [인터페이스·통신](../분야_topics/20-인터페이스통신_interfaces-communications/README.md), [제어·신호처리](../분야_topics/21-신호처리제어_signals-control/README.md) |
+| RTL과 소프트웨어의 정수 결과 비교 | 프레임 사례의 바이트·채널 해석 | [컴퓨터구조](../분야_topics/16-프로세서구조_arm-riscv/README.md), [Transformer·DRAM-PIM](../프로젝트_projects/transformer-dram-pim/README.md), [부분곱·CNN](../프로젝트_projects/cnn-partial-product-reproduction/README.md) |
+| AI 평가의 입력 누출 | [제조 시계열의 인과 경계](../설계와검증사례_engineering-cases/제조시계열의인과경계_causal-trace-validation.md) | [제조 이상 탐지 코드](../프로젝트_projects/st-awfd-anomaly-triage/README.md), [AI 평가](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md) |
+| 서버·자동화 도구의 갱신 충돌 | [SQLite 갱신 충돌 사례](../설계와검증사례_engineering-cases/동시갱신과SQLite검증_sqlite-concurrency.md) | [Linux](../분야_topics/01-linux-bash/README.md), [DB·데이터공학](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/README.md) |
+| 알고리즘과 언어별 구현 비교 | [세 언어의 기초 알고리즘](../프로젝트_projects/coding-practice-basics/README.md) | [C·C++·Python 실행 도구](../프로젝트_projects/coding-practice-toolkit/README.md), [코딩테스트 풀이·줄별 문법](../programmers/README.md) |
 
 전력·열·기계 구동의 배경은 [전력전자·에너지](../분야_topics/31-전력전자에너지_power-energy/README.md), [패키징·열 설계](../분야_topics/36-패키징열설계_packaging-thermal/README.md), [로봇·제어](../분야_topics/22-로봇제어_robotics-boards/README.md)로 이어집니다. 제품의 기술·산업 비교는 [제품 리뷰](../제품리뷰_reviews/README.md)에 따로 있습니다.
 
@@ -95,4 +95,4 @@
 
 ## English
 
-This collection covers nine named instruments in eight notes, Cortex-M firmware debugging, silicon characterization, industrial communications and SCPI automation. Each note connects preparation, configuration, observation, interpretation and record keeping. Reading routes lead to existing C/C++, firmware, architecture, RTL, AI and Python implementations. Manufacturer specifications, constructed examples, local software checks and physical measurements are identified separately.
+This collection covers named instruments, Cortex-M firmware debugging, silicon characterization, industrial communications and SCPI automation. Each note connects preparation, configuration, observation, interpretation and record keeping. Reading routes lead to existing C/C++, firmware, architecture, RTL, AI and Python implementations. Manufacturer specifications, constructed examples, local software checks and physical measurements are identified separately.

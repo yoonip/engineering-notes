@@ -1,4 +1,4 @@
-# Bilinear warp: 없는 pixel 사이의 값을 어떻게 계산할까요
+# 역매핑과 쌍선형 보간 / Inverse mapping and bilinear interpolation
 
 [계산 코드](../../../예제_examples/심화_advanced/ai_data/advanced_ai_models.py) · [CLI](../../../예제_examples/심화_advanced/ai_data/demo.py) · [독립 검증](../../../예제_examples/심화_advanced/ai_data/test_advanced_ai.py)
 

@@ -1,6 +1,6 @@
 # 기초 문서의 출처와 검증 범위
 
-[문서 24편](README.md) · [참고 자료 목록](../참고자료_references/기초출처_FOUNDATIONS_SOURCES.md) · [실행 예제](../예제_examples/공학기초_foundations/README.md) · [English](#english)
+[기초 학습 목차](README.md) · [참고 자료 목록](../참고자료_references/기초출처_FOUNDATIONS_SOURCES.md) · [실행 예제](../예제_examples/공학기초_foundations/README.md) · [English](#english)
 
 ## 자료와 수식 확인
 

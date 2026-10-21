@@ -2,7 +2,7 @@
 
 [전체 분야](../분야별목차_CATALOG.md) · [용어의 뜻과 뉘앙스](용어와직관_TERMS_AND_INTUITION.md) · [실행 예제](../예제_examples/공학기초_foundations/README.md) · [출처·검토 범위](검증기록_VERIFICATION.md) · [English](#english)
 
-공학의 개념을 정의에서 끝내지 않고 수식, 프로그램, 확인할 수 있는 결과로 연결했습니다. 먼저 익숙한 현상으로 감을 잡고, 변수의 뜻과 단위, 가정을 정한 뒤 식을 유도합니다. 각 글에는 실행할 모델과 별도로 비교할 기준이 있습니다. 설명은 한국어 먼저, 같은 내용의 영어를 뒤에 두었으며 코드 주석은 한국어로 적었습니다.
+공학의 개념을 수식, 프로그램, 확인할 수 있는 결과로 연결합니다. 먼저 익숙한 현상으로 감을 잡고, 변수의 뜻과 단위, 가정을 정한 뒤 식을 유도합니다. 각 글에는 실행할 모델과 별도로 비교할 기준이 있습니다. 한국어 설명 뒤에 영어 설명을 두며 코드 주석은 한국어로 적습니다.
 
 ## 개념의 연결
 
@@ -16,47 +16,47 @@
 
 ## 1. 수학과 물리
 
-| 글 | 풀어 가는 질문 |
+| 글 | 다루는 내용 |
 | --- | --- |
-| [단위·차원·불확도](../분야_topics/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md) | 숫자의 단위가 맞습니까? 측정값을 계산에 넣으면 불확도는 어떻게 전파됩니까? |
-| [선형대수·최소제곱](../분야_topics/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md) | 여러 측정점에서 규칙을 어떻게 찾고 QR로 계산합니까? |
-| [확률·추정](../분야_topics/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md) | 표본 평균과 분산은 무엇을 말하며 신뢰구간의 조건은 무엇입니까? |
-| [미분방정식·수치해법](../분야_topics/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md) | 변화율을 반복 계산으로 바꿀 때 정확도와 안정성을 어떻게 확인합니까? |
-| [역학·에너지·진동](../분야_topics/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md) | 힘의 법칙에서 진동 모델과 에너지 검사를 어떻게 얻습니까? |
-| [열전도·확산](../분야_topics/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md) | 에너지 수지에서 열방정식을 만들고 격자 계산을 어떻게 검증합니까? |
+| [단위·차원·불확도](../분야_topics/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md) | 단위·차원 검사와 측정 불확도의 전파 |
+| [선형대수·최소제곱](../분야_topics/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md) | 측정 자료의 최소제곱 모형과 QR 계산 |
+| [확률·추정](../분야_topics/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md) | 표본 평균·분산과 신뢰구간의 조건 |
+| [미분방정식·수치해법](../분야_topics/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md) | 변화율의 반복 계산과 정확도·안정성 |
+| [역학·에너지·진동](../분야_topics/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md) | 힘의 법칙, 진동 모형과 에너지 검사 |
+| [열전도·확산](../분야_topics/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md) | 에너지 수지, 열방정식과 격자 계산 |
 
 ## 2. 회로·반도체·하드웨어
 
-| 글 | 풀어 가는 질문 |
+| 글 | 다루는 내용 |
 | --- | --- |
-| [RC/RLC 회로](../분야_topics/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md) | 전하·에너지 보존에서 시정수, 감쇠, 주파수 응답을 어떻게 얻습니까? |
-| [MOS 전하와 스위칭](../분야_topics/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md) | gate가 전류를 바꾸는 이유는 무엇이며 square-law 모델은 어디까지 맞습니까? |
-| [FSM·동기식 FIFO](../분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md) | 같은 에지의 읽기·쓰기·리셋과 데이터 순서를 어떻게 명세합니까? |
-| [지역성·cache·AMAT](../분야_topics/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md) | 빠른 메모리를 작게 두는 이유와 평균 접근 시간의 조건은 무엇입니까? |
-| [전송선·반사](../분야_topics/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md) | 배선을 하나의 점으로 보지 못하는 때와 반사가 생기는 이유는 무엇입니까? |
-| [계측·probe 부하·불확도](../분야_topics/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md) | 측정기가 회로를 바꾸는 효과와 측정값의 신뢰 범위를 어떻게 다룹니까? |
+| [RC/RLC 회로](../분야_topics/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md) | 전하·에너지 보존, 시정수·감쇠·주파수 응답 |
+| [MOS 전하와 스위칭](../분야_topics/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md) | 게이트의 전류 제어와 square-law 모형의 적용 범위 |
+| [FSM·동기식 FIFO](../분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md) | 동일 에지의 읽기·쓰기·리셋과 데이터 순서 |
+| [지역성·cache·AMAT](../분야_topics/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md) | 메모리 지역성과 평균 접근 시간의 조건 |
+| [전송선·반사](../분야_topics/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md) | 분포된 배선 모형과 임피던스 불일치의 반사 |
+| [계측·probe 부하·불확도](../분야_topics/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md) | 프로브의 회로 부하와 측정 불확도 |
 
 ## 3. 수 표현에서 펌웨어·시스템까지
 
-| 글 | 풀어 가는 질문 |
+| 글 | 다루는 내용 |
 | --- | --- |
-| [정수·부동소수점·고정소수점](../분야_topics/04-c-cpp-python/해설_notes/비트에서수까지_numbers-and-quantization.md) | 같은 비트가 왜 다른 수가 되며 overflow·반올림·포화는 어떻게 정합니까? |
-| [컴파일·링크·reset에서 main까지](../분야_topics/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md) | 소스가 실행 코드가 되고 초기 RAM 상태가 준비되는 과정은 무엇입니까? |
-| [MMIO·인터럽트·DMA](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md) | 레지스터·cache·RAM·장치 사이의 순서와 버퍼 소유권은 어떻게 관리합니까? |
-| [UART framing·CRC](../분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md) | byte 흐름에서 경계를 찾고 오류를 검출하는 규약은 무엇입니까? |
-| [프로세스·가상 메모리·동시성](../분야_topics/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md) | 주소 공간과 접근 권한은 무엇이며 공유값의 갱신은 왜 사라집니까? |
-| [보안과 신뢰성의 경계](../분야_topics/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md) | CRC·ECC·MAC은 각각 무엇을 확인하고 무엇을 보장하지 않습니까? |
+| [정수·부동소수점·고정소수점](../분야_topics/04-c-cpp-python/해설_notes/비트에서수까지_numbers-and-quantization.md) | 비트 해석, overflow·반올림·포화 규칙 |
+| [컴파일·링크·reset에서 main까지](../분야_topics/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md) | 소스의 기계어 변환과 초기 RAM 상태 |
+| [MMIO·인터럽트·DMA](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md) | 레지스터·캐시·RAM의 순서와 버퍼 소유권 |
+| [UART framing·CRC](../분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md) | 바이트 흐름의 메시지 경계와 오류 검출 |
+| [프로세스·가상 메모리·동시성](../분야_topics/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md) | 주소 공간·접근 권한과 공유값 갱신 |
+| [보안과 신뢰성의 경계](../분야_topics/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md) | CRC·ECC·MAC의 확인 대상과 보장 범위 |
 
 ## 4. 신호·제어·AI·성능
 
-| 글 | 풀어 가는 질문 |
+| 글 | 다루는 내용 |
 | --- | --- |
-| [샘플링·aliasing](../분야_topics/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md) | 서로 다른 연속 신호가 같은 표본이 되는 이유는 무엇입니까? |
-| [ADC 양자화](../분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/해설_notes/ADC양자화_adc-quantization.md) | 분해능과 정확도는 어떻게 다르며 양자화 SNR 식은 어디서 나옵니까? |
-| [피드백·이산 모델](../분야_topics/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md) | 표본화와 입력 유지 아래에서 제어 이득과 안정성을 어떻게 연결합니까? |
-| [미분·역전파·학습](../분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md) | 손실의 미분을 유도하고 중심 차분으로 확인한 뒤 어떻게 갱신합니까? |
-| [Attention 수식과 구현](../분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md) | Q/K/V·softmax·마스크가 어떤 계산을 만들며 무엇을 검사할 수 있습니까? |
-| [Roofline·병렬화 한계](../분야_topics/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md) | 연산과 데이터 이동의 상한을 구분하고 병렬화 효과를 어떻게 추정합니까? |
+| [샘플링·aliasing](../분야_topics/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md) | 서로 다른 연속 신호가 같은 표본이 되는 조건 |
+| [ADC 양자화](../분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/해설_notes/ADC양자화_adc-quantization.md) | 분해능·정확도와 양자화 SNR |
+| [피드백·이산 모델](../분야_topics/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md) | 표본화·입력 유지와 제어 이득·안정성 |
+| [미분·역전파·학습](../분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md) | 손실 미분, 중심 차분 검사와 매개변수 갱신 |
+| [Attention 수식과 구현](../분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md) | Q/K/V·softmax·마스크의 계산과 검사 |
+| [Roofline·병렬화 한계](../분야_topics/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md) | 연산·데이터 이동의 상한과 병렬화 효과 |
 
 ## 여러 글을 연결해서 읽기
 
@@ -66,7 +66,7 @@
 
 ## English
 
-These 24 articles connect definitions to equations, executable models and checkable results. Each begins with an accessible physical or computational intuition, defines symbols and assumptions, derives the model, and checks it against an independent reference. Korean explanations come first, followed by equivalent English; code comments are in Korean. The [terminology guide](용어와직관_TERMS_AND_INTUITION.md#english) explains names whose everyday associations can obscure their technical meaning. The original diagram above shows relationships between models, not a ranking of technologies. Readers may move from software down to hardware or from a physical question back to its mathematical tools.
+These articles connect definitions to equations, executable models and checkable results. Each begins with an accessible physical or computational intuition, defines symbols and assumptions, derives the model, and checks it against an independent reference. Korean explanations come first, followed by equivalent English; code comments are in Korean. The [terminology guide](용어와직관_TERMS_AND_INTUITION.md#english) explains names whose everyday associations can obscure their technical meaning. The original diagram above shows relationships between models, not a ranking of technologies. Readers may move from software down to hardware or from a physical question back to its mathematical tools.
 
 ### 1. Mathematics and physics
 

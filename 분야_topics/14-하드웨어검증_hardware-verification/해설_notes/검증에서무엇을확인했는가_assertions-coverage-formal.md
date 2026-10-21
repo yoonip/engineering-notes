@@ -1,4 +1,4 @@
-# 검증에서 무엇을 확인했습니까: assertion, coverage와 formal
+# Assertion·coverage·formal의 검증 범위
 
 [Hardware verification](../README.md) · [참조 모델](../../../예제_examples/확장기초_extended/hardware/models.py) · [검산](../../../예제_examples/확장기초_extended/hardware/test_models.py)
 
@@ -8,12 +8,12 @@
 
 문을 백 번 열었다는 기록과, 문이 잠겼을 때 열리지 않는다는 확인은 다릅니다. 검증에서도 assertion은 지켜야 할 조건을, coverage는 관찰하거나 도달한 상황을 기록합니다. Simulation은 선택한 자극과 시간 동안의 동작을 실행하고, formal은 명시한 모델·초기상태·가정 안에서 가능한 동작을 논리적으로 탐색합니다. 세 가지는 서로를 대체하는 점수표가 아닙니다. [YosysHQ SBY](https://symbiyosys.readthedocs.io/en/latest/verilog.html), [Siemens의 coverage 구분](https://blogs.sw.siemens.com/verificationhorizons/2019/06/03/the-beginning-of-the-end-for-coverage/)
 
-| 항목 | 답하려는 질문 | 남는 한계 |
+| 항목 | 확인하는 내용 | 남는 한계 |
 |---|---|---|
-| Assertion | 정한 조건을 위반했습니까? | 조건 자체가 빠지거나 틀릴 수 있음 |
-| Code coverage | 구현의 어떤 구문·분기를 실행했습니까? | 실행한 계산의 정답 여부는 별개 |
-| Functional coverage | 명세의 어떤 상황·조합을 관찰했습니까? | 정의하지 않은 bin은 보이지 않음 |
-| Formal cover | 가정 아래 해당 상태로 가는 경로가 있습니까? | 그 경로가 모든 동작의 안전성을 뜻하지 않음 |
+| Assertion | 정한 조건의 위반 여부 | 조건 자체가 빠지거나 틀릴 수 있음 |
+| Code coverage | 실행한 구문과 분기 | 실행한 계산의 정답 여부는 별개 |
+| Functional coverage | 관찰한 명세상의 상황과 조합 | 정의하지 않은 bin은 보이지 않음 |
+| Formal cover | 가정 아래 해당 상태에 도달하는 경로의 존재 여부 | 그 경로가 모든 동작의 안전성을 뜻하지 않음 |
 
 ### 상태와 전이를 먼저 정하기
 

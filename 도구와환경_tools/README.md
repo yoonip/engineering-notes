@@ -105,7 +105,7 @@ Operating systems, shells, remote access, processes, and files
 
 Ubuntu, Debian, Fedora, Arch Linux, WSL2, Bash, Zsh, systemd, SSH, tmux, rsync
 
-### [Git & Development Tools](../분야_topics/02-개발도구_git-development-tools/README.md)
+### [Git과 개발 도구 / Git & Development Tools](../분야_topics/02-개발도구_git-development-tools/README.md)
 
 버전 관리·편집·컴파일·빌드·컨테이너
 
@@ -129,7 +129,7 @@ Languages, memory lifetime, data structures, and language interoperability
 
 C, C++, Python, Rust, Go, Java, C#, JavaScript/TypeScript, Julia, R, Tcl, Lua, Assembly
 
-### [MATLAB & Scientific Computing](../분야_topics/05-과학계산_matlab-scientific/README.md)
+### [MATLAB과 과학 계산 / MATLAB & Scientific Computing](../분야_topics/05-과학계산_matlab-scientific/README.md)
 
 수치·기호 계산·동적 모델링
 
@@ -177,7 +177,7 @@ Device physics, compact models, and TCAD
 
 PN, MOS, BJT, CMOS, FinFET, GAA, SOI, SiC/GaN, BSIM, SRAM/DRAM/NAND, TCAD
 
-### [Analog IC · Cadence · Spectre](../분야_topics/11-아날로그IC설계_analog-ic-cadence/README.md)
+### [아날로그 IC 설계·Cadence·Spectre / Analog IC Design: Cadence & Spectre](../분야_topics/11-아날로그IC설계_analog-ic-cadence/README.md)
 
 회로도·회로 시뮬레이션·레이아웃·검증
 
@@ -185,7 +185,7 @@ Schematics, circuit simulation, layout, and verification
 
 Cadence Virtuoso, Spectre, ADE, SKILL, OCEAN, Synopsys Custom Compiler, HSPICE, PrimeSim, Siemens Eldo, LTspice, ngspice, Xschem
 
-### [PCB & Hardware Design](../분야_topics/12-PCB하드웨어설계_pcb-hardware/README.md)
+### [PCB와 하드웨어 설계 / PCB & Hardware Design](../분야_topics/12-PCB하드웨어설계_pcb-hardware/README.md)
 
 PCB 설계·제조 데이터·신호 해석
 
@@ -201,7 +201,7 @@ Hardware description and generation
 
 Verilog, SystemVerilog, VHDL, Verilog-A/AMS, Chisel, SpinalHDL, Amaranth, HLS
 
-### [Hardware Verification](../분야_topics/14-하드웨어검증_hardware-verification/README.md)
+### [하드웨어 검증 / Hardware Verification](../분야_topics/14-하드웨어검증_hardware-verification/README.md)
 
 시뮬레이션·파형·assertion·formal
 
@@ -209,7 +209,7 @@ Simulation, waveforms, assertions, and formal verification
 
 UVM, SVA, cocotb, Verilator, Icarus Verilog, GTKWave, Questa, Xcelium, VCS, SymbiYosys, Formal/Equivalence
 
-### [FPGA & ASIC](../분야_topics/15-FPGA-ASIC설계_fpga-asic/README.md)
+### [FPGA·ASIC 설계 / FPGA & ASIC Design](../분야_topics/15-FPGA-ASIC설계_fpga-asic/README.md)
 
 합성·배치배선·STA
 
@@ -217,7 +217,7 @@ Synthesis, placement and routing, and static timing analysis
 
 AMD/Xilinx Vivado/Vitis, Intel/Altera Quartus, Lattice Radiant, Yosys, nextpnr, OpenROAD/OpenLane, Genus/Innovus, Design Compiler/Fusion Compiler, PrimeTime
 
-### [Arm · RISC-V · Computer Architecture](../분야_topics/16-프로세서구조_arm-riscv/README.md)
+### [Arm·RISC-V와 프로세서 구조 / Arm, RISC-V & Computer Architecture](../분야_topics/16-프로세서구조_arm-riscv/README.md)
 
 ISA·CPU 구현·에뮬레이션
 
@@ -225,7 +225,7 @@ ISAs, CPU implementations, and emulation
 
 Arm Cortex-M/A/R, RISC-V RV32/RV64, x86-64, MIPS, AVR, PicoRV32, Ibex, CVA6, Rocket Chip, BOOM, gem5, QEMU
 
-### [Firmware & RTOS](../분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md)
+### [펌웨어·RTOS / Firmware & RTOS](../분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md)
 
 MCU·드라이버·실시간 실행
 
@@ -233,7 +233,7 @@ MCUs, drivers, and real-time execution
 
 STM32, ESP32/ESP-IDF, Nordic nRF, NXP, TI, Microchip AVR/PIC/SAM, Renesas, RP2040/RP2350, FreeRTOS, Zephyr, ThreadX, RT-Thread
 
-### [Embedded Linux](../분야_topics/18-임베디드Linux_embedded-linux/README.md)
+### [임베디드 Linux / Embedded Linux](../분야_topics/18-임베디드Linux_embedded-linux/README.md)
 
 부팅·배포판 빌드·보드 지원
 
@@ -241,7 +241,7 @@ Booting, distribution builds, and board support
 
 Linux Kernel, U-Boot, Device Tree, Buildroot, Yocto/OpenEmbedded, BusyBox, QEMU, BSP, Drivers
 
-### [OpenOCD · GDB · Debugging](../분야_topics/19-시스템디버깅_openocd-debugging/README.md)
+### [OpenOCD·GDB와 시스템 디버깅 / OpenOCD, GDB & Instrumentation](../분야_topics/19-시스템디버깅_openocd-debugging/README.md)
 
 디버거·프로브·trace·파형 관찰
 
@@ -249,7 +249,7 @@ Debuggers, probes, trace, and waveform observation
 
 OpenOCD, GDB, LLDB, J-Link, ST-Link, pyOCD, probe-rs, JTAG, SWD, SWO, ETM, Saleae, PulseView, Sigrok
 
-### [Interfaces & Communications](../분야_topics/20-인터페이스통신_interfaces-communications/README.md)
+### [인터페이스와 통신 / Interfaces & Communications](../분야_topics/20-인터페이스통신_interfaces-communications/README.md)
 
 보드·장치·온칩·네트워크 연결
 
@@ -265,7 +265,7 @@ Filters, state estimation, and control
 
 FFT, FIR/IIR, PID, State Space, LQR/LQG, MPC, Kalman/EKF/UKF, System Identification, SciPy Signal, MATLAB Control
 
-### [Robotics · Arduino · Raspberry Pi](../분야_topics/22-로봇제어_robotics-boards/README.md)
+### [로봇 제어·Arduino·Raspberry Pi / Robotics, Arduino & Raspberry Pi](../분야_topics/22-로봇제어_robotics-boards/README.md)
 
 보드·센서·로봇 통신·계획·시뮬레이션
 
@@ -273,7 +273,7 @@ Boards, sensors, robot communication, planning, and simulation
 
 Arduino, Raspberry Pi, STM32 Nucleo, ESP32, BeagleBone, Jetson, ROS 2, MoveIt, Nav2, Gazebo, MuJoCo, Isaac Sim, SLAM
 
-### [AI · Machine Learning · Deep Learning](../분야_topics/23-AI머신러닝_ai-machine-learning/README.md)
+### [AI·머신러닝·딥러닝 / AI, Machine Learning & Deep Learning](../분야_topics/23-AI머신러닝_ai-machine-learning/README.md)
 
 모델 구성·학습·자동미분
 
@@ -281,7 +281,7 @@ Model construction, training, and automatic differentiation
 
 PyTorch, TensorFlow/Keras, JAX, scikit-learn, XGBoost, LightGBM, CatBoost, Hugging Face, Lightning, fastai
 
-### [GPU Architecture](../분야_topics/24-GPU구조_gpu-architecture/README.md)
+### [GPU 구조 / GPU Architecture](../분야_topics/24-GPU구조_gpu-architecture/README.md)
 
 실행 자원·GPU 메모리·그래픽 API
 
@@ -289,7 +289,7 @@ Execution resources, GPU memory, and graphics APIs
 
 NVIDIA, AMD, Intel, Apple GPU, SIMT/SIMD, Cache/VRAM, HBM/GDDR, PCIe/NVLink, Roofline, Vulkan, OpenGL, DirectX
 
-### [CUDA & GPU Optimization](../분야_topics/25-CUDA성능최적화_cuda-performance/README.md)
+### [CUDA와 GPU 성능 최적화 / CUDA & GPU Optimization](../분야_topics/25-CUDA성능최적화_cuda-performance/README.md)
 
 GPU 연산·라이브러리·profiling
 
@@ -297,7 +297,7 @@ GPU computation, libraries, and profiling
 
 CUDA, cuBLAS, cuDNN, CUTLASS, Triton, Nsight, ROCm/HIP, SYCL/oneAPI, OpenCL, Metal, OpenMP/OpenACC, TensorRT, OpenVINO
 
-### [AI Models & APIs](../분야_topics/26-AI모델-API_open-model-lab/README.md)
+### [AI 모델과 API / AI Providers, Public Models & APIs](../분야_topics/26-AI모델-API_open-model-lab/README.md)
 
 모델 배포·가중치·API·runtime
 
@@ -345,7 +345,7 @@ Power-stage and control simulation
 
 PLECS, PSIM, LTspice, Simulink, Buck/Boost, LLC, BMS, PMIC
 
-### [Mixed-Signal · ADC · DAC · Clock](../분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/README.md)
+### [혼성신호·ADC·DAC·클록 / Mixed-Signal, Data Converters & Clocks](../분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/README.md)
 
 변환기·클록·정적·동적 지표
 
@@ -353,7 +353,7 @@ Data converters, clocks, and static and dynamic metrics
 
 SAR ADC, Delta-Sigma, DAC, PLL, DLL, CDR, Spectre, Verilog-AMS
 
-### [Memory & Storage](../분야_topics/33-메모리저장장치_memory-storage/README.md)
+### [메모리와 저장장치 / Memory & Storage Systems](../분야_topics/33-메모리저장장치_memory-storage/README.md)
 
 메모리·저장 프로토콜·I/O 측정
 
@@ -361,7 +361,7 @@ Memory, storage protocols, and I/O measurement
 
 SRAM, DRAM, NAND, DDR, LPDDR, GDDR, HBM, NVMe, fio, CXL
 
-### [SoC & Interconnects](../분야_topics/34-SoC연결구조_soc-interconnects/README.md)
+### [SoC와 연결 구조 / SoC & Interconnects](../분야_topics/34-SoC연결구조_soc-interconnects/README.md)
 
 주소·버스·일관성
 
@@ -369,7 +369,7 @@ Addressing, buses, and coherence
 
 AXI, AMBA, TileLink, Wishbone, NoC, PCIe, CXL, Chiplet, CHI
 
-### [EDA & Open Hardware](../분야_topics/35-EDA오픈하드웨어_eda-open-hardware/README.md)
+### [EDA와 오픈 하드웨어 / EDA & Open Hardware Ecosystems](../분야_topics/35-EDA오픈하드웨어_eda-open-hardware/README.md)
 
 PDK·표준 셀·공개 EDA 흐름
 
@@ -377,7 +377,7 @@ PDKs, standard cells, and open EDA flows
 
 Cadence, Synopsys, Siemens EDA, Yosys, OpenROAD, OpenLane, KLayout, Magic, Netgen, SKY130, GF180, IHP SG13G2
 
-### [Packaging · Chiplets · Thermal](../분야_topics/36-패키징열설계_packaging-thermal/README.md)
+### [패키징·Chiplet·열 설계 / Packaging, Chiplets, Thermal & Reliability](../분야_topics/36-패키징열설계_packaging-thermal/README.md)
 
 전기·열·구조 모델
 
@@ -393,7 +393,7 @@ Instrument commands, device connections, and data acquisition
 
 SCPI, PyVISA, Sigrok, PulseView, LabVIEW, NI DAQ, Oscilloscope, VNA
 
-### [Security · Cryptography · Hardware Trust](../분야_topics/38-보안암호하드웨어신뢰_security-cryptography/README.md)
+### [보안·암호·하드웨어 신뢰 / Security, Cryptography & Hardware Trust](../분야_topics/38-보안암호하드웨어신뢰_security-cryptography/README.md)
 
 암호·부팅 신뢰·코드 진단
 
@@ -401,7 +401,7 @@ Cryptography, boot trust, and code diagnostics
 
 TLS, AES, RSA, ECC, Secure Boot, TrustZone, TPM, Sanitizers, Fuzzing, CodeQL
 
-### [Compilers · Languages · Runtimes](../분야_topics/39-컴파일러언어런타임_compilers-languages/README.md)
+### [컴파일러·언어·런타임 / Compilers, Languages & Runtimes](../분야_topics/39-컴파일러언어런타임_compilers-languages/README.md)
 
 frontend·IR·코드 생성·runtime
 
@@ -409,7 +409,7 @@ Frontends, intermediate representations, code generation, and runtimes
 
 LLVM, MLIR, GCC, Clang, Rust, Go, Java/JVM, CPython, Julia, Tcl, SKILL
 
-### [Databases & Data Engineering](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/README.md)
+### [데이터베이스와 데이터 공학 / Databases & Data Engineering](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/README.md)
 
 질의·저장 형식·stream·검색
 
@@ -417,7 +417,7 @@ Queries, storage formats, streams, and search
 
 SQLite, PostgreSQL, MySQL, DuckDB, Redis, Parquet, Arrow, Spark, Kafka, FAISS, pgvector
 
-### [Cloud & Distributed Systems](../분야_topics/41-클라우드분산시스템_cloud-distributed/README.md)
+### [클라우드와 분산 시스템 / Cloud, Distributed Systems & Operations](../분야_topics/41-클라우드분산시스템_cloud-distributed/README.md)
 
 인프라·배포·관측
 
@@ -425,7 +425,7 @@ Infrastructure, deployment, and observability
 
 AWS, Azure, Google Cloud, Docker, Kubernetes, Terraform, Prometheus, Grafana, OpenTelemetry
 
-### [HPC & Parallel Computing](../분야_topics/42-고성능병렬계산_hpc-parallel/README.md)
+### [고성능·병렬 계산 / HPC, Parallel & Distributed Computing](../분야_topics/42-고성능병렬계산_hpc-parallel/README.md)
 
 병렬화·통신·작업 관리
 
@@ -433,7 +433,7 @@ Parallel execution, communication, and job management
 
 OpenMP, MPI, OpenACC, SIMD, AVX/NEON, NCCL, Slurm, Ray, Dask, perf
 
-### [Computer Vision](../분야_topics/43-컴퓨터비전_computer-vision/README.md)
+### [컴퓨터 비전과 영상 처리 / Computer Vision & Image Processing](../분야_topics/43-컴퓨터비전_computer-vision/README.md)
 
 영상 연산·모델·기하
 
@@ -441,7 +441,7 @@ Image operations, models, and geometry
 
 OpenCV, torchvision, timm, ResNet, ViT, YOLO, SAM, DINO, Detectron2, MMDetection, Kornia
 
-### [Language · Speech · Multimodal AI](../분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/README.md)
+### [언어·음성·멀티모달 AI / Language, Speech & Multimodal AI](../분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/README.md)
 
 token·언어·음성·시각 표현
 
@@ -449,7 +449,7 @@ Tokens, language, speech, and visual representations
 
 BERT, T5, GPT, Whisper, wav2vec, CLIP, LLaVA, Transformers, torchaudio, SentencePiece
 
-### [AI Training & Optimization](../분야_topics/45-AI학습최적화_ai-training-optimization/README.md)
+### [AI 학습과 최적화 / AI Training, Optimization & Compression](../분야_topics/45-AI학습최적화_ai-training-optimization/README.md)
 
 분산 학습·adapter·양자화·실험 관리
 
@@ -457,7 +457,7 @@ Distributed training, adapters, quantization, and experiment tracking
 
 PEFT, TRL, Accelerate, DeepSpeed, FSDP, DDP, MLflow, W&B, TensorBoard, Optuna, bitsandbytes
 
-### [AI Applications · Agents · Evaluation](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md)
+### [AI 응용·에이전트·평가 / AI Applications, Agents & Evaluation](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md)
 
 도구 연결·검색·workflow·평가
 
@@ -465,7 +465,7 @@ Tool integration, retrieval, workflows, and evaluation
 
 OpenAI APIs, Claude API, Gemini API, LangChain, LlamaIndex, DSPy, MCP, lm-evaluation-harness, Ragas, promptfoo
 
-### [Edge AI · TinyML · NPU](../분야_topics/47-엣지AI-TinyML_edge-tinyml/README.md)
+### [엣지 AI·TinyML·NPU / Edge AI, TinyML & NPUs](../분야_topics/47-엣지AI-TinyML_edge-tinyml/README.md)
 
 모델 변환·장치 추론
 
@@ -473,7 +473,7 @@ Model conversion and on-device inference
 
 ONNX Runtime, TensorRT, OpenVINO, LiteRT/TFLite, TFLite Micro, CMSIS-NN, ExecuTorch, TVM, Jetson, Coral
 
-### [Software Design & Quality](../분야_topics/48-소프트웨어설계품질_software-quality/README.md)
+### [소프트웨어 설계와 품질 / Software Quality, Design & Testing](../분야_topics/48-소프트웨어설계품질_software-quality/README.md)
 
 테스트·정적 분석·메모리 진단
 
@@ -481,7 +481,7 @@ Testing, static analysis, and memory diagnostics
 
 pytest, unittest, GoogleTest, Catch2, CTest, Hypothesis, Valgrind, ASan/UBSan/TSan, clang-tidy, Ruff
 
-### [Graphics & Rendering](../분야_topics/49-그래픽스렌더링_graphics-simulation/README.md)
+### [그래픽스와 렌더링 / Computer Graphics, Rendering & Simulation](../분야_topics/49-그래픽스렌더링_graphics-simulation/README.md)
 
 shader·장면·렌더링
 
@@ -497,7 +497,7 @@ Equations, meshes, and numerical solvers
 
 COMSOL, Ansys, HFSS, CST, OpenFOAM, FEniCS, MEEP, openEMS, LAMMPS
 
-### [DFT · Test · Manufacturing](../분야_topics/51-반도체테스트제조_test-manufacturing/README.md)
+### [DFT·반도체 테스트·제조 / DFT, Semiconductor Test & Manufacturing](../분야_topics/51-반도체테스트제조_test-manufacturing/README.md)
 
 테스트 접근·pattern·제조 검사
 
@@ -505,7 +505,7 @@ Test access, patterns, and manufacturing checks
 
 DFT, Scan, ATPG, MBIST/LBIST, ATE, JTAG/Boundary Scan, Tessent, TestMAX, Modus
 
-### [Web · API · Applications](../분야_topics/52-Web-API응용_web-api-applications/README.md)
+### [Web·API·응용 프로그램 / Web, APIs & Desktop Applications](../분야_topics/52-Web-API응용_web-api-applications/README.md)
 
 서버·API·UI·dashboard
 
@@ -513,7 +513,7 @@ Servers, APIs, UIs, and dashboards
 
 FastAPI, Flask, Django, Node.js, Spring, React, Vue, Svelte, TypeScript, Qt/PySide, Electron, Streamlit, Gradio
 
-### [Mobile & Cross-Platform](../분야_topics/53-모바일크로스플랫폼_mobile-crossplatform/README.md)
+### [모바일과 크로스플랫폼 / Mobile, Cross-Platform & Device Integration](../분야_topics/53-모바일크로스플랫폼_mobile-crossplatform/README.md)
 
 모바일 UI·장치 연결·추론
 

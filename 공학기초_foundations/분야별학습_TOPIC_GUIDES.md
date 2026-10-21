@@ -2,11 +2,11 @@
 
 [전체 목차](../분야별목차_CATALOG.md) · [수학·물리와 공학 기초](README.md) · [문서별 출처](../참고자료_references/확장출처_EXTENDED_SOURCES.md)
 
-개발 환경과 소프트웨어, 회로와 하드웨어, GPU와 AI를 연결하는 기초 해설 36편입니다. 각 글은 개념과 용도를 설명하고, 필요한 수식의 전제와 유도, 참조 구현, 독립 검증을 연결합니다. 수학식이 중심이 아닌 주제에서는 상태·불변식·실행 순서로 동작을 설명합니다.
+개발 환경과 소프트웨어, 회로와 하드웨어, GPU와 AI를 연결하는 기초 해설입니다. 각 글은 개념과 용도를 설명하고, 필요한 수식의 전제와 유도, 참조 구현, 독립 검증을 연결합니다. 수학식이 중심이 아닌 주제에서는 상태·불변식·실행 순서로 동작을 설명합니다.
 
 아래 표에서 한국어 본문을 열고, 각 글의 English 절에서 같은 내용을 영어로 읽을 수 있습니다. 수치 예제의 가정과 검증 범위는 결과와 함께 적었습니다. 실제 보드·전용 도구에서 확인하는 절차는 참조 모델의 자동 검사와 구분해 설명합니다.
 
-These 36 foundation articles connect development environments, software, circuits, hardware, GPUs and AI. Each links concepts and applications with assumptions and derivations, reference implementations and independent checks. State, invariants and execution order explain topics where equations are not the central tool.
+These foundation articles connect development environments, software, circuits, hardware, GPUs and AI. Each links concepts and applications with assumptions and derivations, reference implementations and independent checks. State, invariants and execution order explain topics where equations are not the central tool.
 
 Each link opens the Korean explanation followed by an equivalent English section. Numerical assumptions and verification scope accompany the results. Procedures for physical boards and specialized tools are distinguished from automated reference-model checks.
 

@@ -8,7 +8,7 @@
 
 직접 계산해 그린 원본 도표 · [생성 코드](../../../예제_examples/공학기초_foundations/make_figures.py). / Original plot calculated for these notes; [generation code](../../../예제_examples/공학기초_foundations/make_figures.py).
 
-## 무엇을 제어합니까
+## 제어할 대상과 입력
 
 샤워 물이 차가우면 온수를 늘리고, 뜨거우면 줄입니다. 현재 값과 원하는 값의 차이를 보고 입력을 바꾸는 것이 피드백입니다. 반응이 늦는 시스템에서 손잡이를 크게 돌리기만 하면 온도가 오르내릴 수 있습니다. 제어에서는 오차뿐 아니라 반응 속도, 지연, 입력 한계도 모델에 넣습니다.
 
