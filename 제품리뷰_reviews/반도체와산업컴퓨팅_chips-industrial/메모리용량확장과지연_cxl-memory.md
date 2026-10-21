@@ -34,7 +34,7 @@ CXL 경로에 배정된 주소라면 요청이 호스트 브리지와 링크를 
 
 ## 제조사 백서의 숫자를 읽는 법
 
-백서는 로컬 RDIMM 144ns, 로컬 CMM-D 254ns를 보고합니다. 원격 경로에서는 각각 239ns와 353ns입니다. 이 차이는 해당 플랫폼의 접근 조건에서 얻은 값입니다. DIMM 전체의 읽기 대역폭과 CXL 경로의 수치를 비교할 때에는 장치·채널 수가 같은지 확인해야 합니다. 이 수치로 모든 CXL 장치의 고정 지연을 정하지 않습니다. [시험 구성과 표 2](https://download.semiconductor.samsung.com/resources/white-paper/Samsung_CMM-D_Utilization_in_IMDB_Applications.pdf)를 함께 읽으셔야 합니다.
+백서 표 2의 Intel MLC v3.10 유휴 지연은 로컬 RDIMM 144ns, 로컬 CMM-D 254ns입니다. 원격 경로에서는 각각 239ns와 353ns입니다. 요청이 몰린 상태의 평균·꼬리 지연이 아니라 해당 플랫폼의 유휴 측정값입니다. 같은 표의 대역폭은 RDIMM 8채널과 CMM-D 2개를 비교하므로 장치 한 개당 동일 조건 대결로 읽지 않습니다. 이 수치로 모든 CXL 장치의 고정 지연을 정하지 않습니다. [시험 구성 p.5와 표 2 p.6](https://download.semiconductor.samsung.com/resources/white-paper/Samsung_CMM-D_Utilization_in_IMDB_Applications.pdf)를 함께 읽으셔야 합니다.
 
 로컬·원격은 주로 어느 CPU 소켓에서 요청했는지에 관계됩니다. 같은 CXL 장치도 가까운 CPU와 다른 소켓의 CPU가 접근하면 경로가 달라질 수 있습니다. 원격 메모리처럼 보이는 OS 표기만으로 실제 CXL 장치의 특성을 전부 모사했다고 생각하지 않는 것이 중요합니다.
 
@@ -42,7 +42,7 @@ CXL 경로에 배정된 주소라면 요청이 호스트 브리지와 링크를 
 
 ## 독립 연구의 원측정과 다른 점
 
-Liu 등의 2024년 SupMario 원고는 실장치 4종·여러 CPU와 지연 조건·265개 작업을 다룹니다. 본문의 장치 표와 분석은 CXL의 대역폭·꼬리 지연·요청 병렬성이 다름을 보여 줍니다. 이 연구는 공개 제품 MD310의 독립 인증 시험이 아니며 익명화된 장치를 임의로 특정 회사 모델에 연결하지 않습니다. [연구 원문 §3–6](https://arxiv.org/abs/2409.14317)을 확인하실 수 있습니다.
+Liu 등의 2024년 SupMario 원고 v1은 실장치 4종·여러 CPU와 지연 조건·265개 작업을 다룹니다. 다만 CXL-C의 작은 용량과 CXL-D의 원격 이용 조건 때문에 두 장치는 작업의 일부만 완료했습니다. 모든 장치에서 265개를 전부 실행했다는 뜻은 아닙니다. 본문의 장치 표와 분석은 CXL의 대역폭·꼬리 지연·요청 병렬성이 다름을 보여 줍니다. 이 연구는 공개 제품 MD310의 독립 인증 시험이 아니며 익명화된 장치를 임의로 특정 회사 모델에 연결하지 않습니다. [2024-09-22 원고 §3.2·3.4와 §4–6](https://arxiv.org/html/2409.14317v1)을 확인하실 수 있습니다.
 
 2025년의 [Melody 논문 목록](https://www.microsoft.com/en-us/research/publication/systematic-cxl-memory-characterization-and-performance-analysis-at-scale/)은 저자·시험 플랫폼 수가 달라진 후속 판입니다. 이 글의 구체적인 설명은 2024년 원고의 조건을 기준으로 합니다. 서로 다른 판의 표본 수와 결과를 섞지 않습니다. 연구진에 공급·인프라 이해관계가 전혀 없다고도 단정하지 않습니다.
 

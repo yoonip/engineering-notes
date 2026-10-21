@@ -14,11 +14,13 @@ HBM은 여러 DRAM 다이를 적층하고 실리콘 관통 연결인 TSV 등으�
 
 | 대상과 자료 시점 | 확인한 내용 | 해석할 때 남겨야 할 조건 |
 | --- | --- | --- |
-| Micron HBM3E 12단 제품 소개 | 36GB, 핀당 9.2Gb/s 초과, 스택 대역폭 1.2TB/s 초과입니다. | 제조사 제품 수치입니다. 전력 우위 문구는 동일한 비교 조건이 공개된 독립 평가로 취급하지 않습니다. |
+| Micron HBM3E 12단 제품 소개 | 36GB, 핀당 9.2Gb/s 초과, 스택 대역폭 1.2TB/s 초과입니다. | 해당 글은 고객 인증을 위한 생산 가능 제품 출하 단계로 설명합니다. 이 발표만으로 현재 고객별 양산 채택을 확인하지는 않습니다. |
 | SK hynix 2025-09-12 발표 | HBM4 개발 완료와 양산 준비, 2,048개 I/O와 10Gb/s 초과를 발표했습니다. | 준비 완료 발표를 특정 고객의 완제품 출하 확인과 같은 사건으로 세지 않습니다. |
 | Samsung 2026-02-12 발표 | HBM4 양산·상업 출하, 11.7Gb/s와 최대 13Gb/s를 발표했습니다. | 최대 3.3TB/s는 상한 전송률 쪽 수치입니다. 11.7과 13을 섞어 계산하지 않습니다. |
 
 각 항목의 근거는 [Micron 제품 설명](https://www.micron.com/about/blog/applications/ai/micron-continues-memory-industry-leadership-with-hbm3e-12-high-36gb), [SK hynix 발표](https://news.skhynix.com/en/sk-hynix-completes-worlds-first-hbm4-development-and-readies-mass-production/), [Samsung 출하 발표](https://news.samsungsemiconductor.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing/)입니다. 서로 다른 날짜의 ‘최초’ 표현으로 현재 품질 순위를 만들지 않습니다.
+
+Micron 글의 전력 우위는 경쟁사 8단 24GB 제품을 비교 대상으로 삼은 제조사 주장입니다. 용량과 적층 수가 같은 독립 대조 시험으로 바꾸어 읽지 않습니다.
 
 Samsung 자료에서 12단은 24~36GB 범위이고 16단 최대 48GB는 향후 고객 일정에 맞춘 계획입니다. 발표에 실린 미래 용량까지 당시 출하 용량으로 합치면 제품 상태를 잘못 읽게 됩니다.
 

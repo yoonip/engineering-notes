@@ -17,7 +17,7 @@ FP32·FP16·FP8 등은 숫자의 표현 형식입니다. Tensor 연산의 처리
 | 메모리 | 32GB GDDR7, 512비트입니다. | 메모리 용량과 대역폭은 별도입니다. |
 | CUDA 코어 | 21,760개입니다. | 서로 다른 아키텍처의 코어 수만으로 속도를 비교하지 않습니다. |
 | 그래픽카드 전력 | TGP 575W입니다. | 항상 575W를 소비한다거나 PC 전체 전력이라는 뜻은 아닙니다. |
-| 권장 시스템 전원 | NVIDIA 기준 1,000W입니다. | CPU·주변 장치와 전원 장치 조건에 따라 달라집니다. |
+| 권장 시스템 전원 | NVIDIA 사양표 기준 1,000W입니다. | Ryzen 9 9950X 구성 기준의 권장값이며 CPU·주변 장치와 전원 장치 조건에 따라 달라집니다. |
 
 [NVIDIA 제품 사양](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/)은 기준 설계와 제조사별 카드의 차이도 명시합니다. 냉각기·전력 제한·클록이 다른 카드의 시험을 FE의 결과로 합치지 않습니다. 노트북용 동명 GPU 역시 다른 제품입니다.
 
@@ -53,7 +53,7 @@ TechSpot은 Ryzen 7 9800X3D 기반으로 게임별 해상도·프리셋과 전�
 
 ## 다른 GPU와 비교할 조건
 
-[AMD의 RX 9070 XT 발표](https://ir.amd.com/news-events/press-releases/detail/1238/amd-unveils-next-generation-amd-rdna-4-architecture-with-the-launch-of-amd-radeon-rx-9000-series-graphics-cards)는 16GB와 기준 보드 전력 304W를 제시합니다. RTX 5090과 메모리·전력·제품 급이 다르므로 같은 가격의 직접 대결처럼 쓰지 않습니다. 일반 게임에는 해상도별 성능과 영상 재구성 품질, 로컬 AI에는 실제 지원 라이브러리·정밀도·메모리 용량이 비교 축입니다. CUDA 코어와 AMD CU의 개수도 일대일 단위가 아닙니다.
+[AMD의 RX 9070 XT 제품 사양](https://www.amd.com/en/products/graphics/desktops/radeon/9000-series/amd-radeon-rx-9070xt.html)은 16GB와 Typical Board Power 304W를 제시합니다. RTX 5090과 메모리·전력·제품 급이 다르므로 같은 가격의 직접 대결처럼 쓰지 않습니다. 일반 게임에는 해상도별 성능과 영상 재구성 품질, 로컬 AI에는 실제 지원 라이브러리·정밀도·메모리 용량이 비교 축입니다. CUDA 코어와 AMD CU의 개수도 일대일 단위가 아닙니다.
 
 ## AI 산업의 선택과 연결해서 읽습니다
 

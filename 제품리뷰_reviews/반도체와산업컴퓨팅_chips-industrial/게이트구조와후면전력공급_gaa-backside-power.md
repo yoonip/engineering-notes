@@ -28,7 +28,7 @@ MOSFET은 게이트 전압으로 채널의 전류를 조절하는 스위치입�
 | Intel 18A | RibbonFET과 PowerVia를 함께 설명하며 Core Ultra Series 3 제품이 2026년 출시되었습니다. | 모든 타일을 같은 공정으로 만들었다는 뜻은 아닙니다. |
 | TSMC A16 | 공식 기술 설명에서 nanosheet와 Super Power Rail을 결합합니다. | 개발·생산 준비 일정과 고객 제품 양산 일정을 동일시하지 않습니다. |
 
-근거는 [TSMC 3Q26 설명 p.5](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf), [Intel 18A 기술 설명](https://www.intel.com/content/www/us/en/foundry/process/18a.html), [Core Ultra Series 3 출시](https://newsroom.intel.com/client-computing/ces-2026-intel-core-ultra-series-3-debut-first-built-on-intel-18a), [A16 기술 설명](https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_A16)입니다. 이 글은 A16의 고객 제품 양산을 확인했다고 주장하지 않습니다.
+근거는 [TSMC 3Q26 설명 p.5](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/eba4fac72873bf546b669bd2b5d973df5c93215d/TSMC%203Q26%20Transcript.pdf), [Intel 18A 기술 설명](https://www.intel.com/content/www/us/en/foundry/process/18a.html), [Core Ultra Series 3 출시](https://newsroom.intel.com/client-computing/ces-2026-intel-core-ultra-series-3-debut-first-built-on-intel-18a), [TSMC HPC 기술 설명의 A16 절](https://www.tsmc.com/english/dedicatedFoundry/technology/platform_HPC_tech_advancedTech)입니다. A16 절의 2026년 생산 준비는 목표 표현이며, 이 글은 고객 제품 양산을 확인했다고 주장하지 않습니다.
 
 ‘18A’와 ‘2nm’는 회사별 공정 이름입니다. 이름을 단위 환산하여 1.8nm가 2nm보다 언제나 우수하다고 계산할 수는 없습니다. 트랜지스터 종류·표준 셀·SRAM·배선·설계 전압과 비용이 다릅니다. 논리 밀도가 좋아져도 SRAM이나 입출력 영역이 같은 비율로 줄어들지 않을 수 있습니다.
 

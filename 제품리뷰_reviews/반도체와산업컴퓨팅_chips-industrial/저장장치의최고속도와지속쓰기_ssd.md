@@ -30,7 +30,7 @@ SSD의 큰 순차 속도는 연속된 많은 데이터를 여러 NAND 경로로 
 | 9100 PRO 8TB | 같은 최대 순차 수치, 4,800TBW·제한 보증 5년입니다. | 8TB는 두께·전력·캐시 구성이 다른 용량과 다를 수 있습니다. |
 | SN8100 계열 | PCIe 5.0 제품이며 최대 읽기 14,900MB/s를 제시합니다. | 용량별 쓰기·IOPS와 표의 각주를 확인해야 합니다. |
 
-근거는 [Samsung 사양서 Rev.2.0 p.3–4](https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_NVMe_SSD_9100_PRO_Datasheet_Rev.2.0.pdf), [Sandisk 제품과 사양서](https://www.sandisk.com/en-au/products/ssd/internal-ssd/wd-black-sn8100-ssd)입니다. 사양서의 OS·시험 프로그램·큐 깊이와 쓰기 캐시 조건은 숫자의 일부입니다. 최대 IOPS를 큐 깊이 1의 응답 속도로 읽지 않습니다.
+근거는 [Samsung 사양서 Rev.2.0 p.3–4](https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_NVMe_SSD_9100_PRO_Datasheet_Rev.2.0.pdf), [Sandisk SN8100 사양서 p.2](https://documents.sandisk.com/content/dam/asset-library/en_us/assets/public/sandisk/product/internal-drives/wd-black-ssd/data-sheet-wd-black-sn8100-nvme-ssd.pdf)입니다. Samsung의 성능 시험은 FIO 3.33·Ubuntu 22.04.2·Ryzen 9 7950X 구성이며, 랜덤 IOPS 표는 큐 깊이 256·32스레드 조건입니다. 전력 시험은 다른 CPU와 OS 판을 사용하므로 같은 실행의 동시 측정처럼 엮지 않습니다. 최대 IOPS를 큐 깊이 1의 응답 속도로 읽지 않습니다.
 
 PCIe 세대가 높아도 연결한 슬롯이 낮은 세대로 동작하면 그 링크가 상한이 됩니다. 칩셋을 거치는 슬롯은 다른 장치와 상위 연결을 공유할 수 있습니다. 제품을 제대로 비교하려면 링크 폭과 실제 협상 속도부터 같아야 합니다.
 

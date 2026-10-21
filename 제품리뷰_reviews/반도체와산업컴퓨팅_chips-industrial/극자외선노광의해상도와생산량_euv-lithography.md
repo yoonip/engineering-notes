@@ -28,7 +28,7 @@ EUV 광원은 강한 레이저로 작은 주석 방울을 플라스마로 만들
 
 근거는 [NXE:3800E 제품 설명](https://www.asml.com/en/products/euv-lithography-systems/twinscan-nxe-3800e), [EXE:5200B 제품 설명](https://www.asml.com/en/products/euv-lithography-systems/twinscan-exe-5200b), [2026년 주주총회 자료 p.15](https://ourbrand.asml.com/asset/d5e933d7-78d0-406c-aed7-a46626e63381/2026_-AGM-_presentation.pdf)입니다. 주주총회 자료의 향후 도입 예상은 그 시점의 전망입니다.
 
-이후 [2026년 7월 ASML 실적 자료](https://ourbrand.asml.com/asset/9078cf4d-91fd-4dd9-a5d5-d1caab6dc046/2026_07_15_Presentation-Investor-Relations-Q2-2026.pdf)는 Intel에서 High NA를 쓴 대량 생산 논리 제품의 출하 진전을 설명합니다. 일부 층에 적용한 사례를 전 세계 모든 공정이 EXE로 전환되었다는 뜻으로 읽지 않습니다.
+이후 [2026년 7월 ASML 실적 자료 p.6](https://ourbrand.asml.com/asset/9078cf4d-91fd-4dd9-a5d5-d1caab6dc046/2026_07_15_Presentation-Investor-Relations-Q2-2026.pdf)는 Intel 18A 제품의 선택한 층에서 High NA EUV 공정 옵션을 검증한 이정표를 소개합니다. 자료 제목의 ‘첫 대량 생산 논리 제품’과 인용문의 ‘공정 옵션 검증’을 구별해야 하며, 이 슬라이드만으로 고객 완제품의 출하 수량·전 층 적용·장기 수율을 확인할 수는 없습니다.
 
 ## NA를 키우면 얼마나 달라지나요
 
