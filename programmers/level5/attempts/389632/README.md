@@ -1,5 +1,7 @@
 # 문자열과 알파벳과 쿼리: Python 시간 초과 기록
 
+[Level 5 목록 / Level 5 index](../../README.md) · [풀이 전체 목차 / Solution index](../../../README.md)
+
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/389632) · Level 5 · 미완료
 
 ## 결과부터 보기

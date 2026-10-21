@@ -1,5 +1,7 @@
 # 멸종위기의 대장균 찾기
 
+[Level 5 목록 / Level 5 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/301651) · Level 5 · MySQL
 
 ## 풀이

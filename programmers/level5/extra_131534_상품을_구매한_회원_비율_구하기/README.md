@@ -1,5 +1,7 @@
 # 상품을 구매한 회원 비율 구하기
 
+[Level 5 목록 / Level 5 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Problem](https://school.programmers.co.kr/learn/courses/30/lessons/131534) · Level 5 · MySQL
 
 ## 풀이
