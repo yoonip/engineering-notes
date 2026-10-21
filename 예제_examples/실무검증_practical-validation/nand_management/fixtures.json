@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "wear": {
+    "initial_erases": [0, 4, 4, 4, 4, 0],
+    "factory_bad": [5],
+    "cold": ["10203040", "50607080"],
+    "initial_hot": ["aabbccdd", "01020304"],
+    "hot_updates": [["11111111", "aaaaaaaa"], ["22222222", "bbbbbbbb"], ["33333333", "cccccccc"], ["44444444", "dddddddd"]],
+    "dynamic_targets": [2, 3, 4, 1],
+    "static_move": {"result": "MAPPED", "source": 0, "target": 2, "cleanup": "ERASED"},
+    "static_targets": [0, 3, 0, 4],
+    "dynamic_expected": {
+      "mapping": {"0": 0, "1": 1},
+      "kinds": ["GOOD", "GOOD", "GOOD", "GOOD", "GOOD", "FACTORY_BAD"],
+      "erases": [0, 5, 5, 5, 5, 0], "free": [2, 3, 4],
+      "host_bytes": 32, "move_bytes": 0, "program_attempt_bytes": 32, "erase_attempts": 4
+    },
+    "static_expected": {
+      "mapping": {"0": 2, "1": 4},
+      "kinds": ["GOOD", "GOOD", "GOOD", "GOOD", "GOOD", "FACTORY_BAD"],
+      "erases": [3, 5, 4, 5, 4, 0], "free": [0, 1, 3],
+      "host_bytes": 32, "move_bytes": 8, "program_attempt_bytes": 40, "erase_attempts": 5
+    },
+    "expected_waf": {"dynamic": 1.0, "static": 1.25},
+    "expected_erase_spread": {"dynamic": 5, "static": 2}
+  },
+  "scrub": {
+    "payload": ["cafebabe", "11223344"],
+    "count_reads_expected_due": [false, false, false, true],
+    "count_move": {"result": "MAPPED", "source": 0, "target": 1, "cleanup": "ERASED"},
+    "post_move": {
+      "mapping": {"0": 1},
+      "kinds": ["GOOD", "GOOD", "GOOD", "GOOD", "GOOD", "FACTORY_BAD"],
+      "erases": [1, 0, 0, 0, 0, 0], "free": [0, 2, 3, 4],
+      "host_bytes": 0, "move_bytes": 8, "program_attempt_bytes": 8, "erase_attempts": 1
+    },
+    "ce_observation": {"status": "CE", "data_hex": "cafebabe", "block": 0, "reads": 1, "corrected_max": 2, "scrub_due": true},
+    "ue_observation": {"status": "UE", "data_hex": null, "block": 0, "reads": 1, "corrected_max": 0, "scrub_due": true},
+    "faults": [
+      {"fault": "program", "expected": {"result": "DEST_PROGRAM_FAILED", "source": 0, "target": 1, "mapped": 0},
+       "mapping": {"0": 0}, "bad": [1], "free": [2, 3, 4], "public_read": ["cafebabe", "11223344"]},
+      {"fault": "verify", "expected": {"result": "DEST_VERIFY_FAILED", "source": 0, "target": 1, "mapped": 0},
+       "mapping": {"0": 0}, "bad": [1], "free": [2, 3, 4], "public_read": ["cafebabe", "11223344"]},
+      {"fault": "read-ue", "expected": {"result": "SOURCE_UE", "source": 0, "mapped": 0},
+       "mapping": {"0": 0}, "bad": [], "free": [1, 2, 3, 4], "public_read": [null, null]},
+      {"fault": "erase", "expected": {"result": "MAPPED", "source": 0, "target": 1, "cleanup": "ERASE_FAILED_RETIRED"},
+       "mapping": {"0": 1}, "bad": [0], "free": [2, 3, 4], "public_read": ["cafebabe", "11223344"]}
+    ]
+  }
+}

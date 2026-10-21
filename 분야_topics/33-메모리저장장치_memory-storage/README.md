@@ -84,6 +84,16 @@ print(blocks, last_lba, blocks * block_bytes - payload_bytes)  # 6블록·마지
 - [중단된 저널의 복구](../../설계와검증사례_engineering-cases/중단된저널의트랜잭션복구_storage-journal-recovery.md)는 유효한 트랜잭션을 실제 파일에서 다시 읽습니다.
 - [ECC의 정정과 검출](../../설계와검증사례_engineering-cases/ECC의단일비트정정과이중비트검출_ecc-secded.md)은 부호가 다루는 오류 수와 보장 밖 반례를 비교합니다.
 
+## NAND의 블록 상태와 이동 비용
+
+NAND의 소거 단위와 쓰기 단위를 구분한 뒤에는 ‘어느 블록을 다시 사용할 수 있는가’를 확인해야 합니다. 출하 불량, 사용 중 실패로 격리한 블록, 자료가 매핑된 블록, 소거되어 비어 있는 블록은 다른 상태입니다. 호스트에서 주소가 같더라도 내부 물리 위치는 이동할 수 있으며, 자료를 복사하기 전에 매핑부터 바꾸면 실패 시 원본이 남아 있어도 잘못된 위치를 읽게 됩니다.
+
+[불량 블록과 마모 분산 사례](../../설계와검증사례_engineering-cases/NAND의불량블록과마모분산_nand-bad-block-wear.md)는 6개 교육 블록에서 출하 불량을 free pool에서 제외하고 program·erase 실패를 별도로 격리합니다. 동일한 hot 갱신 네 번에서 정상 블록 소거 이력은 동적 선택 `[0,5,5,5,5]`, 정적 이동 한 번을 더한 경우 `[3,5,4,5,4]`였습니다. 차이는 5에서 2로 줄지만 호스트 32바이트에 대한 program 시도량은 32바이트에서 40바이트로 늘었습니다. `40/32=1.25`는 초기 seed·metadata·ECC를 제외한 실패 없는 모델의 비용 계산이며 제품 전체 WAF가 아닙니다.
+
+[읽기 징후와 데이터 이동 사례](../../설계와검증사례_engineering-cases/읽기교란의징후와데이터이동_nand-read-disturb-scrub.md)는 페이지 읽기 횟수·정정 비트 수의 최댓값·정정 불가 상태를 나누어 입력합니다. 임계값 4회·2비트는 작은 시험을 위한 정책이며 NAND 전체의 정격이 아닙니다. CE/UE는 외부 입력이고 실제 bit flip이나 오류율을 생성하지 않습니다. 새 위치의 검증 읽기 2회도 읽기 계수에 포함합니다.
+
+scrub은 자료를 읽어 다른 free 블록에 쓰고 검증한 뒤 매핑을 바꾸는 관리 작업입니다. 원본 UE나 목적지 program·검증 실패 시 원래 매핑과 원본을 유지하고, UE 자료를 정상 데이터로 공개하지 않습니다. 새 매핑 뒤 옛 블록 erase 실패는 새 데이터 보존과 옛 블록 격리로 처리합니다. [코드·fixture](../../예제_examples/실무검증_practical-validation/nand_management/README.md)와 [실행 기록](../../설계와검증사례_engineering-cases/검증기록_evidence/NAND블록과교란모델검사_20261021.md)에서 정책·비용·오류를 함께 비교합니다. 실제 NAND·MTD·전원 차단·영속 BBT·정전 원자성은 실행하지 않았습니다.
+
 ## English
 
 ### Memory and storage
@@ -118,6 +128,12 @@ Application write completion, file synchronization, device completion and a read
 
 An assumed 3,000-byte payload with 512-byte logical blocks occupies six blocks, LBA 100 through 105, leaving 72 bytes. Logical blocks are not NAND page or erase units. The calculation establishes neither atomicity nor persistence. Linked cases separately exercise decoded storage contracts, file-journal recovery and an educational ECC code.
 
+
+### NAND block states and relocation costs
+
+Factory bad blocks, grown failures, mapped blocks and erased free blocks require distinct treatment. The [bad-block and wear case](../../설계와검증사례_engineering-cases/NAND의불량블록과마모분산_nand-bad-block-wear.md) uses six teaching blocks. One fixed static move reduces erase-count spread from five to two but raises program-attempt bytes from 32 to 40 for the same 32 host bytes. The failure-free ratio 1.25 excludes initial state, metadata and ECC; it is not a product WAF measurement.
+
+The [read-management case](../../설계와검증사례_engineering-cases/읽기교란의징후와데이터이동_nand-read-disturb-scrub.md) consumes read counts and externally supplied corrected/uncorrectable status. Thresholds four and two are policy examples rather than universal NAND limits. Verification contributes two reads at a new destination. Copy and verification precede mapping publication; failed copies retain the source, while UE data is withheld. The linked [code](../../예제_examples/실무검증_practical-validation/nand_management/README.md) and [evidence](../../설계와검증사례_engineering-cases/검증기록_evidence/NAND블록과교란모델검사_20261021.md) exercise synthetic policy, not physical NAND or power-loss recovery.
 
 ## 심화 해설 | Advanced article
 
