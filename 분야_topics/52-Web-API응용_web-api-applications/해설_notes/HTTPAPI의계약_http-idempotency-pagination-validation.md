@@ -12,7 +12,7 @@ RFC 9110은 같은 요청을 여러 번 적용했을 때 서버에 의도한 효
 
 POST가 이 성질을 자동으로 갖는 것은 아닙니다. 생성 API는 애플리케이션 계약으로 idempotency key를 둘 수 있습니다. 같은 사용자·동작 범위에서 키 $`k`$와 정규화한 요청 본문 $`b`$를 묶어 저장하고, 같은 쌍의 재시도에는 저장한 결과를 반환합니다. 같은 키에 다른 본문이 오면 충돌로 처리합니다. 여기서 body 정규화는 동등성 정책이며 단순 문자열 공백 차이와 JSON 객체의 key 순서를 구분할 수 있습니다.
 
-중복 생성 방지 불변식은 같은 범위의 ((k,b))에 대해 생성 횟수가 최대 1이라는 것입니다. 실제 서비스에서는 키 등록, 업무 변경, 결과 저장을 원자적으로 묶어야 동시 요청과 crash 사이의 틈을 막을 수 있습니다. 키의 사용자별 범위, 보관 시간, 만료 후 동작도 계약입니다. 예제는 직렬 호출의 메모리 저장소이므로 이러한 영속·동시성 보장을 구현하지 않습니다.
+중복 생성 방지 불변식은 같은 범위의 $`(k,b)`$에 대해 생성 횟수가 최대 1이라는 것입니다. 실제 서비스에서는 키 등록, 업무 변경, 결과 저장을 원자적으로 묶어야 동시 요청과 crash 사이의 틈을 막을 수 있습니다. 키의 사용자별 범위, 보관 시간, 만료 후 동작도 계약입니다. 예제는 직렬 호출의 메모리 저장소이므로 이러한 영속·동시성 보장을 구현하지 않습니다.
 
 ## 큰 목록은 안정된 순서로 나눕니다
 
@@ -30,7 +30,7 @@ LIMIT :page_size;
 
 ID가 고유하고 정렬 순서가 안정적이라는 가정입니다. `(time,id)`로 정렬한다면 cursor도 두 값을 포함해야 동일 시각의 여러 행을 빠짐없이 구분합니다. Keyset이라고 조회 중 바뀐 값까지 일관된 snapshot이 저절로 제공되는 것은 아닙니다. 변경 없는 전체 목록이 필요하면 snapshot/version 정책을 별도로 둡니다. 예제는 고정된 오름차순 unique ID 목록을 전제로 합니다.
 
-[`page_after`](../../../예제_examples/확장기초_extended/ai_data/models.py)는 이진 탐색으로 cursor 뒤 시작점을 찾으므로 준비된 배열에서 $`O(\log N+k)`$에 page를 얻습니다. 정렬·유일성 검사를 매 page마다 다시 하면 (O(N)) 비용이 생기므로 입력 계약으로 두었습니다. 실제 API의 token은 내부 key를 감춘 opaque 값일 수 있지만, base64 인코딩만으로 무결성이나 비밀성이 생기지는 않습니다.
+[`page_after`](../../../예제_examples/확장기초_extended/ai_data/models.py)는 이진 탐색으로 cursor 뒤 시작점을 찾으므로 준비된 배열에서 $`O(\log N+k)`$에 page를 얻습니다. 정렬·유일성 검사를 매 page마다 다시 하면 $`O(N)`$ 비용이 생기므로 입력 계약으로 두었습니다. 실제 API의 token은 내부 key를 감춘 opaque 값일 수 있지만, base64 인코딩만으로 무결성이나 비밀성이 생기지는 않습니다.
 
 ## 입력 검증은 문법과 의미를 모두 다룹니다
 
@@ -70,7 +70,7 @@ Large lists need bounded pages. Google AIP-158 describes sizes, continuation tok
 
 Offsets can duplicate or skip records if earlier rows change. Keyset pagination requests ordered keys after the last key, as in the SQL above. Unique stable IDs support this example. Ordering by `(time,id)` needs both cursor components to disambiguate equal timestamps. Keyset traversal does not itself create a consistent snapshot under mutation; snapshot/version semantics are separate.
 
-The linked function assumes a fixed sorted unique array, locates the cursor with binary search and returns $`k`$ items in $`O(\log N+k)`$. Rechecking sortedness on every page would add (O(N)), so sorted uniqueness is an input contract. Real continuation tokens may be opaque; base64 alone provides neither integrity nor secrecy.
+The linked function assumes a fixed sorted unique array, locates the cursor with binary search and returns $`k`$ items in $`O(\log N+k)`$. Rechecking sortedness on every page would add $`O(N)`$, so sorted uniqueness is an input contract. Real continuation tokens may be opaque; base64 alone provides neither integrity nor secrecy.
 
 ### Validate syntax and meaning
 
