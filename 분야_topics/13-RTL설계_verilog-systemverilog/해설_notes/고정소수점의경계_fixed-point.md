@@ -19,7 +19,7 @@ y_{raw}=\mathrm{sat}_{16}\left(\mathrm{roundEven}\left(\frac{ab}{2^8}\right)\rig
 
 출력도 소수 8비트이므로 전체 정수 곱을 256으로 나눈 뒤 반올림합니다. signed 16×16 곱은 signed 32비트에 담깁니다. 먼저 잘라 버린 뒤 넓히면 이미 잃은 상위 비트가 돌아오지 않습니다. RTL은 `product`를 32비트로 명시하고, 반올림한 값은 포화 판정 전까지 더 넓은 부호형에 둡니다.
 
-짝수 반올림은 정확히 중간이면 가까운 두 정수 중 짝수를 고릅니다. 양수의 버림 몫을 q, 나머지를 r이라 하면 r>128이면 q+1, r=128이고 q가 홀수여도 q+1, 그 외에는 q입니다. 음수는 크기에 같은 연산을 한 뒤 부호를 복원합니다. 단순한 arithmetic right shift는 음수에서 floor에 가깝고, 여기의 round-to-nearest 정책과 다릅니다.
+짝수 반올림은 정확히 중간이면 가까운 두 정수 중 짝수를 고릅니다. 양수의 버림 몫을 q, 나머지를 r이라 하면 r>128이면 q+1, r=128이고 q가 홀수여도 q+1, 그 외에는 q입니다. 음수는 크기에 같은 연산을 한 뒤 부호를 복원합니다. 2의 보수 값에 부호 확장을 적용하는 산술 오른쪽 시프트는 2의 거듭제곱으로 나눈 결과를 음의 무한대 방향으로 버립니다. 이는 여기의 가장 가까운 값으로 반올림하는 정책과 다릅니다.
 
 | a×b의 raw 곱 /256 | 반올림 결과 | 이유 |
 |---|---:|---|
@@ -57,7 +57,7 @@ Both inputs here are signed 16-bit integers interpreted as a/256 and b/256. Thei
 
 The exact product is ab/65536. To return eight fractional bits, the raw product must be divided by 256, rounded to nearest with ties to even, then saturated to the signed 16-bit range. A full signed 16×16 product fits in signed 32 bits. Widening a value after prematurely truncating it cannot recover lost bits. The RTL keeps the complete product and uses a wider signed value until saturation is decided.
 
-For the nonnegative magnitude, divide by 256 into quotient q and remainder r. Increment q when r exceeds 128, or when r equals 128 and q is odd. Restore the original sign afterward. Thus 0.5 and −0.5 round to zero, while 1.5 and −1.5 round to 2 and −2. An arithmetic right shift of a negative product instead behaves like downward rounding and is not this policy.
+For the nonnegative magnitude, divide by 256 into quotient q and remainder r. Increment q when r exceeds 128, or when r equals 128 and q is odd. Restore the original sign afterward. Thus 0.5 and −0.5 round to zero, while 1.5 and −1.5 round to 2 and −2. A sign-extending arithmetic right shift of a two's-complement value divides by a power of two and rounds toward negative infinity; it is not round-to-nearest.
 
 Saturation clamps raw output to −32768…32767. It prevents wrap-around sign reversals but still distorts the signal. If the exact result is within range and no saturation occurs, rounding error is at most half an output step, or 1/512 in represented units. This bound does not apply to saturated results.
 
@@ -71,5 +71,5 @@ For a DSP pipeline, also derive accumulator bounds, stage scales, overflow flags
 
 ## 출처 / Sources
 
-- AMD, *UG1399 Quantization Modes*: convergent rounding and explicit tie examples.
+- AMD, *UG1399 Quantization Modes*, 2021.1 (2021-06-16), `AP_RND_CONV` and `AP_TRN`: convergent rounding and explicit tie examples.
 - MathWorks, *Rounding Modes*: round-to-nearest policies and fixed-point interpretation. Links are attached above.
