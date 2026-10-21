@@ -10,7 +10,7 @@ PI 제어의 P 항은 지금의 오차에 반응하고 I 항은 오차를 시간
 
 여기서는 단위 정상상태 이득의 1차 플랜트 $`\tau\dot x=-x+u`$, 양의 시정수 $`\tau`$, 일정한 표본 주기 $`T_s`$, 출력 한계 $`-L\le u\le L`$를 사용합니다. 센서 지연·잡음·통신 지터·속도 한계는 포함하지 않습니다. [MathWorks의 anti-windup 설명](https://www.mathworks.com/help/simulink/slref/anti-windup-control-using-a-pid-controller.html)과 [PID Controller의 이산 적분·back-calculation 규약](https://www.mathworks.com/help/simulink/slref/pidcontroller.html)을 함께 확인했습니다. 아래 식은 그 개념을 이 글의 실행 순서로 정한 구현입니다.
 
-### 2. 플랜트의 이산식은 어디서 나옵니까
+### 2. 플랜트의 이산식 유도
 
 입력이 한 표본 구간 동안 일정한 ZOH를 가정합니다. 미분방정식의 해를 구간 끝까지 적분하면
 
