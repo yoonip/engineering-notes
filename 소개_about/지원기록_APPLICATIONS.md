@@ -2,6 +2,8 @@
 
 [전체 목차](../분야별목차_CATALOG.md) · [처음으로](../README.md) · [연구 및 학술 활동](../연구_research/README.md)
 
+지원한 직무와 전형 결과를 정리한 개인 기록입니다. 학력·기술 분야는 [작성자 소개](README.md)에, 연락처는 [연락 안내](연락_CONTACT.md)에 있습니다. 시험 준비용 해설은 아래의 별도 학습 문서로 연결합니다.
+
 ## 기업별 전형 기록
 
 | 기업 | 지원 직무 | 전형 결과 |
@@ -26,6 +28,8 @@
 ## English
 
 ### Applications and assessments
+
+This page records applications and screening results. See the [author profile](README.md#english) for education and technical background and [contact details](연락_CONTACT.md#english) for inquiries. The study notes linked below are separate from these personal records.
 
 #### Application records
 
