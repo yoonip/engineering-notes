@@ -8,13 +8,15 @@
 
 ## 신호 경로와 오차
 
-AFE는 센서 신호의 증폭·필터·변환 전 처리를 담당합니다. Bridge 회로는 저항 변화를 전압 차이로 읽는 데 쓰입니다. Offset·gain error·비선형성·잡음·drift는 서로 다른 오차 요인입니다. 정확도는 기준값에 얼마나 가까운지, 정밀도는 반복 측정값이 얼마나 모이는지를 나타냅니다. 분해능이 높다고 정확도가 자동으로 높아지는 것은 아닙니다.
+AFE는 센서 신호의 증폭·필터·변환 전 처리를 담당합니다. Bridge 회로는 저항 변화를 전압 차이로 읽는 데 쓰입니다. Offset·gain error·비선형성·잡음·drift는 서로 다른 오차 요인입니다. 정확도는 측정값과 참값의 가까운 정도입니다. 실무의 기준값도 불확도를 가지므로 기준과의 차이를 곧바로 참오차라고 단정하지 않습니다. 정밀도는 명시한 조건의 반복 측정값들이 서로 가까운 정도이고 표준편차 등으로 나타냅니다. 분해능이 높다고 정확도가 자동으로 높아지는 것은 아닙니다. [JCGM VIM3 §2.13](https://jcgm.bipm.org/vim/en/2.13.html), [§2.15](https://jcgm.bipm.org/vim/en/2.15.html)
 
 ## 장비와 자동 측정
 
 DMM은 전압·전류·저항 등의 수치 측정, 오실로스코프는 시간 파형, VNA는 네트워크 특성, 로직애널라이저는 디지털 상태에 적합합니다. Probe의 대역폭·입력 임피던스·접지 구조도 대상 회로를 바꿀 수 있습니다.
 
-SCPI는 계측기 명령 체계입니다. VISA·PyVISA는 장비 통신에, LabVIEW·NI-DAQ은 계측과 데이터 수집에 쓰입니다. 자동 측정에서는 장비 설정·대기 시간·단위·timestamp가 측정값을 해석하는 기준이 됩니다. Calibration과 측정 불확도는 값의 신뢰 범위를 설명합니다.
+SCPI는 계측기 명령 체계입니다. VISA·PyVISA는 장비 통신에, LabVIEW·NI-DAQ은 계측과 데이터 수집에 쓰입니다. 자동 측정에서는 장비 설정·대기 시간·단위·timestamp가 측정값을 해석하는 기준이 됩니다.
+
+교정(calibration)은 불확도를 함께 가진 표준값과 장비 표시의 관계를 정하고, 표시로부터 측정 결과를 얻는 관계를 정하는 과정입니다. 장비의 표시를 바꾸는 조정(adjustment)이나 요구 규격의 충족을 확인하는 검증과 구분합니다. [VIM3 §2.39](https://jcgm.bipm.org/vim/en/2.39.html) 측정 불확도는 사용한 정보에 근거해 측정량에 부여하는 값들의 퍼짐을 나타내는 지표이며, 자동으로 95% 신뢰구간이 되는 것은 아닙니다. [VIM3 §2.26](https://jcgm.bipm.org/vim/en/2.26.html)
 
 ## 두 기준점으로 센서 출력을 읽는 예
 
@@ -80,13 +82,13 @@ Sensors convert physical quantities such as temperature, pressure, light, accele
 
 ### Signal paths and errors
 
-An analog front end amplifies and filters a sensor signal before conversion. Bridge circuits turn resistance changes into differential voltages. Offset, gain error, nonlinearity, noise, and drift are distinct sources of error. Accuracy describes agreement with a reference value; precision describes the distribution of repeated measurements. Higher resolution alone does not guarantee higher accuracy.
+An analog front end amplifies and filters a sensor signal before conversion. Bridge circuits turn resistance changes into differential voltages. Offset, gain error, nonlinearity, noise and drift are distinct error sources. Accuracy describes closeness to a true value. A practical reference also has uncertainty, so its difference from a measurement need not be the true error. Precision describes agreement among repeated measurements under stated conditions, commonly expressed with standard deviation. Higher resolution alone does not guarantee accuracy. [VIM3 §2.13](https://jcgm.bipm.org/vim/en/2.13.html), [§2.15](https://jcgm.bipm.org/vim/en/2.15.html)
 
 ### Instruments and automated measurements
 
 A DMM measures quantities such as voltage, current, and resistance. An oscilloscope shows waveforms over time, a VNA measures network behavior, and a logic analyzer captures digital states. A probe's bandwidth, input impedance, and grounding arrangement can affect the circuit being measured.
 
-SCPI defines instrument commands. VISA and PyVISA provide instrument communication, while LabVIEW and NI-DAQ support measurement and data acquisition. Instrument settings, settling time, units, and timestamps give automated measurements their meaning. Calibration and measurement uncertainty describe the confidence associated with a value.
+SCPI defines instrument commands. VISA and PyVISA provide instrument communication, while LabVIEW and NI-DAQ support measurement and data acquisition. Settings, settling time, units and timestamps give measurements their meaning. Calibration establishes uncertainty-bearing relations between standards, indications and measurement results; it differs from adjustment and verification. [VIM3 §2.39](https://jcgm.bipm.org/vim/en/2.39.html) Measurement uncertainty characterizes the dispersion of values attributed to the measurand from the available information; it is not automatically a 95% confidence interval. [VIM3 §2.26](https://jcgm.bipm.org/vim/en/2.26.html)
 
 
 ### Concepts, derivations, models, and verification
