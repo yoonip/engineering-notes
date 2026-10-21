@@ -1,6 +1,8 @@
-# RTOS의 우선순위 역전: 누가 mutex를 놓을 수 있을까요
+# 뮤텍스 대기와 우선순위 상속 | Mutex waits and priority inheritance
 
 [분야 안내](../README.md) · [실행 예제](../../../예제_examples/심화_advanced/systems/advanced_models.py) · [독립 테스트](../../../예제_examples/심화_advanced/systems/test_advanced_models.py) · [실행 안내](../../../예제_examples/심화_advanced/systems/README.md)
+
+세 task의 우선순위 역전과 mutex 대기 관계를 따라 전파되는 우선순위를 다룹니다. 기본 우선순위와 유효 우선순위의 차이를 작은 스케줄 모델로 설명합니다.
 
 ## 한국어
 
