@@ -12,6 +12,7 @@
 
 | 분야 | 먼저 읽을 내용 | 연습 방법 |
 | --- | --- | --- |
+| [영어 기초](영어기초_english-basics/README.md) | 발음, 문장 구성, 기본 문법과 짧은 글 | 풀이된 예문을 읽은 뒤 주어·시간을 바꾸고 단원 문제로 확인합니다. |
 | [기술 영어](기술영어_TECHNICAL_ENGLISH.md) | 조건, 수식의 정의, 주장 강도, 요구사항 | 한 문장을 조건·동작·결과로 나눠 다시 설명합니다. |
 | [외국어 학습 방법](외국어학습_LANGUAGE_STUDY.md) | 발음, 어휘, 문장, 읽기와 쓰기의 복습 | 영어 기초의 한 예문을 덮고 다시 만든 뒤 주어·시간을 바꾸어 씁니다. |
 | [영어 기술 기사와 연구 읽기](기사와연구읽기_ARTICLES_AND_RESEARCH.md) | 제목의 주장, 연구 근거와 적용 범위 | 짧은 자체 지문에서 인과·가능성·책임 주체를 찾아 연습합니다. |
@@ -23,3 +24,5 @@
 ## English
 
 The English foundation course contains eight lessons and 64 exercises, with worked examples and expandable answers. It progresses from letters and pronunciation to grammar, vocabulary, reading and writing. Study methods and technical English are separate supporting paths. Second-language study belongs here as well; the completed course currently covers English.
+
+Use the foundation lessons to construct sentences, technical English to preserve conditions and claim strength, and the article-reading exercises to connect a headline with its supporting evidence. The table links each practice to its corresponding material.
