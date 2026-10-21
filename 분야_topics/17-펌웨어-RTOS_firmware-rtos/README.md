@@ -54,6 +54,37 @@ RTOS는 작업을 task로 나누고 우선순위에 따라 실행을 관리합�
 
 - [CPU와 장치가 같은 데이터를 다룰 때: MMIO, 인터럽트, DMA](해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md)
 
+## 시간 카운터가 한 바퀴 돌아갈 때
+
+tick은 시간을 세는 정수 카운터입니다. 크기가 정해진 카운터는 최댓값 다음에 0으로 돌아갑니다. 설명을 위해 8비트 카운터와 tick당 1 ms를 가정합니다. 마지막 진행 시각이 250이고 현재가 3이면, 실제로 9 ms가 지났어도 일반 정수 뺄셈은 -247입니다. 아래 Python은 하위 8비트만 남겨 카운터의 순환을 계산합니다.
+
+```python
+last = 250  # =는 마지막으로 작업이 진행된 tick을 저장합니다.
+now = 3  # 순환 뒤 현재 tick이며, 여기서는 9 tick 뒤라고 가정합니다.
+mask = (1 << 8) - 1  # <<는 비트 이동이며 8비트 마스크 255를 만듭니다.
+elapsed = (now - last) & mask  # &는 비트 AND이며 하위 8비트로 차이를 계산합니다.
+timeout = 8  # 이 예제는 경과 시간이 8 이상이면 만료로 정합니다.
+print(now - last, elapsed, elapsed >= timeout)  # -247 9 True를 출력합니다.
+print([(tick, (tick - last) & mask) for tick in range(4)])  # 목록 내포로 (0,6)~(3,9)를 계산합니다.
+```
+
+이는 두 관측 사이 실제 경과가 256 tick 미만이라는 전제의 예입니다. 256 tick이 지나면 같은 카운터 값이 되어 이 차이만으로는 0과 256을 구분할 수 없습니다. timeout이 8이라는 사실만으로 장기간 검사를 못 하는 상황까지 해결되지는 않습니다. 검사 주기와 최악 실행 지연을 제한하거나 순환 횟수를 함께 관리해야 합니다. Python의 `int` 자체에는 8비트 순환이 없으므로 마스크를 명시했습니다.
+
+FreeRTOS Kernel [V11.2.0의 timeout 처리](https://github.com/FreeRTOS/FreeRTOS-Kernel/blob/V11.2.0/tasks.c#L5059-L5146)는 tick과 overflow 횟수를 함께 보존하고, 임계 구역에서 읽은 tick으로 남은 대기 시간을 계산합니다. 위 식을 FreeRTOS API의 전체 구현으로 취급하지 않습니다. 임계 구역은 공유 상태를 읽고 바꾸는 동안 간섭을 제한하는 구간입니다. 커널의 대기·취소·무기한 대기 규칙은 사용하는 API와 설정을 따릅니다.
+
+## 실행 중이라는 표시와 작업 완료의 차이
+
+워치독은 일정 조건 안에 갱신되지 않으면 리셋 등을 발생시키는 감시 장치입니다. 감시 task가 실행된다는 사실은 센서 수집·제어·통신 task가 모두 진행한다는 뜻이 아닙니다. 예를 들어 제어 결과의 순번이 41에서 멈췄는데 감시 task가 매번 갱신하면 제어 중단을 숨길 수 있습니다. 반대로 유효한 대기 상태를 진행 실패로 잘못 판정하면 정상 동작 중 리셋을 일으킵니다.
+
+| 구분할 상태 | 확인할 내용 |
+| --- | --- |
+| task가 스케줄됐습니다. | 이번 작업의 완료 순번이 실제로 바뀌었는지 확인합니다. |
+| 예전에 완료한 적이 있습니다. | 이전 감시 구간의 완료 표시가 이번 구간에 재사용되지 않는지 확인합니다. |
+| 새 결과가 있습니다. | 같은 tick 기준의 나이와 예상 주기·허용 지연을 함께 확인합니다. |
+| 리셋 뒤 tick이 다시 0입니다. | 이전 부팅의 시각을 현재 부팅의 시각과 직접 빼지 않습니다. |
+
+[워치독과 리셋 기록 사례](../../설계와검증사례_engineering-cases/작업진행을확인하는워치독과리셋기록_watchdog-health-reset.md)는 작업 진행을 확인하는 정책과 원인 플래그 보존을 실행 코드로 비교합니다. 감시 기준은 task마다 정한 실제 진행 조건이며, 모든 제품에 같은 timeout을 적용하는 규칙이 아닙니다. 위 카운터 예제는 Python 정수 계산이고 MCU 타이머나 RTOS를 실행한 결과와 구분합니다.
+
 ## English
 
 Firmware controls device startup, peripherals, communication, and operating state. Bare-metal code runs without an operating system. An RTOS provides execution services such as task scheduling and synchronization.
@@ -93,6 +124,10 @@ In the ESP32 example, a UART receive loop parses commands and sends them to a qu
 
 - [MMIO, interrupts, DMA and cache ownership](해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md#english)
 
+
+### Wrapping ticks and task progress
+
+An eight-bit example gives `(3 - 250) & 255 = 9`. This elapsed-time calculation assumes fewer than 256 ticks between observations; it cannot distinguish zero elapsed time from a full turn. FreeRTOS V11.2.0 retains overflow state in its timeout implementation. Watchdog policy also distinguishes scheduling from fresh task progress and separates boot epochs. The linked case supplies executable host models; the chapter's arithmetic does not run an RTOS.
 
 ## 심화 해설 | Advanced article
 

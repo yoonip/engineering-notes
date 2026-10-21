@@ -73,6 +73,30 @@ guard가 손상됐다면 객체 생성 시점부터 watchpoint를 걸어 최초 
 
 기록에는 입력·반복 조건, firmware hash·옵션·ELF, 첫 원시 상태·유효 비트, 원래 SP·경계·문맥, 확인한 writer를 넣습니다. 같은 입력에서 전후 주소 계산과 반복 여부를 비교합니다. 이 글은 가상 계산만 실행했고 SWD·fault·watchdog 절차는 문서로 확인했습니다.
 
+## 작업 정지와 리셋 원인을 함께 남기는 예
+
+watchdog reset 표시는 “어떤 task가 왜 멈췄는지”까지 알려 주지는 않습니다. fault handler에서 돌아오지 못했을 수도 있고, 예외 없이 무한 대기했을 수도 있습니다. 따라서 reset 원시 플래그와 마지막으로 완료한 업무 checkpoint를 별개로 남깁니다. 임의의 주기 feed를 건강 상태의 증거로 사용하지 않습니다.
+
+[워치독 호스트 모형](../../예제_examples/실무검증_practical-validation/watchdog_reset/README.md)에서 control과 acquire는 252에 한 번씩 진행을 보고하고 acquire만 멈춥니다. 주기 feed 경로는 254·258·262·266·270에 계속 feed합니다. task별 새 sequence와 마지막 보고 나이를 요구하면 254 뒤의 feed를 거부합니다. 같은 보고를 다음 epoch의 진행으로 재사용하지 않는 차이입니다.
+
+이 실행은 8비트 tick과 자체 허용 구간 `[4, 12)`를 사용합니다. 250에서 경과 12의 저장 tick은 6이므로 `now >= deadline`만으로 판단하면 now=254에서도 만료라고 오판합니다. 비교하는 실제 차이가 128 미만이라는 계약 아래 `(now-before)%256`을 사용했습니다. 이는 실제 WWDG downcounter나 밀리초 계산이 아닙니다. 모형의 reset_at=266도 deadline에 배치한 poll의 관측이며 poll 사이 비동기 reset 타이머를 실행한 결과는 아닙니다.
+
+원인 보존의 짧은 코드는 새 예제 폴더의 Python API로 실행했습니다. 아래 1·4는 모형 비트이며 실제 RCC 비트 위치가 아닙니다.
+
+```python
+from models import ResetLatch  # from/import는 예제의 상태 저장 클래스를 가져옵니다.
+latch = ResetLatch()  # ()는 객체를 만들며 원인 표시는 0으로 시작합니다.
+latch.latch("power")  # 메서드 호출로 전원 관련 모형 원인을 남깁니다.
+latch.latch("watchdog")  # 다른 원인을 OR로 함께 보존합니다.
+saved = latch.capture()  # 읽은 snapshot을 반환한 뒤 표시를 지웁니다.
+print(saved["raw"], saved["causes"])  # []로 사전 값을 읽어 5와 두 원인을 출력합니다.
+print(latch.capture()["raw"])  # 다시 읽은 0은 이미 보존한 증거를 대신하지 않습니다.
+```
+
+실제 출력은 `5 ['watchdog', 'power']`, 다음 줄은 `0`이었습니다. 순서를 바꿔 먼저 clear하는 오류는 raw=0·빈 원인 목록을 남겼습니다. 여러 sticky 비트만으로 사건의 시간 순서를 알아낸 것은 아닙니다. bootloader·초기화 코드가 먼저 소거하지 않는지도 확인해야 합니다. ST RM0368 Rev 6 §6.3.18과 [F4 HAL v1.8.3의 reset flag 조회·소거 매크로](https://github.com/STMicroelectronics/stm32f4xx-hal-driver/blob/v1.8.3/Inc/stm32f4xx_hal_rcc.h)를 대조했습니다.
+
+[사례 본문](../../설계와검증사례_engineering-cases/작업진행을확인하는워치독과리셋기록_watchdog-health-reset.md)은 연속 watchdog 부팅 세 번째에 recovery를 선택하는 자체 정책도 설명합니다. 이력은 부팅 간 보존된다는 모형 가정이며 실제 retained RAM·flash 기록·CRC·전원 상실 검증을 수행하지 않았습니다. [실행 기록](../../설계와검증사례_engineering-cases/검증기록_evidence/워치독진행상태와리셋검사_20261021.md)에서 기본/최적화 실행과 오류 주입을 구분합니다.
+
 ## 확인 문제
 
 1. `buf[16]` 쓰기가 배열 밖인데도 HardFault가 즉시 생기지 않을 수 있는 이유는 무엇인가요?

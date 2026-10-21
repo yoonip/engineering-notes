@@ -1,0 +1,38 @@
+{
+  "scope": "Invented host scenario, not hardware watchdog execution",
+  "monitor": {
+    "start_absolute": 250,
+    "tasks": ["control", "acquire"],
+    "fresh_limit": 10,
+    "earliest": 4,
+    "timeout": 12,
+    "events": [
+      {"at": 252, "progress": "control"},
+      {"at": 252, "progress": "acquire"},
+      {"at": 254, "poll": true},
+      {"at": 257, "progress": "control"},
+      {"at": 258, "poll": true},
+      {"at": 261, "progress": "control"},
+      {"at": 262, "poll": true},
+      {"at": 265, "progress": "control"},
+      {"at": 266, "poll": true},
+      {"at": 269, "progress": "control"},
+      {"at": 270, "poll": true}
+    ]
+  },
+  "literal_expected": {
+    "gated": {"feeds": [254], "reset_at": 266, "actions": ["feed", "wait", "wait", "reset_late"]},
+    "periodic": {"feeds": [254, 258, 262, 266, 270], "reset_at": null, "actions": ["feed", "feed", "feed", "feed", "feed"]},
+    "window": [
+      {"start": 250, "now": 253, "requested": true, "action": "reset_early"},
+      {"start": 250, "now": 254, "requested": true, "action": "feed"},
+      {"start": 250, "now": 5, "requested": true, "action": "feed"},
+      {"start": 250, "now": 6, "requested": true, "action": "reset_late"},
+      {"start": 250, "now": 6, "requested": false, "action": "reset_late"}
+    ],
+    "capture": {"raw": 5, "causes": ["watchdog", "power"]},
+    "boot_failures": [1, 2, 3, 0, 1, 0, 1],
+    "boot_modes": ["normal", "normal", "recovery", "normal", "normal", "stable", "normal"]
+  },
+  "boot_events": ["watchdog", "watchdog", "watchdog", "power", "watchdog", "stable", "watchdog"]
+}
