@@ -41,7 +41,7 @@ Commands and inputs appear in the articles and example READMEs. Verification rec
 | --- | --- |
 | 09 회로와 전자공학<br>Circuits & Electronics | [회로를 행렬로 풀기: Modified Nodal Analysis](../분야_topics/09-회로전자공학_circuits-electronics/해설_notes/회로를행렬로풀기_mna.md) · [English](../분야_topics/09-회로전자공학_circuits-electronics/해설_notes/회로를행렬로풀기_mna.md#english) |
 | 10 반도체 소자<br>Semiconductor Devices | [작은 전류의 증폭 효율: subthreshold와 gm/Id](../분야_topics/10-반도체소자_semiconductors/해설_notes/작은전류의증폭효율_subthreshold.md) · [English](../분야_topics/10-반도체소자_semiconductors/해설_notes/작은전류의증폭효율_subthreshold.md#english) |
-| 11 아날로그 IC 설계·Cadence·Spectre<br>Analog IC Design: Cadence & Spectre | [피드백을 걸면 이득과 대역폭은 어떻게 바뀌는가](../분야_topics/11-아날로그IC설계_analog-ic-cadence/해설_notes/피드백과대역폭_feedback.md) · [English](../분야_topics/11-아날로그IC설계_analog-ic-cadence/해설_notes/피드백과대역폭_feedback.md#english) |
+| 11 아날로그 IC 설계·Cadence·Spectre<br>Analog IC Design: Cadence & Spectre | [피드백에 따른 이득과 대역폭](../분야_topics/11-아날로그IC설계_analog-ic-cadence/해설_notes/피드백과대역폭_feedback.md) · [English](../분야_topics/11-아날로그IC설계_analog-ic-cadence/해설_notes/피드백과대역폭_feedback.md#english) |
 | 12 PCB와 하드웨어 설계<br>PCB & Hardware Design | [커패시터를 더 달았는데 왜 전원 임피던스가 커질까요](../분야_topics/12-PCB하드웨어설계_pcb-hardware/해설_notes/커패시터사이의공진_pdn-antiresonance.md) · [English](../분야_topics/12-PCB하드웨어설계_pcb-hardware/해설_notes/커패시터사이의공진_pdn-antiresonance.md#english) |
 | 13 Verilog·SystemVerilog·RTL<br>Verilog, SystemVerilog & RTL | [고정소수점 곱셈: 비트 폭, 반올림, 포화를 따로 결정하기](../분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/고정소수점의경계_fixed-point.md) · [English](../분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/고정소수점의경계_fixed-point.md#english) |
 | 14 하드웨어 검증<br>Hardware Verification | [개수는 맞는데 순서는 틀렸다: 작은 모델의 전수검사](../분야_topics/14-하드웨어검증_hardware-verification/해설_notes/불변식의빈틈_model-checking.md) · [English](../분야_topics/14-하드웨어검증_hardware-verification/해설_notes/불변식의빈틈_model-checking.md#english) |
@@ -63,7 +63,7 @@ Commands and inputs appear in the articles and example READMEs. Verification rec
 
 | 분야 / Area | 심화 해설 / Advanced article |
 | --- | --- |
-| 17 펌웨어·RTOS<br>Firmware & RTOS | [RTOS의 우선순위 역전: 누가 mutex를 놓을 수 있을까요](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/우선순위역전_priority-inheritance.md) · [English](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/우선순위역전_priority-inheritance.md#english) |
+| 17 펌웨어·RTOS<br>Firmware & RTOS | [뮤텍스 대기와 우선순위 상속](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/우선순위역전_priority-inheritance.md) · [English](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/우선순위역전_priority-inheritance.md#english) |
 | 18 임베디드 Linux<br>Embedded Linux | [Embedded Linux의 readiness: 바이트를 끝까지 읽는 상태](../분야_topics/18-임베디드Linux_embedded-linux/해설_notes/준비이벤트와레코드_poll-record-streams.md) · [English](../분야_topics/18-임베디드Linux_embedded-linux/해설_notes/준비이벤트와레코드_poll-record-streams.md#english) |
 | 19 OpenOCD·GDB와 시스템 디버깅<br>OpenOCD, GDB & Instrumentation | [Watchpoint: 값이 바뀐 순간과 메모리 접근은 다르다](../분야_topics/19-시스템디버깅_openocd-debugging/해설_notes/접근을잡는관찰점_watchpoints-access-values.md) · [English](../분야_topics/19-시스템디버깅_openocd-debugging/해설_notes/접근을잡는관찰점_watchpoints-access-values.md#english) |
 | 20 인터페이스와 통신<br>Interfaces & Communications | [I2C 레지스터 읽기: repeated START와 마지막 NACK](../분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/I2C묶음전송_i2c-combined-transactions.md) · [English](../분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/I2C묶음전송_i2c-combined-transactions.md#english) |
