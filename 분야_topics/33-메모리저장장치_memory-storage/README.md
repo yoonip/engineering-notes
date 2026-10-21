@@ -94,6 +94,14 @@ NAND의 소거 단위와 쓰기 단위를 구분한 뒤에는 ‘어느 블록�
 
 scrub은 자료를 읽어 다른 free 블록에 쓰고 검증한 뒤 매핑을 바꾸는 관리 작업입니다. 원본 UE나 목적지 program·검증 실패 시 원래 매핑과 원본을 유지하고, UE 자료를 정상 데이터로 공개하지 않습니다. 새 매핑 뒤 옛 블록 erase 실패는 새 데이터 보존과 옛 블록 격리로 처리합니다. [코드·fixture](../../예제_examples/실무검증_practical-validation/nand_management/README.md)와 [실행 기록](../../설계와검증사례_engineering-cases/검증기록_evidence/NAND블록과교란모델검사_20261021.md)에서 정책·비용·오류를 함께 비교합니다. 실제 NAND·MTD·전원 차단·영속 BBT·정전 원자성은 실행하지 않았습니다.
 
+## RAID의 패리티와 서로 다른 갱신 상태
+
+RAID의 중복 정보는 데이터 한 멤버가 빠진 경우를 다룰 수 있지만, 남은 데이터와 패리티가 같은 상태라는 조건이 필요합니다. 두 데이터 D0·D1의 XOR을 P로 두면 `D1=P XOR D0`입니다. 이전 D0가 `10111213`, D1이 `a0a1a2a3`이면 P는 `b0b0b0b0`입니다. D0를 `20212223`으로 바꿀 때 P도 `80808080`으로 바뀌어야 합니다. D0·P 중 하나만 기록한 뒤 D1이 빠지면 계산값은 `90919293`으로 원래 D1과 다릅니다.
+
+한 멤버 결손을 계산으로 채운 뒤 같은 XOR 식을 다시 검사하는 것만으로는 원본 복구를 입증할 수 없습니다. 채운 값 자체를 남은 두 값으로 만들었기 때문입니다. dirty 표시는 갱신 가능성이 있는 영역을 알려 주지만 누락 payload를 보관하는 사본은 아닙니다. Linux 6.12 [md의 bitmap·복구 정책](https://docs.kernel.org/6.12/admin-guide/md.html)은 영역 표시와 자료 journal을 구분합니다.
+
+[RAID 부분 갱신 사례](../../설계와검증사례_engineering-cases/RAID패리티의부분갱신과복원_raid-parity-write-hole.md)는 세 개의 4바이트 호스트 파일에서 두 갱신 순서의 혼합 상태를 만들고 새 프로세스로 읽습니다. 자체 full-stripe redo·대상 세대가 유효할 때 새 사본으로 복원하며, 로그 부재·불완전 기록·옛 세대·두 멤버 결손을 거부합니다. 데이터와 패리티를 같은 mask로 함께 바꾸면 XOR은 맞아도 원본과 달라지는 반례도 있습니다. 실물 RAID·회전 패리티·전원 차단·장치 성능을 측정한 결과는 아닙니다.
+
 ## English
 
 ### Memory and storage
@@ -134,6 +142,10 @@ An assumed 3,000-byte payload with 512-byte logical blocks occupies six blocks, 
 Factory bad blocks, grown failures, mapped blocks and erased free blocks require distinct treatment. The [bad-block and wear case](../../설계와검증사례_engineering-cases/NAND의불량블록과마모분산_nand-bad-block-wear.md) uses six teaching blocks. One fixed static move reduces erase-count spread from five to two but raises program-attempt bytes from 32 to 40 for the same 32 host bytes. The failure-free ratio 1.25 excludes initial state, metadata and ECC; it is not a product WAF measurement.
 
 The [read-management case](../../설계와검증사례_engineering-cases/읽기교란의징후와데이터이동_nand-read-disturb-scrub.md) consumes read counts and externally supplied corrected/uncorrectable status. Thresholds four and two are policy examples rather than universal NAND limits. Verification contributes two reads at a new destination. Copy and verification precede mapping publication; failed copies retain the source, while UE data is withheld. The linked [code](../../예제_examples/실무검증_practical-validation/nand_management/README.md) and [evidence](../../설계와검증사례_engineering-cases/검증기록_evidence/NAND블록과교란모델검사_20261021.md) exercise synthetic policy, not physical NAND or power-loss recovery.
+
+### RAID parity and mixed update generations
+
+Reconstructing one missing XOR member assumes consistent surviving data and parity. Updating only D0 or only P in the fixed teaching stripe produces 90919293 for missing D1, rather than the original a0a1a2a3. A parity recheck of the derived value is not independent content evidence. The [host-file case](../../설계와검증사례_engineering-cases/RAID패리티의부분갱신과복원_raid-parity-write-hole.md) compares both write orders, bounded full-stripe redo, incomplete or stale record refusal, and repeated copy recovery. A consistent corruption example also separates parity agreement from original content. It does not execute physical RAID or power cuts.
 
 ## 심화 해설 | Advanced article
 

@@ -1,0 +1,55 @@
+{
+  "format": "XOR1-independent-oracles",
+  "old_generation": 7,
+  "new_generation": 8,
+  "old": [
+    "10111213",
+    "a0a1a2a3",
+    "b0b0b0b0"
+  ],
+  "new": [
+    "20212223",
+    "a0a1a2a3",
+    "80808080"
+  ],
+  "mixed_data_first": [
+    "20212223",
+    "a0a1a2a3",
+    "b0b0b0b0"
+  ],
+  "mixed_parity_first": [
+    "10111213",
+    "a0a1a2a3",
+    "80808080"
+  ],
+  "incorrect_d1": "90919293",
+  "redo_bytes": 56,
+  "header_bytes": 24,
+  "orders": [
+    "data-first",
+    "parity-first"
+  ],
+  "stops": [
+    "dirty",
+    "log",
+    "member1",
+    "member2",
+    "clean"
+  ],
+  "journals": [
+    "none",
+    "incomplete",
+    "full"
+  ],
+  "unsupported": [
+    "two missing members",
+    "unknown clean marker",
+    "physical sector tearing",
+    "concurrent writers"
+  ],
+  "consistent_corruption": [
+    "11111213",
+    "a0a1a2a3",
+    "b1b0b0b0"
+  ]
+}
