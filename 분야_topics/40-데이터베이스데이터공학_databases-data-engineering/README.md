@@ -63,6 +63,32 @@ SQLite의 기본 ABORT 처리는 실패한 문장의 변경을 취소하지만 �
 
 SQLite의 [원자적 commit 설명](https://www.sqlite.org/atomiccommit.html)은 rollback journal을 만드는 방식이며, [WAL](https://www.sqlite.org/wal.html)은 다른 기록·확정·checkpoint 절차를 사용합니다. 두 형식을 섞어 설명하지 않습니다. [중단된 저널의 트랜잭션 복구](../../설계와검증사례_engineering-cases/중단된저널의트랜잭션복구_storage-journal-recovery.md)는 직접 정의한 별도 형식의 파일·프로세스 실험입니다. SQLite 파일 형식을 구현한 것으로 취급하지 않습니다.
 
+## 백업 파일과 복원된 데이터는 따로 확인합니다
+
+백업 성공 기록은 복원할 자료가 충분하다는 확인과 다릅니다. 백업에는 실제 내용인 payload와 경로·길이·해시를 적은 manifest가 있어야 하며, 원하는 시점의 세트인지 선택할 기준도 필요합니다. manifest에 현재 남은 파일만 적으면 사라진 파일이 검사 대상에서도 사라집니다. 별도로 신뢰한 기대 목록과 세대가 있어야 이런 누락을 찾습니다.
+
+[백업 세트의 내용 복원과 완전성](../../설계와검증사례_engineering-cases/백업세트의내용복원과완전성_backup-restore-integrity.md)은 새 호스트 파일로 이 차이를 실행합니다. 세대 7의 세 파일을 별도 백업에 보관한 뒤 원본 하나를 삭제하고 다른 하나를 변경합니다. 백업 payload만 읽어 새 목적지에 4·5·3바이트를 실제로 복원하고, 정확한 세 경로와 고정 원문 bytes를 비교합니다. 해시만으로 사라진 payload를 만들어 내지 않습니다.
+
+| 관측 | 확인하는 사실 | 그 관측만으로 알 수 없는 사실 |
+| --- | --- | --- |
+| 파일 3개·합계 12바이트입니다. | 개수와 논리 길이가 맞습니다. | 각각 원래 경로와 내용인지는 모릅니다. |
+| 현재 manifest와 해시가 맞습니다. | 현재 목록 안의 내용이 일치합니다. | 기대 목록의 누락·원하는 세대 여부는 별도입니다. |
+| 고정 경로 집합과 각 bytes가 같습니다. | 이 실험의 전체 파일 내용이 복원됐습니다. | 실행 중 DB snapshot·권한·정전 내구성은 확인하지 않습니다. |
+
+다음은 파일 수와 합계가 같아도 다른 내용이 되는 작은 계산입니다. 복원 프로그램을 다시 구현하는 코드가 아니라 성공 기준의 차이를 보여 주는 예입니다.
+
+```python
+expected = {"a.bin": b"ABCD", "b.bin": b"12345", "c.txt": b"OK\n"}  # dict는 경로와 기대 bytes를 대응시킵니다.
+wrong = {"a.bin": b"XXXX", "b.bin": b"YYYYY", "c.txt": b"ZZ\n"}  # 길이만 같은 다른 bytes입니다.
+same_shape = len(wrong) == len(expected) and sum(map(len, wrong.values())) == 12  # len은 개수·길이, map은 각 길이를 계산합니다.
+same_content = wrong == expected  # 사전의 ==는 전체 키와 대응 값도 비교합니다.
+print(same_shape, same_content)  # 실제 출력은 True False입니다.
+```
+
+복원 도중 일부만 쓴 자료도 성공 결과와 분리해야 합니다. 실습에서는 새 staging에서 모두 확인한 다음 목적지 이름으로 공개합니다. 첫 파일 뒤 중단하면 staging만 남으며 목적지는 없습니다. 기존 staging을 자동으로 이어 쓰지 않고 입력·부분 결과를 보존한 채 거부합니다. 이는 제한된 호스트 실험 정책이며 공격적인 동시 경로 변경이나 실제 정전 원자성을 보장하지 않습니다.
+
+DB에서는 파일 내용 외에 동일한 논리 시점이라는 조건도 필요합니다. PostgreSQL 17의 [SQL dump와 복원](https://www.postgresql.org/docs/17/backup-dump.html)은 dump의 snapshot과 복원 오류 뒤 부분 상태·단일 트랜잭션의 차이를 설명합니다. 파일 복사 예제를 실행한 결과를 PostgreSQL·SQLite 백업 검증으로 바꾸어 쓰지 않습니다. [AWS의 2024-06-27 판본 복구 목표 정의](https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/rel_planning_for_recovery_objective_defined_recovery.html)에서 RPO는 허용하는 마지막 복구 시점 이후의 데이터 손실 시간, RTO는 서비스 중단부터 복구까지의 허용 시간입니다. 이번 작은 파일 실습은 실제 운영 목표에 대한 두 값을 측정하지 않았습니다.
+
 ## English
 
 ### Databases and data engineering
@@ -90,6 +116,12 @@ The runnable SQLite example gives two warehouses 50 items each and an assumed ca
 
 This real SQLite in-memory execution demonstrates an application transaction boundary, not file recovery or power-loss durability. SQLite rollback journals, SQLite WAL and the separately defined file-journal example have different formats and commit rules. Atomicity and persistence require distinct evidence.
 
+
+### Backup payload and restored completeness
+
+A backup command finishing is distinct from restoring the required data. Payload bytes, an inventory and a trusted requested generation answer different questions. Removing a missing item from the manifest can make the remaining set self-consistent without making it complete. The linked case stores three real payload files, damages the originals, restores into a fresh directory and independently compares the exact three paths and 12 bytes. Counting files and total length alone accepts the small Python example's wrong contents; dictionary equality rejects them. Its observed output is True False.
+
+A staging directory separates partial restoration from the final destination. A deterministic interruption after one file preserves staging evidence and does not publish a complete result. This controlled host exercise does not implement a transactionally consistent live-database backup. PostgreSQL's snapshot and restoration error rules must be evaluated separately. RPO describes a tolerated loss horizon and RTO a recovery-time objective; neither operational target is measured by this example.
 
 ## 심화 해설 | Advanced article
 

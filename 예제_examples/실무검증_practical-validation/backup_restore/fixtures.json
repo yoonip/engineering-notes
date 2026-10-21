@@ -1,0 +1,12 @@
+{
+  "format": "BACKUP-RESTORE-ORACLE1",
+  "generation": 7,
+  "expected_files_hex": {
+    "config.bin": "01020304",
+    "models/model.bin": "1020304050",
+    "notes/readme.txt": "4f4b0a"
+  },
+  "total_bytes": 12,
+  "expected_interrupted_files": ["config.bin"],
+  "mutations": ["missing-file-allowed", "skip-content-check", "accept-old-generation", "publish-before-complete"]
+}
