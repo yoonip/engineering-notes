@@ -2,7 +2,7 @@
 
 Leslie Lamport의 「Time, Clocks, and the Ordering of Events in a Distributed System」은 Communications of the ACM 21(7), pp.558–565, 1978년 7월에 실렸습니다. [저자 공개 원문](https://lamport.azurewebsites.net/pubs/time-clocks.pdf) 마지막 쪽은 1976년 3월 접수와 1977년 10월 수정을 구분합니다. 핵심은 pp.558–561의 사건 순서·논리 시계·전체 순서이며, 물리 시계 논의는 그 뒤에 이어집니다.
 
-## 두 서버의 기록 중 무엇이 먼저입니까
+## 메시지 송수신으로 알 수 있는 사건의 순서
 
 서버 P가 보낸 메시지를 서버 Q가 받은 뒤 답했다면, 전송보다 수신이 먼저일 수는 없습니다. 반면 서로 메시지를 주고받지 않은 두 작업의 기록에는 같은 방식으로 순서를 정할 근거가 없을 수 있습니다. 컴퓨터마다 표시한 시각이 있다는 사실만으로 모든 기록을 정확히 한 줄에 세울 수 있는 것은 아닙니다.
 

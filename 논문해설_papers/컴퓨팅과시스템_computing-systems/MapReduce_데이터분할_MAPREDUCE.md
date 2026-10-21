@@ -1,6 +1,6 @@
 # MapReduce: 계산을 나누고 같은 키를 다시 모으기
 
-Jeffrey Dean과 Sanjay Ghemawat의 「MapReduce: Simplified Data Processing on Large Clusters」는 OSDI 2004에서 발표되었습니다. [USENIX 행사 기록](https://www.usenix.org/legacy/event/osdi04/tech/dean.html)은 proceedings pp.137–150을 안내합니다. 이 해설의 절 위치는 [Google 공개 원문](https://research.google.com/archive/mapreduce-osdi04.pdf)의 §2 프로그래밍 모형, §3 구현·장애 처리, §4.3 combiner, §5 평가입니다.
+Jeffrey Dean과 Sanjay Ghemawat의 「MapReduce: Simplified Data Processing on Large Clusters」는 OSDI 2004에서 발표되었습니다. [USENIX 행사 기록](https://www.usenix.org/legacy/event/osdi04/tech/dean.html)은 proceedings pp.137–150을 안내합니다. [USENIX 학회 PDF](https://www.usenix.org/legacy/events/osdi04/tech/full_papers/dean/dean.pdf)와 [Google 공개 원문](https://research.google.com/archive/mapreduce-osdi04.pdf)에서 §2 프로그래밍 모형, §3 구현·장애 처리, §4.3 combiner, §5 평가를 읽습니다.
 
 ## 분할 계산의 중간 결과와 작업 관리
 
@@ -39,7 +39,7 @@ flowchart LR
 
 일부 도시의 기록이 대부분을 차지하면 그 키의 담당 작업이 늦어질 수 있습니다. 컴퓨터 수가 두 배라는 사실만으로 항상 두 배 빨라지지는 않습니다. 중간 데이터의 전송, 입력 읽기, 키의 편중과 마지막 느린 작업이 함께 영향을 줍니다.
 
-## 평균의 평균은 왜 틀릴 수 있습니까
+## 묶음 크기가 다르면 평균도 가중해야 합니다
 
 첫 묶음이 10과 20, 둘째 묶음이 100이라고 하겠습니다. 묶음 평균은 15와 100이고, 이 두 평균을 다시 평균하면 57.5입니다. 그러나 원래 세 값의 평균은 $130/3\approx43.3333$입니다. 두 묶음의 원소 수가 다르기 때문입니다.
 
