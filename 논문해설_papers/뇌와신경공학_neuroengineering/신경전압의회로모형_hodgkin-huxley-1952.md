@@ -5,7 +5,7 @@
 - A. L. Hodgkin, A. F. Huxley, “A Quantitative Description of Membrane Current and Its Application to Conduction and Excitation in Nerve”, Journal of Physiology 117, 500–544, 1952.
 - 소속: 케임브리지대학교 생리학연구소입니다.
 - [대학 공개 원문 PDF](https://isn.ucsd.edu/courses/beng207/reading/Hodgkin_Huxley_1952_jp.pdf), [DOI](https://doi.org/10.1113/jphysiol.1952.sp004764).
-- 원문은 Part I 실험 결과의 논의, Part II 수학적 기술, Part III 흥분·전도의 재구성으로 이어집니다. PDF 1쪽이 인쇄 500쪽이며, 등가회로는 500쪽 그림 1, 전류 분해는 504–506쪽, 칼륨·나트륨 변수는 506쪽 이후, 종합 논의와 요약은 뒷부분입니다. 확인일: 2026-10-20.
+- 원문은 Part I 실험 결과의 논의, Part II 수학적 기술, Part III 흥분·전도의 재구성으로 이어집니다. PDF 1쪽이 인쇄 500쪽이며, 등가회로 설명은 500쪽, 그림 1은 501쪽입니다. 전류 분해는 504–506쪽, 칼륨·나트륨 변수는 506쪽 이후, 종합 논의와 요약은 뒷부분입니다. 확인일: 2026-10-20.
 
 ## 신호가 생기는 이유를 묻습니다
 
@@ -33,7 +33,7 @@ C_m\frac{dV}{dt}=I_{ext}
 -\bar g_Kn^4(V-E_K)-g_L(V-E_L)
 ```
 
-Cₘ은 단위 면적당 막 정전용량입니다. dV/dt는 시간에 따른 전압의 변화율이며, E는 해당 이온 전류의 방향이 뒤집히는 역전전위입니다. V−E는 전류를 밀어주는 차이입니다. 막 위의 가로 막대가 있는 g는 최대 전도도를 나타냅니다. L은 누설 전류 항입니다. 이 식에는 독립된 전압 가지들이 병렬로 연결된 회로라는 생각이 담겨 있습니다.
+Cₘ은 단위 면적당 막 정전용량입니다. dV/dt는 시간에 따른 전압의 변화율이며, E는 해당 이온 전류의 방향이 뒤집히는 역전전위입니다. V−E는 전류를 밀어주는 차이입니다. g 위의 가로 막대는 최대 전도도를 나타냅니다. L은 누설 전류 항입니다. 막의 정전용량과 서로 다른 이온 전류 가지는 병렬로 연결되어 같은 막전압을 공유합니다. 각 이온 가지의 전류는 그 이온의 역전전위와 전도도에 따라 달라집니다. [원문 500쪽 설명·501쪽 그림 1](https://isn.ucsd.edu/courses/beng207/reading/Hodgkin_Huxley_1952_jp.pdf)
 
 ```math
 \frac{dn}{dt}=\alpha_n(V)(1-n)-\beta_n(V)n
