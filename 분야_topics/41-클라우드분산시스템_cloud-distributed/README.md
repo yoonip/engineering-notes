@@ -26,6 +26,21 @@ AWS, Azure, Google Cloud, Docker, Kubernetes, Terraform, Prometheus, Grafana, Op
 
 - [복제본의 교집합: quorum과 일관성의 조건](해설_notes/복제본의교집합_quorums-failures-and-consistency.md)
 
+## 응답 유실과 늦은 효과의 순서
+
+재시도 정책은 ‘응답을 받았는가’와 ‘이전 요청이 다시 영향을 줄 수 있는가’를 나누어 판단해야 합니다. 서버가 이미 처리했지만 응답만 사라졌다면 새 ID로 재시도하는 요청은 같은 작업을 두 번 만들 수 있습니다. 같은 ID의 결과를 보관하는 방식은 그 중복을 다루지만, 결과 저장과 실제 부작용을 따로 갱신하면 둘 사이에서 장애가 날 수 있습니다. 멱등성 키가 존재한다는 사실만으로 원자적인 중복 제거가 완성되지는 않습니다.
+
+멱등성은 순서 보장과도 다릅니다. 값 대입 `set(A)`를 두 번 연속 수행하면 A이지만, `set(A) → set(B) → set(A)`는 마지막 값이 A입니다. 첫 A를 옛 시도로 보고 callback만 버려도 마지막 효과는 그대로입니다. 저장장치 모델에서는 R1의 A가 timeout된 뒤 retry B가 AAAA를 쓰고, R2가 BBBB를 쓴 다음 옛 A가 적용되면 최종 AAAA가 됩니다. 응용 완료는 R1·R2 각각 한 번이므로 완료 개수와 최종 값을 함께 확인해야 합니다.
+
+| 구별할 조건 | 확인해야 할 내용 |
+| --- | --- |
+| 응답이 없습니다. | 미실행·실행 후 응답 유실 중 어느 쪽인지 아직 모릅니다. |
+| 같은 ID로 재시도합니다. | ID 범위·보관 기간·중복 결과·부작용과 결과 저장의 원자성을 확인합니다. |
+| 옛 callback을 무시합니다. | 호스트 통지를 걸러도 옛 장치·서버의 부작용이 멈췄다는 증거는 아닙니다. |
+| 새 값을 쓰려고 합니다. | 미해결 옛 작업이 새 값을 다시 덮을 수 있는지 확인합니다. |
+
+교육용 [늦은 쓰기와 retry 사례](../../설계와검증사례_engineering-cases/시간초과뒤늦은쓰기와재시도_block-io-timeout-retry.md)는 미해결 쓰기를 막고, 옛 작업이 더 이상 영향을 줄 수 없다는 명시적 모델 입력 뒤에만 재시도를 허용합니다. 이것을 분산 서비스의 실제 취소 구현이나 일반적인 exactly-once 보장으로 바꾸어 설명하지 않습니다. 네트워크에서는 취소·중복 제거·트랜잭션·순서 번호의 구체적인 계약이 각각 필요합니다.
+
 ## English
 
 ### Cloud and distributed systems
@@ -46,6 +61,12 @@ Logs record events, metrics record numerical time series, and traces follow a re
 
 - [복제본의 교집합: quorum과 일관성의 조건](해설_notes/복제본의교집합_quorums-failures-and-consistency.md#english)
 
+
+### Lost replies and late effects
+
+Retry policy must distinguish a missing reply from evidence that an older attempt can no longer have effects. An idempotency key needs a defined scope, retention period, and atomic relationship between the recorded result and the side effect. A stored key alone does not supply those conditions.
+
+Idempotency also differs from ordering. Repeating `set(A)` yields A, but `set(A), set(B), set(A)` still ends in A. The [late-write example](../../설계와검증사례_engineering-cases/시간초과뒤늦은쓰기와재시도_block-io-timeout-retry.md#english) executes this counterexample: filtering an old callback preserves one completion per request while the old effect overwrites the newer value. Its explicit stop-evidence input is an educational contract, not a distributed cancellation or exactly-once implementation.
 
 ## 심화 해설 | Advanced article
 

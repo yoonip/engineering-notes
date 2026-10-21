@@ -62,6 +62,25 @@ for restored in ({"a": b"A"}, {}):  # 파일 하나가 빠진 결과와 빈 결�
 
 [파일시스템 검사와 복구](../../설계와검증사례_engineering-cases/파일시스템의손상검사와복구계획_filesystem-check-repair.md)와 [파일 이름·블록 소유권](../../설계와검증사례_engineering-cases/파일이름과블록소유권의복구_filesystem-orphans-block-ownership.md)은 이 차이를 실제로 생성한 교육용 이미지 파일에서 다룹니다. 실제 ext4와 e2fsck의 실행 결과는 별개입니다.
 
+## 재시도의 안전성과 호출량은 다른 조건입니다
+
+멱등성은 같은 연산을 반복해도 최종 효과가 한 번 수행한 때와 같은 성질입니다. 실제 실행 횟수가 한 번이라는 뜻은 아닙니다. 요청을 해석하고 저장 상태를 조회하는 비용도 없어지지 않습니다. 실패한 의존 시스템에 여러 계층이 각각 재시도하면 가장 아래 계층의 호출량이 곱으로 늘 수 있습니다. [Marc Brooker의 AWS 설명](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/)도 다층 재시도의 증폭과 시도 횟수 제한을 구분합니다. 아래는 그 원리를 직접 정한 세 계층의 수로 계산하는 예입니다.
+
+```python
+from itertools import product  # import는 여러 범위의 모든 조합을 만드는 product 함수를 가져옵니다.
+attempts_per_layer = (3, 3, 3)  # tuple은 세 계층 각각의 최초 호출 포함 최대 시도 수입니다.
+leaf_calls = list(product(*(range(n) for n in attempts_per_layer)))  # *는 세 range를 인수로 펼치며 list는 조합을 저장합니다.
+single_retry_calls = list(product(range(3), range(1), range(1)))  # 한 계층만 재시도하고 나머지는 한 번씩 호출합니다.
+print(len(leaf_calls), len(single_retry_calls))  # len은 최하위 호출 조합 수 27과 3을 출력합니다.
+print(leaf_calls[0], leaf_calls[-1])  # []의 0과 -1은 첫 조합과 마지막 조합을 고릅니다.
+```
+
+출력은 `27 3`과 `(0, 0, 0) (2, 2, 2)`입니다. 각 계층의 3회는 ‘최초 1회+재시도 2회’입니다. 하위 호출이 계속 실패해 모든 기회를 쓰는 경로에서 최대 `3×3×3=27`회가 됩니다. 한 계층에만 같은 최대 3회를 두면 `3×1×1=3`회입니다. 이 코드는 시도 번호의 조합 계산이며 실제 서버 호출·부하·지연 측정이 아닙니다. 조기에 성공하거나 계층 사이에 총 예산을 공유하면 횟수는 달라집니다.
+
+backoff는 재시도 사이의 대기 시간을 늘리는 방식이고 jitter는 여러 요청이 같은 순간에 몰리지 않도록 대기 시점을 흩뜨리는 방식입니다. 최대 시도 수는 총량, 대기 정책은 시점, 멱등성은 반복 적용의 결과를 다루므로 하나를 넣었다고 나머지가 자동으로 해결되지는 않습니다. 위 계산은 backoff나 jitter를 실행하지 않습니다. 실제 정책에서는 전체 마감시간·재시도 주체·남은 횟수·반복해도 되는 오류를 함께 정해야 합니다.
+
+[시간초과 뒤 늦은 쓰기 사례](../../설계와검증사례_engineering-cases/시간초과뒤늦은쓰기와재시도_block-io-timeout-retry.md)는 호출량보다 앞선 질문도 다룹니다. 옛 작업이 여전히 실행될 수 있다면 완료 통지만 무시해도 뒤늦은 데이터 덮어쓰기는 남을 수 있습니다. 요청의 결과, 작업의 종료, 같은 주소의 후속 접근 허용을 서로 다른 계약으로 확인합니다. 해당 예제는 고정 사건의 호스트 모델이며 실제 장치의 취소 성공을 검증한 것이 아닙니다.
+
 ## English
 
 ### Software design and quality
@@ -88,6 +107,13 @@ A profiler shows where time is spent. Memory tools examine allocations, lifetime
 Exit codes belong to a tool's contract. e2fsck combines condition bits, so 5 reports both correction and remaining errors. The example decodes documented values without running e2fsck. A successful process, structurally consistent metadata and preserved original content are separate observations.
 
 Checking only returned files misses omissions; Python all also returns true for an empty iterable. Expected identities and content must be checked when a trusted inventory exists. Repair idempotence is useful but insufficient: deleting everything is also idempotent. The linked educational image cases combine unchanged originals, bounded repair actions, structural checks, content expectations and explicit refusal of ambiguous repairs.
+
+
+### Retry safety and retry volume
+
+Idempotency concerns repeated effects; it does not remove request-processing cost. The local Cartesian-product example counts a declared worst case with three layers and three total attempts per layer: 27 leaf-call combinations, versus three when only one layer retries. These are authored finite calculations rather than server measurements. Early success and a shared retry budget change the count.
+
+Attempt limits bound volume, backoff/jitter distribute timing, and idempotency constrains effects. The calculation implements only the count. The linked I/O case separately shows why ignoring a late completion does not necessarily stop an older write from changing media. Its explicit stopped-attempt condition belongs to a host event contract, not a physical controller cancellation result.
 
 
 ## 심화 해설 | Advanced article

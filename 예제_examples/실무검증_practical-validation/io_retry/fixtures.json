@@ -1,0 +1,14 @@
+{
+  "schema": "IO-RETRY-1",
+  "lba_count": 1,
+  "block_bytes": 4,
+  "initial": "00000000",
+  "r1": "41414141",
+  "r2": "42424242",
+  "unsafe_final": "41414141",
+  "safe_final": "42424242",
+  "completion_ids": ["R1", "R2"],
+  "safe_outcomes": {"R1": "SUCCESS", "R2": "SUCCESS"},
+  "read_notifications": [{"request": "Q", "status": "SUCCESS", "value": "00000000"}],
+  "failed_then_next": [{"request": "R1", "status": "FAILED", "value": null}, {"request": "R2", "status": "SUCCESS", "value": null}]
+}
