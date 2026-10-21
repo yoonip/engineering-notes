@@ -8,7 +8,7 @@
 
 ready 신호가 멀리서 돌아오는 데 여러 cycle이 걸리면, 상대가 가득 찬 것을 보고 멈출 때 이미 추가 데이터가 이동 중일 수 있습니다. credit은 아직 사용할 수 있는 버퍼 자리의 표입니다. 보낼 때 표 하나를 쓰고, 수신자가 데이터를 꺼낸 뒤 반환한 표가 돌아와야 다시 씁니다. 지연을 없애는 대신 이동 중인 데이터까지 자리에 미리 계산하는 방법입니다.
 
-[Altera P-Tile PCIe의 TX flow-control 설명](https://docs.altera.com/r/docs/683059/25.3/p-tile-avalon-streaming-ip-for-pci-express-user-guide/tx-flow-control-interface)은 전송 전에 수신 버퍼 공간을 credit으로 확인하는 구조를 설명합니다. [PCI-SIG의 flow-control 변경 설명](https://pcisig.com/blog/pci-express%C2%AE-60-specification-functionality-updates-%E2%80%93-part-2)은 shared buffer와 virtual channel 같은 실제 프로토콜의 확장을 보여 줍니다. 아래 모델은 이 아이디어를 한 종류의 unit-sized token으로 단순화한 것이며 PCIe 규격 구현이 아닙니다.
+[Intel P-Tile PCIe의 TX flow-control 설명(2023-10-02, §4.4.7)](https://cdrdv2-public.intel.com/788579/ug_ptile_pcie_avst-683059-788579.pdf)은 전송 전에 수신 버퍼 공간을 credit으로 확인하는 구조를 설명합니다. [PCI-SIG의 flow-control 변경 설명](https://pcisig.com/blog/pci-express%C2%AE-60-specification-functionality-updates-%E2%80%93-part-2)은 shared buffer와 virtual channel 같은 실제 프로토콜의 확장을 보여 줍니다. 아래 모델은 이 아이디어를 한 종류의 unit-sized token으로 단순화한 것이며 PCIe 규격 구현이 아닙니다.
 
 ### 자리는 네 곳 중 하나에 있습니다
 
@@ -57,7 +57,7 @@ python -m unittest -v test_models.HardwareModels.test_credit_conservation_order_
 
 When a ready response takes several cycles to return, additional data can already be in flight when the sender learns that the receiver is full. A credit represents one reserved buffer slot. Sending spends a credit; only a credit returned after consumption can be reused. This accounts for propagation delay rather than removing it.
 
-[Altera's P-Tile PCIe TX flow-control documentation](https://docs.altera.com/r/docs/683059/25.3/p-tile-avalon-streaming-ip-for-pci-express-user-guide/tx-flow-control-interface) describes checking receiver buffer credits before transmission. [PCI-SIG's flow-control discussion](https://pcisig.com/blog/pci-express%C2%AE-60-specification-functionality-updates-%E2%80%93-part-2) gives real-protocol context for shared buffers and virtual channels. The example reduces the idea to a single class of unit tokens; it is not a PCIe implementation.
+[Intel's P-Tile PCIe TX flow-control documentation (2023-10-02, §4.4.7)](https://cdrdv2-public.intel.com/788579/ug_ptile_pcie_avst-683059-788579.pdf) describes checking receiver buffer credits before transmission. [PCI-SIG's flow-control discussion](https://pcisig.com/blog/pci-express%C2%AE-60-specification-functionality-updates-%E2%80%93-part-2) gives real-protocol context for shared buffers and virtual channels. The example reduces the idea to a single class of unit tokens; it is not a PCIe implementation.
 
 ### Deriving the conservation law
 
@@ -79,5 +79,5 @@ Physical interconnect verification must additionally cover credit units, packet 
 
 ## 출처 / Sources
 
-- Altera, *P-Tile Avalon Streaming PCIe User Guide 25.3*, TX Flow Control, 2026-03-24: receiver-credit checks.
-- PCI-SIG, *PCI Express 6.0 Functionality Updates, Part 2*: shared-credit and buffer context. Links appear above.
+- Intel, *P-Tile Avalon Streaming Intel FPGA IP for PCI Express User Guide*, document 683059 (2023-10-02), §4.4.7, p. 71: receiver-credit checks.
+- PCI-SIG, *PCI Express 6.0 Functionality Updates, Part 2* (2023-11-27): shared-credit and buffer context. Links appear above.

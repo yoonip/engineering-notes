@@ -24,12 +24,12 @@ $$v_t\land\neg r_t\Rightarrow v_{t+1}\land(data_{t+1}=data_t)$$
 
 버퍼에 저장한 ordered queue를 Q, 크기를 n이라 하겠습니다. 아래 참조 모델은 empty bypass 없이 다음처럼 정합니다.
 
-$$in\_ready=(n<2),\quad out\_valid=(n>0),\quad out\_data=Q[0].$$
+$$in\_ready=(n<2),\quad out\_valid=(n>0),\quad out\_data=Q[0]\;\text{when }n>0.$$
 
 $$a_t=in\_valid\land in\_ready,\quad b_t=out\_valid\land out\_ready,\quad
 n_{t+1}=n_t+a_t-b_t.$$
 
-모든 판단은 갱신 전 상태를 씁니다. 먼저 수락한 출력 하나를 제거하고 수락한 입력 하나를 뒤에 추가합니다. 크기 1에서 동시 수락하면 한 beat/cycle을 유지할 수 있습니다. Full에서는 같은 에지에 출력이 나가더라도 새 입력을 받지 않아, full에서 회복하는 cycle에 입력 bubble이 생깁니다. 이는 downstream ready를 입력 ready에 조합 연결하지 않는 간단한 계약의 대가입니다. 다른 elastic/skid-buffer 설계는 여유 공간과 register를 달리 구성할 수 있습니다.
+n=0이면 out_valid=0이며 유효한 출력 데이터가 없습니다. 이때 Q[0]을 읽지 않습니다. 모든 판단은 갱신 전 상태를 씁니다. 먼저 수락한 출력 하나를 제거하고 수락한 입력 하나를 뒤에 추가합니다. 크기 1에서 동시 수락하면 한 beat/cycle을 유지할 수 있습니다. Full에서는 같은 에지에 출력이 나가더라도 새 입력을 받지 않아, full에서 회복하는 cycle에 입력 bubble이 생깁니다. 이는 downstream ready를 입력 ready에 조합 연결하지 않는 간단한 계약의 대가입니다. 다른 elastic/skid-buffer 설계는 여유 공간과 register를 달리 구성할 수 있습니다.
 
 | 에지 전 상태 | 입력 수락 | 출력 수락 | 다음 크기 |
 |---|---|---|---|
@@ -66,12 +66,12 @@ Define $`h_t=v_t\land r_t`$. Except for reset cancellation, $`v_t\land\neg r_t`$
 
 Let Q be an ordered queue of size n. The reference has no empty bypass:
 
-$$in\_ready=(n<2),\quad out\_valid=(n>0),\quad out\_data=Q[0],$$
+$$in\_ready=(n<2),\quad out\_valid=(n>0),\quad out\_data=Q[0]\;\text{when }n>0,$$
 
 $$a_t=in\_valid\land in\_ready,\quad b_t=out\_valid\land out\_ready,\quad
 n_{t+1}=n_t+a_t-b_t.$$
 
-All decisions use pre-edge state; remove an accepted output and append an accepted input. At n=1, simultaneous acceptance sustains one beat per cycle. At full, an outgoing beat does not permit an incoming beat on that same edge, creating an input bubble during recovery. This trades some full-state performance for a simple contract without a combinational downstream-ready-to-upstream-ready path. Other elastic/skid-buffer structures make different choices.
+At n=0, out_valid is false and output data is invalid; Q[0] is not read. All decisions use pre-edge state; remove an accepted output and append an accepted input. At n=1, simultaneous acceptance sustains one beat per cycle. At full, an outgoing beat does not permit an incoming beat on that same edge, creating an input bubble during recovery. This trades some full-state performance for a simple contract without a combinational downstream-ready-to-upstream-ready path. Other elastic/skid-buffer structures make different choices.
 
 At empty, valid input can fill one slot but no output is accepted. At n=1 with both ends ready, one beat enters and another leaves. At n=2 with output ready, only the output leaves. At n=1 with output stalled and valid input, the second slot fills.
 
@@ -87,4 +87,4 @@ For RTL, align monitor sampling with HDL nonblocking-update semantics and combin
 
 ## 출처 대조 / Source cross-check
 
-Arm의 일반 AXI handshake와 AMD의 실제 stream IP 조건을 대조했습니다. 버퍼의 경계 정책은 위에 별도로 정의했습니다. / Arm's protocol was cross-checked against AMD's concrete stream-IP conditions; buffer boundary choices are specified separately. 확인 / checked: 2026-10-19.
+Arm IHI 0022H (2020-03-31), A3.2.1의 AXI handshake와 AMD PG043 v5.0 (2021-10-22), READY/VALID Handshake의 stream IP 조건을 대조했습니다. 버퍼의 경계 정책은 위에 별도로 정의했습니다. / Arm's protocol was cross-checked against AMD's concrete stream-IP conditions; buffer boundary choices are specified separately. 확인 / checked: 2026-10-19.
