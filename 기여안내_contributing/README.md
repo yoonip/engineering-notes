@@ -12,6 +12,10 @@
 
 그림과 표 안내는 자료를 재사용하거나 기여하실 때 원본과 표기를 이해하기 위한 공개 문서입니다. 일반 학습 목차와 구분하여 이곳에 모았습니다. 저장소에서 사용하는 도구의 뜻은 [도구와 환경](../도구와환경_tools/README.md)에서 확인하실 수 있습니다.
 
+서로 다른 분야의 수정은 커밋을 나누고, 제목에는 해당 문서에서 바뀐 대상을 적습니다. 파일을 옮기거나 목차를 고칠 때에는 연결된 링크도 함께 확인합니다. 게시 전에는 수정한 파일과 상위 폴더의 최근 커밋 제목이 실제 변경 내용과 맞는지 살펴봅니다.
+
 ## English
 
 Please include the affected document, reproduction conditions and supporting sources when reporting an error. Contributor documentation covers repository structure, writing, editable figures and project evidence. It is separate from the learning index so readers can go directly to the subject they need.
+
+Keep changes in different subjects in separate commits and name the actual changed material. Check links when moving files or editing indexes, and review the latest commit titles shown for changed files and their parent folders before publication.

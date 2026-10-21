@@ -1,4 +1,6 @@
-# 설계 산출물의 관계
+# 요구사항·설계·구현·검증의 연결 | Requirements, design, implementation and verification
+
+[기여 안내 / Contributing](README.md) · [구현 프로젝트 / Projects](../프로젝트_projects/README.md)
 
 요구사항은 목표와 동작 조건을, 설계 문서는 구성요소와 인터페이스를 설명합니다. 소스·회로도·설정 파일에는 구현이 담기고, 테스트·로그·파형·측정 데이터에는 실제로 관찰한 동작이 담깁니다.
 
