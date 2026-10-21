@@ -1,6 +1,6 @@
 # 음악의 기초와 듣기 / Music foundations and listening
 
-음악의 시간·높이·동시 울림·큰 흐름을 나누어 듣고, 무엇이 같고 달라졌는지 설명하는 네 편입니다. 악보를 읽지 못해도 시작할 수 있습니다. 첫 글은 손뼉과 셈, 다음 글들은 음이름·표·짧은 자체 음열을 사용합니다. 악기가 있으면 음열을 연주해 비교할 수 있고, 없어도 길이·간격·구조의 관계부터 읽을 수 있습니다.
+음악의 시간·높이·동시 울림·큰 흐름을 나누어 듣고, 무엇이 같고 달라졌는지 설명하는 기초 학습입니다. 악보를 읽지 못해도 시작할 수 있습니다. 첫 글은 손뼉과 셈, 다음 글들은 음이름·표·짧은 자체 음열을 사용합니다. 악기가 있으면 음열을 연주해 비교할 수 있고, 없어도 길이·간격·구조의 관계부터 읽을 수 있습니다.
 
 기초 예는 서양의 음가·12평균율·C장조를 사용합니다. 한국 음악의 장단·선법이나 다른 음악 전통의 전체 문법을 이 체계 하나로 대신하지 않습니다. 계산은 직접 만든 학습 예이며 실제 곡의 채보·청취 실험 결과가 아닙니다.
 
@@ -23,6 +23,6 @@
 
 ## English overview
 
-Four lessons connect pulse and rhythm, pitch and tuning, melody and harmony, and repetition and form. Original short examples support counting, transposition and evidence-based listening. The lessons introduce selected Western notation conventions rather than a universal grammar of all music.
+These lessons connect pulse and rhythm, pitch and tuning, melody and harmony, and repetition and form. Original short examples support counting, transposition and evidence-based listening. The lessons introduce selected Western notation conventions rather than a universal grammar of all music.
 
 [인문사회 학습 목록](../README.md)
