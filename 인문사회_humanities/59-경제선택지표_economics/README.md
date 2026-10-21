@@ -1,8 +1,10 @@
 # 경제·선택·지표 | Economics, Choices and Indicators
 
-[전체 분야](../../분야별목차_CATALOG.md) · [추론과 인문·사회](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
+[전체 분야](../../분야별목차_CATALOG.md) · [인문사회](../README.md) · [개념과 판단](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
 
 희소성·기회비용·유인에서 출발해 경제적 선택을 분석하고, GDP와 물가를 정의·분모·기준시점에 맞게 읽습니다.
+
+선택의 이유는 기회비용에서, 금액과 생산량의 차이는 GDP·물가에서, 산업 간 수요의 연결은 투입산출 모형에서 이어서 살펴보실 수 있습니다. 국어 지문의 구조와 선택지 판단 연습은 [언어이해](../../언어이해와추리논증_reading-reasoning/언어이해_reading/README.md)로 연결합니다.
 
 ## 명목 증가와 실제 증가를 계산해 보기
 
@@ -24,6 +26,8 @@
 If income rises from 100 to 110 while a fixed consumption basket rises from 100 to 105, purchasing power changes by `1.10 / 1.05 - 1`, about 4.76%. Subtracting 5% from 10% is only an approximation. These are constructed values, not actual national statistics. The linked articles continue with indicator definitions, opportunity cost and inter-industry demand.
 
 Analyzes choice through scarcity, opportunity cost and incentives, and reads GDP and prices with their definitions, denominators and reference periods.
+
+Start with opportunity cost for choices, GDP and inflation for nominal versus real changes, and input–output analysis for inter-industry demand. The separate [reading-comprehension course](../../언어이해와추리논증_reading-reasoning/언어이해_reading/README.md) covers passage structure and answer-option evidence.
 
 - [Scarcity, opportunity cost and incentives](해설_notes/희소성에서선택으로_scarcity-opportunity-cost-incentives.md#english)
 - [GDP, inflation and real values](해설_notes/GDP와물가읽기_gdp-inflation-real-values.md#english)
