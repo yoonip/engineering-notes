@@ -1,4 +1,6 @@
-# IBM·Google 양자컴퓨터: 오류 정정과 계산 우위를 어떻게 확인합니까? / Quantum error correction and computational advantage
+# IBM·Google 양자컴퓨터: 오류 정정과 계산 우위의 근거 / Quantum error correction and computational advantage
+
+[분류 목차](README.md) · [제품·기술 리뷰](../README.md)
 
 기준일: 2026년 10월 20일. 현재 장치 문서, 원논문과 고전 시뮬레이션 후속 연구를 검토했습니다. 양자 장치를 직접 사용하거나 논문의 대규모 계산을 재현하지 않았습니다.
 

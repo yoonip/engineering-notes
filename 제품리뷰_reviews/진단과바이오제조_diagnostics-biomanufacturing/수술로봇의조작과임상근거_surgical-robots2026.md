@@ -1,5 +1,7 @@
 # 수술로봇 da Vinci 5와 Hugo: 조작·감각·임상 근거의 차이 / Surgical robot control, feedback and clinical evidence
 
+[분류 목차](README.md) · [제품·기술 리뷰](../README.md)
+
 2026년 10월 20일 기준으로 da Vinci 5의 힘 피드백과 Medtronic Hugo의 구조를 살펴봅니다. 공식 허가 문서와 병원 연구진의 실제 측정, 제조사 지원 연구를 구분합니다. 제품 원리를 설명하는 글이며 개인에게 특정 수술이나 장치를 선택하도록 권하는 임상 판단은 아닙니다.
 
 ## 허가된 제품과 모든 수술의 우월성은 다릅니다

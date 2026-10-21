@@ -1,5 +1,7 @@
 # 광자 계수 CT: 광자를 세는 검출기가 영상과 선량을 바꾸는 조건 / Photon-counting CT and dose-image trade-offs
 
+[분류 목차](README.md) · [제품·기술 리뷰](../README.md)
+
 2026년 10월 20일 기준으로 Siemens NAEOTOM Alpha 계열과 GE Photonova Spectra의 공개 자료를 살펴봅니다. 허가·판매 자료, 외부 병원 연구진의 팬텀 계측을 구분합니다. 기술과 근거를 설명하는 글이며 개인의 검사 선택이나 방사선량을 정하는 진료 안내는 아닙니다.
 
 ## 시제품 단계와 허가된 제품을 나누기
