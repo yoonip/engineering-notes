@@ -1,6 +1,6 @@
 # 법의 기초와 법령 읽기 / Law foundations and legal reading
 
-대한민국의 법령과 판결을 읽으면서 누가 누구에게 무엇을 요구하는지, 어떤 사실과 절차로 그 요구를 판단하는지 공부합니다. 법의 출처·시행 시점을 다룬 기존 두 글에 권리·증거·절차·판결 읽기 네 글을 이어 놓았습니다. 개인 사건의 답을 미리 정하기보다 판단에 필요한 질문을 구체적으로 나누는 학습입니다.
+대한민국의 법령과 판결을 읽으면서 누가 누구에게 무엇을 요구하는지, 어떤 사실과 절차로 그 요구를 판단하는지 공부합니다. 법의 출처·시행 시점에서 권리·증거·절차·판결 읽기로 이어집니다. 개인 사건의 답을 미리 정하기보다 판단에 필요한 질문을 구체적으로 나누는 학습입니다.
 
 ## 읽는 순서
 
@@ -13,7 +13,7 @@
 | 5 | [분쟁의 절차와 구제](해설_notes/분쟁의절차와구제_procedure-and-remedies.md) | 요구·보전·본안 판단·이행·집행을 구분합니다. |
 | 6 | [판결의 쟁점과 이유](해설_notes/판결의쟁점과이유_reading-judgments-issues-and-reasons.md) | 가상 판결과 실제 주식양도 사건에서 주장·사실·쟁점·이유·결론을 연결합니다. |
 
-새 네 글에는 풀이된 사례와 확인 문제 세 개씩이 있습니다. 가상 지급 규칙과 판결 모형은 현행법으로 표시하지 않았으며, 실제 조문과 판결은 공식 출처·확인 시점을 붙였습니다. 현행 조문과 과거 판결이 적용한 조문은 필요한 시점을 따로 읽습니다.
+권리·의무, 사실 인정, 분쟁 절차와 판결 읽기는 풀이된 사례와 확인 문제로 연습합니다. 가상 지급 규칙과 판결 모형은 현행법으로 표시하지 않았으며, 실제 조문과 판결은 공식 출처·확인 시점을 붙였습니다. 현행 조문과 과거 판결이 적용한 조문은 필요한 시점을 따로 읽습니다.
 
 ## 같은 문서 이름, 다른 적용 시점
 
@@ -25,10 +25,10 @@
 
 ‘주체와 상대방 → 원하는 결과 → 근거 규칙 → 주장하는 사실 → 뒷받침 자료 → 현재 절차와 판단’을 적어 보세요. 증거가 많아 보이는 것과 필요한 사실이 확인되는 것, 승소와 실제 회수, 상고 기각과 최초 청구 기각은 각각 다릅니다. [판결 읽기](해설_notes/판결의쟁점과이유_reading-judgments-issues-and-reasons.md)의 여섯 칸 예제로 연습할 수 있습니다.
 
-새 글의 대한민국 공식 자료 확인일은 2026년 10월 21일입니다. 기존 두 글은 각 본문에 남긴 확인 범위와 날짜를 유지했습니다.
+권리·의무, 사실 인정, 분쟁 절차와 판결 읽기의 대한민국 공식 자료 확인일은 2026년 10월 21일입니다. 법의 출처·해석과 법령 이력의 확인 범위·날짜는 각 본문에 적었습니다.
 
 ## English
 
-Read Korean legal sources by separating authority, effective date, rights, facts, evidence and procedure. Six articles connect foundational legal reading with worked exercises on possession, payment rules, remedies and judgments. Invented rules are clearly distinguished from current law, and historical judgments retain their original setting.
+Read Korean legal sources by separating authority, effective date, rights, facts, evidence and procedure. The articles connect foundational legal reading with worked exercises on possession, payment rules, remedies and judgments. Invented rules are clearly distinguished from current law, and historical judgments retain their original setting.
 
 [인문사회 목차](../README.md) · [전체 분야](../../분야별목차_CATALOG.md) · [개념과 판단](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md)
