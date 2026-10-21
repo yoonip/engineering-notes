@@ -29,7 +29,7 @@ aroTHERM plus 공식 문서는 R290 냉매, 공기에서 물로 열을 전달하
 
 ## 현장 계량이 알려 주는 것
 
-영국 Electrification of Heat 사업은 총 742대를 설치했고, 중간 분석에서 유효 연간 자료를 갖춘 공기열 291대의 SPF H4 중앙값을 2.80으로 보고했습니다. H4는 보조 열원과 순환펌프 등을 포함하는 경계입니다. 전체 설치 대수가 곧 그 통계의 표본 수는 아닙니다. [2023년 중간 현장 보고서, PDF 3·12·14쪽](https://es.catapult.org.uk/wp-content/uploads/2023/03/EoH-Interim-Insights-from-Heat-Pump-Performance-Data-1.pdf)
+영국 Electrification of Heat 사업은 총 742대를 설치했고, 중간 분석에서 유효 연간 자료를 갖춘 공기열 291대의 SPF H4 중앙값을 2.80으로 보고했습니다. H4는 보조 열원과 순환펌프 등을 포함하는 경계입니다. 전체 설치 대수가 곧 그 통계의 표본 수는 아닙니다. [2023년 중간 현장 보고서, §1.1.1·§4.4·표 5.1](https://es.catapult.org.uk/wp-content/uploads/2023/03/EoH-Interim-Insights-from-Heat-Pump-Performance-Data-1.pdf)
 
 이 사업은 정부 지원 실증이며 여러 설치 사업자가 참여했습니다. 제조사의 특정 모델을 모두 같은 집에 교차 설치한 무작위 비교가 아닙니다. 주택 선정, 계량기 오류·결측 제외, 기후와 난방수 설정이 결과에 영향을 줍니다. 이 중앙값을 aroTHERM plus의 보장 성능으로 쓰거나 한국 주택 전체에 옮길 수 없습니다. 2024년 최종 보고서가 공개되었지만 여기서 인용한 2.80은 명시적으로 2023년 중간 분석값입니다. [최종 자료 목록](https://es.catapult.org.uk/report/electrification-of-heat-summary-reports-and-datasets/)
 

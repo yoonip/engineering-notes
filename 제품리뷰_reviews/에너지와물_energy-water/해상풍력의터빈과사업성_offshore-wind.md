@@ -50,7 +50,7 @@ flowchart LR
 
 ## 설치와 상업운전 사이의 단계
 
-EnBW는 He Dreiht의 64기·960 MW 계획에서 첫 V236 설치를 발표했습니다. 설치업체 Cadeler는 2026년 최종 터빈 설치를 발표했습니다. 기초 설치, 기계 조립, 케이블 연결, 첫 송전, 정격 시험, 단지 전체의 계약상 상업운전은 다른 단계입니다. 마지막 설치 발표만으로 전체 단지의 연간 발전량과 수익이 확정되었다고 말하지 않습니다. [사업자 발표](https://www.enbw.com/press/enbw-he-dreiht-offshore-wind-farm.html) · [설치업체의 최종 설치 발표](https://www.inter.cadeler.com/news/cadeler-installs-final-turbine-at-he-dreiht-offshore-wind-farm)
+EnBW는 He Dreiht의 64기·960 MW 계획에서 첫 V236 설치를 발표했습니다. 설치업체 Cadeler는 2026년 8월 12일 최종 터빈 설치를 발표했습니다. 기초 설치, 기계 조립, 케이블 연결, 첫 송전, 정격 시험, 단지 전체의 계약상 상업운전은 다른 단계입니다. 마지막 설치 발표만으로 전체 단지의 연간 발전량과 수익이 확정되었다고 말하지 않습니다. [사업자 발표](https://www.enbw.com/press/enbw-he-dreiht-offshore-wind-farm.html) · [설치업체의 최종 설치 발표](https://www.cadeler.com/news/cadeler-installs-final-turbine-at-he-dreiht-offshore-wind-farm)
 
 배가 작업할 수 있는 날씨를 기다리는 동안 인건비와 임차료는 계속 들 수 있습니다. 육상에서 몇 시간이 걸리는 교체도 해상에서는 접근·기상·장비 예약 때문에 오래 걸릴 수 있습니다. 장기 정비 계약과 예비품 위치가 제품 선택에 영향을 주는 이유입니다. 단순 고장률만 비교하면 복구 시간의 차이를 놓칩니다.
 

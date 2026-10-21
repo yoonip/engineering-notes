@@ -48,7 +48,7 @@ flowchart LR
 
 규제기관이 공개한 2018년 Science Advisory Panel 보고서는 취수에 의한 생물 영향과 보상 서식지 계산의 가정을 검토합니다. 검토진은 독립 전문가이지만 비용은 사업자가 부담했다는 점이 규제기관 안내에 명시됩니다. 중립적 검토와 자금 제공의 경계를 함께 적어야 하며, 협찬 여부를 확인하지 않은 개인 후기를 독립 실측으로 대신하지 않았습니다. [규제기관의 자료와 검토진 안내](https://www.waterboards.ca.gov/sandiego/water_issues/programs/regulatory/carlsbad_desalination.html)
 
-해당 검토는 물고기가 헤엄칠 능력이 있다는 가정과 실제로 빠져나간다는 관측이 다르다고 지적합니다. 기술이 할 수 있는 일과 현장에서 실제 한 일을 나누는 좋은 사례입니다. 취수량에 비례해 모든 생물 영향이 선형 증가한다고 가정해도 표본의 계절·종·드문 대량 유입 사건이 결과에 영향을 줄 수 있습니다. [2018년 독립 검토 PDF](https://www.waterboards.ca.gov/sandiego/water_issues/programs/regulatory/docs/SAP/Poseidon_Carlsbad_SAP_report.pdf)
+해당 검토는 물고기가 헤엄칠 능력이 있다는 가정과 실제로 빠져나간다는 관측이 다르다고 지적합니다. 기술이 할 수 있는 일과 현장에서 실제 한 일을 나누는 좋은 사례입니다. 취수량에 비례해 모든 생물 영향이 선형 증가한다고 가정해도 표본의 계절·종·드문 대량 유입 사건이 결과에 영향을 줄 수 있습니다. 보고서 1쪽은 검토 범위를 취수 영향으로 한정하며 농축수 방류 영향과 방류구 설계 비교는 평가하지 않았다고 명시합니다. 농축수에 관한 앞의 물질수지 예제와 이 생태 검토는 근거의 범위가 다릅니다. [2018년 독립 검토 PDF](https://www.waterboards.ca.gov/sandiego/water_issues/programs/regulatory/docs/SAP/Poseidon_Carlsbad_SAP_report.pdf)
 
 여기서는 그 검토를 2026년까지 모든 해양 영향이 없었다는 증거로 사용하지 않습니다. 건설 전의 예측 검토, 허가 조건, 운영 후 감시는 서로 다른 자료입니다. 최신 허가 전체나 해양 원시자료를 재분석하지 않았으므로 규정 준수의 최종 판정도 하지 않습니다. 출처를 읽을 때 자료의 시점과 역할을 표시하는 것이 수치 자체만큼 중요합니다.
 
