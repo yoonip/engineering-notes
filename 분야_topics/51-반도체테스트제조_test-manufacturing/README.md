@@ -82,6 +82,23 @@ print(floor_cycles, floor_cycles * cycle_ps)  # 5와 12500 ps로 최소 시간�
 
 [DDR 명령 간격과 메모리 패턴 사례](../../설계와검증사례_engineering-cases/DDR명령간격과메모리패턴_ddr-command-pattern-checks.md)는 명시한 cycle 계약의 명령 검사와 데이터 패턴을 연결합니다. 패턴이 검출하는 결함 모델, 제한된 RTL 실행, 실제 소자·보드 검증을 구분하여 읽으실 수 있습니다. 특정 패턴 통과, ECC 관측, timing 조건의 통과는 각각 다른 검사의 근거입니다.
 
+## ECC의 정정 결과와 보장 밖 오류를 구분합니다
+
+[SECDED 실행 예제](../../예제_examples/실무검증_practical-validation/ecc_secded/README.md)는 8비트 자료에 검사 5비트를 붙인 고정 Hamming(13,8) 코드입니다. 자료 위치와 parity 위치를 정의한 뒤 단일 오류 3,328개 조합·이중 오류 19,968개 조합을 실제 Python 함수로 검사했습니다. 전자는 parity 위치까지 원래 자료로 정정하고, 후자는 `uncorrectable`로 판단해 자료를 반환하지 않습니다. 아래는 예제 코드 폴더에서 실행하는 짧은 관측입니다.
+
+```python
+from codec import encode, decode  # from/import로 예제 부호화·복호화 함수를 가져옵니다.
+word = encode(0xA5)  # 16진수 자료 A5를 13비트 코드워드 0A27로 바꿉니다.
+single = decode(word ^ (1 << 12))  # 정수 bit12인 전체 parity 위치13만 반전합니다.
+double = decode(word ^ (1 << 2) ^ (1 << 4))  # 자료 위치3·5를 함께 반전합니다.
+print(single.status, single.data, single.corrected_position)  # corrected 165 13입니다. 165는 A5의 10진수입니다.
+print(double.status, double.data)  # uncorrectable None이며 자료를 정상값처럼 넘기지 않습니다.
+```
+
+syndrome이 0이어도 전체 parity가 홀수라면 단일 오류 전제에서 위치 13을 고칩니다. 그러나 자료 0의 위치 1·2·3을 함께 바꾸면 자료 1의 위치 13 단일 오류와 같은 16진수 수신값 0007이 됩니다. 위치 1·2·3·13의 네 비트를 바꾸면 아예 자료 1의 유효 코드워드 1007이 됩니다. [계산과 반례](../../설계와검증사례_engineering-cases/ECC의단일비트정정과이중비트검출_ecc-secded.md)는 오정정·미검출과 단일/이중 보장을 함께 설명합니다.
+
+전체 13비트 입력 8,192개를 대조한 결과도 정한 반경 1 복호 정책과의 일치입니다. 모든 다중 오류의 원본을 알아냈다는 뜻이 아닙니다. 이 코드에는 주소·거래 번호 보호, 실제 메모리 scrubbing·BCH·LDPC·EDAC 장치가 없습니다. [실행 기록](../../설계와검증사례_engineering-cases/검증기록_evidence/ECC오류주입과검출범위_20261021.md)에 기본/최적화와 오류 변이·소스/입력 해시를 연결했습니다. 비교 횟수와 오류 위치 조합을 더해 독립 시험 수나 실제 양산 fault coverage로 해석하지 않습니다.
+
 ## English
 
 ### DFT, test, and manufacturing
@@ -110,6 +127,10 @@ A constructed twelve-item plan starts ten tests. One times out; one of the nine 
 ### DDR observations and test criteria
 
 A constructed correct-read example still has two additional corrected-error reports, so returned data and error telemetry answer different questions. Counter deltas require the same observation epoch. In a separate assumed timing calculation, 13.75 ns with a 2.5 ns command clock requires six cycles, while rounding down to five violates the minimum. These are local arithmetic examples; the linked case distinguishes bounded command/pattern checks from physical DDR, ECC, training or board measurements.
+
+### SECDED results and limits
+
+The linked educational Hamming(13,8) example corrects all 3,328 single-error combinations and rejects all 19,968 double-error combinations without exposing payload data. Syndrome zero with odd overall parity identifies position13 under the single-error assumption. Explicit three-bit miscorrection and four-bit undetected examples show why that assumption matters. Checking all 8,192 received words confirms the specified radius-one policy, not knowledge of every multi-bit error's original. Comparison counts and origin/position combinations overlap. This Python codec does not test physical memory ECC, address identity, scrubbing, vendor BCH/LDPC or EDAC hardware.
 
 ## 심화 해설 | Advanced article
 

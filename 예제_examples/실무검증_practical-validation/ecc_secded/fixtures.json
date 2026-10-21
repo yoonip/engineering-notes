@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "scope": "fixed educational extended Hamming(13,8); software injection, not DRAM/NAND/vendor ECC",
+  "position_numbering": "position1 is integer bit0; position13 is integer bit12; hex displays high bits first",
+  "data_positions_lsb_first": [3,5,6,7,9,10,11,12],
+  "hamming_parity_positions": [1,2,4,8],
+  "overall_parity_position": 13,
+  "basis_words_hex": ["1007","1019","102a","004b","1181","1282","0483","1888"],
+  "encoded_literals": [
+    {"data":0,"word_hex":"0000"},
+    {"data":1,"word_hex":"1007"},
+    {"data":128,"word_hex":"1888"},
+    {"data":165,"word_hex":"0a27"},
+    {"data":255,"word_hex":"0f77"}
+  ],
+  "outside_guarantee": [
+    {"name":"triple_looks_like_overall_bit","data":0,"flips":[1,2,3],"received_hex":"0007","expected":{"status":"corrected","data":1,"corrected_word":4103,"corrected_position":13,"syndrome":0,"overall_bad":true}},
+    {"name":"triple_looks_like_data_bit","data":0,"flips":[1,2,4],"received_hex":"000b","expected":{"status":"corrected","data":8,"corrected_word":75,"corrected_position":7,"syndrome":7,"overall_bad":true}},
+    {"name":"four_bits_are_another_codeword","data":0,"flips":[1,2,3,13],"received_hex":"1007","expected":{"status":"clean","data":1,"corrected_word":4103,"corrected_position":null,"syndrome":0,"overall_bad":false}},
+    {"name":"triple_has_unused_syndrome","data":0,"flips":[1,4,8],"received_hex":"0089","expected":{"status":"uncorrectable","data":null,"corrected_word":null,"corrected_position":null,"syndrome":13,"overall_bad":true}}
+  ]
+}
