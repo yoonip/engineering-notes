@@ -1,5 +1,7 @@
 # 순위 검색
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/72412) · Level 2 · Python3
 
 네 조건의 일부가 생략될 수 있는 질의마다 점수 기준 이상인 지원자 수를 셉니다.

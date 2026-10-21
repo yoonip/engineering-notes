@@ -1,5 +1,7 @@
 # 뒤에 있는 큰 수 찾기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/154539) · Level 2 · Python3
 
 각 원소 오른쪽에서 처음 만나는 더 큰 수를 찾습니다.

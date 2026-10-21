@@ -1,5 +1,7 @@
 # 호텔 대실
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/155651) · Level 2 · Python3
 
 각 대실 종료 후 청소 10분을 포함해 필요한 최소 객실 수를 구합니다.

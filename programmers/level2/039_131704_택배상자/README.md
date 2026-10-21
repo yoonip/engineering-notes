@@ -1,5 +1,7 @@
 # 택배상자
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/131704) · Level 2 · Python3
 
 주 컨베이어와 스택 보조 벨트로 원하는 순서대로 실을 수 있는 최대 상자 수를 구합니다.

@@ -1,5 +1,7 @@
 # 지게차와 크레인
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/388353) · Level 2 · Python3
 
 지게차는 외부에서 닿는 컨테이너만, 크레인은 같은 글자를 모두 제거합니다.

@@ -1,5 +1,7 @@
 # 피로도
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/87946) · Level 2 · Python3
 
 피로도 조건을 만족하며 탐험할 수 있는 최대 던전 수를 구합니다.

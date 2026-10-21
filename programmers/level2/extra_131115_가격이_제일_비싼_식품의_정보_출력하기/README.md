@@ -1,5 +1,7 @@
 # 가격이 제일 비싼 식품의 정보 출력하기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/131115) · Level 2 · MySQL
 
 [입력 테이블과 자료형 / Input schema](SCHEMA.md)

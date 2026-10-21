@@ -1,5 +1,7 @@
 # 혼자서 하는 틱택토
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/160585) · Level 2 · Python3
 
 선공 O와 후공 X가 규칙대로 두어 만들 수 있는 틱택토 상태인지 확인합니다.

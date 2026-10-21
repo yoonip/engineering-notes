@@ -1,5 +1,7 @@
 # 시소 짝꿍
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/152996) · Level 2 · Python3
 
 좌석 거리 2·3·4에서 토크가 같아질 수 있는 사람 쌍을 셉니다.

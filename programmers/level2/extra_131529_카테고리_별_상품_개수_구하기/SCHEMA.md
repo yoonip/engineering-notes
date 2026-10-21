@@ -1,5 +1,7 @@
 # 입력 테이블 / Input schema — 카테고리 별 상품 개수 구하기
 
+[문제 풀이 / Solution](README.md) · [Level 2 목록 / Level 2 index](../README.md)
+
 풀이에서 사용하는 테이블의 열·자료형·NULL 허용 여부를 정리했습니다. NULL은 빈 문자열이나 숫자 0과 다른 값이므로 필터와 집계에서 구분합니다.
 
 Columns, types and nullability for the tables used by the solution. NULL is distinct from an empty string or numeric zero and must be handled separately in filtering and aggregation.

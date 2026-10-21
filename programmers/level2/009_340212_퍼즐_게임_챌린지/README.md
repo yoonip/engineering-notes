@@ -1,5 +1,7 @@
 # [PCCP 기출문제] 2번 / 퍼즐 게임 챌린지
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/340212) · Level 2 · Python3
 
 모든 퍼즐을 제한 시간 안에 푸는 최소 숙련도를 구합니다.

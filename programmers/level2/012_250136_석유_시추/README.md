@@ -1,5 +1,7 @@
 # [PCCP 기출문제] 2번 / 석유 시추
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/250136) · Level 2 · Python3
 
 세로 시추관 하나가 만나는 석유 덩어리의 전체 면적 합을 최대화합니다.

@@ -1,5 +1,7 @@
 # 연속된 부분 수열의 합
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/178870) · Level 2 · Python3
 
 합이 k인 연속 부분 수열 중 가장 짧고 가장 앞선 구간을 찾습니다.

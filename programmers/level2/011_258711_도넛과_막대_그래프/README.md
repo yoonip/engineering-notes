@@ -1,5 +1,7 @@
 # 도넛과 막대 그래프
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/258711) · Level 2 · Python3
 
 추가 정점과 원래 도넛·막대·8자 그래프의 수를 구합니다.

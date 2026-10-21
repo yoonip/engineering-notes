@@ -1,5 +1,7 @@
 # 디펜스 게임
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/142085) · Level 2 · Python3
 
 병사와 무적권을 최적으로 사용해 막을 수 있는 최대 라운드 수를 구합니다.

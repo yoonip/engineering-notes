@@ -1,5 +1,7 @@
 # 양궁대회
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/92342) · Level 2 · Python3
 
 가장 큰 점수 차이로 양궁에서 이기는 화살 배분을 찾고 동률이면 낮은 점수를 우선합니다.

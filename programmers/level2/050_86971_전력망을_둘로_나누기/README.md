@@ -1,5 +1,7 @@
 # 전력망을 둘로 나누기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/86971) · Level 2 · Python3
 
 트리 전선을 하나 끊어 두 연결 부분의 송전탑 수 차이를 최소화합니다.

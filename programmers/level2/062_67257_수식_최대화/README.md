@@ -1,5 +1,7 @@
 # 수식 최대화
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/67257) · Level 2 · Python3
 
 세 연산자의 우선순위를 바꾸어 수식 결과 절댓값을 최대화합니다.

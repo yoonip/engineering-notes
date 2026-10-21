@@ -1,5 +1,7 @@
 # 서버 증설 횟수
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/389479) · Level 2 · Python3
 
 시간대별 이용자를 감당하도록 필요한 서버를 k시간씩 증설하고 총 증설 수를 구합니다.

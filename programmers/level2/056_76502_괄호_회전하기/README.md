@@ -1,5 +1,7 @@
 # 괄호 회전하기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/76502) · Level 2 · Python3
 
 문자열을 각 위치에서 회전했을 때 올바른 괄호 문자열이 되는 경우 수를 셉니다.

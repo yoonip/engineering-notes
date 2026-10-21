@@ -1,5 +1,7 @@
 # [PCCP 기출문제] 3번 / 충돌위험 찾기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/340211) · Level 2 · Python3
 
 정해진 경로를 움직이는 로봇이 같은 시각·좌표에 두 대 이상 모이는 횟수를 셉니다.

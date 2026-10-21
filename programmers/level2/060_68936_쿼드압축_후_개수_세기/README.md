@@ -1,5 +1,7 @@
 # 쿼드압축 후 개수 세기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/68936) · Level 2 · Python3
 
 같은 값으로 채워진 정사각형을 압축했을 때 남는 0·1 블록 수를 셉니다.

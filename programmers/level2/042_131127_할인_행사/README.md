@@ -1,5 +1,7 @@
 # 할인 행사
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/131127) · Level 2 · Python3
 
 연속 10일의 할인 상품이 원하는 품목과 수량에 정확히 맞는 시작일 수를 셉니다.

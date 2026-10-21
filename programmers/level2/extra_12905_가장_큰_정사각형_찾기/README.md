@@ -1,5 +1,7 @@
 # 가장 큰 정사각형 찾기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/12905) · Level 2 · Python3
 
 ## 문제와 조건 / Task and conditions

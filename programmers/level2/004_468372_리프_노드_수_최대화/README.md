@@ -1,5 +1,7 @@
 # 리프 노드 수 최대화
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/468372) · Level 2 · Python3
 
 분배 노드 수와 경로 분배도 제한을 지키며 리프 수를 최대화합니다.

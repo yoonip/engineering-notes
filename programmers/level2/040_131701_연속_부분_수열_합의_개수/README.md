@@ -1,5 +1,7 @@
 # 연속 부분 수열 합의 개수
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/131701) · Level 2 · Python3
 
 원형 수열의 모든 비어 있지 않은 연속 구간 합 중 서로 다른 값 수를 셉니다.

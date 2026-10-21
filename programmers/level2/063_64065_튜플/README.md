@@ -1,5 +1,7 @@
 # 튜플
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/64065) · Level 2 · Python3
 
 원소가 하나씩 늘어나는 집합 표현에서 원래 튜플의 순서를 복원합니다.

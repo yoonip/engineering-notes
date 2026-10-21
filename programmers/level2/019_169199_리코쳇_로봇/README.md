@@ -1,5 +1,7 @@
 # 리코쳇 로봇
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/169199) · Level 2 · Python3
 
 장애물이나 벽까지 미끄러지는 로봇을 목표에 세우는 최소 이동 수를 구합니다.

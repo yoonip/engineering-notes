@@ -1,5 +1,7 @@
 # 마법의 엘리베이터
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/148653) · Level 2 · Python3
 
 10의 거듭제곱만큼 위아래로 이동해 0층으로 가는 최소 버튼 수를 구합니다.

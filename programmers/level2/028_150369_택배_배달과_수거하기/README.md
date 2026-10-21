@@ -1,5 +1,7 @@
 # 택배 배달과 수거하기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/150369) · Level 2 · Python3
 
 용량이 제한된 트럭으로 배달과 수거를 모두 마치는 최소 왕복 거리를 구합니다.

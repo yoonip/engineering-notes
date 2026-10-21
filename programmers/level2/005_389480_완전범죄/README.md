@@ -1,5 +1,7 @@
 # 완전범죄
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/389480) · Level 2 · Python3
 
 물건을 A 또는 B에게 배정해 둘 다 체포되지 않으면서 A의 흔적을 최소화합니다.

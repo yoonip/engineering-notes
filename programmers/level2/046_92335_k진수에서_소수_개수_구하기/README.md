@@ -1,5 +1,7 @@
 # k진수에서 소수 개수 구하기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/92335) · Level 2 · Python3
 
 n을 k진수로 바꿔 0으로 구분된 조각을 십진수로 읽고 소수 조각 수를 셉니다.

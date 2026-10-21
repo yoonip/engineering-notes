@@ -1,5 +1,7 @@
 # 당구 연습
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/169198) · Level 2 · Python3
 
 벽을 한 번 맞힌 뒤 목표 공에 도달하는 최소 이동 거리의 제곱을 구합니다.

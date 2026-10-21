@@ -1,5 +1,7 @@
 # 메뉴 리뉴얼
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/72411) · Level 2 · Python3
 
 주문에서 함께 많이 선택된 메뉴 조합을 코스 길이별로 고릅니다.

@@ -1,5 +1,7 @@
 # 테이블 해시 함수
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/147354) · Level 2 · Python3
 
 지정 정렬 뒤 각 행의 나머지 합을 계산해 주어진 구간을 XOR합니다.

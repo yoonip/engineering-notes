@@ -1,5 +1,7 @@
 # 2개 이하로 다른 비트
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/77885) · Level 2 · Python3
 
 각 수보다 크고 이진 표현이 두 비트 이하로 다른 가장 작은 수를 구합니다.

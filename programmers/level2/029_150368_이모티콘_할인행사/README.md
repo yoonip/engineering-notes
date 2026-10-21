@@ -1,5 +1,7 @@
 # 이모티콘 할인행사
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/150368) · Level 2 · Python3
 
 가입자 수를 최우선으로, 그다음 이모티콘 매출을 최대화하는 할인 조합을 찾습니다.

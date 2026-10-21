@@ -1,5 +1,7 @@
 # 단체사진 찍기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/1835) · Level 2 · C++
 
 ## 문제와 조건 / Task and conditions

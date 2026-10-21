@@ -1,5 +1,7 @@
 # 거리두기 확인하기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/81302) · Level 2 · Python3
 
 각 5×5 대기실의 모든 응시자가 파티션을 고려한 거리두기를 지키는지 확인합니다.

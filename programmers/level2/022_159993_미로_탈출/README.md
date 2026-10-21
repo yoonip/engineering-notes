@@ -1,5 +1,7 @@
 # 미로 탈출
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/159993) · Level 2 · Python3
 
 레버를 먼저 당긴 다음 출구에 도착하는 최소 이동 시간을 구합니다.

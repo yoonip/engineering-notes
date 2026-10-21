@@ -1,5 +1,7 @@
 # 두 큐 합 같게 만들기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/118667) · Level 2 · Python3
 
 두 양수 큐의 앞 원소를 다른 큐 뒤로 옮겨 합을 같게 하는 최소 횟수를 구합니다.

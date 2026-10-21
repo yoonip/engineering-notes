@@ -1,5 +1,7 @@
 # 빛의 경로 사이클
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/86052) · Level 2 · Python3
 
 격자에서 직진·좌회전·우회전하는 빛의 모든 경로 사이클 길이를 구합니다.

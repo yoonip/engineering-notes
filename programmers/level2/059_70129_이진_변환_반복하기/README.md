@@ -1,5 +1,7 @@
 # 이진 변환 반복하기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/70129) · Level 2 · Python3
 
 0 제거와 남은 길이의 이진수 변환을 반복해 변환 횟수와 제거한 0 수를 구합니다.

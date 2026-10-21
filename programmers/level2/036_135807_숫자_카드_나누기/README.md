@@ -1,5 +1,7 @@
 # 숫자 카드 나누기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/135807) · Level 2 · Python3
 
 한 배열의 모든 수를 나누고 다른 배열의 어떤 수도 나누지 않는 최대 양의 정수를 찾습니다.

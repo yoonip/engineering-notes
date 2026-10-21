@@ -1,5 +1,7 @@
 # 과제 진행하기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/176962) · Level 2 · Python3
 
 새 과제가 시작되면 현재 과제를 멈추고, 빈 시간에는 가장 최근에 멈춘 과제를 이어 합니다.

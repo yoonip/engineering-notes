@@ -1,5 +1,7 @@
 # 롤케이크 자르기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/132265) · Level 2 · Python3
 
 자른 양쪽의 토핑 종류 수가 같은 분할 위치를 셉니다.

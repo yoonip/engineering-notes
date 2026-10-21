@@ -1,5 +1,7 @@
 # 선인장 숨기기
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/468379) · Level 2 · Python3
 
 직사각형 구역에 첫 비가 내리는 시각을 최대화하고, 동률이면 위쪽·왼쪽 위치를 고릅니다.

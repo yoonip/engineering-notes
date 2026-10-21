@@ -1,5 +1,7 @@
 # 우박수열 정적분
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/134239) · Level 2 · Python3
 
 우박수열 점들을 직선으로 잇는 그래프의 지정 구간 넓이를 계산합니다.

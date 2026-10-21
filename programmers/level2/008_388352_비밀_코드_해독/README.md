@@ -1,5 +1,7 @@
 # 비밀 코드 해독
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/388352) · Level 2 · Python3
 
 다섯 숫자로 된 비밀 코드 후보 중 모든 시도별 일치 개수를 만족하는 후보 수를 셉니다.

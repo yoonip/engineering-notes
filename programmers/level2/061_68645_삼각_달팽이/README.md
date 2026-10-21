@@ -1,5 +1,7 @@
 # 삼각 달팽이
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/68645) · Level 2 · Python3
 
 삼각형 배열을 아래·오른쪽·왼쪽 위 방향으로 채운 뒤 행 순서로 펼칩니다.

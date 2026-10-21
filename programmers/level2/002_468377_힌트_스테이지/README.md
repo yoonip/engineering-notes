@@ -1,5 +1,7 @@
 # 힌트 스테이지
 
+[Level 2 목록 / Level 2 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/468377) · Level 2 · Python3
 
 스테이지를 순서대로 해결하면서 힌트 번들의 구매 여부를 정해 총비용을 최소화합니다.
