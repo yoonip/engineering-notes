@@ -98,6 +98,6 @@ Those checks establish agreement with the selected equations. Physical validatio
 
 ## 출처와 대조한 내용 | Sources and cross-checks
 
-- MIT 6.012 Lectures 8–9: 채널 전하 적분·영역 조건·pinch-off / channel-charge integration, region conditions and pinch-off.
-- Berkeley EECS 240 Lecture 3: 강한 반전·이동도 가정과 단채널·약한 반전 한계 / strong-inversion and mobility assumptions, short-channel and weak-inversion limits. MIT의 유도에 필요한 조건을 이 문서로 대조했다 / used to cross-check the scope of the MIT derivation.
-- 그림과 수치 테스트는 직접 구성했다 / diagram and numerical tests constructed for this article. 출처 확인 / sources checked: 2026-10-19.
+- MIT 6.012, Spring 2007, Lecture 8 pp. 8–17 and Lecture 9 pp. 2–7: 채널 전하 적분·영역 조건·pinch-off / channel-charge integration, region conditions and pinch-off.
+- Berkeley EECS 240 Lecture 3: 강한 반전·이동도 가정과 단채널·약한 반전 한계 / strong-inversion and mobility assumptions, short-channel and weak-inversion limits. MIT의 유도에 필요한 조건을 이 문서로 대조했습니다 / used to cross-check the scope of the MIT derivation.
+- 그림과 수치 테스트는 직접 구성했습니다 / diagram and numerical tests constructed for this article. 출처 확인 / sources checked: 2026-10-19.
