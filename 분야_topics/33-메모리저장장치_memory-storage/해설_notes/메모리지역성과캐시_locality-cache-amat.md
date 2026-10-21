@@ -82,6 +82,29 @@ Linux의 PREFLUSH는 앞선 완료 쓰기를 해당 I/O 전에 영속화하는 �
 
 [NVMe 사례](../../../설계와검증사례_engineering-cases/NVMe의쓰기완료와영속성_nvme-write-persistence.md)와 [카드 사례](../../../설계와검증사례_engineering-cases/eMMC와SD의busy와쓰기실패_emmc-sd-write-status.md)는 잘못된 승인·다른 LBA까지 비우는 FUA·busy만 보는 판정을 재현합니다. 정상·최적화 Python의 관측값이 같고 오류 변이 5종이 두 모드에서 검출됐습니다. 합성 손실 뒤 read는 내부 media 조회이며 실제 꺼진 장치의 읽기 명령이 아닙니다. 지연 계산, 호스트 상태 정책, 물리 전원 차단 시험을 구분하여 해석해야 합니다.
 
+### 8. SSD 내부의 논리 주소와 물리 위치를 구분합니다
+
+캐시의 hit/miss는 현재 접근 비용을 설명합니다. 저장장치에서는 같은 논리 주소가 어느 물리 페이지의 어떤 세대를 가리키는지도 확인해야 합니다. FTL은 논리 주소를 내부 물리 위치에 연결하는 계층입니다. host가 보는 주소가 같아도 갱신이나 GC로 내부 위치는 달라질 수 있습니다. [KIOXIA L2P 기술 문서, November 2023 Rev.1.0](https://europe.kioxia.com/content/dam/kioxia/shared/business/memory/ufs/asset/productbrief/KIOXIA_Understanding_Logical_Block_Address_Tech_Brief.pdf)의 metadata·주소 변환 설명을 참고합니다.
+
+[FTL 파일 예제](../../../예제_examples/실무검증_practical-validation/ftl_mapping/README.md)는 논리 3개·물리 12개·페이지 자료 4바이트의 고정 계약입니다. 새 DATA를 기록하고 다시 읽어 LPN·논리 version·값을 확인한 뒤 매핑을 게시합니다. 이전 매핑을 먼저 지우지 않습니다. 초기 LPN0은 PPN0·incarnation 1의 11111111이고, 정상 갱신 뒤 PPN1·incarnation 4의 aaaa0001·논리 version 2입니다.
+
+```python
+from pathlib import Path  # from/import는 파일 경로 형식을 가져옵니다.
+from models import read_state, summary  # ftl_mapping 폴더의 파일 재생·표시 함수를 가져옵니다.
+def mapped_values(store):  # def는 파일 폴더를 인수로 받는 함수를 정의합니다.
+    state = read_state(Path(store))  # 두 실제 파일을 읽어 최신 참조와 자료의 일치를 확인합니다.
+    result = summary(state)  # 내부 사전을 논리 값·주소·버전의 표시로 바꿉니다.
+    return result["values"], result["ppns"], result["versions"]  # []로 세 목록을 읽어 tuple로 반환합니다.
+```
+
+ftl_mapping을 작업 폴더로 사용하고 새 정상 실행의 `happy/store`를 넘긴 관측은 `(['aaaa0001', '22222222', '33333333'], [1, 3, 6], [2, 1, 1])`입니다. 같은 LPN을 읽어도 PPN·논리 version이 바뀌었습니다. 자료 CRC만 맞고 다른 LPN·version·incarnation이면 거부합니다. [매핑 게시 사례](../../../설계와검증사례_engineering-cases/FTL의매핑게시와전원중단_ftl-map-publication.md)는 DATA 전에 매핑을 게시하거나 옛 block을 먼저 지워 참조가 사라지는 중단을 대조합니다.
+
+GC는 현재 live인 페이지를 victim 밖으로 옮기고 새 참조를 게시한 뒤 블록을 비웁니다. 고정 부하의 valid 3·stale 6·free 3에서 live 1페이지를 복사하고 3페이지 블록을 비우면 free 5가 됩니다. 공간 순증은 3−1=2페이지입니다. host 자료 쓰기 6회와 복사 1회의 자료 재기록 비 7/6은 seed·metadata·실제 NAND 효과를 제외한 계산이며 SSD WAF 측정이 아닙니다.
+
+[GC·TRIM과 주소 재사용 사례](../../../설계와검증사례_engineering-cases/FTL의GC와폐기된주소재사용_ftl-gc-trim-reuse.md)는 오래된 GC snapshot이 새 값을 덮지 못하게 token을 비교합니다. TRIM 뒤에는 자체적으로 None을 반환하고, PPN0을 다른 LPN·incarnation 5로 다시 써도 이전 GC를 거부합니다. 실제 SSD의 TRIM이 항상 0을 반환하거나 secure erase라는 뜻은 아닙니다. 이 파일 모델의 ERASE는 상태 사건이므로 과거 bytes도 파일에 남습니다.
+
+선택 prefix는 flush·fsync한 뒤 자식을 명시 종료하고 새 프로세스로 읽었습니다. partial tail은 inspect에서 보류하지만 다음 writer는 TAIL_NEEDS_REPAIR로 거부하며 자동 truncation은 없습니다. GC가 일부 MOVE 뒤 ERASE_LIVE_BLOCK으로 멈출 수도 있어 전체 GC의 원자성을 주장하지 않습니다. AMAT·호스트 완료·FTL 참조·NAND 물리 내구성을 서로 다른 근거로 읽어야 합니다. [실행 기록](../../../설계와검증사례_engineering-cases/검증기록_evidence/FTL매핑과GC중단검사_20261021.md)에 기본/-O·98개 중단 지점·오류 변이·소스 해시를 연결했습니다.
+
 ## English
 
 ### 1. A small desk and a large warehouse
@@ -131,6 +154,14 @@ The [runnable DDR-style command fixture](../../../예제_examples/실무검증_p
 A lower AMAT describes latency under a particular model. It does not establish persistence across power loss. CPU cache coherence, device volatile write caches and filesystem synchronization are different contracts. The [storage exercise](../../../예제_examples/실무검증_practical-validation/storage_protocols/README.md) separates teaching cache and media dictionaries: a successful readable cached write can be lost, while FUA preserves its own LBA without preserving an earlier unrelated cached write. Two four-byte writes leave four bytes after the chosen loss event; this is a deterministic example, not an SSD loss rate.
 
 The model matches completion CIDs in one SQ, serializes completed writes before Flush, and separates card busy, ready/state, error and cache capability. Linux [PREFLUSH and FUA documentation](https://docs.kernel.org/block/writeback_cache_control.html) helps distinguish earlier-write ordering from the current request's persistence. The linked [NVMe](../../../설계와검증사례_engineering-cases/NVMe의쓰기완료와영속성_nvme-write-persistence.md) and [card](../../../설계와검증사례_engineering-cases/eMMC와SD의busy와쓰기실패_emmc-sd-write-status.md) cases explain the counterexamples. These are decoded synthetic contracts; post-loss reads inspect internal media. No storage command, driver or physical power-cut test is performed.
+
+### 8. Logical addresses and internal physical placement
+
+Cache hit rate concerns access cost, while an FTL also tracks which physical page and incarnation belong to a logical address. The three-LPN, twelve-PPN file model verifies data identity before publishing a map. Its normal LPN0 update changes PPN0/incarnation 1 to PPN1/incarnation 4 with logical version 2. The displayed direct file read returns `(['aaaa0001', '22222222', '33333333'], [1, 3, 6], [2, 1, 1])`.
+
+The linked GC case preserves current ownership, uses temporary space outside the victim and rejects obsolete snapshots. Six host data writes plus one relocation give a declared data-only ratio 7/6; metadata and real NAND effects are excluded. TRIM returns unmapped None under the teaching contract, and a reused PPN requires a new incarnation. It is neither universal read-zero behavior nor secure erasure; historical file bytes remain after an ERASE event.
+
+Fresh processes reopen explicitly synced prefixes. Inspection defers partial tails, writers refuse them, and no automatic truncation or atomic whole-GC rollback is implemented. The results do not measure NAND timing, wear, ECC, actual firmware or physical power-loss behavior.
 
 ## 출처와 대조한 내용 | Sources and cross-checks
 

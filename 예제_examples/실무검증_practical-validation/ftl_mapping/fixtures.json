@@ -1,0 +1,294 @@
+{
+  "scope": "Three logical pages, twelve physical pages, three-page erase blocks; append-only host event files, not NAND or SSD firmware",
+  "seed_values": [
+    "11111111",
+    "22222222",
+    "33333333"
+  ],
+  "expected": {
+    "seed": {
+      "values": [
+        "11111111",
+        "22222222",
+        "33333333"
+      ],
+      "versions": [
+        1,
+        1,
+        1
+      ],
+      "ppns": [
+        0,
+        3,
+        6
+      ],
+      "incarnations": [
+        1,
+        2,
+        3
+      ],
+      "valid": 3,
+      "stale": 0,
+      "free": 9,
+      "data_records": 3,
+      "map_records": 3,
+      "tails": {
+        "data": 0,
+        "map": 0
+      }
+    },
+    "updated": {
+      "values": [
+        "aaaa0001",
+        "22222222",
+        "33333333"
+      ],
+      "versions": [
+        2,
+        1,
+        1
+      ],
+      "ppns": [
+        1,
+        3,
+        6
+      ],
+      "incarnations": [
+        4,
+        2,
+        3
+      ],
+      "valid": 3,
+      "stale": 1,
+      "free": 8,
+      "data_records": 4,
+      "map_records": 4,
+      "tails": {
+        "data": 0,
+        "map": 0
+      }
+    },
+    "trimmed": {
+      "values": [
+        null,
+        "22222222",
+        "33333333"
+      ],
+      "versions": [
+        2,
+        1,
+        1
+      ],
+      "ppns": [
+        null,
+        3,
+        6
+      ],
+      "incarnations": [
+        null,
+        2,
+        3
+      ],
+      "valid": 2,
+      "stale": 1,
+      "free": 9,
+      "data_records": 3,
+      "map_records": 4,
+      "tails": {
+        "data": 0,
+        "map": 0
+      }
+    },
+    "gc": {
+      "values": [
+        "11111111",
+        "22222222",
+        "33333333"
+      ],
+      "versions": [
+        1,
+        1,
+        1
+      ],
+      "ppns": [
+        4,
+        3,
+        6
+      ],
+      "incarnations": [
+        4,
+        2,
+        3
+      ],
+      "valid": 3,
+      "stale": 0,
+      "free": 9,
+      "data_records": 5,
+      "map_records": 4,
+      "tails": {
+        "data": 0,
+        "map": 0
+      }
+    },
+    "reused": {
+      "values": [
+        null,
+        "bbbb0002",
+        "33333333"
+      ],
+      "versions": [
+        2,
+        2,
+        1
+      ],
+      "ppns": [
+        null,
+        0,
+        6
+      ],
+      "incarnations": [
+        null,
+        5,
+        3
+      ],
+      "valid": 2,
+      "stale": 1,
+      "free": 9,
+      "data_records": 5,
+      "map_records": 5,
+      "tails": {
+        "data": 0,
+        "map": 0
+      }
+    },
+    "trace_before_gc": {
+      "values": [
+        "aaaa0002",
+        "bbbb0002",
+        "cccc0002"
+      ],
+      "versions": [
+        3,
+        3,
+        3
+      ],
+      "ppns": [
+        2,
+        5,
+        8
+      ],
+      "incarnations": [
+        5,
+        7,
+        9
+      ],
+      "valid": 3,
+      "stale": 6,
+      "free": 3,
+      "data_records": 9,
+      "map_records": 9,
+      "tails": {
+        "data": 0,
+        "map": 0
+      }
+    },
+    "trace_after_gc": {
+      "values": [
+        "aaaa0002",
+        "bbbb0002",
+        "cccc0002"
+      ],
+      "versions": [
+        3,
+        3,
+        3
+      ],
+      "ppns": [
+        9,
+        5,
+        8
+      ],
+      "incarnations": [
+        10,
+        7,
+        9
+      ],
+      "valid": 3,
+      "stale": 4,
+      "free": 5,
+      "data_records": 11,
+      "map_records": 10,
+      "tails": {
+        "data": 0,
+        "map": 0
+      }
+    },
+    "trace_final": {
+      "values": [
+        null,
+        "bbbb0002",
+        "cccc0003"
+      ],
+      "versions": [
+        4,
+        3,
+        4
+      ],
+      "ppns": [
+        null,
+        5,
+        0
+      ],
+      "incarnations": [
+        null,
+        7,
+        13
+      ],
+      "valid": 2,
+      "stale": 5,
+      "free": 5,
+      "data_records": 13,
+      "map_records": 12,
+      "tails": {
+        "data": 0,
+        "map": 0
+      }
+    },
+    "seed_physical_hex": "44415431504147450101000001000000000000000000000001000000111111115042cebc50414745010100000200000003000000010000000100000022222222a7ff022e5041474501010000030000000600000002000000010000003333333358318a8a",
+    "seed_mapping_hex": "4d4150314c32503101010000010000000000000001000000000000000100000000000000ffffffff000000005042cebca2ed7a634c32503101010000020000000100000001000000030000000200000000000000ffffffff00000000a7ff022e635e8eae4c32503101010000030000000200000001000000060000000300000000000000ffffffff0000000058318a8a7e8a7018",
+    "update_physical_hex": "504147450101000004000000010000000000000002000000aaaa000123efb5fa",
+    "update_mapping_hex": "4c32503101010000040000000000000002000000010000000400000001000000000000000100000023efb5faf9fe9d7b",
+    "wrong_lpn_physical_hex": "504147450101000004000000010000000100000002000000aaaa00014ca31061",
+    "wrong_version_physical_hex": "504147450101000004000000010000000000000003000000aaaa0001bdef1f36",
+    "wrong_incarnation_mapping_hex": "4c32503101010000040000000000000002000000010000000500000001000000000000000100000023efb5fabfc5fa1e",
+    "wrong_base_mapping_hex": "4c32503101010000040000000000000002000000010000000400000001000000000000000900000023efb5fa4ce578a8",
+    "seed_physical_sha256": "afb174d72b49b2568b95f479ae101e0992b730771f106d4e5be6fb09a6efd669",
+    "seed_mapping_sha256": "c925c4710719117d8cd91481c05008fcef967c9d27ebe55aa0e26b47e3f108a7"
+  },
+  "workload": [
+    [
+      0,
+      "aaaa0001"
+    ],
+    [
+      0,
+      "aaaa0002"
+    ],
+    [
+      1,
+      "bbbb0001"
+    ],
+    [
+      1,
+      "bbbb0002"
+    ],
+    [
+      2,
+      "cccc0001"
+    ],
+    [
+      2,
+      "cccc0002"
+    ]
+  ]
+}
