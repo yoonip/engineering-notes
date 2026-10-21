@@ -6,7 +6,7 @@
 
 ### 저항을 넣지 않고도 다른 저항처럼 보이게 합니다
 
-50 Ω 선로 끝에 100 Ω 부하를 바로 연결하면 반사가 생깁니다. 중간에 알맞은 특성임피던스와 길이의 선로를 넣으면 입력에서는 50 Ω처럼 보이게 만들 수 있습니다. 부하가 실제로 바뀐 것은 아닙니다. 진행파와 반사파가 선로를 따라 더해지는 위상이 달라져 입력의 전압·전류 비율이 바뀐 것입니다. 물리적 길이가 신호 파장의 1/4일 때 식이 특히 간단해집니다.
+50 Ω 선로 끝에 100 Ω 부하를 바로 연결하면 반사가 생깁니다. 중간에 알맞은 특성임피던스와 길이의 선로를 넣으면 입력에서는 50 Ω처럼 보이게 만들 수 있습니다. 부하가 실제로 바뀐 것은 아닙니다. 진행파와 반사파가 선로를 따라 더해지는 위상이 달라져 입력의 전압·전류 비율이 바뀐 것입니다. 물리적 길이가 해당 선로 안에서의 파장의 1/4일 때 식이 특히 간단해집니다.
 
 [University of Kansas의 quarter-wave 강의](https://www.ittc.ku.edu/~jstiles/723/handouts/section_5_4_The_Quarter_Wave_Transformer_present.pdf)는 무손실 선로의 임피던스 변환을 유도합니다. [Ansys의 quarter-wave transformer 예](https://optics.ansys.com/hc/en-us/articles/360042041094-Quarter-wave-impedance-transformer)는 실제 형상과 수치 전자기 해석 사이의 관계를 보여 줍니다. 여기의 실행 코드는 그 형상 해석이 아니라 이상적인 선로 식입니다.
 
@@ -62,7 +62,7 @@ python -m unittest -v test_models.HardwareModels.test_quarter_and_half_wave test
 
 ### Changing the apparent impedance with a line
 
-A 100 Ω load attached directly to a 50 Ω line reflects energy. A suitably chosen line section can make that load appear as 50 Ω at its input. The load itself is unchanged; propagation changes the phase relationship between voltage and current waves. A quarter wavelength produces a particularly simple transformation.
+A 100 Ω load attached directly to a 50 Ω line reflects energy. A suitably chosen line section can make that load appear as 50 Ω at its input. The load itself is unchanged; propagation changes the phase relationship between voltage and current waves. A quarter of the wavelength in that transmission line produces a particularly simple transformation.
 
 [The University of Kansas lecture](https://www.ittc.ku.edu/~jstiles/723/handouts/section_5_4_The_Quarter_Wave_Transformer_present.pdf) derives the lossless result. [Ansys's transformer example](https://optics.ansys.com/hc/en-us/articles/360042041094-Quarter-wave-impedance-transformer) connects the idea with a physical electromagnetic model. The executable example here evaluates ideal line equations rather than that geometry simulation.
 
@@ -84,5 +84,5 @@ Run the commands above. Tests compare quarter- and half-wave values with analyti
 
 ## 출처 / Sources
 
-- University of Kansas, Jim Stiles, *The Quarter-Wave Transformer*: transformation, multiple reflections and matching limitations.
+- University of Kansas, Jim Stiles, *The Quarter-Wave Transformer* (March 2007), initial handout pp. 1–3: quarter-wave impedance transformation and the geometric-mean matching condition.
 - Ansys, *Quarter-wave impedance transformer*: geometry-based simulation context. Links appear above.

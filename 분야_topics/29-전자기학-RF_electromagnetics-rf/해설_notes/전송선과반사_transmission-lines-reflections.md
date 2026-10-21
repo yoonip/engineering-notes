@@ -97,6 +97,6 @@ A lumped approximation can be useful when `td/tr` is sufficiently small, but no 
 
 ## 출처와 대조한 내용 | Sources and cross-checks
 
-- Texas Instruments, *AN-807 Reflections: Computations and Waveforms*, §§3–7: 경계 조건·반사 계수·lattice 계산 / boundary conditions, reflection coefficients and lattice computation.
-- Analog Devices, *Interfacing High-Speed Signals*: 분포 L′·C′, 무손실 가정과 source/load 반사 / distributed L′/C′, lossless assumptions and source/load reflection. 두 문서의 부호·정합 및 open 극한을 대조했다 / signs, matched boundaries and open-load limits cross-checked between the documents.
-- 그림·파동 합산·테스트는 직접 구성했다 / diagram, wave summation and tests constructed here. 출처 확인 / sources checked: 2026-10-19.
+- Texas Instruments, *AN-807 Reflections: Computations and Waveforms*, SNLA027B (May 2004), §§3–7: 경계 조건·반사 계수·lattice 계산 / boundary conditions, reflection coefficients and lattice computation.
+- Analog Devices, *Interfacing High-Speed Signals*: 분포 L′·C′, 무손실 가정과 source/load 반사 / distributed L′/C′, lossless assumptions and source/load reflection. 두 문서의 부호·정합 및 open 극한을 대조했습니다 / signs, matched boundaries and open-load limits cross-checked between the documents.
+- 그림·파동 합산·테스트는 직접 구성했습니다 / diagram, wave summation and tests constructed here. 출처 확인 / sources checked: 2026-10-19.
