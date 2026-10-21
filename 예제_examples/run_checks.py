@@ -1,6 +1,7 @@
 """기초·추론·확장·심화 모델을 각각 독립 프로세스에서 검사한다."""
 
 import argparse
+from datetime import datetime, timezone
 import json
 import os
 from pathlib import Path
@@ -31,7 +32,8 @@ def main():
         print(result.stdout, end='')
         count = sum(map(int, re.findall(r'Ran (\d+) tests?', result.stdout)))
         results.append({'suite': name, 'tests': count, 'passed': result.returncode == 0 and count > 0})
-    report = {'schema_version': 1, 'review_date': '2026-10-19',
+    report = {'schema_version': 1, 'review_date': datetime.now(timezone.utc).date().isoformat(),
+              'review_date_timezone': 'UTC',
               'python': sys.version.split()[0], 'suites': results,
               'total_tests': sum(row['tests'] for row in results),
               'passed': all(row['passed'] for row in results),

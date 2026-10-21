@@ -1,6 +1,7 @@
 """목록·파일 해시·주석본의 일치를 확인한다. 정답 판정 검사는 아니다."""
 from pathlib import Path
 from collections import Counter
+from datetime import datetime, timezone
 import hashlib
 import json
 
@@ -63,7 +64,8 @@ def main():
     archived01=[p for p in combined if p['level'] in (0,1)]
     assert len(site)==len(archived01)==359
     assert {p['id'] for p in site}=={p['id'] for p in archived01}
-    report={'checked_on':'2026-10-19','accepted':len(combined),'full_study_notes':len(full),
+    report={'checked_on':datetime.now(timezone.utc).date().isoformat(),'checked_on_timezone':'UTC',
+        'accepted':len(combined),'full_study_notes':len(full),
         'commented_submissions':len(recent),'by_level':dict(Counter(p['level'] for p in combined)),
         'historical_submissions':len(historical),'level0_1_site_count':359,'level0_1_missing_ids':[],
         'languages':dict(Counter(p['language'] for p in combined)),
