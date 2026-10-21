@@ -22,6 +22,8 @@ python -B tests/test_offline.py --report verification.local.json
 
 `verification.json`은 소스 검사 기록입니다. `SOURCE_MANIFEST.json`은 원본에서 가져온 28개 파일의 전후 SHA256과 텍스트 변경 내역을 담습니다. `SHA256SUMS`는 자기 자신을 제외한 배포 파일의 SHA256 목록입니다.
 
+`SHA256SUMS`는 현재 공개 파일을 식별하며, 문서 변경도 해시에 반영됩니다. 과거 복사 이력인 `SOURCE_MANIFEST.json`과 실행 기록인 `verification.json`은 별도로 보존합니다. 해시 갱신은 장치 연결이나 검사를 다시 실행한 결과가 아닙니다.
+
 ## 모델을 개별 실행하기
 
 ```sh
@@ -60,6 +62,8 @@ These small examples connect firmware startup, JTAG TAP transitions, a Linux cha
 Use Python 3.10+ and run the listed `tests/test_offline.py` command from this project root. Tests execute models in temporary directories and check exit codes, results, fault classification and cleanup. USB probes, `/dev/valdemo` and network instruments are not accessed. PyVISA is mocked, so PyVISA, a C compiler, QEMU and OpenOCD are unnecessary for this test suite.
 
 `verification.json` records the source checks. `SOURCE_MANIFEST.json` records before/after hashes and text changes for 28 imported sources. `SHA256SUMS` hashes the distribution files except itself.
+
+`SHA256SUMS` identifies the current published bytes, including document changes. The historical copy record in `SOURCE_MANIFEST.json` and execution record in `verification.json` are retained separately. Refreshing hashes does not mean that device access or tests were rerun.
 
 The individual commands above exercise TAP traversal, arithmetic examples, BER, coverage, NPU faults, the bench and synthetic correlation. NPU/bench `--out` directories must not exist. Normal NPU execution returns 0; an injected `layout` mismatch returns 1 after detection. Bench exits distinguish PASS=0, functional/limit failure=1 and modeled communication/parsing error=2. Detecting an intended fault is distinct from a test-program failure.
 
