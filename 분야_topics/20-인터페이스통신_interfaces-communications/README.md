@@ -10,7 +10,7 @@ UART는 비동기 직렬 통신, SPI는 클록과 데이터 선을 사용하는 
 
 ## 네트워크와 온칩 연결
 
-Ethernet은 유선 네트워크의 링크 계층 기술이고 TCP/IP는 그 위에서 통신을 구성하는 프로토콜 계열입니다. Wi-Fi·BLE·Zigbee·LoRa는 거리·전력·데이터율과 네트워크 구조가 다릅니다. MQTT·Modbus는 장치 데이터를 교환하는 응용 프로토콜입니다.
+Ethernet의 IEEE 802.3 규격은 데이터 링크 계층의 MAC과 물리 계층의 PHY를 함께 정의합니다. TCP/IP는 Ethernet 등 여러 링크 위에서 사용하는 프로토콜 계열입니다. Wi-Fi·BLE·Zigbee는 거리·전력·데이터율과 연결 방식이 다릅니다. LoRa는 무선 변조 기술이고, LoRaWAN은 이를 사용하는 통신 규약과 네트워크 구조를 정의합니다. MQTT·Modbus는 장치 데이터를 교환하는 응용 프로토콜입니다. [IEEE 802.3-2022의 범위](https://standards.ieee.org/ieee/802.3/10422/)와 [LoRa Alliance의 LoRa·LoRaWAN 구분](https://lora-alliance.org/about-lorawan/)을 참고합니다.
 
 AXI·AHB·APB는 SoC 내부 구성요소의 연결에 쓰입니다. PCIe는 고속 직렬 링크, DDR은 메모리 인터페이스, MIPI는 디스플레이·카메라 등을 포함한 인터페이스 규격 계열입니다. 대역폭으로 단위 시간의 전송량을, 지연으로 요청에서 결과까지 걸리는 시간을 나타냅니다. 프로토콜 오버헤드와 흐름 제어 때문에 명목 속도와 유효 전송률은 다릅니다.
 
@@ -97,7 +97,7 @@ UART provides asynchronous serial communication. SPI uses clock and data lines f
 
 ### Networks and on-chip links
 
-Ethernet provides wired link-layer communication, with the TCP/IP protocol family building communication above it. Wi-Fi, BLE, Zigbee, and LoRa differ in range, power, data rate, and network structure. MQTT and Modbus are application protocols for exchanging device data.
+IEEE 802.3 Ethernet defines both the data-link MAC and the physical-layer PHY. TCP/IP operates over Ethernet and other links. Wi-Fi, BLE and Zigbee differ in range, power, data rate and connection design. LoRa is a radio modulation technology; LoRaWAN defines a protocol and network architecture that use it. MQTT and Modbus are application protocols for exchanging device data. See the [IEEE 802.3-2022 scope](https://standards.ieee.org/ieee/802.3/10422/) and the [LoRa Alliance distinction](https://lora-alliance.org/about-lorawan/).
 
 AXI, AHB, and APB connect components inside an SoC. PCIe is a high-speed serial link, DDR is a memory interface, and MIPI covers a family of interfaces including display and camera links. Bandwidth measures data transferred per unit time; latency measures time from a request to its result. Protocol overhead and flow control make useful throughput different from nominal link speed.
 
