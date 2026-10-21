@@ -1,6 +1,8 @@
-# 명령어가 보는 메모리: ISA, byte 순서와 load/store
+# RISC-V 메모리 접근: 주소·바이트 순서·부호와 정렬 | RISC-V memory access
 
 [Arm과 RISC-V](../README.md) · [참조 모델](../../../예제_examples/확장기초_extended/hardware/models.py) · [검산](../../../예제_examples/확장기초_extended/hardware/test_models.py)
+
+RV32I의 load/store를 기준으로 바이트 주소, 부호 확장과 자연 정렬을 설명합니다. ISA·ABI·구현의 차이를 구분하고 실행 환경에 따라 달라지는 메모리 접근 조건을 살펴봅니다.
 
 ## 한국어
 
