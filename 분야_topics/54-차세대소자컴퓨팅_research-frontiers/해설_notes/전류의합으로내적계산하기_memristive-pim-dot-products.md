@@ -31,7 +31,7 @@ $`g_s`$는 weight당 S, $`v_s`$는 V입니다. $`G_{max}`$가 있다면 $`g_s\ve
 
 음의 입력을 음의 voltage로 표현하는 것도 수학적 모델에서는 간단하지만, 실제 device의 극성 의존 I–V가 다르면 오차가 생깁니다. 분리된 read phase나 calibration이 필요한 이유입니다. [IBM 2024의 polarity·4-quadrant 연구](https://research.ibm.com/publications/demonstration-of-4-quadrant-analog-in-memory-matrix-multiplication-in-a-single-modulation)
 
-### 작은 오차가 어디서 들어옵니까
+### 내적 오차의 원인
 
 독립적인 작은 변화의 1차항은
 
