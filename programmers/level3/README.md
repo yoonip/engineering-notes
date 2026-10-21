@@ -1,8 +1,8 @@
 # Level 3 — 문제 풀이와 학습 기록 / Solutions and study notes
 
-총 109문제. 문제명을 누르면 조건과 풀이 설명을, 코드 링크를 누르면 기본·대안 구현을 볼 수 있습니다. 주석은 한국어로 적고 설명은 한국어와 영어로 함께 정리했습니다.
+문제명을 누르면 조건과 풀이 설명을, 코드 링크를 누르면 기본·대안 구현을 볼 수 있습니다. 주석은 한국어로 적고 설명은 한국어와 영어로 함께 정리했습니다.
 
-109 problems. Open a title for its conditions and explanation, or follow the code links for the primary and alternative implementations. Explanations are in Korean and English; code comments are in Korean.
+Open a title for its conditions and explanation, or follow the code links for the primary and alternative implementations. Explanations are in Korean and English; code comments are in Korean.
 
 [전체 목차 / All levels](../README.md) · [알고리즘 길잡이 / Algorithm guide](../ALGORITHMS.md) · [검증 기록 / Validation](../VALIDATION.md)
 

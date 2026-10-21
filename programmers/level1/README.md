@@ -1,8 +1,8 @@
 # Level 1 — 풀이와 코드 / Solutions and code
 
-언어 필터 없이 전체 목록을 대조한 119문제를 모았습니다. 모든 문제에 코드와 줄별 문법 설명이 있습니다. 예전에 완료한 제출본도 포함하며, 당시 100점 원본과 이번 주석본을 구분했습니다.
+보관 당시 언어 필터 없이 사이트 목록과 대조한 제출 코드를 모았습니다. 모든 문제에 코드와 줄별 문법 설명이 있습니다. 예전에 완료한 제출본도 포함하며, 당시 100점 원본과 이번 주석본을 구분했습니다.
 
-119 problems, matched against the complete unfiltered list for this level. Every entry has code and Korean line-by-line syntax notes. Older accepted submissions are included, with their original source and the newly annotated copy distinguished.
+Archived submissions were matched against the unfiltered site listing at the time of collection. Every entry has code and Korean line-by-line syntax notes. Older accepted submissions are included, with their original source and the newly annotated copy distinguished.
 
 [전체 목록 / All levels](../README.md) · [레벨 0·1 사이트 목록 / Site catalog](../level0_1_catalog.json) · [보관 범위 / Coverage](../COVERAGE.md)
 

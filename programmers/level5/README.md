@@ -1,12 +1,12 @@
 # Level 5 — 풀이와 코드 / Solutions and code
 
-저장된 제출 코드 4개를 모았습니다. 각 문제에 짧은 풀이와 코드 전체의 줄별 설명이 있습니다. 사이트 채점은 모두 100점입니다.
+통과 기록이 있는 제출 코드를 모았습니다. 각 문제에 짧은 풀이와 코드 전체의 줄별 설명이 있습니다. 사이트 채점은 모두 100점입니다.
 
-4 saved submissions, each with a short method note and a fully annotated copy of the code. All have a saved 100/100 website result. Syntax notes are in Korean.
+Saved accepted submissions, each with a short method note and a fully annotated copy of the code. All have a saved 100/100 website result. Syntax notes are in Korean.
 
-레벨 5 전체 21문제 중 4문제의 통과 코드입니다. [문자열과 알파벳과 쿼리: 시간 초과 분석](attempts/389632/README.md)은 별도로 읽을 수 있습니다. 나머지 16문제는 풀이를 추가하지 않았습니다.
+이 레벨의 모든 문제를 완료한 목록은 아닙니다. [문자열과 알파벳과 쿼리: 시간 초과 분석](attempts/389632/README.md)은 별도로 읽을 수 있습니다. 통과 코드가 없는 문제는 완료한 것으로 표시하지 않습니다.
 
-Four of the 21 Level 5 problems are accepted. The failed Python attempt has a separate analysis; the other 16 problems have no archived solution.
+This is a partial archive. The failed Python attempt has a separate analysis and is not counted as an accepted solution.
 
 [전체 목록 / All levels](../README.md)
 
