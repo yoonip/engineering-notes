@@ -7,7 +7,7 @@ Bigtable의 자료형은 단순한 표 그림보다 정확하게 적는 편이 �
 | 논문 | Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, Robert E. Gruber, Bigtable: A Distributed Storage System for Structured Data |
 | 발표 | OSDI 2006, 205–218쪽 |
 | 당시 소속 | Google, Inc.입니다. |
-| 원문 | [Google 공개 PDF](https://research.google.com/archive/bigtable-osdi06.pdf) |
+| 원문 | [USENIX 학회 PDF](https://www.usenix.org/legacy/event/osdi06/tech/chang/chang.pdf) · [Google 공개 PDF](https://research.google.com/archive/bigtable-osdi06.pdf) |
 | 읽을 위치 | §2–3 모델·API, §4 의존 서비스, §5 저장·복구, §6 압축·필터·캐시, §7 평가, §8–9 사례·운영 경험입니다. |
 
 ## 빈 칸을 모두 저장하는 표가 아닙니다

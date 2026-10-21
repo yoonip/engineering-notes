@@ -7,8 +7,8 @@
 | 논문 | Spanner: Google’s Globally-Distributed Database |
 | 저자 | James C. Corbett, Jeffrey Dean, Michael Epstein, Andrew Fikes, Christopher Frost, JJ Furman, Sanjay Ghemawat, Andrey Gubarev, Christopher Heiser, Peter Hochschild, Wilson Hsieh, Sebastian Kanthak, Eugene Kogan, Hongyi Li, Alexander Lloyd, Sergey Melnik, David Mwaura, David Nagle, Sean Quinlan, Rajesh Rao, Lindsay Rolig, Yasushi Saito, Michal Szymaniak, Christopher Taylor, Ruth Wang, Dale Woodford |
 | 발표·소속 | OSDI 2012, 251–264쪽, Google, Inc.입니다. |
-| 원문 | [Google 공개 PDF](https://research.google.com/pubs/archive/39966.pdf) |
-| 읽을 위치 | §2 배치·복제·자료 모델, §3 TrueTime, §4 거래·읽기·시간, §5 평가, §6–8 관련 연구·미래 과제, 부록 A 지도자 임대입니다. |
+| 원문 | [USENIX 학회 PDF](https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf) · [Google 공개 PDF](https://research.google.com/pubs/archive/39966.pdf) |
+| 읽을 위치 | §2 배치·복제·자료 모델, §3 TrueTime, §4 거래·읽기·시간, §5 평가, §6–8 관련 연구·미래 과제, 부록 A 리더의 임대 기간입니다. |
 
 ## 복제 합의와 거래 확정의 층
 
@@ -40,19 +40,21 @@ TrueTime의 `now()`는 `[earliest, latest]`를 돌려줍니다. 호출이 일어
 \operatorname{after}(s):\quad TT.now().earliest>s
 ```
 
-처음의 latest보다 현재의 earliest가 커질 때까지 기다리는 이유를 볼 수 있습니다. 구간의 중앙값이 108을 지났다는 사실만으로는 충분하지 않습니다. 원문 프로토콜은 이 밖에 준비 시각·기존 할당 시각 등의 제약도 함께 만족시키므로, s가 언제나 단순히 latest와 같다고 외우면 안 됩니다.
+처음의 latest보다 현재의 earliest가 커질 때까지 기다리는 이유를 볼 수 있습니다. 구간의 중앙값이 108을 지났다는 사실만으로는 충분하지 않습니다. 위 예는 §4.1.2의 시간 하한과 대기 조건을 보여 줍니다. 실제 할당 절차인 §4.2.1에서는 준비 시각·기존 할당 시각 등의 제약을 함께 만족시키며, 요청 수신 시의 latest보다 큰 s를 고릅니다. s가 언제나 단순히 latest와 같다고 외우면 안 됩니다. [원문 §4.1.2·§4.2.1](https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf)
 
 ```mermaid
 flowchart LR
     A[그룹별 잠금과 거래 준비] --> B[제약을 만족하는 확정 시각 s]
     B --> C[Paxos로 결정 기록]
-    C --> D[시간 구간의 earliest가 s를 넘었는지 확인]
-    D --> E[고객에게 완료와 결과 공개]
+    B --> D[시간 구간의 earliest가 s를 넘을 때까지 대기]
+    C --> E[결정 기록과 시간 조건 모두 충족]
+    D --> E
+    E --> F[고객에게 완료와 결과 공개]
 ```
 
 ## 기다림은 다른 작업과 겹칠 수 있습니다
 
-자체 시간 모형에서 시간 불확실성을 기다리는 데 8ms, 동시에 시작한 복제 통신이 40ms 걸린다면 둘을 끝낼 때까지의 시간은 겹치는 구간을 고려해 적어도 40ms입니다. 무조건 48ms를 더하는 것은 아닙니다. 반대로 서로 앞뒤로 의존하는 단계라면 더해야 합니다. 전체 지연은 잠금 획득·참가자 준비·복제·대기·응답의 의존 관계로 계산해야 합니다.
+자체 시간 모형에서 시간 불확실성을 기다리는 데 8ms, 동시에 시작한 복제 통신이 40ms 걸린다면 둘을 끝낼 때까지의 시간은 겹치는 구간을 고려해 적어도 40ms입니다. 무조건 48ms를 더하는 것은 아닙니다. 반대로 서로 앞뒤로 의존하는 단계라면 더해야 합니다. 전체 지연은 잠금 획득·참가자 준비·복제·대기·응답의 의존 관계로 계산해야 합니다. 원문도 commit wait가 보통 Paxos 통신과 겹친다고 설명합니다. [원문 §4.2.1, 인쇄 258쪽](https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf)
 
 시계 구간이 넓어지면 보장을 지키기 위한 대기가 길어질 수 있습니다. 이 설계는 시계 오차가 사라졌다는 것이 아니라, 오차의 상한을 정확성 논증에 사용할 수 있게 표현한 것입니다. 실제 시간이 광고한 구간 밖으로 나가면 전제 자체가 깨지므로 감시와 이상 장치 처리도 중요합니다.
 
