@@ -65,6 +65,26 @@ def recorded_slot(result_store):  # def는 파일이 있는 위치를 인수로 
 
 실제 Embedded Linux에서는 kernel 하나뿐 아니라 DTB·rootfs·boot 인자·저장장치 배치의 호환성도 업데이트 계약에 넣어야 합니다. 이 모형은 작은 단일 바이트 이미지를 사용합니다. 해시가 맞아도 권한 인증·anti-rollback은 별도이며, 본문에는 이미지와 해시를 함께 바꾼 입력과 이전 이미지의 재설치를 허용하는 한계 대조를 남겼습니다. MCUboot의 [v2.2.0 설계](https://github.com/mcu-tools/mcuboot/blob/v2.2.0/docs/design.md)와 [Zephyr 이미지 사용 안내](https://github.com/mcu-tools/mcuboot/blob/v2.2.0/docs/readme-zephyr.md)는 확인·복구·서명을 구분하는 원자료입니다. 자체 JSON 형식이 MCUboot image trailer와 같다는 뜻은 아닙니다.
 
+### 부팅에 성공해도 저장 데이터는 별도로 복구합니다
+
+kernel이 실행되고 root filesystem을 mount했다는 사실만으로 응용 데이터의 마지막 변경이 확정됐다고 판단하지 않습니다. bootloader의 이미지 선택과 응용 데이터의 트랜잭션 복구는 서로 다른 계약입니다. 별도 [데이터 저널 파일 예제](../../../예제_examples/실무검증_practical-validation/storage_recovery/README.md)는 실제 파일을 새 Python 프로세스에서 읽어 DATA/COMMIT이 맞는 변경만 재생합니다. SQLite나 실제 보드 전원 오류를 실행한 예제는 아닙니다.
+
+초기 credit=50·stock=10의 seq1 파일은 64바이트입니다. 새 credit=80·stock=7을 담은 DATA는 39바이트, 그 DATA CRC와 seq2를 가리키는 COMMIT은 20바이트입니다. 새 기록 중 39바이트만 남으면 값은 아직 이전의 50/10이고, 59바이트 전체가 있으면 새 값인 80/7입니다. 파일의 존재·값의 존재·확정 표시가 각각 다른 사실입니다.
+
+```python
+from pathlib import Path  # from/import는 파일 경로 객체를 가져옵니다.
+from models import read_journal  # storage_recovery 코드 폴더의 실제 파일 해석 함수를 가져옵니다.
+def recovered_values(store):  # def는 저널 폴더를 받는 함수를 정의합니다.
+    _, result = read_journal(Path(store))  # tuple의 raw bytes는 _로 받고 복구 결과를 선택합니다.
+    return result["sequence"], result["state"], result["tail_kind"]  # []로 확정 번호·값·꼬리 상태를 읽습니다.
+```
+
+storage_recovery 폴더를 작업 경로로 사용하고 `store`에 새 실행의 `happy/store`를 넘깁니다. 최종 정상 파일을 읽은 관측은 `(2, {'credit': 80, 'stock': 7}, 'CLEAN')`입니다. 복구는 원본을 읽기만 하고 tail을 잘라내지 않습니다. 미확정 꼬리 뒤 append는 TAIL_NEEDS_REPAIR로 거부합니다.
+
+[사례 본문](../../../설계와검증사례_engineering-cases/중단된저널의트랜잭션복구_storage-journal-recovery.md)은 59바이트 기록의 prefix 0~59를 각각 동기화·명시 종료·새 프로세스 복구로 비교합니다. 완전한 frame의 CRC 오류는 거부하지만, header length 손상은 부족한 마지막 frame처럼 보일 수 있습니다. 길이를 128로 바꾼 182바이트 파일에서 계산된 끝인 208에 못 미쳐 이전 상태·INCOMPLETE_FRAME으로 남는 한계도 기록했습니다. 이 결과를 모든 저장장치 손상 검출이나 파일시스템 내구성으로 확대하지 않습니다.
+
+SQLite의 [WAL 형식](https://www.sqlite.org/fileformat2.html#walformat)은 commit marker와 유효 frame을, [Atomic Commit](https://www.sqlite.org/atomiccommit.html)은 동기화 순서·복구·더 넓은 crash test를 설명합니다. Linux의 [fsync(2)](https://man7.org/linux/man-pages/man2/fsync.2.html)는 파일과 디렉터리 동기화를 구분합니다. 여기서 실행한 것은 Windows 호스트 파일과 Python 자식이며 Linux kernel·SQLite·directory fsync·실제 전원 제거를 실행한 것이 아닙니다.
+
 ## English
 
 ### Separate the stages behind a boot log
@@ -96,6 +116,12 @@ A board check records SoC/revision, kernel commit/config, bootloader, DTB, and r
 The separate A/B file model preserves A while writing and validating B. Generation 1 publishes a pending image; generation 2 records a trial before selection. Confirmation makes B active at generation 3; an unconfirmed restart rolls back to A at generation 3. The same generation number can therefore describe different decisions. Reading the successful run's stored state returns `('B', 3)` but does not execute firmware or a kernel.
 
 Thirty-four declared interruption checkpoints use flushed file prefixes and fresh Python processes. They do not model flash power loss or persistent filesystem guarantees. A real Linux update also needs a compatibility contract for the kernel, DTB, rootfs and boot arguments. Hash matching, authorization and anti-rollback remain distinct; the unsigned educational model intentionally demonstrates the latter two limits.
+
+### Boot success and application-data recovery
+
+A running kernel and mounted root filesystem do not establish that the last application transaction committed. The separate host-file journal replays matching DATA/COMMIT pairs. Its initial 64-byte file holds credit 50/stock 10; a 39-byte DATA alone preserves those values, while the full 59-byte update recovers credit 80/stock 7 at sequence 2. Reading the normal run returns `(2, {'credit': 80, 'stock': 7}, 'CLEAN')`.
+
+Recovery is read-only and unresolved tails prevent append. Complete-frame CRC errors are rejected, but a damaged declared length can resemble an incomplete tail; the 182-byte versus 208-byte example demonstrates this limitation. Sixty synced prefixes and fresh Python processes do not execute SQLite, Linux filesystem recovery, directory synchronization or actual storage power cuts.
 
 ## 출처 / Sources
 

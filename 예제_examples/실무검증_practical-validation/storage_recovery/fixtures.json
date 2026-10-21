@@ -1,0 +1,46 @@
+{
+  "scope": "Invented bounded two-key redo journal, not SQLite format or flash trace",
+  "seed": {
+    "seq": 1,
+    "values": {
+      "credit": 50,
+      "stock": 10
+    }
+  },
+  "update": {
+    "seq": 2,
+    "values": {
+      "credit": 80,
+      "stock": 7
+    }
+  },
+  "expected": {
+    "seed_state": {
+      "credit": 50,
+      "stock": 10
+    },
+    "new_state": {
+      "credit": 80,
+      "stock": 7
+    },
+    "third_state": {
+      "credit": 90,
+      "stock": 9
+    },
+    "seed_file_hex": "4a4e4c315245433101011800010000007b22637265646974223a35302c2273746f636b223a31307d74c69a9a52454331010204000100000074c69a9a9d158a51",
+    "update_data_hex": "5245433101011700020000007b22637265646974223a38302c2273746f636b223a377dd3a92adc",
+    "update_commit_hex": "524543310102040002000000d3a92adcc2f54837",
+    "update_batch_hex": "5245433101011700020000007b22637265646974223a38302c2273746f636b223a377dd3a92adc524543310102040002000000d3a92adcc2f54837",
+    "seed_file_bytes": 64,
+    "update_data_bytes": 39,
+    "update_commit_bytes": 20,
+    "update_batch_bytes": 59,
+    "seed_sha256": "1bf956a54f94c92aca4def91f61a604ecd694d7832c20c6fd2f9a5ad7d800090",
+    "complete_sha256": "0326b723eea68559b649e8b6485d7f92dd80713c3e24be08d9ce4301b659c26a",
+    "gap_batch_hex": "5245433101011700030000007b22637265646974223a38302c2273746f636b223a377d92b2a6b252454331010204000300000092b2a6b28d1d05f5",
+    "third_batch_hex": "5245433101011700030000007b22637265646974223a39302c2273746f636b223a397d9946b3f15245433101020400030000009946b3f1beb7a948",
+    "bad_binding_commit_hex": "524543310102040002000000000000008dd70e35",
+    "duplicate_json_data_hex": "5245433101012100020000007b22637265646974223a38302c2273746f636b223a372c2273746f636b223a377d38ad46a0",
+    "boolean_json_data_hex": "5245433101011a00020000007b22637265646974223a38302c2273746f636b223a747275657d12bd8094"
+  }
+}
