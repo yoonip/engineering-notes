@@ -135,4 +135,4 @@ An eight-bit example gives `(3 - 250) & 255 = 9`. This elapsed-time calculation 
 
 ## 심화 해설 | Advanced article
 
-- [RTOS의 우선순위 역전: 누가 mutex를 놓을 수 있을까](해설_notes/우선순위역전_priority-inheritance.md) · [English](해설_notes/우선순위역전_priority-inheritance.md#english)
+- [뮤텍스 대기와 우선순위 상속](해설_notes/우선순위역전_priority-inheritance.md) · [English](해설_notes/우선순위역전_priority-inheritance.md#english)
