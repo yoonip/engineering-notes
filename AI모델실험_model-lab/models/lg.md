@@ -15,7 +15,7 @@
 
 [공식 Introduction과 Model Configuration](https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B#introduction)은 두 크기와 구조 차이를 구분합니다. 32B에 명시된 local/global 3:1 구조를 1.2B의 확정 특징으로 쓰지 않습니다. `enable_thinking`은 생성 입력 형식 선택이고 학습 시 가중치를 갱신하는 optimizer와는 다른 설정입니다.
 
-공식 카드는 한국어·영어·스페인어와 추론 모드 전환을 설명합니다. 32B의 3:1 local/global hybrid attention 설명을 1.2B에도 그대로 적용하면 안 됩니다. 이름이 같은 계열이라도 크기별 구조와 한도가 다릅니다.
+공식 카드는 한국어·영어·스페인어와 추론 모드 전환을 설명합니다.
 
 ## 실행에 필요한 조건과 비교 항목
 

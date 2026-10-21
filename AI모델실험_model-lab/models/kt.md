@@ -15,8 +15,6 @@ Dense 모델의 pruning은 선택한 부분을 제거해 구조나 가중치를 
 
 [공식 Mi:dm 2.0 설명](https://huggingface.co/K-intelligence/Midm-2.0-Mini-Instruct#midm-20)은 11.5B Base와 2.3B Mini의 관계를 밝힙니다. 이 카드만으로 Mini에서 제거한 모든 구조나 교사 신호의 세부 항을 확정하지 않습니다. 로컬 확률 회귀 예의 100% 일치율을 Mi:dm 압축 학습의 성능 증거로 사용하지 않습니다.
 
-공식 카드는 11.5B Base와 2.3B Mini를 구분하고 Mini의 pruning·distillation을 설명합니다. Pruning은 구조나 가중치를 줄이고 distillation은 교사 정보를 학생에게 학습시키는 과정이므로 같은 조작이 아닙니다.
-
 ## 실행에 필요한 조건과 비교 항목
 
 공식 template과 실행 경로를 사용합니다. 한국어 존댓말·문맥에 맞는 표현·정확한 정보 추출을 구분하고 같은 질문의 표현을 바꿔 결과가 유지되는지 확인합니다. Base와 비교할 때는 메모리·속도·정답률을 함께 남깁니다.
