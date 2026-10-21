@@ -1,6 +1,6 @@
 # 설계와 검증 사례 | Engineering decisions and checks
 
-요구사항과 실제 코드를 연결하고, 같은 입력에서 잘못된 조건과 해결한 조건을 비교합니다. 15개 사례의 본문에서 원인·대안·수정 방법을 읽고, 날짜별 기록에서 환경·명령·관측값을 확인하실 수 있습니다.
+요구사항과 실제 코드를 연결하고, 같은 입력에서 잘못된 조건과 해결한 조건을 비교합니다. 20개 사례의 본문에서 원인·대안·수정 방법을 읽고, 날짜별 기록에서 환경·명령·관측값을 확인하실 수 있습니다.
 
 ## C·C++·펌웨어
 
@@ -12,13 +12,17 @@
 | [뮤텍스 대기·우선순위 역전](뮤텍스대기와마감시간_rtos-priority-inversion.md) | 낮은 우선순위 소유자의 실행을 추적하고 상속 유무에 따른 응답·마감시간을 비교합니다. | [2026-10-21](검증기록_evidence/RTOS스케줄과알림검사_20261021.md) |
 | [검사와 대기 사이의 알림 유실](검사와대기사이의알림유실_rtos-lost-wakeup.md) | resume 유실과 보존되는 알림, 알림을 지운 뒤 남은 큐 데이터를 구분합니다. | [2026-10-21](검증기록_evidence/RTOS스케줄과알림검사_20261021.md) |
 | [FPGA 프레임 오류](프레임오류와FPGA검증_fpga-frame-validation.md) | 바이트·채널·순번 오류를 구별하고 가상 ADC·mock UART와 별도 RTL을 나누어 확인합니다. | [2026-10-21](검증기록_evidence/FPGA검증_20261021.md) |
+| [W1C 상태 소거·완료 버퍼 소유권](상태비트소거와완료버퍼소유권_irq-w1c-ownership.md) | 읽기-수정-쓰기로 다른 상태를 지우는 오류와 완료 버퍼 인계를 분리합니다. | [2026-10-21](검증기록_evidence/인터럽트DMA캐시모델검증_20261021.md) |
+| [캐시와 DMA의 복사본·공유 line](캐시와RAM의데이터불일치_dma-cache-lines.md) | TX·RX의 오래된 값과 공유 line 이웃 손실을 유지 연산·소유권으로 비교합니다. | [2026-10-21](검증기록_evidence/인터럽트DMA캐시모델검증_20261021.md) |
 
-## CAN 복구·수신 데이터
+## CAN·SPI·I2C 통신
 
 | 사례 | 오류와 해결 | 실행 기록 |
 | --- | --- | --- |
 | [CAN의 ACK·복구 정책](CAN의ACK와복구정책_can-recovery-policy.md) | 합성 상태 관측에서 재시작 요청·상태 확인·횟수 제한을 분리합니다. | [2026-10-21](검증기록_evidence/CAN정책과수신계약검증_20261021.md) |
 | [CAN 수신값의 형식·신선도](CAN수신값의형식과신선도_can-payload-contract.md) | 프레임 형식·바이트 순서·순번·수신 시각을 검사하고 무효 프레임의 상태 갱신을 막습니다. | [2026-10-21](검증기록_evidence/CAN정책과수신계약검증_20261021.md) |
+| [SPI 선택선·더미 클록](SPI의선택선과더미클록_spi-cs-dummy-edges.md) | 플래시 읽기의 명령·주소·dummy·유효 데이터와 CS 경계를 비교합니다. | [2026-10-21](검증기록_evidence/SPI와I2C전송경계검증_20261021.md) |
+| [I2C 묶음 읽기·NACK](I2C의묶음읽기와NACK_i2c-combined-read.md) | EEPROM 주소 지정·repeated START·읽기 종료 NACK의 주체와 실패 단계를 구분합니다. | [2026-10-21](검증기록_evidence/SPI와I2C전송경계검증_20261021.md) |
 
 ## 칩 산술·시험 데이터
 
@@ -27,6 +31,7 @@
 | [칩 산술의 레이아웃·누산 폭](칩산술의레이아웃과누산폭_chip-arithmetic-contract.md) | 주소식·장치 입력 복사본·좁히기를 독립 기대값과 비교합니다. | [2026-10-21](검증기록_evidence/칩모델과시험자료검증_20261021.md) |
 | [시험 ID·수율·오판율](시험데이터의식별자와오판율_test-data-identity-metrics.md) | 행 비교가 만든 거짓 일치율을 ID 연결로 드러내고 서로 다른 분모를 구분합니다. | [2026-10-21](검증기록_evidence/칩모델과시험자료검증_20261021.md) |
 | [시험 러너의 결과 계약](시험러너의종료상태와결과계약_chip-runner-result-contract.md) | 실제 자식프로그램의 종료·시간초과와 결과의 실행 ID·입력 해시·case·수치를 함께 판정합니다. | [2026-10-21](검증기록_evidence/칩시험러너오류재현_20261021.md) |
+| [RTL 내적기의 폭·전송 계약](RTL내적기의비트폭과전송계약_rtl-dot-handshake.md) | SystemVerilog 실행 결과를 Python 기대값과 대응시켜 부호·폭·지연·리셋·수락 오류를 검출합니다. | [2026-10-21](검증기록_evidence/RTL내적기비교검증_20261021.md) |
 
 ## AI·데이터 시스템
 
@@ -39,13 +44,13 @@
 
 ## 코드와 계측으로 연결하기
 
-- [새 오류 재현 코드](../예제_examples/실무검증_practical-validation/README.md): C/C++ 빌드, 칩 모형, AI 합성 학습의 실행 방법입니다.
+- [오류 재현 코드](../예제_examples/실무검증_practical-validation/README.md): C/C++·RTOS·인터럽트·DMA·통신·RTL·칩·AI 예제의 실행 방법입니다.
 - [현장 계측과 검증](../현장계측과검증_measurement-validation/README.md): 장비 9개 모델의 특성과 사용 절차, DMA·캐시, 예외 추적, PVT, 통신, 계측 자동화입니다.
 - [계측 자동화의 offline 기록](검증기록_evidence/계측자동화모의검사_20261021.md): 기존 19개 mock·모형 검사의 범위입니다.
 - [구현 프로젝트](../프로젝트_projects/README.md): 기존 소스와 이전 실험·실행 결과입니다.
 
-새 사례의 실행은 PC 호스트·소프트웨어 모형입니다. FPGA의 RTL 성공 1회와 반복 컴파일 실패, 기존 제조 GPU 요약과 새 합성 CPU 검사는 각 기록에서 구별합니다. 실제 장비·산업 데이터·동시 스트레스 검증 여부는 해당 관측 옆에 표시합니다.
+인터럽트·캐시·통신은 결정적 호스트 모델이며, RTL 내적기는 HDL 컴파일·시뮬레이션과 Python 기준 모델을 연결합니다. 이전 FPGA의 성공 1회와 반복 컴파일 실패 기록, 기존 GPU 결과도 해당 시점의 근거로 보존합니다. 실물 측정·산업 데이터·동시 스트레스 검증의 범위는 각 관측에서 구분합니다.
 
 ## English
 
-Fifteen cases connect requirements, executable code, deliberately faulty controls, intended fixes and dated observations. They cover C/C++ ownership, firmware publication, RTOS scheduling/notifications, CAN recovery/payload contracts, chip arithmetic, test identity, subprocess result validation, AI serving/evaluation, FPGA frames and SQLite updates. Host execution, deterministic models and physical measurements have distinct scopes.
+Twenty cases connect requirements, executable code, deliberately faulty controls, intended fixes and dated observations. They cover C/C++ ownership, firmware publication, RTOS scheduling/notifications, interrupt/DMA/cache contracts, CAN/SPI/I2C, RTL/reference comparison, chip arithmetic, test identity, subprocess reports, AI serving/evaluation, FPGA frames and SQLite updates. HDL simulation, deterministic host models and physical measurements have distinct scopes.

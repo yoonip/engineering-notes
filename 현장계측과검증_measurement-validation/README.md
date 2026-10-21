@@ -27,7 +27,7 @@
 
 ## 오류를 코드로 재현하기
 
-[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 RTOS·CAN·칩·AI 예제는 결정적 모델과 합성 자료입니다. 칩 시험 러너는 실제 호스트 자식프로그램을 실행해 프로세스 실패와 결과 계약 위반을 나눕니다.
+[실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md)는 잘못된 조건과 해결한 조건을 같은 입력에서 비교합니다. C/C++ 세 프로그램은 실제 호스트 빌드·실행이며 RTOS·CAN·칩·AI 예제는 결정적 모델과 합성 자료입니다. 칩 시험 러너는 실제 호스트 자식프로그램을 실행해 프로세스 실패와 결과 계약 위반을 나눕니다. 인터럽트·DMA·캐시와 SPI·I2C의 호스트 모델, SystemVerilog와 Python을 비교하는 RTL 예제로 이어집니다.
 
 | 재현하는 문제 | 원인과 해결 | 본문 |
 | --- | --- | --- |
@@ -43,6 +43,11 @@
 | CAN 재시작 요청은 성공했지만 통신이 돌아오지 않습니다. | 요청·컨트롤러 상태·재시도 예산을 별도로 판정합니다. | [CAN 복구 정책](../설계와검증사례_engineering-cases/CAN의ACK와복구정책_can-recovery-policy.md) |
 | CAN 값은 범위 안인데 오래됐거나 잘못 해석됐습니다. | ID·형식·길이·바이트 순서·순번·나이를 확인합니다. | [CAN 수신 계약](../설계와검증사례_engineering-cases/CAN수신값의형식과신선도_can-payload-contract.md) |
 | 시험 프로그램이 정상 종료했는데 결과를 믿을 수 없습니다. | 실행 ID·입력 해시·예정 case·수치를 대조하고 timeout을 구분합니다. | [칩 시험 러너](../설계와검증사례_engineering-cases/시험러너의종료상태와결과계약_chip-runner-result-contract.md) |
+| 상태 하나만 처리했는데 다른 인터럽트 원인도 사라집니다. | W1C 레지스터의 쓰기 의미를 보고 읽기-수정-쓰기와 명시적 마스크를 비교합니다. | [IRQ 상태와 소유권](../설계와검증사례_engineering-cases/상태비트소거와완료버퍼소유권_irq-w1c-ownership.md) |
+| DMA 뒤 payload나 이웃 flag가 옛값이 됩니다. | 캐시/RAM 복사본과 line 전체의 소유권, 사전·사후 유지 순서를 추적합니다. | [DMA·캐시 오류](../설계와검증사례_engineering-cases/캐시와RAM의데이터불일치_dma-cache-lines.md) |
+| SPI 읽기가 한 바이트 밀리거나 중간에 끊깁니다. | 해당 부품의 명령·주소·dummy·CS와 샘플링 에지를 대조합니다. | [SPI 전송 경계](../설계와검증사례_engineering-cases/SPI의선택선과더미클록_spi-cs-dummy-edges.md) |
+| I2C 응답은 왔는데 다른 주소의 데이터를 읽습니다. | 묶음 읽기의 START/STOP과 주소 단계, NACK의 주체를 나눕니다. | [I2C 묶음 읽기](../설계와검증사례_engineering-cases/I2C의묶음읽기와NACK_i2c-combined-read.md) |
+| RTL 값이나 출력 사이클이 기준과 다릅니다. | 부호·누산 폭·수락·지연·리셋 조건을 고정해 HDL 결과와 기대값을 비교합니다. | [RTL·기준 모델](../설계와검증사례_engineering-cases/RTL내적기의비트폭과전송계약_rtl-dot-handshake.md) |
 
 ## 업무 질문에서 시작하기
 
