@@ -1,5 +1,7 @@
 # 풍선 터트리기
 
+[Level 3 목록 / Level 3 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 Level 3 · [68646 공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/68646)
 
 ## 문제와 조건

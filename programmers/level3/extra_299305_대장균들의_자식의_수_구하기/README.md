@@ -1,5 +1,7 @@
 # 대장균들의 자식의 수 구하기
 
+[Level 3 목록 / Level 3 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/299305) · Level 3 · MySQL
 
 [입력 테이블과 자료형 / Input schema](SCHEMA.md)

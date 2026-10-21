@@ -1,5 +1,7 @@
 # 몸짱 트레이너 라이언의 고민
 
+[Level 3 목록 / Level 3 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 Level 3 · [1838 공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/1838)
 
 ## 문제와 조건

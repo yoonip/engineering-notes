@@ -1,5 +1,7 @@
 # 제곱 개수 배열
 
+[Level 3 목록 / Level 3 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 [공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/468380) · Level 3 · Python3
 
 ## 문제와 조건 / Task and conditions

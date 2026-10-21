@@ -1,5 +1,7 @@
 # 경주로 건설
 
+[Level 3 목록 / Level 3 index](../README.md) · [풀이 전체 목차 / Solution index](../../README.md)
+
 Level 3 · [67259 공식 문제 / Official problem](https://school.programmers.co.kr/learn/courses/30/lessons/67259)
 
 ## 문제와 조건
