@@ -1,6 +1,6 @@
 # 사회·제도·증거 | Society, Institutions and Evidence
 
-[전체 분야](../../분야별목차_CATALOG.md) · [추론과 인문·사회](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
+[전체 분야](../../분야별목차_CATALOG.md) · [개념과 판단](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
 
 사회 현상을 설명하는 지표와 제도를 읽고, 표본·비교집단·교란요인을 통해 자료가 지지하는 결론의 범위를 살핍니다.
 
