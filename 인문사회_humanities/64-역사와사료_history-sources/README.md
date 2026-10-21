@@ -1,6 +1,6 @@
 # 역사와 사료 읽기 / History and historical sources
 
-과거의 자료에서 무엇을 확인할 수 있는지, 사건의 순서와 원인 설명이 어떻게 다른지 공부합니다. 사료의 생산·전달 경로를 읽고, 교역 유물과 산업화 자료, 한국 근대의 조약·정치 문서를 실제 사례로 비교합니다. 네 글은 세계사·한국사 전체를 압축한 완결 과정이 아니라 자료를 읽는 출발점입니다.
+과거의 자료에서 무엇을 확인할 수 있는지, 사건의 순서와 원인 설명이 어떻게 다른지 공부합니다. 사료의 생산·전달 경로를 읽고, 교역 유물과 산업화 자료, 한국 근대의 조약·정치 문서를 실제 사례로 비교합니다. 각 본문은 자료의 작성 시점과 목적, 해석의 근거를 찾는 연습으로 이어집니다.
 
 ## 읽는 순서와 직접 해 볼 일
 
@@ -26,6 +26,6 @@
 
 ## English
 
-Learn to evaluate sources, build selective chronologies and explain historical connections. The four articles compare textual records, trade objects, industrialization evidence and modern Korean political documents. Worked examples distinguish original evidence from constructed exercises, declarations from implementation, and chronological sequence from causal explanation.
+Learn to evaluate sources, build selective chronologies and explain historical connections. The articles compare textual records, trade objects, industrialization evidence and modern Korean political documents. Worked examples distinguish original evidence from constructed exercises, declarations from implementation, and chronological sequence from causal explanation.
 
 [인문사회 목차](../README.md) · [전체 분야](../../분야별목차_CATALOG.md)
