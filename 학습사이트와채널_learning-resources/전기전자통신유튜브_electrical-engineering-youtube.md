@@ -14,13 +14,13 @@
 | 반도체 소자와 IC 설계 | Sungho Kim, nanoHUB | IDEC, IIT Madras iCS, IEEE SSCS |
 | 전자기학·통신 | 김동명, 소클래스TV, Greg Durgin | NPTEL의 마이크로파·광통신·레이더 강의 |
 | 제어와 전력변환 | 김동한, Ctrl튜브, Brian Douglas | Steve Brunton, byungcho choi, Sam Ben-Yaakov |
-| 전력계통·전기기기·전기 구동 | IIT KANPUR-NPTEL의 전기 구동 강의 | 과목 안내의 전력계통 해석·안정도·운용·분산전원 |
+| 전력계통·전기기기·전기 구동 | 남민수의 전기기기, 과목 안내의 국립목포대·안양대 한국어 강의 | 전력계통 해석·안정도·운용·분산전원과 IIT KANPUR-NPTEL 전기 구동 |
 | FPGA·마이크로프로세서 | Nandland, 인사이드 임베디드 | 설계독학, KK SystemVerilog, DigiKey·ST·Microchip |
 | PCB·계측·고장 추적 | 루드비크, 서민상, w2aew | Phil’s Lab, Feranec, Bogatin, The Signal Path |
 
 ## 한국어 전공 강의와 실습
 
-### 회로이론·전자회로·반도체 소자
+### 회로이론·전자회로·반도체 소자·패키징
 
 | 채널·언어 | 운영 주체 | 내용과 활용 | 시작할 곳 |
 | --- | --- | --- | --- |
@@ -28,6 +28,8 @@
 | [뽕교수의 전자공학](https://www.youtube.com/channel/UC5ctrziXJXZgvwLPPiSRP0Q) · 한국어 | 개인 전자공학 강의 채널 | 회로이론·논리회로의 개념과 예제를 짧은 단원으로 나누고, 증폭기 실험에서는 이론과 실제 회로 동작을 연결합니다. | [회로이론 순서대로 보기](https://www.youtube.com/playlist?list=PL4mqT4nB0TyA4K1BcxGJTP3izKWlN_7Eh) · [소리 증폭의 이론과 실험](https://www.youtube.com/watch?v=mVjVs2dbQt4) |
 | [hearDELIGHT — 박홍준의 공개 강의](https://www.youtube.com/@hongjunepark1383) · 한국어 강의 수록 | 박홍준 · [POSTECH 명예교수 소개](https://ee.postech.ac.kr/faculty-research/professor/view.php?id=317) | 채널의 기존 전자회로·전자전기공학실험·아날로그 회로 강의를 골라 학부 회로에서 집적회로 설계로 이어갈 수 있습니다. | [포스텍 전자회로 1](https://www.youtube.com/playlist?list=PLfrHVUu0Cc3kFU9dbJq0SJjp8r7d9FKqu) · [아날로그 회로·바이오메디컬 반도체 설계](https://www.youtube.com/playlist?list=PLfrHVUu0Cc3kEGeJMrR5xtflZPuULchNw) |
 | [Sungho Kim — 김성호](https://www.youtube.com/@devicephysics) · 한국어 | 김성호 · [이화여대 교수진](https://ee.ewha.ac.kr/ewhaeleca/intro/faculty.do?articleNo=707896&mode=view) | 에너지 밴드와 캐리어에서 접합·MOS·공정·측정으로 이어지는 반도체 강의입니다. | [물리전자공학 강의 소개](https://www.youtube.com/watch?v=XS7e7pCh6-g) |
+| [Byeongha 시스템반도체집적회로](https://www.youtube.com/channel/UCWyQKVac-ViViIl1AtXnv7w) · 한국어 | 아날로그·혼성신호 IC 설계 강의 운영자 | MOS 소자·증폭기에서 LDO·PLL·위상잡음으로 이어지는 설계 강의입니다. 전자회로를 익힌 뒤 회로 블록의 동작을 공부하기 좋습니다. | [PLL 위상잡음과 지터](https://www.youtube.com/watch?v=i6ZYrn3CXwI) |
+| [첨단 반도체 패키징 재료 연구실 — 인하대 APML](https://www.youtube.com/channel/UCA4WCFoBUPj_DmCi3WG7ZUA) · 한국어 | 윤창민 · [인하대 APML 연구실](https://sites.google.com/view/apml-inha) | 패키징 공정·소재를 설명하며 HBM·하이브리드 본딩·인터포저와 언더필·봉지재·방열재로 이어갑니다. 반도체 공정과 재료의 기초 이후에 보기 좋습니다. | [첨단 패키징 공정](https://www.youtube.com/watch?v=tA-6YY27Ty0) |
 
 ### 디지털 회로·FPGA·반도체 검증
 
@@ -50,6 +52,7 @@
 | [인사이드 임베디드](https://www.youtube.com/channel/UCepeJZ-k2338x5jZUjMlQ9A) · 한국어 | 제어쟁이의 임베디드 강의 채널 | ARM·메모리맵·레지스터에서 GPIO·클럭·인터럽트·ADC·타이머·UART로 이어지는 STM32 이론과 실습을 제공합니다. | [STM32 입문 통합 강의](https://www.youtube.com/watch?v=XOsyrZGZtR8) · [기초 강의 순서](https://www.youtube.com/playlist?list=PLtoKvna7TPSI6-mNxULFJo3tpSDLaGQ44) |
 | [그라운드 임베디드](https://www.youtube.com/@GROUND_EMBEDDED) · 한국어 | 개인 임베디드 교육 채널 | C언어·MCU·주변장치의 공부 순서와 구현 강의를 제공하므로 임베디드를 처음 시작할 때 활용하기 좋습니다. | [임베디드 공부 순서](https://www.youtube.com/watch?v=Cv30BqRo1Cc) · [입문자 개발 강의](https://www.youtube.com/playlist?list=PLz--ENLG_8TMQ1HKzZKiRkaeL4jeSYVsx) |
 | [전자기학 by 김동명 교수](https://www.youtube.com/@Electro-Magnetic_Kim) · 한국어 | 김동명 · [국민대 명예교수](https://www.kookmin.ac.kr/user/unIntr/unSttu/univOrgn/view.do?deptCd=30001) | 벡터와 공간적 해석을 바탕으로 전자기장 수식의 뜻과 공학적 응용을 연결합니다. | [암페어 법칙의 동축선·코일 응용](https://www.youtube.com/watch?v=petNBW-CrYc) |
+| [RFqna](https://www.youtube.com/channel/UC1TJBkznejoKL8NFdFlMu1A) · 한국어 | [RFqna 전자파·안테나 Q&A 운영자](http://www.rfqna.com/) | 전송선·스미스차트·정합·회로망에서 분배기·RF 시스템·증폭기·발진기로 이어지는 마이크로파 강의입니다. 전자기학·회로 기초 이후에 활용하기 좋습니다. | [마이크로파공학 개론](https://www.youtube.com/watch?v=q51G8Uik7Cc) · [전송선로](https://www.youtube.com/watch?v=pbUDKLvcWhU) |
 
 MATLAB Korea의 일부 영상은 영어 음성에 한국어 자막을 제공합니다. 예제 실행에는 MATLAB·Simulink와 필요한 툴박스가 필요할 수 있습니다. 인사이드 임베디드는 C언어의 변수·함수·포인터·비트 연산을 알고 시작하면 따라가기 수월합니다.
 
@@ -61,6 +64,9 @@ MATLAB Korea의 일부 영상은 영어 음성에 한국어 자막을 제공합�
 | [서민상의 공학 노트](https://www.youtube.com/@EngineerNote) · 한국어 | 서민상의 개인 전기·전자 설명 채널 | 전압·전류 측정과 분류기 저항 선정, 전원·회로의 기초를 측정 조건과 계산으로 설명합니다. | [전류 측정과 션트 저항 선정](https://www.youtube.com/watch?v=70p1nnIgCGQ) · [전압 측정의 원리](https://www.youtube.com/watch?v=ZQ_GKY1_gYk) |
 | [Keysight Korea](https://www.youtube.com/@KeysightKorea) · 한국어 중심 | 키사이트 코리아 공식 채널 | RF·신호무결성·비트 오류율과 계측기 사용을 웨비나·데모로 살펴볼 수 있으며, 회로·신호의 기초를 익힌 뒤 측정 문제에 적용하기 좋습니다. | [네트워크 분석기별 RF 측정 데모](https://www.youtube.com/watch?v=Ux3HpnH_q0I) |
 | [전병칠](https://www.youtube.com/@elec7) · 한국어 | 전병칠 · [다산에듀 공식 채널 연결](https://www.e-dasan.net/) | 전기 기초·시퀀스·PLC를 회로와 동작 순서로 설명하며, 릴레이·타이머·인터록에서 자동화 제어의 기초를 익힐 수 있습니다. | [푸시버튼 회로부터 시작하는 시퀀스](https://www.youtube.com/watch?v=J8RoZXLpLq4) · [PLC 제어](https://www.youtube.com/playlist?list=PLt-9xySRVAc2kOWnrObkEAGXO5e6lrk12) |
+| [뉴틀킴](https://www.youtube.com/channel/UCuFVjis8EheQlGemxaLvvXg) · 한국어 | 전기전자·3D 프린팅 프로젝트를 만드는 개인 메이커 | EasyEDA 회로도·PCB 설계를 키보드·스마트팜 등의 제작 과정과 연결합니다. 부품과 회로의 기초를 익힌 뒤 직접 설계 도구를 따라 해보기 좋습니다. | [EasyEDA 회로도 그리기](https://www.youtube.com/watch?v=aNwK8WR_ATA) · [스마트팜 PCB 설계](https://www.youtube.com/watch?v=U1cSzB38JNQ) |
+| [나도메이커 — ICBANQ](https://www.youtube.com/channel/UC527B1P3XEAFKaXLPExSb8w) · 한국어 | [아이씨뱅큐](https://www.icbanq.com/) | PCB 제작·표면실장(SMT)의 기본 용어와 아두이노·보드 프로젝트를 소개합니다. 회로도에서 부품 주문·기판 조립으로 넘어갈 때 활용하기 좋습니다. | [SMT의 기초](https://www.youtube.com/watch?v=uECmnN8Rb9I) |
+| [전기뿌수기 — 남민수](https://www.youtube.com/channel/UClDCaOGD69aOZW1GPckqTjw) · 한국어 | 남민수 · [하이에듀](https://hi-edu.kr/) | 전기 자격시험 과목에 맞춰 회로·전자기학·전기기기·전력의 개념과 계산 문제를 설명합니다. 학부 전기 과목을 복습하며 문제 풀이를 연습하기 좋습니다. | [전기기기 이론](https://www.youtube.com/watch?v=hvqwbLS8svA) · 공개 영상, 교재·PDF 별도 판매 |
 
 ## 영어 전공 강의와 설계·계측
 
