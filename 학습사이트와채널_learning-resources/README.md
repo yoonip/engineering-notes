@@ -21,6 +21,7 @@
 | 한국어 영상으로 배우는 개념과 기술 | [한국어 유튜브 채널](한국어유튜브_korean-youtube.md): 수학·과학·기술 해설과 박물관 강의 |
 | 애니메이션·제작 과정으로 이해하는 원리 | [해외 유튜브 채널](해외유튜브_global-youtube.md): 시각 수학, 장치 구조, 기계·물리 설명 |
 | 코드를 쓰거나 장치를 다루는 공식 자료 | [개발·회로·펌웨어 학습](공식기술문서_technical-docs.md): 한국어 문서, 실습 과정, 제조사 강의 |
+| 한국어 설명으로 외국어를 배우는 순서 | [한국어로 배우는 외국어](한국어로배우는외국어_korean-guided-language-learning.md): 영어·일본어·중국어·스페인어·독일어의 채널과 초급·중급·고급 공부 순서 |
 | 외국어의 발음·문법·듣기·읽기 | [외국어 학습 사이트와 채널](외국어학습_foreign-language-learning.md): 언어별 입문 강의, 듣기·읽기와 연습 자료 |
 | 연구윤리·연구노트·논문·발표 | [국내 연구윤리 교육](국내공개강의_korean-courses.md#대학원-연구윤리연구노트)과 [논문 작성·발표 자료](해외공개강의_global-courses.md#논문-작성연구-발표) |
 | 역사·언어·경제·법·예술의 기초와 원자료 | [인문사회와 예술](인문사회와예술_humanities-arts.md): 사전, 사료, 통계, 법령, 작품과 음악 |
@@ -34,7 +35,7 @@
 | 컴퓨터가 계산하고 프로그램을 실행하는 과정 | [Ben Eater](https://www.youtube.com/@BenEater), [구조·시스템 채널](컴퓨터공학과AI유튜브_computing-ai-youtube.md) | [논리·구조·운영체제 과목](컴퓨터공학과AI과목_cs-ai-courses.md), [디지털 논리와 FPGA](https://digilent.com/shop/intro-to-digital-logic-and-fpgas/) |
 | 파이썬과 개발 도구 | 코딩 입문은 [CS50P](https://cs50.harvard.edu/python/), 문법 확인은 [Python 한국어 자습서](https://docs.python.org/ko/3/tutorial/) | [Pro Git 한국어판](https://git-scm.com/book/ko/v2), [공식 기술 문서](공식기술문서_technical-docs.md) |
 | AI의 기본 원리와 모델 구현 | [한국어·영어 AI 채널](컴퓨터공학과AI유튜브_computing-ai-youtube.md), [Google 머신러닝 단기집중과정](https://developers.google.com/machine-learning/crash-course?hl=ko) | [수학·통계 영상](해외유튜브_global-youtube.md), [AI 과목별 강의](컴퓨터공학과AI과목_cs-ai-courses.md) |
-| 영어·일본어 등 외국어 공부 | [언어별 학습 자료](외국어학습_foreign-language-learning.md) | [영어 기초 연습과 기술 영어](../외국어와기술영어_foreign-languages/README.md) |
+| 영어·일본어 등 외국어 공부 | [한국어 해설 채널과 공부 순서](한국어로배우는외국어_korean-guided-language-learning.md) | [언어별 듣기·읽기 자료](외국어학습_foreign-language-learning.md), [영어 기초 연습과 기술 영어](../외국어와기술영어_foreign-languages/README.md) |
 | 연구·산업 기사의 근거 확인 | [연구기관과 논문 검색](연구기관과기업_research-industry.md) | 논문의 방법·실험 조건, 기업 발표의 제품·판본·발표일 |
 | 역사·경제·문화 교양 | [우리역사넷](https://contents.history.go.kr/), [경제배움e+](https://econedu.go.kr/index) | [사료·통계·작품 자료](인문사회와예술_humanities-arts.md) |
 
@@ -48,4 +49,4 @@
 
 ## English
 
-A guide to open courses, public research resources, official documentation and educational video channels, with Korean and English resources. Electrical engineering, electronics, communications, computer science and AI have subject guides for undergraduate and graduate study. A separate language-learning guide covers courses, listening, reading and practice resources. The lists identify providers, prerequisites, language and public access conditions. The guides link to course materials, creator resources and official documentation for further study.
+A guide to open courses, public research resources, official documentation and educational video channels, with Korean and English resources. Electrical engineering, electronics, communications, computer science and AI have subject guides for undergraduate and graduate study. Language guides link to courses, listening, reading and practice resources. A separate guide connects language lessons taught in Korean with study paths and exercises. The lists identify providers, prerequisites, language and public access conditions. The guides link to course materials, creator resources and official documentation for further study.
