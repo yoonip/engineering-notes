@@ -20,6 +20,10 @@
 
 [처음으로](README.md) · [공학 기초](공학기초_foundations/README.md) · [출처](참고자료_references/README.md)
 
+## 외부 강의와 학습 자료 | Courses and learning resources
+
+[학습 사이트와 채널](학습사이트와채널_learning-resources/README.md)에서 한국어 대학 강의, 해외 공개 강의, 연구기관·기업의 기술 자료와 영상 해설을 찾으실 수 있습니다. 수학·과학·컴퓨터·공학뿐 아니라 역사·언어·경제·법·예술 자료도 연결합니다.
+
 ## 계측·디버깅·설계 검증 | Measurement, debugging and validation
 
 [현장 계측과 검증](현장계측과검증_measurement-validation/README.md)은 계측기의 특성과 사용 절차, DMA·캐시, Cortex-M 예외, PVT·shmoo, CAN·EtherCAT·Modbus, SCPI 자동화를 다룹니다. [업무별 읽기 경로](현장계측과검증_measurement-validation/README.md#업무별-읽기-경로)는 C/C++·펌웨어·RTL·AI·Python의 기존 구현으로 이어집니다.
