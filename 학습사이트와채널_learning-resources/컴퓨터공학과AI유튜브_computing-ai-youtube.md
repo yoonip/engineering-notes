@@ -8,7 +8,8 @@
 
 ## 분야별 바로가기
 
-- [한국어 프로그래밍·컴퓨터과학](#한국어-프로그래밍컴퓨터과학) · [한국어 AI 개념·구현·세미나](#한국어-ai-개념구현세미나)
+- [한국어 프로그래밍·컴퓨터과학](#한국어-프로그래밍컴퓨터과학) · [한국어 웹·백엔드·개발 사례](#한국어-웹백엔드개발-사례)
+- [한국어 AI 개념·구현·세미나](#한국어-ai-개념구현세미나)
 - [디지털 논리·알고리즘·구현](#디지털-논리알고리즘구현) · [구조·시스템·프로그래밍·성능](#구조시스템프로그래밍성능)
 - [데이터베이스·분산·네트워크·보안](#데이터베이스분산네트워크보안) · [대학 강의·AI 모델 구현](#대학-강의ai-모델-구현)
 
@@ -30,12 +31,25 @@
 | [생활코딩](https://www.youtube.com/@coohde) · 한국어 | 생활코딩 | HTML·인터넷·프로그래밍·데이터베이스를 직접 따라 만들며 익히는 입문 수업입니다. | [WEB1 — HTML & Internet](https://www.youtube.com/playlist?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb) · [수업 글](https://opentutorials.org/course/1) |
 | [동빈나](https://www.youtube.com/@dongbinna) · 한국어 | 개인 알고리즘·AI 강의 채널 | 알고리즘 풀이와 딥러닝 논문의 원리를 설명하고 코드 실습으로 연결합니다. | 채널의 알고리즘·딥러닝 논문 강의 목록 |
 | [홍정모](https://www.youtube.com/@HongLab) · 한국어 | 개인 프로그래밍 강의 채널 | 프로그래밍 기초부터 그래픽스·AI 구현까지 코드를 작성하는 과정과 함께 설명합니다. | 채널의 프로그래밍 강의·라이브 코딩 목록 |
-| [포프TV](https://www.youtube.com/@%ED%8F%AC%ED%94%84%ED%8B%B0%EB%B9%84) · 한국어 | 김포프의 개인 개발자 해설 채널 | 프로그래밍·코드 설계·개발 업무의 선택을 개발자의 경험과 연결해 이야기합니다. | 채널의 프로그래밍·코드 설계 관련 영상 목록 |
 | [널널한 개발자 TV](https://www.youtube.com/@nullnull_not_eq_null) · 한국어 | 개인 개발 강의 채널 | 운영체제·네트워크·보안의 개념을 프로그램과 시스템의 동작에 연결합니다. | 채널의 컴퓨터 구조·네트워크 강의 목록 |
 | [쉬운코드](https://www.youtube.com/@ezcd) · 한국어 | 개인 백엔드 개발 강의 채널 | 프로세스·스레드·데이터베이스·네트워크를 그림과 작은 예로 연결하는 컴퓨터과학 기초 해설입니다. | [데이터베이스 기본 개념](https://www.youtube.com/watch?v=aL0XXc1yGPs) · 기초 프로그래밍 이후. 기초 영상은 공개이며 챌린지는 회원 전용입니다. |
 | [SPIN Lab. KOREATECH — 김덕수 교수](https://www.youtube.com/@hpclab.koreatech4592) · 한국어 | 한국기술교육대 김덕수 교수·SPIN 연구실 | 운영체제에서 시스템 호출·멀티코어 프로그래밍으로 이어지는 대학 강의를 자료와 함께 공부할 수 있습니다. | [운영체제 강의](https://www.youtube.com/playlist?list=PLBrGAFAIyf5rby7QylRc6JxU5lzQ9c4tN) · C 언어·기본 자료구조 이후. |
+| [바킹독 — 실전 알고리즘](https://www.youtube.com/channel/UCwFszkz9NbnQyQn5YbDfZtg) · 한국어 | 바킹독 | 자료구조·그래프·동적 계획법을 C++ 구현과 연습 문제 풀이로 연결합니다. | [강의 순서·코드·문제집](https://github.com/encrypted-def/basic-algo-lecture) · C/C++ 기본 문법 이후. |
+
+## 한국어 웹·백엔드·개발 사례
+
+| 채널·언어 | 운영 주체 | 내용과 활용 | 학습 수준·시작할 곳 |
+| --- | --- | --- | --- |
+| [포프TV](https://www.youtube.com/@%ED%8F%AC%ED%94%84%ED%8B%B0%EB%B9%84) · 한국어 | 김포프의 개인 개발자 해설 채널 | 프로그래밍·코드 설계·개발 업무의 선택을 개발자의 경험과 연결해 이야기합니다. | 채널의 프로그래밍·코드 설계 관련 영상 목록 |
 | [우아한테크](https://www.youtube.com/@woowatech) · 한국어 | 우아한형제들·우아한테크코스 | 개발자의 기술 발표와 테크코스 학습자의 테코톡을 통해 설계 선택과 컴퓨터과학 개념을 사례로 살펴볼 수 있습니다. | [10분 테코톡 목록](https://www.youtube.com/playlist?list=PLgXGHBqgT2TvpJ_p9L_yZKPifgdBOzdVH) · 기초 프로그래밍 이후. |
 | [드림코딩](https://www.youtube.com/channel/UC_4u-bXaba7yrRz_6x6kb_w) · 한국어 | 엘리·드림코딩 | JavaScript 문법과 브라우저·웹 개발의 기초를 코드와 함께 익히는 한국어 강의입니다. | [유튜브 기초 강의 공부 순서](https://academy.dream-coding.com/pages/roadmap) · 프로그래밍 입문부터. 유튜브 기초 강의는 무료이며 아카데미 과정은 별도 유료입니다. |
+| [최범균](https://www.youtube.com/@madvirus) · 한국어 | 서버 개발자 최범균 | 객체 지향 설계·UML·테스트·JPA·메시징을 서버 코드와 작은 예제로 설명합니다. | [TDD·테스트](https://www.youtube.com/playlist?list=PLwouWTPuIjUj_QqgXlFsqjUwyC0-5dZ_q) · [JPA 기초](https://www.youtube.com/playlist?list=PLwouWTPuIjUi9Sih9mEci4Rqhz1VqiQXX) · Java 기초 이후. |
+| [토비의 스프링](https://www.youtube.com/@tobyspring) · 한국어 | 이일민(토비)의 개발 강의 채널 | 스프링의 설계와 테스트를 소스코드·리팩터링·라이브 코딩으로 살펴봅니다. | [xUnit을 직접 만드는 라이브 코딩](https://www.youtube.com/watch?v=tdKFZcZSJmg) · [강사의 설명 글](https://toby.epril.com/5) · Java·객체 지향·테스트 기초 이후. |
+| [백기선](https://www.youtube.com/@keesun.b) · 한국어 | 백기선의 프로그래밍 강의 채널 | Java·스프링·디자인 패턴을 스터디와 코드 설명으로 공부할 수 있습니다. | [자바 스터디](https://www.youtube.com/playlist?list=PLfI752FpVCS96fSsQe2E3HzYTgdmbz6LU) · [디자인 패턴](https://www.youtube.com/playlist?list=PLfI752FpVCS_v_sc8Q6V9QQN7GhoyktKD) · Java 기본 문법 이후. |
+| [코딩앙마](https://www.youtube.com/@codingangma) · 한국어 | 개인 웹 개발 강의 채널 | JavaScript 문법과 비동기 처리에서 TypeScript·React·테스트 도구로 이어지는 코드 강의입니다. | [JavaScript 기초](https://www.youtube.com/watch?v=KF6t61yuPCY) · 웹 프로그래밍 입문부터. |
+| [코딩애플](https://www.youtube.com/@codingapple) · 한국어 | 코딩애플 | 웹 UI를 만들면서 JavaScript·React·Vue·서버 개발의 개념을 짧은 코드로 익힐 수 있습니다. | [웹 개발로 배우는 JavaScript 기초](https://www.youtube.com/playlist?list=PLfLgtT94nNq0svPBSslzReYKbZRuv_-NK) · 입문부터. 유튜브 공개 강의와 별도로 [유료 과정](https://codingapple.com/)이 있습니다. |
+| [NAVER D2](https://www.youtube.com/@naver_d2) · 한국어 중심 | 네이버 개발자 기술 공유 채널 | 웹 성능·분산 처리·저장소·서비스 운영의 설계 선택을 개발자 발표로 살펴봅니다. | [ENGINEERING DAY 공개 세션 안내](https://d2.naver.com/news/2884147) · 프로그래밍·네트워크·DB 기초 이후에 관심 분야를 고르시면 좋습니다. |
+| [DEVOCEAN](https://www.youtube.com/channel/UCnIyjM-gLKX4e0T7WxBe8eg) · 한국어 | SK 개발자 커뮤니티 | 클라우드·데이터·AI의 개발과 운영 경험을 기술 세미나·구현 사례로 공유합니다. | 채널의 DEVOCEAN Tech Day·데이터·AI 발표 목록 · [공식 글·행사 안내](https://devocean.sk.com/) · 해당 분야 기초 이후. |
 
 ## 한국어 AI 개념·구현·세미나
 
@@ -47,6 +61,7 @@
 | [AI프렌즈](https://www.youtube.com/@aifrenz) · 한국어 | 대덕연구단지 기반 비영리 연구모임 | 산학연 발표자의 AI 세미나에서 응용 사례와 연구 방법을 접할 수 있습니다. | [모델 기반 강화학습 소개](https://www.youtube.com/watch?v=irYgCv2WY-U) |
 | [김성범 교수·DMQA](https://www.youtube.com/channel/UCueLU1pCvFlM8Y8sth7a6RQ) · 한국어 | 고려대 김성범 교수·DMQA 연구실 | 확률·머신러닝 개념 강의와 연구실의 논문 세미나를 함께 제공해 기초에서 연구 주제로 이어집니다. | [DMQA 공개 강의 목록](https://dmqa.korea.ac.kr/research/open_courses) · 기초 통계·선형대수 이후; 논문 세미나는 머신러닝 기초 권장. |
 | [Sung Kim — 모두를 위한 머신러닝·딥러닝](https://www.youtube.com/channel/UCML9R2ol-l0Ab9OXoNnr7Lw) · 한국어 | 김성훈의 머신러닝 강의 채널 | 회귀·분류에서 역전파·CNN·RNN으로 이어지는 개념 강의를 코드 실습과 함께 공부할 수 있습니다. | [공식 강의·슬라이드](https://hunkim.github.io/ml/) · [TF2 실습 코드](https://github.com/hunkim/DeepLearningZeroToAll/tree/master/tf2) · Python·기초 미분 이후. |
+| [서울대학교 산업공학과 DSBA 연구실](https://www.youtube.com/@dsba2979) · 한국어 중심 | 서울대 산업공학과 DSBA 연구실 | 다변량 분석·머신러닝·텍스트 분석의 대학 강의와 시계열·이상 탐지·설명가능 AI의 논문 세미나를 제공합니다. | [다변량 데이터 분석 강의](https://www.youtube.com/playlist?list=PLetSlH8YjIfWKLpMp-r6enJvnk6L93wz2) · 확률·선형대수 이후. 논문 세미나는 머신러닝·딥러닝 기초 이후. |
 
 ## 디지털 논리·알고리즘·구현
 
