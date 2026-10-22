@@ -30,9 +30,9 @@
 | --- | --- | --- | --- |
 | [bRd 3D](https://www.youtube.com/@bRd3D) · 한국어 | 전필국 · [제작자 인터뷰](https://science.ytn.co.kr/program/view.php?mcd=0082&key=202310051611576322) | CPU·발전소·반도체·모터 내부의 구조와 작동을 3D 영상으로 설명합니다. | [CPU는 어떻게 작동할까?](https://www.youtube.com/watch?v=Fg00LN30Ezg) |
 | [과학쿠키 [Science Cookie]](https://www.youtube.com/@snceckie) · 한국어 | 개인 과학 해설·취재 채널 | 실험과 연구 현장을 찾아 물리 개념의 발견 과정과 과학사를 풀어냅니다. | [에너지와 열역학의 출발점](https://www.youtube.com/watch?v=HfVelptI29o) |
-| [이과형](https://www.youtube.com/@%EC%9D%B4%EA%B3%BC%ED%98%95) · 한국어 | 개인 과학 설명 채널 | 일상의 질문을 물리학과 연결해 설명하는 과학 입문 채널입니다. | 채널의 물리·과학 설명 영상 목록 |
+| [이과형](https://www.youtube.com/channel/UCj-MI9DaXgAz412O9ybQ9WA) · 한국어 | 개인 과학 설명 채널 | 일상의 질문을 물리학과 연결해 설명하는 과학 입문 채널입니다. | 채널의 물리·과학 설명 영상 목록 |
 | [과학드림 [Science Dream]](https://www.youtube.com/@ScienceDream) · 한국어 | 개인 과학 설명 채널 | 생물의 진화·생태와 지구과학을 구체적인 생물·환경 사례로 설명합니다. | 채널의 생물·진화 설명 영상 목록 |
-| [사물궁이 잡학지식](https://www.youtube.com/@%EC%82%AC%EB%AC%BC%EA%B6%81%EC%9D%B4) · 한국어 | 개인·전문가 협업형 해설 채널 | 일상의 궁금증을 애니메이션으로 풀이하며, 선택한 영상의 설명란에서 원고 작성자와 참고문헌을 확인할 수 있습니다. | [눈과 모니터 주사율](https://www.youtube.com/watch?v=cdb-jRmQhSg) |
+| [사물궁이 잡학지식](https://www.youtube.com/@%EC%82%AC%EB%AC%BC%EA%B6%81%EC%9D%B4) · 한국어 | 개인·전문가 협업형 해설 채널 | 일상의 궁금증을 애니메이션과 전문가 해설로 풀어냅니다. | [눈과 모니터 주사율](https://www.youtube.com/watch?v=cdb-jRmQhSg) |
 | [북툰](https://www.youtube.com/@book_toon) · 한국어 | 개인 과학책 해설 채널 | 과학책을 바탕으로 우주·생명·과학사를 영상으로 풀어내며, 관련 도서를 찾아 읽는 계기로 삼기 좋습니다. | 채널 소개의 참고 도서 목록 |
 | [지식인미나니](https://www.youtube.com/@iamminani) · 한국어 | 개인 과학 현장 취재 채널 | 연구시설·실험실·우주 관련 현장을 방문해 연구 장비와 과학기술의 실제 모습을 소개합니다. | 채널의 연구시설·현장 취재 영상 목록 |
 
@@ -59,7 +59,6 @@
 ## 함께 읽을 자료
 
 - [3Blue1Brown 제작자 소개](https://www.3blue1brown.com/about/): 시각적 수학 설명과 한국어 더빙 팀을 소개합니다.
-- [생활코딩 수업 소개](https://opentutorials.org/course/1): 입문 수업의 글과 영상을 순서대로 볼 수 있습니다.
 - [공돌이의 수학정리노트 소스코드](https://github.com/angeloyeo/gongdols): 영상과 글에 연결된 공개 코드를 확인할 수 있습니다.
 
 확인 기준: 2026-10-22~23.

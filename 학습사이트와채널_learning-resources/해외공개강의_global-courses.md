@@ -18,12 +18,17 @@
 | [OpenLearn — 영국 Open University의 무료 학습](https://www.open.edu/openlearn/) | The Open University / 영어 | 짧은 글·무료 강좌·활동 자료를 주제와 학습 수준에 맞춰 찾아볼 수 있습니다. | 교양·입문부터 전공 준비 · [무료 강좌·주제 선택](https://www.open.edu/openlearn/) |
 | [Oxford Podcasts — 옥스퍼드 공개 강연과 대화](https://podcasts.ox.ac.uk/series) | University of Oxford / 영어 중심 | 대학 연구자의 강연과 연구 주제별 대화를 시리즈로 찾아 들을 수 있습니다. | 관심 주제의 배경을 넓히는 독자 · [시리즈 검색](https://podcasts.ox.ac.uk/series) |
 
+## 논문 작성·연구 발표
+
+| 자료 | 운영 주체·언어 | 다루는 내용 | 시작 지점 |
+| --- | --- | --- | --- |
+| [MIT EECS CommKit](https://mitcommlab.mit.edu/eecs/use-the-commkit/) | MIT EECS Communication Lab / 영어 | 전기전자·컴퓨터 분야의 논문·초록·연구계획서·그림·발표를 실제 사례와 함께 설명합니다. | [논문 구성](https://mitcommlab.mit.edu/eecs/commkit/journal-or-conference-paper/) → [초록](https://mitcommlab.mit.edu/eecs/commkit/abstract/), [연구계획서](https://mitcommlab.mit.edu/eecs/commkit/thesis-proposal/) · [그림](https://mitcommlab.mit.edu/eecs/commkit/figure-design/)과 [슬라이드](https://mitcommlab.mit.edu/eecs/commkit/slideshow/) 작성 |
+
 ## 과목을 고를 때
 
 - 선형대수와 회로 기초는 MIT OCW의 과목별 영상·문제·시험을 함께 사용하시면 좋습니다. 과목마다 공개된 자료 종류는 다릅니다.
 - Python만 처음 배우려면 CS50P, C와 메모리·자료구조까지 연결하려면 CS50x에서 시작하실 수 있습니다.
-- CS231n의 2026년 영상은 재학생용으로 안내됩니다. 위 링크는 별도로 공개된 2025년 영상이며, 현재 학기와 과제 구성이 같다고 가정하지 않습니다.
-- Stanford SEE는 새 과목을 추가하지 않는 아카이브입니다. 오래된 강의의 실습 프로그램·설치 방법은 현재 버전과 대조하셔야 합니다.
-- 강의 열람, 대학 학점, 자동 채점, 수료증은 서로 다른 서비스입니다. 공개 자료에 접근할 수 있다는 이유만으로 학점이나 인증이 제공되는 것은 아닙니다.
+- 컴퓨터비전은 CS231n의 공개 강의노트와 위에 연결한 2025년 영상으로 공부하실 수 있습니다.
+- Stanford SEE의 강의는 과목별 영상과 자료를 보관한 아카이브입니다.
 
-확인 기준일: 2026-10-22. 기관의 공개 안내와 과목 목록을 확인했으며, 모든 과목의 영상을 시청하거나 실습을 실행한 것은 아닙니다.
+확인 기준: 2026-10-22~23.
