@@ -1,0 +1,35 @@
+{
+  "id": 1830,
+  "title": "브라이언의 고민",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:14.699Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/1830",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:50:18",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    },
+    {
+      "submitted_at": "2026-10-19 15:02:49",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "a52c5f403dd88035a9a0d21d1c17336e4c0baa02a9f27628a33a09108537a9a5",
+  "archive_execution_body_sha256": "9805567bf6d298f3c9c2c485ce18ead32db3aa75a27fb3c8b0b747255e75b81e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 181863,
+  "title": "rny_string",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:17:37.769Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181863",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:17:26",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "43e307c06631f155d40ac092e424e8b86350b7c3c16caa964c7c4bc5e0ae3f9e",
+  "archive_execution_body_sha256": "2868c47eae3e550830f59b942ce6d3190d0867558bd217942f918125b54975bb",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

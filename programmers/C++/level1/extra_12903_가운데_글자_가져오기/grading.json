@@ -1,0 +1,29 @@
+{
+  "id": 12903,
+  "title": "가운데 글자 가져오기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:51.857Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12903",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:26:17",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "33c8c5edafedce77850a56191b9bd22eccc2dd3aadbceb05f1a3218537313954",
+  "archive_execution_body_sha256": "43446abaf62d9f369e5081a00c54099735e2c71181eb287cb5a4ce545fd26877",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

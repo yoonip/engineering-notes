@@ -1,0 +1,29 @@
+{
+  "id": 12982,
+  "title": "예산",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:19.661Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12982",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:18:21",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "201693e0509f2706b106848ff4119800f618941313d73db0c9a6ef9884a0713f",
+  "archive_execution_body_sha256": "425632ca659e43e68beb5019a26b97e1dfe8aab1af7c2c858ac3778bde92a14c",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

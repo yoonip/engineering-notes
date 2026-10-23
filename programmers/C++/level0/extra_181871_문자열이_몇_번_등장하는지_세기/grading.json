@@ -1,0 +1,29 @@
+{
+  "id": 181871,
+  "title": "문자열이 몇 번 등장하는지 세기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:24.363Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181871",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:10:56",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "397073c9a3702c9d18d9142c043de5f49f9bafb44d018d42bd5d925afa5c08d0",
+  "archive_execution_body_sha256": "f0f5ad710021a0b59da7a811f8024993da94469ceb99d296fb38151e87da58f3",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 138477,
+  "title": "명예의 전당 (1)",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:41.218Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/138477",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:49:32",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "6d14707f04418433a459a5a271f1982916c822a2adf845f9128756fcbc74c227",
+  "archive_execution_body_sha256": "03761d00c8d9e6de4483c22b058e3b64344482108a366a03f3cc6880eed434b9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

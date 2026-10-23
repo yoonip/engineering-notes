@@ -1,0 +1,54 @@
+# 피자 나눠 먹기 (2)
+
+[레벨 0 목록](../README.md) · [C 전체 목록](../../README.md) · [프로그래머스](../../../README.md)
+
+[공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/120815) · Level 0 · C
+
+## 풀이
+
+사람 수 n과 한 판의 조각 수 6의 최대공약수를 유클리드 호제법으로 구하기. 총 조각 수가 n과 6의 최소공배수여야 하므로 필요한 피자 수는 n / 최대공약수임
+
+## 코드와 줄별 설명
+
+[코드 파일](solution.c) · [채점 기록](grading.json)
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <ctype.h>
+#include <limits.h>
+
+int solution(int n) {
+    int a = n, b = 6;
+    while (b) { int r = a % b; a = b; b = r; }
+    return n / a;
+}
+
+// 전체 코드 줄별 설명
+// #include <stdio.h>  // scanf·printf 등 표준 입출력
+// #include <stdlib.h>  // 메모리 할당·정수 변환·정렬 함수
+// #include <string.h>  // 문자열 길이·복사·비교 함수
+// #include <stdbool.h>  // C에서 bool·true·false 사용
+// #include <ctype.h>  // 문자 검사와 대소문자 변환
+// #include <limits.h>  // 정수형 최솟값·최댓값 상수
+//
+// int solution(int n) {  // 피자 나눠 먹기 (2) 풀이 시작
+//     int a = n, b = 6;  // 최대공약수를 구할 두 정수 a와 b를 사람 수 n과 한 판의 조각 수 6으로 초기화
+//     while (b) { int r = a % b; a = b; b = r; }  // b가 0이 아닌 동안 나머지 r = a % b를 구하고, a를 이전 b로, b를 r로 바꾸기. 반복이 끝나면 a가 n과 6의 최대공약수임
+//     return n / a;  // 최소공배수 n * 6 / a를 한 판의 조각 수 6으로 나눈 값인 n / a를 반환
+// }  // 블록 끝
+
+// 풀이 요약
+// 사람 수 n과 한 판의 조각 수 6의 최대공약수를 유클리드 호제법으로 구하기. 총 조각 수가 n과 6의 최소공배수여야 하므로 필요한 피자 수는 n / 최대공약수임
+```
+
+## 채점 기록
+
+- 언어: C
+- 결과: 정답 100/100
+- 제출 기록: 2026-10-24 07:34:10
+- 확인 날짜: 2026-10-24
+
+[기존 풀이 기록](../../../level0/extra_120815_%ED%94%BC%EC%9E%90_%EB%82%98%EB%88%A0_%EB%A8%B9%EA%B8%B0_%282%29/README.md)

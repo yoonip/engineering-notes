@@ -1,0 +1,29 @@
+{
+  "id": 43236,
+  "title": "징검다리",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:04.578Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/43236",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:48:15",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "26daabfb80d8846a459d74df421352f6678070dfd8c1ebd53a40c73746e1174b",
+  "archive_execution_body_sha256": "a90f6dbc7e8e20d8e22a4e1b4fc7ca96da03a7b0293e37c2b3a13cc6271d2c05",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

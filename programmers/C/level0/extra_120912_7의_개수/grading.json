@@ -1,0 +1,29 @@
+{
+  "id": 120912,
+  "title": "7의 개수",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:24:57.747Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120912",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:24:54",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "a00211e508edda4b9a17047661070804e4dec30e6fa2e6458bafb7e6c52c5dc0",
+  "archive_execution_body_sha256": "d9b9f2548aba66a0152db164b022b2a8a0a799283969950a6d8be263ee80133a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

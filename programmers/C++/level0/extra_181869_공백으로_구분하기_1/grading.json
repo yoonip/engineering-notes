@@ -1,0 +1,29 @@
+{
+  "id": 181869,
+  "title": "공백으로 구분하기 1",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:24.810Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181869",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:12:04",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "85b9c4f090e0cd110983b3ae0e24a86db1a87807b478b72bf20ba8dd191f32ea",
+  "archive_execution_body_sha256": "c4b13508a8e083e3b52cd3cdc3fae5ba11b239ef2ac176aff84f780238f9db9e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

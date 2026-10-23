@@ -1,0 +1,29 @@
+{
+  "id": 120893,
+  "title": "대문자와 소문자",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:57.128Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120893",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:45:41",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "94ce8ffb8ed8541f9f2059e961009eac89b86e6696f02c85557cca4cc22d8d5c",
+  "archive_execution_body_sha256": "516de87811deee0cabf0ab4955a9c9166372b674e6a8d86c833e9a8ec31913b9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

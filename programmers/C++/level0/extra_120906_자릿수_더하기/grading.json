@@ -1,0 +1,29 @@
+{
+  "id": 120906,
+  "title": "자릿수 더하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:52.445Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120906",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:37:29",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "6b580e9ea160cb75da3350ac610a097bee3df08a47526c508f518a5526923d7e",
+  "archive_execution_body_sha256": "f026c0ac18c78fa8dee4ee0f5822e5c64b466423f1721928cd25997796c1d95e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

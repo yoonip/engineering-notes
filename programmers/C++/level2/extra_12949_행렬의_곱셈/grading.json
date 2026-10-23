@@ -1,0 +1,29 @@
+{
+  "id": 12949,
+  "title": "행렬의 곱셈",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:23.171Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12949",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:35:49",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "a8dcbee11544022adc01d8c012aa4aacc1b9081876a437b0aab731d30fa94a75",
+  "archive_execution_body_sha256": "0cb359605c88bf7674e32690c8396e498a7db69c168ef4bb315fa523a3b5b7bb",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

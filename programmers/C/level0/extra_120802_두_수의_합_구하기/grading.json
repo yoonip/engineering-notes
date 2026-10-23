@@ -1,0 +1,29 @@
+{
+  "id": 120802,
+  "title": "두 수의 합 구하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:06:27.018Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120802",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:55:44",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "6c9512f2a6fffd17a0b0147c0387f601960e35294139875270a825b950bc59f4",
+  "archive_execution_body_sha256": "f518b9e5c1072e32cdde276ebdf7e4632a0fb5cedc21ffecd3b4b3efd8365aa4",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 181940,
+  "title": "문자열 곱하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:46.283Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181940",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:28:07",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "3ec268175b368ba8f39d4abafff077c4bc442048150bf0ec24a3d4f023377a88",
+  "archive_execution_body_sha256": "bdee582d956bcb4c3e3ccf00d3e3814ee005e2e5eef62bfbf04ba93b13784d15",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

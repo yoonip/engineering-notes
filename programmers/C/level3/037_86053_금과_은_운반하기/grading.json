@@ -1,0 +1,29 @@
+{
+  "id": 86053,
+  "title": "금과 은 운반하기",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:12.046Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/86053",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:33:00",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "dcf3e815c920abd876f576b614e2e022fa31e4384cbc2c332794e9258b61ecf0",
+  "archive_execution_body_sha256": "046a2641ae0d74372109b988d3b5e61ea3917ba938cfad808d69542b35a38cab",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

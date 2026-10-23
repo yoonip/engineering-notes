@@ -1,0 +1,29 @@
+{
+  "id": 82612,
+  "title": "부족한 금액 계산하기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:00.196Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/82612",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:13:36",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "db93c8cfd716b2c7d1255a593049589fe7ebd691c37ae441bfa9556bdd5df219",
+  "archive_execution_body_sha256": "76e27282823dbf4a0ae09b6a5a6a40b32cc96101ca2a411528c6e31adba5cbd5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

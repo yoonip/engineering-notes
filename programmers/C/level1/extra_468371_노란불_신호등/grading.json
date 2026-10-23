@@ -1,0 +1,29 @@
+{
+  "id": 468371,
+  "title": "노란불 신호등",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:20.310Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/468371",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:42:52",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "a3fb2379437f6a6a2baa4d46ff216b89568a279a5a6b8ff0aa218c1338272e8b",
+  "archive_execution_body_sha256": "bbcf0d96ab78a07b60469015acdb4766f681f124dd70461a62f23bd77ab0fdea",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

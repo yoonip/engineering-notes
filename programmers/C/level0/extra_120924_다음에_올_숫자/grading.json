@@ -1,0 +1,29 @@
+{
+  "id": 120924,
+  "title": "다음에 올 숫자",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:26.450Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120924",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:31:18",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "77e929e69f69f241c370edd26acabbb3d71e76c182b21f521110f3c841944784",
+  "archive_execution_body_sha256": "c46f3141fc477cf4d3d962d54f1c1f79785157fec321ba0877f80d47f27d5a8b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

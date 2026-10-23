@@ -1,0 +1,29 @@
+{
+  "id": 340199,
+  "title": "[PCCE 기출문제] 9번 / 지폐 접기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:24.196Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/340199",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:03:13",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "b9ed2106bbd2d426b4f3b6e0a606f353b95d740b058ca5d70593014bcee1d05d",
+  "archive_execution_body_sha256": "d6a2f73c6d90e34664c4dbfd8a1c1df6040145de168d08a14a6e3ece99f1d598",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

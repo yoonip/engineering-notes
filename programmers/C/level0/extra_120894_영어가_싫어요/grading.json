@@ -1,0 +1,29 @@
+{
+  "id": 120894,
+  "title": "영어가 싫어요",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:27:29.966Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120894",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:27:23",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "70f45b1e6165eb3667630f75b0b4d2aa3bc5a3e7a14ef4812facce42a77e0ba0",
+  "archive_execution_body_sha256": "ae50fd601cfb8b702af42e58ce00821701483f80f1bcfc0ec0fe7d279c115231",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

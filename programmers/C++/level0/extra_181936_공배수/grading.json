@@ -1,0 +1,29 @@
+{
+  "id": 181936,
+  "title": "공배수",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:10.930Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181936",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:34:07",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "20d332f27c6c5bfc8f4b586004ba62a722cc68dc4ce63bafec72cb071fc20199",
+  "archive_execution_body_sha256": "2b0ffae22682d43cc511be3b1b061f6c4e710556d105fac998ace815e18ffde2",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

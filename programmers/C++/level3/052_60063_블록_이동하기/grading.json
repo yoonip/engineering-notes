@@ -1,0 +1,29 @@
+{
+  "id": 60063,
+  "title": "블록 이동하기",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:47.412Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/60063",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:41:36",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "3a766226bf595f94670e4ab3da930db2b1b4409189dcc4e869bca67f941268af",
+  "archive_execution_body_sha256": "b30097ac23937ab076849977066462e7a96e6742a48e9cda21343db07b614dbd",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 181942,
+  "title": "문자열 섞기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:43.331Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181942",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:32:32",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "93720808f2c90b414dc907e084a7baa06569da7b493d4fe109ef908bc5a87e21",
+  "archive_execution_body_sha256": "47a211390cef70c800a80bbd55d8429229fc19bdf0a211ec383c2a19e46fd372",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

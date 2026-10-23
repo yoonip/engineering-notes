@@ -1,0 +1,29 @@
+{
+  "id": 70130,
+  "title": "스타 수열",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:33.958Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/70130",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:39:40",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "4db5afb63a7858b3deccc3a0c67fb1c010a2816d8fc0bac1b97304f58b1ffa69",
+  "archive_execution_body_sha256": "13fded12a8dda10b287253c39182eb2f50d5e4f24c00862b43d00a3225f38671",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

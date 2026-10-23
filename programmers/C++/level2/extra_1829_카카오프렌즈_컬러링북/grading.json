@@ -1,0 +1,35 @@
+{
+  "id": 1829,
+  "title": "카카오프렌즈 컬러링북",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:39.527Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/1829",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:47:58",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    },
+    {
+      "submitted_at": "2026-10-19 15:51:48",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "7afaa2478fb212eef33752459deb5f8d9cf7791bd6bfd6ae4868869f1511cf27",
+  "archive_execution_body_sha256": "93103ed486491916068ded0b4447bdd731f004c97232e4a2511f25c1349aa8d5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

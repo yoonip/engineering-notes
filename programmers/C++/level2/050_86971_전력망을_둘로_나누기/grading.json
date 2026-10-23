@@ -1,0 +1,29 @@
+{
+  "id": 86971,
+  "title": "전력망을 둘로 나누기",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:14.244Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/86971",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:38:32",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "e59b56f3c4785dcb238daca2e77b588d60d3b3898f6b3774d33e09251e10260e",
+  "archive_execution_body_sha256": "09bfce65752ad555fef756d91500710ef6a1ae5984ef3971a821ff6d34850004",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 133500,
+  "title": "등대",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:34.436Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/133500",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:50:29",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "72ff6a98e46ca675b5ea58a5cce4e761e22600f2d8810619ada0b4e74847f22d",
+  "archive_execution_body_sha256": "4e9088fed66a0becf4643e30bfb91b36b9b8af969af5e4a4f9f595bb326dbe33",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

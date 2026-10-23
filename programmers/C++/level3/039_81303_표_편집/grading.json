@@ -1,0 +1,29 @@
+{
+  "id": 81303,
+  "title": "표 편집",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:16.856Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/81303",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:54:33",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "e5c2e412900a707b7d46466b2b1a31057ddf395076c149098efa8bef9ea4f760",
+  "archive_execution_body_sha256": "05a19cd8fbf8e14af723ccaf7ca9cd58288e08a61840cfdf403fcd3982b7fde4",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 1832,
+  "title": "보행자 천국",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:12.967Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/1832",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:50:10",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    },
+    {
+      "submitted_at": "2026-10-19 15:00:17",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "46b4dc7dc9b83ff8ae85e92b4e22b48f0a0c9dfdc4c64f396aeda0dc3ac46dbe",
+  "archive_execution_body_sha256": "43b1ae49e232b5c66d8dbdae6e8efd665bf2f6c03d8a54ab5111a0e6961073b9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

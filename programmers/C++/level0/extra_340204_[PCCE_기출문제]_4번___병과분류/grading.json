@@ -1,0 +1,31 @@
+{
+  "id": 340204,
+  "title": "[PCCE 기출문제] 4번 / 병과분류",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:00.308Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/340204",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:49:35",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "152f62fc231e6bec62a6c07139ef17fde552e9e85467d43290863bedf55ea83a",
+  "archive_execution_body_sha256": "97e31d621075aa07e583a34057a3f474f0b1d8a80ff05e8ff74867b24bd3e147",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "blanks.json"
+  ]
+}

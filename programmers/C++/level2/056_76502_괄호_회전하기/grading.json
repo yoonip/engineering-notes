@@ -1,0 +1,29 @@
+{
+  "id": 76502,
+  "title": "괄호 회전하기",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:32.720Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/76502",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:40:05",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "e66feb07f3233e5a6ceb91571f64bac7bf1dcf3662039dbc74a1c10dcd4c0c51",
+  "archive_execution_body_sha256": "1099845d1a71d1325f48addbc768ddc716fb04470bc0f7e21fcbaf00930ea113",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

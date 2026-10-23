@@ -1,0 +1,29 @@
+{
+  "id": 181932,
+  "title": "코드 처리하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:15.331Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181932",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:35:24",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "cc332199535df061f425e3d93ff211873a19fb48532804ec35799f35450c53ec",
+  "archive_execution_body_sha256": "059e6d9f6cd7fbab9a04e315cdeaa6a99d439bfee24d18819d94b3f7e54de2ea",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

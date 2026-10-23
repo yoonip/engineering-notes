@@ -1,0 +1,29 @@
+{
+  "id": 132266,
+  "title": "부대복귀",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:36.296Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/132266",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:50:44",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "7c60d81d9117b38cf0ae4a190c42c5fe1cfe3bfc13799f33cb2ae704e18d57fb",
+  "archive_execution_body_sha256": "78613037eca5601f15bbbc0517b7e97a4efd3224c5ea0f68b434aca1376c2e2c",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

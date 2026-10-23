@@ -1,0 +1,29 @@
+{
+  "id": 87389,
+  "title": "나머지가 1이 되는 수 찾기",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:58.462Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/87389",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:52:38",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "ffa79e6b0bc66e4e2d7f85b8036343f6af3b1c1317f79988dd28f491fee0840b",
+  "archive_execution_body_sha256": "9ed53c01061f29da1e7fcf0c20975b124489579533b57a604853e4e2d236b2b1",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

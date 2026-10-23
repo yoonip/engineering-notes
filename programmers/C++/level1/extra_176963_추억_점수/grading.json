@@ -1,0 +1,29 @@
+{
+  "id": 176963,
+  "title": "추억 점수",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:31.214Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/176963",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:05:48",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "94cb9e0bdf2b37a04404f04d7c4c6df792355cbe0d01e0832709f5623c3c5f04",
+  "archive_execution_body_sha256": "a5c34a920b44bdcdfc1903edbab92fc9cce4c47d13c64ebad57e988402a1b404",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

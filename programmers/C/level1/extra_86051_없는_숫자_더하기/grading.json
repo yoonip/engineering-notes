@@ -1,0 +1,29 @@
+{
+  "id": 86051,
+  "title": "없는 숫자 더하기",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:00.207Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/86051",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:53:15",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "624f1e2ff686c31ac1905ea79f6628575fa6d0e70134a5b0935caf78e2ab91eb",
+  "archive_execution_body_sha256": "b9b74c35fac7f135d7c2520437ca1f4f93d73fc791a0e36ef0afe920d859337c",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

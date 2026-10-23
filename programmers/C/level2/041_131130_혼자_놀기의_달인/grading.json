@@ -1,0 +1,29 @@
+{
+  "id": 131130,
+  "title": "혼자 놀기의 달인",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:50.216Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/131130",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:16:52",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "1316b09627ab6cf98d9702dda44f2cbfbf470f160b45fb3466fa23cf3625ae7e",
+  "archive_execution_body_sha256": "92623df747d801f30908f7904cd6fd0c27f28f71a8e7a6e1e37fc1cf020adb25",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

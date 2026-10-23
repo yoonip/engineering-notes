@@ -1,0 +1,29 @@
+{
+  "id": 120923,
+  "title": "연속된 수의 합",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:27.050Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120923",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:31:41",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "937a4cb6771cbab0f4c300d153cfdca8de8bb400b43aa1b8385890f8acb2733b",
+  "archive_execution_body_sha256": "d7ced67eff1f93a4d26cf77c6ef2035e71efee50b1946f26766f534ffbc7b2ef",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

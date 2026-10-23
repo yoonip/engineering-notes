@@ -1,0 +1,29 @@
+{
+  "id": 181835,
+  "title": "조건에 맞게 수열 변환하기 3",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:22.003Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181835",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:26:00",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "5f3f05b9decb7dda910d2f679f718c2f0a64673ee7e0804cbab9c086ba83a3c7",
+  "archive_execution_body_sha256": "a4ef8bae904b3e4b671effd26a1b5a6103ca8f9adf7e59e5c6c7cf75802bb644",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

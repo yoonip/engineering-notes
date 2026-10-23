@@ -1,0 +1,29 @@
+{
+  "id": 76501,
+  "title": "음양 더하기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:03.807Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/76501",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:14:25",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "b7c2897cc8c700e763110e74347079a13b5eb91abe04ebc8857d5febbb5121ae",
+  "archive_execution_body_sha256": "2b2b2b52f689d607bd9596afe03826343d409465c464573376dc9babf828726e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

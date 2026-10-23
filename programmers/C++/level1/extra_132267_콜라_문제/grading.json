@@ -1,0 +1,29 @@
+{
+  "id": 132267,
+  "title": "콜라 문제",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:48.660Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/132267",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:11:27",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "6a30438d1158ab2f0ca7d7f779da1a7ce2cd16170ec620127e4471ddc3bd9fa4",
+  "archive_execution_body_sha256": "ccc4e102bce6fd16e98c5d9ab6e2a8f902318bb7222171012b0251ecc72d1201",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 120829,
+  "title": "각도기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:06:03.345Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120829",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:51:09",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "be09f72402279012ae53c40561902f5cce698f9267a3f5c0e5e91101c283f15e",
+  "archive_execution_body_sha256": "694e67aed4567e5b97fa4838cac7538c17d11a31b6859ea68e48826d8622a026",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

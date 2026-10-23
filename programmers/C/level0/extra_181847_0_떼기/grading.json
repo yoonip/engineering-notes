@@ -1,0 +1,29 @@
+{
+  "id": 181847,
+  "title": "0 떼기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:20:19.418Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181847",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:20:12",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "3d3cd48d7334990b1eb4768fdb687ab7016e7c6004931585fa44b04a7bae17a8",
+  "archive_execution_body_sha256": "ee802597cc294e217b798d03a42c07593a730381f5b7d5625f5a158ee54673fd",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

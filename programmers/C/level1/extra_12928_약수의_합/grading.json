@@ -1,0 +1,29 @@
+{
+  "id": 12928,
+  "title": "약수의 합",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:41.339Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12928",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:58:05",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "df57cc2c8133458cb1d5f4137cd549fdb2c1624ea21b9543f63756f787953dad",
+  "archive_execution_body_sha256": "cdbc1246fcbae766e506799baf500bef2978190a9cc8bb209c392e289bf29f3f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

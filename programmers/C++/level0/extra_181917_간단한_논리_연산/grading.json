@@ -1,0 +1,29 @@
+{
+  "id": 181917,
+  "title": "간단한 논리 연산",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:39.647Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181917",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:47:17",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "9e0ea06c88a81ade9932aedd74b74a69b55ab00db94eba266e52ff0b6bada55a",
+  "archive_execution_body_sha256": "317b0ea363f029b15e9992550d0a25f7075a2adaaeb95fd7d47e285c1e8bfe45",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

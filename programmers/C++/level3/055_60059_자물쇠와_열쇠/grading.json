@@ -1,0 +1,29 @@
+{
+  "id": 60059,
+  "title": "자물쇠와 열쇠",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:52.479Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/60059",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:42:23",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "83f5cf57e736c592d9981fbc87d6a2822936d05eada4cd43db0b8ce69a8dbb27",
+  "archive_execution_body_sha256": "95aad0f18dd61cc2c230c4b835b0e07e1f5d05d742e037b56ab9424a24f783a8",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

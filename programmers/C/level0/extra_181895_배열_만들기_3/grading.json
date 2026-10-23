@@ -1,0 +1,29 @@
+{
+  "id": 181895,
+  "title": "배열 만들기 3",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:54.048Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181895",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:04:10",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "5700794afd588d66325f2d65ff35ca6c642fa441f03f52ba31e1bf1d3bc97d90",
+  "archive_execution_body_sha256": "c7c0457d06c2fd53cb9fc0abf9876b2991ca34dc38784d2c9781f9e66de1e2f9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

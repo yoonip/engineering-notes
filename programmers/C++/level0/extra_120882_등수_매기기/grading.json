@@ -1,0 +1,29 @@
+{
+  "id": 120882,
+  "title": "등수 매기기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:04.870Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120882",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:50:31",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "705a29c9b9a68afbcc3df1cd6351a1a67b1f745a7ff5697fe808c2a788187b9e",
+  "archive_execution_body_sha256": "abbce721361b1adb184813d379750afee0fe57b193f44bd7cec9f1e3caffa7f0",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

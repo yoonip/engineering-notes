@@ -1,0 +1,29 @@
+{
+  "id": 181916,
+  "title": "주사위 게임 3",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:42.343Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181916",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:50:30",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "c87730a5a088dfd56f331d9e4a66e606c0f070c28484bb59824c009fd8e80b5f",
+  "archive_execution_body_sha256": "5febe7eeed7a80e0cfd0c1fd747fc8de17c1205973c62bde1436c70eebd82a6c",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

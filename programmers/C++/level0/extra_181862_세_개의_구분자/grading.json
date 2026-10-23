@@ -1,0 +1,29 @@
+{
+  "id": 181862,
+  "title": "세 개의 구분자",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:59.735Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181862",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:13:43",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "059d0044e2726ff65374abcc37afc023ab692916e15623f7922f47cc91e77861",
+  "archive_execution_body_sha256": "c54d9ecd228c5bb4c88ee8f369b19e569978bd88390d8f417e6a80876fff5652",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

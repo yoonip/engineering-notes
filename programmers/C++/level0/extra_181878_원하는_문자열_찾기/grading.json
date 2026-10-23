@@ -1,0 +1,29 @@
+{
+  "id": 181878,
+  "title": "원하는 문자열 찾기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:19.155Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181878",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:09:19",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "d2ba6532e77f605b9c21c8dd2974817595b1531694e7b6badb2f7f35a9456dd8",
+  "archive_execution_body_sha256": "70f5cc6f750a7e22213f7088e5373187f8eed38efdb660128760c42ca234a350",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

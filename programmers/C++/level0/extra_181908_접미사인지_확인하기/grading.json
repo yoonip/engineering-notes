@@ -1,0 +1,29 @@
+{
+  "id": 181908,
+  "title": "접미사인지 확인하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:47.133Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181908",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:57:52",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "b267ebbf21238cfdba1626ed120a9f9aaf3f074663b677e0de055bc5d2531d1c",
+  "archive_execution_body_sha256": "94eb02bdc26623f76e027bf311d288ba833934a62d35f3070287a8095e38c65b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

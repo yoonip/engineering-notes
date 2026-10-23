@@ -1,0 +1,29 @@
+{
+  "id": 340212,
+  "title": "[PCCP 기출문제] 2번 / 퍼즐 게임 챌린지",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:25.364Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/340212",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:26:28",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "71c1e78b02f849e6499e7fa3118eff2ab2130d4837ed7af01b8befcce8ef3d38",
+  "archive_execution_body_sha256": "31c04320b8eb815c9a045921b9d059d42b8721872d6c9374fe45556231537be4",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

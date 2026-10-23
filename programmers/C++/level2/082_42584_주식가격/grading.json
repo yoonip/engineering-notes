@@ -1,0 +1,29 @@
+{
+  "id": 42584,
+  "title": "주식가격",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:01.497Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42584",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:25:08",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "645d4739503fa0ebac174aaeb92c5773eaa20324ccdc9fd386957c0e34f2422d",
+  "archive_execution_body_sha256": "882f603ff684c885265739f0aad3f38fec926845dccf16760819f5505fb3ffea",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

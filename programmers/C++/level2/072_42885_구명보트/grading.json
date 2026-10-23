@@ -1,0 +1,29 @@
+{
+  "id": 42885,
+  "title": "구명보트",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:20.785Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42885",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:20:54",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "e9eedb7eb4e994b98475332a33347f8b1f49c0db61cae9907f971a78084869bf",
+  "archive_execution_body_sha256": "b7bf02ee4e88927bf1bdaa1483523dd435006d50baf91a649daac2a4592f0a70",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

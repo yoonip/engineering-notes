@@ -1,0 +1,29 @@
+{
+  "id": 120896,
+  "title": "한 번만 등장한 문자",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:27:11.824Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120896",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:27:03",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "f7fdc97d0d723462df6a716371bf3ce49f0790356d519baf31c35499ec85776b",
+  "archive_execution_body_sha256": "a11d99d3d8bbd917ff51b3422fa63de23cfb374aa950a9427e4961f906bcfc27",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

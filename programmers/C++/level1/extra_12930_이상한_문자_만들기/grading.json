@@ -1,0 +1,29 @@
+{
+  "id": 12930,
+  "title": "이상한 문자 만들기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:39.979Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12930",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:22:31",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "aca9bae180616c15802c1ff56fdc9f1adee9b07130229692a3bc5bebb4d95b87",
+  "archive_execution_body_sha256": "a302c266536024d4427175df35a111f9aa4d4c5174195113306cd56a0c40fc37",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

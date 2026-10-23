@@ -1,0 +1,29 @@
+{
+  "id": 42884,
+  "title": "단속카메라",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:27.304Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42884",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:45:24",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "1829d644dd4bb704de217b7f1d696c940185cc2cf631d0b605e6153bfdf67aef",
+  "archive_execution_body_sha256": "f3b7101cbfe60ff121b4953b654557aba86c48e8c68614f38e29d576e5ceeaaa",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

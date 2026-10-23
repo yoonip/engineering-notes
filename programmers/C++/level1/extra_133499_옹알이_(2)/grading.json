@@ -1,0 +1,29 @@
+{
+  "id": 133499,
+  "title": "옹알이 (2)",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:48.660Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/133499",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:11:11",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "8bbd4d88e20dc92f0a28c28666204b82727861fc59e9d94cdcc2fee5b513fe41",
+  "archive_execution_body_sha256": "60de85be420f9db6e1ad15074f96aa6c6c9171fbb23b47a41bbaf10c9bc1639a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 150366,
+  "title": "표 병합",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:28.065Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/150366",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:29:36",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "4e0b99784bb64ce09aa8900c0574b83932dd803e4161df260541af9b49059dd5",
+  "archive_execution_body_sha256": "43bf1cbb231d71c1814264f4f124df4edfae663b1246e46b732f432d08daaeb8",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

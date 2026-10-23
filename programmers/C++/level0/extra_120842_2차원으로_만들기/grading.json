@@ -1,0 +1,29 @@
+{
+  "id": 120842,
+  "title": "2차원으로 만들기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:26.139Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120842",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:54:56",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "7e0733893528387e31d44c54ce5410f824839c23f3b2a85033292fd1aef2b242",
+  "archive_execution_body_sha256": "f1eba5edd89d3fb7c11f597d0ecb30e68c2ac2f90be609d39faeddb96518f4ab",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

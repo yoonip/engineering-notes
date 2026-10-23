@@ -1,0 +1,29 @@
+{
+  "id": 120821,
+  "title": "배열 뒤집기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:33:39.597Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120821",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:33:36",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "ec1cd7ab484af799623084c072953fd2efdbb66627dfdbc74fda61b75b2b7a38",
+  "archive_execution_body_sha256": "f6a4a8ede5a0b73ea249e8b5b43343934adf22948c72b462b532a35fc40acf81",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

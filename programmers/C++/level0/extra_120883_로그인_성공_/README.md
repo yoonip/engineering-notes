@@ -1,0 +1,66 @@
+# 로그인 성공?
+
+[레벨 0 목록](../README.md) · [C++ 전체 목록](../../README.md) · [프로그래머스](../../../README.md)
+
+[공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/120883) · Level 0 · C++
+
+## 풀이
+
+코딩 문제의 입력 데이터에서 아이디 존재 여부를 먼저 확인하고 비밀번호를 비교
+
+## 코드와 줄별 설명
+
+[코드 파일](solution.cpp) · [채점 기록](grading.json)
+
+```cpp
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include <cmath>
+#include <sstream>
+#include <climits>
+#include <cctype>
+#include <iostream>
+#include <functional>
+
+using namespace std;
+
+string solution(vector<string> id_pw, vector<vector<string>> db) {
+    for (const auto& member : db)
+        if (member[0] == id_pw[0]) return member[1] == id_pw[1] ? "login" : "wrong pw";
+    return "fail";
+}
+
+// 전체 코드 줄별 설명
+// #include <string>  // 문자열을 다룰 string
+// #include <vector>  // 길이를 늘릴 수 있는 vector
+// #include <algorithm>  // 정렬·검색·뒤집기 알고리즘
+// #include <numeric>  // accumulate·iota 등 수치 연산
+// #include <cmath>  // 제곱근 등 수학 함수
+// #include <sstream>  // 문자열을 항목별로 읽을 스트림
+// #include <climits>  // INT_MIN·INT_MAX 등 정수 범위 상수
+// #include <cctype>  // 문자 검사와 대소문자 변환
+// #include <iostream>  // cin·cout 표준 입출력
+// #include <functional>  // greater·multiplies 등 함수 객체
+//
+// using namespace std;  // 표준 라이브러리 이름의 std:: 생략
+//
+// string solution(vector<string> id_pw, vector<vector<string>> db) {  // 로그인 성공? 풀이 시작
+//     for (const auto& member : db)  // 기록된 회원 중 같은 아이디 찾기
+//         if (member[0] == id_pw[0]) return member[1] == id_pw[1] ? "login" : "wrong pw";  // if 조건이 참이면 지정한 결과를 즉시 반환하여 함수 실행을 끝
+//     return "fail";  // 일치하는 아이디가 없어서 로그인 실패
+// }  // 블록 끝
+
+// 풀이 요약
+// 코딩 문제의 입력 데이터에서 아이디 존재 여부를 먼저 확인하고 비밀번호를 비교
+```
+
+## 채점 기록
+
+- 언어: C++
+- 결과: 정답 100/100
+- 제출 기록: 2026-10-24 06:50:22
+- 확인 날짜: 2026-10-24
+
+[기존 풀이 기록](../../../level0/extra_120883_%EB%A1%9C%EA%B7%B8%EC%9D%B8_%EC%84%B1%EA%B3%B5_/README.md)

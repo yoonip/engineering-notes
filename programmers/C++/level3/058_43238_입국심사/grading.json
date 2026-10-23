@@ -1,0 +1,29 @@
+{
+  "id": 43238,
+  "title": "입국심사",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:59.609Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/43238",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:43:13",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "8ecfc8b69d97fe0c839a28eaf8936494bc136d0cd52beb7c590c19038318337d",
+  "archive_execution_body_sha256": "6e876471697bb60b8051ed76778952e0248c1eacb27d907d83ec37a1d4cac8a2",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

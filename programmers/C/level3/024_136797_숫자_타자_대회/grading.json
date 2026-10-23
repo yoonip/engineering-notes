@@ -1,0 +1,29 @@
+{
+  "id": 136797,
+  "title": "숫자 타자 대회",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:32.674Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/136797",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:30:19",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "a27736ee4887f12b982d526df8e13d287da31c1c1da1aae8386960717b6bba22",
+  "archive_execution_body_sha256": "56659a33db7037011995837cd3162a49f5a2d0e2d763edf330416cc54e3093ee",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

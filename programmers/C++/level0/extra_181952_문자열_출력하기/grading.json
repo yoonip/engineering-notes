@@ -1,0 +1,29 @@
+{
+  "id": 181952,
+  "title": "문자열 출력하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:34.176Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181952",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:31:30",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "7ce3a952b8293a99939db79dd8ad9a49e88567a7492543a9e5d30363fd24c323",
+  "archive_execution_body_sha256": "9935b9c113a3320b310082bfdd2931443c85dbff39815505e8e4aa573e6ed148",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

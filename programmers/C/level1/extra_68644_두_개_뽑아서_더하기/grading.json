@@ -1,0 +1,29 @@
+{
+  "id": 68644,
+  "title": "두 개 뽑아서 더하기",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:07.170Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/68644",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:54:58",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "4d412e498e1cd9ad04fcec932e723a0db393bdf57a78fd68541ffb9271dfdb30",
+  "archive_execution_body_sha256": "63e44b469673726e8ae8261b9f4dd2d418f7c6fd6c4d2ce0237fd5c71c596c60",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 64065,
+  "title": "튜플",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:58.039Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/64065",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:17:08",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "1dbcf70775b028f26f50f56ae0bef60c15895dc9112ed474382b31647877715d",
+  "archive_execution_body_sha256": "24bd0979397089c5391f79a58a28813f4607a785a98305b4dae721df4b0956c4",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

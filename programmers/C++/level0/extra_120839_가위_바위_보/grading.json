@@ -1,0 +1,29 @@
+{
+  "id": 120839,
+  "title": "가위 바위 보",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:28.759Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120839",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:55:39",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "bc461e38081ae0085233b68b43f022cad8468a9d362852446a2e1a4edd6100f6",
+  "archive_execution_body_sha256": "a26e0bbb65a6c54b3a776b5ffe2df1bffe9d82a877ee81353d06f61001bfbe22",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

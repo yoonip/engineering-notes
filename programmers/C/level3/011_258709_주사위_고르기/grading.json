@@ -1,0 +1,29 @@
+{
+  "id": 258709,
+  "title": "주사위 고르기",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:06.657Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/258709",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:27:13",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "e97d371d28d66be072ad8208b7433a1c011be8790e25270b2459833bd78719a2",
+  "archive_execution_body_sha256": "ffea031d32763e4c9cc85c31723ef7a3e6bfef2bf7b3733d704fecf6d85350dc",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

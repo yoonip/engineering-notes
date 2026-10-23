@@ -1,0 +1,29 @@
+{
+  "id": 181829,
+  "title": "이차원 배열 대각선 순회하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:24.522Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181829",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:29:59",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "00209fb62e95fb3e281e3b08eed1ebfec892eb064a0d6951ce084694118792c2",
+  "archive_execution_body_sha256": "1fec739eaaf58f76d89dda8d4c86dfd602419ef1f2d0f1c1f087ae813102fd44",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 12927,
+  "title": "야근 지수",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:51.498Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12927",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:48:35",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "a06762312e55d0d9ead9a79b211b16ad72ecceacc238eb3e3a1b876f0fa4c5a3",
+  "archive_execution_body_sha256": "6a76ac046b3369f3524690eeb106c97c079dfbeba1b5e20678e14773e702f085",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

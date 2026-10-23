@@ -1,0 +1,29 @@
+{
+  "id": 120911,
+  "title": "문자열 정렬하기 (2)",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:29.426Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120911",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:34:37",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "b879e41af11636cc385dada19ab3e0223d9b768533a9e98fb85bf9eb5f8cc14a",
+  "archive_execution_body_sha256": "7db1b87b2e57fc1b16cd8feea04d32d42711bf8d7b926f20b4a03160db6bdd3f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

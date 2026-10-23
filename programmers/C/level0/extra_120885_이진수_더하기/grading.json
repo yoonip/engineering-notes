@@ -1,0 +1,29 @@
+{
+  "id": 120885,
+  "title": "이진수 더하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:28:59.420Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120885",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:28:52",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "7198218d83e64bbfd0e3b25791374d296edc93e262e4cd7600cf702f8334bc26",
+  "archive_execution_body_sha256": "ac2659913c2cb5536f06222b19ced1d5f3fe16f265a1aadd79f62bbc7748fd80",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

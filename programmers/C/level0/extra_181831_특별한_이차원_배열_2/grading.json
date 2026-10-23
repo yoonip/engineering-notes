@@ -1,0 +1,29 @@
+{
+  "id": 181831,
+  "title": "특별한 이차원 배열 2",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:23:31.559Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181831",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:23:18",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "a46fe9371f509cc3a409826c70fb3e1b10c98639226d8548b3d1921a8bfbb6ae",
+  "archive_execution_body_sha256": "01a9f45cacd6c28ff8c29e8caf9d20c746053bf647009f039aaf149f6439a7c6",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

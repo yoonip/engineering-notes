@@ -1,0 +1,29 @@
+{
+  "id": 17676,
+  "title": "[1차] 추석 트래픽",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:41.315Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/17676",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:46:41",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "7a4ca45966c8eb2c7fd56bfb6c016b11adcb0e9596e978e209cfd1321349611f",
+  "archive_execution_body_sha256": "cb3157db09f18ad5f389e57f4f556b85ad2471cc7a50e2caaa73277a5134c1e0",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

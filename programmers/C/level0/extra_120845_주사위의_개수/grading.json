@@ -1,0 +1,29 @@
+{
+  "id": 120845,
+  "title": "주사위의 개수",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:26.249Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120845",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:54:09",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "4337406fa730095d6751221f4232bc06bd71ecb68d2c6c521a99b14aff9bf074",
+  "archive_execution_body_sha256": "d5ba91203b9029187e801f3f87fd8428e3e63c87d58145d1cc9de77434b47eb1",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

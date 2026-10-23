@@ -1,0 +1,29 @@
+{
+  "id": 77486,
+  "title": "다단계 칫솔 판매",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:25.953Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/77486",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:55:22",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "ea12282dcac8bf5ac73f3774c73ba5ac3523f0a5da993fdca5f46d63c46a02e1",
+  "archive_execution_body_sha256": "f699f952c2639640b31b0c6c25020681c22148a724be31aef46bdfd5edf7877a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

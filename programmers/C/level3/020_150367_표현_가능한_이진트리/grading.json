@@ -1,0 +1,29 @@
+{
+  "id": 150367,
+  "title": "표현 가능한 이진트리",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:22.802Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/150367",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:29:25",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "09c2b328861357bf7307f346573d9edc4ff619776c858cb2f58179f57705e7d6",
+  "archive_execution_body_sha256": "7b9b9ae247b61583d9c2b485e3dce6f73511037828b3d17723fb525a7a307740",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

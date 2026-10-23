@@ -1,0 +1,29 @@
+{
+  "id": 17680,
+  "title": "[1차] 캐시",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:09.777Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/17680",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:29:36",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "d4fba75a8752df007e90b263d0964771a867304007275862e9246b1703473714",
+  "archive_execution_body_sha256": "5484715335b96b9614eafe75b42e4e6cce5465ed7b9fe6d6db315ff86fdb2cfc",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

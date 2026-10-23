@@ -1,0 +1,29 @@
+{
+  "id": 389479,
+  "title": "서버 증설 횟수",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:19.351Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/389479",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:07:40",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "1b82cb955bc43b827bc714fd2567bbe4cb4b79eae10491de1f73c64402e3a73f",
+  "archive_execution_body_sha256": "945cff421e8e48006aaee187e7a2a08b6c28e6395a65b731bc3a573a071cb567",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

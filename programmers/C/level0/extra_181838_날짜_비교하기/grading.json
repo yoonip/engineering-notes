@@ -1,0 +1,29 @@
+{
+  "id": 181838,
+  "title": "날짜 비교하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:22:06.613Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181838",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:21:57",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "de6f923e4d8cf1f384b4879896b5c6e271d1ac0ca084a2a05e9042ad7531a318",
+  "archive_execution_body_sha256": "684ca0bfb32ca33a13f597cb49b923b3cfd4c4732174c896d55b2b7e89ef55cb",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 84021,
+  "title": "퍼즐 조각 채우기",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:14.059Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/84021",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:54:18",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "549531058422b71ec1b59988c4242a2a88cb0130b6bf459610ec647b9f360d46",
+  "archive_execution_body_sha256": "16cecf2c4fb20c97fd57db335d2a645153c2201b78dd35ffdc0aa86baab3968f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 178871,
+  "title": "달리기 경주",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:29.447Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/178871",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:05:32",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "4be90865877b1035ad76f09da59f6a30979db20382a66651c677e84b46bc3382",
+  "archive_execution_body_sha256": "d6710003feada36be0371a0259a2b98e4503b37cd06c1c3086863c35af809ab4",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 42862,
+  "title": "체육복",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:11.814Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42862",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:16:32",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "2f0747641a5e0906cba35be67595674b13a4b2abe147e3f5e98492f28d0f3fb6",
+  "archive_execution_body_sha256": "400b417a9ca5e921e051284bce35e142cacf3684d9ac9669bfdabbca8e6eb215",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

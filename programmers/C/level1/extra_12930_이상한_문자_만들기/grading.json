@@ -1,0 +1,29 @@
+{
+  "id": 12930,
+  "title": "이상한 문자 만들기",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:39.979Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12930",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:57:52",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "f5a14d4a86d75fb3ac06a330f4a1dd55ac8f716e3f3ec6a48fab668f2cc2274d",
+  "archive_execution_body_sha256": "e9e5190acb894e646ecc7a0352f3351c19f9fef5e21d942e3763842b702d0a5c",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

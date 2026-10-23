@@ -1,0 +1,29 @@
+{
+  "id": 468379,
+  "title": "선인장 숨기기",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:04.322Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/468379",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:05:39",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "ecf874b1798e09c2ce9fd0f7c90594672dfac0bd5afcef587f932c8f3abc293a",
+  "archive_execution_body_sha256": "aeab79b5a5b8b268901691165bf50202019b28eac3744f65d8396a424cc6e977",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 172927,
+  "title": "광물 캐기",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:49.172Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/172927",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:29:06",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "9db7380e0638d8e92c7b4670151b086ba8c10b8c55aa915b0e75095432aa7805",
+  "archive_execution_body_sha256": "3e9cd75aa18a68773800dd982c56be4f36f2e25fb192f1a95b1f338075782c0e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

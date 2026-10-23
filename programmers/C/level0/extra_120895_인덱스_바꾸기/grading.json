@@ -1,0 +1,29 @@
+{
+  "id": 120895,
+  "title": "인덱스 바꾸기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:56.706Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120895",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:44:06",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "198d6561e726c83635e89146cef34c11c0e3ea6cc7b389ef3e42dbbfce0acbdd",
+  "archive_execution_body_sha256": "c819080d78146d2c879addc7be6dfb8f7dfbf28ea9ba91f1b5605da4cc988e52",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

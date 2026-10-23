@@ -1,0 +1,29 @@
+{
+  "id": 62048,
+  "title": "멀쩡한 사각형",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:59.879Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/62048",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:17:26",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "f71569b74c00c19616cd084d1218219f3223ec204821e7b451828beb2211ce8e",
+  "archive_execution_body_sha256": "70d6b4763a7e344018c80102d90e847c09e5a6bcefd3dfafe724668e8c13c96a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

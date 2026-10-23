@@ -1,0 +1,35 @@
+{
+  "id": 1831,
+  "title": "4단 고음",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:13.920Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/1831",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:51:55",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    },
+    {
+      "submitted_at": "2026-10-19 16:38:10",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "c70210f1c67e2ea9301c87e73850aa7e8bfc790e680c33e96d98754ae45d7d45",
+  "archive_execution_body_sha256": "308c54e093138a85740458f6b28382af7ba0690341f05c90d1ccfb771f0c31ca",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

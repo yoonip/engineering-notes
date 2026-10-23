@@ -1,0 +1,29 @@
+{
+  "id": 181860,
+  "title": "빈 배열에 추가, 삭제하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:03.200Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181860",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:15:21",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "91d96f02886cfd196e00d47ebe7bf51323c7b43b573808fe276c575cc9ce7e33",
+  "archive_execution_body_sha256": "cdfb3a8e87b9bcbe6cf28f12e53d7aab59fd7cc4a3d6d986cf3665b608a5d690",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 12915,
+  "title": "문자열 내 마음대로 정렬하기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:48.079Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12915",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:25:15",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "74d47f4715d41259e69d62195767d41c0dfceb023d4ca4365f9b21e3164f1866",
+  "archive_execution_body_sha256": "98e6c56d631f6509dda0c8e99d6c2d9bc5e91d5a02f1f41b0dcb5dea28a56100",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

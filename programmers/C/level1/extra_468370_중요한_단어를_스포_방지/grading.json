@@ -1,0 +1,29 @@
+{
+  "id": 468370,
+  "title": "중요한 단어를 스포 방지",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:20.385Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/468370",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:43:32",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "afab339c86b9b280d5792881106ae319a48bbe5ec9a512239e8be42c34b2c45f",
+  "archive_execution_body_sha256": "e7b6093376bfc4afe0f38383cdd9f82987aa3c7ade4d0dd7c4121f61aed84764",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

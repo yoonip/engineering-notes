@@ -1,0 +1,29 @@
+{
+  "id": 181898,
+  "title": "가까운 1 찾기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:52.218Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181898",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:03:06",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "fde4a111aad6cfd07d35ae940f3553e0cdae5a3ff38eb9d0fef148353a2199d2",
+  "archive_execution_body_sha256": "5ef5a502e13456d8993a121143863909e4f75c4de7e41064f4d40e4e85831b9a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

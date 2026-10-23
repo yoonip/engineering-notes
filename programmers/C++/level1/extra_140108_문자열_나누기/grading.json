@@ -1,0 +1,29 @@
+{
+  "id": 140108,
+  "title": "문자열 나누기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:41.261Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/140108",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:09:18",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "ef65e7b9067b0f1c71944bd09605f65ef6029e0d2d8d0500a896261e867f4ca5",
+  "archive_execution_body_sha256": "9964f3d6e4e3ed821106c223194c306d6ae1a6219c23aea10af55461b6e9b7e5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

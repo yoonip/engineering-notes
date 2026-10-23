@@ -1,0 +1,35 @@
+{
+  "id": 1835,
+  "title": "단체사진 찍기",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:39.514Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/1835",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:47:23",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    },
+    {
+      "submitted_at": "2026-10-19 15:48:33",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "2162343f95a01984f7f1c477c5e5d5a90c1f8c2f1b76257db548db31bfa4fde0",
+  "archive_execution_body_sha256": "1823d411a68716c6babd45cec6a831d17d591fc3e64c5af27dce718c73aac34a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

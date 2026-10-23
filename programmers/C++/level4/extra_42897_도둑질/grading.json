@@ -1,0 +1,29 @@
+{
+  "id": 42897,
+  "title": "도둑질",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:04.667Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42897",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:48:42",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "9730019dc19125e0fa5ae31c334d9b3946bf3566f4ab68f7dc8f56abe8ac12ff",
+  "archive_execution_body_sha256": "e8a890a7b570cffd9f9e2d40978937456d8dabd6aa2cb49f58c2d74b6021803a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 181841,
+  "title": "꼬리 문자열",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:21:08.409Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181841",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:20:57",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "693c48b56801768105651f5920b6898ea7b1796091978e6487aadc7b43af6eab",
+  "archive_execution_body_sha256": "a309212a81b1f82194cca9dd9a43295ff5edd54768738d95068ecf7e004e9e0d",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

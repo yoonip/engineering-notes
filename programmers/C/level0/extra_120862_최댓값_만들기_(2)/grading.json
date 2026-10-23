@@ -1,0 +1,29 @@
+{
+  "id": 120862,
+  "title": "최댓값 만들기 (2)",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:31:04.764Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120862",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:30:56",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "fa20a0aac892f2b006fbdfc26e6c2fa653bbb89cd126588342a6dfd5b4cc910a",
+  "archive_execution_body_sha256": "33c5f4f3256ad5b4093eeb724f947125a09cbe6c15ff210dd29a4ea5b897c1f5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

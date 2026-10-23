@@ -1,0 +1,32 @@
+{
+  "id": 250129,
+  "title": "[PCCE 기출문제] 5번 / 산책",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:10.637Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/250129",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:31:31",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "bbbc20e1c1643a3035c6611b72e7c68db8fa80db7d79c52cb97196da2b70a14f",
+  "archive_execution_body_sha256": "596b2276d7c2842ea891ef7cb2fd5088f4ffb2669bba8ea1bcc4c965ad1b3f98",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "submitted.cpp",
+    "blanks.json"
+  ]
+}

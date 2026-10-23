@@ -1,0 +1,29 @@
+{
+  "id": 120888,
+  "title": "중복된 문자 제거",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:02.446Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120888",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:48:05",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "24f45756688f5500548156f987c7df6f0391ca57a05be1562da858c5f0aa4229",
+  "archive_execution_body_sha256": "721ebf03c514f4592ca9973bfb6f1e809da0646ea94093203e2d57ff4d586539",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

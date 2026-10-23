@@ -1,0 +1,29 @@
+{
+  "id": 67259,
+  "title": "경주로 건설",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:37.266Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/67259",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:40:15",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "d0da891ba54651d4ea10e9688ff72d9af2e99dd744b72e4ec770b3583ef52947",
+  "archive_execution_body_sha256": "84ff5754776fc40dc1d075d043c4005d6e8d1f09c4a58d9f76adb481ff436bf5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

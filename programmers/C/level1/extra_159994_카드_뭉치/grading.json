@@ -1,0 +1,29 @@
+{
+  "id": 159994,
+  "title": "카드 뭉치",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:35.410Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/159994",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:47:40",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "4e4b40baf0e9d7f17180513a88a5e0b4cc88b049c51f9b386f16f56a261a21d2",
+  "archive_execution_body_sha256": "e5f8b508020cddad62ed79b3303bebdf784768be54aa34aa4d0f0b24bb12cb35",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

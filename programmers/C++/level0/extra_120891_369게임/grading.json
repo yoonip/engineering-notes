@@ -1,0 +1,29 @@
+{
+  "id": 120891,
+  "title": "369게임",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:59.040Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120891",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:47:01",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "25527e94398cfdbe1cfda8ced89df40e77d0e2a3814358bbe6b33d0966e14391",
+  "archive_execution_body_sha256": "587c49336ed9d5c5eb540219d5488219bcfe94d301384da286fa54f0d12dd242",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 140107,
+  "title": "점 찍기",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:35.914Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/140107",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:34:23",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "7680b933edbb6f701493cc648a21aba6436a06b6ab05b7b8bc2c8ed3dc4212be",
+  "archive_execution_body_sha256": "86fabb5ee5edb1679d5560379fb48aa3469c50b86d29b0b6701650c5dcc9823a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

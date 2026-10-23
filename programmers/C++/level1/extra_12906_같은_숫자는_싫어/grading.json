@@ -1,0 +1,29 @@
+{
+  "id": 12906,
+  "title": "같은 숫자는 싫어",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:51.706Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12906",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:25:54",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "9f0cde67f2842e2cf9a7a12fdd3932c2f27497a99b9dcac331f5673c712ed2cf",
+  "archive_execution_body_sha256": "f4aeb01edb06c016f9c90289765943617dca809f0007d7b98d82d69e6e92e594",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

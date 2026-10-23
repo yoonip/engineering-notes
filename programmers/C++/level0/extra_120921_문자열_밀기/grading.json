@@ -1,0 +1,29 @@
+{
+  "id": 120921,
+  "title": "문자열 밀기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:29.655Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120921",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:33:22",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "e4ee715bdf3b841686f5c6a36f4d701578e801ce197b7fbd5acc2adb62ac6de3",
+  "archive_execution_body_sha256": "2f33f498ecc3f7cf78fbd33ba21b7203f3753f8232774587fa758bdbc6acea2b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 76503,
+  "title": "모두 0으로 만들기",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:27.686Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/76503",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:33:55",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "e1ffdb7fd6d347cf51cc6a24b83d25a0e0e77f7ae976c117a6ba442b8ad76923",
+  "archive_execution_body_sha256": "78c715083fb32b10ff2df0147a525de1ff961fe6f97598e06fae4a19adc92517",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

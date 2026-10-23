@@ -1,0 +1,29 @@
+{
+  "id": 142086,
+  "title": "가장 가까운 같은 글자",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:39.307Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/142086",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:08:58",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "21fa5e76685069cda8e1bf55039ef91327036c0e3c31bc0534349e523273c8b1",
+  "archive_execution_body_sha256": "f1d51b01e0f823d8753168a264e0e45f7a04360ee0d6f6e2789cbbfeb16cb8bb",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

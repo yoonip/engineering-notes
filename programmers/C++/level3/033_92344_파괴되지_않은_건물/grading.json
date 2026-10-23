@@ -1,0 +1,29 @@
+{
+  "id": 92344,
+  "title": "파괴되지 않은 건물",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:03.000Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/92344",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:52:46",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "25c43324a1bd30fa0f99b18f353a3267c02086683858e13da19575ea079fc002",
+  "archive_execution_body_sha256": "11a2ca4e1d0c58379569a1bb4ab6ad0774ca16d70583071c85892a7de8eaf6f5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

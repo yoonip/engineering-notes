@@ -1,0 +1,29 @@
+{
+  "id": 147354,
+  "title": "테이블 해시 함수",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:32.571Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/147354",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:33:43",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "15b3eb5d654284a389eafbb75880dd014f37333f05c9da30a0d91683deffe17b",
+  "archive_execution_body_sha256": "163a16ec5d734041111eb2e876850bb45a72cf1b0f39927740936f96b98caadb",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

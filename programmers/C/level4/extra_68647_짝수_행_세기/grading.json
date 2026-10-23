@@ -1,0 +1,29 @@
+{
+  "id": 68647,
+  "title": "짝수 행 세기",
+  "level": 4,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:58.464Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/68647",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:38:09",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "d2ede552c50df42cf87c372bb92e24c86530269dda4593f022240c190ee3c49c",
+  "archive_execution_body_sha256": "6c7260d0a520c06fea5093d28b729df1d6bc224b5a88181d9112b1d318e04e48",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

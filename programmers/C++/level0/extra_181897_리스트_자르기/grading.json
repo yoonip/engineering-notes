@@ -1,0 +1,29 @@
+{
+  "id": 181897,
+  "title": "리스트 자르기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:52.282Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181897",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:03:36",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "c2bf148ac893b73bea55c8d90a3ca54139270cbe1a32a6c4e85456eb04a5c9c0",
+  "archive_execution_body_sha256": "06b4f97acd6ecc2f4dc387f61aa4113a9cfe48c3bcb491e58671bcfa7b17a3f9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

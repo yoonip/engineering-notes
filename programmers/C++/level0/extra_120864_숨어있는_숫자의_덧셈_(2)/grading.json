@@ -1,0 +1,29 @@
+{
+  "id": 120864,
+  "title": "숨어있는 숫자의 덧셈 (2)",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:16.479Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120864",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:56:26",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "413ade80402a5d0f5941a968940af4de0af0d91c9f2df7ac9316befcd86d5afb",
+  "archive_execution_body_sha256": "57b0a3252b91c0ca4a78e9375a86306497110bf5ca0006794a886291a26d4344",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

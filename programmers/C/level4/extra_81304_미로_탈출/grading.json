@@ -1,0 +1,29 @@
+{
+  "id": 81304,
+  "title": "미로 탈출",
+  "level": 4,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:54.883Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/81304",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:37:33",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "d523f08a06731dc59ebfb4b98afab2e14f899c25a3ad448626448450a1d39692",
+  "archive_execution_body_sha256": "a0d520ad3093a14cc0f1e36ccd846548e54d3f1874dc95ca7bb84c0a759b99ac",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 120897,
+  "title": "약수 구하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:27:01.288Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120897",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:26:53",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "92a23bc841205e1baa81266c12b07e2b955ba22eb834dfd1f88be74326a0562e",
+  "archive_execution_body_sha256": "24ce4e494eff9e9fe2d36ce565d2c852f94c1fff409baab9cd28e1d612cf84b4",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 181899,
+  "title": "카운트 다운",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:52.020Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181899",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:02:55",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "9ef0fe9d6675e51c894a6e1ecd2a06acf2e7c4e8197438880f11e03daa74869b",
+  "archive_execution_body_sha256": "cfe1aaf1ff5f75dc0c75631f0c2115bf5c9ddb88d44629e83948726909fe99b3",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

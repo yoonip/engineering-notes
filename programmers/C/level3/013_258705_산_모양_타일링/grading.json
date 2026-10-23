@@ -1,0 +1,29 @@
+{
+  "id": 258705,
+  "title": "산 모양 타일링",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:10.106Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/258705",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:27:42",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "db796f81abe92670d48f25ee80594aa6215231824a59e9eecb9df49d6a2a7faf",
+  "archive_execution_body_sha256": "fde01d5211e9eab945fa019f88beb35318748e7edb976894e884ec6c2e22b529",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

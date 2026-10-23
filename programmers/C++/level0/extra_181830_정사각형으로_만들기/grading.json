@@ -1,0 +1,29 @@
+{
+  "id": 181830,
+  "title": "정사각형으로 만들기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:24.743Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181830",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:29:35",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "7be78520b5dd42ce046f77430802a79636370ae806950592d6f045129910e092",
+  "archive_execution_body_sha256": "a10a64dc6046855ece12bd14905e13fc582bcd2fddf99c10149e9474634259c5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

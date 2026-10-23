@@ -1,0 +1,29 @@
+{
+  "id": 17677,
+  "title": "[1차] 뉴스 클러스터링",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:11.368Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/17677",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:30:09",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "62d47385ad7784c700fedce4ce030921ea675355c126718487a45bb30524e82b",
+  "archive_execution_body_sha256": "8bdc5b1a12f7ce9862cff02bc9e2e3080b244acf1b3dd8bf5d3de4108f95604f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

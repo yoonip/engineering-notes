@@ -1,0 +1,29 @@
+{
+  "id": 12907,
+  "title": "거스름돈",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:02.210Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12907",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:49:04",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "f94a3f5793b1f6c839d19f7b1a204bab54c3d86b22b9d835525e464c73ef314c",
+  "archive_execution_body_sha256": "2e959dba083853829a737ffb82c7145b0b631583c3839e12b6ad3debc31f97ef",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

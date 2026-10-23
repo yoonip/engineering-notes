@@ -1,0 +1,29 @@
+{
+  "id": 12912,
+  "title": "두 정수 사이의 합",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:49.878Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12912",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:59:17",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "54381c361e3a41b143e9eeab1a0efbece5c8e7cb673368d0e418ff0d56f52517",
+  "archive_execution_body_sha256": "fa764cb6c4dc26c941cb8d8f1f9f56089e098a30dcfe3dc36d61f645bdd40e9e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

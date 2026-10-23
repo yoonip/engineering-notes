@@ -1,0 +1,29 @@
+{
+  "id": 258707,
+  "title": "n + 1 카드게임",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:08.384Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/258707",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:46:51",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "8303f0787dd1704a75c8f1915d7f952ccd50e809f6ad2611e2f36578d378d4f4",
+  "archive_execution_body_sha256": "4cf19ba81312ad9767749088863e3b3d9f2df784964932cd1614bfd4444dd91a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

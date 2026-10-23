@@ -1,0 +1,29 @@
+{
+  "id": 181854,
+  "title": "배열의 길이에 따라 다른 연산하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:19:04.058Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181854",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:18:53",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "4b2a197eabd21fef46a3b4933f01feebc13ebe4e737250a9975072bc3e425665",
+  "archive_execution_body_sha256": "422bce641e3697607d421c015b285cd23b6cec17fb45be9d2d21ab348aa56ef9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

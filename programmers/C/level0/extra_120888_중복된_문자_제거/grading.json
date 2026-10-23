@@ -1,0 +1,29 @@
+{
+  "id": 120888,
+  "title": "중복된 문자 제거",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:28:38.775Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120888",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:28:33",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "055c67c710384016b82ce7b526fbc78a36c34a1933f75247246bfd6810b43843",
+  "archive_execution_body_sha256": "605fe7473bdbac921c54f39ee1a5a3011b32f56d69692078de7a9c65c4078579",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

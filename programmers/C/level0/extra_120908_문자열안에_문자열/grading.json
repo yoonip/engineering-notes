@@ -1,0 +1,29 @@
+{
+  "id": 120908,
+  "title": "문자열안에 문자열",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:25:31.813Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120908",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:25:25",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "cb36cbf8e2069b5956703280b2cb25ee3fdc86f65d21328eb147fd065044b6ef",
+  "archive_execution_body_sha256": "2ea2b96e6d4f7963f6230620d54c87066279e5821a1dfd45459d2b7e3a5303c7",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

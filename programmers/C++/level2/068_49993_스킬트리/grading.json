@@ -1,0 +1,29 @@
+{
+  "id": 49993,
+  "title": "스킬트리",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:07.838Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/49993",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:18:46",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "7508ecdaedabcd68cf5d2ce9f02fdf7d1f53b92563a7770bdc3a60e891b54b01",
+  "archive_execution_body_sha256": "19cbecf8e9a8454255414c535bae0daa372e6b3582e46bd600d2826635e01667",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

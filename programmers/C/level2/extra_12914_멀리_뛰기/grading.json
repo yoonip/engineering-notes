@@ -1,0 +1,29 @@
+{
+  "id": 12914,
+  "title": "멀리 뛰기",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:30.906Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12914",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:23:02",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "1b7b9c8bf1cec7debdeb8dbaa663c83bd57bf6fe1208fd59354519c5e28a13aa",
+  "archive_execution_body_sha256": "70d81947005ec2cf04dd1e6c4a7843171a7d1f17cd0acbea1391a6d5cfe91590",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

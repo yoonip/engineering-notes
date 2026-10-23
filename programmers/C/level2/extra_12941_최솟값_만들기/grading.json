@@ -1,0 +1,29 @@
+{
+  "id": 12941,
+  "title": "최솟값 만들기",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:27.095Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12941",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:22:47",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "e523136697f3a8cdbbf9aaaf4d990d2291c9bda5aadce13704d89b58b5b73376",
+  "archive_execution_body_sha256": "62b9e3024dac1650cd6b7f768f5c737ec30184b9a245c76877cca48fa5598331",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

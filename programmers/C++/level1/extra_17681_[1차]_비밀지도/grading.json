@@ -1,0 +1,29 @@
+{
+  "id": 17681,
+  "title": "[1차] 비밀지도",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:19.530Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/17681",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:18:11",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "643bb699296c12391d30be242a4ca787bb84b1ef3275f27ac4ceb7d0dc3492f8",
+  "archive_execution_body_sha256": "e827f845c25b4cf3667bb1005fe296140ff2574595db879826a13dee9a6013d6",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

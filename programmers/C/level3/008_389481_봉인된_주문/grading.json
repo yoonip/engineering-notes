@@ -1,0 +1,29 @@
+{
+  "id": 389481,
+  "title": "봉인된 주문",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:58.045Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/389481",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:26:03",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "55ec3eb69f831328447c04152e88f411da0d0775916dec34d1889f802cd8c031",
+  "archive_execution_body_sha256": "cb939cde02c1a4e403ebb231061cfbdd85b7b7b59cd6e64b30c242e63b5c60f1",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

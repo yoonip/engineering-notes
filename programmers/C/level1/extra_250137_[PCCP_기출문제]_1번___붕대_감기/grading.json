@@ -1,0 +1,29 @@
+{
+  "id": 250137,
+  "title": "[PCCP 기출문제] 1번 / 붕대 감기",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:28.153Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/250137",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:45:42",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "55a423a6f7403091cc5fa8d8acddcfa4258451711e21dbb4317cbe4d9170ec09",
+  "archive_execution_body_sha256": "aad6d55aef2105cb4459d92e04c2ec25784447ba4b3d81418655b4417980ea56",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

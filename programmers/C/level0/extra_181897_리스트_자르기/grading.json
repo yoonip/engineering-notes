@@ -1,0 +1,29 @@
+{
+  "id": 181897,
+  "title": "리스트 자르기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:52.282Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181897",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:03:36",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "e1f8d3b51487dab85379b0da4ca48e0652b522a9c9c4998e8305a61652cb98fe",
+  "archive_execution_body_sha256": "04acdcf13d021fe2ee5fb700940132d834c6fed2fdd588a972abd2d2a1bfd09f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

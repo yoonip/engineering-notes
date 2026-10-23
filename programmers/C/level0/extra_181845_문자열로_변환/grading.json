@@ -1,0 +1,29 @@
+{
+  "id": 181845,
+  "title": "문자열로 변환",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:20:55.615Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181845",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:20:49",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "2c2dac4172f242422e820984741613145cda169dc9f1d765db4601e4ff9b7fe7",
+  "archive_execution_body_sha256": "165f5a2ff387794341f39b47247234e20bb41d70b84485d846882fb1c909b738",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

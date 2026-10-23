@@ -1,0 +1,29 @@
+{
+  "id": 181914,
+  "title": "9로 나눈 나머지",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:42.308Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181914",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:54:44",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "555c9de6f79c0b2063c15ffa739df21c450645166dd3b98a87e9565b3844a09e",
+  "archive_execution_body_sha256": "358cb3e8af05d9969128864a61fb7a83b5932782afe449a13d23ca94a50676d1",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

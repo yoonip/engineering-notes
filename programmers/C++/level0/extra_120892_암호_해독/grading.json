@@ -1,0 +1,29 @@
+{
+  "id": 120892,
+  "title": "암호 해독",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:27:51.969Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120892",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:27:43",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "f502c7998876fcc7f7a7558fbc7bc75ce59f1dd7f0f1efa8e08807a603e01337",
+  "archive_execution_body_sha256": "be339dd0f55a1b1dff3036577edd0fb401b9e1b9c515e7e959a38845b987b93a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

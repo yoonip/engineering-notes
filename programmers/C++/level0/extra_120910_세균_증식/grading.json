@@ -1,0 +1,29 @@
+{
+  "id": 120910,
+  "title": "세균 증식",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:31.732Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120910",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:35:33",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "17fc204cc9db0b5db32671058fab930738b86f4553296148cf9f26eb308f18a2",
+  "archive_execution_body_sha256": "86a68105b8433ada86e0d4051ba96f617d50f4fcae7a71b01b234d08769b7aee",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

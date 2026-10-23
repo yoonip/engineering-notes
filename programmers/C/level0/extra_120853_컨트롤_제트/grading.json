@@ -1,0 +1,29 @@
+{
+  "id": 120853,
+  "title": "컨트롤 제트",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:36:13.021Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120853",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:36:01",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "5316bd24a5e8bf7b06fc7330f5db148f0804e74159147924f64ecb7e1fea1c6e",
+  "archive_execution_body_sha256": "099cc343ddc10f2c8e6ad044f6c07cb197f67056d27bbd3fad1f93f3faa43950",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

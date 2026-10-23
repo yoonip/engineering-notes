@@ -1,0 +1,29 @@
+{
+  "id": 70128,
+  "title": "내적",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:05.471Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/70128",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:15:07",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "40f20f826019b76b07d1df62c6826df599d790e15ed653946102ad43d1899cd3",
+  "archive_execution_body_sha256": "69afec5b26c045a86e94adf803c10b7038625f8c338741c035265a0fd8f561a0",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 120884,
+  "title": "치킨 쿠폰",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:04.967Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120884",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:50:14",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "d7afe43de18296ee256ffba8f3687e877b1160bbe307d7a2d4523b174b8c00e6",
+  "archive_execution_body_sha256": "a285514403cbf1ce2229642c11b0273e2e6dbbd9258866fcfd0a3d2111467154",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

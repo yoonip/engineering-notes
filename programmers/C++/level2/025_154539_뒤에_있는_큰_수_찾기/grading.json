@@ -1,0 +1,29 @@
+{
+  "id": 154539,
+  "title": "뒤에 있는 큰 수 찾기",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:09.976Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/154539",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:31:45",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "1ee43be3e49337303f03e5b28abdb1a27df6a28b4d123c4c73d1a4e6ea8e8709",
+  "archive_execution_body_sha256": "2a8a464ce9092a3c288623ed072f17f606492d91137bc96dc9c32e77b32bd70f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

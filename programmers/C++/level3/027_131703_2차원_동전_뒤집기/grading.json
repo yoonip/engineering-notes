@@ -1,0 +1,29 @@
+{
+  "id": 131703,
+  "title": "2차원 동전 뒤집기",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:38.472Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/131703",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:50:55",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "24368ae76685afb7096c663364086f21d6189709073ef1b22a1dca74174a1e82",
+  "archive_execution_body_sha256": "6f42034492210bef09faf37a34438c8d7d1049ee1250792743c6622a248aa784",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

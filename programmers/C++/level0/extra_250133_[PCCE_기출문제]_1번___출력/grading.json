@@ -1,0 +1,32 @@
+{
+  "id": 250133,
+  "title": "[PCCE 기출문제] 1번 / 출력",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:06.831Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/250133",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:30:31",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "848ac8e898ce2179d0fc1e3722394f52feae035e8c61fc8d3f384d365186e2c2",
+  "archive_execution_body_sha256": "710d1ce8d50ae5fdfa3ab784cc3269c139edd53d2222f2e0127e1d0377f99b5b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "submitted.cpp",
+    "blanks.json"
+  ]
+}

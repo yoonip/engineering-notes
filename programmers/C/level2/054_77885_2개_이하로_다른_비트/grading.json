@@ -1,0 +1,29 @@
+{
+  "id": 77885,
+  "title": "2개 이하로 다른 비트",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:29.064Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/77885",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:19:55",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "97094ad2c381159e3c8568d3963c7176a43e653f3b81cb16fbdc95d2436a9d57",
+  "archive_execution_body_sha256": "d354d65a964cec4b036aa9891a5dcb61519fd49dd4c9550d42fc65afcc67a222",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 181835,
+  "title": "조건에 맞게 수열 변환하기 3",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:22:33.715Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181835",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:22:25",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "3a80d463b8d4384df160910dc029a28daefe075bf8ac9dcf61b7f288b26741d1",
+  "archive_execution_body_sha256": "10b256c22af6323ddb9a5b3ff3c766a1f6c51de5adb5b7c9d754ba766a930ded",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

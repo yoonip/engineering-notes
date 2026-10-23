@@ -1,0 +1,29 @@
+{
+  "id": 131129,
+  "title": "카운트 다운",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:42.712Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/131129",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:51:22",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "c46e5844f18dd9549c71d0150367029f58cb47a3565ecb109bb8b39261f7b254",
+  "archive_execution_body_sha256": "2c8d1c16ca149a5cbc96555522d5df4ece3da715c8b3be019d4bf4f0916597e7",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 42747,
+  "title": "H-Index",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:30.337Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42747",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:23:23",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "e859418cbd7f1e456a84939ff20757c5613d2f3ad71bb546c847644e4f09dc28",
+  "archive_execution_body_sha256": "ecaf13705edf92643df4b3a6c08de9c6b2e5ad7b0b4d1d16b8feb76e0d9932be",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

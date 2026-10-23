@@ -1,0 +1,29 @@
+{
+  "id": 150364,
+  "title": "1,2,3 떨어트리기",
+  "level": 4,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:51.053Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/150364",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:36:33",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "cd33df93757a8d9ad6ab07fd4a1393af950d14164593b9f07c4c48bc303c1b01",
+  "archive_execution_body_sha256": "eb1378c3f650ff3e8b8c56b1348d76c40afcaad58fa2d98282d6ac9540d21a45",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

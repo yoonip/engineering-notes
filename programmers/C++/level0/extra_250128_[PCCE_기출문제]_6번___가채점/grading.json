@@ -1,0 +1,31 @@
+{
+  "id": 250128,
+  "title": "[PCCE 기출문제] 6번 / 가채점",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:10.748Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/250128",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:31:57",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "627bfc112dd156e55e248779cebf3eb7d998cc8044b05151659263765e7633a0",
+  "archive_execution_body_sha256": "ca72f555dcfca08ef1513c1e26635fe98f0cce53c57938ccbec46048bb6b0a07",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "submitted.cpp"
+  ]
+}

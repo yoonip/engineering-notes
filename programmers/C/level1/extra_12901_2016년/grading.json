@@ -1,0 +1,29 @@
+{
+  "id": 12901,
+  "title": "2016년",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:53.635Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12901",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:59:43",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "d53f79d18eab1a4907c1279d21bc9a27f452765b756383499217de1c3b56c6d3",
+  "archive_execution_body_sha256": "65f2686c00b8f78cc80bb022d41d9ea6d1807f8afcb9e7dc8d7b47b33ebb8628",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

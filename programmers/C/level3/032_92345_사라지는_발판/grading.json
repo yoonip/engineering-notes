@@ -1,0 +1,29 @@
+{
+  "id": 92345,
+  "title": "사라지는 발판",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:01.184Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/92345",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:31:53",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "5de133237831b2d000f0d3613e8f4888a1003d2f04af17ac3b639470f7d503c8",
+  "archive_execution_body_sha256": "d3ebfd84e972d24c30a71e79f09b2a7eff4f702202ba95e2ec85446e33a516c0",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

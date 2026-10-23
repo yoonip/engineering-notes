@@ -1,0 +1,29 @@
+{
+  "id": 120808,
+  "title": "분수의 덧셈",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:06:15.495Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120808",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:54:26",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "9481279befd508b7427d7a74c11cb4d0f0e24c9b6625de3a49998e57f2d0559d",
+  "archive_execution_body_sha256": "cf17ade01042e6d011b1c523332aac9e81cd7ccff127eba1581e9f8ce7a2cb02",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 120811,
+  "title": "중앙값 구하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:06:12.663Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120811",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:53:49",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "304e3cd151beeb4e1ee1a371b862bf235b92b2f99a1759cbf01fb0d0829ef95d",
+  "archive_execution_body_sha256": "fa5d07e7bd042ec60b87d2ca9909ee1377daecd0e9ca6fa6cb6ddf96751b26ac",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

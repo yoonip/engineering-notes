@@ -1,0 +1,32 @@
+{
+  "id": 340201,
+  "title": "[PCCE 기출문제] 7번 / 버스",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:04.541Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/340201",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:29:19",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "34537641e37ff566f11eb53b196d7721da8b00d812873457272cb64510a17be1",
+  "archive_execution_body_sha256": "5d930c2eeda90fe2eb64515816a7a179d10db43c1cb28adfb738021fdb51b126",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "submitted.cpp",
+    "blanks.json"
+  ]
+}

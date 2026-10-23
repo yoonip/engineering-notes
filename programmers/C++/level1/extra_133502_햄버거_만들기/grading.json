@@ -1,0 +1,29 @@
+{
+  "id": 133502,
+  "title": "햄버거 만들기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:45.229Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/133502",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:10:58",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "5bb840f5518b8cba7df642ae14d52e9293517f1c7e8882fee9ee2478af22553b",
+  "archive_execution_body_sha256": "fbcc4ca4d97be9699afabeec3cd8f971b5bb30926ef29ca96ccb81d4f8d1c425",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

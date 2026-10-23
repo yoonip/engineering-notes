@@ -1,0 +1,29 @@
+{
+  "id": 181836,
+  "title": "그림 확대",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:22.348Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181836",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:25:43",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "5218fd13d24cdd424f62c503912f77d94cd0077e66d50ea2f637f3d052c35339",
+  "archive_execution_body_sha256": "5219fdf29bf641e20fa42e1f638430106c059f8f4aa1e8583544d3bdf8f81d25",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 468373,
+  "title": "바이러스 파이프",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:13.972Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/468373",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:06:13",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "523e9131af6b2af64605bf7ed991fd0eec5a39a1d66796f2e08e13a1a7c7e00c",
+  "archive_execution_body_sha256": "d0d56ffabbbc52d9bcf26c2a17ce9ce1baa1cff3092318ddd3bc930f6b6be59b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

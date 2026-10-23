@@ -1,0 +1,29 @@
+{
+  "id": 92335,
+  "title": "k진수에서 소수 개수 구하기",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:06.716Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/92335",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:17:56",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "b521598fc179334aa8c463d9533692d7fff32cc2f1bee8215a2b35983514f8f5",
+  "archive_execution_body_sha256": "ea8c32bcd6f98d64243f9a3acf2d84ef2d7cc834456f1dea34bcc65c4b8a98b0",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

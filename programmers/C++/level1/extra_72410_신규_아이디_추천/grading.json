@@ -1,0 +1,29 @@
+{
+  "id": 72410,
+  "title": "신규 아이디 추천",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:05.504Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/72410",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:14:46",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "2494e66276eaaa6af3ab75e10684a7cf5bb9447aaee94b25c82dac1cea313457",
+  "archive_execution_body_sha256": "05e9835fe0e21ea83306de046c05422922c24cf7c53263a0c26d0c7004352ebc",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

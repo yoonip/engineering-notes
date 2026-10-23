@@ -1,0 +1,29 @@
+{
+  "id": 120875,
+  "title": "평행",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:29:37.729Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120875",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:29:27",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "cfe6b37656f89ba96b752e369c3499de0dbd05a767d076ce01eed6f2d32c387f",
+  "archive_execution_body_sha256": "c2da124b783542372e3845dc73ec31582bcac4656dd5e17b636cde80b8db17d0",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

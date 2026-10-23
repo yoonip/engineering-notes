@@ -1,0 +1,29 @@
+{
+  "id": 181855,
+  "title": "문자열 묶기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:18:48.570Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181855",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:18:33",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "265354352101e9d0cb8f4548df4129dafd3c1f38455f1381bc3843d0f3d839ec",
+  "archive_execution_body_sha256": "e2c76567431db7d23c80fa9b82c77b8af9c9912f9f7ef36d914a81de63c4797b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 42891,
+  "title": "무지의 먹방 라이브",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:06.448Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42891",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:49:16",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "c6b6181b44dc2bc8c13927d87091cf3e817243cde7f5110e791ea3ae2bfed3e8",
+  "archive_execution_body_sha256": "d839df1af7d59f20caf524e481cf8e04b0b29f7b023c3e7d05d3af7801361b34",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

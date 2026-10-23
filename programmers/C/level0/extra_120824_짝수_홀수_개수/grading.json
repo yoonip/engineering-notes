@@ -1,0 +1,29 @@
+{
+  "id": 120824,
+  "title": "짝수 홀수 개수",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:33:23.449Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120824",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:33:18",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "09a7bac15c76123e6f929b53c62097b812c59f2d11b1d397f832864bd60fe4fd",
+  "archive_execution_body_sha256": "0737c9ec3471c6f4ff1014401d055c820a9367b191c4abab8200b2e5739fbe7e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

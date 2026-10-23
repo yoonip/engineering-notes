@@ -1,0 +1,29 @@
+{
+  "id": 120806,
+  "title": "두 수의 나눗셈",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:06:17.845Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120806",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:54:53",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "ae3a1247caaa620dbe0b20f186acfbf635e7e040400241592a8a7036301081fd",
+  "archive_execution_body_sha256": "48a304d19cfe731a099248109ffe6fade47ebf34adddc8e122493e8386bbcef9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

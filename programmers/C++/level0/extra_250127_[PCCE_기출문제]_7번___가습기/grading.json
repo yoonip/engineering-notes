@@ -1,0 +1,32 @@
+{
+  "id": 250127,
+  "title": "[PCCE 기출문제] 7번 / 가습기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:12.736Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/250127",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:32:44",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "3904adab0da0257a6e3b66ce7d66b0ff97e93c4d3921104ea3ff63735868d3b0",
+  "archive_execution_body_sha256": "1c729d5befc8b1b423cf2d39edadac0f166f02e297beab21beb1c49cb12e68b3",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "submitted.cpp",
+    "blanks.json"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": 12909,
+  "title": "올바른 괄호",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:33.984Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12909",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:23:16",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "50e809ac271a0f6134b989f38ea740c59678c422bbb0f13a9a77f6545d291802",
+  "archive_execution_body_sha256": "1cff851299f602f5d9abee5483da004f3d097a78533fd6350d19fab0cffc3b3c",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

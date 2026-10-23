@@ -1,0 +1,29 @@
+{
+  "id": 87694,
+  "title": "아이템 줍기",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:06.407Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/87694",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:32:23",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "dd5ff83761b9ccd25d3c61a2a19af460f6cd6b040fef31c03ae120e6dcf417f9",
+  "archive_execution_body_sha256": "7f9973ef3642fdddcf07b47eadbcd8ad3dac927431018516dc3fbf4d2ed199ac",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

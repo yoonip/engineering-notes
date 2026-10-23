@@ -1,0 +1,29 @@
+{
+  "id": 388352,
+  "title": "비밀 코드 해독",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:23.169Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/388352",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:08:11",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "b7186a2aa93d3658e7d2b4b81842c06ce82603c70a609f4080d611292759f6b1",
+  "archive_execution_body_sha256": "bd2edcc23e9dd7d592cc0167209b0fa19916c0da6bd327e0b3443c91df5246fe",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

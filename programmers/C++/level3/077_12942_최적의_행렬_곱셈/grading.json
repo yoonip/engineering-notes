@@ -1,0 +1,29 @@
+{
+  "id": 12942,
+  "title": "최적의 행렬 곱셈",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:48.019Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12942",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:47:57",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "6f9d20ef5a2fa180e865832176091e1ffd396eff741ef2f22ef3960cdbc59f0b",
+  "archive_execution_body_sha256": "8bffe2acd3eed004dd0c3ac6d209143270d3f62f8925e410bb974ca387bdd589",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

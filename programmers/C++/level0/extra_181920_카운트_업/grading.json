@@ -1,0 +1,29 @@
+{
+  "id": 181920,
+  "title": "카운트 업",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:39.252Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181920",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:44:34",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "65e96b8b4ef7163cac79e4138ab130901c39c03610e528a94e9259bfaf96d6a8",
+  "archive_execution_body_sha256": "25dad72e4fad05965ae5b7ac01f990ba55b1461ba6c7141307f242dd4345ee70",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

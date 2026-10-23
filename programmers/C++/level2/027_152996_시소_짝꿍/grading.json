@@ -1,0 +1,29 @@
+{
+  "id": 152996,
+  "title": "시소 짝꿍",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:13.802Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/152996",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:32:23",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "de233acad34e8e7a4a1530146e18c12fad574f2a396270a0eeb95d689c32437d",
+  "archive_execution_body_sha256": "1fd1d4a7dabc40a396774cb2a169fd88ed24c771b0cca4804c4e54806945f7d0",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 120835,
+  "title": "진료순서 정하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:30.893Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120835",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:56:25",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "2ce6bccbf6c613af4d0578d10e01169773becdc9a52123271839f8255c7fbe48",
+  "archive_execution_body_sha256": "56e6b93c9c1e90840a964c4af55c5fa2e0b4bacf3e7e71535aacb7f01125b8e1",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

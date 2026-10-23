@@ -1,0 +1,29 @@
+{
+  "id": 49995,
+  "title": "쿠키 구입",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:03.005Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/49995",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:47:48",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "5ab837e8c63123b8d433df7e69679adabadf143a3443a55946c81f1deb3f43ba",
+  "archive_execution_body_sha256": "49000a050b734e9b12ba4003c90296a86f273e137abe053b4e2c8f073f322a94",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

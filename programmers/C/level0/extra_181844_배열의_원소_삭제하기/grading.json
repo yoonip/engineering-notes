@@ -1,0 +1,29 @@
+{
+  "id": 181844,
+  "title": "배열의 원소 삭제하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:16.941Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181844",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:22:41",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "a7721323733d2b12c589038a792772ad973fe8bc43b630fb31a0699858e269d8",
+  "archive_execution_body_sha256": "dc020ec94005b052108dd3905bfc2b5daac19689fd489754b1f388ab8d37e1d7",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

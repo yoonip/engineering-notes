@@ -1,0 +1,29 @@
+{
+  "id": 181908,
+  "title": "접미사인지 확인하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:08:32.483Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181908",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:08:22",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "d1be2d37bc724a39c62da2efb3cee0a3f924c297b19a69e98fc806d583b0b5b7",
+  "archive_execution_body_sha256": "6cf2653e19d26fdb23cdc7f150c4f7a539711a739d97a0c1f9a961b3fe40303b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

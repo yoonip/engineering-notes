@@ -1,0 +1,29 @@
+{
+  "id": 181930,
+  "title": "주사위 게임 2",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:17.330Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181930",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:37:11",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "8706cb066b8a1985cd643924b418601ddcfedff2851577bb088d7e8303dbaacf",
+  "archive_execution_body_sha256": "ccb956d8f77498212ed7cf2a71d0db6566980872d11b919ce3440442f436bb28",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

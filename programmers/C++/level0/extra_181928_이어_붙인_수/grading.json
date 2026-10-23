@@ -1,0 +1,29 @@
+{
+  "id": 181928,
+  "title": "이어 붙인 수",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:19.612Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181928",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:39:21",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "bad8dff772b4bd96b820febca1f95955d46cd64b8c3860bace13aaf6b8c8644b",
+  "archive_execution_body_sha256": "6bcb8246dc32f03d5cb8846e1f4a72093b1765f12458c3ff437ce169f135e4ab",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

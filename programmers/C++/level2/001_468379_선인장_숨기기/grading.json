@@ -1,0 +1,29 @@
+{
+  "id": 468379,
+  "title": "선인장 숨기기",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:04.322Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/468379",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:23:35",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "0b3056f9e956345fbbabd7f9bf71a025c5a5289e80ba2808f2c1c02165f65924",
+  "archive_execution_body_sha256": "3ebe2263b84b1e81d5bb2803526c5b361c6d04032fb4d88eeac22b14e8d8f703",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

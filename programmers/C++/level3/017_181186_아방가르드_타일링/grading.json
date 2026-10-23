@@ -1,0 +1,29 @@
+{
+  "id": 181186,
+  "title": "아방가르드 타일링",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:17.335Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181186",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:48:08",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "c5774edd677211542086296c31e5713a3a78882d2819db685fe10e57e645b3f3",
+  "archive_execution_body_sha256": "bc956d62377a8a7fd646d8e3e94e433d4ad0ab509c07dea8e755e325b16c9510",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

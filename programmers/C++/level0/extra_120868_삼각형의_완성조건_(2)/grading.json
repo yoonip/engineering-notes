@@ -1,0 +1,29 @@
+{
+  "id": 120868,
+  "title": "삼각형의 완성조건 (2)",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:30:17.549Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120868",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:30:06",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "9934482d7c4d45c6f7b7d83899fe078d85df6508eeb887690abd5fb68b9c85ac",
+  "archive_execution_body_sha256": "b8583ad2423b092fef1713bbd49b9b3801b63588925a3094c146717c2ab4b4ab",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

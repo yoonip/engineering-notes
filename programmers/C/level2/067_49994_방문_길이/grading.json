@@ -1,0 +1,29 @@
+{
+  "id": 49994,
+  "title": "방문 길이",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:05.531Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/49994",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:21:16",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "b6ed9db938b3d7369a38fe2c7b0997499159ef31e50fc0330951b8b1e2b3f637",
+  "archive_execution_body_sha256": "19ecfe1db6f7733402b358015791a0bd2bff916b3b0d19e1926a1adc9844816b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

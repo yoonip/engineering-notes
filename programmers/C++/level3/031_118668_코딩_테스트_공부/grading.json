@@ -1,0 +1,29 @@
+{
+  "id": 118668,
+  "title": "코딩 테스트 공부",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:59.433Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/118668",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:51:59",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "4702edf2235335228170d53d7897ae2e4f801789703ed9754d9d637e72995cc3",
+  "archive_execution_body_sha256": "81063154d5c9a4151e5b71a005a4a266eef11d45a30c43ba19f1da2c2c8e462b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

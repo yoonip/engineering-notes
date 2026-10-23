@@ -1,0 +1,29 @@
+{
+  "id": 181909,
+  "title": "접미사 배열",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:08:20.391Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181909",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:08:09",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "33815688696e246ad8f5d525dd33ae173b1681ef97e612b71b44eef62b156476",
+  "archive_execution_body_sha256": "7987e98876472aca4c42d15f4822b9bcd40b186ee9c97226929b863452ccd246",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

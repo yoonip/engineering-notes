@@ -1,0 +1,29 @@
+{
+  "id": 120880,
+  "title": "특이한 정렬",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:04.875Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120880",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:50:39",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "f318687b78b787952f88b3f0dd28037a9b3b97d83c31faacef552589e70144a2",
+  "archive_execution_body_sha256": "bb99527cbf90fefae7d144e147e8fc060d35989b68d38b2997837474b7a75b9f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 72416,
+  "title": "매출 하락 최소화",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:56.552Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/72416",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:44:47",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "3116cb89d5ef97cf31e040b90a78d6ae58902ab8ef40710eed57bdfeb9b9fa22",
+  "archive_execution_body_sha256": "bdf3ab05cd019f629247b9057f77ab24720899a033e6eca23497a1553ab23e77",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

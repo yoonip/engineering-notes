@@ -1,0 +1,29 @@
+{
+  "id": 181840,
+  "title": "정수 찾기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:19.571Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181840",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:24:34",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "ce2e22ff3177dbe63ae5131c3e0ee07f107325006568b23c357231632e1cf1c1",
+  "archive_execution_body_sha256": "705bca02f8fd9f783929380e7baf89cb5fb651e0b3ec8c0fdbe0fb85f73d9ba8",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

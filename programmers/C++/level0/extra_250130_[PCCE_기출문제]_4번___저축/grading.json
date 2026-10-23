@@ -1,0 +1,32 @@
+{
+  "id": 250130,
+  "title": "[PCCE 기출문제] 4번 / 저축",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:08.793Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/250130",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:31:15",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "2fab1574405c4b2281cfaa8d8ececf79d47100e8fef57b8868c281e695ea2443",
+  "archive_execution_body_sha256": "82ccbef46523b5ae6838ffd04ef29c76531caced621dba1c5ea57b4b2e39a981",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "submitted.cpp",
+    "blanks.json"
+  ]
+}

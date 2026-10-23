@@ -1,0 +1,29 @@
+{
+  "id": 181948,
+  "title": "특수문자 출력하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:38.247Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181948",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:31:45",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "2e57610c73ca8e515c612f475909a9c835878a739ee046b6862baf9b4298b482",
+  "archive_execution_body_sha256": "69de3a619684b6e39d919faef68b1a1d112ca1a7f223bf272d91422d05b88940",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

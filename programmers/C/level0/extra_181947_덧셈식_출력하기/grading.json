@@ -1,0 +1,29 @@
+{
+  "id": 181947,
+  "title": "덧셈식 출력하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:37.951Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181947",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:26:11",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "6aff7405c513512c9ae902491422284d34e7d88b1a3cdf31cc684791631d0e31",
+  "archive_execution_body_sha256": "c5da66a05af5f1832e2f6c3a84a372a1dcdd84a901e8c7d875bac093cc5c7a4b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

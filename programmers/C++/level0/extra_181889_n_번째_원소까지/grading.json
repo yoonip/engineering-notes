@@ -1,0 +1,29 @@
+{
+  "id": 181889,
+  "title": "n 번째 원소까지",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:10.888Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181889",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:05:30",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "67834f82bcf441f89c72d3da46e3769c3c53807bcf1d81db4e1cd23731986016",
+  "archive_execution_body_sha256": "e10e1219c5c3b65d3e0c8389b2022416881496fd4abc66be42387753eb2cd33e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

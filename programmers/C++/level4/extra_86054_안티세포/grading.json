@@ -1,0 +1,29 @@
+{
+  "id": 86054,
+  "title": "안티세포",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:54.564Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/86054",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:44:00",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "bdc6a14d2d6cfd354d679b7e3d051a7f7c1882c8140249b2e8188923295038b6",
+  "archive_execution_body_sha256": "2c9e9a0995c18f377586ff484afeba3a21573aeee47ab34a323b5641b67a9f2c",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

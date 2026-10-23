@@ -1,0 +1,29 @@
+{
+  "id": 181188,
+  "title": "요격 시스템",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:41.025Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181188",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:09:53",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "0e36e13cd56ac4a00721cda754ebf52e688afe87cba898f95a5322a4bff36443",
+  "archive_execution_body_sha256": "32429e909ae4648d9c536ca09baeac80ee3eea8b9650e9eb48a4f8a8854943db",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

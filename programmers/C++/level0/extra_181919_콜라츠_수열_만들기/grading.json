@@ -1,0 +1,29 @@
+{
+  "id": 181919,
+  "title": "콜라츠 수열 만들기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:38.752Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181919",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:45:07",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "5a32e33cc93c8e63d0aea016b84096d1d9b211ca07c5c759194a13247ac3852d",
+  "archive_execution_body_sha256": "224a3943547404b09ff2c0f03f7dae51a397b849bbdeda8f973d38cad82b75d3",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

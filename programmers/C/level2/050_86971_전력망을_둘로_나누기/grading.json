@@ -1,0 +1,29 @@
+{
+  "id": 86971,
+  "title": "전력망을 둘로 나누기",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:14.244Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/86971",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:18:50",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "e30f100968c07f9d158a9cc0130e9a1db153672326701ae3d609acfeac846770",
+  "archive_execution_body_sha256": "d82817b525ad6d339155f600c8c599ac59a7e80cf5e2dccc89bb34030e8f9002",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

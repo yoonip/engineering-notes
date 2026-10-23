@@ -1,0 +1,29 @@
+{
+  "id": 181893,
+  "title": "배열 조각하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:54.634Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181893",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:04:27",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "4c2eeb2fe46cc49ad497d68d328f7d751860bfba6594c3f9f475fa18c4cefe68",
+  "archive_execution_body_sha256": "6b93b3fc031417e4cd7877499597219490775efb21d82ad0dcee28c61172ac4d",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 81301,
+  "title": "숫자 문자열과 영단어",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:02.080Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/81301",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:13:54",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "d1cb8b4b9dae574a70e40c09e49fbec83d8ae5baceb0da1d65a58333690f9c6e",
+  "archive_execution_body_sha256": "56cac1d2017b0a2122127c623b14d0d2c9e87fd57dd5f104a2b16cf90c09deda",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

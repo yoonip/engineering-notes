@@ -1,0 +1,29 @@
+{
+  "id": 120818,
+  "title": "옷가게 할인 받기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:06:10.288Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120818",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:52:30",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "88bef6a348e2684459c0e99587b9073bdd8bd300add0c1b9d045f39fe2f317e2",
+  "archive_execution_body_sha256": "6cb094b88170b84508c106f96b132097b04fc2c67ac724acfd508381080e16aa",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 161988,
+  "title": "연속 펄스 부분 수열의 합",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:19.130Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/161988",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:48:20",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "1412d2645cc2e7e18094039ee1fdc8637886cf349a67fc131119c2a863114287",
+  "archive_execution_body_sha256": "76f48fa304e522e0640c6c5976ca9ab2543ed088852922451433e2ae33b53d3e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

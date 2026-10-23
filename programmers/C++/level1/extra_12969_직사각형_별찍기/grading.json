@@ -1,0 +1,29 @@
+{
+  "id": 12969,
+  "title": "직사각형 별찍기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:21.827Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12969",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:19:02",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "60f325ca9502524f2c2043afafb1aa1d14bb058391a722dca37929ea8415d572",
+  "archive_execution_body_sha256": "d10acc4b23a7e4ebae02226c71da3800b7855c9b63f95cf5567b0602ca64a3c2",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 159994,
+  "title": "카드 뭉치",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:35.410Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/159994",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:07:28",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "aa32527dd5d8a6b918694d69cf2d043c1bbb27c2cc87d4904bccd0629dd97b7c",
+  "archive_execution_body_sha256": "9592dd7ea38274879bb6751b235ebd9d0737035027843366fc6bc70e1a06b80d",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

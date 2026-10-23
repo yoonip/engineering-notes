@@ -1,0 +1,29 @@
+{
+  "id": 12947,
+  "title": "하샤드 수",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:30.954Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12947",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:56:08",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "ba8da9fff9ac37bf37ea8390355fdf17b9e6c2e045b522a9f47e2e1d36507cb1",
+  "archive_execution_body_sha256": "9188cc2def3cf18e02e8301b25066b280e56d17cb5ca302a9c326f8b7f579a13",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 17687,
+  "title": "[3차] n진수 게임",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:05.771Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/17687",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:26:49",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "387040a2520649ccd2f8156b67167772fab049594d73ba135d984180d04e9ec2",
+  "archive_execution_body_sha256": "d05e0772867ba48b662449443109800c7efba5885c8ca1778d1488f556487e61",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

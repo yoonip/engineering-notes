@@ -1,0 +1,29 @@
+{
+  "id": 42895,
+  "title": "N으로 표현",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:21.237Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42895",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:44:26",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "46cc4ad4fb93f74085fcb051dc7c1d8ec787d9bbb58eb18a3a0de36d9a60d045",
+  "archive_execution_body_sha256": "f614025481ad808f5755fb6e35a43c327d6db44687a25c67240e28d78cc16fd5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

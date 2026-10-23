@@ -1,0 +1,29 @@
+{
+  "id": 118667,
+  "title": "두 큐 합 같게 만들기",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:59.272Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/118667",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:17:13",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "a51b644f6101faad53bb9cd6317fa948cbad60dc9bf1b764a0b7c94ba87999fc",
+  "archive_execution_body_sha256": "39c4e07bdfc1b68376fff40986f5ee98eb718f885d5317ff86bbfd6758ee5dde",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

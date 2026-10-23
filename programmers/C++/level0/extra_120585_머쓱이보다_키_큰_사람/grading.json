@@ -1,0 +1,29 @@
+{
+  "id": 120585,
+  "title": "머쓱이보다 키 큰 사람",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:06:26.724Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120585",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:55:55",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "15e8d333dcca4aa779a12b0a55643fdbbfb0ec0662b8324434214359ee817d61",
+  "archive_execution_body_sha256": "4531d67be0fa9bc029090b100599439d8aaf86738314676c38689f3ee21efa91",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

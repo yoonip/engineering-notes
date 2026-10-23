@@ -1,0 +1,29 @@
+{
+  "id": 181900,
+  "title": "글자 지우기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:52.225Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181900",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:02:19",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "537499d94911404f530a4ca6ee599369c1291d419b4b24ae749ac6b7ecc094bc",
+  "archive_execution_body_sha256": "e21e32d6daad29c9950db0bea4f8302b4754ca4d28e94ec20dc2ea743ff72148",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

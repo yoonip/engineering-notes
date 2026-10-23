@@ -1,0 +1,29 @@
+{
+  "id": 120866,
+  "title": "안전지대",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:30:29.452Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120866",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:30:19",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "c1cc2c639c1419545bd9fa39b543ba954771b9082654cd6118635504b7d9d86e",
+  "archive_execution_body_sha256": "210f7acdc1cd684be3c042781c1f30612e973ff55d1eac7138daaebe7a4d6afd",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

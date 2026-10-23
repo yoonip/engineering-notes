@@ -1,0 +1,29 @@
+{
+  "id": 120815,
+  "title": "피자 나눠 먹기 (2)",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:34:19.027Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120815",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:34:10",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "aa9e0a521e73d47373ecf810056b1eeabcbd772f51c74601528b1ffa8ed73771",
+  "archive_execution_body_sha256": "6633f22e4c80bbdfd226485dcf5dae303dd641b1e688888c029dd30828ca273f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

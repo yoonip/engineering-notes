@@ -1,0 +1,29 @@
+{
+  "id": 43165,
+  "title": "타겟 넘버",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:09.555Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/43165",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:19:26",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "ce5bc00dc34f78482ef9655aa6156170419bbd65c2acb987cab02cb95ad196f4",
+  "archive_execution_body_sha256": "f46a8f22785a615cb4911428690db36ebebe7651a3e36fa4d2cf97b4a5c872e7",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

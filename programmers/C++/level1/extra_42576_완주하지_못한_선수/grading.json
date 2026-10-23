@@ -1,0 +1,29 @@
+{
+  "id": 42576,
+  "title": "완주하지 못한 선수",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:16.647Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42576",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:17:29",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "b9ffa01d60a83751f1ed17790e9e82682fb88beebee63d0eb1d05c83222447d9",
+  "archive_execution_body_sha256": "92fe84fd70bc775aed79ceb921e6ac5e452b3ca2cdbd6677ac48a46177a65103",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

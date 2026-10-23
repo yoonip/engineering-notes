@@ -1,0 +1,29 @@
+{
+  "id": 87390,
+  "title": "n^2 배열 자르기",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:10.877Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/87390",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:18:19",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "fe441ff60656a3ae4d9c0bf4eaa2bf35f4b9c628e02f3efe7a6d2cda9155ffb9",
+  "archive_execution_body_sha256": "75a478638f9b7572829f34c6ab722f4286185f7303a4b91ee608b0b2a91a0790",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

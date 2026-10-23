@@ -1,0 +1,29 @@
+{
+  "id": 70128,
+  "title": "내적",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:05.471Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/70128",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:54:37",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "d0666713b63ff7f8f1b20e77801308b3e8df75bf482034d440050196745bb3ec",
+  "archive_execution_body_sha256": "6e188662ca730781da5bdefae1c50b368c2058dfd39b07f8909e8fa51a7d4627",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

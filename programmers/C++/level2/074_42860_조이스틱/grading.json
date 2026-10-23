@@ -1,0 +1,29 @@
+{
+  "id": 42860,
+  "title": "조이스틱",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:24.689Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42860",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:22:10",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "e899d5e47cb860250f1cabbf42671f57cec45e05ed377d7a670d1dfd1ab0477f",
+  "archive_execution_body_sha256": "7f149e67b5c7d49eb4234e79e5c3e1e9d6f483fed81387afc0ab319508a61398",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

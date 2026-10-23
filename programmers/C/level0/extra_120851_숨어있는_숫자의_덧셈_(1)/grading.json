@@ -1,0 +1,29 @@
+{
+  "id": 120851,
+  "title": "숨어있는 숫자의 덧셈 (1)",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:21.396Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120851",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:57:30",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "f6fa212a67377f1afa8f84c424aef48d9d3790c0c46304fd1fcc884741eace3c",
+  "archive_execution_body_sha256": "18f64c3b32326264abc545accbcb271c277923fecd3e0913c80a69a3b353ae9e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

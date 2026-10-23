@@ -1,0 +1,29 @@
+{
+  "id": 120850,
+  "title": "문자열 정렬하기 (1)",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:21.520Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120850",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:57:40",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "7f2cac8efe37a14ee4cc61b2f50743c4aae3332bcd4a2a8c66000ac34bd5b9d2",
+  "archive_execution_body_sha256": "f528a4047cf6124bc43e37c317f0ce0368ad4c5e1d455afc8efbd08ad743184b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

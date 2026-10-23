@@ -1,0 +1,29 @@
+{
+  "id": 181873,
+  "title": "특정한 문자를 대문자로 바꾸기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:22.130Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181873",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:10:34",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "b1f7af7a7b46eb789d8519a6aff4bc8d191cc1d264219566828a497ffeac3f00",
+  "archive_execution_body_sha256": "39493790aaeba507393c065fbca74d4cb3e2ea46db68e781f99174f3e82dc6c2",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

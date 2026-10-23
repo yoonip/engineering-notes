@@ -1,0 +1,29 @@
+{
+  "id": 120838,
+  "title": "모스부호 (1)",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:32:34.129Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120838",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:32:28",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "8290032a6af368114a5c6b048b5525fcc32eae58444b42535456372dd137d3c1",
+  "archive_execution_body_sha256": "db1e80c5b8b44101b5b0b613b02c4c7361082177fd2083ddeaedd0eb8cbe629d",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

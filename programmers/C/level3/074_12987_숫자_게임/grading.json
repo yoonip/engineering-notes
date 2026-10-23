@@ -1,0 +1,29 @@
+{
+  "id": 12987,
+  "title": "숫자 게임",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:42.968Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12987",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:34:52",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "d7d538dfdb7c2f2a976ed72f19ba14ae4cb816f9504716e103a8572807945ec5",
+  "archive_execution_body_sha256": "8e9a91dbec19f4840355c99c1a3a4915ea985e1e5976c7be6c64c22746932d37",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

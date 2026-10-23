@@ -1,0 +1,29 @@
+{
+  "id": 181891,
+  "title": "순서 바꾸기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:10.399Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181891",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:05:06",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "a3084343369c464c450b8f54b8e80f60cd63e65da952686bba272fa6a47aedbc",
+  "archive_execution_body_sha256": "8bbb2522599af0a20dda629c288c9867ce1f6855f0e1eb06dd060bf6011b4fe9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

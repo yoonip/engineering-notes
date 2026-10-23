@@ -1,0 +1,31 @@
+{
+  "id": 340202,
+  "title": "[PCCE 기출문제] 6번 / 물 부족",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:02.308Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/340202",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:28:40",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "f049bfa04f3b10144e670fb9fea91064f46604cccd0c6c2eaee75f263aa93c01",
+  "archive_execution_body_sha256": "178f1be4db576ea0f523bbc1845e453cbb80222c02a0cf4b26750fe93bea1f25",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "submitted.cpp"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": 120823,
+  "title": "직각삼각형 출력하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:06:05.037Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120823",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:51:49",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "92389c861c94b56b6d1fb5e1aa059f7f40bb5dfe5f9e8791b31add6829978f09",
+  "archive_execution_body_sha256": "82beea88c0d50e93a202f92e46bc5273afc1b4a61e5485aa37851592167943bc",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

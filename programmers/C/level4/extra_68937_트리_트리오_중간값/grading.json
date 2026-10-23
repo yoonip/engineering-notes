@@ -1,0 +1,29 @@
+{
+  "id": 68937,
+  "title": "트리 트리오 중간값",
+  "level": 4,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:56.660Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/68937",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:37:48",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "1442f9dbe87691ef4a0ceaa1955dec3ebc06d29e81049e5ca50c69257b6669d3",
+  "archive_execution_body_sha256": "aa7499a9b16523ec9eb3251596f06726e065bc09dbd15ee6c068ba436d17e04b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

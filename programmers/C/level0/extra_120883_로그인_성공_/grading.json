@@ -1,0 +1,29 @@
+{
+  "id": 120883,
+  "title": "로그인 성공?",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:04.820Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120883",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:50:22",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "6dde63caeb25ca71ae17f971fbb349d7236119bc69ad8c3c2aa015469ac9df5c",
+  "archive_execution_body_sha256": "d93933bc6d099848e02b2d2c158823e4ee2199b31eae75cf2f974d53beb916dc",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

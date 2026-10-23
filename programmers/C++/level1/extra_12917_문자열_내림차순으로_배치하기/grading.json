@@ -1,0 +1,29 @@
+{
+  "id": 12917,
+  "title": "문자열 내림차순으로 배치하기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:46.174Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12917",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:24:29",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "c9542e9ffb7c7ea5ec395cffa0f22de1383ab7222139c6454c2f929a96b512f5",
+  "archive_execution_body_sha256": "e0e70af29019511ca41e22e4c55f5b80fd72aa031682312b0947aa9e7f737b41",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

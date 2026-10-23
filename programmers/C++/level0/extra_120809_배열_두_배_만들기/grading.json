@@ -1,0 +1,29 @@
+{
+  "id": 120809,
+  "title": "배열 두 배 만들기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:35:03.698Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120809",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:34:55",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "d64655ac9d792eb16c54e16947dfcd534a252962ac2de0b8d18a6cc58d364770",
+  "archive_execution_body_sha256": "47e83e4d7f43bad71dedced47122968555f3880801d18d67b9cc933c28c401ba",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

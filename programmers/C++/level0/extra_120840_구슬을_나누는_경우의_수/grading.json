@@ -1,0 +1,29 @@
+{
+  "id": 120840,
+  "title": "구슬을 나누는 경우의 수",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:28.321Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120840",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:55:16",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "2f1c8bda4b7aea5197f88750cfe8ea84622c90412f2ec3faef7d9b40d2485020",
+  "archive_execution_body_sha256": "d72ec301a018ab7d1a7fbc87e95aa726c8931cc12cddaf5c81989c80e5414f0c",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

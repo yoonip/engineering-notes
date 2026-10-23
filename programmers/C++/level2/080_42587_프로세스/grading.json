@@ -1,0 +1,29 @@
+{
+  "id": 42587,
+  "title": "프로세스",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:59.590Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42587",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:24:34",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "fe61ae624e500b421bae5539ab6f8e999870a99af019915adc1af6b17feb13fb",
+  "archive_execution_body_sha256": "37d0034fb4eccbc194909d6c4348bff05e1a27c86daf0acb37ffe165d5749368",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

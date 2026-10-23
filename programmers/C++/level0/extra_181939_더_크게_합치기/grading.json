@@ -1,0 +1,29 @@
+{
+  "id": 181939,
+  "title": "더 크게 합치기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:45.926Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181939",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:33:25",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "547ddee31c34530017df0e98c8cf52450f4c670098332baa69a32e24e6f0fea5",
+  "archive_execution_body_sha256": "2348d21b89c0e5a9290b3c764dd60970df62a74b148280a6ad43484238b443b0",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

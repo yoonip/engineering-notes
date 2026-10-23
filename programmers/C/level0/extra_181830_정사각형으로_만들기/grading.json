@@ -1,0 +1,29 @@
+{
+  "id": 181830,
+  "title": "정사각형으로 만들기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:23:51.689Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181830",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:23:36",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "23c656783aa883969dbda1c7d41788a090a62cecadf9d681ceaa65edb6866cae",
+  "archive_execution_body_sha256": "28990639633f657c23b55e1e3cacdc872a1b4bd171fa99b05b26d0cecda50d6f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

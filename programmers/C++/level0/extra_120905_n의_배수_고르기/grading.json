@@ -1,0 +1,29 @@
+{
+  "id": 120905,
+  "title": "n의 배수 고르기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:52.040Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120905",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:37:47",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "6c8a2bf937396c86fbc2ecc6ce08fd4b4123911775b3ad1bc477b486c6f4e3fb",
+  "archive_execution_body_sha256": "1aced70276f53a7b4d287b4befbeb8753e872de74a665033c16176092aa52ac2",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

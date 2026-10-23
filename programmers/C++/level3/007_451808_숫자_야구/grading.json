@@ -1,0 +1,29 @@
+{
+  "id": 451808,
+  "title": "숫자 야구",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:56.366Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/451808",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:44:21",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "3026115bdd31d455a6be51ef71ffa4eefc95cb90a00220db7c6f303b55b28e13",
+  "archive_execution_body_sha256": "ae321efcefb967b7ae3b91f0e1ead6fb60be17f5eeab9c1a48412f6132ba7a13",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

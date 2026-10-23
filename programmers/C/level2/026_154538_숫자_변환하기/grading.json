@@ -1,0 +1,29 @@
+{
+  "id": 154538,
+  "title": "숫자 변환하기",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:11.819Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/154538",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:13:19",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "7d4ef33a7c71bfee5636b9911873a3fca673143ef3556729694f78913314a24e",
+  "archive_execution_body_sha256": "6c98b5d5eb0de65d86e61c1fbc9a05985b3e1a15a5d4e93abef5d62550c8339b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 181946,
+  "title": "문자열 붙여서 출력하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:40.257Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181946",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:32:02",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "fd60c30f30a2d6f5e0c501c3fd05b8e2bed1fca14039340757d3c0e0f20a6aa7",
+  "archive_execution_body_sha256": "c247ce6a2f6819779b3a11955da85fb3c25a95703eb16a9d8076bdfb1a0186fc",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

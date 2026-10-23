@@ -1,0 +1,29 @@
+{
+  "id": 340207,
+  "title": "[PCCE 기출문제] 1번 / 문자 출력",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:58.290Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/340207",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:47:02",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "9d46a6c77dd36b04131679650da99b130ab67ec1ffe1232a30c8f6967f137a90",
+  "archive_execution_body_sha256": "5e62dee2bd454cbf2248c14eec695a758eb24a2f415f8293f1c94cfdb859295c",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

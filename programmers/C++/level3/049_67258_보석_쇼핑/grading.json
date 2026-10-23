@@ -1,0 +1,29 @@
+{
+  "id": 67258,
+  "title": "보석 쇼핑",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:39.256Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/67258",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:40:31",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "954dc1e54f3a054e70e04e00bcf8cb94974f53b92c33182b594da7bea2e8fbe9",
+  "archive_execution_body_sha256": "f984d4ac21e4cfbdc734713266a17a79e4f9047c9ccb40aee36b870e420efc98",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

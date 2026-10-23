@@ -1,0 +1,29 @@
+{
+  "id": 77884,
+  "title": "약수의 개수와 덧셈",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:02.078Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/77884",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:54:02",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "c56e36c46c7de86b265a63553afe5d8d89a09b5c9b2520e4ef30c078dbc1dabd",
+  "archive_execution_body_sha256": "9ea33f1cc544caf70104f1dab9b02c94bfe498cf7d3facc051808ce5cddd53be",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

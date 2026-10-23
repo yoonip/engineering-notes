@@ -1,0 +1,29 @@
+{
+  "id": 161990,
+  "title": "바탕화면 정리",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:33.659Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/161990",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:06:16",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "085f6b5a02213c72afd40285755a8afd0e4ad53da3e1196d5f38347e8035c72c",
+  "archive_execution_body_sha256": "d07b7b8ed2780ab638066e4eb9d16e8f2359ed3edac3ee65b9f94c33408582b6",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

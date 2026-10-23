@@ -1,0 +1,29 @@
+{
+  "id": 468377,
+  "title": "힌트 스테이지",
+  "level": 2,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:12.661Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/468377",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:05:57",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "67cadf290a3e276a73d5b5eac42015b11b42a7fecf41cd7c06c39fe656ddc3ef",
+  "archive_execution_body_sha256": "623215ba698ae865933c61f452221ec7a8b93e1b758d3d764ce250e41d7bda9f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

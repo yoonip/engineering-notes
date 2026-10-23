@@ -1,0 +1,29 @@
+{
+  "id": 120861,
+  "title": "캐릭터의 좌표",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:18.892Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120861",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:57:23",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "28e72e6561cddb85f06cd4f3f44baadee3a766b27ba1b3060053dea89a43091a",
+  "archive_execution_body_sha256": "51548cd340ae5f9f2e26739f1636353b0655de8fdf4e537aba949988dab4cb74",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

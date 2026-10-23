@@ -1,0 +1,31 @@
+{
+  "id": 340203,
+  "title": "[PCCE 기출문제] 5번 / 심폐소생술",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:02.608Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/340203",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:50:03",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "d2f0f940f63acbcf7a08880db6b3f1f0b58d6d1da52555dea377dd6728e2032e",
+  "archive_execution_body_sha256": "40c7eca485f4ec1e475b49b7ebe9dfc107edd6d584992fbb755ec184878b345d",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "blanks.json"
+  ]
+}

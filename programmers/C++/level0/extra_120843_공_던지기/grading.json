@@ -1,0 +1,29 @@
+{
+  "id": 120843,
+  "title": "공 던지기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:26.026Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120843",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:54:19",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "f37c6117ff93f507a073fa1f118de9eb001c20b5f7db487e619c4d3530478994",
+  "archive_execution_body_sha256": "eef923950468d98a5def0d351ef0fb83ea6222869f775c4f3853c48f422c5c51",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 12921,
+  "title": "소수 찾기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:44.299Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12921",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:23:39",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "b13bd930981ccd04e24ea2660bf120b820e10864efe159d5b182bf2db3e3b026",
+  "archive_execution_body_sha256": "818fede8218b2803235fdc70c3cd08fbd9fcca32587214840f316f035d1d702a",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

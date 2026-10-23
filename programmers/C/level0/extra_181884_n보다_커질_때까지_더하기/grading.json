@@ -1,0 +1,29 @@
+{
+  "id": 181884,
+  "title": "n보다 커질 때까지 더하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:13:30.305Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181884",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:13:23",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "4c138f319c217268082b9140c6a396d9fb1b86b0bed72b4bddc677ca00ca973b",
+  "archive_execution_body_sha256": "328d6bbe0f3563721df7d154b0a6a6a5b784fd05fb1e27842d2f5c03df6b9439",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

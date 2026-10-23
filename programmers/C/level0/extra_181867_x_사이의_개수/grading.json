@@ -1,0 +1,29 @@
+{
+  "id": 181867,
+  "title": "x 사이의 개수",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:56.876Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181867",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:12:18",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "bf2bade8399952906b5fe52a43329de4dfd11f82897814417edf1ca229eaf39d",
+  "archive_execution_body_sha256": "ec738944bbe29aa9c17954cb55edbf9d24c98798873afee5646a25a77970ffb5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

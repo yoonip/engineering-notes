@@ -1,0 +1,29 @@
+{
+  "id": 120826,
+  "title": "특정 문자 제거하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:06:05.268Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120826",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:51:20",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "5525f156a97571dcc9927743469097dcba5758af2f5abfbb005d5ba068ab6a2f",
+  "archive_execution_body_sha256": "fa387e0c01b91188a31b8e8bf8c46d381ea821a78c43b1e2b60258035e960aac",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 120913,
+  "title": "잘라서 배열로 저장하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:28.784Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120913",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:34:07",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "567e60c90d3f9db152035556052e18feecab11a14d894a3f7ce52659414fc936",
+  "archive_execution_body_sha256": "7283f766467245b32a9e38de79eb362352512f9d2832a3fa3d888a09be8675db",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

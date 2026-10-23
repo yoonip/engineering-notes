@@ -1,0 +1,29 @@
+{
+  "id": 181846,
+  "title": "두 수의 합",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:20:44.010Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181846",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:20:24",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "7096516e81d02779db1494ed6966ff9308171e5ead73993f35a7905b03d0919a",
+  "archive_execution_body_sha256": "16966cfd8c02f3cfe53ee27878b610e79591f03ae734672eb3c48d8ead6428fc",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

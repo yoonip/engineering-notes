@@ -1,0 +1,29 @@
+{
+  "id": 389480,
+  "title": "완전범죄",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:17.483Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/389480",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:25:09",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "ac5dd8a2978148ece094e9cffc7da9af91171e7b224d5b31354ca1ed87dc0d71",
+  "archive_execution_body_sha256": "b8d5644b41dcc219b50d5b56f3039d622bad2e90dcd39753e204fcb72dd7ea45",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

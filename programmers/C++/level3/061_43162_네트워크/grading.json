@@ -1,0 +1,29 @@
+{
+  "id": 43162,
+  "title": "네트워크",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:15.172Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/43162",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:43:36",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "6d39149792a75108ff1c435dc431435ed29d5844be59f7de23ec0b382b660a38",
+  "archive_execution_body_sha256": "f754bf68775148aa08d1291de9f09edbf366c423490bd928d2b6aa21a45a7579",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

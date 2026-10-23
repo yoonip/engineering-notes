@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <ctype.h>
+#include <limits.h>
+
+int solution(int n) { return (n + 6) / 7; }
+
+// 전체 코드 줄별 설명
+// #include <stdio.h>  // scanf·printf 등 표준 입출력
+// #include <stdlib.h>  // 메모리 할당·정수 변환·정렬 함수
+// #include <string.h>  // 문자열 길이·복사·비교 함수
+// #include <stdbool.h>  // C에서 bool·true·false 사용
+// #include <ctype.h>  // 문자 검사와 대소문자 변환
+// #include <limits.h>  // 정수형 최솟값·최댓값 상수
+//
+// int solution(int n) { return (n + 6) / 7; }  // 피자 나눠 먹기 (1) 풀이 시작
+
+// 풀이 요약
+// 사람마다 한 조각 이상 받으려면 사람 수를 7로 나눈 값을 올림한 만큼의 피자가 필요

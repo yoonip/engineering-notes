@@ -1,0 +1,31 @@
+{
+  "id": 340200,
+  "title": "[PCCE 기출문제] 8번 / 닉네임 규칙",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:04.625Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/340200",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:30:09",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "70dd26030d7cee8c68c415a5e3d308aa110a9f8f2ec97fbfa4fc659af5e138e7",
+  "archive_execution_body_sha256": "852df0d183de667b43946c76248d582fa32d537f5d81349a61f52cc9515a99ee",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "submitted.cpp"
+  ]
+}

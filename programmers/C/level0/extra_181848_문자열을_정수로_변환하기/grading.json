@@ -1,0 +1,29 @@
+{
+  "id": 181848,
+  "title": "문자열을 정수로 변환하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:20:07.807Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181848",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:20:01",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "c95be9e87ac0217e540b76a2c2877b5f2b2e15d273ad11fd84ce7424f03bec98",
+  "archive_execution_body_sha256": "dad536335f2b75466b5619c656ef65abccd3a27a7cfccf6a96944a26186d2dd2",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

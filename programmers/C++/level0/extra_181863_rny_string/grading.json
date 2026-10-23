@@ -1,0 +1,29 @@
+{
+  "id": 181863,
+  "title": "rny_string",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:59.993Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181863",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:13:26",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "d63670587b46804190d9f4a13dc1c8a0f6a7145e24067fa3635821cdcb9e2591",
+  "archive_execution_body_sha256": "d2bc3e1fe7d2e3970e0869a07676fc782e221d359f7be14577681fcb4d79ef09",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

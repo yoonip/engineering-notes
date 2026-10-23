@@ -1,0 +1,29 @@
+{
+  "id": 92342,
+  "title": "양궁대회",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:01.869Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/92342",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:37:01",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "eb632edbcdccc8212eb2e84f01cb31ee63fb6bf57be9f0120dbf08b51d5fcd42",
+  "archive_execution_body_sha256": "eaea2ec6780d83c9c0f6599d1c6dfe3179efbef3276d020e0cf10740c36a01ec",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

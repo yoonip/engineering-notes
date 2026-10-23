@@ -1,0 +1,29 @@
+{
+  "id": 131128,
+  "title": "숫자 짝꿍",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:54.549Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/131128",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:51:48",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "d948979a741a5509d0df172329dfea79dcd3e32ef17894735a6e6f7871d4a8f3",
+  "archive_execution_body_sha256": "97c1cacf838c6fab978baf9b0b890556c68c79165478c5902af98530a6199a75",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

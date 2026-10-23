@@ -1,0 +1,29 @@
+{
+  "id": 43163,
+  "title": "단어 변환",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:04.265Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/43163",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:43:29",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "70f925bb320c7b97ecfc38a0bc6a870a4ad480cdbb8479e33aec0b44c6c78531",
+  "archive_execution_body_sha256": "1fc01e16972a205895f5b4e1448ea2448d44a63ab6f8ccadf8a4b79b72ddd612",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

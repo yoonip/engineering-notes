@@ -1,0 +1,29 @@
+{
+  "id": 181903,
+  "title": "qr code",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:50.075Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181903",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:59:26",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "495ab57a2383488330e5fb0e1c430942b80df29ee3f0c4c42d1a2f0f5c4f9656",
+  "archive_execution_body_sha256": "4bfaf6ffe07eda1bb2fee0536e68aa94616ac545bc7cdac9ccd363b32f82ded9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

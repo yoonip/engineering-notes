@@ -1,0 +1,29 @@
+{
+  "id": 120825,
+  "title": "문자 반복 출력하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:06:05.206Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120825",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:51:32",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "95fe09cd3397cb5e052014b6e54045a314bd61a53f2f20d04c17f2fe6f65a4ac",
+  "archive_execution_body_sha256": "614426f5d4b4c192130e309a20530a1328978504955dfcc6d6e5f26b9b837b79",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

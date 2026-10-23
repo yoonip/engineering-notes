@@ -1,0 +1,29 @@
+{
+  "id": 120854,
+  "title": "배열 원소의 길이",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:21.395Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120854",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:57:46",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "dec8cc51b3916886687fefcfdfe66ad5fc1d8fd8037b3c9e14ff6d27be851161",
+  "archive_execution_body_sha256": "9a8d41f009fcee50a13774ecb8c5f9a7e36acf5e7076d9bbd12b5ff185484e77",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

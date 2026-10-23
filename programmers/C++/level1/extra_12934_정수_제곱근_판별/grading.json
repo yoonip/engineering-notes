@@ -1,0 +1,29 @@
+{
+  "id": 12934,
+  "title": "정수 제곱근 판별",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:36.322Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12934",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:21:23",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "88c0d747642482eff95683e312b34cbcee0e87449b5298768d268340cc69cef0",
+  "archive_execution_body_sha256": "c96bc3283550a6ed3505dbd58cff1337d44bde8cbc40a197739b862c13cb3e73",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

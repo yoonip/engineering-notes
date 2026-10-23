@@ -1,0 +1,29 @@
+{
+  "id": 468375,
+  "title": "발전소 회로 복구",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:52.288Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/468375",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:43:28",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "de566416e46d279241ed086cda1fdcf48c56132dcdcdb1b87a169b07937fb52c",
+  "archive_execution_body_sha256": "da50117e4af1fbc0238b3aac22ad0b022e4b4f1784843cdf9f55a8d1b8ef3eed",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

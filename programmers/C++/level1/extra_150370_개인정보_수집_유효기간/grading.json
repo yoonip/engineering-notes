@@ -1,0 +1,29 @@
+{
+  "id": 150370,
+  "title": "개인정보 수집 유효기간",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:37.231Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/150370",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:08:01",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "411d8d7e44ecb03115e7e9deaa1e043a584f66b8570147a91805fa95f66f2215",
+  "archive_execution_body_sha256": "49898f3f0d459ed8e25bde05860248760ca39a44375cc98dc84121e990330112",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

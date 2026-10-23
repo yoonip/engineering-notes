@@ -1,0 +1,29 @@
+{
+  "id": 181852,
+  "title": "뒤에서 5등 위로",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:07.950Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181852",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:18:46",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "35ad0884c3087f683da57d316b24352016d11f69b5d41d44559feb27cc3f5338",
+  "archive_execution_body_sha256": "02afe18d7d5e612ae2d731222c486aa87898730c8a1f9e96a284fcb45bccdfc7",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

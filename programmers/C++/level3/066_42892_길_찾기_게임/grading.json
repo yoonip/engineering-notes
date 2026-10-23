@@ -1,0 +1,29 @@
+{
+  "id": 42892,
+  "title": "길 찾기 게임",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:25.210Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42892",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:45:04",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "237dc2de5a01a397c2b9c60941c8c7b29b2c823146dccd07f46afd8bf72ac393",
+  "archive_execution_body_sha256": "0a324defecc49faf68c185e32689cb7d50741f0ee17c6b8452b8e130e0895e15",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

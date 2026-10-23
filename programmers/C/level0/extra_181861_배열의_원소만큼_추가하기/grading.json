@@ -1,0 +1,29 @@
+{
+  "id": 181861,
+  "title": "배열의 원소만큼 추가하기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:59.614Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181861",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:13:52",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "b8403e7dc750117d696426ab8b47e750ec7414fd5eaa96b635d1f768cdc73b04",
+  "archive_execution_body_sha256": "9f08a2dcc130d5204162474cf70cc767a9a9a1d4336a3fb71281b9f05e083baa",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 181894,
+  "title": "2의 영역",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:54.627Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181894",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:04:17",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "e9036e65a6537a0db9caa8d228591893b34f58a22a0111b035548ae01ebd69f2",
+  "archive_execution_body_sha256": "5383d15a93c3bba5372eb5242bb72671accde1ed21e7fbc6bf0738a7c8357579",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

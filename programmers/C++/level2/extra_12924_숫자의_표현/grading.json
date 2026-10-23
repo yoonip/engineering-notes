@@ -1,0 +1,29 @@
+{
+  "id": 12924,
+  "title": "숫자의 표현",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:29.070Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12924",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:39:40",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "ceb9f0c1d2b0fbfd484a140027b12f6adde80b6165812ef3023453725974fd18",
+  "archive_execution_body_sha256": "145e4ed22dad718f7e43b502440ad733a1c3eb3f2dd8146a4b0dbfbdd4a22e5c",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

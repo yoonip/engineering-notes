@@ -1,0 +1,29 @@
+{
+  "id": 118666,
+  "title": "성격 유형 검사하기",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:56.642Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/118666",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:52:02",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "4476e5e1aca09d60dd921f810de09039a307103f81eb5c609710e00ec037c39d",
+  "archive_execution_body_sha256": "c3eeeea13572f897f670459941e5767da2ab816eb316f958993bb0cfb34b4bb5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

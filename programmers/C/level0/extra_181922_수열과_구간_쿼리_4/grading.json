@@ -1,0 +1,29 @@
+{
+  "id": 181922,
+  "title": "수열과 구간 쿼리 4",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:26.396Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181922",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:43:14",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "747d0f2f00f8d0d43d2087e9772ee77abfe92313933e563c547ac5899504707f",
+  "archive_execution_body_sha256": "053ba6a7eb2814223dbe56ec1ea1b55bbd1410209470d125f33556f25bd448ba",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

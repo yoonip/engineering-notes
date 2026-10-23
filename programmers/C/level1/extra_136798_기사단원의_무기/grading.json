@@ -1,0 +1,29 @@
+{
+  "id": 136798,
+  "title": "기사단원의 무기",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:43.677Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/136798",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:49:51",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "71bf4fc0c462f5ed378803b6778d6ed901b58951ad9d7cba8c177d26ca9879e3",
+  "archive_execution_body_sha256": "1c3693bfdfb9c402e211cf44fc4c1818e895ad231465e3217508c1243a75ec8f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

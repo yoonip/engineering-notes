@@ -1,0 +1,29 @@
+{
+  "id": 1844,
+  "title": "게임 맵 최단거리",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:37.538Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/1844",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:47:01",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "07846ea82144393c52530c72b2b9bacce766c102a7a9d10e1413ab448ff17898",
+  "archive_execution_body_sha256": "75cab20da68920bde1ace540c5c325a03a3c962e61ffab8f27fc98e4f4d9ee0d",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

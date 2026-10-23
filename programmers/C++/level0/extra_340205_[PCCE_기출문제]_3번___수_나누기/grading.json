@@ -1,0 +1,31 @@
+{
+  "id": 340205,
+  "title": "[PCCE 기출문제] 3번 / 수 나누기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:00.474Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/340205",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:48:49",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "aae20eefa6c452ed6d150e09ce9b48dc7308e7481f5da8e306ca318a9f7c8837",
+  "archive_execution_body_sha256": "d5f3deb63cffee45bd3849509ef57455c2da72cdb9a6340c66908867ad08198b",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "submitted.cpp"
+  ]
+}

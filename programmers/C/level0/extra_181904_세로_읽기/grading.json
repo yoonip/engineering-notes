@@ -1,0 +1,29 @@
+{
+  "id": 181904,
+  "title": "세로 읽기",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:10:00.547Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181904",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:09:50",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "8d64d998154c95f3d257f33119381b6b11b8724102a233ee5b21fb3ec5384397",
+  "archive_execution_body_sha256": "e99dde7eef608d96cf60f109fdbfc9119efcb6abda82f81c71080c58d1f87789",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

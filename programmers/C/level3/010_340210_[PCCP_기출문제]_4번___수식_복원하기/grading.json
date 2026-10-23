@@ -1,0 +1,29 @@
+{
+  "id": 340210,
+  "title": "[PCCP 기출문제] 4번 / 수식 복원하기",
+  "level": 3,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:01.702Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/340210",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:26:59",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "e065451074457d3db6bcf1e5c8adc705d8867c1d2b7a035f50877bd09bccd35c",
+  "archive_execution_body_sha256": "3911a63f2aba86582fa1dbd7b9ed1085b8a79612472fa872e5c0dafdb36c0453",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

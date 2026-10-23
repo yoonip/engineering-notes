@@ -1,0 +1,29 @@
+{
+  "id": 12901,
+  "title": "2016년",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:53.635Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12901",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:26:28",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "1df6076de83c53e701eda5f47e720824034a40c4810b31142b45047271e0afef",
+  "archive_execution_body_sha256": "a1d4ad8b6ba9c99109016cc09ab7d2a71700fc1b30c995471898d15f6c6560dc",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

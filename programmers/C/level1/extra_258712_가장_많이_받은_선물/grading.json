@@ -1,0 +1,29 @@
+{
+  "id": 258712,
+  "title": "가장 많이 받은 선물",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:26.111Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/258712",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:45:26",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "16a59e2e0847051f6b4e56f12dc6cc007af07214e5bfa71d9563eada8bede601",
+  "archive_execution_body_sha256": "28638badc88930fd52d64feaf35fa9e6c871f99b9693005eca1aa2f64ef29cb3",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 12973,
+  "title": "짝지어 제거하기",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:05:15.240Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12973",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:34:07",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "fe8de93203e42d6e075dc1212d84ebf0a018b73781b6bf2065265d8e21db31f6",
+  "archive_execution_body_sha256": "2108b5212b4f97252d4b3d8428198817d280bdff6d23d9bde4fd780c87a3cbb9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

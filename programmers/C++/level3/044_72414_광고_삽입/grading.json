@@ -1,0 +1,29 @@
+{
+  "id": 72414,
+  "title": "광고 삽입",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:30.584Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/72414",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:56:34",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "7bf038531d0d298663c988a745ec036c3889b94c35d8c7714c4a9502e716950b",
+  "archive_execution_body_sha256": "4e4e5b118413087bca626c72c93da6258da3f04e363ea8fd3e5e421ad8a212b5",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

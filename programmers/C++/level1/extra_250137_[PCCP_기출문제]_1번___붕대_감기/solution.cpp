@@ -1,0 +1,64 @@
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <unordered_set>
+#include <unordered_map>
+#include <sstream>
+#include <cctype>
+#include <cstdlib>
+#include <cstdio>
+#include <cmath>
+#include <queue>
+#include <set>
+#include <climits>
+#include <iostream>
+using namespace std;
+
+int solution(vector<int> bandage, int health, vector<vector<int>> attacks) {
+    int current = health, previous = 0;
+    for (const auto& attack : attacks) {
+        int quiet = attack[0] - previous - 1;
+        current = min(health, current + quiet * bandage[1] + quiet / bandage[0] * bandage[2]);
+        current -= attack[1];
+        if (current <= 0) return -1;
+        previous = attack[0];
+    }
+    return current;
+}
+
+// 전체 코드 줄별 설명
+// #include <string>  // 문자열 string 사용 준비
+// #include <vector>  // 가변 길이 배열 vector 사용 준비
+// #include <algorithm>  // 정렬·탐색·최솟값 등 표준 알고리즘 사용 준비
+// #include <numeric>  // gcd·accumulate 등 수치 알고리즘 사용 준비
+// #include <functional>  // 함수 래퍼와 greater 등 비교 함수 객체 사용 준비
+// #include <unordered_set>  // 중복 없는 원소를 저장하는 해시 집합 사용 준비
+// #include <unordered_map>  // 키로 값을 찾는 해시 맵 사용 준비
+// #include <sstream>  // 문자열을 토큰으로 나눠 읽을 스트림 사용 준비
+// #include <cctype>  // 숫자·대소문자 검사와 변환 함수 사용 준비
+// #include <cstdlib>  // 정수 절댓값 등 표준 유틸리티 함수 사용 준비
+// #include <cstdio>  // snprintf 등 형식 있는 입출력 함수 사용 준비
+// #include <cmath>  // 제곱근 등 수학 함수 사용 준비
+// #include <queue>  // FIFO 큐와 우선순위 큐 사용 준비
+// #include <set>  // 중복 제거와 정렬을 함께 하는 집합 사용 준비
+// #include <climits>  // 정수 범위 상수 사용 준비
+// #include <iostream>  // cin·cout 표준 입출력 사용 준비
+// using namespace std;  // 표준 이름의 std:: 접두사 생략
+//
+// int solution(vector<int> bandage, int health, vector<vector<int>> attacks) {  // [PCCP 기출문제] 1번 / 붕대 감기 풀이 함수 정의
+//     int current = health, previous = 0;  // 현재 체력 current는 최대 체력, 이전 공격 시각 previous는 0에서 시작
+//     for (const auto& attack : attacks) {  // 시간순 공격 기록을 하나씩 처리
+//         int quiet = attack[0] - previous - 1;  // 이번 공격 직전까지 공격이 없던 초 수 quiet 계산
+//         current = min(health, current + quiet * bandage[1] + quiet / bandage[0] * bandage[2]);  // 기본 회복과 연속 성공 보너스를 더하되 최대 체력 health로 제한
+//         current -= attack[1];  // 이번 공격의 피해량을 현재 체력에서 차감
+//         if (current <= 0) return -1;  // 체력이 0 이하면 사망을 뜻하는 -1 반환
+//         previous = attack[0];  // 다음 회복 구간을 계산하도록 이전 공격 시각 갱신
+//     }  // 블록 끝
+//     return current;  // 모든 공격을 견딘 뒤 남은 체력 반환
+// }  // 함수 끝
+//
+
+// 풀이 요약
+// 공격 사이의 빈 시간에 얻을 기본 회복과 연속 성공 보너스를 한 번에 계산. 공격을 맞은 뒤 체력이 0 이하면 즉시 종료.

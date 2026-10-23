@@ -1,0 +1,35 @@
+{
+  "id": 1839,
+  "title": "튜브의 소개팅",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:11.938Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/1839",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:51:47",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    },
+    {
+      "submitted_at": "2026-10-19 16:36:58",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "630dcba19926eab58172585e4a9cc7552060230eb405e5c63476fa0980712d4c",
+  "archive_execution_body_sha256": "5ce7291aac0ab83ed4346b5ac375563a40b5c8a9dc64ef046c09dc16d6776b98",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

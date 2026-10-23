@@ -1,0 +1,29 @@
+{
+  "id": 161989,
+  "title": "덧칠하기",
+  "level": 1,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:32.655Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/161989",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:46:57",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "9bfab8a82e0c36f63dc542cdd3fbb5cda8267c58577edc1006b8224daae04b95",
+  "archive_execution_body_sha256": "5f94666eb19cbca537f698159e645d93974f7a7e0ea32cc0f3f368691ad5605e",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 181850,
+  "title": "정수 부분",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:19:44.471Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181850",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 07:19:37",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "c0855ace60fe931bdfa83a6a7a7cf0bf93cfc90c059e4a129295aa41162475c2",
+  "archive_execution_body_sha256": "ab1f7af49b1c561d62f574125bc91ed772e3ee699cb844f0aae62648158c2e39",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

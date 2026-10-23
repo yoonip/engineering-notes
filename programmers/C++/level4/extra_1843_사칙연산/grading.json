@@ -1,0 +1,29 @@
+{
+  "id": 1843,
+  "title": "사칙연산",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:12.023Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/1843",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:51:24",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "a4d9c946bbbfbad95259559df9dd5c861289a959518c880c7234b13676386d6d",
+  "archive_execution_body_sha256": "5f3c893cc0d92a6d4e91c29ce9c8fb42bba4e09eaed7eea0e99956f22b18c9f9",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

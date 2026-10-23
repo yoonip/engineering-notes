@@ -1,0 +1,29 @@
+{
+  "id": 12929,
+  "title": "올바른 괄호의 갯수",
+  "level": 4,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:10.106Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12929",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:38:47",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "4cfb8bc734250bd26fd7a6fb309f51a789feaeac4e56e91af473ba34e22ed3cb",
+  "archive_execution_body_sha256": "e299565a9c5d941e0faca4760b16d6041d6c4d71f431a73cfea013a95ac03ad2",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

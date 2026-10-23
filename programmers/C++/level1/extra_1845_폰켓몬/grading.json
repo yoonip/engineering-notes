@@ -1,0 +1,29 @@
+{
+  "id": 1845,
+  "title": "폰켓몬",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:53.639Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/1845",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:26:42",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "1689ba988f9dfa21e3f9a9daeb2eebe1a1396845ece0f46333c8f32a00531705",
+  "archive_execution_body_sha256": "00301dbaaaa47d4450e13ee38bfcf8a3b280eb36e45b129d3ba41fa74275ab7d",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

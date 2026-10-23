@@ -1,0 +1,29 @@
+{
+  "id": 388354,
+  "title": "홀짝트리",
+  "level": 3,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:01:59.857Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/388354",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:45:24",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "1d45c52899523bbf1b87e9d7463492947b9cacceece9931e94860ac3acf6e343",
+  "archive_execution_body_sha256": "c6ba3939bc973ae894d774764cf85f41ede85786e428eaf7b5499328e80d88ee",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

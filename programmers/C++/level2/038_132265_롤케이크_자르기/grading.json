@@ -1,0 +1,29 @@
+{
+  "id": 132265,
+  "title": "롤케이크 자르기",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:43.100Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/132265",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:35:30",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "f03783cd9b2361303723ee6cfd44b8c617dbbc82a2cd23e41aba306945af489b",
+  "archive_execution_body_sha256": "aa72f50430d307c7325e6dd8ca22b4e0566879b598cac611a268a6a0f81658ea",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 12932,
+  "title": "자연수 뒤집어 배열로 만들기",
+  "level": 1,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:03:38.089Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/12932",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:21:51",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "046b693cd8dbd64e898676325c2c24cc1128be7f499078c618ce866902c0d905",
+  "archive_execution_body_sha256": "d4898755654ac89da6465cd3eb936eeca0257910c3ec37d6f3507527679b9e39",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

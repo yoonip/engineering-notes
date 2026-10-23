@@ -1,0 +1,29 @@
+{
+  "id": 42894,
+  "title": "블록 게임",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:06.339Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42894",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:49:00",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "07c9632d0dd3d25a0a0ce61859c334dc666d31f11746676fb7860fdbf7ba4b4a",
+  "archive_execution_body_sha256": "d31c68858539c059366b0a50e83bc7f7dfc3b375726fd98e232a22cac94d3583",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

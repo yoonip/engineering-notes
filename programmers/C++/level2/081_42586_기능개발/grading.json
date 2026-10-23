@@ -1,0 +1,29 @@
+{
+  "id": 42586,
+  "title": "기능개발",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:59.099Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/42586",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:24:46",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "3c379db34a0ebde1c1d9097365195b6b0694e19b3fb516a4c874497ccbfa6aff",
+  "archive_execution_body_sha256": "5205ddff9e3f97458bb1d686aa3f3586bcc3a1bdce8de8c0a0b174bc11b3010f",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

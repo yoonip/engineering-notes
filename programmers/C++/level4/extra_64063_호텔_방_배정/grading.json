@@ -1,0 +1,29 @@
+{
+  "id": 64063,
+  "title": "호텔 방 배정",
+  "level": 4,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:00.640Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/64063",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:46:34",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "fe9524da43e7e39b4424d5f517ab33c7b73c3582b5ef5fe2dc7acd7154f9fdd0",
+  "archive_execution_body_sha256": "1fcf24d7aee9148cf0e2ea7e0298afba11cfd567b24e15fa2fedb8e4d9f39da6",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

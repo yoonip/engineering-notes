@@ -1,0 +1,29 @@
+{
+  "id": 181838,
+  "title": "날짜 비교하기",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:19.925Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181838",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:25:07",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "a7eb122429f3407a0f3d51210a2dbfe7c1d93b73056102e57bc109c33fb43f66",
+  "archive_execution_body_sha256": "7fbc93c5196212898a88fd4958eaa2d5c626f08a406261a47702b6649fc15a39",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 181929,
+  "title": "원소들의 곱과 합",
+  "level": 0,
+  "language": "C",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:02:17.206Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/181929",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 05:38:41",
+      "language": "C",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.c",
+  "archive_source_sha256": "dff5177e18129b2dbd762ceb9c8c64a799598bae5c76c8741dfa45c945fa04be",
+  "archive_execution_body_sha256": "ad33eaa4795bd2624b000ae2548288c17e1516fddd6f8d1b766130d3ba2daf85",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

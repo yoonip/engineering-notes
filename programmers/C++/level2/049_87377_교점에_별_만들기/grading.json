@@ -1,0 +1,29 @@
+{
+  "id": 87377,
+  "title": "교점에 별 만들기",
+  "level": 2,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:12.565Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/87377",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:38:09",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "a48ad7100751b1a5a40952fa95ea41bc6ca566b8a0ea1333968beb7b91cbfa02",
+  "archive_execution_body_sha256": "8eb9400638735e14f55b40edcaf16662bce706a9f8c23dd398e187df9c65b5f7",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": false,
+  "full_notes_in_archive": true,
+  "template_submission_files": []
+}

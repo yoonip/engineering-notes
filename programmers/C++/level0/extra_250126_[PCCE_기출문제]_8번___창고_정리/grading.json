@@ -1,0 +1,31 @@
+{
+  "id": 250126,
+  "title": "[PCCE 기출문제] 8번 / 창고 정리",
+  "level": 0,
+  "language": "C++",
+  "status": "accepted",
+  "score": 100,
+  "verification": "actual_submission_history",
+  "verified_at": "2026-10-23T22:04:12.446Z",
+  "checked_on": "2026-10-24",
+  "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/250126",
+  "accepted_submissions": [
+    {
+      "submitted_at": "2026-10-24 06:33:28",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source": "solution.cpp",
+  "archive_source_sha256": "2c4528aa70c0ef62f3e3e6791c798b14706fe3ab79908d925fa526f3e11c56f9",
+  "archive_execution_body_sha256": "971190fe3d1cbb71c1f98af991831ec950ea3283b6d4f0fa697e8ac9afd7d400",
+  "execution_body_changed_during_annotation_edit": false,
+  "annotation_style": "personal_study_notes",
+  "archive_annotations_resubmitted": false,
+  "locked_template": true,
+  "full_notes_in_archive": true,
+  "template_submission_files": [
+    "submitted.cpp"
+  ]
+}
