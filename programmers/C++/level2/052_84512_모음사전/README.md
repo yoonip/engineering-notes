@@ -46,4 +46,4 @@ int solution(string word) {
 - 제출 기록: 2026-10-24 06:39:02
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/052_84512_%EB%AA%A8%EC%9D%8C%EC%82%AC%EC%A0%84/README.md)
+[기존 풀이 기록](../../../Python/level2/052_84512_%EB%AA%A8%EC%9D%8C%EC%82%AC%EC%A0%84/README.md)

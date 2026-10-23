@@ -62,4 +62,4 @@ vector<string> solution(vector<string> s) {
 - 제출 기록: 2026-10-24 06:55:07
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/040_77886_110_%EC%98%AE%EA%B8%B0%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/040_77886_110_%EC%98%AE%EA%B8%B0%EA%B8%B0/README.md)

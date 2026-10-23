@@ -76,4 +76,4 @@ string solution(vector<string> participant, vector<string> completion) {
 - 제출 기록: 2026-10-24 06:17:29
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_42576_%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80_%EB%AA%BB%ED%95%9C_%EC%84%A0%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_42576_%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80_%EB%AA%BB%ED%95%9C_%EC%84%A0%EC%88%98/README.md)

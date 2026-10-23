@@ -119,4 +119,4 @@ int solution(int** grid, size_t grid_rows, size_t grid_cols) {
 - 제출 기록: 2026-10-24 06:05:07
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/001_468381_%EA%B8%B0%EC%B0%A8_%EC%84%A0%EB%A1%9C/README.md)
+[기존 풀이 기록](../../../Python/level3/001_468381_%EA%B8%B0%EC%B0%A8_%EC%84%A0%EB%A1%9C/README.md)

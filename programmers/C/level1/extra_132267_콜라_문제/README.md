@@ -53,4 +53,4 @@ int solution(int a, int b, int n) {
 - 제출 기록: 2026-10-24 05:51:19
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_132267_%EC%BD%9C%EB%9D%BC_%EB%AC%B8%EC%A0%9C/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_132267_%EC%BD%9C%EB%9D%BC_%EB%AC%B8%EC%A0%9C/README.md)

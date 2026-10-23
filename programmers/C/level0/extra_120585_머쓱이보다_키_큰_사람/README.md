@@ -50,4 +50,4 @@ int solution(int array[], size_t array_len, int height) {
 - 제출 기록: 2026-10-24 06:55:55
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120585_%EB%A8%B8%EC%93%B1%EC%9D%B4%EB%B3%B4%EB%8B%A4_%ED%82%A4_%ED%81%B0_%EC%82%AC%EB%9E%8C/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120585_%EB%A8%B8%EC%93%B1%EC%9D%B4%EB%B3%B4%EB%8B%A4_%ED%82%A4_%ED%81%B0_%EC%82%AC%EB%9E%8C/README.md)

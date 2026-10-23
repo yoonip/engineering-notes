@@ -58,4 +58,4 @@ int solution(vector<int> stones, int k) {
 - 제출 기록: 2026-10-24 06:41:06
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/051_64062_%EC%A7%95%EA%B2%80%EB%8B%A4%EB%A6%AC_%EA%B1%B4%EB%84%88%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/051_64062_%EC%A7%95%EA%B2%80%EB%8B%A4%EB%A6%AC_%EA%B1%B4%EB%84%88%EA%B8%B0/README.md)

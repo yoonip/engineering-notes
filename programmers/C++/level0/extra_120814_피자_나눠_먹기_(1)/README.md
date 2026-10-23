@@ -55,4 +55,4 @@ int solution(int n) { return (n + 6) / 7; }
 - 제출 기록: 2026-10-24 06:53:22
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120814_%ED%94%BC%EC%9E%90_%EB%82%98%EB%88%A0_%EB%A8%B9%EA%B8%B0_%281%29/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120814_%ED%94%BC%EC%9E%90_%EB%82%98%EB%88%A0_%EB%A8%B9%EA%B8%B0_%281%29/README.md)

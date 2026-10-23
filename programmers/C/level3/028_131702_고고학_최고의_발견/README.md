@@ -79,4 +79,4 @@ int solution(int** clockHands, size_t clockHands_rows, size_t clockHands_cols) {
 - 제출 기록: 2026-10-24 06:31:09
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/028_131702_%EA%B3%A0%EA%B3%A0%ED%95%99_%EC%B5%9C%EA%B3%A0%EC%9D%98_%EB%B0%9C%EA%B2%AC/README.md)
+[기존 풀이 기록](../../../Python/level3/028_131702_%EA%B3%A0%EA%B3%A0%ED%95%99_%EC%B5%9C%EA%B3%A0%EC%9D%98_%EB%B0%9C%EA%B2%AC/README.md)

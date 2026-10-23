@@ -132,4 +132,4 @@ int solution(vector<vector<int>> grid) {
 - 제출 기록: 2026-10-24 06:42:00
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_389629_%EA%B0%80%EC%9E%A5_%ED%81%B0_%EC%82%BC%EA%B0%81%ED%98%95_%EB%8D%A9%EC%96%B4%EB%A6%AC/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_389629_%EA%B0%80%EC%9E%A5_%ED%81%B0_%EC%82%BC%EA%B0%81%ED%98%95_%EB%8D%A9%EC%96%B4%EB%A6%AC/README.md)

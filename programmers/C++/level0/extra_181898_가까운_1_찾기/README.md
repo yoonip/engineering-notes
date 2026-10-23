@@ -57,4 +57,4 @@ int solution(vector<int> arr, int idx) {
 - 제출 기록: 2026-10-24 06:03:06
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181898_%EA%B0%80%EA%B9%8C%EC%9A%B4_1_%EC%B0%BE%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181898_%EA%B0%80%EA%B9%8C%EC%9A%B4_1_%EC%B0%BE%EA%B8%B0/README.md)

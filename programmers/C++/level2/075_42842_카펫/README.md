@@ -50,4 +50,4 @@ vector<int> solution(int brown, int yellow) {
 - 제출 기록: 2026-10-24 06:22:31
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/075_42842_%EC%B9%B4%ED%8E%AB/README.md)
+[기존 풀이 기록](../../../Python/level2/075_42842_%EC%B9%B4%ED%8E%AB/README.md)

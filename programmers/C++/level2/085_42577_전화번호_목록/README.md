@@ -50,4 +50,4 @@ bool solution(vector<string> phone_book) {
 - 제출 기록: 2026-10-24 06:26:00
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/085_42577_%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8_%EB%AA%A9%EB%A1%9D/README.md)
+[기존 풀이 기록](../../../Python/level2/085_42577_%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8_%EB%AA%A9%EB%A1%9D/README.md)

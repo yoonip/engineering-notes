@@ -67,4 +67,4 @@ long long solution(int weights[], size_t weights_len) {
 - 제출 기록: 2026-10-24 06:13:31
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/027_152996_%EC%8B%9C%EC%86%8C_%EC%A7%9D%EA%BF%8D/README.md)
+[기존 풀이 기록](../../../Python/level2/027_152996_%EC%8B%9C%EC%86%8C_%EC%A7%9D%EA%BF%8D/README.md)

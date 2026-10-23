@@ -94,4 +94,4 @@ int solution(vector<string> maps) {
 - 제출 기록: 2026-10-24 06:30:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/022_159993_%EB%AF%B8%EB%A1%9C_%ED%83%88%EC%B6%9C/README.md)
+[기존 풀이 기록](../../../Python/level2/022_159993_%EB%AF%B8%EB%A1%9C_%ED%83%88%EC%B6%9C/README.md)

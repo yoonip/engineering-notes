@@ -58,4 +58,4 @@ int solution(int N, int number) {
 - 제출 기록: 2026-10-24 06:44:26
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/064_42895_N%EC%9C%BC%EB%A1%9C_%ED%91%9C%ED%98%84/README.md)
+[기존 풀이 기록](../../../Python/level3/064_42895_N%EC%9C%BC%EB%A1%9C_%ED%91%9C%ED%98%84/README.md)

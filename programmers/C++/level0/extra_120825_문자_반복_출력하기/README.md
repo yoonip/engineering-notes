@@ -63,4 +63,4 @@ string solution(string my_string, int n) {
 - 제출 기록: 2026-10-24 06:51:32
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120825_%EB%AC%B8%EC%9E%90_%EB%B0%98%EB%B3%B5_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120825_%EB%AC%B8%EC%9E%90_%EB%B0%98%EB%B3%B5_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md)

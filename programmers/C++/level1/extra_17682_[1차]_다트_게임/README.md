@@ -84,4 +84,4 @@ int solution(string dartResult) {
 - 제출 기록: 2026-10-24 06:17:48
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_17682_%5B1%EC%B0%A8%5D_%EB%8B%A4%ED%8A%B8_%EA%B2%8C%EC%9E%84/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_17682_%5B1%EC%B0%A8%5D_%EB%8B%A4%ED%8A%B8_%EA%B2%8C%EC%9E%84/README.md)

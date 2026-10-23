@@ -41,4 +41,4 @@ int solution(double flo) { return (int)flo; }
 - 제출 기록: 2026-10-24 07:19:37
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181850_%EC%A0%95%EC%88%98_%EB%B6%80%EB%B6%84/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181850_%EC%A0%95%EC%88%98_%EB%B6%80%EB%B6%84/README.md)

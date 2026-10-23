@@ -82,4 +82,4 @@ char** solution(const char* my_string) {
 - 제출 기록: 2026-10-24 07:16:41
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181869_%EA%B3%B5%EB%B0%B1%EC%9C%BC%EB%A1%9C_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0_1/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181869_%EA%B3%B5%EB%B0%B1%EC%9C%BC%EB%A1%9C_%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0_1/README.md)

@@ -78,4 +78,4 @@ char* solution(const char* letter) {
 - 제출 기록: 2026-10-24 06:55:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120838_%EB%AA%A8%EC%8A%A4%EB%B6%80%ED%98%B8_%281%29/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120838_%EB%AA%A8%EC%8A%A4%EB%B6%80%ED%98%B8_%281%29/README.md)

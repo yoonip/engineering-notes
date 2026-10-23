@@ -78,4 +78,4 @@ int solution(string numbers) {
 - 제출 기록: 2026-10-24 06:22:40
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/076_42839_%EC%86%8C%EC%88%98_%EC%B0%BE%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/076_42839_%EC%86%8C%EC%88%98_%EC%B0%BE%EA%B8%B0/README.md)

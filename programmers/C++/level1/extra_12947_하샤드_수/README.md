@@ -74,4 +74,4 @@ bool solution(int x) {
 - 제출 기록: 2026-10-24 06:19:58
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12947_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12947_%ED%95%98%EC%83%A4%EB%93%9C_%EC%88%98/README.md)

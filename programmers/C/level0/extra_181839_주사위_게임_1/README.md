@@ -48,4 +48,4 @@ int solution(int a, int b) {
 - 제출 기록: 2026-10-24 06:24:46
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181839_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B2%8C%EC%9E%84_1/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181839_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B2%8C%EC%9E%84_1/README.md)

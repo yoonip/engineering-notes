@@ -59,4 +59,4 @@ int solution(int** sizes, size_t sizes_rows, size_t sizes_cols) {
 - 제출 기록: 2026-10-24 05:52:55
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_86491_%EC%B5%9C%EC%86%8C%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_86491_%EC%B5%9C%EC%86%8C%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95/README.md)

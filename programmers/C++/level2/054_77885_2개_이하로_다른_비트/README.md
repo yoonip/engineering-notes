@@ -48,4 +48,4 @@ vector<long long> solution(vector<long long> numbers) {
 - 제출 기록: 2026-10-24 06:39:44
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/054_77885_2%EA%B0%9C_%EC%9D%B4%ED%95%98%EB%A1%9C_%EB%8B%A4%EB%A5%B8_%EB%B9%84%ED%8A%B8/README.md)
+[기존 풀이 기록](../../../Python/level2/054_77885_2%EA%B0%9C_%EC%9D%B4%ED%95%98%EB%A1%9C_%EB%8B%A4%EB%A5%B8_%EB%B9%84%ED%8A%B8/README.md)

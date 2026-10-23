@@ -79,4 +79,4 @@ int solution(int diffs[], size_t diffs_len, int times[], size_t times_len, long 
 - 제출 기록: 2026-10-24 06:08:26
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/009_340212_%ED%8D%BC%EC%A6%90_%EA%B2%8C%EC%9E%84_%EC%B1%8C%EB%A6%B0%EC%A7%80/README.md)
+[기존 풀이 기록](../../../Python/level2/009_340212_%ED%8D%BC%EC%A6%90_%EA%B2%8C%EC%9E%84_%EC%B1%8C%EB%A6%B0%EC%A7%80/README.md)

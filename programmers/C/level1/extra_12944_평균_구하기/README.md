@@ -51,4 +51,4 @@ double solution(int arr[], size_t arr_len) {
 - 제출 기록: 2026-10-24 05:56:23
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12944_%ED%8F%89%EA%B7%A0_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12944_%ED%8F%89%EA%B7%A0_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)

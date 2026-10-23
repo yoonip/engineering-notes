@@ -66,4 +66,4 @@ int** solution(int n) {
 - 제출 기록: 2026-10-24 07:23:02
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181832_%EC%A0%95%EC%88%98%EB%A5%BC_%EB%82%98%EC%84%A0%ED%98%95%EC%9C%BC%EB%A1%9C_%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181832_%EC%A0%95%EC%88%98%EB%A5%BC_%EB%82%98%EC%84%A0%ED%98%95%EC%9C%BC%EB%A1%9C_%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0/README.md)

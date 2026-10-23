@@ -41,4 +41,4 @@ int solution(const char* str1, const char* str2) { return strstr(str2, str1) != 
 - 제출 기록: 2026-10-24 06:23:36
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181842_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181842_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4/README.md)

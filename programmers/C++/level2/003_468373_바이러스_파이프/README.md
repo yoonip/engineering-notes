@@ -126,4 +126,4 @@ int solution(int n, int infection, vector<vector<int>> edges, int k) {
 - 제출 기록: 2026-10-24 06:24:16
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/003_468373_%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4_%ED%8C%8C%EC%9D%B4%ED%94%84/README.md)
+[기존 풀이 기록](../../../Python/level2/003_468373_%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4_%ED%8C%8C%EC%9D%B4%ED%94%84/README.md)

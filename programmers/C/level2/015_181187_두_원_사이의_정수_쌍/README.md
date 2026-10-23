@@ -77,4 +77,4 @@ long long solution(int r1, int r2) {
 - 제출 기록: 2026-10-24 06:10:04
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/015_181187_%EB%91%90_%EC%9B%90_%EC%82%AC%EC%9D%B4%EC%9D%98_%EC%A0%95%EC%88%98_%EC%8C%8D/README.md)
+[기존 풀이 기록](../../../Python/level2/015_181187_%EB%91%90_%EC%9B%90_%EC%82%AC%EC%9D%B4%EC%9D%98_%EC%A0%95%EC%88%98_%EC%8C%8D/README.md)

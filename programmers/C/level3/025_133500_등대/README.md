@@ -71,4 +71,4 @@ int solution(int n, int** lighthouse, size_t lighthouse_rows, size_t lighthouse_
 - 제출 기록: 2026-10-24 06:30:31
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/025_133500_%EB%93%B1%EB%8C%80/README.md)
+[기존 풀이 기록](../../../Python/level3/025_133500_%EB%93%B1%EB%8C%80/README.md)

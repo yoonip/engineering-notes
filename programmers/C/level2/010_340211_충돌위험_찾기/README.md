@@ -93,4 +93,4 @@ int solution(int** points, size_t points_rows, size_t points_cols, int** routes,
 - 제출 기록: 2026-10-24 06:08:40
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/010_340211_%EC%B6%A9%EB%8F%8C%EC%9C%84%ED%97%98_%EC%B0%BE%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/010_340211_%EC%B6%A9%EB%8F%8C%EC%9C%84%ED%97%98_%EC%B0%BE%EA%B8%B0/README.md)

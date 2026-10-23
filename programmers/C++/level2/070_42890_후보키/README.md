@@ -70,4 +70,4 @@ int solution(vector<vector<string>> relation) {
 - 제출 기록: 2026-10-24 06:19:39
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/070_42890_%ED%9B%84%EB%B3%B4%ED%82%A4/README.md)
+[기존 풀이 기록](../../../Python/level2/070_42890_%ED%9B%84%EB%B3%B4%ED%82%A4/README.md)

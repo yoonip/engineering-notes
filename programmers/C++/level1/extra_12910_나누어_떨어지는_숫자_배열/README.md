@@ -78,4 +78,4 @@ vector<int> solution(vector<int> arr, int divisor) {
 - 제출 기록: 2026-10-24 06:25:38
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12910_%EB%82%98%EB%88%84%EC%96%B4_%EB%96%A8%EC%96%B4%EC%A7%80%EB%8A%94_%EC%88%AB%EC%9E%90_%EB%B0%B0%EC%97%B4/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12910_%EB%82%98%EB%88%84%EC%96%B4_%EB%96%A8%EC%96%B4%EC%A7%80%EB%8A%94_%EC%88%AB%EC%9E%90_%EB%B0%B0%EC%97%B4/README.md)

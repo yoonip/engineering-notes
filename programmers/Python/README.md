@@ -1,0 +1,30 @@
+# Python 풀이
+
+문제별 코드, 줄별 주석, 풀이 설명과 검증 자료를 레벨별로 정리한 목록입니다.
+
+[프로그래머스 전체 목차](../README.md) · [전체 코드 목록](catalog.json) · [기존 검증 기록](../VALIDATION.md)
+
+## 레벨별 목록
+
+| 레벨 | Python3 제출 기록 | Python 비교 풀이 |
+|---|---:|---:|
+| [레벨 0](level0/README.md) | 240 | 0 |
+| [레벨 1](level1/README.md) | 88 | 0 |
+| [레벨 2](level2/README.md) | 117 | 2 |
+| [레벨 3](level3/README.md) | 82 | 6 |
+| [레벨 4](level4/README.md) | 25 | 2 |
+| [레벨 5](level5/README.md) | 2 | 0 |
+
+## 기록 구분
+
+Python3 제출 기록 554개와 Python 비교 풀이 10개를 구분합니다. 비교 풀이 폴더에는 당시 C++ 제출본과 검증 자료도 함께 보관합니다. 레벨 5의 미완료 시도는 해당 레벨 목록에서 따로 확인할 수 있습니다. SQL 자료와 SQL 검증용 Python 스크립트는 기존 레벨별 자료에 남아 있습니다.
+
+## 검증 실행
+
+저장소 최상위에서 회귀 검사를 실행합니다.
+
+```bash
+python -B -m unittest discover -s programmers/Python/tests
+```
+
+문제별 검증과 원본 대조 방법은 [검증 기록](../VALIDATION.md)에서 확인할 수 있습니다.

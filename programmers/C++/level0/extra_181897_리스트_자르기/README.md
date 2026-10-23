@@ -65,4 +65,4 @@ vector<int> solution(int n, vector<int> slicer, vector<int> num_list) {
 - 제출 기록: 2026-10-24 06:03:36
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181897_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181897_%EB%A6%AC%EC%8A%A4%ED%8A%B8_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md)

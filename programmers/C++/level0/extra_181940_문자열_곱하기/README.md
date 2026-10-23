@@ -43,4 +43,4 @@ string solution(string my_string, int k) {
 - 제출 기록: 2026-10-24 05:32:56
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181940_%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B3%B1%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181940_%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B3%B1%ED%95%98%EA%B8%B0/README.md)

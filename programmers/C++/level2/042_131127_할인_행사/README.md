@@ -58,4 +58,4 @@ int solution(vector<string> want, vector<int> number, vector<string> discount) {
 - 제출 기록: 2026-10-24 06:36:31
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/042_131127_%ED%95%A0%EC%9D%B8_%ED%96%89%EC%82%AC/README.md)
+[기존 풀이 기록](../../../Python/level2/042_131127_%ED%95%A0%EC%9D%B8_%ED%96%89%EC%82%AC/README.md)

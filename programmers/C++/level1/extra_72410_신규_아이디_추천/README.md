@@ -96,4 +96,4 @@ string solution(string new_id) {
 - 제출 기록: 2026-10-24 06:14:46
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_72410_%EC%8B%A0%EA%B7%9C_%EC%95%84%EC%9D%B4%EB%94%94_%EC%B6%94%EC%B2%9C/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_72410_%EC%8B%A0%EA%B7%9C_%EC%95%84%EC%9D%B4%EB%94%94_%EC%B6%94%EC%B2%9C/README.md)

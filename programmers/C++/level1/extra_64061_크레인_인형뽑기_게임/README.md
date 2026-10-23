@@ -90,4 +90,4 @@ int solution(vector<vector<int>> board, vector<int> moves) {
 - 제출 기록: 2026-10-24 06:15:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_64061_%ED%81%AC%EB%A0%88%EC%9D%B8_%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0_%EA%B2%8C%EC%9E%84/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_64061_%ED%81%AC%EB%A0%88%EC%9D%B8_%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0_%EA%B2%8C%EC%9E%84/README.md)

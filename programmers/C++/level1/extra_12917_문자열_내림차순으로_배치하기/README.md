@@ -66,4 +66,4 @@ string solution(string s) { sort(s.rbegin(), s.rend()); return s; }
 - 제출 기록: 2026-10-24 06:24:29
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12917_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C_%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12917_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C_%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0/README.md)

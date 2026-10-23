@@ -52,4 +52,4 @@ int solution(int n, vector<vector<int>> edge) {
 - 제출 기록: 2026-10-24 06:43:00
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/057_49189_%EA%B0%80%EC%9E%A5_%EB%A8%BC_%EB%85%B8%EB%93%9C/README.md)
+[기존 풀이 기록](../../../Python/level3/057_49189_%EA%B0%80%EC%9E%A5_%EB%A8%BC_%EB%85%B8%EB%93%9C/README.md)

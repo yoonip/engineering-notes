@@ -91,4 +91,4 @@ int* solution(const char* maps[], size_t maps_len) {
 - 제출 기록: 2026-10-24 06:12:41
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/024_154540_%EB%AC%B4%EC%9D%B8%EB%8F%84_%EC%97%AC%ED%96%89/README.md)
+[기존 풀이 기록](../../../Python/level2/024_154540_%EB%AC%B4%EC%9D%B8%EB%8F%84_%EC%97%AC%ED%96%89/README.md)

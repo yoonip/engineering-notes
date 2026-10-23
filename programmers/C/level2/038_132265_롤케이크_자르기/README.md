@@ -75,4 +75,4 @@ int solution(int topping[], size_t topping_len) {
 - 제출 기록: 2026-10-24 06:16:11
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/038_132265_%EB%A1%A4%EC%BC%80%EC%9D%B4%ED%81%AC_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/038_132265_%EB%A1%A4%EC%BC%80%EC%9D%B4%ED%81%AC_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md)

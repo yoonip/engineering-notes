@@ -50,4 +50,4 @@ int solution(const char* binomial) {
 - 제출 기록: 2026-10-24 07:17:10
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181865_%EA%B0%84%EB%8B%A8%ED%95%9C_%EC%8B%9D_%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181865_%EA%B0%84%EB%8B%A8%ED%95%9C_%EC%8B%9D_%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0/README.md)

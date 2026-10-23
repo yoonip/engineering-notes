@@ -90,4 +90,4 @@ vector<int> solution(int N, vector<int> stages) {
 - 제출 기록: 2026-10-24 06:16:10
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_42889_%EC%8B%A4%ED%8C%A8%EC%9C%A8/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_42889_%EC%8B%A4%ED%8C%A8%EC%9C%A8/README.md)

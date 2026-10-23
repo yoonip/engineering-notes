@@ -47,4 +47,4 @@ int solution(int num_list[], size_t num_list_len) {
 - 제출 기록: 2026-10-24 05:39:10
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181928_%EC%9D%B4%EC%96%B4_%EB%B6%99%EC%9D%B8_%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181928_%EC%9D%B4%EC%96%B4_%EB%B6%99%EC%9D%B8_%EC%88%98/README.md)

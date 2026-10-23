@@ -66,4 +66,4 @@ vector<int> solution(int n, int m) { int g = gcd(n, m); return {g, n / g * m}; }
 - 제출 기록: 2026-10-24 06:20:48
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12940_%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80_%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12940_%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80_%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98/README.md)

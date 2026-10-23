@@ -47,4 +47,4 @@ int solution(vector<int> num_list) {
 - 제출 기록: 2026-10-24 05:38:59
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181929_%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98_%EA%B3%B1%EA%B3%BC_%ED%95%A9/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181929_%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98_%EA%B3%B1%EA%B3%BC_%ED%95%A9/README.md)

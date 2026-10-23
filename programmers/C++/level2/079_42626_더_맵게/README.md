@@ -58,4 +58,4 @@ int solution(vector<int> scoville, int K) {
 - 제출 기록: 2026-10-24 06:23:51
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/079_42626_%EB%8D%94_%EB%A7%B5%EA%B2%8C/README.md)
+[기존 풀이 기록](../../../Python/level2/079_42626_%EB%8D%94_%EB%A7%B5%EA%B2%8C/README.md)

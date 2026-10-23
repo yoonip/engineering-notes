@@ -46,4 +46,4 @@ int solution(vector<int> A, vector<int> B) {
 - 제출 기록: 2026-10-24 06:47:00
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/074_12987_%EC%88%AB%EC%9E%90_%EA%B2%8C%EC%9E%84/README.md)
+[기존 풀이 기록](../../../Python/level3/074_12987_%EC%88%AB%EC%9E%90_%EA%B2%8C%EC%9E%84/README.md)

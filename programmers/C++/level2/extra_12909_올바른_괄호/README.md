@@ -48,4 +48,4 @@ bool solution(string s) {
 - 제출 기록: 2026-10-24 06:43:48
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/extra_12909_%EC%98%AC%EB%B0%94%EB%A5%B8_%EA%B4%84%ED%98%B8/README.md)
+[기존 풀이 기록](../../../Python/level2/extra_12909_%EC%98%AC%EB%B0%94%EB%A5%B8_%EA%B4%84%ED%98%B8/README.md)

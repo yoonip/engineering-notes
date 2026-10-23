@@ -66,4 +66,4 @@ string solution(string s) { return s.substr((s.size() - 1) / 2, s.size() % 2 ? 1
 - 제출 기록: 2026-10-24 06:26:17
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12903_%EA%B0%80%EC%9A%B4%EB%8D%B0_%EA%B8%80%EC%9E%90_%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12903_%EA%B0%80%EC%9A%B4%EB%8D%B0_%EA%B8%80%EC%9E%90_%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/README.md)

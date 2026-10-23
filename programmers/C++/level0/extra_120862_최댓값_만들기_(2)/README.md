@@ -63,4 +63,4 @@ int solution(vector<int> numbers) {
 - 제출 기록: 2026-10-24 06:57:09
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120862_%EC%B5%9C%EB%8C%93%EA%B0%92_%EB%A7%8C%EB%93%A4%EA%B8%B0_%282%29/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120862_%EC%B5%9C%EB%8C%93%EA%B0%92_%EB%A7%8C%EB%93%A4%EA%B8%B0_%282%29/README.md)

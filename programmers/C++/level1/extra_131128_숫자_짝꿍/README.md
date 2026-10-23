@@ -82,4 +82,4 @@ string solution(string X, string Y) {
 - 제출 기록: 2026-10-24 06:11:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_131128_%EC%88%AB%EC%9E%90_%EC%A7%9D%EA%BF%8D/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_131128_%EC%88%AB%EC%9E%90_%EC%A7%9D%EA%BF%8D/README.md)

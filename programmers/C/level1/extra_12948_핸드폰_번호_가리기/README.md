@@ -53,4 +53,4 @@ char* solution(const char* phone_number) {
 - 제출 기록: 2026-10-24 05:55:55
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12948_%ED%95%B8%EB%93%9C%ED%8F%B0_%EB%B2%88%ED%98%B8_%EA%B0%80%EB%A6%AC%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12948_%ED%95%B8%EB%93%9C%ED%8F%B0_%EB%B2%88%ED%98%B8_%EA%B0%80%EB%A6%AC%EA%B8%B0/README.md)

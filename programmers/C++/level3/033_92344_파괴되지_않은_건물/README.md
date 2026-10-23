@@ -60,4 +60,4 @@ int solution(vector<vector<int>> board, vector<vector<int>> skill) {
 - 제출 기록: 2026-10-24 06:52:46
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/033_92344_%ED%8C%8C%EA%B4%B4%EB%90%98%EC%A7%80_%EC%95%8A%EC%9D%80_%EA%B1%B4%EB%AC%BC/README.md)
+[기존 풀이 기록](../../../Python/level3/033_92344_%ED%8C%8C%EA%B4%B4%EB%90%98%EC%A7%80_%EC%95%8A%EC%9D%80_%EA%B1%B4%EB%AC%BC/README.md)

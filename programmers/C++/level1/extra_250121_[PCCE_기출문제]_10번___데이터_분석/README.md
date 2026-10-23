@@ -80,4 +80,4 @@ vector<vector<int>> solution(vector<vector<int>> data, string ext, int val_ext, 
 - 제출 기록: 2026-10-24 06:04:50
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_250121_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_10%EB%B2%88___%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%B6%84%EC%84%9D/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_250121_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_10%EB%B2%88___%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%B6%84%EC%84%9D/README.md)

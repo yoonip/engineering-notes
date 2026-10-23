@@ -61,4 +61,4 @@ int solution(vector<int> sides) {
 - 제출 기록: 2026-10-24 07:28:23
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120889_%EC%82%BC%EA%B0%81%ED%98%95%EC%9D%98_%EC%99%84%EC%84%B1%EC%A1%B0%EA%B1%B4_%281%29/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120889_%EC%82%BC%EA%B0%81%ED%98%95%EC%9D%98_%EC%99%84%EC%84%B1%EC%A1%B0%EA%B1%B4_%281%29/README.md)

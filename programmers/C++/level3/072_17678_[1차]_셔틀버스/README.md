@@ -64,4 +64,4 @@ string solution(int n, int t, int m, vector<string> timetable) {
 - 제출 기록: 2026-10-24 06:46:26
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/072_17678_%5B1%EC%B0%A8%5D_%EC%85%94%ED%8B%80%EB%B2%84%EC%8A%A4/README.md)
+[기존 풀이 기록](../../../Python/level3/072_17678_%5B1%EC%B0%A8%5D_%EC%85%94%ED%8B%80%EB%B2%84%EC%8A%A4/README.md)

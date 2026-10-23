@@ -67,4 +67,4 @@ long long solution(int k, int d) {
 - 제출 기록: 2026-10-24 06:15:10
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/034_140107_%EC%A0%90_%EC%B0%8D%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/034_140107_%EC%A0%90_%EC%B0%8D%EA%B8%B0/README.md)

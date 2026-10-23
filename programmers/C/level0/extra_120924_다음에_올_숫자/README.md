@@ -48,4 +48,4 @@ int solution(int common[], size_t common_len) {
 - 제출 기록: 2026-10-24 06:31:18
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120924_%EB%8B%A4%EC%9D%8C%EC%97%90_%EC%98%AC_%EC%88%AB%EC%9E%90/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120924_%EB%8B%A4%EC%9D%8C%EC%97%90_%EC%98%AC_%EC%88%AB%EC%9E%90/README.md)

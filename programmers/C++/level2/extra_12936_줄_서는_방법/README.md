@@ -60,4 +60,4 @@ vector<int> solution(int n, long long k) {
 - 제출 기록: 2026-10-24 06:37:56
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/extra_12936_%EC%A4%84_%EC%84%9C%EB%8A%94_%EB%B0%A9%EB%B2%95/README.md)
+[기존 풀이 기록](../../../Python/level2/extra_12936_%EC%A4%84_%EC%84%9C%EB%8A%94_%EB%B0%A9%EB%B2%95/README.md)

@@ -92,4 +92,4 @@ vector<int> solution(vector<string> id_list, vector<string> report, int k) {
 - 제출 기록: 2026-10-24 06:12:32
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_92334_%EC%8B%A0%EA%B3%A0_%EA%B2%B0%EA%B3%BC_%EB%B0%9B%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_92334_%EC%8B%A0%EA%B3%A0_%EA%B2%B0%EA%B3%BC_%EB%B0%9B%EA%B8%B0/README.md)

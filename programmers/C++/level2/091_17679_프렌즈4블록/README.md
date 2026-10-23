@@ -72,4 +72,4 @@ int solution(int m, int n, vector<string> board) {
 - 제출 기록: 2026-10-24 06:29:59
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/091_17679_%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D/README.md)
+[기존 풀이 기록](../../../Python/level2/091_17679_%ED%94%84%EB%A0%8C%EC%A6%884%EB%B8%94%EB%A1%9D/README.md)

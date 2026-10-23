@@ -63,4 +63,4 @@ int solution(int order[], size_t order_len) {
 - 제출 기록: 2026-10-24 06:16:25
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/039_131704_%ED%83%9D%EB%B0%B0%EC%83%81%EC%9E%90/README.md)
+[기존 풀이 기록](../../../Python/level2/039_131704_%ED%83%9D%EB%B0%B0%EC%83%81%EC%9E%90/README.md)

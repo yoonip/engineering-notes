@@ -80,4 +80,4 @@ int solution(vector<int> wallet, vector<int> bill) {
 - 제출 기록: 2026-10-24 06:03:13
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_340199_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_9%EB%B2%88___%EC%A7%80%ED%8F%90_%EC%A0%91%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_340199_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_9%EB%B2%88___%EC%A7%80%ED%8F%90_%EC%A0%91%EA%B8%B0/README.md)

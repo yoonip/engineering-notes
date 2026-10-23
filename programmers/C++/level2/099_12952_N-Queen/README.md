@@ -58,4 +58,4 @@ int solution(int n) {
 - 제출 기록: 2026-10-24 06:34:37
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/099_12952_N-Queen/README.md)
+[기존 풀이 기록](../../../Python/level2/099_12952_N-Queen/README.md)

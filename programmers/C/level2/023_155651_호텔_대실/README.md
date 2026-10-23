@@ -61,4 +61,4 @@ int solution(const char*** book_time, size_t book_time_rows, size_t book_time_co
 - 제출 기록: 2026-10-24 06:12:30
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/023_155651_%ED%98%B8%ED%85%94_%EB%8C%80%EC%8B%A4/README.md)
+[기존 풀이 기록](../../../Python/level2/023_155651_%ED%98%B8%ED%85%94_%EB%8C%80%EC%8B%A4/README.md)

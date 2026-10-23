@@ -51,4 +51,4 @@ string solution(string code) {
 - 제출 기록: 2026-10-24 05:35:33
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181932_%EC%BD%94%EB%93%9C_%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181932_%EC%BD%94%EB%93%9C_%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/README.md)

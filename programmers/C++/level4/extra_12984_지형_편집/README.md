@@ -78,4 +78,4 @@ long long solution(vector<vector<int>> land, int P, int Q) {
 - 제출 기록: 2026-10-24 06:50:16
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_12984_%EC%A7%80%ED%98%95_%ED%8E%B8%EC%A7%91/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_12984_%EC%A7%80%ED%98%95_%ED%8E%B8%EC%A7%91/README.md)

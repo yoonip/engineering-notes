@@ -67,4 +67,4 @@ int solution(int n, long long l, long long r) {
 - 제출 기록: 2026-10-24 06:14:27
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/031_148652_%EC%9C%A0%EC%82%AC_%EC%B9%B8%ED%86%A0%EC%96%B4_%EB%B9%84%ED%8A%B8%EC%97%B4/README.md)
+[기존 풀이 기록](../../../Python/level2/031_148652_%EC%9C%A0%EC%82%AC_%EC%B9%B8%ED%86%A0%EC%96%B4_%EB%B9%84%ED%8A%B8%EC%97%B4/README.md)

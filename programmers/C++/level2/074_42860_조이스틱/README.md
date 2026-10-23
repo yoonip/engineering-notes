@@ -58,4 +58,4 @@ int solution(string name) {
 - 제출 기록: 2026-10-24 06:22:10
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/074_42860_%EC%A1%B0%EC%9D%B4%EC%8A%A4%ED%8B%B1/README.md)
+[기존 풀이 기록](../../../Python/level2/074_42860_%EC%A1%B0%EC%9D%B4%EC%8A%A4%ED%8B%B1/README.md)

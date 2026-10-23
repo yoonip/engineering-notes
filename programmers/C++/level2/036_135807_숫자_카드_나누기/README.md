@@ -52,4 +52,4 @@ int solution(vector<int> arrayA, vector<int> arrayB) {
 - 제출 기록: 2026-10-24 06:34:58
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/036_135807_%EC%88%AB%EC%9E%90_%EC%B9%B4%EB%93%9C_%EB%82%98%EB%88%84%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/036_135807_%EC%88%AB%EC%9E%90_%EC%B9%B4%EB%93%9C_%EB%82%98%EB%88%84%EA%B8%B0/README.md)

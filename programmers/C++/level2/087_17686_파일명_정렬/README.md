@@ -64,4 +64,4 @@ vector<string> solution(vector<string> files) {
 - 제출 기록: 2026-10-24 06:27:26
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/087_17686_%ED%8C%8C%EC%9D%BC%EB%AA%85_%EC%A0%95%EB%A0%AC/README.md)
+[기존 풀이 기록](../../../Python/level2/087_17686_%ED%8C%8C%EC%9D%BC%EB%AA%85_%EC%A0%95%EB%A0%AC/README.md)

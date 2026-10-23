@@ -86,4 +86,4 @@ vector<long long> solution(vector<int> arr, long long l, long long r) {
 - 제출 기록: 2026-10-24 06:41:43
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/002_468380_%EC%A0%9C%EA%B3%B1_%EA%B0%9C%EC%88%98_%EB%B0%B0%EC%97%B4/README.md)
+[기존 풀이 기록](../../../Python/level3/002_468380_%EC%A0%9C%EA%B3%B1_%EA%B0%9C%EC%88%98_%EB%B0%B0%EC%97%B4/README.md)

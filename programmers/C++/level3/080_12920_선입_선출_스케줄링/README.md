@@ -60,4 +60,4 @@ int solution(int n, vector<int> cores) {
 - 제출 기록: 2026-10-24 06:48:51
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/080_12920_%EC%84%A0%EC%9E%85_%EC%84%A0%EC%B6%9C_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81/README.md)
+[기존 풀이 기록](../../../Python/level3/080_12920_%EC%84%A0%EC%9E%85_%EC%84%A0%EC%B6%9C_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81/README.md)

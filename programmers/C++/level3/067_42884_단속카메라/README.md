@@ -48,4 +48,4 @@ int solution(vector<vector<int>> routes) {
 - 제출 기록: 2026-10-24 06:45:24
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/067_42884_%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC/README.md)
+[기존 풀이 기록](../../../Python/level3/067_42884_%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC/README.md)

@@ -47,4 +47,4 @@ int solution(int numbers[], size_t numbers_len, int n) {
 - 제출 기록: 2026-10-24 07:13:23
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181884_n%EB%B3%B4%EB%8B%A4_%EC%BB%A4%EC%A7%88_%EB%95%8C%EA%B9%8C%EC%A7%80_%EB%8D%94%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181884_n%EB%B3%B4%EB%8B%A4_%EC%BB%A4%EC%A7%88_%EB%95%8C%EA%B9%8C%EC%A7%80_%EB%8D%94%ED%95%98%EA%B8%B0/README.md)

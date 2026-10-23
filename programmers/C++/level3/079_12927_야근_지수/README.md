@@ -50,4 +50,4 @@ long long solution(int n, vector<int> works) {
 - 제출 기록: 2026-10-24 06:48:35
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/079_12927_%EC%95%BC%EA%B7%BC_%EC%A7%80%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level3/079_12927_%EC%95%BC%EA%B7%BC_%EC%A7%80%EC%88%98/README.md)

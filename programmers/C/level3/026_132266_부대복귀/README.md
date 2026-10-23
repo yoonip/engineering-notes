@@ -69,4 +69,4 @@ int* solution(int n, int** roads, size_t roads_rows, size_t roads_cols, int sour
 - 제출 기록: 2026-10-24 06:30:44
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/026_132266_%EB%B6%80%EB%8C%80%EB%B3%B5%EA%B7%80/README.md)
+[기존 풀이 기록](../../../Python/level3/026_132266_%EB%B6%80%EB%8C%80%EB%B3%B5%EA%B7%80/README.md)

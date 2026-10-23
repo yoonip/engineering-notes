@@ -66,4 +66,4 @@ int solution(int bridge_length, int weight, vector<int> truck_weights) {
 - 제출 기록: 2026-10-24 06:25:20
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/083_42583_%EB%8B%A4%EB%A6%AC%EB%A5%BC_%EC%A7%80%EB%82%98%EB%8A%94_%ED%8A%B8%EB%9F%AD/README.md)
+[기존 풀이 기록](../../../Python/level2/083_42583_%EB%8B%A4%EB%A6%AC%EB%A5%BC_%EC%A7%80%EB%82%98%EB%8A%94_%ED%8A%B8%EB%9F%AD/README.md)

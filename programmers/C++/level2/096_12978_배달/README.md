@@ -60,4 +60,4 @@ int solution(int N, vector<vector<int>> road, int K) {
 - 제출 기록: 2026-10-24 06:33:22
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/096_12978_%EB%B0%B0%EB%8B%AC/README.md)
+[기존 풀이 기록](../../../Python/level2/096_12978_%EB%B0%B0%EB%8B%AC/README.md)

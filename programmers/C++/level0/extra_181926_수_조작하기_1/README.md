@@ -51,4 +51,4 @@ int solution(int n, string control) {
 - 제출 기록: 2026-10-24 05:41:23
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181926_%EC%88%98_%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0_1/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181926_%EC%88%98_%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0_1/README.md)

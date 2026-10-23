@@ -81,4 +81,4 @@ int solution(const char* babbling[], size_t babbling_len) {
 - 제출 기록: 2026-10-24 07:24:03
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120956_%EC%98%B9%EC%95%8C%EC%9D%B4_%281%29/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120956_%EC%98%B9%EC%95%8C%EC%9D%B4_%281%29/README.md)

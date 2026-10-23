@@ -81,4 +81,4 @@ int solution(int info[], size_t info_len, int** edges, size_t edges_rows, size_t
 - 제출 기록: 2026-10-24 06:32:12
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/034_92343_%EC%96%91%EA%B3%BC_%EB%8A%91%EB%8C%80/README.md)
+[기존 풀이 기록](../../../Python/level3/034_92343_%EC%96%91%EA%B3%BC_%EB%8A%91%EB%8C%80/README.md)

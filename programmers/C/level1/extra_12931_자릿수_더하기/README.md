@@ -45,4 +45,4 @@ int solution(int n) { int answer = 0; while (n) { answer += n % 10; n /= 10; } r
 - 제출 기록: 2026-10-24 05:57:30
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12931_%EC%9E%90%EB%A6%BF%EC%88%98_%EB%8D%94%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12931_%EC%9E%90%EB%A6%BF%EC%88%98_%EB%8D%94%ED%95%98%EA%B8%B0/README.md)

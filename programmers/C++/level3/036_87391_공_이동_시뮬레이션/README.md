@@ -60,4 +60,4 @@ long long solution(int n, int m, int x, int y, vector<vector<int>> queries) {
 - 제출 기록: 2026-10-24 06:53:37
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/036_87391_%EA%B3%B5_%EC%9D%B4%EB%8F%99_%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/README.md)
+[기존 풀이 기록](../../../Python/level3/036_87391_%EA%B3%B5_%EC%9D%B4%EB%8F%99_%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/README.md)

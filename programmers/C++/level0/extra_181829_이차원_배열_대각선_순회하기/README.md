@@ -61,4 +61,4 @@ int solution(vector<vector<int>> board, int k) {
 - 제출 기록: 2026-10-24 06:29:59
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181829_%EC%9D%B4%EC%B0%A8%EC%9B%90_%EB%B0%B0%EC%97%B4_%EB%8C%80%EA%B0%81%EC%84%A0_%EC%88%9C%ED%9A%8C%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181829_%EC%9D%B4%EC%B0%A8%EC%9B%90_%EB%B0%B0%EC%97%B4_%EB%8C%80%EA%B0%81%EC%84%A0_%EC%88%9C%ED%9A%8C%ED%95%98%EA%B8%B0/README.md)

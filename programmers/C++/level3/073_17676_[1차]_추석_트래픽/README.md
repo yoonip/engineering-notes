@@ -82,4 +82,4 @@ int solution(vector<string> lines) {
 - 제출 기록: 2026-10-24 06:46:41
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/073_17676_%5B1%EC%B0%A8%5D_%EC%B6%94%EC%84%9D_%ED%8A%B8%EB%9E%98%ED%94%BD/README.md)
+[기존 풀이 기록](../../../Python/level3/073_17676_%5B1%EC%B0%A8%5D_%EC%B6%94%EC%84%9D_%ED%8A%B8%EB%9E%98%ED%94%BD/README.md)

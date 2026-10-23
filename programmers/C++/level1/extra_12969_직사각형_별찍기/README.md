@@ -74,4 +74,4 @@ int main() {
 - 제출 기록: 2026-10-24 06:19:02
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12969_%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95_%EB%B3%84%EC%B0%8D%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12969_%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95_%EB%B3%84%EC%B0%8D%EA%B8%B0/README.md)

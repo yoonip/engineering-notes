@@ -79,4 +79,4 @@ int* solution(int nodes[], size_t nodes_len, int** edges, size_t edges_rows, siz
 - 제출 기록: 2026-10-24 06:26:20
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/009_388354_%ED%99%80%EC%A7%9D%ED%8A%B8%EB%A6%AC/README.md)
+[기존 풀이 기록](../../../Python/level3/009_388354_%ED%99%80%EC%A7%9D%ED%8A%B8%EB%A6%AC/README.md)

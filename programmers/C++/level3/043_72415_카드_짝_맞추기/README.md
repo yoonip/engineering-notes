@@ -114,4 +114,4 @@ int solution(vector<vector<int>> board, int r, int c) {
 - 제출 기록: 2026-10-24 06:55:58
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/043_72415_%EC%B9%B4%EB%93%9C_%EC%A7%9D_%EB%A7%9E%EC%B6%94%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/043_72415_%EC%B9%B4%EB%93%9C_%EC%A7%9D_%EB%A7%9E%EC%B6%94%EA%B8%B0/README.md)

@@ -126,4 +126,4 @@ int solution(int h, vector<string> grid, vector<vector<int>> panels, vector<vect
 - 제출 기록: 2026-10-24 06:43:28
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/005_468375_%EB%B0%9C%EC%A0%84%EC%86%8C_%ED%9A%8C%EB%A1%9C_%EB%B3%B5%EA%B5%AC/README.md)
+[기존 풀이 기록](../../../Python/level3/005_468375_%EB%B0%9C%EC%A0%84%EC%86%8C_%ED%9A%8C%EB%A1%9C_%EB%B3%B5%EA%B5%AC/README.md)

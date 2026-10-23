@@ -92,4 +92,4 @@ bool solution(int n, vector<vector<int>> path, vector<vector<int>> order) {
 - 제출 기록: 2026-10-24 06:46:03
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_67260_%EB%8F%99%EA%B5%B4_%ED%83%90%ED%97%98/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_67260_%EB%8F%99%EA%B5%B4_%ED%83%90%ED%97%98/README.md)

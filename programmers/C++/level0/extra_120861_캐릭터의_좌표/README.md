@@ -77,4 +77,4 @@ vector<int> solution(vector<string> keyinput, vector<int> board) {
 - 제출 기록: 2026-10-24 06:57:23
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120861_%EC%BA%90%EB%A6%AD%ED%84%B0%EC%9D%98_%EC%A2%8C%ED%91%9C/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120861_%EC%BA%90%EB%A6%AD%ED%84%B0%EC%9D%98_%EC%A2%8C%ED%91%9C/README.md)

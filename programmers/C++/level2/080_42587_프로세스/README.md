@@ -64,4 +64,4 @@ int solution(vector<int> priorities, int location) {
 - 제출 기록: 2026-10-24 06:24:34
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/080_42587_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4/README.md)
+[기존 풀이 기록](../../../Python/level2/080_42587_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4/README.md)

@@ -76,4 +76,4 @@ string solution(vector<int> food) {
 - 제출 기록: 2026-10-24 06:10:40
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_134240_%ED%91%B8%EB%93%9C_%ED%8C%8C%EC%9D%B4%ED%8A%B8_%EB%8C%80%ED%9A%8C/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_134240_%ED%91%B8%EB%93%9C_%ED%8C%8C%EC%9D%B4%ED%8A%B8_%EB%8C%80%ED%9A%8C/README.md)

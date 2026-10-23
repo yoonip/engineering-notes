@@ -47,4 +47,4 @@ char* solution(const char* my_string, int m, int c) {
 - 제출 기록: 2026-10-24 07:09:50
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181904_%EC%84%B8%EB%A1%9C_%EC%9D%BD%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181904_%EC%84%B8%EB%A1%9C_%EC%9D%BD%EA%B8%B0/README.md)

@@ -43,4 +43,4 @@ vector<int> solution(int n, int k) {
 - 제출 기록: 2026-10-24 06:02:12
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181901_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_1/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181901_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_1/README.md)

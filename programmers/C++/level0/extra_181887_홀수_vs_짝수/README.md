@@ -59,4 +59,4 @@ int solution(vector<int> num_list) {
 - 제출 기록: 2026-10-24 06:06:32
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181887_%ED%99%80%EC%88%98_vs_%EC%A7%9D%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181887_%ED%99%80%EC%88%98_vs_%EC%A7%9D%EC%88%98/README.md)

@@ -43,4 +43,4 @@ int solution(int age) { return 2023 - age; }
 - 제출 기록: 2026-10-24 06:52:09
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120820_%EB%82%98%EC%9D%B4_%EC%B6%9C%EB%A0%A5/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120820_%EB%82%98%EC%9D%B4_%EC%B6%9C%EB%A0%A5/README.md)

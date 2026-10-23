@@ -54,4 +54,4 @@ int solution(vector<vector<int>> land) {
 - 제출 기록: 2026-10-24 06:42:41
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/extra_12913_%EB%95%85%EB%94%B0%EB%A8%B9%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/extra_12913_%EB%95%85%EB%94%B0%EB%A8%B9%EA%B8%B0/README.md)

@@ -79,4 +79,4 @@ int solution(int n, int** edges, size_t edges_rows, size_t edges_cols) {
 - 제출 기록: 2026-10-24 06:37:48
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_68937_%ED%8A%B8%EB%A6%AC_%ED%8A%B8%EB%A6%AC%EC%98%A4_%EC%A4%91%EA%B0%84%EA%B0%92/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_68937_%ED%8A%B8%EB%A6%AC_%ED%8A%B8%EB%A6%AC%EC%98%A4_%EC%A4%91%EA%B0%84%EA%B0%92/README.md)

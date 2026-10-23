@@ -64,4 +64,4 @@ int solution(int k, vector<int> tangerine) {
 - 제출 기록: 2026-10-24 06:34:33
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/035_138476_%EA%B7%A4_%EA%B3%A0%EB%A5%B4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/035_138476_%EA%B7%A4_%EA%B3%A0%EB%A5%B4%EA%B8%B0/README.md)

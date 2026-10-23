@@ -81,4 +81,4 @@ int* solution(long long numbers[], size_t numbers_len) {
 - 제출 기록: 2026-10-24 06:29:25
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/020_150367_%ED%91%9C%ED%98%84_%EA%B0%80%EB%8A%A5%ED%95%9C_%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC/README.md)
+[기존 풀이 기록](../../../Python/level3/020_150367_%ED%91%9C%ED%98%84_%EA%B0%80%EB%8A%A5%ED%95%9C_%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC/README.md)

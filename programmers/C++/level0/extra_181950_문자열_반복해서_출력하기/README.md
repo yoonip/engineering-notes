@@ -49,4 +49,4 @@ int main() {
 - 제출 기록: 2026-10-24 05:31:38
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181950_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181950_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C_%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/README.md)

@@ -55,4 +55,4 @@ vector<int> solution(vector<int> arr, vector<vector<int>> queries) {
 - 제출 기록: 2026-10-24 05:42:51
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181923_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_2/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181923_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_2/README.md)

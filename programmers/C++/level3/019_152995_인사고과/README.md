@@ -56,4 +56,4 @@ int solution(vector<vector<int>> scores) {
 - 제출 기록: 2026-10-24 06:48:32
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/019_152995_%EC%9D%B8%EC%82%AC%EA%B3%A0%EA%B3%BC/README.md)
+[기존 풀이 기록](../../../Python/level3/019_152995_%EC%9D%B8%EC%82%AC%EA%B3%A0%EA%B3%BC/README.md)

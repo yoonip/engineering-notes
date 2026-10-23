@@ -74,4 +74,4 @@ int solution(int k, int n, vector<vector<int>> reqs) {
 - 제출 기록: 2026-10-24 06:47:55
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/016_214288_%EC%83%81%EB%8B%B4%EC%9B%90_%EC%9D%B8%EC%9B%90/README.md)
+[기존 풀이 기록](../../../Python/level3/016_214288_%EC%83%81%EB%8B%B4%EC%9B%90_%EC%9D%B8%EC%9B%90/README.md)

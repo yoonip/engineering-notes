@@ -88,4 +88,4 @@ string solution(string video_len, string pos, string op_start, string op_end, ve
 - 제출 기록: 2026-10-24 06:02:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_340213_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%8F%99%EC%98%81%EC%83%81_%EC%9E%AC%EC%83%9D%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_340213_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%8F%99%EC%98%81%EC%83%81_%EC%9E%AC%EC%83%9D%EA%B8%B0/README.md)

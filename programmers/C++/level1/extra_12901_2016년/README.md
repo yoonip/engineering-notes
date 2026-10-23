@@ -78,4 +78,4 @@ string solution(int a, int b) {
 - 제출 기록: 2026-10-24 06:26:28
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12901_2016%EB%85%84/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12901_2016%EB%85%84/README.md)

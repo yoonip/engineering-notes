@@ -71,4 +71,4 @@ int solution(int schedules[], size_t schedules_len, int** timelogs, size_t timel
 - 제출 기록: 2026-10-24 05:44:48
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_388351_%EC%9C%A0%EC%97%B0%EA%B7%BC%EB%AC%B4%EC%A0%9C/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_388351_%EC%9C%A0%EC%97%B0%EA%B7%BC%EB%AC%B4%EC%A0%9C/README.md)

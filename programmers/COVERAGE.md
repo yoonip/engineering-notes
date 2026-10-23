@@ -34,7 +34,7 @@ python programmers/tests/verify_archive.py
 
 과거 86개 주석본은 사이트에 다시 제출하지 않았습니다. 100점은 보존한 원본의 사이트 채점 결과이며 공개 예제 비교는 로컬 검사입니다. 빈칸·한 줄 수정 형식 16문제의 전체 주석본도 학습용 파일로 구분했습니다.
 
-레벨 5는 21문제 중 4문제 통과, 1문제 시간 초과, 16문제 미작성 상태입니다. 미완료 17문제는 통과 개수에 합산하지 않습니다. 시간 초과 코드는 [별도 폴더](level5/attempts/389632/README.md)에 있습니다.
+레벨 5는 21문제 중 4문제 통과, 1문제 시간 초과, 16문제 미작성 상태입니다. 미완료 17문제는 통과 개수에 합산하지 않습니다. 시간 초과 코드는 [별도 폴더](Python/level5/attempts/389632/README.md)에 있습니다.
 
 ## English
 
@@ -44,4 +44,4 @@ The 86 historical Python submissions were copied from accepted 100/100 entries i
 
 The [combined catalog](all_problems.json) contains 672 distinct accepted problems: 309 full study notes, 277 earlier archived submissions and 86 historical submissions. [Archive checks](ARCHIVE_CHECK.json) verify file integrity, exact commented copies and complete Level 0–1 ID coverage. The newly annotated copies were not resubmitted; website scores belong to the preserved accepted originals, while public-example comparisons are local checks. Sixteen restricted-editing exercises distinguish their original format from complete study files.
 
-Level 5 remains four accepted problems, one timed-out attempt and 16 problems without archived solutions. The [failed attempt](level5/attempts/389632/README.md) is excluded from accepted totals.
+Level 5 remains four accepted problems, one timed-out attempt and 16 problems without archived solutions. The [failed attempt](Python/level5/attempts/389632/README.md) is excluded from accepted totals.

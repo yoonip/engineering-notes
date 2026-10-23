@@ -74,4 +74,4 @@ long long solution(long long n) {
 - 제출 기록: 2026-10-24 06:21:23
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12934_%EC%A0%95%EC%88%98_%EC%A0%9C%EA%B3%B1%EA%B7%BC_%ED%8C%90%EB%B3%84/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12934_%EC%A0%95%EC%88%98_%EC%A0%9C%EA%B3%B1%EA%B7%BC_%ED%8C%90%EB%B3%84/README.md)

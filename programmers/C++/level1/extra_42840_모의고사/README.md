@@ -80,4 +80,4 @@ vector<int> solution(vector<int> answers) {
 - 제출 기록: 2026-10-24 06:16:55
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_42840_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_42840_%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/README.md)

@@ -44,4 +44,4 @@ int solution(vector<vector<int>> triangle) {
 - 제출 기록: 2026-10-24 06:43:49
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/062_43105_%EC%A0%95%EC%88%98_%EC%82%BC%EA%B0%81%ED%98%95/README.md)
+[기존 풀이 기록](../../../Python/level3/062_43105_%EC%A0%95%EC%88%98_%EC%82%BC%EA%B0%81%ED%98%95/README.md)

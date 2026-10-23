@@ -74,4 +74,4 @@ vector<int> solution(vector<int> lottos, vector<int> win_nums) {
 - 제출 기록: 2026-10-24 06:14:13
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_77484_%EB%A1%9C%EB%98%90%EC%9D%98_%EC%B5%9C%EA%B3%A0_%EC%88%9C%EC%9C%84%EC%99%80_%EC%B5%9C%EC%A0%80_%EC%88%9C%EC%9C%84/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_77484_%EB%A1%9C%EB%98%90%EC%9D%98_%EC%B5%9C%EA%B3%A0_%EC%88%9C%EC%9C%84%EC%99%80_%EC%B5%9C%EC%A0%80_%EC%88%9C%EC%9C%84/README.md)

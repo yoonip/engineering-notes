@@ -82,4 +82,4 @@ int solution(vector<vector<string>> board, int h, int w) {
 - 제출 기록: 2026-10-24 06:04:17
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_250125_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_9%EB%B2%88___%EC%9D%B4%EC%9B%83%ED%95%9C_%EC%B9%B8/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_250125_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_9%EB%B2%88___%EC%9D%B4%EC%9B%83%ED%95%9C_%EC%B9%B8/README.md)

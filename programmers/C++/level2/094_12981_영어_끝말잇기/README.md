@@ -52,4 +52,4 @@ vector<int> solution(int n, vector<string> words) {
 - 제출 기록: 2026-10-24 06:31:41
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/094_12981_%EC%98%81%EC%96%B4_%EB%81%9D%EB%A7%90%EC%9E%87%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/094_12981_%EC%98%81%EC%96%B4_%EB%81%9D%EB%A7%90%EC%9E%87%EA%B8%B0/README.md)

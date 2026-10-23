@@ -76,4 +76,4 @@ vector<int> solution(int n, vector<int> info) {
 - 제출 기록: 2026-10-24 06:37:01
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/044_92342_%EC%96%91%EA%B6%81%EB%8C%80%ED%9A%8C/README.md)
+[기존 풀이 기록](../../../Python/level2/044_92342_%EC%96%91%EA%B6%81%EB%8C%80%ED%9A%8C/README.md)

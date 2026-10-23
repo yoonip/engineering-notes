@@ -45,4 +45,4 @@ string solution(vector<string> my_strings, vector<vector<int>> parts) {
 - 제출 기록: 2026-10-24 05:57:00
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181911_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%9D%B4%EC%96%B4_%EB%B6%99%EC%97%AC_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181911_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%9D%B4%EC%96%B4_%EB%B6%99%EC%97%AC_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)

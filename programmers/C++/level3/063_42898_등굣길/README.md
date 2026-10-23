@@ -52,4 +52,4 @@ int solution(int m, int n, vector<vector<int>> puddles) {
 - 제출 기록: 2026-10-24 06:44:06
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/063_42898_%EB%93%B1%EA%B5%A3%EA%B8%B8/README.md)
+[기존 풀이 기록](../../../Python/level3/063_42898_%EB%93%B1%EA%B5%A3%EA%B8%B8/README.md)

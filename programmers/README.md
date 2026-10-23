@@ -6,9 +6,11 @@
 |---|---|
 | C | [C 풀이](C/README.md) |
 | C++ | [C++ 풀이](C%2B%2B/README.md) |
-| Python 중심 기존 자료 | [기존 레벨별 목록](#기존-레벨별-목록) |
+| Python | [Python 풀이](Python/README.md) |
 
 ## 기존 레벨별 목록
+
+Python 풀이의 새 위치와 SQL 자료를 함께 연결하는 기존 제출 기록입니다. Python만 보려면 [Python 레벨별 목록](Python/README.md)을 확인하면 됩니다.
 
 제출 코드, 줄별 문법 설명, 풀이 원리와 채점 기록을 모았습니다. 사이트의 과거 제출 결과와 로컬 검증을 구분하며, 통과한 코드와 미완료 시도는 별도로 보관합니다. 사이트 목록과 대조한 시점과 범위는 [보관 범위](COVERAGE.md)에 있습니다.
 
@@ -33,7 +35,7 @@
 
 레벨 0·1은 [사이트 전체 목록](level0_1_catalog.json)과 문제 번호를 대조해 누락과 중복이 없는지 확인했습니다. 빈칸 채우기·한 줄 수정 형식의 16문제는 당시 제출 형식과 학습용 전체 주석본을 구분했습니다.
 
-레벨 5는 일부 문제의 통과 코드만 보관하고 있습니다. [문자열과 알파벳과 쿼리](level5/attempts/389632/README.md)는 Python 구현별 부분 통과 기록과 시간 초과 원인을 따로 정리했습니다. 이 시도는 통과 코드로 표시하지 않습니다. 풀이를 보관하지 않은 문제까지 완료한 목록은 아닙니다.
+레벨 5는 일부 문제의 통과 코드만 보관하고 있습니다. [문자열과 알파벳과 쿼리](Python/level5/attempts/389632/README.md)는 Python 구현별 부분 통과 기록과 시간 초과 원인을 따로 정리했습니다. 이 시도는 통과 코드로 표시하지 않습니다. 풀이를 보관하지 않은 문제까지 완료한 목록은 아닙니다.
 
 ## English
 
@@ -45,6 +47,6 @@ The Level 0–1 and Level 5 submission notes contain executable code followed by
 
 The 86 historical Python submissions were copied from accepted 100/100 entries in the website submission history. Original source files are preserved. Annotated copies retain the same executable AST and passed 197 public examples against the originals, for 394 executions. Repeated function definitions retain their original order, with the final binding explained. The annotated copies were not resubmitted. Sixteen restricted-editing exercises distinguish their original submission format from the complete study copies.
 
-Level 5 is a partial archive. Its [failed Python attempt](level5/attempts/389632/README.md) has a separate timeout analysis and is not marked as accepted. Problems without an archived solution are not presented as completed.
+Level 5 is a partial archive. Its [failed Python attempt](Python/level5/attempts/389632/README.md) has a separate timeout analysis and is not marked as accepted. Problems without an archived solution are not presented as completed.
 
 [Coverage](COVERAGE.md) · [All accepted problems](all_problems.json) · [Level 0–1 site catalog](level0_1_catalog.json)

@@ -63,4 +63,4 @@ int solution(int arr[], size_t arr_len) {
 - 제출 기록: 2026-10-24 06:22:13
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/098_12953_N%EA%B0%9C%EC%9D%98_%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level2/098_12953_N%EA%B0%9C%EC%9D%98_%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98/README.md)

@@ -54,4 +54,4 @@ int solution(vector<int> numbers, int target) {
 - 제출 기록: 2026-10-24 06:19:26
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/069_43165_%ED%83%80%EA%B2%9F_%EB%84%98%EB%B2%84/README.md)
+[기존 풀이 기록](../../../Python/level2/069_43165_%ED%83%80%EA%B2%9F_%EB%84%98%EB%B2%84/README.md)

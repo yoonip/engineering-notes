@@ -74,4 +74,4 @@ vector<int> solution(vector<int> arr) {
 - 제출 기록: 2026-10-24 06:25:54
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12906_%EA%B0%99%EC%9D%80_%EC%88%AB%EC%9E%90%EB%8A%94_%EC%8B%AB%EC%96%B4/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12906_%EA%B0%99%EC%9D%80_%EC%88%AB%EC%9E%90%EB%8A%94_%EC%8B%AB%EC%96%B4/README.md)

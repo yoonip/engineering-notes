@@ -51,4 +51,4 @@ int solution(string n_str) { return stoi(n_str); }
 - 제출 기록: 2026-10-24 06:20:54
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181848_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84_%EC%A0%95%EC%88%98%EB%A1%9C_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181848_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84_%EC%A0%95%EC%88%98%EB%A1%9C_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/README.md)

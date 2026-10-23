@@ -53,4 +53,4 @@ int solution(int absolutes[], size_t absolutes_len, bool signs[], size_t signs_l
 - 제출 기록: 2026-10-24 05:54:26
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_76501_%EC%9D%8C%EC%96%91_%EB%8D%94%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_76501_%EC%9D%8C%EC%96%91_%EB%8D%94%ED%95%98%EA%B8%B0/README.md)

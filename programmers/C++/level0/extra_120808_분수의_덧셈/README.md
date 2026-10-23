@@ -71,4 +71,4 @@ vector<int> solution(int numer1, int denom1, int numer2, int denom2) {
 - 제출 기록: 2026-10-24 06:54:26
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120808_%EB%B6%84%EC%88%98%EC%9D%98_%EB%8D%A7%EC%85%88/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120808_%EB%B6%84%EC%88%98%EC%9D%98_%EB%8D%A7%EC%85%88/README.md)

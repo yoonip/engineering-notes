@@ -64,4 +64,4 @@ string solution(long long n, vector<string> bans) {
 - 제출 기록: 2026-10-24 06:45:04
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/008_389481_%EB%B4%89%EC%9D%B8%EB%90%9C_%EC%A3%BC%EB%AC%B8/README.md)
+[기존 풀이 기록](../../../Python/level3/008_389481_%EB%B4%89%EC%9D%B8%EB%90%9C_%EC%A3%BC%EB%AC%B8/README.md)

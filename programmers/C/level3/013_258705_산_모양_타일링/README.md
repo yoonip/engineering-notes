@@ -55,4 +55,4 @@ int solution(int n, int tops[], size_t tops_len) {
 - 제출 기록: 2026-10-24 06:27:42
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/013_258705_%EC%82%B0_%EB%AA%A8%EC%96%91_%ED%83%80%EC%9D%BC%EB%A7%81/README.md)
+[기존 풀이 기록](../../../Python/level3/013_258705_%EC%82%B0_%EB%AA%A8%EC%96%91_%ED%83%80%EC%9D%BC%EB%A7%81/README.md)

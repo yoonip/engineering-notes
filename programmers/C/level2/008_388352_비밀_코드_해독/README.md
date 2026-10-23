@@ -75,4 +75,4 @@ int solution(int n, int** q, size_t q_rows, size_t q_cols, int ans[], size_t ans
 - 제출 기록: 2026-10-24 06:08:11
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/008_388352_%EB%B9%84%EB%B0%80_%EC%BD%94%EB%93%9C_%ED%95%B4%EB%8F%85/README.md)
+[기존 풀이 기록](../../../Python/level2/008_388352_%EB%B9%84%EB%B0%80_%EC%BD%94%EB%93%9C_%ED%95%B4%EB%8F%85/README.md)

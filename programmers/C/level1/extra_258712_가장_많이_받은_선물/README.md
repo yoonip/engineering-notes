@@ -105,4 +105,4 @@ int solution(const char* friends[], size_t friends_len, const char* gifts[], siz
 - 제출 기록: 2026-10-24 05:45:26
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_258712_%EA%B0%80%EC%9E%A5_%EB%A7%8E%EC%9D%B4_%EB%B0%9B%EC%9D%80_%EC%84%A0%EB%AC%BC/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_258712_%EA%B0%80%EC%9E%A5_%EB%A7%8E%EC%9D%B4_%EB%B0%9B%EC%9D%80_%EC%84%A0%EB%AC%BC/README.md)

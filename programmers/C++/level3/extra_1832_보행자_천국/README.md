@@ -56,4 +56,4 @@ int solution(int m, int n, vector<vector<int>> city_map) {
 - 제출 기록: 2026-10-24 06:50:10
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/extra_1832_%EB%B3%B4%ED%96%89%EC%9E%90_%EC%B2%9C%EA%B5%AD/README.md)
+[기존 풀이 기록](../../../Python/level3/extra_1832_%EB%B3%B4%ED%96%89%EC%9E%90_%EC%B2%9C%EA%B5%AD/README.md)

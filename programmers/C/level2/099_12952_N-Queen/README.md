@@ -69,4 +69,4 @@ int solution(int n) { return search((1u << n) - 1, 0, 0, 0); }
 - 제출 기록: 2026-10-24 06:22:24
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/099_12952_N-Queen/README.md)
+[기존 풀이 기록](../../../Python/level2/099_12952_N-Queen/README.md)

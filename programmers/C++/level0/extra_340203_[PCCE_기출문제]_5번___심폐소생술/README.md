@@ -61,4 +61,4 @@ vector<int> solution(vector<string> cpr) {
 - 제출 기록: 2026-10-24 05:50:03
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_340203_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_5%EB%B2%88___%EC%8B%AC%ED%8F%90%EC%86%8C%EC%83%9D%EC%88%A0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_340203_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_5%EB%B2%88___%EC%8B%AC%ED%8F%90%EC%86%8C%EC%83%9D%EC%88%A0/README.md)

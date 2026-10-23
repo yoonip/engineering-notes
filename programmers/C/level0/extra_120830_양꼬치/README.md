@@ -43,4 +43,4 @@ int solution(int n, int k) { return n * 12000 + (k - n / 10) * 2000; }
 - 제출 기록: 2026-10-24 07:33:05
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120830_%EC%96%91%EA%BC%AC%EC%B9%98/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120830_%EC%96%91%EA%BC%AC%EC%B9%98/README.md)

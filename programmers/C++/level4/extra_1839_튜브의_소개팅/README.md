@@ -102,4 +102,4 @@ vector<int> solution(int m, int n, int s, vector<vector<int>> time_map) {
 - 제출 기록: 2026-10-24 06:51:47
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_1839_%ED%8A%9C%EB%B8%8C%EC%9D%98_%EC%86%8C%EA%B0%9C%ED%8C%85/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_1839_%ED%8A%9C%EB%B8%8C%EC%9D%98_%EC%86%8C%EA%B0%9C%ED%8C%85/README.md)

@@ -94,4 +94,4 @@ char** solution(const char* myStr) {
 - 제출 기록: 2026-10-24 06:13:43
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181862_%EC%84%B8_%EA%B0%9C%EC%9D%98_%EA%B5%AC%EB%B6%84%EC%9E%90/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181862_%EC%84%B8_%EA%B0%9C%EC%9D%98_%EA%B5%AC%EB%B6%84%EC%9E%90/README.md)

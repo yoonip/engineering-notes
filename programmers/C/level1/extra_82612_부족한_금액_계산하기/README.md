@@ -51,4 +51,4 @@ long long solution(int price, int money, int count) {
 - 제출 기록: 2026-10-24 05:53:31
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_82612_%EB%B6%80%EC%A1%B1%ED%95%9C_%EA%B8%88%EC%95%A1_%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_82612_%EB%B6%80%EC%A1%B1%ED%95%9C_%EA%B8%88%EC%95%A1_%EA%B3%84%EC%82%B0%ED%95%98%EA%B8%B0/README.md)

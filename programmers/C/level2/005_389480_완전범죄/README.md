@@ -85,4 +85,4 @@ int solution(int** info, size_t info_rows, size_t info_cols, int n, int m) {
 - 제출 기록: 2026-10-24 06:07:20
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/005_389480_%EC%99%84%EC%A0%84%EB%B2%94%EC%A3%84/README.md)
+[기존 풀이 기록](../../../Python/level2/005_389480_%EC%99%84%EC%A0%84%EB%B2%94%EC%A3%84/README.md)

@@ -63,4 +63,4 @@ int main(void) {
 - 제출 기록: 2026-10-24 05:48:49
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_340205_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_3%EB%B2%88___%EC%88%98_%EB%82%98%EB%88%84%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_340205_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_3%EB%B2%88___%EC%88%98_%EB%82%98%EB%88%84%EA%B8%B0/README.md)

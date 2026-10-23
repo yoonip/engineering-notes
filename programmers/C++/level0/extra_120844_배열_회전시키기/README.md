@@ -63,4 +63,4 @@ vector<int> solution(vector<int> numbers, string direction) {
 - 제출 기록: 2026-10-24 06:54:14
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120844_%EB%B0%B0%EC%97%B4_%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120844_%EB%B0%B0%EC%97%B4_%ED%9A%8C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0/README.md)

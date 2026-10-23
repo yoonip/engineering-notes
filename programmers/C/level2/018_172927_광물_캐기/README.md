@@ -99,4 +99,4 @@ int solution(int picks[], size_t picks_len, const char* minerals[], size_t miner
 - 제출 기록: 2026-10-24 06:10:49
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/018_172927_%EA%B4%91%EB%AC%BC_%EC%BA%90%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/018_172927_%EA%B4%91%EB%AC%BC_%EC%BA%90%EA%B8%B0/README.md)

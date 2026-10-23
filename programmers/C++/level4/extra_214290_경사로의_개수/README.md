@@ -130,4 +130,4 @@ int solution(vector<vector<int>> grid, vector<int> d, int k) {
 - 제출 기록: 2026-10-24 06:42:31
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_214290_%EA%B2%BD%EC%82%AC%EB%A1%9C%EC%9D%98_%EA%B0%9C%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_214290_%EA%B2%BD%EC%82%AC%EB%A1%9C%EC%9D%98_%EA%B0%9C%EC%88%98/README.md)

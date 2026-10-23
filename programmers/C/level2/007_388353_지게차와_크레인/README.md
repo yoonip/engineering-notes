@@ -107,4 +107,4 @@ int solution(const char* storage[], size_t storage_len, const char* requests[], 
 - 제출 기록: 2026-10-24 06:07:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/007_388353_%EC%A7%80%EA%B2%8C%EC%B0%A8%EC%99%80_%ED%81%AC%EB%A0%88%EC%9D%B8/README.md)
+[기존 풀이 기록](../../../Python/level2/007_388353_%EC%A7%80%EA%B2%8C%EC%B0%A8%EC%99%80_%ED%81%AC%EB%A0%88%EC%9D%B8/README.md)

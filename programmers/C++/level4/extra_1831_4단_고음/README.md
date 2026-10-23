@@ -92,4 +92,4 @@ int solution(int n) {
 - 제출 기록: 2026-10-24 06:51:55
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_1831_4%EB%8B%A8_%EA%B3%A0%EC%9D%8C/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_1831_4%EB%8B%A8_%EA%B3%A0%EC%9D%8C/README.md)

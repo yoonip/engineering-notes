@@ -45,4 +45,4 @@ char* solution(const char* arr[], size_t arr_len) {
 - 제출 기록: 2026-10-24 05:27:58
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181941_%EB%AC%B8%EC%9E%90_%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181941_%EB%AC%B8%EC%9E%90_%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/README.md)

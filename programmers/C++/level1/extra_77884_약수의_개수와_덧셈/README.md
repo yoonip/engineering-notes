@@ -74,4 +74,4 @@ int solution(int left, int right) {
 - 제출 기록: 2026-10-24 06:14:02
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_77884_%EC%95%BD%EC%88%98%EC%9D%98_%EA%B0%9C%EC%88%98%EC%99%80_%EB%8D%A7%EC%85%88/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_77884_%EC%95%BD%EC%88%98%EC%9D%98_%EA%B0%9C%EC%88%98%EC%99%80_%EB%8D%A7%EC%85%88/README.md)

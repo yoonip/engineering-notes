@@ -74,4 +74,4 @@ vector<int> solution(vector<int> fees, vector<string> records) {
 - 제출 기록: 2026-10-24 06:37:16
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/045_92341_%EC%A3%BC%EC%B0%A8_%EC%9A%94%EA%B8%88_%EA%B3%84%EC%82%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/045_92341_%EC%A3%BC%EC%B0%A8_%EC%9A%94%EA%B8%88_%EA%B3%84%EC%82%B0/README.md)

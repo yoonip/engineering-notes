@@ -64,4 +64,4 @@ vector<string> solution(vector<vector<string>> tickets) {
 - 제출 기록: 2026-10-24 06:43:21
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/059_43164_%EC%97%AC%ED%96%89%EA%B2%BD%EB%A1%9C/README.md)
+[기존 풀이 기록](../../../Python/level3/059_43164_%EC%97%AC%ED%96%89%EA%B2%BD%EB%A1%9C/README.md)

@@ -82,4 +82,4 @@ int solution(vector<int> depth, int money) {
 - 제출 기록: 2026-10-24 06:42:08
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/003_468378_%EB%B3%B4%EB%AC%BC_%EC%B0%BE%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/003_468378_%EB%B3%B4%EB%AC%BC_%EC%B0%BE%EA%B8%B0/README.md)

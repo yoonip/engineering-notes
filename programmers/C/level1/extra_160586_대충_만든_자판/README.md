@@ -65,4 +65,4 @@ int* solution(const char* keymap[], size_t keymap_len, const char* targets[], si
 - 제출 기록: 2026-10-24 05:47:24
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_160586_%EB%8C%80%EC%B6%A9_%EB%A7%8C%EB%93%A0_%EC%9E%90%ED%8C%90/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_160586_%EB%8C%80%EC%B6%A9_%EB%A7%8C%EB%93%A0_%EC%9E%90%ED%8C%90/README.md)

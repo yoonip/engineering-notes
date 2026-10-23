@@ -88,4 +88,4 @@ int solution(vector<int> food_times, long long k) {
 - 제출 기록: 2026-10-24 06:49:16
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_42891_%EB%AC%B4%EC%A7%80%EC%9D%98_%EB%A8%B9%EB%B0%A9_%EB%9D%BC%EC%9D%B4%EB%B8%8C/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_42891_%EB%AC%B4%EC%A7%80%EC%9D%98_%EB%A8%B9%EB%B0%A9_%EB%9D%BC%EC%9D%B4%EB%B8%8C/README.md)

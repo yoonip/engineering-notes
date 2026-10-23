@@ -54,4 +54,4 @@ int solution(int n, int s, int a, int b, vector<vector<int>> fares) {
 - 제출 기록: 2026-10-24 06:39:11
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/045_72413_%ED%95%A9%EC%8A%B9_%ED%83%9D%EC%8B%9C_%EC%9A%94%EA%B8%88/README.md)
+[기존 풀이 기록](../../../Python/level3/045_72413_%ED%95%A9%EC%8A%B9_%ED%83%9D%EC%8B%9C_%EC%9A%94%EA%B8%88/README.md)

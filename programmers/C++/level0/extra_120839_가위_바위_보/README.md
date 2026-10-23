@@ -61,4 +61,4 @@ string solution(string rsp) {
 - 제출 기록: 2026-10-24 06:55:39
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120839_%EA%B0%80%EC%9C%84_%EB%B0%94%EC%9C%84_%EB%B3%B4/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120839_%EA%B0%80%EC%9C%84_%EB%B0%94%EC%9C%84_%EB%B3%B4/README.md)

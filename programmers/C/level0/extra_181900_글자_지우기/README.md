@@ -55,4 +55,4 @@ char* solution(const char* my_string, int indices[], size_t indices_len) {
 - 제출 기록: 2026-10-24 06:02:19
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181900_%EA%B8%80%EC%9E%90_%EC%A7%80%EC%9A%B0%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181900_%EA%B8%80%EC%9E%90_%EC%A7%80%EC%9A%B0%EA%B8%B0/README.md)

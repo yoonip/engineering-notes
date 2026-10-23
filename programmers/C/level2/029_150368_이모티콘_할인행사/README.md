@@ -87,4 +87,4 @@ int* solution(int** users, size_t users_rows, size_t users_cols, int emoticons[]
 - 제출 기록: 2026-10-24 06:13:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/029_150368_%EC%9D%B4%EB%AA%A8%ED%8B%B0%EC%BD%98_%ED%95%A0%EC%9D%B8%ED%96%89%EC%82%AC/README.md)
+[기존 풀이 기록](../../../Python/level2/029_150368_%EC%9D%B4%EB%AA%A8%ED%8B%B0%EC%BD%98_%ED%95%A0%EC%9D%B8%ED%96%89%EC%82%AC/README.md)

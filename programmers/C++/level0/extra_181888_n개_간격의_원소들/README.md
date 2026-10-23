@@ -59,4 +59,4 @@ vector<int> solution(vector<int> num_list, int n) {
 - 제출 기록: 2026-10-24 06:06:21
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181888_n%EA%B0%9C_%EA%B0%84%EA%B2%A9%EC%9D%98_%EC%9B%90%EC%86%8C%EB%93%A4/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181888_n%EA%B0%9C_%EA%B0%84%EA%B2%A9%EC%9D%98_%EC%9B%90%EC%86%8C%EB%93%A4/README.md)

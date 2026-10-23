@@ -64,4 +64,4 @@ int solution(vector<int> cards) {
 - 제출 기록: 2026-10-24 06:36:10
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/041_131130_%ED%98%BC%EC%9E%90_%EB%86%80%EA%B8%B0%EC%9D%98_%EB%8B%AC%EC%9D%B8/README.md)
+[기존 풀이 기록](../../../Python/level2/041_131130_%ED%98%BC%EC%9E%90_%EB%86%80%EA%B8%B0%EC%9D%98_%EB%8B%AC%EC%9D%B8/README.md)

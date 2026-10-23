@@ -61,4 +61,4 @@ vector<int> solution(vector<int> arr, vector<vector<int>> intervals) {
 - 제출 기록: 2026-10-24 06:04:10
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181895_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_3/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181895_%EB%B0%B0%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0_3/README.md)

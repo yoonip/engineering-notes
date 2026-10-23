@@ -140,4 +140,4 @@ int solution(string word, vector<string> pages) {
 - 제출 기록: 2026-10-24 06:44:35
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/065_42893_%EB%A7%A4%EC%B9%AD_%EC%A0%90%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level3/065_42893_%EB%A7%A4%EC%B9%AD_%EC%A0%90%EC%88%98/README.md)

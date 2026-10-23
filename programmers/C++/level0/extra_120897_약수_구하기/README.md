@@ -63,4 +63,4 @@ vector<int> solution(int n) {
 - 제출 기록: 2026-10-24 06:43:21
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120897_%EC%95%BD%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120897_%EC%95%BD%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)

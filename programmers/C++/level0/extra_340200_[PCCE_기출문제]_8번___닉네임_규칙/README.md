@@ -93,4 +93,4 @@ string solution(string nickname) {
 - 제출 기록: 2026-10-24 06:30:09
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_340200_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_8%EB%B2%88___%EB%8B%89%EB%84%A4%EC%9E%84_%EA%B7%9C%EC%B9%99/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_340200_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_8%EB%B2%88___%EB%8B%89%EB%84%A4%EC%9E%84_%EA%B7%9C%EC%B9%99/README.md)

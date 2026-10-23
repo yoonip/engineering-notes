@@ -116,4 +116,4 @@ int solution(int dist_limit, int split_limit) {
 - 제출 기록: 2026-10-24 06:24:48
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/004_468372_%EB%A6%AC%ED%94%84_%EB%85%B8%EB%93%9C_%EC%88%98_%EC%B5%9C%EB%8C%80%ED%99%94/README.md)
+[기존 풀이 기록](../../../Python/level2/004_468372_%EB%A6%AC%ED%94%84_%EB%85%B8%EB%93%9C_%EC%88%98_%EC%B5%9C%EB%8C%80%ED%99%94/README.md)

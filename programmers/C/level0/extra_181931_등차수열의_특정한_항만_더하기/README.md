@@ -43,4 +43,4 @@ int solution(int a, int d, bool included[], size_t included_len) {
 - 제출 기록: 2026-10-24 05:35:42
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181931_%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98_%ED%8A%B9%EC%A0%95%ED%95%9C_%ED%95%AD%EB%A7%8C_%EB%8D%94%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181931_%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98_%ED%8A%B9%EC%A0%95%ED%95%9C_%ED%95%AD%EB%A7%8C_%EB%8D%94%ED%95%98%EA%B8%B0/README.md)

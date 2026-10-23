@@ -50,4 +50,4 @@ int solution(int n) {
 - 제출 기록: 2026-10-24 06:57:55
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120848_%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120848_%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC/README.md)

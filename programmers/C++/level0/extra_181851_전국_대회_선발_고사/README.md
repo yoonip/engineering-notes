@@ -61,4 +61,4 @@ int solution(vector<int> rank, vector<bool> attendance) {
 - 제출 기록: 2026-10-24 06:19:25
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181851_%EC%A0%84%EA%B5%AD_%EB%8C%80%ED%9A%8C_%EC%84%A0%EB%B0%9C_%EA%B3%A0%EC%82%AC/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181851_%EC%A0%84%EA%B5%AD_%EB%8C%80%ED%9A%8C_%EC%84%A0%EB%B0%9C_%EA%B3%A0%EC%82%AC/README.md)

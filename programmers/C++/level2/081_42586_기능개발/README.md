@@ -50,4 +50,4 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
 - 제출 기록: 2026-10-24 06:24:46
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/081_42586_%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C/README.md)
+[기존 풀이 기록](../../../Python/level2/081_42586_%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C/README.md)

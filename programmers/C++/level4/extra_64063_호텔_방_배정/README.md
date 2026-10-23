@@ -86,4 +86,4 @@ vector<long long> solution(long long k, vector<long long> room_number) {
 - 제출 기록: 2026-10-24 06:46:34
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_64063_%ED%98%B8%ED%85%94_%EB%B0%A9_%EB%B0%B0%EC%A0%95/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_64063_%ED%98%B8%ED%85%94_%EB%B0%A9_%EB%B0%B0%EC%A0%95/README.md)

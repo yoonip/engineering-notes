@@ -71,4 +71,4 @@ int* solution(int e, int starts[], size_t starts_len) {
 - 제출 기록: 2026-10-24 06:30:09
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/023_138475_%EC%96%B5%EC%96%B5%EB%8B%A8%EC%9D%84_%EC%99%B8%EC%9A%B0%EC%9E%90/README.md)
+[기존 풀이 기록](../../../Python/level3/023_138475_%EC%96%B5%EC%96%B5%EB%8B%A8%EC%9D%84_%EC%99%B8%EC%9A%B0%EC%9E%90/README.md)

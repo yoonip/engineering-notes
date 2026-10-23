@@ -62,4 +62,4 @@ long long solution(int a, int b, vector<int> g, vector<int> s, vector<int> w, ve
 - 제출 기록: 2026-10-24 06:53:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/037_86053_%EA%B8%88%EA%B3%BC_%EC%9D%80_%EC%9A%B4%EB%B0%98%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/037_86053_%EA%B8%88%EA%B3%BC_%EC%9D%80_%EC%9A%B4%EB%B0%98%ED%95%98%EA%B8%B0/README.md)

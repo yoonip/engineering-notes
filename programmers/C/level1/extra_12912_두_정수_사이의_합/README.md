@@ -51,4 +51,4 @@ long long solution(int a, int b) {
 - 제출 기록: 2026-10-24 05:59:17
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12912_%EB%91%90_%EC%A0%95%EC%88%98_%EC%82%AC%EC%9D%B4%EC%9D%98_%ED%95%A9/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12912_%EB%91%90_%EC%A0%95%EC%88%98_%EC%82%AC%EC%9D%B4%EC%9D%98_%ED%95%A9/README.md)

@@ -43,4 +43,4 @@ long long solution(int n) {
 - 제출 기록: 2026-10-24 06:40:56
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/extra_12914_%EB%A9%80%EB%A6%AC_%EB%9B%B0%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/extra_12914_%EB%A9%80%EB%A6%AC_%EB%9B%B0%EA%B8%B0/README.md)

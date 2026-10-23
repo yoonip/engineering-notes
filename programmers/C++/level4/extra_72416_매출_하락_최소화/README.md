@@ -92,4 +92,4 @@ int solution(vector<int> sales, vector<vector<int>> links) {
 - 제출 기록: 2026-10-24 06:44:47
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_72416_%EB%A7%A4%EC%B6%9C_%ED%95%98%EB%9D%BD_%EC%B5%9C%EC%86%8C%ED%99%94/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_72416_%EB%A7%A4%EC%B6%9C_%ED%95%98%EB%9D%BD_%EC%B5%9C%EC%86%8C%ED%99%94/README.md)

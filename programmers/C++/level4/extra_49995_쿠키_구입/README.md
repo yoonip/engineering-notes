@@ -88,4 +88,4 @@ int solution(vector<int> cookie) {
 - 제출 기록: 2026-10-24 06:47:48
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_49995_%EC%BF%A0%ED%82%A4_%EA%B5%AC%EC%9E%85/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_49995_%EC%BF%A0%ED%82%A4_%EA%B5%AC%EC%9E%85/README.md)

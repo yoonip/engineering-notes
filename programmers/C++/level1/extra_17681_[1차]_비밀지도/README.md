@@ -74,4 +74,4 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
 - 제출 기록: 2026-10-24 06:18:11
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_17681_%5B1%EC%B0%A8%5D_%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_17681_%5B1%EC%B0%A8%5D_%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84/README.md)

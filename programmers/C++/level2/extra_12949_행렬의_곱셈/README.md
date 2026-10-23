@@ -44,4 +44,4 @@ vector<vector<int>> solution(vector<vector<int>> arr1, vector<vector<int>> arr2)
 - 제출 기록: 2026-10-24 06:35:49
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/extra_12949_%ED%96%89%EB%A0%AC%EC%9D%98_%EA%B3%B1%EC%85%88/README.md)
+[기존 풀이 기록](../../../Python/level2/extra_12949_%ED%96%89%EB%A0%AC%EC%9D%98_%EA%B3%B1%EC%85%88/README.md)

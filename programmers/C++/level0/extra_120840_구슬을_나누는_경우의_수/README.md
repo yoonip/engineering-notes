@@ -65,4 +65,4 @@ int solution(int balls, int share) {
 - 제출 기록: 2026-10-24 06:55:16
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120840_%EA%B5%AC%EC%8A%AC%EC%9D%84_%EB%82%98%EB%88%84%EB%8A%94_%EA%B2%BD%EC%9A%B0%EC%9D%98_%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120840_%EA%B5%AC%EC%8A%AC%EC%9D%84_%EB%82%98%EB%88%84%EB%8A%94_%EA%B2%BD%EC%9A%B0%EC%9D%98_%EC%88%98/README.md)

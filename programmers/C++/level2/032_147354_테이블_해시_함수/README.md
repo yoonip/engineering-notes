@@ -54,4 +54,4 @@ int solution(vector<vector<int>> data, int col, int row_begin, int row_end) {
 - 제출 기록: 2026-10-24 06:33:43
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/032_147354_%ED%85%8C%EC%9D%B4%EB%B8%94_%ED%95%B4%EC%8B%9C_%ED%95%A8%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level2/032_147354_%ED%85%8C%EC%9D%B4%EB%B8%94_%ED%95%B4%EC%8B%9C_%ED%95%A8%EC%88%98/README.md)

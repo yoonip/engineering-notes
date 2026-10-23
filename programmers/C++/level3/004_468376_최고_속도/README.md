@@ -180,4 +180,4 @@ vector<int> solution(vector<vector<int>> city, vector<vector<int>> road) {
 - 제출 기록: 2026-10-24 06:42:50
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/004_468376_%EC%B5%9C%EA%B3%A0_%EC%86%8D%EB%8F%84/README.md)
+[기존 풀이 기록](../../../Python/level3/004_468376_%EC%B5%9C%EA%B3%A0_%EC%86%8D%EB%8F%84/README.md)

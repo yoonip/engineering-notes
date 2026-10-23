@@ -59,4 +59,4 @@ char* solution(const char* s, const char* skip, int index) {
 - 제출 기록: 2026-10-24 05:47:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_155652_%EB%91%98%EB%A7%8C%EC%9D%98_%EC%95%94%ED%98%B8/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_155652_%EB%91%98%EB%A7%8C%EC%9D%98_%EC%95%94%ED%98%B8/README.md)

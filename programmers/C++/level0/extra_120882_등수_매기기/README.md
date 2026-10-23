@@ -65,4 +65,4 @@ vector<int> solution(vector<vector<int>> score) {
 - 제출 기록: 2026-10-24 06:50:31
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120882_%EB%93%B1%EC%88%98_%EB%A7%A4%EA%B8%B0%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120882_%EB%93%B1%EC%88%98_%EB%A7%A4%EA%B8%B0%EA%B8%B0/README.md)

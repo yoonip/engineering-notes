@@ -61,4 +61,4 @@ int solution(int price) {
 - 제출 기록: 2026-10-24 06:52:30
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120818_%EC%98%B7%EA%B0%80%EA%B2%8C_%ED%95%A0%EC%9D%B8_%EB%B0%9B%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120818_%EC%98%B7%EA%B0%80%EA%B2%8C_%ED%95%A0%EC%9D%B8_%EB%B0%9B%EA%B8%B0/README.md)

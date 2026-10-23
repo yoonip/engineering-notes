@@ -48,4 +48,4 @@ int solution(int n, vector<vector<int>> results) {
 - 제출 기록: 2026-10-24 06:42:52
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/056_49191_%EC%88%9C%EC%9C%84/README.md)
+[기존 풀이 기록](../../../Python/level3/056_49191_%EC%88%9C%EC%9C%84/README.md)

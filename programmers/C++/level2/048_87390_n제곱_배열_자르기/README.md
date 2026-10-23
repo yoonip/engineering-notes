@@ -50,4 +50,4 @@ vector<int> solution(int n, long long left, long long right) {
 - 제출 기록: 2026-10-24 06:37:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/048_87390_n%EC%A0%9C%EA%B3%B1_%EB%B0%B0%EC%97%B4_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/048_87390_n%EC%A0%9C%EA%B3%B1_%EB%B0%B0%EC%97%B4_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md)

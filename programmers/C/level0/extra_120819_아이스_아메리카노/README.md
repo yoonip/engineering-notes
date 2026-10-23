@@ -51,4 +51,4 @@ int* solution(int money) {
 - 제출 기록: 2026-10-24 06:52:18
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120819_%EC%95%84%EC%9D%B4%EC%8A%A4_%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120819_%EC%95%84%EC%9D%B4%EC%8A%A4_%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8/README.md)

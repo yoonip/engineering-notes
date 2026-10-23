@@ -94,4 +94,4 @@ int solution(vector<string> babbling) {
 - 제출 기록: 2026-10-24 06:11:11
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_133499_%EC%98%B9%EC%95%8C%EC%9D%B4_%282%29/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_133499_%EC%98%B9%EC%95%8C%EC%9D%B4_%282%29/README.md)

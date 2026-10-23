@@ -63,4 +63,4 @@ string solution(int age) {
 - 제출 기록: 2026-10-24 06:56:36
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120834_%EC%99%B8%EA%B3%84%ED%96%89%EC%84%B1%EC%9D%98_%EB%82%98%EC%9D%B4/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120834_%EC%99%B8%EA%B3%84%ED%96%89%EC%84%B1%EC%9D%98_%EB%82%98%EC%9D%B4/README.md)

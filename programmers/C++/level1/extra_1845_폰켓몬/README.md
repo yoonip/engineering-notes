@@ -66,4 +66,4 @@ int solution(vector<int> nums) { unordered_set<int> kinds(nums.begin(), nums.end
 - 제출 기록: 2026-10-24 06:26:42
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_1845_%ED%8F%B0%EC%BC%93%EB%AA%AC/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_1845_%ED%8F%B0%EC%BC%93%EB%AA%AC/README.md)

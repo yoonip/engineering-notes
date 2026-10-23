@@ -60,4 +60,4 @@ int solution(int n, vector<vector<int>> costs) {
 - 제출 기록: 2026-10-24 06:45:37
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/068_42861_%EC%84%AC_%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/068_42861_%EC%84%AC_%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/README.md)

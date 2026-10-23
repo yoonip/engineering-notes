@@ -63,4 +63,4 @@ string solution(string cipher, int code) {
 - 제출 기록: 2026-10-24 07:27:43
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120892_%EC%95%94%ED%98%B8_%ED%95%B4%EB%8F%85/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120892_%EC%95%94%ED%98%B8_%ED%95%B4%EB%8F%85/README.md)

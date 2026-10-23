@@ -86,4 +86,4 @@ vector<int> solution(vector<string> name, vector<int> yearning, vector<vector<st
 - 제출 기록: 2026-10-24 06:05:48
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_176963_%EC%B6%94%EC%96%B5_%EC%A0%90%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_176963_%EC%B6%94%EC%96%B5_%EC%A0%90%EC%88%98/README.md)

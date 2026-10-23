@@ -56,4 +56,4 @@ int solution(vector<vector<int>> beginning, vector<vector<int>> target) {
 - 제출 기록: 2026-10-24 06:50:55
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/027_131703_2%EC%B0%A8%EC%9B%90_%EB%8F%99%EC%A0%84_%EB%92%A4%EC%A7%91%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/027_131703_2%EC%B0%A8%EC%9B%90_%EB%8F%99%EC%A0%84_%EB%92%A4%EC%A7%91%EA%B8%B0/README.md)

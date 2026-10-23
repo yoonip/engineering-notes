@@ -80,4 +80,4 @@ string solution(string m, vector<string> musicinfos) {
 - 제출 기록: 2026-10-24 06:28:21
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/089_17683_%EB%B0%A9%EA%B8%88%EA%B7%B8%EA%B3%A1/README.md)
+[기존 풀이 기록](../../../Python/level2/089_17683_%EB%B0%A9%EA%B8%88%EA%B7%B8%EA%B3%A1/README.md)

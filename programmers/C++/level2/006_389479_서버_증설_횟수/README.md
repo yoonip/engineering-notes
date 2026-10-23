@@ -58,4 +58,4 @@ int solution(vector<int> players, int m, int k) {
 - 제출 기록: 2026-10-24 06:25:39
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/006_389479_%EC%84%9C%EB%B2%84_%EC%A6%9D%EC%84%A4_%ED%9A%9F%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level2/006_389479_%EC%84%9C%EB%B2%84_%EC%A6%9D%EC%84%A4_%ED%9A%9F%EC%88%98/README.md)

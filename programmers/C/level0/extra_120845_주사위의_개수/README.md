@@ -48,4 +48,4 @@ int solution(int box[], size_t box_len, int n) {
 - 제출 기록: 2026-10-24 06:54:09
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120845_%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98_%EA%B0%9C%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120845_%EC%A3%BC%EC%82%AC%EC%9C%84%EC%9D%98_%EA%B0%9C%EC%88%98/README.md)

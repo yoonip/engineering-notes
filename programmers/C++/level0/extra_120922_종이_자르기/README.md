@@ -55,4 +55,4 @@ int solution(int M, int N) { return M * N - 1; }
 - 제출 기록: 2026-10-24 06:32:59
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120922_%EC%A2%85%EC%9D%B4_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120922_%EC%A2%85%EC%9D%B4_%EC%9E%90%EB%A5%B4%EA%B8%B0/README.md)

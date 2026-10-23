@@ -66,4 +66,4 @@ bool solution(vector<vector<int>> key, vector<vector<int>> lock) {
 - 제출 기록: 2026-10-24 06:42:23
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/055_60059_%EC%9E%90%EB%AC%BC%EC%87%A0%EC%99%80_%EC%97%B4%EC%87%A0/README.md)
+[기존 풀이 기록](../../../Python/level3/055_60059_%EC%9E%90%EB%AC%BC%EC%87%A0%EC%99%80_%EC%97%B4%EC%87%A0/README.md)

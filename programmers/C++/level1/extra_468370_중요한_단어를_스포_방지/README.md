@@ -100,4 +100,4 @@ int solution(string message, vector<vector<int>> spoiler_ranges) {
 - 제출 기록: 2026-10-24 06:00:40
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_468370_%EC%A4%91%EC%9A%94%ED%95%9C_%EB%8B%A8%EC%96%B4%EB%A5%BC_%EC%8A%A4%ED%8F%AC_%EB%B0%A9%EC%A7%80/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_468370_%EC%A4%91%EC%9A%94%ED%95%9C_%EB%8B%A8%EC%96%B4%EB%A5%BC_%EC%8A%A4%ED%8F%AC_%EB%B0%A9%EC%A7%80/README.md)

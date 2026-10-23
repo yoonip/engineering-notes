@@ -52,4 +52,4 @@ long long solution(int n, vector<int> times) {
 - 제출 기록: 2026-10-24 06:43:13
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/058_43238_%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC/README.md)
+[기존 풀이 기록](../../../Python/level3/058_43238_%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC/README.md)

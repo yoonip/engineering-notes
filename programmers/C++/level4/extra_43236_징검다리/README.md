@@ -84,4 +84,4 @@ int solution(int distance, vector<int> rocks, int n) {
 - 제출 기록: 2026-10-24 06:48:15
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_43236_%EC%A7%95%EA%B2%80%EB%8B%A4%EB%A6%AC/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_43236_%EC%A7%95%EA%B2%80%EB%8B%A4%EB%A6%AC/README.md)

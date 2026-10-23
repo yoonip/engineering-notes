@@ -64,4 +64,4 @@ string solution(int n, int m, int x, int y, int r, int c, int k) {
 - 제출 기록: 2026-10-24 06:49:48
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/022_150365_%EB%AF%B8%EB%A1%9C_%ED%83%88%EC%B6%9C_%EB%AA%85%EB%A0%B9%EC%96%B4/README.md)
+[기존 풀이 기록](../../../Python/level3/022_150365_%EB%AF%B8%EB%A1%9C_%ED%83%88%EC%B6%9C_%EB%AA%85%EB%A0%B9%EC%96%B4/README.md)

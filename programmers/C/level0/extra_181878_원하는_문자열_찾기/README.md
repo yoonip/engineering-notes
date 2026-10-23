@@ -58,4 +58,4 @@ int solution(const char* myString, const char* pat) {
 - 제출 기록: 2026-10-24 07:14:45
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181878_%EC%9B%90%ED%95%98%EB%8A%94_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%B0%BE%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181878_%EC%9B%90%ED%95%98%EB%8A%94_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%B0%BE%EA%B8%B0/README.md)

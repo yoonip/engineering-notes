@@ -64,4 +64,4 @@ int solution(string dirs) {
 - 제출 기록: 2026-10-24 06:18:33
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/067_49994_%EB%B0%A9%EB%AC%B8_%EA%B8%B8%EC%9D%B4/README.md)
+[기존 풀이 기록](../../../Python/level2/067_49994_%EB%B0%A9%EB%AC%B8_%EA%B8%B8%EC%9D%B4/README.md)

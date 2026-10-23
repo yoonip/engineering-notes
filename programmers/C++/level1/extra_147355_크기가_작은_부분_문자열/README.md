@@ -74,4 +74,4 @@ int solution(string t, string p) {
 - 제출 기록: 2026-10-24 06:08:19
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_147355_%ED%81%AC%EA%B8%B0%EA%B0%80_%EC%9E%91%EC%9D%80_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_147355_%ED%81%AC%EA%B8%B0%EA%B0%80_%EC%9E%91%EC%9D%80_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4/README.md)

@@ -88,4 +88,4 @@ vector<int> solution(vector<string> info, vector<string> query) {
 - 제출 기록: 2026-10-24 06:40:14
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/057_72412_%EC%88%9C%EC%9C%84_%EA%B2%80%EC%83%89/README.md)
+[기존 풀이 기록](../../../Python/level2/057_72412_%EC%88%9C%EC%9C%84_%EA%B2%80%EC%83%89/README.md)

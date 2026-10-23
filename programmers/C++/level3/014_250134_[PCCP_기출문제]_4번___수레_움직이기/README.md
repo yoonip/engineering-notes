@@ -104,4 +104,4 @@ int solution(vector<vector<int>> maze) {
 - 제출 기록: 2026-10-24 06:47:22
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/014_250134_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EC%88%98%EB%A0%88_%EC%9B%80%EC%A7%81%EC%9D%B4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/014_250134_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EC%88%98%EB%A0%88_%EC%9B%80%EC%A7%81%EC%9D%B4%EA%B8%B0/README.md)

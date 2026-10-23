@@ -74,4 +74,4 @@ vector<vector<int>> solution(int n, vector<vector<int>> build_frame) {
 - 제출 기록: 2026-10-24 06:42:08
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/054_60061_%EA%B8%B0%EB%91%A5%EA%B3%BC_%EB%B3%B4_%EC%84%A4%EC%B9%98/README.md)
+[기존 풀이 기록](../../../Python/level3/054_60061_%EA%B8%B0%EB%91%A5%EA%B3%BC_%EB%B3%B4_%EC%84%A4%EC%B9%98/README.md)

@@ -33,4 +33,4 @@ int solution(int num, int n) {
 - 제출 기록: 2026-10-24 05:33:53
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181937_n%EC%9D%98_%EB%B0%B0%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181937_n%EC%9D%98_%EB%B0%B0%EC%88%98/README.md)

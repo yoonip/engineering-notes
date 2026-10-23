@@ -69,4 +69,4 @@ int solution(vector<vector<int>> dots) {
 - 제출 기록: 2026-10-24 06:57:30
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120860_%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95_%EB%84%93%EC%9D%B4_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120860_%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95_%EB%84%93%EC%9D%B4_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)

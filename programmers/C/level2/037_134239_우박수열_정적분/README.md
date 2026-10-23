@@ -79,4 +79,4 @@ double* solution(int k, int** ranges, size_t ranges_rows, size_t ranges_cols) {
 - 제출 기록: 2026-10-24 06:16:03
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/037_134239_%EC%9A%B0%EB%B0%95%EC%88%98%EC%97%B4_%EC%A0%95%EC%A0%81%EB%B6%84/README.md)
+[기존 풀이 기록](../../../Python/level2/037_134239_%EC%9A%B0%EB%B0%95%EC%88%98%EC%97%B4_%EC%A0%95%EC%A0%81%EB%B6%84/README.md)

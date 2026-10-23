@@ -50,4 +50,4 @@ double solution(int numbers[], size_t numbers_len) {
 - 제출 기록: 2026-10-24 06:52:41
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120817_%EB%B0%B0%EC%97%B4%EC%9D%98_%ED%8F%89%EA%B7%A0%EA%B0%92/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120817_%EB%B0%B0%EC%97%B4%EC%9D%98_%ED%8F%89%EA%B7%A0%EA%B0%92/README.md)

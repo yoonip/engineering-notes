@@ -61,4 +61,4 @@ int solution(vector<int> array) {
 - 제출 기록: 2026-10-24 06:53:49
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120811_%EC%A4%91%EC%95%99%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120811_%EC%A4%91%EC%95%99%EA%B0%92_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)

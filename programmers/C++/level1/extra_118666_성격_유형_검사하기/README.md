@@ -84,4 +84,4 @@ string solution(vector<string> survey, vector<int> choices) {
 - 제출 기록: 2026-10-24 06:12:10
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_118666_%EC%84%B1%EA%B2%A9_%EC%9C%A0%ED%98%95_%EA%B2%80%EC%82%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_118666_%EC%84%B1%EA%B2%A9_%EC%9C%A0%ED%98%95_%EA%B2%80%EC%82%AC%ED%95%98%EA%B8%B0/README.md)

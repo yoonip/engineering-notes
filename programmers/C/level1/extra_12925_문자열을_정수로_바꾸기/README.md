@@ -45,4 +45,4 @@ int solution(const char* s) { return atoi(s); }
 - 제출 기록: 2026-10-24 05:58:19
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12925_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84_%EC%A0%95%EC%88%98%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12925_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84_%EC%A0%95%EC%88%98%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/README.md)

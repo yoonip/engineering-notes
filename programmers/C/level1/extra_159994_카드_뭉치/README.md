@@ -67,4 +67,4 @@ char* solution(const char* cards1[], size_t cards1_len, const char* cards2[], si
 - 제출 기록: 2026-10-24 05:47:40
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_159994_%EC%B9%B4%EB%93%9C_%EB%AD%89%EC%B9%98/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_159994_%EC%B9%B4%EB%93%9C_%EB%AD%89%EC%B9%98/README.md)

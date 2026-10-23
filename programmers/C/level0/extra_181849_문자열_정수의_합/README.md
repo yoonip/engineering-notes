@@ -49,4 +49,4 @@ int solution(const char* num_str) {
 - 제출 기록: 2026-10-24 07:19:48
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181849_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%A0%95%EC%88%98%EC%9D%98_%ED%95%A9/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181849_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%A0%95%EC%88%98%EC%9D%98_%ED%95%A9/README.md)

@@ -72,4 +72,4 @@ int solution(int n, vector<int> weak, vector<int> dist) {
 - 제출 기록: 2026-10-24 06:41:47
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/053_60062_%EC%99%B8%EB%B2%BD_%EC%A0%90%EA%B2%80/README.md)
+[기존 풀이 기록](../../../Python/level3/053_60062_%EC%99%B8%EB%B2%BD_%EC%A0%90%EA%B2%80/README.md)

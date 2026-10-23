@@ -69,4 +69,4 @@ int solution(int k, int** dungeons, size_t dungeons_rows, size_t dungeons_cols) 
 - 제출 기록: 2026-10-24 06:18:08
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/047_87946_%ED%94%BC%EB%A1%9C%EB%8F%84/README.md)
+[기존 풀이 기록](../../../Python/level2/047_87946_%ED%94%BC%EB%A1%9C%EB%8F%84/README.md)

@@ -54,4 +54,4 @@ long long solution(int cap, int n, vector<int> deliveries, vector<int> pickups) 
 - 제출 기록: 2026-10-24 06:32:40
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/028_150369_%ED%83%9D%EB%B0%B0_%EB%B0%B0%EB%8B%AC%EA%B3%BC_%EC%88%98%EA%B1%B0%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/028_150369_%ED%83%9D%EB%B0%B0_%EB%B0%B0%EB%8B%AC%EA%B3%BC_%EC%88%98%EA%B1%B0%ED%95%98%EA%B8%B0/README.md)

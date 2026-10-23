@@ -129,4 +129,4 @@ int** solution(int** board, size_t board_rows, size_t board_cols, int** commands
 - 제출 기록: 2026-10-24 06:25:18
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/006_468374_%EC%B9%B4%EC%B9%B4%EC%98%A4_%EC%95%B1_%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/006_468374_%EC%B9%B4%EC%B9%B4%EC%98%A4_%EC%95%B1_%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0/README.md)

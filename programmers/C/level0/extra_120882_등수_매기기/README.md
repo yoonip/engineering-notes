@@ -61,4 +61,4 @@ int* solution(int** score, size_t score_rows, size_t score_cols) {
 - 제출 기록: 2026-10-24 07:29:05
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120882_%EB%93%B1%EC%88%98_%EB%A7%A4%EA%B8%B0%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120882_%EB%93%B1%EC%88%98_%EB%A7%A4%EA%B8%B0%EA%B8%B0/README.md)

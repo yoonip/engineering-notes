@@ -109,4 +109,4 @@ int* solution(int m, int n, int h, int w, int** drops, size_t drops_rows, size_t
 - 제출 기록: 2026-10-24 06:05:39
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/001_468379_%EC%84%A0%EC%9D%B8%EC%9E%A5_%EC%88%A8%EA%B8%B0%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/001_468379_%EC%84%A0%EC%9D%B8%EC%9E%A5_%EC%88%A8%EA%B8%B0%EA%B8%B0/README.md)

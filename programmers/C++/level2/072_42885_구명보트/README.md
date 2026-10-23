@@ -52,4 +52,4 @@ int solution(vector<int> people, int limit) {
 - 제출 기록: 2026-10-24 06:20:54
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/072_42885_%EA%B5%AC%EB%AA%85%EB%B3%B4%ED%8A%B8/README.md)
+[기존 풀이 기록](../../../Python/level2/072_42885_%EA%B5%AC%EB%AA%85%EB%B3%B4%ED%8A%B8/README.md)

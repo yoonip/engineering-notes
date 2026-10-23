@@ -82,4 +82,4 @@ char* solution(const char* polynomial) {
 - 제출 기록: 2026-10-24 06:57:01
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120863_%EB%8B%A4%ED%95%AD%EC%8B%9D_%EB%8D%94%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120863_%EB%8B%A4%ED%95%AD%EC%8B%9D_%EB%8D%94%ED%95%98%EA%B8%B0/README.md)

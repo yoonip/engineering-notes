@@ -83,4 +83,4 @@ int solution(int** cost, size_t cost_rows, size_t cost_cols, int** hint, size_t 
 - 제출 기록: 2026-10-24 06:05:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/002_468377_%ED%9E%8C%ED%8A%B8_%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80/README.md)
+[기존 풀이 기록](../../../Python/level2/002_468377_%ED%9E%8C%ED%8A%B8_%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%80/README.md)

@@ -65,4 +65,4 @@ char** solution(const char* my_str, int n) {
 - 제출 기록: 2026-10-24 07:24:47
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120913_%EC%9E%98%EB%9D%BC%EC%84%9C_%EB%B0%B0%EC%97%B4%EB%A1%9C_%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120913_%EC%9E%98%EB%9D%BC%EC%84%9C_%EB%B0%B0%EC%97%B4%EB%A1%9C_%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0/README.md)

@@ -66,4 +66,4 @@ int solution(vector<vector<int>> jobs) {
 - 제출 기록: 2026-10-24 06:45:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/070_42627_%EB%94%94%EC%8A%A4%ED%81%AC_%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/README.md)
+[기존 풀이 기록](../../../Python/level3/070_42627_%EB%94%94%EC%8A%A4%ED%81%AC_%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/README.md)

@@ -87,4 +87,4 @@ char** solution(int** line, size_t line_rows, size_t line_cols) {
 - 제출 기록: 2026-10-24 06:18:33
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/049_87377_%EA%B5%90%EC%A0%90%EC%97%90_%EB%B3%84_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/049_87377_%EA%B5%90%EC%A0%90%EC%97%90_%EB%B3%84_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)

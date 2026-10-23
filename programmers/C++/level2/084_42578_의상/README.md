@@ -50,4 +50,4 @@ int solution(vector<vector<string>> clothes) {
 - 제출 기록: 2026-10-24 06:25:43
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/084_42578_%EC%9D%98%EC%83%81/README.md)
+[기존 풀이 기록](../../../Python/level2/084_42578_%EC%9D%98%EC%83%81/README.md)

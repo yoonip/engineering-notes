@@ -71,4 +71,4 @@ int solution(vector<vector<int>> dots) {
 - 제출 기록: 2026-10-24 06:52:06
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120875_%ED%8F%89%ED%96%89/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120875_%ED%8F%89%ED%96%89/README.md)

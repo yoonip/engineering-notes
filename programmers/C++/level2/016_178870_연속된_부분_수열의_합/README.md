@@ -54,4 +54,4 @@ vector<int> solution(vector<int> sequence, int k) {
 - 제출 기록: 2026-10-24 06:28:25
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/016_178870_%EC%97%B0%EC%86%8D%EB%90%9C_%EB%B6%80%EB%B6%84_%EC%88%98%EC%97%B4%EC%9D%98_%ED%95%A9/README.md)
+[기존 풀이 기록](../../../Python/level2/016_178870_%EC%97%B0%EC%86%8D%EB%90%9C_%EB%B6%80%EB%B6%84_%EC%88%98%EC%97%B4%EC%9D%98_%ED%95%A9/README.md)

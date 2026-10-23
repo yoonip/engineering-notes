@@ -88,4 +88,4 @@ int solution(vector<vector<int>> land) {
 - 제출 기록: 2026-10-24 06:27:35
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/012_250136_%EC%84%9D%EC%9C%A0_%EC%8B%9C%EC%B6%94/README.md)
+[기존 풀이 기록](../../../Python/level2/012_250136_%EC%84%9D%EC%9C%A0_%EC%8B%9C%EC%B6%94/README.md)

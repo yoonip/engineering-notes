@@ -88,4 +88,4 @@ vector<int> solution(string today, vector<string> terms, vector<string> privacie
 - 제출 기록: 2026-10-24 06:08:01
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_150370_%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4_%EC%88%98%EC%A7%91_%EC%9C%A0%ED%9A%A8%EA%B8%B0%EA%B0%84/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_150370_%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4_%EC%88%98%EC%A7%91_%EC%9C%A0%ED%9A%A8%EA%B8%B0%EA%B0%84/README.md)

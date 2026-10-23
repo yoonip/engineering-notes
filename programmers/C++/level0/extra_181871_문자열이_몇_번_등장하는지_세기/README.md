@@ -59,4 +59,4 @@ int solution(string myString, string pat) {
 - 제출 기록: 2026-10-24 06:10:56
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181871_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%B4_%EB%AA%87_%EB%B2%88_%EB%93%B1%EC%9E%A5%ED%95%98%EB%8A%94%EC%A7%80_%EC%84%B8%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181871_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%B4_%EB%AA%87_%EB%B2%88_%EB%93%B1%EC%9E%A5%ED%95%98%EB%8A%94%EC%A7%80_%EC%84%B8%EA%B8%B0/README.md)

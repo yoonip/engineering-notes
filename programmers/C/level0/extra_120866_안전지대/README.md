@@ -68,4 +68,4 @@ int solution(int** board, size_t board_rows, size_t board_cols) {
 - 제출 기록: 2026-10-24 06:56:18
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120866_%EC%95%88%EC%A0%84%EC%A7%80%EB%8C%80/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120866_%EC%95%88%EC%A0%84%EC%A7%80%EB%8C%80/README.md)

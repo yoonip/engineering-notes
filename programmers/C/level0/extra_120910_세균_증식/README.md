@@ -43,4 +43,4 @@ int solution(int n, int t) { return n * (1 << t); }
 - 제출 기록: 2026-10-24 07:25:09
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120910_%EC%84%B8%EA%B7%A0_%EC%A6%9D%EC%8B%9D/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120910_%EC%84%B8%EA%B7%A0_%EC%A6%9D%EC%8B%9D/README.md)

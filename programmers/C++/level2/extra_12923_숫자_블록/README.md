@@ -60,4 +60,4 @@ vector<int> solution(long long begin, long long end) {
 - 제출 기록: 2026-10-24 06:39:58
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/extra_12923_%EC%88%AB%EC%9E%90_%EB%B8%94%EB%A1%9D/README.md)
+[기존 풀이 기록](../../../Python/level2/extra_12923_%EC%88%AB%EC%9E%90_%EB%B8%94%EB%A1%9D/README.md)

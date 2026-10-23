@@ -101,4 +101,4 @@ int* solution(int** edges, size_t edges_rows, size_t edges_cols, int target[], s
 - 제출 기록: 2026-10-24 06:36:33
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_150364_1%2C2%2C3_%EB%96%A8%EC%96%B4%ED%8A%B8%EB%A6%AC%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_150364_1%2C2%2C3_%EB%96%A8%EC%96%B4%ED%8A%B8%EB%A6%AC%EA%B8%B0/README.md)

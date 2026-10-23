@@ -43,4 +43,4 @@ int solution(string number) {
 - 제출 기록: 2026-10-24 05:54:44
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181914_9%EB%A1%9C_%EB%82%98%EB%88%88_%EB%82%98%EB%A8%B8%EC%A7%80/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181914_9%EB%A1%9C_%EB%82%98%EB%88%88_%EB%82%98%EB%A8%B8%EC%A7%80/README.md)

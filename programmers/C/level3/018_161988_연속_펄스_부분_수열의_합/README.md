@@ -61,4 +61,4 @@ long long solution(int sequence[], size_t sequence_len) {
 - 제출 기록: 2026-10-24 06:28:51
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/018_161988_%EC%97%B0%EC%86%8D_%ED%8E%84%EC%8A%A4_%EB%B6%80%EB%B6%84_%EC%88%98%EC%97%B4%EC%9D%98_%ED%95%A9/README.md)
+[기존 풀이 기록](../../../Python/level3/018_161988_%EC%97%B0%EC%86%8D_%ED%8E%84%EC%8A%A4_%EB%B6%80%EB%B6%84_%EC%88%98%EC%97%B4%EC%9D%98_%ED%95%A9/README.md)

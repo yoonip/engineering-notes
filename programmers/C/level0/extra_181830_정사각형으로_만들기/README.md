@@ -56,4 +56,4 @@ int** solution(int** arr, size_t arr_rows, size_t arr_cols) {
 - 제출 기록: 2026-10-24 07:23:36
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181830_%EC%A0%95%EC%82%AC%EA%B0%81%ED%98%95%EC%9C%BC%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181830_%EC%A0%95%EC%82%AC%EA%B0%81%ED%98%95%EC%9C%BC%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)

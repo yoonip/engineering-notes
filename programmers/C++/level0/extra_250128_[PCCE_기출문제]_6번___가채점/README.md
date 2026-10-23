@@ -69,4 +69,4 @@ vector<string> solution(vector<int> numbers, vector<int> our_score, vector<int> 
 - 제출 기록: 2026-10-24 06:31:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_250128_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_6%EB%B2%88___%EA%B0%80%EC%B1%84%EC%A0%90/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_250128_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_6%EB%B2%88___%EA%B0%80%EC%B1%84%EC%A0%90/README.md)

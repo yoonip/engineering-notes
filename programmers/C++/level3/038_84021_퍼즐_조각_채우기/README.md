@@ -104,4 +104,4 @@ int solution(vector<vector<int>> game_board, vector<vector<int>> table) {
 - 제출 기록: 2026-10-24 06:54:18
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/038_84021_%ED%8D%BC%EC%A6%90_%EC%A1%B0%EA%B0%81_%EC%B1%84%EC%9A%B0%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/038_84021_%ED%8D%BC%EC%A6%90_%EC%A1%B0%EA%B0%81_%EC%B1%84%EC%9A%B0%EA%B8%B0/README.md)

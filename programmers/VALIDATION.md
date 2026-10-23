@@ -30,7 +30,7 @@ SQL은 MySQL 제출 구문을 유지했습니다. 로컬 검증에서는 날짜 
 
 ```bash
 python programmers/tests/verify_all.py --report programmers-local-report.json
-python -m unittest discover -s programmers/tests
+python -B -m unittest discover -s programmers/Python/tests
 ```
 
 C++은 컴파일러를 별도로 지정합니다. GCC, Clang 또는 Zig를 사용할 수 있습니다.

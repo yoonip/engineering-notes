@@ -62,4 +62,4 @@ string solution(string play_time, string adv_time, vector<string> logs) {
 - 제출 기록: 2026-10-24 06:56:34
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/044_72414_%EA%B4%91%EA%B3%A0_%EC%82%BD%EC%9E%85/README.md)
+[기존 풀이 기록](../../../Python/level3/044_72414_%EA%B4%91%EA%B3%A0_%EC%82%BD%EC%9E%85/README.md)

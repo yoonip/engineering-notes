@@ -50,4 +50,4 @@ int* solution(int num_list[], size_t num_list_len) {
 - 제출 기록: 2026-10-24 07:33:18
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120824_%EC%A7%9D%EC%88%98_%ED%99%80%EC%88%98_%EA%B0%9C%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120824_%EC%A7%9D%EC%88%98_%ED%99%80%EC%88%98_%EA%B0%9C%EC%88%98/README.md)

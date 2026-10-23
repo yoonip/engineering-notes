@@ -65,4 +65,4 @@ char* solution(const char* survey[], size_t survey_len, int choices[], size_t ch
 - 제출 기록: 2026-10-24 05:52:02
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_118666_%EC%84%B1%EA%B2%A9_%EC%9C%A0%ED%98%95_%EA%B2%80%EC%82%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_118666_%EC%84%B1%EA%B2%A9_%EC%9C%A0%ED%98%95_%EA%B2%80%EC%82%AC%ED%95%98%EA%B8%B0/README.md)

@@ -72,4 +72,4 @@ vector<int> solution(int rows, int columns, vector<vector<int>> queries) {
 - 제출 기록: 2026-10-24 06:39:52
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/055_77485_%ED%96%89%EB%A0%AC_%ED%85%8C%EB%91%90%EB%A6%AC_%ED%9A%8C%EC%A0%84%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/055_77485_%ED%96%89%EB%A0%AC_%ED%85%8C%EB%91%90%EB%A6%AC_%ED%9A%8C%EC%A0%84%ED%95%98%EA%B8%B0/README.md)

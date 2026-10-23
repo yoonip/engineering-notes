@@ -64,4 +64,4 @@ char** solution(const char* picture[], size_t picture_len, int k) {
 - 제출 기록: 2026-10-24 06:25:43
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181836_%EA%B7%B8%EB%A6%BC_%ED%99%95%EB%8C%80/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181836_%EA%B7%B8%EB%A6%BC_%ED%99%95%EB%8C%80/README.md)

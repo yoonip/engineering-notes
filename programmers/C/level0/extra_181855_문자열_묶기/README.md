@@ -54,4 +54,4 @@ int solution(const char* strArr[], size_t strArr_len) {
 - 제출 기록: 2026-10-24 06:17:46
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181855_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%AC%B6%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181855_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%AC%B6%EA%B8%B0/README.md)

@@ -68,4 +68,4 @@ int* solution(int numlist[], size_t numlist_len, int n) {
 - 제출 기록: 2026-10-24 06:50:39
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120880_%ED%8A%B9%EC%9D%B4%ED%95%9C_%EC%A0%95%EB%A0%AC/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120880_%ED%8A%B9%EC%9D%B4%ED%95%9C_%EC%A0%95%EB%A0%AC/README.md)

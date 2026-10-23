@@ -106,4 +106,4 @@ int solution(vector<vector<int>> board) {
 - 제출 기록: 2026-10-24 06:49:00
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_42894_%EB%B8%94%EB%A1%9D_%EA%B2%8C%EC%9E%84/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_42894_%EB%B8%94%EB%A1%9D_%EA%B2%8C%EC%9E%84/README.md)

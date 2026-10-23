@@ -56,4 +56,4 @@ int solution(int a, int b) {
 - 제출 기록: 2026-10-24 06:51:09
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120878_%EC%9C%A0%ED%95%9C%EC%86%8C%EC%88%98_%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120878_%EC%9C%A0%ED%95%9C%EC%86%8C%EC%88%98_%ED%8C%90%EB%B3%84%ED%95%98%EA%B8%B0/README.md)

@@ -61,4 +61,4 @@ int solution(int n, int w, int num) {
 - 제출 기록: 2026-10-24 05:44:30
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_389478_%ED%83%9D%EB%B0%B0_%EC%83%81%EC%9E%90_%EA%BA%BC%EB%82%B4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_389478_%ED%83%9D%EB%B0%B0_%EC%83%81%EC%9E%90_%EA%BA%BC%EB%82%B4%EA%B8%B0/README.md)

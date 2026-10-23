@@ -72,4 +72,4 @@ int solution(int temperature, int t1, int t2, int a, int b, vector<int> onboard)
 - 제출 기록: 2026-10-24 06:47:35
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/015_214289_%EC%97%90%EC%96%B4%EC%BB%A8/README.md)
+[기존 풀이 기록](../../../Python/level3/015_214289_%EC%97%90%EC%96%B4%EC%BB%A8/README.md)

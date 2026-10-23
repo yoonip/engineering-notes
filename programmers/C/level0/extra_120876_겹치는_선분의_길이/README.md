@@ -56,4 +56,4 @@ int solution(int** lines, size_t lines_rows, size_t lines_cols) {
 - 제출 기록: 2026-10-24 07:29:14
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120876_%EA%B2%B9%EC%B9%98%EB%8A%94_%EC%84%A0%EB%B6%84%EC%9D%98_%EA%B8%B8%EC%9D%B4/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120876_%EA%B2%B9%EC%B9%98%EB%8A%94_%EC%84%A0%EB%B6%84%EC%9D%98_%EA%B8%B8%EC%9D%B4/README.md)

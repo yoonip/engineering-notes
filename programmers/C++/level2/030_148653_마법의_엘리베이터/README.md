@@ -49,4 +49,4 @@ int solution(int storey) {
 - 제출 기록: 2026-10-24 06:33:09
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/030_148653_%EB%A7%88%EB%B2%95%EC%9D%98_%EC%97%98%EB%A6%AC%EB%B2%A0%EC%9D%B4%ED%84%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/030_148653_%EB%A7%88%EB%B2%95%EC%9D%98_%EC%97%98%EB%A6%AC%EB%B2%A0%EC%9D%B4%ED%84%B0/README.md)

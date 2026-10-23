@@ -43,4 +43,4 @@ char* solution(const char* my_string, int n) {
 - 제출 기록: 2026-10-24 05:57:12
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181910_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98_%EB%92%A4%EC%9D%98_n%EA%B8%80%EC%9E%90/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181910_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98_%EB%92%A4%EC%9D%98_n%EA%B8%80%EC%9E%90/README.md)

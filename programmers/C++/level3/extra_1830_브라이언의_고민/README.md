@@ -106,4 +106,4 @@ string solution(string sentence) {
 - 제출 기록: 2026-10-24 06:50:18
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/extra_1830_%EB%B8%8C%EB%9D%BC%EC%9D%B4%EC%96%B8%EC%9D%98_%EA%B3%A0%EB%AF%BC/README.md)
+[기존 풀이 기록](../../../Python/level3/extra_1830_%EB%B8%8C%EB%9D%BC%EC%9D%B4%EC%96%B8%EC%9D%98_%EA%B3%A0%EB%AF%BC/README.md)

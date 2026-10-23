@@ -52,4 +52,4 @@ int solution(string skill, vector<string> skill_trees) {
 - 제출 기록: 2026-10-24 06:18:46
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/068_49993_%EC%8A%A4%ED%82%AC%ED%8A%B8%EB%A6%AC/README.md)
+[기존 풀이 기록](../../../Python/level2/068_49993_%EC%8A%A4%ED%82%AC%ED%8A%B8%EB%A6%AC/README.md)

@@ -44,4 +44,4 @@ char* solution(const char* my_string, const char* overwrite_string, int s) {
 - 제출 기록: 2026-10-24 05:26:53
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181943_%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181943_%EB%AC%B8%EC%9E%90%EC%97%B4_%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/README.md)

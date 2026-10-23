@@ -87,4 +87,4 @@ int* solution(int** dice, size_t dice_rows, size_t dice_cols) {
 - 제출 기록: 2026-10-24 06:27:13
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/011_258709_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B3%A0%EB%A5%B4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/011_258709_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B3%A0%EB%A5%B4%EA%B8%B0/README.md)

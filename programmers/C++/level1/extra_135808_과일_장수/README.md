@@ -76,4 +76,4 @@ int solution(int k, int m, vector<int> score) {
 - 제출 기록: 2026-10-24 06:10:24
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_135808_%EA%B3%BC%EC%9D%BC_%EC%9E%A5%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_135808_%EA%B3%BC%EC%9D%BC_%EC%9E%A5%EC%88%98/README.md)

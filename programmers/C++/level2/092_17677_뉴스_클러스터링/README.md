@@ -66,4 +66,4 @@ int solution(string str1, string str2) {
 - 제출 기록: 2026-10-24 06:30:09
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/092_17677_%EB%89%B4%EC%8A%A4_%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81/README.md)
+[기존 풀이 기록](../../../Python/level2/092_17677_%EB%89%B4%EC%8A%A4_%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81/README.md)

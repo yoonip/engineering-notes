@@ -74,4 +74,4 @@ vector<long long> solution(int x, int n) {
 - 제출 기록: 2026-10-24 06:19:11
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12954_x%EB%A7%8C%ED%81%BC_%EA%B0%84%EA%B2%A9%EC%9D%B4_%EC%9E%88%EB%8A%94_n%EA%B0%9C%EC%9D%98_%EC%88%AB%EC%9E%90/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12954_x%EB%A7%8C%ED%81%BC_%EA%B0%84%EA%B2%A9%EC%9D%B4_%EC%9E%88%EB%8A%94_n%EA%B0%9C%EC%9D%98_%EC%88%AB%EC%9E%90/README.md)

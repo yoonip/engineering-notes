@@ -62,4 +62,4 @@ int solution(int alp, int cop, vector<vector<int>> problems) {
 - 제출 기록: 2026-10-24 06:51:59
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/031_118668_%EC%BD%94%EB%94%A9_%ED%85%8C%EC%8A%A4%ED%8A%B8_%EA%B3%B5%EB%B6%80/README.md)
+[기존 풀이 기록](../../../Python/level3/031_118668_%EC%BD%94%EB%94%A9_%ED%85%8C%EC%8A%A4%ED%8A%B8_%EA%B3%B5%EB%B6%80/README.md)

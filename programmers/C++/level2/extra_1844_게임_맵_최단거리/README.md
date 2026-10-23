@@ -68,4 +68,4 @@ int solution(vector<vector<int>> maps) {
 - 제출 기록: 2026-10-24 06:47:01
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/extra_1844_%EA%B2%8C%EC%9E%84_%EB%A7%B5_%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC/README.md)
+[기존 풀이 기록](../../../Python/level2/extra_1844_%EA%B2%8C%EC%9E%84_%EB%A7%B5_%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC/README.md)

@@ -59,4 +59,4 @@ vector<string> solution(vector<string> names) {
 - 제출 기록: 2026-10-24 06:07:03
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181886_5%EB%AA%85%EC%94%A9/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181886_5%EB%AA%85%EC%94%A9/README.md)

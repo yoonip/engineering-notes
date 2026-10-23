@@ -87,4 +87,4 @@ vector<int> solution(string route) {
 - 제출 기록: 2026-10-24 06:31:31
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_250129_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_5%EB%B2%88___%EC%82%B0%EC%B1%85/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_250129_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_5%EB%B2%88___%EC%82%B0%EC%B1%85/README.md)

@@ -62,4 +62,4 @@ int solution(int** dots, size_t dots_rows, size_t dots_cols) {
 - 제출 기록: 2026-10-24 07:29:27
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120875_%ED%8F%89%ED%96%89/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120875_%ED%8F%89%ED%96%89/README.md)

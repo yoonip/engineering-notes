@@ -82,4 +82,4 @@ int solution(vector<string> words) {
 - 제출 기록: 2026-10-24 06:49:55
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_17685_%5B3%EC%B0%A8%5D_%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_17685_%5B3%EC%B0%A8%5D_%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1/README.md)

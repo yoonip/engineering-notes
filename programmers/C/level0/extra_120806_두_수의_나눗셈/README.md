@@ -42,4 +42,4 @@ int solution(int num1, int num2) { return num1 * 1000 / num2; }
 - 제출 기록: 2026-10-24 06:54:54
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120806_%EB%91%90_%EC%88%98%EC%9D%98_%EB%82%98%EB%88%97%EC%85%88/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120806_%EB%91%90_%EC%88%98%EC%9D%98_%EB%82%98%EB%88%97%EC%85%88/README.md)

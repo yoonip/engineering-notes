@@ -133,4 +133,4 @@ int solution(int seat, vector<vector<string>> passengers) {
 - 제출 기록: 2026-10-24 06:29:19
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_340201_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_7%EB%B2%88___%EB%B2%84%EC%8A%A4/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_340201_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_7%EB%B2%88___%EB%B2%84%EC%8A%A4/README.md)

@@ -43,4 +43,4 @@ string solution(int q, int r, string code) {
 - 제출 기록: 2026-10-24 05:59:26
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181903_qr_code/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181903_qr_code/README.md)

@@ -94,4 +94,4 @@ vector<string> solution(vector<string> expressions) {
 - 제출 기록: 2026-10-24 06:46:01
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/010_340210_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EC%88%98%EC%8B%9D_%EB%B3%B5%EC%9B%90%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/010_340210_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EC%88%98%EC%8B%9D_%EB%B3%B5%EC%9B%90%ED%95%98%EA%B8%B0/README.md)

@@ -39,4 +39,4 @@ string solution(string my_string, int n) {
 - 제출 기록: 2026-10-24 05:58:07
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181907_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98_%EC%95%9E%EC%9D%98_n%EA%B8%80%EC%9E%90/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181907_%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98_%EC%95%9E%EC%9D%98_n%EA%B8%80%EC%9E%90/README.md)

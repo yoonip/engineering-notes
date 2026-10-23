@@ -88,4 +88,4 @@ int solution(vector<vector<int>> board) {
 - 제출 기록: 2026-10-24 06:41:36
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/052_60063_%EB%B8%94%EB%A1%9D_%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/052_60063_%EB%B8%94%EB%A1%9D_%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0/README.md)

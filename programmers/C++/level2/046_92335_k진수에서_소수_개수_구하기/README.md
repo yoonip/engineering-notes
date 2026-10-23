@@ -68,4 +68,4 @@ int solution(int n, int k) {
 - 제출 기록: 2026-10-24 06:37:32
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/046_92335_k%EC%A7%84%EC%88%98%EC%97%90%EC%84%9C_%EC%86%8C%EC%88%98_%EA%B0%9C%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/046_92335_k%EC%A7%84%EC%88%98%EC%97%90%EC%84%9C_%EC%86%8C%EC%88%98_%EA%B0%9C%EC%88%98_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)

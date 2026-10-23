@@ -90,4 +90,4 @@ vector<int> solution(vector<string> words, vector<string> queries) {
 - 제출 기록: 2026-10-24 06:47:25
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_60060_%EA%B0%80%EC%82%AC_%EA%B2%80%EC%83%89/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_60060_%EA%B0%80%EC%82%AC_%EA%B2%80%EC%83%89/README.md)

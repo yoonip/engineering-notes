@@ -84,4 +84,4 @@ vector<vector<int>> solution(vector<vector<int>> nodeinfo) {
 - 제출 기록: 2026-10-24 06:45:04
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/066_42892_%EA%B8%B8_%EC%B0%BE%EA%B8%B0_%EA%B2%8C%EC%9E%84/README.md)
+[기존 풀이 기록](../../../Python/level3/066_42892_%EA%B8%B8_%EC%B0%BE%EA%B8%B0_%EA%B2%8C%EC%9E%84/README.md)

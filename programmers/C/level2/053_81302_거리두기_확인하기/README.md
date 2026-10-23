@@ -91,4 +91,4 @@ int* solution(const char*** places, size_t places_rows, size_t places_cols) {
 - 제출 기록: 2026-10-24 06:19:39
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/053_81302_%EA%B1%B0%EB%A6%AC%EB%91%90%EA%B8%B0_%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/053_81302_%EA%B1%B0%EB%A6%AC%EB%91%90%EA%B8%B0_%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/README.md)

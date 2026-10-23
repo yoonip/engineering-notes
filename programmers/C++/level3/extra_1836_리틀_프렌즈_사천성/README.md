@@ -78,4 +78,4 @@ string solution(int m, int n, vector<string> board) {
 - 제출 기록: 2026-10-24 06:49:53
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/extra_1836_%EB%A6%AC%ED%8B%80_%ED%94%84%EB%A0%8C%EC%A6%88_%EC%82%AC%EC%B2%9C%EC%84%B1/README.md)
+[기존 풀이 기록](../../../Python/level3/extra_1836_%EB%A6%AC%ED%8B%80_%ED%94%84%EB%A0%8C%EC%A6%88_%EC%82%AC%EC%B2%9C%EC%84%B1/README.md)

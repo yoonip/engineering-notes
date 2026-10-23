@@ -55,4 +55,4 @@ long long solution(int w, int h) {
 - 제출 기록: 2026-10-24 06:20:57
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/064_62048_%EB%A9%80%EC%A9%A1%ED%95%9C_%EC%82%AC%EA%B0%81%ED%98%95/README.md)
+[기존 풀이 기록](../../../Python/level2/064_62048_%EB%A9%80%EC%A9%A1%ED%95%9C_%EC%82%AC%EA%B0%81%ED%98%95/README.md)

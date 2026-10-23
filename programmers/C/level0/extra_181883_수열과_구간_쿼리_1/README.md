@@ -52,4 +52,4 @@ int* solution(int arr[], size_t arr_len, int** queries, size_t queries_rows, siz
 - 제출 기록: 2026-10-24 07:13:32
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181883_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_1/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181883_%EC%88%98%EC%97%B4%EA%B3%BC_%EA%B5%AC%EA%B0%84_%EC%BF%BC%EB%A6%AC_1/README.md)

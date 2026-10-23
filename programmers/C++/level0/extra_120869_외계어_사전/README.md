@@ -73,4 +73,4 @@ int solution(vector<string> spell, vector<string> dic) {
 - 제출 기록: 2026-10-24 06:55:24
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120869_%EC%99%B8%EA%B3%84%EC%96%B4_%EC%82%AC%EC%A0%84/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120869_%EC%99%B8%EA%B3%84%EC%96%B4_%EC%82%AC%EC%A0%84/README.md)

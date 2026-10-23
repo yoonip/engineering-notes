@@ -100,4 +100,4 @@ string solution(vector<int> numbers, string hand) {
 - 제출 기록: 2026-10-24 06:15:41
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_67256_%ED%82%A4%ED%8C%A8%EB%93%9C_%EB%88%84%EB%A5%B4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_67256_%ED%82%A4%ED%8C%A8%EB%93%9C_%EB%88%84%EB%A5%B4%EA%B8%B0/README.md)

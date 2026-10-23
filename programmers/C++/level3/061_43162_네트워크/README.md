@@ -54,4 +54,4 @@ int solution(int n, vector<vector<int>> computers) {
 - 제출 기록: 2026-10-24 06:43:36
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/061_43162_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/README.md)
+[기존 풀이 기록](../../../Python/level3/061_43162_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/README.md)

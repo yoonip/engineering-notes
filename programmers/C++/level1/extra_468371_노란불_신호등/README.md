@@ -90,4 +90,4 @@ int solution(vector<vector<int>> signals) {
 - 제출 기록: 2026-10-24 05:59:56
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_468371_%EB%85%B8%EB%9E%80%EB%B6%88_%EC%8B%A0%ED%98%B8%EB%93%B1/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_468371_%EB%85%B8%EB%9E%80%EB%B6%88_%EC%8B%A0%ED%98%B8%EB%93%B1/README.md)

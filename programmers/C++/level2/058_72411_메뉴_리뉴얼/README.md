@@ -80,4 +80,4 @@ vector<string> solution(vector<string> orders, vector<int> course) {
 - 제출 기록: 2026-10-24 06:40:39
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/058_72411_%EB%A9%94%EB%89%B4_%EB%A6%AC%EB%89%B4%EC%96%BC/README.md)
+[기존 풀이 기록](../../../Python/level2/058_72411_%EB%A9%94%EB%89%B4_%EB%A6%AC%EB%89%B4%EC%96%BC/README.md)

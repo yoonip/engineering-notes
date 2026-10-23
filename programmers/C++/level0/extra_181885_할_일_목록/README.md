@@ -59,4 +59,4 @@ vector<string> solution(vector<string> todo_list, vector<bool> finished) {
 - 제출 기록: 2026-10-24 06:07:16
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181885_%ED%95%A0_%EC%9D%BC_%EB%AA%A9%EB%A1%9D/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181885_%ED%95%A0_%EC%9D%BC_%EB%AA%A9%EB%A1%9D/README.md)

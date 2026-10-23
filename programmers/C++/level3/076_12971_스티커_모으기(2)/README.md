@@ -52,4 +52,4 @@ int solution(vector<int> sticker) {
 - 제출 기록: 2026-10-24 06:47:36
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/076_12971_%EC%8A%A4%ED%8B%B0%EC%BB%A4_%EB%AA%A8%EC%9C%BC%EA%B8%B0%282%29/README.md)
+[기존 풀이 기록](../../../Python/level3/076_12971_%EC%8A%A4%ED%8B%B0%EC%BB%A4_%EB%AA%A8%EC%9C%BC%EA%B8%B0%282%29/README.md)

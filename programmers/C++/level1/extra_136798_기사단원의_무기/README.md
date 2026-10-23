@@ -78,4 +78,4 @@ int solution(int number, int limit, int power) {
 - 제출 기록: 2026-10-24 06:10:03
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_136798_%EA%B8%B0%EC%82%AC%EB%8B%A8%EC%9B%90%EC%9D%98_%EB%AC%B4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_136798_%EA%B8%B0%EC%82%AC%EB%8B%A8%EC%9B%90%EC%9D%98_%EB%AC%B4%EA%B8%B0/README.md)

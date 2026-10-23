@@ -71,4 +71,4 @@ int solution(const char* board[], size_t board_len) {
 - 제출 기록: 2026-10-24 06:11:49
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/021_160585_%ED%98%BC%EC%9E%90%EC%84%9C_%ED%95%98%EB%8A%94_%ED%8B%B1%ED%83%9D%ED%86%A0/README.md)
+[기존 풀이 기록](../../../Python/level2/021_160585_%ED%98%BC%EC%9E%90%EC%84%9C_%ED%95%98%EB%8A%94_%ED%8B%B1%ED%83%9D%ED%86%A0/README.md)

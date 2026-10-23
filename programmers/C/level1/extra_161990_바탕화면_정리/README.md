@@ -61,4 +61,4 @@ int* solution(const char* wallpaper[], size_t wallpaper_len) {
 - 제출 기록: 2026-10-24 05:46:30
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_161990_%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4_%EC%A0%95%EB%A6%AC/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_161990_%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4_%EC%A0%95%EB%A6%AC/README.md)

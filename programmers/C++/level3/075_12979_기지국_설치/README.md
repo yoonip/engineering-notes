@@ -54,4 +54,4 @@ int solution(int n, vector<int> stations, int w) {
 - 제출 기록: 2026-10-24 06:47:15
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/075_12979_%EA%B8%B0%EC%A7%80%EA%B5%AD_%EC%84%A4%EC%B9%98/README.md)
+[기존 풀이 기록](../../../Python/level3/075_12979_%EA%B8%B0%EC%A7%80%EA%B5%AD_%EC%84%A4%EC%B9%98/README.md)

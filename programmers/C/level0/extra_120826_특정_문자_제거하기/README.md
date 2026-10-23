@@ -56,4 +56,4 @@ char* solution(const char* my_string, const char* letter) {
 - 제출 기록: 2026-10-24 06:51:20
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120826_%ED%8A%B9%EC%A0%95_%EB%AC%B8%EC%9E%90_%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120826_%ED%8A%B9%EC%A0%95_%EB%AC%B8%EC%9E%90_%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/README.md)

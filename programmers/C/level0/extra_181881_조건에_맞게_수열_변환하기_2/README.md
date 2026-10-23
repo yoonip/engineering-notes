@@ -65,4 +65,4 @@ int solution(int arr[], size_t arr_len) {
 - 제출 기록: 2026-10-24 06:08:19
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181881_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EA%B2%8C_%EC%88%98%EC%97%B4_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0_2/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181881_%EC%A1%B0%EA%B1%B4%EC%97%90_%EB%A7%9E%EA%B2%8C_%EC%88%98%EC%97%B4_%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0_2/README.md)

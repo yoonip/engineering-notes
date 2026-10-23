@@ -74,4 +74,4 @@ int solution(int n, int m, vector<int> section) {
 - 제출 기록: 2026-10-24 06:06:36
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_161989_%EB%8D%A7%EC%B9%A0%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_161989_%EB%8D%A7%EC%B9%A0%ED%95%98%EA%B8%B0/README.md)

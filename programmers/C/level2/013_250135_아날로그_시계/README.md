@@ -61,4 +61,4 @@ int solution(int h1, int m1, int s1, int h2, int m2, int s2) {
 - 제출 기록: 2026-10-24 06:09:42
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/013_250135_%EC%95%84%EB%82%A0%EB%A1%9C%EA%B7%B8_%EC%8B%9C%EA%B3%84/README.md)
+[기존 풀이 기록](../../../Python/level2/013_250135_%EC%95%84%EB%82%A0%EB%A1%9C%EA%B7%B8_%EC%8B%9C%EA%B3%84/README.md)

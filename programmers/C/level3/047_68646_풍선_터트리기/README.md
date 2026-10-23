@@ -59,4 +59,4 @@ int solution(int a[], size_t a_len) {
 - 제출 기록: 2026-10-24 06:34:38
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/047_68646_%ED%92%8D%EC%84%A0_%ED%84%B0%ED%8A%B8%EB%A6%AC%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/047_68646_%ED%92%8D%EC%84%A0_%ED%84%B0%ED%8A%B8%EB%A6%AC%EA%B8%B0/README.md)

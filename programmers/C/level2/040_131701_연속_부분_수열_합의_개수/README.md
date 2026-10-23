@@ -73,4 +73,4 @@ int solution(int elements[], size_t elements_len) {
 - 제출 기록: 2026-10-24 06:16:34
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/040_131701_%EC%97%B0%EC%86%8D_%EB%B6%80%EB%B6%84_%EC%88%98%EC%97%B4_%ED%95%A9%EC%9D%98_%EA%B0%9C%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level2/040_131701_%EC%97%B0%EC%86%8D_%EB%B6%80%EB%B6%84_%EC%88%98%EC%97%B4_%ED%95%A9%EC%9D%98_%EA%B0%9C%EC%88%98/README.md)

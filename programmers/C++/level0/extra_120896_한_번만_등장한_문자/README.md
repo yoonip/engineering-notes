@@ -67,4 +67,4 @@ string solution(string s) {
 - 제출 기록: 2026-10-24 07:27:03
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120896_%ED%95%9C_%EB%B2%88%EB%A7%8C_%EB%93%B1%EC%9E%A5%ED%95%9C_%EB%AC%B8%EC%9E%90/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120896_%ED%95%9C_%EB%B2%88%EB%A7%8C_%EB%93%B1%EC%9E%A5%ED%95%9C_%EB%AC%B8%EC%9E%90/README.md)

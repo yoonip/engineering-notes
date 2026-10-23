@@ -79,4 +79,4 @@ int solution(const char* numbers) {
 - 제출 기록: 2026-10-24 06:30:19
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/024_136797_%EC%88%AB%EC%9E%90_%ED%83%80%EC%9E%90_%EB%8C%80%ED%9A%8C/README.md)
+[기존 풀이 기록](../../../Python/level3/024_136797_%EC%88%AB%EC%9E%90_%ED%83%80%EC%9E%90_%EB%8C%80%ED%9A%8C/README.md)

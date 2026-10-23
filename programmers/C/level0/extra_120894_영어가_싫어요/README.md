@@ -69,4 +69,4 @@ long long solution(const char* numbers) {
 - 제출 기록: 2026-10-24 07:27:23
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120894_%EC%98%81%EC%96%B4%EA%B0%80_%EC%8B%AB%EC%96%B4%EC%9A%94/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120894_%EC%98%81%EC%96%B4%EA%B0%80_%EC%8B%AB%EC%96%B4%EC%9A%94/README.md)

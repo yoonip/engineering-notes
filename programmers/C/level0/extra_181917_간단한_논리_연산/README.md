@@ -37,4 +37,4 @@ bool solution(bool x1, bool x2, bool x3, bool x4) {
 - 제출 기록: 2026-10-24 05:46:01
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181917_%EA%B0%84%EB%8B%A8%ED%95%9C_%EB%85%BC%EB%A6%AC_%EC%97%B0%EC%82%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181917_%EA%B0%84%EB%8B%A8%ED%95%9C_%EB%85%BC%EB%A6%AC_%EC%97%B0%EC%82%B0/README.md)

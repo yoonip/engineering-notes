@@ -64,4 +64,4 @@ char* solution(const char* id_pw[], size_t id_pw_len, const char*** db, size_t d
 - 제출 기록: 2026-10-24 06:50:22
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120883_%EB%A1%9C%EA%B7%B8%EC%9D%B8_%EC%84%B1%EA%B3%B5_/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120883_%EB%A1%9C%EA%B7%B8%EC%9D%B8_%EC%84%B1%EA%B3%B5_/README.md)

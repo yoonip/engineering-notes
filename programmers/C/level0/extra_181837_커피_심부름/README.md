@@ -49,4 +49,4 @@ int solution(const char* order[], size_t order_len) {
 - 제출 기록: 2026-10-24 07:22:08
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181837_%EC%BB%A4%ED%94%BC_%EC%8B%AC%EB%B6%80%EB%A6%84/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181837_%EC%BB%A4%ED%94%BC_%EC%8B%AC%EB%B6%80%EB%A6%84/README.md)

@@ -64,4 +64,4 @@ vector<int> solution(int m, int n, int startX, int startY, vector<vector<int>> b
 - 제출 기록: 2026-10-24 06:29:53
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/020_169198_%EB%8B%B9%EA%B5%AC_%EC%97%B0%EC%8A%B5/README.md)
+[기존 풀이 기록](../../../Python/level2/020_169198_%EB%8B%B9%EA%B5%AC_%EC%97%B0%EC%8A%B5/README.md)

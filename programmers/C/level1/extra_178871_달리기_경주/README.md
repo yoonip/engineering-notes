@@ -101,4 +101,4 @@ char** solution(const char* players[], size_t players_len, const char* callings[
 - 제출 기록: 2026-10-24 05:45:58
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_178871_%EB%8B%AC%EB%A6%AC%EA%B8%B0_%EA%B2%BD%EC%A3%BC/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_178871_%EB%8B%AC%EB%A6%AC%EA%B8%B0_%EA%B2%BD%EC%A3%BC/README.md)

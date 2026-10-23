@@ -53,4 +53,4 @@ int solution(int number[], size_t number_len) {
 - 제출 기록: 2026-10-24 05:51:31
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_131705_%EC%82%BC%EC%B4%9D%EC%82%AC/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_131705_%EC%82%BC%EC%B4%9D%EC%82%AC/README.md)

@@ -88,4 +88,4 @@ int solution(vector<int> mats, vector<vector<string>> park) {
 - 제출 기록: 2026-10-24 06:03:30
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_340198_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_10%EB%B2%88___%EA%B3%B5%EC%9B%90/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_340198_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_10%EB%B2%88___%EA%B3%B5%EC%9B%90/README.md)

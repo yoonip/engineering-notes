@@ -45,4 +45,4 @@ int solution(int n) {
 - 제출 기록: 2026-10-24 06:45:41
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/extra_12900_2_x_n_%ED%83%80%EC%9D%BC%EB%A7%81/README.md)
+[기존 풀이 기록](../../../Python/level2/extra_12900_2_x_n_%ED%83%80%EC%9D%BC%EB%A7%81/README.md)

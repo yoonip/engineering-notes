@@ -66,4 +66,4 @@ double solution(vector<int> arr) { return (double)accumulate(arr.begin(), arr.en
 - 제출 기록: 2026-10-24 06:20:20
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12944_%ED%8F%89%EA%B7%A0_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12944_%ED%8F%89%EA%B7%A0_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)

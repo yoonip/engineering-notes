@@ -102,4 +102,4 @@ vector<vector<int>> solution(vector<vector<int>> rc, vector<string> operations) 
 - 제출 기록: 2026-10-24 06:43:36
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_118670_%ED%96%89%EB%A0%AC%EA%B3%BC_%EC%97%B0%EC%82%B0/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_118670_%ED%96%89%EB%A0%AC%EA%B3%BC_%EC%97%B0%EC%82%B0/README.md)

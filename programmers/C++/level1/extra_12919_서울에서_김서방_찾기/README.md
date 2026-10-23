@@ -72,4 +72,4 @@ string solution(vector<string> seoul) {
 - 제출 기록: 2026-10-24 06:23:55
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12919_%EC%84%9C%EC%9A%B8%EC%97%90%EC%84%9C_%EA%B9%80%EC%84%9C%EB%B0%A9_%EC%B0%BE%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12919_%EC%84%9C%EC%9A%B8%EC%97%90%EC%84%9C_%EA%B9%80%EC%84%9C%EB%B0%A9_%EC%B0%BE%EA%B8%B0/README.md)

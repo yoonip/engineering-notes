@@ -72,4 +72,4 @@ string solution(string s, int n) {
 - 제출 기록: 2026-10-24 06:22:59
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12926_%EC%8B%9C%EC%A0%80_%EC%95%94%ED%98%B8/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12926_%EC%8B%9C%EC%A0%80_%EC%95%94%ED%98%B8/README.md)

@@ -50,4 +50,4 @@ string solution(string s) {
 - 제출 기록: 2026-10-24 06:35:34
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/100_12951_JadenCase_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/100_12951_JadenCase_%EB%AC%B8%EC%9E%90%EC%97%B4_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)

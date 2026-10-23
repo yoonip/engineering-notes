@@ -84,4 +84,4 @@ int solution(vector<string> strs, string t) {
 - 제출 기록: 2026-10-24 06:50:49
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_12983_%EB%8B%A8%EC%96%B4_%ED%8D%BC%EC%A6%90/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_12983_%EB%8B%A8%EC%96%B4_%ED%8D%BC%EC%A6%90/README.md)

@@ -109,4 +109,4 @@ string solution(vector<string> storage, vector<int> num) {
 - 제출 기록: 2026-10-24 06:33:28
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_250126_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_8%EB%B2%88___%EC%B0%BD%EA%B3%A0_%EC%A0%95%EB%A6%AC/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_250126_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_8%EB%B2%88___%EC%B0%BD%EA%B3%A0_%EC%A0%95%EB%A6%AC/README.md)

@@ -76,4 +76,4 @@ int solution(int n, int m, vector<vector<int>> timetable) {
 - 제출 기록: 2026-10-24 06:49:37
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/extra_1838_%EB%AA%B8%EC%A7%B1_%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%84%88_%EB%9D%BC%EC%9D%B4%EC%96%B8%EC%9D%98_%EA%B3%A0%EB%AF%BC/README.md)
+[기존 풀이 기록](../../../Python/level3/extra_1838_%EB%AA%B8%EC%A7%B1_%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%84%88_%EB%9D%BC%EC%9D%B4%EC%96%B8%EC%9D%98_%EA%B3%A0%EB%AF%BC/README.md)

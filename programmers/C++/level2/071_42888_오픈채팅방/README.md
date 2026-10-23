@@ -64,4 +64,4 @@ vector<string> solution(vector<string> record) {
 - 제출 기록: 2026-10-24 06:20:29
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/071_42888_%EC%98%A4%ED%94%88%EC%B1%84%ED%8C%85%EB%B0%A9/README.md)
+[기존 풀이 기록](../../../Python/level2/071_42888_%EC%98%A4%ED%94%88%EC%B1%84%ED%8C%85%EB%B0%A9/README.md)

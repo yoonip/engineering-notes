@@ -103,4 +103,4 @@ int solution(int** board, size_t board_rows, size_t board_cols, int aloc[], size
 - 제출 기록: 2026-10-24 06:31:53
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/032_92345_%EC%82%AC%EB%9D%BC%EC%A7%80%EB%8A%94_%EB%B0%9C%ED%8C%90/README.md)
+[기존 풀이 기록](../../../Python/level3/032_92345_%EC%82%AC%EB%9D%BC%EC%A7%80%EB%8A%94_%EB%B0%9C%ED%8C%90/README.md)

@@ -73,4 +73,4 @@ int* solution(int target) {
 - 제출 기록: 2026-10-24 06:31:16
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/029_131129_%EC%B9%B4%EC%9A%B4%ED%8A%B8_%EB%8B%A4%EC%9A%B4/README.md)
+[기존 풀이 기록](../../../Python/level3/029_131129_%EC%B9%B4%EC%9A%B4%ED%8A%B8_%EB%8B%A4%EC%9A%B4/README.md)

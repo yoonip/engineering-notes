@@ -106,4 +106,4 @@ int solution(vector<vector<int>> visible, vector<vector<int>> hidden, int k) {
 - 제출 기록: 2026-10-24 06:41:27
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_389630_%EA%B2%A9%EC%9E%90_%EB%92%A4%EC%A7%91%EA%B8%B0_%EB%AF%B8%EB%A1%9C/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_389630_%EA%B2%A9%EC%9E%90_%EB%92%A4%EC%A7%91%EA%B8%B0_%EB%AF%B8%EB%A1%9C/README.md)

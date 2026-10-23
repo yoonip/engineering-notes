@@ -62,4 +62,4 @@ vector<int> solution(vector<string> enroll, vector<string> referral, vector<stri
 - 제출 기록: 2026-10-24 06:55:22
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/041_77486_%EB%8B%A4%EB%8B%A8%EA%B3%84_%EC%B9%AB%EC%86%94_%ED%8C%90%EB%A7%A4/README.md)
+[기존 풀이 기록](../../../Python/level3/041_77486_%EB%8B%A4%EB%8B%A8%EA%B3%84_%EC%B9%AB%EC%86%94_%ED%8C%90%EB%A7%A4/README.md)

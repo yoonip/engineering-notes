@@ -61,4 +61,4 @@ vector<int> solution(vector<int> arr, vector<int> delete_list) {
 - 제출 기록: 2026-10-24 06:22:40
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181844_%EB%B0%B0%EC%97%B4%EC%9D%98_%EC%9B%90%EC%86%8C_%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181844_%EB%B0%B0%EC%97%B4%EC%9D%98_%EC%9B%90%EC%86%8C_%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/README.md)

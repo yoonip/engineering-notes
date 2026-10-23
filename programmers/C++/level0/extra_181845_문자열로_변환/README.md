@@ -51,4 +51,4 @@ string solution(int n) { return to_string(n); }
 - 제출 기록: 2026-10-24 06:22:30
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181845_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%B3%80%ED%99%98/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181845_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%B3%80%ED%99%98/README.md)

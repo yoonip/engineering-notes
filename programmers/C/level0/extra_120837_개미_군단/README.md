@@ -42,4 +42,4 @@ int solution(int hp) { return hp / 5 + hp % 5 / 3 + hp % 5 % 3; }
 - 제출 기록: 2026-10-24 06:56:05
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120837_%EA%B0%9C%EB%AF%B8_%EA%B5%B0%EB%8B%A8/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120837_%EA%B0%9C%EB%AF%B8_%EA%B5%B0%EB%8B%A8/README.md)

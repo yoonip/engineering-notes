@@ -123,4 +123,4 @@ int solution(int n, int start, int end, int** roads, size_t roads_rows, size_t r
 - 제출 기록: 2026-10-24 06:37:33
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_81304_%EB%AF%B8%EB%A1%9C_%ED%83%88%EC%B6%9C/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_81304_%EB%AF%B8%EB%A1%9C_%ED%83%88%EC%B6%9C/README.md)

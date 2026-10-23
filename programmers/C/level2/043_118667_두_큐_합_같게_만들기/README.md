@@ -77,4 +77,4 @@ int solution(int queue1[], size_t queue1_len, int queue2[], size_t queue2_len) {
 - 제출 기록: 2026-10-24 06:17:13
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/043_118667_%EB%91%90_%ED%81%90_%ED%95%A9_%EA%B0%99%EA%B2%8C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/043_118667_%EB%91%90_%ED%81%90_%ED%95%A9_%EA%B0%99%EA%B2%8C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)

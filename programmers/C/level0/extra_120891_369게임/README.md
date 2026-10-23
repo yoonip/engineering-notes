@@ -57,4 +57,4 @@ int solution(int order) {
 - 제출 기록: 2026-10-24 07:27:56
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120891_369%EA%B2%8C%EC%9E%84/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120891_369%EA%B2%8C%EC%9E%84/README.md)

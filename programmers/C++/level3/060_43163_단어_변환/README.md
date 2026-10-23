@@ -64,4 +64,4 @@ int solution(string begin, string target, vector<string> words) {
 - 제출 기록: 2026-10-24 06:43:29
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/060_43163_%EB%8B%A8%EC%96%B4_%EB%B3%80%ED%99%98/README.md)
+[기존 풀이 기록](../../../Python/level3/060_43163_%EB%8B%A8%EC%96%B4_%EB%B3%80%ED%99%98/README.md)

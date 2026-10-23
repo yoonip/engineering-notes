@@ -72,4 +72,4 @@ string solution(int n, int k, vector<string> cmd) {
 - 제출 기록: 2026-10-24 06:54:33
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/039_81303_%ED%91%9C_%ED%8E%B8%EC%A7%91/README.md)
+[기존 풀이 기록](../../../Python/level3/039_81303_%ED%91%9C_%ED%8E%B8%EC%A7%91/README.md)

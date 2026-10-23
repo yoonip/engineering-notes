@@ -42,4 +42,4 @@ int solution(int n, vector<int> money) {
 - 제출 기록: 2026-10-24 06:49:04
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/081_12907_%EA%B1%B0%EC%8A%A4%EB%A6%84%EB%8F%88/README.md)
+[기존 풀이 기록](../../../Python/level3/081_12907_%EA%B1%B0%EC%8A%A4%EB%A6%84%EB%8F%88/README.md)

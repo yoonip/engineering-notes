@@ -48,4 +48,4 @@ int solution(string s) {
 - 제출 기록: 2026-10-24 06:34:07
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/097_12973_%EC%A7%9D%EC%A7%80%EC%96%B4_%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/097_12973_%EC%A7%9D%EC%A7%80%EC%96%B4_%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0/README.md)

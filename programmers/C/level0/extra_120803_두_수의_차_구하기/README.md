@@ -43,4 +43,4 @@ int solution(int num1, int num2) { return num1 - num2; }
 - 제출 기록: 2026-10-24 06:55:30
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120803_%EB%91%90_%EC%88%98%EC%9D%98_%EC%B0%A8_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120803_%EB%91%90_%EC%88%98%EC%9D%98_%EC%B0%A8_%EA%B5%AC%ED%95%98%EA%B8%B0/README.md)

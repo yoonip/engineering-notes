@@ -43,4 +43,4 @@ int solution(int angle) { return angle < 90 ? 1 : angle == 90 ? 2 : angle < 180 
 - 제출 기록: 2026-10-24 07:33:12
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120829_%EA%B0%81%EB%8F%84%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120829_%EA%B0%81%EB%8F%84%EA%B8%B0/README.md)

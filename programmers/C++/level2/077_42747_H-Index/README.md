@@ -54,4 +54,4 @@ int solution(vector<int> citations) {
 - 제출 기록: 2026-10-24 06:23:23
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/077_42747_H-Index/README.md)
+[기존 풀이 기록](../../../Python/level2/077_42747_H-Index/README.md)

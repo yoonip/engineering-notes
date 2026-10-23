@@ -37,4 +37,4 @@ int solution(const char* my_string, const char* is_prefix) {
 - 제출 기록: 2026-10-24 07:09:08
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181906_%EC%A0%91%EB%91%90%EC%82%AC%EC%9D%B8%EC%A7%80_%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181906_%EC%A0%91%EB%91%90%EC%82%AC%EC%9D%B8%EC%A7%80_%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/README.md)

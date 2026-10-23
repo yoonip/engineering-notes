@@ -43,4 +43,4 @@ int solution(const char* message) { return 2 * (int)strlen(message); }
 - 제출 기록: 2026-10-24 06:42:41
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120898_%ED%8E%B8%EC%A7%80/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120898_%ED%8E%B8%EC%A7%80/README.md)

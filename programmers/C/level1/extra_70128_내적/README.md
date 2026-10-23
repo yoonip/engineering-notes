@@ -53,4 +53,4 @@ int solution(int a[], size_t a_len, int b[], size_t b_len) {
 - 제출 기록: 2026-10-24 05:54:37
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_70128_%EB%82%B4%EC%A0%81/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_70128_%EB%82%B4%EC%A0%81/README.md)

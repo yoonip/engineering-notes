@@ -64,4 +64,4 @@ vector<int> solution(vector<string> genres, vector<int> plays) {
 - 제출 기록: 2026-10-24 06:46:10
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/071_42579_%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%95%A8%EB%B2%94/README.md)
+[기존 풀이 기록](../../../Python/level3/071_42579_%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%95%A8%EB%B2%94/README.md)

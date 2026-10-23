@@ -37,4 +37,4 @@ int solution(int n) {
 - 제출 기록: 2026-10-24 05:34:17
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181935_%ED%99%80%EC%A7%9D%EC%97%90_%EB%94%B0%EB%9D%BC_%EB%8B%A4%EB%A5%B8_%EA%B0%92_%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181935_%ED%99%80%EC%A7%9D%EC%97%90_%EB%94%B0%EB%9D%BC_%EB%8B%A4%EB%A5%B8_%EA%B0%92_%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/README.md)

@@ -58,4 +58,4 @@ vector<int> solution(vector<int> prices) {
 - 제출 기록: 2026-10-24 06:25:08
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/082_42584_%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9/README.md)
+[기존 풀이 기록](../../../Python/level2/082_42584_%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9/README.md)

@@ -82,4 +82,4 @@ string solution(vector<string> cards1, vector<string> cards2, vector<string> goa
 - 제출 기록: 2026-10-24 06:07:28
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_159994_%EC%B9%B4%EB%93%9C_%EB%AD%89%EC%B9%98/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_159994_%EC%B9%B4%EB%93%9C_%EB%AD%89%EC%B9%98/README.md)

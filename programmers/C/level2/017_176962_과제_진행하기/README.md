@@ -93,4 +93,4 @@ char** solution(const char*** plans, size_t plans_rows, size_t plans_cols) {
 - 제출 기록: 2026-10-24 06:10:37
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/017_176962_%EA%B3%BC%EC%A0%9C_%EC%A7%84%ED%96%89%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level2/017_176962_%EA%B3%BC%EC%A0%9C_%EC%A7%84%ED%96%89%ED%95%98%EA%B8%B0/README.md)

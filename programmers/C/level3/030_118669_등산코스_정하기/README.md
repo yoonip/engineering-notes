@@ -89,4 +89,4 @@ int* solution(int n, int** paths, size_t paths_rows, size_t paths_cols, int gate
 - 제출 기록: 2026-10-24 06:31:39
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/030_118669_%EB%93%B1%EC%82%B0%EC%BD%94%EC%8A%A4_%EC%A0%95%ED%95%98%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level3/030_118669_%EB%93%B1%EC%82%B0%EC%BD%94%EC%8A%A4_%EC%A0%95%ED%95%98%EA%B8%B0/README.md)

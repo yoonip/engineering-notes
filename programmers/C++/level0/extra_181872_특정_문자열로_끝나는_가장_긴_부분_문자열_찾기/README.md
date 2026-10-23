@@ -55,4 +55,4 @@ string solution(string myString, string pat) {
 - 제출 기록: 2026-10-24 06:10:44
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181872_%ED%8A%B9%EC%A0%95_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%81%9D%EB%82%98%EB%8A%94_%EA%B0%80%EC%9E%A5_%EA%B8%B4_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%B0%BE%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181872_%ED%8A%B9%EC%A0%95_%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C_%EB%81%9D%EB%82%98%EB%8A%94_%EA%B0%80%EC%9E%A5_%EA%B8%B4_%EB%B6%80%EB%B6%84_%EB%AC%B8%EC%9E%90%EC%97%B4_%EC%B0%BE%EA%B8%B0/README.md)

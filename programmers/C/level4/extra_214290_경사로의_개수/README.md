@@ -103,4 +103,4 @@ int solution(int** grid, size_t grid_rows, size_t grid_cols, int d[], size_t d_l
 - 제출 기록: 2026-10-24 06:36:20
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level4/extra_214290_%EA%B2%BD%EC%82%AC%EB%A1%9C%EC%9D%98_%EA%B0%9C%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level4/extra_214290_%EA%B2%BD%EC%82%AC%EB%A1%9C%EC%9D%98_%EA%B0%9C%EC%88%98/README.md)

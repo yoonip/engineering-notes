@@ -65,4 +65,4 @@ int solution(vector<int> array, int n) {
 - 제출 기록: 2026-10-24 07:28:06
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120890_%EA%B0%80%EA%B9%8C%EC%9A%B4_%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120890_%EA%B0%80%EA%B9%8C%EC%9A%B4_%EC%88%98/README.md)

@@ -79,4 +79,4 @@ int solution(const char* want[], size_t want_len, int number[], size_t number_le
 - 제출 기록: 2026-10-24 06:17:02
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/042_131127_%ED%95%A0%EC%9D%B8_%ED%96%89%EC%82%AC/README.md)
+[기존 풀이 기록](../../../Python/level2/042_131127_%ED%95%A0%EC%9D%B8_%ED%96%89%EC%82%AC/README.md)

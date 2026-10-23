@@ -66,4 +66,4 @@ string solution(int num) { return num % 2 == 0 ? "Even" : "Odd"; }
 - 제출 기록: 2026-10-24 06:20:58
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_12937_%EC%A7%9D%EC%88%98%EC%99%80_%ED%99%80%EC%88%98/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_12937_%EC%A7%9D%EC%88%98%EC%99%80_%ED%99%80%EC%88%98/README.md)

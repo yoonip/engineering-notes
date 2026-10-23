@@ -67,4 +67,4 @@ int solution(int bandage[], size_t bandage_len, int health, int** attacks, size_
 - 제출 기록: 2026-10-24 05:45:42
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_250137_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%B6%95%EB%8C%80_%EA%B0%90%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_250137_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_1%EB%B2%88___%EB%B6%95%EB%8C%80_%EA%B0%90%EA%B8%B0/README.md)

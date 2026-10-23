@@ -55,4 +55,4 @@ int main(void) {
 - 제출 기록: 2026-10-24 06:30:47
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_250132_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_2%EB%B2%88___%ED%94%BC%ED%83%80%EA%B3%A0%EB%9D%BC%EC%8A%A4%EC%9D%98_%EC%A0%95%EB%A6%AC/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_250132_%5BPCCE_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_2%EB%B2%88___%ED%94%BC%ED%83%80%EA%B3%A0%EB%9D%BC%EC%8A%A4%EC%9D%98_%EC%A0%95%EB%A6%AC/README.md)

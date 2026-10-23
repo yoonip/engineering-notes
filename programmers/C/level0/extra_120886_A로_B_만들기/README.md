@@ -54,4 +54,4 @@ int solution(const char* before, const char* after) {
 - 제출 기록: 2026-10-24 06:48:37
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120886_A%EB%A1%9C_B_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120886_A%EB%A1%9C_B_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md)

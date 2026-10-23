@@ -59,4 +59,4 @@ int solution(vector<int> numbers, int k) {
 - 제출 기록: 2026-10-24 06:54:19
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120843_%EA%B3%B5_%EB%8D%98%EC%A7%80%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120843_%EA%B3%B5_%EB%8D%98%EC%A7%80%EA%B8%B0/README.md)

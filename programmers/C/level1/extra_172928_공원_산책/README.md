@@ -77,4 +77,4 @@ int* solution(const char* park[], size_t park_len, const char* routes[], size_t 
 - 제출 기록: 2026-10-24 05:46:13
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level1/extra_172928_%EA%B3%B5%EC%9B%90_%EC%82%B0%EC%B1%85/README.md)
+[기존 풀이 기록](../../../Python/level1/extra_172928_%EA%B3%B5%EC%9B%90_%EC%82%B0%EC%B1%85/README.md)

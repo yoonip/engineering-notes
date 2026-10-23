@@ -56,4 +56,4 @@ vector<int> solution(vector<string> operations) {
 - 제출 기록: 2026-10-24 06:45:44
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/069_42628_%EC%9D%B4%EC%A4%91%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90/README.md)
+[기존 풀이 기록](../../../Python/level3/069_42628_%EC%9D%B4%EC%A4%91%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90/README.md)

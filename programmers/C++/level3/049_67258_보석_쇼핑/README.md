@@ -64,4 +64,4 @@ vector<int> solution(vector<string> gems) {
 - 제출 기록: 2026-10-24 06:40:31
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level3/049_67258_%EB%B3%B4%EC%84%9D_%EC%87%BC%ED%95%91/README.md)
+[기존 풀이 기록](../../../Python/level3/049_67258_%EB%B3%B4%EC%84%9D_%EC%87%BC%ED%95%91/README.md)

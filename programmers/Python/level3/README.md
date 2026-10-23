@@ -1,0 +1,105 @@
+# Python 레벨 3 풀이
+
+[Python 전체 목차](../README.md) · [언어별 목차](../../README.md)
+
+기존 코드와 설명을 문제별 폴더에서 확인할 수 있습니다. 채점 결과는 보관한 제출 기록을 기준으로 표시합니다.
+
+## Python3 제출 기록
+
+| 문제 | 코드 |
+|---|---|
+| [468381 · 기차 선로](<001_468381_%EA%B8%B0%EC%B0%A8_%EC%84%A0%EB%A1%9C/README.md>) | [Python](<001_468381_%EA%B8%B0%EC%B0%A8_%EC%84%A0%EB%A1%9C/solution.py>) |
+| [468380 · 제곱 개수 배열](<002_468380_%EC%A0%9C%EA%B3%B1_%EA%B0%9C%EC%88%98_%EB%B0%B0%EC%97%B4/README.md>) | [Python](<002_468380_%EC%A0%9C%EA%B3%B1_%EA%B0%9C%EC%88%98_%EB%B0%B0%EC%97%B4/solution.py>) |
+| [468378 · 보물 찾기](<003_468378_%EB%B3%B4%EB%AC%BC_%EC%B0%BE%EA%B8%B0/README.md>) | [Python](<003_468378_%EB%B3%B4%EB%AC%BC_%EC%B0%BE%EA%B8%B0/solution.py>) |
+| [468376 · 최고 속도](<004_468376_%EC%B5%9C%EA%B3%A0_%EC%86%8D%EB%8F%84/README.md>) | [Python](<004_468376_%EC%B5%9C%EA%B3%A0_%EC%86%8D%EB%8F%84/solution.py>) |
+| [468375 · 발전소 회로 복구](<005_468375_%EB%B0%9C%EC%A0%84%EC%86%8C_%ED%9A%8C%EB%A1%9C_%EB%B3%B5%EA%B5%AC/README.md>) | [Python](<005_468375_%EB%B0%9C%EC%A0%84%EC%86%8C_%ED%9A%8C%EB%A1%9C_%EB%B3%B5%EA%B5%AC/solution.py>) |
+| [468374 · 카카오 앱 정리하기](<006_468374_%EC%B9%B4%EC%B9%B4%EC%98%A4_%EC%95%B1_%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0/README.md>) | [Python](<006_468374_%EC%B9%B4%EC%B9%B4%EC%98%A4_%EC%95%B1_%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0/solution.py>) |
+| [451808 · 숫자 야구](<007_451808_%EC%88%AB%EC%9E%90_%EC%95%BC%EA%B5%AC/README.md>) | [Python](<007_451808_%EC%88%AB%EC%9E%90_%EC%95%BC%EA%B5%AC/solution.py>) |
+| [389481 · 봉인된 주문](<008_389481_%EB%B4%89%EC%9D%B8%EB%90%9C_%EC%A3%BC%EB%AC%B8/README.md>) | [Python](<008_389481_%EB%B4%89%EC%9D%B8%EB%90%9C_%EC%A3%BC%EB%AC%B8/solution.py>) |
+| [388354 · 홀짝트리](<009_388354_%ED%99%80%EC%A7%9D%ED%8A%B8%EB%A6%AC/README.md>) | [Python](<009_388354_%ED%99%80%EC%A7%9D%ED%8A%B8%EB%A6%AC/solution.py>) |
+| [340210 · \[PCCP 기출문제\] 4번 / 수식 복원하기](<010_340210_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EC%88%98%EC%8B%9D_%EB%B3%B5%EC%9B%90%ED%95%98%EA%B8%B0/README.md>) | [Python](<010_340210_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EC%88%98%EC%8B%9D_%EB%B3%B5%EC%9B%90%ED%95%98%EA%B8%B0/solution.py>) |
+| [258709 · 주사위 고르기](<011_258709_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B3%A0%EB%A5%B4%EA%B8%B0/README.md>) | [Python](<011_258709_%EC%A3%BC%EC%82%AC%EC%9C%84_%EA%B3%A0%EB%A5%B4%EA%B8%B0/solution.py>) |
+| [258707 · n + 1 카드게임](<012_258707_n_%2B_1_%EC%B9%B4%EB%93%9C%EA%B2%8C%EC%9E%84/README.md>) | [Python](<012_258707_n_%2B_1_%EC%B9%B4%EB%93%9C%EA%B2%8C%EC%9E%84/solution.py>) |
+| [258705 · 산 모양 타일링](<013_258705_%EC%82%B0_%EB%AA%A8%EC%96%91_%ED%83%80%EC%9D%BC%EB%A7%81/README.md>) | [Python](<013_258705_%EC%82%B0_%EB%AA%A8%EC%96%91_%ED%83%80%EC%9D%BC%EB%A7%81/solution.py>) |
+| [250134 · \[PCCP 기출문제\] 4번 / 수레 움직이기](<014_250134_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EC%88%98%EB%A0%88_%EC%9B%80%EC%A7%81%EC%9D%B4%EA%B8%B0/README.md>) | [Python](<014_250134_%5BPCCP_%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C%5D_4%EB%B2%88___%EC%88%98%EB%A0%88_%EC%9B%80%EC%A7%81%EC%9D%B4%EA%B8%B0/solution.py>) |
+| [214289 · 에어컨](<015_214289_%EC%97%90%EC%96%B4%EC%BB%A8/README.md>) | [Python](<015_214289_%EC%97%90%EC%96%B4%EC%BB%A8/solution.py>) |
+| [214288 · 상담원 인원](<016_214288_%EC%83%81%EB%8B%B4%EC%9B%90_%EC%9D%B8%EC%9B%90/README.md>) | [Python](<016_214288_%EC%83%81%EB%8B%B4%EC%9B%90_%EC%9D%B8%EC%9B%90/solution.py>) |
+| [181186 · 아방가르드 타일링](<017_181186_%EC%95%84%EB%B0%A9%EA%B0%80%EB%A5%B4%EB%93%9C_%ED%83%80%EC%9D%BC%EB%A7%81/README.md>) | [Python](<017_181186_%EC%95%84%EB%B0%A9%EA%B0%80%EB%A5%B4%EB%93%9C_%ED%83%80%EC%9D%BC%EB%A7%81/solution.py>) |
+| [161988 · 연속 펄스 부분 수열의 합](<018_161988_%EC%97%B0%EC%86%8D_%ED%8E%84%EC%8A%A4_%EB%B6%80%EB%B6%84_%EC%88%98%EC%97%B4%EC%9D%98_%ED%95%A9/README.md>) | [Python](<018_161988_%EC%97%B0%EC%86%8D_%ED%8E%84%EC%8A%A4_%EB%B6%80%EB%B6%84_%EC%88%98%EC%97%B4%EC%9D%98_%ED%95%A9/solution.py>) |
+| [152995 · 인사고과](<019_152995_%EC%9D%B8%EC%82%AC%EA%B3%A0%EA%B3%BC/README.md>) | [Python](<019_152995_%EC%9D%B8%EC%82%AC%EA%B3%A0%EA%B3%BC/solution.py>) |
+| [150367 · 표현 가능한 이진트리](<020_150367_%ED%91%9C%ED%98%84_%EA%B0%80%EB%8A%A5%ED%95%9C_%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC/README.md>) | [Python](<020_150367_%ED%91%9C%ED%98%84_%EA%B0%80%EB%8A%A5%ED%95%9C_%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC/solution.py>) |
+| [150366 · 표 병합](<021_150366_%ED%91%9C_%EB%B3%91%ED%95%A9/README.md>) | [Python](<021_150366_%ED%91%9C_%EB%B3%91%ED%95%A9/solution.py>) |
+| [150365 · 미로 탈출 명령어](<022_150365_%EB%AF%B8%EB%A1%9C_%ED%83%88%EC%B6%9C_%EB%AA%85%EB%A0%B9%EC%96%B4/README.md>) | [Python](<022_150365_%EB%AF%B8%EB%A1%9C_%ED%83%88%EC%B6%9C_%EB%AA%85%EB%A0%B9%EC%96%B4/solution.py>) |
+| [138475 · 억억단을 외우자](<023_138475_%EC%96%B5%EC%96%B5%EB%8B%A8%EC%9D%84_%EC%99%B8%EC%9A%B0%EC%9E%90/README.md>) | [Python](<023_138475_%EC%96%B5%EC%96%B5%EB%8B%A8%EC%9D%84_%EC%99%B8%EC%9A%B0%EC%9E%90/solution.py>) |
+| [136797 · 숫자 타자 대회](<024_136797_%EC%88%AB%EC%9E%90_%ED%83%80%EC%9E%90_%EB%8C%80%ED%9A%8C/README.md>) | [Python](<024_136797_%EC%88%AB%EC%9E%90_%ED%83%80%EC%9E%90_%EB%8C%80%ED%9A%8C/solution.py>) |
+| [133500 · 등대](<025_133500_%EB%93%B1%EB%8C%80/README.md>) | [Python](<025_133500_%EB%93%B1%EB%8C%80/solution.py>) |
+| [132266 · 부대복귀](<026_132266_%EB%B6%80%EB%8C%80%EB%B3%B5%EA%B7%80/README.md>) | [Python](<026_132266_%EB%B6%80%EB%8C%80%EB%B3%B5%EA%B7%80/solution.py>) |
+| [131703 · 2차원 동전 뒤집기](<027_131703_2%EC%B0%A8%EC%9B%90_%EB%8F%99%EC%A0%84_%EB%92%A4%EC%A7%91%EA%B8%B0/README.md>) | [Python](<027_131703_2%EC%B0%A8%EC%9B%90_%EB%8F%99%EC%A0%84_%EB%92%A4%EC%A7%91%EA%B8%B0/solution.py>) |
+| [131702 · 고고학 최고의 발견](<028_131702_%EA%B3%A0%EA%B3%A0%ED%95%99_%EC%B5%9C%EA%B3%A0%EC%9D%98_%EB%B0%9C%EA%B2%AC/README.md>) | [Python](<028_131702_%EA%B3%A0%EA%B3%A0%ED%95%99_%EC%B5%9C%EA%B3%A0%EC%9D%98_%EB%B0%9C%EA%B2%AC/solution.py>) |
+| [131129 · 카운트 다운](<029_131129_%EC%B9%B4%EC%9A%B4%ED%8A%B8_%EB%8B%A4%EC%9A%B4/README.md>) | [Python](<029_131129_%EC%B9%B4%EC%9A%B4%ED%8A%B8_%EB%8B%A4%EC%9A%B4/solution.py>) |
+| [118669 · 등산코스 정하기](<030_118669_%EB%93%B1%EC%82%B0%EC%BD%94%EC%8A%A4_%EC%A0%95%ED%95%98%EA%B8%B0/README.md>) | [Python](<030_118669_%EB%93%B1%EC%82%B0%EC%BD%94%EC%8A%A4_%EC%A0%95%ED%95%98%EA%B8%B0/solution.py>) |
+| [118668 · 코딩 테스트 공부](<031_118668_%EC%BD%94%EB%94%A9_%ED%85%8C%EC%8A%A4%ED%8A%B8_%EA%B3%B5%EB%B6%80/README.md>) | [Python](<031_118668_%EC%BD%94%EB%94%A9_%ED%85%8C%EC%8A%A4%ED%8A%B8_%EA%B3%B5%EB%B6%80/solution.py>) |
+| [92345 · 사라지는 발판](<032_92345_%EC%82%AC%EB%9D%BC%EC%A7%80%EB%8A%94_%EB%B0%9C%ED%8C%90/README.md>) | [Python](<032_92345_%EC%82%AC%EB%9D%BC%EC%A7%80%EB%8A%94_%EB%B0%9C%ED%8C%90/solution.py>) |
+| [92344 · 파괴되지 않은 건물](<033_92344_%ED%8C%8C%EA%B4%B4%EB%90%98%EC%A7%80_%EC%95%8A%EC%9D%80_%EA%B1%B4%EB%AC%BC/README.md>) | [Python](<033_92344_%ED%8C%8C%EA%B4%B4%EB%90%98%EC%A7%80_%EC%95%8A%EC%9D%80_%EA%B1%B4%EB%AC%BC/solution.py>) |
+| [92343 · 양과 늑대](<034_92343_%EC%96%91%EA%B3%BC_%EB%8A%91%EB%8C%80/README.md>) | [Python](<034_92343_%EC%96%91%EA%B3%BC_%EB%8A%91%EB%8C%80/solution.py>) |
+| [87694 · 아이템 줍기](<035_87694_%EC%95%84%EC%9D%B4%ED%85%9C_%EC%A4%8D%EA%B8%B0/README.md>) | [Python](<035_87694_%EC%95%84%EC%9D%B4%ED%85%9C_%EC%A4%8D%EA%B8%B0/solution.py>) |
+| [87391 · 공 이동 시뮬레이션](<036_87391_%EA%B3%B5_%EC%9D%B4%EB%8F%99_%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/README.md>) | [Python](<036_87391_%EA%B3%B5_%EC%9D%B4%EB%8F%99_%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98/solution.py>) |
+| [86053 · 금과 은 운반하기](<037_86053_%EA%B8%88%EA%B3%BC_%EC%9D%80_%EC%9A%B4%EB%B0%98%ED%95%98%EA%B8%B0/README.md>) | [Python](<037_86053_%EA%B8%88%EA%B3%BC_%EC%9D%80_%EC%9A%B4%EB%B0%98%ED%95%98%EA%B8%B0/solution.py>) |
+| [84021 · 퍼즐 조각 채우기](<038_84021_%ED%8D%BC%EC%A6%90_%EC%A1%B0%EA%B0%81_%EC%B1%84%EC%9A%B0%EA%B8%B0/README.md>) | [Python](<038_84021_%ED%8D%BC%EC%A6%90_%EC%A1%B0%EA%B0%81_%EC%B1%84%EC%9A%B0%EA%B8%B0/solution.py>) |
+| [81303 · 표 편집](<039_81303_%ED%91%9C_%ED%8E%B8%EC%A7%91/README.md>) | [Python](<039_81303_%ED%91%9C_%ED%8E%B8%EC%A7%91/solution.py>) |
+| [77886 · 110 옮기기](<040_77886_110_%EC%98%AE%EA%B8%B0%EA%B8%B0/README.md>) | [Python](<040_77886_110_%EC%98%AE%EA%B8%B0%EA%B8%B0/solution.py>) |
+| [77486 · 다단계 칫솔 판매](<041_77486_%EB%8B%A4%EB%8B%A8%EA%B3%84_%EC%B9%AB%EC%86%94_%ED%8C%90%EB%A7%A4/README.md>) | [Python](<041_77486_%EB%8B%A4%EB%8B%A8%EA%B3%84_%EC%B9%AB%EC%86%94_%ED%8C%90%EB%A7%A4/solution.py>) |
+| [76503 · 모두 0으로 만들기](<042_76503_%EB%AA%A8%EB%91%90_0%EC%9C%BC%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/README.md>) | [Python](<042_76503_%EB%AA%A8%EB%91%90_0%EC%9C%BC%EB%A1%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0/solution.py>) |
+| [72415 · 카드 짝 맞추기](<043_72415_%EC%B9%B4%EB%93%9C_%EC%A7%9D_%EB%A7%9E%EC%B6%94%EA%B8%B0/README.md>) | [Python](<043_72415_%EC%B9%B4%EB%93%9C_%EC%A7%9D_%EB%A7%9E%EC%B6%94%EA%B8%B0/solution.py>) |
+| [72414 · 광고 삽입](<044_72414_%EA%B4%91%EA%B3%A0_%EC%82%BD%EC%9E%85/README.md>) | [Python](<044_72414_%EA%B4%91%EA%B3%A0_%EC%82%BD%EC%9E%85/solution.py>) |
+| [72413 · 합승 택시 요금](<045_72413_%ED%95%A9%EC%8A%B9_%ED%83%9D%EC%8B%9C_%EC%9A%94%EA%B8%88/README.md>) | [Python](<045_72413_%ED%95%A9%EC%8A%B9_%ED%83%9D%EC%8B%9C_%EC%9A%94%EA%B8%88/solution.py>) |
+| [70130 · 스타 수열](<046_70130_%EC%8A%A4%ED%83%80_%EC%88%98%EC%97%B4/README.md>) | [Python](<046_70130_%EC%8A%A4%ED%83%80_%EC%88%98%EC%97%B4/solution.py>) |
+| [68646 · 풍선 터트리기](<047_68646_%ED%92%8D%EC%84%A0_%ED%84%B0%ED%8A%B8%EB%A6%AC%EA%B8%B0/README.md>) | [Python](<047_68646_%ED%92%8D%EC%84%A0_%ED%84%B0%ED%8A%B8%EB%A6%AC%EA%B8%B0/solution.py>) |
+| [67259 · 경주로 건설](<048_67259_%EA%B2%BD%EC%A3%BC%EB%A1%9C_%EA%B1%B4%EC%84%A4/README.md>) | [Python](<048_67259_%EA%B2%BD%EC%A3%BC%EB%A1%9C_%EA%B1%B4%EC%84%A4/solution.py>) |
+| [67258 · 보석 쇼핑](<049_67258_%EB%B3%B4%EC%84%9D_%EC%87%BC%ED%95%91/README.md>) | [Python](<049_67258_%EB%B3%B4%EC%84%9D_%EC%87%BC%ED%95%91/solution.py>) |
+| [64064 · 불량 사용자](<050_64064_%EB%B6%88%EB%9F%89_%EC%82%AC%EC%9A%A9%EC%9E%90/README.md>) | [Python](<050_64064_%EB%B6%88%EB%9F%89_%EC%82%AC%EC%9A%A9%EC%9E%90/solution.py>) |
+| [64062 · 징검다리 건너기](<051_64062_%EC%A7%95%EA%B2%80%EB%8B%A4%EB%A6%AC_%EA%B1%B4%EB%84%88%EA%B8%B0/README.md>) | [Python](<051_64062_%EC%A7%95%EA%B2%80%EB%8B%A4%EB%A6%AC_%EA%B1%B4%EB%84%88%EA%B8%B0/solution.py>) |
+| [60063 · 블록 이동하기](<052_60063_%EB%B8%94%EB%A1%9D_%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0/README.md>) | [Python](<052_60063_%EB%B8%94%EB%A1%9D_%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0/solution.py>) |
+| [60062 · 외벽 점검](<053_60062_%EC%99%B8%EB%B2%BD_%EC%A0%90%EA%B2%80/README.md>) | [Python](<053_60062_%EC%99%B8%EB%B2%BD_%EC%A0%90%EA%B2%80/solution.py>) |
+| [60061 · 기둥과 보 설치](<054_60061_%EA%B8%B0%EB%91%A5%EA%B3%BC_%EB%B3%B4_%EC%84%A4%EC%B9%98/README.md>) | [Python](<054_60061_%EA%B8%B0%EB%91%A5%EA%B3%BC_%EB%B3%B4_%EC%84%A4%EC%B9%98/solution.py>) |
+| [60059 · 자물쇠와 열쇠](<055_60059_%EC%9E%90%EB%AC%BC%EC%87%A0%EC%99%80_%EC%97%B4%EC%87%A0/README.md>) | [Python](<055_60059_%EC%9E%90%EB%AC%BC%EC%87%A0%EC%99%80_%EC%97%B4%EC%87%A0/solution.py>) |
+| [49191 · 순위](<056_49191_%EC%88%9C%EC%9C%84/README.md>) | [Python](<056_49191_%EC%88%9C%EC%9C%84/solution.py>) |
+| [49189 · 가장 먼 노드](<057_49189_%EA%B0%80%EC%9E%A5_%EB%A8%BC_%EB%85%B8%EB%93%9C/README.md>) | [Python](<057_49189_%EA%B0%80%EC%9E%A5_%EB%A8%BC_%EB%85%B8%EB%93%9C/solution.py>) |
+| [43238 · 입국심사](<058_43238_%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC/README.md>) | [Python](<058_43238_%EC%9E%85%EA%B5%AD%EC%8B%AC%EC%82%AC/solution.py>) |
+| [43164 · 여행경로](<059_43164_%EC%97%AC%ED%96%89%EA%B2%BD%EB%A1%9C/README.md>) | [Python](<059_43164_%EC%97%AC%ED%96%89%EA%B2%BD%EB%A1%9C/solution.py>) |
+| [43163 · 단어 변환](<060_43163_%EB%8B%A8%EC%96%B4_%EB%B3%80%ED%99%98/README.md>) | [Python](<060_43163_%EB%8B%A8%EC%96%B4_%EB%B3%80%ED%99%98/solution.py>) |
+| [43162 · 네트워크](<061_43162_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/README.md>) | [Python](<061_43162_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/solution.py>) |
+| [43105 · 정수 삼각형](<062_43105_%EC%A0%95%EC%88%98_%EC%82%BC%EA%B0%81%ED%98%95/README.md>) | [Python](<062_43105_%EC%A0%95%EC%88%98_%EC%82%BC%EA%B0%81%ED%98%95/solution.py>) |
+| [42898 · 등굣길](<063_42898_%EB%93%B1%EA%B5%A3%EA%B8%B8/README.md>) | [Python](<063_42898_%EB%93%B1%EA%B5%A3%EA%B8%B8/solution.py>) |
+| [42895 · N으로 표현](<064_42895_N%EC%9C%BC%EB%A1%9C_%ED%91%9C%ED%98%84/README.md>) | [Python](<064_42895_N%EC%9C%BC%EB%A1%9C_%ED%91%9C%ED%98%84/solution.py>) |
+| [42893 · 매칭 점수](<065_42893_%EB%A7%A4%EC%B9%AD_%EC%A0%90%EC%88%98/README.md>) | [Python](<065_42893_%EB%A7%A4%EC%B9%AD_%EC%A0%90%EC%88%98/solution.py>) |
+| [42892 · 길 찾기 게임](<066_42892_%EA%B8%B8_%EC%B0%BE%EA%B8%B0_%EA%B2%8C%EC%9E%84/README.md>) | [Python](<066_42892_%EA%B8%B8_%EC%B0%BE%EA%B8%B0_%EA%B2%8C%EC%9E%84/solution.py>) |
+| [42884 · 단속카메라](<067_42884_%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC/README.md>) | [Python](<067_42884_%EB%8B%A8%EC%86%8D%EC%B9%B4%EB%A9%94%EB%9D%BC/solution.py>) |
+| [42861 · 섬 연결하기](<068_42861_%EC%84%AC_%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/README.md>) | [Python](<068_42861_%EC%84%AC_%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/solution.py>) |
+| [42628 · 이중우선순위큐](<069_42628_%EC%9D%B4%EC%A4%91%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90/README.md>) | [Python](<069_42628_%EC%9D%B4%EC%A4%91%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%ED%81%90/solution.py>) |
+| [42627 · 디스크 컨트롤러](<070_42627_%EB%94%94%EC%8A%A4%ED%81%AC_%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/README.md>) | [Python](<070_42627_%EB%94%94%EC%8A%A4%ED%81%AC_%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC/solution.py>) |
+| [42579 · 베스트앨범](<071_42579_%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%95%A8%EB%B2%94/README.md>) | [Python](<071_42579_%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%95%A8%EB%B2%94/solution.py>) |
+| [17678 · \[1차\] 셔틀버스](<072_17678_%5B1%EC%B0%A8%5D_%EC%85%94%ED%8B%80%EB%B2%84%EC%8A%A4/README.md>) | [Python](<072_17678_%5B1%EC%B0%A8%5D_%EC%85%94%ED%8B%80%EB%B2%84%EC%8A%A4/solution.py>) |
+| [17676 · \[1차\] 추석 트래픽](<073_17676_%5B1%EC%B0%A8%5D_%EC%B6%94%EC%84%9D_%ED%8A%B8%EB%9E%98%ED%94%BD/README.md>) | [Python](<073_17676_%5B1%EC%B0%A8%5D_%EC%B6%94%EC%84%9D_%ED%8A%B8%EB%9E%98%ED%94%BD/solution.py>) |
+| [12987 · 숫자 게임](<074_12987_%EC%88%AB%EC%9E%90_%EA%B2%8C%EC%9E%84/README.md>) | [Python](<074_12987_%EC%88%AB%EC%9E%90_%EA%B2%8C%EC%9E%84/solution.py>) |
+| [12979 · 기지국 설치](<075_12979_%EA%B8%B0%EC%A7%80%EA%B5%AD_%EC%84%A4%EC%B9%98/README.md>) | [Python](<075_12979_%EA%B8%B0%EC%A7%80%EA%B5%AD_%EC%84%A4%EC%B9%98/solution.py>) |
+| [12971 · 스티커 모으기(2)](<076_12971_%EC%8A%A4%ED%8B%B0%EC%BB%A4_%EB%AA%A8%EC%9C%BC%EA%B8%B0(2)/README.md>) | [Python](<076_12971_%EC%8A%A4%ED%8B%B0%EC%BB%A4_%EB%AA%A8%EC%9C%BC%EA%B8%B0(2)/solution.py>) |
+| [12942 · 최적의 행렬 곱셈](<077_12942_%EC%B5%9C%EC%A0%81%EC%9D%98_%ED%96%89%EB%A0%AC_%EA%B3%B1%EC%85%88/README.md>) | [Python](<077_12942_%EC%B5%9C%EC%A0%81%EC%9D%98_%ED%96%89%EB%A0%AC_%EA%B3%B1%EC%85%88/solution.py>) |
+| [12938 · 최고의 집합](<078_12938_%EC%B5%9C%EA%B3%A0%EC%9D%98_%EC%A7%91%ED%95%A9/README.md>) | [Python](<078_12938_%EC%B5%9C%EA%B3%A0%EC%9D%98_%EC%A7%91%ED%95%A9/solution.py>) |
+| [12927 · 야근 지수](<079_12927_%EC%95%BC%EA%B7%BC_%EC%A7%80%EC%88%98/README.md>) | [Python](<079_12927_%EC%95%BC%EA%B7%BC_%EC%A7%80%EC%88%98/solution.py>) |
+| [12920 · 선입 선출 스케줄링](<080_12920_%EC%84%A0%EC%9E%85_%EC%84%A0%EC%B6%9C_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81/README.md>) | [Python](<080_12920_%EC%84%A0%EC%9E%85_%EC%84%A0%EC%B6%9C_%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81/solution.py>) |
+| [12907 · 거스름돈](<081_12907_%EA%B1%B0%EC%8A%A4%EB%A6%84%EB%8F%88/README.md>) | [Python](<081_12907_%EA%B1%B0%EC%8A%A4%EB%A6%84%EB%8F%88/solution.py>) |
+| [12904 · 가장 긴 팰린드롬](<082_12904_%EA%B0%80%EC%9E%A5_%EA%B8%B4_%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC/README.md>) | [Python](<082_12904_%EA%B0%80%EC%9E%A5_%EA%B8%B4_%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC/solution.py>) |
+
+## Python 비교 풀이
+
+기존 제출 기록의 언어는 C++입니다. 아래 Python 코드는 비교 학습용이며, Python 제출 통과 기록으로 세지 않습니다.
+
+| 문제 | Python 코드 | 기존 제출 언어 |
+|---|---|---|
+| [1838 · 몸짱 트레이너 라이언의 고민](<extra_1838_%EB%AA%B8%EC%A7%B1_%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%84%88_%EB%9D%BC%EC%9D%B4%EC%96%B8%EC%9D%98_%EA%B3%A0%EB%AF%BC/README.md>) | [Python](<extra_1838_%EB%AA%B8%EC%A7%B1_%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%84%88_%EB%9D%BC%EC%9D%B4%EC%96%B8%EC%9D%98_%EA%B3%A0%EB%AF%BC/alternative.py>) | C++ |
+| [1837 · GPS](<extra_1837_GPS/README.md>) | [Python](<extra_1837_GPS/alternative.py>) | C++ |
+| [1836 · 리틀 프렌즈 사천성](<extra_1836_%EB%A6%AC%ED%8B%80_%ED%94%84%EB%A0%8C%EC%A6%88_%EC%82%AC%EC%B2%9C%EC%84%B1/README.md>) | [Python](<extra_1836_%EB%A6%AC%ED%8B%80_%ED%94%84%EB%A0%8C%EC%A6%88_%EC%82%AC%EC%B2%9C%EC%84%B1/alternative.py>) | C++ |
+| [1833 · 캠핑](<extra_1833_%EC%BA%A0%ED%95%91/README.md>) | [Python](<extra_1833_%EC%BA%A0%ED%95%91/alternative.py>) | C++ |
+| [1832 · 보행자 천국](<extra_1832_%EB%B3%B4%ED%96%89%EC%9E%90_%EC%B2%9C%EA%B5%AD/README.md>) | [Python](<extra_1832_%EB%B3%B4%ED%96%89%EC%9E%90_%EC%B2%9C%EA%B5%AD/alternative.py>) | C++ |
+| [1830 · 브라이언의 고민](<extra_1830_%EB%B8%8C%EB%9D%BC%EC%9D%B4%EC%96%B8%EC%9D%98_%EA%B3%A0%EB%AF%BC/README.md>) | [Python](<extra_1830_%EB%B8%8C%EB%9D%BC%EC%9D%B4%EC%96%B8%EC%9D%98_%EA%B3%A0%EB%AF%BC/alternative.py>) | C++ |

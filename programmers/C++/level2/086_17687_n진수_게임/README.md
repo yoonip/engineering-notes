@@ -56,4 +56,4 @@ string solution(int n, int t, int m, int p) {
 - 제출 기록: 2026-10-24 06:26:49
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level2/086_17687_n%EC%A7%84%EC%88%98_%EA%B2%8C%EC%9E%84/README.md)
+[기존 풀이 기록](../../../Python/level2/086_17687_n%EC%A7%84%EC%88%98_%EA%B2%8C%EC%9E%84/README.md)

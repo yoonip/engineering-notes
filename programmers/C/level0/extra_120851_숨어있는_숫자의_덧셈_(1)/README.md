@@ -52,4 +52,4 @@ int solution(const char* my_string) {
 - 제출 기록: 2026-10-24 06:57:30
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_120851_%EC%88%A8%EC%96%B4%EC%9E%88%EB%8A%94_%EC%88%AB%EC%9E%90%EC%9D%98_%EB%8D%A7%EC%85%88_%281%29/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_120851_%EC%88%A8%EC%96%B4%EC%9E%88%EB%8A%94_%EC%88%AB%EC%9E%90%EC%9D%98_%EB%8D%A7%EC%85%88_%281%29/README.md)

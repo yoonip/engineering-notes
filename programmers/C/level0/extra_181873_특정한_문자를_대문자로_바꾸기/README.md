@@ -52,4 +52,4 @@ char* solution(const char* my_string, const char* alp) {
 - 제출 기록: 2026-10-24 06:10:34
 - 확인 날짜: 2026-10-24
 
-[기존 풀이 기록](../../../level0/extra_181873_%ED%8A%B9%EC%A0%95%ED%95%9C_%EB%AC%B8%EC%9E%90%EB%A5%BC_%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/README.md)
+[기존 풀이 기록](../../../Python/level0/extra_181873_%ED%8A%B9%EC%A0%95%ED%95%9C_%EB%AC%B8%EC%9E%90%EB%A5%BC_%EB%8C%80%EB%AC%B8%EC%9E%90%EB%A1%9C_%EB%B0%94%EA%BE%B8%EA%B8%B0/README.md)
