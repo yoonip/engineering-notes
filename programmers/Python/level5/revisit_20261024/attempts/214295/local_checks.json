@@ -1,0 +1,45 @@
+{
+  "problem_id": 214295,
+  "language": "Python3",
+  "status": "optimized_local_validation_passed_not_site_graded",
+  "optimization_round": 4,
+  "proposed_online_attempt": 5,
+  "maximum_online_attempts": 5,
+  "official_examples": 4,
+  "random_independent_grid_cases": 400,
+  "maximum_boundary_cases": [
+    {
+      "label": "250000_distinct_failed_points",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 250000,
+      "seconds": 6.4805,
+      "previous_seconds_same_input": 6.5911,
+      "speed_reduction_percent": 1.68,
+      "process_peak_working_set_MiB": 216.48
+    },
+    {
+      "label": "250000_nested_failed_diamonds",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 250000,
+      "seconds": 5.8882,
+      "previous_seconds_same_input": 5.9892,
+      "speed_reduction_percent": 1.69,
+      "process_peak_working_set_MiB": 224.02
+    }
+  ],
+  "cases": 406,
+  "independent_oracle": "Enumerate original integer X,Y and directly check every Manhattan-distance record; large patterns have closed-form point/diamond cardinalities.",
+  "changes": [
+    "Map all event V boundaries to compressed indices with one temporary dictionary",
+    "Replace event tuples in place before tree allocation and delete the dictionary",
+    "Remove two sweep-time binary searches per event",
+    "Retain the actual attempt4 recursive packed tree and single-U-row fast path"
+  ],
+  "source_sha256": "b50414904424166e299838eb98d6f60e3accb60d53b76aaefa5de50fca8f6260",
+  "execution_body_sha256": "af0a17f6765c776b19f0b9def709f2b1af90ea56f8c595f2320d210a53ede70c",
+  "copied_code_exact": true,
+  "no_trailing_whitespace": true,
+  "seconds_total": 12.4902
+}

@@ -1,0 +1,43 @@
+{
+  "problem_id": 76504,
+  "checked_at_utc": "2026-10-24T03:35:57.652500+00:00",
+  "language": "Python3",
+  "status": "locally_validated_not_submitted",
+  "random_graphs": 280,
+  "independent_query_answers": 82846,
+  "huge_query_answers": 3360,
+  "official_examples": 1,
+  "maximum_benchmarks": [
+    {
+      "gain": 1,
+      "n": 3000,
+      "m": 3000,
+      "z": 50,
+      "q": 100000,
+      "seconds": 0.34338
+    },
+    {
+      "gain": 49,
+      "n": 3000,
+      "m": 3000,
+      "z": 50,
+      "q": 100000,
+      "seconds": 0.054905
+    },
+    {
+      "gain": 2,
+      "n": 3000,
+      "m": 3000,
+      "z": 50,
+      "q": 100000,
+      "seconds": 0.194803
+    }
+  ],
+  "oracles": "Explicit exact-money BFS with stays/teleports/roads; separate residue-loss Dijkstra for huge targets.",
+  "source_sha256": "d806d0540580405109cdbadc9fcd2c17af88691c908700d89699a846b2e49747",
+  "execution_body_sha256": "cd6ed3d150a93c5ca1f54e3b10f99dd8fc906424e69b19429924352590c516aa",
+  "code_copies_exact": true,
+  "passed": true,
+  "online_submission_performed": false,
+  "original_python_or_repository_modified": false
+}

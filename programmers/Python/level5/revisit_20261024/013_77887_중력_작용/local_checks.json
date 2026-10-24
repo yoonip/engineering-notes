@@ -1,0 +1,42 @@
+{
+  "id": 77887,
+  "language": "Python3",
+  "status": "local_candidate_validation",
+  "online_submissions": 0,
+  "source_sha256": "49f8e0fb55c7743f4dea666265dc0141a00bc880b81bd95cf1cf64e25d577844",
+  "exact_comment_copy": true,
+  "trailing_whitespace_lines": 0,
+  "algorithm": "Heavy-light decomposition; one implicit treap per heavy chain; Fenwick tree stores each entire chain sum at its head preorder position.",
+  "small_cases": 101,
+  "small_query_answers": 1569,
+  "independent_oracle": "Explicit per-node value shifts along the parent path; maintain each ancestor subtree sum by incoming value minus deleted tail value. No HLD or treap.",
+  "large_cases": [
+    {
+      "label": "maximum_chain",
+      "n": 100000,
+      "queries": 100000,
+      "answers": 1,
+      "elapsed_seconds": 0.7701,
+      "expected_sha256": "0f66fd85ba052e15e6685fbb2ed10dc085d64c4520f000931bbafcd2e7a85d59"
+    },
+    {
+      "label": "maximum_balanced",
+      "n": 100000,
+      "queries": 100000,
+      "answers": 50000,
+      "elapsed_seconds": 1.7638,
+      "expected_sha256": "2db0645e3126ab163ce8675efdd118d549578d3e19b2ad820ee1de8d67eed9d7"
+    },
+    {
+      "label": "maximum_star",
+      "n": 100000,
+      "queries": 100000,
+      "answers": 50000,
+      "elapsed_seconds": 0.4224,
+      "expected_sha256": "c59134c25e825a32140cd7c8bf7a1f8665035690584b35bf43faa99148ddcf5c"
+    }
+  ],
+  "passed": 104,
+  "failed": 0,
+  "checked_at": "2026-10-24T03:42:27.752Z"
+}

@@ -1,0 +1,43 @@
+{
+  "problem_id": 214295,
+  "language": "Python3",
+  "status": "optimized_local_validation_passed_not_site_graded",
+  "optimization_round": 3,
+  "proposed_online_attempt": 4,
+  "official_examples": 4,
+  "random_independent_grid_cases": 400,
+  "maximum_boundary_cases": [
+    {
+      "label": "250000_distinct_failed_points",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 250000,
+      "seconds": 6.5911,
+      "previous_seconds_same_input": 6.8838,
+      "speed_reduction_percent": 4.25,
+      "process_peak_working_set_MiB": 201.31
+    },
+    {
+      "label": "250000_nested_failed_diamonds",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 250000,
+      "seconds": 5.9892,
+      "previous_seconds_same_input": 6.7207,
+      "speed_reduction_percent": 10.88,
+      "process_peak_working_set_MiB": 208.9
+    }
+  ],
+  "cases": 406,
+  "independent_oracle": "Enumerate original integer X,Y and directly check every Manhattan-distance record; large patterns have closed-form point/diamond cardinalities.",
+  "changes": [
+    "For a single integer U row, query the feasible V interval once and extract only the matching parity count",
+    "Skip general V piece splitting and moment reconstruction for that row",
+    "Retain the recursive packed tree from actual online attempt3 without the iterative experiment"
+  ],
+  "source_sha256": "a0bd40673a8cbb91f6fd18416857f53aa2c66b8e18ed4ffd9d4e0e1516f6ad20",
+  "execution_body_sha256": "4abe91e2245a0d4d4b879e09223fdb684e9165b5e91a645b09e7d038ac635121",
+  "copied_code_exact": true,
+  "no_trailing_whitespace": true,
+  "seconds_total": 12.6982
+}

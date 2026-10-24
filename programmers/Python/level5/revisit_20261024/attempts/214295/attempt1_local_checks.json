@@ -1,0 +1,38 @@
+{
+  "problem_id": 214295,
+  "language": "Python3",
+  "status": "local_validation_passed_not_site_graded",
+  "official_examples": 4,
+  "random_independent_grid_cases": 400,
+  "maximum_boundary_cases": [
+    {
+      "label": "full_grid_1e18_count",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 1,
+      "seconds": 0.0
+    },
+    {
+      "label": "250000_distinct_failed_points",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 250000,
+      "seconds": 13.3622
+    },
+    {
+      "label": "250000_nested_failed_diamonds",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 250000,
+      "seconds": 11.6883
+    }
+  ],
+  "cases": 407,
+  "independent_oracle": "Enumerate original integer X,Y and directly check every Manhattan-distance record; large patterns have closed-form point/diamond cardinalities.",
+  "memory_design": "cover=int32,count_even/count_odd=uint32,sum_even/sum_odd=int64 arrays, each 2*power_of_two(compressed_intervals) entries. At most 28MiB for these five arrays.",
+  "source_sha256": "c5fdb35f61ead7aa2f073eeefec2e1b98444046cab71f971a2c8c23c604fdfd3",
+  "execution_body_sha256": "a8d2ef01aa821e934ee1448a2438a322c747a1340d97e41ee835a47c9018e4c4",
+  "copied_code_exact": true,
+  "no_trailing_whitespace": true,
+  "seconds_total": 25.1719
+}

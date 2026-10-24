@@ -1,0 +1,41 @@
+{
+  "problem_id": 68938,
+  "checked_at_utc": "2026-10-24T03:34:13.374861+00:00",
+  "language": "Python3",
+  "status": "locally_validated_not_submitted",
+  "independent_small_cases": 1539,
+  "official_examples": 2,
+  "maximum_benchmarks": [
+    {
+      "name": "same",
+      "n": 300000,
+      "seconds": 0.030159,
+      "answer": 0
+    },
+    {
+      "name": "alternating",
+      "n": 300000,
+      "seconds": 0.07585,
+      "answer": 4499977500100000
+    },
+    {
+      "name": "two_runs",
+      "n": 300000,
+      "seconds": 0.0314,
+      "answer": 3375000000000000
+    },
+    {
+      "name": "three_runs",
+      "n": 300000,
+      "seconds": 0.032071,
+      "answer": 3666661666650000
+    }
+  ],
+  "oracle": "Every substring: directly maximize distance between different letters using earliest occurrence per letter.",
+  "source_sha256": "1685b8ac7170accc691d78e7736ea38fb192e7c26e3ecc2460de61c54cb305d1",
+  "execution_body_sha256": "05d33137289f2c8811eb06a3e7e39881a50477989f43cb9d20d5996b21a8d2d5",
+  "code_copies_exact": true,
+  "passed": true,
+  "online_submission_performed": false,
+  "original_python_or_repository_modified": false
+}

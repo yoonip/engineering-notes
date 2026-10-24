@@ -1,0 +1,47 @@
+{
+  "problem_id": 214294,
+  "language": "Python3",
+  "status": "local_validation_passed_not_site_graded",
+  "official_examples": 5,
+  "transitive_reachability_regression": 1,
+  "random_independent_graphs": 400,
+  "maximum_boundary_cases": [
+    {
+      "label": "500_vertex_permuted_chain",
+      "n": 500,
+      "roads": 499,
+      "seconds": 0.1644
+    },
+    {
+      "label": "500_vertex_star",
+      "n": 500,
+      "roads": 499,
+      "seconds": 0.0331
+    },
+    {
+      "label": "500_vertex_single_SCC",
+      "n": 500,
+      "roads": 500,
+      "seconds": 0.0103
+    },
+    {
+      "label": "100000_edge_DAG_with_Hamiltonian_chain",
+      "n": 500,
+      "roads": 100000,
+      "seconds": 0.0573
+    },
+    {
+      "label": "merging_splitting_layers_require_transitive_reachability",
+      "n": 500,
+      "roads": 748,
+      "seconds": 0.0434
+    }
+  ],
+  "cases": 411,
+  "independent_oracle": "0-1 BFS on visited-mask and current vertex; normal road cost0, teleport only to already visited vertex cost1.",
+  "source_sha256": "86be6a26fc6f63e58d9b7f6e001d253eaa7d86f08367ce39ebbf6571770f788d",
+  "execution_body_sha256": "6c8203ecb9089bb04e03b7cba129bd31311e1bbe212f89787278133fe6c6eb09",
+  "copied_code_exact": true,
+  "no_trailing_whitespace": true,
+  "seconds_total": 0.3339
+}

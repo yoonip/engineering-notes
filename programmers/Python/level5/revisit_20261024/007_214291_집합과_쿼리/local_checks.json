@@ -1,0 +1,38 @@
+{
+  "problem_id": 214291,
+  "language": "Python3",
+  "status": "local_validation_passed_not_site_graded",
+  "official_examples": 2,
+  "random_independent_query_streams": 500,
+  "maximum_boundary_cases": [
+    {
+      "label": "500000_elements_and_queries",
+      "n": 500000,
+      "queries": 500000,
+      "responses": 2,
+      "seconds": 1.009
+    },
+    {
+      "label": "repeated_split_and_move_99999_element_cohort",
+      "n": 100000,
+      "queries": 500000,
+      "responses": 200001,
+      "seconds": 1.0911
+    },
+    {
+      "label": "500000_whole_singleton_splits",
+      "n": 1,
+      "queries": 500000,
+      "responses": 250000,
+      "seconds": 0.1776
+    }
+  ],
+  "cases": 505,
+  "responses_compared": 459340,
+  "independent_oracle": "Explicit membership and entry-time arrays; scan every element when merging or splitting.",
+  "source_sha256": "576961d98e0d43f5509b85e643d1da0e7c39ef236d328ca142c1f55aaed0355e",
+  "execution_body_sha256": "7206db793dab5b9e7d7585ee997ee959a905a861777d6e654359b240e105c76e",
+  "copied_code_exact": true,
+  "no_trailing_whitespace": true,
+  "seconds_total": 2.732
+}

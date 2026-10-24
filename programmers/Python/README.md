@@ -28,3 +28,7 @@ python -B -m unittest discover -s programmers/Python/tests
 ```
 
 문제별 검증과 원본 대조 방법은 [검증 기록](../VALIDATION.md)에서 확인할 수 있습니다.
+
+## 레벨 5 재풀이 기록
+
+기존 Python3 제출 기록 554개와 비교 풀이 10개는 이전 보관 목록의 수치로 유지합니다. 2026년 10월 24일 재풀이는 [별도 레벨 5 기록](<LEVEL5_REVISIT.md>)과 [문제별 목록](<level5/revisit_20261024/README.md>)에 연결합니다. 지원 문제 14개 중 정답 13개, 실패 5회 후 중단 1개입니다. 실제 제출은 총 18회이며 실패 결과는 5회입니다.

@@ -1,0 +1,42 @@
+{
+  "problem_id": 214295,
+  "language": "Python3",
+  "status": "optimized_local_validation_passed_not_site_graded",
+  "optimization_round": 2,
+  "official_examples": 4,
+  "random_independent_grid_cases": 400,
+  "maximum_boundary_cases": [
+    {
+      "label": "250000_distinct_failed_points",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 250000,
+      "seconds": 6.8838,
+      "previous_seconds_same_input": 8.8827,
+      "speed_reduction_percent": 22.5,
+      "process_peak_working_set_MiB": 202.3
+    },
+    {
+      "label": "250000_nested_failed_diamonds",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 250000,
+      "seconds": 6.7207,
+      "previous_seconds_same_input": 9.5492,
+      "speed_reduction_percent": 29.62,
+      "process_peak_working_set_MiB": 209.64
+    }
+  ],
+  "cases": 406,
+  "independent_oracle": "Enumerate original integer X,Y and directly check every Manhattan-distance record; large patterns have closed-form point/diamond cardinalities.",
+  "changes": [
+    "Pack even count, odd count, and signed t sum into one Python int",
+    "Use one packed integer addition for tree pull and prefix aggregation",
+    "Unpack only each queried V piece; preserve earlier feasible-V clipping and prefix reuse"
+  ],
+  "source_sha256": "ff3558cf88f47b1b52bff33304c14acb284fa37bb0129d9f9b58480646fc0eba",
+  "execution_body_sha256": "0a4438e4f9ceb08d1d7f6e1f38e78dffbd04a43bc4a8b731d741fabba083b22c",
+  "copied_code_exact": true,
+  "no_trailing_whitespace": true,
+  "seconds_total": 13.725
+}

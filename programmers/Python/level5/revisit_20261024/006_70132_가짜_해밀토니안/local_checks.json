@@ -1,0 +1,38 @@
+{
+  "id": 70132,
+  "language": "Python3",
+  "status": "local_candidate_validation",
+  "online_submissions": 0,
+  "source_sha256": "c526274ed4184aadbcadfbf5bc04ae2eaaacf4831560048654d41bc23881f8b5",
+  "exact_comment_copy": true,
+  "trailing_whitespace_lines": 0,
+  "small_cases": 122,
+  "small_oracle": "Exhaustive walks over per-node visit counts 0/1/2 and current node; no tree DP criterion.",
+  "small_elapsed_seconds": 0.0005,
+  "large_cases": [
+    {
+      "label": "maximum_chain",
+      "n": 200000,
+      "expected": 200000,
+      "actual": 200000,
+      "elapsed_seconds": 0.1883
+    },
+    {
+      "label": "maximum_star",
+      "n": 200000,
+      "expected": 4,
+      "actual": 4,
+      "elapsed_seconds": 0.1931
+    },
+    {
+      "label": "complete_binary",
+      "n": 131071,
+      "expected": 273,
+      "actual": 273,
+      "elapsed_seconds": 0.0943
+    }
+  ],
+  "passed": 125,
+  "failed": 0,
+  "checked_at": "2026-10-24T03:34:47.890Z"
+}

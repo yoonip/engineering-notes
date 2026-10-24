@@ -1,0 +1,469 @@
+{
+  "id": 389631,
+  "title": "눈사람 만들기",
+  "level": 5,
+  "language": "Python3",
+  "status": "accepted",
+  "score": 100,
+  "priority": 11,
+  "acceptance_rate_percent": 1,
+  "solved": 104,
+  "problem_url": "https://school.programmers.co.kr/learn/courses/30/lessons/389631",
+  "started_at": "2026-10-24T03:37:32.834Z",
+  "maximum_failed_attempts": 5,
+  "attempt_count": 1,
+  "failed_attempts": 0,
+  "accepted_attempt": 1,
+  "attempts": [
+    {
+      "number": 1,
+      "submitted_at": "2026-10-24T03:47:45.177Z",
+      "source_sha256": "f1b0dfa05ec2a995295721bda991a6d044217a3f54100ba3c66a917afec52c42",
+      "status": "accepted",
+      "score": 100,
+      "result_observed_at": "2026-10-24T03:48:12.213Z",
+      "saved_source": "solution.py",
+      "saved_grading": "attempts/attempt1_grading.txt",
+      "published_grading_scope": "Result-only excerpt: lesson identity, language, attempt timestamps, total, test rows and failure rows. Official statement and examples are excluded.",
+      "published_grading_excerpt_sha256": "74fd77a75058ca933b6090f75cf7412c71fc9bcb7505f69a6842358a95aede18",
+      "saved_source_sha256": "f1b0dfa05ec2a995295721bda991a6d044217a3f54100ba3c66a917afec52c42",
+      "browser_input_lf_sha256": "f1b0dfa05ec2a995295721bda991a6d044217a3f54100ba3c66a917afec52c42",
+      "browser_input_normalization": "CRLF and lone CR are normalized to LF for browser input; the archived .py keeps the original bytes.",
+      "newline_format": "LF",
+      "execution_body_raw_sha256": "75f4159726f4a892fa6ceaba884c319a645c884f5777fe225f0432d3a0a88c5c",
+      "execution_body_lf_sha256": "75f4159726f4a892fa6ceaba884c319a645c884f5777fe225f0432d3a0a88c5c",
+      "annotated_executable_lines": 65,
+      "pre_online_local_checks": null,
+      "total_score": 100,
+      "total_possible": 100,
+      "test_rows": [
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 1 〉 통과 (0.54ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.54,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 2 〉 통과 (0.65ms, 11.5MB)",
+          "passed": true,
+          "time_ms": 0.65,
+          "memory_mb": 11.5
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 3 〉 통과 (0.68ms, 11.8MB)",
+          "passed": true,
+          "time_ms": 0.68,
+          "memory_mb": 11.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 4 〉 통과 (0.66ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.66,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 5 〉 통과 (1.10ms, 11.7MB)",
+          "passed": true,
+          "time_ms": 1.1,
+          "memory_mb": 11.7
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 6 〉 통과 (0.87ms, 11.9MB)",
+          "passed": true,
+          "time_ms": 0.87,
+          "memory_mb": 11.9
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 7 〉 통과 (0.04ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.04,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 8 〉 통과 (0.18ms, 11.8MB)",
+          "passed": true,
+          "time_ms": 0.18,
+          "memory_mb": 11.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 9 〉 통과 (0.32ms, 11.8MB)",
+          "passed": true,
+          "time_ms": 0.32,
+          "memory_mb": 11.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 10 〉 통과 (0.95ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.95,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 11 〉 통과 (0.96ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.96,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 12 〉 통과 (0.36ms, 11.7MB)",
+          "passed": true,
+          "time_ms": 0.36,
+          "memory_mb": 11.7
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 13 〉 통과 (329.80ms, 48.2MB)",
+          "passed": true,
+          "time_ms": 329.8,
+          "memory_mb": 48.2
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 14 〉 통과 (331.66ms, 45.2MB)",
+          "passed": true,
+          "time_ms": 331.66,
+          "memory_mb": 45.2
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 15 〉 통과 (330.01ms, 48.8MB)",
+          "passed": true,
+          "time_ms": 330.01,
+          "memory_mb": 48.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 16 〉 통과 (0.06ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.06,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 17 〉 통과 (0.94ms, 11.5MB)",
+          "passed": true,
+          "time_ms": 0.94,
+          "memory_mb": 11.5
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 18 〉 통과 (0.06ms, 11.5MB)",
+          "passed": true,
+          "time_ms": 0.06,
+          "memory_mb": 11.5
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 19 〉 통과 (0.04ms, 11.3MB)",
+          "passed": true,
+          "time_ms": 0.04,
+          "memory_mb": 11.3
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 20 〉 통과 (0.04ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.04,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 21 〉 통과 (0.04ms, 11.4MB)",
+          "passed": true,
+          "time_ms": 0.04,
+          "memory_mb": 11.4
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 22 〉 통과 (1.13ms, 11.7MB)",
+          "passed": true,
+          "time_ms": 1.13,
+          "memory_mb": 11.7
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 23 〉 통과 (0.93ms, 11.5MB)",
+          "passed": true,
+          "time_ms": 0.93,
+          "memory_mb": 11.5
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 24 〉 통과 (0.16ms, 11.7MB)",
+          "passed": true,
+          "time_ms": 0.16,
+          "memory_mb": 11.7
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 25 〉 통과 (0.52ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.52,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 26 〉 통과 (0.31ms, 11.8MB)",
+          "passed": true,
+          "time_ms": 0.31,
+          "memory_mb": 11.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 27 〉 통과 (0.23ms, 11.8MB)",
+          "passed": true,
+          "time_ms": 0.23,
+          "memory_mb": 11.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 28 〉 통과 (1.17ms, 11.5MB)",
+          "passed": true,
+          "time_ms": 1.17,
+          "memory_mb": 11.5
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 29 〉 통과 (0.28ms, 11.7MB)",
+          "passed": true,
+          "time_ms": 0.28,
+          "memory_mb": 11.7
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 30 〉 통과 (0.24ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.24,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 31 〉 통과 (0.43ms, 11.8MB)",
+          "passed": true,
+          "time_ms": 0.43,
+          "memory_mb": 11.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 32 〉 통과 (0.22ms, 11.4MB)",
+          "passed": true,
+          "time_ms": 0.22,
+          "memory_mb": 11.4
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 33 〉 통과 (0.35ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.35,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 34 〉 통과 (139.82ms, 32.6MB)",
+          "passed": true,
+          "time_ms": 139.82,
+          "memory_mb": 32.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 35 〉 통과 (132.76ms, 30.1MB)",
+          "passed": true,
+          "time_ms": 132.76,
+          "memory_mb": 30.1
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 36 〉 통과 (151.75ms, 32.6MB)",
+          "passed": true,
+          "time_ms": 151.75,
+          "memory_mb": 32.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 37 〉 통과 (148.85ms, 31.8MB)",
+          "passed": true,
+          "time_ms": 148.85,
+          "memory_mb": 31.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 38 〉 통과 (125.29ms, 30MB)",
+          "passed": true,
+          "time_ms": 125.29,
+          "memory_mb": 30
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 39 〉 통과 (116.68ms, 29.4MB)",
+          "passed": true,
+          "time_ms": 116.68,
+          "memory_mb": 29.4
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 40 〉 통과 (96.86ms, 30MB)",
+          "passed": true,
+          "time_ms": 96.86,
+          "memory_mb": 30
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 41 〉 통과 (111.76ms, 30.5MB)",
+          "passed": true,
+          "time_ms": 111.76,
+          "memory_mb": 30.5
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 42 〉 통과 (100.89ms, 30.5MB)",
+          "passed": true,
+          "time_ms": 100.89,
+          "memory_mb": 30.5
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 43 〉 통과 (98.03ms, 30MB)",
+          "passed": true,
+          "time_ms": 98.03,
+          "memory_mb": 30
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 44 〉 통과 (155.33ms, 29.9MB)",
+          "passed": true,
+          "time_ms": 155.33,
+          "memory_mb": 29.9
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 45 〉 통과 (115.28ms, 30.8MB)",
+          "passed": true,
+          "time_ms": 115.28,
+          "memory_mb": 30.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 46 〉 통과 (0.03ms, 11.5MB)",
+          "passed": true,
+          "time_ms": 0.03,
+          "memory_mb": 11.5
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 47 〉 통과 (0.05ms, 11.7MB)",
+          "passed": true,
+          "time_ms": 0.05,
+          "memory_mb": 11.7
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 48 〉 통과 (0.03ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.03,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 49 〉 통과 (0.03ms, 11.6MB)",
+          "passed": true,
+          "time_ms": 0.03,
+          "memory_mb": 11.6
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 50 〉 통과 (0.05ms, 11.7MB)",
+          "passed": true,
+          "time_ms": 0.05,
+          "memory_mb": 11.7
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 51 〉 통과 (0.04ms, 11.8MB)",
+          "passed": true,
+          "time_ms": 0.04,
+          "memory_mb": 11.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 52 〉 통과 (0.03ms, 11.8MB)",
+          "passed": true,
+          "time_ms": 0.03,
+          "memory_mb": 11.8
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 53 〉 통과 (0.03ms, 11.7MB)",
+          "passed": true,
+          "time_ms": 0.03,
+          "memory_mb": 11.7
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 54 〉 통과 (0.04ms, 11.7MB)",
+          "passed": true,
+          "time_ms": 0.04,
+          "memory_mb": 11.7
+        },
+        {
+          "group": "정확성 테스트",
+          "text": "테스트 55 〉 통과 (0.04ms, 11.5MB)",
+          "passed": true,
+          "time_ms": 0.04,
+          "memory_mb": 11.5
+        }
+      ],
+      "failure_reasons": [],
+      "failure_reason_scope": "Exact non-passing test rows from the grading snapshot; no unobserved cause is inferred.",
+      "raw_local_snapshot_sha256": "91c0fa4d34a3518fa8be95574b6e68d70b4846305045d43a0900d0085966ecc3"
+    }
+  ],
+  "history_verified_at": "2026-10-24T03:48:44.265Z",
+  "new_submission_rows": [
+    {
+      "submitted_at": "2026-10-24 12:47:46",
+      "language": "Python3",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "accepted_history_matches": [
+    {
+      "submitted_at": "2026-10-24 12:47:46",
+      "language": "Python3",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "original_accepted_source_readback_collected": false,
+  "submission_id": null,
+  "evidence_scope": {
+    "website_result": "The sequential grading total and test-result excerpts, plus new Python3 submission-history rows, are the website evidence. Raw DOM snapshots remain private in tmp.",
+    "archived_code": "The archived source is the exact saved submitted input whose raw-byte SHA256 is in the attempt ledger.",
+    "limitation": "No accepted-source readback or submission-detail identifier was collected; input hashes are not represented as site-readback hashes."
+  },
+  "local_checks": {
+    "scope": "pre_online_candidate_validation",
+    "copied_without_changes": true,
+    "validation_sha256": "bb7e89c1e7b488b1176d0a66f6c3bb2c674af454d154655c22078c777ded1cd9",
+    "declared_source_sha256": "f1b0dfa05ec2a995295721bda991a6d044217a3f54100ba3c66a917afec52c42",
+    "checked_at": "2026-10-24T03:36:42.780Z",
+    "checked_at_precedes_matching_submission": true,
+    "timestamp_comparison_attempt": 1,
+    "matches_accepted_source": true,
+    "matching_attempts": [
+      1
+    ],
+    "note": "로컬 비교와 성능 측정은 제출 전 후보의 기록입니다. 사이트 채점 결과와 구분하며, 시각이 없는 원본에는 시각을 추가하지 않습니다."
+  }
+}

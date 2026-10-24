@@ -1,0 +1,45 @@
+{
+  "problem_id": 214295,
+  "language": "Python3",
+  "status": "optimized_local_validation_passed_not_site_graded",
+  "optimization_round": 1,
+  "official_examples": 4,
+  "random_independent_grid_cases": 400,
+  "maximum_boundary_cases": [
+    {
+      "label": "250000_distinct_failed_points",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 250000,
+      "seconds": 8.8827,
+      "previous_seconds_same_input": 13.3622,
+      "speed_reduction_percent": 33.52,
+      "process_peak_working_set_MiB": 206.48
+    },
+    {
+      "label": "250000_nested_failed_diamonds",
+      "n": 1000000000,
+      "m": 1000000000,
+      "records": 250000,
+      "seconds": 9.5492,
+      "previous_seconds_same_input": 11.6883,
+      "speed_reduction_percent": 18.3,
+      "process_peak_working_set_MiB": 206.95
+    }
+  ],
+  "cases": 406,
+  "independent_oracle": "Enumerate original integer X,Y and directly check every Manhattan-distance record; large patterns have closed-form point/diamond cardinalities.",
+  "changes": [
+    "Combine even/odd t moments into one total",
+    "Clip feasible V to one interval before splitting",
+    "Reuse previous piece prefix as next piece left prefix",
+    "Cache original leaf statistics",
+    "Use uint32 count arrays and list cover/common moment",
+    "Use F(V)=V²//4 to sum floor(V/2) on partial leaf"
+  ],
+  "source_sha256": "f7a7d256ea9b765b63322dd13b45d25d1d76cc3bfdea9ec9da7ee19b1f1c5d7b",
+  "execution_body_sha256": "85c849604b6798c0ed829d62f080b19e7b84f271858622e3f497d56a5a7e89a1",
+  "copied_code_exact": true,
+  "no_trailing_whitespace": true,
+  "seconds_total": 18.553
+}

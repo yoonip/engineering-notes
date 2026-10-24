@@ -1,0 +1,50 @@
+{
+  "problem_id": 389632,
+  "language": "python",
+  "status": "locally_validated_not_submitted",
+  "checked_at": "2026-10-24T03:42:54.361372+00:00",
+  "sourceSHA256": "165fab010041f81e3c7a299b1a48380c9007bd064e2bbc1f695957ac84a65790",
+  "executableBodySHA256": "9ba9d4e00b3de3596c85832a23bc1b23ba575803aedc77ee2c833863d57a17e0",
+  "official_examples_passed": 2,
+  "independent_small_comparisons": 1249,
+  "small_oracle": "Direct per-position group labels and Counter; AST-extracted reference functions only, original verifier not executed or changed.",
+  "large_oracle": "Closed-form counts for repeated/full split-merge cases; previously independently validated C++ executable for the other max cases.",
+  "performance": [
+    {
+      "name": "all_letters_full_range_repeated",
+      "n": 100000,
+      "q": 200000,
+      "seconds": 2.444302,
+      "answer_count": 1,
+      "answerSHA256": "4840576d9e17d90bcc435e1306bf234eb0594126a8001b4fcf5cf8dfb7636bda"
+    },
+    {
+      "name": "point_split_merge_recolor",
+      "n": 99999,
+      "q": 199999,
+      "seconds": 0.315358,
+      "answer_count": 1,
+      "answerSHA256": "b0a85a375c00b3475e3ec8a167923a92038bb1ec1dae577c300017dadf371ae7"
+    },
+    {
+      "name": "mixed_random_max",
+      "n": 100000,
+      "q": 200000,
+      "seconds": 1.33539,
+      "answer_count": 49690,
+      "answerSHA256": "45d22c77bc20f93acb67aaa1fc76a057910b05f5a3d610007dfdbf74f1290060"
+    },
+    {
+      "name": "random_point_splits_then_suffixes",
+      "n": 100000,
+      "q": 200000,
+      "seconds": 0.908666,
+      "answer_count": 13,
+      "answerSHA256": "e51600897bb19c6b493f470071b3ac4710c67f213306966521da8f8b995c7083"
+    }
+  ],
+  "complexity_note": "Token ownership/DSU avoids touching positions for whole-letter moves and merges. Sorted interval lists use native slicing; a pathological succession of middle insertions can take quadratic pointer movement, so these measurements are local evidence, not an asymptotic guarantee.",
+  "online_judge": {
+    "submitted": false
+  }
+}

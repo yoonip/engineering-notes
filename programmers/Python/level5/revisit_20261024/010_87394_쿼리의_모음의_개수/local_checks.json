@@ -1,0 +1,49 @@
+{
+  "verification": "local_candidate_checks",
+  "passed": true,
+  "online_submissions": 0,
+  "source_sha256": "660c316ed2ccb3a0b3503257c76acce1e6a28efa487687611846024c44a01dc1",
+  "official_examples": 4,
+  "small_and_random_checks": 456,
+  "independent_oracles": [
+    "Direct inclusion-exclusion over every set of uncovered positions; exponentiate the remaining exact safe-query alphabet",
+    "Explicit array-state DP enumerating every safe query for small arrays"
+  ],
+  "maximum_cases": [
+    {
+      "n": 50,
+      "q": 50,
+      "height": 1,
+      "expected": 13988435,
+      "actual": 13988435,
+      "seconds": 0.012462399987271056,
+      "expected_source": "Previously independently verified equal-height inclusion-exclusion record, C/C++ task"
+    },
+    {
+      "n": 50,
+      "q": 50,
+      "height": 100000,
+      "expected": 27995009,
+      "actual": 27995009,
+      "seconds": 0.012157399993157014,
+      "expected_source": "Previously independently verified equal-height inclusion-exclusion record, C/C++ task"
+    },
+    {
+      "name": "increasing_one_query",
+      "n": 50,
+      "q": 1,
+      "expected": 0,
+      "actual": 0,
+      "seconds": 0.00016530000721104443
+    },
+    {
+      "name": "flat_one_query",
+      "n": 50,
+      "q": 1,
+      "expected": 1,
+      "actual": 1,
+      "seconds": 0.0001419000036548823
+    }
+  ],
+  "packing_proof": "Each unreduced coefficient is at most 51*51*(MOD-1)^2 < 2^72 < 2^80; each input coefficient is reduced before the next product. Negation happens only after coefficient extraction."
+}

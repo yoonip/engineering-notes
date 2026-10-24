@@ -52,3 +52,9 @@ The 86 historical Python submissions were copied from accepted 100/100 entries i
 The existing Python Level 5 archive is partial. The separate [Level 5 C/C++ record](LEVEL5_VERIFICATION.md) covers the supported problems in those languages. Its [failed Python attempt](Python/level5/attempts/389632/README.md) has a separate timeout analysis and is not marked as accepted. Problems without an archived solution are not presented as completed.
 
 [Coverage](COVERAGE.md) · [All accepted problems](all_problems.json) · [Level 0–1 site catalog](level0_1_catalog.json)
+
+## Python 레벨 5 재풀이
+
+위에서 일부 문제만 보관했다고 설명한 Python 레벨 5 자료는 이전 보관 목록입니다. 2026년 10월 24일 지원 문제 재풀이는 [별도 채점·보존 기록](<Python/LEVEL5_REVISIT.md>)과 [문제별 목록](<Python/level5/revisit_20261024/README.md>)에 연결합니다. 지원 문제 14개 중 정답 13개, 실패 5회 후 중단 1개입니다. 실제 제출은 총 18회이며 실패 결과는 5회입니다.
+
+The earlier partial Python Level 5 archive is preserved. The separate [2026-10-24 revisit record](<Python/LEVEL5_REVISIT.md>) covers 14 supported problems: 13 passed, and one was stopped after five failed attempts.

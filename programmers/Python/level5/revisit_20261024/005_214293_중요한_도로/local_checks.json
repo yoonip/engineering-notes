@@ -1,0 +1,34 @@
+{
+  "problem_id": 214293,
+  "language": "Python3",
+  "status": "local_validation_passed_not_site_graded",
+  "official_examples": 4,
+  "random_independent_comparisons": 500,
+  "maximum_boundary_cases": [
+    {
+      "label": "50000_deep_chain_64bit_distances",
+      "n": 50000,
+      "roads": 49999,
+      "seconds": 0.0797
+    },
+    {
+      "label": "199396_edge_complete_graph",
+      "n": 632,
+      "roads": 199396,
+      "seconds": 0.0959
+    },
+    {
+      "label": "99996_edges_many_equal_shortest_paths",
+      "n": 50000,
+      "roads": 99996,
+      "seconds": 0.1387
+    }
+  ],
+  "cases": 507,
+  "independent_oracle": "Change one road traffic to zero or remove that road, then independently recompute the full shortest route.",
+  "source_sha256": "92ff9266ae9964df4cf8d04efd8a99701993696318d51162f4ea865c5b56d0c5",
+  "execution_body_sha256": "f1a69fcb4354ccb03e3e1b78f92b30255645f0535b3749162423276d51f26456",
+  "copied_code_exact": true,
+  "no_trailing_whitespace": true,
+  "seconds_total": 0.3871
+}

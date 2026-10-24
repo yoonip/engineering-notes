@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "small_cases": 601,
+  "oracle": "Euler E−V+1 from sets of vertices and split geometric segments",
+  "maximum_cases": [
+    {
+      "name": "line",
+      "n": 100000,
+      "answer": 0,
+      "seconds": 0.04002799998852424
+    },
+    {
+      "name": "repeat_square",
+      "n": 100000,
+      "answer": 1,
+      "seconds": 0.014201499987393618
+    },
+    {
+      "name": "repeat_crossing",
+      "n": 100000,
+      "answer": 50000,
+      "seconds": 0.04055750000406988
+    }
+  ],
+  "verification": "local_candidate_checks",
+  "online_submissions": 0,
+  "source_sha256": "0380c012d2eb7355582b49f9ba107a3ac368d5c76b331bc1dd7888cd7dd6bae4"
+}

@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "small_cases": 400,
+  "oracle": "Enumerate every set of k−1 cut edges, merge surviving components and minimize largest sum",
+  "maximum_cases": [
+    {
+      "n": 10000,
+      "k": 1,
+      "answer": 100000000,
+      "seconds": 0.0011535000230651349
+    },
+    {
+      "n": 10000,
+      "k": 100,
+      "answer": 1000000,
+      "seconds": 0.02863210000214167
+    },
+    {
+      "n": 10000,
+      "k": 10000,
+      "answer": 10000,
+      "seconds": 0.031062900001415983
+    }
+  ],
+  "verification": "local_candidate_checks",
+  "online_submissions": 0,
+  "source_sha256": "beeb0d10388471e5f19067b1447412ed67b3c080eea8ae897427c96886eeaef8"
+}

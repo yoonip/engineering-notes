@@ -1,0 +1,31 @@
+{
+  "id": 389631,
+  "language": "Python3",
+  "status": "local_candidate_validation",
+  "online_submissions": 0,
+  "source_sha256": "f1b0dfa05ec2a995295721bda991a6d044217a3f54100ba3c66a917afec52c42",
+  "exact_comment_copy": true,
+  "trailing_whitespace_lines": 0,
+  "small_cases": 64,
+  "small_oracle": "Exhaustive consumed-snow-mask/two-position/first-size BFS on small grids.",
+  "large_cases": [
+    {
+      "label": "maximum_open_corners",
+      "rows": 500,
+      "columns": 500,
+      "actual": 15624750999,
+      "elapsed_seconds": 0.2906
+    },
+    {
+      "label": "maximum_winding_corridor",
+      "rows": 500,
+      "columns": 500,
+      "component_size": 125249,
+      "actual": 62624,
+      "elapsed_seconds": 0.1255
+    }
+  ],
+  "passed": 66,
+  "failed": 0,
+  "checked_at": "2026-10-24T03:36:42.780Z"
+}
