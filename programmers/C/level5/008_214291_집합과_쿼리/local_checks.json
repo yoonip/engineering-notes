@@ -1,0 +1,61 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "problem_id": 214291,
+    "status": "local_checks_passed_not_submitted",
+    "official_examples": 2,
+    "exhaustive_valid_query_prefixes_n3_depth3": 10041,
+    "random_valid_query_streams": 5000,
+    "large_boundary_streams": 4,
+    "cases_each_language": 15047,
+    "responses_compared_each_language": 923660,
+    "oracle": "Explicit group labels and per-element arrival timestamps updated by full scans",
+    "large_timings": [
+      {
+        "label": "500000_elements_and_queries",
+        "n": 500000,
+        "queries": 500000,
+        "responses": 2,
+        "seconds_both_languages": 0.219484
+      },
+      {
+        "label": "500000_inverted_empty_splits",
+        "n": 2,
+        "queries": 500000,
+        "responses": 249999,
+        "seconds_both_languages": 0.179787
+      },
+      {
+        "label": "repeat_move_99999_element_cohort",
+        "n": 100000,
+        "queries": 500000,
+        "responses": 200001,
+        "seconds_both_languages": 0.231477
+      },
+      {
+        "label": "500000_whole_singleton_splits",
+        "n": 1,
+        "queries": 500000,
+        "responses": 250000,
+        "seconds_both_languages": 0.188243
+      }
+    ],
+    "sources": [
+      {
+        "language": "C",
+        "source_sha256": "8c0c590147cd9605fd77fc3dadc63f14fd529043570c0c439a42521958916284",
+        "execution_body_sha256": "fc0a41f88411b04587b0b3a9aadfd0b11997d307aee20f5ca931f61632ccddd8",
+        "code_copy_exact": true
+      },
+      {
+        "language": "C++",
+        "source_sha256": "6c6de3fe47f70b31f31b5505b78583f4ca5909c68ab291fe2349fb920851c2ad",
+        "execution_body_sha256": "7f0d049d14f74213115144ec645189e8ea3bc353040ccb70ea01a8ffd21beacb",
+        "code_copy_exact": true
+      }
+    ],
+    "seconds": 4.297,
+    "build_directory": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\programmers_214291_o0laiyen"
+  }
+}

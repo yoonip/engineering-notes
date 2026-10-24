@@ -1,0 +1,131 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "checked_at_utc": "2026-10-24T00:37:30.089928+00:00",
+    "problem_id": 76504,
+    "official_examples": 1,
+    "exhaustive_graphs": 987,
+    "exhaustive_scope": "Every nonempty directed weighted graph on2 cities for z2..8 and on3 cities for z2..3, at most one edge per ordered city pair.",
+    "random_graphs": 1000,
+    "larger_z_random_graphs": 100,
+    "seed": 76504,
+    "small_oracle": "Uniform-cost BFS over(city,exact money), explicitly taking stay, each road and all teleport destinations; covers all amounts through(z-1)^2+3z+5.",
+    "large_oracle": "Independent lexicographic Dijkstra over(city,money mod z), minimizing(loss,base gained money);12 huge queries per graph and base money bound checked independently.",
+    "large_residue_oracle_queries": 25044,
+    "algorithm": "Exact no-stay DP to(z-1)^2; z rolling amount rows, one-turn teleport from global row minimum, prefix minimum loss per residue and end-padded stays.",
+    "complexity": {
+      "time": "O(z^2*(N+M)+Q)",
+      "auxiliary_state": "O(Nz+z^2)",
+      "maximum_rolling_city_state_bytes": 600000
+    },
+    "records": [
+      {
+        "language": "c",
+        "source": "solution.c",
+        "source_sha256": "ab90f79b05dac890dbaf182fc6d4b0642e0659704f48b5f8574e003772dead52",
+        "execution_body_sha256": "0fe27d4ed4afb595ac408068915bdbd267c13c755e6437d3431d405c756b5b42",
+        "copied_code_exact": true,
+        "compilation": "passed",
+        "oracle_graph_cases": 2088,
+        "oracle_comparisons": {
+          "query_answers_compared": 240808,
+          "seconds_including_process_startup": 0.767041
+        },
+        "maximum_tests": [
+          {
+            "name": "gain1_cycle",
+            "n": 3000,
+            "m": 3000,
+            "z": 50,
+            "q": 100000,
+            "query_answers_compared": 100000,
+            "seconds_including_process_startup": 0.418161
+          },
+          {
+            "name": "gain49_cycle",
+            "n": 3000,
+            "m": 3000,
+            "z": 50,
+            "q": 100000,
+            "query_answers_compared": 100000,
+            "seconds_including_process_startup": 0.407832
+          },
+          {
+            "name": "gain2_cycle",
+            "n": 3000,
+            "m": 3000,
+            "z": 50,
+            "q": 100000,
+            "query_answers_compared": 100000,
+            "seconds_including_process_startup": 0.360901
+          },
+          {
+            "name": "gain49_initial_teleport",
+            "n": 3000,
+            "m": 3000,
+            "z": 50,
+            "q": 100000,
+            "query_answers_compared": 100000,
+            "seconds_including_process_startup": 0.415645
+          }
+        ]
+      },
+      {
+        "language": "cpp",
+        "source": "solution.cpp",
+        "source_sha256": "2ead1b42dd74c4c0bae9d0fe9d9be45eea966bf47348cd56dae51467d73bfc4b",
+        "execution_body_sha256": "cd860ec27e40e1431a8e200cdbd8642f600d743821a36f4b53e3c18ccf3c58f3",
+        "copied_code_exact": true,
+        "compilation": "passed",
+        "oracle_graph_cases": 2088,
+        "oracle_comparisons": {
+          "query_answers_compared": 240808,
+          "seconds_including_process_startup": 0.449287
+        },
+        "maximum_tests": [
+          {
+            "name": "gain1_cycle",
+            "n": 3000,
+            "m": 3000,
+            "z": 50,
+            "q": 100000,
+            "query_answers_compared": 100000,
+            "seconds_including_process_startup": 0.419538
+          },
+          {
+            "name": "gain49_cycle",
+            "n": 3000,
+            "m": 3000,
+            "z": 50,
+            "q": 100000,
+            "query_answers_compared": 100000,
+            "seconds_including_process_startup": 0.410365
+          },
+          {
+            "name": "gain2_cycle",
+            "n": 3000,
+            "m": 3000,
+            "z": 50,
+            "q": 100000,
+            "query_answers_compared": 100000,
+            "seconds_including_process_startup": 0.359585
+          },
+          {
+            "name": "gain49_initial_teleport",
+            "n": 3000,
+            "m": 3000,
+            "z": 50,
+            "q": 100000,
+            "query_answers_compared": 100000,
+            "seconds_including_process_startup": 0.354355
+          }
+        ]
+      }
+    ],
+    "passed": true,
+    "online_submission_performed": false,
+    "repository_or_python_files_modified": false,
+    "limits": "Local validation and timing only; no website grading was performed."
+  }
+}

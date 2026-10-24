@@ -1,0 +1,66 @@
+{
+  "id": 68938,
+  "title": "문자열의 아름다움",
+  "level": 5,
+  "language": "C++",
+  "url": "https://school.programmers.co.kr/learn/courses/30/lessons/68938?language=cpp",
+  "checked_on": "2026-10-24",
+  "verification": "actual_online_judge_and_submission_history",
+  "status": "accepted",
+  "score": 100,
+  "maximum_score": 100,
+  "attempt_count": 1,
+  "max_attempts_per_problem_language": 5,
+  "accepted_attempt": 1,
+  "submitted_at_utc": "2026-10-24T00:17:13.678Z",
+  "grading_result_observed_at_utc": "2026-10-24T00:18:58.742Z",
+  "accepted_history_rows": [
+    {
+      "submitted_at": "2026-10-24 09:17:15",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source_sha256": "0ffc624d3e78ebb00cc9701dc05278077ceedb3459bc688851760bc3a3ccf8e0",
+  "archive_execution_body_sha256": "3dfcb3f2f569ce17cc3fc63aed14bffbb43b496c4c221bd1631f9f4ef3f02956",
+  "submitted_normalized_lf_sha256": "e903bbc6e16fff552e7f3eb3bda01fb807dd1ce32e86918f1748a6680b9fde9e",
+  "comments_and_summary_submitted": true,
+  "archive_matches_saved_submission": true,
+  "input_normalization": "The saved source was submitted after CRLF-to-LF normalization.",
+  "executable_nonempty_lines": 36,
+  "annotated_nonempty_lines": 36,
+  "commented_copy_exact": true,
+  "final_result_evidence": "final_judge_screen_and_language_specific_accepted_100_history",
+  "final_judge_tests": [
+    "테스트 1 〉 통과 (0.00ms, 5.05MB)",
+    "테스트 2 〉 통과 (0.01ms, 4.79MB)",
+    "테스트 3 〉 통과 (0.00ms, 4.79MB)",
+    "테스트 4 〉 통과 (0.00ms, 4.79MB)",
+    "테스트 5 〉 통과 (0.01ms, 4.76MB)",
+    "테스트 6 〉 통과 (0.01ms, 4.67MB)",
+    "테스트 7 〉 통과 (0.01ms, 4.82MB)",
+    "테스트 8 〉 통과 (0.01ms, 4.92MB)",
+    "테스트 9 〉 통과 (0.03ms, 4.79MB)",
+    "테스트 10 〉 통과 (2.90ms, 4.79MB)",
+    "테스트 11 〉 통과 (1.80ms, 4.95MB)",
+    "테스트 12 〉 통과 (1.45ms, 4.92MB)",
+    "테스트 13 〉 통과 (1.25ms, 4.67MB)",
+    "테스트 14 〉 통과 (1.23ms, 4.92MB)",
+    "테스트 15 〉 통과 (0.51ms, 4.82MB)",
+    "테스트 16 〉 통과 (0.54ms, 4.67MB)",
+    "테스트 17 〉 통과 (0.57ms, 4.79MB)"
+  ],
+  "test_detail_note": "최종 채점 화면에 표시된 테스트별 통과 내역입니다.",
+  "attempts": [
+    {
+      "number": 1,
+      "submitted_at_utc": "2026-10-24T00:17:13.678Z",
+      "result_observed_at_utc": "2026-10-24T00:18:58.742Z",
+      "status": "accepted",
+      "score": 100,
+      "source_sha256": "0ffc624d3e78ebb00cc9701dc05278077ceedb3459bc688851760bc3a3ccf8e0"
+    }
+  ],
+  "local_checks": "local_checks.json"
+}

@@ -1,0 +1,120 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "checked_at_utc": "2026-10-24T00:50:43.186071+00:00",
+    "problem_id": 1841,
+    "language": "cpp",
+    "source": "solution.cpp",
+    "source_sha256": "975c0df25b2843f7e1b4fcd2fde73d5f0da582b5079d414129b2258fc596b9f2",
+    "execution_body_sha256": "42ea51fc584dd8ef92aa8fa894ce4d7c155c6fa4b40022a4269b494a8f773ec4",
+    "compilation": "passed",
+    "code_line_copies_and_notes_match": true,
+    "official_examples": [
+      6,
+      73
+    ],
+    "full_pin_color_assignment_geometries": 780,
+    "full_color_scope": "All3^N assignments of every pin to an outer edge; convex hull each edge region; reject region overlap/shared inner pins; deduplicate hull geometry. Includes all subsets of a10-point general-position pool up to size5 and140 fresh random geometries up to size8.",
+    "total_small_and_triple_cases": 5086,
+    "outer_vertex_orders_per_brute_geometry": 6,
+    "three_first_tangent_random_cases": 400,
+    "random_tangent_case_n_range": [
+      8,
+      24
+    ],
+    "three_tangent_boundary_sizes": [
+      31,
+      32,
+      33,
+      63,
+      64,
+      65
+    ],
+    "small_and_triple_seconds_including_process_startup": 0.823258,
+    "affine_invariance_cases": 360,
+    "affine_invariance_seconds_including_process_startup": 0.534943,
+    "invariance": [
+      {
+        "n": 0,
+        "affine_transforms": 6,
+        "outer_vertex_orders": 6,
+        "invariant_answer": 1
+      },
+      {
+        "n": 1,
+        "affine_transforms": 6,
+        "outer_vertex_orders": 6,
+        "invariant_answer": 3
+      },
+      {
+        "n": 63,
+        "affine_transforms": 6,
+        "outer_vertex_orders": 6,
+        "invariant_answer": 2080
+      },
+      {
+        "n": 64,
+        "affine_transforms": 6,
+        "outer_vertex_orders": 6,
+        "invariant_answer": 2145
+      },
+      {
+        "n": 65,
+        "affine_transforms": 6,
+        "outer_vertex_orders": 6,
+        "invariant_answer": 2211
+      },
+      {
+        "n": 127,
+        "affine_transforms": 6,
+        "outer_vertex_orders": 6,
+        "invariant_answer": 8256
+      },
+      {
+        "n": 128,
+        "affine_transforms": 6,
+        "outer_vertex_orders": 6,
+        "invariant_answer": 8385
+      },
+      {
+        "n": 129,
+        "affine_transforms": 6,
+        "outer_vertex_orders": 6,
+        "invariant_answer": 8515
+      },
+      {
+        "n": 499,
+        "affine_transforms": 6,
+        "outer_vertex_orders": 6,
+        "invariant_answer": 125250
+      },
+      {
+        "n": 500,
+        "affine_transforms": 6,
+        "outer_vertex_orders": 6,
+        "invariant_answer": 125751
+      }
+    ],
+    "review": [
+      "Angular order comparator is strict on the interior wedge at C, whose angle is below180degrees; the input forbids any three collinear points.",
+      "For fixed A/B first contacts, all-left intersection gives an inclusive lower C rank, all-right intersection gives an inclusive upper rank; the two opposite triangle orientations are both checked.",
+      "Q-left-of-C imposes rankR<rankQ; P-left-of-B is filtered directly; R-left-of-A is counted by prefix sums.",
+      "Sentinel rank0 represents the unbent C→A band; n0 safely uses no bit words and returns1.",
+      "At coordinate magnitude1e8 the turn expression is within8e16; all accumulated counts are bounded by(501)^3<126million, within int.",
+      "Nonzero bit guards precede clz/ctz and no unused trailing bits are set."
+    ],
+    "passed": true,
+    "online_submission_performed": false,
+    "repository_or_python_files_modified": false,
+    "limits": "Independent geometric full assignments cover small N; maximum-size checks use affine/vertex-order invariance, not exhaustive shape enumeration.",
+    "annotation_format_edit": {
+      "scope": "Commented code copies only: restore blank lines and two-space note delimiter; clarify angular-order note.",
+      "before_source_sha256": "5e84b30552afd2f56ee8d4d073fd41c920a882aab0d1801544d28bd85ee4f811",
+      "after_source_sha256": "975c0df25b2843f7e1b4fcd2fde73d5f0da582b5079d414129b2258fc596b9f2",
+      "execution_body_sha256_before": "42ea51fc584dd8ef92aa8fa894ce4d7c155c6fa4b40022a4269b494a8f773ec4",
+      "execution_body_sha256_after": "42ea51fc584dd8ef92aa8fa894ce4d7c155c6fa4b40022a4269b494a8f773ec4",
+      "execution_body_bytes_unchanged": true
+    }
+  }
+}

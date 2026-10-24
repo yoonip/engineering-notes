@@ -1,0 +1,50 @@
+{
+  "id": 1834,
+  "title": "신비로운 유적 탐험",
+  "level": 5,
+  "language": "C++",
+  "url": "https://school.programmers.co.kr/learn/courses/30/lessons/1834?language=cpp",
+  "checked_on": "2026-10-24",
+  "verification": "actual_online_judge_and_submission_history",
+  "status": "accepted",
+  "score": 100,
+  "maximum_score": 100,
+  "attempt_count": 1,
+  "max_attempts_per_problem_language": 5,
+  "accepted_attempt": 1,
+  "submitted_at_utc": "2026-10-24T00:27:03.046Z",
+  "grading_result_observed_at_utc": "2026-10-24T00:29:58.528Z",
+  "accepted_history_rows": [
+    {
+      "submitted_at": "2026-10-24 09:27:04",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source_sha256": "3c3c583e7a2d7696835a44b55c551a2f7d903a381c88e25f4a2950beb4bd629b",
+  "archive_execution_body_sha256": "2625d7c0dc010b26b401ef80da825927b6c19418e54fb2098515ca59636dfd6c",
+  "submitted_normalized_lf_sha256": "3c3c583e7a2d7696835a44b55c551a2f7d903a381c88e25f4a2950beb4bd629b",
+  "comments_and_summary_submitted": true,
+  "archive_matches_saved_submission": true,
+  "input_normalization": "The saved source was submitted after CRLF-to-LF normalization.",
+  "executable_nonempty_lines": 101,
+  "annotated_nonempty_lines": 101,
+  "commented_copy_exact": true,
+  "final_result_evidence": "final_judge_screen_and_language_specific_accepted_100_history",
+  "final_judge_tests": [
+    "테스트 1 〉 통과 (4.55ms, 4.79MB)"
+  ],
+  "test_detail_note": "최종 채점 화면에 표시된 테스트별 통과 내역입니다.",
+  "attempts": [
+    {
+      "number": 1,
+      "submitted_at_utc": "2026-10-24T00:27:03.046Z",
+      "result_observed_at_utc": "2026-10-24T00:29:58.528Z",
+      "status": "accepted",
+      "score": 100,
+      "source_sha256": "3c3c583e7a2d7696835a44b55c551a2f7d903a381c88e25f4a2950beb4bd629b"
+    }
+  ],
+  "local_checks": "local_checks.json"
+}

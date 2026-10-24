@@ -1,0 +1,107 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "checked_at_utc": "2026-10-24T00:30:23.840556+00:00",
+    "problem_id": 389632,
+    "official_examples": 2,
+    "tiny_exhaustive_query_sequences": 7168,
+    "tiny_exhaustive_scope": "All ab strings of length1..3, all three-query sequences from eight selected comparison/extraction/range/merge commands, followed by5.",
+    "random_reference_cases": 2000,
+    "longer_random_reference_cases": 5,
+    "longer_random_dimensions": {
+      "n": 1000,
+      "queries_before_final": 5000
+    },
+    "seed": 389632,
+    "oracle": "Direct owner[group_id] per original character; update every selected character and merge by smaller creation ID. Does not use any unfinished Python solution.",
+    "algorithm": "Per-letter compressed occurrence-position recolor trees with DSU color tokens; group-letter token table; representative owner and live counts.",
+    "complexity": "Amortized O(26*(N+Q)*log N) work with DSU inverse-Ackermann operations; O(N+26Q) auxiliary storage.",
+    "records": [
+      {
+        "language": "c",
+        "source": "solution.c",
+        "source_sha256": "7e602c3007f9dc4c4d374b3ecf5aee381aa4a1eed20359ff5f9d7830e3270672",
+        "execution_body_sha256": "f415c12464e080fcd3ab2cf7f8b4a6115ee8c1ae859631e28f6bc5b9a5bb3612",
+        "copied_code_exact": true,
+        "compilation": "passed",
+        "reference_cases": 9175,
+        "reference_case_run": {
+          "seconds_including_process_startup": 0.813268,
+          "peak_working_set_bytes": 5496832,
+          "output_lines": 97719
+        },
+        "maximum_stress": [
+          {
+            "name": "full_range_all_letters_max_token_capacity",
+            "n": 100000,
+            "queries": 200000,
+            "seconds_including_process_startup": 0.436936,
+            "peak_working_set_bytes": 104718336,
+            "output_lines": 2
+          },
+          {
+            "name": "fragment_every_position_merge_then_recolor",
+            "n": 99999,
+            "queries": 199999,
+            "seconds_including_process_startup": 0.419395,
+            "peak_working_set_bytes": 25677824,
+            "output_lines": 2
+          },
+          {
+            "name": "whole_group_moves_and_repeated_merge",
+            "n": 100000,
+            "queries": 200000,
+            "seconds_including_process_startup": 0.40504,
+            "peak_working_set_bytes": 23347200,
+            "output_lines": 3
+          }
+        ]
+      },
+      {
+        "language": "cpp",
+        "source": "solution.cpp",
+        "source_sha256": "028c481cb844670100663d336389cabf14a6c2dd465f150c4640816a245b8ae1",
+        "execution_body_sha256": "a285257914029b9d13977e523e3873874b72dba1166e6885fd4fc4bc84aedcbd",
+        "copied_code_exact": true,
+        "compilation": "passed",
+        "reference_cases": 9175,
+        "reference_case_run": {
+          "seconds_including_process_startup": 0.861499,
+          "peak_working_set_bytes": 5931008,
+          "output_lines": 97719
+        },
+        "maximum_stress": [
+          {
+            "name": "full_range_all_letters_max_token_capacity",
+            "n": 100000,
+            "queries": 200000,
+            "seconds_including_process_startup": 0.451873,
+            "peak_working_set_bytes": 124207104,
+            "output_lines": 2
+          },
+          {
+            "name": "fragment_every_position_merge_then_recolor",
+            "n": 99999,
+            "queries": 199999,
+            "seconds_including_process_startup": 0.426204,
+            "peak_working_set_bytes": 29171712,
+            "output_lines": 2
+          },
+          {
+            "name": "whole_group_moves_and_repeated_merge",
+            "n": 100000,
+            "queries": 200000,
+            "seconds_including_process_startup": 0.34049,
+            "peak_working_set_bytes": 27287552,
+            "output_lines": 3
+          }
+        ]
+      }
+    ],
+    "passed": true,
+    "online_submission_performed": false,
+    "repository_or_python_files_modified": false,
+    "limits": "Local correctness comparisons and Windows process peak working sets; no online grading was performed. Runtimes include process startup."
+  }
+}

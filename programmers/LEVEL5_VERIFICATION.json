@@ -1,0 +1,1126 @@
+{
+  "checked_on": "2026-10-24",
+  "scope": {
+    "level": 5,
+    "supported_c": 13,
+    "supported_cpp": 19,
+    "problem_language_pairs": 32
+  },
+  "priority": "acceptance_rate_desc_then_solved_desc",
+  "maximum_attempts_per_problem_language": 5,
+  "accepted": {
+    "C": 13,
+    "C++": 19,
+    "total": 32
+  },
+  "skipped_after_five": [],
+  "catalog_pages": [
+    {
+      "language": "cpp",
+      "url": "https://school.programmers.co.kr/learn/challenges?order=acceptance_desc&page=1&levels=5&languages=cpp"
+    },
+    {
+      "language": "c",
+      "url": "https://school.programmers.co.kr/learn/challenges?order=acceptance_desc&page=1&levels=5&languages=c"
+    }
+  ],
+  "official_catalog": [
+    {
+      "acceptance_rate": 8,
+      "id": 49190,
+      "level": 5,
+      "solved": 3316,
+      "title": "방의 개수",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/49190",
+      "priority": 1,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 5,
+      "id": 81305,
+      "level": 5,
+      "solved": 1241,
+      "title": "시험장 나누기",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/81305",
+      "priority": 2,
+      "languages": [
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 3,
+      "id": 68938,
+      "level": 5,
+      "solved": 274,
+      "title": "문자열의 아름다움",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/68938",
+      "priority": 3,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 3,
+      "id": 214292,
+      "level": 5,
+      "solved": 170,
+      "title": "재밌는 레이싱 경기장 설계하기",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/214292",
+      "priority": 4,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 3,
+      "id": 214293,
+      "level": 5,
+      "solved": 106,
+      "title": "중요한 도로",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/214293",
+      "priority": 5,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 2,
+      "id": 1834,
+      "level": 5,
+      "solved": 142,
+      "title": "신비로운 유적 탐험",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/1834",
+      "priority": 6,
+      "languages": [
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 2,
+      "id": 70132,
+      "level": 5,
+      "solved": 139,
+      "title": "가짜 해밀토니안",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/70132",
+      "priority": 7,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 2,
+      "id": 214291,
+      "level": 5,
+      "solved": 100,
+      "title": "집합과 쿼리",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/214291",
+      "priority": 8,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 2,
+      "id": 214294,
+      "level": 5,
+      "solved": 95,
+      "title": "빠른 이동",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/214294",
+      "priority": 9,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 1,
+      "id": 389632,
+      "level": 5,
+      "solved": 170,
+      "title": "문자열과 알파벳과 쿼리",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/389632",
+      "priority": 10,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 1,
+      "id": 12974,
+      "level": 5,
+      "solved": 158,
+      "title": "직사각형의 넓이",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/12974",
+      "priority": 11,
+      "languages": [
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 1,
+      "id": 87394,
+      "level": 5,
+      "solved": 104,
+      "title": "쿼리의 모음의 개수",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/87394",
+      "priority": 12,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 1,
+      "id": 389631,
+      "level": 5,
+      "solved": 103,
+      "title": "눈사람 만들기",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/389631",
+      "priority": 13,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 1,
+      "id": 76504,
+      "level": 5,
+      "solved": 100,
+      "title": "RPG와 쿼리",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/76504",
+      "priority": 14,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 1,
+      "id": 1840,
+      "level": 5,
+      "solved": 93,
+      "title": "스마트한 프로도",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/1840",
+      "priority": 15,
+      "languages": [
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 1,
+      "id": 77887,
+      "level": 5,
+      "solved": 87,
+      "title": "중력 작용",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/77887",
+      "priority": 16,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 1,
+      "id": 1842,
+      "level": 5,
+      "solved": 82,
+      "title": "네오의 귀걸이",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/1842",
+      "priority": 17,
+      "languages": [
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 1,
+      "id": 1841,
+      "level": 5,
+      "solved": 70,
+      "title": "IU와 콘의 보드게임",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/1841",
+      "priority": 18,
+      "languages": [
+        "cpp"
+      ]
+    },
+    {
+      "acceptance_rate": 0,
+      "id": 214295,
+      "level": 5,
+      "solved": 101,
+      "title": "미로 주행 테스트",
+      "url": "https://school.programmers.co.kr/learn/courses/30/lessons/214295",
+      "priority": 19,
+      "languages": [
+        "c",
+        "cpp"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": 49190,
+      "title": "방의 개수",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/001_49190_방의_개수",
+      "source": "C/level5/001_49190_방의_개수/solution.c",
+      "readme": "C/level5/001_49190_방의_개수/README.md",
+      "grading": "C/level5/001_49190_방의_개수/grading.json",
+      "local_checks": "C/level5/001_49190_방의_개수/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "bb4f26b43fa81cd9016502281b93e18e3d1ccaab519abea7ca89f662629017de",
+      "archive_execution_body_sha256": "70c9344a2f2824f0da8419adceb17fe3d7296331c87596cb68c79b9d51702d03",
+      "locked_template": false,
+      "priority": 1,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:15:12",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 59
+    },
+    {
+      "id": 49190,
+      "title": "방의 개수",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/001_49190_방의_개수",
+      "source": "C++/level5/001_49190_방의_개수/solution.cpp",
+      "readme": "C++/level5/001_49190_방의_개수/README.md",
+      "grading": "C++/level5/001_49190_방의_개수/grading.json",
+      "local_checks": "C++/level5/001_49190_방의_개수/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "9d5d5cc713ab123890f7d2deac98891c990ff28cb2e470cd3a3628d23eca381b",
+      "archive_execution_body_sha256": "23c4ed55ceef85a8f4aeb766fc823af1bf743c31fd9081c453004429601cb7b5",
+      "locked_template": false,
+      "priority": 1,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:16:15",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 32
+    },
+    {
+      "id": 81305,
+      "title": "시험장 나누기",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/002_81305_시험장_나누기",
+      "source": "C++/level5/002_81305_시험장_나누기/solution.cpp",
+      "readme": "C++/level5/002_81305_시험장_나누기/README.md",
+      "grading": "C++/level5/002_81305_시험장_나누기/grading.json",
+      "local_checks": "C++/level5/002_81305_시험장_나누기/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "b178a1c5bdc1b86aa6541f469538f8f8ef20381d324b2e0d6fa74250a876d80c",
+      "archive_execution_body_sha256": "6ab97576df188c8660374f21988d8fc2fc667646b01238e389484a4f0ef0380f",
+      "locked_template": false,
+      "priority": 2,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:16:27",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 54
+    },
+    {
+      "id": 68938,
+      "title": "문자열의 아름다움",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/003_68938_문자열의_아름다움",
+      "source": "C/level5/003_68938_문자열의_아름다움/solution.c",
+      "readme": "C/level5/003_68938_문자열의_아름다움/README.md",
+      "grading": "C/level5/003_68938_문자열의_아름다움/grading.json",
+      "local_checks": "C/level5/003_68938_문자열의_아름다움/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "f8e5add2cf9f9c71e027d12a83bdf6be6837a67ae4f1504adde40297e25bccdc",
+      "archive_execution_body_sha256": "e0d807fd65de34746ff49c68432f47824e82417b50f4474a2bec0ab88773ca21",
+      "locked_template": false,
+      "priority": 3,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:17:04",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 36
+    },
+    {
+      "id": 68938,
+      "title": "문자열의 아름다움",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/003_68938_문자열의_아름다움",
+      "source": "C++/level5/003_68938_문자열의_아름다움/solution.cpp",
+      "readme": "C++/level5/003_68938_문자열의_아름다움/README.md",
+      "grading": "C++/level5/003_68938_문자열의_아름다움/grading.json",
+      "local_checks": "C++/level5/003_68938_문자열의_아름다움/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "0ffc624d3e78ebb00cc9701dc05278077ceedb3459bc688851760bc3a3ccf8e0",
+      "archive_execution_body_sha256": "3dfcb3f2f569ce17cc3fc63aed14bffbb43b496c4c221bd1631f9f4ef3f02956",
+      "locked_template": false,
+      "priority": 3,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:17:15",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 36
+    },
+    {
+      "id": 214292,
+      "title": "재밌는 레이싱 경기장 설계하기",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/004_214292_재밌는_레이싱_경기장_설계하기",
+      "source": "C/level5/004_214292_재밌는_레이싱_경기장_설계하기/solution.c",
+      "readme": "C/level5/004_214292_재밌는_레이싱_경기장_설계하기/README.md",
+      "grading": "C/level5/004_214292_재밌는_레이싱_경기장_설계하기/grading.json",
+      "local_checks": "C/level5/004_214292_재밌는_레이싱_경기장_설계하기/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "741e6718fc9037cc44ab42b02f31520ee4e829eebc29f635d7b9c8c7f5b0c5bb",
+      "archive_execution_body_sha256": "39c0b2d8b97b2669ea7f2e474ac21300a80e3566c7814fe8d72e47369973b970",
+      "locked_template": false,
+      "priority": 4,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:23:48",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 21
+    },
+    {
+      "id": 214292,
+      "title": "재밌는 레이싱 경기장 설계하기",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/004_214292_재밌는_레이싱_경기장_설계하기",
+      "source": "C++/level5/004_214292_재밌는_레이싱_경기장_설계하기/solution.cpp",
+      "readme": "C++/level5/004_214292_재밌는_레이싱_경기장_설계하기/README.md",
+      "grading": "C++/level5/004_214292_재밌는_레이싱_경기장_설계하기/grading.json",
+      "local_checks": "C++/level5/004_214292_재밌는_레이싱_경기장_설계하기/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "92d2ece2f496be380a9a1f49ae1dd8e30be0af2ce61a7cac94aba1acc6ac7c42",
+      "archive_execution_body_sha256": "290c2dd047a204518ae4d6afc3fc6ec08331a116e440d20939cf1df27d6259a4",
+      "locked_template": false,
+      "priority": 4,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:23:53",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 20
+    },
+    {
+      "id": 214293,
+      "title": "중요한 도로",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/005_214293_중요한_도로",
+      "source": "C/level5/005_214293_중요한_도로/solution.c",
+      "readme": "C/level5/005_214293_중요한_도로/README.md",
+      "grading": "C/level5/005_214293_중요한_도로/grading.json",
+      "local_checks": "C/level5/005_214293_중요한_도로/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "3b258a23c6db50497c8fe374b6c5b47257762f4791903471c6a51d874b53be1f",
+      "archive_execution_body_sha256": "e16f369f2d93ad29b57b4cf141c08cd9b4a4d2c7177a9cb442cfcd8727f4968c",
+      "locked_template": false,
+      "priority": 5,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:25:25",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 116
+    },
+    {
+      "id": 214293,
+      "title": "중요한 도로",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/005_214293_중요한_도로",
+      "source": "C++/level5/005_214293_중요한_도로/solution.cpp",
+      "readme": "C++/level5/005_214293_중요한_도로/README.md",
+      "grading": "C++/level5/005_214293_중요한_도로/grading.json",
+      "local_checks": "C++/level5/005_214293_중요한_도로/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "c26532dc0972a57fff76751c73e100486ee75222078835e11958c6fe03dd93ac",
+      "archive_execution_body_sha256": "78dbdcc3d2fecd7f4958e32b7e5ec07598c8d8da5cda39ff0331078089227579",
+      "locked_template": false,
+      "priority": 5,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:25:30",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 75
+    },
+    {
+      "id": 1834,
+      "title": "신비로운 유적 탐험",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/006_1834_신비로운_유적_탐험",
+      "source": "C++/level5/006_1834_신비로운_유적_탐험/solution.cpp",
+      "readme": "C++/level5/006_1834_신비로운_유적_탐험/README.md",
+      "grading": "C++/level5/006_1834_신비로운_유적_탐험/grading.json",
+      "local_checks": "C++/level5/006_1834_신비로운_유적_탐험/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "3c3c583e7a2d7696835a44b55c551a2f7d903a381c88e25f4a2950beb4bd629b",
+      "archive_execution_body_sha256": "2625d7c0dc010b26b401ef80da825927b6c19418e54fb2098515ca59636dfd6c",
+      "locked_template": false,
+      "priority": 6,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:27:04",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 101
+    },
+    {
+      "id": 70132,
+      "title": "가짜 해밀토니안",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/007_70132_가짜_해밀토니안",
+      "source": "C/level5/007_70132_가짜_해밀토니안/solution.c",
+      "readme": "C/level5/007_70132_가짜_해밀토니안/README.md",
+      "grading": "C/level5/007_70132_가짜_해밀토니안/grading.json",
+      "local_checks": "C/level5/007_70132_가짜_해밀토니안/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "83ac7a34ae4c9a80e5811c75563bb525a42aa7365ef5efd87daa55ab062e608c",
+      "archive_execution_body_sha256": "bf51db0503d7f71806482238ff081cfcaedee3b79f90de3d3757f4f14346064c",
+      "locked_template": false,
+      "priority": 7,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:30:00",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 96
+    },
+    {
+      "id": 70132,
+      "title": "가짜 해밀토니안",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/007_70132_가짜_해밀토니안",
+      "source": "C++/level5/007_70132_가짜_해밀토니안/solution.cpp",
+      "readme": "C++/level5/007_70132_가짜_해밀토니안/README.md",
+      "grading": "C++/level5/007_70132_가짜_해밀토니안/grading.json",
+      "local_checks": "C++/level5/007_70132_가짜_해밀토니안/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "e4a075639c06fc388347977f16e3ae41b353aa88bdd72549cd98d5bbecb8271b",
+      "archive_execution_body_sha256": "a31c33000ca21db0f310496d1ca89cf700d983bd7df2cb7de446ca8599115d49",
+      "locked_template": false,
+      "priority": 7,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:30:05",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 63
+    },
+    {
+      "id": 214291,
+      "title": "집합과 쿼리",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/008_214291_집합과_쿼리",
+      "source": "C/level5/008_214291_집합과_쿼리/solution.c",
+      "readme": "C/level5/008_214291_집합과_쿼리/README.md",
+      "grading": "C/level5/008_214291_집합과_쿼리/grading.json",
+      "local_checks": "C/level5/008_214291_집합과_쿼리/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "8c0c590147cd9605fd77fc3dadc63f14fd529043570c0c439a42521958916284",
+      "archive_execution_body_sha256": "2ed9703fddc0e71dc7cfef0b1c3558368216a124a466e8a0c71d8208e4668a24",
+      "locked_template": false,
+      "priority": 8,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:32:41",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 105
+    },
+    {
+      "id": 214291,
+      "title": "집합과 쿼리",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/008_214291_집합과_쿼리",
+      "source": "C++/level5/008_214291_집합과_쿼리/solution.cpp",
+      "readme": "C++/level5/008_214291_집합과_쿼리/README.md",
+      "grading": "C++/level5/008_214291_집합과_쿼리/grading.json",
+      "local_checks": "C++/level5/008_214291_집합과_쿼리/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "6c6de3fe47f70b31f31b5505b78583f4ca5909c68ab291fe2349fb920851c2ad",
+      "archive_execution_body_sha256": "f3db06d7dbe14bd2e6b7fcc207fa99733e42a9653b24f8a3b1ccc6bce96ed5a5",
+      "locked_template": false,
+      "priority": 8,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:32:46",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 101
+    },
+    {
+      "id": 214294,
+      "title": "빠른 이동",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/009_214294_빠른_이동",
+      "source": "C/level5/009_214294_빠른_이동/solution.c",
+      "readme": "C/level5/009_214294_빠른_이동/README.md",
+      "grading": "C/level5/009_214294_빠른_이동/grading.json",
+      "local_checks": "C/level5/009_214294_빠른_이동/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "91f5c28b0833b37c2a887bb19f7a7310728b8d9304e0ac93fb964bc5f31115f9",
+      "archive_execution_body_sha256": "0fca8026c71ab43a8b7f55cc0533822ec87234cda85d1fd6d8e2e657d66914ca",
+      "locked_template": false,
+      "priority": 9,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:39:44",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 64
+    },
+    {
+      "id": 214294,
+      "title": "빠른 이동",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/009_214294_빠른_이동",
+      "source": "C++/level5/009_214294_빠른_이동/solution.cpp",
+      "readme": "C++/level5/009_214294_빠른_이동/README.md",
+      "grading": "C++/level5/009_214294_빠른_이동/grading.json",
+      "local_checks": "C++/level5/009_214294_빠른_이동/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "0d3d1a8240e86bcef1c9af4aace348a8587a1b4e336c14688a777e07d5013ceb",
+      "archive_execution_body_sha256": "e37c4b6197fd19c1c2e499ac19e25853d81023217c5d9906b1df579277d07073",
+      "locked_template": false,
+      "priority": 9,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:39:49",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 56
+    },
+    {
+      "id": 389632,
+      "title": "문자열과 알파벳과 쿼리",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/010_389632_문자열과_알파벳과_쿼리",
+      "source": "C/level5/010_389632_문자열과_알파벳과_쿼리/solution.c",
+      "readme": "C/level5/010_389632_문자열과_알파벳과_쿼리/README.md",
+      "grading": "C/level5/010_389632_문자열과_알파벳과_쿼리/grading.json",
+      "local_checks": "C/level5/010_389632_문자열과_알파벳과_쿼리/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "7e602c3007f9dc4c4d374b3ecf5aee381aa4a1eed20359ff5f9d7830e3270672",
+      "archive_execution_body_sha256": "1632faf5e98e349e0c1c201f1007916b49c908b01e518accb5b3ea17fe773bf3",
+      "locked_template": false,
+      "priority": 10,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:40:23",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 210
+    },
+    {
+      "id": 389632,
+      "title": "문자열과 알파벳과 쿼리",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/010_389632_문자열과_알파벳과_쿼리",
+      "source": "C++/level5/010_389632_문자열과_알파벳과_쿼리/solution.cpp",
+      "readme": "C++/level5/010_389632_문자열과_알파벳과_쿼리/README.md",
+      "grading": "C++/level5/010_389632_문자열과_알파벳과_쿼리/grading.json",
+      "local_checks": "C++/level5/010_389632_문자열과_알파벳과_쿼리/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "028c481cb844670100663d336389cabf14a6c2dd465f150c4640816a245b8ae1",
+      "archive_execution_body_sha256": "08eb37be52e5cb3c90a587128b1c3d88ae0bb6572e456df1d95b53832fd9eee6",
+      "locked_template": false,
+      "priority": 10,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:40:29",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 222
+    },
+    {
+      "id": 12974,
+      "title": "직사각형의 넓이",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/011_12974_직사각형의_넓이",
+      "source": "C++/level5/011_12974_직사각형의_넓이/solution.cpp",
+      "readme": "C++/level5/011_12974_직사각형의_넓이/README.md",
+      "grading": "C++/level5/011_12974_직사각형의_넓이/grading.json",
+      "local_checks": "C++/level5/011_12974_직사각형의_넓이/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "d1d4215452b40ca5e96c3c3b7798b0bd754c4959e3efc07b21b55c30489544f7",
+      "archive_execution_body_sha256": "548ec3ba3d82133642c7e16060d010a4f1d377455abfb57e68fbaeda100ff594",
+      "locked_template": false,
+      "priority": 11,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:41:29",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 49
+    },
+    {
+      "id": 87394,
+      "title": "쿼리의 모음의 개수",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/012_87394_쿼리의_모음의_개수",
+      "source": "C/level5/012_87394_쿼리의_모음의_개수/solution.c",
+      "readme": "C/level5/012_87394_쿼리의_모음의_개수/README.md",
+      "grading": "C/level5/012_87394_쿼리의_모음의_개수/grading.json",
+      "local_checks": "C/level5/012_87394_쿼리의_모음의_개수/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "d6342e0336a25c1c47d03a93e2f39bcee7a7909b9b13c5ef6c16e2948efd2a44",
+      "archive_execution_body_sha256": "1f8bd0e8dcdac005fd567a74b51692fb4627b1d46df618990774af84b3852590",
+      "locked_template": false,
+      "priority": 12,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:41:34",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 84
+    },
+    {
+      "id": 87394,
+      "title": "쿼리의 모음의 개수",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/012_87394_쿼리의_모음의_개수",
+      "source": "C++/level5/012_87394_쿼리의_모음의_개수/solution.cpp",
+      "readme": "C++/level5/012_87394_쿼리의_모음의_개수/README.md",
+      "grading": "C++/level5/012_87394_쿼리의_모음의_개수/grading.json",
+      "local_checks": "C++/level5/012_87394_쿼리의_모음의_개수/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "59c3cc28029bbe0ceb95bffe2579b1facf3fcbb9d3cec84777602e363189f9cd",
+      "archive_execution_body_sha256": "1bc44bd85717d2e29eec46e9e6d3b48314da0ffd1b23715a47099a4d3f320e3f",
+      "locked_template": false,
+      "priority": 12,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:42:24",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 78
+    },
+    {
+      "id": 389631,
+      "title": "눈사람 만들기",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/013_389631_눈사람_만들기",
+      "source": "C/level5/013_389631_눈사람_만들기/solution.c",
+      "readme": "C/level5/013_389631_눈사람_만들기/README.md",
+      "grading": "C/level5/013_389631_눈사람_만들기/grading.json",
+      "local_checks": "C/level5/013_389631_눈사람_만들기/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "15163ae9dbc0874d61f8d0afa022721b033874ef836a0d0cf87dc9a4add69fd3",
+      "archive_execution_body_sha256": "56e80cb2319e4c136ec268e144154f263d1ac00d9b03514a28118e56425cf645",
+      "locked_template": false,
+      "priority": 13,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:52:35",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 82
+    },
+    {
+      "id": 389631,
+      "title": "눈사람 만들기",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/013_389631_눈사람_만들기",
+      "source": "C++/level5/013_389631_눈사람_만들기/solution.cpp",
+      "readme": "C++/level5/013_389631_눈사람_만들기/README.md",
+      "grading": "C++/level5/013_389631_눈사람_만들기/grading.json",
+      "local_checks": "C++/level5/013_389631_눈사람_만들기/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "6cb2eb151eb6b544e7c6363b5b819d9ca24e0eeb22fa5fd82ec891c8529770ad",
+      "archive_execution_body_sha256": "2d47be233d780117eb165635e870600fcc7453a2c928ff20362ed1c3a27ca9e3",
+      "locked_template": false,
+      "priority": 13,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:52:40",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 72
+    },
+    {
+      "id": 76504,
+      "title": "RPG와 쿼리",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/014_76504_RPG와_쿼리",
+      "source": "C/level5/014_76504_RPG와_쿼리/solution.c",
+      "readme": "C/level5/014_76504_RPG와_쿼리/README.md",
+      "grading": "C/level5/014_76504_RPG와_쿼리/grading.json",
+      "local_checks": "C/level5/014_76504_RPG와_쿼리/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "ab90f79b05dac890dbaf182fc6d4b0642e0659704f48b5f8574e003772dead52",
+      "archive_execution_body_sha256": "8e9d2773ea707d847368a39168235976ea9346dc3453ab75b0c2a2d39bedf00b",
+      "locked_template": false,
+      "priority": 14,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:52:54",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 45
+    },
+    {
+      "id": 76504,
+      "title": "RPG와 쿼리",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/014_76504_RPG와_쿼리",
+      "source": "C++/level5/014_76504_RPG와_쿼리/solution.cpp",
+      "readme": "C++/level5/014_76504_RPG와_쿼리/README.md",
+      "grading": "C++/level5/014_76504_RPG와_쿼리/grading.json",
+      "local_checks": "C++/level5/014_76504_RPG와_쿼리/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "2ead1b42dd74c4c0bae9d0fe9d9be45eea966bf47348cd56dae51467d73bfc4b",
+      "archive_execution_body_sha256": "e1b05c6be1b0cf822b3235729220736b0ef8cb3d6bf1369c07aa1e87cd19212c",
+      "locked_template": false,
+      "priority": 14,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:52:59",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 51
+    },
+    {
+      "id": 1840,
+      "title": "스마트한 프로도",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/015_1840_스마트한_프로도",
+      "source": "C++/level5/015_1840_스마트한_프로도/solution.cpp",
+      "readme": "C++/level5/015_1840_스마트한_프로도/README.md",
+      "grading": "C++/level5/015_1840_스마트한_프로도/grading.json",
+      "local_checks": "C++/level5/015_1840_스마트한_프로도/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "ad5f9ba6cd9d53327d072067b1cf71a6f8b06c7c422e84d0d3e0188169ffd481",
+      "archive_execution_body_sha256": "d5bfd6fd931cb47a6f4c04d565cb2d8e5b80edd5cfabc241070aac6e67415afc",
+      "locked_template": false,
+      "priority": 15,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:54:15",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 55
+    },
+    {
+      "id": 77887,
+      "title": "중력 작용",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/016_77887_중력_작용",
+      "source": "C/level5/016_77887_중력_작용/solution.c",
+      "readme": "C/level5/016_77887_중력_작용/README.md",
+      "grading": "C/level5/016_77887_중력_작용/grading.json",
+      "local_checks": "C/level5/016_77887_중력_작용/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "546d55d7e17b4819448b56451088e5941e2dfb2f7fdea065c5b2fb2e7aa0ec17",
+      "archive_execution_body_sha256": "7942d6b5f8c1f5adb2f8941a4f2a5f2841c541ebe1d723830f6e840a7ecd4b46",
+      "locked_template": false,
+      "priority": 16,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:55:03",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 156
+    },
+    {
+      "id": 77887,
+      "title": "중력 작용",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/016_77887_중력_작용",
+      "source": "C++/level5/016_77887_중력_작용/solution.cpp",
+      "readme": "C++/level5/016_77887_중력_작용/README.md",
+      "grading": "C++/level5/016_77887_중력_작용/grading.json",
+      "local_checks": "C++/level5/016_77887_중력_작용/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "47f60a37403cbca83199d99e02aa02075f756b036756eddc05f0788b8dd0539e",
+      "archive_execution_body_sha256": "d658f0b4afdf92939ef69ecff0a6aefe859e0ad9441bd0ee56355220ebfa4ef1",
+      "locked_template": false,
+      "priority": 16,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:55:08",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 143
+    },
+    {
+      "id": 1842,
+      "title": "네오의 귀걸이",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/017_1842_네오의_귀걸이",
+      "source": "C++/level5/017_1842_네오의_귀걸이/solution.cpp",
+      "readme": "C++/level5/017_1842_네오의_귀걸이/README.md",
+      "grading": "C++/level5/017_1842_네오의_귀걸이/grading.json",
+      "local_checks": "C++/level5/017_1842_네오의_귀걸이/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "84173a08b5cf5d29994604eaa87ddf568feef608a34e06cea55dbfb92324fe5e",
+      "archive_execution_body_sha256": "cb90e5924219619b771507ca3f41c71ef29b0926db311e580b9e7bf252e20a79",
+      "locked_template": false,
+      "priority": 17,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:55:44",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 133
+    },
+    {
+      "id": 1841,
+      "title": "IU와 콘의 보드게임",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/018_1841_IU와_콘의_보드게임",
+      "source": "C++/level5/018_1841_IU와_콘의_보드게임/solution.cpp",
+      "readme": "C++/level5/018_1841_IU와_콘의_보드게임/README.md",
+      "grading": "C++/level5/018_1841_IU와_콘의_보드게임/grading.json",
+      "local_checks": "C++/level5/018_1841_IU와_콘의_보드게임/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "975c0df25b2843f7e1b4fcd2fde73d5f0da582b5079d414129b2258fc596b9f2",
+      "archive_execution_body_sha256": "63603b22f2e588555ff11830eb4d07dcdf3a56059f102d19317dbd54b137aab0",
+      "locked_template": false,
+      "priority": 18,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:56:21",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 58
+    },
+    {
+      "id": 214295,
+      "title": "미로 주행 테스트",
+      "level": 5,
+      "language": "C",
+      "directory": "C/level5/019_214295_미로_주행_테스트",
+      "source": "C/level5/019_214295_미로_주행_테스트/solution.c",
+      "readme": "C/level5/019_214295_미로_주행_테스트/README.md",
+      "grading": "C/level5/019_214295_미로_주행_테스트/grading.json",
+      "local_checks": "C/level5/019_214295_미로_주행_테스트/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "19e53b92905f54799af7f72e6942658b0e86c0d5ef2d0678e08bc5de912707c2",
+      "archive_execution_body_sha256": "45085baad805040fe41ef4fbe5337540a08ea8d592974dcb70fd555e6ed5786e",
+      "locked_template": false,
+      "priority": 19,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:56:53",
+          "language": "C",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 159
+    },
+    {
+      "id": 214295,
+      "title": "미로 주행 테스트",
+      "level": 5,
+      "language": "C++",
+      "directory": "C++/level5/019_214295_미로_주행_테스트",
+      "source": "C++/level5/019_214295_미로_주행_테스트/solution.cpp",
+      "readme": "C++/level5/019_214295_미로_주행_테스트/README.md",
+      "grading": "C++/level5/019_214295_미로_주행_테스트/grading.json",
+      "local_checks": "C++/level5/019_214295_미로_주행_테스트/local_checks.json",
+      "score": 100,
+      "archive_source_sha256": "99c8c942617a687b41f94e07e26bce52bb383a84f00d14502cc1ec2d5d90276f",
+      "archive_execution_body_sha256": "14dd14a3d213f3ccc7d2a142921c8665955590c4c5d9f87c4ff91a8c0fcdaca8",
+      "locked_template": false,
+      "priority": 19,
+      "attempts": 1,
+      "accepted_history_rows": [
+        {
+          "submitted_at": "2026-10-24 09:56:58",
+          "language": "C++",
+          "result": "정답",
+          "score": 100
+        }
+      ],
+      "executable_nonempty_lines": 162
+    }
+  ],
+  "preservation": {
+    "base_commit": "ad813b997b31e7792526f0b5e5d29779178ae70d",
+    "existing_python_files": 1732,
+    "python_files_changed": 0,
+    "baseline_tracked_files": 8342,
+    "changed_existing_files": [
+      "programmers/C++/README.md",
+      "programmers/C++/catalog.json",
+      "programmers/C/README.md",
+      "programmers/C/catalog.json",
+      "programmers/README.md"
+    ],
+    "level0_to_4_solution_files_changed": 0
+  },
+  "verification": {
+    "site_judge": true,
+    "language_specific_submission_history": true,
+    "saved_submission_source_hashes": true,
+    "all_executable_lines_annotated": true,
+    "method_summaries_present": true,
+    "local_checks_separate": true
+  }
+}

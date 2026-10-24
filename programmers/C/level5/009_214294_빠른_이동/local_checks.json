@@ -1,0 +1,91 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "problem_id": 214294,
+    "status": "local_validation_passed_not_site_graded",
+    "compiler": {
+      "c": "C11, Zig cc -O2 shared wrapper",
+      "cpp": "C++17, Zig c++ -O2 shared wrapper"
+    },
+    "official_examples": 5,
+    "targeted_reachability_case": 1,
+    "exhaustive_reachable_directed_graphs_n2_to_4": 2466,
+    "random_reachable_graphs_n2_to_8": 3000,
+    "maximum_constraint_cases": 8,
+    "cases_per_language": 5480,
+    "language_case_comparisons": 10960,
+    "independent_oracle": "0-1 BFS on (visited bitmask, current vertex), normal roads cost 0, teleport to previously visited vertex costs 1",
+    "large_case_timings": [
+      {
+        "label": "500_vertex_chain",
+        "n": 500,
+        "roads": 499,
+        "expected": 0,
+        "seconds_both_languages": 0.001417
+      },
+      {
+        "label": "500_vertex_star",
+        "n": 500,
+        "roads": 499,
+        "expected": 498,
+        "seconds_both_languages": 0.001331
+      },
+      {
+        "label": "500_vertex_single_SCC",
+        "n": 500,
+        "roads": 500,
+        "expected": 0,
+        "seconds_both_languages": 0.001674
+      },
+      {
+        "label": "500_vertex_permuted_chain",
+        "n": 500,
+        "roads": 499,
+        "expected": 0,
+        "seconds_both_languages": 0.062497
+      },
+      {
+        "label": "100000_edge_DAG_with_Hamiltonian_chain",
+        "n": 500,
+        "roads": 100000,
+        "expected": 0,
+        "seconds_both_languages": 0.052825
+      },
+      {
+        "label": "merging_splitting_layers_require_reachability",
+        "n": 500,
+        "roads": 748,
+        "expected": 249,
+        "seconds_both_languages": 0.015761
+      },
+      {
+        "label": "100_five_vertex_SCCs_in_star",
+        "n": 500,
+        "roads": 599,
+        "expected": 98,
+        "seconds_both_languages": 0.000595
+      },
+      {
+        "label": "100000_edge_strongly_connected_graph",
+        "n": 500,
+        "roads": 100000,
+        "expected": 0,
+        "seconds_both_languages": 0.053668
+      }
+    ],
+    "sources": {
+      "c": {
+        "sha256": "91f5c28b0833b37c2a887bb19f7a7310728b8d9304e0ac93fb964bc5f31115f9",
+        "execution_body_sha256": "ea4302364f68b4a872096e250f7705fa257c08c5e711c0e4f68229e666e2310e",
+        "copied_code_exact": true
+      },
+      "cpp": {
+        "sha256": "0d3d1a8240e86bcef1c9af4aace348a8587a1b4e336c14688a777e07d5013ceb",
+        "execution_body_sha256": "9c3dbc4118a2666d1c4ddbd8c4fffba81de999198cda9edad98ff225446af0f6",
+        "copied_code_exact": true
+      }
+    },
+    "seconds_total": 1.654
+  }
+}

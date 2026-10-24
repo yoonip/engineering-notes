@@ -1,0 +1,54 @@
+{
+  "id": 1842,
+  "title": "네오의 귀걸이",
+  "level": 5,
+  "language": "C++",
+  "url": "https://school.programmers.co.kr/learn/courses/30/lessons/1842?language=cpp",
+  "checked_on": "2026-10-24",
+  "verification": "actual_online_judge_and_submission_history",
+  "status": "accepted",
+  "score": 100,
+  "maximum_score": 100,
+  "attempt_count": 1,
+  "max_attempts_per_problem_language": 5,
+  "accepted_attempt": 1,
+  "submitted_at_utc": "2026-10-24T00:55:42.552Z",
+  "grading_result_observed_at_utc": "2026-10-24T00:56:16.068Z",
+  "accepted_history_rows": [
+    {
+      "submitted_at": "2026-10-24 09:55:44",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source_sha256": "84173a08b5cf5d29994604eaa87ddf568feef608a34e06cea55dbfb92324fe5e",
+  "archive_execution_body_sha256": "cb90e5924219619b771507ca3f41c71ef29b0926db311e580b9e7bf252e20a79",
+  "submitted_normalized_lf_sha256": "2a3b697d270c099a329f32cd318f6a8cdc651a053d3d00c0d70687dc7e0c4921",
+  "comments_and_summary_submitted": true,
+  "archive_matches_saved_submission": true,
+  "input_normalization": "The saved source was submitted after CRLF-to-LF normalization.",
+  "executable_nonempty_lines": 133,
+  "annotated_nonempty_lines": 133,
+  "commented_copy_exact": true,
+  "final_result_evidence": "final_judge_screen_and_language_specific_accepted_100_history",
+  "final_judge_tests": [
+    "테스트 1 〉 통과 (0.01ms, 4.92MB)",
+    "테스트 2 〉 통과 (65.25ms, 57.6MB)",
+    "테스트 3 〉 통과 (64.57ms, 57.4MB)",
+    "테스트 4 〉 통과 (53.17ms, 54.2MB)",
+    "테스트 5 〉 통과 (56.37ms, 57MB)"
+  ],
+  "test_detail_note": "최종 채점 화면에 표시된 테스트별 통과 내역입니다.",
+  "attempts": [
+    {
+      "number": 1,
+      "submitted_at_utc": "2026-10-24T00:55:42.552Z",
+      "result_observed_at_utc": "2026-10-24T00:56:16.068Z",
+      "status": "accepted",
+      "score": 100,
+      "source_sha256": "84173a08b5cf5d29994604eaa87ddf568feef608a34e06cea55dbfb92324fe5e"
+    }
+  ],
+  "local_checks": "local_checks.json"
+}

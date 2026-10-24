@@ -1,0 +1,131 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "id": 87394,
+    "title": "쿼리의 모음의 개수",
+    "checked_at": "2026-10-24T00:33:34.848Z",
+    "status": "local_candidate_validation",
+    "online_submissions": 0,
+    "source_sha256": {
+      "c": "d6342e0336a25c1c47d03a93e2f39bcee7a7909b9b13c5ef6c16e2948efd2a44",
+      "cpp": "59c3cc28029bbe0ceb95bffe2579b1facf3fcbb9d3cec84777602e363189f9cd"
+    },
+    "execution_body_sha256": {
+      "c": "3cc479931e2bb3655f6e202467a52b465ce9dd07c5d3b7f0c7f93b1db099f3f7",
+      "cpp": "effafe6ec4664f830e73c754f3298dbc7f2afd02016b965706b53944fdd72c05"
+    },
+    "compiler": "<local-runtime>/zig.exe",
+    "compilation": {
+      "c": {
+        "standard": "c11",
+        "stderr": "",
+        "elapsed_ms": 382
+      },
+      "cpp": {
+        "standard": "c++17",
+        "stderr": "",
+        "elapsed_ms": 1085
+      }
+    },
+    "exact_comment_copies": true,
+    "algorithm": "Cartesian-minimum interval decomposition; inclusion-exclusion over uncovered minimum positions via gap exponential generating functions; polynomial products truncated at q.",
+    "complexity": {
+      "time": "O(n^2*q^2)",
+      "space": "O(n*q)"
+    },
+    "independent_small_oracle": "Enumerate every safe query(l,r,x); DP over every bounded array state from all-zero state, preserving query ordering and repetitions.",
+    "independent_large_value_oracle": "Direct inclusion-exclusion over all uncovered-position subsets; safe alphabet size is sum of interval minima minus one for each interval whose minimum-position mask intersects the selected subset.",
+    "exhaustive_arrays": 363,
+    "exhaustive_array_lengths": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "exhaustive_values": [
+      1,
+      2,
+      3
+    ],
+    "exhaustive_queries": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "large_value_direct_ie_cases": 400,
+    "uniform_shift_cases": 100,
+    "official_examples": [
+      {
+        "q": 2,
+        "a": [
+          1,
+          2
+        ],
+        "expected": 4
+      },
+      {
+        "q": 3,
+        "a": [
+          3
+        ],
+        "expected": 19
+      },
+      {
+        "q": 5,
+        "a": [
+          1,
+          4,
+          4
+        ],
+        "expected": 157740
+      },
+      {
+        "q": 50,
+        "a": [
+          1,
+          6,
+          5,
+          2,
+          4
+        ],
+        "expected": 61953538
+      }
+    ],
+    "outcomes": {
+      "c": {
+        "tests": 2997,
+        "passed": 2997,
+        "failed": 0,
+        "elapsed_ms": 756,
+        "failures": []
+      },
+      "cpp": {
+        "tests": 2997,
+        "passed": 2997,
+        "failed": 0,
+        "elapsed_ms": 1108,
+        "failures": []
+      }
+    },
+    "maximum_equal_height_stress": {
+      "n": 50,
+      "q": 50,
+      "oracle": "Direct signed distribution of safe-alphabet sizes over all gap compositions; evaluate each size to the qth power. This does not use truncated exponential series or factorial restoration.",
+      "cases": [
+        {
+          "height": 1,
+          "expected": 13988435
+        },
+        {
+          "height": 100000,
+          "expected": 27995009
+        }
+      ]
+    }
+  }
+}

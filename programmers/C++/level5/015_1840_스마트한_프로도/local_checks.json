@@ -1,0 +1,17 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "id": 1840,
+    "language": "C++",
+    "verification": "local_candidate_validation",
+    "official_examples": 1,
+    "exhaustive_small_cases": 10175,
+    "random_matching_pairs": 4000,
+    "maximum_size_cases": 1,
+    "total": 14177,
+    "passed": 14177,
+    "oracle": "Replay every operation, checking valid matching, size >= k-2 after every step, and exact target matching at the end.",
+    "source_sha256": "ad5f9ba6cd9d53327d072067b1cf71a6f8b06c7c422e84d0d3e0188169ffd481"
+  }
+}

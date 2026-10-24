@@ -1,0 +1,167 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "id": 70132,
+    "title": "가짜 해밀토니안",
+    "checked_at": "2026-10-24T00:26:06.325Z",
+    "status": "local_candidate_validation",
+    "online_submissions": 0,
+    "source_sha256": {
+      "c": "83ac7a34ae4c9a80e5811c75563bb525a42aa7365ef5efd87daa55ab062e608c",
+      "cpp": "e4a075639c06fc388347977f16e3ae41b353aa88bdd72549cd98d5bbecb8271b"
+    },
+    "compiler": "<local-runtime>/zig.exe",
+    "compilation": {
+      "c": {
+        "standard": "c11",
+        "stderr": "",
+        "elapsed_ms": 253
+      },
+      "cpp": {
+        "standard": "c++17",
+        "stderr": "",
+        "elapsed_ms": 1056
+      }
+    },
+    "exact_comment_copies": true,
+    "algorithm": "Iterative O(N) tree DP: downward line, parent-on-spine stem, parent-off-spine branch, with constant-size child knapsack.",
+    "independent_oracle": "Multi-source exhaustive walk search over (current vertex, per-vertex visit count 0/1/2); no structural degree criterion or tree DP is used by this oracle.",
+    "all_labelled_small_trees": 1440,
+    "exhaustive_vertex_sizes": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "random_exact_walk_cases": 2500,
+    "random_vertex_sizes": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "official_examples": [
+      {
+        "label": "official_1",
+        "n": 7,
+        "edges": [
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "expected": 7
+      },
+      {
+        "label": "official_2",
+        "n": 6,
+        "edges": [
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "expected": 4
+      }
+    ],
+    "large_cases": [
+      {
+        "label": "maximum_chain",
+        "n": 200000,
+        "expected": 200000
+      },
+      {
+        "label": "maximum_star",
+        "n": 200000,
+        "expected": 4
+      },
+      {
+        "label": "maximum_comb_all_vertices",
+        "n": 200000,
+        "expected": 200000
+      },
+      {
+        "label": "maximum_two_hubs",
+        "n": 200000,
+        "expected": 6
+      },
+      {
+        "label": "maximum_four_long_arms",
+        "n": 200000,
+        "expected": 150001
+      },
+      {
+        "label": "complete_binary_height17",
+        "n": 131071,
+        "expected": 273
+      },
+      {
+        "label": "maximum_broom",
+        "n": 200000,
+        "expected": 199992
+      }
+    ],
+    "outcomes": {
+      "c": {
+        "tests": 3951,
+        "passed": 3951,
+        "failed": 0,
+        "elapsed_ms": 1004,
+        "failures": []
+      },
+      "cpp": {
+        "tests": 3951,
+        "passed": 3951,
+        "failed": 0,
+        "elapsed_ms": 3044,
+        "failures": []
+      }
+    },
+    "execution_body_sha256": {
+      "c": "16881ecbce7fab3350d0937d0e9d2140431a044c3639ca9eb34e82a9df43b6a9",
+      "cpp": "9751f76edc14ad95e4376ae9e122cfeba1db227f6c2a0050b6be90c2e969c36f"
+    },
+    "post_validation_changes": "Clarified distinct walk endpoints in summary only; executable bodies equal compiled tested sources."
+  }
+}

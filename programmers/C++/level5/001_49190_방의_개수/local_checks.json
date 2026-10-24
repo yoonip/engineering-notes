@@ -1,0 +1,85 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "id": 49190,
+    "title": "방의 개수",
+    "checked_at": "2026-10-24T00:14:15.558Z",
+    "status": "local_candidate_validation",
+    "online_submissions": 0,
+    "compiler": "<local-runtime>/zig.exe",
+    "build_directory": "C:\\Users\\test2\\AppData\\Local\\Temp\\programmers_49190_c_training",
+    "source_sha256": {
+      "c": "bb4f26b43fa81cd9016502281b93e18e3d1ccaab519abea7ca89f662629017de",
+      "cpp": "9d5d5cc713ab123890f7d2deac98891c990ff28cb2e470cd3a3628d23eca381b"
+    },
+    "exact_comment_copies": true,
+    "official_example": {
+      "arrows": [
+        6,
+        6,
+        6,
+        4,
+        4,
+        4,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        1,
+        6,
+        5,
+        5,
+        3,
+        6,
+        0
+      ],
+      "expected": 3
+    },
+    "independent_small_oracle": "Original unit segments are intersected pairwise, subdivided at exact crossings, then bounded faces are E - V + 1.",
+    "large_oracle": "Known straight/retrace answers and doubled graph E - V + 1 for two maximum-length random walks.",
+    "exhaustive_lengths": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "random_small_cases": 2000,
+    "maximum_length_cases": 12,
+    "outcomes": {
+      "c": {
+        "tests": 39466,
+        "passed": 39466,
+        "failed": 0,
+        "elapsed_ms": 5736,
+        "failures": []
+      },
+      "cpp": {
+        "tests": 39466,
+        "passed": 39466,
+        "failed": 0,
+        "elapsed_ms": 4848,
+        "failures": []
+      }
+    },
+    "existing_python_comparison": {
+      "tests": 39454,
+      "passed": 39454
+    },
+    "python_preservation": [
+      {
+        "file": "<workspace>\\programmers\\level5\\extra_49190_방의_개수\\solution.py",
+        "sha256": "7346dfdb1d2b239e26a1b47c1a374624980516765107392b766eb0a90c80022e",
+        "unchanged": true
+      },
+      {
+        "file": "<workspace>\\output\\engineering-notes-publish-v10\\programmers\\Python\\level5\\extra_49190_방의_개수\\solution.py",
+        "sha256": "7346dfdb1d2b239e26a1b47c1a374624980516765107392b766eb0a90c80022e",
+        "unchanged": true
+      }
+    ]
+  }
+}

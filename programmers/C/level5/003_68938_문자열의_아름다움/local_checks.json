@@ -1,0 +1,112 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "checked_at_utc": "2026-10-24T00:15:29.138420+00:00",
+    "problem_id": 68938,
+    "official_examples": {
+      "baby": 9,
+      "oo": 0
+    },
+    "exhaustive_cases": 7373,
+    "exhaustive_scope": [
+      "all ab strings of length1..11",
+      "all abc strings of length1..7"
+    ],
+    "random_cases": 2000,
+    "seed": 68938,
+    "additional_edge_cases": 6,
+    "reference": "For every substring, extend its right endpoint and compare it with the earliest occurrence of every other letter; maintain the maximum distinct-letter distance directly.",
+    "complexity": {
+      "time": "O(N)",
+      "auxiliary_space": "O(N)",
+      "maximum_count_array_bytes": "at most (N+26)*8 = 2400208 bytes for N300000"
+    },
+    "records": [
+      {
+        "language": "c",
+        "source": "solution.c",
+        "source_sha256": "f8e5add2cf9f9c71e027d12a83bdf6be6837a67ae4f1504adde40297e25bccdc",
+        "execution_body_sha256": "7a41aa77fe09b5fe5dcb2016ead6b7a3ea2d27e9a8c2ded54d5d5b3a8d4595a1",
+        "copied_code_exact": true,
+        "compilation": "passed",
+        "small_reference_cases": 9379,
+        "small_reference_seconds": 0.385903,
+        "maximum_length_benchmarks": [
+          {
+            "name": "all_same",
+            "length": 300000,
+            "expected": 0,
+            "actual": 0,
+            "seconds_including_process_startup": 0.323686
+          },
+          {
+            "name": "alternating",
+            "length": 300000,
+            "expected": 4499977500100000,
+            "actual": 4499977500100000,
+            "seconds_including_process_startup": 0.325795
+          },
+          {
+            "name": "two_large_runs",
+            "length": 300000,
+            "expected": 3375000000000000,
+            "actual": 3375000000000000,
+            "seconds_including_process_startup": 0.328567
+          },
+          {
+            "name": "three_large_runs",
+            "length": 300000,
+            "expected": 3666661666650000,
+            "actual": 3666661666650000,
+            "seconds_including_process_startup": 0.328515
+          }
+        ]
+      },
+      {
+        "language": "cpp",
+        "source": "solution.cpp",
+        "source_sha256": "0ffc624d3e78ebb00cc9701dc05278077ceedb3459bc688851760bc3a3ccf8e0",
+        "execution_body_sha256": "f752d078f15160ef0e6a1818ed6e4584ef309a009ef25ee08ad55cd5d90466d2",
+        "copied_code_exact": true,
+        "compilation": "passed",
+        "small_reference_cases": 9379,
+        "small_reference_seconds": 0.724747,
+        "maximum_length_benchmarks": [
+          {
+            "name": "all_same",
+            "length": 300000,
+            "expected": 0,
+            "actual": 0,
+            "seconds_including_process_startup": 0.377369
+          },
+          {
+            "name": "alternating",
+            "length": 300000,
+            "expected": 4499977500100000,
+            "actual": 4499977500100000,
+            "seconds_including_process_startup": 0.326515
+          },
+          {
+            "name": "two_large_runs",
+            "length": 300000,
+            "expected": 3375000000000000,
+            "actual": 3375000000000000,
+            "seconds_including_process_startup": 0.326507
+          },
+          {
+            "name": "three_large_runs",
+            "length": 300000,
+            "expected": 3666661666650000,
+            "actual": 3666661666650000,
+            "seconds_including_process_startup": 0.329019
+          }
+        ]
+      }
+    ],
+    "passed": true,
+    "online_submission_performed": false,
+    "repository_or_python_files_modified": false,
+    "limits": "Performance measured locally includes process startup; not a website grading result."
+  }
+}

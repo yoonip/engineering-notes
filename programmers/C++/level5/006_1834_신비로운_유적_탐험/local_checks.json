@@ -1,0 +1,162 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "id": 1834,
+    "title": "신비로운 유적 탐험",
+    "checked_at": "2026-10-24T00:18:22.575Z",
+    "status": "local_candidate_validation",
+    "online_submissions": 0,
+    "language": "C++",
+    "signature": "int solution(int n1, vector<vector<int>> g1, int n2, vector<vector<int>> g2)",
+    "source_sha256": "3c3c583e7a2d7696835a44b55c551a2f7d903a381c88e25f4a2950beb4bd629b",
+    "compiler": "<local-runtime>/zig.exe",
+    "compiler_stderr": "",
+    "cpp_standard": "C++17",
+    "exact_comment_copy": true,
+    "algorithm": "Rooted-tree DP with rectangular Hungarian maximum-weight child matching",
+    "small_independent_oracle": "Enumerate every ancestor-closed vertex subset containing root 1; sort canonical unordered rooted shapes; intersect shape sets and maximize node count.",
+    "large_reference": "Independent subset-mask assignment DP for degree-at-most-4 random trees plus known star/chain and relabelled-isomorphism answers.",
+    "official_example": {
+      "label": "official_example",
+      "n1": 8,
+      "g1": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "n2": 9,
+      "g2": [
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "expected": 7
+    },
+    "greedy_counterexample": {
+      "label": "greedy_pairing_trap",
+      "n1": 7,
+      "g1": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "n2": 8,
+      "g2": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "expected": 7
+    },
+    "exhaustive_small_tree_pairs": 1156,
+    "random_subset_pairs": 3000,
+    "large_bitmask_pairs": 60,
+    "maximum_relabelled_pairs": 30,
+    "tests": 4254,
+    "passed": 4254,
+    "failed": 0,
+    "elapsed_ms": 921,
+    "failures": []
+  }
+}

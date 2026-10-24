@@ -8,7 +8,7 @@
 | C++ | [C++ 풀이](C%2B%2B/README.md) |
 | Python | [Python 풀이](Python/README.md) |
 
-[C·C++ 채점과 게시 확인](CC_VERIFICATION.md)
+[레벨 0~4 C·C++ 채점과 게시 확인](CC_VERIFICATION.md) · [레벨 5 C·C++ 채점과 게시 확인](LEVEL5_VERIFICATION.md)
 
 ## 기존 레벨별 목록
 
@@ -37,7 +37,7 @@ Python 풀이의 새 위치와 SQL 자료를 함께 연결하는 기존 제출 �
 
 레벨 0·1은 [사이트 전체 목록](level0_1_catalog.json)과 문제 번호를 대조해 누락과 중복이 없는지 확인했습니다. 빈칸 채우기·한 줄 수정 형식의 16문제는 당시 제출 형식과 학습용 전체 주석본을 구분했습니다.
 
-레벨 5는 일부 문제의 통과 코드만 보관하고 있습니다. [문자열과 알파벳과 쿼리](Python/level5/attempts/389632/README.md)는 Python 구현별 부분 통과 기록과 시간 초과 원인을 따로 정리했습니다. 이 시도는 통과 코드로 표시하지 않습니다. 풀이를 보관하지 않은 문제까지 완료한 목록은 아닙니다.
+기존 Python 레벨 5 자료는 일부 문제의 통과 코드만 보관하고 있습니다. C·C++ 레벨 5는 각 언어에서 지원하는 문제를 [별도 목록](LEVEL5_VERIFICATION.md)으로 연결합니다. [문자열과 알파벳과 쿼리](Python/level5/attempts/389632/README.md)는 Python 구현별 부분 통과 기록과 시간 초과 원인을 따로 정리했습니다. 이 시도는 통과 코드로 표시하지 않습니다. 풀이를 보관하지 않은 문제까지 완료한 목록은 아닙니다.
 
 ## English
 
@@ -49,6 +49,6 @@ The Level 0–1 and Level 5 submission notes contain executable code followed by
 
 The 86 historical Python submissions were copied from accepted 100/100 entries in the website submission history. Original source files are preserved. Annotated copies retain the same executable AST and passed 197 public examples against the originals, for 394 executions. Repeated function definitions retain their original order, with the final binding explained. The annotated copies were not resubmitted. Sixteen restricted-editing exercises distinguish their original submission format from the complete study copies.
 
-Level 5 is a partial archive. Its [failed Python attempt](Python/level5/attempts/389632/README.md) has a separate timeout analysis and is not marked as accepted. Problems without an archived solution are not presented as completed.
+The existing Python Level 5 archive is partial. The separate [Level 5 C/C++ record](LEVEL5_VERIFICATION.md) covers the supported problems in those languages. Its [failed Python attempt](Python/level5/attempts/389632/README.md) has a separate timeout analysis and is not marked as accepted. Problems without an archived solution are not presented as completed.
 
 [Coverage](COVERAGE.md) · [All accepted problems](all_problems.json) · [Level 0–1 site catalog](level0_1_catalog.json)

@@ -1,0 +1,92 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "problem_id": 77887,
+    "status": "local_validation_passed_not_site_graded",
+    "compiler": {
+      "c": "C11, Zig cc -O2 shared wrapper",
+      "cpp": "C++17, Zig c++ -O2 shared wrapper"
+    },
+    "official_examples": 1,
+    "exhaustive_labeled_trees_n1_to_5_with_binary_initial_values": 4286,
+    "random_trees_and_query_streams": 3000,
+    "empty_result_streams": 1,
+    "maximum_constraint_streams": 7,
+    "cases_per_language": 7295,
+    "query_responses_per_language": 835720,
+    "language_case_comparisons": 14590,
+    "independent_oracle": "Direct parent-to-child value assignment along each root path; direct descendant traversal for small subtree sums. Large shallow-tree oracle uses point updates in an independent ordinary DFS/Fenwick array. Deep chain and comb expected sums come from closed forms.",
+    "large_case_timings": [
+      {
+        "label": "100000_deep_chain_and_queries_with_64bit_sums",
+        "n": 100000,
+        "queries": 100000,
+        "responses": 50000,
+        "oracle_seconds": 0.000001,
+        "seconds_both_languages": 0.098871
+      },
+      {
+        "label": "100000_chain_subtree_queries_without_updates",
+        "n": 100000,
+        "queries": 100000,
+        "responses": 100000,
+        "oracle_seconds": 0,
+        "seconds_both_languages": 0.083971
+      },
+      {
+        "label": "100000_balanced_tree_mixed_path_updates_and_subtree_sums",
+        "n": 100000,
+        "queries": 100000,
+        "responses": 50000,
+        "oracle_seconds": 1.287036,
+        "seconds_both_languages": 0.460925
+      },
+      {
+        "label": "90000_balanced_tree_updates_then_10000_sums",
+        "n": 100000,
+        "queries": 100000,
+        "responses": 10000,
+        "oracle_seconds": 2.180145,
+        "seconds_both_languages": 0.682062
+      },
+      {
+        "label": "100000_star_mixed_paths_preserve_other_branches",
+        "n": 100000,
+        "queries": 100000,
+        "responses": 50000,
+        "oracle_seconds": 0.274861,
+        "seconds_both_languages": 0.153515
+      },
+      {
+        "label": "singleton_100000_queries",
+        "n": 1,
+        "queries": 100000,
+        "responses": 50000,
+        "oracle_seconds": 0,
+        "seconds_both_languages": 0.030074
+      },
+      {
+        "label": "50000_depth_comb_preserves_side_leaves",
+        "n": 100000,
+        "queries": 100000,
+        "responses": 50000,
+        "oracle_seconds": 0,
+        "seconds_both_languages": 0.099816
+      }
+    ],
+    "sources": {
+      "c": {
+        "sha256": "546d55d7e17b4819448b56451088e5941e2dfb2f7fdea065c5b2fb2e7aa0ec17",
+        "execution_body_sha256": "f9e6be7444d85cc1709e38d0a4f19657adf0f666184bb7cdd9b56e7ecc80f9f6",
+        "copied_code_exact": true
+      },
+      "cpp": {
+        "sha256": "47f60a37403cbca83199d99e02aa02075f756b036756eddc05f0788b8dd0539e",
+        "execution_body_sha256": "9a0008c1734db5ae64e004fe8dc0ad03620415c504e0d3c201fa29a28807226f",
+        "copied_code_exact": true
+      }
+    },
+    "seconds_total": 8.621
+  }
+}

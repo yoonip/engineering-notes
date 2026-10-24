@@ -1,0 +1,75 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "problem_id": 214293,
+    "status": "local_checks_passed_not_submitted",
+    "official_examples": 4,
+    "exhaustive_connected_simple_graphs_n_at_most_5": 771,
+    "random_weighted_graphs": 2000,
+    "large_boundary_graphs": 6,
+    "cases_each_language": 2781,
+    "total_language_case_runs": 5562,
+    "oracle": "Each edge traffic replaced by zero and increased by one; recompute Dijkstra directly",
+    "large_timings": [
+      {
+        "label": "depth_50000_int64",
+        "n": 50000,
+        "m": 49999,
+        "answer_count": 49999,
+        "seconds_both_languages": 0.037977
+      },
+      {
+        "label": "shortcut_unique",
+        "n": 50000,
+        "m": 50000,
+        "answer_count": 1,
+        "seconds_both_languages": 0.029876
+      },
+      {
+        "label": "16000_equal_diamonds",
+        "n": 48001,
+        "m": 64000,
+        "answer_count": 1,
+        "seconds_both_languages": 0.051512
+      },
+      {
+        "label": "199396_dense_roads",
+        "n": 632,
+        "m": 199396,
+        "answer_count": 1,
+        "seconds_both_languages": 0.098548
+      },
+      {
+        "label": "49998_equal_two_hop_paths",
+        "n": 50000,
+        "m": 99996,
+        "answer_count": 1,
+        "seconds_both_languages": 0.076448
+      },
+      {
+        "label": "50000_random_tree",
+        "n": 50000,
+        "m": 49999,
+        "answer_count": 18,
+        "seconds_both_languages": 0.049044
+      }
+    ],
+    "sources": [
+      {
+        "language": "C",
+        "source_sha256": "3b258a23c6db50497c8fe374b6c5b47257762f4791903471c6a51d874b53be1f",
+        "execution_body_sha256": "78f47fbfcaad5874fca328f816abdde7abc2f800543a31df1d9ad2690b129fc7",
+        "code_copy_exact": true
+      },
+      {
+        "language": "C++",
+        "source_sha256": "c26532dc0972a57fff76751c73e100486ee75222078835e11958c6fe03dd93ac",
+        "execution_body_sha256": "fb57f3f48de5d21fed757d993287166de963227fe53db8b25cbe655b998abd8a",
+        "code_copy_exact": true
+      }
+    ],
+    "seconds": 11.844,
+    "build_directory": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\programmers_214293_c0rrrw29"
+  }
+}

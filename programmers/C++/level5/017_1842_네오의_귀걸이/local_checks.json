@@ -1,0 +1,58 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "checked_at_utc": "2026-10-24T00:46:07.013333+00:00",
+    "problem_id": 1842,
+    "language": "cpp",
+    "official_examples": 1,
+    "enumerated_initial_k_cases": 1799,
+    "random_dag_cases": 3000,
+    "wide_coordinate_random_cases": 200,
+    "manual_edge_cases": 2,
+    "seed": 1842,
+    "oracle": "For each independent query, rebuild the point set and recount the DAG in O(N^2), checking the rectangle width+height condition directly and keeping original S/E fixed.",
+    "reference_cases": 5002,
+    "reference_comparison": {
+      "answers_compared": 42355,
+      "seconds_including_process_startup": 0.455492
+    },
+    "maximum_cases": [
+      {
+        "name": "unique_diagonal_groups_chain",
+        "n": 100000,
+        "q": 100000,
+        "answers_compared": 100001,
+        "seconds_including_process_startup": 0.395975
+      },
+      {
+        "name": "two_choices_per_layer_modulo_paths",
+        "n": 100000,
+        "q": 100000,
+        "answers_compared": 100001,
+        "seconds_including_process_startup": 0.406677
+      },
+      {
+        "name": "one_large_diagonal_group_wide_coordinates",
+        "n": 100000,
+        "q": 100000,
+        "answers_compared": 100001,
+        "seconds_including_process_startup": 0.412733
+      }
+    ],
+    "algorithm": "Grouped compressed Fenwick forward x DP; backward y DP merged with independent additions in a decreasing x sweep; add/subtract f*g.",
+    "complexity": {
+      "time": "O((N+Q) log N)",
+      "space": "O(N+Q)"
+    },
+    "source": "solution.cpp",
+    "source_sha256": "84173a08b5cf5d29994604eaa87ddf568feef608a34e06cea55dbfb92324fe5e",
+    "execution_body_sha256": "319459abcdadaa828c8a67042ebaf5e726fddf1a014b905c6d746d879bc75b1d",
+    "compilation": "passed",
+    "copied_code_exact": true,
+    "passed": true,
+    "online_submission_performed": false,
+    "repository_or_python_files_modified": false,
+    "limits": "Local correctness and timing checks, not website grading evidence. One synthetic wide-coordinate stress uses k=2000000000 within the int API range."
+  }
+}

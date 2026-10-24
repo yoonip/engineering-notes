@@ -1,0 +1,128 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "checked_at_utc": "2026-10-24T00:23:18.563398+00:00",
+    "problem_id": 214292,
+    "exhaustive_cases": 4998,
+    "exhaustive_scope": "Every nondecreasing array of length2..9 with heights from1..6; index permutations have identical optimization objective.",
+    "random_cases": 1000,
+    "seed": 214292,
+    "official_and_counterexample_cases": 7,
+    "oracle": "Subset Hamiltonian-path DP dp[mask][last] stores the largest attainable minimum edge length; all possible next vertices are tried.",
+    "algorithm": "Sort; scan gaps at index distance floor(N/2); return smallest gap for even N and second-smallest gap, counting duplicates, for odd N.",
+    "complexity": "O(N log N) sort + O(N) scan; no additional height array in the algorithm.",
+    "proof_reference": {
+      "title": "On the Maximum Scatter TSP",
+      "authors": "Arkin, Chiang, Mitchell, Skiena, Yang",
+      "location": "Appendix B.2, path version on a line, Lemma B.3 and Theorem B.4",
+      "author_copy": "https://cse.engineering.nyu.edu/chiang/TSP-SICOMP.ps.gz",
+      "published_doi": "https://doi.org/10.1137/S0097539797320281"
+    },
+    "proof_outline": [
+      "Even2m: a shortest m+1-point block must contain an adjacent pair in every path; alternating high0,low0,high1,low1,... attains that bound.",
+      "Odd2m+1: avoiding internal edges of two distinct m+1-point blocks would force their intersection to use only the complement of their union. The intersection has one more point than that complement, which traps the full path there and excludes the symmetric difference. Thus the second-shortest block width is an upper bound.",
+      "Rotate labels so a shortest m+1-point block comes first, then take0,m+1,1,m+2,...,m. Every edge spans at least m index steps on the line and avoids the shortest block internally, attaining the second-smallest width."
+    ],
+    "records": [
+      {
+        "language": "c",
+        "source": "solution.c",
+        "source_sha256": "741e6718fc9037cc44ab42b02f31520ee4e829eebc29f635d7b9c8c7f5b0c5bb",
+        "execution_body_sha256": "f22c09508a0061c42f99e771471600433234967a925e2cefac8b8b6b457eaff7",
+        "copied_code_exact": true,
+        "compilation": "passed",
+        "small_hamiltonian_dp_cases": 6005,
+        "small_cases_seconds_including_process_startup": 0.66398,
+        "large_benchmarks": [
+          {
+            "name": "all_equal",
+            "n": 200000,
+            "expected": 0,
+            "actual": 0,
+            "seconds_including_process_startup": 0.337836
+          },
+          {
+            "name": "consecutive_even",
+            "n": 200000,
+            "expected": 100000,
+            "actual": 100000,
+            "seconds_including_process_startup": 0.430945
+          },
+          {
+            "name": "consecutive_odd",
+            "n": 199999,
+            "expected": 99999,
+            "actual": 99999,
+            "seconds_including_process_startup": 0.340394
+          },
+          {
+            "name": "two_values_even",
+            "n": 200000,
+            "expected": 999999999,
+            "actual": 999999999,
+            "seconds_including_process_startup": 0.347207
+          },
+          {
+            "name": "two_values_odd",
+            "n": 199999,
+            "expected": 999999999,
+            "actual": 999999999,
+            "seconds_including_process_startup": 0.392014
+          }
+        ]
+      },
+      {
+        "language": "cpp",
+        "source": "solution.cpp",
+        "source_sha256": "92d2ece2f496be380a9a1f49ae1dd8e30be0af2ce61a7cac94aba1acc6ac7c42",
+        "execution_body_sha256": "499e7cb70bfd949736a899dfdb8d6f51643a1e06e7065cc558fbd4f5758eca10",
+        "copied_code_exact": true,
+        "compilation": "passed",
+        "small_hamiltonian_dp_cases": 6005,
+        "small_cases_seconds_including_process_startup": 0.352048,
+        "large_benchmarks": [
+          {
+            "name": "all_equal",
+            "n": 200000,
+            "expected": 0,
+            "actual": 0,
+            "seconds_including_process_startup": 0.342059
+          },
+          {
+            "name": "consecutive_even",
+            "n": 200000,
+            "expected": 100000,
+            "actual": 100000,
+            "seconds_including_process_startup": 0.34438
+          },
+          {
+            "name": "consecutive_odd",
+            "n": 199999,
+            "expected": 99999,
+            "actual": 99999,
+            "seconds_including_process_startup": 0.334474
+          },
+          {
+            "name": "two_values_even",
+            "n": 200000,
+            "expected": 999999999,
+            "actual": 999999999,
+            "seconds_including_process_startup": 0.39598
+          },
+          {
+            "name": "two_values_odd",
+            "n": 199999,
+            "expected": 999999999,
+            "actual": 999999999,
+            "seconds_including_process_startup": 0.393035
+          }
+        ]
+      }
+    ],
+    "passed": true,
+    "online_submission_performed": false,
+    "repository_or_python_files_modified": false,
+    "limits": "Local runtime includes process startup and is not website grading evidence."
+  }
+}

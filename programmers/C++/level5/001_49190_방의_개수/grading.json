@@ -1,0 +1,58 @@
+{
+  "id": 49190,
+  "title": "방의 개수",
+  "level": 5,
+  "language": "C++",
+  "url": "https://school.programmers.co.kr/learn/courses/30/lessons/49190?language=cpp",
+  "checked_on": "2026-10-24",
+  "verification": "actual_online_judge_and_submission_history",
+  "status": "accepted",
+  "score": 100,
+  "maximum_score": 100,
+  "attempt_count": 1,
+  "max_attempts_per_problem_language": 5,
+  "accepted_attempt": 1,
+  "submitted_at_utc": "2026-10-24T00:16:14.329Z",
+  "grading_result_observed_at_utc": "2026-10-24T00:16:25.467Z",
+  "accepted_history_rows": [
+    {
+      "submitted_at": "2026-10-24 09:16:15",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source_sha256": "9d5d5cc713ab123890f7d2deac98891c990ff28cb2e470cd3a3628d23eca381b",
+  "archive_execution_body_sha256": "23c4ed55ceef85a8f4aeb766fc823af1bf743c31fd9081c453004429601cb7b5",
+  "submitted_normalized_lf_sha256": "9d5d5cc713ab123890f7d2deac98891c990ff28cb2e470cd3a3628d23eca381b",
+  "comments_and_summary_submitted": true,
+  "archive_matches_saved_submission": true,
+  "input_normalization": "The saved source was submitted after CRLF-to-LF normalization.",
+  "executable_nonempty_lines": 32,
+  "annotated_nonempty_lines": 32,
+  "commented_copy_exact": true,
+  "final_result_evidence": "final_judge_screen_and_language_specific_accepted_100_history",
+  "final_judge_tests": [
+    "테스트 1 〉 통과 (0.02ms, 4.66MB)",
+    "테스트 2 〉 통과 (0.05ms, 4.67MB)",
+    "테스트 3 〉 통과 (0.09ms, 4.67MB)",
+    "테스트 4 〉 통과 (0.17ms, 5.04MB)",
+    "테스트 5 〉 통과 (1.38ms, 5.06MB)",
+    "테스트 6 〉 통과 (7.03ms, 10.9MB)",
+    "테스트 7 〉 통과 (0.86ms, 4.82MB)",
+    "테스트 8 〉 통과 (6.55ms, 9.64MB)",
+    "테스트 9 〉 통과 (10.00ms, 13.7MB)"
+  ],
+  "test_detail_note": "최종 채점 화면에 표시된 테스트별 통과 내역입니다.",
+  "attempts": [
+    {
+      "number": 1,
+      "submitted_at_utc": "2026-10-24T00:16:14.329Z",
+      "result_observed_at_utc": "2026-10-24T00:16:25.467Z",
+      "status": "accepted",
+      "score": 100,
+      "source_sha256": "9d5d5cc713ab123890f7d2deac98891c990ff28cb2e470cd3a3628d23eca381b"
+    }
+  ],
+  "local_checks": "local_checks.json"
+}

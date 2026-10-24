@@ -1,0 +1,18 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "id": 12974,
+    "language": "C++",
+    "verification": "local_candidate_validation",
+    "compiler": "<local-runtime>/zig.exe",
+    "official_examples": 2,
+    "independent_small_unit_grid_cases": 4000,
+    "maximum_size_cases": 3,
+    "total": 4005,
+    "passed": 4005,
+    "large_cases_seconds": 0.21819590000086464,
+    "source_sha256": "d1d4215452b40ca5e96c3c3b7798b0bd754c4959e3efc07b21b55c30489544f7",
+    "build_directory": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\programmers_12974_w0xy_i0t"
+  }
+}

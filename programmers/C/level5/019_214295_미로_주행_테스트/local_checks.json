@@ -1,0 +1,148 @@
+{
+  "record_type": "local_checks_before_online_submission",
+  "note": "후보 작성 당시의 로컬 검사 기록입니다. 사이트 채점은 grading.json에 따로 기록합니다.",
+  "record": {
+    "problem_id": 214295,
+    "status": "local_validation_passed_not_site_graded",
+    "compiler": {
+      "c": "C11, Zig cc -O2 shared wrapper",
+      "cpp": "C++17, Zig c++ -O2 shared wrapper"
+    },
+    "official_examples": 4,
+    "exhaustive_single_records_grids_n_m_3_to_6": 8712,
+    "exhaustive_pairs_of_distinct_single_record_masks_3_by_3": 5301,
+    "random_consistent_small_grid_record_sets": 10000,
+    "all_but_one_point_failed_targeted_sets": 4,
+    "large_closed_form_patterns": 14,
+    "cases_per_language": 24035,
+    "language_case_comparisons": 48070,
+    "independent_oracle": "Enumerate every original integer (X,Y) and check all Manhattan-distance records directly; no coordinate transform, sweep, parity formula, or coverage tree. Large patterns use independent diamond/triangle/diagonal cardinalities.",
+    "large_case_timings": [
+      {
+        "label": "full_1e18_grid",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 1,
+        "expected": 1000000002000000000,
+        "seconds_both_languages": 0.000012
+      },
+      {
+        "label": "one_failed_corner_point",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 1,
+        "expected": 1000000002000000000,
+        "seconds_both_languages": 0.000006
+      },
+      {
+        "label": "success_distance_excludes_only_far_corner",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 1,
+        "expected": 1000000002000000000,
+        "seconds_both_languages": 0.000004
+      },
+      {
+        "label": "large_interior_failed_diamond",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 1,
+        "expected": 999695170444749300,
+        "seconds_both_languages": 0.000005
+      },
+      {
+        "label": "large_interior_success_diamond",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 1,
+        "expected": 304831555250725,
+        "seconds_both_languages": 0.000003
+      },
+      {
+        "label": "large_corner_success_triangle",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 1,
+        "expected": 384164000813366850,
+        "seconds_both_languages": 0.000003
+      },
+      {
+        "label": "large_corner_failed_triangle",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 1,
+        "expected": 615836001186633100,
+        "seconds_both_languages": 0.000004
+      },
+      {
+        "label": "one_exact_U_diagonal_asymmetric_grid",
+        "n": 1000000000,
+        "m": 999999937,
+        "records": 2,
+        "expected": 999999938,
+        "seconds_both_languages": 0.000005
+      },
+      {
+        "label": "one_exact_negative_V_diagonal",
+        "n": 1000000000,
+        "m": 999999937,
+        "records": 2,
+        "expected": 876543149,
+        "seconds_both_languages": 0.000004
+      },
+      {
+        "label": "250000_distinct_failed_points_many_sweep_boundaries",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 250000,
+        "expected": 1000000001999750000,
+        "seconds_both_languages": 0.947438
+      },
+      {
+        "label": "250000_identical_failures_cover_counter",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 250000,
+        "expected": 1000000001999999400,
+        "seconds_both_languages": 0.15437
+      },
+      {
+        "label": "250000_nested_diamonds_many_distinct_boundaries",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 250000,
+        "expected": 999999877000500000,
+        "seconds_both_languages": 0.759568
+      },
+      {
+        "label": "250000_disjoint_radius_one_diamonds",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 250000,
+        "expected": 1000000001998750000,
+        "seconds_both_languages": 0.5328
+      },
+      {
+        "label": "250000_records_all_failures_outside_fixed_success_point",
+        "n": 1000000000,
+        "m": 1000000000,
+        "records": 250000,
+        "expected": 1,
+        "seconds_both_languages": 0.134075
+      }
+    ],
+    "sources": {
+      "c": {
+        "sha256": "19e53b92905f54799af7f72e6942658b0e86c0d5ef2d0678e08bc5de912707c2",
+        "execution_body_sha256": "931ba8b5ed10db18a90bfbc65fd0d1b7b8962728aa4ec2c21274de8307c102a0",
+        "copied_code_exact": true
+      },
+      "cpp": {
+        "sha256": "99c8c942617a687b41f94e07e26bce52bb383a84f00d14502cc1ec2d5d90276f",
+        "execution_body_sha256": "83d1be72d77f8441cfe109b5b3a449f2eff0baa2509a03c39f3f5b2dc99eac51",
+        "copied_code_exact": true
+      }
+    },
+    "seconds_total": 5.286
+  }
+}

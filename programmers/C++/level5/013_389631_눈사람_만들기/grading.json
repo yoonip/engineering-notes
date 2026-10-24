@@ -1,0 +1,48 @@
+{
+  "id": 389631,
+  "title": "눈사람 만들기",
+  "level": 5,
+  "language": "C++",
+  "url": "https://school.programmers.co.kr/learn/courses/30/lessons/389631?language=cpp",
+  "checked_on": "2026-10-24",
+  "verification": "actual_accepted_submission_history",
+  "status": "accepted",
+  "score": 100,
+  "maximum_score": 100,
+  "attempt_count": 1,
+  "max_attempts_per_problem_language": 5,
+  "accepted_attempt": 1,
+  "submitted_at_utc": "2026-10-24T00:52:38.741Z",
+  "grading_result_observed_at_utc": "2026-10-24T00:53:23.738Z",
+  "accepted_history_rows": [
+    {
+      "submitted_at": "2026-10-24 09:52:40",
+      "language": "C++",
+      "result": "정답",
+      "score": 100
+    }
+  ],
+  "archive_source_sha256": "6cb2eb151eb6b544e7c6363b5b819d9ca24e0eeb22fa5fd82ec891c8529770ad",
+  "archive_execution_body_sha256": "2d47be233d780117eb165635e870600fcc7453a2c928ff20362ed1c3a27ca9e3",
+  "submitted_normalized_lf_sha256": "6cb2eb151eb6b544e7c6363b5b819d9ca24e0eeb22fa5fd82ec891c8529770ad",
+  "comments_and_summary_submitted": true,
+  "archive_matches_saved_submission": true,
+  "input_normalization": "The saved source was submitted after CRLF-to-LF normalization.",
+  "executable_nonempty_lines": 72,
+  "annotated_nonempty_lines": 72,
+  "commented_copy_exact": true,
+  "final_result_evidence": "language_specific_accepted_100_history",
+  "final_judge_tests": [],
+  "test_detail_note": "최종 판정은 저장된 언어별 제출 내역의 정답 100/100으로 확인합니다. 완료 전 테스트 표는 최종 근거에 포함하지 않습니다.",
+  "attempts": [
+    {
+      "number": 1,
+      "submitted_at_utc": "2026-10-24T00:52:38.741Z",
+      "result_observed_at_utc": "2026-10-24T00:53:23.738Z",
+      "status": "accepted",
+      "score": 100,
+      "source_sha256": "6cb2eb151eb6b544e7c6363b5b819d9ca24e0eeb22fa5fd82ec891c8529770ad"
+    }
+  ],
+  "local_checks": "local_checks.json"
+}
