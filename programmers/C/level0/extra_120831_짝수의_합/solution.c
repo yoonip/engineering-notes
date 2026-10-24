@@ -15,7 +15,7 @@ int solution(int n) { int half = n / 2; return half * (half + 1); }
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 // #include <limits.h>  // 정수형 최솟값·최댓값 상수
 //
-// int solution(int n) { int half = n / 2; return half * (half + 1); }  // 짝수의 합 풀이 시작
+// int solution(int n) { int half = n / 2; return half * (half + 1); }  // half=n/2이면 짝수 합은 2*(1+...+half)이므로 half*(half+1) 반환
 
 // 풀이 요약
-// n 이하의 짝수는 2, 4, …, 2 × floor(n / 2)임. 짝수의 개수를 half라 두고 등차수열의 합 half × (half + 1)을 계산
+// half=n/2이면 짝수 합은 2*(1+...+half)이므로 half*(half+1) 반환

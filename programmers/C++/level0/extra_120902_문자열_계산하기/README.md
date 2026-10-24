@@ -51,8 +51,8 @@ int solution(string my_string) {
 //
 // int solution(string my_string) {  // 문자열 계산하기 풀이 시작
 //     istringstream input(my_string);  // my_string를 공백 단위로 읽을 스트림 input
-//     int answer, value;  // answer를 저장할 변수 · value를 저장할 변수
-//     char operation;  // operation를 저장할 변수
+//     int answer, value;  // 지금까지 계산한 합 answer와 다음에 읽을 정수 value
+//     char operation;  // 다음 정수 앞의 덧셈 또는 뺄셈 기호
 //     input >> answer;  // 첫 숫자를 읽어 계산의 시작값으로 설정
 //     while (input >> operation >> value) answer += operation == '+' ? value : -value;  // while은 스트림에서 다음 토큰·연산을 읽을 수 있는 동안 반복
 //     return answer;  // 완성한 결과 반환

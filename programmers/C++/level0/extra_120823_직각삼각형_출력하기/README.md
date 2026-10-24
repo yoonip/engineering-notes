@@ -48,7 +48,7 @@ int main() {
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
 // int main() {  // 입력을 읽고 답을 출력할 시작점
-//     int n;  // n를 저장할 변수
+//     int n;  // 삼각형의 줄 수이자 마지막 줄에 출력할 별 개수
 //     cin >> n;  // 입력 연산자 >>로 표준 입력에서 정수를 읽어 n에 저장
 //     for (int i = 1; i <= n; ++i) cout << string(i, '*') << '\n';  // string으로 해당 행의 별표를 만들고 <<로 별표와 줄바꿈을 출력
 //     return 0;  // 0으로 정상 종료

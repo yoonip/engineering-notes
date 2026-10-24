@@ -13,7 +13,7 @@ int solution(double flo) { return (int)flo; }
 // #include <string.h>  // 문자열 길이·복사·비교 함수
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 //
-// int solution(double flo) { return (int)flo; }  // 정수 부분 풀이 시작
+// int solution(double flo) { return (int)flo; }  // int 형변환으로 소수 부분을 버리고 정수 부분 반환
 
 // 풀이 요약
-// 음수가 아닌 실수 flo를 int로 형 변환하여 정수 부분만 반환
+// int 형변환으로 소수 부분을 버리고 정수 부분 반환

@@ -50,30 +50,30 @@ int solution(int** grid, size_t grid_rows, size_t grid_cols, int d[], size_t d_l
 //     return result;  // 행렬 곱의 경로 수 반환
 // }  // 이 범위 끝
 // int solution(int** grid, size_t grid_rows, size_t grid_cols, int d[], size_t d_len, int k) {  // 수열 d 한 번의 출발·도착별 경로 수를 DP로 계산하고, 그 전이 행렬의 k제곱을 빠른 거듭제곱으로 적용하기
-//     int rows = (int)grid_rows, cols = (int)grid_cols, size = rows * cols; int* matrix = calloc((size_t)size * size,sizeof(*matrix)); int* ways = malloc((size_t)size * sizeof(*ways)); int* next = malloc((size_t)size * sizeof(*next));  // 격자 행 수 / 격자 열 수 / 전체 칸 수 / 경사 수열 한 번의 시작 끝별 경로 수 공간 확보하고 0으로 시작
+//     int rows = (int)grid_rows, cols = (int)grid_cols, size = rows * cols; int* matrix = calloc((size_t)size * size,sizeof(*matrix)); int* ways = malloc((size_t)size * sizeof(*ways)); int* next = malloc((size_t)size * sizeof(*next));  // 격자 크기를 구해 한 수열의 전이 행렬을 0으로 초기화하고 두 단계 경로 수 배열 확보
 //     const int dr[4] = {1,-1,0,0}, dc[4] = {0,0,1,-1};  // 행 이동 / 열 이동 저장
 //     for (int start = 0; start < size; ++start) {  // 한 번의 경로를 시작할 칸 순서대로 확인
 //         memset(ways,0,(size_t)size * sizeof(*ways)); ways[start] = 1;  // 현재 출발점에만 경우의 수 1을 놓고 나머지 칸은 0으로 초기화
 //         for (size_t step = 0; step < d_len; ++step) {  // 적용할 경사 번호 순서대로 확인
-//             memset(next,0,(size_t)size * sizeof(*next));  // 다음 경사 또는 제곱 단계의 방법 수 / 전체 칸 수 초기화
+//             memset(next,0,(size_t)size * sizeof(*next));  // 다음 경사에서의 경로 수 배열을 0으로 비워 새 전이 준비
 //             for (int at = 0; at < size; ++at) if (ways[at]) {  // 현재 단계에서 도달하는 경우의 수가 있는 칸만 다음 이동으로 확장
 //                 int r = at / cols, c = at % cols;  // 현재 행 / 현재 열 저장
 //                 for (int direction = 0; direction < 4; ++direction) { int nr = r + dr[direction], nc = c + dc[direction]; if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && grid[nr][nc] - grid[r][c] == d[step]) next[nr * cols + nc] = (next[nr * cols + nc] + ways[at]) % MOD; }  // 상하좌우 중 높이 차가 다음 경사와 같은 칸에 경로 수 누적
 //             }  // 이 범위 끝
-//             int* temp = ways; ways = next; next = temp;  // 경로 수 배열 교환용 포인터 / 현재 단계에서 칸별 도달 방법 수 / 다음 경사 또는 제곱 단계의 방법 수 저장
+//             int* temp = ways; ways = next; next = temp;  // 다음 단계 배열을 현재 배열로 바꾸고 이전 배열은 다음 계산 공간으로 재사용
 //         }  // 이 범위 끝
-//         memcpy(matrix + start * size,ways,(size_t)size * sizeof(*ways));  // 경사 수열 한 번의 시작 끝별 경로 수 / 한 번의 경로를 시작할 칸 / 전체 칸 수 복사
+//         memcpy(matrix + start * size,ways,(size_t)size * sizeof(*ways));  // 현재 출발 칸에서 한 수열을 따른 경로 수를 전이 행렬의 한 행에 저장
 //     }  // 이 범위 끝
-//     for (int i = 0; i < size; ++i) ways[i] = 1;  // 행렬 시작 칸 순서대로 확인; 현재 단계에서 칸별 도달 방법 수 갱신
+//     for (int i = 0; i < size; ++i) ways[i] = 1;  // 어느 칸에서나 시작할 수 있으므로 모든 출발 경우의 수를 1로 초기화
 //     while (k) {  // 남은 지수의 비트를 하나씩 처리하는 빠른 거듭제곱
 //         if (k & 1) { memset(next,0,(size_t)size * sizeof(*next)); for (int i = 0; i < size; ++i) for (int j = 0; j < size; ++j) next[j] = (int)((next[j] + (long long)ways[i] * matrix[i * size + j]) % MOD); int* temp = ways; ways = next; next = temp; }  // 현재 지수 비트가 1이면 경로 수 벡터에 현재 전이 행렬 적용
 //         k >>= 1; if (k) { int* squared = multiply(matrix,matrix,size); free(matrix); matrix = squared; }  // 지수 한 비트를 처리한 뒤 전이 행렬을 제곱하고 이전 행렬 해제
 //     }  // 이 범위 끝
-//     long long answer = 0; for (int i = 0; i < size; ++i) answer += ways[i]; free(matrix); free(ways); free(next);  // 필요한 결과를 먼저 보관하고 임시 배열 정리
+//     long long answer = 0; for (int i = 0; i < size; ++i) answer += ways[i]; free(matrix); free(ways); free(next);  // 모든 도착 칸의 경로 수를 합산한 뒤 임시 행렬과 두 경로 수 배열 해제
 //     return (int)(answer % MOD);  // 경사 수열을 k번 적용한 전체 경로 수로 최종값 계산
 // }  // 이 범위 끝
 
 // 풀이 요약
 // 수열 d 한 번의 출발·도착별 경로 수를 DP로 계산하고, 그 전이 행렬의 k제곱을 빠른 거듭제곱으로 적용하기
 // 예: A→B가 2가지, B→C가 3가지라면 이어지는 경로는 6가지; 재방문을 허용하므로 행렬 곱으로 연결 가능
-// V=n*m, L=len(d).; 시간 O(L*V^2+V^3*log k), 공간 O(V^2)
+// V=n*m, L=len(d); 시간 O(L*V^2+V^3*log k), 공간 O(V^2)

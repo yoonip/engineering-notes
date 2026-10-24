@@ -23,7 +23,7 @@ int solution(string n_str) { return stoi(n_str); }
 // #include <cstdlib>  // 정수 변환과 절댓값 등 표준 함수
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(string n_str) { return stoi(n_str); }  // 문자열을 정수로 변환하기 풀이 시작
+// int solution(string n_str) { return stoi(n_str); }  // stoi로 십진수 문자열을 정수로 변환해 반환
 
 // 풀이 요약
-// 숫자 문자열을 정수 자료형으로 변환
+// stoi로 십진수 문자열을 정수로 변환해 반환

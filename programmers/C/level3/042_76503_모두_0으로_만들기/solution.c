@@ -31,7 +31,7 @@ long long solution(int a[], size_t a_len, int** edges, size_t edges_rows, size_t
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// long long solution(int a[], size_t a_len, int** edges, size_t edges_rows, size_t edges_cols) {  // 전체 가중치 합이 0일 때만 가능하다.; 잎부터 가중치를 부모에게 넘기고 넘긴 양의 절댓값을 더하기
+// long long solution(int a[], size_t a_len, int** edges, size_t edges_rows, size_t edges_cols) {  // 전체 가중치 합이 0일 때만 가능하다; 잎부터 가중치를 부모에게 넘기고 넘긴 양의 절댓값을 더하기
 //     (void)edges_cols; long long total = 0;  // 처음 가중치 총합 갱신
 //     for (size_t i = 0; i < a_len; ++i) total += a[i];  // 노드 또는 간선 위치 순서대로 확인; 처음 가중치 총합 / 노드 또는 간선 위치 더해 누적
 //     if (total) return -1;  // 처음 가중치 총합가 남아 있으면 조건에 맞는 답이 없으면 -1
@@ -50,6 +50,6 @@ long long solution(int a[], size_t a_len, int** edges, size_t edges_rows, size_t
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 전체 가중치 합이 0일 때만 가능하다.; 잎부터 가중치를 부모에게 넘기고 넘긴 양의 절댓값을 더하기
+// 전체 가중치 합이 0일 때만 가능하다; 잎부터 가중치를 부모에게 넘기고 넘긴 양의 절댓값을 더하기
 // 예: [-5,0,2,1,2]에서는 두 잎의 2씩과 가운데 누적 5를 옮겨 2+2+5=9번
-// 트리의 간선을 끊으면 부분 트리의 합만큼 반드시 그 간선을 지나야 하므로 이 횟수가 최소.; 시간·공간 O(N)
+// 트리의 간선을 끊으면 부분 트리의 합만큼 반드시 그 간선을 지나야 하므로 이 횟수가 최소; 시간·공간 O(N)

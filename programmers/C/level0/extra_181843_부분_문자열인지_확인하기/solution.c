@@ -13,7 +13,7 @@ int solution(const char* my_string, const char* target) { return strstr(my_strin
 // #include <string.h>  // 문자열 길이·복사·비교 함수
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 //
-// int solution(const char* my_string, const char* target) { return strstr(my_string, target) != NULL; }  // 부분 문자열인지 확인하기 풀이 시작
+// int solution(const char* my_string, const char* target) { return strstr(my_string, target) != NULL; }  // strstr로 target을 찾아 NULL이 아니면 1, 없으면 0 반환
 
 // 풀이 요약
-// target이 my_string 안에 연속해서 나타나는지 검사
+// strstr로 target을 찾아 NULL이 아니면 1, 없으면 0 반환

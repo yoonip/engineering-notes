@@ -27,7 +27,7 @@ int solution(int age) { return 2023 - age; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int age) { return 2023 - age; }  // 나이 출력 풀이 시작
+// int solution(int age) { return 2023 - age; }  // 2022년 기준 한국 나이를 출생 연도로 바꿔 2023-age 반환
 
 // 풀이 요약
-// 현재 실제 연도가 아니라 문제에서 지정한 2022년을 기준으로 계산
+// 2022년 기준 한국 나이를 출생 연도로 바꿔 2023-age 반환

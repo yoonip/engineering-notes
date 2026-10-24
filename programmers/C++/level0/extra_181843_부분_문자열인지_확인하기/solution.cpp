@@ -23,7 +23,7 @@ int solution(string my_string, string target) { return my_string.find(target) !=
 // #include <cstdlib>  // 정수 변환과 절댓값 등 표준 함수
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(string my_string, string target) { return my_string.find(target) != string::npos; }  // 부분 문자열인지 확인하기 풀이 시작
+// int solution(string my_string, string target) { return my_string.find(target) != string::npos; }  // find 결과가 npos가 아니면 target이 있으므로 1, 없으면 0 반환
 
 // 풀이 요약
-// target이 my_string 안에 연속해서 나타나는지 검사
+// find 결과가 npos가 아니면 target이 있으므로 1, 없으면 0 반환

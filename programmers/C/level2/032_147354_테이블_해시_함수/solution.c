@@ -53,4 +53,4 @@ int solution(int** data, size_t data_rows, size_t data_cols, int col, int row_be
 
 // 풀이 요약
 // 지정 열 오름차순·기본키 내림차순으로 정렬하고, 각 행 번호로 나눈 나머지 합을 XOR하기
-// 예: 정렬 후 S2=0,S3=4이므로 0 XOR 4=4.; N행·M열일 때 시간 O(N log N+NM), 정렬 공간 O(N)
+// 예: 정렬 후 S2=0,S3=4이므로 0 XOR 4=4; N행·M열일 때 시간 O(N log N+NM), 정렬 공간 O(N)

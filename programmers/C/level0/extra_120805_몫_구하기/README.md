@@ -6,7 +6,7 @@
 
 ## 풀이
 
-C의 정수 나눗셈 연산자 /로 num1을 num2로 나눈 몫 계산.
+두 정수의 / 연산으로 소수 부분을 버린 몫 반환
 
 ## 코드와 줄별 설명
 
@@ -30,9 +30,9 @@ int solution(int num1, int num2) { return num1 / num2; }
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 // #include <limits.h>  // 정수형 최솟값·최댓값 상수
 //
-// int solution(int num1, int num2) { return num1 / num2; }  // 몫 구하기 풀이 시작
+// int solution(int num1, int num2) { return num1 / num2; }  // 두 정수의 / 연산으로 소수 부분을 버린 몫 반환
 // 풀이 요약
-// C의 정수 나눗셈 연산자 /로 num1을 num2로 나눈 몫 계산.
+// 두 정수의 / 연산으로 소수 부분을 버린 몫 반환
 ```
 
 ## 채점 기록

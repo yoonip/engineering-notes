@@ -6,7 +6,7 @@
 
 ## 풀이
 
-두 양의 정수를 /로 나누면 소수 부분이 버려진 정수 몫
+두 정수의 / 연산으로 소수 부분을 버린 몫 반환
 
 ## 코드와 줄별 설명
 
@@ -42,10 +42,10 @@ int solution(int num1, int num2) { return num1 / num2; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int num1, int num2) { return num1 / num2; }  // 몫 구하기 풀이 시작
+// int solution(int num1, int num2) { return num1 / num2; }  // 두 정수의 / 연산으로 소수 부분을 버린 몫 반환
 
 // 풀이 요약
-// 두 양의 정수를 /로 나누면 소수 부분이 버려진 정수 몫
+// 두 정수의 / 연산으로 소수 부분을 버린 몫 반환
 ```
 
 ## 채점 기록

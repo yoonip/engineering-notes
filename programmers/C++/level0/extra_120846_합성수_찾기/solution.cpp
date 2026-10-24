@@ -37,7 +37,7 @@ int solution(int n) {
 //     int count = 0;  // 1과 자기 자신 외의 약수를 찾은 합성수 개수
 //     for (int value = 4; value <= n; ++value)  // 가장 작은 합성수 4부터 n까지 확인
 //         for (int d = 2; d <= value / d; ++d)  // 제곱근 이하에서 1이 아닌 약수 찾기
-//             if (value % d == 0) { ++count; break; }  // if 조건이 참이면 결과를 반영하고 break로 가장 안쪽 반복문을 끝
+//             if (value % d == 0) { ++count; break; }  // 1과 자기 자신 외의 약수를 찾으면 합성수로 한 번 세고 약수 탐색 종료
 //     return count;  // 범위 안의 합성수 총개수
 // }  // 블록 끝
 

@@ -6,7 +6,7 @@
 
 ## 풀이
 
-뺄셈은 순서가 중요하므로 num1에서 num2를 빼기
+- 연산자로 num1에서 num2를 뺀 차 반환
 
 ## 코드와 줄별 설명
 
@@ -30,10 +30,10 @@ int solution(int num1, int num2) { return num1 - num2; }
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 // #include <limits.h>  // 정수형 최솟값·최댓값 상수
 //
-// int solution(int num1, int num2) { return num1 - num2; }  // 두 수의 차 구하기 풀이 시작
+// int solution(int num1, int num2) { return num1 - num2; }  // - 연산자로 num1에서 num2를 뺀 차 반환
 
 // 풀이 요약
-// 뺄셈은 순서가 중요하므로 num1에서 num2를 빼기
+// - 연산자로 num1에서 num2를 뺀 차 반환
 ```
 
 ## 채점 기록

@@ -7,7 +7,8 @@
 ## 풀이
 
 광물을 순서대로 다섯 개씩 묶고, 각 묶음에 쓸 곡괭이를 모두 선택해 보기; 남은 수가 같은 상태는 캐시로 재사용
-예: 첫 묶음은 다이아, 나머지는 철 곡괭이를 쓰면 12.; 묶음 수 B, 초기 곡괭이 수 D,I,S일 때 시간·공간 O(B(D+1)(I+1)(S+1))
+
+예: 첫 묶음은 다이아, 나머지는 철 곡괭이를 쓰면 12; 묶음 수 B, 초기 곡괭이 수 D,I,S일 때 시간·공간 O(B(D+1)(I+1)(S+1))
 
 ## 코드와 줄별 설명
 
@@ -74,7 +75,7 @@ int solution(int picks[], size_t picks_len, const char* minerals[], size_t miner
 // }  // 이 범위 끝
 // int solution(int picks[], size_t picks_len, const char* minerals[], size_t minerals_len) {  // 광물을 순서대로 다섯 개씩 묶고, 각 묶음에 쓸 곡괭이를 모두 선택해 보기; 남은 수가 같은 상태는 캐시로 재사용
 //     (void)picks_len;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
-//     size_t count = (minerals_len + 4) / 5; int (*blocks)[3] = calloc(count, sizeof(*blocks));  // 광물 묶음 수 공간 확보하고 0으로 시작
+//     size_t count = (minerals_len + 4) / 5; int (*blocks)[3] = calloc(count, sizeof(*blocks));  // 다섯 개씩 묶을 광물 묶음 수를 구하고 묶음별 세 곡괭이의 피로도 배열을 0으로 초기화
 //     for (size_t i = 0; i < minerals_len; ++i) {  // 광물 또는 메모 위치 순서대로 확인
 //         int kind = !strcmp(minerals[i], "diamond") ? 0 : !strcmp(minerals[i], "iron") ? 1 : 2;  // 현재 광물 종류 저장
 //         const int fatigue[3][3] = {{1,5,25},{1,1,5},{1,1,1}};  // 광물과 곡괭이 종류별 피로도 저장
@@ -89,7 +90,7 @@ int solution(int picks[], size_t picks_len, const char* minerals[], size_t miner
 
 // 풀이 요약
 // 광물을 순서대로 다섯 개씩 묶고, 각 묶음에 쓸 곡괭이를 모두 선택해 보기; 남은 수가 같은 상태는 캐시로 재사용
-// 예: 첫 묶음은 다이아, 나머지는 철 곡괭이를 쓰면 12.; 묶음 수 B, 초기 곡괭이 수 D,I,S일 때 시간·공간 O(B(D+1)(I+1)(S+1))
+// 예: 첫 묶음은 다이아, 나머지는 철 곡괭이를 쓰면 12; 묶음 수 B, 초기 곡괭이 수 D,I,S일 때 시간·공간 O(B(D+1)(I+1)(S+1))
 ```
 
 ## 채점 기록

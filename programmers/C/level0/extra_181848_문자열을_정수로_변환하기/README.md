@@ -6,7 +6,7 @@
 
 ## 풀이
 
-atoi에 숫자 문자열 n_str을 전달하여 문자열이 나타내는 정수를 반환
+atoi로 십진수 문자열을 정수로 변환해 반환
 
 ## 코드와 줄별 설명
 
@@ -28,10 +28,10 @@ int solution(const char* n_str) { return atoi(n_str); }
 // #include <string.h>  // 문자열 길이·복사·비교 함수
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 //
-// int solution(const char* n_str) { return atoi(n_str); }  // 문자열을 정수로 변환하기 풀이 시작
+// int solution(const char* n_str) { return atoi(n_str); }  // atoi로 십진수 문자열을 정수로 변환해 반환
 
 // 풀이 요약
-// atoi에 숫자 문자열 n_str을 전달하여 문자열이 나타내는 정수를 반환
+// atoi로 십진수 문자열을 정수로 변환해 반환
 ```
 
 ## 채점 기록

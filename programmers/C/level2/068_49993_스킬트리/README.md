@@ -7,7 +7,8 @@
 ## 풀이
 
 선행 조건이 없는 스킬을 지운 뒤, 남은 순서가 skill의 앞부분과 같으면 가능; 앞 스킬을 생략하고 뒤 스킬만 배울 수 없음
-예: CBD에서 CBADF→CBD, AECB→CB는 가능해 2개.; 전체 문자열 길이 합 L에 대해 시간 O(L), 임시 공간 O(스킬트리 길이)
+
+예: CBD에서 CBADF→CBD, AECB→CB는 가능해 2개; 전체 문자열 길이 합 L에 대해 시간 O(L), 임시 공간 O(스킬트리 길이)
 
 ## 코드와 줄별 설명
 
@@ -63,7 +64,7 @@ int solution(const char* skill, const char* skill_trees[], size_t skill_trees_le
 
 // 풀이 요약
 // 선행 조건이 없는 스킬을 지운 뒤, 남은 순서가 skill의 앞부분과 같으면 가능; 앞 스킬을 생략하고 뒤 스킬만 배울 수 없음
-// 예: CBD에서 CBADF→CBD, AECB→CB는 가능해 2개.; 전체 문자열 길이 합 L에 대해 시간 O(L), 임시 공간 O(스킬트리 길이)
+// 예: CBD에서 CBADF→CBD, AECB→CB는 가능해 2개; 전체 문자열 길이 합 L에 대해 시간 O(L), 임시 공간 O(스킬트리 길이)
 ```
 
 ## 채점 기록

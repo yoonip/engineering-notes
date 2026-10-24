@@ -31,7 +31,7 @@ int solution(vector<int> common) {
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
 // int solution(vector<int> common) {  // 다음에 올 숫자 풀이 시작
-//     if (common[1] - common[0] == common[2] - common[1]) return common.back() + common[1] - common[0];  // if 조건이 참이면 지정한 결과를 즉시 반환하여 함수 실행을 끝
+//     if (common[1] - common[0] == common[2] - common[1]) return common.back() + common[1] - common[0];  // 앞의 두 차이가 같으면 등차수열이므로 마지막 항에 공차를 더해 반환
 //     return common.back() * (common[1] / common[0]);  // 등비수열이면 마지막 항에 공비를 곱한 다음 항
 // }  // 블록 끝
 

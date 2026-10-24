@@ -27,7 +27,7 @@ int solution(int num1, int num2) { return num1 == num2 ? 1 : -1; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int num1, int num2) { return num1 == num2 ? 1 : -1; }  // 숫자 비교하기 풀이 시작
+// int solution(int num1, int num2) { return num1 == num2 ? 1 : -1; }  // == 비교 결과에 따라 두 수가 같으면 1, 다르면 -1 반환
 
 // 풀이 요약
-// 문제에서 요구한 두 결과값 1과 -1을 조건에 맞춰 반환
+// == 비교 결과에 따라 두 수가 같으면 1, 다르면 -1 반환

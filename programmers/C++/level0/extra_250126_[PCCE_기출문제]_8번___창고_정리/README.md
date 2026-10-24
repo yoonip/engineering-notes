@@ -64,8 +64,8 @@ string solution(vector<string> storage, vector<int> num) {
 //
 // string solution(vector<string> storage, vector<int> num) {  // [PCCE 기출문제] 8번 / 창고 정리 풀이 시작
 //     int num_item = 0;  // 지금까지 합쳐 둔 서로 다른 물건 종류 수
-//     vector<string> clean_storage(storage.size());  // clean_storage를 보관할 컨테이너 준비
-//     vector<int> clean_num(num.size());  // clean_num를 보관할 컨테이너 준비
+//     vector<string> clean_storage(storage.size());  // 중복 물품을 합친 뒤의 물품 이름을 저장할 목록
+//     vector<int> clean_num(num.size());  // 중복 물품을 합친 뒤 이름별 수량을 저장할 목록
 //
 //     for(int i=0; i<storage.size(); i++){  // 원래 창고 기록을 하나씩 합치기
 //         int clean_idx = -1;  // 같은 물건을 아직 찾지 못했다는 표시

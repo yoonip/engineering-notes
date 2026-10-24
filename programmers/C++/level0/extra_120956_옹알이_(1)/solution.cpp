@@ -45,7 +45,7 @@ int solution(vector<string> babbling) {
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
 // int solution(vector<string> babbling) {  // 옹알이 (1) 풀이 시작
-//     vector<string> sounds = {"aya", "ye", "woo", "ma"};  // sounds를 보관할 컨테이너 준비
+//     vector<string> sounds = {"aya", "ye", "woo", "ma"};  // 각 단어에서 한 번씩만 사용할 수 있는 네 발음 목록
 //     int answer = 0;  // 허용 발음으로 끝까지 읽을 수 있는 단어 수
 //     for (const string& word : babbling) {  // 옹알이 단어를 하나씩 판정
 //         size_t pos = 0;  // 현재 단어에서 아직 읽지 않은 시작 위치

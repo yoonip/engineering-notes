@@ -27,7 +27,7 @@ int solution(int num1, int num2) { return num1 * 1000 / num2; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int num1, int num2) { return num1 * 1000 / num2; }  // 두 수의 나눗셈 풀이 시작
+// int solution(int num1, int num2) { return num1 * 1000 / num2; }  // num1에 먼저 1000을 곱한 뒤 정수 나눗셈으로 비율의 1000배 정수 부분 계산
 
 // 풀이 요약
-// num1에 1000을 먼저 곱한 뒤 num2로 정수 나눗셈해 요구한 값을 계산
+// num1에 먼저 1000을 곱한 뒤 정수 나눗셈으로 비율의 1000배 정수 부분 계산

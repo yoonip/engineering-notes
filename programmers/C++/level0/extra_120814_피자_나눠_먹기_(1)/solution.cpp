@@ -27,7 +27,7 @@ int solution(int n) { return (n + 6) / 7; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int n) { return (n + 6) / 7; }  // 피자 나눠 먹기 (1) 풀이 시작
+// int solution(int n) { return (n + 6) / 7; }  // 7로 나눠떨어지지 않는 인원도 한 판이 필요하므로 (n+6)/7로 올림 계산
 
 // 풀이 요약
-// 7조각 피자 한 판으로 부족한 나머지가 있으면 한 판을 더 주문
+// 7로 나눠떨어지지 않는 인원도 한 판이 필요하므로 (n+6)/7로 올림 계산

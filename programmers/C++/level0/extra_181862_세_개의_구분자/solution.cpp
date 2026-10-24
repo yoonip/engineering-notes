@@ -37,7 +37,7 @@ vector<string> solution(string myStr) {
 //     vector<string> answer;  // a·b·c 사이에서 나온 단어 목록
 //     string part;  // 구분자 사이에서 읽은 현재 단어
 //     while (stream >> part) answer.push_back(part);  // 연속 구분자로 생긴 빈 조각은 건너뛰고 단어만 추가
-//     if (answer.empty()) answer.push_back("EMPTY");  // if로 조건을 검사하고 push_back으로 해당 원소를 결과 뒤에 추가
+//     if (answer.empty()) answer.push_back("EMPTY");  // 세 구분자로 나눈 단어가 하나도 없으면 EMPTY 한 개 추가
 //     return answer;  // 완성한 결과 반환
 // }  // 블록 끝
 

@@ -6,7 +6,7 @@
 
 ## 풀이
 
-세 번째 정수 변 c는 |a - b| < c < a + b인 범위. 양 끝을 제외한 정수 개수는 2 × min(a, b) - 1
+가능한 셋째 변은 |a-b|보다 크고 a+b보다 작으므로 2*min(a,b)-1개
 
 ## 코드와 줄별 설명
 
@@ -42,10 +42,10 @@ int solution(vector<int> sides) { return 2 * min(sides[0], sides[1]) - 1; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(vector<int> sides) { return 2 * min(sides[0], sides[1]) - 1; }  // 삼각형의 완성조건 (2) 풀이 시작
+// int solution(vector<int> sides) { return 2 * min(sides[0], sides[1]) - 1; }  // 가능한 셋째 변은 |a-b|보다 크고 a+b보다 작으므로 2*min(a,b)-1개
 
 // 풀이 요약
-// 세 번째 정수 변 c는 |a - b| < c < a + b인 범위. 양 끝을 제외한 정수 개수는 2 × min(a, b) - 1
+// 가능한 셋째 변은 |a-b|보다 크고 a+b보다 작으므로 2*min(a,b)-1개
 ```
 
 ## 채점 기록

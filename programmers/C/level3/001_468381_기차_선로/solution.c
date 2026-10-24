@@ -51,7 +51,7 @@ int solution(int** grid, size_t grid_rows, size_t grid_cols) {
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// typedef struct { int size, cols; const int* original; int* rails; int* visited; int (*neighbors)[4]; } Context;  // 전체 칸 수 / 격자 열 수 / 고정된 원래 선로 / 현재 탐색에서 놓은 선로 / 가로와 세로 통과 축를 한 상태로 묶기
+// typedef struct { int size, cols; const int* original; int* rails; int* visited; int (*neighbors)[4]; } Context;  // 전체 칸 수 / 격자 열 수 / 고정된 원래 선로 / 현재 탐색에서 놓은 선로 / 가로와 세로 통과 축을 한 상태로 묶기
 // static int search(Context* ctx, int pos, int direction, unsigned remaining, unsigned pending) {  // 현재 칸·진입 방향·필수 선로·미완성 교차를 상태로 선로 배치 탐색
 //     static const unsigned ends[8] = {0,5,10,15,12,9,3,6};  // 선로별 연결 방향 비트 저장
 //     if (pos < 0 || ctx->original[pos] == -1) return 0;  // 격자 밖이거나 막힌 칸이면 이 경로는 실패
@@ -92,4 +92,4 @@ int solution(int** grid, size_t grid_rows, size_t grid_cols) {
 // 풀이 요약
 // 기차가 실제로 움직이는 경로를 DFS로 만들기; 빈칸의 직선은 나중에 다른 축으로 다시 지날 때 교차 선로로 확정하기
 // 기존 선로는 모두 지나야 하며, 기존 3번 선로는 두 축을 모두 사용해야 하기; 같은 방향 재방문은 순환이므로 중단하기
-// 예: [[1,7],[0,2]]는 오른쪽으로 간 뒤 아래로 도착하는 기존 경로 한 가지.; 빈칸은 그대로 두므로 답 1
+// 예: [[1,7],[0,2]]는 오른쪽으로 간 뒤 아래로 도착하는 기존 경로 한 가지; 빈칸은 그대로 두므로 답 1

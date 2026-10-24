@@ -27,7 +27,7 @@ int solution(int num1, int num2) { return num1 % num2; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int num1, int num2) { return num1 % num2; }  // 나머지 구하기 풀이 시작
+// int solution(int num1, int num2) { return num1 % num2; }  // % 연산자로 num1을 num2로 나눈 나머지 반환
 
 // 풀이 요약
-// 나머지 연산자 %를 사용
+// % 연산자로 num1을 num2로 나눈 나머지 반환

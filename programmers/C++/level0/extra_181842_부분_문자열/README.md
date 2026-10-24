@@ -6,7 +6,7 @@
 
 ## 풀이
 
-포함 관계의 방향을 주의해 str1이 str2 안에 있는지 확인
+str2에서 str1을 찾은 위치가 npos가 아니면 1, 없으면 0 반환
 
 ## 코드와 줄별 설명
 
@@ -38,10 +38,10 @@ int solution(string str1, string str2) { return str2.find(str1) != string::npos;
 // #include <cstdlib>  // 정수 변환과 절댓값 등 표준 함수
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(string str1, string str2) { return str2.find(str1) != string::npos; }  // 부분 문자열 풀이 시작
+// int solution(string str1, string str2) { return str2.find(str1) != string::npos; }  // str2에서 str1을 찾은 위치가 npos가 아니면 1, 없으면 0 반환
 
 // 풀이 요약
-// 포함 관계의 방향을 주의해 str1이 str2 안에 있는지 확인
+// str2에서 str1을 찾은 위치가 npos가 아니면 1, 없으면 0 반환
 ```
 
 ## 채점 기록

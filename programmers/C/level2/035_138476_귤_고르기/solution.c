@@ -49,4 +49,4 @@ int solution(int k, int tangerine[], size_t tangerine_len) {
 
 // 풀이 요약
 // 크기별 개수를 내림차순으로 정렬해 많은 종류부터 고르면 같은 종류 수로 가장 많은 귤을 담을 수 있음
-// 예: k=6이면 개수 2,2,2인 세 종류 선택.; 귤 N개·크기 U종류일 때 시간 O(N+U log U), 공간 O(U)
+// 예: k=6이면 개수 2,2,2인 세 종류 선택; 귤 N개·크기 U종류일 때 시간 O(N+U log U), 공간 O(U)

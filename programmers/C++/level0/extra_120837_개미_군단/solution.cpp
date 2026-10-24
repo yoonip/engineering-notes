@@ -27,7 +27,7 @@ int solution(int hp) { return hp / 5 + hp % 5 / 3 + hp % 5 % 3; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int hp) { return hp / 5 + hp % 5 / 3 + hp % 5 % 3; }  // 개미 군단 풀이 시작
+// int solution(int hp) { return hp / 5 + hp % 5 / 3 + hp % 5 % 3; }  // 공격력 5, 3, 1 순서로 몫과 나머지를 써서 필요한 개미 수 합산
 
 // 풀이 요약
-// 공격력 5인 개미부터 최대한 쓰고 남은 체력을 3과 1로 채우기. 이 공격력 조합에서는 큰 순서대로 배치하면 최소 병력
+// 공격력 5, 3, 1 순서로 몫과 나머지를 써서 필요한 개미 수 합산

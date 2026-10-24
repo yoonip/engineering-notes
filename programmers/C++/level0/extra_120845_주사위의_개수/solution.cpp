@@ -27,7 +27,7 @@ int solution(vector<int> box, int n) { return (box[0] / n) * (box[1] / n) * (box
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(vector<int> box, int n) { return (box[0] / n) * (box[1] / n) * (box[2] / n); }  // 주사위의 개수 풀이 시작
+// int solution(vector<int> box, int n) { return (box[0] / n) * (box[1] / n) * (box[2] / n); }  // 가로·세로·높이에 각각 들어가는 주사위 개수를 정수 나눗셈으로 구해 곱하기
 
 // 풀이 요약
-// 각 방향에 몇 개씩 들어가는지 따로 구해 곱하기. 전체 부피만 나누면 남는 틈을 잘못 계산할 수 있음
+// 가로·세로·높이에 각각 들어가는 주사위 개수를 정수 나눗셈으로 구해 곱하기

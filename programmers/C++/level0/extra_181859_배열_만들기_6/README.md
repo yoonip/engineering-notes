@@ -52,7 +52,7 @@ vector<int> solution(vector<int> arr) {
 //         if (!answer.empty() && answer.back() == value) answer.pop_back();  // 끝 값이 새 값과 같으면 둘을 상쇄해 끝 원소 삭제
 //         else answer.push_back(value);  // 비었거나 끝 값과 다르면 새 값 추가
 //     }  // 블록 끝
-//     if (answer.empty()) answer.push_back(-1);  // if로 조건을 검사하고 push_back으로 해당 원소를 결과 뒤에 추가
+//     if (answer.empty()) answer.push_back(-1);  // 서로 같은 인접 값을 지운 뒤 비었으면 -1 한 개 추가
 //     return answer;  // 완성한 결과 반환
 // }  // 블록 끝
 

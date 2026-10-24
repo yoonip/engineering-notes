@@ -35,7 +35,7 @@ vector<int> solution(vector<int> numlist, int n) {
 //
 // vector<int> solution(vector<int> numlist, int n) {  // 특이한 정렬 풀이 시작
 //     sort(numlist.begin(), numlist.end(), [n](int a, int b) {  // 람다 함수에 기준값 n을 캡처하여 거리와 동률 조건에 따라 정렬
-//         if (abs(a - n) != abs(b - n)) return abs(a - n) < abs(b - n);  // if 조건이 참이면 지정한 결과를 즉시 반환하여 함수 실행을 끝
+//         if (abs(a - n) != abs(b - n)) return abs(a - n) < abs(b - n);  // n과의 거리가 다르면 절댓값이 작은 수를 먼저 배치
 //         return a > b;  // n과의 거리가 같으면 더 큰 수를 먼저 배치
 //     });  // 비교 함수와 호출 끝
 //     return numlist;  // 거리 우선, 동률이면 큰 값 우선으로 정렬한 배열

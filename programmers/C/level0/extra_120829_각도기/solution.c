@@ -15,7 +15,7 @@ int solution(int angle) { return angle < 90 ? 1 : angle == 90 ? 2 : angle < 180 
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 // #include <limits.h>  // 정수형 최솟값·최댓값 상수
 //
-// int solution(int angle) { return angle < 90 ? 1 : angle == 90 ? 2 : angle < 180 ? 3 : 4; }  // 각도기 풀이 시작
+// int solution(int angle) { return angle < 90 ? 1 : angle == 90 ? 2 : angle < 180 ? 3 : 4; }  // 중첩 삼항식으로 예각 1, 직각 2, 둔각 3, 평각 4 구분
 
 // 풀이 요약
-// 각도를 90도 미만, 90도, 180도 미만, 180도의 순서로 분류하여 문제에서 지정한 번호를 반환
+// 중첩 삼항식으로 예각 1, 직각 2, 둔각 3, 평각 4 구분

@@ -15,7 +15,7 @@ int solution(int num1, int num2) { return num1 == num2 ? 1 : -1; }
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 // #include <limits.h>  // 정수형 최솟값·최댓값 상수
 //
-// int solution(int num1, int num2) { return num1 == num2 ? 1 : -1; }  // 숫자 비교하기 풀이 시작
+// int solution(int num1, int num2) { return num1 == num2 ? 1 : -1; }  // == 비교 결과에 따라 두 수가 같으면 1, 다르면 -1 반환
 
 // 풀이 요약
-// 동등 비교 연산자 ==로 두 수가 같은지 확인하고, 같으면 1을 다르면 -1을 반환
+// == 비교 결과에 따라 두 수가 같으면 1, 다르면 -1 반환

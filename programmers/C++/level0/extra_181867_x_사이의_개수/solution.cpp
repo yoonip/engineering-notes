@@ -33,7 +33,7 @@ vector<int> solution(string myString) {
 // vector<int> solution(string myString) {  // x 사이의 개수 풀이 시작
 //     vector<int> answer(1, 0);  // 첫 조각의 길이 0으로 시작하고 x를 만나면 다음 조각 추가
 //     for (char c : myString) {  // x를 경계로 조각을 구분하며 문자 확인
-//         if (c == 'x') answer.push_back(0);  // if로 조건을 검사하고 push_back으로 해당 원소를 결과 뒤에 추가
+//         if (c == 'x') answer.push_back(0);  // x를 만나면 다음 구간의 길이를 셀 0을 결과 뒤에 추가
 //         else ++answer.back();  // x가 아닌 문자는 현재 조각의 길이에 포함
 //     }  // 블록 끝
 //     return answer;  // 완성한 결과 반환

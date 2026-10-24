@@ -71,20 +71,20 @@ char** solution(const char* players[], size_t players_len, const char* callings[
 // }  // 이 범위 끝
 // static size_t map_slot(MapEntry* map, size_t capacity, const char* key) {  // 같은 이름 또는 빈 해시 칸까지 선형 탐색
 //     size_t slot = hash_word(key) & (capacity - 1);  // 2의 거듭제곱 크기에 맞춰 비트 AND로 해시 인덱스를 계산
-//     while (map[slot].key && strcmp(map[slot].key, key)) slot = (slot + 1) & (capacity - 1);  // 2의 거듭제곱 크기에 맞춰 비트 AND로 해시 인덱스를 계산
+//     while (map[slot].key && strcmp(map[slot].key, key)) slot = (slot + 1) & (capacity - 1);  // 빈 칸이나 같은 선수 이름을 만날 때까지 충돌 칸을 한 칸씩 이동
 //     return slot;  // 선수 이름의 해시 칸 반환
 // }  // 이 범위 끝
 // char** solution(const char* players[], size_t players_len, const char* callings[], size_t callings_len) {  // 선수 이름별 현재 위치를 해시 테이블에 저장; 호명된 선수와 바로 앞 선수를 교환하고 두 위치를 함께 갱신
 //     size_t capacity = 1; while (capacity < players_len * 2) capacity *= 2;  // 선수 수 두 배 이상의 2의 거듭제곱으로 해시표 크기 설정
 //     MapEntry* position = calloc(capacity, sizeof(MapEntry));  // 선수 이름별 현재 순위 공간 확보하고 0으로 시작
 //     char** answer = malloc(players_len * sizeof(char*));  // 현재 순서로 놓은 선수 이름 공간 확보
-//     for (size_t i = 0; i < players_len; ++i) {  // 호명된 선수의 현재 위치 순서대로 확인
-//         answer[i] = copy_text(players[i]); size_t slot = map_slot(position, capacity, players[i]); position[slot].key = players[i]; position[slot].value = (int)i;  // 현재 순서로 놓은 선수 이름 / 선수 이름의 해시 칸 갱신
+//     for (size_t i = 0; i < players_len; ++i) {  // 입력 선수 순서대로 초기 등수를 해시표에 등록
+//         answer[i] = copy_text(players[i]); size_t slot = map_slot(position, capacity, players[i]); position[slot].key = players[i]; position[slot].value = (int)i;  // 선수 이름을 결과에 복사하고 이름별 초기 순위 등록
 //     }  // 이 범위 끝
 //     for (size_t q = 0; q < callings_len; ++q) {  // 처리할 호명 위치 순서대로 확인
 //         size_t slot = map_slot(position, capacity, callings[q]); int i = position[slot].value;  // 선수 이름의 해시 칸 / 호명된 선수의 현재 위치 저장
-//         char* front = answer[i - 1]; answer[i - 1] = answer[i]; answer[i] = front;  // 바로 앞 선수 이름 / 현재 순서로 놓은 선수 이름 저장
-//         position[slot].value = i - 1; position[map_slot(position, capacity, front)].value = i;  // 선수 이름별 현재 순위 / 선수 이름의 해시 칸 / 호명된 선수의 현재 위치 / 해시표 칸 수 확인
+//         char* front = answer[i - 1]; answer[i - 1] = answer[i]; answer[i] = front;  // 호명된 선수와 바로 앞 선수의 이름을 교환
+//         position[slot].value = i - 1; position[map_slot(position, capacity, front)].value = i;  // 추월한 선수는 i-1, 밀린 선수는 i로 해시표 순위를 함께 갱신
 //     }  // 이 범위 끝
 //     free(position);  // 선수 이름별 현재 순위 임시 공간 정리
 //     return answer;  // 현재 순서로 놓은 선수 이름 반환

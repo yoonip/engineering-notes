@@ -23,7 +23,7 @@ int solution(vector<int> date1, vector<int> date2) { return date1 < date2; }
 // #include <cstdlib>  // 정수 변환과 절댓값 등 표준 함수
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(vector<int> date1, vector<int> date2) { return date1 < date2; }  // 날짜 비교하기 풀이 시작
+// int solution(vector<int> date1, vector<int> date2) { return date1 < date2; }  // 연·월·일 벡터를 사전순 비교해 date1이 앞선 날짜이면 1, 아니면 0 반환
 
 // 풀이 요약
-// 연·월·일 순서의 리스트 비교는 날짜의 선후 비교와 같음. 같은 날짜는 0임
+// 연·월·일 벡터를 사전순 비교해 date1이 앞선 날짜이면 1, 아니면 0 반환

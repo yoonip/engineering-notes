@@ -27,7 +27,7 @@ int solution(int angle) { return angle < 90 ? 1 : angle == 90 ? 2 : angle < 180 
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int angle) { return angle < 90 ? 1 : angle == 90 ? 2 : angle < 180 ? 3 : 4; }  // 각도기 풀이 시작
+// int solution(int angle) { return angle < 90 ? 1 : angle == 90 ? 2 : angle < 180 ? 3 : 4; }  // 중첩 삼항식으로 예각 1, 직각 2, 둔각 3, 평각 4 구분
 
 // 풀이 요약
-// 90도와 180도의 경계값을 별도로 구분
+// 중첩 삼항식으로 예각 1, 직각 2, 둔각 3, 평각 4 구분

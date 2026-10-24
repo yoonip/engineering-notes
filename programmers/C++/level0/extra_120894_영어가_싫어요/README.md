@@ -54,13 +54,13 @@ long long solution(string numbers) {
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
 // long long solution(string numbers) {  // 영어가 싫어요 풀이 시작
-//     vector<string> words = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};  // words를 보관할 컨테이너 준비
+//     vector<string> words = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};  // 0부터 9까지 숫자와 영어 이름을 대응시키는 목록
 //     long long answer = 0;  // 영어 숫자를 읽으며 십진수로 쌓을 값
 //     size_t pos = 0;  // 아직 해석하지 않은 영어 숫자의 시작 위치
 //     while (pos < numbers.size()) {  // 모든 영어 숫자를 읽을 때까지 반복
 //         for (int d = 0; d < 10; ++d)  // 현재 부분과 일치하는 zero~nine 찾기
 //             if (numbers.compare(pos, words[d].size(), words[d]) == 0) {  // 현재 위치에 해당 숫자의 영어 이름이 맞는 경우
-//                 answer = answer * 10 + d; pos += words[d].size(); break;  // break는 현재 계산을 마친 뒤 가장 안쪽 반복문을 종료
+//                 answer = answer * 10 + d; pos += words[d].size(); break;  // 읽은 숫자를 십진수 뒤에 붙이고 단어 길이만큼 이동한 뒤 숫자 검색 종료
 //             }  // 블록 끝
 //     }  // 블록 끝
 //     return answer;  // 완성한 결과 반환

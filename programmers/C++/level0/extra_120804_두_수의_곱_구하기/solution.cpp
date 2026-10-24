@@ -27,7 +27,7 @@ int solution(int num1, int num2) { return num1 * num2; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int num1, int num2) { return num1 * num2; }  // 두 수의 곱 구하기 풀이 시작
+// int solution(int num1, int num2) { return num1 * num2; }  // * 연산자로 두 정수의 곱 반환
 
 // 풀이 요약
-// 두 입력 정수를 곱하기
+// * 연산자로 두 정수의 곱 반환

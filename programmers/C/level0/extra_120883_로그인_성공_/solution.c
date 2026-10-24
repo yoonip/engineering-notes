@@ -32,7 +32,7 @@ char* solution(const char* id_pw[], size_t id_pw_len, const char*** db, size_t d
 //     for (size_t i = 0; i < db_rows; ++i)  // 등록된 계정을 차례로 검색
 //         if (strcmp(id_pw[0], db[i][0]) == 0) {  // 입력 아이디와 같은 계정을 찾으면 그 계정의 비밀번호 비교
 //             result = strcmp(id_pw[1], db[i][1]) == 0 ? "login" : "wrong pw";  // 아이디가 같은 계정의 비밀번호를 비교해 로그인 성공·실패 구분
-//             break;  // break는 현재 계산을 마친 뒤 가장 안쪽 반복문을 종료
+//             break;  // 같은 아이디의 비밀번호 비교를 마쳤으므로 회원 검색 종료
 //         }  // 블록 끝
 //     char* answer = malloc(strlen(result) + 1);  // answer를 저장할 메모리 확보. 문자열 끝의 \0 자리도 포함
 //     strcpy(answer, result);  // strcpy는 종료 문자까지 포함하여 문자열을 결과 공간에 복사

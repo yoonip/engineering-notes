@@ -6,7 +6,7 @@
 
 ## 풀이
 
-정수를 문자열 자료형으로 바꾸기
+to_string으로 정수를 십진수 문자열로 변환해 반환
 
 ## 코드와 줄별 설명
 
@@ -38,10 +38,10 @@ string solution(int n) { return to_string(n); }
 // #include <cstdlib>  // 정수 변환과 절댓값 등 표준 함수
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// string solution(int n) { return to_string(n); }  // 문자열로 변환 풀이 시작
+// string solution(int n) { return to_string(n); }  // to_string으로 정수를 십진수 문자열로 변환해 반환
 
 // 풀이 요약
-// 정수를 문자열 자료형으로 바꾸기
+// to_string으로 정수를 십진수 문자열로 변환해 반환
 ```
 
 ## 채점 기록

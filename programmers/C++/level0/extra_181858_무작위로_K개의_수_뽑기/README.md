@@ -52,7 +52,7 @@ vector<int> solution(vector<int> arr, int k) {
 //     unordered_set<int> seen;  // unordered_set으로 중복 없는 값의 집합을 준비
 //     for (int value : arr) {  // 입력 순서대로 처음 보는 값인지 확인
 //         if ((int)answer.size() == k) break;  // 서로 다른 값 k개를 모았으면 더 읽을 필요 없음
-//         if (seen.insert(value).second) answer.push_back(value);  // if로 조건을 검사하고 push_back으로 해당 원소를 결과 뒤에 추가
+//         if (seen.insert(value).second) answer.push_back(value);  // seen에 새로 들어간 값일 때만 결과에 넣어 중복 선택 방지
 //     }  // 블록 끝
 //     answer.resize(k, -1);  // k개보다 모자란 자리만 -1로 채우기
 //     return answer;  // 완성한 결과 반환

@@ -35,7 +35,7 @@ int solution(string A, string B) {
 //
 // int solution(string A, string B) {  // 문자열 밀기 풀이 시작
 //     for (size_t shift = 0; shift < A.size(); ++shift) {  // 오른쪽 이동 횟수를 0부터 작은 순서로 시도
-//         if (A == B) return static_cast<int>(shift);  // if 조건이 참이면 지정한 결과를 즉시 반환하여 함수 실행을 끝
+//         if (A == B) return static_cast<int>(shift);  // A가 B와 같아진 첫 순간의 오른쪽 회전 횟수를 int로 반환
 //         rotate(A.begin(), A.end() - 1, A.end());  // rotate는 지정한 중간 위치의 원소가 맨 앞에 오도록 구간을 회전
 //     }  // 블록 끝
 //     return -1;  // 모든 회전에서도 목표 문자열을 만들 수 없음

@@ -6,7 +6,7 @@
 
 ## 풀이
 
-2,4,6 순서로 짝수만 만들어 더하기
+half=n/2이면 짝수 합은 2*(1+...+half)이므로 half*(half+1) 반환
 
 ## 코드와 줄별 설명
 
@@ -42,10 +42,10 @@ int solution(int n) { int half = n / 2; return half * (half + 1); }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int n) { int half = n / 2; return half * (half + 1); }  // 짝수의 합 풀이 시작
+// int solution(int n) { int half = n / 2; return half * (half + 1); }  // half=n/2이면 짝수 합은 2*(1+...+half)이므로 half*(half+1) 반환
 
 // 풀이 요약
-// 2,4,6 순서로 짝수만 만들어 더하기
+// half=n/2이면 짝수 합은 2*(1+...+half)이므로 half*(half+1) 반환
 ```
 
 ## 채점 기록

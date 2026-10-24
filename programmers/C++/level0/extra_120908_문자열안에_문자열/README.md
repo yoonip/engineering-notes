@@ -6,7 +6,7 @@
 
 ## 풀이
 
-문제에서 미포함 결과를 0이 아닌 2로 요구하는 점을 주의
+str1에서 str2를 찾은 결과가 npos이면 2, 찾았으면 1 반환
 
 ## 코드와 줄별 설명
 
@@ -42,10 +42,10 @@ int solution(string str1, string str2) { return str1.find(str2) == string::npos 
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(string str1, string str2) { return str1.find(str2) == string::npos ? 2 : 1; }  // 문자열안에 문자열 풀이 시작
+// int solution(string str1, string str2) { return str1.find(str2) == string::npos ? 2 : 1; }  // str1에서 str2를 찾은 결과가 npos이면 2, 찾았으면 1 반환
 
 // 풀이 요약
-// 문제에서 미포함 결과를 0이 아닌 2로 요구하는 점을 주의
+// str1에서 str2를 찾은 결과가 npos이면 2, 찾았으면 1 반환
 ```
 
 ## 채점 기록

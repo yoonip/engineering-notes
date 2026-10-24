@@ -27,7 +27,7 @@ int solution(int slice, int n) { return (n + slice - 1) / slice; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int slice, int n) { return (n + slice - 1) / slice; }  // 피자 나눠 먹기 (3) 풀이 시작
+// int solution(int slice, int n) { return (n + slice - 1) / slice; }  // n+slice-1을 slice로 나눠 n명이 먹을 피자 판 수를 올림 계산
 
 // 풀이 요약
-// 사람 수를 한 판의 조각 수로 나눈 값을 올림해 모두 한 조각 이상 받을 판 수 계산
+// n+slice-1을 slice로 나눠 n명이 먹을 피자 판 수를 올림 계산

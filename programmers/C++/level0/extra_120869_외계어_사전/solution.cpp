@@ -42,7 +42,7 @@ int solution(vector<string> spell, vector<string> dic) {
 //     sort(target.begin(), target.end());  // target를 오름차순 정렬
 //     for (string word : dic) {  // 사전 단어를 하나씩 정렬해 글자 구성 비교
 //         sort(word.begin(), word.end());  // word를 오름차순 정렬
-//         if (word == target) return 1;  // if 조건이 참이면 지정한 결과를 즉시 반환하여 함수 실행을 끝
+//         if (word == target) return 1;  // 정렬한 글자 구성이 같으면 spell을 정확히 한 번씩 쓴 단어이므로 1 반환
 //     }  // 블록 끝
 //     return 2;  // 주어진 글자를 정확히 한 번씩 쓴 단어가 없음
 // }  // 블록 끝

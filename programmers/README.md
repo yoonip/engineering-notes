@@ -8,6 +8,8 @@
 | C++ | [C++ 풀이](C%2B%2B/README.md) |
 | Python | [Python 풀이](Python/README.md) |
 
+[C·C++ 채점과 게시 확인](CC_VERIFICATION.md)
+
 ## 기존 레벨별 목록
 
 Python 풀이의 새 위치와 SQL 자료를 함께 연결하는 기존 제출 기록입니다. Python만 보려면 [Python 레벨별 목록](Python/README.md)을 확인하면 됩니다.

@@ -6,7 +6,7 @@
 
 ## 풀이
 
-포함 관계의 방향을 주의해 str1이 str2 안에 있는지 확인
+str2 안에서 str1을 찾아 NULL이 아니면 1, 없으면 0 반환
 
 ## 코드와 줄별 설명
 
@@ -28,10 +28,10 @@ int solution(const char* str1, const char* str2) { return strstr(str2, str1) != 
 // #include <string.h>  // 문자열 길이·복사·비교 함수
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 //
-// int solution(const char* str1, const char* str2) { return strstr(str2, str1) != NULL; }  // 부분 문자열 풀이 시작
+// int solution(const char* str1, const char* str2) { return strstr(str2, str1) != NULL; }  // str2 안에서 str1을 찾아 NULL이 아니면 1, 없으면 0 반환
 
 // 풀이 요약
-// 포함 관계의 방향을 주의해 str1이 str2 안에 있는지 확인
+// str2 안에서 str1을 찾아 NULL이 아니면 1, 없으면 0 반환
 ```
 
 ## 채점 기록

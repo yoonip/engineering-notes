@@ -15,7 +15,7 @@ int solution(int num1, int num2) { return num1 + num2; }
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 // #include <limits.h>  // 정수형 최솟값·최댓값 상수
 //
-// int solution(int num1, int num2) { return num1 + num2; }  // 두 수의 합 구하기 풀이 시작
+// int solution(int num1, int num2) { return num1 + num2; }  // + 연산자로 두 정수의 합 반환
 
 // 풀이 요약
-// 두 입력 정수의 합을 반환
+// + 연산자로 두 정수의 합 반환

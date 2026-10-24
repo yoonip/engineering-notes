@@ -15,7 +15,7 @@ int solution(const char* str1, const char* str2) { return strstr(str1, str2) ? 1
 // #include <ctype.h>  // 문자 검사와 대소문자 변환
 // #include <limits.h>  // 정수형 최솟값·최댓값 상수
 //
-// int solution(const char* str1, const char* str2) { return strstr(str1, str2) ? 1 : 2; }  // 문자열안에 문자열 풀이 시작
+// int solution(const char* str1, const char* str2) { return strstr(str1, str2) ? 1 : 2; }  // strstr로 str2가 str1 안에 있으면 1, 없으면 2 반환
 
 // 풀이 요약
-// strstr로 str1 안에 str2가 연속된 부분 문자열로 있는지 확인. 발견한 위치가 있으면 1, 없으면 2를 반환
+// strstr로 str2가 str1 안에 있으면 1, 없으면 2 반환

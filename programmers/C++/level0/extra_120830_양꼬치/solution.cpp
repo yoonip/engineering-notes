@@ -27,7 +27,7 @@ int solution(int n, int k) { return n * 12000 + (k - n / 10) * 2000; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int n, int k) { return n * 12000 + (k - n / 10) * 2000; }  // 양꼬치 풀이 시작
+// int solution(int n, int k) { return n * 12000 + (k - n / 10) * 2000; }  // 양꼬치 n개와 서비스 음료 n/10잔을 뺀 유료 음료의 가격 합산
 
 // 풀이 요약
-// 양꼬치 10인분마다 무료인 음료 n / 10잔을 음료 총수에서 빼고 요금 계산
+// 양꼬치 n개와 서비스 음료 n/10잔을 뺀 유료 음료의 가격 합산

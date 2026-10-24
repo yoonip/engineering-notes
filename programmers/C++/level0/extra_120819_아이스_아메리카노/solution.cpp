@@ -27,7 +27,7 @@ vector<int> solution(int money) { return {money / 5500, money % 5500}; }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// vector<int> solution(int money) { return {money / 5500, money % 5500}; }  // 아이스 아메리카노 풀이 시작
+// vector<int> solution(int money) { return {money / 5500, money % 5500}; }  // 5500으로 나눈 몫은 커피 잔 수, 나머지는 잔돈으로 묶어 반환
 
 // 풀이 요약
-// 아메리카노 한 잔 가격 5500원으로 가진 돈을 나누기. 몫은 최대 잔 수이고 나머지는 구매 후 남는 돈임
+// 5500으로 나눈 몫은 커피 잔 수, 나머지는 잔돈으로 묶어 반환

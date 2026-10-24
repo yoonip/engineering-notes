@@ -27,7 +27,7 @@ int solution(int n, int t) { return n * (1 << t); }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(int n, int t) { return n * (1 << t); }  // 세균 증식 풀이 시작
+// int solution(int n, int t) { return n * (1 << t); }  // 1<<t로 2의 t제곱을 만들고 매시간 두 배가 된 세균 수 n*2^t 반환
 
 // 풀이 요약
-// 매 시간 두 배로 증가하므로 n×2^t임
+// 1<<t로 2의 t제곱을 만들고 매시간 두 배가 된 세균 수 n*2^t 반환

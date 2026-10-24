@@ -27,7 +27,7 @@ int solution(vector<int> array, int n) { return count(array.begin(), array.end()
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(vector<int> array, int n) { return count(array.begin(), array.end(), n); }  // 중복된 숫자 개수 풀이 시작
+// int solution(vector<int> array, int n) { return count(array.begin(), array.end(), n); }  // count로 배열 전체에서 n과 같은 원소 개수 세기
 
 // 풀이 요약
-// 표준 알고리즘 count로 배열 전체에서 n과 같은 원소의 개수를 세기
+// count로 배열 전체에서 n과 같은 원소 개수 세기

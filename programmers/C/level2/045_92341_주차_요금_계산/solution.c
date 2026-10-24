@@ -57,4 +57,4 @@ int* solution(int fees[], size_t fees_len, const char* records[], size_t records
 
 // 풀이 요약
 // 입출차를 짝지어 차량별 총 시간을 모으고, 미출차는 23:59로 마감하기; 기본 초과 시간에만 단위 요금을 올림 적용하기
-// 예: 총 334분이면 5000+ceil(154/10)×600=14600.; 기록 R개·차량 C대일 때 시간 O(R+C log C), 공간 O(C)
+// 예: 총 334분이면 5000+ceil(154/10)×600=14600; 기록 R개·차량 C대일 때 시간 O(R+C log C), 공간 O(C)

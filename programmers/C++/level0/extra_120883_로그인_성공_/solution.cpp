@@ -33,7 +33,7 @@ string solution(vector<string> id_pw, vector<vector<string>> db) {
 //
 // string solution(vector<string> id_pw, vector<vector<string>> db) {  // 로그인 성공? 풀이 시작
 //     for (const auto& member : db)  // 기록된 회원 중 같은 아이디 찾기
-//         if (member[0] == id_pw[0]) return member[1] == id_pw[1] ? "login" : "wrong pw";  // if 조건이 참이면 지정한 결과를 즉시 반환하여 함수 실행을 끝
+//         if (member[0] == id_pw[0]) return member[1] == id_pw[1] ? "login" : "wrong pw";  // 아이디가 같은 회원은 비밀번호도 같으면 login, 다르면 wrong pw 반환
 //     return "fail";  // 일치하는 아이디가 없어서 로그인 실패
 // }  // 블록 끝
 

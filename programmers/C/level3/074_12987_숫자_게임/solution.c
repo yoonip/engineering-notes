@@ -25,7 +25,7 @@ int solution(int A[], size_t A_len, int B[], size_t B_len) {
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
 // static int compare(const void* p, const void* q) { int a = *(const int*)p, b = *(const int*)q; return (a > b) - (a < b); }  // 팀 점수를 작은 값부터 정렬
-// int solution(int A[], size_t A_len, int B[], size_t B_len) {  // B의 작은 숫자로 이길 수 있는 가장 작은 A부터 이긴다.; 못 이기는 B는 어떤 남은 상대도 이길 수 없으므로 승리 후보에서 버려도 됨
+// int solution(int A[], size_t A_len, int B[], size_t B_len) {  // B의 작은 숫자로 이길 수 있는 가장 작은 A부터 이긴다; 못 이기는 B는 어떤 남은 상대도 이길 수 없으므로 승리 후보에서 버려도 됨
 //     int* a = malloc(A_len * sizeof(*a)); int* b = malloc(B_len * sizeof(*b));  // A팀의 오름차순 점수 / B팀의 오름차순 점수 공간 확보
 //     memcpy(a, A, A_len * sizeof(*a)); memcpy(b, B, B_len * sizeof(*b));  // A팀의 오름차순 점수 / B팀의 오름차순 점수 복사
 //     qsort(a, A_len, sizeof(*a), compare); qsort(b, B_len, sizeof(*b), compare);  // A팀의 오름차순 점수 / B팀의 오름차순 점수 정렬 순서 맞추기
@@ -36,6 +36,6 @@ int solution(int A[], size_t A_len, int B[], size_t B_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// B의 작은 숫자로 이길 수 있는 가장 작은 A부터 이긴다.; 못 이기는 B는 어떤 남은 상대도 이길 수 없으므로 승리 후보에서 버려도 됨
+// B의 작은 숫자로 이길 수 있는 가장 작은 A부터 이긴다; 못 이기는 B는 어떤 남은 상대도 이길 수 없으므로 승리 후보에서 버려도 됨
 // 예: 정렬한 A=[1,3,5,7], B=[2,2,6,8]은 2>1, 6>3, 8>5로 세 번 승리하기; 남은 숫자끼리는 패배 경기로 배치하면 됨
 // 매칭할 A의 원래 순서는 그 상대 위치에 B를 배치하면 되므로 정렬해도 최대 승점은 같음; 시간 O(N log N), 공간 O(N)

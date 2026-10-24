@@ -27,7 +27,7 @@ int solution(string message) { return 2 * message.size(); }
 //
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(string message) { return 2 * message.size(); }  // 편지 풀이 시작
+// int solution(string message) { return 2 * message.size(); }  // 문자 한 글자당 2cm이므로 문자열 길이에 2를 곱해 편지 길이 반환
 
 // 풀이 요약
-// 공백을 포함한 message의 문자 수에 문자 한 개의 가로 길이 2를 곱하기
+// 문자 한 글자당 2cm이므로 문자열 길이에 2를 곱해 편지 길이 반환

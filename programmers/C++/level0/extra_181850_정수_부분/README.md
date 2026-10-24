@@ -6,7 +6,7 @@
 
 ## 풀이
 
-입력이 음수가 아니므로 int 변환으로 정수 부분을 구하기
+int 형변환으로 소수 부분을 버리고 정수 부분 반환
 
 ## 코드와 줄별 설명
 
@@ -38,10 +38,10 @@ int solution(double flo) { return (int)flo; }
 // #include <cstdlib>  // 정수 변환과 절댓값 등 표준 함수
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
-// int solution(double flo) { return (int)flo; }  // 정수 부분 풀이 시작
+// int solution(double flo) { return (int)flo; }  // int 형변환으로 소수 부분을 버리고 정수 부분 반환
 
 // 풀이 요약
-// 입력이 음수가 아니므로 int 변환으로 정수 부분을 구하기
+// int 형변환으로 소수 부분을 버리고 정수 부분 반환
 ```
 
 ## 채점 기록

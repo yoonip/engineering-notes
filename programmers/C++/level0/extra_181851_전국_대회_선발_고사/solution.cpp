@@ -29,7 +29,7 @@ int solution(vector<int> rank, vector<bool> attendance) {
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
 // int solution(vector<int> rank, vector<bool> attendance) {  // 전국 대회 선발 고사 풀이 시작
-//     vector<int> selected;  // selected를 보관할 컨테이너 준비
+//     vector<int> selected;  // 참석 가능한 학생의 원래 번호를 모아 등수순으로 정렬할 목록
 //     for (int i = 0; i < (int)rank.size(); ++i) if (attendance[i]) selected.push_back(i);  // 참석 가능한 학생의 번호만 선발 후보로 수집
 //     sort(selected.begin(), selected.end(), [&](int a, int b) { return rank[a] < rank[b]; });  // sort로 주어진 구간을 지정한 기준에 따라 오름차순으로 정렬
 //     return 10000 * selected[0] + 100 * selected[1] + selected[2];  // 등수순 세 학생 번호를 10000a + 100b + c로 조합
