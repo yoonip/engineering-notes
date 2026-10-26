@@ -1712,6 +1712,37 @@
       "summary_en": "Observe line, colour, space and materials, then compare style, context and interpretive evidence in drawings and artworks.",
       "category_ko": "인문사회와 예술",
       "category_en": "Humanities, social sciences and arts"
+    },
+    {
+      "number": 68,
+      "slug": "반도체제조공정_semiconductor-fabrication",
+      "title": "반도체 제조 공정",
+      "english_title": "Semiconductor fabrication",
+      "sections": [
+        "소자와 공정의 기초",
+        "웨이퍼·산화·포토·식각",
+        "증착·이온주입·배선",
+        "웨이퍼 검사·패키징",
+        "공정 통합과 로직·메모리 비교"
+      ],
+      "keywords": "wafer, oxidation, lithography, EUV, etch, deposition, ALD, ion implantation, CMP, EDS, packaging, GAA, DRAM, NAND",
+      "path": "반도체제조공정_semiconductor-fabrication/README.md",
+      "references": [
+        "https://news.skhynix.com/en/semiconductor-front-end-process-episode-2/",
+        "https://www.sksiltron.com/ko/wafer/process.do",
+        "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c3/c3s1/"
+      ],
+      "english_sections": [
+        "Device and process fundamentals",
+        "Wafer, oxidation, lithography and etching",
+        "Deposition, implantation and interconnects",
+        "Wafer testing and packaging",
+        "Integration and logic-memory differences"
+      ],
+      "summary_ko": "웨이퍼에서 소자·배선·검사·패키징까지 원리·재료·장비·변수·결함·계측을 연결하며 현대 로직·메모리 공정의 차이를 비교합니다.",
+      "summary_en": "Connects fabrication principles, materials, equipment, variables, defects and metrology from wafers to packaged devices, including modern logic and memory integration.",
+      "category_ko": "반도체 제조 공정",
+      "category_en": "Semiconductor fabrication"
     }
   ],
   "providers": [
@@ -2032,6 +2063,13 @@
         36,
         51,
         54
+      ]
+    },
+    {
+      "title_ko": "반도체 제조 공정",
+      "title_en": "Semiconductor fabrication",
+      "area_numbers": [
+        68
       ]
     },
     {

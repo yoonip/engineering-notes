@@ -17,6 +17,7 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 �
 | --- | --- |
 | [학습 사이트와 채널](학습사이트와채널_learning-resources/README.md) | 국내외 공개 강의, 연구기관·기업 자료, 한국어·해외 영상 해설과 공식 기술 문서 |
 | [공학 기초](공학기초_foundations/README.md) | 수학·물리·회로·시스템·AI의 기초, 분야별 학습과 심화 계산 |
+| [반도체 제조 공정](반도체제조공정_semiconductor-fabrication/README.md) | 웨이퍼·산화·포토·식각·증착과 이온주입·배선·검사·패키징, 공정 통합과 로직·메모리의 차이 |
 | [공학 분야별 해설](분야_topics/README.md) | 소프트웨어, 회로·반도체, 임베디드·제어, GPU·AI |
 | [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md) | 문해력·논리·논증, [수능·LEET 기출 분석](언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)과 자체 연습 |
 | [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md) | [영어 기초와 문법 연습](외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), 외국어 학습 방법과 기술 문서 읽기 |
@@ -69,7 +70,7 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 �
 
 These notes connect circuits, semiconductors, RTL, firmware, systems software, GPUs and AI. They pair explanations with equations, implementations and recorded checks. Reading comprehension and argument reasoning, foreign languages, and humanities have separate reading paths.
 
-- Learning: [Learning sites and channels](학습사이트와채널_learning-resources/README.md), [Engineering foundations](공학기초_foundations/README.md#english), [technical topics](분야_topics/README.md), [reading and argument reasoning](언어이해와추리논증_reading-reasoning/README.md), [foreign languages and technical English](외국어와기술영어_foreign-languages/README.md), [humanities](인문사회_humanities/README.md).
+- Learning: [Learning sites and channels](학습사이트와채널_learning-resources/README.md), [Engineering foundations](공학기초_foundations/README.md#english), [technical topics](분야_topics/README.md), [semiconductor fabrication](반도체제조공정_semiconductor-fabrication/README.md), [reading and argument reasoning](언어이해와추리논증_reading-reasoning/README.md), [foreign languages and technical English](외국어와기술영어_foreign-languages/README.md), [humanities](인문사회_humanities/README.md).
 - Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [product and technology reviews](제품리뷰_reviews/README.md), [AI model references](AI모델실험_model-lab/README.md).
 - Practical work: [Measurement and debugging](현장계측과검증_measurement-validation/README.md), [engineering cases and dated checks](설계와검증사례_engineering-cases/README.md).
 

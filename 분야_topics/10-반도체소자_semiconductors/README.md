@@ -31,6 +31,10 @@ PN, MOS, BJT, CMOS, FinFET, GAA, SOI, SiC/GaN, BSIM, SRAM/DRAM/NAND, TCAD
 
 - [MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계](해설_notes/mos-electrostatics-switching.md)
 
+## 제조 공정과 연결
+
+소자를 실제로 형성하는 과정은 [반도체 제조 공정](../../반도체제조공정_semiconductor-fabrication/README.md)의 [게이트 절연막](../../반도체제조공정_semiconductor-fabrication/02-산화와게이트절연막_oxidation-gate-dielectrics.md)과 [로직·메모리 공정 비교](../../반도체제조공정_semiconductor-fabrication/10-로직과메모리의공정차이_logic-memory-integration.md)로 이어집니다.
+
 ## English
 
 Semiconductor behavior depends on energy bands, electron and hole concentrations, mobility, and electric fields. Doping controls carrier concentration, and a PN junction forms a depletion region and a potential barrier.

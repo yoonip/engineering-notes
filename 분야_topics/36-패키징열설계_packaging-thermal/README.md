@@ -26,6 +26,10 @@ Chiplets, UCIe, 2.5D/3D IC, Interposer, COMSOL, Ansys, Thermal RC, EM/IR
 
 - [시간에 따라 달라지는 방열: thermal RC와 과도 온도](해설_notes/열은바로빠져나가지않는다_thermal-rc-steady-transient.md)
 
+## 제조 공정과 연결
+
+제조·조립 순서와 연결 방식의 비교는 [패키징과 첨단 집적](../../반도체제조공정_semiconductor-fabrication/08-패키징과첨단집적_packaging.md)에서 wire bond·flip-chip·RDL·TSV·hybrid bonding을 따라 읽으실 수 있습니다.
+
 ## English
 
 ### Packaging, chiplets, and thermal behavior

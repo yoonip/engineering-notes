@@ -24,6 +24,7 @@ I hope this repository will be more than a store of finished answers. One reader
 | [Engineering decisions and checks](설계와검증사례_engineering-cases/README.md) | C/C++, RTOS, interrupt/DMA, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, firmware updates, NVMe/eMMC/SD, journal recovery, NAND management, FTL mapping, filesystem repair, backups, RAID parity recovery, I/O retries, ECC, DDR, RTL/CDC, chip, AI and data cases with runnable faults, fixes and dated execution evidence |
 | [Learning sites and channels](학습사이트와채널_learning-resources/README.md) | Korean and international open courses, research resources, technical documentation and educational video channels |
 | [Engineering foundations](공학기초_foundations/README.md) | Foundational and advanced derivations, calculations and checks |
+| [Semiconductor fabrication](반도체제조공정_semiconductor-fabrication/README.md) | Wafer manufacturing, oxidation, lithography, etching, deposition and implantation, interconnects, testing, packaging and process integration |
 | [Technical topics](분야_topics/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
 | [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | CSAT/LEET past questions, choice-by-choice reasoning and original practice |
 | [Foreign languages and technical English](외국어와기술영어_foreign-languages/README.md) | English foundations and exercises, study methods and technical reading |

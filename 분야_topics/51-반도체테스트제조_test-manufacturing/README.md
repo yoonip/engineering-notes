@@ -99,6 +99,10 @@ syndrome이 0이어도 전체 parity가 홀수라면 단일 오류 전제에서 
 
 전체 13비트 입력 8,192개를 대조한 결과도 정한 반경 1 복호 정책과의 일치입니다. 모든 다중 오류의 원본을 알아냈다는 뜻이 아닙니다. 이 코드에는 주소·거래 번호 보호, 실제 메모리 scrubbing·BCH·LDPC·EDAC 장치가 없습니다. [실행 기록](../../설계와검증사례_engineering-cases/검증기록_evidence/ECC오류주입과검출범위_20261021.md)에 기본/최적화와 오류 변이·소스/입력 해시를 연결했습니다. 비교 횟수와 오류 위치 조합을 더해 독립 시험 수나 실제 양산 fault coverage로 해석하지 않습니다.
 
+## 제조 공정과 연결
+
+제조 흐름에서의 검사는 [웨이퍼 검사와 수율](../../반도체제조공정_semiconductor-fabrication/07-웨이퍼검사와수율_eds-yield.md)에서 EDS·ATE·probe card·binning·재검사와 연결해 읽으실 수 있습니다.
+
 ## English
 
 ### DFT, test, and manufacturing

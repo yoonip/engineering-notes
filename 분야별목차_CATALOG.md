@@ -30,6 +30,14 @@
 
 [설계와 검증 사례](설계와검증사례_engineering-cases/README.md)는 C/C++의 길이·소유권, 펌웨어 공개 순서, RTOS 동시성, 인터럽트·DMA·캐시, CAN·SPI·I2C·UART·이더넷, 워치독·리셋, USB·PCIe, 부트로더·업데이트, NVMe·eMMC·SD, 저널 복구, NAND 관리, FTL 매핑, 파일시스템 복구, 백업 복원, RAID, I/O 재시도, ECC, DDR, RTL·CDC와 기준 모델, 칩 산술·시험 ID·자동화, AI 배포·평가와 경보 정밀도, FPGA·SQLite의 오류와 설계 판단을 실제 코드·원인·해결·실행 기록으로 설명합니다. 장비 사양·구성한 계산·로컬 실행·실측의 범위는 각 본문에 구분해 두었습니다.
 
+## 반도체 제조 공정 | Semiconductor fabrication
+
+[반도체 제조 공정](반도체제조공정_semiconductor-fabrication/README.md)에서는 소자 기초를 익힌 뒤 공정별 원리·장비·재료·변수·결함·계측을 연결합니다. [공정 통합](반도체제조공정_semiconductor-fabrication/09-공정통합과품질관리_integration-process-control.md)과 [로직·DRAM·NAND 비교](반도체제조공정_semiconductor-fabrication/10-로직과메모리의공정차이_logic-memory-integration.md)도 함께 읽으실 수 있습니다.
+
+| 기판과 패턴 형성 | 재료와 연결 | 검사와 제품 완성 |
+| --- | --- | --- |
+| [웨이퍼](반도체제조공정_semiconductor-fabrication/01-웨이퍼제조_wafer-manufacturing.md) · [산화·게이트 절연막](반도체제조공정_semiconductor-fabrication/02-산화와게이트절연막_oxidation-gate-dielectrics.md) · [포토·노광](반도체제조공정_semiconductor-fabrication/03-포토와노광_photolithography.md) | [식각](반도체제조공정_semiconductor-fabrication/04-식각과선택비_etching.md) · [증착·이온주입](반도체제조공정_semiconductor-fabrication/05-증착과이온주입_deposition-implantation.md) · [배선·CMP](반도체제조공정_semiconductor-fabrication/06-금속배선과평탄화_interconnect-cmp.md) | [웨이퍼 검사·수율](반도체제조공정_semiconductor-fabrication/07-웨이퍼검사와수율_eds-yield.md) · [패키징·첨단 집적](반도체제조공정_semiconductor-fabrication/08-패키징과첨단집적_packaging.md) |
+
 ## 개발 환경과 언어 | Development environments and languages
 
 | 분야 | 주요 글 |
