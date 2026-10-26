@@ -12,9 +12,9 @@ Linux와 공정 자료를 준비하는 단계부터 아날로그 풀커스텀 �
 
 ## 실제 칩과 설계 화면
 
-![NASA Glenn이 제작한 SiC RAM 다이의 패키징 전 광학 사진](사진과화면_images/nasa-sic-ram-die.webp)
+![2026년 삼성전자 HBM4E 샘플 실물](사진과화면_images/메모리_memory/samsung-hbm4e-20260529-original-6.jpg)
 
-사진: NASA / NASA Glenn Research Center. [NASA Science 원문](https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/integrated-circuits-to-enable-exploration-of-the-harshest-environments-in-solar-system/)에 실린 3 mm × 3 mm SiC RAM 다이입니다. 가장자리의 원형 패드와 그 안쪽의 회로 영역을 볼 수 있습니다. 고온 환경용 SiC 회로의 제작 사례이며, 실리콘 CMOS SRAM·DRAM의 공정과 회로는 5·6장에서 별도로 설명합니다.
+출처: 삼성전자 뉴스룸, [2026-05-29 HBM4E 12단 샘플 공급 발표](https://news.samsung.com/kr/삼성전자-세계-최초-hbm4e-12단-샘플-출하). 최근 메모리 제품의 외형과 접속면을 보여 주는 실물 사진입니다. [SRAM](05-SRAM셀과메모리매크로_sram-design.md)·[DRAM](06-DRAM셀과주변회로_dram-design.md)·[HBM](11-HBM과3D집적설계_hbm-3d-integration.md) 본문에서 최근 제품 사진, 공개 레이아웃과 분석 화면을 각각 연결해 읽으실 수 있습니다.
 
 아래 본문에서는 실제 설계 파일의 화면과 제작 실물을 구분하여 살펴봅니다.
 

@@ -89,6 +89,12 @@ Johannes Kepler University의 [IHP SG13G2 AMS 템플릿](https://github.com/iic-
 
 앞 절의 아날로그 사용자 프로젝트와는 별도로, 여기서는 기본 Caravel harness의 칩 경계와 관리 회로를 살펴봅니다. 색은 설계 데이터의 레이어·도형을 구분하는 표시입니다.
 
+### 패키징 전 다이의 실물
+
+![NASA Glenn이 제작한 SiC RAM 다이의 패키징 전 광학 사진](사진과화면_images/nasa-sic-ram-die.webp)
+
+사진: NASA / NASA Glenn Research Center. [NASA Science 원문](https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/integrated-circuits-to-enable-exploration-of-the-harshest-environments-in-solar-system/)에 실린 3 mm × 3 mm SiC RAM 다이입니다. 가장자리의 원형 패드와 그 안쪽의 회로 영역을 볼 수 있습니다. 고온 환경용 SiC 회로의 제작 사례이며, 실리콘 CMOS SRAM·DRAM의 공정과 회로는 5·6장에서 별도로 설명합니다.
+
 ### 다이를 패키지의 외부 단자로 연결한 실물
 
 ![NASA Glenn의 SiC 집적회로 다이·연결선·패키지 외부 단자 사진](사진과화면_images/nasa-sic-package.webp)

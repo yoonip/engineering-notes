@@ -6,6 +6,18 @@ SRAM은 전원이 공급되는 동안 되먹임 회로로 값을 유지하는 �
 
 이 글은 일반적인 단일 포트 6T 셀을 기준으로 원리와 확인 방법을 설명합니다. 제품별 셀 구조, 소자 치수나 assist 전압을 추정하지 않습니다. 공개 문서에 근거한 설명과 직접 구성한 계산 예이며 실제 SRAM을 생성·실행·측정한 결과는 아닙니다.
 
+## 최근 SoC의 실물에서 공개 SRAM 레이아웃으로
+
+![Intel CES 2026 자료의 Core Ultra Series 3 웨이퍼 실물](사진과화면_images/메모리_memory/intel-ces2026-panther-lake-wafer-closeup.jpg)
+
+Credit: Intel Corporation. [CES 2026 공식 자료](https://www.intel.com/content/www/us/en/newsroom/press-hub/press-kit/artificial-intelligence/press-kit-intel-at-ces-2026.html)의 Core Ultra Series 3, 코드명 Panther Lake 웨이퍼입니다. 같은 다이가 반복되는 모습과 다이 경계를 먼저 봅니다. 이 SoC 계열의 캐시 구성은 [Intel의 공식 아키텍처 자료](https://cdrdv2-public.intel.com/866361/ITT_2025_Panther_Lake_Recap1.pdf)에서 확인할 수 있습니다. SRAM은 이런 프로세서 안의 캐시·버퍼처럼 다른 회로와 함께 집적되기도 합니다.
+
+![Intel 공식 CES 2026 자료에 실린 손에 든 Core Ultra Series 3 패키지](사진과화면_images/메모리_memory/intel-ces2026-panther-lake-handheld.jpg)
+
+Credit: Intel Corporation. 같은 [공식 갤러리](https://www.intel.com/content/www/us/en/newsroom/press-hub/press-kit/artificial-intelligence/press-kit-intel-at-ces-2026.html)의 패키지 실물 사진입니다. 손과 비교해 조립된 제품의 크기를 보고, 웨이퍼의 개별 다이가 패키지로 연결되는 단계를 생각해 보시면 됩니다. 내부 SRAM 셀·배선은 아래 공개 매크로 예시에서 별도로 살펴봅니다. 두 사진은 독립 SRAM 제품의 내부 확대 사진이 아니라 SRAM 캐시를 포함하는 최근 SoC의 사례입니다.
+
+제품 공개 자료는 2026-01-05 기준입니다. 아래 OpenRAM 자료는 공정·구성이 다른 공개 설계 예시로, 사진 속 Intel 칩의 내부 설계와 구분합니다. [사진·화면의 원본과 이용 조건](사진과화면_images/메모리_memory/README.md)
+
 ## 1. 여섯 개 트랜지스터가 한 비트를 기억하는 방법
 
 6T의 T는 transistor입니다. CMOS 인버터 두 개가 서로의 출력을 입력으로 받으며, 두 개의 접근 NMOS가 저장 노드를 비트라인에 연결합니다. 총 PMOS 두 개와 NMOS 네 개입니다. 안정된 상태에서 저장 노드 Q와 QB는 서로 반대 값입니다. MIT 6.111 강의의 6T 회로는 이 되먹임과 두 비트라인을 이용한 접근을 보여 줍니다. [MIT OCW, Memory Basics and Timing, 2006, 슬라이드 5](https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-spring-2006/499fae5e27b58a4b28605923aebe210e_lec7.pdf)
@@ -95,6 +107,18 @@ Assist는 읽기나 쓰기 동안 전압·제어 조건을 일시적으로 바�
 
 감지 제어를 만드는 복제 경로는 실제 셀·배선 지연을 따라가도록 구성하는 방법입니다. 복제 회로와 실제 배열이 모든 공정·전원·온도·배치 조건에서 같은 비율로 변한다는 보장은 없으므로 상대 여유를 확인합니다.
 
+### 배열과 주변 회로를 실제 레이아웃에서 보기
+
+![OpenRAM 공식 512워드 16비트 단일 포트 SRAM 매크로 레이아웃](사진과화면_images/메모리_memory/openram-freepdk45-512x16-layout.png)
+
+출처: OpenRAM / VLSI Design and Automation Lab, [공식 결과 문서](https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/docs/source/results.md#small-layouts). FreePDK45 예측용 공정 모델을 사용한 512워드 × 16비트, 단일 읽기·쓰기 포트 매크로입니다. 오른쪽의 규칙적인 반복 영역과 왼쪽·아래쪽의 주변 회로 영역을 비교합니다. 앞 절의 디코더·구동기·감지·제어 회로도 면적과 배선을 차지하므로 셀 수만으로 매크로 외곽을 정할 수 없다는 점을 볼 수 있습니다. 원본에 세부 라벨이 없는 부분의 기능은 색만으로 확정하지 않습니다.
+
+### 포트를 늘렸을 때의 셀과 매크로
+
+![OpenRAM 공식 6개 읽기·2개 쓰기 포트 셀의 회로·레이아웃과 64×64 배열](사진과화면_images/메모리_memory/openram-6r2w-generated-layout.jpg)
+
+출처: OpenRAM, [32 nm SOI 다중 포트 설계 예](https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/docs/source/results.md#generated-layout-by-openram-for-a-multiport-6r2w-sram-in-32-nm-soi-cmos-technology). 왼쪽은 셀 회로, 오른쪽 위는 그 셀의 레이아웃, 아래는 주변 회로를 포함한 64 × 64 배열입니다. 원본 라벨의 `Read Port #1`~`#6`, `Write Port #1`·`#2`를 따라 보면 접근 경로가 늘어나는 모습을 확인할 수 있습니다. 이 예제는 앞의 6T 단일 포트 셀과 다른 다중 포트 구조입니다. 도형의 치수는 이 공개 예제의 값이며, 최신 상용 SRAM의 치수로 옮겨 쓰지 않습니다. [사진·화면의 원본과 이용 조건](사진과화면_images/메모리_memory/README.md)
+
 ## 8. Characterization: 사용자가 읽을 모델 만들기
 
 Characterization은 회로의 동작을 다음 설계 도구가 사용할 수 있는 수치 모델로 정리하는 과정입니다. 입력 변화 속도인 slew와 출력 부하를 여러 값으로 바꾸고, PVT별로 지연·전환 시간·전력과 입력 타이밍을 구합니다. SRAM에서는 동작 모드와 활성 클록 에지, 주소·데이터·쓰기 허용 신호의 조건도 필요합니다.
@@ -139,6 +163,21 @@ SRAM 컴파일러는 지원하는 셀·주변 회로·공정 자료와 설정을
 범용 MOSFET으로 만든 6T 셀은 원리 학습에 유용하지만, 생산용 고밀도 SRAM의 셀 레이아웃·수율·제조 권한을 그대로 제공하지 않습니다. 예를 들어 SKY130 Device Details의 SRAM 절은 특정 SRAM IP 안에서만 허용되는 전용 소자·규칙의 제한을 명시합니다. 일반 소자 규칙을 만족한다는 사실과 전용 메모리 셀 사용 권한은 구분합니다. [SkyWater SKY130 PDK, Device Details, SRAM](https://skywater-pdk.readthedocs.io/en/main/rules/device-details.html)
 
 또한 열람한 SKY130 공개 문서의 Current Status는 해당 공개 릴리스를 Experimental Preview로 설명합니다. 이는 성숙한 공정 자체의 제조 이력과 공개 PDK 패키지의 검증 상태가 같은 말이 아님을 보여 줍니다. 실제 제작에서는 사용할 패키지 판본과 제조 경로의 승인 조건을 확인해야 합니다. [SkyWater SKY130 PDK, Current Status](https://skywater-pdk.readthedocs.io/en/main/status.html)
+
+### 컴파일러 결과 보고서에서 읽을 항목
+
+![OpenRAM 공식 문서의 HTML 데이터시트 출력 예](사진과화면_images/메모리_memory/openram-datasheet-1.png)
+
+출처: OpenRAM, [Basic Usage의 Data Sheets 예](https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/docs/source/basic_usage.md#data-sheets). 원본에 생성일이 `2019-02-21`로 표시된 보고서 형식 예입니다. `WORD_SIZE=16`, `NUM_WORDS=512`, `NUM_RW_PORTS=1`에서 용량·포트를 읽고, 아래 전원·온도·주파수 표의 단위를 확인합니다. 화면에는 `DRC errors: True`도 표시되어 있으므로 전체 검증 통과 사례로 제시하지 않습니다. 컴파일러가 내놓는 자료의 구성과 검사 항목을 읽는 예시입니다.
+
+### 최근 SRAM 연구와 비교해서 읽기
+
+| 원문 | 앞의 기초와 연결할 내용 |
+| --- | --- |
+| [TSMC, 2025년 2 nm SRAM 연구](https://research.tsmc.com/page/memory/4.html) | 셀 하나의 면적과 매크로 전체의 저장 밀도, 주변 회로가 차지하는 면적을 구분합니다. |
+| [ISSCC 2026 공식 프로그램, 논문 15.2](https://www.isscc.org/s/ISSCC2026AdvanceProgram.pdf#page=41) | MediaTek의 2 nm nanosheet·350 mV 단일 전원 SRAM 연구입니다. 낮은 전압에서의 읽기·쓰기 여유와 셀 구성을 살펴봅니다. |
+
+최신 연구의 공정·셀·측정 조건은 각 원문에 따릅니다. 공개 OpenRAM 그림은 구조와 파일 흐름을 이해하는 별도의 예시입니다. [사진·화면의 원본과 이용 조건](사진과화면_images/메모리_memory/README.md)
 
 ## 11. 불일치와 배열 수율
 

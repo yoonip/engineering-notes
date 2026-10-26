@@ -10,6 +10,34 @@ HBM은 여러 DRAM 다이를 수직으로 연결하여 넓은 데이터 경로�
 
 직접 작성한 구조 개념도입니다. 층수·두께·범프 수·배선 비율은 설명을 위해 축약했습니다. 일반적인 인터포저 기반 배치의 예이며, 특정 제품의 설계도는 아닙니다. HBM 내부가 3D 적층이어도 호스트와 HBM을 옆으로 배치한 조립체는 2.5D로 분류할 수 있습니다. [TSMC 3DFabric의 HPC 설명과 공식 구조 그림](https://www.tsmc.com/english/dedicatedFoundry/technology/platform_HPC_tech_WLSI)은 SoIC의 다이 적층과 CoWoS의 인터포저 통합을 나누어 보여 줍니다.
 
+## 최근 HBM 제품과 실제 사용 형태
+
+2026-10-26에 확인한 최근 공개 자료입니다. 제품·샘플·전시품은 각 자료의 발표 상태에 따라 구분합니다.
+
+### 2026년 HBM4E 샘플
+
+![삼성전자 HBM4E 샘플의 장갑 위 실물 사진](사진과화면_images/메모리_memory/samsung-hbm4e-20260529-original-6.jpg)
+
+출처: 삼성전자 뉴스룸, [2026-05-29 HBM4E 12단 샘플 공급 발표](https://news.samsung.com/kr/삼성전자-세계-최초-hbm4e-12단-샘플-출하). 장갑과 비교해 스택 제품의 크기를 보고, 표시 면과 금색 접속면의 차이를 살펴봅니다. 원문은 12단·48 GB 샘플과 1c DRAM·4 nm 로직 다이를 설명합니다. 제품 외관에서 셀 배열·TSV·층 경계를 직접 판독하는 대신, 아래 적층 설명과 공정 자료로 연결합니다.
+
+### HBM4의 외관과 접속면
+
+![삼성전자 HBM4 제품의 표시 면과 금색 접속면](사진과화면_images/메모리_memory/samsung-hbm4-20260212-original-1.jpg)
+
+출처: 삼성전자 뉴스룸, [2026-02-12 HBM4 양산 출하 발표](https://news.samsung.com/kr/삼성전자-세계-최초-업계-최고-성능의-hbm4-양산-출하). 금색 면에 모여 있는 접속 영역을 보면, 넓은 인터페이스와 전원·접지 접속을 받아 줄 호스트·인터포저 배치가 필요한 이유를 생각할 수 있습니다. 보이는 접점 무늬를 저장 셀의 배열로 읽지는 않습니다. 원문이 밝힌 HBM4 상업 출하와 위의 HBM4E 샘플 공급은 서로 다른 상태입니다.
+
+### 여러 세대를 한 전시판에서 비교하기
+
+![SK하이닉스 COMPUTEX 2026의 웨이퍼·HBM3E·HBM4·HBM4E 실물 전시](사진과화면_images/메모리_memory/skhynix-computex-20260602-08-2.png)
+
+출처: SK하이닉스 뉴스룸, [2026-06-02 COMPUTEX 전시](https://news.skhynix.co.kr/computex-2026/). 왼쪽 웨이퍼와 오른쪽 개별 스택을 구분하고, 표시판의 코어 다이 용량·적층수·전체 용량을 함께 봅니다. 전시 라벨에는 HBM3E `24 Gb·12Hi·36 GB`, HBM4 `24 Gb·16Hi·48 GB`, HBM4E `32 Gb·12Hi·48 GB`가 적혀 있습니다. 라벨 기준의 산술은 `24 Gb × 16 ÷ 8 = 48 GB`, `32 Gb × 12 ÷ 8 = 48 GB`로, 같은 총용량도 다이 용량과 적층수의 조합이 다를 수 있습니다. 전시품의 구성을 읽는 비교이며 16단 제품의 양산 출하 여부는 별도 발표로 확인합니다.
+
+### HBM이 연결되는 실제 가속기 모듈
+
+![COMPUTEX 2026에 전시한 GB300 실물 모듈과 HBM3E 부품](사진과화면_images/메모리_memory/skhynix-computex-20260602-05-1.png)
+
+출처: SK하이닉스 뉴스룸, [같은 공식 전시 기사](https://news.skhynix.co.kr/computex-2026/). 큰 보드 위의 조립체와 아래쪽에 따로 놓인 HBM3E 부품을 비교합니다. 메모리 스택, 가속기 패키지와 보드는 서로 다른 크기·연결 수준입니다. 사진에서는 금속 덮개가 있는 실제 조립 상태를 보며, 인터포저 내부 배치는 앞의 구조 개념도와 이어 읽습니다. [사진·화면의 원본과 이용 조건](사진과화면_images/메모리_memory/README.md)
+
 ## 서로 다른 다이와 회로의 역할
 
 | 구성 | 설계하는 내용 | 연결할 자료 |
@@ -24,6 +52,12 @@ HBM은 여러 DRAM 다이를 수직으로 연결하여 넓은 데이터 경로�
 
 공정도 하나로 고정되지 않습니다. 예를 들어 삼성전자는 [2026-02-12 HBM4 발표](https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing)에서 1c DRAM과 4nm 로직 베이스 다이를 구분했습니다. 이는 해당 제품에 대한 제조사의 발표입니다. 모든 HBM 세대가 같은 공정 조합을 사용한다는 뜻이 아닙니다. 설계 시에는 각 다이에 맞는 PDK·소자·라이브러리와 접합 구조를 연결합니다.
 
+### 전시 모형에서 보는 적층 연결
+
+![SK하이닉스 전시 모형의 메모리 적층·TSV·로직 다이·인터포저·기판](사진과화면_images/메모리_memory/skhynix-computex-20260602-06-2.png)
+
+출처: SK하이닉스 뉴스룸, [COMPUTEX 2026 공식 기사](https://news.skhynix.co.kr/computex-2026/). 사진 속 대상은 `460,000x Scale`이라고 표시된 확대 전시 모형입니다. 위쪽의 메모리 층에서 `TSV`를 거쳐 `Logic Die`, `Interposer`, `Package Substrate`로 내려가는 관계와 옆의 `XPU`를 봅니다. 이는 실물 제품 사진에서 보이지 않는 연결 관계를 설명하는 모형이며, 절단 단면이나 실제 마스크 레이아웃과는 구분합니다. 모형에 표시된 NPU·Network-on-chip 명칭도 개별 HBM 제품의 확정된 내부 회로도로 확대 해석하지 않습니다.
+
 ## 설계는 적층 구조를 정하는 단계에서 시작합니다
 
 1. 필요한 용량·대역폭·전력·온도·패키지 크기를 정합니다.
@@ -34,6 +68,16 @@ HBM은 여러 DRAM 다이를 수직으로 연결하여 넓은 데이터 경로�
 6. 다이 자체와 다이 사이의 연결을 모두 검사한 뒤 다이별 제조 데이터와 조립 데이터를 인계합니다.
 
 3D 전용 도구의 역할은 여러 도구에서 나온 자료를 이 순서로 함께 다루는 것입니다. [Cadence Integrity 3D-IC 자료](https://www.cadence.com/en_US/home/resources/datasheets/integrity-3d-ic-platform-ds.html)의 Flow Manager·Multi-Die STA·Inter-Die Connectivity 절은 초기 분석, 다이 간 타이밍과 접속 검사를 설명합니다. [Synopsys 3DIC Compiler 공식 소개](https://www.synopsys.com/implementation-and-signoff/3dic-design.html)는 다이 분할·시제품 배치·배선과 열·전력·신호·응력 분석의 연계를 설명합니다. 이는 공급사가 설명한 기능 범위이며, 두 제품의 성능을 직접 비교한 결과는 아닙니다.
+
+### 상용 3D 설계 도구의 공식 화면
+
+| 공식 자료의 위치 | 화면에서 살펴볼 내용 |
+| --- | --- |
+| [Synopsys Multi-die Signoff 백서, PDF 5페이지 Figure 6](https://www.synopsys.com/content/dam/synopsys/resources/multi-die/multi-die-signoff-wp.pdf#page=5) | 다이 간 연결·정렬 오류를 DRC/LVS 관점에서 확인하는 화면입니다. |
+| [Cadence Integrity 3D-IC 자료, PDF 1페이지 Figure 1·4페이지 Figure 7](https://www.cadence.com/content/dam/cadence-www/global/en_US/documents/tools/digital-design-signoff/Integrity-3D-IC-DS-v1.pdf) | 여러 다이의 설계 환경과 열 분석 표시를 비교합니다. |
+| [Siemens 3D IC Designer Workflow](https://eda.sw.siemens.com/en-US/eda-cloud-solutions/ic-packaging/3d-ic-design/designer-workflow/) | 패키지·다이 배치와 전기·열·검증 흐름의 관계를 살펴봅니다. |
+
+각 화면은 도구 공급사가 공개한 예제입니다. 위 제품 사진의 HBM4·HBM4E 내부 GDS가 공개된 것으로 보지는 않으며, 도구의 표시 영역과 필요한 입력 파일을 연결해 읽습니다. Micron의 제품 외관 자료도 [공식 HBM4 이미지 갤러리](https://www.micron.com/about/press/image-gallery/products-technology/hbm/hbm4)로 연결합니다.
 
 ## 3D 설계에 필요한 파일
 

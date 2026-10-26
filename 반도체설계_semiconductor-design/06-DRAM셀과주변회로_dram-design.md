@@ -6,6 +6,20 @@ DRAM은 작은 커패시터에 저장한 전하를 읽는 메모리입니다. �
 
 이 글의 수치 계산과 시험 조건은 원리를 설명하기 위해 직접 구성한 예입니다. 특정 DRAM 공정의 모델, 제품 사양이나 실제 제작·측정 결과가 아닙니다. 상용 DRAM의 셀 치수·내부 회로·공정 조건을 공개된 인터페이스 자료만으로 추정하지 않습니다.
 
+## 최근 DRAM의 패키지와 모듈
+
+![SK하이닉스 CES 2026 LPDDR6의 앞면과 BGA 접점면](사진과화면_images/메모리_memory/skhynix-ces2026-index4.jpg)
+
+출처: SK하이닉스 뉴스룸, [2026-01-06 CES 공개 자료](https://news.skhynix.co.kr/ces2026/). LPDDR6의 패키지 외관과 뒤쪽 접점 배열을 보여 줍니다. 검은 패키지 안의 다이와, 바깥 장치에 연결하는 접점은 서로 다른 수준의 구조입니다. 내부의 저장 셀·뱅크 구성은 아래에서 따로 설명합니다.
+
+![MWC 2026에 전시한 LPDDR6와 uMCP 4.1 실물](사진과화면_images/메모리_memory/skhynix-mwc2026-index12.jpg)
+
+출처: SK하이닉스 뉴스룸, [2026-03-05 MWC 전시 자료](https://news.skhynix.co.kr/mwc-2026/). 왼쪽의 LPDDR6 부품과 오른쪽의 uMCP 4.1를 비교합니다. uMCP 4.1 표시판에는 LPDDR5X와 UFS가 함께 적혀 있습니다. 같은 패키지 외형이라도 DRAM 단품과 DRAM·저장장치를 결합한 패키지는 구성이 다를 수 있다는 사례입니다. 이 사진이 보여 주는 상태는 당시 전시품입니다.
+
+![MWC 2026의 DDR5 RDIMM·MRDIMM·SOCAMM2 전시](사진과화면_images/메모리_memory/skhynix-mwc2026-index10.jpg)
+
+출처: SK하이닉스 뉴스룸, [같은 MWC 공식 기사](https://news.skhynix.co.kr/mwc-2026/). 기판 위에 여러 패키지를 올린 모듈과 개별 DRAM 다이를 구분해 봅니다. 표시판의 RDIMM·MRDIMM·SOCAMM2는 모듈 구성을 설명합니다. 특정 모듈의 용량·전송률을 셀 하나의 용량·접근 시간으로 읽지 않습니다. [사진·화면의 원본과 이용 조건](사진과화면_images/메모리_memory/README.md)
+
 ## 1. 1T1C 셀과 저장 전하
 
 1T1C는 접근 트랜지스터 하나와 저장 커패시터 하나를 뜻합니다. 워드라인 WL이 트랜지스터를 켜면 저장 노드가 비트라인 BL에 연결됩니다. WL이 꺼지면 저장 노드는 분리되어 전하를 보유합니다. 커패시터의 다른 쪽 단자인 plate도 회로의 일부이며, 전하의 의미는 저장 노드와 plate 사이 전압으로 정해집니다. CMU의 DRAM 강의는 이 셀과 누설, 읽기·복원 과정을 설명합니다. [CMU 18-322, Memory III: Dynamic Random Access, 2003, 슬라이드 3–14](https://course.ece.cmu.edu/~ece322/LECTURES/Lecture24/L24b.pdf)
@@ -38,6 +52,14 @@ $$
 직접 구성한 예로 $V_{DD}=1.0\,\mathrm{V}$, $V_{pre}=0.5\,\mathrm{V}$, $C_{cell}=20\,\mathrm{fF}$, $C_{BL}=200\,\mathrm{fF}$를 가정합니다. 셀 전압이 1.0 V이면 $V_{share}\approx0.5455\,\mathrm{V}$이고 차이는 약 +45.5 mV입니다. 셀 전압이 0 V이면 약 0.4545 V로, 차이는 약 −45.5 mV입니다. 이는 감지 전의 작은 신호를 보여 주는 계산이며 실제 전원·정전용량의 허용값을 제안하지 않습니다.
 
 같은 조건에서 저장 전하가 이미 줄어 셀 전압이 0.7 V라면 차이는 약 +18.2 mV로 작아집니다. 정전용량 비가 같아도 유지 중의 누설이 읽기 여유를 줄일 수 있습니다. 실제 회로에서는 비트라인 저항, 접근 소자의 비선형 전류, plate 결합과 감지기 오프셋을 더 고려해야 합니다.
+
+### 제조사 자료의 전하 공유·복원과 실제 단면
+
+![Micron Read and Refresh 전체 슬라이드의 설명 파형·배열 모형·전자현미경 단면](사진과화면_images/메모리_memory/micron-read-refresh-full-slide55-pdfium.png)
+
+출처: Micron Educator Hub, [2025 검토판 전체 자료의 PDF 54페이지, 인쇄 슬라이드 55](https://courses.cs.washington.edu/courses/cse470/26sp/readings/micron-intro-to-memory-presentation.pdf#page=54), University of Washington 공식 수업 배포본입니다. 왼쪽 파형은 WL이 켜진 뒤 작은 비트라인 차이가 감지·복원되는 원리를 설명합니다. 가운데는 배열의 3D 모형이며, 오른쪽 회색 부분이 커패시터 구조의 전자현미경 단면입니다. 본문의 전하 공유 식과, 감지 후 셀 전압을 되돌리는 과정을 연결해 읽습니다. 이 교육 슬라이드에는 최신 1c·1γ 제품의 공정명이나 치수가 지정되어 있지 않습니다.
+
+© 2020-2025 Micron Technology, Inc. All Rights Reserved. Used with permission.
 
 ## 3. 감지 증폭기와 복원
 
@@ -91,6 +113,14 @@ DRAM의 전체 면적과 속도는 1T1C 셀만으로 결정되지 않습니다. 
 
 이 기능이 모두 셀과 같은 소자로 구현되는 것은 아닙니다. 셀 접근 소자는 누설과 면적이 중요하고, 주변 회로 소자는 구동력과 여러 전압 조건을 만족해야 합니다. 감지기·디코더의 국소 전원 강하와 대량 활성화 때의 전류도 셀의 명목 전원과 다를 수 있습니다.
 
+### 배열과 주변 회로가 차지하는 위치
+
+![Micron 전체 슬라이드의 메모리 배열·주변 회로·웨이퍼·스크라이브 배치 예](사진과화면_images/메모리_memory/micron-array-periphery-full-slide80.png)
+
+출처: Micron Educator Hub, [같은 자료의 PDF 79페이지, 인쇄 슬라이드 80](https://courses.cs.washington.edu/courses/cse470/26sp/readings/micron-intro-to-memory-presentation.pdf#page=79). 짙은 빨간색 `Array`와 그 사이·바깥쪽의 주변 회로를 먼저 봅니다. 오른쪽의 `scribe`는 다이 사이의 측정·시험 구조가 들어가는 영역입니다. 앞에서 설명한 배열·감지·제어 회로가 하나의 다이를 이루는 관계를 보여 주는 교육용 floorplan 예이며, 최신 상용 DRAM의 실제 마스크 배선 공개본과는 구분합니다.
+
+© 2020-2025 Micron Technology, Inc. All Rights Reserved. Used with permission.
+
 ## 7. 외부 타이밍과 내부 회로 시간
 
 외부 타이밍 규격은 컨트롤러가 어떤 명령을 언제 보낼 수 있는지 정합니다. 셀 내부의 WL·감지 활성화 파형을 그대로 핀의 타이밍 이름 하나와 동일시하지 않습니다. Microchip의 컨트롤러 문서 Table 20-23은 DDR3·DDR3L의 tRAS, tRCD, tRP, tRC, tREFI와 tRFC를 설명합니다. 다음 표는 그 기본 관계를 중심으로 정리하며, 적용 수치는 실제 메모리의 세대·밀도·속도 등급·온도·모드에 따라 확인합니다. [Microchip, DDR Memory, DDR Memory Timing·Table 20-23](https://onlinedocs.microchip.com/oxy/GUID-AFCB5DCC-964F-4BE7-AA46-C756FA87ED7B-en-US-21/GUID-A29420D1-4E36-4920-B9BB-DD0B63F5E787.html)
@@ -112,6 +142,14 @@ DRAM의 전체 면적과 속도는 1T1C 셀만으로 결정되지 않습니다. 
 DDR의 높은 핀 전송률은 한 셀을 그 전송 간격마다 새로 활성화한다는 뜻이 아닙니다. 내부의 넓은 데이터 경로, 버스트와 뱅크 병렬성이 외부 전송을 지원합니다. 마찬가지로 tREFI는 한 셀의 retention time과 같은 값이 아닙니다. Refresh 전체 일정과 내부적으로 복원하는 범위를 거쳐 관계를 판단합니다.
 
 단순히 뱅크 전체가 refresh 동안 막히는 모형에서는 $t_{RFC}/t_{REFI}$로 시간 부담의 한 요소를 가늠할 수 있습니다. 이는 자체 구성한 단순 모형입니다. 다른 뱅크의 작업, refresh 모드, 스케줄링과 실제 요청 패턴을 생략하므로 시스템 성능 손실의 보편적인 비율로 사용하지 않습니다.
+
+### DRAMSys의 실제 명령·뱅크 분석 화면
+
+![DRAMSys Trace Analyzer의 요청·응답·뱅크별 명령·명령버스와 데이터버스 시간축](사진과화면_images/메모리_memory/dramsys-traceanalyzer.png)
+
+출처: RPTU Kaiserslautern-Landau·Fraunhofer IESE 등 DRAMSys 개발진, [공식 README의 Trace Analyzer 화면](https://github.com/tukl-msd/DRAMSys/blob/80e302354cdd0d64a02040e98c61e6d90dd3dc31/README.md). 위쪽 `REQ`·`RESP`, 가운데 `Bank 0`~`15`, 아래 `Cmd Bus`·`Data Bus`를 같은 시간축으로 읽습니다. 오른쪽 거래 정보에는 `PRE`, `ACT`, `WR` 등의 단계가 보입니다. 요청 하나의 처리 시간과 실제 데이터버스를 쓰는 시간이 다르다는 점을 확인할 수 있습니다.
+
+이 화면의 예시는 DDR4 모델입니다. DRAMSys는 SystemC TLM 기반의 메모리 시스템 분석 도구로, 앞의 셀 전하·커패시터 단면을 계산하는 트랜지스터 시뮬레이터와 역할이 다릅니다. 공개 기본판과 추가 기능의 범위는 해당 README에서 구분합니다. 전기적 DDR5 인터페이스의 설계 화면은 [Keysight Memory Designer 공식 예시의 Figures 2–4](https://www.keysight.com/blogs/en/tech/sim-des/how-to-build-ami-models-for-ddr5-memory-interfaces)에서 별도로 볼 수 있습니다. [사진·화면의 원본과 이용 조건](사진과화면_images/메모리_memory/README.md)
 
 ## 8. DRAM 공정과 일반 논리 PDK의 차이
 
