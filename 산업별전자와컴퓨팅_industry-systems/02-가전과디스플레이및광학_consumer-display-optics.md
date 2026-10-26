@@ -1,10 +1,10 @@
 # 가전·디스플레이·광학의 전자 시스템 | Appliances, displays and optical systems
 
-[산업별 목차](README.md) · [자동차·농기계](01-자동차와모빌리티_automotive-mobility.md) · [센서·계측 기초](../분야_topics/37-센서계측_sensors-instrumentation/README.md)
+[산업별 목차](README.md) · [자동차·농기계](01-자동차와모빌리티_automotive-mobility.md) · [센서·계측 기초](../전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/README.md)
 
 가전은 온도·공기·물·회전 같은 물리적 대상을 제어하고, 화면은 디지털 정보를 빛으로 바꾸며, 카메라는 빛을 데이터로 바꿉니다. 제품에 AI나 네트워크 기능이 들어가도 센서·전원·구동·시간·자료의 의미를 먼저 맞춰야 합니다. 제품 제어기, 영상 처리 SoC, 사용자 앱과 클라우드는 서로 다른 실행 위치입니다.
 
-이 글은 제품군의 구조와 개발·검사의 관점을 다룹니다. 공통 원리는 기존 기초·계측·제품 리뷰로 연결하고, 산업별로 달라지는 입력·출력·병목·검사 대상을 설명합니다.
+이 글은 제품군의 구조와 개발·검사의 관점을 다룹니다. 공통 원리는 기존 기초·계측·제품·기술 분석으로 연결하고, 산업별로 달라지는 입력·출력·병목·검사 대상을 설명합니다.
 
 ## 1. 완제품·패널·모듈의 역할
 
@@ -130,7 +130,7 @@ TCON, timing controller는 들어온 영상 정보를 패널을 갱신할 타이
 
 LG디스플레이의 [2021 OLED EX 발표](https://www.lgdisplay.com/eng/company/media-center/latest-news?contentId=4978)는 발광 재료와 알고리즘을 함께 설명합니다. 보상이라는 말은 차이를 관찰하거나 추정해 구동값에 반영하는 범주를 뜻하며, 여기서 비공개 보상 회로·학습 알고리즘을 추정해 만들지는 않았습니다. 자발광이라고 모든 전원·화소 편차와 열화가 사라지는 것도 아닙니다.
 
-발광 구조의 제품별 비교는 [OLED·micro-LED 리뷰](../제품리뷰_reviews/기기와모빌리티_devices-mobility/표시판의발광구조_oled-microled2026.md), 기판·굴곡·봉지의 연결은 [폴더블 리뷰](../제품리뷰_reviews/기기와모빌리티_devices-mobility/폴더블의화면과접힘_foldables2026.md)에 두었습니다.
+발광 구조의 제품별 비교는 [OLED·micro-LED 리뷰](../제품기술분석_product-technology/기기와모빌리티_devices-mobility/표시판의발광구조_oled-microled2026.md), 기판·굴곡·봉지의 연결은 [폴더블 리뷰](../제품기술분석_product-technology/기기와모빌리티_devices-mobility/폴더블의화면과접힘_foldables2026.md)에 두었습니다.
 
 ## 7. 휘도·색·균일도와 시간 특성의 검사
 
@@ -193,15 +193,15 @@ ISP는 image signal processor, 이미지 신호 처리기입니다. 센서의 �
 
 MTF, modulation transfer function은 공간적으로 촘촘해지는 무늬의 대비를 광학계가 얼마나 전달하는지 보는 개념입니다. [Edmund Optics의 MTF 기초](https://www.edmundoptics.com/knowledge-center/application-notes/optics/introduction-to-modulation-transfer-function/)는 해상과 대비의 관계를 설명합니다. 화소 수가 많다는 사실과 렌즈·초점·센서·처리를 포함한 시스템의 실제 세부 무늬 재현은 다릅니다. 노이즈·감도 지표와 광학의 선명도·왜곡 지표도 목적을 나눕니다.
 
-[EMVA 1288 공식 다운로드](https://www.emva.org/standards-technology/emva-1288/emva-standard-1288-downloads-2/)는 이미지 센서·카메라의 특성화를 위한 Release 4.0 Linear·General을 구분합니다. 선형 모델의 적용 전제와 전처리의 영향을 확인하는 기준이며 렌즈·AF·OIS 전체를 인증하는 공통 시험이라는 뜻은 아닙니다. 영상 필터·좌표·보간의 원리는 [컴퓨터 비전](../분야_topics/43-컴퓨터비전_computer-vision/README.md)에서 이어집니다.
+[EMVA 1288 공식 다운로드](https://www.emva.org/standards-technology/emva-1288/emva-standard-1288-downloads-2/)는 이미지 센서·카메라의 특성화를 위한 Release 4.0 Linear·General을 구분합니다. 선형 모델의 적용 전제와 전처리의 영향을 확인하는 기준이며 렌즈·AF·OIS 전체를 인증하는 공통 시험이라는 뜻은 아닙니다. 영상 필터·좌표·보간의 원리는 [컴퓨터 비전](../전자컴퓨터공학_ece/43-컴퓨터비전_computer-vision/README.md)에서 이어집니다.
 
 ## 11. 기초에서 실무 기록으로 이어지는 경로
 
 | 시작할 기초 | 제품에서 확인할 결과물 |
 | --- | --- |
-| 회로·전력·제어 | [회로](../분야_topics/09-회로전자공학_circuits-electronics/README.md), [전력전자](../분야_topics/31-전력전자에너지_power-energy/README.md), [제어](../분야_topics/21-신호처리제어_signals-control/README.md)로 센서·구동·응답을 설명합니다. |
-| 펌웨어·시스템 | [RTOS](../분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md), [임베디드 Linux](../분야_topics/18-임베디드Linux_embedded-linux/README.md)로 상태·메모리·프로세스·통신을 나눕니다. |
-| 영상·자료 | [비전](../분야_topics/43-컴퓨터비전_computer-vision/README.md), [GPU](../분야_topics/24-GPU구조_gpu-architecture/README.md), [AI 평가](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md)로 입력 형식·변환·병목을 설명합니다. |
+| 회로·전력·제어 | [회로](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/README.md), [전력전자](../전자컴퓨터공학_ece/31-전력전자에너지_power-energy/README.md), [제어](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/README.md)로 센서·구동·응답을 설명합니다. |
+| 펌웨어·시스템 | [RTOS](../전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/README.md), [임베디드 Linux](../전자컴퓨터공학_ece/18-임베디드Linux_embedded-linux/README.md)로 상태·메모리·프로세스·통신을 나눕니다. |
+| 영상·자료 | [비전](../전자컴퓨터공학_ece/43-컴퓨터비전_computer-vision/README.md), [GPU](../전자컴퓨터공학_ece/24-GPU구조_gpu-architecture/README.md), [AI 평가](../전자컴퓨터공학_ece/46-AI응용에이전트평가_ai-agents-evaluation/README.md)로 입력 형식·변환·병목을 설명합니다. |
 | 계측·검증 | [계측기](../현장계측과검증_measurement-validation/계측기_instruments/README.md)와 [공개 계측 코드](../직무와실무기술_job-practice/사례_cases/01-회로와소자의계측코드_circuit-device-measurement.md)로 설정·원시값·판정을 연결합니다. |
 
 결과물은 ‘가전 SW를 압니다’라는 목록보다 시료·설정·원시 입력·처리 판본·측정량·원인 후보·대조 결과의 연결입니다. 예를 들어 화면 지연을 조사했다면 입력 시점·영상 경로·광출력 시점을 나누고, 카메라 색 문제를 조사했다면 원시 화소·보정·ISP·표시 경로를 나누어 설명합니다.

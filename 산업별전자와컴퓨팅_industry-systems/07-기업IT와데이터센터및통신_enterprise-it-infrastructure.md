@@ -67,7 +67,7 @@ MQTT는 broker를 통해 topic별 메시지를 전달하는 프로토콜입니�
 | 품질·유효성 | 센서·전송·변환 상태입니다. | 결측·취득 실패를 정상적인 0으로 저장하는 경우입니다. |
 | 보존·계보 | 원본에서 어느 변환을 거쳐 결과가 만들어졌는지입니다. | 집계값만 남아 다른 사람이 분모·조건을 확인할 수 없는 경우입니다. |
 
-통계·AI 분석의 기초는 [데이터 공학](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/README.md), 시각·상태는 [설비 신호 수집 사례](../직무와실무기술_job-practice/사례_cases/04-공정설비와패키지의검사사례_process-equipment-package.md)로 이어집니다.
+통계·AI 분석의 기초는 [데이터 공학](../전자컴퓨터공학_ece/40-데이터베이스데이터공학_databases-data-engineering/README.md), 시각·상태는 [설비 신호 수집 사례](../직무와실무기술_job-practice/사례_cases/04-공정설비와패키지의검사사례_process-equipment-package.md)로 이어집니다.
 
 ## 4. 클라우드·컨테이너·플랫폼의 역할
 
@@ -84,7 +84,7 @@ Kubernetes는 control plane과 worker node로 구성됩니다. control plane은 
 | 네트워크·서비스 | 프로그램 주소·연결·부하 분산의 경계입니다. | 연결 실패·기한·재시도·인증·정책입니다. |
 | 배포·복구 | 새 판본을 적용하고 문제가 있으면 되돌리는 과정입니다. | DB·설정·모델과의 호환성, 되돌릴 범위입니다. |
 
-자동으로 프로세스를 다시 실행하는 기능과 서비스가 올바르게 복구된 결과는 구분합니다. 재시작한 앱이 오래된 설정·중복 작업·일관성 없는 자료를 사용하면 정상 기동 표시만으로 충분하지 않습니다. [클라우드·분산 시스템](../분야_topics/41-클라우드분산시스템_cloud-distributed/README.md)의 복제·quorum·실패 조건을 함께 읽습니다.
+자동으로 프로세스를 다시 실행하는 기능과 서비스가 올바르게 복구된 결과는 구분합니다. 재시작한 앱이 오래된 설정·중복 작업·일관성 없는 자료를 사용하면 정상 기동 표시만으로 충분하지 않습니다. [클라우드·분산 시스템](../전자컴퓨터공학_ece/41-클라우드분산시스템_cloud-distributed/README.md)의 복제·quorum·실패 조건을 함께 읽습니다.
 
 ## 5. 데이터센터의 하드웨어와 AI 계산
 
@@ -99,7 +99,7 @@ Kubernetes는 control plane과 worker node로 구성됩니다. control plane은 
 
 AI 작업은 가속기만 빨라진다고 같은 비율로 빨라지지 않습니다. 데이터를 읽고 변환하며 장치 메모리로 옮기고 여러 장치의 결과를 합치는 시간이 들어갑니다. all-reduce는 여러 계산 참여자의 값을 합쳐 각 참여자가 결과를 갖게 하는 집단 연산의 한 종류입니다. NVIDIA [NCCL의 Collective Operations](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html)는 참여자·자료형·개수와 연산의 계약을 설명합니다. 여기서는 공개 API의 역할을 참고하며 특정 기업의 내부 GPU 구성을 지정하지 않습니다.
 
-관련 원리와 제품은 [GPU 구조](../분야_topics/24-GPU구조_gpu-architecture/README.md), [CUDA 성능](../분야_topics/25-CUDA성능최적화_cuda-performance/README.md), [HPC](../분야_topics/42-고성능병렬계산_hpc-parallel/README.md), [액체 냉각](../제품리뷰_reviews/제조와인프라_manufacturing-infrastructure/데이터센터의액체냉각_liquid-cooling2026.md), [CPO 광통신](../제품리뷰_reviews/제조와인프라_manufacturing-infrastructure/스위치칩가까이배치하는광통신_co-packaged-optics2026.md)으로 이어집니다.
+관련 원리와 제품은 [GPU 구조](../전자컴퓨터공학_ece/24-GPU구조_gpu-architecture/README.md), [CUDA 성능](../전자컴퓨터공학_ece/25-CUDA성능최적화_cuda-performance/README.md), [HPC](../전자컴퓨터공학_ece/42-고성능병렬계산_hpc-parallel/README.md), [액체 냉각](../제품기술분석_product-technology/제조와인프라_manufacturing-infrastructure/데이터센터의액체냉각_liquid-cooling2026.md), [CPO 광통신](../제품기술분석_product-technology/제조와인프라_manufacturing-infrastructure/스위치칩가까이배치하는광통신_co-packaged-optics2026.md)으로 이어집니다.
 
 ## 6. 유선·무선·위성 통신을 계층으로 나눕니다
 
@@ -112,7 +112,7 @@ AI 작업은 가속기만 빨라진다고 같은 비율로 빨라지지 않습�
 | 위성·비지상 연결 | 이동하는 통신 구간과 지상망의 연결입니다. | 링크·안테나·시간·이동성·게이트웨이·지상 서비스입니다. |
 | 시험·망 운영 | 신호·트래픽·사건·고객 품질의 대응입니다. | 장비 계측·프로토콜·부하·로그·원인 분석입니다. |
 
-위성 링크의 지연, 무선 신호 품질, 서버 응답 지연은 서로 다른 관측입니다. 같은 ‘통신 문제’라도 어느 구간의 오류인지 분리해야 합니다. [통신 이론](../분야_topics/30-통신이론무선시스템_communications-wireless/README.md), [이동통신·위성 직접 연결](../제품리뷰_reviews/통신과센서_communications-sensing/이동통신과위성직접연결_5g-advanced-ntn2026.md), [해저 광통신](../제품리뷰_reviews/통신과센서_communications-sensing/코히런트광통신과해저케이블_coherent-submarine2026.md)에서 해당 구간의 원리·조건을 더 읽습니다.
+위성 링크의 지연, 무선 신호 품질, 서버 응답 지연은 서로 다른 관측입니다. 같은 ‘통신 문제’라도 어느 구간의 오류인지 분리해야 합니다. [통신 이론](../전자컴퓨터공학_ece/30-통신이론무선시스템_communications-wireless/README.md), [이동통신·위성 직접 연결](../제품기술분석_product-technology/통신과센서_communications-sensing/이동통신과위성직접연결_5g-advanced-ntn2026.md), [해저 광통신](../제품기술분석_product-technology/통신과센서_communications-sensing/코히런트광통신과해저케이블_coherent-submarine2026.md)에서 해당 구간의 원리·조건을 더 읽습니다.
 
 ## 7. 로그·지표·추적으로 장애를 읽습니다
 

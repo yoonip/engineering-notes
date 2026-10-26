@@ -1,6 +1,6 @@
 # 원자력·발전·전력망의 전자와 컴퓨팅 | Nuclear power, generation and electrical grids
 
-[산업별 목차](README.md) · [산업 자동화·플랜트·기계](06-산업자동화와플랜트및기계_industrial-automation-machinery.md) · [전력전자 기초](../분야_topics/31-전력전자에너지_power-energy/README.md)
+[산업별 목차](README.md) · [산업 자동화·플랜트·기계](06-산업자동화와플랜트및기계_industrial-automation-machinery.md) · [전력전자 기초](../전자컴퓨터공학_ece/31-전력전자에너지_power-energy/README.md)
 
 발전 산업에서 전자·컴퓨터공학은 전기를 만드는 발전기만 다루지 않습니다. 온도·압력·진동을 읽는 계측 회로, 전력변환기, 설비의 상태를 판단하는 제어기, 운전 화면과 기록 서버, 계통 해석과 정비 데이터가 서로 연결됩니다. 같은 Python 분석이라도 발전 계획을 비교하는 계산과 현장의 제어 주기를 검증하는 계산은 입력·시간 범위·책임이 다릅니다.
 
@@ -103,7 +103,7 @@ RMS는 신호 제곱의 평균에 제곱근을 취한 크기 지표입니다. �
 | 여러 채널이 같은 시각에 비정상값을 보입니다. | 공통 전원·취득·통신 사건이 후보입니다. | 독립 계측과 장비·네트워크 사건을 같은 시간축에 놓습니다. |
 | 저속 기록에는 변화가 없지만 빠른 현상이 의심됩니다. | 평균·샘플링·필터가 변화를 가렸을 수 있습니다. | 원래 취득 속도와 저장된 자료의 시간 해상도를 구분합니다. |
 
-이 표는 원인 분리를 위한 자체 학습 사례입니다. 실제 설비의 진단 규칙이나 특정 주파수만으로 고장을 확정하는 기준표가 아닙니다. [샘플링과 aliasing](../분야_topics/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md), [센서·계측](../분야_topics/37-센서계측_sensors-instrumentation/README.md)을 먼저 읽으면 취득과 해석의 경계를 이해하기 쉽습니다.
+이 표는 원인 분리를 위한 자체 학습 사례입니다. 실제 설비의 진단 규칙이나 특정 주파수만으로 고장을 확정하는 기준표가 아닙니다. [샘플링과 aliasing](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md), [센서·계측](../전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/README.md)을 먼저 읽으면 취득과 해석의 경계를 이해하기 쉽습니다.
 
 ## 5. 풍력·태양광·ESS의 전력전자와 모델
 
@@ -123,7 +123,7 @@ RMS는 신호 제곱의 평균에 제곱근을 취한 크기 지표입니다. �
 
 ### Grid-following과 grid-forming
 
-Grid-following은 외부 계통의 전압·위상 정보를 기준으로 동작하는 관점이고, grid-forming은 장치가 전압 파형의 기준 형성에 참여하는 관점입니다. 이름만으로 모든 계통 조건의 안정성을 보장하지는 않습니다. 전류 한계, DC 측 에너지, 다른 발전기·인버터와의 상호작용, 고장 후의 응답 조건을 함께 봅니다. [Sandia의 GFM/GFL droop 비교 연구 소개](https://www.sandia.gov/research/publications/details/grid-forming-and-grid-following-inverter-comparison-of-droop-response-2022-06-01/), [전력망 형성 인버터의 응답과 한계](../제품리뷰_reviews/전력망과분산에너지_grid-distributed-energy/전력망형성인버터의응답과한계_grid-forming-inverters.md)에서 비교 범위를 이어 읽으실 수 있습니다.
+Grid-following은 외부 계통의 전압·위상 정보를 기준으로 동작하는 관점이고, grid-forming은 장치가 전압 파형의 기준 형성에 참여하는 관점입니다. 이름만으로 모든 계통 조건의 안정성을 보장하지는 않습니다. 전류 한계, DC 측 에너지, 다른 발전기·인버터와의 상호작용, 고장 후의 응답 조건을 함께 봅니다. [Sandia의 GFM/GFL droop 비교 연구 소개](https://www.sandia.gov/research/publications/details/grid-forming-and-grid-following-inverter-comparison-of-droop-response-2022-06-01/), [전력망 형성 인버터의 응답과 한계](../제품기술분석_product-technology/전력망과분산에너지_grid-distributed-energy/전력망형성인버터의응답과한계_grid-forming-inverters.md)에서 비교 범위를 이어 읽으실 수 있습니다.
 
 ### 전력과 에너지의 단위
 
@@ -162,7 +162,7 @@ Grid-following은 외부 계통의 전압·위상 정보를 기준으로 동작�
 4. 독립 측정과 비교해 실제 변화인지 취득·집계 변화인지 나눕니다.
 5. 모델은 사용한 입력·학습 기간·새 기간의 오차를 함께 보고합니다.
 
-모델이 어느 센서 값을 중요하게 사용했다는 결과는 조사 단서입니다. 그 센서가 실제 고장의 원인이거나 값을 바꾸면 해결된다는 인과 증명은 아닙니다. [공식 AI 예제와 데이터 누출](../직무와실무기술_job-practice/사례_cases/05-AI와제조IT의평가사례_ai-manufacturing-it.md), [공장의 디지털트윈과 검증](../제품리뷰_reviews/반도체와산업컴퓨팅_chips-industrial/공장의디지털트윈과검증_industrial-digital-twins.md)에 원리와 구체적인 대조가 있습니다.
+모델이 어느 센서 값을 중요하게 사용했다는 결과는 조사 단서입니다. 그 센서가 실제 고장의 원인이거나 값을 바꾸면 해결된다는 인과 증명은 아닙니다. [공식 AI 예제와 데이터 누출](../직무와실무기술_job-practice/사례_cases/05-AI와제조IT의평가사례_ai-manufacturing-it.md), [공장의 디지털트윈과 검증](../제품기술분석_product-technology/반도체와산업컴퓨팅_chips-industrial/공장의디지털트윈과검증_industrial-digital-twins.md)에 원리와 구체적인 대조가 있습니다.
 
 ## 8. 장비·시험·소프트웨어를 연결합니다
 

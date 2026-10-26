@@ -75,7 +75,7 @@ OBC는 on-board charger, 차량에 탑재된 충전기입니다. DC/DC는 직류
 | 위치·전류 계측 | 센서 신호를 제어에 쓸 수 있는 수로 바꿉니다. | 기준 입력·센서 파형·보정 자료 | 영점·gain·위상·취득 지연의 차이입니다. |
 | 통합·검증 | 목표값과 실제 응답, 온도·부하·전원 조건을 비교합니다. | 모터 시험 환경·전력/열 자료·HIL | 부하·속도·환경에 따른 경계와 기능 간 간섭입니다. |
 
-토크는 회전시키는 힘의 효과이고 전류는 전기적 입력입니다. 제어기는 모델과 센서에 근거해 관계를 다루므로, 전류값이 맞는다는 사실만으로 실제 축의 토크가 모두 맞았다고 결론 내리지는 않습니다. 전력·제어의 기초는 [전력전자](../분야_topics/31-전력전자에너지_power-energy/README.md), [신호처리·제어](../분야_topics/21-신호처리제어_signals-control/README.md), [속도 PI와 포화](../분야_topics/22-로봇제어_robotics-boards/해설_notes/속도PI와포화_speed-pi-anti-windup.md)에 연결합니다.
+토크는 회전시키는 힘의 효과이고 전류는 전기적 입력입니다. 제어기는 모델과 센서에 근거해 관계를 다루므로, 전류값이 맞는다는 사실만으로 실제 축의 토크가 모두 맞았다고 결론 내리지는 않습니다. 전력·제어의 기초는 [전력전자](../전자컴퓨터공학_ece/31-전력전자에너지_power-energy/README.md), [신호처리·제어](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/README.md), [속도 PI와 포화](../전자컴퓨터공학_ece/22-로봇제어_robotics-boards/해설_notes/속도PI와포화_speed-pi-anti-windup.md)에 연결합니다.
 
 ## 5. 제동·조향·현가의 센서와 실시간 제어
 
@@ -138,7 +138,7 @@ C·C++은 장치 접근·실시간 코드·성능 경로·플랫폼 구현에, P
 
 [NHTSA TireWise](https://www.nhtsa.gov/vehicle-safety/tires)는 공기압·마모·TPMS 등의 역할을 설명합니다. 한국타이어의 [2025 자료 50쪽](https://www.hankooktire.com/content/dam/hankooktire/local/pdf/why-hankook/2025_Hankook_Tire_Technology_Introduction_ENG.pdf#page=50)은 TMS, tire-mounted sensor와 tire health·fleet 분야를 소개합니다. 그 자료만으로 소개한 모든 기술의 차종별 상용 장착·성능을 확정하지 않았습니다.
 
-예를 들어 ‘같은 도로에서 진동이 늘었다’는 가상 현상은 타이어 상태, 노면·속도·하중, 센서 부착·시간 동기화·필터가 모두 후보입니다. 같은 시험 조건의 원시 시계열·차량/타이어 ID·기준 센서와 대조해야 합니다. [센서·계측](../분야_topics/37-센서계측_sensors-instrumentation/README.md)과 [신호처리·제어](../분야_topics/21-신호처리제어_signals-control/README.md)가 이 분석의 기반입니다.
+예를 들어 ‘같은 도로에서 진동이 늘었다’는 가상 현상은 타이어 상태, 노면·속도·하중, 센서 부착·시간 동기화·필터가 모두 후보입니다. 같은 시험 조건의 원시 시계열·차량/타이어 ID·기준 센서와 대조해야 합니다. [센서·계측](../전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/README.md)과 [신호처리·제어](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/README.md)가 이 분석의 기반입니다.
 
 ## 9. 트랙터·농기계에서는 작업의 품질도 측정합니다
 
@@ -154,7 +154,7 @@ C·C++은 장치 접근·실시간 코드·성능 경로·플랫폼 구현에, P
 
 LS엠트론의 2026년 7월 [비정형 농지 자율작업 발표](https://www.lsholdings.com/ko/media/news/6161346d33756d394970597242657444556c344a2b466c6e6e77584733564b35)는 경계 주행을 바탕으로 작업 경로를 만들고 해당 기능을 OTA로 제공한다고 설명합니다. 발표된 적용 조건과 회사가 제시한 수치를 전체 농지·기계의 보장 성능으로 바꾸지 않습니다. 농기계의 작업 자동화 단계를 승용차의 주행 자동화 단계와 같은 평가 체계로 단순 비교하지도 않습니다.
 
-정밀살포처럼 작업 대상의 인식과 구동을 함께 다루는 기술은 [정밀살포 리뷰](../제품리뷰_reviews/농업과식품_agriculture-food/정밀살포의약제절감과잡초관리_precision-spraying.md)로 이어집니다. 이 글은 농기계의 전자 시스템 관점을 설명하며 특정 작물·약제·작업 설정을 제안한 자료는 아닙니다.
+정밀살포처럼 작업 대상의 인식과 구동을 함께 다루는 기술은 [정밀살포 리뷰](../제품기술분석_product-technology/농업과식품_agriculture-food/정밀살포의약제절감과잡초관리_precision-spraying.md)로 이어집니다. 이 글은 농기계의 전자 시스템 관점을 설명하며 특정 작물·약제·작업 설정을 제안한 자료는 아닙니다.
 
 ## 10. 공부와 실무 결과물을 연결하는 순서
 
@@ -166,9 +166,9 @@ LS엠트론의 2026년 7월 [비정형 농지 자율작업 발표](https://www.l
 
 | 공부할 기반 | 산업에서 확인할 결과물 |
 | --- | --- |
-| [회로·전자](../분야_topics/09-회로전자공학_circuits-electronics/README.md), [ADC/DAC](../분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/README.md) | 센서·전원 경로와 오차·대역폭의 설명입니다. |
-| [펌웨어·RTOS](../분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md), [인터페이스](../분야_topics/20-인터페이스통신_interfaces-communications/README.md) | 시점·버퍼·메시지·오류 상태의 시험입니다. |
-| [비전](../분야_topics/43-컴퓨터비전_computer-vision/README.md), [AI 평가](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md) | 입력·정답·운영 조건을 나눈 오류 분석입니다. |
+| [회로·전자](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/README.md), [ADC/DAC](../전자컴퓨터공학_ece/32-혼성신호-ADC-DAC_mixed-signal-data-converters/README.md) | 센서·전원 경로와 오차·대역폭의 설명입니다. |
+| [펌웨어·RTOS](../전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/README.md), [인터페이스](../전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/README.md) | 시점·버퍼·메시지·오류 상태의 시험입니다. |
+| [비전](../전자컴퓨터공학_ece/43-컴퓨터비전_computer-vision/README.md), [AI 평가](../전자컴퓨터공학_ece/46-AI응용에이전트평가_ai-agents-evaluation/README.md) | 입력·정답·운영 조건을 나눈 오류 분석입니다. |
 | [출처가 있는 계측 코드](../직무와실무기술_job-practice/사례_cases/01-회로와소자의계측코드_circuit-device-measurement.md) | 제조사 원문의 설정·측정·readback·오류 반환 해석입니다. |
 
 ## 출처와 확인 범위

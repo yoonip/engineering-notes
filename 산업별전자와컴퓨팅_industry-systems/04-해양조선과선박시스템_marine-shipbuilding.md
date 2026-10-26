@@ -61,7 +61,7 @@ flowchart LR
 
 PMS는 power management system, 전력 관리 시스템입니다. 전원·배전·부하의 상태와 요구를 함께 취급합니다. 에너지 관리는 여기에 일정 기간의 연료·저장 에너지·운용 효율 같은 관점을 연결할 수 있습니다. [ABB PEMS](https://new.abb.com/marine/systems-and-solutions/digital/control-and-monitoring/PEMS)와 [Kongsberg PMS](https://www.kongsbergmaritime.com/products/electrical-power-system/energy-products/power-management-systems/K-Power-PMS/)의 공개 설명에서 이런 통합 관계를 확인할 수 있습니다.
 
-전력은 어느 순간의 일률이고 에너지는 시간에 걸쳐 사용한 양입니다. 큰 순간 부하와 긴 시간의 소비량을 같은 지표로 비교하면 배터리·발전기·운용 조건을 잘못 해석할 수 있습니다. 기초는 [전력전자·에너지](../분야_topics/31-전력전자에너지_power-energy/README.md)와 [부하 변화의 과도 응답](../분야_topics/31-전력전자에너지_power-energy/해설_notes/부하변화의과도응답_buck-transient.md)에 연결합니다.
+전력은 어느 순간의 일률이고 에너지는 시간에 걸쳐 사용한 양입니다. 큰 순간 부하와 긴 시간의 소비량을 같은 지표로 비교하면 배터리·발전기·운용 조건을 잘못 해석할 수 있습니다. 기초는 [전력전자·에너지](../전자컴퓨터공학_ece/31-전력전자에너지_power-energy/README.md)와 [부하 변화의 과도 응답](../전자컴퓨터공학_ece/31-전력전자에너지_power-energy/해설_notes/부하변화의과도응답_buck-transient.md)에 연결합니다.
 
 ## 3. 엔진·화물·배출 저감의 계측과 제어
 
@@ -159,7 +159,7 @@ Siemens는 [2026-02-16 공식 발표](https://news.siemens.com/en-us/hd-hyundai-
 | 가상 모델은 간섭이 없는데 현장에 문제가 있습니다. | 실제 설치·좌표·공차·모델 갱신의 차이입니다. | 모델 판본·실측·현장 변경과 모델의 가정을 맞춥니다. |
 | AI 검사 점수는 좋은데 특정 작업의 불량을 놓칩니다. | 학습/평가 중복·조건 차이·라벨·검출 범위입니다. | 작업·제품·시기별 자료와 실제 누락·오검출을 봅니다. |
 
-이 표는 특정 조선소 사고나 사내 절차의 전사가 아닙니다. 구현의 기반은 [데이터베이스·데이터 공학](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/README.md), [제조 IT의 중복 사건 기록](../직무와실무기술_job-practice/사례_cases/05-AI와제조IT의평가사례_ai-manufacturing-it.md), 해석의 기반은 [수치해석의 검증](../분야_topics/50-과학시뮬레이션_physical-scientific-simulation/README.md)에서 연결합니다.
+이 표는 특정 조선소 사고나 사내 절차의 전사가 아닙니다. 구현의 기반은 [데이터베이스·데이터 공학](../전자컴퓨터공학_ece/40-데이터베이스데이터공학_databases-data-engineering/README.md), [제조 IT의 중복 사건 기록](../직무와실무기술_job-practice/사례_cases/05-AI와제조IT의평가사례_ai-manufacturing-it.md), 해석의 기반은 [수치해석의 검증](../전자컴퓨터공학_ece/50-과학시뮬레이션_physical-scientific-simulation/README.md)에서 연결합니다.
 
 ## 8. 기계·선체 상태 감시와 검사
 
@@ -191,7 +191,7 @@ IACS는 E26을 선박의 cyber resilience, E27을 탑재 시스템·장비의 cy
 | 감시·대응 | 이상 상태·서비스 중단·자료 손상의 관측입니다. | 실제 영향·관측 시각·조치·복구와 누락 자료입니다. |
 | 백업·복구 | 구성·프로그램·자료를 다시 사용할 수 있는 상태로 복원합니다. | 저장 파일의 존재 외에 복원 내용과 실제 필요한 상태의 일치입니다. |
 
-보안과 신뢰성은 서로 연결되지만 같은 증명을 뜻하지는 않습니다. 값의 체크섬은 전송 오류를 찾는 데 도움이 될 수 있어도 그 값이 승인된 주체가 보낸 것인지까지 증명하지는 않습니다. 기반 개념은 [보안·암호·하드웨어 신뢰](../분야_topics/38-보안암호하드웨어신뢰_security-cryptography/README.md)에서 공부합니다.
+보안과 신뢰성은 서로 연결되지만 같은 증명을 뜻하지는 않습니다. 값의 체크섬은 전송 오류를 찾는 데 도움이 될 수 있어도 그 값이 승인된 주체가 보낸 것인지까지 증명하지는 않습니다. 기반 개념은 [보안·암호·하드웨어 신뢰](../전자컴퓨터공학_ece/38-보안암호하드웨어신뢰_security-cryptography/README.md)에서 공부합니다.
 
 ## 10. 실무 시험의 단계와 결과물
 
