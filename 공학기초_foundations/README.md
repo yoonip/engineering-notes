@@ -1,4 +1,4 @@
-# 기초에서 구현과 검증까지
+# 공학 기초: 수학·물리·회로·컴퓨팅 | Engineering foundations
 
 [전체 분야](../분야별목차_CATALOG.md) · [용어의 뜻과 뉘앙스](용어와직관_TERMS_AND_INTUITION.md) · [실행 예제](../예제_examples/공학기초_foundations/README.md) · [출처·검토 범위](검증기록_VERIFICATION.md) · [English](#english)
 
@@ -8,9 +8,9 @@
 
 첫 시간 응답 계산으로 [RC 충전](RC충전_RC_RESPONSE.md)을 읽으실 수 있습니다. 전류와 전압 관계에서 출발해 시정수, 99%에 도달하는 시간, Euler 한 걸음의 오차를 계산합니다.
 
-![기초에서 구현과 검증까지 — 개념도 / Concept diagram](../자료_assets/도식_diagrams/foundations.png)
+![기초에서 구현과 검증까지 — 개념도 / Concept diagram](../그림자료_assets/도식_diagrams/foundations.png)
 
-[SVG](../자료_assets/도식_diagrams/foundations.svg) · [그림 원본 / Diagram source](../자료_assets/도식_diagrams/foundations.mmd)
+[SVG](../그림자료_assets/도식_diagrams/foundations.svg) · [그림 원본 / Diagram source](../그림자료_assets/도식_diagrams/foundations.mmd)
 
 직접 구성한 연결도입니다. 위아래는 기술의 우열이 아니라 모델 사이의 관계를 뜻합니다. 소프트웨어에서 출발해 하드웨어로 내려가도 되고, 측정하려는 현상에서 필요한 수학으로 돌아가도 됩니다.
 
@@ -18,45 +18,45 @@
 
 | 글 | 다루는 내용 |
 | --- | --- |
-| [단위·차원·불확도](../분야_topics/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md) | 단위·차원 검사와 측정 불확도의 전파 |
-| [선형대수·최소제곱](../분야_topics/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md) | 측정 자료의 최소제곱 모형과 QR 계산 |
-| [확률·추정](../분야_topics/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md) | 표본 평균·분산과 신뢰구간의 조건 |
-| [미분방정식·수치해법](../분야_topics/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md) | 변화율의 반복 계산과 정확도·안정성 |
-| [역학·에너지·진동](../분야_topics/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md) | 힘의 법칙, 진동 모형과 에너지 검사 |
-| [열전도·확산](../분야_topics/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md) | 에너지 수지, 열방정식과 격자 계산 |
+| [단위·차원·불확도](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md) | 단위·차원 검사와 측정 불확도의 전파 |
+| [선형대수·최소제곱](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md) | 측정 자료의 최소제곱 모형과 QR 계산 |
+| [확률·추정](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md) | 표본 평균·분산과 신뢰구간의 조건 |
+| [미분방정식·수치해법](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md) | 변화율의 반복 계산과 정확도·안정성 |
+| [역학·에너지·진동](../전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md) | 힘의 법칙, 진동 모형과 에너지 검사 |
+| [열전도·확산](../전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md) | 에너지 수지, 열방정식과 격자 계산 |
 
 ## 2. 회로·반도체·하드웨어
 
 | 글 | 다루는 내용 |
 | --- | --- |
-| [RC/RLC 회로](../분야_topics/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md) | 전하·에너지 보존, 시정수·감쇠·주파수 응답 |
-| [MOS 전하와 스위칭](../분야_topics/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md) | 게이트의 전류 제어와 square-law 모형의 적용 범위 |
-| [FSM·동기식 FIFO](../분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md) | 동일 에지의 읽기·쓰기·리셋과 데이터 순서 |
-| [지역성·cache·AMAT](../분야_topics/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md) | 메모리 지역성과 평균 접근 시간의 조건 |
-| [전송선·반사](../분야_topics/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md) | 분포된 배선 모형과 임피던스 불일치의 반사 |
-| [계측·probe 부하·불확도](../분야_topics/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md) | 프로브의 회로 부하와 측정 불확도 |
+| [RC/RLC 회로](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md) | 전하·에너지 보존, 시정수·감쇠·주파수 응답 |
+| [MOS 전하와 스위칭](../전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md) | 게이트의 전류 제어와 square-law 모형의 적용 범위 |
+| [FSM·동기식 FIFO](../전자컴퓨터공학_ece/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md) | 동일 에지의 읽기·쓰기·리셋과 데이터 순서 |
+| [지역성·cache·AMAT](../전자컴퓨터공학_ece/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md) | 메모리 지역성과 평균 접근 시간의 조건 |
+| [전송선·반사](../전자컴퓨터공학_ece/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md) | 분포된 배선 모형과 임피던스 불일치의 반사 |
+| [계측·probe 부하·불확도](../전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md) | 프로브의 회로 부하와 측정 불확도 |
 
 ## 3. 수 표현에서 펌웨어·시스템까지
 
 | 글 | 다루는 내용 |
 | --- | --- |
-| [정수·부동소수점·고정소수점](../분야_topics/04-c-cpp-python/해설_notes/비트에서수까지_numbers-and-quantization.md) | 비트 해석, overflow·반올림·포화 규칙 |
-| [컴파일·링크·reset에서 main까지](../분야_topics/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md) | 소스의 기계어 변환과 초기 RAM 상태 |
-| [MMIO·인터럽트·DMA](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md) | 레지스터·캐시·RAM의 순서와 버퍼 소유권 |
-| [UART framing·CRC](../분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md) | 바이트 흐름의 메시지 경계와 오류 검출 |
-| [프로세스·가상 메모리·동시성](../분야_topics/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md) | 주소 공간·접근 권한과 공유값 갱신 |
-| [보안과 신뢰성의 경계](../분야_topics/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md) | CRC·ECC·MAC의 확인 대상과 보장 범위 |
+| [정수·부동소수점·고정소수점](../전자컴퓨터공학_ece/04-c-cpp-python/해설_notes/비트에서수까지_numbers-and-quantization.md) | 비트 해석, overflow·반올림·포화 규칙 |
+| [컴파일·링크·reset에서 main까지](../전자컴퓨터공학_ece/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md) | 소스의 기계어 변환과 초기 RAM 상태 |
+| [MMIO·인터럽트·DMA](../전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md) | 레지스터·캐시·RAM의 순서와 버퍼 소유권 |
+| [UART framing·CRC](../전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md) | 바이트 흐름의 메시지 경계와 오류 검출 |
+| [프로세스·가상 메모리·동시성](../전자컴퓨터공학_ece/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md) | 주소 공간·접근 권한과 공유값 갱신 |
+| [보안과 신뢰성의 경계](../전자컴퓨터공학_ece/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md) | CRC·ECC·MAC의 확인 대상과 보장 범위 |
 
 ## 4. 신호·제어·AI·성능
 
 | 글 | 다루는 내용 |
 | --- | --- |
-| [샘플링·aliasing](../분야_topics/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md) | 서로 다른 연속 신호가 같은 표본이 되는 조건 |
-| [ADC 양자화](../분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/해설_notes/ADC양자화_adc-quantization.md) | 분해능·정확도와 양자화 SNR |
-| [피드백·이산 모델](../분야_topics/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md) | 표본화·입력 유지와 제어 이득·안정성 |
-| [미분·역전파·학습](../분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md) | 손실 미분, 중심 차분 검사와 매개변수 갱신 |
-| [Attention 수식과 구현](../분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md) | Q/K/V·softmax·마스크의 계산과 검사 |
-| [Roofline·병렬화 한계](../분야_topics/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md) | 연산·데이터 이동의 상한과 병렬화 효과 |
+| [샘플링·aliasing](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md) | 서로 다른 연속 신호가 같은 표본이 되는 조건 |
+| [ADC 양자화](../전자컴퓨터공학_ece/32-혼성신호-ADC-DAC_mixed-signal-data-converters/해설_notes/ADC양자화_adc-quantization.md) | 분해능·정확도와 양자화 SNR |
+| [피드백·이산 모델](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md) | 표본화·입력 유지와 제어 이득·안정성 |
+| [미분·역전파·학습](../전자컴퓨터공학_ece/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md) | 손실 미분, 중심 차분 검사와 매개변수 갱신 |
+| [Attention 수식과 구현](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md) | Q/K/V·softmax·마스크의 계산과 검사 |
+| [Roofline·병렬화 한계](../전자컴퓨터공학_ece/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md) | 연산·데이터 이동의 상한과 병렬화 효과 |
 
 ## 여러 글을 연결해서 읽기
 
@@ -72,45 +72,45 @@ These articles connect definitions to equations, executable models and checkable
 
 | Article | Central question |
 | --- | --- |
-| [Units, dimensions and uncertainty](../분야_topics/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md#english) | Are units consistent, and how does measurement uncertainty propagate? |
-| [Linear algebra and least squares](../분야_topics/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md#english) | How can a rule be fitted to measurements and calculated through QR? |
-| [Probability and estimation](../분야_topics/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md#english) | What do sample mean, variance and confidence intervals mean under their assumptions? |
-| [Differential equations and numerics](../분야_topics/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md#english) | How are rates turned into updates, and how are accuracy and stability checked? |
-| [Mechanics, energy and oscillation](../분야_topics/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md#english) | How do force laws produce oscillator models and energy checks? |
-| [Heat conduction and diffusion](../분야_topics/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md#english) | How does energy balance produce a heat equation and a verifiable grid calculation? |
+| [Units, dimensions and uncertainty](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md#english) | Are units consistent, and how does measurement uncertainty propagate? |
+| [Linear algebra and least squares](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md#english) | How can a rule be fitted to measurements and calculated through QR? |
+| [Probability and estimation](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md#english) | What do sample mean, variance and confidence intervals mean under their assumptions? |
+| [Differential equations and numerics](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md#english) | How are rates turned into updates, and how are accuracy and stability checked? |
+| [Mechanics, energy and oscillation](../전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md#english) | How do force laws produce oscillator models and energy checks? |
+| [Heat conduction and diffusion](../전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md#english) | How does energy balance produce a heat equation and a verifiable grid calculation? |
 
 ### 2. Circuits, semiconductors and hardware
 
 | Article | Central question |
 | --- | --- |
-| [RC/RLC response](../분야_topics/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md#english) | How do charge and energy laws yield time constants, damping and frequency response? |
-| [MOS electrostatics and switching](../분야_topics/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md#english) | Why does the gate control current, and where does square-law modeling apply? |
-| [FSM and synchronous FIFO](../분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md#english) | How are simultaneous operations, reset and data order specified? |
-| [Locality, cache and AMAT](../분야_topics/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md#english) | Why use small fast memories, and what assumptions support average access time? |
-| [Transmission lines and reflections](../분야_topics/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md#english) | When does interconnect propagation matter, and why do reflections occur? |
-| [Measurement, probes and uncertainty](../분야_topics/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md#english) | How does an instrument load the circuit, and how are measurement uncertainties handled? |
+| [RC/RLC response](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md#english) | How do charge and energy laws yield time constants, damping and frequency response? |
+| [MOS electrostatics and switching](../전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md#english) | Why does the gate control current, and where does square-law modeling apply? |
+| [FSM and synchronous FIFO](../전자컴퓨터공학_ece/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md#english) | How are simultaneous operations, reset and data order specified? |
+| [Locality, cache and AMAT](../전자컴퓨터공학_ece/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md#english) | Why use small fast memories, and what assumptions support average access time? |
+| [Transmission lines and reflections](../전자컴퓨터공학_ece/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md#english) | When does interconnect propagation matter, and why do reflections occur? |
+| [Measurement, probes and uncertainty](../전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md#english) | How does an instrument load the circuit, and how are measurement uncertainties handled? |
 
 ### 3. Representation, firmware and systems
 
 | Article | Central question |
 | --- | --- |
-| [Integer, floating point and fixed point](../분야_topics/04-c-cpp-python/해설_notes/비트에서수까지_numbers-and-quantization.md#english) | How do formats interpret bits and specify overflow, rounding and saturation? |
-| [Compilation, linking and reset to main](../분야_topics/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md#english) | How does source become executable code, and how is initial RAM prepared? |
-| [MMIO, interrupts and DMA](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md#english) | How are ordering, caches and buffer ownership managed across CPU and device? |
-| [UART framing and CRC](../분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md#english) | How does a byte stream acquire boundaries and error detection? |
-| [Processes, virtual memory and concurrency](../분야_topics/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md#english) | What do address spaces and protection mean, and why can shared updates disappear? |
-| [Security and reliability boundaries](../분야_topics/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md#english) | What do CRC, ECC and MAC check, and where do their guarantees stop? |
+| [Integer, floating point and fixed point](../전자컴퓨터공학_ece/04-c-cpp-python/해설_notes/비트에서수까지_numbers-and-quantization.md#english) | How do formats interpret bits and specify overflow, rounding and saturation? |
+| [Compilation, linking and reset to main](../전자컴퓨터공학_ece/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md#english) | How does source become executable code, and how is initial RAM prepared? |
+| [MMIO, interrupts and DMA](../전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md#english) | How are ordering, caches and buffer ownership managed across CPU and device? |
+| [UART framing and CRC](../전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md#english) | How does a byte stream acquire boundaries and error detection? |
+| [Processes, virtual memory and concurrency](../전자컴퓨터공학_ece/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md#english) | What do address spaces and protection mean, and why can shared updates disappear? |
+| [Security and reliability boundaries](../전자컴퓨터공학_ece/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md#english) | What do CRC, ECC and MAC check, and where do their guarantees stop? |
 
 ### 4. Signals, control, AI and performance
 
 | Article | Central question |
 | --- | --- |
-| [Sampling and aliasing](../분야_topics/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md#english) | Why can different continuous signals produce identical samples? |
-| [ADC quantization](../분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/해설_notes/ADC양자화_adc-quantization.md#english) | How does resolution differ from accuracy, and how is the ideal SNR derived? |
-| [Feedback and discrete models](../분야_topics/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md#english) | How do sampled measurement and held input connect controller gain to stability? |
-| [Gradients and learning](../분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md#english) | How are loss derivatives derived, checked with centered differences and used for updates? |
-| [Attention from equations](../분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md#english) | What do Q/K/V, softmax and masking compute, and which properties can be checked? |
-| [Roofline and parallel limits](../분야_topics/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md#english) | How do compute/traffic bounds and serial fractions limit performance? |
+| [Sampling and aliasing](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md#english) | Why can different continuous signals produce identical samples? |
+| [ADC quantization](../전자컴퓨터공학_ece/32-혼성신호-ADC-DAC_mixed-signal-data-converters/해설_notes/ADC양자화_adc-quantization.md#english) | How does resolution differ from accuracy, and how is the ideal SNR derived? |
+| [Feedback and discrete models](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md#english) | How do sampled measurement and held input connect controller gain to stability? |
+| [Gradients and learning](../전자컴퓨터공학_ece/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md#english) | How are loss derivatives derived, checked with centered differences and used for updates? |
+| [Attention from equations](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md#english) | What do Q/K/V, softmax and masking compute, and which properties can be checked? |
+| [Roofline and parallel limits](../전자컴퓨터공학_ece/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md#english) | How do compute/traffic bounds and serial fractions limit performance? |
 
 ### Connecting the articles
 
