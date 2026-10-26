@@ -1,0 +1,11 @@
+syntax = "proto3"; // 코드 생성기가 사용할 문법 판본
+package bench; // 벤치 실습 메시지의 이름 공간
+message Reading { // 단위가 정해진 한 채널의 값
+  string channel = 1; // bus_v 또는 temperature_c 중 하나
+  optional double value = 2; // 값 0과 값 누락을 구분
+} // 채널 정의 끝
+message Sample { // 공유 단조 시계를 쓰는 한 벤치의 샘플
+  optional uint64 sequence = 1; // 순번 0도 명시적으로 담기
+  optional uint64 sampled_ms = 2; // 측정 시점이며 수신 시점과 구분
+  repeated Reading readings = 3; // 이 예제에서는 서로 다른 두 채널을 요구
+} // 메시지 정의 끝

@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "id": "06-bench-protobuf",
+  "title": "Protobuf 벤치 샘플의 존재·순서·측정 시각 검사",
+  "language": "Protocol Buffers proto3 + Python3",
+  "original_example": true,
+  "sources": [
+    "telemetry.proto",
+    "health.py",
+    "check_health.py"
+  ],
+  "source_sha256": {
+    "telemetry.proto": "671d6bd5ba21a72324d58762dfe3ae6c5cd7c9dbf4e1920906f86d16ebecd885",
+    "health.py": "282306d25b7ac8227385be6d3ada5a28942dc186cc2789e90e6cca673e1e8e92",
+    "check_health.py": "ecbe5c2293b2bce0fda7b140e7aa6f01a1d1b27fb24adc1c50db84a68f96f8a2"
+  },
+  "returncode": 0,
+  "stdout": "PASS protobuf valid=54 checks=84 rejected=22\n",
+  "stderr": "",
+  "expected_marker": "PASS protobuf valid=54 checks=84 rejected=22",
+  "actual_execution": {
+    "command": [
+      "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-B",
+      "하드웨어코딩_hardware-coding/응용시스템_applied-systems/06-벤치텔레메트리_protobuf/check_health.py",
+      "--dependencies",
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\python-deps",
+      "--report",
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\protobuf-results.json"
+    ],
+    "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10",
+    "execution_date": "2026-10-26",
+    "record_origin": "Parent-provided completed execution and private result JSON; this documentation step did not rerun tools"
+  },
+  "reproduction": {
+    "equivalent_absolute_command": [
+      "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-B",
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\응용시스템_applied-systems\\06-벤치텔레메트리_protobuf\\check_health.py",
+      "--dependencies",
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\python-deps",
+      "--report",
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\protobuf-results.json"
+    ],
+    "temporary_dependencies": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\python-deps",
+    "python_optimization": "Run without -O; the driver rejects optimization before tests"
+  },
+  "tools": {
+    "python_version": "3.12.14",
+    "protobuf": "7.36.2",
+    "grpcio_tools": "1.85.0"
+  },
+  "verification": {
+    "status": "passed_actual_protoc_and_bench_checks",
+    "versions": {
+      "protobuf": "7.36.2",
+      "grpcio_tools": "1.85.0"
+    },
+    "generation": {
+      "command": [
+        "C:\\Users\\test2\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-m",
+        "grpc_tools.protoc",
+        "-I.",
+        "--python_out=.",
+        "telemetry.proto"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\bench-protobuf-11ozalzs",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "generated_sha256": "716565d87983804e4b02889923d7cdff79eae39332ee5eeef752dc4ebba8d7af"
+    },
+    "source_sha256": {
+      "telemetry.proto": "671d6bd5ba21a72324d58762dfe3ae6c5cd7c9dbf4e1920906f86d16ebecd885",
+      "health.py": "282306d25b7ac8227385be6d3ada5a28942dc186cc2789e90e6cca673e1e8e92",
+      "check_health.py": "ecbe5c2293b2bce0fda7b140e7aa6f01a1d1b27fb24adc1c50db84a68f96f8a2"
+    },
+    "valid_wire_cases": 54,
+    "checks": 84,
+    "rejected_conditions": 22,
+    "trace": [
+      {
+        "now_ms": 0,
+        "status": "FRESH"
+      },
+      {
+        "now_ms": 100,
+        "status": "FRESH"
+      },
+      {
+        "now_ms": 101,
+        "status": "STALE"
+      }
+    ],
+    "final_sample": {
+      "sequence": 2,
+      "sampled_ms": 204,
+      "bus_v": 12,
+      "temperature_c": 25
+    },
+    "scope": {
+      "actual_schema_compilation": true,
+      "protobuf_runtime": true,
+      "shared_bench_clock": true,
+      "live_network": false,
+      "spacecraft_protocol": false,
+      "flight_software": false,
+      "actuation": false,
+      "authentication": false
+    }
+  },
+  "recorded_at": "2026-10-26T09:05:28.537Z",
+  "expected": {
+    "valid_wire_cases": 54,
+    "checks": 84,
+    "rejected_conditions": 22,
+    "maximum_payload_bytes": 256,
+    "fresh_age_ms_inclusive": 100
+  },
+  "model": {
+    "clock": "Same nonnegative integer monotonic millisecond clock on one bench, sender and receiver with shared origin",
+    "channels": {
+      "bus_v": {
+        "unit": "V",
+        "range_inclusive": [
+          0,
+          30
+        ]
+      },
+      "temperature_c": {
+        "unit": "degC",
+        "range_inclusive": [
+          -20,
+          80
+        ]
+      }
+    },
+    "presence": "Explicit optional sequence, sampled_ms and Reading.value; value0 is different from missing",
+    "sequence": "Strictly increasing after first accepted sample; gaps allowed; no wrap/reboot session handling",
+    "freshness": "received_ms-sampled_ms on receipt, now_ms-sampled_ms on query; received time does not reset age",
+    "rejected_packets": "Receiver clock observation can advance while accepted sample remains unchanged",
+    "unknown_fields": "Protobuf runtime accepts compatible unknown field100 in one explicit test; unknown channel names are rejected"
+  },
+  "scope": {
+    "actual_protoc_generation": true,
+    "actual_protobuf_runtime": true,
+    "shared_bench_clock": true,
+    "live_network": false,
+    "clock_synchronization": false,
+    "crc": false,
+    "authentication": false,
+    "spacecraft_protocol": false,
+    "flight_software": false,
+    "actuation": false
+  },
+  "references": [
+    {
+      "url": "https://protobuf.dev/programming-guides/field_presence/",
+      "role": "Explicit optional presence and the distinction between default0 and missing"
+    },
+    {
+      "url": "https://protobuf.dev/programming-guides/proto3/",
+      "role": "Schema types, field numbers and compatible unknown fields"
+    },
+    {
+      "url": "https://protobuf.dev/reference/python/python-generated/",
+      "role": "Generated Python API, HasField and parsing/serialization"
+    },
+    {
+      "url": "https://grpc.io/docs/languages/python/quickstart/",
+      "role": "grpcio-tools packaging of protoc; no gRPC server or transport created"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/protocolbuffers/protobuf/main/LICENSE",
+      "role": "External Protobuf runtime/compiler license"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/grpc/grpc/master/LICENSE",
+      "role": "External grpcio-tools project license"
+    }
+  ]
+}

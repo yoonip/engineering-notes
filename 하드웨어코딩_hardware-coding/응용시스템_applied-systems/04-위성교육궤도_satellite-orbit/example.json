@@ -1,0 +1,709 @@
+{
+  "schema_version": 1,
+  "id": "04-satellite-orbit",
+  "title": "교육용 지구 위성 원운동의 RK4 적분과 보존량",
+  "language": "Python3 standard library",
+  "original_example": true,
+  "sources": [
+    "orbit.py",
+    "check_orbit.py"
+  ],
+  "source_sha256": {
+    "orbit.py": "221615b86ce66d226938147551305cf58b794b1ab811e613d667f6a128212840",
+    "check_orbit.py": "49d89a4a11e63786f53fa51fee87af1e17e903295179f73c8f2225364777d6de"
+  },
+  "tools": {
+    "python_version": "3.12.14",
+    "python_executable": "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "third_party_packages": []
+  },
+  "command": [
+    "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "-B",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\응용시스템_applied-systems\\04-위성교육궤도_satellite-orbit\\check_orbit.py",
+    "--out",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\c_training\\orbit-validation.json"
+  ],
+  "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩",
+  "environment": {
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "returncode": 0,
+  "stdout": "PASS orbit checks=8435 circular_runs=6 integrated_steps=1680 convergence_pairs=4\n",
+  "stderr": "",
+  "expected_marker": "PASS orbit checks=8435 circular_runs=6 integrated_steps=1680 convergence_pairs=4",
+  "expected": {
+    "checks": 8435,
+    "circular_runs": 6,
+    "integrated_steps": 1680,
+    "convergence_pairs": 4,
+    "sampled_relative_position_error_less_than": 0.00002,
+    "sampled_relative_velocity_error_less_than": 0.00002,
+    "sampled_relative_energy_drift_less_than": 0.00001,
+    "sampled_relative_angular_momentum_drift_less_than": 0.00001,
+    "fine_grid_position_error_km_less_than": 0.001,
+    "fine_grid_relative_energy_drift_less_than": 1e-7,
+    "fine_grid_relative_angular_momentum_drift_less_than": 1e-7,
+    "observed_convergence_order_between": [
+      3.5,
+      4.5
+    ]
+  },
+  "model": {
+    "kind": "Planar inertial, unforced ideal circular Earth satellite, massless secondary, central inverse-square gravity",
+    "state_order": [
+      "x_km",
+      "y_km",
+      "vx_km_s",
+      "vy_km_s"
+    ],
+    "mu_km3_s2": 398600.435507,
+    "mu_source": "JPL astrodynamic parameters, Earth GM from DE440",
+    "radii_km": [
+      7000,
+      9000
+    ],
+    "steps_per_period": [
+      120,
+      240,
+      480
+    ],
+    "integration": "Classical RK4 with 4 derivative evaluations per step",
+    "duration": "One exact circular period for each radius",
+    "exact_reference": "Analytic sine/cosine circular motion with n=sqrt(mu/r^3)",
+    "energy": "specific energy v^2/2-mu/r in km^2/s^2",
+    "angular_momentum": "specific z angular momentum x*vy-y*vx in km^2/s"
+  },
+  "verification": {
+    "status": "passed_educational_two_body_checks",
+    "checked_at": "2026-10-26T08:44:18.392028+00:00",
+    "checks": 8435,
+    "mu_km3_s2": 398600.435507,
+    "runs": [
+      {
+        "radius_km": 7000,
+        "steps": 120,
+        "step_s": 48.57097236412973,
+        "period_s": 5828.516683695568,
+        "maximum_position_error_km": 0.00983830337422013,
+        "maximum_velocity_error_km_s": 0.000010596251377604694,
+        "maximum_relative_energy_drift": 6.872468416446186e-8,
+        "maximum_relative_angular_momentum_drift": 3.436234035272975e-8,
+        "final_position_error_km": 0.00983830337422013,
+        "trace": [
+          {
+            "time_s": 0,
+            "state": [
+              7000,
+              0,
+              0,
+              7.54605323053998
+            ],
+            "exact_state": [
+              7000,
+              0,
+              0,
+              7.54605323053998
+            ],
+            "position_error_km": 0
+          },
+          {
+            "time_s": 1457.129170923892,
+            "state": [
+              -0.00027418307024618116,
+              6999.999115963972,
+              -7.546054118712657,
+              -0.0000012428090090388366
+            ],
+            "exact_state": [
+              -1.1256858547736456e-12,
+              7000,
+              -7.54605323053998,
+              -1.2134979115696895e-15
+            ],
+            "position_error_km": 0.0009255787670094946
+          },
+          {
+            "time_s": 2914.258341847784,
+            "state": [
+              -6999.998117001126,
+              -0.0041166626731978795,
+              0.00000456168649953792,
+              -7.5460551307749135
+            ],
+            "exact_state": [
+              -7000,
+              -2.2513717095472913e-12,
+              2.426995823139379e-15,
+              -7.54605323053998
+            ],
+            "position_error_km": 0.00452687489397169
+          },
+          {
+            "time_s": 4371.387512771676,
+            "state": [
+              0.00847237091062425,
+              -6999.998760496069,
+              7.546054372249723,
+              0.000008309935713435301
+            ],
+            "exact_state": [
+              -1.2858791391047208e-12,
+              -7000,
+              7.54605323053998,
+              -1.3861874902464494e-15
+            ],
+            "position_error_km": 0.008562560298437433
+          },
+          {
+            "time_s": 5828.516683695568,
+            "state": [
+              6999.999518919603,
+              0.00982653423255897,
+              -0.000010593078413778656,
+              7.546053489833404
+            ],
+            "exact_state": [
+              7000,
+              4.5027434190945825e-12,
+              -4.853991646278758e-15,
+              7.54605323053998
+            ],
+            "position_error_km": 0.00983830337422013
+          }
+        ]
+      },
+      {
+        "radius_km": 7000,
+        "steps": 240,
+        "step_s": 24.285486182064865,
+        "period_s": 5828.516683695568,
+        "maximum_position_error_km": 0.0005453244312137395,
+        "maximum_velocity_error_km_s": 5.865391638457902e-7,
+        "maximum_relative_energy_drift": 2.1467465177866256e-9,
+        "maximum_relative_angular_momentum_drift": 1.0733731784789585e-9,
+        "final_position_error_km": 0.0005442511945221735,
+        "trace": [
+          {
+            "time_s": 0,
+            "state": [
+              7000,
+              0,
+              0,
+              7.54605323053998
+            ],
+            "exact_state": [
+              7000,
+              0,
+              0,
+              7.54605323053998
+            ],
+            "position_error_km": 0
+          },
+          {
+            "time_s": 1457.129170923892,
+            "state": [
+              -0.000016411955783723897,
+              6999.9999466706295,
+              -7.546053286004513,
+              -7.499980358982583e-8
+            ],
+            "exact_state": [
+              -1.1256858547736456e-12,
+              7000,
+              -7.54605323053998,
+              -1.2134979115696895e-15
+            ],
+            "position_error_km": 0.00005579761658755404
+          },
+          {
+            "time_s": 2914.258341847784,
+            "state": [
+              -6999.99988975316,
+              -0.0002471421210543667,
+              2.7028908425319464e-7,
+              -7.546053345337035
+            ],
+            "exact_state": [
+              -7000,
+              -2.2513717095472913e-12,
+              2.426995823139379e-15,
+              -7.54605323053998
+            ],
+            "position_error_km": 0.00027061705917324054
+          },
+          {
+            "time_s": 4371.387512771676,
+            "state": [
+              0.0004939002451180841,
+              -6999.9999355689015,
+              7.546053293922361,
+              4.789886269562782e-7
+            ],
+            "exact_state": [
+              -1.2858791391047208e-12,
+              -7000,
+              7.54605323053998,
+              -1.3861874902464494e-15
+            ],
+            "position_error_km": 0.0004980851532146404
+          },
+          {
+            "time_s": 5828.516683695568,
+            "state": [
+              6999.999984972754,
+              0.0005440437018364719,
+              -5.864832402779907e-7,
+              7.546053238639689
+            ],
+            "exact_state": [
+              7000,
+              4.5027434190945825e-12,
+              -4.853991646278758e-15,
+              7.54605323053998
+            ],
+            "position_error_km": 0.0005442511945221735
+          }
+        ]
+      },
+      {
+        "radius_km": 7000,
+        "steps": 480,
+        "step_s": 12.142743091032433,
+        "period_s": 5828.516683695568,
+        "maximum_position_error_km": 0.00003219651493306764,
+        "maximum_velocity_error_km_s": 3.4283083759561344e-8,
+        "maximum_relative_energy_drift": 6.707721095307211e-11,
+        "maximum_relative_angular_momentum_drift": 3.353856428681688e-11,
+        "final_position_error_km": 0.00003180486765497459,
+        "trace": [
+          {
+            "time_s": 0,
+            "state": [
+              7000,
+              0,
+              0,
+              7.54605323053998
+            ],
+            "exact_state": [
+              7000,
+              0,
+              0,
+              7.54605323053998
+            ],
+            "position_error_km": 0
+          },
+          {
+            "time_s": 1457.129170923892,
+            "state": [
+              -0.0000010012979174689463,
+              6999.999996727628,
+              -7.546053234004345,
+              -4.60135295143882e-9
+            ],
+            "exact_state": [
+              -1.1256858547736456e-12,
+              7000,
+              -7.54605323053998,
+              -1.2134979115696895e-15
+            ],
+            "position_error_km": 0.0000034221357933654083
+          },
+          {
+            "time_s": 2914.258341847784,
+            "state": [
+              -6999.999993343155,
+              -0.000015123331365884951,
+              1.642391024569978e-8,
+              -7.546053237589562
+            ],
+            "exact_state": [
+              -7000,
+              -2.2513717095472913e-12,
+              2.426995823139379e-15,
+              -7.54605323053998
+            ],
+            "position_error_km": 0.00001652357900171425
+          },
+          {
+            "time_s": 4371.387512771676,
+            "state": [
+              0.00002974614389472663,
+              -6999.999996380757,
+              7.546053234251734,
+              2.8665471704658607e-8
+            ],
+            "exact_state": [
+              -1.2858791391047208e-12,
+              -7000,
+              7.54605323053998,
+              -1.3861874902464494e-15
+            ],
+            "position_error_km": 0.0000299655147555309
+          },
+          {
+            "time_s": 5828.516683695568,
+            "state": [
+              6999.999999530455,
+              0.000031801405953046924,
+              -3.428215440692828e-8,
+              7.546053230793069
+            ],
+            "exact_state": [
+              7000,
+              4.5027434190945825e-12,
+              -4.853991646278758e-15,
+              7.54605323053998
+            ],
+            "position_error_km": 0.00003180486765497459
+          }
+        ]
+      },
+      {
+        "radius_km": 9000,
+        "steps": 120,
+        "step_s": 70.80982189645127,
+        "period_s": 8497.178627574152,
+        "maximum_position_error_km": 0.012649246974413601,
+        "maximum_velocity_error_km_s": 0.000009345015173165341,
+        "maximum_relative_energy_drift": 6.872468097361861e-8,
+        "maximum_relative_angular_momentum_drift": 3.4362338815623386e-8,
+        "final_position_error_km": 0.012649246974413601,
+        "trace": [
+          {
+            "time_s": 0,
+            "state": [
+              9000,
+              0,
+              0,
+              6.65499340935478
+            ],
+            "exact_state": [
+              9000,
+              0,
+              0,
+              6.65499340935478
+            ],
+            "position_error_km": 0
+          },
+          {
+            "time_s": 2124.294656893538,
+            "state": [
+              -0.0003525210831867298,
+              8999.998863382258,
+              -6.654994192649455,
+              -0.000001096054511373623
+            ],
+            "exact_state": [
+              5.51091059616309e-13,
+              9000,
+              -6.65499340935478,
+              4.075008188556531e-16
+            ],
+            "position_error_km": 0.001190029834332081
+          },
+          {
+            "time_s": 4248.589313787076,
+            "state": [
+              -8999.997579001472,
+              -0.0052928519675106145,
+              0.000004023029307409498,
+              -6.654995085204463
+            ],
+            "exact_state": [
+              -9000,
+              1.102182119232618e-12,
+              -8.150016377113062e-16,
+              -6.65499340935478
+            ],
+            "position_error_km": 0.005820267677059277
+          },
+          {
+            "time_s": 6372.883970680614,
+            "state": [
+              0.01089304818930259,
+              -8999.99840635213,
+              6.654994416248111,
+              0.000007328674339335262
+            ],
+            "exact_state": [
+              -9.646878956150054e-12,
+              -9000,
+              6.65499340935478,
+              -7.133323986002436e-15
+            ],
+            "position_error_km": 0.0110090059768909
+          },
+          {
+            "time_s": 8497.178627574152,
+            "state": [
+              8999.999381468091,
+              0.01263411521404123,
+              -0.000009342216876429,
+              6.654993638030073
+            ],
+            "exact_state": [
+              9000,
+              -2.204364238465236e-12,
+              1.6300032754226124e-15,
+              6.65499340935478
+            ],
+            "position_error_km": 0.012649246974413601
+          }
+        ]
+      },
+      {
+        "radius_km": 9000,
+        "steps": 240,
+        "step_s": 35.404910948225634,
+        "period_s": 8497.178627574152,
+        "maximum_position_error_km": 0.0007011315236029488,
+        "maximum_velocity_error_km_s": 5.17278992546676e-7,
+        "maximum_relative_energy_drift": 2.1467466247422634e-9,
+        "maximum_relative_angular_momentum_drift": 1.0733733625706741e-9,
+        "final_position_error_km": 0.0006997516455151888,
+        "trace": [
+          {
+            "time_s": 0,
+            "state": [
+              9000,
+              0,
+              0,
+              6.65499340935478
+            ],
+            "exact_state": [
+              9000,
+              0,
+              0,
+              6.65499340935478
+            ],
+            "position_error_km": 0
+          },
+          {
+            "time_s": 2124.294656893538,
+            "state": [
+              -0.000021101097331666097,
+              8999.999931433658,
+              -6.654993458269903,
+              -6.614361702794724e-8
+            ],
+            "exact_state": [
+              5.51091059616309e-13,
+              9000,
+              -6.65499340935478,
+              4.075008188556531e-16
+            ],
+            "position_error_km": 0.00007173980449736285
+          },
+          {
+            "time_s": 4248.589313787076,
+            "state": [
+              -8999.999858254054,
+              -0.00031775418085544516,
+              2.3837258836256758e-7,
+              -6.6549935105962685
+            ],
+            "exact_state": [
+              -9000,
+              1.102182119232618e-12,
+              -8.150016377113062e-16,
+              -6.65499340935478
+            ],
+            "position_error_km": 0.00034793624905455223
+          },
+          {
+            "time_s": 6372.883970680614,
+            "state": [
+              0.0006350146606450835,
+              -8999.999917160001,
+              6.654993465252795,
+              4.2242831035932404e-7
+            ],
+            "exact_state": [
+              -9.646878956150054e-12,
+              -9000,
+              6.65499340935478,
+              -7.133323986002436e-15
+            ],
+            "position_error_km": 0.0006403952661430379
+          },
+          {
+            "time_s": 8497.178627574152,
+            "state": [
+              8999.999980679246,
+              0.0006994848610020199,
+              -5.172296666244858e-7,
+              6.654993416498057
+            ],
+            "exact_state": [
+              9000,
+              -2.204364238465236e-12,
+              1.6300032754226124e-15,
+              6.65499340935478
+            ],
+            "position_error_km": 0.0006997516455151888
+          }
+        ]
+      },
+      {
+        "radius_km": 9000,
+        "steps": 480,
+        "step_s": 17.702455474112817,
+        "period_s": 8497.178627574152,
+        "maximum_position_error_km": 0.000041395680765081343,
+        "maximum_velocity_error_km_s": 3.02349561812892e-8,
+        "maximum_relative_energy_drift": 6.708107918200324e-11,
+        "maximum_relative_angular_momentum_drift": 3.354050319180709e-11,
+        "final_position_error_km": 0.000040892133747685325,
+        "trace": [
+          {
+            "time_s": 0,
+            "state": [
+              9000,
+              0,
+              0,
+              6.65499340935478
+            ],
+            "exact_state": [
+              9000,
+              0,
+              0,
+              6.65499340935478
+            ],
+            "position_error_km": 0
+          },
+          {
+            "time_s": 2124.294656893538,
+            "state": [
+              -0.0000012873990158368542,
+              8999.999995792654,
+              -6.654993412410069,
+              -4.0580301341464065e-9
+            ],
+            "exact_state": [
+              5.51091059616309e-13,
+              9000,
+              -6.65499340935478,
+              4.075008188556531e-16
+            ],
+            "position_error_km": 0.0000043999044493801115
+          },
+          {
+            "time_s": 4248.589313787076,
+            "state": [
+              -8999.999991441175,
+              -0.000019444341461394288,
+              1.4484574567541486e-8,
+              -6.6549934155719415
+            ],
+            "exact_state": [
+              -9000,
+              1.102182119232618e-12,
+              -8.150016377113062e-16,
+              -6.65499340935478
+            ],
+            "position_error_km": 0.00002124466872463255
+          },
+          {
+            "time_s": 6372.883970680614,
+            "state": [
+              0.000038245172618189827,
+              -8999.999995346665,
+              6.654993412628252,
+              2.5280657095505532e-8
+            ],
+            "exact_state": [
+              -9.646878956150054e-12,
+              -9000,
+              6.65499340935478,
+              -7.133323986002436e-15
+            ],
+            "position_error_km": 0.000038527230546909545
+          },
+          {
+            "time_s": 8497.178627574152,
+            "state": [
+              8999.999999396294,
+              0.00004088767492760326,
+              -3.0234130726780606e-8,
+              6.654993409577974
+            ],
+            "exact_state": [
+              9000,
+              -2.204364238465236e-12,
+              1.6300032754226124e-15,
+              6.65499340935478
+            ],
+            "position_error_km": 0.000040892133747685325
+          }
+        ]
+      }
+    ],
+    "convergence": [
+      {
+        "radius_km": 7000,
+        "coarse_steps": 120,
+        "fine_steps": 240,
+        "error_ratio": 18.041193115670282,
+        "observed_order": 4.17322284618255
+      },
+      {
+        "radius_km": 7000,
+        "coarse_steps": 240,
+        "fine_steps": 480,
+        "error_ratio": 16.93737450613515,
+        "observed_order": 4.082138352052191
+      },
+      {
+        "radius_km": 9000,
+        "coarse_steps": 120,
+        "fine_steps": 240,
+        "error_ratio": 18.041189917423935,
+        "observed_order": 4.173222590429257
+      },
+      {
+        "radius_km": 9000,
+        "coarse_steps": 240,
+        "fine_steps": 480,
+        "error_ratio": 16.937311106968846,
+        "observed_order": 4.082132951815338
+      }
+    ],
+    "source_sha256": {
+      "orbit.py": "221615b86ce66d226938147551305cf58b794b1ab811e613d667f6a128212840",
+      "check_orbit.py": "49d89a4a11e63786f53fa51fee87af1e17e903295179f73c8f2225364777d6de"
+    }
+  },
+  "scope": {
+    "selected_educational_experiment": true,
+    "real_satellite_observation": false,
+    "spice_toolkit_execution": false,
+    "physical_spacecraft_execution": false,
+    "flight_control": false,
+    "thrust": false,
+    "perturbations": false,
+    "earth_fixed_coordinates": false,
+    "long_duration_validation": false,
+    "full_spaceflight_system": false
+  },
+  "limitations": [
+    "Ideal two-body central gravity, no J2, atmosphere, third-body forces or radiation pressure",
+    "Sampled one-period error maxima are not bounds for every continuous instant or arbitrary trajectories",
+    "RK4 is not a symplectic long-term energy-preserving integrator",
+    "Educational orbit propagation only; independent of indoor robot estimation"
+  ],
+  "references": [
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/cspice/prop2b_c.html",
+      "role": "Two-body assumptions, compatible units and circular speed/half-period reference; no SPICE routine or example code used"
+    },
+    {
+      "url": "https://ssd.jpl.nasa.gov/astro_par.html",
+      "role": "Earth GM=398600.435507 km^3/s^2, DE440 table"
+    },
+    {
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter3-1/",
+      "role": "Inverse-square gravitation and circular/elliptic orbit concepts"
+    }
+  ]
+}
