@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="730" viewBox="0 0 1120 730" role="img" aria-labelledby="title desc">
+  <title id="title">감광막의 패턴을 아래 재료에 옮기는 과정</title>
+  <desc id="desc">양성 감광막의 예입니다. 첫째 기판 위에 대상막과 감광막을 형성합니다. 둘째 노광과 현상으로 감광막의 중앙을 엽니다. 셋째 노출된 대상막을 식각합니다. 넷째 남은 감광막을 제거해 대상막의 패턴을 얻습니다. 색과 치수는 개념 설명용이며 실제 축척이 아닙니다.</desc>
+  <defs>
+    <style>
+      text { font-family: "Malgun Gothic", "Noto Sans KR", sans-serif; fill: #172b3a; }
+      .title { font-size: 27px; font-weight: 700; }
+      .step { font-size: 21px; font-weight: 700; }
+      .body { font-size: 18px; }
+      .small { font-size: 16px; }
+      .panel { fill: #f8fafc; stroke: #c7d4df; stroke-width: 2; }
+      .substrate { fill: #bac5cf; stroke: #53687c; stroke-width: 1.5; }
+      .film { fill: #5ba4d3; stroke: #22648d; stroke-width: 1.5; }
+      .resist { fill: #edbe57; stroke: #8f6520; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <rect width="1120" height="730" fill="white"/>
+  <text x="40" y="49" class="title">감광막의 모양을 재료의 모양으로 옮깁니다</text>
+  <rect x="40" y="79" width="22" height="18" class="resist"/>
+  <text x="72" y="95" class="small">감광막 (PR)</text>
+  <rect x="245" y="79" width="22" height="18" class="film"/>
+  <text x="277" y="95" class="small">가공할 대상막</text>
+  <rect x="485" y="79" width="22" height="18" class="substrate"/>
+  <text x="517" y="95" class="small">기판</text>
+  <rect x="40" y="128" width="500" height="246" rx="12" class="panel"/>
+  <text x="62" y="164" class="step">1. 막과 감광막 형성</text>
+  <rect x="88" y="264" width="404" height="58" class="substrate"/>
+  <rect x="88" y="232" width="404" height="32" class="film"/>
+  <rect x="88" y="198" width="404" height="34" class="resist"/>
+  <text x="62" y="352" class="body">대상막 위에 빛에 반응하는 막을 만듭니다.</text>
+  <rect x="580" y="128" width="500" height="246" rx="12" class="panel"/>
+  <text x="602" y="164" class="step">2. 노광과 현상</text>
+  <rect x="628" y="264" width="404" height="58" class="substrate"/>
+  <rect x="628" y="232" width="404" height="32" class="film"/>
+  <rect x="628" y="198" width="142" height="34" class="resist"/>
+  <rect x="890" y="198" width="142" height="34" class="resist"/>
+  <text x="797" y="219" class="small">열린 창</text>
+  <text x="602" y="352" class="body">양성 PR의 노광된 부분이 제거된 예입니다.</text>
+  <rect x="40" y="407" width="500" height="246" rx="12" class="panel"/>
+  <text x="62" y="443" class="step">3. 대상막 식각</text>
+  <rect x="88" y="543" width="404" height="58" class="substrate"/>
+  <rect x="88" y="511" width="142" height="32" class="film"/>
+  <rect x="350" y="511" width="142" height="32" class="film"/>
+  <rect x="88" y="477" width="142" height="34" class="resist"/>
+  <rect x="350" y="477" width="142" height="34" class="resist"/>
+  <text x="62" y="631" class="body">창 아래의 대상막을 선택적으로 제거합니다.</text>
+  <rect x="580" y="407" width="500" height="246" rx="12" class="panel"/>
+  <text x="602" y="443" class="step">4. 남은 감광막 제거</text>
+  <rect x="628" y="543" width="404" height="58" class="substrate"/>
+  <rect x="628" y="511" width="142" height="32" class="film"/>
+  <rect x="890" y="511" width="142" height="32" class="film"/>
+  <text x="602" y="631" class="body">대상막의 패턴을 다음 공정으로 넘깁니다.</text>
+  <path d="M546 251 H570 M562 244 L570 251 L562 258" fill="none" stroke="#475569" stroke-width="3"/>
+  <path d="M546 530 H570 M562 523 L570 530 L562 537" fill="none" stroke="#475569" stroke-width="3"/>
+  <text x="40" y="700" class="small">개념 단면 · 실제 축척 아님 · 식각 선택비·방향성·막 손실은 본문에서 따로 다룹니다.</text>
+</svg>
