@@ -2,7 +2,7 @@
 
 [한국어](#윤일평--yoon-ilpyung) · [English](#english)
 
-[연구·학술 활동](../연구_research/README.md) · [지원·전형 기록](지원기록_APPLICATIONS.md) · [연락](연락_CONTACT.md)
+[연구·학술 활동](../연구_research/README.md) · [연락](연락_CONTACT.md)
 
 저전력 AI 하드웨어와 메모리·연산 구조 연구에 참여해 온 윤일평입니다. 국민대학교 지능형반도체 및 디스플레이 전공으로 석사 학위를 취득했으며, ISL에서 연구했습니다.
 
@@ -127,7 +127,7 @@ TOEIC Speaking IH (Intermediate High)
 
 ## 기록과 연락
 
-[engineering-notes](https://github.com/yoonip/engineering-notes)에 전자·컴퓨터공학과 AI의 개념, 구현 방법, 코드 분석을 정리합니다. [AI 기업과 모델](https://github.com/yoonip/engineering-notes/blob/main/AI모델실험_model-lab/PROVIDERS.md), [알고리즘과 코딩테스트](https://github.com/yoonip/engineering-notes/tree/main/분야_topics/08-알고리즘_problem-solving), [지원·시험·면접](https://github.com/yoonip/engineering-notes/blob/main/소개_about/지원기록_APPLICATIONS.md) 기록을 함께 다룹니다.
+[engineering-notes](https://github.com/yoonip/engineering-notes)에 전자·컴퓨터공학과 AI의 개념, 구현 방법, 코드 분석을 정리합니다. [AI 개발자와 모델](https://github.com/yoonip/engineering-notes/blob/main/AI모델과수치실험_ai-models/PROVIDERS.md), [알고리즘과 코딩테스트](https://github.com/yoonip/engineering-notes/tree/main/전자컴퓨터공학_ece/08-알고리즘_problem-solving)의 학습 자료도 함께 다룹니다.
 
 연구·개발 협업, 기술 교류 및 채용 제안: [dlfvud777@naver.com](mailto:dlfvud777@naver.com)
 
@@ -256,6 +256,6 @@ TOEIC Speaking IH (Intermediate High)
 
 ### Notes and Contact
 
-In [engineering-notes](https://github.com/yoonip/engineering-notes), I document concepts, implementation methods, and code analysis across electronics, computer engineering, and AI. The repository also covers [AI companies and models](https://github.com/yoonip/engineering-notes/blob/main/AI모델실험_model-lab/PROVIDERS.md), [algorithms and coding tests](https://github.com/yoonip/engineering-notes/tree/main/분야_topics/08-알고리즘_problem-solving), and [applications, assessments, and interviews](https://github.com/yoonip/engineering-notes/blob/main/소개_about/지원기록_APPLICATIONS.md).
+In [engineering-notes](https://github.com/yoonip/engineering-notes), I document concepts, implementation methods and code analysis across electronics, computer engineering and AI. The repository also covers [AI developers and models](https://github.com/yoonip/engineering-notes/blob/main/AI모델과수치실험_ai-models/PROVIDERS.md) and [algorithms and coding tests](https://github.com/yoonip/engineering-notes/tree/main/전자컴퓨터공학_ece/08-알고리즘_problem-solving).
 
 For research and development collaboration, technical exchange, and career opportunities: [dlfvud777@naver.com](mailto:dlfvud777@naver.com)
