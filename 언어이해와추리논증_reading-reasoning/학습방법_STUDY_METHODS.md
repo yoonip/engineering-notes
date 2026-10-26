@@ -39,11 +39,11 @@ Owen 등의 [2010년 연구](https://www.nature.com/articles/nature09042)에서�
 
 $`n`$개 문항 중 맞힌 수가 $`k`$면 관찰 정확도는 $`k/n`$입니다. 하지만 서로 다른 난이도의 두 세트에서 정답률만 비교하면 학습 효과와 세트 차이가 섞입니다. 답을 이미 아는 문항, 시간 제한 변화, 중간 방해, 도구 사용도 조건을 바꿉니다.
 
-시간은 푼 문항의 중앙값과 함께 분포를 보고, 미완료 문항 수를 따로 남깁니다. 오답을 버리고 정답 문항의 시간만 비교하면 결과가 편향될 수 있습니다. 새 자료·일정 기간 뒤의 자료를 별도로 두고 정확도와 속도를 함께 관찰합니다. 한 사람의 전후 기록만으로 인과적 효과나 일반 능력 향상을 확정하지 않습니다. [확률·추정](../분야_topics/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md)과 [사회 자료의 인과 해석](../인문사회_humanities/60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md)에서 측정 조건을 더 다룹니다.
+시간은 푼 문항의 중앙값과 함께 분포를 보고, 미완료 문항 수를 따로 남깁니다. 오답을 버리고 정답 문항의 시간만 비교하면 결과가 편향될 수 있습니다. 새 자료·일정 기간 뒤의 자료를 별도로 두고 정확도와 속도를 함께 관찰합니다. 한 사람의 전후 기록만으로 인과적 효과나 일반 능력 향상을 확정하지 않습니다. [확률·추정](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md)과 [사회 자료의 인과 해석](../인문사회_humanities/60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md)에서 측정 조건을 더 다룹니다.
 
-![추론 연습과 통찰: 익숙함을 이해로 착각하지 않기 — 개념도 / Concept diagram](../자료_assets/도식_diagrams/practice-feedback-and-insight.png)
+![추론 연습과 통찰: 익숙함을 이해로 착각하지 않기 — 개념도 / Concept diagram](../그림자료_assets/도식_diagrams/practice-feedback-and-insight.png)
 
-[SVG](../자료_assets/도식_diagrams/practice-feedback-and-insight.svg) · [그림 원본 / Diagram source](../자료_assets/도식_diagrams/practice-feedback-and-insight.mmd)
+[SVG](../그림자료_assets/도식_diagrams/practice-feedback-and-insight.svg) · [그림 원본 / Diagram source](../그림자료_assets/도식_diagrams/practice-feedback-and-insight.mmd)
 
 이 문서를 위해 구성한 학습 기록 흐름입니다. 실제 기출의 공개 경로와 식별 방법은 [공식 시험 자료 안내](시험자료_assessments/공식자료_OFFICIAL_SOURCES.md)에 정리합니다.
 
@@ -81,7 +81,7 @@ After a delay, reconstruct the explanation with the source closed; then test the
 
 Observed accuracy is $`k/n`$ for $`k`$ correct responses among $`n`$ items. Different item difficulty can confound comparisons between two sets. Previously seen answers, timing changes, interruptions and tools also alter conditions.
 
-Report timing distributions, medians and unfinished items. Discarding wrong responses and comparing only correct-response times can bias the result. Use unseen and delayed material, and examine speed alongside accuracy. A single person's before/after record does not establish causal improvement or a change in general ability. See [probability and estimation](../분야_topics/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md#english) and [causal interpretation](../인문사회_humanities/60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md#english).
+Report timing distributions, medians and unfinished items. Discarding wrong responses and comparing only correct-response times can bias the result. Use unseen and delayed material, and examine speed alongside accuracy. A single person's before/after record does not establish causal improvement or a change in general ability. See [probability and estimation](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md#english) and [causal interpretation](../인문사회_humanities/60-사회제도증거_society-institutions/해설_notes/사회를자료로읽기_evidence-causality-institutions.md#english).
 
 The original flow diagram above connects source conditions, independent attempt, official checking, error correction, delayed retrieval and unseen material. [Official exam sources](시험자료_assessments/공식자료_OFFICIAL_SOURCES.md#english) describe how past papers are identified.
 

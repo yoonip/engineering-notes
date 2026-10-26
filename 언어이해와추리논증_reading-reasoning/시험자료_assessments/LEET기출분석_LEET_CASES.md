@@ -33,9 +33,9 @@ Read the original questions and choices at the linked source, then compare them 
 
 여기서 흔한 오류는 `국가 보상 → 언제나 의료인에게 청구 가능`이라고 없는 규칙을 추가하는 것입니다. 또 `~한 경우에 한하여`는 청구의 필요조건을 제한하는 표현이므로, 어떤 행위에 붙은 조건인지 끝까지 묶어서 읽어야 합니다. 돈이 이동하는 두 단계를 다른 화살표로 그리면 섞이기 어렵습니다.
 
-![공식 기출 분석: 조건의 범위와 비교 대상을 놓치지 않기 — 개념도 / Concept diagram](../../자료_assets/도식_diagrams/official-past-paper-walkthroughs.png)
+![공식 기출 분석: 조건의 범위와 비교 대상을 놓치지 않기 — 개념도 / Concept diagram](../../그림자료_assets/도식_diagrams/official-past-paper-walkthroughs.png)
 
-[SVG](../../자료_assets/도식_diagrams/official-past-paper-walkthroughs.svg) · [그림 원본 / Diagram source](../../자료_assets/도식_diagrams/official-past-paper-walkthroughs.mmd)
+[SVG](../../그림자료_assets/도식_diagrams/official-past-paper-walkthroughs.svg) · [그림 원본 / Diagram source](../../그림자료_assets/도식_diagrams/official-past-paper-walkthroughs.mmd)
 
 직접 작성한 논리 흐름도입니다. 실제 국가배상·의료법 제도를 설명하는 그림은 아닙니다.
 

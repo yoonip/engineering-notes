@@ -22,7 +22,7 @@
 $$c=a(1+r_1)(1+r_2),\qquad
 r_{total}=r_1+r_2+r_1r_2.$$
 
-20 % 증가한 뒤 20 % 감소하면 $`1.2\times0.8=0.96`$이므로 원래보다 4 % 낮습니다. 기준값 0의 증가율은 이 정의로 계산할 수 없습니다. 음수 기준값도 해석이 달라지므로 이 글의 증가율 구현은 양의 기준만 받습니다. 단위와 수치를 함께 다루는 원칙은 [단위·차원 글](../../분야_topics/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md)과 이어집니다.
+20 % 증가한 뒤 20 % 감소하면 $`1.2\times0.8=0.96`$이므로 원래보다 4 % 낮습니다. 기준값 0의 증가율은 이 정의로 계산할 수 없습니다. 음수 기준값도 해석이 달라지므로 이 글의 증가율 구현은 양의 기준만 받습니다. 단위와 수치를 함께 다루는 원칙은 [단위·차원 글](../../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md)과 이어집니다.
 
 ### 평균의 평균이 틀리는 이유
 
@@ -68,7 +68,7 @@ An increase of five means different things when starting from 10 or 100. Reading
 
 A ratio divides quantities: a part/whole proportion is dimensionless, while distance/time has speed units. From 20 to 25, the absolute increase is 5 and the relative increase is $`(25-20)/20=25\%`$. A share rising from 20 % to 25 % rises by five percentage points, or 25 % relative to its initial share. These are different statements.
 
-For positive baseline $`a`$, $`r=(b-a)/a`$, so $`b=a(1+r)`$. Consecutive changes give $`c=a(1+r_1)(1+r_2)`$ and $`r_{total}=r_1+r_2+r_1r_2`$. Increasing by 20 % then decreasing by 20 % leaves 96 % of the initial amount. A zero baseline makes this relative change undefined; negative baselines need different interpretation, so this implementation accepts only positive baselines. See the connected [units article](../../분야_topics/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md).
+For positive baseline $`a`$, $`r=(b-a)/a`$, so $`b=a(1+r)`$. Consecutive changes give $`c=a(1+r_1)(1+r_2)`$ and $`r_{total}=r_1+r_2+r_1r_2`$. Increasing by 20 % then decreasing by 20 % leaves 96 % of the initial amount. A zero baseline makes this relative change undefined; negative baselines need different interpretation, so this implementation accepts only positive baselines. See the connected [units article](../../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md).
 
 ### Deriving weighted means
 

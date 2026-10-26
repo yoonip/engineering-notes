@@ -32,9 +32,9 @@ $$
 
 자연어 논증이 모두 이런 연역 형식은 아닙니다. 관측 자료로 원인을 추정하거나 정책 효과를 예상하는 글에서는 근거가 결론을 얼마나 지지하는지, 대안 설명이 남는지를 살핍니다. “입증되지 않았다”와 “거짓으로 입증되었다”도 다릅니다. 정보가 부족한 상태를 임의로 참·거짓 중 하나로 확정하지 않습니다.
 
-![논증 독해: 무엇을 근거로 어디까지 말할 수 있는가 — 개념도 / Concept diagram](../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.png)
+![논증 독해: 무엇을 근거로 어디까지 말할 수 있는가 — 개념도 / Concept diagram](../../그림자료_assets/도식_diagrams/argument-reading-and-counterexamples.png)
 
-[SVG](../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.svg) · [그림 원본 / Diagram source](../../자료_assets/도식_diagrams/argument-reading-and-counterexamples.mmd)
+[SVG](../../그림자료_assets/도식_diagrams/argument-reading-and-counterexamples.svg) · [그림 원본 / Diagram source](../../그림자료_assets/도식_diagrams/argument-reading-and-counterexamples.mmd)
 
 직접 구성한 그림입니다. 반론은 결론뿐 아니라 근거의 신뢰성이나 연결 가정에도 향할 수 있습니다.
 
