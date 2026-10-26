@@ -56,6 +56,14 @@ Virtuoso Layout XL의 연결 기반 편집은 회로도의 소자·넷과 레이
 
 다른 도구에서는 구성 방식이 달라집니다. IHP의 공식 KLayout 안내는 기술 파일·PyCell·검사 규칙을 별도 자료로 설명합니다. JKU의 공개 실습은 Xschem 회로도와 KLayout 레이아웃, Magic·Netgen 등을 연결하는 한 예입니다. 특정 환경의 단축키나 메뉴가 모든 설치에서 제공되는 것은 아닙니다. [IHP, Analog design using KLayout, 도입부](https://ihp-open-pdk-docs.readthedocs.io/en/latest/analog/klayout.html), [Dorrer·Pretl, 공개 AMS 설계 실습, 2026-10-17, §5.7–5.9](https://iic-jku.github.io/ihp-sg13g2-ams-chip-template/index.html)
 
+### 공개 인버터 매크로의 실제 레이아웃
+
+![JKU IHP SG13G2 inverter_top 매크로의 실제 레이아웃 출력](사진과화면_images/jku-inverter-layout.png)
+
+출처: Simon Dorrer·Harald Pretl, [inverter_top 레이아웃 원본](https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/tutorial/fig/inverter_top/inverter_top_black.png). 공개 튜토리얼의 4채널 인버터 매크로입니다. 작은 소자 도형이 반복되는 영역, 이를 연결하는 배선과 바깥쪽 고리 모양 구조를 함께 볼 수 있습니다. 레이어를 여러 개 겹쳐 표시했기 때문에 한 색이나 무늬만 보고 소자·단자의 종류를 확정하지 않고 PDK의 레이어 목록과 함께 읽습니다.
+
+원본 설계 데이터에서 출력한 평면 레이아웃이며, 색과 무늬는 도구의 레이어 표시 설정에 따릅니다. 해당 예제의 [DRC·LVS 검사 창](10-DRC와LVS및PEX_physical-verification.md)을 함께 보시면 도형 작성과 검사 결과가 어떻게 연결되는지 확인할 수 있습니다. [원본·이용 조건](사진과화면_images/README.md)
+
 ## 5. 배치 전에 회로의 제약을 적습니다
 
 Floorplan은 소자를 빈 공간에 채우기 전에 면적·핀·전원·민감한 경로와 격리를 배분하는 단계입니다. 다음은 차동 입력 증폭기를 설명하기 위해 구성한 제약 표입니다. 실제 회로의 성능 기준은 설계 요구와 모델로 정합니다.

@@ -43,6 +43,14 @@ Cadence의 ADE Suite 문서는 동작점의 회로도 표시와 추출 전후 �
 
 라이브러리가 보인다는 사실만으로 모델 경로와 실행 권한까지 확인되는 것은 아닙니다. 반대로 모델 파일만 있어도 레이아웃 기술 정보와 검사 규칙이 없다면 제조 가능한 물리 설계 흐름이 갖춰진 것은 아닙니다.
 
+### 회로도에서 실제 파형 창으로
+
+![Xschem에서 연결한 RLC 회로와 ngspice의 과도 응답·실행 로그 창](사진과화면_images/xschem-ngspice-transient.png)
+
+출처: Stefan Schippers, [Xschem 공식 튜토리얼의 ngspice 실행 화면](https://github.com/StefanSchippers/xschem/blob/6066ee9ddbd925c1533f814a8444be997c779622/doc/xschem_man/tutorial_run_simulation_10.png). 뒤쪽 Xschem 창은 회로를, 위쪽 그래프는 `a`·`b`·`c` 노드의 전압을, 아래쪽 콘솔은 ngspice의 해석·출력 메시지를 보여 줍니다. 그래프에서는 가로축의 시간·단위와 세로축의 전압·범례를 먼저 읽습니다. 공개 RLC 예제의 과도 응답 화면입니다.
+
+제작자가 공개한 원본 실행 화면입니다. Spectre·ViVA를 사용할 때에도 회로 입력 → 해석 엔진 → 로그·파형이라는 각 역할에 대응해 읽어 보시면 됩니다. [회로도 원본 화면](03-설계도구와공급사_eda-tool-map.md) · [이미지 출처·이용 조건](사진과화면_images/README.md)
+
 ## 3. PDK와 MOSFET 모델
 
 PDK는 공정에 맞는 소자 정의, 모델, 레이아웃 규칙과 검증 자료를 제공하는 설계 자료 묶음입니다. MOSFET 심벌을 놓은 다음 폭과 길이만 정했다고 해서 실제 공정의 소자가 정의되는 것은 아닙니다. 해당 소자 종류, 허용 치수, 전압 한계, 몸체 연결, 모델의 유효 범위와 모델 판본을 함께 확인해야 합니다.

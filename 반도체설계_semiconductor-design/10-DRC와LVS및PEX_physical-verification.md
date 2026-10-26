@@ -1,6 +1,6 @@
 # DRC·LVS·PEX와 제조 데이터의 확인 / Geometry, connectivity and parasitic extraction
 
-레이아웃이 화면에 그려지고 GDS 파일이 저장되어도 설계 검사가 끝난 것은 아닙니다. DRC는 형상 규칙을, LVS는 회로 연결과 소자 대응을, PEX는 형상에서 생기는 기생 성분을 다룹니다. 세 작업의 입력·규칙·비교 대상을 함께 알아야 통과 보고서의 의미를 읽을 수 있습니다. 공개 자료 확인일은 2026-10-26입니다. 아래 예는 실제 PDK의 승인 규칙이나 제작·측정 결과가 아닙니다.
+레이아웃이 화면에 그려지고 GDS 파일이 저장되어도 설계 검사가 끝난 것은 아닙니다. DRC는 형상 규칙을, LVS는 회로 연결과 소자 대응을, PEX는 형상에서 생기는 기생 성분을 다룹니다. 세 작업의 입력·규칙·비교 대상을 함께 알아야 통과 보고서의 의미를 읽을 수 있습니다. 공개 자료 확인일은 2026-10-26입니다. 본문의 산술·코드 예는 실제 PDK의 승인 규칙이나 제작·측정 결과가 아닙니다. 공개 튜토리얼의 검사 화면은 출처에 기록된 결과로 따로 설명합니다.
 
 ## 1. 서로 다른 세 질문
 
@@ -29,6 +29,12 @@ metal1.space(0.4).output("space", "간격 위반") # space는 0.4 µm 기준의 
 
 검출 위치를 고칠 때에는 마커가 가리킨 형상과 실제 검사 규칙을 함께 봅니다. 간격을 벌리면 다른 선과 가까워질 수 있고, 폭을 넓히면 핀 주변의 공간이 줄어들 수 있습니다. 단순히 마커를 숨기는 것과 형상을 고치는 것은 다른 작업입니다.
 
+### 실제 KLayout DRC 결과 창
+
+![JKU 인버터 매크로의 KLayout DRC 로그와 Marker Database Browser](사진과화면_images/jku-inverter-drc.png)
+
+출처: Simon Dorrer·Harald Pretl, [공개 인버터 튜토리얼의 DRC 원본 화면](https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/tutorial/fig/inverter_top/KLayout_DRC_Output.png). 뒤쪽 로그에는 실행한 규칙과 결과가, 앞쪽 `Marker Database Browser`에는 검사한 셀과 마커 목록이 나타납니다. 공개 캡처에는 `inverter_top.gds`와 2026-05-18의 오류 0건·DRC 통과 기록이 보입니다. 해당 튜토리얼에서 공개한 검사 기록입니다. [같은 예제의 실제 레이아웃](14-아날로그풀커스텀레이아웃_full-custom-layout.md) · [원본·이용 조건](사진과화면_images/README.md)
+
 ## 3. LVS는 그림을 회로로 읽은 뒤 비교합니다
 
 먼저 도체층·접촉·via의 연결을 해석하고, 겹친 영역에서 트랜지스터·저항·정전용량 등 소자를 인식합니다. 그 결과의 단자와 연결을 기준 회로의 net·pin·device와 대응시킵니다. [KLayout LVS Overview](https://www.klayout.de/doc/manual/lvs_overview.html)는 레이아웃에서 넷리스트를 추출하고 기준 넷리스트와 비교하는 구조를 설명합니다.
@@ -46,6 +52,12 @@ Net은 같은 전기적 연결에 속하는 단자들의 묶음입니다. 같은
 Black box 처리는 내부 회로를 비교하지 않고 외부 단자 수준으로 다루는 선택입니다. 예를 들어 큰 SRAM을 별도 검증한 IP로 연결할 수 있지만, black box 내부가 이 실행에서 검증되었다고 쓸 수는 없습니다. 제외 범위, 별도 확인한 판본과 외부 연결을 남겨야 합니다.
 
 [Netgen 공식 저장소](https://github.com/RTimothyEdwards/netgen)는 넷리스트 비교와 계층·소자 속성 처리를 설명합니다. Netgen이 레이아웃 그림에서 모든 소자를 직접 읽는 도구라고 생각하지 않습니다. Magic 등 추출 도구가 만든 회로와 기준 회로, 공정별 비교 설정을 연결해 사용하는 흐름에서 각 단계의 역할을 구분합니다.
+
+### 실제 KLayout LVS 비교 창
+
+![JKU 인버터 매크로의 KLayout LVS 로그와 회로·핀 대응 비교](사진과화면_images/jku-inverter-lvs.png)
+
+출처: Simon Dorrer·Harald Pretl, [LVS 원본 화면](https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/tutorial/fig/inverter_top/KLayout_LVS_Output.png). 왼쪽에는 `Status PASS`와 `Netlists match`가, 오른쪽에는 `Layout`·`Reference` 사이의 회로·핀 대응이 보입니다. `VDD`, `VSS`, `vin1`~`vin4`, `vout1`~`vout4`가 어떻게 대응하는지 살펴보시면 됩니다. 기준 회로와 추출 회로를 비교하는 창이므로, 앞의 DRC 마커 창과 읽는 대상이 다릅니다. 이 역시 2026-05-18로 표시된 튜토리얼 원본 기록입니다. [원본·이용 조건](사진과화면_images/README.md)
 
 ## 4. PEX 결과를 회로·타이밍에 다시 연결합니다
 

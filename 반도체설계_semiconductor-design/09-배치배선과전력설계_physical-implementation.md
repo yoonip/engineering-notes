@@ -30,6 +30,18 @@ flowchart TD
 
 이 그림은 설명용 흐름입니다. 실제 도구에서는 전력망·배치·클록·최적화가 여러 차례 반복되며, 각 단계의 중간 결과도 검토합니다.
 
+### OpenROAD의 실제 배치·배선 창
+
+![OpenROAD 공식 Ibex floorplan 예시의 레이어 목록·중앙 배치 영역·계층 브라우저](사진과화면_images/openroad-ibex-floorplan.webp)
+
+출처: OpenROAD contributors, [공식 README의 Ibex floorplan 원본](https://github.com/The-OpenROAD-Project/OpenROAD/blob/79eaac151c5b65925cc24226a8a116cfd2651f4a/docs/images/ibex_floorplan.webp). 왼쪽 `Display Control`은 표시할 배선층·인스턴스·핀 등을 고르는 곳이고, 중앙은 현재 설계의 물리 정보를 표시합니다. 오른쪽 `Hierarchy Browser`에서는 `ibex_core` 아래의 인스턴스를 살펴볼 수 있습니다. 이 캡처의 아래 콘솔에는 `v2.0-8870-gaaabb2ef8`이 표시되어 있습니다.
+
+![OpenROAD 공식 Ibex routing 예시의 금속층별 배선과 계층·콘솔 창](사진과화면_images/openroad-ibex-routing.webp)
+
+출처: OpenROAD contributors, [공식 README의 Ibex routing 원본](https://github.com/The-OpenROAD-Project/OpenROAD/blob/79eaac151c5b65925cc24226a8a116cfd2651f4a/docs/images/ibex_routing.webp). 중앙의 여러 색 선은 왼쪽 `Layers`에 표시된 금속층 등의 도형을 겹쳐 본 모습입니다. 금속층별 도형이 레이어 설정에 따라 다른 색으로 표시됩니다. 이 캡처는 `v2.0-8693-g67ac6cf4b`입니다. 두 이미지는 공식 README에 별도로 실린 예시이며, 각 화면의 판본과 표시 상태를 함께 읽습니다.
+
+`Floorplan`에서는 외곽·매크로·핀·배치 영역을, 배선 단계에서는 실제 경로·층·혼잡을 관찰합니다. 화면이 채워진 모습과 타이밍·전원·DRC 보고서의 통과 여부는 각각 확인합니다. [원본·이용 조건](사진과화면_images/README.md)
+
 ## 2. Floorplan은 셀을 넣을 빈 사각형만 정하는 일이 아닙니다
 
 Die는 잘라낼 칩의 전체 영역이고 core는 주로 논리 셀과 매크로를 배치하는 내부 영역입니다. Floorplan에서는 SRAM·아날로그 IP·입출력·전원 영역의 위치와 방향, 매크로 주변의 여유 공간, 배선 통로와 배치 금지 영역을 정합니다. 기능상 연결이 강한 두 블록을 멀리 놓으면 긴 배선과 반복 버퍼가 필요할 수 있습니다.

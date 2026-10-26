@@ -10,6 +10,24 @@ Linux와 공정 자료를 준비하는 단계부터 아날로그 풀커스텀 �
 
 위 그림은 본문을 위해 직접 작성한 개념도입니다. 화살표는 주요 데이터의 연결을 나타내며, 멀티다이의 기능 분할·전력·열·접속 계획은 명세 단계부터 병행합니다. 실제 프로젝트에서는 검증 결과에 따라 앞 단계로 반복해서 돌아갑니다. GDSII·OASIS는 레이아웃 도형을 전달하는 형식이며, 완성된 칩이나 모든 검증 결과를 담은 단일 파일은 아닙니다. 마지막에는 해당 공정의 제출 규칙에 맞춰 설계 데이터와 검증 기록을 함께 인계합니다. 예를 들어 [GF180MCU의 제출 점검표](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_06.html)는 계층형 GDSII, 필요한 모든 레이어와 DRC 통과를 요구합니다.
 
+## 실제 칩과 설계 화면
+
+![NASA Glenn이 제작한 SiC RAM 다이의 패키징 전 광학 사진](사진과화면_images/nasa-sic-ram-die.webp)
+
+사진: NASA / NASA Glenn Research Center. [NASA Science 원문](https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/integrated-circuits-to-enable-exploration-of-the-harshest-environments-in-solar-system/)에 실린 3 mm × 3 mm SiC RAM 다이입니다. 가장자리의 원형 패드와 그 안쪽의 회로 영역을 볼 수 있습니다. 고온 환경용 SiC 회로의 제작 사례이며, 실리콘 CMOS SRAM·DRAM의 공정과 회로는 5·6장에서 별도로 설명합니다.
+
+아래 본문에서는 실제 설계 파일의 화면과 제작 실물을 구분하여 살펴봅니다.
+
+| 보고 싶은 대상 | 연결할 본문 |
+| --- | --- |
+| 회로도 편집기와 시뮬레이터 창 | [도구의 실제 작업 화면](03-설계도구와공급사_eda-tool-map.md), [회로와 파형](04-회로설계와Spectre_custom-circuit-simulation.md) |
+| 소자와 배선이 배치된 커스텀 레이아웃 | [공개 인버터 매크로](14-아날로그풀커스텀레이아웃_full-custom-layout.md) |
+| 디지털 배치·배선 화면 | [OpenROAD의 Ibex 예시](09-배치배선과전력설계_physical-implementation.md) |
+| 실제 DRC·LVS 검사 창 | [규칙 검사와 회로 비교](10-DRC와LVS및PEX_physical-verification.md) |
+| 칩 전체 레이아웃과 패키지 실물 | [Caravel과 NASA 사진](17-칩최상위검증과제조인계_chip-top-signoff.md) |
+
+원본 파일·제작자·자료 판본과 이용 조건은 [사진과 화면의 출처](사진과화면_images/README.md)에 모았습니다.
+
 ## 읽는 순서
 
 | 순서 | 본문 | 읽고 나면 구분할 수 있는 내용 |

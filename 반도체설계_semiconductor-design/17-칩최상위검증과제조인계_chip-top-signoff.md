@@ -79,6 +79,24 @@ Johannes Kepler University의 [IHP SG13G2 AMS 템플릿](https://github.com/iic-
 
 이 저장소를 인용한 것은 파일의 연결을 설명하기 위해서입니다. 열람한 README에는 최상위 LVS와 일부 release 산출물이 아직 끝나지 않았다는 설명도 있습니다. `make all`이라는 목표가 있다는 사실을 모든 검증의 실제 완료나 제조 승인으로 옮기지 않습니다. 이 글에서도 해당 저장소를 빌드하거나 칩을 제작하지 않았습니다.
 
+## 전체 칩 레이아웃과 패키지 실물
+
+### Caravel의 전체 레이아웃
+
+![Efabless Caravel harness의 전체 칩 GDS 레이아웃](사진과화면_images/caravel-layout.png)
+
+출처: Efabless Corporation·Caravel contributors, [공식 문서](https://caravel-harness.readthedocs.io/en/latest/)와 [고정 판본의 레이아웃 원본](https://github.com/efabless/caravel/blob/27cbe49c90ba5362ad52c9968dd98e035c30c74f/docs/source/_static/caravel.png). 사용자 회로를 넣는 테스트용 harness의 전체 레이아웃입니다. 외곽의 I/O 영역, 안쪽 배선과 큰 접속 구조, 아래쪽 회로 블록을 함께 볼 수 있습니다. 앞의 인버터 매크로 한 개보다 칩 최상위에서 다룰 구조가 많아진 모습입니다.
+
+앞 절의 아날로그 사용자 프로젝트와는 별도로, 여기서는 기본 Caravel harness의 칩 경계와 관리 회로를 살펴봅니다. 색은 설계 데이터의 레이어·도형을 구분하는 표시입니다.
+
+### 다이를 패키지의 외부 단자로 연결한 실물
+
+![NASA Glenn의 SiC 집적회로 다이·연결선·패키지 외부 단자 사진](사진과화면_images/nasa-sic-package.webp)
+
+사진: NASA / NASA Glenn Research Center, [NASA Science 원문](https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/integrated-circuits-to-enable-exploration-of-the-harshest-environments-in-solar-system/). 중앙의 작은 다이에서 주변 연결선과 바깥쪽 단자로 이어지는 구조를 볼 수 있습니다. 레이아웃에서 정한 칩의 접속점이 패키지를 통해 외부 회로로 나오는 모습을 이해하는 사례입니다. 고온 환경용 SiC 회로의 실물로, NASA 기사에서 별도로 제시한 패키지 사진입니다.
+
+레이아웃 화면은 제조할 도형을, 실물 사진은 제작된 다이·조립체의 외형을 보여 줍니다. 각 이미지의 [원본 파일·제작자·이용 조건](사진과화면_images/README.md)을 함께 남겼습니다.
+
 ## 하나의 최종 판본으로 인계합니다
 
 마지막에는 최상위 GDS/OASIS, 필요한 모든 매크로 도형, 기준 넷리스트, 제약·모드·코너, 검증 결과, 예외 승인, pad/bump·패키지 연결을 같은 설계 판본으로 묶습니다. ECO로 상위 배선만 바꾸어도 기생 성분·타이밍·전원·물리 규칙에 미치는 영향을 다시 확인합니다.

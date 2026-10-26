@@ -44,6 +44,15 @@ Spectre 안에서도 X, FX, RF·AMS 등의 명칭은 대상과 해석 기능에 
 
 근거는 Cadence [Virtuoso Studio의 Custom IC 설명](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/virtuoso-studio.html), [Circuit Design의 ADE Explorer·Assembler 설명](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-design.html), [Circuit Simulation의 Spectre·AMS 설명](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation.html), [Xcelium의 언어·검증 기능](https://www.cadence.com/en_US/home/tools/system-design-and-verification/simulation-and-testbench-verification/xcelium-simulator.html)입니다. 디지털 제품 역할은 [Cadence Solutions on Arm의 제품 설명 표](https://www.cadence.com/en_US/home/solutions/arm-based-solutions.html)를 참고했습니다. 해당 표의 플랫폼 제공 시점은 이 글의 일반적인 설치 조건으로 옮기지 않았습니다.
 
+### Virtuoso·ADE의 공식 제품 화면
+
+| 공식 자료 | 화면과 함께 볼 부분 |
+| --- | --- |
+| [Virtuoso Layout Suite, Overview의 Figure 1](https://www.cadence.com/en_US/home/resources/datasheets/virtuoso-layout-suite-ds.html) | 실제 레이아웃 편집 환경과 연결 기반 편집 기능을 함께 살펴봅니다. |
+| [Circuit Design의 Schematic Editor·ADE Explorer·Assembler](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-design.html) | 회로도 입력, 시험 조건·측정값 설정, 여러 시험 결과 관리가 어떻게 나뉘는지 살펴봅니다. |
+
+화면을 읽을 때에는 회로를 편집하는 창, 실행 조건을 정하는 창, 결과를 표시하는 창을 구분합니다. Spectre는 그 구성에서 넷리스트와 소자 모델을 계산하는 엔진입니다.
+
 ## 3. Synopsys의 대표 도구
 
 | 제품·환경 | 주된 역할 | 입력과 결과의 예 |
@@ -93,6 +102,14 @@ DRC·LVS·기생 추출의 역할 구분은 Siemens의 [2021년 Calibre 백서 2
 이 역할 구분은 [LibreLane Classic의 실제 단계 목록](https://librelane.readthedocs.io/en/stable/reference/flows.html)과 [OpenSTA의 입력 형식 설명](https://openroad.readthedocs.io/en/latest/main/src/sta/README.html)에 근거합니다. LibreLane을 설치했다는 것은 제품 이름 하나의 단일 엔진을 설치한 것과 다릅니다. 합성 오류는 Yosys 단계에서, 배치 문제는 OpenROAD 단계에서, LVS 불일치는 Netgen 단계에서 원인을 찾아야 할 수 있습니다.
 
 OpenLane 2 자료의 `openlane`, LibreLane의 `librelane`, OpenROAD 자체 명령과 OpenROAD-flow-scripts의 실행 방식은 구분합니다. 비슷한 흐름을 다뤄도 서로 다른 프로젝트의 명령·설정 파일을 섞지 않습니다. 이 카테고리의 [공개 실습](12-공개도구로RTL에서GDS까지_open-rtl-to-gds.md)은 LibreLane 3.0.16 한 경로를 사용합니다.
+
+### 실제 Xschem 작업 창
+
+![Xschem 공식 튜토리얼의 RLC 회로도 편집 화면](사진과화면_images/xschem-rlc-schematic.png)
+
+출처: Stefan Schippers, [Xschem 공식 튜토리얼의 원본 화면](https://github.com/StefanSchippers/xschem/blob/6066ee9ddbd925c1533f814a8444be997c779622/doc/xschem_man/tutorial_run_simulation_09.png). 중앙에는 저항·인덕터·커패시터와 전원이 연결되어 있고, 위쪽에는 `Netlist`, `Simulate`, `Waves` 버튼이 보입니다. 회로 입력, 해석 실행, 결과 열기가 서로 다른 작업이라는 점을 읽을 수 있습니다. 아래 상태줄의 `NETLIST MODE: spice`도 확인할 수 있습니다.
+
+RLC 예제의 [ngspice 파형 창](04-회로설계와Spectre_custom-circuit-simulation.md), JKU 인버터의 [커스텀 레이아웃](14-아날로그풀커스텀레이아웃_full-custom-layout.md), OpenROAD의 [디지털 배치배선 창](09-배치배선과전력설계_physical-implementation.md)을 함께 보면 단계별 화면의 차이를 알 수 있습니다. [원본·이용 조건](사진과화면_images/README.md)
 
 ## 6. 도구를 고르는 순서
 
