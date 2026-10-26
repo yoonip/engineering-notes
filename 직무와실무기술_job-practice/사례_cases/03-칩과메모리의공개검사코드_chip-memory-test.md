@@ -1,8 +1,8 @@
 # 칩과 메모리의 공개 검사 코드 | Public test code for chips and memory
 
-[직무 목차](../README.md) · [삼성 DS](../02-삼성DS의직무와요구역량_samsung-ds-role-map.md) · [SK하이닉스](../03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) · [칩 설계·평가](../06-칩설계와평가분석_chip-design-characterization.md) · [메모리 제품·테스트](../08-메모리제품과테스트개발_memory-product-test-engineering.md)
+[직무 목차](../README.md) · [반도체 설계·제조](../02-반도체설계와제조의직무_semiconductor-design-manufacturing-roles.md) · [메모리 제품·양산](../03-메모리제품과양산의직무_memory-product-production-roles.md) · [칩 설계·평가](../06-칩설계와평가분석_chip-design-characterization.md) · [메모리 제품·테스트](../08-메모리제품과테스트개발_memory-product-test-engineering.md)
 
-같은 ‘메모리 오류’라도 RTL 계산, CPU가 접근하는 DRAM, SSD의 파일 읽기·쓰기는 검사 대상이 다릅니다. 이 글은 공개 검증 도구의 실제 코드를 읽고, 어떤 입력과 결과를 비교하는지부터 설명합니다. 사례의 원인 분리 표는 학습용으로 구성했으며, 삼성전자·SK하이닉스의 내부 시험 기록이나 사내 도구 목록은 아닙니다.
+같은 ‘메모리 오류’라도 RTL 계산, CPU가 접근하는 DRAM, SSD의 파일 읽기·쓰기는 검사 대상이 다릅니다. 이 글은 공개 검증 도구의 실제 코드를 읽고, 어떤 입력과 결과를 비교하는지부터 설명합니다. 원인 분리 표는 각 검사의 관측 경계를 익히기 위한 학습 사례이며 실제 제품의 내부 시험 기록과 구분합니다.
 
 ## 1. 코드의 종류와 사용하는 위치
 

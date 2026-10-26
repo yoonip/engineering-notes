@@ -12,9 +12,9 @@
 | 공개 프로젝트의 구현 | 장치·도구·라이브러리에 실제로 포함된 구현입니다. | ADI no-OS 드라이버, U-Boot `mtest`, SciPy `levene`입니다. |
 | 프로젝트 공식 예제·시험 | 프로젝트가 제공한 API 사용 예제나 시험 코드입니다. | Zephyr의 UART·CAN·Python 시험, cocotb adder, PyEpics·scikit-learn 예제, fio job입니다. |
 | 공식 SQL 예제 | 데이터베이스 기능을 설명하는 원문의 문장입니다. | PostgreSQL `INSERT ... ON CONFLICT`입니다. |
-| 자체 구성한 설명 | JD와 공개 코드를 연결하는 업무 상황·불량 가설·판정 절차·단위 계산입니다. | 각 본문에서 가정 또는 학습용 예로 표시한 부분입니다. |
+| 자체 구성한 설명 | 공개 코드의 기능을 업무에 연결하는 상황·불량 가설·판정 절차·단위 계산입니다. | 각 본문에서 가정 또는 학습용 예로 표시한 부분입니다. |
 
-공개 구현과 공식 예제라는 근거로 해당 코드의 출처를 확인합니다. 삼성전자·SK하이닉스 내부에서 이 파일을 그대로 사용한다는 채택 정보는 확인하지 않았습니다. 예제의 통신·오류 처리·범위를 검토하는 설명도 함께 두어, 공개 예제를 완성된 양산 시험 프로그램과 혼동하지 않도록 했습니다.
+공개 구현과 공식 예제라는 근거로 해당 코드의 출처를 확인합니다. 예제의 통신·오류 처리·적용 범위는 각 본문에서 따로 설명합니다. 공개 코드의 원문을 확인한 것과 실제 양산 제품의 채택·장비 적합성을 확인한 것은 구분합니다.
 
 ## 원본 판본과 라이선스
 
@@ -48,4 +48,4 @@
 
 ## English
 
-This register distinguishes vendor examples, production project implementations, official tests and SQL examples from authored work scenarios. Fixed commits, source locations, modifications and license texts accompany the excerpts. Comment-only changes are checked separately from hardware execution. Published code provenance does not establish adoption by Samsung or SK hynix.
+This register distinguishes vendor examples, production project implementations, official tests and SQL examples from authored work scenarios. Fixed commits, source locations, modifications and license texts accompany the excerpts. Comment-only changes are checked separately from hardware execution. Public code provenance does not establish adoption by a particular company or suitability for a production test system.

@@ -1,6 +1,6 @@
 # C·C++·Python이 업무에서 쓰이는 위치 | Languages in the engineering workflow
 
-[직무 목차](README.md) · [직무기술서 읽기](00-JD의업무와기술을읽는법_role-work-evidence.md) · [검사 결과의 판정](11-검사결과의판정과기록_test-decisions-evidence.md) · [공개 코드의 출처와 수정 범위](사례_cases/코드출처와이용조건_CODE_SOURCES.md)
+[직무 목차](README.md) · [직무와 기술을 읽는 법](00-직무와기술을읽는법_roles-and-technical-work.md) · [검사 결과의 판정](11-검사결과의판정과기록_test-decisions-evidence.md) · [공개 코드의 출처와 수정 범위](사례_cases/코드출처와이용조건_CODE_SOURCES.md)
 
 ‘검사에 Python이 필요합니다’라는 말은 검사 대상의 물리 원리가 Python으로 바뀐다는 뜻이 아닙니다. 코드는 장비에 조건을 전달하고, 제품의 동작을 실행하고, 측정값을 읽거나 판정·분석을 반복하는 데 사용합니다. 어느 컴퓨터에서 실행하고 어떤 권한·시간 제약을 갖는지부터 나누면 언어의 역할이 명확해집니다.
 
@@ -29,7 +29,7 @@ DUT는 device under test, 즉 검사 대상 장치입니다. 호스트는 그 �
 | 통계·AI·데이터 처리 | Python·R·SQL 등입니다. | 데이터를 연결하고 분포·회귀·모델·이상 징후를 평가합니다. | 잘못된 분모·조인, 누설 데이터, 결측·중복과 시간 경계입니다. |
 | 서비스·제조 IT | Java·C#·C/C++·Python·JavaScript·SQL 등입니다. | 업무 API·데이터베이스·운영 화면·장비 연계·서비스를 구현합니다. | 재시도 중복, 권한, 상태 불일치와 운영 중 복구입니다. |
 
-이 표는 일반적인 역할 구분입니다. 각 회사 JD의 언어 명시 여부와 필수·우대 구분은 [DX](01-삼성DX의직무와요구역량_samsung-dx-role-map.md), [DS](02-삼성DS의직무와요구역량_samsung-ds-role-map.md), [SK하이닉스](03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) 표에서 따로 확인합니다.
+이 표는 실행 위치에 따른 역할 구분입니다. 같은 언어도 타깃 펌웨어·기준 모델·계측 호스트·서버에서 맡는 일이 다르며, 실제 도구는 제품 자원·인터페이스·시험 장비·기존 소프트웨어 환경에 맞추어 선택합니다.
 
 ## 2. C가 레지스터·버퍼와 가까운 이유
 
@@ -63,7 +63,7 @@ C++이 적혀 있다고 항상 제품의 최종 펌웨어라는 뜻은 아닙니
 
 Verilator는 RTL에서 생성한 모델의 입출력을 C++ 쪽에서 제어하는 연결 방식을 설명합니다. C++ 래퍼는 모델을 생성하고 입력·실행·출력 관찰을 관리합니다. 이는 특정 회사가 Verilator를 사용한다는 주장이 아니라 언어의 위치를 보여 주는 공개 예입니다. [Verilator 5.052, Connecting to C++](https://verilator.org/guide/latest/connecting.html#connecting-to-c)
 
-회로의 병렬성·클록·이벤트를 표현하는 HDL과, 그 회로를 제어하거나 기대값을 계산하는 호스트 코드는 역할이 다릅니다. 실제 비교 예제는 [RTL·하드웨어 검증](../분야_topics/14-하드웨어검증_hardware-verification/README.md)과 기존 [설계·검증 사례](../설계와검증사례_engineering-cases/README.md)에서 연결합니다.
+회로의 병렬성·클록·이벤트를 표현하는 HDL과, 그 회로를 제어하거나 기대값을 계산하는 호스트 코드는 역할이 다릅니다. 실제 비교 예제는 [RTL·하드웨어 검증](../전자컴퓨터공학_ece/14-하드웨어검증_hardware-verification/README.md)과 기존 [설계·검증 사례](../설계와검증사례_engineering-cases/README.md)에서 연결합니다.
 
 ## 4. Python은 계측을 어떻게 반복하나요
 
@@ -113,4 +113,4 @@ SQL은 장비·로트·다이·시험 결과처럼 여러 표의 관계를 연�
 
 ## English
 
-Languages occupy different execution layers: device firmware, drivers, RTL reference models, instrument control, tester programs, data analysis and production services. The examples explain what each layer controls and what evidence it must preserve. They do not infer a company's internal toolchain from a language name in a job description.
+Languages occupy different execution layers: device firmware, drivers, RTL reference models, instrument control, tester programs, data analysis and production services. The examples explain what each layer controls and what evidence it must preserve. Tool choices depend on the target, interface, timing constraints and supported development environment.

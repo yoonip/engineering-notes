@@ -1,10 +1,10 @@
 # 칩 설계와 평가·분석 | Chip design, characterization and failure analysis
 
-[직무 목차](README.md) · [삼성 DS 직무](02-삼성DS의직무와요구역량_samsung-ds-role-map.md) · [제조·패키지 검사](07-공정설비와패키지의검사_process-equipment-package-tests.md) · [언어가 쓰이는 위치](10-C와Python이쓰이는위치_languages-in-the-workflow.md) · [공개 칩·메모리 검사 코드 사례](사례_cases/03-칩과메모리의공개검사코드_chip-memory-test.md)
+[직무 목차](README.md) · [반도체 설계·제조 직무](02-반도체설계와제조의직무_semiconductor-design-manufacturing-roles.md) · [제조·패키지 검사](07-공정설비와패키지의검사_process-equipment-package-tests.md) · [언어가 쓰이는 위치](10-C와Python이쓰이는위치_languages-in-the-workflow.md) · [공개 칩·메모리 검사 코드 사례](사례_cases/03-칩과메모리의공개검사코드_chip-memory-test.md)
 
 칩을 검증한다는 말에는 설계 모델의 기능 확인, 레이아웃·시간 검증, 실제 실리콘의 특성 측정, 제조 결함 선별, 고장 위치 추적이 함께 들어갈 수 있습니다. 어떤 대상을 어떤 조건에서 관찰하는지 나누어야 C·Python·Verilog 같은 도구의 역할도 보입니다.
 
-직무 연결의 기준은 삼성 DS JD의 S.LSI 회로설계 11–12쪽·신호및시스템설계 13–14쪽·평가및분석 15–17쪽, Foundry 회로설계 21–24쪽·평가및분석 25–26쪽·공정설계 27–30쪽입니다. 아래 검사 원리는 공식 기술 자료로 확장한 학습 내용입니다. 특정 회사의 시험 한계·장비 조합·내부 절차를 뜻하지 않습니다. [자료 판본과 검토 범위](출처와검토범위_SOURCES.md)
+칩 개발에서는 회로·RTL 설계, 신호 처리 알고리즘, 공정과 설계 환경, 실리콘 특성 평가가 서로 다른 결과물을 만듭니다. 이 글은 설계 중의 검증과 제조 후의 평가를 자극·관측값·기대값·판정 기준으로 나누어 설명합니다. 검사 원리는 공식 기술 자료에 연결하며, 제품별 시험 한계·장비 조합은 해당 제품의 요구와 시험 계획에 따라 정합니다. [자료 판본과 확인 범위](출처와검토범위_SOURCES.md)
 
 ## 1. 설계에서 출하까지 서로 다른 질문
 
@@ -42,7 +42,7 @@ FIFO를 예로 들면 데이터 값뿐 아니라 가득 찼을 때 쓰기를 거
 | 기준 모델·scoreboard | 수락된 입력으로 독립 기대값을 만들고 출력과 맞춥니다. | C/C++·Python 등으로 산술·큐·알고리즘 모델을 표현할 수 있습니다. 시뮬레이터와의 연결 방식은 환경마다 다릅니다. |
 | coverage·회귀 실행 | 어떤 조건을 관측했는지와 실행 실패를 모읍니다. | Python·셸은 입력·seed·판본·로그를 묶는 데 쓰일 수 있습니다. coverage 숫자만으로 결과의 정확성을 증명하지는 않습니다. |
 
-SystemVerilog/UVM·C++ 모델·Python 연동은 위 원리를 설명하는 도구 예입니다. JD 12·14·24쪽의 명시 언어와 추가로 익힐 검증 도구를 구분합니다. [기존 RTL 비교 사례](../설계와검증사례_engineering-cases/프레임오류와FPGA검증_fpga-frame-validation.md)에서는 입력 형식·순서·폭 오류와 기준값의 경계를 읽으실 수 있습니다.
+SystemVerilog/UVM·C++ 모델·Python 연동은 위 원리를 구현하는 도구 예입니다. 자극 생성·기준 모델·신호 관측을 어느 환경에서 실행할지 검증 대상과 인터페이스에 맞추어 정합니다. [기존 RTL 비교 사례](../설계와검증사례_engineering-cases/프레임오류와FPGA검증_fpga-frame-validation.md)에서는 입력 형식·순서·폭 오류와 기준값의 경계를 읽으실 수 있습니다.
 
 중요한 실패 예는 DUT와 기준 모델에 같은 잘못된 주소식을 복사하는 경우입니다. 둘이 항상 같은 값을 내더라도 요구사항과 함께 틀렸을 수 있습니다. 작은 입력의 수동 기대값, 다른 표현으로 작성한 모델, 경계 조건이 필요한 이유입니다.
 
@@ -58,9 +58,9 @@ SystemVerilog/UVM·C++ 모델·Python 연동은 위 원리를 설명하는 도�
 | PEX | 배선·구조의 기생 저항·정전용량 등을 추출합니다. | 추출 모델과 실제 공정 편차·동작 조건은 추가로 맞춰야 합니다. |
 | STA | 라이브러리·배선·클록·제약으로 경로의 지연과 타이밍 여유를 분석합니다. | 기능 입력을 모두 시뮬레이션한 결과는 아닙니다. |
 
-TCAD의 공정·소자 시뮬레이션과 교정은 [Synopsys TCAD의 Overview·Calibration·Process Simulation](https://www.synopsys.com/manufacturing/tcad.html)에서 확인했습니다. DRC·LVS·PEX·PDK는 이 JD Foundry 회로설계 22쪽에 직접 등장하며, 구체적인 rule deck이나 내부 모델 계수는 이 글에 포함하지 않습니다.
+TCAD의 공정·소자 시뮬레이션과 교정은 [Synopsys TCAD의 Overview·Calibration·Process Simulation](https://www.synopsys.com/manufacturing/tcad.html)에서 확인했습니다. DRC·LVS·PEX·PDK는 설계와 제조 공정을 잇는 기술이며, 구체적인 rule deck이나 모델 계수는 해당 공정의 설계 환경을 따릅니다.
 
-STA에서 setup은 캡처 에지 전에 데이터가 충분히 일찍 도착해야 하는 조건이고, hold는 그 에지 뒤에도 데이터가 필요한 시간 동안 유지되어야 하는 조건입니다. 느린 경로뿐 아니라 너무 빠른 경로도 문제가 됩니다. 제약의 단위·클록·예외가 잘못되면 보고서가 좋아도 실제 요구를 확인한 것이 아닙니다. [Synopsys의 STA 정의와 setup/hold·timing exception 설명](https://www.synopsys.com/glossary/what-is-static-timing-analysis.html), [setup·hold 학습 본문](../분야_topics/15-FPGA-ASIC설계_fpga-asic/해설_notes/너무늦어도너무빨라도문제다_setup-hold-static-timing.md)
+STA에서 setup은 캡처 에지 전에 데이터가 충분히 일찍 도착해야 하는 조건이고, hold는 그 에지 뒤에도 데이터가 필요한 시간 동안 유지되어야 하는 조건입니다. 느린 경로뿐 아니라 너무 빠른 경로도 문제가 됩니다. 제약의 단위·클록·예외가 잘못되면 보고서가 좋아도 실제 요구를 확인한 것이 아닙니다. [Synopsys의 STA 정의와 setup/hold·timing exception 설명](https://www.synopsys.com/glossary/what-is-static-timing-analysis.html), [setup·hold 학습 본문](../전자컴퓨터공학_ece/15-FPGA-ASIC설계_fpga-asic/해설_notes/너무늦어도너무빨라도문제다_setup-hold-static-timing.md)
 
 여기서 Tcl은 회로를 대체하는 언어가 아니라 도구의 설계 읽기·제약 적용·실행·보고서 생성 흐름을 제어하는 데 쓰일 수 있습니다. Python·Perl은 보고서를 구조화하고 실행 조건별 차이를 모으는 데 쓰일 수 있습니다. 실제 도구의 지원 명령과 파일 형식은 해당 판본 문서에 맞춥니다.
 
@@ -111,17 +111,17 @@ DFT는 제조 뒤 내부 상태를 제어·관찰하기 쉽도록 설계에 넣�
 | Functional test | 제품이 정한 기능과 시퀀스를 실행합니다. | 기능 하나의 통과가 모든 내부 결함 검출을 뜻하지 않습니다. |
 | Test interface | probe card·load board·socket·배선으로 장비와 DUT를 연결합니다. | 접촉 실패와 실제 제품 실패를 구분해야 합니다. |
 
-scan·ATPG·BIST의 관계는 [Synopsys DFT의 Definition·How Does Design for Test Work?](https://www.synopsys.com/glossary/what-is-design-for-test.html)에서 확인했습니다. 검출률과 관측 가능성은 [scan·ATPG 본문](../분야_topics/51-반도체테스트제조_test-manufacturing/해설_notes/보이지않는내부상태를검사하기_scan-atpg-fault-coverage.md), 시험 삽입은 [웨이퍼 검사](../반도체제조공정_semiconductor-fabrication/07-웨이퍼검사와수율_eds-yield.md)에서 이어집니다.
+scan·ATPG·BIST의 관계는 [Synopsys DFT의 Definition·How Does Design for Test Work?](https://www.synopsys.com/glossary/what-is-design-for-test.html)에서 확인했습니다. 검출률과 관측 가능성은 [scan·ATPG 본문](../전자컴퓨터공학_ece/51-반도체테스트제조_test-manufacturing/해설_notes/보이지않는내부상태를검사하기_scan-atpg-fault-coverage.md), 시험 삽입은 [웨이퍼 검사](../반도체제조공정_semiconductor-fabrication/07-웨이퍼검사와수율_eds-yield.md)에서 이어집니다.
 
 ATE 프로그램 개발에서는 자원 설정·범위·시간·전원 안정화·패턴·판정 한계·bin·정리 동작을 연결합니다. 시험 시간을 줄였더니 특정 settling이나 결함 검출이 사라졌다면 생산성이 높아졌다는 이유만으로 채택할 수 없습니다. 실패·미실행·무효 측정이 섞이지 않게 하는 프로그램 상태 관리도 필요합니다.
 
 ## 6. SI·PI와 보드는 칩 밖의 조건을 만듭니다
 
-SI, signal integrity는 수신 지점에서 신호의 전압·시간 정보가 보존되는 문제입니다. PI, power integrity는 회로가 요구하는 전원·귀환 경로를 제공하는 문제입니다. 빠른 에지에서는 칩·패키지·보드·케이블을 함께 보아야 합니다. JD Foundry 23쪽과 S.LSI 공정설계 18쪽은 이 범위의 전기·열 시뮬레이션을 명시합니다.
+SI, signal integrity는 수신 지점에서 신호의 전압·시간 정보가 보존되는 문제입니다. PI, power integrity는 회로가 요구하는 전원·귀환 경로를 제공하는 문제입니다. 빠른 에지에서는 칩·패키지·보드·케이블을 함께 보아야 합니다. 전기·열 모델의 경계와 실제 측정 기준면도 함께 맞춥니다.
 
 예를 들어 고속 인터페이스에 오류가 생겼다면 송신 설정, 채널 반사·손실, 수신 등화, 클록, 전원 잡음을 경쟁 원인으로 둡니다. C 펌웨어는 초기화·훈련·패턴 실행을 담당하고, Python은 설정별 오류·온도·파형·장비 상태를 묶을 수 있습니다. 오류 카운터가 0인 결과도 전송 bit 수와 시험 시간을 함께 적어야 비교할 수 있습니다.
 
-[PCB·귀환 경로](../분야_topics/12-PCB하드웨어설계_pcb-hardware/README.md), [S11·S21과 기준면](../현장계측과검증_measurement-validation/계측기_instruments/반사와전달의기준면측정_keysight-e5061b.md), [파형과 프로브 조건](../현장계측과검증_measurement-validation/계측기_instruments/오실로스코프로신호와리플관측_keysight-dsox1204g.md)에서 각 관측의 의미를 공부하실 수 있습니다.
+[PCB·귀환 경로](../전자컴퓨터공학_ece/12-PCB하드웨어설계_pcb-hardware/README.md), [S11·S21과 기준면](../현장계측과검증_measurement-validation/계측기_instruments/반사와전달의기준면측정_keysight-e5061b.md), [파형과 프로브 조건](../현장계측과검증_measurement-validation/계측기_instruments/오실로스코프로신호와리플관측_keysight-dsox1204g.md)에서 각 관측의 의미를 공부하실 수 있습니다.
 
 ## 7. 전기적 실패를 물리적 원인과 연결합니다
 
@@ -141,7 +141,7 @@ FIB는 특정 위치를 가공해 단면·TEM 시료 등을 준비하는 데 쓰
 
 ## 8. 신호·영상 알고리즘은 무엇을 검사하나요
 
-S.LSI 신호및시스템설계 13–14쪽의 알고리즘은 회로와 별개로 떠 있는 수학 문제가 아닙니다. 입력 데이터 형식·정밀도·지연·메모리·전력 제약을 구현과 맞추어야 합니다. 아래는 JD 용어를 읽기 위한 설명이며 실제 제품의 알고리즘 선택·성능 수치가 아닙니다.
+신호 처리 알고리즘을 칩에 구현할 때는 입력 데이터 형식·정밀도·지연·메모리·전력 제약을 함께 맞추어야 합니다. 아래는 통신·영상 처리와 하드웨어 구현이 만나는 경계를 설명하는 예이며 실제 제품의 알고리즘 선택·성능 수치가 아닙니다.
 
 | 개념 | 하는 일 | 비교할 입력·출력과 실패 예 |
 | --- | --- | --- |
@@ -156,13 +156,13 @@ S.LSI 신호및시스템설계 13–14쪽의 알고리즘은 회로와 별개로
 | AF·AE·AWB | 초점·노출·화이트밸런스를 조절합니다. | 장면 변화에서의 안정화·지연과 과도한 진동을 확인합니다. |
 | DVS·SLAM | DVS는 밝기 변화 사건을 출력하는 센서 방식이고, SLAM은 위치와 지도를 함께 추정하는 문제입니다. | 센서 시간·이동·오류 누적과 기준 경로를 대조합니다. 둘을 같은 센서 이름으로 묶지 않습니다. |
 
-OpenCV 4.12의 [공식 색 변환·demosaicing 문서](https://docs.opencv.org/4.12.0/d8/d01/group__imgproc__color__conversions.html)는 C++와 Python 인터페이스, Bayer 패턴·입력 bit 깊이·출력 채널을 함께 보여 줍니다. 이것은 언어가 이미지 버퍼의 형식·연산·결과 비교에 쓰이는 구체적인 예입니다. 실제 삼성 ISP가 이 구현을 사용한다는 뜻은 아닙니다.
+OpenCV 4.12의 [공식 색 변환·demosaicing 문서](https://docs.opencv.org/4.12.0/d8/d01/group__imgproc__color__conversions.html)는 C++와 Python 인터페이스, Bayer 패턴·입력 bit 깊이·출력 채널을 함께 보여 줍니다. 이것은 언어가 이미지 버퍼의 형식·연산·결과 비교에 쓰이는 구체적인 예입니다. 소프트웨어 라이브러리의 결과와 실제 ISP 구현은 정밀도·처리 순서·경계 조건을 맞추어 비교합니다.
 
-통신에서는 표준의 판본도 입력 조건입니다. 예를 들어 [ETSI TS 138 214 V19.2.0(2026-02), 1절·2절](https://etsi.org/deliver/etsi_ts/138200_138299/138214/19.02.00_60/ts_138214v190200p.pdf)은 5G NR 데이터 채널의 물리 계층 절차와 관련 규격을 구분합니다. JD의 6G 연구 언급을 이미 완성된 6G 양산 규격과 같은 뜻으로 읽지 않습니다.
+통신에서는 표준의 판본도 입력 조건입니다. 예를 들어 [ETSI TS 138 214 V19.2.0(2026-02), 1절·2절](https://etsi.org/deliver/etsi_ts/138200_138299/138214/19.02.00_60/ts_138214v190200p.pdf)은 5G NR 데이터 채널의 물리 계층 절차와 관련 규격을 구분합니다. 확정된 규격에 맞춘 구현과 차세대 통신 방식의 연구는 목표·입력·판정 근거가 다릅니다.
 
 ## 9. 보안 IP도 기능과 보안 주장을 나누어 봅니다
 
-JD Foundry 21쪽의 TRNG는 물리적 잡음 등에서 난수를 얻는 하드웨어 구성과 연결되고, PUF는 소자별 물리적 차이를 식별 등에 이용하는 접근입니다. 난수원은 편향·예측 가능성을, PUF 응답은 환경 변화에서의 재현성과 장치 간 차이를 구분해 평가합니다. [NIST SP 800-90B 개요](https://csrc.nist.gov/pubs/sp/800/90/b/final), [IEEE의 PUF 정의](https://technav.ieee.org/topic/physical-unclonable-function/)를 함께 읽으실 수 있습니다. 메모리 보호 IP는 접근 권한·주소 범위·예외 처리처럼 금지된 동작을 차단하는 조건도 검사합니다.
+TRNG는 물리적 잡음 등에서 난수를 얻는 하드웨어 구성과 연결되고, PUF는 소자별 물리적 차이를 식별 등에 이용하는 접근입니다. 난수원은 편향·예측 가능성을, PUF 응답은 환경 변화에서의 재현성과 장치 간 차이를 구분해 평가합니다. [NIST SP 800-90B 개요](https://csrc.nist.gov/pubs/sp/800/90/b/final), [IEEE의 PUF 정의](https://technav.ieee.org/topic/physical-unclonable-function/)를 함께 읽으실 수 있습니다. 메모리 보호 IP는 접근 권한·주소 범위·예외 처리처럼 금지된 동작을 차단하는 조건도 검사합니다.
 
 PQC 가속기는 양자컴퓨터 공격을 고려한 암호 계산을 구현하는 하드웨어입니다. [NIST의 PQC 공식 개요](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography)는 ML-KEM·ML-DSA·SLH-DSA의 목적을 구분합니다. 암호 알고리즘의 기준 벡터 일치, 하드웨어 기능, 구현의 부채널·고장 내성을 서로 다른 검증 항목으로 둡니다. 특정 인증 취득이나 내부 공격 평가를 수행했다고 주장하지 않습니다.
 
@@ -183,7 +183,6 @@ PQC 가속기는 양자컴퓨터 공격을 고려한 암호 계산을 구현하�
 
 | 자료 | 확인 범위 |
 | --- | --- |
-| 삼성 DS JD | 위에 표시한 11–30쪽의 설계·검증·평가·언어·도구입니다. 원본 판본은 [공통 출처](출처와검토범위_SOURCES.md)에 기록했습니다. |
 | [Accellera UVM 1.2 User’s Guide](https://www.accellera.org/images/downloads/standards/uvm/uvm_users_guide_1.2.pdf) | 2015-10-08, 1.1절의 testbench·scoreboard·agent, 4.9–4.10절의 scoreboard·coverage 구성입니다. 구조 설명에 사용했으며 최신 표준 전체의 적합성을 검토한 것은 아닙니다. |
 | [Synopsys STA](https://www.synopsys.com/glossary/what-is-static-timing-analysis.html) | Definition·How Does STA Work?의 경로·setup/hold·예외 구분입니다. |
 | [Synopsys DFT](https://www.synopsys.com/glossary/what-is-design-for-test.html) | Definition·How Does Design for Test Work?의 scan·ATPG·BIST입니다. |
@@ -201,4 +200,4 @@ PQC 가속기는 양자컴퓨터 공격을 고려한 암호 계산을 구현하�
 
 ## English
 
-The chapter separates RTL verification, physical/timing checks, silicon characterization, production screening and failure analysis. It connects each activity to its stimuli, observables, limits, artifacts and programming roles. C firmware, HDL testbenches, EDA scripts and Python instrument/data workflows solve different parts of a test problem. Communication, imaging and security IP examples extend the supplied JD without claiming internal tools, limits or measurements.
+The chapter separates RTL verification, physical/timing checks, silicon characterization, production screening and failure analysis. It connects each activity to its stimuli, observables, limits, artifacts and programming roles. C firmware, HDL testbenches, EDA scripts and Python instrument/data workflows solve different parts of a test problem. Communication, imaging and security IP illustrate the connections between algorithms, implementation and evidence.

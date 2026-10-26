@@ -1,8 +1,8 @@
 # 펌웨어·통신 검사와 공개 코드 | Firmware and communication tests with upstream code
 
-[직무 목차](../README.md) · [DX 직무](../01-삼성DX의직무와요구역량_samsung-dx-role-map.md) · [DS 직무](../02-삼성DS의직무와요구역량_samsung-ds-role-map.md) · [SK하이닉스 직무](../03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) · [펌웨어·SW 기초](../05-펌웨어와소프트웨어검증_firmware-software-validation.md)
+[직무 목차](../README.md) · [제품·시스템 개발](../01-전자제품과시스템개발의직무_product-system-roles.md) · [반도체 설계·제조](../02-반도체설계와제조의직무_semiconductor-design-manufacturing-roles.md) · [메모리 제품·양산](../03-메모리제품과양산의직무_memory-product-production-roles.md) · [펌웨어·SW 기초](../05-펌웨어와소프트웨어검증_firmware-software-validation.md)
 
-펌웨어 검사는 보드에 전원이 들어오는지 확인하는 데서 끝나지 않습니다. 같은 데이터가 전선·주변장치·인터럽트·큐·응용을 지나면서 어느 지점에서 달라지는지 나누어야 합니다. 이 글은 실제 공개 RTOS인 Zephyr의 공식 C 샘플과 Python 검사 코드를 읽고, 그 코드로 관찰할 수 있는 업무 문제를 연결합니다. [Zephyr의 상용 제품 목록](https://www.zephyrproject.org/products-running-zephyr/)은 RTOS의 실제 제품 활용을 보여 줍니다. 아래 `samples` 코드 자체가 그 제품에 그대로 들어갔거나 삼성·SK하이닉스가 사용한다는 근거는 아닙니다.
+펌웨어 검사는 보드에 전원이 들어오는지 확인하는 데서 끝나지 않습니다. 같은 데이터가 전선·주변장치·인터럽트·큐·응용을 지나면서 어느 지점에서 달라지는지 나누어야 합니다. 이 글은 실제 공개 RTOS인 Zephyr의 공식 C 샘플과 Python 검사 코드를 읽고, 그 코드로 관찰할 수 있는 업무 문제를 연결합니다. [Zephyr의 상용 제품 목록](https://www.zephyrproject.org/products-running-zephyr/)은 RTOS의 실제 제품 활용을 보여 줍니다. RTOS의 채택과 아래 `samples` 예제 자체를 양산 코드에 사용하는 일은 구분합니다.
 
 코드는 Zephyr `v4.2.0`, commit `413b789deb391d3a37d06b463288a5fe765ee57e`에서 발췌했습니다. 표와 고장 분석 순서는 이 코드의 동작을 설명하기 위해 구성한 검사 계획이며, 회사의 실제 장애 보고서나 이번 작업에서 측정한 결과가 아닙니다. 새 C·Python 알고리즘은 만들지 않았습니다.
 
@@ -243,4 +243,4 @@ def test_shell_print_version(shell: Shell):  # def는 함수 정의이며 shell:
 
 ## English
 
-The cases follow UART reception through an interrupt and fixed-size message queue, CAN frames through filters and payload validation, and a C device application through Zephyr's Python Twister/pytest harness. Every code excerpt is pinned to Zephyr v4.2.0 commit `413b789deb391d3a37d06b463288a5fe765ee57e` and carries its upstream attribution and Apache-2.0 license. Functional statements are retained; Korean line comments were added and omitted context is identified. Fault scenarios and investigation plans are explanatory, not measurements or evidence of internal Samsung or SK hynix adoption.
+The cases follow UART reception through an interrupt and fixed-size message queue, CAN frames through filters and payload validation, and a C device application through Zephyr's Python Twister/pytest harness. Every code excerpt is pinned to Zephyr v4.2.0 commit `413b789deb391d3a37d06b463288a5fe765ee57e` and carries its upstream attribution and Apache-2.0 license. Functional statements are retained; Korean line comments were added and omitted context is identified. Fault scenarios and investigation plans are authored explanations rather than measurements or claims about a particular company's internal implementation.

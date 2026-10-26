@@ -1,12 +1,12 @@
-# 직무기술서의 업무와 기술을 읽는 방법 | Reading roles, work and technical evidence
+# 직무와 기술을 읽는 방법 | Understanding technical roles and work
 
 [직무 목차](README.md) · [원문과 확인 범위](출처와검토범위_SOURCES.md)
 
-직무기술서의 언어·도구 이름은 수행할 일을 이해하기 위한 단서입니다. 먼저 만드는 제품과 고쳐야 할 문제를 찾고, 그 문제의 입력·출력·측정 방법을 적으면 C·Python·회로·통계가 왜 함께 등장하는지 연결할 수 있습니다.
+회로·펌웨어·평가·공정·AI·IT는 제품을 만드는 과정의 서로 다른 부분을 담당합니다. 만드는 대상과 해결할 문제를 먼저 찾고 입력·출력·측정 방법을 적으면 C·Python·회로·통계가 왜 함께 쓰이는지 연결할 수 있습니다.
 
 ## 1. 직무 이름보다 대상과 동사를 먼저 읽습니다
 
-다음은 세 직무기술서에 나온 업무를 읽는 순서입니다. 채용 조건 자체는 회사별 원문 표에서 확인하고, 아래의 기술 해석은 관련 본문에서 공부합니다.
+업무는 제품·대상·수행 작업·판단 기준·실행 환경·결과물로 나누어 읽습니다. 같은 직무명이라도 조직과 제품에 따라 직접 다루는 대상이 달라집니다.
 
 | 읽을 항목 | 구체적으로 적을 내용 | 예 |
 | --- | --- | --- |
@@ -17,19 +17,19 @@
 | 언어·도구 | 어느 컴퓨터에서 무엇을 실행하는지 적습니다. | DUT의 C 펌웨어, 호스트 PC의 Python 계측, RTL 검증 환경의 SystemVerilog입니다. |
 | 남길 근거 | 다른 사람이 확인할 산출물을 적습니다. | 사양, 회로도, 시험 계획, 원시 파형, 분석 결과, 수정 전후 대조입니다. |
 
-예를 들어 삼성 DS의 S.LSI ‘신호및시스템설계’는 무선·영상 알고리즘을 다루고, AI센터의 같은 직무명은 IT 보안 업무를 다룹니다. 같은 제목을 하나의 통신 알고리즘 직무로 합치지 않습니다. 근거 위치는 [삼성 DS 직무표](02-삼성DS의직무와요구역량_samsung-ds-role-map.md)에 있습니다.
+예를 들어 ‘시스템 설계’는 통신 신호 처리, 임베디드 장치 구성, 서비스 인프라 설계 등 서로 다른 대상을 가리킬 수 있습니다. 제목만으로 묶기보다 실제 입출력·제약·검사 방법을 살펴봅니다. [전자제품·시스템 개발](01-전자제품과시스템개발의직무_product-system-roles.md), [반도체 설계·제조](02-반도체설계와제조의직무_semiconductor-design-manufacturing-roles.md), [메모리 제품·양산](03-메모리제품과양산의직무_memory-product-production-roles.md)에서 각 업무의 연결을 읽으실 수 있습니다.
 
-## 2. 원문 요구와 학습용 설명을 구분합니다
+## 2. 기능·제약·구현·평가를 구분합니다
 
-| 구분 | 문서에서의 의미 | 읽는 방법 |
+| 구분 | 업무에서의 의미 | 확인할 내용 |
 | --- | --- | --- |
-| 자격요건·Requirements | 해당 포지션이 원문에서 제시한 조건입니다. | 어떤 지식이나 구현 역량을 명시했는지 그대로 확인합니다. |
-| 우대·Pluses | 있으면 유리하다고 제시한 경험·기술입니다. | 모든 지원자에게 같은 필수 조건이라고 바꾸지 않습니다. |
-| 업무 본문 | 입사 후 수행할 일과 담당 범위의 설명입니다. | 특정 언어가 업무에 등장해도 자격요건과 표기 위치를 나눕니다. |
-| 실무 개념 설명 | 그 업무를 이해하기 위해 연결한 일반 기술입니다. | 공식 기술 문서와 원리로 근거를 확인합니다. |
-| 자체 예시 | 입력·측정·판정 관계를 설명하기 위해 구성한 사례입니다. | 회사의 실제 공정 조건·내부 시스템·실측 결과로 읽지 않습니다. |
+| 기능 | 제품이나 시스템이 해야 할 동작입니다. | 입력·출력·상태·지원 명령을 정합니다. |
+| 제약 | 동작을 만족해야 하는 범위입니다. | 시간·전력·메모리·온도·오차·인터페이스 조건입니다. |
+| 구현 | 기능을 회로·코드·공정·설정으로 만드는 작업입니다. | 설계 선택과 그 선택이 적용되는 범위입니다. |
+| 평가 | 구현한 결과가 요구와 조건에 맞는지 판단하는 작업입니다. | 시험 입력·기대값·관측·판정·남은 한계입니다. |
+| 설명용 사례 | 입력·측정·판정의 관계를 이해하기 위한 예입니다. | 가정한 조건과 실제 측정·실행한 범위를 구분합니다. |
 
-‘언어가 명시되지 않았다’는 말은 그 직무에 코드가 없다는 뜻이 아닙니다. 예를 들어 AI 프레임워크 경험을 요구하는 문장에서, 문서에 없는 ‘Python 필수’를 새로 만들지는 않습니다. 반대로 C가 적혀 있더라도 임베디드 펌웨어·알고리즘 기준 모델·테스터 프로그램 중 어디에 필요한지 살펴보아야 합니다.
+프로그래밍 언어는 코드가 실행되는 위치와 역할로 설명합니다. C가 임베디드 펌웨어·알고리즘 기준 모델·테스터 프로그램 중 어디에 쓰이는지, Python이 계측·분석·모델 실행 중 무엇을 연결하는지 살펴봅니다. 이 학습 경로에서 다루는 기술이 모든 조직의 채용 필수 조건이라는 뜻은 아닙니다.
 
 ## 3. 검사·검증·평가를 대상별로 나눕니다
 
@@ -88,4 +88,4 @@ flowchart LR
 
 ## English
 
-Read a role through its product, object, action, decision criterion, execution environment and evidence. The company maps preserve requirements, preferences and work descriptions separately. Technical explanations and hypothetical investigations connect those descriptions to engineering practice without asserting a company's undisclosed tools or measured results.
+Read technical work through its product, object, action, constraints, execution environment and evidence. The role guides connect product development, semiconductor design and manufacturing, memory engineering, tests and operations. Published technical sources and illustrative investigations remain distinct from undisclosed implementations and measured results.

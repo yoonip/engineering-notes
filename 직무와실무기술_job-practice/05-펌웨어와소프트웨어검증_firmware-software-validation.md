@@ -1,10 +1,10 @@
 # 펌웨어와 소프트웨어 검증 | Firmware and software validation
 
-[직무 목차](README.md) · [DX 직무표](01-삼성DX의직무와요구역량_samsung-dx-role-map.md) · [제품 회로 검사](04-제품회로와시스템검사_product-circuit-system-tests.md) · [공개 펌웨어·통신 코드 사례](사례_cases/02-펌웨어와통신의공개코드_firmware-communication.md)
+[직무 목차](README.md) · [전자제품·시스템 개발](01-전자제품과시스템개발의직무_product-system-roles.md) · [제품 회로 검사](04-제품회로와시스템검사_product-circuit-system-tests.md) · [공개 펌웨어·통신 코드 사례](사례_cases/02-펌웨어와통신의공개코드_firmware-communication.md)
 
 로봇의 센서값이 PC 화면에 나타나는 과정에는 센서·통신 장치, 드라이버, OS, 미들웨어와 응용이 있습니다. 어느 층에서 값과 시간을 책임지는지 나누어야 필요한 언어와 검증 방법도 보입니다. 장치 안의 C/C++와 PC의 Python, 서버의 Java가 같은 일을 반복하는 것이 아닙니다.
 
-삼성 DX JD의 직접 연결 위치는 미래로봇추진단 시스템 SW(PDF 7쪽), 네트워크 미들웨어·서버·애플리케이션(PDF 10–12쪽), MX·Samsung Research AI(PDF 8–9쪽), Global CS센터 품질(PDF 14쪽)입니다. 이 글의 구조·시험·실패 예시는 공개 기술을 설명하도록 구성한 것으로, 특정 조직의 내부 구현이나 필수 언어를 추가로 단정하지 않습니다.
+제품 내부의 드라이버·RTOS, 장치 사이의 미들웨어, 서버·애플리케이션, AI 기능은 실행 위치와 실패 영향이 다릅니다. 이 글은 각 계층의 입력·상태·시간·오류 복구와 검증 결과물을 연결합니다. 구조·시험·실패 상황은 공개 기술을 설명하기 위한 예이며 특정 조직의 내부 구현을 재현한 자료는 아닙니다.
 
 ## 1. 프로그램이 실행되는 층을 먼저 정합니다
 
@@ -36,7 +36,7 @@ Linux의 DMA 주소는 CPU 가상 주소와 같은 숫자라고 가정할 수 �
 
 `volatile`은 공유 자료를 안전하게 교환하는 lock이나 일반 메모리 barrier를 대신하지 않습니다. [GCC의 Volatiles 설명](https://gcc.gnu.org/onlinedocs/gcc/Volatiles.html)은 volatile 접근과 일반 메모리 쓰기의 순서가 자동으로 묶이지 않는 예를 설명합니다. 원자성·메모리 순서·CPU와 장치 사이의 동기화는 각각 맞는 수단으로 다룹니다.
 
-자세한 오류 경계는 [인터럽트·DMA·MMIO](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md), [Cortex-M7 DMA·캐시](../현장계측과검증_measurement-validation/펌웨어와디버깅_firmware-debugging/DMA버퍼와캐시의경계_cortex-m7-cache-dma.md), [UART 분할 수신](../설계와검증사례_engineering-cases/UART의분할수신과재동기화_uart-stream-resync.md)에서 이어집니다.
+자세한 오류 경계는 [인터럽트·DMA·MMIO](../전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md), [Cortex-M7 DMA·캐시](../현장계측과검증_measurement-validation/펌웨어와디버깅_firmware-debugging/DMA버퍼와캐시의경계_cortex-m7-cache-dma.md), [UART 분할 수신](../설계와검증사례_engineering-cases/UART의분할수신과재동기화_uart-stream-resync.md)에서 이어집니다.
 
 ## 3. 실시간은 빠른 평균보다 기한의 문제입니다
 
@@ -54,7 +54,7 @@ Linux의 DMA 주소는 CPU 가상 주소와 같은 숫자라고 가정할 수 �
 
 Linux PREEMPT_RT는 선점·잠금·인터럽트 실행 방식 등을 다루는 커널 구성이며, 하드웨어·메모리·버스·펌웨어의 조건도 관련됩니다. [Linux Real-time preemption 문서의 Scheduling·Priority inheritance·Considering hardware](https://docs.kernel.org/core-api/real-time/index.html)를 출발점으로 읽을 수 있습니다. 설정 이름만 확인하기보다 목표 보드·부하에서 지연 분포와 기한 초과를 측정해야 합니다.
 
-ROS2 같은 통신·실행 환경을 활용해도 메시지가 최신인지, 어느 시간에 취득했는지, 큐가 밀렸을 때 무엇을 버릴지는 설계해야 합니다. JD의 ROS2 경험은 이런 로봇 시스템의 연결을 이해하는 데 이어집니다. 분산된 장치의 시각을 비교할 때에는 시계 기준과 동기화 오차도 남깁니다.
+ROS2 같은 통신·실행 환경을 활용해도 메시지가 최신인지, 어느 시간에 취득했는지, 큐가 밀렸을 때 무엇을 버릴지는 설계해야 합니다. 로봇 시스템의 검증에서는 메시지의 값뿐 아니라 획득 시각·처리 지연·폐기 정책을 함께 봅니다. 분산된 장치의 시각을 비교할 때에는 시계 기준과 동기화 오차도 남깁니다.
 
 ## 4. 미들웨어 검증: 메시지와 작업 완료를 구분합니다
 
@@ -74,11 +74,11 @@ gRPC deadline은 클라이언트가 어느 시점까지 응답을 기다릴지�
 
 설정값을 한 번 올리는 요청이 서버에서 적용된 직후 응답만 유실되었다고 가정합니다. 클라이언트가 같은 의미의 요청을 새 작업으로 다시 보내면 값이 두 번 바뀔 수 있습니다. 반대로 현재 상태를 특정 값으로 설정하는 연산이라도 부가 알림·이력 등 다른 부작용이 있다면 그 의미까지 정의해야 합니다.
 
-검증에서는 요청 ID·입력·적용 상태·응답을 함께 기록하고, 중복 요청·늦은 응답·재시작 뒤 같은 요청이 들어오는 조건을 비교합니다. 해결 방향은 요청의 멱등성, 중복 식별·보관 기간, 상태 저장과 결과 재전달의 계약을 정하는 것입니다. 이는 회사의 실제 서버 장애 기록이 아닌 일반적인 분산 처리 예입니다. [시간초과 뒤 늦은 쓰기](../설계와검증사례_engineering-cases/시간초과뒤늦은쓰기와재시도_block-io-timeout-retry.md), [HTTP API 계약](../분야_topics/52-Web-API응용_web-api-applications/해설_notes/HTTPAPI의계약_http-idempotency-pagination-validation.md)에서 더 구체적인 경계를 봅니다.
+검증에서는 요청 ID·입력·적용 상태·응답을 함께 기록하고, 중복 요청·늦은 응답·재시작 뒤 같은 요청이 들어오는 조건을 비교합니다. 해결 방향은 요청의 멱등성, 중복 식별·보관 기간, 상태 저장과 결과 재전달의 계약을 정하는 것입니다. 이는 회사의 실제 서버 장애 기록이 아닌 일반적인 분산 처리 예입니다. [시간초과 뒤 늦은 쓰기](../설계와검증사례_engineering-cases/시간초과뒤늦은쓰기와재시도_block-io-timeout-retry.md), [HTTP API 계약](../전자컴퓨터공학_ece/52-Web-API응용_web-api-applications/해설_notes/HTTPAPI의계약_http-idempotency-pagination-validation.md)에서 더 구체적인 경계를 봅니다.
 
 ## 5. 서버·컨테이너 검증: 프로세스가 떠 있다고 서비스가 준비된 것은 아닙니다
 
-컨테이너는 응용과 실행 의존성을 묶어 배포하는 단위이며, Kubernetes는 Pod 등 자원의 배치·상태·재시작·서비스 연결을 관리합니다. JD의 Cloud Native·Kubernetes 경험은 배포 도구 조작뿐 아니라 이 과정의 실패와 복구를 이해하는 일로 이어집니다.
+컨테이너는 응용과 실행 의존성을 묶어 배포하는 단위이며, Kubernetes는 Pod 등 자원의 배치·상태·재시작·서비스 연결을 관리합니다. 클라우드 서비스의 검증은 배포 도구 조작뿐 아니라 이 과정의 실패·자료 일관성·복구를 확인하는 일로 이어집니다.
 
 | 검사 신호 | 확인하는 목적 | 잘못 결합했을 때의 문제 |
 | --- | --- | --- |
@@ -103,11 +103,11 @@ gRPC deadline은 클라이언트가 어느 시점까지 응답을 기다릴지�
 
 ASan은 범위 밖 접근·해제 후 사용 등 메모리 오류를 실행 중 찾고, UBSan은 잘못된 shift·signed overflow·정렬 등 정의되지 않은 연산의 일부를 찾습니다. [Clang AddressSanitizer](https://clang.llvm.org/docs/AddressSanitizer.html), [UndefinedBehaviorSanitizer](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)의 검출 범위와 실행 옵션을 따릅니다. 경고가 없다는 사실만으로 모든 코드 경로나 하드웨어 타이밍이 정상이라는 결론은 나오지 않습니다.
 
-Android 품질 검증에서도 host와 DUT, device under test의 역할이 다릅니다. [AOSP VTS 문서](https://source.android.com/docs/core/tests/vts)는 호스트의 Trade Federation이 실행을 관리하고 C++ GTest와 kernel 시험은 기기에서 실행되는 구성을 설명합니다. Java JUnit 계열에는 호스트에서 기기 shell 명령을 실행하는 시험도 있습니다. 이는 ‘C++와 Java로 어떤 검사를 만드나요’에 대한 공개된 구체적 예이며 삼성 내부에서 특정 시험을 그대로 사용한다는 단정은 아닙니다.
+Android 품질 검증에서도 host와 DUT, device under test의 역할이 다릅니다. [AOSP VTS 문서](https://source.android.com/docs/core/tests/vts)는 호스트의 Trade Federation이 실행을 관리하고 C++ GTest와 kernel 시험은 기기에서 실행되는 구성을 설명합니다. Java JUnit 계열에는 호스트에서 기기 shell 명령을 실행하는 시험도 있습니다. 언어의 이름보다 시험을 실행하는 위치와 실제로 관측하는 대상을 구분하는 공개 예입니다.
 
 ## 7. AI 기능은 모델 출력과 제품 행동을 함께 검증합니다
 
-MX AI JD는 단말·서버·Agent·RAG·sLLM 등을, Samsung Research JD는 생성형·멀티모달·VLM/VLA·경량화 등을 다룹니다. VLM은 시각과 언어를 함께 다루는 모델, VLA는 시각·언어와 행동 출력을 연결하는 접근입니다. 제품에 넣으려면 출력 정확도뿐 아니라 실행 위치·시간·메모리·권한·실패 대응을 평가해야 합니다.
+제품의 AI 기능은 단말·서버의 모델 실행, 검색을 결합한 RAG, 도구를 사용하는 에이전트, 시각·언어 등 여러 입력을 다루는 모델로 나누어 볼 수 있습니다. VLM은 시각과 언어를 함께 다루는 모델, VLA는 시각·언어와 행동 출력을 연결하는 접근입니다. 제품에 넣으려면 출력 정확도뿐 아니라 실행 위치·시간·메모리·권한·실패 대응을 평가해야 합니다.
 
 | 검증 대상 | 고정할 입력·조건 | 확인할 결과 |
 | --- | --- | --- |
@@ -117,7 +117,7 @@ MX AI JD는 단말·서버·Agent·RAG·sLLM 등을, Samsung Research JD는 생�
 | 단말 최적화 | 하드웨어·연산 정밀도·입력 크기·warm-up·동시 부하입니다. | 지연·메모리·전력과 최적화 전후 기능 차이입니다. |
 | 사용자 기능 통합 | 네트워크·입력 오류·취소·백그라운드 전환입니다. | 오류 표시·fallback·응답 시간과 제품 상태입니다. |
 
-위 표는 JD의 키워드를 평가 항목으로 연결한 학습용 정리입니다. 회사 모델의 구조·데이터·성능은 추정하지 않습니다. 상세한 평가 원리는 [AI 응용·에이전트 평가](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md), [RAG와 도구 실행](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md), [데이터 분할·재현성](../분야_topics/03-python-jupyter/해설_notes/데이터와분할재현성_data-split-reproducibility.md)에서 이어집니다.
+위 표는 AI 기능을 평가 항목으로 연결한 학습용 정리입니다. 제품마다 사용 목적과 실패 영향에 맞는 입력·기대 결과·판정 기준을 정합니다. 상세한 평가 원리는 [AI 응용·에이전트 평가](../전자컴퓨터공학_ece/46-AI응용에이전트평가_ai-agents-evaluation/README.md), [RAG와 도구 실행](../전자컴퓨터공학_ece/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md), [데이터 분할·재현성](../전자컴퓨터공학_ece/03-python-jupyter/해설_notes/데이터와분할재현성_data-split-reproducibility.md)에서 이어집니다.
 
 ## 8. 언어 경험을 설명할 때 필요한 구체성
 
@@ -132,13 +132,12 @@ MX AI JD는 단말·서버·Agent·RAG·sLLM 등을, Samsung Research JD는 생�
 | SQL 데이터 분석 | 스키마·join 키·기간·중복/누락 처리와 지표의 분모입니다. |
 | CI/CD | 어떤 변경에 어떤 검사를 실행하고 실패를 어떻게 보존·차단했는지입니다. |
 
-CI/CD는 검사·빌드·배포 경로를 자동으로 연결하는 방식입니다. 검사 개수를 늘리는 것보다 요구사항·오류 경계·변경 영향에 맞는 근거를 남기는 일이 중요합니다. 실제 저장소 예시는 [실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md), [임베디드 검증 프로젝트](../프로젝트_projects/embedded-validation-lab/README.md), [소프트웨어 설계·품질](../분야_topics/48-소프트웨어설계품질_software-quality/README.md)에서 읽으실 수 있습니다.
+CI/CD는 검사·빌드·배포 경로를 자동으로 연결하는 방식입니다. 검사 개수를 늘리는 것보다 요구사항·오류 경계·변경 영향에 맞는 근거를 남기는 일이 중요합니다. 실제 저장소 예시는 [실무 검증 코드](../예제_examples/실무검증_practical-validation/README.md), [임베디드 검증 프로젝트](../프로젝트_projects/embedded-validation-lab/README.md), [소프트웨어 설계·품질](../전자컴퓨터공학_ece/48-소프트웨어설계품질_software-quality/README.md)에서 읽으실 수 있습니다.
 
 ## 출처와 확인 범위
 
 | 근거 | 읽은 범위 |
 | --- | --- |
-| 삼성 DX 2026년 상반기 JD | PDF 7–12·14쪽의 담당 업무·요건·우대입니다. 8–9쪽은 특정 언어보다 AI 기술·프레임워크를 명시합니다. |
 | [Linux DMA mapping Guide](https://docs.kernel.org/core-api/dma-api-howto.html) | CPU/DMA 주소, coherent·streaming 구분과 동기화·소유권의 역할입니다. |
 | [GCC Volatiles](https://gcc.gnu.org/onlinedocs/gcc/Volatiles.html) | volatile과 일반 메모리 순서의 차이입니다. 예시 barrier를 모든 플랫폼의 장치 동기화 해법으로 전용하지 않았습니다. |
 | [Linux Real-time preemption](https://docs.kernel.org/core-api/real-time/index.html) | scheduling·priority inheritance·threaded interrupt·하드웨어 고려 사항의 공식 문서 구조를 확인했습니다. 특정 보드의 지연 보장을 제시하지 않았습니다. |

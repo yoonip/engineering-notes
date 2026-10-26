@@ -1,10 +1,10 @@
 # 제품 회로와 시스템 검사 | Product circuit and system testing
 
-[직무 목차](README.md) · [삼성 DX 직무](01-삼성DX의직무와요구역량_samsung-dx-role-map.md) · [펌웨어·SW 검증](05-펌웨어와소프트웨어검증_firmware-software-validation.md) · [계측 코드와 원인 분석](사례_cases/01-회로와소자의계측코드_circuit-device-measurement.md)
+[직무 목차](README.md) · [전자제품·시스템 개발](01-전자제품과시스템개발의직무_product-system-roles.md) · [펌웨어·SW 검증](05-펌웨어와소프트웨어검증_firmware-software-validation.md) · [계측 코드와 원인 분석](사례_cases/01-회로와소자의계측코드_circuit-device-measurement.md)
 
 회로를 검사한다는 말에는 전압을 읽는 일, 고속 신호의 타이밍을 보는 일, RF 신호의 변조 오차를 재는 일, 여러 제품·기지국이 함께 동작하는지 확인하는 일이 들어갑니다. 각각 필요한 자극·계측기·판정 기준이 다릅니다. C나 Python의 쓰임도 어떤 층을 구현하거나 관측하는지에 따라 달라집니다.
 
-삼성 DX JD에서 출발한 범위는 MX 회로설계의 디지털/RF·전원·노이즈·검증·자동화(PDF 3쪽), 로봇 회로의 컴퓨팅·통신·전원 보드와 PI/SI(PDF 4쪽), 네트워크 시스템의 기능·성능·안정성·호환성(PDF 5쪽), Global CS센터의 개발 품질·HW/SW·AI·IoT·보안 검증(PDF 14쪽)입니다. 아래 시험표와 진단 사례는 그 업무를 이해하도록 구성한 일반 기술 설명이며 삼성의 사내 시험 규격을 공개한 자료가 아닙니다.
+모바일·가전·로봇·통신 장비에서는 디지털/RF 회로와 전원, 컴퓨팅·통신 보드, 제품 전체의 기능·성능·호환성을 서로 다른 경계에서 검사합니다. 이 글은 각 검사가 다루는 물리량·장비·프로그램·판정 근거를 연결합니다. 시험표와 진단 상황은 공개 기술 자료를 바탕으로 구성한 학습 설명이며, 실제 제품의 합격 기준은 해당 제품의 요구사항과 규격에서 정합니다.
 
 ## 1. 부품에서 시스템까지 검사 대상을 나눕니다
 
@@ -40,7 +40,7 @@ PI, power integrity는 부하가 요구하는 전력을 필요한 전압 품질�
       = 0.6 × 5×10⁻⁶ / 0.060
       = 50 µF
 
-이는 전하 수지만 본 교육용 계산입니다. 실제 선택에는 제어기의 응답, 커패시터의 전압·온도별 유효 용량, ESR·ESL, 배치·배선과 공진이 더해집니다. 계산에서 50 µF가 나왔다고 명목 용량 50 µF 하나를 붙여 모든 과도 응답이 해결되는 것은 아닙니다. [부하 변화와 과도 응답](../분야_topics/31-전력전자에너지_power-energy/해설_notes/부하변화의과도응답_buck-transient.md), [전원·전자부하](../현장계측과검증_measurement-validation/계측기_instruments/전원과전자부하의전압전류제어_keysight-e36312a-rigol-dl3021.md)에서 이어집니다.
+이는 전하 수지만 본 교육용 계산입니다. 실제 선택에는 제어기의 응답, 커패시터의 전압·온도별 유효 용량, ESR·ESL, 배치·배선과 공진이 더해집니다. 계산에서 50 µF가 나왔다고 명목 용량 50 µF 하나를 붙여 모든 과도 응답이 해결되는 것은 아닙니다. [부하 변화와 과도 응답](../전자컴퓨터공학_ece/31-전력전자에너지_power-energy/해설_notes/부하변화의과도응답_buck-transient.md), [전원·전자부하](../현장계측과검증_measurement-validation/계측기_instruments/전원과전자부하의전압전류제어_keysight-e36312a-rigol-dl3021.md)에서 이어집니다.
 
 ## 3. SI 검사: 비트가 도착한 시점의 전압을 봅니다
 
@@ -91,7 +91,7 @@ EMI, electromagnetic interference는 전자기적 간섭을 가리키고, EMC, e
 
 ## 6. 시스템 기능·성능·호환성 검사는 조건의 조합입니다
 
-네트워크 시스템개발 JD(PDF 5쪽)의 성능·안정성·호환성은 RF 계측값 한 개로 끝나지 않습니다. 기능은 요구한 동작의 수행 여부, 성능은 부하·자원 조건에서의 처리 능력, 안정성은 지속·전환·장애 조건의 동작, 호환성은 상대 장비·프로토콜·판본 조합의 동작으로 나누어 시험할 수 있습니다.
+통신 시스템의 성능·안정성·호환성은 RF 계측값 한 개로 판단할 수 없습니다. 기능은 요구한 동작의 수행 여부, 성능은 부하·자원 조건에서의 처리 능력, 안정성은 지속·전환·장애 조건의 동작, 호환성은 상대 장비·프로토콜·판본 조합의 동작으로 나누어 시험할 수 있습니다.
 
 | 시험군 | 바꿀 조건 | 대표 관측과 판정 질문 |
 | --- | --- | --- |
@@ -101,7 +101,7 @@ EMI, electromagnetic interference는 전자기적 간섭을 가리키고, EMC, e
 | 호환성 | 상대 장비·기능 옵션·프로토콜·HW/SW 판본을 바꿉니다. | 지원한다고 명시한 조합의 기능·성능과 실패 범위를 남깁니다. |
 | 장시간·환경 | 온도·전원 상태·연속 사용 등 정의한 조건을 적용합니다. | 누적 오류·열·성능 저하·재현 조건을 남깁니다. |
 
-예를 들어 ‘처리량 1 Gbit/s’라고만 쓰면 응용 payload인지 링크 속도인지, 단방향인지 양방향인지, 패킷 크기·손실률·부하 시간이 무엇인지 알 수 없습니다. 성능값의 이름보다 분모·시간·트래픽·환경을 먼저 정의합니다. 관련 배경은 [통신 이론·무선](../분야_topics/30-통신이론무선시스템_communications-wireless/README.md), [인터페이스·통신](../분야_topics/20-인터페이스통신_interfaces-communications/README.md)입니다.
+예를 들어 ‘처리량 1 Gbit/s’라고만 쓰면 응용 payload인지 링크 속도인지, 단방향인지 양방향인지, 패킷 크기·손실률·부하 시간이 무엇인지 알 수 없습니다. 성능값의 이름보다 분모·시간·트래픽·환경을 먼저 정의합니다. 관련 배경은 [통신 이론·무선](../전자컴퓨터공학_ece/30-통신이론무선시스템_communications-wireless/README.md), [인터페이스·통신](../전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/README.md)입니다.
 
 ## 7. 어떤 언어를 어디에 쓰는지 연결합니다
 
@@ -112,7 +112,7 @@ EMI, electromagnetic interference는 전자기적 간섭을 가리키고, EMC, e
 | 분석 단계 | 파형·결함·시험 이력을 조건별로 묶고 분포·이상 위치를 비교합니다. | Python/R·통계·신호처리, 데이터베이스 조회에는 SQL 등입니다. | 단위·기준면·시험 판본이 다른 결과를 섞지 않아야 합니다. |
 | 제품·시험 서비스 | 결과를 저장하고 장치·사용자·권한·진행 상태를 관리합니다. | Java·Python 등 서버 기술, DB·네트워크·동시성입니다. | 실행 ID·장치 ID·재시험 이력을 잃지 않게 합니다. |
 
-C/C++가 회로를 직접 ‘측정해 주는’ 것은 아닙니다. ADC·센서·계측 경로를 구동하고 데이터를 처리하는 코드를 만드는 데 쓰입니다. Python도 계측기의 정확도를 대신하지 않고 여러 작업을 순서대로 실행·기록하게 합니다. JD의 언어 명시와 이 활용 예의 차이는 [DX 직무표](01-삼성DX의직무와요구역량_samsung-dx-role-map.md)에 표시했습니다.
+C/C++가 회로를 직접 ‘측정해 주는’ 것은 아닙니다. ADC·센서·계측 경로를 구동하고 데이터를 처리하는 코드를 만드는 데 쓰입니다. Python도 계측기의 정확도를 대신하지 않고 여러 작업을 순서대로 실행·기록하게 합니다. 실행 위치와 제약에 따른 구분은 [언어가 쓰이는 위치](10-C와Python이쓰이는위치_languages-in-the-workflow.md)에서 이어집니다.
 
 실제 저장소의 [SCPI·PyVISA 시험 기록](../현장계측과검증_measurement-validation/계측자동화_instrument-automation/명령응답과시험결과기록_scpi-pyvisa-automation.md)은 명령·응답·유효성·정리를 연결합니다. 그 글의 mock 확인을 실물 장비 측정으로 읽지 않습니다.
 
@@ -138,7 +138,6 @@ C/C++가 회로를 직접 ‘측정해 주는’ 것은 아닙니다. ADC·센�
 
 | 근거 | 확인 범위 |
 | --- | --- |
-| 삼성 DX 2026년 상반기 JD | PDF 3·4·5·14쪽의 회로·시스템·품질 업무와 언어·도구 표기입니다. |
 | [Tektronix 전원 프로빙 설명](https://www.tek.com/en/documents/application-note/probing-techniques-accurate-voltage-measurements-power-converters-oscillos) | Ripple Measurement Application·감쇠/범위·차동 측정의 역할을 읽었습니다. 장비별 정격을 공통 허용값으로 옮기지 않았습니다. |
 | [R&S 1EZ54_0E](https://cdn.rohde-schwarz.com.cn/pws/dl_downloads/dl_application/application_notes/1ez54/1EZ54_0E.pdf) | 2007년 자료의 3–5절, 인쇄 3–6쪽입니다. S-parameter·반사·return loss의 정의를 사용하며 당시 장비 조작법·제품 성능은 전용하지 않았습니다. |
 | [Keysight 89600 VSA EVM](https://helpfiles.keysight.com/csg/89600B/Webhelp/Subsystems/digdemod/content/digdemod_symtblerrdata_evm.htm) | EVM 정의·심벌 위치·정규화 기준을 확인했습니다. |

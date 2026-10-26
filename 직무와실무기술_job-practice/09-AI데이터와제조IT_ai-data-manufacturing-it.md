@@ -1,14 +1,14 @@
 # AI·데이터와 제조 IT | AI, data and manufacturing IT
 
-[직무·실무 목차](README.md) · [SK하이닉스 JD](03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) · [검사결과 판정·기록](11-검사결과의판정과기록_test-decisions-evidence.md) · [출처와 판본](출처와검토범위_SOURCES.md) · [AI·제조 IT의 평가 사례](사례_cases/05-AI와제조IT의평가사례_ai-manufacturing-it.md)
+[직무·실무 목차](README.md) · [메모리 제품·양산 직무](03-메모리제품과양산의직무_memory-product-production-roles.md) · [검사결과 판정·기록](11-검사결과의판정과기록_test-decisions-evidence.md) · [출처와 판본](출처와검토범위_SOURCES.md) · [AI·제조 IT의 평가 사례](사례_cases/05-AI와제조IT의평가사례_ai-manufacturing-it.md)
 
 제조 현장의 AI·IT는 모델 하나를 학습시키는 일로 끝나지 않습니다. 장비에서 나온 자료가 올바른 제품·시점·조건과 연결되어야 하고, 분석 결과가 업무 시스템과 실제 설비에서 어떤 조치로 이어지는지도 정해야 합니다.
 
-이 글의 JD 근거는 SK하이닉스 2026 하반기 문서의 IT 9쪽, System Architecture / Software Solution 10쪽, 양산기술 11쪽, 기반기술 13쪽, 양산관리 15쪽, Utility 제어·BIM 18–19쪽입니다. 아래 구조와 제품 이름은 공개 기술을 이해하기 위한 예이며, 해당 회사의 실제 내부 구축도를 추정한 것이 아닙니다.
+업무 애플리케이션·데이터 플랫폼·AI·생산관리·물류·설비 제어·시설 모델은 다른 입력과 결과물을 다룹니다. 이 글은 현장에서 얻은 자료가 분석·업무 판단·설비 상태와 연결되는 경로를 설명합니다. 구조와 제품 이름은 공개 기술을 이해하기 위한 예이며 특정 회사의 내부 구축도를 추정한 것이 아닙니다.
 
 ## 1. 언어·프레임워크·플랫폼을 구분합니다
 
-| 분류 | JD에 나온 예 | 실제로 맡을 수 있는 일 |
+| 분류 | 도구·기술의 예 | 실제로 맡을 수 있는 일 |
 | --- | --- | --- |
 | 프로그램을 표현하는 언어 | C/C++, C#, Java, Python, JavaScript, SQL | 타깃·서버·화면·분석·데이터 질의를 서로 다른 환경에서 구현합니다. |
 | 화면 라이브러리 | React | 현황·경보·시험 이력을 사용자가 조작하는 화면을 구성합니다. |
@@ -71,7 +71,7 @@ PostgreSQL의 primary key·unique·foreign key·not-null 같은 제약은 자료
 
 AMHS는 automated material handling system, 자동 반송 체계입니다. 원문 11쪽은 OHT·Stocker·Conveyor·AMR와 MCS 최적화를 적습니다. OHT는 머리 위 경로의 반송 차량, stocker는 보관 설비, conveyor는 정한 경로의 운송 장치, AMR은 자율 이동 로봇이라는 서로 다른 이동·보관 수단입니다.
 
-Daifuku의 공식 cleanroom 자료는 반도체용 AMHS의 반송·보관과 시설 이용률을 설명합니다. 이는 공개된 시스템 범주를 이해하기 위한 자료이며, SK하이닉스의 특정 장비 공급사·배치도를 확인한 근거는 아닙니다. [공식 Cleanroom·Semiconductor 설명](https://www.daifuku.com/solution/cleanroom/)
+Daifuku의 공식 cleanroom 자료는 반도체용 AMHS의 반송·보관과 시설 이용률을 설명합니다. 반송 장치·보관·호스트 시스템의 연결을 이해하기 위한 공개 예이며, 실제 장비 구성은 공장의 배치·제품·운영 조건에 따라 달라집니다. [공식 Cleanroom·Semiconductor 설명](https://www.daifuku.com/solution/cleanroom/)
 
 | 관점 | 맞춰야 할 대상 | 학습용 오류 예 |
 | --- | --- | --- |
@@ -106,7 +106,7 @@ MCS는 이 문맥에서 material control system, 반송 제어 시스템을 가�
 
 ## 6. LLM·RAG를 업무 자료에 연결할 때
 
-RAG는 retrieval-augmented generation, 필요한 외부 자료를 검색하여 답변의 문맥으로 제공하는 구조입니다. 원문 9쪽의 RAG 경험은 언어 모델을 처음부터 학습시키는 일과 구분할 수 있습니다. [LangChain의 Retrieval·RAG 공식 설명](https://docs.langchain.com/oss/python/deepagents/retrieval)
+RAG는 retrieval-augmented generation, 필요한 외부 자료를 검색하여 답변의 문맥으로 제공하는 구조입니다. 기존 모델에 검색을 연결하는 일과 언어 모델을 처음부터 학습시키는 일은 필요한 자료·연산·평가 범위가 다릅니다. [LangChain의 Retrieval·RAG 공식 설명](https://docs.langchain.com/oss/python/deepagents/retrieval)
 
 | 단계 | 구체적으로 하는 일 | 평가할 오류 |
 | --- | --- | --- |
@@ -115,7 +115,7 @@ RAG는 retrieval-augmented generation, 필요한 외부 자료를 검색하여 �
 | 답변 | 찾은 구간을 바탕으로 설명합니다. | 근거에 없는 수치·지원 기능·공정 조건을 덧붙입니다. |
 | 업무 연결 | 답변·승인·조치·기록의 경계를 정합니다. | 참고 답변을 승인된 설비 조건·확정 판정으로 오인합니다. |
 
-Python으로 문서 로더·검색·모델 호출·평가를 연결하고 SQL로 문서·판본·권한·로그를 관리할 수 있습니다. 하지만 검색 결과에 출처가 붙었다는 사실만으로 답변 전체가 정확해지는 것은 아닙니다. 검색 성능과 근거를 따르는 답변 능력을 따로 평가해야 합니다. 개념과 예시는 [RAG·도구 실행](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md)에서 이어집니다.
+Python으로 문서 로더·검색·모델 호출·평가를 연결하고 SQL로 문서·판본·권한·로그를 관리할 수 있습니다. 하지만 검색 결과에 출처가 붙었다는 사실만으로 답변 전체가 정확해지는 것은 아닙니다. 검색 성능과 근거를 따르는 답변 능력을 따로 평가해야 합니다. 개념과 예시는 [RAG·도구 실행](../전자컴퓨터공학_ece/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/RAG와도구실행_retrieval-tools-and-evaluation.md)에서 이어집니다.
 
 ## 7. AI 메모리·시스템 연구에서는 병목을 어디서 재나요
 
@@ -128,9 +128,9 @@ Python으로 문서 로더·검색·모델 호출·평가를 연결하고 SQL로
 | 메모리·인터커넥트 | 용량·대역폭·지연·공유·접속 경로입니다. | 이론 대역폭과 실제 응용 처리량을 같은 수치처럼 비교합니다. |
 | 여러 장치·서버 | 분산 처리·통신·동기화·운영 자원입니다. | 장치 한 개의 빠른 연산만으로 전체 시스템 확장성을 판단합니다. |
 
-CXL·UCIe·NVLink·Ethernet은 모두 같은 거리·계층·기능을 갖는 인터페이스 이름이 아닙니다. 이 장에서는 이름을 동일한 ‘고속 통신’으로 외우기보다, 어떤 장치를 어떤 범위에서 연결하고 메모리·캐시·프로토콜·운영 SW에 어떤 요구가 생기는지 확인합니다. [SoC 연결 구조](../분야_topics/34-SoC연결구조_soc-interconnects/README.md), [고성능·병렬 계산](../분야_topics/42-고성능병렬계산_hpc-parallel/README.md), [메모리·저장장치](../분야_topics/33-메모리저장장치_memory-storage/README.md)를 함께 읽으시면 좋습니다.
+CXL·UCIe·NVLink·Ethernet은 모두 같은 거리·계층·기능을 갖는 인터페이스 이름이 아닙니다. 이 장에서는 이름을 동일한 ‘고속 통신’으로 외우기보다, 어떤 장치를 어떤 범위에서 연결하고 메모리·캐시·프로토콜·운영 SW에 어떤 요구가 생기는지 확인합니다. [SoC 연결 구조](../전자컴퓨터공학_ece/34-SoC연결구조_soc-interconnects/README.md), [고성능·병렬 계산](../전자컴퓨터공학_ece/42-고성능병렬계산_hpc-parallel/README.md), [메모리·저장장치](../전자컴퓨터공학_ece/33-메모리저장장치_memory-storage/README.md)를 함께 읽으시면 좋습니다.
 
-PIM·PNM·NMP 같은 이름도 연산을 메모리 안·근처 등으로 옮기는 접근을 살필 때 등장합니다. 표기만으로 데이터 배치·지원 연산·수치 정밀도·일관성·실제 이동 비용이 확정되지는 않습니다. 이 PDF는 해당 연구 영역을 제시하며 특정 상용 모델의 내부 구현이나 성능 배수를 제공하는 문서가 아닙니다.
+PIM·PNM·NMP 같은 이름도 연산을 메모리 안·근처 등으로 옮기는 접근을 살필 때 등장합니다. 표기만으로 데이터 배치·지원 연산·수치 정밀도·일관성·실제 이동 비용이 확정되지는 않습니다. 비교할 때는 실제 연산·자료 배치·인터페이스와 기준 시스템을 함께 확인합니다.
 
 ## 8. 개발 성공과 운영 성공을 구분합니다
 
@@ -150,7 +150,6 @@ Kubernetes는 컨테이너화한 workload와 서비스의 배포·상태·확장
 
 | 자료 | 읽은 범위·사용한 내용 |
 | --- | --- |
-| SK하이닉스 2026 하반기 JD | PDF 9–11·13·15·18–19쪽의 IT·AI·반송·양산 데이터·제어·BIM 업무입니다. 원본 범위는 [공통 출처](출처와검토범위_SOURCES.md)에 있습니다. |
 | [Microsoft Microservices architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices) | What are microservices?·Components의 독립 서비스·API·운영 구성입니다. 특정 회사의 Azure 사용을 주장하지 않았습니다. |
 | [PostgreSQL Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html) | 확인 당시 PostgreSQL 18의 not-null·unique·primary key·foreign key 등 자료 제약입니다. |
 | [SEMI SECS/GEM 개요](https://www.semi.org/en/standards-watch-2022-Sept/intro-to-semi-communication-standards) | 2022년 공개 설명의 E30/GEM·E5/SECS-II 구분입니다. 유료 규격의 모든 메시지를 검토한 것은 아닙니다. |

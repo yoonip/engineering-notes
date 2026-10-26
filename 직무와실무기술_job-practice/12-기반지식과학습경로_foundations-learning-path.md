@@ -1,18 +1,18 @@
 # 직무를 이해하는 기반 지식과 학습 경로 | Foundations and study paths
 
-[직무 목차](README.md) · [DX](01-삼성DX의직무와요구역량_samsung-dx-role-map.md) · [DS](02-삼성DS의직무와요구역량_samsung-ds-role-map.md) · [SK하이닉스](03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md)
+[직무 목차](README.md) · [제품·시스템 개발](01-전자제품과시스템개발의직무_product-system-roles.md) · [반도체 설계·제조](02-반도체설계와제조의직무_semiconductor-design-manufacturing-roles.md) · [메모리 제품·양산](03-메모리제품과양산의직무_memory-product-production-roles.md)
 
-전공 과목을 많이 나열하는 것과 업무를 설명하는 것은 다릅니다. 먼저 현상과 측정량을 이해하고, 그 값을 계산·제어·기록하는 방법을 익힌 뒤, 직무가 만드는 결과물과 연결합니다. 아래는 채용 필수 조건을 새로 정한 목록이 아니라 세 JD의 업무를 공부하기 위한 개념 경로입니다.
+전공 과목을 많이 나열하는 것과 업무를 설명하는 것은 다릅니다. 먼저 현상과 측정량을 이해하고, 그 값을 계산·제어·기록하는 방법을 익힌 뒤, 직무가 만드는 결과물과 연결합니다. 아래는 전자제품·반도체·시스템 개발과 제조의 업무를 공부하기 위한 개념 경로입니다.
 
 ## 1. 공통 바탕: 숫자와 시스템의 경계
 
 | 개념 | 먼저 이해할 뜻 | 업무에 연결하는 예 | 이어서 읽을 자료 |
 | --- | --- | --- | --- |
-| 단위와 차원 | V·A·Ω·W·s·Hz처럼 서로 다른 양을 구분합니다. | 전압 리플의 mV와 전력의 mW를 섞지 않고, 비트 전송률과 바이트 처리량을 나눕니다. | [물리 기초](../분야_topics/56-물리기초_physics-foundations/README.md) |
-| 미분·적분 | 변화율과 누적량을 표현합니다. | 전류를 시간에 따라 적분한 전하, 온도 상승 속도, 누적 에너지를 읽습니다. | [수식과 코드](../분야_topics/06-수식과코드_math-to-code/README.md) |
+| 단위와 차원 | V·A·Ω·W·s·Hz처럼 서로 다른 양을 구분합니다. | 전압 리플의 mV와 전력의 mW를 섞지 않고, 비트 전송률과 바이트 처리량을 나눕니다. | [물리 기초](../전자컴퓨터공학_ece/56-물리기초_physics-foundations/README.md) |
+| 미분·적분 | 변화율과 누적량을 표현합니다. | 전류를 시간에 따라 적분한 전하, 온도 상승 속도, 누적 에너지를 읽습니다. | [수식과 코드](../전자컴퓨터공학_ece/06-수식과코드_math-to-code/README.md) |
 | 선형대수 | 여러 변수를 벡터·행렬로 다룹니다. | 회로망, 상태공간, 센서 보정, 신경망 계산에서 입력과 계수의 모양을 맞춥니다. | [공학 기초](../공학기초_foundations/README.md) |
 | 확률·통계 | 개별 결과와 분포·추정·불확도를 구분합니다. | 수율·유지 시간·불량 경보를 표본·조건·분모와 함께 해석합니다. | [검사 판정과 기록](11-검사결과의판정과기록_test-decisions-evidence.md) |
-| 이산 표현 | 연속 신호를 유한한 비트와 시간 간격으로 표현합니다. | ADC 양자화, 정수 오버플로, 샘플링과 디지털 필터를 연결합니다. | [ADC·DAC](../분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/README.md) |
+| 이산 표현 | 연속 신호를 유한한 비트와 시간 간격으로 표현합니다. | ADC 양자화, 정수 오버플로, 샘플링과 디지털 필터를 연결합니다. | [ADC·DAC](../전자컴퓨터공학_ece/32-혼성신호-ADC-DAC_mixed-signal-data-converters/README.md) |
 | 모델과 실물 | 계산의 가정과 측정의 조건을 구분합니다. | 시뮬레이션 통과를 실물 보드의 EMC·열·수명 시험 통과로 바꾸지 않습니다. | [계측 분야](../현장계측과검증_measurement-validation/README.md) |
 
 ## 2. 회로·하드웨어·통신의 연결
@@ -32,7 +32,7 @@
 | RF·통신 | 변조·대역폭·SNR·EVM·BER·S파라미터입니다. | 송신 파형의 품질과 수신 오류율을 구분하고 시험 조건을 적습니다. |
 | 열·기구 | 열 경로·열저항·변형·진동·조립 공차입니다. | 온도와 접촉·정렬·재료 특성이 함께 바뀌는 경로를 설명합니다. |
 
-연결 자료는 [회로](../분야_topics/09-회로전자공학_circuits-electronics/README.md), [PCB](../분야_topics/12-PCB하드웨어설계_pcb-hardware/README.md), [전자기학·RF](../분야_topics/29-전자기학-RF_electromagnetics-rf/README.md), [통신 이론](../분야_topics/30-통신이론무선시스템_communications-wireless/README.md)입니다. 실제 검사 항목은 [제품 회로·시스템 검사](04-제품회로와시스템검사_product-circuit-system-tests.md)에서 이어집니다.
+연결 자료는 [회로](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/README.md), [PCB](../전자컴퓨터공학_ece/12-PCB하드웨어설계_pcb-hardware/README.md), [전자기학·RF](../전자컴퓨터공학_ece/29-전자기학-RF_electromagnetics-rf/README.md), [통신 이론](../전자컴퓨터공학_ece/30-통신이론무선시스템_communications-wireless/README.md)입니다. 실제 검사 항목은 [제품 회로·시스템 검사](04-제품회로와시스템검사_product-circuit-system-tests.md)에서 이어집니다.
 
 ## 3. 펌웨어·SW·칩 설계의 연결
 
@@ -46,7 +46,7 @@
 | 검증 방법 | assertion·scoreboard·coverage·기준 모델입니다. | 통과한 시나리오와 아직 관측하지 않은 상태를 구분합니다. |
 | 물리 설계·실물 평가 | 타이밍·전력·PVT·접촉·계측입니다. | RTL의 기능과 실리콘에서의 동작 여유를 별도로 설명합니다. |
 
-각 범위는 [C·C++·Python](../분야_topics/04-c-cpp-python/README.md), [컴퓨터 구조](../분야_topics/16-프로세서구조_arm-riscv/README.md), [펌웨어·RTOS](../분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md), [임베디드 Linux](../분야_topics/18-임베디드Linux_embedded-linux/README.md), [RTL](../분야_topics/13-RTL설계_verilog-systemverilog/README.md), [칩 설계·평가](06-칩설계와평가분석_chip-design-characterization.md)로 이어집니다.
+각 범위는 [C·C++·Python](../전자컴퓨터공학_ece/04-c-cpp-python/README.md), [컴퓨터 구조](../전자컴퓨터공학_ece/16-프로세서구조_arm-riscv/README.md), [펌웨어·RTOS](../전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/README.md), [임베디드 Linux](../전자컴퓨터공학_ece/18-임베디드Linux_embedded-linux/README.md), [RTL](../전자컴퓨터공학_ece/13-RTL설계_verilog-systemverilog/README.md), [칩 설계·평가](06-칩설계와평가분석_chip-design-characterization.md)로 이어집니다.
 
 ## 4. 반도체 공정·소자·메모리의 연결
 
@@ -79,11 +79,11 @@
 | AI 서비스 | 검색·모델·프롬프트·도구·지연·추적입니다. | 답변 품질과 도구 실행 성공을 나눈 평가표입니다. |
 | 운영·보안 | 모니터링·접근 제어·롤백·변경 관리입니다. | 새 판본의 적용 범위와 되돌릴 조건입니다. |
 
-기초는 [데이터 공학](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/README.md), [AI·머신러닝](../분야_topics/23-AI머신러닝_ai-machine-learning/README.md), [AI 서비스 평가](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md)이며, JD와의 연결은 [AI·데이터·제조 IT](09-AI데이터와제조IT_ai-data-manufacturing-it.md)에 있습니다.
+기초는 [데이터 공학](../전자컴퓨터공학_ece/40-데이터베이스데이터공학_databases-data-engineering/README.md), [AI·머신러닝](../전자컴퓨터공학_ece/23-AI머신러닝_ai-machine-learning/README.md), [AI 서비스 평가](../전자컴퓨터공학_ece/46-AI응용에이전트평가_ai-agents-evaluation/README.md)이며, 실제 데이터 흐름과 업무의 연결은 [AI·데이터·제조 IT](09-AI데이터와제조IT_ai-data-manufacturing-it.md)에 있습니다.
 
 ## 6. 생산관리·구매·영업·재무·인프라도 함께 읽습니다
 
-직무기술서에는 설계·개발 이외의 역할도 들어 있습니다. 아래 개념은 기술 데이터가 운영 판단으로 바뀌는 접점을 설명합니다. 각 포지션의 언어 요구를 새로 정한 목록은 아닙니다.
+제품과 제조 현장에서는 설계·개발뿐 아니라 계획·조달·품질·영업·시설 운영이 함께 연결됩니다. 아래 개념은 기술 데이터가 운영 판단으로 바뀌는 접점을 설명합니다.
 
 | 개념 | 뜻 | 제품·현장과의 연결 |
 | --- | --- | --- |
@@ -108,7 +108,7 @@
 5. 사용할 언어가 그 대조의 어느 부분을 실행하는지 설명합니다.
 6. 실제 실행·문헌 검토·가정 계산을 나누어 결과를 남깁니다.
 
-과목별 강의는 [전기·전자·통신 과목](../학습사이트와채널_learning-resources/전기전자통신과목_ece-courses.md)과 [학습 사이트 목차](../학습사이트와채널_learning-resources/README.md)에서 찾으실 수 있습니다. 이 페이지는 기존 학습 본문과 세 JD를 연결한 안내이며, 회사별 근거 쪽수는 각 직무표와 [출처 문서](출처와검토범위_SOURCES.md)에 적었습니다.
+과목별 강의는 [전기·전자·통신 과목](../학습사이트와채널_learning-resources/전기전자통신과목_ece-courses.md)과 [학습 사이트 목차](../학습사이트와채널_learning-resources/README.md)에서 찾으실 수 있습니다. 각 경로에서 관측 대상·기대 동작·실패 원인·확인 방법을 구체적으로 설명하는 데 필요한 기초를 골라 공부합니다.
 
 ## English
 

@@ -1,10 +1,10 @@
 # 반도체 산업과 직무의 연결 | Semiconductor value chain and engineering roles
 
-[직무 목차](README.md) · [삼성 DX](01-삼성DX의직무와요구역량_samsung-dx-role-map.md) · [삼성 DS](02-삼성DS의직무와요구역량_samsung-ds-role-map.md) · [SK하이닉스](03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) · [반도체 공정](../반도체제조공정_semiconductor-fabrication/README.md)
+[직무 목차](README.md) · [제품·시스템 개발](01-전자제품과시스템개발의직무_product-system-roles.md) · [반도체 설계·제조](02-반도체설계와제조의직무_semiconductor-design-manufacturing-roles.md) · [메모리 제품·양산](03-메모리제품과양산의직무_memory-product-production-roles.md) · [반도체 공정](../반도체제조공정_semiconductor-fabrication/README.md)
 
 반도체 산업은 칩을 설계하는 일, 웨이퍼에 만드는 일, 조립·검사하는 일, 제품과 서비스에서 사용하는 일이 연결된 구조입니다. 기업 이름을 한 칸에 외우기보다 어느 단계의 어떤 결과물을 다음 단계에 넘기는지 보면 직무와 필요한 기술도 이해하기 쉽습니다.
 
-입문 연결은 글로벌소프트웨어캠퍼스의 [반도체 기초 통합편 - 반도체 기초 과정](https://www.youtube.com/watch?v=NNp8xuh1lic)입니다. 제목·설명에서 반도체 소개·생산기업·전공정·후공정이라는 구성을 확인했습니다. 아래 설명은 공식 산업·기업 자료와 첨부 JD를 대조해 작성했으며 영상의 모든 발언을 받아 적은 요약은 아닙니다.
+입문 연결은 글로벌소프트웨어캠퍼스의 [반도체 기초 통합편 - 반도체 기초 과정](https://www.youtube.com/watch?v=NNp8xuh1lic)입니다. 제목·설명에서 반도체 소개·생산기업·전공정·후공정이라는 구성을 확인했습니다. 아래 설명은 공식 산업·기업 자료로 가치사슬과 기술의 관계를 정리한 내용이며 영상의 모든 발언을 받아 적은 요약은 아닙니다.
 
 ## 1. 제품 종류·재료·사업 방식은 다른 분류입니다
 
@@ -64,34 +64,38 @@ flowchart TD
 
 이는 인계 관계를 단순화한 그림입니다. 검사는 여러 단계 사이에 반복해서 들어가고, wafer-level packaging이나 HBM 등에서는 웨이퍼 가공·선별·조립·접합이 더 촘촘히 연결됩니다. 조립 전에 한 번, 완제품에서 한 번만 시험하는 보편적 순서라는 뜻은 아닙니다.
 
-[SIA의 제조 흐름 개요](https://www.semiconductors.org/semiconductors-101/how-are-semiconductors-made/)는 연구·설계·웨이퍼 제조·조립/시험/패키지와 이후 보드 조립을 연결합니다. 아래 표는 이 흐름을 JD의 업무와 산출물에 연결한 학습용 정리입니다.
+[SIA의 제조 흐름 개요](https://www.semiconductors.org/semiconductors-101/how-are-semiconductors-made/)는 연구·설계·웨이퍼 제조·조립/시험/패키지와 이후 보드 조립을 연결합니다. 아래 표는 각 단계에서 전달할 정보와 그것을 확인하는 업무를 연결한 학습용 정리입니다.
 
 | 인계 단계 | 전달하는 정보·결과물의 예 | 인계할 때 확인할 내용 | 직무 학습 연결 |
 | --- | --- | --- | --- |
 | 제품 요구→설계 | 기능·전력·성능·인터페이스·사용 조건입니다. | 만족해야 할 값과 그 값이 적용되는 조건입니다. | [칩 설계·평가](06-칩설계와평가분석_chip-design-characterization.md), [제품 회로 검사](04-제품회로와시스템검사_product-circuit-system-tests.md) |
-| 설계→제조 | 회로·레이아웃·규칙·마스크 관련 데이터와 판본입니다. | 사용할 공정·소자 모델·설계 규칙과의 일치 여부입니다. | [삼성 DS 직무](02-삼성DS의직무와요구역량_samsung-ds-role-map.md), [공정 통합](../반도체제조공정_semiconductor-fabrication/09-공정통합과품질관리_integration-process-control.md) |
+| 설계→제조 | 회로·레이아웃·규칙·마스크 관련 데이터와 판본입니다. | 사용할 공정·소자 모델·설계 규칙과의 일치 여부입니다. | [반도체 설계·제조 직무](02-반도체설계와제조의직무_semiconductor-design-manufacturing-roles.md), [공정 통합](../반도체제조공정_semiconductor-fabrication/09-공정통합과품질관리_integration-process-control.md) |
 | 공정 모듈→다음 공정 | 재료·막 두께·치수·표면·열 이력·결함 자료입니다. | 다음 증착·식각·접합이 가능한 입력 상태인지 확인합니다. | [공정·설비·패키지 검사](07-공정설비와패키지의검사_process-equipment-package-tests.md) |
 | 웨이퍼→조립 | 다이 좌표·시험 결과·등급·조건과 추적 정보입니다. | 검사 결과와 실제 선택한 다이의 대응 관계입니다. | [웨이퍼 검사](../반도체제조공정_semiconductor-fabrication/07-웨이퍼검사와수율_eds-yield.md), [메모리 테스트](08-메모리제품과테스트개발_memory-product-test-engineering.md) |
 | 다이→패키지 | 두께·pad·범프·접합·열·기계 조건입니다. | 전기 접속과 구조·열 경로가 요구 조건에 맞는지 확인합니다. | [패키징](../반도체제조공정_semiconductor-fabrication/08-패키징과첨단집적_packaging.md), [HBM 적층](../반도체제조공정_semiconductor-fabrication/14-HBM의TSV와적층공정_hbm-tsv-stacking.md) |
-| 칩→보드·펌웨어 | pin·전원·초기화·명령·오류·타이밍 규격입니다. | 장치가 요구한 순서·전압·시간을 SW와 PCB가 함께 만족하는지 확인합니다. | [DX 직무](01-삼성DX의직무와요구역량_samsung-dx-role-map.md), [펌웨어·SW 검증](05-펌웨어와소프트웨어검증_firmware-software-validation.md) |
+| 칩→보드·펌웨어 | pin·전원·초기화·명령·오류·타이밍 규격입니다. | 장치가 요구한 순서·전압·시간을 SW와 PCB가 함께 만족하는지 확인합니다. | [제품·시스템 개발](01-전자제품과시스템개발의직무_product-system-roles.md), [펌웨어·SW 검증](05-펌웨어와소프트웨어검증_firmware-software-validation.md) |
 | 시험→품질·고객 | 원시 결과·시험 판본·이력·조건·실패 분석입니다. | 실패 원인을 설명하는 근거와 재발 방지 조치의 확인 범위입니다. | [결과 판정·기록](11-검사결과의판정과기록_test-decisions-evidence.md) |
 
 예를 들어 wafer map이 좌우로 뒤집히거나 다른 시험 판본의 결과를 잘못 연결하면, 각각의 검사 장비가 정상이어도 잘못된 다이가 다음 단계로 넘어갈 수 있습니다. 오류가 물리 공정뿐 아니라 좌표·식별자·판본의 인계에서도 생긴다는 뜻입니다. 이것은 특정 회사 사고가 아닌 교육용 실패 예입니다.
 
-## 4. 삼성전자 DS·DX와 SK하이닉스를 역할로 연결합니다
+## 4. 사업 방식과 직무의 책임을 나누어 봅니다
 
-| 조직·기업 | 공식 설명과 제공 JD에서 확인한 참여 범위 | 직무를 이해하는 데 중요한 점 |
+| 개발·제조에서의 역할 | 직접 다루는 대상과 결과물 | 다른 역할과 맞출 경계 |
 | --- | --- | --- |
-| 삼성전자 DS | 공식 반도체 사업 설명은 Memory·System LSI·Foundry를 나눕니다. 제공 JD에는 소자·회로·평가·공정·설비·TSP·인프라·AI/IT·생산·재무 등이 연결됩니다. | 회사 전체를 설계 또는 제조 중 한 가지로만 분류하면 사업부별 일이 보이지 않습니다. |
-| 삼성전자 DX | 제공 JD는 모바일·가전·디스플레이 제품·통신망·로봇·AI·품질과 사업 운영을 다룹니다. | 반도체를 쓰는 완제품·시스템에서 PCB·전원·통신·펌웨어·응용·서비스를 함께 판단합니다. |
-| SK하이닉스 | 공식 회사 소개는 DRAM·NAND·MCP 등의 제품과 반도체 제조·판매를 설명합니다. 제공 JD는 설계부터 소자·R&D 공정·제품 평가·양산·패키지·Solution HW/SW·IT까지 포함합니다. | 메모리 설계·제조·판매를 결합하는 IDM 관점으로 이해할 수 있으며, 협력·외주가 있다는 이유만으로 설계 또는 제조 기능이 없어지는 것은 아닙니다. |
+| 칩·IP 설계 | 기능·회로·RTL·레이아웃과 검증 결과입니다. 팹리스·IP 기업뿐 아니라 IDM·파운드리의 설계 관련 조직에도 연결될 수 있습니다. | 제품 규격, 공정 모델·규칙, 통합 인터페이스와 시험 가능성을 맞춥니다. |
+| 소자·공정·웨이퍼 제조 | 재료·구조·단위 공정·통합 조건과 전기 특성·수율 자료입니다. | 설계가 요구한 소자 특성과 실제 공정 변동·품질을 연결합니다. |
+| 제품 엔지니어링·시험 | 설계·공정·패키지의 결과를 제품 규격·시험·불량 분석과 연결합니다. | 검사 위치·한계·등급·추적 정보와 고객 조건을 맞춥니다. |
+| 조립·패키지·시험 서비스 | 다이·기판·접속·봉지·열 경로와 선별 결과입니다. 내부 조직 또는 외부 조립·시험 파트너가 담당할 수 있습니다. | 입고 다이·재료·조립 조건과 최종 전기 기능·신뢰성을 연결합니다. |
+| 메모리 솔루션 HW·SW | 컨트롤러·보드·펌웨어·호스트 인터페이스와 데이터 보존 동작입니다. | 셀·패키지의 특성과 명령·오류·성능·복구 요구를 맞춥니다. |
+| 완제품·시스템 개발 | PCB·전원·통신·펌웨어·응용·서비스와 제품 전체의 검증입니다. | 칩·모듈의 사양을 실제 사용 환경·부하·사용자 기능과 연결합니다. |
+| 제조 지원·IT·운영 | 장비·인프라·생산계획·데이터·품질·조달의 운영 결과입니다. | 제품·공정·설비의 상태를 같은 식별자·단위·시각·판본으로 연결합니다. |
 
-삼성의 [공식 Business Areas](https://semiconductor.samsung.com/about-us/business-area/)는 System LSI의 응용 칩 설계와 Foundry의 공정·협력을 구분합니다. [Foundry 소개](https://semiconductor.samsung.com/foundry/)는 설계 개념부터 양산까지의 고객 협력, EDA·IP·설계 환경과 패키지 솔루션을 함께 설명합니다. [SK하이닉스 회사 소개](https://www.skhynix.com/company/UI-FR-CP02/)는 메모리 제품·제조/판매와 DRAM·NAND 기술을 명시합니다. 시장점유율·기업 우열을 위 표의 근거로 사용하지 않았습니다.
+한 기업이 위 역할을 여러 개 맡을 수 있으며, 같은 직무 이름도 제품·공정·고객에 따라 책임 범위가 달라집니다. 공개 사업 사례로 삼성 반도체의 [Business Areas](https://semiconductor.samsung.com/about-us/business-area/)·[Foundry 소개](https://semiconductor.samsung.com/foundry/)는 메모리·응용 칩·위탁 제조와 설계·IP·EDA·패키지 협업을 구분합니다. [SK하이닉스 회사 소개](https://www.skhynix.com/company/UI-FR-CP02/)는 메모리 제품·제조/판매와 DRAM·NAND 기술을 설명합니다. 이 자료는 사업 역할의 예이며 다른 회사의 조직 구조나 채용 요건을 정하는 기준은 아닙니다.
 
 ```mermaid
 flowchart LR
-    M["메모리 제품의 설계·소자·Fab·PKG·시험: DS 메모리·SK하이닉스 등의 참여"] --> P["보드·제품·서비스: DX 등 시스템 기업의 참여"]
-    L["응용 칩·IP 설계: DS System LSI·팹리스 등의 참여"] --> F["공정·위탁 제조·패키지 협업: DS Foundry·제조 파트너의 참여"]
+    M["메모리 제품의 설계·소자·Fab·PKG·시험"] --> P["보드·완제품·서비스 통합"]
+    L["응용 칩·IP 설계"] --> F["공정·위탁 제조·패키지 협업"]
     F --> P
     P --> R["전원·인터페이스·성능·품질 요구와 피드백"]
     R --> M
@@ -110,7 +114,7 @@ flowchart LR
 | 웨이퍼 안의 공정 통합 | MOL, middle of line | 소자의 단자와 초기 배선을 잇는 contact 등의 구간입니다. |
 | 웨이퍼 안의 공정 통합 | BEOL, back end of line | 소자 위 다층 금속배선·절연막·via를 형성하는 구간입니다. |
 
-BEOL의 ‘back end’를 들었다고 곧바로 다이싱·몰딩·완제품 패키지라고 번역하지 않습니다. 산업의 전공정 안에 FEOL·MOL·BEOL이 들어갈 수 있습니다. 패키지용 RDL·본딩·TSV처럼 경계를 가로지르는 기술에서는 현재 가공하는 물체와 결과물을 함께 봅니다. [공정 통합의 용어 구분](../반도체제조공정_semiconductor-fabrication/09-공정통합과품질관리_integration-process-control.md#1-feolmolbeol과-조립)과 그 절에 연결한 SK하이닉스 원문에서 이어집니다.
+BEOL의 ‘back end’를 들었다고 곧바로 다이싱·몰딩·완제품 패키지라고 번역하지 않습니다. 산업의 전공정 안에 FEOL·MOL·BEOL이 들어갈 수 있습니다. 패키지용 RDL·본딩·TSV처럼 경계를 가로지르는 기술에서는 현재 가공하는 물체와 결과물을 함께 봅니다. [공정 통합의 용어 구분](../반도체제조공정_semiconductor-fabrication/09-공정통합과품질관리_integration-process-control.md#1-feolmolbeol과-조립)과 그 절에 연결한 제조사 원문에서 이어집니다.
 
 8대 공정도 여덟 작업을 한 번씩 수행하는 고정 레시피가 아닙니다. 한 제품에서 포토·식각·증착·세정·계측·평탄화가 반복되고, 로직·DRAM·NAND·HBM에서는 만드는 구조와 순서가 달라집니다. [8대 공정 목차](../반도체제조공정_semiconductor-fabrication/README.md), [제품별 공정 순서](../반도체제조공정_semiconductor-fabrication/10-로직과메모리의공정차이_logic-memory-integration.md), [단면 아틀라스](../반도체제조공정_semiconductor-fabrication/11-단면으로보는공정흐름_cross-section-atlas.md)를 함께 읽으시면 됩니다.
 
@@ -125,7 +129,7 @@ BEOL의 ‘back end’를 들었다고 곧바로 다이싱·몰딩·완제품 �
 | 제조 IT·생산관리 | 작업·자재·장비·물류 상태와 계획을 맞춥니다. | 서버·DB·SQL·Python 등으로 데이터와 실제 운영 상태를 연결합니다. | 상태 전이·추적·일정·예외 처리·데이터 품질입니다. |
 | 응용·AI·서비스 | 모델·사용자 입력·도구 호출·서버와 장치를 연결합니다. | 서비스 언어와 AI 도구를 실행 위치에 맞게 조합합니다. | 기능·품질·지연·자원·권한·오류 복구 결과입니다. |
 
-위 표는 작업의 일반적인 연결 예입니다. 언어를 명시한 실제 JD와 임의로 정한 실무 예는 [DX](01-삼성DX의직무와요구역량_samsung-dx-role-map.md)·[DS](02-삼성DS의직무와요구역량_samsung-ds-role-map.md)·[SK하이닉스](03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) 직무표에서 구분합니다. 회사에 Fab이 있다는 사실이 모든 직원의 업무를 클린룸 작업으로 만들지 않으며, 반도체 기업의 SW 업무가 모두 회로 설계인 것도 아닙니다.
+위 표는 작업의 일반적인 연결 예입니다. 실제 도구·언어는 장치·호스트·시험 환경에 따라 달라지며 [언어가 쓰이는 위치](10-C와Python이쓰이는위치_languages-in-the-workflow.md)에서 그 차이를 읽으실 수 있습니다. 회사에 Fab이 있다는 사실이 모든 직원의 업무를 클린룸 작업으로 만들지 않으며, 반도체 기업의 SW 업무가 모두 회로 설계인 것도 아닙니다.
 
 ## 7. 제품 하나에서 여러 직무가 만나는 예
 
@@ -157,7 +161,7 @@ BEOL의 ‘back end’를 들었다고 곧바로 다이싱·몰딩·완제품 �
 | [Cadence, What’s all the Hoopla with PDKs?](https://community.cadence.com/cadence_blogs_8/b/cic/posts/what-s-all-the-hoopla-with-pdks) | 2009-03-31 자료의 PDK 구성 설명에서 소자 모델·검증 규칙·기술 파일을 확인했습니다. 이후의 시장·고객 경험 논평은 근거로 사용하지 않았습니다. |
 | [삼성 반도체 Business Areas](https://semiconductor.samsung.com/about-us/business-area/) · [Foundry](https://semiconductor.samsung.com/foundry/) | Memory·System LSI·Foundry의 설명과 설계·제조·IP·EDA·패키지 협업 범위입니다. |
 | [SK하이닉스 회사 소개](https://www.skhynix.com/company/UI-FR-CP02/) | 반도체 제조·판매와 DRAM·NAND·MCP, 메모리 개발·제품 방향입니다. |
-| 첨부 JD와 기존 공정 본문 | 역할별 업무·언어 표기의 세부 출처는 [공통 출처 문서](출처와검토범위_SOURCES.md), 물리 공정·검사는 각 연결 본문에서 확인합니다. |
+| [기존 반도체 공정 본문](../반도체제조공정_semiconductor-fabrication/README.md) | 물리 공정·소자별 통합·검사와 각 절의 공식 원문으로 이어집니다. |
 
 날짜가 없는 웹페이지의 확인일은 2026-10-26입니다. 표·흐름도·실패 상황은 근거를 연결하기 위한 자체 설명이며, 회사 내부 조직·계약·검증 절차를 그대로 재현한 자료가 아닙니다.
 
