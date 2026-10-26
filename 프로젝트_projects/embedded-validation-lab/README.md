@@ -1,6 +1,6 @@
 # Embedded validation lab
 
-메모리 패턴 검사와 연산 signature를 C 펌웨어로 구현하고, CPU 시뮬레이션과 UART 자동화로 결과를 확인합니다. Arm Cortex-M7, SystemVerilog RV32I CPU, STM32F767ZI, ESP32에서 같은 검증 흐름을 비교합니다.
+메모리 패턴 검사와 연산 signature를 C 펌웨어로 구현합니다. QEMU·RTL 시뮬레이션과 UART 호스트 검사를 연결하고, STM32F767ZI·ESP32용 펌웨어를 함께 제공합니다. 실제 보드 시험과 빌드·시뮬레이션의 범위는 아래 실행 기록에 구분했습니다.
 
 ## 구성
 
