@@ -20,14 +20,14 @@ I hope this repository will be more than a store of finished answers. One reader
 
 | Section | Coverage |
 | --- | --- |
-| [Roles and engineering practice](직무와실무기술_job-practice/README.md) | Samsung DX/DS and SK hynix job descriptions connected to engineering tasks, test principles, C/C++ and Python workflows, and result records |
+| [Roles and engineering practice](직무와실무기술_job-practice/README.md) | Product development, semiconductor design and manufacturing, memory engineering, tests and operations connected to technical foundations, programming tasks and engineering evidence |
 | [Electronics and computing across industries](산업별전자와컴퓨팅_industry-systems/README.md) | Automotive, consumer electronics, defense/aerospace, marine, energy, industrial automation, enterprise IT, medical, rail and urban systems; subsystems, interfaces, tests and company roles |
 | [Measurement, debugging and validation](현장계측과검증_measurement-validation/README.md) | Instrument guides, DMA/cache, fault tracing, PVT, industrial communications and SCPI automation |
 | [Engineering decisions and checks](설계와검증사례_engineering-cases/README.md) | C/C++, RTOS, interrupt/DMA, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, firmware updates, NVMe/eMMC/SD, journal recovery, NAND management, FTL mapping, filesystem repair, backups, RAID parity recovery, I/O retries, ECC, DDR, RTL/CDC, chip, AI and data cases with runnable faults, fixes and dated execution evidence |
 | [Learning sites and channels](학습사이트와채널_learning-resources/README.md) | Korean and international open courses, research resources, technical documentation and educational video channels |
 | [Engineering foundations](공학기초_foundations/README.md) | Foundational and advanced derivations, calculations and checks |
 | [Semiconductor fabrication](반도체제조공정_semiconductor-fabrication/README.md) | Wafer manufacturing, oxidation, lithography, etching, deposition and implantation, interconnects, testing, packaging and process integration |
-| [Technical topics](분야_topics/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
+| [Electrical and computer engineering](전자컴퓨터공학_ece/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
 | [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | CSAT/LEET past questions, choice-by-choice reasoning and original practice |
 | [Foreign languages and technical English](외국어와기술영어_foreign-languages/README.md) | English foundations and exercises, study methods and technical reading |
 | [Humanities](인문사회_humanities/README.md) | [Philosophy concepts](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), economics, society, legal rights, facts, procedure and judgments |
@@ -38,8 +38,8 @@ I hope this repository will be more than a store of finished answers. One reader
 | [Visual form and art analysis](인문사회_humanities/67-미술과조형_visual-arts/README.md) | Observe line, colour, space and materials, then compare style, context and interpretive evidence in drawings and artworks. |
 | [Paper studies](논문해설_papers/README.md) | Korean explanations of research across computing, AI, electronics, life sciences, industry, philosophy of mind, free will and personal identity |
 | [Technology landscape](기술동향_technology/README.md) | Dated analysis of benchmarks and technical developments |
-| [Product and technology reviews](제품리뷰_reviews/README.md) | Analyses of principles, competing technologies, evidence, supply chains, standards, business models and switching costs |
-| [AI model references](AI모델실험_model-lab/README.md) | Official model descriptions and separately documented educational numerical examples |
+| [Product and technology analyses](제품기술분석_product-technology/README.md) | Analyses of principles, competing technologies, evidence, supply chains, standards, business models and switching costs |
+| [AI models and numerical experiments](AI모델과수치실험_ai-models/README.md) | Official model descriptions and separately documented educational numerical examples |
 | [Projects](프로젝트_projects/README.md) · [examples](예제_examples/README.md) | Implementations, execution steps and recorded checks |
 | [Programmers](programmers/README.md) | Submitted solutions, study notes and incomplete-attempt analysis |
 | [Hardware coding practice](하드웨어코딩_hardware-coding/README.md) | HDLBits Verilog solutions and recorded results, original SystemVerilog/VHDL/Amaranth circuits, annotated sources, cycle traces and self-checking tests |
@@ -49,4 +49,4 @@ I hope this repository will be more than a store of finished answers. One reader
 
 [Philosophy concepts](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md) introduces reality, knowledge, ethics, mind, freedom, identity, political legitimacy, and cultivation and action through worked cases. [Recent AI evidence and classical questions](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md) compares experiments and arguments while separating measured functions from claims about experience and identity.
 
-[Biomedical engineering and medical AI](분야_topics/62-의공학의료AI_medical-engineering/README.md) connects imaging, diagnostic support, neuroprosthetics and AI-assisted drug discovery through mechanisms and clinical evidence.
+[Biomedical engineering and medical AI](전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md) connects imaging, diagnostic support, neuroprosthetics and AI-assisted drug discovery through mechanisms and clinical evidence.

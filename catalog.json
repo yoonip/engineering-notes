@@ -13,7 +13,7 @@
         "프로세스와 개발 환경"
       ],
       "keywords": "Ubuntu, Debian, Fedora, Arch Linux, WSL2, Bash, Zsh, systemd, SSH, tmux, rsync",
-      "path": "분야_topics/01-linux-bash/README.md",
+      "path": "전자컴퓨터공학_ece/01-linux-bash/README.md",
       "references": [
         "https://docs.kernel.org/",
         "https://www.gnu.org/software/bash/manual/bash.html"
@@ -38,7 +38,7 @@
         "편집, 빌드, 실행 환경"
       ],
       "keywords": "Git, GitHub, GitLab, GitHub CLI/Desktop, VS Code, Vim/Neovim, GCC, Clang/LLVM, Make, CMake, Meson, Ninja, Docker, Podman",
-      "path": "분야_topics/02-개발도구_git-development-tools/README.md",
+      "path": "전자컴퓨터공학_ece/02-개발도구_git-development-tools/README.md",
       "references": [
         "https://git-scm.com/book/en/v2",
         "https://gcc.gnu.org/onlinedocs/gcc/Standards.html"
@@ -62,7 +62,7 @@
         "계산과 시각화"
       ],
       "keywords": "Python, pip, uv, venv, Conda/Mamba, Jupyter Notebook/Lab, IPython, NumPy, SciPy, pandas, Matplotlib, Seaborn, Plotly",
-      "path": "분야_topics/03-python-jupyter/README.md",
+      "path": "전자컴퓨터공학_ece/03-python-jupyter/README.md",
       "references": [
         "https://docs.python.org/3/tutorial/",
         "https://jupyter.org/install",
@@ -88,7 +88,7 @@
         "Python과 다른 언어의 연결"
       ],
       "keywords": "C, C++, Python, Rust, Go, Java, C#, JavaScript/TypeScript, Julia, R, Tcl, Lua, Assembly",
-      "path": "분야_topics/04-c-cpp-python/README.md",
+      "path": "전자컴퓨터공학_ece/04-c-cpp-python/README.md",
       "references": [
         "https://gcc.gnu.org/onlinedocs/gcc/Standards.html",
         "https://docs.python.org/3/tutorial/"
@@ -113,7 +113,7 @@
         "수치 해석과 모델링"
       ],
       "keywords": "MATLAB, Simulink, GNU Octave, SciPy, SymPy, Mathematica, Maple, Julia",
-      "path": "분야_topics/05-과학계산_matlab-scientific/README.md",
+      "path": "전자컴퓨터공학_ece/05-과학계산_matlab-scientific/README.md",
       "references": [
         "https://www.mathworks.com/help/matlab/learn_matlab/matrices-and-arrays.html",
         "https://docs.scipy.org/doc/scipy/"
@@ -137,7 +137,7 @@
         "수치적으로 같은 식인가"
       ],
       "keywords": "Calculus, Linear Algebra, Probability, Statistics, ODE/PDE, Numerical Analysis, Optimization, Information Theory, Graph Theory",
-      "path": "분야_topics/06-수식과코드_math-to-code/README.md",
+      "path": "전자컴퓨터공학_ece/06-수식과코드_math-to-code/README.md",
       "references": [
         "https://numpy.org/doc/",
         "https://docs.scipy.org/doc/scipy/"
@@ -162,7 +162,7 @@
         "저장, 통신, 빌드"
       ],
       "keywords": "Linux, xv6, OSTEP topics, Networking, TCP/IP, Filesystems, Databases, Compilers, Concurrency",
-      "path": "분야_topics/07-컴퓨터공학기초_cs-foundations/README.md",
+      "path": "전자컴퓨터공학_ece/07-컴퓨터공학기초_cs-foundations/README.md",
       "references": [
         "https://docs.kernel.org/",
         "https://llvm.org/docs/"
@@ -189,7 +189,7 @@
         "Programmers 풀이"
       ],
       "keywords": "프로그래머스 / Programmers, 백준 / Baekjoon, LeetCode, Codeforces, AtCoder, HackerRank, Codility, SWEA",
-      "path": "분야_topics/08-알고리즘_problem-solving/README.md",
+      "path": "전자컴퓨터공학_ece/08-알고리즘_problem-solving/README.md",
       "references": [
         "https://school.programmers.co.kr/learn/challenges"
       ],
@@ -213,7 +213,7 @@
         "능동 소자와 증폭"
       ],
       "keywords": "RLC, Op-Amp, BJT, MOSFET, CMOS, Filters, Oscillators, Regulators, SPICE, Breadboard Measurements",
-      "path": "분야_topics/09-회로전자공학_circuits-electronics/README.md",
+      "path": "전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/README.md",
       "references": [
         "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
       ],
@@ -237,7 +237,7 @@
         "소자 모델과 공정 변동"
       ],
       "keywords": "PN, MOS, BJT, CMOS, FinFET, GAA, SOI, SiC/GaN, BSIM, SRAM/DRAM/NAND, TCAD",
-      "path": "분야_topics/10-반도체소자_semiconductors/README.md",
+      "path": "전자컴퓨터공학_ece/10-반도체소자_semiconductors/README.md",
       "references": [
         "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
       ],
@@ -262,7 +262,7 @@
         "회로도에서 레이아웃으로"
       ],
       "keywords": "Cadence Virtuoso, Spectre, ADE, SKILL, OCEAN, Synopsys Custom Compiler, HSPICE, PrimeSim, Siemens Eldo, LTspice, ngspice, Xschem",
-      "path": "분야_topics/11-아날로그IC설계_analog-ic-cadence/README.md",
+      "path": "전자컴퓨터공학_ece/11-아날로그IC설계_analog-ic-cadence/README.md",
       "references": [
         "https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation.html"
       ],
@@ -286,7 +286,7 @@
         "신호와 전원의 경로"
       ],
       "keywords": "KiCad, Altium Designer, OrCAD, Allegro, PADS, Xpedition, EasyEDA, IBIS, SI/PI, EMC/EMI, DFM",
-      "path": "분야_topics/12-PCB하드웨어설계_pcb-hardware/README.md",
+      "path": "전자컴퓨터공학_ece/12-PCB하드웨어설계_pcb-hardware/README.md",
       "references": [
         "https://www.kicad.org/about/kicad/"
       ],
@@ -309,7 +309,7 @@
         "FSM·파이프라인·메모리"
       ],
       "keywords": "Verilog, SystemVerilog, VHDL, Verilog-A/AMS, Chisel, SpinalHDL, Amaranth, HLS",
-      "path": "분야_topics/13-RTL설계_verilog-systemverilog/README.md",
+      "path": "전자컴퓨터공학_ece/13-RTL설계_verilog-systemverilog/README.md",
       "references": [
         "https://verilator.org/guide/latest/"
       ],
@@ -332,7 +332,7 @@
         "Assertion과 formal"
       ],
       "keywords": "UVM, SVA, cocotb, Verilator, Icarus Verilog, GTKWave, Questa, Xcelium, VCS, SymbiYosys, Formal/Equivalence",
-      "path": "분야_topics/14-하드웨어검증_hardware-verification/README.md",
+      "path": "전자컴퓨터공학_ece/14-하드웨어검증_hardware-verification/README.md",
       "references": [
         "https://docs.cocotb.org/en/stable/",
         "https://verilator.org/guide/latest/"
@@ -356,7 +356,7 @@
         "타이밍과 PPA"
       ],
       "keywords": "AMD/Xilinx Vivado/Vitis, Intel/Altera Quartus, Lattice Radiant, Yosys, nextpnr, OpenROAD/OpenLane, Genus/Innovus, Design Compiler/Fusion Compiler, PrimeTime",
-      "path": "분야_topics/15-FPGA-ASIC설계_fpga-asic/README.md",
+      "path": "전자컴퓨터공학_ece/15-FPGA-ASIC설계_fpga-asic/README.md",
       "references": [
         "https://openroad.readthedocs.io/en/latest/"
       ],
@@ -380,7 +380,7 @@
         "Arm·RISC-V 실행 구조"
       ],
       "keywords": "Arm Cortex-M/A/R, RISC-V RV32/RV64, x86-64, MIPS, AVR, PicoRV32, Ibex, CVA6, Rocket Chip, BOOM, gem5, QEMU",
-      "path": "분야_topics/16-프로세서구조_arm-riscv/README.md",
+      "path": "전자컴퓨터공학_ece/16-프로세서구조_arm-riscv/README.md",
       "references": [
         "https://docs.riscv.org/",
         "https://developer.arm.com/documentation"
@@ -408,7 +408,7 @@
         "인터럽트·DMA·FreeRTOS"
       ],
       "keywords": "STM32, ESP32/ESP-IDF, Nordic nRF, NXP, TI, Microchip AVR/PIC/SAM, Renesas, RP2040/RP2350, FreeRTOS, Zephyr, ThreadX, RT-Thread",
-      "path": "분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md",
+      "path": "전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/README.md",
       "references": [
         "https://docs.zephyrproject.org/latest/introduction/index.html"
       ],
@@ -434,7 +434,7 @@
         "빌드와 이식"
       ],
       "keywords": "Linux Kernel, U-Boot, Device Tree, Buildroot, Yocto/OpenEmbedded, BusyBox, QEMU, BSP, Drivers",
-      "path": "분야_topics/18-임베디드Linux_embedded-linux/README.md",
+      "path": "전자컴퓨터공학_ece/18-임베디드Linux_embedded-linux/README.md",
       "references": [
         "https://www.buildroot.org/docs.html",
         "https://docs.kernel.org/"
@@ -460,7 +460,7 @@
         "메모리 검사와 오류 주입"
       ],
       "keywords": "OpenOCD, GDB, LLDB, J-Link, ST-Link, pyOCD, probe-rs, JTAG, SWD, SWO, ETM, Saleae, PulseView, Sigrok",
-      "path": "분야_topics/19-시스템디버깅_openocd-debugging/README.md",
+      "path": "전자컴퓨터공학_ece/19-시스템디버깅_openocd-debugging/README.md",
       "references": [
         "https://openocd.org/doc/html/About.html",
         "https://sourceware.org/gdb/documentation/"
@@ -486,7 +486,7 @@
         "네트워크와 온칩 연결"
       ],
       "keywords": "UART, SPI, I2C, I3C, CAN/CAN-FD, USB, Ethernet, PCIe, MIPI, DDR, AXI/AHB/APB, MQTT, Modbus, BLE, Wi-Fi, Zigbee, LoRa",
-      "path": "분야_topics/20-인터페이스통신_interfaces-communications/README.md",
+      "path": "전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/README.md",
       "references": [
         "https://developer.arm.com/documentation",
         "https://docs.zephyrproject.org/latest/introduction/index.html"
@@ -510,7 +510,7 @@
         "필터와 피드백"
       ],
       "keywords": "FFT, FIR/IIR, PID, State Space, LQR/LQG, MPC, Kalman/EKF/UKF, System Identification, SciPy Signal, MATLAB Control",
-      "path": "분야_topics/21-신호처리제어_signals-control/README.md",
+      "path": "전자컴퓨터공학_ece/21-신호처리제어_signals-control/README.md",
       "references": [
         "https://docs.scipy.org/doc/scipy/"
       ],
@@ -536,7 +536,7 @@
         "STM32 GPIO 레지스터 제어"
       ],
       "keywords": "Arduino, Raspberry Pi, STM32 Nucleo, ESP32, BeagleBone, Jetson, ROS 2, MoveIt, Nav2, Gazebo, MuJoCo, Isaac Sim, SLAM",
-      "path": "분야_topics/22-로봇제어_robotics-boards/README.md",
+      "path": "전자컴퓨터공학_ece/22-로봇제어_robotics-boards/README.md",
       "references": [
         "https://docs.ros.org/",
         "https://www.raspberrypi.com/documentation/"
@@ -564,7 +564,7 @@
         "자동미분 예제"
       ],
       "keywords": "PyTorch, TensorFlow/Keras, JAX, scikit-learn, XGBoost, LightGBM, CatBoost, Hugging Face, Lightning, fastai",
-      "path": "분야_topics/23-AI머신러닝_ai-machine-learning/README.md",
+      "path": "전자컴퓨터공학_ece/23-AI머신러닝_ai-machine-learning/README.md",
       "references": [
         "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
         "https://www.tensorflow.org/guide"
@@ -589,7 +589,7 @@
         "처리량과 병목 읽기"
       ],
       "keywords": "NVIDIA, AMD, Intel, Apple GPU, SIMT/SIMD, Cache/VRAM, HBM/GDDR, PCIe/NVLink, Roofline, Vulkan, OpenGL, DirectX",
-      "path": "분야_topics/24-GPU구조_gpu-architecture/README.md",
+      "path": "전자컴퓨터공학_ece/24-GPU구조_gpu-architecture/README.md",
       "references": [
         "https://docs.nvidia.com/cuda/cuda-programming-guide/index.html"
       ],
@@ -612,7 +612,7 @@
         "라이브러리와 직접 작성한 kernel"
       ],
       "keywords": "CUDA, cuBLAS, cuDNN, CUTLASS, Triton, Nsight, ROCm/HIP, SYCL/oneAPI, OpenCL, Metal, OpenMP/OpenACC, TensorRT, OpenVINO",
-      "path": "분야_topics/25-CUDA성능최적화_cuda-performance/README.md",
+      "path": "전자컴퓨터공학_ece/25-CUDA성능최적화_cuda-performance/README.md",
       "references": [
         "https://docs.nvidia.com/cuda/cuda-programming-guide/index.html"
       ],
@@ -635,7 +635,7 @@
         "수정과 비교"
       ],
       "keywords": "OpenAI, Google/DeepMind, Microsoft, Meta, Anthropic, Samsung, DeepSeek, Qwen, Mistral, IBM, NVIDIA, LG, NAVER, Kakao, Upstage, SKT",
-      "path": "분야_topics/26-AI모델-API_open-model-lab/README.md",
+      "path": "전자컴퓨터공학_ece/26-AI모델-API_open-model-lab/README.md",
       "references": [
         "https://huggingface.co/docs",
         "https://developers.openai.com/api/docs/models"
@@ -659,7 +659,7 @@
         "특허와 문헌 관리"
       ],
       "keywords": "arXiv, IEEE, ACM, NeurIPS, ICML, ICLR, CVPR, ISSCC, DAC, DATE, KIPRIS, Google Patents, Zotero, BibTeX",
-      "path": "분야_topics/27-논문코드특허_papers-code-patents/README.md",
+      "path": "전자컴퓨터공학_ece/27-논문코드특허_papers-code-patents/README.md",
       "references": [
         "https://www.wipo.int/en/web/patents",
         "https://huggingface.co/docs"
@@ -675,15 +675,15 @@
     },
     {
       "number": 28,
-      "slug": "28-자동화기술기록_automation-portfolio",
+      "slug": "28-자동화기술기록_automation-documentation",
       "title": "자동화와 기술 기록",
-      "english_title": "Automation & Portfolio",
+      "english_title": "Automation and technical records",
       "sections": [
         "스크립트와 CI",
         "문서 생성 도구"
       ],
       "keywords": "Python, Bash, PowerShell, GitHub Actions, GitLab CI, Docker, Quarto, Jekyll, Hugo, MkDocs, Sphinx, Doxygen, Jupyter Book",
-      "path": "분야_topics/28-자동화기술기록_automation-portfolio/README.md",
+      "path": "전자컴퓨터공학_ece/28-자동화기술기록_automation-documentation/README.md",
       "references": [
         "https://quarto.org/docs/publishing/github-pages.html",
         "https://git-scm.com/book/en/v2"
@@ -707,7 +707,7 @@
         "RF 회로와 안테나"
       ],
       "keywords": "HFSS, CST, ADS, AWR, Sonnet, openEMS, scikit-rf, VNA, Spectrum Analyzer",
-      "path": "분야_topics/29-전자기학-RF_electromagnetics-rf/README.md",
+      "path": "전자컴퓨터공학_ece/29-전자기학-RF_electromagnetics-rf/README.md",
       "references": [
         "https://scikit-rf.readthedocs.io/en/latest/"
       ],
@@ -731,7 +731,7 @@
         "다중 반송파와 다중 안테나"
       ],
       "keywords": "GNU Radio, SDR, USRP, RTL-SDR, OFDM, QAM, MIMO, LDPC, Polar Codes",
-      "path": "분야_topics/30-통신이론무선시스템_communications-wireless/README.md",
+      "path": "전자컴퓨터공학_ece/30-통신이론무선시스템_communications-wireless/README.md",
       "references": [
         "https://www.gnuradio.org/doc/"
       ],
@@ -755,7 +755,7 @@
         "소자와 구동"
       ],
       "keywords": "PLECS, PSIM, LTspice, Simulink, Buck/Boost, LLC, BMS, PMIC",
-      "path": "분야_topics/31-전력전자에너지_power-energy/README.md",
+      "path": "전자컴퓨터공학_ece/31-전력전자에너지_power-energy/README.md",
       "references": [
         "https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html"
       ],
@@ -779,7 +779,7 @@
         "정적·동적 지표와 클록"
       ],
       "keywords": "SAR ADC, Delta-Sigma, DAC, PLL, DLL, CDR, Spectre, Verilog-AMS",
-      "path": "분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/README.md",
+      "path": "전자컴퓨터공학_ece/32-혼성신호-ADC-DAC_mixed-signal-data-converters/README.md",
       "references": [
         "https://www.analog.com/en/resources.html"
       ],
@@ -803,7 +803,7 @@
         "SSD와 신뢰성"
       ],
       "keywords": "SRAM, DRAM, NAND, DDR, LPDDR, GDDR, HBM, NVMe, fio, CXL",
-      "path": "분야_topics/33-메모리저장장치_memory-storage/README.md",
+      "path": "전자컴퓨터공학_ece/33-메모리저장장치_memory-storage/README.md",
       "references": [
         "https://fio.readthedocs.io/en/latest/"
       ],
@@ -827,7 +827,7 @@
         "주소와 데이터 일관성"
       ],
       "keywords": "AXI, AMBA, TileLink, Wishbone, NoC, PCIe, CXL, Chiplet, CHI",
-      "path": "분야_topics/34-SoC연결구조_soc-interconnects/README.md",
+      "path": "전자컴퓨터공학_ece/34-SoC연결구조_soc-interconnects/README.md",
       "references": [
         "https://developer.arm.com/documentation",
         "https://docs.riscv.org/"
@@ -852,7 +852,7 @@
         "PDK와 도구"
       ],
       "keywords": "Cadence, Synopsys, Siemens EDA, Yosys, OpenROAD, OpenLane, KLayout, Magic, Netgen, SKY130, GF180, IHP SG13G2",
-      "path": "분야_topics/35-EDA오픈하드웨어_eda-open-hardware/README.md",
+      "path": "전자컴퓨터공학_ece/35-EDA오픈하드웨어_eda-open-hardware/README.md",
       "references": [
         "https://openroad.readthedocs.io/en/latest/"
       ],
@@ -876,7 +876,7 @@
         "전원과 열"
       ],
       "keywords": "Chiplets, UCIe, 2.5D/3D IC, Interposer, COMSOL, Ansys, Thermal RC, EM/IR",
-      "path": "분야_topics/36-패키징열설계_packaging-thermal/README.md",
+      "path": "전자컴퓨터공학_ece/36-패키징열설계_packaging-thermal/README.md",
       "references": [
         "https://www.comsol.com/comsol-multiphysics"
       ],
@@ -900,7 +900,7 @@
         "장비와 자동 측정"
       ],
       "keywords": "SCPI, PyVISA, Sigrok, PulseView, LabVIEW, NI DAQ, Oscilloscope, VNA",
-      "path": "분야_topics/37-센서계측_sensors-instrumentation/README.md",
+      "path": "전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/README.md",
       "references": [
         "https://pyvisa.readthedocs.io/en/latest/"
       ],
@@ -924,7 +924,7 @@
         "부팅과 실행의 신뢰"
       ],
       "keywords": "TLS, AES, RSA, ECC, Secure Boot, TrustZone, TPM, Sanitizers, Fuzzing, CodeQL",
-      "path": "분야_topics/38-보안암호하드웨어신뢰_security-cryptography/README.md",
+      "path": "전자컴퓨터공학_ece/38-보안암호하드웨어신뢰_security-cryptography/README.md",
       "references": [
         "https://docs.openssl.org/",
         "https://docs.kernel.org/"
@@ -949,7 +949,7 @@
         "도구와 실행 방식"
       ],
       "keywords": "LLVM, MLIR, GCC, Clang, Rust, Go, Java/JVM, CPython, Julia, Tcl, SKILL",
-      "path": "분야_topics/39-컴파일러언어런타임_compilers-languages/README.md",
+      "path": "전자컴퓨터공학_ece/39-컴파일러언어런타임_compilers-languages/README.md",
       "references": [
         "https://llvm.org/docs/",
         "https://gcc.gnu.org/onlinedocs/gcc/Standards.html"
@@ -974,7 +974,7 @@
         "파이프라인과 검색"
       ],
       "keywords": "SQLite, PostgreSQL, MySQL, DuckDB, Redis, Parquet, Arrow, Spark, Kafka, FAISS, pgvector",
-      "path": "분야_topics/40-데이터베이스데이터공학_databases-data-engineering/README.md",
+      "path": "전자컴퓨터공학_ece/40-데이터베이스데이터공학_databases-data-engineering/README.md",
       "references": [
         "https://www.postgresql.org/docs/current/tutorial.html"
       ],
@@ -998,7 +998,7 @@
         "배포와 운영"
       ],
       "keywords": "AWS, Azure, Google Cloud, Docker, Kubernetes, Terraform, Prometheus, Grafana, OpenTelemetry",
-      "path": "분야_topics/41-클라우드분산시스템_cloud-distributed/README.md",
+      "path": "전자컴퓨터공학_ece/41-클라우드분산시스템_cloud-distributed/README.md",
       "references": [
         "https://kubernetes.io/docs/concepts/"
       ],
@@ -1022,7 +1022,7 @@
         "GPU와 분산 작업"
       ],
       "keywords": "OpenMP, MPI, OpenACC, SIMD, AVX/NEON, NCCL, Slurm, Ray, Dask, perf",
-      "path": "분야_topics/42-고성능병렬계산_hpc-parallel/README.md",
+      "path": "전자컴퓨터공학_ece/42-고성능병렬계산_hpc-parallel/README.md",
       "references": [
         "https://www.mpi-forum.org/docs/",
         "https://www.openmp.org/specifications/"
@@ -1047,7 +1047,7 @@
         "인식 과제와 구조"
       ],
       "keywords": "OpenCV, torchvision, timm, ResNet, ViT, YOLO, SAM, DINO, Detectron2, MMDetection, Kornia",
-      "path": "분야_topics/43-컴퓨터비전_computer-vision/README.md",
+      "path": "전자컴퓨터공학_ece/43-컴퓨터비전_computer-vision/README.md",
       "references": [
         "https://docs.opencv.org/4.x/d9/df8/tutorial_root.html"
       ],
@@ -1071,7 +1071,7 @@
         "여러 입력을 함께 다루기"
       ],
       "keywords": "BERT, T5, GPT, Whisper, wav2vec, CLIP, LLaVA, Transformers, torchaudio, SentencePiece",
-      "path": "분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/README.md",
+      "path": "전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/README.md",
       "references": [
         "https://huggingface.co/docs"
       ],
@@ -1095,7 +1095,7 @@
         "자원 사용을 줄이는 방법"
       ],
       "keywords": "PEFT, TRL, Accelerate, DeepSpeed, FSDP, DDP, MLflow, W&B, TensorBoard, Optuna, bitsandbytes",
-      "path": "분야_topics/45-AI학습최적화_ai-training-optimization/README.md",
+      "path": "전자컴퓨터공학_ece/45-AI학습최적화_ai-training-optimization/README.md",
       "references": [
         "https://huggingface.co/docs/peft/"
       ],
@@ -1120,7 +1120,7 @@
         "평가 항목"
       ],
       "keywords": "OpenAI APIs, Claude API, Gemini API, LangChain, LlamaIndex, DSPy, MCP, lm-evaluation-harness, Ragas, promptfoo",
-      "path": "분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md",
+      "path": "전자컴퓨터공학_ece/46-AI응용에이전트평가_ai-agents-evaluation/README.md",
       "references": [
         "https://developers.openai.com/api/docs/models",
         "https://huggingface.co/docs"
@@ -1146,7 +1146,7 @@
         "경량화와 측정"
       ],
       "keywords": "ONNX Runtime, TensorRT, OpenVINO, LiteRT/TFLite, TFLite Micro, CMSIS-NN, ExecuTorch, TVM, Jetson, Coral",
-      "path": "분야_topics/47-엣지AI-TinyML_edge-tinyml/README.md",
+      "path": "전자컴퓨터공학_ece/47-엣지AI-TinyML_edge-tinyml/README.md",
       "references": [
         "https://onnx.ai/onnx/"
       ],
@@ -1170,7 +1170,7 @@
         "분석과 진단"
       ],
       "keywords": "pytest, unittest, GoogleTest, Catch2, CTest, Hypothesis, Valgrind, ASan/UBSan/TSan, clang-tidy, Ruff",
-      "path": "분야_topics/48-소프트웨어설계품질_software-quality/README.md",
+      "path": "전자컴퓨터공학_ece/48-소프트웨어설계품질_software-quality/README.md",
       "references": [
         "https://docs.pytest.org/en/stable/"
       ],
@@ -1194,7 +1194,7 @@
         "광선과 재질"
       ],
       "keywords": "OpenGL, Vulkan, DirectX, WebGPU, GLSL, HLSL, Blender, Mitsuba, PBRT, Unreal, Unity",
-      "path": "분야_topics/49-그래픽스렌더링_graphics-simulation/README.md",
+      "path": "전자컴퓨터공학_ece/49-그래픽스렌더링_graphics-simulation/README.md",
       "references": [
         "https://pbr-book.org/"
       ],
@@ -1218,7 +1218,7 @@
         "해석 대상과 검증"
       ],
       "keywords": "COMSOL, Ansys, HFSS, CST, OpenFOAM, FEniCS, MEEP, openEMS, LAMMPS",
-      "path": "분야_topics/50-과학시뮬레이션_physical-scientific-simulation/README.md",
+      "path": "전자컴퓨터공학_ece/50-과학시뮬레이션_physical-scientific-simulation/README.md",
       "references": [
         "https://fenicsproject.org/documentation/"
       ],
@@ -1242,7 +1242,7 @@
         "내장 테스트와 양산"
       ],
       "keywords": "DFT, Scan, ATPG, MBIST/LBIST, ATE, JTAG/Boundary Scan, Tessent, TestMAX, Modus",
-      "path": "분야_topics/51-반도체테스트제조_test-manufacturing/README.md",
+      "path": "전자컴퓨터공학_ece/51-반도체테스트제조_test-manufacturing/README.md",
       "references": [
         "https://eda.sw.siemens.com/en-US/ic/tessent/"
       ],
@@ -1266,7 +1266,7 @@
         "화면과 서버"
       ],
       "keywords": "FastAPI, Flask, Django, Node.js, Spring, React, Vue, Svelte, TypeScript, Qt/PySide, Electron, Streamlit, Gradio",
-      "path": "분야_topics/52-Web-API응용_web-api-applications/README.md",
+      "path": "전자컴퓨터공학_ece/52-Web-API응용_web-api-applications/README.md",
       "references": [
         "https://fastapi.tiangolo.com/"
       ],
@@ -1290,7 +1290,7 @@
         "자원과 사용자 경험"
       ],
       "keywords": "Kotlin, Java, Android, Swift, iOS, Flutter, Dart, React Native, Kotlin Multiplatform, Core ML",
-      "path": "분야_topics/53-모바일크로스플랫폼_mobile-crossplatform/README.md",
+      "path": "전자컴퓨터공학_ece/53-모바일크로스플랫폼_mobile-crossplatform/README.md",
       "references": [
         "https://developer.android.com/guide"
       ],
@@ -1314,7 +1314,7 @@
         "빛, 양자, 생체 인터페이스"
       ],
       "keywords": "SNN, Neuromorphic, Event Camera, Quantum, Photonics, Compute-in-Memory, Memristor, Wearables",
-      "path": "분야_topics/54-차세대소자컴퓨팅_research-frontiers/README.md",
+      "path": "전자컴퓨터공학_ece/54-차세대소자컴퓨팅_research-frontiers/README.md",
       "references": [
         "https://snntorch.readthedocs.io/en/latest/"
       ],
@@ -1327,29 +1327,6 @@
       "summary_en": "New computing architectures explore different approaches to the limits of data movement, power, connectivity, and physical implementation. Comparing results across fields requires knowing what was computed and which costs were included.",
       "category_ko": "디지털 설계·구조·제조",
       "category_en": "Digital design, architecture and manufacturing"
-    },
-    {
-      "number": 55,
-      "slug": "55-지원시험면접_applications-assessments",
-      "title": "지원·시험·면접",
-      "english_title": "Applications, Assessments & Interviews",
-      "sections": [
-        "기업별 전형 기록",
-        "코딩테스트",
-        "연락"
-      ],
-      "keywords": "국민대학교 / Kookmin University, 기업별 전형 / Company Applications, Resume/CV, 코딩테스트 / Coding Tests, 역량검사 / Competency Assessments",
-      "path": "소개_about/지원기록_APPLICATIONS.md",
-      "references": [
-        "https://school.programmers.co.kr/learn/challenges"
-      ],
-      "english_sections": [
-        "Applications and assessments"
-      ],
-      "summary_ko": "자료구조·알고리즘 설명과 문제 풀이 기록은 [알고리즘과 코딩테스트](../08-problem-solving/README.md)에 정리합니다.",
-      "summary_en": "Data structures, algorithms, and problem-solving records are collected in [Algorithms and coding tests](../08-problem-solving/README.md).",
-      "category_ko": "작성자의 지원 기록",
-      "category_en": "Author application records"
     },
     {
       "number": 56,
@@ -1367,7 +1344,7 @@
         "Heat conduction and diffusion"
       ],
       "keywords": "Mechanics, Energy, Oscillation, Heat Conduction, Diffusion, Conservation Laws",
-      "path": "분야_topics/56-물리기초_physics-foundations/README.md",
+      "path": "전자컴퓨터공학_ece/56-물리기초_physics-foundations/README.md",
       "references": [
         "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
         "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node116.html"
@@ -1511,7 +1488,7 @@
         "보조공학과 임상 평가"
       ],
       "keywords": "Medical AI, MRI, OCT, Neuroprosthetics, Rehabilitation, Clinical Evidence, AI Drug Discovery",
-      "path": "분야_topics/62-의공학의료AI_medical-engineering/README.md",
+      "path": "전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md",
       "references": [
         "https://www.nibib.nih.gov/science-education/science-topics/magnetic-resonance-imaging-mri",
         "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/statistical-guidance-reporting-results-studies-evaluating-diagnostic-tests-guidance-industry-and-fda",
@@ -1750,32 +1727,30 @@
       "title": "직무와 실무 기술",
       "english_title": "Roles and engineering practice",
       "sections": [
-        "삼성 DX·DS와 SK하이닉스의 직무",
-        "회로·펌웨어·칩 설계와 평가",
-        "공정·설비·패키지·메모리 검사",
+        "전자제품·시스템 개발",
+        "반도체 설계·제조와 메모리 제품·양산",
+        "회로·펌웨어·칩·공정·설비·패키지 검사",
         "AI·데이터·제조 IT",
-        "C·Python의 실행 위치와 결과 판정",
-        "기반 지식과 반도체 산업"
+        "C·C++·Python의 실행 위치와 결과 판정",
+        "품질·생산·인프라와 업무 인계"
       ],
-      "keywords": "job description, Samsung DX, Samsung DS, SK hynix, C, C++, Python, RTL, DFT, ATE, PVT, validation, semiconductor, firmware, process, equipment, quality, manufacturing IT",
+      "keywords": "engineering roles, product development, circuit design, firmware, semiconductor, memory, manufacturing, C, C++, Python, RTL, DFT, ATE, PVT, validation, process, equipment, quality, manufacturing IT",
       "path": "직무와실무기술_job-practice/README.md",
       "references": [
-        "https://www.samsungcareers.com/",
-        "https://talent.skhynix.com/hub",
         "https://gcc.gnu.org/onlinedocs/gcc/Volatiles.html",
         "https://pyvisa.readthedocs.io/en/latest/introduction/communication.html",
         "https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm"
       ],
       "english_sections": [
-        "Samsung DX/DS and SK hynix roles",
-        "Circuits, firmware, chip design and characterization",
-        "Process, equipment, packaging and memory tests",
+        "Electronic products and system development",
+        "Semiconductor design, manufacturing and memory engineering",
+        "Circuit, firmware, chip, process, equipment and packaging tests",
         "AI, data and manufacturing IT",
-        "C/Python execution contexts and test decisions",
-        "Foundations and the semiconductor value chain"
+        "C/C++/Python execution contexts and test decisions",
+        "Quality, production, infrastructure and work handoffs"
       ],
-      "summary_ko": "제공된 직무기술서의 업무·필수·우대 조건을 구분하고 검사 원리, 언어별 사용 위치, 조건별 판정과 학습 경로를 연결합니다.",
-      "summary_en": "Connects supplied job descriptions to test principles, programming tasks, decision rules and study paths, distinguishing role duties, requirements and preferences.",
+      "summary_ko": "전자제품·반도체·메모리의 개발·제조·검사·운영에서 다루는 대상, 언어별 실행 위치, 판정과 결과물을 연결합니다.",
+      "summary_en": "Connects product, semiconductor and memory development, manufacturing, tests and operations to technical work, programming roles, decisions and evidence.",
       "category_ko": "직무와 실무 기술",
       "category_en": "Roles and engineering practice"
     },
@@ -1822,7 +1797,7 @@
         "https://developers.openai.com/api/docs/models/gpt-oss-20b"
       ],
       "description_en": "Examines the gpt-oss-20b MoE, Harmony format and MXFP4 inference requirements without inferring private GPT architectures.",
-      "path": "AI모델실험_model-lab/models/openai.md"
+      "path": "AI모델과수치실험_ai-models/models/openai.md"
     },
     {
       "name": "Google / DeepMind",
@@ -1831,7 +1806,7 @@
         "https://ai.google.dev/gemma/docs/core/model_card_3"
       ],
       "description_en": "Examines the text-only Gemma 3 1B IT release, its training-data description and 32k context, separately from larger multimodal Gemma variants and Gemini services.",
-      "path": "AI모델실험_model-lab/models/google.md"
+      "path": "AI모델과수치실험_ai-models/models/google.md"
     },
     {
       "name": "Microsoft",
@@ -1840,7 +1815,7 @@
         "https://huggingface.co/microsoft/Phi-4-mini-instruct"
       ],
       "description_en": "Explains Phi-4-mini-instruct synthetic data, SFT, DPO and inference conditions, separating context capacity from retrieval accuracy.",
-      "path": "AI모델실험_model-lab/models/microsoft.md"
+      "path": "AI모델과수치실험_ai-models/models/microsoft.md"
     },
     {
       "name": "Meta",
@@ -1849,7 +1824,7 @@
         "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
       ],
       "description_en": "Explains Llama 3.2 1B Instruct GQA, instruction tuning, languages and release terms, distinguishing original and official quantized variants.",
-      "path": "AI모델실험_model-lab/models/meta.md"
+      "path": "AI모델과수치실험_ai-models/models/meta.md"
     },
     {
       "name": "Anthropic",
@@ -1858,7 +1833,7 @@
         "https://platform.claude.com/docs/en/models/sonnet-5-5/overview"
       ],
       "description_en": "Examines Claude Sonnet 5.5 API content blocks, budgets and completion handling without inferring undisclosed weights or training recipes.",
-      "path": "AI모델실험_model-lab/models/anthropic.md"
+      "path": "AI모델과수치실험_ai-models/models/anthropic.md"
     },
     {
       "name": "Samsung",
@@ -1867,7 +1842,7 @@
         "https://github.com/SamsungSAILMontreal/TinyRecursiveModels"
       ],
       "description_en": "Explains Samsung SAIL Montréal TRM state recursion and gradient boundaries, separately from the educational scalar experiment.",
-      "path": "AI모델실험_model-lab/models/samsung-trm/README.md"
+      "path": "AI모델과수치실험_ai-models/models/samsung-trm/README.md"
     },
     {
       "name": "DeepSeek",
@@ -1876,7 +1851,7 @@
         "https://github.com/deepseek-ai/DeepSeek-R1"
       ],
       "description_en": "Explains the Qwen-based R1-Distill-Qwen-1.5B student and generated-solution training, separately from the original R1 MoE and reinforcement learning.",
-      "path": "AI모델실험_model-lab/models/deepseek-r1-distill/README.md"
+      "path": "AI모델과수치실험_ai-models/models/deepseek-r1-distill/README.md"
     },
     {
       "name": "Alibaba / Qwen",
@@ -1885,7 +1860,7 @@
         "https://huggingface.co/Qwen/Qwen3-0.6B"
       ],
       "description_en": "Examines Qwen3-0.6B dense architecture, thinking modes, KV heads and explicit head dimension; cache arithmetic is not an inference benchmark.",
-      "path": "AI모델실험_model-lab/models/qwen.md"
+      "path": "AI모델과수치실험_ai-models/models/qwen.md"
     },
     {
       "name": "Mistral AI",
@@ -1894,7 +1869,7 @@
         "https://huggingface.co/mistralai/Ministral-8B-Instruct-2410"
       ],
       "description_en": "Explains Ministral 8B 2410 interleaved attention, instruction tuning, runtime support and release-specific research license.",
-      "path": "AI모델실험_model-lab/models/mistral.md"
+      "path": "AI모델과수치실험_ai-models/models/mistral.md"
     },
     {
       "name": "IBM",
@@ -1903,7 +1878,7 @@
         "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct"
       ],
       "description_en": "Explains Granite 3.3 2B Instruct lineage, synthetic tasks and reasoning tags, separating retrieval success from grounded answering.",
-      "path": "AI모델실험_model-lab/models/ibm.md"
+      "path": "AI모델과수치실험_ai-models/models/ibm.md"
     },
     {
       "name": "NVIDIA",
@@ -1912,7 +1887,7 @@
         "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2"
       ],
       "description_en": "Examines Nemotron Nano 9B v2 Mamba-2, MLP and attention architecture, separating state, KV cache, thinking budget and runtime.",
-      "path": "AI모델실험_model-lab/models/nvidia.md"
+      "path": "AI모델과수치실험_ai-models/models/nvidia.md"
     },
     {
       "name": "Apple",
@@ -1921,7 +1896,7 @@
         "https://ml-explore.github.io/mlx/build/html/usage/lazy_evaluation.html"
       ],
       "description_en": "MLX is an array and machine-learning framework, not a model. The note covers lazy evaluation, shared memory and timing boundaries.",
-      "path": "AI모델실험_model-lab/models/apple.md"
+      "path": "AI모델과수치실험_ai-models/frameworks/apple-mlx.md"
     },
     {
       "name": "Amazon / AWS",
@@ -1930,7 +1905,7 @@
         "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html"
       ],
       "description_en": "Examines Nova Micro v1 text input and Bedrock APIs, separating model, service and Converse interface from undisclosed internals.",
-      "path": "AI모델실험_model-lab/models/amazon.md"
+      "path": "AI모델과수치실험_ai-models/models/amazon.md"
     },
     {
       "name": "Cohere",
@@ -1939,7 +1914,7 @@
         "https://huggingface.co/CohereLabs/aya-expanse-8b"
       ],
       "description_en": "Explains Aya Expanse 8B autoregression, multilingual preference training and model merging, separately from commercial Command APIs.",
-      "path": "AI모델실험_model-lab/models/cohere.md"
+      "path": "AI모델과수치실험_ai-models/models/cohere.md"
     },
     {
       "name": "xAI",
@@ -1948,7 +1923,7 @@
         "https://github.com/xai-org/grok-1"
       ],
       "description_en": "Examines the public Grok-1 MoE specifications and JAX reference implementation without transferring them to current Grok services.",
-      "path": "AI모델실험_model-lab/models/xai.md"
+      "path": "AI모델과수치실험_ai-models/models/xai.md"
     },
     {
       "name": "Baidu",
@@ -1957,7 +1932,7 @@
         "https://huggingface.co/baidu/ERNIE-4.5-0.3B-PT"
       ],
       "description_en": "Explains ERNIE 4.5 0.3B PT dense text architecture and PyTorch weight format, separately from larger multimodal MoE variants.",
-      "path": "AI모델실험_model-lab/models/baidu.md"
+      "path": "AI모델과수치실험_ai-models/models/baidu.md"
     },
     {
       "name": "Tencent",
@@ -1966,7 +1941,7 @@
         "https://github.com/Tencent-Hunyuan/HunyuanVideo"
       ],
       "description_en": "Explains HunyuanVideo stream fusion, 3D VAE and text conditioning, distinguishing weight IDs, code repositories and evaluation variants.",
-      "path": "AI모델실험_model-lab/models/tencent.md"
+      "path": "AI모델과수치실험_ai-models/models/tencent.md"
     },
     {
       "name": "Z.ai",
@@ -1975,7 +1950,7 @@
         "https://huggingface.co/zai-org/GLM-4.5-Air"
       ],
       "description_en": "Explains GLM-4.5-Air total and active MoE parameters and thinking modes, without importing later-version parser behavior.",
-      "path": "AI모델실험_model-lab/models/zai.md"
+      "path": "AI모델과수치실험_ai-models/models/zai.md"
     },
     {
       "name": "Moonshot AI",
@@ -1984,7 +1959,7 @@
         "https://huggingface.co/moonshotai/Kimi-K2-Instruct"
       ],
       "description_en": "Examines original Kimi-K2-Instruct expert routing, MLA and tool-call linkage, separately from later K2 Thinking releases.",
-      "path": "AI모델실험_model-lab/models/moonshot.md"
+      "path": "AI모델과수치실험_ai-models/models/moonshot.md"
     },
     {
       "name": "Stability AI",
@@ -1993,7 +1968,7 @@
         "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium"
       ],
       "description_en": "Explains SD 3.5 Medium MMDiT-X, three text encoders, VAE and mixed-resolution training, noting inconsistencies in the card.",
-      "path": "AI모델실험_model-lab/models/stability.md"
+      "path": "AI모델과수치실험_ai-models/models/stability.md"
     },
     {
       "name": "Black Forest Labs",
@@ -2002,7 +1977,7 @@
         "https://huggingface.co/black-forest-labs/FLUX.1-schnell"
       ],
       "description_en": "Explains FLUX.1-schnell rectified flow and few-step distillation, separately from dev and pro variants and their terms.",
-      "path": "AI모델실험_model-lab/models/bfl.md"
+      "path": "AI모델과수치실험_ai-models/models/bfl.md"
     },
     {
       "name": "Hugging Face",
@@ -2011,7 +1986,7 @@
         "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct"
       ],
       "description_en": "Separates the Hub platform and Transformers tooling from HuggingFaceTB SmolLM2 135M Instruct and its pretraining, SFT and DPO.",
-      "path": "AI모델실험_model-lab/models/huggingface.md"
+      "path": "AI모델과수치실험_ai-models/models/huggingface.md"
     },
     {
       "name": "LG AI Research",
@@ -2020,7 +1995,7 @@
         "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B"
       ],
       "description_en": "Explains EXAONE 4.0 1.2B GQA, QK normalization and thinking mode, separately from 32B-specific hybrid attention.",
-      "path": "AI모델실험_model-lab/models/lg.md"
+      "path": "AI모델과수치실험_ai-models/models/lg.md"
     },
     {
       "name": "NAVER",
@@ -2029,7 +2004,7 @@
         "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B"
       ],
       "description_en": "Explains HyperCLOVAX SEED Text Instruct 1.5B pretraining, rejection-sampling fine-tuning, SFT and 16k context, separately from the full service.",
-      "path": "AI모델실험_model-lab/models/naver.md"
+      "path": "AI모델과수치실험_ai-models/models/naver.md"
     },
     {
       "name": "Kakao",
@@ -2038,7 +2013,7 @@
         "https://huggingface.co/kakaocorp/kanana-1.5-2.1b-instruct-2505"
       ],
       "description_en": "Examines Kanana 1.5 2.1B 2505 configuration, post-training and YaRN extension, distinguishing implementation classes from weight lineage.",
-      "path": "AI모델실험_model-lab/models/kakao.md"
+      "path": "AI모델과수치실험_ai-models/models/kakao.md"
     },
     {
       "name": "Upstage",
@@ -2047,7 +2022,7 @@
         "https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0"
       ],
       "description_en": "Explains SOLAR 10.7B Instruct v1 DUS, continued pretraining, SFT and DPO, distinguishing its single-turn use and terms from Base.",
-      "path": "AI모델실험_model-lab/models/upstage.md"
+      "path": "AI모델과수치실험_ai-models/models/upstage.md"
     },
     {
       "name": "SK Telecom",
@@ -2056,7 +2031,7 @@
         "https://huggingface.co/skt/A.X-4.0-Light"
       ],
       "description_en": "Explains Qwen2.5-based Korean adaptation and the 16,384 context of A.X 4.0 Light, separately from the 72B family tables.",
-      "path": "AI모델실험_model-lab/models/skt.md"
+      "path": "AI모델과수치실험_ai-models/models/skt.md"
     },
     {
       "name": "KT",
@@ -2065,7 +2040,7 @@
         "https://huggingface.co/K-intelligence/Midm-2.0-Mini-Instruct"
       ],
       "description_en": "Explains Mi:dm 2.0 Mini dense architecture, pruning and distillation from Base, separately from the local probability-regression example.",
-      "path": "AI모델실험_model-lab/models/kt.md"
+      "path": "AI모델과수치실험_ai-models/models/kt.md"
     },
     {
       "name": "NCSoft",
@@ -2074,7 +2049,7 @@
         "https://huggingface.co/NCSOFT/Llama-VARCO-8B-Instruct"
       ],
       "description_en": "Explains Llama VARCO 8B continued pretraining and Korean SFT/DPO on Meta Llama 3.1, distinguishing original authorship and adaptation.",
-      "path": "AI모델실험_model-lab/models/ncsoft.md"
+      "path": "AI모델과수치실험_ai-models/models/ncsoft.md"
     }
   ],
   "secondary_languages": [
@@ -2238,13 +2213,6 @@
       "title_en": "Biomedical engineering and medical AI",
       "area_numbers": [
         62
-      ]
-    },
-    {
-      "title_ko": "작성자의 지원 기록",
-      "title_en": "Author application records",
-      "area_numbers": [
-        55
       ]
     }
   ]
