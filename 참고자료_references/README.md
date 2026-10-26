@@ -13,7 +13,7 @@
 | 심화 학습 | [심화 출처](심화출처_ADVANCED_SOURCES.md) |
 | 추론·인문사회·예술 | [추론 출처](추론출처_REASONING_SOURCES.md) |
 
-각 목록은 해당 글에서 사용한 자료를 연결합니다. 동일한 글이 여러 학습 경로에 속할 수 있습니다. [기초 계산의 검증 범위](../공학기초_foundations/검증기록_VERIFICATION.md)와 [AI 모델의 공식 자료](../AI모델실험_model-lab/PROVIDERS.md)도 함께 보실 수 있습니다.
+각 목록은 해당 글에서 사용한 자료를 연결합니다. 동일한 글이 여러 학습 경로에 속할 수 있습니다. [기초 계산의 검증 범위](../공학기초_foundations/검증기록_VERIFICATION.md)와 [AI 모델의 공식 자료](../AI모델과수치실험_ai-models/PROVIDERS.md)도 함께 보실 수 있습니다.
 
 [언어이해·추리논증의 평가 범위와 출처](../언어이해와추리논증_reading-reasoning/출처와평가범위_SOURCES.md)는 독해·논증 학습과 공식 평가 설명을 연결합니다.
 

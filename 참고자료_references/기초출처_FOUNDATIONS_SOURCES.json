@@ -3,7 +3,7 @@
   "review_date": "2026-10-19",
   "articles": [
     {
-      "path": "분야_topics/04-c-cpp-python/해설_notes/비트에서수까지_numbers-and-quantization.md",
+      "path": "전자컴퓨터공학_ece/04-c-cpp-python/해설_notes/비트에서수까지_numbers-and-quantization.md",
       "title": "비트에서 수까지: 정수, 부동소수점, 고정소수점",
       "reference_urls": [
         "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/integers-int/int32-c/",
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "path": "분야_topics/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md",
+      "path": "전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md",
       "title": "미분방정식에서 수치해로 | From differential equations to numerical solutions",
       "reference_urls": [
         "https://math.mit.edu/icg/resources/notes330.pdf",
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "path": "분야_topics/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md",
+      "path": "전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md",
       "title": "선형대수와 최소제곱 | Linear algebra and least squares",
       "reference_urls": [
         "https://ee263.stanford.edu/archive/ls.pdf",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "path": "분야_topics/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md",
+      "path": "전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md",
       "title": "확률, 평균, 추정의 불확실성 | Probability, means, and uncertainty in estimation",
       "reference_urls": [
         "https://itl.nist.gov/div898/handbook/prc/section1/prc14.htm",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "path": "분야_topics/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md",
+      "path": "전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md",
       "title": "단위, 차원, 측정 불확도 | Units, dimensions, and measurement uncertainty",
       "reference_urls": [
         "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/mit8_01scs22_chapter2.pdf",
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "path": "분야_topics/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md",
+      "path": "전자컴퓨터공학_ece/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md",
       "title": "같은 주소, 다른 메모리: 프로세스·가상 메모리·동시성",
       "reference_urls": [
         "https://docs.kernel.org/core-api/wrappers/memory-barriers.html",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "path": "분야_topics/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md",
+      "path": "전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md",
       "title": "RC·RLC: 회로 법칙에서 시간·주파수 응답까지",
       "reference_urls": [
         "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/34dd2fd3821b725a8b2191558673296b_6002_l15.pdf",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "path": "분야_topics/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md",
+      "path": "전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md",
       "title": "MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계",
       "reference_urls": [
         "https://rfic.eecs.berkeley.edu/courses/ee240sp06/pdf/lect3.pdf",
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "path": "분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md",
+      "path": "전자컴퓨터공학_ece/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md",
       "title": "FSM과 FIFO: 요청과 실제 전송을 구분하기",
       "reference_urls": [
         "https://docs.amd.com/r/en-US/pg327-emb-fifo-gen/Independent-Clocks-Block-RAM-and-Distributed-RAM",
@@ -84,7 +84,7 @@
       ]
     },
     {
-      "path": "분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md",
+      "path": "전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md",
       "title": "CPU와 장치가 같은 데이터를 다룰 때: MMIO, 인터럽트, DMA",
       "reference_urls": [
         "https://docs.espressif.com/projects/esp-idf/en/v5.5.5/esp32p4/api-reference/system/mm_sync.html",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "path": "분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md",
+      "path": "전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md",
       "title": "바이트가 메시지가 되려면: UART, 프레이밍과 CRC",
       "reference_urls": [
         "https://software-dl.ti.com/C2000/docs/C2000_driverlib_api_guide/f28p65x/build/html/modules/uart.html",
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "path": "분야_topics/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md",
+      "path": "전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md",
       "title": "피드백 제어: 오차를 줄이는 힘에도 한계가 있습니다",
       "reference_urls": [
         "https://courses.grainger.illinois.edu/ece486/sp2025/documentation/handbook/lec21.html",
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "path": "분야_topics/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md",
+      "path": "전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md",
       "title": "샘플링과 aliasing: 숫자로 바꾼 뒤에는 되돌릴 수 없는 정보",
       "reference_urls": [
         "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/8708ec068ebdea2c4ee2f38fad39fb83_MITRES_6_007S11_lec16.pdf",
@@ -120,7 +120,7 @@
       ]
     },
     {
-      "path": "분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md",
+      "path": "전자컴퓨터공학_ece/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md",
       "title": "미분에서 학습까지: 모델이 바뀌는 이유",
       "reference_urls": [
         "https://cs231n.github.io/neural-networks-3/",
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "path": "분야_topics/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md",
+      "path": "전자컴퓨터공학_ece/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md",
       "title": "계산 병목과 데이터 대기: Roofline과 병렬화",
       "reference_urls": [
         "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html",
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "path": "분야_topics/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md",
+      "path": "전자컴퓨터공학_ece/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md",
       "title": "전송선과 반사: 배선도 신호를 저장하고 전달합니다",
       "reference_urls": [
         "https://www.analog.com/en/resources/technical-articles/interfacing-highspeed-signals.html",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "path": "분야_topics/32-혼성신호-ADC-DAC_mixed-signal-data-converters/해설_notes/ADC양자화_adc-quantization.md",
+      "path": "전자컴퓨터공학_ece/32-혼성신호-ADC-DAC_mixed-signal-data-converters/해설_notes/ADC양자화_adc-quantization.md",
       "title": "ADC 양자화: 비트 수와 정확도를 구분하기",
       "reference_urls": [
         "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf",
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "path": "분야_topics/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md",
+      "path": "전자컴퓨터공학_ece/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md",
       "title": "메모리 지역성과 캐시: 평균 지연과 대역폭을 나눠 보기",
       "reference_urls": [
         "https://developer.nvidia.com/blog/unlock-gpu-performance-global-memory-access-in-cuda/",
@@ -164,7 +164,7 @@
       ]
     },
     {
-      "path": "분야_topics/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md",
+      "path": "전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md",
       "title": "계측: 숫자를 읽는 것에서 믿을 수 있는 결과로",
       "reference_urls": [
         "https://download.tek.com/document/LCHR_E-Handbook_071712.pdf",
@@ -175,7 +175,7 @@
       ]
     },
     {
-      "path": "분야_topics/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md",
+      "path": "전자컴퓨터공학_ece/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md",
       "title": "오류를 찾는 것과 공격을 막는 것: 신뢰성·보안의 경계",
       "reference_urls": [
         "https://csrc.nist.gov/pubs/sp/800/193/final",
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "path": "분야_topics/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md",
+      "path": "전자컴퓨터공학_ece/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md",
       "title": "C 코드가 실행되기까지: 컴파일, 링크, 리셋과 main",
       "reference_urls": [
         "https://github.com/ARM-software/CMSIS_6/blob/main/CMSIS/Documentation/Doxygen/Core/src/core_startup_c.md",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "path": "분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md",
+      "path": "전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md",
       "title": "Attention: 필요한 정보를 가중합으로 모으기",
       "reference_urls": [
         "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf",
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "path": "분야_topics/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md",
+      "path": "전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md",
       "title": "열전도와 확산 | Heat conduction and diffusion",
       "reference_urls": [
         "https://mbd.pages.rwth-aachen.de/courses/cmm/content/script/chapters/heatequation.html",
@@ -211,7 +211,7 @@
       ]
     },
     {
-      "path": "분야_topics/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md",
+      "path": "전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md",
       "title": "역학, 에너지, 진동 | Mechanics, energy, and oscillation",
       "reference_urls": [
         "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/mit8_01scs22_chapter23.pdf",
