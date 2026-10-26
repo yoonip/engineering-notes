@@ -1,0 +1,154 @@
+{
+  "id": "civil-indoor-robot-se2-frames",
+  "title": "민간 실내 이동로봇의 센서·차체·지도 좌표 변환",
+  "language": "C++17",
+  "entry": "main",
+  "expected_marker": "PASS robot-frames ",
+  "purpose": "정적 수치 모델의 좌표·역변환·합성 검사",
+  "units": {
+    "translation": "meter",
+    "angle": "radian",
+    "degree_input": "radians() explicit conversion",
+    "axes": "body x forward,y left,z up; planar yaw positive counter-clockwise"
+  },
+  "transform_convention": "T_A_B maps coordinates of a point in frame B into frame A; p_A=R(yaw_AB)p_B+t_AB",
+  "example": {
+    "T_base_sensor": {
+      "x_m": 0.2,
+      "y_m": 0.0,
+      "yaw_deg": 90
+    },
+    "T_map_base": {
+      "x_m": 2.0,
+      "y_m": 3.0,
+      "yaw_deg": 90
+    },
+    "point_sensor_m": [
+      1.0,
+      0.0
+    ],
+    "point_base_m": [
+      0.2,
+      1.0
+    ],
+    "point_map_m": [
+      1.0,
+      3.2
+    ]
+  },
+  "tolerance": {
+    "absolute": 1e-10,
+    "relative": 1e-10,
+    "rule": "abs(a-b)<=absolute+relative*max(abs(a),abs(b)); scalar units follow compared quantity"
+  },
+  "checks": {
+    "checks": 9526,
+    "inverse_points": 105,
+    "composition_pairs": 441,
+    "composition_points": 2205,
+    "max_error_m": 2.512e-15
+  },
+  "tools": {
+    "compiler": "clang version 21.1.0\nTarget: x86_64-unknown-windows-gnu\nThread model: posix\nInstalledDir: C:/Users/test2/Documents/ChatGPT/코딩/tmp/c-compiler/ziglang"
+  },
+  "results": [
+    {
+      "name": "normal",
+      "expected_returncode": 0,
+      "actual_returncode": 0,
+      "stdout": "TRACE base=(0.200000,1.000000) map=(1.000000,3.200000)\nPASS robot-frames checks=9526 inverse_points=105 composition_pairs=441 composition_points=2205 max_error_m=2.512e-15\n",
+      "stderr": "",
+      "checks": {
+        "checks": 9526,
+        "inverse_points": 105,
+        "composition_pairs": 441,
+        "composition_points": 2205,
+        "max_error_m": 2.512e-15
+      }
+    },
+    {
+      "name": "negative_order",
+      "expected_returncode": 1,
+      "actual_returncode": 1,
+      "stdout": "TRACE base=(0.200000,1.000000) map=(-3.800000,2.000000)\n",
+      "stderr": "FAIL robot-frames coordinate x\n",
+      "interpretation": "swap composition order only in demonstration; hand geometry must reject"
+    }
+  ],
+  "references": [
+    "https://github.com/ros-infrastructure/rep/blob/master/rep-0103.rst",
+    "https://github.com/ros-infrastructure/rep/blob/master/rep-0105.rst",
+    "https://github.com/ros2/ros2_documentation/blob/rolling/source/ROS-Framework/interfaces/About-Tf2/About-Tf2.rst"
+  ],
+  "validation_scope": {
+    "civilian_indoor_robot_model": true,
+    "host_cpu_function_tests": true,
+    "ros2_runtime": false,
+    "tf2_integration": false,
+    "calibration": false,
+    "localization_estimation": false,
+    "physical_robot": false,
+    "navigation_control": false
+  },
+  "sources": [
+    "example.cpp"
+  ],
+  "source_sha256": {
+    "example.cpp": "33a600db7892c9f8b794476ceedef8041f6e6d1aad3e8bdb736f9d9955a67b84"
+  },
+  "commands": [
+    {
+      "name": "compiler_version",
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+        "c++",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\c_intro\\frames",
+      "returncode": 0,
+      "stdout": "clang version 21.1.0\nTarget: x86_64-unknown-windows-gnu\nThread model: posix\nInstalledDir: C:/Users/test2/Documents/ChatGPT/코딩/tmp/c-compiler/ziglang\n",
+      "stderr": ""
+    },
+    {
+      "name": "compile",
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+        "c++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-O2",
+        "example.cpp",
+        "-o",
+        "example.exe"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\c_intro\\frames",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "normal",
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\c_intro\\frames\\example.exe"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\c_intro\\frames",
+      "returncode": 0,
+      "stdout": "TRACE base=(0.200000,1.000000) map=(1.000000,3.200000)\nPASS robot-frames checks=9526 inverse_points=105 composition_pairs=441 composition_points=2205 max_error_m=2.512e-15\n",
+      "stderr": ""
+    },
+    {
+      "name": "negative_order",
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\c_intro\\frames\\example.exe",
+        "--negative-order"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\c_intro\\frames",
+      "returncode": 1,
+      "stdout": "TRACE base=(0.200000,1.000000) map=(-3.800000,2.000000)\n",
+      "stderr": "FAIL robot-frames coordinate x\n"
+    }
+  ],
+  "verified_date": "2026-10-26"
+}

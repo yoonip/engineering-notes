@@ -44,6 +44,10 @@ STM32F767ZI 예제는 `RCC->AHB1ENR`로 GPIOB의 클록을 활성화하고, `GPI
 
 CPU 범용 레지스터는 계산값과 주소를 보관하고, 주변장치 레지스터는 GPIO 같은 회로의 설정과 상태를 나타냅니다. 보드의 LED 동작은 핀의 출력값뿐 아니라 실제 회로의 연결과 활성 극성에 따라 정해집니다.
 
+## 좌표·경로·측정·로봇 구조의 실행 예제
+
+[응용 시스템 실습](../../하드웨어코딩_hardware-coding/응용시스템_applied-systems/README.md)에서 센서→차체→지도 좌표 변환, 원형 몸체의 실내 격자 경로, 엔코더·비콘의 한 축 위치 추정, 2링크 URDF의 정기구학을 코드와 실행 흐름으로 확인합니다. [ROS 2·Gazebo 등 공개 프로젝트 안내](../../하드웨어코딩_hardware-coding/응용시스템_applied-systems/공개프로젝트와언어_sources-and-languages.md)는 독립 수치 예제 다음에 읽을 통신·모델·통합 자료를 연결합니다. 해당 예제의 호스트 검사와 실제 ROS 통합·보드 구동을 구분합니다.
+
 ## 기초 해설
 
 - [차동구동 로봇: 바퀴 회전에서 위치 추정까지](해설_notes/차동구동로봇_differential-drive-kinematics-odometry.md)

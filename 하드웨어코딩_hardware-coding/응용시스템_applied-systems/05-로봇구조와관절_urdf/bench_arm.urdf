@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- 파일의 문자 인코딩 -->
+<robot name="bench_planar_arm"> <!-- 고정된 바닥 기준의 교육용 두 링크 팔 -->
+  <link name="base_link"/> <!-- 위치를 외부에서 고정한다고 가정할 기준 링크 -->
+  <link name="upper_arm"> <!-- 길이 0.4m인 첫 링크 -->
+    <visual> <!-- 표시용 상자와 링크 좌표의 관계 -->
+      <origin xyz="0.2 0 0" rpy="0 0 0"/> <!-- 링크 시작에서 상자 중심까지의 이동 -->
+      <geometry><box size="0.4 0.04 0.04"/></geometry> <!-- 미터 단위의 길이·폭·높이 -->
+    </visual> <!-- 표시 형상 끝 -->
+    <inertial> <!-- 1kg 균일 상자의 질량 중심과 관성 -->
+      <origin xyz="0.2 0 0" rpy="0 0 0"/> <!-- 관성은 질량 중심에서 정의 -->
+      <mass value="1.0"/> <!-- 킬로그램 단위의 설명용 질량 -->
+      <inertia ixx="0.000266666666667" iyy="0.013466666666667" izz="0.013466666666667" ixy="0" ixz="0" iyz="0"/> <!-- 축 정렬 상자의 kg·m² 관성 -->
+    </inertial> <!-- 첫 링크의 질량 모형 끝 -->
+  </link> <!-- 첫 링크 정의 끝 -->
+  <joint name="shoulder" type="revolute"> <!-- z축을 중심으로 도는 첫 관절 -->
+    <parent link="base_link"/><child link="upper_arm"/> <!-- 부모에서 자식으로 이어지는 트리 -->
+    <origin xyz="0 0 0" rpy="0 0 0"/><axis xyz="0 0 1"/> <!-- 기준점과 단위 회전축 -->
+    <limit lower="-1.5707963267948966" upper="1.5707963267948966" effort="1.0" velocity="0.5"/> <!-- 라디안 범위와 설명용 제한값 -->
+  </joint> <!-- 첫 관절 정의 끝 -->
+  <link name="forearm"> <!-- 길이 0.3m인 두 번째 링크 -->
+    <visual> <!-- 표시용 상자의 위치 -->
+      <origin xyz="0.15 0 0" rpy="0 0 0"/><geometry><box size="0.3 0.04 0.04"/></geometry> <!-- 링크 시작에서 길이 절반 위치 -->
+    </visual> <!-- 표시 형상 끝 -->
+    <inertial> <!-- 0.6kg 균일 상자의 질량 모형 -->
+      <origin xyz="0.15 0 0" rpy="0 0 0"/><mass value="0.6"/> <!-- 질량 중심과 질량 -->
+      <inertia ixx="0.00016" iyy="0.00458" izz="0.00458" ixy="0" ixz="0" iyz="0"/> <!-- 축 정렬 상자의 관성 -->
+    </inertial> <!-- 두 번째 링크의 질량 모형 끝 -->
+  </link> <!-- 두 번째 링크 정의 끝 -->
+  <joint name="elbow" type="revolute"> <!-- 첫 링크 끝에서 도는 두 번째 관절 -->
+    <parent link="upper_arm"/><child link="forearm"/> <!-- 첫 링크에서 두 번째 링크로 연결 -->
+    <origin xyz="0.4 0 0" rpy="0 0 0"/><axis xyz="0 0 1"/> <!-- 부모 링크 x축 끝에서 관절 시작 -->
+    <limit lower="-1.5707963267948966" upper="1.5707963267948966" effort="1.0" velocity="0.5"/> <!-- 이 예제의 관절 범위 -->
+  </joint> <!-- 두 번째 관절 정의 끝 -->
+  <link name="tool0"/> <!-- 말단 점을 나타내는 질량 없는 표시 프레임 -->
+  <joint name="tool_mount" type="fixed"> <!-- 말단 점까지의 고정 연결 -->
+    <parent link="forearm"/><child link="tool0"/> <!-- 말단 프레임의 부모 -->
+    <origin xyz="0.3 0 0" rpy="0 0 0"/> <!-- 두 번째 링크 끝의 말단 점 -->
+  </joint> <!-- 고정 연결 끝 -->
+</robot> <!-- 로봇 구조 정의 끝 -->

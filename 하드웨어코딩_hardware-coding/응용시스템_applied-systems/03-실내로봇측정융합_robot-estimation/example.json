@@ -1,0 +1,734 @@
+{
+  "schema_version": 1,
+  "id": "03-robot-estimation",
+  "title": "실내 AGV의 encoder·비콘 위치 추정과 측정 거절",
+  "language": "Python3 standard library",
+  "original_example": true,
+  "sources": [
+    "estimator.py",
+    "check_estimator.py"
+  ],
+  "source_sha256": {
+    "estimator.py": "b4aa84d14830fd3a681187955fe261437d827f75e734b791febaa03966a34938",
+    "check_estimator.py": "a2d27d9eb6bed75da67e2c21956158e0527246c9d0c7c641c837ba6b3de385d6"
+  },
+  "tools": {
+    "python_version": "3.12.14",
+    "python_executable": "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "third_party_packages": []
+  },
+  "command": [
+    "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "-B",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\응용시스템_applied-systems\\03-실내로봇측정융합_robot-estimation\\check_estimator.py",
+    "--out",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\c_training\\robot-validation.json"
+  ],
+  "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩",
+  "environment": {
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "returncode": 0,
+  "stdout": "PASS robot checks=2342 algebra_cases=360 steps=40 accepted=5 stale=1 missing=1 outlier=1\n",
+  "stderr": "",
+  "expected_marker": "PASS robot checks=2342 algebra_cases=360 steps=40 accepted=5 stale=1 missing=1 outlier=1",
+  "expected": {
+    "algebra_cases": 360,
+    "checks": 2342,
+    "steps": 40,
+    "accepted": 5,
+    "stale": 1,
+    "missing_scheduled": 1,
+    "outlier": 1,
+    "not_scheduled": 32
+  },
+  "model": {
+    "state": "scalar position x in a single fixed indoor axis",
+    "prediction": "x_minus=x+encoder_delta; P_minus=P+Q",
+    "measurement": "z=x+noise; independent of encoder uncertainty by model assumption",
+    "correction": "K=P_minus/(P_minus+R); x_plus=x_minus+K*(z-x_minus); Joseph scalar P_plus=(1-K)^2*P_minus+K^2*R",
+    "gate": "NIS=(z-x_minus)^2/(P_minus+R); accept NIS<=9",
+    "timestamp_policy": "Only same-time measurements within 1e-9s numerical tolerance; reject stale/future samples without replay",
+    "q_per_interval_m2": 0.0025,
+    "r_m2": 0.04,
+    "initial_x_m": 0.3,
+    "initial_p_m2": 0.25
+  },
+  "independent_checks": {
+    "posterior_mean": "precision-weighted mean, without using the implementation gain",
+    "posterior_variance": "inverse of summed precisions, compared with Joseph form",
+    "gate": "absolute innovation <= 3*sqrt(S), with exact S=1 boundary cases",
+    "hand_calculation": {
+      "prior_x_m": 1.5,
+      "prior_p_m2": 0.29,
+      "z_m": 1.2,
+      "r_m2": 0.09,
+      "posterior_x_exact": "483/380",
+      "posterior_p_exact": "261/3800"
+    },
+    "rejected_measurements": "predicted mean/variance/time remain unchanged",
+    "invalid_predictions": "negative Q and backward time raise ValueError without mutation"
+  },
+  "verification": {
+    "steps": 40,
+    "statuses": {
+      "prediction_only": 32,
+      "accepted": 5,
+      "rejected_stale": 1,
+      "missing": 1,
+      "rejected_outlier": 1
+    },
+    "filter_rmse_m": 0.1340034007711725,
+    "encoder_only_rmse_m": 0.4170334219220324,
+    "trace": [
+      {
+        "time_s": 1,
+        "truth_m": 0,
+        "encoder_displacement_m": -0.005,
+        "prior_position_m": 0.295,
+        "prior_variance_m2": 0.2525,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 0.295,
+        "posterior_variance_m2": 0.2525,
+        "encoder_only_position_m": 0.295
+      },
+      {
+        "time_s": 2,
+        "truth_m": 0,
+        "encoder_displacement_m": 0,
+        "prior_position_m": 0.295,
+        "prior_variance_m2": 0.255,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 0.295,
+        "posterior_variance_m2": 0.255,
+        "encoder_only_position_m": 0.295
+      },
+      {
+        "time_s": 3,
+        "truth_m": 0,
+        "encoder_displacement_m": 0.005,
+        "prior_position_m": 0.3,
+        "prior_variance_m2": 0.2575,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 0.3,
+        "posterior_variance_m2": 0.2575,
+        "encoder_only_position_m": 0.3
+      },
+      {
+        "time_s": 4,
+        "truth_m": 0,
+        "encoder_displacement_m": -0.005,
+        "prior_position_m": 0.295,
+        "prior_variance_m2": 0.26,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 0.295,
+        "posterior_variance_m2": 0.26,
+        "encoder_only_position_m": 0.295
+      },
+      {
+        "time_s": 5,
+        "truth_m": 0,
+        "encoder_displacement_m": 0,
+        "prior_position_m": 0.295,
+        "prior_variance_m2": 0.2625,
+        "beacon": {
+          "time_s": 5,
+          "position_m": -0.08,
+          "variance_m2": 0.04
+        },
+        "decision": {
+          "status": "accepted",
+          "gain": 0.8677685950413224,
+          "innovation_m": -0.375,
+          "innovation_variance_m2": 0.3025,
+          "nis": 0.46487603305785125
+        },
+        "posterior_position_m": -0.030413223140495937,
+        "posterior_variance_m2": 0.03471074380165289,
+        "encoder_only_position_m": 0.295
+      },
+      {
+        "time_s": 6,
+        "truth_m": 0,
+        "encoder_displacement_m": 0.005,
+        "prior_position_m": -0.025413223140495936,
+        "prior_variance_m2": 0.037210743801652894,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": -0.025413223140495936,
+        "posterior_variance_m2": 0.037210743801652894,
+        "encoder_only_position_m": 0.3
+      },
+      {
+        "time_s": 7,
+        "truth_m": 0,
+        "encoder_displacement_m": -0.005,
+        "prior_position_m": -0.030413223140495937,
+        "prior_variance_m2": 0.0397107438016529,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": -0.030413223140495937,
+        "posterior_variance_m2": 0.0397107438016529,
+        "encoder_only_position_m": 0.295
+      },
+      {
+        "time_s": 8,
+        "truth_m": 0,
+        "encoder_displacement_m": 0,
+        "prior_position_m": -0.030413223140495937,
+        "prior_variance_m2": 0.0422107438016529,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": -0.030413223140495937,
+        "posterior_variance_m2": 0.0422107438016529,
+        "encoder_only_position_m": 0.295
+      },
+      {
+        "time_s": 9,
+        "truth_m": 0.4,
+        "encoder_displacement_m": 0.41500000000000004,
+        "prior_position_m": 0.3845867768595041,
+        "prior_variance_m2": 0.0447107438016529,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 0.3845867768595041,
+        "posterior_variance_m2": 0.0447107438016529,
+        "encoder_only_position_m": 0.71
+      },
+      {
+        "time_s": 10,
+        "truth_m": 0.8,
+        "encoder_displacement_m": 0.405,
+        "prior_position_m": 0.7895867768595042,
+        "prior_variance_m2": 0.0472107438016529,
+        "beacon": {
+          "time_s": 10,
+          "position_m": 0.8500000000000001,
+          "variance_m2": 0.04
+        },
+        "decision": {
+          "status": "accepted",
+          "gain": 0.5413409144752429,
+          "innovation_m": 0.06041322314049591,
+          "innovation_variance_m2": 0.0872107438016529,
+          "nis": 0.04184986127998345
+        },
+        "posterior_position_m": 0.8222909263207772,
+        "posterior_variance_m2": 0.021653636579009716,
+        "encoder_only_position_m": 1.115
+      },
+      {
+        "time_s": 11,
+        "truth_m": 1.2000000000000002,
+        "encoder_displacement_m": 0.41000000000000003,
+        "prior_position_m": 1.2322909263207773,
+        "prior_variance_m2": 0.024153636579009714,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 1.2322909263207773,
+        "posterior_variance_m2": 0.024153636579009714,
+        "encoder_only_position_m": 1.525
+      },
+      {
+        "time_s": 12,
+        "truth_m": 1.6,
+        "encoder_displacement_m": 0.41500000000000004,
+        "prior_position_m": 1.6472909263207773,
+        "prior_variance_m2": 0.026653636579009713,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 1.6472909263207773,
+        "posterior_variance_m2": 0.026653636579009713,
+        "encoder_only_position_m": 1.94
+      },
+      {
+        "time_s": 13,
+        "truth_m": 2,
+        "encoder_displacement_m": 0.405,
+        "prior_position_m": 2.0522909263207776,
+        "prior_variance_m2": 0.029153636579009712,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 2.0522909263207776,
+        "posterior_variance_m2": 0.029153636579009712,
+        "encoder_only_position_m": 2.3449999999999998
+      },
+      {
+        "time_s": 14,
+        "truth_m": 2.4,
+        "encoder_displacement_m": 0.41000000000000003,
+        "prior_position_m": 2.4622909263207777,
+        "prior_variance_m2": 0.031653636579009714,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 2.4622909263207777,
+        "posterior_variance_m2": 0.031653636579009714,
+        "encoder_only_position_m": 2.755
+      },
+      {
+        "time_s": 15,
+        "truth_m": 2.8,
+        "encoder_displacement_m": 0.41500000000000004,
+        "prior_position_m": 2.8772909263207778,
+        "prior_variance_m2": 0.034153636579009716,
+        "beacon": {
+          "time_s": 13,
+          "position_m": 2.04,
+          "variance_m2": 0.04
+        },
+        "decision": {
+          "status": "rejected_stale",
+          "age_s": 2
+        },
+        "posterior_position_m": 2.8772909263207778,
+        "posterior_variance_m2": 0.034153636579009716,
+        "encoder_only_position_m": 3.17
+      },
+      {
+        "time_s": 16,
+        "truth_m": 3.1999999999999997,
+        "encoder_displacement_m": 0.405,
+        "prior_position_m": 3.282290926320778,
+        "prior_variance_m2": 0.03665363657900972,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 3.282290926320778,
+        "posterior_variance_m2": 0.03665363657900972,
+        "encoder_only_position_m": 3.575
+      },
+      {
+        "time_s": 17,
+        "truth_m": 3.5999999999999996,
+        "encoder_displacement_m": 0.41000000000000003,
+        "prior_position_m": 3.692290926320778,
+        "prior_variance_m2": 0.03915363657900972,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 3.692290926320778,
+        "posterior_variance_m2": 0.03915363657900972,
+        "encoder_only_position_m": 3.9850000000000003
+      },
+      {
+        "time_s": 18,
+        "truth_m": 3.9999999999999996,
+        "encoder_displacement_m": 0.41500000000000004,
+        "prior_position_m": 4.107290926320778,
+        "prior_variance_m2": 0.04165363657900972,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 4.107290926320778,
+        "posterior_variance_m2": 0.04165363657900972,
+        "encoder_only_position_m": 4.4
+      },
+      {
+        "time_s": 19,
+        "truth_m": 4.3999999999999995,
+        "encoder_displacement_m": 0.405,
+        "prior_position_m": 4.512290926320778,
+        "prior_variance_m2": 0.044153636579009725,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 4.512290926320778,
+        "posterior_variance_m2": 0.044153636579009725,
+        "encoder_only_position_m": 4.805000000000001
+      },
+      {
+        "time_s": 20,
+        "truth_m": 4.8,
+        "encoder_displacement_m": 0.41000000000000003,
+        "prior_position_m": 4.922290926320779,
+        "prior_variance_m2": 0.04665363657900973,
+        "beacon": null,
+        "decision": {
+          "status": "missing"
+        },
+        "posterior_position_m": 4.922290926320779,
+        "posterior_variance_m2": 0.04665363657900973,
+        "encoder_only_position_m": 5.215000000000001
+      },
+      {
+        "time_s": 21,
+        "truth_m": 5.2,
+        "encoder_displacement_m": 0.41500000000000004,
+        "prior_position_m": 5.337290926320779,
+        "prior_variance_m2": 0.04915363657900973,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 5.337290926320779,
+        "posterior_variance_m2": 0.04915363657900973,
+        "encoder_only_position_m": 5.630000000000001
+      },
+      {
+        "time_s": 22,
+        "truth_m": 5.6000000000000005,
+        "encoder_displacement_m": 0.405,
+        "prior_position_m": 5.742290926320779,
+        "prior_variance_m2": 0.05165363657900973,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 5.742290926320779,
+        "posterior_variance_m2": 0.05165363657900973,
+        "encoder_only_position_m": 6.035000000000001
+      },
+      {
+        "time_s": 23,
+        "truth_m": 6.000000000000001,
+        "encoder_displacement_m": 0.41000000000000003,
+        "prior_position_m": 6.152290926320779,
+        "prior_variance_m2": 0.054153636579009734,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 6.152290926320779,
+        "posterior_variance_m2": 0.054153636579009734,
+        "encoder_only_position_m": 6.445000000000001
+      },
+      {
+        "time_s": 24,
+        "truth_m": 6.400000000000001,
+        "encoder_displacement_m": 0.41500000000000004,
+        "prior_position_m": 6.567290926320779,
+        "prior_variance_m2": 0.056653636579009736,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 6.567290926320779,
+        "posterior_variance_m2": 0.056653636579009736,
+        "encoder_only_position_m": 6.860000000000001
+      },
+      {
+        "time_s": 25,
+        "truth_m": 6.800000000000002,
+        "encoder_displacement_m": 0.405,
+        "prior_position_m": 6.972290926320779,
+        "prior_variance_m2": 0.05915363657900974,
+        "beacon": {
+          "time_s": 25,
+          "position_m": 14.880000000000003,
+          "variance_m2": 0.04
+        },
+        "decision": {
+          "status": "rejected_outlier",
+          "innovation_m": 7.907709073679223,
+          "innovation_variance_m2": 0.09915363657900975,
+          "nis": 630.6562719373457
+        },
+        "posterior_position_m": 6.972290926320779,
+        "posterior_variance_m2": 0.05915363657900974,
+        "encoder_only_position_m": 7.2650000000000015
+      },
+      {
+        "time_s": 26,
+        "truth_m": 7.200000000000002,
+        "encoder_displacement_m": 0.41000000000000003,
+        "prior_position_m": 7.382290926320779,
+        "prior_variance_m2": 0.06165363657900974,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 7.382290926320779,
+        "posterior_variance_m2": 0.06165363657900974,
+        "encoder_only_position_m": 7.675000000000002
+      },
+      {
+        "time_s": 27,
+        "truth_m": 7.600000000000002,
+        "encoder_displacement_m": 0.41500000000000004,
+        "prior_position_m": 7.7972909263207795,
+        "prior_variance_m2": 0.06415363657900974,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 7.7972909263207795,
+        "posterior_variance_m2": 0.06415363657900974,
+        "encoder_only_position_m": 8.090000000000002
+      },
+      {
+        "time_s": 28,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": 0.405,
+        "prior_position_m": 8.20229092632078,
+        "prior_variance_m2": 0.06665363657900975,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 8.20229092632078,
+        "posterior_variance_m2": 0.06665363657900975,
+        "encoder_only_position_m": 8.495000000000001
+      },
+      {
+        "time_s": 29,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": 0,
+        "prior_position_m": 8.20229092632078,
+        "prior_variance_m2": 0.06915363657900975,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 8.20229092632078,
+        "posterior_variance_m2": 0.06915363657900975,
+        "encoder_only_position_m": 8.495000000000001
+      },
+      {
+        "time_s": 30,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": 0.005,
+        "prior_position_m": 8.20729092632078,
+        "prior_variance_m2": 0.07165363657900975,
+        "beacon": {
+          "time_s": 30,
+          "position_m": 7.9700000000000015,
+          "variance_m2": 0.04
+        },
+        "decision": {
+          "status": "accepted",
+          "gain": 0.6417492414436972,
+          "innovation_m": -0.23729092632077897,
+          "innovation_variance_m2": 0.11165363657900976,
+          "nis": 0.5043004906904998
+        },
+        "posterior_position_m": 8.055009654352949,
+        "posterior_variance_m2": 0.02566996965774789,
+        "encoder_only_position_m": 8.500000000000002
+      },
+      {
+        "time_s": 31,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": -0.005,
+        "prior_position_m": 8.050009654352948,
+        "prior_variance_m2": 0.02816996965774789,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 8.050009654352948,
+        "posterior_variance_m2": 0.02816996965774789,
+        "encoder_only_position_m": 8.495000000000001
+      },
+      {
+        "time_s": 32,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": 0,
+        "prior_position_m": 8.050009654352948,
+        "prior_variance_m2": 0.03066996965774789,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 8.050009654352948,
+        "posterior_variance_m2": 0.03066996965774789,
+        "encoder_only_position_m": 8.495000000000001
+      },
+      {
+        "time_s": 33,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": 0.005,
+        "prior_position_m": 8.055009654352949,
+        "prior_variance_m2": 0.03316996965774789,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 8.055009654352949,
+        "posterior_variance_m2": 0.03316996965774789,
+        "encoder_only_position_m": 8.500000000000002
+      },
+      {
+        "time_s": 34,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": -0.005,
+        "prior_position_m": 8.050009654352948,
+        "prior_variance_m2": 0.035669969657747894,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 8.050009654352948,
+        "posterior_variance_m2": 0.035669969657747894,
+        "encoder_only_position_m": 8.495000000000001
+      },
+      {
+        "time_s": 35,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": 0,
+        "prior_position_m": 8.050009654352948,
+        "prior_variance_m2": 0.038169969657747896,
+        "beacon": {
+          "time_s": 35,
+          "position_m": 8.010000000000002,
+          "variance_m2": 0.04
+        },
+        "decision": {
+          "status": "accepted",
+          "gain": 0.48829454360629454,
+          "innovation_m": -0.040009654352946455,
+          "innovation_variance_m2": 0.07816996965774789,
+          "nis": 0.020478099818266787
+        },
+        "posterior_position_m": 8.03047315844083,
+        "posterior_variance_m2": 0.019531781744251776,
+        "encoder_only_position_m": 8.495000000000001
+      },
+      {
+        "time_s": 36,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": 0.005,
+        "prior_position_m": 8.035473158440832,
+        "prior_variance_m2": 0.022031781744251775,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 8.035473158440832,
+        "posterior_variance_m2": 0.022031781744251775,
+        "encoder_only_position_m": 8.500000000000002
+      },
+      {
+        "time_s": 37,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": -0.005,
+        "prior_position_m": 8.03047315844083,
+        "prior_variance_m2": 0.024531781744251774,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 8.03047315844083,
+        "posterior_variance_m2": 0.024531781744251774,
+        "encoder_only_position_m": 8.495000000000001
+      },
+      {
+        "time_s": 38,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": 0,
+        "prior_position_m": 8.03047315844083,
+        "prior_variance_m2": 0.027031781744251773,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 8.03047315844083,
+        "posterior_variance_m2": 0.027031781744251773,
+        "encoder_only_position_m": 8.495000000000001
+      },
+      {
+        "time_s": 39,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": 0.005,
+        "prior_position_m": 8.035473158440832,
+        "prior_variance_m2": 0.02953178174425177,
+        "beacon": null,
+        "decision": {
+          "status": "prediction_only"
+        },
+        "posterior_position_m": 8.035473158440832,
+        "posterior_variance_m2": 0.02953178174425177,
+        "encoder_only_position_m": 8.500000000000002
+      },
+      {
+        "time_s": 40,
+        "truth_m": 8.000000000000002,
+        "encoder_displacement_m": -0.005,
+        "prior_position_m": 8.03047315844083,
+        "prior_variance_m2": 0.032031781744251774,
+        "beacon": {
+          "time_s": 40,
+          "position_m": 7.960000000000002,
+          "variance_m2": 0.04
+        },
+        "decision": {
+          "status": "accepted",
+          "gain": 0.4446895657527998,
+          "innovation_m": -0.07047315844082913,
+          "innovation_variance_m2": 0.07203178174425177,
+          "nis": 0.06894826062000801
+        },
+        "posterior_position_m": 7.999134480216551,
+        "posterior_variance_m2": 0.01778758263011199,
+        "encoder_only_position_m": 8.495000000000001
+      }
+    ],
+    "status": "passed_local_estimation_checks",
+    "checked_at": "2026-10-26T08:42:12.094250+00:00",
+    "checks": 2342,
+    "algebra_cases": 360,
+    "source_sha256": {
+      "estimator.py": "b4aa84d14830fd3a681187955fe261437d827f75e734b791febaa03966a34938",
+      "check_estimator.py": "a2d27d9eb6bed75da67e2c21956158e0527246c9d0c7c641c837ba6b3de385d6"
+    }
+  },
+  "scope": {
+    "selected_educational_experiment": true,
+    "real_sensor_data": false,
+    "ros_runtime": false,
+    "robot_localization_runtime": false,
+    "real_robot_control": false,
+    "multi_axis_filter": false,
+    "velocity_state_estimation": false,
+    "lagged_measurement_replay": false,
+    "empirical_covariance_consistency": false,
+    "complete_autonomous_system": false
+  },
+  "references": [
+    {
+      "url": "https://raw.githubusercontent.com/cra-ros-pkg/robot_localization/noetic-devel/doc/state_estimation_nodes.rst",
+      "sections": "sensor_timeout, rejection thresholds, process covariance, smooth_lagged_data",
+      "role": "Official package documentation; this scalar example does not reproduce its full state or lag replay"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/cra-ros-pkg/robot_localization/noetic-devel/doc/configuring_robot_localization.rst",
+      "sections": "sensor frame and duplicated encoder information",
+      "role": "Coordinate and sensor-correlation cautions"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/cra-ros-pkg/robot_localization/noetic-devel/LICENSE",
+      "role": "License of the referenced external project; no source copied"
+    }
+  ]
+}

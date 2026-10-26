@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "id": "05-planar-urdf",
+  "title": "URDF 평면 팔의 링크·관절·순기구학 검사",
+  "language": "URDF XML + Python3",
+  "original_example": true,
+  "sources": [
+    "bench_arm.urdf",
+    "check_model.py"
+  ],
+  "source_sha256": {
+    "bench_arm.urdf": "64a6e31f095b71bd472fbe38ce4af3889be7402e5d33ac4f5874d7c22c6b7144",
+    "check_model.py": "f6d09207b5e14b19684385b2cf52c72516f93410cdc291ad8a4f4a30b6977d4d"
+  },
+  "returncode": 0,
+  "stdout": "PASS urdf poses=25 comparisons=325 rejected_models=5 rejected_states=2\n",
+  "stderr": "",
+  "expected_marker": "PASS urdf poses=25 comparisons=325 rejected_models=5 rejected_states=2",
+  "actual_execution": {
+    "command": [
+      "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-B",
+      "하드웨어코딩_hardware-coding/응용시스템_applied-systems/05-로봇구조와관절_urdf/check_model.py",
+      "--dependencies",
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\python-deps",
+      "--report",
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\urdf-results.json"
+    ],
+    "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10",
+    "execution_date": "2026-10-26",
+    "record_origin": "Parent-provided completed execution and private result JSON; this documentation step did not rerun tools"
+  },
+  "reproduction": {
+    "equivalent_absolute_command": [
+      "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "-B",
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\응용시스템_applied-systems\\05-로봇구조와관절_urdf\\check_model.py",
+      "--dependencies",
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\python-deps",
+      "--report",
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\urdf-results.json"
+    ],
+    "temporary_dependencies": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\applied-systems-20261026\\python-deps",
+    "python_optimization": "Run without -O; the driver rejects optimization before tests"
+  },
+  "tools": {
+    "python_version": "3.12.14",
+    "urdf_parser_py": "0.0.4"
+  },
+  "verification": {
+    "status": "passed_urdf_parse_and_planar_checks",
+    "parser_version": "0.0.4",
+    "source_sha256": {
+      "bench_arm.urdf": "64a6e31f095b71bd472fbe38ce4af3889be7402e5d33ac4f5874d7c22c6b7144",
+      "check_model.py": "f6d09207b5e14b19684385b2cf52c72516f93410cdc291ad8a4f4a30b6977d4d"
+    },
+    "links": 4,
+    "joints": 3,
+    "pose_cases": 25,
+    "numerical_comparisons": 325,
+    "rejected_models": 5,
+    "rejected_states": 2,
+    "trace": [
+      {
+        "shoulder_rad": -1.5707963267948966,
+        "elbow_rad": 0,
+        "tip_m": [
+          4.2862637970157366e-17,
+          -0.7,
+          0
+        ]
+      },
+      {
+        "shoulder_rad": -0.7853981633974483,
+        "elbow_rad": 0,
+        "tip_m": [
+          0.4949747468305833,
+          -0.4949747468305833,
+          0
+        ]
+      },
+      {
+        "shoulder_rad": 0,
+        "elbow_rad": -1.5707963267948966,
+        "tip_m": [
+          0.4,
+          -0.3,
+          0
+        ]
+      },
+      {
+        "shoulder_rad": 0,
+        "elbow_rad": -0.7853981633974483,
+        "tip_m": [
+          0.6121320343559643,
+          -0.21213203435596426,
+          0
+        ]
+      },
+      {
+        "shoulder_rad": 0,
+        "elbow_rad": 0,
+        "tip_m": [
+          0.7,
+          0,
+          0
+        ]
+      },
+      {
+        "shoulder_rad": 0,
+        "elbow_rad": 0.7853981633974483,
+        "tip_m": [
+          0.6121320343559643,
+          0.21213203435596426,
+          0
+        ]
+      },
+      {
+        "shoulder_rad": 0,
+        "elbow_rad": 1.5707963267948966,
+        "tip_m": [
+          0.4,
+          0.3,
+          0
+        ]
+      },
+      {
+        "shoulder_rad": 0.7853981633974483,
+        "elbow_rad": 0,
+        "tip_m": [
+          0.4949747468305833,
+          0.4949747468305833,
+          0
+        ]
+      },
+      {
+        "shoulder_rad": 1.5707963267948966,
+        "elbow_rad": 0,
+        "tip_m": [
+          4.2862637970157366e-17,
+          0.7,
+          0
+        ]
+      }
+    ],
+    "scope": {
+      "urdf_parser": true,
+      "limited_planar_validator": true,
+      "ros2_runtime": false,
+      "gazebo": false,
+      "dynamics": false,
+      "hardware": false
+    }
+  },
+  "recorded_at": "2026-10-26T09:05:28.533Z",
+  "expected": {
+    "links": 4,
+    "joints": 3,
+    "pose_cases": 25,
+    "numerical_comparisons": 325,
+    "rejected_models": 5,
+    "rejected_joint_states": 2
+  },
+  "model": {
+    "base": "Externally fixed base_link; no world joint or dynamic base simulation",
+    "lengths_m": [
+      0.4,
+      0.3
+    ],
+    "revolute_joints": [
+      "shoulder",
+      "elbow"
+    ],
+    "fixed_joint": "tool_mount",
+    "axes": "exact unit +z only",
+    "joint_origins": "finite planar xy translation; rpy exactly zero",
+    "joint_limits_rad": [
+      -1.5707963267948966,
+      1.5707963267948966
+    ],
+    "mass_kg": [
+      1,
+      0.6
+    ],
+    "inertia_scope": "Finite positive diagonal principal inertias and triangle inequalities; not a general physical-model validator",
+    "independent_fk": "x=0.4*cos(q1)+0.3*cos(q1+q2); y=0.4*sin(q1)+0.3*sin(q1+q2); z=0"
+  },
+  "scope": {
+    "actual_standalone_urdf_parser": true,
+    "limited_planar_validator": true,
+    "ros_runtime": false,
+    "gazebo": false,
+    "dynamics": false,
+    "collision_checking": false,
+    "actuator_control": false,
+    "hardware": false
+  },
+  "references": [
+    {
+      "url": "https://github.com/ros/urdf_parser_py",
+      "role": "Official standalone parser project and BSD-3-Clause license; used package version0.0.4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ros/urdfdom_headers/master/include/urdf_model/joint.h",
+      "role": "Official joint data model: parent-to-joint origin and child frame; no source copied"
+    }
+  ]
+}
