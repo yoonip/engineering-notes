@@ -6,10 +6,10 @@
 
 Linux·WSL은 운영체제 환경, GCC·Clang은 compiler, Python은 interpreter, venv·Conda는 프로젝트 의존성을 나누는 환경입니다. Jupyter의 kernel은 실제 코드를 실행하는 프로세스입니다. GPU 계산에는 driver·runtime·framework 사이의 지원 조건도 추가됩니다.
 
-- [Linux & Bash](../분야_topics/01-linux-bash/README.md)
-- [Git과 빌드 도구](../분야_topics/02-개발도구_git-development-tools/README.md)
-- [Python 가상환경과 Jupyter 설치](../분야_topics/03-python-jupyter/README.md)
-- [CUDA 실행 구조](../분야_topics/25-CUDA성능최적화_cuda-performance/README.md)
+- [Linux & Bash](../전자컴퓨터공학_ece/01-linux-bash/README.md)
+- [Git과 빌드 도구](../전자컴퓨터공학_ece/02-개발도구_git-development-tools/README.md)
+- [Python 가상환경과 Jupyter 설치](../전자컴퓨터공학_ece/03-python-jupyter/README.md)
+- [CUDA 실행 구조](../전자컴퓨터공학_ece/25-CUDA성능최적화_cuda-performance/README.md)
 
 ## 재현에 필요한 정보
 
@@ -72,10 +72,10 @@ A development environment combines an operating system, tools, dependencies, and
 
 Linux and WSL provide operating environments. GCC and Clang are compilers; Python is an interpreter. venv and Conda separate project dependencies. A Jupyter kernel is the process that actually runs notebook code. GPU work adds compatibility requirements between the driver, runtime, and framework.
 
-- [Linux and Bash](../분야_topics/01-linux-bash/README.md)
-- [Git and build tools](../분야_topics/02-개발도구_git-development-tools/README.md)
-- [Python environments and Jupyter](../분야_topics/03-python-jupyter/README.md)
-- [CUDA execution](../분야_topics/25-CUDA성능최적화_cuda-performance/README.md)
+- [Linux and Bash](../전자컴퓨터공학_ece/01-linux-bash/README.md)
+- [Git and build tools](../전자컴퓨터공학_ece/02-개발도구_git-development-tools/README.md)
+- [Python environments and Jupyter](../전자컴퓨터공학_ece/03-python-jupyter/README.md)
+- [CUDA execution](../전자컴퓨터공학_ece/25-CUDA성능최적화_cuda-performance/README.md)
 
 ### What makes a run reproducible
 
