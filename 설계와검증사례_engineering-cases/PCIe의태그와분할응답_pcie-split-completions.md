@@ -2,7 +2,7 @@
 
 PCIe Memory Read의 첫 응답이 왔다고 요청 전체가 끝난 것은 아닙니다. 요청별 tag를 유지하고, 조각마다 남은 바이트 수와 시작 주소를 확인해야 합니다. 이 사례는 해독된 Completion 필드를 입력하는 Python 호스트 모델이며 PCIe root port·endpoint·FPGA IP·DMA·TLP 원시 비트열은 실행하지 않았습니다.
 
-[코드·입력·실행 안내](../예제_examples/실무검증_practical-validation/usb_pcie/README.md) · [실행 기록](검증기록_evidence/USB와PCIe전송계약검증_20261021.md) · [MMIO·DMA 해설](../분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md)
+[코드·입력·실행 안내](../예제_examples/실무검증_practical-validation/usb_pcie/README.md) · [실행 기록](검증기록_evidence/USB와PCIe전송계약검증_20261021.md) · [MMIO·DMA 해설](../전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md)
 
 ## 1. 요청 번호와 돌아온 조각을 연결합니다
 

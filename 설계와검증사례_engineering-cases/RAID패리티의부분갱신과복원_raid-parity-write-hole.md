@@ -2,7 +2,7 @@
 
 XOR 패리티가 있으면 데이터 하나를 복원할 수 있지만, 그 패리티와 남은 데이터가 같은 갱신 상태여야 합니다. 데이터와 패리티가 서로 다른 시점의 값이면 계산식은 맞아도 복원 결과는 틀립니다. 이 사례는 실제 호스트 파일 세 개로 그 차이를 재현하고, 새 stripe 전체와 대상 세대를 보관한 redo 기록으로 새 사본을 만드는 과정을 비교합니다.
 
-[코드와 실행 방법](../예제_examples/실무검증_practical-validation/raid_parity/README.md) · [검증 기록](검증기록_evidence/RAID패리티중단과복원검사_20261021.md) · [메모리와 저장장치](../분야_topics/33-메모리저장장치_memory-storage/README.md)
+[코드와 실행 방법](../예제_examples/실무검증_practical-validation/raid_parity/README.md) · [검증 기록](검증기록_evidence/RAID패리티중단과복원검사_20261021.md) · [메모리와 저장장치](../전자컴퓨터공학_ece/33-메모리저장장치_memory-storage/README.md)
 
 ## 패리티가 보관하는 정보
 

@@ -1,6 +1,6 @@
 # 불량 비율과 경보의 정밀도 / Defect prevalence and alert precision
 
-[사례 목차](README.md) · [실행 코드](../예제_examples/실무검증_practical-validation/ai_prevalence/README.md) · [검증 기록](검증기록_evidence/기저율과경보업무량검사_20261021.md) · [평가지표와 불확실성](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/평가지표와불확실성_metrics-uncertainty.md)
+[사례 목차](README.md) · [실행 코드](../예제_examples/실무검증_practical-validation/ai_prevalence/README.md) · [검증 기록](검증기록_evidence/기저율과경보업무량검사_20261021.md) · [평가지표와 불확실성](../전자컴퓨터공학_ece/46-AI응용에이전트평가_ai-agents-evaluation/해설_notes/평가지표와불확실성_metrics-uncertainty.md)
 
 ## 문제: 정확도 90%인데 경보를 대부분 잘못 울립니다
 

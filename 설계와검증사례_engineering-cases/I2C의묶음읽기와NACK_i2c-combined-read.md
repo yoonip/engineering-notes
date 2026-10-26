@@ -75,7 +75,7 @@ UM10204의 bus clear는 상태에 따른 별도 절차입니다. 여기서는 �
 
 정상 read는 write 주소, 내부 주소 두 바이트, read 주소, 데이터 두 바이트로 6개의 clocked byte입니다. 각 9클록이므로 54클록이고 400 kHz에서는 clock 구간만 135 µs입니다. 중간 C2의 pointer 설정 3바이트를 포함한 분리 경로는 81클록·202.5 µs입니다. START/STOP timing, stretch, bus free, 소프트웨어 지연은 별도입니다.
 
-기존 [I2C 묶음 전송 글](../분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/I2C묶음전송_i2c-combined-transactions.md)의 내부 주소 1바이트 예제는 45클록입니다. 어느 쪽이 맞는지의 문제가 아니라 장치의 내부 주소 폭이 다릅니다.
+기존 [I2C 묶음 전송 글](../전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/해설_notes/I2C묶음전송_i2c-combined-transactions.md)의 내부 주소 1바이트 예제는 45클록입니다. 어느 쪽이 맞는지의 문제가 아니라 장치의 내부 주소 폭이 다릅니다.
 
 24LC256의 sequential read는 마지막 0x7FFF 뒤에 0x0000으로 돌아가는 경계가 있습니다. 자체 메모리에 0x7FFF=66, 0x0000=99를 넣고 2바이트 결과 66 99와 비교합니다. 전체 EEPROM 내용·쓰기 수명·page write·busy 시간·ACK polling은 구현하지 않았습니다.
 

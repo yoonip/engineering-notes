@@ -78,7 +78,7 @@ python -m unittest -v test_advanced_ai.TilingDecodeAndData.test_real_sqlite_wal_
 - SQLite, [Isolation In SQLite](https://www.sqlite.org/isolation.html), “Isolation And Concurrency”. 읽기 스냅샷과 쓰기 승격의 설명을 확인했습니다.
 - SQLite, [Write-Ahead Logging](https://www.sqlite.org/wal.html), WAL의 동작과 제약. 2026-10-21 열람했습니다.
 - SQLite, [Result and Error Codes](https://www.sqlite.org/rescode.html#busy_snapshot), `SQLITE_BUSY_SNAPSHOT` 항목.
-- [기존 WAL·버전 충돌 학습 본문](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/해설_notes/WAL스냅샷과버전충돌_wal-snapshots.md), [기존 대상 테스트](../예제_examples/심화_advanced/ai_data/test_advanced_ai.py).
+- [기존 WAL·버전 충돌 학습 본문](../전자컴퓨터공학_ece/40-데이터베이스데이터공학_databases-data-engineering/해설_notes/WAL스냅샷과버전충돌_wal-snapshots.md), [기존 대상 테스트](../예제_examples/심화_advanced/ai_data/test_advanced_ai.py).
 
 ## English
 

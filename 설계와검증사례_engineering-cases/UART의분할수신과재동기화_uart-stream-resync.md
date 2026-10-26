@@ -2,7 +2,7 @@
 
 수신 함수의 반환 경계를 메시지 경계로 사용하면, 같은 데이터도 읽는 시점에 따라 사라지거나 합쳐집니다. 이 사례는 수신 조각을 이어 받는 파서와 매번 상태를 버리는 파서를 같은 바이트열로 비교합니다. UART 장치·COM 포트·baud 오차·FIFO overrun은 실행하지 않은 Python 호스트 모델입니다.
 
-[코드·입력·실행 안내](../예제_examples/실무검증_practical-validation/uart_ethernet/README.md) · [실행 기록](검증기록_evidence/UART와UDP수신경계검증_20261021.md) · [기존 escape·CRC 프레임](../분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md)
+[코드·입력·실행 안내](../예제_examples/실무검증_practical-validation/uart_ethernet/README.md) · [실행 기록](검증기록_evidence/UART와UDP수신경계검증_20261021.md) · [기존 escape·CRC 프레임](../전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md)
 
 ## 1. 읽은 바이트 수가 달라지는 이유
 
