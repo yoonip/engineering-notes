@@ -8,7 +8,7 @@
 
 짧은 설명 한 문단을 고릅니다. 처음에는 전체 뜻을 읽고, 두 번째에는 모르는 표현을 확인합니다. 세 번째에는 원문을 덮고 핵심을 말하거나 씁니다. 마지막에는 원문과 비교해 빠뜨린 조건과 잘못 사용한 표현을 고칩니다. 매번 새로운 자료로 바꾸기보다 같은 내용을 이해·회상·표현하는 데 사용합니다.
 
-직접 만든 예시 `The cache stores recently used data`를 배웠다면 `cache = 캐시`만 적지 않습니다. `stores`가 동사이며 주어가 단수일 때 현재형에 `-s`가 붙는다는 점, `recently used`가 `data`를 꾸민다는 점을 함께 기록합니다. 다음에는 `The buffer stores incoming bytes`처럼 일부를 바꾸어 직접 문장을 만듭니다.
+직접 만든 예시 `The cache stores recently used data`를 배웠다면 `cache = 캐시`만 적지 않습니다. `stores`가 동사이며 3인칭 단수 주어와 쓰는 현재단순형에 `-s`가 붙는다는 점, `recently used`가 `data`를 꾸민다는 점을 함께 기록합니다. 다음에는 `The buffer stores incoming bytes`처럼 일부를 바꾸어 직접 문장을 만듭니다.
 
 | 단계 | 실제로 할 일 | 확인할 결과 |
 | --- | --- | --- |
