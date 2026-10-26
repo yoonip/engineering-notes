@@ -42,6 +42,7 @@
 
 ## 기존 자료와 이어서 공부합니다
 
+- [산업별 전자와 컴퓨팅](../산업별전자와컴퓨팅_industry-systems/README.md): 자동차·가전·방산항공우주·해양조선·발전·산업설비·기업 IT·의료·철도에서 제품과 하위 시스템, 인터페이스와 검사 결과물을 연결합니다.
 - [반도체 제조 공정](../반도체제조공정_semiconductor-fabrication/README.md): 공정별 단면과 FinFET·GAA·DRAM·NAND·HBM의 구조를 읽습니다.
 - [현장 계측과 검증](../현장계측과검증_measurement-validation/README.md): 계측기·장비 제어·펌웨어 디버깅과 칩·시스템 시험을 읽습니다.
 - [설계와 검증 사례](../설계와검증사례_engineering-cases/README.md): 기존 코드와 오류 재현·원인·수정·날짜별 실행 기록을 확인합니다.
