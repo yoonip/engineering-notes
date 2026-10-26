@@ -1,0 +1,20 @@
+# 항공우주 시스템 | Aerospace systems
+
+재사용 발사체·위성 통신·항공 터보팬을 살펴봅니다. 제품 사양과 함께 추진·열·안테나·통신 경로·반복 운용의 조건을 설명합니다. 자료 확인일은 2026-10-20입니다.
+
+| 분석 글 | 처음 이해할 원리 | 비교하며 읽을 항목 |
+| --- | --- | --- |
+| [Falcon 9](팰컨나인의회수와재비행_falcon9_2026.md) | 로켓 방정식, 귀환 추진제, 유도·항법·제어 | 회수와 재비행, 탑재량과 회수 방식, New Glenn |
+| [Starship](스타십의궤도비행과재사용_starship2026.md) | 단계식 연소, 궤도 에너지, 재진입 열보호 | Flight 14의 실제 결과, 완전 재사용 목표, 독립 모형 |
+| [Starlink](위성인터넷의용량과가입자속도_starlink2026.md) | 위상 배열, 저궤도 지연, PoP·DNS·CDN | V3 위성과 V5 단말, 사양과 독립 망 측정 |
+| [항공 터보팬](항공터보팬의추력과정비_turbofan-engines.md) | 운동량 추력, 바이패스 유동, 팬과 터빈의 회전수 | LEAP·PW1100G, 인증·인도·정비 지시, 수소·전기 추진 |
+
+각 글에 원자료 링크, 기초 용어, 자체 계산과 확인 문제 세 개를 넣었습니다. SpaceX 등 제조사의 제품·임무 설명과 NASA 자료, DLR의 독립 분석, 대학 연구진의 망 측정, 전문 해설·직접 인터뷰의 역할을 구분합니다. 영상을 모두 시청하거나 실물을 시험한 것처럼 쓰지 않았으며 확인한 자료 형태를 본문에 밝힙니다.
+
+날짜가 있는 시험은 그때의 기체·단말·지역을 대상으로 합니다. 사전 계획표와 실제 결과, 단일 시연과 반복 운용, 최대 공유 용량과 사용자 체감 성능을 따로 읽으시면 비교가 쉬워집니다.
+
+관련 원리는 [우주 탐사와 정밀 관측 논문](../../논문해설_papers/우주와관측_space-observation/README.md), 센서·연산·통신의 연결은 [제품·기술 분석 전체](../README.md)에서 이어집니다.
+
+## English
+
+These analyses examine reusable launchers, satellite Internet and aviation turbofans. Each combines public product evidence with foundational explanations, worked calculations and three study questions. Actual mission outcomes, simulations, marketing targets, reservations and repeated operation are treated as different evidence. Sources were checked on 20 October 2026.
