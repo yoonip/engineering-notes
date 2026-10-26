@@ -1,0 +1,10 @@
+project Bench is -- 컴파일과 선택적 증명이 공유할 작은 프로젝트
+   for Source_Dirs use ("."); -- 이 폴더의 직접 작성 소스만 검색
+   for Object_Dir use "obj"; -- 생성 객체를 소스와 분리
+   for Exec_Dir use "bin"; -- 실행 파일 위치를 별도로 지정
+   for Main use ("bench_demo.adb"); -- 일반 Ada I/O 실행기의 진입점
+   package Compiler is -- Ada 컴파일 옵션 묶음
+      for Default_Switches ("Ada") use -- 모든 Ada 입력에 같은 조건 적용
+        ("-gnat2022", "-gnata", "-gnatW8", "-O0", "-gnatwe"); -- Ada2022·계약 활성화·UTF-8·경고 오류 처리
+   end Compiler; -- 컴파일 옵션 끝
+end Bench; -- 프로젝트 정의 끝

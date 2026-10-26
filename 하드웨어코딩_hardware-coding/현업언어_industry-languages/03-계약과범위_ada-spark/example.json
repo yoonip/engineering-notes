@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "id": "industry-03-ada-spark-bench-contracts",
+  "title": "Ada 부분 자료형과 계약으로 확인하는 벤치 메모리 예산",
+  "language": "Ada 2022 with SPARK annotations",
+  "checked_at": "2026-10-26T09:33:03.117399+00:00",
+  "sources": [
+    "bench_config.ads",
+    "bench_config.adb",
+    "bench_demo.adb",
+    "bench.gpr"
+  ],
+  "source_sha256": {
+    "bench_config.ads": "fe60e3e71ac9a7563cfcee7d8145d51a482506082dc1f579a8dafc113f25dde6",
+    "bench_config.adb": "82e0d4faf842eeb5c5275d8712294b76500ab02a72c5ea0f0a5e05dd12886e0d",
+    "bench_demo.adb": "78a05f2d0c8d27bf2a6037435926ab811619915a103f89aea651cc1feaed41e3",
+    "bench.gpr": "17b94472008c27dbd9251601d716b0201648cdd75feb545e3d65786dc344a4d9"
+  },
+  "source_copy_matches": {
+    "bench_config.ads": true,
+    "bench_config.adb": true,
+    "bench_demo.adb": true,
+    "bench.gpr": true
+  },
+  "expected_marker": "PASS ada checks= 3098 accepted= 2063 precondition_rejections= 1034",
+  "returncode": 0,
+  "stdout": "PASS ada checks= 3098 accepted= 2063 precondition_rejections= 1034\n",
+  "stderr": "",
+  "command": [
+    "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe"
+  ],
+  "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+  "build": {
+    "command": [
+      "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\toolchain\\bin\\gnatmake.exe",
+      "-f",
+      "-gnat2022",
+      "-gnata",
+      "-gnatW8",
+      "-O0",
+      "-gnatwe",
+      "bench_demo.adb"
+    ],
+    "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "gcc -c -gnat2022 -gnata -gnatW8 -O0 -gnatwe bench_demo.adb\ngcc -c -gnat2022 -gnata -gnatW8 -O0 -gnatwe bench_config.adb\ngnatbind -x bench_demo.ali\ngnatlink bench_demo.ali -O0\n"
+  },
+  "tool_versions": {
+    "gnatmake": {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\toolchain\\bin\\gnatmake.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 0,
+      "stdout": "GNATMAKE 16.1.0\nCopyright (C) 1995-2025, Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    "gcc": {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\toolchain\\bin\\gcc.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 0,
+      "stdout": "gcc.exe (GNAT-FSF-builds) 16.1.0\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    "gnatbind": {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\toolchain\\bin\\gnatbind.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 0,
+      "stdout": "GNATBIND 16.1.0\nCopyright (C) 1992-2025, Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    }
+  },
+  "environment": {
+    "scope": "child processes only",
+    "PATH_prefix": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\toolchain\\bin",
+    "global_environment_changed": false,
+    "ascii_path_alias": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026",
+    "alias_target": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\ada"
+  },
+  "checks": {
+    "comparison_count": 3098,
+    "accepted_calls": 2063,
+    "observed_precondition_rejections": 1034,
+    "count_width_combinations": 1024,
+    "sum_boundary_combinations": 25,
+    "cli_case_count": 11,
+    "scope": "Required_Bytes의 1024개 개수·폭 조합에 최대·정확·한 바이트 부족 예산을 대조하고, Add_Used는 5개 경계값의 25개 조합을 검사했습니다. 모든 가능한 예산이나 프로그램의 모든 동작을 증명한 결과는 아닙니다."
+  },
+  "cli_cases": [
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "1",
+        "1",
+        "1"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 0,
+      "stdout": "OK required_bytes= 1\n",
+      "stderr": "",
+      "name": "최소 배치",
+      "args": [
+        "1",
+        "1",
+        "1"
+      ],
+      "expected_returncode": 0,
+      "expected_stdout": "OK required_bytes= 1\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "4",
+        "8",
+        "32"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 0,
+      "stdout": "OK required_bytes= 32\n",
+      "stderr": "",
+      "name": "일반 배치",
+      "args": [
+        "4",
+        "8",
+        "32"
+      ],
+      "expected_returncode": 0,
+      "expected_stdout": "OK required_bytes= 32\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "64",
+        "16",
+        "1024"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 0,
+      "stdout": "OK required_bytes= 1024\n",
+      "stderr": "",
+      "name": "최대 배치",
+      "args": [
+        "64",
+        "16",
+        "1024"
+      ],
+      "expected_returncode": 0,
+      "expected_stdout": "OK required_bytes= 1024\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "64",
+        "16",
+        "1023"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 1,
+      "stdout": "REJECT precondition Assertion_Error\n",
+      "stderr": "",
+      "name": "예산 한 바이트 부족",
+      "args": [
+        "64",
+        "16",
+        "1023"
+      ],
+      "expected_returncode": 1,
+      "expected_stdout": "REJECT precondition Assertion_Error\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "65",
+        "1",
+        "1024"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 1,
+      "stdout": "REJECT range_or_integer Constraint_Error\n",
+      "stderr": "",
+      "name": "개수 상한 초과",
+      "args": [
+        "65",
+        "1",
+        "1024"
+      ],
+      "expected_returncode": 1,
+      "expected_stdout": "REJECT range_or_integer Constraint_Error\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "0",
+        "1",
+        "1024"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 1,
+      "stdout": "REJECT range_or_integer Constraint_Error\n",
+      "stderr": "",
+      "name": "개수 하한 미달",
+      "args": [
+        "0",
+        "1",
+        "1024"
+      ],
+      "expected_returncode": 1,
+      "expected_stdout": "REJECT range_or_integer Constraint_Error\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "1",
+        "17",
+        "1024"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 1,
+      "stdout": "REJECT range_or_integer Constraint_Error\n",
+      "stderr": "",
+      "name": "폭 상한 초과",
+      "args": [
+        "1",
+        "17",
+        "1024"
+      ],
+      "expected_returncode": 1,
+      "expected_stdout": "REJECT range_or_integer Constraint_Error\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "1",
+        "1",
+        "-1"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 1,
+      "stdout": "REJECT range_or_integer Constraint_Error\n",
+      "stderr": "",
+      "name": "음수 예산",
+      "args": [
+        "1",
+        "1",
+        "-1"
+      ],
+      "expected_returncode": 1,
+      "expected_stdout": "REJECT range_or_integer Constraint_Error\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "1",
+        "1",
+        "1025"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 1,
+      "stdout": "REJECT range_or_integer Constraint_Error\n",
+      "stderr": "",
+      "name": "예산 상한 초과",
+      "args": [
+        "1",
+        "1",
+        "1025"
+      ],
+      "expected_returncode": 1,
+      "expected_stdout": "REJECT range_or_integer Constraint_Error\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "abc",
+        "1",
+        "1"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 1,
+      "stdout": "REJECT range_or_integer Constraint_Error\n",
+      "stderr": "",
+      "name": "정수 형식 오류",
+      "args": [
+        "abc",
+        "1",
+        "1"
+      ],
+      "expected_returncode": 1,
+      "expected_stdout": "REJECT range_or_integer Constraint_Error\n",
+      "passed": true
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build\\bench_demo.exe",
+        "1",
+        "1"
+      ],
+      "cwd": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-ada-20261026\\build",
+      "returncode": 2,
+      "stdout": "usage: bench_demo [count width budget]\n",
+      "stderr": "",
+      "name": "인수 개수 오류",
+      "args": [
+        "1",
+        "1"
+      ],
+      "expected_returncode": 2,
+      "expected_stdout": "usage: bench_demo [count width budget]\n",
+      "passed": true
+    }
+  ],
+  "runtime_policy": {
+    "assertions_enabled": true,
+    "switch": "-gnata",
+    "range_checks_suppressed": false,
+    "compiler_warnings_as_errors": true,
+    "contracts_observed_at_runtime": true
+  },
+  "proof": {
+    "status": "not_run",
+    "tool": "GNATprove",
+    "installed_for_this_example": false,
+    "reason": "임시 저장공간 제약으로 추가 대형 도구 설치를 보류했습니다. SPARK_Mode를 붙인 함수의 GNAT 컴파일과 런타임 계약 검사만 수행했습니다.",
+    "proved_verification_conditions": null,
+    "claims_formal_proof": false
+  },
+  "project_file": {
+    "file": "bench.gpr",
+    "included_as_reference": true,
+    "used_in_actual_build": false,
+    "note": "실제 빌드는 gnatmake 명령으로 수행했습니다. gprbuild와 GNATprove 프로젝트 실행은 수행하지 않았습니다."
+  },
+  "tool_distribution": {
+    "name": "Alire GNAT-FSF-builds native Windows x86_64",
+    "version": "16.1.0-1",
+    "release_url": "https://github.com/alire-project/GNAT-FSF-builds/releases/tag/gnat-16.1.0-1",
+    "archive_url": "https://github.com/alire-project/GNAT-FSF-builds/releases/download/gnat-16.1.0-1/gnat-x86_64-windows64-16.1.0-1.tar.gz",
+    "archive_sha256": "bbd696339184ec0301fad1ec6170e8eedb03b83665e2bb3a52571d5fbf064cf9",
+    "archive_bytes": 315932876,
+    "sha256_matches_official": true,
+    "download_archive_removed_after_use": true,
+    "license_metadata": "GPL-3.0-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1",
+    "crate_metadata_url": "https://raw.githubusercontent.com/alire-project/alire-index/stable-1.4.0/index/gn/gnat_native/gnat_native-16.1.0.toml",
+    "copied_to_repository": false
+  },
+  "official_references": [
+    {
+      "url": "https://learn.adacore.com/courses/intro-to-ada/chapters/strongly_typed_language.html",
+      "scope": "부분 자료형과 범위 검사"
+    },
+    {
+      "url": "https://learn.adacore.com/courses/intro-to-ada/chapters/contracts.html",
+      "scope": "Pre/Post 계약의 호출자·피호출자 관계"
+    },
+    {
+      "url": "https://gcc.gnu.org/onlinedocs/gnat_ugn/Debugging-and-Assertion-Control.html",
+      "scope": "-gnata와 Assertion_Policy(Check)"
+    },
+    {
+      "url": "https://docs.adacore.com/spark2014-docs/html/ug/en/getting_started.html",
+      "scope": "GNATprove 도구와 SPARK 시작 절차; 확인한 온라인 문서는 개발판28.0w"
+    },
+    {
+      "url": "https://www.adacore.com/case-studies/ada-and-spark-at-welch-allyn",
+      "scope": "공급사가 소개하는 의료기기 분야의 Ada/SPARK 사용 사례; 본 벤치의 인증 근거가 아님"
+    }
+  ],
+  "origin": "이 폴더의 벤치 계산·검사 코드는 직접 작성했습니다. 공식 예제 코드를 복사하지 않았고 컴파일러 바이너리도 포함하지 않습니다."
+}
