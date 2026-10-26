@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "id": "02-matlab-octave-mass-spring",
+  "title": "MATLAB·Octave 질량·스프링 행렬 상태공간과 수치 적분",
+  "language": "MATLAB-compatible .m executed with GNU Octave",
+  "original_example": true,
+  "sources": [
+    "mass_spring_demo.m"
+  ],
+  "source_sha256": {
+    "mass_spring_demo.m": "7ca29390fc773ff6271e57226976fa3f94b6929874e7051fbb11f80dec334b98"
+  },
+  "returncode": 0,
+  "stdout": "PASS matlab-octave checks=496 matrix_cases=153 ode_cases=3 rk4_grids=3 rejected_inputs=8\n",
+  "stderr": "",
+  "expected_marker": "PASS matlab-octave checks=496 matrix_cases=153 ode_cases=3 rk4_grids=3 rejected_inputs=8",
+  "execution_date": "2026-10-26",
+  "tools": {
+    "runtime": "GNU Octave",
+    "version": "11.3.0",
+    "architecture": "x86_64-w64-mingw32",
+    "runtime_license": "GPL-3.0-or-later",
+    "matlab_executed": false,
+    "simulink_executed": false,
+    "add_on_packages_required": [],
+    "source_parser_and_runtime": "Actual GNU Octave .m execution; no Python numerical substitution"
+  },
+  "actual_execution": {
+    "command": [
+      "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_training\\octave-runtime\\octave-11.3.0-w64\\mingw64\\bin\\octave-cli.exe",
+      "--no-window-system",
+      "--quiet",
+      "--no-init-file",
+      "--no-site-file",
+      "--no-history",
+      "--eval",
+      "mass_spring_demo('result.json');"
+    ],
+    "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_training\\mass-spring-run",
+    "environment": {
+      "OCTAVE_HOME": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_training\\octave-runtime\\octave-11.3.0-w64\\mingw64",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "PATH_prefix": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_training\\octave-runtime\\octave-11.3.0-w64\\mingw64\\bin"
+    },
+    "returncode": 0,
+    "stdout": "PASS matlab-octave checks=496 matrix_cases=153 ode_cases=3 rk4_grids=3 rejected_inputs=8\n",
+    "stderr": "",
+    "source_sha256": "7ca29390fc773ff6271e57226976fa3f94b6929874e7051fbb11f80dec334b98",
+    "staged_sha256": "7ca29390fc773ff6271e57226976fa3f94b6929874e7051fbb11f80dec334b98"
+  },
+  "commands": [
+    {
+      "kind": "actual_numerical_execution",
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_training\\octave-runtime\\octave-11.3.0-w64\\mingw64\\bin\\octave-cli.exe",
+        "--no-window-system",
+        "--quiet",
+        "--no-init-file",
+        "--no-site-file",
+        "--no-history",
+        "--eval",
+        "mass_spring_demo('result.json');"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_training\\mass-spring-run",
+      "environment": {
+        "OCTAVE_HOME": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_training\\octave-runtime\\octave-11.3.0-w64\\mingw64",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PATH_prefix": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_training\\octave-runtime\\octave-11.3.0-w64\\mingw64\\bin"
+      },
+      "returncode": 0,
+      "stdout": "PASS matlab-octave checks=496 matrix_cases=153 ode_cases=3 rk4_grids=3 rejected_inputs=8\n",
+      "stderr": ""
+    }
+  ],
+  "download_provenance": {
+    "url": "https://ftp.gnu.org/gnu/octave/windows/octave-11.3.0-w64.7z",
+    "bytes": 481127074,
+    "sha256": "fd3cf0e885467a15211b8ceded42800432a5462481324d49a896ef257e05d1a0",
+    "archive_retained": false,
+    "extracted_runtime_retained": true,
+    "installation_scope": "Private selected CLI runtime; no global PATH or registry changes",
+    "signature_verified": false
+  },
+  "model": {
+    "equation": "m*x_ddot + c*x_dot + k*x = 0",
+    "state_order": [
+      "position_m",
+      "velocity_m_s"
+    ],
+    "state_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        -4,
+        -0.4
+      ]
+    ],
+    "supported_contract": "Finite real scalar m>0, k>0, c>=0 and c*c<4*m*k; finite 2-by-1 initial state; positive integer RK4 step count",
+    "no_forcing_or_control": true,
+    "duration_s": 5,
+    "mass_kg": 1,
+    "damping_Ns_m": 0.4,
+    "stiffness_N_m": 4,
+    "initial_states": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -0.5,
+        0.3
+      ]
+    ],
+    "requested_ode_samples_per_case": 51,
+    "ode_tolerances": {
+      "relative": 1e-9,
+      "absolute_position_m": 1e-11,
+      "absolute_velocity_m_s": 1e-11
+    }
+  },
+  "verification": {
+    "status": "passed_actual_m_runtime_checks",
+    "runtime_version": "11.3.0",
+    "checks": 496,
+    "matrix_cases": 153,
+    "ode_cases": [
+      {
+        "initial_state": [
+          1,
+          0
+        ],
+        "samples": 51,
+        "maximum_position_error_m": 2.3757806832946926e-10,
+        "maximum_velocity_error_m_s": 4.705809075744583e-10
+      },
+      {
+        "initial_state": [
+          0,
+          1
+        ],
+        "samples": 51,
+        "maximum_position_error_m": 1.1431694479924204e-10,
+        "maximum_velocity_error_m_s": 2.378731100982634e-10
+      },
+      {
+        "initial_state": [
+          -0.5,
+          0.3
+        ],
+        "samples": 51,
+        "maximum_position_error_m": 1.2330855780895433e-10,
+        "maximum_velocity_error_m_s": 2.400459275797573e-10
+      }
+    ],
+    "rk4_grids": [
+      {
+        "steps": 50,
+        "step_s": 0.1,
+        "maximum_position_error_m": 0.000048331796593831244,
+        "maximum_velocity_error_m_s": 0.00009967297502641581,
+        "maximum_energy_increase_J": -0.00009649992604382485
+      },
+      {
+        "steps": 100,
+        "step_s": 0.05,
+        "maximum_position_error_m": 0.000003000444121548096,
+        "maximum_velocity_error_m_s": 0.000006179480495915879,
+        "maximum_energy_increase_J": -0.000016121358687171128
+      },
+      {
+        "steps": 200,
+        "step_s": 0.025,
+        "maximum_position_error_m": 1.8649588148789142e-7,
+        "maximum_velocity_error_m_s": 3.8464818324923655e-7,
+        "maximum_energy_increase_J": -0.0000012957441127281477
+      }
+    ],
+    "observed_orders": [
+      4.009724656405822,
+      4.007960386277465
+    ],
+    "rejected_inputs": 8,
+    "state_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        -4,
+        -0.4
+      ]
+    ],
+    "mass_kg": 1,
+    "damping_Ns_m": 0.4,
+    "stiffness_N_m": 4,
+    "trace": [
+      {
+        "time_s": 0,
+        "position_m": 1,
+        "velocity_m_s": 0
+      },
+      {
+        "time_s": 1.25,
+        "position_m": -0.5704156589346033,
+        "velocity_m_s": -0.9525197864886003
+      },
+      {
+        "time_s": 2.5,
+        "position_m": 0.0985505380447256,
+        "velocity_m_s": 1.1773937976815136
+      },
+      {
+        "time_s": 3.75,
+        "position_m": 0.22415795209800735,
+        "velocity_m_s": -0.8776242852647739
+      },
+      {
+        "time_s": 5,
+        "position_m": -0.3368518301558191,
+        "velocity_m_s": 0.3706911999859616
+      }
+    ],
+    "runtime_name": "GNU Octave"
+  },
+  "check_breakdown": [
+    {
+      "name": "expm and analytic position/velocity plus dissipation identity",
+      "cases": 153,
+      "checks_per_case": 3,
+      "checks": 459
+    },
+    {
+      "name": "Actual ode45 requested times, position, velocity, initial state",
+      "cases": 3,
+      "checks_per_case": 4,
+      "checks": 12
+    },
+    {
+      "name": "Fixed RK4 position, velocity, sampled energy decrease, energy sign",
+      "cases": 3,
+      "checks_per_case": 4,
+      "checks": 12
+    },
+    {
+      "name": "Observed convergence order for adjacent refinements",
+      "checks": 2
+    },
+    {
+      "name": "Exact zero equilibrium",
+      "checks": 1
+    },
+    {
+      "name": "Undamped position and energy drift",
+      "checks": 2
+    },
+    {
+      "name": "Expected contract rejection",
+      "checks": 8
+    }
+  ],
+  "rejected_input_cases": [
+    {
+      "case": "zero mass",
+      "reason": "Requires m>0"
+    },
+    {
+      "case": "zero stiffness",
+      "reason": "Requires k>0"
+    },
+    {
+      "case": "negative damping",
+      "reason": "Passive damping contract requires c>=0"
+    },
+    {
+      "case": "critical damping c=4 for m=1,k=4",
+      "reason": "Physically valid regime outside this underdamped closed-form implementation"
+    },
+    {
+      "case": "NaN mass",
+      "reason": "Finite real scalar required"
+    },
+    {
+      "case": "row initial state [1,0]",
+      "reason": "2-by-1 column state required"
+    },
+    {
+      "case": "infinite initial position",
+      "reason": "Finite state required"
+    },
+    {
+      "case": "zero integration steps",
+      "reason": "Positive integer steps required"
+    }
+  ],
+  "comparison_scope": {
+    "independent_reference": "Closed-form trigonometric underdamped solution derived from the differential equation; not output from another numerical solver",
+    "matrix_comparison": "153 states with position and velocity compared separately in their units",
+    "convergence_claim": "Two observed refinement ratios for this smooth fixed problem; not a universal guarantee for all ODEs",
+    "energy_claim": "Sampled energy conditions on these selected grids; RK4 is not asserted to preserve energy or monotonicity for arbitrary steps",
+    "matlab_compatibility": "Common MATLAB syntax and documented interfaces; MATLAB itself was not executed"
+  },
+  "limits": [
+    "Ideal linear single-degree-of-freedom model",
+    "No external input, feedback controller, parameter identification, sensor data, real-time target, hardware or Simulink execution",
+    "Critical/overdamped regimes need a separate analytic reference",
+    "No exhaustive validation of arbitrary matrix ODEs"
+  ],
+  "references": [
+    {
+      "title": "GNU Octave 소개와 GPL",
+      "url": "https://octave.org/about",
+      "role": "MATLAB과 주로 호환되는 수치 언어와 라이선스"
+    },
+    {
+      "title": "GNU Octave 공식 배포",
+      "url": "https://octave.org/download",
+      "role": "실제 사용한 Windows 11.3.0 배포 경로"
+    },
+    {
+      "title": "GNU Octave MATLAB 호환 ODE 솔버",
+      "url": "https://docs.octave.org/latest/Matlab_002dcompatible-solvers.html",
+      "role": "ode45의 인터페이스, 적응 간격과 허용치",
+      "web_manual_version_shown": "11.1.0"
+    },
+    {
+      "title": "MathWorks ode45",
+      "url": "https://www.mathworks.com/help/matlab/ref/ode45.html",
+      "role": "MATLAB ODE 함수의 입력과 시간별 행 출력"
+    },
+    {
+      "title": "MathWorks expm",
+      "url": "https://www.mathworks.com/help/matlab/ref/expm.html",
+      "role": "행렬 지수와 원소별 exp의 구분"
+    },
+    {
+      "title": "MathWorks 제어 시스템 산업 사용",
+      "url": "https://www.mathworks.com/solutions/control-systems.html",
+      "role": "모델링과 제어 설계·시험의 실제 제품 사용 범위"
+    }
+  ]
+}
