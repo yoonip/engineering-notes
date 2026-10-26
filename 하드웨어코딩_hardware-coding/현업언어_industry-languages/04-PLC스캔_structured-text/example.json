@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "id": "plc-temperature-indicator-scan",
+  "title": "PLC 표시 상태의 스캔·유지·경계 검사",
+  "language": "IEC 61131-3 Structured Text; C host checker; Python runner",
+  "original_example": true,
+  "sources": [
+    "indicator.st",
+    "check_driver.c",
+    "run_checks.py"
+  ],
+  "source_sha256": {
+    "indicator.st": "7794a6f22e9ea4b0cc1a05ecd44ecf56cb9b9688f70fcb7c9345d53a4df641b5",
+    "check_driver.c": "3698096911b48bf9305ea33f07ee2091832ce0cc8a4c8eb3ee0181cd8a6e9d07",
+    "run_checks.py": "04f3f99eb8271f62cbe293d2cbc2e5156833e5781968dc785fcc338bfe0b23fd"
+  },
+  "verified_date": "2026-10-26",
+  "command": [
+    "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "-B",
+    "하드웨어코딩_hardware-coding/현업언어_industry-languages/04-PLC스캔_structured-text/run_checks.py",
+    "--matiec",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\matiec\\iec2c.exe",
+    "--zig",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+    "--build-dir",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1",
+    "--report",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\results.json"
+  ],
+  "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10",
+  "returncode": 0,
+  "stdout": "PASS structured-text normal_checks=32008 negative_boundary=detected\n",
+  "stderr": "",
+  "expected_marker": "PASS structured-text normal_checks=32008 negative_boundary=detected",
+  "tool_provenance": {
+    "release": "https://github.com/beremiz/beremiz/releases/tag/v1.6.0",
+    "archive_bytes": 734495405,
+    "archive_sha256": "52c5f212def8fa034ad106c4178e7b410235101dc5b1515c586ef5ffbb29bf98",
+    "extracted_files": 41,
+    "compiler_sha256": "cadcf1a00498f6471193d199aa69c31f6b19ce118b7446dbf80a76578e2441a1"
+  },
+  "verification": {
+    "status": "passed_actual_st_translation_and_host_checks",
+    "source_sha256": {
+      "indicator.st": "7794a6f22e9ea4b0cc1a05ecd44ecf56cb9b9688f70fcb7c9345d53a4df641b5",
+      "check_driver.c": "3698096911b48bf9305ea33f07ee2091832ce0cc8a4c8eb3ee0181cd8a6e9d07",
+      "run_checks.py": "04f3f99eb8271f62cbe293d2cbc2e5156833e5781968dc785fcc338bfe0b23fd"
+    },
+    "compiler_sha256": "cadcf1a00498f6471193d199aa69c31f6b19ce118b7446dbf80a76578e2441a1",
+    "library_header_sha256": {
+      "accessor.h": "7345888558b972980b784cbed1b4dbbab57d6a6914b0a3997b85a9e3561810ba",
+      "globals_instances_py.h": "4d8495dfd76995d0e4743efc623b0ee4cc6ee7bbd62d7e061425aa004ba3e071",
+      "globals_proto_c.h": "c1126ebdb2994188a3c86c0f5ff6215c987924b9c0290b97560f21187b1f27fe",
+      "globals_ticktime_py.h": "5f8928a56f33048622f457a60e11aa03813fccd2f59abcdc6358d846ea267169",
+      "iec_std_FB.h": "4101144861512e9516aea776cb48c7ac2a5176cbef0377ec4fe86a43b962c093",
+      "iec_std_FB_impl.h": "af4950f4c81cd8c9523c3e8bc85585e5ecbf646143e7e202da3c9b5ac9478efd",
+      "iec_std_FB_no_ENENO.h": "7b252d645589083112a5c840c469785ca5a4ac7d84161ccffe82cf97e0986b39",
+      "iec_std_FB_no_ENENO_impl.h": "db1da5770f0300bcf2abb9134866db215a98ca262631612841723ce7e27faa8b",
+      "iec_std_functions.h": "bbacc379a314c44517cfb0ce8c071f0998c8b55dc054855c467bf7b642e68f03",
+      "iec_std_lib.h": "5f8fa363c2d928ab09a0c466a54da63441d0728665776fac1508b0bd8ecfb665",
+      "iec_types.h": "1c4051622fb2c3f079a990a4a3c6f024efe6218d903c2769aa5349d77423eca4",
+      "iec_types_all.h": "c3c6a35a5bb3c91b365ce418b2cd9403ff6aff85a56e59164f440a763870d004",
+      "iec_types_list.h": "475772696335f5577e5560a7a4e0f684b4c0a783b1393ba221c5b68b75634fe8",
+      "pous_decl_py.h": "71b1aa32bfb54c189bb34c3049f9ef2403096bc40a1e37b39275f3c6397e484c",
+      "pous_flatcount_c.h": "a65318510a0f0aecc64da67e5043de2c029b43de477a5f96802ba1a114c44378",
+      "pous_flatcount_py.h": "23da12b046623dde1f276ba65f62b353534ae5691749e7a00a55a1512020f1ae",
+      "pous_recurse_c.h": "93808d9fd11be7884436755922890cb4ecf8c3a69741d91466b8ff6639f8b3e3",
+      "undef_macros.h": "b658bc1d8d890d867b42bd75d0f19d45af168de6cb382eb3650d0078a22b478b"
+    },
+    "commands": [
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\matiec\\iec2c.exe",
+          "-v"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1",
+        "returncode": 0,
+        "stdout": "matiec version 0.1\nchangeset id: \n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+          "cc",
+          "--version"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1",
+        "returncode": 0,
+        "stdout": "clang version 21.1.0\nTarget: x86_64-unknown-windows-gnu\nThread model: posix\nInstalledDir: C:/Users/test2/Documents/ChatGPT/코딩/tmp/c-compiler/ziglang\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\matiec\\iec2c.exe",
+          "-I",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\matiec\\lib",
+          "-T",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\normal",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\normal\\indicator.st"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\normal",
+        "returncode": 0,
+        "stdout": "POUS.c\nPOUS.h\nLOCATED_VARIABLES.h\nGLOBALS.h\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+          "cc",
+          "-std=c11",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-isystem",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\matiec\\lib\\C",
+          "-I",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\normal",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\normal\\check_driver.c",
+          "-o",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\normal\\check.exe"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\normal",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\normal\\check.exe"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\normal",
+        "returncode": 0,
+        "stdout": "TRACE scan=1 enabled=1 temperature10=240 lit=0\nTRACE scan=2 enabled=1 temperature10=290 lit=0\nTRACE scan=3 enabled=1 temperature10=300 lit=1\nTRACE scan=4 enabled=1 temperature10=270 lit=1\nTRACE scan=5 enabled=1 temperature10=250 lit=0\nTRACE scan=6 enabled=1 temperature10=300 lit=1\nTRACE scan=7 enabled=0 temperature10=400 lit=0\nTRACE scan=8 enabled=1 temperature10=275 lit=0\nPASS plc sequences=8000 scans=24008 checks=32008\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\matiec\\iec2c.exe",
+          "-I",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\matiec\\lib",
+          "-T",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\negative_boundary",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\negative_boundary\\indicator.st"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\negative_boundary",
+        "returncode": 0,
+        "stdout": "POUS.c\nPOUS.h\nLOCATED_VARIABLES.h\nGLOBALS.h\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+          "cc",
+          "-std=c11",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Werror",
+          "-isystem",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\matiec\\lib\\C",
+          "-I",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\negative_boundary",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\negative_boundary\\check_driver.c",
+          "-o",
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\negative_boundary\\check.exe"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\negative_boundary",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\negative_boundary\\check.exe"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\plc\\run-1\\negative_boundary",
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "FAIL plc sequence=155 scan=2 expected=0 actual=1\n"
+      }
+    ],
+    "results": [
+      {
+        "name": "normal",
+        "expected_returncode": 0,
+        "returncode": 0,
+        "stdout": "TRACE scan=1 enabled=1 temperature10=240 lit=0\nTRACE scan=2 enabled=1 temperature10=290 lit=0\nTRACE scan=3 enabled=1 temperature10=300 lit=1\nTRACE scan=4 enabled=1 temperature10=270 lit=1\nTRACE scan=5 enabled=1 temperature10=250 lit=0\nTRACE scan=6 enabled=1 temperature10=300 lit=1\nTRACE scan=7 enabled=0 temperature10=400 lit=0\nTRACE scan=8 enabled=1 temperature10=275 lit=0\nPASS plc sequences=8000 scans=24008 checks=32008\n",
+        "stderr": "",
+        "input_sha256": "7794a6f22e9ea4b0cc1a05ecd44ecf56cb9b9688f70fcb7c9345d53a4df641b5",
+        "generated_sha256": {
+          "POUS.c": "2ddb294ad67f77387d09aa6e1d624d9003b2e1263d83796ed1a86ff520715108",
+          "POUS.h": "a2fa4bb9fa4026a9ce1c3645b01527a8c07aa2524054315d61fb5e77f2a15ac3"
+        }
+      },
+      {
+        "name": "negative_boundary",
+        "expected_returncode": 1,
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "FAIL plc sequence=155 scan=2 expected=0 actual=1\n",
+        "input_sha256": "7bf122bb5f22176043b1f1ae8ed1966d056f91052ccb16f9e89380d841d1d802",
+        "generated_sha256": {
+          "POUS.c": "9de2b844c4d7843a471665e68d8960fd17893c3206c359333c89a6899cdac4a3",
+          "POUS.h": "a2fa4bb9fa4026a9ce1c3645b01527a8c07aa2524054315d61fb5e77f2a15ac3"
+        }
+      }
+    ],
+    "checks": 32008,
+    "sequences": 8000,
+    "scans": 24008,
+    "scope": {
+      "actual_st_translation": true,
+      "generated_c_execution": true,
+      "cyclic_scheduler": false,
+      "real_plc": false,
+      "physical_io": false,
+      "safety_validation": false
+    }
+  },
+  "scope": {
+    "actual_st_translation": true,
+    "generated_c_execution": true,
+    "cyclic_scheduler": false,
+    "real_plc": false,
+    "physical_io": false,
+    "safety_validation": false
+  }
+}
