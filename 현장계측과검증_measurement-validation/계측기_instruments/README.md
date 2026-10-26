@@ -13,7 +13,7 @@
 | 스펙트럼 분석기 | [R&S FPC1500: RBW·VBW, 입력 레벨과 내부 고조파](스펙트럼의대역폭과입력레벨_rohde-schwarz-fpc1500.md) |
 | 네트워크 분석기 | [Keysight E5061B: S11·S21, SOLT 교정과 기준면](반사와전달의기준면측정_keysight-e5061b.md) |
 
-[현장 계측과 검증](../README.md) · [센서·계측 기초](../../분야_topics/37-센서계측_sensors-instrumentation/README.md)
+[현장 계측과 검증](../README.md) · [센서·계측 기초](../../전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/README.md)
 
 ## English
 

@@ -77,17 +77,17 @@
 
 | 확인하려는 문제 | 먼저 읽을 글 | 이어서 볼 구현·분야 |
 | --- | --- | --- |
-| 전압 측정의 오차 원인 | DMM·SMU → 오실로스코프 | [센서·계측](../분야_topics/37-센서계측_sensors-instrumentation/README.md), [PCB 전원·귀환 경로](../분야_topics/12-PCB하드웨어설계_pcb-hardware/README.md) |
+| 전압 측정의 오차 원인 | DMM·SMU → 오실로스코프 | [센서·계측](../전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/README.md), [PCB 전원·귀환 경로](../전자컴퓨터공학_ece/12-PCB하드웨어설계_pcb-hardware/README.md) |
 | 전송 완료와 데이터 일치 | DMA·캐시 → 로직 분석기 | [FPGA 프레임 오류 사례](../설계와검증사례_engineering-cases/프레임오류와FPGA검증_fpga-frame-validation.md), [UART 호스트·펌웨어](../프로젝트_projects/embedded-validation-lab/README.md) |
-| 최적화에 따른 고장 재현 차이 | Cortex-M 예외 추적 | [C·C++·Python](../분야_topics/04-c-cpp-python/README.md), [펌웨어·RTOS](../분야_topics/17-펌웨어-RTOS_firmware-rtos/README.md), [시스템 디버깅](../분야_topics/19-시스템디버깅_openocd-debugging/README.md) |
-| 조건별 칩 오동작과 시험 간 차이 | PVT·shmoo → 계측 자동화 | [DFT·제조 시험](../분야_topics/51-반도체테스트제조_test-manufacturing/README.md), [검증 모델과 결과 집계](../프로젝트_projects/practical-silicon-lab/validation/README.md) |
-| 차량·설비의 간헐적 통신 장애 | CAN·EtherCAT·Modbus → 로직 분석기 | [인터페이스·통신](../분야_topics/20-인터페이스통신_interfaces-communications/README.md), [제어·신호처리](../분야_topics/21-신호처리제어_signals-control/README.md) |
-| RTL과 소프트웨어의 정수 결과 비교 | 프레임 사례의 바이트·채널 해석 | [컴퓨터구조](../분야_topics/16-프로세서구조_arm-riscv/README.md), [Transformer·DRAM-PIM](../프로젝트_projects/transformer-dram-pim/README.md), [부분곱·CNN](../프로젝트_projects/cnn-partial-product-reproduction/README.md) |
-| AI 평가의 입력 누출 | [제조 시계열의 인과 경계](../설계와검증사례_engineering-cases/제조시계열의인과경계_causal-trace-validation.md) | [제조 이상 탐지 코드](../프로젝트_projects/st-awfd-anomaly-triage/README.md), [AI 평가](../분야_topics/46-AI응용에이전트평가_ai-agents-evaluation/README.md) |
-| 서버·자동화 도구의 갱신 충돌 | [SQLite 갱신 충돌 사례](../설계와검증사례_engineering-cases/동시갱신과SQLite검증_sqlite-concurrency.md) | [Linux](../분야_topics/01-linux-bash/README.md), [DB·데이터공학](../분야_topics/40-데이터베이스데이터공학_databases-data-engineering/README.md) |
+| 최적화에 따른 고장 재현 차이 | Cortex-M 예외 추적 | [C·C++·Python](../전자컴퓨터공학_ece/04-c-cpp-python/README.md), [펌웨어·RTOS](../전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/README.md), [시스템 디버깅](../전자컴퓨터공학_ece/19-시스템디버깅_openocd-debugging/README.md) |
+| 조건별 칩 오동작과 시험 간 차이 | PVT·shmoo → 계측 자동화 | [DFT·제조 시험](../전자컴퓨터공학_ece/51-반도체테스트제조_test-manufacturing/README.md), [검증 모델과 결과 집계](../프로젝트_projects/practical-silicon-lab/validation/README.md) |
+| 차량·설비의 간헐적 통신 장애 | CAN·EtherCAT·Modbus → 로직 분석기 | [인터페이스·통신](../전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/README.md), [제어·신호처리](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/README.md) |
+| RTL과 소프트웨어의 정수 결과 비교 | 프레임 사례의 바이트·채널 해석 | [컴퓨터구조](../전자컴퓨터공학_ece/16-프로세서구조_arm-riscv/README.md), [Transformer·DRAM-PIM](../프로젝트_projects/transformer-dram-pim/README.md), [부분곱·CNN](../프로젝트_projects/cnn-partial-product-reproduction/README.md) |
+| AI 평가의 입력 누출 | [제조 시계열의 인과 경계](../설계와검증사례_engineering-cases/제조시계열의인과경계_causal-trace-validation.md) | [제조 이상 탐지 코드](../프로젝트_projects/st-awfd-anomaly-triage/README.md), [AI 평가](../전자컴퓨터공학_ece/46-AI응용에이전트평가_ai-agents-evaluation/README.md) |
+| 서버·자동화 도구의 갱신 충돌 | [SQLite 갱신 충돌 사례](../설계와검증사례_engineering-cases/동시갱신과SQLite검증_sqlite-concurrency.md) | [Linux](../전자컴퓨터공학_ece/01-linux-bash/README.md), [DB·데이터공학](../전자컴퓨터공학_ece/40-데이터베이스데이터공학_databases-data-engineering/README.md) |
 | 알고리즘과 언어별 구현 비교 | [세 언어의 기초 알고리즘](../프로젝트_projects/coding-practice-basics/README.md) | [C·C++·Python 실행 도구](../프로젝트_projects/coding-practice-toolkit/README.md), [코딩테스트 풀이·줄별 문법](../programmers/README.md) |
 
-전력·열·기계 구동의 배경은 [전력전자·에너지](../분야_topics/31-전력전자에너지_power-energy/README.md), [패키징·열 설계](../분야_topics/36-패키징열설계_packaging-thermal/README.md), [로봇·제어](../분야_topics/22-로봇제어_robotics-boards/README.md)로 이어집니다. 제품의 기술·산업 비교는 [제품 리뷰](../제품리뷰_reviews/README.md)에 따로 있습니다.
+전력·열·기계 구동의 배경은 [전력전자·에너지](../전자컴퓨터공학_ece/31-전력전자에너지_power-energy/README.md), [패키징·열 설계](../전자컴퓨터공학_ece/36-패키징열설계_packaging-thermal/README.md), [로봇·제어](../전자컴퓨터공학_ece/22-로봇제어_robotics-boards/README.md)로 이어집니다. 제품의 기술·산업 비교는 [제품·기술 분석](../제품기술분석_product-technology/README.md)에 따로 있습니다.
 
 ## 실행 근거를 읽는 방법
 

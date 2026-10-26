@@ -111,7 +111,7 @@ python -B tests/test_offline.py --report /existing/folder/verification.local.jso
 
 - PyVISA 1.15.0, [Communicating with your instrument](https://pyvisa.readthedocs.io/en/1.15.0/introduction/communication.html), 통신 문제와 query 동작. [Resources](https://pyvisa.readthedocs.io/en/1.15.0/introduction/resources.html), timeout·termination·query_delay. 2026-10-21 열람했습니다.
 - [검증 예제 설명과 실행 결과 형식](../../프로젝트_projects/practical-silicon-lab/validation/README.md), [offline 검사 원문](../../프로젝트_projects/practical-silicon-lab/tests/test_offline.py).
-- [센서·계측의 기초](../../분야_topics/37-센서계측_sensors-instrumentation/README.md), [개별 장비의 연결과 설정](../계측기_instruments/README.md).
+- [센서·계측의 기초](../../전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/README.md), [개별 장비의 연결과 설정](../계측기_instruments/README.md).
 
 ## English
 
