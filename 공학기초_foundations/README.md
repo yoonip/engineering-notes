@@ -29,8 +29,8 @@
 
 | 글 | 다루는 내용 |
 | --- | --- |
-| [RC/RLC 회로](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md) | 전하·에너지 보존, 시정수·감쇠·주파수 응답 |
-| [MOS 전하와 스위칭](../전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md) | 게이트의 전류 제어와 square-law 모형의 적용 범위 |
+| [RC/RLC 회로](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/RC와RLC응답_rc-rlc-response.md) | 전하·에너지 보존, 시정수·감쇠·주파수 응답 |
+| [MOS 전하와 스위칭](../전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/MOSFET의동작원리_mos-electrostatics-switching.md) | 게이트의 전류 제어와 square-law 모형의 적용 범위 |
 | [FSM·동기식 FIFO](../전자컴퓨터공학_ece/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md) | 동일 에지의 읽기·쓰기·리셋과 데이터 순서 |
 | [지역성·cache·AMAT](../전자컴퓨터공학_ece/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md) | 메모리 지역성과 평균 접근 시간의 조건 |
 | [전송선·반사](../전자컴퓨터공학_ece/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md) | 분포된 배선 모형과 임피던스 불일치의 반사 |
@@ -55,7 +55,7 @@
 | [ADC 양자화](../전자컴퓨터공학_ece/32-혼성신호-ADC-DAC_mixed-signal-data-converters/해설_notes/ADC양자화_adc-quantization.md) | 분해능·정확도와 양자화 SNR |
 | [피드백·이산 모델](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md) | 표본화·입력 유지와 제어 이득·안정성 |
 | [미분·역전파·학습](../전자컴퓨터공학_ece/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md) | 손실 미분, 중심 차분 검사와 매개변수 갱신 |
-| [Attention 수식과 구현](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md) | Q/K/V·softmax·마스크의 계산과 검사 |
+| [Attention 수식과 구현](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션의수식과가중합_attention-from-equations.md) | Q/K/V·softmax·마스크의 계산과 검사 |
 | [Roofline·병렬화 한계](../전자컴퓨터공학_ece/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md) | 연산·데이터 이동의 상한과 병렬화 효과 |
 
 ## 여러 글을 연결해서 읽기
@@ -83,8 +83,8 @@ These articles connect definitions to equations, executable models and checkable
 
 | Article | Central question |
 | --- | --- |
-| [RC/RLC response](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md#english) | How do charge and energy laws yield time constants, damping and frequency response? |
-| [MOS electrostatics and switching](../전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md#english) | Why does the gate control current, and where does square-law modeling apply? |
+| [RC/RLC response](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/RC와RLC응답_rc-rlc-response.md#english) | How do charge and energy laws yield time constants, damping and frequency response? |
+| [MOS electrostatics and switching](../전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/MOSFET의동작원리_mos-electrostatics-switching.md#english) | Why does the gate control current, and where does square-law modeling apply? |
 | [FSM and synchronous FIFO](../전자컴퓨터공학_ece/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md#english) | How are simultaneous operations, reset and data order specified? |
 | [Locality, cache and AMAT](../전자컴퓨터공학_ece/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md#english) | Why use small fast memories, and what assumptions support average access time? |
 | [Transmission lines and reflections](../전자컴퓨터공학_ece/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md#english) | When does interconnect propagation matter, and why do reflections occur? |
@@ -109,7 +109,7 @@ These articles connect definitions to equations, executable models and checkable
 | [ADC quantization](../전자컴퓨터공학_ece/32-혼성신호-ADC-DAC_mixed-signal-data-converters/해설_notes/ADC양자화_adc-quantization.md#english) | How does resolution differ from accuracy, and how is the ideal SNR derived? |
 | [Feedback and discrete models](../전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md#english) | How do sampled measurement and held input connect controller gain to stability? |
 | [Gradients and learning](../전자컴퓨터공학_ece/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md#english) | How are loss derivatives derived, checked with centered differences and used for updates? |
-| [Attention from equations](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md#english) | What do Q/K/V, softmax and masking compute, and which properties can be checked? |
+| [Attention from equations](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션의수식과가중합_attention-from-equations.md#english) | What do Q/K/V, softmax and masking compute, and which properties can be checked? |
 | [Roofline and parallel limits](../전자컴퓨터공학_ece/25-CUDA성능최적화_cuda-performance/해설_notes/계산이느린가데이터를기다리는가_roofline-and-parallel-limits.md#english) | How do compute/traffic bounds and serial fractions limit performance? |
 
 ### Connecting the articles

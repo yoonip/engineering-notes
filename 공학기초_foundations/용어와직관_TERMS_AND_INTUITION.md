@@ -8,7 +8,7 @@
 
 | 용어 | 이렇게 받아들이면 이해하기 쉽습니다 | 구분할 점 |
 | --- | --- | --- |
-| [Attention](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md) | “지금 항목을 기준으로 다른 정보들을 얼마씩 참고해 섞을까?” | 사람의 의식적 집중이나 정답의 중요도를 직접 측정하는 기능은 아닙니다 |
+| [Attention](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션의수식과가중합_attention-from-equations.md) | “지금 항목을 기준으로 다른 정보들을 얼마씩 참고해 섞을까?” | 사람의 의식적 집중이나 정답의 중요도를 직접 측정하는 기능은 아닙니다 |
 | Query·Key·Value | 찾는 기준·비교할 표식·가져올 내용 | 실제로는 벡터입니다. key는 암호 키, value는 좋고 나쁨을 나타내는 가치가 아닙니다 |
 | Self-attention | 같은 입력 시퀀스 안에서 서로의 정보를 참고합니다 | 자기 자신 하나만 참고한다는 뜻은 아닙니다 |
 | Weight | 결과에 어떤 입력이 얼마나 영향을 주도록 곱하는 계수 | parameter weight는 학습으로 바뀌는 모델 값, attention weight는 입력마다 계산되는 혼합 비율입니다 |
@@ -50,7 +50,7 @@ Replacing an English term with a single Korean word can lose the intuition neede
 
 | Term | Useful intuition | Important distinction |
 | --- | --- | --- |
-| [Attention](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md#english) | How much information should the current item draw from each other item? | It does not directly measure conscious focus or the true importance of an answer |
+| [Attention](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션의수식과가중합_attention-from-equations.md#english) | How much information should the current item draw from each other item? | It does not directly measure conscious focus or the true importance of an answer |
 | Query, key, value | Search criterion, comparison marker, retrieved content | They are vectors; a key is not a cryptographic key and value is not a judgment of worth |
 | Self-attention | Items in one input sequence can refer to one another | It does not restrict each item to looking only at itself |
 | Weight | A coefficient controlling an input's contribution | Parameter weights are learned model values; attention weights are input-dependent mixing coefficients |
