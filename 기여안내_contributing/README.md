@@ -14,6 +14,17 @@
 
 서로 다른 분야의 수정은 커밋을 나누고, 제목에는 해당 문서에서 바뀐 대상을 적습니다. 파일을 옮기거나 목차를 고칠 때에는 연결된 링크도 함께 확인합니다. 게시 전에는 수정한 파일과 상위 폴더의 최근 커밋 제목이 실제 변경 내용과 맞는지 살펴봅니다.
 
+## 문서 링크 검사
+
+저장소 루트에서 실행합니다. 문서 검사는 내부 경로·제목 앵커·출처 목록의 연결을 확인합니다. 코드 안의 배열식이나 링크 예시는 본문의 실제 링크와 구분합니다.
+
+```bash
+python 기여안내_contributing/tools/check_documents.py
+python -m unittest discover -s 기여안내_contributing/tools -p test_check_documents.py
+```
+
+이 검사는 연결 상태를 확인하는 도구입니다. 기술 주장의 정확성과 원문이 뒷받침하는 범위는 해당 자료를 읽고 대조합니다.
+
 ## English
 
 Please include the affected document, reproduction conditions and supporting sources when reporting an error. Contributor documentation covers repository structure, writing, editable figures and project evidence. It is separate from the learning index so readers can go directly to the subject they need.

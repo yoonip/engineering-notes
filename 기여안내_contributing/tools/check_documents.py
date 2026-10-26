@@ -27,7 +27,41 @@ def without_fences(text):
 
 
 def destinations(text):
-    """Read inline destinations including balanced parentheses in filenames."""
+    """Read inline destinations, excluding text inside Markdown code spans."""
+    # Code spans: https://spec.commonmark.org/0.31.2/#code-spans
+    # Matching backtick runs delimit code spans; unmatched runs remain literal.
+    spans = []
+    cursor = 0
+    while cursor < len(text):
+        opener = re.search(r'`+', text[cursor:])
+        if opener is None:
+            break
+        start = cursor + opener.start()
+        end = cursor + opener.end()
+        escaped = start
+        while escaped and text[escaped - 1] == '\\':
+            escaped -= 1
+        if (start - escaped) % 2:
+            cursor = end
+            continue
+        paragraph_end = re.search(r'\n[ \t]*\n', text[end:])
+        limit = end + paragraph_end.start() if paragraph_end else len(text)
+        closer = re.search(r'(?<!`)' + re.escape(opener.group()) + r'(?!`)', text[end:limit])
+        if closer is None:
+            cursor = end
+            continue
+        stop = end + closer.end()
+        spans.append((start, stop))
+        cursor = stop
+    if spans:
+        pieces = []
+        cursor = 0
+        for start, stop in spans:
+            pieces.append(text[cursor:start])
+            pieces.append(re.sub(r'[^\n]', ' ', text[start:stop]))
+            cursor = stop
+        pieces.append(text[cursor:])
+        text = ''.join(pieces)
     for match in re.finditer(r'\]\(', text):
         start = match.end()
         if start < len(text) and text[start] == '<':
