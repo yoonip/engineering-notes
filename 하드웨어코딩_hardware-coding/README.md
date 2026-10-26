@@ -58,9 +58,9 @@ python 하드웨어코딩_hardware-coding/check_hardware.py --iverilog /path/to/
 
 ## 기존 자료와 연결
 
-- [RTL 설계](../분야_topics/13-RTL설계_verilog-systemverilog/README.md): 조합·순차논리, FSM·FIFO의 기본 개념
-- [하드웨어 검증](../분야_topics/14-하드웨어검증_hardware-verification/README.md): 검증 계획과 기준 모델
-- [FPGA·ASIC 설계](../분야_topics/15-FPGA-ASIC설계_fpga-asic/README.md): 구현 도구와 물리 조건
+- [RTL 설계](../전자컴퓨터공학_ece/13-RTL설계_verilog-systemverilog/README.md): 조합·순차논리, FSM·FIFO의 기본 개념
+- [하드웨어 검증](../전자컴퓨터공학_ece/14-하드웨어검증_hardware-verification/README.md): 검증 계획과 기준 모델
+- [FPGA·ASIC 설계](../전자컴퓨터공학_ece/15-FPGA-ASIC설계_fpga-asic/README.md): 구현 도구와 물리 조건
 - [RTL·CDC·DDR 오류 재현](../예제_examples/실무검증_practical-validation/README.md): 잘못된 조건과 해결한 조건의 비교
 - [임베디드 디버깅 실습](../예제_examples/임베디드디버깅_embedded-debug-labs/README.md): CPU에서 실행하는 펌웨어와 장치 디버깅
 
