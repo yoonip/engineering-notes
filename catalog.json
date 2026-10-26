@@ -1778,6 +1778,40 @@
       "summary_en": "Connects supplied job descriptions to test principles, programming tasks, decision rules and study paths, distinguishing role duties, requirements and preferences.",
       "category_ko": "직무와 실무 기술",
       "category_en": "Roles and engineering practice"
+    },
+    {
+      "number": 70,
+      "slug": "산업별전자와컴퓨팅_industry-systems",
+      "title": "산업별 전자와 컴퓨팅",
+      "english_title": "Electronics and computing across industries",
+      "sections": [
+        "제품·하위 시스템·직무와 결과물",
+        "자동차·가전·디스플레이·광학",
+        "방산전자·항공우주·해양조선",
+        "발전·전력망·산업자동화·플랜트",
+        "기업 IT·통신·의료·철도·도시",
+        "회사별 사업과 공통 기술"
+      ],
+      "keywords": "automotive, mobility, consumer electronics, optics, defense electronics, aerospace, marine, shipbuilding, nuclear, power generation, industrial automation, enterprise IT, medical, railway, sensors, control, embedded, validation",
+      "path": "산업별전자와컴퓨팅_industry-systems/README.md",
+      "references": [
+        "https://www.nasa.gov/reference/system-engineering-handbook-appendix/",
+        "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+        "https://www.poscodx.com/kor/business/eicEngineering",
+        "https://www.doosanenerbility.com/en/business/nuclear_large"
+      ],
+      "english_sections": [
+        "Products, subsystems, roles and evidence",
+        "Automotive, appliances, displays and optics",
+        "Defense electronics, aerospace and marine systems",
+        "Energy, grids, industrial automation and plants",
+        "Enterprise IT, communications, medical, rail and urban systems",
+        "Company roles and shared technologies"
+      ],
+      "summary_ko": "산업별 제품을 센서·전원·제어·통신·컴퓨팅·소프트웨어·검사로 나누고, 공식 사업 자료와 기술 문서를 바탕으로 회사 역할·실무 결과물·기존 학습 자료를 연결합니다.",
+      "summary_en": "Connects sector products and subsystems to sensing, power, control, communications, computing, software and tests, with sourced company roles and links to existing technical studies.",
+      "category_ko": "산업별 전자와 컴퓨팅",
+      "category_en": "Electronics and computing across industries"
     }
   ],
   "providers": [
@@ -2047,6 +2081,13 @@
     "en"
   ],
   "navigation": [
+    {
+      "title_ko": "산업별 전자와 컴퓨팅",
+      "title_en": "Electronics and computing across industries",
+      "area_numbers": [
+        70
+      ]
+    },
     {
       "title_ko": "직무와 실무 기술",
       "title_en": "Roles and engineering practice",

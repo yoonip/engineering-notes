@@ -32,6 +32,14 @@
 | --- | --- | --- |
 | [삼성 DX](직무와실무기술_job-practice/01-삼성DX의직무와요구역량_samsung-dx-role-map.md) · [삼성 DS](직무와실무기술_job-practice/02-삼성DS의직무와요구역량_samsung-ds-role-map.md) · [SK하이닉스](직무와실무기술_job-practice/03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) | [제품 회로](직무와실무기술_job-practice/04-제품회로와시스템검사_product-circuit-system-tests.md) · [펌웨어·SW](직무와실무기술_job-practice/05-펌웨어와소프트웨어검증_firmware-software-validation.md) · [칩 설계·평가](직무와실무기술_job-practice/06-칩설계와평가분석_chip-design-characterization.md) · [공정·설비·패키지](직무와실무기술_job-practice/07-공정설비와패키지의검사_process-equipment-package-tests.md) · [메모리 테스트](직무와실무기술_job-practice/08-메모리제품과테스트개발_memory-product-test-engineering.md) · [AI·제조 IT](직무와실무기술_job-practice/09-AI데이터와제조IT_ai-data-manufacturing-it.md) | [C·Python의 사용 위치](직무와실무기술_job-practice/10-C와Python이쓰이는위치_languages-in-the-workflow.md) · [검사 판정·기록](직무와실무기술_job-practice/11-검사결과의판정과기록_test-decisions-evidence.md) · [기반 지식과 학습 경로](직무와실무기술_job-practice/12-기반지식과학습경로_foundations-learning-path.md) · [반도체 산업과 직무](직무와실무기술_job-practice/13-반도체산업과직무의연결_semiconductor-value-chain.md) |
 
+## 산업별 전자·컴퓨터 기술 | Electronics and computing across industries
+
+[산업 목차](산업별전자와컴퓨팅_industry-systems/README.md)는 제품을 전원·센서·제어·통신·컴퓨팅·소프트웨어·검사로 나누어 읽는 경로입니다. [공통 기술 분류](산업별전자와컴퓨팅_industry-systems/10-공통기술과세부학습분야_cross-industry-technologies.md)와 [기업별 사업 역할](산업별전자와컴퓨팅_industry-systems/09-지원기업과사업분야_company-domain-map.md)을 함께 연결합니다.
+
+| 이동·완제품 | 설비·인프라 | 데이터·인접 산업 |
+| --- | --- | --- |
+| [자동차·농기계](산업별전자와컴퓨팅_industry-systems/01-자동차와모빌리티_automotive-mobility.md) · [가전·디스플레이·광학](산업별전자와컴퓨팅_industry-systems/02-가전과디스플레이및광학_consumer-display-optics.md) · [방산·항공우주](산업별전자와컴퓨팅_industry-systems/03-방산전자와항공우주_defense-aerospace.md) | [해양·조선](산업별전자와컴퓨팅_industry-systems/04-해양조선과선박시스템_marine-shipbuilding.md) · [발전·전력망](산업별전자와컴퓨팅_industry-systems/05-원자력과발전및전력망_nuclear-generation-grid.md) · [산업자동화·플랜트·기계](산업별전자와컴퓨팅_industry-systems/06-산업자동화와플랜트및기계_industrial-automation-machinery.md) | [기업 IT·데이터센터·통신](산업별전자와컴퓨팅_industry-systems/07-기업IT와데이터센터및통신_enterprise-it-infrastructure.md) · [의료·철도·도시](산업별전자와컴퓨팅_industry-systems/08-의료와철도및도시시스템_medical-rail-cities.md) |
+
 ## 계측·디버깅·설계 검증 | Measurement, debugging and validation
 
 [현장 계측과 검증](현장계측과검증_measurement-validation/README.md)은 계측기의 특성과 사용 절차, DMA·캐시, Cortex-M 예외, PVT·shmoo, CAN·EtherCAT·Modbus, SCPI 자동화를 다룹니다. [업무별 읽기 경로](현장계측과검증_measurement-validation/README.md#업무별-읽기-경로)는 C/C++·펌웨어·RTL·AI·Python의 기존 구현으로 이어집니다.
