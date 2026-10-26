@@ -1,0 +1,92 @@
+# 알고리즘과 문제 해결 | Problem Solving
+
+[전체 목차](../../분야별목차_CATALOG.md) · [처음으로](../../README.md)
+
+코딩테스트에서는 시간과 메모리 제한 안에서 올바른 답을 계산합니다. 프로그래머스·백준·LeetCode·Codeforces·AtCoder·HackerRank·Codility·SWEA는 문제 형식과 실행 환경이 달라 같은 알고리즘도 입출력 코드를 다르게 작성합니다.
+
+## 알고리즘을 선택하는 기준
+
+완전탐색은 가능한 경우를 직접 조사하고, 정렬은 원소의 순서를 이용할 수 있게 합니다. 해시는 빠른 키 조회에, 스택·큐는 처리 순서 유지에 쓰입니다. BFS는 가중치가 같은 그래프의 최단 경로, Dijkstra는 음수 간선이 없는 그래프의 최단 경로에 쓰입니다. 동적 계획법은 겹치는 부분 문제의 결과를 저장하며, 그리디는 각 단계의 선택이 전체 최적해로 이어진다는 근거가 필요합니다.
+
+## 입력 크기와 자료구조
+
+입력 크기 `n`과 반복 횟수를 먼저 연결해 봅니다. `n=100,000`일 때 `n²`은 100억, `n log₂ n`은 약 166만입니다. 이 수가 실제 실행 시간을 그대로 나타내지는 않지만, 어떤 접근을 검토할지 가늠하는 데 도움이 됩니다.
+
+| 필요한 연산 | 자료구조를 고르는 이유 | 연산 비용 |
+| --- | --- | --- |
+| BFS의 앞에서 꺼내기 | Python의 `deque`는 뒤 원소를 당기지 않고 맨 앞 원소를 꺼냅니다 | `popleft()`는 `O(1)`, 리스트의 `pop(0)`은 `O(n)` |
+| 방문 여부·중복 확인 | `set`은 매번 전체를 순회하는 대신 해시로 값을 찾습니다 | 조회 평균 `O(1)`, 최악 `O(n)` |
+| 가장 작은 값 반복 추출 | heap은 전체를 다시 정렬하지 않고 최솟값을 꺼냅니다 | 삽입·최솟값 추출 `O(log n)` |
+
+인접 리스트와 방문 배열을 사용하는 BFS는 정점 `V`개와 간선 `E`개를 합쳐 `O(V+E)`에 탐색합니다. 그래프를 인접 행렬로 저장하면 이웃을 확인하는 비용이 달라집니다. 시간 복잡도는 알고리즘 이름만으로 정해지지 않고 자료 표현과 실제 연산에도 영향을 받습니다.
+
+## 이진 탐색의 경계
+
+아래 함수는 정렬된 배열에서 `target` 이상인 첫 위치를 찾습니다. 아직 비교하지 않은 원소의 구간은 `[left, right)`이며, 반환할 삽입 위치는 양 끝을 포함한 `[left, right]` 안에 남도록 범위를 줄입니다. 모든 원소가 `target`보다 작으면 배열 끝인 `len(values)`를 반환합니다. 이는 Python [`bisect_left`의 삽입 위치 정의](https://docs.python.org/3/library/bisect.html#bisect.bisect_left)와 같습니다.
+
+```python
+def lower_bound(values, target):
+    left, right = 0, len(values)
+    while left < right:
+        mid = (left + right) // 2
+        if values[mid] < target:
+            left = mid + 1
+        else:
+            right = mid
+    return left
+```
+
+`[1, 3, 3, 7]`에서 3을 찾으면 1, 4를 찾으면 3, 8을 찾으면 4입니다. 시간 복잡도는 `O(log n)`, 추가 공간은 `O(1)`입니다. 빈 배열, 중복 값, 범위 밖의 값으로 경계 처리를 확인할 수 있습니다.
+
+## 관련 기술
+
+프로그래머스 / Programmers, 백준 / Baekjoon, LeetCode, Codeforces, AtCoder, HackerRank, Codility, SWEA
+
+## 참고 자료
+
+- [프로그래머스 코딩테스트 연습](https://school.programmers.co.kr/learn/challenges)
+
+## Programmers 풀이
+
+[프로그래머스 풀이](../../programmers/README.md)는 문제 번호와 공식 링크로 찾아볼 수 있습니다. 문제별 문서에는 제출 코드와 줄별 문법 설명, 풀이 원리를 담았습니다. 대안 구현과 검증 코드의 제공 여부, 제출 결과는 각 문서에서 확인할 수 있습니다. 레벨 5의 시간 초과 시도는 별도 분석으로 남겼습니다.
+
+[Archived Programmers solutions](../../programmers/README.md) are indexed by problem number and official link. Individual notes contain submitted code, Korean line-by-line explanations and solution methods. Available alternatives, executable checks and submission results are recorded in each note. A failed Level 5 attempt has a separate timeout analysis.
+
+## 기초 해설
+
+- [복잡도와 자료구조: heap으로 최단 경로 찾기](해설_notes/복잡도와자료구조_complexity-heaps-shortest-paths.md)
+
+## English
+
+Coding problems ask for correct output within time and memory limits. Programmers, Baekjoon, LeetCode, Codeforces, AtCoder, HackerRank, Codility, and SWEA have different problem formats and execution environments, so the same algorithm may need different input and output code.
+
+### Choosing an algorithm
+
+Brute force checks possible cases directly. Sorting exposes order, hashing supports fast key lookup, and stacks and queues maintain processing order. BFS finds shortest paths when edges have equal weight; Dijkstra handles graphs with nonnegative edge weights. Dynamic programming stores overlapping subproblem results. A greedy algorithm needs a reason why each local choice preserves a globally optimal solution.
+
+### Input size and data structures
+
+Relate input size `n` to the number of operations. At `n=100,000`, `n²` is 10 billion, while `n log₂ n` is about 1.66 million. These counts do not directly predict execution time, but help judge which approaches are plausible.
+
+| Operation needed | Why the structure fits | Operation cost |
+| --- | --- | --- |
+| Removing the front element in BFS | Python's `deque` avoids shifting the remaining elements | `popleft()` is `O(1)`; list `pop(0)` is `O(n)` |
+| Tracking visits or duplicates | A `set` uses hashing instead of scanning all stored elements | Average lookup `O(1)`, worst case `O(n)` |
+| Repeatedly extracting the smallest value | A heap avoids sorting the entire collection again | Insertion and minimum extraction `O(log n)` |
+
+BFS with adjacency lists and a visited array takes `O(V+E)` for `V` vertices and `E` edges. An adjacency matrix changes the cost of finding neighbors. Complexity depends on representation and operations as well as the algorithm itself.
+
+### Binary-search boundaries
+
+The function above returns the first position whose value is at least `target` in a sorted array. Unexamined elements occupy `[left, right)`, while the insertion position remains in the inclusive interval `[left, right]`. The return value can be `len(values)` when every element is smaller than the target. For `[1, 3, 3, 7]`, targets 3, 4, and 8 return indices 1, 3, and 4. Time complexity is `O(log n)` and extra space is `O(1)`. Empty arrays, duplicates, and targets outside the data range exercise its boundary handling.
+
+The [archived solutions](../../programmers/README.md) are organized by level and problem number, with language and grading records kept alongside the code and explanation.
+
+### Foundation article
+
+- [복잡도와 자료구조: heap으로 최단 경로 찾기](해설_notes/복잡도와자료구조_complexity-heaps-shortest-paths.md#english)
+
+
+## 심화 해설 | Advanced article
+
+- [A*: 좋은 예상값으로 탐색을 줄이고 정답은 지키기](해설_notes/휴리스틱최단경로_astar-reopening.md) · [English](해설_notes/휴리스틱최단경로_astar-reopening.md#english)
