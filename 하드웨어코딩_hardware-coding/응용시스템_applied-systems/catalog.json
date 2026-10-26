@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "assembled_at": "2026-10-26T09:06:30.015456+00:00",
+  "examples": [
+    {
+      "number": 1,
+      "id": "civil-indoor-robot-se2-frames",
+      "title": "민간 실내 이동로봇의 센서·차체·지도 좌표 변환",
+      "directory": "01-이동로봇좌표_robot-frames",
+      "language": "C++17",
+      "source_sha256": {
+        "example.cpp": "33a600db7892c9f8b794476ceedef8041f6e6d1aad3e8bdb736f9d9955a67b84"
+      },
+      "expected_marker": "PASS robot-frames ",
+      "metadata": "01-이동로봇좌표_robot-frames/example.json",
+      "readme": "01-이동로봇좌표_robot-frames/README.md",
+      "execution_record": "local_execution",
+      "online_judge": false
+    },
+    {
+      "number": 2,
+      "id": "civil-indoor-circle-grid-planning",
+      "title": "민간 실내 원형로봇의 점유격자 확장과4연결 경로",
+      "directory": "02-실내격자경로_grid-planning",
+      "language": "Python3 standard library",
+      "source_sha256": {
+        "example.py": "f92438cde20be5cd11b3bb571393f1536bfbe9ea1c038226f1e5c07b8336d11e"
+      },
+      "expected_marker": "PASS grid-planning ",
+      "metadata": "02-실내격자경로_grid-planning/example.json",
+      "readme": "02-실내격자경로_grid-planning/README.md",
+      "execution_record": "local_execution",
+      "online_judge": false
+    },
+    {
+      "number": 3,
+      "id": "03-robot-estimation",
+      "title": "실내 AGV의 encoder·비콘 위치 추정과 측정 거절",
+      "directory": "03-실내로봇측정융합_robot-estimation",
+      "language": "Python3 standard library",
+      "source_sha256": {
+        "estimator.py": "b4aa84d14830fd3a681187955fe261437d827f75e734b791febaa03966a34938",
+        "check_estimator.py": "a2d27d9eb6bed75da67e2c21956158e0527246c9d0c7c641c837ba6b3de385d6"
+      },
+      "expected_marker": "PASS robot checks=2342 algebra_cases=360 steps=40 accepted=5 stale=1 missing=1 outlier=1",
+      "metadata": "03-실내로봇측정융합_robot-estimation/example.json",
+      "readme": "03-실내로봇측정융합_robot-estimation/README.md",
+      "execution_record": "local_execution",
+      "online_judge": false
+    },
+    {
+      "number": 4,
+      "id": "04-satellite-orbit",
+      "title": "교육용 지구 위성 원운동의 RK4 적분과 보존량",
+      "directory": "04-위성교육궤도_satellite-orbit",
+      "language": "Python3 standard library",
+      "source_sha256": {
+        "orbit.py": "221615b86ce66d226938147551305cf58b794b1ab811e613d667f6a128212840",
+        "check_orbit.py": "49d89a4a11e63786f53fa51fee87af1e17e903295179f73c8f2225364777d6de"
+      },
+      "expected_marker": "PASS orbit checks=8435 circular_runs=6 integrated_steps=1680 convergence_pairs=4",
+      "metadata": "04-위성교육궤도_satellite-orbit/example.json",
+      "readme": "04-위성교육궤도_satellite-orbit/README.md",
+      "execution_record": "local_execution",
+      "online_judge": false
+    },
+    {
+      "number": 5,
+      "id": "05-planar-urdf",
+      "title": "URDF 평면 팔의 링크·관절·순기구학 검사",
+      "directory": "05-로봇구조와관절_urdf",
+      "language": "URDF XML + Python3",
+      "source_sha256": {
+        "bench_arm.urdf": "64a6e31f095b71bd472fbe38ce4af3889be7402e5d33ac4f5874d7c22c6b7144",
+        "check_model.py": "f6d09207b5e14b19684385b2cf52c72516f93410cdc291ad8a4f4a30b6977d4d"
+      },
+      "expected_marker": "PASS urdf poses=25 comparisons=325 rejected_models=5 rejected_states=2",
+      "metadata": "05-로봇구조와관절_urdf/example.json",
+      "readme": "05-로봇구조와관절_urdf/README.md",
+      "execution_record": "local_execution",
+      "online_judge": false
+    },
+    {
+      "number": 6,
+      "id": "06-bench-protobuf",
+      "title": "Protobuf 벤치 샘플의 존재·순서·측정 시각 검사",
+      "directory": "06-벤치텔레메트리_protobuf",
+      "language": "Protocol Buffers proto3 + Python3",
+      "source_sha256": {
+        "telemetry.proto": "671d6bd5ba21a72324d58762dfe3ae6c5cd7c9dbf4e1920906f86d16ebecd885",
+        "health.py": "282306d25b7ac8227385be6d3ada5a28942dc186cc2789e90e6cca673e1e8e92",
+        "check_health.py": "ecbe5c2293b2bce0fda7b140e7aa6f01a1d1b27fb24adc1c50db84a68f96f8a2"
+      },
+      "expected_marker": "PASS protobuf valid=54 checks=84 rejected=22",
+      "metadata": "06-벤치텔레메트리_protobuf/example.json",
+      "readme": "06-벤치텔레메트리_protobuf/README.md",
+      "execution_record": "local_execution",
+      "online_judge": false
+    }
+  ],
+  "source_files": 11,
+  "external_projects_documented_but_not_executed": [
+    "ROS 2",
+    "Gazebo",
+    "Autoware",
+    "CARLA",
+    "cFS",
+    "F Prime",
+    "SPARK",
+    "OpenModelica"
+  ]
+}

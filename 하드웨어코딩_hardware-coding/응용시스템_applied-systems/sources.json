@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "last_checked": "2026-10-26",
+  "human_readable_sources": "공개프로젝트와언어_sources-and-languages.md",
+  "architecture_document": "분야별구조와검증_domain-architecture.md",
+  "scope": {
+    "resource_count": 8,
+    "purpose": "민간 로봇·자율주행 및 우주 탑재 소프트웨어의 공개 학습 경로와 언어·도구·검증 경계를 설명합니다.",
+    "external_runtime_execution": false,
+    "external_projects_completed": false,
+    "local_example_scope": [
+      "C++ 실내 좌표 계산",
+      "Python 실내 격자 A*",
+      "Python AGV 1차원 측정 융합",
+      "교육용 지구 위성 원궤도 계산",
+      "민간 2링크 URDF 모형·파싱",
+      "Protobuf 벤치 센서 메시지·신선도 검사"
+    ],
+    "verification_note": "직접 예제의 실제 명령·반환 코드·계산·파서 확인 범위는 개별 실행 기록에 있습니다. 이 출처 목록은 외부 프로젝트의 빌드·통합·실차·비행·인증을 확인한 기록이 아닙니다.",
+    "publication_policy": "공식 링크와 자체 설명·예제를 사용합니다. 외부 파일을 실제 재사용하면 파일별 판본·경로·라이선스·고지를 따로 기록합니다."
+  },
+  "tool_discovery": {
+    "date": "2026-10-26",
+    "scope": "Windows PATH의 명령과 python 명령으로 선택된 인터프리터의 모듈 존재를 읽기 전용으로 조사한 범위입니다. 장치 전체의 모든 설치·가상 환경을 조사한 것은 아닙니다.",
+    "commands_not_found_in_path": ["ros2", "gz", "gazebo", "colcon", "gnatprove", "gnatmake", "gprbuild", "omc", "docker"],
+    "default_python_modules_not_found": ["rclpy", "carla", "fprime", "OMPython"],
+    "wsl": {"command": ["wsl", "--list", "--quiet"], "returncode": 1, "observation": "WSL이 설치되어 있지 않다는 안내를 반환했습니다. 설치·초기화는 하지 않았습니다."},
+    "runtime_install_or_execution_performed_for_this_survey": false
+  },
+  "resources": [
+    {
+      "id": "ros2",
+      "name": "ROS 2",
+      "official_url": "https://docs.ros.org/",
+      "role": "robotics_middleware_and_package_ecosystem",
+      "languages": ["C++", "Python", "메시지·인터페이스 정의"],
+      "beginner_exercise": "문자열 publisher와 subscriber 노드를 작성하고 토픽 통신을 관찰합니다.",
+      "beginner_url": "https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html",
+      "beginner_source_url": "https://github.com/ros2/ros2_documentation/blob/jazzy/source/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.rst",
+      "version_observations": [
+        {"distribution": "Lyrical Luth", "release_date": "2026-05-22", "eol_month": "2031-05"},
+        {"distribution": "Jazzy Jalisco", "release_date": "2024-05-23", "eol_month": "2029-05"}
+      ],
+      "installation_prerequisites": ["선택한 배포판에 맞는 ROS 설치·환경 설정", "워크스페이스와 ament 패키지", "선택한 언어의 ROS 클라이언트 라이브러리"],
+      "runtime_status": "documentation_reviewed_not_run",
+      "automatic_judge": false,
+      "license": {
+        "confirmed": [{"scope": "ros2/examples Jazzy 저장소", "identifier": "Apache-2.0", "url": "https://github.com/ros2/examples/blob/jazzy/LICENSE"}],
+        "not_generalized_to": ["모든 ROS 패키지", "모든 문서·외부 예제"]
+      },
+      "checked_sections": [
+        {"url": "https://raw.githubusercontent.com/ros2/ros2_documentation/rolling/source/Releases.rst", "section": "List of Distributions", "supports": ["배포판·공개일·지원 종료 예정일"]},
+        {"url": "https://raw.githubusercontent.com/ros2/ros2_documentation/jazzy/source/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.rst", "section": "Background; Prerequisites; Tasks", "supports": ["실제 ROS 노드와 토픽 입문", "워크스페이스·패키지·환경 전제", "예제 저장소 연결"]},
+        {"url": "https://raw.githubusercontent.com/ros2/examples/jazzy/LICENSE", "section": "LICENSE", "supports": ["해당 예제 저장소 Apache-2.0"]}
+      ],
+      "uncertainties": ["공식 HTML 일부는 Anubis 접근 차단을 반환하여 동일 공식 저장소 원문으로 대조했습니다.", "현재 환경에서 ROS 노드·QoS·DDS 등 통신 런타임을 시험하지 않았습니다."]
+    },
+    {
+      "id": "gazebo",
+      "name": "Gazebo",
+      "official_url": "https://gazebosim.org/",
+      "role": "robotics_physics_simulator",
+      "languages": ["SDF", "URDF 입력", "C++ 플러그인", "메시지·브리지 설정"],
+      "beginner_exercise": "SDF로 두 바퀴 로봇을 구성하고 이동 플러그인·메시지를 연결합니다.",
+      "beginner_url": "https://gazebosim.org/docs/jetty/building_robot/",
+      "next_url": "https://gazebosim.org/docs/jetty/moving_robot/",
+      "version_pairings": [{"ros2": "Lyrical", "gazebo": "Jetty"}, {"ros2": "Jazzy", "gazebo": "Harmonic"}, {"ros2": "Kilted", "gazebo": "Ionic"}],
+      "installation_prerequisites": ["선택한 Gazebo 배포판과 운영체제에 맞는 패키지", "ROS 연동 시 지원되는 ros_gz·vendor package 조합", "모델별 물리·렌더링·센서 요구 조건"],
+      "runtime_status": "documentation_reviewed_not_run",
+      "automatic_judge": false,
+      "license": {
+        "confirmed": [{"scope": "gz-sim10 코드 저장소", "identifier": "Apache-2.0", "url": "https://github.com/gazebosim/gz-sim/blob/gz-sim10/LICENSE"}],
+        "not_generalized_to": ["모든 Fuel 모델·텍스처·외부 자산", "모든 Gazebo 의존성·별도 문서"]
+      },
+      "checked_sections": [
+        {"url": "https://gazebosim.org/docs/jetty/ros_installation/", "section": "Default pairing; Specific ROS and Gazebo Pairings", "supports": ["ROS 배포판별 Gazebo 조합", "vendor package 설치 경로"]},
+        {"url": "https://gazebosim.org/docs/jetty/building_robot/", "section": "Building your own robot", "supports": ["SDF 두 바퀴 로봇·링크·관절"]},
+        {"url": "https://gazebosim.org/docs/jetty/moving_robot/", "section": "Moving the robot", "supports": ["로봇 이동을 시뮬레이터에 연결하는 다음 단계"]},
+        {"url": "https://raw.githubusercontent.com/gazebosim/gz-sim/gz-sim10/LICENSE", "section": "LICENSE", "supports": ["해당 코드 Apache-2.0"]}
+      ],
+      "uncertainties": ["URDF 파싱 결과는 Gazebo 구동·접촉·센서 검증이 아닙니다.", "GUI·물리 엔진·모델을 이 환경에서 실행하지 않았습니다."]
+    },
+    {
+      "id": "autoware",
+      "name": "Autoware / Open AD Kit",
+      "official_url": "https://github.com/autowarefoundation/autoware",
+      "role": "autonomous_driving_software_stack",
+      "languages": ["C++", "ROS 2 인터페이스", "Python 도구", "설정·지도 파일"],
+      "beginner_exercise": "Open AD Kit의 데모 지도에서 계획·제어 스택과 RViz 작업을 연결합니다.",
+      "beginner_url": "https://autowarefoundation.github.io/openadkit/deployments/planning-simulation/",
+      "installation_url": "https://autowarefoundation.github.io/openadkit/getting-started/",
+      "installation_prerequisites": ["해당 Open AD Kit 배포물의 호스트·컨테이너 조건", "해당 판본의 ROS·Autoware 패키지·지도", "시각화와 선택한 인지 기능의 추가 요구 조건"],
+      "runtime_status": "documentation_reviewed_not_run",
+      "automatic_judge": false,
+      "license": {
+        "confirmed": [{"scope": "autoware workspace 저장소", "identifier": "Apache-2.0", "url": "https://github.com/autowarefoundation/autoware/blob/main/LICENSE"}],
+        "not_generalized_to": ["모든 workspace 구성 패키지", "Open AD Kit의 모든 외부 의존성", "지도·점군·센서 자산"]
+      },
+      "checked_sections": [
+        {"url": "https://raw.githubusercontent.com/autowarefoundation/autoware/main/README.md", "section": "Autoware 소개·문서 연결", "supports": ["자율주행 소프트웨어와 구성 경로"]},
+        {"url": "https://autowarefoundation.github.io/openadkit/deployments/planning-simulation/", "section": "Planning Simulation", "supports": ["계획·제어 데모", "데모 지도·브라우저 RViz 경로"]},
+        {"url": "https://autowarefoundation.github.io/openadkit/getting-started/", "section": "Quickstart", "supports": ["배포물 설치·실행의 시작 경로"]},
+        {"url": "https://raw.githubusercontent.com/autowarefoundation/autoware/main/LICENSE", "section": "LICENSE", "supports": ["workspace 저장소 Apache-2.0"]}
+      ],
+      "uncertainties": ["Autoware·ROS·컨테이너·지도 통합을 실행하지 않았습니다.", "계획 데모를 전체 인지·센서·물리 충돌 시험으로 해석하지 않습니다.", "과거 autoware-documentation/main/tutorials/ad-hoc-simulation/planning-simulation/ 주소는 404를 반환했습니다. 다른 문서 일부는 docs.autoware.org로 이동하거나 접근되지 않았습니다."]
+    },
+    {
+      "id": "carla",
+      "name": "CARLA",
+      "official_url": "https://github.com/carla-simulator/carla",
+      "role": "autonomous_driving_simulation_environment",
+      "languages": ["C++ 서버", "Python 클라이언트", "가상 환경·센서 자산"],
+      "beginner_exercise": "같은 판본의 서버·클라이언트를 준비하고 공식 예제로 가상 환경과 메시지를 관찰합니다.",
+      "beginner_url": "https://carla-ue5.readthedocs.io/en/latest/start_quickstart/",
+      "version_observations": {"documentation_family": "Unreal Engine 5", "release_todo_observed": "latest 문서에 1.0.0 배포 링크·컨테이너 확인 TODO가 남아 있습니다.", "client_rule": "서버와 동봉 Python wheel의 판본·플랫폼·Python minor 버전을 맞춥니다.", "pypi_warning": "해당 문서는 PyPI carla가 UE4 클라이언트이므로 UE5 서버와 섞지 말라고 명시합니다."},
+      "installation_prerequisites": ["UE5 문서 기준 Windows 11 또는 Ubuntu 22.04·24.04", "해당 패키지의 GPU·드라이버·디스크 요구 조건", "서버와 일치하는 Python wheel·인터프리터", "네트워크 포트와 플랫폼별 런타임"],
+      "runtime_status": "documentation_reviewed_not_run",
+      "automatic_judge": false,
+      "license": {
+        "confirmed": [
+          {"scope": "CARLA-specific 코드", "identifier": "MIT", "url": "https://github.com/carla-simulator/carla/blob/ue5-dev/LICENSE"},
+          {"scope": "CARLA-specific 자산의 README 표기", "identifier": "CC-BY", "url": "https://github.com/carla-simulator/carla#licenses"}
+        ],
+        "not_generalized_to": ["Unreal Engine 5 자체 조건", "타사 통합 라이브러리", "모든 개별 자산의 정확한 라이선스 판본"],
+        "note": "README의 CC-BY 표기에서 확인하지 않은 버전 번호를 추가하지 않았습니다."
+      },
+      "checked_sections": [
+        {"url": "https://carla-ue5.readthedocs.io/en/latest/start_quickstart/", "section": "Before you begin; Install client library; Running CARLA", "supports": ["UE4·UE5 구분", "운영체제·장치·Python 조건", "서버·클라이언트 일치", "배포 TODO"]},
+        {"url": "https://github.com/carla-simulator/carla", "section": "Licenses", "supports": ["코드 MIT·자산 CC-BY·Unreal과 의존성 조건 구분"]},
+        {"url": "https://raw.githubusercontent.com/carla-simulator/carla/ue5-dev/LICENSE", "section": "LICENSE", "supports": ["CARLA 코드 MIT"]}
+      ],
+      "uncertainties": ["최신 문서의 TODO를 근거로 해당 1.0.0 배포 완료를 주장하지 않습니다.", "서버·렌더링·센서·자율주행 연동을 실행하지 않았습니다."]
+    },
+    {
+      "id": "nasa-cfs",
+      "name": "NASA Core Flight System",
+      "official_url": "https://github.com/nasa/cFS",
+      "role": "flight_software_framework_demo_bundle",
+      "languages": ["C", "CMake·Make 설정", "플랫폼·앱 설정", "지상 도구의 Python 등"],
+      "beginner_exercise": "pc-linux Demo Bundle과 sample_app에서 no-op·명령 카운터·텔레메트리를 살펴봅니다.",
+      "beginner_url": "https://github.com/nasa/cFS#build-and-run-quick-start",
+      "installation_prerequisites": ["Make·CMake·GCC·Git", "맞는 서브모듈 집합", "pc-linux 빌드·실행 환경", "지상 GUI 선택 시 PyQt5·PyZMQ 등 해당 도구의 의존성"],
+      "runtime_status": "documentation_reviewed_not_run",
+      "automatic_judge": false,
+      "license": {
+        "confirmed": [{"scope": "cFS bundle 저장소", "identifier": "Apache-2.0", "url": "https://github.com/nasa/cFS/blob/main/LICENSE"}],
+        "not_generalized_to": ["모든 서브모듈·선택 앱", "지상 도구와 별도 배포물"]
+      },
+      "operational_limitations": ["공개 Demo Bundle은 flight distribution이 아니며 그대로 비행시키면 안 된다고 공식 README가 명시합니다.", "운영 시스템으로 완전히 검증된 번들이 아니라고 명시합니다.", "임무별 요구사항과 검증 책임은 별도이며 자체 벤치 메시지는 cFS 구현이 아닙니다."],
+      "checked_sections": [
+        {"url": "https://raw.githubusercontent.com/nasa/cFS/main/README.md", "section": "Core Flight System - Demo Bundle; Setup; Build and Run Quick Start; Send commands, receive telemetry", "supports": ["Demo 한계", "구성·의존 도구·pc-linux", "벤치 명령·텔레메트리 학습 경로"]},
+        {"url": "https://raw.githubusercontent.com/nasa/cFS/main/LICENSE", "section": "LICENSE", "supports": ["해당 저장소 Apache-2.0"]}
+      ],
+      "uncertainties": ["cFS 앱·OSAL·PSP·소프트웨어 버스·지상 도구를 빌드·실행하지 않았습니다.", "임무 적합성·비행 승인·실제 기체 시험을 확인한 기록이 아닙니다."]
+    },
+    {
+      "id": "fprime",
+      "name": "F Prime",
+      "official_url": "https://fprime.jpl.nasa.gov/",
+      "role": "component_based_embedded_software_framework",
+      "languages": ["C++", "FPP 구조 모델", "Python 개발·지상 도구"],
+      "beginner_exercise": "Hello World에서 컴포넌트·명령·이벤트·텔레메트리를 익히고 MathComponent의 포트·자료형·단위 검사로 확장합니다.",
+      "beginner_url": "https://fprime.jpl.nasa.gov/latest/tutorials-hello-world/docs/hello-world/",
+      "next_url": "https://fprime.jpl.nasa.gov/latest/docs/tutorials/",
+      "installation_url": "https://fprime.jpl.nasa.gov/latest/docs/getting-started/installing-fprime/",
+      "installation_prerequisites": ["프로젝트별 Python 가상 환경과 해당 requirements", "C++ 빌드 환경·CMake 등 해당 프로젝트 요구 도구", "맞는 F Prime·FPP·도구 판본", "설치 안내에서 WSL 1은 미지원으로 명시합니다."],
+      "runtime_status": "documentation_reviewed_not_run",
+      "automatic_judge": false,
+      "license": {
+        "confirmed": [{"scope": "nasa/fprime 본체 LICENSE.txt", "identifier": "Apache-2.0", "url": "https://github.com/nasa/fprime/blob/devel/LICENSE.txt"}],
+        "not_generalized_to": ["별도 튜토리얼 저장소", "모든 서브모듈·보드 지원·의존 도구"]
+      },
+      "checked_sections": [
+        {"url": "https://fprime.jpl.nasa.gov/latest/docs/getting-started/", "section": "Features; Hello, World!", "supports": ["컴포넌트·C++·생성 도구와 검사 도구 역할"]},
+        {"url": "https://fprime.jpl.nasa.gov/latest/tutorials-hello-world/docs/hello-world/", "section": "Hello World tutorial", "supports": ["프로젝트·컴포넌트·배포·GDS 입문 경로"]},
+        {"url": "https://fprime.jpl.nasa.gov/latest/docs/tutorials/", "section": "Hello World; Math Component", "supports": ["사용자 포트·자료형·이벤트·텔레메트리·단위 검사"]},
+        {"url": "https://fprime.jpl.nasa.gov/latest/docs/getting-started/installing-fprime/", "section": "Creating a new Project; Existing Project; Troubleshooting", "supports": ["가상 환경·도구 요구·서브모듈", "WSL 1 미지원"]},
+        {"url": "https://raw.githubusercontent.com/nasa/fprime/devel/LICENSE.txt", "section": "LICENSE.txt", "supports": ["본체 Apache-2.0"]}
+      ],
+      "uncertainties": ["FPP 생성·F Prime 빌드·GDS·단위·통합 테스트를 실행하지 않았습니다.", "기존 임무의 채택 사실을 이 예제의 검증·인증으로 확대하지 않습니다."]
+    },
+    {
+      "id": "ada-spark",
+      "name": "Ada / SPARK / GNATprove",
+      "official_url": "https://docs.adacore.com/spark2014-docs/html/ug/en/getting_started.html",
+      "role": "language_contracts_and_static_verification",
+      "languages": ["Ada", "SPARK 계약·주석"],
+      "beginner_exercise": "공식 Diff 예제로 의존 계약·계산 오류와 GNATprove의 역할을 읽습니다.",
+      "beginner_url": "https://docs.adacore.com/spark2014-docs/html/ug/en/getting_started.html",
+      "learning_url": "https://learn.adacore.com/courses/intro-to-spark/index.html",
+      "installation_url": "https://alire.ada.dev/crates/gnatprove",
+      "version_observations": {"online_user_guide": "28.0w 개발판", "alire_gnatprove": "16.1.0", "compatibility_note": "공식 설명은 배포 도구와 최신 개발판 문서의 기능이 다를 수 있다고 명시합니다."},
+      "installation_prerequisites": ["맞는 Ada·SPARK 도구 판본", "GNATprove와 프로젝트·계약", "GUI는 선택 사항이며 명령행으로도 사용할 수 있습니다."],
+      "runtime_status": "documentation_reviewed_not_run",
+      "automatic_judge": false,
+      "license": {
+        "confirmed": [
+          {"scope": "AdaCore/spark2014 도구 소스 LICENSE", "identifier": "GPL-3.0 license text", "url": "https://github.com/AdaCore/spark2014/blob/master/LICENSE"},
+          {"scope": "Alire gnatprove 패키지 메타데이터", "identifier": "GPL-3.0-or-later", "url": "https://alire.ada.dev/crates/gnatprove"}
+        ],
+        "not_generalized_to": ["모든 Ada 런타임·예제·문서", "도구로 분석한 별도 프로그램의 일괄 이용 조건"]
+      },
+      "checked_sections": [
+        {"url": "https://docs.adacore.com/spark2014-docs/html/ug/en/getting_started.html", "section": "Getting Started with SPARK", "supports": ["Diff·Depends 예제", "GNATprove와 IDE 역할", "온라인 문서는 개발판이라는 주의"]},
+        {"url": "https://alire.ada.dev/crates/gnatprove", "section": "Version; License; Automatic formal verification", "supports": ["16.1.0", "GPL-3.0-or-later", "SPARK Pro 특정 판본과 다를 수 있음"]},
+        {"url": "https://learn.adacore.com/courses/intro-to-spark/index.html", "section": "Introduction to SPARK", "supports": ["공식 언어 학습 경로"]},
+        {"url": "https://raw.githubusercontent.com/AdaCore/spark2014/master/LICENSE", "section": "LICENSE", "supports": ["도구 소스 GPL v3 텍스트"]}
+      ],
+      "uncertainties": ["Ada 컴파일·GNATprove·증명기를 실행하지 않았습니다.", "일반 테스트·컴파일·정적 증명을 동일한 결과로 표시하지 않습니다."]
+    },
+    {
+      "id": "modelica",
+      "name": "Modelica / OpenModelica",
+      "official_url": "https://openmodelica.org/useresresources/userdocumentation/",
+      "role": "equation_based_multiphysics_modeling",
+      "languages": ["Modelica", "도구별 스크립트·연동 API"],
+      "beginner_exercise": "공식 사용자 문서의 작은 방정식·부품 연결을 OMEdit·명령행·OMNotebook 등으로 읽는 경로입니다.",
+      "beginner_url": "https://openmodelica.org/useresresources/userdocumentation/",
+      "installation_url": "https://openmodelica.org/download/download-windows/",
+      "version_observations": {"openmodelica_windows_official_release": "1.27.1", "modelica_standard_library_current_release": "4.1.0"},
+      "installation_prerequisites": ["선택한 Modelica 환경·컴파일러", "맞는 모델·표준 라이브러리 판본", "초기조건·해석기·출력 시간 조건"],
+      "runtime_status": "documentation_reviewed_not_run",
+      "automatic_judge": false,
+      "license": {
+        "confirmed": [
+          {"scope": "Modelica Standard Library", "identifier": "BSD-3-Clause", "url": "https://github.com/modelica/ModelicaStandardLibrary/blob/master/LICENSE"},
+          {"scope": "OpenModelica compiler의 OSMC-License.txt", "identifier": "AGPL-3.0 / OSMC-PL-1.8 alternatives", "url": "https://github.com/OpenModelica/OpenModelica/blob/master/OSMC-License.txt"},
+          {"scope": "OpenModelica Run-time System 파일의 별도 조건", "identifier": "BSD New / AGPL-3.0 / OSMC-PL-1.8 alternatives", "url": "https://github.com/OpenModelica/OpenModelica/blob/master/OSMC-Runtime-License.txt"}
+        ],
+        "not_generalized_to": ["모든 외부 Modelica 라이브러리", "개별 상용 도구", "모든 문서·생성물의 일괄 조건"]
+      },
+      "checked_sections": [
+        {"url": "https://openmodelica.org/useresresources/userdocumentation/", "section": "User Documentation", "supports": ["OMEdit·명령행·OMNotebook·OMWebbook 학습 경로"]},
+        {"url": "https://openmodelica.org/download/download-windows/", "section": "Official Release", "supports": ["현재 공식 Windows 판본 1.27.1"]},
+        {"url": "https://github.com/modelica/ModelicaStandardLibrary", "section": "Library description; Current release; License", "supports": ["다중 물리 영역·표준 구성요소", "MSL4.1.0", "BSD-3-Clause"]},
+        {"url": "https://raw.githubusercontent.com/modelica/ModelicaStandardLibrary/master/LICENSE", "section": "LICENSE", "supports": ["표준 라이브러리 조건"]},
+        {"url": "https://raw.githubusercontent.com/OpenModelica/OpenModelica/master/OSMC-License.txt", "section": "Header; modes/alternatives", "supports": ["컴파일러의 AGPL·OSMC 조건 구분"]},
+        {"url": "https://raw.githubusercontent.com/OpenModelica/OpenModelica/master/OSMC-Runtime-License.txt", "section": "Run-time System Public License", "supports": ["런타임의 별도 BSD New 대안"]}
+      ],
+      "uncertainties": ["Modelica 모델의 파싱·컴파일·해석기·OMPython을 실행하지 않았습니다.", "다른 언어에서 한 수치 계산을 Modelica 실행으로 표시하지 않습니다."]
+    }
+  ],
+  "domain_references": [
+    {"id": "ros-rep-103", "url": "https://github.com/ros-infrastructure/rep/blob/master/rep-0103.rst", "checked_section": "Units; Coordinate Frame Conventions", "supports": ["ROS 단위·좌표 약속"], "scope_note": "공식 웹페이지 접근 차단 때문에 공식 저장소 원문을 확인했습니다."},
+    {"id": "ros-rep-105", "url": "https://github.com/ros-infrastructure/rep/blob/master/rep-0105.rst", "checked_section": "Coordinate Frames for Mobile Platforms", "supports": ["이동 플랫폼 좌표계의 이름·의미"], "scope_note": "공식 저장소 원문으로 확인했으며 tf2를 실행하지 않았습니다."},
+    {"id": "nasa-smallsat", "url": "https://www.nasa.gov/smallsat-institute/sst-soa/", "checked_section": "Power; Small Spacecraft Avionics; Communications; Ground Data Systems and Mission Operations", "supports": ["소형 위성의 전원·탑재 처리·통신·지상 체계 분류"], "scope_note": "소개·해당 목차와 설명을 확인한 범위이며 모든 장·기술·성숙도를 전수 조사하지 않았습니다. 발사체 전체의 동일 구성·조건을 보증하는 자료로 쓰지 않습니다."},
+    {"id": "nasa-gevs", "url": "https://standards.nasa.gov/standard/GSFC/GSFC-STD-7000", "checked_section": "Document Scope; Version; Mandatory Standard", "supports": ["GSFC 탑재체·하위 시스템·부품의 환경 검증 범위"], "observed_revision": "B, 2021-04-28", "scope_note": "공식 범위 페이지를 확인했으며 상세 시험 수치·전체 절차를 재현하지 않습니다. 모든 프로젝트의 의무 기준으로 일반화하지 않습니다."},
+    {"id": "nasa-verification", "url": "https://www.nasa.gov/reference/5-3-product-verification/", "checked_section": "5.3; Differences Between Verification, Qualification, Acceptance and Certification", "supports": ["명시 요구사항과 시험·분석·검사·시연의 연결"], "scope_note": "자체 예제를 NASA 검증·인증 사례로 표시하지 않습니다."},
+    {"id": "nasa-validation", "url": "https://www.nasa.gov/reference/5-4-product-validation/", "checked_section": "5.4; Product Validation Preparation; Analyze Product Validation Results", "supports": ["사용자 기대·의도한 환경·모형 조건·결과 기록의 구분"], "scope_note": "단위 검사 통과와 실제 사용 목적의 타당성을 구분하는 개념 근거입니다."},
+    {"id": "sil-pil-hil", "url": "https://www.mathworks.com/help/rtw/gs/target-environments-and-applications.html", "checked_section": "SIL; PIL; HIL target environments", "supports": ["호스트 코드·대상 프로세서·실제 하드웨어와 실시간 모형의 시험 경계"], "scope_note": "공급사의 공개 도구 문서에서 용어를 대조한 범위입니다. MATLAB·Simulink·SIL·PIL·HIL을 실행하거나 보편 인증 기준으로 사용한 기록이 아닙니다."}
+  ],
+  "repository_connections": [
+    {"path": "../../전자컴퓨터공학_ece/22-로봇제어_robotics-boards/README.md", "role": "기존 로봇·좌표·기구학·PI 제어 설명 연결"},
+    {"path": "../../산업별전자와컴퓨팅_industry-systems/03-방산전자와항공우주_defense-aerospace.md", "role": "고수준 산업·탑재 전자·품질·검증 역할 연결"},
+    {"path": "../../예제_examples/실무검증_practical-validation/can/README.md", "role": "기존 자체 CAN 모형의 수신 계약·신선도와 실제 버스 미실행 범위"},
+    {"path": "../../예제_examples/실무검증_practical-validation/watchdog_reset/README.md", "role": "기존 자체 진행·워치독 모형과 실제 하드웨어 미실행 범위"}
+  ]
+}

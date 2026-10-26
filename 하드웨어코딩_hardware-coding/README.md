@@ -8,6 +8,10 @@ Verilog 회로를 제출하는 온라인 문제, 직접 설계한 SystemVerilog 
 
 [언어와 도구의 확장 실습](언어확장_language-expansion/README.md)은 RISC-V 어셈블리·Rust·cocotb·SPICE·Tcl/SDC·SystemC를 연결합니다. [선정 이유와 학습 순서](언어확장_language-expansion/검토와학습순서_language-selection.md)에서 각 도구가 다루는 대상과 기존 HDL 학습에서 이어갈 지점을 설명합니다. 확장 실습은 각 폴더의 별도 명령으로 실행하며, [실행 기록](언어확장_language-expansion/확인기록_validation.md)에서 확인한 범위를 구분합니다.
 
+## 자율주행·로봇·우주 시스템
+
+[응용 시스템 실습](응용시스템_applied-systems/README.md)은 좌표 변환·몸체를 고려한 실내 경로·측정 융합·URDF·교육용 위성 원궤도·벤치 텔레메트리를 다룹니다. [분야별 구조와 검증](응용시스템_applied-systems/분야별구조와검증_domain-architecture.md)에서 자율주행·로봇·우주·방산 전자의 인터페이스와 시험을 연결하고, [공개 프로젝트와 언어](응용시스템_applied-systems/공개프로젝트와언어_sources-and-languages.md)에서 ROS 2·Gazebo·Autoware·CARLA·cFS·F Prime·Ada/SPARK·Modelica의 학습 경로를 안내합니다. 직접 실행한 독립 예제와 외부 런타임 자료는 [실행 기록](응용시스템_applied-systems/확인기록_validation.md)에 구분합니다.
+
 ## 무엇부터 공부할지
 
 | 목표 | 시작할 자료 | 다음 단계 |
