@@ -50,6 +50,10 @@
 
 [설계와 검증 사례](설계와검증사례_engineering-cases/README.md)는 C/C++의 길이·소유권, 펌웨어 공개 순서, RTOS 동시성, 인터럽트·DMA·캐시, CAN·SPI·I2C·UART·이더넷, 워치독·리셋, USB·PCIe, 부트로더·업데이트, NVMe·eMMC·SD, 저널 복구, NAND 관리, FTL 매핑, 파일시스템 복구, 백업 복원, RAID, I/O 재시도, ECC, DDR, RTL·CDC와 기준 모델, 칩 산술·시험 ID·자동화, AI 배포·평가와 경보 정밀도, FPGA·SQLite의 오류와 설계 판단을 실제 코드·원인·해결·실행 기록으로 설명합니다. 장비 사양·구성한 계산·로컬 실행·실측의 범위는 각 본문에 구분해 두었습니다.
 
+## 반도체 설계 | Semiconductor design
+
+[반도체 설계](반도체설계_semiconductor-design/README.md)는 Linux·도구·라이선스·PDK에서 회로·RTL·물리 구현·제조 인계까지 연결합니다. [SRAM](반도체설계_semiconductor-design/05-SRAM셀과메모리매크로_sram-design.md)과 [DRAM](반도체설계_semiconductor-design/06-DRAM셀과주변회로_dram-design.md)의 셀·배열·주변회로, [DRC·LVS·PEX](반도체설계_semiconductor-design/10-DRC와LVS및PEX_physical-verification.md), [HBM·3D 집적](반도체설계_semiconductor-design/11-HBM과3D집적설계_hbm-3d-integration.md)을 나누어 읽으실 수 있습니다. [공개 도구 실습](반도체설계_semiconductor-design/12-공개도구로RTL에서GDS까지_open-rtl-to-gds.md)은 공식 예제의 설치·실행 경로입니다.
+
 ## 반도체 제조 공정 | Semiconductor fabrication
 
 [반도체 제조 공정](반도체제조공정_semiconductor-fabrication/README.md)에서는 소자 기초를 익힌 뒤 공정별 원리·장비·재료·변수·결함·계측을 연결합니다. [공정 통합](반도체제조공정_semiconductor-fabrication/09-공정통합과품질관리_integration-process-control.md)과 [로직·DRAM·NAND 비교](반도체제조공정_semiconductor-fabrication/10-로직과메모리의공정차이_logic-memory-integration.md)도 함께 읽으실 수 있습니다.

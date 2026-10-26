@@ -1787,6 +1787,38 @@
       "summary_en": "Connects sector products and subsystems to sensing, power, control, communications, computing, software and tests, with sourced company roles and links to existing technical studies.",
       "category_ko": "산업별 전자와 컴퓨팅",
       "category_en": "Electronics and computing across industries"
+    },
+    {
+      "number": 71,
+      "slug": "반도체설계_semiconductor-design",
+      "title": "반도체 설계",
+      "english_title": "Semiconductor design",
+      "sections": [
+        "Linux·도구·라이선스·PDK",
+        "트랜지스터 회로·Spectre·SRAM·DRAM",
+        "RTL·합성·타이밍·DFT·배치배선",
+        "DRC·LVS·PEX·GDS 인계",
+        "HBM·2.5D·3D 집적"
+      ],
+      "keywords": "IC design, Linux, EDA, license, PDK, Spectre, Virtuoso, SRAM, DRAM, Verilog, SystemVerilog, synthesis, STA, DFT, DRC, LVS, PEX, GDSII, OASIS, HBM, 3D IC, LibreLane",
+      "path": "반도체설계_semiconductor-design/README.md",
+      "references": [
+        "https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html",
+        "https://github.com/IHP-GmbH/IHP-Open-PDK",
+        "https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_06.html",
+        "https://www.cadence.com/en_US/home/resources/datasheets/integrity-3d-ic-platform-ds.html"
+      ],
+      "english_sections": [
+        "Linux, tools, licenses and PDKs",
+        "Transistor circuits, Spectre, SRAM and DRAM",
+        "RTL, synthesis, STA, DFT and physical implementation",
+        "DRC, LVS, PEX and tapeout handoff",
+        "HBM and 2.5D/3D integration"
+      ],
+      "summary_ko": "설계 환경과 공정 자료에서 회로·메모리·RTL 구현·물리 검증·제조 인계까지 연결하고, HBM의 다이·조립·전력·열·검사를 설명합니다.",
+      "summary_en": "Connects environments and process data with circuits, memories, RTL implementation, physical verification and tapeout handoff, including multi-die HBM design and analysis.",
+      "category_ko": "반도체 설계",
+      "category_en": "Semiconductor design"
     }
   ],
   "providers": [
@@ -2121,6 +2153,13 @@
         36,
         51,
         54
+      ]
+    },
+    {
+      "title_ko": "반도체 설계",
+      "title_en": "Semiconductor design",
+      "area_numbers": [
+        71
       ]
     },
     {
