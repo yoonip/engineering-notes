@@ -95,7 +95,7 @@ split은 조건을 나누어 비교하는 실험 구성, PV는 process variable,
 
 ## 출처와 확인 범위
 
-이 글의 업무 분류·상황·담당 범위는 계측·코드·자료의 사용 목적을 설명하기 위한 학습용 구성입니다. 각 검사·코드의 기술 근거는 [계측](01-회로와소자의계측코드_circuit-device-measurement.md), [펌웨어·통신](02-펌웨어와통신의공개코드_firmware-communication.md), [칩·메모리](03-칩과메모리의공개검사코드_chip-memory-test.md), [공정·설비](04-공정설비와패키지의검사사례_process-equipment-package.md), [AI·제조 IT](05-AI와제조IT의평가사례_ai-manufacturing-it.md)의 고정 원문·라이선스·확인 범위로 연결합니다. 새로운 측정값·실행 결과·채용 요건을 추가하지 않았습니다.
+이 글의 업무 분류·상황·담당 범위는 계측·코드·자료의 사용 목적을 설명하기 위한 학습용 구성입니다. 각 검사·코드의 기술 근거는 [계측](01-회로와소자의계측코드_circuit-device-measurement.md), [펌웨어·통신](02-펌웨어와통신의공개코드_firmware-communication.md), [칩·메모리](03-칩과메모리의공개검사코드_chip-memory-test.md), [공정·설비](04-공정설비와패키지의검사사례_process-equipment-package.md), [AI·제조 IT](05-AI와제조IT의평가사례_ai-manufacturing-it.md)의 고정 원문·라이선스·확인 범위로 연결합니다. 이 연결표 자체는 측정·실행 결과나 채용 요건을 제시하는 자료가 아닙니다.
 
 ## English
 
