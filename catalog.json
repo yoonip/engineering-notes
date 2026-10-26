@@ -1794,13 +1794,14 @@
       "title": "반도체 설계",
       "english_title": "Semiconductor design",
       "sections": [
-        "Linux·도구·라이선스·PDK",
-        "트랜지스터 회로·Spectre·SRAM·DRAM",
+        "Linux·도구·라이선스·PDK·TCAD",
+        "아날로그 풀커스텀·Spectre·SRAM·DRAM",
         "RTL·합성·타이밍·DFT·배치배선",
-        "DRC·LVS·PEX·GDS 인계",
+        "혼합신호 칩·SoC·IP 통합",
+        "DRC·LVS·PEX·칩 전체 검증·GDS 인계",
         "HBM·2.5D·3D 집적"
       ],
-      "keywords": "IC design, Linux, EDA, license, PDK, Spectre, Virtuoso, SRAM, DRAM, Verilog, SystemVerilog, synthesis, STA, DFT, DRC, LVS, PEX, GDSII, OASIS, HBM, 3D IC, LibreLane",
+      "keywords": "IC design, Linux, EDA, license, PDK, Spectre, Virtuoso, SRAM, DRAM, Verilog, SystemVerilog, synthesis, STA, DFT, DRC, LVS, PEX, GDSII, OASIS, HBM, 3D IC, LibreLane, full-custom layout, analog-digital integration, mixed-signal, SoC, padframe, IP integration",
       "path": "반도체설계_semiconductor-design/README.md",
       "references": [
         "https://openroad-flow-scripts.readthedocs.io/en/latest/tutorials/FlowTutorial.html",
@@ -1809,14 +1810,15 @@
         "https://www.cadence.com/en_US/home/resources/datasheets/integrity-3d-ic-platform-ds.html"
       ],
       "english_sections": [
-        "Linux, tools, licenses and PDKs",
-        "Transistor circuits, Spectre, SRAM and DRAM",
+        "Linux, tools, licenses, PDKs and TCAD",
+        "Full-custom analog design, Spectre, SRAM and DRAM",
         "RTL, synthesis, STA, DFT and physical implementation",
-        "DRC, LVS, PEX and tapeout handoff",
+        "Mixed-signal chips, SoCs and IP integration",
+        "Physical verification, chip-level signoff and tapeout handoff",
         "HBM and 2.5D/3D integration"
       ],
-      "summary_ko": "설계 환경과 공정 자료에서 회로·메모리·RTL 구현·물리 검증·제조 인계까지 연결하고, HBM의 다이·조립·전력·열·검사를 설명합니다.",
-      "summary_en": "Connects environments and process data with circuits, memories, RTL implementation, physical verification and tapeout handoff, including multi-die HBM design and analysis.",
+      "summary_ko": "환경·공정 자료에서 풀커스텀·메모리·RTL 구현, 혼합신호 칩·SoC 통합과 칩 전체 검증·제조 인계까지 연결합니다.",
+      "summary_en": "Connects design environments and process data with full-custom analog, memory and RTL implementation, mixed-signal chip and SoC integration, chip-level verification and tapeout handoff.",
       "category_ko": "반도체 설계",
       "category_en": "Semiconductor design"
     }

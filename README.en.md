@@ -27,7 +27,7 @@ I hope this repository will be more than a store of finished answers. One reader
 | [Learning sites and channels](학습사이트와채널_learning-resources/README.md) | Korean and international open courses, research resources, technical documentation and educational video channels |
 | [Engineering foundations](공학기초_foundations/README.md) | Foundational and advanced derivations, calculations and checks |
 | [Semiconductor fabrication](반도체제조공정_semiconductor-fabrication/README.md) | Wafer manufacturing, oxidation, lithography, etching, deposition and implantation, interconnects, testing, packaging and process integration |
-| [Semiconductor design](반도체설계_semiconductor-design/README.md) | Linux, licenses and PDKs; circuit simulation, SRAM/DRAM, RTL implementation, DRC/LVS/PEX, GDS handoff and HBM/3D integration |
+| [Semiconductor design](반도체설계_semiconductor-design/README.md) | Linux, licenses and PDKs; full-custom analog layout, SRAM/DRAM, RTL implementation, mixed-signal chips and SoCs, physical verification, GDS handoff and HBM |
 | [Electrical and computer engineering](전자컴퓨터공학_ece/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
 | [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | CSAT/LEET past questions, choice-by-choice reasoning and original practice |
 | [Foreign languages and technical English](외국어와기술영어_foreign-languages/README.md) | English foundations and exercises, study methods and technical reading |

@@ -52,7 +52,7 @@
 
 ## 반도체 설계 | Semiconductor design
 
-[반도체 설계](반도체설계_semiconductor-design/README.md)는 Linux·도구·라이선스·PDK에서 회로·RTL·물리 구현·제조 인계까지 연결합니다. [SRAM](반도체설계_semiconductor-design/05-SRAM셀과메모리매크로_sram-design.md)과 [DRAM](반도체설계_semiconductor-design/06-DRAM셀과주변회로_dram-design.md)의 셀·배열·주변회로, [DRC·LVS·PEX](반도체설계_semiconductor-design/10-DRC와LVS및PEX_physical-verification.md), [HBM·3D 집적](반도체설계_semiconductor-design/11-HBM과3D집적설계_hbm-3d-integration.md)을 나누어 읽으실 수 있습니다. [공개 도구 실습](반도체설계_semiconductor-design/12-공개도구로RTL에서GDS까지_open-rtl-to-gds.md)은 공식 예제의 설치·실행 경로입니다.
+[반도체 설계](반도체설계_semiconductor-design/README.md)는 Linux·도구·라이선스·PDK에서 회로·RTL·물리 구현·제조 인계까지 연결합니다. [풀커스텀 레이아웃](반도체설계_semiconductor-design/14-아날로그풀커스텀레이아웃_full-custom-layout.md), [아날로그·RTL 통합](반도체설계_semiconductor-design/15-아날로그와RTL의혼합신호통합_analog-digital-integration.md), [SoC 구조](반도체설계_semiconductor-design/16-SoC구조와IP통합_soc-architecture-integration.md)와 [칩 전체 검증](반도체설계_semiconductor-design/17-칩최상위검증과제조인계_chip-top-signoff.md)에서 블록별 설계를 최상위 칩으로 연결합니다. [SRAM](반도체설계_semiconductor-design/05-SRAM셀과메모리매크로_sram-design.md)과 [DRAM](반도체설계_semiconductor-design/06-DRAM셀과주변회로_dram-design.md)의 셀·배열·주변회로, [DRC·LVS·PEX](반도체설계_semiconductor-design/10-DRC와LVS및PEX_physical-verification.md), [HBM·3D 집적](반도체설계_semiconductor-design/11-HBM과3D집적설계_hbm-3d-integration.md)을 나누어 읽으실 수 있습니다. [공개 도구 실습](반도체설계_semiconductor-design/12-공개도구로RTL에서GDS까지_open-rtl-to-gds.md)은 공식 예제의 설치·실행 경로입니다.
 
 ## 반도체 제조 공정 | Semiconductor fabrication
 

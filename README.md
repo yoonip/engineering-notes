@@ -26,7 +26,7 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 �
 | [학습 사이트와 채널](학습사이트와채널_learning-resources/README.md) | 국내외 공개 강의, 연구기관·기업 자료, 한국어·해외 영상 해설과 공식 기술 문서 |
 | [공학 기초](공학기초_foundations/README.md) | 수학·물리·회로·시스템·AI의 기초, 분야별 학습과 심화 계산 |
 | [반도체 제조 공정](반도체제조공정_semiconductor-fabrication/README.md) | 웨이퍼·산화·포토·식각·증착과 이온주입·배선·검사·패키징, 공정 통합과 로직·메모리의 차이 |
-| [반도체 설계](반도체설계_semiconductor-design/README.md) | Linux·라이선스·PDK, Spectre 회로 해석, SRAM·DRAM, RTL·배치배선·DRC·LVS·PEX, GDS 인계와 HBM·3D 집적 |
+| [반도체 설계](반도체설계_semiconductor-design/README.md) | Linux·PDK·Spectre, 아날로그 풀커스텀·SRAM·DRAM·RTL 구현, 혼합신호 칩·SoC 통합·물리 검증·GDS·HBM |
 | [전자·컴퓨터공학](전자컴퓨터공학_ece/README.md) | 소프트웨어, 회로·반도체, 임베디드·제어, GPU·AI |
 | [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md) | 문해력·논리·논증, [수능·LEET 기출 분석](언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)과 자체 연습 |
 | [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md) | [영어 기초와 문법 연습](외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), 외국어 학습 방법과 기술 문서 읽기 |
