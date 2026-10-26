@@ -50,7 +50,7 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 �
 | 분야 | 내용 |
 | --- | --- |
 | [프로젝트](프로젝트_projects/README.md) · [실행 예제](예제_examples/README.md) | 소스, 실행 방법, 검증 결과 |
-| [알고리즘과 코딩테스트](programmers/README.md) | 프로그래머스 제출 코드와 풀이·문법 설명, 미완료 시도 분석 |
+| [알고리즘과 코딩테스트](programmers/README.md) | 프로그래머스 제출 코드와 풀이·문법 설명, [유형별 학습과 연습문제](programmers/유형별학습_algorithm-patterns/README.md), 미완료 시도 분석 |
 | [연구 기록](연구_research/README.md) | 참여 연구, 논문, 학술 활동과 수상 |
 | [작성자 소개](소개_about/README.md) · [연락](소개_about/연락_CONTACT.md) | 학력, 관심 분야, 협업 연락처 |
 

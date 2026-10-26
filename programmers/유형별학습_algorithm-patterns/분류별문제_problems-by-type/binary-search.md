@@ -1,0 +1,19 @@
+# 이진 탐색과 매개변수 탐색의 보관 문제
+
+[유형 설명](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) · [전체 문제 찾기](<../연습문제_problem-index.md>)
+
+주유형 9문제와 보조 기법까지 포함한 11문제를 연결합니다. 한 문제는 여러 유형에 나타날 수 있습니다.
+
+| 레벨 | 문제 | 주유형 · 함께 쓰는 기법 | C | C++ | Python |
+| ---: | --- | --- | --- | --- | --- |
+| 2 | 468372 리프 노드 수 최대화 | [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) · [트리·LCA·트리 DP](<../25-트리순회LCA트리DP_trees-lca-dp.md>) | [C](<../../C/level2/004_468372_리프_노드_수_최대화/README.md>) | [C++](<../../C++/level2/004_468372_리프_노드_수_최대화/README.md>) | [Python](<../../Python/level2/004_468372_리프_노드_수_최대화/README.md>) |
+| 2 | 340212 [PCCP 기출문제] 2번 / 퍼즐 게임 챌린지 | [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) · [구현과 시뮬레이션](<../02-구현과시뮬레이션_implementation-simulation.md>) | [C](<../../C/level2/009_340212_퍼즐_게임_챌린지/README.md>) | [C++](<../../C++/level2/009_340212_퍼즐_게임_챌린지/README.md>) | [Python](<../../Python/level2/009_340212_퍼즐_게임_챌린지/README.md>) |
+| 2 | 72412 순위 검색 | [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) · [해시와 빈도 집계](<../06-해시와빈도집계_hashing-counting.md>) · [정렬과 비교 함수](<../05-정렬과비교함수_sorting-comparators.md>) | — | [C++](<../../C++/level2/057_72412_순위_검색/README.md>) | [Python](<../../Python/level2/057_72412_순위_검색/README.md>) |
+| 3 | 468380 제곱 개수 배열 | [누적합과 차분](<../09-누적합과차분_prefix-difference.md>) · [투포인터와 슬라이딩 윈도](<../10-투포인터와슬라이딩윈도_two-pointers-window.md>) · [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) | [C](<../../C/level3/002_468380_제곱_개수_배열/README.md>) | [C++](<../../C++/level3/002_468380_제곱_개수_배열/README.md>) | [Python](<../../Python/level3/002_468380_제곱_개수_배열/README.md>) |
+| 3 | 86053 금과 은 운반하기 | [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) | [C](<../../C/level3/037_86053_금과_은_운반하기/README.md>) | [C++](<../../C++/level3/037_86053_금과_은_운반하기/README.md>) | [Python](<../../Python/level3/037_86053_금과_은_운반하기/README.md>) |
+| 3 | 43238 입국심사 | [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) | — | [C++](<../../C++/level3/058_43238_입국심사/README.md>) | [Python](<../../Python/level3/058_43238_입국심사/README.md>) |
+| 3 | 12920 선입 선출 스케줄링 | [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) · [구현과 시뮬레이션](<../02-구현과시뮬레이션_implementation-simulation.md>) | — | [C++](<../../C++/level3/080_12920_선입_선출_스케줄링/README.md>) | [Python](<../../Python/level3/080_12920_선입_선출_스케줄링/README.md>) |
+| 4 | 60060 가사 검색 | [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) · [정렬과 비교 함수](<../05-정렬과비교함수_sorting-comparators.md>) · [문자열과 파싱](<../04-문자열과파싱_strings-parsing.md>) | — | [C++](<../../C++/level4/extra_60060_가사_검색/README.md>) | [Python](<../../Python/level4/extra_60060_가사_검색/README.md>) |
+| 4 | 43236 징검다리 | [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) · [그리디와 교환 논증](<../15-그리디와교환논증_greedy-exchange.md>) · [정렬과 비교 함수](<../05-정렬과비교함수_sorting-comparators.md>) | — | [C++](<../../C++/level4/extra_43236_징검다리/README.md>) | [Python](<../../Python/level4/extra_43236_징검다리/README.md>) |
+| 5 | 389632 문자열과 알파벳과 쿼리 | [구간 질의와 지연 전파](<../26-구간질의와지연전파_range-queries.md>) · [최소 신장 트리와 DSU](<../22-최소신장트리와서로소집합_mst-dsu.md>) · [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) · [문자열과 파싱](<../04-문자열과파싱_strings-parsing.md>) | [C](<../../C/level5/010_389632_문자열과_알파벳과_쿼리/README.md>) | [C++](<../../C++/level5/010_389632_문자열과_알파벳과_쿼리/README.md>) | [Python](<../../Python/level5/revisit_20261024/009_389632_문자열과_알파벳과_쿼리/README.md>) |
+| 5 | 81305 시험장 나누기 | [이진 탐색과 매개변수 탐색](<../11-이진탐색과매개변수탐색_binary-parametric-search.md>) · [트리·LCA·트리 DP](<../25-트리순회LCA트리DP_trees-lca-dp.md>) · [그리디와 교환 논증](<../15-그리디와교환논증_greedy-exchange.md>) | — | [C++](<../../C++/level5/002_81305_시험장_나누기/README.md>) | [Python](<../../Python/level5/revisit_20261024/002_81305_시험장_나누기/README.md>) |

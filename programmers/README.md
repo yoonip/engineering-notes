@@ -10,6 +10,12 @@
 
 [레벨 0~4 C·C++ 채점과 게시 확인](CC_VERIFICATION.md) · [레벨 5 C·C++ 채점과 게시 확인](LEVEL5_VERIFICATION.md)
 
+## 알고리즘 유형별 학습
+
+[유형별 학습과 연습문제](유형별학습_algorithm-patterns/README.md)에서 구현·자료구조·완전 탐색·백트래킹·그리디·BFS·DFS·DP·그래프·문자열·수학과 심화 기법을 읽을 수 있습니다. 적용 조건과 정당성, 예제 추적, 반례, C·C++·Python의 구현 비용과 실제 모형을 함께 설명합니다.
+
+[유형별 문제 찾기](유형별학습_algorithm-patterns/연습문제_problem-index.md)는 중복 문제 번호를 합쳐 기존 언어별 보관 풀이로 연결합니다. 비교용 코드와 미완료 시도는 해당 언어의 통과 기록과 구분합니다.
+
 ## 기존 레벨별 목록
 
 Python 풀이의 새 위치와 SQL 자료를 함께 연결하는 기존 제출 기록입니다. Python만 보려면 [Python 레벨별 목록](Python/README.md)을 확인하면 됩니다.

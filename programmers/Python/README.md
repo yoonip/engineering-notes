@@ -4,6 +4,8 @@
 
 [프로그래머스 전체 목차](../README.md) · [전체 코드 목록](catalog.json) · [기존 검증 기록](../VALIDATION.md)
 
+[유형별 학습](../유형별학습_algorithm-patterns/README.md)과 [연습문제 찾기](../유형별학습_algorithm-patterns/연습문제_problem-index.md)에서 같은 문제의 C·C++·Python 풀이를 비교할 수 있습니다. 유형의 원리·정당성·반례와 언어별 구현 비용을 함께 설명합니다.
+
 ## 레벨별 목록
 
 | 레벨 | Python3 제출 기록 | Python 비교 풀이 |

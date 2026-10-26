@@ -1,0 +1,414 @@
+{
+  "checked_on": "2026-10-26",
+  "checked_at": "2026-10-26T05:53:02.235Z",
+  "baseline_commit": "20f9f92c6163900b4a532b3ae4a5db5d617a972e",
+  "scope": "Tutorials and existing archived-solution classification only; no new online grading",
+  "chapters": 44,
+  "classified_distinct_problem_ids": 581,
+  "classification_evidence_matches_actual_files": true,
+  "by_language": {
+    "C": {
+      "accepted": 421
+    },
+    "C++": {
+      "accepted": 581
+    },
+    "Python": {
+      "accepted": 565,
+      "comparison_only": 10,
+      "skipped_after_failure_cap": 1
+    }
+  },
+  "old_file_preservation": {
+    "scope": "Existing programmers/ archive; unrelated repository work is outside this preservation claim",
+    "baseline_archive_files": 6830,
+    "protected_files": 6825,
+    "all_protected_sha256_match": true,
+    "existing_code_files": 2498,
+    "existing_python_files": 1463,
+    "all_existing_code_bytes_unchanged": true,
+    "only_permitted_existing_edits": [
+      "README.md",
+      "programmers/README.md",
+      "programmers/ALGORITHMS.md",
+      "programmers/C/README.md",
+      "programmers/C++/README.md",
+      "programmers/Python/README.md"
+    ]
+  },
+  "new_tutorial_example_checks": {
+    "kind": "new_tutorial_python_examples_only",
+    "site_grading_performed": false,
+    "parsed_and_executed_python_blocks": 27,
+    "blocks": [
+      {
+        "file": "02-구현과시뮬레이션_implementation-simulation.md",
+        "index": 1,
+        "code_sha256": "bc84ac59e712ef9fc2a41b6390fa18a9c2052db7d3ea3a75cd0f7fad750b862d",
+        "functions": [],
+        "output": ""
+      },
+      {
+        "file": "03-배열과연결리스트_arrays-linked-lists.md",
+        "index": 1,
+        "code_sha256": "e74f0ec4881192c7729a33e96442685f74407e0befe6bac18f0ca330fe355205",
+        "functions": [],
+        "output": ""
+      },
+      {
+        "file": "04-문자열과파싱_strings-parsing.md",
+        "index": 1,
+        "code_sha256": "dfd76b382197b0ad603ffb984621060170829c4354d1ca61dde92345fcfcc97c",
+        "functions": [
+          "fields"
+        ],
+        "output": ""
+      },
+      {
+        "file": "05-정렬과비교함수_sorting-comparators.md",
+        "index": 1,
+        "code_sha256": "b981d7547b1c9bbde01ce4e17a35bfbd551b8d3bd87924f3648d9192ab155bdb",
+        "functions": [],
+        "output": ""
+      },
+      {
+        "file": "06-해시와빈도집계_hashing-counting.md",
+        "index": 1,
+        "code_sha256": "1e8481be557b91ea45bf5457f27d697ee2a4f30dfed6baa1b9fda25b42782430",
+        "functions": [],
+        "output": ""
+      },
+      {
+        "file": "07-스택큐덱_stack-queue-deque.md",
+        "index": 1,
+        "code_sha256": "9f7db817574a6ee596b509bc2934ea51d53a8cf7cc2a8b74e662c6f1a5306ce3",
+        "functions": [
+          "balanced"
+        ],
+        "output": ""
+      },
+      {
+        "file": "08-힙과우선순위큐_heap-priority-queue.md",
+        "index": 1,
+        "code_sha256": "a1a3d8a30bd2b26e257bfea317effd60672fac89afab325db6acbfb16a6c3347",
+        "functions": [],
+        "output": ""
+      },
+      {
+        "file": "09-누적합과차분_prefix-difference.md",
+        "index": 1,
+        "code_sha256": "fb8072ae43bb3604e83bd6fd664665fc37fd4db510d217a51954ffd90f7daec6",
+        "functions": [],
+        "output": ""
+      },
+      {
+        "file": "10-투포인터와슬라이딩윈도_two-pointers-window.md",
+        "index": 1,
+        "code_sha256": "821c4cd9877f3c589116ed7f97d3c30a02242190770c8bca00f4cd536ed9a2a8",
+        "functions": [],
+        "output": ""
+      },
+      {
+        "file": "11-이진탐색과매개변수탐색_binary-parametric-search.md",
+        "index": 1,
+        "code_sha256": "cf7dd697020af0f0114312d52aeae1cc399e7935f536c59b7152939fb09e08e7",
+        "functions": [
+          "minimum_capacity"
+        ],
+        "output": ""
+      },
+      {
+        "file": "12-완전탐색과중간에서만나기_exhaustive-meet-in-middle.md",
+        "index": 1,
+        "code_sha256": "7c00cb324624f1652621adc5e62ba13a2ddd0480e48fb8c2064d8d810a44ab6f",
+        "functions": [
+          "subset_sums"
+        ],
+        "output": ""
+      },
+      {
+        "file": "13-백트래킹과가지치기_backtracking-pruning.md",
+        "index": 1,
+        "code_sha256": "eb8ab16ee66def49438e385db90b169e62b703a55086717eabddbb2cbb7179be",
+        "functions": [
+          "count_queens"
+        ],
+        "output": ""
+      },
+      {
+        "file": "14-분할정복과재귀_divide-conquer-recursion.md",
+        "index": 1,
+        "code_sha256": "f0f35560aee12bcb29802a4e2582ba14c7b4e09a0e858a1b2430284039328f9a",
+        "functions": [
+          "merge_sort"
+        ],
+        "output": ""
+      },
+      {
+        "file": "15-그리디와교환논증_greedy-exchange.md",
+        "index": 1,
+        "code_sha256": "46766715403bc2ab83c1ae7ab0911dfdaca0682538c41f444415f52cd128d829",
+        "functions": [
+          "select_meetings"
+        ],
+        "output": ""
+      },
+      {
+        "file": "16-동적계획법의상태와전이_dynamic-programming.md",
+        "index": 1,
+        "code_sha256": "78830da84a62247ba01409869c16b033cebd3305d4f5c98aa6f1548fecbb1d5b",
+        "functions": [
+          "minimum_coins"
+        ],
+        "output": ""
+      },
+      {
+        "file": "18-비트마스크와비트집합_bitmask-bitset.md",
+        "index": 1,
+        "code_sha256": "e922e8cc9fa30e905b558258be0948355bf2ff093b42d491883f69386349998d",
+        "functions": [
+          "subset_sum"
+        ],
+        "output": ""
+      },
+      {
+        "file": "19-그래프모델링과BFS_graph-bfs.md",
+        "index": 1,
+        "code_sha256": "a037da9d2240f0127860bd66ac1c16fc61f12c1a2081870e287d645d07890a96",
+        "functions": [
+          "bfs"
+        ],
+        "output": ""
+      },
+      {
+        "file": "20-DFS와연결요소_graph-dfs.md",
+        "index": 1,
+        "code_sha256": "91bc76563902461e737783f0c816ad0b65ca43afd063ef6bfc124f07e544f736",
+        "functions": [
+          "components"
+        ],
+        "output": ""
+      },
+      {
+        "file": "21-최단경로와확장상태_shortest-path.md",
+        "index": 1,
+        "code_sha256": "6c7d120c0145d741a6472652a6bc4912ed3ff032efbe4fd0de7d232623710499",
+        "functions": [
+          "dijkstra"
+        ],
+        "output": ""
+      },
+      {
+        "file": "28-트라이와문자열매칭_trie-kmp-aho.md",
+        "index": 1,
+        "code_sha256": "74573c2812957978a3a77b8621a3461c3e68d2c979b0c9c373638f208c2204f6",
+        "functions": [
+          "prefix_function"
+        ],
+        "output": ""
+      },
+      {
+        "file": "30-정수론과모듈러연산_number-theory.md",
+        "index": 1,
+        "code_sha256": "9a286c8a049f440045bb342a5ea5885155b468441bffe6b820ff30038cb758ff",
+        "functions": [
+          "power_mod"
+        ],
+        "output": ""
+      },
+      {
+        "file": "32-행렬거듭제곱과선형점화_matrix-recurrence.md",
+        "index": 1,
+        "code_sha256": "7e4cf4668611edc6c9bb374040aa4840a98c2350f396ecd46fa9bd0e64908c26",
+        "functions": [
+          "matrix_power"
+        ],
+        "output": ""
+      },
+      {
+        "file": "33-계산기하와좌표변환_computational-geometry.md",
+        "index": 1,
+        "code_sha256": "cb91d2ae7983b6add2bd5d6c2dd971c0617156b08ca876483082b32f93409edd",
+        "functions": [
+          "orientation"
+        ],
+        "output": ""
+      },
+      {
+        "file": "35-게임이론과승패상태_game-theory.md",
+        "index": 1,
+        "code_sha256": "691dc6b92605cab59222f117a6c47ce929cd5b39d1c64ee2cda44f992d0c9451",
+        "functions": [
+          "winning_states"
+        ],
+        "output": ""
+      },
+      {
+        "file": "36-무작위화와근사최적화_randomized-approximation.md",
+        "index": 1,
+        "code_sha256": "7fe2a3410772fb8824ad2f6a978c82abad44fe0cd3218110587f1f84e54142c5",
+        "functions": [
+          "random_cut"
+        ],
+        "output": ""
+      },
+      {
+        "file": "38-함수그래프와반복점프_functional-graph-lifting.md",
+        "index": 1,
+        "code_sha256": "6c4d3f7cc5b55e27fd93abfb86620d6633c50896998b8f50dc2f1d023b1a1240",
+        "functions": [
+          "build_jumps",
+          "advance"
+        ],
+        "output": ""
+      },
+      {
+        "file": "44-기초수학과진법_basic-math.md",
+        "index": 1,
+        "code_sha256": "639ca86d2ac1aab606c58fc764a82f1e2f21a11f7ba099c2fa3ebeef47287db9",
+        "functions": [
+          "remainder_of_digits"
+        ],
+        "output": ""
+      }
+    ],
+    "independent_graph_cases": 80,
+    "graph_oracles": "Floyd–Warshall for BFS/Dijkstra; separate disjoint-set partition for components",
+    "digit_remainder_cases": 5870,
+    "digit_oracle": "Python int(text) % modulus, including 1000-digit strings",
+    "passed": true
+  },
+  "supplemental_independent_checks": {
+    "recorded_at": "2026-10-26T05:42:49.280Z",
+    "execution_timestamp_captured": false,
+    "observed_stdout": {
+      "python_blocks": 10,
+      "independent_checks": 1624,
+      "passed": true
+    },
+    "observed_exit_code": 0,
+    "checks": [
+      {
+        "document": 15,
+        "cases": 100,
+        "oracle": "Enumerate all subsets and verify non-overlapping schedules; compare maximum cardinality."
+      },
+      {
+        "document": 16,
+        "cases": 100,
+        "oracle": "BFS on reachable sums for minimum number of positive-denomination coins."
+      },
+      {
+        "document": 18,
+        "cases": 100,
+        "oracle": "Explicit set of all reachable subset sums."
+      },
+      {
+        "document": 28,
+        "cases": 100,
+        "oracle": "Naively enumerate all proper prefix/suffix equality lengths."
+      },
+      {
+        "document": 30,
+        "cases": 100,
+        "oracle": "Python builtin pow(base,exponent,modulus), including negative base and modulus1."
+      },
+      {
+        "document": 32,
+        "cases": 100,
+        "oracle": "Repeated ordinary matrix multiplication, including exponent0 and modulus1."
+      },
+      {
+        "document": 33,
+        "cases": 2,
+        "oracle": "Manual positive orientation and collinear endpoint-outside cases."
+      },
+      {
+        "document": 35,
+        "cases": 1,
+        "oracle": "All states0..30 for moves{1,3} match the independently proved parity rule."
+      },
+      {
+        "document": 36,
+        "cases": 20,
+        "oracle": "Recompute cut weight from returned partition and verify reproducibility for each fixed seed; no per-run approximation guarantee asserted."
+      },
+      {
+        "document": 38,
+        "cases": 1000,
+        "oracle": "50 random functional graphs,20 queries each, compared with direct repeated successor lookup."
+      },
+      {
+        "document": 38,
+        "cases": 1,
+        "oracle": "Manual graph{1,2,3,1,3}, start0 at steps0,1,2,4,11."
+      }
+    ],
+    "code_block_hashes": [
+      {
+        "document": "15-그리디와교환논증_greedy-exchange.md",
+        "block": 1,
+        "sha256": "46766715403bc2ab83c1ae7ab0911dfdaca0682538c41f444415f52cd128d829"
+      },
+      {
+        "document": "16-동적계획법의상태와전이_dynamic-programming.md",
+        "block": 1,
+        "sha256": "78830da84a62247ba01409869c16b033cebd3305d4f5c98aa6f1548fecbb1d5b"
+      },
+      {
+        "document": "18-비트마스크와비트집합_bitmask-bitset.md",
+        "block": 1,
+        "sha256": "e922e8cc9fa30e905b558258be0948355bf2ff093b42d491883f69386349998d"
+      },
+      {
+        "document": "28-트라이와문자열매칭_trie-kmp-aho.md",
+        "block": 1,
+        "sha256": "74573c2812957978a3a77b8621a3461c3e68d2c979b0c9c373638f208c2204f6"
+      },
+      {
+        "document": "30-정수론과모듈러연산_number-theory.md",
+        "block": 1,
+        "sha256": "9a286c8a049f440045bb342a5ea5885155b468441bffe6b820ff30038cb758ff"
+      },
+      {
+        "document": "32-행렬거듭제곱과선형점화_matrix-recurrence.md",
+        "block": 1,
+        "sha256": "7e4cf4668611edc6c9bb374040aa4840a98c2350f396ecd46fa9bd0e64908c26"
+      },
+      {
+        "document": "33-계산기하와좌표변환_computational-geometry.md",
+        "block": 1,
+        "sha256": "cb91d2ae7983b6add2bd5d6c2dd971c0617156b08ca876483082b32f93409edd"
+      },
+      {
+        "document": "35-게임이론과승패상태_game-theory.md",
+        "block": 1,
+        "sha256": "691dc6b92605cab59222f117a6c47ce929cd5b39d1c64ee2cda44f992d0c9451"
+      },
+      {
+        "document": "36-무작위화와근사최적화_randomized-approximation.md",
+        "block": 1,
+        "sha256": "7fe2a3410772fb8824ad2f6a978c82abad44fe0cd3218110587f1f84e54142c5"
+      },
+      {
+        "document": "38-함수그래프와반복점프_functional-graph-lifting.md",
+        "block": 1,
+        "sha256": "6c4d3f7cc5b55e27fd93abfb86620d6633c50896998b8f50dc2f1d023b1a1240"
+      }
+    ],
+    "scope": "Local executable teaching snippets only. These checks do not grade archived submissions or prove all stated algorithms; table examples and technical text received separate review."
+  },
+  "limitations": [
+    "Editorial primary and auxiliary types reflect representative archived solutions; tags are not official site tags.",
+    "Local example checks are not fresh site grading or proofs for every stated algorithm.",
+    "Website language availability and future problems were not surveyed for this documentation task."
+  ],
+  "local_links": {
+    "scope": "programmers/ plus repository README.md; local file/directory destinations, excluding unrelated work and heading anchor validation",
+    "checked_at": "2026-10-26T05:52:42.866Z",
+    "preserved_original_edges": 6274,
+    "required_original_edges": 6274,
+    "missing_original_edges": 0,
+    "broken_links_in_scope": 0
+  }
+}
