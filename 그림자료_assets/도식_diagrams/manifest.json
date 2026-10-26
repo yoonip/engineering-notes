@@ -183,7 +183,7 @@
       "source_type": "flowchart TD"
     },
     {
-      "document": "분야_topics/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md",
+      "document": "전자컴퓨터공학_ece/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md",
       "stem": "processes-memory-concurrency",
       "nodes": [
         {
@@ -252,7 +252,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md",
+      "document": "전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md",
       "stem": "rc-rlc-response",
       "nodes": [
         {
@@ -305,7 +305,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md",
+      "document": "전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md",
       "stem": "mos-electrostatics-switching",
       "nodes": [
         {
@@ -363,7 +363,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md",
+      "document": "전자컴퓨터공학_ece/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md",
       "stem": "synchronous-fifo-invariants",
       "nodes": [
         {
@@ -438,7 +438,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md",
+      "document": "전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md",
       "stem": "mmio-interrupt-dma",
       "nodes": [
         {
@@ -497,7 +497,7 @@
       "source_type": "stateDiagram-v2"
     },
     {
-      "document": "분야_topics/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md",
+      "document": "전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md",
       "stem": "framing-uart-crc",
       "nodes": [
         {
@@ -585,7 +585,7 @@
       "source_type": "stateDiagram-v2"
     },
     {
-      "document": "분야_topics/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md",
+      "document": "전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/피드백제어_feedback-discrete-model.md",
       "stem": "feedback-discrete-model",
       "nodes": [
         {
@@ -660,7 +660,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md",
+      "document": "전자컴퓨터공학_ece/21-신호처리제어_signals-control/해설_notes/샘플링과aliasing_sampling-aliasing.md",
       "stem": "sampling-aliasing",
       "nodes": [
         {
@@ -718,7 +718,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md",
+      "document": "전자컴퓨터공학_ece/23-AI머신러닝_ai-machine-learning/해설_notes/미분에서학습까지_gradients-and-learning.md",
       "stem": "gradients-and-learning",
       "nodes": [
         {
@@ -793,7 +793,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md",
+      "document": "전자컴퓨터공학_ece/29-전자기학-RF_electromagnetics-rf/해설_notes/전송선과반사_transmission-lines-reflections.md",
       "stem": "transmission-lines-reflections",
       "nodes": [
         {
@@ -825,7 +825,7 @@
       "source_type": "sequenceDiagram"
     },
     {
-      "document": "분야_topics/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md",
+      "document": "전자컴퓨터공학_ece/33-메모리저장장치_memory-storage/해설_notes/메모리지역성과캐시_locality-cache-amat.md",
       "stem": "locality-cache-amat",
       "nodes": [
         {
@@ -889,7 +889,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md",
+      "document": "전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md",
       "stem": "measurement-loading-uncertainty",
       "nodes": [
         {
@@ -964,7 +964,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md",
+      "document": "전자컴퓨터공학_ece/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md",
       "stem": "security-and-reliability-boundaries",
       "nodes": [
         {
@@ -1022,7 +1022,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md",
+      "document": "전자컴퓨터공학_ece/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md",
       "stem": "reset-to-main-and-toolchain",
       "nodes": [
         {
@@ -1113,7 +1113,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md",
+      "document": "전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md",
       "stem": "attention-from-equations",
       "nodes": [
         {
@@ -1193,7 +1193,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md",
+      "document": "전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md",
       "stem": "heat-diffusion",
       "nodes": [
         {
@@ -1240,7 +1240,7 @@
       "source_type": "flowchart LR"
     },
     {
-      "document": "분야_topics/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md",
+      "document": "전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md",
       "stem": "mechanics-energy-oscillation",
       "nodes": [
         {
