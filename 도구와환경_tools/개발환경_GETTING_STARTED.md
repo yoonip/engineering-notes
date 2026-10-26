@@ -1,10 +1,10 @@
 # 개발 환경의 구성
 
-개발 환경은 운영체제, 도구, 의존성, 실행 자원으로 이루어집니다. Editor가 소스를 다루고 compiler·interpreter가 실행을 준비하며, package manager가 라이브러리를 관리합니다.
+개발 환경은 운영체제, 개발 도구, 라이브러리와 실행 자원으로 이루어집니다. 편집기는 소스를 작성하는 도구이고, 컴파일러·인터프리터는 프로그램을 실행할 수 있는 형태로 처리합니다. 패키지 관리자는 필요한 라이브러리와 버전을 관리합니다.
 
 ## 환경의 층
 
-Linux·WSL은 운영체제 환경, GCC·Clang은 compiler, Python은 interpreter, venv·Conda는 프로젝트 의존성을 나누는 환경입니다. Jupyter의 kernel은 실제 코드를 실행하는 프로세스입니다. GPU 계산에는 driver·runtime·framework 사이의 지원 조건도 추가됩니다.
+Linux·WSL은 운영체제 실행 환경과 관련되고, GCC·Clang은 컴파일러입니다. Python은 언어이며 CPython 같은 구현체가 Python 코드를 실행합니다. `venv`·Conda는 프로젝트별 실행 환경과 의존성을 관리하는 데 쓰입니다. Jupyter의 커널은 실제 코드를 실행하는 프로세스입니다. GPU 계산에는 드라이버·런타임·프레임워크의 지원 조건도 추가됩니다. [Python 공식 용어집의 CPython 정의](https://docs.python.org/3/glossary.html#term-CPython)와 [인터프리터 실행 안내](https://docs.python.org/3/tutorial/interpreter.html)에서 언어와 실행 프로그램의 차이를 확인하실 수 있습니다.
 
 - [Linux & Bash](../전자컴퓨터공학_ece/01-linux-bash/README.md)
 - [Git과 빌드 도구](../전자컴퓨터공학_ece/02-개발도구_git-development-tools/README.md)
