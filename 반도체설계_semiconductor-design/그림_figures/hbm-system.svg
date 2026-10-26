@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="860" viewBox="0 0 1380 860" role="img" aria-labelledby="title desc">
+<title id="title">HBM 내부의 수직 적층과 호스트의 인터포저 연결</title><desc id="desc">직접 작성한 인터포저 기반 HBM 조립체의 단면 개념도입니다. 왼쪽 DRAM 다이와 베이스 다이는 수직 연결되고 오른쪽 호스트와는 인터포저를 통해 연결됩니다. 실제 비율이나 특정 제품의 설계도는 아닙니다.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#42556b" stroke-width="1.6"/></marker></defs>
+<rect width="1380" height="860" fill="#ffffff"/>
+<g font-family="'Malgun Gothic','Noto Sans KR','Apple SD Gothic Neo',sans-serif" fill="#193249">
+<text x="60" y="54" font-size="30" text-anchor="start" font-weight="600" fill="#193249">HBM 내부는 수직 적층, 호스트 연결은 인터포저로</text>
+<text x="60" y="93" font-size="21" text-anchor="start" font-weight="400" fill="#536575">층수·두께·범프 수를 축약한 개념도입니다.</text>
+<rect x="80" y="670" width="1220" height="85" rx="4" fill="#ddd0b7" stroke="#aa9673" stroke-width="2"/>
+<text x="690" y="721" font-size="24" text-anchor="middle" font-weight="600" fill="#193249">패키지 기판 · 외부 신호와 전원 연결</text>
+<rect x="115" y="585" width="1150" height="63" rx="3" fill="#c0d9e9" stroke="#7ca6c2" stroke-width="2"/>
+<text x="690" y="625" font-size="24" text-anchor="middle" font-weight="600" fill="#193249">인터포저 · 미세 배선</text>
+<circle cx="160" cy="659" r="7" fill="#b69e67"/>
+<circle cx="250" cy="659" r="7" fill="#b69e67"/>
+<circle cx="340" cy="659" r="7" fill="#b69e67"/>
+<circle cx="430" cy="659" r="7" fill="#b69e67"/>
+<circle cx="520" cy="659" r="7" fill="#b69e67"/>
+<circle cx="610" cy="659" r="7" fill="#b69e67"/>
+<circle cx="700" cy="659" r="7" fill="#b69e67"/>
+<circle cx="790" cy="659" r="7" fill="#b69e67"/>
+<circle cx="880" cy="659" r="7" fill="#b69e67"/>
+<circle cx="970" cy="659" r="7" fill="#b69e67"/>
+<circle cx="1060" cy="659" r="7" fill="#b69e67"/>
+<circle cx="1150" cy="659" r="7" fill="#b69e67"/>
+<circle cx="1240" cy="659" r="7" fill="#b69e67"/>
+<rect x="170" y="222" width="420" height="48" rx="3" fill="#dce8f7" stroke="#91a8ca" stroke-width="2"/>
+<text x="380" y="253" font-size="22" text-anchor="middle" font-weight="600" fill="#193249">DRAM 다이</text>
+<rect x="205" y="222" width="9" height="48" fill="#b87345"/>
+<circle cx="209.5" cy="278" r="5" fill="#b87345"/>
+<rect x="555" y="222" width="9" height="48" fill="#b87345"/>
+<circle cx="559.5" cy="278" r="5" fill="#b87345"/>
+<rect x="170" y="287" width="420" height="48" rx="3" fill="#dce8f7" stroke="#91a8ca" stroke-width="2"/>
+<text x="380" y="318" font-size="22" text-anchor="middle" font-weight="600" fill="#193249">DRAM 다이</text>
+<rect x="205" y="287" width="9" height="48" fill="#b87345"/>
+<circle cx="209.5" cy="343" r="5" fill="#b87345"/>
+<rect x="555" y="287" width="9" height="48" fill="#b87345"/>
+<circle cx="559.5" cy="343" r="5" fill="#b87345"/>
+<rect x="170" y="352" width="420" height="48" rx="3" fill="#dce8f7" stroke="#91a8ca" stroke-width="2"/>
+<text x="380" y="383" font-size="22" text-anchor="middle" font-weight="600" fill="#193249">DRAM 다이</text>
+<rect x="205" y="352" width="9" height="48" fill="#b87345"/>
+<circle cx="209.5" cy="408" r="5" fill="#b87345"/>
+<rect x="555" y="352" width="9" height="48" fill="#b87345"/>
+<circle cx="559.5" cy="408" r="5" fill="#b87345"/>
+<rect x="170" y="417" width="420" height="48" rx="3" fill="#dce8f7" stroke="#91a8ca" stroke-width="2"/>
+<text x="380" y="448" font-size="22" text-anchor="middle" font-weight="600" fill="#193249">DRAM 다이</text>
+<rect x="205" y="417" width="9" height="48" fill="#b87345"/>
+<rect x="555" y="417" width="9" height="48" fill="#b87345"/>
+<path d="M209.5,465 L209.5,496" stroke="#b87345" stroke-width="5"/>
+<circle cx="209.5" cy="480" r="6" fill="#b87345"/>
+<path d="M559.5,465 L559.5,496" stroke="#b87345" stroke-width="5"/>
+<circle cx="559.5" cy="480" r="6" fill="#b87345"/>
+<rect x="170" y="496" width="420" height="64" rx="3" fill="#b9d9cf" stroke="#7ba598" stroke-width="2"/>
+<text x="380" y="535" font-size="24" text-anchor="middle" font-weight="600" fill="#193249">베이스 다이</text>
+<circle cx="210" cy="573" r="6" fill="#b87345"/>
+<circle cx="260" cy="573" r="6" fill="#b87345"/>
+<circle cx="310" cy="573" r="6" fill="#b87345"/>
+<circle cx="360" cy="573" r="6" fill="#b87345"/>
+<circle cx="410" cy="573" r="6" fill="#b87345"/>
+<circle cx="460" cy="573" r="6" fill="#b87345"/>
+<circle cx="510" cy="573" r="6" fill="#b87345"/>
+<circle cx="560" cy="573" r="6" fill="#b87345"/>
+<rect x="805" y="398" width="360" height="162" rx="4" fill="#d7deea" stroke="#899ab2" stroke-width="2"/>
+<text x="985" y="458" font-size="27" text-anchor="middle" font-weight="600" fill="#193249">호스트 다이</text>
+<text x="985" y="496" font-size="23" text-anchor="middle" font-weight="400" fill="#193249">GPU / CPU / ASIC</text>
+<text x="985" y="530" font-size="21" text-anchor="middle" font-weight="400" fill="#4c6174">컨트롤러 · PHY</text>
+<circle cx="835" cy="573" r="6" fill="#b87345"/>
+<circle cx="880" cy="573" r="6" fill="#b87345"/>
+<circle cx="925" cy="573" r="6" fill="#b87345"/>
+<circle cx="970" cy="573" r="6" fill="#b87345"/>
+<circle cx="1015" cy="573" r="6" fill="#b87345"/>
+<circle cx="1060" cy="573" r="6" fill="#b87345"/>
+<circle cx="1105" cy="573" r="6" fill="#b87345"/>
+<circle cx="1150" cy="573" r="6" fill="#b87345"/>
+<path d="M230,601 L1100,601" fill="none" stroke="#916c37" stroke-width="2.4"/>
+<path d="M230,635 L1100,635" fill="none" stroke="#916c37" stroke-width="2.4"/>
+<text x="670" y="174" font-size="23" text-anchor="start" font-weight="600" fill="#193249">TSV와 다이 간 접속</text>
+<path d="M670,186 L561,246" fill="none" stroke="#8a6545" stroke-width="2.4"/>
+<text x="670" y="251" font-size="20" text-anchor="start" font-weight="400" fill="#536575">실리콘을 관통하는 전극과</text>
+<text x="670" y="281" font-size="20" text-anchor="start" font-weight="400" fill="#536575">다이 사이의 전기 연결</text>
+<path d="M380,208 L380,137" fill="none" stroke="#42556b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="465" y="165" font-size="21" text-anchor="start" font-weight="400" fill="#536575">방열 경로</text>
+<text x="690" y="812" font-size="22" text-anchor="middle" font-weight="400" fill="#536575">다이별 공정·모델 + 조립체의 연결·재료·전력·열·검사 자료가 필요합니다.</text>
+</g></svg>
