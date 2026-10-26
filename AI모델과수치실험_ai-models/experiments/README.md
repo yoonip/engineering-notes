@@ -20,8 +20,8 @@ Python 표준 라이브러리만으로 네 가지 계산을 실행했습니다. 
 
 ```powershell
 $runFile = Join-Path $env:TEMP ("cpu-lab-" + [guid]::NewGuid().ToString("N") + ".json") # 임시 폴더에 고유한 결과 파일명을 만듭니다.
-python AI모델실험_model-lab/experiments/cpu_lab.py --output $runFile # --output으로 기존 results.json과 다른 파일을 지정합니다.
-python -m unittest discover -s AI모델실험_model-lab/experiments -p "test_*.py" -v # unittest가 기존 수치 검사를 찾아 실행합니다.
+python AI모델과수치실험_ai-models/experiments/cpu_lab.py --output $runFile # --output으로 기존 results.json과 다른 파일을 지정합니다.
+python -m unittest discover -s AI모델과수치실험_ai-models/experiments -p "test_*.py" -v # unittest가 기존 수치 검사를 찾아 실행합니다.
 ```
 
 ## 1. 작은 모델의 KV 캐시가 더 클 수도 있습니다

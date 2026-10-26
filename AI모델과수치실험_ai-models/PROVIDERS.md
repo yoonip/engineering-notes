@@ -14,7 +14,7 @@
 
 ## 모델 분석으로 이동하기
 
-[모델·실행 도구 목록](models/README.md)은 기관과 구체적인 배포물을 나란히 표시합니다. 삼성 TRM 문서에서는 삼성 연구 코드만 다루며, Microsoft·Google·Meta 등 다른 기관은 각각 독립 문서로 연결합니다.
+[모델 목록](models/README.md)은 기관과 구체적인 배포물을 나란히 표시합니다. [실행 프레임워크](frameworks/README.md)는 배열 연산·자동미분·모델 실행 도구를 다룹니다. 각 기관의 연구·배포물은 해당 문서로 연결합니다.
 
 | 분류 | 분석 대상 |
 |---|---|
@@ -23,7 +23,7 @@
 | 퍼즐 추론 연구 | [Samsung SAIL Montréal TRM](models/samsung-trm/README.md)입니다. |
 | Hosted API | [Anthropic Claude](models/anthropic.md), [Amazon Nova](models/amazon.md)입니다. 공개 가중치를 함께 제공하는 다른 기관도 서비스 API를 운영할 수 있습니다. |
 | 이미지·영상 생성 | [Stability AI](models/stability.md), [Black Forest Labs](models/bfl.md), [Tencent](models/tencent.md)입니다. |
-| 실행 framework | [Apple MLX](models/apple.md)입니다. |
+| 실행 framework | [Apple MLX](frameworks/apple-mlx.md)입니다. |
 
 ## 비교할 때 남기는 기록
 

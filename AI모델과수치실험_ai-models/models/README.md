@@ -2,7 +2,7 @@
 
 각 문서는 실제 배포물의 개발자·기반 계보·구조·학습 설명·실행 조건을 다룹니다. 공식 자료 재확인일은 2026-10-21입니다. 대상 버전은 표의 모델 식별자로 구분하며, 이 목록은 성능 순위표가 아닙니다.
 
-공개 가중치 모델, 비공개 상용 API, 퍼즐 추론 연구, 이미지·영상 생성, 배열 framework를 구분합니다. 아래 표의 Apple MLX는 모델이 아니며, Hugging Face는 Hub 플랫폼을 운영하는 동시에 SmolLM2도 개발합니다. 모든 Hub 배포물이 Hugging Face의 자체 모델이라는 뜻은 아닙니다.
+공개 가중치 모델, 비공개 상용 API, 퍼즐 추론 연구, 이미지·영상 생성 모델을 다룹니다. 배열 연산·학습·추론을 수행하는 [실행 프레임워크](../frameworks/README.md)는 별도로 정리했습니다. Hugging Face는 Hub 플랫폼을 운영하는 동시에 SmolLM2도 개발합니다. 모든 Hub 배포물이 Hugging Face의 자체 모델이라는 뜻은 아닙니다.
 
 실제 로컬 실행은 [별도 CPU 수치 실험](../experiments/README.md)에 있습니다. 아래 모델의 가중치·유료 API·공식 학습은 실행하지 않았습니다. [자체 질문과 판정표](../experiments/평가입력과판정기준_evaluation-design.md)는 공식 모델 설명과 구분한 평가 설계입니다. [기관과 배포 경로의 구분](../PROVIDERS.md)을 함께 읽으시면 됩니다.
 
@@ -19,7 +19,6 @@
 | Mistral AI | [Ministral 8B 2410](mistral.md) | interleaved attention과 실행 지원 범위 |
 | IBM | [Granite 3.3 2B](ibm.md) | 근거 기반 응답과 추론 출력 형식 |
 | NVIDIA | [Nemotron Nano 9B v2](nvidia.md) | Mamba2·Transformer 혼합 구조 |
-| Apple | [MLX](apple.md) | 모델과 배열 연산 도구, 지연 실행 |
 | Amazon / AWS | [Nova Micro v1](amazon.md) | Bedrock 배포와 텍스트 입력 범위 |
 | Cohere Labs | [Aya Expanse 8B](cohere.md) | 다국어 평가와 비상업 라이선스 |
 | xAI | [Grok-1](xai.md) | 공개 MoE와 서비스 모델의 차이 |
@@ -40,4 +39,4 @@
 
 ## English
 
-Each note examines a specific release, its source-supported architecture, training description, inference conditions and limits of public disclosure. These are source-based analyses, not a leaderboard. Apple MLX is listed as a runtime, not a model. Only the linked offline numerical experiments were executed locally; no listed model weights or paid APIs were run.
+Each note examines a specific release, its source-supported architecture, training description, inference conditions and limits of public disclosure. Execution frameworks have a separate index. Only the linked offline numerical experiments were executed locally; no listed model weights or paid APIs were run.
