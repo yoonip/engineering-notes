@@ -4,6 +4,60 @@
 
 기준일: 2026-10-26. 포토 공정이 감광막에 패턴을 만드는 원리와 그 패턴을 다음 공정에 전달하는 조건을 설명합니다. 193 nm DUV, 13.5 nm EUV와 NA 0.55 High-NA EUV를 구분하며, 공식 발표의 연구 결과·장비 출하·선택 층 양산을 따로 표시합니다.
 
+## 공정 전후 단면
+
+![대상막 위 PR 도포, 마스크를 통한 노광, 양성 PR 현상 후 개구부의 단면](그림_figures/03-포토단면_lithography-section.svg)
+
+그림은 양성 PR의 패턴 형성을 설명하는 자체 원리도이며 실제 노광기의 광학 배치나 비례 축척 도면이 아닙니다. A에는 기판 위 가공할 대상막과 PR이 연속해서 남아 있습니다. B에서는 마스크를 거친 빛이 PR에 공간적인 반응 차이를 만듭니다. C에서는 현상으로 양성 PR의 개구부가 열렸지만 그 아래 대상막은 아직 남아 있습니다. 마스크를 통과하는 그림은 개념 설명이며, 반사 마스크를 쓰는 EUV 광학계를 그대로 그린 것은 아닙니다. [EPFL CMi, Introduction to Photolithography](https://www.epfl.ch/research/facilities/cmi/process/photolithography/introductiontophotolithography/)
+
+A에서 생긴 도포 결함은 B의 빛 분포를 바꾸지 않아도 C의 패턴 결함으로 이어질 수 있습니다. C에서의 폭·잔류막·무너짐을 먼저 확인하고, 다음 식각 후 같은 좌표와 비교하면 PR 형성 문제와 대상막 전사 문제를 나눌 수 있습니다. 그림에 대상막이 남은 이유가 바로 이 검사 시점의 차이입니다.
+
+### 실제 노광기·도포 현상기와 재료의 연결
+
+| 실제 장비·플랫폼 | 이 단면에서 맡는 역할 | 선택·해석 조건 |
+|---|---|---|
+| [ASML TWINSCAN NXE:3800E](https://www.asml.com/en/products/euv-lithography-systems/twinscan-nxe-3800e) | B에 해당하는 EUV 패턴 노광을 수행하는 제품입니다. | 공식 자료는 2 nm 로직·첨단 DRAM 양산을 지원하는 제품 설계와 웨이퍼별 계측·보정을 설명합니다. 제품 지원 범위가 특정 고객의 모든 층 적용을 뜻하지 않습니다. |
+| [TEL CLEAN TRACK LITHIUS Pro DICE](https://www.tel.com/product/lithius.html) | A의 도포와 C를 만드는 현상을 담당하는 300 mm coater/developer입니다. | 2025-12-15 출시 발표와 2026년 제품 설명이 있으며 High-NA EUV부터 DUV까지 지원한다고 설명합니다. 노광기의 역할과 분리하여 도포·현상 결함을 평가합니다. |
+
+장비 사진은 연결한 공식 제품 페이지에서 확인할 수 있습니다. 두 제품을 나란히 소개한 것은 역할 비교이며, 특정 고객 라인에서 이 조합으로 운용된 실적을 새로 주장하는 것이 아닙니다.
+
+| 재료·구조 | 역할 | 선택할 때 연결할 지표 |
+|---|---|---|
+| PR | 빛의 분포를 선택적으로 남는 임시 패턴으로 바꿉니다. | 파장·톤·감도·거칠기·결함과 식각 중 두께 여유를 함께 봅니다. CAR와 MOR을 같은 화학 반응으로 취급하지 않습니다. |
+| 하부층·하드마스크 | PR의 접착·광학 응답·후속 전사 조건을 조절하는 별도 층입니다. | PR이 잘 서 있어도 계면이 약하거나 전사 선택비가 맞지 않으면 최종 형상이 달라집니다. |
+| 현상액·후속 세정 매질 | 반응한 막의 용해 차이를 실제 개구부로 바꿉니다. | 재료별 용해 선택성, 잔류막·팽윤·건조 중 기계적 안정성을 확인합니다. |
+| 마스크 | 반복할 공간 정보를 제공합니다. | 투과형과 EUV 반사형을 구분하고, 결함의 필드 내 반복 여부와 실제 PR 패턴을 연결합니다. |
+
+재료와 후속 단계의 기본 구분은 [EPFL CMi의 포토리소그래피 설명](https://www.epfl.ch/research/facilities/cmi/process/photolithography/introductiontophotolithography/), 실제 트랙의 적용 범위는 [TEL의 LITHIUS 제품 설명](https://www.tel.com/product/lithius.html)을 근거로 합니다. 표의 선택 항목은 특정 PR의 인증 사양이나 현상 레시피가 아닙니다.
+
+### 사례 1: 도포 불량의 감시를 바꾼 실제 제품 발표
+
+TEL은 2025-12-15 LITHIUS Pro DICE 발표에서 이전 모델 대비 PR 도포 불량으로 생기는 웨이퍼 결함과 관련 비용을 50% 이상 줄일 수 있다고 설명했습니다. 각주상 결함 성능·약품 소비량 비교에 따른 TEL 추정이며, 모든 포토 결함률이나 고객 제품 수율이 50% 줄었다는 실측 보고는 아닙니다. 2026-04-28 기술 글은 장비 내부 센서의 연속 감시와 이상 시 경고·정지 기능을 설명합니다. [TEL 출시 발표와 각주 1](https://www.tel.com/news/product/2025/20251215_002.html), [TEL 기술 글의 Defect Control Technology](https://www.tel.com/blog/all/20260428_001.html)
+
+| 진단 순서 | 공개 사례와 적용할 때의 판단 |
+|---|---|
+| 증상 | A의 PR 도포 불량이 후속 패턴 결함과 웨이퍼 손실로 연결됩니다. |
+| 경쟁 원인 | 약품 공급·도포·모듈 상태 외에도 시작 표면의 입자·젖음성 등이 후보입니다. 장비 경보 하나만으로 물리적 결함 원인을 확정하지 않습니다. |
+| 확인 계측 | 공급사는 내부 센서·연속 데이터 수집을 공개했습니다. 실제 평가에서는 도포 직후 두께·피복·결함 맵과 해당 모듈·처리 시각을 연결해야 합니다. 이 추가 평가 항목은 본문의 진단 제안입니다. |
+| 해결 방향 | 공급사는 이상을 조기에 감지하는 기능으로 불량 처리가 계속되는 범위를 줄이는 방향을 제시합니다. 이미 틀어진 모든 PR 패턴을 센서가 복구한다는 의미는 아닙니다. |
+| 다시 볼 지표 | 도포 기인 결함과 기타 결함을 나눈 변화, 잘못된 경보, 재작업·약품 소비와 처리량입니다. 공급사가 공개하지 않은 고객별 수치는 제시하지 않습니다. |
+
+이 수치는 공급사 비교 추정입니다. 여기서 원자료·표본 수·고객별 공정 조건을 확보하여 독립 검증한 것은 아니며, 더 촘촘한 빛의 패턴을 만드는 노광기 해상도 성과와도 구분합니다.
+
+### 사례 2: 현상 뒤 가는 PR 선이 붙는 자체 진단 예시
+
+아래는 실제 생산 기록이 아닌 교육용 상황입니다. C에 있어야 할 가는 PR 선들이 이웃 선에 붙어 보인다고 가정합니다. 이는 3.5절의 패턴 붕괴 원리를 원인 분리 순서로 연결한 예입니다.
+
+| 진단 순서 | 비교할 자료와 해결 방향 |
+|---|---|
+| 증상 | 현상·건조 뒤 높은 PR 선이 기울거나 서로 붙고, 일부 공간이 닫혀 보입니다. |
+| 경쟁 원인 | 건조 중 모세관력, 약한 접착·재료 강성, 과도한 종횡비, 애초에 충분히 열리지 않은 공간과 브리지를 구분합니다. |
+| 확인 계측 | 평면 SEM만 보지 않고 기울어진 옆면·접힌 높이와 바닥 잔류막을 단면에서 확인합니다. 동일 패턴의 막 두께·접착·건조 조건별 비교에서는 노광량과 초점을 함께 기록합니다. |
+| 해결 방향 | 붕괴가 확인되면 PR 높이·재료·하부층과 건조 조건을 함께 검토합니다. 높이를 줄일 때에는 아래 하드마스크로 전사할 두께 여유도 다시 계산합니다. 단순히 현상 시간을 늘리면 남겨야 할 선을 더 약하게 할 수 있습니다. |
+| 다시 볼 지표 | 붕괴한 구조의 비율과 검사 면적, ADI CD·잔류막, AEI 선폭·단선 및 전기적 연결입니다. SEM 한 장에서 선이 서 있다는 관찰을 전 웨이퍼 합격으로 바꾸지 않습니다. |
+
+포토 패턴을 후속 공정 전에 검사하고 재작업 여부를 결정하는 원칙은 [EPFL CMi의 inspection·rework 설명](https://www.epfl.ch/research/facilities/cmi/process/photolithography/photolithography-inspection-stripping-and-descum/)과 연결됩니다. 재작업은 아래막을 이미 식각한 뒤의 손상까지 되돌린다는 뜻이 아니므로 C 단계의 검사가 중요합니다.
+
 ## 1. 노광은 실리콘에 회로를 직접 조각하는 일이 아닙니다
 
 포토리소그래피(photolithography)는 빛에 반응하는 얇은 막에 공간적인 정보를 기록하여 선택적으로 남기는 공정입니다. 감광막(photoresist, PR)은 노광 후 용해도 등이 달라지는 재료입니다. 마스크(mask) 또는 레티클(reticle)은 전사할 패턴 정보를 가진 물체입니다. 노광(exposure)은 그 정보를 빛의 분포로 전달하는 단계이며, 현상(development)은 재료가 용해되는 차이를 이용하여 실제 빈 공간과 남는 막을 만드는 단계입니다.
@@ -286,6 +340,11 @@ PR이 벗겨지는 현상에서는 접착·표면 준비·베이크뿐 아니라
 
 | 출처 | 읽은 절·범위 | 이 글에서 확인한 내용 | 자료 시점·확인일 |
 |---|---|---|---|
+| [ASML, TWINSCAN NXE:3800E](https://www.asml.com/en/products/euv-lithography-systems/twinscan-nxe-3800e) | Key features & benefits입니다. | 제품의 양산 지원 대상과 웨이퍼별 계측·보정 기능입니다. 특정 고객의 채택 실적은 추정하지 않았습니다. | 현재 제품 기능 소개, 2026-10-26 확인입니다. |
+| [TEL, LITHIUS Series](https://www.tel.com/product/lithius.html) | LITHIUS Pro DICE·Pro Z 설명입니다. | 노광기와 별개인 실제 도포·현상 장비와 적용 범위입니다. | 현재 제품 기능 소개, 2026-10-26 확인입니다. |
+| [TEL, LITHIUS Pro DICE 출시](https://www.tel.com/news/product/2025/20251215_002.html) | 본문·각주 1입니다. | 도포 불량 기인 결함·관련 비용의 50% 이상 감소 가능성은 이전 모델 대비 TEL 추정입니다. | 2025-12-15 발표, 2026-10-26 확인입니다. |
+| [TEL, LITHIUS Pro DICE 기술 글](https://www.tel.com/blog/all/20260428_001.html) | Defect Control Technology입니다. | 내부 센서·연속 감시·이상 경고와 정지 기능입니다. | 2026-04-28 게시, 2026-10-26 확인입니다. |
+| [EPFL CMi, Inspection·rework·descum·stripping](https://www.epfl.ch/research/facilities/cmi/process/photolithography/photolithography-inspection-stripping-and-descum/) | Photolithography inspection의 도포 전·현상 후 검사와 재작업 구분입니다. | 대상막 전사 전에 PR 품질을 판단하는 이유입니다. 개별 처리 절차는 옮기지 않았습니다. | 페이지 확인일 2026-10-26입니다. |
 | [EPFL CMi, Introduction to Photolithography](https://www.epfl.ch/research/facilities/cmi/process/photolithography/introductiontophotolithography/) | Introduction·Photoresist chemistry·Photolithography steps입니다. | PR 패턴·톤·CAR 성분과 단계 구분입니다. 현대 노드명을 단일 물리 길이로 보지는 않았습니다. | 페이지 확인일 2026-10-26입니다. |
 | [MicroChemicals, Softbake](https://www.microchemicals.com/dokumente/application_notes/softbake_photoresist.pdf) | 첫 부분의 목적·Diffusion·Evaporation입니다. | 용매가 이동·증발하는 원리와 과도/부족 베이크의 구분입니다. | 문서의 개별 재료 조건은 전용하지 않았으며 2026-10-26 확인입니다. |
 | [MicroChemicals, PEB](https://www.microchemicals.com/dokumente/application_notes/photoresist_post_exposure_bake_peb.pdf) | Chemically Amplified Positive Resists·Cross-linking Negative Resists입니다. | 노광 후 촉매·가교 반응과 재료별 목적입니다. | 일부 제품 목록은 2017년 기준인 자료이며 2026-10-26 확인입니다. |

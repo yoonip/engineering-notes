@@ -4,6 +4,59 @@
 
 기준일: 2026-10-26. 실리콘을 산화하여 SiO₂를 성장시키는 원리에서 출발하여, 오늘날 게이트에 사용하는 계면층·고유전율막·금속 전극의 역할까지 연결합니다. 시간·두께 계산은 가정한 모형의 연습이며 생산용 레시피나 실제 측정값이 아닙니다.
 
+## 공정 전후 단면
+
+![초기 Si, Si를 소비하며 성장한 산화막, 산화막 제거 후 남은 Si의 단면](그림_figures/02-산화단면_oxidation-section.svg)
+
+그림은 열산화의 물질 수지를 설명하는 자체 원리도이며, 현미경 영상이나 실제 두께 비례 도면이 아닙니다. A는 산화 전 Si 표면입니다. B에서는 산화막이 자라면서 Si/SiO₂ 계면이 아래로 이동합니다. 점선은 원래 표면을 가리키므로 산화막 전부가 그 위에 얹힌 것이 아님을 읽을 수 있습니다. C에서는 산화막을 제거해도 이미 소비한 Si가 되돌아오지 않습니다. 그림의 대상은 평면 열산화이며, 외부 Si 성분을 공급하는 증착이나 실제 high-k 다층 게이트의 모든 층을 표현한 것은 아닙니다. [MIT 6.774 강의 5, thermal oxidation 설명](https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/1vZLyiCE8HStKcB-OhsSgkv2wprhZhXCB_transcript.pdf)
+
+B의 품질을 판단하려면 산화막의 두께·굴절률뿐 아니라 계면 전하와 누설을 확인해야 합니다. C처럼 희생 산화막을 제거하는 경로에서는 남은 Si 두께·높이가 후속 채널 치수에 연결됩니다. 그러므로 산화막 두께만 맞췄다는 결론과 Si 표면을 보존했다는 결론은 별도의 계측 근거가 필요합니다.
+
+### 실제 산화 장비와 재료의 연결
+
+| 실제 장비·플랫폼 | 공개된 공정 역할 | 선택·해석 조건 |
+|---|---|---|
+| [Tokyo Electron TELINDY PLUS](https://www.tel.com/product/telindy.html) | 300 mm 배치 열처리 플랫폼으로 산화·열처리와 여러 증착 용도를 지원합니다. | 여러 장의 위치별 균일도와 전체 열이력을 함께 검토합니다. 같은 플랫폼 이름 아래 산화·LPCVD·ALD가 가능하다고 같은 반응이나 같은 구성이라는 뜻은 아닙니다. |
+| [Applied Materials Vantage RadOx RTP](https://www.appliedmaterials.com/us/en/product-library/vantage-radox-rtp.html) | 라디칼 산화와 열이력 제어를 사용하는 RTP 제품이며, STI 라이너·희생 산화막·게이트/터널 산화막 등의 용도가 공개되어 있습니다. | 얇은 막과 제한된 열이력이 필요한 조건을 검토할 후보입니다. 공급사 제품 기능 소개이며, 모든 구조에서의 독립적인 누설·수명 우위를 입증하는 자료는 아닙니다. |
+
+장비 사진은 위 공식 제품 페이지에서 확인할 수 있습니다. 실제 공정은 장비가 지원하는 여러 기능 가운데 해당 막에 검증한 구성을 사용합니다.
+
+| 재료 | 역할 | 선택할 때 연결할 지표 |
+|---|---|---|
+| Si와 O₂ 또는 H₂O | 기판 Si를 소비하여 SiO₂를 성장시키는 반응계입니다. | 필요한 성장량, 소비할 수 있는 Si, 계면 품질과 열예산을 함께 봅니다. |
+| 열산화 SiO₂ | 절연·계면·희생층 등의 목적에 맞추어 사용합니다. | 전기적 절연에는 누설·전하·수명을, 희생층에는 제거 후 남은 표면·치수를 포함합니다. |
+| Hf 계열 high-k와 금속 전극 | 작은 전기적 등가 두께를 유지하면서 유전체의 물리 두께와 전극 특성을 설계합니다. | κ 하나보다 계면층·문턱전압·이동도·전하 포획·신뢰성을 함께 확인합니다. 열산화 SiO₂와 같은 성장 경로는 아닙니다. |
+
+산화제의 구분은 [삼성반도체의 산화 공정 설명](https://semiconductor.samsung.com/kr/support/tools-resources/fabrication-process/eight-essential-semiconductor-fabrication-processes-part-2-oxidation-to-protect-the-wafer/), high-k·금속 전극의 역할은 [Intel의 High-k and Metal Gate Transistor Research](https://www.intel.com/pressroom/kits/advancedtech/doodle/ref_HiK-MG/high-k.htm)를 근거로 합니다. 선택 지표는 특정 회사의 비공개 재료 사양을 대신하지 않습니다.
+
+### 사례 1: 게이트 누설을 줄이기 위해 절연막과 전극을 함께 바꾼 실제 보고
+
+Intel의 2008년 기술 논문은 45 nm high-k/metal gate 트랜지스터와 이전 65 nm poly-Si/SiON 트랜지스터의 반전 상태 게이트 누설을 비교합니다. 「45nm Transistor Reliability」의 그림 2(a)는 25–1000배의 감소 범위를 제시하고, 별도 기술 소개는 NMOS와 PMOS의 감소량을 구분합니다. 이는 그 세대·적층·전압 비교에서의 Intel 보고이며, 모든 HfO₂ 막의 성능 배수나 2026년 GAA 수치가 아닙니다. [Intel Technology Journal 12(2), 2008, 인쇄면 p. 132, 그림 2](https://www.intel.com/content/dam/www/public/us/en/documents/research/2008-vol12-iss-2-intel-technology-journal.pdf)
+
+| 진단 순서 | 실제 보고와 일반화할 수 있는 판단 |
+|---|---|
+| 증상 | 얇은 기존 유전체를 더 얇게 하여 게이트 결합을 높이면 게이트 누설 부담이 커집니다. |
+| 경쟁 원인 | 두께에 따른 터널링 외에도 국소 얇은 부분·트랩·계면·측정 조건이 누설에 영향을 줍니다. 새 로트의 누설 증가를 모두 같은 원인으로 처리하지 않습니다. |
+| 확인 계측 | 보고는 TEM 단면과 반전 상태의 전압별 누설 비교를 제시합니다. 전기적 두께를 줄인 성과와 물리적 막을 두껍게 한 효과를 함께 읽습니다. |
+| 해결 방향 | 더 높은 κ의 절연막과 이에 맞는 금속 전극을 함께 도입했습니다. 단순히 SiO₂를 두껍게 하거나 같은 시간 더 산화한 해결이 아닙니다. |
+| 다시 볼 지표 | 누설뿐 아니라 전기적 두께·구동 전류·문턱전압과 열화·파괴 특성입니다. 해당 논문도 누설 감소 뒤의 신뢰성을 별도로 다룹니다. |
+
+이는 공급사 소속 연구자의 기술 보고입니다. 여기서 별도 실험으로 그 배수를 재현하거나 독립 검증하지 않았습니다. 특히 새 재료가 누설 문제를 줄여도 계면·트랩·전극 호환성을 다시 확인해야 한다는 점이 이 사례의 핵심입니다.
+
+### 사례 2: 배치의 특정 위치에서 산화막 두께가 벗어나는 자체 진단 예시
+
+아래는 실제 양산 불량 통계가 아닌 교육용 상황입니다. 같은 배치의 일부 슬롯에서 두께가 목표를 벗어났다고 가정합니다. 슬롯은 퍼니스 안에서 웨이퍼를 놓는 위치이며, 위치와 두께의 상관관계만으로 가스 부족이나 히터 문제를 확정하지 않습니다.
+
+| 진단 순서 | 비교할 자료와 해결 방향 |
+|---|---|
+| 증상 | 배치 평균은 맞지만 위·아래 또는 특정 슬롯의 두께 분포가 다릅니다. |
+| 경쟁 원인 | 실제 온도 분포, 산화제 공급·수송, 로딩 상태, 시작 자연산화막과 광학 계측 모형의 차이를 나눕니다. |
+| 확인 계측 | 같은 시작 표면의 모니터 웨이퍼를 위치별로 비교하고 두께 맵·굴절률·로딩 이력을 맞춥니다. 광학 모형 차이가 의심되면 대표 위치의 다른 두께 계측으로 대조합니다. |
+| 해결 방향 | 계측·초기막 차이를 먼저 배제한 뒤 확인된 위치별 열·공급·로딩 요인을 조정하는 방향을 검토합니다. 전체 시간을 늘리면 이미 두꺼운 위치도 더 자라므로 해결이 아닐 수 있습니다. |
+| 다시 볼 지표 | 위치별 두께 편차와 반복 배치의 재현성, 누설 분포, 그리고 C 단계에 해당하는 산화막 제거 후 Si 치수입니다. 평균 두께 하나만으로 종료하지 않습니다. |
+
+배치 장비라는 실제 맥락은 [TELINDY PLUS의 열처리·산화 기능](https://www.tel.com/product/telindy.html)에, 막 두께·광학/전기 계측의 차이는 이 글 6절의 자료에 근거합니다. 위 증상과 진단 순서는 그 자료를 연결한 자체 예시이며 제조사가 공개한 특정 사고 원인이나 수정 실적이 아닙니다.
+
 ## 1. 절연막은 전류를 막으면서 전기장은 전달합니다
 
 산화(oxidation)는 넓게는 전자를 잃는 화학 반응입니다. 실리콘 제조 공정에서 ‘산화 공정’은 보통 실리콘과 산화제를 반응시켜 산화막을 만드는 일을 가리킵니다. Si는 반도체이며 SiO₂는 절연체입니다. 실리콘 원자에 산소가 결합하여 다른 물질이 되는 것이므로, 같은 재료가 색이나 두께만 바뀐 상태로 이해하면 안 됩니다.
@@ -296,6 +349,9 @@ A = 0.10 μm, B = 0.010 μm²/h, xᵢ = 0.050 μm, x𝒻 = 0.150 μm로 가정�
 
 | 출처 | 읽은 절·범위 | 이 글에서 확인한 내용 | 자료 시점·확인일 |
 |---|---|---|---|
+| [TEL, TELINDY Series](https://www.tel.com/product/telindy.html) | TELINDY PLUS의 제품 설명·용도입니다. | 300 mm 배치 플랫폼의 산화·열처리와 증착 기능을 구분했습니다. | 현재 제품 기능 소개, 2026-10-26 확인입니다. |
+| [Applied Materials, Vantage RadOx RTP](https://www.appliedmaterials.com/us/en/product-library/vantage-radox-rtp.html) | 제품 소개의 라디칼 산화·열예산·용도입니다. | RTP의 실제 산화 적용 범위입니다. 독립적인 제품 간 성능 비교는 아닙니다. | 현재 제품 기능 소개, 2026-10-26 확인입니다. |
+| [Intel Technology Journal 12(2)](https://www.intel.com/content/dam/www/public/us/en/documents/research/2008-vol12-iss-2-intel-technology-journal.pdf) | 「45nm Transistor Reliability」의 인쇄면 p. 132, 그림 2 관련 본문과 설명입니다. | 45 nm high-k/metal gate와 65 nm poly-Si/SiON의 반전 상태 누설 비교와 신뢰성 평가의 구분입니다. | 2008-06-17 발행, 2026-10-26 확인입니다. |
 | [삼성반도체, 산화공정](https://semiconductor.samsung.com/kr/support/tools-resources/fabrication-process/eight-essential-semiconductor-fabrication-processes-part-2-oxidation-to-protect-the-wafer/) | 산화막 역할·열산화·건식/습식 설명입니다. | 절연·마스크 역할과 산화제 구분입니다. 속도 배수를 보편값으로 쓰지 않았습니다. | 페이지 확인일 2026-10-26입니다. |
 | [SK hynix, Front-End Process Episode 2](https://news.skhynix.com/en/semiconductor-front-end-process-episode-2/) | The 3 Types of Oxidation Processes·Oxidation Equipment입니다. | 라디칼 산화와 3차원 면의 균일도 문제입니다. 분자 질량만으로 속도를 설명하지 않았습니다. | 2022-12-21 게시, 2026-10-26 확인입니다. |
 | [MIT 6.774, Lecture 5 transcript](https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/1vZLyiCE8HStKcB-OhsSgkv2wprhZhXCB_transcript.pdf) | thermal oxidation 도입·Si 소비·MOS 설명입니다. | 계면 반응과 부피 팽창의 그림입니다. | 2004년 강의, 2026-10-26 확인입니다. |

@@ -6,6 +6,14 @@
 
 금속 배선 공정은 ‘금속을 뿌린 뒤 회로 모양으로 깎는다’는 한 가지 순서로 설명할 수 없습니다. 알루미늄을 식각하여 남기는 방식과 구리용 홈을 먼저 만든 뒤 채우는 다마신 방식의 차이를 이해해야 합니다. 수치 예제는 별도 표시한 설명용 가정이며 실제 제품의 치수·성능·레시피가 아닙니다. 연구 시연, 장비 공급사의 제품 발표, 제조사의 양산 보고는 2026-10-26에 확인한 자료 범위에서 구분합니다.
 
+## 공정 전후 단면
+
+![절연막 홈의 배리어·시드 형성부터 구리 채움과 CMP까지의 단면 개념도](그림_figures/06-배선CMP단면_interconnect-section.svg)
+
+그림은 구리 다마신 배선의 재료 위치를 보여 주는 자체 개념도이며 실제 제품의 단면 사진이나 축척 도면이 아닙니다. A에서는 절연막의 트렌치·비아 공간을 준비합니다. B에서는 그 표면에 배리어·라이너·시드에 해당하는 계면층을 형성합니다. 그림의 얇은 층은 역할을 단순화한 것이며 모든 기술의 재료 조합이 같다는 뜻은 아닙니다. C에서는 구리를 홈 위까지 과충전하여 표면에 연속적인 금속층이 남습니다. D에서는 CMP로 윗면의 과잉 금속과 불필요한 계면층을 제거하여 홈 속 도체만 남깁니다.
+
+핵심 변화는 C에서 이어진 표면 전도막이 D에서 분리된다는 점입니다. 평균 제거량이 같아도 일부 표면막이 남으면 단락되고, 홈 속 구리를 지나치게 제거하면 단면과 저항이 달라집니다. [4절](#4-듀얼-다마신의-전체-흐름)의 순서와 [6절](#6-cmp의-화학과-기계-작용)의 디싱·에로전이 이 단면에서 서로 연결됩니다. 아래층 접속·캡·정지막과 다층 배선망은 이 단순 그림에 모두 표현하지 않았습니다.
+
 ## 1. 접촉부·비아·금속선과 MOL·BEOL
 
 접촉부(contact)는 소자의 소스·드레인·게이트 같은 단자와 위쪽 배선망을 잇는 구조입니다. 비아(via)는 주로 서로 다른 높이의 금속층을 연결하는 구조입니다. 금속선(line)은 같은 층에서 옆 방향으로 전류를 운반합니다. 구조가 작아질수록 접촉부와 비아의 저항도 무시하기 어렵습니다. 긴 금속선의 저항만 줄였다고 전체 경로의 저항이 같은 비율로 줄지는 않습니다.
@@ -77,6 +85,23 @@
 디싱(dishing)은 금속선 표면이 주변 절연막보다 오목하게 내려간 상태를 말합니다. 에로전(erosion)은 패턴이 밀집한 영역에서 금속과 절연막을 포함한 영역의 높이가 주변 기준보다 낮아지는 현상을 뜻합니다. 하나는 선 내부 높이 차이에, 다른 하나는 패턴 영역의 높이 손실에 주목하므로 같은 말로 쓰지 않습니다.
 
 패턴 밀도·선폭·패드 거동·연마 선택비·과연마가 영향을 줄 수 있습니다. 한국정밀공학회에 발표된 텅스텐 CMP 연구는 디싱·에로전으로 배선 단면이 줄고 저항이 증가하는 문제와 패턴 밀도·크기의 영향을 다룹니다. 이 연구의 특정 연마재 결과를 구리·Mo의 모든 CMP에 적용하지 않습니다. [박범영 외, 텅스텐 CMP에서 디싱 및 에로젼 결함 감소에 관한 연구, 2005, Abstract](https://jkspe.or.kr/journal/view.php?number=3234)
+
+### 실제 장비·재료와 각 단계의 역할
+
+배리어·금속 채움·연마는 서로 다른 장비 기능입니다. 아래 공식 페이지에는 장비 외관과 공정 그림도 실려 있습니다. 공급사가 공개한 제품 기능을 기준으로 설명하며, 고객의 전체 배선 흐름이나 장비 선택을 추정하지 않습니다.
+
+| 장비·플랫폼 | 재료와 맡는 단계 | 적용 조건·공개 범위 | 공식 본문의 위치 |
+|---|---|---|---|
+| Applied Endura CuBS IMS with Volta Ruthenium CVD | 루테늄·코발트(RuCo) 라이너와 Cu 채움을 연결하는 통합 플랫폼입니다. | 얇은 계면층과 그 위의 Cu 리플로를 다룹니다. 리플로는 열처리로 구리를 재배치하는 과정입니다. RuCo를 썼다는 말은 배선 전체를 Ru로 바꿨다는 뜻이 아닙니다. | [제품 본문의 liner·reflow 설명](https://www.appliedmaterials.com/us/en/product-library/endura-cubs-volta-ruthenium.html) |
+| Lam SABRE | Cu ECD로 다마신 구조를 채웁니다. | 얇은 배리어·시드와 높은 종횡비에서 시드를 보호하면서 바닥 성장과 채움 범위를 확보하는 제품 기능을 설명합니다. | [Industry Challenges·Key Customer Benefits](https://www.lamresearch.com/product/sabre/) |
+| EBARA F-REX300X | 300 mm 웨이퍼의 Cu 등 재료를 CMP로 평탄화합니다. | 네 플래튼과 직렬·병렬 연마 구성을 소개합니다. 어떤 Cu·배리어·절연막 조합의 선택비인지 별도 확인이 필요합니다. | [F-REX300X와 Applications for F-REX](https://www.ebara-pm.eu/systems/cmp-tools/) |
+
+| 실제 재료 | 역할 | 적용 조건과 확인할 결과 |
+|---|---|---|
+| TaN 배리어와 Cu 시드 | Cu 확산을 억제하고 도금을 시작할 전도 경로를 만듭니다. | 역사적인 CuBS 재료 사례입니다. 두께뿐 아니라 측벽·바닥의 연속성을 확인하며 모든 최신 층의 조합으로 일반화하지 않습니다. [Applied, 2005년 CuBS 발표](https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-strengthens-leadership-300mm-copper) |
+| RuCo 라이너와 Cu | 좁은 홈에서 계면층이 차지하는 부피와 Cu의 리플로를 함께 다룹니다. | 공급사는 20 Å 미만의 라이너를 설명합니다. 그 두께를 단순히 모든 배리어층의 총 두께로 바꾸지 않습니다. [Applied, Volta Ruthenium CVD](https://www.appliedmaterials.com/us/en/product-library/endura-cubs-volta-ruthenium.html) |
+| Cu와 도금 첨가제 | 구리 이온의 환원과 표면 반응 차이로 홈을 채웁니다. | 바닥에서의 채움, 시드 보존, 보이드와 전기 저항을 함께 평가합니다. 첨가제의 구체적인 배합은 여기서 제시하지 않습니다. [Lam, SABRE](https://www.lamresearch.com/product/sabre/), [IBM 논문 초록](https://research.ibm.com/publications/damascene-copper-electroplating-for-chip-interconnections) |
+| CMP 패드·슬러리 | 표면 화학 반응과 기계 작용으로 금속·절연막을 제거합니다. | 재료별 제거 선택비, 패턴 높이, 스크래치와 세정 잔류물을 함께 확인합니다. [EBARA의 CMP 원리 설명](https://ebara.com/global-en/technology/information/polishing-technology-ex/) |
 
 ## 7. 배선의 저항과 정전용량
 
@@ -155,6 +180,44 @@ Intel은 PowerVia를 자사의 후면 전력 공급 방식으로 설명합니다
 AFM·프로파일 계측은 높이 차이를, 단면 SEM/TEM은 선·비아의 형상과 계면을, 조성 분석은 잔류 원소와 계면층을 보여 줍니다. 각각 공간 범위와 시료 준비의 영향이 다릅니다. 한 단면에서 보이드가 보이지 않는 결과와 전체 전기 시험에서 불량이 나온 결과는 동시에 가능하며, 먼저 표본 위치와 전기 경로가 일치하는지 확인해야 합니다.
 
 배선 재료를 바꿀 때에는 저항만 비교하지 않습니다. 같은 설계 폭·높이·피치인지, 배리어·라이너를 포함한 전체 단면인지, 접촉 저항이 포함되는지, 단위 길이 Ω/μm인지 저항률 μΩ·cm인지 구분해야 합니다. 비교 조건이 다르면 더 낮은 숫자가 더 나은 공정을 뜻하지 않을 수 있습니다.
+
+### 사례 1: Mo 접촉부의 채움 불량과 CMP 높이 불량 구분
+
+Applied는 Mo 접촉부 개발에서 PROVision 10의 고해상도 전자빔 영상과 그림자 기반 높이 검출을 사용한 사례를 보고합니다. 채움 뒤의 과채움·미채움과 CMP 뒤의 디싱·돌출을 공정별로 보며, 레이아웃 밀도에 따른 분포를 연결하는 방식입니다. 해결의 핵심은 최종 전기 시험에서 한꺼번에 불량을 발견하는 대신 재료 형성과 연마 사이에 계측을 넣어 수정할 단계를 좁히는 것입니다. 이는 공급사의 개발 사례이며 공개 글에는 조정한 전체 조건과 수정 전후 저항·수율 수치가 없습니다. [Applied, 2026-01-05, Co-optimized Processes and PROVision 10 및 Protrusion Detection](https://www.appliedmaterials.com/us/en/newsroom/blogs/cooptimized-process-metrology-accelerates-molybdenum-contact-development.html)
+
+아래의 경쟁 원인과 재검증 항목은 해당 보고에 연결한 자체 진단 예시입니다. Mo 개발 사례를 Cu CMP의 동일한 재료 조건으로 옮기지 않습니다.
+
+| 단계 | 확인 내용 |
+|---|---|
+| 증상 | Mo 접촉부 높이가 위치별로 달라지고 최종 저항도 넓게 분포합니다. |
+| 경쟁 원인 | 증착 단계의 미채움·과채움, CMP의 국소 제거 차이, 패턴 밀도, 계면·접촉 저항이 경쟁합니다. 최종 저항 하나로 연마 불량을 확정하지 않습니다. |
+| 계측 | 증착 뒤와 CMP 뒤의 같은 레이아웃·위치에서 높이·채움 분포를 비교하고, 필요한 위치의 단면과 전기 측정을 연결합니다. 보고 사례는 전자빔 영상에서 얻는 높이 정보를 활용합니다. |
+| 조치 방향 | 연마 전부터 낮은 접촉부와 연마 뒤에 낮아진 접촉부를 구분한 뒤 증착 또는 CMP 평가로 되돌아갑니다. 공급사 보고의 공정·계측 연결 원리를 활용한 진단 방향입니다. |
+| 재검증 지표 | 공정별 미채움 비율·높이 분포·디싱·돌출, 패턴 밀도별 분포, 접촉 저항을 같은 표본 기준으로 확인합니다. 고객 양산 수율 달성 여부는 이 공개 자료로 확정하지 않습니다. |
+
+### 사례 2: 텅스텐 패턴 웨이퍼의 고정입자패드 연구
+
+박범영 외의 2005년 논문 초록은 고정입자패드(FAP)와 약액을 사용한 W 패턴 웨이퍼 연구에서 디싱·에로전 감소를 보고합니다. 아래에서 보고된 조치와 추가 확인 항목을 나눕니다. 전문의 전체 조건이나 새로운 저감 수치를 확인한 결과는 아닙니다. [원 논문 서지와 Abstract](https://jkspe.or.kr/journal/view.php?number=3234)
+
+| 단계 | 확인 내용 |
+|---|---|
+| 증상 | 과연마와 패턴 밀도·크기에 따른 W 디싱·에로전 문제입니다. |
+| 경쟁 원인 | 형상별 제거 차이와 연마 조건이 함께 영향을 줍니다. 개별 불량의 단독 원인은 초록에서 분리되어 있지 않습니다. |
+| 계측 | 초록은 W 패턴 웨이퍼 결과를 보고합니다. 세부 계측 절차는 확인 범위에 없습니다. |
+| 보고된 조치 | FAP의 연마재 농도를 낮춰 형상 선택성을 바꾸고 국소 과연마를 줄이는 원리를 제시합니다. |
+| 재검증 지표 | 다른 공정에 적용하려면 밀도·크기별 디싱·에로전과 잔막을 다시 확인해야 합니다. 이는 이 글이 제안하는 확인 항목이며 Cu·Mo에서 동일 결과를 얻었다는 뜻은 아닙니다. |
+
+### 사례 3: CMP 후 단락을 줄이자 선 저항이 커지는 경우
+
+다음은 표면 금속 제거와 홈 속 금속 보존의 경쟁을 설명하기 위한 자체 진단 예시입니다. 실제 F-REX300X 장비의 불량 기록이나 실험 결과는 아닙니다. CMP의 화학·기계 작용은 [EBARA의 원리 설명](https://ebara.com/global-en/technology/information/polishing-technology-ex/), 패턴에 따른 디싱·에로전 문제는 [텅스텐 CMP 연구 초록](https://jkspe.or.kr/journal/view.php?number=3234)에서 확인할 수 있습니다. 후자의 재료별 실험 결과를 Cu 제거율로 사용하지 않습니다.
+
+| 단계 | 확인 내용 |
+|---|---|
+| 증상 | 연마 뒤 이웃 선의 단락이 발생합니다. 제거량을 늘린 비교 시료에서는 단락이 줄지만 선 저항이 커집니다. |
+| 경쟁 원인 | 첫 시료의 표면 잔류 Cu·배리어, 도금 브리지, 절연막 손상을 나누고, 두 번째 시료에서는 디싱·에로전 외에 선폭·내부 보이드·계면층 차이도 확인합니다. |
+| 계측 | 단락 위치의 표면 금속·조성과 누설 경로를 확인합니다. 같은 폭·밀도의 구조에서 CMP 전후 높이, 단면 도체 면적, 4단자 선 저항을 비교합니다. |
+| 조치 방향 | 잔류 표면막 문제인지 먼저 확인한 뒤 벌크 Cu 제거·계면층 제거·후속 세정 중 어느 단계의 분포가 남는지 나눕니다. 단락 감소만으로 추가 연마가 적정했다고 결론 내리지 않습니다. |
+| 재검증 지표 | 단락·누설 분포와 함께 최소 도체 단면, 디싱·에로전, 선 저항 분포, 스크래치·잔류물을 확인합니다. 평균 막 두께가 맞아도 국소 전기 경로가 통과하는지 검증해야 합니다. |
 
 ## 12. 자체 계산 예제
 
@@ -243,17 +306,18 @@ R = ρL/A ≈ 98.77 Ω
 | Applied Materials, CuBS 100th shipment, 2005-08-15 | TaN 배리어·Cu 시드 역할의 역사적 사례 | [공식 발표](https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-strengthens-leadership-300mm-copper) |
 | Applied Materials, Integrated Materials Solution | Endura CuBS 사례: 계면과 공정 통합 | [공식 설명](https://www.appliedmaterials.com/us/en/semiconductor/solutions-and-software/ims.html) |
 | Andricacos 외, IBM J. Res. Dev., 1998 | Abstract: 첨가제와 superconformal fill입니다. 전문 전체를 검토한 것은 아닙니다. | [저자 소속 기관의 논문 소개](https://research.ibm.com/publications/damascene-copper-electroplating-for-chip-interconnections) |
-| Lam Research, SABRE | Industry Challenges: ECD의 채움과 결함 요구 | [공식 제품 설명](https://www.lamresearch.com/product/sabre/) |
+| Lam Research, SABRE | Industry Challenges, Key Customer Benefits: ECD의 채움, 얇은 시드 보호, 바닥 성장과 결함 요구를 확인했습니다. | [공식 제품 설명](https://www.lamresearch.com/product/sabre/) |
 | EBARA, Nano-level polishing technique | 패드·미세 입자·약액의 결합과 세정·건조 통합 | [공식 원리 설명](https://ebara.com/global-en/technology/information/polishing-technology-ex/) |
-| 박범영 외, JKSPE 22(2), 38–45, 2005 | Abstract: W CMP의 디싱·에로전, 패턴 밀도·크기입니다. 전문 전체를 검토한 것은 아닙니다. | [원 논문 소개](https://jkspe.or.kr/journal/view.php?number=3234) |
+| EBARA, CMP Tools | F-REX300X, Applications for F-REX: 300 mm·네 플래튼과 Cu 적용을 확인했습니다. | [공식 장비·사진](https://www.ebara-pm.eu/systems/cmp-tools/) |
+| 박범영 외, JKSPE 22(2), 38–45, 2005 | Abstract: W CMP의 디싱·에로전, 패턴 밀도·크기, FAP 연마재 농도와 형상 선택성의 관계를 확인했습니다. 전문의 전체 조건·계측 절차를 검토한 것은 아닙니다. | [원 논문 소개](https://jkspe.or.kr/journal/view.php?number=3234) |
 | Applied Materials, SEMICON West 2024 | Black Diamond low-k의 정전용량과 강도 요구 | [공식 발표 PDF](https://ir.appliedmaterials.com/static-files/6950cee5-f84d-4b3e-a9f4-39901093ae67) |
 | Hu 외, IITC 1999 | Abstract: 단면·전류 밀도와 EM의 시험 결과입니다. 당시 구조의 수치 외삽은 하지 않습니다. | [저자 소속 기관 소개](https://research.ibm.com/publications/scaling-effect-on-electromigration-in-on-chip-cu-wiring) |
 | TSMC Research, Reliability of dual damascene Cu metallization, 2000 | 해당 논문 초록: 비아 바닥의 EM 실패와 공정 의존성 | [공식 연구 목록의 해당 항목](https://research.tsmc.com/page/on-chip-interconnect/20.html) |
 | Auth 외, IEDM 2017 | 출판사 서지와 대학 공개 PDF 1~2쪽: Co 접촉부와 INTERCONNECTS의 M0·M1을 구분했습니다. 해당 절을 확인한 범위이며 논문의 모든 실험을 재검증한 것은 아닙니다. | [원 논문 DOI](https://doi.org/10.1109/IEDM.2017.8268472) · [대학 공개 PDF](https://people.eecs.berkeley.edu/~pister/147fa21/Resources/Intel%2010nm%20IEDM2017.pdf) |
-| Applied Materials, Endura CuBS Volta Ruthenium CVD | RuCo 라이너와 구리 리플로의 구분 | [공식 제품 설명](https://www.appliedmaterials.com/us/en/product-library/endura-cubs-volta-ruthenium.html) |
+| Applied Materials, Endura CuBS Volta Ruthenium CVD | RuCo 라이너·Cu 리플로, 20 Å 미만 라이너 설명을 확인했습니다. 배선 전체의 순수 Ru 전환과 구분했습니다. | [공식 제품 설명](https://www.appliedmaterials.com/us/en/product-library/endura-cubs-volta-ruthenium.html) |
 | imec, Semi-damascene at 18 nm pitch, 2022 | 공정 흐름과 Figure 1: Ru 직접 식각·갭필·비아 | [공식 연구 설명](https://www.imec-int.com/en/articles/imec-demonstrates-semi-damascene-interconnects-fully-self-aligned-vias-18nm-metal-pitch) |
 | imec, Ru lines at 16 nm pitch, 2025-06-03 | 656 Ω/μm와 목표 저항 달성 비율, 피치별 조건 | [공식 연구 발표](https://www.imec-int.com/en/press/imec-demonstrates-16nm-pitch-ru-lines-record-low-resistance-obtained-using-semi-damascene) |
-| Applied Materials, Mo contact development, 2026-01-05 | 개발·CMP·계측 사례: overfill, underfill, dishing, protrusion | [공식 개발 사례](https://www.appliedmaterials.com/us/en/newsroom/blogs/cooptimized-process-metrology-accelerates-molybdenum-contact-development.html) |
+| Applied Materials, Mo contact development, 2026-01-05 | Novelty Often Comes with New and Unknown Challenges, Co-optimized Processes and PROVision 10, Protrusion Detection: 채움·CMP 분리와 전자빔·그림자 기반 높이 검출 사례를 확인했습니다. 전체 공정 조건과 수정 전후 수율은 공개 범위에 없습니다. | [공식 개발 사례](https://www.appliedmaterials.com/us/en/newsroom/blogs/cooptimized-process-metrology-accelerates-molybdenum-contact-development.html) |
 | Intel, 2025 Form 10-K | Our Business, Process Technology: 18A의 2025년 말 양산 보고와 PowerVia | [공식 공시 HTML](https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000011/intc-20251227.htm) |
 | Intel 18A | PowerVia 설명: 후면 전력 경로, 앞면 배선 혼잡 완화 | [공식 기술 페이지](https://www.intel.com/content/www/us/en/foundry/process/18a.html) |
 

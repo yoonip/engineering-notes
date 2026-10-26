@@ -8,6 +8,20 @@
 
 이 글의 공정 순서는 대표적인 구조를 이해하기 위한 것입니다. 모든 반도체가 같은 재료와 순서로 만들어지지는 않습니다. 수치 예제는 직접 정한 가정이며 실제 제품의 제조 조건·수율·실측 결과가 아닙니다.
 
+## 공정 전후 단면: 분리한 다이를 기판과 외부 단자로 연결합니다
+
+![박막화와 다이 분리, 플립칩 접속, 언더필과 외부 솔더볼을 포함한 패키지 단면](그림_figures/08-패키징단면_packaging-section.svg)
+
+그림은 기판 기반 플립칩 패키지의 한 예를 직접 그린 개념도입니다. 층수·두께·범프와 외부 볼의 크기 비율은 실제 제품 도면과 다릅니다.
+
+| 패널 | 구조에서 달라지는 부분 |
+|---|---|
+| A. 박막화·분리한 다이 | 웨이퍼의 뒤쪽 실리콘을 줄이고 다이를 분리하여 조립 대상으로 선택합니다. 회로 면의 보호와 얇은 다이의 지지가 필요합니다. |
+| B. 플립칩 접속 | 회로 면을 아래로 향하게 놓고 범프로 기판에 연결합니다. 칩의 미세 접속은 기판 내부 배선을 거쳐 더 넓은 간격의 외부 단자 위치로 이어집니다. |
+| C. 보호·외부 연결 | 다이 아래 틈의 언더필, 필요한 보호 구조, 기판 아래 외부 솔더볼을 더한 예입니다. 다이 쪽 범프와 보드 쪽 BGA 볼은 서로 다른 접속 경계입니다. |
+
+이 순서는 모든 패키지의 공통 레시피가 아닙니다. 범프 형성은 다이 분리 전에 할 수 있고, DBG는 부분 절단 뒤 연삭으로 분리하며, 와이어 본딩·팬아웃·웨이퍼 접합은 단면과 순서가 달라집니다. 언더필과 몰딩을 결합하거나 덮개를 쓰는 구조도 있으므로 C의 보호 구조를 모든 제품에 그대로 적용하지 않습니다. [DISCO, Ultra-Thin Grinding의 DBG](https://www.disco.co.jp/eg/solution/library/grinder/thin.html), [Amkor, Flip Chip Packaging의 구조·TCNCP·패키지 형식](https://amkor.com/wp-content/uploads/2018/02/Flip_Chip_TS102.pdf)
+
 ## 1. 패키지에 필요한 네 가지 경로
 
 패키지를 읽을 때에는 다음 경로를 따로 살펴보면 구조를 이해하기 쉽습니다.
@@ -38,6 +52,15 @@ flowchart TD
 ```
 
 이 그림은 유일한 제조 순서를 뜻하지 않습니다. 플립칩에서는 범프 형성이 다이싱보다 먼저 이루어질 수 있고, 팬아웃에서는 절단한 다이를 다시 웨이퍼나 패널 형태로 배열한 뒤 배선을 형성할 수 있습니다. 웨이퍼 수준 접합·적층은 개별 패키지 조립보다 먼저 이루어지기도 합니다. 접속·열·보호 구조가 달라지면 단계의 위치와 검사가 달라집니다.
+
+### 2.1 실제 장비에서 나누어 맡는 일
+
+다음은 2026-10-26에 공식 제품 본문에서 확인한 장비 예입니다. 박막화 장비와 몰딩 장비는 서로 다른 단계에 쓰며, 이름을 나란히 적은 것이 특정 회사의 실제 생산 라인 구성을 뜻하지는 않습니다. 장비 사진과 외형은 표의 공식 페이지에서 볼 수 있습니다.
+
+| 장비·플랫폼 | 공식 본문에서 확인한 작업 | 적용 범위와 확인할 조건 |
+|---|---|---|
+| [DISCO DGP8761](https://www.disco.co.jp/eg/products/polisher_etcher/dgp8761.html) | 뒤쪽의 거친 연삭·미세 연삭과 세 번째 축의 연마 등을 연결하는 grinder/polisher입니다. | 휠·폴리싱 패드와 세 번째 축의 옵션을 구분합니다. 제품 소개의 박막화 능력이 모든 다이의 권장 두께나 강도를 뜻하지 않습니다. |
+| [TOWA CPM1080 Full Auto System](https://www.towajapan.co.jp/en/products/molding/cpm/) | PLP/WLP용 압축 몰딩 장비입니다. 공급사는 한 장비에서 과립·액상 수지의 사용과 자동 계량·공급 기능을 설명합니다. | 몰드·릴리스 필름·수지·재구성체를 맞춰야 합니다. 이 장비가 플립칩의 전기적 범프 접합까지 모두 수행한다는 뜻은 아닙니다. |
 
 ## 3. 웨이퍼 박막화와 지지
 
@@ -96,6 +119,17 @@ transfer molding과 compression molding 등 서로 다른 충전 방식을 사�
 BGA(Ball Grid Array)는 외부 솔더볼을 격자 형태로 배치한 단자 구조입니다. 볼은 기판의 패드와 시스템 PCB 사이를 연결합니다. 범프와 외부 솔더볼은 모두 접속 구조이지만 위치·크기·역할이 다릅니다. 리드프레임 패키지는 외부 리드를 자르고 도금·성형하는 흐름을 사용할 수 있으며, 기판 패키지의 볼 부착과 동일한 공정은 아닙니다.
 
 외관·단자·치수·표시를 확인하고 패키지를 개별 단위로 나눈 뒤 시험·포장·추적 정보를 연결합니다. 수분 민감 제품은 보관·건조·방습 포장과 보드 조립의 reflow 조건을 관리해야 합니다. 포장은 이미 형성된 내부 접속 불량을 고치는 단계가 아닙니다.
+
+### 6.1 재료의 이름보다 위치와 역할을 함께 읽습니다
+
+| 실제 재료·제품군의 예 | 들어가는 위치와 역할 | 적용할 때 확인할 조건 |
+|---|---|---|
+| 다이아몬드 연삭 휠 | 뒤쪽 실리콘을 제거하는 공구입니다. 최종 패키지 안에 넣는 충전재와 다릅니다. | 거친 연삭·미세 연삭의 휠과 손상층 제거 조건을 구분합니다. [DISCO, DGP8761 Specifications](https://www.disco.co.jp/eg/products/polisher_etcher/dgp8761.html)입니다. |
+| 구리 기둥과 SnAg 솔더 캡 | 구리 기둥은 높이와 전도 경로를 제공하고 솔더 부분은 접합에 참여하는 한 조합입니다. Sn은 주석, Ag는 은입니다. | 기둥·솔더·패드 금속·열 이력을 함께 맞춰야 합니다. 외부 BGA 볼의 합금과 동일하다고 가정하지 않습니다. [Amkor, Flip Chip Packaging 1–2쪽](https://amkor.com/wp-content/uploads/2018/02/Flip_Chip_TS102.pdf)입니다. |
+| 에폭시계 언더필 | 다이와 기판 사이에서 접합부 주변을 채우고 하중 전달 조건을 바꿉니다. | 이미 접속한 뒤 흐르게 하는 재료와 접합 전에 넣는 재료는 공정·경화 조건이 다릅니다. [Amkor, Underfill·TCNCP](https://amkor.com/wp-content/uploads/2018/02/Flip_Chip_TS102.pdf)입니다. |
+| Sumitomo Bakelite SUMIKON EME 계열 EMC | 에폭시 수지·경화제·실리카 등의 무기 충전재를 섞은 봉지 재료입니다. | 충전재·유동·경화·열팽창·휨을 함께 확인합니다. 공급사는 압축 몰딩용 과립 등급도 구분하므로 모든 등급을 같은 몰딩 조건으로 사용하지 않습니다. [반도체 EMC FAQ Q1·Q5·Q8](https://www.sumibe.co.jp/english/question/product/it-materials/)입니다. |
+
+구체적인 재료 제품군을 적었다고 해서 두 공급사의 장비·수지를 실제로 조합 시험했다는 뜻은 아닙니다. 재료의 승인 사양·보관 이력·사용 가능 시간·경화 조건은 해당 조합에서 확인해야 합니다.
 
 ## 7. 웨이퍼 수준 패키징과 RDL
 
@@ -230,6 +264,36 @@ X선은 내부 금속·솔더 형상과 빈 공간을 살피는 데 사용하고
 
 표의 원인은 후보입니다. 사진 한 장이나 전기적 실패 코드 하나만으로 근본 원인을 확정하지 않습니다. 관측 위치와 공정 이력을 연결하고, 필요하면 비파괴 검사 후 단면·재료 분석을 수행합니다.
 
+### 13.1 보고된 해결 사례: 언더필이 흐르는 방향을 바꾸어 void를 줄였습니다
+
+Nordson Asymtek 소속 Hanzhuang Liang 등이 발표한 IMAPS 2012 논문은 실리콘 기판 위 InP 플립칩의 5 µm 틈을 채운 평가입니다. [Managing Voids in Underfill Process…, 인쇄 377–383쪽](https://imapsource.org/article/56262-managing-voids-in-underfill-process-with-5-micron-gap-under-large-die/attachment/121004.pdf)
+
+| 순서 | 원논문에서 보고한 관찰과 조치 |
+|---|---|
+| 증상 | 점 토출한 언더필에서 범프 사슬 주변에 void가 관찰되었습니다. 네 가장자리의 수지만으로 내부 충전을 판단할 수 없었습니다. |
+| 서로 다른 원인 | 토출 위치에 따른 유동 전선의 불균일, 사용 시간이 지난 수지의 점도 변화, 토출량·간격이 구분할 원인이었습니다. 유동 전선은 틈 안으로 전진하는 수지의 앞 경계입니다. |
+| 확인 방법 | 카메라·현미경으로 유동과 가장자리 넘침을 보고, 적외선 현미경으로 경화 후 내부 void를 확인했습니다. |
+| 조치 방향 | 한쪽 가장자리를 따라 선으로 토출하여 범프 사슬을 가로지르는 방향으로 흐르게 했습니다. 공급량과 반복 간격도 제어했습니다. |
+| 재검증 | 선 토출 시편은 경화 후 검사에서 void가 관찰되지 않았습니다. 이 결과가 장기 신뢰성이나 다른 패키지의 양산 수율을 증명하지는 않습니다. |
+
+플라즈마 표면 처리는 유리 시험편의 별도 예비 평가입니다. 실제 부품에서 확인한 해결 결과와 구분합니다. 이 구조의 재료·범프 배열을 일반 실리콘 로직 BGA에 그대로 적용하지 않습니다.
+
+### 13.2 외부 BGA 접속의 진단 예: 상온 형상만으로 reflow 접합을 판단하지 않습니다
+
+여기서는 다이 내부 범프가 아니라 완성 패키지와 보드 사이의 외부 솔더볼을 다룹니다. head-in-pillow는 솔더볼과 솔더 페이스트가 충분히 합쳐지지 않은 접합 형태입니다. 페이스트는 금속 입자와 플럭스를 포함한 재료이며, 플럭스는 산화물 제거와 젖음에 관여합니다.
+
+Zhao 외의 2015년 연구는 시험용 패키지의 온도별 휨을 shadow moiré로 측정하고 접합부를 dye-and-pry로 조사했습니다. shadow moiré는 줄무늬의 변화를 높이 차이로 읽는 방법이며, dye-and-pry는 염료를 침투시킨 뒤 분리하여 접속 상태를 살피는 파괴 분석입니다. 연구는 질소 분위기에서 head-in-pillow가 생기는 휨의 문턱이 공기 중보다 커졌다고 보고합니다. 시험에는 결함을 늘리기 위한 사전 열화 처리도 포함되므로 그 문턱을 실제 제품의 공통 허용값으로 옮기지 않습니다. [Zhao 외, Effects of Package Warpage on Head-in-Pillow Defect, 2·3.1·3.3절](https://www.jstage.jst.go.jp/article/matertrans/56/7/56_MI201404/_article/-char/en), [원논문 PDF 공개본](https://www.jstage.jst.go.jp/article/matertrans/56/7/56_MI201404/_pdf/-char/en)
+
+다음은 이 고장 기구를 바탕으로 구성한 자체 진단 예입니다. 실제 제품을 조립하거나 아래 조치의 효과를 측정한 기록은 아닙니다.
+
+| 순서 | 열·형상·젖음을 나누어 확인하는 방법 |
+|---|---|
+| 증상 | 상온 외관은 정상이지만 보드 조립 후 특정 모서리에서 간헐적 개방이 나타난다고 가정합니다. 어떤 접속 경계에서 실패했는지 먼저 구분합니다. |
+| 서로 다른 원인 | 가열 중 패키지·보드 휨, 솔더·패드의 산화와 젖음 부족, 페이스트 도포량·높이 편차, 위치 오차가 후보입니다. |
+| 확인 방법 | 실패 위치와 온도별 휨을 대조하고 도포량·보관 이력·실제 열 프로파일을 확인합니다. 전기적 접촉이나 X선 형상만으로 금속학적 접합을 확정하지 않고 필요하면 단면·분리 분석을 연결합니다. |
+| 조치 방향 | 휨이 원인이면 층 구성·두께·지지 조건을, 젖음이 원인이면 표면·페이스트·분위기·열 조건을 평가합니다. 질소 사용이 잘못된 도포량이나 큰 간극을 자동으로 고치는 것은 아닙니다. |
+| 재검증 | 바꾼 조건의 온도별 형상·접합부 분석·전기 시험을 함께 비교하고, 사용 조건에 맞는 열·기계 시험으로 후속 접속 안정성을 확인합니다. |
+
 ## 14. 자체 계산: 열전달재의 두께와 온도 차이
 
 평평한 단일 열전달층에 열이 수직으로 균일하게 흐른다고 가정합니다. 열전도율이 `k`, 두께가 `t`, 면적이 `A`이면 그 층의 전도 열저항은 `R = t/(kA)`입니다. 실제 접촉 열저항·옆으로 퍼지는 열·기판·냉각기는 이 예제에서 제외합니다.
@@ -333,13 +397,17 @@ X선은 내부 금속·솔더 형상과 빈 공간을 살피는 데 사용하고
 | [SK hynix, Back-End Process Episode 6](https://news.skhynix.com/en/semiconductor-back-end-process-episode-6-conventional-packages/) | 2023-08-03, Overview·Die Attach·Interconnection·Molding·외부 단자 흐름입니다. 전통적인 기판·리드프레임 구조의 범위를 확인했습니다. |
 | [DISCO, Ultra-Thin Grinding](https://www.disco.co.jp/eg/solution/library/grinder/thin.html) | Machines·Wheels·Grinding Conditions·Stress Relief·DBG 정의입니다. 박막화·가장자리 손상·지지·순서 예외를 확인했습니다. |
 | [DISCO, Dicing Thin Wafers](https://www.disco.co.jp/eg/solution/library/dicing/dicing_thin.html) | Blades·Processing Conditions입니다. 입도·이송·회전·막힘·깨짐의 상호작용을 확인했습니다. |
+| [DISCO, DGP8761](https://www.disco.co.jp/eg/products/polisher_etcher/dgp8761.html) | Various Z3 spindle configurations·Work Flow System·Specifications입니다. 연삭·연마의 역할, 다이아몬드 휠·폴리싱 패드와 옵션을 확인했습니다. 장비의 소개 수치를 모든 제품의 권장 레시피로 사용하지 않았습니다. |
+| [TOWA, CPM-Series](https://www.towajapan.co.jp/en/products/molding/cpm/) | CPM1080 Full Auto System의 용도와 Features입니다. PLP/WLP 압축 몰딩, 과립·액상 수지와 계량·공급을 확인했습니다. 특정 재료와의 실제 조합 시험으로 표현하지 않았습니다. |
 | [Amkor, Copper Wirebonding](https://amkormarcomexternal.blob.core.windows.net/amkordotcom/wp-content/uploads/2018/02/CopperWirebond_TS105.pdf) | 기술 자료 1쪽입니다. 구리 와이어의 사용과 저항률·다양한 패키지 적용을 확인했습니다. |
-| [Amkor, Flip Chip BGA](https://amkor.com/wp-content/uploads/2018/02/Flip_Chip_TS102.pdf) | TCNCP·Cu Pillar·Wafer Bumping입니다. 플립칩 접합·재료 조합을 확인했습니다. |
+| [Amkor, Flip Chip Packaging](https://amkor.com/wp-content/uploads/2018/02/Flip_Chip_TS102.pdf) | 2021-02 개정 기술 자료의 What Is Flip Chip?·TCNCP·Cu Pillar·Wafer Bumping입니다. 구리 기둥·SnAg 캡·에폭시 언더필과 구조별 보호 형식을 확인했습니다. 문서의 예전 노드·치수를 현행 최고 사양으로 옮기지 않았습니다. |
 | [SK hynix, Episode 10](https://news.skhynix.com/en/semiconductor-back-end-process-episode-10-roles-of-materials-in-wafer-level-packaging/) | 2023-12-11, Underfills·Wafer Support System입니다. CUF·MUF·NCP·NCF와 지지재를 확인했습니다. |
 | [Sumitomo Bakelite, 반도체 재료 FAQ](https://www.sumibe.co.jp/english/question/product/it-materials/) | EMC의 Q1·Q5–Q8, Die Bonding Paste의 Q1–Q2입니다. 복합 재료·휨·몰딩용 재료와 전도성/비전도성 접착재를 확인했습니다. 제품 예시의 온도·압력 수치를 보편적 제조 조건으로 옮기지 않았습니다. |
 | [SK hynix, Encapsulation Process](https://news.skhynix.com/en/encapsulation-process-a-way-of-sealing-packages/) | transfer/compression molding의 구분입니다. 재료 충전 방식과 보호 구조를 확인했습니다. |
 | [SK hynix, Episode 7](https://news.skhynix.com/en/semiconductor-back-end-process-episode-7-the-wafer-level-packaging-process/) | 2023-09-04, WLP 범위·TSV 정의·포토·스퍼터·도금·제거·식각 과정입니다. 팬아웃의 재구성 흐름은 별도 저자 논문과 함께 설명했습니다. |
 | [Son 외, RDL-First PoP Fan-Out 논문](https://amkor.com/cn/wp-content/uploads/2020/11/A-New-RDL-First-PoP-Fan-Out-Wafer-Level-Package-Process-with-Chip-to-Wafer-Bonding-Technology.pdf) | ECTC 2020, DOI 10.1109/ECTC32862.2020.00298, I–II절·공정 설명입니다. 한 시험용 구조의 결과를 보편 사양으로 옮기지 않았습니다. |
+| [Liang, Managing Voids in Underfill Process with 5-micron Gap Under Large Die](https://imapsource.org/article/56262-managing-voids-in-underfill-process-with-5-micron-gap-under-large-die/attachment/121004.pdf) | IMAPS 2012, 인쇄 377–383쪽의 Setup and experiment design·Results·Conclusion입니다. InP/Si 시험 구조, 점·선 토출, 적외선 검사와 경화 후 관찰을 확인했습니다. 유리 시험편의 플라즈마 예비 평가를 실제 부품 해결 결과와 구분했습니다. |
+| [Zhao 외, Effects of Package Warpage on Head-in-Pillow Defect](https://www.jstage.jst.go.jp/article/matertrans/56/7/56_MI201404/_article/-char/en)·[원논문 PDF 공개본](https://www.jstage.jst.go.jp/article/matertrans/56/7/56_MI201404/_pdf/-char/en) | Materials Transactions 56(7), 2015, 1037–1042, DOI 10.2320/matertrans.MI201404입니다. 공식 초록과 원논문 2·3.1·3.3절에서 사전 열화 조건·온도별 휨·파괴 분석·분위기 비교를 확인했습니다. 패키지 내부 범프와 보드 실장의 외부 BGA 접합을 구분했습니다. |
 | [ASE, Fan-Out Packaging](https://ase.aseglobal.com/fan-out-packaging/) | What Is Fan-Out?·Fan-Out Structures/Processes의 chip-first·chip-last입니다. 재구성체·다이 위치 변화·RDL 선행 공정을 확인했습니다. |
 | [Amkor, WLSiP/WL3D](https://amkor.com/packaging/wafer-level-packaging/wlsip-wl3d-2/) | Tailored Design·Features입니다. 공동 설계·다중 다이·수동소자·패키지 적층을 확인했습니다. |
 | [Amkor, Package-on-Package](https://amkor.com/technology/package-on-package/) | stacked package·하부 플립칩·패키지 간 연결의 구조입니다. 페이지에 남아 있는 예전 메모리 세대 사양을 최신 제품 사양으로 사용하지 않았습니다. |

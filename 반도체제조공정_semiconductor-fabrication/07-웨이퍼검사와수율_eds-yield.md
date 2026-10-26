@@ -6,6 +6,20 @@
 
 이 글은 웨이퍼의 전기적 검사에서 패키지 검사로 이어지는 판단 과정을 설명합니다. 수치 예제는 개념을 설명하기 위해 직접 구성한 가정입니다. 특정 회사의 수율·불량률·출하 판정값이나 실제 제조 결과를 뜻하지 않습니다.
 
+## 공정 전후 단면: 회로를 바꾸지 않고 접촉하여 판정합니다
+
+![완성 다이의 패드, 프로브 접촉, 웨이퍼 맵으로 이어지는 검사 단면](그림_figures/07-검사단면_wafer-probe-section.svg)
+
+그림은 웨이퍼 다이 검사의 접촉 위치와 결과를 설명하기 위해 직접 그린 개념도입니다. 실제 소자의 층수·두께·프로브 크기 비율을 나타내지 않습니다.
+
+| 패널 | 단면과 데이터에서 확인할 내용 |
+|---|---|
+| A. 접촉 전 | 회로와 배선이 완성되어 있고 보호막의 개구부에 검사할 금속 패드가 드러나 있습니다. 범프를 검사하는 제품이라면 접촉 대상의 형상도 달라집니다. |
+| B. 전기적 검사 | 위에서 프로브가 패드에 접촉하고 아래의 척이 웨이퍼를 지지합니다. 전원·시험 신호·측정 전류가 접촉 경로를 지나므로 회로 이상과 접촉 이상을 구분해야 합니다. |
+| C. 접촉 후 | 의도한 결과는 설계 단면의 변경보다 다이 좌표별 측정값과 판정 데이터입니다. 프로브를 떼어도 웨이퍼 맵은 후속 다이 선택에 사용합니다. |
+
+일반적인 전기적 선별 자체는 새 막을 쌓거나 회로를 식각하는 공정이 아닙니다. 다만 패드에 작은 접촉 자국이 남을 수 있고 과도한 접촉은 손상을 만들 수 있습니다. 그림의 패드가 제품 내부 트랜지스터 전체를 드러낸다는 뜻도 아닙니다. 별도의 공정 관리용 구조는 스크라이브 영역이나 시험 다이에 있을 수 있으며, 제품 다이의 기능 시험과 관측 대상이 다릅니다. [Tektronix, Probe Card Tutorial의 Introduction·Scrub Alignment](https://www.tek.com.cn/documents/whitepaper/probe-card-tutorial), [FormFactor, Parametric 프로브 카드 설명](https://www.formfactor.com/products/probe-cards/?FC=1)
+
 ## 1. 검사하는 것은 무엇이고, 언제 검사할까요
 
 물리적 결함(defect)은 원하지 않는 재료·형상·접속의 변화입니다. 예를 들어 금속선 사이에 전도성 이물이 끼는 현상입니다. 고장 모형(fault model)은 이러한 결함의 전기적 효과를 시험에 사용할 수 있도록 단순화한 표현입니다. 신호가 계속 0에 머문다는 stuck-at-0 모형이 한 예입니다. 오류(error)는 기대한 값과 관측한 값이 달라진 상태이며, 고장(failure)은 제품이 요구 기능을 수행하지 못하는 사건입니다. 결함 하나가 모든 입력에서 오류를 일으키는 것은 아니므로 시험 자극과 관측 조건이 필요합니다.
@@ -40,6 +54,26 @@ flowchart LR
 웨이퍼를 척(chuck)에 고정한 뒤 정렬 표식과 패드를 확인하고, 시험할 좌표로 이동하여 접촉합니다. 한 번 접촉하는 동작을 touchdown이라고 부릅니다. 한 다이씩 시험할 수도 있고 여러 다이를 병렬로 시험할 수도 있습니다. 병렬 시험의 단위를 site라고 부르며, site마다 접촉과 계측 조건이 동등한지 확인해야 합니다.
 
 프로브 팁은 패드 표면의 산화막·오염층을 통과하여 안정적인 접촉을 만들어야 합니다. 이때 생기는 미세한 접촉 흔적을 scrub mark라고 합니다. 처음 접촉한 뒤 추가로 이동하는 overtravel이 너무 작으면 접촉이 불안정하고, 너무 크면 패드 손상과 팁 마모가 커질 수 있습니다. 팁에 쌓인 찌꺼기 제거도 접촉저항과 수명 사이의 절충입니다. 이러한 접촉·청소 문제는 칩의 실제 불량과 분리하여 조사해야 합니다. [FormFactor, DRAM·Flash 프로브의 찌꺼기와 청소](https://www.formfactor.com/blog/2022/removing-probing-debris-from-springs-dram-flash-applications/), [Tektronix, Probe Card Tutorial의 Scrub Alignment](https://www.tek.com.cn/documents/whitepaper/probe-card-tutorial)
+
+### 2.1 실제 시험 장비에서 나누어 맡는 일
+
+다음은 2026-10-26에 공식 제품 본문에서 확인한 상용 플랫폼의 예입니다. 두 장비를 함께 소개한다는 이유로 특정 고객의 실제 조합이나 호환성을 확인한 것은 아닙니다. 장비 외형 사진은 표의 공식 페이지에서 볼 수 있습니다.
+
+| 장비·플랫폼 | 해당 장비가 맡는 일 | 적용할 때 따로 확인할 조건 |
+|---|---|---|
+| [Advantest V93000 EXA Scale](https://www.advantest.com/en/products/semiconductor-test-system/soc/v93000/) | SoC용 ATE 계열입니다. 장착한 계측 자원과 프로그램으로 디지털·전원·아날로그·RF 시험을 구성합니다. 공식 페이지는 웨이퍼 sort와 final test 구성을 함께 설명합니다. | 필요한 핀 수·전류·패턴 메모리·계측 대역과 인터페이스를 선택해야 합니다. 같은 플랫폼 이름이라도 모든 장비가 같은 자원을 갖지는 않습니다. |
+| [Tokyo Electron Precio XL](https://www.tel.com/product/precio.html) | 웨이퍼 위치·접촉·온도를 관리하는 자동 프로버입니다. 공식 페이지는 TELPADS-I 접촉 자국 검사와 프로브 카드 평행도 자동 조정 등의 옵션을 설명합니다. | 웨이퍼 크기·척·프로브 카드와 실제 설치 옵션을 맞춰야 합니다. 패드에 잘 닿았다는 사실만으로 칩 기능을 통과 판정하지 않습니다. |
+
+### 2.2 검사에서 사용하는 금속과 청소 재료
+
+검사 재료에는 웨이퍼에 남는 패드 금속뿐 아니라 반복 접촉하는 프로브와 소모성 청소재가 있습니다. 아래 구분은 재료의 역할을 설명하며, 특정 제품의 재료 조성을 추정한 목록은 아닙니다.
+
+| 재료 | 위치와 역할 | 선택·사용 조건 |
+|---|---|---|
+| 알루미늄 패드 | 프로브가 접촉하는 전극의 한 예입니다. 접촉 중 떨어진 패드 물질은 팁의 찌꺼기가 될 수 있습니다. | 재료의 경도·접촉저항·찌꺼기를 함께 봅니다. [Ellis, 알루미늄 패드와 청소 매체 평가, 4–6·9–12쪽](https://www.swtest.org/swtw_library/2018proc/PDF/S07_02_Ellis_SWTW2018.pdf)입니다. |
+| 텅스텐·텅스텐-레늄·베릴륨-구리 | 전류를 전달하면서 탄성 변형하는 프로브 바늘 재료의 예입니다. | 경도·마모·접촉저항·필요 전류를 함께 봅니다. 이 바늘 재료 목록을 모든 MEMS 프로브의 조성으로 일반화하지 않습니다. [Tektronix, Probe Materials](https://www.tek.com.cn/documents/whitepaper/probe-card-tutorial)입니다. |
+| 부드러운 점착성 폴리머 청소재 | 프로브가 들어갈 때 느슨한 찌꺼기를 붙잡는 청소 방식입니다. | 단단히 부착된 산화물까지 모두 제거한다고 가정하지 않습니다. 수직 진입량과 팁 형상에 맞는 재료가 필요합니다. [FormFactor, 청소 방식 1](https://www.formfactor.com/blog/2022/removing-probing-debris-from-springs-dram-flash-applications/)입니다. |
+| 단단한 연마성 실리콘 청소재 | 팁 표면을 문질러 잘 떨어지지 않는 오염층을 제거하는 방식입니다. | 청소 후 접촉저항뿐 아니라 팁의 재료 손실·형상·정렬을 확인합니다. 청소재는 다이 위에 남기기 위한 막이 아닙니다. [FormFactor, 청소 방식 2](https://www.formfactor.com/blog/2022/removing-probing-debris-from-springs-dram-flash-applications/)입니다. |
 
 ## 3. 파라미터·구조·기능 시험은 서로 다릅니다
 
@@ -117,6 +151,34 @@ y=4     - P P P -
 가드밴드(guardband)는 측정 오차·조건 변화 등을 고려하여 출하 사양보다 안쪽에 시험 한계를 두는 여유입니다. 여유를 크게 하면 불량 유출을 줄일 수 있지만 정상 제품을 불필요하게 탈락시킬 수 있습니다. 여유를 작게 하면 시험 수율은 높아질 수 있지만 경계 제품에 대한 위험이 커질 수 있습니다. 한계 변경 전후를 비교할 때에는 수율뿐 아니라 반복성·재현성·후속 시험 실패·고객 불량도 함께 확인해야 합니다.
 
 자체 예제로, 실제 저항이 110 Ω 이하여야 하고 측정값 `m`에 대해 실제값이 `m ± 2 Ω` 안에 있다는 보수적 오차 경계만 안다고 가정합니다. 상한 쪽만 고려하면 `m ≤ 108 Ω`일 때 실제 저항의 최대값이 110 Ω을 넘지 않습니다. 측정값이 109 Ω이면 실제값이 107–111 Ω 범위일 수 있어 이 가정만으로 출하 조건을 확정할 수 없습니다. 실제 불확도가 확률 분포로 주어지면 신뢰수준·위험 배분을 정해야 하며, 이 단순 경계 예제와 같은 규칙을 자동으로 쓰지 않습니다.
+
+### 7.1 보고된 사례: 청소 매체를 바꾼 뒤 접촉저항과 팁을 함께 확인했습니다
+
+Vincent Ellis의 SWTest 2018 발표는 FormFactor T11 MEMS 캔틸레버 프로브의 청소 매체를 폴리머에서 lapping film으로 바꾼 평가를 보고합니다. lapping film은 표면에 연마 입자가 있는 필름입니다. 시험용 알루미늄 웨이퍼 평가에 이어 실제 소자 한 로트에서 접촉저항 최대값의 관리 상태를 살폈고, 양품 다이와 접촉에 민감한 bin의 결과, 시험 후 팁 마모를 함께 확인했습니다. 이 자료는 해당 평가의 보고이며 모든 프로브에서 연마 필름이 더 낫다는 결론이나 이 글의 직접 측정값은 아닙니다. [Ellis, Cleaning Material Evaluations…, 발표 9–15쪽](https://www.swtest.org/swtw_library/2018proc/PDF/S07_02_Ellis_SWTW2018.pdf)
+
+이 사례를 접촉 불량 조사에 연결하면 다음과 같습니다. 아래의 원인 분리와 재검증 순서는 설명용으로 구성한 것이며 발표자가 수행한 전체 절차를 재현한 기록은 아닙니다.
+
+| 순서 | 접촉을 의심하는 실패를 조사하는 방법 |
+|---|---|
+| 증상 | 접촉 반복에 따라 연속성 실패나 접촉저항의 상단 꼬리가 늘어납니다. 최초 실패와 청소 직후 결과를 따로 보존합니다. |
+| 서로 다른 원인 | 팁의 금속 찌꺼기·산화물, 팁 높이·평행도 차이, 실제 패드 손상·회로 단선이 후보입니다. 같은 실패 코드가 같은 원인을 뜻하지는 않습니다. |
+| 확인 방법 | 표준 구조의 접촉저항, 팁 영상, 패드 자국, 접촉 횟수에 따른 추세를 대조합니다. 청소 뒤 저항만 회복되는지와 실제 소자의 실패가 남는지를 나누어 봅니다. |
+| 조치 방향 | 공급사가 허용한 청소 매체·진입량·주기를 평가합니다. 오염이 원인일 때의 청소와 높이 차이가 원인일 때의 평행도 조정을 구별합니다. |
+| 재검증 | 저항의 평균뿐 아니라 최대값·변동·접촉 민감 bin·팁 손상을 확인합니다. 최초 수율과 정해진 규칙으로 재검사한 결과를 모두 남깁니다. |
+
+### 7.2 자체 진단 예: 한 site만 고전류 패턴에서 실패합니다
+
+다음은 실제 고객 사례가 아니라 site별 원인을 분리하는 가상 진단 경로입니다. 정상 다이를 시험 문제로 탈락시키는 현상을 false fail이라고 합니다. 다만 site 편차가 보인다는 이유만으로 모두 false fail이라고 판정하지 않습니다.
+
+| 순서 | 증거를 나누어 확인하는 방법 |
+|---|---|
+| 증상 | 저전류 시험은 통과하지만 전류가 큰 패턴에서 특정 site의 저전압·타이밍 실패가 많다고 가정합니다. 최초 실패 시각·좌표·패턴·site를 연결합니다. |
+| 서로 다른 원인 | 그 site의 전원 접촉·배선 저항, 센스선 연결 오류, 병렬 시험 중 전원 자원 부족, 열 안정화 차이, 실제 다이의 속도·누설 편차가 후보입니다. |
+| 확인 방법 | 승인된 진단 조건에서 같은 기준 다이를 다른 site로 옮기고 같은 site에는 다른 기준 다이를 놓아 봅니다. 실패가 site를 따라가는지 다이를 따라가는지 확인하고, 부하 순간의 다이 가까운 전압과 온도 이력을 비교합니다. |
+| 조치 방향 | 접촉·인터페이스가 원인이면 해당 경로를 정비하고 센싱·보상 설정을 확인합니다. 병렬 부하가 원인이면 전원 자원과 패턴 동시 실행을 조정하며, 온도 문제이면 안정화 조건을 바로잡습니다. 한계값 완화만으로 통과시키지 않습니다. |
+| 재검증 | 같은 다이·site·온도·패턴의 교차 비교를 반복하고, 병렬 시험과 단일 site 시험의 상관관계를 확인합니다. 후속 패키지 시험과의 일치 여부도 살펴야 시험 문제와 실제 소자 편차를 더 분명히 구분할 수 있습니다. |
+
+전원 경로의 전압 강하는 6절의 단순 계산으로 설명할 수 있지만 실제 과도 현상과 보상 성능은 계측이 필요합니다. V93000 공식 페이지가 고전력·다중 site를 시험 과제로 설명한다는 사실은 위 가상 실패가 그 장비에서 발생했다는 증거가 아닙니다. [Advantest, V93000 EXA Scale의 시험 과제](https://www.advantest.com/en/products/semiconductor-test-system/soc/v93000/)
 
 ## 8. 수율, 고장 검출률, 출하 불량률을 구분합니다
 
@@ -252,7 +314,10 @@ SLT(System Level Test)는 메모리·주변 장치·소프트웨어를 함께 �
 | [Advantest, Our Technology In-Depth: Semiconductor Test](https://www.advantest.com/en/about/business/) | Where We Fit, Value of Test Systems, Types of Semiconductor Test입니다. 설계·웨이퍼·패키지 단계와 시험 종류를 확인했습니다. |
 | [FormFactor, Probe Cards](https://www.formfactor.com/products/probe-cards/?FC=1) | Foundry & Logic, Parametric, RF, Optical 항목입니다. 제품별 접촉 요구와 공정 중·공정 말 파라미터 검사를 확인했습니다. |
 | [FormFactor, Removing Probing Debris…](https://www.formfactor.com/blog/2022/removing-probing-debris-from-springs-dram-flash-applications/) | 팁의 패드 접촉·scrub·오염과 청소·수명 절충입니다. |
-| [Tektronix, Probe Card Tutorial](https://www.tek.com.cn/documents/whitepaper/probe-card-tutorial) | Introduction, Scrub Alignment입니다. 파라미터 검사 중심의 튜토리얼이라는 범위와 접촉 흔적·정렬 조건을 확인했습니다. |
+| [Tektronix, Probe Card Tutorial](https://www.tek.com.cn/documents/whitepaper/probe-card-tutorial) | Introduction, Scrub Alignment, Probe Materials입니다. 파라미터 검사 중심의 범위, 접촉 흔적·정렬과 바늘 재료의 역할을 확인했습니다. 예전 표의 전류·치수·접촉저항을 현행 장비의 공통 사양으로 옮기지 않았습니다. |
+| [Advantest, V93000](https://www.advantest.com/en/products/semiconductor-test-system/soc/v93000/) | Platform 개요·V93000 EXA Scale·Advantages and Benefits입니다. SoC ATE의 자원 구성과 wafer sort·final test 적용을 확인했습니다. 공급사의 성능·비용 비교는 독립 검증하지 않았습니다. |
+| [Tokyo Electron, Precio Series](https://www.tel.com/product/precio.html) | Precio XL 본문·Product comparison입니다. 위치·접촉·온도 관리와 TELPADS-I·Auto Leveling 등의 옵션을 확인했습니다. 특정 ATE와의 실제 연결 사례는 확인하지 않았습니다. |
+| [Ellis, Cleaning Material Evaluations on Advanced MEMS Cantilever and Vertical Technologies](https://www.swtest.org/swtw_library/2018proc/PDF/S07_02_Ellis_SWTW2018.pdf) | SWTest 2018 원 발표 4–6·9–15·18–21쪽입니다. T11의 폴리머→lapping film 평가와 저항·bin·팁 관찰을 사용했습니다. 별도 Katana 평가의 조건·수명을 T11 사례에 합치지 않았습니다. |
 | [NYCU, Introduction to VLSI Testing](https://tiger.iee.nycu.edu.tw/course/Testing2024Fall/notes/pdf/ch1.introduction.pdf) | 2024년 강의 PDF 인쇄 쪽 35–38·47–49·55·57입니다. 구조·기능 시험과 고장 모형·검출률을 확인했습니다. 강의의 예전 품질 목표·DPPM 모형 수치를 현행 산업 기준으로 옮기지 않았습니다. |
 | [Synopsys, What is Design for Test?](https://www.synopsys.com/glossary/what-is-design-for-test.html) | Definition·How Does Design for Test Work?입니다. scan chain·ATPG·BIST의 역할과 설계 단계 준비를 확인했습니다. |
 | [Siemens EDA, Abracadabra…](https://blogs.sw.siemens.com/eda-support/2026/08/04/abracadabra-using-tessent-magic-to-repair-non-repairable-memories/) | 2026-08-04, 본문 앞부분의 redundant row·column/IO와 repair logic입니다. 이후 소개하는 External Repair의 특정 기능을 모든 제품에 일반화하지 않았습니다. |

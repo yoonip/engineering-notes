@@ -6,6 +6,14 @@
 
 얇은 막을 만드는 방법에는 물리적 기상 증착(PVD), 화학 기상 증착(CVD), 원자층 증착(ALD), 에피택시가 있습니다. 플라스마를 활용하는 방식도 있지만 모든 증착이 플라스마 공정은 아닙니다. 이 글에서는 표면 반응·입자 수송·결정 성장·도핑 분포를 연결해 각 방법을 선택하는 이유를 설명합니다. 자체 계산은 설명용 가정이며, 장비 운전 조건이나 제품의 실측 결과가 아닙니다. 공개 기술의 확인 기준일은 2026-10-26입니다.
 
+## 공정 전후 단면
+
+![트렌치의 컨포멀 박막과 별도 실리콘 도핑 영역을 비교한 단면 개념도](그림_figures/05-증착주입단면_deposition-implant-section.svg)
+
+그림은 두 종류 공정을 나란히 보여 주는 자체 개념도이며 실제 단면 사진이나 축척 도면이 아닙니다. A는 좁은 트렌치이고 B는 윗면·측벽·바닥에 박막을 쌓은 상태입니다. 굴곡을 따라 막을 덮어도 중앙 통로는 좁아질 뿐 반드시 채워지지는 않습니다. [6절](#6-컨포멀-피복과-빈틈-없는-채움은-다릅니다)의 피복과 갭필 차이에 해당합니다.
+
+C는 별도의 평탄한 Si 시료에서 마스크 창을 통해 이온을 주입하는 경우입니다. D는 마스크를 제거하고 열처리한 뒤 활성 도핑 영역을 나타냅니다. C의 주입 원자 분포와 D의 전기적 활성 영역은 동일한 측정량이 아닙니다. 열처리 과정에서 손상 회복·활성화·확산이 함께 일어날 수 있습니다. B와 C는 같은 소자에서 연속으로 수행한 단계가 아니며, 그림의 색 영역도 실제 농도 프로파일이나 접합 깊이를 정량적으로 나타내지 않습니다. [8절](#8-이온-주입-도스와-농도를-구분하기)과 [9절](#9-어닐링-회복활성화확산은-다른-결과입니다)에서 두 분포를 구분합니다.
+
 ## 1. 막을 쌓는다는 것의 의미
 
 원자가 표면에 도착하면 반드시 그 자리에 고정되어 연속적인 막이 되는 것은 아닙니다. 일부는 다시 떨어져 나가고, 일부는 표면을 이동하다가 다른 원자와 모여 핵을 만듭니다. 이 핵이 자라 서로 연결되면 연속막이 형성됩니다. 핵생성(nucleation)은 새로운 막이 자랄 출발점을 만드는 과정이고, 표면 확산은 표면에 붙은 원자가 자리를 바꾸는 과정입니다.
@@ -126,6 +134,23 @@ Q = ∫ C(x) dx
 
 선택 에피택시 소스/드레인의 경우에는 노출 결정면 준비 → 필요한 조성과 도핑을 가진 결정 성장 → 계면과 결함 관리 → 접촉 구조 형성이 이어집니다. 표면에 남은 산화막은 결정 성장과 접촉 저항에 영향을 줄 수 있습니다. 이 때문에 증착과 식각·세정·열처리를 각각 따로 최적화한 결과를 단순 합산해서 전체 공정의 성공으로 판단하기 어렵습니다.
 
+### 실제 장비·재료와 적용 구조
+
+아래 제품은 공식 페이지에서 확인한 장비·플랫폼입니다. 제품 기능, 공급사가 보고한 적용 경험, 이 글의 진단 예시를 구분합니다. 장비 사진은 각 공식 제품 페이지에서 확인할 수 있습니다.
+
+| 장비·플랫폼 | 실제 재료와 역할 | 적용 조건·읽을 때의 경계 | 공식 본문의 위치 |
+|---|---|---|---|
+| ASM XP4 Pulsar | 산화하프늄(HfO₂)·하프늄 실리케이트 같은 high-k 게이트 절연막을 ALD로 형성합니다. | high-k는 유전율이 높은 재료라는 뜻입니다. 300 mm XP 플랫폼의 모듈 구성과 FinFET 적용을 설명합니다. 특정 GAA 고객의 양산 채택이나 모든 형상의 바닥 포화까지 확인한 자료는 아닙니다. | [Major features·Major applications](https://www.asm.com/our-technology-products/ald/xp4-pulsar) |
+| Applied Producer HARP | 오존·TEOS 계열 반응으로 산화막을 형성하는 열 CVD입니다. TEOS는 Si를 공급하는 전구체입니다. | STI와 PMD의 갭필을 대상으로 하며 플라스마를 사용하지 않습니다. 컨포멀 절연막과 내부 공간 채움의 목적을 구분합니다. | [Producer HARP의 공정·플랫폼 설명](https://www.appliedmaterials.com/us/en/product-library/producer-harp.html) |
+| Applied Varian VIISta 900 3D | 도펀트의 위치·도스·각도 분포를 제어하는 중전류 이온 주입 장비입니다. | Si 기반 3차원 소자용 기능과 150·200 mm 탄화규소(SiC)용 고온 주입 구성을 나누어 읽습니다. 이름이 같다고 같은 시료·선택 사양·조건은 아닙니다. | [VIISta 900 3D 본문의 빔 제어·hot implant 설명](https://www.appliedmaterials.com/us/en/product-library/viista-900-3d.html) |
+
+| 재료 | 맡는 역할 | 적용 조건과 확인할 결과 |
+|---|---|---|
+| HfO₂·하프늄 실리케이트 | 게이트가 채널을 제어하는 high-k 절연막입니다. | 얇은 막의 연속성·조성·계면 누설을 확인합니다. Pulsar의 공식 적용 재료이며 배선 사이 low-k와 목적이 다릅니다. [ASM, Major applications](https://www.asm.com/our-technology-products/ald/xp4-pulsar) |
+| TEOS 유래 산화막 | STI 또는 소자 위 PMD 공간을 절연재로 채웁니다. | PMD는 첫 금속 배선 아래의 절연막입니다. 표면 두께와 내부 보이드·응력을 나누어 평가합니다. [Applied, Producer HARP](https://www.appliedmaterials.com/us/en/product-library/producer-harp.html) |
+| Si·SiGe와 도펀트 | 결정막 성장과 소스/드레인의 조성·응력을 설계합니다. | 성장 중 도핑은 새로 자라는 결정막에 적용합니다. 기존 기판에 선택적으로 주입한 분포와 구별합니다. [ASM, Epitaxy의 Selective epitaxy](https://www.asm.com/our-technology-products/epitaxy) |
+| SiC와 Al 도펀트 | SiC 전력 소자의 도핑 영역을 형성할 때 사용합니다. | SiC에서는 주입 손상과 활성화를 별도로 확인합니다. Applied의 VIISta Trident XP2는 Al 소스를 쓰는 별도 고전류 제품입니다. 이를 VIISta 900 3D의 동일 구성으로 옮기지 않습니다. [Applied, 2024년 글의 제품 구분](https://www.appliedmaterials.com/us/en/newsroom/blogs/implant-innovation-enables-the-compound-semiconductor-roadmap.html) |
+
 ## 11. 변수와 계측으로 원인을 분리하기
 
 | 변수 | 단위·표현 | 해석의 핵심 |
@@ -151,6 +176,32 @@ Q = ∫ C(x) dx
 | SIMS 도스는 유사하지만 면저항이 큼 | 활성화 부족, 이동도 저하, 보상 도핑 | 전기적 농도·이동도, 열처리·결함 자료 |
 | 주입 분포에 깊은 꼬리가 있음 | 채널링, 표면막 차이, 에너지 분포 | 결정 방향·각도 비교와 깊이 프로파일 |
 | 에피택시 거칠기·결함이 증가함 | 표면 오염, 격자 차이, 조성·성장 변화 | 표면·회절·단면 결정 결함 분석 |
+
+### 사례 1: SiC 주입 손상과 고온 주입
+
+Applied의 2024년 공식 글은 VIISta 900 3D의 SiC용 중전류 고온 주입 사례에서 500 °C 조건을 설명합니다. 해결 원리는 주입 중 결정 격자의 심한 손상을 줄여 이동도와 저항에 미치는 영향을 낮추는 것입니다. 이는 공급사의 제품·적용 보고이며 이 글에서 직접 주입하거나 측정한 결과는 아닙니다. 이 온도는 보고 조건의 식별자이며 다른 재료·마스크의 권장 조건으로 사용하지 않습니다. [Applied, 2024-09-05, Harnessing High-Temperature Implant](https://www.appliedmaterials.com/us/en/newsroom/blogs/implant-innovation-enables-the-compound-semiconductor-roadmap.html)
+
+아래 표의 경쟁 원인과 재검증 순서는 자체 진단 예시입니다. 공급사 공개 글에는 모든 도스·에너지·후속 열처리 조건이 제시되어 있지 않으므로 저항 감소를 같은 주입량에서의 활성화율 증가로 환산하지 않습니다.
+
+| 단계 | 확인 내용 |
+|---|---|
+| 증상 | 주입한 SiC 영역의 저항이 높고 결정 손상도 관찰됩니다. |
+| 경쟁 원인 | 충돌 손상에 따른 이동도 저하, 활성화 부족, 화학적 주입량·깊이 차이, 접촉 저항이 경쟁합니다. |
+| 계측 | SIMS의 총 도펀트 분포와 전기적 운반자 농도·이동도, 면저항, 접촉 저항을 나누어 측정하고 단면 결정 상태와 연결합니다. |
+| 조치 방향 | 공개 사례는 주입 단계의 고온 처리로 손상을 줄이는 접근입니다. 비교 시험에서는 이온 종·도스·에너지·후속 열 이력을 함께 맞추거나 차이를 명시해야 합니다. |
+| 재검증 지표 | 저항과 이동도뿐 아니라 깊이 프로파일, 결정 손상, 누설, 웨이퍼 내 분포를 확인합니다. SiC의 결과를 평탄 Si 도핑 그림에 그대로 적용하지 않습니다. |
+
+### 사례 2: 윗면 두께는 맞는데 트렌치 바닥막이 얇은 경우
+
+다음은 ALD의 공급·포화 원리와 초기 핵생성을 이용해 구성한 자체 진단 예시입니다. 특정 Pulsar 장비에서 실제 발생한 불량이나 해결 실험으로 제시하지 않습니다. 반응물 공급과 배출을 나누어야 하는 근거는 [ASM의 ALD 설명, Pulsing and purging](https://www.asm.com/our-technology-products/ald)에 있습니다.
+
+| 단계 | 확인 내용 |
+|---|---|
+| 증상 | 평면 두께 계측은 목표에 가깝지만 깊은 트렌치 바닥의 절연막이 얇거나 끊겨 있습니다. |
+| 경쟁 원인 | 깊이 방향 공급 부족, 바닥 표면의 핵생성 지연, 선행 식각 잔사, 평면 광학 계측의 잘못된 모형을 나눕니다. 입구가 닫힌 구조도 별도로 확인합니다. |
+| 계측 | 윗면·입구·중간·바닥의 단면 두께와 조성, 초기 주기별 성장, 표면 잔사를 확인합니다. 동일 표면 상태의 평면 시료와 구조 시료를 함께 비교합니다. |
+| 조치 방향 | 공급량 변화에만 바닥 두께가 반응하는지와 표면 준비에 반응하는지를 따로 봅니다. 전체 주기 수만 늘리면 윗면이 두꺼워지고 통로가 더 좁아질 수 있으므로 원인별 비교가 필요합니다. |
+| 재검증 지표 | 바닥/윗면·측벽/윗면 피복률, 국소 연속막 여부, 반복 시료의 분포, 절연 누설을 함께 확인합니다. 피복이 목표라면 빈틈 없는 완전 채움까지 요구하지 않습니다. |
 
 ## 12. 자체 계산 예제
 
@@ -254,9 +305,13 @@ MIT는 가우스 분포를 단순 근사로 다루고, 더 정확한 비대칭 �
 | MIT OCW, 6.152J, 2005 CVD | 슬라이드 9~13: 수송 제한과 반응 제한 모형 | [원문 PDF](https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/cad5227ddbdf120be10a0c372f2ccedd_cvd.pdf) |
 | ASM, PECVD | What is it, How it works, Plasma CVD: 플라스마와 열 예산 | [공식 설명](https://www.asm.com/our-technology-products/pecvd) |
 | ASM, ALD | 열 ALD/PEALD, Pulsing and purging: 순차 반응 | [공식 설명](https://www.asm.com/our-technology-products/ald) |
+| ASM, XP4 Pulsar | Major features, Major applications: 300 mm 플랫폼과 HfO₂·하프늄 실리케이트의 high-k ALD 적용을 확인했습니다. | [공식 장비 설명](https://www.asm.com/our-technology-products/ald/xp4-pulsar) |
+| Applied Materials, Producer HARP | 공정·플랫폼 본문: 오존/TEOS 열 CVD, STI·PMD 산화막 갭필을 확인했습니다. | [공식 장비·사진](https://www.appliedmaterials.com/us/en/product-library/producer-harp.html) |
 | Oxford Instruments, ALD | ALD process, 열·플라스마 반응 및 subangstrom 성장 설명 | [공식 설명](https://plasma.oxinst.com/technologies/atomic-layer-deposition) |
 | ASM, Epitaxy | Epitaxy for advanced transistors, Selective epitaxy, Surface preclean | [공식 설명](https://www.asm.com/our-technology-products/epitaxy) |
 | Applied Materials, Modify Materials | 주입과 어닐링의 물성 수정·손상 회복 목적 | [공식 설명](https://www.appliedmaterials.com/eu/en/semiconductor/semiconductor-capabilities/modify.html) |
+| Applied Materials, VIISta 900 3D | 빔 각도·도스 제어, 선택 사양의 hot implant, SiC 웨이퍼 적용을 확인했습니다. | [공식 장비·사진](https://www.appliedmaterials.com/us/en/product-library/viista-900-3d.html) |
+| Applied Materials, Implant Innovation Enables the Compound Semiconductor Roadmap, 2024-09-05 | Harnessing High-Temperature Implant: SiC용 VIISta 900 3D의 500 °C 설명, Trident XP2의 Al 소스와 별도 제품 구분을 확인했습니다. 고객별 전체 조건과 독립 측정은 확인한 범위에 없습니다. | [공식 적용 사례](https://www.appliedmaterials.com/us/en/newsroom/blogs/implant-innovation-enables-the-compound-semiconductor-roadmap.html) |
 | MIT OCW, 6.152J, Lecture 6, 2005 | 슬라이드 5~8, 17~18: 도스·에너지·주입 농도 근사 | [원문 PDF](https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/fa6170fba10bd1341251791563a18fc2_lecture6.pdf) |
 | TU Wien, 1.1.3 Ion Implantation | 채널링, 격자 손상, 활성화와 열처리 | [대학 공개 본문](https://www.iue.tuwien.ac.at/phd/radi/node10.html) |
 | MIT OCW, 6.774, Lecture 15 | 도입부의 프로파일 근사·과잉 격자간 원자·일시적 확산 증가 설명을 읽었습니다. 강의를 전부 시청한 것은 아닙니다. | [공식 전사문 PDF](https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/1SYQFQEvgDtfhesvI1gnlrNLzHpjv3kUB_transcript.pdf) |

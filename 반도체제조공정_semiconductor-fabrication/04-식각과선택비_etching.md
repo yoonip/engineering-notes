@@ -6,6 +6,14 @@
 
 이 글은 표면 반응과 입자 수송을 이용하여 식각 결과를 이해하는 학습 자료입니다. 계산에 사용하는 두께·속도·허용 손실은 별도 표시한 설명용 가정입니다. 특정 제품의 공정 조건이나 실제 장비의 운전 절차를 제시하지 않습니다. 기술 사례는 2026년 10월 26일에 확인한 공개 자료의 범위로 한정합니다.
 
+## 공정 전후 단면
+
+![감광막 창을 통한 목표막 식각과 마스크 제거의 단면 개념도](그림_figures/04-식각단면_etch-section.svg)
+
+그림은 평평한 목표막에 구멍을 여는 경우를 단순화한 자체 개념도이며 실제 현미경 사진이나 축척 도면이 아닙니다. A에서는 감광막(PR)의 창만 열려 있고 그 아래 목표막은 아직 남아 있습니다. B에서는 창 아래 목표막이 제거되어 바닥층이 노출되지만 윗면 마스크는 남아 있습니다. C에서는 마스크를 제거한 뒤 목표막과 통로가 드러납니다. 실제로 의도한 형상이 만들어졌는지는 잔막·바닥 손실·측벽 치수를 측정하여 판단합니다. B의 바닥 노출과 C의 마스크 제거는 서로 다른 확인 항목입니다. 이 순서의 공정 연결은 [7절](#7-실제-통합-공정에서의-역할)에서 설명합니다.
+
+구멍 깊이가 맞아도 바닥에 잔막이 남으면 연결이 막힐 수 있고, 마스크 아래까지 옆으로 깎이면 남길 선의 폭이 달라집니다. 이 그림의 수직 제거를 모든 식각에 적용하지는 않습니다. GAA의 SiGe 희생층 제거처럼 옆 방향 반응이 필요한 경우는 [8절](#8-ale와-gaa-선택-식각)의 별도 목적입니다.
+
 ## 1. 식각 결과를 읽는 기본 용어
 
 막 두께가 100 nm 줄어드는 데 2분이 걸리면 평균 식각 속도는 50 nm/min입니다. 이 수치에는 어느 재료인지, 평평한 시험막인지 실제 구멍의 바닥인지, 어느 온도와 표면 상태인지가 붙어야 합니다. 평평한 산화막에서 얻은 속도를 깊고 좁은 구멍에 그대로 적용할 수는 없습니다.
@@ -111,6 +119,15 @@ ARDE(aspect-ratio-dependent etching)는 구조의 종횡비에 따라 식각 속
 
 여러 층이 쌓인 막을 관통하는 통로에서는 깊이가 증가할수록 수송과 측벽 형상 제어가 어려워집니다. 입구가 넓어지는 보잉(bowing), 아래로 갈수록 좁아지는 테이퍼, 구멍이 기울거나 옆으로 휘는 현상을 구분해야 합니다. 하나의 수직 단면에서 정상처럼 보여도 다른 방향에서는 치우칠 수 있습니다. Lam의 제품 설명은 유전체 식각에 ALE·RIE·극저온 식각을 포함하고, 높은 종횡비 구조를 별도 과제로 다룹니다. 특정 장비의 홍보 성능을 모든 재료와 구조에 일반화해서는 안 됩니다. [Lam Research, Etch의 공정 및 제품 분류](https://www.lamresearch.com/products/our-processes/etch/)
 
+### 실제 장비와 재료를 연결하기
+
+같은 식각 장비라는 이름 아래에서도 깊은 절연막 구멍과 SiGe의 옆 방향 제거는 다른 문제입니다. 다음은 2026-10-26에 공식 본문에서 확인한 제품 기능이며, 고객별 채택 범위나 모든 재료에서의 동일한 성능을 뜻하지 않습니다. 실제 장비 외관은 각 공식 페이지의 사진으로 확인할 수 있습니다.
+
+| 장비·플랫폼 | 실제 재료와 역할 | 적용 구조·확인할 조건 | 공식 자료의 위치 |
+|---|---|---|---|
+| Lam Vantex | 절연막 적층을 관통하는 채널·접촉 구멍을 만듭니다. | 3D NAND의 깊은 구멍·트렌치와 메모리 커패시터 구조를 대상으로 합니다. 깊이뿐 아니라 높이별 CD와 이온 방향성을 봅니다. | [Vantex의 Industry Challenges·Key Applications](https://www.lamresearch.com/product/vantex/) |
+| Lam Selis | 실리콘저마늄(SiGe)을 제거하고 인접 Si를 남기는 GAA 선택 식각을 다룹니다. | 저에너지 라디칼 공급과 등방성 제거가 목적입니다. 수직 구멍용 공정의 대체 이름으로 쓰지 않습니다. | [2022년 발표의 Introducing Argos, Prevos and Selis](https://newsroom.lamresearch.com/accelerating-the-path-to-3d-introducing-lam-precision-selective-etch-solutions) |
+
 ## 8. ALE와 GAA 선택 식각
 
 원자층 식각(ALE, atomic layer etching)은 표면을 바꾸는 단계와 바뀐 층을 제거하는 단계를 분리하여 작은 양을 반복 제거하는 방식입니다. 대표적인 설명 모형은 표면 반응 → 남은 반응물 제거 → 변형층 제거 → 부산물 배출입니다. 자기 제한적(self-limiting) 반응은 이용 가능한 반응 자리가 소진되거나 변형층이 사라지면 반응이 더 진행하기 어려운 성질입니다. [Lam Research, All About ALE의 Atomic Layer Etching](https://newsroom.lamresearch.com/Tech-Brief-All-About-ALE)
@@ -147,6 +164,32 @@ GAA 나노시트에서는 실리콘과 실리콘저마늄(SiGe)을 번갈아 성
 | 누설 증가, 모양은 정상 | 플라스마 전하·격자 손상·표면 결함 | 전기 시험, 계면 분석, 표면 손상 평가 |
 
 평면 CD-SEM은 위에서 보이는 폭을 주로 보여 줍니다. 단면 SEM/TEM은 깊이와 측벽을 볼 수 있지만 관찰 위치가 제한적이며 시료 준비에 따른 영향을 검토해야 합니다. 타원계측이나 반사계측으로 평평한 막의 잔여 두께를 추정할 때에는 광학 상수와 층 구조를 가정합니다. 전기 시험은 구조가 실제로 연결되고 절연되는지를 확인하지만 그 결과 하나만으로 원인 공정을 특정하기는 어렵습니다. 서로 다른 계측이 같은 질문을 보는지부터 정리해야 합니다.
+
+### 사례 1: 깊은 채널 구멍의 형상 편차와 극저온 식각
+
+Lam은 Cryo 3.0에서 저온 표면 화학과 플라스마를 공간적으로 가두는 고출력 반응기, Vantex의 펄스 제어를 결합해 깊은 메모리 채널의 형상을 제어한다고 보고합니다. 2024년 발표의 깊이 최대 10 μm와 형상 편차 0.1% 미만은 공급사의 공개 성능 사례입니다. 여기서 편차의 분모는 구멍 폭이 아니라 채널 깊이이며, 정의는 `(최대 CD−최소 CD)/깊이`입니다. 기존 극저온 공정의 양산 이력과 이 제품 발표를 구분하며, 1,000단 NAND는 당시의 확장 목표입니다. [Lam, 2024-07-31 발표의 기술 설명과 각주](https://newsroom.lamresearch.com/2024-07-31-Lam-Research-Introduces-Lam-Cryo-TM-3-0-Cryogenic-Etch-Technology-to-Accelerate-Scaling-of-3D-NAND-for-the-AI-Era)
+
+아래의 경쟁 원인과 확인 순서는 그 보고에 연결한 자체 진단 예시입니다. 공개 자료에는 개별 고객의 불량 웨이퍼 원인 분석과 수정 전후 수율이 제시되어 있지 않습니다.
+
+| 단계 | 확인 내용 |
+|---|---|
+| 증상 | 깊이는 확보했지만 중간 높이가 부풀거나 바닥 폭이 작아집니다. |
+| 경쟁 원인 | 측벽 보호·표면 반응 불균형, 이온 입사각 분포, 마스크 모양, 깊이에 따른 공급 부족이 같은 CD 편차를 만들 수 있습니다. |
+| 계측 | 입구·중간·바닥의 CD와 깊이를 같은 단면에서 읽고, 반경·패턴 폭·밀도별로 비교합니다. 입구 마스크 형상도 함께 확인합니다. |
+| 조치 방향 | 깊이만 늘리는 조치에 앞서 표면 반응과 방향성을 분리해 평가합니다. 보고 사례의 해결 원리는 저온 화학과 펄스 플라스마의 결합이며 단순한 온도 하강 하나로 환원하지 않습니다. |
+| 재검증 지표 | 높이별 CD 분포, 위 정의의 형상 편차, 바닥 개방률, 마스크 잔여량과 반복 웨이퍼의 분포를 확인합니다. 전기 결과와의 연결은 별도 시험이 필요합니다. |
+
+### 사례 2: SiGe는 남고 Si 채널도 얇아지는 경우
+
+다음은 [Lam의 SiGe 선택 제거 요구와 Selis 제품 원리](https://newsroom.lamresearch.com/accelerating-the-path-to-3d-introducing-lam-precision-selective-etch-solutions)를 이용해 구성한 자체 진단 예시입니다. 직접 제조한 결과나 공급사가 보고한 특정 불량 해결 기록은 아닙니다.
+
+| 단계 | 확인 내용 |
+|---|---|
+| 증상 | 일부 시트 사이에 SiGe가 남는데 노출된 Si의 두께도 줄거나 표면이 거칠어집니다. |
+| 경쟁 원인 | 깊은 위치의 반응물 공급 부족, SiGe 조성·계면 혼합 차이, 표면 산화막, Si에 대한 선택성 부족을 나눕니다. 단일 선택비 수치만으로 원인을 확정하지 않습니다. |
+| 계측 | 위·중간·아래 시트의 단면과 Ge 조성 분포를 연결하고, 잔류 SiGe 위치·Si 두께·거칠기를 각각 비교합니다. 평면 시험막 결과와 구조 내부 결과도 나눕니다. |
+| 조치 방향 | 공급 부족이면 구조 내부의 반응 도달성을, 선택성 부족이면 표면 상태와 선택 반응 구간을 검토합니다. 적층 조성이 달랐다면 에피택시까지 되짚습니다. 처리 시간을 늘리는 한 가지 조치로 두 문제를 함께 해결했다고 판단하지 않습니다. |
+| 재검증 지표 | 잔류 Ge 분포, 시트별 Si 두께와 거칠기, 구조 균일도, 후속 게이트의 누설·특성 분포를 확인합니다. 형상이 같아도 전기적 손상이 남을 수 있습니다. |
 
 ## 10. 자체 계산 예제
 
@@ -218,9 +261,11 @@ SiGe를 옆으로 30 nm 제거하고, 같은 노출 조건에서의 유효 SiGe:
 | Multi-diagnostic characterization of inductively coupled discharges with tailored waveform substrate bias | 서론: 소스·바이어스 사이 결합의 한계 | [연구 논문 DOI](https://doi.org/10.1088/1361-6595/ae2158) |
 | Oxford Instruments, Optical end point detectors | OES, 레이저 간섭 검출과 작은 노출 면적의 제약 | [공식 계측 설명](https://plasma.oxinst.cn/support/upgrades/optical-end-point-detectors) |
 | Lam Research, Etch | 공정 소개와 제품 분류: 높은 종횡비·유전체 식각 | [공식 공정 설명](https://www.lamresearch.com/products/our-processes/etch/) |
+| Lam Research, Vantex | Industry Challenges, Key Applications: 깊은 메모리 구멍·트렌치, 이온 방향성과 CD 요구를 확인했습니다. | [공식 장비·사진](https://www.lamresearch.com/product/vantex/) |
+| Lam Research, Cryo 3.0, 2024-07-31 | 기술 설명, Vantex 결합, 깊이 최대 10 μm와 형상 편차의 각주 정의를 확인했습니다. 공급사 성능 보고이며 고객별 수율 검증 자료는 아닙니다. | [공식 발표](https://newsroom.lamresearch.com/2024-07-31-Lam-Research-Introduces-Lam-Cryo-TM-3-0-Cryogenic-Etch-Technology-to-Accelerate-Scaling-of-3D-NAND-for-the-AI-Era) |
 | Lam Research, All About ALE, 2016-11-14 | Atomic Layer Etching, Benefits: 수정·제거 분리 | [공식 기술 설명](https://newsroom.lamresearch.com/Tech-Brief-All-About-ALE) |
 | Oxford Instruments, Atomic layer etching | How does ALE work, Benefits: 에너지 구간과 ARDE 감소 | [공식 원리 설명](https://plasma.oxinst.com/technologies/atomic-layer-etching) |
-| Lam Research, Precision selective etch, 2022-02-09 | The need for precision: GAA의 SiGe 부분·전체 등방 제거 | [공식 발표](https://newsroom.lamresearch.com/accelerating-the-path-to-3d-introducing-lam-precision-selective-etch-solutions) |
+| Lam Research, Precision selective etch, 2022-02-09 | The need for precision, Introducing Argos, Prevos and Selis: SiGe·Si의 제거·보존 관계와 Selis의 저에너지 라디칼 설명을 확인했습니다. | [공식 발표](https://newsroom.lamresearch.com/accelerating-the-path-to-3d-introducing-lam-precision-selective-etch-solutions) |
 | Yihan Huang·Monica Sawkar Mathur, J. Phys. Chem. C 129, 12502–12511, 2025 | Abstract와 서지정보: SiGe·Si 불소계 열적 선택 식각의 기구 계산이며 전문 전체를 검토한 것은 아닙니다. | [원 논문](https://pubs.acs.org/doi/10.1021/acs.jpcc.5c01736) |
 
 다음 글: [증착과 이온 주입](05-증착과이온주입_deposition-implantation.md)
