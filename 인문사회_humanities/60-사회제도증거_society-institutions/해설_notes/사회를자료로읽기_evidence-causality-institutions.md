@@ -16,9 +16,9 @@
 
 직업훈련 참가자의 취업률이 비참가자보다 높다고 하겠습니다. 이것은 비교에서 관찰된 관련성입니다. 참가자가 원래 다른 경력이나 동기를 가졌다면 훈련이 그 차이를 전부 만들었다고 말할 수 없습니다. 다음은 실제 사업의 효과가 아니라 인과관계를 설명하기 위한 개념 모형입니다.
 
-![사회를 자료로 읽기: 제도, 규범과 인과관계 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/evidence-causality-institutions.png)
+![사회를 자료로 읽기: 제도, 규범과 인과관계 — 개념도 / Concept diagram](../../../그림자료_assets/도식_diagrams/evidence-causality-institutions.png)
 
-[SVG](../../../자료_assets/도식_diagrams/evidence-causality-institutions.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/evidence-causality-institutions.mmd)
+[SVG](../../../그림자료_assets/도식_diagrams/evidence-causality-institutions.svg) · [그림 원본 / Diagram source](../../../그림자료_assets/도식_diagrams/evidence-causality-institutions.mmd)
 
 직접 작성한 인과관계 그림입니다. 화살표는 자료로 입증된 사실이 아니라 검토할 인과 가정을 나타냅니다. 기존 역량이 참여와 결과 모두에 영향을 주면, 두 집단을 그대로 비교할 때 선택 차이가 섞입니다.
 

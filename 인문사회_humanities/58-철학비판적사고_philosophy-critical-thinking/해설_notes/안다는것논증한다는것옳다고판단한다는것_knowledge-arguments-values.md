@@ -61,9 +61,9 @@ $$P\Rightarrow Q,\quad P\quad\therefore Q$$
 
 따라서 ‘A의 사용 전력이 낮습니다’는 이 설정에서 계산된 사실이지만 ‘A를 채택해야 합니다’는 아직 완성되지 않은 결론입니다. 반대로 자료가 덜 모였다고 모든 선택이 똑같이 옳은 것도 아닙니다. 적용할 기준과 필요한 자료를 구분해 조건부 판단을 만들 수 있습니다. [윤리와 정의](../개념_concepts/윤리와정의_ethics-and-justice.md)에서는 결과·의무·덕과 권리·자유·평등의 논거를 비교합니다.
 
-![안다는 것, 논증한다는 것, 옳다고 판단한다는 것 — 개념도 / Concept diagram](../../../자료_assets/도식_diagrams/knowledge-arguments-values.png)
+![안다는 것, 논증한다는 것, 옳다고 판단한다는 것 — 개념도 / Concept diagram](../../../그림자료_assets/도식_diagrams/knowledge-arguments-values.png)
 
-[SVG](../../../자료_assets/도식_diagrams/knowledge-arguments-values.svg) · [그림 원본 / Diagram source](../../../자료_assets/도식_diagrams/knowledge-arguments-values.mmd)
+[SVG](../../../그림자료_assets/도식_diagrams/knowledge-arguments-values.svg) · [그림 원본 / Diagram source](../../../그림자료_assets/도식_diagrams/knowledge-arguments-values.mmd)
 
 이 문서를 위해 작성한 논증 검토 흐름도입니다. 가치가 들어간다는 이유로 사실 확인을 포기할 필요도, 사실을 안다는 이유로 가치 선택을 숨길 필요도 없습니다.
 
