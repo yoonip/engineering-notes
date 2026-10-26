@@ -34,7 +34,7 @@ $$p\to q\equiv\neg p\lor q\equiv\neg q\to\neg p.$$
 $$\Gamma\models c\quad\Longleftrightarrow\quad
 \text{전제를 모두 만족하고 }\neg c\text{도 만족하는 해석이 없다.}$$
 
-그런 해석 하나가 반례입니다. 논증이 타당하고 전제가 모두 참이면 건전한 논증이지만, 타당성만으로 현실의 전제가 참이라고 확인되지는 않습니다. 모순된 전제는 만족하는 해석 자체가 없으므로 고전논리에서는 모든 결론을 함의합니다. 따라서 프로그램은 함의 여부와 함께 전제를 만족하는 해석의 개수도 반환합니다. 이 구분은 [Stanford Introduction to Logic, §§3.4–3.6](https://logical.stanford.edu/intrologic/sections/section_03.html?section=1)와 대조했습니다.
+전제를 모두 만족하면서 결론을 거짓으로 만드는 해석 하나가 반례입니다. 논증이 타당하고 전제가 모두 참이면 건전한 논증이지만, 타당성만으로 현실의 전제가 참이라고 확인되지는 않습니다. 모순된 전제는 만족하는 해석 자체가 없으므로 고전논리에서는 모든 결론을 함의합니다. 따라서 프로그램은 함의 여부와 함께 전제를 만족하는 해석의 개수도 반환합니다. 이 구분은 [Stanford Introduction to Logic, §§3.4–3.6](https://logical.stanford.edu/intrologic/sections/section_03.html?section=1)와 대조했습니다.
 
 ### “모든”과 “어떤”의 범위
 
