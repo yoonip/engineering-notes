@@ -53,7 +53,7 @@ python -X utf8 -B verify.py --mutation single-record --output C:/temp/update-rec
 
 - [원리·오류·관측 결과](../../../설계와검증사례_engineering-cases/중단된업데이트의슬롯선택과롤백_firmware-ab-update.md)
 - [2026-10-21 실행 기록](../../../설계와검증사례_engineering-cases/검증기록_evidence/펌웨어업데이트중단과복구검사_20261021.md)
-- [부팅·Device Tree·드라이버의 경계](../../../전자컴퓨터공학_ece/18-임베디드Linux_embedded-linux/해설_notes/boot-devicetree-driver-boundaries.md)
+- [부팅·Device Tree·드라이버의 경계](../../../전자컴퓨터공학_ece/18-임베디드Linux_embedded-linux/해설_notes/부팅과장치트리및드라이버_boot-devicetree-driver-boundaries.md)
 
 ## English
 
