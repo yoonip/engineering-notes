@@ -60,6 +60,221 @@ C/C++은 상태 키·힙·부모 정보의 메모리를 계산합니다. Python�
 
 [CMU Andrew Moore의 A*·IDA* 튜토리얼](https://www.cs.cmu.edu/afs/cs/Web/People/awm/tutorials/astar.html)은 비용 추정과 메모리 절충을 더 읽는 자료입니다. 본문은 원문 슬라이드의 재배포가 아닌 자체 예제와 설명입니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+작은 장애물 격자에서 g+h가 최소인 열린 칸을 직접 골라 A*를 실행합니다. 상하좌우 비용은 1이며 Manhattan 하한이 일관적이므로 닫은 칸을 다시 열지 않습니다. 힙·IDA*·빔 탐색·경로 복원은 구현하지 않습니다.
+
+이 예제에서 직접 구현하는 기법은 A* · 허용적·일관적인 Manhattan 하한 · 최선 g 완화 · 최소 f 목표 종료입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+R C 뒤에 R개의 격자 문자열이 주어집니다. 1≤R,C≤5, .은 통로이고 #은 벽입니다. 출발점은 (0,0), 목표는 (R-1,C-1)이며 두 끝점이 벽일 수도 있습니다.
+
+```text
+3 4
+....
+.##.
+....
+```
+
+최소 이동 횟수를 출력합니다. 끝점이 벽이거나 경로가 없으면 -1입니다.
+
+```text
+5
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 출발 칸 0: g=0, h=5, f=5 | 장애물을 무시한 Manhattan 거리를 하한으로 사용합니다. |
+| 2 | 칸 (0,1): g=1, h=4, f=5 | 통로를 한 칸 이동하면 g는 1 늘고 h는 1 줄어듭니다. |
+| 3 | 벽 (1,1),(1,2)는 이웃 후보에서 제외 | 격자 범위와 벽을 확인한 뒤에만 거리 배열을 갱신합니다. |
+| 4 | 목표 (2,3)를 꺼낼 때 g=5, h=0, f=5 | 일관적인 하한 아래에서 목표를 최소 f로 꺼낸 시점에 답을 확정합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
+#include <stdlib.h>  // qsort와 정수 절댓값 함수
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void read_word(char *text) {  // 길이가 32 이하인 토큰 입력
+    scanf("%32s", text);  // 종료 문자까지 들어갈 33칸 버퍼 사용
+}  // 토큰 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    printf("%d", value);  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    fputs(text, stdout);  // 문자열을 표준 출력에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 최소 f 스캔 방식의 실제 A* 탐색
+    int rows = read_int(), cols = read_int(), distance[25], closed[25] = {0};  // 격자 크기·최선 g·닫힌 상태
+    char grid[5][33];  // 토큰 입력 함수의 최대 폭을 담는 행 버퍼
+    for (int r = 0; r < rows; ++r) read_word(grid[r]);  // 격자의 벽과 통로 읽기
+    if (grid[0][0] == '#' || grid[rows - 1][cols - 1] == '#') { write_text("-1\n"); return 0; }  // 막힌 끝점은 즉시 제외
+    int vertices = rows * cols, answer = -1;  // 상태 수와 아직 없는 도착 답
+    const int inf = 1000000;  // 가능한 격자 경로보다 큰 미도달 값
+    int dr[4] = {-1, 0, 1, 0}, dc[4] = {0, 1, 0, -1};  // 상·우·하·좌 이동
+    for (int v = 0; v < vertices; ++v) distance[v] = inf;  // 모든 칸의 g 초기화
+    distance[0] = 0;  // 출발점의 실제 비용
+    for (int step = 0; step < vertices; ++step) {  // 각 칸은 최대 한 번 확장
+        int u = -1, best = inf;  // 다음 최소 f 후보
+        for (int v = 0; v < vertices; ++v) {  // 열린 후보의 f를 직접 비교
+            if (closed[v] || distance[v] == inf) continue;  // 닫혔거나 아직 미발견인 칸 제외
+            int h = rows - 1 - v / cols + cols - 1 - v % cols;  // 목표까지의 Manhattan 하한
+            int score = distance[v] + h;  // A* 우선순위 g+h
+            if (score < best) { best = score; u = v; }  // 동률은 작은 칸 번호 유지
+        }  // 최소 f 선택 끝
+        if (u == -1) break;  // 더 갈 열린 상태가 없음
+        if (u == vertices - 1) { answer = distance[u]; break; }  // 목표를 최소 f로 꺼냈을 때만 종료
+        closed[u] = 1;  // 일관성으로 현재 g 확정
+        int row = u / cols, col = u % cols;  // 번호를 행·열로 복원
+        for (int direction = 0; direction < 4; ++direction) {  // 네 방향 전이
+            int nr = row + dr[direction], nc = col + dc[direction];  // 이웃 좌표
+            if (nr < 0 || nr >= rows || nc < 0 || nc >= cols || grid[nr][nc] == '#') continue;  // 경계와 벽 확인
+            int v = nr * cols + nc;  // 이웃의 상태 번호
+            if (!closed[v] && distance[u] + 1 < distance[v]) distance[v] = distance[u] + 1;  // 더 좋은 열린 상태의 g 갱신
+        }  // 이웃 완화 끝
+    }  // 목표 확정 또는 탐색 실패
+    write_number(answer); write_text("\n"); return 0;  // 최소 이동 또는 -1 출력
+}  // A* 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/example.cpp>)
+
+```cpp
+#include <iostream>  // cin과 cout으로 표준 입력·출력 처리
+#include <cstdlib>  // qsort와 정수 절댓값 함수
+using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    cin >> value;  // 스트림에서 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void read_word(char *text) {  // 길이가 32 이하인 토큰 입력
+    cin.width(33);  // 종료 문자를 포함한 버퍼 크기로 읽기 제한
+    cin >> text;  // 공백 전까지의 토큰 읽기
+}  // 토큰 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    cout << value;  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    cout << text;  // 문자열을 스트림에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 최소 f 스캔 방식의 실제 A* 탐색
+    int rows = read_int(), cols = read_int(), distance[25], closed[25] = {};  // 격자 크기·최선 g·닫힌 상태
+    char grid[5][33];  // 토큰 입력 함수의 최대 폭을 담는 행 버퍼
+    for (int r = 0; r < rows; ++r) read_word(grid[r]);  // 격자의 벽과 통로 읽기
+    if (grid[0][0] == '#' || grid[rows - 1][cols - 1] == '#') { write_text("-1\n"); return 0; }  // 막힌 끝점은 즉시 제외
+    int vertices = rows * cols, answer = -1;  // 상태 수와 아직 없는 도착 답
+    const int inf = 1000000;  // 가능한 격자 경로보다 큰 미도달 값
+    int dr[4] = {-1, 0, 1, 0}, dc[4] = {0, 1, 0, -1};  // 상·우·하·좌 이동
+    for (int v = 0; v < vertices; ++v) distance[v] = inf;  // 모든 칸의 g 초기화
+    distance[0] = 0;  // 출발점의 실제 비용
+    for (int step = 0; step < vertices; ++step) {  // 각 칸은 최대 한 번 확장
+        int u = -1, best = inf;  // 다음 최소 f 후보
+        for (int v = 0; v < vertices; ++v) {  // 열린 후보의 f를 직접 비교
+            if (closed[v] || distance[v] == inf) continue;  // 닫혔거나 아직 미발견인 칸 제외
+            int h = rows - 1 - v / cols + cols - 1 - v % cols;  // 목표까지의 Manhattan 하한
+            int score = distance[v] + h;  // A* 우선순위 g+h
+            if (score < best) { best = score; u = v; }  // 동률은 작은 칸 번호 유지
+        }  // 최소 f 선택 끝
+        if (u == -1) break;  // 더 갈 열린 상태가 없음
+        if (u == vertices - 1) { answer = distance[u]; break; }  // 목표를 최소 f로 꺼냈을 때만 종료
+        closed[u] = 1;  // 일관성으로 현재 g 확정
+        int row = u / cols, col = u % cols;  // 번호를 행·열로 복원
+        for (int direction = 0; direction < 4; ++direction) {  // 네 방향 전이
+            int nr = row + dr[direction], nc = col + dc[direction];  // 이웃 좌표
+            if (nr < 0 || nr >= rows || nc < 0 || nc >= cols || grid[nr][nc] == '#') continue;  // 경계와 벽 확인
+            int v = nr * cols + nc;  // 이웃의 상태 번호
+            if (!closed[v] && distance[u] + 1 < distance[v]) distance[v] = distance[u] + 1;  // 더 좋은 열린 상태의 g 갱신
+        }  // 이웃 완화 끝
+    }  // 목표 확정 또는 탐색 실패
+    write_number(answer); write_text("\n"); return 0;  // 최소 이동 또는 -1 출력
+}  // A* 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/example.py>)
+
+```python
+import sys  # 표준 입력 전체를 토큰으로 읽기
+
+def main():  # 입력 한 건을 계산하고 결과 출력
+    tokens = iter(sys.stdin.read().split())  # 공백과 줄바꿈을 같은 구분자로 처리
+    rows, cols = int(next(tokens)), int(next(tokens))  # 격자 크기
+    grid = [next(tokens) for _ in range(rows)]  # 벽과 통로 문자열
+    if grid[0][0] == "#" or grid[-1][-1] == "#":  # 출발점이나 목표가 벽이면
+        print(-1)  # 경로 없음 표시
+        return  # 탐색을 시작하지 않기
+    vertices = rows * cols  # 격자 칸을 일차원 상태로 표현
+    inf = 10 ** 6  # 가능한 이동 수보다 큰 미도달 값
+    distance = [inf] * vertices  # 상태별 최선 g
+    closed = [False] * vertices  # 확정한 상태 표시
+    distance[0] = 0  # 출발점 실제 비용
+    directions = [(-1, 0), (0, 1), (1, 0), (0, -1)]  # 상·우·하·좌 순서
+    answer = -1  # 아직 경로를 찾지 못한 상태
+    for _ in range(vertices):  # 상태별 최대 한 번 확장
+        u, best = -1, inf  # 다음 최소 f 후보
+        for v in range(vertices):  # 열린 상태의 우선순위 직접 비교
+            if closed[v] or distance[v] == inf:  # 닫혔거나 미발견인 칸
+                continue  # 후보에서 제외
+            h = rows - 1 - v // cols + cols - 1 - v % cols  # Manhattan 거리 하한
+            score = distance[v] + h  # A*의 g+h
+            if score < best:  # 작은 f를 우선하며 동률은 먼저 본 번호 유지
+                best, u = score, v  # 이번 확장 후보 갱신
+        if u == -1:  # 열린 후보가 더 없으면
+            break  # 경로 탐색 실패
+        if u == vertices - 1:  # 목표를 유효한 최소 f로 꺼낸 경우
+            answer = distance[u]  # 최단 이동 수 확정
+            break  # 생성 시점보다 늦게 종료
+        closed[u] = True  # 일관성에 따라 재확장 없이 확정
+        row, col = divmod(u, cols)  # 현재 칸의 행·열
+        for dr, dc in directions:  # 네 방향 이웃 확인
+            nr, nc = row + dr, col + dc  # 이웃 좌표
+            if not (0 <= nr < rows and 0 <= nc < cols) or grid[nr][nc] == "#":  # 범위와 벽 먼저 검사
+                continue  # 이동할 수 없는 칸 제외
+            v = nr * cols + nc  # 이웃의 상태 번호
+            if not closed[v] and distance[u] + 1 < distance[v]:  # 더 짧은 열린 경로 확인
+                distance[v] = distance[u] + 1  # 최선 실제 비용 갱신
+    print(answer)  # 최단 거리 또는 미도달 -1
+
+if __name__ == "__main__":  # 직접 실행할 때만 예제 시작
+    main()  # 표준 입력 한 건 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력과 출력 | scanf와 fputs를 감싼 함수를 사용합니다. | cin과 cout을 감싼 함수를 사용합니다. | 입력을 split으로 나누고 print로 출력합니다. |
+| 작업 배열 | 입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다. | 절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다. | 입력 크기에 맞춘 리스트를 생성합니다. |
+| 정수와 상태 | 예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다. | 같은 정수 범위와 상태 전이를 사용합니다. | int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(V²), V=R×C
+- 보조 공간: O(V)
+
+열린 상태에서 최소 f를 전체 스캔하므로 O(V²)입니다. 일관적인 Manhattan 휴리스틱 때문에 상태당 한 번 확장하며 이웃은 최대 4개입니다.
+
+[예제 입력](<예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/input.txt>) · [예상 출력](<예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/output.txt>) · [예제 실행 방법](<예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

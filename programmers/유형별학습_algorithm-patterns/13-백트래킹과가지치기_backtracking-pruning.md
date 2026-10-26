@@ -123,6 +123,135 @@ Python에서도 행 깊이가 큰 일반 문제라면 재귀 한도와 스택 �
 선택·탐색·취소의 구조와 조기 종료의 목적 구분은 Stanford 강의를 참고했습니다.
 퀸 배치 코드·추적·불변식과 음수 비용 반례는 직접 구성한 설명입니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+한 행에 퀸을 하나씩 놓고 이미 사용한 열과 대각선을 즉시 제외하며 모든 유효 배치 수를 셉니다.
+
+이 예제에서 직접 구현하는 기법은 백트래킹 · 안전한 가지치기 · 선택 표시와 복구 · 대각선 식별입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+보드 크기 N(1~9) 하나입니다. N×N 보드에 서로 공격하지 않는 퀸 N개를 놓습니다.
+
+```text
+4
+```
+
+서로 다른 퀸 배치 수를 정수 하나로 출력합니다. 회전·대칭 배치도 위치가 다르면 별도로 셉니다.
+
+```text
+2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | row=0,col=0 표시 후 row=1,col=2 선택 | 열과 두 대각선이 비어 있는 후보만 내려갑니다. |
+| 2 | 접두 열 목록[0,2]에서 row=2의 모든 후보 거절 | 완성될 수 없는 접두 배치이므로 돌아가 마지막 표시를 지웁니다. |
+| 3 | 열 목록[1,3,0,2]에서 row=4 도달, count에1 추가 | 네 행 모두 채웠으므로 유효 배치 한 개를 셉니다. |
+| 4 | 각 선택 복구 후 [2,0,3,1]도 발견, 최종 count=2 | 복구된 상태로 다른 가지를 탐색해 두 번째 배치를 얻습니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/13-백트래킹과가지치기_backtracking-pruning/example.c>)
+
+```c
+#include <stdio.h> // 보드 크기 입력과 배치 수 출력
+int n, columns[9] = {0}, down[17] = {0}, up[17] = {0}; // 열과 두 대각선의 사용 표시
+long long search(int row) { // 이번 행에 퀸 하나를 놓는 재귀 탐색
+    if (row == n) return 1; // 모든 행을 채우면 유효 배치 한 개
+    long long count = 0; // 현재 접두 배치에서 완성되는 경우 수
+    for (int col = 0; col < n; ++col) { // 이번 행의 모든 열을 후보로 확인
+        int d = row - col + n - 1, u = row + col; // 두 대각선의 음수 없는 식별자
+        if (columns[col] || down[d] || up[u]) continue; // 이미 공격받는 후보는 내려가지 않기
+        columns[col] = down[d] = up[u] = 1; // 이번 퀸이 차지한 세 방향 표시
+        count += search(row + 1); // 다음 행의 모든 완성 배치 수 누적
+        columns[col] = down[d] = up[u] = 0; // 다음 후보를 위해 이번 선택만 복구
+    } // 현재 행의 후보 탐색 끝
+    return count; // 이 접두 배치의 완성 개수 반환
+} // 백트래킹 함수 끝
+int main(void) { // 실행 시작점
+    scanf("%d", &n); // 보드 한 변의 길이 읽기
+    printf("%lld\n", search(0)); // 첫 행부터 탐색해 전체 배치 수 출력
+    return 0; // 정상 종료
+} // N퀸 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/13-백트래킹과가지치기_backtracking-pruning/example.cpp>)
+
+```cpp
+#include <iostream> // 보드 크기 입력과 배치 수 출력
+#include <vector> // 열과 대각선의 사용 표시
+using namespace std; // 표준 이름의 접두사 생략
+int n; // 보드 한 변의 길이
+vector<int> columns, down, up; // 이미 놓인 퀸이 공격하는 세 방향
+long long search(int row) { // 이번 행의 퀸 위치를 고르는 재귀 함수
+    if (row == n) return 1; // 모든 행을 채웠으면 완성 배치 한 개
+    long long count = 0; // 현재 배치에서 이어지는 완성 개수
+    for (int col = 0; col < n; ++col) { // 이번 행의 모든 열 검사
+        int d = row - col + n - 1, u = row + col; // 두 대각선의 배열 인덱스
+        if (columns[col] || down[d] || up[u]) continue; // 공격받는 칸은 가지치기
+        columns[col] = down[d] = up[u] = 1; // 선택한 열과 대각선 표시
+        count += search(row + 1); // 다음 행에서 이어지는 배치 수 더하기
+        columns[col] = down[d] = up[u] = 0; // 이번 퀸을 제거하고 이전 상태 복구
+    } // 이번 행의 후보 탐색 끝
+    return count; // 가능한 완성 개수 반환
+} // 재귀 함수 끝
+int main() { // 실행 시작점
+    cin >> n; // 보드 크기 입력
+    columns.assign(n, 0); // 모든 열을 비어 있는 상태로 초기화
+    down.assign(2 * n - 1, 0); // 한 방향 대각선 표시 공간
+    up.assign(2 * n - 1, 0); // 다른 방향 대각선 표시 공간
+    cout << search(0) << '\n'; // 첫 행부터 놓은 전체 배치 수 출력
+    return 0; // 정상 종료
+} // N퀸 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/13-백트래킹과가지치기_backtracking-pruning/example.py>)
+
+```python
+import sys # 보드 크기 입력
+n = int(sys.stdin.buffer.read()) # 한 변의 길이를 정수로 변환
+columns, down, up = [False] * n, [False] * (2 * n - 1), [False] * (2 * n - 1) # 열과 두 대각선의 사용 표시
+def search(row): # 이번 행의 퀸 위치를 고르는 재귀 함수
+    if row == n: # 모든 행에 퀸을 놓은 경우
+        return 1 # 완성 배치 한 개 반환
+    count = 0 # 현재 접두 배치에서 완성되는 개수
+    for col in range(n): # 이번 행의 열을 왼쪽부터 확인
+        d, u = row - col + n - 1, row + col # 두 대각선의 식별자 계산
+        if columns[col] or down[d] or up[u]: # 기존 퀸에게 공격받는 후보인지 검사
+            continue # 불가능한 후보의 하위 탐색 생략
+        columns[col] = down[d] = up[u] = True # 이번 선택이 차지한 방향 표시
+        count += search(row + 1) # 다음 행의 모든 완성 개수 누적
+        columns[col] = down[d] = up[u] = False # 다음 열을 탐색하기 전 선택 복구
+    return count # 이 접두 배치의 완성 개수 반환
+print(search(0)) # 첫 행부터 탐색한 전체 N퀸 배치 수 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | int(sys.stdin.buffer.read())로 입력 전체를 정수 하나로 해석합니다. |
+| 저장과 연산 | 최대 크기9와 대각선17을 고정 배열로 두고 전역 표시를 복구합니다. | 입력 N에 맞게 vector의 열·대각선 표시 크기를 정합니다. | bool 리스트의 동일한 세 위치를 표시하고 재귀 반환 뒤 False로 되돌립니다. |
+| 자료형과 범위 | 인덱스는 int이며 배치 수는 long long으로 누적합니다. N≤9로 재귀 깊이는 작습니다. | 인덱스는 int이며 배치 수는 long long으로 누적합니다. N≤9로 재귀 깊이는 작습니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: 안전한 느슨한 상한은 O(N·N!)입니다.
+- 보조 공간: 방향 표시와 재귀 호출에 O(N)입니다.
+
+같은 열을 다시 쓰지 않는 배치 접두만 방문하며 각 호출에서 N개의 열을 확인합니다. 대각선 가지치기는 실제 탐색을 더 줄입니다.
+
+[예제 입력](<예제_examples/13-백트래킹과가지치기_backtracking-pruning/input.txt>) · [예상 출력](<예제_examples/13-백트래킹과가지치기_backtracking-pruning/output.txt>) · [예제 실행 방법](<예제_examples/13-백트래킹과가지치기_backtracking-pruning/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

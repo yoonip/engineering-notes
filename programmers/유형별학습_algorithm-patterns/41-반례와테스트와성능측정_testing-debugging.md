@@ -60,6 +60,167 @@
 
 복습: 최적화 전후 결과가 1만 건 같으면 정답이 증명되는지 설명합니다. 답은 검사 범위의 근거가 쌓인 것이며, 보편적 정당성은 여전히 상태와 전이의 논리로 설명해야 한다는 점입니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+모든 부분배열을 직접 더하는 느린 비교기와 한 번 순회하는 Kadane 풀이를 함께 실행합니다. 비어 있지 않은 부분배열만 허용하므로 전부 음수인 입력도 구별합니다.
+
+이 예제에서 직접 구현하는 기법은 독립 느린 기준 · 부분배열 전수 검사 · Kadane DP · 빈 구간 경계입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N 뒤에 N개 정수가 주어집니다. 1≤N≤10이고 각 값은 -100~100입니다.
+
+```text
+9
+-2 1 -3 4 -1 2 1 -5 4
+```
+
+느린 기준 풀이의 최대합과 빠른 풀이의 최대합을 공백으로 출력합니다.
+
+```text
+6 6
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 느린 구간 [3,6]의 원소=[4,-1,2,1], 합=6 | 기준 풀이는 매 구간을 정의대로 다시 더합니다. |
+| 2 | 값 4까지 처리: current=4, fast=4 | 음수 접두 구간을 버리고 새 구간에서 시작합니다. |
+| 3 | 다음 -1,2,1 처리: current=6, fast=6 | 앞 구간을 연장하여 최대합을 갱신합니다. |
+| 4 | slow=6, fast=6 | 지정 입력에서 독립 결과가 같음을 확인합니다. 이것만으로 모든 입력의 증명은 아닙니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/41-반례와테스트와성능측정_testing-debugging/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
+#include <stdlib.h>  // qsort와 정수 절댓값 함수
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    printf("%d", value);  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    fputs(text, stdout);  // 문자열을 표준 출력에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 서로 다른 두 구조로 최대 부분합 비교
+    int n = read_int(), values[10];  // 배열 길이와 작은 검산 입력
+    for (int i = 0; i < n; ++i) values[i] = read_int();  // 정수 배열 입력
+    int slow = -1000000000;  // 모든 허용 합보다 작은 초기값
+    for (int left = 0; left < n; ++left) {  // 부분배열 시작점 열거
+        for (int right = left; right < n; ++right) {  // 비어 있지 않은 끝점 열거
+            int total = 0;  // 매 구간을 처음부터 독립 계산
+            for (int i = left; i <= right; ++i) total += values[i];  // 정의대로 모든 원소를 직접 합산
+            if (total > slow) slow = total;  // 느린 기준의 최대합 갱신
+        }  // 현재 시작점의 구간 비교 끝
+    }  // 모든 비어 있지 않은 구간 검사 끝
+    int current = values[0], fast = values[0];  // 첫 원소로 끝나는 최적합과 전체 최적합
+    for (int i = 1; i < n; ++i) {  // 이후 원소를 한 번씩 추가
+        current = current + values[i] > values[i] ? current + values[i] : values[i];  // 이전 구간을 잇거나 현재 값에서 새로 시작
+        if (current > fast) fast = current;  // 전체 최적합 갱신
+    }  // Kadane 단일 순회 끝
+    write_number(slow); write_text(" "); write_number(fast); write_text("\n");  // 독립 결과를 나란히 출력
+    return 0;  // 정상 종료
+}  // 차등 비교 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/41-반례와테스트와성능측정_testing-debugging/example.cpp>)
+
+```cpp
+#include <iostream>  // cin과 cout으로 표준 입력·출력 처리
+#include <cstdlib>  // qsort와 정수 절댓값 함수
+using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    cin >> value;  // 스트림에서 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    cout << value;  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    cout << text;  // 문자열을 스트림에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 서로 다른 두 구조로 최대 부분합 비교
+    int n = read_int(), values[10];  // 배열 길이와 작은 검산 입력
+    for (int i = 0; i < n; ++i) values[i] = read_int();  // 정수 배열 입력
+    int slow = -1000000000;  // 모든 허용 합보다 작은 초기값
+    for (int left = 0; left < n; ++left) {  // 부분배열 시작점 열거
+        for (int right = left; right < n; ++right) {  // 비어 있지 않은 끝점 열거
+            int total = 0;  // 매 구간을 처음부터 독립 계산
+            for (int i = left; i <= right; ++i) total += values[i];  // 정의대로 모든 원소를 직접 합산
+            if (total > slow) slow = total;  // 느린 기준의 최대합 갱신
+        }  // 현재 시작점의 구간 비교 끝
+    }  // 모든 비어 있지 않은 구간 검사 끝
+    int current = values[0], fast = values[0];  // 첫 원소로 끝나는 최적합과 전체 최적합
+    for (int i = 1; i < n; ++i) {  // 이후 원소를 한 번씩 추가
+        current = current + values[i] > values[i] ? current + values[i] : values[i];  // 이전 구간을 잇거나 현재 값에서 새로 시작
+        if (current > fast) fast = current;  // 전체 최적합 갱신
+    }  // Kadane 단일 순회 끝
+    write_number(slow); write_text(" "); write_number(fast); write_text("\n");  // 독립 결과를 나란히 출력
+    return 0;  // 정상 종료
+}  // 차등 비교 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/41-반례와테스트와성능측정_testing-debugging/example.py>)
+
+```python
+import sys  # 표준 입력 전체를 토큰으로 읽기
+
+def main():  # 입력 한 건을 계산하고 결과 출력
+    tokens = iter(sys.stdin.read().split())  # 공백과 줄바꿈을 같은 구분자로 처리
+    n = int(next(tokens))  # 검산 배열 길이
+    values = [int(next(tokens)) for _ in range(n)]  # 작은 범위의 입력 배열
+    slow = -10 ** 9  # 모든 허용 합보다 작은 초기값
+    for left in range(n):  # 구간 시작점 전수 확인
+        for right in range(left, n):  # 비어 있지 않은 끝점 확인
+            total = 0  # 구간마다 합을 새로 계산
+            for i in range(left, right + 1):  # 실제 구간의 원소 직접 순회
+                total += values[i]  # 정의에 따른 합산
+            slow = max(slow, total)  # 느린 기준의 최댓값
+    current = fast = values[0]  # 빈 구간을 허용하지 않는 초기 상태
+    for i in range(1, n):  # 복사 배열 없이 빠른 풀이의 한 번 순회
+        value = values[i]  # 이번에 이어 붙일 원소
+        current = max(value, current + value)  # 새로 시작하거나 직전 최적 구간 연장
+        fast = max(fast, current)  # 전체 최대합 갱신
+    print(slow, fast)  # 두 구현의 결과를 같은 줄에 출력
+
+if __name__ == "__main__":  # 직접 실행할 때만 예제 시작
+    main()  # 표준 입력 한 건 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력과 출력 | scanf와 fputs를 감싼 함수를 사용합니다. | cin과 cout을 감싼 함수를 사용합니다. | 입력을 split으로 나누고 print로 출력합니다. |
+| 작업 배열 | 입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다. | 절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다. | 입력 크기에 맞춘 리스트를 생성합니다. |
+| 정수와 상태 | 예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다. | 같은 정수 범위와 상태 전이를 사용합니다. | int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: 기준 O(N³), 빠른 풀이 O(N)
+- 보조 공간: O(N)
+
+기준은 시작·끝·합산의 세 반복입니다. 빠른 풀이의 추가 상태는 O(1)이며 입력 배열을 포함해 O(N)입니다.
+
+[예제 입력](<예제_examples/41-반례와테스트와성능측정_testing-debugging/input.txt>) · [예상 출력](<예제_examples/41-반례와테스트와성능측정_testing-debugging/output.txt>) · [예제 실행 방법](<예제_examples/41-반례와테스트와성능측정_testing-debugging/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 [유형별 연습문제](<연습문제_problem-index.md>)에서 문제를 고르고 상태·정당성·구현 비용을 함께 비교할 수 있습니다.

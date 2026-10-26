@@ -92,6 +92,154 @@ LCS라는 약자가 공통 접두사 LCP와 혼동되지 않도록 정의를 먼
 - 질문: 회문 반지름을 모두 알면 회문을 모두 출력하는 데도 O(n)입니까? 답: 압축 표현만 O(n)이며 실제 출력할 구간 수는 O(n²)일 수 있습니다.
 - 질문: 이중 해시는 충돌이 없습니까? 답: 충돌 위험을 줄이는 방법이며 결정적인 무충돌 보장은 아닙니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+거울 중심의 반지름을 재사용하여 가장 긴 회문 길이와 모든 회문 발생 수를 구합니다.
+
+이 예제에서 직접 구현하는 기법은 Manacher 홀수 반지름 · Manacher 짝수 반지름 · 반지름 합으로 발생 수 집계입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+소문자 a..z 문자열 한 개이며 길이는 1..100입니다.
+
+```text
+abacaba
+```
+
+MAX 최장길이, COUNT 회문발생수를 각각 한 줄에 출력합니다. 같은 내용도 위치가 다르면 별개입니다.
+
+```text
+MAX 7
+COUNT 12
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | abacaba, 홀수 반지름 초기값1 | 각 문자 하나도 회문입니다. |
+| 2 | 가운데 c의 반지름4, 경계[0,6] | 왼쪽과 오른쪽의 문자를 확장하여 전체 길이7을 확인합니다. |
+| 3 | 홀수 반지름 [1,2,1,4,1,2,1] | 거울 중심과 오른쪽 경계를 이용해 중복 비교를 줄입니다. |
+| 4 | 홀수 합12, 짝수 합0, 최장7 | 각 중심에서 가능한 회문 수가 그 반지름이므로 합산합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/example.c>)
+
+```c
+#include <stdio.h>  // 문자열 입력과 결과 출력
+#include <string.h>  // 입력 문자열 길이
+
+int minimum(int a, int b) { return a < b ? a : b; }  // 거울 반지름과 경계의 작은 값
+int main(void) {  // 회문 반지름 계산 시작
+    char text[101]; int odd[100], even[100];  // 문자열과 두 종류의 중심
+    scanf("%100s", text);  // 빈 문자열은 입력 범위에서 제외
+    int n = (int)strlen(text), left = 0, right = -1, best = 0, total = 0;  // 현재 경계와 결과
+    for (int i = 0; i < n; ++i) {  // 문자 위의 홀수 중심
+        int radius = i > right ? 1 : minimum(odd[left + right - i], right - i + 1);  // 검증된 거울 범위
+        while (i - radius >= 0 && i + radius < n && text[i - radius] == text[i + radius]) ++radius;  // 경계 밖 일치 확장
+        odd[i] = radius; total += radius;  // 중심별 회문 수 누적
+        if (2 * radius - 1 > best) best = 2 * radius - 1;  // 홀수 최장 길이
+        if (i + radius - 1 > right) { left = i - radius + 1; right = i + radius - 1; }  // 가장 먼 경계 갱신
+    }  // 홀수 중심 처리 끝
+    left = 0; right = -1;  // 짝수 중심의 독립 경계
+    for (int i = 0; i < n; ++i) {  // i의 바로 앞을 짝수 중심으로 사용
+        int radius = i > right ? 0 : minimum(even[left + right - i + 1], right - i + 1);  // 짝수 거울 중심
+        while (i - radius - 1 >= 0 && i + radius < n && text[i - radius - 1] == text[i + radius]) ++radius;  // 두 문자씩 확장
+        even[i] = radius; total += radius;  // 짝수 회문 발생 수 누적
+        if (2 * radius > best) best = 2 * radius;  // 짝수 최장 길이
+        if (i + radius - 1 > right) { left = i - radius; right = i + radius - 1; }  // 짝수 회문의 먼 경계
+    }  // 짝수 중심 처리 끝
+    printf("MAX %d\nCOUNT %d\n", best, total);  // 길이와 위치별 발생 수
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/example.cpp>)
+
+```cpp
+#include <iostream>  // 문자열 토큰의 스트림 입출력
+#include <cstring>  // 문자 배열 길이 계산
+
+int minimum(int a, int b) { return a < b ? a : b; }  // 거울 반지름과 경계의 작은 값
+int main() {  // 회문 반지름 계산 시작
+    char text[101]; int odd[100], even[100];  // 문자열과 두 종류의 중심
+    std::cin >> text;  // 빈 문자열은 입력 범위에서 제외
+    int n = (int)std::strlen(text), left = 0, right = -1, best = 0, total = 0;  // 현재 경계와 결과
+    for (int i = 0; i < n; ++i) {  // 문자 위의 홀수 중심
+        int radius = i > right ? 1 : minimum(odd[left + right - i], right - i + 1);  // 검증된 거울 범위
+        while (i - radius >= 0 && i + radius < n && text[i - radius] == text[i + radius]) ++radius;  // 경계 밖 일치 확장
+        odd[i] = radius; total += radius;  // 중심별 회문 수 누적
+        if (2 * radius - 1 > best) best = 2 * radius - 1;  // 홀수 최장 길이
+        if (i + radius - 1 > right) { left = i - radius + 1; right = i + radius - 1; }  // 가장 먼 경계 갱신
+    }  // 홀수 중심 처리 끝
+    left = 0; right = -1;  // 짝수 중심의 독립 경계
+    for (int i = 0; i < n; ++i) {  // i의 바로 앞을 짝수 중심으로 사용
+        int radius = i > right ? 0 : minimum(even[left + right - i + 1], right - i + 1);  // 짝수 거울 중심
+        while (i - radius - 1 >= 0 && i + radius < n && text[i - radius - 1] == text[i + radius]) ++radius;  // 두 문자씩 확장
+        even[i] = radius; total += radius;  // 짝수 회문 발생 수 누적
+        if (2 * radius > best) best = 2 * radius;  // 짝수 최장 길이
+        if (i + radius - 1 > right) { left = i - radius; right = i + radius - 1; }  // 짝수 회문의 먼 경계
+    }  // 짝수 중심 처리 끝
+    std::cout << "MAX " << best << "\nCOUNT " << total << "\n";  // 길이와 위치별 발생 수
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/example.py>)
+
+```python
+import sys  # 문자열 토큰 읽기
+text = sys.stdin.read().split()[0]  # 허용 범위의 비어 있지 않은 문자열
+n = len(text)  # 문자 수
+odd, even = [0] * n, [0] * n  # 홀수와 짝수 중심 반지름
+left, right, best, total = 0, -1, 0, 0  # 가장 먼 회문 경계와 결과
+for i in range(n):  # 홀수 중심 순회
+    radius = 1 if i > right else min(odd[left + right - i], right - i + 1)  # 거울 범위 재사용
+    while i - radius >= 0 and i + radius < n and text[i - radius] == text[i + radius]:  # 새 대칭 문자 비교
+        radius += 1  # 회문 확장
+    odd[i] = radius  # 해당 중심 반지름
+    total += radius  # 중심별 발생 수
+    best = max(best, 2 * radius - 1)  # 홀수 최장 길이
+    if i + radius - 1 > right:  # 더 먼 오른쪽 경계 발견
+        left, right = i - radius + 1, i + radius - 1  # 검증 구간 갱신
+left, right = 0, -1  # 짝수 중심 경계 초기화
+for i in range(n):  # 두 문자 사이의 중심 순회
+    radius = 0 if i > right else min(even[left + right - i + 1], right - i + 1)  # 짝수 거울 범위
+    while i - radius - 1 >= 0 and i + radius < n and text[i - radius - 1] == text[i + radius]:  # 대칭 문자 확장
+        radius += 1  # 짝수 반지름 증가
+    even[i] = radius  # 짝수 중심 상태 저장
+    total += radius  # 해당 중심의 회문 수
+    best = max(best, 2 * radius)  # 짝수 최장 길이
+    if i + radius - 1 > right:  # 기존 경계를 넘는 회문
+        left, right = i - radius, i + radius - 1  # 짝수 경계 갱신
+print("MAX", best)  # 가장 긴 길이
+print("COUNT", total)  # 위치를 구별한 전체 회문 수
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 문자열101칸과 홀수·짝수 반지름 각100칸의 고정 배열입니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(n)
+- 보조 공간: O(n)
+
+오른쪽 경계 안은 거울 반지름을 재사용하고 추가 확장은 경계를 앞으로 이동시킵니다.
+
+[예제 입력](<예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/input.txt>) · [예상 출력](<예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/output.txt>) · [예제 실행 방법](<예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

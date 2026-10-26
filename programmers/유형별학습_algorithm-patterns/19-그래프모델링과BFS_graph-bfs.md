@@ -79,6 +79,187 @@ A에서 B로 비용 100, A-C-B로 각각 비용 1인 그래프에서 BFS는 B를
 
 [DFS](20-DFS와연결요소_graph-dfs.md) · [확장 상태 최단 경로](21-최단경로와확장상태_shortest-path.md)
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+작은 무방향 그래프에서 BFS로 출발점으로부터의 최소 간선 수를 구합니다. 인접 행렬을 사용하므로 예제의 시간은 O(V²+E)입니다.
+
+이 예제에서 직접 구현하는 기법은 BFS · 발견 시 방문 처리 · 인접 행렬입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+첫 줄은 V E S입니다. 1≤V≤8, 0≤E≤28, 0≤S<V이며 이후 E줄에 서로 다른 무방향 간선 u v가 주어집니다. 자기 간선은 없습니다.
+
+```text
+6 5 0
+0 1
+0 2
+1 3
+2 3
+3 4
+```
+
+정점 번호순 최소 거리를 한 줄에 출력합니다. 도달할 수 없으면 -1입니다.
+
+```text
+0 1 1 2 3 -1
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | queue=[0], distance=[0,-1,-1,-1,-1,-1] | 출발점만 거리 0으로 발견합니다. |
+| 2 | 0 처리: queue=[0,1,2], head=1 | 두 이웃을 거리 1로 넣습니다. |
+| 3 | 1 처리: distance[3]=2 | 큐에 넣을 때 표시하여 2에서 중복 삽입하지 않습니다. |
+| 4 | distance=[0,1,1,2,3,-1] | 4의 거리는 3이고 고립 정점 5는 미도달 상태입니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/19-그래프모델링과BFS_graph-bfs/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
+#include <stdlib.h>  // qsort와 정수 절댓값 함수
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    printf("%d", value);  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    fputs(text, stdout);  // 문자열을 표준 출력에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 작은 그래프의 BFS 거리 계산
+    int n = read_int(), m = read_int(), start = read_int();  // 정점 수·간선 수·출발점
+    int adj[8][8] = {0}, distance[8], queue[8];  // 연결 여부·거리·FIFO 저장 공간
+    for (int i = 0; i < m; ++i) {  // 무방향 간선 입력
+        int a = read_int(), b = read_int();  // 간선의 양끝
+        adj[a][b] = adj[b][a] = 1;  // 양방향 이동 표시
+    }  // 그래프 입력 끝
+    for (int i = 0; i < n; ++i) distance[i] = -1;  // 미발견 정점의 거리
+    int head = 0, tail = 0;  // 큐의 읽을 위치와 다음 저장 위치
+    queue[tail++] = start; distance[start] = 0;  // 넣는 순간 출발점 발견
+    while (head < tail) {  // 먼저 발견한 정점부터 처리
+        int u = queue[head++];  // FIFO 순서의 다음 정점
+        for (int v = 0; v < n; ++v) {  // 현재 행의 이웃 후보 순회
+            if (adj[u][v] && distance[v] == -1) {  // 연결된 미발견 이웃만 선택
+                distance[v] = distance[u] + 1;  // 한 간선 더 이동한 거리
+                queue[tail++] = v;  // 다음 층 후보를 큐 뒤에 추가
+            }  // 새 이웃의 발견 처리 끝
+        }  // 현재 정점 이웃 확인 끝
+    }  // 도달 가능한 정점 탐색 끝
+    for (int i = 0; i < n; ++i) {  // 정점 번호순 출력
+        if (i) write_text(" ");  // 숫자 사이의 공백
+        write_number(distance[i]);  // 미도달 -1도 그대로 출력
+    }  // 거리 배열 출력 끝
+    write_text("\n");  // 결과 줄 마침
+    return 0;  // 정상 종료
+}  // BFS 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/19-그래프모델링과BFS_graph-bfs/example.cpp>)
+
+```cpp
+#include <iostream>  // cin과 cout으로 표준 입력·출력 처리
+#include <cstdlib>  // qsort와 정수 절댓값 함수
+using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    cin >> value;  // 스트림에서 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    cout << value;  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    cout << text;  // 문자열을 스트림에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 작은 그래프의 BFS 거리 계산
+    int n = read_int(), m = read_int(), start = read_int();  // 정점 수·간선 수·출발점
+    int adj[8][8] = {}, distance[8], queue[8];  // 연결 여부·거리·FIFO 저장 공간
+    for (int i = 0; i < m; ++i) {  // 무방향 간선 입력
+        int a = read_int(), b = read_int();  // 간선의 양끝
+        adj[a][b] = adj[b][a] = 1;  // 양방향 이동 표시
+    }  // 그래프 입력 끝
+    for (int i = 0; i < n; ++i) distance[i] = -1;  // 미발견 정점의 거리
+    int head = 0, tail = 0;  // 큐의 읽을 위치와 다음 저장 위치
+    queue[tail++] = start; distance[start] = 0;  // 넣는 순간 출발점 발견
+    while (head < tail) {  // 먼저 발견한 정점부터 처리
+        int u = queue[head++];  // FIFO 순서의 다음 정점
+        for (int v = 0; v < n; ++v) {  // 현재 행의 이웃 후보 순회
+            if (adj[u][v] && distance[v] == -1) {  // 연결된 미발견 이웃만 선택
+                distance[v] = distance[u] + 1;  // 한 간선 더 이동한 거리
+                queue[tail++] = v;  // 다음 층 후보를 큐 뒤에 추가
+            }  // 새 이웃의 발견 처리 끝
+        }  // 현재 정점 이웃 확인 끝
+    }  // 도달 가능한 정점 탐색 끝
+    for (int i = 0; i < n; ++i) {  // 정점 번호순 출력
+        if (i) write_text(" ");  // 숫자 사이의 공백
+        write_number(distance[i]);  // 미도달 -1도 그대로 출력
+    }  // 거리 배열 출력 끝
+    write_text("\n");  // 결과 줄 마침
+    return 0;  // 정상 종료
+}  // BFS 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/19-그래프모델링과BFS_graph-bfs/example.py>)
+
+```python
+import sys  # 표준 입력 전체를 토큰으로 읽기
+
+def main():  # 입력 한 건을 계산하고 결과 출력
+    tokens = iter(sys.stdin.read().split())  # 공백과 줄바꿈을 같은 구분자로 처리
+    n, m, start = int(next(tokens)), int(next(tokens)), int(next(tokens))  # 그래프 크기와 출발점
+    adj = [[0] * n for _ in range(n)]  # 각 행이 독립인 인접 행렬
+    for _ in range(m):  # 무방향 간선 입력
+        a, b = int(next(tokens)), int(next(tokens))  # 간선 양끝
+        adj[a][b] = adj[b][a] = 1  # 양방향 이동 표시
+    distance = [-1] * n  # 아직 발견하지 않은 거리
+    queue = [start]  # head로 읽을 FIFO 목록
+    distance[start] = 0  # 출발점을 넣는 순간 발견 처리
+    head = 0  # 다음에 읽을 큐 위치
+    while head < len(queue):  # 발견 순서대로 처리
+        u = queue[head]  # 이번 정점
+        head += 1  # 읽는 위치 전진
+        for v in range(n):  # 현재 행의 모든 이웃 후보
+            if adj[u][v] and distance[v] == -1:  # 연결된 미발견 정점만 선택
+                distance[v] = distance[u] + 1  # 한 간선 더 이동한 최단 거리
+                queue.append(v)  # 다음 층 후보를 뒤에 추가
+    print(*distance)  # 번호순 거리 출력
+
+if __name__ == "__main__":  # 직접 실행할 때만 예제 시작
+    main()  # 표준 입력 한 건 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력과 출력 | scanf와 fputs를 감싼 함수를 사용합니다. | cin과 cout을 감싼 함수를 사용합니다. | 입력을 split으로 나누고 print로 출력합니다. |
+| 작업 배열 | 입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다. | 절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다. | 입력 크기에 맞춘 리스트를 생성합니다. |
+| 정수와 상태 | 예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다. | 같은 정수 범위와 상태 전이를 사용합니다. | int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(V²+E)
+- 보조 공간: O(V²)
+
+인접 행렬 초기화와 정점별 V개 이웃 후보 확인이 필요합니다. 큐와 거리는 O(V)입니다.
+
+[예제 입력](<예제_examples/19-그래프모델링과BFS_graph-bfs/input.txt>) · [예상 출력](<예제_examples/19-그래프모델링과BFS_graph-bfs/output.txt>) · [예제 실행 방법](<예제_examples/19-그래프모델링과BFS_graph-bfs/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

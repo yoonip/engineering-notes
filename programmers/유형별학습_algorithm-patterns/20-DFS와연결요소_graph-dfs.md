@@ -63,6 +63,196 @@ Hierholzer는 간선 삭제를 상수 시간에 할 수 있으면 O(V+E)이며, 
 
 복습: 방향 그래프에서 DFS 한 번으로 도달한 정점들은 항상 하나의 강한 연결 요소인지 확인합니다. 답은 아닙니다. 0→1에서는 0에서 1로 갈 수 있지만 되돌아갈 수 없습니다. [강한 연결 요소](24-강한연결요소단절점2SAT_scc-lowlink-2sat.md)로 구분합니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+무방향 그래프의 연결 요소를 명시적 스택으로 찾습니다. 재귀 DFS의 종료 순서나 lowlink를 구현하는 예제는 아닙니다.
+
+이 예제에서 직접 구현하는 기법은 반복 DFS · 무방향 연결 요소 · 발견 시 소속 표시입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+V E 뒤에 E개의 무방향 간선 u v가 주어집니다. 1≤V≤8, 0≤E≤28이며 정점은 0부터이고 자기 간선·평행 간선은 없습니다.
+
+```text
+6 3
+0 1
+1 2
+3 4
+```
+
+첫 줄에 연결 요소 수, 둘째 줄에 정점 번호순 요소 번호를 출력합니다. 요소 번호는 가장 작은 미방문 정점부터 0,1,...을 부여합니다.
+
+```text
+3
+0 0 0 1 1 2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | label=[-1,-1,-1,-1,-1,-1] | 아직 어느 요소에도 배정하지 않습니다. |
+| 2 | start=0, 발견={0,1,2}, count=1 | 0에서 도달하는 정점에 요소 번호 0을 붙입니다. |
+| 3 | start=3, 발견={3,4}, count=2 | 다음 미방문 정점에서 새 요소를 시작합니다. |
+| 4 | start=5, label=[0,0,0,1,1,2], count=3 | 고립 정점도 하나의 연결 요소로 셉니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/20-DFS와연결요소_graph-dfs/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
+#include <stdlib.h>  // qsort와 정수 절댓값 함수
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    printf("%d", value);  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    fputs(text, stdout);  // 문자열을 표준 출력에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // DFS로 연결 요소 번호 계산
+    int n = read_int(), m = read_int();  // 그래프의 정점 수와 간선 수
+    int adj[8][8] = {0}, label[8], stack[8];  // 인접 행렬·소속·탐색 스택
+    for (int i = 0; i < m; ++i) {  // 간선 입력
+        int a = read_int(), b = read_int();  // 간선 양끝
+        adj[a][b] = adj[b][a] = 1;  // 두 방향의 연결 저장
+    }  // 간선 입력 끝
+    for (int i = 0; i < n; ++i) label[i] = -1;  // 아직 소속이 없는 정점 표시
+    int count = 0;  // 지금까지 발견한 연결 요소 수
+    for (int start = 0; start < n; ++start) {  // 고립 정점까지 새 출발 후보 확인
+        if (label[start] != -1) continue;  // 이미 끝낸 요소는 다시 탐색하지 않기
+        int top = 0; stack[top++] = start; label[start] = count;  // 새 요소의 시작점 등록
+        while (top) {  // 현재 요소의 미처리 정점이 남으면 반복
+            int u = stack[--top];  // 마지막에 넣은 정점부터 확인
+            for (int v = 0; v < n; ++v) {  // 연결된 이웃 후보 확인
+                if (adj[u][v] && label[v] == -1) {  // 새로 발견한 이웃만 스택에 넣기
+                    label[v] = count; stack[top++] = v;  // 중복 삽입 전에 소속 확정
+                }  // 새 이웃 등록 끝
+            }  // 현재 정점의 이웃 확인 끝
+        }  // 한 연결 요소 탐색 끝
+        ++count;  // 다음 요소에 사용할 번호
+    }  // 모든 연결 요소 탐색 끝
+    write_number(count); write_text("\n");  // 요소 수 출력
+    for (int i = 0; i < n; ++i) {  // 번호순 소속 출력
+        if (i) write_text(" ");  // 소속 번호 사이 공백
+        write_number(label[i]);  // 현재 정점의 요소 번호
+    }  // 소속 배열 출력 끝
+    write_text("\n"); return 0;  // 결과 줄을 끝내고 종료
+}  // 연결 요소 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/20-DFS와연결요소_graph-dfs/example.cpp>)
+
+```cpp
+#include <iostream>  // cin과 cout으로 표준 입력·출력 처리
+#include <cstdlib>  // qsort와 정수 절댓값 함수
+using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    cin >> value;  // 스트림에서 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    cout << value;  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    cout << text;  // 문자열을 스트림에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // DFS로 연결 요소 번호 계산
+    int n = read_int(), m = read_int();  // 그래프의 정점 수와 간선 수
+    int adj[8][8] = {}, label[8], stack[8];  // 인접 행렬·소속·탐색 스택
+    for (int i = 0; i < m; ++i) {  // 간선 입력
+        int a = read_int(), b = read_int();  // 간선 양끝
+        adj[a][b] = adj[b][a] = 1;  // 두 방향의 연결 저장
+    }  // 간선 입력 끝
+    for (int i = 0; i < n; ++i) label[i] = -1;  // 아직 소속이 없는 정점 표시
+    int count = 0;  // 지금까지 발견한 연결 요소 수
+    for (int start = 0; start < n; ++start) {  // 고립 정점까지 새 출발 후보 확인
+        if (label[start] != -1) continue;  // 이미 끝낸 요소는 다시 탐색하지 않기
+        int top = 0; stack[top++] = start; label[start] = count;  // 새 요소의 시작점 등록
+        while (top) {  // 현재 요소의 미처리 정점이 남으면 반복
+            int u = stack[--top];  // 마지막에 넣은 정점부터 확인
+            for (int v = 0; v < n; ++v) {  // 연결된 이웃 후보 확인
+                if (adj[u][v] && label[v] == -1) {  // 새로 발견한 이웃만 스택에 넣기
+                    label[v] = count; stack[top++] = v;  // 중복 삽입 전에 소속 확정
+                }  // 새 이웃 등록 끝
+            }  // 현재 정점의 이웃 확인 끝
+        }  // 한 연결 요소 탐색 끝
+        ++count;  // 다음 요소에 사용할 번호
+    }  // 모든 연결 요소 탐색 끝
+    write_number(count); write_text("\n");  // 요소 수 출력
+    for (int i = 0; i < n; ++i) {  // 번호순 소속 출력
+        if (i) write_text(" ");  // 소속 번호 사이 공백
+        write_number(label[i]);  // 현재 정점의 요소 번호
+    }  // 소속 배열 출력 끝
+    write_text("\n"); return 0;  // 결과 줄을 끝내고 종료
+}  // 연결 요소 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/20-DFS와연결요소_graph-dfs/example.py>)
+
+```python
+import sys  # 표준 입력 전체를 토큰으로 읽기
+
+def main():  # 입력 한 건을 계산하고 결과 출력
+    tokens = iter(sys.stdin.read().split())  # 공백과 줄바꿈을 같은 구분자로 처리
+    n, m = int(next(tokens)), int(next(tokens))  # 정점 수와 간선 수
+    adj = [[0] * n for _ in range(n)]  # 독립적인 행들로 연결 표 생성
+    for _ in range(m):  # 무방향 간선 입력
+        a, b = int(next(tokens)), int(next(tokens))  # 간선의 양끝
+        adj[a][b] = adj[b][a] = 1  # 양방향 연결
+    label = [-1] * n  # 미방문 정점 표시
+    count = 0  # 새 연결 요소 번호
+    for start in range(n):  # 고립 정점도 출발 후보에 포함
+        if label[start] != -1:  # 이전 요소에 들어간 정점
+            continue  # 중복 탐색 생략
+        stack = [start]  # 이번 요소의 DFS 스택
+        label[start] = count  # 넣는 순간 현재 소속 기록
+        while stack:  # 이 요소의 후보가 남은 동안 반복
+            u = stack.pop()  # LIFO 순서로 정점 꺼내기
+            for v in range(n):  # 연결된 이웃 후보 확인
+                if adj[u][v] and label[v] == -1:  # 새 이웃만 등록
+                    label[v] = count  # 스택 중복 삽입 방지
+                    stack.append(v)  # 다음 DFS 후보 추가
+        count += 1  # 한 요소를 끝내고 번호 증가
+    print(count)  # 연결 요소 수
+    print(*label)  # 정점별 소속
+
+if __name__ == "__main__":  # 직접 실행할 때만 예제 시작
+    main()  # 표준 입력 한 건 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력과 출력 | scanf와 fputs를 감싼 함수를 사용합니다. | cin과 cout을 감싼 함수를 사용합니다. | 입력을 split으로 나누고 print로 출력합니다. |
+| 작업 배열 | 입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다. | 절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다. | 입력 크기에 맞춘 리스트를 생성합니다. |
+| 정수와 상태 | 예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다. | 같은 정수 범위와 상태 전이를 사용합니다. | int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(V²+E)
+- 보조 공간: O(V²)
+
+예제는 인접 행렬을 사용하므로 각 정점에서 V개 이웃 후보를 확인합니다. 스택에는 각 정점이 한 번 들어갑니다.
+
+[예제 입력](<예제_examples/20-DFS와연결요소_graph-dfs/input.txt>) · [예상 출력](<예제_examples/20-DFS와연결요소_graph-dfs/output.txt>) · [예제 실행 방법](<예제_examples/20-DFS와연결요소_graph-dfs/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

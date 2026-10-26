@@ -128,6 +128,156 @@ Python에서 슬라이스는 새 리스트를 만들므로 범위 인덱스 방�
 병합 정렬의 재귀·결합 원리와 점화식은 MIT 강의 3을 참고했습니다.
 네 값 추적, 코드, 비용 해석과 경계 반례는 직접 구성했습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+배열을 절반씩 정렬하고 두 정렬 구간의 맨 앞을 비교해 하나의 정렬 구간으로 합칩니다.
+
+이 예제에서 직접 구현하는 기법은 분할 정복 · 재귀 종료 조건 · 두 정렬 구간 병합 · 안정 정렬입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N(0~20), N개 정수(−1000~1000)입니다.
+
+```text
+4
+6 1 4 2
+```
+
+오름차순으로 정렬한 원소를 한 줄에 출력합니다. N=0이면 빈 줄 하나입니다.
+
+```text
+1 2 4 6
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 전체[0,4)를 [0,2)=[6,1], [2,4)=[4,2]로 분할 | 같은 형태의 더 작은 정렬 문제 두 개로 나눕니다. |
+| 2 | 길이1 구간에서 반환한 뒤 왼쪽=[1,6], 오른쪽=[2,4] | 재귀적으로 해결한 두 절반은 각각 정렬되어 있습니다. |
+| 3 | 병합 선택 순서1→2→4, 오른쪽 소진 후 남은6 복사 | 각 절반의 맨 앞 중 작은 값을 고르면 남은 전체의 최솟값입니다. |
+| 4 | buffer=[1,2,4,6]을 values[0:4]에 복사 | 부모 구간도 정렬되어 재귀 호출의 약속을 만족합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/14-분할정복과재귀_divide-conquer-recursion/example.c>)
+
+```c
+#include <stdio.h> // 정수 배열 입력과 정렬 결과 출력
+int values[20], buffer[20]; // 원래 배열과 병합용 공유 버퍼
+void sort_range(int left, int right) { // 반열린 구간을 정렬하는 재귀 함수
+    if (right - left <= 1) return; // 원소가0개나1개면 이미 정렬된 상태
+    int middle = left + (right - left) / 2; // 두 부분 문제의 경계
+    sort_range(left, middle); // 왼쪽 절반 정렬
+    sort_range(middle, right); // 오른쪽 절반 정렬
+    int i = left, j = middle, out = left; // 양쪽 읽기 위치와 버퍼 쓰기 위치
+    while (i < middle && j < right) { // 두 절반 모두 남아 있을 때 비교
+        if (values[i] <= values[j]) buffer[out++] = values[i++]; // 같으면 왼쪽을 먼저 골라 안정 순서 유지
+        else buffer[out++] = values[j++]; // 오른쪽 값이 작으면 먼저 배치
+    } // 두 절반의 값 비교 끝
+    while (i < middle) buffer[out++] = values[i++]; // 남은 왼쪽 원소를 순서대로 복사
+    while (j < right) buffer[out++] = values[j++]; // 남은 오른쪽 원소를 순서대로 복사
+    for (int pos = left; pos < right; ++pos) values[pos] = buffer[pos]; // 완성된 병합 결과를 원래 구간에 반영
+} // 구간 병합 정렬 끝
+int main(void) { // 실행 시작점
+    int n; scanf("%d", &n); // 원소 수 읽기
+    for (int i = 0; i < n; ++i) scanf("%d", &values[i]); // 정렬할 값 입력
+    sort_range(0, n); // 전체 반열린 구간 정렬
+    for (int i = 0; i < n; ++i) printf("%s%d", i ? " " : "", values[i]); // 정렬 결과를 한 줄에 출력
+    printf("\n"); // 빈 배열도 빈 줄 하나 출력
+    return 0; // 정상 종료
+} // 병합 정렬 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/14-분할정복과재귀_divide-conquer-recursion/example.cpp>)
+
+```cpp
+#include <iostream> // 정수 입력과 정렬 결과 출력
+#include <vector> // 원래 배열과 공유 병합 버퍼
+using namespace std; // 표준 이름의 접두사 생략
+vector<int> values, buffer; // 모든 재귀 호출이 공유할 배열
+void sort_range(int left, int right) { // 반열린 구간 병합 정렬
+    if (right - left <= 1) return; // 빈 구간이나 원소 하나는 그대로 종료
+    int middle = left + (right - left) / 2; // 좌우 절반의 경계
+    sort_range(left, middle); // 왼쪽 부분 문제 해결
+    sort_range(middle, right); // 오른쪽 부분 문제 해결
+    int i = left, j = middle, out = left; // 양쪽 읽기 위치와 결과 쓰기 위치
+    while (i < middle && j < right) { // 두 절반에 모두 값이 남은 동안 반복
+        if (values[i] <= values[j]) buffer[out++] = values[i++]; // 동률이면 왼쪽을 먼저 배치
+        else buffer[out++] = values[j++]; // 더 작은 오른쪽 원소 배치
+    } // 두 절반의 비교 끝
+    while (i < middle) buffer[out++] = values[i++]; // 남은 왼쪽 원소 복사
+    while (j < right) buffer[out++] = values[j++]; // 남은 오른쪽 원소 복사
+    for (int pos = left; pos < right; ++pos) values[pos] = buffer[pos]; // 병합된 구간을 원래 배열에 복사
+} // 정렬 재귀 함수 끝
+int main() { // 실행 시작점
+    int n; cin >> n; // 배열 길이 입력
+    values.resize(n); buffer.resize(n); // 두 배열을 같은 크기로 확보
+    for (int& value : values) cin >> value; // 원소 입력
+    sort_range(0, n); // 전체 구간 정렬
+    for (int i = 0; i < n; ++i) cout << (i ? " " : "") << values[i]; // 정렬 결과 출력
+    cout << '\n'; // 빈 배열도 빈 줄 하나 출력
+    return 0; // 정상 종료
+} // 병합 정렬 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/14-분할정복과재귀_divide-conquer-recursion/example.py>)
+
+```python
+import sys # 정수 토큰 입력
+data = list(map(int, sys.stdin.buffer.read().split())) # 입력을 정수로 변환
+n, values = data[0], data[1:] # 원소 수와 배열 분리
+buffer = [0] * n # 재귀 호출이 공유할 병합 버퍼
+def sort_range(left, right): # 반열린 구간을 정렬하는 재귀 함수
+    if right - left <= 1: # 빈 구간이나 원소 하나인 경우
+        return # 더 나눌 필요 없이 종료
+    middle = left + (right - left) // 2 # 두 절반의 경계 계산
+    sort_range(left, middle) # 왼쪽 절반 정렬
+    sort_range(middle, right) # 오른쪽 절반 정렬
+    i, j, out = left, middle, left # 양쪽 읽기 위치와 버퍼 쓰기 위치
+    while i < middle and j < right: # 양쪽 모두 남아 있는 동안 비교
+        if values[i] <= values[j]: # 같으면 왼쪽을 먼저 선택
+            buffer[out] = values[i] # 왼쪽 값을 결과에 배치
+            i += 1 # 왼쪽 읽기 위치 전진
+        else: # 오른쪽 값이 더 작은 경우
+            buffer[out] = values[j] # 오른쪽 값을 결과에 배치
+            j += 1 # 오른쪽 읽기 위치 전진
+        out += 1 # 병합 결과의 다음 위치로 이동
+    while i < middle: # 왼쪽에 남은 원소 복사
+        buffer[out] = values[i] # 다음 왼쪽 원소 배치
+        i, out = i + 1, out + 1 # 읽기와 쓰기 위치 전진
+    while j < right: # 오른쪽에 남은 원소 복사
+        buffer[out] = values[j] # 다음 오른쪽 원소 배치
+        j, out = j + 1, out + 1 # 읽기와 쓰기 위치 전진
+    for position in range(left, right): # 완성된 구간을 원래 배열에 반영
+        values[position] = buffer[position] # 현재 위치의 정렬 결과 복사
+sort_range(0, n) # 전체 반열린 구간 정렬
+print(*values) # 정렬 결과 또는 빈 줄 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다. |
+| 저장과 연산 | 최대20칸의 원래 배열과 버퍼를 전역으로 공유합니다. | 입력 N에 맞춘 두 vector를 재귀 함수가 공유합니다. | 리스트 두 개를 공유하며 슬라이스 복사 없이 인덱스로 병합합니다. |
+| 자료형과 범위 | 원소와 인덱스 모두 int 범위 안입니다. 비교만 수행하므로 합의 넘침은 없습니다. | 원소와 인덱스 모두 int 범위 안입니다. 비교만 수행하므로 합의 넘침은 없습니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: N≥2일 때 O(N log N)이며 N≤1은 O(1)입니다.
+- 보조 공간: 공유 버퍼 O(N)과 재귀 스택 O(log N)입니다.
+
+각 재귀 깊이에서 병합하는 총 길이는 N이며 절반 분할의 깊이는 로그 규모입니다.
+
+[예제 입력](<예제_examples/14-분할정복과재귀_divide-conquer-recursion/input.txt>) · [예상 출력](<예제_examples/14-분할정복과재귀_divide-conquer-recursion/output.txt>) · [예제 실행 방법](<예제_examples/14-분할정복과재귀_divide-conquer-recursion/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

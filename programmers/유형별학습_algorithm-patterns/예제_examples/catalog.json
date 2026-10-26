@@ -1,0 +1,1392 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-10-26",
+  "path_base": "repository/",
+  "scope": "Standalone teaching examples, not archived site submissions",
+  "chapters": 44,
+  "languages": [
+    "C17",
+    "C++17",
+    "Python 3"
+  ],
+  "programs": 132,
+  "examples": [
+    {
+      "chapter": 1,
+      "topic": "modeling",
+      "title": "문제 모델링과 복잡도",
+      "example_title": "직접 합산과 누적합의 같은 질의 비교",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/01-문제모델링과복잡도_modeling-complexity.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/01-문제모델링과복잡도_modeling-complexity",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/01-문제모델링과복잡도_modeling-complexity/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/01-문제모델링과복잡도_modeling-complexity/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/01-문제모델링과복잡도_modeling-complexity/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "문제 모델링",
+        "비용 비교",
+        "직접 순회",
+        "누적합"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/01-문제모델링과복잡도_modeling-complexity/example.c",
+          "sha256": "604872f5771f2acd5870148d441c60dabcdc1c8028402658f52957ed3b7945ed"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/01-문제모델링과복잡도_modeling-complexity/example.cpp",
+          "sha256": "117e8e7d506b1dd00ddf510580c85201aa9123741f1992a522b77e5979231b64"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/01-문제모델링과복잡도_modeling-complexity/example.py",
+          "sha256": "fc398f1fd20773ff7e6cd529f16886df50e7cdc6651aae4a90f7dfbea29f28d8"
+        }
+      }
+    },
+    {
+      "chapter": 2,
+      "topic": "simulation",
+      "title": "구현과 시뮬레이션",
+      "example_title": "벽과 경계를 지키는 로봇 명령",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/02-구현과시뮬레이션_implementation-simulation.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/02-구현과시뮬레이션_implementation-simulation",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/02-구현과시뮬레이션_implementation-simulation/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/02-구현과시뮬레이션_implementation-simulation/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/02-구현과시뮬레이션_implementation-simulation/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "상태 전이",
+        "격자 경계 검사",
+        "명령 시뮬레이션"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/02-구현과시뮬레이션_implementation-simulation/example.c",
+          "sha256": "e80c9cf75a3018d4427287ff0305fe0d00ae69c03675023ac98f2050df438133"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/02-구현과시뮬레이션_implementation-simulation/example.cpp",
+          "sha256": "b3bf1c92a7b58634df4727fe447f10514a0eb767d997e0b737ecab56949dbb13"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/02-구현과시뮬레이션_implementation-simulation/example.py",
+          "sha256": "06742740c48b0a0e0b20dcd081242921e761f56aa8820dcc1e039a3c21df9e22"
+        }
+      }
+    },
+    {
+      "chapter": 3,
+      "topic": "arrays",
+      "title": "배열과 연결 리스트",
+      "example_title": "노드 번호로 중간 삽입하기",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/03-배열과연결리스트_arrays-linked-lists.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/03-배열과연결리스트_arrays-linked-lists",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/03-배열과연결리스트_arrays-linked-lists/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/03-배열과연결리스트_arrays-linked-lists/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/03-배열과연결리스트_arrays-linked-lists/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "배열",
+        "인덱스 기반 연결 리스트",
+        "중간 삽입"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/03-배열과연결리스트_arrays-linked-lists/example.c",
+          "sha256": "5b20b107c1d411d0a7e756df3c7023af520274c9310d1283f38986caefaa6e6b"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/03-배열과연결리스트_arrays-linked-lists/example.cpp",
+          "sha256": "1e3a5b626094b2cc6835ede337d13cec5f465944fd2965312129e9b023b2c2cf"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/03-배열과연결리스트_arrays-linked-lists/example.py",
+          "sha256": "60556a3f95d6cd454559c3d3ad06ba859edd71b6d57587818cc392a49d7724c6"
+        }
+      }
+    },
+    {
+      "chapter": 4,
+      "topic": "strings",
+      "title": "문자열과 파싱",
+      "example_title": "콤마와 부호를 읽는 정수 파서",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/04-문자열과파싱_strings-parsing.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/04-문자열과파싱_strings-parsing",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/04-문자열과파싱_strings-parsing/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/04-문자열과파싱_strings-parsing/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/04-문자열과파싱_strings-parsing/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "문자열 스캔",
+        "토큰 파싱",
+        "부호와 자리값"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/04-문자열과파싱_strings-parsing/example.c",
+          "sha256": "11ff9c7fc6c2e9ed8c17fa626a8aff8a099cfb399dda806cec20c97095c0f34e"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/04-문자열과파싱_strings-parsing/example.cpp",
+          "sha256": "f2ead9848cc77509c9d4e7232d9adcc5e2a3883549acfcc78176585bdbd2ce96"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/04-문자열과파싱_strings-parsing/example.py",
+          "sha256": "3f1f20efe9f564bd3f20a67bd0d2d733da2d857557ed7f0fc0d3333c113c8f27"
+        }
+      }
+    },
+    {
+      "chapter": 5,
+      "topic": "sorting",
+      "title": "정렬과 비교 함수",
+      "example_title": "점수·벌점·식별자의 다중 기준 정렬",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/05-정렬과비교함수_sorting-comparators.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/05-정렬과비교함수_sorting-comparators",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/05-정렬과비교함수_sorting-comparators/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/05-정렬과비교함수_sorting-comparators/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/05-정렬과비교함수_sorting-comparators/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "다중 기준 정렬",
+        "비교 함수",
+        "사전식 키"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/05-정렬과비교함수_sorting-comparators/example.c",
+          "sha256": "a1f15b09770a61ffa903c57abbe89df5dbaa903dafd590adbb92c11cbe65c9ba"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/05-정렬과비교함수_sorting-comparators/example.cpp",
+          "sha256": "e762086cb8274a690c8d5a69f40088a5a0ab90ddc05773cadf2145649c792a24"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/05-정렬과비교함수_sorting-comparators/example.py",
+          "sha256": "584cb2af8e278353e5a608bcae25e8b455dcc449792545b62cfce5c2cc0963fc"
+        }
+      }
+    },
+    {
+      "chapter": 6,
+      "topic": "hashing",
+      "title": "해시와 빈도 집계",
+      "example_title": "해시 테이블의 빈도 집계와 없는 키 조회",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/06-해시와빈도집계_hashing-counting.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/06-해시와빈도집계_hashing-counting",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/06-해시와빈도집계_hashing-counting/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/06-해시와빈도집계_hashing-counting/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/06-해시와빈도집계_hashing-counting/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "해시",
+        "충돌 처리",
+        "빈도 집계"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/06-해시와빈도집계_hashing-counting/example.c",
+          "sha256": "112e2ed0dd6057c11219eaaf026100973c6fefb8623837dae6238501a60a4c74"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/06-해시와빈도집계_hashing-counting/example.cpp",
+          "sha256": "c32cec7b48173d830726ac04205c9a54b21905230155b035856546a755c15ea8"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/06-해시와빈도집계_hashing-counting/example.py",
+          "sha256": "ee28092e398eaa8c7b97413121956de05cd39b1b49cfbe6dd2feee2739a65058"
+        }
+      }
+    },
+    {
+      "chapter": 7,
+      "topic": "stack-queue",
+      "title": "스택·큐·덱",
+      "example_title": "다음 큰 값의 위치를 찾는 단조 스택",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/07-스택큐덱_stack-queue-deque.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/07-스택큐덱_stack-queue-deque",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/07-스택큐덱_stack-queue-deque/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/07-스택큐덱_stack-queue-deque/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/07-스택큐덱_stack-queue-deque/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "단조 스택",
+        "미해결 후보",
+        "상환 분석"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/07-스택큐덱_stack-queue-deque/example.c",
+          "sha256": "fb2ae4212e6bc6b714c87fdca0588d32bde22e39561ff22301daabf2ba74df60"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/07-스택큐덱_stack-queue-deque/example.cpp",
+          "sha256": "98d226ae1baec0611f4417dae4a75fc1b832907711813f075b7113fddb7e89c2"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/07-스택큐덱_stack-queue-deque/example.py",
+          "sha256": "16e9e35dada3bbc06b06b1773842ca7377e6d6d43abae2fa2d0ce55a7986e63c"
+        }
+      }
+    },
+    {
+      "chapter": 8,
+      "topic": "heap",
+      "title": "힙과 우선순위 큐",
+      "example_title": "최소 힙으로 가장 큰 K개 유지",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/08-힙과우선순위큐_heap-priority-queue.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/08-힙과우선순위큐_heap-priority-queue",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/08-힙과우선순위큐_heap-priority-queue/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/08-힙과우선순위큐_heap-priority-queue/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/08-힙과우선순위큐_heap-priority-queue/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "최소 힙",
+        "상위 K개 유지",
+        "이진 힙 삽입과 삭제"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/08-힙과우선순위큐_heap-priority-queue/example.c",
+          "sha256": "303c6daac6d12ea39155700fbfe2a42252f2f4466cb49bcf067df70db76b4f7c"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/08-힙과우선순위큐_heap-priority-queue/example.cpp",
+          "sha256": "f1b4d693dfabb048f58ded30fc5cd9020faca952cf23f0291ef18568497e52b4"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/08-힙과우선순위큐_heap-priority-queue/example.py",
+          "sha256": "d6d4747d07d11e6a351d4b3222161d5203448566915bedbc192cb9f7f8e5c54f"
+        }
+      }
+    },
+    {
+      "chapter": 9,
+      "topic": "prefix-sum",
+      "title": "누적합과 차분",
+      "example_title": "차분 갱신 뒤 최종 구간 합 계산",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/09-누적합과차분_prefix-difference.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/09-누적합과차분_prefix-difference",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/09-누적합과차분_prefix-difference/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/09-누적합과차분_prefix-difference/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/09-누적합과차분_prefix-difference/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "반열린 구간",
+        "차분 배열",
+        "누적합"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/09-누적합과차분_prefix-difference/example.c",
+          "sha256": "e89aa2ef1749b9962404cd890194e514caeeeea84fec88b80d485c9704a597c6"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/09-누적합과차분_prefix-difference/example.cpp",
+          "sha256": "26d0bd889bb78e382ba0ccb61292d4ac40af8ca4b84ce3d626f0165a3589ce3d"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/09-누적합과차분_prefix-difference/example.py",
+          "sha256": "f76fde16f039d86ce534efe8e433afa6e1a2fa86c7cf28c6cdbd9eb79948db68"
+        }
+      }
+    },
+    {
+      "chapter": 10,
+      "topic": "two-pointers",
+      "title": "투포인터와 슬라이딩 윈도",
+      "example_title": "목표 합 이상인 가장 짧은 양수 구간",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/10-투포인터와슬라이딩윈도_two-pointers-window.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "두 포인터",
+        "가변 길이 슬라이딩 윈도",
+        "양수 합의 단조성"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/example.c",
+          "sha256": "0cdc087c4d177436b857ab6b55347a8a73dd3e43b93fc6713561075cfb839456"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/example.cpp",
+          "sha256": "03b5fa65e6396cd9d2757bab55af9440ad9dda0e3a8161c28ed60fc91e3e2396"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/example.py",
+          "sha256": "496d591d3c01624b1e105567cda9347a79f560feff35889412cb4432374ef65f"
+        }
+      }
+    },
+    {
+      "chapter": 11,
+      "topic": "binary-search",
+      "title": "이진 탐색과 매개변수 탐색",
+      "example_title": "연속 작업을 K그룹에 나누는 최소 용량",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/11-이진탐색과매개변수탐색_binary-parametric-search.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "매개변수 탐색",
+        "단조 판정 함수",
+        "연속 그룹 탐욕 배치"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/example.c",
+          "sha256": "7f97f0912ddd5f9eb0dfec280550c09e614f2846bd66df6189e12e8da79762f3"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/example.cpp",
+          "sha256": "5133b6800ee33346423d989cd88516864b9665a2ef21670632542c990fccc9c5"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/example.py",
+          "sha256": "0e3d4db6447701b177d36e4f3c720af83130b975da990e4c30e904d7c9090d6c"
+        }
+      }
+    },
+    {
+      "chapter": 12,
+      "topic": "bruteforce",
+      "title": "완전 탐색과 중간에서 만나기",
+      "example_title": "중간에서 만나기로 목표 합 부분집합 세기",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "부분집합 열거",
+        "중간에서 만나기",
+        "보완 합",
+        "중복값의 이진 경계"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/example.c",
+          "sha256": "782f44409d8fd691b8bf991a45662281c941cad743add2c6ad561fd56072df4b"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/example.cpp",
+          "sha256": "b9ed9d464b6a8dbb4ae4162c0f6a9b52411429f599f284c4b7498f166223be3e"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/example.py",
+          "sha256": "28de456f588966ac7a5901c38379c9f4bdade67406956029dec6e3f5707430b9"
+        }
+      }
+    },
+    {
+      "chapter": 13,
+      "topic": "backtracking",
+      "title": "백트래킹과 가지치기",
+      "example_title": "N퀸의 선택·가지치기·상태 복구",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/13-백트래킹과가지치기_backtracking-pruning.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/13-백트래킹과가지치기_backtracking-pruning",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/13-백트래킹과가지치기_backtracking-pruning/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/13-백트래킹과가지치기_backtracking-pruning/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/13-백트래킹과가지치기_backtracking-pruning/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "백트래킹",
+        "안전한 가지치기",
+        "선택 표시와 복구",
+        "대각선 식별"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/13-백트래킹과가지치기_backtracking-pruning/example.c",
+          "sha256": "017abb5078b0471e098f0c09a48f9afe60c37a9a3b32a2740c75ccdbbba53ae2"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/13-백트래킹과가지치기_backtracking-pruning/example.cpp",
+          "sha256": "f842f0816a006ade2c460e76769e49624ce961f0ee2e045ad7ae53417aaab6bf"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/13-백트래킹과가지치기_backtracking-pruning/example.py",
+          "sha256": "ebe7493583286deb441ef6a16824936604b19cc1675cd04c374abad8664259fd"
+        }
+      }
+    },
+    {
+      "chapter": 14,
+      "topic": "divide-conquer",
+      "title": "분할 정복과 재귀",
+      "example_title": "공유 버퍼로 구현하는 안정 병합 정렬",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/14-분할정복과재귀_divide-conquer-recursion.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/14-분할정복과재귀_divide-conquer-recursion",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/14-분할정복과재귀_divide-conquer-recursion/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/14-분할정복과재귀_divide-conquer-recursion/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/14-분할정복과재귀_divide-conquer-recursion/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "분할 정복",
+        "재귀 종료 조건",
+        "두 정렬 구간 병합",
+        "안정 정렬"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/14-분할정복과재귀_divide-conquer-recursion/example.c",
+          "sha256": "232f2f5acb9f266b22c46a855b989664e15fca0955061b7a711200ea66cff2fc"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/14-분할정복과재귀_divide-conquer-recursion/example.cpp",
+          "sha256": "c5997182b446a1a14cedaff57818f0cff3c9482472e414a503f52967ed4c1584"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/14-분할정복과재귀_divide-conquer-recursion/example.py",
+          "sha256": "890de3b80b499ad8fa0b9d63bdd16fb40c08f713026a97038b21fd4eee24b47a"
+        }
+      }
+    },
+    {
+      "chapter": 15,
+      "topic": "greedy",
+      "title": "그리디와 교환 논증",
+      "example_title": "종료 시각순 회의 선택",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/15-그리디와교환논증_greedy-exchange.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/15-그리디와교환논증_greedy-exchange",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/15-그리디와교환논증_greedy-exchange/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/15-그리디와교환논증_greedy-exchange/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/15-그리디와교환논증_greedy-exchange/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "종료 시각 기준 그리디",
+        "정렬과 경계 비교"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/15-그리디와교환논증_greedy-exchange/example.c",
+          "sha256": "bb0d9027678bd65c7a33195c7ea6e0a34bc5606ea284785fabbe605c73396c5a"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/15-그리디와교환논증_greedy-exchange/example.cpp",
+          "sha256": "1aef658757b14faff341e85685b64a70796e387dce1280c66e1e143f0951b1a8"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/15-그리디와교환논증_greedy-exchange/example.py",
+          "sha256": "1a30d12fc40562112d7ce5c91400e7d7d3f87fdd250e4bfaa4736a9c425e1d45"
+        }
+      }
+    },
+    {
+      "chapter": 16,
+      "topic": "dp",
+      "title": "DP의 상태와 전이",
+      "example_title": "동전의 최소 개수 DP",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/16-동적계획법의상태와전이_dynamic-programming.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/16-동적계획법의상태와전이_dynamic-programming",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/16-동적계획법의상태와전이_dynamic-programming/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/16-동적계획법의상태와전이_dynamic-programming/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/16-동적계획법의상태와전이_dynamic-programming/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "정확한 금액 상태",
+        "무제한 동전 DP",
+        "불가능 상태 표시"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/16-동적계획법의상태와전이_dynamic-programming/example.c",
+          "sha256": "3bd1944206f08b14aa7700a3916b4384b4616b479f0509fa2d688b074f65d947"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/16-동적계획법의상태와전이_dynamic-programming/example.cpp",
+          "sha256": "752082f0e3da6d3bbd09c3e2cb8551a6a4f693d3dad868c7b40d52e3cc822801"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/16-동적계획법의상태와전이_dynamic-programming/example.py",
+          "sha256": "bfab19888a94a34fb6a39071e1da832c3b1ea79ba9e1e43ea75ab6a092a90f2e"
+        }
+      }
+    },
+    {
+      "chapter": 17,
+      "topic": "dp-variants",
+      "title": "배낭·수열·구간·확률 DP",
+      "example_title": "0-1 배낭과 증가 부분 수열",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/17-배낭수열구간확률DP_dp-variants.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/17-배낭수열구간확률DP_dp-variants",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/17-배낭수열구간확률DP_dp-variants/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/17-배낭수열구간확률DP_dp-variants/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/17-배낭수열구간확률DP_dp-variants/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "0-1 배낭 내림차순 갱신",
+        "끝 위치별 O(m²) LIS"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/17-배낭수열구간확률DP_dp-variants/example.c",
+          "sha256": "b582d6b7d52b89a83b42555fdbe7c1d9e6d691e448e9dfcef970847a03870aa2"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/17-배낭수열구간확률DP_dp-variants/example.cpp",
+          "sha256": "7973dd1ecbd36761e4111b7982f7409c072a33fa27761e5bddd0658cd282354d"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/17-배낭수열구간확률DP_dp-variants/example.py",
+          "sha256": "f3eccc6d38f769f3775952953dd3674cf2ab4dde056adb7dbc54dd48642d2e1f"
+        }
+      }
+    },
+    {
+      "chapter": 18,
+      "topic": "bitmask",
+      "title": "비트마스크와 비트 집합",
+      "example_title": "비트집합으로 부분합 가능 여부",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/18-비트마스크와비트집합_bitmask-bitset.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/18-비트마스크와비트집합_bitmask-bitset",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/18-비트마스크와비트집합_bitmask-bitset/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/18-비트마스크와비트집합_bitmask-bitset/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/18-비트마스크와비트집합_bitmask-bitset/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "0-1 부분합 비트집합",
+        "왼쪽 시프트와 OR",
+        "범위 마스크"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/18-비트마스크와비트집합_bitmask-bitset/example.c",
+          "sha256": "769426a39c9bf4de7d9f23697895e9e0f432cb7654ef4d452a679c227a5899cc"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/18-비트마스크와비트집합_bitmask-bitset/example.cpp",
+          "sha256": "311ce5ab9bdc913ce7925463b619a248f632b8c743738fb045180619de2ca50b"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/18-비트마스크와비트집합_bitmask-bitset/example.py",
+          "sha256": "35245eb7d43d668713e344fb365e59af219eb10048211a0825c263e98fafb0d5"
+        }
+      }
+    },
+    {
+      "chapter": 19,
+      "topic": "bfs",
+      "title": "그래프 모델링과 BFS",
+      "example_title": "BFS로 구하는 최소 이동 횟수",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/19-그래프모델링과BFS_graph-bfs.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/19-그래프모델링과BFS_graph-bfs",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/19-그래프모델링과BFS_graph-bfs/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/19-그래프모델링과BFS_graph-bfs/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/19-그래프모델링과BFS_graph-bfs/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "BFS",
+        "발견 시 방문 처리",
+        "인접 행렬"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/19-그래프모델링과BFS_graph-bfs/example.c",
+          "sha256": "21fd932a143927bb01f2f1585ee506edbf0b5e0d739dccdd82045486282aea99"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/19-그래프모델링과BFS_graph-bfs/example.cpp",
+          "sha256": "f8dfb983c2686e8590244c22c444da8257db3a12700d76bbc4d3d87cd39b9960"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/19-그래프모델링과BFS_graph-bfs/example.py",
+          "sha256": "bb6b51c4ffd5a228d816dacd52a0e3a3b28d6f819099fa44341a122616399eef"
+        }
+      }
+    },
+    {
+      "chapter": 20,
+      "topic": "dfs",
+      "title": "DFS와 연결 요소",
+      "example_title": "반복 DFS로 연결 요소 나누기",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/20-DFS와연결요소_graph-dfs.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/20-DFS와연결요소_graph-dfs",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/20-DFS와연결요소_graph-dfs/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/20-DFS와연결요소_graph-dfs/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/20-DFS와연결요소_graph-dfs/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "반복 DFS",
+        "무방향 연결 요소",
+        "발견 시 소속 표시"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/20-DFS와연결요소_graph-dfs/example.c",
+          "sha256": "a6fda04be1e0881e50e59a8c719a78efdb2b692090f5fa5e975a7c683384ecc9"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/20-DFS와연결요소_graph-dfs/example.cpp",
+          "sha256": "b3db5b6a637197a26f4e585fa1b4e608153c5549517c61038073b7dbd0b1d39e"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/20-DFS와연결요소_graph-dfs/example.py",
+          "sha256": "ddda63f0555ba9e9270eac2ab40e6e753cd6dcac52840646f8f8e7f4d2241566"
+        }
+      }
+    },
+    {
+      "chapter": 21,
+      "topic": "shortest-path",
+      "title": "최단 경로와 확장 상태",
+      "example_title": "최소 정점 스캔 Dijkstra",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/21-최단경로와확장상태_shortest-path.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/21-최단경로와확장상태_shortest-path",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/21-최단경로와확장상태_shortest-path/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/21-최단경로와확장상태_shortest-path/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/21-최단경로와확장상태_shortest-path/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "비음수 Dijkstra",
+        "거리 완화",
+        "최소 정점 스캔",
+        "평행 간선 최솟값"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/21-최단경로와확장상태_shortest-path/example.c",
+          "sha256": "39439b277ad09134a2d2fd021f224e9e7ac1320e04418660985e7dfe0f5e7a3e"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/21-최단경로와확장상태_shortest-path/example.cpp",
+          "sha256": "f9aadb65af055656d23bd9c87a66d07603e8691deb73cbc9702b3c2f448259d3"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/21-최단경로와확장상태_shortest-path/example.py",
+          "sha256": "cce4c842457d7b73ba3abaeeab1eec822352ed6fce356132018e56444d54a15f"
+        }
+      }
+    },
+    {
+      "chapter": 22,
+      "topic": "mst-dsu",
+      "title": "최소 신장 트리와 DSU",
+      "example_title": "Kruskal과 DSU로 최소 연결 비용 구하기",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/22-최소신장트리와서로소집합_mst-dsu.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/22-최소신장트리와서로소집합_mst-dsu",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/22-최소신장트리와서로소집합_mst-dsu/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/22-최소신장트리와서로소집합_mst-dsu/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/22-최소신장트리와서로소집합_mst-dsu/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "Kruskal",
+        "경로 압축 DSU",
+        "크기 기준 병합",
+        "연결 불가 판정"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/22-최소신장트리와서로소집합_mst-dsu/example.c",
+          "sha256": "2b1244ff353f6af6c2b9b54d989856f3f641ffcf6c34876cba10204b8b53a65a"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/22-최소신장트리와서로소집합_mst-dsu/example.cpp",
+          "sha256": "162fbbb21bbcb9f2d521d0d3bf7cca466830edd6b02bc730dd72682261a61a86"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/22-최소신장트리와서로소집합_mst-dsu/example.py",
+          "sha256": "35da6323fb7e61ddc19ab3aa39d77eb6c9f9a10bce33dae555e5185187df4038"
+        }
+      }
+    },
+    {
+      "chapter": 23,
+      "topic": "topological",
+      "title": "위상 정렬과 DAG",
+      "example_title": "위상 순서로 작업 완료 시각 구하기",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/23-위상정렬과DAG_topological-dag.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/23-위상정렬과DAG_topological-dag",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/23-위상정렬과DAG_topological-dag/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/23-위상정렬과DAG_topological-dag/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/23-위상정렬과DAG_topological-dag/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "Kahn 위상 정렬",
+        "DAG 완료 시각 DP",
+        "사이클 존재 판정"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/23-위상정렬과DAG_topological-dag/example.c",
+          "sha256": "504303c6b71e3f055d056ef9c96fcd2253d20c3c2d1dff4766e3102206125d58"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/23-위상정렬과DAG_topological-dag/example.cpp",
+          "sha256": "8c9d646cd3f0dd64fef8f82c1e29fbe40d56cfbb994d3a21715356b938d1e7ba"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/23-위상정렬과DAG_topological-dag/example.py",
+          "sha256": "1ed2e05a4f8aa9b1cfb355ce1ae45cab7502fc61e1e27ab3c79a35af42b993e0"
+        }
+      }
+    },
+    {
+      "chapter": 24,
+      "topic": "scc",
+      "title": "SCC·단절점·단절선·2-SAT",
+      "example_title": "SCC로 판정하는 2-SAT",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/24-강한연결요소단절점2SAT_scc-lowlink-2sat.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "2-SAT 함의 그래프",
+        "Kosaraju SCC",
+        "재귀 종료 순서",
+        "변수와 부정의 모순 판정"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/example.c",
+          "sha256": "f0272d3228385bedcd416502c41df98fa1f46128198286c32a5d91e861cfbd61"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/example.cpp",
+          "sha256": "b1e115be1a419a16fffb777f9d3af5931565db922c2382bac96c8a170beed3ff"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/example.py",
+          "sha256": "18b25075471f99ed406845268f234610a37c3dd094e87bfc0b62481a275e9241"
+        }
+      }
+    },
+    {
+      "chapter": 25,
+      "topic": "tree",
+      "title": "트리·LCA·트리 DP",
+      "example_title": "서브트리 크기와 이진 리프팅 LCA",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/25-트리순회LCA트리DP_trees-lca-dp.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/25-트리순회LCA트리DP_trees-lca-dp",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/25-트리순회LCA트리DP_trees-lca-dp/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/25-트리순회LCA트리DP_trees-lca-dp/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/25-트리순회LCA트리DP_trees-lca-dp/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "트리 DFS",
+        "서브트리 크기",
+        "이진 리프팅 LCA",
+        "조상·동일 정점 처리"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/25-트리순회LCA트리DP_trees-lca-dp/example.c",
+          "sha256": "51e8f26de3a5171c719a6ccd468350294acde60d04e07ffff5630da5aba10192"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/25-트리순회LCA트리DP_trees-lca-dp/example.cpp",
+          "sha256": "8ee4d2675aab5de9354e7a4f69c37c3d624fb51470ea3bce588d464c9f608dd3"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/25-트리순회LCA트리DP_trees-lca-dp/example.py",
+          "sha256": "e40f03e912494bb528c6ecace24c70a0048b842acff936ccada3cabc154a943b"
+        }
+      }
+    },
+    {
+      "chapter": 26,
+      "topic": "range-query",
+      "title": "구간 질의와 지연 전파",
+      "example_title": "Fenwick과 지연 트리의 같은 구간 합",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/26-구간질의와지연전파_range-queries.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/26-구간질의와지연전파_range-queries",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/26-구간질의와지연전파_range-queries/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/26-구간질의와지연전파_range-queries/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/26-구간질의와지연전파_range-queries/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "Fenwick 점 덧셈·접두합",
+        "지연 세그먼트 트리 구간 덧셈·합",
+        "같은 연산의 결과 비교"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/26-구간질의와지연전파_range-queries/example.c",
+          "sha256": "22c3df2bbc17d1cdece3e3f3c56270110380455ef35c499e9315158de1071377"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/26-구간질의와지연전파_range-queries/example.cpp",
+          "sha256": "51f67134346e555e0bc678e0b02e8cfae0d002d4611b6f6e251a872f548c2580"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/26-구간질의와지연전파_range-queries/example.py",
+          "sha256": "2dba9309de068d896559f4b10e2582f852f0d076c878e214193f973896b678a4"
+        }
+      }
+    },
+    {
+      "chapter": 27,
+      "topic": "offline-sweep",
+      "title": "오프라인 질의와 스위프",
+      "example_title": "좌표 압축과 오프라인 점 개수",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/27-오프라인질의와스위프_offline-sweep.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/27-오프라인질의와스위프_offline-sweep",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/27-오프라인질의와스위프_offline-sweep/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/27-오프라인질의와스위프_offline-sweep/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/27-오프라인질의와스위프_offline-sweep/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "좌표 압축",
+        "x 스위프",
+        "Fenwick 개수",
+        "질의 번호 복원"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/27-오프라인질의와스위프_offline-sweep/example.c",
+          "sha256": "6957c65d8f8207920dca925d05a24dfca014bcfd24ecc818967ec52261f4b7e8"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/27-오프라인질의와스위프_offline-sweep/example.cpp",
+          "sha256": "0c2f778fe95e64c218cb6bbd5a3316cdf201b964e7b71cc63667444f40446bf7"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/27-오프라인질의와스위프_offline-sweep/example.py",
+          "sha256": "7d2146f63b240334de7553116b6dbff60da9ccd160f4fcd082001d7734b3007f"
+        }
+      }
+    },
+    {
+      "chapter": 28,
+      "topic": "trie",
+      "title": "트라이와 문자열 매칭",
+      "example_title": "사전 트라이와 겹치는 KMP 검색",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/28-트라이와문자열매칭_trie-kmp-aho.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/28-트라이와문자열매칭_trie-kmp-aho",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/28-트라이와문자열매칭_trie-kmp-aho/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/28-트라이와문자열매칭_trie-kmp-aho/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/28-트라이와문자열매칭_trie-kmp-aho/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "고정 알파벳 트라이",
+        "단어 종료 표시",
+        "KMP 접두사 함수",
+        "겹치는 발생 복구"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/28-트라이와문자열매칭_trie-kmp-aho/example.c",
+          "sha256": "98660a73c1c62e85bd8fca1ed35f0643227f9660b32772f115340a2fef444d16"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/28-트라이와문자열매칭_trie-kmp-aho/example.cpp",
+          "sha256": "cce75de7c173c91f312e5c74a2588c58a869572cc93517a860e79f881a550710"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/28-트라이와문자열매칭_trie-kmp-aho/example.py",
+          "sha256": "02a656d4e7c0f335c8d0959b6ddefa0c16baa8986a68633bf8fa2cbf2e73076c"
+        }
+      }
+    },
+    {
+      "chapter": 29,
+      "topic": "advanced-string",
+      "title": "접미사·해시·팰린드롬",
+      "example_title": "Manacher의 홀수·짝수 회문 반지름",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/29-접미사해시팰린드롬_suffix-hash-palindrome.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "Manacher 홀수 반지름",
+        "Manacher 짝수 반지름",
+        "반지름 합으로 발생 수 집계"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/example.c",
+          "sha256": "559c9a2a2cbc6f9b2e3698912c5f39e8904de1b9a71a4e80b38792f780d4dfce"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/example.cpp",
+          "sha256": "e3dd4e60c5562d7dd85897c291071144625169d1ad169751e698c489280164b2"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/29-접미사해시팰린드롬_suffix-hash-palindrome/example.py",
+          "sha256": "ea73fdd5bf35d7a9396f9ab5d59a6d02c784e8ee01b007a4491d46902f785672"
+        }
+      }
+    },
+    {
+      "chapter": 30,
+      "topic": "number-theory",
+      "title": "정수론과 모듈러 연산",
+      "example_title": "유클리드와 모듈러 이진 거듭제곱",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/30-정수론과모듈러연산_number-theory.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/30-정수론과모듈러연산_number-theory",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/30-정수론과모듈러연산_number-theory/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/30-정수론과모듈러연산_number-theory/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/30-정수론과모듈러연산_number-theory/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "유클리드 최대공약수",
+        "모듈러 이진 거듭제곱"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/30-정수론과모듈러연산_number-theory/example.c",
+          "sha256": "e0737b1037c6867893ce701cfd958d498b6dec2143e419a1329fa8734304a17e"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/30-정수론과모듈러연산_number-theory/example.cpp",
+          "sha256": "3f2bb4ddc8491691309e6872a27e5f7e2d6d15a9cf175dea881a70bd9de68542"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/30-정수론과모듈러연산_number-theory/example.py",
+          "sha256": "f10782c4d6be537f70b4002fb14dbb6cf251aa3cc2f0497ff3259fe62fc9363d"
+        }
+      }
+    },
+    {
+      "chapter": 31,
+      "topic": "combinatorics",
+      "title": "조합론과 생성 함수",
+      "example_title": "다항식 계수 곱과 포함 배제",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/31-조합론과생성함수_combinatorics-generating-functions.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/31-조합론과생성함수_combinatorics-generating-functions",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/31-조합론과생성함수_combinatorics-generating-functions/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/31-조합론과생성함수_combinatorics-generating-functions/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/31-조합론과생성함수_combinatorics-generating-functions/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "생성다항식의 실제 계수 합성곱",
+        "두 조건의 포함 배제",
+        "최소공배수"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/31-조합론과생성함수_combinatorics-generating-functions/example.c",
+          "sha256": "6c75f4a6b8ea482201cc1ad51abfffd1b2e48322b43ad7e1da65de5785ce1889"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/31-조합론과생성함수_combinatorics-generating-functions/example.cpp",
+          "sha256": "5b0a909aa2c76bfe03ce293cca1cf9032a710b15737b91fc646ff68ebcda6a91"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/31-조합론과생성함수_combinatorics-generating-functions/example.py",
+          "sha256": "b24dca4fbcbf2cb85007a7f97bc28ef57dab9b206ee034325845486bbbe44a91"
+        }
+      }
+    },
+    {
+      "chapter": 32,
+      "topic": "matrix",
+      "title": "행렬 거듭제곱과 선형 점화",
+      "example_title": "2×2 행렬 제곱으로 피보나치",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/32-행렬거듭제곱과선형점화_matrix-recurrence.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "선형 점화의 행렬 표현",
+        "단위행렬",
+        "이진 거듭제곱"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/example.c",
+          "sha256": "232f739b41ae185a06e30ca7072c41e9f036b91eccc4b83780c11361a0a36a8d"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/example.cpp",
+          "sha256": "8e3cd72c4cb8e3e71e4aa1e071de0a725468e246fc5f8bc1062cc1b4b434e709"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/example.py",
+          "sha256": "818949448d0479adf034a5926b8af6161f9ef6e26e50073fce6d1ef1a9eb4f2a"
+        }
+      }
+    },
+    {
+      "chapter": 33,
+      "topic": "geometry",
+      "title": "계산기하와 좌표 변환",
+      "example_title": "외적 방향과 선분 교차",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/33-계산기하와좌표변환_computational-geometry.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/33-계산기하와좌표변환_computational-geometry",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/33-계산기하와좌표변환_computational-geometry/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/33-계산기하와좌표변환_computational-geometry/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/33-계산기하와좌표변환_computational-geometry/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "정수 외적 방향",
+        "반대 부호 교차",
+        "일직선과 끝점 포함"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/33-계산기하와좌표변환_computational-geometry/example.c",
+          "sha256": "53cea0df99a266bb2f01a6ab3bc3a70929d9562e668ebecee94a8fa36f7104be"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/33-계산기하와좌표변환_computational-geometry/example.cpp",
+          "sha256": "ab5b5c9a6dafe9dca9c2f4e40ca647f5d3d4a8459d3eb7f43b7199398714d3ca"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/33-계산기하와좌표변환_computational-geometry/example.py",
+          "sha256": "b7948bfa3d16f80531c7dd958766c2903c6a27ac8a56dad492a4502dec668d87"
+        }
+      }
+    },
+    {
+      "chapter": 34,
+      "topic": "matching-flow",
+      "title": "이분 매칭과 네트워크 유량",
+      "example_title": "증가 경로로 다시 배정하는 이분 매칭",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/34-이분매칭과네트워크유량_matching-flow.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/34-이분매칭과네트워크유량_matching-flow",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/34-이분매칭과네트워크유량_matching-flow/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/34-이분매칭과네트워크유량_matching-flow/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/34-이분매칭과네트워크유량_matching-flow/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "이분 인접 목록",
+        "DFS 증가 경로",
+        "기존 배정의 재귀적 변경"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/34-이분매칭과네트워크유량_matching-flow/example.c",
+          "sha256": "1bb2a2bbc11b1330ae1dfb4611f68765a2efbf9838ee9c772ed59f4607ad23a3"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/34-이분매칭과네트워크유량_matching-flow/example.cpp",
+          "sha256": "3be41c3292ac00037144c1a055c0be76a0a2838728668ec513bc0f76e2d80bc8"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/34-이분매칭과네트워크유량_matching-flow/example.py",
+          "sha256": "a5dae66ab2e2a26b20a4e914c307397160e2f1961819ee219e3e8dbd941b5cf0"
+        }
+      }
+    },
+    {
+      "chapter": 35,
+      "topic": "game",
+      "title": "게임 이론과 승패 상태",
+      "example_title": "그런디 mex와 여러 무더기의 XOR",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/35-게임이론과승패상태_game-theory.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/35-게임이론과승패상태_game-theory",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/35-게임이론과승패상태_game-theory/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/35-게임이론과승패상태_game-theory/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/35-게임이론과승패상태_game-theory/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "DAG 게임 DP",
+        "mex",
+        "스프라그–그런디 XOR"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/35-게임이론과승패상태_game-theory/example.c",
+          "sha256": "d0b86f20e03b1ce0bad8337fce4b75290d9a5bf299326e6887147a5cc0d9dde9"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/35-게임이론과승패상태_game-theory/example.cpp",
+          "sha256": "351262f0a665a0f963e1fad57e2f3cf91814f57b4e754bba2564254c7c4874b5"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/35-게임이론과승패상태_game-theory/example.py",
+          "sha256": "a8a74e092d0460a4f89b1042e8240161bf3d7fb8dcb8922a369416ef1b70ae48"
+        }
+      }
+    },
+    {
+      "chapter": 36,
+      "topic": "randomized",
+      "title": "무작위화와 근사 최적화",
+      "example_title": "전체 분할 열거로 확인하는 MAX-CUT 기대값",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/36-무작위화와근사최적화_randomized-approximation.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/36-무작위화와근사최적화_randomized-approximation",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/36-무작위화와근사최적화_randomized-approximation/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/36-무작위화와근사최적화_randomized-approximation/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/36-무작위화와근사최적화_randomized-approximation/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "독립 균등 분할의 전수 기대값",
+        "MAX-CUT 목적값",
+        "기대 보장과 단일 결과의 구분"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/36-무작위화와근사최적화_randomized-approximation/example.c",
+          "sha256": "492211d412c0ed971e9a52cf810bda685b989c921c07c7f78a4ed37b9c49497a"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/36-무작위화와근사최적화_randomized-approximation/example.cpp",
+          "sha256": "66706392b6a9b133a5725e47ee1c7c44460bc041c15b94a43d76baf19272c654"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/36-무작위화와근사최적화_randomized-approximation/example.py",
+          "sha256": "f6daf71a7aaf0ef31f29717abbee8713ff47badd77494b9feec2098375e00515"
+        }
+      }
+    },
+    {
+      "chapter": 37,
+      "topic": "dp-optimization",
+      "title": "DP 최적화와 볼록 껍질 트릭",
+      "example_title": "단조 볼록 껍질 트릭으로 제곱 비용 DP",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/37-DP최적화와볼록껍질트릭_dp-optimization.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "제곱 전이의 직선 분리",
+        "기울기 감소와 질의 증가",
+        "덱 CHT",
+        "교차 곱으로 불필요한 직선 제거"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/example.c",
+          "sha256": "a4ceb042b860a0bd660ce7dd8356f310a0f1680818419f02c97672f6ee6d717e"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/example.cpp",
+          "sha256": "6cc4f9f89868be69b86926cd5850aeee74d7f7a510186d6830fd69edf7bc08c8"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/example.py",
+          "sha256": "4c3276a8ab98d2487b34d166e744267c5b55f5c0b9a57e14d215a2a2cb2d3930"
+        }
+      }
+    },
+    {
+      "chapter": 38,
+      "topic": "functional-graph",
+      "title": "함수 그래프와 반복 점프",
+      "example_title": "이진 점프 표의 실제 후속 정점 질의",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/38-함수그래프와반복점프_functional-graph-lifting.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/38-함수그래프와반복점프_functional-graph-lifting",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/38-함수그래프와반복점프_functional-graph-lifting/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/38-함수그래프와반복점프_functional-graph-lifting/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/38-함수그래프와반복점프_functional-graph-lifting/output.txt",
+      "cases": 3,
+      "covered_techniques": [
+        "함수 그래프",
+        "이진 점프 전처리",
+        "현재 정점에서 비트별 합성"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/38-함수그래프와반복점프_functional-graph-lifting/example.c",
+          "sha256": "4dd032bb97037c5aa2add4319d07f3b4e3a30f426762a006f81f192924a692a2"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/38-함수그래프와반복점프_functional-graph-lifting/example.cpp",
+          "sha256": "8f437e0da556dcdf46347cd4c246e193cfcb83a5bb54073e20a8ba5264b7251d"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/38-함수그래프와반복점프_functional-graph-lifting/example.py",
+          "sha256": "888da28547d704f89ae4363f46f895438e527066c97f6fc00aac22d4c6c8876d"
+        }
+      }
+    },
+    {
+      "chapter": 39,
+      "topic": "invariants",
+      "title": "불변량과 구성적 풀이",
+      "example_title": "두 원소 증가 연산의 불변량과 구성",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/39-수학적규칙과구성적풀이_invariants-constructive.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/39-수학적규칙과구성적풀이_invariants-constructive",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/output.txt",
+      "cases": 5,
+      "covered_techniques": [
+        "합의 홀짝 불변량",
+        "비음수성",
+        "구성적 풀이",
+        "감소하는 정수 부족량"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/example.c",
+          "sha256": "0efbc416dfefcdf6bf4d8b043e836336ca6a54b253f93259794348e42287dcaf"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/example.cpp",
+          "sha256": "872b5f296cd0d83244f0f495c187a09e70eb73b2d4180106c48c177c2ae91fa9"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/example.py",
+          "sha256": "aa4aca869fd05704262728e054018146ccf461c3d4e4c0b0c70448a3898f654f"
+        }
+      }
+    },
+    {
+      "chapter": 40,
+      "topic": "languages",
+      "title": "C·C++·Python 구현 비교",
+      "example_title": "음수 나눗셈을 floor 규칙으로 통일하기",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/40-C와CPP와Python구현비교_language-implementation.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/40-C와CPP와Python구현비교_language-implementation",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/40-C와CPP와Python구현비교_language-implementation/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/40-C와CPP와Python구현비교_language-implementation/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/40-C와CPP와Python구현비교_language-implementation/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "0 방향 나눗셈",
+        "floor 몫 보정",
+        "몫과 나머지 등식"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/40-C와CPP와Python구현비교_language-implementation/example.c",
+          "sha256": "83a86a3874afb3872da62bad7d9a4621d9c6291aa25353db4e12211b8cd8b1d1"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/40-C와CPP와Python구현비교_language-implementation/example.cpp",
+          "sha256": "d6b3f1736c6b82a39c0b49f87498a5dad69f3d0ad956e2644a7f26058dab3c34"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/40-C와CPP와Python구현비교_language-implementation/example.py",
+          "sha256": "b477911a57b5a9692a8b60b50aa1e1712637407420ebaaf9e4d57880d0c8dacb"
+        }
+      }
+    },
+    {
+      "chapter": 41,
+      "topic": "testing",
+      "title": "반례·검증·성능 측정",
+      "example_title": "느린 독립 비교기와 Kadane 결과 비교",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/41-반례와테스트와성능측정_testing-debugging.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/41-반례와테스트와성능측정_testing-debugging",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/41-반례와테스트와성능측정_testing-debugging/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/41-반례와테스트와성능측정_testing-debugging/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/41-반례와테스트와성능측정_testing-debugging/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "독립 느린 기준",
+        "부분배열 전수 검사",
+        "Kadane DP",
+        "빈 구간 경계"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/41-반례와테스트와성능측정_testing-debugging/example.c",
+          "sha256": "a2c7f96d5764bcff1764aaeec4a04b3b504bd8592e25f03fc45baf4e3ad71d0a"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/41-반례와테스트와성능측정_testing-debugging/example.cpp",
+          "sha256": "df9ade1f8db13af94c418934461b6c01fff48e6c52804c35e54160205c285cfc"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/41-반례와테스트와성능측정_testing-debugging/example.py",
+          "sha256": "069637370ea064435e55cb12a0ec5b394788568a9883c31f57dba1afbc93064a"
+        }
+      }
+    },
+    {
+      "chapter": 42,
+      "topic": "practice",
+      "title": "학습 경로와 실무 모델링",
+      "example_title": "중간 배송지를 거치는 최소 이동 모델",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/42-문제해결순서와실무모델링_problem-solving-practice.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/42-문제해결순서와실무모델링_problem-solving-practice",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/42-문제해결순서와실무모델링_problem-solving-practice/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/42-문제해결순서와실무모델링_problem-solving-practice/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/42-문제해결순서와실무모델링_problem-solving-practice/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "상태·전이·비용 모델링",
+        "필수 지점 분해",
+        "BFS",
+        "불가능한 구간 판정"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/42-문제해결순서와실무모델링_problem-solving-practice/example.c",
+          "sha256": "2a5413ed8cea1e330e6cff04943102e7b7b387bb84b4959f0cb99950996e676e"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/42-문제해결순서와실무모델링_problem-solving-practice/example.cpp",
+          "sha256": "a162d0e6fc1a157b45892e6d0135982c567a710b0f91888ca95cef841468a819"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/42-문제해결순서와실무모델링_problem-solving-practice/example.py",
+          "sha256": "4142a4cc65a72a3efb086676444133fc6d7d1a474e466f78dafa25da6d6397b4"
+        }
+      }
+    },
+    {
+      "chapter": 43,
+      "topic": "heuristic-search",
+      "title": "휴리스틱 탐색과 상태 공간",
+      "example_title": "일관적인 Manhattan 휴리스틱 A*",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/43-휴리스틱탐색과상태공간_heuristic-state-search.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "A*",
+        "허용적·일관적인 Manhattan 하한",
+        "최선 g 완화",
+        "최소 f 목표 종료"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/example.c",
+          "sha256": "70ebe80cc6880a7566a017fa015ace3d5321c607ebea9c19d6cf0e14716fc528"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/example.cpp",
+          "sha256": "5159bf0efaf948b991387c60cd7456361d7d65c5d5fedb3fd3aaecb5cfab9f02"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/43-휴리스틱탐색과상태공간_heuristic-state-search/example.py",
+          "sha256": "fbeaa0f61c038c95586bd789509af767d36f6f30d7721e08a91a50cec4b5b562"
+        }
+      }
+    },
+    {
+      "chapter": 44,
+      "topic": "basic-math",
+      "title": "기초 수학과 진법",
+      "example_title": "진법 문자열의 나머지만 누적하기",
+      "chapter_path": "programmers/유형별학습_algorithm-patterns/44-기초수학과진법_basic-math.md",
+      "directory": "programmers/유형별학습_algorithm-patterns/예제_examples/44-기초수학과진법_basic-math",
+      "metadata": "programmers/유형별학습_algorithm-patterns/예제_examples/44-기초수학과진법_basic-math/example.json",
+      "input": "programmers/유형별학습_algorithm-patterns/예제_examples/44-기초수학과진법_basic-math/input.txt",
+      "expected_stdout": "programmers/유형별학습_algorithm-patterns/예제_examples/44-기초수학과진법_basic-math/output.txt",
+      "cases": 4,
+      "covered_techniques": [
+        "진법의 자리값",
+        "Horner 형태 누적",
+        "모듈러 불변량",
+        "문자 자릿값 변환"
+      ],
+      "sources": {
+        "c": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/44-기초수학과진법_basic-math/example.c",
+          "sha256": "d2fbe0b8f557fcf413935ba8f35b51117f6f79f09395b59de220420930127bd4"
+        },
+        "cpp": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/44-기초수학과진법_basic-math/example.cpp",
+          "sha256": "b21a4995720f234bf5e68b7ed60702c013304241e9ef88204103392c07c53dce"
+        },
+        "python": {
+          "file": "programmers/유형별학습_algorithm-patterns/예제_examples/44-기초수학과진법_basic-math/example.py",
+          "sha256": "20e3e04144b7e82f0c6e01117564ef6f9603ef370600c0e6cef16fba537f6270"
+        }
+      }
+    }
+  ]
+}

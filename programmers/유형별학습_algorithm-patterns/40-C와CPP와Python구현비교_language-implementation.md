@@ -56,6 +56,136 @@ Python의 key는 정렬 키를 먼저 계산하는 방식이고 C++ comparator�
 
 복습: C++의 int 곱셈을 계산한 뒤 long long으로 변환하는 것과 곱셈 전에 변환하는 것이 왜 다른지 설명합니다. 답은 표현식의 피연산자 자료형이 중간 계산의 자료형을 결정하기 때문입니다. 결과 변수의 넓은 범위가 이미 발생한 오버플로를 복구하지 않습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+양의 나누는 수에 대해 세 언어 모두 a=bq+r, 0≤r<b를 만족하는 내림 몫과 나머지를 출력합니다. C·C++의 0 방향 나눗셈에 필요한 보정을 직접 구현합니다.
+
+이 예제에서 직접 구현하는 기법은 0 방향 나눗셈 · floor 몫 보정 · 몫과 나머지 등식입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+정수 a b 두 개입니다. -1000≤a≤1000, 1≤b≤1000입니다. b=0과 최소 정수/-1의 범위 오류는 입력에 없습니다.
+
+```text
+-3 2
+```
+
+내림 몫 q와 0≤r<b인 나머지 r을 공백으로 출력합니다.
+
+```text
+-2 1
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | a=-3, b=2 | 나누는 수는 양수라는 조건을 사용합니다. |
+| 2 | C/C++의 초기 q=-1, r=-1 | 정수 나눗셈이 0 방향이므로 보정이 필요합니다. |
+| 3 | 보정 후 q=-2, r=1 | 몫을 줄인 만큼 나머지에 b를 더합니다. |
+| 4 | -3=2*(-2)+1, 0≤1&lt;2 | 등식과 나머지 범위를 함께 확인한 뒤 출력합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/40-C와CPP와Python구현비교_language-implementation/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
+#include <stdlib.h>  // qsort와 정수 절댓값 함수
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    printf("%d", value);  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    fputs(text, stdout);  // 문자열을 표준 출력에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 양의 분모에 대한 floor 나눗셈 비교
+    int a = read_int(), b = read_int();  // 나눌 정수와 양의 나누는 수
+    int quotient = a / b, remainder = a % b;  // C·C++의 0 방향 몫과 그 나머지
+    if (remainder < 0) {  // 음수 나머지이면 아직 내림 규칙과 다름
+        --quotient;  // 몫을 한 단계 더 낮추기
+        remainder += b;  // 같은 등식을 유지하며 나머지를 비음수로 조정
+    }  // 내림 몫 보정 끝
+    write_number(quotient); write_text(" "); write_number(remainder); write_text("\n");  // 두 값을 같은 형식으로 출력
+    return 0;  // 정상 종료
+}  // 음수 나눗셈 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/40-C와CPP와Python구현비교_language-implementation/example.cpp>)
+
+```cpp
+#include <iostream>  // cin과 cout으로 표준 입력·출력 처리
+#include <cstdlib>  // qsort와 정수 절댓값 함수
+using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    cin >> value;  // 스트림에서 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    cout << value;  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    cout << text;  // 문자열을 스트림에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 양의 분모에 대한 floor 나눗셈 비교
+    int a = read_int(), b = read_int();  // 나눌 정수와 양의 나누는 수
+    int quotient = a / b, remainder = a % b;  // C·C++의 0 방향 몫과 그 나머지
+    if (remainder < 0) {  // 음수 나머지이면 아직 내림 규칙과 다름
+        --quotient;  // 몫을 한 단계 더 낮추기
+        remainder += b;  // 같은 등식을 유지하며 나머지를 비음수로 조정
+    }  // 내림 몫 보정 끝
+    write_number(quotient); write_text(" "); write_number(remainder); write_text("\n");  // 두 값을 같은 형식으로 출력
+    return 0;  // 정상 종료
+}  // 음수 나눗셈 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/40-C와CPP와Python구현비교_language-implementation/example.py>)
+
+```python
+import sys  # 표준 입력 전체를 토큰으로 읽기
+
+def main():  # 입력 한 건을 계산하고 결과 출력
+    tokens = iter(sys.stdin.read().split())  # 공백과 줄바꿈을 같은 구분자로 처리
+    a, b = int(next(tokens)), int(next(tokens))  # 정수와 양의 분모
+    quotient, remainder = divmod(a, b)  # Python의 내림 몫과 비음수 나머지
+    print(quotient, remainder)  # 세 언어가 같은 q와 r을 출력
+
+if __name__ == "__main__":  # 직접 실행할 때만 예제 시작
+    main()  # 표준 입력 한 건 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 기본 정수 몫 | a/b는 0 방향 몫입니다. | a/b는 0 방향 몫입니다. | a//b와 divmod의 몫은 음의 무한대 방향입니다. |
+| 음수 나머지 | a%b가 음수이면 몫을 1 줄이고 b를 더합니다. | 같은 보정을 적용해 Python과 규칙을 맞춥니다. | b가 양수이면 divmod가 이미 비음수 나머지를 반환합니다. |
+| 허용 범위 | 분모 0과 표현 범위를 넘는 나눗셈을 입력에서 제외합니다. | 같은 작은 int 범위를 사용합니다. | 큰 정수를 처리할 수 있지만 이 예제는 입력 범위를 동일하게 제한합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(1)
+- 보조 공간: O(1)
+
+명시한 작은 정수 범위에서 나눗셈·나머지와 한 번의 보정만 수행합니다.
+
+[예제 입력](<예제_examples/40-C와CPP와Python구현비교_language-implementation/input.txt>) · [예상 출력](<예제_examples/40-C와CPP와Python구현비교_language-implementation/output.txt>) · [예제 실행 방법](<예제_examples/40-C와CPP와Python구현비교_language-implementation/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 [유형별 연습문제](<연습문제_problem-index.md>)에서 문제를 고르고 상태·정당성·구현 비용을 함께 비교할 수 있습니다.

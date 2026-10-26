@@ -108,6 +108,151 @@ Python은 큰 교차 곱을 정확히 계산하지만 연산 비용이 커지고
 - 질문: 분할 정복 최적화와 Knuth의 전이 형태가 같습니까? 답: 전자는 층별 후보 단조성을, 후자는 구간 점화의 양쪽 최적점 경계를 사용합니다.
 - 질문: CHT 덱에서 질의마다 앞 직선을 지워도 됩니까? 답: 이후 질의 x의 순서가 그 제거를 정당화할 때에만 가능하며 임의 순서 질의는 다른 처리가 필요합니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+증가하는 좌표의 제곱 비용 DP를 직선의 최소값으로 바꾸고 덱에서 불필요한 후보를 제거합니다.
+
+이 예제에서 직접 구현하는 기법은 제곱 전이의 직선 분리 · 기울기 감소와 질의 증가 · 덱 CHT · 교차 곱으로 불필요한 직선 제거입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+n,C(0≤n≤30,0≤C≤1000), 다음 엄격히 증가하는 양의 좌표 x1..xn(1..1000)입니다. x0=0,D0=0,Di=min(j<i){Dj+(xi−xj)^2+C}입니다.
+
+```text
+3 1
+1 3 4
+```
+
+D_n을 한 줄에 출력합니다.
+
+```text
+9
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | x=[0,1,3,4],C=1,직선0은 y=0 | 초기 상태를 직선 후보로 넣습니다. |
+| 2 | x=1에서 D1=2,새 직선 y=−2x+3 | 현재 질의 후 계산한 상태를 다음 후보로 추가합니다. |
+| 3 | x=3에서 직선값−3을 택해 D2=7 | 작은 x에서만 유리했던 앞 직선을 제거할 수 있습니다. |
+| 4 | x=4에서 y=−6x+16의 값−8, D3=17−8=9 | 단조 질의로 앞 후보를 줄이며 실제 최적 전이를 계산합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+long long slope[31], intercept[31];  // 이전 DP 상태를 나타내는 직선
+long long evaluate(int line, long long x) {  // 현재 x에서 직선 값
+    return slope[line] * x + intercept[line];  // 기울기와 절편의 선형식
+}  // 직선 평가 끝
+int redundant(int first, int middle, int last) {  // 가운데 직선이 아래 껍질에 불필요한지 확인
+    return (intercept[middle] - intercept[first]) * (slope[middle] - slope[last]) >= (intercept[last] - intercept[middle]) * (slope[first] - slope[middle]);  // 감소 기울기의 교점 순서를 정수 곱으로 비교
+}  // 후보 제거 판정 끝
+int main(void) {  // 단조 CHT로 DP 계산
+    int n, queue[31], head = 0, tail = 1;  // 앞과 뒤에서 줄일 후보 덱
+    long long cost, x[31] = {0}, dp[31] = {0};  // x0과 D0은0
+    scanf("%d %lld", &n, &cost);  // 상태 수와 매 전이의 상수 비용
+    for (int i = 1; i <= n; ++i) scanf("%lld", &x[i]);  // 엄격 증가 좌표
+    queue[0] = 0;  // 초기 직선 y=0
+    for (int i = 1; i <= n; ++i) {  // 질의 x도 증가하는 순서
+        while (tail - head >= 2 && evaluate(queue[head], x[i]) >= evaluate(queue[head + 1], x[i])) ++head;  // 앞으로도 불리한 앞 직선 제거
+        dp[i] = x[i] * x[i] + cost + evaluate(queue[head], x[i]);  // 직선 최솟값과 공통 항 결합
+        slope[i] = -2 * x[i];  // 새로운 상태의 감소 기울기
+        intercept[i] = dp[i] + x[i] * x[i];  // 새로운 상태의 절편
+        while (tail - head >= 2 && redundant(queue[tail - 2], queue[tail - 1], i)) --tail;  // 앞으로도 선택되지 않는 가운데 후보 제거
+        queue[tail++] = i;  // 새 직선을 덱 뒤에 삽입
+    }  // 모든 상태 계산 끝
+    printf("%lld\n", dp[n]);  // 마지막 최적 비용
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+long long slope[31], intercept[31];  // 이전 DP 상태를 나타내는 직선
+long long evaluate(int line, long long x) {  // 현재 x에서 직선 값
+    return slope[line] * x + intercept[line];  // 기울기와 절편의 선형식
+}  // 직선 평가 끝
+int redundant(int first, int middle, int last) {  // 가운데 직선이 아래 껍질에 불필요한지 확인
+    return (intercept[middle] - intercept[first]) * (slope[middle] - slope[last]) >= (intercept[last] - intercept[middle]) * (slope[first] - slope[middle]);  // 감소 기울기의 교점 순서를 정수 곱으로 비교
+}  // 후보 제거 판정 끝
+int main() {  // 단조 CHT로 DP 계산
+    int n, queue[31], head = 0, tail = 1;  // 앞과 뒤에서 줄일 후보 덱
+    long long cost, x[31] = {0}, dp[31] = {0};  // x0과 D0은0
+    std::cin >> n >> cost;  // 상태 수와 매 전이의 상수 비용
+    for (int i = 1; i <= n; ++i) std::cin >> x[i];  // 엄격 증가 좌표
+    queue[0] = 0;  // 초기 직선 y=0
+    for (int i = 1; i <= n; ++i) {  // 질의 x도 증가하는 순서
+        while (tail - head >= 2 && evaluate(queue[head], x[i]) >= evaluate(queue[head + 1], x[i])) ++head;  // 앞으로도 불리한 앞 직선 제거
+        dp[i] = x[i] * x[i] + cost + evaluate(queue[head], x[i]);  // 직선 최솟값과 공통 항 결합
+        slope[i] = -2 * x[i];  // 새로운 상태의 감소 기울기
+        intercept[i] = dp[i] + x[i] * x[i];  // 새로운 상태의 절편
+        while (tail - head >= 2 && redundant(queue[tail - 2], queue[tail - 1], i)) --tail;  // 앞으로도 선택되지 않는 가운데 후보 제거
+        queue[tail++] = i;  // 새 직선을 덱 뒤에 삽입
+    }  // 모든 상태 계산 끝
+    std::cout << dp[n] << "\n";  // 마지막 최적 비용
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/example.py>)
+
+```python
+import sys  # 상태와 좌표 입력 읽기
+tokens = iter(map(int, sys.stdin.read().split()))  # 공백 토큰 순회
+n, cost = next(tokens), next(tokens)  # 전이 수와 상수 비용
+x = [0] + [next(tokens) for _ in range(n)]  # 증가 좌표와 초기 x0
+dp = [0] * (n + 1)  # 상태별 최적 비용
+slope, intercept = [0] * (n + 1), [0] * (n + 1)  # 직선 계수
+queue = [0] * (n + 1)  # 후보 덱의 배열 저장
+head, tail = 0, 1  # 초기 직선0만 포함
+def evaluate(line, coordinate):  # 한 직선의 현재 값
+    return slope[line] * coordinate + intercept[line]  # 선형식 계산
+def redundant(first, middle, last):  # 가운데 후보의 불필요성
+    return (intercept[middle] - intercept[first]) * (slope[middle] - slope[last]) >= (intercept[last] - intercept[middle]) * (slope[first] - slope[middle])  # 감소 기울기의 교점 순서 비교
+for i in range(1, n + 1):  # 증가하는 질의 좌표
+    while tail - head >= 2 and evaluate(queue[head], x[i]) >= evaluate(queue[head + 1], x[i]):  # 뒤 직선이 더 낮은 경우
+        head += 1  # 앞으로 불리한 앞 후보 제거
+    dp[i] = x[i] * x[i] + cost + evaluate(queue[head], x[i])  # 직선 질의로 DP 전이
+    slope[i] = -2 * x[i]  # 감소하는 새 기울기
+    intercept[i] = dp[i] + x[i] * x[i]  # 새 상태의 절편
+    while tail - head >= 2 and redundant(queue[tail - 2], queue[tail - 1], i):  # 아래 껍질에 필요 없는 후보
+        tail -= 1  # 덱 뒤쪽에서 제거
+    queue[tail] = i  # 새 직선 저장
+    tail += 1  # 후보 범위 확장
+print(dp[n])  # 마지막 상태의 최적값
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 좌표·DP·기울기·절편·후보 덱 각31칸을 사용하며 중간 곱은 long long입니다. | 같은 고정 배열 덱을 사용하며 기울기·교차 곱을 정수로 비교합니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(n) 상환
+- 보조 공간: O(n)
+
+기울기와 질의 좌표의 단조성으로 각 직선이 후보 덱에 한 번 들어가고 최대 한 번 제거됩니다.
+
+[예제 입력](<예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/input.txt>) · [예상 출력](<예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/output.txt>) · [예제 실행 방법](<예제_examples/37-DP최적화와볼록껍질트릭_dp-optimization/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 현재 대표 보관 풀이에서 이 유형으로 직접 분류한 문제는 없습니다. 위의 자체 예제와 참고 자료로 원리를 익힐 수 있으며, 다른 알고리즘으로 푼 문제를 이 유형의 채점 사례로 표시하지 않습니다.

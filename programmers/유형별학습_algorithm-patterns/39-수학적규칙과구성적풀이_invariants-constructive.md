@@ -53,6 +53,185 @@
 
 복습: 작은 입력 100개에서 성립한 규칙과 불변량의 증명 중 무엇이 다른지 설명합니다. 답은 표본의 일치와 모든 허용 전이에 대한 보존 논리가 다르다는 점입니다. 표본은 반례를 찾는 데 도움을 주고, 증명은 전 범위의 결론을 지탱합니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+서로 다른 두 원소를 각각 1 올리는 연산으로 목표 배열을 만듭니다. 차이의 비음수성·합의 홀짝·최대 차이 조건을 검사하고 가장 큰 두 부족량을 줄이며 실제 연산을 출력합니다.
+
+이 예제에서 직접 구현하는 기법은 합의 홀짝 불변량 · 비음수성 · 구성적 풀이 · 감소하는 정수 부족량입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N, 초기 배열 A, 목표 배열 B가 차례로 주어집니다. 2≤N≤6이고 각 원소는 0~6입니다. 한 연산은 서로 다른 두 인덱스의 값을 각각 1 올립니다.
+
+```text
+3
+0 0 0
+2 1 1
+```
+
+불가능하면 IMPOSSIBLE입니다. 가능하면 POSSIBLE K 뒤에 K줄의 0기반 인덱스 쌍을 출력합니다. 최댓값 동률은 작은 인덱스부터 고릅니다.
+
+```text
+POSSIBLE 2
+0 1
+0 2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | deficit=[2,1,1], total=4, largest=2 | 증가량이 모두 비음수이고 합이 짝수인지 확인합니다. |
+| 2 | 2*largest=4≤total=4 | 가장 큰 부족량도 다른 위치의 부족량과 모두 짝지을 수 있습니다. |
+| 3 | 연산(0,1) 후 deficit=[1,0,1] | 큰 두 부족량을 줄여 짝짓기 가능 조건을 보존합니다. |
+| 4 | 연산(0,2) 후 deficit=[0,0,0] | 초기 배열에서 두 번 증가하면 목표 배열에 도달합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
+#include <stdlib.h>  // qsort와 정수 절댓값 함수
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    printf("%d", value);  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    fputs(text, stdout);  // 문자열을 표준 출력에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 불변량 검사 후 실제 증가 연산 구성
+    int n = read_int(), initial[6], deficit[6];  // 배열 길이·초기값·남은 부족량
+    for (int i = 0; i < n; ++i) initial[i] = read_int();  // 초기 배열 입력
+    int total = 0, largest = 0, possible = 1;  // 부족량 합·최댓값·가능 여부
+    for (int i = 0; i < n; ++i) {  // 목표와의 차이 계산
+        deficit[i] = read_int() - initial[i];  // 이 위치에서 더해야 할 양
+        if (deficit[i] < 0) possible = 0;  // 감소 연산이 없으므로 음수 차이는 불가능
+        total += deficit[i];  // 한 연산이 2 줄일 총부족량
+        if (deficit[i] > largest) largest = deficit[i];  // 한 위치의 최대 부족량
+    }  // 부족량 집계 끝
+    if (!possible || total % 2 || 2 * largest > total) { write_text("IMPOSSIBLE\n"); return 0; }  // 다른 위치와 짝지을 수 있는 조건 검사
+    int steps = total / 2;  // 모든 연산은 합을 정확히 2 올림
+    write_text("POSSIBLE "); write_number(steps); write_text("\n");  // 구성할 연산 수 먼저 출력
+    for (int step = 0; step < steps; ++step) {  // 부족량이 모두 0이 될 때까지 구성
+        int first = -1, second = -1;  // 가장 큰 두 부족량의 위치
+        for (int i = 0; i < n; ++i) {  // 작은 인덱스부터 동률 처리
+            if (first == -1 || deficit[i] > deficit[first]) { second = first; first = i; }  // 새 최댓값을 첫 후보로
+            else if (second == -1 || deficit[i] > deficit[second]) second = i;  // 나머지 중 두 번째 후보
+        }  // 서로 다른 두 위치 선택 끝
+        --deficit[first]; --deficit[second];  // 선택한 두 위치의 목표 부족량을 1씩 줄이기
+        write_number(first); write_text(" "); write_number(second); write_text("\n");  // 실제 증가 연산 출력
+    }  // 목표까지의 구성 끝
+    return 0;  // 정상 종료
+}  // 불변량·구성 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/example.cpp>)
+
+```cpp
+#include <iostream>  // cin과 cout으로 표준 입력·출력 처리
+#include <cstdlib>  // qsort와 정수 절댓값 함수
+using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    cin >> value;  // 스트림에서 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    cout << value;  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    cout << text;  // 문자열을 스트림에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 불변량 검사 후 실제 증가 연산 구성
+    int n = read_int(), initial[6], deficit[6];  // 배열 길이·초기값·남은 부족량
+    for (int i = 0; i < n; ++i) initial[i] = read_int();  // 초기 배열 입력
+    int total = 0, largest = 0, possible = 1;  // 부족량 합·최댓값·가능 여부
+    for (int i = 0; i < n; ++i) {  // 목표와의 차이 계산
+        deficit[i] = read_int() - initial[i];  // 이 위치에서 더해야 할 양
+        if (deficit[i] < 0) possible = 0;  // 감소 연산이 없으므로 음수 차이는 불가능
+        total += deficit[i];  // 한 연산이 2 줄일 총부족량
+        if (deficit[i] > largest) largest = deficit[i];  // 한 위치의 최대 부족량
+    }  // 부족량 집계 끝
+    if (!possible || total % 2 || 2 * largest > total) { write_text("IMPOSSIBLE\n"); return 0; }  // 다른 위치와 짝지을 수 있는 조건 검사
+    int steps = total / 2;  // 모든 연산은 합을 정확히 2 올림
+    write_text("POSSIBLE "); write_number(steps); write_text("\n");  // 구성할 연산 수 먼저 출력
+    for (int step = 0; step < steps; ++step) {  // 부족량이 모두 0이 될 때까지 구성
+        int first = -1, second = -1;  // 가장 큰 두 부족량의 위치
+        for (int i = 0; i < n; ++i) {  // 작은 인덱스부터 동률 처리
+            if (first == -1 || deficit[i] > deficit[first]) { second = first; first = i; }  // 새 최댓값을 첫 후보로
+            else if (second == -1 || deficit[i] > deficit[second]) second = i;  // 나머지 중 두 번째 후보
+        }  // 서로 다른 두 위치 선택 끝
+        --deficit[first]; --deficit[second];  // 선택한 두 위치의 목표 부족량을 1씩 줄이기
+        write_number(first); write_text(" "); write_number(second); write_text("\n");  // 실제 증가 연산 출력
+    }  // 목표까지의 구성 끝
+    return 0;  // 정상 종료
+}  // 불변량·구성 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/example.py>)
+
+```python
+import sys  # 표준 입력 전체를 토큰으로 읽기
+
+def main():  # 입력 한 건을 계산하고 결과 출력
+    tokens = iter(sys.stdin.read().split())  # 공백과 줄바꿈을 같은 구분자로 처리
+    n = int(next(tokens))  # 배열 길이
+    initial = [int(next(tokens)) for _ in range(n)]  # 초기 배열
+    target = [int(next(tokens)) for _ in range(n)]  # 목표 배열
+    deficit = [b - a for a, b in zip(initial, target)]  # 위치별 필요한 증가량
+    total = sum(deficit)  # 한 연산마다 2 줄일 전체 부족량
+    if min(deficit) < 0 or total % 2 or 2 * max(deficit) > total:  # 감소 불가·홀짝·짝짓기 조건 검사
+        print("IMPOSSIBLE")  # 목표에 도달할 수 없는 경우
+        return  # 구성을 시작하지 않고 종료
+    steps = total // 2  # 필요한 증가 연산 수
+    print("POSSIBLE", steps)  # 연산 수를 포함한 결과 머리
+    for _ in range(steps):  # 가장 큰 두 부족량을 반복해서 줄이기
+        first = second = -1  # 서로 다른 두 후보 위치
+        for i in range(n):  # 작은 인덱스부터 동률 처리
+            if first == -1 or deficit[i] > deficit[first]:  # 더 큰 부족량 발견
+                second, first = first, i  # 기존 첫 후보를 두 번째로 이동
+            elif second == -1 or deficit[i] > deficit[second]:  # 두 번째로 큰 부족량 확인
+                second = i  # 두 번째 위치 갱신
+        deficit[first] -= 1  # 첫 위치를 실제로 1 올린 효과
+        deficit[second] -= 1  # 둘째 위치를 실제로 1 올린 효과
+        print(first, second)  # 선택한 연산 출력
+
+if __name__ == "__main__":  # 직접 실행할 때만 예제 시작
+    main()  # 표준 입력 한 건 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력과 출력 | scanf와 fputs를 감싼 함수를 사용합니다. | cin과 cout을 감싼 함수를 사용합니다. | 입력을 split으로 나누고 print로 출력합니다. |
+| 작업 배열 | 입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다. | 절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다. | 입력 크기에 맞춘 리스트를 생성합니다. |
+| 정수와 상태 | 예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다. | 같은 정수 범위와 상태 전이를 사용합니다. | int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(N+NS)
+- 보조 공간: O(N)
+
+S는 초기 부족량 합이며 S/2번 연산마다 N개 후보를 확인합니다. 모든 부족량이 비음수이고 최대값이 나머지 합 이하이면 큰 두 값을 줄인 뒤에도 이 조건이 유지됩니다.
+
+[예제 입력](<예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/input.txt>) · [예상 출력](<예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/output.txt>) · [예제 실행 방법](<예제_examples/39-수학적규칙과구성적풀이_invariants-constructive/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

@@ -1,0 +1,83 @@
+{
+  "chapter": 35,
+  "title": "그런디 mex와 여러 무더기의 XOR",
+  "summary": "허용 이동의 그런디 값을 계산하고 독립한 무더기들의 XOR로 정상 규칙의 승패를 구합니다.",
+  "input_format": "k,n(1≤k≤5,0≤n≤8), 다음 k개의 서로 다른 양의 이동량(1..5), 다음 n개의 돌 수(0..30)입니다. 한 수에는 한 무더기에서 허용량만 제거하며 둘 수 없는 사람이 집니다.",
+  "output_format": "GRUNDY 뒤에 무더기별 값을 출력합니다. 다음 줄 XOR 값, 마지막 줄 WIN 또는 LOSE입니다. 무더기가 없으면 GRUNDY만 출력합니다.",
+  "input": "2 2\n1 2\n1 2\n",
+  "expected_stdout": "GRUNDY 1 2\nXOR 3\nWIN\n",
+  "trace": [
+    {
+      "step": "1",
+      "state": "허용 이동 {1,2},G[0]=0",
+      "explanation": "움직일 수 없는 상태의 그런디 값은0입니다."
+    },
+    {
+      "step": "2",
+      "state": "G[1]=mex{0}=1",
+      "explanation": "이동1 뒤 값0이므로 없는 최소값은1입니다."
+    },
+    {
+      "step": "3",
+      "state": "G[2]=mex{1,0}=2",
+      "explanation": "이동1과2의 다음 상태를 모두 제외합니다."
+    },
+    {
+      "step": "4",
+      "state": "무더기(1,2)의 XOR=1^2=3",
+      "explanation": "정상 공평 게임의 독립 합이0이 아니므로 WIN입니다."
+    }
+  ],
+  "language_differences": [
+    {
+      "point": "표준 입출력",
+      "c": "scanf와 printf의 서식 지정자를 자료형에 맞춥니다.",
+      "cpp": "std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다.",
+      "python": "sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다."
+    },
+    {
+      "point": "배열과 허용 범위",
+      "c": "이동5개, 무더기8개, 상태31개, mex표6칸의 고정 배열을 사용합니다.",
+      "cpp": "같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다.",
+      "python": "상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다."
+    },
+    {
+      "point": "정수 연산",
+      "c": "이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다.",
+      "cpp": "C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다.",
+      "python": "정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다."
+    }
+  ],
+  "complexity": {
+    "time": "O(Sk+n)",
+    "space": "O(S+k+n)",
+    "reason": "최대 돌 수 S까지 최대k개 다음 값을 확인하고 무더기별 값을 XOR합니다."
+  },
+  "covered_techniques": [
+    "DAG 게임 DP",
+    "mex",
+    "스프라그–그런디 XOR"
+  ],
+  "cases": [
+    {
+      "name": "서로 다른 그런디 값",
+      "stdin": "2 2\n1 2\n1 2\n",
+      "stdout": "GRUNDY 1 2\nXOR 3\nWIN\n"
+    },
+    {
+      "name": "돌 없는 무더기",
+      "stdin": "1 1\n1\n0\n",
+      "stdout": "GRUNDY 0\nXOR 0\nLOSE\n"
+    },
+    {
+      "name": "독립 게임 없음",
+      "stdin": "2 0\n1 2\n",
+      "stdout": "GRUNDY\nXOR 0\nLOSE\n"
+    },
+    {
+      "name": "승리 둘의 패배 합",
+      "stdin": "2 2\n1 2\n1 1\n",
+      "stdout": "GRUNDY 1 1\nXOR 0\nLOSE\n"
+    }
+  ]
+}

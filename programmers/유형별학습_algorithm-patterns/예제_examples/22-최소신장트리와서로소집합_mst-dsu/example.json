@@ -1,0 +1,84 @@
+{
+  "chapter": 22,
+  "title": "Kruskal과 DSU로 최소 연결 비용 구하기",
+  "summary": "비용순 간선을 보면서 DSU 대표가 다른 두 요소만 합칩니다. 전체를 연결할 수 없는 경우도 따로 출력합니다.",
+  "input_format": "V E 뒤에 E개의 u v w가 주어집니다. 1≤V≤8, 0≤E≤32, 0≤u,v<V, -100≤w≤100입니다. 무방향 간선이며 평행 간선을 허용합니다.",
+  "output_format": "최소 신장 트리 비용을 출력합니다. 연결되지 않으면 DISCONNECTED를 출력합니다.",
+  "input": "4 5\n0 1 1\n1 2 2\n0 2 3\n2 3 4\n1 3 5\n",
+  "expected_stdout": "7\n",
+  "trace": [
+    {
+      "step": "1",
+      "state": "parent=[0,1,2,3], selected=0",
+      "explanation": "각 정점에서 독립 집합으로 시작합니다."
+    },
+    {
+      "step": "2",
+      "state": "간선(0,1,1): total=1, selected=1",
+      "explanation": "다른 두 집합을 가장 싼 간선으로 합칩니다."
+    },
+    {
+      "step": "3",
+      "state": "간선(1,2,2) 선택 뒤 (0,2,3) 제외",
+      "explanation": "0과 2가 같은 집합이므로 새 사이클을 만들지 않습니다."
+    },
+    {
+      "step": "4",
+      "state": "간선(2,3,4): selected=3, total=7",
+      "explanation": "V-1개 간선을 선택하여 전체 연결을 확인합니다."
+    }
+  ],
+  "language_differences": [
+    {
+      "point": "입력과 출력",
+      "c": "scanf와 fputs를 감싼 함수를 사용합니다.",
+      "cpp": "cin과 cout을 감싼 함수를 사용합니다.",
+      "python": "입력을 split으로 나누고 print로 출력합니다."
+    },
+    {
+      "point": "작업 배열",
+      "c": "입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다.",
+      "cpp": "절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다.",
+      "python": "입력 크기에 맞춘 리스트를 생성합니다."
+    },
+    {
+      "point": "정수와 상태",
+      "c": "예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다.",
+      "cpp": "같은 정수 범위와 상태 전이를 사용합니다.",
+      "python": "int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다."
+    }
+  ],
+  "complexity": {
+    "time": "O(E log E + V + E α(V))",
+    "space": "O(V+E)",
+    "reason": "간선을 정렬하고 경로 압축·크기 기준 DSU 연산을 수행합니다."
+  },
+  "covered_techniques": [
+    "Kruskal",
+    "경로 압축 DSU",
+    "크기 기준 병합",
+    "연결 불가 판정"
+  ],
+  "cases": [
+    {
+      "name": "사이클 간선 제외",
+      "stdin": "4 5\n0 1 1\n1 2 2\n0 2 3\n2 3 4\n1 3 5\n",
+      "stdout": "7\n"
+    },
+    {
+      "name": "간선 없는 정점 하나",
+      "stdin": "1 0\n",
+      "stdout": "0\n"
+    },
+    {
+      "name": "연결 불가",
+      "stdin": "3 1\n0 1 2\n",
+      "stdout": "DISCONNECTED\n"
+    },
+    {
+      "name": "음수 비용도 허용",
+      "stdin": "3 3\n0 1 -2\n1 2 -1\n0 2 5\n",
+      "stdout": "-3\n"
+    }
+  ]
+}

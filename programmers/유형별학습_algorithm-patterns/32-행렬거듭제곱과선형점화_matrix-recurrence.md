@@ -99,6 +99,144 @@ a_(n+1)=2a_n+3 같은 상수항은 상태에 항상 1인 성분을 추가해 선
 - 질문: 인접 행렬 거듭제곱은 최단 경로 길이입니까? 답: 보통의 덧셈·곱셈에서는 정해진 간선 수의 보행 수이며, 다른 목적은 연산 정의도 바꿔야 합니다.
 - 질문: 시간 복잡도 O(log N)이라고만 써도 됩니까? 답: 상태 차원과 행렬 곱 비용이 있어 일반적인 구현은 O(d³ log N)입니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+같은 선형 전이의 거듭제곱을 합성하여 큰 단계의 피보나치 나머지를 구합니다.
+
+이 예제에서 직접 구현하는 기법은 선형 점화의 행렬 표현 · 단위행렬 · 이진 거듭제곱입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N,m 두 정수이며 0≤N≤1000000000,1≤m≤1000000입니다. F0=0,F1=1입니다.
+
+```text
+5 1000
+```
+
+F_N mod m을 한 줄에 출력합니다.
+
+```text
+5
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | A=[[1,1],[1,0]],v0=[1,0] | 한 단계의 두 항 이동을 행렬로 정의합니다. |
+| 2 | A²=[[2,1],[1,1]] | 같은 전이를 두 번 합성합니다. |
+| 3 | A⁴=[[5,3],[3,2]],5=4+1 | 필요한 지수의 행렬만 골라 곱합니다. |
+| 4 | A⁵=[[8,5],[5,3]],F5=5 | 열벡터의 두 번째 성분을 읽는 것과 같은 answer[1][0]을 출력합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+typedef struct { long long cell[2][2]; } Matrix;  // 두 항의 선형 전이 저장
+long long modulus;  // 모든 행렬 연산의 같은 모듈러
+Matrix multiply(Matrix left, Matrix right) {  // 입력과 분리한 행렬 곱
+    Matrix result = {{{0, 0}, {0, 0}}};  // 새 결과는 영행렬
+    for (int i = 0; i < 2; ++i) {  // 결과의 행
+        for (int j = 0; j < 2; ++j) {  // 결과의 열
+            for (int k = 0; k < 2; ++k) result.cell[i][j] = (result.cell[i][j] + left.cell[i][k] * right.cell[k][j]) % modulus;  // 행과 열의 내적
+        }  // 한 행의 열 계산 끝
+    }  // 행렬 곱 계산 끝
+    return result;  // 독립적인 결과 행렬
+}  // 곱셈 함수 끝
+int main(void) {  // 피보나치 전이의 거듭제곱
+    long long exponent;  // 계산할 단계 수
+    scanf("%lld %lld", &exponent, &modulus);  // 지수와 모듈러 입력
+    Matrix answer = {{{1, 0}, {0, 1}}};  // 0단계의 단위행렬
+    Matrix base = {{{1, 1}, {1, 0}}};  // 한 단계 피보나치 전이
+    while (exponent > 0) {  // 필요한 거듭제곱을 비트별로 선택
+        if (exponent & 1LL) answer = multiply(answer, base);  // 현재 자리의 전이 누적
+        base = multiply(base, base);  // 두 배 이동 길이로 제곱
+        exponent >>= 1;  // 처리한 지수 비트 제거
+    }  // 모든 단계 합성 끝
+    printf("%lld\n", answer.cell[1][0] % modulus);  // F_N의 나머지
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+typedef struct { long long cell[2][2]; } Matrix;  // 두 항의 선형 전이 저장
+long long modulus;  // 모든 행렬 연산의 같은 모듈러
+Matrix multiply(Matrix left, Matrix right) {  // 입력과 분리한 행렬 곱
+    Matrix result = {{{0, 0}, {0, 0}}};  // 새 결과는 영행렬
+    for (int i = 0; i < 2; ++i) {  // 결과의 행
+        for (int j = 0; j < 2; ++j) {  // 결과의 열
+            for (int k = 0; k < 2; ++k) result.cell[i][j] = (result.cell[i][j] + left.cell[i][k] * right.cell[k][j]) % modulus;  // 행과 열의 내적
+        }  // 한 행의 열 계산 끝
+    }  // 행렬 곱 계산 끝
+    return result;  // 독립적인 결과 행렬
+}  // 곱셈 함수 끝
+int main() {  // 피보나치 전이의 거듭제곱
+    long long exponent;  // 계산할 단계 수
+    std::cin >> exponent >> modulus;  // 지수와 모듈러 입력
+    Matrix answer = {{{1, 0}, {0, 1}}};  // 0단계의 단위행렬
+    Matrix base = {{{1, 1}, {1, 0}}};  // 한 단계 피보나치 전이
+    while (exponent > 0) {  // 필요한 거듭제곱을 비트별로 선택
+        if (exponent & 1LL) answer = multiply(answer, base);  // 현재 자리의 전이 누적
+        base = multiply(base, base);  // 두 배 이동 길이로 제곱
+        exponent >>= 1;  // 처리한 지수 비트 제거
+    }  // 모든 단계 합성 끝
+    std::cout << answer.cell[1][0] % modulus << "\n";  // F_N의 나머지
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/example.py>)
+
+```python
+import sys  # 단계와 모듈러 읽기
+exponent, modulus = map(int, sys.stdin.read().split())  # 피보나치 조건
+def multiply(left, right):  # 2×2 행렬 내적
+    result = [[0, 0], [0, 0]]  # 입력과 별개인 영행렬
+    for i in range(2):  # 결과 행
+        for j in range(2):  # 결과 열
+            for k in range(2):  # 내적의 공통 좌표
+                result[i][j] = (result[i][j] + left[i][k] * right[k][j]) % modulus  # 나머지를 유지한 곱 누적
+    return result  # 새 행렬 반환
+answer = [[1, 0], [0, 1]]  # 0단계 단위 전이
+base = [[1, 1], [1, 0]]  # 한 단계의 점화
+while exponent:  # 이진수 자리 처리
+    if exponent & 1:  # 필요한 길이의 전이 선택
+        answer = multiply(answer, base)  # 현재 결과에 합성
+    base = multiply(base, base)  # 다음 자리의 제곱
+    exponent >>= 1  # 처리한 자리 제거
+print(answer[1][0] % modulus)  # 초기 벡터에서 F_N인 성분
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 2×2 long long 행렬 세 개와 지수 변수만 사용합니다. | 같은 2×2 구조체를 값으로 반환하여 행렬 입력을 덮어쓰지 않습니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(log(N+1)) 행렬 곱; 일반 차원 d에서는 O(d³log(N+1))
+- 보조 공간: O(1); 일반 차원 d에서는 O(d²)
+
+2×2 크기가 고정되어 한 제곱의 산술 연산 수가 일정합니다.
+
+[예제 입력](<예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/input.txt>) · [예상 출력](<예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/output.txt>) · [예제 실행 방법](<예제_examples/32-행렬거듭제곱과선형점화_matrix-recurrence/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

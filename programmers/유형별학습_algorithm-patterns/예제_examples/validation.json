@@ -1,0 +1,4565 @@
+{
+  "checked_on": "2026-10-26",
+  "checked_at": "2026-10-26T06:34:12.718400+00:00",
+  "scope": "Final standalone C/C++/Python teaching examples; no online grading",
+  "chapters": 44,
+  "programs": 132,
+  "native_programs_compiled_without_warnings": 88,
+  "python_programs_executed": 44,
+  "distinct_input_cases": 152,
+  "case_executions_passed": 456,
+  "toolchain": {
+    "native_driver": "Zig 0.16.0",
+    "c": "C17",
+    "cpp": "C++17",
+    "python": "3.12.14",
+    "flags": [
+      "-O0",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "source_comments_checked_on_every_active_line": true,
+  "embedded_source_blocks_match_saved_sources": true,
+  "example_inputs_and_outputs_match_saved_files": true,
+  "trace_and_language_difference_review": "All chapter metadata was read against implementations; matching indices, topological-processing moment, zero-total complexity, and scalar Python input descriptions were corrected. This is textual review, not a proof for all inputs.",
+  "preservation": {
+    "baseline_commit": "cc40891825819582eb9561034c7ed2ec88871827",
+    "original_programmers_files": 6926,
+    "protected_old_files": 6880,
+    "all_protected_files_match_sha256": true,
+    "original_code_files": 2498,
+    "original_python_files": 1463,
+    "all_original_code_bytes_unchanged": true
+  },
+  "results": [
+    {
+      "chapter": 1,
+      "language": "c",
+      "source": "01-문제모델링과복잡도_modeling-complexity/example.c",
+      "source_sha256": "604872f5771f2acd5870148d441c60dabcdc1c8028402658f52957ed3b7945ed",
+      "metadata_sha256": "6696912278e702632befef4e2081a0c52d3454f53cf6cdacab63c67442f53677",
+      "cases_sha256": "8776a0dc531853b73a37140d99fca9ed18a0d6e86ad502f504b6bcc04ff3bf07",
+      "annotated_lines": 18,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "7 15\n7 15\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "-2\n-2\n",
+          "passed": true
+        },
+        {
+          "name": "빈 질의 구간",
+          "stdout": "0 0\n0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.7402,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "d52d991e4dc732b49e841a91c5448b75e6a650a921f3384ee6ef925e90f01c1f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 1,
+      "language": "cpp",
+      "source": "01-문제모델링과복잡도_modeling-complexity/example.cpp",
+      "source_sha256": "117e8e7d506b1dd00ddf510580c85201aa9123741f1992a522b77e5979231b64",
+      "metadata_sha256": "6696912278e702632befef4e2081a0c52d3454f53cf6cdacab63c67442f53677",
+      "cases_sha256": "8776a0dc531853b73a37140d99fca9ed18a0d6e86ad502f504b6bcc04ff3bf07",
+      "annotated_lines": 20,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "7 15\n7 15\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "-2\n-2\n",
+          "passed": true
+        },
+        {
+          "name": "빈 질의 구간",
+          "stdout": "0 0\n0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.6125,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "d52d991e4dc732b49e841a91c5448b75e6a650a921f3384ee6ef925e90f01c1f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 1,
+      "language": "python",
+      "source": "01-문제모델링과복잡도_modeling-complexity/example.py",
+      "source_sha256": "fc398f1fd20773ff7e6cd529f16886df50e7cdc6651aae4a90f7dfbea29f28d8",
+      "metadata_sha256": "6696912278e702632befef4e2081a0c52d3454f53cf6cdacab63c67442f53677",
+      "cases_sha256": "8776a0dc531853b73a37140d99fca9ed18a0d6e86ad502f504b6bcc04ff3bf07",
+      "annotated_lines": 17,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "7 15\n7 15\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "-2\n-2\n",
+          "passed": true
+        },
+        {
+          "name": "빈 질의 구간",
+          "stdout": "0 0\n0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0755,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "d52d991e4dc732b49e841a91c5448b75e6a650a921f3384ee6ef925e90f01c1f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 2,
+      "language": "c",
+      "source": "02-구현과시뮬레이션_implementation-simulation/example.c",
+      "source_sha256": "e80c9cf75a3018d4427287ff0305fe0d00ae69c03675023ac98f2050df438133",
+      "metadata_sha256": "981338fa482fb9eafa67f18d8e5d062e16652dc2d4dcfc26a2ddf3275d46d415",
+      "cases_sha256": "2a9a9666fb272cdb061380f28f97e22ef02d63b6f335357e132673448ed5a94b",
+      "annotated_lines": 21,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2 1 2\n",
+          "passed": true
+        },
+        {
+          "name": "한 칸과 명령 없음",
+          "stdout": "0 0 0\n",
+          "passed": true
+        },
+        {
+          "name": "한 칸에서 막힌 전진",
+          "stdout": "0 0 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6208,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "533fe4d65c645e97f8a5eb12a9fc71fca206fe59ad45c93974ad9e41e9c4307f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 2,
+      "language": "cpp",
+      "source": "02-구현과시뮬레이션_implementation-simulation/example.cpp",
+      "source_sha256": "b3bf1c92a7b58634df4727fe447f10514a0eb767d997e0b737ecab56949dbb13",
+      "metadata_sha256": "981338fa482fb9eafa67f18d8e5d062e16652dc2d4dcfc26a2ddf3275d46d415",
+      "cases_sha256": "2a9a9666fb272cdb061380f28f97e22ef02d63b6f335357e132673448ed5a94b",
+      "annotated_lines": 24,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2 1 2\n",
+          "passed": true
+        },
+        {
+          "name": "한 칸과 명령 없음",
+          "stdout": "0 0 0\n",
+          "passed": true
+        },
+        {
+          "name": "한 칸에서 막힌 전진",
+          "stdout": "0 0 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3768,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "533fe4d65c645e97f8a5eb12a9fc71fca206fe59ad45c93974ad9e41e9c4307f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 2,
+      "language": "python",
+      "source": "02-구현과시뮬레이션_implementation-simulation/example.py",
+      "source_sha256": "06742740c48b0a0e0b20dcd081242921e761f56aa8820dcc1e039a3c21df9e22",
+      "metadata_sha256": "981338fa482fb9eafa67f18d8e5d062e16652dc2d4dcfc26a2ddf3275d46d415",
+      "cases_sha256": "2a9a9666fb272cdb061380f28f97e22ef02d63b6f335357e132673448ed5a94b",
+      "annotated_lines": 16,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2 1 2\n",
+          "passed": true
+        },
+        {
+          "name": "한 칸과 명령 없음",
+          "stdout": "0 0 0\n",
+          "passed": true
+        },
+        {
+          "name": "한 칸에서 막힌 전진",
+          "stdout": "0 0 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0723,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "533fe4d65c645e97f8a5eb12a9fc71fca206fe59ad45c93974ad9e41e9c4307f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 3,
+      "language": "c",
+      "source": "03-배열과연결리스트_arrays-linked-lists/example.c",
+      "source_sha256": "5b20b107c1d411d0a7e756df3c7023af520274c9310d1283f38986caefaa6e6b",
+      "metadata_sha256": "1a4a83fa50a13e75bfd93574e2fc68585d06a8fa6866c62ae268a25ec4e53285",
+      "cases_sha256": "4e1bbf071ad15fe32e29a1463ebfa9dddccd0d17053bd320e39a9405f8fcc771",
+      "annotated_lines": 22,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "10 20 30 40\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나 삽입 없음",
+          "stdout": "7\n",
+          "passed": true
+        },
+        {
+          "name": "새 노드 뒤에 재삽입",
+          "stdout": "5 6 7\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6569,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "05d64007e04adb52bf4c2938bbfc205ca6f44c4dd23f0c1ab0d938405d1b4ae5",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 3,
+      "language": "cpp",
+      "source": "03-배열과연결리스트_arrays-linked-lists/example.cpp",
+      "source_sha256": "1e3a5b626094b2cc6835ede337d13cec5f465944fd2965312129e9b023b2c2cf",
+      "metadata_sha256": "1a4a83fa50a13e75bfd93574e2fc68585d06a8fa6866c62ae268a25ec4e53285",
+      "cases_sha256": "4e1bbf071ad15fe32e29a1463ebfa9dddccd0d17053bd320e39a9405f8fcc771",
+      "annotated_lines": 23,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "10 20 30 40\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나 삽입 없음",
+          "stdout": "7\n",
+          "passed": true
+        },
+        {
+          "name": "새 노드 뒤에 재삽입",
+          "stdout": "5 6 7\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3598,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "05d64007e04adb52bf4c2938bbfc205ca6f44c4dd23f0c1ab0d938405d1b4ae5",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 3,
+      "language": "python",
+      "source": "03-배열과연결리스트_arrays-linked-lists/example.py",
+      "source_sha256": "60556a3f95d6cd454559c3d3ad06ba859edd71b6d57587818cc392a49d7724c6",
+      "metadata_sha256": "1a4a83fa50a13e75bfd93574e2fc68585d06a8fa6866c62ae268a25ec4e53285",
+      "cases_sha256": "4e1bbf071ad15fe32e29a1463ebfa9dddccd0d17053bd320e39a9405f8fcc771",
+      "annotated_lines": 16,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "10 20 30 40\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나 삽입 없음",
+          "stdout": "7\n",
+          "passed": true
+        },
+        {
+          "name": "새 노드 뒤에 재삽입",
+          "stdout": "5 6 7\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0695,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "05d64007e04adb52bf4c2938bbfc205ca6f44c4dd23f0c1ab0d938405d1b4ae5",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 4,
+      "language": "c",
+      "source": "04-문자열과파싱_strings-parsing/example.c",
+      "source_sha256": "11ff9c7fc6c2e9ed8c17fa626a8aff8a099cfb399dda806cec20c97095c0f34e",
+      "metadata_sha256": "db15a25bc0a12ef9c34a339d0aac6c35e48c24889f1a03dac7a7f2cfc27c85b5",
+      "cases_sha256": "7519580d7d29a0791e096682370d43521783352aeae47a6c0782ff6f2a1a19a6",
+      "annotated_lines": 23,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "3 16\n",
+          "passed": true
+        },
+        {
+          "name": "정수 0 하나",
+          "stdout": "1 0\n",
+          "passed": true
+        },
+        {
+          "name": "공백과 양수 부호",
+          "stdout": "3 7\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.5953,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "b3c4413e16fc2ac2dbd5e70b1bc5bdb4ee28a8954f21fd179e5ce29deef17adf",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 4,
+      "language": "cpp",
+      "source": "04-문자열과파싱_strings-parsing/example.cpp",
+      "source_sha256": "f2ead9848cc77509c9d4e7232d9adcc5e2a3883549acfcc78176585bdbd2ce96",
+      "metadata_sha256": "db15a25bc0a12ef9c34a339d0aac6c35e48c24889f1a03dac7a7f2cfc27c85b5",
+      "cases_sha256": "7519580d7d29a0791e096682370d43521783352aeae47a6c0782ff6f2a1a19a6",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "3 16\n",
+          "passed": true
+        },
+        {
+          "name": "정수 0 하나",
+          "stdout": "1 0\n",
+          "passed": true
+        },
+        {
+          "name": "공백과 양수 부호",
+          "stdout": "3 7\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2687,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "b3c4413e16fc2ac2dbd5e70b1bc5bdb4ee28a8954f21fd179e5ce29deef17adf",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 4,
+      "language": "python",
+      "source": "04-문자열과파싱_strings-parsing/example.py",
+      "source_sha256": "3f1f20efe9f564bd3f20a67bd0d2d733da2d857557ed7f0fc0d3333c113c8f27",
+      "metadata_sha256": "db15a25bc0a12ef9c34a339d0aac6c35e48c24889f1a03dac7a7f2cfc27c85b5",
+      "cases_sha256": "7519580d7d29a0791e096682370d43521783352aeae47a6c0782ff6f2a1a19a6",
+      "annotated_lines": 21,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "3 16\n",
+          "passed": true
+        },
+        {
+          "name": "정수 0 하나",
+          "stdout": "1 0\n",
+          "passed": true
+        },
+        {
+          "name": "공백과 양수 부호",
+          "stdout": "3 7\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0713,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "b3c4413e16fc2ac2dbd5e70b1bc5bdb4ee28a8954f21fd179e5ce29deef17adf",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 5,
+      "language": "c",
+      "source": "05-정렬과비교함수_sorting-comparators/example.c",
+      "source_sha256": "a1f15b09770a61ffa903c57abbe89df5dbaa903dafd590adbb92c11cbe65c9ba",
+      "metadata_sha256": "08ca3197ed9303b33f397a6fe870b2927329bdf772295c61980e4e5fcb36115e",
+      "cases_sha256": "dc43541291b85b3f5c2dd62b58ae22f081c2d929661dd756efed75a3e7ec56c2",
+      "annotated_lines": 17,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "3 4 1 2\n",
+          "passed": true
+        },
+        {
+          "name": "기록 하나",
+          "stdout": "42\n",
+          "passed": true
+        },
+        {
+          "name": "완전 동률의 식별자 기준",
+          "stdout": "2 5 9\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6593,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "1857d304ea82f632c7d54ffadae6c37cd10da0e3021cd42e5ea89894e66115cd",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 5,
+      "language": "cpp",
+      "source": "05-정렬과비교함수_sorting-comparators/example.cpp",
+      "source_sha256": "e762086cb8274a690c8d5a69f40088a5a0ab90ddc05773cadf2145649c792a24",
+      "metadata_sha256": "08ca3197ed9303b33f397a6fe870b2927329bdf772295c61980e4e5fcb36115e",
+      "cases_sha256": "dc43541291b85b3f5c2dd62b58ae22f081c2d929661dd756efed75a3e7ec56c2",
+      "annotated_lines": 17,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "3 4 1 2\n",
+          "passed": true
+        },
+        {
+          "name": "기록 하나",
+          "stdout": "42\n",
+          "passed": true
+        },
+        {
+          "name": "완전 동률의 식별자 기준",
+          "stdout": "2 5 9\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.4873,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "1857d304ea82f632c7d54ffadae6c37cd10da0e3021cd42e5ea89894e66115cd",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 5,
+      "language": "python",
+      "source": "05-정렬과비교함수_sorting-comparators/example.py",
+      "source_sha256": "584cb2af8e278353e5a608bcae25e8b455dcc449792545b62cfce5c2cc0963fc",
+      "metadata_sha256": "08ca3197ed9303b33f397a6fe870b2927329bdf772295c61980e4e5fcb36115e",
+      "cases_sha256": "dc43541291b85b3f5c2dd62b58ae22f081c2d929661dd756efed75a3e7ec56c2",
+      "annotated_lines": 6,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "3 4 1 2\n",
+          "passed": true
+        },
+        {
+          "name": "기록 하나",
+          "stdout": "42\n",
+          "passed": true
+        },
+        {
+          "name": "완전 동률의 식별자 기준",
+          "stdout": "2 5 9\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0696,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "1857d304ea82f632c7d54ffadae6c37cd10da0e3021cd42e5ea89894e66115cd",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 6,
+      "language": "c",
+      "source": "06-해시와빈도집계_hashing-counting/example.c",
+      "source_sha256": "112e2ed0dd6057c11219eaaf026100973c6fefb8623837dae6238501a60a4c74",
+      "metadata_sha256": "e77d29f292c95df369ed6ca0407bd0b3945e6a0813771277cf3a2f1383e9d6d1",
+      "cases_sha256": "d455e9332d3d100e68d67e0310adb40e90d5e6544ce6059b97f542c8fe330fbb",
+      "annotated_lines": 21,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "3 1 0\n",
+          "passed": true
+        },
+        {
+          "name": "빈 값 목록",
+          "stdout": "0 0\n",
+          "passed": true
+        },
+        {
+          "name": "서로 충돌하는 C 키",
+          "stdout": "1 1 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.8182,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "007fae345f7425f3a88da1412c89b3870a36636a2758d9b0eadc5cf4c47e6b52",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 6,
+      "language": "cpp",
+      "source": "06-해시와빈도집계_hashing-counting/example.cpp",
+      "source_sha256": "c32cec7b48173d830726ac04205c9a54b21905230155b035856546a755c15ea8",
+      "metadata_sha256": "e77d29f292c95df369ed6ca0407bd0b3945e6a0813771277cf3a2f1383e9d6d1",
+      "cases_sha256": "d455e9332d3d100e68d67e0310adb40e90d5e6544ce6059b97f542c8fe330fbb",
+      "annotated_lines": 16,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "3 1 0\n",
+          "passed": true
+        },
+        {
+          "name": "빈 값 목록",
+          "stdout": "0 0\n",
+          "passed": true
+        },
+        {
+          "name": "서로 충돌하는 C 키",
+          "stdout": "1 1 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3266,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "007fae345f7425f3a88da1412c89b3870a36636a2758d9b0eadc5cf4c47e6b52",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 6,
+      "language": "python",
+      "source": "06-해시와빈도집계_hashing-counting/example.py",
+      "source_sha256": "ee28092e398eaa8c7b97413121956de05cd39b1b49cfbe6dd2feee2739a65058",
+      "metadata_sha256": "e77d29f292c95df369ed6ca0407bd0b3945e6a0813771277cf3a2f1383e9d6d1",
+      "cases_sha256": "d455e9332d3d100e68d67e0310adb40e90d5e6544ce6059b97f542c8fe330fbb",
+      "annotated_lines": 8,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "3 1 0\n",
+          "passed": true
+        },
+        {
+          "name": "빈 값 목록",
+          "stdout": "0 0\n",
+          "passed": true
+        },
+        {
+          "name": "서로 충돌하는 C 키",
+          "stdout": "1 1 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0694,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "007fae345f7425f3a88da1412c89b3870a36636a2758d9b0eadc5cf4c47e6b52",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 7,
+      "language": "c",
+      "source": "07-스택큐덱_stack-queue-deque/example.c",
+      "source_sha256": "fb2ae4212e6bc6b714c87fdca0588d32bde22e39561ff22301daabf2ba74df60",
+      "metadata_sha256": "edb35491232931397028ee7847a675cfda18a5c05c3c5a3a02edf055c34aa679",
+      "cases_sha256": "94381499d6e124e2699958244421c739871ddff2f00fc30a066dac9e4e3f1783",
+      "annotated_lines": 14,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2 2 -1 4 -1\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "-1\n",
+          "passed": true
+        },
+        {
+          "name": "같은 값은 더 큰 값 아님",
+          "stdout": "-1 -1 -1\n",
+          "passed": true
+        },
+        {
+          "name": "엄격 증가",
+          "stdout": "1 2 -1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6832,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "396ebdaf5597258fcc6cb8accb325b93482fd9577b63e2b6fe43c3b19844ae21",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 7,
+      "language": "cpp",
+      "source": "07-스택큐덱_stack-queue-deque/example.cpp",
+      "source_sha256": "98d226ae1baec0611f4417dae4a75fc1b832907711813f075b7113fddb7e89c2",
+      "metadata_sha256": "edb35491232931397028ee7847a675cfda18a5c05c3c5a3a02edf055c34aa679",
+      "cases_sha256": "94381499d6e124e2699958244421c739871ddff2f00fc30a066dac9e4e3f1783",
+      "annotated_lines": 16,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2 2 -1 4 -1\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "-1\n",
+          "passed": true
+        },
+        {
+          "name": "같은 값은 더 큰 값 아님",
+          "stdout": "-1 -1 -1\n",
+          "passed": true
+        },
+        {
+          "name": "엄격 증가",
+          "stdout": "1 2 -1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3117,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "396ebdaf5597258fcc6cb8accb325b93482fd9577b63e2b6fe43c3b19844ae21",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 7,
+      "language": "python",
+      "source": "07-스택큐덱_stack-queue-deque/example.py",
+      "source_sha256": "16e9e35dada3bbc06b06b1773842ca7377e6d6d43abae2fa2d0ce55a7986e63c",
+      "metadata_sha256": "edb35491232931397028ee7847a675cfda18a5c05c3c5a3a02edf055c34aa679",
+      "cases_sha256": "94381499d6e124e2699958244421c739871ddff2f00fc30a066dac9e4e3f1783",
+      "annotated_lines": 9,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2 2 -1 4 -1\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "-1\n",
+          "passed": true
+        },
+        {
+          "name": "같은 값은 더 큰 값 아님",
+          "stdout": "-1 -1 -1\n",
+          "passed": true
+        },
+        {
+          "name": "엄격 증가",
+          "stdout": "1 2 -1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0917,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "396ebdaf5597258fcc6cb8accb325b93482fd9577b63e2b6fe43c3b19844ae21",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 8,
+      "language": "c",
+      "source": "08-힙과우선순위큐_heap-priority-queue/example.c",
+      "source_sha256": "303c6daac6d12ea39155700fbfe2a42252f2f4466cb49bcf067df70db76b4f7c",
+      "metadata_sha256": "56f6a7eeb1281e3f350fe416a7d2901587306bf6645880b4eeeca0eafc009c8c",
+      "cases_sha256": "0f671101155e6a2e3fc0a6d610667ec7081ced88b10dbe424afe5e8380e846d5",
+      "annotated_lines": 40,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "9 8 5\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "-2\n",
+          "passed": true
+        },
+        {
+          "name": "K가 전체 개수",
+          "stdout": "4 4 1 -1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6533,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "b9b9c961019c69eff3c3ce02b455f7a9ba3defac6e93b366645870977357c82d",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 8,
+      "language": "cpp",
+      "source": "08-힙과우선순위큐_heap-priority-queue/example.cpp",
+      "source_sha256": "f1b4d693dfabb048f58ded30fc5cd9020faca952cf23f0291ef18568497e52b4",
+      "metadata_sha256": "56f6a7eeb1281e3f350fe416a7d2901587306bf6645880b4eeeca0eafc009c8c",
+      "cases_sha256": "0f671101155e6a2e3fc0a6d610667ec7081ced88b10dbe424afe5e8380e846d5",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "9 8 5\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "-2\n",
+          "passed": true
+        },
+        {
+          "name": "K가 전체 개수",
+          "stdout": "4 4 1 -1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.4847,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "b9b9c961019c69eff3c3ce02b455f7a9ba3defac6e93b366645870977357c82d",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 8,
+      "language": "python",
+      "source": "08-힙과우선순위큐_heap-priority-queue/example.py",
+      "source_sha256": "d6d4747d07d11e6a351d4b3222161d5203448566915bedbc192cb9f7f8e5c54f",
+      "metadata_sha256": "56f6a7eeb1281e3f350fe416a7d2901587306bf6645880b4eeeca0eafc009c8c",
+      "cases_sha256": "0f671101155e6a2e3fc0a6d610667ec7081ced88b10dbe424afe5e8380e846d5",
+      "annotated_lines": 13,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "9 8 5\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "-2\n",
+          "passed": true
+        },
+        {
+          "name": "K가 전체 개수",
+          "stdout": "4 4 1 -1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0708,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "b9b9c961019c69eff3c3ce02b455f7a9ba3defac6e93b366645870977357c82d",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 9,
+      "language": "c",
+      "source": "09-누적합과차분_prefix-difference/example.c",
+      "source_sha256": "e89aa2ef1749b9962404cd890194e514caeeeea84fec88b80d485c9704a597c6",
+      "metadata_sha256": "98feecb4fdc4d5e208f29f2e560f8a1a971f7d7b79ef044a96cc4042c285dbb0",
+      "cases_sha256": "ee9f55889cf90bf6af3b7038347fd7cfecdc8cd03d1bfd17d91967746aa94ad8",
+      "annotated_lines": 22,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2 4 8 9\n21\n",
+          "passed": true
+        },
+        {
+          "name": "갱신 없음",
+          "stdout": "7\n7\n",
+          "passed": true
+        },
+        {
+          "name": "빈 갱신과 빈 질의",
+          "stdout": "1 2\n0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.1359,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "726fd3c13c074489f83c20a9f73bda2227d24ed1a55501d19d3b45b9d6cf56cc",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 9,
+      "language": "cpp",
+      "source": "09-누적합과차분_prefix-difference/example.cpp",
+      "source_sha256": "26d0bd889bb78e382ba0ccb61292d4ac40af8ca4b84ce3d626f0165a3589ce3d",
+      "metadata_sha256": "98feecb4fdc4d5e208f29f2e560f8a1a971f7d7b79ef044a96cc4042c285dbb0",
+      "cases_sha256": "ee9f55889cf90bf6af3b7038347fd7cfecdc8cd03d1bfd17d91967746aa94ad8",
+      "annotated_lines": 23,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2 4 8 9\n21\n",
+          "passed": true
+        },
+        {
+          "name": "갱신 없음",
+          "stdout": "7\n7\n",
+          "passed": true
+        },
+        {
+          "name": "빈 갱신과 빈 질의",
+          "stdout": "1 2\n0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.4387,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "726fd3c13c074489f83c20a9f73bda2227d24ed1a55501d19d3b45b9d6cf56cc",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 9,
+      "language": "python",
+      "source": "09-누적합과차분_prefix-difference/example.py",
+      "source_sha256": "f76fde16f039d86ce534efe8e433afa6e1a2fa86c7cf28c6cdbd9eb79948db68",
+      "metadata_sha256": "98feecb4fdc4d5e208f29f2e560f8a1a971f7d7b79ef044a96cc4042c285dbb0",
+      "cases_sha256": "ee9f55889cf90bf6af3b7038347fd7cfecdc8cd03d1bfd17d91967746aa94ad8",
+      "annotated_lines": 17,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2 4 8 9\n21\n",
+          "passed": true
+        },
+        {
+          "name": "갱신 없음",
+          "stdout": "7\n7\n",
+          "passed": true
+        },
+        {
+          "name": "빈 갱신과 빈 질의",
+          "stdout": "1 2\n0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0943,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "726fd3c13c074489f83c20a9f73bda2227d24ed1a55501d19d3b45b9d6cf56cc",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 10,
+      "language": "c",
+      "source": "10-투포인터와슬라이딩윈도_two-pointers-window/example.c",
+      "source_sha256": "0cdc087c4d177436b857ab6b55347a8a73dd3e43b93fc6713561075cfb839456",
+      "metadata_sha256": "3bb2009ecea3d876f749a7f1357d8235b791113a268c6259a080d69176a74599",
+      "cases_sha256": "a84943d1f1fee7e8d129b5d03f71714390766148d5e4e1031b18c4567dd89762",
+      "annotated_lines": 18,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나로 충족",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "전체 합도 부족",
+          "stdout": "0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6386,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "579b826fa8e016a32911d559079c1a80a68b3bb84a178f4daf33be2a6c3bcf46",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 10,
+      "language": "cpp",
+      "source": "10-투포인터와슬라이딩윈도_two-pointers-window/example.cpp",
+      "source_sha256": "03b5fa65e6396cd9d2757bab55af9440ad9dda0e3a8161c28ed60fc91e3e2396",
+      "metadata_sha256": "3bb2009ecea3d876f749a7f1357d8235b791113a268c6259a080d69176a74599",
+      "cases_sha256": "a84943d1f1fee7e8d129b5d03f71714390766148d5e4e1031b18c4567dd89762",
+      "annotated_lines": 20,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나로 충족",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "전체 합도 부족",
+          "stdout": "0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2642,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "579b826fa8e016a32911d559079c1a80a68b3bb84a178f4daf33be2a6c3bcf46",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 10,
+      "language": "python",
+      "source": "10-투포인터와슬라이딩윈도_two-pointers-window/example.py",
+      "source_sha256": "496d591d3c01624b1e105567cda9347a79f560feff35889412cb4432374ef65f",
+      "metadata_sha256": "3bb2009ecea3d876f749a7f1357d8235b791113a268c6259a080d69176a74599",
+      "cases_sha256": "a84943d1f1fee7e8d129b5d03f71714390766148d5e4e1031b18c4567dd89762",
+      "annotated_lines": 12,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나로 충족",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "전체 합도 부족",
+          "stdout": "0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0733,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "579b826fa8e016a32911d559079c1a80a68b3bb84a178f4daf33be2a6c3bcf46",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 11,
+      "language": "c",
+      "source": "11-이진탐색과매개변수탐색_binary-parametric-search/example.c",
+      "source_sha256": "7f97f0912ddd5f9eb0dfec280550c09e614f2846bd66df6189e12e8da79762f3",
+      "metadata_sha256": "a896cd7c80c16729172d818242647cd68b25f8e398307935e52b522a319d7cab",
+      "cases_sha256": "5d387e0c0603ccd6ef4aa36c6558b2de3df1eb35ac2724d3a4038bc97d4eb135",
+      "annotated_lines": 30,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "6\n",
+          "passed": true
+        },
+        {
+          "name": "작업 하나",
+          "stdout": "8\n",
+          "passed": true
+        },
+        {
+          "name": "모든 작업량0",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "각 작업을 한 그룹에 배치",
+          "stdout": "4\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.664,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "fc372f2089a94d593e8dd25062c98fe924e06c4b1afef33b3b060286dd42eb5d",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 11,
+      "language": "cpp",
+      "source": "11-이진탐색과매개변수탐색_binary-parametric-search/example.cpp",
+      "source_sha256": "5133b6800ee33346423d989cd88516864b9665a2ef21670632542c990fccc9c5",
+      "metadata_sha256": "a896cd7c80c16729172d818242647cd68b25f8e398307935e52b522a319d7cab",
+      "cases_sha256": "5d387e0c0603ccd6ef4aa36c6558b2de3df1eb35ac2724d3a4038bc97d4eb135",
+      "annotated_lines": 31,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "6\n",
+          "passed": true
+        },
+        {
+          "name": "작업 하나",
+          "stdout": "8\n",
+          "passed": true
+        },
+        {
+          "name": "모든 작업량0",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "각 작업을 한 그룹에 배치",
+          "stdout": "4\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2525,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "fc372f2089a94d593e8dd25062c98fe924e06c4b1afef33b3b060286dd42eb5d",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 11,
+      "language": "python",
+      "source": "11-이진탐색과매개변수탐색_binary-parametric-search/example.py",
+      "source_sha256": "0e3d4db6447701b177d36e4f3c720af83130b975da990e4c30e904d7c9090d6c",
+      "metadata_sha256": "a896cd7c80c16729172d818242647cd68b25f8e398307935e52b522a319d7cab",
+      "cases_sha256": "5d387e0c0603ccd6ef4aa36c6558b2de3df1eb35ac2724d3a4038bc97d4eb135",
+      "annotated_lines": 23,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "6\n",
+          "passed": true
+        },
+        {
+          "name": "작업 하나",
+          "stdout": "8\n",
+          "passed": true
+        },
+        {
+          "name": "모든 작업량0",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "각 작업을 한 그룹에 배치",
+          "stdout": "4\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0958,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "fc372f2089a94d593e8dd25062c98fe924e06c4b1afef33b3b060286dd42eb5d",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 12,
+      "language": "c",
+      "source": "12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/example.c",
+      "source_sha256": "782f44409d8fd691b8bf991a45662281c941cad743add2c6ad561fd56072df4b",
+      "metadata_sha256": "70b7a0f35e42df2b6fe83716495957261def8f07306df92abdf5b4f386ed0305",
+      "cases_sha256": "f5745b4d245115b68fc68252a63077a89f31fdd271d0f418b327bd779918b150",
+      "annotated_lines": 47,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "빈 배열과 빈 부분집합",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "목표 불가능",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "같은 값의 서로 다른 위치",
+          "stdout": "3\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6034,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "47c2d13c4670c879842a28745c8d06b35de979da87587ffcda15225910b85c9c",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 12,
+      "language": "cpp",
+      "source": "12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/example.cpp",
+      "source_sha256": "b9ed9d464b6a8dbb4ae4162c0f6a9b52411429f599f284c4b7498f166223be3e",
+      "metadata_sha256": "70b7a0f35e42df2b6fe83716495957261def8f07306df92abdf5b4f386ed0305",
+      "cases_sha256": "f5745b4d245115b68fc68252a63077a89f31fdd271d0f418b327bd779918b150",
+      "annotated_lines": 26,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "빈 배열과 빈 부분집합",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "목표 불가능",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "같은 값의 서로 다른 위치",
+          "stdout": "3\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3092,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "47c2d13c4670c879842a28745c8d06b35de979da87587ffcda15225910b85c9c",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 12,
+      "language": "python",
+      "source": "12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/example.py",
+      "source_sha256": "28de456f588966ac7a5901c38379c9f4bdade67406956029dec6e3f5707430b9",
+      "metadata_sha256": "70b7a0f35e42df2b6fe83716495957261def8f07306df92abdf5b4f386ed0305",
+      "cases_sha256": "f5745b4d245115b68fc68252a63077a89f31fdd271d0f418b327bd779918b150",
+      "annotated_lines": 16,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "빈 배열과 빈 부분집합",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "목표 불가능",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "같은 값의 서로 다른 위치",
+          "stdout": "3\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0951,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "47c2d13c4670c879842a28745c8d06b35de979da87587ffcda15225910b85c9c",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 13,
+      "language": "c",
+      "source": "13-백트래킹과가지치기_backtracking-pruning/example.c",
+      "source_sha256": "017abb5078b0471e098f0c09a48f9afe60c37a9a3b32a2740c75ccdbbba53ae2",
+      "metadata_sha256": "06eced437d0ed9a5c5dd82d010e65d5c466d0d91d9a545eb400721a740f72d41",
+      "cases_sha256": "0c84e9852c9993bedc8f0bfa76b28e9bdac59586dc7719a42dcb9fe2861df67d",
+      "annotated_lines": 19,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "최소 보드",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "배치 불가능",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "허용 최대 보드",
+          "stdout": "352\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.66,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "613892de5218bbc0b83fddd058c8a55312714cd1b824059efd57e2386cf4ea0c",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 13,
+      "language": "cpp",
+      "source": "13-백트래킹과가지치기_backtracking-pruning/example.cpp",
+      "source_sha256": "f842f0816a006ade2c460e76769e49624ce961f0ee2e045ad7ae53417aaab6bf",
+      "metadata_sha256": "06eced437d0ed9a5c5dd82d010e65d5c466d0d91d9a545eb400721a740f72d41",
+      "cases_sha256": "0c84e9852c9993bedc8f0bfa76b28e9bdac59586dc7719a42dcb9fe2861df67d",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "최소 보드",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "배치 불가능",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "허용 최대 보드",
+          "stdout": "352\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3468,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "613892de5218bbc0b83fddd058c8a55312714cd1b824059efd57e2386cf4ea0c",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 13,
+      "language": "python",
+      "source": "13-백트래킹과가지치기_backtracking-pruning/example.py",
+      "source_sha256": "ebe7493583286deb441ef6a16824936604b19cc1675cd04c374abad8664259fd",
+      "metadata_sha256": "06eced437d0ed9a5c5dd82d010e65d5c466d0d91d9a545eb400721a740f72d41",
+      "cases_sha256": "0c84e9852c9993bedc8f0bfa76b28e9bdac59586dc7719a42dcb9fe2861df67d",
+      "annotated_lines": 16,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "최소 보드",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "배치 불가능",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "허용 최대 보드",
+          "stdout": "352\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0956,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "613892de5218bbc0b83fddd058c8a55312714cd1b824059efd57e2386cf4ea0c",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 14,
+      "language": "c",
+      "source": "14-분할정복과재귀_divide-conquer-recursion/example.c",
+      "source_sha256": "232f2f5acb9f266b22c46a855b989664e15fca0955061b7a711200ea66cff2fc",
+      "metadata_sha256": "0869fdc89bae7678678e6361325f26b284173207c7c3e21902a668fee583a5ae",
+      "cases_sha256": "6f036839612a1eb8817995dd6acbb72c71ae83313eff6e40dd2fce62e40607c7",
+      "annotated_lines": 24,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "1 2 4 6\n",
+          "passed": true
+        },
+        {
+          "name": "빈 배열",
+          "stdout": "\n",
+          "passed": true
+        },
+        {
+          "name": "중복 음수",
+          "stdout": "-1 -1 -1\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "7\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.5981,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "82df8e6150d8be3476452f39c28aaa6e10bc4b22f3d2532cb8aca91dfa14c842",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 14,
+      "language": "cpp",
+      "source": "14-분할정복과재귀_divide-conquer-recursion/example.cpp",
+      "source_sha256": "c5997182b446a1a14cedaff57818f0cff3c9482472e414a503f52967ed4c1584",
+      "metadata_sha256": "0869fdc89bae7678678e6361325f26b284173207c7c3e21902a668fee583a5ae",
+      "cases_sha256": "6f036839612a1eb8817995dd6acbb72c71ae83313eff6e40dd2fce62e40607c7",
+      "annotated_lines": 27,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "1 2 4 6\n",
+          "passed": true
+        },
+        {
+          "name": "빈 배열",
+          "stdout": "\n",
+          "passed": true
+        },
+        {
+          "name": "중복 음수",
+          "stdout": "-1 -1 -1\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "7\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2218,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "82df8e6150d8be3476452f39c28aaa6e10bc4b22f3d2532cb8aca91dfa14c842",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 14,
+      "language": "python",
+      "source": "14-분할정복과재귀_divide-conquer-recursion/example.py",
+      "source_sha256": "890de3b80b499ad8fa0b9d63bdd16fb40c08f713026a97038b21fd4eee24b47a",
+      "metadata_sha256": "0869fdc89bae7678678e6361325f26b284173207c7c3e21902a668fee583a5ae",
+      "cases_sha256": "6f036839612a1eb8817995dd6acbb72c71ae83313eff6e40dd2fce62e40607c7",
+      "annotated_lines": 29,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "기본",
+          "stdout": "1 2 4 6\n",
+          "passed": true
+        },
+        {
+          "name": "빈 배열",
+          "stdout": "\n",
+          "passed": true
+        },
+        {
+          "name": "중복 음수",
+          "stdout": "-1 -1 -1\n",
+          "passed": true
+        },
+        {
+          "name": "원소 하나",
+          "stdout": "7\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0889,
+      "passed": true,
+      "checked_at": "2026-10-26T06:22:09.494196+00:00",
+      "current_metadata_sha256": "82df8e6150d8be3476452f39c28aaa6e10bc4b22f3d2532cb8aca91dfa14c842",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 15,
+      "language": "c",
+      "source": "15-그리디와교환논증_greedy-exchange/example.c",
+      "source_sha256": "bb0d9027678bd65c7a33195c7ea6e0a34bc5606ea284785fabbe605c73396c5a",
+      "metadata_sha256": "2f63eca1f8a08c33fceedb9573022832c327a6481a5562bbc0f444db8d71242b",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "본문 회의",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "빈 목록",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "끝과 시작 접촉",
+          "stdout": "3\n",
+          "passed": true
+        }
+      ],
+      "seconds": 24.5914,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "172e6d146bb6cc1d20dcef07be447a0f09826217efaf6ab5c6b7f389377c8fd5",
+      "current_metadata_sha256": "2f63eca1f8a08c33fceedb9573022832c327a6481a5562bbc0f444db8d71242b",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 15,
+      "language": "cpp",
+      "source": "15-그리디와교환논증_greedy-exchange/example.cpp",
+      "source_sha256": "1aef658757b14faff341e85685b64a70796e387dce1280c66e1e143f0951b1a8",
+      "metadata_sha256": "2f63eca1f8a08c33fceedb9573022832c327a6481a5562bbc0f444db8d71242b",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "본문 회의",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "빈 목록",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "끝과 시작 접촉",
+          "stdout": "3\n",
+          "passed": true
+        }
+      ],
+      "seconds": 24.8131,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "172e6d146bb6cc1d20dcef07be447a0f09826217efaf6ab5c6b7f389377c8fd5",
+      "current_metadata_sha256": "2f63eca1f8a08c33fceedb9573022832c327a6481a5562bbc0f444db8d71242b",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 15,
+      "language": "python",
+      "source": "15-그리디와교환논증_greedy-exchange/example.py",
+      "source_sha256": "1a30d12fc40562112d7ce5c91400e7d7d3f87fdd250e4bfaa4736a9c425e1d45",
+      "metadata_sha256": "2f63eca1f8a08c33fceedb9573022832c327a6481a5562bbc0f444db8d71242b",
+      "annotated_lines": 12,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "본문 회의",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "빈 목록",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "끝과 시작 접촉",
+          "stdout": "3\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0838,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "172e6d146bb6cc1d20dcef07be447a0f09826217efaf6ab5c6b7f389377c8fd5",
+      "current_metadata_sha256": "2f63eca1f8a08c33fceedb9573022832c327a6481a5562bbc0f444db8d71242b",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 16,
+      "language": "c",
+      "source": "16-동적계획법의상태와전이_dynamic-programming/example.c",
+      "source_sha256": "3bd1944206f08b14aa7700a3916b4384b4616b479f0509fa2d688b074f65d947",
+      "metadata_sha256": "3fcb7470590edf4032f50dcf328d915438af7d60eea5351afc791c0d9231b889",
+      "annotated_lines": 18,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "그리디 반례",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "금액 0",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "불가능",
+          "stdout": "-1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.764,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "1f351b3bd3a03274ba4ff04f73dcca2d285ed0a61e8f19c9153393ec995b3d60",
+      "current_metadata_sha256": "3fcb7470590edf4032f50dcf328d915438af7d60eea5351afc791c0d9231b889",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 16,
+      "language": "cpp",
+      "source": "16-동적계획법의상태와전이_dynamic-programming/example.cpp",
+      "source_sha256": "752082f0e3da6d3bbd09c3e2cb8551a6a4f693d3dad868c7b40d52e3cc822801",
+      "metadata_sha256": "3fcb7470590edf4032f50dcf328d915438af7d60eea5351afc791c0d9231b889",
+      "annotated_lines": 18,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "그리디 반례",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "금액 0",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "불가능",
+          "stdout": "-1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.8965,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "1f351b3bd3a03274ba4ff04f73dcca2d285ed0a61e8f19c9153393ec995b3d60",
+      "current_metadata_sha256": "3fcb7470590edf4032f50dcf328d915438af7d60eea5351afc791c0d9231b889",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 16,
+      "language": "python",
+      "source": "16-동적계획법의상태와전이_dynamic-programming/example.py",
+      "source_sha256": "bfab19888a94a34fb6a39071e1da832c3b1ea79ba9e1e43ea75ab6a092a90f2e",
+      "metadata_sha256": "3fcb7470590edf4032f50dcf328d915438af7d60eea5351afc791c0d9231b889",
+      "annotated_lines": 11,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "그리디 반례",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "금액 0",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "불가능",
+          "stdout": "-1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0808,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "1f351b3bd3a03274ba4ff04f73dcca2d285ed0a61e8f19c9153393ec995b3d60",
+      "current_metadata_sha256": "3fcb7470590edf4032f50dcf328d915438af7d60eea5351afc791c0d9231b889",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 17,
+      "language": "c",
+      "source": "17-배낭수열구간확률DP_dp-variants/example.c",
+      "source_sha256": "b582d6b7d52b89a83b42555fdbe7c1d9e6d691e448e9dfcef970847a03870aa2",
+      "metadata_sha256": "9d712b5c84bc48c58b9177d59353e9f7775974ba4c92f243ab426db6bd26d2a8",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 대표 변형",
+          "stdout": "KNAPSACK 7\nLIS 3\n",
+          "passed": true
+        },
+        {
+          "name": "빈 선택과 빈 수열",
+          "stdout": "KNAPSACK 0\nLIS 0\n",
+          "passed": true
+        },
+        {
+          "name": "재사용과 동률 방지",
+          "stdout": "KNAPSACK 3\nLIS 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.0094,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "c7cb61fee1571576fb1bc25d0fda90354fe3f7be71f01f85c11f4611b620bb89",
+      "current_metadata_sha256": "9d712b5c84bc48c58b9177d59353e9f7775974ba4c92f243ab426db6bd26d2a8",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 17,
+      "language": "cpp",
+      "source": "17-배낭수열구간확률DP_dp-variants/example.cpp",
+      "source_sha256": "7973dd1ecbd36761e4111b7982f7409c072a33fa27761e5bddd0658cd282354d",
+      "metadata_sha256": "9d712b5c84bc48c58b9177d59353e9f7775974ba4c92f243ab426db6bd26d2a8",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 대표 변형",
+          "stdout": "KNAPSACK 7\nLIS 3\n",
+          "passed": true
+        },
+        {
+          "name": "빈 선택과 빈 수열",
+          "stdout": "KNAPSACK 0\nLIS 0\n",
+          "passed": true
+        },
+        {
+          "name": "재사용과 동률 방지",
+          "stdout": "KNAPSACK 3\nLIS 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.5864,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "c7cb61fee1571576fb1bc25d0fda90354fe3f7be71f01f85c11f4611b620bb89",
+      "current_metadata_sha256": "9d712b5c84bc48c58b9177d59353e9f7775974ba4c92f243ab426db6bd26d2a8",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 17,
+      "language": "python",
+      "source": "17-배낭수열구간확률DP_dp-variants/example.py",
+      "source_sha256": "f3eccc6d38f769f3775952953dd3674cf2ab4dde056adb7dbc54dd48642d2e1f",
+      "metadata_sha256": "9d712b5c84bc48c58b9177d59353e9f7775974ba4c92f243ab426db6bd26d2a8",
+      "annotated_lines": 17,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "두 대표 변형",
+          "stdout": "KNAPSACK 7\nLIS 3\n",
+          "passed": true
+        },
+        {
+          "name": "빈 선택과 빈 수열",
+          "stdout": "KNAPSACK 0\nLIS 0\n",
+          "passed": true
+        },
+        {
+          "name": "재사용과 동률 방지",
+          "stdout": "KNAPSACK 3\nLIS 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0805,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "c7cb61fee1571576fb1bc25d0fda90354fe3f7be71f01f85c11f4611b620bb89",
+      "current_metadata_sha256": "9d712b5c84bc48c58b9177d59353e9f7775974ba4c92f243ab426db6bd26d2a8",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 18,
+      "language": "c",
+      "source": "18-비트마스크와비트집합_bitmask-bitset/example.c",
+      "source_sha256": "769426a39c9bf4de7d9f23697895e9e0f432cb7654ef4d452a679c227a5899cc",
+      "metadata_sha256": "2148b1bb242e6cc9679351d2d5665e0ad5c67364a4bd1bc9df0bb7c4873e98c4",
+      "annotated_lines": 15,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "목표 6",
+          "stdout": "YES\n",
+          "passed": true
+        },
+        {
+          "name": "빈 집합의 합",
+          "stdout": "YES\n",
+          "passed": true
+        },
+        {
+          "name": "목표 비트 부재",
+          "stdout": "NO\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.7983,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "d9a34b53229302935e8765faedbcc69f70d668202c8e75893102918a3565a8a5",
+      "current_metadata_sha256": "2148b1bb242e6cc9679351d2d5665e0ad5c67364a4bd1bc9df0bb7c4873e98c4",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 18,
+      "language": "cpp",
+      "source": "18-비트마스크와비트집합_bitmask-bitset/example.cpp",
+      "source_sha256": "311ce5ab9bdc913ce7925463b619a248f632b8c743738fb045180619de2ca50b",
+      "metadata_sha256": "2148b1bb242e6cc9679351d2d5665e0ad5c67364a4bd1bc9df0bb7c4873e98c4",
+      "annotated_lines": 15,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "목표 6",
+          "stdout": "YES\n",
+          "passed": true
+        },
+        {
+          "name": "빈 집합의 합",
+          "stdout": "YES\n",
+          "passed": true
+        },
+        {
+          "name": "목표 비트 부재",
+          "stdout": "NO\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2976,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "d9a34b53229302935e8765faedbcc69f70d668202c8e75893102918a3565a8a5",
+      "current_metadata_sha256": "2148b1bb242e6cc9679351d2d5665e0ad5c67364a4bd1bc9df0bb7c4873e98c4",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 18,
+      "language": "python",
+      "source": "18-비트마스크와비트집합_bitmask-bitset/example.py",
+      "source_sha256": "35245eb7d43d668713e344fb365e59af219eb10048211a0825c263e98fafb0d5",
+      "metadata_sha256": "2148b1bb242e6cc9679351d2d5665e0ad5c67364a4bd1bc9df0bb7c4873e98c4",
+      "annotated_lines": 10,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "목표 6",
+          "stdout": "YES\n",
+          "passed": true
+        },
+        {
+          "name": "빈 집합의 합",
+          "stdout": "YES\n",
+          "passed": true
+        },
+        {
+          "name": "목표 비트 부재",
+          "stdout": "NO\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0682,
+      "passed": true,
+      "checked_at": "2026-10-26T06:12:21.175274+00:00",
+      "cases_sha256": "d9a34b53229302935e8765faedbcc69f70d668202c8e75893102918a3565a8a5",
+      "current_metadata_sha256": "2148b1bb242e6cc9679351d2d5665e0ad5c67364a4bd1bc9df0bb7c4873e98c4",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 19,
+      "language": "c",
+      "source": "19-그래프모델링과BFS_graph-bfs/example.c",
+      "source_sha256": "21fd932a143927bb01f2f1585ee506edbf0b5e0d739dccdd82045486282aea99",
+      "metadata_sha256": "02c7bb7434cf2218ec9eb7cd440f201bc3124999c281abcd495781ebd2efb408",
+      "cases_sha256": "baaed70e1bbbb1242ea4f6a53d3a087c1e7cabb361df0e6f3d94451f13069df6",
+      "annotated_lines": 39,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 경로와 고립 정점",
+          "stdout": "0 1 1 2 3 -1\n",
+          "passed": true
+        },
+        {
+          "name": "정점 한 개",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "출발점만 도달",
+          "stdout": "-1 -1 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.8253,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "02c7bb7434cf2218ec9eb7cd440f201bc3124999c281abcd495781ebd2efb408",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 19,
+      "language": "cpp",
+      "source": "19-그래프모델링과BFS_graph-bfs/example.cpp",
+      "source_sha256": "f8dfb983c2686e8590244c22c444da8257db3a12700d76bbc4d3d87cd39b9960",
+      "metadata_sha256": "02c7bb7434cf2218ec9eb7cd440f201bc3124999c281abcd495781ebd2efb408",
+      "cases_sha256": "baaed70e1bbbb1242ea4f6a53d3a087c1e7cabb361df0e6f3d94451f13069df6",
+      "annotated_lines": 40,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 경로와 고립 정점",
+          "stdout": "0 1 1 2 3 -1\n",
+          "passed": true
+        },
+        {
+          "name": "정점 한 개",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "출발점만 도달",
+          "stdout": "-1 -1 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.5157,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "02c7bb7434cf2218ec9eb7cd440f201bc3124999c281abcd495781ebd2efb408",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 19,
+      "language": "python",
+      "source": "19-그래프모델링과BFS_graph-bfs/example.py",
+      "source_sha256": "bb6b51c4ffd5a228d816dacd52a0e3a3b28d6f819099fa44341a122616399eef",
+      "metadata_sha256": "02c7bb7434cf2218ec9eb7cd440f201bc3124999c281abcd495781ebd2efb408",
+      "cases_sha256": "baaed70e1bbbb1242ea4f6a53d3a087c1e7cabb361df0e6f3d94451f13069df6",
+      "annotated_lines": 22,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "두 경로와 고립 정점",
+          "stdout": "0 1 1 2 3 -1\n",
+          "passed": true
+        },
+        {
+          "name": "정점 한 개",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "출발점만 도달",
+          "stdout": "-1 -1 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.073,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "02c7bb7434cf2218ec9eb7cd440f201bc3124999c281abcd495781ebd2efb408",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 20,
+      "language": "c",
+      "source": "20-DFS와연결요소_graph-dfs/example.c",
+      "source_sha256": "a6fda04be1e0881e50e59a8c719a78efdb2b692090f5fa5e975a7c683384ecc9",
+      "metadata_sha256": "b1e7685d78ccc0f4fe516aabbfd923266c1c43cbbda060d7436d4af939cfc9fa",
+      "cases_sha256": "2f4a69ffde24bfb999dfbce46a94301df11423c67258c364ecee3f3275834c9e",
+      "annotated_lines": 42,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "세 연결 요소",
+          "stdout": "3\n0 0 0 1 1 2\n",
+          "passed": true
+        },
+        {
+          "name": "고립 정점 하나",
+          "stdout": "1\n0\n",
+          "passed": true
+        },
+        {
+          "name": "사이클도 한 요소",
+          "stdout": "1\n0 0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6865,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "b1e7685d78ccc0f4fe516aabbfd923266c1c43cbbda060d7436d4af939cfc9fa",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 20,
+      "language": "cpp",
+      "source": "20-DFS와연결요소_graph-dfs/example.cpp",
+      "source_sha256": "b3db5b6a637197a26f4e585fa1b4e608153c5549517c61038073b7dbd0b1d39e",
+      "metadata_sha256": "b1e7685d78ccc0f4fe516aabbfd923266c1c43cbbda060d7436d4af939cfc9fa",
+      "cases_sha256": "2f4a69ffde24bfb999dfbce46a94301df11423c67258c364ecee3f3275834c9e",
+      "annotated_lines": 43,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "세 연결 요소",
+          "stdout": "3\n0 0 0 1 1 2\n",
+          "passed": true
+        },
+        {
+          "name": "고립 정점 하나",
+          "stdout": "1\n0\n",
+          "passed": true
+        },
+        {
+          "name": "사이클도 한 요소",
+          "stdout": "1\n0 0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.4588,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "b1e7685d78ccc0f4fe516aabbfd923266c1c43cbbda060d7436d4af939cfc9fa",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 20,
+      "language": "python",
+      "source": "20-DFS와연결요소_graph-dfs/example.py",
+      "source_sha256": "ddda63f0555ba9e9270eac2ab40e6e753cd6dcac52840646f8f8e7f4d2241566",
+      "metadata_sha256": "b1e7685d78ccc0f4fe516aabbfd923266c1c43cbbda060d7436d4af939cfc9fa",
+      "cases_sha256": "2f4a69ffde24bfb999dfbce46a94301df11423c67258c364ecee3f3275834c9e",
+      "annotated_lines": 26,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "세 연결 요소",
+          "stdout": "3\n0 0 0 1 1 2\n",
+          "passed": true
+        },
+        {
+          "name": "고립 정점 하나",
+          "stdout": "1\n0\n",
+          "passed": true
+        },
+        {
+          "name": "사이클도 한 요소",
+          "stdout": "1\n0 0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0685,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "b1e7685d78ccc0f4fe516aabbfd923266c1c43cbbda060d7436d4af939cfc9fa",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 21,
+      "language": "c",
+      "source": "21-최단경로와확장상태_shortest-path/example.c",
+      "source_sha256": "39439b277ad09134a2d2fd021f224e9e7ac1320e04418660985e7dfe0f5e7a3e",
+      "metadata_sha256": "ca1ebf44cc3133c99037dc1ff59192c8f901fdabe13e01324ce521b120373cba",
+      "cases_sha256": "482028201dbcb711ee1c3623b50e92bd78dcf79c056650ba9ca5c88598670778",
+      "annotated_lines": 45,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "먼저 발견한 값의 개선",
+          "stdout": "0 2 1 4\n",
+          "passed": true
+        },
+        {
+          "name": "정점 하나",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "0비용 평행 간선과 미도달",
+          "stdout": "0 0 -1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.7323,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "ca1ebf44cc3133c99037dc1ff59192c8f901fdabe13e01324ce521b120373cba",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 21,
+      "language": "cpp",
+      "source": "21-최단경로와확장상태_shortest-path/example.cpp",
+      "source_sha256": "f9aadb65af055656d23bd9c87a66d07603e8691deb73cbc9702b3c2f448259d3",
+      "metadata_sha256": "ca1ebf44cc3133c99037dc1ff59192c8f901fdabe13e01324ce521b120373cba",
+      "cases_sha256": "482028201dbcb711ee1c3623b50e92bd78dcf79c056650ba9ca5c88598670778",
+      "annotated_lines": 46,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "먼저 발견한 값의 개선",
+          "stdout": "0 2 1 4\n",
+          "passed": true
+        },
+        {
+          "name": "정점 하나",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "0비용 평행 간선과 미도달",
+          "stdout": "0 0 -1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.4793,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "ca1ebf44cc3133c99037dc1ff59192c8f901fdabe13e01324ce521b120373cba",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 21,
+      "language": "python",
+      "source": "21-최단경로와확장상태_shortest-path/example.py",
+      "source_sha256": "cce4c842457d7b73ba3abaeeab1eec822352ed6fce356132018e56444d54a15f",
+      "metadata_sha256": "ca1ebf44cc3133c99037dc1ff59192c8f901fdabe13e01324ce521b120373cba",
+      "cases_sha256": "482028201dbcb711ee1c3623b50e92bd78dcf79c056650ba9ca5c88598670778",
+      "annotated_lines": 26,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "먼저 발견한 값의 개선",
+          "stdout": "0 2 1 4\n",
+          "passed": true
+        },
+        {
+          "name": "정점 하나",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "0비용 평행 간선과 미도달",
+          "stdout": "0 0 -1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.07,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "ca1ebf44cc3133c99037dc1ff59192c8f901fdabe13e01324ce521b120373cba",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 22,
+      "language": "c",
+      "source": "22-최소신장트리와서로소집합_mst-dsu/example.c",
+      "source_sha256": "2b1244ff353f6af6c2b9b54d989856f3f641ffcf6c34876cba10204b8b53a65a",
+      "metadata_sha256": "95a498f0281dc3d462975dfe5222352a002a716cf653562b1137b3fa99cf7c83",
+      "cases_sha256": "d2473142235c9645c82205a8554423772dbd70b6cfbe586f52f1260f0401addb",
+      "annotated_lines": 46,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "사이클 간선 제외",
+          "stdout": "7\n",
+          "passed": true
+        },
+        {
+          "name": "간선 없는 정점 하나",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "연결 불가",
+          "stdout": "DISCONNECTED\n",
+          "passed": true
+        },
+        {
+          "name": "음수 비용도 허용",
+          "stdout": "-3\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6551,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "95a498f0281dc3d462975dfe5222352a002a716cf653562b1137b3fa99cf7c83",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 22,
+      "language": "cpp",
+      "source": "22-최소신장트리와서로소집합_mst-dsu/example.cpp",
+      "source_sha256": "162fbbb21bbcb9f2d521d0d3bf7cca466830edd6b02bc730dd72682261a61a86",
+      "metadata_sha256": "95a498f0281dc3d462975dfe5222352a002a716cf653562b1137b3fa99cf7c83",
+      "cases_sha256": "d2473142235c9645c82205a8554423772dbd70b6cfbe586f52f1260f0401addb",
+      "annotated_lines": 47,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "사이클 간선 제외",
+          "stdout": "7\n",
+          "passed": true
+        },
+        {
+          "name": "간선 없는 정점 하나",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "연결 불가",
+          "stdout": "DISCONNECTED\n",
+          "passed": true
+        },
+        {
+          "name": "음수 비용도 허용",
+          "stdout": "-3\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.4539,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "95a498f0281dc3d462975dfe5222352a002a716cf653562b1137b3fa99cf7c83",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 22,
+      "language": "python",
+      "source": "22-최소신장트리와서로소집합_mst-dsu/example.py",
+      "source_sha256": "35da6323fb7e61ddc19ab3aa39d77eb6c9f9a10bce33dae555e5185187df4038",
+      "metadata_sha256": "95a498f0281dc3d462975dfe5222352a002a716cf653562b1137b3fa99cf7c83",
+      "cases_sha256": "d2473142235c9645c82205a8554423772dbd70b6cfbe586f52f1260f0401addb",
+      "annotated_lines": 30,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "사이클 간선 제외",
+          "stdout": "7\n",
+          "passed": true
+        },
+        {
+          "name": "간선 없는 정점 하나",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "연결 불가",
+          "stdout": "DISCONNECTED\n",
+          "passed": true
+        },
+        {
+          "name": "음수 비용도 허용",
+          "stdout": "-3\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.094,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "95a498f0281dc3d462975dfe5222352a002a716cf653562b1137b3fa99cf7c83",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 23,
+      "language": "c",
+      "source": "23-위상정렬과DAG_topological-dag/example.c",
+      "source_sha256": "504303c6b71e3f055d056ef9c96fcd2253d20c3c2d1dff4766e3102206125d58",
+      "metadata_sha256": "d4b2bd4fde9ce8d3a31b6d894300fa8ae172b2605b8d4305ef990e5060b3bb00",
+      "cases_sha256": "f629eb665c20178796294b4ff47adfe04af5a78b1ea37ebbc009c1ba1e49c3c3",
+      "annotated_lines": 38,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 선행 작업의 병렬 실행",
+          "stdout": "2 5 8 9\n",
+          "passed": true
+        },
+        {
+          "name": "작업 하나",
+          "stdout": "7\n",
+          "passed": true
+        },
+        {
+          "name": "순환 의존",
+          "stdout": "CYCLE\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6843,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "01cecbee4ec1e0a41b2939561e3ef2eee6e9b0e808ba75f2c4d4679c1bc1a4a2",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 23,
+      "language": "cpp",
+      "source": "23-위상정렬과DAG_topological-dag/example.cpp",
+      "source_sha256": "8c9d646cd3f0dd64fef8f82c1e29fbe40d56cfbb994d3a21715356b938d1e7ba",
+      "metadata_sha256": "d4b2bd4fde9ce8d3a31b6d894300fa8ae172b2605b8d4305ef990e5060b3bb00",
+      "cases_sha256": "f629eb665c20178796294b4ff47adfe04af5a78b1ea37ebbc009c1ba1e49c3c3",
+      "annotated_lines": 39,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 선행 작업의 병렬 실행",
+          "stdout": "2 5 8 9\n",
+          "passed": true
+        },
+        {
+          "name": "작업 하나",
+          "stdout": "7\n",
+          "passed": true
+        },
+        {
+          "name": "순환 의존",
+          "stdout": "CYCLE\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3281,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "01cecbee4ec1e0a41b2939561e3ef2eee6e9b0e808ba75f2c4d4679c1bc1a4a2",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 23,
+      "language": "python",
+      "source": "23-위상정렬과DAG_topological-dag/example.py",
+      "source_sha256": "1ed2e05a4f8aa9b1cfb355ce1ae45cab7502fc61e1e27ab3c79a35af42b993e0",
+      "metadata_sha256": "d4b2bd4fde9ce8d3a31b6d894300fa8ae172b2605b8d4305ef990e5060b3bb00",
+      "cases_sha256": "f629eb665c20178796294b4ff47adfe04af5a78b1ea37ebbc009c1ba1e49c3c3",
+      "annotated_lines": 32,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "두 선행 작업의 병렬 실행",
+          "stdout": "2 5 8 9\n",
+          "passed": true
+        },
+        {
+          "name": "작업 하나",
+          "stdout": "7\n",
+          "passed": true
+        },
+        {
+          "name": "순환 의존",
+          "stdout": "CYCLE\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0743,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "01cecbee4ec1e0a41b2939561e3ef2eee6e9b0e808ba75f2c4d4679c1bc1a4a2",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 24,
+      "language": "c",
+      "source": "24-강한연결요소단절점2SAT_scc-lowlink-2sat/example.c",
+      "source_sha256": "f0272d3228385bedcd416502c41df98fa1f46128198286c32a5d91e861cfbd61",
+      "metadata_sha256": "eaf0679a9278dd7b924f843318809f4c9e3e64b6c97f9e32d01fec28116643c7",
+      "cases_sha256": "ba30eec84b8bdf52f15f38f27be6e7d40b8953958f66a07396bb0d5cce5214d7",
+      "annotated_lines": 42,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 변수 모두 참인 해",
+          "stdout": "SAT\n",
+          "passed": true
+        },
+        {
+          "name": "네 조합 모두 금지",
+          "stdout": "UNSAT\n",
+          "passed": true
+        },
+        {
+          "name": "절 없는 변수",
+          "stdout": "SAT\n",
+          "passed": true
+        },
+        {
+          "name": "서로 반대인 단항 절",
+          "stdout": "UNSAT\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.7049,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "eaf0679a9278dd7b924f843318809f4c9e3e64b6c97f9e32d01fec28116643c7",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 24,
+      "language": "cpp",
+      "source": "24-강한연결요소단절점2SAT_scc-lowlink-2sat/example.cpp",
+      "source_sha256": "b1e115be1a419a16fffb777f9d3af5931565db922c2382bac96c8a170beed3ff",
+      "metadata_sha256": "eaf0679a9278dd7b924f843318809f4c9e3e64b6c97f9e32d01fec28116643c7",
+      "cases_sha256": "ba30eec84b8bdf52f15f38f27be6e7d40b8953958f66a07396bb0d5cce5214d7",
+      "annotated_lines": 43,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 변수 모두 참인 해",
+          "stdout": "SAT\n",
+          "passed": true
+        },
+        {
+          "name": "네 조합 모두 금지",
+          "stdout": "UNSAT\n",
+          "passed": true
+        },
+        {
+          "name": "절 없는 변수",
+          "stdout": "SAT\n",
+          "passed": true
+        },
+        {
+          "name": "서로 반대인 단항 절",
+          "stdout": "UNSAT\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.5102,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "eaf0679a9278dd7b924f843318809f4c9e3e64b6c97f9e32d01fec28116643c7",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 24,
+      "language": "python",
+      "source": "24-강한연결요소단절점2SAT_scc-lowlink-2sat/example.py",
+      "source_sha256": "18b25075471f99ed406845268f234610a37c3dd094e87bfc0b62481a275e9241",
+      "metadata_sha256": "eaf0679a9278dd7b924f843318809f4c9e3e64b6c97f9e32d01fec28116643c7",
+      "cases_sha256": "ba30eec84b8bdf52f15f38f27be6e7d40b8953958f66a07396bb0d5cce5214d7",
+      "annotated_lines": 37,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "두 변수 모두 참인 해",
+          "stdout": "SAT\n",
+          "passed": true
+        },
+        {
+          "name": "네 조합 모두 금지",
+          "stdout": "UNSAT\n",
+          "passed": true
+        },
+        {
+          "name": "절 없는 변수",
+          "stdout": "SAT\n",
+          "passed": true
+        },
+        {
+          "name": "서로 반대인 단항 절",
+          "stdout": "UNSAT\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0933,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "eaf0679a9278dd7b924f843318809f4c9e3e64b6c97f9e32d01fec28116643c7",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 25,
+      "language": "c",
+      "source": "25-트리순회LCA트리DP_trees-lca-dp/example.c",
+      "source_sha256": "51e8f26de3a5171c719a6ccd468350294acde60d04e07ffff5630da5aba10192",
+      "metadata_sha256": "6bcbcabf775baffa4a62d1fbfb3842c63c56c05904d2cffbefa151553d7687d2",
+      "cases_sha256": "4c2d70943aaa55931d12c275e174fe4dae45635e9b33ddafe12e804ab7abbf6a",
+      "annotated_lines": 54,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "형제·분리 가지·조상·동일 정점",
+          "stdout": "5 3 1 1 1\n1\n0\n1\n2\n",
+          "passed": true
+        },
+        {
+          "name": "루트 한 개",
+          "stdout": "1\n0\n",
+          "passed": true
+        },
+        {
+          "name": "길이 3인 사슬",
+          "stdout": "3 2 1\n0\n1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.8444,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "6bcbcabf775baffa4a62d1fbfb3842c63c56c05904d2cffbefa151553d7687d2",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 25,
+      "language": "cpp",
+      "source": "25-트리순회LCA트리DP_trees-lca-dp/example.cpp",
+      "source_sha256": "8ee4d2675aab5de9354e7a4f69c37c3d624fb51470ea3bce588d464c9f608dd3",
+      "metadata_sha256": "6bcbcabf775baffa4a62d1fbfb3842c63c56c05904d2cffbefa151553d7687d2",
+      "cases_sha256": "4c2d70943aaa55931d12c275e174fe4dae45635e9b33ddafe12e804ab7abbf6a",
+      "annotated_lines": 55,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "형제·분리 가지·조상·동일 정점",
+          "stdout": "5 3 1 1 1\n1\n0\n1\n2\n",
+          "passed": true
+        },
+        {
+          "name": "루트 한 개",
+          "stdout": "1\n0\n",
+          "passed": true
+        },
+        {
+          "name": "길이 3인 사슬",
+          "stdout": "3 2 1\n0\n1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3932,
+      "passed": true,
+      "checked_at": "2026-10-26T06:21:53.856644+00:00",
+      "current_metadata_sha256": "6bcbcabf775baffa4a62d1fbfb3842c63c56c05904d2cffbefa151553d7687d2",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 25,
+      "language": "python",
+      "source": "25-트리순회LCA트리DP_trees-lca-dp/example.py",
+      "source_sha256": "e40f03e912494bb528c6ecace24c70a0048b842acff936ccada3cabc154a943b",
+      "metadata_sha256": "6bcbcabf775baffa4a62d1fbfb3842c63c56c05904d2cffbefa151553d7687d2",
+      "cases_sha256": "4c2d70943aaa55931d12c275e174fe4dae45635e9b33ddafe12e804ab7abbf6a",
+      "annotated_lines": 43,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "형제·분리 가지·조상·동일 정점",
+          "stdout": "5 3 1 1 1\n1\n0\n1\n2\n",
+          "passed": true
+        },
+        {
+          "name": "루트 한 개",
+          "stdout": "1\n0\n",
+          "passed": true
+        },
+        {
+          "name": "길이 3인 사슬",
+          "stdout": "3 2 1\n0\n1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0849,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "6bcbcabf775baffa4a62d1fbfb3842c63c56c05904d2cffbefa151553d7687d2",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 26,
+      "language": "c",
+      "source": "26-구간질의와지연전파_range-queries/example.c",
+      "source_sha256": "22c3df2bbc17d1cdece3e3f3c56270110380455ef35c499e9315158de1071377",
+      "metadata_sha256": "9ced8bc61a228d85e87aade19736c47a34877967587060a5f584dad1eac835a0",
+      "cases_sha256": "e286eae6cde88f8f8f5e947b1088fcb241c1060257272ac66f578a096cb1d932",
+      "annotated_lines": 65,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "전체 갱신 뒤 부분 질의",
+          "stdout": "10 10\n22 22\n10 10\n",
+          "passed": true
+        },
+        {
+          "name": "한 원소와 빈 구간",
+          "stdout": "0 0\n0 0\n",
+          "passed": true
+        },
+        {
+          "name": "부분 음수 갱신",
+          "stdout": "4 4\n0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 19.1919,
+      "passed": true,
+      "checked_at": "2026-10-26T06:16:51.828198+00:00",
+      "current_metadata_sha256": "9ced8bc61a228d85e87aade19736c47a34877967587060a5f584dad1eac835a0",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 26,
+      "language": "cpp",
+      "source": "26-구간질의와지연전파_range-queries/example.cpp",
+      "source_sha256": "51f67134346e555e0bc678e0b02e8cfae0d002d4611b6f6e251a872f548c2580",
+      "metadata_sha256": "9ced8bc61a228d85e87aade19736c47a34877967587060a5f584dad1eac835a0",
+      "cases_sha256": "e286eae6cde88f8f8f5e947b1088fcb241c1060257272ac66f578a096cb1d932",
+      "annotated_lines": 65,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "전체 갱신 뒤 부분 질의",
+          "stdout": "10 10\n22 22\n10 10\n",
+          "passed": true
+        },
+        {
+          "name": "한 원소와 빈 구간",
+          "stdout": "0 0\n0 0\n",
+          "passed": true
+        },
+        {
+          "name": "부분 음수 갱신",
+          "stdout": "4 4\n0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 19.8743,
+      "passed": true,
+      "checked_at": "2026-10-26T06:16:51.828198+00:00",
+      "current_metadata_sha256": "9ced8bc61a228d85e87aade19736c47a34877967587060a5f584dad1eac835a0",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 26,
+      "language": "python",
+      "source": "26-구간질의와지연전파_range-queries/example.py",
+      "source_sha256": "2dba9309de068d896559f4b10e2582f852f0d076c878e214193f973896b678a4",
+      "metadata_sha256": "9ced8bc61a228d85e87aade19736c47a34877967587060a5f584dad1eac835a0",
+      "cases_sha256": "e286eae6cde88f8f8f5e947b1088fcb241c1060257272ac66f578a096cb1d932",
+      "annotated_lines": 68,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "전체 갱신 뒤 부분 질의",
+          "stdout": "10 10\n22 22\n10 10\n",
+          "passed": true
+        },
+        {
+          "name": "한 원소와 빈 구간",
+          "stdout": "0 0\n0 0\n",
+          "passed": true
+        },
+        {
+          "name": "부분 음수 갱신",
+          "stdout": "4 4\n0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0762,
+      "passed": true,
+      "checked_at": "2026-10-26T06:16:51.828198+00:00",
+      "current_metadata_sha256": "9ced8bc61a228d85e87aade19736c47a34877967587060a5f584dad1eac835a0",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 27,
+      "language": "c",
+      "source": "27-오프라인질의와스위프_offline-sweep/example.c",
+      "source_sha256": "6957c65d8f8207920dca925d05a24dfca014bcfd24ecc818967ec52261f4b7e8",
+      "metadata_sha256": "5dbf5884e4ba842b49a4bb1309c6c9da064083d81b65abd288933b60eed441dc",
+      "cases_sha256": "fa7d53b846a5c1fbb323cb742a0e1e22bc6133ada8ca748e1c406c90b257c6cd",
+      "annotated_lines": 51,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "본문의 세 질의",
+          "stdout": "1\n1\n3\n",
+          "passed": true
+        },
+        {
+          "name": "점 없음",
+          "stdout": "0\n0\n",
+          "passed": true
+        },
+        {
+          "name": "같은 좌표 포함과 중복",
+          "stdout": "0\n0\n2\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.737,
+      "passed": true,
+      "checked_at": "2026-10-26T06:16:51.828198+00:00",
+      "current_metadata_sha256": "5dbf5884e4ba842b49a4bb1309c6c9da064083d81b65abd288933b60eed441dc",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 27,
+      "language": "cpp",
+      "source": "27-오프라인질의와스위프_offline-sweep/example.cpp",
+      "source_sha256": "0c2f778fe95e64c218cb6bbd5a3316cdf201b964e7b71cc63667444f40446bf7",
+      "metadata_sha256": "5dbf5884e4ba842b49a4bb1309c6c9da064083d81b65abd288933b60eed441dc",
+      "cases_sha256": "fa7d53b846a5c1fbb323cb742a0e1e22bc6133ada8ca748e1c406c90b257c6cd",
+      "annotated_lines": 51,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "본문의 세 질의",
+          "stdout": "1\n1\n3\n",
+          "passed": true
+        },
+        {
+          "name": "점 없음",
+          "stdout": "0\n0\n",
+          "passed": true
+        },
+        {
+          "name": "같은 좌표 포함과 중복",
+          "stdout": "0\n0\n2\n",
+          "passed": true
+        }
+      ],
+      "seconds": 3.4535,
+      "passed": true,
+      "checked_at": "2026-10-26T06:16:51.828198+00:00",
+      "current_metadata_sha256": "5dbf5884e4ba842b49a4bb1309c6c9da064083d81b65abd288933b60eed441dc",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 27,
+      "language": "python",
+      "source": "27-오프라인질의와스위프_offline-sweep/example.py",
+      "source_sha256": "7d2146f63b240334de7553116b6dbff60da9ccd160f4fcd082001d7734b3007f",
+      "metadata_sha256": "5dbf5884e4ba842b49a4bb1309c6c9da064083d81b65abd288933b60eed441dc",
+      "cases_sha256": "fa7d53b846a5c1fbb323cb742a0e1e22bc6133ada8ca748e1c406c90b257c6cd",
+      "annotated_lines": 29,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "본문의 세 질의",
+          "stdout": "1\n1\n3\n",
+          "passed": true
+        },
+        {
+          "name": "점 없음",
+          "stdout": "0\n0\n",
+          "passed": true
+        },
+        {
+          "name": "같은 좌표 포함과 중복",
+          "stdout": "0\n0\n2\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0876,
+      "passed": true,
+      "checked_at": "2026-10-26T06:16:51.828198+00:00",
+      "current_metadata_sha256": "5dbf5884e4ba842b49a4bb1309c6c9da064083d81b65abd288933b60eed441dc",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 28,
+      "language": "c",
+      "source": "28-트라이와문자열매칭_trie-kmp-aho/example.c",
+      "source_sha256": "98660a73c1c62e85bd8fca1ed35f0643227f9660b32772f115340a2fef444d16",
+      "metadata_sha256": "fdb972839cf97d2ff3ff7304bdadfb3ab515c261e0c5285305d48bd791239265",
+      "cases_sha256": "ec882bc4c68ba6bca42be652d3d2aecd95f0c5c4cfd8d1e80035dd4de49450e5",
+      "annotated_lines": 41,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "실패 복구와 완전 단어",
+          "stdout": "WORD YES\nPREFIX YES\nMATCHES 1\n",
+          "passed": true
+        },
+        {
+          "name": "빈 사전과 겹치는 발생",
+          "stdout": "WORD NO\nPREFIX NO\nMATCHES 3\n",
+          "passed": true
+        },
+        {
+          "name": "접두사만 존재",
+          "stdout": "WORD NO\nPREFIX YES\nMATCHES 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 2.5979,
+      "passed": true,
+      "checked_at": "2026-10-26T06:16:51.828198+00:00",
+      "current_metadata_sha256": "fdb972839cf97d2ff3ff7304bdadfb3ab515c261e0c5285305d48bd791239265",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 28,
+      "language": "cpp",
+      "source": "28-트라이와문자열매칭_trie-kmp-aho/example.cpp",
+      "source_sha256": "cce75de7c173c91f312e5c74a2588c58a869572cc93517a860e79f881a550710",
+      "metadata_sha256": "fdb972839cf97d2ff3ff7304bdadfb3ab515c261e0c5285305d48bd791239265",
+      "cases_sha256": "ec882bc4c68ba6bca42be652d3d2aecd95f0c5c4cfd8d1e80035dd4de49450e5",
+      "annotated_lines": 41,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "실패 복구와 완전 단어",
+          "stdout": "WORD YES\nPREFIX YES\nMATCHES 1\n",
+          "passed": true
+        },
+        {
+          "name": "빈 사전과 겹치는 발생",
+          "stdout": "WORD NO\nPREFIX NO\nMATCHES 3\n",
+          "passed": true
+        },
+        {
+          "name": "접두사만 존재",
+          "stdout": "WORD NO\nPREFIX YES\nMATCHES 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3548,
+      "passed": true,
+      "checked_at": "2026-10-26T06:16:51.828198+00:00",
+      "current_metadata_sha256": "fdb972839cf97d2ff3ff7304bdadfb3ab515c261e0c5285305d48bd791239265",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 28,
+      "language": "python",
+      "source": "28-트라이와문자열매칭_trie-kmp-aho/example.py",
+      "source_sha256": "02a656d4e7c0f335c8d0959b6ddefa0c16baa8986a68633bf8fa2cbf2e73076c",
+      "metadata_sha256": "fdb972839cf97d2ff3ff7304bdadfb3ab515c261e0c5285305d48bd791239265",
+      "cases_sha256": "ec882bc4c68ba6bca42be652d3d2aecd95f0c5c4cfd8d1e80035dd4de49450e5",
+      "annotated_lines": 43,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "실패 복구와 완전 단어",
+          "stdout": "WORD YES\nPREFIX YES\nMATCHES 1\n",
+          "passed": true
+        },
+        {
+          "name": "빈 사전과 겹치는 발생",
+          "stdout": "WORD NO\nPREFIX NO\nMATCHES 3\n",
+          "passed": true
+        },
+        {
+          "name": "접두사만 존재",
+          "stdout": "WORD NO\nPREFIX YES\nMATCHES 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0789,
+      "passed": true,
+      "checked_at": "2026-10-26T06:16:51.828198+00:00",
+      "current_metadata_sha256": "fdb972839cf97d2ff3ff7304bdadfb3ab515c261e0c5285305d48bd791239265",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 29,
+      "language": "c",
+      "source": "29-접미사해시팰린드롬_suffix-hash-palindrome/example.c",
+      "source_sha256": "559c9a2a2cbc6f9b2e3698912c5f39e8904de1b9a71a4e80b38792f780d4dfce",
+      "metadata_sha256": "596f86906ffc68666fc992080e806f0f9f93d4ac4d5342042c715e0612c22b23",
+      "cases_sha256": "739145a7031c82c693b83cb7c9c9eacdb54525f88da5da76ff630508c6585471",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "홀수 대칭",
+          "stdout": "MAX 7\nCOUNT 12\n",
+          "passed": true
+        },
+        {
+          "name": "한 문자",
+          "stdout": "MAX 1\nCOUNT 1\n",
+          "passed": true
+        },
+        {
+          "name": "짝수 대칭",
+          "stdout": "MAX 4\nCOUNT 6\n",
+          "passed": true
+        },
+        {
+          "name": "반복 문자",
+          "stdout": "MAX 4\nCOUNT 10\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6081,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "596f86906ffc68666fc992080e806f0f9f93d4ac4d5342042c715e0612c22b23",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 29,
+      "language": "cpp",
+      "source": "29-접미사해시팰린드롬_suffix-hash-palindrome/example.cpp",
+      "source_sha256": "e3dd4e60c5562d7dd85897c291071144625169d1ad169751e698c489280164b2",
+      "metadata_sha256": "596f86906ffc68666fc992080e806f0f9f93d4ac4d5342042c715e0612c22b23",
+      "cases_sha256": "739145a7031c82c693b83cb7c9c9eacdb54525f88da5da76ff630508c6585471",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "홀수 대칭",
+          "stdout": "MAX 7\nCOUNT 12\n",
+          "passed": true
+        },
+        {
+          "name": "한 문자",
+          "stdout": "MAX 1\nCOUNT 1\n",
+          "passed": true
+        },
+        {
+          "name": "짝수 대칭",
+          "stdout": "MAX 4\nCOUNT 6\n",
+          "passed": true
+        },
+        {
+          "name": "반복 문자",
+          "stdout": "MAX 4\nCOUNT 10\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2448,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "596f86906ffc68666fc992080e806f0f9f93d4ac4d5342042c715e0612c22b23",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 29,
+      "language": "python",
+      "source": "29-접미사해시팰린드롬_suffix-hash-palindrome/example.py",
+      "source_sha256": "ea73fdd5bf35d7a9396f9ab5d59a6d02c784e8ee01b007a4491d46902f785672",
+      "metadata_sha256": "596f86906ffc68666fc992080e806f0f9f93d4ac4d5342042c715e0612c22b23",
+      "cases_sha256": "739145a7031c82c693b83cb7c9c9eacdb54525f88da5da76ff630508c6585471",
+      "annotated_lines": 26,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "홀수 대칭",
+          "stdout": "MAX 7\nCOUNT 12\n",
+          "passed": true
+        },
+        {
+          "name": "한 문자",
+          "stdout": "MAX 1\nCOUNT 1\n",
+          "passed": true
+        },
+        {
+          "name": "짝수 대칭",
+          "stdout": "MAX 4\nCOUNT 6\n",
+          "passed": true
+        },
+        {
+          "name": "반복 문자",
+          "stdout": "MAX 4\nCOUNT 10\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.1036,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "596f86906ffc68666fc992080e806f0f9f93d4ac4d5342042c715e0612c22b23",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 30,
+      "language": "c",
+      "source": "30-정수론과모듈러연산_number-theory/example.c",
+      "source_sha256": "e0737b1037c6867893ce701cfd958d498b6dec2143e419a1329fa8734304a17e",
+      "metadata_sha256": "b0dfc787fbda10904bd3091b2818422be9eab5e9e15ec08f4e6d820dbabef8af",
+      "cases_sha256": "28d0738dab40fccdf18eabf1e43a366109fa69c65f29c8ac48f25c9c21a32a03",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 나머지 계산",
+          "stdout": "GCD 6\nPOWER 2\n",
+          "passed": true
+        },
+        {
+          "name": "0과 모듈러1",
+          "stdout": "GCD 0\nPOWER 0\n",
+          "passed": true
+        },
+        {
+          "name": "여러 제곱",
+          "stdout": "GCD 1\nPOWER 24\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.5803,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "b0dfc787fbda10904bd3091b2818422be9eab5e9e15ec08f4e6d820dbabef8af",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 30,
+      "language": "cpp",
+      "source": "30-정수론과모듈러연산_number-theory/example.cpp",
+      "source_sha256": "3f2bb4ddc8491691309e6872a27e5f7e2d6d15a9cf175dea881a70bd9de68542",
+      "metadata_sha256": "b0dfc787fbda10904bd3091b2818422be9eab5e9e15ec08f4e6d820dbabef8af",
+      "cases_sha256": "28d0738dab40fccdf18eabf1e43a366109fa69c65f29c8ac48f25c9c21a32a03",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 나머지 계산",
+          "stdout": "GCD 6\nPOWER 2\n",
+          "passed": true
+        },
+        {
+          "name": "0과 모듈러1",
+          "stdout": "GCD 0\nPOWER 0\n",
+          "passed": true
+        },
+        {
+          "name": "여러 제곱",
+          "stdout": "GCD 1\nPOWER 24\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2252,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "b0dfc787fbda10904bd3091b2818422be9eab5e9e15ec08f4e6d820dbabef8af",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 30,
+      "language": "python",
+      "source": "30-정수론과모듈러연산_number-theory/example.py",
+      "source_sha256": "f10782c4d6be537f70b4002fb14dbb6cf251aa3cc2f0497ff3259fe62fc9363d",
+      "metadata_sha256": "b0dfc787fbda10904bd3091b2818422be9eab5e9e15ec08f4e6d820dbabef8af",
+      "cases_sha256": "28d0738dab40fccdf18eabf1e43a366109fa69c65f29c8ac48f25c9c21a32a03",
+      "annotated_lines": 14,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "두 나머지 계산",
+          "stdout": "GCD 6\nPOWER 2\n",
+          "passed": true
+        },
+        {
+          "name": "0과 모듈러1",
+          "stdout": "GCD 0\nPOWER 0\n",
+          "passed": true
+        },
+        {
+          "name": "여러 제곱",
+          "stdout": "GCD 1\nPOWER 24\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0693,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "b0dfc787fbda10904bd3091b2818422be9eab5e9e15ec08f4e6d820dbabef8af",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 31,
+      "language": "c",
+      "source": "31-조합론과생성함수_combinatorics-generating-functions/example.c",
+      "source_sha256": "6c75f4a6b8ea482201cc1ad51abfffd1b2e48322b43ad7e1da65de5785ce1889",
+      "metadata_sha256": "cd968b3bed52fecbdca20d6b8fbd25c0d116042b13ab3884dcfbfc57f0c1b15f",
+      "cases_sha256": "d0fe89d57f7e41cf45bb9577f0a7be27766ba3159c7918218cec79299af5e61b",
+      "annotated_lines": 23,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "선택 다항식과 배수",
+          "stdout": "1 2 2 1\n8\n",
+          "passed": true
+        },
+        {
+          "name": "0계수와 빈 정수 범위",
+          "stdout": "0\n0\n",
+          "passed": true
+        },
+        {
+          "name": "동일 조건 중복",
+          "stdout": "0 1 0\n5\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.5914,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "cd968b3bed52fecbdca20d6b8fbd25c0d116042b13ab3884dcfbfc57f0c1b15f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 31,
+      "language": "cpp",
+      "source": "31-조합론과생성함수_combinatorics-generating-functions/example.cpp",
+      "source_sha256": "5b0a909aa2c76bfe03ce293cca1cf9032a710b15737b91fc646ff68ebcda6a91",
+      "metadata_sha256": "cd968b3bed52fecbdca20d6b8fbd25c0d116042b13ab3884dcfbfc57f0c1b15f",
+      "cases_sha256": "d0fe89d57f7e41cf45bb9577f0a7be27766ba3159c7918218cec79299af5e61b",
+      "annotated_lines": 23,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "선택 다항식과 배수",
+          "stdout": "1 2 2 1\n8\n",
+          "passed": true
+        },
+        {
+          "name": "0계수와 빈 정수 범위",
+          "stdout": "0\n0\n",
+          "passed": true
+        },
+        {
+          "name": "동일 조건 중복",
+          "stdout": "0 1 0\n5\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2367,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "cd968b3bed52fecbdca20d6b8fbd25c0d116042b13ab3884dcfbfc57f0c1b15f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 31,
+      "language": "python",
+      "source": "31-조합론과생성함수_combinatorics-generating-functions/example.py",
+      "source_sha256": "b24dca4fbcbf2cb85007a7f97bc28ef57dab9b206ee034325845486bbbe44a91",
+      "metadata_sha256": "cd968b3bed52fecbdca20d6b8fbd25c0d116042b13ab3884dcfbfc57f0c1b15f",
+      "cases_sha256": "d0fe89d57f7e41cf45bb9577f0a7be27766ba3159c7918218cec79299af5e61b",
+      "annotated_lines": 17,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "선택 다항식과 배수",
+          "stdout": "1 2 2 1\n8\n",
+          "passed": true
+        },
+        {
+          "name": "0계수와 빈 정수 범위",
+          "stdout": "0\n0\n",
+          "passed": true
+        },
+        {
+          "name": "동일 조건 중복",
+          "stdout": "0 1 0\n5\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0763,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "cd968b3bed52fecbdca20d6b8fbd25c0d116042b13ab3884dcfbfc57f0c1b15f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 32,
+      "language": "c",
+      "source": "32-행렬거듭제곱과선형점화_matrix-recurrence/example.c",
+      "source_sha256": "232f739b41ae185a06e30ca7072c41e9f036b91eccc4b83780c11361a0a36a8d",
+      "metadata_sha256": "22bc5ec2738991c71b39ba3bc597f4beb1ae01cafca39005935d53e1dc5e4a19",
+      "cases_sha256": "539ee7dab11e8db8de21f04b7dc9090baba9e92ccbbb2aea884eb310e85bf133",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "다섯 번째 항",
+          "stdout": "5\n",
+          "passed": true
+        },
+        {
+          "name": "초기 단계",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "모듈러 1",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "열 번째 항",
+          "stdout": "55\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6124,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "22bc5ec2738991c71b39ba3bc597f4beb1ae01cafca39005935d53e1dc5e4a19",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 32,
+      "language": "cpp",
+      "source": "32-행렬거듭제곱과선형점화_matrix-recurrence/example.cpp",
+      "source_sha256": "8e3cd72c4cb8e3e71e4aa1e071de0a725468e246fc5f8bc1062cc1b4b434e709",
+      "metadata_sha256": "22bc5ec2738991c71b39ba3bc597f4beb1ae01cafca39005935d53e1dc5e4a19",
+      "cases_sha256": "539ee7dab11e8db8de21f04b7dc9090baba9e92ccbbb2aea884eb310e85bf133",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "다섯 번째 항",
+          "stdout": "5\n",
+          "passed": true
+        },
+        {
+          "name": "초기 단계",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "모듈러 1",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "열 번째 항",
+          "stdout": "55\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2175,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "22bc5ec2738991c71b39ba3bc597f4beb1ae01cafca39005935d53e1dc5e4a19",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 32,
+      "language": "python",
+      "source": "32-행렬거듭제곱과선형점화_matrix-recurrence/example.py",
+      "source_sha256": "818949448d0479adf034a5926b8af6161f9ef6e26e50073fce6d1ef1a9eb4f2a",
+      "metadata_sha256": "22bc5ec2738991c71b39ba3bc597f4beb1ae01cafca39005935d53e1dc5e4a19",
+      "cases_sha256": "539ee7dab11e8db8de21f04b7dc9090baba9e92ccbbb2aea884eb310e85bf133",
+      "annotated_lines": 17,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "다섯 번째 항",
+          "stdout": "5\n",
+          "passed": true
+        },
+        {
+          "name": "초기 단계",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "모듈러 1",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "열 번째 항",
+          "stdout": "55\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0924,
+      "passed": true,
+      "checked_at": "2026-10-26T06:18:32.642627+00:00",
+      "current_metadata_sha256": "22bc5ec2738991c71b39ba3bc597f4beb1ae01cafca39005935d53e1dc5e4a19",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 33,
+      "language": "c",
+      "source": "33-계산기하와좌표변환_computational-geometry/example.c",
+      "source_sha256": "53cea0df99a266bb2f01a6ab3bc3a70929d9562e668ebecee94a8fa36f7104be",
+      "metadata_sha256": "e6b39665e9049dfd8f1aea4e50428a020e601be2af9c3e97fff5a871111c16b0",
+      "cases_sha256": "52de1d3730922463f7372be25c77e304267e0fed51e6d523c07596568b7b7bf3",
+      "annotated_lines": 29,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "내부 교차",
+          "stdout": "1 YES\n",
+          "passed": true
+        },
+        {
+          "name": "일직선이지만 분리",
+          "stdout": "0 NO\n",
+          "passed": true
+        },
+        {
+          "name": "끝점 접촉",
+          "stdout": "0 YES\n",
+          "passed": true
+        },
+        {
+          "name": "한 점 선분",
+          "stdout": "0 YES\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6439,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "e6b39665e9049dfd8f1aea4e50428a020e601be2af9c3e97fff5a871111c16b0",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 33,
+      "language": "cpp",
+      "source": "33-계산기하와좌표변환_computational-geometry/example.cpp",
+      "source_sha256": "ab5b5c9a6dafe9dca9c2f4e40ca647f5d3d4a8459d3eb7f43b7199398714d3ca",
+      "metadata_sha256": "e6b39665e9049dfd8f1aea4e50428a020e601be2af9c3e97fff5a871111c16b0",
+      "cases_sha256": "52de1d3730922463f7372be25c77e304267e0fed51e6d523c07596568b7b7bf3",
+      "annotated_lines": 29,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "내부 교차",
+          "stdout": "1 YES\n",
+          "passed": true
+        },
+        {
+          "name": "일직선이지만 분리",
+          "stdout": "0 NO\n",
+          "passed": true
+        },
+        {
+          "name": "끝점 접촉",
+          "stdout": "0 YES\n",
+          "passed": true
+        },
+        {
+          "name": "한 점 선분",
+          "stdout": "0 YES\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2121,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "e6b39665e9049dfd8f1aea4e50428a020e601be2af9c3e97fff5a871111c16b0",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 33,
+      "language": "python",
+      "source": "33-계산기하와좌표변환_computational-geometry/example.py",
+      "source_sha256": "b7948bfa3d16f80531c7dd958766c2903c6a27ac8a56dad492a4502dec668d87",
+      "metadata_sha256": "e6b39665e9049dfd8f1aea4e50428a020e601be2af9c3e97fff5a871111c16b0",
+      "cases_sha256": "52de1d3730922463f7372be25c77e304267e0fed51e6d523c07596568b7b7bf3",
+      "annotated_lines": 16,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "내부 교차",
+          "stdout": "1 YES\n",
+          "passed": true
+        },
+        {
+          "name": "일직선이지만 분리",
+          "stdout": "0 NO\n",
+          "passed": true
+        },
+        {
+          "name": "끝점 접촉",
+          "stdout": "0 YES\n",
+          "passed": true
+        },
+        {
+          "name": "한 점 선분",
+          "stdout": "0 YES\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0916,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "e6b39665e9049dfd8f1aea4e50428a020e601be2af9c3e97fff5a871111c16b0",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 34,
+      "language": "c",
+      "source": "34-이분매칭과네트워크유량_matching-flow/example.c",
+      "source_sha256": "1bb2a2bbc11b1330ae1dfb4611f68765a2efbf9838ee9c772ed59f4607ad23a3",
+      "metadata_sha256": "9758d24d1b63d7948e4fca3a0ab55299b82038a81591a5ba84770de1617dc6fc",
+      "cases_sha256": "d019694868fe1856fbe5f26475cb07ddd8b7221ac6cbe2f8cd0bd4a8c225a5cf",
+      "annotated_lines": 31,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "앞의 배정 변경",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "왼쪽 정점 없음",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "한 작업 경쟁",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "간선 없음",
+          "stdout": "0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.5949,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "003a0c50ae36885da399241bd65e4da8a9249594c06ae7d4fcafe4e7efdc1842",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 34,
+      "language": "cpp",
+      "source": "34-이분매칭과네트워크유량_matching-flow/example.cpp",
+      "source_sha256": "3be41c3292ac00037144c1a055c0be76a0a2838728668ec513bc0f76e2d80bc8",
+      "metadata_sha256": "9758d24d1b63d7948e4fca3a0ab55299b82038a81591a5ba84770de1617dc6fc",
+      "cases_sha256": "d019694868fe1856fbe5f26475cb07ddd8b7221ac6cbe2f8cd0bd4a8c225a5cf",
+      "annotated_lines": 31,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "앞의 배정 변경",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "왼쪽 정점 없음",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "한 작업 경쟁",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "간선 없음",
+          "stdout": "0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.4249,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "003a0c50ae36885da399241bd65e4da8a9249594c06ae7d4fcafe4e7efdc1842",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 34,
+      "language": "python",
+      "source": "34-이분매칭과네트워크유량_matching-flow/example.py",
+      "source_sha256": "a5dae66ab2e2a26b20a4e914c307397160e2f1961819ee219e3e8dbd941b5cf0",
+      "metadata_sha256": "9758d24d1b63d7948e4fca3a0ab55299b82038a81591a5ba84770de1617dc6fc",
+      "cases_sha256": "d019694868fe1856fbe5f26475cb07ddd8b7221ac6cbe2f8cd0bd4a8c225a5cf",
+      "annotated_lines": 21,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "앞의 배정 변경",
+          "stdout": "2\n",
+          "passed": true
+        },
+        {
+          "name": "왼쪽 정점 없음",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "한 작업 경쟁",
+          "stdout": "1\n",
+          "passed": true
+        },
+        {
+          "name": "간선 없음",
+          "stdout": "0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.1003,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "003a0c50ae36885da399241bd65e4da8a9249594c06ae7d4fcafe4e7efdc1842",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 35,
+      "language": "c",
+      "source": "35-게임이론과승패상태_game-theory/example.c",
+      "source_sha256": "d0b86f20e03b1ce0bad8337fce4b75290d9a5bf299326e6887147a5cc0d9dde9",
+      "metadata_sha256": "00706b7767ecdaff8123bbae7f3832bdc9b89598543e70b9d69f3088582227ea",
+      "cases_sha256": "08a1c96f8524421c5a7eb44a284168852fe4d57125d60f643abec172e73c3175",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "서로 다른 그런디 값",
+          "stdout": "GRUNDY 1 2\nXOR 3\nWIN\n",
+          "passed": true
+        },
+        {
+          "name": "돌 없는 무더기",
+          "stdout": "GRUNDY 0\nXOR 0\nLOSE\n",
+          "passed": true
+        },
+        {
+          "name": "독립 게임 없음",
+          "stdout": "GRUNDY\nXOR 0\nLOSE\n",
+          "passed": true
+        },
+        {
+          "name": "승리 둘의 패배 합",
+          "stdout": "GRUNDY 1 1\nXOR 0\nLOSE\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6179,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "00706b7767ecdaff8123bbae7f3832bdc9b89598543e70b9d69f3088582227ea",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 35,
+      "language": "cpp",
+      "source": "35-게임이론과승패상태_game-theory/example.cpp",
+      "source_sha256": "351262f0a665a0f963e1fad57e2f3cf91814f57b4e754bba2564254c7c4874b5",
+      "metadata_sha256": "00706b7767ecdaff8123bbae7f3832bdc9b89598543e70b9d69f3088582227ea",
+      "cases_sha256": "08a1c96f8524421c5a7eb44a284168852fe4d57125d60f643abec172e73c3175",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "서로 다른 그런디 값",
+          "stdout": "GRUNDY 1 2\nXOR 3\nWIN\n",
+          "passed": true
+        },
+        {
+          "name": "돌 없는 무더기",
+          "stdout": "GRUNDY 0\nXOR 0\nLOSE\n",
+          "passed": true
+        },
+        {
+          "name": "독립 게임 없음",
+          "stdout": "GRUNDY\nXOR 0\nLOSE\n",
+          "passed": true
+        },
+        {
+          "name": "승리 둘의 패배 합",
+          "stdout": "GRUNDY 1 1\nXOR 0\nLOSE\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.6191,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "00706b7767ecdaff8123bbae7f3832bdc9b89598543e70b9d69f3088582227ea",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 35,
+      "language": "python",
+      "source": "35-게임이론과승패상태_game-theory/example.py",
+      "source_sha256": "a8a74e092d0460a4f89b1042e8240161bf3d7fb8dcb8922a369416ef1b70ae48",
+      "metadata_sha256": "00706b7767ecdaff8123bbae7f3832bdc9b89598543e70b9d69f3088582227ea",
+      "cases_sha256": "08a1c96f8524421c5a7eb44a284168852fe4d57125d60f643abec172e73c3175",
+      "annotated_lines": 20,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "서로 다른 그런디 값",
+          "stdout": "GRUNDY 1 2\nXOR 3\nWIN\n",
+          "passed": true
+        },
+        {
+          "name": "돌 없는 무더기",
+          "stdout": "GRUNDY 0\nXOR 0\nLOSE\n",
+          "passed": true
+        },
+        {
+          "name": "독립 게임 없음",
+          "stdout": "GRUNDY\nXOR 0\nLOSE\n",
+          "passed": true
+        },
+        {
+          "name": "승리 둘의 패배 합",
+          "stdout": "GRUNDY 1 1\nXOR 0\nLOSE\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.1101,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "00706b7767ecdaff8123bbae7f3832bdc9b89598543e70b9d69f3088582227ea",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 36,
+      "language": "c",
+      "source": "36-무작위화와근사최적화_randomized-approximation/example.c",
+      "source_sha256": "492211d412c0ed971e9a52cf810bda685b989c921c07c7f78a4ed37b9c49497a",
+      "metadata_sha256": "30189047a10554c0e040bbef0cd3e380a1733abe4eb370d616e63d68eab048ec",
+      "cases_sha256": "3edfccabe0945b7cd7f1fe320efaa5d80765b1cc90fce54350a59d23b565cbe8",
+      "annotated_lines": 18,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "삼각형",
+          "stdout": "EXPECTED 1.500000\nBEST 2\n",
+          "passed": true
+        },
+        {
+          "name": "정점과 간선 없음",
+          "stdout": "EXPECTED 0.000000\nBEST 0\n",
+          "passed": true
+        },
+        {
+          "name": "간선 하나",
+          "stdout": "EXPECTED 0.500000\nBEST 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.729,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "30189047a10554c0e040bbef0cd3e380a1733abe4eb370d616e63d68eab048ec",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 36,
+      "language": "cpp",
+      "source": "36-무작위화와근사최적화_randomized-approximation/example.cpp",
+      "source_sha256": "66706392b6a9b133a5725e47ee1c7c44460bc041c15b94a43d76baf19272c654",
+      "metadata_sha256": "30189047a10554c0e040bbef0cd3e380a1733abe4eb370d616e63d68eab048ec",
+      "cases_sha256": "3edfccabe0945b7cd7f1fe320efaa5d80765b1cc90fce54350a59d23b565cbe8",
+      "annotated_lines": 19,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "삼각형",
+          "stdout": "EXPECTED 1.500000\nBEST 2\n",
+          "passed": true
+        },
+        {
+          "name": "정점과 간선 없음",
+          "stdout": "EXPECTED 0.000000\nBEST 0\n",
+          "passed": true
+        },
+        {
+          "name": "간선 하나",
+          "stdout": "EXPECTED 0.500000\nBEST 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3017,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "30189047a10554c0e040bbef0cd3e380a1733abe4eb370d616e63d68eab048ec",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 36,
+      "language": "python",
+      "source": "36-무작위화와근사최적화_randomized-approximation/example.py",
+      "source_sha256": "f6daf71a7aaf0ef31f29717abbee8713ff47badd77494b9feec2098375e00515",
+      "metadata_sha256": "30189047a10554c0e040bbef0cd3e380a1733abe4eb370d616e63d68eab048ec",
+      "cases_sha256": "3edfccabe0945b7cd7f1fe320efaa5d80765b1cc90fce54350a59d23b565cbe8",
+      "annotated_lines": 16,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "삼각형",
+          "stdout": "EXPECTED 1.500000\nBEST 2\n",
+          "passed": true
+        },
+        {
+          "name": "정점과 간선 없음",
+          "stdout": "EXPECTED 0.000000\nBEST 0\n",
+          "passed": true
+        },
+        {
+          "name": "간선 하나",
+          "stdout": "EXPECTED 0.500000\nBEST 1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0757,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "30189047a10554c0e040bbef0cd3e380a1733abe4eb370d616e63d68eab048ec",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 37,
+      "language": "c",
+      "source": "37-DP최적화와볼록껍질트릭_dp-optimization/example.c",
+      "source_sha256": "a4ceb042b860a0bd660ce7dd8356f310a0f1680818419f02c97672f6ee6d717e",
+      "metadata_sha256": "a02870da107eeeb35431b5dba070e9be6fab4f5c3c554637be1c5f490ad7624a",
+      "cases_sha256": "d0a7a69dad906e15aca876412008d26490708f4d14e18715db7493afe6c36190",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "본문의 직선 전이",
+          "stdout": "9\n",
+          "passed": true
+        },
+        {
+          "name": "초기 상태만",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "상수 비용 0",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "직선 하나로 질의",
+          "stdout": "105\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6773,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "a02870da107eeeb35431b5dba070e9be6fab4f5c3c554637be1c5f490ad7624a",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 37,
+      "language": "cpp",
+      "source": "37-DP최적화와볼록껍질트릭_dp-optimization/example.cpp",
+      "source_sha256": "6cc4f9f89868be69b86926cd5850aeee74d7f7a510186d6830fd69edf7bc08c8",
+      "metadata_sha256": "a02870da107eeeb35431b5dba070e9be6fab4f5c3c554637be1c5f490ad7624a",
+      "cases_sha256": "d0a7a69dad906e15aca876412008d26490708f4d14e18715db7493afe6c36190",
+      "annotated_lines": 25,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "본문의 직선 전이",
+          "stdout": "9\n",
+          "passed": true
+        },
+        {
+          "name": "초기 상태만",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "상수 비용 0",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "직선 하나로 질의",
+          "stdout": "105\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3333,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "a02870da107eeeb35431b5dba070e9be6fab4f5c3c554637be1c5f490ad7624a",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 37,
+      "language": "python",
+      "source": "37-DP최적화와볼록껍질트릭_dp-optimization/example.py",
+      "source_sha256": "4c3276a8ab98d2487b34d166e744267c5b55f5c0b9a57e14d215a2a2cb2d3930",
+      "metadata_sha256": "a02870da107eeeb35431b5dba070e9be6fab4f5c3c554637be1c5f490ad7624a",
+      "cases_sha256": "d0a7a69dad906e15aca876412008d26490708f4d14e18715db7493afe6c36190",
+      "annotated_lines": 23,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "본문의 직선 전이",
+          "stdout": "9\n",
+          "passed": true
+        },
+        {
+          "name": "초기 상태만",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "상수 비용 0",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "직선 하나로 질의",
+          "stdout": "105\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.1058,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "a02870da107eeeb35431b5dba070e9be6fab4f5c3c554637be1c5f490ad7624a",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 38,
+      "language": "c",
+      "source": "38-함수그래프와반복점프_functional-graph-lifting/example.c",
+      "source_sha256": "4dd032bb97037c5aa2add4319d07f3b4e3a30f426762a006f81f192924a692a2",
+      "metadata_sha256": "8996a5a92418770ace03610202f1272d62902b322a7d1a95a583cc017485fc9f",
+      "cases_sha256": "714c040acf7a660185b7b62167bfbc4904c990afc02cc482d5c8ab6efc840830",
+      "annotated_lines": 19,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "경로와 사이클",
+          "stdout": "0\n2\n1\n",
+          "passed": true
+        },
+        {
+          "name": "자기 루프와 최대 이동",
+          "stdout": "0\n0\n0\n",
+          "passed": true
+        },
+        {
+          "name": "두 정점 사이클",
+          "stdout": "1\n0\n0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6773,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "8996a5a92418770ace03610202f1272d62902b322a7d1a95a583cc017485fc9f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 38,
+      "language": "cpp",
+      "source": "38-함수그래프와반복점프_functional-graph-lifting/example.cpp",
+      "source_sha256": "8f437e0da556dcdf46347cd4c246e193cfcb83a5bb54073e20a8ba5264b7251d",
+      "metadata_sha256": "8996a5a92418770ace03610202f1272d62902b322a7d1a95a583cc017485fc9f",
+      "cases_sha256": "714c040acf7a660185b7b62167bfbc4904c990afc02cc482d5c8ab6efc840830",
+      "annotated_lines": 19,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "경로와 사이클",
+          "stdout": "0\n2\n1\n",
+          "passed": true
+        },
+        {
+          "name": "자기 루프와 최대 이동",
+          "stdout": "0\n0\n0\n",
+          "passed": true
+        },
+        {
+          "name": "두 정점 사이클",
+          "stdout": "1\n0\n0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2392,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "8996a5a92418770ace03610202f1272d62902b322a7d1a95a583cc017485fc9f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 38,
+      "language": "python",
+      "source": "38-함수그래프와반복점프_functional-graph-lifting/example.py",
+      "source_sha256": "888da28547d704f89ae4363f46f895438e527066c97f6fc00aac22d4c6c8876d",
+      "metadata_sha256": "8996a5a92418770ace03610202f1272d62902b322a7d1a95a583cc017485fc9f",
+      "cases_sha256": "714c040acf7a660185b7b62167bfbc4904c990afc02cc482d5c8ab6efc840830",
+      "annotated_lines": 16,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "경로와 사이클",
+          "stdout": "0\n2\n1\n",
+          "passed": true
+        },
+        {
+          "name": "자기 루프와 최대 이동",
+          "stdout": "0\n0\n0\n",
+          "passed": true
+        },
+        {
+          "name": "두 정점 사이클",
+          "stdout": "1\n0\n0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0744,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "8996a5a92418770ace03610202f1272d62902b322a7d1a95a583cc017485fc9f",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 39,
+      "language": "c",
+      "source": "39-수학적규칙과구성적풀이_invariants-constructive/example.c",
+      "source_sha256": "0efbc416dfefcdf6bf4d8b043e836336ca6a54b253f93259794348e42287dcaf",
+      "metadata_sha256": "3b16f8ad62d0df91c8c442bd48f0cd40764c00a3e5958e2970472179b18a6cc4",
+      "cases_sha256": "28f15c9a0ff252fb986fad2d395f9837f42c3c9be64eca622215c3b98b6b2fb2",
+      "annotated_lines": 37,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 번의 연산 구성",
+          "stdout": "POSSIBLE 2\n0 1\n0 2\n",
+          "passed": true
+        },
+        {
+          "name": "이미 같은 배열",
+          "stdout": "POSSIBLE 0\n",
+          "passed": true
+        },
+        {
+          "name": "홀짝 불일치",
+          "stdout": "IMPOSSIBLE\n",
+          "passed": true
+        },
+        {
+          "name": "짝지을 다른 부족량 없음",
+          "stdout": "IMPOSSIBLE\n",
+          "passed": true
+        },
+        {
+          "name": "감소가 필요한 위치",
+          "stdout": "IMPOSSIBLE\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.793,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "3b16f8ad62d0df91c8c442bd48f0cd40764c00a3e5958e2970472179b18a6cc4",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 39,
+      "language": "cpp",
+      "source": "39-수학적규칙과구성적풀이_invariants-constructive/example.cpp",
+      "source_sha256": "872b5f296cd0d83244f0f495c187a09e70eb73b2d4180106c48c177c2ae91fa9",
+      "metadata_sha256": "3b16f8ad62d0df91c8c442bd48f0cd40764c00a3e5958e2970472179b18a6cc4",
+      "cases_sha256": "28f15c9a0ff252fb986fad2d395f9837f42c3c9be64eca622215c3b98b6b2fb2",
+      "annotated_lines": 38,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "두 번의 연산 구성",
+          "stdout": "POSSIBLE 2\n0 1\n0 2\n",
+          "passed": true
+        },
+        {
+          "name": "이미 같은 배열",
+          "stdout": "POSSIBLE 0\n",
+          "passed": true
+        },
+        {
+          "name": "홀짝 불일치",
+          "stdout": "IMPOSSIBLE\n",
+          "passed": true
+        },
+        {
+          "name": "짝지을 다른 부족량 없음",
+          "stdout": "IMPOSSIBLE\n",
+          "passed": true
+        },
+        {
+          "name": "감소가 필요한 위치",
+          "stdout": "IMPOSSIBLE\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.3074,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "3b16f8ad62d0df91c8c442bd48f0cd40764c00a3e5958e2970472179b18a6cc4",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 39,
+      "language": "python",
+      "source": "39-수학적규칙과구성적풀이_invariants-constructive/example.py",
+      "source_sha256": "aa4aca869fd05704262728e054018146ccf461c3d4e4c0b0c70448a3898f654f",
+      "metadata_sha256": "3b16f8ad62d0df91c8c442bd48f0cd40764c00a3e5958e2970472179b18a6cc4",
+      "cases_sha256": "28f15c9a0ff252fb986fad2d395f9837f42c3c9be64eca622215c3b98b6b2fb2",
+      "annotated_lines": 25,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "두 번의 연산 구성",
+          "stdout": "POSSIBLE 2\n0 1\n0 2\n",
+          "passed": true
+        },
+        {
+          "name": "이미 같은 배열",
+          "stdout": "POSSIBLE 0\n",
+          "passed": true
+        },
+        {
+          "name": "홀짝 불일치",
+          "stdout": "IMPOSSIBLE\n",
+          "passed": true
+        },
+        {
+          "name": "짝지을 다른 부족량 없음",
+          "stdout": "IMPOSSIBLE\n",
+          "passed": true
+        },
+        {
+          "name": "감소가 필요한 위치",
+          "stdout": "IMPOSSIBLE\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.1359,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "3b16f8ad62d0df91c8c442bd48f0cd40764c00a3e5958e2970472179b18a6cc4",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 40,
+      "language": "c",
+      "source": "40-C와CPP와Python구현비교_language-implementation/example.c",
+      "source_sha256": "83a86a3874afb3872da62bad7d9a4621d9c6291aa25353db4e12211b8cd8b1d1",
+      "metadata_sha256": "ee46e8d653bbf6778a89a97a8cd5424123465e9a1d4da717eea79b5c331e0e9e",
+      "cases_sha256": "25cc295648c0fc2be2d076f7efe9d7d8af573f123c604557384a5c09b2685424",
+      "annotated_lines": 23,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "음수이며 나누어떨어지지 않음",
+          "stdout": "-2 1\n",
+          "passed": true
+        },
+        {
+          "name": "양수 나눗셈",
+          "stdout": "2 1\n",
+          "passed": true
+        },
+        {
+          "name": "음수 정확한 배수",
+          "stdout": "-2 0\n",
+          "passed": true
+        },
+        {
+          "name": "나눌 수가 0",
+          "stdout": "0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6318,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "ee46e8d653bbf6778a89a97a8cd5424123465e9a1d4da717eea79b5c331e0e9e",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 40,
+      "language": "cpp",
+      "source": "40-C와CPP와Python구현비교_language-implementation/example.cpp",
+      "source_sha256": "d6b3f1736c6b82a39c0b49f87498a5dad69f3d0ad956e2644a7f26058dab3c34",
+      "metadata_sha256": "ee46e8d653bbf6778a89a97a8cd5424123465e9a1d4da717eea79b5c331e0e9e",
+      "cases_sha256": "25cc295648c0fc2be2d076f7efe9d7d8af573f123c604557384a5c09b2685424",
+      "annotated_lines": 24,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "음수이며 나누어떨어지지 않음",
+          "stdout": "-2 1\n",
+          "passed": true
+        },
+        {
+          "name": "양수 나눗셈",
+          "stdout": "2 1\n",
+          "passed": true
+        },
+        {
+          "name": "음수 정확한 배수",
+          "stdout": "-2 0\n",
+          "passed": true
+        },
+        {
+          "name": "나눌 수가 0",
+          "stdout": "0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2561,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "ee46e8d653bbf6778a89a97a8cd5424123465e9a1d4da717eea79b5c331e0e9e",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 40,
+      "language": "python",
+      "source": "40-C와CPP와Python구현비교_language-implementation/example.py",
+      "source_sha256": "b477911a57b5a9692a8b60b50aa1e1712637407420ebaaf9e4d57880d0c8dacb",
+      "metadata_sha256": "ee46e8d653bbf6778a89a97a8cd5424123465e9a1d4da717eea79b5c331e0e9e",
+      "cases_sha256": "25cc295648c0fc2be2d076f7efe9d7d8af573f123c604557384a5c09b2685424",
+      "annotated_lines": 8,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "음수이며 나누어떨어지지 않음",
+          "stdout": "-2 1\n",
+          "passed": true
+        },
+        {
+          "name": "양수 나눗셈",
+          "stdout": "2 1\n",
+          "passed": true
+        },
+        {
+          "name": "음수 정확한 배수",
+          "stdout": "-2 0\n",
+          "passed": true
+        },
+        {
+          "name": "나눌 수가 0",
+          "stdout": "0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0967,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "ee46e8d653bbf6778a89a97a8cd5424123465e9a1d4da717eea79b5c331e0e9e",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 41,
+      "language": "c",
+      "source": "41-반례와테스트와성능측정_testing-debugging/example.c",
+      "source_sha256": "a2c7f96d5764bcff1764aaeec4a04b3b504bd8592e25f03fc45baf4e3ad71d0a",
+      "metadata_sha256": "25be6cd7fb591fcc61ad6b5f1f1942e98e267b05b6e88964268c0d4b7f1f515d",
+      "cases_sha256": "fa867db9a536360f655a47ab9d15570b2522a09bbe2a18f3df7534e197d42959",
+      "annotated_lines": 32,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "중간 구간이 최적",
+          "stdout": "6 6\n",
+          "passed": true
+        },
+        {
+          "name": "음수 원소 하나",
+          "stdout": "-7 -7\n",
+          "passed": true
+        },
+        {
+          "name": "모두 음수",
+          "stdout": "-2 -2\n",
+          "passed": true
+        },
+        {
+          "name": "모두 0",
+          "stdout": "0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6852,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "25be6cd7fb591fcc61ad6b5f1f1942e98e267b05b6e88964268c0d4b7f1f515d",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 41,
+      "language": "cpp",
+      "source": "41-반례와테스트와성능측정_testing-debugging/example.cpp",
+      "source_sha256": "df9ade1f8db13af94c418934461b6c01fff48e6c52804c35e54160205c285cfc",
+      "metadata_sha256": "25be6cd7fb591fcc61ad6b5f1f1942e98e267b05b6e88964268c0d4b7f1f515d",
+      "cases_sha256": "fa867db9a536360f655a47ab9d15570b2522a09bbe2a18f3df7534e197d42959",
+      "annotated_lines": 33,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "중간 구간이 최적",
+          "stdout": "6 6\n",
+          "passed": true
+        },
+        {
+          "name": "음수 원소 하나",
+          "stdout": "-7 -7\n",
+          "passed": true
+        },
+        {
+          "name": "모두 음수",
+          "stdout": "-2 -2\n",
+          "passed": true
+        },
+        {
+          "name": "모두 0",
+          "stdout": "0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.2132,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "25be6cd7fb591fcc61ad6b5f1f1942e98e267b05b6e88964268c0d4b7f1f515d",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 41,
+      "language": "python",
+      "source": "41-반례와테스트와성능측정_testing-debugging/example.py",
+      "source_sha256": "069637370ea064435e55cb12a0ec5b394788568a9883c31f57dba1afbc93064a",
+      "metadata_sha256": "25be6cd7fb591fcc61ad6b5f1f1942e98e267b05b6e88964268c0d4b7f1f515d",
+      "cases_sha256": "fa867db9a536360f655a47ab9d15570b2522a09bbe2a18f3df7534e197d42959",
+      "annotated_lines": 20,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "중간 구간이 최적",
+          "stdout": "6 6\n",
+          "passed": true
+        },
+        {
+          "name": "음수 원소 하나",
+          "stdout": "-7 -7\n",
+          "passed": true
+        },
+        {
+          "name": "모두 음수",
+          "stdout": "-2 -2\n",
+          "passed": true
+        },
+        {
+          "name": "모두 0",
+          "stdout": "0 0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0993,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "25be6cd7fb591fcc61ad6b5f1f1942e98e267b05b6e88964268c0d4b7f1f515d",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 42,
+      "language": "c",
+      "source": "42-문제해결순서와실무모델링_problem-solving-practice/example.c",
+      "source_sha256": "2a5413ed8cea1e330e6cff04943102e7b7b387bb84b4959f0cb99950996e676e",
+      "metadata_sha256": "7b39ca3e4ca36dde986dc5e590ac8798dcbbaf0dbbceaf65e149df2bfbeaa3c6",
+      "cases_sha256": "2730ff633c6fc6dd0a32108ff802c6e51feac08102f871d5bb12ff18dc9246d7",
+      "annotated_lines": 38,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "필수 배송지 경유",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "모든 위치가 출발점",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "필수 배송지에 갈 수 없음",
+          "stdout": "-1\n",
+          "passed": true
+        },
+        {
+          "name": "첫 구간만 가능",
+          "stdout": "-1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6168,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "7b39ca3e4ca36dde986dc5e590ac8798dcbbaf0dbbceaf65e149df2bfbeaa3c6",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 42,
+      "language": "cpp",
+      "source": "42-문제해결순서와실무모델링_problem-solving-practice/example.cpp",
+      "source_sha256": "a162d0e6fc1a157b45892e6d0135982c567a710b0f91888ca95cef841468a819",
+      "metadata_sha256": "7b39ca3e4ca36dde986dc5e590ac8798dcbbaf0dbbceaf65e149df2bfbeaa3c6",
+      "cases_sha256": "2730ff633c6fc6dd0a32108ff802c6e51feac08102f871d5bb12ff18dc9246d7",
+      "annotated_lines": 39,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "필수 배송지 경유",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "모든 위치가 출발점",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "필수 배송지에 갈 수 없음",
+          "stdout": "-1\n",
+          "passed": true
+        },
+        {
+          "name": "첫 구간만 가능",
+          "stdout": "-1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.44,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "7b39ca3e4ca36dde986dc5e590ac8798dcbbaf0dbbceaf65e149df2bfbeaa3c6",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 42,
+      "language": "python",
+      "source": "42-문제해결순서와실무모델링_problem-solving-practice/example.py",
+      "source_sha256": "4142a4cc65a72a3efb086676444133fc6d7d1a474e466f78dafa25da6d6397b4",
+      "metadata_sha256": "7b39ca3e4ca36dde986dc5e590ac8798dcbbaf0dbbceaf65e149df2bfbeaa3c6",
+      "cases_sha256": "2730ff633c6fc6dd0a32108ff802c6e51feac08102f871d5bb12ff18dc9246d7",
+      "annotated_lines": 26,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "필수 배송지 경유",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "모든 위치가 출발점",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "필수 배송지에 갈 수 없음",
+          "stdout": "-1\n",
+          "passed": true
+        },
+        {
+          "name": "첫 구간만 가능",
+          "stdout": "-1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.099,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "7b39ca3e4ca36dde986dc5e590ac8798dcbbaf0dbbceaf65e149df2bfbeaa3c6",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 43,
+      "language": "c",
+      "source": "43-휴리스틱탐색과상태공간_heuristic-state-search/example.c",
+      "source_sha256": "70ebe80cc6880a7566a017fa015ace3d5321c607ebea9c19d6cf0e14716fc528",
+      "metadata_sha256": "6022452a17565146e7c2731f21df32c368b9f64719b682c070cbc5030b6ee288",
+      "cases_sha256": "dc43b11a16886fa7796541f0a0286b0a9c6a2f08881ab4c01779904765dda991",
+      "annotated_lines": 47,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "장애물 주위 최단 경로",
+          "stdout": "5\n",
+          "passed": true
+        },
+        {
+          "name": "출발점이 목표",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "벽으로 분리",
+          "stdout": "-1\n",
+          "passed": true
+        },
+        {
+          "name": "출발점이 벽",
+          "stdout": "-1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6315,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "6022452a17565146e7c2731f21df32c368b9f64719b682c070cbc5030b6ee288",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 43,
+      "language": "cpp",
+      "source": "43-휴리스틱탐색과상태공간_heuristic-state-search/example.cpp",
+      "source_sha256": "5159bf0efaf948b991387c60cd7456361d7d65c5d5fedb3fd3aaecb5cfab9f02",
+      "metadata_sha256": "6022452a17565146e7c2731f21df32c368b9f64719b682c070cbc5030b6ee288",
+      "cases_sha256": "dc43b11a16886fa7796541f0a0286b0a9c6a2f08881ab4c01779904765dda991",
+      "annotated_lines": 49,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "장애물 주위 최단 경로",
+          "stdout": "5\n",
+          "passed": true
+        },
+        {
+          "name": "출발점이 목표",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "벽으로 분리",
+          "stdout": "-1\n",
+          "passed": true
+        },
+        {
+          "name": "출발점이 벽",
+          "stdout": "-1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.4799,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "6022452a17565146e7c2731f21df32c368b9f64719b682c070cbc5030b6ee288",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 43,
+      "language": "python",
+      "source": "43-휴리스틱탐색과상태공간_heuristic-state-search/example.py",
+      "source_sha256": "fbeaa0f61c038c95586bd789509af767d36f6f30d7721e08a91a50cec4b5b562",
+      "metadata_sha256": "6022452a17565146e7c2731f21df32c368b9f64719b682c070cbc5030b6ee288",
+      "cases_sha256": "dc43b11a16886fa7796541f0a0286b0a9c6a2f08881ab4c01779904765dda991",
+      "annotated_lines": 41,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "장애물 주위 최단 경로",
+          "stdout": "5\n",
+          "passed": true
+        },
+        {
+          "name": "출발점이 목표",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "벽으로 분리",
+          "stdout": "-1\n",
+          "passed": true
+        },
+        {
+          "name": "출발점이 벽",
+          "stdout": "-1\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.1181,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "6022452a17565146e7c2731f21df32c368b9f64719b682c070cbc5030b6ee288",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 44,
+      "language": "c",
+      "source": "44-기초수학과진법_basic-math/example.c",
+      "source_sha256": "d2fbe0b8f557fcf413935ba8f35b51117f6f79f09395b59de220420930127bd4",
+      "metadata_sha256": "631d5a57eb8427981ab11b8196e17a6fb930faa412c98c443ee973fda04f7b03",
+      "cases_sha256": "f48c9fe7bf7fb2d6b7404da82dba074a99f67c89a7e077075e896bef66435ead",
+      "annotated_lines": 31,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "16진수의 누적",
+          "stdout": "5\n",
+          "passed": true
+        },
+        {
+          "name": "이진수",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "숫자 0",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "나누는 수 1",
+          "stdout": "0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.6267,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "631d5a57eb8427981ab11b8196e17a6fb930faa412c98c443ee973fda04f7b03",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 44,
+      "language": "cpp",
+      "source": "44-기초수학과진법_basic-math/example.cpp",
+      "source_sha256": "b21a4995720f234bf5e68b7ed60702c013304241e9ef88204103392c07c53dce",
+      "metadata_sha256": "631d5a57eb8427981ab11b8196e17a6fb930faa412c98c443ee973fda04f7b03",
+      "cases_sha256": "f48c9fe7bf7fb2d6b7404da82dba074a99f67c89a7e077075e896bef66435ead",
+      "annotated_lines": 33,
+      "native_compilation": true,
+      "cases": [
+        {
+          "name": "16진수의 누적",
+          "stdout": "5\n",
+          "passed": true
+        },
+        {
+          "name": "이진수",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "숫자 0",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "나누는 수 1",
+          "stdout": "0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 1.426,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "631d5a57eb8427981ab11b8196e17a6fb930faa412c98c443ee973fda04f7b03",
+      "current_cases_match_tested_cases": true
+    },
+    {
+      "chapter": 44,
+      "language": "python",
+      "source": "44-기초수학과진법_basic-math/example.py",
+      "source_sha256": "20e3e04144b7e82f0c6e01117564ef6f9603ef370600c0e6cef16fba537f6270",
+      "metadata_sha256": "631d5a57eb8427981ab11b8196e17a6fb930faa412c98c443ee973fda04f7b03",
+      "cases_sha256": "f48c9fe7bf7fb2d6b7404da82dba074a99f67c89a7e077075e896bef66435ead",
+      "annotated_lines": 12,
+      "native_compilation": false,
+      "cases": [
+        {
+          "name": "16진수의 누적",
+          "stdout": "5\n",
+          "passed": true
+        },
+        {
+          "name": "이진수",
+          "stdout": "3\n",
+          "passed": true
+        },
+        {
+          "name": "숫자 0",
+          "stdout": "0\n",
+          "passed": true
+        },
+        {
+          "name": "나누는 수 1",
+          "stdout": "0\n",
+          "passed": true
+        }
+      ],
+      "seconds": 0.0933,
+      "passed": true,
+      "checked_at": "2026-10-26T06:24:02.154763+00:00",
+      "current_metadata_sha256": "631d5a57eb8427981ab11b8196e17a6fb930faa412c98c443ee973fda04f7b03",
+      "current_cases_match_tested_cases": true
+    }
+  ],
+  "site_grading_performed": false,
+  "passed": true
+}

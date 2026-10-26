@@ -111,6 +111,119 @@ C와 C++에서도 제자리 정렬이라는 표현만 보고 보조 공간이 �
 MIT 자료는 정렬의 역할, 언어 문서는 키·안정성·비교 함수의 계약을 확인하는 근거입니다.
 기록 데이터와 키 추적, 오류 반례는 직접 구성했습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+점수는 높은 순서, 벌점은 낮은 순서, 나머지 동률은 식별자 순서로 정렬하여 세 언어에서 같은 순서를 만듭니다.
+
+이 예제에서 직접 구현하는 기법은 다중 기준 정렬 · 비교 함수 · 사전식 키입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N(1~20), N줄의 id score penalty입니다. id는 서로 다른 1~100, score는 0~100, penalty는 0~1000입니다.
+
+```text
+4
+1 90 2
+2 80 1
+3 90 1
+4 90 1
+```
+
+정렬된 id를 공백으로 구분해 한 줄에 출력합니다.
+
+```text
+3 4 1 2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 키:1→(−90,2,1),2→(−80,1,2) | 점수 방향만 뒤집어 우선순위를 표현합니다. |
+| 2 | 키:3→(−90,1,3),4→(−90,1,4) | 점수가 같으면 벌점을 먼저 비교합니다. |
+| 3 | 점수90 그룹의 순서=3,4,1 | 3과4는 식별자가 동률을 결정합니다. |
+| 4 | 전체 순서=3,4,1,2 | 점수80 기록은 점수90 기록들 뒤에 놓입니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/05-정렬과비교함수_sorting-comparators/example.c>)
+
+```c
+#include <stdio.h> // 기록 입력과 결과 출력
+#include <stdlib.h> // qsort 표준 정렬 함수
+typedef struct { int id, score, penalty; } Record; // 한 기록의 식별자와 두 정렬 기준
+static int compare(const void* a, const void* b) { // qsort가 사용할 일관된 비교 관계
+    const Record* x = a; const Record* y = b; // 원소 주소를 기록 주소로 해석
+    if (x->score != y->score) return x->score > y->score ? -1 : 1; // 높은 점수가 먼저 오도록 비교
+    if (x->penalty != y->penalty) return x->penalty < y->penalty ? -1 : 1; // 동점이면 작은 벌점 우선
+    return (x->id > y->id) - (x->id < y->id); // 완전 동률에서는 작은 식별자 우선
+} // 세 기준의 비교 끝
+int main(void) { // 실행 시작점
+    int n; Record data[20]; scanf("%d", &n); // 최대 20개 기록 공간과 개수 준비
+    for (int i = 0; i < n; ++i) scanf("%d %d %d", &data[i].id, &data[i].score, &data[i].penalty); // 기록의 세 필드 입력
+    qsort(data, n, sizeof(data[0]), compare); // 같은 비교 기준으로 전체 기록 정렬
+    for (int i = 0; i < n; ++i) printf("%s%d", i ? " " : "", data[i].id); // 정렬된 식별자만 출력
+    printf("\n"); // 출력 줄 끝내기
+    return 0; // 정상 종료
+} // 다중 기준 정렬 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/05-정렬과비교함수_sorting-comparators/example.cpp>)
+
+```cpp
+#include <algorithm> // 비교자 기반 표준 정렬
+#include <iostream> // 기록의 입출력
+#include <vector> // 기록 배열
+using namespace std; // 표준 이름 접두사 생략
+struct Record { int id, score, penalty; }; // 기록의 세 필드 정의
+int main() { // 실행 시작점
+    int n; cin >> n; vector<Record> data(n); // 입력 수에 맞는 기록 배열
+    for (auto& item : data) cin >> item.id >> item.score >> item.penalty; // 각 기록 입력
+    sort(data.begin(), data.end(), [](const Record& x, const Record& y) { // 먼저 와야 하는지 반환할 람다 비교자
+        if (x.score != y.score) return x.score > y.score; // 점수 내림차순
+        if (x.penalty != y.penalty) return x.penalty < y.penalty; // 같은 점수에서는 벌점 오름차순
+        return x.id < y.id; // 나머지 동률은 식별자로 결정
+    }); // 비교자와 정렬 호출 완료
+    for (int i = 0; i < n; ++i) cout << (i ? " " : "") << data[i].id; // 정렬 결과의 식별자 출력
+    cout << '\n'; // 출력 줄 끝내기
+    return 0; // 정상 종료
+} // 다중 기준 정렬 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/05-정렬과비교함수_sorting-comparators/example.py>)
+
+```python
+import sys # 정수 입력 토큰 읽기
+data = list(map(int, sys.stdin.buffer.read().split())) # 입력을 정수 목록으로 변환
+n = data[0] # 기록 수
+records = [tuple(data[1 + 3 * i:4 + 3 * i]) for i in range(n)] # 식별자·점수·벌점 묶기
+records.sort(key=lambda item: (-item[1], item[2], item[0])) # 점수 역방향과 나머지 정방향을 하나의 키로 지정
+print(*(item[0] for item in records)) # 정렬된 식별자 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다. |
+| 저장과 연산 | qsort 비교자는 음수·0·양수로 순서를 반환합니다. | sort 비교자는 앞서야 하는지 bool로 반환합니다. | tuple 키의 사전식 비교로 같은 세 기준을 표현합니다. |
+| 자료형과 범위 | 필드가 모두 작은 int 범위이며 비교에서 큰 뺄셈을 사용하지 않습니다. | 필드가 모두 작은 int 범위이며 비교에서 큰 뺄셈을 사용하지 않습니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: C는 qsort 구현의 비교 정렬 비용에 따릅니다. C++ sort와 Python 정렬의 대표 최악 상한은 O(N log N)입니다.
+- 보조 공간: 기록 저장 O(N)이며 정렬 보조 공간은 사용한 라이브러리에 따릅니다.
+
+각 비교가 세 정수 필드만 확인합니다.
+
+[예제 입력](<예제_examples/05-정렬과비교함수_sorting-comparators/input.txt>) · [예상 출력](<예제_examples/05-정렬과비교함수_sorting-comparators/output.txt>) · [예제 실행 방법](<예제_examples/05-정렬과비교함수_sorting-comparators/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

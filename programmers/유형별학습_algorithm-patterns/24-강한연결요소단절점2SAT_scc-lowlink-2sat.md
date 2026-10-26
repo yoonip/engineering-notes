@@ -54,6 +54,206 @@ C/C++/Python 모두 DFS 깊이가 길 수 있습니다. 반복형 Tarjan은 복�
 
 2-SAT의 선형 시간 판정의 원전은 Aspvall, Plass, Tarjan의 [A linear-time algorithm for testing the truth of certain quantified Boolean formulas](https://mathweb.ucsd.edu/~sbuss/CourseWeb/Math268_2007WS/2SAT.pdf)입니다. 이 문서의 작은 그래프와 논리식은 원문 예제가 아닌 자체 구성입니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+두 리터럴 절을 함의 그래프로 바꾸고 Kosaraju SCC로 만족 가능성을 판정합니다. 변수의 실제 값 배정, Tarjan, 단절점과 단절선은 이 예제의 구현 범위가 아닙니다.
+
+이 예제에서 직접 구현하는 기법은 2-SAT 함의 그래프 · Kosaraju SCC · 재귀 종료 순서 · 변수와 부정의 모순 판정입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+변수 수 N과 절 수 M 뒤에 M개의 리터럴 쌍 a b가 주어집니다. 1≤N≤4, 0≤M≤8이며 리터럴은 ±1~±N입니다. a b는 (a OR b) 절입니다.
+
+```text
+2 3
+1 2
+-1 2
+1 -2
+```
+
+만족 가능한 배정이 있으면 SAT, 없으면 UNSAT을 출력합니다.
+
+```text
+SAT
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 리터럴 정점: x=0, ¬x=1, y=2, ¬y=3 | 변수와 부정을 서로 다른 정점으로 만듭니다. |
+| 2 | (x∨y): 1→2, 3→0 | 둘 다 거짓인 배정을 금지하는 두 함의를 추가합니다. |
+| 3 | 첫 DFS 종료 순서=[2,0,3,1] | 자식 탐색이 끝난 뒤 정점을 기록합니다. |
+| 4 | component=[1,0,1,0], 결과=SAT | 각 변수와 부정이 다른 SCC이므로 배정이 존재합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
+#include <stdlib.h>  // qsort와 정수 절댓값 함수
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    fputs(text, stdout);  // 문자열을 표준 출력에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+static int vertices, adj[8][8], seen[8], order[8], order_size, component[8];  // 최대 8개 리터럴 정점의 SCC 상태
+static int literal_node(int literal) {  // 부호 있는 리터럴을 정점 번호로 변환
+    return 2 * (abs(literal) - 1) + (literal < 0);  // 양수는 짝수, 부정은 바로 다음 홀수
+}  // 리터럴 변환 함수 끝
+static void dfs_order(int u) {  // 원래 그래프의 종료 순서 기록
+    seen[u] = 1;  // 재귀로 다시 방문하지 않게 표시
+    for (int v = 0; v < vertices; ++v) if (adj[u][v] && !seen[v]) dfs_order(v);  // 미방문 후속 리터럴부터 처리
+    order[order_size++] = u;  // 자식 탐색을 마친 뒤 종료 순서에 추가
+}  // 종료 순서 DFS 끝
+static void dfs_component(int u, int label) {  // 역그래프의 연결 탐색으로 SCC 배정
+    component[u] = label;  // 현재 SCC 번호 기록
+    for (int v = 0; v < vertices; ++v) if (adj[v][u] && component[v] == -1) dfs_component(v, label);  // 반대 간선으로 같은 SCC 확장
+}  // 역그래프 DFS 끝
+int main(void) {  // 2-SAT 만족 가능성 판정
+    int variables = read_int(), clauses = read_int();  // 변수 수와 OR 절 수
+    vertices = 2 * variables;  // 각 변수의 참·거짓 리터럴 정점
+    for (int i = 0; i < clauses; ++i) {  // 두 리터럴 절 입력
+        int a = literal_node(read_int()), b = literal_node(read_int());  // 두 리터럴의 정점 번호
+        adj[a ^ 1][b] = 1; adj[b ^ 1][a] = 1;  // 부정 a에서 b, 부정 b에서 a로 함의 추가
+    }  // 함의 그래프 구성 끝
+    for (int u = 0; u < vertices; ++u) if (!seen[u]) dfs_order(u);  // 모든 정점의 DFS 종료 순서
+    for (int u = 0; u < vertices; ++u) component[u] = -1;  // 아직 SCC가 없는 정점 표시
+    int count = 0;  // 다음 SCC 번호
+    for (int i = order_size - 1; i >= 0; --i) {  // 종료 순서 역순으로 두 번째 탐색
+        int u = order[i];  // 이번 역그래프 출발 후보
+        if (component[u] == -1) dfs_component(u, count++);  // 아직 소속이 없는 SCC를 하나 분리
+    }  // SCC 분해 끝
+    for (int x = 0; x < variables; ++x) {  // 각 변수와 그 부정의 소속 비교
+        if (component[2 * x] == component[2 * x + 1]) { write_text("UNSAT\n"); return 0; }  // 같은 SCC면 양쪽 함의가 모순
+    }  // 모든 변수의 모순 검사 끝
+    write_text("SAT\n"); return 0;  // 모순 없는 배정의 존재 표시
+}  // SCC 기반 2-SAT 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/example.cpp>)
+
+```cpp
+#include <iostream>  // cin과 cout으로 표준 입력·출력 처리
+#include <cstdlib>  // qsort와 정수 절댓값 함수
+using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    cin >> value;  // 스트림에서 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    cout << text;  // 문자열을 스트림에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+static int vertices, adj[8][8], seen[8], order[8], order_size, component[8];  // 최대 8개 리터럴 정점의 SCC 상태
+static int literal_node(int literal) {  // 부호 있는 리터럴을 정점 번호로 변환
+    return 2 * (abs(literal) - 1) + (literal < 0);  // 양수는 짝수, 부정은 바로 다음 홀수
+}  // 리터럴 변환 함수 끝
+static void dfs_order(int u) {  // 원래 그래프의 종료 순서 기록
+    seen[u] = 1;  // 재귀로 다시 방문하지 않게 표시
+    for (int v = 0; v < vertices; ++v) if (adj[u][v] && !seen[v]) dfs_order(v);  // 미방문 후속 리터럴부터 처리
+    order[order_size++] = u;  // 자식 탐색을 마친 뒤 종료 순서에 추가
+}  // 종료 순서 DFS 끝
+static void dfs_component(int u, int label) {  // 역그래프의 연결 탐색으로 SCC 배정
+    component[u] = label;  // 현재 SCC 번호 기록
+    for (int v = 0; v < vertices; ++v) if (adj[v][u] && component[v] == -1) dfs_component(v, label);  // 반대 간선으로 같은 SCC 확장
+}  // 역그래프 DFS 끝
+int main(void) {  // 2-SAT 만족 가능성 판정
+    int variables = read_int(), clauses = read_int();  // 변수 수와 OR 절 수
+    vertices = 2 * variables;  // 각 변수의 참·거짓 리터럴 정점
+    for (int i = 0; i < clauses; ++i) {  // 두 리터럴 절 입력
+        int a = literal_node(read_int()), b = literal_node(read_int());  // 두 리터럴의 정점 번호
+        adj[a ^ 1][b] = 1; adj[b ^ 1][a] = 1;  // 부정 a에서 b, 부정 b에서 a로 함의 추가
+    }  // 함의 그래프 구성 끝
+    for (int u = 0; u < vertices; ++u) if (!seen[u]) dfs_order(u);  // 모든 정점의 DFS 종료 순서
+    for (int u = 0; u < vertices; ++u) component[u] = -1;  // 아직 SCC가 없는 정점 표시
+    int count = 0;  // 다음 SCC 번호
+    for (int i = order_size - 1; i >= 0; --i) {  // 종료 순서 역순으로 두 번째 탐색
+        int u = order[i];  // 이번 역그래프 출발 후보
+        if (component[u] == -1) dfs_component(u, count++);  // 아직 소속이 없는 SCC를 하나 분리
+    }  // SCC 분해 끝
+    for (int x = 0; x < variables; ++x) {  // 각 변수와 그 부정의 소속 비교
+        if (component[2 * x] == component[2 * x + 1]) { write_text("UNSAT\n"); return 0; }  // 같은 SCC면 양쪽 함의가 모순
+    }  // 모든 변수의 모순 검사 끝
+    write_text("SAT\n"); return 0;  // 모순 없는 배정의 존재 표시
+}  // SCC 기반 2-SAT 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/example.py>)
+
+```python
+import sys  # 표준 입력 전체를 토큰으로 읽기
+
+def main():  # 입력 한 건을 계산하고 결과 출력
+    tokens = iter(sys.stdin.read().split())  # 공백과 줄바꿈을 같은 구분자로 처리
+    variables, clauses = int(next(tokens)), int(next(tokens))  # 변수 수와 두 리터럴 절 수
+    vertices = 2 * variables  # 참과 부정을 각각 정점으로 생성
+    adj = [[0] * vertices for _ in range(vertices)]  # 함의 그래프의 인접 행렬
+    def literal_node(literal):  # 부호 있는 정수를 리터럴 정점으로 변환
+        return 2 * (abs(literal) - 1) + (literal < 0)  # 서로 부정인 리터럴 번호는 XOR 1 관계
+    for _ in range(clauses):  # OR 절 입력
+        a, b = literal_node(int(next(tokens))), literal_node(int(next(tokens)))  # 절을 이루는 두 정점
+        adj[a ^ 1][b] = adj[b ^ 1][a] = 1  # 두 방향의 함의 추가
+    seen = [False] * vertices  # 첫 DFS의 방문 여부
+    order = []  # 첫 DFS의 종료 순서
+    def dfs_order(u):  # 원래 그래프의 후위 순서 계산
+        seen[u] = True  # 재귀 중복 방문 방지
+        for v in range(vertices):  # 후속 함의 확인
+            if adj[u][v] and not seen[v]:  # 미방문 이웃만 탐색
+                dfs_order(v)  # 이웃 종료를 먼저 기록
+        order.append(u)  # 모든 이웃 처리를 마친 정점
+    for u in range(vertices):  # 고립 리터럴도 탐색에 포함
+        if not seen[u]:  # 아직 시작하지 않은 DFS
+            dfs_order(u)  # 종료 순서 확장
+    component = [-1] * vertices  # 두 번째 DFS의 SCC 번호
+    def dfs_component(u, label):  # 역그래프에서 SCC 한 개 분리
+        component[u] = label  # 현재 소속 기록
+        for v in range(vertices):  # u로 들어오던 간선을 역방향으로 사용
+            if adj[v][u] and component[v] == -1:  # 아직 SCC가 없는 역방향 이웃
+                dfs_component(v, label)  # 같은 SCC에 포함
+    count = 0  # 다음 SCC 번호
+    for u in reversed(order):  # 종료 순서가 늦은 정점부터 시작
+        if component[u] == -1:  # 이전 SCC에 포함되지 않은 정점
+            dfs_component(u, count)  # 새로운 SCC 탐색
+            count += 1  # 다음 SCC 번호로 이동
+    possible = all(component[2 * x] != component[2 * x + 1] for x in range(variables))  # 변수와 부정의 동시 함의 모순 검사
+    print("SAT" if possible else "UNSAT")  # 만족 가능성만 출력
+
+if __name__ == "__main__":  # 직접 실행할 때만 예제 시작
+    main()  # 표준 입력 한 건 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력과 출력 | scanf와 fputs를 감싼 함수를 사용합니다. | cin과 cout을 감싼 함수를 사용합니다. | 입력을 split으로 나누고 print로 출력합니다. |
+| 작업 배열 | 입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다. | 절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다. | 입력 크기에 맞춘 리스트를 생성합니다. |
+| 정수와 상태 | 예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다. | 같은 정수 범위와 상태 전이를 사용합니다. | int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(N²+M)
+- 보조 공간: O(N²)
+
+리터럴은 2N개이며 두 DFS가 인접 행렬의 행을 순회합니다. 인접 리스트의 선형 SCC와 비용을 구별합니다.
+
+[예제 입력](<예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/input.txt>) · [예상 출력](<예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/output.txt>) · [예제 실행 방법](<예제_examples/24-강한연결요소단절점2SAT_scc-lowlink-2sat/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

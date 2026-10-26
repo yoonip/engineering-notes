@@ -120,6 +120,134 @@ Python 정수는 임의 정밀도이므로 값이 커질수록 정수 연산 비
 MIT 강의는 문제 정의·정답성·연산 비용 모형의 근거이며 Python 문서는 정수 의미의 근거입니다.
 주문량, 계산 표, 자원 계산과 검증 절차는 이 글에서 직접 구성한 설명입니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+같은 반열린 구간 질의를 직접 순회와 누적합으로 각각 계산해 결과와 계산 구조를 비교합니다.
+
+이 예제에서 직접 구현하는 기법은 문제 모델링 · 비용 비교 · 직접 순회 · 누적합입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+첫 줄 N Q(1≤N,Q≤50), 다음 N개 정수(−1000~1000), 이후 Q줄에 0≤l≤r≤N입니다.
+
+```text
+5 2
+3 1 4 2 5
+1 4
+0 5
+```
+
+첫 줄은 직접 합산한 Q개 결과, 둘째 줄은 누적합으로 구한 같은 결과입니다.
+
+```text
+7 15
+7 15
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | a=[3,1,4,2,5], 질의=[(1,4),(0,5)] | 입력과 출력 조건을 같은 반열린 구간으로 모델링합니다. |
+| 2 | 직접 첫 질의: 1+4+2=7 | 질의 구간의 세 원소를 읽습니다. |
+| 3 | prefix=[0,3,4,8,10,15] | 앞의 i개 합을 한 번 구축합니다. |
+| 4 | prefix[4]−prefix[1]=10−3=7, prefix[5]−prefix[0]=15 | 같은 답을 경계 두 개의 차이로 계산합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/01-문제모델링과복잡도_modeling-complexity/example.c>)
+
+```c
+#include <stdio.h> // 정수 입력과 결과 출력에 쓸 표준 함수
+int main(void) { // 실행 시작점
+    int n, q, a[50], l[50], r[50]; // 최대 50개 값과 질의의 반열린 경계
+    long long prefix[51] = {0}, direct[50]; // 빈 접두 합과 직접 계산 결과
+    scanf("%d %d", &n, &q); // 값 개수와 질의 개수 읽기
+    for (int i = 0; i < n; ++i) scanf("%d", &a[i]); // 원래 배열 입력
+    for (int i = 0; i < q; ++i) scanf("%d %d", &l[i], &r[i]); // 모든 질의의 시작과 끝 저장
+    for (int i = 0; i < q; ++i) { // 직접 합산 방식으로 각 질의 처리
+        direct[i] = 0; // 이번 질의의 합 초기화
+        for (int j = l[i]; j < r[i]; ++j) direct[i] += a[j]; // 대상 구간의 원소를 하나씩 더하기
+        printf("%s%lld", i ? " " : "", direct[i]); // 직접 구한 합을 질의 순서대로 출력
+    } // 직접 합산 결과 한 줄 완성
+    printf("\n"); // 첫 결과 줄 끝내기
+    for (int i = 0; i < n; ++i) prefix[i + 1] = prefix[i] + a[i]; // 배열을 한 번 읽어 접두 합 구축
+    for (int i = 0; i < q; ++i) printf("%s%lld", i ? " " : "", prefix[r[i]] - prefix[l[i]]); // 두 접두 합 차이로 같은 질의 출력
+    printf("\n"); // 누적합 결과 줄 끝내기
+    return 0; // 정상 종료
+} // 두 방식의 비교 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/01-문제모델링과복잡도_modeling-complexity/example.cpp>)
+
+```cpp
+#include <iostream> // 표준 입력과 출력 스트림
+#include <vector> // 입력 크기에 맞춘 값과 질의 배열
+using namespace std; // 표준 이름의 접두사 생략
+int main() { // 실행 시작점
+    int n, q; cin >> n >> q; // 원소 수와 질의 수 읽기
+    vector<int> a(n), l(q), r(q); // 값과 반열린 질의 경계 저장
+    vector<long long> prefix(n + 1, 0); // 빈 구간을 포함한 접두 합
+    for (int& value : a) cin >> value; // 원래 배열 입력
+    for (int i = 0; i < q; ++i) cin >> l[i] >> r[i]; // 질의 경계 입력
+    for (int i = 0; i < q; ++i) { // 직접 합산으로 질의 처리
+        long long total = 0; // 이번 구간 합 초기화
+        for (int j = l[i]; j < r[i]; ++j) total += a[j]; // 구간 원소를 하나씩 더하기
+        cout << (i ? " " : "") << total; // 직접 계산 결과 출력
+    } // 직접 합산 종료
+    cout << '\n'; // 첫 결과 줄 끝내기
+    for (int i = 0; i < n; ++i) prefix[i + 1] = prefix[i] + a[i]; // 한 번의 순회로 접두 합 구축
+    for (int i = 0; i < q; ++i) cout << (i ? " " : "") << prefix[r[i]] - prefix[l[i]]; // 공통 앞부분을 빼 같은 질의 처리
+    cout << '\n'; // 둘째 결과 줄 끝내기
+    return 0; // 정상 종료
+} // 두 방식의 비교 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/01-문제모델링과복잡도_modeling-complexity/example.py>)
+
+```python
+import sys # 전체 정수 입력을 읽을 표준 모듈
+data = list(map(int, sys.stdin.buffer.read().split())) # 공백 토큰을 정수로 변환
+n, q = data[:2] # 원소 수와 질의 수 해체
+values = data[2:2 + n] # 원래 값 배열 분리
+queries = [tuple(data[2 + n + 2 * i:4 + n + 2 * i]) for i in range(q)] # 질의의 반열린 경계 묶기
+direct = [] # 직접 합산 결과 목록
+for left, right in queries: # 각 질의를 입력 순서대로 확인
+    total = 0 # 이번 구간 합 초기화
+    for index in range(left, right): # 대상 구간 인덱스 순회
+        total += values[index] # 원소 하나씩 합산
+    direct.append(total) # 직접 구한 합 저장
+prefix = [0] # 빈 접두 구간의 합
+for value in values: # 원소를 한 번씩만 읽기
+    prefix.append(prefix[-1] + value) # 다음 접두 합 생성
+fast = [prefix[right] - prefix[left] for left, right in queries] # 같은 질의를 두 접두 합 차이로 계산
+print(*direct) # 직접 합산 결과를 첫 줄에 출력
+print(*fast) # 누적합 결과를 둘째 줄에 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다. |
+| 저장과 연산 | 상한 50의 고정 배열을 사용합니다. | vector를 N·Q 크기로 만듭니다. | list와 정수 인덱스로 같은 두 절차를 계산합니다. |
+| 자료형과 범위 | int 범위 안의 값만 사용하며 합은 long long으로 누적합니다. | int 범위 안의 값만 사용하며 합은 long long으로 누적합니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: 직접 방식 O(NQ), 누적합 방식 O(N+Q), 둘 다 실행하는 이 프로그램은 O(NQ+N+Q)입니다.
+- 보조 공간: 값·질의·접두 합을 포함해 O(N+Q)입니다.
+
+직접 방식은 구간을 반복 방문하고 누적합은 각 질의를 두 번의 배열 조회로 처리합니다.
+
+[예제 입력](<예제_examples/01-문제모델링과복잡도_modeling-complexity/input.txt>) · [예상 출력](<예제_examples/01-문제모델링과복잡도_modeling-complexity/output.txt>) · [예제 실행 방법](<예제_examples/01-문제모델링과복잡도_modeling-complexity/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 [유형별 연습문제](<연습문제_problem-index.md>)에서 문제를 고르고 상태·정당성·구현 비용을 함께 비교할 수 있습니다.

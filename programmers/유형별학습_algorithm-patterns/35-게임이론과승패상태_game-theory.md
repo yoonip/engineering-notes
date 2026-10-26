@@ -97,6 +97,151 @@ C·C++에서는 시프트와 XOR 자료형 폭을, Python에서는 상태 재귀
 - 질문: 두 게임이 각각 승리면 합도 승리입니까? 답: 그런디 값이 같으면 XOR가 0이 되어 합은 패배일 수 있습니다.
 - 질문: 반복이 있는 게임도 mex를 재귀 호출하면 됩니까? 답: 순환과 무승부를 먼저 처리해야 하며 유한 DAG용 재귀를 그대로 적용하면 안 됩니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+허용 이동의 그런디 값을 계산하고 독립한 무더기들의 XOR로 정상 규칙의 승패를 구합니다.
+
+이 예제에서 직접 구현하는 기법은 DAG 게임 DP · mex · 스프라그–그런디 XOR입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+k,n(1≤k≤5,0≤n≤8), 다음 k개의 서로 다른 양의 이동량(1..5), 다음 n개의 돌 수(0..30)입니다. 한 수에는 한 무더기에서 허용량만 제거하며 둘 수 없는 사람이 집니다.
+
+```text
+2 2
+1 2
+1 2
+```
+
+GRUNDY 뒤에 무더기별 값을 출력합니다. 다음 줄 XOR 값, 마지막 줄 WIN 또는 LOSE입니다. 무더기가 없으면 GRUNDY만 출력합니다.
+
+```text
+GRUNDY 1 2
+XOR 3
+WIN
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 허용 이동 {1,2},G[0]=0 | 움직일 수 없는 상태의 그런디 값은0입니다. |
+| 2 | G[1]=mex{0}=1 | 이동1 뒤 값0이므로 없는 최소값은1입니다. |
+| 3 | G[2]=mex{1,0}=2 | 이동1과2의 다음 상태를 모두 제외합니다. |
+| 4 | 무더기(1,2)의 XOR=1^2=3 | 정상 공평 게임의 독립 합이0이 아니므로 WIN입니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/35-게임이론과승패상태_game-theory/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+int main(void) {  // 공평 게임의 독립 합 분석
+    int k, n, moves[5], piles[8], grundy[31] = {0}, maximum = 0;  // 양의 이동과 작은 상태 상한
+    scanf("%d %d", &k, &n);  // 이동 종류와 무더기 수
+    for (int i = 0; i < k; ++i) scanf("%d", &moves[i]);  // 허용 이동량
+    for (int i = 0; i < n; ++i) {  // 각 무더기 크기 입력
+        scanf("%d", &piles[i]);  // 남은 돌 수
+        if (piles[i] > maximum) maximum = piles[i];  // 필요한 DP 끝 상태
+    }  // 무더기 입력 끝
+    for (int stones = 1; stones <= maximum; ++stones) {  // 돌이 적은 상태부터 계산
+        int seen[6] = {0};  // 다음 값은 최대5이므로 mex 범위6칸
+        for (int i = 0; i < k; ++i) if (moves[i] <= stones) seen[grundy[stones - moves[i]]] = 1;  // 도달 가능한 그런디 값 표시
+        int mex = 0;  // 없는 최소 음이 아닌 값
+        while (seen[mex]) ++mex;  // 최대k개의 다음 값 밖으로 이동
+        grundy[stones] = mex;  // 현재 상태의 그런디 값
+    }  // DP 구축 끝
+    int combined = 0;  // 독립 합의 XOR
+    printf("GRUNDY");  // 무더기별 값의 줄 시작
+    for (int i = 0; i < n; ++i) {  // 각 독립 부분 게임
+        printf(" %d", grundy[piles[i]]);  // 해당 그런디 값
+        combined ^= grundy[piles[i]];  // 독립 합의 XOR 누적
+    }  // 무더기 결합 끝
+    printf("\nXOR %d\n%s\n", combined, combined ? "WIN" : "LOSE");  // 정상 규칙의 승패 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/35-게임이론과승패상태_game-theory/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+int main() {  // 공평 게임의 독립 합 분석
+    int k, n, moves[5], piles[8], grundy[31] = {0}, maximum = 0;  // 양의 이동과 작은 상태 상한
+    std::cin >> k >> n;  // 이동 종류와 무더기 수
+    for (int i = 0; i < k; ++i) std::cin >> moves[i];  // 허용 이동량
+    for (int i = 0; i < n; ++i) {  // 각 무더기 크기 입력
+        std::cin >> piles[i];  // 남은 돌 수
+        if (piles[i] > maximum) maximum = piles[i];  // 필요한 DP 끝 상태
+    }  // 무더기 입력 끝
+    for (int stones = 1; stones <= maximum; ++stones) {  // 돌이 적은 상태부터 계산
+        int seen[6] = {0};  // 다음 값은 최대5이므로 mex 범위6칸
+        for (int i = 0; i < k; ++i) if (moves[i] <= stones) seen[grundy[stones - moves[i]]] = 1;  // 도달 가능한 그런디 값 표시
+        int mex = 0;  // 없는 최소 음이 아닌 값
+        while (seen[mex]) ++mex;  // 최대k개의 다음 값 밖으로 이동
+        grundy[stones] = mex;  // 현재 상태의 그런디 값
+    }  // DP 구축 끝
+    int combined = 0;  // 독립 합의 XOR
+    std::cout << "GRUNDY";  // 무더기별 값의 줄 시작
+    for (int i = 0; i < n; ++i) {  // 각 독립 부분 게임
+        std::cout << " " << grundy[piles[i]];  // 해당 그런디 값
+        combined ^= grundy[piles[i]];  // 독립 합의 XOR 누적
+    }  // 무더기 결합 끝
+    std::cout << "\nXOR " << combined << "\n" << (combined ? "WIN" : "LOSE") << "\n";  // 정상 규칙의 승패 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/35-게임이론과승패상태_game-theory/example.py>)
+
+```python
+import sys  # 게임 조건의 정수 입력
+tokens = iter(map(int, sys.stdin.read().split()))  # 공백 토큰 순회
+k, n = next(tokens), next(tokens)  # 이동 종류와 무더기 수
+moves = [next(tokens) for _ in range(k)]  # 양의 허용 이동
+piles = [next(tokens) for _ in range(n)]  # 각 독립 게임의 돌 수
+maximum = max(piles, default=0)  # 계산할 마지막 상태
+grundy = [0] * (maximum + 1)  # 종료 상태 G[0]=0
+for stones in range(1, maximum + 1):  # 의존 상태가 먼저 정해지는 순서
+    seen = {grundy[stones - step] for step in moves if step <= stones}  # 다음 상태의 그런디 값
+    mex = 0  # 없는 최소값 탐색 시작
+    while mex in seen:  # 도달 가능한 값은 제외
+        mex += 1  # 다음 후보
+    grundy[stones] = mex  # 현재 게임의 값
+combined = 0  # 독립 합
+values = [grundy[stones] for stones in piles]  # 출력할 무더기별 값
+for value in values:  # 독립 게임 결합
+    combined ^= value  # XOR 누적
+print("GRUNDY", *values)  # 빈 목록도 후행 공백 없이 출력
+print("XOR", combined)  # 합성한 그런디 값
+print("WIN" if combined else "LOSE")  # 현재 차례의 승패
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 이동5개, 무더기8개, 상태31개, mex표6칸의 고정 배열을 사용합니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(Sk+n)
+- 보조 공간: O(S+k+n)
+
+최대 돌 수 S까지 최대k개 다음 값을 확인하고 무더기별 값을 XOR합니다.
+
+[예제 입력](<예제_examples/35-게임이론과승패상태_game-theory/input.txt>) · [예상 출력](<예제_examples/35-게임이론과승패상태_game-theory/output.txt>) · [예제 실행 방법](<예제_examples/35-게임이론과승패상태_game-theory/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

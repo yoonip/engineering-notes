@@ -96,6 +96,144 @@ C·C++ 정렬 비교 함수에서 종료 시각을 빼서 반환하면 큰 정�
 - 질문: 회의 시작과 직전 종료가 같으면 어떻게 처리합니까? 답: 여기서는 [s,f) 모델이므로 허용하며, 문제의 경계 규칙이 바뀌면 비교도 바꿉니다.
 - 질문: 예제에서 맞는 규칙이면 충분합니까? 답: 예제는 반례 탐색에 유용하지만 모든 입력을 다루는 교환 논증이나 다른 정당성 증명이 필요합니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+종료가 빠른 회의부터 선택하고 겹치는 후보를 제외하여 최대 회의 수를 구합니다.
+
+이 예제에서 직접 구현하는 기법은 종료 시각 기준 그리디 · 정렬과 경계 비교입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+첫 줄은 회의 수 n(0≤n≤30)입니다. 다음 n줄은 정수 시작·종료 s,e(-1000≤s<e≤1000)입니다. 구간은 [s,e)입니다.
+
+```text
+5
+0 3
+1 2
+2 4
+3 5
+4 6
+```
+
+겹치지 않게 고른 최대 회의 수를 한 줄에 출력합니다.
+
+```text
+3
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 종료순 B(1,2),A(0,3),C(2,4),D(3,5),E(4,6) | 종료가 빠른 순서로 후보를 정리합니다. |
+| 2 | B 선택, finish=2, count=1 | 첫 회의는 뒤의 선택 공간을 가장 많이 남깁니다. |
+| 3 | A 제외, C 선택, finish=4, count=2 | 시작이 직전 종료 이상인 회의만 이어 붙입니다. |
+| 4 | D 제외, E 선택, finish=6, count=3 | 경계가 같은 시작은 허용하므로 최종 답은 3입니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/15-그리디와교환논증_greedy-exchange/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 결과 출력
+#include <stdlib.h>  // 회의 배열의 qsort 정렬
+
+typedef struct { int start, end; } Meeting;  // 회의의 시작과 종료를 묶는 값
+int compare(const void *left, const void *right) {  // 종료순 정렬에 사용할 비교
+    const Meeting *a = (const Meeting *)left, *b = (const Meeting *)right;  // 비교할 두 회의
+    if (a->end != b->end) return (a->end > b->end) - (a->end < b->end);  // 종료가 이른 쪽 우선
+    return (a->start > b->start) - (a->start < b->start);  // 같은 종료에서는 시작순
+}  // 회의 비교 끝
+int main(void) {  // 독립 실행의 시작점
+    int n, count = 0, finish = 0;  // 회의 수와 선택 결과
+    Meeting meetings[30];  // 허용된 회의 30개 저장
+    scanf("%d", &n);  // 회의 수 읽기
+    for (int i = 0; i < n; ++i) {  // 입력한 회의를 차례로 저장
+        scanf("%d %d", &meetings[i].start, &meetings[i].end);  // 회의 경계 읽기
+    }  // 회의 입력 끝
+    qsort(meetings, n, sizeof(Meeting), compare);  // 종료가 빠른 순서 확정
+    for (int i = 0; i < n; ++i) {  // 정렬한 후보를 한 번씩 확인
+        if (count == 0 || meetings[i].start >= finish) {  // 직전 선택과 양립하는 회의
+            finish = meetings[i].end;  // 다음 회의가 시작할 수 있는 경계
+            ++count;  // 선택한 회의 수 증가
+        }  // 선택 조건 처리 끝
+    }  // 그리디 순회 끝
+    printf("%d\n", count);  // 최대 회의 수 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/15-그리디와교환논증_greedy-exchange/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입출력
+#include <algorithm>  // 회의 배열의 std::sort 정렬
+
+typedef struct { int start, end; } Meeting;  // 회의의 시작과 종료를 묶는 값
+int compare(const void *left, const void *right) {  // 종료순 정렬에 사용할 비교
+    const Meeting *a = (const Meeting *)left, *b = (const Meeting *)right;  // 비교할 두 회의
+    if (a->end != b->end) return (a->end > b->end) - (a->end < b->end);  // 종료가 이른 쪽 우선
+    return (a->start > b->start) - (a->start < b->start);  // 같은 종료에서는 시작순
+}  // 회의 비교 끝
+int main() {  // 독립 실행의 시작점
+    int n, count = 0, finish = 0;  // 회의 수와 선택 결과
+    Meeting meetings[30];  // 허용된 회의 30개 저장
+    std::cin >> n;  // 회의 수 읽기
+    for (int i = 0; i < n; ++i) {  // 입력한 회의를 차례로 저장
+        std::cin >> meetings[i].start >> meetings[i].end;  // 회의 경계 읽기
+    }  // 회의 입력 끝
+    std::sort(meetings, meetings + n, [](const Meeting &a, const Meeting &b) { return compare(&a, &b) < 0; });  // 종료가 빠른 순서 확정
+    for (int i = 0; i < n; ++i) {  // 정렬한 후보를 한 번씩 확인
+        if (count == 0 || meetings[i].start >= finish) {  // 직전 선택과 양립하는 회의
+            finish = meetings[i].end;  // 다음 회의가 시작할 수 있는 경계
+            ++count;  // 선택한 회의 수 증가
+        }  // 선택 조건 처리 끝
+    }  // 그리디 순회 끝
+    std::cout << count << "\n";  // 최대 회의 수 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/15-그리디와교환논증_greedy-exchange/example.py>)
+
+```python
+import sys  # 공백 단위 표준 입력 읽기
+tokens = iter(map(int, sys.stdin.read().split()))  # 정수 토큰 순회
+n = next(tokens)  # 회의 수
+meetings = [(next(tokens), next(tokens)) for _ in range(n)]  # 시작과 종료 저장
+meetings.sort(key=lambda item: (item[1], item[0]))  # 종료순과 동률 시작순
+count = 0  # 선택한 회의 수
+finish = 0  # 직전 선택의 종료
+for start, end in meetings:  # 정렬한 후보 순회
+    if count == 0 or start >= finish:  # 겹치지 않는 회의만 선택
+        finish = end  # 다음 선택의 시작 경계 갱신
+        count += 1  # 선택 수 누적
+print(count)  # 최대 회의 수 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 회의 30개를 담는 고정 배열을 사용합니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(n log n)
+- 보조 공간: O(n)
+
+정렬 뒤 한 번 순회하며, 회의 목록과 정렬 구현의 저장 공간을 포함합니다.
+
+[예제 입력](<예제_examples/15-그리디와교환논증_greedy-exchange/input.txt>) · [예상 출력](<예제_examples/15-그리디와교환논증_greedy-exchange/output.txt>) · [예제 실행 방법](<예제_examples/15-그리디와교환논증_greedy-exchange/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

@@ -112,6 +112,126 @@ Python에서 매번 `values[left:right+1]`를 만들어 합산하면 창 요약�
 정렬된 두 열의 선형 병합 개념은 MIT 강의의 두 손가락 알고리즘을 참고했습니다.
 가변 창의 코드·추적·양수 조건 증명과 음수 반례는 이 글에서 직접 구성했습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+모든 원소가 양수라는 조건을 이용해 오른쪽 끝을 늘리고 목표를 만족하는 동안 왼쪽 끝을 줄입니다.
+
+이 예제에서 직접 구현하는 기법은 두 포인터 · 가변 길이 슬라이딩 윈도 · 양수 합의 단조성입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N target(1≤N≤20,1≤target≤1000), N개 양수(1~100)입니다. 음수나0은 허용하지 않습니다.
+
+```text
+5 6
+2 1 3 2 4
+```
+
+합이 target 이상인 연속 구간의 최소 길이입니다. 없으면0입니다.
+
+```text
+2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | right=2,left=0,total=6,best=3 | 처음 목표를 만족한 구간[2,1,3]의 길이는3입니다. |
+| 2 | 왼쪽2 제거 후 left=1,total=4 | 양수를 제거하면 합이 감소하므로 더 줄일 필요가 없습니다. |
+| 3 | right=4,left=2,total=9,best=3 | 오른쪽에2와4가 들어온 뒤 남아 있는 구간은[3,2,4]입니다. |
+| 4 | 3 제거 후 total=6,left=3,best=2; 2 제거 후 total=4 | [2,4]로 길이2를 얻은 뒤 목표보다 작아져 축소를 끝냅니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/example.c>)
+
+```c
+#include <stdio.h> // 양수 배열 입력과 최소 길이 출력
+int main(void) { // 실행 시작점
+    int n, target, a[20], left = 0, best; // 배열 크기·목표·왼쪽 경계·최소 길이
+    long long sum = 0; // 현재 창의 합
+    scanf("%d %d", &n, &target); // 원소 수와 목표 합 읽기
+    best = n + 1; // 아직 답을 못 찾은 표식
+    for (int i = 0; i < n; ++i) scanf("%d", &a[i]); // 양수 원소 입력
+    for (int right = 0; right < n; ++right) { // 오른쪽 끝을 한 칸씩 확장
+        sum += a[right]; // 새 원소를 현재 창에 포함
+        while (sum >= target) { // 목표를 만족하는 동안 왼쪽을 줄이기
+            int length = right - left + 1; // 현재 닫힌 구간의 원소 수
+            if (length < best) best = length; // 더 짧은 유효 창이면 답 갱신
+            sum -= a[left++]; // 왼쪽 원소를 빼고 경계 전진
+        } // 이번 오른쪽 끝에서 가능한 축소 끝
+    } // 모든 오른쪽 끝 확인 끝
+    printf("%d\n", best == n + 1 ? 0 : best); // 유효 창이 없으면0 출력
+    return 0; // 정상 종료
+} // 양수 슬라이딩 윈도 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/example.cpp>)
+
+```cpp
+#include <iostream> // 표준 입력과 출력
+#include <vector> // 입력 배열 저장
+using namespace std; // 표준 이름의 접두사 생략
+int main() { // 실행 시작점
+    int n, target; cin >> n >> target; // 배열 길이와 목표 합 읽기
+    vector<int> a(n); // 원소 수에 맞춘 배열
+    for (int& value : a) cin >> value; // 양수 원소 입력
+    int left = 0, best = n + 1; // 왼쪽 경계와 미발견 표식
+    long long sum = 0; // 현재 창의 합
+    for (int right = 0; right < n; ++right) { // 오른쪽 경계를 순서대로 확장
+        sum += a[right]; // 새 원소를 합에 추가
+        while (sum >= target) { // 합이 충분한 동안 짧은 창 탐색
+            int length = right - left + 1; // 현재 창의 길이 계산
+            if (length < best) best = length; // 가장 짧은 길이 유지
+            sum -= a[left++]; // 왼쪽 원소를 빼고 시작 위치 이동
+        } // 이번 끝점의 축소 끝
+    } // 전체 순회 끝
+    cout << (best == n + 1 ? 0 : best) << '\n'; // 최소 길이 또는 미발견0 출력
+    return 0; // 정상 종료
+} // 양수 슬라이딩 윈도 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/example.py>)
+
+```python
+import sys # 정수 토큰 입력
+data = list(map(int, sys.stdin.buffer.read().split())) # 입력을 정수로 변환
+n, target = data[:2] # 배열 길이와 목표 합 분리
+values = data[2:] # 양수 원소 배열
+left, total, best = 0, 0, n + 1 # 창의 시작·합·미발견 표식
+for right, value in enumerate(values): # 오른쪽 끝을 순서대로 확장
+    total += value # 새 원소를 현재 창에 포함
+    while total >= target: # 목표를 만족하는 동안 창 축소
+        best = min(best, right - left + 1) # 현재 유효 길이로 답 갱신
+        total -= values[left] # 빠질 왼쪽 원소의 값 제거
+        left += 1 # 왼쪽 경계 한 칸 전진
+print(0 if best == n + 1 else best) # 최소 길이 또는 미발견0 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다. |
+| 저장과 연산 | left 인덱스와 long long 합을 직접 갱신합니다. | vector의 인덱스로 양 끝을 이동하며 같은 합을 유지합니다. | enumerate로 오른쪽 위치와 값을 함께 읽고 리스트에서 왼쪽 값을 뺍니다. |
+| 자료형과 범위 | int 범위 안의 값만 사용하며 합은 long long으로 누적합니다. | int 범위 안의 값만 사용하며 합은 long long으로 누적합니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(N)입니다.
+- 보조 공간: 입력 배열에 O(N), 창 상태에 O(1)입니다.
+
+각 원소는 오른쪽에서 한 번 들어오고 왼쪽에서 최대 한 번 빠집니다.
+
+[예제 입력](<예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/input.txt>) · [예상 출력](<예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/output.txt>) · [예제 실행 방법](<예제_examples/10-투포인터와슬라이딩윈도_two-pointers-window/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

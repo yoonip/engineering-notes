@@ -62,6 +62,194 @@ C/C++은 진입 차수를 충분한 정수 범위로 저장합니다. Python에�
 
 [DP 상태와 전이](16-동적계획법의상태와전이_dynamic-programming.md) · [SCC와 2-SAT](24-강한연결요소단절점2SAT_scc-lowlink-2sat.md)
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+독립 작업을 병렬로 진행할 수 있다고 가정하고 Kahn 위상 정렬 중 선행 작업의 최대 완료 시각을 전달합니다. 인력 수 제한은 모델에 없습니다.
+
+이 예제에서 직접 구현하는 기법은 Kahn 위상 정렬 · DAG 완료 시각 DP · 사이클 존재 판정입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+V E, 이어서 V개 작업 시간, E개의 선행 간선 u v입니다. 1≤V≤8, 0≤E≤28, 시간은 0~100이며 정점 번호는 0부터입니다. 중복 간선은 한 번만 저장합니다.
+
+```text
+4 3
+2 5 3 1
+0 2
+1 2
+2 3
+```
+
+사이클이 없으면 정점 번호순 최소 완료 시각을 출력하고, 사이클이 있으면 CYCLE을 출력합니다.
+
+```text
+2 5 8 9
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | degree=[0,0,2,1], finish=[2,5,3,1] | 각 작업 자체 시간으로 초기화합니다. |
+| 2 | 0 완료 후 finish[2]=5, degree[2]=1 | 첫 선행 작업만 끝나 아직 2를 시작하지 않습니다. |
+| 3 | 1 완료 후 finish[2]=8, degree[2]=0 | 더 늦은 1번 완료 시각 5를 반영합니다. |
+| 4 | 3까지 처리 후 finish[3]=9, processed=4 | 후속 작업까지 처리하여 전체 DAG의 완료 시각을 얻습니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/23-위상정렬과DAG_topological-dag/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
+#include <stdlib.h>  // qsort와 정수 절댓값 함수
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    printf("%d", value);  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    fputs(text, stdout);  // 문자열을 표준 출력에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // Kahn 순서와 완료 시각 DP
+    int n = read_int(), m = read_int();  // 작업 수와 선행 관계 수
+    int duration[8], finish[8], degree[8] = {0}, adj[8][8] = {0}, queue[8];  // 시간·진입 차수·연결·큐
+    for (int i = 0; i < n; ++i) { duration[i] = read_int(); finish[i] = duration[i]; }  // 선행 작업 없는 기본 완료 시각
+    for (int i = 0; i < m; ++i) {  // 선행 관계 입력
+        int u = read_int(), v = read_int();  // u 완료 후 v 시작
+        if (!adj[u][v]) { adj[u][v] = 1; ++degree[v]; }  // 중복을 한 번만 진입 차수에 반영
+    }  // 선행 관계 입력 끝
+    int head = 0, tail = 0, processed = 0;  // 큐 위치와 처리한 작업 수
+    for (int u = 0; u < n; ++u) if (!degree[u]) queue[tail++] = u;  // 바로 시작할 수 있는 작업 등록
+    while (head < tail) {  // 준비된 작업을 차례로 완료 처리
+        int u = queue[head++]; ++processed;  // 선행 조건이 모두 끝난 작업
+        for (int v = 0; v < n; ++v) {  // 이 작업을 기다리는 후속 작업
+            if (!adj[u][v]) continue;  // 실제 선행 관계만 처리
+            if (finish[u] + duration[v] > finish[v]) finish[v] = finish[u] + duration[v];  // 가장 늦은 선행 완료 시각 반영
+            if (--degree[v] == 0) queue[tail++] = v;  // 모든 선행 작업이 끝나면 큐에 추가
+        }  // 후속 작업 갱신 끝
+    }  // 가능한 작업 처리 끝
+    if (processed != n) { write_text("CYCLE\n"); return 0; }  // 남은 작업은 순환 의존의 영향
+    for (int i = 0; i < n; ++i) {  // 작업 번호순 완료 시각 출력
+        if (i) write_text(" ");  // 출력 숫자 사이 공백
+        write_number(finish[i]);  // 현재 작업의 최소 완료 시각
+    }  // 완료 시각 배열 출력 끝
+    write_text("\n"); return 0;  // 결과 줄을 마치고 종료
+}  // 위상 DP 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/23-위상정렬과DAG_topological-dag/example.cpp>)
+
+```cpp
+#include <iostream>  // cin과 cout으로 표준 입력·출력 처리
+#include <cstdlib>  // qsort와 정수 절댓값 함수
+using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    cin >> value;  // 스트림에서 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    cout << value;  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    cout << text;  // 문자열을 스트림에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // Kahn 순서와 완료 시각 DP
+    int n = read_int(), m = read_int();  // 작업 수와 선행 관계 수
+    int duration[8], finish[8], degree[8] = {}, adj[8][8] = {}, queue[8];  // 시간·진입 차수·연결·큐
+    for (int i = 0; i < n; ++i) { duration[i] = read_int(); finish[i] = duration[i]; }  // 선행 작업 없는 기본 완료 시각
+    for (int i = 0; i < m; ++i) {  // 선행 관계 입력
+        int u = read_int(), v = read_int();  // u 완료 후 v 시작
+        if (!adj[u][v]) { adj[u][v] = 1; ++degree[v]; }  // 중복을 한 번만 진입 차수에 반영
+    }  // 선행 관계 입력 끝
+    int head = 0, tail = 0, processed = 0;  // 큐 위치와 처리한 작업 수
+    for (int u = 0; u < n; ++u) if (!degree[u]) queue[tail++] = u;  // 바로 시작할 수 있는 작업 등록
+    while (head < tail) {  // 준비된 작업을 차례로 완료 처리
+        int u = queue[head++]; ++processed;  // 선행 조건이 모두 끝난 작업
+        for (int v = 0; v < n; ++v) {  // 이 작업을 기다리는 후속 작업
+            if (!adj[u][v]) continue;  // 실제 선행 관계만 처리
+            if (finish[u] + duration[v] > finish[v]) finish[v] = finish[u] + duration[v];  // 가장 늦은 선행 완료 시각 반영
+            if (--degree[v] == 0) queue[tail++] = v;  // 모든 선행 작업이 끝나면 큐에 추가
+        }  // 후속 작업 갱신 끝
+    }  // 가능한 작업 처리 끝
+    if (processed != n) { write_text("CYCLE\n"); return 0; }  // 남은 작업은 순환 의존의 영향
+    for (int i = 0; i < n; ++i) {  // 작업 번호순 완료 시각 출력
+        if (i) write_text(" ");  // 출력 숫자 사이 공백
+        write_number(finish[i]);  // 현재 작업의 최소 완료 시각
+    }  // 완료 시각 배열 출력 끝
+    write_text("\n"); return 0;  // 결과 줄을 마치고 종료
+}  // 위상 DP 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/23-위상정렬과DAG_topological-dag/example.py>)
+
+```python
+import sys  # 표준 입력 전체를 토큰으로 읽기
+
+def main():  # 입력 한 건을 계산하고 결과 출력
+    tokens = iter(sys.stdin.read().split())  # 공백과 줄바꿈을 같은 구분자로 처리
+    n, m = int(next(tokens)), int(next(tokens))  # 작업 수와 선행 관계 수
+    duration = [int(next(tokens)) for _ in range(n)]  # 각 작업의 소요 시간
+    finish = duration[:]  # 선행 조건이 없을 때의 완료 시각
+    degree = [0] * n  # 아직 남은 선행 관계 수
+    adj = [[0] * n for _ in range(n)]  # 선행 관계의 인접 행렬
+    for _ in range(m):  # 선행 간선 입력
+        u, v = int(next(tokens)), int(next(tokens))  # u가 v보다 먼저 끝나야 함
+        if not adj[u][v]:  # 중복 관계는 한 번만 저장
+            adj[u][v] = 1  # 방향 간선 표시
+            degree[v] += 1  # 남은 선행 조건 추가
+    queue = [u for u in range(n) if degree[u] == 0]  # 바로 처리 가능한 작업
+    head = processed = 0  # 큐 위치와 처리 수
+    while head < len(queue):  # 준비 작업이 남은 동안 반복
+        u = queue[head]  # 다음 완료 작업
+        head += 1  # 읽는 위치 이동
+        processed += 1  # 사이클 판정용 처리 수
+        for v in range(n):  # 후속 작업 후보 확인
+            if not adj[u][v]:  # 관계없는 작업
+                continue  # 갱신 생략
+            finish[v] = max(finish[v], finish[u] + duration[v])  # 가장 늦은 선행 완료 시각
+            degree[v] -= 1  # 끝난 선행 작업 하나 제거
+            if degree[v] == 0:  # 남은 선행 조건이 없으면
+                queue.append(v)  # 이후 처리할 작업에 추가
+    if processed != n:  # 전체 작업을 처리하지 못한 경우
+        print("CYCLE")  # 순환 의존 표시
+    else:  # 모든 작업이 위상 순서로 처리된 경우
+        print(*finish)  # 정점별 최소 완료 시각
+
+if __name__ == "__main__":  # 직접 실행할 때만 예제 시작
+    main()  # 표준 입력 한 건 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력과 출력 | scanf와 fputs를 감싼 함수를 사용합니다. | cin과 cout을 감싼 함수를 사용합니다. | 입력을 split으로 나누고 print로 출력합니다. |
+| 작업 배열 | 입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다. | 절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다. | 입력 크기에 맞춘 리스트를 생성합니다. |
+| 정수와 상태 | 예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다. | 같은 정수 범위와 상태 전이를 사용합니다. | int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(V²+E)
+- 보조 공간: O(V²)
+
+인접 행렬의 각 행을 한 번 확인합니다. 완료 시각은 선행 작업의 최댓값으로 갱신합니다.
+
+[예제 입력](<예제_examples/23-위상정렬과DAG_topological-dag/input.txt>) · [예상 출력](<예제_examples/23-위상정렬과DAG_topological-dag/output.txt>) · [예제 실행 방법](<예제_examples/23-위상정렬과DAG_topological-dag/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

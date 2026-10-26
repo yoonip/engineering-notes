@@ -93,6 +93,134 @@ Python의 random은 실험용이며 보안 비밀 생성 용도와 구분합니�
 - 질문: 난수 시드를 고정하면 알고리즘이 수학적으로 정확해집니까? 답: 재현성만 확보하며 충돌 오류나 탐색 품질 보장이 새로 생기지는 않습니다.
 - 질문: 최고 해와 현재 해를 따로 보관하는 이유는 무엇입니까? 답: 나빠지는 이동을 허용하는 탐색에서 이미 찾은 좋은 해를 잃지 않기 위함입니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+모든 작은 이진 분할을 같은 확률로 열거하여 무작위 MAX-CUT의 기대값과 실제 최적값을 비교합니다.
+
+이 예제에서 직접 구현하는 기법은 독립 균등 분할의 전수 기대값 · MAX-CUT 목적값 · 기대 보장과 단일 결과의 구분입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+n,m(0≤n≤12,0≤m≤30), 다음 m쌍 u,v입니다. 0≤u<v<n이며 중복 없는 무방향 단위 가중치 간선입니다.
+
+```text
+3 3
+0 1
+1 2
+0 2
+```
+
+EXPECTED 기대 절단간선수를 소수점 아래6자리로 출력하고 BEST 최적값을 다음 줄에 출력합니다.
+
+```text
+EXPECTED 1.500000
+BEST 2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 삼각형의 정점3개, 이진 분할8개 | 각 정점의 두 선택을 모두 조합합니다. |
+| 2 | 000과111의 점수는0 | 무작위 한 번의 결과가 낮을 수 있음을 직접 확인합니다. |
+| 3 | 나머지6개 분할의 점수는2 | 한 정점만 반대쪽인 각 분할은 간선 두 개를 자릅니다. |
+| 4 | 합12/8=1.500000,최적2 | 기대값과 최적값을 다른 출력 항목으로 구분합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/36-무작위화와근사최적화_randomized-approximation/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+int main(void) {  // 작은 MAX-CUT 분할의 전수 계산
+    int n, m, first[30], second[30];  // 그래프와 간선 양끝
+    scanf("%d %d", &n, &m);  // 정점과 간선 수
+    for (int i = 0; i < m; ++i) scanf("%d %d", &first[i], &second[i]);  // 무방향 간선 입력
+    int partitions = 1 << n, total = 0, best = 0;  // 균등한 분할 수와 집계
+    for (int mask = 0; mask < partitions; ++mask) {  // 모든 정점의 0과1 배치
+        int score = 0;  // 현재 절단 간선 수
+        for (int i = 0; i < m; ++i) {  // 각 간선의 양쪽 집합 비교
+            if (((mask >> first[i]) & 1) != ((mask >> second[i]) & 1)) ++score;  // 서로 다른 쪽의 간선
+        }  // 현재 분할 평가 끝
+        total += score;  // 정확한 기대값의 분자
+        if (score > best) best = score;  // 전수 최적값 유지
+    }  // 전체 분할 열거 끝
+    double expectation = (double)total / partitions;  // 모든 분할의 균등 평균
+    printf("EXPECTED %.6f\nBEST %d\n", expectation, best);  // 기대값과 최적값 구분
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/36-무작위화와근사최적화_randomized-approximation/example.cpp>)
+
+```cpp
+#include <iostream>  // 그래프와 정수 결과 입출력
+#include <iomanip>  // 기대값의 소수점6자리 고정
+
+int main() {  // 작은 MAX-CUT 분할의 전수 계산
+    int n, m, first[30], second[30];  // 그래프와 간선 양끝
+    std::cin >> n >> m;  // 정점과 간선 수
+    for (int i = 0; i < m; ++i) std::cin >> first[i] >> second[i];  // 무방향 간선 입력
+    int partitions = 1 << n, total = 0, best = 0;  // 균등한 분할 수와 집계
+    for (int mask = 0; mask < partitions; ++mask) {  // 모든 정점의 0과1 배치
+        int score = 0;  // 현재 절단 간선 수
+        for (int i = 0; i < m; ++i) {  // 각 간선의 양쪽 집합 비교
+            if (((mask >> first[i]) & 1) != ((mask >> second[i]) & 1)) ++score;  // 서로 다른 쪽의 간선
+        }  // 현재 분할 평가 끝
+        total += score;  // 정확한 기대값의 분자
+        if (score > best) best = score;  // 전수 최적값 유지
+    }  // 전체 분할 열거 끝
+    double expectation = (double)total / partitions;  // 모든 분할의 균등 평균
+    std::cout << "EXPECTED " << std::fixed << std::setprecision(6) << expectation << "\nBEST " << best << "\n";  // 기대값과 최적값 구분
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/36-무작위화와근사최적화_randomized-approximation/example.py>)
+
+```python
+import sys  # 작은 그래프 입력 읽기
+tokens = iter(map(int, sys.stdin.read().split()))  # 정수 토큰 순회
+n, m = next(tokens), next(tokens)  # 정점과 간선 수
+edges = [(next(tokens), next(tokens)) for _ in range(m)]  # 무방향 간선
+partitions = 1 << n  # 각 정점의 두 배치를 조합
+total, best = 0, 0  # 평균의 분자와 전수 최적값
+for mask in range(partitions):  # 모든 이진 분할
+    score = 0  # 현재 점수
+    for first, second in edges:  # 간선의 양끝 집합 비교
+        if (mask >> first) & 1 != (mask >> second) & 1:  # 양끝의 비트가 다른 경우
+            score += 1  # 절단 간선 증가
+    total += score  # 균등 평균용 합계
+    best = max(best, score)  # 실제 최적값
+expectation = total / partitions  # 모든 분할의 확률 평균
+print(f"EXPECTED {expectation:.6f}")  # 소수점6자리 고정
+print("BEST", best)  # 기대값과 구별한 최적값
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 간선 양끝 각30칸과 고정 개수의 집계 변수를 사용합니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(2^n(m+1))
+- 보조 공간: O(m)
+
+모든 분할에서 각 간선을 확인하여 이 예제에서만 가능한 정확한 기대값과 최적값을 구합니다.
+
+[예제 입력](<예제_examples/36-무작위화와근사최적화_randomized-approximation/input.txt>) · [예상 출력](<예제_examples/36-무작위화와근사최적화_randomized-approximation/output.txt>) · [예제 실행 방법](<예제_examples/36-무작위화와근사최적화_randomized-approximation/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

@@ -67,6 +67,203 @@ C/C++에서는 INF에 가중치를 더하다 정수 범위를 넘지 않도록 �
 
 복습: 목적지가 힙에 처음 들어갔을 때 종료해도 되는지 확인합니다. 답은 아닙니다. 유효한 최소 후보로 꺼내지는 순간에 종료할 수 있습니다. 위 예제의 T=9는 삽입 뒤 4로 바뀝니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+비음수 방향 그래프에서 미확정 정점 중 최소 거리를 직접 골라 Dijkstra를 수행합니다. 힙과 0-1 BFS는 구현하지 않습니다.
+
+이 예제에서 직접 구현하는 기법은 비음수 Dijkstra · 거리 완화 · 최소 정점 스캔 · 평행 간선 최솟값입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+V E S 뒤에 E줄의 u v w가 주어집니다. 1≤V≤8, 0≤E≤64, 0≤S,u,v<V, 0≤w≤1000000입니다. 평행 간선은 최솟값만 남깁니다.
+
+```text
+4 5 0
+0 1 5
+0 2 1
+2 1 1
+1 3 2
+2 3 8
+```
+
+정점 번호순 최단 거리를 출력합니다. 도달하지 못한 정점은 -1입니다.
+
+```text
+0 2 1 4
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | distance=[0,INF,INF,INF] | 출발점만 도달한 상태로 시작합니다. |
+| 2 | 0 확정 후 distance=[0,5,1,INF] | 직접 연결된 두 후보를 완화합니다. |
+| 3 | 2 확정 후 distance=[0,2,1,9] | 2를 거치면 1번까지의 비용이 5에서 2로 줄어듭니다. |
+| 4 | 1 확정 후 distance=[0,2,1,4] | 1번을 거친 목표 비용 4가 최종 최단 거리입니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/21-최단경로와확장상태_shortest-path/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
+#include <stdlib.h>  // qsort와 정수 절댓값 함수
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    printf("%d", value);  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    fputs(text, stdout);  // 문자열을 표준 출력에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 정점 최소 스캔 방식의 Dijkstra
+    int n = read_int(), m = read_int(), start = read_int();  // 그래프 크기와 출발점
+    int weight[8][8], distance[8], used[8] = {0};  // 최소 간선·거리·확정 여부
+    const int inf = 1000000000;  // 최대 단순 경로 비용보다 큰 미도달 값
+    for (int i = 0; i < n; ++i) {  // 모든 정점과 간선 후보 초기화
+        distance[i] = inf;  // 출발점을 제외한 미도달 상태
+        for (int j = 0; j < n; ++j) weight[i][j] = inf;  // 아직 없는 방향 간선
+    }  // 초기화 끝
+    for (int i = 0; i < m; ++i) {  // 비음수 방향 간선 입력
+        int a = read_int(), b = read_int(), cost = read_int();  // 간선의 출발·도착·비용
+        if (cost < weight[a][b]) weight[a][b] = cost;  // 평행 간선의 최소 비용 유지
+    }  // 간선 입력 끝
+    distance[start] = 0;  // 출발 비용은 0
+    for (int step = 0; step < n; ++step) {  // 최대 n개 정점을 확정
+        int u = -1;  // 이번에 고를 미확정 정점
+        for (int v = 0; v < n; ++v) {  // 현재 거리가 가장 작은 후보 찾기
+            if (!used[v] && (u == -1 || distance[v] < distance[u])) u = v;  // 최소 거리 후보 갱신
+        }  // 최소 후보 선택 끝
+        if (u == -1 || distance[u] == inf) break;  // 남은 정점이 전부 미도달이면 종료
+        used[u] = 1;  // 비음수 조건으로 현재 최단 거리 확정
+        for (int v = 0; v < n; ++v) {  // u를 지나가는 방향 간선 완화
+            if (weight[u][v] != inf && distance[u] + weight[u][v] < distance[v]) {  // 실제 간선의 더 짧은 경로
+                distance[v] = distance[u] + weight[u][v];  // 새 최단 거리 저장
+            }  // 현재 간선 완화 끝
+        }  // u의 이웃 갱신 끝
+    }  // 모든 도달 거리 계산 끝
+    for (int i = 0; i < n; ++i) {  // 번호순 결과 출력
+        if (i) write_text(" ");  // 숫자 사이 공백
+        write_number(distance[i] == inf ? -1 : distance[i]);  // 미도달만 -1로 변환
+    }  // 결과 배열 출력 끝
+    write_text("\n"); return 0;  // 줄바꿈 후 정상 종료
+}  // Dijkstra 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/21-최단경로와확장상태_shortest-path/example.cpp>)
+
+```cpp
+#include <iostream>  // cin과 cout으로 표준 입력·출력 처리
+#include <cstdlib>  // qsort와 정수 절댓값 함수
+using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    cin >> value;  // 스트림에서 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    cout << value;  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    cout << text;  // 문자열을 스트림에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+int main(void) {  // 정점 최소 스캔 방식의 Dijkstra
+    int n = read_int(), m = read_int(), start = read_int();  // 그래프 크기와 출발점
+    int weight[8][8], distance[8], used[8] = {};  // 최소 간선·거리·확정 여부
+    const int inf = 1000000000;  // 최대 단순 경로 비용보다 큰 미도달 값
+    for (int i = 0; i < n; ++i) {  // 모든 정점과 간선 후보 초기화
+        distance[i] = inf;  // 출발점을 제외한 미도달 상태
+        for (int j = 0; j < n; ++j) weight[i][j] = inf;  // 아직 없는 방향 간선
+    }  // 초기화 끝
+    for (int i = 0; i < m; ++i) {  // 비음수 방향 간선 입력
+        int a = read_int(), b = read_int(), cost = read_int();  // 간선의 출발·도착·비용
+        if (cost < weight[a][b]) weight[a][b] = cost;  // 평행 간선의 최소 비용 유지
+    }  // 간선 입력 끝
+    distance[start] = 0;  // 출발 비용은 0
+    for (int step = 0; step < n; ++step) {  // 최대 n개 정점을 확정
+        int u = -1;  // 이번에 고를 미확정 정점
+        for (int v = 0; v < n; ++v) {  // 현재 거리가 가장 작은 후보 찾기
+            if (!used[v] && (u == -1 || distance[v] < distance[u])) u = v;  // 최소 거리 후보 갱신
+        }  // 최소 후보 선택 끝
+        if (u == -1 || distance[u] == inf) break;  // 남은 정점이 전부 미도달이면 종료
+        used[u] = 1;  // 비음수 조건으로 현재 최단 거리 확정
+        for (int v = 0; v < n; ++v) {  // u를 지나가는 방향 간선 완화
+            if (weight[u][v] != inf && distance[u] + weight[u][v] < distance[v]) {  // 실제 간선의 더 짧은 경로
+                distance[v] = distance[u] + weight[u][v];  // 새 최단 거리 저장
+            }  // 현재 간선 완화 끝
+        }  // u의 이웃 갱신 끝
+    }  // 모든 도달 거리 계산 끝
+    for (int i = 0; i < n; ++i) {  // 번호순 결과 출력
+        if (i) write_text(" ");  // 숫자 사이 공백
+        write_number(distance[i] == inf ? -1 : distance[i]);  // 미도달만 -1로 변환
+    }  // 결과 배열 출력 끝
+    write_text("\n"); return 0;  // 줄바꿈 후 정상 종료
+}  // Dijkstra 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/21-최단경로와확장상태_shortest-path/example.py>)
+
+```python
+import sys  # 표준 입력 전체를 토큰으로 읽기
+
+def main():  # 입력 한 건을 계산하고 결과 출력
+    tokens = iter(sys.stdin.read().split())  # 공백과 줄바꿈을 같은 구분자로 처리
+    n, m, start = int(next(tokens)), int(next(tokens)), int(next(tokens))  # 그래프 크기와 출발점
+    inf = 10 ** 9  # 가능한 최단 거리보다 큰 표시값
+    weight = [[inf] * n for _ in range(n)]  # 방향 간선의 최소 비용 행렬
+    for _ in range(m):  # 비음수 간선 입력
+        a, b, cost = int(next(tokens)), int(next(tokens)), int(next(tokens))  # 출발·도착·비용
+        weight[a][b] = min(weight[a][b], cost)  # 평행 간선 중 최솟값만 저장
+    distance = [inf] * n  # 미도달 거리 초기화
+    used = [False] * n  # 확정 여부
+    distance[start] = 0  # 출발 비용 0
+    for _ in range(n):  # 정점을 하나씩 확정
+        u = -1  # 다음 최소 후보
+        for v in range(n):  # 미확정 정점의 현재 거리 비교
+            if not used[v] and (u == -1 or distance[v] < distance[u]):  # 더 작은 후보 확인
+                u = v  # 이번 확정 후보 갱신
+        if u == -1 or distance[u] == inf:  # 남은 정점이 미도달이면
+            break  # 불필요한 확정 생략
+        used[u] = True  # 비음수 간선 조건으로 거리 확정
+        for v in range(n):  # 현재 정점에서 나가는 간선 확인
+            if weight[u][v] != inf:  # 실제 간선만 사용
+                distance[v] = min(distance[v], distance[u] + weight[u][v])  # 더 짧은 경로 완화
+    print(*(-1 if value == inf else value for value in distance))  # 미도달을 구분해 출력
+
+if __name__ == "__main__":  # 직접 실행할 때만 예제 시작
+    main()  # 표준 입력 한 건 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력과 출력 | scanf와 fputs를 감싼 함수를 사용합니다. | cin과 cout을 감싼 함수를 사용합니다. | 입력을 split으로 나누고 print로 출력합니다. |
+| 작업 배열 | 입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다. | 절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다. | 입력 크기에 맞춘 리스트를 생성합니다. |
+| 정수와 상태 | 예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다. | 같은 정수 범위와 상태 전이를 사용합니다. | int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(V²+E)
+- 보조 공간: O(V²)
+
+최소 후보 선택과 이웃 완화를 각각 V번 스캔합니다. 힙을 쓰지 않는 인접 행렬 구현입니다.
+
+[예제 입력](<예제_examples/21-최단경로와확장상태_shortest-path/input.txt>) · [예상 출력](<예제_examples/21-최단경로와확장상태_shortest-path/output.txt>) · [예제 실행 방법](<예제_examples/21-최단경로와확장상태_shortest-path/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

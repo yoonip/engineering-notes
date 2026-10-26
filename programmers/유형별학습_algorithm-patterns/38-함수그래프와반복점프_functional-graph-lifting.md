@@ -112,6 +112,137 @@ Python에서 nB개의 표 원소는 정수 연산량뿐 아니라 리스트 메�
 - 질문: 사이클 길이로 바로 나누면 됩니까? 답: 먼저 사이클 진입 전 이동량을 처리하고 남은 이동량에 주기를 적용해야 합니다.
 - 질문: 전이 하나를 바꾸면 표 한 칸만 바꾸면 됩니까? 답: 그 전이를 통과하는 더 큰 점프들이 영향을 받을 수 있어 단순한 한 칸 수정으로 유지되지 않습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+고정 함수의 2의 거듭제곱 이동을 전처리하고 각 질의의 비트만 합성합니다.
+
+이 예제에서 직접 구현하는 기법은 함수 그래프 · 이진 점프 전처리 · 현재 정점에서 비트별 합성입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+n,q(1≤n≤30,0≤q≤20), 다음 n개의 후속 정점(0..n−1), 다음 q쌍 v,k(0≤v<n,0≤k≤1000000)입니다.
+
+```text
+5 3
+1 2 3 1 3
+0 0
+0 11
+4 2
+```
+
+각 질의에서 k번 이동한 최종 정점 번호를 한 줄씩 출력합니다.
+
+```text
+0
+2
+1
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | f=[1,2,3,1,3],jump0=f | 한 단계 전이를 첫 층에 저장합니다. |
+| 2 | jump1=[2,3,1,2,1],jump2=[1,2,3,1,3] | 현재 도착점에서 같은 길이를 다시 이동해 층을 만듭니다. |
+| 3 | 0에서11=1+2+8: 0→1→3→2 | 선택한 비트마다 갱신된 현재 정점에서 점프합니다. |
+| 4 | 질의(0,0),(0,11),(4,2)의 답0,2,1 | 0단계와 사이클 진입을 같은 전이 표로 처리합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/38-함수그래프와반복점프_functional-graph-lifting/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+int main(void) {  // 고정 함수의 반복 질의 처리
+    int n, q, jump[20][30];  // 백만 단계까지 덮는20층
+    scanf("%d %d", &n, &q);  // 정점과 질의 수
+    for (int v = 0; v < n; ++v) scanf("%d", &jump[0][v]);  // 한 단계 후속 정점
+    for (int bit = 1; bit < 20; ++bit) {  // 두 배 이동의 층 구축
+        for (int v = 0; v < n; ++v) jump[bit][v] = jump[bit - 1][jump[bit - 1][v]];  // 첫 절반 도착점에서 두 번째 절반
+    }  // 전처리 끝
+    for (int i = 0; i < q; ++i) {  // 원래 질의 순서
+        int vertex, steps, bit = 0;  // 현재 정점과 남은 이동
+        scanf("%d %d", &vertex, &steps);  // 시작과 단계 수
+        while (steps > 0) {  // 아직 처리하지 않은 비트
+            if (steps & 1) vertex = jump[bit][vertex];  // 필요한 길이만 현재 정점에 적용
+            steps >>= 1; ++bit;  // 처리한 비트를 제거하고 다음 층 이동
+        }  // 모든 선택 점프 합성 끝
+        printf("%d\n", vertex);  // 최종 후속 정점
+    }  // 질의 처리 끝
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/38-함수그래프와반복점프_functional-graph-lifting/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+int main() {  // 고정 함수의 반복 질의 처리
+    int n, q, jump[20][30];  // 백만 단계까지 덮는20층
+    std::cin >> n >> q;  // 정점과 질의 수
+    for (int v = 0; v < n; ++v) std::cin >> jump[0][v];  // 한 단계 후속 정점
+    for (int bit = 1; bit < 20; ++bit) {  // 두 배 이동의 층 구축
+        for (int v = 0; v < n; ++v) jump[bit][v] = jump[bit - 1][jump[bit - 1][v]];  // 첫 절반 도착점에서 두 번째 절반
+    }  // 전처리 끝
+    for (int i = 0; i < q; ++i) {  // 원래 질의 순서
+        int vertex, steps, bit = 0;  // 현재 정점과 남은 이동
+        std::cin >> vertex >> steps;  // 시작과 단계 수
+        while (steps > 0) {  // 아직 처리하지 않은 비트
+            if (steps & 1) vertex = jump[bit][vertex];  // 필요한 길이만 현재 정점에 적용
+            steps >>= 1; ++bit;  // 처리한 비트를 제거하고 다음 층 이동
+        }  // 모든 선택 점프 합성 끝
+        std::cout << vertex << "\n";  // 최종 후속 정점
+    }  // 질의 처리 끝
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/38-함수그래프와반복점프_functional-graph-lifting/example.py>)
+
+```python
+import sys  # 후속 정점과 질의 입력
+tokens = iter(map(int, sys.stdin.read().split()))  # 공백 정수 순회
+n, q = next(tokens), next(tokens)  # 정점 수와 질의 수
+jump = [[next(tokens) for _ in range(n)]]  # 한 단계 전이
+for bit in range(1, 20):  # 두 배 길이의 표
+    previous = jump[-1]  # 직전 층의 이동
+    jump.append([previous[previous[v]] for v in range(n)])  # 두 절반의 합성
+for _ in range(q):  # 각 시작점 질의
+    vertex, steps = next(tokens), next(tokens)  # 현재 정점과 남은 단계
+    bit = 0  # 낮은 비트부터 확인
+    while steps:  # 남은 단계의 이진수
+        if steps & 1:  # 현재 길이의 이동 선택
+            vertex = jump[bit][vertex]  # 갱신된 현재 정점에서 출발
+        steps >>= 1  # 처리한 자리 제거
+        bit += 1  # 다음 이동 길이
+    print(vertex)  # 최종 정점 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 20층×30정점 점프 표를 고정 배열로 사용합니다. 1000000&lt;2^20입니다. | 같은 20층 표와 스트림 입력으로 함수 합성을 수행합니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O((n+q)B), B=20
+- 보조 공간: O(nB)
+
+층마다 두 절반을 합성하고 질의마다 최대20비트를 확인합니다.
+
+[예제 입력](<예제_examples/38-함수그래프와반복점프_functional-graph-lifting/input.txt>) · [예상 출력](<예제_examples/38-함수그래프와반복점프_functional-graph-lifting/output.txt>) · [예제 실행 방법](<예제_examples/38-함수그래프와반복점프_functional-graph-lifting/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

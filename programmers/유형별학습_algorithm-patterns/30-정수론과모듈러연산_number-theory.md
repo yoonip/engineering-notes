@@ -93,6 +93,142 @@ C·C++에서는 모듈러 전에 a*b가 넘치지 않는지 확인하고 필요�
 - 질문: CRT의 모듈러가 서로소가 아니면 항상 실패합니까? 답: 나머지 차이가 최대공약수의 배수이면 해가 있고, 주기는 최소공배수입니다.
 - 질문: 모듈러를 쓰면 곱셈 오버플로도 자동으로 사라집니까? 답: 나머지를 취하기 전에 곱셈이 수행되므로 중간 자료형의 범위를 따로 확인해야 합니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+나머지를 반복하여 최대공약수를 구하고 지수의 비트로 모듈러 거듭제곱을 계산합니다.
+
+이 예제에서 직접 구현하는 기법은 유클리드 최대공약수 · 모듈러 이진 거듭제곱입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+정수 a,b,e,m 네 개입니다. 0≤a,b≤1000000,0≤e≤1000000000,1≤m≤1000000입니다. 지수0의 곱은1로 정의합니다.
+
+```text
+84 30 3 11
+```
+
+GCD 최대공약수, POWER a^e mod m을 각각 한 줄에 출력합니다.
+
+```text
+GCD 6
+POWER 2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 84,30 → 30,24 → 24,6 → 6,0 | 공약수 집합을 유지하며 최대공약수6을 구합니다. |
+| 2 | 84 mod11=7, 지수3의 이진수11 | 선택할 거듭제곱을 비트별로 확인합니다. |
+| 3 | 첫 비트 뒤 answer7, base5, exponent1 | 7을 선택하고 7² mod11=5로 제곱합니다. |
+| 4 | 두 번째 비트 뒤 answer2, exponent0 | 7×5 mod11=2이므로 POWER2를 출력합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/30-정수론과모듈러연산_number-theory/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+long long gcd_value(long long a, long long b) {  // 음이 아닌 두 수의 최대공약수
+    while (b != 0) {  // 나머지가 없어질 때까지 반복
+        long long remainder = a % b;  // 공약수를 보존하는 나머지
+        a = b; b = remainder;  // 다음 유클리드 상태
+    }  // 최대공약수 확정
+    return a;  // gcd(0,0)은 이 예제에서 0
+}  // 최대공약수 함수 끝
+long long power_mod(long long base, long long exponent, long long modulus) {  // 나머지를 유지하는 거듭제곱
+    long long result = 1 % modulus;  // 빈 곱과 모듈러1 처리
+    base %= modulus;  // 제곱할 현재 인수의 나머지
+    while (exponent > 0) {  // 남은 지수의 비트 처리
+        if (exponent & 1LL) result = result * base % modulus;  // 필요한 거듭제곱만 선택
+        base = base * base % modulus;  // 다음 비트의 제곱
+        exponent >>= 1;  // 처리한 비트 제거
+    }  // 모든 지수 처리 끝
+    return result;  // 최종 나머지
+}  // 거듭제곱 함수 끝
+int main(void) {  // 두 정수론 예제 실행
+    long long a, b, exponent, modulus;  // 중간 곱까지 담는 정수
+    scanf("%lld %lld %lld %lld", &a, &b, &exponent, &modulus);  // 입력 조건 읽기
+    printf("GCD %lld\n", gcd_value(a, b));  // 최대공약수 출력
+    printf("POWER %lld\n", power_mod(a, exponent, modulus));  // 모듈러 거듭제곱 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/30-정수론과모듈러연산_number-theory/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+long long gcd_value(long long a, long long b) {  // 음이 아닌 두 수의 최대공약수
+    while (b != 0) {  // 나머지가 없어질 때까지 반복
+        long long remainder = a % b;  // 공약수를 보존하는 나머지
+        a = b; b = remainder;  // 다음 유클리드 상태
+    }  // 최대공약수 확정
+    return a;  // gcd(0,0)은 이 예제에서 0
+}  // 최대공약수 함수 끝
+long long power_mod(long long base, long long exponent, long long modulus) {  // 나머지를 유지하는 거듭제곱
+    long long result = 1 % modulus;  // 빈 곱과 모듈러1 처리
+    base %= modulus;  // 제곱할 현재 인수의 나머지
+    while (exponent > 0) {  // 남은 지수의 비트 처리
+        if (exponent & 1LL) result = result * base % modulus;  // 필요한 거듭제곱만 선택
+        base = base * base % modulus;  // 다음 비트의 제곱
+        exponent >>= 1;  // 처리한 비트 제거
+    }  // 모든 지수 처리 끝
+    return result;  // 최종 나머지
+}  // 거듭제곱 함수 끝
+int main() {  // 두 정수론 예제 실행
+    long long a, b, exponent, modulus;  // 중간 곱까지 담는 정수
+    std::cin >> a >> b >> exponent >> modulus;  // 입력 조건 읽기
+    std::cout << "GCD " << gcd_value(a, b) << "\n";  // 최대공약수 출력
+    std::cout << "POWER " << power_mod(a, exponent, modulus) << "\n";  // 모듈러 거듭제곱 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/30-정수론과모듈러연산_number-theory/example.py>)
+
+```python
+import sys  # 네 정수 입력 읽기
+a, b, exponent, modulus = map(int, sys.stdin.read().split())  # 허용 범위의 조건
+x, y = a, b  # 원래 밑과 분리한 유클리드 상태
+while y:  # 나머지가 0이 될 때까지 반복
+    x, y = y, x % y  # 공약수 집합을 보존하는 이동
+result = 1 % modulus  # 빈 곱의 나머지
+base = a % modulus  # 현재 비트의 거듭제곱
+while exponent:  # 지수를 한 비트씩 처리
+    if exponent & 1:  # 현재 거듭제곱이 필요한 자리
+        result = result * base % modulus  # 선택한 인수 누적
+    base = base * base % modulus  # 다음 자리의 제곱
+    exponent >>= 1  # 처리한 비트 제거
+print("GCD", x)  # 최대공약수
+print("POWER", result)  # 모듈러 거듭제곱
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 고정 개수의 long long 변수만 사용합니다. | 같은 long long 변수로 나머지 연산과 지수 시프트를 수행합니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(log(min(a,b)+1)+log(e+1)) 나머지·곱셈 연산
+- 보조 공간: O(1) 추가 변수
+
+유클리드의 두 번째 값과 지수의 남은 비트가 계속 감소합니다. Python 큰 정수의 비트 비용은 별도입니다.
+
+[예제 입력](<예제_examples/30-정수론과모듈러연산_number-theory/input.txt>) · [예상 출력](<예제_examples/30-정수론과모듈러연산_number-theory/output.txt>) · [예제 실행 방법](<예제_examples/30-정수론과모듈러연산_number-theory/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

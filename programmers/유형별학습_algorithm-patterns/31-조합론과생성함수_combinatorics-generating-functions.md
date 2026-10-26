@@ -89,6 +89,144 @@ Python의 정수는 커질 수 있지만 정확한 큰 계수의 곱셈 비용�
 - 질문: EGF 계수에 왜 k!를 다시 곱합니까? 답: 계수에 크기별 팩토리얼을 나눠 저장했으며, 곱셈에서 표지 배분의 이항계수를 만들기 위한 표현이기 때문입니다.
 - 질문: 큰 소수로 나머지를 취하면 모든 N의 팩토리얼 역원이 있습니까? 답: N이 소수 이상이면 팩토리얼에 소수 인수가 들어가 역원이 없을 수 있습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+선택 개수의 생성다항식을 직접 곱하고 두 배수 조건의 합집합을 포함 배제로 계산합니다.
+
+이 예제에서 직접 구현하는 기법은 생성다항식의 실제 계수 합성곱 · 두 조건의 포함 배제 · 최소공배수입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+길이 n,m(1..8), 계수 n개와 m개(각0..10), 마지막 L,p,q(0≤L≤10000,1≤p,q≤100)입니다. L 범위는 양의 정수1..L입니다.
+
+```text
+3 2
+1 1 1
+1 1
+12 2 3
+```
+
+첫 줄 두 다항식 곱의 계수를 낮은 차수부터 공백으로 출력합니다. 둘째 줄 p 또는 q의 배수 개수를 출력합니다.
+
+```text
+1 2 2 1
+8
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | A=[1,1,1],B=[1,1] | 빨강 최대2개와 파랑 최대1개의 선택 다항식입니다. |
+| 2 | 차수2: A[1]B[1]+A[2]B[0]=2 | 크기가 더해지는 독립 선택의 기여를 합칩니다. |
+| 3 | 곱 계수 [1,2,2,1] | 모든 i,j를 차수 i+j에 누적한 결과입니다. |
+| 4 | 1..12의 2또는3배수:6+4−2=8 | 6의 배수는 두 번 더했으므로 한 번 뺍니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/31-조합론과생성함수_combinatorics-generating-functions/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+int gcd_value(int a, int b) {  // 공배수 계산에 사용할 최대공약수
+    while (b) { int remainder = a % b; a = b; b = remainder; }  // 유클리드 나머지 반복
+    return a;  // 양의 최대공약수
+}  // 최대공약수 계산 끝
+int main(void) {  // 계수 곱과 포함 배제 실행
+    int n, m, a[8], b[8], product[15] = {0};  // 작은 다항식의 고정 저장
+    scanf("%d %d", &n, &m);  // 두 계수 배열 길이
+    for (int i = 0; i < n; ++i) scanf("%d", &a[i]);  // 첫 다항식의 낮은 차수부터 입력
+    for (int j = 0; j < m; ++j) scanf("%d", &b[j]);  // 둘째 다항식 입력
+    for (int i = 0; i < n; ++i) {  // 첫 선택의 크기
+        for (int j = 0; j < m; ++j) product[i + j] += a[i] * b[j];  // 합쳐진 크기의 계수 누적
+    }  // 모든 계수 기여 처리 끝
+    int limit, p, q;  // 포함 배제의 정수 범위와 배수 조건
+    scanf("%d %d %d", &limit, &p, &q);  // 1부터 limit까지의 조건
+    int lcm = p / gcd_value(p, q) * q;  // 중복으로 센 공배수 주기
+    int union_count = limit / p + limit / q - limit / lcm;  // 교집합을 한 번 제외
+    for (int i = 0; i < n + m - 1; ++i) {  // 곱의 모든 차수 출력
+        printf("%s%d", i ? " " : "", product[i]);  // 앞 공백으로 후행 공백 방지
+    }  // 계수 출력 끝
+    printf("\n%d\n", union_count);  // 계수 줄 종료와 합집합 개수
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/31-조합론과생성함수_combinatorics-generating-functions/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+int gcd_value(int a, int b) {  // 공배수 계산에 사용할 최대공약수
+    while (b) { int remainder = a % b; a = b; b = remainder; }  // 유클리드 나머지 반복
+    return a;  // 양의 최대공약수
+}  // 최대공약수 계산 끝
+int main() {  // 계수 곱과 포함 배제 실행
+    int n, m, a[8], b[8], product[15] = {0};  // 작은 다항식의 고정 저장
+    std::cin >> n >> m;  // 두 계수 배열 길이
+    for (int i = 0; i < n; ++i) std::cin >> a[i];  // 첫 다항식의 낮은 차수부터 입력
+    for (int j = 0; j < m; ++j) std::cin >> b[j];  // 둘째 다항식 입력
+    for (int i = 0; i < n; ++i) {  // 첫 선택의 크기
+        for (int j = 0; j < m; ++j) product[i + j] += a[i] * b[j];  // 합쳐진 크기의 계수 누적
+    }  // 모든 계수 기여 처리 끝
+    int limit, p, q;  // 포함 배제의 정수 범위와 배수 조건
+    std::cin >> limit >> p >> q;  // 1부터 limit까지의 조건
+    int lcm = p / gcd_value(p, q) * q;  // 중복으로 센 공배수 주기
+    int union_count = limit / p + limit / q - limit / lcm;  // 교집합을 한 번 제외
+    for (int i = 0; i < n + m - 1; ++i) {  // 곱의 모든 차수 출력
+        std::cout << (i ? " " : "") << product[i];  // 앞 공백으로 후행 공백 방지
+    }  // 계수 출력 끝
+    std::cout << "\n" << union_count << "\n";  // 계수 줄 종료와 합집합 개수
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/31-조합론과생성함수_combinatorics-generating-functions/example.py>)
+
+```python
+import sys  # 다항식과 배수 조건 읽기
+tokens = iter(map(int, sys.stdin.read().split()))  # 정수 토큰 순회
+n, m = next(tokens), next(tokens)  # 다항식 길이
+a = [next(tokens) for _ in range(n)]  # 첫 계수 배열
+b = [next(tokens) for _ in range(m)]  # 둘째 계수 배열
+product = [0] * (n + m - 1)  # 결과의 낮은 차수부터 저장
+for i in range(n):  # 첫 선택의 크기
+    for j in range(m):  # 둘째 선택의 크기
+        product[i + j] += a[i] * b[j]  # 독립 선택의 수를 곱해 누적
+limit, p, q = next(tokens), next(tokens), next(tokens)  # 포함 배제 입력
+x, y = p, q  # 최대공약수 계산 상태
+while y:  # 나머지를 반복
+    x, y = y, x % y  # 다음 공약수 상태
+lcm = p // x * q  # 두 조건의 공배수
+union_count = limit // p + limit // q - limit // lcm  # 교집합 중복 제거
+print(*product)  # 모든 곱 계수
+print(union_count)  # 합집합의 정수 개수
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 입력 계수 각8개와 곱 계수15개의 고정 배열을 사용합니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(nm+log min(p,q))
+- 보조 공간: O(n+m)
+
+같은 차수의 기여를 이중 반복으로 합치고 공배수는 최대공약수로 계산합니다.
+
+[예제 입력](<예제_examples/31-조합론과생성함수_combinatorics-generating-functions/input.txt>) · [예상 출력](<예제_examples/31-조합론과생성함수_combinatorics-generating-functions/output.txt>) · [예제 실행 방법](<예제_examples/31-조합론과생성함수_combinatorics-generating-functions/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

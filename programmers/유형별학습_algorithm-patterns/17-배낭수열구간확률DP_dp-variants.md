@@ -108,6 +108,150 @@ C·C++에서는 불가능한 INF에 비용을 더하는 연산과 큰 경우의 
 - 질문: 구간 DP는 어떤 순서로 채웁니까? 답: 전이가 참조하는 두 구간이 더 짧으므로 길이가 짧은 구간부터 채웁니다.
 - 질문: 확률 DP에 자기 전이가 있으면 DP가 불가능합니까? 답: 순차 표 채우기만으로는 부족할 수 있으며, 자기 항 정리나 연립방정식으로 해결할 수 있습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+물건을 한 번만 고르는 배낭과 끝 위치별 LIS를 한 프로그램에서 계산합니다.
+
+이 예제에서 직접 구현하는 기법은 0-1 배낭 내림차순 갱신 · 끝 위치별 O(m²) LIS입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+n,W(0≤n≤20,0≤W≤100), 다음 n쌍의 무게·가치(1≤무게≤100,0≤가치≤1000), 수열 길이 m(0≤m≤30), 다음 m개 정수(-1000..1000)입니다.
+
+```text
+3 5
+2 3
+3 4
+4 5
+5
+3 1 2 5 4
+```
+
+첫 줄 KNAPSACK 최대가치, 둘째 줄 LIS 엄격증가길이를 출력합니다.
+
+```text
+KNAPSACK 7
+LIS 3
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 배낭 W=5, 물건 (2,3),(3,4),(4,5) | 각 물건을 최대 한 번 사용하는 상태를 만듭니다. |
+| 2 | 첫 물건 뒤 용량 2..5의 값은 3 | 용량을 내림차순으로 갱신하여 같은 물건의 재사용을 막습니다. |
+| 3 | 둘째 물건 뒤 dp[5]=3+4=7, 셋째 뒤도 7 | 무게 2와 3의 조합이 최적입니다. |
+| 4 | 수열 [3,1,2,5,4]의 끝별 길이 [1,1,2,3,3] | 이전의 더 작은 값 뒤에 현재 값을 붙여 LIS 길이 3을 구합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/17-배낭수열구간확률DP_dp-variants/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+int main(void) {  // 두 DP 변형의 독립 실행
+    int n, capacity, dp[101] = {0};  // 용량 이하의 최대 가치
+    scanf("%d %d", &n, &capacity);  // 물건 수와 배낭 용량
+    for (int i = 0; i < n; ++i) {  // 현재 물건을 한 번씩 반영
+        int weight, value;  // 현재 물건의 정보
+        scanf("%d %d", &weight, &value);  // 양의 무게와 가치
+        for (int w = capacity; w >= weight; --w) {  // 현재 물건의 재사용을 막는 내림차순
+            int candidate = dp[w - weight] + value;  // 현재 물건을 고른 가치
+            if (candidate > dp[w]) dp[w] = candidate;  // 더 좋은 선택 유지
+        }  // 한 물건의 용량 갱신 끝
+    }  // 배낭 계산 끝
+    int m, sequence[30], length[30], best = 0;  // LIS의 값과 끝 위치 상태
+    scanf("%d", &m);  // 수열 길이
+    for (int i = 0; i < m; ++i) {  // 앞에서부터 LIS 상태 계산
+        scanf("%d", &sequence[i]);  // 현재 수열 원소
+        length[i] = 1;  // 현재 원소만 고른 길이
+        for (int j = 0; j < i; ++j) {  // 앞선 끝 위치 후보
+            if (sequence[j] < sequence[i] && length[j] + 1 > length[i]) length[i] = length[j] + 1;  // 엄격 증가 전이
+        }  // 이전 위치 확인 끝
+        if (length[i] > best) best = length[i];  // 전체 LIS 길이 유지
+    }  // 수열 계산 끝
+    printf("KNAPSACK %d\nLIS %d\n", dp[capacity], best);  // 두 DP 결과를 구분해 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/17-배낭수열구간확률DP_dp-variants/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+int main() {  // 두 DP 변형의 독립 실행
+    int n, capacity, dp[101] = {0};  // 용량 이하의 최대 가치
+    std::cin >> n >> capacity;  // 물건 수와 배낭 용량
+    for (int i = 0; i < n; ++i) {  // 현재 물건을 한 번씩 반영
+        int weight, value;  // 현재 물건의 정보
+        std::cin >> weight >> value;  // 양의 무게와 가치
+        for (int w = capacity; w >= weight; --w) {  // 현재 물건의 재사용을 막는 내림차순
+            int candidate = dp[w - weight] + value;  // 현재 물건을 고른 가치
+            if (candidate > dp[w]) dp[w] = candidate;  // 더 좋은 선택 유지
+        }  // 한 물건의 용량 갱신 끝
+    }  // 배낭 계산 끝
+    int m, sequence[30], length[30], best = 0;  // LIS의 값과 끝 위치 상태
+    std::cin >> m;  // 수열 길이
+    for (int i = 0; i < m; ++i) {  // 앞에서부터 LIS 상태 계산
+        std::cin >> sequence[i];  // 현재 수열 원소
+        length[i] = 1;  // 현재 원소만 고른 길이
+        for (int j = 0; j < i; ++j) {  // 앞선 끝 위치 후보
+            if (sequence[j] < sequence[i] && length[j] + 1 > length[i]) length[i] = length[j] + 1;  // 엄격 증가 전이
+        }  // 이전 위치 확인 끝
+        if (length[i] > best) best = length[i];  // 전체 LIS 길이 유지
+    }  // 수열 계산 끝
+    std::cout << "KNAPSACK " << dp[capacity] << "\nLIS " << best << "\n";  // 두 DP 결과를 구분해 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/17-배낭수열구간확률DP_dp-variants/example.py>)
+
+```python
+import sys  # 두 입력 묶음의 정수 읽기
+tokens = iter(map(int, sys.stdin.read().split()))  # 공백 토큰 순회
+n, capacity = next(tokens), next(tokens)  # 배낭 조건
+dp = [0] * (capacity + 1)  # 용량 이하의 최대 가치
+for _ in range(n):  # 각 물건을 한 번씩 반영
+    weight, value = next(tokens), next(tokens)  # 현재 물건 정보
+    for w in range(capacity, weight - 1, -1):  # 내림차순으로 이전 물건 상태만 읽기
+        dp[w] = max(dp[w], dp[w - weight] + value)  # 선택과 미선택 비교
+m = next(tokens)  # 증가 부분 수열 입력 길이
+sequence = [next(tokens) for _ in range(m)]  # 수열 원소 저장
+length = [1] * m  # 각 위치에서 끝나는 LIS의 최소 길이
+for i in range(m):  # 현재 끝 위치 확정
+    for j in range(i):  # 그 앞에 붙일 끝 위치 확인
+        if sequence[j] < sequence[i]:  # 같은 값은 엄격 증가에 포함하지 않기
+            length[i] = max(length[i], length[j] + 1)  # 현재 원소를 이어 붙인 길이
+print("KNAPSACK", dp[capacity])  # 배낭 결과
+print("LIS", max(length, default=0))  # 빈 수열도 길이 0으로 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 무게 상태 101개와 수열·LIS 상태 30개의 고정 배열을 사용합니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(nW+m²)
+- 보조 공간: O(W+m)
+
+배낭은 용량을 내림차순으로 갱신하고 LIS는 이전 끝 위치를 모두 확인합니다.
+
+[예제 입력](<예제_examples/17-배낭수열구간확률DP_dp-variants/input.txt>) · [예상 출력](<예제_examples/17-배낭수열구간확률DP_dp-variants/output.txt>) · [예제 실행 방법](<예제_examples/17-배낭수열구간확률DP_dp-variants/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

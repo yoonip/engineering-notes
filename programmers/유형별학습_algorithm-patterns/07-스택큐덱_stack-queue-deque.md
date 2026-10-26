@@ -109,6 +109,115 @@ Python `list`는 뒤쪽 스택 연산에는 자연스럽지만 큐의 `pop(0)` �
 추상 연산의 구분은 MIT 강의, deque의 API 비용 설명은 Python 공식 문서에 근거합니다.
 괄호 예제·증명과 작업 정책의 적용 조건은 직접 구성했습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+아직 오른쪽 큰 값을 만나지 못한 인덱스만 스택에 남겨 각 원소의 첫 큰 값 위치를 선형 시간에 구합니다.
+
+이 예제에서 직접 구현하는 기법은 단조 스택 · 미해결 후보 · 상환 분석입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N(1~20), N개 정수(−100~100)입니다.
+
+```text
+5
+2 1 5 3 4
+```
+
+각 위치 오른쪽에서 처음 나타나는 더 큰 값의 0부터 시작하는 인덱스입니다. 없으면 −1을 출력합니다.
+
+```text
+2 2 -1 4 -1
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | i=0,stack=[0] | 값2는 아직 오른쪽 큰 값을 만나지 못했습니다. |
+| 2 | i=1,stack=[0,1] | 값1은2보다 크지 않아 두 후보를 유지합니다. |
+| 3 | i=2,value=5,answer[1]=2,answer[0]=2,stack=[2] | 5가 두 미해결 원소의 첫 큰 값입니다. |
+| 4 | i=4,value=4,answer[3]=4,stack=[2,4] | 값3만 해결하며 남은 후보의 답은−1입니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/07-스택큐덱_stack-queue-deque/example.c>)
+
+```c
+#include <stdio.h> // 배열 입력과 결과 출력
+int main(void) { // 실행 시작점
+    int n, a[20], answer[20], stack[20], top = 0; scanf("%d", &n); // 값·결과·미해결 인덱스 스택
+    for (int i = 0; i < n; ++i) { scanf("%d", &a[i]); answer[i] = -1; } // 값 입력과 답 없음 표시
+    for (int i = 0; i < n; ++i) { // 다음 큰 값을 왼쪽부터 탐색
+        while (top && a[stack[top - 1]] < a[i]) { // 현재 값이 맨 위 미해결 값보다 큰 동안 반복
+            answer[stack[--top]] = i; // 그 인덱스의 첫 오른쪽 큰 값 위치 확정
+        } // 현재 값으로 해결할 수 있는 후보 제거 끝
+        stack[top++] = i; // 현재 인덱스는 아직 답이 없으므로 스택에 추가
+    } // 전체 배열 처리 끝
+    for (int i = 0; i < n; ++i) printf("%s%d", i ? " " : "", answer[i]); // 다음 큰 값의 인덱스 출력
+    printf("\n"); // 출력 줄 끝내기
+    return 0; // 정상 종료
+} // 단조 스택 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/07-스택큐덱_stack-queue-deque/example.cpp>)
+
+```cpp
+#include <iostream> // 배열과 답의 입출력
+#include <vector> // 값·결과·인덱스 스택 저장
+using namespace std; // 표준 이름 접두사 생략
+int main() { // 실행 시작점
+    int n; cin >> n; vector<int> values(n), answer(n, -1), stack; // 크기와 미해결 스택 준비
+    for (int& value : values) cin >> value; // 원소 입력
+    for (int i = 0; i < n; ++i) { // 오른쪽으로 한 번 순회
+        while (!stack.empty() && values[stack.back()] < values[i]) { // 현재 값으로 해결되는 스택 끝 후보 확인
+            answer[stack.back()] = i; stack.pop_back(); // 첫 큰 값의 위치를 기록하고 후보 제거
+        } // 해결 가능한 이전 후보 처리 끝
+        stack.push_back(i); // 현재 인덱스를 새 미해결 후보로 추가
+    } // 배열 순회 끝
+    for (int i = 0; i < n; ++i) cout << (i ? " " : "") << answer[i]; // 인덱스 순서대로 답 출력
+    cout << '\n'; // 출력 줄 끝내기
+    return 0; // 정상 종료
+} // 단조 스택 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/07-스택큐덱_stack-queue-deque/example.py>)
+
+```python
+import sys # 정수 토큰 입력
+data = list(map(int, sys.stdin.buffer.read().split())) # 입력을 정수로 변환
+n, values = data[0], data[1:] # 원소 수와 배열 분리
+answer, stack = [-1] * n, [] # 답이 없는 표시와 미해결 인덱스 스택
+for index, value in enumerate(values): # 현재 값과 위치를 왼쪽부터 확인
+    while stack and values[stack[-1]] < value: # 현재 값이 스택 끝 후보보다 큰지 검사
+        answer[stack.pop()] = index # 가장 가까운 오른쪽 큰 값의 위치 확정
+    stack.append(index) # 현재 원소는 미해결 후보로 남기기
+print(*answer) # 각 원소의 다음 큰 값 인덱스 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다. |
+| 저장과 연산 | 고정 인덱스 배열과 top으로 스택을 관리합니다. | vector의 back·push_back·pop_back을 사용합니다. | list의 끝 추가·삭제로 같은 인덱스 스택을 구현합니다. |
+| 자료형과 범위 | 인덱스와 값이 작은 int 범위 안입니다. | 인덱스와 값이 작은 int 범위 안입니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(N)입니다.
+- 보조 공간: 결과와 스택에 O(N)입니다.
+
+각 인덱스는 한 번 들어가고 최대 한 번 빠집니다.
+
+[예제 입력](<예제_examples/07-스택큐덱_stack-queue-deque/input.txt>) · [예상 출력](<예제_examples/07-스택큐덱_stack-queue-deque/output.txt>) · [예제 실행 방법](<예제_examples/07-스택큐덱_stack-queue-deque/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

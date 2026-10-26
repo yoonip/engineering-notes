@@ -129,6 +129,160 @@ Python의 큰 정수도 연산 비용이 있으므로 불필요하게 과도한 
 
 전 구간에서 최솟값이 아닌 평탄 구간도 나타나는 약한 단조 조건, 여러 골짜기가 있는 함수, 평가 잡음이 있는 함수에는 같은 제거 규칙을 바로 쓰지 않습니다. 이산 볼록 함수처럼 f(x+1)-f(x)의 부호가 단조라면 그 부호 경계를 이진 탐색하는 다른 방법도 있습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+작업 순서를 유지해 최대 K개의 연속 그룹에 배치할 때 필요한 최소 그룹 용량을 판정 함수와 이진 탐색으로 구합니다.
+
+이 예제에서 직접 구현하는 기법은 매개변수 탐색 · 단조 판정 함수 · 연속 그룹 탐욕 배치입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N K(1≤K≤N≤20), N개 작업량(0~1000)입니다. 그룹은 비어 있지 않은 연속 구간이며 사용 그룹 수는 K 이하입니다.
+
+```text
+4 2
+2 3 4 2
+```
+
+가능한 최소 그룹 용량을 정수 하나로 출력합니다.
+
+```text
+6
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 초기 low=4,high=11 | 작업 하나의 최대량4는 하한이며 전체 합11은 가능한 상한입니다. |
+| 2 | middle=7: [2,3],[4,2],groups=2,high=7 | 현재 그룹을 최대한 채워도 두 그룹이면 충분하므로 상한을 낮춥니다. |
+| 3 | middle=5: [2,3],[4],[2],groups=3,low=6 | 용량5는 세 그룹이 필요하므로5 이하를 버립니다. |
+| 4 | middle=6: [2,3],[4,2],groups=2,low=high=6 | 용량6이 가능하고 더 작은 후보는 이미 제외되어 답이6입니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/example.c>)
+
+```c
+#include <stdio.h> // 순서 있는 작업량 입력과 용량 출력
+int n, limit, values[20]; // 작업 수·허용 그룹 수·순서대로 처리할 작업량
+int feasible(long long capacity) { // 이 용량으로 제한 그룹 안에 담기는지 판정
+    int groups = 1; // 첫 그룹부터 사용
+    long long current = 0; // 현재 그룹의 작업량 합
+    for (int i = 0; i < n; ++i) { // 작업 순서를 유지하며 하나씩 배치
+        if (values[i] > capacity) return 0; // 작업 하나도 못 담는 용량 거절
+        if (current + values[i] > capacity) { // 현재 그룹에 더 넣을 수 없는 경우
+            ++groups; // 다음 연속 그룹 열기
+            current = values[i]; // 새 그룹의 첫 작업 저장
+        } else current += values[i]; // 아직 여유가 있으면 현재 그룹에 추가
+    } // 모든 작업의 탐욕 배치 끝
+    return groups <= limit; // 필요한 그룹 수가 제한 이내인지 반환
+} // 판정 함수 끝
+int main(void) { // 실행 시작점
+    long long low = 0, high = 0; // 정답이 포함될 용량의 양 끝
+    scanf("%d %d", &n, &limit); // 작업 수와 허용 그룹 수 읽기
+    for (int i = 0; i < n; ++i) { // 각 작업량 입력과 탐색 경계 계산
+        scanf("%d", &values[i]); // 이번 작업량 읽기
+        if (values[i] > low) low = values[i]; // 가장 큰 작업보다 용량이 작을 수 없음
+        high += values[i]; // 전부 한 그룹에 담을 용량 계산
+    } // 초기 탐색 범위 완성
+    while (low < high) { // 가능한 최소 용량이 하나로 좁혀질 때까지 반복
+        long long middle = low + (high - low) / 2; // 넘침을 피한 중간 용량
+        if (feasible(middle)) high = middle; // 가능한 용량이면 더 작은 쪽도 탐색
+        else low = middle + 1; // 불가능한 용량과 그 아래를 제외
+    } // 최소 가능한 용량 확정
+    printf("%lld\n", low); // 최소 용량 출력
+    return 0; // 정상 종료
+} // 매개변수 탐색 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/example.cpp>)
+
+```cpp
+#include <iostream> // 표준 입력과 출력
+#include <vector> // 작업량 배열
+using namespace std; // 표준 이름의 접두사 생략
+int main() { // 실행 시작점
+    int n, limit; cin >> n >> limit; // 작업 수와 허용 그룹 수 읽기
+    vector<int> values(n); // 작업 순서를 보관할 배열
+    long long low = 0, high = 0; // 최소 작업 용량과 전체 작업 합
+    for (int& value : values) { // 각 작업량으로 탐색 범위 계산
+        cin >> value; // 작업량 입력
+        if (value > low) low = value; // 가장 큰 작업량을 하한으로 유지
+        high += value; // 전부 합친 안전한 상한 계산
+    } // 탐색 경계 완성
+    auto feasible = [&](long long capacity) { // 작업 배열과 그룹 제한을 캡처한 판정 함수
+        int groups = 1; long long current = 0; // 사용 그룹 수와 현재 그룹 합
+        for (int value : values) { // 원래 순서대로 작업 배치
+            if (value > capacity) return false; // 단일 작업도 못 담으면 거절
+            if (current + value > capacity) { // 현재 그룹의 용량을 넘는 경우
+                ++groups; // 새 연속 그룹 열기
+                current = value; // 새 그룹을 이번 작업으로 시작
+            } else current += value; // 용량 이내면 현재 그룹에 추가
+        } // 탐욕 배치 끝
+        return groups <= limit; // 그룹 수 제한 만족 여부
+    }; // 판정 람다 정의 끝
+    while (low < high) { // 최소 가능한 용량의 구간 축소
+        long long middle = low + (high - low) / 2; // 중간 용량 계산
+        if (feasible(middle)) high = middle; // 가능하면 이 용량을 포함해 왼쪽 탐색
+        else low = middle + 1; // 불가능하면 더 큰 용량만 남기기
+    } // 한 용량으로 수렴
+    cout << low << '\n'; // 최소 용량 출력
+    return 0; // 정상 종료
+} // 매개변수 탐색 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/example.py>)
+
+```python
+import sys # 정수 토큰 입력
+data = list(map(int, sys.stdin.buffer.read().split())) # 입력을 정수로 변환
+n, limit = data[:2] # 작업 수와 허용 그룹 수
+values = data[2:] # 순서를 유지할 작업량 배열
+def feasible(capacity): # 정해진 용량의 가능 여부 판정
+    groups, current = 1, 0 # 첫 그룹과 현재 그룹 합
+    for value in values: # 작업을 원래 순서대로 배치
+        if value > capacity: # 단일 작업도 담기지 않는 경우
+            return False # 이 용량은 불가능
+        if current + value > capacity: # 현재 그룹에 추가하면 용량 초과
+            groups += 1 # 새 연속 그룹 열기
+            current = value # 새 그룹에 이번 작업 배치
+        else: # 현재 그룹에 여유가 있는 경우
+            current += value # 이번 작업량 누적
+    return groups <= limit # 허용 그룹 수 이내인지 반환
+low, high = max(values), sum(values) # 가장 큰 작업과 전체 합을 탐색 경계로 설정
+while low < high: # 최소 가능한 용량이 하나 남을 때까지 반복
+    middle = low + (high - low) // 2 # 정수 중간 용량
+    if feasible(middle): # 해당 용량으로 작업을 나눌 수 있는 경우
+        high = middle # 더 작은 정답 가능성 유지
+    else: # 그룹 수 제한을 넘는 경우
+        low = middle + 1 # 불가능한 용량을 제외
+print(low) # 최소 가능한 용량 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다. |
+| 저장과 연산 | 전역 배열과 별도 feasible 함수로 판정에 필요한 작업량을 공유합니다. | 참조 캡처 람다가 vector와 그룹 제한을 읽습니다. | 함수가 바깥 범위의 작업량 리스트와 그룹 제한을 읽습니다. |
+| 자료형과 범위 | 작업량은 int, 용량과 그룹 합은 long long으로 저장합니다. | 작업량은 int, 용량과 그룹 합은 long long으로 저장합니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(N log(S+2))입니다.
+- 보조 공간: 입력 배열에 O(N), 판정 상태에 O(1)입니다.
+
+전체 합 S 이내의 용량을 이진 탐색하며 각 판정은 작업량을 한 번 읽습니다.
+
+[예제 입력](<예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/input.txt>) · [예상 출력](<예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/output.txt>) · [예제 실행 방법](<예제_examples/11-이진탐색과매개변수탐색_binary-parametric-search/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

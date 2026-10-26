@@ -122,6 +122,141 @@ Python에서 `[[0]*W]*H`는 행 객체를 공유하므로 독립된 행을 만�
 불변식의 초기화·유지·종료 구분은 위 Cornell 강의 자료를 참고한 것입니다.
 로봇 규칙, 명령 추적, 전파 반례와 현업 모형은 직접 구성한 설명이며 특정 제품의 동작 기록이 아닙니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+현재 위치와 방향을 상태로 두고 회전·전진 명령의 허용된 변화만 반영합니다.
+
+이 예제에서 직접 구현하는 기법은 상태 전이 · 격자 경계 검사 · 명령 시뮬레이션입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+H W(1~10), H개의 길이 W 격자 행(. 또는 #), r c d K입니다. 좌표는 0부터이며 시작은 빈칸, d는 북0·동1·남2·서3, 0≤K≤30입니다. 이어서 정확히 K개의 F/R 문자를 입력합니다.
+
+```text
+3 3
+...
+..#
+...
+1 1 1 4
+FRFF
+```
+
+최종 행 열 방향 번호를 한 줄에 출력합니다.
+
+```text
+2 1 2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | (row,col,d)=(1,1,1), F의 후보=(1,2) | 벽이므로 위치를 유지합니다. |
+| 2 | R 뒤 (1,1,2) | 오른쪽 회전으로 동쪽에서 남쪽으로 바뀝니다. |
+| 3 | 다음 F 뒤 (2,1,2) | 후보가 범위 안의 빈칸이므로 이동합니다. |
+| 4 | 마지막 F의 후보=(3,1), 최종=(2,1,2) | 격자 밖이므로 상태를 유지합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/02-구현과시뮬레이션_implementation-simulation/example.c>)
+
+```c
+#include <stdio.h> // 격자와 명령의 표준 입력·출력
+int main(void) { // 실행 시작점
+    int h, w, row, col, direction, count; // 격자 크기와 로봇 상태
+    char grid[10][11], command; // 최대 10칸 행과 명령 문자
+    int dr[4] = {-1, 0, 1, 0}, dc[4] = {0, 1, 0, -1}; // 북·동·남·서의 좌표 변화
+    scanf("%d %d", &h, &w); // 격자 크기 입력
+    for (int i = 0; i < h; ++i) scanf("%10s", grid[i]); // 점과 벽으로 된 행 읽기
+    scanf("%d %d %d %d", &row, &col, &direction, &count); // 시작 좌표·방향·명령 수 입력
+    for (int i = 0; i < count; ++i) { // 명령을 하나씩 순서대로 처리
+        scanf(" %c", &command); // 앞 공백을 건너뛰고 명령 문자 읽기
+        if (command == 'R') direction = (direction + 1) % 4; // 오른쪽 회전은 방향만 변경
+        else { // F 명령의 다음 칸 검사
+            int nr = row + dr[direction], nc = col + dc[direction]; // 아직 확정하지 않은 다음 좌표
+            if (0 <= nr && nr < h && 0 <= nc && nc < w && grid[nr][nc] != '#') { // 범위와 벽을 함께 확인
+                row = nr; col = nc; // 허용된 이동만 상태에 반영
+            } // 이동 허용 검사 끝
+        } // 전진 명령 처리 끝
+    } // 모든 명령 처리 끝
+    printf("%d %d %d\n", row, col, direction); // 최종 좌표와 방향 출력
+    return 0; // 정상 종료
+} // 로봇 시뮬레이션 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/02-구현과시뮬레이션_implementation-simulation/example.cpp>)
+
+```cpp
+#include <iostream> // 표준 입력과 출력
+#include <string> // 격자 행 문자열
+#include <vector> // 격자 높이에 맞춘 행 배열
+using namespace std; // 표준 이름 접두사 생략
+int main() { // 실행 시작점
+    int h, w, row, col, direction, count; // 격자와 로봇 상태
+    cin >> h >> w; // 격자 크기 입력
+    vector<string> grid(h); // 각 행을 문자열로 보관
+    for (string& line : grid) cin >> line; // 격자 행 읽기
+    cin >> row >> col >> direction >> count; // 시작 위치·방향·명령 수 읽기
+    int dr[4] = {-1, 0, 1, 0}, dc[4] = {0, 1, 0, -1}; // 북·동·남·서 이동량
+    for (int i = 0; i < count; ++i) { // 명령을 입력 순서대로 반복
+        char command; cin >> command; // 다음 명령 문자 읽기
+        if (command == 'R') direction = (direction + 1) % 4; // 제자리에서 방향만 회전
+        else { // 전진 명령의 허용 여부 검사
+            int nr = row + dr[direction], nc = col + dc[direction]; // 다음 좌표 임시 계산
+            if (0 <= nr && nr < h && 0 <= nc && nc < w && grid[nr][nc] != '#') { // 유효한 빈칸인지 확인
+                row = nr; col = nc; // 이동할 수 있는 경우만 현재 위치 교체
+            } // 다음 칸 검사 끝
+        } // 전진 처리 끝
+    } // 모든 상태 전이 완료
+    cout << row << ' ' << col << ' ' << direction << '\n'; // 최종 상태 출력
+    return 0; // 정상 종료
+} // 로봇 시뮬레이션 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/02-구현과시뮬레이션_implementation-simulation/example.py>)
+
+```python
+import sys # 격자와 명령 토큰 읽기
+tokens = sys.stdin.read().split() # 공백 단위 입력 분리
+h, w = map(int, tokens[:2]) # 격자 크기 변환
+grid = tokens[2:2 + h] # 격자 행 문자열 목록
+row, col, direction, count = map(int, tokens[2 + h:6 + h]) # 시작 상태와 명령 수 읽기
+commands = ''.join(tokens[6 + h:]) # 붙어 있거나 공백으로 나뉜 명령을 하나로 모으기
+steps = [(-1, 0), (0, 1), (1, 0), (0, -1)] # 북·동·남·서 좌표 변화
+for command in commands[:count]: # 약속한 수의 명령을 순서대로 처리
+    if command == 'R': # 오른쪽 회전 분기
+        direction = (direction + 1) % 4 # 방향 번호를 0~3 안에서 회전
+    else: # F 명령의 이동 후보 계산
+        dr, dc = steps[direction] # 현재 방향의 이동량 해체
+        nr, nc = row + dr, col + dc # 다음 좌표를 임시 계산
+        if 0 <= nr < h and 0 <= nc < w and grid[nr][nc] != '#': # 경계와 벽 검사
+            row, col = nr, nc # 허용된 위치로만 이동
+print(row, col, direction) # 최종 위치와 방향 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | 격자 행은 %10s, 명령은 앞 공백이 있는 %c로 읽습니다. | cin의 문자열·문자 추출로 격자와 명령을 읽습니다. | 공백 토큰으로 격자 행과 명령을 나누며 명령 문자는 한 문자열로 합칩니다. |
+| 저장과 연산 | 문자 행을 고정 char 배열에 보관합니다. | vector&lt;string&gt;에 행을 보관합니다. | 문자열 list와 좌표 tuple 해체를 사용합니다. |
+| 자료형과 범위 | 좌표와 방향은 작은 int 범위이며 별도 누적 합은 없습니다. | 좌표와 방향은 작은 int 범위이며 별도 누적 합은 없습니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: 격자 입력 O(HW), 명령 처리 O(K)입니다.
+- 보조 공간: C·C++의 격자에 O(HW), Python의 일괄 입력·명령 저장까지 포함하면 O(HW+K)입니다.
+
+명령 하나는 다음 칸 한 곳만 검사합니다.
+
+[예제 입력](<예제_examples/02-구현과시뮬레이션_implementation-simulation/input.txt>) · [예상 출력](<예제_examples/02-구현과시뮬레이션_implementation-simulation/output.txt>) · [예제 실행 방법](<예제_examples/02-구현과시뮬레이션_implementation-simulation/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

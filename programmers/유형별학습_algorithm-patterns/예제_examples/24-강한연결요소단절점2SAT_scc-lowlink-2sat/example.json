@@ -1,0 +1,84 @@
+{
+  "chapter": 24,
+  "title": "SCC로 판정하는 2-SAT",
+  "summary": "두 리터럴 절을 함의 그래프로 바꾸고 Kosaraju SCC로 만족 가능성을 판정합니다. 변수의 실제 값 배정, Tarjan, 단절점과 단절선은 이 예제의 구현 범위가 아닙니다.",
+  "input_format": "변수 수 N과 절 수 M 뒤에 M개의 리터럴 쌍 a b가 주어집니다. 1≤N≤4, 0≤M≤8이며 리터럴은 ±1~±N입니다. a b는 (a OR b) 절입니다.",
+  "output_format": "만족 가능한 배정이 있으면 SAT, 없으면 UNSAT을 출력합니다.",
+  "input": "2 3\n1 2\n-1 2\n1 -2\n",
+  "expected_stdout": "SAT\n",
+  "trace": [
+    {
+      "step": "1",
+      "state": "리터럴 정점: x=0, ¬x=1, y=2, ¬y=3",
+      "explanation": "변수와 부정을 서로 다른 정점으로 만듭니다."
+    },
+    {
+      "step": "2",
+      "state": "(x∨y): 1→2, 3→0",
+      "explanation": "둘 다 거짓인 배정을 금지하는 두 함의를 추가합니다."
+    },
+    {
+      "step": "3",
+      "state": "첫 DFS 종료 순서=[2,0,3,1]",
+      "explanation": "자식 탐색이 끝난 뒤 정점을 기록합니다."
+    },
+    {
+      "step": "4",
+      "state": "component=[1,0,1,0], 결과=SAT",
+      "explanation": "각 변수와 부정이 다른 SCC이므로 배정이 존재합니다."
+    }
+  ],
+  "language_differences": [
+    {
+      "point": "입력과 출력",
+      "c": "scanf와 fputs를 감싼 함수를 사용합니다.",
+      "cpp": "cin과 cout을 감싼 함수를 사용합니다.",
+      "python": "입력을 split으로 나누고 print로 출력합니다."
+    },
+    {
+      "point": "작업 배열",
+      "c": "입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다.",
+      "cpp": "절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다.",
+      "python": "입력 크기에 맞춘 리스트를 생성합니다."
+    },
+    {
+      "point": "정수와 상태",
+      "c": "예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다.",
+      "cpp": "같은 정수 범위와 상태 전이를 사용합니다.",
+      "python": "int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다."
+    }
+  ],
+  "complexity": {
+    "time": "O(N²+M)",
+    "space": "O(N²)",
+    "reason": "리터럴은 2N개이며 두 DFS가 인접 행렬의 행을 순회합니다. 인접 리스트의 선형 SCC와 비용을 구별합니다."
+  },
+  "covered_techniques": [
+    "2-SAT 함의 그래프",
+    "Kosaraju SCC",
+    "재귀 종료 순서",
+    "변수와 부정의 모순 판정"
+  ],
+  "cases": [
+    {
+      "name": "두 변수 모두 참인 해",
+      "stdin": "2 3\n1 2\n-1 2\n1 -2\n",
+      "stdout": "SAT\n"
+    },
+    {
+      "name": "네 조합 모두 금지",
+      "stdin": "2 4\n1 2\n-1 2\n1 -2\n-1 -2\n",
+      "stdout": "UNSAT\n"
+    },
+    {
+      "name": "절 없는 변수",
+      "stdin": "1 0\n",
+      "stdout": "SAT\n"
+    },
+    {
+      "name": "서로 반대인 단항 절",
+      "stdin": "1 2\n1 1\n-1 -1\n",
+      "stdout": "UNSAT\n"
+    }
+  ]
+}

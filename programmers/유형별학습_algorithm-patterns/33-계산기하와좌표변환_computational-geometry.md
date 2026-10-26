@@ -95,6 +95,154 @@ Python 정수는 정확하지만 큰 정수의 곱셈이 상수 시간인 것은
 - 질문: U,V 사각형의 모든 정수점이 원래 정수점입니까? 답: 두 좌표의 홀짝이 같아야 정수 X,Y로 복원됩니다.
 - 질문: ε를 넣으면 정렬도 항상 안전합니까? 답: 비교의 추이성을 깨뜨릴 수 있으므로 오차 판정과 정렬 순서의 조건을 따로 검토해야 합니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+기울기 나눗셈 없이 외적의 부호와 경계 포함으로 두 선분의 교차를 판정합니다.
+
+이 예제에서 직접 구현하는 기법은 정수 외적 방향 · 반대 부호 교차 · 일직선과 끝점 포함입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+A,B,C,D 순서의 네 점으로 각 줄 x,y입니다. 좌표는 -10000..10000의 정수이며 길이0 선분도 허용합니다.
+
+```text
+0 0
+4 0
+1 2
+1 -1
+```
+
+orientation(A,B,C)의 부호 -1/0/1과 선분 AB,CD의 교차 YES/NO를 한 줄에 출력합니다. 끝점 접촉과 겹침도 교차입니다.
+
+```text
+1 YES
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | A=(0,0),B=(4,0),C=(1,2),D=(1,−1) | 두 선분의 끝점을 같은 좌표계에 놓습니다. |
+| 2 | cross(A,B,C)=8, cross(A,B,D)=−4 | C와 D는 AB 직선의 반대편입니다. |
+| 3 | cross(C,D,A)=−3, cross(C,D,B)=9 | A와 B도 CD 직선의 반대편입니다. |
+| 4 | orientation=1, intersection=YES | 네 방향의 부호로 내부 교차를 확정합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/33-계산기하와좌표변환_computational-geometry/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+typedef struct { long long x, y; } Point;  // 정수 평면 좌표
+long long cross(Point a, Point b, Point c) {  // AB와 AC의 부호 있는 외적
+    return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);  // 방향과 넓이 두 배
+}  // 외적 계산 끝
+int orientation(Point a, Point b, Point c) {  // 외적을 작은 부호로 변환
+    long long value = cross(a, b, c);  // 넓은 자료형의 중간 곱
+    return (value > 0) - (value < 0);  // 왼쪽1, 일직선0, 오른쪽-1
+}  // 방향 판정 끝
+int between(long long a, long long x, long long b) {  // 순서와 무관한 닫힌 구간 포함
+    return (a <= x && x <= b) || (b <= x && x <= a);  // 양끝 사이인지 확인
+}  // 좌표 포함 검사 끝
+int on_segment(Point a, Point b, Point p) {  // 점이 실제 선분 위인지 확인
+    return orientation(a, b, p) == 0 && between(a.x, p.x, b.x) && between(a.y, p.y, b.y);  // 일직선과 경계 상자
+}  // 선분 포함 검사 끝
+int intersects(Point a, Point b, Point c, Point d) {  // 닫힌 두 선분 교차
+    int first = orientation(a, b, c), second = orientation(a, b, d);  // AB에 대한 양끝 방향
+    int third = orientation(c, d, a), fourth = orientation(c, d, b);  // CD에 대한 양끝 방향
+    if (first * second < 0 && third * fourth < 0) return 1;  // 작은 부호의 곱으로 엄격 교차
+    return on_segment(a, b, c) || on_segment(a, b, d) || on_segment(c, d, a) || on_segment(c, d, b);  // 일직선과 끝점 예외
+}  // 교차 판정 끝
+int main(void) {  // 네 점 입력 처리
+    Point points[4];  // 두 선분의 끝점
+    for (int i = 0; i < 4; ++i) scanf("%lld %lld", &points[i].x, &points[i].y);  // A,B,C,D 좌표 읽기
+    int sign = orientation(points[0], points[1], points[2]);  // 첫 세 점의 방향
+    int result = intersects(points[0], points[1], points[2], points[3]);  // 선분 교차
+    printf("%d %s\n", sign, result ? "YES" : "NO");  // 방향과 교차 여부
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/33-계산기하와좌표변환_computational-geometry/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+typedef struct { long long x, y; } Point;  // 정수 평면 좌표
+long long cross(Point a, Point b, Point c) {  // AB와 AC의 부호 있는 외적
+    return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);  // 방향과 넓이 두 배
+}  // 외적 계산 끝
+int orientation(Point a, Point b, Point c) {  // 외적을 작은 부호로 변환
+    long long value = cross(a, b, c);  // 넓은 자료형의 중간 곱
+    return (value > 0) - (value < 0);  // 왼쪽1, 일직선0, 오른쪽-1
+}  // 방향 판정 끝
+int between(long long a, long long x, long long b) {  // 순서와 무관한 닫힌 구간 포함
+    return (a <= x && x <= b) || (b <= x && x <= a);  // 양끝 사이인지 확인
+}  // 좌표 포함 검사 끝
+int on_segment(Point a, Point b, Point p) {  // 점이 실제 선분 위인지 확인
+    return orientation(a, b, p) == 0 && between(a.x, p.x, b.x) && between(a.y, p.y, b.y);  // 일직선과 경계 상자
+}  // 선분 포함 검사 끝
+int intersects(Point a, Point b, Point c, Point d) {  // 닫힌 두 선분 교차
+    int first = orientation(a, b, c), second = orientation(a, b, d);  // AB에 대한 양끝 방향
+    int third = orientation(c, d, a), fourth = orientation(c, d, b);  // CD에 대한 양끝 방향
+    if (first * second < 0 && third * fourth < 0) return 1;  // 작은 부호의 곱으로 엄격 교차
+    return on_segment(a, b, c) || on_segment(a, b, d) || on_segment(c, d, a) || on_segment(c, d, b);  // 일직선과 끝점 예외
+}  // 교차 판정 끝
+int main() {  // 네 점 입력 처리
+    Point points[4];  // 두 선분의 끝점
+    for (int i = 0; i < 4; ++i) std::cin >> points[i].x >> points[i].y;  // A,B,C,D 좌표 읽기
+    int sign = orientation(points[0], points[1], points[2]);  // 첫 세 점의 방향
+    int result = intersects(points[0], points[1], points[2], points[3]);  // 선분 교차
+    std::cout << sign << " " << (result ? "YES" : "NO") << "\n";  // 방향과 교차 여부
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/33-계산기하와좌표변환_computational-geometry/example.py>)
+
+```python
+import sys  # 네 점의 정수 토큰 읽기
+tokens = iter(map(int, sys.stdin.read().split()))  # 좌표 입력 순회
+points = [(next(tokens), next(tokens)) for _ in range(4)]  # A,B,C,D
+def orientation(a, b, c):  # 외적의 방향 부호
+    value = (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])  # AB와 AC의 외적
+    return (value > 0) - (value < 0)  # 세 가지 방향
+def between(a, x, b):  # 닫힌 좌표 범위
+    return min(a, b) <= x <= max(a, b)  # 끝점 순서와 무관한 포함
+def on_segment(a, b, p):  # 직선과 선분 구분
+    return orientation(a, b, p) == 0 and between(a[0], p[0], b[0]) and between(a[1], p[1], b[1])  # 일직선과 경계 포함
+a, b, c, d = points  # 두 선분 이름
+first, second = orientation(a, b, c), orientation(a, b, d)  # AB 양쪽 부호
+third, fourth = orientation(c, d, a), orientation(c, d, b)  # CD 양쪽 부호
+result = first * second < 0 and third * fourth < 0  # 엄격한 내부 교차
+result = result or on_segment(a, b, c) or on_segment(a, b, d) or on_segment(c, d, a) or on_segment(c, d, b)  # 일직선과 끝점 교차
+print(first, "YES" if result else "NO")  # 방향과 최종 판정
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 네 Point와 고정 개수의 정수만 사용합니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(1) 정수 연산
+- 보조 공간: O(1)
+
+네 방향과 일직선 경계 검사를 고정 횟수 수행합니다.
+
+[예제 입력](<예제_examples/33-계산기하와좌표변환_computational-geometry/input.txt>) · [예상 출력](<예제_examples/33-계산기하와좌표변환_computational-geometry/output.txt>) · [예제 실행 방법](<예제_examples/33-계산기하와좌표변환_computational-geometry/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

@@ -116,6 +116,165 @@ Python에서는 정수 객체·목록의 비용과 정렬용 공간을 함께 �
 MIT 자료는 부분합 meet-in-the-middle의 기본 분할·결합 원리, Python 문서는 후보 생성·경계 검색 API의 근거입니다.
 작은 입력·코드·유일 분해 증명과 자원 계산은 직접 구성했으며 최신 최속 부분합 알고리즘을 주장하지 않습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+원소를 두 절반으로 나누어 각 부분합을 만들고 보완 합의 개수를 더해 전체 부분집합 수를 구합니다.
+
+이 예제에서 직접 구현하는 기법은 부분집합 열거 · 중간에서 만나기 · 보완 합 · 중복값의 이진 경계입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N target(0≤N≤24,−100000≤target≤100000), N개 정수(−1000~1000)입니다. 같은 값도 위치가 다르면 다른 원소이며 빈 부분집합도 셉니다.
+
+```text
+4 9
+2 4 5 7
+```
+
+합이 target인 부분집합의 개수를 정수 하나로 출력합니다.
+
+```text
+2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 왼쪽[2,4]의 부분합=[0,2,4,6] | 각 원소를 넣거나 빼는 네 선택을 만듭니다. |
+| 2 | 오른쪽[5,7]의 정렬 부분합=[0,5,7,12] | 필요한 합의 범위를 이진 탐색할 목록을 만듭니다. |
+| 3 | 왼쪽 합2: need=7, 오른쪽 선택[7]이1개 | [2,7]이 목표 합9를 만드는 첫 부분집합입니다. |
+| 4 | 왼쪽 합4: need=5가1개, 합0과6의 보완 값은0개, answer=2 | 두 번째 부분집합[4,5]를 더하고 전체 개수를2로 확정합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/example.c>)
+
+```c
+#include <stdio.h> // 정수 입력과 부분집합 개수 출력
+#include <stdlib.h> // 오른쪽 부분합 정렬 함수
+long long left_sums[4096], right_sums[4096]; // 절반당 최대 12개 원소의 모든 부분합
+int compare(const void* a, const void* b) { // qsort가 사용할 오름차순 비교
+    long long x = *(const long long*)a, y = *(const long long*)b; // 비교 대상의 실제 부분합 읽기
+    return (x > y) - (x < y); // 뺄셈 넘침 없이 비교 부호 반환
+} // 비교 함수 끝
+int lower_bound_index(long long* sums, int count, long long target) { // target 이상인 첫 위치 검색
+    int low = 0, high = count; // 정답 위치가 포함된 반열린 탐색 구간
+    while (low < high) { // 경계가 하나로 좁혀질 때까지 반복
+        int middle = low + (high - low) / 2; // 중앙 인덱스
+        if (sums[middle] < target) low = middle + 1; // target보다 작은 부분을 제외
+        else high = middle; // target 이상인 첫 위치를 왼쪽에서 탐색
+    } // 경계 탐색 끝
+    return low; // 첫 이상 위치 반환
+} // lower bound 함수 끝
+int upper_bound_index(long long* sums, int count, long long target) { // target보다 큰 첫 위치 검색
+    int low = 0, high = count; // 가능한 삽입 위치 범위
+    while (low < high) { // 첫 초과 위치를 찾을 때까지 반복
+        int middle = low + (high - low) / 2; // 중앙 인덱스
+        if (sums[middle] <= target) low = middle + 1; // target과 같은 부분까지 제외
+        else high = middle; // 초과 값이 시작되는 왼쪽 경계 탐색
+    } // 경계 탐색 끝
+    return low; // 첫 초과 위치 반환
+} // upper bound 함수 끝
+int main(void) { // 실행 시작점
+    int n, values[24], left_count = 1, right_count = 1; // 원소와 양쪽 부분합 개수
+    long long target, answer = 0; // 목표 합과 찾은 부분집합 수
+    scanf("%d %lld", &n, &target); // 원소 수와 목표 합 입력
+    for (int i = 0; i < n; ++i) scanf("%d", &values[i]); // 각 위치의 원소 입력
+    left_sums[0] = right_sums[0] = 0; // 두 절반 모두 빈 부분집합부터 시작
+    for (int i = 0; i < n / 2; ++i) { // 왼쪽 절반의 모든 부분합 생성
+        int old_count = left_count; // 새 원소를 넣기 전 부분합 수 고정
+        for (int j = 0; j < old_count; ++j) left_sums[left_count++] = left_sums[j] + values[i]; // 기존 부분합마다 이번 원소를 넣은 경우 추가
+    } // 왼쪽 부분합 생성 끝
+    for (int i = n / 2; i < n; ++i) { // 오른쪽 절반의 모든 부분합 생성
+        int old_count = right_count; // 확장 전 부분합 수 고정
+        for (int j = 0; j < old_count; ++j) right_sums[right_count++] = right_sums[j] + values[i]; // 이번 원소를 넣는 선택 추가
+    } // 오른쪽 부분합 생성 끝
+    qsort(right_sums, right_count, sizeof(long long), compare); // 같은 보완 합이 연속하도록 정렬
+    for (int i = 0; i < left_count; ++i) { // 각 왼쪽 선택에 맞는 오른쪽 선택 수 누적
+        long long need = target - left_sums[i]; // 오른쪽에서 필요한 보완 합
+        answer += upper_bound_index(right_sums, right_count, need) - lower_bound_index(right_sums, right_count, need); // 같은 합의 전체 개수를 두 경계 차이로 더하기
+    } // 모든 양쪽 조합 계산 끝
+    printf("%lld\n", answer); // 목표 합을 만드는 부분집합 수 출력
+    return 0; // 정상 종료
+} // 중간에서 만나기 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/example.cpp>)
+
+```cpp
+#include <algorithm> // 정렬과 두 삽입 경계 검색
+#include <iostream> // 표준 입력과 출력
+#include <vector> // 절반의 부분합 목록
+using namespace std; // 표준 이름의 접두사 생략
+int main() { // 실행 시작점
+    int n; long long target; cin >> n >> target; // 원소 수와 목표 합 입력
+    vector<int> values(n); // 각 위치의 값 저장
+    for (int& value : values) cin >> value; // 원소 입력
+    vector<long long> left_sums{0}, right_sums{0}; // 빈 부분집합의 합부터 시작
+    for (int i = 0; i < n / 2; ++i) { // 왼쪽 절반의 선택 확장
+        int old_count = static_cast<int>(left_sums.size()); // 확장 전 길이 고정
+        for (int j = 0; j < old_count; ++j) left_sums.push_back(left_sums[j] + values[i]); // 원소를 넣는 새 부분집합 추가
+    } // 왼쪽 부분합 생성 끝
+    for (int i = n / 2; i < n; ++i) { // 오른쪽 절반의 선택 확장
+        int old_count = static_cast<int>(right_sums.size()); // 이번 확장 전 길이 고정
+        for (int j = 0; j < old_count; ++j) right_sums.push_back(right_sums[j] + values[i]); // 이번 원소를 넣은 부분합 추가
+    } // 오른쪽 부분합 생성 끝
+    sort(right_sums.begin(), right_sums.end()); // 보완 합의 개수를 셀 수 있게 정렬
+    long long answer = 0; // 목표 합을 만드는 부분집합 수
+    for (long long left : left_sums) { // 왼쪽의 모든 선택 확인
+        long long need = target - left; // 오른쪽에서 필요한 합
+        answer += upper_bound(right_sums.begin(), right_sums.end(), need) - lower_bound(right_sums.begin(), right_sums.end(), need); // 같은 보완 합의 개수 누적
+    } // 양쪽 절반 결합 끝
+    cout << answer << '\n'; // 부분집합 개수 출력
+    return 0; // 정상 종료
+} // 중간에서 만나기 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/example.py>)
+
+```python
+from bisect import bisect_left, bisect_right # 같은 보완 합의 양쪽 경계 검색
+import sys # 정수 토큰 입력
+data = list(map(int, sys.stdin.buffer.read().split())) # 입력을 정수로 변환
+n, target = data[:2] # 원소 수와 목표 합
+values = data[2:] # 위치별 원소 값
+left_sums, right_sums = [0], [0] # 양쪽 빈 부분집합의 합
+for value in values[:n // 2]: # 왼쪽 절반의 원소를 하나씩 반영
+    left_sums += [total + value for total in left_sums] # 확장 전 각 선택에 이번 원소를 넣는 경우 추가
+for value in values[n // 2:]: # 오른쪽 절반의 원소를 하나씩 반영
+    right_sums += [total + value for total in right_sums] # 이번 원소를 넣는 오른쪽 선택 추가
+right_sums.sort() # 같은 부분합을 연속 위치로 모으기
+answer = 0 # 목표 합을 만드는 부분집합 수
+for left in left_sums: # 왼쪽 선택마다 보완 합 검색
+    need = target - left # 오른쪽에서 필요한 합
+    answer += bisect_right(right_sums, need) - bisect_left(right_sums, need) # 같은 값의 전체 개수 누적
+print(answer) # 목표 합의 부분집합 수 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다. |
+| 저장과 연산 | 최대4096칸의 두 long long 배열과 직접 구현한 lower·upper bound를 사용합니다. | vector의 확장 전 길이를 고정해 push_back하고 표준 경계 검색을 사용합니다. | 리스트 내포를 먼저 평가해 기존 선택의 확장본을 더하고 bisect로 중복 개수를 셉니다. |
+| 자료형과 범위 | 합과 부분집합 개수는 long long입니다. N≤24이므로 전체 부분집합 수는2^24 이하입니다. | 합과 부분집합 개수는 long long입니다. N≤24이므로 전체 부분집합 수는2^24 이하입니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: 정렬이 O(M log M)인 구현에서는 O(N·2^ceil(N/2))입니다. C qsort의 최악 시간은 표준이 보장하지 않습니다.
+- 보조 공간: 양쪽 부분합에 O(2^ceil(N/2))입니다.
+
+각 절반의 부분집합을 만들고 오른쪽을 정렬한 뒤 왼쪽마다 두 경계를 검색합니다.
+
+[예제 입력](<예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/input.txt>) · [예상 출력](<예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/output.txt>) · [예제 실행 방법](<예제_examples/12-완전탐색과중간에서만나기_exhaustive-meet-in-middle/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

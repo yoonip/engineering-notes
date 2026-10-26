@@ -1,0 +1,78 @@
+{
+  "chapter": 10,
+  "title": "목표 합 이상인 가장 짧은 양수 구간",
+  "summary": "모든 원소가 양수라는 조건을 이용해 오른쪽 끝을 늘리고 목표를 만족하는 동안 왼쪽 끝을 줄입니다.",
+  "input_format": "N target(1≤N≤20,1≤target≤1000), N개 양수(1~100)입니다. 음수나0은 허용하지 않습니다.",
+  "output_format": "합이 target 이상인 연속 구간의 최소 길이입니다. 없으면0입니다.",
+  "input": "5 6\n2 1 3 2 4\n",
+  "expected_stdout": "2\n",
+  "trace": [
+    {
+      "step": "1",
+      "state": "right=2,left=0,total=6,best=3",
+      "explanation": "처음 목표를 만족한 구간[2,1,3]의 길이는3입니다."
+    },
+    {
+      "step": "2",
+      "state": "왼쪽2 제거 후 left=1,total=4",
+      "explanation": "양수를 제거하면 합이 감소하므로 더 줄일 필요가 없습니다."
+    },
+    {
+      "step": "3",
+      "state": "right=4,left=2,total=9,best=3",
+      "explanation": "오른쪽에2와4가 들어온 뒤 남아 있는 구간은[3,2,4]입니다."
+    },
+    {
+      "step": "4",
+      "state": "3 제거 후 total=6,left=3,best=2; 2 제거 후 total=4",
+      "explanation": "[2,4]로 길이2를 얻은 뒤 목표보다 작아져 축소를 끝냅니다."
+    }
+  ],
+  "language_differences": [
+    {
+      "point": "입력",
+      "c": "scanf로 공백으로 구분된 정수를 읽습니다.",
+      "cpp": "cin으로 공백으로 구분된 정수를 읽습니다.",
+      "python": "buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다."
+    },
+    {
+      "point": "저장과 연산",
+      "c": "left 인덱스와 long long 합을 직접 갱신합니다.",
+      "cpp": "vector의 인덱스로 양 끝을 이동하며 같은 합을 유지합니다.",
+      "python": "enumerate로 오른쪽 위치와 값을 함께 읽고 리스트에서 왼쪽 값을 뺍니다."
+    },
+    {
+      "point": "자료형과 범위",
+      "c": "int 범위 안의 값만 사용하며 합은 long long으로 누적합니다.",
+      "cpp": "int 범위 안의 값만 사용하며 합은 long long으로 누적합니다.",
+      "python": "int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다."
+    }
+  ],
+  "complexity": {
+    "time": "O(N)입니다.",
+    "space": "입력 배열에 O(N), 창 상태에 O(1)입니다.",
+    "reason": "각 원소는 오른쪽에서 한 번 들어오고 왼쪽에서 최대 한 번 빠집니다."
+  },
+  "covered_techniques": [
+    "두 포인터",
+    "가변 길이 슬라이딩 윈도",
+    "양수 합의 단조성"
+  ],
+  "cases": [
+    {
+      "name": "기본",
+      "stdin": "5 6\n2 1 3 2 4\n",
+      "stdout": "2\n"
+    },
+    {
+      "name": "원소 하나로 충족",
+      "stdin": "1 7\n7\n",
+      "stdout": "1\n"
+    },
+    {
+      "name": "전체 합도 부족",
+      "stdin": "3 10\n1 2 3\n",
+      "stdout": "0\n"
+    }
+  ]
+}

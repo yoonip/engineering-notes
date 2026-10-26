@@ -1,0 +1,89 @@
+{
+  "chapter": 39,
+  "title": "두 원소 증가 연산의 불변량과 구성",
+  "summary": "서로 다른 두 원소를 각각 1 올리는 연산으로 목표 배열을 만듭니다. 차이의 비음수성·합의 홀짝·최대 차이 조건을 검사하고 가장 큰 두 부족량을 줄이며 실제 연산을 출력합니다.",
+  "input_format": "N, 초기 배열 A, 목표 배열 B가 차례로 주어집니다. 2≤N≤6이고 각 원소는 0~6입니다. 한 연산은 서로 다른 두 인덱스의 값을 각각 1 올립니다.",
+  "output_format": "불가능하면 IMPOSSIBLE입니다. 가능하면 POSSIBLE K 뒤에 K줄의 0기반 인덱스 쌍을 출력합니다. 최댓값 동률은 작은 인덱스부터 고릅니다.",
+  "input": "3\n0 0 0\n2 1 1\n",
+  "expected_stdout": "POSSIBLE 2\n0 1\n0 2\n",
+  "trace": [
+    {
+      "step": "1",
+      "state": "deficit=[2,1,1], total=4, largest=2",
+      "explanation": "증가량이 모두 비음수이고 합이 짝수인지 확인합니다."
+    },
+    {
+      "step": "2",
+      "state": "2*largest=4≤total=4",
+      "explanation": "가장 큰 부족량도 다른 위치의 부족량과 모두 짝지을 수 있습니다."
+    },
+    {
+      "step": "3",
+      "state": "연산(0,1) 후 deficit=[1,0,1]",
+      "explanation": "큰 두 부족량을 줄여 짝짓기 가능 조건을 보존합니다."
+    },
+    {
+      "step": "4",
+      "state": "연산(0,2) 후 deficit=[0,0,0]",
+      "explanation": "초기 배열에서 두 번 증가하면 목표 배열에 도달합니다."
+    }
+  ],
+  "language_differences": [
+    {
+      "point": "입력과 출력",
+      "c": "scanf와 fputs를 감싼 함수를 사용합니다.",
+      "cpp": "cin과 cout을 감싼 함수를 사용합니다.",
+      "python": "입력을 split으로 나누고 print로 출력합니다."
+    },
+    {
+      "point": "작업 배열",
+      "c": "입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다.",
+      "cpp": "절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다.",
+      "python": "입력 크기에 맞춘 리스트를 생성합니다."
+    },
+    {
+      "point": "정수와 상태",
+      "c": "예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다.",
+      "cpp": "같은 정수 범위와 상태 전이를 사용합니다.",
+      "python": "int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다."
+    }
+  ],
+  "complexity": {
+    "time": "O(N+NS)",
+    "space": "O(N)",
+    "reason": "S는 초기 부족량 합이며 S/2번 연산마다 N개 후보를 확인합니다. 모든 부족량이 비음수이고 최대값이 나머지 합 이하이면 큰 두 값을 줄인 뒤에도 이 조건이 유지됩니다."
+  },
+  "covered_techniques": [
+    "합의 홀짝 불변량",
+    "비음수성",
+    "구성적 풀이",
+    "감소하는 정수 부족량"
+  ],
+  "cases": [
+    {
+      "name": "두 번의 연산 구성",
+      "stdin": "3\n0 0 0\n2 1 1\n",
+      "stdout": "POSSIBLE 2\n0 1\n0 2\n"
+    },
+    {
+      "name": "이미 같은 배열",
+      "stdin": "2\n1 3\n1 3\n",
+      "stdout": "POSSIBLE 0\n"
+    },
+    {
+      "name": "홀짝 불일치",
+      "stdin": "3\n0 0 0\n1 0 0\n",
+      "stdout": "IMPOSSIBLE\n"
+    },
+    {
+      "name": "짝지을 다른 부족량 없음",
+      "stdin": "3\n0 0 0\n2 0 0\n",
+      "stdout": "IMPOSSIBLE\n"
+    },
+    {
+      "name": "감소가 필요한 위치",
+      "stdin": "2\n2 0\n1 1\n",
+      "stdout": "IMPOSSIBLE\n"
+    }
+  ]
+}

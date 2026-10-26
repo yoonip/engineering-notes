@@ -114,6 +114,122 @@ Python에서는 `dict`, `set`, `collections.Counter`의 목적을 구별합니�
 해시의 시간 보장 조건은 MIT 강의, Counter의 동작은 Python 공식 문서에 근거합니다.
 재고 규칙, 추적과 코드는 직접 구성한 정확 집계 예제입니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+각 값을 한 번 집계한 뒤 질의 키의 등장 횟수를 조회합니다. C 예제는 충돌을 선형 탐사로 직접 처리합니다.
+
+이 예제에서 직접 구현하는 기법은 해시 · 충돌 처리 · 빈도 집계입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N Q(0≤N≤20,1≤Q≤20), N개 값, Q개 질의 키입니다. 키는 −1000~1000입니다.
+
+```text
+6 3
+10 20 10 -5 20 10
+10 -5 7
+```
+
+각 질의 키의 빈도를 한 줄에 출력합니다.
+
+```text
+3 1 0
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 빈 테이블 | 집계 전에는 모든 키의 개수가 0입니다. |
+| 2 | 10을 세 번 읽어 counts[10]=3 | 같은 키는 같은 빈도에 합칩니다. |
+| 3 | counts[20]=2,counts[−5]=1 | 다른 키는 독립된 개수를 보관합니다. |
+| 4 | 질의10,−5,7의 답=3,1,0 | 등장하지 않은 키를 0으로 처리합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/06-해시와빈도집계_hashing-counting/example.c>)
+
+```c
+#include <stdio.h> // 빈도 입력과 출력
+enum { CAPACITY = 53 }; // 서로 다른 키 최대 20개보다 넉넉한 해시 칸 수
+static int used[CAPACITY], keys[CAPACITY], counts[CAPACITY]; // 빈 칸 표시·키·빈도 배열
+static int locate(int key) { // 키가 있거나 처음 빈 칸인 위치 찾기
+    int slot = (key % CAPACITY + CAPACITY) % CAPACITY; // 음수 키도 0~52의 시작 위치로 변환
+    while (used[slot] && keys[slot] != key) slot = (slot + 1) % CAPACITY; // 충돌한 다른 키 뒤를 선형 탐사
+    return slot; // 같은 키 또는 삽입 가능한 빈 칸 반환
+} // 해시 위치 탐색 끝
+int main(void) { // 실행 시작점
+    int n, q; scanf("%d %d", &n, &q); // 값 수와 질의 수 읽기
+    for (int i = 0; i < n; ++i) { // 값을 한 번씩 집계
+        int key; scanf("%d", &key); int slot = locate(key); // 값과 해시 칸 찾기
+        used[slot] = 1; keys[slot] = key; ++counts[slot]; // 키를 보관하고 빈도 증가
+    } // 전체 빈도 구축 끝
+    for (int i = 0; i < q; ++i) { // 질의 키를 차례로 조회
+        int key; scanf("%d", &key); int slot = locate(key); // 찾는 키의 칸 확인
+        printf("%s%d", i ? " " : "", used[slot] ? counts[slot] : 0); // 없는 키는 0으로 출력
+    } // 모든 질의 처리 끝
+    printf("\n"); // 출력 줄 끝내기
+    return 0; // 정상 종료
+} // 해시 빈도 집계 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/06-해시와빈도집계_hashing-counting/example.cpp>)
+
+```cpp
+#include <iostream> // 정수 입력과 결과 출력
+#include <unordered_map> // 키에서 빈도를 찾을 해시 테이블
+using namespace std; // 표준 이름 접두사 생략
+int main() { // 실행 시작점
+    int n, q; cin >> n >> q; unordered_map<int, int> counts; // 개수와 빈도 테이블 준비
+    for (int i = 0; i < n; ++i) { // 모든 입력 값을 집계
+        int key; cin >> key; ++counts[key]; // 없는 키는 0에서 시작해 빈도 증가
+    } // 빈도 구축 끝
+    for (int i = 0; i < q; ++i) { // 질의 키를 순서대로 조회
+        int key; cin >> key; auto found = counts.find(key); // 조회만 하고 없는 키를 새로 넣지 않기
+        int answer = found == counts.end() ? 0 : found->second; // 찾지 못하면 빈도 0
+        cout << (i ? " " : "") << answer; // 질의 순서대로 빈도 출력
+    } // 질의 처리 끝
+    cout << '\n'; // 출력 줄 끝내기
+    return 0; // 정상 종료
+} // 해시 빈도 집계 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/06-해시와빈도집계_hashing-counting/example.py>)
+
+```python
+import sys # 정수 토큰 입력
+data = list(map(int, sys.stdin.buffer.read().split())) # 공백 입력을 정수로 변환
+n, q = data[:2] # 값 수와 질의 수
+counts = {} # 키별 빈도를 저장할 해시 딕셔너리
+for key in data[2:2 + n]: # 입력 값 한 번씩 순회
+    counts[key] = counts.get(key, 0) + 1 # 없는 키의 기본 빈도 0에서 증가
+queries = data[2 + n:2 + n + q] # 조회할 키 목록 분리
+print(*(counts.get(key, 0) for key in queries)) # 없는 키는 0으로 답하고 원래 질의 순서 유지
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다. |
+| 저장과 연산 | 53칸 배열과 선형 탐사를 직접 사용합니다. | unordered_map이 해시 저장과 충돌 처리를 담당합니다. | dict의 get으로 없는 키를 0으로 읽습니다. |
+| 자료형과 범위 | 키와 최대 빈도 20은 int 범위 안입니다. | 키와 최대 빈도 20은 int 범위 안입니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: 키 처리의 평균 비용을 일정하게 보는 해시 모형에서 O(N+Q)입니다. 충돌이 몰리면 키 탐색이 길어질 수 있습니다.
+- 보조 공간: 해시 자체는 C에서 고정53칸, C++·Python에서 서로 다른 키 수 D에 대해 O(D)입니다. Python의 입력·질의 목록에는 O(N+Q)가 추가됩니다.
+
+원래 값을 질의마다 다시 세지 않고 키의 집계 결과를 재사용합니다.
+
+[예제 입력](<예제_examples/06-해시와빈도집계_hashing-counting/input.txt>) · [예상 출력](<예제_examples/06-해시와빈도집계_hashing-counting/output.txt>) · [예제 실행 방법](<예제_examples/06-해시와빈도집계_hashing-counting/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

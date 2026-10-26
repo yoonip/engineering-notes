@@ -1,0 +1,77 @@
+{
+  "chapter": 30,
+  "title": "유클리드와 모듈러 이진 거듭제곱",
+  "summary": "나머지를 반복하여 최대공약수를 구하고 지수의 비트로 모듈러 거듭제곱을 계산합니다.",
+  "input_format": "정수 a,b,e,m 네 개입니다. 0≤a,b≤1000000,0≤e≤1000000000,1≤m≤1000000입니다. 지수0의 곱은1로 정의합니다.",
+  "output_format": "GCD 최대공약수, POWER a^e mod m을 각각 한 줄에 출력합니다.",
+  "input": "84 30 3 11\n",
+  "expected_stdout": "GCD 6\nPOWER 2\n",
+  "trace": [
+    {
+      "step": "1",
+      "state": "84,30 → 30,24 → 24,6 → 6,0",
+      "explanation": "공약수 집합을 유지하며 최대공약수6을 구합니다."
+    },
+    {
+      "step": "2",
+      "state": "84 mod11=7, 지수3의 이진수11",
+      "explanation": "선택할 거듭제곱을 비트별로 확인합니다."
+    },
+    {
+      "step": "3",
+      "state": "첫 비트 뒤 answer7, base5, exponent1",
+      "explanation": "7을 선택하고 7² mod11=5로 제곱합니다."
+    },
+    {
+      "step": "4",
+      "state": "두 번째 비트 뒤 answer2, exponent0",
+      "explanation": "7×5 mod11=2이므로 POWER2를 출력합니다."
+    }
+  ],
+  "language_differences": [
+    {
+      "point": "표준 입출력",
+      "c": "scanf와 printf의 서식 지정자를 자료형에 맞춥니다.",
+      "cpp": "std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다.",
+      "python": "sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다."
+    },
+    {
+      "point": "배열과 허용 범위",
+      "c": "고정 개수의 long long 변수만 사용합니다.",
+      "cpp": "같은 long long 변수로 나머지 연산과 지수 시프트를 수행합니다.",
+      "python": "상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다."
+    },
+    {
+      "point": "정수 연산",
+      "c": "이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다.",
+      "cpp": "C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다.",
+      "python": "정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다."
+    }
+  ],
+  "complexity": {
+    "time": "O(log(min(a,b)+1)+log(e+1)) 나머지·곱셈 연산",
+    "space": "O(1) 추가 변수",
+    "reason": "유클리드의 두 번째 값과 지수의 남은 비트가 계속 감소합니다. Python 큰 정수의 비트 비용은 별도입니다."
+  },
+  "covered_techniques": [
+    "유클리드 최대공약수",
+    "모듈러 이진 거듭제곱"
+  ],
+  "cases": [
+    {
+      "name": "두 나머지 계산",
+      "stdin": "84 30 3 11\n",
+      "stdout": "GCD 6\nPOWER 2\n"
+    },
+    {
+      "name": "0과 모듈러1",
+      "stdin": "0 0 0 1\n",
+      "stdout": "GCD 0\nPOWER 0\n"
+    },
+    {
+      "name": "여러 제곱",
+      "stdin": "2 3 10 1000\n",
+      "stdout": "GCD 1\nPOWER 24\n"
+    }
+  ]
+}

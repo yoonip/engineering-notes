@@ -96,6 +96,118 @@ C++의 std::bitset<N>은 크기가 컴파일 시점에 정해지며, 이동과 �
 - 질문: ~mask가 항상 n비트 여집합입니까? 답: Python에서는 그렇지 않으며, 원소 범위 마스크로 다시 제한해야 합니다.
 - 질문: 집합 DP가 방문 순서를 잊어도 되는 이유는 무엇입니까? 답: 집합과 마지막 위치가 같으면 이후 선택과 추가 비용이 같다는 문제 조건을 사용하기 때문입니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+가능한 합을 정수의 비트로 보관하고 이동·OR 연산으로 물건을 한 번씩 반영합니다.
+
+이 예제에서 직접 구현하는 기법은 0-1 부분합 비트집합 · 왼쪽 시프트와 OR · 범위 마스크입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+n,T(0≤n≤20,0≤T≤60), 다음 n개의 양의 무게(1..60)입니다.
+
+```text
+3 6
+2 3 3
+```
+
+목표 합을 만들 수 있으면 YES, 아니면 NO를 출력합니다.
+
+```text
+YES
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | bits=1, 가능한 합 {0} | 빈 선택만 가능한 초기 상태입니다. |
+| 2 | 무게 2 뒤 {0,2} | 기존 비트를 두 칸 이동하여 선택한 합을 추가합니다. |
+| 3 | 첫 무게 3 뒤 {0,2,3,5} | 이번 물건을 고른 경우와 고르지 않은 경우를 합칩니다. |
+| 4 | 둘째 무게 3 뒤 목표 이하 {0,2,3,5,6} | 새 합 6의 비트가 켜져 YES를 출력합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/18-비트마스크와비트집합_bitmask-bitset/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+int main(void) {  // 비트집합 부분합 계산 시작
+    int n, target;  // 물건 수와 목표 합
+    scanf("%d %d", &n, &target);  // 목표는 60 이하로 제한
+    unsigned long long bits = 1ULL;  // 합 0의 비트만 설정
+    unsigned long long limit = (1ULL << (target + 1)) - 1ULL;  // 목표 이하의 비트 범위
+    for (int i = 0; i < n; ++i) {  // 각 물건을 한 번만 반영
+        int weight;  // 현재 물건의 양의 무게
+        scanf("%d", &weight);  // 무게 입력
+        if (weight <= target) bits = (bits | (bits << weight)) & limit;  // 선택과 미선택을 합치고 상한 적용
+    }  // 모든 물건 반영 끝
+    int possible = (int)((bits >> target) & 1ULL);  // 목표 위치의 비트 확인
+    printf("%s\n", possible ? "YES" : "NO");  // 가능 여부 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/18-비트마스크와비트집합_bitmask-bitset/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+int main() {  // 비트집합 부분합 계산 시작
+    int n, target;  // 물건 수와 목표 합
+    std::cin >> n >> target;  // 목표는 60 이하로 제한
+    unsigned long long bits = 1ULL;  // 합 0의 비트만 설정
+    unsigned long long limit = (1ULL << (target + 1)) - 1ULL;  // 목표 이하의 비트 범위
+    for (int i = 0; i < n; ++i) {  // 각 물건을 한 번만 반영
+        int weight;  // 현재 물건의 양의 무게
+        std::cin >> weight;  // 무게 입력
+        if (weight <= target) bits = (bits | (bits << weight)) & limit;  // 선택과 미선택을 합치고 상한 적용
+    }  // 모든 물건 반영 끝
+    int possible = (int)((bits >> target) & 1ULL);  // 목표 위치의 비트 확인
+    std::cout << (possible ? "YES" : "NO") << "\n";  // 가능 여부 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/18-비트마스크와비트집합_bitmask-bitset/example.py>)
+
+```python
+import sys  # 정수 토큰 읽기
+tokens = iter(map(int, sys.stdin.read().split()))  # 표준 입력 순회
+n, target = next(tokens), next(tokens)  # 물건 수와 목표
+bits = 1  # 합 0만 가능한 초기 비트
+limit = (1 << (target + 1)) - 1  # 목표 이하 마스크
+for _ in range(n):  # 물건 한 개씩 처리
+    weight = next(tokens)  # 현재 무게
+    if weight <= target:  # 양수이므로 목표 초과 물건 제외
+        bits = (bits | (bits << weight)) & limit  # 이전 상태에서 한 번만 이동
+print("YES" if (bits >> target) & 1 else "NO")  # 목표 합의 비트 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 무게 20개를 한 번씩 읽으며 61비트 상태를 unsigned long long에 저장합니다. | 동일한 unsigned long long 상태에서 같은 시프트와 OR를 사용합니다. | 정수 하나를 비트집합으로 사용하며 목표 이하 비트만 남깁니다. |
+| 정수 연산 | 최대 시프트가 61이므로 최소 64비트인 unsigned long long의 폭을 넘지 않습니다. | 부호 없는 1ULL 상수로 마스크를 만들어 부호 비트를 피합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: 고정 상한에서 O(n); 일반 비트집합은 O(n⌈(T+1)/w⌉) 워드 연산
+- 보조 공간: 고정 상한에서 O(1)
+
+한 정수의 시프트로 모든 가능한 합을 동시에 이동하며 목표 이하 비트만 유지합니다.
+
+[예제 입력](<예제_examples/18-비트마스크와비트집합_bitmask-bitset/input.txt>) · [예상 출력](<예제_examples/18-비트마스크와비트집합_bitmask-bitset/output.txt>) · [예제 실행 방법](<예제_examples/18-비트마스크와비트집합_bitmask-bitset/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

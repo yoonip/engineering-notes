@@ -97,6 +97,282 @@ C·C++에서는 합과 길이 곱의 자료형을 넓히고, Python에서는 재
 - 질문: lazy 태그가 남아 있으면 노드 합도 오래된 값입니까? 답: 자기 노드 합에는 반영된 상태이며, 아직 자식에 전달하지 않은 갱신을 태그로 보관합니다.
 - 질문: 희소 테이블은 왜 min 질의에서 두 구간이 겹쳐도 됩니까? 답: min(x,x)=x라서 같은 원소를 다시 포함해도 결과가 같기 때문입니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+같은 배열에 구간 덧셈을 적용하고 Fenwick과 지연 세그먼트 트리의 합을 나란히 비교합니다.
+
+이 예제에서 직접 구현하는 기법은 Fenwick 점 덧셈·접두합 · 지연 세그먼트 트리 구간 덧셈·합 · 같은 연산의 결과 비교입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+n,q(1≤n≤16,0≤q≤30), 초기 정수 n개(-1000..1000), q개 연산입니다. 0 l r d는 [l,r)에 d(-100..100)를 더하고 1 l r은 합을 질의합니다. 0≤l≤r≤n입니다.
+
+```text
+4 4
+2 1 3 4
+1 0 4
+0 0 4 3
+1 0 4
+1 1 3
+```
+
+합 질의마다 Fenwick합 지연트리합을 한 줄에 출력합니다.
+
+```text
+10 10
+22 22
+10 10
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 초기 [2,1,3,4], 두 합 10 | 같은 값으로 두 자료구조를 구축합니다. |
+| 2 | [0,4)에 +3, Fenwick은 네 점 갱신 | 기본 Fenwick의 점 덧셈을 반복한 비교 기준입니다. |
+| 3 | 지연 트리 루트 sum=22,lazy=3 | 전체 구간은 자손 방문을 미루고 루트 요약에 반영합니다. |
+| 4 | [1,3) 질의는 4+6=10 | 지연 태그를 필요한 자손으로 내린 결과도 Fenwick과 같습니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/26-구간질의와지연전파_range-queries/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+int n, values[16], bit[17], tree[64], lazy[64];  // 두 구조가 공유하는 작은 입력 상한
+void bit_add(int index, int delta) {  // Fenwick 한 점 덧셈
+    for (++index; index <= n; index += index & -index) bit[index] += delta;  // 해당 점의 상위 블록 갱신
+}  // Fenwick 점 갱신 끝
+int prefix(int end) {  // [0,end)의 Fenwick 합
+    int result = 0;  // 분리한 접두 블록의 합
+    for (; end > 0; end -= end & -end) result += bit[end];  // 마지막 블록부터 제거하며 누적
+    return result;  // 접두 합 반환
+}  // Fenwick 질의 끝
+void build(int node, int left, int right) {  // 지연 트리 초기 구축
+    if (right - left == 1) { tree[node] = values[left]; return; }  // 한 원소 구간의 합
+    int middle = (left + right) / 2;  // 자식 구간의 경계
+    build(node * 2, left, middle);  // 왼쪽 합 구축
+    build(node * 2 + 1, middle, right);  // 오른쪽 합 구축
+    tree[node] = tree[node * 2] + tree[node * 2 + 1];  // 자식 합을 부모에 반영
+}  // 초기 구축 끝
+void apply(int node, int length, int delta) {  // 한 구간 전체의 덧셈 반영
+    tree[node] += length * delta;  // 원소 수만큼 구간 합 증가
+    lazy[node] += delta;  // 자손에 보낼 미전달 덧셈 누적
+}  // 노드 전체 갱신 끝
+void push(int node, int left, int right) {  // 내려가기 전 조상 태그 전달
+    if (lazy[node] == 0 || right - left == 1) return;  // 전달할 값이나 자식이 없으면 종료
+    int middle = (left + right) / 2;  // 두 자식 길이의 기준
+    apply(node * 2, middle - left, lazy[node]);  // 왼쪽 자식의 합과 태그 갱신
+    apply(node * 2 + 1, right - middle, lazy[node]);  // 오른쪽 자식의 합과 태그 갱신
+    lazy[node] = 0;  // 부모의 전달 의무 해제
+}  // 태그 전달 끝
+void range_add(int node, int left, int right, int first, int last, int delta) {  // [first,last) 덧셈
+    if (last <= left || right <= first) return;  // 겹치지 않는 구간 제외
+    if (first <= left && right <= last) { apply(node, right - left, delta); return; }  // 완전히 포함된 구간 처리
+    push(node, left, right);  // 일부 자손 갱신 전 기존 태그 전달
+    int middle = (left + right) / 2;  // 자식 구간 경계
+    range_add(node * 2, left, middle, first, last, delta);  // 왼쪽 교차 부분 갱신
+    range_add(node * 2 + 1, middle, right, first, last, delta);  // 오른쪽 교차 부분 갱신
+    tree[node] = tree[node * 2] + tree[node * 2 + 1];  // 변경 뒤 부모 합 복구
+}  // 구간 덧셈 끝
+int range_sum(int node, int left, int right, int first, int last) {  // [first,last)의 지연 트리 합
+    if (last <= left || right <= first) return 0;  // 빈 교차의 합
+    if (first <= left && right <= last) return tree[node];  // 포함 구간의 요약 사용
+    push(node, left, right);  // 읽을 자손에 조상 갱신 반영
+    int middle = (left + right) / 2;  // 두 교차 구간의 경계
+    return range_sum(node * 2, left, middle, first, last) + range_sum(node * 2 + 1, middle, right, first, last);  // 서로소 부분 합 결합
+}  // 구간 합 끝
+int main(void) {  // 두 구현의 결과 비교 시작
+    int q;  // 연산 수
+    scanf("%d %d", &n, &q);  // 입력 크기
+    for (int i = 0; i < n; ++i) { scanf("%d", &values[i]); bit_add(i, values[i]); }  // 초기 값과 Fenwick 구축
+    build(1, 0, n);  // 같은 값으로 세그먼트 트리 구축
+    for (int i = 0; i < q; ++i) {  // 연산을 입력 순서대로 처리
+        int kind, left, right;  // 연산 종류와 반열린 구간
+        scanf("%d %d %d", &kind, &left, &right);  // 공통 연산 정보
+        if (kind == 0) {  // 구간 덧셈 연산
+            int delta;  // 더할 값
+            scanf("%d", &delta);  // 덧셈 크기
+            for (int p = left; p < right; ++p) bit_add(p, delta);  // 기본 Fenwick은 각 점 갱신
+            if (left < right) range_add(1, 0, n, left, right, delta);  // 지연 트리는 구간으로 갱신
+        } else {  // 같은 구간의 두 합 비교
+            int first = prefix(right) - prefix(left);  // Fenwick 접두 합의 차이
+            int second = range_sum(1, 0, n, left, right);  // 지연 트리의 구간 합
+            printf("%d %d\n", first, second);  // 일치해야 하는 두 결과
+        }  // 연산 분기 끝
+    }  // 전체 연산 끝
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/26-구간질의와지연전파_range-queries/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+int n, values[16], bit[17], tree[64], lazy[64];  // 두 구조가 공유하는 작은 입력 상한
+void bit_add(int index, int delta) {  // Fenwick 한 점 덧셈
+    for (++index; index <= n; index += index & -index) bit[index] += delta;  // 해당 점의 상위 블록 갱신
+}  // Fenwick 점 갱신 끝
+int prefix(int end) {  // [0,end)의 Fenwick 합
+    int result = 0;  // 분리한 접두 블록의 합
+    for (; end > 0; end -= end & -end) result += bit[end];  // 마지막 블록부터 제거하며 누적
+    return result;  // 접두 합 반환
+}  // Fenwick 질의 끝
+void build(int node, int left, int right) {  // 지연 트리 초기 구축
+    if (right - left == 1) { tree[node] = values[left]; return; }  // 한 원소 구간의 합
+    int middle = (left + right) / 2;  // 자식 구간의 경계
+    build(node * 2, left, middle);  // 왼쪽 합 구축
+    build(node * 2 + 1, middle, right);  // 오른쪽 합 구축
+    tree[node] = tree[node * 2] + tree[node * 2 + 1];  // 자식 합을 부모에 반영
+}  // 초기 구축 끝
+void apply(int node, int length, int delta) {  // 한 구간 전체의 덧셈 반영
+    tree[node] += length * delta;  // 원소 수만큼 구간 합 증가
+    lazy[node] += delta;  // 자손에 보낼 미전달 덧셈 누적
+}  // 노드 전체 갱신 끝
+void push(int node, int left, int right) {  // 내려가기 전 조상 태그 전달
+    if (lazy[node] == 0 || right - left == 1) return;  // 전달할 값이나 자식이 없으면 종료
+    int middle = (left + right) / 2;  // 두 자식 길이의 기준
+    apply(node * 2, middle - left, lazy[node]);  // 왼쪽 자식의 합과 태그 갱신
+    apply(node * 2 + 1, right - middle, lazy[node]);  // 오른쪽 자식의 합과 태그 갱신
+    lazy[node] = 0;  // 부모의 전달 의무 해제
+}  // 태그 전달 끝
+void range_add(int node, int left, int right, int first, int last, int delta) {  // [first,last) 덧셈
+    if (last <= left || right <= first) return;  // 겹치지 않는 구간 제외
+    if (first <= left && right <= last) { apply(node, right - left, delta); return; }  // 완전히 포함된 구간 처리
+    push(node, left, right);  // 일부 자손 갱신 전 기존 태그 전달
+    int middle = (left + right) / 2;  // 자식 구간 경계
+    range_add(node * 2, left, middle, first, last, delta);  // 왼쪽 교차 부분 갱신
+    range_add(node * 2 + 1, middle, right, first, last, delta);  // 오른쪽 교차 부분 갱신
+    tree[node] = tree[node * 2] + tree[node * 2 + 1];  // 변경 뒤 부모 합 복구
+}  // 구간 덧셈 끝
+int range_sum(int node, int left, int right, int first, int last) {  // [first,last)의 지연 트리 합
+    if (last <= left || right <= first) return 0;  // 빈 교차의 합
+    if (first <= left && right <= last) return tree[node];  // 포함 구간의 요약 사용
+    push(node, left, right);  // 읽을 자손에 조상 갱신 반영
+    int middle = (left + right) / 2;  // 두 교차 구간의 경계
+    return range_sum(node * 2, left, middle, first, last) + range_sum(node * 2 + 1, middle, right, first, last);  // 서로소 부분 합 결합
+}  // 구간 합 끝
+int main() {  // 두 구현의 결과 비교 시작
+    int q;  // 연산 수
+    std::cin >> n >> q;  // 입력 크기
+    for (int i = 0; i < n; ++i) { std::cin >> values[i]; bit_add(i, values[i]); }  // 초기 값과 Fenwick 구축
+    build(1, 0, n);  // 같은 값으로 세그먼트 트리 구축
+    for (int i = 0; i < q; ++i) {  // 연산을 입력 순서대로 처리
+        int kind, left, right;  // 연산 종류와 반열린 구간
+        std::cin >> kind >> left >> right;  // 공통 연산 정보
+        if (kind == 0) {  // 구간 덧셈 연산
+            int delta;  // 더할 값
+            std::cin >> delta;  // 덧셈 크기
+            for (int p = left; p < right; ++p) bit_add(p, delta);  // 기본 Fenwick은 각 점 갱신
+            if (left < right) range_add(1, 0, n, left, right, delta);  // 지연 트리는 구간으로 갱신
+        } else {  // 같은 구간의 두 합 비교
+            int first = prefix(right) - prefix(left);  // Fenwick 접두 합의 차이
+            int second = range_sum(1, 0, n, left, right);  // 지연 트리의 구간 합
+            std::cout << first << " " << second << "\n";  // 일치해야 하는 두 결과
+        }  // 연산 분기 끝
+    }  // 전체 연산 끝
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/26-구간질의와지연전파_range-queries/example.py>)
+
+```python
+import sys  # 전체 연산을 공백 단위로 읽기
+tokens = iter(map(int, sys.stdin.read().split()))  # 정수 토큰 순회
+n, q = next(tokens), next(tokens)  # 원소 수와 연산 수
+values = [next(tokens) for _ in range(n)]  # 두 자료구조의 같은 초기 값
+bit = [0] * (n + 1)  # Fenwick의 1기반 블록 합
+tree = [0] * (4 * n)  # 세그먼트 구간 합
+lazy = [0] * (4 * n)  # 자손으로 전달할 덧셈
+def bit_add(index, delta):  # Fenwick 한 점 덧셈
+    index += 1  # 내부 1기반 번호로 변환
+    while index <= n:  # 해당 점이 들어가는 상위 블록 순회
+        bit[index] += delta  # 블록 합 갱신
+        index += index & -index  # 다음 상위 블록
+def prefix(end):  # [0,end)의 접두 합
+    result = 0  # 누적 블록 합
+    while end:  # 겹치지 않는 블록을 뒤에서부터 합산
+        result += bit[end]  # 현재 블록 추가
+        end -= end & -end  # 처리한 블록 제거
+    return result  # Fenwick 접두 결과
+def build(node, left, right):  # 초기 구간 합 구축
+    if right - left == 1:  # 리프 원소 확인
+        tree[node] = values[left]  # 원소의 합 저장
+        return  # 리프 구축 종료
+    middle = (left + right) // 2  # 자식 경계
+    build(node * 2, left, middle)  # 왼쪽 구축
+    build(node * 2 + 1, middle, right)  # 오른쪽 구축
+    tree[node] = tree[node * 2] + tree[node * 2 + 1]  # 부모 합 결합
+def apply(node, length, delta):  # 전체 구간 갱신
+    tree[node] += length * delta  # 자기 합에는 즉시 반영
+    lazy[node] += delta  # 자손 전달은 미루기
+def push(node, left, right):  # 자손 방문 전 태그 전달
+    if not lazy[node] or right - left == 1:  # 전달 값이나 자식이 없는 상태
+        return  # 전달 생략
+    middle = (left + right) // 2  # 두 자식의 길이 계산
+    apply(node * 2, middle - left, lazy[node])  # 왼쪽 반영
+    apply(node * 2 + 1, right - middle, lazy[node])  # 오른쪽 반영
+    lazy[node] = 0  # 부모 태그 해제
+def range_add(node, left, right, first, last, delta):  # 반열린 구간 덧셈
+    if last <= left or right <= first:  # 교차가 없는 구간
+        return  # 갱신 제외
+    if first <= left and right <= last:  # 완전히 포함된 구간
+        apply(node, right - left, delta)  # 요약과 태그만 갱신
+        return  # 자손 방문 생략
+    push(node, left, right)  # 기존 조상 갱신 전달
+    middle = (left + right) // 2  # 분할 경계
+    range_add(node * 2, left, middle, first, last, delta)  # 왼쪽 갱신
+    range_add(node * 2 + 1, middle, right, first, last, delta)  # 오른쪽 갱신
+    tree[node] = tree[node * 2] + tree[node * 2 + 1]  # 부모 합 복구
+def range_sum(node, left, right, first, last):  # 반열린 구간 합
+    if last <= left or right <= first:  # 교차가 없는 구간
+        return 0  # 합의 항등원
+    if first <= left and right <= last:  # 완전히 포함된 요약
+        return tree[node]  # 현재 구간 합 사용
+    push(node, left, right)  # 읽을 자손에 갱신 전달
+    middle = (left + right) // 2  # 분할 경계
+    return range_sum(node * 2, left, middle, first, last) + range_sum(node * 2 + 1, middle, right, first, last)  # 부분 합 결합
+for i, value in enumerate(values):  # 초기 Fenwick 원소 반영
+    bit_add(i, value)  # 한 점씩 블록 합에 추가
+build(1, 0, n)  # 초기 지연 트리 구축
+for _ in range(q):  # 입력 순서의 연산 실행
+    kind, left, right = next(tokens), next(tokens), next(tokens)  # 연산과 구간
+    if kind == 0:  # 구간 덧셈
+        delta = next(tokens)  # 더할 값
+        for position in range(left, right):  # 비교용 Fenwick의 각 점 처리
+            bit_add(position, delta)  # 기본 점 덧셈 반복
+        if left < right:  # 빈 구간은 갱신 생략
+            range_add(1, 0, n, left, right, delta)  # 지연 태그 구간 갱신
+    else:  # 합 질의
+        print(prefix(right) - prefix(left), range_sum(1, 0, n, left, right))  # 같은 결과 비교
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 원소16개, Fenwick17개, 세그먼트 요약·태그 각64개의 고정 배열입니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: 구축 O(n log n); 덧셈 O((r-l)log n)+O(log n); 합 질의 O(log n)
+- 보조 공간: O(n)
+
+비교용 Fenwick은 구간 안의 점을 각각 갱신하며, 지연 트리는 구간 태그 한 개로 처리합니다.
+
+[예제 입력](<예제_examples/26-구간질의와지연전파_range-queries/input.txt>) · [예상 출력](<예제_examples/26-구간질의와지연전파_range-queries/output.txt>) · [예제 실행 방법](<예제_examples/26-구간질의와지연전파_range-queries/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

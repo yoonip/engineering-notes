@@ -121,6 +121,138 @@ Python `list`는 단일 연결 리스트가 아니라 동적 배열 계열이므
 연산 비용과 동적 배열의 분할 상환 설명은 MIT 강의 2를 참고했습니다.
 A·B·C·D 추적과 노드 번호 코드는 직접 구성했으며 주소별 실제 메모리 측정은 포함하지 않습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+값 배열과 다음 노드 번호 배열을 분리하여 이미 아는 노드 뒤에 상수 번의 연결 변경으로 삽입합니다.
+
+이 예제에서 직접 구현하는 기법은 배열 · 인덱스 기반 연결 리스트 · 중간 삽입입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N M(1≤N≤10,0≤M≤10,N+M≤20), N개 값(0~999), M줄의 after value입니다. i번째 삽입의 after는 0≤after<N+i인 기존 노드 번호이며 새 노드는 N+i입니다.
+
+```text
+3 1
+10 30 40
+0 20
+```
+
+머리 노드 0부터 연결된 값들을 공백으로 구분해 출력합니다.
+
+```text
+10 20 30 40
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 초기 next=[1,2,-1], 값=[10,30,40] | 입력 순서를 노드 번호 연결로 저장합니다. |
+| 2 | 새 node=3, value[3]=20 | 기존 노드 번호를 바꾸지 않고 새 자리를 사용합니다. |
+| 3 | next[3]=next[0]=1 | 먼저 기존 뒷부분 30으로 가는 연결을 보존합니다. |
+| 4 | next[0]=3, 순회 0→3→1→2 | 새 값이 10과30 사이에 들어갑니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/03-배열과연결리스트_arrays-linked-lists/example.c>)
+
+```c
+#include <stdio.h> // 값과 삽입 명령의 입출력
+int main(void) { // 실행 시작점
+    int n, m, value[20], next[20]; // 최대 20노드의 값과 다음 노드 번호
+    scanf("%d %d", &n, &m); // 초기 노드 수와 삽입 수 입력
+    for (int i = 0; i < n; ++i) { // 초기 노드들을 입력 순서대로 연결
+        scanf("%d", &value[i]); // 노드에 들어갈 값 읽기
+        next[i] = i + 1 < n ? i + 1 : -1; // 다음 노드 또는 끝 표시 지정
+    } // 초기 연결 완료
+    for (int i = 0; i < m; ++i) { // 알려진 노드 뒤에 차례로 삽입
+        int after, item, node = n + i; // 삽입 위치·값·새 노드 번호
+        scanf("%d %d", &after, &item); // 위치와 새 값 입력
+        value[node] = item; // 새 노드의 값 저장
+        next[node] = next[after]; // 기존 뒷부분을 새 노드가 먼저 가리키게 설정
+        next[after] = node; // 앞 노드를 새 노드에 연결
+    } // 모든 연결 변경 끝
+    int first = 1; // 출력 공백을 제어할 표시
+    for (int node = 0; node != -1; node = next[node]) { // 머리부터 다음 연결을 따라 순회
+        printf("%s%d", first ? "" : " ", value[node]); first = 0; // 순서대로 값을 출력하고 다음부터 공백 추가
+    } // 연결된 전체 순회 끝
+    printf("\n"); // 출력 줄 끝내기
+    return 0; // 정상 종료
+} // 인덱스 연결 리스트 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/03-배열과연결리스트_arrays-linked-lists/example.cpp>)
+
+```cpp
+#include <iostream> // 표준 입력과 출력
+#include <vector> // 노드별 값과 연결 번호 저장
+using namespace std; // 표준 이름 접두사 생략
+int main() { // 실행 시작점
+    int n, m; cin >> n >> m; // 초기 노드와 삽입 개수 읽기
+    vector<int> value(n + m), next(n + m, -1); // 필요한 전체 노드 수만큼 배열 준비
+    for (int i = 0; i < n; ++i) { // 초기 노드 연결
+        cin >> value[i]; // 초기 값 읽기
+        next[i] = i + 1 < n ? i + 1 : -1; // 다음 노드 또는 끝 표시 지정
+    } // 초기 연결 완료
+    for (int i = 0; i < m; ++i) { // 삽입 명령 처리
+        int after, item, node = n + i; cin >> after >> item; // 삽입 위치와 새 노드 번호 준비
+        value[node] = item; // 새 값 저장
+        next[node] = next[after]; // 옛 뒷부분의 연결 보존
+        next[after] = node; // 새 노드를 앞 노드 뒤에 삽입
+    } // 연결 변경 끝
+    bool first = true; // 첫 출력의 공백 생략 표시
+    for (int node = 0; node != -1; node = next[node]) { // 머리에서 연결을 따라 값 순회
+        cout << (first ? "" : " ") << value[node]; first = false; // 현재 값 출력
+    } // 전체 연결 순회 끝
+    cout << '\n'; // 출력 줄 끝내기
+    return 0; // 정상 종료
+} // 인덱스 연결 리스트 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/03-배열과연결리스트_arrays-linked-lists/example.py>)
+
+```python
+import sys # 정수 토큰 입력
+data = list(map(int, sys.stdin.buffer.read().split())) # 입력을 정수 목록으로 변환
+n, m = data[:2] # 초기 노드 수와 삽입 수
+values = data[2:2 + n] + [0] * m # 새 노드 자리까지 값 배열 확보
+next_node = list(range(1, n)) + [-1] + [-1] * m # 초기 순서와 끝 표시를 연결 배열로 저장
+for index in range(m): # 삽입 명령을 순서대로 처리
+    after, item = data[2 + n + 2 * index:4 + n + 2 * index] # 앞 노드와 삽입 값 읽기
+    node = n + index # 새 노드의 고정 번호
+    values[node] = item # 새 값 저장
+    next_node[node] = next_node[after] # 기존 뒷부분을 새 노드에 먼저 연결
+    next_node[after] = node # 앞 노드의 다음 위치를 새 노드로 변경
+result, node = [], 0 # 출력 목록과 머리 노드 준비
+while node != -1: # 끝 표시까지 다음 연결을 따라 이동
+    result.append(values[node]) # 현재 노드의 값을 결과에 추가
+    node = next_node[node] # 다음 노드로 이동
+print(*result) # 연결 순서의 값 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다. |
+| 저장과 연산 | 상한 20의 고정 배열 두 개를 사용합니다. | vector 두 개를 N+M 길이로 만듭니다. | 값과 연결을 두 list에 저장합니다. |
+| 자료형과 범위 | 노드 번호는 0~19이고 값은 0~999라 int 범위 안입니다. | 노드 번호는 0~19이고 값은 0~999라 int 범위 안입니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: 초기화 O(N), 삽입 O(M), 최종 순회 O(N+M)입니다.
+- 보조 공간: 노드 수에 비례하는 O(N+M)입니다.
+
+삽입 위치를 이미 알기 때문에 검색 없이 연결 두 개만 바꿉니다.
+
+[예제 입력](<예제_examples/03-배열과연결리스트_arrays-linked-lists/input.txt>) · [예상 출력](<예제_examples/03-배열과연결리스트_arrays-linked-lists/output.txt>) · [예제 실행 방법](<예제_examples/03-배열과연결리스트_arrays-linked-lists/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

@@ -1,0 +1,78 @@
+{
+  "chapter": 4,
+  "title": "콤마와 부호를 읽는 정수 파서",
+  "summary": "한 줄을 문자 위치로 순회하며 공백·부호·숫자·구분자를 해석해 정수의 개수와 합을 구합니다.",
+  "input_format": "길이 1~100인 ASCII 한 줄입니다. 콤마로 구분한 정수 1~10개이며 각 값은 −1000~1000입니다. 부호 +/−와 숫자 앞뒤의 ASCII 공백을 허용하고 마지막 콤마와 잘못된 토큰은 없습니다.",
+  "output_format": "정수 개수와 정수 합을 한 줄에 출력합니다.",
+  "input": "12,-3,7\n",
+  "expected_stdout": "3 16\n",
+  "trace": [
+    {
+      "step": "1",
+      "state": "position=0,count=0,total=0",
+      "explanation": "첫 정수의 시작에서 스캔을 시작합니다."
+    },
+    {
+      "step": "2",
+      "state": "12 해석 뒤 position=2,count=1,total=12",
+      "explanation": "십진수 자리값을 누적하고 콤마를 만납니다."
+    },
+    {
+      "step": "3",
+      "state": "−3 해석 뒤 position=5,count=2,total=9",
+      "explanation": "음수 부호를 현재 정수에만 적용합니다."
+    },
+    {
+      "step": "4",
+      "state": "7 해석 뒤 position=7,count=3,total=16",
+      "explanation": "끝 표시를 만나 결과를 확정합니다."
+    }
+  ],
+  "language_differences": [
+    {
+      "point": "입력",
+      "c": "fgets로 공백과 부호를 포함한 한 줄을 읽습니다.",
+      "cpp": "getline으로 한 줄을 읽고 검사할 끝 표시를 추가합니다.",
+      "python": "readline으로 한 줄을 읽고 줄바꿈을 제거한 뒤 끝 표시를 추가합니다."
+    },
+    {
+      "point": "저장과 연산",
+      "c": "fgets로 읽은 char 배열에서 끝 표시를 검사합니다.",
+      "cpp": "getline의 string 끝에 검사할 끝 표시를 붙입니다.",
+      "python": "한 줄 문자열과 ord로 숫자의 자리값을 계산합니다."
+    },
+    {
+      "point": "자료형과 범위",
+      "c": "int 범위 안의 값만 사용하며 합은 long long으로 누적합니다.",
+      "cpp": "int 범위 안의 값만 사용하며 합은 long long으로 누적합니다.",
+      "python": "int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다."
+    }
+  ],
+  "complexity": {
+    "time": "줄 길이 L에 대해 O(L)입니다.",
+    "space": "입력 줄 보관에 O(L), 파싱 상태는 O(1)입니다.",
+    "reason": "위치가 뒤로 가지 않고 각 문자를 상수 번 검사합니다."
+  },
+  "covered_techniques": [
+    "문자열 스캔",
+    "토큰 파싱",
+    "부호와 자리값"
+  ],
+  "cases": [
+    {
+      "name": "기본",
+      "stdin": "12,-3,7\n",
+      "stdout": "3 16\n"
+    },
+    {
+      "name": "정수 0 하나",
+      "stdin": "0\n",
+      "stdout": "1 0\n"
+    },
+    {
+      "name": "공백과 양수 부호",
+      "stdin": " -5, +2, 10 \n",
+      "stdout": "3 7\n"
+    }
+  ]
+}

@@ -115,6 +115,141 @@ Python에서 `prefix[1:]` 같은 슬라이스를 반복해 만들면 추가 복�
 공식 자료는 누적 연산과 차분·접두 합의 개념을 확인하는 근거입니다.
 숫자 배열, 구간 추적, 항등식 증명과 접두 최댓값 반례는 직접 구성했습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+여러 반열린 구간에 값을 더하는 작업을 차분의 두 경계에 기록하고 한 번의 복원으로 최종 배열과 접두 합을 만듭니다.
+
+이 예제에서 직접 구현하는 기법은 반열린 구간 · 차분 배열 · 누적합입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+N Q(1≤N≤10,0≤Q≤10), N개 값(−100~100), Q개의 l r delta(0≤l≤r≤N,−100≤delta≤100), 마지막 합 질의 L R(0≤L≤R≤N)입니다.
+
+```text
+4 1
+2 -1 3 4
+1 4 5
+1 4
+```
+
+첫 줄은 갱신 후 배열, 둘째 줄은 [L,R)의 합입니다.
+
+```text
+2 4 8 9
+21
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 갱신 전 A=[2,-1,3,4], diff=[0,0,0,0,0] | 차분은 아직 어느 위치에도 증가량이 없음을 나타냅니다. |
+| 2 | 갱신[1,4)에5: diff=[0,5,0,0,-5] | 1에서 증가량을 켜고 배열 끝4에서 취소합니다. |
+| 3 | 누적 증가량=[0,5,5,5], A=[2,4,8,9] | 왼쪽부터 차분을 누적해 겹친 증가량을 복원합니다. |
+| 4 | P=[0,2,6,14,23], P[4]-P[1]=23-2=21 | 최종 배열의 접두 합으로 요청 구간을 계산합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/09-누적합과차분_prefix-difference/example.c>)
+
+```c
+#include <stdio.h> // 정수 입력과 합 출력
+int main(void) { // 실행 시작점
+    int n, q, left, right; // 배열 크기와 갱신 수 및 최종 질의 경계
+    long long a[10], diff[11] = {0}, prefix[11] = {0}, running = 0; // 값·차분·접두 합과 누적 증가량
+    scanf("%d %d", &n, &q); // 원소 수와 구간 갱신 수 읽기
+    for (int i = 0; i < n; ++i) scanf("%lld", &a[i]); // 원래 값 입력
+    for (int i = 0; i < q; ++i) { // 모든 반열린 구간 갱신 처리
+        int l, r; long long delta; // 갱신 시작·끝과 더할 값
+        scanf("%d %d %lld", &l, &r, &delta); // 이번 갱신 읽기
+        diff[l] += delta; // 구간 시작에서 증가량 켜기
+        diff[r] -= delta; // 구간 끝에서 같은 증가량 끄기
+    } // 차분 기록 끝
+    scanf("%d %d", &left, &right); // 최종 합 질의 경계 읽기
+    for (int i = 0; i < n; ++i) { // 차분을 복원하며 최종 값과 접두 합 생성
+        running += diff[i]; // 현재 위치에 겹치는 증가량 누적
+        a[i] += running; // 원래 값에 전체 증가량 반영
+        prefix[i + 1] = prefix[i] + a[i]; // 최종 배열의 접두 합 누적
+        printf("%s%lld", i ? " " : "", a[i]); // 복원한 값을 왼쪽부터 출력
+    } // 최종 배열 복원 끝
+    printf("\n%lld\n", prefix[right] - prefix[left]); // 배열 줄 다음에 최종 구간 합 출력
+    return 0; // 정상 종료
+} // 차분과 누적합 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/09-누적합과차분_prefix-difference/example.cpp>)
+
+```cpp
+#include <iostream> // 표준 입력과 출력
+#include <vector> // 길이에 맞춘 값과 차분 배열
+using namespace std; // 표준 이름의 접두사 생략
+int main() { // 실행 시작점
+    int n, q; cin >> n >> q; // 배열 크기와 갱신 개수 읽기
+    vector<long long> a(n), diff(n + 1, 0), prefix(n + 1, 0); // 값과 끝 경계를 포함한 두 보조 배열
+    for (long long& value : a) cin >> value; // 원래 값 입력
+    for (int i = 0; i < q; ++i) { // 구간 갱신을 차분에만 기록
+        int l, r; long long delta; cin >> l >> r >> delta; // 반열린 경계와 증가량 읽기
+        diff[l] += delta; // 시작 경계에서 증가량 추가
+        diff[r] -= delta; // 끝 경계에서 증가량 취소
+    } // 모든 갱신 기록 끝
+    int left, right; cin >> left >> right; // 최종 합 질의 경계
+    long long running = 0; // 현재 위치에 적용할 누적 증가량
+    for (int i = 0; i < n; ++i) { // 최종 배열과 접두 합 동시 복원
+        running += diff[i]; // 새 경계의 증가·취소 반영
+        a[i] += running; // 현재 원소의 최종 값 계산
+        prefix[i + 1] = prefix[i] + a[i]; // 최종 배열의 접두 합 갱신
+        cout << (i ? " " : "") << a[i]; // 복원한 원소 출력
+    } // 한 번의 복원 순회 끝
+    cout << '\n' << prefix[right] - prefix[left] << '\n'; // 구간 합을 별도 줄에 출력
+    return 0; // 정상 종료
+} // 차분과 누적합 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/09-누적합과차분_prefix-difference/example.py>)
+
+```python
+import sys # 정수 토큰 입력
+tokens = iter(map(int, sys.stdin.buffer.read().split())) # 입력을 차례로 읽을 반복자
+n, q = next(tokens), next(tokens) # 배열 크기와 갱신 개수
+values = [next(tokens) for _ in range(n)] # 원래 값 저장
+diff, prefix = [0] * (n + 1), [0] * (n + 1) # 끝 경계까지 포함한 차분과 접두 합
+for _ in range(q): # 각 구간 갱신을 두 경계에 기록
+    left, right, delta = next(tokens), next(tokens), next(tokens) # 반열린 구간과 증가량
+    diff[left] += delta # 시작 위치부터 증가량 적용
+    diff[right] -= delta # 끝 위치부터 같은 증가량 취소
+left, right = next(tokens), next(tokens) # 최종 구간 합의 경계
+running = 0 # 현재 위치에 겹치는 증가량
+for index in range(n): # 차분 복원과 접두 합 생성
+    running += diff[index] # 새 경계의 증가·취소 누적
+    values[index] += running # 현재 원소의 최종 값 계산
+    prefix[index + 1] = prefix[index] + values[index] # 접두 합 한 칸 확장
+print(*values) # 갱신이 끝난 배열 출력
+print(prefix[right] - prefix[left]) # 두 접두 합 차이로 최종 구간 합 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | scanf로 공백으로 구분된 정수를 읽습니다. | cin으로 공백으로 구분된 정수를 읽습니다. | buffer.read().split()으로 입력 토큰을 한 번에 읽고 정수로 해석합니다. |
+| 저장과 연산 | long long 고정 배열의 마지막 칸도 확보해 diff[N]의 취소를 기록합니다. | vector&lt;long long&gt;을 N+1칸 만들어 끝 경계를 포함합니다. | 정수 리스트를 N+1칸 만들고 입력 반복자로 갱신을 읽습니다. |
+| 자료형과 범위 | int 범위 안의 값만 사용하며 합은 long long으로 누적합니다. | int 범위 안의 값만 사용하며 합은 long long으로 누적합니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(N+Q)입니다.
+- 보조 공간: 차분·접두 합·배열에 O(N)입니다. Python의 일괄 입력 토큰 저장에는 O(N+Q)가 필요합니다.
+
+각 갱신은 두 칸만 바꾸고 전체 배열은 한 번 복원합니다.
+
+[예제 입력](<예제_examples/09-누적합과차분_prefix-difference/input.txt>) · [예상 출력](<예제_examples/09-누적합과차분_prefix-difference/output.txt>) · [예제 실행 방법](<예제_examples/09-누적합과차분_prefix-difference/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

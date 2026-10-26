@@ -60,6 +60,209 @@ C는 대표·크기를 배열로 관리합니다. C++도 간단한 DSU를 직접
 
 복습: 이미 같은 DSU 집합인 두 정점의 간선을 추가하면 왜 제외하는지 설명합니다. 답은 기존 경로와 새 간선이 사이클을 이루고, 연결에 불필요한 간선을 추가하기 때문입니다. 그 간선이 음수인 경우에도 신장 트리라는 조건은 사이클을 허용하지 않습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+비용순 간선을 보면서 DSU 대표가 다른 두 요소만 합칩니다. 전체를 연결할 수 없는 경우도 따로 출력합니다.
+
+이 예제에서 직접 구현하는 기법은 Kruskal · 경로 압축 DSU · 크기 기준 병합 · 연결 불가 판정입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+V E 뒤에 E개의 u v w가 주어집니다. 1≤V≤8, 0≤E≤32, 0≤u,v<V, -100≤w≤100입니다. 무방향 간선이며 평행 간선을 허용합니다.
+
+```text
+4 5
+0 1 1
+1 2 2
+0 2 3
+2 3 4
+1 3 5
+```
+
+최소 신장 트리 비용을 출력합니다. 연결되지 않으면 DISCONNECTED를 출력합니다.
+
+```text
+7
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | parent=[0,1,2,3], selected=0 | 각 정점에서 독립 집합으로 시작합니다. |
+| 2 | 간선(0,1,1): total=1, selected=1 | 다른 두 집합을 가장 싼 간선으로 합칩니다. |
+| 3 | 간선(1,2,2) 선택 뒤 (0,2,3) 제외 | 0과 2가 같은 집합이므로 새 사이클을 만들지 않습니다. |
+| 4 | 간선(2,3,4): selected=3, total=7 | V-1개 간선을 선택하여 전체 연결을 확인합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/22-최소신장트리와서로소집합_mst-dsu/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
+#include <stdlib.h>  // qsort와 정수 절댓값 함수
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    printf("%d", value);  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    fputs(text, stdout);  // 문자열을 표준 출력에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+typedef struct { int u, v, weight; } Edge;  // 양끝과 비용을 묶은 간선 자료형
+static int parent[8], sizes[8];  // DSU 대표 연결과 집합 크기
+static int find_root(int node) {  // 경로를 줄이며 현재 대표 찾기
+    while (parent[node] != node) {  // 자기 자신이 대표가 될 때까지 이동
+        parent[node] = parent[parent[node]];  // 한 단계 위 조상으로 경로 압축
+        node = parent[node];  // 짧아진 부모 방향으로 이동
+    }  // 대표 탐색 끝
+    return node;  // 집합을 식별하는 대표
+}  // find 함수 끝
+static int compare_edges(const void *first, const void *second) {  // qsort용 비용 비교
+    const Edge *a = (const Edge *)first, *b = (const Edge *)second;  // 전달받은 원소를 간선으로 해석
+    return (a->weight > b->weight) - (a->weight < b->weight);  // 뺄셈 오버플로 없이 비교 부호 반환
+}  // 간선 비교 함수 끝
+int main(void) {  // Kruskal 최소 신장 트리 계산
+    int n = read_int(), m = read_int();  // 정점 수와 간선 수
+    Edge edges[32];  // 입력 상한만큼 간선 보관
+    for (int i = 0; i < m; ++i) {  // 간선 목록 입력
+        edges[i].u = read_int(); edges[i].v = read_int(); edges[i].weight = read_int();  // 양끝과 비용 저장
+    }  // 간선 입력 끝
+    qsort(edges, m, sizeof(Edge), compare_edges);  // 작은 비용부터 간선 검사
+    for (int i = 0; i < n; ++i) { parent[i] = i; sizes[i] = 1; }  // 정점마다 독립 집합 생성
+    int selected = 0, total = 0;  // 선택 간선 수와 누적 비용
+    for (int i = 0; i < m; ++i) {  // 정렬한 간선을 한 번씩 확인
+        int a = find_root(edges[i].u), b = find_root(edges[i].v);  // 두 끝의 현재 소속
+        if (a == b) continue;  // 사이클을 만드는 간선 제외
+        if (sizes[a] < sizes[b]) { int swap = a; a = b; b = swap; }  // 작은 집합을 큰 집합에 붙이기
+        parent[b] = a; sizes[a] += sizes[b];  // 두 연결 요소 병합
+        total += edges[i].weight; ++selected;  // 선택한 간선 비용과 개수 반영
+    }  // 간선 선택 끝
+    if (selected == n - 1) { write_number(total); write_text("\n"); }  // 전체 연결이면 MST 비용
+    else write_text("DISCONNECTED\n");  // 전체 신장 트리가 없는 상태
+    return 0;  // 정상 종료
+}  // Kruskal 예제 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/22-최소신장트리와서로소집합_mst-dsu/example.cpp>)
+
+```cpp
+#include <iostream>  // cin과 cout으로 표준 입력·출력 처리
+#include <cstdlib>  // qsort와 정수 절댓값 함수
+using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
+static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
+    int value = 0;  // 입력값을 받을 정수
+    cin >> value;  // 스트림에서 정수 읽기
+    return value;  // 읽은 값 전달
+}  // 정수 입력 함수 끝
+static void write_number(int value) {  // 정수 한 개를 출력하는 공통 함수
+    cout << value;  // 불필요한 공백 없이 정수 출력
+}  // 정수 출력 함수 끝
+static void write_text(const char *text) {  // 구분자나 결과 문구 출력
+    cout << text;  // 문자열을 스트림에 그대로 쓰기
+}  // 문자열 출력 함수 끝
+
+
+typedef struct { int u, v, weight; } Edge;  // 양끝과 비용을 묶은 간선 자료형
+static int parent[8], sizes[8];  // DSU 대표 연결과 집합 크기
+static int find_root(int node) {  // 경로를 줄이며 현재 대표 찾기
+    while (parent[node] != node) {  // 자기 자신이 대표가 될 때까지 이동
+        parent[node] = parent[parent[node]];  // 한 단계 위 조상으로 경로 압축
+        node = parent[node];  // 짧아진 부모 방향으로 이동
+    }  // 대표 탐색 끝
+    return node;  // 집합을 식별하는 대표
+}  // find 함수 끝
+static int compare_edges(const void *first, const void *second) {  // qsort용 비용 비교
+    const Edge *a = (const Edge *)first, *b = (const Edge *)second;  // 전달받은 원소를 간선으로 해석
+    return (a->weight > b->weight) - (a->weight < b->weight);  // 뺄셈 오버플로 없이 비교 부호 반환
+}  // 간선 비교 함수 끝
+int main(void) {  // Kruskal 최소 신장 트리 계산
+    int n = read_int(), m = read_int();  // 정점 수와 간선 수
+    Edge edges[32];  // 입력 상한만큼 간선 보관
+    for (int i = 0; i < m; ++i) {  // 간선 목록 입력
+        edges[i].u = read_int(); edges[i].v = read_int(); edges[i].weight = read_int();  // 양끝과 비용 저장
+    }  // 간선 입력 끝
+    qsort(edges, m, sizeof(Edge), compare_edges);  // 작은 비용부터 간선 검사
+    for (int i = 0; i < n; ++i) { parent[i] = i; sizes[i] = 1; }  // 정점마다 독립 집합 생성
+    int selected = 0, total = 0;  // 선택 간선 수와 누적 비용
+    for (int i = 0; i < m; ++i) {  // 정렬한 간선을 한 번씩 확인
+        int a = find_root(edges[i].u), b = find_root(edges[i].v);  // 두 끝의 현재 소속
+        if (a == b) continue;  // 사이클을 만드는 간선 제외
+        if (sizes[a] < sizes[b]) { int swap = a; a = b; b = swap; }  // 작은 집합을 큰 집합에 붙이기
+        parent[b] = a; sizes[a] += sizes[b];  // 두 연결 요소 병합
+        total += edges[i].weight; ++selected;  // 선택한 간선 비용과 개수 반영
+    }  // 간선 선택 끝
+    if (selected == n - 1) { write_number(total); write_text("\n"); }  // 전체 연결이면 MST 비용
+    else write_text("DISCONNECTED\n");  // 전체 신장 트리가 없는 상태
+    return 0;  // 정상 종료
+}  // Kruskal 예제 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/22-최소신장트리와서로소집합_mst-dsu/example.py>)
+
+```python
+import sys  # 표준 입력 전체를 토큰으로 읽기
+
+def main():  # 입력 한 건을 계산하고 결과 출력
+    tokens = iter(sys.stdin.read().split())  # 공백과 줄바꿈을 같은 구분자로 처리
+    n, m = int(next(tokens)), int(next(tokens))  # 정점 수와 간선 수
+    edges = []  # 비용순으로 볼 간선 목록
+    for _ in range(m):  # 무방향 간선 입력
+        a, b, weight = int(next(tokens)), int(next(tokens)), int(next(tokens))  # 양끝과 비용
+        edges.append((weight, a, b))  # 비용을 첫 정렬 키로 저장
+    edges.sort()  # 작은 비용부터 검사
+    parent = list(range(n))  # 초기 대표는 각 정점 자신
+    sizes = [1] * n  # 초기 집합 크기
+    def find_root(node):  # 현재 DSU 대표 찾기
+        while parent[node] != node:  # 대표까지 부모를 따라 이동
+            parent[node] = parent[parent[node]]  # 경로를 한 단계씩 줄이기
+            node = parent[node]  # 짧아진 부모로 이동
+        return node  # 현재 대표 반환
+    selected = total = 0  # 선택 간선 수와 비용 합
+    for weight, u, v in edges:  # 비용순 간선 확인
+        a, b = find_root(u), find_root(v)  # 두 정점의 소속 조회
+        if a == b:  # 이미 연결된 두 정점
+            continue  # 사이클 간선 제외
+        if sizes[a] < sizes[b]:  # 크기 기준 합치기 준비
+            a, b = b, a  # 큰 집합을 앞에 두기
+        parent[b] = a  # 작은 집합을 큰 대표에 연결
+        sizes[a] += sizes[b]  # 새 집합 크기 갱신
+        selected += 1  # 연결에 쓴 간선 수
+        total += weight  # 해당 간선 비용 합산
+    print(total if selected == n - 1 else "DISCONNECTED")  # 전체 연결 여부에 맞는 결과
+
+if __name__ == "__main__":  # 직접 실행할 때만 예제 시작
+    main()  # 표준 입력 한 건 처리
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력과 출력 | scanf와 fputs를 감싼 함수를 사용합니다. | cin과 cout을 감싼 함수를 사용합니다. | 입력을 split으로 나누고 print로 출력합니다. |
+| 작업 배열 | 입력 형식에 명시한 작은 상한의 고정 배열을 사용합니다. | 절차 비교를 위해 C와 같은 고정 배열을 사용합니다. 가변 길이 배열이나 bits 헤더는 사용하지 않습니다. | 입력 크기에 맞춘 리스트를 생성합니다. |
+| 정수와 상태 | 예제의 값 범위가 int 안에 들어가도록 상한을 제한합니다. | 같은 정수 범위와 상태 전이를 사용합니다. | int는 가변 정밀도이지만 이 예제는 작은 정수만 사용합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(E log E + V + E α(V))
+- 보조 공간: O(V+E)
+
+간선을 정렬하고 경로 압축·크기 기준 DSU 연산을 수행합니다.
+
+[예제 입력](<예제_examples/22-최소신장트리와서로소집합_mst-dsu/input.txt>) · [예상 출력](<예제_examples/22-최소신장트리와서로소집합_mst-dsu/output.txt>) · [예제 실행 방법](<예제_examples/22-최소신장트리와서로소집합_mst-dsu/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

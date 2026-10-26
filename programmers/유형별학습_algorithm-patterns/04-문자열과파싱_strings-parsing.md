@@ -115,6 +115,144 @@ Python `str`는 Unicode 문자 코드 기반 시퀀스이며 바이트열 `bytes
 Python 공식 문서는 문자열·정규식·JSON API의 의미를 확인하는 근거입니다.
 필드 문법, 상태 추적, 파서와 비용 분석은 직접 구성했으며 일반 CSV 파서의 완전한 구현이 아닙니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+한 줄을 문자 위치로 순회하며 공백·부호·숫자·구분자를 해석해 정수의 개수와 합을 구합니다.
+
+이 예제에서 직접 구현하는 기법은 문자열 스캔 · 토큰 파싱 · 부호와 자리값입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+길이 1~100인 ASCII 한 줄입니다. 콤마로 구분한 정수 1~10개이며 각 값은 −1000~1000입니다. 부호 +/−와 숫자 앞뒤의 ASCII 공백을 허용하고 마지막 콤마와 잘못된 토큰은 없습니다.
+
+```text
+12,-3,7
+```
+
+정수 개수와 정수 합을 한 줄에 출력합니다.
+
+```text
+3 16
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | position=0,count=0,total=0 | 첫 정수의 시작에서 스캔을 시작합니다. |
+| 2 | 12 해석 뒤 position=2,count=1,total=12 | 십진수 자리값을 누적하고 콤마를 만납니다. |
+| 3 | −3 해석 뒤 position=5,count=2,total=9 | 음수 부호를 현재 정수에만 적용합니다. |
+| 4 | 7 해석 뒤 position=7,count=3,total=16 | 끝 표시를 만나 결과를 확정합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/04-문자열과파싱_strings-parsing/example.c>)
+
+```c
+#include <stdio.h> // 한 줄 입력과 결과 출력
+int main(void) { // 실행 시작점
+    char text[102]; // 최대 100문자와 줄바꿈·끝 표시 공간
+    fgets(text, sizeof(text), stdin); // 콤마가 포함된 입력 줄 읽기
+    int position = 0, count = 0; long long total = 0; // 스캔 위치·정수 수·합 초기화
+    while (1) { // 정수 토큰 하나씩 해석
+        while (text[position] == ' ') ++position; // 토큰 앞의 ASCII 공백 건너뛰기
+        int sign = 1, number = 0; // 기본 양수 부호와 현재 정수 초기화
+        if (text[position] == '+' || text[position] == '-') { // 선택적 부호 검사
+            if (text[position] == '-') sign = -1; // 음수 부호 반영
+            ++position; // 부호 다음 숫자로 이동
+        } // 부호 처리 끝
+        while ('0' <= text[position] && text[position] <= '9') { // 연속된 십진수 숫자 읽기
+            number = number * 10 + text[position] - '0'; ++position; // 자리값을 누적하고 다음 문자로 이동
+        } // 정수 한 개 해석 끝
+        total += sign * number; ++count; // 정수의 합과 개수 갱신
+        while (text[position] == ' ') ++position; // 정수 뒤 공백 건너뛰기
+        if (text[position] != ',') break; // 콤마가 없으면 마지막 토큰 처리 완료
+        ++position; // 구분자 다음 토큰으로 이동
+    } // 전체 줄 파싱 끝
+    printf("%d %lld\n", count, total); // 읽은 정수 수와 합 출력
+    return 0; // 정상 종료
+} // 제한된 콤마 문법 파싱 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/04-문자열과파싱_strings-parsing/example.cpp>)
+
+```cpp
+#include <iostream> // 표준 입출력
+#include <string> // 줄 전체 문자열 저장
+using namespace std; // 표준 이름 접두사 생략
+int main() { // 실행 시작점
+    string text; getline(cin, text); // 공백을 포함한 한 줄 읽기
+    text.push_back('\0'); // 마지막 숫자 뒤 검사에 쓸 끝 표시 추가
+    int position = 0, count = 0; long long total = 0; // 위치·개수·합 초기화
+    while (true) { // 정수 토큰을 하나씩 처리
+        while (text[position] == ' ') ++position; // 앞 공백 건너뛰기
+        int sign = 1, number = 0; // 부호와 현재 값 준비
+        if (text[position] == '+' || text[position] == '-') { // 선택적 부호 확인
+            if (text[position] == '-') sign = -1; // 음수 부호 저장
+            ++position; // 숫자가 시작되는 위치로 이동
+        } // 부호 처리 끝
+        while ('0' <= text[position] && text[position] <= '9') { // 연속된 숫자 순회
+            number = number * 10 + text[position] - '0'; ++position; // 자리값을 누적하며 위치 전진
+        } // 한 정수의 숫자 읽기 끝
+        total += sign * number; ++count; // 합과 토큰 개수 갱신
+        while (text[position] == ' ') ++position; // 뒤 공백 건너뛰기
+        if (text[position] != ',') break; // 구분자가 없으면 줄 해석 종료
+        ++position; // 다음 정수로 이동
+    } // 모든 토큰 처리 끝
+    cout << count << ' ' << total << '\n'; // 개수와 합 출력
+    return 0; // 정상 종료
+} // 제한된 콤마 문법 파싱 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/04-문자열과파싱_strings-parsing/example.py>)
+
+```python
+import sys # 한 줄 문자열 입력
+text = sys.stdin.readline().rstrip('\n') + '\0' # 줄바꿈을 제거하고 검사할 끝 표시 추가
+position = count = total = 0 # 스캔 위치·정수 개수·합 초기화
+while True: # 토큰이 끝날 때까지 정수 하나씩 해석
+    while text[position] == ' ': # 토큰 앞 공백 검사
+        position += 1 # 공백 다음 위치로 이동
+    sign, number = 1, 0 # 기본 양수 부호와 현재 정수 초기화
+    if text[position] in '+-': # 선택적 부호 검사
+        sign = -1 if text[position] == '-' else 1 # 문자에 맞는 부호 저장
+        position += 1 # 부호 뒤 숫자로 이동
+    while '0' <= text[position] <= '9': # 연속된 십진수 숫자 읽기
+        number = number * 10 + ord(text[position]) - ord('0') # 기존 자리값에 새 숫자 추가
+        position += 1 # 다음 문자로 이동
+    total += sign * number # 해석한 정수를 전체 합에 반영
+    count += 1 # 읽은 정수 개수 증가
+    while text[position] == ' ': # 토큰 뒤 공백 검사
+        position += 1 # 다음 구분자 위치로 이동
+    if text[position] != ',': # 구분자가 없으면 마지막 정수인지 확인
+        break # 전체 줄 해석 종료
+    position += 1 # 콤마 뒤 다음 정수로 이동
+print(count, total) # 정수 개수와 합 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 입력 | fgets로 공백과 부호를 포함한 한 줄을 읽습니다. | getline으로 한 줄을 읽고 검사할 끝 표시를 추가합니다. | readline으로 한 줄을 읽고 줄바꿈을 제거한 뒤 끝 표시를 추가합니다. |
+| 저장과 연산 | fgets로 읽은 char 배열에서 끝 표시를 검사합니다. | getline의 string 끝에 검사할 끝 표시를 붙입니다. | 한 줄 문자열과 ord로 숫자의 자리값을 계산합니다. |
+| 자료형과 범위 | int 범위 안의 값만 사용하며 합은 long long으로 누적합니다. | int 범위 안의 값만 사용하며 합은 long long으로 누적합니다. | int로 정수를 저장합니다. 허용 입력 범위는 C·C++ 예제와 같습니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: 줄 길이 L에 대해 O(L)입니다.
+- 보조 공간: 입력 줄 보관에 O(L), 파싱 상태는 O(1)입니다.
+
+위치가 뒤로 가지 않고 각 문자를 상수 번 검사합니다.
+
+[예제 입력](<예제_examples/04-문자열과파싱_strings-parsing/input.txt>) · [예상 출력](<예제_examples/04-문자열과파싱_strings-parsing/output.txt>) · [예제 실행 방법](<예제_examples/04-문자열과파싱_strings-parsing/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

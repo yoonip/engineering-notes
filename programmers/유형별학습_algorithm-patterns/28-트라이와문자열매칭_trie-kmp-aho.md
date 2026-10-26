@@ -95,6 +95,210 @@ Python 문자열도 사람이 보는 결합 문자 단위와 코드 포인트가
 - 질문: KMP는 왜 텍스트 위치를 뒤로 옮기지 않습니까? 답: 이미 확인한 접미사와 패턴 접두사의 일치를 실패 표가 보존하기 때문입니다.
 - 질문: 아호 코라식이 한 글자에서 두 패턴을 찾을 수 있습니까? 답: 현재 종료 노드와 실패·출력 링크의 종료 노드가 여러 패턴을 나타낼 수 있습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+트라이에서 단어·접두사를 구분하고 KMP의 실패 복구로 겹치는 패턴 발생을 셉니다.
+
+이 예제에서 직접 구현하는 기법은 고정 알파벳 트라이 · 단어 종료 표시 · KMP 접두사 함수 · 겹치는 발생 복구입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+n(0≤n≤10), 다음 n개 사전 단어, 질의 단어, 텍스트, 패턴 순서의 공백 토큰입니다. 소문자 a..z만 허용하며 단어·질의·패턴 길이1..20, 텍스트 길이1..100입니다.
+
+```text
+3
+a
+ab
+ac
+ab
+abababaca
+ababaca
+```
+
+WORD YES/NO, PREFIX YES/NO, MATCHES 발생수를 각각 한 줄에 출력합니다.
+
+```text
+WORD YES
+PREFIX YES
+MATCHES 1
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 사전 a,ab,ac의 a경로 공유 | 단어 a는 자식이 있어도 종료 표시를 유지합니다. |
+| 2 | 질의 ab: 경로와 종료 표시 모두 존재 | WORD와 PREFIX가 모두 YES입니다. |
+| 3 | ababaca의 pi=[0,0,1,2,3,0,1] | 불일치 때 남길 접두·접미 길이를 계산합니다. |
+| 4 | abababaca의 위치5에서 q=5→3, 이후 위치2의 일치 완성 | 텍스트를 되돌리지 않고 겹친 후보를 이어 가 MATCHES 1입니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/28-트라이와문자열매칭_trie-kmp-aho/example.c>)
+
+```c
+#include <stdio.h>  // 문자열 입력과 결과 출력
+#include <string.h>  // 문자열 길이 계산
+
+int next_node[201][26], terminal[201], nodes = 1;  // 0번 루트와 아직 없는 간선 0
+int main(void) {  // 트라이와 KMP 비교 시작
+    int n; char word[21], query[21], text[101], pattern[21];  // 고정 문자열 상한
+    scanf("%d", &n);  // 사전 단어 수
+    for (int i = 0; i < n; ++i) {  // 단어를 하나씩 삽입
+        scanf("%20s", word);  // 현재 사전 단어
+        int node = 0;  // 트라이 루트
+        for (int j = 0; word[j]; ++j) {  // 한 문자씩 접두사 확장
+            int letter = word[j] - 'a';  // 26개 자식 번호
+            if (!next_node[node][letter]) next_node[node][letter] = nodes++;  // 필요한 노드만 새로 생성
+            node = next_node[node][letter];  // 다음 접두사로 이동
+        }  // 단어 경로 처리 끝
+        terminal[node] = 1;  // 자식 유무와 별개인 단어 종료 표시
+    }  // 사전 구축 끝
+    scanf("%20s %100s %20s", query, text, pattern);  // 트라이 질의와 검색 문자열
+    int node = 0, exists = 1;  // 질의 경로 존재 여부
+    for (int i = 0; query[i]; ++i) {  // 질의 접두사 확인
+        int child = next_node[node][query[i] - 'a'];  // 다음 문자 간선
+        if (!child) { exists = 0; break; }  // 없는 경로면 즉시 종료
+        node = child;  // 이어지는 접두사 상태
+    }  // 트라이 질의 끝
+    int pi[20] = {0}, length = (int)strlen(pattern);  // 패턴 경계 길이
+    for (int i = 1; i < length; ++i) {  // 접두사 함수를 선형으로 구축
+        int j = pi[i - 1];  // 직전의 가장 긴 경계
+        while (j > 0 && pattern[i] != pattern[j]) j = pi[j - 1];  // 더 짧은 경계로 복구
+        if (pattern[i] == pattern[j]) ++j;  // 같은 문자는 경계를 확장
+        pi[i] = j;  // 현재 접두사의 경계 기록
+    }  // 패턴 전처리 끝
+    int matched = 0, count = 0;  // 현재 일치 길이와 발생 수
+    for (int i = 0; text[i]; ++i) {  // 텍스트는 앞으로만 이동
+        while (matched > 0 && text[i] != pattern[matched]) matched = pi[matched - 1];  // 겹친 후보 보존
+        if (text[i] == pattern[matched]) ++matched;  // 현재 일치 확장
+        if (matched == length) { ++count; matched = pi[matched - 1]; }  // 발생 기록 뒤 겹치는 검색 유지
+    }  // 텍스트 검색 끝
+    printf("WORD %s\n", exists && terminal[node] ? "YES" : "NO");  // 완전 단어 여부
+    printf("PREFIX %s\n", exists ? "YES" : "NO");  // 접두사 경로 여부
+    printf("MATCHES %d\n", count);  // 겹침을 포함한 발생 수
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/28-트라이와문자열매칭_trie-kmp-aho/example.cpp>)
+
+```cpp
+#include <iostream>  // 문자 배열의 스트림 입출력
+#include <cstring>  // 문자열 길이 계산
+
+int next_node[201][26], terminal[201], nodes = 1;  // 0번 루트와 아직 없는 간선 0
+int main() {  // 트라이와 KMP 비교 시작
+    int n; char word[21], query[21], text[101], pattern[21];  // 고정 문자열 상한
+    std::cin >> n;  // 사전 단어 수
+    for (int i = 0; i < n; ++i) {  // 단어를 하나씩 삽입
+        std::cin >> word;  // 현재 사전 단어
+        int node = 0;  // 트라이 루트
+        for (int j = 0; word[j]; ++j) {  // 한 문자씩 접두사 확장
+            int letter = word[j] - 'a';  // 26개 자식 번호
+            if (!next_node[node][letter]) next_node[node][letter] = nodes++;  // 필요한 노드만 새로 생성
+            node = next_node[node][letter];  // 다음 접두사로 이동
+        }  // 단어 경로 처리 끝
+        terminal[node] = 1;  // 자식 유무와 별개인 단어 종료 표시
+    }  // 사전 구축 끝
+    std::cin >> query >> text >> pattern;  // 트라이 질의와 검색 문자열
+    int node = 0, exists = 1;  // 질의 경로 존재 여부
+    for (int i = 0; query[i]; ++i) {  // 질의 접두사 확인
+        int child = next_node[node][query[i] - 'a'];  // 다음 문자 간선
+        if (!child) { exists = 0; break; }  // 없는 경로면 즉시 종료
+        node = child;  // 이어지는 접두사 상태
+    }  // 트라이 질의 끝
+    int pi[20] = {0}, length = (int)std::strlen(pattern);  // 패턴 경계 길이
+    for (int i = 1; i < length; ++i) {  // 접두사 함수를 선형으로 구축
+        int j = pi[i - 1];  // 직전의 가장 긴 경계
+        while (j > 0 && pattern[i] != pattern[j]) j = pi[j - 1];  // 더 짧은 경계로 복구
+        if (pattern[i] == pattern[j]) ++j;  // 같은 문자는 경계를 확장
+        pi[i] = j;  // 현재 접두사의 경계 기록
+    }  // 패턴 전처리 끝
+    int matched = 0, count = 0;  // 현재 일치 길이와 발생 수
+    for (int i = 0; text[i]; ++i) {  // 텍스트는 앞으로만 이동
+        while (matched > 0 && text[i] != pattern[matched]) matched = pi[matched - 1];  // 겹친 후보 보존
+        if (text[i] == pattern[matched]) ++matched;  // 현재 일치 확장
+        if (matched == length) { ++count; matched = pi[matched - 1]; }  // 발생 기록 뒤 겹치는 검색 유지
+    }  // 텍스트 검색 끝
+    std::cout << "WORD " << (exists && terminal[node] ? "YES" : "NO") << "\n";  // 완전 단어 여부
+    std::cout << "PREFIX " << (exists ? "YES" : "NO") << "\n";  // 접두사 경로 여부
+    std::cout << "MATCHES " << count << "\n";  // 겹침을 포함한 발생 수
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/28-트라이와문자열매칭_trie-kmp-aho/example.py>)
+
+```python
+import sys  # 소문자 문자열 토큰 읽기
+tokens = iter(sys.stdin.read().split())  # 공백 토큰 순회
+n = int(next(tokens))  # 사전 크기
+children = [[0] * 26]  # 0번 루트의 자식 표
+terminal = [False]  # 각 접두사의 단어 종료 여부
+for _ in range(n):  # 사전 삽입
+    node = 0  # 루트에서 시작
+    for character in next(tokens):  # 단어의 문자 순회
+        letter = ord(character) - ord("a")  # 자식 번호
+        if children[node][letter] == 0:  # 아직 없는 간선 확인
+            children[node][letter] = len(children)  # 새 노드의 번호 연결
+            children.append([0] * 26)  # 자식 표 생성
+            terminal.append(False)  # 초기 종료 표시
+        node = children[node][letter]  # 접두사 이동
+    terminal[node] = True  # 단어 끝 보관
+query, text, pattern = next(tokens), next(tokens), next(tokens)  # 두 탐색의 입력
+node, exists = 0, True  # 질의 경로 초기 상태
+for character in query:  # 트라이 접두사 확인
+    child = children[node][ord(character) - ord("a")]  # 다음 문자 간선
+    if child == 0:  # 경로가 없는 상태
+        exists = False  # 접두사도 부재
+        break  # 추가 탐색 중단
+    node = child  # 접두사 이동
+pi = [0] * len(pattern)  # 패턴의 접두·접미 경계 표
+for i in range(1, len(pattern)):  # 경계를 한 문자씩 확장
+    j = pi[i - 1]  # 직전 경계 길이
+    while j and pattern[i] != pattern[j]:  # 경계 뒤 문자가 불일치
+        j = pi[j - 1]  # 더 짧은 경계 복구
+    if pattern[i] == pattern[j]:  # 경계 확장 가능
+        j += 1  # 새 일치 길이
+    pi[i] = j  # 현재 경계 저장
+matched, count = 0, 0  # 텍스트 일치 길이와 발생 수
+for character in text:  # 텍스트를 되돌리지 않는 검색
+    while matched and character != pattern[matched]:  # 불일치 복구
+        matched = pi[matched - 1]  # 겹친 후보 유지
+    if character == pattern[matched]:  # 현재 문자 일치
+        matched += 1  # 일치 길이 증가
+    if matched == len(pattern):  # 패턴 전체 발생
+        count += 1  # 결과 누적
+        matched = pi[matched - 1]  # 겹치는 다음 발생 준비
+print("WORD", "YES" if exists and terminal[node] else "NO")  # 완전 단어 출력
+print("PREFIX", "YES" if exists else "NO")  # 접두사 출력
+print("MATCHES", count)  # KMP 발생 수 출력
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 트라이201노드×26간선, 문자열101·21칸과 접두사20칸의 고정 상한입니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(P+T+M)
+- 보조 공간: O(26P+M+T)
+
+고정 알파벳 트라이와 선형 접두사·텍스트 탐색을 사용하며 읽은 문자열도 보관합니다.
+
+[예제 입력](<예제_examples/28-트라이와문자열매칭_trie-kmp-aho/input.txt>) · [예상 출력](<예제_examples/28-트라이와문자열매칭_trie-kmp-aho/output.txt>) · [예제 실행 방법](<예제_examples/28-트라이와문자열매칭_trie-kmp-aho/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 현재 대표 보관 풀이에서 이 유형으로 직접 분류한 문제는 없습니다. 위의 자체 예제와 참고 자료로 원리를 익힐 수 있으며, 다른 알고리즘으로 푼 문제를 이 유형의 채점 사례로 표시하지 않습니다.

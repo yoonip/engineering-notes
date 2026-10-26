@@ -100,6 +100,125 @@ Python에서는 긴 재귀의 호출 깊이와 딕셔너리 비용, C·C++에서
 - 질문: 가장 좋은 과거 하나만 남겨도 됩니까? 답: 같은 미래 가능성을 가진 상태끼리만 비교해야 하며, 남은 자원이 다른 해를 비용만 보고 제거하면 안 됩니다.
 - 질문: dp[0]은 항상 0입니까? 답: 최소 동전 수에서는 0이고, 빈 방법의 개수를 세는 DP에서는 1일 수 있습니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+정확한 금액을 만드는 최소 동전 수를 작은 금액부터 계산합니다.
+
+이 예제에서 직접 구현하는 기법은 정확한 금액 상태 · 무제한 동전 DP · 불가능 상태 표시입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+첫 줄 n,S는 동전 종류 수와 목표 금액(0≤n≤20,0≤S≤1000)입니다. 다음에는 n개의 양의 정수 동전 값(1..1000)입니다. 각 동전은 무제한으로 사용합니다.
+
+```text
+3 6
+1 3 4
+```
+
+최소 동전 수를 출력하며 불가능하면 -1을 출력합니다.
+
+```text
+2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | dp[0]=0, 나머지는 7 | 목표 6의 가능한 동전 수보다 큰 값으로 불가능을 표시합니다. |
+| 2 | dp[1]=1, dp[2]=2, dp[3]=1 | 작은 금액의 최적값으로 다음 상태를 만듭니다. |
+| 3 | dp[4]=1, dp[5]=2 | 동전 4 하나와 4+1이 각각 최적입니다. |
+| 4 | dp[6]=min(3,2,3)=2 | 마지막 동전 3을 고르면 3+3으로 구성합니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/16-동적계획법의상태와전이_dynamic-programming/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+int main(void) {  // 최소 동전 수 계산 시작
+    int n, target, coins[20], dp[1001];  // 동전과 금액 상태의 고정 상한
+    scanf("%d %d", &n, &target);  // 종류 수와 목표 금액
+    for (int i = 0; i < n; ++i) scanf("%d", &coins[i]);  // 양의 동전 값 읽기
+    for (int s = 0; s <= target; ++s) dp[s] = target + 1;  // 불가능 상태로 초기화
+    dp[0] = 0;  // 빈 선택으로 금액 0 구성
+    for (int s = 1; s <= target; ++s) {  // 더 작은 금액이 먼저 정해지는 순서
+        for (int i = 0; i < n; ++i) {  // 마지막 동전의 모든 후보
+            if (coins[i] <= s && dp[s - coins[i]] + 1 < dp[s]) {  // 유효하고 더 좋은 전이
+                dp[s] = dp[s - coins[i]] + 1;  // 동전 하나를 추가한 최솟값
+            }  // 전이 갱신 끝
+        }  // 동전 후보 순회 끝
+    }  // 금액 상태 계산 끝
+    int answer = dp[target] == target + 1 ? -1 : dp[target];  // 불가능을 출력 규약으로 변환
+    printf("%d\n", answer);  // 최소 개수 또는 -1 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/16-동적계획법의상태와전이_dynamic-programming/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+int main() {  // 최소 동전 수 계산 시작
+    int n, target, coins[20], dp[1001];  // 동전과 금액 상태의 고정 상한
+    std::cin >> n >> target;  // 종류 수와 목표 금액
+    for (int i = 0; i < n; ++i) std::cin >> coins[i];  // 양의 동전 값 읽기
+    for (int s = 0; s <= target; ++s) dp[s] = target + 1;  // 불가능 상태로 초기화
+    dp[0] = 0;  // 빈 선택으로 금액 0 구성
+    for (int s = 1; s <= target; ++s) {  // 더 작은 금액이 먼저 정해지는 순서
+        for (int i = 0; i < n; ++i) {  // 마지막 동전의 모든 후보
+            if (coins[i] <= s && dp[s - coins[i]] + 1 < dp[s]) {  // 유효하고 더 좋은 전이
+                dp[s] = dp[s - coins[i]] + 1;  // 동전 하나를 추가한 최솟값
+            }  // 전이 갱신 끝
+        }  // 동전 후보 순회 끝
+    }  // 금액 상태 계산 끝
+    int answer = dp[target] == target + 1 ? -1 : dp[target];  // 불가능을 출력 규약으로 변환
+    std::cout << answer << "\n";  // 최소 개수 또는 -1 출력
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/16-동적계획법의상태와전이_dynamic-programming/example.py>)
+
+```python
+import sys  # 정수 입력 읽기
+tokens = iter(map(int, sys.stdin.read().split()))  # 공백 토큰 순회
+n, target = next(tokens), next(tokens)  # 동전 종류와 목표
+coins = [next(tokens) for _ in range(n)]  # 사용할 양의 동전
+dp = [target + 1] * (target + 1)  # 불가능 상태 표시
+dp[0] = 0  # 빈 선택의 동전 수
+for amount in range(1, target + 1):  # 의존 상태가 먼저 계산되는 순서
+    for coin in coins:  # 마지막 동전 후보
+        if coin <= amount:  # 음수 금액 제외
+            dp[amount] = min(dp[amount], dp[amount - coin] + 1)  # 최선의 전이 선택
+print(-1 if dp[target] == target + 1 else dp[target])  # 불가능과 최솟값 구분
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 동전 20개와 금액 0..1000의 고정 배열을 사용합니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(nS)
+- 보조 공간: O(S+n)
+
+각 금액에서 모든 동전의 마지막 선택을 확인하고 상태 배열에 저장합니다.
+
+[예제 입력](<예제_examples/16-동적계획법의상태와전이_dynamic-programming/input.txt>) · [예상 출력](<예제_examples/16-동적계획법의상태와전이_dynamic-programming/output.txt>) · [예제 실행 방법](<예제_examples/16-동적계획법의상태와전이_dynamic-programming/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.

@@ -98,6 +98,163 @@ C·C++에서는 용량×비용의 누적 범위, Python에서는 깊은 DFS와 �
 - 질문: 최대 유량이면 최소 비용도 보장합니까? 답: 총량만 최대화하므로 비용 최소화를 위해 별도 목적과 알고리즘이 필요합니다.
 - 질문: 배정 비용에 같은 상수를 더해도 됩니까? 답: 비교하는 모든 해의 배정 수가 같을 때에만 같은 상수 총합을 더한다는 논리가 성립합니다.
 
+<!-- multilang-examples:start -->
+## C·C++·Python으로 같은 예제 실행
+
+이미 정한 배정을 증가 경로에서 바꾸어 가능한 최대 배정 개수를 구합니다.
+
+이 예제에서 직접 구현하는 기법은 이분 인접 목록 · DFS 증가 경로 · 기존 배정의 재귀적 변경입니다. 같은 표준 입력에서 세 언어가 같은 결과를 출력합니다.
+
+### 입력과 출력
+
+L,R,E(0≤L,R≤8,0≤E≤L×R), 다음 E쌍 u,v입니다. 0≤u<L,0≤v<R이며 간선은 중복이 없습니다.
+
+```text
+2 2 3
+0 0
+0 1
+1 0
+```
+
+최대 이분 매칭의 간선 수를 한 줄에 출력합니다.
+
+```text
+2
+```
+
+### 입력부터 결과까지
+
+| 단계 | 중간 상태 | 수행 이유 |
+| --- | --- | --- |
+| 1 | 가능 간선 A→1,A→2,B→1 | 왼쪽 두 사람과 오른쪽 두 작업의 관계입니다. |
+| 2 | A를 작업1에 배정, owner[0]=0(A) | 첫 번째 증가 경로로 크기가1입니다. |
+| 3 | B→1에서 기존 A를 A→2로 이동 | 이미 고른 배정을 취소하고 다른 작업에 이어 붙입니다. |
+| 4 | owner=[1(B),0(A)], 답=2 | 증가 경로의 뒤집기로 배정 수가 한 개 늘어납니다. |
+
+### C 예제
+
+[실행 가능한 C 파일](<예제_examples/34-이분매칭과네트워크유량_matching-flow/example.c>)
+
+```c
+#include <stdio.h>  // 표준 입력과 출력 함수
+
+int right_count, adjacent[8][8], degree[8], owner[8], visited[8];  // 작은 이분 그래프와 오른쪽 배정
+int augment(int left) {  // left의 새 작업을 찾는 증가 경로
+    for (int i = 0; i < degree[left]; ++i) {  // 허용된 작업만 확인
+        int right = adjacent[left][i];  // 현재 작업 후보
+        if (visited[right]) continue;  // 같은 탐색에서 반복 작업 제외
+        visited[right] = 1;  // 이 증가 경로 탐색의 방문 표시
+        if (owner[right] == -1 || augment(owner[right])) {  // 비었거나 기존 사람을 다른 작업으로 이동
+            owner[right] = left;  // 현재 사람에게 작업 배정
+            return 1;  // 매칭 크기 하나 증가
+        }  // 재배정 성공 조건 끝
+    }  // 작업 후보 확인 끝
+    return 0;  // 증가 경로가 없는 상태
+}  // 증가 경로 탐색 끝
+int main(void) {  // 최대 이분 매칭 실행
+    int left_count, edge_count;  // 왼쪽 정점과 허용 간선 수
+    scanf("%d %d %d", &left_count, &right_count, &edge_count);  // 이분 그래프 크기
+    for (int i = 0; i < edge_count; ++i) {  // 중복 없는 허용 관계 저장
+        int left, right;  // 간선 양끝
+        scanf("%d %d", &left, &right);  // 정점 번호 입력
+        adjacent[left][degree[left]++] = right;  // 왼쪽 인접 목록에 추가
+    }  // 그래프 입력 끝
+    for (int r = 0; r < right_count; ++r) owner[r] = -1;  // 아직 배정되지 않은 작업
+    int answer = 0;  // 현재 매칭 크기
+    for (int left = 0; left < left_count; ++left) {  // 각 사람의 증가 경로를 시도
+        for (int r = 0; r < right_count; ++r) visited[r] = 0;  // 이번 탐색의 방문 표 초기화
+        answer += augment(left);  // 성공한 경우에만 한 개 증가
+    }  // 모든 사람 처리 끝
+    printf("%d\n", answer);  // 최대 배정 수
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### C++ 예제
+
+[실행 가능한 C++ 파일](<예제_examples/34-이분매칭과네트워크유량_matching-flow/example.cpp>)
+
+```cpp
+#include <iostream>  // C++ 스트림 입력과 출력
+
+int right_count, adjacent[8][8], degree[8], owner[8], visited[8];  // 작은 이분 그래프와 오른쪽 배정
+int augment(int left) {  // left의 새 작업을 찾는 증가 경로
+    for (int i = 0; i < degree[left]; ++i) {  // 허용된 작업만 확인
+        int right = adjacent[left][i];  // 현재 작업 후보
+        if (visited[right]) continue;  // 같은 탐색에서 반복 작업 제외
+        visited[right] = 1;  // 이 증가 경로 탐색의 방문 표시
+        if (owner[right] == -1 || augment(owner[right])) {  // 비었거나 기존 사람을 다른 작업으로 이동
+            owner[right] = left;  // 현재 사람에게 작업 배정
+            return 1;  // 매칭 크기 하나 증가
+        }  // 재배정 성공 조건 끝
+    }  // 작업 후보 확인 끝
+    return 0;  // 증가 경로가 없는 상태
+}  // 증가 경로 탐색 끝
+int main() {  // 최대 이분 매칭 실행
+    int left_count, edge_count;  // 왼쪽 정점과 허용 간선 수
+    std::cin >> left_count >> right_count >> edge_count;  // 이분 그래프 크기
+    for (int i = 0; i < edge_count; ++i) {  // 중복 없는 허용 관계 저장
+        int left, right;  // 간선 양끝
+        std::cin >> left >> right;  // 정점 번호 입력
+        adjacent[left][degree[left]++] = right;  // 왼쪽 인접 목록에 추가
+    }  // 그래프 입력 끝
+    for (int r = 0; r < right_count; ++r) owner[r] = -1;  // 아직 배정되지 않은 작업
+    int answer = 0;  // 현재 매칭 크기
+    for (int left = 0; left < left_count; ++left) {  // 각 사람의 증가 경로를 시도
+        for (int r = 0; r < right_count; ++r) visited[r] = 0;  // 이번 탐색의 방문 표 초기화
+        answer += augment(left);  // 성공한 경우에만 한 개 증가
+    }  // 모든 사람 처리 끝
+    std::cout << answer << "\n";  // 최대 배정 수
+    return 0;  // 정상 종료
+}  // 프로그램 끝
+```
+
+### Python 예제
+
+[실행 가능한 Python 파일](<예제_examples/34-이분매칭과네트워크유량_matching-flow/example.py>)
+
+```python
+import sys  # 그래프 정수 입력 읽기
+tokens = iter(map(int, sys.stdin.read().split()))  # 공백 토큰 순회
+left_count, right_count, edge_count = next(tokens), next(tokens), next(tokens)  # 두 집합과 간선 수
+adjacent = [[] for _ in range(left_count)]  # 사람별 허용 작업
+for _ in range(edge_count):  # 중복 없는 관계 입력
+    left, right = next(tokens), next(tokens)  # 간선 양끝
+    adjacent[left].append(right)  # 작업 후보 추가
+owner = [-1] * right_count  # 작업을 맡은 왼쪽 정점
+def augment(left, visited):  # 기존 배정을 바꾸는 증가 경로
+    for right in adjacent[left]:  # 허용 작업 순회
+        if visited[right]:  # 이번 탐색에서 이미 본 작업
+            continue  # 순환 탐색 제외
+        visited[right] = True  # 작업 방문 표시
+        if owner[right] == -1 or augment(owner[right], visited):  # 빈 작업이나 재배정 성공
+            owner[right] = left  # 현재 사람에게 연결
+            return 1  # 매칭 크기 증가
+    return 0  # 증가 경로 부재
+answer = 0  # 현재 매칭 수
+for left in range(left_count):  # 각 사람의 추가 배정 시도
+    answer += augment(left, [False] * right_count)  # 탐색마다 독립 방문 표
+print(answer)  # 최대 매칭 크기
+```
+
+### 언어별 차이
+
+| 비교할 점 | C | C++ | Python |
+| --- | --- | --- | --- |
+| 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
+| 배열과 허용 범위 | 왼쪽 정점별 인접 목록8×8칸과 차수·오른쪽 소유자·방문 배열8칸입니다. | 같은 상한의 고정 배열을 사용하며 입력 범위를 지킵니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
+
+### 예제의 비용과 실행 파일
+
+- 시간: O(L(E+R)+L+R)
+- 보조 공간: O(LR+R+L)
+
+각 왼쪽 정점에서 방문 표를 비우고 증가 경로를 탐색하며, 고정 인접 목록은 가능한 간선 수만큼 저장합니다.
+
+[예제 입력](<예제_examples/34-이분매칭과네트워크유량_matching-flow/input.txt>) · [예상 출력](<예제_examples/34-이분매칭과네트워크유량_matching-flow/output.txt>) · [예제 실행 방법](<예제_examples/34-이분매칭과네트워크유량_matching-flow/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
+<!-- multilang-examples:end -->
+
 ## 보관 풀이와 연결
 
 다음은 이 유형을 사용하는 대표 보관 풀이입니다. 레벨 순서는 학습 난이도의 절대 기준이 아니며, 보조 기법으로 연결된 문제도 포함합니다.
