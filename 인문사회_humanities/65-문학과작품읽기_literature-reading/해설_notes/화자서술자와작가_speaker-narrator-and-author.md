@@ -11,7 +11,7 @@
 | 화자 | 시에서 말하는 목소리입니다. 시인과 같은 사람으로 단정하지 않습니다. |
 | 초점화 | 누구의 경험·지식을 기준으로 서술 정보가 선택되거나 제한되는지를 보는 개념입니다. |
 
-‘누가 말합니까?’와 ‘누구까지 알 수 있습니까?’를 따로 적어 보시면 좋습니다. 3인칭 ‘그’로 시작해도 한 인물의 생각에만 접근할 수 있습니다. 반대로 1인칭 회고는 사건 당시의 나보다 나중에 더 많이 알게 된 나의 설명을 포함할 수 있습니다. 인칭만으로 정보 범위를 확정하지 않습니다. [OpenLearn의 서사 관점 수업](https://www.open.edu/openlearn/history-the-arts/literature/approaching-prose-fiction/content-section-2.3), [Niederhoff의 초점화 정의](https://www-archiv.fdm.uni-hamburg.de/lhn/node/18/revisions/211/view.html)를 참고합니다.
+‘누가 말합니까?’와 ‘누구의 경험과 생각까지 전달됩니까?’를 따로 적어 보시면 좋습니다. 3인칭 ‘그’로 시작해도 한 인물의 생각에만 접근할 수 있습니다. 반대로 1인칭 회고는 사건 당시의 나보다 나중에 더 많이 알게 된 나의 설명을 포함할 수 있습니다. 인칭만으로 정보 범위를 확정하지 않습니다. [OpenLearn의 서사 관점 수업](https://www.open.edu/openlearn/history-the-arts/literature/approaching-prose-fiction/content-section-2.3), [Niederhoff의 초점화 정의](https://www-archiv.fdm.uni-hamburg.de/lhn/node/18/revisions/211/view.html)를 참고합니다.
 
 ## 직접 만든 같은 사건의 두 서술
 

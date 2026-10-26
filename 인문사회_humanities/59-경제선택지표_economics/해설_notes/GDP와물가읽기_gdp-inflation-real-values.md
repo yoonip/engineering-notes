@@ -36,7 +36,7 @@ $$D_t=100\frac{Y_t^{nom}}{Y_t^{real}}.$$
 
 ### 소비자물가지수와 GDP 디플레이터는 무엇이 다를까요
 
-CPI는 가계가 소비하는 상품과 서비스의 가격 변화를 지출 비중으로 종합합니다. 단순한 고정 basket 설명에서
+CPI는 가계가 소비하는 상품과 서비스의 가격 변화를 지출 비중으로 종합합니다. 소비 품목과 수량을 고정한 단순 모형에서는
 
 $$P_t=100\frac{\sum_i p_{it}q_{i0}}{\sum_i p_{i0}q_{i0}}$$
 
@@ -45,7 +45,7 @@ $$P_t=100\frac{\sum_i p_{it}q_{i0}}{\sum_i p_{i0}q_{i0}}$$
 | 구분 | CPI | GDP 디플레이터 |
 | --- | --- | --- |
 | 중심 질문 | 소비 지출 가격이 얼마나 변했나 | 국내 생산의 명목·실질 평가가 어떻게 달라졌나 |
-| 포괄 범위 | 소비 basket에 포함된 수입 소비재도 포함 가능 | 국내 생산 기준이며 수출도 관련 |
+| 포괄 범위 | 소비 품목에 포함된 수입 소비재도 포괄 | 국내 생산 기준이며 수출도 관련 |
 | 가중치 관점 | 소비지출 비중과 공식 개편 방법 | 생산 구성·물량측정과 연결 |
 
 따라서 명목 GDP를 CPI로 나누기만 하면 공식 실질 GDP가 된다고 할 수 없습니다. 수입 가격이 GDP 디플레이터와 전혀 무관하다는 결론도 성립하지 않습니다. 수입 중간재 비용과 국내 부가가치·가격의 관계를 통해 간접적으로 영향을 줄 수 있습니다. 지표별 포괄 범위를 비교해야 합니다. [BLS의 CPI·GDP 가격지표 비교](https://www.bls.gov/opub/mlr/2016/article/comparing-the-cpi-with-the-gdp-price-index-and-gdp-implicit-price-deflator.htm)
@@ -98,7 +98,7 @@ Record units, period, nominal or real status, seasonal adjustment, comparison ba
 
 - 한국은행 경제통계 FAQ: 명목·실질, 연쇄 물량, 통계 수정 / nominal versus real, chain volumes, and revisions.
 - BEA: 국내 생산·부가가치·지출 항등식 / domestic production, value added, and expenditure identity.
-- 한국 CPI 공식 설명·BLS: 소비 basket, 계산 기준과 GDP 가격지표의 범위 차이 / basket, calculation basis, and coverage differences.
+- 한국 CPI 공식 설명·BLS: 소비 품목 구성, 계산 기준과 GDP 가격지표의 범위 차이 / basket, calculation basis, and coverage differences.
 - OECD: 시장가격 평가·지출 항목, GDP와 후생·지속가능성의 구분 / market-price valuation, expenditure components, and output versus well-being and sustainability.
 
 한국과 미국의 세부 작성 방식이 같다고 가정하지 않고 정의와 포괄 범위를 대조했습니다. 모든 수치 예는 계산을 설명하기 위해 구성했습니다. / Definitions and coverage are compared without assuming identical Korean and US compilation details. All numerical examples are constructed for explanation. 확인 / checked: 2026-10-19.

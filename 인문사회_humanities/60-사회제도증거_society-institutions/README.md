@@ -22,7 +22,7 @@ A 집단은 쉬운 사례 10건 중 9건, 어려운 사례 100건 중 20건에 �
 
 Suppose A succeeds on 9/10 easy and 20/100 difficult cases, while B succeeds on 80/100 easy and 1/10 difficult cases. A leads in each stratum but has a lower aggregate rate: 29/110 versus 81/110. Different case mixes explain the reversal. Equal stratum weights give 55% versus 45%; an actual target population must justify its weights. These constructed counts illustrate arithmetic rather than institutional performance or a causal effect.
 
-Studies social indicators and institutions, examining how samples, comparisons and confounding limit evidence-based conclusions.
+These notes examine social indicators and institutions, showing how samples, comparisons and confounding limit the conclusions supported by evidence.
 
 - [Evidence, causality and institutions](해설_notes/사회를자료로읽기_evidence-causality-institutions.md#english)
 

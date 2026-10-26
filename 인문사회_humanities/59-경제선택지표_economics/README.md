@@ -25,7 +25,7 @@
 
 If income rises from 100 to 110 while a fixed consumption basket rises from 100 to 105, purchasing power changes by `1.10 / 1.05 - 1`, about 4.76%. Subtracting 5% from 10% is only an approximation. These are constructed values, not actual national statistics. The linked articles continue with indicator definitions, opportunity cost and inter-industry demand.
 
-Analyzes choice through scarcity, opportunity cost and incentives, and reads GDP and prices with their definitions, denominators and reference periods.
+These notes analyze choices through scarcity, opportunity cost and incentives, and interpret GDP and prices using their definitions, denominators and reference periods.
 
 Start with opportunity cost for choices, GDP and inflation for nominal versus real changes, and input–output analysis for inter-industry demand. The separate [reading-comprehension course](../../언어이해와추리논증_reading-reasoning/언어이해_reading/README.md) covers passage structure and answer-option evidence.
 
