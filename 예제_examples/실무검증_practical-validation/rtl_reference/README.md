@@ -36,7 +36,7 @@ python -B 예제_examples/실무검증_practical-validation/rtl_reference/run_co
 
 - [원리·오류·해결 사례](../../../설계와검증사례_engineering-cases/RTL내적기의비트폭과전송계약_rtl-dot-handshake.md)
 - [2026-10-21 실행 기록](../../../설계와검증사례_engineering-cases/검증기록_evidence/RTL내적기비교검증_20261021.md)
-- [EDA의 단계별 검사](../../../분야_topics/35-EDA오픈하드웨어_eda-open-hardware/해설_notes/RTL에서layout까지_rtl-netlist-timing-physical-checks.md)
+- [EDA의 단계별 검사](../../../전자컴퓨터공학_ece/35-EDA오픈하드웨어_eda-open-hardware/해설_notes/RTL에서layout까지_rtl-netlist-timing-physical-checks.md)
 
 ## English summary
 

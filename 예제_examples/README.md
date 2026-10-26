@@ -26,7 +26,7 @@ g++ -std=c++17 -Wall -Wextra -Wpedantic mean.cpp -o mean_cpp
 ./mean_cpp
 ```
 
-Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)에 묶었습니다. 자동미분 파일은 각각 PyTorch 또는 TensorFlow가 필요합니다. Scalar 미분 예제에는 GPU가 필요하지 않습니다. Framework 설치는 [Python & Jupyter](../분야_topics/03-python-jupyter/README.md)의 참고 자료와 [PyTorch](https://pytorch.org/get-started/locally/)·[TensorFlow](https://www.tensorflow.org/install) 설치 문서에서 환경별로 다룹니다.
+Jupyter·그래프 예제의 패키지는 [requirements.txt](requirements.txt)에 묶었습니다. 자동미분 파일은 각각 PyTorch 또는 TensorFlow가 필요합니다. Scalar 미분 예제에는 GPU가 필요하지 않습니다. Framework 설치는 [Python & Jupyter](../전자컴퓨터공학_ece/03-python-jupyter/README.md)의 참고 자료와 [PyTorch](https://pytorch.org/get-started/locally/)·[TensorFlow](https://www.tensorflow.org/install) 설치 문서에서 환경별로 다룹니다.
 
 ## 실무 오류 재현
 
@@ -76,7 +76,7 @@ Short executable examples accompany the concept notes. [Foundation models and au
 | [tensorflow_autograd.py](tensorflow_autograd.py) | The same derivative with GradientTape | TensorFlow |
 | [files.sh](files.sh) | Directory, CSV and file search | Bash |
 
-The first command block runs the RC calculation and builds/runs the C/C++ examples from the `예제_examples` directory in Bash. [requirements.txt](requirements.txt) lists notebook/plot dependencies. Autograd files additionally require their respective framework; these scalar examples need no GPU. See [Python & Jupyter](../분야_topics/03-python-jupyter/README.md), [PyTorch](https://pytorch.org/get-started/locally/) and [TensorFlow](https://www.tensorflow.org/install) for installation references.
+The first command block runs the RC calculation and builds/runs the C/C++ examples from the `예제_examples` directory in Bash. [requirements.txt](requirements.txt) lists notebook/plot dependencies. Autograd files additionally require their respective framework; these scalar examples need no GPU. See [Python & Jupyter](../전자컴퓨터공학_ece/03-python-jupyter/README.md), [PyTorch](https://pytorch.org/get-started/locally/) and [TensorFlow](https://www.tensorflow.org/install) for installation references.
 
 ### Reference models by topic and integrated checks
 

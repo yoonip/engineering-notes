@@ -6,12 +6,12 @@
 
 | 함수 | 본문 | 계산 비용 |
 |---|---|---|
-| `resistance_uncertainty` | [단위·차원·불확도](../../../분야_topics/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md) | 시간·추가 공간 O(1) |
-| `least_squares_qr` | [선형대수·최소제곱](../../../분야_topics/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md) | 조밀한 m×n, m≥n에서 시간 O(mn²), 공간 O(mn) |
-| `mean_variance`, `normal_mean_interval` | [확률·추정](../../../분야_topics/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md) | 평균·분산은 시간 O(n), 추가 공간 O(1); 구간 계산은 O(1) |
-| `decay_euler` | [미분방정식·수치해](../../../분야_topics/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md) | N단계에서 시간 O(N), 추가 공간 O(1) |
-| `oscillator_verlet` | [역학·진동](../../../분야_topics/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md) | N단계에서 시간 O(N), 생성기 상태 O(1) |
-| `heat_ftcs` | [열전도·확산](../../../분야_topics/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md) | N단계·M+1점에서 시간 O(NM), 추가 공간 O(M) |
+| `resistance_uncertainty` | [단위·차원·불확도](../../../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/단위차원측정불확도_units-dimensional-analysis-uncertainty.md) | 시간·추가 공간 O(1) |
+| `least_squares_qr` | [선형대수·최소제곱](../../../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/선형대수와최소제곱_linear-algebra-least-squares.md) | 조밀한 m×n, m≥n에서 시간 O(mn²), 공간 O(mn) |
+| `mean_variance`, `normal_mean_interval` | [확률·추정](../../../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/확률평균추정의불확실성_probability-estimation.md) | 평균·분산은 시간 O(n), 추가 공간 O(1); 구간 계산은 O(1) |
+| `decay_euler` | [미분방정식·수치해](../../../전자컴퓨터공학_ece/06-수식과코드_math-to-code/해설_notes/미분방정식에서수치해로_differential-equations-numerics.md) | N단계에서 시간 O(N), 추가 공간 O(1) |
+| `oscillator_verlet` | [역학·진동](../../../전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md) | N단계에서 시간 O(N), 생성기 상태 O(1) |
+| `heat_ftcs` | [열전도·확산](../../../전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md) | N단계·M+1점에서 시간 O(NM), 추가 공간 O(M) |
 
 저장소 최상위 폴더에서 실행합니다.
 
