@@ -1,0 +1,426 @@
+{
+  "schema_version": 1,
+  "last_checked": "2026-10-26",
+  "human_readable_sources": "학습사이트와코드출처_hardware-resources.md",
+  "scope": {
+    "resource_count": 12,
+    "purpose": "하드웨어 코딩 실습 경로, 판정 방식, 접근 조건과 코드 재사용 범위의 출처 목록입니다.",
+    "all_sites_completed": false,
+    "site_submission_claims": "이 목록은 풀이 완료나 온라인 채점 통과의 증거가 아닙니다. 실제 결과는 개별 풀이 기록으로 구분합니다.",
+    "checked_method": "공식 안내·문제 안내·저자 저장소·LICENSE 원문을 읽었습니다. 아래에서 별도 표시하지 않은 계정 가입, 유료 제품 이용, 모든 사이트의 실제 실행은 수행하지 않았습니다."
+  },
+  "publication_policy": {
+    "code": "문제 링크와 직접 작성한 회로·테스트·해설을 사용합니다.",
+    "external_code": "실제 재사용한 파일의 원본 URL·버전·라이선스·저작권 고지를 개별 기록합니다.",
+    "problem_materials": "문제 본문·그림·제공 테스트의 대량 복제는 하지 않습니다.",
+    "verification": "사이트 채점, 로컬 시뮬레이션, 형식 검증, 합성, 타이밍 검사, 보드·실리콘 동작을 구분합니다.",
+    "nand2tetris": "공식 저자의 공개 해답 게시 자제 요청을 존중하여 완성 프로젝트 해답을 공개 예제로 게시하지 않습니다."
+  },
+  "sources": [
+    {
+      "id": "hdlbits",
+      "name": "HDLBits",
+      "official_url": "https://hdlbits.01xz.net/wiki/Main_Page",
+      "source_role": "official_problem_platform",
+      "languages": ["Verilog"],
+      "practice_format": "작은 회로의 RTL을 작성하여 웹에 제출합니다.",
+      "automatic_grading": {
+        "mode": "online_reference_comparison",
+        "site_judge": true,
+        "official_description_confirmed": true,
+        "scope": "제출 회로를 테스트 벡터로 시뮬레이션하고 기준 회로 출력과 비교합니다. Iverilog 임의 실행 페이지는 별도 기능입니다."
+      },
+      "access": {
+        "free_scope": "공개 웹 연습입니다. 확인한 학습 안내에 결제 절차가 없습니다.",
+        "login": "공식 안내는 진행 기록과 다른 브라우저 이용을 위한 계정을 설명합니다.",
+        "not_checked": ["향후 계정 정책 변경", "모든 문제의 실행 가능 여부"]
+      },
+      "license": {
+        "status": "not_confirmed_for_problem_materials",
+        "confirmed": [],
+        "unconfirmed": ["문제 본문·그림·사이트 예제의 일괄 재배포 조건", "채점용 테스트의 재사용 조건"],
+        "publication_note": "문제 링크와 자체 풀이·설명을 사용하며, MediaWiki 사용 사실에서 콘텐츠 라이선스를 추정하지 않습니다."
+      },
+      "recommended_path": ["Getting Started", "wire·vector와 조합 회로 병행", "플립플롭·카운터·상태 기계", "파형 읽기와 테스트벤치"],
+      "checked_sections": [
+        {"url": "https://hdlbits.01xz.net/wiki/Main_Page", "section": "How to use HDLBits; Which exercises should I do?", "supports": ["기준 회로 비교 채점", "계정의 진행 기록 용도", "언어와 회로 항목 병행"]},
+        {"url": "https://hdlbits.01xz.net/wiki/Step_one", "section": "첫 문제 사용 안내와 제출 결과", "supports": ["top_module 인터페이스 유지", "컴파일·시뮬레이션·불일치·성공 구분"]},
+        {"url": "https://hdlbits.01xz.net/wiki/Problem_sets", "section": "문제 분류", "supports": ["문법·조합·순차·테스트벤치 학습 범위"]},
+        {"url": "https://hdlbits.01xz.net/wiki/Iverilog", "section": "임의 Verilog 시뮬레이션", "supports": ["문제 채점과 별도의 실행 도구"]},
+        {"url": "https://hdlbits.01xz.net/wiki/Project:About", "section": "사이트 소개", "supports": ["운영 주체·주소 확인 범위"]}
+      ]
+    },
+    {
+      "id": "asmbits",
+      "name": "ASMBits",
+      "official_url": "https://asmbits.01xz.net/wiki/Main_Page",
+      "source_role": "official_problem_platform",
+      "languages": ["ARMv7 assembly", "Nios II assembly"],
+      "practice_format": "주로 짧은 어셈블리 함수를 작성하여 제출합니다.",
+      "automatic_grading": {
+        "mode": "online_reference_comparison",
+        "site_judge": true,
+        "official_description_confirmed": true,
+        "scope": "테스트 입력에 대한 함수 실행 결과를 기준 해답과 비교합니다."
+      },
+      "access": {
+        "free_scope": "공개 웹 연습입니다. 확인한 학습 안내에 결제 절차가 없습니다.",
+        "login": "공식 안내는 진행 기록과 다른 브라우저 이용을 위한 계정을 설명합니다.",
+        "not_checked": ["모든 문제의 현재 실행 가능 여부"]
+      },
+      "license": {
+        "status": "not_confirmed_for_problem_materials",
+        "confirmed": [],
+        "unconfirmed": ["문제 본문과 제공 코드의 일괄 재배포 조건"],
+        "publication_note": "문제 링크와 직접 작성한 풀이를 사용합니다."
+      },
+      "recommended_path": ["명령어 집합 선택", "함수 반환·산술", "분기·반복", "메모리와 함수 호출"],
+      "checked_sections": [
+        {"url": "https://asmbits.01xz.net/wiki/Main_Page", "section": "How to use ASMBits; Which exercises should I do?", "supports": ["ARMv7·Nios II 지원", "테스트와 기준 함수 비교", "계정 용도", "Getting Started 권장"]}
+      ]
+    },
+    {
+      "id": "cpulator",
+      "name": "CPUlator",
+      "official_url": "https://cpulator.01xz.net/",
+      "source_role": "official_simulator",
+      "languages": ["Nios II assembly", "ARMv7 assembly", "RISC-V RV32 assembly", "MIPS assembly", "외부 컴파일 ELF"],
+      "practice_format": "브라우저에서 CPU·메모리·입출력 장치와 디버거를 사용합니다.",
+      "automatic_grading": {
+        "mode": "simulation_and_debug_checks",
+        "site_judge": false,
+        "official_description_confirmed": true,
+        "scope": "실행·중단점·단일 단계·레지스터 관찰·디버그 검사를 제공하지만 문제별 기준 정답 판정은 아닙니다."
+      },
+      "access": {
+        "free_scope": "공개 브라우저 도구입니다. 확인한 시작 안내에서 요금·결제 요구를 찾지 못했습니다.",
+        "login": "확인한 Quick Start에는 계정 요구가 없습니다.",
+        "not_checked": ["사이트 전체의 별도 이용 약관", "모든 시스템별 런타임 동작"]
+      },
+      "license": {
+        "status": "not_confirmed_for_simulator",
+        "confirmed": [],
+        "unconfirmed": ["CPUlator 자체 코드·문서의 재배포 조건"],
+        "publication_note": "GNU 조립기 등 구성 도구의 조건을 CPUlator 전체의 조건으로 확대하지 않습니다."
+      },
+      "recommended_path": ["CPU와 시스템 선택", "단일 파일 Compile and Load", "레지스터·메모리 단일 단계 관찰", "다중 파일·C는 외부 ELF 불러오기"],
+      "checked_sections": [
+        {"url": "https://cpulator.01xz.net/doc/", "section": "Features; Quick Start; Compiling Code; Using the Simulator", "supports": ["지원 ISA", "브라우저 시뮬레이터·디버거", "단일 어셈블리 내장 조립", "다중 파일·C는 외부 컴파일 ELF"]}
+      ]
+    },
+    {
+      "id": "nand2tetris",
+      "name": "Nand2Tetris",
+      "official_url": "https://www.nand2tetris.org/",
+      "source_role": "official_project_course",
+      "languages": ["Hack HDL", "Hack assembly", "프로젝트별 소프트웨어 언어"],
+      "practice_format": "게이트·산술 회로·메모리·CPU와 소프트웨어 계층을 프로젝트로 구성합니다. Hack HDL은 Verilog·VHDL과 다릅니다.",
+      "automatic_grading": {
+        "mode": "local_test_script_comparison",
+        "site_judge": false,
+        "official_description_confirmed": true,
+        "scope": "제공 시뮬레이터·Web IDE에서 테스트 스크립트와 비교 출력을 검사하는 개인 학습 흐름입니다. 외부 강좌의 학점·채점과 구분합니다."
+      },
+      "access": {
+        "free_scope": "공식 자료는 비영리 학습용으로 공개합니다. 외부 강좌·책·인증서의 가격은 별도입니다.",
+        "login": "공개 자료 읽기와 로컬 도구 학습에 사이트 계정을 요구하지 않습니다. 외부 강좌는 별도입니다.",
+        "not_checked": ["외부 강좌의 현재 요금·로그인·성적 정책"]
+      },
+      "license": {
+        "status": "mixed_scopes_confirmed",
+        "confirmed": [
+          {"scope": "공식 웹사이트 자료", "identifier": "CC-BY-NC-SA-3.0", "url": "https://www.nand2tetris.org/license"},
+          {"scope": "공식 nand2tetris/projects 저장소에서 확인한 소프트웨어", "identifier": "MIT", "url": "https://github.com/nand2tetris/projects/blob/main/LICENSE"}
+        ],
+        "unconfirmed": ["별도 책·외부 강좌 자료의 개별 조건"],
+        "publication_note": "공식 저자는 완성 해답을 블로그·포럼·GitHub 등에 공개하지 말아 달라고 요청합니다. 이 저장소는 완성 프로젝트 해답을 게시하지 않고 개념·학습 경로를 연결합니다."
+      },
+      "recommended_path": ["비공개 개인 실습", "게이트와 산술 회로", "메모리·기계어·CPU", "어셈블러 이후 소프트웨어 계층"],
+      "checked_sections": [
+        {"url": "https://www.nand2tetris.org/course", "section": "프로젝트별 강좌 구성", "supports": ["하드웨어와 소프트웨어 프로젝트의 구분"]},
+        {"url": "https://www.nand2tetris.org/software/HDL", "section": "HDL·시뮬레이터 안내", "supports": ["Hack HDL", "테스트 스크립트·비교 출력"]},
+        {"url": "https://github.com/nand2tetris/web-ide/blob/main/README.md", "section": "Web IDE 실행 안내", "supports": ["브라우저와 로컬 도구 사용 경로"]},
+        {"url": "https://www.nand2tetris.org/license", "section": "Usage; Request", "supports": ["웹사이트 CC BY-NC-SA 3.0", "공개 해답 게시 자제 요청"]},
+        {"url": "https://raw.githubusercontent.com/nand2tetris/projects/main/LICENSE", "section": "LICENSE 전체", "supports": ["해당 저장소 MIT 조건과 고지 유지"]}
+      ]
+    },
+    {
+      "id": "nandland",
+      "name": "Nandland",
+      "official_url": "https://nandland.com/",
+      "source_role": "author_tutorials_and_modules",
+      "languages": ["Verilog", "VHDL"],
+      "practice_format": "기본 문법·회로 설명·완성 모듈을 참고하여 로컬 시뮬레이션과 FPGA 실습을 합니다.",
+      "automatic_grading": {
+        "mode": "local_practice",
+        "site_judge": false,
+        "official_description_confirmed": true,
+        "scope": "확인한 사이트는 튜토리얼·모듈 자료이며 기준 해답 온라인 채점 기능을 확인하지 않았습니다."
+      },
+      "access": {
+        "free_scope": "공개 튜토리얼·모듈과 별도 유료 책·Go Board를 구분합니다.",
+        "login": "확인한 공개 튜토리얼·모듈 읽기에는 계정이 필요하지 않습니다.",
+        "not_checked": ["책·보드의 현재 가격·배송·외부 판매 조건"]
+      },
+      "license": {
+        "status": "mixed_scopes_confirmed",
+        "confirmed": [
+          {"scope": "Lots more VHDL and Verilog Modules! 페이지에서 연결한 모듈", "identifier": "페이지별 출처 표시 조건", "url": "https://nandland.com/lots-more-vhdl-and-verilog-modules/", "note": "코드 다운로드·수정을 허용하며 Nandland 출처 표시를 요구합니다. 같은 페이지 푸터는 웹 콘텐츠 재호스팅에 저자 허락을 요구합니다."},
+          {"scope": "nandland/getting-started-with-fpgas 저장소", "identifier": "MIT", "url": "https://github.com/nandland/getting-started-with-fpgas/blob/main/LICENSE"}
+        ],
+        "unconfirmed": ["다른 모든 웹페이지·책·이미지에 적용되는 일괄 재사용 허락"],
+        "publication_note": "사이트 본문·그림을 재호스팅하지 않으며, 재사용하는 모듈과 보조 코드의 고지를 개별 유지합니다."
+      },
+      "recommended_path": ["기본 게이트·플립플롭", "두 HDL의 조합·순차 문법", "테스트벤치·카운터", "FIFO·UART"],
+      "checked_sections": [
+        {"url": "https://nandland.com/lots-more-vhdl-and-verilog-modules/", "section": "VHDL and Verilog Completed Modules; 페이지 푸터", "supports": ["모듈 목록", "코드 다운로드·수정과 출처 표시", "웹 콘텐츠 재호스팅 제한"]},
+        {"url": "https://raw.githubusercontent.com/nandland/getting-started-with-fpgas/main/LICENSE", "section": "LICENSE 전체", "supports": ["해당 저장소 MIT 조건"]}
+      ]
+    },
+    {
+      "id": "project-f",
+      "name": "Project F",
+      "official_url": "https://projectf.io/",
+      "source_role": "author_tutorials_and_rtl_library",
+      "languages": ["Verilog 계열 RTL"],
+      "practice_format": "FPGA 모듈·문서·테스트벤치를 이용한 로컬 실습입니다.",
+      "automatic_grading": {
+        "mode": "local_testbenches",
+        "site_judge": false,
+        "official_description_confirmed": true,
+        "scope": "모듈별 테스트벤치가 있으며 기준 해답 제출 사이트가 아닙니다."
+      },
+      "access": {
+        "free_scope": "공개 문서·저장소입니다. 보드 실행에는 별도 하드웨어가 필요할 수 있습니다.",
+        "login": "문서·공개 코드 읽기에 계정이 필요하지 않습니다.",
+        "not_checked": ["모든 보드·벤더 도구의 설치·라이선스", "모든 예제의 현재 실행"]
+      },
+      "license": {
+        "status": "code_repository_confirmed",
+        "confirmed": [
+          {"scope": "projf/projf-explore 저장소 LICENSE 적용 코드", "identifier": "MIT", "url": "https://github.com/projf/projf-explore/blob/main/LICENSE"}
+        ],
+        "unconfirmed": ["모든 별도 웹 글·이미지의 재배포 조건"],
+        "publication_note": "재사용 코드의 저작권·허락 고지를 유지하며 개별 파일의 언어·도구 요구를 확인합니다."
+      },
+      "recommended_path": ["수와 벡터", "보드별 시작 예제", "화면 타이밍·도형 출력", "메모리·UART·작은 그래픽 프로젝트"],
+      "checked_sections": [
+        {"url": "https://projectf.io/verilog-lib/", "section": "Design Source; Blog Posts", "supports": ["클록·디스플레이·그래픽·수학·메모리·UART", "문서·테스트벤치 제공"]},
+        {"url": "https://raw.githubusercontent.com/projf/projf-explore/main/LICENSE", "section": "LICENSE 전체", "supports": ["해당 저장소 MIT 조건"]}
+      ]
+    },
+    {
+      "id": "eda-playground",
+      "name": "EDA Playground",
+      "official_url": "https://www.edaplayground.com/",
+      "source_role": "online_simulation_environment",
+      "languages": ["Verilog", "SystemVerilog", "VHDL", "C++/SystemC", "도구별 검증 언어"],
+      "practice_format": "브라우저에서 설계·테스트벤치를 편집하고 시뮬레이션·합성·파형을 실행합니다.",
+      "automatic_grading": {
+        "mode": "user_testbench_simulation",
+        "site_judge": false,
+        "official_description_confirmed": true,
+        "scope": "검사식에 따른 자동 테스트는 가능하지만 사이트가 모든 코드에 기준 해답을 제공하는 문제은행은 아닙니다."
+      },
+      "access": {
+        "free_scope": "공개 학습용 실행 서비스이며 선택한 시뮬레이터의 제한 이용 조건이 적용됩니다.",
+        "login": "Run에는 로그인이 필요합니다. 일부 상용 도구는 소속·회사·기관 정보 등 추가 검증이 필요합니다.",
+        "not_checked": ["계정별 실제 제공 도구", "모든 상용 제품의 최신 이용 허가", "상업용 프로젝트 이용 허가"]
+      },
+      "license": {
+        "status": "tool_terms_confirmed_code_reuse_not_blanket",
+        "confirmed": [
+          {"scope": "등록·검증 계정에서 제공하는 Licensed Products", "identifier": "LIMITED USE TERMS", "url": "https://www.edaplayground.com/register", "note": "교육·개인 이용 범위 등 제품별 제한과 계정 검증 조건을 확인해야 합니다."}
+        ],
+        "unconfirmed": ["모든 공개 playground 코드의 재배포 허락", "사이트·문서 전체에 적용되는 오픈소스 라이선스"],
+        "publication_note": "타인의 공유 코드는 파일·저자별 이용 조건을 확인하며, 상용 도구 이용 허가와 직접 작성한 코드의 저작권을 구분합니다."
+      },
+      "recommended_path": ["로그인과 도구 조건 확인", "작은 조합 회로·테스트벤치", "assertion과 파형 비교", "클록·리셋·연속 입력"],
+      "checked_sections": [
+        {"url": "https://eda-playground.readthedocs.io/en/latest/intro.html", "section": "Quick Start; What is EDA Playground?", "supports": ["로그인 후 Run", "언어·시뮬레이터 선택", "파형·공유 링크", "추가 신원 정보"]},
+        {"url": "https://www.edaplayground.com/register", "section": "등록 안내; LIMITED USE TERMS", "supports": ["Google 로그인과 검증 계정 차이", "소속 이메일·정보 요구", "제한 제품 이용 조건"]},
+        {"url": "https://github.com/edaplayground/eda-playground/blob/master/docs/faq.rst", "section": "로그인·Running Tools 관련 FAQ", "supports": ["계정과 도구별 조건 확인 경로"]}
+      ]
+    },
+    {
+      "id": "vhdlweb",
+      "name": "VHDLweb",
+      "official_url": "https://vhdlweb.com/",
+      "source_role": "author_vhdl_exercise_platform",
+      "languages": ["VHDL"],
+      "practice_format": "Tufts ES 4·EE 201용 브라우저 VHDL 예제·연습 도구입니다.",
+      "automatic_grading": {
+        "mode": "online_exercises_live_verdict_unconfirmed",
+        "site_judge": null,
+        "official_description_confirmed": true,
+        "scope": "공식 웹 연습 안내와 GHDL 기반 플랫폼 코드는 확인했습니다. 실제 문제 실행·최종 판정 화면은 확인하지 못했습니다."
+      },
+      "access": {
+        "free_scope": "공식 안내는 누구나 문제를 읽고 연습하는 흐름을 설명합니다. 실시간 실행 가능 여부는 미확인입니다.",
+        "login": "일반 연습과 Tufts 수강생의 학점 기록용 로그인을 구분합니다.",
+        "not_checked": ["현재 사이트 실행 가능 여부: 응답 지연 발생", "일반 방문자의 최종 채점 화면", "현재 문제별 저장·평가 정책"]
+      },
+      "license": {
+        "status": "platform_repository_confirmed",
+        "confirmed": [
+          {"scope": "stevenbell/vhdlweb 플랫폼 저장소", "identifier": "GPL-3.0 license text", "url": "https://github.com/stevenbell/vhdlweb/blob/master/LICENSE"}
+        ],
+        "unconfirmed": ["사이트의 모든 문제·그림·사용자 제출 코드에 대한 일괄 라이선스"],
+        "publication_note": "플랫폼 코드의 라이선스를 모든 문제·제출물의 이용 허락으로 해석하지 않습니다."
+      },
+      "recommended_path": ["현재 접속·실행 상태 확인", "작은 VHDL 회로 선택", "입력 변화와 출력 확인", "로컬 GHDL 테스트와 비교"],
+      "checked_sections": [
+        {"url": "https://vhdlweb.com/", "section": "공식 소개·방문자·수강생 안내", "supports": ["온라인 VHDL 연습", "일반 연습과 학점용 로그인 구분"], "availability_note": "공식 안내는 검색에 노출된 페이지 내용으로 확인했으며, 재열기에서는 타임아웃이 발생했습니다."},
+        {"url": "https://raw.githubusercontent.com/stevenbell/vhdlweb/master/README.md", "section": "프로젝트 소개·요구 도구", "supports": ["Tufts ES 4·EE 201", "GHDL·Docker 요구"]},
+        {"url": "https://raw.githubusercontent.com/stevenbell/vhdlweb/master/LICENSE", "section": "LICENSE", "supports": ["플랫폼 저장소 GPL v3 텍스트"]}
+      ]
+    },
+    {
+      "id": "tiny-tapeout",
+      "name": "Tiny Tapeout",
+      "official_url": "https://tinytapeout.com/hdl/",
+      "source_role": "official_asic_project_workflow",
+      "languages": ["템플릿별 HDL", "Python/cocotb 테스트벤치"],
+      "practice_format": "작은 설계를 템플릿·자동 테스트·CI·물리 설계 흐름과 연결합니다.",
+      "automatic_grading": {
+        "mode": "project_ci_and_user_tests",
+        "site_judge": false,
+        "official_description_confirmed": true,
+        "scope": "cocotb와 자동 설계 흐름의 검사는 문제별 기준 정답 판정이나 실리콘의 전 동작 검증과 다릅니다."
+      },
+      "access": {
+        "free_scope": "문서·템플릿을 공개합니다. 실제 제작·칩·보드 구매에는 별도 비용이 있습니다.",
+        "login": "문서 읽기는 공개이며 GitHub 저장소 연동·프로젝트 제출에는 관련 계정·절차가 필요합니다.",
+        "not_checked": ["현재 제작 회차별 가격·납기", "실제 프로젝트 제출·결제·제작", "모든 공정별 템플릿 조건"]
+      },
+      "license": {
+        "status": "one_template_repository_confirmed",
+        "confirmed": [
+          {"scope": "TinyTapeout/ttihp-verilog-template 저장소", "identifier": "Apache-2.0", "url": "https://github.com/TinyTapeout/ttihp-verilog-template/blob/main/LICENSE"}
+        ],
+        "unconfirmed": ["모든 공정 템플릿·타인 설계·웹 문서의 일괄 조건"],
+        "publication_note": "실제 사용하는 템플릿의 LICENSE·NOTICE·파일 고지를 확인합니다."
+      },
+      "recommended_path": ["작은 RTL·리셋·테스트벤치", "해당 회차 템플릿 선택", "cocotb·CI 결과 읽기", "물리 설계·제작은 별도 범위 확인"],
+      "checked_sections": [
+        {"url": "https://tinytapeout.com/hdl/", "section": "Working with HDLs", "supports": ["HDL 설계 학습과 제출 흐름"]},
+        {"url": "https://tinytapeout.com/hdl/templates/", "section": "HDL templates", "supports": ["템플릿 선택 경로"]},
+        {"url": "https://tinytapeout.com/hdl/testing/", "section": "Testing your design", "supports": ["cocotb 테스트·자동 실행"]},
+        {"url": "https://tinytapeout.com/faq/", "section": "제작·구매·프로젝트 FAQ", "supports": ["학습 자료와 실제 제작 비용 구분"]},
+        {"url": "https://raw.githubusercontent.com/TinyTapeout/ttihp-verilog-template/main/LICENSE", "section": "LICENSE", "supports": ["해당 IHP 템플릿 Apache-2.0"]}
+      ]
+    },
+    {
+      "id": "cocotb",
+      "name": "cocotb",
+      "official_url": "https://docs.cocotb.org/en/v2.0.0/quickstart.html",
+      "source_role": "official_verification_tool_docs",
+      "languages": ["Python", "Verilog/SystemVerilog DUT", "VHDL DUT"],
+      "practice_format": "HDL 시뮬레이터에서 Python 비동기 테스트벤치로 DUT를 구동·검사합니다.",
+      "automatic_grading": {
+        "mode": "local_assertions_and_test_runner",
+        "site_judge": false,
+        "official_description_confirmed": true,
+        "scope": "검사식의 성공·실패를 자동 확인합니다. 공개 문제은행의 기준 해답 채점은 아닙니다."
+      },
+      "access": {
+        "free_scope": "오픈소스 로컬 도구입니다. 외부 시뮬레이터의 비용·이용 허가는 별도입니다.",
+        "login": "로컬 사용에 계정이 필요하지 않습니다.",
+        "not_checked": ["모든 상용 시뮬레이터의 이용 조건", "개별 보드·시뮬레이터 조합 전체"]
+      },
+      "license": {
+        "status": "library_and_example_file_confirmed",
+        "confirmed": [
+          {"scope": "cocotb v2.0.0 본체 LICENSE", "identifier": "BSD-3-Clause", "url": "https://github.com/cocotb/cocotb/blob/v2.0.0/LICENSE"},
+          {"scope": "v2.0.0 Quickstart my_design.sv 파일", "identifier": "CC0-1.0", "url": "https://github.com/cocotb/cocotb/blob/v2.0.0/examples/doc_examples/quickstart/my_design.sv"}
+        ],
+        "unconfirmed": ["모든 예제 파일·문서에 CC0가 일괄 적용되는지 여부"],
+        "publication_note": "본체 BSD 조건과 개별 예제 파일 SPDX 고지를 구분하며 버전을 기록합니다."
+      },
+      "recommended_path": ["2.0.0 설치·시뮬레이터 확인", "신호 접근과 assertion", "클록·이벤트 대기", "리셋·경계 입력·회귀 테스트"],
+      "checked_sections": [
+        {"url": "https://docs.cocotb.org/en/v2.0.0/quickstart.html", "section": "Creating a Test; Creating a Makefile; Running a Test; Using runners", "supports": ["Python 비동기 테스트", "Verilog·VHDL 소스 설정", "외부 시뮬레이터·runner"]},
+        {"url": "https://raw.githubusercontent.com/cocotb/cocotb/v2.0.0/LICENSE", "section": "LICENSE 전체", "supports": ["본체 BSD 3개 조건"]},
+        {"url": "https://raw.githubusercontent.com/cocotb/cocotb/v2.0.0/examples/doc_examples/quickstart/my_design.sv", "section": "파일 첫 고지", "supports": ["해당 예제 파일 CC0-1.0"]}
+      ]
+    },
+    {
+      "id": "amaranth",
+      "name": "Amaranth",
+      "official_url": "https://amaranth-lang.org/docs/amaranth/v0.5.8/start.html",
+      "source_role": "official_hdl_docs",
+      "languages": ["Python 기반 Amaranth HDL", "출력 Verilog"],
+      "practice_format": "Python으로 회로 구조·조합·동기 논리를 기술하고 자체 시뮬레이터와 Verilog 변환을 사용합니다.",
+      "automatic_grading": {
+        "mode": "local_simulation_and_assertions",
+        "site_judge": false,
+        "official_description_confirmed": true,
+        "scope": "공식 시작 예제는 카운터·비동기 테스트벤치·VCD·Verilog 변환을 설명합니다."
+      },
+      "access": {
+        "free_scope": "오픈소스 로컬 도구입니다. 합성·보드 도구의 조건은 별도입니다.",
+        "login": "로컬 설치·시뮬레이션에 계정이 필요하지 않습니다.",
+        "not_checked": ["모든 보드 지원 패키지·합성 도구", "현재 개발판과 0.5.8의 전체 API 호환"]
+      },
+      "license": {
+        "status": "core_repository_confirmed",
+        "confirmed": [
+          {"scope": "amaranth-lang/amaranth LICENSE.txt 적용 코드", "identifier": "BSD-2-Clause", "url": "https://github.com/amaranth-lang/amaranth/blob/main/LICENSE.txt"}
+        ],
+        "unconfirmed": ["별도 커뮤니티 교재·보드 패키지·의존 도구의 일괄 라이선스"],
+        "publication_note": "Amaranth 본체의 라이선스를 외부 연습 교재에 적용하지 않습니다."
+      },
+      "recommended_path": ["버전을 고정한 Getting started", "comb·sync 구분", "Simulator 비동기 테스트벤치", "Verilog 변환과 보드 연동"],
+      "checked_sections": [
+        {"url": "https://amaranth-lang.org/docs/amaranth/v0.5.8/start.html", "section": "Implementing a counter; Testing a counter; Converting a counter", "supports": ["회로 생성", "조합·동기 논리", "테스트벤치·VCD", "Verilog 변환"]},
+        {"url": "https://amaranth-lang.org/docs/amaranth/latest/tutorial.html", "section": "Tutorial; 커뮤니티 자료 목록", "supports": ["공식 튜토리얼 작성 중", "커뮤니티 연습 링크"]},
+        {"url": "https://raw.githubusercontent.com/amaranth-lang/amaranth/main/LICENSE.txt", "section": "LICENSE.txt 전체", "supports": ["본체 BSD 2개 조건"]}
+      ]
+    },
+    {
+      "id": "amaranth-exercises",
+      "name": "Amaranth exercises",
+      "official_url": "https://github.com/XekriRedmane/amaranth-exercises",
+      "source_role": "author_exercises_linked_by_official_docs",
+      "languages": ["Amaranth HDL", "SymbiYosys 속성·설정"],
+      "practice_format": "저자 연습을 로컬에서 풀고 cover 도달·BMC·반례 파형으로 검사합니다.",
+      "automatic_grading": {
+        "mode": "local_formal_verification",
+        "site_judge": false,
+        "official_description_confirmed": true,
+        "scope": "첫 연습은 SymbiYosys cover와 bmc 실행 및 PASS·반례 해석을 설명합니다. 온라인 제출 사이트가 아닙니다."
+      },
+      "access": {
+        "free_scope": "공개 저자 저장소입니다. 로컬 도구 설치가 필요합니다.",
+        "login": "읽기·로컬 학습에는 GitHub 계정이 필요하지 않습니다.",
+        "not_checked": ["모든 연습의 현재 버전 실행", "최신 Amaranth와의 전체 API 호환"]
+      },
+      "license": {
+        "status": "not_confirmed_for_exercises",
+        "confirmed": [],
+        "unconfirmed": ["확인한 저장소 루트에서 명시적 LICENSE를 찾지 못했습니다.", "교재·그림·정답 코드의 재배포 허락"],
+        "publication_note": "자료 링크와 자체 회로·속성 설명을 사용하며 Amaranth 본체의 BSD 조건을 교재에 확대하지 않습니다."
+      },
+      "recommended_path": ["소개와 선행 지식·도구 확인", "입출력·조합 회로", "동기 논리", "cover·BMC·증명과 반례"],
+      "checked_sections": [
+        {"url": "https://amaranth-lang.org/docs/amaranth/latest/tutorial.html", "section": "Graded exercises for Amaranth HDL 링크", "supports": ["공식 문서가 연결하는 커뮤니티 저자 자료"]},
+        {"url": "https://github.com/robertbaruch/amaranth-exercises", "section": "이전 저자 주소의 현재 연결", "supports": ["현재 XekriRedmane 저장소로 연결"]},
+        {"url": "https://raw.githubusercontent.com/XekriRedmane/amaranth-exercises/main/00_intro.md", "section": "소개·선행 지식·소프트웨어 요구", "supports": ["graded exercises", "작성 중인 자료", "디지털 회로·Python·명령행 선행 지식"]},
+        {"url": "https://raw.githubusercontent.com/XekriRedmane/amaranth-exercises/main/01_input.md", "section": "Step 6; Step 7", "supports": ["SymbiYosys cover·bmc 명령", "PASS와 반례 파형 해석"]}
+      ]
+    }
+  ],
+  "unresolved_names": [
+    {
+      "name": "HDLExercises / VerilogExercises",
+      "status": "exact_operator_and_license_not_identified",
+      "note": "일반적인 이름만으로 특정 공식 문제 플랫폼·저자·라이선스를 확정하지 않았습니다. 정확한 저장소·도메인 확인 전 출처로 채택하지 않습니다."
+    },
+    {
+      "name": "hdlbits.com",
+      "url": "https://www.hdlbits.com/",
+      "status": "relationship_to_original_not_established",
+      "note": "이 문서의 HDLBits 근거 주소는 hdlbits.01xz.net입니다. 이름이 유사한 별도 도메인을 같은 운영 사이트로 간주하지 않습니다."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "site": "https://hdlbits.01xz.net",
+  "login_required_for_this_run": false,
+  "results": [
+    {
+      "id": "step_one",
+      "status": "Status: Success!",
+      "attempts": 2,
+      "checked_at": "2026-10-26T07:17:02.876Z",
+      "source_file": "step_one/solution.v",
+      "evidence": "채점기록_evidence/step_one.jpg",
+      "note": "첫 iframe 제출은 결과가 비어 있어 새 창으로 다시 제출한 결과를 확인했습니다.",
+      "source_sha256": "99cacd51a1ec106e780be054a176858ce99d2676d55d450298f117b783239a53"
+    },
+    {
+      "id": "vector2",
+      "status": "Status: Success!",
+      "attempts": 2,
+      "checked_at": "2026-10-26T07:21:14.152Z",
+      "source_file": "vector2/solution.v",
+      "source_sha256": "8039a36063bb244b076dbf75d17932d4f46be2faed023dc06629e449fa46af33",
+      "evidence": "채점기록_evidence/vector2.jpg",
+      "note": "첫 제출은 편집기에 코드가 반영되지 않은 템플릿이 전송되어 Incorrect였고, 입력 내용을 확인한 뒤 같은 풀이를 다시 제출했습니다."
+    },
+    {
+      "id": "vectorr",
+      "status": "Status: Success!",
+      "attempts": 1,
+      "checked_at": "2026-10-26T07:21:52.814Z",
+      "source_file": "vectorr/solution.v",
+      "source_sha256": "c31a2ad1152d9b285d7794dd1a23f972ea622565bccfbdcfa9dc37fa08a7cd09",
+      "evidence": "채점기록_evidence/vectorr.jpg"
+    },
+    {
+      "id": "popcount3",
+      "status": "Status: Success!",
+      "attempts": 1,
+      "checked_at": "2026-10-26T07:22:22.429Z",
+      "source_file": "popcount3/solution.v",
+      "source_sha256": "910a57282d4ae200bafe06875c397f5c73de7c39d31a666704226e94a93c8992",
+      "evidence": "채점기록_evidence/popcount3.jpg"
+    },
+    {
+      "id": "mux2to1v",
+      "status": "Status: Success!",
+      "attempts": 1,
+      "checked_at": "2026-10-26T07:23:40.892Z",
+      "source_file": "mux2to1v/solution.v",
+      "source_sha256": "6216134f84fdb6b5302d96151237730baf922fae6bfd2b1ebd5edf3a7c90610f",
+      "evidence": "채점기록_evidence/mux2to1v.jpg"
+    },
+    {
+      "id": "fadd",
+      "status": "Status: Success!",
+      "attempts": 1,
+      "checked_at": "2026-10-26T07:25:46.262Z",
+      "source_file": "fadd/solution.v",
+      "source_sha256": "5defb763da86d201bde2bdd16db68b439087fb9e220adbd1d5ab2f18948055d3",
+      "evidence": "채점기록_evidence/fadd.jpg"
+    },
+    {
+      "id": "always_case2",
+      "status": "Status: Success!",
+      "attempts": 1,
+      "checked_at": "2026-10-26T07:26:49.388Z",
+      "source_file": "always_case2/solution.v",
+      "source_sha256": "5e8451bdd6360fd95c78a2ca42f8c6ef5197469c4b59609e9212357fdf4bc4ae",
+      "evidence": "채점기록_evidence/always_case2.jpg"
+    },
+    {
+      "id": "dff8r",
+      "status": "Status: Success!",
+      "attempts": 1,
+      "checked_at": "2026-10-26T07:27:17.983Z",
+      "source_file": "dff8r/solution.v",
+      "source_sha256": "b91acdc7ae007082dc9ed09a03644445fd9919422243310a8005e8e9912efb01",
+      "evidence": "채점기록_evidence/dff8r.jpg"
+    },
+    {
+      "id": "count10",
+      "status": "Status: Success!",
+      "attempts": 1,
+      "checked_at": "2026-10-26T07:28:17.200Z",
+      "source_file": "count10/solution.v",
+      "source_sha256": "8a0e4ffcd054bee89daf1beb57447c43ad74c14cc48f8a8458212ccc0d2301cb",
+      "evidence": "채점기록_evidence/count10.jpg"
+    },
+    {
+      "id": "shift4",
+      "status": "Status: Success!",
+      "attempts": 1,
+      "checked_at": "2026-10-26T07:29:09.901Z",
+      "source_file": "shift4/solution.v",
+      "source_sha256": "c83fe086a8e753f78b34786c1c41c3b998f01c32aa3d5277a3539d456c51f525",
+      "evidence": "채점기록_evidence/shift4.jpg"
+    },
+    {
+      "id": "edgedetect",
+      "status": "Status: Success!",
+      "attempts": 1,
+      "checked_at": "2026-10-26T07:29:33.640Z",
+      "source_file": "edgedetect/solution.v",
+      "source_sha256": "a0cbe9a98d8b36ab3ef831e7e413d2a99d99c765e5f99f3c38aaba5524178dcd",
+      "evidence": "채점기록_evidence/edgedetect.jpg"
+    },
+    {
+      "id": "fsm1s",
+      "status": "Status: Success!",
+      "attempts": 1,
+      "checked_at": "2026-10-26T07:31:27.115Z",
+      "source_file": "fsm1s/solution.v",
+      "source_sha256": "b314b91aa2bdd54538305c147b362b69d4f2a593fc56d908e6424c79b4b01747",
+      "evidence": "채점기록_evidence/fsm1s.jpg"
+    }
+  ]
+}

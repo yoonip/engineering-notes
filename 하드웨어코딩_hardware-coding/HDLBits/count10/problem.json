@@ -1,0 +1,121 @@
+{
+  "id": "count10",
+  "title": "0부터9까지 순환하는 십진 카운터",
+  "language": "Verilog",
+  "testbench_language": "SystemVerilog",
+  "source_url": "https://hdlbits.01xz.net/wiki/count10",
+  "top": "tb",
+  "rtl_top": "top_module",
+  "sources": [
+    "solution.v",
+    "tb.sv"
+  ],
+  "rtl_file": "solution.v",
+  "tb_file": "tb.sv",
+  "source_sha256": {
+    "solution.v": "8a0e4ffcd054bee89daf1beb57447c43ad74c14cc48f8a8458212ccc0d2301cb",
+    "tb.sv": "1b8b116d3bbef6afedc3c55592310c05e256f7307df421f83e2fbc065490a1af"
+  },
+  "expected_marker": "PASS id=count10 ",
+  "summary": "동기 리셋 또는 현재9인 에지에서0으로 돌아가며 나머지 정상 상태는1씩 증가합니다.",
+  "interface": "입력 clk·동기식 active-high reset, 출력 q[3:0]입니다.",
+  "local_tests": {
+    "scope": "첫 리셋,35회 증가, 값5에서 중간 리셋,20회 증가의57에지·170비교입니다.",
+    "independent_oracle": "테스트벤치는 q==9 분기 대신 정수 (expected+1)%10으로 기준을 만듭니다. 에지 사이의 동기 리셋 시점과 중간 상태의 초기화도 비교합니다.",
+    "checks": {
+      "checks": 170,
+      "vectors": 57
+    },
+    "result": "PASS",
+    "date": "2026-10-26"
+  },
+  "trace": [
+    {
+      "step": "1",
+      "event": "리셋",
+      "input": "reset=1",
+      "expected": "q=0"
+    },
+    {
+      "step": "2",
+      "event": "정상 증가",
+      "input": "연속9에지",
+      "expected": "q=1..9"
+    },
+    {
+      "step": "3",
+      "event": "그다음 에지",
+      "input": "기존q=9",
+      "expected": "q=0"
+    },
+    {
+      "step": "4",
+      "event": "35회 증가 뒤",
+      "input": "초기0에서35mod10",
+      "expected": "q=5"
+    },
+    {
+      "step": "5",
+      "event": "중간 리셋",
+      "input": "기존q=5,reset=1",
+      "expected": "다음 상승 에지에q=0"
+    }
+  ],
+  "results": [
+    {
+      "name": "normal",
+      "parameters": {},
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:/iverilog/bin/iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "sim.vvp",
+          "solution.v",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\hdlbits-local\\run_count10",
+        "environment": {
+          "TEMP": ".",
+          "TMP": "."
+        },
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module top_module declared here: solution.v:1\n"
+      },
+      "simulation": {
+        "command": [
+          "C:/iverilog/bin/vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\hdlbits-local\\run_count10",
+        "environment": {
+          "TEMP": ".",
+          "TMP": "."
+        },
+        "returncode": 0,
+        "stdout": "PASS id=count10 checks=170 vectors=57\ntb.sv:32: $finish called at 576000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 170,
+        "vectors": 57
+      }
+    }
+  ],
+  "validation_scope": {
+    "local_digital_simulation": true,
+    "online_judging_recorded_here": false,
+    "synthesis": false,
+    "sta": false,
+    "formal_proof": false,
+    "physical_board": false
+  }
+}

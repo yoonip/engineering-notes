@@ -46,6 +46,10 @@ python 예제_examples/run_checks.py
 
 [심화 예제](심화_advanced/README.md)는 회로·RTL, 펌웨어·시스템, AI·데이터, 수학·제어·추론의 구현과 독립 검사를 연결합니다. [심화 해설](../공학기초_foundations/심화학습_ADVANCED.md)에서 단계별 유도와 실행 결과를 읽을 수 있습니다.
 
+## 하드웨어 코딩 문제와 회로 예제
+
+[하드웨어 코딩 문제와 예제](../하드웨어코딩_hardware-coding/README.md)는 HDLBits의 Verilog 풀이와 사이트 채점 기록, SystemVerilog 전송 버퍼·UART·순서 검출기, VHDL·Amaranth 카운터를 연결합니다. 각 회로의 소스·시간 흐름·자체 검사와 실행 도구를 함께 읽으실 수 있습니다.
+
 ## MCU 펌웨어와 디버깅
 
 [Arm·RISC-V·STM32·ESP32 실습](임베디드디버깅_embedded-debug-labs/README.md)은 시작 코드, 메모리 배치, OpenOCD·GDB 연결, GPIO와 FreeRTOS 명령 처리를 다룹니다.

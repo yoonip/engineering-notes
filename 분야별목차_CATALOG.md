@@ -24,6 +24,10 @@
 
 [학습 사이트와 채널](학습사이트와채널_learning-resources/README.md)에서 한국어 대학 강의, 해외 공개 강의, 연구기관·기업의 기술 자료와 영상 해설을 찾으실 수 있습니다. 수학·과학·컴퓨터·공학뿐 아니라 역사·언어·경제·법·예술 자료도 연결합니다.
 
+## 하드웨어 코딩 문제와 예제 | Hardware coding practice
+
+[Verilog 문제 풀이와 언어별 회로 예제](하드웨어코딩_hardware-coding/README.md)는 HDLBits 사이트 채점 기록, SystemVerilog·VHDL·Amaranth 소스, 줄별 설명과 시간 흐름, 로컬 자체 검사를 연결합니다. [공식 실습 사이트와 공개 코드](하드웨어코딩_hardware-coding/학습사이트와코드출처_hardware-resources.md)에서 문제 채점·시뮬레이터·프로젝트 자료를 구분합니다.
+
 ## 직무와 실무 기술 | Roles and engineering practice
 
 [직무와 실무 기술](직무와실무기술_job-practice/README.md)은 제공된 삼성전자·SK하이닉스 직무기술서의 업무와 요구 역량을 실제 검사·개발 작업에 연결합니다. 원문의 필수·우대 조건과 학습용 설명을 구분합니다.

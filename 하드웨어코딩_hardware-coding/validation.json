@@ -1,0 +1,1174 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-26T07:30:26.471084+00:00",
+  "root": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding",
+  "build_directory": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "scope": {
+    "source_bytes_and_staged_copies": true,
+    "local_digital_simulation": true,
+    "online_grading": false,
+    "formal_proof": false,
+    "synthesis": false,
+    "static_timing_analysis": false,
+    "board_measurement": false
+  },
+  "tools": {
+    "iverilog": "C:\\iverilog\\bin\\iverilog.exe",
+    "vvp": "C:\\iverilog\\bin\\vvp.exe",
+    "ghdl": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\ghdl-6.0.0\\bin\\ghdl.exe",
+    "amaranth": {
+      "argv": [
+        "C:\\Users\\test2\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-c",
+        "import amaranth; print(amaranth.__version__)"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_004",
+      "returncode": 0,
+      "stdout": "0.5.8\r\n",
+      "stderr": "",
+      "stdout_sha256": "986052810795190d1110792da30c3afb0b16d48217185d50901cbe16f51c12d2"
+    }
+  },
+  "entries": [
+    {
+      "directory": "예제_examples/01-전송대기_elastic-buffer",
+      "metadata": "예제_examples/01-전송대기_elastic-buffer/example.json",
+      "status": "passed",
+      "id": "01-elastic-buffer",
+      "source_sha256": {
+        "elastic_buffer.sv": "b23a95ae1365c9df2b53999bb8e49247f6ecc4567c2ad000f5cad294b3775de0",
+        "tb.sv": "0fac2bf2a263de1ba59a21de7d5b2f9d58c5131f82bcc9ca7a5fca62b8f66b6e"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb_elastic_buffer",
+              "-o",
+              "sim.vvp",
+              "elastic_buffer.sv",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_000\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_000\\run_00",
+            "returncode": 0,
+            "stdout": "PASS checks=413 cycles=74 accepted=36 consumed=34 cancelled=2 stalls=22 replacements=24\r\ntb.sv:58: $finish called at 746000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "de5109804bd24fb9d4ff24c886b21a6a9188c57aa45e2e2056104d79bcfc7763"
+          }
+        },
+        {
+          "name": "negative_drop_on_stall",
+          "parameters": {
+            "BUG_DROP_ON_STALL": 1
+          },
+          "expected": "functional_failure",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb_elastic_buffer",
+              "-Ptb_elastic_buffer.BUG_DROP_ON_STALL=1",
+              "-o",
+              "sim.vvp",
+              "elastic_buffer.sv",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_000\\run_01",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "expected_functional_failure",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_000\\run_01",
+            "returncode": 1,
+            "stdout": "FATAL: tb.sv:15: ELASTIC cycle=3 output validity after edge\r\n       Time: 36000  Scope: tb_elastic_buffer.verify\r\n",
+            "stderr": "",
+            "stdout_sha256": "f2f327704d231e62d8354430b955e0d0d22c777c485e26df3d215b1b68792e5f"
+          },
+          "expected_failure_marker": "ELASTIC cycle=3 output validity after edge"
+        }
+      ]
+    },
+    {
+      "directory": "예제_examples/02-직렬송신_uart-tx",
+      "metadata": "예제_examples/02-직렬송신_uart-tx/example.json",
+      "status": "passed",
+      "id": "02-uart-tx",
+      "source_sha256": {
+        "uart_tx.sv": "16c6b7c0cb74582907299d41f00a866cd069b6ab27f2d0c9c8017e9d7043657a",
+        "tb.sv": "045c3bd6b992f300ab4db540125a0a3679947b2fad7e802edfa91202dcd0f858"
+      },
+      "runs": [
+        {
+          "name": "normal_cpb2",
+          "parameters": {
+            "CLOCKS_PER_BIT": 2
+          },
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb_uart_tx",
+              "-Ptb_uart_tx.CLOCKS_PER_BIT=2",
+              "-o",
+              "sim.vvp",
+              "uart_tx.sv",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_001\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_001\\run_00",
+            "returncode": 0,
+            "stdout": "PASS checks=282 frames=4 serial_samples=80 ignored_requests=4 resets_in_frame=1 clocks_per_bit=2\r\ntb.sv:63: $finish called at 1166000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "4e1827a372d6632b69e4b0c8b1fadb97b9210796d22614a609e7f46157d361b8"
+          }
+        },
+        {
+          "name": "normal_cpb3",
+          "parameters": {
+            "CLOCKS_PER_BIT": 3
+          },
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb_uart_tx",
+              "-Ptb_uart_tx.CLOCKS_PER_BIT=3",
+              "-o",
+              "sim.vvp",
+              "uart_tx.sv",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_001\\run_01",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_001\\run_01",
+            "returncode": 0,
+            "stdout": "PASS checks=412 frames=4 serial_samples=120 ignored_requests=4 resets_in_frame=1 clocks_per_bit=3\r\ntb.sv:63: $finish called at 1676000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "c536f76b98c7ce4ab434c6f37df22aea70f6b056d9fbb38145b5023558126127"
+          }
+        },
+        {
+          "name": "normal_cpb5",
+          "parameters": {
+            "CLOCKS_PER_BIT": 5
+          },
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb_uart_tx",
+              "-Ptb_uart_tx.CLOCKS_PER_BIT=5",
+              "-o",
+              "sim.vvp",
+              "uart_tx.sv",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_001\\run_02",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_001\\run_02",
+            "returncode": 0,
+            "stdout": "PASS checks=672 frames=4 serial_samples=200 ignored_requests=4 resets_in_frame=1 clocks_per_bit=5\r\ntb.sv:63: $finish called at 2696000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "f1082227d3076b7f1e6fe75de9c917fb8070e635e170bc6f7c8a99a65f2575b0"
+          }
+        },
+        {
+          "name": "normal_cpb16",
+          "parameters": {
+            "CLOCKS_PER_BIT": 16
+          },
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb_uart_tx",
+              "-Ptb_uart_tx.CLOCKS_PER_BIT=16",
+              "-o",
+              "sim.vvp",
+              "uart_tx.sv",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_001\\run_03",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_001\\run_03",
+            "returncode": 0,
+            "stdout": "PASS checks=2102 frames=4 serial_samples=640 ignored_requests=4 resets_in_frame=1 clocks_per_bit=16\r\ntb.sv:63: $finish called at 8306000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "7f2ac8eb3f2c13fb72671dfd315d957b2eda7e1998c8dd1c74acea67f0b3684b"
+          }
+        },
+        {
+          "name": "negative_reverse_data",
+          "parameters": {
+            "CLOCKS_PER_BIT": 3,
+            "BUG_REVERSE_DATA": 1
+          },
+          "expected": "functional_failure",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb_uart_tx",
+              "-Ptb_uart_tx.CLOCKS_PER_BIT=3",
+              "-Ptb_uart_tx.BUG_REVERSE_DATA=1",
+              "-o",
+              "sim.vvp",
+              "uart_tx.sv",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_001\\run_04",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "expected_functional_failure",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_001\\run_04",
+            "returncode": 1,
+            "stdout": "FATAL: tb.sv:13: UART cpb=3 serial level and bit duration\r\n       Time: 56000  Scope: tb_uart_tx.verify\r\n",
+            "stderr": "",
+            "stdout_sha256": "fdb0a4e5735cf235a2dc0360b0b32605e8e9908322b9444e9e3c3ec248c88dc5"
+          },
+          "expected_failure_marker": "UART cpb=3 serial level and bit duration"
+        }
+      ]
+    },
+    {
+      "directory": "예제_examples/03-순서검출_sequence-detector",
+      "metadata": "예제_examples/03-순서검출_sequence-detector/example.json",
+      "status": "passed",
+      "id": "03-sequence-detector",
+      "source_sha256": {
+        "sequence_detector.sv": "432be4714a4b0cf59dff9a1b08fc2845371a6c5bddbe62c52b3d84afcbaef45f",
+        "tb.sv": "7eb9c04bba6fd4ca5a206279740bce553f1e032c48cdb40c3f5f8eb90b38f26a"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb_sequence_detector",
+              "-o",
+              "sim.vvp",
+              "sequence_detector.sv",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_002\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_002\\run_00",
+            "returncode": 0,
+            "stdout": "PASS checks=4112 samples=3597 pauses=2 resets=513 hits=131 strings=511\r\ntb.sv:47: $finish called at 41126000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "94f35273ad807278ee13e5df0a37c3dcd89b11d405f0dab059ab14ca167845ca"
+          }
+        },
+        {
+          "name": "negative_no_overlap",
+          "parameters": {
+            "BUG_NO_OVERLAP": 1
+          },
+          "expected": "functional_failure",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb_sequence_detector",
+              "-Ptb_sequence_detector.BUG_NO_OVERLAP=1",
+              "-o",
+              "sim.vvp",
+              "sequence_detector.sv",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_002\\run_01",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "expected_functional_failure",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_002\\run_01",
+            "returncode": 1,
+            "stdout": "FATAL: tb.sv:24: SEQUENCE sample=7 history=1011 expected=1 actual=0\r\n       Time: 106000  Scope: tb_sequence_detector.step\r\n",
+            "stderr": "",
+            "stdout_sha256": "fff26fc4e73e330cee277c133e7bed659626464e4d9ac7cab2a0209d82673d8f"
+          },
+          "expected_failure_marker": "SEQUENCE sample=7 history=1011 expected=1 actual=0"
+        }
+      ]
+    },
+    {
+      "directory": "예제_examples/04-카운터와범위_vhdl-counter",
+      "metadata": "예제_examples/04-카운터와범위_vhdl-counter/example.json",
+      "status": "passed",
+      "id": "04",
+      "source_sha256": {
+        "counter.vhd": "0d0bef76a897af906765c768b071f463eb66fceaa6df4accf641b315e3046094",
+        "tb_counter.vhd": "fc641bbbfbf6acecfd328d2a3385efa784fb83f54cbd6abe8648f1b862230013"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "expected": "pass",
+          "commands": [
+            {
+              "argv": [
+                "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\ghdl-6.0.0\\bin\\ghdl.exe",
+                "-a",
+                "--std=08",
+                "counter.vhd",
+                "tb_counter.vhd"
+              ],
+              "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_003",
+              "returncode": 0,
+              "stdout": "",
+              "stderr": "",
+              "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "argv": [
+                "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\ghdl-6.0.0\\bin\\ghdl.exe",
+                "-e",
+                "--std=08",
+                "tb_counter"
+              ],
+              "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_003",
+              "returncode": 0,
+              "stdout": "",
+              "stderr": "",
+              "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "argv": [
+                "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\ghdl-6.0.0\\bin\\ghdl.exe",
+                "-r",
+                "--std=08",
+                "tb_counter",
+                "--assert-level=error"
+              ],
+              "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_003",
+              "returncode": 0,
+              "stdout": "tb_counter.vhd:42:9:@800ns:(report note): PASS mod10_counter cycles=80 checks=240\r\nsimulation finished @800ns with status 0\r\n",
+              "stderr": "",
+              "stdout_sha256": "39f025b1c6c28fef7d9c04e6c6bf4b1f813382daaf5c0227457f722288350432"
+            }
+          ],
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "directory": "예제_examples/05-파이썬회로_amaranth-counter",
+      "metadata": "예제_examples/05-파이썬회로_amaranth-counter/example.json",
+      "status": "passed",
+      "id": "05",
+      "source_sha256": {
+        "counter.py": "2b40f9b58de53c4ee6f452db0baf2a71a869df280b628e9c6d0d3946379d7dee",
+        "test_counter.py": "2039bdc7f71e42088eef0f9e6c1f685d67b821e0a82710a4884677d339d56929"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "expected": "pass",
+          "simulation": {
+            "argv": [
+              "C:\\Users\\test2\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+              "-B",
+              "test_counter.py"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_004",
+            "returncode": 0,
+            "stdout": "PASS mod10_counter cycles=80 checks=240\r\n",
+            "stderr": "",
+            "stdout_sha256": "8a4a2623ca58ccdf193a393b6b6eef98a3c25b12b721775de0e0094ee989cd71"
+          },
+          "status": "passed"
+        },
+        {
+          "name": "rtlil_generation",
+          "expected": "generation",
+          "generation": {
+            "argv": [
+              "C:\\Users\\test2\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+              "-B",
+              "counter.py",
+              "--rtlil"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_004",
+            "returncode": 0,
+            "stdout": "attribute \\generator \"Amaranth\"\r\nattribute \\top 1\r\nmodule \\mod10_counter\r\n\r\n  wire width 1 input 0  \\clk\r\n\r\n  wire width 1 input 1  \\clear\r\n\r\n  wire width 1 input 2  \\enable\r\n\r\n  attribute \\init 4'0000\r\n  wire width 4 output 3  \\count\r\n\r\n  wire width 1 $1\r\n\r\n  wire width 5 $2\r\n\r\n  wire width 4 $3\r\n\r\n  cell $eq $4\r\n    parameter \\A_SIGNED 0\r\n    parameter \\B_SIGNED 0\r\n    parameter \\A_WIDTH 4\r\n    parameter \\B_WIDTH 4\r\n    parameter \\Y_WIDTH 1\r\n    connect \\A \\count [3:0]\r\n    connect \\B 4'1001\r\n    connect \\Y $1\r\n  end\r\n\r\n  cell $add $5\r\n    parameter \\A_SIGNED 0\r\n    parameter \\B_SIGNED 0\r\n    parameter \\A_WIDTH 4\r\n    parameter \\B_WIDTH 1\r\n    parameter \\Y_WIDTH 5\r\n    connect \\A \\count [3:0]\r\n    connect \\B 1'1\r\n    connect \\Y $2\r\n  end\r\n\r\n  process $6\r\n    assign $3 [3:0] \\count [3:0]\r\n    switch { \\enable [0] \\clear [0] }\r\n      case 2'-1\r\n        assign $3 [3:0] 4'0000\r\n      case 2'1-\r\n        switch $1 [0]\r\n          case 1'1\r\n            assign $3 [3:0] 4'0000\r\n          case\r\n            assign $3 [3:0] $2 [3:0]\r\n        end\r\n    end\r\n  end\r\n\r\n  cell $dff $7\r\n    parameter \\WIDTH 4\r\n    parameter \\CLK_POLARITY 1\r\n    connect \\D $3 [3:0]\r\n    connect \\CLK \\clk [0]\r\n    connect \\Q \\count\r\n  end\r\n\r\nend\r\n\r\n",
+            "stderr": "",
+            "stdout_sha256": "a68437f324277cc5c9386d2c70a215a388a3b9e9cd75e4fdd164863637940c2e"
+          },
+          "normalized_lf_sha256": "4f59f92ec4bfd25cc5b2828d18dcd9519cefac99d6005a05d3b65a1bce8df133",
+          "recorded_sha256": "4f59f92ec4bfd25cc5b2828d18dcd9519cefac99d6005a05d3b65a1bce8df133",
+          "artifact": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_004\\generated.il",
+          "status": "passed",
+          "scope": "RTLIL generation only; no generated-RTL simulation or synthesis"
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/always_case2",
+      "metadata": "HDLBits/always_case2/problem.json",
+      "status": "passed",
+      "id": "always_case2",
+      "source_sha256": {
+        "solution.v": "5e8451bdd6360fd95c78a2ca42f8c6ef5197469c4b59609e9212357fdf4bc4ae",
+        "tb.sv": "cbd287e2d8a27ec5750b53f81449dbc62b8c58b84d0fcc3c7e897f80c62ba8d0"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_005\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_005\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=always_case2 checks=16 vectors=16\r\ntb.sv:24: $finish called at 16000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "3d4b443ff8fec4b5bd813216b658d1a40d06b4b97fccadf651a1a1746cafb98c"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/count10",
+      "metadata": "HDLBits/count10/problem.json",
+      "status": "passed",
+      "id": "count10",
+      "source_sha256": {
+        "solution.v": "8a0e4ffcd054bee89daf1beb57447c43ad74c14cc48f8a8458212ccc0d2301cb",
+        "tb.sv": "1b8b116d3bbef6afedc3c55592310c05e256f7307df421f83e2fbc065490a1af"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_006\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_006\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=count10 checks=170 vectors=57\r\ntb.sv:32: $finish called at 576000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "8570ac530cc1f0c75bfbf73832ea9fc7906ec4579d2b7fbd1c303dda96b40c60"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/dff8r",
+      "metadata": "HDLBits/dff8r/problem.json",
+      "status": "passed",
+      "id": "dff8r",
+      "source_sha256": {
+        "solution.v": "b91acdc7ae007082dc9ed09a03644445fd9919422243310a8005e8e9912efb01",
+        "tb.sv": "e5278f58e9c6f08a655d8b9ad7d8db8ebe0c9ea2fa1034acaa3e6fabea07da99"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_007\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_007\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=dff8r checks=1029 vectors=515\r\ntb.sv:31: $finish called at 5156000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "8742a358ed7c9d427c2b6e5943b1c11cbf58c50bdf9ee0ca6088aaf3543916ed"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/edgedetect",
+      "metadata": "HDLBits/edgedetect/problem.json",
+      "status": "passed",
+      "id": "edgedetect",
+      "source_sha256": {
+        "solution.v": "a0cbe9a98d8b36ab3ef831e7e413d2a99d99c765e5f99f3c38aaba5524178dcd",
+        "tb.sv": "4fdd2d29ebab1273a1106b8c444568d2fbc0fe0747ee257c10ca9ea94689af49"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_008\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_008\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=edgedetect checks=262145 vectors=131072\r\ntb.sv:37: $finish called at 1310726000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "dcc95c4410ddeb67aa4628865c2fe2b27d3c41106d4868616bf08bf0359abd43"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/fadd",
+      "metadata": "HDLBits/fadd/problem.json",
+      "status": "passed",
+      "id": "fadd",
+      "source_sha256": {
+        "solution.v": "5defb763da86d201bde2bdd16db68b439087fb9e220adbd1d5ab2f18948055d3",
+        "tb.sv": "661baa8afd18e8a82a1092e4d7c5940eb45f2d8d0e6905fd04c40f312e9eb863"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_009\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_009\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=fadd checks=8 vectors=8\r\ntb.sv:20: $finish called at 8000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "16a4b36d369673d3a5dcf064334998c2c6405195c19495c1841af29cdf51e6d2"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/fsm1s",
+      "metadata": "HDLBits/fsm1s/problem.json",
+      "status": "passed",
+      "id": "fsm1s",
+      "source_sha256": {
+        "solution.v": "b314b91aa2bdd54538305c147b362b69d4f2a593fc56d908e6424c79b4b01747",
+        "tb.sv": "b89655d76f627f5a6a10be0c7782caa9a8837ae553faa45a336b4ff6c4637194"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_010\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_010\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=fsm1s checks=8207 vectors=4104\r\ntb.sv:35: $finish called at 41046000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "81e7880ea6ae4f8da49150a35fc06a3c931d7a80c6bbe1fcfa38b6f9e0725553"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/mux2to1v",
+      "metadata": "HDLBits/mux2to1v/problem.json",
+      "status": "passed",
+      "id": "mux2to1v",
+      "source_sha256": {
+        "solution.v": "6216134f84fdb6b5302d96151237730baf922fae6bfd2b1ebd5edf3a7c90610f",
+        "tb.sv": "4121934bb2f711406b322b9f65c44e5bd1662e3b3dacf6b7c84ce976d4f238bd"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_011\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_011\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=mux2to1v checks=610 vectors=610\r\ntb.sv:36: $finish called at 610000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "35696416e72ef4ff7fde2a6a7e8566992674726fa2ba513f1354dc28b716ad07"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/popcount3",
+      "metadata": "HDLBits/popcount3/problem.json",
+      "status": "passed",
+      "id": "popcount3",
+      "source_sha256": {
+        "solution.v": "910a57282d4ae200bafe06875c397f5c73de7c39d31a666704226e94a93c8992",
+        "tb.sv": "ae1add5e0638d19d5d61443851aa47a52ab10005927e13472161472790aef229"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_012\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_012\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=popcount3 checks=8 vectors=8\r\ntb.sv:23: $finish called at 8000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "af8f8345bd9c0b29326263116dcb6c55769387b8bdacae8dba8e22a7c9a0f327"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/shift4",
+      "metadata": "HDLBits/shift4/problem.json",
+      "status": "passed",
+      "id": "shift4",
+      "source_sha256": {
+        "solution.v": "c83fe086a8e753f78b34786c1c41c3b998f01c32aa3d5277a3539d456c51f525",
+        "tb.sv": "3c238b3e0c3246f73b341a2d61f8c890cf87e0bcee41f3dbe178fe72441aacb5"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_013\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_013\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=shift4 checks=514 vectors=257\r\ntb.sv:42: $finish called at 2576000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "f2ebb95562294e0159a4529171af3a4ab259d7cab02de94eeb691f8ad1d004c8"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/step_one",
+      "metadata": "HDLBits/step_one/problem.json",
+      "status": "passed",
+      "id": "step_one",
+      "source_sha256": {
+        "solution.v": "99cacd51a1ec106e780be054a176858ce99d2676d55d450298f117b783239a53",
+        "tb.sv": "25c0d6275fb5400da4ae24994706ca68a23438faf0b1b759fba5a63482baf8c3"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_014\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_014\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=step_one checks=3 vectors=3\r\ntb.sv:16: $finish called at 25000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "6a478b1aaadd344bdb86e03c473ddffc58afcc3af75ec88243eb993cc54460bf"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/vector2",
+      "metadata": "HDLBits/vector2/problem.json",
+      "status": "passed",
+      "id": "vector2",
+      "source_sha256": {
+        "solution.v": "8039a36063bb244b076dbf75d17932d4f46be2faed023dc06629e449fa46af33",
+        "tb.sv": "bdd7e92121b3834d15cc1c2b4e3abdb6733abeb3c9465bf3db9822648c96a638"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_015\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_015\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=vector2 checks=1035 vectors=1035\r\ntb.sv:29: $finish called at 1035000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "93a3f4dbbf8b37c6e36e8908331831024c0c2d685aef279a53e679150841ef9c"
+          }
+        }
+      ]
+    },
+    {
+      "directory": "HDLBits/vectorr",
+      "metadata": "HDLBits/vectorr/problem.json",
+      "status": "passed",
+      "id": "vectorr",
+      "source_sha256": {
+        "solution.v": "c31a2ad1152d9b285d7794dd1a23f972ea622565bccfbdcfa9dc37fa08a7cd09",
+        "tb.sv": "7fa2dc29d5eee38a3e4362a92a8cae5becbbe742ad14a381716e148ddd79feff"
+      },
+      "runs": [
+        {
+          "name": "normal",
+          "parameters": {},
+          "expected": "pass",
+          "compile": {
+            "argv": [
+              "C:\\iverilog\\bin\\iverilog.exe",
+              "-g2012",
+              "-gstrict-expr-width",
+              "-Wall",
+              "-s",
+              "tb",
+              "-o",
+              "sim.vvp",
+              "solution.v",
+              "tb.sv"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_016\\run_00",
+            "returncode": 0,
+            "stdout": "",
+            "stderr": "warning: Some design elements have no explicit time unit and/or\r\n       : time precision. This may cause confusing timing results.\r\n       : Affected design elements are:\r\n       :   -- module top_module declared here: solution.v:1\r\n",
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "status": "passed",
+          "simulation": {
+            "argv": [
+              "C:\\iverilog\\bin\\vvp.exe",
+              "-n",
+              "sim.vvp"
+            ],
+            "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe\\example_016\\run_00",
+            "returncode": 0,
+            "stdout": "PASS id=vectorr checks=256 vectors=256\r\ntb.sv:23: $finish called at 256000 (1ps)\r\n",
+            "stderr": "",
+            "stdout_sha256": "0113612d292b6f063e3d2ced4c658e58dca06a5d0b3eba2cc65b0bf5af263e82"
+          }
+        }
+      ]
+    }
+  ],
+  "tool_versions": {
+    "iverilog": {
+      "argv": [
+        "C:\\iverilog\\bin\\iverilog.exe",
+        "-V"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe",
+      "returncode": 0,
+      "stdout": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)\r\n\r\nCopyright (c) 2000-2021 Stephen Williams (steve@icarus.com)\r\n\r\n  This program is free software; you can redistribute it and/or modify\r\n  it under the terms of the GNU General Public License as published by\r\n  the Free Software Foundation; either version 2 of the License, or\r\n  (at your option) any later version.\r\n\r\n  This program is distributed in the hope that it will be useful,\r\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n  GNU General Public License for more details.\r\n\r\n  You should have received a copy of the GNU General Public License along\r\n  with this program; if not, write to the Free Software Foundation, Inc.,\r\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\r\n\r\nIcarus Verilog Preprocessor version 12.0 (devel) (s20150603-1539-g2693dd32b)\r\n\r\nCopyright (c) 1999-2021 Stephen Williams (steve@icarus.com)\r\n\r\n  This program is free software; you can redistribute it and/or modify\r\n  it under the terms of the GNU General Public License as published by\r\n  the Free Software Foundation; either version 2 of the License, or\r\n  (at your option) any later version.\r\n\r\n  This program is distributed in the hope that it will be useful,\r\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n  GNU General Public License for more details.\r\n\r\n  You should have received a copy of the GNU General Public License along\r\n  with this program; if not, write to the Free Software Foundation, Inc.,\r\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\r\n\r\nIcarus Verilog Parser/Elaborator version 12.0 (devel) (s20150603-1539-g2693dd32b)\r\n\r\nCopyright (c) 1998-2021 Stephen Williams (steve@icarus.com)\r\n\r\n  This program is free software; you can redistribute it and/or modify\r\n  it under the terms of the GNU General Public License as published by\r\n  the Free Software Foundation; either version 2 of the License, or\r\n  (at your option) any later version.\r\n\r\n  This program is distributed in the hope that it will be useful,\r\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n  GNU General Public License for more details.\r\n\r\n  You should have received a copy of the GNU General Public License along\r\n  with this program; if not, write to the Free Software Foundation, Inc.,\r\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\r\n\r\n FLAGS DLL vvp.tgt\r\nvvp.tgt: Icarus Verilog VVP Code Generator 12.0 (devel) (s20150603-1539-g2693dd32b)\r\n\r\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\r\n\r\n  This program is free software; you can redistribute it and/or modify\r\n  it under the terms of the GNU General Public License as published by\r\n  the Free Software Foundation; either version 2 of the License, or\r\n  (at your option) any later version.\r\n\r\n  This program is distributed in the hope that it will be useful,\r\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n  GNU General Public License for more details.\r\n\r\n  You should have received a copy of the GNU General Public License along\r\n  with this program; if not, write to the Free Software Foundation, Inc.,\r\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\r\n\r\n",
+      "stderr": "",
+      "stdout_sha256": "afe39246ebea2fc44b4de97450548f6e0b4281f87666efc2d35d2cf11968b282"
+    },
+    "vvp": {
+      "argv": [
+        "C:\\iverilog\\bin\\vvp.exe",
+        "-V"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Icarus Verilog runtime version 12.0 (devel) (s20150603-1539-g2693dd32b)\r\n\r\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\r\n\r\n  This program is free software; you can redistribute it and/or modify\r\n  it under the terms of the GNU General Public License as published by\r\n  the Free Software Foundation; either version 2 of the License, or\r\n  (at your option) any later version.\r\n\r\n  This program is distributed in the hope that it will be useful,\r\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n  GNU General Public License for more details.\r\n\r\n  You should have received a copy of the GNU General Public License along\r\n  with this program; if not, write to the Free Software Foundation, Inc.,\r\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\r\n\r\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ghdl": {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\ghdl-6.0.0\\bin\\ghdl.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\final-builds\\hardware-check-k0lhzahe",
+      "returncode": 0,
+      "stdout": "GHDL 6.0.0 (6.0.0.r0.ge589c698c.dirty) [Dunoon edition]\r\n Compiled with GNAT Version: 15.2.0\r\n static elaboration, mcode JIT code generator\r\nWritten by Tristan Gingold.\r\n\r\nCopyright (C) 2003 - 2026 Tristan Gingold.\r\nGHDL is free software, covered by the GNU General Public License.  There is NO\r\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\r\n",
+      "stderr": "",
+      "stdout_sha256": "65ef443793a30d5110a4df1695346f8c1656c3f9f28ee1f65c29c938b93a8da6"
+    }
+  },
+  "summary": {
+    "entries": 17,
+    "entries_passed": 17,
+    "runs": 24,
+    "normal_passed": 20,
+    "negative_controls_detected": 3,
+    "generations_passed": 1
+  },
+  "status": "passed_local_checks"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "shift4",
+  "title": "비동기 리셋과 병렬 적재를 갖는 우측 시프트",
+  "language": "Verilog",
+  "testbench_language": "SystemVerilog",
+  "source_url": "https://hdlbits.01xz.net/wiki/shift4",
+  "top": "tb",
+  "rtl_top": "top_module",
+  "sources": [
+    "solution.v",
+    "tb.sv"
+  ],
+  "rtl_file": "solution.v",
+  "tb_file": "tb.sv",
+  "source_sha256": {
+    "solution.v": "c83fe086a8e753f78b34786c1c41c3b998f01c32aa3d5277a3539d456c51f525",
+    "tb.sv": "3c238b3e0c3246f73b341a2d61f8c890cf87e0bcee41f3dbe178fe72441aacb5"
+  },
+  "expected_marker": "PASS id=shift4 ",
+  "summary": "비동기 리셋을 가장 먼저 처리하고 상승 에지에서는load가ena보다 우선하도록 상태를 갱신합니다.",
+  "interface": "입력 clk·areset·load·ena·data[3:0], 출력 q[3:0]입니다. areset은 비동기 active-high입니다.",
+  "local_tests": {
+    "scope": "16개 저장 상태와 load·ena의 네 조합을 교차 검사하고 각 조합에서 리셋 우선·해제 후 유지까지 확인합니다. 총257에지·514비교입니다.",
+    "independent_oracle": "이전 상태를 정수로 두고 ena일 때2로 나누어 기대값을 계산합니다. 비동기 리셋은 상승 클록 전에0이 되는지도 확인합니다.",
+    "checks": {
+      "checks": 514,
+      "vectors": 257
+    },
+    "result": "PASS",
+    "date": "2026-10-26"
+  },
+  "trace": [
+    {
+      "step": "1",
+      "event": "이전q=D",
+      "input": "load=0,ena=0",
+      "expected": "q=D 유지"
+    },
+    {
+      "step": "2",
+      "event": "이전q=D",
+      "input": "load=0,ena=1",
+      "expected": "q=6; 1101→0110"
+    },
+    {
+      "step": "3",
+      "event": "이전q=D",
+      "input": "load=1,ena=1,data=2",
+      "expected": "q=2; 이동보다 적재 우선"
+    },
+    {
+      "step": "4",
+      "event": "아무 이전값",
+      "input": "areset=1",
+      "expected": "클록 전q=0"
+    },
+    {
+      "step": "5",
+      "event": "리셋 해제 뒤",
+      "input": "load=0,ena=0",
+      "expected": "q=0 유지"
+    }
+  ],
+  "results": [
+    {
+      "name": "normal",
+      "parameters": {},
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:/iverilog/bin/iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "sim.vvp",
+          "solution.v",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\hdlbits-local\\run_shift4",
+        "environment": {
+          "TEMP": ".",
+          "TMP": "."
+        },
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module top_module declared here: solution.v:1\n"
+      },
+      "simulation": {
+        "command": [
+          "C:/iverilog/bin/vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\hdlbits-local\\run_shift4",
+        "environment": {
+          "TEMP": ".",
+          "TMP": "."
+        },
+        "returncode": 0,
+        "stdout": "PASS id=shift4 checks=514 vectors=257\ntb.sv:42: $finish called at 2576000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 514,
+        "vectors": 257
+      }
+    }
+  ],
+  "validation_scope": {
+    "local_digital_simulation": true,
+    "online_judging_recorded_here": false,
+    "synthesis": false,
+    "sta": false,
+    "formal_proof": false,
+    "physical_board": false
+  }
+}

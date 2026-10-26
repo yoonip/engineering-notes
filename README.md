@@ -55,6 +55,7 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 �
 | --- | --- |
 | [프로젝트](프로젝트_projects/README.md) · [실행 예제](예제_examples/README.md) | 소스, 실행 방법, 검증 결과 |
 | [알고리즘과 코딩테스트](programmers/README.md) | 프로그래머스 제출 코드와 풀이·문법 설명, [유형별 학습과 연습문제](programmers/유형별학습_algorithm-patterns/README.md), 미완료 시도 분석 |
+| [하드웨어 코딩 문제와 예제](하드웨어코딩_hardware-coding/README.md) | HDLBits Verilog 풀이·채점 기록, SystemVerilog·VHDL·Amaranth 회로와 자체 검사, 공식 실습 사이트와 공개 코드 안내 |
 | [연구 기록](연구_research/README.md) | 참여 연구, 논문, 학술 활동과 수상 |
 | [작성자 소개](소개_about/README.md) · [연락](소개_about/연락_CONTACT.md) | 학력, 관심 분야, 협업 연락처 |
 
@@ -82,7 +83,7 @@ These notes connect circuits, semiconductors, RTL, firmware, systems software, G
 - Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [product and technology reviews](제품리뷰_reviews/README.md), [AI model references](AI모델실험_model-lab/README.md).
 - Practical work: [Roles and engineering practice](직무와실무기술_job-practice/README.md), [measurement and debugging](현장계측과검증_measurement-validation/README.md), [engineering cases and dated checks](설계와검증사례_engineering-cases/README.md).
 
-- Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [Programmers solutions](programmers/README.md).
+- Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [Programmers solutions](programmers/README.md), [hardware coding practice](하드웨어코딩_hardware-coding/README.md).
 - Background: [Research](연구_research/README.md), [author](소개_about/README.md), [contact](소개_about/연락_CONTACT.md), [tools](도구와환경_tools/README.md), [references](참고자료_references/README.md), [contributing](기여안내_contributing/README.md).
 
 ### Engineering and shared knowledge

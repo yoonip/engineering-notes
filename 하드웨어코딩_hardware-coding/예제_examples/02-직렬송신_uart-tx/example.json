@@ -1,0 +1,358 @@
+{
+  "id": "02-uart-tx",
+  "title": "8N1 직렬 송신과 비트 유지 시간",
+  "language": "SystemVerilog",
+  "contract": {
+    "clock_period_ns": 10,
+    "clocks_per_bit_valid_range": [
+      2,
+      16
+    ],
+    "data_bits": 8,
+    "parity": "none",
+    "stop_bits": 1,
+    "bit_order": "LSB first",
+    "idle_level": 1,
+    "start_level": 0,
+    "request": "posedge clk, rst=0, ready=1 and send=1",
+    "busy_request": "ignored",
+    "reset": "active-high synchronous; abort frame without done",
+    "done": "one clock after exactly 10*CLOCKS_PER_BIT intervals since acceptance"
+  },
+  "independent_oracle": "DUT 내부 frame·ticks·bit_index를 읽지 않고 원래 요청 바이트와 경과 클록의 외부 시간표만 비교합니다.",
+  "trace": [
+    {
+      "relative_clock": "0..2",
+      "serial": "0",
+      "meaning": "start for CLOCKS_PER_BIT=3"
+    },
+    {
+      "relative_clock": "3..5",
+      "serial": "0",
+      "meaning": "A6 bit0"
+    },
+    {
+      "relative_clock": "6..8",
+      "serial": "1",
+      "meaning": "A6 bit1"
+    },
+    {
+      "relative_clock": "9..26",
+      "serial": "1,0,0,1,0,1 each for3 clocks",
+      "meaning": "A6 bit2..7"
+    },
+    {
+      "relative_clock": "27..29",
+      "serial": "1",
+      "meaning": "stop"
+    },
+    {
+      "relative_clock": "30",
+      "serial": "1,busy=0,done=1",
+      "meaning": "completion after full stop interval"
+    }
+  ],
+  "references": [
+    {
+      "title": "Microchip USART frame formats",
+      "url": "https://onlinedocs.microchip.com/oxy/GUID-7BB81102-57F6-474D-9BFE-B2AF8EA02A1E-en-US-5/GUID-F84E04E8-3235-4E21-89A9-D1911E9B91DD.html"
+    },
+    {
+      "title": "Microchip USART asynchronous operation, idle/start/LSB",
+      "url": "https://ww1.microchip.com/downloads/cn/DeviceDoc/cn_usart.pdf"
+    },
+    {
+      "title": "Icarus vvp flags",
+      "url": "https://steveicarus.github.io/iverilog/usage/vvp_flags.html"
+    }
+  ],
+  "sources": [
+    "uart_tx.sv",
+    "tb.sv"
+  ],
+  "top": "tb_uart_tx",
+  "rtl_file": "uart_tx.sv",
+  "tb_file": "tb.sv",
+  "source_sha256": {
+    "uart_tx.sv": "16c6b7c0cb74582907299d41f00a866cd069b6ab27f2d0c9c8017e9d7043657a",
+    "tb.sv": "045c3bd6b992f300ab4db540125a0a3679947b2fad7e802edfa91202dcd0f858"
+  },
+  "checks": {
+    "normal_settings": 4,
+    "negative_controls_detected": 1,
+    "per_setting": {
+      "normal_cpb2": {
+        "checks": 282,
+        "frames": 4,
+        "serial_samples": 80,
+        "ignored_requests": 4,
+        "resets_in_frame": 1,
+        "clocks_per_bit": 2
+      },
+      "normal_cpb3": {
+        "checks": 412,
+        "frames": 4,
+        "serial_samples": 120,
+        "ignored_requests": 4,
+        "resets_in_frame": 1,
+        "clocks_per_bit": 3
+      },
+      "normal_cpb5": {
+        "checks": 672,
+        "frames": 4,
+        "serial_samples": 200,
+        "ignored_requests": 4,
+        "resets_in_frame": 1,
+        "clocks_per_bit": 5
+      },
+      "normal_cpb16": {
+        "checks": 2102,
+        "frames": 4,
+        "serial_samples": 640,
+        "ignored_requests": 4,
+        "resets_in_frame": 1,
+        "clocks_per_bit": 16
+      }
+    }
+  },
+  "results": [
+    {
+      "name": "normal_cpb2",
+      "parameters": {
+        "CLOCKS_PER_BIT": 2
+      },
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:\\iverilog\\bin\\iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb_uart_tx",
+          "-Ptb_uart_tx.CLOCKS_PER_BIT=2",
+          "-o",
+          "sim.vvp",
+          "uart_tx.sv",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_02_normal_cpb2",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "simulation": {
+        "command": [
+          "C:\\iverilog\\bin\\vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_02_normal_cpb2",
+        "returncode": 0,
+        "stdout": "PASS checks=282 frames=4 serial_samples=80 ignored_requests=4 resets_in_frame=1 clocks_per_bit=2\ntb.sv:63: $finish called at 1166000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 282,
+        "frames": 4,
+        "serial_samples": 80,
+        "ignored_requests": 4,
+        "resets_in_frame": 1,
+        "clocks_per_bit": 2
+      }
+    },
+    {
+      "name": "normal_cpb3",
+      "parameters": {
+        "CLOCKS_PER_BIT": 3
+      },
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:\\iverilog\\bin\\iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb_uart_tx",
+          "-Ptb_uart_tx.CLOCKS_PER_BIT=3",
+          "-o",
+          "sim.vvp",
+          "uart_tx.sv",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_02_normal_cpb3",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "simulation": {
+        "command": [
+          "C:\\iverilog\\bin\\vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_02_normal_cpb3",
+        "returncode": 0,
+        "stdout": "PASS checks=412 frames=4 serial_samples=120 ignored_requests=4 resets_in_frame=1 clocks_per_bit=3\ntb.sv:63: $finish called at 1676000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 412,
+        "frames": 4,
+        "serial_samples": 120,
+        "ignored_requests": 4,
+        "resets_in_frame": 1,
+        "clocks_per_bit": 3
+      }
+    },
+    {
+      "name": "normal_cpb5",
+      "parameters": {
+        "CLOCKS_PER_BIT": 5
+      },
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:\\iverilog\\bin\\iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb_uart_tx",
+          "-Ptb_uart_tx.CLOCKS_PER_BIT=5",
+          "-o",
+          "sim.vvp",
+          "uart_tx.sv",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_02_normal_cpb5",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "simulation": {
+        "command": [
+          "C:\\iverilog\\bin\\vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_02_normal_cpb5",
+        "returncode": 0,
+        "stdout": "PASS checks=672 frames=4 serial_samples=200 ignored_requests=4 resets_in_frame=1 clocks_per_bit=5\ntb.sv:63: $finish called at 2696000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 672,
+        "frames": 4,
+        "serial_samples": 200,
+        "ignored_requests": 4,
+        "resets_in_frame": 1,
+        "clocks_per_bit": 5
+      }
+    },
+    {
+      "name": "normal_cpb16",
+      "parameters": {
+        "CLOCKS_PER_BIT": 16
+      },
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:\\iverilog\\bin\\iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb_uart_tx",
+          "-Ptb_uart_tx.CLOCKS_PER_BIT=16",
+          "-o",
+          "sim.vvp",
+          "uart_tx.sv",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_02_normal_cpb16",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "simulation": {
+        "command": [
+          "C:\\iverilog\\bin\\vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_02_normal_cpb16",
+        "returncode": 0,
+        "stdout": "PASS checks=2102 frames=4 serial_samples=640 ignored_requests=4 resets_in_frame=1 clocks_per_bit=16\ntb.sv:63: $finish called at 8306000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 2102,
+        "frames": 4,
+        "serial_samples": 640,
+        "ignored_requests": 4,
+        "resets_in_frame": 1,
+        "clocks_per_bit": 16
+      }
+    },
+    {
+      "name": "negative_reverse_data",
+      "parameters": {
+        "CLOCKS_PER_BIT": 3,
+        "BUG_REVERSE_DATA": 1
+      },
+      "expected": "functional_failure",
+      "compile": {
+        "command": [
+          "C:\\iverilog\\bin\\iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb_uart_tx",
+          "-Ptb_uart_tx.CLOCKS_PER_BIT=3",
+          "-Ptb_uart_tx.BUG_REVERSE_DATA=1",
+          "-o",
+          "sim.vvp",
+          "uart_tx.sv",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_02_negative_reverse_data",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "simulation": {
+        "command": [
+          "C:\\iverilog\\bin\\vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_02_negative_reverse_data",
+        "returncode": 1,
+        "stdout": "FATAL: tb.sv:13: UART cpb=3 serial level and bit duration\n       Time: 56000  Scope: tb_uart_tx.verify\n",
+        "stderr": ""
+      },
+      "result": "EXPECTED_FUNCTIONAL_FAILURE"
+    }
+  ],
+  "tools": {
+    "iverilog_path": "C:\\iverilog\\bin\\iverilog.exe",
+    "vvp_path": "C:\\iverilog\\bin\\vvp.exe",
+    "version_stdout": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)"
+  },
+  "validation_scope": {
+    "online_problem_grading": false,
+    "local_digital_simulation": true,
+    "synthesis": false,
+    "formal_proof": false,
+    "sta": false,
+    "fpga_board": false
+  },
+  "verified_date": "2026-10-26"
+}

@@ -39,6 +39,7 @@ Verilog, SystemVerilog, VHDL, Verilog-A/AMS, Chisel, SpinalHDL, Amaranth, HLS
 ## 참고 자료
 
 - [Verilator documentation](https://verilator.org/guide/latest/)
+- [하드웨어 코딩 문제와 예제](../../하드웨어코딩_hardware-coding/README.md): HDLBits 풀이·사이트 채점 기록과 SystemVerilog·VHDL·Amaranth 회로의 줄별 설명·시간 흐름·자체 검사
 
 
 ## 개념·유도·모델·검증

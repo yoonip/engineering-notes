@@ -1,0 +1,121 @@
+{
+  "id": "fsm1s",
+  "title": "B에서 리셋하고0에서 토글하는 두 상태 FSM",
+  "language": "Verilog",
+  "testbench_language": "SystemVerilog",
+  "source_url": "https://hdlbits.01xz.net/wiki/fsm1s",
+  "top": "tb",
+  "rtl_top": "top_module",
+  "sources": [
+    "solution.v",
+    "tb.sv"
+  ],
+  "rtl_file": "solution.v",
+  "tb_file": "tb.sv",
+  "source_sha256": {
+    "solution.v": "b314b91aa2bdd54538305c147b362b69d4f2a593fc56d908e6424c79b4b01747",
+    "tb.sv": "b89655d76f627f5a6a10be0c7782caa9a8837ae553faa45a336b4ff6c4637194"
+  },
+  "expected_marker": "PASS id=fsm1s ",
+  "summary": "동기 리셋에서B로 들어가며 입력0은 상태를 바꾸고 입력1은 유지합니다.",
+  "interface": "입력 clk·동기식 reset·in, 출력 out입니다. A의 출력은0, B의 출력은1입니다.",
+  "local_tests": {
+    "scope": "직접 리셋·유지·토글 흐름과 길이0~8의 모든 이진 문자열511개를 독립 리셋에서 검사합니다. 총4104에지·8207비교입니다.",
+    "independent_oracle": "DUT의 state를 읽지 않고 리셋 뒤0 입력의 개수 패리티로 out을 계산합니다. 에지 전 출력 유지도 확인합니다.",
+    "checks": {
+      "checks": 8207,
+      "vectors": 4104
+    },
+    "result": "PASS",
+    "date": "2026-10-26"
+  },
+  "trace": [
+    {
+      "step": "1",
+      "event": "reset 에지",
+      "input": "입력과 무관",
+      "expected": "B,out=1"
+    },
+    {
+      "step": "2",
+      "event": "in=1",
+      "input": "B에서 유지",
+      "expected": "B,out=1"
+    },
+    {
+      "step": "3",
+      "event": "in=0",
+      "input": "B에서 전이",
+      "expected": "A,out=0"
+    },
+    {
+      "step": "4",
+      "event": "in=1",
+      "input": "A에서 유지",
+      "expected": "A,out=0"
+    },
+    {
+      "step": "5",
+      "event": "reset 에지",
+      "input": "A에서 초기화",
+      "expected": "B,out=1"
+    }
+  ],
+  "results": [
+    {
+      "name": "normal",
+      "parameters": {},
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:/iverilog/bin/iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "sim.vvp",
+          "solution.v",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\hdlbits-local\\run_fsm1s",
+        "environment": {
+          "TEMP": ".",
+          "TMP": "."
+        },
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module top_module declared here: solution.v:1\n"
+      },
+      "simulation": {
+        "command": [
+          "C:/iverilog/bin/vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\hdlbits-local\\run_fsm1s",
+        "environment": {
+          "TEMP": ".",
+          "TMP": "."
+        },
+        "returncode": 0,
+        "stdout": "PASS id=fsm1s checks=8207 vectors=4104\ntb.sv:35: $finish called at 41046000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 8207,
+        "vectors": 4104
+      }
+    }
+  ],
+  "validation_scope": {
+    "local_digital_simulation": true,
+    "online_judging_recorded_here": false,
+    "synthesis": false,
+    "sta": false,
+    "formal_proof": false,
+    "physical_board": false
+  }
+}

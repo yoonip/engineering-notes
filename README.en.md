@@ -42,6 +42,7 @@ I hope this repository will be more than a store of finished answers. One reader
 | [AI model references](AI모델실험_model-lab/README.md) | Official model descriptions and separately documented educational numerical examples |
 | [Projects](프로젝트_projects/README.md) · [examples](예제_examples/README.md) | Implementations, execution steps and recorded checks |
 | [Programmers](programmers/README.md) | Submitted solutions, study notes and incomplete-attempt analysis |
+| [Hardware coding practice](하드웨어코딩_hardware-coding/README.md) | HDLBits Verilog solutions and recorded results, original SystemVerilog/VHDL/Amaranth circuits, annotated sources, cycle traces and self-checking tests |
 | [Research](연구_research/README.md) · [author](소개_about/README.md) | Research participation, publications and background |
 
 [Tools and environments](도구와환경_tools/README.md) · [References](참고자료_references/README.md) · [Full subject index](분야별목차_CATALOG.md) · [Contributing](기여안내_contributing/README.md) · [한국어](README.md)

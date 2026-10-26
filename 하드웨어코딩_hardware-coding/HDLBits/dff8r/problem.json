@@ -1,0 +1,121 @@
+{
+  "id": "dff8r",
+  "title": "동기식 active-high 리셋의8비트 레지스터",
+  "language": "Verilog",
+  "testbench_language": "SystemVerilog",
+  "source_url": "https://hdlbits.01xz.net/wiki/dff8r",
+  "top": "tb",
+  "rtl_top": "top_module",
+  "sources": [
+    "solution.v",
+    "tb.sv"
+  ],
+  "rtl_file": "solution.v",
+  "tb_file": "tb.sv",
+  "source_sha256": {
+    "solution.v": "b91acdc7ae007082dc9ed09a03644445fd9919422243310a8005e8e9912efb01",
+    "tb.sv": "e5278f58e9c6f08a655d8b9ad7d8db8ebe0c9ea2fa1034acaa3e6fabea07da99"
+  },
+  "expected_marker": "PASS id=dff8r ",
+  "summary": "상승 에지마다 reset이1이면0을 저장하고 아니면d를 저장합니다.",
+  "interface": "입력 clk·reset·d[7:0], 출력 q[7:0]입니다. reset은 동기식 active-high입니다.",
+  "local_tests": {
+    "scope": "총515개 저장 에지와 에지 전·후1029개 비교입니다. 첫 초기화 전 X는 유지 비교에서 제외합니다.",
+    "independent_oracle": "에지 사이에는 이전 q 유지, 에지 뒤에는 reset에 따른0 또는 입력값을 확인합니다. 모든256개 입력 저장과 모든256개 데이터에서의 리셋 우선을 검사합니다.",
+    "checks": {
+      "checks": 1029,
+      "vectors": 515
+    },
+    "result": "PASS",
+    "date": "2026-10-26"
+  },
+  "trace": [
+    {
+      "step": "1",
+      "event": "첫 리셋 에지",
+      "input": "reset=1,d=FF",
+      "expected": "q=00"
+    },
+    {
+      "step": "2",
+      "event": "데이터 순회",
+      "input": "reset=0,d=00..FF",
+      "expected": "q가 각 입력을 에지 뒤 저장"
+    },
+    {
+      "step": "3",
+      "event": "다음 리셋 전",
+      "input": "기존q=FF,reset을1로 변경",
+      "expected": "상승 에지 전에는FF 유지"
+    },
+    {
+      "step": "4",
+      "event": "다음 리셋 에지",
+      "input": "reset=1,d=00",
+      "expected": "q=00"
+    },
+    {
+      "step": "5",
+      "event": "리셋 뒤 복구",
+      "input": "d=5A,이후A5",
+      "expected": "각 상승 에지 뒤5A, A5"
+    }
+  ],
+  "results": [
+    {
+      "name": "normal",
+      "parameters": {},
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:/iverilog/bin/iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "sim.vvp",
+          "solution.v",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\hdlbits-local\\run_dff8r",
+        "environment": {
+          "TEMP": ".",
+          "TMP": "."
+        },
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module top_module declared here: solution.v:1\n"
+      },
+      "simulation": {
+        "command": [
+          "C:/iverilog/bin/vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\hdlbits-local\\run_dff8r",
+        "environment": {
+          "TEMP": ".",
+          "TMP": "."
+        },
+        "returncode": 0,
+        "stdout": "PASS id=dff8r checks=1029 vectors=515\ntb.sv:31: $finish called at 5156000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 1029,
+        "vectors": 515
+      }
+    }
+  ],
+  "validation_scope": {
+    "local_digital_simulation": true,
+    "online_judging_recorded_here": false,
+    "synthesis": false,
+    "sta": false,
+    "formal_proof": false,
+    "physical_board": false
+  }
+}

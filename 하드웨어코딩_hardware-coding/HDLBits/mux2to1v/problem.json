@@ -1,0 +1,115 @@
+{
+  "id": "mux2to1v",
+  "title": "100비트 두 후보 중 하나 선택",
+  "language": "Verilog",
+  "testbench_language": "SystemVerilog",
+  "source_url": "https://hdlbits.01xz.net/wiki/mux2to1v",
+  "top": "tb",
+  "rtl_top": "top_module",
+  "sources": [
+    "solution.v",
+    "tb.sv"
+  ],
+  "rtl_file": "solution.v",
+  "tb_file": "tb.sv",
+  "source_sha256": {
+    "solution.v": "6216134f84fdb6b5302d96151237730baf922fae6bfd2b1ebd5edf3a7c90610f",
+    "tb.sv": "4121934bb2f711406b322b9f65c44e5bd1662e3b3dacf6b7c84ce976d4f238bd"
+  },
+  "expected_marker": "PASS id=mux2to1v ",
+  "summary": "sel이0이면a,1이면b의100비트 전체를 출력에 연결합니다.",
+  "interface": "입력 a[99:0]·b[99:0]·sel, 출력 out[99:0]입니다.",
+  "local_tests": {
+    "scope": "극단 패턴8개,100개 위치당6개 원-핫 선택, 교대 패턴2개로 총610벡터입니다.",
+    "independent_oracle": "각 비트마다 if로 선택한 기대값을 만들고 전체100비트와 대조합니다. 모든 위치의 원-핫·공통1·선택 방향을 검사합니다.",
+    "checks": {
+      "checks": 610,
+      "vectors": 610
+    },
+    "result": "PASS",
+    "date": "2026-10-26"
+  },
+  "trace": [
+    {
+      "step": "1",
+      "event": "sel=0",
+      "input": "a=0,b=전체1",
+      "expected": "out=0"
+    },
+    {
+      "step": "2",
+      "event": "sel=1",
+      "input": "a=0,b=전체1",
+      "expected": "out=전체1"
+    },
+    {
+      "step": "3",
+      "event": "sel=0",
+      "input": "a의99번만1,b=0",
+      "expected": "out의99번만1"
+    },
+    {
+      "step": "4",
+      "event": "sel=1",
+      "input": "a의99번만1,b=0",
+      "expected": "out=0"
+    }
+  ],
+  "results": [
+    {
+      "name": "normal",
+      "parameters": {},
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:/iverilog/bin/iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb",
+          "-o",
+          "sim.vvp",
+          "solution.v",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\hdlbits-local\\run_mux2to1v",
+        "environment": {
+          "TEMP": ".",
+          "TMP": "."
+        },
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module top_module declared here: solution.v:1\n"
+      },
+      "simulation": {
+        "command": [
+          "C:/iverilog/bin/vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\hdlbits-local\\run_mux2to1v",
+        "environment": {
+          "TEMP": ".",
+          "TMP": "."
+        },
+        "returncode": 0,
+        "stdout": "PASS id=mux2to1v checks=610 vectors=610\ntb.sv:36: $finish called at 610000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 610,
+        "vectors": 610
+      }
+    }
+  ],
+  "validation_scope": {
+    "local_digital_simulation": true,
+    "online_judging_recorded_here": false,
+    "synthesis": false,
+    "sta": false,
+    "formal_proof": false,
+    "physical_board": false
+  }
+}

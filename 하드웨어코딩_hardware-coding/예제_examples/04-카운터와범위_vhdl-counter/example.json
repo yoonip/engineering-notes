@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "circuit": "mod10 enable counter",
+  "original_work": true,
+  "third_party_code_copied": false,
+  "ports": {
+    "clk": "rising-edge clock",
+    "clear": "active-high synchronous clear; priority over enable",
+    "enable": "increment when high and clear is low",
+    "count": "4-bit unsigned; reachable states0..9"
+  },
+  "timing": {
+    "clock_period_ns": 10,
+    "first_rising_edge_ns": 5,
+    "before_edge_check_offset_ns": 4,
+    "after_edge_check_offset_ns": 6,
+    "simulation_duration_ns": 800
+  },
+  "stimulus": {
+    "cycles": 80,
+    "clear_cycles": [
+      0,
+      17,
+      18,
+      47,
+      79
+    ],
+    "enable_rule": "cycle % 5 != 2",
+    "initial_simulated_count": 0,
+    "reference_transition": "clear ? 0 : enable ? (expected + 1) % 10 : expected",
+    "wrap_transitions_in_scenario": 5
+  },
+  "trace": [
+    {
+      "cycle": 0,
+      "clear": 1,
+      "enable": 1,
+      "before": 0,
+      "after": 0,
+      "rising_edge_ns": 5,
+      "sample_ns": 6
+    },
+    {
+      "cycle": 1,
+      "clear": 0,
+      "enable": 1,
+      "before": 0,
+      "after": 1,
+      "rising_edge_ns": 15,
+      "sample_ns": 16
+    },
+    {
+      "cycle": 2,
+      "clear": 0,
+      "enable": 0,
+      "before": 1,
+      "after": 1,
+      "rising_edge_ns": 25,
+      "sample_ns": 26
+    },
+    {
+      "cycle": 11,
+      "clear": 0,
+      "enable": 1,
+      "before": 8,
+      "after": 9,
+      "rising_edge_ns": 115,
+      "sample_ns": 116
+    },
+    {
+      "cycle": 12,
+      "clear": 0,
+      "enable": 0,
+      "before": 9,
+      "after": 9,
+      "rising_edge_ns": 125,
+      "sample_ns": 126
+    },
+    {
+      "cycle": 13,
+      "clear": 0,
+      "enable": 1,
+      "before": 9,
+      "after": 0,
+      "rising_edge_ns": 135,
+      "sample_ns": 136
+    },
+    {
+      "cycle": 18,
+      "clear": 1,
+      "enable": 1,
+      "before": 0,
+      "after": 0,
+      "rising_edge_ns": 185,
+      "sample_ns": 186
+    },
+    {
+      "cycle": 79,
+      "clear": 1,
+      "enable": 1,
+      "before": 5,
+      "after": 0,
+      "rising_edge_ns": 795,
+      "sample_ns": 796
+    }
+  ],
+  "verification_scope": [
+    "Local functional simulation of one deterministic80-cycle binary-input scenario",
+    "Three assertions per cycle: pre-edge stability, post-edge value, decimal range"
+  ],
+  "hardware_scope": {
+    "synthesis": false,
+    "place_and_route": false,
+    "board_measurement": false,
+    "notes": "External asynchronous inputs need synchronization and any required debouncing; physical clock/pin/timing constraints are separate."
+  },
+  "id": "04",
+  "title": "VHDL 동기 카운터",
+  "language": "VHDL-2008",
+  "design_files": [
+    "counter.vhd"
+  ],
+  "testbench_files": [
+    "tb_counter.vhd"
+  ],
+  "testbench_top": "tb_counter",
+  "expected_marker": "PASS mod10_counter cycles=80 checks=240",
+  "tool": {
+    "name": "GHDL",
+    "version": "6.0.0",
+    "backend": "mcode JIT",
+    "version_output": "GHDL 6.0.0 (6.0.0.r0.ge589c698c.dirty) [Dunoon edition]\n Compiled with GNAT Version: 15.2.0\n static elaboration, mcode JIT code generator\nWritten by Tristan Gingold.\n\nCopyright (C) 2003 - 2026 Tristan Gingold.\nGHDL is free software, covered by the GNU General Public License.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+    "release_url": "https://github.com/ghdl/ghdl/releases/tag/v6.0.0",
+    "download_url": "https://github.com/ghdl/ghdl/releases/download/v6.0.0/ghdl-mcode-6.0.0-mingw64.zip",
+    "archive_sha256": "c1562b2a4767e34d33159b536b5e36a8a38ebdb6e7672aa9969a4f4ac2cadffe"
+  },
+  "reproduction": {
+    "working_directory": "directory containing relative counter.vhd and tb_counter.vhd",
+    "commands": [
+      {
+        "argv": [
+          "ghdl",
+          "-a",
+          "--std=08",
+          "counter.vhd",
+          "tb_counter.vhd"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "ghdl",
+          "-e",
+          "--std=08",
+          "tb_counter"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "ghdl",
+          "-r",
+          "--std=08",
+          "tb_counter",
+          "--assert-level=error"
+        ],
+        "exit_code": 0,
+        "stdout": "tb_counter.vhd:42:9:@800ns:(report note): PASS mod10_counter cycles=80 checks=240\nsimulation finished @800ns with status 0\n",
+        "stderr": ""
+      }
+    ],
+    "windows_path_note": "The checked Windows build rejected non-ASCII absolute source paths inside work-obj08.cf. Sources were byte-identically staged and analyzed with relative filenames."
+  },
+  "verification": {
+    "status": "passed_local_simulation",
+    "checked_at": "2026-10-26T07:02:26.486Z",
+    "cycles": 80,
+    "assertions": 240,
+    "exit_code": 0,
+    "observed_stdout": "tb_counter.vhd:42:9:@800ns:(report note): PASS mod10_counter cycles=80 checks=240\nsimulation finished @800ns with status 0\n"
+  },
+  "source_sha256": {
+    "counter.vhd": "0d0bef76a897af906765c768b071f463eb66fceaa6df4accf641b315e3046094",
+    "tb_counter.vhd": "fc641bbbfbf6acecfd328d2a3385efa784fb83f54cbd6abe8648f1b862230013"
+  },
+  "official_references": [
+    {
+      "url": "https://ghdl.github.io/ghdl/quick_start/simulation/adder/index.html",
+      "role": "Analyze/elaborate/run and self-checking-testbench workflow; no source copied"
+    },
+    {
+      "url": "https://github.com/ghdl/ghdl/releases/tag/v6.0.0",
+      "role": "Official tool release; GPL tool code is not included"
+    }
+  ]
+}

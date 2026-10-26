@@ -1,0 +1,189 @@
+{
+  "id": "01-elastic-buffer",
+  "title": "한 칸 버퍼의 정체·교체·리셋",
+  "language": "SystemVerilog",
+  "contract": {
+    "clock_period_ns": 10,
+    "reset": "active-high; synchronous state clear; combinational valid/ready masking while rst=1",
+    "capacity_items": 1,
+    "data_bits": 8,
+    "transfer": "posedge clk, rst=0, valid=1 and ready=1",
+    "latency": "수락 직후 출력 유효, 최초 출력 전송은 다음 상승 에지부터입니다."
+  },
+  "independent_oracle": "DUT의 full·stored를 읽지 않고 수락 항목 큐로 값·순서·취소·최종 개수를 대조합니다.",
+  "trace": [
+    {
+      "edge": 1,
+      "input": "rst=1,valid=1,data=ff,ready=1",
+      "after": "empty; no transfer"
+    },
+    {
+      "edge": 2,
+      "input": "rst=0,valid=1,data=11,ready=0",
+      "after": "queue=[11],out_valid=1"
+    },
+    {
+      "edge": 3,
+      "input": "valid=0,ready=0",
+      "after": "queue=[11],output stable"
+    },
+    {
+      "edge": 4,
+      "input": "valid=1,data=22,ready=0",
+      "after": "queue=[11],22 not accepted"
+    },
+    {
+      "edge": 5,
+      "input": "valid=1,data=22,ready=1",
+      "after": "11 consumed,queue=[22]"
+    },
+    {
+      "edge": 6,
+      "input": "valid=0,ready=1",
+      "after": "22 consumed,queue=[]"
+    },
+    {
+      "edge": 8,
+      "input": "rst=1,valid=1,data=44,ready=1",
+      "after": "33 cancelled;44 not accepted"
+    }
+  ],
+  "references": [
+    {
+      "title": "Arm AXI IHI0022H, A3.2 handshake",
+      "url": "https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/IHI0022H_amba_axi_protocol_spec.pdf"
+    },
+    {
+      "title": "AMD PG101 stable WDATA check",
+      "url": "https://docs.amd.com/r/en-US/pg101-axi-protocol-checker/AXI-Protocol-Checks-and-Descriptions"
+    },
+    {
+      "title": "Icarus command-line flags",
+      "url": "https://github.com/steveicarus/iverilog/blob/master/Documentation/usage/command_line_flags.rst"
+    }
+  ],
+  "sources": [
+    "elastic_buffer.sv",
+    "tb.sv"
+  ],
+  "top": "tb_elastic_buffer",
+  "rtl_file": "elastic_buffer.sv",
+  "tb_file": "tb.sv",
+  "source_sha256": {
+    "elastic_buffer.sv": "b23a95ae1365c9df2b53999bb8e49247f6ecc4567c2ad000f5cad294b3775de0",
+    "tb.sv": "0fac2bf2a263de1ba59a21de7d5b2f9d58c5131f82bcc9ca7a5fca62b8f66b6e"
+  },
+  "checks": {
+    "normal_settings": 1,
+    "negative_controls_detected": 1,
+    "per_setting": {
+      "normal": {
+        "checks": 413,
+        "cycles": 74,
+        "accepted": 36,
+        "consumed": 34,
+        "cancelled": 2,
+        "stalls": 22,
+        "replacements": 24
+      }
+    }
+  },
+  "results": [
+    {
+      "name": "normal",
+      "parameters": {},
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:\\iverilog\\bin\\iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb_elastic_buffer",
+          "-o",
+          "sim.vvp",
+          "elastic_buffer.sv",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_01_normal",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "simulation": {
+        "command": [
+          "C:\\iverilog\\bin\\vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_01_normal",
+        "returncode": 0,
+        "stdout": "PASS checks=413 cycles=74 accepted=36 consumed=34 cancelled=2 stalls=22 replacements=24\ntb.sv:58: $finish called at 746000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 413,
+        "cycles": 74,
+        "accepted": 36,
+        "consumed": 34,
+        "cancelled": 2,
+        "stalls": 22,
+        "replacements": 24
+      }
+    },
+    {
+      "name": "negative_drop_on_stall",
+      "parameters": {
+        "BUG_DROP_ON_STALL": 1
+      },
+      "expected": "functional_failure",
+      "compile": {
+        "command": [
+          "C:\\iverilog\\bin\\iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb_elastic_buffer",
+          "-Ptb_elastic_buffer.BUG_DROP_ON_STALL=1",
+          "-o",
+          "sim.vvp",
+          "elastic_buffer.sv",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_01_negative_drop_on_stall",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "simulation": {
+        "command": [
+          "C:\\iverilog\\bin\\vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_01_negative_drop_on_stall",
+        "returncode": 1,
+        "stdout": "FATAL: tb.sv:15: ELASTIC cycle=3 output validity after edge\n       Time: 36000  Scope: tb_elastic_buffer.verify\n",
+        "stderr": ""
+      },
+      "result": "EXPECTED_FUNCTIONAL_FAILURE"
+    }
+  ],
+  "tools": {
+    "iverilog_path": "C:\\iverilog\\bin\\iverilog.exe",
+    "vvp_path": "C:\\iverilog\\bin\\vvp.exe",
+    "version_stdout": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)"
+  },
+  "validation_scope": {
+    "online_problem_grading": false,
+    "local_digital_simulation": true,
+    "synthesis": false,
+    "formal_proof": false,
+    "sta": false,
+    "fpga_board": false
+  },
+  "verified_date": "2026-10-26"
+}

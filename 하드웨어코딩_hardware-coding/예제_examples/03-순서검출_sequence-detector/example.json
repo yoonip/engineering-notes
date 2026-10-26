@@ -1,0 +1,199 @@
+{
+  "id": "03-sequence-detector",
+  "title": "겹치는1011을 검출하는 접미사 FSM",
+  "language": "SystemVerilog",
+  "contract": {
+    "clock_period_ns": 10,
+    "pattern": "1011",
+    "reset": "active-high synchronous; input ignored on reset edge",
+    "sample_enable": "only enabled rising edges consume bit_in; disabled edge preserves prefix and clears hit",
+    "hit": "registered pulse after consuming final bit; overlapping matches allowed"
+  },
+  "independent_oracle": "DUT 상태를 읽지 않고 유효 입력의 최근4비트 이동 창과 길이를 사용합니다.",
+  "trace": [
+    {
+      "sample": 1,
+      "input": "1",
+      "state": "SEEN_1",
+      "hit": 0
+    },
+    {
+      "sample": 2,
+      "input": "0",
+      "state": "SEEN_10",
+      "hit": 0
+    },
+    {
+      "sample": 3,
+      "input": "1",
+      "state": "SEEN_101",
+      "hit": 0
+    },
+    {
+      "sample": "pause twice",
+      "input": "enable=0",
+      "state": "SEEN_101",
+      "hit": 0
+    },
+    {
+      "sample": 4,
+      "input": "1",
+      "state": "SEEN_1",
+      "hit": 1
+    },
+    {
+      "sample": 5,
+      "input": "0",
+      "state": "SEEN_10",
+      "hit": 0
+    },
+    {
+      "sample": 6,
+      "input": "1",
+      "state": "SEEN_101",
+      "hit": 0
+    },
+    {
+      "sample": 7,
+      "input": "1",
+      "state": "SEEN_1",
+      "hit": 1
+    }
+  ],
+  "references": [
+    {
+      "title": "Intel SystemVerilog FSM coding example, enum and two processes",
+      "url": "https://www.intel.com/content/www/us/en/docs/programmable/683323/current/systemverilog-state-machine-coding-example.html"
+    },
+    {
+      "title": "Berkeley EECS151 FSM style guide",
+      "url": "https://eecs151.org/asic/lab3/docs/fsm-style-guide/"
+    },
+    {
+      "title": "Icarus command-line flags",
+      "url": "https://github.com/steveicarus/iverilog/blob/master/Documentation/usage/command_line_flags.rst"
+    }
+  ],
+  "sources": [
+    "sequence_detector.sv",
+    "tb.sv"
+  ],
+  "top": "tb_sequence_detector",
+  "rtl_file": "sequence_detector.sv",
+  "tb_file": "tb.sv",
+  "source_sha256": {
+    "sequence_detector.sv": "432be4714a4b0cf59dff9a1b08fc2845371a6c5bddbe62c52b3d84afcbaef45f",
+    "tb.sv": "7eb9c04bba6fd4ca5a206279740bce553f1e032c48cdb40c3f5f8eb90b38f26a"
+  },
+  "checks": {
+    "normal_settings": 1,
+    "negative_controls_detected": 1,
+    "per_setting": {
+      "normal": {
+        "checks": 4112,
+        "samples": 3597,
+        "pauses": 2,
+        "resets": 513,
+        "hits": 131,
+        "strings": 511
+      }
+    }
+  },
+  "results": [
+    {
+      "name": "normal",
+      "parameters": {},
+      "expected": "pass",
+      "compile": {
+        "command": [
+          "C:\\iverilog\\bin\\iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb_sequence_detector",
+          "-o",
+          "sim.vvp",
+          "sequence_detector.sv",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_03_normal",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "simulation": {
+        "command": [
+          "C:\\iverilog\\bin\\vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_03_normal",
+        "returncode": 0,
+        "stdout": "PASS checks=4112 samples=3597 pauses=2 resets=513 hits=131 strings=511\ntb.sv:47: $finish called at 41126000 (1ps)\n",
+        "stderr": ""
+      },
+      "result": "PASS",
+      "checks": {
+        "checks": 4112,
+        "samples": 3597,
+        "pauses": 2,
+        "resets": 513,
+        "hits": 131,
+        "strings": 511
+      }
+    },
+    {
+      "name": "negative_no_overlap",
+      "parameters": {
+        "BUG_NO_OVERLAP": 1
+      },
+      "expected": "functional_failure",
+      "compile": {
+        "command": [
+          "C:\\iverilog\\bin\\iverilog.exe",
+          "-g2012",
+          "-gstrict-expr-width",
+          "-Wall",
+          "-s",
+          "tb_sequence_detector",
+          "-Ptb_sequence_detector.BUG_NO_OVERLAP=1",
+          "-o",
+          "sim.vvp",
+          "sequence_detector.sv",
+          "tb.sv"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_03_negative_no_overlap",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "simulation": {
+        "command": [
+          "C:\\iverilog\\bin\\vvp.exe",
+          "-n",
+          "sim.vvp"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-coding-20261026\\c_intro\\run_03_negative_no_overlap",
+        "returncode": 1,
+        "stdout": "FATAL: tb.sv:24: SEQUENCE sample=7 history=1011 expected=1 actual=0\n       Time: 106000  Scope: tb_sequence_detector.step\n",
+        "stderr": ""
+      },
+      "result": "EXPECTED_FUNCTIONAL_FAILURE"
+    }
+  ],
+  "tools": {
+    "iverilog_path": "C:\\iverilog\\bin\\iverilog.exe",
+    "vvp_path": "C:\\iverilog\\bin\\vvp.exe",
+    "version_stdout": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)"
+  },
+  "validation_scope": {
+    "online_problem_grading": false,
+    "local_digital_simulation": true,
+    "synthesis": false,
+    "formal_proof": false,
+    "sta": false,
+    "fpga_board": false
+  },
+  "verified_date": "2026-10-26"
+}
