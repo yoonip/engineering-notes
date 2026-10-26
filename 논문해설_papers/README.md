@@ -58,7 +58,7 @@
 
 ## 의학과 AI·전자·컴퓨터공학
 
-[의공학과 의료 AI 학습](../분야_topics/62-의공학의료AI_medical-engineering/README.md)에서 측정·판독·제어·임상 근거를 먼저 구분합니다. [의료영상](의료영상과진단_ai-medical-imaging/README.md)은 복원과 질환 판단을, [신경보철·재활](신경보철과재활_neuroprosthetics-rehabilitation/README.md)은 신호·자극·실제 행동을 연결합니다. [AI 신약 임상 해설](AI신약개발_ai-drug-discovery/README.md)은 후보 개발의 경로와 사람 대상 평가를 나누어 읽습니다.
+[의공학과 의료 AI 학습](../전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md)에서 측정·판독·제어·임상 근거를 먼저 구분합니다. [의료영상](의료영상과진단_ai-medical-imaging/README.md)은 복원과 질환 판단을, [신경보철·재활](신경보철과재활_neuroprosthetics-rehabilitation/README.md)은 신호·자극·실제 행동을 연결합니다. [AI 신약 임상 해설](AI신약개발_ai-drug-discovery/README.md)은 후보 개발의 경로와 사람 대상 평가를 나누어 읽습니다.
 
 기존 [음성·문자·로봇 팔 BCI](뇌와신경공학_neuroengineering/README.md), [AlphaFold 2·3](머신러닝과생성모델_machine-learning/README.md), [간 칩과 진단 모델](생명과학과진단_life-science-diagnostics/README.md)도 함께 읽으실 수 있습니다. 논문에서 수행한 과제, 환자 수·기간, 실험 모델과 실제 임상 결과는 개별 글에서 구별합니다.
 
@@ -101,7 +101,7 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 ## 약물 효과와 뜻밖의 연구 재료
 
-[의약품과 대사 연구](의약품과대사_metabolic-medicine/README.md)는 위고비·마운자로와 연결되는 대표 임상 논문을 읽습니다. 평균 감량, 개인의 결과, 관찰한 참여자와 무작위 배정 전체, 치료 중단과 결측 처리의 차이를 자체 계산으로 확인합니다. 작용 원리·발견 경위와 현재 상품의 허가는 [의약품·생명공학 리뷰](../제품리뷰_reviews/의약품과생명공학_biomedical/README.md)에서 이어집니다.
+[의약품과 대사 연구](의약품과대사_metabolic-medicine/README.md)는 위고비·마운자로와 연결되는 대표 임상 논문을 읽습니다. 평균 감량, 개인의 결과, 관찰한 참여자와 무작위 배정 전체, 치료 중단과 결측 처리의 차이를 자체 계산으로 확인합니다. 작용 원리·발견 경위와 현재 상품의 허가는 [의약품·생명공학 리뷰](../제품기술분석_product-technology/의약품과생명공학_biomedical/README.md)에서 이어집니다.
 
 [게임·생물·사회 데이터를 활용한 연구](뜻밖의연결_interdisciplinary/README.md)는 연구 재료를 새롭게 고른 사례를 다룹니다. WoW의 감염 사건에 대한 제안, Foldit 참가자의 구조 탐색, 점균의 적응 연결망은 무엇을 검증했는지 나누어 읽습니다. Google Flu의 가능성과 후속 실패 분석을 함께 다루며, 음악시장 실험에서는 사회적 영향과 예측 불가능성을 살펴봅니다. 착상의 흥미와 실제 유용성의 근거를 구별합니다.
 
@@ -125,7 +125,7 @@ Turing의 계산 모형, Codd의 관계 모형, Cerf·Kahn의 통신망 연결, 
 
 [에너지·환경](에너지와환경_energy-environment/README.md)은 이상적인 효율 한계와 실제 전지·분리·포집 공정의 물질수지를 연결하며, 핵융합의 표적 이득과 시설 에너지 경계도 구분합니다. [통신·측정](통신과측정_communications-metrology/README.md)은 여러 안테나, 오류를 고치는 부호, 광섬유와 정밀 센서의 신호·잡음·불확도를 다룹니다. [생명과학·진단](생명과학과진단_life-science-diagnostics/README.md)은 분자의 정보를 읽고 늘리는 방법에서 조직 모델의 검증까지 이어집니다. 정정 논문과 읽지 못한 보충자료의 범위는 개별 글에 적습니다.
 
-[제조·광학](제조와광학_manufacturing-photonics/README.md)은 출력 속도와 전체 생산 시간, 수치 모의와 선택된 시료의 실제 시험을 구분합니다. [산업·표준](산업과표준_industry-standards/README.md)은 기술의 채택에 다른 사용자의 선택과 호환성이 영향을 주는 원리를 설명합니다. [AI 가속기 산업 분석](../제품리뷰_reviews/산업과기술경쟁_industry-competition/인공지능가속기의생태계경쟁_ai-accelerator-ecosystems2026.md)에서는 이 개념을 실제 도구·공급망·경쟁 대안과 연결하되, 경제학 모형을 특정 기업의 시장 지배 원인이 입증된 결과로 취급하지 않습니다.
+[제조·광학](제조와광학_manufacturing-photonics/README.md)은 출력 속도와 전체 생산 시간, 수치 모의와 선택된 시료의 실제 시험을 구분합니다. [산업·표준](산업과표준_industry-standards/README.md)은 기술의 채택에 다른 사용자의 선택과 호환성이 영향을 주는 원리를 설명합니다. [AI 가속기 산업 분석](../제품기술분석_product-technology/산업과기술경쟁_industry-competition/인공지능가속기의생태계경쟁_ai-accelerator-ecosystems2026.md)에서는 이 개념을 실제 도구·공급망·경쟁 대안과 연결하되, 경제학 모형을 특정 기업의 시장 지배 원인이 입증된 결과로 취급하지 않습니다.
 
 ## 정보의 공개와 안전한 제어
 
@@ -153,11 +153,11 @@ AI의 행동과 마음의 관계는 [마음 철학과 AI 내부 기능 연구](�
 
 | 글 | 확인할 내용 |
 | --- | --- |
-| [Tiny Recursive Models](../AI모델실험_model-lab/models/samsung-trm/README.md) | 반복 구조, 실제 논문의 과제, 교육용 계산의 범위 |
-| [DeepSeek-R1과 증류](../AI모델실험_model-lab/models/deepseek-r1-distill/README.md) | 원 모델의 학습과 증류 모델의 학습 목표 |
-| [부분곱 제거의 주장과 재현 범위](../분야_topics/27-논문코드특허_papers-code-patents/해설_notes/부분곱실험의주장과근거_partial-product-reproduction-case.md) | 산술 오차·모델 정확도·회로 전력을 나누어 검토하는 사례 |
+| [Tiny Recursive Models](../AI모델과수치실험_ai-models/models/samsung-trm/README.md) | 반복 구조, 실제 논문의 과제, 교육용 계산의 범위 |
+| [DeepSeek-R1과 증류](../AI모델과수치실험_ai-models/models/deepseek-r1-distill/README.md) | 원 모델의 학습과 증류 모델의 학습 목표 |
+| [부분곱 제거의 주장과 재현 범위](../전자컴퓨터공학_ece/27-논문코드특허_papers-code-patents/해설_notes/부분곱실험의주장과근거_partial-product-reproduction-case.md) | 산술 오차·모델 정확도·회로 전력을 나누어 검토하는 사례 |
 
-[논문·코드·특허 읽기](../분야_topics/27-논문코드특허_papers-code-patents/해설_notes/논문코드특허읽기_claims-evidence-reproduction-licenses.md) · [쌍체 비교와 재현 실험](../분야_topics/27-논문코드특허_papers-code-patents/해설_notes/쌍체비교와재현실험_paired-reproducible-experiments.md) · [참여 연구 기록](../연구_research/README.md)
+[논문·코드·특허 읽기](../전자컴퓨터공학_ece/27-논문코드특허_papers-code-patents/해설_notes/논문코드특허읽기_claims-evidence-reproduction-licenses.md) · [쌍체 비교와 재현 실험](../전자컴퓨터공학_ece/27-논문코드특허_papers-code-patents/해설_notes/쌍체비교와재현실험_paired-reproducible-experiments.md) · [참여 연구 기록](../연구_research/README.md)
 
 ## English
 

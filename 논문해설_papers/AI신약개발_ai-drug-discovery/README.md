@@ -8,4 +8,4 @@ AI가 질환과 관련된 표적이나 후보를 제안한 뒤, 실제 사람에
 
 단백질의 구조를 예측하는 일은 [AlphaFold 2](../머신러닝과생성모델_machine-learning/단백질입체구조예측_alphafold2_2021.md)·[AlphaFold 3](../머신러닝과생성모델_machine-learning/생체분자복합체의구조예측_alphafold3_2024.md)에서 읽으실 수 있습니다. 구조가 맞는다는 결과를 곧바로 약효·독성·임상 성공으로 바꾸지 않습니다. [간 칩의 약물 독성 예측](../생명과학과진단_life-science-diagnostics/간칩의약물독성예측_liverchip2022.md)은 사람 대상 시험 전의 실험 모델과 검증 분모를 비교하는 연결 글입니다.
 
-[의공학 학습 안내](../../분야_topics/62-의공학의료AI_medical-engineering/README.md) · [논문 전체 목록](../README.md)
+[의공학 학습 안내](../../전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md) · [논문 전체 목록](../README.md)

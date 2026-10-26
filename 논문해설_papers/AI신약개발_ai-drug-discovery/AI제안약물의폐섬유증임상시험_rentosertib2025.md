@@ -75,6 +75,6 @@ Insilico Medicine이 연구를 지원했고 일부 저자가 직원이라는 이
 
 </details>
 
-[AI 신약 개발 논문](README.md) · [의공학과 의료 AI 학습](../../분야_topics/62-의공학의료AI_medical-engineering/README.md)
+[AI 신약 개발 논문](README.md) · [의공학과 의료 AI 학습](../../전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md)
 
 [분야 목차](README.md)

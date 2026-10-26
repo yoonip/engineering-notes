@@ -107,4 +107,4 @@ E_{\mathrm{net}}=\eta_E E_{\mathrm{fusion}}
 
 </details>
 
-[에너지·환경 논문](README.md) · [에너지·물 기술 리뷰](../../제품리뷰_reviews/에너지와물_energy-water/README.md)
+[에너지·환경 논문](README.md) · [에너지·물 기술 리뷰](../../제품기술분석_product-technology/에너지와물_energy-water/README.md)

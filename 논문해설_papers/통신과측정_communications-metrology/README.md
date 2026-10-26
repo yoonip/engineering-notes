@@ -24,7 +24,7 @@
 
 원문은 2026년 10월 20일에 확인했습니다. Telatar는 MIT 공개 28쪽 저자 원고, Kao·Hockham은 1999년 재입력 전문을 읽었으며 최종 조판본을 읽은 것으로 적지 않았습니다. 나머지는 각 글에 연결한 공개 출판본과 Methods를 읽었습니다. 자체 예는 원저의 데이터 재분석이나 논문 실험 재현이 아닙니다.
 
-[현행 장치와 산업 구조의 비교](../../제품리뷰_reviews/통신과센서_communications-sensing/README.md)에서는 코히런트 광통신, 5G-Advanced·NTN, 환경 센서, 위치 추정과 원자 기준 장치로 연결합니다.
+[현행 장치와 산업 구조의 비교](../../제품기술분석_product-technology/통신과센서_communications-sensing/README.md)에서는 코히런트 광통신, 5G-Advanced·NTN, 환경 센서, 위치 추정과 원자 기준 장치로 연결합니다.
 
 ## 최근 연구
 

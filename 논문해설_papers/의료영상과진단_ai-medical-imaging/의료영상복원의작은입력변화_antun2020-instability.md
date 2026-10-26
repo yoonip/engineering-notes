@@ -93,6 +93,6 @@ x'=\begin{bmatrix}1.1\\0.9\\1\\1\end{bmatrix}.
 
 </details>
 
-[의료영상·진단 논문](README.md) · [의공학과 의료 AI 학습](../../분야_topics/62-의공학의료AI_medical-engineering/README.md)
+[의료영상·진단 논문](README.md) · [의공학과 의료 AI 학습](../../전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md)
 
 [분야 목차](README.md)

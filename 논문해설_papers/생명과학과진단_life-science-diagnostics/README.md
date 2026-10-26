@@ -13,7 +13,7 @@ DNA의 서열 분석·증폭·기능 예측, RNA에 대한 세포 반응, 살아
 
 각 글은 논문 정보와 읽은 범위, 기초 개념, 자체 예제·계산, 한계, 확인 문제와 접힌 해설을 포함합니다. 본문 수치와 직접 만든 장난감 예를 분리하여 표시합니다. 표본 조건을 벗어나 현재 모든 장비·환자에게 같은 성능이 적용된다고 해석하지 않습니다.
 
-[논문 목차](../README.md) · [진단·바이오제조 기술 비교](../../제품리뷰_reviews/진단과바이오제조_diagnostics-biomanufacturing/README.md)
+[논문 목차](../README.md) · [진단·바이오제조 기술 비교](../../제품기술분석_product-technology/진단과바이오제조_diagnostics-biomanufacturing/README.md)
 
 ## 유전체 예측과 질환 위험
 

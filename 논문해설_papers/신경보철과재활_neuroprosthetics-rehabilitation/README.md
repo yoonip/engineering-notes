@@ -9,10 +9,10 @@
 | [중심 시야를 돕는 광전 망막보철](중심시야를돕는광전망막보철_palanker2020-prima.md) | 광전 망막보철의 빛 감지·시력표 판독·일상 시각 |
 | [증상 신호에 반응하는 뇌 자극](증상신호에반응하는뇌자극_scangos2021-closed-loop.md) | 개인별 증상 신호와 폐회로 자극·치료 효과의 범위 |
 
-처음에는 [의공학 기초](../../분야_topics/62-의공학의료AI_medical-engineering/해설_notes/측정에서진단과치료까지_medical-ai-evidence.md)에서 측정·제어·평가의 단위를 익히시면 좋습니다. [기존 뇌·신경공학 논문](../뇌와신경공학_neuroengineering/README.md)은 손글씨·음성·로봇 팔의 출력 과제를 다룹니다. 같은 연구를 두 번 세지 않고 서로 다른 기능과 실험 조건을 비교합니다.
+처음에는 [의공학 기초](../../전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/해설_notes/측정에서진단과치료까지_medical-ai-evidence.md)에서 측정·제어·평가의 단위를 익히시면 좋습니다. [기존 뇌·신경공학 논문](../뇌와신경공학_neuroengineering/README.md)은 손글씨·음성·로봇 팔의 출력 과제를 다룹니다. 같은 연구를 두 번 세지 않고 서로 다른 기능과 실험 조건을 비교합니다.
 
 ## English
 
 These studies connect neural recording, stimulation and functional assistance. Each article separates decoding measures from patient tasks, training duration and assistance conditions. The brain–spine interface, activity-specific spinal stimulation, photovoltaic retinal prosthesis and personalized closed-loop stimulation address different impairments and evidence levels.
 
-[의공학 학습](../../분야_topics/62-의공학의료AI_medical-engineering/README.md) · [논문 해설 목차](../README.md)
+[의공학 학습](../../전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md) · [논문 해설 목차](../README.md)

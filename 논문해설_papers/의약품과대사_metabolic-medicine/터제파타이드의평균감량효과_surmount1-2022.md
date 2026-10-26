@@ -89,4 +89,4 @@ estimand는 ‘무엇의 효과인가’를 미리 정하는 명세이며, estim
 
 </details>
 
-[STEP 1 해설](세마글루티드의체중감량시험_step1-2021.md) · [상품명·허가 범위와 직접 비교 근거](../../제품리뷰_reviews/의약품과생명공학_biomedical/비만치료제의호르몬신호_wegovy-mounjaro2026.md)
+[STEP 1 해설](세마글루티드의체중감량시험_step1-2021.md) · [상품명·허가 범위와 직접 비교 근거](../../제품기술분석_product-technology/의약품과생명공학_biomedical/비만치료제의호르몬신호_wegovy-mounjaro2026.md)

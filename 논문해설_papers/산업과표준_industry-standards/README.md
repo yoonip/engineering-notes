@@ -7,6 +7,6 @@
 | [Arthur, 1989](기술채택의경로의존성_arthur1989.md) | 초기 채택의 경로 의존성과 증가 효과의 포화 |
 | [Katz·Shapiro, 1994](제품생태계와표준경쟁_systems-competition1994.md) | 보완재·호환성·지원 약속과 제품 선택 |
 
-현재 사례는 [GPU와 AI 가속기의 산업 경쟁](../../제품리뷰_reviews/산업과기술경쟁_industry-competition/인공지능가속기의생태계경쟁_ai-accelerator-ecosystems2026.md)에서 공식 문서와 실제 사용 사례를 대조합니다. 특정 기업이 크다는 사실만으로 기술 우위·비효율·위법 가운데 어느 하나를 원인으로 단정하지 않습니다.
+현재 사례는 [GPU와 AI 가속기의 산업 경쟁](../../제품기술분석_product-technology/산업과기술경쟁_industry-competition/인공지능가속기의생태계경쟁_ai-accelerator-ecosystems2026.md)에서 공식 문서와 실제 사용 사례를 대조합니다. 특정 기업이 크다는 사실만으로 기술 우위·비효율·위법 가운데 어느 하나를 원인으로 단정하지 않습니다.
 
 [논문 전체 목록](../README.md)
