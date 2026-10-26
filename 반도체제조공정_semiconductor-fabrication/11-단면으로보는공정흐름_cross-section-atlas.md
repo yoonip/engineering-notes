@@ -4,6 +4,8 @@
 
 어떤 막이 늘고 줄었는지, 어느 영역이 열렸는지, 어떤 단자가 연결되었는지를 단면으로 따라갑니다. 먼저 같은 평면형 소자에서 이어지는 변화를 보고, 각 공정의 대표 단면과 장비·재료·결함 사례를 연결합니다.
 
+이 예와 다른 제품 구조는 [로직·DRAM·NAND·HBM의 공정과 단면 비교](10-로직과메모리의공정차이_logic-memory-integration.md)에서 이어집니다. [FinFET·GAA](12-FinFET과GAA의공정단면_finfet-gaa-integration.md), [DRAM·3D NAND](13-DRAM과3DNAND의공정단면_dram-3d-nand-integration.md), [HBM 적층](14-HBM의TSV와적층공정_hbm-tsv-stacking.md)의 본문에는 각 구조의 공식 그림과 단계별 공정 설명을 연결했습니다.
+
 ## 한 소자에서 게이트·접촉·배선이 이어지는 모습
 
 ![평면형 nMOS의 게이트·접합·층간절연·contact·배선 단면 변화](그림_figures/소자와배선의연속단면_device-sequence.svg)

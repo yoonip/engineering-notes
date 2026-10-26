@@ -6,7 +6,7 @@
 
 ## 읽는 순서
 
-처음 공부하신다면 [소자와 공정의 기초](00-소자와공정의기초_devices-process-basics.md)에서 전자·정공, 도핑, 접합, MOSFET, 길이와 농도 단위를 먼저 읽으시면 좋습니다. 이어서 [단면으로 보는 공정 흐름](11-단면으로보는공정흐름_cross-section-atlas.md)과 아래 공정별 본문을 읽고, [공정 통합과 품질 관리](09-공정통합과품질관리_integration-process-control.md)에서 각 단계가 다음 단계에 주는 영향을 살펴봅니다.
+처음 공부하신다면 [소자와 공정의 기초](00-소자와공정의기초_devices-process-basics.md)에서 전자·정공, 도핑, 접합, MOSFET, 길이와 농도 단위를 먼저 읽으시면 좋습니다. 이어서 [단면으로 보는 공정 흐름](11-단면으로보는공정흐름_cross-section-atlas.md)과 아래 공정별 본문을 읽고, [공정 통합과 품질 관리](09-공정통합과품질관리_integration-process-control.md)에서 각 단계가 다음 단계에 주는 영향을 살펴봅니다. 제품별 차이는 [로직·DRAM·NAND·HBM 비교](10-로직과메모리의공정차이_logic-memory-integration.md)에서 전체 흐름을 먼저 보실 수 있습니다.
 
 | 공정 | 본문에서 다루는 내용 |
 | --- | --- |
@@ -54,6 +54,17 @@ FEOL은 트랜지스터 같은 소자를 형성하는 구간, MOL은 소자 단�
 
 이 관계는 [공정 통합과 품질 관리](09-공정통합과품질관리_integration-process-control.md), 제품별 차이는 [로직·DRAM·NAND의 공정 차이](10-로직과메모리의공정차이_logic-memory-integration.md)에서 이어서 다룹니다.
 
+## 로직·DRAM·NAND·HBM의 단면과 제조 순서
+
+같은 식각·증착이라도 fin, 저장 커패시터, NAND의 수직 채널, HBM의 TSV 중 무엇을 만드는지에 따라 순서와 재료가 달라집니다. 아래 본문에는 단계별로 남는 구조와 공식 도면에서 볼 위치를 연결했습니다.
+
+| 본문 | 자세히 다루는 구조와 순서 |
+| --- | --- |
+| [제품별 공정·단면 비교](10-로직과메모리의공정차이_logic-memory-integration.md) | 대표 공정 흐름, 단면을 자르는 방향, 셀 층과 다이 적층의 차이 |
+| [FinFET·GAA](12-FinFET과GAA의공정단면_finfet-gaa-integration.md) | fin·sheet, Si/SiGe 성장, inner spacer, 소스·드레인, 채널 노출과 최종 게이트 |
+| [DRAM·3D NAND](13-DRAM과3DNAND의공정단면_dram-3d-nand-integration.md) | 접근 소자·저장 커패시터, 채널 hole·저장막·slit·층별 게이트, 주변 회로 배치·접합 |
+| [HBM의 TSV·적층](14-HBM의TSV와적층공정_hbm-tsv-stacking.md) | TSV 형성·뒤쪽 노출, 캐리어·박막화, MR-MUF·TC-NCF·하이브리드 본딩, 검사와 로직 연결 |
+
 ## 평면형 소자에서 이어지는 기술
 
 기초 공정은 평면형 MOSFET을 예로 설명할 수 있지만, 그 예 하나로 모든 제품을 설명할 수는 없습니다.
@@ -85,4 +96,4 @@ FEOL은 트랜지스터 같은 소자를 형성하는 구간, MOL은 소자 단�
 
 ## English
 
-This guide connects eight common fabrication categories with device physics, materials, equipment, process variables, defects and metrology. The process chapters cover wafer manufacturing, oxidation and gate dielectrics, lithography, etching, deposition and implantation, interconnects and CMP, wafer testing, and packaging. Additional chapters explain prerequisites, integration and process control, and the different requirements of logic, DRAM and NAND. Worked examples use stated educational assumptions. Dated supplier reports, production milestones, research demonstrations and plans are identified separately.
+This guide connects eight common fabrication categories with device physics, materials, equipment, process variables, defects and metrology. The process chapters cover wafer manufacturing, oxidation and gate dielectrics, lithography, etching, deposition and implantation, interconnects and CMP, wafer testing, and packaging. Additional chapters explain prerequisites, integration and process control, and the different requirements of logic, DRAM and NAND. Detailed structure guides follow FinFET/GAA integration, DRAM capacitors, replacement-gate NAND, and HBM TSV formation, thinning and stacking with official figure links. Worked examples use stated educational assumptions. Dated supplier reports, production milestones, research demonstrations and plans are identified separately.

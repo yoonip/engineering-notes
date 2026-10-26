@@ -1,8 +1,18 @@
-# 로직·DRAM·NAND의 공정 차이 | Logic and memory integration
+# 로직·DRAM·NAND·HBM의 공정과 단면 비교 | Logic, DRAM, NAND and HBM process comparison
 
 [공정 목차](README.md) · [공정 통합과 품질 관리](09-공정통합과품질관리_integration-process-control.md)
 
 CPU·DRAM·NAND는 모두 포토·식각·증착·배선 등을 이용하지만, 만들려는 구조와 성능 목표가 다릅니다. 이 차이를 알면 ‘모든 반도체는 평면형 트랜지스터를 같은 순서로 만든다’는 오해를 피할 수 있습니다.
+
+HBM은 DRAM 셀을 만드는 공정에 TSV·박막화·다이 접합·검사가 더해진 제품입니다. 따라서 로직·DRAM·NAND의 소자 제조와 HBM의 적층·패키지 통합을 같은 높이의 단일 작업으로 비교하기보다, 어느 단계까지의 구조를 보는지 먼저 맞추어야 합니다.
+
+이 글에서는 전체 차이를 먼저 보고 다음 본문에서 단계별 단면과 공식 도면을 읽습니다.
+
+| 자세히 볼 대상 | 이어서 읽을 본문 |
+| --- | --- |
+| fin과 sheet의 게이트 단면, 임시 게이트 교체와 채널 노출 | [FinFET·GAA 공정과 단면](12-FinFET과GAA의공정단면_finfet-gaa-integration.md) |
+| 접근 트랜지스터·커패시터, 수직 채널·저장막·계단 | [DRAM·3D NAND 공정과 단면](13-DRAM과3DNAND의공정단면_dram-3d-nand-integration.md) |
+| TSV를 만드는 시점, 뒤쪽 노출, 접합·봉지와 로직 연결 | [HBM의 TSV·적층 공정](14-HBM의TSV와적층공정_hbm-tsv-stacking.md) |
 
 ## 1. 무엇을 만드는지 먼저 비교합니다
 
@@ -15,6 +25,32 @@ CPU·DRAM·NAND는 모두 포토·식각·증착·배선 등을 이용하지만,
 | HBM 패키지 | DRAM die와 연결·적층·외부 인터페이스 | TSV·접합·전력·열·검사·조립 수율 |
 
 DRAM의 1T1C 구조와 refresh는 [삼성전자 DRAM 설명](https://semiconductor.samsung.com/dram/)에서, NAND의 셀·적층·주변 회로 구조는 [SK하이닉스 4D NAND 기술 설명](https://news.skhynix.com/en/how-sk-hynixs-advanced-4d-nand-technologies-are-overcoming-stacking-limitations/)에서 확인했습니다. 위 표는 구조와 공정의 연결을 학습하기 위해 정리한 것입니다.
+
+### 대표 공정의 순서를 나란히 보면
+
+![로직·DRAM·3D NAND·HBM의 대표 공정 흐름을 비교한 자체 그림](그림_figures/제품별로달라지는공정흐름_product-process-flows.svg)
+
+그림은 공개 자료의 공정 모듈을 연결한 대표 예입니다. 로직은 임시 게이트를 최종 게이트로 교체하는 흐름, DRAM은 소자 위에 저장 커패시터를 만드는 흐름, NAND는 주변 회로를 아래에 두고 희생층을 게이트로 바꾸는 흐름, HBM은 via-middle TSV를 사용하는 흐름입니다. 세부 패턴·세정·열처리·검사는 묶어서 표시했습니다. 실제 순서의 분기는 위 심화 본문에서 따로 설명합니다.
+
+| 대상 | 순서가 달라지는 핵심 이유 | 앞 단계에서 넘겨야 할 구조·조건 |
+| --- | --- | --- |
+| FinFET·GAA 로직 | 최종 게이트를 넣을 공간과 소스·드레인 접합을 준비해야 합니다. GAA에서는 임시 구조가 지지하던 채널도 노출해야 합니다. | 채널 형상, 간격층, 소스·드레인, 선택 식각으로 보존할 표면과 게이트 충전 공간입니다. |
+| DRAM | 접근 소자와 작은 면적에 큰 정전용량을 확보할 저장 구조를 연결해야 합니다. | bit line과 저장 노드가 서로 다른 경로로 접속하고, 높은 저장 전극의 모양·유전체·누설이 맞아야 합니다. |
+| 3D NAND | 반복 적층 안의 많은 셀을 수직 채널과 층별 게이트에 연결해야 합니다. | 깊은 hole의 형상, 채널·저장막의 연속성, 옆에서 희생층을 제거할 접근로, 각 층 접촉부입니다. |
+| HBM | DRAM 다이 내부의 회로와 다이 사이 접속을 함께 준비해야 합니다. | TSV 충전·뒤쪽 노출, 얇은 다이의 취급, 선별 결과·정렬·접합면과 스택 검사 접근입니다. |
+
+공정 모듈의 근거는 [imec의 nanosheet 통합 설명](https://www.imec-int.com/en/articles/entering-nanosheet-transistor-era-0), [Micron의 charge-trap·replacement-gate·CuA 설명](https://www.micron.com/products/storage/nand-flash/176-layer-nand), [SK하이닉스의 TSV 패키지 공정 설명](https://news.skhynix.com/en/semiconductor-back-end-process-episode-8-the-process-stages-of-wafer-level-packages/)과 각 심화 본문의 원논문·공식 도면입니다. TSV 공정 설명의 via-middle 예에서는 TSV 식각·Cu 충전·CMP가 BEOL 금속배선 전에 들어갑니다.
+
+### 같은 단면 방향에서 비교해야 보이는 차이
+
+| 도면 | 잘라서 보거나 확대할 위치 | 읽을 때 구분할 부분 |
+| --- | --- | --- |
+| FinFET·GAA | 게이트 위치에서 전류 방향에 수직인 면과, 소스–드레인 방향의 면 | 전자는 채널을 감싸는 면을, 후자는 채널·접합·spacer의 상대 위치를 보여 줍니다. |
+| DRAM | 접근 소자·저장 노드 접촉부·저장 커패시터의 각 단면 | 서로 다른 절단 위치를 한 그림에 모은 설명도 있습니다. bit line과 저장 노드가 같은 금속선이라는 뜻은 아닙니다. |
+| 3D NAND | 여러 word line을 가로지르는 수직 채널 단면과 한 셀 높이의 가로 단면 | 세로로는 string과 층별 게이트를, 가로로는 채널 둘레의 터널 절연막·전하 저장막·게이트 관계를 봅니다. |
+| HBM | 여러 다이·TSV·접합부를 지나는 패키지 단면 | 한 DRAM 셀의 확대도와 축척이 다릅니다. TSV는 다이 안, 접합부는 다이 사이에 있습니다. |
+
+이 구분은 공식 그림을 읽기 위한 관찰 기준입니다. FinFET의 fin, NAND의 수직 채널, HBM의 TSV가 모두 길고 가늘게 보이더라도 각각 트랜지스터 몸체·전류 통로·금속 접속이라는 역할은 다릅니다.
 
 ## 2. 로직: 전기장을 제어하면서 연결 밀도를 높입니다
 
@@ -113,6 +149,10 @@ b비트를 저장하려면 구별 가능한 상태가 2의 b제곱 개 필요합
 
 ## 6. HBM의 적층과 NAND의 적층
 
+![한 웨이퍼 안에 셀 층을 만드는 3D NAND와 DRAM 다이를 접합하는 HBM의 단면 비교](그림_figures/3DNAND와HBM의적층단위_nand-hbm-stacking.svg)
+
+왼쪽은 charge-trap NAND의 저장막과 수직 채널을, 오른쪽은 세 장의 메모리 다이와 base die를 가정한 HBM을 단순화한 자체 그림입니다. 오른쪽의 실리콘 인터포저는 HBM 스택을 옆의 로직과 연결하는 한 가지 패키지 예입니다. 그 인터포저를 각 메모리 다이 사이의 접합층으로 읽으면 안 됩니다.
+
 | 비교 | 3D NAND | HBM |
 | --- | --- | --- |
 | 쌓는 대상 | 웨이퍼 내부의 메모리 셀 구조·층 | 제조한 DRAM die 등 |
@@ -122,15 +162,17 @@ b비트를 저장하려면 구별 가능한 상태가 2의 b제곱 개 필요합
 
 ‘3D’라는 말만으로 두 기술을 같은 공정이라고 이해하지 않습니다. HBM의 접합 구조와 제품별 공식 적용은 [첨단 패키징 장](08-패키징과첨단집적_packaging.md)에서, 시스템 관점은 [HBM 용량과 열 리뷰](../제품리뷰_reviews/반도체와산업컴퓨팅_chips-industrial/고대역폭메모리의용량과열_hbm.md)에서 이어집니다.
 
+NAND의 층수는 반복되는 word-line 셀 구조와 관련되고, HBM의 8H·12H 같은 표기는 메모리 다이 적층 수와 관련됩니다. GAA에서 여러 sheet를 쌓는 것은 한 트랜지스터의 채널 구성입니다. DRAM 커패시터가 높아지는 것도 여러 완성 다이를 쌓는 작업과 다릅니다. 또한 별도 웨이퍼에서 NAND 배열과 주변 회로를 만든 뒤 접합하는 방식은, 배열 자체의 셀 적층과 추가로 구분해야 합니다. 도면별로 무엇을 세는지 확인해야 같은 ‘적층’이라는 말을 혼동하지 않습니다.
+
 ## 7. 같은 공정 이름, 다른 목표
 
-| 공정 | 로직의 예 | DRAM의 예 | NAND의 예 |
-| --- | --- | --- | --- |
-| 포토 | 게이트·contact·미세 배선의 패턴 | 반복 셀·주변 회로·접속 | channel hole·계단·주변 회로 |
-| 식각 | fin·spacer·선택적 채널 노출 | 저장 구조·접촉 형성 | 높은 종횡비의 채널·slit |
-| 증착 | high-k·금속 게이트·절연막 | 커패시터 유전체·전극 | 반복 적층·전하 저장 관련 막 |
-| 도핑·열처리 | 접합·접촉·소자 특성 | 접근 소자·주변 회로·접촉 | 주변 회로·접촉 등 |
-| 검사 | 기능·지연·전력·결함 모델 | 셀 동작·유지·속도·수리 가능성 | 프로그램·읽기·분포·오류 특성 |
+| 공정 | 로직의 예 | DRAM의 예 | NAND의 예 | HBM에서 더해지는 예 |
+| --- | --- | --- | --- | --- |
+| 포토 | 게이트·contact·미세 배선의 패턴 | 반복 셀·주변 회로·접속 | channel hole·계단·주변 회로 | TSV·RDL·범프의 위치 |
+| 식각 | fin·spacer·선택적 채널 노출 | 저장 구조·접촉 형성 | 높은 종횡비의 채널·slit | TSV 구멍·뒤쪽 노출과 절연막 개방 |
+| 증착·충전 | high-k·금속 게이트·절연막 | 커패시터 유전체·전극 | 반복 적층·전하 저장 관련 막 | TSV 절연막·배리어·시드·Cu와 접속 금속 |
+| 도핑·열처리 | 접합·접촉·소자 특성 | 접근 소자·주변 회로·접촉 | 주변 회로·접촉 등 | DRAM 회로 제조와 접합 이후의 열예산을 함께 봅니다. |
+| 검사 | 기능·지연·전력·결함 모델 | 셀 동작·유지·속도·수리 가능성 | 프로그램·읽기·분포·오류 특성 | 선별 다이·TSV·다이 간 연결·스택 동작·열과 조립 후 변화 |
 
 각 칸은 대표적인 연결이지 공정 전체 목록은 아닙니다. 센서·아날로그·고전압·전력반도체에는 또 다른 재료·치수·절연·신뢰성 목표가 있습니다. 모든 제품에 가장 작은 로직 노드를 적용하는 것이 최선이라는 결론은 나오지 않습니다.
 
@@ -177,9 +219,12 @@ b비트를 저장하려면 구별 가능한 상태가 2의 b제곱 개 필요합
 | [TSMC 2025 Annual Report](https://investor.tsmc.com/static/annualReports/2025/english/index.html) | 주주서한의 N2 대량생산 시점 |
 | [SK hynix 4D NAND 설명, 2023-12-19](https://news.skhynix.com/en/how-sk-hynixs-advanced-4d-nand-technologies-are-overcoming-stacking-limitations/) | 적층·plug·계단·주변 회로·CTF 관련 구조 |
 | [SK hynix Revolutionary Memory](https://research.skhynix.com/research-areas/future-memory-technologies/revolutionary-memory) | Future DRAM·Future NAND의 구조·재료·공정 연구 과제 |
+| [Micron 176-layer NAND](https://www.micron.com/products/storage/nand-flash/176-layer-nand) | 본문의 replacement-gate·charge-trap·CMOS-under-array 결합입니다. 해당 세대의 기술 설명이며 최신 층수 순위로 사용하지 않았습니다. |
+| [imec, Entering the nanosheet transistor era](https://www.imec-int.com/en/articles/entering-nanosheet-transistor-era-0) | 2022-02-11, Critical nanosheet building blocks의 Si/SiGe·inner spacer·release·RMG 연결입니다. |
+| [SK hynix Episode 8](https://news.skhynix.com/en/semiconductor-back-end-process-episode-8-the-process-stages-of-wafer-level-packages/) | 2023-10-05, TSV Package Process·Figure 6의 via-middle 정의와 앞면 범프·캐리어·뒤쪽 가공 순서입니다. |
 
 확인일은 2026-10-26입니다. 제조·접합의 세부 근거는 연결한 공정 본문에도 있습니다. 전하·누설·종횡비·상태 간격 계산은 이 글에서 구성한 가정 예제입니다.
 
 ## English
 
-Logic, SRAM, DRAM and NAND share fabrication methods but target different structures and distributions. This chapter connects gate control, capacitor charge, vertical NAND channels and die stacking to their process requirements. Worked examples cover an assumed DRAM leakage interval, hole aspect ratio and evenly spaced threshold states. Production milestones, research directions and comparative performance claims require different evidence.
+Logic, SRAM, DRAM and NAND share fabrication methods but target different structures and distributions. The comparison connects replacement gates, storage capacitors, vertical NAND strings and via-middle TSV integration in HBM. Separate guides examine FinFET/GAA sections, DRAM/3D NAND integration, and HBM thinning, bonding and package assembly with official figures. Worked examples use stated assumptions rather than product specifications.

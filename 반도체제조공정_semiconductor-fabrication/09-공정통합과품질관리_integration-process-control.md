@@ -1,6 +1,6 @@
 # 공정 통합과 품질 관리 | Process integration and control
 
-[공정 목차](README.md) · [로직·DRAM·NAND의 공정 차이](10-로직과메모리의공정차이_logic-memory-integration.md)
+[공정 목차](README.md) · [로직·DRAM·NAND·HBM의 공정 차이](10-로직과메모리의공정차이_logic-memory-integration.md)
 
 포토·식각·증착을 각각 잘한다고 해서 회로가 저절로 완성되지는 않습니다. 앞 공정의 표면·형상·잔류물·열 이력이 다음 공정에 맞아야 합니다. 공정 통합, process integration은 이 연결을 설계하고 전기적 성능·수율·신뢰성·비용을 함께 만족시키는 일입니다.
 

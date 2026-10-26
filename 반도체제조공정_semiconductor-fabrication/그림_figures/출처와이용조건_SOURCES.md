@@ -20,8 +20,13 @@
 | [패키징 단면](08-패키징단면_packaging-section.svg) | flip-chip BGA의 내부·외부 접속 | [SK하이닉스 전통 패키지 설명](https://news.skhynix.com/en/semiconductor-back-end-process-episode-6-conventional-packages/), [Amkor Flip Chip BGA 자료](https://amkor.com/wp-content/uploads/2018/02/Flip_Chip_TS102.pdf) |
 | [소자·배선의 연속 단면](소자와배선의연속단면_device-sequence.svg) | 같은 평면형 소자의 게이트·접합·contact·배선 | [MIT 6.004 MOSFET·CMOS 원리](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c3/c3s1/), [통합 흐름의 본문과 근거](../09-공정통합과품질관리_integration-process-control.md) |
 | [패턴 전사](패턴전사_pattern-transfer.svg) | PR의 창을 아래 막에 옮기는 기존 개념도 | [포토 본문의 출처](../03-포토와노광_photolithography.md#14-출처와-확인-범위), [식각 본문의 출처](../04-식각과선택비_etching.md#12-출처와-확인-범위) |
+| [제품별 공정 흐름](제품별로달라지는공정흐름_product-process-flows.svg) | replacement-gate 로직·상부 커패시터 DRAM·주변 회로 아래 배치 NAND·via-middle HBM의 대표 모듈 연결 | [제품별 비교와 근거](../10-로직과메모리의공정차이_logic-memory-integration.md), [imec의 nanosheet 통합](https://www.imec-int.com/en/articles/entering-nanosheet-transistor-era-0), [SK하이닉스 TSV 공정](https://news.skhynix.com/en/semiconductor-back-end-process-episode-8-the-process-stages-of-wafer-level-packages/) |
+| [평면형·FinFET·GAA 단면](FinFET과GAA의채널단면_finfet-gaa-sections.svg) | 전류에 수직인 게이트 위치의 채널·절연막·전극 | [FinFET·GAA 본문과 공식 그림](../12-FinFET과GAA의공정단면_finfet-gaa-integration.md), [imec의 구조 설명](https://www.imec-int.com/en/articles/entering-nanosheet-transistor-era-0) |
+| [NAND와 HBM의 적층 단위](3DNAND와HBM의적층단위_nand-hbm-stacking.svg) | NAND의 셀 층·저장막·채널과 HBM의 다이·TSV·접합·인터포저 | [DRAM·3D NAND의 구조 근거](../13-DRAM과3DNAND의공정단면_dram-3d-nand-integration.md), [HBM의 구조 근거](../14-HBM의TSV와적층공정_hbm-tsv-stacking.md) |
 
 증착·주입 그림의 A→B와 C→D는 서로 다른 예입니다. 검사 그림의 판정 맵도 실제 관측 자료가 아닙니다. 패키지 기판·언더필·Si die는 재료와 역할이 다르며, 내부 범프와 외부 ball도 구분합니다.
+
+제품별 흐름은 공정 의존 관계를 요약한 대표 예이며, 여러 기업의 비공개 양산 순서를 하나로 합친 레시피가 아닙니다. NAND·HBM 그림은 셀층 수와 다이 수를 구분하기 위한 것입니다. HBM 쪽은 대표 접속 경로 하나만 표시하며, 내부 회로·다른 신호·인터포저의 상세 배선층을 생략했습니다.
 
 ## 외부 원도면
 
@@ -51,3 +56,13 @@
 - [TSMC SoIC](https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/SoIC.htm): die 적층과 연결 구조의 공식 그림입니다.
 
 이 목록의 기업 이미지는 저장소에 복제하지 않고 원문으로 연결했습니다. 각 공정의 본문에는 추가 장비와 실제 보고 사례의 자료를 연결했습니다.
+
+## 제품별 구조의 공식 도면 목록
+
+| 읽을 구조 | 도면·원문을 모은 본문 | 제공처와 확인할 위치 |
+| --- | --- | --- |
+| FinFET·nanosheet GAA | [공식 그림에서 실제로 비교할 위치](../12-FinFET과GAA의공정단면_finfet-gaa-integration.md#6-공식-그림에서-실제로-비교할-위치) | Intel Tri-Gate PDF, 삼성 MBCFET 비교, imec fin·시트 TEM, IBM 공동연구 원논문의 공정·단면입니다. |
+| DRAM 저장 구조·3D NAND·CMOS 접합 | [공식 그림에서 확인할 위치](../13-DRAM과3DNAND의공정단면_dram-3d-nand-integration.md#7-공식-그림에서-확인할-위치) | 서울대·UIUC DRAMScope, TEL DRAM 구조, SK하이닉스 저장막, Lam tier bending, KIOXIA CBA 공정·SEM입니다. |
+| TSV·임시 지지·HBM 접합·패키지 연결 | [공식 그림으로 공정과 연결 위치를 봅니다](../14-HBM의TSV와적층공정_hbm-tsv-stacking.md#2-공식-그림으로-공정과-연결-위치를-봅니다) | SK하이닉스 TSV·WSS·MR-MUF, TSMC CoWoS·SoIC 원문입니다. SK하이닉스 TSV 도면에는 원문에 표시된 Hanol Publishing 출처도 함께 적었습니다. |
+
+각 표에는 실제 그림 이름·쪽수·원문 또는 공식 이미지 링크를 적었습니다. 연결한 도면의 저작권은 해당 제공처·원저작자에게 있으며, 이 목록은 재배포 허가를 뜻하지 않습니다. 확인일은 2026-10-26입니다.

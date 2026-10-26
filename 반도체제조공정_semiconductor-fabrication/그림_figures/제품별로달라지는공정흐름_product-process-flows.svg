@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="950" viewBox="0 0 1280 950" role="img" aria-labelledby="title desc">
+  <title id="title">로직·DRAM·3D NAND·HBM에서 달라지는 공정 순서</title>
+  <desc id="desc">같은 이름의 식각·증착도 만드는 구조와 다음 단계가 다릅니다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#416b99" />
+    </marker>
+  </defs>
+  <style>text{font-family:"Malgun Gothic","Noto Sans KR",sans-serif;fill:#24394b;}</style>
+  <rect x="0" y="0" width="1280" height="950" fill="white" stroke="none" stroke-width="1.2" />
+  <text x="40" y="46" font-size="28" text-anchor="start" font-weight="700">로직·DRAM·3D NAND·HBM에서 달라지는 공정 순서</text>
+  <text x="40" y="80" font-size="18" text-anchor="start" font-weight="400">같은 이름의 식각·증착도 만드는 구조와 다음 단계가 다릅니다.</text>
+  <g transform="translate(40 115)">
+    <rect x="0" y="0" width="1200" height="170" fill="#f8fafc" stroke="#c6d4de" stroke-width="1.2" rx="10" />
+    <text x="22" y="32" font-size="21" text-anchor="start" font-weight="700">로직 · replacement-gate의 대표 흐름</text>
+    <rect x="20" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="105" y="78" font-size="16" text-anchor="middle" font-weight="400">기판·well 준비</text>
+    <path d="M194 85 L211 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="216" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="301" y="78" font-size="16" text-anchor="middle" font-weight="400">fin 또는 Si/SiGe</text>
+    <text x="301" y="103" font-size="16" text-anchor="middle" font-weight="400">적층·소자 분리</text>
+    <path d="M390 85 L407 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="412" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="497" y="78" font-size="16" text-anchor="middle" font-weight="400">임시 게이트·간격층</text>
+    <text x="497" y="103" font-size="16" text-anchor="middle" font-weight="400">소스·드레인</text>
+    <path d="M586 85 L603 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="608" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="693" y="78" font-size="16" text-anchor="middle" font-weight="400">최종 게이트 형성</text>
+    <text x="693" y="103" font-size="16" text-anchor="middle" font-weight="400">GAA: 채널 노출 포함</text>
+    <path d="M782 85 L799 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="804" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="889" y="78" font-size="16" text-anchor="middle" font-weight="400">contact·다층 배선</text>
+    <path d="M978 85 L995 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="1000" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="1085" y="78" font-size="16" text-anchor="middle" font-weight="400">웨이퍼 검사</text>
+    <text x="1085" y="103" font-size="16" text-anchor="middle" font-weight="400">패키징·최종 검사</text>
+    <text x="22" y="151" font-size="16" text-anchor="start" font-weight="400">GAA에서는 채널을 지지할 접합부를 만든 뒤 희생층을 제거하고 게이트를 채웁니다.</text>
+  </g>
+  <g transform="translate(40 305)">
+    <rect x="0" y="0" width="1200" height="170" fill="#f8fafc" stroke="#c6d4de" stroke-width="1.2" rx="10" />
+    <text x="22" y="32" font-size="21" text-anchor="start" font-weight="700">DRAM · 상부 저장 커패시터를 사용하는 대표 흐름</text>
+    <rect x="20" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="105" y="78" font-size="16" text-anchor="middle" font-weight="400">소자 분리</text>
+    <text x="105" y="103" font-size="16" text-anchor="middle" font-weight="400">접근 트랜지스터</text>
+    <path d="M194 85 L211 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="216" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="301" y="78" font-size="16" text-anchor="middle" font-weight="400">bit line</text>
+    <text x="301" y="103" font-size="16" text-anchor="middle" font-weight="400">저장 노드 접촉부</text>
+    <path d="M390 85 L407 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="412" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="497" y="78" font-size="16" text-anchor="middle" font-weight="400">저장 구조의</text>
+    <text x="497" y="103" font-size="16" text-anchor="middle" font-weight="400">높은 종횡비 식각</text>
+    <path d="M586 85 L603 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="608" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="693" y="78" font-size="16" text-anchor="middle" font-weight="400">저장전극·유전체</text>
+    <text x="693" y="103" font-size="16" text-anchor="middle" font-weight="400">공통전극</text>
+    <path d="M782 85 L799 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="804" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="889" y="78" font-size="16" text-anchor="middle" font-weight="400">주변 회로 연결</text>
+    <text x="889" y="103" font-size="16" text-anchor="middle" font-weight="400">배선·웨이퍼 검사</text>
+    <path d="M978 85 L995 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="1000" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="1085" y="78" font-size="16" text-anchor="middle" font-weight="400">패키징</text>
+    <text x="1085" y="103" font-size="16" text-anchor="middle" font-weight="400">최종 검사</text>
+    <text x="22" y="151" font-size="16" text-anchor="start" font-weight="400">접근 소자와 커패시터는 서로 다른 구조입니다. HBM용 TSV 삽입은 아래 HBM 흐름과 함께 봅니다.</text>
+  </g>
+  <g transform="translate(40 495)">
+    <rect x="0" y="0" width="1200" height="170" fill="#f8fafc" stroke="#c6d4de" stroke-width="1.2" rx="10" />
+    <text x="22" y="32" font-size="21" text-anchor="start" font-weight="700">3D NAND · 주변 회로 아래 배치와 replacement-gate의 대표 흐름</text>
+    <rect x="20" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="105" y="78" font-size="16" text-anchor="middle" font-weight="400">아래쪽 주변 회로</text>
+    <text x="105" y="103" font-size="16" text-anchor="middle" font-weight="400">PUC·CuA의 예</text>
+    <path d="M194 85 L211 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="216" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="301" y="78" font-size="16" text-anchor="middle" font-weight="400">절연막·희생층</text>
+    <text x="301" y="103" font-size="16" text-anchor="middle" font-weight="400">반복 적층</text>
+    <path d="M390 85 L407 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="412" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="497" y="78" font-size="16" text-anchor="middle" font-weight="400">채널 hole·저장막</text>
+    <text x="497" y="103" font-size="16" text-anchor="middle" font-weight="400">수직 채널</text>
+    <path d="M586 85 L603 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="608" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="693" y="78" font-size="16" text-anchor="middle" font-weight="400">slit·희생층 제거</text>
+    <text x="693" y="103" font-size="16" text-anchor="middle" font-weight="400">게이트 채움</text>
+    <path d="M782 85 L799 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="804" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="889" y="78" font-size="16" text-anchor="middle" font-weight="400">층별 접촉</text>
+    <text x="889" y="103" font-size="16" text-anchor="middle" font-weight="400">다층 배선</text>
+    <path d="M978 85 L995 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="1000" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="1085" y="78" font-size="16" text-anchor="middle" font-weight="400">프로그램·읽기 검사</text>
+    <text x="1085" y="103" font-size="16" text-anchor="middle" font-weight="400">패키징</text>
+    <text x="22" y="151" font-size="16" text-anchor="start" font-weight="400">계단·다중 deck·소스 접속의 세부 순서는 통합 방식에 따라 달라집니다. 별도 웨이퍼 접합은 다른 분기입니다.</text>
+  </g>
+  <g transform="translate(40 685)">
+    <rect x="0" y="0" width="1200" height="170" fill="#f8fafc" stroke="#c6d4de" stroke-width="1.2" rx="10" />
+    <text x="22" y="32" font-size="21" text-anchor="start" font-weight="700">HBM · via-middle TSV를 사용하는 제조·조립의 대표 흐름</text>
+    <rect x="20" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="105" y="78" font-size="16" text-anchor="middle" font-weight="400">DRAM·TSV·BEOL</text>
+    <text x="105" y="103" font-size="16" text-anchor="middle" font-weight="400">검사·앞면 범프</text>
+    <path d="M194 85 L211 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="216" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="301" y="78" font-size="16" text-anchor="middle" font-weight="400">캐리어 부착</text>
+    <text x="301" y="103" font-size="16" text-anchor="middle" font-weight="400">박막화·TSV 노출</text>
+    <path d="M390 85 L407 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="412" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="497" y="78" font-size="16" text-anchor="middle" font-weight="400">뒤쪽 재배선·범프</text>
+    <text x="497" y="103" font-size="16" text-anchor="middle" font-weight="400">분리·선별</text>
+    <path d="M586 85 L603 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="608" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="693" y="78" font-size="16" text-anchor="middle" font-weight="400">base die와</text>
+    <text x="693" y="103" font-size="16" text-anchor="middle" font-weight="400">메모리 die 배치</text>
+    <path d="M782 85 L799 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="804" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="889" y="78" font-size="16" text-anchor="middle" font-weight="400">접합·봉지</text>
+    <text x="889" y="103" font-size="16" text-anchor="middle" font-weight="400">스택 검사</text>
+    <path d="M978 85 L995 85" fill="none" stroke="#416b99" stroke-width="2" marker-end="url(#arrow)" />
+    <rect x="1000" y="50" width="170" height="70" fill="#edf4f8" stroke="#8da8bb" stroke-width="1.2" rx="7" />
+    <text x="1085" y="78" font-size="16" text-anchor="middle" font-weight="400">로직과 패키지 통합</text>
+    <text x="1085" y="103" font-size="16" text-anchor="middle" font-weight="400">최종 검사</text>
+    <text x="22" y="151" font-size="16" text-anchor="start" font-weight="400">via-middle에서는 배선 전에 TSV를 만듭니다. 접합·수지 적용·시험 삽입은 방식마다 순서와 반복이 다릅니다.</text>
+  </g>
+  <text x="40" y="916" font-size="16" text-anchor="start" font-weight="400">공개 자료를 연결한 개념 순서 · 실제 공정의 모든 단계·장비·레시피를 나열한 흐름이 아닙니다.</text>
+</svg>
