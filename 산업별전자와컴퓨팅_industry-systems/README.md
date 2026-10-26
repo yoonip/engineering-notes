@@ -35,8 +35,8 @@
 | [제품·기술 분석](../제품기술분석_product-technology/README.md) · [논문 해설](../논문해설_papers/README.md) | 특정 제품·판본의 기술과 원논문의 방법·근거를 읽습니다. |
 | [반도체 제조 공정](../반도체제조공정_semiconductor-fabrication/README.md) | 여러 산업에 공급되는 소자·칩의 제조·계측·통합을 공부합니다. |
 
-기존 원리를 다른 제목으로 복제하기보다 산업에서 달라지는 대상·환경·제약·결과를 설명했습니다. 기업의 공식 사업 설명과 기술 일반론, 자체 구성한 사례·계산의 범위는 각 본문과 출처 문서에서 확인하실 수 있습니다.
+각 산업에서 달라지는 대상·환경·제약·결과를 공통 기술과 연결해 설명합니다. 기업의 공식 사업 설명과 기술 일반론, 자체 구성한 사례·계산의 범위는 각 본문과 출처 문서에서 확인하실 수 있습니다.
 
 ## English
 
-These guides connect industry systems to electronics, computing, sensing, power conversion, communications, control, software, data and verification. The sector guides complement foundational notes, dated product studies, job-description analysis and source-attributed code cases. Company business descriptions remain distinct from general engineering explanations and authored examples.
+These guides connect industry systems to electronics, computing, sensing, power conversion, communications, control, software, data and verification. The sector guides complement foundational notes, dated product studies, engineering-role guides and source-attributed code cases. Company business descriptions remain distinct from general engineering explanations and authored examples.
