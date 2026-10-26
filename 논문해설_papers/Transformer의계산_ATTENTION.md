@@ -60,7 +60,7 @@ $$
 
 내적 점수와 attention 비율, 출력 벡터는 서로 다른 값입니다. 비율이 0.67이라고 해서 정답 확률이 67%라는 뜻은 아닙니다. 이 비율은 현재 행에서 value를 섞는 데 쓰입니다. 최종 출력 확률은 뒤의 여러 계산을 거쳐 정해집니다.
 
-여기서는 입력 행렬을 직접 정했으므로 Q·K·V의 학습, multi-head 연결, feed-forward, residual, layer normalization, 위치 표현을 구현하지 않았습니다. 이 작은 계산이 맞는다는 사실은 번역 품질이나 학습 성공을 보여 주지 않습니다. 다음 단계는 [attention 수식 해설](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md)과 [역전파·캐시 검증](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션역전파와캐시_attention-gradients.md)입니다.
+여기서는 입력 행렬을 직접 정했으므로 Q·K·V의 학습, multi-head 연결, feed-forward, residual, layer normalization, 위치 표현을 구현하지 않았습니다. 이 작은 계산이 맞는다는 사실은 번역 품질이나 학습 성공을 보여 주지 않습니다. 다음 단계는 [attention 수식 해설](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션의수식과가중합_attention-from-equations.md)과 [역전파·캐시 검증](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션역전파와캐시_attention-gradients.md)입니다.
 
 ## 병렬 계산의 이점과 길이의 비용
 

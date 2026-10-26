@@ -1,4 +1,4 @@
-# AlphaFold 2: 아미노산 열과 잔기 간 관계에서 입체 구조를 예측하기
+# AlphaFold 2: 아미노산 서열과 잔기 간 관계에서 입체 구조를 예측하기
 
 John Jumper, Richard Evans, Alexander Pritzel 등 34명의 「Highly accurate protein structure prediction with AlphaFold」는 Nature 596, 583–589쪽에 2021년 발표되었습니다. 주된 소속은 DeepMind이며, 공동저자 소속에 Seoul National University도 포함됩니다. [원문](https://www.nature.com/articles/s41586-021-03819-2), [원문 PDF](https://www.nature.com/articles/s41586-021-03819-2.pdf), [공식 구현](https://github.com/google-deepmind/alphafold)을 기준으로 읽습니다.
 
@@ -26,7 +26,7 @@ John Jumper, Richard Evans, Alexander Pritzel 등 34명의 「Highly accurate pr
 | 200 | 40000 |
 | 400 | 160000 |
 
-자기 자신과의 쌍을 제외하고, i–j와 j–i를 같은 관계로 세는 단순 조합 수는 n(n−1)/2입니다. n=100이면 4950입니다. 이 수학적 개수와 실제 모델이 보관하는 배열의 형태를 혼동하지 않으셔야 합니다.
+자기 자신과의 쌍을 제외하고, i–j와 j–i를 같은 관계로 세는 단순 조합 수는 n(n−1)/2입니다. n=100이면 4950입니다. 이 수학적 개수와 실제 모델이 보관하는 배열의 형태를 혼동하지 않아야 합니다.
 
 ## 좌표의 차이와 실제 구조의 차이
 
