@@ -2,7 +2,7 @@
 
 재고와 잔액을 함께 바꾸다가 기록이 중단되어도 새 재고와 옛 잔액이 섞이지 않아야 합니다. 이 사례는 DATA에 두 필드를 모으고 COMMIT을 확인한 경우에만 재생하는 자체 redo 저널입니다. 실제 호스트 파일을 기록하고 새 Python 프로세스로 복구합니다. 전원 제거·OS crash·flash fault를 실행한 결과는 아닙니다.
 
-[코드와 고정 입력](../예제_examples/실무검증_practical-validation/storage_recovery/README.md) · [실행 기록](검증기록_evidence/저장저널중단과복구검사_20261021.md) · [부팅과 저장 데이터](../전자컴퓨터공학_ece/18-임베디드Linux_embedded-linux/해설_notes/boot-devicetree-driver-boundaries.md)
+[코드와 고정 입력](../예제_examples/실무검증_practical-validation/storage_recovery/README.md) · [실행 기록](검증기록_evidence/저장저널중단과복구검사_20261021.md) · [부팅과 저장 데이터](../전자컴퓨터공학_ece/18-임베디드Linux_embedded-linux/해설_notes/부팅과장치트리및드라이버_boot-devicetree-driver-boundaries.md)
 
 ## 1. 파일에 값이 있다는 사실과 확정된 상태를 구분합니다
 

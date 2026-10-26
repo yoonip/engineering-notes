@@ -100,7 +100,7 @@ def _attempt(self, aid):                           # self는 객체 자신, aid�
 
 - [Linux Kernel 6.12 blk-mq](https://docs.kernel.org/6.12/block/blk-mq.html): Operation·Tag-based completion, timeout 반환 enum, `blk_mq_ops.timeout`, `blk_mq_quiesce_queue`와 `blk_mq_start_request` 설명을 읽었습니다. 요청 완료 순서·timeout 처리·queue dispatch의 범위에 사용했습니다.
 - [Linux v6.12 include/linux/blk-mq.h](https://github.com/torvalds/linux/blob/v6.12/include/linux/blk-mq.h): `enum blk_eh_timer_return` 주석과 선언을 대조했습니다. 자체 상태 이름이나 `stopped=True` 계약이 커널 규격에 있다는 근거로 쓰지 않았습니다.
-- [카드 busy·오류·timeout 사례](eMMC와SD의busy와쓰기실패_emmc-sd-write-status.md)와 [USB callback 소유권 사례](USB의부분전송과중복없는복구_usb-bulk-recovery.md)는 선행 모델입니다. 여기서는 매체 적용과 통지의 분리·겹침 쓰기의 순서를 추가했습니다.
+- [카드 busy·오류·timeout 사례](eMMC와SD의busy와쓰기실패_emmc-sd-write-status.md)와 [USB callback 소유권 사례](USB의부분전송과중복없는복구_usb-bulk-recovery.md)는 선행 모델입니다. 이 사례는 매체에 쓰기가 적용되는 시점과 완료 통지를 분리하고, 겹치는 쓰기의 순서를 비교합니다.
 
 ## English
 
