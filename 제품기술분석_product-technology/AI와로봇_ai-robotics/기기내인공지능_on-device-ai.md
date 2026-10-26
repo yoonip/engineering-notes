@@ -1,4 +1,4 @@
-# 기기 내 AI: 작은 모델의 계산량보다 메모리와 열이 중요한 이유 / Memory and thermal limits of on-device AI
+# 기기 내 AI: 작은 모델의 메모리·데이터 이동·열 제약 / Memory and thermal limits of on-device AI
 
 기준일: 2026년 10월 20일. Apple·Android 개발 문서와 공개 추론 실험을 조사했습니다. 이 글에서 휴대전화 모델을 내려받거나 배터리 시험을 직접 실행하지 않았습니다.
 

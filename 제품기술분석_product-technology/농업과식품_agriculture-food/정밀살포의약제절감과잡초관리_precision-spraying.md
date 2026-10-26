@@ -1,4 +1,4 @@
-# See & Spray: 약제를 아끼는 인식과 잡초를 남기지 않는 관리 / Precision spraying and weed control
+# See & Spray: 표적 살포의 약제 절감과 현장 잡초 관리 / Precision spraying and weed control
 
 기준일: 2026년 10월 20일. John Deere의 상용 제품 안내와 Iowa State·University of Arkansas의 현장 연구를 대조했습니다. 기계를 운전하거나 영상을 직접 분류한 시험이 아닌 문헌 분석입니다. 농약 사용량 감소를 수확량·순이익·장기 방제 성공과 구분합니다.
 
