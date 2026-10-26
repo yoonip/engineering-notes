@@ -1,0 +1,20 @@
+addrmap bench_csr { // 작은 실험 장치의 레지스터 주소 공간
+    default regwidth = 32; // 각 레지스터의 논리 폭32비트
+    default accesswidth = 32; // 소프트웨어 접근 단위32비트
+    reg { // 읽기 전용 버전 레지스터
+        field { sw = r; hw = r; reset = 32'h00010002; } revision[31:0]; // 버전값1.2를32비트 상수로 명세
+    } version @ 0x00; // 기준 주소에서0바이트 오프셋
+    reg { // 소프트웨어가 설정하고 하드웨어가 읽는 제어값
+        field { sw = rw; hw = r; reset = 0; } run_en[0:0]; // 실행 허용 한 비트의 초기값0
+        field { sw = rw; hw = r; reset = 2; } mode_sel[3:1]; // 세 비트 모드의 초기값2
+    } control @ 0x04; // 다음32비트 접근 위치
+    reg { // 하드웨어 상태와 소프트웨어의1쓰기 소거
+        field { // 네 비트 상태 필드의 속성
+            sw = rw; // 소프트웨어가 읽고 소거용 쓰기 가능
+            hw = w; // 하드웨어가 상태값을 갱신할 수 있음
+            onwrite = woclr; // 쓴 데이터가1인 비트만 소거하도록 명세
+            precedence = hw; // 동시 갱신 충돌에서는 하드웨어 우선
+            reset = 0; // 상태 필드의 초기값0
+        } flags[3:0]; // 낮은 네 비트만 상태로 사용
+    } events @ 0x08; // 세 번째 정렬된 레지스터
+}; // 전체 CSR 명세 끝

@@ -1,0 +1,295 @@
+{
+  "id": "systemrdl-csr",
+  "number": 1,
+  "title": "SystemRDL로 명세한 32비트 CSR과 생성 C 헤더 대조",
+  "language": "SystemRDL 2.0",
+  "supporting_languages": [
+    "Python 3",
+    "GNU C11"
+  ],
+  "sources": [
+    "example.rdl",
+    "check_spec.py",
+    "check_header.c"
+  ],
+  "source_sha256": {
+    "example.rdl": "4cc5581ad35e42b85229b56df25fe7223a0538f11d297fbc599b4ee33073cbdd",
+    "check_spec.py": "5e29d40785198b8f40359d4767a835dcec263be203a4189aaff8fc02aa30dc3b",
+    "check_header.c": "2499f4ed94822443dc5f8fb90289a40021d222a1312180f57e628b5608c8280f"
+  },
+  "expected_marker": "PASS systemrdl ast_checks=50 header_assertions=21 rejected=4 header_negative_controls=1 deterministic_exports=2",
+  "returncode": 0,
+  "stdout": "PASS systemrdl ast_checks=50 header_assertions=21 rejected=4 header_negative_controls=1 deterministic_exports=2\n",
+  "stderr": "",
+  "summary": "RO·RW·W1C 레지스터 세 개를 실제 컴파일·전개하고 주소·필드 속성과 생성 C 헤더를 독립 기대값으로 대조합니다. RTL 및 MMIO 버스 동작은 검증 범위에 포함하지 않습니다.",
+  "validation_scope": {
+    "compiled_original_systemrdl": true,
+    "elaborated_register_model": true,
+    "generated_real_c_header": true,
+    "independent_literal_ast_expectations": true,
+    "compiled_and_executed_host_c": true,
+    "rtl_generated": false,
+    "bus_simulated": false,
+    "physical_mmio_access": false,
+    "tested_target": "Windows x86_64 host C layout; no device target",
+    "w1c": "onwrite=woclr and precedence=hw checked in the elaborated field properties; no bus behavior simulation",
+    "generated_header_limits": "Plain uint32_t members and field macros do not enforce RO or implement W1C. No C bitfields or address-bound instance were requested."
+  },
+  "tools": {
+    "python": "3.12.14",
+    "systemrdl-compiler": "1.33.0",
+    "peakrdl-cheader": "1.1.0",
+    "c_compiler": "Zig cc / Clang 21.1.0",
+    "host_target": "x86_64-unknown-windows-gnu"
+  },
+  "checked_at": "2026-10-26",
+  "command": [
+    "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\현업언어_industry-languages\\01-레지스터명세_systemrdl\\check_spec.py",
+    "--deps",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\deps",
+    "--zig",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+    "--out",
+    "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1"
+  ],
+  "commands": [
+    {
+      "command": [
+        "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\현업언어_industry-languages\\01-레지스터명세_systemrdl\\check_spec.py",
+        "--deps",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\deps",
+        "--zig",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+        "--out",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1"
+      ],
+      "returncode": 0,
+      "stdout": "PASS systemrdl ast_checks=50 header_assertions=21 rejected=4 header_negative_controls=1 deterministic_exports=2\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+        "cc",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1",
+      "returncode": 0,
+      "stdout": "clang version 21.1.0\nTarget: x86_64-unknown-windows-gnu\nThread model: posix\nInstalledDir: C:/Users/test2/Documents/ChatGPT/코딩/tmp/c-compiler/ziglang\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+        "cc",
+        "-std=gnu11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Igenerated_a",
+        "check_header.c",
+        "-o",
+        "header_check.exe"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1\\header_check.exe"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1",
+      "returncode": 0,
+      "stdout": "PASS header assertions=21 size=12 offsets=0,4,8 control_reset=4\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+        "cc",
+        "-std=gnu11",
+        "-Igenerated_bad",
+        "check_header.c",
+        "-o",
+        "bad_header.exe"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "check_header.c:13:16: error: static assertion failed due to requirement '6 == 14': mode mask\n   13 | _Static_assert(BENCH_CSR__CONTROL__MODE_SEL_bm == 0xe, \"mode mask\"); // 비트3부터1까지의 마스크1110\n      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\ngenerated_bad/registers.h:24:41: note: expanded from macro 'BENCH_CSR__CONTROL__MODE_SEL_bm'\n   24 | #define BENCH_CSR__CONTROL__MODE_SEL_bm 0x6\n      |                                         ^\n1 error generated.\n"
+    }
+  ],
+  "api_steps": [
+    "RDLCompiler.compile_file(example.rdl)",
+    "RDLCompiler.elaborate()",
+    "CHeaderExporter.export(root, registers.h, std=CStandard.gnu11, generate_bitfields=False)"
+  ],
+  "checks": {
+    "independent_ast_property_comparisons": 50,
+    "independent_c_static_assertions": 21,
+    "invalid_systemrdl_inputs_rejected_with_expected_diagnostic": 4,
+    "corrupted_header_rejected_by_mode_mask_assertion": 1,
+    "header_exports": 2,
+    "byte_identical_export_comparisons": 1
+  },
+  "observed": {
+    "version": {
+      "offset": 0,
+      "size": 4,
+      "fields": {
+        "revision": {
+          "low": 0,
+          "high": 31,
+          "width": 32,
+          "sw": "r",
+          "hw": "r",
+          "reset": 65538,
+          "onwrite": null,
+          "precedence": "sw"
+        }
+      }
+    },
+    "control": {
+      "offset": 4,
+      "size": 4,
+      "fields": {
+        "run_en": {
+          "low": 0,
+          "high": 0,
+          "width": 1,
+          "sw": "rw",
+          "hw": "r",
+          "reset": 0,
+          "onwrite": null,
+          "precedence": "sw"
+        },
+        "mode_sel": {
+          "low": 1,
+          "high": 3,
+          "width": 3,
+          "sw": "rw",
+          "hw": "r",
+          "reset": 2,
+          "onwrite": null,
+          "precedence": "sw"
+        }
+      }
+    },
+    "events": {
+      "offset": 8,
+      "size": 4,
+      "fields": {
+        "flags": {
+          "low": 0,
+          "high": 3,
+          "width": 4,
+          "sw": "rw",
+          "hw": "w",
+          "reset": 0,
+          "onwrite": "woclr",
+          "precedence": "hw"
+        }
+      }
+    }
+  },
+  "generated_artifacts": {
+    "registers.h": {
+      "sha256": "7cc65aa4b32d7be482d2c59d006ad1009ab809e8bcb064d323ea02528d96b05c",
+      "size_bytes": 1334,
+      "second_export_sha256": "7cc65aa4b32d7be482d2c59d006ad1009ab809e8bcb064d323ea02528d96b05c",
+      "published_as_authored_source": false,
+      "temporary_path": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1\\generated_a\\registers.h"
+    }
+  },
+  "results": [
+    {
+      "name": "normal_compile_elaborate_export_host_check",
+      "expected": "pass",
+      "returncode": 0,
+      "stdout": "PASS systemrdl ast_checks=50 header_assertions=21 rejected=4 header_negative_controls=1 deterministic_exports=2\n",
+      "checks": {
+        "ast": 50,
+        "header_assertions": 21
+      }
+    },
+    {
+      "name": "address_overlap",
+      "expected": "compiler_rejection",
+      "actual_exception": "RDLCompileError",
+      "rejected": true,
+      "required_diagnostic": "overlap",
+      "diagnostic": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1\\address_overlap.rdl:10:7: error: Instance 'control' at offset +0x0:0x3 overlaps with 'version' at offset +0x0:0x3\n    } control @ 0x00; // 다음32비트 접근 위치\n      ^^^^^^^\nfatal: Elaborate aborted due to previous errors\n",
+      "input_sha256": "1ffe45f8236ed9ab53c3ff9b344b6bc219a7f6745025799e6af2c7517399b13b"
+    },
+    {
+      "name": "field_overlap",
+      "expected": "compiler_rejection",
+      "actual_exception": "RDLCompileError",
+      "rejected": true,
+      "required_diagnostic": "overlap",
+      "diagnostic": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1\\field_overlap.rdl:9:47: error: Field 'mode_sel[2:0]' overlaps with field 'run_en[0:0]'\n        field { sw = rw; hw = r; reset = 2; } mode_sel[2:0]; // 세 비트 모드의 초기값2\n                                              ^^^^^^^^\nfatal: Elaborate aborted due to previous errors\n",
+      "input_sha256": "4450eab46b934fc794f35be9e221df59bf13feb3a3df62df1013ff4ef54e6ab9"
+    },
+    {
+      "name": "readonly_w1c",
+      "expected": "compiler_rejection",
+      "actual_exception": "RDLCompileError",
+      "rejected": true,
+      "required_diagnostic": "onwrite",
+      "diagnostic": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1\\readonly_w1c.rdl:15:13: error: Field 'flags' has an 'onwrite' property but does not have software write access\n            onwrite = woclr; // 쓴 데이터가1인 비트만 소거하도록 명세\n            ^^^^^^^\nfatal: Elaborate aborted due to previous errors\n",
+      "input_sha256": "3c5c3367dead1196c2271b6bb2bbf493bdb3f4ce3aadbc7ac320ed97b2fc02b7"
+    },
+    {
+      "name": "reset_overflow",
+      "expected": "compiler_rejection",
+      "actual_exception": "RDLCompileError",
+      "rejected": true,
+      "required_diagnostic": "reset",
+      "diagnostic": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\industry-languages-20261026\\c_intro\\run1\\reset_overflow.rdl:9:34: error: The reset value (8) of field 'mode_sel' cannot fit within its width (3)\n        field { sw = rw; hw = r; reset = 8; } mode_sel[3:1]; // 세 비트 모드의 초기값2\n                                 ^^^^^\nfatal: Elaborate aborted due to previous errors\n",
+      "input_sha256": "50096c19eb219c2241a4f60569f5236b45934b2951550772d9413c1fd1330159"
+    },
+    {
+      "name": "corrupted_mode_mask",
+      "expected": "C_static_assertion_failure",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "check_header.c:13:16: error: static assertion failed due to requirement '6 == 14': mode mask\n   13 | _Static_assert(BENCH_CSR__CONTROL__MODE_SEL_bm == 0xe, \"mode mask\"); // 비트3부터1까지의 마스크1110\n      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\ngenerated_bad/registers.h:24:41: note: expanded from macro 'BENCH_CSR__CONTROL__MODE_SEL_bm'\n   24 | #define BENCH_CSR__CONTROL__MODE_SEL_bm 0x6\n      |                                         ^\n1 error generated.\n"
+    },
+    {
+      "name": "repeat_export",
+      "expected": "byte_identical",
+      "sha256_a": "7cc65aa4b32d7be482d2c59d006ad1009ab809e8bcb064d323ea02528d96b05c",
+      "sha256_b": "7cc65aa4b32d7be482d2c59d006ad1009ab809e8bcb064d323ea02528d96b05c"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.accellera.org/downloads/standards/systemrdl",
+      "role": "SystemRDL standard and register-description scope"
+    },
+    {
+      "url": "https://www.accellera.org/images/downloads/standards/systemrdl/SystemRDL_2.0_Jan2018.pdf",
+      "role": "SystemRDL 2.0 official specification"
+    },
+    {
+      "url": "https://systemrdl-compiler.readthedocs.io/en/stable/api/compiler.html",
+      "role": "compile_file and elaborate API"
+    },
+    {
+      "url": "https://systemrdl-compiler.readthedocs.io/en/stable/property_reference.html",
+      "role": "sw, hw, onwrite, reset, precedence and register-width properties"
+    },
+    {
+      "url": "https://peakrdl-cheader.readthedocs.io/en/latest/api.html",
+      "role": "actual header-export API and options"
+    },
+    {
+      "url": "https://peakrdl-cheader.readthedocs.io/en/latest/licensing.html",
+      "role": "generator license and generated-code exemption"
+    }
+  ]
+}
