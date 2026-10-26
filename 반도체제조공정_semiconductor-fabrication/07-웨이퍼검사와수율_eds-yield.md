@@ -329,4 +329,4 @@ SLT(System Level Test)는 메모리·주변 장치·소프트웨어를 함께 �
 | [Cirrus Logic, Reliability and Qualification](https://www.cirrus.com/quality/reliability-qualification) | How We Measure Failure Rate, Qualification, Monitoring, Reliability Stress Tests입니다. DPPM·FIT 및 선별과 신뢰성 평가의 범위를 확인했습니다. |
 | [TSMC-SoIC](https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/SoIC.htm) | Exceptional Heterogeneous Integration입니다. 서로 다른 다이의 KGD 통합을 확인했습니다. |
 
-설계 단계의 DFT와 제조 시험을 더 공부하려면 [반도체 테스트·제조 분야](../분야_topics/51-반도체테스트제조_test-manufacturing/README.md)를 함께 읽을 수 있습니다. 다음 글에서는 이렇게 선별한 다이를 실제 기기와 연결하고 열·기계적 환경을 견디도록 조립하는 과정을 다룹니다.
+설계 단계의 DFT와 제조 시험을 더 공부하려면 [반도체 테스트·제조 분야](../전자컴퓨터공학_ece/51-반도체테스트제조_test-manufacturing/README.md)를 함께 읽을 수 있습니다. 다음 글에서는 이렇게 선별한 다이를 실제 기기와 연결하고 열·기계적 환경을 견디도록 조립하는 과정을 다룹니다.

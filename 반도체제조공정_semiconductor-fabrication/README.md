@@ -84,10 +84,10 @@ FEOL은 트랜지스터 같은 소자를 형성하는 구간, MOL은 소자 단�
 
 - [공정·설비·패키지의 검사](../직무와실무기술_job-practice/07-공정설비와패키지의검사_process-equipment-package-tests.md): 직무기술서의 업무를 계측·SPC·DOE·설비 제어·신뢰성 시험과 C·Python의 사용 위치에 연결합니다.
 - [반도체 산업과 직무의 연결](../직무와실무기술_job-practice/13-반도체산업과직무의연결_semiconductor-value-chain.md): IDM·팹리스·파운드리·OSAT와 설계·제조·제품 사이의 인계를 읽습니다.
-- [반도체 소자와 MOS 전기장](../분야_topics/10-반도체소자_semiconductors/README.md): 소자의 전기적 특성과 회로 동작을 더 공부합니다.
-- [DFT·반도체 테스트·제조](../분야_topics/51-반도체테스트제조_test-manufacturing/README.md): scan·ATPG·fault coverage와 검사 설계를 연결합니다.
-- [패키징·chiplet·열 설계](../분야_topics/36-패키징열설계_packaging-thermal/README.md): 전원·열·시스템 설계를 이어서 읽습니다.
-- [EUV 노광의 해상도와 생산량](../제품리뷰_reviews/반도체와산업컴퓨팅_chips-industrial/극자외선노광의해상도와생산량_euv-lithography.md): 장비 기술과 생산 조건을 살펴봅니다.
+- [반도체 소자와 MOS 전기장](../전자컴퓨터공학_ece/10-반도체소자_semiconductors/README.md): 소자의 전기적 특성과 회로 동작을 더 공부합니다.
+- [DFT·반도체 테스트·제조](../전자컴퓨터공학_ece/51-반도체테스트제조_test-manufacturing/README.md): scan·ATPG·fault coverage와 검사 설계를 연결합니다.
+- [패키징·chiplet·열 설계](../전자컴퓨터공학_ece/36-패키징열설계_packaging-thermal/README.md): 전원·열·시스템 설계를 이어서 읽습니다.
+- [EUV 노광의 해상도와 생산량](../제품기술분석_product-technology/반도체와산업컴퓨팅_chips-industrial/극자외선노광의해상도와생산량_euv-lithography.md): 장비 기술과 생산 조건을 살펴봅니다.
 - [전기·전자·통신 과목별 공개 강의](../학습사이트와채널_learning-resources/전기전자통신과목_ece-courses.md): 소자·공정·재료·계측의 대학 강의를 찾습니다.
 
 ## 영상과 출처

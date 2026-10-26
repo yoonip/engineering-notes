@@ -424,4 +424,4 @@ Zhao 외의 2015년 연구는 시험용 패키지의 온도별 휨을 shadow moi
 | [Amkor, Test Services](https://amkor.com/test-services/) | HPC & AI의 distributed test입니다. 조립 단계 사이·최종 ATE·SLT를 확인했습니다. |
 | [SK hynix, Episode 11](https://news.skhynix.com/en/semiconductor-back-end-process-episode-11-reliability-tests-and-standards-for-semiconductor-packages/) | 2023-12-20, 신뢰성 정의·수명·환경·기계 시험 분류입니다. 표준의 상세 현행 판본을 검토한 것으로 표현하지 않았습니다. |
 
-열 경로와 실장 조건을 더 공부하려면 [패키징·열 설계 분야](../분야_topics/36-패키징열설계_packaging-thermal/README.md)를 함께 읽을 수 있습니다.
+열 경로와 실장 조건을 더 공부하려면 [패키징·열 설계 분야](../전자컴퓨터공학_ece/36-패키징열설계_packaging-thermal/README.md)를 함께 읽을 수 있습니다.
