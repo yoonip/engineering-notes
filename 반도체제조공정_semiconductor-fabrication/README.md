@@ -82,6 +82,8 @@ FEOL은 트랜지스터 같은 소자를 형성하는 구간, MOL은 소자 단�
 
 ## 관련 학습 자료
 
+- [공정·설비·패키지의 검사](../직무와실무기술_job-practice/07-공정설비와패키지의검사_process-equipment-package-tests.md): 직무기술서의 업무를 계측·SPC·DOE·설비 제어·신뢰성 시험과 C·Python의 사용 위치에 연결합니다.
+- [반도체 산업과 직무의 연결](../직무와실무기술_job-practice/13-반도체산업과직무의연결_semiconductor-value-chain.md): IDM·팹리스·파운드리·OSAT와 설계·제조·제품 사이의 인계를 읽습니다.
 - [반도체 소자와 MOS 전기장](../분야_topics/10-반도체소자_semiconductors/README.md): 소자의 전기적 특성과 회로 동작을 더 공부합니다.
 - [DFT·반도체 테스트·제조](../분야_topics/51-반도체테스트제조_test-manufacturing/README.md): scan·ATPG·fault coverage와 검사 설계를 연결합니다.
 - [패키징·chiplet·열 설계](../분야_topics/36-패키징열설계_packaging-thermal/README.md): 전원·열·시스템 설계를 이어서 읽습니다.
