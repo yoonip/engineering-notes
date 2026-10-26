@@ -1,6 +1,6 @@
 # 그림과 표의 표기 | Figure and table conventions
 
-[기여 안내 / Contributing](README.md) · [그림 목록과 원본 / Figures and source files](../자료_assets/도식_diagrams/그림목록_INDEX.md)
+[기여 안내 / Contributing](README.md) · [그림 목록과 원본 / Figures and source files](../그림자료_assets/도식_diagrams/그림목록_INDEX.md)
 
 개념도는 구조와 관계를, 수치 도표는 값의 변화와 비교를 보여 주도록 구분했습니다. 회로는 전압원·저항·인덕터·커패시터 기호를 쓰고, 제어계는 합산점·입력 유지·표본화·되먹임 경로를 구분합니다. 상태도는 전이 번호를 본문의 조건표와 연결합니다.
 

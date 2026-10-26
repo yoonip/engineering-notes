@@ -9,7 +9,7 @@
 | 문서 목록 | 공학·언어·인문사회·이력·작성 기준이 한 경로에 섞여 있었습니다. | 학습 분야, 분석, 구현, 작성자 정보, 기여 안내를 나눴습니다. |
 | 블로그 운영 | 파일명과 달리 언어·사회·경제 소개였습니다. | 외국어·기술 영어를 독립시키고 사회·경제는 인문사회 본문으로 연결했습니다. |
 | 추론과 인문사회 | 시험 추론과 분야 지식의 입구가 하나였습니다. | 언어이해·추리논증의 학습 축과 철학·경제·사회·법의 분야 지식을 별도 목록으로 연결했습니다. |
-| 양식 | 실제 지원 기록·평가 지표·RC 예제·설계 설명이 양식으로 분류되어 있었습니다. | 각각 소개·리뷰·공학 기초·기여 안내로 옮겼습니다. |
+| 양식 | 작성자 정보·평가 지표·RC 예제·설계 설명이 양식으로 분류되어 있었습니다. | 각각 소개·기술 분석·공학 기초·기여 안내로 옮겼습니다. |
 | AI 모델 | 기관 목록에 비해 배포물 분석이 적고 실험 코드가 없었습니다. | 29개 기관의 대표 모델·서비스·도구 분석과 CPU 실험 4종을 연결했습니다. |
 | 논문 읽기 | 방법 설명에 비해 개별 논문의 계산 사례가 적었습니다. | attention 수치 계산과 부분곱 실험 분석을 추가했습니다. |
 | 기술 현황·제품 | 개념 해설과 날짜가 있는 현황·제품 동작이 구분되지 않았습니다. | MLPerf v6.1 분석과 SQLite 실행 리뷰를 독립된 목차에 넣었습니다. |
@@ -30,10 +30,10 @@
 | --- | --- | --- |
 | 문서 경로 | `python 기여안내_contributing/tools/check_documents.py` | Markdown 상대 링크와 분야·출처 데이터의 문서 경로 |
 | 출처 목록 | `python 기여안내_contributing/tools/build_reference_pages.py --check` | JSON과 Markdown 목록의 일치, 해설 132개 연결 기록 |
-| 모델 계산 | `python -m unittest discover -s AI모델실험_model-lab/experiments -p "test_*.py" -v` | CPU 수치 검사 6개 통과 |
+| 모델 계산 | `python -m unittest discover -s AI모델과수치실험_ai-models/experiments -p "test_*.py" -v` | CPU 수치 검사 6개 통과 |
 | attention | `python 논문해설_papers/attention_calculation.py` | 비율·닫힌 형태·causal mask 등 조건 5개 확인 |
-| SQLite | `python 제품리뷰_reviews/sqlite_concurrency.py` | DELETE와 WAL 두 모드의 트랜잭션 관찰값 확인 |
-| 부분곱 분석 | [사례의 재현 명령](../분야_topics/27-논문코드특허_papers-code-patents/해설_notes/부분곱실험의주장과근거_partial-product-reproduction-case.md) | INT6·k=2 입력 4,096쌍의 두 구현 일치 |
+| SQLite | `python 제품기술분석_product-technology/sqlite_concurrency.py` | DELETE와 WAL 두 모드의 트랜잭션 관찰값 확인 |
+| 부분곱 분석 | [사례의 재현 명령](../전자컴퓨터공학_ece/27-논문코드특허_papers-code-patents/해설_notes/부분곱실험의주장과근거_partial-product-reproduction-case.md) | INT6·k=2 입력 4,096쌍의 두 구현 일치 |
 | 정답 기록 | `python programmers/tests/verify_archive.py` | 정답 672개와 주석 사본·원본 해시 확인 |
 
 외부 문서는 AI 배포물과 새 분석의 핵심 근거를 공식 자료로 확인했습니다. 저장소의 모든 외부 URL을 실시간으로 검사하거나 기존 연구의 모든 실험을 재실행한 기록은 아닙니다. 모델 실험은 작은 수치 예제이며 공식 가중치 추론이나 GPU 벤치마크를 포함하지 않습니다.
@@ -52,7 +52,7 @@
 | 기초와 평가 | RC 충전, 모델 평가 지표, 기술 용어와 논문 용어 | 단위·가정·분모·행렬 모양과 계산 결과를 대조했습니다. |
 | 목차 연결 | 61개 분야의 본문 연결과 주요 학습 경로 | 외국어 읽기 글의 이름과 위치를 정리하고, RC·개발 도구·세부 실습의 찾기 어려운 링크를 연결했습니다. |
 
-[기출 목록](../언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md), [영어 기초](../외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), [논문 해설](../논문해설_papers/README.md), [모델별 분석](../AI모델실험_model-lab/models/README.md)에서 해당 본문으로 들어가실 수 있습니다. 논문은 교육과 후속 연구에 미친 영향을 기준으로 선정했으며 인용 횟수 순위를 산정한 목록은 아닙니다.
+[기출 목록](../언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md), [영어 기초](../외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), [논문 해설](../논문해설_papers/README.md), [모델별 분석](../AI모델과수치실험_ai-models/models/README.md)에서 해당 본문으로 들어가실 수 있습니다. 논문은 교육과 후속 연구에 미친 영향을 기준으로 선정했으며 인용 횟수 순위를 산정한 목록은 아닙니다.
 
 수치 예제는 별도 계산과 교차 검토로 확인했습니다. 예를 들어 Amdahl의 추가 비용은 기준 시간으로 나눈 값이어야 하고, LayerNorm과 BatchNorm은 통계를 구하는 축이 다릅니다. CLIP의 한계 절 번호, Moore의 1975년 후속 원문 링크, NVIDIA 카드 안에서 서로 다른 언어 목록도 원문에 맞춰 바로잡았습니다.
 
