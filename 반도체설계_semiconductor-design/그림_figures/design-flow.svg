@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1380" height="1240" viewBox="0 0 1380 1240" role="img" aria-labelledby="title desc">
-<title id="title">회로 설계와 RTL 설계의 흐름</title><desc id="desc">직접 작성한 설계 흐름 개념도입니다. 명세와 공정 자료에서 두 설계 흐름으로 나뉘고, 검증한 다이별 데이터와 멀티다이 설계로 이어집니다. 단계마다 설계 수정과 재검증이 반복됩니다.</desc>
+<title id="title">회로 설계와 RTL 설계의 흐름</title><desc id="desc">직접 작성한 설계 흐름 개념도입니다. 명세와 공정 자료에서 두 설계 흐름으로 나뉘고, 칩·SoC 최상위 통합과 전체 검증, 멀티다이 설계로 이어집니다. 단계마다 설계 수정과 재검증이 반복됩니다.</desc>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#42556b" stroke-width="1.6"/></marker></defs>
 <rect width="1380" height="1240" fill="#ffffff"/>
 <g font-family="'Malgun Gothic','Noto Sans KR','Apple SD Gothic Neo',sans-serif" fill="#193249">
@@ -60,8 +60,8 @@
 <path d="M355,923 L1025,923" fill="none" stroke="#42556b" stroke-width="2.4"/>
 <path d="M690,923 L690,944" fill="none" stroke="#42556b" stroke-width="2.4" marker-end="url(#arrow)"/>
 <rect x="260" y="952" width="860" height="78" rx="12" fill="#eef3f8" stroke="#becbd7" stroke-width="2"/>
-<text x="690.0" y="982" font-size="23" text-anchor="middle" font-weight="600" fill="#193249">검증한 다이별 설계 데이터</text>
-<text x="690.0" y="1008" font-size="18" text-anchor="middle" font-weight="400" fill="#4c6174">GDSII/OASIS + 넷리스트·모델·제약·검증 보고서</text>
+<text x="690.0" y="982" font-size="23" text-anchor="middle" font-weight="600" fill="#193249">칩·SoC 최상위 통합과 전체 검증</text>
+<text x="690.0" y="1008" font-size="18" text-anchor="middle" font-weight="400" fill="#4c6174">매크로·디지털 구현·패드 → GDSII/OASIS와 검증 보고서</text>
 <path d="M690,1032 L690,1067" fill="none" stroke="#42556b" stroke-width="2.4" marker-end="url(#arrow)"/>
 <rect x="140" y="1078" width="1100" height="84" rx="12" fill="#f7f3eb" stroke="#becbd7" stroke-width="2"/>
 <text x="690.0" y="1108" font-size="23" text-anchor="middle" font-weight="600" fill="#193249">멀티다이·HBM·패키지 설계와 검증</text>

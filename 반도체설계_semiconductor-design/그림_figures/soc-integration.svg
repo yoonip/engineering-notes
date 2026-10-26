@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="1010" viewBox="0 0 1380 1010" role="img" aria-labelledby="title desc">
+<title id="title">센서 수집 SoC의 통합 구조</title><desc id="desc">직접 구성한 교육용 아키텍처입니다. 아날로그 센서 입력과 ADC가 RTL 제어와 FIFO, DMA를 통해 연결망과 SRAM으로 이어집니다. CPU와 부팅 ROM, UART와 공통 전원·클록·리셋 조건을 함께 보여 줍니다. 실제 floorplan이 아닙니다.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#42556b" stroke-width="1.6"/></marker></defs>
+<rect width="1380" height="1010" fill="white"/><g font-family="'Malgun Gothic','Noto Sans KR','Apple SD Gothic Neo',sans-serif" fill="#193249">
+<text x="60" y="55" font-size="31" font-weight="600" text-anchor="start" fill="#193249">아날로그 회로·디지털 제어·CPU·메모리의 연결</text>
+<text x="60" y="96" font-size="21" font-weight="400" text-anchor="start" fill="#536575">설명용 센서 수집 SoC · 실제 제품의 구성이나 물리 배치가 아닙니다.</text>
+<rect x="50" y="135" width="1280" height="715" rx="13" fill="#ffffff" stroke="#7890aa" stroke-width="2"/>
+<text x="83" y="173" font-size="23" font-weight="600" text-anchor="start" fill="#193249">칩 안의 기능 블록</text>
+<rect x="90" y="215" width="285" height="108" rx="13" fill="#eef3fa" stroke="#9aacbf" stroke-width="2"/>
+<text x="232.5" y="252" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">센서 입력·AFE</text>
+<text x="232.5" y="285" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">입력 범위·이득·잡음</text>
+<rect x="440" y="215" width="245" height="108" rx="13" fill="#eef3fa" stroke="#9aacbf" stroke-width="2"/>
+<text x="562.5" y="252" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">ADC 매크로</text>
+<text x="562.5" y="285" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">전압 → 디지털 코드</text>
+<rect x="820" y="215" width="455" height="108" rx="13" fill="#edf5f2" stroke="#9aacbf" stroke-width="2"/>
+<text x="1047.5" y="252" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">RTL 제어·FIFO</text>
+<text x="1047.5" y="285" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">준비·유효·CDC·가득 참</text>
+<path d="M377,269 L430,269" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M688,269 L809,269" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="749" y="244" font-size="19" font-weight="400" text-anchor="middle" fill="#193249">샘플</text>
+<rect x="820" y="355" width="455" height="100" rx="13" fill="#edf5f2" stroke="#9aacbf" stroke-width="2"/>
+<text x="1047.5" y="392" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">DMA</text>
+<text x="1047.5" y="425" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">샘플 수락 → 메모리 쓰기</text>
+<path d="M1047,325 L1047,345" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="90" y="505" width="1185" height="77" rx="13" fill="#e9eef5" stroke="#849bb4" stroke-width="2"/>
+<text x="682" y="552" font-size="26" font-weight="600" text-anchor="middle" fill="#193249">주소·요청·응답을 전달하는 연결망</text>
+<path d="M1047,458 L1047,495" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="627" y="472" font-size="20" font-weight="400" text-anchor="middle" fill="#536575">주소·제어 레지스터 / 완료·오류 알림</text>
+<rect x="90" y="680" width="285" height="105" rx="13" fill="#edf5f2" stroke="#9aacbf" stroke-width="2"/>
+<text x="232.5" y="717" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">CPU</text>
+<text x="232.5" y="750" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">부팅·설정·상태 확인</text>
+<rect x="435" y="680" width="275" height="105" rx="13" fill="#f5f1e9" stroke="#9aacbf" stroke-width="2"/>
+<text x="572.5" y="717" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">ROM·SRAM</text>
+<text x="572.5" y="750" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">부팅 코드·샘플 저장</text>
+<rect x="815" y="680" width="460" height="105" rx="13" fill="#edf5f2" stroke="#9aacbf" stroke-width="2"/>
+<text x="1045.0" y="717" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">UART·외부 패드</text>
+<text x="1045.0" y="750" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">출력·디버그·핀 설정</text>
+<path d="M232,590 L232,670" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)" marker-start="url(#a)"/>
+<path d="M572,590 L572,670" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)" marker-start="url(#a)"/>
+<path d="M1045,590 L1045,670" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="90" y="877" width="1185" height="70" rx="13" fill="#f1f4f7" stroke="#a7b4c3" stroke-width="2"/>
+<text x="682" y="920" font-size="24" font-weight="600" text-anchor="middle" fill="#193249">공통 조건: 전원·클록·리셋·검사와 패키지 연결</text>
+<text x="690" y="984" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">그림의 선은 기능 연결을 나타냅니다. 실제 배선·전원망·클록 트리는 별도로 구현합니다.</text>
+</g></svg>

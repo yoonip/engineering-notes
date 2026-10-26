@@ -82,6 +82,10 @@ SystemVerilog `interface`는 관련 신호와 연결 규칙을 한곳에 묶는 
 
 SDF는 지연·타이밍 검사 값을 시뮬레이션 설계에 주석으로 연결하는 형식입니다. 라이브러리의 특성 모델인 `.lib`, 배선의 저항·정전용량인 SPEF와 역할이 다릅니다. [OpenSTA의 입력 형식 목록](https://openroad.readthedocs.io/en/latest/main/src/sta/README.html)은 Verilog·Liberty·SDC·SDF·SPEF를 나누어 제시합니다. 파일 하나를 다른 역할의 대체물로 넘기면 분석 경계가 사라집니다.
 
+## 모델의 선택을 칩 통합으로 이어 가기
+
+[혼합신호 통합](15-아날로그와RTL의혼합신호통합_analog-digital-integration.md)에서는 아날로그 매크로의 기능·회로·물리 뷰를 상위 설계에 연결하고 ADC 데이터의 유효 시점과 제어 순서를 정합니다. CPU·레지스터·버스·메모리·부팅과의 관계는 [SoC 구조와 IP 통합](16-SoC구조와IP통합_soc-architecture-integration.md)으로 이어집니다.
+
 ## 5. 다음 단계로 넘기는 파일과 오류 진단
 
 전달 묶음에는 RTL 목록·top module·파라미터·매크로 정의·include 경로, 사용한 메모리·아날로그 모델과 판본, 클록·리셋·전원 조건을 둡니다. 검증 결과에는 시험명·seed·도구 판본·검사 항목·관측 로그를 연결합니다. 파형 파일만 있으면 어떤 기대 조건으로 성공을 판단했는지 알기 어렵습니다.

@@ -49,6 +49,10 @@
 
 이 표는 설계 업무를 분류한 설명입니다. 모든 공개 PDK가 이 소자를 전부 제공한다는 뜻은 아닙니다. 예를 들어 [IHP의 공개 설계 지원](https://www.ihp-microelectronics.com/services/research-and-prototyping-service/open-source-design-enablement)은 analog·digital·mixed-signal·RF를 다루며, [gdsfactory 프로젝트](https://github.com/gdsfactory/gdsfactory)는 photonics·analog·quantum·MEMS 등의 레이아웃을 다룹니다. 지원하는 설계 대상은 프로젝트의 기능과 선택한 공정 자료를 함께 확인합니다.
 
+## 블록에서 칩으로 연결하기
+
+소자 위치와 배선을 직접 정하는 작업은 [풀커스텀 레이아웃](14-아날로그풀커스텀레이아웃_full-custom-layout.md)에서 설명합니다. 여러 블록을 시스템으로 묶는 [SoC 통합](16-SoC구조와IP통합_soc-architecture-integration.md)과 외부 핀·전원까지 포함하는 [칩 최상위 검증](17-칩최상위검증과제조인계_chip-top-signoff.md)은 블록 내부의 설계에서 한 단계 넓어진 범위입니다.
+
 ## 설계 완료를 판단하는 순서
 
 1. 요구한 기능을 검증합니다. 오류 입력·리셋·경계 동작도 명세에 포함합니다.

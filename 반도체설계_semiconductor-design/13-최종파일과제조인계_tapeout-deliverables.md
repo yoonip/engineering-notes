@@ -72,6 +72,10 @@ sha256sum --check SHA256SUMS               # --check로 현재 파일이 기록�
 
 따라서 설계 팀의 GDS 인계, 마스크 데이터 준비, 웨이퍼 제조, 웨이퍼 검사, 패키징, 최종 시험은 서로 이어지는 별도 단계입니다. 이 제조 과정은 [반도체 제조 공정](../반도체제조공정_semiconductor-fabrication/README.md)에서 이어집니다.
 
+## 블록 데이터와 칩 최상위 데이터
+
+여러 매크로를 사용한 칩에서는 블록별 GDS 외에 최상위 배선·패드·전력망·보호 구조와 패키지 연결을 함께 맞춥니다. [칩 최상위 검증과 제조 인계](17-칩최상위검증과제조인계_chip-top-signoff.md)는 블록 내부 검증에서 칩 전체 검증으로 범위를 넓히는 과정과 공개 혼합신호 통합 사례를 설명합니다.
+
 ## 실제 제작 경로를 선택할 때
 
 MPW는 여러 설계가 한 웨이퍼 제작 비용을 나누는 방식입니다. 공개 설계도 참여 계약과 사용 가능한 공정·면적·일정·결과물 조건을 확인합니다. [IHP Open-Silicon MPW](https://dk.ihp-microelectronics.com/OpenSourceRequest.php)는 공개 설계의 참여·라이선스·계약 조건을 설명하고, [imec IC-Link의 MPW 안내](https://www.imeciclink.com/en/asic-fabrication/mpw-schedules-2026)는 등록 시점과 GDS 제출 기한을 구분합니다. 비용·일정은 각 프로그램의 해당 회차에서 확인합니다.

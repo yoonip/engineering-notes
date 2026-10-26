@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="1010" viewBox="0 0 1380 1010" role="img" aria-labelledby="title desc">
+<title id="title">아날로그·디지털·메모리의 칩 최상위 인계</title><desc id="desc">풀커스텀 아날로그 매크로, RTL로 구현한 디지털 블록, SRAM 매크로가 각자의 논리·물리·전기 모델을 전달합니다. 최상위 칩에서 전원·신호·패드와 연결하고 칩 전체 검증 후 최종 파일을 인계합니다.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#42556b" stroke-width="1.6"/></marker></defs>
+<rect width="1380" height="1010" fill="white"/><g font-family="'Malgun Gothic','Noto Sans KR','Apple SD Gothic Neo',sans-serif" fill="#193249">
+<text x="60" y="58" font-size="31" font-weight="600" text-anchor="start" fill="#193249">블록별 설계 결과를 하나의 칩으로 연결합니다.</text>
+<rect x="60" y="130" width="390" height="118" rx="13" fill="#eef3fa" stroke="#9aacbf" stroke-width="2"/>
+<text x="255.0" y="167" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">풀커스텀 아날로그</text>
+<text x="255.0" y="200" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">회로·배치·배선·추출 후 성능</text>
+<rect x="495" y="130" width="390" height="118" rx="13" fill="#edf5f2" stroke="#9aacbf" stroke-width="2"/>
+<text x="690.0" y="167" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">RTL 디지털 구현</text>
+<text x="690.0" y="200" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">합성·배치배선·타이밍·검사</text>
+<rect x="930" y="130" width="390" height="118" rx="13" fill="#f5f1e9" stroke="#9aacbf" stroke-width="2"/>
+<text x="1125.0" y="167" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">메모리 매크로</text>
+<text x="1125.0" y="200" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">셀·주변회로·물리 구현·특성</text>
+<path d="M255,251 L255,287" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M690,251 L690,287" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M1125,251 L1125,287" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="60" y="300" width="390" height="104" rx="13" fill="#f7f9fc" stroke="#9aacbf" stroke-width="2"/>
+<text x="255.0" y="337" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">모델·물리 뷰</text>
+<text x="255.0" y="370" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">동작·SPICE/CDL·LEF·GDS</text>
+<rect x="495" y="300" width="390" height="104" rx="13" fill="#f7faf9" stroke="#9aacbf" stroke-width="2"/>
+<text x="690.0" y="337" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">논리·물리 결과</text>
+<text x="690.0" y="370" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">넷리스트·제약·LEF/GDS·보고서</text>
+<rect x="930" y="300" width="390" height="104" rx="13" fill="#faf8f3" stroke="#9aacbf" stroke-width="2"/>
+<text x="1125.0" y="337" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">일치된 매크로 뷰</text>
+<text x="1125.0" y="370" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">Verilog·Liberty·LEF·GDS·기준회로</text>
+<path d="M255,405 L255,443 L690,443" fill="none" stroke="#42556b" stroke-width="2.5"/>
+<path d="M690,405 L690,443 L690,443" fill="none" stroke="#42556b" stroke-width="2.5"/>
+<path d="M1125,405 L1125,443 L690,443" fill="none" stroke="#42556b" stroke-width="2.5"/>
+<path d="M690,443 L690,477" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="170" y="491" width="1040" height="110" rx="13" fill="#eef2f7" stroke="#9aacbf" stroke-width="2"/>
+<text x="690.0" y="528" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">칩 최상위 통합 · SoC의 시스템 연결</text>
+<text x="690.0" y="561" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">매크로·RTL·신호·전원·클록·리셋·I/O·pad/bump·패키지</text>
+<path d="M690,604 L690,645" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="170" y="660" width="1040" height="110" rx="13" fill="#edf5f2" stroke="#9aacbf" stroke-width="2"/>
+<text x="690.0" y="697" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">칩 전체의 기능·전기·물리 검증</text>
+<text x="690.0" y="730" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">AMS·STA·CDC/RDC·DRC/LVS/PEX·전력·신뢰성·시험 접근</text>
+<path d="M690,774 L690,815" fill="none" stroke="#42556b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="170" y="830" width="1040" height="105" rx="13" fill="#f5f1e9" stroke="#9aacbf" stroke-width="2"/>
+<text x="690.0" y="867" font-size="25" font-weight="600" text-anchor="middle" fill="#193249">동일한 최종 설계 판본으로 인계</text>
+<text x="690.0" y="900" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">GDSII/OASIS·기준 회로·검증 보고서·pad/bump·조립·검사 자료</text>
+<text x="690" y="982" font-size="19" font-weight="400" text-anchor="middle" fill="#536575">하나의 매크로를 서로 다른 뷰로 읽습니다. 파일의 이름·핀·판본과 검증 범위를 맞춥니다.</text>
+</g></svg>
