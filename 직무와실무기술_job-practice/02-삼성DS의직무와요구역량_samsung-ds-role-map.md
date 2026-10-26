@@ -1,6 +1,6 @@
 # 삼성전자 DS의 직무와 요구 역량 | Samsung DS roles and technical skills
 
-[직무와 실무 기술](README.md) · [칩 설계·평가](06-칩설계와평가분석_chip-design-characterization.md) · [공정·설비·패키지 검사](07-공정설비와패키지의검사_process-equipment-package-tests.md) · [출처와 JD 판본](출처와검토범위_SOURCES.md)
+[직무와 실무 기술](README.md) · [칩 설계·평가](06-칩설계와평가분석_chip-design-characterization.md) · [공정·설비·패키지 검사](07-공정설비와패키지의검사_process-equipment-package-tests.md) · [출처와 JD 판본](출처와검토범위_SOURCES.md) · [직무별 업무 사례](사례_cases/06-직무별사례와담당범위_role-case-map.md)
 
 기준 자료는 「2026 상 삼성전자 DS부문 직무기술서」입니다. 아래 쪽수는 표지를 포함한 PDF 순서이며, 모집표는 2–3쪽입니다. 직무 이름이 같아도 사업부와 대상 제품이 다르면 업무가 달라집니다. 특히 S.LSI의 신호및시스템설계는 통신·영상 알고리즘을, AI센터의 같은 직무명은 이 판본에서 IT 보안 아키텍처를 다룹니다.
 

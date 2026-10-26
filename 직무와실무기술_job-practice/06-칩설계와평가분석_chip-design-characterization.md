@@ -1,6 +1,6 @@
 # 칩 설계와 평가·분석 | Chip design, characterization and failure analysis
 
-[직무 목차](README.md) · [삼성 DS 직무](02-삼성DS의직무와요구역량_samsung-ds-role-map.md) · [제조·패키지 검사](07-공정설비와패키지의검사_process-equipment-package-tests.md) · [언어가 쓰이는 위치](10-C와Python이쓰이는위치_languages-in-the-workflow.md)
+[직무 목차](README.md) · [삼성 DS 직무](02-삼성DS의직무와요구역량_samsung-ds-role-map.md) · [제조·패키지 검사](07-공정설비와패키지의검사_process-equipment-package-tests.md) · [언어가 쓰이는 위치](10-C와Python이쓰이는위치_languages-in-the-workflow.md) · [공개 칩·메모리 검사 코드 사례](사례_cases/03-칩과메모리의공개검사코드_chip-memory-test.md)
 
 칩을 검증한다는 말에는 설계 모델의 기능 확인, 레이아웃·시간 검증, 실제 실리콘의 특성 측정, 제조 결함 선별, 고장 위치 추적이 함께 들어갈 수 있습니다. 어떤 대상을 어떤 조건에서 관찰하는지 나누어야 C·Python·Verilog 같은 도구의 역할도 보입니다.
 

@@ -1,6 +1,6 @@
 # 제품 회로와 시스템 검사 | Product circuit and system testing
 
-[직무 목차](README.md) · [삼성 DX 직무](01-삼성DX의직무와요구역량_samsung-dx-role-map.md) · [펌웨어·SW 검증](05-펌웨어와소프트웨어검증_firmware-software-validation.md)
+[직무 목차](README.md) · [삼성 DX 직무](01-삼성DX의직무와요구역량_samsung-dx-role-map.md) · [펌웨어·SW 검증](05-펌웨어와소프트웨어검증_firmware-software-validation.md) · [계측 코드와 원인 분석](사례_cases/01-회로와소자의계측코드_circuit-device-measurement.md)
 
 회로를 검사한다는 말에는 전압을 읽는 일, 고속 신호의 타이밍을 보는 일, RF 신호의 변조 오차를 재는 일, 여러 제품·기지국이 함께 동작하는지 확인하는 일이 들어갑니다. 각각 필요한 자극·계측기·판정 기준이 다릅니다. C나 Python의 쓰임도 어떤 층을 구현하거나 관측하는지에 따라 달라집니다.
 

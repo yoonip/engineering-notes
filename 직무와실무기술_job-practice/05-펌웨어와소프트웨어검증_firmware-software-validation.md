@@ -1,6 +1,6 @@
 # 펌웨어와 소프트웨어 검증 | Firmware and software validation
 
-[직무 목차](README.md) · [DX 직무표](01-삼성DX의직무와요구역량_samsung-dx-role-map.md) · [제품 회로 검사](04-제품회로와시스템검사_product-circuit-system-tests.md)
+[직무 목차](README.md) · [DX 직무표](01-삼성DX의직무와요구역량_samsung-dx-role-map.md) · [제품 회로 검사](04-제품회로와시스템검사_product-circuit-system-tests.md) · [공개 펌웨어·통신 코드 사례](사례_cases/02-펌웨어와통신의공개코드_firmware-communication.md)
 
 로봇의 센서값이 PC 화면에 나타나는 과정에는 센서·통신 장치, 드라이버, OS, 미들웨어와 응용이 있습니다. 어느 층에서 값과 시간을 책임지는지 나누어야 필요한 언어와 검증 방법도 보입니다. 장치 안의 C/C++와 PC의 Python, 서버의 Java가 같은 일을 반복하는 것이 아닙니다.
 

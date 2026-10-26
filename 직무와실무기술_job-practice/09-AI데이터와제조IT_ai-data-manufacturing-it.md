@@ -1,6 +1,6 @@
 # AI·데이터와 제조 IT | AI, data and manufacturing IT
 
-[직무·실무 목차](README.md) · [SK하이닉스 JD](03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) · [검사결과 판정·기록](11-검사결과의판정과기록_test-decisions-evidence.md) · [출처와 판본](출처와검토범위_SOURCES.md)
+[직무·실무 목차](README.md) · [SK하이닉스 JD](03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) · [검사결과 판정·기록](11-검사결과의판정과기록_test-decisions-evidence.md) · [출처와 판본](출처와검토범위_SOURCES.md) · [AI·제조 IT의 평가 사례](사례_cases/05-AI와제조IT의평가사례_ai-manufacturing-it.md)
 
 제조 현장의 AI·IT는 모델 하나를 학습시키는 일로 끝나지 않습니다. 장비에서 나온 자료가 올바른 제품·시점·조건과 연결되어야 하고, 분석 결과가 업무 시스템과 실제 설비에서 어떤 조치로 이어지는지도 정해야 합니다.
 

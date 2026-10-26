@@ -1,6 +1,6 @@
 # SK하이닉스의 직무와 요구 역량 | SK hynix role and skill map
 
-[직무·실무 목차](README.md) · [메모리 제품·테스트 개발](08-메모리제품과테스트개발_memory-product-test-engineering.md) · [AI·데이터·제조 IT](09-AI데이터와제조IT_ai-data-manufacturing-it.md) · [출처와 판본](출처와검토범위_SOURCES.md)
+[직무·실무 목차](README.md) · [메모리 제품·테스트 개발](08-메모리제품과테스트개발_memory-product-test-engineering.md) · [AI·데이터·제조 IT](09-AI데이터와제조IT_ai-data-manufacturing-it.md) · [출처와 판본](출처와검토범위_SOURCES.md) · [직무별 업무 사례](사례_cases/06-직무별사례와담당범위_role-case-map.md)
 
 이 글은 『2026 하반기 SK하이닉스 Talent hy-way(신입) Job Description』의 직무 본문을 기준으로 합니다. 쪽수는 표지를 1쪽으로 센 PDF 순서입니다. 2–24쪽의 직무를 모두 아래 표에 연결했고, 1쪽은 표지, 25쪽은 지원·전형 안내로 구분했습니다. 문서 확인일은 2026-10-26입니다.
 

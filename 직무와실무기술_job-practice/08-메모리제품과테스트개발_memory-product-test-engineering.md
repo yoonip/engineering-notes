@@ -1,6 +1,6 @@
 # 메모리 제품과 테스트 개발 | Memory product and test engineering
 
-[직무·실무 목차](README.md) · [SK하이닉스 JD](03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) · [칩 설계·평가](06-칩설계와평가분석_chip-design-characterization.md) · [C·Python의 위치](10-C와Python이쓰이는위치_languages-in-the-workflow.md)
+[직무·실무 목차](README.md) · [SK하이닉스 JD](03-SK하이닉스의직무와요구역량_sk-hynix-role-map.md) · [칩 설계·평가](06-칩설계와평가분석_chip-design-characterization.md) · [C·Python의 위치](10-C와Python이쓰이는위치_languages-in-the-workflow.md) · [공개 메모리 검사 코드 사례](사례_cases/03-칩과메모리의공개검사코드_chip-memory-test.md)
 
 메모리 테스트는 값을 쓰고 다시 읽는 한 동작보다 넓습니다. 무엇을 검사하는지, 어떤 조건으로 자극하는지, 기대값을 누가 만드는지, 실패를 어느 물리 구조와 연결하는지에 따라 직무와 프로그램의 역할이 달라집니다.
 

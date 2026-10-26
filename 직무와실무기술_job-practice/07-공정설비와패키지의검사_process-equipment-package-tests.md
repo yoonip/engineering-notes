@@ -1,6 +1,6 @@
 # 공정·설비·패키지의 검사 | Process, equipment and package tests
 
-[직무 목차](README.md) · [삼성 DS 직무](02-삼성DS의직무와요구역량_samsung-ds-role-map.md) · [칩 평가·분석](06-칩설계와평가분석_chip-design-characterization.md) · [판정과 기록](11-검사결과의판정과기록_test-decisions-evidence.md)
+[직무 목차](README.md) · [삼성 DS 직무](02-삼성DS의직무와요구역량_samsung-ds-role-map.md) · [칩 평가·분석](06-칩설계와평가분석_chip-design-characterization.md) · [판정과 기록](11-검사결과의판정과기록_test-decisions-evidence.md) · [공정·설비·패키지 업무 사례](사례_cases/04-공정설비와패키지의검사사례_process-equipment-package.md)
 
 공정 결과를 검사하는 일, 측정 장비의 신뢰성을 확인하는 일, 공정 장비를 정비하는 일, 패키지의 수명을 평가하는 일은 서로 연결되지만 관측 대상이 다릅니다. ‘Python으로 데이터를 분석한다’는 설명도 어떤 신호·시료·불량·공정 결정을 연결하는지까지 적어야 업무의 의미가 드러납니다.
 
