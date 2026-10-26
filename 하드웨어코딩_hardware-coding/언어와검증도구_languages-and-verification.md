@@ -93,6 +93,10 @@ cocotb 본체는 [BSD-3-Clause](https://github.com/cocotb/cocotb/blob/master/LIC
 반면 확인한 2.0.0 Quickstart의 [my_design.sv](https://github.com/cocotb/cocotb/blob/v2.0.0/examples/doc_examples/quickstart/my_design.sv)와 [test_my_design.py](https://github.com/cocotb/cocotb/blob/v2.0.0/examples/doc_examples/quickstart/test_my_design.py)는 각각 파일 머리에 CC0-1.0을 표시합니다.
 프로젝트의 대표 라이선스와 실제 가져오는 개별 파일의 고지를 함께 기록합니다.
 
+## CPU·검증·아날로그·설계 흐름의 실행 예제
+
+[RISC-V·Rust·cocotb·SPICE·Tcl/SDC·SystemC 실습](언어확장_language-expansion/README.md)에서 CPU 명령과 호출 규약, no_std 프레임 파서, Python 회로 검증, RC 해석, 일반 합성 구조와 제약 생성, FIFO 시간 모형을 읽으실 수 있습니다. 각 예제는 전체 주석 코드·시간 흐름·실제 도구 출력과 한계를 담았습니다. [언어를 고른 기준과 학습 순서](언어확장_language-expansion/검토와학습순서_language-selection.md)는 Chisel·SystemRDL·HLS의 다음 학습 조건도 연결하며 실제 실행한 자료와 조사한 경로를 구분합니다.
+
 ## 추천 경로와 확인 결과의 표기
 
 1. 진리표·멀티플렉서·가산기에서 입력과 조합 출력을 비교합니다.

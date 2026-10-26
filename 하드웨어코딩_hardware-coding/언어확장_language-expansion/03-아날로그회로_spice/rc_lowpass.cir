@@ -1,0 +1,39 @@
+RC low-pass: original transient and AC example
+* Vin: 0V에서 1V로, 1ms 뒤 1us 동안 선형 상승하는 이상 전압원
+Vin in 0 DC 0 AC 1 PULSE(0 1 1m 1u 1u 20m 40m)
+* R1: 입력과 출력 사이 1000ohm 저항
+R1 in out 1k
+* C1: 출력에서 기준 노드 0으로 연결한 1uF 커패시터
+C1 out 0 1u
+* 소신호 상대 오차와 전압 절대 허용치를 지정
+.options reltol=1e-7 vntol=1e-10 abstol=1e-12
+* ngspice 제어 명령 구간 시작
+.control
+* 배치 종료 때 대화형 질문 생략
+set noaskquit
+* 표를 주파수 또는 시간 한 열과 데이터 열들로 출력
+set wr_singlescale
+* 첫 행에 열 이름도 기록
+set wr_vecnames
+* 파일 출력의 십진 유효 자릿수 확보
+set numdgt=15
+* 0부터 6ms까지, 저장 간격 10us와 내부 최대 간격 1us로 과도 해석
+tran 10u 6m 0 1u
+* 실제 계산된 시간·입력 전압·출력 전압 저장
+wrdata transient.dat v(in) v(out)
+* 차단 주파수의 0.01배부터 100배까지 decade당 10개 간격으로 AC 해석
+ac dec 10 1.59154943091895 15915.4943091895
+* 복소 출력 전압의 실수부 선택
+let out_re = real(v(out))
+* 복소 출력 전압의 허수부 선택
+let out_im = imag(v(out))
+* 주파수·실수부·허수부를 독립 비교용 파일로 저장
+wrdata ac.dat out_re out_im
+* 두 해석과 표 출력까지 도달한 완료 표시
+echo PASS ngspice RC analyses complete
+* 배치 시뮬레이터 정상 종료
+quit
+* 제어 명령 구간 끝
+.endc
+* 회로 정의 끝
+.end

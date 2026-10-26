@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "id": "systemc-fifo-backpressure",
+  "title": "SystemC FIFO의 대기와 도착 시간",
+  "language": "C++17 / SystemC 3.0.2",
+  "status": "local_systemc_execution_passed_with_negative_control",
+  "online_judge": false,
+  "original_example": true,
+  "external_code_copied": false,
+  "checked_at": "2026-10-26T07:59:48+00:00",
+  "source_files": [
+    {
+      "file": "example.cpp",
+      "sha256": "7deaea856342cb7a301990242ad11ad97dfdc8974d2145aea5ba3bbd97cff005"
+    },
+    {
+      "file": "CMakeLists.txt",
+      "sha256": "7314e0f043dedbcd017b348fce417a2d17e2c114b613c60876b0c491af966391"
+    }
+  ],
+  "compiled_source_copy_sha256": "7deaea856342cb7a301990242ad11ad97dfdc8974d2145aea5ba3bbd97cff005",
+  "source_copy_matches_published_source": true,
+  "toolchain": {
+    "host": "Windows-11-10.0.26200-SP0",
+    "systemc": {
+      "version": "3.0.2",
+      "runtime_release": "3.0.2-Accellera",
+      "source_url": "https://github.com/accellera-official/systemc/archive/refs/tags/3.0.2.zip",
+      "archive_sha256": "a61195f7f8bdda1ff9baa7b21bf9400f187429c96e6b060d2ae0a71a8c0a863a",
+      "source_modified": false,
+      "linkage": "static",
+      "library_sha256": "6ed9f5416742aae23f87a07f8190c1b2079d82de7a9d88baa6e396d934a25c9e",
+      "install_prefix": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\install"
+    },
+    "compiler": {
+      "zig_version": "0.16.0",
+      "identified_clang_version": "21.1.0",
+      "path": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\c-compiler\\ziglang\\zig.exe",
+      "cxx_wrapper": "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\zig-cxx.cmd",
+      "note": "라이브러리와 예제를 동일한 Zig C++/MinGW 대상·C++17로 빌드합니다."
+    },
+    "cmake": {
+      "version": "4.4.4",
+      "path": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\inventory\\build-tools\\cmake\\data\\bin\\cmake.exe"
+    },
+    "ninja": {
+      "version": "1.13.2",
+      "path": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\inventory\\build-tools\\bin\\ninja.exe",
+      "reported_version": "1.13.2.git.kitware.jobserver-pipe-1"
+    },
+    "dependency_build_flags": [
+      "CMAKE_BUILD_TYPE=Release",
+      "CMAKE_CXX_STANDARD=17",
+      "BUILD_SHARED_LIBS=OFF",
+      "ENABLE_EXAMPLES=OFF",
+      "ENABLE_REGRESSION=OFF",
+      "DISABLE_COPYRIGHT_MESSAGE=ON",
+      "CMAKE_CXX_FLAGS=-Wno-error=date-time"
+    ],
+    "dependency_build_warning": "원본 sc_ver.cpp의 __DATE__/__TIME__ 두 경고는 Zig의 기본 오류 처리를 경고로 낮춰 빌드했습니다. 원본 라이브러리 소스는 수정하지 않았습니다.",
+    "example_build_flags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "Release",
+      "C++17"
+    ],
+    "example_build_warning_count": 0,
+    "working_directory_note": "이 환경의 비ASCII 작업 경로 문제를 피하려고 동일 소스의 ASCII 임시 복사본에서 빌드했습니다."
+  },
+  "execution": {
+    "systemc_build_returncode": 0,
+    "systemc_install_returncode": 0,
+    "example_configure_returncode": 0,
+    "example_build_returncode": 0,
+    "commands": {
+      "systemc_configure": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\inventory\\build-tools\\cmake\\data\\bin\\cmake.exe",
+        "-S",
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\source",
+        "-B",
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\build2",
+        "-G",
+        "Ninja",
+        "-DCMAKE_MAKE_PROGRAM=C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\inventory\\build-tools\\bin\\ninja.exe",
+        "-DCMAKE_C_COMPILER=C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\zig-cc.cmd",
+        "-DCMAKE_CXX_COMPILER=C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\zig-cxx.cmd",
+        "-DCMAKE_AR=C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\zig-ar.cmd",
+        "-DCMAKE_RANLIB=C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\zig-ranlib.cmd",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_CXX_STANDARD=17",
+        "-DBUILD_SHARED_LIBS=OFF",
+        "-DENABLE_EXAMPLES=OFF",
+        "-DENABLE_REGRESSION=OFF",
+        "-DDISABLE_COPYRIGHT_MESSAGE=ON",
+        "-DCMAKE_CXX_FLAGS=-Wno-error=date-time",
+        "-DCMAKE_INSTALL_PREFIX=C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\install"
+      ],
+      "systemc_build": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\inventory\\build-tools\\cmake\\data\\bin\\cmake.exe",
+        "--build",
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\build2",
+        "--parallel",
+        "4"
+      ],
+      "systemc_install": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\inventory\\build-tools\\cmake\\data\\bin\\cmake.exe",
+        "--install",
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\build2"
+      ],
+      "example_configure": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\inventory\\build-tools\\cmake\\data\\bin\\cmake.exe",
+        "-S",
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\example-source",
+        "-B",
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\example-build",
+        "-G",
+        "Ninja",
+        "-DCMAKE_MAKE_PROGRAM=C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\inventory\\build-tools\\bin\\ninja.exe",
+        "-DCMAKE_CXX_COMPILER=C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\zig-cxx.cmd",
+        "-DCMAKE_CXX_FLAGS=-Wall -Wextra -Werror",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_PREFIX_PATH=C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\install"
+      ],
+      "example_build": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\inventory\\build-tools\\cmake\\data\\bin\\cmake.exe",
+        "--build",
+        "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\example-build",
+        "--parallel",
+        "2"
+      ]
+    },
+    "cases": [
+      {
+        "name": "slow",
+        "command": [
+          "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\example-build\\fifo_demo.exe",
+          "slow"
+        ],
+        "expected_returncode": 0,
+        "actual_returncode": 0,
+        "stdout": "SystemC 3.0.2-Accellera\nmode=slow fifo_capacity=1\nvalue request_ns accept_ns arrival_ns blocked_ns\n11 1 1 5 0\n22 2 5 9 3\n33 6 9 13 3\n44 10 13 17 3\nPASS\n",
+        "stderr": "",
+        "expected_stdout_matched": true,
+        "negative_control": false,
+        "scope": "실제 SystemC 커널의 값·순서·요청·수락·도착 시각을 손계산 기대값과 비교합니다."
+      },
+      {
+        "name": "fast",
+        "command": [
+          "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\example-build\\fifo_demo.exe",
+          "fast"
+        ],
+        "expected_returncode": 0,
+        "actual_returncode": 0,
+        "stdout": "SystemC 3.0.2-Accellera\nmode=fast fifo_capacity=1\nvalue request_ns accept_ns arrival_ns blocked_ns\n11 1 1 1 0\n22 2 2 2 0\n33 3 3 3 0\n44 4 4 4 0\nPASS\n",
+        "stderr": "",
+        "expected_stdout_matched": true,
+        "negative_control": false,
+        "scope": "실제 SystemC 커널의 값·순서·요청·수락·도착 시각을 손계산 기대값과 비교합니다."
+      },
+      {
+        "name": "bad-expectation",
+        "command": [
+          "C:\\Users\\test2\\AppData\\Local\\Temp\\codex-systemc-3.0.2-20261026\\example-build\\fifo_demo.exe",
+          "bad-expectation"
+        ],
+        "expected_returncode": 1,
+        "actual_returncode": 1,
+        "stdout": "SystemC 3.0.2-Accellera\nmode=bad-expectation fifo_capacity=1\nvalue request_ns accept_ns arrival_ns blocked_ns\n11 1 1 5 0\n22 2 5 9 3\n33 6 9 13 3\n44 10 13 17 3\nFAIL\n",
+        "stderr": "",
+        "expected_stdout_matched": true,
+        "negative_control": true,
+        "scope": "정상 회로의 마지막 도착 기대값을 18ns로 고의 변경하여 검사 실패를 검출합니다."
+      }
+    ]
+  },
+  "model": {
+    "fifo_capacity": 1,
+    "values": [
+      11,
+      22,
+      33,
+      44
+    ],
+    "time_resolution": "1 ns",
+    "producer_next_request": "이전 write 수락 뒤 1ns",
+    "slow_consumer": {
+      "first_read_ns": 5,
+      "interval_ns": 4,
+      "rows": [
+        [
+          11,
+          1,
+          1,
+          5,
+          0
+        ],
+        [
+          22,
+          2,
+          5,
+          9,
+          3
+        ],
+        [
+          33,
+          6,
+          9,
+          13,
+          3
+        ],
+        [
+          44,
+          10,
+          13,
+          17,
+          3
+        ]
+      ]
+    },
+    "fast_consumer": {
+      "first_read_ns": 0,
+      "interval_ns": 1,
+      "rows": [
+        [
+          11,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          22,
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          33,
+          3,
+          3,
+          3,
+          0
+        ],
+        [
+          44,
+          4,
+          4,
+          4,
+          0
+        ]
+      ]
+    },
+    "row_columns": [
+      "value",
+      "request_ns",
+      "accept_ns",
+      "arrival_ns",
+      "blocked_ns"
+    ]
+  },
+  "covered_techniques": [
+    "SC_THREAD",
+    "sc_fifo blocking read/write",
+    "sc_time",
+    "delta-cycle wake-up",
+    "independent expected timestamps"
+  ],
+  "limitations": [
+    "핀·클록 에지·valid/ready 신호를 기술한 RTL이 아닙니다.",
+    "정수 값 네 개와 두 소비 속도의 기능·시간 조건을 확인한 로컬 예제입니다.",
+    "물리 처리 시간·실제 보드·합성·타이밍·TLM 인터페이스는 검증하지 않습니다.",
+    "음성 대조는 회로 결함 주입이 아니라 잘못된 기대값을 검출하는 검사기 확인입니다."
+  ],
+  "sources": [
+    {
+      "url": "https://accellera.org/downloads/standards/systemc",
+      "section": "Current Releases",
+      "supports": "SystemC 3.0.2 배포와 별도 AMS·검증 라이브러리 범위"
+    },
+    {
+      "url": "https://github.com/accellera-official/systemc/blob/3.0.2/INSTALL.md",
+      "section": "System Requirements; Installation Notes for CMake",
+      "supports": "C++17·CMake와 라이브러리·응용 프로그램 빌드"
+    },
+    {
+      "url": "https://github.com/accellera-official/systemc/blob/3.0.2/src/sysc/communication/sc_fifo.h",
+      "section": "read; write; update",
+      "supports": "가득 찬 쓰기·빈 읽기의 대기와 0시간 이벤트 통지"
+    },
+    {
+      "url": "https://systemc.org/overview/systemc/",
+      "section": "SystemC",
+      "supports": "시스템 수준 모델링과 하드웨어·소프트웨어 상호작용"
+    },
+    {
+      "url": "https://github.com/accellera-official/systemc/blob/3.0.2/LICENSE",
+      "section": "LICENSE",
+      "supports": "외부 라이브러리 Apache-2.0"
+    },
+    {
+      "url": "https://github.com/accellera-official/systemc/blob/3.0.2/NOTICE",
+      "section": "NOTICE",
+      "supports": "외부 라이브러리 저작권·고지 범위"
+    }
+  ]
+}

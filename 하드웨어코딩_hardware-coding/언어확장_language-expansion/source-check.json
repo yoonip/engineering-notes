@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-26T08:26:52.547237+00:00",
+  "status": "passed_source_and_record_checks",
+  "tools_reexecuted": false,
+  "entries": [
+    {
+      "directory": "01-RISC-V비트처리_riscv-assembly",
+      "source_files": 6,
+      "stored_execution_record": "consistent",
+      "current_source_bytes": "match",
+      "embedded_sources": "match"
+    },
+    {
+      "directory": "02-Python회로검증_cocotb",
+      "source_files": 5,
+      "stored_execution_record": "consistent",
+      "current_source_bytes": "match",
+      "embedded_sources": "match"
+    },
+    {
+      "directory": "03-아날로그회로_spice",
+      "source_files": 2,
+      "stored_execution_record": "consistent",
+      "current_source_bytes": "match",
+      "embedded_sources": "match"
+    },
+    {
+      "directory": "04-Rust프레임과비트필드_rust-firmware",
+      "source_files": 3,
+      "stored_execution_record": "consistent",
+      "current_source_bytes": "match",
+      "embedded_sources": "match"
+    },
+    {
+      "directory": "05-설계자동화_tcl-sdc",
+      "source_files": 4,
+      "stored_execution_record": "consistent",
+      "current_source_bytes": "match",
+      "embedded_sources": "match"
+    },
+    {
+      "directory": "06-Cpp이벤트모델_systemc",
+      "source_files": 2,
+      "stored_execution_record": "consistent",
+      "current_source_bytes": "match",
+      "embedded_sources": "match"
+    }
+  ],
+  "example_count": 6,
+  "source_files": 22,
+  "local_file_links": "all_resolve"
+}

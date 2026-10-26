@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "id": "03-spice-rc",
+  "title": "RC 저역통과 회로의 과도·AC 해석과 정확해 비교",
+  "language": "SPICE netlist + ngspice control language",
+  "sources": [
+    "rc_lowpass.cir",
+    "check_rc.py"
+  ],
+  "source_sha256": {
+    "rc_lowpass.cir": "98a0f2c7d938113d67f7580f678f2074da0ea120bcbdd1a8b608a6a0de221915",
+    "check_rc.py": "eb9ae5d6c2fb6776b2abe55d882af6056818aa904562bba4b2041da7740ab367"
+  },
+  "source_origin": "Original netlist and independent analytic checker; no official example netlist copied",
+  "components": {
+    "R_ohm": 1000,
+    "C_F": 0.000001,
+    "tau_s": 0.001,
+    "cutoff_Hz": 159.15494309189532,
+    "voltage_source": {
+      "start_V": 0,
+      "end_V": 1,
+      "delay_s": 0.001,
+      "rise_s": 0.000001,
+      "pulse_width_s": 0.02,
+      "period_s": 0.04,
+      "ac_amplitude_V": 1
+    }
+  },
+  "tools": {
+    "python": "Python 3.12.14",
+    "ngspice": {
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\ngspice-47\\Spice64\\bin\\ngspice_con.exe",
+        "--version"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩",
+      "returncode": 0,
+      "stdout": "******\r\n** ngspice-47 : Circuit level simulation program\r\n** Compiled with KLU Direct Linear Solver\r\n** The U. C. Berkeley CAD Group\r\n** Copyright 1985-1994, Regents of the University of California.\r\n** Copyright 2001-2026, The ngspice team.\r\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\r\n** Please file your bug-reports at https://ngspice.sourceforge.io/bugrep.html\r\n** Creation Date: Aug 11 2026   13:55:25\r\n******\r\n",
+      "stderr": ""
+    },
+    "download": {
+      "url": "https://downloads.sourceforge.net/project/ngspice/ng-spice-rework/47/ngspice-47_64.7z",
+      "bytes": 13814879,
+      "sha256": "59225971bd68cdd1199443649aa4615a9e6d684933f205ab49006a3942518f5a",
+      "release": "https://sourceforge.net/projects/ngspice/files/ng-spice-rework/47/"
+    }
+  },
+  "verification": {
+    "status": "passed_actual_ngspice_and_analytic_comparison",
+    "checker": {
+      "command": [
+        "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "-B",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\언어확장_language-expansion\\03-아날로그회로_spice\\check_rc.py",
+        "--ngspice",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\ngspice-47\\Spice64\\bin\\ngspice_con.exe",
+        "--build-dir",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\spice-final"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩",
+      "returncode": 0,
+      "stdout": "PASS RC transient_rows=6040 ac_rows=41 transient_error_V=2.998e-08 ac_complex_error=2.289e-16\r\n",
+      "stderr": ""
+    },
+    "comparison": {
+      "checked_at": "2026-10-26T07:57:52.648745+00:00",
+      "status": "passed_actual_ngspice_and_analytic_comparison",
+      "source_sha256": "98a0f2c7d938113d67f7580f678f2074da0ea120bcbdd1a8b608a6a0de221915",
+      "command": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\ngspice-47\\Spice64\\bin\\ngspice_con.exe",
+        "-b",
+        "-n",
+        "rc_lowpass.cir"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\spice-final",
+      "returncode": 0,
+      "stdout": "\r\nNote: No compatibility mode selected!\r\n\r\n\r\nCircuit: rc low-pass: original transient and ac example\r\n\r\nDoing analysis at TEMP = 27.000000 and TNOM = 27.000000\r\n\r\nUsing SPARSE 1.3 as Direct Linear Solver\r\n\r\nInitial Transient Solution\r\n--------------------------\r\n\r\nNode                                   Voltage\r\n----                                   -------\r\nin                                           0\r\nout                                          0\r\nvin#branch                                   0\r\n\r\n\r\nNo. of Data Rows : 6040\r\nDoing analysis at TEMP = 27.000000 and TNOM = 27.000000\r\n\r\nUsing SPARSE 1.3 as Direct Linear Solver\r\n\r\nNo. of Data Rows : 41\r\nPASS ngspice RC analyses complete\r\nngspice-47 done\r\n",
+      "stderr": "",
+      "transient_rows": 6040,
+      "ac_rows": 41,
+      "maximum_transient_absolute_error_V": 2.997761683332101e-8,
+      "maximum_ac_complex_error": 2.2887833992611187e-16,
+      "thresholds": {
+        "transient_absolute_V": 0.00001,
+        "ac_complex": 1e-10
+      },
+      "measurements": [
+        {
+          "kind": "transient",
+          "time_s": 0.001,
+          "input_V": 0,
+          "simulated_V": 0,
+          "analytic_V": 0,
+          "absolute_error_V": 0
+        },
+        {
+          "kind": "transient",
+          "time_s": 0.001001,
+          "input_V": 0.999999999999916,
+          "simulated_V": 0.0004998316256298992,
+          "analytic_V": 0.0004998333749916113,
+          "absolute_error_V": 1.7493617121295407e-9
+        },
+        {
+          "kind": "transient",
+          "time_s": 0.002000068304446945,
+          "input_V": 1,
+          "simulated_V": 0.6319617272603719,
+          "analytic_V": 0.6319616972906819,
+          "absolute_error_V": 2.996969006296979e-8
+        },
+        {
+          "kind": "transient",
+          "time_s": 0.003000068304447078,
+          "input_V": 1,
+          "simulated_V": 0.8646062971775432,
+          "analytic_V": 0.8646062748696279,
+          "absolute_error_V": 2.2307915292785196e-8
+        },
+        {
+          "kind": "transient",
+          "time_s": 0.006,
+          "input_V": 1,
+          "simulated_V": 0.9932586856999016,
+          "analytic_V": 0.993258682904143,
+          "absolute_error_V": 2.7957586246074584e-9
+        },
+        {
+          "kind": "ac",
+          "frequency_Hz": 15.91549430918951,
+          "simulated_real": 0.9900990099009901,
+          "simulated_imag": -0.09900990099009885,
+          "magnitude": 0.995037190209989,
+          "phase_deg": -5.710593137499634,
+          "analytic_real": 0.9900990099009901,
+          "analytic_imag": -0.09900990099009885,
+          "complex_error": 0
+        },
+        {
+          "kind": "ac",
+          "frequency_Hz": 159.1549430918951,
+          "simulated_real": 0.5000000000000007,
+          "simulated_imag": -0.4999999999999999,
+          "magnitude": 0.7071067811865479,
+          "phase_deg": -44.99999999999996,
+          "analytic_real": 0.5000000000000008,
+          "analytic_imag": -0.5,
+          "complex_error": 1.5700924586837752e-16
+        },
+        {
+          "kind": "ac",
+          "frequency_Hz": 1591.549430918952,
+          "simulated_real": 0.009900990099009918,
+          "simulated_imag": -0.0990099009900991,
+          "magnitude": 0.099503719020999,
+          "phase_deg": -84.28940686250036,
+          "analytic_real": 0.009900990099009918,
+          "analytic_imag": -0.0990099009900991,
+          "complex_error": 0
+        }
+      ]
+    }
+  },
+  "data_files": {
+    "transient.dat": {
+      "sha256": "55589fb2b54107be61c912e056782e20edb3249e6bd909f4825a4434ac80993a",
+      "rows": 6040
+    },
+    "ac.dat": {
+      "sha256": "76c020f1af1049da9702ac531d11b5556ed0005b2a2fd38b9f985add69d774d6",
+      "rows": 41
+    }
+  },
+  "scope": {
+    "actual_ngspice_execution": true,
+    "python_analytic_oracle": true,
+    "python_only_spice_claim": false,
+    "ideal_linear_components": true,
+    "physical_measurement": false,
+    "component_tolerance_sweep": false,
+    "parasitics": false,
+    "pcb_extraction": false,
+    "thermal_noise": false
+  },
+  "official_references": [
+    "https://ngspice.sourceforge.io/download.html",
+    "https://ngspice.sourceforge.io/docs.html",
+    "https://ngspice.sourceforge.io/ngspice-control-language-tutorial.html",
+    "https://ngspice.sourceforge.io/devel.html",
+    "https://ocw.mit.edu/courses/res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014/3bca850386a3005c22134fa62fb3bad5_MITRES_6-011F14_art_insfin.pdf"
+  ],
+  "expected": {
+    "ngspice_returncode": 0,
+    "completion_marker": "PASS ngspice RC analyses complete",
+    "ac_rows": 41,
+    "transient_time_range_s": [
+      0,
+      0.006
+    ],
+    "maximum_transient_absolute_error_V_less_than": 0.00001,
+    "maximum_ac_complex_error_less_than": 1e-10
+  }
+}

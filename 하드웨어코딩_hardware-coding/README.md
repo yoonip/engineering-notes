@@ -4,6 +4,10 @@ Verilog 회로를 제출하는 온라인 문제, 직접 설계한 SystemVerilog 
 
 [처음으로](../README.md) · [학습 사이트와 코드 출처](학습사이트와코드출처_hardware-resources.md) · [언어와 검증 도구](언어와검증도구_languages-and-verification.md) · [실행·채점 기록](확인기록_validation.md)
 
+## CPU 실행·아날로그·검증·설계 자동화
+
+[언어와 도구의 확장 실습](언어확장_language-expansion/README.md)은 RISC-V 어셈블리·Rust·cocotb·SPICE·Tcl/SDC·SystemC를 연결합니다. [선정 이유와 학습 순서](언어확장_language-expansion/검토와학습순서_language-selection.md)에서 각 도구가 다루는 대상과 기존 HDL 학습에서 이어갈 지점을 설명합니다. 확장 실습은 각 폴더의 별도 명령으로 실행하며, [실행 기록](언어확장_language-expansion/확인기록_validation.md)에서 확인한 범위를 구분합니다.
+
 ## 무엇부터 공부할지
 
 | 목표 | 시작할 자료 | 다음 단계 |

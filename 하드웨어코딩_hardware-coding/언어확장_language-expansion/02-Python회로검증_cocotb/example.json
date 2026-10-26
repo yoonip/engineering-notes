@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "id": "02-cocotb",
+  "title": "Python 테스트와 Icarus의 카운터·전송 버퍼 연동",
+  "language": "Python/cocotb + SystemVerilog",
+  "sources": [
+    "counter.sv",
+    "elastic_buffer.sv",
+    "test_counter.py",
+    "test_buffer.py",
+    "run.py"
+  ],
+  "source_sha256": {
+    "counter.sv": "ebf9fab8193933ce6f22bcb7d6dac8fe243e279ba78ecc9b1dba299390e0450a",
+    "elastic_buffer.sv": "b23a95ae1365c9df2b53999bb8e49247f6ecc4567c2ad000f5cad294b3775de0",
+    "test_counter.py": "0b547cf6c0bb6aa5547ac5122fab1c19534b8be94349b355ac26c9f14ccf0f65",
+    "test_buffer.py": "a536dc3c5ccc9c3720623ae5efcd821ab6ae6ad62f5b403a3aa4588997648221",
+    "run.py": "d19d1dd864c046af170f43284299f1a4d3a6859cb6b096b11cb1d007f410b76b"
+  },
+  "source_origins": {
+    "elastic_buffer.sv": {
+      "kind": "byte_identical_repository_copy",
+      "path": "../../예제_examples/01-전송대기_elastic-buffer/elastic_buffer.sv",
+      "sha256": "b23a95ae1365c9df2b53999bb8e49247f6ecc4567c2ad000f5cad294b3775de0"
+    },
+    "other_files": "Original code written for this example; no official example source copied"
+  },
+  "tools": {
+    "python": {
+      "executable": "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "version": "Python 3.12.14",
+      "embedded_runtime_observed": "3.12.14"
+    },
+    "cocotb": {
+      "version": "2.0.0",
+      "temporary_dependency_directory": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps",
+      "install_command": [
+        "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "-B",
+        "-m",
+        "pip",
+        "install",
+        "--target",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps",
+        "cocotb==2.0.0"
+      ],
+      "support": "Native Windows x86_64 and Icarus 11+ are documented; this run used Icarus12"
+    },
+    "iverilog": {
+      "command": [
+        "C:/iverilog/bin/iverilog.exe",
+        "-V"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩",
+      "returncode": 0,
+      "stdout": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)\r\n\r\nCopyright (c) 2000-2021 Stephen Williams (steve@icarus.com)\r\n\r\n  This program is free software; you can redistribute it and/or modify\r\n  it under the terms of the GNU General Public License as published by\r\n  the Free Software Foundation; either version 2 of the License, or\r\n  (at your option) any later version.\r\n\r\n  This program is distributed in the hope that it will be useful,\r\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n  GNU General Public License for more details.\r\n\r\n  You should have received a copy of the GNU General Public License along\r\n  with this program; if not, write to the Free Software Foundation, Inc.,\r\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\r\n\r\nIcarus Verilog Preprocessor version 12.0 (devel) (s20150603-1539-g2693dd32b)\r\n\r\nCopyright (c) 1999-2021 Stephen Williams (steve@icarus.com)\r\n\r\n  This program is free software; you can redistribute it and/or modify\r\n  it under the terms of the GNU General Public License as published by\r\n  the Free Software Foundation; either version 2 of the License, or\r\n  (at your option) any later version.\r\n\r\n  This program is distributed in the hope that it will be useful,\r\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n  GNU General Public License for more details.\r\n\r\n  You should have received a copy of the GNU General Public License along\r\n  with this program; if not, write to the Free Software Foundation, Inc.,\r\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\r\n\r\nIcarus Verilog Parser/Elaborator version 12.0 (devel) (s20150603-1539-g2693dd32b)\r\n\r\nCopyright (c) 1998-2021 Stephen Williams (steve@icarus.com)\r\n\r\n  This program is free software; you can redistribute it and/or modify\r\n  it under the terms of the GNU General Public License as published by\r\n  the Free Software Foundation; either version 2 of the License, or\r\n  (at your option) any later version.\r\n\r\n  This program is distributed in the hope that it will be useful,\r\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n  GNU General Public License for more details.\r\n\r\n  You should have received a copy of the GNU General Public License along\r\n  with this program; if not, write to the Free Software Foundation, Inc.,\r\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\r\n\r\n FLAGS DLL vvp.tgt\r\nvvp.tgt: Icarus Verilog VVP Code Generator 12.0 (devel) (s20150603-1539-g2693dd32b)\r\n\r\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\r\n\r\n  This program is free software; you can redistribute it and/or modify\r\n  it under the terms of the GNU General Public License as published by\r\n  the Free Software Foundation; either version 2 of the License, or\r\n  (at your option) any later version.\r\n\r\n  This program is distributed in the hope that it will be useful,\r\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n  GNU General Public License for more details.\r\n\r\n  You should have received a copy of the GNU General Public License along\r\n  with this program; if not, write to the Free Software Foundation, Inc.,\r\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\r\n\r\n",
+      "stderr": ""
+    },
+    "vvp": {
+      "command": [
+        "C:/iverilog/bin/vvp.exe",
+        "-V"
+      ],
+      "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Icarus Verilog runtime version 12.0 (devel) (s20150603-1539-g2693dd32b)\r\n\r\nCopyright (c) 2001-2021 Stephen Williams (steve@icarus.com)\r\n\r\n  This program is free software; you can redistribute it and/or modify\r\n  it under the terms of the GNU General Public License as published by\r\n  the Free Software Foundation; either version 2 of the License, or\r\n  (at your option) any later version.\r\n\r\n  This program is distributed in the hope that it will be useful,\r\n  but WITHOUT ANY WARRANTY; without even the implied warranty of\r\n  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\r\n  GNU General Public License for more details.\r\n\r\n  You should have received a copy of the GNU General Public License along\r\n  with this program; if not, write to the Free Software Foundation, Inc.,\r\n  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.\r\n\r\n"
+    }
+  },
+  "environment": {
+    "PYTHONPATH": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "runs": [
+    {
+      "name": "normal",
+      "expected": "pass",
+      "command": [
+        "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "-B",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\언어확장_language-expansion\\02-Python회로검증_cocotb\\run.py",
+        "--build-dir",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final",
+        "--iverilog-bin",
+        "C:/iverilog/bin"
+      ],
+      "returncode": 0,
+      "stdout": "     -.--ns INFO     gpi                                ..mbed\\gpi_embed.cpp:94   in _embed_init_python              Using Python 3.12.4 interpreter at C:\\Users\\test2\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\r\n     -.--ns INFO     gpi                                ..\\gpi\\GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered\n     0.00ns INFO     cocotb                             Running on Icarus Verilog version 12.0 (devel)\r\n     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 20261026\r\n     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps\\cocotb\r\n     0.00ns INFO     cocotb.regression                  pytest not found, install it to enable better AssertionError messages\r\n     0.00ns INFO     cocotb                             Running tests\r\n     0.00ns INFO     cocotb.regression                  running test_counter.counter_boundaries (1/1)\r\nRUNTIME python=3.12.14\r\nPASS counter cycles=80 checks=240 wraps=5\r\n   800.00ns INFO     cocotb.regression                  test_counter.counter_boundaries passed\r\n   800.00ns INFO     cocotb.regression                  *****************************************************************************************\r\n                                                        ** TEST                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **\r\n                                                        *****************************************************************************************\r\n                                                        ** test_counter.counter_boundaries   PASS         800.00           0.00     196259.18  **\r\n                                                        *****************************************************************************************\r\n                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   800.00           0.00     174526.33  **\r\n                                                        *****************************************************************************************\r\n     -.--ns INFO     gpi                                ..mbed\\gpi_embed.cpp:94   in _embed_init_python              Using Python 3.12.4 interpreter at C:\\Users\\test2\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\r\n     -.--ns INFO     gpi                                ..\\gpi\\GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered\n     0.00ns INFO     cocotb                             Running on Icarus Verilog version 12.0 (devel)\r\n     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 20261026\r\n     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps\\cocotb\r\n     0.00ns INFO     cocotb.regression                  pytest not found, install it to enable better AssertionError messages\r\n     0.00ns INFO     cocotb                             Running tests\r\n     0.00ns INFO     cocotb.regression                  running test_buffer.stalls_replacement_and_reset (1/1)\r\nRUNTIME python=3.12.14\r\nPASS buffer cycles=74 checks=413 accepted=36 consumed=34 cancelled=2 stalls=22 replacements=24\r\n   740.00ns INFO     cocotb.regression                  test_buffer.stalls_replacement_and_reset passed\r\n   740.00ns INFO     cocotb.regression                  **************************************************************************************************\r\n                                                        ** TEST                                      STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **\r\n                                                        **************************************************************************************************\r\n                                                        ** test_buffer.stalls_replacement_and_reset   PASS         740.00           0.00     163900.56  **\r\n                                                        **************************************************************************************************\r\n                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            740.00           0.01     134113.34  **\r\n                                                        **************************************************************************************************\r\nPASS integration dut=counter tests=1\r\nPASS integration dut=buffer tests=1\r\n",
+      "stderr": "INFO Running command iverilog -o 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\counter\\sim.vvp' -s mod10_counter -g2012 -g2012 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\counter\\counter.sv' in directory C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\counter\r\nINFO Running command vvp -M 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps\\cocotb\\libs' -m cocotbvpi_icarus 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\counter\\sim.vvp' -none in directory C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\counter\r\nINFO Results file: C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\counter\\results.xml\r\nINFO Running command iverilog -o 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\buffer\\sim.vvp' -s elastic_buffer -g2012 -g2012 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\buffer\\elastic_buffer.sv' in directory C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\buffer\r\nINFO Running command vvp -M 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps\\cocotb\\libs' -m cocotbvpi_icarus 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\buffer\\sim.vvp' -none in directory C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\buffer\r\nINFO Results file: C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\buffer\\results.xml\r\n",
+      "checks": {
+        "counter": {
+          "cycles": 80,
+          "assertions": 240,
+          "wraps": 5
+        },
+        "buffer": {
+          "cycles": 74,
+          "assertions": 413,
+          "accepted": 36,
+          "consumed": 34,
+          "cancelled": 2,
+          "stalls": 22,
+          "replacements": 24
+        }
+      },
+      "status": "passed_actual_icarus_cocotb"
+    },
+    {
+      "name": "negative_drop_on_stall",
+      "expected": "functional_failure",
+      "command": [
+        "C:/Users/test2/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+        "-B",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\언어확장_language-expansion\\02-Python회로검증_cocotb\\run.py",
+        "--build-dir",
+        "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative",
+        "--iverilog-bin",
+        "C:/iverilog/bin",
+        "--drop-on-stall"
+      ],
+      "returncode": 1,
+      "stdout": "     -.--ns INFO     gpi                                ..mbed\\gpi_embed.cpp:94   in _embed_init_python              Using Python 3.12.4 interpreter at C:\\Users\\test2\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\r\n     -.--ns INFO     gpi                                ..\\gpi\\GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered\n     0.00ns INFO     cocotb                             Running on Icarus Verilog version 12.0 (devel)\r\n     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 20261026\r\n     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps\\cocotb\r\n     0.00ns INFO     cocotb.regression                  pytest not found, install it to enable better AssertionError messages\r\n     0.00ns INFO     cocotb                             Running tests\r\n     0.00ns INFO     cocotb.regression                  running test_counter.counter_boundaries (1/1)\r\nRUNTIME python=3.12.14\r\nPASS counter cycles=80 checks=240 wraps=5\r\n   800.00ns INFO     cocotb.regression                  test_counter.counter_boundaries passed\r\n   800.00ns INFO     cocotb.regression                  *****************************************************************************************\r\n                                                        ** TEST                             STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **\r\n                                                        *****************************************************************************************\r\n                                                        ** test_counter.counter_boundaries   PASS         800.00           0.00     191673.89  **\r\n                                                        *****************************************************************************************\r\n                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                   800.00           0.01     154536.14  **\r\n                                                        *****************************************************************************************\r\n     -.--ns INFO     gpi                                ..mbed\\gpi_embed.cpp:94   in _embed_init_python              Using Python 3.12.4 interpreter at C:\\Users\\test2\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\r\n     -.--ns INFO     gpi                                ..\\gpi\\GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered\n     0.00ns INFO     cocotb                             Running on Icarus Verilog version 12.0 (devel)\r\n     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 20261026\r\n     0.00ns INFO     cocotb                             Initialized cocotb v2.0.0 from C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps\\cocotb\r\n     0.00ns INFO     cocotb.regression                  pytest not found, install it to enable better AssertionError messages\r\n     0.00ns INFO     cocotb                             Running tests\r\n     0.00ns INFO     cocotb.regression                  running test_buffer.stalls_replacement_and_reset (1/1)\r\nRUNTIME python=3.12.14\r\n    26.00ns WARNING  ..set.stalls_replacement_and_reset valid-after cycle=2\r\n                                                        Traceback (most recent call last):\r\n                                                          File \"C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\buffer\\test_buffer.py\", line 47, in stalls_replacement_and_reset\r\n                                                            assert int(dut.out_valid.value) == (not reset and bool(queue)), f\"valid-after cycle={cycle}\"  # 에지 뒤 유효 상태\r\n                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n                                                        AssertionError: valid-after cycle=2\r\n    26.00ns WARNING  cocotb.regression                  test_buffer.stalls_replacement_and_reset failed\r\n    26.00ns INFO     cocotb.regression                  **************************************************************************************************\r\n                                                        ** TEST                                      STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **\r\n                                                        **************************************************************************************************\r\n                                                        ** test_buffer.stalls_replacement_and_reset   FAIL          26.00           0.00       8626.16  **\r\n                                                        **************************************************************************************************\r\n                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                             26.00           0.00       6472.31  **\r\n                                                        **************************************************************************************************\r\nPASS integration dut=counter tests=1\r\n",
+      "stderr": "INFO Running command iverilog -o 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\counter\\sim.vvp' -s mod10_counter -g2012 -g2012 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\counter\\counter.sv' in directory C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\counter\r\nINFO Running command vvp -M 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps\\cocotb\\libs' -m cocotbvpi_icarus 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\counter\\sim.vvp' -none in directory C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\counter\r\nINFO Results file: C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\counter\\results.xml\r\nINFO Running command iverilog -o 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\buffer\\sim.vvp' -s elastic_buffer -g2012 -Pelastic_buffer.BUG_DROP_ON_STALL=1 -g2012 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\buffer\\elastic_buffer.sv' in directory C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\buffer\r\nINFO Running command vvp -M 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\python-deps\\cocotb\\libs' -m cocotbvpi_icarus 'C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\buffer\\sim.vvp' -none in directory C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\buffer\r\nINFO Results file: C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\buffer\\results.xml\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\언어확장_language-expansion\\02-Python회로검증_cocotb\\run.py\", line 42, in <module>\r\n    main()  # 명시적으로 실행한 경우만 도구 호출\r\n    ^^^^^^\r\n  File \"C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\output\\engineering-notes-publish-v10\\하드웨어코딩_hardware-coding\\언어확장_language-expansion\\02-Python회로검증_cocotb\\run.py\", line 38, in main\r\n    assert len(cases) == 1 and not any(list(root.iter(tag)) for tag in (\"failure\", \"error\", \"skipped\")), name  # 실패·오류·건너뜀 없는 한 테스트 완료\r\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nAssertionError: buffer\r\n",
+      "expected_diagnostic": "AssertionError: valid-after cycle=2",
+      "status": "expected_functional_failure",
+      "scope": "Counter still passes; deliberately faulty buffer fails the Python oracle. Compile success and completed XML failure are separately recorded."
+    }
+  ],
+  "test_results_xml": [
+    {
+      "run": "cocotb-final",
+      "dut": "counter",
+      "xml": "<testsuites name=\"results\">\r\n  <testsuite name=\"all\" package=\"all\">\r\n    <property name=\"random_seed\" value=\"20261026\" />\r\n    <testcase name=\"counter_boundaries\" classname=\"test_counter\" file=\"C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\counter\\test_counter.py\" lineno=\"5\" time=\"0.004076242446899414\" sim_time_ns=\"800.0\" ratio_time=\"196259.1799730947\" />\r\n  </testsuite>\r\n</testsuites>\r\n"
+    },
+    {
+      "run": "cocotb-final",
+      "dut": "buffer",
+      "xml": "<testsuites name=\"results\">\r\n  <testsuite name=\"all\" package=\"all\">\r\n    <property name=\"random_seed\" value=\"20261026\" />\r\n    <testcase name=\"stalls_replacement_and_reset\" classname=\"test_buffer\" file=\"C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-final\\buffer\\test_buffer.py\" lineno=\"6\" time=\"0.004514932632446289\" sim_time_ns=\"740.0\" ratio_time=\"163900.562919153\" />\r\n  </testsuite>\r\n</testsuites>\r\n"
+    },
+    {
+      "run": "cocotb-negative",
+      "dut": "counter",
+      "xml": "<testsuites name=\"results\">\r\n  <testsuite name=\"all\" package=\"all\">\r\n    <property name=\"random_seed\" value=\"20261026\" />\r\n    <testcase name=\"counter_boundaries\" classname=\"test_counter\" file=\"C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\counter\\test_counter.py\" lineno=\"5\" time=\"0.004173755645751953\" sim_time_ns=\"800.0\" ratio_time=\"191673.8946646864\" />\r\n  </testsuite>\r\n</testsuites>\r\n"
+    },
+    {
+      "run": "cocotb-negative",
+      "dut": "buffer",
+      "xml": "<testsuites name=\"results\">\r\n  <testsuite name=\"all\" package=\"all\">\r\n    <property name=\"random_seed\" value=\"20261026\" />\r\n    <testcase name=\"stalls_replacement_and_reset\" classname=\"test_buffer\" file=\"C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\cocotb-negative\\buffer\\test_buffer.py\" lineno=\"6\" time=\"0.003014087677001953\" sim_time_ns=\"26.0\" ratio_time=\"8626.159152032906\">\r\n      <failure error_type=\"AssertionError\" error_msg=\"valid-after cycle=2\" />\r\n    </testcase>\r\n  </testsuite>\r\n</testsuites>\r\n"
+    }
+  ],
+  "timing": {
+    "period_ns": 10,
+    "pre_edge_ns": 4,
+    "rising_edge_ns": 5,
+    "post_edge_ns": 6,
+    "counter_duration_ns": 800,
+    "buffer_duration_ns": 740,
+    "initial_counter_state": "Unknown until first synchronous clear; first pre-edge value comparison is omitted"
+  },
+  "scope": {
+    "actual_hdl_simulator": true,
+    "python_only_model": false,
+    "online_grading": false,
+    "synthesis": false,
+    "formal_proof": false,
+    "sta": false,
+    "board_measurement": false,
+    "producer_protocol_assertions": false
+  },
+  "checked_at": "2026-10-26T07:57:52.412Z",
+  "official_references": [
+    "https://docs.cocotb.org/en/v2.0.0/platform_support.html",
+    "https://docs.cocotb.org/en/v2.0.0/simulator_support.html",
+    "https://docs.cocotb.org/en/v2.0.0/runner.html",
+    "https://docs.cocotb.org/en/v2.0.0/timing_model.html",
+    "https://raw.githubusercontent.com/cocotb/cocotb/v2.0.0/LICENSE",
+    "https://raw.githubusercontent.com/steveicarus/iverilog/master/COPYING"
+  ],
+  "expected": {
+    "normal_returncode": 0,
+    "normal_markers": [
+      "PASS counter cycles=80 checks=240 wraps=5",
+      "PASS buffer cycles=74 checks=413 accepted=36 consumed=34 cancelled=2 stalls=22 replacements=24",
+      "PASS integration dut=counter tests=1",
+      "PASS integration dut=buffer tests=1"
+    ],
+    "negative_returncode": 1,
+    "negative_assertion": "AssertionError: valid-after cycle=2"
+  }
+}

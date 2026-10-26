@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "id": "05-tcl-sdc",
+  "title": "Tcl로 합성을 제어하고 SDC 제약 생성",
+  "language": "Tcl·SDC",
+  "sources": [
+    "bootstrap.tcl",
+    "flow.tcl",
+    "constraints.sdc",
+    "run.py"
+  ],
+  "source_sha256": {
+    "bootstrap.tcl": "1fef32dbb77fcdfb4cc15d1cd8b84fa1edad300b16a5324ac0c5679a5d65f57d",
+    "flow.tcl": "cd7a862803a152d02f073216db9fa7ca4166928fb6b14e73ee55b70c66739ba7",
+    "constraints.sdc": "69d2b5177c029a4cf2a6025fefe3aa9eb0de9c014b16071f8881423c31abaef3",
+    "run.py": "379783f3450284f4c528b471efceeb559dbee94fadd2aa3e59db016d6bbe5eb6"
+  },
+  "dependency": {
+    "path": "../../예제_examples/01-전송대기_elastic-buffer/elastic_buffer.sv",
+    "sha256": "b23a95ae1365c9df2b53999bb8e49247f6ecc4567c2ad000f5cad294b3775de0",
+    "copied_to_build_only": true
+  },
+  "expected_marker": "PASS tcl_sdc normal=2 configuration_rejections=7 ports=8 state_bits=9",
+  "original_example": true,
+  "online_judge": false,
+  "version": {
+    "argv": [
+      "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+      "-V"
+    ],
+    "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt",
+    "returncode": 0,
+    "stdout": "Yosys 0.69+187 (git sha1 2f08661dd, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)\r\n",
+    "stderr": ""
+  },
+  "settings": [
+    {
+      "period_ns": "10.0",
+      "status": "passed_generic_structure_and_sdc_generation",
+      "port_count": 8,
+      "state_bits": 9,
+      "sdc_commands": 6,
+      "sdc_text": "create_clock -name core_clk -period 10.000 [get_ports clk] ; # 클록 주기의 입력 계약\nset_clock_uncertainty 0.1 [get_clocks core_clk] ; # 클록 불확실성으로 따로 남긴 여유\nset_input_delay -clock core_clk -max 2.0 [get_ports {rst in_valid in_data* out_ready}] ; # 가장 늦은 외부 입력 도착\nset_input_delay -clock core_clk -min 0.2 [get_ports {rst in_valid in_data* out_ready}] ; # 가장 빠른 외부 입력 도착\nset_output_delay -clock core_clk -max 2.0 [get_ports {in_ready out_valid out_data*}] ; # 외부 수신 회로의 최대 지연 조건\nset_output_delay -clock core_clk -min 0.2 [get_ports {in_ready out_valid out_data*}] ; # 외부 수신 회로의 최소 지연 조건\n"
+    },
+    {
+      "period_ns": "5.0",
+      "status": "passed_generic_structure_and_sdc_generation",
+      "port_count": 8,
+      "state_bits": 9,
+      "sdc_commands": 6,
+      "sdc_text": "create_clock -name core_clk -period 5.000 [get_ports clk] ; # 클록 주기의 입력 계약\nset_clock_uncertainty 0.1 [get_clocks core_clk] ; # 클록 불확실성으로 따로 남긴 여유\nset_input_delay -clock core_clk -max 2.0 [get_ports {rst in_valid in_data* out_ready}] ; # 가장 늦은 외부 입력 도착\nset_input_delay -clock core_clk -min 0.2 [get_ports {rst in_valid in_data* out_ready}] ; # 가장 빠른 외부 입력 도착\nset_output_delay -clock core_clk -max 2.0 [get_ports {in_ready out_valid out_data*}] ; # 외부 수신 회로의 최대 지연 조건\nset_output_delay -clock core_clk -min 0.2 [get_ports {in_ready out_valid out_data*}] ; # 외부 수신 회로의 최소 지연 조건\n"
+    },
+    {
+      "period_ns": "0",
+      "status": "expected_configuration_rejection"
+    },
+    {
+      "period_ns": "-1",
+      "status": "expected_configuration_rejection"
+    },
+    {
+      "period_ns": "oops",
+      "status": "expected_configuration_rejection"
+    },
+    {
+      "period_ns": "0.0001",
+      "status": "expected_configuration_rejection"
+    },
+    {
+      "period_ns": "NaN",
+      "status": "expected_configuration_rejection"
+    },
+    {
+      "period_ns": "Inf",
+      "status": "expected_configuration_rejection"
+    },
+    {
+      "period_ns": "-Inf",
+      "status": "expected_configuration_rejection"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+        "-V"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt",
+      "returncode": 0,
+      "stdout": "Yosys 0.69+187 (git sha1 2f08661dd, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)\r\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+        "-Q",
+        "-c",
+        "bootstrap.tcl"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt\\0",
+      "returncode": 0,
+      "stdout": "\r\n\r\n1. Executing Verilog-2005 frontend: elastic_buffer.sv\r\nParsing SystemVerilog input from `elastic_buffer.sv' to AST representation.\r\nGenerating RTLIL representation for module `\\elastic_buffer'.\r\nSuccessfully finished Verilog frontend.\r\n\r\n2. Executing HIERARCHY pass (managing design hierarchy).\r\n\r\n2.1. Analyzing design hierarchy..\r\nTop module:  \\elastic_buffer\r\n\r\n2.2. Analyzing design hierarchy..\r\nTop module:  \\elastic_buffer\r\nRemoved 0 unused modules.\r\n\r\n3. Executing PROC pass (convert processes to netlists).\r\n\r\n3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).\r\nCleaned up 0 empty switches.\r\n\r\n3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).\r\nMarked 2 switch rules as full_case in process $proc$elastic_buffer.sv:20$8 in module elastic_buffer.\r\nRemoved a total of 0 dead cases.\r\n\r\n3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).\r\nRemoved 0 redundant assignments.\r\nPromoted 3 assignments to connections.\r\n\r\n3.4. Executing PROC_INIT pass (extract init attributes).\r\n\r\n3.5. Executing PROC_ARST pass (detect async resets in processes).\r\n\r\n3.6. Executing PROC_ROM pass (convert switches to ROMs).\r\nConverted 0 switches.\r\n<suppressed ~4 debug messages>\r\n\r\n3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).\r\nCreating decoders for process `\\elastic_buffer.$proc$elastic_buffer.sv:20$8'.\r\n     1/2: $0\\stored[7:0]\r\n     2/2: $0\\full[0:0]\r\nCreating decoders for process `\\elastic_buffer.$proc$elastic_buffer.sv:15$1'.\r\n\r\n3.8. Executing PROC_DLATCH pass (convert process syncs to latches).\r\nNo latch inferred for signal `\\elastic_buffer.\\in_ready' from process `\\elastic_buffer.$proc$elastic_buffer.sv:15$1'.\r\nNo latch inferred for signal `\\elastic_buffer.\\out_valid' from process `\\elastic_buffer.$proc$elastic_buffer.sv:15$1'.\r\nNo latch inferred for signal `\\elastic_buffer.\\out_data' from process `\\elastic_buffer.$proc$elastic_buffer.sv:15$1'.\r\n\r\n3.9. Executing PROC_DFF pass (convert process syncs to FFs).\r\nCreating register for signal `\\elastic_buffer.\\full' using process `\\elastic_buffer.$proc$elastic_buffer.sv:20$8'.\r\n  created $dff cell `$procdff$30' with positive edge clock.\r\nCreating register for signal `\\elastic_buffer.\\stored' using process `\\elastic_buffer.$proc$elastic_buffer.sv:20$8'.\r\n  created $dff cell `$procdff$31' with positive edge clock.\r\n\r\n3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).\r\n\r\n3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).\r\nFound and cleaned up 4 empty switches in `\\elastic_buffer.$proc$elastic_buffer.sv:20$8'.\r\nRemoving empty process `elastic_buffer.$proc$elastic_buffer.sv:20$8'.\r\nRemoving empty process `elastic_buffer.$proc$elastic_buffer.sv:15$1'.\r\nCleaned up 4 empty switches.\r\n\r\n3.12. Executing OPT_EXPR pass (perform const folding).\r\nOptimizing module elastic_buffer.\r\n<suppressed ~4 debug messages>\r\n\r\n4. Executing OPT pass (performing simple optimizations).\r\n\r\n4.1. Executing OPT_EXPR pass (perform const folding).\r\nOptimizing module elastic_buffer.\r\n\r\n4.2. Executing OPT_MERGE pass (detect identical cells).\r\nFinding identical cells in module `\\elastic_buffer'.\r\nComputing hashes of 14 cells of `\\elastic_buffer'.\r\nFinding duplicate cells in `\\elastic_buffer'.\r\nComputing hashes of 13 cells of `\\elastic_buffer'.\r\nFinding duplicate cells in `\\elastic_buffer'.\r\n<suppressed ~3 debug messages>\r\nRemoved a total of 1 cells.\r\n\r\n4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).\r\nRunning muxtree optimizer on module \\elastic_buffer..\r\n  Creating internal representation of mux trees.\r\n  Evaluating internal representation of mux trees.\r\n  Analyzing evaluation results.\r\nRemoved 0 multiplexer ports.\r\n<suppressed ~7 debug messages>\r\n\r\n4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).\r\n  Optimizing cells in module \\elastic_buffer.\r\nPerformed a total of 0 changes.\r\n\r\n4.5. Executing OPT_MERGE pass (detect identical cells).\r\nFinding identical cells in module `\\elastic_buffer'.\r\nComputing hashes of 13 cells of `\\elastic_buffer'.\r\nFinding duplicate cells in `\\elastic_buffer'.\r\nRemoved a total of 0 cells.\r\n\r\n4.6. Executing OPT_DFF pass (perform DFF optimizations).\r\nAdding SRST signal on $procdff$31 ($dff) from module elastic_buffer (D = $procmux$17_Y, Q = \\stored, rval = 8'00000000).\r\nAdding SRST signal on $procdff$30 ($dff) from module elastic_buffer (D = $procmux$25_Y, Q = \\full, rval = 1'0).\r\n\r\n4.7. Executing OPT_CLEAN pass (remove unused cells and wires).\r\nFinding unused cells or wires in module \\elastic_buffer..\r\nRemoved 3 unused cells and 22 unused wires.\r\n<suppressed ~4 debug messages>\r\n\r\n4.8. Executing OPT_EXPR pass (perform const folding).\r\nOptimizing module elastic_buffer.\r\n\r\n4.9. Rerunning OPT passes. (Maybe there is more to do..)\r\n\r\n4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).\r\nRunning muxtree optimizer on module \\elastic_buffer..\r\n  Creating internal representation of mux trees.\r\n  Evaluating internal representation of mux trees.\r\n  Analyzing evaluation results.\r\nRemoved 0 multiplexer ports.\r\n<suppressed ~5 debug messages>\r\n\r\n4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).\r\n  Optimizing cells in module \\elastic_buffer.\r\nPerformed a total of 0 changes.\r\n\r\n4.12. Executing OPT_MERGE pass (detect identical cells).\r\nFinding identical cells in module `\\elastic_buffer'.\r\nComputing hashes of 10 cells of `\\elastic_buffer'.\r\nFinding duplicate cells in `\\elastic_buffer'.\r\nRemoved a total of 0 cells.\r\n\r\n4.13. Executing OPT_DFF pass (perform DFF optimizations).\r\nAdding EN signal on $auto$ff.cc:337:slice$32 ($sdff) from module elastic_buffer (D = \\in_data, Q = \\stored).\r\nAdding EN signal on $auto$ff.cc:337:slice$33 ($sdff) from module elastic_buffer (D = \\in_valid, Q = \\full).\r\n\r\n4.14. Executing OPT_CLEAN pass (remove unused cells and wires).\r\nFinding unused cells or wires in module \\elastic_buffer..\r\nRemoved 3 unused cells and 3 unused wires.\r\n<suppressed ~4 debug messages>\r\n\r\n4.15. Executing OPT_EXPR pass (perform const folding).\r\nOptimizing module elastic_buffer.\r\n\r\n4.16. Rerunning OPT passes. (Maybe there is more to do..)\r\n\r\n4.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).\r\nRunning muxtree optimizer on module \\elastic_buffer..\r\n  Creating internal representation of mux trees.\r\n  No muxes found in this module.\r\nRemoved 0 multiplexer ports.\r\n\r\n4.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).\r\n  Optimizing cells in module \\elastic_buffer.\r\nPerformed a total of 0 changes.\r\n\r\n4.19. Executing OPT_MERGE pass (detect identical cells).\r\nFinding identical cells in module `\\elastic_buffer'.\r\nComputing hashes of 8 cells of `\\elastic_buffer'.\r\nFinding duplicate cells in `\\elastic_buffer'.\r\nRemoved a total of 0 cells.\r\n\r\n4.20. Executing OPT_DFF pass (perform DFF optimizations).\r\n\r\n4.21. Executing OPT_CLEAN pass (remove unused cells and wires).\r\nFinding unused cells or wires in module \\elastic_buffer..\r\n\r\n4.22. Executing OPT_EXPR pass (perform const folding).\r\nOptimizing module elastic_buffer.\r\n\r\n4.23. Finished fast OPT passes. (There is nothing left to do.)\r\n\r\n5. Executing CHECK pass (checking for obvious problems).\r\nChecking module elastic_buffer...\r\nFound and reported 0 problems.\r\n\r\n6. Executing JSON backend.\r\n\r\n7. Printing statistics.\r\nPASS tcl_flow top=elastic_buffer period_ns=10.0 sdc_commands=6\r\n\r\n=== elastic_buffer ===\r\n\r\n        +----------Local Count, excluding submodules.\r\n        | \r\n       14 wires\r\n       35 wire bits\r\n       10 public wires\r\n       31 public wire bits\r\n        8 ports\r\n       22 port bits\r\n        8 cells\r\n        2   $logic_and\r\n        2   $logic_not\r\n        1   $logic_or\r\n        1   $reduce_and\r\n        2   $sdffe\r\n\r\nEnd of script. Logfile hash: a21e755be3\r\nYosys 0.69+187 (git sha1 2f08661dd, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)\r\nTime spent: 4% 5x opt_expr (0 sec), 4% 4x opt_merge (0 sec), ...\r\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+        "-Q",
+        "-c",
+        "bootstrap.tcl"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt\\1",
+      "returncode": 0,
+      "stdout": "\r\n\r\n1. Executing Verilog-2005 frontend: elastic_buffer.sv\r\nParsing SystemVerilog input from `elastic_buffer.sv' to AST representation.\r\nGenerating RTLIL representation for module `\\elastic_buffer'.\r\nSuccessfully finished Verilog frontend.\r\n\r\n2. Executing HIERARCHY pass (managing design hierarchy).\r\n\r\n2.1. Analyzing design hierarchy..\r\nTop module:  \\elastic_buffer\r\n\r\n2.2. Analyzing design hierarchy..\r\nTop module:  \\elastic_buffer\r\nRemoved 0 unused modules.\r\n\r\n3. Executing PROC pass (convert processes to netlists).\r\n\r\n3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).\r\nCleaned up 0 empty switches.\r\n\r\n3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).\r\nMarked 2 switch rules as full_case in process $proc$elastic_buffer.sv:20$8 in module elastic_buffer.\r\nRemoved a total of 0 dead cases.\r\n\r\n3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).\r\nRemoved 0 redundant assignments.\r\nPromoted 3 assignments to connections.\r\n\r\n3.4. Executing PROC_INIT pass (extract init attributes).\r\n\r\n3.5. Executing PROC_ARST pass (detect async resets in processes).\r\n\r\n3.6. Executing PROC_ROM pass (convert switches to ROMs).\r\nConverted 0 switches.\r\n<suppressed ~4 debug messages>\r\n\r\n3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).\r\nCreating decoders for process `\\elastic_buffer.$proc$elastic_buffer.sv:20$8'.\r\n     1/2: $0\\stored[7:0]\r\n     2/2: $0\\full[0:0]\r\nCreating decoders for process `\\elastic_buffer.$proc$elastic_buffer.sv:15$1'.\r\n\r\n3.8. Executing PROC_DLATCH pass (convert process syncs to latches).\r\nNo latch inferred for signal `\\elastic_buffer.\\in_ready' from process `\\elastic_buffer.$proc$elastic_buffer.sv:15$1'.\r\nNo latch inferred for signal `\\elastic_buffer.\\out_valid' from process `\\elastic_buffer.$proc$elastic_buffer.sv:15$1'.\r\nNo latch inferred for signal `\\elastic_buffer.\\out_data' from process `\\elastic_buffer.$proc$elastic_buffer.sv:15$1'.\r\n\r\n3.9. Executing PROC_DFF pass (convert process syncs to FFs).\r\nCreating register for signal `\\elastic_buffer.\\full' using process `\\elastic_buffer.$proc$elastic_buffer.sv:20$8'.\r\n  created $dff cell `$procdff$30' with positive edge clock.\r\nCreating register for signal `\\elastic_buffer.\\stored' using process `\\elastic_buffer.$proc$elastic_buffer.sv:20$8'.\r\n  created $dff cell `$procdff$31' with positive edge clock.\r\n\r\n3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).\r\n\r\n3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).\r\nFound and cleaned up 4 empty switches in `\\elastic_buffer.$proc$elastic_buffer.sv:20$8'.\r\nRemoving empty process `elastic_buffer.$proc$elastic_buffer.sv:20$8'.\r\nRemoving empty process `elastic_buffer.$proc$elastic_buffer.sv:15$1'.\r\nCleaned up 4 empty switches.\r\n\r\n3.12. Executing OPT_EXPR pass (perform const folding).\r\nOptimizing module elastic_buffer.\r\n<suppressed ~4 debug messages>\r\n\r\n4. Executing OPT pass (performing simple optimizations).\r\n\r\n4.1. Executing OPT_EXPR pass (perform const folding).\r\nOptimizing module elastic_buffer.\r\n\r\n4.2. Executing OPT_MERGE pass (detect identical cells).\r\nFinding identical cells in module `\\elastic_buffer'.\r\nComputing hashes of 14 cells of `\\elastic_buffer'.\r\nFinding duplicate cells in `\\elastic_buffer'.\r\nComputing hashes of 13 cells of `\\elastic_buffer'.\r\nFinding duplicate cells in `\\elastic_buffer'.\r\n<suppressed ~3 debug messages>\r\nRemoved a total of 1 cells.\r\n\r\n4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).\r\nRunning muxtree optimizer on module \\elastic_buffer..\r\n  Creating internal representation of mux trees.\r\n  Evaluating internal representation of mux trees.\r\n  Analyzing evaluation results.\r\nRemoved 0 multiplexer ports.\r\n<suppressed ~7 debug messages>\r\n\r\n4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).\r\n  Optimizing cells in module \\elastic_buffer.\r\nPerformed a total of 0 changes.\r\n\r\n4.5. Executing OPT_MERGE pass (detect identical cells).\r\nFinding identical cells in module `\\elastic_buffer'.\r\nComputing hashes of 13 cells of `\\elastic_buffer'.\r\nFinding duplicate cells in `\\elastic_buffer'.\r\nRemoved a total of 0 cells.\r\n\r\n4.6. Executing OPT_DFF pass (perform DFF optimizations).\r\nAdding SRST signal on $procdff$31 ($dff) from module elastic_buffer (D = $procmux$17_Y, Q = \\stored, rval = 8'00000000).\r\nAdding SRST signal on $procdff$30 ($dff) from module elastic_buffer (D = $procmux$25_Y, Q = \\full, rval = 1'0).\r\n\r\n4.7. Executing OPT_CLEAN pass (remove unused cells and wires).\r\nFinding unused cells or wires in module \\elastic_buffer..\r\nRemoved 3 unused cells and 22 unused wires.\r\n<suppressed ~4 debug messages>\r\n\r\n4.8. Executing OPT_EXPR pass (perform const folding).\r\nOptimizing module elastic_buffer.\r\n\r\n4.9. Rerunning OPT passes. (Maybe there is more to do..)\r\n\r\n4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).\r\nRunning muxtree optimizer on module \\elastic_buffer..\r\n  Creating internal representation of mux trees.\r\n  Evaluating internal representation of mux trees.\r\n  Analyzing evaluation results.\r\nRemoved 0 multiplexer ports.\r\n<suppressed ~5 debug messages>\r\n\r\n4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).\r\n  Optimizing cells in module \\elastic_buffer.\r\nPerformed a total of 0 changes.\r\n\r\n4.12. Executing OPT_MERGE pass (detect identical cells).\r\nFinding identical cells in module `\\elastic_buffer'.\r\nComputing hashes of 10 cells of `\\elastic_buffer'.\r\nFinding duplicate cells in `\\elastic_buffer'.\r\nRemoved a total of 0 cells.\r\n\r\n4.13. Executing OPT_DFF pass (perform DFF optimizations).\r\nAdding EN signal on $auto$ff.cc:337:slice$32 ($sdff) from module elastic_buffer (D = \\in_data, Q = \\stored).\r\nAdding EN signal on $auto$ff.cc:337:slice$33 ($sdff) from module elastic_buffer (D = \\in_valid, Q = \\full).\r\n\r\n4.14. Executing OPT_CLEAN pass (remove unused cells and wires).\r\nFinding unused cells or wires in module \\elastic_buffer..\r\nRemoved 3 unused cells and 3 unused wires.\r\n<suppressed ~4 debug messages>\r\n\r\n4.15. Executing OPT_EXPR pass (perform const folding).\r\nOptimizing module elastic_buffer.\r\n\r\n4.16. Rerunning OPT passes. (Maybe there is more to do..)\r\n\r\n4.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).\r\nRunning muxtree optimizer on module \\elastic_buffer..\r\n  Creating internal representation of mux trees.\r\n  No muxes found in this module.\r\nRemoved 0 multiplexer ports.\r\n\r\n4.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).\r\n  Optimizing cells in module \\elastic_buffer.\r\nPerformed a total of 0 changes.\r\n\r\n4.19. Executing OPT_MERGE pass (detect identical cells).\r\nFinding identical cells in module `\\elastic_buffer'.\r\nComputing hashes of 8 cells of `\\elastic_buffer'.\r\nFinding duplicate cells in `\\elastic_buffer'.\r\nRemoved a total of 0 cells.\r\n\r\n4.20. Executing OPT_DFF pass (perform DFF optimizations).\r\n\r\n4.21. Executing OPT_CLEAN pass (remove unused cells and wires).\r\nFinding unused cells or wires in module \\elastic_buffer..\r\n\r\n4.22. Executing OPT_EXPR pass (perform const folding).\r\nOptimizing module elastic_buffer.\r\n\r\n4.23. Finished fast OPT passes. (There is nothing left to do.)\r\n\r\n5. Executing CHECK pass (checking for obvious problems).\r\nChecking module elastic_buffer...\r\nFound and reported 0 problems.\r\n\r\n6. Executing JSON backend.\r\n\r\n7. Printing statistics.\r\nPASS tcl_flow top=elastic_buffer period_ns=5.0 sdc_commands=6\r\n\r\n=== elastic_buffer ===\r\n\r\n        +----------Local Count, excluding submodules.\r\n        | \r\n       14 wires\r\n       35 wire bits\r\n       10 public wires\r\n       31 public wire bits\r\n        8 ports\r\n       22 port bits\r\n        8 cells\r\n        2   $logic_and\r\n        2   $logic_not\r\n        1   $logic_or\r\n        1   $reduce_and\r\n        2   $sdffe\r\n\r\nEnd of script. Logfile hash: a21e755be3\r\nYosys 0.69+187 (git sha1 2f08661dd, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)\r\nTime spent: 4% 5x opt_expr (0 sec), 4% 4x opt_merge (0 sec), ...\r\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+        "-Q",
+        "-c",
+        "bootstrap.tcl"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt\\2",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: TCL interpreter returned an error: period_ns must be a number in 0.001..1000000\r\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+        "-Q",
+        "-c",
+        "bootstrap.tcl"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt\\3",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: TCL interpreter returned an error: period_ns must be a number in 0.001..1000000\r\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+        "-Q",
+        "-c",
+        "bootstrap.tcl"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt\\4",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: TCL interpreter returned an error: period_ns must be a positive finite number\r\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+        "-Q",
+        "-c",
+        "bootstrap.tcl"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt\\5",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: TCL interpreter returned an error: period_ns must be a number in 0.001..1000000\r\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+        "-Q",
+        "-c",
+        "bootstrap.tcl"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt\\6",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: TCL interpreter returned an error: period_ns must be a number in 0.001..1000000\r\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+        "-Q",
+        "-c",
+        "bootstrap.tcl"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt\\7",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: TCL interpreter returned an error: period_ns must be a number in 0.001..1000000\r\n"
+    },
+    {
+      "argv": [
+        "C:\\Users\\test2\\Documents\\ChatGPT\\oss-cad-suite\\bin\\yosys.exe",
+        "-Q",
+        "-c",
+        "bootstrap.tcl"
+      ],
+      "cwd": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\tcl-sdc-dgaotxyt\\8",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "ERROR: TCL interpreter returned an error: period_ns must be a number in 0.001..1000000\r\n"
+    }
+  ],
+  "scope": {
+    "generic_netlist": true,
+    "sdc_generation": true,
+    "sta": false,
+    "cell_library_mapping": false,
+    "physical_timing": false
+  },
+  "optimization_flag_guard": "Python -O was rejected before creating a work directory or output report",
+  "references": [
+    {
+      "url": "https://yosyshq.readthedocs.io/projects/yosys/en/0.45/cmd/tcl.html",
+      "section": "tcl: yosys cmd, command import and output handling",
+      "note": "Versioned web reference; installed Yosys0.69+187 help tcl was also checked"
+    },
+    {
+      "url": "https://www.tcl-lang.org/man/tcl8.6/TclCmd/contents.htm",
+      "section": "dict, format, source and channel encoding"
+    },
+    {
+      "url": "https://github.com/tcltk/tcl/blob/core-8-6-branch/doc/source.n",
+      "section": "source -encoding"
+    },
+    {
+      "url": "https://github.com/parallaxsw/OpenSTA",
+      "section": "Tcl command interpreter and SDC/Liberty inputs"
+    }
+  ]
+}

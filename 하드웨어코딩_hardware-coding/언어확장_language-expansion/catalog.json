@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-26T08:26:52.226999+00:00",
+  "examples": [
+    {
+      "number": 1,
+      "id": "riscv-assembly-bitfields-bytes",
+      "title": "RV32I 비트필드 갱신·바이트 검사합과 C 독립 검사",
+      "directory": "01-RISC-V비트처리_riscv-assembly",
+      "language": "RISC-V RV32I assembly",
+      "role": "CPU 명령·ABI·메모리",
+      "source_sha256": {
+        "functions.S": "c1b7b273ff99c13b2f3e0a5a91d71a5fcc9875f814f84916bbcb351f243db047",
+        "abi_probe.S": "e40088260b0e6446c236b19f85395ee0e230a1c52e0aa5599a32d232ca8bf427",
+        "startup.S": "77bb2258da99bb0a183297b5ff5966f3ed829901d8b61ac6e1202d87937de9c9",
+        "driver.c": "a76d71fdf8710140826cb856453eeed109793ec27615f04dd084dc18c349e4d6",
+        "linker.ld": "21ef81a0a45bf2f332ba9b02eb29713b9c1ec5f454e628d308ca72ac7127daeb",
+        "run.py": "ae161905d32036f5f5842e3ef4884b40cc3b8bb3a9576438213bc4eca4d1a134"
+      },
+      "metadata": "01-RISC-V비트처리_riscv-assembly/example.json",
+      "readme": "01-RISC-V비트처리_riscv-assembly/README.md",
+      "execution_record": "local_tool_execution",
+      "online_judge": false
+    },
+    {
+      "number": 2,
+      "id": "02-cocotb",
+      "title": "Python 테스트와 Icarus의 카운터·전송 버퍼 연동",
+      "directory": "02-Python회로검증_cocotb",
+      "language": "Python/cocotb + SystemVerilog",
+      "role": "HDL 시뮬레이터와 Python 검증",
+      "source_sha256": {
+        "counter.sv": "ebf9fab8193933ce6f22bcb7d6dac8fe243e279ba78ecc9b1dba299390e0450a",
+        "elastic_buffer.sv": "b23a95ae1365c9df2b53999bb8e49247f6ecc4567c2ad000f5cad294b3775de0",
+        "test_counter.py": "0b547cf6c0bb6aa5547ac5122fab1c19534b8be94349b355ac26c9f14ccf0f65",
+        "test_buffer.py": "a536dc3c5ccc9c3720623ae5efcd821ab6ae6ad62f5b403a3aa4588997648221",
+        "run.py": "d19d1dd864c046af170f43284299f1a4d3a6859cb6b096b11cb1d007f410b76b"
+      },
+      "metadata": "02-Python회로검증_cocotb/example.json",
+      "readme": "02-Python회로검증_cocotb/README.md",
+      "execution_record": "local_tool_execution",
+      "online_judge": false
+    },
+    {
+      "number": 3,
+      "id": "03-spice-rc",
+      "title": "RC 저역통과 회로의 과도·AC 해석과 정확해 비교",
+      "directory": "03-아날로그회로_spice",
+      "language": "SPICE netlist + ngspice control language",
+      "role": "연속 전압·주파수 응답",
+      "source_sha256": {
+        "rc_lowpass.cir": "98a0f2c7d938113d67f7580f678f2074da0ea120bcbdd1a8b608a6a0de221915",
+        "check_rc.py": "eb9ae5d6c2fb6776b2abe55d882af6056818aa904562bba4b2041da7740ab367"
+      },
+      "metadata": "03-아날로그회로_spice/example.json",
+      "readme": "03-아날로그회로_spice/README.md",
+      "execution_record": "local_tool_execution",
+      "online_judge": false
+    },
+    {
+      "number": 4,
+      "id": "04-rust-firmware",
+      "title": "Rust 비트필드와 빌린 프레임의 경계 검사",
+      "directory": "04-Rust프레임과비트필드_rust-firmware",
+      "language": "Rust2024 no_std library + host tests",
+      "role": "no_std 로직·범위·빌림",
+      "source_sha256": {
+        "lib.rs": "41b76ac7e5374f404a1bb556665200613f3abeebc3aff0d7a7a005bc60ad7fce",
+        "tests.rs": "795a2c09c082e32d7f81f96b89a35ebef34d23341e4760506678cac9f45463ea",
+        "run.py": "faa958716d379495e5afc2109f502aa64f70b6648e151a3f04071b641e00718d"
+      },
+      "metadata": "04-Rust프레임과비트필드_rust-firmware/example.json",
+      "readme": "04-Rust프레임과비트필드_rust-firmware/README.md",
+      "execution_record": "local_tool_execution",
+      "online_judge": false
+    },
+    {
+      "number": 5,
+      "id": "05-tcl-sdc",
+      "title": "Tcl로 합성을 제어하고 SDC 제약 생성",
+      "directory": "05-설계자동화_tcl-sdc",
+      "language": "Tcl·SDC",
+      "role": "설계 도구 제어·시간 제약 생성",
+      "source_sha256": {
+        "bootstrap.tcl": "1fef32dbb77fcdfb4cc15d1cd8b84fa1edad300b16a5324ac0c5679a5d65f57d",
+        "flow.tcl": "cd7a862803a152d02f073216db9fa7ca4166928fb6b14e73ee55b70c66739ba7",
+        "constraints.sdc": "69d2b5177c029a4cf2a6025fefe3aa9eb0de9c014b16071f8881423c31abaef3",
+        "run.py": "379783f3450284f4c528b471efceeb559dbee94fadd2aa3e59db016d6bbe5eb6"
+      },
+      "metadata": "05-설계자동화_tcl-sdc/example.json",
+      "readme": "05-설계자동화_tcl-sdc/README.md",
+      "execution_record": "local_tool_execution",
+      "online_judge": false
+    },
+    {
+      "number": 6,
+      "id": "systemc-fifo-backpressure",
+      "title": "SystemC FIFO의 대기와 도착 시간",
+      "directory": "06-Cpp이벤트모델_systemc",
+      "language": "C++17 / SystemC 3.0.2",
+      "role": "이벤트·대기·시간 모형",
+      "source_sha256": {
+        "example.cpp": "7deaea856342cb7a301990242ad11ad97dfdc8974d2145aea5ba3bbd97cff005",
+        "CMakeLists.txt": "7314e0f043dedbcd017b348fce417a2d17e2c114b613c60876b0c491af966391"
+      },
+      "metadata": "06-Cpp이벤트모델_systemc/example.json",
+      "readme": "06-Cpp이벤트모델_systemc/README.md",
+      "execution_record": "local_tool_execution",
+      "online_judge": false
+    }
+  ],
+  "source_files": 22,
+  "next_topics_investigated_only": [
+    "Chisel",
+    "SystemRDL",
+    "HLS"
+  ]
+}

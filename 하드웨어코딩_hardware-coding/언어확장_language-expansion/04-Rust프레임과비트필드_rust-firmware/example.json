@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "id": "04-rust-firmware",
+  "title": "Rust 비트필드와 빌린 프레임의 경계 검사",
+  "language": "Rust2024 no_std library + host tests",
+  "sources": [
+    "lib.rs",
+    "tests.rs",
+    "run.py"
+  ],
+  "source_sha256": {
+    "lib.rs": "41b76ac7e5374f404a1bb556665200613f3abeebc3aff0d7a7a005bc60ad7fce",
+    "tests.rs": "795a2c09c082e32d7f81f96b89a35ebef34d23341e4760506678cac9f45463ea",
+    "run.py": "faa958716d379495e5afc2109f502aa64f70b6648e151a3f04071b641e00718d"
+  },
+  "source_origin": "Original library, independent bitwise/parity tests, and local execution helper; no official sample source copied",
+  "original_rust_source_sha256": {
+    "lib.rs": "41b76ac7e5374f404a1bb556665200613f3abeebc3aff0d7a7a005bc60ad7fce",
+    "tests.rs": "795a2c09c082e32d7f81f96b89a35ebef34d23341e4760506678cac9f45463ea"
+  },
+  "original_rust_sources_unchanged": true,
+  "expected": {
+    "no_std_library_compile_returncode": 0,
+    "host_test_compile_returncode": 0,
+    "host_test_returncode": 0,
+    "host_tests_passed": 2,
+    "host_tests_failed": 0,
+    "host_tests_ignored": 0,
+    "fields_assertions": 21652,
+    "frames_assertions": 10179,
+    "total_assertions": 31831
+  },
+  "verification": {
+    "checked_at": "2026-10-26T08:05:09.813793+00:00",
+    "status": "passed_no_std_compile_and_host_tests",
+    "source_sha256": {
+      "lib.rs": "41b76ac7e5374f404a1bb556665200613f3abeebc3aff0d7a7a005bc60ad7fce",
+      "tests.rs": "795a2c09c082e32d7f81f96b89a35ebef34d23341e4760506678cac9f45463ea",
+      "run.py": "faa958716d379495e5afc2109f502aa64f70b6648e151a3f04071b641e00718d"
+    },
+    "build_directory": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\rust-builds\\rust-fw-mvs_tbaf",
+    "commands": [
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\rustup\\toolchains\\stable-x86_64-pc-windows-gnu\\bin\\rustc.exe",
+          "--version",
+          "--verbose"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\rust-builds\\rust-fw-mvs_tbaf",
+        "returncode": 0,
+        "stdout": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: x86_64-pc-windows-gnu\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\rustup\\toolchains\\stable-x86_64-pc-windows-gnu\\bin\\rustc.exe",
+          "--print",
+          "sysroot"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\rust-builds\\rust-fw-mvs_tbaf",
+        "returncode": 0,
+        "stdout": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\rustup\\toolchains\\stable-x86_64-pc-windows-gnu\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\rustup\\toolchains\\stable-x86_64-pc-windows-gnu\\bin\\rustc.exe",
+          "--edition",
+          "2024",
+          "--crate-name",
+          "firmware_fields",
+          "--crate-type",
+          "rlib",
+          "-D",
+          "warnings",
+          "lib.rs",
+          "-o",
+          "libfirmware_fields.rlib"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\rust-builds\\rust-fw-mvs_tbaf",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\rustup\\toolchains\\stable-x86_64-pc-windows-gnu\\bin\\rustc.exe",
+          "--edition",
+          "2024",
+          "--test",
+          "-D",
+          "warnings",
+          "-C",
+          "linker=C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\rustup\\toolchains\\stable-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\rust-lld.exe",
+          "-C",
+          "linker-flavor=ld.lld",
+          "-C",
+          "link-self-contained=yes",
+          "tests.rs",
+          "--extern",
+          "firmware_fields=libfirmware_fields.rlib",
+          "-o",
+          "tests.exe"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\rust-builds\\rust-fw-mvs_tbaf",
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\rust-builds\\rust-fw-mvs_tbaf\\tests.exe",
+          "--test-threads=1",
+          "--nocapture"
+        ],
+        "cwd": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\c_training\\rust-builds\\rust-fw-mvs_tbaf",
+        "returncode": 0,
+        "stdout": "\nrunning 2 tests\ntest fields ... PASS fields checks=21652\nok\ntest frames ... PASS frames checks=10179\nok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s\n\n",
+        "stderr": ""
+      }
+    ],
+    "scope": {
+      "no_std_rlib_compile": true,
+      "host_standard_library_tests": true,
+      "mcu_execution": false,
+      "mmio_execution": false,
+      "cross_target_compile": false
+    },
+    "linker": {
+      "requested": "auto",
+      "selected": "C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\rustup\\toolchains\\stable-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\rust-lld.exe",
+      "codegen_options": [
+        "-C",
+        "linker=C:\\Users\\test2\\Documents\\ChatGPT\\코딩\\tmp\\hardware-language-expansion-20261026\\rustup\\toolchains\\stable-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\rust-lld.exe",
+        "-C",
+        "linker-flavor=ld.lld",
+        "-C",
+        "link-self-contained=yes"
+      ]
+    },
+    "checks": {
+      "fields": 21652,
+      "frames": 10179,
+      "total": 31831,
+      "tests_passed": 2
+    },
+    "artifacts_sha256": {
+      "libfirmware_fields.rlib": "de97a641a9b1bb7b1249d2a20c3865b7ba33250a84ce344af1ebb53b921811fa",
+      "tests.exe": "f8410f7637b87b3041cbffeb9af27bff11cd031c8aa28a05735c8ab2239303d2"
+    },
+    "source_sha256_after": {
+      "lib.rs": "41b76ac7e5374f404a1bb556665200613f3abeebc3aff0d7a7a005bc60ad7fce",
+      "tests.rs": "795a2c09c082e32d7f81f96b89a35ebef34d23341e4760506678cac9f45463ea",
+      "run.py": "faa958716d379495e5afc2109f502aa64f70b6648e151a3f04071b641e00718d"
+    },
+    "source_bytes_unchanged": true
+  },
+  "trace": [
+    {
+      "kind": "field",
+      "step": 1,
+      "input": "word=0x12345678, shift=8, width=4",
+      "state": "value_mask=0x0000000f; read=0x6",
+      "explanation": "읽을 네 비트를 낮은 자리로 옮깁니다."
+    },
+    {
+      "kind": "field",
+      "step": 2,
+      "input": "replace value=0xa",
+      "state": "positioned_mask=0x00000f00; result=0x12345a78",
+      "explanation": "선택한 네 비트만 바꾸고 나머지 위치를 보존합니다."
+    },
+    {
+      "kind": "field",
+      "step": 3,
+      "input": "replace value=0x10",
+      "state": "Err(ValueTooWide)",
+      "explanation": "네 비트 범위를 넘으므로 잘라 저장하지 않습니다."
+    },
+    {
+      "kind": "field",
+      "step": 4,
+      "input": "shift=0,width=32",
+      "state": "value_mask=0xffffffff; shift count=0",
+      "explanation": "32비트 이동 대신 0비트 이동으로 전체 폭을 다룹니다."
+    },
+    {
+      "kind": "frame",
+      "step": 1,
+      "input": "a5 02 00 25 82",
+      "state": "length=5; payload_end=4; expected_length=5",
+      "explanation": "선언한 payload 길이 2와 실제 전체 길이를 먼저 대조합니다."
+    },
+    {
+      "kind": "frame",
+      "step": 2,
+      "input": "header+payload a5 02 00 25",
+      "state": "a5 XOR 02 XOR 00 XOR 25 = 82",
+      "explanation": "마지막 바이트를 제외하고 XOR를 계산합니다."
+    },
+    {
+      "kind": "frame",
+      "step": 3,
+      "input": "checksum=82",
+      "state": "tag=a5; borrowed payload=00 25",
+      "explanation": "검사 후 입력의 일부를 빌린 뷰로 반환합니다."
+    }
+  ],
+  "limitations": {
+    "xor_checksum": "Detects each single-bit change in a fixed valid frame; not a CRC, cryptographic hash, or authenticator",
+    "undetected_algebraic_examples": [
+      {
+        "bytes_hex": "a5 02 01 24 82",
+        "reason": "Two flips in the same bit column cancel in XOR; explanatory calculation, not an additional host test"
+      },
+      {
+        "bytes_hex": "a5 02 25 00 82",
+        "reason": "Swapping payload bytes preserves XOR; explanatory calculation, not an additional host test"
+      }
+    ],
+    "bitfield": "Ordinary RAM values only; no volatile MMIO, atomic RMW, write-one-to-clear, bus-endianness, or device access performed"
+  },
+  "complexity": {
+    "field_time": "O(1) fixed u32 operations",
+    "field_space": "O(1)",
+    "parse_time": "O(L) for payload length L<=255",
+    "parse_auxiliary_space": "O(1), borrowed payload without copying; input storage belongs to caller"
+  },
+  "reproduction": {
+    "command": [
+      "python",
+      "-B",
+      "run.py",
+      "--rustc",
+      "<path-to-rustc>",
+      "--linker",
+      "auto",
+      "--build-dir",
+      "<temporary-build-parent>",
+      "--out",
+      "<separate-report.json>"
+    ],
+    "linker": "auto uses bundled rust-lld with ld.lld/self-contained on x86_64-pc-windows-gnu; --linker default leaves target default linker; explicit linker paths are accepted",
+    "timeout_seconds_per_command": 60
+  },
+  "official_references": [
+    "https://doc.rust-lang.org/reference/names/preludes.html#the-no_std-attribute",
+    "https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html",
+    "https://doc.rust-lang.org/reference/expressions/operator-expr.html#overflow",
+    "https://doc.rust-lang.org/rustc/tests/index.html",
+    "https://doc.rust-lang.org/rustc/codegen-options/index.html#linker",
+    "https://github.com/rust-lang/rust#license"
+  ]
+}
