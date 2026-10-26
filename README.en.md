@@ -20,6 +20,7 @@ I hope this repository will be more than a store of finished answers. One reader
 
 | Section | Coverage |
 | --- | --- |
+| [Roles and engineering practice](직무와실무기술_job-practice/README.md) | Samsung DX/DS and SK hynix job descriptions connected to engineering tasks, test principles, C/C++ and Python workflows, and result records |
 | [Measurement, debugging and validation](현장계측과검증_measurement-validation/README.md) | Instrument guides, DMA/cache, fault tracing, PVT, industrial communications and SCPI automation |
 | [Engineering decisions and checks](설계와검증사례_engineering-cases/README.md) | C/C++, RTOS, interrupt/DMA, CAN/SPI/I2C/UART/Ethernet, watchdog/reset, USB/PCIe, firmware updates, NVMe/eMMC/SD, journal recovery, NAND management, FTL mapping, filesystem repair, backups, RAID parity recovery, I/O retries, ECC, DDR, RTL/CDC, chip, AI and data cases with runnable faults, fixes and dated execution evidence |
 | [Learning sites and channels](학습사이트와채널_learning-resources/README.md) | Korean and international open courses, research resources, technical documentation and educational video channels |

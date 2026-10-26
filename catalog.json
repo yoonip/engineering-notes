@@ -1743,6 +1743,41 @@
       "summary_en": "Connects fabrication principles, materials, equipment, variables, defects and metrology from wafers to packaged devices, including modern logic and memory integration.",
       "category_ko": "반도체 제조 공정",
       "category_en": "Semiconductor fabrication"
+    },
+    {
+      "number": 69,
+      "slug": "직무와실무기술_job-practice",
+      "title": "직무와 실무 기술",
+      "english_title": "Roles and engineering practice",
+      "sections": [
+        "삼성 DX·DS와 SK하이닉스의 직무",
+        "회로·펌웨어·칩 설계와 평가",
+        "공정·설비·패키지·메모리 검사",
+        "AI·데이터·제조 IT",
+        "C·Python의 실행 위치와 결과 판정",
+        "기반 지식과 반도체 산업"
+      ],
+      "keywords": "job description, Samsung DX, Samsung DS, SK hynix, C, C++, Python, RTL, DFT, ATE, PVT, validation, semiconductor, firmware, process, equipment, quality, manufacturing IT",
+      "path": "직무와실무기술_job-practice/README.md",
+      "references": [
+        "https://www.samsungcareers.com/",
+        "https://talent.skhynix.com/hub",
+        "https://gcc.gnu.org/onlinedocs/gcc/Volatiles.html",
+        "https://pyvisa.readthedocs.io/en/latest/introduction/communication.html",
+        "https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm"
+      ],
+      "english_sections": [
+        "Samsung DX/DS and SK hynix roles",
+        "Circuits, firmware, chip design and characterization",
+        "Process, equipment, packaging and memory tests",
+        "AI, data and manufacturing IT",
+        "C/Python execution contexts and test decisions",
+        "Foundations and the semiconductor value chain"
+      ],
+      "summary_ko": "제공된 직무기술서의 업무·필수·우대 조건을 구분하고 검사 원리, 언어별 사용 위치, 조건별 판정과 학습 경로를 연결합니다.",
+      "summary_en": "Connects supplied job descriptions to test principles, programming tasks, decision rules and study paths, distinguishing role duties, requirements and preferences.",
+      "category_ko": "직무와 실무 기술",
+      "category_en": "Roles and engineering practice"
     }
   ],
   "providers": [
@@ -2012,6 +2047,13 @@
     "en"
   ],
   "navigation": [
+    {
+      "title_ko": "직무와 실무 기술",
+      "title_en": "Roles and engineering practice",
+      "area_numbers": [
+        69
+      ]
+    },
     {
       "title_ko": "개발 환경과 언어",
       "title_en": "Development environments and languages",

@@ -6,6 +6,7 @@
 
 | 분야 | 내용 |
 | --- | --- |
+| [직무와 실무 기술](직무와실무기술_job-practice/README.md) | 삼성전자 DX·DS와 SK하이닉스의 직무기술서를 바탕으로 업무·검사 원리·C/C++·Python의 사용 위치와 결과 기록을 연결합니다. |
 | [현장 계측과 검증](현장계측과검증_measurement-validation/README.md) | 오실로스코프·DMM·SMU·로직 분석기·전원/전자부하·LCR·스펙트럼·네트워크 분석기, DMA·고장 추적·PVT·통신·자동화 |
 | [설계와 검증 사례](설계와검증사례_engineering-cases/README.md) | C/C++·RTOS·인터럽트·DMA·통신·저장장치·파일시스템·RTL·칩·AI·데이터의 오류 분석: 실제 코드, 오류 재현, 원인·해결과 날짜별 검증 기록 |
 
@@ -72,7 +73,7 @@ These notes connect circuits, semiconductors, RTL, firmware, systems software, G
 
 - Learning: [Learning sites and channels](학습사이트와채널_learning-resources/README.md), [Engineering foundations](공학기초_foundations/README.md#english), [technical topics](분야_topics/README.md), [semiconductor fabrication](반도체제조공정_semiconductor-fabrication/README.md), [reading and argument reasoning](언어이해와추리논증_reading-reasoning/README.md), [foreign languages and technical English](외국어와기술영어_foreign-languages/README.md), [humanities](인문사회_humanities/README.md).
 - Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [product and technology reviews](제품리뷰_reviews/README.md), [AI model references](AI모델실험_model-lab/README.md).
-- Practical work: [Measurement and debugging](현장계측과검증_measurement-validation/README.md), [engineering cases and dated checks](설계와검증사례_engineering-cases/README.md).
+- Practical work: [Roles and engineering practice](직무와실무기술_job-practice/README.md), [measurement and debugging](현장계측과검증_measurement-validation/README.md), [engineering cases and dated checks](설계와검증사례_engineering-cases/README.md).
 
 - Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [Programmers solutions](programmers/README.md).
 - Background: [Research](연구_research/README.md), [author](소개_about/README.md), [contact](소개_about/연락_CONTACT.md), [tools](도구와환경_tools/README.md), [references](참고자료_references/README.md), [contributing](기여안내_contributing/README.md).
