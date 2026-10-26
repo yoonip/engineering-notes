@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-26T09:38:20.590300+00:00",
+  "status": "passed_source_and_record_checks",
+  "tools_reexecuted": false,
+  "example_count": 4,
+  "source_files": 11,
+  "local_file_links_checked": 56,
+  "local_file_links": "all_resolve",
+  "entries": [
+    {
+      "directory": "01-레지스터명세_systemrdl",
+      "source_files": 3,
+      "source_bytes": "match",
+      "embedded_sources": "match",
+      "stored_result": "consistent"
+    },
+    {
+      "directory": "02-수치계산_matlab-octave",
+      "source_files": 1,
+      "source_bytes": "match",
+      "embedded_sources": "match",
+      "stored_result": "consistent"
+    },
+    {
+      "directory": "03-계약과범위_ada-spark",
+      "source_files": 4,
+      "source_bytes": "match",
+      "embedded_sources": "match",
+      "stored_result": "consistent"
+    },
+    {
+      "directory": "04-PLC스캔_structured-text",
+      "source_files": 3,
+      "source_bytes": "match",
+      "embedded_sources": "match",
+      "stored_result": "consistent"
+    }
+  ]
+}

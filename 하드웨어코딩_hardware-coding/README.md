@@ -12,6 +12,10 @@ Verilog 회로를 제출하는 온라인 문제, 직접 설계한 SystemVerilog 
 
 [응용 시스템 실습](응용시스템_applied-systems/README.md)은 좌표 변환·몸체를 고려한 실내 경로·측정 융합·URDF·교육용 위성 원궤도·벤치 텔레메트리를 다룹니다. [분야별 구조와 검증](응용시스템_applied-systems/분야별구조와검증_domain-architecture.md)에서 자율주행·로봇·우주·방산 전자의 인터페이스와 시험을 연결하고, [공개 프로젝트와 언어](응용시스템_applied-systems/공개프로젝트와언어_sources-and-languages.md)에서 ROS 2·Gazebo·Autoware·CARLA·cFS·F Prime·Ada/SPARK·Modelica의 학습 경로를 안내합니다. 직접 실행한 독립 예제와 외부 런타임 자료는 [실행 기록](응용시스템_applied-systems/확인기록_validation.md)에 구분합니다.
 
+## 현업의 프로그램·모델·명세 언어
+
+[언어별 역할과 실행 예제](현업언어_industry-languages/README.md)에서 C·C++·Python, HDL, 수치·블록 모델, PLC 언어와 레지스터 명세를 나누어 봅니다. SystemRDL·GNU Octave의 .m 코드·Ada·Structured Text는 실제 컴파일·실행 예제로 연결합니다. [실무 역할과 공식 출처](현업언어_industry-languages/언어별역할과출처_language-roles.md)는 CAPL·SKILL·LabVIEW G·SCADE/Swan 등 특정 개발 환경에서 사용하는 언어의 학습 경로와 현재 실행 여부를 함께 안내합니다.
+
 ## 무엇부터 공부할지
 
 | 목표 | 시작할 자료 | 다음 단계 |

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "assembled_at": "2026-10-26T09:36:58.412329+00:00",
+  "examples": [
+    {
+      "number": 1,
+      "id": "systemrdl-csr",
+      "title": "SystemRDL로 명세한 32비트 CSR과 생성 C 헤더 대조",
+      "directory": "01-레지스터명세_systemrdl",
+      "language": "SystemRDL 2.0",
+      "source_sha256": {
+        "example.rdl": "4cc5581ad35e42b85229b56df25fe7223a0538f11d297fbc599b4ee33073cbdd",
+        "check_spec.py": "5e29d40785198b8f40359d4767a835dcec263be203a4189aaff8fc02aa30dc3b",
+        "check_header.c": "2499f4ed94822443dc5f8fb90289a40021d222a1312180f57e628b5608c8280f"
+      },
+      "expected_marker": "PASS systemrdl ast_checks=50 header_assertions=21 rejected=4 header_negative_controls=1 deterministic_exports=2",
+      "readme": "01-레지스터명세_systemrdl/README.md",
+      "metadata": "01-레지스터명세_systemrdl/example.json",
+      "execution_record": "actual_local_tool_execution",
+      "online_judge": false
+    },
+    {
+      "number": 2,
+      "id": "02-matlab-octave-mass-spring",
+      "title": "MATLAB·Octave 질량·스프링 행렬 상태공간과 수치 적분",
+      "directory": "02-수치계산_matlab-octave",
+      "language": "MATLAB-compatible .m executed with GNU Octave",
+      "source_sha256": {
+        "mass_spring_demo.m": "7ca29390fc773ff6271e57226976fa3f94b6929874e7051fbb11f80dec334b98"
+      },
+      "expected_marker": "PASS matlab-octave checks=496 matrix_cases=153 ode_cases=3 rk4_grids=3 rejected_inputs=8",
+      "readme": "02-수치계산_matlab-octave/README.md",
+      "metadata": "02-수치계산_matlab-octave/example.json",
+      "execution_record": "actual_local_tool_execution",
+      "online_judge": false
+    },
+    {
+      "number": 3,
+      "id": "industry-03-ada-spark-bench-contracts",
+      "title": "Ada 부분 자료형과 계약으로 확인하는 벤치 메모리 예산",
+      "directory": "03-계약과범위_ada-spark",
+      "language": "Ada 2022 with SPARK annotations",
+      "source_sha256": {
+        "bench_config.ads": "fe60e3e71ac9a7563cfcee7d8145d51a482506082dc1f579a8dafc113f25dde6",
+        "bench_config.adb": "82e0d4faf842eeb5c5275d8712294b76500ab02a72c5ea0f0a5e05dd12886e0d",
+        "bench_demo.adb": "78a05f2d0c8d27bf2a6037435926ab811619915a103f89aea651cc1feaed41e3",
+        "bench.gpr": "17b94472008c27dbd9251601d716b0201648cdd75feb545e3d65786dc344a4d9"
+      },
+      "expected_marker": "PASS ada checks= 3098 accepted= 2063 precondition_rejections= 1034",
+      "readme": "03-계약과범위_ada-spark/README.md",
+      "metadata": "03-계약과범위_ada-spark/example.json",
+      "execution_record": "actual_local_tool_execution",
+      "online_judge": false
+    },
+    {
+      "number": 4,
+      "id": "plc-temperature-indicator-scan",
+      "title": "PLC 표시 상태의 스캔·유지·경계 검사",
+      "directory": "04-PLC스캔_structured-text",
+      "language": "IEC 61131-3 Structured Text; C host checker; Python runner",
+      "source_sha256": {
+        "indicator.st": "7794a6f22e9ea4b0cc1a05ecd44ecf56cb9b9688f70fcb7c9345d53a4df641b5",
+        "check_driver.c": "3698096911b48bf9305ea33f07ee2091832ce0cc8a4c8eb3ee0181cd8a6e9d07",
+        "run_checks.py": "04f3f99eb8271f62cbe293d2cbc2e5156833e5781968dc785fcc338bfe0b23fd"
+      },
+      "expected_marker": "PASS structured-text normal_checks=32008 negative_boundary=detected",
+      "readme": "04-PLC스캔_structured-text/README.md",
+      "metadata": "04-PLC스캔_structured-text/example.json",
+      "execution_record": "actual_local_tool_execution",
+      "online_judge": false
+    }
+  ],
+  "source_files": 11,
+  "documented_not_executed": [
+    "MATLAB proprietary runtime",
+    "Simulink",
+    "Stateflow",
+    "GNATprove",
+    "CANoe/CAPL",
+    "Virtuoso/SKILL",
+    "LabVIEW/G",
+    "SCADE/Swan",
+    "Chisel",
+    "Verilog-AMS",
+    "Modelica",
+    "FPP"
+  ]
+}

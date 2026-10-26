@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-10-26",
+  "reader_guide": "언어별역할과출처_language-roles.md",
+  "references": [
+    {
+      "id": "amd-hdl",
+      "url": "https://www.amd.com/content/dam/xilinx/support/documents/sw_manuals/xilinx2022_1/ug901-vivado-synthesis.pdf",
+      "location": "AMD UG901 v2022.1, Chapter 1 Introduction",
+      "claim_scope": "합성 가능한 Verilog·SystemVerilog·VHDL 부분집합의 예시이며 최신 판본의 지원표가 아닙니다.",
+      "source_type": "vendor_manual",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "iec-plc",
+      "url": "https://webstore.iec.ch/en/publication/68533",
+      "location": "IEC 61131-3:2025 public abstract",
+      "claim_scope": "ST·LD·FBD와 SFC 구조 요소의 공개 개요이며 유료 표준 전문을 읽은 것으로 표시하지 않습니다.",
+      "source_type": "standard_public_abstract",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "plcnext",
+      "url": "https://engineer.plcnext.help/latest/iecprogramming.htm",
+      "location": "IEC 61131-3 Programming",
+      "claim_scope": "실제 개발 제품의 POU·ST·FBD·LD·SFC와 태스크 설정 안내입니다.",
+      "source_type": "vendor_documentation",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "mathworks-apps",
+      "url": "https://www.mathworks.com/help/simulink/applications.html",
+      "location": "Simulink Applications",
+      "claim_scope": "자동차·항공우주·산업자동화 등의 공식 예제 경로입니다.",
+      "source_type": "vendor_documentation",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "simulink",
+      "url": "https://www.mathworks.com/products/simulink.html",
+      "location": "Simulink, product description and FAQ",
+      "claim_scope": "블록 모델·시뮬레이션·지원 코드 생성의 제품 설명이며 자체 실행·성능 검증이 아닙니다.",
+      "source_type": "vendor_product_description",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "fca-models",
+      "url": "https://de.mathworks.com/company/user_stories/case-studies/fca-develops-autosar-compliant-engine-control-system-with-model-based-design.html",
+      "location": "FCA Develops AUTOSAR-Compliant Engine Control System with Model-Based Design",
+      "claim_scope": "공급사가 게시한 개발팀의 모델·자료사전·코드 생성 사용 사례 요약입니다. 발표 영상 전체를 시청한 기록이 아닙니다.",
+      "source_type": "vendor_hosted_customer_presentation_summary",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "ada-spark",
+      "url": "https://learn.adacore.com/booklets/adacore-technologies-for-airborne-software/chapters/tools.html",
+      "location": "AdaCore Technologies for Airborne Software, section 3.2",
+      "claim_scope": "SPARK 언어·GNATprove와 항공·철도 등 산업 적용에 대한 공급사 설명입니다.",
+      "source_type": "vendor_technical_booklet",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "accellera-standards",
+      "url": "https://www.accellera.org/downloads/standards",
+      "location": "Available Accellera Systems Initiative Standards",
+      "claim_scope": "SystemRDL·UVM·SystemC·Verilog-AMS 관련 공식 목록입니다.",
+      "source_type": "standards_organization",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "systemrdl",
+      "url": "https://www.accellera.org/downloads/standards/systemrdl",
+      "location": "Download SystemRDL, 2.0 Jan2018",
+      "claim_scope": "레지스터 명세에서 여러 뷰를 생성하는 목적의 표준입니다.",
+      "source_type": "standards_organization",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "ams",
+      "url": "https://www.accellera.org/news/press-releases/393-accellera-approves-verilog-ams-2023-standard-for-release",
+      "location": "Verilog-AMS 2023 approval, 2024-03-04",
+      "claim_scope": "아날로그·혼합신호 모델 언어에 관한 공식 발표이며 자체 AMS 실행 기록이 아닙니다.",
+      "source_type": "standards_organization_announcement",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "capl",
+      "url": "https://elearning.vector.com/course/view.php?id=158&section=1",
+      "location": "CAPL Basics V1.6 EN, Welcome to CAPL WarmUp",
+      "claim_scope": "C 영향 문법·CANoe 구성·실습 토큰 흐름의 공개 안내입니다. CANoe 실행·온라인 채점은 하지 않았습니다.",
+      "source_type": "vendor_training",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "skill",
+      "url": "https://community.cadence.com/cadence_blogs_8/b/cic/posts/the-cadence-skill-language-where-coding-blends-with-chip-design",
+      "location": "Cadence SKILL introduction, 2025-09-08, Why SKILL Language",
+      "claim_scope": "설계 데이터 조회·PCell·자동화 역할을 확인했습니다. 글의 코드 예제를 복제·실행하지 않았습니다.",
+      "source_type": "vendor_blog",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "labview-g",
+      "url": "https://www.ni.com/en/shop/labview/benefits-of-programming-graphically-in-ni-labview.html",
+      "location": "Benefits of Programming Graphically in LabVIEW",
+      "claim_scope": "G 그래픽 언어와 컴파일·디버깅 환경의 제품 설명입니다.",
+      "source_type": "vendor_documentation",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "labview-start",
+      "url": "https://learn.ni.com/learn/article/labview-tutorial?client=national-instruments",
+      "location": "LabVIEW Tutorial",
+      "claim_scope": "그래픽 환경·데이터 흐름의 학습 경로이며 실제 VI 실행 기록이 아닙니다.",
+      "source_type": "vendor_training",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "swan",
+      "url": "https://innovationspace.ansys.com/knowledge/forums/topic/scade-one-bridging-the-gap-between-model-based-design-and-traditional-programming/",
+      "location": "Scade One, Swan language and One language, two notations",
+      "claim_scope": "논리 시간·동시성·데이터 흐름과 Scade6·Lustre 계보 설명입니다. 제품의 성능·안전 주장은 자체 검증하지 않았습니다.",
+      "source_type": "vendor_technical_article",
+      "checked_date": "2026-10-26"
+    },
+    {
+      "id": "chisel",
+      "url": "https://www.chisel-lang.org/",
+      "location": "Scala, Chisel, FIRRTL introduction",
+      "claim_scope": "Scala 기반 회로 구성과 Verilog 생성의 공식 설명이며 이번에 Chisel을 실행하지 않았습니다.",
+      "source_type": "project_documentation",
+      "checked_date": "2026-10-26"
+    }
+  ]
+}
