@@ -25,7 +25,7 @@ Linux Kernel, U-Boot, Device Tree, Buildroot, Yocto/OpenEmbedded, BusyBox, QEMU,
 
 ## 기초 해설
 
-- [Embedded Linux: 부팅, Device Tree와 드라이버의 경계](해설_notes/boot-devicetree-driver-boundaries.md)
+- [Embedded Linux: 부팅, Device Tree와 드라이버의 경계](해설_notes/부팅과장치트리및드라이버_boot-devicetree-driver-boundaries.md)
 
 ## 이미지를 받았다는 사실과 부팅 성공의 차이
 
@@ -86,7 +86,7 @@ QEMU can test systems using supported board and device models. On physical board
 
 ### Foundation article
 
-- [Embedded Linux: 부팅, Device Tree와 드라이버의 경계](해설_notes/boot-devicetree-driver-boundaries.md#english)
+- [Embedded Linux: 부팅, Device Tree와 드라이버의 경계](해설_notes/부팅과장치트리및드라이버_boot-devicetree-driver-boundaries.md#english)
 
 
 ### Update completion and boot confirmation

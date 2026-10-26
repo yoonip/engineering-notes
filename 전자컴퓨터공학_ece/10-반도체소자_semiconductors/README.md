@@ -29,7 +29,7 @@ PN, MOS, BJT, CMOS, FinFET, GAA, SOI, SiC/GaN, BSIM, SRAM/DRAM/NAND, TCAD
 
 [기초부터 읽기](../../공학기초_foundations/README.md)
 
-- [MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계](해설_notes/mos-electrostatics-switching.md)
+- [MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계](해설_notes/MOSFET의동작원리_mos-electrostatics-switching.md)
 
 ## 제조 공정과 연결
 
@@ -56,7 +56,7 @@ PVT describes process, voltage, and temperature variation. Compact models such a
 
 [Foundations reading guide](../../공학기초_foundations/README.md#english)
 
-- [MOS electrostatics and switching](해설_notes/mos-electrostatics-switching.md#english)
+- [MOS electrostatics and switching](해설_notes/MOSFET의동작원리_mos-electrostatics-switching.md#english)
 
 
 ## 심화 해설 | Advanced article

@@ -12,7 +12,7 @@ UART는 비동기 직렬 통신, SPI는 클록과 데이터 선을 사용하는 
 
 Ethernet의 IEEE 802.3 규격은 데이터 링크 계층의 MAC과 물리 계층의 PHY를 함께 정의합니다. TCP/IP는 Ethernet 등 여러 링크 위에서 사용하는 프로토콜 계열입니다. Wi-Fi·BLE·Zigbee는 거리·전력·데이터율과 연결 방식이 다릅니다. LoRa는 무선 변조 기술이고, LoRaWAN은 이를 사용하는 통신 규약과 네트워크 구조를 정의합니다. MQTT·Modbus는 장치 데이터를 교환하는 응용 프로토콜입니다. [IEEE 802.3-2022의 범위](https://standards.ieee.org/ieee/802.3/10422/)와 [LoRa Alliance의 LoRa·LoRaWAN 구분](https://lora-alliance.org/about-lorawan/)을 참고합니다.
 
-AXI·AHB·APB는 SoC 내부 구성요소의 연결에 쓰입니다. PCIe는 고속 직렬 링크, DDR은 메모리 인터페이스, MIPI는 디스플레이·카메라 등을 포함한 인터페이스 규격 계열입니다. 대역폭으로 단위 시간의 전송량을, 지연으로 요청에서 결과까지 걸리는 시간을 나타냅니다. 프로토콜 오버헤드와 흐름 제어 때문에 명목 속도와 유효 전송률은 다릅니다.
+AXI·AHB·APB는 SoC 내부 구성요소의 연결에 쓰입니다. PCIe는 고속 직렬 링크, DDR은 메모리 인터페이스, MIPI는 디스플레이·카메라 등을 포함한 인터페이스 규격 계열입니다. 여기서 대역폭은 데이터 전송 용량을, 지연은 요청에서 결과까지 걸리는 시간을 뜻합니다. 실제 유효 전송률은 정한 시간 동안 전달한 유용한 데이터량으로 구하며, 프로토콜 오버헤드와 흐름 제어 등의 영향을 받습니다. 용량을 비교할 때에는 물리 링크·IP·응용 중 어느 계층의 바이트를 세는지도 맞춰야 합니다. [RFC 5136의 명목 물리 용량과 IP 계층 용량 구분](https://www.rfc-editor.org/rfc/rfc5136.html#section-2.2)을 참고합니다.
 
 ## CAN 수신 성공과 값의 유효성
 
@@ -99,7 +99,7 @@ UART provides asynchronous serial communication. SPI uses clock and data lines f
 
 IEEE 802.3 Ethernet defines both the data-link MAC and the physical-layer PHY. TCP/IP operates over Ethernet and other links. Wi-Fi, BLE and Zigbee differ in range, power, data rate and connection design. LoRa is a radio modulation technology; LoRaWAN defines a protocol and network architecture that use it. MQTT and Modbus are application protocols for exchanging device data. See the [IEEE 802.3-2022 scope](https://standards.ieee.org/ieee/802.3/10422/) and the [LoRa Alliance distinction](https://lora-alliance.org/about-lorawan/).
 
-AXI, AHB, and APB connect components inside an SoC. PCIe is a high-speed serial link, DDR is a memory interface, and MIPI covers a family of interfaces including display and camera links. Bandwidth measures data transferred per unit time; latency measures time from a request to its result. Protocol overhead and flow control make useful throughput different from nominal link speed.
+AXI, AHB, and APB connect components inside an SoC. PCIe is a high-speed serial link, DDR is a memory interface, and MIPI covers a family of interfaces including display and camera links. Here, bandwidth refers to data-carrying capacity, while latency is the time from a request to its result. Useful throughput counts useful data delivered over a stated interval and is affected by protocol overhead and flow control. Capacity comparisons must also identify whether they count physical-link, IP or application data. [RFC 5136](https://www.rfc-editor.org/rfc/rfc5136.html#section-2.2) distinguishes nominal physical capacity from IP-layer capacity.
 
 
 ### CAN delivery and application validity

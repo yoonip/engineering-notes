@@ -27,7 +27,7 @@ RLC, Op-Amp, BJT, MOSFET, CMOS, Filters, Oscillators, Regulators, SPICE, Breadbo
 
 [기초부터 읽기](../../공학기초_foundations/README.md)
 
-- [RC·RLC: 회로 법칙에서 시간·주파수 응답까지](해설_notes/rc-rlc-response.md)
+- [RC·RLC: 회로 법칙에서 시간·주파수 응답까지](해설_notes/RC와RLC응답_rc-rlc-response.md)
 
 ## English
 
@@ -48,7 +48,7 @@ Filters select frequency components. Oscillators use supplied energy to sustain 
 
 [Foundations reading guide](../../공학기초_foundations/README.md#english)
 
-- [RC/RLC laws and response](해설_notes/rc-rlc-response.md#english)
+- [RC/RLC laws and response](해설_notes/RC와RLC응답_rc-rlc-response.md#english)
 
 
 ## 심화 해설 | Advanced article

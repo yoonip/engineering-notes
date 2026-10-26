@@ -27,7 +27,7 @@ BERT, T5, GPT, Whisper, wav2vec, CLIP, LLaVA, Transformers, torchaudio, Sentence
 
 [기초부터 읽기](../../공학기초_foundations/README.md)
 
-- [Attention: 필요한 정보를 가중합으로 모으기](해설_notes/attention-from-equations.md)
+- [Attention: 필요한 정보를 가중합으로 모으기](해설_notes/어텐션의수식과가중합_attention-from-equations.md)
 
 ## English
 
@@ -50,7 +50,7 @@ For Korean, English, and other languages, tokenizer efficiency, register and hon
 
 [Foundations reading guide](../../공학기초_foundations/README.md#english)
 
-- [Attention from equations to implementation](해설_notes/attention-from-equations.md#english)
+- [Attention from equations to implementation](해설_notes/어텐션의수식과가중합_attention-from-equations.md#english)
 
 
 ## 심화 해설 | Advanced article

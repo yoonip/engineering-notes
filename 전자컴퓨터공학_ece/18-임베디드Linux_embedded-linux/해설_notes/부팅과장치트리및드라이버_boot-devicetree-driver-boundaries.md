@@ -6,7 +6,7 @@
 
 ### 부팅 로그를 단계별로 나누는 이유
 
-전원을 넣고 셸이 뜨기까지 하나의 프로그램만 실행되는 것은 아닙니다. 플랫폼에 따라 ROM·보안 펌웨어·bootloader가 메모리와 실행 환경을 준비하고 kernel을 넘겨받게 합니다. kernel은 장치와 메모리를 관리하고, root filesystem에서 초기 사용자 공간 프로그램을 실행합니다. initramfs나 여러 단계의 bootloader를 쓰는 경우도 있으며 모든 보드가 같은 경로를 따르지는 않습니다.
+전원을 넣고 셸이 뜨기까지 하나의 프로그램만 실행되는 것은 아닙니다. 플랫폼에 따라 ROM의 부트 코드·보안 펌웨어·bootloader 등이 메모리와 실행 환경을 준비한 뒤 kernel에 제어권을 넘깁니다. kernel은 장치와 메모리를 관리하고, root filesystem에서 초기 사용자 공간 프로그램을 실행합니다. initramfs나 여러 단계의 bootloader를 쓰는 경우도 있으며 모든 보드가 같은 경로를 따르지는 않습니다.
 
 AArch64 Linux의 직접 진입 규약에는 이미지·Device Tree의 배치, 레지스터와 예외 수준, cache 등의 조건이 있습니다. 예를 들어 해당 DT 부팅 규약에서 x0는 DTB의 물리 주소를 전달합니다. 이를 다른 CPU나 EFI 경로의 모든 단계에 무조건 적용하지 않습니다. “파일을 메모리에 복사했다”와 “kernel 진입 전제를 만족했다”는 다른 상태입니다. [Linux Booting AArch64](https://docs.kernel.org/arch/arm64/booting.html)
 

@@ -6,7 +6,7 @@
 
 ### 데이터가 도착해야 하는 시간 창
 
-플립플롭은 clock edge의 전후에 입력이 안정되어 있어야 합니다. Setup은 edge 전에, hold는 edge 뒤에 필요한 안정 시간입니다. 가장 늦게 오는 새 데이터만 보면 setup을, 가장 빨리 바뀌는 데이터를 보면 hold를 놓칠 수 있습니다. Clock-to-Q와 조합논리에도 최대·최소 지연이 필요합니다. [MIT 6.004 Sequential Logic](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c5/c5s1/)
+플립플롭은 clock edge의 전후에 입력이 안정되어 있어야 합니다. Setup은 edge 전에, hold는 edge 뒤에 필요한 안정 시간입니다. Setup을 확인할 때에는 새 데이터가 가장 늦게 도착하는 경로를, hold를 확인할 때에는 데이터가 가장 빨리 바뀌는 경로를 살펴봅니다. Clock-to-Q와 조합논리에도 최대·최소 지연이 필요합니다. [MIT 6.004 Sequential Logic](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c5/c5s1/)
 
 STA(static timing analysis)는 경로와 timing model, clock·I/O 제약으로 도착 시간과 요구 시간을 계산합니다. 특정 입력 파형만 실행하는 기능 simulation과 다른 분석입니다. 기능이 맞는 회로도 느릴 수 있고, timing slack이 양수여도 기능 자체가 틀릴 수 있습니다.
 
