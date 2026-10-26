@@ -9,8 +9,8 @@
 | 기초에서 구현과 검증까지 | [해설](../../공학기초_foundations/README.md) | [PNG](foundations.png) · [SVG](foundations.svg) |
 | 추론과 인문·사회: 근거를 읽고 판단하기 | [해설](../../언어이해와추리논증_reading-reasoning/개념과판단_CONCEPTS_AND_JUDGMENT.md) | [PNG](reasoning_and_humanities.png) · [SVG](reasoning_and_humanities.svg) |
 | 같은 주소, 다른 메모리: 프로세스·가상 메모리·동시성 | [해설](../../전자컴퓨터공학_ece/07-컴퓨터공학기초_cs-foundations/해설_notes/같은주소다른메모리_processes-memory-concurrency.md) | [PNG](processes-memory-concurrency.png) · [SVG](processes-memory-concurrency.svg) |
-| RC·RLC: 회로 법칙에서 시간·주파수 응답까지 | [해설](../../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md) | [PNG](rc-rlc-response.png) · [SVG](rc-rlc-response.svg) |
-| MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계 | [해설](../../전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md) | [PNG](mos-electrostatics-switching.png) · [SVG](mos-electrostatics-switching.svg) |
+| RC·RLC: 회로 법칙에서 시간·주파수 응답까지 | [해설](../../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/RC와RLC응답_rc-rlc-response.md) | [PNG](rc-rlc-response.png) · [SVG](rc-rlc-response.svg) |
+| MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계 | [해설](../../전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/MOSFET의동작원리_mos-electrostatics-switching.md) | [PNG](mos-electrostatics-switching.png) · [SVG](mos-electrostatics-switching.svg) |
 | FSM과 FIFO: 요청과 실제 전송을 구분하기 | [해설](../../전자컴퓨터공학_ece/13-RTL설계_verilog-systemverilog/해설_notes/FSM과FIFO_synchronous-fifo-invariants.md) | [PNG](synchronous-fifo-invariants.png) · [SVG](synchronous-fifo-invariants.svg) |
 | CPU와 장치가 같은 데이터를 다룰 때: MMIO, 인터럽트, DMA | [해설](../../전자컴퓨터공학_ece/17-펌웨어-RTOS_firmware-rtos/해설_notes/CPU와장치가같은데이터를다룰때_mmio-interrupt-dma.md) | [PNG](mmio-interrupt-dma.png) · [SVG](mmio-interrupt-dma.svg) |
 | 바이트가 메시지가 되려면: UART, 프레이밍과 CRC | [해설](../../전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/해설_notes/바이트가메시지가되려면_framing-uart-crc.md) | [PNG](framing-uart-crc.png) · [SVG](framing-uart-crc.svg) |
@@ -22,7 +22,7 @@
 | 계측: 숫자를 읽는 것에서 믿을 수 있는 결과로 | [해설](../../전자컴퓨터공학_ece/37-센서계측_sensors-instrumentation/해설_notes/계측_measurement-loading-uncertainty.md) | [PNG](measurement-loading-uncertainty.png) · [SVG](measurement-loading-uncertainty.svg) |
 | 오류를 찾는 것과 공격을 막는 것: 신뢰성·보안의 경계 | [해설](../../전자컴퓨터공학_ece/38-보안암호하드웨어신뢰_security-cryptography/해설_notes/오류를찾는것과공격을막는것_security-and-reliability-boundaries.md) | [PNG](security-and-reliability-boundaries.png) · [SVG](security-and-reliability-boundaries.svg) |
 | C 코드가 실행되기까지: 컴파일, 링크, 리셋과 main | [해설](../../전자컴퓨터공학_ece/39-컴파일러언어런타임_compilers-languages/해설_notes/C코드가실행되기까지_reset-to-main-and-toolchain.md) | [PNG](reset-to-main-and-toolchain.png) · [SVG](reset-to-main-and-toolchain.svg) |
-| Attention: 필요한 정보를 가중합으로 모으기 | [해설](../../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md) | [PNG](attention-from-equations.png) · [SVG](attention-from-equations.svg) |
+| Attention: 필요한 정보를 가중합으로 모으기 | [해설](../../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션의수식과가중합_attention-from-equations.md) | [PNG](attention-from-equations.png) · [SVG](attention-from-equations.svg) |
 | 열전도와 확산 | [해설](../../전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/열전도와확산_heat-diffusion.md) | [PNG](heat-diffusion.png) · [SVG](heat-diffusion.svg) |
 | 역학, 에너지, 진동 | [해설](../../전자컴퓨터공학_ece/56-물리기초_physics-foundations/해설_notes/역학에너지진동_mechanics-energy-oscillation.md) | [PNG](mechanics-energy-oscillation.png) · [SVG](mechanics-energy-oscillation.svg) |
 | 논증 독해: 근거·결론·가정과 반론 | [해설](../../언어이해와추리논증_reading-reasoning/추리논증_reasoning/논증독해_ARGUMENT_READING.md) | [PNG](argument-reading-and-counterexamples.png) · [SVG](argument-reading-and-counterexamples.svg) |
