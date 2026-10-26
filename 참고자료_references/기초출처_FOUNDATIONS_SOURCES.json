@@ -58,7 +58,7 @@
       ]
     },
     {
-      "path": "전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md",
+      "path": "전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/RC와RLC응답_rc-rlc-response.md",
       "title": "RC·RLC: 회로 법칙에서 시간·주파수 응답까지",
       "reference_urls": [
         "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/34dd2fd3821b725a8b2191558673296b_6002_l15.pdf",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "path": "전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md",
+      "path": "전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/MOSFET의동작원리_mos-electrostatics-switching.md",
       "title": "MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계",
       "reference_urls": [
         "https://rfic.eecs.berkeley.edu/courses/ee240sp06/pdf/lect3.pdf",
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "path": "전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md",
+      "path": "전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션의수식과가중합_attention-from-equations.md",
       "title": "Attention: 필요한 정보를 가중합으로 모으기",
       "reference_urls": [
         "https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf",

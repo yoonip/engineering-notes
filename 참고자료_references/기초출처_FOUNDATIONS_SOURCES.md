@@ -57,14 +57,14 @@
 
 ### 7. RC·RLC: 회로 법칙에서 시간·주파수 응답까지
 
-[해설 읽기](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/rc-rlc-response.md)
+[해설 읽기](../전자컴퓨터공학_ece/09-회로전자공학_circuits-electronics/해설_notes/RC와RLC응답_rc-rlc-response.md)
 
 - [ocw.mit.edu · 34dd2fd3821b725a8b2191558673296b_6002_l15.pdf](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/34dd2fd3821b725a8b2191558673296b_6002_l15.pdf)
 - [ocw.mit.edu · 035929616dc2553a2fee2aa787a96652_MIT18_03SCF11_s20_1text.pdf](https://www.ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/035929616dc2553a2fee2aa787a96652_MIT18_03SCF11_s20_1text.pdf)
 
 ### 8. MOSFET: 전기장으로 전류를 조절하는 원리와 모델의 한계
 
-[해설 읽기](../전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/mos-electrostatics-switching.md)
+[해설 읽기](../전자컴퓨터공학_ece/10-반도체소자_semiconductors/해설_notes/MOSFET의동작원리_mos-electrostatics-switching.md)
 
 - [rfic.eecs.berkeley.edu · lect3.pdf](https://rfic.eecs.berkeley.edu/courses/ee240sp06/pdf/lect3.pdf)
 - [web.mit.edu · SP07-L8.pdf](https://web.mit.edu/6.012/www/SP07-L8.pdf)
@@ -177,7 +177,7 @@
 
 ### 22. Attention: 필요한 정보를 가중합으로 모으기
 
-[해설 읽기](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/attention-from-equations.md)
+[해설 읽기](../전자컴퓨터공학_ece/44-언어음성멀티모달AI_language-speech-multimodal/해설_notes/어텐션의수식과가중합_attention-from-equations.md)
 
 - [papers.nips.cc · 7181-attention-is-all-you-need.pdf](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf)
 - [web.stanford.edu · cs224n-2021-lecture09-transformers.pdf](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/slides/cs224n-2021-lecture09-transformers.pdf)

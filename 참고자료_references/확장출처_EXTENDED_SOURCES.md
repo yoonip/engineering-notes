@@ -87,7 +87,7 @@
 
 ### 11. Embedded Linux: 부팅, Device Tree와 드라이버의 경계
 
-[해설 읽기](../전자컴퓨터공학_ece/18-임베디드Linux_embedded-linux/해설_notes/boot-devicetree-driver-boundaries.md)
+[해설 읽기](../전자컴퓨터공학_ece/18-임베디드Linux_embedded-linux/해설_notes/부팅과장치트리및드라이버_boot-devicetree-driver-boundaries.md)
 
 - [docs.kernel.org · booting.html](https://docs.kernel.org/arch/arm64/booting.html)
 - [docs.kernel.org · usage-model.html](https://docs.kernel.org/devicetree/usage-model.html)
