@@ -12,12 +12,14 @@ Linux와 공정 자료를 준비하는 단계부터 아날로그 풀커스텀 �
 
 ## 실제 칩과 설계 화면
 
-[![JKU IHP 혼합신호 칩의 전체 실제 레이아웃](사진과화면_images/회로와레이아웃_layout-detail/jku-ihp-chip-top-full.png)](사진과화면_images/회로와레이아웃_layout-detail/jku-ihp-chip-top-full.png)
+[![Occamy 전체 계산 칩렛의 HBM·계산 그룹·연결망과 입출력 배치](사진과화면_images/칩전체와동작특성_chip-atlas/occamy-eth-fig7d-entire-chiplet.png)](사진과화면_images/칩전체와동작특성_chip-atlas/occamy-eth-fig7d-entire-chiplet.png)
 
-출처: © 2026 Simon Dorrer and Harald Pretl, [JKU IHP 공개 칩의 원본 GDS](https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/layout/chip_top.gds.gz). 원본 설계 데이터를 KLayout으로 출력한 전체 다층 레이아웃입니다. 바깥의 패드 링, 왼쪽 아래 SRAM과 오른쪽 매크로, 내부 전원 배선을 살펴봅니다. [실제 회로와 레이아웃 읽기](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md)에서는 셀·주변회로·매크로를 확대하고 대응 회로도와 GDS 원본을 연결합니다.
+출처: Scheffler 외, Occamy, 2025, Figure 7(d), [ETH 기관 보관판](https://doi.org/10.3929/ethz-b-000714898). © 2025 IEEE, 기관의 비상업 이용 허용 표시에 따라 인용했습니다. 실제 계산 칩렛 전체의 물리 배치입니다. [칩 전체 구조와 동작 특성](19-칩전체구조와동작특성_chip-structure-and-characteristics.md)에서는 이 배치와 상용 CPU 다이, CPU·GPU 기능 구조, 전압·클록·전력 그래프와 실제 소자 단면을 연결해 읽습니다.
 
 | 보고 싶은 대상 | 연결할 본문 |
 | --- | --- |
+| 칩 전체 물리 배치·상용 CPU 다이·CPU/GPU 구조 | [칩 전체 구조와 동작 특성](19-칩전체구조와동작특성_chip-structure-and-characteristics.md) |
+| 실제 전압·클록·전력 그래프와 소자·접합 단면 | [동작영역·성능·통신과 재료 구조](19-칩전체구조와동작특성_chip-structure-and-characteristics.md) |
 | SRAM 셀·감지 증폭기·쓰기 구동기와 원본 GDS | [실제 회로와 레이아웃 읽기](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md) |
 | SRAM 전체 배열과 반복 셀 | [IHP 매크로의 전체·하위 셀](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md) |
 | 인버터 회로도와 실제 소자 배치, ADC 비교기 | [풀커스텀 회로·레이아웃 확대](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md) |
@@ -52,6 +54,7 @@ Linux와 공정 자료를 준비하는 단계부터 아날로그 풀커스텀 �
 | 16 | [SoC 구조와 IP 통합](16-SoC구조와IP통합_soc-architecture-integration.md) | CPU·메모리·주소·연결망·DMA·부팅과 아날로그 매크로의 시스템 연결 |
 | 17 | [칩 최상위 검증과 제조 인계](17-칩최상위검증과제조인계_chip-top-signoff.md) | pad/bump·전력·ESD·패키지, 블록 경계와 칩 전체 검사·공개 통합 사례 |
 | 18 | [실제 회로와 GDS 레이아웃 읽기](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md) | SRAM 셀·주변회로·배열, 인버터·ADC·전체 칩의 실제 도형과 회로·원본 파일 |
+| 19 | [칩 전체 구조와 동작 특성](19-칩전체구조와동작특성_chip-structure-and-characteristics.md) | 완성 실리콘의 전체 배치, 상용 다이, CPU·GPU 구조와 동작영역·전력·통신·실제 단면 |
 
 처음 시작하시면 0~4장에서 환경·소자·회로 해석을 익힌 뒤 아래 경로를 선택하시면 됩니다.
 
@@ -61,6 +64,7 @@ Linux와 공정 자료를 준비하는 단계부터 아날로그 풀커스텀 �
 | Verilog 기반 디지털 ASIC | 7장 RTL → 8장 합성·타이밍·DFT → 9장 배치배선 → 16장 SoC → 17장 칩 전체 검증 |
 | 아날로그·디지털을 함께 넣은 칩 | 14장 풀커스텀 → 15장 혼합신호 통합 → 16장 시스템 연결 → 17장 칩 전체 검증 |
 | 실제 파일과 공개 도구의 관계 | 12장 공식 블록 실습 → 17장 공개 칩 통합 사례 → 13장 최종 인계 |
+| 그림으로 구조와 동작 연결하기 | 19장 전체 칩·특성 → 18장 셀·회로 확대 → 관심 분야의 설계 본문 |
 
 SoC에 해당하지 않는 단일 아날로그 IC나 디지털 ASIC도 최상위 핀·전원·물리 검증과 제조 인계가 필요합니다. HBM·멀티다이는 11장에서 다이 간 연결과 조립 조건을 추가로 읽습니다.
 

@@ -17,6 +17,8 @@ GDS 그림은 원본 설계 데이터를 KLayout 0.30.12로 출력했습니다. 
 | 연구용 eDRAM | 저장 회로 → 셀 레이아웃 → 시험 칩 사진 | 원논문 Figures 7·14·15 |
 | HBM 인터포저 | 범프 배열과 금속층별 실제 배선 설계 | 원논문 Figure 3 |
 
+완성 실리콘의 칩 전체 배치와 상용 CPU의 실제 다이, CPU·GPU 기능 구조, 클록·전압·전력 그래프와 전자현미경 단면은 [칩 전체 구조와 동작 특성](19-칩전체구조와동작특성_chip-structure-and-characteristics.md)에서 함께 읽으실 수 있습니다.
+
 ## 1. 6T SRAM: 회로의 여섯 소자를 레이아웃에서 찾기
 
 아래 두 그림은 OpenRAM의 같은 `cell_1rw.gds`입니다. 왼쪽은 배선까지 겹쳐 보고, 오른쪽은 금속층을 숨겨 게이트와 활성 영역을 살펴봅니다. 이 예제는 FreePDK45 연구용 기술 자료입니다. 최근 상용 SRAM의 마스크를 나타내는 자료는 아닙니다. [OpenRAM 원본 기술 폴더](https://github.com/VLSIDA/OpenRAM/tree/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/technology/freepdk45)

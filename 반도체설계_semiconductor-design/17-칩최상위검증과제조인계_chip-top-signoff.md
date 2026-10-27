@@ -12,9 +12,9 @@
 
 ## 실제 칩 전체 레이아웃
 
-[![JKU IHP 전체 칩의 SRAM·매크로·패드 링과 전원망](사진과화면_images/회로와레이아웃_layout-detail/jku-ihp-chip-top-full.png)](사진과화면_images/회로와레이아웃_layout-detail/jku-ihp-chip-top-full.png)
+[![Occamy 칩렛 전체의 계산 영역·HBM 경로·D2D와 I/O 배치](사진과화면_images/칩전체와동작특성_chip-atlas/occamy-eth-fig7d-entire-chiplet.png)](사진과화면_images/칩전체와동작특성_chip-atlas/occamy-eth-fig7d-entire-chiplet.png)
 
-© 2026 Simon Dorrer and Harald Pretl의 [공개 chip_top GDS](https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/layout/chip_top.gds.gz)를 전체 계층으로 출력했습니다. 큰 SRAM과 작은 매크로들을 외곽 패드·전원망에 연결한 실제 배치입니다. [확대 설명과 GDS 원본](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md)에서 하위 셀까지 직접 열어 볼 수 있습니다. 이 그림은 배치 데이터를 보여 주며, 원저자의 최상위 검증 상태는 아래 공개 통합 사례에서 별도로 설명합니다.
+Scheffler 외, Occamy, 2025, Figure 7(d), [ETH 기관 보관판](https://doi.org/10.3929/ethz-b-000714898)에서 가져온 전체 계산 칩렛의 실제 물리 배치입니다. © 2025 IEEE, 비상업 이용 허용 표시에 따라 인용했습니다. 계산 그룹뿐 아니라 메모리 PHY·연결망·D2D·입출력이 같은 다이에 들어가는 모습을 봅니다. [전체 구조·측정 그래프·실제 단면](19-칩전체구조와동작특성_chip-structure-and-characteristics.md)에서 이어 읽습니다. 직접 열어 볼 수 있는 공개 GDS 예제는 [회로와 레이아웃 본문](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md)에 있습니다.
 
 ## 논리 top과 물리 chip top
 

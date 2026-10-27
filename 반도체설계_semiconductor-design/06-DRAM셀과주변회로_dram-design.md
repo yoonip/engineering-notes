@@ -157,6 +157,12 @@ DDR의 높은 핀 전송률은 한 셀을 그 전송 간격마다 새로 활성�
 
 이 화면의 예시는 DDR4 모델입니다. DRAMSys는 SystemC TLM 기반의 메모리 시스템 분석 도구로, 앞의 셀 전하·커패시터 단면을 계산하는 트랜지스터 시뮬레이터와 역할이 다릅니다. 공개 기본판과 추가 기능의 범위는 해당 README에서 구분합니다. 전기적 DDR5 인터페이스의 설계 화면은 [Keysight Memory Designer 공식 예시의 Figures 2–4](https://www.keysight.com/blogs/en/tech/sim-des/how-to-build-ami-models-for-ddr5-memory-interfaces)에서 별도로 볼 수 있습니다. [사진·화면의 원본과 이용 조건](사진과화면_images/메모리_memory/README.md)
 
+### 전자현미경으로 본 커패시터 재료
+
+![열처리 온도에 따른 DRAM 커패시터 유전체 평면 시료의 실제 TEM](사진과화면_images/칩전체와동작특성_chip-atlas/dram-dielectric-2025-fig11.jpg)
+
+Park 외, [IEEE Access 13, 2025, Figure 11](https://doi.org/10.1109/ACCESS.2024.3502036)입니다. © 2024 저자, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). TiN 전극 사이 유전체를 비교한 평면 연구 시료입니다. 원통형 커패시터와 접근 소자 전체 단면과 구별하고, 열처리·결정 구조·누설의 연결을 봅니다. [실제 단면의 눈금과 해석](19-칩전체구조와동작특성_chip-structure-and-characteristics.md)에서 자세히 설명합니다.
+
 ## 8. DRAM 공정과 일반 논리 PDK의 차이
 
 DRAM의 셀 정전용량은 작은 평면 면적 안에서 충분한 전하를 저장해야 합니다. 그래서 저장 커패시터의 입체 구조·유전체·누설과 접근 소자의 특성이 핵심입니다. 주변 CMOS와 셀 제조 순서의 열 공정 조건도 함께 맞아야 합니다. IEEE IRDS 2024 More Moore의 §5.1은 이런 DRAM 소자·정전용량·공정 통합 과제를 다룹니다. 이는 기술 로드맵이며 특정 업체의 현행 제조법이나 제품 보증서가 아닙니다. [IEEE IRDS 2024, More Moore, §5.1 DRAM, p. 22](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_MM.pdf)

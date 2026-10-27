@@ -1,0 +1,290 @@
+{
+  "checked_on": "2026-10-27",
+  "scope": "Whole chips, functional architecture, electrical characteristics and actual process cross-sections.",
+  "rights_note": "Image-specific conditions apply; no blanket relicensing of third-party images. Institutional InC-NC figures are used for non-commercial educational analysis.",
+  "files": [
+    {
+      "file": "occamy-eth-fig7d-entire-chiplet.png",
+      "bytes": 1715545,
+      "sha256": "a0b1b012eb5c1632bbb39cc5730cfe73f31767dee9c46226cfeae6c3f47c1b1d",
+      "title_ko": "Occamy 계산 칩렛 전체의 물리 배치",
+      "creator": "Paul Scheffler et al.; ETH Zurich and University of Bologna",
+      "source_title": "Occamy: A 432-Core Dual-Chiplet Dual-HBM2E 768-DP-GFLOP/s RISC-V System for 8-to-64-bit Dense and Sparse Computing in 12nm FinFET",
+      "source_url": "https://doi.org/10.3929/ethz-b-000714898",
+      "source_document_url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/c1570793-aa19-472b-aab9-f9496f3463e6/content",
+      "source_document_sha256": "98b2396a95a0f14d2dad1281f139938a6f9ca6871bc86180ebdab5b80c101f2c",
+      "source_version": "ETH accepted manuscript, JSSC 60(4), 2025; ETH rights cover adds one PDF page",
+      "figure": "Figure 7(d)",
+      "pdf_page_1based": 8,
+      "evidence_type": "original placed-and-routed physical layout image, entire compute die",
+      "rights": "In Copyright - Non-Commercial Use Permitted; © 2025 IEEE",
+      "rights_url": "https://rightsstatements.org/page/InC-NC/1.0/",
+      "modifications": "Selected source figure region rendered from ETH PDF; no data, labels, or shapes redrawn.",
+      "pixels": [
+        1435,
+        920
+      ]
+    },
+    {
+      "file": "occamy-eth-fig1-system-architecture.png",
+      "bytes": 257110,
+      "sha256": "60a2e1a55e71e534b41f3593bbdf96cebef26b9a92fa23316d3a51e95bab2403",
+      "title_ko": "Occamy의 계산 클러스터·칩렛·HBM 연결",
+      "creator": "Paul Scheffler et al.; ETH Zurich and University of Bologna",
+      "source_title": "Occamy: A 432-Core Dual-Chiplet Dual-HBM2E 768-DP-GFLOP/s RISC-V System for 8-to-64-bit Dense and Sparse Computing in 12nm FinFET",
+      "source_url": "https://doi.org/10.3929/ethz-b-000714898",
+      "source_document_url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/c1570793-aa19-472b-aab9-f9496f3463e6/content",
+      "source_document_sha256": "98b2396a95a0f14d2dad1281f139938a6f9ca6871bc86180ebdab5b80c101f2c",
+      "source_version": "ETH accepted manuscript, JSSC 60(4), 2025; ETH rights cover adds one PDF page",
+      "figure": "Figure 1",
+      "pdf_page_1based": 3,
+      "evidence_type": "original functional architecture diagram",
+      "rights": "In Copyright - Non-Commercial Use Permitted; © 2025 IEEE",
+      "rights_url": "https://rightsstatements.org/page/InC-NC/1.0/",
+      "modifications": "Selected source figure region rendered from ETH PDF; no data, labels, or shapes redrawn.",
+      "pixels": [
+        1600,
+        750
+      ]
+    },
+    {
+      "file": "amd-ryzen-9600x-zen5-ccd-cc0-source-1024.jpg",
+      "bytes": 619985,
+      "sha256": "e778ca2f628015a9dfa53362e360ea21d23d1b72a01b846084869b8c8b5aca48",
+      "title_ko": "Ryzen 5 9600X에서 분리한 Zen 5 CCD의 전체 다이 사진",
+      "creator": "Fritzchens Fritz",
+      "source_url": "https://www.flickr.com/photos/130561288@N04/54046905459/",
+      "original_url": "https://live.staticflickr.com/65535/54046905459_feecb70bb5_b.jpg",
+      "source_version": "Uploaded 2024-10-06; original author labels specimen Ryzen 5 9600X, Zen 5 CCD, polysilicon view",
+      "evidence_type": "independent optical micrograph of a whole commercial CCD; not manufacturer photograph",
+      "rights": "CC0 1.0",
+      "rights_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modifications": "None; Flickr-provided 1024px rendition retained unchanged.",
+      "pixels": [
+        1024,
+        879
+      ]
+    },
+    {
+      "file": "basilisk-2025-fig3-shmoo.png",
+      "bytes": 101944,
+      "sha256": "0d1d4cba5a7ff3398aeb2ad28ee3a4c2f57681dc7f1dc974da925f59051e71d3",
+      "title_ko": "Basilisk의 전압·주파수 동작영역과 FP64 연산 에너지 효율",
+      "creator": "Philippe Sauter, Thomas Benz, Paul Scheffler, Martin Povišer, Frank K. Gürkaynak, Luca Benini et al.",
+      "source_title": "Basilisk: A 34 mm² End-to-End Open-Source 64-bit Linux-Capable RISC-V SoC in 130nm BiCMOS",
+      "source_url": "https://doi.org/10.3929/ethz-b-000735663",
+      "source_document_url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/90492aad-034b-46a5-8197-62d53933a669/content",
+      "source_document_sha256": "2300991cc2cd625d1b4c5a9141d146967253f75913be1812c1e9027dd726cbab",
+      "source_version": "ETH institutional manuscript, publication year 2025, two-page body plus one-page ETH rights cover; technical body matches arXiv:2505.10060v1 (2025-05-15) after excluding the arXiv margin identifier; accepted Hot Chips 2025 poster submission per arXiv metadata",
+      "figure": "Fig. 3",
+      "pdf_page_1based": 3,
+      "evidence_type": "measured silicon shmoo, not a circuit simulation",
+      "axes": {
+        "x": "Frequency (MHz); displayed major ticks 4 to 100",
+        "y": "Core Voltage (V); displayed major ticks 0.84 to 1.64",
+        "color": "Energy efficiency (MFLOP/s/W); displayed major ticks 5.0 to 17.5"
+      },
+      "conditions": [
+        "IHP 130 nm BiCMOS Basilisk prototype",
+        "25 °C",
+        "48×48 FP64 GEMM workload",
+        "Core voltage and clock frequency swept using DUTCTL, external power supplies and clocks",
+        "Reported nominal point: up to 62 MHz at 1.2 V",
+        "Reported peak-frequency point: 102 MHz at 1.64 V",
+        "Reported best energy efficiency: 18.9 MFLOP/s/W at 0.88 V, 10 MHz"
+      ],
+      "limits": [
+        "Color represents energy efficiency, not power in W or mW.",
+        "The paper does not state how many chips underlie this full shmoo; its separate 437 µW average leakage statement explicitly uses ten chips.",
+        "Do not interpret blank cells as a universal failure boundary across workloads and temperatures.",
+        "The full PDFs have different checksums because the institutional files add rights covers and omit the arXiv margin identifier; the technical body text matches after this identifier is excluded, and Fig.3 crops are pixel-identical."
+      ],
+      "rights": "In Copyright - Non-Commercial Use Permitted",
+      "rights_url": "https://rightsstatements.org/page/InC-NC/1.0/?language=en",
+      "modifications": "Original figure region rendered from the institutional PDF; axes, legend and caption retained; no data redrawing.",
+      "pixels": [
+        1458,
+        1100
+      ]
+    },
+    {
+      "file": "occamy-2025-fig10-gemm-power.png",
+      "bytes": 114679,
+      "sha256": "59a003766bfe025258c3eb90d2ba397ed1244e032fed7d509dba4d203bd0b252",
+      "title_ko": "Occamy의 수치 정밀도에 따른 행렬곱 처리량·전력",
+      "creator": "Paul Scheffler, Thomas Benz, Viviane Potocnik et al.",
+      "source_title": "Occamy: A 432-Core Dual-Chiplet Dual-HBM2E 768-DP-GFLOP/s RISC-V System for 8-to-64-bit Dense and Sparse Computing in 12nm FinFET",
+      "source_url": "https://doi.org/10.3929/ethz-b-000714898",
+      "source_document_url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/c1570793-aa19-472b-aab9-f9496f3463e6/content",
+      "source_document_sha256": "98b2396a95a0f14d2dad1281f139938a6f9ca6871bc86180ebdab5b80c101f2c",
+      "source_version": "Author accepted manuscript; ETH publication date 2025-04, IEEE Journal of Solid-State Circuits 60(4), pp.1324–1338; DOI online publication 2025-01-30",
+      "figure": "Fig.10",
+      "pdf_page_1based": 11,
+      "evidence_type": "silicon time/current measurements with analytically or cycle-accurate-simulation-derived workload operation counts",
+      "axes": {
+        "x": "FP64, FP32, FP16, FP16 EXP, FP8 EXP numerical formats",
+        "left_panel_left_y": "Performance (GFLOP/s)",
+        "left_panel_right_y": "FPU utilization (%)",
+        "right_panel_left_y": "Energy efficiency (GFLOP/s/W)",
+        "right_panel_right_y": "Chiplet Power (W)"
+      },
+      "conditions": [
+        "GlobalFoundries 12 nm FinFET dual-chiplet research demonstrator",
+        "Nominal compute clock 1 GHz",
+        "25 °C controlled using active temperature forcing",
+        "ATE-based clocking and Keysight E36200-series current/power delivery setup",
+        "SU-accelerated GEMM from FP64 through FP8",
+        "FP16 EXP accumulates into FP32; FP8 EXP accumulates into FP16",
+        "The plotted utilization and energy efficiency additionally use operation counts obtained analytically or through cycle-accurate simulation"
+      ],
+      "limits": [
+        "Not a voltage or frequency sweep.",
+        "Chiplet Power is the plotted power boundary; do not label it wall power or complete server power.",
+        "Different numerical formats do not guarantee equal accuracy on an application.",
+        "The nominal 0.8 V value is stated in implementation Section IV-A; do not present it as an independently documented voltage sweep in Fig.10."
+      ],
+      "rights": "In Copyright - Non-Commercial Use Permitted; © 2025 IEEE",
+      "rights_url": "https://rightsstatements.org/page/InC-NC/1.0/?language=en",
+      "modifications": "Original figure region rendered from the institutional PDF; axes, legend and caption retained; no data redrawing.",
+      "pixels": [
+        1450,
+        935
+      ]
+    },
+    {
+      "file": "occamy-2025-fig13-d2d-bandwidth-simulation.png",
+      "bytes": 108111,
+      "sha256": "aa37d73fa493ed44e1b2701a1ee1c266af4e950002a865b6be71003692873f09",
+      "title_ko": "Occamy 칩렛 통신의 전송 크기·가용 채널과 유효 대역폭",
+      "creator": "Paul Scheffler, Thomas Benz, Viviane Potocnik et al.",
+      "source_title": "Occamy: A 432-Core Dual-Chiplet Dual-HBM2E 768-DP-GFLOP/s RISC-V System for 8-to-64-bit Dense and Sparse Computing in 12nm FinFET",
+      "source_url": "https://doi.org/10.3929/ethz-b-000714898",
+      "source_document_url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/c1570793-aa19-472b-aab9-f9496f3463e6/content",
+      "source_document_sha256": "98b2396a95a0f14d2dad1281f139938a6f9ca6871bc86180ebdab5b80c101f2c",
+      "source_version": "Author accepted manuscript; ETH publication date 2025-04, IEEE Journal of Solid-State Circuits 60(4), pp.1324–1338; DOI online publication 2025-01-30",
+      "figure": "Fig.13",
+      "pdf_page_1based": 12,
+      "evidence_type": "cycle-accurate RTL simulation, explicitly not silicon-measured bandwidth curves",
+      "axes": {
+        "left_panel_x": "Number of disabled PHYs, 0–12",
+        "right_panel_x": "Transfer Size (kB), 1–16",
+        "both_panels_left_y": "Effective Bandwidth (GB/s), displayed ticks 5.0–8.0",
+        "both_panels_right_y": "Effective Bandwidth Utilization (%), displayed ticks 62–100"
+      },
+      "conditions": [
+        "Wide D2D segment of Occamy's digital source-synchronous DDR chiplet link",
+        "Channel disabling models fault mitigation",
+        "Transfer size sweep shows protocol and transfer overhead",
+        "Section V-D reports 96% utilization at 16 kB"
+      ],
+      "limits": [
+        "Do not call these plots measured eye diagrams, BER results or operating-frequency sweeps.",
+        "The separately stated wide-D2D 1.6 pJ/bit value is measured on silicon; it does not convert Fig.13 into a measured curve.",
+        "The text for Fig.13 does not restate an absolute simulated D2D clock, so none is invented here."
+      ],
+      "rights": "In Copyright - Non-Commercial Use Permitted; © 2025 IEEE",
+      "rights_url": "https://rightsstatements.org/page/InC-NC/1.0/?language=en",
+      "modifications": "Original figure region rendered from the institutional PDF; axes, legend and caption retained; no data redrawing.",
+      "pixels": [
+        1450,
+        920
+      ]
+    },
+    {
+      "file": "gaa-inner-spacer-2026-fig7-publisher.png",
+      "bytes": 1664263,
+      "sha256": "e0aea598c41cd88af44ec2a247cde6ef16cb7189d97b4e27953e07629450740e",
+      "title_ko": "Si/SiGe 적층에서 안쪽 스페이서 공간을 만든 실제 TEM과 원소 지도",
+      "creator": "Meng Wang, Xinlong Guo, Ziqiang Huang, Meicheng Liao, Tao Liu, Min Xu",
+      "source_title": "Feature Comparison and Process Optimization of Multiple Dry Etching Techniques Applied in Inner Spacer Cavity Formation of GAA NSFET",
+      "source_url": "https://doi.org/10.3390/nano16020145",
+      "original_url": "https://mdpi-res.com/nanomaterials/nanomaterials-16-00145/article_deploy/html/images/nanomaterials-16-00145-g007.png",
+      "source_version": "Nanomaterials 16(2), 145; published 2026-01-21",
+      "figure": "Figure 7, 본문 3절의 챔버 압력 조절 실험 뒤에 배치된 TEM·EDX 그림입니다.",
+      "evidence_type": "actual_TEM_micrographs_and_measured_EDX_elemental_maps",
+      "sample_status": "GAA NSFET의 안쪽 스페이서 공간을 식각하는 공정 연구 시료입니다. 완성된 트랜지스터나 시판 칩이 아닙니다.",
+      "conditions": [
+        "ClF3/He 가스 식각의 온도는 25 °C입니다. 이 그림은 챔버 압력을 0.5 Torr에서 1 Torr로 높인 뒤의 결과입니다."
+      ],
+      "rights": "CC BY 4.0",
+      "rights_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "None; complete source figure preserved without cropping, translation overlays or recoloring.",
+      "pixels": [
+        1868,
+        1724
+      ]
+    },
+    {
+      "file": "dram-dielectric-2025-fig11.jpg",
+      "bytes": 106685,
+      "sha256": "60eb3616c6bbd15d09d9c2c17e339907f2a6834e07e4ff471b0a27ec85dc3a09",
+      "title_ko": "DRAM 커패시터 유전체를 열처리한 평면 시료의 실제 TEM",
+      "creator": "Dong-Sik Park, Eun-Ok Lee, Jong-Min Lee, Eunae Cho, Byongdeog Choi",
+      "source_title": "Suppression of Capacitor Leakage Through Thermal Budget Control in DRAM With ZrO2-Based Dielectrics",
+      "source_url": "https://doi.org/10.1109/ACCESS.2024.3502036",
+      "original_url": "https://ieeexplore.ieee.org/ielx8/6287639/10820123/10757309.pdf",
+      "source_version": "IEEE Access 13, 35019–35028; published 2024-11-19; version of record 2025-02-27",
+      "figure": "Figure 11, 인쇄면 35025, 공식 PDF 7쪽입니다. 저작권·CC BY 표시는 PDF 1쪽에 있습니다.",
+      "evidence_type": "actual_cross_section_TEM_micrographs",
+      "sample_status": "18 nm DRAM 기술에서 만든 커패시터와 같은 공정·두께로 제작한 비패턴 평면 MIM 시료입니다. 원통형 커패시터 어레이 전체 단면은 아닙니다.",
+      "conditions": [
+        "왼쪽·가운데·오른쪽 시료의 열처리 온도는 각각 500·460·400 °C입니다. TiN 전극 사이에 ZrO2/Al2O3 계열 유전체가 있습니다."
+      ],
+      "rights": "CC BY 4.0",
+      "rights_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modifications": "PDF에 내장된 Figure 11 전체 JPEG를 재압축하지 않고 추출했습니다. 패널 표기와 화살표는 원본 그대로입니다.",
+      "pixels": [
+        1017,
+        316
+      ]
+    },
+    {
+      "file": "hybrid-bond-2026-fig4-full.png",
+      "bytes": 2555539,
+      "sha256": "958c4b625430514afe3eb9f6170f8c10508b32776816ab40e659785fc6d90342",
+      "title_ko": "구리·산화막 하이브리드 접합면의 실제 HAADF 영상과 EDS 분석",
+      "creator": "Hemanth Kumar Cheemalamarri, Masahisa Fujino, Tanmay Ghosh, Ratan Bhimrao Umralkar, Chandra Rao B.S.S, Navab Singh, Srinivasa Rao Vempati",
+      "source_title": "Void-free Cu/dielectric hybrid bonding at low-temperature enabled by ultrathin metal passivation engineering for 3D-IC applications",
+      "source_url": "https://doi.org/10.1038/s44172-026-00649-w",
+      "original_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs44172-026-00649-w/MediaObjects/44172_2026_649_Fig4_HTML.png",
+      "source_version": "Communications Engineering 5, 104; published 2026-04-08; version of record 2026-06-05",
+      "figure": "Figure 4 전체입니다. (a)는 HAADF 단면, (b)–(d)는 EDS 지도, (e)–(g)는 선 분석입니다.",
+      "evidence_type": "actual_HAADF_STEM_cross_section_and_measured_EDS_maps_and_line_scans",
+      "sample_status": "Ti 보호층을 이용한 Cu/SiO2 하이브리드 접합의 연구 시료입니다. 상용 HBM·가속기 제품의 내부 사진이 아닙니다.",
+      "conditions": [
+        "보호층을 적용한 웨이퍼를 상온에서 접합한 뒤 250 °C에서 2시간 열처리한 공정을 설명합니다."
+      ],
+      "rights": "CC BY-NC-ND 4.0",
+      "rights_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "modifications": "None; complete source figure preserved without cropping, translation overlays or recoloring.",
+      "pixels": [
+        1996,
+        2174
+      ]
+    },
+    {
+      "file": "gb202-functional-hierarchy.svg",
+      "bytes": 5481,
+      "sha256": "158dacdfab60521c5921cdba4279ebfeea5f93a4e383e90fa5c2c8be99f89add",
+      "title_ko": "GB202 GPU의 기능 계층과 메모리 경로",
+      "creator": "engineering-notes",
+      "source_url": "https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf",
+      "source_version": "v1.1, pp. 8–10",
+      "evidence_type": "original explanatory functional diagram based on public architecture facts; not a physical floorplan",
+      "rights": "Original explanatory drawing in this repository; upstream manufacturer artwork is not reproduced.",
+      "modifications": "New vector drawing of selected functional relationships; no source image copied."
+    },
+    {
+      "file": "cpu-instruction-memory-path.svg",
+      "bytes": 6107,
+      "sha256": "e72fbd81cd150ed52e4fa16609325fe52d16d1467711d7a38ce7d797a6bf4681",
+      "title_ko": "CPU의 명령 실행 경로와 캐시·DRAM",
+      "creator": "engineering-notes",
+      "source_url": "https://hc2024.hotchips.org/assets/program/conference/day2/24_HC2024.AMD.Cohen.Subramony.final.pdf",
+      "source_version": "Hot Chips 2024, pp. 4–5",
+      "evidence_type": "original explanatory functional diagram based on public architecture facts; not a physical floorplan",
+      "rights": "Original explanatory drawing in this repository; upstream manufacturer artwork is not reproduced.",
+      "modifications": "New vector drawing of selected functional relationships; no source image copied."
+    }
+  ]
+}

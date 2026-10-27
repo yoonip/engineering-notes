@@ -1,6 +1,6 @@
 # 합성·타이밍 제약·DFT의 연결 / Synthesis, static timing and design for test
 
-합성은 RTL의 상태와 연산을 논리 셀의 연결로 바꾸는 과정입니다. STA는 그 연결이 주어진 클록·입출력 조건에서 시간을 지키는지 분석합니다. DFT는 만들어진 칩의 결함을 검사할 수 있도록 회로와 접근 경로를 설계하는 일입니다. 세 작업은 파일과 제약을 주고받지만 같은 성공 기준을 사용하지 않습니다. 공개 자료 확인일은 2026-10-26이며, 아래 수치는 실제 라이브러리의 측정값이 아닌 자체 예입니다.
+합성은 RTL의 상태와 연산을 논리 셀의 연결로 바꾸는 과정입니다. STA는 그 연결이 주어진 클록·입출력 조건에서 시간을 지키는지 분석합니다. DFT는 만들어진 칩의 결함을 검사할 수 있도록 회로와 접근 경로를 설계하는 일입니다. 세 작업은 파일과 제약을 주고받지만 같은 성공 기준을 사용하지 않습니다. 설계 절차의 참고 자료는 2026-10-26에 확인했습니다. 이 글의 SDC·slack·scan 계산 수치는 설명용 자체 예이며, 외부 실측 그림은 출처와 시험 조건을 별도로 표시했습니다.
 
 ## 1. 문법을 읽는 단계와 셀에 대응시키는 단계
 
@@ -79,6 +79,12 @@ PVT는 공정 변화(process), 전원 전압(voltage), 온도(temperature)의 �
 [OpenLane의 Timing Corners 문서](https://openlane2.readthedocs.io/en/latest/usage/timing_corners.html)는 셀과 상호연결의 코너를 나누어 설명합니다. 실제 프로젝트에서는 PDK·라이브러리 제공자가 허용한 분석 조합과 변동·여유 적용 방법을 확인합니다. 존재하는 파일 이름을 임의로 조합한 것과 승인된 분석 조건은 다릅니다.
 
 UPF는 전원 영역·공급·전원 스위치·isolation·level shifter·retention 등의 전원 의도를 전달하는 형식입니다. Isolation은 꺼진 영역의 출력이 동작 중인 영역에 미정값을 퍼뜨리지 않도록 정한 상태로 만드는 기능입니다. Retention은 필요한 상태를 전원 상태 전환 사이에 보존하는 기능입니다. 실제 셀·핀·제어 순서와 연결해야 하며 UPF 파일이 물리 전원 배선을 대신하지 않습니다. [Accellera의 UPF 교육 개요](https://www.accellera.org/resources/videos/upf-tutorial-2013)는 이 전원 구조와 상태의 개념을 구분합니다. 이 글에서 영상 전체를 재생한 것은 아닙니다. [OpenROAD UPF utility](https://openroad.readthedocs.io/en/latest/main/src/upf/README.html)의 power domain·power switch·isolation 설명을 읽되, 나열된 명령의 존재만으로 모든 IEEE UPF 기능과 상용 흐름의 동등성을 주장하지 않습니다.
+
+### 실리콘에서 측정한 전압·주파수 동작영역
+
+[![Basilisk의 실측 전압·주파수와 행렬곱 에너지 효율](사진과화면_images/칩전체와동작특성_chip-atlas/basilisk-2025-fig3-shmoo.png)](사진과화면_images/칩전체와동작특성_chip-atlas/basilisk-2025-fig3-shmoo.png)
+
+Sauter 외, Basilisk, 2025, Figure 3, [ETH 기관 보관판](https://doi.org/10.3929/ethz-b-000735663)입니다. 비상업 이용 허용 표시에 따라 인용했습니다. 25 °C에서 FP64 행렬곱을 실행한 실측이며, 색은 전력 자체가 아니라 MFLOP/s/W입니다. STA의 경로 분석과 실리콘의 동작영역 측정은 서로 다른 정보를 제공합니다. [축·시험 조건·DVFS 설명](19-칩전체구조와동작특성_chip-structure-and-characteristics.md)과 함께 읽습니다.
 
 ## 6. DFT와 메모리 자체 시험
 

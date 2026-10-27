@@ -16,6 +16,12 @@ HBM은 여러 DRAM 다이를 수직으로 연결하여 넓은 데이터 경로�
 
 Wen-Xue Tang 등의 [2025년 HBM 인터포저 연결 연구](https://www.mdpi.com/2072-666X/16/8/896), Figure 3입니다. © 2025 저자들, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). 위쪽 단면과 아래쪽 금속 배선 설계를 함께 봅니다. Metal1·Metal3 신호 경로와 Metal2 접지층이 구분됩니다. 이는 논문의 연구 배선 구조이며 상용 HBM4 코어 다이 전체의 마스크는 아닙니다. [회로·레이아웃 본문](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md)에서 범프·배선·층의 관계를 더 자세히 읽습니다.
 
+## 실제 접합면의 구조와 원소 분석
+
+[![Cu·산화막 하이브리드 접합 연구 시료의 HAADF와 EDS 분석](사진과화면_images/칩전체와동작특성_chip-atlas/hybrid-bond-2026-fig4-full.png)](사진과화면_images/칩전체와동작특성_chip-atlas/hybrid-bond-2026-fig4-full.png)
+
+Cheemalamarri 외, A*STAR, [Communications Engineering 5, 104, 2026, Figure 4](https://doi.org/10.1038/s44172-026-00649-w)입니다. © 2026 저자, [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). 비상업적 이용을 위해 원본 전체 그림을 변경 없이 실었습니다. 실제 구리 접점과 접합 계면의 연구 시료이며 상용 HBM 제품의 단면은 아닙니다. [단면·원소 지도·위치별 신호의 해석](19-칩전체구조와동작특성_chip-structure-and-characteristics.md)에서 설계상의 다이 간 연결과 실제 접합 구조를 이어 봅니다.
+
 ## 최근 HBM 제품과 실제 사용 형태
 
 2026-10-26에 확인한 최근 공개 자료입니다. 제품·샘플·전시품은 각 자료의 발표 상태에 따라 구분합니다.

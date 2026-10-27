@@ -35,6 +35,12 @@ IP는 재사용하는 설계 블록입니다. RTL 소스로 제공되는 soft IP
 
 [OpenTitan AST](https://opentitan.org/book/hw/top_earlgrey/ip/ast/)는 클록·전압 조정·센서 등의 아날로그 기능과 디지털 제어 사이의 인터페이스를 설명합니다. 전원 정상 신호와 클록 유효 신호도 시스템의 입력입니다. 이 신호를 단순히 1로 묶은 시뮬레이션에서는 기동 실패와 전원 상태 전환을 확인할 수 없습니다.
 
+## 실제 칩렛 시스템의 연결
+
+![Occamy의 코어·클러스터·계산 그룹·칩렛과 HBM 연결](사진과화면_images/칩전체와동작특성_chip-atlas/occamy-eth-fig1-system-architecture.png)
+
+Scheffler 외, Occamy, 2025, Figure 1, [ETH 기관 보관판](https://doi.org/10.3929/ethz-b-000714898)의 원본 기능도입니다. © 2025 IEEE, 비상업 이용 허용 표시에 따라 인용했습니다. 코어를 묶은 클러스터에서 두 칩렛과 HBM 경로까지 연결을 따라갑니다. [전체 물리 배치와 기능도 비교](19-칩전체구조와동작특성_chip-structure-and-characteristics.md)에서 각각의 장치가 실제 칩에서 차지하는 영역과 대응합니다.
+
 ## 주소 지도는 RTL·검증·소프트웨어가 공유하는 계약입니다
 
 아래 예는 바이트 주소를 사용하는 자체 설계 가정입니다. 각 범위는 시작 주소를 포함하고 끝 주소까지 사용합니다.
