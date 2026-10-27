@@ -20,6 +20,12 @@ DRAM은 작은 커패시터에 저장한 전하를 읽는 메모리입니다. �
 
 출처: SK하이닉스 뉴스룸, [같은 MWC 공식 기사](https://news.skhynix.co.kr/mwc-2026/). 기판 위에 여러 패키지를 올린 모듈과 개별 DRAM 다이를 구분해 봅니다. 표시판의 RDIMM·MRDIMM·SOCAMM2는 모듈 구성을 설명합니다. 특정 모듈의 용량·전송률을 셀 하나의 용량·접근 시간으로 읽지 않습니다. [사진·화면의 원본과 이용 조건](사진과화면_images/메모리_memory/README.md)
 
+## 회로와 셀 레이아웃을 함께 보는 연구 사례
+
+![연구용 gain-cell eDRAM의 시험 칩 사진과 매크로·셀 레이아웃](사진과화면_images/회로와레이아웃_layout-detail/edram-2023-fig15.png)
+
+Subin Kim·Ingu Jeong·Jun-Eun Park의 [2023년 eDRAM 논문](https://www.mdpi.com/1424-8220/23/23/9329), Figure 15입니다. © 2023 저자들, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). 시험 칩 사진, 4 kb 매크로, 셀의 실제 레이아웃을 차례로 볼 수 있습니다. 이 연구의 gain-cell eDRAM은 아래에서 설명하는 1T1C DRAM과 셀 구성이 다릅니다. [실제 회로와 레이아웃 읽기](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md)에 같은 논문의 저장 셀·감지기 회로도를 연결했습니다.
+
 ## 1. 1T1C 셀과 저장 전하
 
 1T1C는 접근 트랜지스터 하나와 저장 커패시터 하나를 뜻합니다. 워드라인 WL이 트랜지스터를 켜면 저장 노드가 비트라인 BL에 연결됩니다. WL이 꺼지면 저장 노드는 분리되어 전하를 보유합니다. 커패시터의 다른 쪽 단자인 plate도 회로의 일부이며, 전하의 의미는 저장 노드와 plate 사이 전압으로 정해집니다. CMU의 DRAM 강의는 이 셀과 누설, 읽기·복원 과정을 설명합니다. [CMU 18-322, Memory III: Dynamic Random Access, 2003, 슬라이드 3–14](https://course.ece.cmu.edu/~ece322/LECTURES/Lecture24/L24b.pdf)

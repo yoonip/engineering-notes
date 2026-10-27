@@ -12,21 +12,21 @@ Linux와 공정 자료를 준비하는 단계부터 아날로그 풀커스텀 �
 
 ## 실제 칩과 설계 화면
 
-![2026년 삼성전자 HBM4E 샘플 실물](사진과화면_images/메모리_memory/samsung-hbm4e-20260529-original-6.jpg)
+[![JKU IHP 혼합신호 칩의 전체 실제 레이아웃](사진과화면_images/회로와레이아웃_layout-detail/jku-ihp-chip-top-full.png)](사진과화면_images/회로와레이아웃_layout-detail/jku-ihp-chip-top-full.png)
 
-출처: 삼성전자 뉴스룸, [2026-05-29 HBM4E 12단 샘플 공급 발표](https://news.samsung.com/kr/삼성전자-세계-최초-hbm4e-12단-샘플-출하). 최근 메모리 제품의 외형과 접속면을 보여 주는 실물 사진입니다. [SRAM](05-SRAM셀과메모리매크로_sram-design.md)·[DRAM](06-DRAM셀과주변회로_dram-design.md)·[HBM](11-HBM과3D집적설계_hbm-3d-integration.md) 본문에서 최근 제품 사진, 공개 레이아웃과 분석 화면을 각각 연결해 읽으실 수 있습니다.
-
-아래 본문에서는 실제 설계 파일의 화면과 제작 실물을 구분하여 살펴봅니다.
+출처: © 2026 Simon Dorrer and Harald Pretl, [JKU IHP 공개 칩의 원본 GDS](https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/layout/chip_top.gds.gz). 원본 설계 데이터를 KLayout으로 출력한 전체 다층 레이아웃입니다. 바깥의 패드 링, 왼쪽 아래 SRAM과 오른쪽 매크로, 내부 전원 배선을 살펴봅니다. [실제 회로와 레이아웃 읽기](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md)에서는 셀·주변회로·매크로를 확대하고 대응 회로도와 GDS 원본을 연결합니다.
 
 | 보고 싶은 대상 | 연결할 본문 |
 | --- | --- |
+| SRAM 셀·감지 증폭기·쓰기 구동기와 원본 GDS | [실제 회로와 레이아웃 읽기](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md) |
+| SRAM 전체 배열과 반복 셀 | [IHP 매크로의 전체·하위 셀](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md) |
+| 인버터 회로도와 실제 소자 배치, ADC 비교기 | [풀커스텀 회로·레이아웃 확대](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md) |
 | 회로도 편집기와 시뮬레이터 창 | [도구의 실제 작업 화면](03-설계도구와공급사_eda-tool-map.md), [회로와 파형](04-회로설계와Spectre_custom-circuit-simulation.md) |
-| 소자와 배선이 배치된 커스텀 레이아웃 | [공개 인버터 매크로](14-아날로그풀커스텀레이아웃_full-custom-layout.md) |
 | 디지털 배치·배선 화면 | [OpenROAD의 Ibex 예시](09-배치배선과전력설계_physical-implementation.md) |
 | 실제 DRC·LVS 검사 창 | [규칙 검사와 회로 비교](10-DRC와LVS및PEX_physical-verification.md) |
-| 칩 전체 레이아웃과 패키지 실물 | [Caravel과 NASA 사진](17-칩최상위검증과제조인계_chip-top-signoff.md) |
+| 최근 메모리 제품의 실물 | [SRAM과 SoC](05-SRAM셀과메모리매크로_sram-design.md), [DRAM](06-DRAM셀과주변회로_dram-design.md), [HBM](11-HBM과3D집적설계_hbm-3d-integration.md) |
 
-원본 파일·제작자·자료 판본과 이용 조건은 [사진과 화면의 출처](사진과화면_images/README.md)에 모았습니다.
+사진·화면의 원본은 [출처 목록](사진과화면_images/README.md), GDS와 회로 파일의 판본·이용 조건은 [레이아웃 원본 목록](사진과화면_images/회로와레이아웃_layout-detail/README.md)에 모았습니다.
 
 ## 읽는 순서
 
@@ -51,6 +51,7 @@ Linux와 공정 자료를 준비하는 단계부터 아날로그 풀커스텀 �
 | 15 | [아날로그와 RTL의 혼합신호 통합](15-아날로그와RTL의혼합신호통합_analog-digital-integration.md) | 기능·전기·물리 뷰, wrapper·모델 바인딩·샘플 유효·전압·클록 경계 |
 | 16 | [SoC 구조와 IP 통합](16-SoC구조와IP통합_soc-architecture-integration.md) | CPU·메모리·주소·연결망·DMA·부팅과 아날로그 매크로의 시스템 연결 |
 | 17 | [칩 최상위 검증과 제조 인계](17-칩최상위검증과제조인계_chip-top-signoff.md) | pad/bump·전력·ESD·패키지, 블록 경계와 칩 전체 검사·공개 통합 사례 |
+| 18 | [실제 회로와 GDS 레이아웃 읽기](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md) | SRAM 셀·주변회로·배열, 인버터·ADC·전체 칩의 실제 도형과 회로·원본 파일 |
 
 처음 시작하시면 0~4장에서 환경·소자·회로 해석을 익힌 뒤 아래 경로를 선택하시면 됩니다.
 
@@ -86,7 +87,7 @@ SoC에 해당하지 않는 단일 아날로그 IC나 디지털 ASIC도 최상위
 
 ## 자료와 확인 범위
 
-공급사·공정 제공기관·공개 프로젝트의 문서를 근거로 작성했습니다. 출처는 설명 가까이에 연결하며, 공식 코드·명령을 옮긴 부분과 직접 구성한 설명·계산을 구분합니다. 자료 확인일은 2026-10-26입니다. 상용 도구의 설치·라이선스 안내는 적법하게 받은 설치 매체와 기관별 설정을 사용하는 절차입니다. 이 문서 작성 과정에서 상용 도구로 DRAM·SRAM을 제작하거나 GDS를 제출한 실적을 새로 만든 것은 아닙니다.
+공급사·공정 제공기관·공개 프로젝트의 문서를 근거로 작성했습니다. 출처는 설명 가까이에 연결하며, 공식 코드·명령을 옮긴 부분과 직접 구성한 설명·계산을 구분합니다. 자료 확인일은 2026-10-27입니다. 상용 도구의 설치·라이선스 안내는 적법하게 받은 설치 매체와 기관별 설정을 사용하는 절차입니다. 이 문서 작성 과정에서 상용 도구로 DRAM·SRAM을 제작하거나 GDS를 제출한 실적을 새로 만든 것은 아닙니다.
 
 ## English
 

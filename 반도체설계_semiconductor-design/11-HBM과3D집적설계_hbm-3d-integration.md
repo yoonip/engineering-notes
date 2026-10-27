@@ -10,6 +10,12 @@ HBM은 여러 DRAM 다이를 수직으로 연결하여 넓은 데이터 경로�
 
 직접 작성한 구조 개념도입니다. 층수·두께·범프 수·배선 비율은 설명을 위해 축약했습니다. 일반적인 인터포저 기반 배치의 예이며, 특정 제품의 설계도는 아닙니다. HBM 내부가 3D 적층이어도 호스트와 HBM을 옆으로 배치한 조립체는 2.5D로 분류할 수 있습니다. [TSMC 3DFabric의 HPC 설명과 공식 구조 그림](https://www.tsmc.com/english/dedicatedFoundry/technology/platform_HPC_tech_WLSI)은 SoIC의 다이 적층과 CoWoS의 인터포저 통합을 나누어 보여 줍니다.
 
+## 범프 배열과 실제 인터포저 배선
+
+![HBM 연구 논문에서 공개한 인터포저 층 구조와 범프 간 배선](사진과화면_images/회로와레이아웃_layout-detail/hbm-2025-fig3.png)
+
+Wen-Xue Tang 등의 [2025년 HBM 인터포저 연결 연구](https://www.mdpi.com/2072-666X/16/8/896), Figure 3입니다. © 2025 저자들, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). 위쪽 단면과 아래쪽 금속 배선 설계를 함께 봅니다. Metal1·Metal3 신호 경로와 Metal2 접지층이 구분됩니다. 이는 논문의 연구 배선 구조이며 상용 HBM4 코어 다이 전체의 마스크는 아닙니다. [회로·레이아웃 본문](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md)에서 범프·배선·층의 관계를 더 자세히 읽습니다.
+
 ## 최근 HBM 제품과 실제 사용 형태
 
 2026-10-26에 확인한 최근 공개 자료입니다. 제품·샘플·전시품은 각 자료의 발표 상태에 따라 구분합니다.

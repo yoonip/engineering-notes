@@ -6,6 +6,12 @@ SRAM은 전원이 공급되는 동안 되먹임 회로로 값을 유지하는 �
 
 이 글은 일반적인 단일 포트 6T 셀을 기준으로 원리와 확인 방법을 설명합니다. 제품별 셀 구조, 소자 치수나 assist 전압을 추정하지 않습니다. 공개 문서에 근거한 설명과 직접 구성한 계산 예이며 실제 SRAM을 생성·실행·측정한 결과는 아닙니다.
 
+## 실제 셀에서 전체 배열까지
+
+[![OpenRAM 6T SRAM 셀의 소자와 배선](사진과화면_images/회로와레이아웃_layout-detail/openram-cell_1rw-all-layers.png)](사진과화면_images/회로와레이아웃_layout-detail/openram-cell_1rw-all-layers.png)
+
+OpenRAM FreePDK45의 원본 GDS를 확대한 그림입니다. `Q`·`Q_bar` 저장 노드, `wl`과 `bl`·`br`을 실제 배선에서 따라갑니다. [회로와 레이아웃 읽기](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md)에는 금속층을 숨긴 같은 셀, 감지 증폭기·쓰기 구동기, IHP 공식 SRAM의 전체 배열·하위 셀을 함께 실었습니다. 대응 SPICE·CDL과 GDS도 내려받을 수 있습니다. [원본·제작자·이용 조건](사진과화면_images/회로와레이아웃_layout-detail/README.md)
+
 ## 최근 SoC의 실물에서 공개 SRAM 레이아웃으로
 
 ![Intel CES 2026 자료의 Core Ultra Series 3 웨이퍼 실물](사진과화면_images/메모리_memory/intel-ces2026-panther-lake-wafer-closeup.jpg)

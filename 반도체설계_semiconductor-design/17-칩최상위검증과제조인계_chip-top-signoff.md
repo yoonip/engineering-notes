@@ -10,6 +10,12 @@
 
 직접 작성한 데이터 인계 개념도입니다. 위아래 화살표는 자료의 연결을 나타냅니다. 실제 프로젝트에서는 패드·전력·패키지 조건을 초기부터 함께 정하고 검증 결과에 따라 블록 설계로 돌아갑니다.
 
+## 실제 칩 전체 레이아웃
+
+[![JKU IHP 전체 칩의 SRAM·매크로·패드 링과 전원망](사진과화면_images/회로와레이아웃_layout-detail/jku-ihp-chip-top-full.png)](사진과화면_images/회로와레이아웃_layout-detail/jku-ihp-chip-top-full.png)
+
+© 2026 Simon Dorrer and Harald Pretl의 [공개 chip_top GDS](https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/layout/chip_top.gds.gz)를 전체 계층으로 출력했습니다. 큰 SRAM과 작은 매크로들을 외곽 패드·전원망에 연결한 실제 배치입니다. [확대 설명과 GDS 원본](18-실제회로와레이아웃읽기_circuit-layout-walkthrough.md)에서 하위 셀까지 직접 열어 볼 수 있습니다. 이 그림은 배치 데이터를 보여 주며, 원저자의 최상위 검증 상태는 아래 공개 통합 사례에서 별도로 설명합니다.
+
 ## 논리 top과 물리 chip top
 
 논리 top은 IP 사이의 데이터·제어·주소·클록·리셋 연결을 설명합니다. 물리적인 칩 경계에는 공정에 맞는 I/O 셀·전원 셀·pad/bump·보호 구조 등이 더해집니다. 시뮬레이션이나 FPGA용 wrapper가 실제 ASIC 패드와 아날로그 전원 구조를 모두 포함한다고 가정하지 않습니다.

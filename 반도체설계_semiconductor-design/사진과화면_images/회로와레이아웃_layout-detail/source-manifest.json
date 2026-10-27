@@ -1,0 +1,585 @@
+{
+  "checked_on": "2026-10-27",
+  "files": [
+    {
+      "file": "원본_sources/openram/cell_1rw.gds",
+      "bytes": 18132,
+      "sha256": "7bd6076b0c13eb0e92894a90d4530a9f9bd4eb52966003dbe468f74e86146bb4",
+      "source_url": "https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/technology/freepdk45/gds_lib/cell_1rw.gds",
+      "commit": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a",
+      "license": "BSD-3-Clause",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/openram/cell_1rw.sp",
+      "bytes": 359,
+      "sha256": "77c530da6a8f570b4b20a9628d733b3bf7b1f99b51e89212b8a26340f81d6ff0",
+      "source_url": "https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/technology/freepdk45/sp_lib/cell_1rw.sp",
+      "commit": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a",
+      "license": "BSD-3-Clause",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/openram/sense_amp.gds",
+      "bytes": 17510,
+      "sha256": "ebcc477d334a36aab42b63b39c88b69dfd102fa143591d7789184492dd869634",
+      "source_url": "https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/technology/freepdk45/gds_lib/sense_amp.gds",
+      "commit": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a",
+      "license": "BSD-3-Clause",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/openram/sense_amp.sp",
+      "bytes": 607,
+      "sha256": "aa8c8a52cd50d1be8021feb86d1b9a3b88b0b0d800f68ea7283b7a26b2c46312",
+      "source_url": "https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/technology/freepdk45/sp_lib/sense_amp.sp",
+      "commit": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a",
+      "license": "BSD-3-Clause",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/openram/write_driver.gds",
+      "bytes": 20332,
+      "sha256": "946fb2ea978744a6362033b967076c810e0cbf73c2f3d0a89b98745c0eb1682c",
+      "source_url": "https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/technology/freepdk45/gds_lib/write_driver.gds",
+      "commit": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a",
+      "license": "BSD-3-Clause",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/openram/write_driver.sp",
+      "bytes": 866,
+      "sha256": "308704a7da720e1840e084610399cb845624c5418e2f9a96163801eda5dab025",
+      "source_url": "https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/technology/freepdk45/sp_lib/write_driver.sp",
+      "commit": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a",
+      "license": "BSD-3-Clause",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/openram/layers.map",
+      "bytes": 568,
+      "sha256": "879df782e505613d50bfce768108389988d20499ca06481f6c1f55bf54dc81e7",
+      "source_url": "https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/technology/freepdk45/layers.map",
+      "commit": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a",
+      "license": "BSD-3-Clause",
+      "kind": "unchanged upstream layer map"
+    },
+    {
+      "file": "이용조건_licenses/OpenRAM-BSD-3-Clause.txt",
+      "bytes": 1681,
+      "sha256": "c69f58c01ba06780d2f90ada5d199b61482724723f1ee2f036e19fc14db1f3f9",
+      "source_url": "https://github.com/VLSIDA/OpenRAM/blob/b2b069ce119d1488cbe6883b2240bceb5c7ce29a/LICENSE",
+      "commit": "b2b069ce119d1488cbe6883b2240bceb5c7ce29a"
+    },
+    {
+      "file": "원본_sources/ihp/sram1024x32.gds",
+      "bytes": 512468,
+      "sha256": "4d1178811e3b83a8f6fc85f017fdd8d9b43629f785929ad60dbbaa2a763b96b1",
+      "source_url": "https://github.com/IHP-GmbH/IHP-Open-PDK/blob/5e6d592e4002946a4616f798c357f0f3c06cf3b6/ihp-sg13g2/libs.ref/sg13g2_sram/gds/RM_IHPSG13_1P_1024x32_c2_bm_bist.gds",
+      "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+      "license": "Apache-2.0",
+      "git_blob_sha1": "e316ecd5a329f1032fc2f69df76f0793e6fd89bb",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/ihp/sram1024x32.cdl",
+      "bytes": 588268,
+      "sha256": "58561ee0e35e4b77191318aa5ac7924e64550d9ae797c9b6d3f35ff25b540302",
+      "source_url": "https://github.com/IHP-GmbH/IHP-Open-PDK/blob/5e6d592e4002946a4616f798c357f0f3c06cf3b6/ihp-sg13g2/libs.ref/sg13g2_sram/cdl/RM_IHPSG13_1P_1024x32_c2_bm_bist.cdl",
+      "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+      "license": "Apache-2.0",
+      "git_blob_sha1": "b35e6fad6d069415cb52e25acb99a2ced464a142",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/ihp/sg13g2.lyp",
+      "bytes": 224483,
+      "sha256": "c9fd698498f3f798c2d3dc40f1aa0e0fcf646bd0a6e9e7522a008200487d5222",
+      "source_url": "https://github.com/IHP-GmbH/IHP-Open-PDK/blob/5e6d592e4002946a4616f798c357f0f3c06cf3b6/ihp-sg13g2/libs.tech/klayout/tech/sg13g2.lyp",
+      "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+      "license": "Apache-2.0",
+      "git_blob_sha1": "029c7c8767b7761312f90fd1fd76de3ab83b7c0c",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-ihp/inverter.gds",
+      "bytes": 142350,
+      "sha256": "1b3c194f3d54d769a7c5f986b7892795be3e57712c68bc488ca5f52e6e27bc04",
+      "source_url": "https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/macros/inverter/layout/inverter.gds",
+      "commit": "b1d4a98d0ec8ad71c57f8ec4c33344340f911dad",
+      "license": "Apache-2.0 WITH SHL-2.1",
+      "git_blob_sha1": "c59a68153c79bf69b6761aaa8ac4b2af6fb2eb23",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-ihp/inverter.sch",
+      "bytes": 2271,
+      "sha256": "ae1da262091a934cd1c56e84d8edfea6c4fd9707d2cab1a379c3dc9ed55f99dd",
+      "source_url": "https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/macros/inverter/schematic/xschem/inverter.sch",
+      "commit": "b1d4a98d0ec8ad71c57f8ec4c33344340f911dad",
+      "license": "Apache-2.0 WITH SHL-2.1",
+      "git_blob_sha1": "f96f9bb64a3681b2196373c15790f75a85b0ce36",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-ihp/inverter.cdl",
+      "bytes": 403,
+      "sha256": "e75aaf17637c455c360f91ea3ef65fc3e116f253a2e8d702bf68ce01dd154872",
+      "source_url": "https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/macros/inverter/netlist/schematic/inverter_klayout.cdl",
+      "commit": "b1d4a98d0ec8ad71c57f8ec4c33344340f911dad",
+      "license": "Apache-2.0 WITH SHL-2.1",
+      "git_blob_sha1": "329ce2a0a81f0c8d1113e0fb3677415aecd7eac2",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-ihp/chip_top.gds.gz",
+      "bytes": 8600850,
+      "sha256": "75b2fca950579128a1fbf6a513de4eac225e483efdd5821a2642fe9985c8ce1e",
+      "source_url": "https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/layout/chip_top.gds.gz",
+      "commit": "b1d4a98d0ec8ad71c57f8ec4c33344340f911dad",
+      "license": "Apache-2.0 WITH SHL-2.1",
+      "git_blob_sha1": "b24ffbd913e8dd87194788926fd7159d9783f9b1",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-ihp/inverter-schematic.svg",
+      "bytes": 21762,
+      "sha256": "4825a270b6fe3d235fec311773fae638e8f40ec2ff8b2be36bd709cfda806588",
+      "source_url": "https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/tutorial/fig/inverter_top/inverter_schematic.svg",
+      "commit": "b1d4a98d0ec8ad71c57f8ec4c33344340f911dad",
+      "license": "Apache-2.0 WITH SHL-2.1",
+      "git_blob_sha1": "f9ba64d8b5e7365788b3fb4d4ef8777320e1bc75",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-sar/adc_top.gds.gz",
+      "bytes": 4514847,
+      "sha256": "7525ed3f5b2831b20edc1cc7d34d8fd2ebe857b507d4797b2ce027de5b9b2b8b",
+      "source_url": "https://github.com/iic-jku/SKY130_SAR-ADC1/blob/3cec5823e64cf1ea5c625615ad71f2a505cf27bc/gds/adc_top.gds.gz",
+      "commit": "3cec5823e64cf1ea5c625615ad71f2a505cf27bc",
+      "license": "Apache-2.0",
+      "git_blob_sha1": "32195d1a5ec46ba8564e582394a4091d4cb38809",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-sar/adc_comp_latch.gds.gz",
+      "bytes": 46728,
+      "sha256": "7129d12e6f0e7fa77609cdb6f4ce9c61656c23df3815c5b670bc11caac415bea",
+      "source_url": "https://github.com/iic-jku/SKY130_SAR-ADC1/blob/3cec5823e64cf1ea5c625615ad71f2a505cf27bc/gds/adc_comp_latch.gds.gz",
+      "commit": "3cec5823e64cf1ea5c625615ad71f2a505cf27bc",
+      "license": "Apache-2.0",
+      "git_blob_sha1": "0fadfdd09a0fbe0a5895343bc287ce3297d0eb06",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-sar/adc_comp_latch.sch",
+      "bytes": 3570,
+      "sha256": "efee0168e8fe3195320aa3b476365da179ddc27580a152749bbef740aa86695a",
+      "source_url": "https://github.com/iic-jku/SKY130_SAR-ADC1/blob/3cec5823e64cf1ea5c625615ad71f2a505cf27bc/xschem/adc_comp_latch.sch",
+      "commit": "3cec5823e64cf1ea5c625615ad71f2a505cf27bc",
+      "license": "Apache-2.0",
+      "git_blob_sha1": "1e7456ba9cde28bc07989985a58bccdf16f25a15",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-sar/adc_comp_circuit.sch",
+      "bytes": 18135,
+      "sha256": "17a5de0c1f8f948f577229e455bcb7e2a7e88b0a5926533ef4149254023b66d2",
+      "source_url": "https://github.com/iic-jku/SKY130_SAR-ADC1/blob/3cec5823e64cf1ea5c625615ad71f2a505cf27bc/xschem/adc_comp_circuit.sch",
+      "commit": "3cec5823e64cf1ea5c625615ad71f2a505cf27bc",
+      "license": "Apache-2.0",
+      "git_blob_sha1": "17de09f1383cb062ecaac2e09f26347e4a23e466",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-sar/adc_comp_latch.sch.spice",
+      "bytes": 12594,
+      "sha256": "4b04ae03630f5fb88fd61426e7b949f9aa54cb58939bee2b33c2f65a1ebe7119",
+      "source_url": "https://github.com/iic-jku/SKY130_SAR-ADC1/blob/3cec5823e64cf1ea5c625615ad71f2a505cf27bc/spice/adc_comp_latch.sch.spice",
+      "commit": "3cec5823e64cf1ea5c625615ad71f2a505cf27bc",
+      "license": "Apache-2.0",
+      "git_blob_sha1": "4df0cd11e3924460e2e35a23347205547fbdea25",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "원본_sources/jku-sar/adc_top.sch",
+      "bytes": 13856,
+      "sha256": "8f890aee98df6f9b38a3ff2d6be3f1f0585492397f5ec7126cf89d0de02dfecb",
+      "source_url": "https://github.com/iic-jku/SKY130_SAR-ADC1/blob/3cec5823e64cf1ea5c625615ad71f2a505cf27bc/xschem/adc_top.sch",
+      "commit": "3cec5823e64cf1ea5c625615ad71f2a505cf27bc",
+      "license": "Apache-2.0",
+      "git_blob_sha1": "27522aea276620f1730de2b60137905366714905",
+      "kind": "unchanged upstream file"
+    },
+    {
+      "file": "이용조건_licenses/jku-ihp-LICENSE",
+      "bytes": 4626,
+      "sha256": "720007a3bce4dd82546b9327ab868b198c0b07a68750a19bd0d93ae1b9de844b",
+      "source_url": "https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/LICENSE",
+      "kind": "unchanged upstream license or attribution"
+    },
+    {
+      "file": "이용조건_licenses/jku-ihp-Apache-2.0.txt",
+      "bytes": 10280,
+      "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+      "source_url": "https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/LICENSES/Apache-2.0.txt",
+      "kind": "unchanged upstream license or attribution"
+    },
+    {
+      "file": "이용조건_licenses/jku-ihp-SHL-2.1.txt",
+      "bytes": 4484,
+      "sha256": "6fa7fc99563ae8b86d910c33820be9af08052b7c527bd61d5661b0c2cbd623e9",
+      "source_url": "https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/LICENSES/SHL-2.1.txt",
+      "kind": "unchanged upstream license or attribution"
+    },
+    {
+      "file": "이용조건_licenses/jku-ihp-REUSE.toml",
+      "bytes": 4904,
+      "sha256": "547716a2cc5f66546ebbbf316f838086d7084fd6403424877d7ff371c1b89b05",
+      "source_url": "https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/blob/b1d4a98d0ec8ad71c57f8ec4c33344340f911dad/REUSE.toml",
+      "kind": "unchanged upstream license or attribution"
+    },
+    {
+      "file": "이용조건_licenses/ihp-pdk-LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_url": "https://github.com/IHP-GmbH/IHP-Open-PDK/blob/5e6d592e4002946a4616f798c357f0f3c06cf3b6/LICENSE",
+      "kind": "unchanged upstream license or attribution"
+    },
+    {
+      "file": "이용조건_licenses/jku-sar-LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_url": "https://github.com/iic-jku/SKY130_SAR-ADC1/blob/3cec5823e64cf1ea5c625615ad71f2a505cf27bc/LICENSE",
+      "kind": "unchanged upstream license or attribution"
+    },
+    {
+      "file": "이용조건_licenses/skywater-pdk-libs-sky130_fd_pr-LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source_url": "https://github.com/google/skywater-pdk-libs-sky130_fd_pr/blob/f62031a1be9aefe902d6d54cddd6f59b57627436/LICENSE",
+      "kind": "unchanged upstream license or attribution"
+    },
+    {
+      "file": "이용조건_licenses/skywater-pdk-libs-sky130_fd_sc_hd-LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source_url": "https://github.com/google/skywater-pdk-libs-sky130_fd_sc_hd/blob/ac7fb61f06e6470b94e8afdf7c25268f62fbd7b1/LICENSE",
+      "kind": "unchanged upstream license or attribution"
+    },
+    {
+      "file": "원본_sources/보기설정_display/freepdk45-reading.lyp",
+      "bytes": 3226,
+      "sha256": "f8609fd3ab3679308bca688cd6f7fa3410b2ec69df3f7b09443e1fdd7973fb7f",
+      "kind": "Layer display colors and patterns prepared for these images; no layout geometry."
+    },
+    {
+      "file": "원본_sources/보기설정_display/sky130-reading.lyp",
+      "bytes": 12032,
+      "sha256": "cb4d81ecbd2f7e955abec0129134cf8a88d36a926514e1d78d6131c7433ff88e",
+      "kind": "Layer display colors and patterns prepared for these images; no layout geometry."
+    },
+    {
+      "file": "openram-cell_1rw-all-layers.png",
+      "bytes": 167068,
+      "sha256": "e8c05e4544affe3c983aa83c497a54772553e33e372e2cec3ff63a452ca76332",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/openram/cell_1rw.gds"
+    },
+    {
+      "file": "openram-cell_1rw-devices.png",
+      "bytes": 49691,
+      "sha256": "a8c59556ea3863bc5af9f7920f1d9e42d172ef8b560d945c9194afdc46961aea",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/openram/cell_1rw.gds"
+    },
+    {
+      "file": "openram-sense_amp-all-layers.png",
+      "bytes": 75955,
+      "sha256": "f6b15e489dfd7927eb190ccb160113b2893ae60cfb66bde2ac5558d53411019b",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/openram/sense_amp.gds"
+    },
+    {
+      "file": "openram-write_driver-all-layers.png",
+      "bytes": 91322,
+      "sha256": "eefb3a839b10ae5bbc64ae789a8b309ab3f2df890bee9ed638302463729deca6",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/openram/write_driver.gds"
+    },
+    {
+      "file": "ihp-sram1024x32-full.png",
+      "bytes": 4441437,
+      "sha256": "cb66f3a8b142ce07ba1fb3c0d8b889a8707ba72bf4561def10908b3647b3903e",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/ihp/sram1024x32.gds"
+    },
+    {
+      "file": "ihp-sram-bitkit-cell.png",
+      "bytes": 350533,
+      "sha256": "56c0f7cec5402fb6ede6c08077c4c2f51ce27a1605d1a0d1712ce7decb46c9bc",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/ihp/sram1024x32.gds"
+    },
+    {
+      "file": "ihp-sram-16x2-array.png",
+      "bytes": 1076002,
+      "sha256": "1591f4b133848b8368e59c1bf8ad3af084d3bbbce3e2af5f19e805fc03984554",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/ihp/sram1024x32.gds"
+    },
+    {
+      "file": "jku-ihp-chip-top-full.png",
+      "bytes": 2690436,
+      "sha256": "a4dccd3a789d1bf02c62309765370967fa451b63193edb145026f316429cfd8e",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/jku-ihp/chip_top.gds.gz"
+    },
+    {
+      "file": "jku-ihp-inverter-cell.png",
+      "bytes": 595980,
+      "sha256": "0d8eb39d9fb940c038e4a47c93660695708129347846b08af9ee99d34497fe89",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/jku-ihp/inverter.gds"
+    },
+    {
+      "file": "jku-sar-comparator-detail.png",
+      "bytes": 434252,
+      "sha256": "3204b4c8f1b74a2f3f793cbcad122eb16551597c9bc7b772fdacf056f87c3557",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/jku-sar/adc_comp_latch.gds.gz"
+    },
+    {
+      "file": "jku-sar-adc-full.png",
+      "bytes": 3271023,
+      "sha256": "a5751e4a8a1534da5e514322ca9877d3f503e1bfcc2b6a12196bdd2679e62d1a",
+      "kind": "PNG exported from original GDS in KLayout 0.30.12",
+      "source_file": "원본_sources/jku-sar/adc_top.gds.gz"
+    },
+    {
+      "file": "hbm-2025-fig3.png",
+      "bytes": 935533,
+      "sha256": "4eef369ef4920f7189cca665eea03930732b9bbc0fd45ff14fc1506789e60a65",
+      "source_url": "https://mdpi-res.com/micromachines/micromachines-16-00896/article_deploy/html/images/micromachines-16-00896-g003.png",
+      "article_url": "https://www.mdpi.com/2072-666X/16/8/896",
+      "figure": "Figure 3(a)-(b)",
+      "license": "CC-BY-4.0",
+      "kind": "unchanged publisher PNG"
+    },
+    {
+      "file": "edram-2023-fig15.png",
+      "bytes": 5329471,
+      "sha256": "6431d82665992acffae7832dc835fecc2896e89f1ae6c64067d247ec246ba00d",
+      "source_url": "https://mdpi-res.com/sensors/sensors-23-09329/article_deploy/html/images/sensors-23-09329-g015.png",
+      "article_url": "https://www.mdpi.com/1424-8220/23/23/9329",
+      "figure": "Figure 15(a)-(c)",
+      "license": "CC-BY-4.0",
+      "kind": "unchanged publisher PNG"
+    },
+    {
+      "file": "edram-2023-fig7.png",
+      "bytes": 887015,
+      "sha256": "6c8f72dcb2243b6350c853ce50baff486a164c295a23520e4327c66b541d85c0",
+      "source_url": "https://mdpi-res.com/sensors/sensors-23-09329/article_deploy/html/images/sensors-23-09329-g007.png",
+      "article_url": "https://www.mdpi.com/1424-8220/23/23/9329",
+      "figure": "Figure 7",
+      "license": "CC-BY-4.0",
+      "kind": "unchanged publisher PNG"
+    },
+    {
+      "file": "edram-2023-fig14.png",
+      "bytes": 7091,
+      "sha256": "05423ce5dcb523356f4321c1f32e90597626c2aa69e410afe926849ae89e6555",
+      "source_url": "https://mdpi-res.com/sensors/sensors-23-09329/article_deploy/html/images/sensors-23-09329-g014.png",
+      "article_url": "https://www.mdpi.com/1424-8220/23/23/9329",
+      "figure": "Figure 14",
+      "license": "CC-BY-4.0",
+      "kind": "unchanged publisher PNG"
+    }
+  ],
+  "rendering": {
+    "renderer": "KLayout 0.30.12",
+    "operation": "Read existing GDS and export PNG; no geometry generation, placement/routing, DRC/LVS or simulation.",
+    "renders": [
+      {
+        "image": "openram-cell_1rw-all-layers.png",
+        "source_sha256": "7bd6076b0c13eb0e92894a90d4530a9f9bd4eb52966003dbe468f74e86146bb4",
+        "selected_cell": "cell_1rw",
+        "dbu_um": 0.0005,
+        "bbox_um": "(-0.095,-0.1;0.8,1.465)",
+        "width": 1600,
+        "height": 2600,
+        "visible_layer_numbers": "all nonempty source layers",
+        "view_box_um": null,
+        "text_labels_visible": true,
+        "sha256": "e8c05e4544affe3c983aa83c497a54772553e33e372e2cec3ff63a452ca76332",
+        "source_file": "원본_sources/openram/cell_1rw.gds",
+        "style_file": "원본_sources/보기설정_display/freepdk45-reading.lyp"
+      },
+      {
+        "image": "openram-cell_1rw-devices.png",
+        "source_sha256": "7bd6076b0c13eb0e92894a90d4530a9f9bd4eb52966003dbe468f74e86146bb4",
+        "selected_cell": "cell_1rw",
+        "dbu_um": 0.0005,
+        "bbox_um": "(-0.095,-0.1;0.8,1.465)",
+        "width": 1600,
+        "height": 2600,
+        "visible_layer_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          9,
+          10
+        ],
+        "view_box_um": null,
+        "text_labels_visible": true,
+        "sha256": "a8c59556ea3863bc5af9f7920f1d9e42d172ef8b560d945c9194afdc46961aea",
+        "source_file": "원본_sources/openram/cell_1rw.gds",
+        "style_file": "원본_sources/보기설정_display/freepdk45-reading.lyp"
+      },
+      {
+        "image": "openram-sense_amp-all-layers.png",
+        "source_sha256": "ebcc477d334a36aab42b63b39c88b69dfd102fa143591d7789184492dd869634",
+        "selected_cell": "sense_amp",
+        "dbu_um": 0.000499999999999997,
+        "bbox_um": "(-0.035,0;0.74,6.01)",
+        "width": 1000,
+        "height": 2600,
+        "visible_layer_numbers": "all nonempty source layers",
+        "view_box_um": null,
+        "text_labels_visible": true,
+        "sha256": "f6b15e489dfd7927eb190ccb160113b2893ae60cfb66bde2ac5558d53411019b",
+        "source_file": "원본_sources/openram/sense_amp.gds",
+        "style_file": "원본_sources/보기설정_display/freepdk45-reading.lyp"
+      },
+      {
+        "image": "openram-write_driver-all-layers.png",
+        "source_sha256": "946fb2ea978744a6362033b967076c810e0cbf73c2f3d0a89b98745c0eb1682c",
+        "selected_cell": "write_driver",
+        "dbu_um": 0.000499999999999997,
+        "bbox_um": "(-0.1,0;0.74,4.175)",
+        "width": 1000,
+        "height": 2600,
+        "visible_layer_numbers": "all nonempty source layers",
+        "view_box_um": null,
+        "text_labels_visible": true,
+        "sha256": "eefb3a839b10ae5bbc64ae789a8b309ab3f2df890bee9ed638302463729deca6",
+        "source_file": "원본_sources/openram/write_driver.gds",
+        "style_file": "원본_sources/보기설정_display/freepdk45-reading.lyp"
+      },
+      {
+        "image": "ihp-sram1024x32-full.png",
+        "source_sha256": "4d1178811e3b83a8f6fc85f017fdd8d9b43629f785929ad60dbbaa2a763b96b1",
+        "selected_cell": "RM_IHPSG13_1P_1024x32_c2_bm_bist",
+        "dbu_um": 0.001,
+        "bbox_um": "(0,-0.225;416.64,336.46)",
+        "width": 4000,
+        "height": 3300,
+        "visible_layer_numbers": "all nonempty source layers",
+        "view_box_um": null,
+        "text_labels_visible": true,
+        "sha256": "cb66f3a8b142ce07ba1fb3c0d8b889a8707ba72bf4561def10908b3647b3903e",
+        "source_file": "원본_sources/ihp/sram1024x32.gds",
+        "style_file": "원본_sources/ihp/sg13g2.lyp"
+      },
+      {
+        "image": "ihp-sram-bitkit-cell.png",
+        "source_sha256": "4d1178811e3b83a8f6fc85f017fdd8d9b43629f785929ad60dbbaa2a763b96b1",
+        "selected_cell": "RM_IHPSG13_1P_BITKIT_CELL",
+        "dbu_um": 0.001,
+        "bbox_um": "(-1.555,-0.995;1.555,0.995)",
+        "width": 2400,
+        "height": 1700,
+        "visible_layer_numbers": "all nonempty source layers",
+        "view_box_um": null,
+        "text_labels_visible": false,
+        "sha256": "56c0f7cec5402fb6ede6c08077c4c2f51ce27a1605d1a0d1712ce7decb46c9bc",
+        "source_file": "원본_sources/ihp/sram1024x32.gds",
+        "style_file": "원본_sources/ihp/sg13g2.lyp"
+      },
+      {
+        "image": "ihp-sram-16x2-array.png",
+        "source_sha256": "4d1178811e3b83a8f6fc85f017fdd8d9b43629f785929ad60dbbaa2a763b96b1",
+        "selected_cell": "RM_IHPSG13_1P_BITKIT_16x2_SRAM",
+        "dbu_um": 0.001,
+        "bbox_um": "(-0.15,-1.435;5.77,17.485)",
+        "width": 1400,
+        "height": 3100,
+        "visible_layer_numbers": "all nonempty source layers",
+        "view_box_um": null,
+        "text_labels_visible": false,
+        "sha256": "1591f4b133848b8368e59c1bf8ad3af084d3bbbce3e2af5f19e805fc03984554",
+        "source_file": "원본_sources/ihp/sram1024x32.gds",
+        "style_file": "원본_sources/ihp/sg13g2.lyp"
+      },
+      {
+        "image": "jku-ihp-chip-top-full.png",
+        "source_sha256": "75b2fca950579128a1fbf6a513de4eac225e483efdd5821a2642fe9985c8ce1e",
+        "selected_cell": "chip_top",
+        "dbu_um": 0.001,
+        "bbox_um": "(0,0;1600,1600)",
+        "width": 4000,
+        "height": 4000,
+        "visible_layer_numbers": "all nonempty source layers",
+        "view_box_um": null,
+        "text_labels_visible": true,
+        "sha256": "a4dccd3a789d1bf02c62309765370967fa451b63193edb145026f316429cfd8e",
+        "source_file": "원본_sources/jku-ihp/chip_top.gds.gz",
+        "style_file": "원본_sources/ihp/sg13g2.lyp"
+      },
+      {
+        "image": "jku-ihp-inverter-cell.png",
+        "source_sha256": "1b3c194f3d54d769a7c5f986b7892795be3e57712c68bc488ca5f52e6e27bc04",
+        "selected_cell": "inverter",
+        "dbu_um": 0.001,
+        "bbox_um": "(0,0;33.38,15.28)",
+        "width": 2800,
+        "height": 1400,
+        "visible_layer_numbers": "all nonempty source layers",
+        "view_box_um": null,
+        "text_labels_visible": true,
+        "sha256": "0d8eb39d9fb940c038e4a47c93660695708129347846b08af9ee99d34497fe89",
+        "source_file": "원본_sources/jku-ihp/inverter.gds",
+        "style_file": "원본_sources/ihp/sg13g2.lyp"
+      },
+      {
+        "image": "jku-sar-comparator-detail.png",
+        "source_sha256": "7129d12e6f0e7fa77609cdb6f4ce9c61656c23df3815c5b670bc11caac415bea",
+        "selected_cell": "adc_comp_latch",
+        "dbu_um": 0.001,
+        "bbox_um": "(0,0;42,129)",
+        "width": 2400,
+        "height": 2400,
+        "visible_layer_numbers": "all nonempty source layers",
+        "view_box_um": [
+          10,
+          48,
+          42,
+          80
+        ],
+        "text_labels_visible": false,
+        "sha256": "3204b4c8f1b74a2f3f793cbcad122eb16551597c9bc7b772fdacf056f87c3557",
+        "source_file": "원본_sources/jku-sar/adc_comp_latch.gds.gz",
+        "style_file": "원본_sources/보기설정_display/sky130-reading.lyp"
+      },
+      {
+        "image": "jku-sar-adc-full.png",
+        "source_sha256": "7525ed3f5b2831b20edc1cc7d34d8fd2ebe857b507d4797b2ce027de5b9b2b8b",
+        "selected_cell": "adc_top",
+        "dbu_um": 0.001,
+        "bbox_um": "(-5.38,-0.02;428.12,403)",
+        "width": 3600,
+        "height": 3400,
+        "visible_layer_numbers": "all nonempty source layers",
+        "view_box_um": null,
+        "text_labels_visible": false,
+        "sha256": "a5751e4a8a1534da5e514322ca9877d3f503e1bfcc2b6a12196bdd2679e62d1a",
+        "source_file": "원본_sources/jku-sar/adc_top.gds.gz",
+        "style_file": "원본_sources/보기설정_display/sky130-reading.lyp"
+      }
+    ]
+  }
+}
