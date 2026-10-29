@@ -28,7 +28,7 @@
 
 같은 보고서가 여러 주제에 해당하면 원문 안내는 한 곳에 두고 다른 목차에서 연결하는 편이 읽기 쉽습니다. 월간 보고서가 없는 날에 새 글을 만들 필요도 없습니다. 확인 주기와 발간 주기를 나누어, 실제 새 자료가 나왔을 때 목록에 반영할 수 있습니다.
 
-현재 새 소식이 정기 반영되는 분류는 [뉴스](../뉴스_news/README.md), [모델 발표](../AI모델동향_ai-model-updates/새소식_updates/README.md), [보고서 소식](../미래경제보고서_future-economic-reports/새소식_updates/README.md)입니다. 위의 다른 분류는 원자료를 연결하기 좋은 분야로 정리했으며 새 자동 실행을 설치한 목록은 아닙니다.
+정기 반영되는 자료는 [뉴스](../뉴스_news/README.md), [모델 발표](../AI모델동향_ai-model-updates/새소식_updates/README.md), [보고서 소식](../미래경제보고서_future-economic-reports/새소식_updates/README.md)에 있습니다. [기술 동향](../기술동향_technology/새자료_inbox/README.md)·[도구와 환경](../도구와환경_tools/새자료_inbox/README.md)·[산업 기술](../산업별전자와컴퓨팅_industry-systems/새자료_inbox/README.md)·[제품기술](../제품기술분석_product-technology/새자료_inbox/README.md)·[논문](../논문해설_papers/새자료_inbox/README.md)·[학습 자료](../학습사이트와채널_learning-resources/새자료_inbox/README.md)는 각각 새 자료 하위 폴더에서 공식 소개와 원문을 모읍니다. 기존 해설과 검증 기록은 별도로 유지합니다.
 
 원문 전체나 그림·PDF를 재출간하기보다 짧은 공식 소개와 원문 링크를 연결합니다. 직접 작성한 분석·검증 기록과 발행 기관의 설명은 작성 주체와 근거가 다르므로 출처를 함께 남깁니다.
 
