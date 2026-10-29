@@ -49,6 +49,7 @@
     "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
     "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
     "products:https://blog.st.com/rust-mems-drivers": "products:https://blog.st.com/rust-mems-drivers",
+    "products:https://blog.st.com/snapdragon-wear-elite": "products:https://blog.st.com/snapdragon-wear-elite",
     "products:https://blog.st.com/stspin9p": "products:https://blog.st.com/stspin9p",
     "products:https://blog.st.com/touchgfx": "products:https://blog.st.com/touchgfx",
     "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction",
@@ -57,6 +58,7 @@
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
     "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
+    "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133",
@@ -703,6 +705,46 @@
           "title": "RTX Spark의 신경 렌더링과 게임 AI 개발 / NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
           "update": false,
           "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+        }
+      ],
+      "2026-10-30": [
+        {
+          "acquired_at": "2026-10-29T17:03:39.153360+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-29T15:42:23+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-10-29T17:02:41.996428+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/snapdragon-wear-elite",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "The 1st ST applications on the Snapdragon Wear Elite eNPU shape future products thanks to AI expertise and LSM6DSV32X IMU",
+          "update": false,
+          "url": "https://blog.st.com/snapdragon-wear-elite/"
+        },
+        {
+          "acquired_at": "2026-10-29T17:03:37.395421+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Anoushka Bhutani",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-29T15:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-10-29T17:02:41.996428+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/"
         }
       ]
     },
@@ -1781,6 +1823,10 @@
       "group": "products",
       "key": "products:https://blog.st.com/rust-mems-drivers"
     },
+    "https://blog.st.com/snapdragon-wear-elite": {
+      "group": "products",
+      "key": "products:https://blog.st.com/snapdragon-wear-elite"
+    },
     "https://blog.st.com/stspin9p": {
       "group": "products",
       "key": "products:https://blog.st.com/stspin9p"
@@ -1812,6 +1858,10 @@
     "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games"
+    },
+    "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials"
     },
     "https://developers.googleblog.com/gemini-4-argon-for-robotics": {
       "group": "models",
@@ -1968,10 +2018,10 @@
       "Last-Modified": "Mon, 19 Oct 2026 06:05:47 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"10d88294bbdd4efbd6866b3bb376b289a13795d4ab8789c32b1e3169d4c7444a\""
+      "ETag": "W/\"32152c7edd4475d650b1870a3c0756ed011c6fab09cae77bca8aab136708b3a8\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"4cdd136f34ce7796c5c8ff3cbde8708eff6831381cea54f9bb1660e9e18641a6\""
+      "ETag": "W/\"0d53be5fdcd30e6c5b0b9b45e933403ebb34b459538cb177a480e07d72913eef\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -1989,7 +2039,7 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Wed, 28 Oct 2026 12:25:01 GMT"
+      "Last-Modified": "Thu, 29 Oct 2026 15:42:23 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -2005,13 +2055,10 @@
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
-    "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"OwQW3A\""
-    },
     "https://deepmind.google/robots.txt": {},
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"f192cba44870ab39be084d25c695ff81\"",
-      "Last-Modified": "Wed, 28 Oct 2026 21:11:44 GMT"
+      "ETag": "\"c85d267e9ffd17cd1f1d122fa77cb562\"",
+      "Last-Modified": "Thu, 29 Oct 2026 15:00:00 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -2019,10 +2066,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b8d-iiKfmFNqB6VixK5T5qg2Owuq/Wo\""
+      "ETag": "W/\"33b8d-LvMf3Uj0w84IUB0xb3DhuWV99qQ\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40144-HPrqJnyhHHV7FmaAurmmVgWYJjI\""
+      "ETag": "W/\"40144-ZnM2HEFbopMm6XvNNbS22S4WBsc\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -2057,6 +2104,7 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
+    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -2066,12 +2114,12 @@
       "Last-Modified": "Thu, 29 Oct 2026 03:55:37 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793268012\"",
-      "Last-Modified": "Thu, 29 Oct 2026 10:00:12 GMT"
+      "ETag": "\"1793292072\"",
+      "Last-Modified": "Thu, 29 Oct 2026 16:41:12 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793268243\"",
-      "Last-Modified": "Thu, 29 Oct 2026 10:04:03 GMT"
+      "ETag": "\"1793291909\"",
+      "Last-Modified": "Thu, 29 Oct 2026 16:38:29 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -2142,7 +2190,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0dbbedecc6e9af0d474d7dbadba4a7dda\""
+      "ETag": "\"04cf760e4de1f690e8be277e3ac86fab4\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -2227,8 +2275,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"10b58cf77f9831592da032d133908a2e\"",
-      "Last-Modified": "Thu, 29 Oct 2026 09:38:01 GMT"
+      "ETag": "\"35e11669df50bf6a1d350d4c97bc0e38\"",
+      "Last-Modified": "Thu, 29 Oct 2026 16:20:45 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -3912,6 +3960,10 @@
       "list_fingerprint": "a61adec02029b634ebd647f3b1f77bd7032437331c7a75198a593f777d6b8758",
       "status": "bootstrap_skipped"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": {
+      "list_fingerprint": "8972799e585a4e9fd6c467a0e57ad0e36aefb4b1e6554a56404f917ae2a77e76",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation": {
       "list_fingerprint": "69c252242e8417080b9de7c8c51fadc2ffec22346d0910cbcde449d388805aec",
       "status": "bootstrap_skipped"
@@ -4162,6 +4214,12 @@
       "language": "en",
       "url": "https://blog.st.com/rust-mems-drivers/"
     },
+    "products:https://blog.st.com/snapdragon-wear-elite": {
+      "fingerprint": "8fcc808a68eeca0130a103422213c9ec5c1c505ad041158cd76ec20a7f8734a8",
+      "first_seen": "2026-10-29T17:02:41.996428+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/snapdragon-wear-elite/"
+    },
     "products:https://blog.st.com/stspin9p": {
       "fingerprint": "5f26f59b3dfbb6e71fcc48a7a8a626579757f6337cbe12facbb3b0017badd64b",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -4209,6 +4267,12 @@
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+    },
+    "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": {
+      "fingerprint": "8972799e585a4e9fd6c467a0e57ad0e36aefb4b1e6554a56404f917ae2a77e76",
+      "first_seen": "2026-10-29T17:02:41.996428+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/"
     },
     "python-releases:https://blog.python.org/2026/02/python-3143-and-31312-are-now-available": {
       "list_fingerprint": "3aa6aefd87f6309afce225bf6cd1a2a5756dbbc67ba4362fceceea4e8f1c28e2",
@@ -4565,6 +4629,10 @@
     "st-technical:https://blog.st.com/smart-power-distribution": {
       "list_fingerprint": "b516a70f5830e04d52e6269cd9e61367169335c67cf7639a2afb1d9c1e074600",
       "status": "older_material"
+    },
+    "st-technical:https://blog.st.com/snapdragon-wear-elite": {
+      "list_fingerprint": "8fcc808a68eeca0130a103422213c9ec5c1c505ad041158cd76ec20a7f8734a8",
+      "status": "posted"
     },
     "st-technical:https://blog.st.com/stspin9p": {
       "list_fingerprint": "5f26f59b3dfbb6e71fcc48a7a8a626579757f6337cbe12facbb3b0017badd64b",
