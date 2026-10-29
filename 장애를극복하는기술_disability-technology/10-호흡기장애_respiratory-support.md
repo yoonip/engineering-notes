@@ -22,6 +22,25 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#respiratory-support)에서 이어서 보실 수 있습니다.
 
+## 가정용 인공호흡기 사진과 제어 흐름
+
+![ResMed Astral 150 가정용 환기 장치 사진](https://media.resmed.com/20250226175515/healthcare-professionals-astral-astral-150.jpg)
+
+그림 1. ResMed Astral 150 환기 장치 사진입니다. 출처는 [제조사의 Astral 제품 안내](https://www.resmed.com/en-us/products/ventilation/astral/)입니다.
+
+```mermaid
+flowchart LR
+    A[사용자 호흡·설정값] --> B[압력·유량 센서]
+    B --> C[제어기]
+    C --> D[송풍기·밸브]
+    D --> E[호흡 회로와 마스크]
+    E --> F[사용자에게 공기 전달]
+    B --> G[누출·막힘·전원 상태 감시]
+    G --> H[장치 경보]
+```
+
+그림 2. 센서 측정값을 바탕으로 송풍기·밸브를 제어하고 이상 상태를 경보하는 환기 장치의 개념도입니다. 실제 Astral의 내부 회로도나 개인별 설정을 나타내지 않습니다.
+
 ## English
 
 Respiratory support ranges from supplemental oxygen and non-invasive positive-pressure ventilation to mechanical ventilation. These devices perform different functions and monitor pressure, flow, leaks, power and alarms. Diaphragm pacing is approved only for specific patient groups and is not a general treatment for respiratory disability.

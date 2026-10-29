@@ -24,6 +24,22 @@ AAC 도입 전후에 의사 전달 성공률, 대화 시작과 응답 시간, �
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#communication)에서 이어서 보실 수 있습니다.
 
+## 시선 입력 의사소통 기기와 출력 흐름
+
+![Tobii Dynavox TD I-Series 시선 입력 AAC 기기 사진](https://i.shgcdn.com/6505fc84-2515-4fcb-a0a5-cf40a50c75dd/-/format/auto/-/preview/3000x3000/-/quality/lighter/)
+
+그림 1. 시선 추적 입력을 지원하는 Tobii Dynavox TD I-Series 제품 사진입니다. 출처는 [제조사의 TD I-Series 안내](https://us.tobiidynavox.com/pages/td-i-series)입니다.
+
+```mermaid
+flowchart LR
+    A[눈의 위치를 카메라로 추적] --> B[응시 지점과 선택 입력 판정]
+    B --> C[AAC 앱에서 글자·기호 선택]
+    C --> D[문장 구성·음성 출력]
+    E[스위치·터치 입력] --> C
+```
+
+그림 2. 시선·스위치 입력을 AAC 앱의 글자나 기호 선택과 음성 출력으로 연결하는 개념도입니다. 시선 추적은 사용자의 의도를 완벽하게 판정하는 기술이 아니며 선택 취소·수정 경로가 필요합니다.
+
 ## English
 
 Augmentative and alternative communication includes communication boards, signs, speech-generating devices, switches and eye-gaze access. The user should be able to create and edit messages rather than being confined to preset choices. Speech neuroprostheses have demonstrated promising results in individual clinical research participants, but are not broadly available communication products.

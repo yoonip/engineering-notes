@@ -24,6 +24,24 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#kidney-support)에서 이어서 보실 수 있습니다.
 
+## 혈액투석 장치 사진과 혈액·투석액 흐름
+
+![Fresenius Medical Care 6008 CAREsystem 혈액투석 장치 사진](https://freseniusmedicalcare.com/content/fresenius-medical-care/gb/en/home/healthcare-professionals/haemodialysis/machines/6008-caresystem/_jcr_content/root/container/freseniuscontainer_9_852780627/freseniuscontainer/teaser_copy.coreimg.jpeg/1737077190657/csm-6008-caresystem-front-cd6195fe271.jpeg)
+
+그림 1. Fresenius Medical Care 6008 CAREsystem 혈액투석 장치 사진입니다. 출처는 [제조사의 6008 CAREsystem 안내](https://freseniusmedicalcare.com/en-gb/healthcare-professionals/haemodialysis/machines/6008-caresystem/)입니다.
+
+```mermaid
+flowchart LR
+    A[환자 혈액] --> B[혈액 회로·펌프]
+    B --> C[투석기 안의 반투과막]
+    C --> D[정화된 혈액을 환자에게 반환]
+    E[새 투석액] --> F[반투과막 반대편에서 흐름]
+    F --> G[확산된 노폐물 포함 투석액 배출]
+    C --> H[압력·공기·누출 감시]
+```
+
+그림 2. 혈액과 투석액이 막의 양쪽을 흐르고, 압력·공기·누출을 감시하는 혈액투석의 개념도입니다. 투석액이 혈액과 직접 섞이는 구조가 아닙니다.
+
 ## English
 
 Hemodialysis machines pump blood through a dialyzer and monitor pressure, temperature, conductivity, air and leaks. Peritoneal dialysis cyclers automate fluid exchange through the peritoneum. Wearable and implantable artificial kidneys remain research or clinical-trial projects; registration or funding does not imply routine availability.

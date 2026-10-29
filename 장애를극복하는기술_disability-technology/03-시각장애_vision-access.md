@@ -24,6 +24,23 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#vision-access)에서 이어서 보실 수 있습니다.
 
+## 점자 기기 사진과 정보 접근 흐름
+
+![HumanWare Brailliant BI 40X 점자 디스플레이 사진](https://www.humanware.com/wp-content/uploads/Brailliant-BI-40X.jpg)
+
+그림 1. 화면의 글을 촉각 점자로 읽는 HumanWare Brailliant BI 40X 제품 사진입니다. 출처는 [제조사 제품 지원 페이지](https://www.humanware.com/en-usa/support/brailliant-bi-40x/)입니다.
+
+```mermaid
+flowchart LR
+    A[앱의 글자·조작 요소] --> B[운영체제 접근성 정보]
+    B --> C[화면 읽기 프로그램]
+    C --> D[점자 디스플레이 또는 음성]
+    E[카메라로 촬영한 인쇄물] --> F[OCR로 글자 인식]
+    F --> C
+```
+
+그림 2. 화면의 접근성 정보와 카메라 OCR이 화면 읽기 프로그램을 거쳐 점자·음성으로 전달되는 개념도입니다. 실제 제품별 연결 방식과 지원 기능은 다를 수 있습니다.
+
 ## English
 
 Vision access includes screen readers, refreshable braille, magnification, contrast controls, OCR and camera-based description. Interfaces must expose accessible labels and keyboard focus, while navigation systems need careful evaluation of missed hazards and privacy. Retinal prostheses are specialized and limited technologies, not a general restoration of normal vision.

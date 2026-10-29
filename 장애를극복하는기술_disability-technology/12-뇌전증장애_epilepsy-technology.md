@@ -24,6 +24,24 @@ EEG·가속도·심박·피부전도 등 여러 신호를 결합하는 개인별
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#epilepsy)에서 이어서 보실 수 있습니다.
 
+## 반응성 신경자극 장치 사진과 신호 흐름
+
+![NeuroPace RNS System 제품 구성 사진](https://www.neuropace.com/wp-content/uploads/2025/04/RNS_NeuroPace-product-RGB.jpg)
+
+그림 1. NeuroPace RNS System의 제품 사진입니다. 출처는 [제조사의 RNS 보도자료 이미지 페이지](https://www.neuropace.com/about-neuropace/press-kit/)입니다.
+
+```mermaid
+flowchart LR
+    A[뇌 신호 기록 전극] --> B[이식 장치가 신호를 감시]
+    B --> C[설정된 발작 관련 패턴 판정]
+    C -->|패턴이 감지됨| D[반응성 자극 전달]
+    D --> E[신경 회로 반응]
+    E --> B
+    B --> F[기록을 임상팀이 검토]
+```
+
+그림 2. 반응성 신경자극의 감지·자극·기록 과정을 나타낸 개념도입니다. RNS는 특정 약물저항성 국소 뇌전증 환자군을 위한 처방 장치이며, 모든 발작을 감지하거나 멈추는 장치가 아닙니다. 적용 범위는 [미국 FDA 허가 자료](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100026)를 확인해 주세요.
+
 ## English
 
 EEG supports clinical assessment; wearable sensors may alert caregivers to selected convulsive seizure patterns; responsive neurostimulation detects intracranial patterns and delivers stimulation in selected patients. Detection, prediction and treatment are different functions. Wearable alerts are adjuncts and should not be treated as seizure prevention or as a standalone diagnostic system.

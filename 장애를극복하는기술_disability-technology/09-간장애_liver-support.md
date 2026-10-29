@@ -24,6 +24,21 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#liver-support)에서 이어서 보실 수 있습니다.
 
+## 알부민 투석의 체외 회로 개념도
+
+```mermaid
+flowchart LR
+    A[환자 혈액] --> B[혈액측 막 회로]
+    B --> C[혈액을 환자에게 반환]
+    D[알부민 포함 투석액] --> E[막 반대편 회로]
+    E --> F[흡착 카트리지에서 결합 물질 제거]
+    F --> D
+    B -. 물질 이동 .-> E
+    G[압력·유량·공기 감시] --> B
+```
+
+그림 1. 알부민 투석 회로의 원리를 단순화한 개념도입니다. 일부 알부민 결합 물질을 체외 회로에서 제거하려는 방식이며 간세포나 간 전체를 대체하지 않습니다. 실제 MARS 장치의 배관도나 특정 제품 내부 구성은 [FDA 장치 기록](https://www.accessdata.fda.gov/cdrh_docs/pdf11/K113313.pdf)에서 확인하실 수 있습니다.
+
 ## English
 
 Extracorporeal liver support systems use dialysis, filtration or adsorption to remove selected substances from blood. Bioartificial systems add cultured liver cells in an attempt to provide selected metabolic functions. Neither approach reproduces the full liver. Clinical benefit and availability remain limited and should not be inferred from laboratory performance alone.

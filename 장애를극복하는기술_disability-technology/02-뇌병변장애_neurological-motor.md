@@ -22,6 +22,23 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#neurological-motor)에서 이어서 보실 수 있습니다.
 
+## 재활 장치 사진과 운동 보조 흐름
+
+![Hocoma Lokomat 보행 재활 시스템 사진](https://hocoma.b-cdn.net/wp-content/uploads/2020/07/New-Picture-Effective-Rehabilitation-Training.jpg)
+
+그림 1. Hocoma Lokomat 보행 재활 시스템 사진입니다. 출처는 [제조사의 Lokomat 제품 안내](https://www.hocoma.com/us/solutions/lokomat/)입니다. Picture: Hocoma, Switzerland.
+
+```mermaid
+flowchart LR
+    A[치료사가 보행 과제 설정] --> B[트레드밀·체중 지지]
+    B --> C[로봇 보조기가 다리 움직임 지원]
+    C --> D[각도·힘·보행 정보 기록]
+    D --> E[치료사가 보조량과 과제 조정]
+    E --> B
+```
+
+그림 2. 보행 재활에서 과제 설정, 로봇 보조, 측정과 치료사 조정이 이어지는 개념도입니다. 실제 Lokomat의 기구 배치나 제어 화면을 나타내지는 않습니다.
+
 ## English
 
 Brain lesions can affect posture, movement, communication, swallowing, sensation and cognition in different combinations. Seating, mobility equipment, AAC, switch access, functional electrical stimulation and robotic rehabilitation support specific tasks. Research on exoskeletons and brain–computer interfaces is promising but remains condition- and study-specific.

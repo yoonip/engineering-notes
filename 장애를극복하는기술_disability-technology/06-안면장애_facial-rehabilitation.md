@@ -24,6 +24,24 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#facial-rehabilitation)에서 이어서 보실 수 있습니다.
 
+## 맞춤 안면 보철의 디지털 제작 흐름
+
+![병원과 대학 연구팀이 안면 보철용 귀 형상을 컴퓨터에서 다루는 사진](https://www.thermh.org.au/files/cache/made/project-interns-look-at-ear-modelling-on-computer-b30201a019c22179.webp)
+
+그림 1. 안면 보철용 귀 형상을 컴퓨터에서 설계하는 연구·제작 현장 사진입니다. 출처는 [Royal Melbourne Hospital과 University of Melbourne의 설명](https://www.thermh.org.au/news/the-rmh-and-university-of-melbourne-o-lab-bring-facial-prosthetics-into-the-future)입니다.
+
+```mermaid
+flowchart LR
+    A[CT 또는 3차원 표면 스캔] --> B[해부학적 형상 정리]
+    B --> C[CAD로 보철·고정부 설계]
+    C --> D[모형·금형·부품 제작]
+    D --> E[재료 마감과 색조 조정]
+    E --> F[착용·피부 접촉·고정 상태 확인]
+    F --> C
+```
+
+그림 2. 영상 취득부터 맞춤 설계, 제작과 착용 확인까지의 일반적인 작업 흐름입니다. 병원·제작팀마다 사용하는 장비와 순서는 다를 수 있습니다.
+
 ## English
 
 Facial rehabilitation may involve reconstructive surgery, patient-specific facial prostheses and digital planning. Imaging or optical scans can inform CAD/CAM, while fit, skin contact, retention, color, function and long-term maintenance remain central. Three-dimensional printing supports models, molds and selected components; direct printing of lifelike flexible silicone prostheses remains a research challenge.

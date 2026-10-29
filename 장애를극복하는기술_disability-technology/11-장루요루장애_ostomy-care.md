@@ -22,6 +22,19 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#ostomy-care)에서 이어서 보실 수 있습니다.
 
+## 피부 보호판과 누출 감지 흐름
+
+```mermaid
+flowchart LR
+    A[장루·요루] --> B[피부 보호판과 주머니]
+    B --> C[배출물 수집·배출]
+    D[보호판 아래 수분·전기적 변화] --> E[연구용 누출 감지 센서]
+    E --> F[무선 알림 장치·앱]
+    F --> G[사용자가 상태 확인]
+```
+
+그림 1. 장루 주머니와 보호판 아래 누출 감지 연구의 개념도입니다. 센서가 누출 징후를 알리는 방식이며 질환을 진단하거나 피부 상태를 완전히 평가하지 않습니다. 임상 평가의 장치 구성은 [다기관 연구 논문](https://pmc.ncbi.nlm.nih.gov/articles/PMC11477101/)에서 확인하실 수 있습니다.
+
 ## English
 
 Ostomy technology includes skin barriers, pouches, filters and fitting options. Experimental and evaluated digital systems place moisture sensors under the barrier and alert users to possible leakage. Such sensors do not diagnose disease, and results from intestinal ostomy studies should not be assumed to apply to urostomy care.

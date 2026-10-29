@@ -27,6 +27,22 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#limb-mobility)에서 이어서 보실 수 있습니다.
 
+## 제품 사진과 작동 원리
+
+![C-Leg 마이크로프로세서 무릎 의지 제품 사진](https://images.ctfassets.net/6ip7bnhvpajs/1V3OX5uX46h2oIiwJypnKH/9da978c8274c4c6bb20668749fc26d3c/4819172.jpg?fm=webp&fit=fill&f=faces&w=1200&h=1200&q=75)
+
+그림 1. Ottobock C-Leg 제품 사진입니다. 사진은 [제조사의 C-Leg 안내](https://corporate.ottobock.com/en/media/media-information/c-leg)에서 제공하며, 무릎 의지의 외형을 보여줍니다.
+
+```mermaid
+flowchart LR
+    A[무릎 각도·하중·움직임 감지] --> B[제어기가 보행 상태 추정]
+    B --> C[무릎 관절 저항 조절]
+    C --> D[다음 보행 동작]
+    D --> A
+```
+
+그림 2. 센서 입력에 따라 무릎 관절 저항을 조절하는 일반적인 마이크로프로세서 의지의 개념도입니다. 실제 C-Leg 내부 회로도나 제어 알고리즘을 나타내지는 않습니다.
+
 ## English
 
 Mobility technology includes prosthetic limbs, orthoses, wheelchairs and powered exoskeletons. Fit, control, skin pressure, fatigue, battery life and safety in real tasks matter as much as actuator performance. Sensory feedback and neural control remain research directions with different levels of clinical evidence and availability.

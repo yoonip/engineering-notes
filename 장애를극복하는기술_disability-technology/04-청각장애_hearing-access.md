@@ -22,6 +22,22 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#hearing-access)에서 이어서 보실 수 있습니다.
 
+## 인공와우 외부 처리기와 신호 흐름
+
+![Cochlear Nucleus 8 외부 음성처리기 사진](https://assets.cochlear.com/api/public/content/3bb36f67b7734ee98711eaf4a0d855b0?v=dedcebe5)
+
+그림 1. Cochlear Nucleus 8의 외부 음성처리기 사진입니다. 이 사진은 몸 바깥에 착용하는 부품을 보여주며, 이식부나 전극을 보여주는 사진은 아닙니다. 출처는 [제조사의 Nucleus 8 안내](https://www.cochlear.com/us/en/home/products-and-accessories/cochlear-nucleus-system/nucleus-sound-processors/nucleus-8)입니다.
+
+```mermaid
+flowchart LR
+    A[마이크가 소리 수집] --> B[외부 처리기가 소리 신호 분석]
+    B --> C[송신 코일이 이식 수신부로 신호 전달]
+    C --> D[내부 전극 배열이 청신경을 자극]
+    D --> E[뇌가 청각 신호를 처리]
+```
+
+그림 2. 인공와우의 일반적인 소리 신호 경로를 단순화한 개념도입니다. 전극 수·배치와 신호 처리 방식은 제품에 따라 다릅니다.
+
 ## English
 
 Hearing access combines hearing aids or cochlear implants with captions, remote microphones, induction loops and visual or vibration alerts. A cochlear implant processes sound and electrically stimulates the auditory nerve; it does not restore normal hearing. Fitting, communication preferences and real-world noise conditions are part of the system.

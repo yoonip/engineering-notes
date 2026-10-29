@@ -24,6 +24,19 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#cardiac-support)에서 이어서 보실 수 있습니다.
 
+## 심박조율기의 감지·자극 흐름
+
+```mermaid
+flowchart LR
+    A[심장 전기 신호 감지] --> B[기기가 리듬·간격 평가]
+    B -->|설정된 조건에서 자극 필요| C[전기 자극 전달]
+    B -->|자극 불필요| D[추적 감시 지속]
+    C --> E[심장 수축 반응]
+    E --> A
+```
+
+그림 1. 심박조율기의 일반적인 감지와 자극 흐름을 나타낸 개념도입니다. 리드가 있는 기기와 리드리스 기기는 구조가 다르며, 이 그림은 특정 제조사 제품의 내부 배선이나 임상 설정을 나타내지 않습니다. 리드리스 기기 사례는 [미국 FDA의 Micra 승인 안내](https://www.fda.gov/news-events/press-announcements/fda-approves-first-leadless-pacemaker-treat-heart-rhythm-disorders)에서 확인할 수 있습니다.
+
 ## English
 
 Pacemakers sense cardiac activity and deliver pacing when needed. Implantable cardioverter-defibrillators detect certain dangerous rhythms, while cardiac resynchronization therapy coordinates ventricular timing in selected patients. Ventricular assist devices use a pump, controller and power source to support circulation. Each device has specific indications, risks and maintenance needs.

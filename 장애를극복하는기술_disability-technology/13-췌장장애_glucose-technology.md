@@ -26,6 +26,25 @@
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#glucose-control)에서 이어서 보실 수 있습니다.
 
+## 연속혈당측정 제품 사진과 자동 인슐린 전달 흐름
+
+![Dexcom G7 연속혈당측정 센서 제품 사진](https://cdn.media.amplience.net/i/dexcom/en-us-g7-sensor-cta-padded?aspect=16%3A9&fmt=auto&qlt=default&sm=aspect&w=414)
+
+그림 1. Dexcom G7 연속혈당측정 시스템의 센서 사진입니다. 센서는 피부 아래 간질액 포도당을 측정합니다. 출처는 [제조사의 G7 안내](https://www.dexcom.com/en-SG/dexcom-g7-cgm-system?ipc=US)입니다.
+
+```mermaid
+flowchart LR
+    A[간질액 포도당 센서] --> B[CGM 값·추세]
+    B --> C[제어 알고리즘]
+    D[사용자 식사·활동 입력] --> C
+    E[인슐린 주입 이력] --> C
+    C --> F[펌프 주입량 조정]
+    F --> G[혈당 변화]
+    G -. 지연을 두고 센서에 반영 .-> A
+```
+
+그림 2. CGM·알고리즘·펌프가 연결되는 자동 인슐린 전달의 개념도입니다. 센서값은 혈액 포도당과 시간 차이가 날 수 있고, 일부 시스템에는 식사 입력 등 사용자의 조작이 필요합니다. 제품별 기능과 허가 범위는 다릅니다.
+
 ## English
 
 Continuous glucose monitoring, insulin pumps and automated insulin delivery connect sensing, control software and drug delivery. A CGM estimates glucose from interstitial fluid; an algorithm uses its readings and delivery history to adjust insulin. Hybrid closed-loop systems still require user input in some situations and do not reproduce every function of a pancreas. Device compatibility, alarms, failure handling and clinical evidence are essential.
