@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "openai-ko",
+      "name": "OpenAI 한국어",
+      "group": "models",
+      "url": "https://openai.com/ko-KR/news/rss.xml",
+      "format": "feed",
+      "adapter": "feed",
+      "hosts": [
+        "openai.com"
+      ],
+      "language": "ko",
+      "provider": "OpenAI",
+      "prefer_native": true
+    },
+    {
+      "id": "openai-en",
+      "name": "OpenAI",
+      "group": "models",
+      "url": "https://openai.com/news/rss.xml",
+      "format": "feed",
+      "adapter": "feed",
+      "hosts": [
+        "openai.com"
+      ],
+      "language": "en",
+      "provider": "OpenAI"
+    },
+    {
+      "id": "google-ko",
+      "name": "Google 한국어",
+      "group": "models",
+      "url": "https://blog.google/intl/ko-kr/rss/",
+      "format": "feed",
+      "adapter": "feed",
+      "hosts": [
+        "blog.google"
+      ],
+      "language": "ko",
+      "provider": "Google",
+      "prefer_native": true
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "group": "models",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "format": "feed",
+      "adapter": "feed",
+      "hosts": [
+        "deepmind.google",
+        "blog.google",
+        "developers.googleblog.com"
+      ],
+      "language": "en",
+      "provider": "Google"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "group": "models",
+      "url": "https://www.anthropic.com/news",
+      "format": "html",
+      "adapter": "anthropic_news",
+      "hosts": [
+        "www.anthropic.com",
+        "anthropic.com"
+      ],
+      "language": "en",
+      "provider": "Anthropic"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "group": "models",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "format": "html",
+      "adapter": "deepseek_updates",
+      "hosts": [
+        "api-docs.deepseek.com"
+      ],
+      "language": "en",
+      "provider": "DeepSeek",
+      "preserve_fragment": true
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen 공식 배포",
+      "group": "models",
+      "url": "https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=100&full=true",
+      "format": "json",
+      "adapter": "huggingface_models",
+      "hosts": [
+        "huggingface.co"
+      ],
+      "language": "en",
+      "provider": "Qwen",
+      "organization": "Qwen",
+      "model_prefixes": [
+        "Qwen",
+        "QwQ"
+      ],
+      "exclude_model_patterns": [
+        "^Qwen-(?:Image|Drive)(?:-|$)"
+      ]
+    },
+    {
+      "id": "zai",
+      "name": "Z.ai 공식 배포",
+      "group": "models",
+      "url": "https://huggingface.co/api/models?author=zai-org&sort=createdAt&direction=-1&limit=100&full=true",
+      "format": "json",
+      "adapter": "huggingface_models",
+      "hosts": [
+        "huggingface.co"
+      ],
+      "language": "en",
+      "provider": "Z.ai",
+      "organization": "zai-org",
+      "model_prefixes": [
+        "GLM-"
+      ]
+    },
+    {
+      "id": "kimi",
+      "name": "Moonshot AI · Kimi",
+      "group": "models",
+      "url": "https://www.kimi.com/en/blog/",
+      "format": "html",
+      "adapter": "kimi_blog",
+      "hosts": [
+        "www.kimi.com",
+        "kimi.com",
+        "www.kimi.ai",
+        "kimi.ai"
+      ],
+      "language": "en",
+      "provider": "Moonshot AI"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+name: 모델 발표와 보고서 / Model and report updates
+
+on:
+  schedule:
+    - cron: '37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  # 기존 뉴스 writer와 같은 그룹에서 main 게시를 직렬화합니다.
+  group: daily-news-main
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.repository == 'yoonip/engineering-notes' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - name: 저장소 읽기 / Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 1
+          sparse-checkout: |
+            .github/news
+            .github/updates
+            AI모델동향_ai-model-updates
+            미래경제보고서_future-economic-reports
+          sparse-checkout-cone-mode: true
+
+      - name: HTML 파서 설치 / Install HTML parser
+        run: python3 -m pip install --disable-pip-version-check -r .github/updates/requirements.txt
+
+      - name: 중복·날짜·출처 검사 / Test deduplication and parsers
+        run: python3 -m unittest discover -s .github/updates -p 'test_*.py' -v
+
+      - name: 공식 발표와 보고서 확인 / Check official publications
+        run: python3 .github/updates/update_pipeline.py --report "$RUNNER_TEMP/publication-status.json"
+
+      - name: 출처별 실행 기록 / Record source status
+        if: always()
+        env:
+          PUBLICATION_REPORT: ${{ runner.temp }}/publication-status.json
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path(os.environ['PUBLICATION_REPORT'])
+          if path.exists():
+              report = json.loads(path.read_text())
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+                  out.write('## Official publications\n\n```json\n')
+                  out.write(json.dumps(report, ensure_ascii=False, indent=2) + '\n```\n')
+              problems = [s['id'] for s in report['sources']
+                          if s['status'] not in ('ok', 'unchanged', 'no_eligible_items') or s.get('detail_errors')]
+              if problems:
+                  print('::warning::Some sources need checking: ' + ', '.join(problems))
+          PY
+
+      - name: 주제별 게시 / Publish by topic
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          stamp="$(TZ=Asia/Seoul date '+%F %H:%M')"
+          git add -- AI모델동향_ai-model-updates/새소식_updates
+          if ! git diff --cached --quiet; then
+            git diff --cached --check
+            git commit -m "모델 발표 ${stamp} / Model announcements ${stamp}"
+          fi
+          git add -- 미래경제보고서_future-economic-reports/새소식_updates
+          if ! git diff --cached --quiet; then
+            git diff --cached --check
+            git commit -m "보고서 소식 ${stamp} / Report updates ${stamp}"
+          fi
+          git add -- .github/updates/state.json
+          if ! git diff --cached --quiet; then
+            git diff --cached --check
+            git commit -m "모델·보고서 확인 상태 ${stamp} / Publication check state ${stamp}"
+          fi
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1

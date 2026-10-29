@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {"id":"lg-economy","name":"LG경영연구원 경제","group":"reports","url":"https://www.lgbr.co.kr/economy/list.do","adapter":"lg","hosts":["www.lgbr.co.kr"],"language":"ko"},
+    {"id":"lg-business","name":"LG경영연구원 비즈니스·테크놀로지","group":"reports","url":"https://www.lgbr.co.kr/business/list.do","adapter":"lg","hosts":["www.lgbr.co.kr"],"language":"ko"},
+    {"id":"kdi-monthly","name":"KDI 경제동향","group":"reports","url":"https://www.kdi.re.kr/research/monTrends","adapter":"kdi_monthly","hosts":["www.kdi.re.kr"],"language":"ko"},
+    {"id":"kdi-outlook","name":"KDI 경제전망","group":"reports","url":"https://www.kdi.re.kr/research/economy","adapter":"kdi_outlook","hosts":["www.kdi.re.kr"],"language":"ko","max_discover":12},
+    {"id":"etri-reports","name":"ETRI 보고서","group":"reports","url":"https://ksp.etri.re.kr/ksp/plan-report/search","adapter":"etri","hosts":["ksp.etri.re.kr"],"language":"ko"},
+    {"id":"kisti-reports","name":"KISTI 분석 보고서","group":"reports","url":"https://www.kisti.re.kr/post/analysis-report","adapter":"kisti","hosts":["www.kisti.re.kr"],"language":"ko"},
+    {"id":"snu-reports","name":"서울대 국가미래전략원 보고서","group":"reports","url":"https://ifs.snu.ac.kr/publication/report","adapter":"snu","hosts":["ifs.snu.ac.kr"],"language":"ko"},
+    {"id":"snu-briefs","name":"서울대 국가미래전략원 이슈브리프","group":"reports","url":"https://ifs.snu.ac.kr/publication/issue-brief","adapter":"snu","hosts":["ifs.snu.ac.kr"],"language":"ko"},
+    {"id":"kaist-future","name":"KAIST 미래전략연구센터 자료실","group":"reports","url":"https://futures.kaist.ac.kr/ko/?c=203","adapter":"kaist","hosts":["futures.kaist.ac.kr"],"language":"ko"}
+  ]
+}
