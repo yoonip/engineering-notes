@@ -1,5 +1,143 @@
 # 도구·보안 새 자료
 
-검토와 해설 작성에 참고할 공식 새 자료를 모읍니다. 한국어 소개와 원문 링크, 가져온 시각·경로·방법을 항목마다 기록합니다.
+반영: 2026-10-29 13:12 KST
 
-[카테고리 목차](../README.md) · [날짜별 자료](날짜별/README.md)
+[카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
+
+검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## JFrog 제품 보안 업데이트 권고
+
+> JFrog社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72246>) · 공식 페이지 표기일: 2026-10-29
+
+가져온 시각: 2026-10-29 13:13:51 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## Splunk 제품 보안 업데이트 권고
+
+> Splunk社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72245>) · 공식 페이지 표기일: 2026-10-29
+
+가져온 시각: 2026-10-29 13:13:52 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## Cisco 제품 보안 업데이트 권고
+
+> Cisco社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]~\[3\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72244>) · 공식 페이지 표기일: 2026-10-29
+
+가져온 시각: 2026-10-29 13:13:53 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## Zephyr 4.5.0
+
+Zephyr Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.
+
+출처: [Zephyr Project](<https://github.com/zephyrproject-rtos/zephyr/releases>) · [원문](<https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0>) · 공식 페이지 표기일: 2026-10-29 07:23 KST
+
+가져온 시각: 2026-10-29 13:13:55 KST
+
+수집 경로: [공식 목록·피드](<https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20>) · 방법: 공식 저장소의 공개 Releases API\(안정판\)
+
+자료 유형: 공식 안정판 릴리스
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out
+
+Python 코어 개발팀에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 보안·개발 도구·시스템 소프트웨어 주제를 다룹니다.
+
+출처: [Python 코어 개발팀](<https://blog.python.org/>) · [원문](<https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/>) · 공식 페이지 표기일: 2026-10-26 09:00 KST
+
+원문 작성자: Hugo van Kemenade
+
+가져온 시각: 2026-10-29 13:13:53 KST
+
+수집 경로: [공식 목록·피드](<https://blog.python.org/feeds/posts/default?alt=rss>) · 방법: 공식 릴리스 RSS의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Python 3.15.1, 3.14.9 and 3.13.17 are out \| Python Insider
+
+Python 코어 개발팀에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 보안·개발 도구·시스템 소프트웨어 주제를 다룹니다.
+
+출처: [Python 코어 개발팀](<https://blog.python.org/>) · [원문](<https://blog.python.org/2026/10/python-3151-3149-31317/>) · 공식 페이지 표기일: 2026-10-21 09:00 KST
+
+원문 작성자: Hugo van Kemenade
+
+가져온 시각: 2026-10-29 13:13:54 KST
+
+수집 경로: [공식 목록·피드](<https://blog.python.org/feeds/posts/default?alt=rss>) · 방법: 공식 릴리스 RSS의 제목·소개 및 원문의 공개 메타데이터
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## LLVM 23.1.4
+
+LLVM Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.
+
+출처: [LLVM Project](<https://github.com/llvm/llvm-project/releases>) · [원문](<https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4>) · 공식 페이지 표기일: 2026-10-20 22:03 KST
+
+가져온 시각: 2026-10-29 13:13:56 KST
+
+수집 경로: [공식 목록·피드](<https://api.github.com/repos/llvm/llvm-project/releases?per_page=20>) · 방법: 공식 저장소의 공개 Releases API\(안정판\)
+
+자료 유형: 공식 안정판 릴리스
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Python 3.15.0 \(final\) is here\! \| Python Insider
+
+Python 코어 개발팀에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.
+
+출처: [Python 코어 개발팀](<https://blog.python.org/>) · [원문](<https://blog.python.org/2026/10/python-3150-final-is-here/>) · 공식 페이지 표기일: 2026-10-09 09:00 KST
+
+원문 작성자: Hugo van Kemenade
+
+가져온 시각: 2026-10-29 13:13:54 KST
+
+수집 경로: [공식 목록·피드](<https://blog.python.org/feeds/posts/default?alt=rss>) · 방법: 공식 릴리스 RSS의 제목·소개 및 원문의 공개 메타데이터
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## LLVM 23.1.3
+
+LLVM Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.
+
+출처: [LLVM Project](<https://github.com/llvm/llvm-project/releases>) · [원문](<https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3>) · 공식 페이지 표기일: 2026-10-06 23:53 KST
+
+가져온 시각: 2026-10-29 13:13:56 KST
+
+수집 경로: [공식 목록·피드](<https://api.github.com/repos/llvm/llvm-project/releases?per_page=20>) · 방법: 공식 저장소의 공개 Releases API\(안정판\)
+
+자료 유형: 공식 안정판 릴리스
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## LLVM 23.1.2
+
+LLVM Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.
+
+출처: [LLVM Project](<https://github.com/llvm/llvm-project/releases>) · [원문](<https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2>) · 공식 페이지 표기일: 2026-09-22 15:49 KST
+
+가져온 시각: 2026-10-29 13:13:56 KST
+
+수집 경로: [공식 목록·피드](<https://api.github.com/repos/llvm/llvm-project/releases?per_page=20>) · 방법: 공식 저장소의 공개 Releases API\(안정판\)
+
+자료 유형: 공식 안정판 릴리스
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+공식 한국어 소개는 짧게 발췌하며, 다른 언어의 자료는 제목과 공개 정보의 주제를 한국어로 안내합니다. 원문 전체를 번역하거나 새로운 분석을 작성한 글과는 구분합니다.
