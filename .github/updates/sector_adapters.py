@@ -121,7 +121,7 @@ def detail(source: dict, text: str, url: str) -> dict:
         top = soup.select_one('.view_top_box')
         title = _text(top.select_one('h3.title')) if top else ''
         date = _date(_text(top.select_one('.data.sty2'))) if top else ''
-        topics = [_text(node) for node in soup.select('.txt_box .info_list.sty3')]
+        topics = [_text(node) for node in soup.select('.txt_box .info_list.sty3, .txt_box .txt_list .info_list')]
         description = '목차: ' + ' '.join(topics) if topics else ''
         download = soup.select_one('.view_top_box button[onclick*="file_down"]')
         match = re.search(r"file_down\(['\"](\d+)['\"]\)", download.get('onclick', '')) if download else None

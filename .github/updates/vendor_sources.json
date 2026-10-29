@@ -15,7 +15,8 @@
       "acquisition_method": "공식 RSS와 보안공지의 개요",
       "policy_url": "https://www.boho.or.kr/kr/subPage.do?menuNo=205121",
       "policy_checked_on": "2026-10-29",
-      "detail": true
+      "detail": true,
+      "date_label": "공식 RSS 게시일"
     },
     {
       "id": "python-releases",
@@ -31,7 +32,8 @@
       "language": "en",
       "acquisition_method": "공식 릴리스 RSS의 제목·소개",
       "policy_url": "https://blog.python.org/",
-      "policy_checked_on": "2026-10-29"
+      "policy_checked_on": "2026-10-29",
+      "date_label": "RSS·Atom 발행 시각"
     },
     {
       "id": "zephyr-releases",
@@ -50,7 +52,8 @@
       "language": "en",
       "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
       "policy_url": "https://docs.github.com/en/rest/releases/releases#list-releases",
-      "policy_checked_on": "2026-10-29"
+      "policy_checked_on": "2026-10-29",
+      "date_label": "공식 릴리스 게시 시각"
     },
     {
       "id": "llvm-releases",
@@ -69,7 +72,8 @@
       "language": "en",
       "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
       "policy_url": "https://docs.github.com/en/rest/releases/releases#list-releases",
-      "policy_checked_on": "2026-10-29"
+      "policy_checked_on": "2026-10-29",
+      "date_label": "공식 릴리스 게시 시각"
     },
     {
       "id": "nvidia-technical",
@@ -85,7 +89,8 @@
       "language": "en",
       "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
       "policy_url": "https://developer.nvidia.com/robots.txt",
-      "policy_checked_on": "2026-10-29"
+      "policy_checked_on": "2026-10-29",
+      "date_label": "RSS·Atom 발행 시각"
     },
     {
       "id": "nvidia-korea",
@@ -101,7 +106,8 @@
       "language": "ko",
       "acquisition_method": "공식 한국어 블로그 RSS의 제목·소개",
       "policy_url": "https://blogs.nvidia.co.kr/robots.txt",
-      "policy_checked_on": "2026-10-29"
+      "policy_checked_on": "2026-10-29",
+      "date_label": "RSS·Atom 발행 시각"
     },
     {
       "id": "st-technical",
@@ -117,7 +123,8 @@
       "language": "en",
       "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
       "policy_url": "https://blog.st.com/robots.txt",
-      "policy_checked_on": "2026-10-29"
+      "policy_checked_on": "2026-10-29",
+      "date_label": "RSS·Atom 발행 시각"
     }
   ]
 }

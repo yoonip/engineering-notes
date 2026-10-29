@@ -8,6 +8,12 @@ def source(adapter):
 
 
 class SectorAdapterTests(unittest.TestCase):
+    def test_magazine_contents_without_sty3_and_footer_are_separated(self):
+        text = '<div class="txt_box"><div class="txt_list"><ul class="info_list"><li>AI 투자와 NPU 산업</li></ul></div></div><footer><div class="txt_box"><div class="txt_list"><p class="info_list">푸터 주소</p></div></div></footer>'
+        row = a.detail(source('sector_spri'), text, 'https://example.org/posts/view/12')
+        self.assertIn('AI 투자와 NPU 산업', row['description'])
+        self.assertNotIn('푸터 주소', row['description'])
+
     def test_spri_issue_identity_and_month_precision(self):
         text='<ul class="list"><li><a href="/posts/view/12?code=AI-Brief&data_page=1">자세히보기</a><div class="text_box"><div class="data">2026년 10월호</div></div></li></ul>'
         rows=a.discover(dict(source('sector_spri'),url='https://example.org/posts?code=AI-Brief'),text)

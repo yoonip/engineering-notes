@@ -174,6 +174,7 @@ def parse_feed(text: str) -> list[dict]:
                        'description': description[:3000],
                        'date': display_date,
                        'author': author,
+                       'author_label': 'RSS·Atom 표기 작성자',
                        'categories': [''.join(child.itertext()).strip() for child in node if local(child.tag) == 'category']})
     return result[:1500]
 
@@ -368,9 +369,33 @@ def load_config() -> dict:
             source.setdefault('detail_if_empty', True)
         if source['group'] not in GROUPS or not safe_url(source['url'], source['hosts']):
             raise ValueError('Invalid source configuration: ' + source['id'])
-        for pattern in source.get('include_patterns', []) + source.get('exclude_patterns', []):
+        for pattern in (source.get('include_patterns', []) + source.get('exclude_patterns', [])
+                        + source.get('title_include_patterns', []) + source.get('title_exclude_patterns', [])):
             re.compile(pattern)
-    return {'sources': sources, 'initial_days': 45, 'initial_per_source': 3}
+    review_path = HERE / 'reviewed_items.json'
+    reviews = json.loads(review_path.read_text(encoding='utf-8'))['items'] if review_path.exists() else {}
+    return {'sources': sources, 'initial_days': 45, 'initial_per_source': 3, 'reviews': reviews}
+
+
+REVIEW_FIELDS = {'title', 'url', 'summary_ko', 'summary_mode', 'date', 'date_label',
+                 'author', 'author_label', 'kind', 'original_title', 'feed_date', 'date_note'}
+
+
+def reviewed_item(item: dict, review: dict | None, source_fingerprint: str) -> dict | None:
+    """Keep source-checked edits only while the reviewed source content matches."""
+    if not review:
+        return dict(item)
+    if review['action'] == 'exclude':
+        return None
+    result = dict(item)
+    if review['fingerprint'] == source_fingerprint:
+        fields = review['fields']
+        if not set(fields) <= REVIEW_FIELDS:
+            raise ValueError('Unexpected reviewed field')
+        if fields.get('url') and canonical(fields['url']) != canonical(item['url']):
+            raise ValueError('A reviewed link must identify the same source')
+        result.update(fields)
+    return result
 
 
 def covered_urls(repo: Path) -> set[str]:
@@ -388,6 +413,10 @@ def covered_urls(repo: Path) -> set[str]:
 
 def eligible(source: dict, item: dict, adapter) -> bool:
     text = item['title'] + ' ' + item.get('description', '')
+    if source.get('title_include_patterns') and not any(re.search(pattern, item['title'], re.I) for pattern in source['title_include_patterns']):
+        return False
+    if any(re.search(pattern, item['title'], re.I) for pattern in source.get('title_exclude_patterns', [])):
+        return False
     if source.get('include_patterns') and not any(re.search(pattern, text, re.I) for pattern in source['include_patterns']):
         return False
     if any(re.search(pattern, text, re.I) for pattern in source.get('exclude_patterns', [])):
@@ -440,7 +469,15 @@ def render(items: list[dict], group: str, stamp: str, prefix: str) -> str:
         if item.get('pdf_url'):
             lines += [f"[발행 기관의 PDF](<{md_url(item['pdf_url'])}>)", '']
         if item.get('author'):
-            lines += [('원문 작성자(일부): ' if item['author'].endswith('…') else '원문 작성자: ') + md_text(item['author']), '']
+            author_label = item.get('author_label', '원문 작성자')
+            lines += [author_label + ('(일부): ' if item['author'].endswith('…') else ': ') + md_text(item['author']), '']
+        if item.get('feed_date'):
+            feed_date = item['feed_date']
+            if date_time(feed_date):
+                feed_date = date_time(feed_date).astimezone(KST).strftime('%Y-%m-%d %H:%M KST')
+            lines += ['RSS·Atom 발행 시각: ' + md_text(feed_date), '']
+        if item.get('date_note'):
+            lines += [md_text(item['date_note']), '']
         if item.get('acquired_at'):
             acquired = date_time(item['acquired_at']).astimezone(KST).strftime('%Y-%m-%d %H:%M:%S KST')
             lines += ['가져온 시각: ' + acquired, '']
@@ -455,7 +492,7 @@ def render(items: list[dict], group: str, stamp: str, prefix: str) -> str:
         if item.get('version'):
             lines += ['확인한 판본: v' + md_text(str(item['version'])), '']
         lines += ['개요: ' + item['summary_mode'], '']
-    lines += ['공식 한국어 소개는 짧게 발췌하며, 다른 언어의 자료는 제목과 공개 정보의 주제를 한국어로 안내합니다. '
+    lines += ['원문을 대조한 한국어 소개와 자동으로 작성한 주제 안내는 항목별로 구분합니다. 공식 한국어 소개를 발췌한 경우에는 인용문으로 표시합니다. '
               '원문 전체를 번역하거나 새로운 분석을 작성한 글과는 구분합니다.', '']
     return '\n'.join(lines)
 
@@ -556,6 +593,10 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                 observation_key = source['id'] + ':' + canonical(item['url'], source.get('keep_fragment', False))
                 identity = publication_key(source['group'], item['url'], source.get('keep_fragment', False))
                 identity = state['aliases'].get(identity, identity)
+                review = config.get('reviews', {}).get(identity)
+                if review and review['action'] == 'exclude':
+                    report['review_excluded'] = report.get('review_excluded', 0) + 1
+                    continue
                 observed = state['seen'].get(observation_key)
                 marker = fingerprint(item)
                 if observed and observed.get('list_fingerprint') == marker and observed.get('status') != 'pending':
@@ -635,6 +676,10 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                         report.setdefault('detail_errors', []).append({'url': item['url'], 'error': str(exc) if isinstance(exc, FetchFailure) else type(exc).__name__})
                         continue
                 actual = publication_key(source['group'], full['url'], source.get('keep_fragment', False))
+                review = config.get('reviews', {}).get(actual)
+                if review and review['action'] == 'exclude':
+                    report['review_excluded'] = report.get('review_excluded', 0) + 1
+                    continue
                 owner = originals.get(original_identity(full['url']))
                 if owner and owner['group'] != source['group']:
                     state['seen'][observation_key] = {'list_fingerprint': marker, 'status': 'other_category', 'owner': owner['key']}
@@ -661,7 +706,7 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                     continue
                 summary, mode = overview(full, source)
                 display = {key: value for key, value in full.items()
-                           if key in ('title', 'url', 'date', 'pdf_url', 'kind', 'published_kind', 'author', 'course_period', 'institution', 'version', 'paper_id')}
+                           if key in ('title', 'url', 'date', 'pdf_url', 'kind', 'published_kind', 'author', 'author_label', 'course_period', 'institution', 'version', 'paper_id')}
                 method = source.get('acquisition_method') or ('공식 RSS·Atom의 제목·소개문' if source.get('format') == 'feed' else '공식 목록·공개 소개문')
                 if used_detail and source.get('format') == 'feed':
                     method += ' 및 원문의 공개 메타데이터'
@@ -669,6 +714,7 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                                summary_ko=summary, summary_mode=mode, update=bool(previous), first_seen=previous.get('first_seen', now.isoformat()) if previous else now.isoformat(),
                                acquired_at=item_acquired_at, source_url=source_state.get('response_url', source['url']), acquisition_method=method,
                                date_label=source.get('date_label', ''))
+                display = reviewed_item(display, review, full_fingerprint)
                 accepted.append(display)
                 state['seen'][actual] = {'fingerprint': full_fingerprint, 'url': full['url'],
                                         'language': source.get('language', ''),

@@ -94,7 +94,8 @@
       "max_new_items": 5,
       "acquisition_method": "MIT News 공식 연구 소개 RSS",
       "source_checked_on": "2026-10-29",
-      "policy_url": "https://news.mit.edu/robots.txt"
+      "policy_url": "https://news.mit.edu/robots.txt",
+      "date_label": "RSS·Atom 발행 시각"
     },
     {
       "id": "mit-ocw-materials",
@@ -114,7 +115,8 @@
       "max_new_items": 5,
       "acquisition_method": "MIT OpenCourseWare 공식 블로그 RSS의 자료 소개",
       "source_checked_on": "2026-10-29",
-      "policy_url": "https://ocw.mit.edu/terms/"
+      "policy_url": "https://ocw.mit.edu/terms/",
+      "date_label": "RSS·Atom 발행 시각"
     },
     {
       "id": "mit-open-learning",
@@ -132,7 +134,8 @@
       "max_new_items": 5,
       "acquisition_method": "MIT News의 공식 MITx·Open Learning RSS",
       "source_checked_on": "2026-10-29",
-      "policy_url": "https://news.mit.edu/robots.txt"
+      "policy_url": "https://news.mit.edu/robots.txt",
+      "date_label": "RSS·Atom 발행 시각"
     },
     {
       "id": "kmooc-courses",

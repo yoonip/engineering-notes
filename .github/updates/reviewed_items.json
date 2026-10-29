@@ -1,0 +1,652 @@
+{
+  "items": {
+    "industry:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-21T12:17:58+00:00",
+      "fields": {
+        "author": "NASA Science Editorial Team",
+        "author_label": "원문 작성자",
+        "date": "2026-10-21",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-21T12:17:58+00:00",
+        "kind": "우주·원격탐사 기술 개발 소개",
+        "summary_ko": "기계식 거울 대신 레이저 파장과 회절격자로 빔 방향을 바꾸어 숲과 지형을 연속적인 3차원 띠 형태로 측정하는 라이다를 소개합니다. 항공기 시제품 시험과 우주용 장비로 전환하기 위한 후속 개발을 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "지표면을 연속 3차원으로 측정하는 CASALS 라이다 / NASA’s CASALS Instrument Bridges Gaps in 3D Maps of Earth’s Surface"
+      },
+      "fingerprint": "9a63700995816e9917818c4620da1899d44edf6bc138b070c34b2a9a795c3e46",
+      "reason": "",
+      "scope": "공식 원문 본문·등록 정보",
+      "source_url": "https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface/"
+    },
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-29T01:00:00+00:00",
+      "fields": {
+        "author": "",
+        "author_label": "원문 작성자",
+        "date": "2026-10-29",
+        "date_label": "공식 등록일",
+        "feed_date": "2026-10-29T01:00:00+00:00",
+        "kind": "산업용 열에너지 기술·실증 보도자료",
+        "summary_ko": "공장 폐열을 회수해 공정용 고온수·증기를 만드는 산업용 히트펌프의 국내 연구개발과 실증 지원을 설명합니다. 제지공장 폐열 활용과 고온 증기 생산 기술을 사례로 공정열의 전기화 방안을 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
+      },
+      "fingerprint": "b27d25fbc245fda6f1e712bcad45fc543c80218fe57e0e32a8f4522133d15031",
+      "reason": "",
+      "scope": "공식 원문 본문·등록 정보",
+      "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
+    },
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "action": "exclude",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-29T01:00:00+00:00",
+      "fields": {},
+      "fingerprint": "5d870027cb87b6fd05d0c4be68420d446f02802ecc677076139b724d21922029",
+      "reason": "원전 공론화평가단의 구성·역할과 공정성 확보 절차에 관한 정책·행정 공지로 전자·컴퓨팅 기술 소식에 해당하지 않습니다. 광범위한 에너지 패턴이 기관명 기후에너지환경부에도 일치해 잘못 수집됩니다.",
+      "scope": "공식 원문 본문·등록 정보",
+      "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
+    },
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "action": "exclude",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-29T03:00:00+00:00",
+      "fields": {},
+      "fingerprint": "8d4cc696b41dc1020cbfdf9511c4c6c5a974fe952d3503ac5f49764f30978ec8",
+      "reason": "하수도정비 지역 지정과 관로·저류시설·펌프장 확충 예산에 관한 토목 행정 공지이며, 센서·제어·컴퓨팅 관련 기술 내용을 소개하지 않습니다. 기관명 속 에너지 때문에 산업 기술로 잘못 선정되었습니다.",
+      "scope": "공식 원문 본문·등록 정보",
+      "source_url": "https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
+    },
+    "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-20T18:11:33+00:00",
+      "fields": {
+        "author": "Jacqueline Minerd",
+        "author_label": "원문 작성자",
+        "date": "2026-10-20",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-20T18:11:33+00:00",
+        "kind": "우주 원자력·전기추진 개발 소개",
+        "summary_ko": "원자로의 핵분열 열을 폐쇄형 브레이턴 사이클로 전기로 바꾸는 SR-1 Freedom 전력 모듈의 개발·통합 계획을 소개합니다. NASA와 협력 기관이 2028년 발사를 목표로 전력 변환계와 원자로 개발을 분담하는 내용을 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "우주용 원자로 전력 모듈의 개발 현황 / NASA’s SR-1 Freedom Advances with Progress on Nuclear Power Module"
+      },
+      "fingerprint": "867be9219fd5339d7d7613960badc853e9cfb9599da56266e8c51a773324963b",
+      "reason": "",
+      "scope": "공식 원문 본문·등록 정보",
+      "source_url": "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module/"
+    },
+    "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-09-28T10:00:00+00:00",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date": "2026-09-28",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-09-28T10:00:00+00:00",
+        "kind": "우주 로봇·시험시설 소개",
+        "summary_ko": "로봇 하드웨어·소프트웨어를 함께 개발하는 NASA 존슨우주센터 팀과 iMETRO 시험시설을 소개합니다. 우주선 해치 개폐와 화물 운반 같은 작업을 가상환경과 실물 모형에서 시험하는 사례를 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "존슨우주센터의 로봇 조작 기술과 시험시설 / Reliable Robots: Meet Johnson’s Dexterous Robotics Team"
+      },
+      "fingerprint": "2a334b3d68c148514db47ea8f37861f5bf0caa96f8c908186a8f56aa69f7d293",
+      "reason": "",
+      "scope": "공식 원문 본문·등록 정보",
+      "source_url": "https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team/"
+    },
+    "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-27T20:55:00+00:00",
+      "fields": {
+        "author": "Caroline Maselli | MIT Open Learning",
+        "author_label": "원문 작성자",
+        "date": "2026-10-27",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-27T20:55:00+00:00",
+        "kind": "학습 경험·도서 소개",
+        "summary_ko": "MIT의 AI 경영자 과정 수강생이 동료들과 에세이집 The AI Anthology를 공동 집필한 과정을 소개합니다. AI의 산업·사회적 영향을 여러 실무자의 경험으로 다루는 도서와 학습 경험에 관한 기사입니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "AI 경영자 과정 수강생들의 공동 집필 사례 / Learner collaborates with MIT peers to develop book of AI insights"
+      },
+      "fingerprint": "008f526abce7a6d78488f0e939578b43b55d6afece244def83bf6859deb79d85",
+      "reason": "",
+      "scope": "원문 날짜·필자, The AI Anthology 공동 집필과 프로그램 경험 설명",
+      "source_url": "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027"
+    },
+    "papers:https://arxiv.org/abs/2610.36298": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-29T04:00:00+00:00",
+      "fields": {
+        "author": "Ayana Moshruba, Maryam Parsa",
+        "author_label": "원문 작성자",
+        "date": "2026-10-26",
+        "date_label": "arXiv 최초 제출일",
+        "feed_date": "2026-10-29T04:00:00+00:00",
+        "kind": "프리프린트 초록 · 신경망 보안 벤치마크",
+        "summary_ko": "예측 결과만 질의해 모델의 동작을 복제하는 네 가지 공격을 스파이킹 신경망과 일반 신경망에 적용합니다. MNIST·Fashion-MNIST·CIFAR-10에서 복제 모델의 응답 일치도와 적대적 공격 전이성을 비교한 연구입니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "스파이킹 신경망과 일반 신경망의 모델 탈취 공격 비교 / Spiking Neural Networks Are Harder to Steal: A Benchmark Study of Model Stealing Attacks"
+      },
+      "fingerprint": "286522ce7d03c620f000b0b0bde6e02cb1223e6662daaff150c36b4e401eb4b8",
+      "reason": "",
+      "scope": "초록과 v1 제출 이력",
+      "source_url": "https://arxiv.org/abs/2610.36298"
+    },
+    "papers:https://arxiv.org/abs/2610.36776": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-29T04:00:00+00:00",
+      "fields": {
+        "author": "Eunji Park",
+        "author_label": "원문 작성자",
+        "date": "2026-10-27",
+        "date_label": "arXiv 최초 제출일",
+        "feed_date": "2026-10-29T04:00:00+00:00",
+        "kind": "프리프린트 초록 · 논증 표현·평가 설계",
+        "summary_ko": "수학의 명제·가정·추론을 원문 근거와 연결된 그래프로 표현하고, 선행 논증의 깊이와 공유 관계를 측정하는 틀을 제안합니다. 효과를 입증한 실험 결과가 아니라, 증명 검토를 지원하기 위한 표현 방식과 평가 설계를 제시한 논문입니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "수학 논증을 의존관계 그래프로 표현하고 검토하는 방법 / Dependency Graphs of Mathematical Arguments: Representation, Structural Measurement, and Proof Review"
+      },
+      "fingerprint": "81081eedc79f1d843b50289b9b34b8e37d5e2920a7b94c7684636c5b490d6988",
+      "reason": "",
+      "scope": "초록과 v1 제출 이력; 효과에 관한 실증 근거를 제시하지 않는다는 명시",
+      "source_url": "https://arxiv.org/abs/2610.36776"
+    },
+    "papers:https://arxiv.org/abs/2610.37070": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-29T04:00:00+00:00",
+      "fields": {
+        "author": "Yueer Pan, Yuexi Pan",
+        "author_label": "원문 작성자",
+        "date": "2026-10-27",
+        "date_label": "arXiv 최초 제출일",
+        "feed_date": "2026-10-29T04:00:00+00:00",
+        "kind": "프리프린트 초록 · AI 평가 방법",
+        "summary_ko": "정답을 맞힌 사례만 골라 사고과정이 실제 답변 근거를 반영하는지 평가하면, 전체 사례를 평가할 때와 결과가 달라질 수 있음을 다룹니다. 인과 모형과 산술 과제 실험으로 이러한 선택 편향을 분석합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "정답 사례만 골라 사고과정의 충실성을 평가할 때 생기는 편향 / Correctness Conditioning as Selection in Chain-of-Thought Faithfulness Evaluation"
+      },
+      "fingerprint": "5e993acfa8c4508324d5961f0e9f60474de76a18a83d28ba9772ced6ac1c00fa",
+      "reason": "",
+      "scope": "초록과 v1 제출 이력",
+      "source_url": "https://arxiv.org/abs/2610.37070"
+    },
+    "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-18T04:00:00+00:00",
+      "fields": {
+        "author": "Zach Winn | MIT News",
+        "author_label": "원문 작성자",
+        "date": "2026-10-18",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-18T04:00:00+00:00",
+        "kind": "대학 연구 소개 · 재료 탐색",
+        "summary_ko": "결정 물질의 3차원 원자 구조와 자연어 설명을 함께 학습해 구조·물성·가공 조건을 연결하는 연구입니다. 원하는 성질을 문장으로 입력해 물질 후보를 찾는 방법과, 전고체전지 전해질 후보 탐색 사례를 소개합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "결정의 3차원 원자 구조와 문장을 연결하는 AI / Giving AI a “crystal clear” view of the materials world"
+      },
+      "fingerprint": "59645777377c4f76c9c0b82549e453f4c8162304ae24cb869044064ac7a5a8cf",
+      "reason": "",
+      "scope": "원문 날짜·필자, 멀티모달 구조와 전해질 후보 사례",
+      "source_url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018"
+    },
+    "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-14T15:00:00+00:00",
+      "fields": {
+        "author": "Zach Winn | MIT News",
+        "author_label": "원문 작성자",
+        "date": "2026-10-14",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-14T15:00:00+00:00",
+        "kind": "대학 연구 소개 · 기상 예측",
+        "summary_ko": "과거 예보의 오차를 학습하는 후처리 모형으로 기존 기상 예측을 보정하는 연구입니다. 2~6주 뒤의 확률 예보와 극한 기상 예측을 대상으로 보정 효과를 평가하며, 기존 예보 모형에 덧붙여 사용하는 구조를 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "기존 예보의 오차를 학습해 2~6주 전망을 보정하는 방법 / Researchers improve weather forecasts looking two to six weeks out"
+      },
+      "fingerprint": "d5e7a8628a836559d6af65563f30f246ef13e3b1b7a8ce83011a14e618415099",
+      "reason": "",
+      "scope": "원문 날짜·필자, postprocessing 및 subseasonal forecasting 설명",
+      "source_url": "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014"
+    },
+    "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-19T18:20:00+00:00",
+      "fields": {
+        "author": "Alex Ouyang | Abdul Latif Jameel Clinic for Machine Learning in Health",
+        "author_label": "원문 작성자",
+        "date": "2026-10-19",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-19T18:20:00+00:00",
+        "kind": "대학 연구 소개 · 의료영상",
+        "summary_ko": "태아 머리의 좌우 대칭을 모델 구조에 반영한 E(3)-Pose로 MRI 촬영 중 머리의 방향을 추적하는 연구입니다. 움직임 때문에 단면 영상의 각도가 어긋나는 문제를 줄이도록, 촬영 방향을 조정하는 방법을 소개합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "태아 MRI의 움직임을 추적하는 E(3)-Pose / Why teaching AI about symmetry could make prenatal diagnosis more reliable"
+      },
+      "fingerprint": "fa2737a108382852fb1d323901f13b681623eb0780eac151c0e8e8cb370aa91f",
+      "reason": "",
+      "scope": "원문 날짜·필자와 E(3)-Pose 및 MRI 단면 방향 추적 설명",
+      "source_url": "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019"
+    },
+    "products:https://blog.st.com/rust-mems-drivers": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-27T14:00:10+00:00",
+      "fields": {
+        "author": "David Civera",
+        "author_label": "원문 작성자",
+        "date": "2026-10-27",
+        "date_label": "원문 상단 표기일",
+        "feed_date": "2026-10-27T14:00:10+00:00",
+        "kind": "센서 드라이버·개발 예제 소개",
+        "original_title": "Rust MEMS drivers: 3 reasons to try and adopt our new sensor drivers written in Rust",
+        "summary_ko": "ST의 MEMS 센서를 I2C·SPI로 읽는 Rust 드라이버와 STM32 예제를 소개합니다. embedded-hal 인터페이스로 센서 코드의 이식성을 높이는 방식과 STSW-SDATALOG-R 데이터 로거 활용을 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "ST MEMS 센서용 Rust 드라이버 / Rust MEMS drivers: 3 reasons to try and adopt our new sensor drivers written in Rust"
+      },
+      "fingerprint": "92d69c47c15e40d19b4e99d480d764da1d57f6dd20cbab38c16b77356991519f",
+      "reason": "",
+      "scope": "원문 제목·상단 표기일, Update/Original publication 절, Reason #2와 시작 방법을 확인했습니다.",
+      "source_url": "https://blog.st.com/rust-mems-drivers/"
+    },
+    "products:https://blog.st.com/stspin9p": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-01T13:00:00+00:00",
+      "fields": {
+        "author": "David Civera",
+        "author_label": "원문 작성자",
+        "date": "2026-10-01",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-01T13:00:00+00:00",
+        "kind": "모터 드라이버 제품 소개",
+        "original_title": "STSPIN9P: ST’s first 75 V high-current motor drivers with low RDS(on) is so small it helps grow new applications",
+        "summary_ko": "48 V 전원 계통의 모터 제어를 위한 STSPIN9P 75 V 드라이버를 소개합니다. 하프브리지·풀브리지 구성, 낮은 도통저항, 전류 감지와 PWM 제어 선택을 설명하고 평가 보드로 연결합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "STSPIN9P 75 V 모터 드라이버의 구성과 제어 / STSPIN9P: ST’s first 75 V high-current motor drivers with low RDS(on) is so small it helps grow new applications"
+      },
+      "fingerprint": "5f26f59b3dfbb6e71fcc48a7a8a626579757f6337cbe12facbb3b0017badd64b",
+      "reason": "",
+      "scope": "원문 제목·상단 날짜, 첫 문단, 48 V bus 절, 제품군·저항·제어 방식 및 평가 보드 절을 확인했습니다.",
+      "source_url": "https://blog.st.com/stspin9p/"
+    },
+    "products:https://blog.st.com/touchgfx": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-14T13:00:00+00:00",
+      "fields": {
+        "author": "David Civera",
+        "author_label": "원문 작성자",
+        "date": "2026-10-14",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-14T13:00:00+00:00",
+        "kind": "임베디드 GUI 도구 기능 소개",
+        "original_title": "TouchGFX 4.27: Hybrid double buffering or how to shorten render times by 50% thanks to a new framebuffer strategy",
+        "summary_ko": "내부 RAM의 부분 프레임버퍼와 외부 RAM의 이중 프레임버퍼를 함께 사용하는 방식을 설명합니다. 변경된 화면 영역을 내부 RAM에서 처리하는 원리와 델타 압축 애니메이션 기능을 소개합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "TouchGFX 4.27의 혼합 이중 버퍼와 애니메이션 압축 / TouchGFX 4.27: Hybrid double buffering or how to shorten render times by 50% thanks to a new framebuffer strategy"
+      },
+      "fingerprint": "3b0cec06bfed9a6c046c3d9bbfd3fc70309bd92ba8fd761cf0a46e14bfb7842c",
+      "reason": "",
+      "scope": "원문 제목·상단 날짜, What’s New / Hybrid double buffering / Delta-compressed animation 절을 확인했습니다.",
+      "source_url": "https://blog.st.com/touchgfx/"
+    },
+    "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-26T03:06:28+00:00",
+      "fields": {
+        "author": "NVIDIA Korea",
+        "author_label": "원문 작성자",
+        "date": "2026-10-26",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-26T03:06:28+00:00",
+        "kind": "기상 AI 적용 사례",
+        "original_title": "유럽 전역의 선구자들, NVIDIA Earth-2 오픈 모델로 실제 날씨·기후 예측에 나서다",
+        "summary_ko": "유럽 위성 자료로 단기 구름 변화를 예측하는 StormScope EU와 지역 예보를 위한 Earth-2 활용을 소개합니다. 보험사의 사이클론 위험 평가, 대기질 모델링, 태양광 발전 예측 등 NVIDIA가 제시한 적용 사례를 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Earth-2의 유럽 지역 기상·기후 예측 사례"
+      },
+      "fingerprint": "2289da89b05de560fc6ae4e2037d1f2adc546a63ec7f437befd436022f2a3bcf",
+      "reason": "",
+      "scope": "원문 제목·상단 날짜·작성자와 StormScope EU, AXA, Manchester, TotalEnergies 사례를 확인했습니다.",
+      "source_url": "https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction/"
+    },
+    "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-26T03:12:14+00:00",
+      "fields": {
+        "author": "NVIDIA Korea",
+        "author_label": "원문 작성자",
+        "date": "2026-10-26",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-26T03:12:14+00:00",
+        "kind": "AI 인프라 운영 플랫폼 소개",
+        "original_title": "NVIDIA, AI 팩토리 엔드투엔드 관측성을 위한 Minerva를 공개하다",
+        "summary_ko": "GPU·네트워크·스토리지와 학습 작업의 운영 데이터를 연결해 장애 징후와 원인을 추적하는 Minerva를 소개합니다. NVIDIA가 설명한 동적 지식 그래프와 이상 탐지 구조를 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Minerva의 AI 데이터센터 상태 관측과 장애 분석"
+      },
+      "fingerprint": "1f6d85f97738f85e6310b95144e45bd7b3fbd627ac9e9890f9b26bda7347921b",
+      "reason": "",
+      "scope": "원문 제목·상단 날짜·작성자와 AI 팩토리를 살아 있는 하나의 그림으로 절을 확인했습니다.",
+      "source_url": "https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure/"
+    },
+    "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-28T05:02:53+00:00",
+      "fields": {
+        "author": "NVIDIA Korea",
+        "author_label": "원문 작성자",
+        "date": "2026-10-28",
+        "date_label": "원문 게시일",
+        "kind": "제조·공급망 증설 계획",
+        "original_title": "공급망 파트너와 생산 역량 확대해 AI 인프라 구축을 가속하는 NVIDIA",
+        "summary_ko": "NVIDIA가 협력사와 함께 기판·첨단 패키징·반도체 테스트·광학 엔진 생산 능력을 늘리는 계획을 발표했습니다. 생산 능력 예약 계약과 설비 증설의 대상·일정을 설명한 자료입니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "NVIDIA와 협력사의 AI 반도체 공급망 증설 계획"
+      },
+      "fingerprint": "299f555a94a94f81b5ed93747f1f8303770414462df94ff1633f1d155405266d",
+      "reason": "",
+      "scope": "원문 h1·상단 날짜·작성자와 기판, 패키징, 반도체 테스트, 광학 엔진 절을 확인했습니다.",
+      "source_url": "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/"
+    },
+    "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-27T16:00:00+00:00",
+      "fields": {
+        "author": "Sophia Abbassi, Shashank Verma",
+        "author_label": "원문 작성자",
+        "date": "2026-10-27",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-27T16:00:00+00:00",
+        "kind": "모델 미세조정 개발 예제",
+        "original_title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
+        "summary_ko": "지역 인구·언어·문화 정보를 반영한 합성 페르소나와 공식 절차 문서로 학습 대화를 만들고 Nemotron을 LoRA로 미세조정하는 과정을 설명합니다. 데이터 분리, 학습, 기본 모델과의 비교 평가를 연결한 NeMo 예제가 포함됩니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Nemotron을 지역 언어·행정 절차에 맞추는 미세조정 / Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages"
+      },
+      "fingerprint": "98559625fad74686d8d8017f18e36ceee41eb227751a7c961e536cac9c585ebe",
+      "reason": "",
+      "scope": "원문 제목·상단 날짜·post-authors byline, The difference post-training makes와 When to use this workflow 절 및 Figure 1을 확인했습니다. AI-Generated Summary만을 근거로 삼지 않았습니다.",
+      "source_url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
+    },
+    "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-27T20:50:39+00:00",
+      "fields": {
+        "author": "Ekin Karabulut, David Lifshitz, Hagay Sharon",
+        "author_label": "원문 작성자",
+        "date": "2026-10-27",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-27T20:50:39+00:00",
+        "kind": "GPU 공유·운영 도구 기술 소개",
+        "original_title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
+        "summary_ko": "Kubernetes에서 GPU Fractioning Operator와 KAI Scheduler로 작업별 GPU 메모리 요청량과 상한을 적용하는 방법을 설명합니다. 메모리 제한, 시간 분할, SM 공유를 구분하고 Pod 설정 예제를 제공합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "CUDA 13.4와 Kubernetes의 작업별 GPU 메모리 제한 / Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4"
+      },
+      "fingerprint": "80f5dd22c00bcca471384a380ef2e805821c52005ec498f35db3831bfe6499b0",
+      "reason": "",
+      "scope": "원문 제목·상단 날짜·post-authors byline, 본문 CUDA memory boundary 설명과 GPU fractioning, KAI Scheduler, Table 1·2를 확인했습니다. AI-Generated Summary만을 근거로 삼지 않았습니다.",
+      "source_url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
+    },
+    "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-27T17:00:00+00:00",
+      "fields": {
+        "author": "Phillip Singh",
+        "author_label": "원문 작성자",
+        "date": "2026-10-27",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-27T17:00:00+00:00",
+        "kind": "PC 플랫폼·게임 개발 기술 소개",
+        "original_title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
+        "summary_ko": "Blackwell RTX GPU와 Grace CPU를 결합한 Windows PC 플랫폼 RTX Spark의 게임 개발 기능을 소개합니다. DLSS·ACE·RTX Kit·Nsight를 이용한 신경 렌더링, 로컬 AI 캐릭터, 디버깅을 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "RTX Spark의 신경 렌더링과 게임 AI 개발 / NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games"
+      },
+      "fingerprint": "390dbe846bfe64a8e52dd2563ad6d7a019fa9a0db39e9114af72f7aa1c7cf051",
+      "reason": "",
+      "scope": "원문 제목·상단 날짜·post-authors byline, 본문 첫 문단과 기술 목록, DLSS·ACE 절을 확인했습니다. AI-Generated Summary만을 근거로 삼지 않았습니다.",
+      "source_url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+    },
+    "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-27",
+      "fields": {
+        "author": "이광현, 권재영, 장희명",
+        "author_label": "원문 작성자",
+        "date_label": "공식 등록일",
+        "kind": "연구개발 정책 브리프",
+        "summary_ko": "대형 국가 R&D 사업의 투자계획을 검토하는 제도의 도입 배경과 점검 항목을 설명합니다. 정부 지원 필요성, 목표·성과지표, 기존 사업과의 중복, 예산 산출근거를 확인하는 기준을 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개"
+      },
+      "fingerprint": "a3a36ae8613ad6def0456e0fa0e9714177b88818a4ec842965cd7a9a0d1b57c2",
+      "reason": "",
+      "scope": "공식 원문 본문·등록 정보",
+      "source_url": "https://www.kistep.re.kr/board.es?mid=a10306040000&bid=0031&list_no=94905&act=view"
+    },
+    "technology:https://www.spri.kr/posts/view/24031?code=AI-Brief": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-12",
+      "fields": {
+        "author": "이재현, 김지민, 안성원",
+        "author_label": "원문 작성자",
+        "date_label": "공식 게시일",
+        "kind": "월간 AI 정책·산업 동향",
+        "summary_ko": "AI 규제와 국제 협의, 주요 기업의 모델·서비스 발표, 연구 동향과 고용 변화를 분야별로 정리한 월간 간행물입니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개"
+      },
+      "fingerprint": "b2b63d426e0775a0ec83a7487cfc66bee90792fc92ed025319bcd05193730eba",
+      "reason": "",
+      "scope": "공식 페이지의 발행호·날짜·저자·전체 목차",
+      "source_url": "https://www.spri.kr/posts/view/24031?code=AI-Brief"
+    },
+    "technology:https://www.spri.kr/posts/view/24032?code=magazine": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-14",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date_label": "공식 게시일",
+        "kind": "월간 소프트웨어·AI 산업 간행물",
+        "summary_ko": "AI 벤처투자의 집중 양상과 국내 시사점, 피지컬 AI 시대의 국내 NPU 기업 과제, 기업의 AI 전환 현장에서 일하는 FDE의 역할을 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개"
+      },
+      "fingerprint": "f65662c01677fab218516dd3a634c27affa9de46160c392df47d981ba43b9e23",
+      "reason": "",
+      "scope": "공식 페이지의 발행호·날짜·전체 목차",
+      "source_url": "https://www.spri.kr/posts/view/24032?code=magazine"
+    },
+    "tools:https://blog.python.org/2026/10/python-3150-final-is-here": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-09T00:00:00+00:00",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date": "2026-10-09",
+        "date_label": "원문 게시일",
+        "kind": "Python 정식 버전 발표",
+        "summary_ko": "Python 3.15의 첫 정식 버전입니다. UTF-8 기본 인코딩, 명시적 지연 import, sentinel·frozendict 내장 타입, 실험적 JIT와 프로파일링 도구의 변경 사항을 소개합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Python 3.15.0 정식 버전 공개 | Python 3.15.0 (final) is here!"
+      },
+      "fingerprint": "fb0cdd3e1358b6a241d03781851caceccece1b81b829f037adb762cdd36076b1",
+      "reason": "",
+      "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
+      "source_url": "https://blog.python.org/2026/10/python-3150-final-is-here/"
+    },
+    "tools:https://blog.python.org/2026/10/python-3151-3149-31317": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-21T00:00:00+00:00",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date": "2026-10-21",
+        "date_label": "원문 게시일",
+        "kind": "Python 보안 릴리스",
+        "summary_ko": "eMudhra·emSign 인증기관 사고에 대응한 긴급 보안 릴리스입니다. 세 버전에 포함되는 pip를 26.2.2로 올리고, 갱신된 certifi 인증서 묶음을 제공하는 것이 이번 발표의 핵심입니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Python 3.15.1·3.14.9·3.13.17 보안 업데이트 | Python 3.15.1, 3.14.9 and 3.13.17 are out"
+      },
+      "fingerprint": "863f520abbcbe4232f9c234b3a876d513dc13e5fae7d2ed9b5e2c699b4fd5a0f",
+      "reason": "",
+      "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
+      "source_url": "https://blog.python.org/2026/10/python-3151-3149-31317/"
+    },
+    "tools:https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-26T00:00:00+00:00",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date": "2026-10-26",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-26T00:00:00+00:00",
+        "kind": "Python 보안 릴리스",
+        "summary_ko": "유출된 eMudhra 중간 인증기관 키를 ssl 모듈에서 차단하는 보안 릴리스입니다. Python 3.15·3.14는 설치 파일을 제공하며, 3.13·3.12·3.11은 소스 형태로 보안 수정판을 배포합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Python 3.15.2 등 다섯 계열의 보안 업데이트 | Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out"
+      },
+      "fingerprint": "ca2388313074f84523e9486d66edd9ef34bcc9eeb7af98d81fec7e00bd3bfa82",
+      "reason": "",
+      "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
+      "source_url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/"
+    },
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-09-22T06:49:10+00:00",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date_label": "공식 릴리스 게시 시각",
+        "summary_ko": "Clang·LLVM 23.1.2의 바이너리·소스 배포 안내입니다. Linux x86-64·Arm64, macOS Arm64, Windows x64·Arm64용 패키지와 소스·테스트 묶음, 배포 파일의 서명 검증 방법을 제공합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "LLVM 23.1.2 배포 파일·서명 안내 | LLVM 23.1.2"
+      },
+      "fingerprint": "67670951309cf27d04dc380f281a00865b98b84347f9cd59fd954f9d1a09004f",
+      "reason": "",
+      "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
+      "source_url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2"
+    },
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-06T14:53:00+00:00",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date_label": "공식 릴리스 게시 시각",
+        "summary_ko": "Clang·LLVM 23.1.3의 바이너리·소스 배포 안내입니다. Linux x86-64·Arm64, macOS Arm64, Windows x64·Arm64용 패키지와 소스·테스트 묶음, 배포 파일의 서명 검증 방법을 제공합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "LLVM 23.1.3 배포 파일·서명 안내 | LLVM 23.1.3"
+      },
+      "fingerprint": "612d10487c804bd84d328104289a540f6dea9a48174f41efbe81c5da3600deb6",
+      "reason": "",
+      "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
+      "source_url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3"
+    },
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-20T13:03:13+00:00",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date_label": "공식 릴리스 게시 시각",
+        "summary_ko": "Clang·LLVM 23.1.4의 바이너리·소스 배포 안내입니다. Linux x86-64·Arm64, macOS Arm64, Windows x64·Arm64용 패키지와 소스·테스트 묶음, 배포 파일의 서명 검증 방법을 제공합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "LLVM 23.1.4 배포 파일·서명 안내 | LLVM 23.1.4"
+      },
+      "fingerprint": "e42a17032b0892ef0a9e6199b6e5d2adb1266671deb1b9c3f4e582599cf746fe",
+      "reason": "",
+      "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
+      "source_url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4"
+    },
+    "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-28T22:23:36+00:00",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date_label": "공식 릴리스 게시 시각",
+        "summary_ko": "임베디드 RTOS Zephyr 4.5.0은 Infineon TriCore·Qualcomm Hexagon 지원과 실험적 멀티미디어 파이프라인을 추가합니다. QUIC·HTTP/3, LIN 드라이버, SBOM 생성과 Twister의 다중 장치 시험 기능도 이번 릴리스에서 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Zephyr 4.5.0 아키텍처·네트워크·시험 기능 | Zephyr 4.5.0"
+      },
+      "fingerprint": "7fe3be758befd535f1758288d461ccb964354ced0b2f4483255c4db11e6454fe",
+      "reason": "",
+      "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
+      "source_url": "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-29",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date_label": "공식 RSS 게시일",
+        "kind": "제품 보안 업데이트 권고",
+        "summary_ko": "Cisco Expressway의 고정 자격 증명·메모리 처리 취약점과 Unified CM 등 음성 제품군의 인증·입력 처리 취약점을 다룹니다. 제품별 영향 버전과 업데이트 또는 마이그레이션 경로를 표로 제공합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "url": "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244"
+      },
+      "fingerprint": "0999eb6992c5bbd4001fe63183e57f53d116f958357a9a2f069afc6fb73da254",
+      "reason": "",
+      "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
+      "source_url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72244"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-29",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date_label": "공식 RSS 게시일",
+        "kind": "제품 보안 업데이트 권고",
+        "summary_ko": "Splunk AI Toolkit의 권한 검사·역직렬화 취약점, Connect for Kafka의 SSRF·인증서 검증 취약점, MCP Server 앱의 역직렬화 취약점 등을 정리합니다. 각 제품과 버전 계열에 적용할 해결 버전이 표에 나와 있습니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "url": "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245"
+      },
+      "fingerprint": "89bd5ba08763cfaef3d7ed5e61ebc298a26f49a1b355f639246280e0688ac911",
+      "reason": "",
+      "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
+      "source_url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72245"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": {
+      "action": "keep",
+      "checked_on": "2026-10-29",
+      "collected_date": "2026-10-29",
+      "fields": {
+        "author_label": "원문 작성자",
+        "date_label": "공식 RSS 게시일",
+        "kind": "제품 보안 업데이트 권고",
+        "summary_ko": "JFrog Artifactory의 부적절한 인증 취약점(CVE-2026-82329)에 관한 보안공지입니다. 7.111·7.117·7.125·7.133·7.146·7.161 계열의 영향 범위와 각 계열의 해결 버전을 제시합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "url": "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246"
+      },
+      "fingerprint": "980eccc98413adfad670f3a5d18102144156fc590d0c7a7d7e89924b59bd124f",
+      "reason": "",
+      "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
+      "source_url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72246"
+    }
+  },
+  "schema": 1
+}
