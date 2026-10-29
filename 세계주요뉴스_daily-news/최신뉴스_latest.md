@@ -1,6 +1,6 @@
 # 오늘의 뉴스 | Daily news
 
-수집 시각: 2026-10-29 09:02 KST(한국 표준시)
+수집 시각: 2026-10-29 09:48 KST(한국 표준시)
 
 매체별 공식 피드에서 최근 24시간에 발행된 기사 중 앞에 실린 기사를 연결합니다. 제목과 링크는 원문을 유지하며, 기사 발행 시각은 한국 표준시로 표시합니다.
 
@@ -10,10 +10,10 @@
 
 ### [ABC News 미국](https://abcnews.com/)
 
-- [After years under fire, a rare quiet settles over Ukrainian city as truce holds](<https://abcnews.com/International/wireStory/after-years-fire-rare-quiet-settles-ukrainian-city-137648390>) · 10-29 03:49 KST
-- [Cyclone Arnab hits India's Andhra Pradesh state as tens of thousands evacuate](<https://abcnews.com/International/wireStory/cyclone-arnab-hits-indias-andhra-pradesh-state-tens-137629755>) · 10-28 15:55 KST
-- [Spain’s 4 deadly train crashes this year, at a glance](<https://abcnews.com/International/wireStory/spains-4-deadly-train-crashes-year-glance-137642086>) · 10-29 00:05 KST
-- [Houthis say Saudi-led airstrikes killed 14 at a market in northern Yemen, and other Mideast news](<https://abcnews.com/International/wireStory/yemen-appeals-civilians-houthis-tighten-siege-taiz-mideast-137634512>) · 10-29 01:10 KST
+- [US and Japan agree to establish missile-production facility](<https://abcnews.com/International/wireStory/us-japan-long-alarmed-chinas-aggression-agree-establish-137659559>) · 10-29 09:10 KST
+- [Hunger surges in Haiti as gang violence, high food prices and a supercharged El Niño persist](<https://abcnews.com/International/wireStory/hunger-surges-haiti-gang-violence-high-food-prices-137654749>) · 10-29 06:40 KST
+- [Popemobile exhibition at the Vatican features the vehicle popes have used since 1930](<https://abcnews.com/International/wireStory/popemobile-exhibition-unveiled-vatican-featuring-vehicle-popes-1930-137650644>) · 10-29 05:11 KST
+- [Thousands in Kosovo demand state action after 8 women die this year in domestic violence](<https://abcnews.com/International/wireStory/thousands-kosovo-demand-state-action-after-8-women-137650643>) · 10-29 03:48 KST
 
 ### [NPR](https://www.npr.org/)
 
@@ -37,33 +37,33 @@
 
 ### [연합뉴스 국제](https://www.yna.co.kr/international/all)
 
-- [젤렌스키 "3자회담, 내달 6∼10일 열자"…러 "4일 이후"\(종합2보\)](<https://www.yna.co.kr/view/AKR20261029002452108>) · 10-29 08:54 KST · 작성·제공: 류미나
-- [MS "자본지출 부족분은 데이터센터 건설 지연 때문"](<https://www.yna.co.kr/view/AKR20261029033000009>) · 10-29 08:48 KST · 작성·제공: 주종국
-- [日방위성 "中해군·해경 함선, 日주변 해역 동시 통과"](<https://www.yna.co.kr/view/AKR20261029035400073>) · 10-29 08:45 KST · 작성·제공: 조성미
-- [스페인 사흘 국가애도…고속열차 추돌사고로 최소 68명 사망\(종합\)](<https://www.yna.co.kr/view/AKR20261029009151085>) · 10-29 08:29 KST · 작성·제공: 송진원
+- ['스타실드 먹통' 우크라 비웃듯…푸틴 "미스터 머스크는 천재"](<https://www.yna.co.kr/view/AKR20261029047100009>) · 10-29 09:41 KST · 작성·제공: 신유리
+- [캐나다은행 총재, 이례적으로 미 재정정책 직격](<https://www.yna.co.kr/view/AKR20261029041300009>) · 10-29 09:39 KST · 작성·제공: 설원태
+- [스페인 9개월만에 또 고속철 참사…후진국형 사고 재발 원인은](<https://www.yna.co.kr/view/AKR20261029043100009>) · 10-29 09:39 KST · 작성·제공: 이신영
+- [日요미우리 "한일 정상 양호한 관계가 양국 관계 개선 뒷받침"](<https://www.yna.co.kr/view/AKR20261029048100073>) · 10-29 09:32 KST · 작성·제공: 조성미
 
 ## 한국 뉴스
 
 ### [연합뉴스](https://www.yna.co.kr/)
 
-- [SSG닷컴, 쓱데이 단독상품 100여종…장보기부터 명품 뷰티까지](<https://www.yna.co.kr/view/AKR20261029035800030>) · 10-29 08:45 KST · 작성·제공: 조민정
-- [키움증권, 인텔리안테크 목표가↓…"3분기 실적 일시적 부진 예상"](<https://www.yna.co.kr/view/AKR20261029036700008>) · 10-29 08:45 KST · 작성·제공: 김유향
-- [커피·치킨 조리 편의점 등 점검했더니…33곳 위생 불량](<https://www.yna.co.kr/view/AKR20261029034000017>) · 10-29 08:43 KST · 작성·제공: 박상현
-- [인천서 흉기 난동범 제압한 시민 5명 GS칼텍스 참사람상](<https://www.yna.co.kr/view/AKR20261028178500003>) · 10-29 08:42 KST · 작성·제공: 강태우
+- [현대건설, 디에이치 반포124 견본주택에 '디에이치 하우스' 조성](<https://www.yna.co.kr/view/AKR20261029058300003>) · 10-29 09:42 KST · 작성·제공: 서미숙
+- [부산 3분기 제조업 생산 소폭 증가 추정…부동산 거래 감소](<https://www.yna.co.kr/view/AKR20261029057900051>) · 10-29 09:41 KST · 작성·제공: 오수희
+- [대구 동구, 대표 캐릭터 '동구르르' 카톡 이모티콘 무료 배포](<https://www.yna.co.kr/view/AKR20261029056200053>) · 10-29 09:41 KST · 작성·제공: 박세진
+- ["제네시스 GV90 마주 열리는 문, 로봇 부품서 힌트 찾아"](<https://www.yna.co.kr/view/AKR20261029055900003>) · 10-29 09:41 KST · 작성·제공: 홍규빈
 
 ### [SBS 뉴스](https://news.sbs.co.kr/)
 
-- [\[단독\] "담배 냄새 지적에 약 과다 복용"…피해자 남편, "막을 수 있었다" 분통](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008820210&plink=RSSLINK&cooper=RSSREADER>) · 10-29 08:35 KST · 작성·제공: mk@sbs.co.kr \(조민기\)
-- [무려 35억 싸게 팔렸다…"빨리 처분해야" 곳곳서 비상](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008820035&plink=RSSLINK&cooper=RSSREADER>) · 10-29 08:21 KST · 작성·제공: dennoch@sbs.co.kr \(전형우 기자\)
-- ["교사 말고 학교에 말하세요"…민원 스트레스 끝날까](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008819978&plink=RSSLINK&cooper=RSSREADER>) · 10-29 09:00 KST · 작성·제공: jdono@sbs.co.kr \(조제행 기자\)
+- [청와대, '외국인노동자·다문화' 논란에 "발언 맥락·골자 고려해달라"](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008820307&plink=RSSLINK&cooper=RSSREADER>) · 10-29 09:32 KST · 작성·제공: khanporter@sbs.co.kr \(강민우\)
+- [\[단독\] "담배 냄새 지적에 약 과다 복용"…피해자 남편, "막을 수 있었다" 분통](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008820210&plink=RSSLINK&cooper=RSSREADER>) · 10-29 09:32 KST · 작성·제공: mk@sbs.co.kr \(조민기\)
+- [무려 35억 싸게 팔렸다…"빨리 처분해야" 곳곳서 비상](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008820035&plink=RSSLINK&cooper=RSSREADER>) · 10-29 09:32 KST · 작성·제공: dennoch@sbs.co.kr \(전형우 기자\)
 - ["사진만 봐도 짜증"…분노 부른 뒷좌석 '민폐 승객'](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008819974&plink=RSSLINK&cooper=RSSREADER>) · 10-29 08:25 KST · 작성·제공: jdono@sbs.co.kr \(조제행 기자\)
 
 ### [동아일보](https://www.donga.com/)
 
-- [디포캐스트, 유입처별 성과 등급 솔루션 운영… LG유플러스 ‘알닷’ 캠페인 참여](<https://www.donga.com/news/Economy/article/all/20261028/134925394/1>) · 10-29 09:00 KST
-- [세라믹프로, UV램프 비추면 정품 로고 뜨는 ‘시그니처 PPF’ 출시](<https://www.donga.com/news/Economy/article/all/20261028/134924426/1>) · 10-29 09:00 KST
-- [“한국인들 사랑하고 감사합니다”…일본 소도시 카페 화장실 손 편지 ‘훈훈’](<https://www.donga.com/news/Society/article/all/20261029/134929836/1>) · 10-29 08:53 KST
-- [채용에도 AI 바람…SK AX, AI로 지원자 실무역량 가린다](<https://www.donga.com/news/Economy/article/all/20261028/134927033/1>) · 10-29 08:30 KST
+- [‘김민재 결장’ 뮌헨, 2부 팀 6-1 완파하고 컵 대회 16강 진출](<https://www.donga.com/news/Sports/article/all/20261029/134930228/1>) · 10-29 09:47 KST
+- [서울 ‘국평’ 아파트 매매가 2.5% 하락…전세 보증금은 3.8% 올라](<https://www.donga.com/news/Economy/article/all/20261029/134930188/1>) · 10-29 09:43 KST
+- [중기수출 업종간 격차…“서비스 웃고, 제조 울상”](<https://www.donga.com/news/Economy/article/all/20261029/134930170/1>) · 10-29 09:43 KST
+- [코스피, 개인·외인 매수세에 1%대 상승세…삼전·닉스도 강세](<https://www.donga.com/news/Economy/article/all/20261029/134930143/1>) · 10-29 09:38 KST
 
 ## 수집 상태
 
