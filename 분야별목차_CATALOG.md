@@ -1,6 +1,6 @@
 # 분야별 목차 | Subject index
 
-[세계 주요 뉴스](세계주요뉴스_daily-news/README.md)는 학습 자료와 별도로, 해외·국내 매체의 공식 뉴스 링크를 매일 모으는 목록입니다.
+[뉴스](뉴스_news/README.md)는 학습 자료와 별도로, 해외·국내의 주요 소식과 기사 개요를 날짜별로 보관하는 목록입니다.
 
 공학 분야는 계산·구현 대상을 기준으로 묶었습니다. 언어이해·추리논증과 인문사회, 작성자 이력은 별도의 큰 분류에 있습니다. [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md), [논문 해설](논문해설_papers/README.md), [기술 동향](기술동향_technology/README.md), [제품·기술 분석](제품기술분석_product-technology/README.md)도 독립된 목차로 읽으실 수 있습니다.
 

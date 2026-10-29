@@ -2,9 +2,9 @@
 
 회로와 반도체부터 RTL·펌웨어, 시스템 소프트웨어, GPU와 AI까지 다루는 기술 기록입니다. 개념을 정리하고 수식을 코드로 옮기며, 직접 실행한 결과와 그 조건을 함께 모았습니다. 언어이해·추리논증, 외국어·기술 영어, 인문사회와 예술은 공학과 구분하여 읽으실 수 있습니다.
 
-## 세계 주요 뉴스
+## 뉴스
 
-[세계 주요 뉴스](세계주요뉴스_daily-news/README.md)에서 해외·국내 매체의 [오늘의 기사](세계주요뉴스_daily-news/최신뉴스_latest.md)를 읽으실 수 있습니다. 공식 피드의 제목과 원문 링크를 매일 오전 9시 17분(한국 시간)에 자동으로 모읍니다.
+[뉴스](뉴스_news/README.md)에서 세계·국내의 주요 소식과 짧은 기사 개요를 읽으실 수 있습니다. 새 소식을 매시간 확인하고 날짜별로 보관합니다.
 
 ## 직무와 실무 기술
 
@@ -91,7 +91,7 @@ These notes connect circuits, semiconductors, RTL, firmware, systems software, G
 - Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [Programmers solutions](programmers/README.md), [hardware coding practice](하드웨어코딩_hardware-coding/README.md).
 - Background: [Research](연구_research/README.md), [author](소개_about/README.md), [contact](소개_about/연락_CONTACT.md), [tools](도구와환경_tools/README.md), [references](참고자료_references/README.md), [contributing](기여안내_contributing/README.md).
 
-- News: [Daily news links](세계주요뉴스_daily-news/README.md), collected from official international and Korean feeds at 09:17 Asia/Seoul.
+- News: [Daily news links](뉴스_news/README.md), checked hourly, with dated archives and Korean article briefs.
 
 ### Engineering and shared knowledge
 

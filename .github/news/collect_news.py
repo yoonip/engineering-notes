@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 import html
+from html.parser import HTMLParser
 from http.client import HTTPException
 import ipaddress
 import json
@@ -28,6 +29,7 @@ USER_AGENT = 'EngineeringNotesNews/1.0 (+https://github.com/yoonip/engineering-n
 GROUPS = {'world': '세계 뉴스', 'korea': '한국 뉴스'}
 REASONS = {
     'ok': '정상', 'no_recent_items': '최근 24시간 기사 없음',
+    'unchanged': '변경 없음',
     'http_error': 'HTTP 응답 오류', 'network_error': '연결 오류',
     'invalid_feed': '피드 형식 오류', 'unsafe_redirect': '허용되지 않은 이동 주소',
     'too_large': '피드 크기 초과',
@@ -72,10 +74,10 @@ def load_config(path: Path) -> dict:
     config = json.loads(path.read_text(encoding='utf-8'))
     if config.get('schema_version') != 1 or config.get('lookback_hours') != 24:
         raise ValueError('지원하지 않는 설정 형식 또는 수집 기간입니다.')
-    if not 1 <= config['items_per_source'] <= 6:
-        raise ValueError('매체별 기사 수는 1~6건이어야 합니다.')
+    if not 1 <= config['items_per_source'] <= 12:
+        raise ValueError('매체별 기사 수는 1~12건이어야 합니다.')
     sources = config['sources']
-    if not sources or len(sources) > 20 or len({s['id'] for s in sources}) != len(sources):
+    if not sources or len(sources) > 30 or len({s['id'] for s in sources}) != len(sources):
         raise ValueError('매체 목록이 비어 있거나 ID가 중복됩니다.')
     for source in sources:
         if not re.fullmatch(r'[a-z0-9-]+', source['id']) or source['group'] not in GROUPS:
@@ -147,6 +149,45 @@ def url_key(value: str) -> str:
     return urlunsplit((parts.scheme, parts.netloc.lower(), parts.path, urlencode(query), ''))
 
 
+class PlainText(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts, self.hidden = [], 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ('script', 'style'):
+            self.hidden += 1
+        elif tag in ('p', 'br', 'div'):
+            self.parts.append(' ')
+
+    def handle_endtag(self, tag):
+        if tag in ('script', 'style') and self.hidden:
+            self.hidden -= 1
+        elif tag in ('p', 'div'):
+            self.parts.append(' ')
+
+    def handle_data(self, data):
+        if not self.hidden:
+            self.parts.append(data)
+
+
+def plain_description(value: str) -> str:
+    parser = PlainText()
+    parser.feed(value[:20_000])
+    return ' '.join(''.join(parser.parts).split())
+
+
+def brief_description(value: str) -> str:
+    text = plain_description(value)
+    text = re.sub(r'^\([^)]*=연합뉴스\)\s*[^=]{0,100}=\s*', '', text)
+    # 피드가 제공한 첫 완결 문장만 사용하며 잘린 문장을 사실 요약으로 꾸미지 않습니다.
+    sentences = re.split(r'(?<=[.!?。])\s+(?=[A-Z가-힣“\"\'])', text)
+    first = sentences[0].strip() if sentences else ''
+    if len(first) < 12 or len(first) > 700 or re.search(r'(?i)read more|continue reading', first):
+        return ''
+    return first
+
+
 def parse_feed(data: bytes, source: dict, now: datetime) -> tuple[list[dict], dict]:
     if len(data) > MAX_BYTES:
         raise FeedError('too_large')
@@ -186,6 +227,18 @@ def parse_feed(data: bytes, source: dict, now: datetime) -> tuple[list[dict], di
         credit = clean_title(field(node, ('creator', 'publisher', 'author')))
         if credit:
             entry['credit'] = credit
+        if source.get('news_mode'):
+            description = field(node, ('description', 'summary')) or ''
+            if credit in source.get('excluded_creators', []):
+                continue
+            wire = source.get('exclude_credit_pattern')
+            if wire and re.search(wire, credit + ' ' + plain_description(description), re.I):
+                continue
+            if source.get('summary_mode') != 'link_only':
+                excerpt = brief_description(description)
+                if excerpt:
+                    entry['excerpt'] = excerpt
+            entry['feed_rank'] = nodes.index(node)
         items.append(entry)
     return items, stats
 
@@ -197,12 +250,18 @@ def fetch_source(source: dict, now: datetime) -> dict:
         'User-Agent': USER_AGENT, 'Accept': 'application/rss+xml, application/atom+xml, application/xml, text/xml',
         'Accept-Encoding': 'identity',
     })
+    for header in ('ETag', 'Last-Modified'):
+        value = source.get('conditional', {}).get(header)
+        if isinstance(value, str) and len(value) <= 1000 and '\r' not in value and '\n' not in value:
+            request.add_header('If-None-Match' if header == 'ETag' else 'If-Modified-Since', value)
     for attempt in range(2):
         try:
             with opener.open(request, timeout=TIMEOUT) as response:
                 if not safe_url(response.url, source['feed_hosts']):
                     raise FeedError('unsafe_redirect')
                 data = response.read(MAX_BYTES + 1)
+                report['conditional'] = {h: response.headers[h] for h in ('ETag', 'Last-Modified')
+                                         if response.headers.get(h)} if hasattr(response, 'headers') else {}
             report['items'], report['stats'] = parse_feed(data, source, now)
             report['state'] = 'ok' if report['items'] else 'no_recent_items'
             report.pop('http_status', None)
@@ -211,6 +270,9 @@ def fetch_source(source: dict, now: datetime) -> dict:
             report['state'] = str(exc)
             break
         except HTTPError as exc:
+            if exc.code == 304:
+                report.update(state='unchanged', conditional=source.get('conditional', {}))
+                break
             report.update(state='http_error', http_status=exc.code)
             if exc.code not in (429, 500, 502, 503, 504):
                 break
@@ -315,19 +377,8 @@ def run(config: dict, output: Path, now: datetime, fetcher=fetch_source) -> tupl
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--config', type=Path, default=Path(__file__).with_name('sources.json'))
-    parser.add_argument('--output', type=Path, default=Path(__file__).parents[1] / '최신뉴스_latest.md')
-    parser.add_argument('--report', type=Path, help='기사 본문·제목을 제외한 실행 상태 JSON 경로')
-    args = parser.parse_args()
-    code, summary = run(load_config(args.config), args.output, datetime.now(timezone.utc))
-    if args.report:
-        args.report.parent.mkdir(parents=True, exist_ok=True)
-        args.report.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(json.dumps(summary, ensure_ascii=False, indent=2))
-    if code:
-        print('세계 2곳·한국 1곳 이상의 최신 기사를 확보하지 못해 기존 목록을 유지합니다.', file=sys.stderr)
-    return code
+    from news_pipeline import main as publish_main
+    return publish_main()
 
 
 if __name__ == '__main__':

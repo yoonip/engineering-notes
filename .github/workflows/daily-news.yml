@@ -1,8 +1,8 @@
-name: 매일 뉴스 링크 수집 / Daily news links
+name: 뉴스 갱신 / Update news
 
 on:
   schedule:
-    - cron: '17 0 * * *'  # UTC 00:17 = 한국 표준시 09:17
+    - cron: '17 * * * *'  # 매시간 17분에 새 기사와 후속 내용을 확인합니다.
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ jobs:
   collect:
     if: github.repository == 'yoonip/engineering-notes' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 20
     permissions:
       contents: write
     steps:
@@ -26,15 +26,16 @@ jobs:
           ref: main
           fetch-depth: 1
           sparse-checkout: |
-            세계주요뉴스_daily-news
+            .github/news
+            뉴스_news
           sparse-checkout-cone-mode: true
 
       - name: 수집기 검사 / Test collector
-        run: python3 -m unittest discover -s '세계주요뉴스_daily-news/자동수집_automation' -p 'test_*.py' -v
+        run: python3 -m unittest discover -s .github/news -p 'test_*.py' -v
 
       - name: 공식 피드 수집 / Collect official feeds
         run: >-
-          python3 '세계주요뉴스_daily-news/자동수집_automation/collect_news.py'
+          python3 .github/news/news_pipeline.py
           --report "$RUNNER_TEMP/daily-news-status.json"
 
       - name: 수집 상태 기록 / Record collection status
@@ -51,7 +52,7 @@ jobs:
               with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
                   out.write('## News collection\n\n')
                   out.write('```json\n' + json.dumps(data, ensure_ascii=False, indent=2) + '\n```\n')
-              failed = [s['id'] for s in data['sources'] if s['state'] != 'ok']
+              failed = [s['id'] for s in data['sources'] if s['state'] not in ('ok', 'unchanged', 'no_recent_items')]
               if failed:
                   print('::warning::Some feeds did not supply current articles: ' + ', '.join(failed))
           PY
@@ -59,8 +60,7 @@ jobs:
       - name: 최신 뉴스 게시 / Publish latest news
         run: |
           set -euo pipefail
-          news_file='세계주요뉴스_daily-news/최신뉴스_latest.md'
-          git add -- "$news_file"
+          git add -- 뉴스_news .github/news/state.json
           if git diff --cached --quiet; then
             echo 'The news list has not changed.'
             exit 0
@@ -68,8 +68,12 @@ jobs:
           git diff --cached --check
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          stamp="$(TZ=Asia/Seoul date +%F)"
-          git commit -m "오늘의 뉴스 ${stamp} / Daily news ${stamp}"
+          stamp="$(TZ=Asia/Seoul date '+%F %H:%M')"
+          if git diff --cached --quiet -- 뉴스_news; then
+            git commit -m "뉴스 확인 상태 ${stamp} / News check state ${stamp}"
+          else
+            git commit -m "뉴스 ${stamp} / News ${stamp}"
+          fi
           # 사람이 작업한 커밋은 보존합니다. 같은 파일 충돌은 실패로 남깁니다.
           git fetch origin main
           git rebase origin/main
