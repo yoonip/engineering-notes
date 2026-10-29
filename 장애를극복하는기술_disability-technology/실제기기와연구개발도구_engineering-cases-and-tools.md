@@ -70,6 +70,20 @@ AI가 모든 보조기기에 들어가는 것은 아닙니다. 정해진 파형 
 
 Ottobock의 C-Leg는 무릎 관절 의지 안에 관절각 센서, 가속도계·자이로스코프, 마이크로프로세서, 유압 장치를 둡니다. 센서로 무릎과 하퇴의 움직임을 읽고, 제어기가 보행 주기와 상황을 추정한 뒤 유압 저항을 조절합니다. 제조사 전문가 안내서는 센서 정보가 초당 100회 갱신·평가된다고 밝히며, 배터리 부족·고장 때의 안전 모드도 설명합니다. 보행 속도 하나만 읽는 장치가 아니라 입각기와 유각기, 앉기·서기, 경사 등 서로 다른 상황에서 무릎이 접히거나 펴지는 속도를 조정하는 시스템입니다. ([Ottobock 사용 및 전문가 안내서](https://spa-prod-commerce.cep.ottobock.com/medias/C-Leg4Update-InstructionsforProfessionals-English-7-2024.pdf?attachment=true&context=bWFzdGVyfHJvb3R8MzQ2NjA5NnxhcHBsaWNhdGlvbi9wZGZ8aDZkL2g4OC85Mzk3MDgxNDQwMjg2LnBkZnwwZDEzYTkzODI1YzlhZjUwYTVjZTRmODdkOWQ4OTlmMjJiYTE0MmEwNDBjYjUxN2ZmYTM0NDVmOTZjODBiZDVi)
 
+![Ottobock C-Leg 마이크로프로세서 무릎 의지의 제품 사진](https://images.ctfassets.net/6ip7bnhvpajs/1V3OX5uX46h2oIiwJypnKH/9da978c8274c4c6bb20668749fc26d3c/4819172.jpg?fm=webp&fit=fill&f=faces&w=1200&h=1200&q=75)
+
+그림 1. 제조사가 공개한 C-Leg 제품 사진입니다. 무릎 관절 의지의 외형을 볼 수 있지만, 내부 센서나 유압부의 위치를 보여 주는 분해 사진은 아닙니다. [Ottobock C-Leg 공식 소개](https://corporate.ottobock.com/en/media/media-information/c-leg)
+
+```mermaid
+flowchart LR
+    A[관절 움직임·다리 가속도 측정] --> B[마이크로프로세서가 보행 단계 추정]
+    B --> C[유압 관절의 저항 조절]
+    C --> D[입각기 지지·유각기 움직임 보조]
+    D --> A
+```
+
+그림 2. 제조사가 안내한 센서·제어기·유압 관절의 기능 관계를 간단히 나타냈습니다. 실제 제품의 세부 회로와 제어 알고리즘을 뜻하지 않습니다. 관절이 놓인 시점에 따라 지지와 움직임을 조절하는 원리를 확인하는 그림입니다. ([Ottobock 전문가 안내서](https://spa-prod-commerce.cep.ottobock.com/medias/C-Leg4Update-InstructionsforProfessionals-English-7-2024.pdf?attachment=true&context=bWFzdGVyfHJvb3R8MzQ2NjA5NnxhcHBsaWNhdGlvbi9wZGZ8aDZkL2g4OC85Mzk3MDgxNDQwMjg2LnBkZnwwZDEzYTkzODI1YzlhZjUwYTVjZTRmODdkOWQ4OTlmMjJiYTE0MmEwNDBjYjUxN2ZmYTM0NDVmOTZjODBiZDVi))
+
 보장구 전문가는 C-Soft Plus 설정 소프트웨어로 장치 설정과 정렬을 조정합니다. 제조사 안내서는 설정 절차를 단계별로 안내하고, 설정을 저장·출력해 기록할 수 있다고 설명합니다. 조정 결과를 확인할 때는 평지 보행뿐 아니라 경사·계단·의자에서 일어나기, 속도 변화, 배터리 저하 때의 동작을 사용자의 안전 조건에 맞춰 살펴야 합니다.
 
 ### Hero Arm: 근전도 입력을 손가락 모터로 연결하는 의지

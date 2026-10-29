@@ -6,6 +6,10 @@
 
 LG CNS의 [공식 서비스 목록](https://www.lgcns.com/en)은 AI·데이터·클라우드·인프라·데이터센터·보안·기업 솔루션·스마트팩토리·물류·도시 서비스를 나누고 있습니다. 포스코DX의 [IT 서비스](https://www.poscodx.com/kor/business/itService)와 [EIC](https://www.poscodx.com/kor/business/eicEngineering)는 업무 IT와 현장의 전기·계장·컴퓨터가 연결되는 예입니다. 아래 기술 설명은 이런 사업을 이해하는 일반 원리이며 특정 고객의 사내 구성을 추정한 자료가 아닙니다.
 
+![미국 오하이오주 뉴앨버니 Google 데이터센터의 서버 통로](https://www.gstatic.com/marketing-cms/assets/images/19/43/b476c0984f2da3b2faa1a7f588ce/server-aisles-in-our-new-albany-data-center-building-in-central-ohio.jpg=w1280)
+
+그림 1. Google이 공개한 미국 오하이오주 뉴앨버니 데이터센터의 서버 통로 사진입니다. 랙과 케이블이 배치된 모습을 확인하실 수 있습니다. 현장 운영에는 서버·네트워크 외에도 전력·냉각·정비가 필요합니다. [Google 데이터센터 사진 갤러리](https://datacenters.google/discover-more/photo-gallery/)
+
 ## 1. 업무 시스템에서 물리 현장까지
 
 ```mermaid

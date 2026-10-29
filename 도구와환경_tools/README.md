@@ -12,6 +12,22 @@ A guide to development tools, languages and standards, with links to related stu
 
 [계측기별 사용 절차](../현장계측과검증_measurement-validation/계측기_instruments/README.md)는 DSOX1204G, 34461A, 2450, Logic Pro 8, E36312A·DL3021, E4980AL, FPC1500, E5061B의 특성과 설정을 다룹니다. [SCPI·PyVISA와 결과 기록](../현장계측과검증_measurement-validation/계측자동화_instrument-automation/명령응답과시험결과기록_scpi-pyvisa-automation.md)은 기존 전송 코드와 모의 검사를 바탕으로 명령·상태·유효성·판정·정리를 설명합니다.
 
+![Tektronix 5 Series B MSO 혼합 신호 오실로스코프 공식 제품 이미지](https://www.tek.com/-/media/images/product-series/5-series-mso/5-series-b-mso-video-banner_1140x330.jpg?h=330&iar=0&w=1140&2024.11.22)
+
+그림 1. Tektronix 5 Series B MSO의 공식 제품 이미지입니다. 화면·조작부·입력 채널이 한 계측기에 결합된 모습을 확인하실 수 있습니다. 제품 사진만으로 측정 정확도나 대역폭을 판단할 수는 없습니다. [Tektronix 제품 설명과 사양](https://www.tek.com/en/products/oscilloscopes/5-series-mso)
+
+```mermaid
+flowchart LR
+    A[프로브·입력 신호] --> B[입력 보호·감쇠·아날로그 전단]
+    B --> C[ADC 표본화]
+    C --> D[파형 메모리]
+    D --> E[화면·측정·프로토콜 분석]
+    F[시간축·트리거 설정] --> C
+    F --> D
+```
+
+그림 2. 디지털 오실로스코프의 일반적인 신호 경로입니다. 특정 Tektronix 모델의 회로도는 아니며, 프로브·아날로그 입력부·ADC·메모리·분석 화면이 각각 다른 역할을 맡는다는 점을 보여 줍니다. 대역폭·표본화율·입력 범위·프로브 보정은 별도로 확인하셔야 합니다.
+
 ## 역할별 설명
 
 | 도구·기술 | 역할 | Role |

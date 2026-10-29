@@ -20,6 +20,10 @@
 
 [포스코DX의 EIC Engineering](https://www.poscodx.com/kor/business/eicEngineering)은 전기·계장·컴퓨터를 결합한 연속 공정·단위 설비·물류 자동화를 설명합니다. [LS엠트론의 공식 사업 메뉴](https://www.lsmtron.com/)는 트랙터·사출시스템·전자부품 등을 나눕니다. [현대엔지니어링의 그룹 공식 소개](https://www.hyundaimotorgroup.com/ko/group/hyundai-engineering)는 FEED·EPC와 플랜트·건축·자산관리를, [HL디앤아이한라의 기업 소개](https://www.hldni.com/mobile/sub/company/company.asp)는 토목·건축·주택·플랜트·환경 사업을 설명합니다. 산업의 인접성은 있지만 같은 조직·직무나 같은 제어 플랫폼이라는 뜻은 아닙니다.
 
+![Siemens Opcenter X Intosite의 공장 디지털 트윈 화면](https://images.sw.cdn.siemens.com/siemens-disw-assets/public/3lcEDWNvpZpt8LHUSPBeQL/en-US/Opcenter_X_Intosite_factory_visualization.png?auto=format%2Ccompress&w=1280&h=720&fit=crop&crop=faces%2Cedges&q=60)
+
+그림 1. Siemens가 공개한 Opcenter X Intosite의 공장 시각화 화면입니다. 실제 공장 사진이 아니라 2D·3D 공장 정보와 설비 자료를 함께 보는 소프트웨어 화면입니다. [Siemens 제품 설명](https://www.siemens.com/en-us/products/opcenter/opcenter-x-intosite/)
+
 ## 2. PLC·DCS·SCADA·MES·ERP의 역할
 
 약어를 설비의 한 칸에 고정하기보다 어떤 결정을 맡고 어떤 정보를 주고받는지 읽는 편이 정확합니다. 한 제품이나 시스템이 여러 기능을 포함하기도 합니다.

@@ -45,6 +45,10 @@ ADC의 출력이 24 bit라는 말과 유효한 정보가 항상 24 bit 정확하
 
 MRI, magnetic resonance imaging은 자기장과 RF, radio frequency 신호를 이용해 얻은 반응에서 영상을 구성합니다. [미국 NIBIB의 작동 원리](https://www.nibib.nih.gov/science-education/science-topics/magnetic-resonance-imaging-mri)는 강한 자기장, RF 자극과 수신 신호의 관계를 설명합니다. MRI를 카메라처럼 빛을 찍는 장치나 X선을 투과시키는 CT와 같은 장치로 이해하지 않습니다.
 
+![Philips MR 7700 자기공명영상 장비의 공식 제품 이미지](https://images.philips.com/is/image/PhilipsConsumer/philips_mr_7700_product_shot-ALI-global?%24jpglarge%24=&fit=crop&wid=700)
+
+그림 1. Philips의 공식 미디어 라이브러리에 공개된 MR 7700 제품 이미지입니다. 자석 보어와 환자 테이블이 있는 MRI 장비의 외형을 볼 수 있지만, 내부 코일·자석 구조나 영상 성능을 보여 주지는 않습니다. [Philips MR 7700 공식 이미지 설명](https://www.philips.com/a-w/about/news/media-library/20220509-philips-mr-7700-product-shot.html)
+
 [Siemens Healthineers MR Basic](https://academy.siemens-healthineers.com/_/en-us/mr-basic/)의 32~47쪽은 k-space·경사자장·송수신·컴퓨터의 관계를 설명합니다. 표시된 유효일은 2018-01-24이며 여기서는 기본 구조를 읽었습니다.
 
 | 하위 시스템 | 입력→처리→출력 | 전자·컴퓨팅의 역할 |
@@ -54,6 +58,17 @@ MRI, magnetic resonance imaging은 자기장과 RF, radio frequency 신호를 �
 | 경사자장 | 위치에 따라 달라지는 자장→공간 정보의 부호화 | 구동·타이밍·파형·동기·공간 정확도의 연결입니다. |
 | 취득·재구성 | 원시 신호·취득 조건→계산→영상·좌표 | 메모리·연산·수치 표현·알고리즘·판본입니다. |
 | 표시·저장 | 영상·공간 정보→표시/전송→검토 가능한 자료 | 영상과 식별·좌표·처리 이력의 일치입니다. |
+
+```mermaid
+flowchart LR
+    A[자기장·경사자장·RF 자극] --> B[조직에서 나온 RF 반응]
+    B --> C[수신 코일·증폭·ADC]
+    C --> D[k-space 원시 자료]
+    D --> E[영상 재구성·보정]
+    E --> F[좌표·메타데이터가 연결된 영상]
+```
+
+그림 2. MRI의 신호 취득과 영상 구성 관계를 단순화한 개념도입니다. 실제 펄스 시퀀스, 코일 배치, 재구성 알고리즘을 그대로 나타내는 장비 도면은 아닙니다. [NIBIB의 MRI 원리](https://www.nibib.nih.gov/science-education/science-topics/magnetic-resonance-imaging-mri), [Siemens MR Basic](https://academy.siemens-healthineers.com/_/en-us/mr-basic/)
 
 k-space는 화면의 각 위치를 그대로 배열한 사진이 아니라 영상의 공간 주파수 정보와 연결된 원시 자료 공간입니다. 기본 설명에서는 Fourier 변환의 관계로 영상과 이어집니다. 실제 재구성은 취득 방식·수신 채널·보정·알고리즘에 따라 달라지므로 ‘원시값에 한 번 변환을 하면 어떤 MRI도 완성된다’고 단순화하지 않습니다.
 
@@ -114,6 +129,10 @@ DICOM은 Digital Imaging and Communications in Medicine입니다. [PS3.1 2026d, 
 
 견인은 열차를 움직이는 구동을 뜻합니다. 전동차는 외부에서 받은 전력과 차량 내부 변환·모터·제동·보조 부하를 연결합니다. 노선의 AC/DC 급전 방식과 차량의 전력 구성에 따라 변압·정류·변환의 배치가 달라집니다.
 
+![현대로템 KTX-청룡 고속열차 사진](https://www.hyundai-rotem.co.kr/image/2024/4/20240409081228007386.jpg)
+
+그림 3. 현대로템이 공개한 KTX-청룡 열차 사진입니다. 열차의 차체와 편성 외형을 볼 수 있으며, 차량 하부의 전력변환 장치나 제어 배치를 보여 주는 그림은 아닙니다. [현대로템 KTX-청룡 출고 전 시험 안내](https://www.hyundai-rotem.co.kr/ko/company/press/details.do?seq=2182)
+
 [Siemens Mobility의 traction converter 소개](https://www.mobility.siemens.com/global/en/portfolio/rolling-stock-components/traction-converters.html)는 다양한 전압 시스템과 모듈/장치 형태의 전력변환기를 설명합니다. 다음은 특정 차량의 결선이 아닌 일반 기능 구분입니다.
 
 | 하위 시스템 | 입력→변환·제어→출력 | 계측·검사에서 보는 것 |
@@ -122,6 +141,17 @@ DICOM은 Digital Imaging and Communications in Medicine입니다. [PS3.1 2026d, 
 | 견인 inverter·모터 | 전력·토크 요구→스위칭·모터 제어→회전·힘 | 전력·토크·속도·전류·열·응답의 대응입니다. |
 | 회생·제동 협조 | 감속 요구·수용 조건→에너지/제동 배분→감속 | 명령·실제 운동·전력 흐름·상태 인계입니다. |
 | 보조전원 | 인입/중간 전력→변환→공조·조명·제어 등 | 부하 변화·전압·기동·온도·전원 중단 상태입니다. |
+
+```mermaid
+flowchart LR
+    A[가선·제3궤조 전력] --> B[차량 전력변환기]
+    B --> C[견인 인버터·모터]
+    C --> D[기어·차륜·열차 운동]
+    E[속도·전류·전압·상태] --> F[차량 제어·감시]
+    F --> B
+```
+
+그림 4. 전동 열차의 일반적인 견인·제어 흐름을 나타냈습니다. KTX-청룡의 세부 전장 배선이나 특정 차량의 정확한 부품 연결을 표시하지 않습니다. [Siemens Mobility의 견인 변환기 설명](https://www.mobility.siemens.com/global/en/portfolio/rolling-stock-components/traction-converters.html)
 
 회생제동은 에너지를 전기 경로로 되돌리는 기능이며, 선로·전원·부하의 수용 조건과 다른 제동 기능이 함께 작용합니다. 회생 기능이 있다는 사실만으로 모든 감속에서 전력을 같은 비율로 회수한다고 보지 않습니다. 원리는 [전력전자](../전자컴퓨터공학_ece/31-전력전자에너지_power-energy/README.md)와 [자동차 전동화](01-자동차와모빌리티_automotive-mobility.md)에 연결하고, 철도에서는 급전·편성·다수 장치·장시간 운용 조건을 추가해 읽습니다.
 
