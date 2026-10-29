@@ -1,144 +1,66 @@
 # 세계 주요뉴스
 
-갱신: 2026-10-29 23:20 KST
+갱신: 2026-10-30 05:18 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
-## \[속보\] 미 9월 PCE 물가 전년대비 3.6%↑…예상치 소폭 하회
+## 美국방, 기밀유출 의혹 합참 국장 해임…군 장성 또 '축출'\(종합\)
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261029206900072>) · 2026-10-29 21:39 KST · 작성·제공: 김연숙
+> 피트 헤그세스 미국 국방부\(전쟁부\) 장관이 미군 합동참모본부 소속 3성 장군\(중장\)인 브...
 
-## 스페인 9개월만에 또 고속철 참사…후진국형 사고 재발 원인은
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261029162151009>) · 2026-10-30 04:31 KST · 작성·제공: 이유미
 
-> 스페인에서 올해만 두차례 고속철 참사가 발생하면서 대형 사고가 되풀이되는 원인을 놓고 논란이 일고 있다.
+## 스페인, 열차 참사 희생자 수색 지속 …사흘간 애도기간 선포
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261029043100009>) · 2026-10-29 09:39 KST · 작성·제공: 이신영
+> 스페인에서 최소 69명의 사망자를 낸 고속열차 추돌 사고와 관련해 29일부터 사흘간의 애도 기간에 들어간 가운데 추가 희생자 수색도 계속되고 있습니다.
 
-## \[쇼츠\] 스페인 고속열차 추돌사고…68명 사망·한국인도 부상
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/spain-train-crash-102926/8216563.html>) · 2026-10-30 03:30 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
-> \(서울=연합뉴스\) 스페인 마드리드 남부에서 28일\(현지시간\) 고속열차끼리 추돌해 현재까지 총 68명이 사망하고 100명 이상이 다쳤습니다.
+## 트럼프 "브라질 수치스러운 대선…국민에 매우 큰 망신거리"
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261029155500704>) · 2026-10-29 15:44 KST · 작성·제공: 진혜숙
+> 도널드 트럼프 미국 대통령은 29일\(현지시간\) 남미 좌파의 대부 루이스 이나시우 룰라 다시우바 대통령이 승...
 
-## '무장 갱단 활개' 아이티, 10년 만의 대선 내년으로 또 연기
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030005000071>) · 2026-10-30 04:06 KST · 작성·제공: 이유미
 
-> 무장 갱단의 활개로 극심한 치안 불안 사태를 겪고 있는 카리브해 섬나라 아이티가 10년 만에 치를 예정이던 대...
+## 푸틴 "유럽과 전쟁 원치 않아…관계 회복 조치 지지"
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261029155100009>) · 2026-10-29 15:42 KST · 작성·제공: 현영복
+> 블라디미르 푸틴 러시아 대통령은 29일\(현지시간\) 러시아가 유럽으로 확전에 나설 것이라는 전망에 선을 그...
 
-## 미 9월 PCE 물가 전년대비 3.6%↑…예상치 소폭 하회\(종합\)
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030005600108>) · 2026-10-30 03:56 KST · 작성·제공: 김동호
 
-> 미국 상무부는 9월 개인소비지출\(PCE\) 가격지수가 전년 동월 대비 3.6% 상승했다고 29일\(현지시간\) 밝...
+## 러시아 드론, 우크라이나 드니프로 기차역 공격…14명 사망
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261029206952072>) · 2026-10-29 22:57 KST · 작성·제공: 김연숙
+> 러시아가 발사한 제트 추진 드론이 29일 우크라이나 드니프로의 중앙역을 공격해 플랫폼에서 통근 열차를 기다리던 14명이 숨졌다고 우크라이나 당국이 밝혔습니다.
 
-## 위장차에 전세기까지…"보우소나루 도피에 트럼프 측근 도움"
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-russia-ukraine-102926/8216589.html>) · 2026-10-30 04:17 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
-> 브라질 대선 결선에서 패한 플라비우 보우소나루 상원의원이 미국으로 도피하는 과정에 도널드 트럼프 미국 대통령의...
+## \[한국은 지금\] 특검 윤석열 전 대통령 항소심서 ‘사형 구형’...이재명 대통령 부부 ‘황제골프’ 의혹 고발
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261029153800009>) · 2026-10-29 15:38 KST · 작성·제공: 곽민서
+> 지난 2024년 12·3 비상계엄 사태와 관련해 내란 우두머리 혐의로 기소된 윤석열 전 한국 대통령이 항소심에서도 사형을 구형받았습니다.
 
-## "이스라엘 야권, 네타냐후 축출 역사적 기회 놓친 듯"
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korea-now-102926/8216596.html>) · 2026-10-30 04:30 KST · 작성·제공: voadigital@voanews.com \(조진우\)
 
-> 이스라엘 총선에서 야권이 베냐민 네타냐후 정권을 축출할 수 있는 '역사적' 기회를 놓치게 됐다는 우려가 나온다...
+## 미 전쟁부 “미한 SCM, 지도부 일정 문제로 연기…전작권 전환 결과 예단 않을 것”
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261029038800009>) · 2026-10-29 08:58 KST · 작성·제공: 강훈상
+> 미국 전쟁부가 미한 안보협의회의\(SCM\) 개최가 늦춰진 것은 양측 지도부의 일정 문제 때문이라고 밝혔습니다.
 
-## 네타냐후당, '킹메이커' 떠오른 아랍계에 부정선거 주장
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-rok-scm-delay-response-102926/8216586.html>) · 2026-10-30 04:12 KST · 작성·제공: voadigital@voanews.com \(조상진\)
 
-> 베냐민 네타냐후 이스라엘 총리가 이끄는 리쿠드당이 이번 총선의 캐스팅보트를 쥔 아랍계 정당을 향해 '부정선거'...
+## 트럼프 대통령 “밴스 부통령, 이란 지도부와 접촉…인도주의적 지원 제안”
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261029039100009>) · 2026-10-29 08:58 KST · 작성·제공: 곽민서
+> 중동 분쟁을 둘러싸고 미국과 이란 간 협상을 재개하려는 새로운 노력이 진행되는 가운데, 도널드 트럼프 미국 대통령은 JD 밴스 부통령이 인도주의적 지원을 제안하기 위해 이란 지도부와 접촉했다고 밝혔습니다.
 
-## 네타냐후 측 "카타르가 자금지원"…'캐스팅보트' 아랍계 정당 압박\(종합\)
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-iran-102926/8216592.html>) · 2026-10-30 04:23 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
-> 이스라엘 총선 개표가 막바지에 접어든 가운데, 베냐민 네타냐후 총리가 이끄는 우파 진영이 선거에서 약진한 ...
+## \[뉴스 동서남북\] 사진 한 장에 담긴 권력…김정은의 ‘사진 정치’
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261029201051079>) · 2026-10-29 22:03 KST · 작성·제공: 김상훈
+> 오늘은 북한 김정은 위원장의 ‘사진 정치’의 배경과 의미에 대해 살펴보겠습니다.
 
-## 러시아·우크라이나 당국 “올레시키 휴전, 위반 없이 30시간 경과”
-
-> 우크라이나와 모스크바의 당국자들은 28일 러시아가 점령한 올레시키시 주변에서의 전투 중단이 단 한 차례의 위반도 없이 30시간을 넘겼다고 밝혔습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-russia-ukraine-102826/8216174.html>) · 2026-10-29 03:42 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 스칼라튜 “러시아 내 북 노동자, 사망 후 처우도 끔찍”
-
-> 러시아 열차 사고로 북한인 6명이 숨진 것으로 알려진 가운데, HRNK 그렉 스칼라튜 회장으로부터 러시아 내 북한 노동자들의 작업 환경과 비자 실태, 비인도적인 시신 송환 관행을 짚어봤다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/10/28/north-korea-workers-russia-working-conditions/>) · 2026-10-29 05:15 KST · 작성·제공: 워싱턴-자민 앤더슨 andersonj@rfa.org
-
-## 러 열차 충돌로 북한인 6명 사망…당국은 ‘외국인’으로만 발표
-
-> 러시아 극동 지역에서 발생한 열차 충돌 사고로 북한인 6명이 사망한 것으로 알려졌지만, 러시아 당국은 '외국인'으로 발표했을 뿐 정확한 체류 신분은 아직 확인되지 않고 있다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/10/28/north-korea-workers-russia-train-crash/>) · 2026-10-29 05:14 KST · 작성·제공: 워싱턴-자민 앤더슨 andersonj@rfa.org
-
-## 북, 대형 불고기식당 문 열었지만… 벌써 고기 확보 ‘비상’
-
-> 평양을 비롯한 북한 주요 도시에 최근 수백석 규모의 대형 불고기전문식당이 건설돼 영업을 시작했지만 고기 공급이 제대로 이뤄지지 않아 일부 식당은 운영에 차질을 빚고 있다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/10/29/north-korea-restaurant-meat/>) · 2026-10-29 14:43 KST · 작성·제공: 서울-안창규 nkQrfa.org
-
-## 이스라엘 총선 네타냐후 총리·야권 경쟁자 아이젠코트 모두 과반 미달...85% 개표
-
-> 27일 실시된 이스라엘 총선의 개표가 85% 진행된 가운데, 이스라엘 언론은 베냐민 네타냐후 총리와 최대 야권 경쟁자인 가디 아이젠코트 모두 각각의 동맹 정당들과 함께 과반 연립정부를 구성하는 데 필요한 의석을 확보하지 못했다고 보도했습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/israel-election-102826/8216105.html>) · 2026-10-29 01:22 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 스틸 대사, 미한 동맹 강조 일정 계속...6.25 전쟁 영웅 맥아더 장군 동상 방문
-
-> 미셸 박 스틸 주한미국대사가 최근 미한 동맹의 중요성을 강조하는 일정을 이어가고 있습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korean-peninsula-10-29-26/8216420.html>) · 2026-10-29 16:44 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
-
-## 한국 합참 “북한, 동해상으로 단거리 탄도미사일 10여발 발사.” 군사당국 회담 제안엔 무응답
-
-> 북한이 29일 동해상으로 10여 발의 단거리 탄도미사일을 발사했다고 한국군 합동참모본부\(합참\)가 밝혔습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korean-peninsula-10-29-26/8216418.html>) · 2026-10-29 13:24 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
-
-## 스페인 중부서 고속열차 추돌로 최소 64명 숨져
-
-> 스페인 중부에서 27일 고속열차가 다른 열차의 후미를 들이받아 최소 64명이 숨졌습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/spain-train-crash-102826/8216177.html>) · 2026-10-29 03:45 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 한미∙EU 등 “대북 제재 위반∙회피 대응 지속”
-
-> 미국과 한국, 일본 등 11개국과 유럽연합이 공동성명을 내고, 북한의 해외 노동자 파견과 악의적인 사이버 활동, 북러 군사협력에 관여한 행위자들을 겨냥한 제재를 시행했다고 밝혔다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/10/28/north-korea-sanction-joint-statement-monitoring/>) · 2026-10-29 06:39 KST · 작성·제공: 워싱턴-노정민 nohj@rfa.org
-
-## 미·한 등 11개국 공동성명 “북한 비핵화·대북 제재 완전 이행 촉구”
-
-> 미국과 한국 등 11개국과 유럽연합이 한목소리로 북한의 무기 개발 자금 조달과 불법 북러 군사협력에 대응하기 위한 제재 공조 의지를 재확인했습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/dprk-sanctions-joint-statement-102826/8216196.html>) · 2026-10-29 04:12 KST · 작성·제공: voadigital@voanews.com \(조상진\)
-
-## ‘북한 IP’ 기반 440만 건 금융권 해킹 시도···누구 소행일까
-
-> 최근 금융권을 겨냥한 해킹 시도에서 북한에 할당된 인터넷 프로토콜\(IP\) 대역이 다수 확인되면서 금융회사들의 보안 대응에 비상이 걸렸다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/10/29/44-million-hacking-attempts-targeted-the-financial-sector/>) · 2026-10-29 17:25 KST · 작성·제공: 서울-김지수 kimjis@rfa.org
-
-## 국정원 “김주애, 군 지도자 서사 구축…김정은, 북미 대화 의중 중국에 전달 가능성”
-
-> 한국 국가정보원이 김정은 국무위원장의 딸 주애가 군 지도자 서사를 구축, 후계자 위상을 각인하고 있다고 평가했다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/10/29/north-korea-kim-ju-ae-successor-nis-parliament-briefing/>) · 2026-10-29 16:54 KST · 작성·제공: 서울-김지수 kimjis@rfa.org
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/nk-across-nation-102926/8216585.html>) · 2026-10-30 04:09 KST · 작성·제공: voadigital@voanews.com \(최원기\)
 
 ## 다른 매체의 원문
 
-- [GDP report to give insight before Election Day. And, Israel's election is deadlocked](<https://www.npr.org/2026/10/29/g-s1-150614/up-first-newsletter-midterm-elections-gdp-inflation-israel-department-of-education-lawsuit>) · NPR
-- [North Korea fires missile barrage toward the sea as tensions with South rise](<https://abcnews.com/International/wireStory/north-korea-fires-missile-barrage-sea-tensions-south-137662901>) · ABC News 미국
-- [Spain reckons with 2nd deadly train crash of the year ahead of national election](<https://www.npr.org/2026/10/29/nx-s1-6021963/spain-train-crash-updates>) · NPR
-- [Tanzania: No Accountability One Year After Tanzania Election Violence](<https://allafrica.com/stories/202610290144.html>) · AllAfrica · allAfrica.com
-- [Africa: All of Africa Today - October 29, 2026](<https://allafrica.com/stories/202610290173.html>) · AllAfrica · allAfrica.com
-- [Spain reckons with second deadly train crash of the year ahead of national election](<https://abcnews.com/International/wireStory/spain-reckons-deadly-train-crash-year-ahead-national-137663716>) · ABC News 미국
-- [Kenya: Agnes Wanjiru Family Outraged as Extradition Hearing Delayed to 2027](<https://allafrica.com/stories/202610290155.html>) · AllAfrica · allAfrica.com
-- [China elevates a military general to Politburo, seeks to strengthen party discipline](<https://abcnews.com/International/wireStory/china-elevates-military-general-politburo-seeks-strengthen-party-137669570>) · ABC News 미국
-- [How AI drones are influencing the course of the Ukraine war](<https://www.npr.org/2026/10/29/g-s1-147496/ukraine-ai-drones-war-russia>) · NPR
+- [Ethiopia: Abiy, Putin Discuss Nuclear Energy, Trade Cooperation At Moscow Summit](<https://allafrica.com/stories/202610290539.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
