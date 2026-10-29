@@ -1,5 +1,36 @@
 {
   "aliases": {
+    "industry:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": "industry:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface",
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
+    "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module",
+    "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team": "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team",
+    "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027": "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027",
+    "learning:https://www.kmooc.kr/view/course/detail/11495": "learning:https://www.kmooc.kr/view/course/detail/11495",
+    "learning:https://www.kmooc.kr/view/course/detail/14760": "learning:https://www.kmooc.kr/view/course/detail/14760",
+    "learning:https://www.kmooc.kr/view/course/detail/15940": "learning:https://www.kmooc.kr/view/course/detail/15940",
+    "learning:https://www.kmooc.kr/view/course/detail/16143": "learning:https://www.kmooc.kr/view/course/detail/16143",
+    "learning:https://www.kmooc.kr/view/course/detail/20133": "learning:https://www.kmooc.kr/view/course/detail/20133",
+    "learning:https://www.kmooc.kr/view/course/detail/20261": "learning:https://www.kmooc.kr/view/course/detail/20261",
+    "learning:https://www.kmooc.kr/view/course/detail/20390": "learning:https://www.kmooc.kr/view/course/detail/20390",
+    "learning:https://www.kmooc.kr/view/course/detail/20392": "learning:https://www.kmooc.kr/view/course/detail/20392",
+    "learning:https://www.kmooc.kr/view/course/detail/20491": "learning:https://www.kmooc.kr/view/course/detail/20491",
+    "learning:https://www.kmooc.kr/view/course/detail/20552": "learning:https://www.kmooc.kr/view/course/detail/20552",
+    "learning:https://www.kmooc.kr/view/course/detail/20794": "learning:https://www.kmooc.kr/view/course/detail/20794",
+    "learning:https://www.kmooc.kr/view/course/detail/20826": "learning:https://www.kmooc.kr/view/course/detail/20826",
+    "learning:https://www.kmooc.kr/view/course/detail/20949": "learning:https://www.kmooc.kr/view/course/detail/20949",
+    "learning:https://www.kmooc.kr/view/course/detail/20956": "learning:https://www.kmooc.kr/view/course/detail/20956",
+    "learning:https://www.kmooc.kr/view/course/detail/20957": "learning:https://www.kmooc.kr/view/course/detail/20957",
+    "learning:https://www.kmooc.kr/view/course/detail/20991": "learning:https://www.kmooc.kr/view/course/detail/20991",
+    "learning:https://www.kmooc.kr/view/course/detail/21060": "learning:https://www.kmooc.kr/view/course/detail/21060",
+    "learning:https://www.kmooc.kr/view/course/detail/21091": "learning:https://www.kmooc.kr/view/course/detail/21091",
+    "learning:https://www.kmooc.kr/view/course/detail/21144": "learning:https://www.kmooc.kr/view/course/detail/21144",
+    "learning:https://www.kmooc.kr/view/course/detail/21179": "learning:https://www.kmooc.kr/view/course/detail/21179",
+    "learning:https://www.kmooc.kr/view/course/detail/21284": "learning:https://www.kmooc.kr/view/course/detail/21284",
+    "learning:https://www.kmooc.kr/view/course/detail/21288": "learning:https://www.kmooc.kr/view/course/detail/21288",
+    "learning:https://www.kmooc.kr/view/course/detail/21310": "learning:https://www.kmooc.kr/view/course/detail/21310",
+    "learning:https://www.kmooc.kr/view/course/detail/21316": "learning:https://www.kmooc.kr/view/course/detail/21316",
     "models:google-announcement:gemini-4-argon-for-robotics": "models:https://developers.googleblog.com/gemini-4-argon-for-robotics",
     "models:google-announcement:gemini-4-argon-our-next-era-of-frontier-intelligence": "models:google-announcement:gemini-4-argon",
     "models:google-announcement:gemini-4-carbon-our-next-frontier-model": "models:google-announcement:introducing-gemini-4-carbon",
@@ -11,6 +42,21 @@
     "models:https://openai.com/index/introducing-gpt-6-1-terra": "models:https://openai.com/index/introducing-gpt-6-1-terra",
     "models:https://www.anthropic.com/claude-haiku-5-5": "models:https://www.anthropic.com/claude-haiku-5-5",
     "models:https://www.anthropic.com/claude-sonnet-5-5": "models:https://www.anthropic.com/claude-sonnet-5-5",
+    "papers:https://arxiv.org/abs/2610.36298": "papers:https://arxiv.org/abs/2610.36298",
+    "papers:https://arxiv.org/abs/2610.36776": "papers:https://arxiv.org/abs/2610.36776",
+    "papers:https://arxiv.org/abs/2610.37070": "papers:https://arxiv.org/abs/2610.37070",
+    "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
+    "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
+    "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
+    "products:https://blog.st.com/rust-mems-drivers": "products:https://blog.st.com/rust-mems-drivers",
+    "products:https://blog.st.com/stspin9p": "products:https://blog.st.com/stspin9p",
+    "products:https://blog.st.com/touchgfx": "products:https://blog.st.com/touchgfx",
+    "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction",
+    "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure": "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure",
+    "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+    "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
+    "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
+    "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133",
@@ -48,9 +94,160 @@
     "reports:https://www.kdi.re.kr/research/monTrends?pub_no=19202": "reports:https://www.kdi.re.kr/research/monTrends?pub_no=19202",
     "reports:https://www.kdi.re.kr/research/monTrends?pub_no=19236": "reports:https://www.kdi.re.kr/research/monTrends?pub_no=19236",
     "reports:https://www.kdi.re.kr/research/monTrends?pub_no=19252": "reports:https://www.kdi.re.kr/research/monTrends?pub_no=19252",
-    "reports:https://www.kdi.re.kr/research/monTrends?pub_no=19271": "reports:https://www.kdi.re.kr/research/monTrends?pub_no=19271"
+    "reports:https://www.kdi.re.kr/research/monTrends?pub_no=19271": "reports:https://www.kdi.re.kr/research/monTrends?pub_no=19271",
+    "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000",
+    "technology:https://www.spri.kr/posts/view/23959?code=AI-Brief": "technology:https://www.spri.kr/posts/view/23959?code=AI-Brief",
+    "technology:https://www.spri.kr/posts/view/24022?code=magazine": "technology:https://www.spri.kr/posts/view/24022?code=magazine",
+    "technology:https://www.spri.kr/posts/view/24023?code=AI-Brief": "technology:https://www.spri.kr/posts/view/24023?code=AI-Brief",
+    "technology:https://www.spri.kr/posts/view/24031?code=AI-Brief": "technology:https://www.spri.kr/posts/view/24031?code=AI-Brief",
+    "technology:https://www.spri.kr/posts/view/24032?code=magazine": "technology:https://www.spri.kr/posts/view/24032?code=magazine",
+    "tools:https://blog.python.org/2026/10/python-3150-final-is-here": "tools:https://blog.python.org/2026/10/python-3150-final-is-here",
+    "tools:https://blog.python.org/2026/10/python-3151-3149-31317": "tools:https://blog.python.org/2026/10/python-3151-3149-31317",
+    "tools:https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118": "tools:https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118",
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2",
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3",
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4",
+    "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246"
   },
   "days": {
+    "industry": {
+      "2026-10-29": [
+        {
+          "acquired_at": "2026-10-29T04:13:46.726962+00:00",
+          "acquisition_method": "공식 기술 분야 RSS의 제목·발행일·소개",
+          "author": "",
+          "date": "2026-10-21T12:17:58+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "industry",
+          "homepage": "https://www.nasa.gov/technology/",
+          "key": "industry:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface",
+          "source_name": "NASA 기술 자료",
+          "source_url": "https://www.nasa.gov/technology/feed/",
+          "summary_ko": "NASA 기술 자료에서 공개한 산업 기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NASA’s CASALS Instrument Bridges Gaps in 3D Maps of Earth’s Surface",
+          "update": false,
+          "url": "https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:48.902555+00:00",
+          "acquisition_method": "공식 보도자료 RSS의 제목·발표일·소개; 에너지 주제 선택",
+          "author": "이영재",
+          "date": "2026-10-29T01:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "industry",
+          "homepage": "https://www.mcee.go.kr/",
+          "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
+          "source_name": "기후에너지환경부 에너지·전력 발표",
+          "source_url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=10598&boardMasterId=939",
+          "summary_ko": "▷ 기후에너지환경부 장관 주재로, 산업계·연구기관·전문가와 함께 산업부문 공정열 전기화 촉진 방안을 모색하는 토론회 개최 기후에너지환경부(장관 김성환)는…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "산업용 히트펌프 기술개발 및 실증 확대… 산업부문 탄소중립 앞당긴다",
+          "update": false,
+          "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=vu3_ACiKP7eqexfQqZ9ooVZgG9KKOouPhBCRxmj7.mehome1?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1902850"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:48.902555+00:00",
+          "acquisition_method": "공식 보도자료 RSS의 제목·발표일·소개; 에너지 주제 선택",
+          "author": "송정욱",
+          "date": "2026-10-29T01:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "industry",
+          "homepage": "https://www.mcee.go.kr/",
+          "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
+          "source_name": "기후에너지환경부 에너지·전력 발표",
+          "source_url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=10598&boardMasterId=939",
+          "summary_ko": "▷ 평가단은 공론화 과정에 대한 점검·평가 및 개선방안 도출 등의 역할 수행 ▷ 숙의자료집에 포함될 환경·원자력 측 근거 등은 동일한 분량과…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "원전 공론화위원회, 공론화평가단 운영한다",
+          "update": false,
+          "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=vu3_ACiKP7eqexfQqZ9ooVZgG9KKOouPhBCRxmj7.mehome1?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1902910"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:48.902555+00:00",
+          "acquisition_method": "공식 보도자료 RSS의 제목·발표일·소개; 에너지 주제 선택",
+          "author": "박상동",
+          "date": "2026-10-29T03:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "industry",
+          "homepage": "https://www.mcee.go.kr/",
+          "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
+          "source_name": "기후에너지환경부 에너지·전력 발표",
+          "source_url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=10598&boardMasterId=939",
+          "summary_ko": "▷ 중점관리지역 11곳에 하수관경 확대, 하수저류시설 및 빗물펌프장 설치 등 5,500여억 원을 투입, 도시침수로부터 국민안전 보호 기후에너지환경부(장관…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "집중호우에도 안전한 도시 만든다… 하수도정비 중점관리지역 11곳 추가지정",
+          "update": false,
+          "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=vu3_ACiKP7eqexfQqZ9ooVZgG9KKOouPhBCRxmj7.mehome1?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1902920"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:46.726962+00:00",
+          "acquisition_method": "공식 기술 분야 RSS의 제목·발행일·소개",
+          "author": "Gary Daines",
+          "date": "2026-10-20T18:11:33+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "industry",
+          "homepage": "https://www.nasa.gov/technology/",
+          "key": "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module",
+          "source_name": "NASA 기술 자료",
+          "source_url": "https://www.nasa.gov/technology/feed/",
+          "summary_ko": "NASA 기술 자료에서 공개한 산업 기술 자료입니다. 공개 제목·소개에서 에너지·전력·우주·항공 시스템 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NASA’s SR-1 Freedom Advances with Progress on Nuclear Power Module",
+          "update": false,
+          "url": "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:46.726962+00:00",
+          "acquisition_method": "공식 기술 분야 RSS의 제목·발행일·소개",
+          "author": "Linda E. Grimm",
+          "date": "2026-09-28T10:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "industry",
+          "homepage": "https://www.nasa.gov/technology/",
+          "key": "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team",
+          "source_name": "NASA 기술 자료",
+          "source_url": "https://www.nasa.gov/technology/feed/",
+          "summary_ko": "NASA 기술 자료에서 공개한 산업 기술 자료입니다. 공개 제목·소개에서 로봇·모빌리티 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Reliable Robots: Meet Johnson’s Dexterous Robotics Team",
+          "update": false,
+          "url": "https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team/"
+        }
+      ]
+    },
+    "learning": {
+      "2026-10-29": [
+        {
+          "acquired_at": "2026-10-29T04:14:10.319072+00:00",
+          "acquisition_method": "MIT News의 공식 MITx·Open Learning RSS",
+          "author": "Caroline Maselli | MIT Open Learning",
+          "date": "2026-10-27T20:55:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "learning",
+          "homepage": "https://news.mit.edu/topic/mitx",
+          "key": "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027",
+          "kind": "공개 학습 자료 안내",
+          "source_name": "MIT Open Learning 공개 학습 자료",
+          "source_url": "https://news.mit.edu/rss/topic/mitx",
+          "summary_ko": "MIT Open Learning 공개 학습 자료에서 공개한 강의·학습 안내입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Learner collaborates with MIT peers to develop book of AI insights",
+          "update": false,
+          "url": "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027"
+        }
+      ]
+    },
     "models": {
       "2026-10-29": [
         {
@@ -185,6 +382,299 @@
         }
       ]
     },
+    "papers": {
+      "2026-10-29": [
+        {
+          "acquired_at": "2026-10-29T04:14:02.432006+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Ayana Moshruba, Maryam Parsa",
+          "date": "2026-10-29T04:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2610.36298",
+          "kind": "프리프린트 초록",
+          "paper_id": "2610.36298",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Spiking Neural Networks Are Harder to Steal: A Benchmark Study of Model Stealing Attacks",
+          "update": false,
+          "url": "https://arxiv.org/abs/2610.36298",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-10-29T04:14:02.432006+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Eunji Park",
+          "date": "2026-10-29T04:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2610.36776",
+          "kind": "프리프린트 초록",
+          "paper_id": "2610.36776",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·긴 문맥·장기 작업 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Dependency Graphs of Mathematical Arguments: Representation, Structural Measurement, and Proof Review",
+          "update": false,
+          "url": "https://arxiv.org/abs/2610.36776",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-10-29T04:14:02.432006+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Yueer Pan, Yuexi Pan",
+          "date": "2026-10-29T04:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2610.37070",
+          "kind": "프리프린트 초록",
+          "paper_id": "2610.37070",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Correctness Conditioning as Selection in Chain-of-Thought Faithfulness Evaluation",
+          "update": false,
+          "url": "https://arxiv.org/abs/2610.37070",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-10-29T04:14:08.550516+00:00",
+          "acquisition_method": "MIT News 공식 연구 소개 RSS",
+          "author": "Zach Winn | MIT News",
+          "date": "2026-10-18T04:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "papers",
+          "homepage": "https://news.mit.edu/topic/artificial-intelligence2",
+          "key": "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
+          "kind": "대학 연구 소개",
+          "source_name": "MIT News AI 연구 소개",
+          "source_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+          "summary_ko": "MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Giving AI a “crystal clear” view of the materials world",
+          "update": false,
+          "url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018"
+        },
+        {
+          "acquired_at": "2026-10-29T04:14:08.550516+00:00",
+          "acquisition_method": "MIT News 공식 연구 소개 RSS",
+          "author": "Zach Winn | MIT News",
+          "date": "2026-10-14T15:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "papers",
+          "homepage": "https://news.mit.edu/topic/artificial-intelligence2",
+          "key": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
+          "kind": "대학 연구 소개",
+          "source_name": "MIT News AI 연구 소개",
+          "source_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+          "summary_ko": "MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Researchers improve weather forecasts looking two to six weeks out",
+          "update": false,
+          "url": "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014"
+        },
+        {
+          "acquired_at": "2026-10-29T04:14:08.550516+00:00",
+          "acquisition_method": "MIT News 공식 연구 소개 RSS",
+          "author": "Alex Ouyang | Abdul Latif Jameel Clinic for Machine Learning in Health",
+          "date": "2026-10-19T18:20:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "papers",
+          "homepage": "https://news.mit.edu/topic/artificial-intelligence2",
+          "key": "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
+          "kind": "대학 연구 소개",
+          "source_name": "MIT News AI 연구 소개",
+          "source_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+          "summary_ko": "MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Why teaching AI about symmetry could make prenatal diagnosis more reliable",
+          "update": false,
+          "url": "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019"
+        }
+      ]
+    },
+    "products": {
+      "2026-10-29": [
+        {
+          "acquired_at": "2026-10-29T04:13:59.331184+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "date": "2026-10-27T14:00:10+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/rust-mems-drivers",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Rust MEMS drivers: 3 reasons to try and adopt our new sensor drivers written in Rust",
+          "update": false,
+          "url": "https://blog.st.com/rust-mems-drivers/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:59.331184+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "date": "2026-10-01T13:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/stspin9p",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "STSPIN9P: ST’s first 75 V high-current motor drivers with low RDS(on) is so small it helps grow new applications",
+          "update": false,
+          "url": "https://blog.st.com/stspin9p/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:59.331184+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "date": "2026-10-14T13:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/touchgfx",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "TouchGFX 4.27: Hybrid double buffering or how to shorten render times by 50% thanks to a new framebuffer strategy",
+          "update": false,
+          "url": "https://blog.st.com/touchgfx/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:57.599192+00:00",
+          "acquisition_method": "공식 한국어 블로그 RSS의 제목·소개",
+          "author": "NVIDIA Korea",
+          "date": "2026-10-26T03:06:28+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "products",
+          "homepage": "https://blogs.nvidia.co.kr/",
+          "key": "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction",
+          "source_name": "NVIDIA 한국어 블로그",
+          "source_url": "https://blogs.nvidia.co.kr/feed/",
+          "summary_ko": "NVIDIA Earth-2는 개발자와 연구자에게 자체 데이터로 맞춤 구성할 수 있는 오픈 모델과 도구 제품군을…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "유럽 전역의 선구자들, NVIDIA Earth-2 오픈 모델로 실제 날씨·기후 예측에 나서다",
+          "update": false,
+          "url": "https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:57.599192+00:00",
+          "acquisition_method": "공식 한국어 블로그 RSS의 제목·소개",
+          "author": "NVIDIA Korea",
+          "date": "2026-10-26T03:12:14+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "products",
+          "homepage": "https://blogs.nvidia.co.kr/",
+          "key": "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure",
+          "source_name": "NVIDIA 한국어 블로그",
+          "source_url": "https://blogs.nvidia.co.kr/feed/",
+          "summary_ko": "새로운 AIOps 플랫폼이 인프라와 워크로드 텔레메트리를 하나로 이어, 운영자가 가동률을 높이고 AI 팩토리 수율을 끌어올리도록 돕습니다.",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "NVIDIA, AI 팩토리 엔드투엔드 관측성을 위한 Minerva를 공개하다",
+          "update": false,
+          "url": "https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:58.163806+00:00",
+          "acquisition_method": "공식 한국어 블로그 RSS의 제목·소개 및 원문의 공개 메타데이터",
+          "author": "NVIDIA Korea",
+          "date": "2026-10-28T05:02:53+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "products",
+          "homepage": "https://blogs.nvidia.co.kr/",
+          "key": "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+          "source_name": "NVIDIA 한국어 블로그",
+          "source_url": "https://blogs.nvidia.co.kr/feed/",
+          "summary_ko": "새로운 생산 능력 계약과 제조 시설이 물량 증대를 뒷받침하고 공급망 복원력을…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "공급망 파트너와 생산 역량 확대해 AI 인프라 구축을 가속하는 NVIDIA - NVIDIA Blog Korea",
+          "update": false,
+          "url": "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:56.811377+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Shara Tibken",
+          "date": "2026-10-27T16:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:56.811377+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Elizabeth Goodman",
+          "date": "2026-10-27T20:50:39+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기·메모리·캐시 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:56.811377+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Elizabeth Goodman",
+          "date": "2026-10-27T17:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+        }
+      ]
+    },
     "reports": {
       "2026-10-29": [
         {
@@ -241,6 +731,252 @@
           "url": "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572"
         }
       ]
+    },
+    "technology": {
+      "2026-10-29": [
+        {
+          "acquired_at": "2026-10-29T04:13:38.226435+00:00",
+          "acquisition_method": "공식 기술동향브리프 목록·소개문",
+          "date": "2026-10-27",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "technology",
+          "homepage": "https://www.kistep.re.kr/",
+          "key": "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000",
+          "pdf_url": "https://www.kistep.re.kr/boardDownload.es?bid=0031&list_no=94905&seq=1",
+          "source_name": "KISTEP 기술동향브리프",
+          "source_url": "https://www.kistep.re.kr/board.es?mid=a10306040000&bid=0031&cg_code=C03",
+          "summary_ko": "KISTEP 브리프 「대형 연구형 R&D 사업계획검토 제도의 이해 및 점검 주안점」은 대형 연구형 R&D 사업을 대상으로…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "대형 연구형 R&D 사업계획검토 제도의 이해 및 점검 주안점",
+          "update": false,
+          "url": "https://www.kistep.re.kr/board.es?mid=a10306040000&bid=0031&list_no=94905&act=view"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:29.676743+00:00",
+          "acquisition_method": "공식 간행물 목록·상세 목차",
+          "date": "2026-10-12",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "technology",
+          "homepage": "https://www.spri.kr/",
+          "key": "technology:https://www.spri.kr/posts/view/24031?code=AI-Brief",
+          "pdf_url": "https://www.spri.kr/download/23908",
+          "source_name": "SPRi AI 브리프",
+          "source_url": "https://www.spri.kr/posts?code=AI-Brief",
+          "summary_ko": "목차: 정책·법제 ▹ EU는 「AI 법」 본격 시행, 미국은 AI 규제 완화 기조 주도 ▹ 미·중 정상, ‘초지능’ 대화와 소통…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "AI 브리프 · 2026년 10월호",
+          "update": false,
+          "url": "https://www.spri.kr/posts/view/24031?code=AI-Brief"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:33.876278+00:00",
+          "acquisition_method": "공식 간행물 목록·상세 목차",
+          "date": "2026-10-14",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "technology",
+          "homepage": "https://www.spri.kr/",
+          "key": "technology:https://www.spri.kr/posts/view/24032?code=magazine",
+          "pdf_url": "https://www.spri.kr/download/23909",
+          "source_name": "SPRi SW중심사회",
+          "source_url": "https://www.spri.kr/posts?code=magazine",
+          "summary_ko": "SPRi SW중심사회에서 공개한 기술 동향 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "SW중심사회 · 2026년 10월호",
+          "update": false,
+          "url": "https://www.spri.kr/posts/view/24032?code=magazine"
+        }
+      ]
+    },
+    "tools": {
+      "2026-10-29": [
+        {
+          "acquired_at": "2026-10-29T04:13:54.398234+00:00",
+          "acquisition_method": "공식 릴리스 RSS의 제목·소개 및 원문의 공개 메타데이터",
+          "author": "Hugo van Kemenade",
+          "date": "2026-10-09T00:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "tools",
+          "homepage": "https://blog.python.org/",
+          "key": "tools:https://blog.python.org/2026/10/python-3150-final-is-here",
+          "source_name": "Python 코어 개발팀",
+          "source_url": "https://blog.python.org/feeds/posts/default?alt=rss",
+          "summary_ko": "Python 코어 개발팀에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Python 3.15.0 (final) is here! | Python Insider",
+          "update": false,
+          "url": "https://blog.python.org/2026/10/python-3150-final-is-here/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:54.261778+00:00",
+          "acquisition_method": "공식 릴리스 RSS의 제목·소개 및 원문의 공개 메타데이터",
+          "author": "Hugo van Kemenade",
+          "date": "2026-10-21T00:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "tools",
+          "homepage": "https://blog.python.org/",
+          "key": "tools:https://blog.python.org/2026/10/python-3151-3149-31317",
+          "source_name": "Python 코어 개발팀",
+          "source_url": "https://blog.python.org/feeds/posts/default?alt=rss",
+          "summary_ko": "Python 코어 개발팀에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 보안·개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Python 3.15.1, 3.14.9 and 3.13.17 are out | Python Insider",
+          "update": false,
+          "url": "https://blog.python.org/2026/10/python-3151-3149-31317/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:53.825748+00:00",
+          "acquisition_method": "공식 릴리스 RSS의 제목·소개",
+          "author": "Hugo van Kemenade",
+          "date": "2026-10-26T00:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "tools",
+          "homepage": "https://blog.python.org/",
+          "key": "tools:https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118",
+          "source_name": "Python 코어 개발팀",
+          "source_url": "https://blog.python.org/feeds/posts/default?alt=rss",
+          "summary_ko": "Python 코어 개발팀에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 보안·개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
+          "update": false,
+          "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:56.101614+00:00",
+          "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
+          "date": "2026-09-22T06:49:10+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "tools",
+          "homepage": "https://github.com/llvm/llvm-project/releases",
+          "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2",
+          "kind": "공식 안정판 릴리스",
+          "published_kind": "official_release",
+          "source_name": "LLVM Project",
+          "source_url": "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20",
+          "summary_ko": "LLVM Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "LLVM 23.1.2",
+          "update": false,
+          "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:56.101614+00:00",
+          "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
+          "date": "2026-10-06T14:53:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "tools",
+          "homepage": "https://github.com/llvm/llvm-project/releases",
+          "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3",
+          "kind": "공식 안정판 릴리스",
+          "published_kind": "official_release",
+          "source_name": "LLVM Project",
+          "source_url": "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20",
+          "summary_ko": "LLVM Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "LLVM 23.1.3",
+          "update": false,
+          "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:56.101614+00:00",
+          "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
+          "date": "2026-10-20T13:03:13+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "tools",
+          "homepage": "https://github.com/llvm/llvm-project/releases",
+          "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4",
+          "kind": "공식 안정판 릴리스",
+          "published_kind": "official_release",
+          "source_name": "LLVM Project",
+          "source_url": "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20",
+          "summary_ko": "LLVM Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "LLVM 23.1.4",
+          "update": false,
+          "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:55.139777+00:00",
+          "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
+          "date": "2026-10-28T22:23:36+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "tools",
+          "homepage": "https://github.com/zephyrproject-rtos/zephyr/releases",
+          "key": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0",
+          "kind": "공식 안정판 릴리스",
+          "published_kind": "official_release",
+          "source_name": "Zephyr Project",
+          "source_url": "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20",
+          "summary_ko": "Zephyr Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Zephyr 4.5.0",
+          "update": false,
+          "url": "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:53.266245+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "date": "2026-10-29",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Cisco社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1]~[3] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Cisco 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72244"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:52.286515+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "date": "2026-10-29",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Splunk社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Splunk 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72245"
+        },
+        {
+          "acquired_at": "2026-10-29T04:13:51.467163+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "date": "2026-10-29",
+          "date_label": "",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "JFrog社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "JFrog 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72246"
+        }
+      ]
     }
   },
   "details": {
@@ -250,6 +986,22 @@
       "date": "2026-10-28",
       "description": "역대 가장 사실적이고 인터랙티브한 구글의 최신 월드 모델, ‘지니 4(Genie 4)’를 소개합니다.",
       "title": "지니 4(Genie 4): 월드 시뮬레이션의 새로운 세대"
+    },
+    "https://blog.python.org/2026/10/python-3150-final-is-here": {
+      "canonical_url": "https://blog.python.org/2026/10/python-3150-final-is-here/",
+      "description": "A brand new Python here for you to enjoy!",
+      "title": "Python 3.15.0 (final) is here! | Python Insider"
+    },
+    "https://blog.python.org/2026/10/python-3151-3149-31317": {
+      "canonical_url": "https://blog.python.org/2026/10/python-3151-3149-31317/",
+      "description": "Three certified security releases for 3.15, 3.14 and 3.13.",
+      "title": "Python 3.15.1, 3.14.9 and 3.13.17 are out | Python Insider"
+    },
+    "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {
+      "canonical_url": "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/",
+      "date": "2026-10-28T05:02:53+00:00",
+      "description": "새로운 생산 능력 계약과 제조 시설이 물량 증대를 뒷받침하고 공급망 복원력을 강화합니다.",
+      "title": "공급망 파트너와 생산 역량 확대해 AI 인프라 구축을 가속하는 NVIDIA - NVIDIA Blog Korea"
     },
     "https://deepmind.google/blog/gemini-4-argon-for-robotics": {
       "date": "2026-10-13",
@@ -474,6 +1226,24 @@
       "description": "Claude Sonnet 5.5 is a clear upgrade over Claude Sonnet 5, runs 30%+ faster, and costs up to 30% less for most work.",
       "title": "Introducing Claude Sonnet 5.5"
     },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-10-29",
+      "description": "Cisco社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1]~[3] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Cisco 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-10-29",
+      "description": "Splunk社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Splunk 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-10-29",
+      "description": "JFrog社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "JFrog 제품 보안 업데이트 권고"
+    },
     "https://www.kdi.re.kr/research/economy?pub_no=18120": {
       "date": "",
       "description": "2024년 우리 경제는 내수 증가세 둔화에도 불구하고 수출을 중심 으로 완만한 회복세 를 보이며 2.2% 성장 할 전망 소비자물가 는 내수 증가세 둔화로 인해 2023년(3.6%)보다 낮은 2.6%의 상승률을 기록할 전망 취업자 수 는 2023년(32만명)보다 축소된 21만명 증가하고, 실업률(2.7%→3.0%)은 상승할 것으로 예상 민간소비 는 고금리 기조로 인한 상품소비의 부진이 지속되면서 전년(1.9%)과 유사한 1.8% 증가하는 데 그칠 전망 설비투자 는 고금리 장기화에 따른 부진한 흐름이 지속되겠으나, 2.4%의 증가율을 기록할 전망 건설투자 는 주택부문을 중심으로 한 건설수주의 위축을 반영하여 1.0% 정도 감소할 것 으로 예상 수출 은 반도체를 중심으로 상품수출이 완만한 회복세를 보이는 가운데, 서비스수출도 높은 증가세를 지속할 전망 Ⅰ. 현 경제상황에 대한 인식 □ 최근 우리 경제는 수출 회복세에 힘입어 경기 부진이 점차 완화되는 모습 · 3/4분기 국내총생산(GDP)은 전분기(0.9%)보다 높은 전년동기대비 1.4%의 증가율을 기록하였으며, 계절조정 전기대비로도 0.6%(연율: 2.5%)의 높은 증가세를 보임. □ 내수는 고금리 기조가 지속됨",
@@ -578,6 +1348,384 @@
       "pdf_url": "https://www.kdi.re.kr/file/download?atch_no=3NTPAgusc9Q6vv50MiuC2g%3D%3D",
       "title": "KDI 경제동향 2026. 9",
       "url": "https://www.kdi.re.kr/research/monTrends?pub_no=19271"
+    },
+    "https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {
+      "date": "2026-10-27",
+      "description": "KISTEP 브리프 「대형 연구형 R&D 사업계획검토 제도의 이해 및 점검 주안점」은 대형 연구형 R&D 사업을 대상으로 도입된 사업계획검토 제도의 배경과 주요 내용, 초기 운영 결과와 향후 과제를 다룹니다. 사업계획검토는 연구개발부문 예비타당성조사 폐지 이후, 연구형 R&D의 특성을 반영해 신속하고 유연한 투자 의사결정을 지원하기 위해 마련된 제도입니다. 검토 대상은 총사업비 1,000억 원 이상이면서 국가 재정지원 규모가 500억 원 이상인 연구형 국가연구개발사업입니다. 계속사업은 해당 요건을 충족하고 과학기술정보통신부의 요청이 있는 경우 검토합니다. 예산심의에 앞서 정부지원의 필요성 및 시급성, 사업계획의 구체성, 유사 중복성, 사업규모의 적정성을 점검하며, 사업의 당락을 결정하기보다 기획의 미비점과 보완사항을 도출하는 데 중점을 둡니다. 본문에는 각 점검항목의 핵심질의와 사업기획 단계에서 준비할 사항도 담겨 있습니다. 2026년 첫 검토에는 총 187명의 전문가가 참여해 약 2.5개월간 12개 부처의 38개 사업을 점검했습니다. 주요 보완사항으로는 정부지원의 필요성과 시급성에 대한 객관적 근거 부족, 사업목표와 성과지표 간 연계성 미흡, 기존 사업과의",
+      "pdf_url": "https://www.kistep.re.kr/boardDownload.es?bid=0031&list_no=94905&seq=1",
+      "title": "대형 연구형 R&D 사업계획검토 제도의 이해 및 점검 주안점"
+    },
+    "https://www.kmooc.kr/view/course/detail/11495": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "(MOOC) 히든 히어로즈 : 1,635조 시장을 장악할 K-원전, 글로벌 영토를 넓히다!"
+    },
+    "https://www.kmooc.kr/view/course/detail/14760": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "(MOOC) 거인의 어깨-박재근"
+    },
+    "https://www.kmooc.kr/view/course/detail/15940": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "(mooc)tvN 놀라운 증명-AI 가정교사가 온다"
+    },
+    "https://www.kmooc.kr/view/course/detail/16143": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "(MOOC) 위대한 수업4(GREAT MINDS) - 일본은 왜 가난해졌나"
+    },
+    "https://www.kmooc.kr/view/course/detail/20133": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "건강보험 보장성강화 제대로 알기"
+    },
+    "https://www.kmooc.kr/view/course/detail/20261": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "이차전지이야기"
+    },
+    "https://www.kmooc.kr/view/course/detail/20390": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "니체 읽기-인문고전 『차라투스트라는 이렇게 말했다』"
+    },
+    "https://www.kmooc.kr/view/course/detail/20392": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "인공지능 시대의 언어학 입문"
+    },
+    "https://www.kmooc.kr/view/course/detail/20491": {
+      "date": "",
+      "description": "본 과목은 소셜 네트워크 분석을 이해하는 심화 과정으로, 네트워크 지표 중 사회 자본, 중개, 구조적 등위성, 중심-주변 등을 살펴본다. 또한, 알고리즘을 기반으로 네트워크내 커뮤니티를 감지하는 기법에 대해서도 공부하게 된다. 본 수업 이수후 네트워크 지표에 관한 고급 분석을 수행할 수 있다.",
+      "kind": "강좌 안내",
+      "title": "비정형 데이터 분석: 소셜 네트워크의 분석 심화"
+    },
+    "https://www.kmooc.kr/view/course/detail/20552": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "재난과 정신건강(Disaster and Mental Health)"
+    },
+    "https://www.kmooc.kr/view/course/detail/20794": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "삶을 버티게 하는 가치들"
+    },
+    "https://www.kmooc.kr/view/course/detail/20826": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "3D 모션캡쳐와 관련 기술의 적용"
+    },
+    "https://www.kmooc.kr/view/course/detail/20949": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "디스플레이 열유체역학"
+    },
+    "https://www.kmooc.kr/view/course/detail/20956": {
+      "date": "",
+      "description": "2009년 법학전문대학원의 출범과 함께 법학교육 시스템의 대전환이 요구됩니다. 특히 일상생활에서의 법적분쟁의 대부분을 차지하는 민사사건에서의 민법의 교육에 대한 체제와 방법의 개편은 중요한 법학교육의 과제이기도 합니다. 본 강좌는 민법 특히 계약법이 실제생활에서 어떻게 작동하는지를 이해할 수 있도록 강좌를 설계하였습니다. 그리하여 기존 법학교육에서 학설에 지나치게 비중을 두어 “학설의 숲”에 빠져 있는 현상을 과감히 탈피하여 실생활에서 적용되는 “살아있는 법”을 인식하고 스스로 문제를 해결하는 능력을 갖게 할 수 있는 것이 본 강좌의 목표입니다.",
+      "kind": "강좌 안내",
+      "title": "공정사회로 가는 계약법"
+    },
+    "https://www.kmooc.kr/view/course/detail/20957": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "에너지와 지속가능경영의 기초"
+    },
+    "https://www.kmooc.kr/view/course/detail/20991": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "클래식 친구 만들기"
+    },
+    "https://www.kmooc.kr/view/course/detail/21060": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "기초 라오스어 (A1)"
+    },
+    "https://www.kmooc.kr/view/course/detail/21091": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "미래생활 속에 스민 수학, AI로 활용하기"
+    },
+    "https://www.kmooc.kr/view/course/detail/21144": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "5G NR 특화망 설치 및 운용"
+    },
+    "https://www.kmooc.kr/view/course/detail/21179": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "일본 음식문화의 이해"
+    },
+    "https://www.kmooc.kr/view/course/detail/21284": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "인지신경과학의 이해"
+    },
+    "https://www.kmooc.kr/view/course/detail/21288": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "AI와의 첫 만남 : 생성형 인공지능으로 보는 미래"
+    },
+    "https://www.kmooc.kr/view/course/detail/21310": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "일반화학"
+    },
+    "https://www.kmooc.kr/view/course/detail/21316": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "고급게임엔진"
+    },
+    "https://www.spri.kr/posts/view/23959?code=AI-Brief": {
+      "date": "2026-03-24",
+      "description": "목차: 1. SaaSpocalypse의 원인과 전개 과정 2. 에이전틱 AI가 촉발한 소프트웨어 시장의 변화 3. 주요 산업별 AI 침투의 지형도 4. 종합 및 전망",
+      "pdf_url": "https://www.spri.kr/download/23819",
+      "title": "AI 브리프 · [AI Brief 스페셜] SaaSpocalypse의 파급효과와 산업 전망"
+    },
+    "https://www.spri.kr/posts/view/24022?code=magazine": {
+      "date": "2026-09-10",
+      "description": "",
+      "pdf_url": "https://www.spri.kr/download/23896",
+      "title": "SW중심사회 · 2026년 9월호"
+    },
+    "https://www.spri.kr/posts/view/24023?code=AI-Brief": {
+      "date": "2026-09-10",
+      "description": "목차: 정책·법제 ▹ 미국 백악관, AI 사전심사 대상을 폐쇄형 모델로 한정하되 개방형 모델까지 확대 검토 ▹ 미국 하원, AI 기업 과세로 일자리 창출 재원을 마련하는 법안 발의 ▹ 브루킹스 연구소, AI 세금 대신 자본소득 과세 강화 제안 ▹ AI 선도기업 연구자들, 미국 정부에 AI 개발 속도 조절 요구 ▹ 일본 특허청, AI 활용의 기본 방향 제시하는 AI 비전 수립 기업·산업 ▹ AI 토큰 비용 관리를 위한 ‘토크노믹스’ 부상 ▹ 앤트로픽, EU AI 법 준수를 위해 AI 생성 글에 워터마크 도입 ▹ 오픈AI, ‘데이브레이크’ 프로그램 확장과 함께 ‘GPT-5.6 Cyber’ 공개 ▹ 즈푸AI, 코딩과 사이버보안 성능 높인 AI 모델 ‘GLM-5.3’ 공개 ▹ 오픈AI, 사이버보안 우려로 프런티어 모델 개발 속도 조절 ▹ 기업 AI 활용 방식이 에이전트 중심으로 변화하는 경향 포착 기술·연구 ▹ RAND 연구소, 미국과 중국의 AI 개발 생태계 분석 ▹ 수학 분야에서 AI로 인한 인간 수학자 역할 축소 우려 ▹ 퓨리서치센터, 웹페이지 10개 중 1개에서 AI 작성 징후 발견 ▹ 오픈AI, 코딩 에이전트 활용한 과학 소프트웨어 개발 사례 조명 ▹ AI",
+      "pdf_url": "https://www.spri.kr/download/23901",
+      "title": "AI 브리프 · 2026년 9월호"
+    },
+    "https://www.spri.kr/posts/view/24031?code=AI-Brief": {
+      "date": "2026-10-12",
+      "description": "목차: 정책·법제 ▹ EU는 「AI 법」 본격 시행, 미국은 AI 규제 완화 기조 주도 ▹ 미·중 정상, ‘초지능’ 대화와 소통 창구 구축 합의 ▹ 미국 의회, 잇단 AI 규제 발의에도 입법은 정체 ▹ 미국 사이버보안 합동 권고문, 대규모 지식 증류를 통한 모델 탈취 경고 ▹ 중국 최고인민법원, AI 분쟁 처리 사법 지침 발표 기업·산업 ▹ AI 개발 속도 조절에 업계 찬반 엇갈려 ▹ 오픈AI, 차세대 AI 모델 ‘GPT-6 Astra’ 출시 ▹ 메타, 개인용 AI 에이전트 ‘Muse’ 출시 ▹ 중국 스마트폰 제조사들, AI 에이전트 통합한 신규 운영체제 공개 ▹ 오픈AI와 문샷 AI, 각각 금융 특화 AI 서비스 출시 기술·연구 ▹ 오픈AI, 허깅페이스 침해 원인으로 훈련 과정 중 보상 해킹 지목 ▹ 오픈AI, 에이전트 활용해 밀레니엄 난제 ‘나비에-스토크스’ 증명 발표 ▹ 네이처, 생성형 AI 사용으로 인한 획일화 가능성 조명 ▹ 구글 딥마인드, AGI 논의를 위한 ‘딥마인드 연구소’ 출범 ▹ AI로 인한 학습 저해 경고 속, 교육계 대응 방향 온도차 드러나 인력·교육 ▹ AI 도입 중소기업, 미도입 기업보다 채용 속도 증가 ▹ 링크드인, AI 증강형 직",
+      "pdf_url": "https://www.spri.kr/download/23908",
+      "title": "AI 브리프 · 2026년 10월호"
+    },
+    "https://www.spri.kr/posts/view/24032?code=magazine": {
+      "date": "2026-10-14",
+      "description": "",
+      "pdf_url": "https://www.spri.kr/download/23909",
+      "title": "SW중심사회 · 2026년 10월호"
+    }
+  },
+  "originals": {
+    "arxiv:2610.36298": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2610.36298"
+    },
+    "arxiv:2610.36776": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2610.36776"
+    },
+    "arxiv:2610.37070": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2610.37070"
+    },
+    "https://api-docs.deepseek.com/updates#deepseek-v41-flash-1017-update": {
+      "group": "models",
+      "key": "models:https://api-docs.deepseek.com/updates#deepseek-v41-flash-1017-update"
+    },
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar": {
+      "group": "models",
+      "key": "models:google-announcement:gemini-3-8-live-with-live-avatar"
+    },
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon": {
+      "group": "models",
+      "key": "models:google-announcement:introducing-gemini-4-carbon"
+    },
+    "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {
+      "group": "models",
+      "key": "models:google-announcement:genie-4-a-new-generation-of-world-simulation"
+    },
+    "https://blog.python.org/2026/10/python-3150-final-is-here": {
+      "group": "tools",
+      "key": "tools:https://blog.python.org/2026/10/python-3150-final-is-here"
+    },
+    "https://blog.python.org/2026/10/python-3151-3149-31317": {
+      "group": "tools",
+      "key": "tools:https://blog.python.org/2026/10/python-3151-3149-31317"
+    },
+    "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118": {
+      "group": "tools",
+      "key": "tools:https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118"
+    },
+    "https://blog.st.com/rust-mems-drivers": {
+      "group": "products",
+      "key": "products:https://blog.st.com/rust-mems-drivers"
+    },
+    "https://blog.st.com/stspin9p": {
+      "group": "products",
+      "key": "products:https://blog.st.com/stspin9p"
+    },
+    "https://blog.st.com/touchgfx": {
+      "group": "products",
+      "key": "products:https://blog.st.com/touchgfx"
+    },
+    "https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": {
+      "group": "products",
+      "key": "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction"
+    },
+    "https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure": {
+      "group": "products",
+      "key": "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure"
+    },
+    "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {
+      "group": "products",
+      "key": "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout"
+    },
+    "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages"
+    },
+    "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4"
+    },
+    "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games"
+    },
+    "https://developers.googleblog.com/gemini-4-argon-for-robotics": {
+      "group": "models",
+      "key": "models:https://developers.googleblog.com/gemini-4-argon-for-robotics"
+    },
+    "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2": {
+      "group": "tools",
+      "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2"
+    },
+    "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3": {
+      "group": "tools",
+      "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3"
+    },
+    "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4": {
+      "group": "tools",
+      "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4"
+    },
+    "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": {
+      "group": "tools",
+      "key": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0"
+    },
+    "https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129": {
+      "group": "reports",
+      "key": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129"
+    },
+    "https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132": {
+      "group": "reports",
+      "key": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132"
+    },
+    "https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133": {
+      "group": "reports",
+      "key": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133"
+    },
+    "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {
+      "group": "reports",
+      "key": "reports:https://ksp.etri.re.kr/ksp/plan-report/read?id=1572"
+    },
+    "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": {
+      "group": "papers",
+      "key": "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018"
+    },
+    "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027": {
+      "group": "learning",
+      "key": "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027"
+    },
+    "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
+      "group": "papers",
+      "key": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014"
+    },
+    "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": {
+      "group": "papers",
+      "key": "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019"
+    },
+    "https://openai.com/index/gpt-6-for-everyone": {
+      "group": "models",
+      "key": "models:https://openai.com/index/gpt-6-for-everyone"
+    },
+    "https://openai.com/index/introducing-gpt-6-1-sol": {
+      "group": "models",
+      "key": "models:https://openai.com/index/introducing-gpt-6-1-sol"
+    },
+    "https://openai.com/index/introducing-gpt-6-1-terra": {
+      "group": "models",
+      "key": "models:https://openai.com/index/introducing-gpt-6-1-terra"
+    },
+    "https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": {
+      "group": "industry",
+      "key": "industry:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface"
+    },
+    "https://www.anthropic.com/claude-haiku-5-5": {
+      "group": "models",
+      "key": "models:https://www.anthropic.com/claude-haiku-5-5"
+    },
+    "https://www.anthropic.com/claude-sonnet-5-5": {
+      "group": "models",
+      "key": "models:https://www.anthropic.com/claude-sonnet-5-5"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246"
+    },
+    "https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {
+      "group": "technology",
+      "key": "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000"
+    },
+    "https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "group": "industry",
+      "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
+    },
+    "https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "group": "industry",
+      "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
+    },
+    "https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "group": "industry",
+      "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
+    },
+    "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": {
+      "group": "industry",
+      "key": "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module"
+    },
+    "https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team": {
+      "group": "industry",
+      "key": "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team"
+    },
+    "https://www.spri.kr/posts/view/24031?code=AI-Brief": {
+      "group": "technology",
+      "key": "technology:https://www.spri.kr/posts/view/24031?code=AI-Brief"
+    },
+    "https://www.spri.kr/posts/view/24032?code=magazine": {
+      "group": "technology",
+      "key": "technology:https://www.spri.kr/posts/view/24032?code=magazine"
     }
   },
   "requests": {
@@ -589,9 +1737,40 @@
       "ETag": "\"f27bf4fa502153c549a1aa187d51b077\"",
       "Last-Modified": "Mon, 19 Oct 2026 06:05:47 GMT"
     },
+    "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
+      "ETag": "W/\"b670298537057f30b5e4b3e60198540b189bf9bdc60896b7b7ea45beafd1653e\""
+    },
+    "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
+      "ETag": "W/\"2639a6105163d78d47210aafaf8497882e86814f246aefa8572f649cd0c6dc34\""
+    },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
     "https://blog.google/robots.txt": {},
+    "https://blog.python.org/2026/10/python-3150-final-is-here": {
+      "ETag": "\"6aded7a2-10804\"",
+      "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
+    },
+    "https://blog.python.org/2026/10/python-3151-3149-31317": {
+      "ETag": "\"6aded7a2-8b97\"",
+      "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
+    },
+    "https://blog.python.org/feeds/posts/default?alt=rss": {
+      "ETag": "\"6aded7a2-609e\"",
+      "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
+    },
+    "https://blog.st.com/feed": {
+      "Last-Modified": "Wed, 28 Oct 2026 12:25:01 GMT"
+    },
+    "https://blog.st.com/robots.txt": {},
+    "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
+    "https://blogs.nvidia.co.kr/feed": {
+      "ETag": "\"8f54a3293ef793744318eb931e3c5b1b-gzip\"",
+      "Last-Modified": "Wed, 28 Oct 2026 05:02:53 GMT"
+    },
+    "https://blogs.nvidia.co.kr/robots.txt": {
+      "ETag": "\"1712-657221424d6b4-gzip\"",
+      "Last-Modified": "Tue, 21 Jul 2026 17:08:58 GMT"
+    },
     "https://deepmind.google/blog/gemini-4-argon-for-robotics": {},
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
@@ -600,10 +1779,17 @@
       "Last-Modified": "Wed, 28 Oct 2026 17:00:58 GMT"
     },
     "https://deepmind.google/robots.txt": {},
+    "https://developer.nvidia.com/blog/feed": {
+      "ETag": "\"f192cba44870ab39be084d25c695ff81\"",
+      "Last-Modified": "Wed, 28 Oct 2026 21:11:44 GMT"
+    },
+    "https://developer.nvidia.com/robots.txt": {
+      "ETag": "W/\"a221012ed37e844af211105107cd5154\""
+    },
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b8d-S5F93eB9EWkuZQrZTHkeAWkAZT8\""
+      "ETag": "W/\"33b8d-bcF+WZw/1xkYIu1R4/nKWVFxqwg\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
       "ETag": "W/\"40145-x8h3qSElNObygIF56SWcfe21eCc\""
@@ -646,15 +1832,49 @@
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
     },
+    "https://news.mit.edu/robots.txt": {
+      "ETag": "W/\"1793246137\"",
+      "Last-Modified": "Thu, 29 Oct 2026 03:55:37 GMT"
+    },
+    "https://news.mit.edu/rss/topic/artificial-intelligence2": {
+      "ETag": "\"1793246674\"",
+      "Last-Modified": "Thu, 29 Oct 2026 04:04:34 GMT"
+    },
+    "https://news.mit.edu/rss/topic/mitx": {
+      "ETag": "\"1793246446\"",
+      "Last-Modified": "Thu, 29 Oct 2026 04:00:46 GMT"
+    },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
       "ETag": "\"e32952d6049963aad2d1d7c44e1fa236\"",
       "Last-Modified": "Wed, 28 Oct 2026 20:20:49 GMT"
     },
+    "https://rss.arxiv.org/rss/cs.AI": {
+      "ETag": "b2de0b567bedbbc6f8aaf30fd0c8577002ec14a9fa8b676e070dbffced2b39e7"
+    },
+    "https://rss.arxiv.org/rss/cs.AR": {
+      "ETag": "a7c6c823e93c01dc8eda26ad6a40a52dd8a484eb5f701dccf38eff7f71cd3c15"
+    },
+    "https://rss.arxiv.org/rss/eess.SP": {
+      "ETag": "5132f0ef6183a1070440645be6234513341e22bea7b4be58aa0473bf45edbb86"
+    },
     "https://www.anthropic.com/claude-haiku-5-5": {},
     "https://www.anthropic.com/claude-sonnet-5-5": {},
     "https://www.anthropic.com/news": {},
     "https://www.anthropic.com/robots.txt": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": {},
+    "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133": {},
+    "https://www.boho.or.kr/robots.txt": {
+      "ETag": "W/\"316-1677147811000\"",
+      "Last-Modified": "Thu, 23 Feb 2023 10:23:31 GMT"
+    },
+    "https://www.kari.re.kr/kor/134/pblc/AEROPLCYRSCH": {},
+    "https://www.kari.re.kr/kor/89/pblc/RSCHRPTP": {},
+    "https://www.kari.re.kr/robots.txt": {
+      "Last-Modified": "Wed, 16 Sep 2026 04:30:16 GMT"
+    },
     "https://www.kdi.re.kr/research/economy": {},
     "https://www.kdi.re.kr/research/economy?pub_no=18120": {},
     "https://www.kdi.re.kr/research/economy?pub_no=18331": {},
@@ -680,11 +1900,127 @@
       "ETag": "W/\"116-1a18231ad58\"",
       "Last-Modified": "Wed, 28 Oct 2026 11:07:36 GMT"
     },
+    "https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {},
+    "https://www.kistep.re.kr/board.es?bid=0031&cg_code=C03&mid=a10306040000": {},
+    "https://www.kistep.re.kr/robots.txt": {
+      "ETag": "W/\"210-1769058782000\"",
+      "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
+    },
+    "https://www.kmooc.kr/": {
+      "ETag": "\"0b3daf1ab23eae368b86521edaf90902a\""
+    },
+    "https://www.kmooc.kr/robots.txt": {
+      "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
+    },
+    "https://www.kmooc.kr/view/course/detail/11495": {
+      "ETag": "\"0eec5a9ea2064a64bf358d35b1cacf60f\""
+    },
+    "https://www.kmooc.kr/view/course/detail/14760": {
+      "ETag": "\"0e7a44b0850e87a921c098f9f30d40ca0\""
+    },
+    "https://www.kmooc.kr/view/course/detail/15940": {
+      "ETag": "\"04c11385fe071d339bdfac1bc35f9f65a\""
+    },
+    "https://www.kmooc.kr/view/course/detail/16143": {
+      "ETag": "\"079f141d1328e56e8e92ef5ef88a94b8f\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20133": {
+      "ETag": "\"05a16b116dd43e6291cf4e20bb2f376f2\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20261": {
+      "ETag": "\"01af24c4495ba9412125858c86988a4fa\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20390": {
+      "ETag": "\"05f368891a6fdae627fd354b45558f31f\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20392": {
+      "ETag": "\"0c6e829cc117a3fc949b3e457d322f65e\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20491": {
+      "ETag": "\"07a98fddcea3243776b57eb9d0cbb7a0f\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20552": {
+      "ETag": "\"0e6c3933b28dc671cc0fdbd011644e16d\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20794": {
+      "ETag": "\"01190f14983cbccf0a5659155f91af612\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20826": {
+      "ETag": "\"082f4aacf5e9f9bdb948f68851f1fb585\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20949": {
+      "ETag": "\"0a8305342e7cd0ce2a28dd36df65a1b50\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20956": {
+      "ETag": "\"01d66f60e2ad23109d79ad51b2bac0558\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20957": {
+      "ETag": "\"04cf108764f944dfc3915493ab9d6312e\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20991": {
+      "ETag": "\"0080c64b4cf56ec5997e1bf2006303480\""
+    },
+    "https://www.kmooc.kr/view/course/detail/21060": {
+      "ETag": "\"0d5a7a469832a6b8a48c365db0e2a4deb\""
+    },
+    "https://www.kmooc.kr/view/course/detail/21091": {
+      "ETag": "\"031b28d68c657aa696740ef4b843812e7\""
+    },
+    "https://www.kmooc.kr/view/course/detail/21144": {
+      "ETag": "\"014e8ec7e4e2e5216a393390d54283986\""
+    },
+    "https://www.kmooc.kr/view/course/detail/21179": {
+      "ETag": "\"08eab302597ccd5d071610fb623c4eb6e\""
+    },
+    "https://www.kmooc.kr/view/course/detail/21284": {
+      "ETag": "\"0e49c872b5f03eed866691fcccacb7eff\""
+    },
+    "https://www.kmooc.kr/view/course/detail/21288": {
+      "ETag": "\"0721ecefc05b26ec3536059a43d313b98\""
+    },
+    "https://www.kmooc.kr/view/course/detail/21310": {
+      "ETag": "\"095a2a55b6f6ff7aa16076ab5f0ad87f0\""
+    },
+    "https://www.kmooc.kr/view/course/detail/21316": {
+      "ETag": "\"0731ee4650b756bdbf7a1964ac623f561\""
+    },
     "https://www.lgbr.co.kr/business/list.do": {},
-    "https://www.lgbr.co.kr/economy/list.do": {}
+    "https://www.lgbr.co.kr/economy/list.do": {},
+    "https://www.mcee.go.kr/home/web/board/rss.do?boardMasterId=939&menuId=10598": {},
+    "https://www.mcee.go.kr/robots.txt": {
+      "Last-Modified": "Wed, 15 Jul 2026 07:32:03 GMT"
+    },
+    "https://www.nasa.gov/robots.txt": {},
+    "https://www.nasa.gov/technology/feed": {
+      "ETag": "\"562c5b38b3a338e1735acdbe0fbed5c4\"",
+      "Last-Modified": "Thu, 29 Oct 2026 02:49:59 GMT"
+    },
+    "https://www.ocw-openmatters.org/feed": {
+      "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
+      "Last-Modified": "Tue, 22 Sep 2026 20:09:15 GMT"
+    },
+    "https://www.ocw-openmatters.org/robots.txt": {
+      "ETag": "\"065a733f5-0;;;\"",
+      "Last-Modified": "Wed, 17 Jan 2024 01:57:09 GMT"
+    },
+    "https://www.spri.kr/posts/view/23959?code=AI-Brief": {},
+    "https://www.spri.kr/posts/view/24022?code=magazine": {},
+    "https://www.spri.kr/posts/view/24023?code=AI-Brief": {},
+    "https://www.spri.kr/posts/view/24031?code=AI-Brief": {},
+    "https://www.spri.kr/posts/view/24032?code=magazine": {},
+    "https://www.spri.kr/posts?code=AI-Brief": {},
+    "https://www.spri.kr/posts?code=magazine": {},
+    "https://www.spri.kr/robots.txt": {
+      "ETag": "\"51-648dbd2e3e1fd\"",
+      "Last-Modified": "Wed, 21 Jan 2026 01:27:13 GMT"
+    }
   },
   "robots": {
     "https://api-docs.deepseek.com/robots.txt": {
+      "day": "2026-10-29",
+      "rules": ""
+    },
+    "https://api.github.com/robots.txt": {
       "day": "2026-10-29",
       "rules": ""
     },
@@ -692,9 +2028,25 @@
       "day": "2026-10-29",
       "rules": "\n\n\n\nUser-agent: *\nDisallow: /search/?\nDisallow: /intl/*/search/?\nDisallow: /search?\nDisallow: /intl/*/search?\n\nSitemap: https://blog.google/sitemap.xml\n\n"
     },
+    "https://blog.python.org/robots.txt": {
+      "day": "2026-10-29",
+      "rules": ""
+    },
+    "https://blog.st.com/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://blog.st.com/sitemap_index.xml\n"
+    },
+    "https://blogs.nvidia.co.kr/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "#\r\n# Welcome to the NVIDIA Blog\r\n#\r\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@@@@@@@@@@@@@@%#@#////////////////////////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@@@@@//////////@@@@@@@@@@@@///////////////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@//////@@@@@@@@/////////@@@@@@@///////////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@//////@@@@@@//////@@@@@@@//////@@@@@@////////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@//////@@@@@//////@@@@///@@@@@@@/////&@@@@@//////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@//////@@@@////@@@@@@@/////@@@@/////@@@@@@///////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@/////@@@@/////@@@@@////////////@@@@@///////@//////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@//////@@@@/////@@@/////////@@@@@///////@@@@@@@@//////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@//////@@@@@/////@@@@@@@@@@////////@@@@@@@@@@@//////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@@//////@@@@@@@/////////////@@@@@@@@@@@///////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@@@@@/////////%/////@@@@@@@@@@@@@/////////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@@@@@@@@@@@&///@@@@@@@@///////////////////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n#\r\n# We dig it when people read our code! Check out the jobs while you're here.\r\n# https://www.nvidia.com/en-us/about-nvidia/careers/\r\n#\r\n# Or check out our YouTube channel for our latest\r\n# https://www.youtube.com/user/nvidia\r\n#\r\n# Last updated 21 July 2026 by RR\r\n\r\n# AI / LLM crawlers & fetchers\r\n\r\nUser-Agent: *\r\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\r\nAllow: /\r\n\r\n# Global RSS Feeds \r\nSitemap: https://blogs.nvidia.com/feed/\r\nSitemap: https://developer.nvidia.com/blog/feed/\r\nSitemap: https://nvidianews.nvidia.com/releases.xml\r\nSitemap: https://blogs.nvidia.de/feed/\r\nSitemap: https://blogs.nvidia.fr/feed/\r\nSitemap: https://blogs.nvidia.cn/feed/\r\nSitemap: https://developer.nvidia.com/zh-cn/blog/feed/\r\nSitemap: https://blogs.nvidia.co.jp/feed/\r\nSitemap: https://developer.nvidia.com/ja-jp/blog/feed/\r\nSitemap: https://blogs.nvidia.co.kr/feed/\r\nSitemap: https://blogs.nvidia.com.tw/feed/\r\nSitemap: https://blog.nvidia.com.br/feed/\r\nSitemap: https://la.blogs.nvidia.com/feed/\r\nSitemap: https://nvidianews.nvidia.com/rss\r\nSitemap: https://blogs.nvidia.cn/blog/category/news/feed/\r\nSitemap: https://developer.nvidia.cn/zh-cn/blog/feed\r\n\r\n# Global Blog Sitemaps\r\nSitemap: https://blogs.nvidia.com/sitemap_index.xml\r\nSitemap: https://blogs.nvidia.co.jp/sitemap_index.xml\r\nSitemap: https://blog.nvidia.com.br/sitemap_index.xml\r\nSitemap: https://blogs.nvidia.co.kr/sitemap_index.xml\r\nSitemap: https://blogs.nvidia.com.tw/sitemap_index.xml\r\nSitemap: https://blogs.nvidia.cn/sitemap_index.xml\r\nSitemap: https://blogs.nvidia.fr/sitemap_index.xml\r\nSitemap: https://la.blogs.nvidia.com/sitemap_index.xml\r\nSitemap: https://blogs.nvidia.de/sitemap_index.xml\r\n\r\nUser-agent: Googlebot\r\nUser-agent: Googlebot Smartphone\r\nUser-agent: Google AdsBot\r\nUser-agent: Bingbot\r\nDisallow: /*.md$\r\nDisallow: /*.llms.txt\r\n\r\nUser-agent: *\r\nDisallow: /email-verify/*\r\nDisallow: /forms/*\r\nDisallow: /*.swf$\r\n\r\n# Parameters\r\nDisallow: /*[?&]AccessToken=*\r\nDisallow: /*[?&]_bhlid=*\r\nDisallow: /*[?&]campaign_id=*\r\nDisallow: /*[?&]cid=*\r\nDisallow: /*[?&]dysig_tid=*\r\nDisallow: /*[?&]eid=*\r\nDisallow: /*[?&]emc=*\r\nDisallow: /*[?&]es_id=*\r\nDisallow: /*[?&]excludes=*\r\nDisallow: /*[?&]gad_source=*\r\nDisallow: /*[?&]gl=*\r\nDisallow: /*[?&]hstc=*\r\nDisallow: /*[?&]instance_id=*\r\nDisallow: /*[?&]jso=*\r\nDisallow: /*[?&]lang=*\r\nDisallow: /*[?&]link=*\r\nDisallow: /*[?&]linkId=*\r\nDisallow: /*[?&]lx=*\r\nDisallow: /*[?&]mod=*\r\nDisallow: /*[?&]ncid=*\r\nDisallow: /*[?&]nl=*\r\nDisallow: /*[?&]nvid=*\r\nDisallow: /*[?&]nv_excludes=*\r\nDisallow: /*[?&]nv_next_ids=*\r\nDisallow: /*[?&]page=*\r\nDisallow: /*[?&]preview_id=*\r\nDisallow: /*[?&]q=*\r\nDisallow: /*[?&]reader=*\r\nDisallow: /*[?&]ref=*\r\nDisallow: /*[?&]regcode=*\r\nDisallow: /*[?&]regi_id=*\r\nDisallow: /*[?&]section=*\r\nDisallow: /*[?&]segment_id=*\r\nDisallow: /*[?&]srsltid=*\r\nDisallow: /*[?&]target=*\r\nDisallow: /*[?&]topicpage=*\r\nDisallow: /*[?&]user_id=*\r\nDisallow: /*[?&]utm*\r\n\r\n# AI / LLM crawlers & fetchers\r\n\r\nUser-Agent: *\r\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\r\nAllow: /\r\n\r\nUser-agent: ai2bot\r\nUser-agent: anthropic-ai\r\nUser-agent: Amazonbot\r\nUser-agent: Amazon-kendra\r\nUser-agent: Applebot-extended\r\nUser-agent: AutoGPT\r\nUser-agent: BedrockBot\r\nUser-agent: Bytespider\r\nUser-agent: CCBot\r\nUser-agent: Chatglm-spider\r\nUser-agent: ChatGPT\r\nUser-agent: ChatGPT-User\r\nUser-agent: Claudebot\r\nUser-agent: Claude-user\r\nUser-agent: Claude-search\r\nUser-agent: Claude-web\r\nUser-agent: Cohere-ai\r\nUser-agent: Cotoyogi\r\nUser-agent: Deepseek\r\nUser-agent: Deepseek Chat\r\nUser-agent: Deepseekbot\r\nUser-agent: DuckAssistBot\r\nUser-agent: DuckDuckBot\r\nUser-agent: FacebookBot\r\nUser-agent: Geminiios\r\nUser-agent: Google-Extended\r\nUser-agent: Googleagent-manier\r\nUser-agent: GPTBot\r\nUser-agent: Grok\r\nUser-agent: ia-archiver\r\nUser-agent: iaskbot\r\nUser-agent: iaskspider\r\nUser-agent: ICC-crawler\r\nUser-agent: Linerbot\r\nUser-agent: Metaaib\r\nUser-agent: Meta-externalagent\r\nUser-agent: Meta-externalfetcher\r\nUser-agent: Meta-llama\r\nUser-agent: Mistralai-user\r\nUser-agent: NovaAct\r\nUser-agent: OAI-Searchbot\r\nUser-agent: Pangubot\r\nUser-agent: Perplexity\r\nUser-agent: PerplexityBot\r\nUser-agent: Perplexity-user\r\nUser-agent: Phindbot\r\nUser-agent: PoeBot\r\nUser-agent: Qwen\r\nUser-agent: Sogou\r\nUser-agent: Timpibot\r\nUser-agent: Tongyi\r\nUser-agent: Wenxiaobai\r\nUser-agent: Xinghuo\r\nUser-agent: Youbot\r\nUser-agent: Yuanbaobot\r\nAllow: /*.md$\r\nAllow: /*.llms.txt"
+    },
     "https://deepmind.google/robots.txt": {
       "day": "2026-10-29",
       "rules": "User-agent: *\nAllow: /\n\nSitemap: https://deepmind.google/sitemap.xml\n"
+    },
+    "https://developer.nvidia.com/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "#\n# Welcome to NVIDIA Developer Zone\n#\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@%#@#////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@//////////@@@@@@@@@@@@///////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@//////@@@@@@@@/////////@@@@@@@///////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@//////@@@@@@//////@@@@@@@//////@@@@@@////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@//////@@@@@//////@@@@///@@@@@@@/////&@@@@@//////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@//////@@@@////@@@@@@@/////@@@@/////@@@@@@///////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@/////@@@@/////@@@@@////////////@@@@@///////@//////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@//////@@@@/////@@@/////////@@@@@///////@@@@@@@@//////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@//////@@@@@/////@@@@@@@@@@////////@@@@@@@@@@@//////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@//////@@@@@@@/////////////@@@@@@@@@@@///////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@/////////%/////@@@@@@@@@@@@@/////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@&///@@@@@@@@///////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n#\n# We dig it when people read our code! Check out the jobs while you're here.\n# https://www.nvidia.com/en-us/about-nvidia/careers/\n#\n# Check out our YouTube channel for our latest\n# https://www.youtube.com/user/nvidia\n#\n# Last updated 4 Jun 2026 by AW\n\nUser-agent: *\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\nAllow: /\nAllow: /llms.txt$\nAllow: /*/llms.txt$\nAllow: /*.md$\nSitemap: https://developer.nvidia.com/sitemap_index.xml\nSitemap: https://www.nvidia.com/sitemap_index.xml\nSitemap: https://build.nvidia.com/sitemap.xml\nSitemap: https://docs.nvidia.com/bsp-sitemap.xml\nSitemap: https://docs.nvidia.com/nvidia_sitemap_index.xml\nSitemap: https://docs.nvidia.com/s3-sitemap-index.xml\n\nUser-agent: Googlebot\nUser-agent: Googlebot Smartphone\nUser-agent: Google AdsBot\nUser-agent: Bingbot\nDisallow: /*.md$\nDisallow: /*.llms.txt$\n\n# GSC Parameters\nUser-agent: *\nDisallow: /*[?&]AMJnQtSpH=*\nDisallow: /*[?&]__prclt=*\nDisallow: /*[?&]_bg=*\nDisallow: /*[?&]_bt=*\nDisallow: /*[?&]_hsenc=*\nDisallow: /*[?&]_hsmi=*\nDisallow: /*[?&]_lrsc=*\nDisallow: /*[?&]adbid=*\nDisallow: /*[?&]adbpl=*\nDisallow: /*[?&]adbpr=*\nDisallow: /*[?&]adbsc=*\nDisallow: /*[?&]amp;utm_medium=*\nDisallow: /*[?&]amp;utm_source=*\nDisallow: /*[?&]by8Vk=*\nDisallow: /*[?&]cat=*\nDisallow: /*[?&]cm_cat=*\nDisallow: /*[?&]cm_ite=*\nDisallow: /*[?&]cm_pla=*\nDisallow: /*[?&]cm_ven=*\nDisallow: /*[?&]dysig_tid=*\nDisallow: /*[?&]es_id=*\nDisallow: /*[?&]fbclid=*\nDisallow: /*[?&]filter_by=*\nDisallow: /*[?&]gad_source=*\nDisallow: /*[?&]gclid=*\nDisallow: /*[?&]gh_src=*\nDisallow: /*[?&]hsCtaTracking=*\nDisallow: /*[?&]infl_anl=*\nDisallow: /*[?&]linkId=*\nDisallow: /*[?&]mkt_tok=*\nDisallow: /*[?&]ncid=*\nDisallow: /*[?&]network=*\nDisallow: /*[?&]nvid=*\nDisallow: /*[?&]org=*\nDisallow: /*[?&]p=*\nDisallow: /*[?&]reader=*\nDisallow: /*[?&]ref=*\nDisallow: /*[?&]rel=*\nDisallow: /*[?&]sfdcid=*\nDisallow: /*[?&]source=*\nDisallow: /*[?&]spm=*\nDisallow: /*[?&]szn-session=*\nDisallow: /*[?&]trk=*\nDisallow: /*[?&]userID=*\nDisallow: /*[?&]utm*\n\n# CSS, JS, Images\nAllow: /misc/*.css$\nAllow: /misc/*.css?\nAllow: /misc/*.js$\nAllow: /misc/*.js?\nAllow: /misc/*.gif\nAllow: /misc/*.jpg\nAllow: /misc/*.jpeg\nAllow: /misc/*.png\nAllow: /modules/*.css$\nAllow: /modules/*.css?\nAllow: /modules/*.js$\nAllow: /modules/*.js?\nAllow: /modules/*.gif\nAllow: /modules/*.jpg\nAllow: /modules/*.jpeg\nAllow: /modules/*.png\nAllow: /profiles/*.css$\nAllow: /profiles/*.css?\nAllow: /profiles/*.js$\nAllow: /profiles/*.js?\nAllow: /profiles/*.gif\nAllow: /profiles/*.jpg\nAllow: /profiles/*.jpeg\nAllow: /profiles/*.png\nAllow: /themes/*.css$\nAllow: /themes/*.css?\nAllow: /themes/*.js$\nAllow: /themes/*.js?\nAllow: /themes/*.gif\nAllow: /themes/*.jpg\nAllow: /themes/*.jpeg\nAllow: /themes/*.png\n\n# Directories\nDisallow: /includes/\nDisallow: /profiles/\nDisallow: /scripts/\n\n# Files\nDisallow: /CHANGELOG.txt\nDisallow: /cron.php\nDisallow: /INSTALL.mysql.txt\nDisallow: /INSTALL.pgsql.txt\nDisallow: /INSTALL.sqlite.txt\nDisallow: /install.php\nDisallow: /INSTALL.txt\nDisallow: /LICENSE.txt\nDisallow: /MAINTAINERS.txt\nDisallow: /update.php\nDisallow: /UPGRADE.txt\nDisallow: /xmlrpc.php\n\n# Paths (clean URLs)\nDisallow: /pt-br/\nDisallow: /es-la/\nDisallow: /admin/\nDisallow: /comment/reply/\nDisallow: /filter/tips/\nDisallow: /node/add/\nDisallow: /search/\nDisallow: /user/\n\n# Paths (no clean URLs)\nDisallow: /?q=admin/\nDisallow: /?q=comment/reply/\nDisallow: /?q=filter/tips/\nDisallow: /?q=node/add/\nDisallow: /?q=search/\nDisallow: /?q=user/*\n\n# DevZone\nDisallow: /buy-jetson?*\nDisallow: /taxonomy/term/\nDisallow: /*.woff$\nDisallow: /*.woff2$\n\n"
     },
     "https://futures.kaist.ac.kr/robots.txt": {
       "day": "2026-10-29",
@@ -712,13 +2064,29 @@
       "day": "2026-10-29",
       "rules": "Sitemap: https://ksp.etri.re.kr/ksp/sitemap.xml\n\nUser-agent: *\nDisallow: /ksp/funding/\nDisallow: /ksp/edr/\nDisallow: /ksp/rcp/\nDisallow: /ksp/git/\n\nUser-agent: Mediapartners-Google*\nDisallow: /\n\nUser-agent: UbiCrawler\nDisallow: /\n\nUser-agent: DOC\nDisallow: /\n\nUser-agent: Zao\nDisallow: /\n\nUser-agent: sitecheck.internetseer.com\nDisallow: /\n\nUser-agent: Zealbot\nDisallow: /\n\nUser-agent: MSIECrawler\nDisallow: /\n\nUser-agent: SiteSnagger\nDisallow: /\n\nUser-agent: WebStripper\nDisallow: /\n\nUser-agent: WebCopier\nDisallow: /\n\nUser-agent: Fetch\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: Teleport\nDisallow: /\n\nUser-agent: TeleportPro\nDisallow: /\n\nUser-agent: WebZIP\nDisallow: /\n\nUser-agent: linko\nDisallow: /\n\nUser-agent: HTTrack\nDisallow: /\n\nUser-agent: Microsoft.URL.Control\nDisallow: /\n\nUser-agent: Xenu\nDisallow: /\n\nUser-agent: larbin\nDisallow: /\n\nUser-agent: libwww\nDisallow: /\n\nUser-agent: ZyBORG\nDisallow: /\n\nUser-agent: Download Ninja\nDisallow: /\n\nUser-agent: fast\nDisallow: /\n\nUser-agent: grub-client\nDisallow: /\n\nUser-agent: k2spider\nDisallow: /\n\nUser-agent: NPBot\nDisallow: /\n\nUser-agent: WebReaper\nDisallow: /\n\n\n"
     },
+    "https://news.mit.edu/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "#\r\n# robots.txt\r\n#\r\n# This file is to prevent the crawling and indexing of certain parts\r\n# of your site by web crawlers and spiders run by sites like Yahoo!\r\n# and Google. By telling these \"robots\" where not to go on your site,\r\n# you save bandwidth and server resources.\r\n#\r\n# This file will be ignored unless it is at the root of your host:\r\n# Used:    http://example.com/robots.txt\r\n# Ignored: http://example.com/site/robots.txt\r\n#\r\n# For more information about the robots.txt standard, see:\r\n# http://www.robotstxt.org/robotstxt.html\r\n\r\nUser-agent: *\r\n# CSS, JS, Images\r\nAllow: /core/*.css$\r\nAllow: /core/*.css?\r\nAllow: /core/*.js$\r\nAllow: /core/*.js?\r\nAllow: /core/*.gif\r\nAllow: /core/*.jpg\r\nAllow: /core/*.jpeg\r\nAllow: /core/*.png\r\nAllow: /core/*.svg\r\nAllow: /profiles/*.css$\r\nAllow: /profiles/*.css?\r\nAllow: /profiles/*.js$\r\nAllow: /profiles/*.js?\r\nAllow: /profiles/*.gif\r\nAllow: /profiles/*.jpg\r\nAllow: /profiles/*.jpeg\r\nAllow: /profiles/*.png\r\nAllow: /profiles/*.svg\r\n# Directories\r\nDisallow: /core/\r\nDisallow: /profiles/\r\n# Files\r\nDisallow: /README.txt\r\nDisallow: /web.config\r\n# Paths (clean URLs)\r\nDisallow: /admin/\r\nDisallow: /comment/reply/\r\nDisallow: /filter/tips\r\nDisallow: /node/add/\r\nDisallow: /search/\r\nDisallow: /user/register/\r\nDisallow: /user/password/\r\nDisallow: /user/login/\r\nDisallow: /user/logout/\r\n# Paths (no clean URLs)\r\nDisallow: /index.php/admin/\r\nDisallow: /index.php/comment/reply/\r\nDisallow: /index.php/filter/tips\r\nDisallow: /index.php/node/add/\r\nDisallow: /index.php/search/\r\nDisallow: /index.php/user/password/\r\nDisallow: /index.php/user/register/\r\nDisallow: /index.php/user/login/\r\nDisallow: /index.php/user/logout/\r\n\r\nDisallow: /source/\r\nDisallow: /article-type/\r\nDisallow: /author/\r\nDisallow: /keyword/\r\nDisallow: /nav-browse/\r\nDisallow: /press-contact/\r\nDisallow: /user/"
+    },
     "https://openai.com/robots.txt": {
       "day": "2026-10-29",
       "rules": "User-agent: *\nAllow: /\nDisallow: /microsoft-for-startups/\n\nSitemap: https://openai.com/sitemap.xml"
     },
+    "https://rss.arxiv.org/robots.txt": {
+      "day": "2026-10-29",
+      "rules": ""
+    },
     "https://www.anthropic.com/robots.txt": {
       "day": "2026-10-29",
       "rules": "User-Agent: *\nAllow: /\n\nSitemap: https://www.anthropic.com/sitemap.xml\n"
+    },
+    "https://www.boho.or.kr/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "User-agent: googlebot\nDisallow: /admin/\nDisallow: /curoms/\nAllow: /*/subPage.do\nAllow: /*/bbs/list.do\nAllow: /*/report/list.do\nAllow: /*/consult/consultForm.do\n\n\nUser-agent: Yeti\nDisallow: /admin/\nDisallow: /curoms/\nAllow: /*/subPage.do\nAllow: /*/bbs/list.do\nAllow: /*/report/list.do\nAllow: /*/consult/consultForm.do"
+    },
+    "https://www.kari.re.kr/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "User-agent: *\nAllow: /\nSitemap: https://www.kari.re.kr/sitemap.xml\n"
     },
     "https://www.kdi.re.kr/robots.txt": {
       "day": "2026-10-29",
@@ -728,9 +2096,33 @@
       "day": "2026-10-29",
       "rules": "Sitemap: https://www.kimi.com/sitemap.xml\nSitemap: https://www.kimi.com/sitemap/sitemap-ug.xml\n\nUser-agent: *\nAllow: /\nDisallow: /_prefill_chat\nDisallow: /api\nDisallow: /apiv2-files\nDisallow: /apiv2\nDisallow: /chat/\nAllow: /apiv2/kimi.gateway.slides.v1.SlidesService/ListStyles\n"
     },
+    "https://www.kistep.re.kr/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "User-agent: Googlebot\r\nDisallow: /\r\n\r\nUser-agent: Yeti\r\nDisallow: /aivorySearch.es\r\n\r\nUser-agent: Daum\r\nDisallow: /aivorySearch.es\r\n\r\nUser-agent: Bingbot\r\nDisallow: /aivorySearch.es\r\n\r\nUser-agent: *\r\nAllow: /\r\n"
+    },
+    "https://www.kmooc.kr/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "User-agent: *\nAllow: /"
+    },
     "https://www.lgbr.co.kr/robots.txt": {
       "day": "2026-10-29",
       "rules": ""
+    },
+    "https://www.mcee.go.kr/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "User-agent: * \r\nDisallow:/sodamphew/\r\nDisallow:/sodamphew2/\r\nDisallow:/upload_private/\r\nDisallow:/upload/\r\nDisallow:/search/\r\nDisallow:/kor/webzine/\r\nDisallow:/daegu/wangpicheon/\r\nDisallow:/WEB-INF/jsp/mob/webzine/\r\nDisallow:/api/\r\nDisallow:/file/readDownloadFile.do\r\nDisallow:/file/readDownloadFile4.do\r\n#DaumWebMasterTool:d7c01b148661a8d96e8a6006131c5056bf9a23686f8968242790f354f0dfcfbf:SgQVtKE0+akmA+AR7suRxg=="
+    },
+    "https://www.nasa.gov/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "User-agent: usasearch\nCrawl-delay: 1\nAllow: /\n\nUser-agent: *\nAllow: /"
+    },
+    "https://www.ocw-openmatters.org/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "user-agent: * \ndisallow: \ncrawl-delay: 60\n"
+    },
+    "https://www.spri.kr/robots.txt": {
+      "day": "2026-10-29",
+      "rules": "User-agent: Googlebot\r\nDisallow: /files/\r\nDisallow: /ksearch/\r\nAllow: /file_html/"
     }
   },
   "schema": 1,
@@ -746,6 +2138,130 @@
     "anthropic:https://www.anthropic.com/claude-sonnet-5-5": {
       "list_fingerprint": "3249798a0b4bcb08282ff208fabe3c675ed2423ad0bda22c8611d06f15034f26",
       "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2506.19846": {
+      "list_fingerprint": "ca7cac2bdb3ed513a323fbfff63b52b21ba7a3764c9cfaab6675a9592f7dd254",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2508.20729": {
+      "list_fingerprint": "905ba80a093938788dcdff0da5739ce022a766b29766bc63f0516639626c72fd",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2601.02727": {
+      "list_fingerprint": "465c964252e1a1f5d4b4b5a78ece86e39c0cdced0e16622274b6293d9122018d",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2601.13401": {
+      "list_fingerprint": "e89b7a9bcb3cde5c9df4cf993ee26e7016cfc7b64cc2a887459a41aaef095149",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2603.18740": {
+      "list_fingerprint": "c89767220b0be5efbad0800b32e01810393a4896a618e00d31dcce1dc859b9e9",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2604.19298": {
+      "list_fingerprint": "8efe97d7e1dae82d8f155e23d54ace8f6c15e836eff7e4c16f550c36c3cb5f85",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2604.23018": {
+      "list_fingerprint": "7deeccd957ccffa07c2e573cc4d38d5a9833b67b9841179b5d010d0a7f0644b9",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2605.17000": {
+      "list_fingerprint": "6e80ec8ed0367df4f23c2e0fa2bf0774b969e860bca03f7e3d2234e091b095ab",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2605.30188": {
+      "list_fingerprint": "4bbee61208549c443157d7c3d575fdb8b3fd292f80d504f8fadc9260347187f5",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2608.00711": {
+      "list_fingerprint": "38cda9112c6846162549376c4ffbdd8406504b22ffafe2c3709a50d8c49eaca7",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2609.11115": {
+      "list_fingerprint": "a02980c745cf399b65e124bf8ab0dbe30a1911465e67e1c197f7413ebb252db8",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2609.12718": {
+      "list_fingerprint": "16864029e28f312f5ba25437f76be44818a4dbc7451d868d87de6b99ae2bb895",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2609.30027": {
+      "list_fingerprint": "27297b741c108d6dec2feabc713ab159a2e745e90df86345ab1bdc40d3a0d840",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.16925": {
+      "list_fingerprint": "5f13a8c76c469bb3f46af493c0d4da89c6c6b37b0258beba736023829f5b917e",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.29271": {
+      "list_fingerprint": "2a4a1ef699b0da2814e3cc610db166bf42eb3f548d2a7efdce738f7deb4b2919",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.29968": {
+      "list_fingerprint": "12e12a755dae189a90210ac62ad945546d4dd6e2be1d689d4a31069c279b9685",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.33036": {
+      "list_fingerprint": "735203e09faaebce937d4e00aabb94ae92e7b0f61a4348bc9d51e6959173afe5",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.36010": {
+      "list_fingerprint": "30de423c09b6d7d5546b8867636de609d4ad2baefd82e6c7dea211ec33969e07",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.36208": {
+      "list_fingerprint": "cb4d3e361bac4d72e0feae3cd848b6f85ea0a109eab9bb214eb423466dc55136",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.36298": {
+      "list_fingerprint": "286522ce7d03c620f000b0b0bde6e02cb1223e6662daaff150c36b4e401eb4b8",
+      "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.36384": {
+      "list_fingerprint": "23ff5e707872d164a99af6703144c37f82db79db4e43d6fdf142e319efc26eb4",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.36553": {
+      "list_fingerprint": "58ce7a623b859d17841a4e108052fff4f9387bf4bf587962916d75ecc10897fe",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.36776": {
+      "list_fingerprint": "81081eedc79f1d843b50289b9b34b8e37d5e2920a7b94c7684636c5b490d6988",
+      "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.37022": {
+      "list_fingerprint": "667f1d36311c07f7e3382af0c120100fbf09fcea0cd2d67521b222e903c412cc",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.37070": {
+      "list_fingerprint": "5e993acfa8c4508324d5961f0e9f60474de76a18a83d28ba9772ced6ac1c00fa",
+      "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.37081": {
+      "list_fingerprint": "fb128d1b7513cd2cf9feac2faadd42623989e5ac08a4b8563a304f44baa4246a",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.37166": {
+      "list_fingerprint": "3c9ad90c17988a8f18a3eb0c8a062805018834640e3ccf86cd633fecf7f0069b",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.37243": {
+      "list_fingerprint": "be2f82ce0f37a5fc0c0a85cf84d90fe6e36f29fd128b764a5c892516cf723425",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.37276": {
+      "list_fingerprint": "e4e2cbc0347df662a4a4939dca72127683cdba5c2ca46d1fe3ec9e293909f03a",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.37550": {
+      "list_fingerprint": "ff0f51b619366a9536d94cb633c819adca220d1680f2b9dc25add47da979708f",
+      "status": "bootstrap_skipped"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.37599": {
+      "list_fingerprint": "163c02658ca2e84bbd3c80653bf5ff6b731ac7edee53362ea50dff579d74c9ad",
+      "status": "bootstrap_skipped"
     },
     "deepseek:https://api-docs.deepseek.com/updates#deepseek-v4-flash-update": {
       "list_fingerprint": "935f8d9313ccf026f9df314868a565ee3029491ace8970851c1d4678e20ec05d",
@@ -951,6 +2467,42 @@
       "list_fingerprint": "4c41995c121c3a9ed5d52753459a16ebe06b9d59921472fa891ed1ba89d3befa",
       "status": "posted"
     },
+    "industry:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": {
+      "fingerprint": "9a63700995816e9917818c4620da1899d44edf6bc138b070c34b2a9a795c3e46",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface/"
+    },
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "fingerprint": "b27d25fbc245fda6f1e712bcad45fc543c80218fe57e0e32a8f4522133d15031",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=vu3_ACiKP7eqexfQqZ9ooVZgG9KKOouPhBCRxmj7.mehome1?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1902850"
+    },
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "fingerprint": "5d870027cb87b6fd05d0c4be68420d446f02802ecc677076139b724d21922029",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=vu3_ACiKP7eqexfQqZ9ooVZgG9KKOouPhBCRxmj7.mehome1?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1902910"
+    },
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "fingerprint": "8d4cc696b41dc1020cbfdf9511c4c6c5a974fe952d3503ac5f49764f30978ec8",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=vu3_ACiKP7eqexfQqZ9ooVZgG9KKOouPhBCRxmj7.mehome1?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1902920"
+    },
+    "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": {
+      "fingerprint": "867be9219fd5339d7d7613960badc853e9cfb9599da56266e8c51a773324963b",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module/"
+    },
+    "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team": {
+      "fingerprint": "2a334b3d68c148514db47ea8f37861f5bf0caa96f8c908186a8f56aa69f7d293",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team/"
+    },
     "kaist-future:https://futures.kaist.ac.kr/ko?c=203&gbn=view&ix=1144": {
       "list_fingerprint": "35d666ea3e9c699ad94442d361f23a259476e6fe72685bbdb80a85008611830f",
       "status": "older_material"
@@ -1009,6 +2561,54 @@
     },
     "kaist-future:https://futures.kaist.ac.kr/ko?c=203&gbn=view&ix=4035": {
       "list_fingerprint": "46c1a33717bcdde867662984496dede5cc73d2c48f7d81ad9beaffb5d831f6a8",
+      "status": "older_material"
+    },
+    "kari-aerospace-insights:https://www.kari.re.kr/attach/15204ba68bc7cf13854b527ca596718e/9a9db098b587ee18b321c826f3707a49": {
+      "list_fingerprint": "51e4ba3cbf7fcf311f13caf05c61fd35d58180f672e6294f67835a740b0b6bca",
+      "status": "older_material"
+    },
+    "kari-aerospace-insights:https://www.kari.re.kr/attach/29b1551b865447efa496b5350f96aa3e/9a9db098b587ee18b321c826f3707a49": {
+      "list_fingerprint": "8d0e3d91bb8d4545301c9e8376da36d113441032cc3f5787350786829e4fc4ce",
+      "status": "older_material"
+    },
+    "kari-aerospace-insights:https://www.kari.re.kr/attach/48c433dc962426e8d5b1b1fcdb98ac57/9a9db098b587ee18b321c826f3707a49": {
+      "list_fingerprint": "828055a324a8606a0756cbaf25a6a8fd8bdf045a6c99c36b5dcf944dc8e1db4d",
+      "status": "older_material"
+    },
+    "kari-aerospace-insights:https://www.kari.re.kr/attach/673763b9d76b5a22ebcfff48fb799517/9a9db098b587ee18b321c826f3707a49": {
+      "list_fingerprint": "3485eeff04dd7214c81fa6ffa10410a9952fbaf0a792fc24af0e29ac1c80f56d",
+      "status": "older_material"
+    },
+    "kari-aerospace-insights:https://www.kari.re.kr/attach/7842d4116a8c7eb78a704f2e6159e073/9a9db098b587ee18b321c826f3707a49": {
+      "list_fingerprint": "1c9c0da0fb3214539655fcbe0fa0a74293c83218f32c02ac5a761855c8559b59",
+      "status": "older_material"
+    },
+    "kari-aerospace-insights:https://www.kari.re.kr/attach/fd30eff21003af1f1c35765fd7b23cb1/9a9db098b587ee18b321c826f3707a49": {
+      "list_fingerprint": "f9be2fe04f3292c611ee1a5e3f69a8b70068904fed7b416675c586491b36dd1d",
+      "status": "older_material"
+    },
+    "kari-research-reports:https://www.kari.re.kr/attach/0fb53fc829adb32eeaf0265467345dfe/9a9db098b587ee18b321c826f3707a49": {
+      "list_fingerprint": "db14f916a8f67ed4c76e51da0e226613d0615dbbc67da763a8d2d76e7a941c60",
+      "status": "older_material"
+    },
+    "kari-research-reports:https://www.kari.re.kr/attach/169d62f88fe5d96172911053f937e9f4/778bdbf5db9ced7c8fd52756c00bf0cd": {
+      "list_fingerprint": "2e43420e84473e8254ac035ce36a16477f823ddd5007a91f9afab04f991357c0",
+      "status": "older_material"
+    },
+    "kari-research-reports:https://www.kari.re.kr/attach/28540e1511c269db3b13a99cd2187e86/9a9db098b587ee18b321c826f3707a49": {
+      "list_fingerprint": "cdbea190f2475ffbd704f915d1a9dff1e80d7987fc2a16a9edacd579e44e7aff",
+      "status": "older_material"
+    },
+    "kari-research-reports:https://www.kari.re.kr/attach/3938973305218ec95c30779112f5c22d/9a9db098b587ee18b321c826f3707a49": {
+      "list_fingerprint": "dd9d9bdd3f6c9b204d64c4b90caa8501fea6123d4a46902719979c9a2aa259b1",
+      "status": "older_material"
+    },
+    "kari-research-reports:https://www.kari.re.kr/attach/aaee7202d87760cf458c86cf30e8e015/778bdbf5db9ced7c8fd52756c00bf0cd": {
+      "list_fingerprint": "8b4c8d0eed43b3a851df79411004aaf7c7783be78f5e863a7887f4e5d5378bf8",
+      "status": "older_material"
+    },
+    "kari-research-reports:https://www.kari.re.kr/attach/adc7b87969ed3c5b18b5a11adbeaab62/9a9db098b587ee18b321c826f3707a49": {
+      "list_fingerprint": "ebc34913549cf5cdcc9abe6a8d3a650dc764656da239995c852327f11f96b6cd",
       "status": "older_material"
     },
     "kdi-monthly:https://www.kdi.re.kr/research/monTrends?pub_no=19028": {
@@ -1123,6 +2723,188 @@
       "list_fingerprint": "8729dc60c5393361956e0f12f5eb2ecd6d8001ff4c31009ff658b6ee75cffaf7",
       "status": "existing_analysis"
     },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72232": {
+      "list_fingerprint": "67e40f7d15fbd6a15c3b59a51614ad4fbb6c1f7154fa2d7851e993c4aef4c9a1",
+      "status": "bootstrap_skipped"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72234": {
+      "list_fingerprint": "15eed495f36a637bddb078f4590fe98c70dd7e23b04f8a2fcd5eb2194ec83b8f",
+      "status": "bootstrap_skipped"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72235": {
+      "list_fingerprint": "8405036344d279394b303126a084d6d56145d2b21a15d582d5f8184dbc35b476",
+      "status": "bootstrap_skipped"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72236": {
+      "list_fingerprint": "9f2dc3662324b9fd29a1d619d409a326514b98e433f9d5d1a85abfa5bda06cc0",
+      "status": "bootstrap_skipped"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72237": {
+      "list_fingerprint": "6dfba8101818ad8b0f5a2c4761a9eed74bca9d559ac5451a18cf52e7197e22b6",
+      "status": "bootstrap_skipped"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72238": {
+      "list_fingerprint": "374d5edbcc9fa2982079c35a9cfec8d5c06533ae88233019f8a1aafee73ee704",
+      "status": "bootstrap_skipped"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72243": {
+      "list_fingerprint": "2022de097ca64c291aadb23796d1a9a4089b32dd4fdd6952449afc2ff3fcea69",
+      "status": "bootstrap_skipped"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": {
+      "list_fingerprint": "b2ec792fc71f5528366bc7166c314b236713fcb08c040eabc4fff856999d18e0",
+      "status": "posted"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245": {
+      "list_fingerprint": "ee203a0cf0cb7a40beabe6aba90f72479fa0e58431eeb816c0bb3a55521f2048",
+      "status": "posted"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": {
+      "list_fingerprint": "fe83751805409a6cfbc81d875b92adf9a144d3a62b2f3df206a156732b3594d0",
+      "status": "posted"
+    },
+    "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93860&mid=a10306040000": {
+      "list_fingerprint": "d8d15543a49c2c241f17085238c50bbbc61e603451d3734f26ff9c1f1821d2ae",
+      "status": "older_material"
+    },
+    "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93933&mid=a10306040000": {
+      "list_fingerprint": "a534d88abbe17b8934cc3f6b96c307f258285aa08b68ed41e41432e1039821a8",
+      "status": "older_material"
+    },
+    "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93948&mid=a10306040000": {
+      "list_fingerprint": "b73dfeeb27c22f2e6c7fc5d11af3017f73e2c05bf0beae82e71acff1c2927640",
+      "status": "older_material"
+    },
+    "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93982&mid=a10306040000": {
+      "list_fingerprint": "0e64a9d80e932bfe5f3ec757db779236ed4a17c9e1b09cbe7bef7d685b97a003",
+      "status": "older_material"
+    },
+    "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94180&mid=a10306040000": {
+      "list_fingerprint": "5812c9136173421db96213123653dfd5f0d578a5034c1eb853547d1318dd8d92",
+      "status": "older_material"
+    },
+    "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94204&mid=a10306040000": {
+      "list_fingerprint": "555ee48a1851af48900a337a4a8c2b2410cf10e2906ddff1f2605bf672149be5",
+      "status": "older_material"
+    },
+    "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94215&mid=a10306040000": {
+      "list_fingerprint": "2e23441d4c52a6a6259df0fa7c9d4c16c18162514ef5c684b1fb2e2e5b1b33e3",
+      "status": "older_material"
+    },
+    "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94323&mid=a10306040000": {
+      "list_fingerprint": "7cbec3047f29c80b50eb036c70fb6d35ba705ddeffe29c91100a6cabf43fae5f",
+      "status": "older_material"
+    },
+    "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94481&mid=a10306040000": {
+      "list_fingerprint": "0e67c955f519577e3d183d3c2c5a9f619e6a85837af1276c46246f321fa8a50d",
+      "status": "older_material"
+    },
+    "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {
+      "list_fingerprint": "4c840f73630a7b399602b074c1cf5f8657011a9fcc8d9583adbd9c4e66d31baf",
+      "status": "posted"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/11495": {
+      "list_fingerprint": "83c4c13aa8298252f379277dde874b7c30c6d8254ae67053388266f27bbcca8a",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/14760": {
+      "list_fingerprint": "278f646a5ffef15b81d538534894b0906db64105e66d7c335e8c085eea227126",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/15940": {
+      "list_fingerprint": "700d94c6a1b82694b4c23e095f4adc90f4edd6fec8ae2b583de2eb59b60732e7",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/16143": {
+      "list_fingerprint": "4a81c6936cb35079982bb0513ab3abf3135b0159495dc88f429e1710cc3f0668",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20133": {
+      "list_fingerprint": "9f8c8d048f80df070d560922e742aefc7f5de3de96c8d189d406c925f5ac56ae",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20261": {
+      "list_fingerprint": "306be25d78e98ae016a82ead7d9ca9b3d766fef1d3568bb001bf8d1e26381a80",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20390": {
+      "list_fingerprint": "3d30243516b2a658f92946178c98c0b96703b5d5b1c4920c9493a3b0b84cddbf",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20392": {
+      "list_fingerprint": "0f0248d92894c8874c95b413b0c0b8fec72877c259ed04884b41528f4c6029f0",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20491": {
+      "list_fingerprint": "518c39ac5871b0d81c7fff8969c53dd27973aea097d5bd52bf5ebf6d685abcab",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20552": {
+      "list_fingerprint": "be7b94a1d366c87b145b52757aeb39c0bccd2387f58e9cd181895acf51f0d8c6",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20794": {
+      "list_fingerprint": "86c828f98bac76d0460d7212c7627b7df15cb790f8861ce2e0249c2ae52827ed",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20826": {
+      "list_fingerprint": "f19239418196ef316a3e91c0c571aaf9858dbb3c926e9796363de3381dd30ece",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20949": {
+      "list_fingerprint": "ef3735c9f21e4ebef5bc88f5891ed27fdf52684a717369d66b9ed4d931a68c18",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20956": {
+      "list_fingerprint": "18207037e44368d330e8e3fe1c572dacb0cacd7e382d6ae732f15bec3249c10e",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20957": {
+      "list_fingerprint": "96c992b24b12e9e3b3e87b588fd42c577717143ddf5eac3ba63fd3d3ceeefd91",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20991": {
+      "list_fingerprint": "4fa04ffa9d50427af3abfef5e972c72dd89ec73f583f4f5799ef9c475e1b1551",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21060": {
+      "list_fingerprint": "ad241df73ea440442aa69bc45b3c5838653e70716038555f905318985bffa9de",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21091": {
+      "list_fingerprint": "aedb00fcb4b888b82e5b8c6e39398b37fdbdd1c5f87d7c322d0e657bd0986eb8",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21144": {
+      "list_fingerprint": "a797d25f8623f57cf649148cf326e8128e12f5ad734b38007767a878f18d7bf1",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21179": {
+      "list_fingerprint": "768f194c42a5ec8b83064b4853e69c10f6697361c509d999247101bf3432aa67",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21284": {
+      "list_fingerprint": "22842ea23238e78117996f5be42fb8e115ec369b00013c13f4ba72fb77de29a1",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21288": {
+      "list_fingerprint": "508e63e7050958c22f4697967a7aefcdc5df29178e1f4c3a4db5f49eebaf0ef4",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21310": {
+      "list_fingerprint": "caf164df2f6beba4d908109dbc3428276c57a27f23d244e4f126e7832111db42",
+      "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21316": {
+      "list_fingerprint": "35f083cba2659ab49f8a14726dadaa8019ebc10089266a9513bebd7bd4facd76",
+      "status": "older_material"
+    },
+    "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027": {
+      "fingerprint": "008f526abce7a6d78488f0e939578b43b55d6afece244def83bf6859deb79d85",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027"
+    },
     "lg-business:https://www.lgbr.co.kr/report/view.do?idx=19732": {
       "list_fingerprint": "c3710ff71ff2d7f3a6d43df43bee3b99f7f2d127ca4fb1d83a2533b66c65fcaf",
       "status": "older_material"
@@ -1219,6 +3001,170 @@
       "list_fingerprint": "222b0dfe1f30761cc1fe04426ad98fc51717059d867df060f3f76eb4e63df609",
       "status": "older_material"
     },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-21.1.8": {
+      "list_fingerprint": "f5a7f13d795d5dc255ed105479ceab9a758cbc79d0a12650409338bb7725961e",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.0": {
+      "list_fingerprint": "05db25b38f7fc7bb109111352f3197fb7073324e4dda1a14e159ad59bbf6a856",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.1": {
+      "list_fingerprint": "52fc23566ac243e312b0d096755e12ccdffaa1ae0a669e8e3a52765df3857aa5",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.2": {
+      "list_fingerprint": "c98a0808df812c70a609d4c52105d78f843abca16d3923ce9d24c9e10cc8b219",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.3": {
+      "list_fingerprint": "d26f9c66990f7603f2d9cab47a782b4fd191e6e00e0d765ba5bb74a604778c49",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.4": {
+      "list_fingerprint": "f85f130508503d664b08fd9d644402e6f8df616ec5b266a22ec4f60d1ac43c0f",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.5": {
+      "list_fingerprint": "4089ea1fae46ae8a07afefa2e57f33babfed12f2be18eba18d1c51c5737ff902",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.6": {
+      "list_fingerprint": "6b53fe9880d0719a4ad9dadf0e0bf1ce69ffbe825e83ce69d12c2e662b4993fc",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.7": {
+      "list_fingerprint": "e4df6f60543e2b31e2aa49b2cb0c5d7c2656517b349bfca60b405fef6e1d8761",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.8": {
+      "list_fingerprint": "28af056a7e0671d776be33599c5b953c69904c6d18258de22a58fc3579c874a7",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.0": {
+      "list_fingerprint": "ed2aabdbf237ca81c6a148338bd6a4a30084a355745d492b58bacac4a62351b9",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.1": {
+      "list_fingerprint": "09af5d8a9402d198a3335dfa44e137f3af03a33d0a1f8187311b5da00b59591f",
+      "status": "older_material"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2": {
+      "list_fingerprint": "67670951309cf27d04dc380f281a00865b98b84347f9cd59fd954f9d1a09004f",
+      "status": "posted"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3": {
+      "list_fingerprint": "612d10487c804bd84d328104289a540f6dea9a48174f41efbe81c5da3600deb6",
+      "status": "posted"
+    },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4": {
+      "list_fingerprint": "e42a17032b0892ef0a9e6199b6e5d2adb1266671deb1b9c3f4e582599cf746fe",
+      "status": "posted"
+    },
+    "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1901970&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "list_fingerprint": "87d221f90d8d089a687dc793a66a33bdccae494af5cfaca6521f4df42ccb832a",
+      "status": "bootstrap_skipped"
+    },
+    "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902080&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "list_fingerprint": "2c2f32eaf43107a39849c51961611ae8374f43d8c1e9e9e993b084ad58944100",
+      "status": "bootstrap_skipped"
+    },
+    "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902270&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "list_fingerprint": "3e6ab20bcd5b03bec85695cafa72f4b9a2aa130b91f416fba3953465dd08e6bc",
+      "status": "bootstrap_skipped"
+    },
+    "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902490&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "list_fingerprint": "e809290bb06213851248509a699335b9115f0ae0ba9b75f11b57fbf445bb2bdb",
+      "status": "bootstrap_skipped"
+    },
+    "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902620&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "list_fingerprint": "9c8368a117c833477f5f9b2de3f8ac2ff43af7cc9567e0a349a8572bf25092f6",
+      "status": "bootstrap_skipped"
+    },
+    "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902800&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "list_fingerprint": "084ea4e682298b929192e56076a8d7fd11f9f0fdbb3e1b15575d85d81993d69e",
+      "status": "bootstrap_skipped"
+    },
+    "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "list_fingerprint": "b27d25fbc245fda6f1e712bcad45fc543c80218fe57e0e32a8f4522133d15031",
+      "status": "posted"
+    },
+    "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "list_fingerprint": "5d870027cb87b6fd05d0c4be68420d446f02802ecc677076139b724d21922029",
+      "status": "posted"
+    },
+    "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "list_fingerprint": "8d4cc696b41dc1020cbfdf9511c4c6c5a974fe952d3503ac5f49764f30978ec8",
+      "status": "posted"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/3-questions-best-path-forward-for-ai-academia-1008": {
+      "list_fingerprint": "5dc6de3a36b22bd5541a8d2a6ba599ea938f86e55af984c8e2434f96226027c3",
+      "status": "bootstrap_skipped"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/algorithmic-monoculture-effects-depend-on-details-0929": {
+      "list_fingerprint": "505f6457ba39393290511c3f874819a2621d848174d4873f03a80ecf326d2467",
+      "status": "bootstrap_skipped"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/chris-bourg-named-vice-provost-and-barbara-ostrom-director-mit-libraries-1006": {
+      "list_fingerprint": "aa0a5200639d55a033521f38b631ca7de63030cd1107f12fc12e4c187df7c49e",
+      "status": "bootstrap_skipped"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/documenting-tech-worker-movement-1002": {
+      "list_fingerprint": "8cc9029cf600d99f7289fe080bc99e7e85d83b9256f18d7ec1067160eb466adc",
+      "status": "bootstrap_skipped"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": {
+      "list_fingerprint": "59645777377c4f76c9c0b82549e453f4c8162304ae24cb869044064ac7a5a8cf",
+      "status": "posted"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/how-mit-research-project-became-global-programming-language-0831": {
+      "list_fingerprint": "fe5fb9bf9eb9ecf32af1d37e3304a841d80f637f1f798761db57aa83a3a301e1",
+      "status": "older_material"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/mit-spinout-turns-plastic-waste-into-resilient-building-materials-0914": {
+      "list_fingerprint": "ca060601abb056f7cf2fc0bc48657ecf892652c0828a790384c52fb31b298ef2",
+      "status": "older_material"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/mit-welcomes-david-siegel-innovation-fellow-0923": {
+      "list_fingerprint": "62dbdd7ac4aa55cf5b9c5ff7f9d745ad0a4e4ada1a3dd06f02997d91178bdd7a",
+      "status": "bootstrap_skipped"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/poitras-center-to-fuel-early-careers-50-young-scientists-psychiatric-disorders-research-0922": {
+      "list_fingerprint": "f22fbd2d714aac35d9130ad2192e2d7d6d8848010f7e10e541e4649b24af757d",
+      "status": "bootstrap_skipped"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
+      "list_fingerprint": "d5e7a8628a836559d6af65563f30f246ef13e3b1b7a8ce83011a14e618415099",
+      "status": "posted"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/studying-cities-using-visual-ai-fabio-duarte-martina-mazzarello-carlo-ratti-fan-zhang-book-0924": {
+      "list_fingerprint": "fd8c3a36b3a8903848a4517b76004469d2308ce42197dd2967ecec0dd77bf27d",
+      "status": "bootstrap_skipped"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/supercomputing-researchers-document-evolution-ai-hardware-1006": {
+      "list_fingerprint": "fad4803e76687415680bc8b8f100b4ccf359fc589a81e0ee546cdb7781e00789",
+      "status": "bootstrap_skipped"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": {
+      "list_fingerprint": "fa2737a108382852fb1d323901f13b681623eb0780eac151c0e8e8cb370aa91f",
+      "status": "posted"
+    },
+    "mit-open-learning:https://news.mit.edu/2024/how-mit-online-resources-provide-highly-motivating-transformative-experience-0829": {
+      "list_fingerprint": "f27695e56edcbc3beb25f4ed0d178dc6466af47fbd46288ac679fa05f0d4cf9f",
+      "status": "older_material"
+    },
+    "mit-open-learning:https://news.mit.edu/2024/how-online-mit-courses-can-transform-future-world-0312": {
+      "list_fingerprint": "cd3e0e515083d2ad56518dc7d8e5f175f064279d46c5b22e40f980f2f69321a1",
+      "status": "older_material"
+    },
+    "mit-open-learning:https://news.mit.edu/2026/how-online-mit-course-supply-chain-management-sparked-new-career-0115": {
+      "list_fingerprint": "8808f8d237fcfba6dc546740a3cf0e4d589a6e0c6df9fb3fc68e56131ea6d813",
+      "status": "older_material"
+    },
+    "mit-open-learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027": {
+      "list_fingerprint": "008f526abce7a6d78488f0e939578b43b55d6afece244def83bf6859deb79d85",
+      "status": "posted"
+    },
     "models:google-announcement:gemini-3-8-live-with-live-avatar": {
       "fingerprint": "3d926b2132cc4dce5d68522283787cfb5cd5a9fd6483da2a257728b8780ae91e",
       "first_seen": "2026-10-29T03:34:54.131044+00:00",
@@ -1278,6 +3224,458 @@
       "first_seen": "2026-10-29T03:34:54.131044+00:00",
       "language": "en",
       "url": "https://www.anthropic.com/claude-sonnet-5-5"
+    },
+    "nasa-technology:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": {
+      "list_fingerprint": "9a63700995816e9917818c4620da1899d44edf6bc138b070c34b2a9a795c3e46",
+      "status": "posted"
+    },
+    "nasa-technology:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": {
+      "list_fingerprint": "867be9219fd5339d7d7613960badc853e9cfb9599da56266e8c51a773324963b",
+      "status": "posted"
+    },
+    "nasa-technology:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team": {
+      "list_fingerprint": "2a334b3d68c148514db47ea8f37861f5bf0caa96f8c908186a8f56aa69f7d293",
+      "status": "posted"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/cloud-partners-europe-sovereign-safety-open-agents": {
+      "list_fingerprint": "7226dfde798b5ec0cdd66cd80a2fa106eaa7c24404125467e0b1b356a321e1e2",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/cosmos-open-train-evaluate-deploy-world-models": {
+      "list_fingerprint": "0440c6605bd4008ba2ab2c5f0a18ccad94f9218eecd2e44cc68dc18fb29a147d",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/dsx-power": {
+      "list_fingerprint": "bc6bcc48db9e2306b018cf1007368b92fe05210c204a0f19f31557f022a4e191",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": {
+      "list_fingerprint": "2289da89b05de560fc6ae4e2037d1f2adc546a63ec7f437befd436022f2a3bcf",
+      "status": "posted"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/european-financial-services-organizations-open-models-proprietary-intelligence": {
+      "list_fingerprint": "2c20218ffb8b273537d80323b64f34b1f7ed0fc8612cf20a724c1968fe52bfd8",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/european-leaders-vera-cpu-infrastructure": {
+      "list_fingerprint": "57802d1cebe39c8cb41c8ca86095cc66a83da9b56c9509fe313badfc47e708fe",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/european-public-sector-open-models": {
+      "list_fingerprint": "c9984ef7596bd7c51861024746770c084de6d927eea027283eea519264f114d3",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/european-retail-open-models-robotics": {
+      "list_fingerprint": "28f5839ea063fd5b7aefdedfa5aaacf8df78d3e1027815de23f7d50f2993077c",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure": {
+      "list_fingerprint": "1f6d85f97738f85e6310b95144e45bd7b3fbd627ac9e9890f9b26bda7347921b",
+      "status": "posted"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {
+      "list_fingerprint": "0014d48c3ef48b8d80b89158bd5cf3d5766abf8e09825355ccaec62d834fa61b",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark": {
+      "list_fingerprint": "4f04a3508c9edbbf175a047a20e95b41d8ee9d11e6cab551c26acfb1223f292c",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models": {
+      "list_fingerprint": "ae61e80c1cacf3fe9f237f50f66c9b7fe74f5adf9e6872500653997a3bf98a1b",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros": {
+      "list_fingerprint": "1c56a0f89ff4e1c97afcb499c7b33c15e57857f5efbbb4c327ac03d90a5d93be",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine": {
+      "list_fingerprint": "da7abdbb196b907688fb48f5ba1ae2751d038b486157301a6f56767c4e1662c9",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile": {
+      "list_fingerprint": "62df33cc62c1ef2122a2be7f94ca28690038156eebafd3876c417acc5a336248",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod": {
+      "list_fingerprint": "47b4360f960a42431642f903b937735df884151445caf1c292ba7b6414346c29",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell": {
+      "list_fingerprint": "f34c74a082d78d625e038f370347c4d08c04ab9e39d0a385e388005698308d91",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/ai-native-by-design-lessons-learned-from-building-nvidia-tensorrt-model-connect": {
+      "list_fingerprint": "6f13fb7a02376ec67754c352d23156b380a97fd8796968bc74274e6284ddb11e",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration": {
+      "list_fingerprint": "8d5f8b88b567940150b72d13bbb86979d43e6bea790a774d90d664e7d6920eca",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf": {
+      "list_fingerprint": "10af2726b3a4c4082e7fa9ba63f153a5efd2b6b55eeefcea14ce0c7b7efb82ad",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/build-applications-on-nvidia-bluefield-faster-with-nvidia-doca-agent-skills": {
+      "list_fingerprint": "98c6e0a3b052c422a78870fbb86eea14be607a43c6a3d356020ea814d612c5f3",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples": {
+      "list_fingerprint": "22a0e66a75a5c51ca01ea930a0f72340e0b916226ed5f7e8980a4b3296a66965",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/building-a-memory-driven-agent-with-nvidia-nemoclaw": {
+      "list_fingerprint": "2e8193db873dd839cfa8892781d5b0642e85171a975c0b4d7184c384605adffe",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/building-an-adaptive-agentic-cybersecurity-system-with-nvidia-nemotron": {
+      "list_fingerprint": "a504f8033285acfb49bb1bee3868c21a0ae07676a8fe3c178e7314e4fbbf2d4f",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/building-federated-multimodal-ai-workflows-with-nvidia-flare": {
+      "list_fingerprint": "a3d7e2f6c3e59ab1b33a8fa13fa9448ab2763c6c9c40a001803788c34f2481c8",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/building-reliable-data-analytics-agents-lessons-from-the-kdd-cup": {
+      "list_fingerprint": "249df2519b03d3abb38c420ca01bfa0495e3c98ca136bd28f7b253146ada2355",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/co-designing-ai-models-using-speculative-decoding-for-faster-llm-inference": {
+      "list_fingerprint": "108fa66b23ff6375312c9868a687dc884cc91621d2d7451d4b7b78ea8ef36a53",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark": {
+      "list_fingerprint": "c9aeb5e6ee393898d2be1ad0c4f88c8f1fb2ea1d1cffba1f272b81e328f2092b",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/control-how-your-gpu-shares-work-with-green-contexts": {
+      "list_fingerprint": "94916dd80bd80105034b45fef883d6d70a21c90bd0a0fecb329bd4463c8eda9f",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/cuda-python-1-0-stable-apis-one-foundation-full-platform-access": {
+      "list_fingerprint": "e12f5eadc33eb22aee717441343dbb515cf65bf0d50ff7e27d24108a6c748759",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus": {
+      "list_fingerprint": "33ef261a9827e9990f3bb3543f85bcf152effa4aad1304b229d531dc122514a0",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/dense-vs-moe-models-active-parameters-throughput-and-when-to-choose-each": {
+      "list_fingerprint": "4d3b66da4b5ec3d74230b7622e257ae0d3e12535519b3d4435a6bd27bfdc189e",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/deploy-an-open-model-from-checkpoint-to-inference-in-two-commands-with-nvidia-tensorrt-model-connect": {
+      "list_fingerprint": "8fe89781d2b683f6a06e4bc586d035bb2ba3512a60053a8de71571799b0bbdc6",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/deploying-an-hstu-generative-recommender-with-nvidia-dynamo-triton": {
+      "list_fingerprint": "5e507279e12ce00aed88956f23e99416944fc0e94d0716a62818e95246bd8e20",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search": {
+      "list_fingerprint": "fe12388978897af7d6f423a2556dd7e26fc859c1b22c19dd51d0710526928d2d",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/developing-an-ai-factory-digital-twin-with-an-agent-assisted-workflow": {
+      "list_fingerprint": "643adf80e3829fe1954ef04c02d308e353b6e397a9d6083ba710ab5b3c6777ac",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/developing-nvidia-holoscan-applications-with-cli-skills-and-ai-coding-agents": {
+      "list_fingerprint": "2759dba67f8228e20a146c7fdfb2ba27d1e5e78da9653ec2d57821790eee53a6",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/doca-gpunetio-gda-ki-unified-gpu-networking": {
+      "list_fingerprint": "56343699952ce1d5071a678c8def293e31312f2c9d2ea0dbc9865a6d88170fa0",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/efficient-moe-training-for-biological-foundation-models": {
+      "list_fingerprint": "63503b3c2165dcda25acd4b789c722ea2da50f038c35f4edbe9b025a3201bd50",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing": {
+      "list_fingerprint": "4aa02ef7e9542e56570feb7f86aeca1e6ab004459e2f7c0792aa8b4473f03135",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia-scada-server-sdk": {
+      "list_fingerprint": "b0a98c44663308a709fc3abf863d9b9e84be06bc586533e1808d668360f6b6c8",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/experiment-with-qwen3-8-flash-next-on-nvidia-gb300-nvl72-for-agentic-coding": {
+      "list_fingerprint": "6c5c3f9ecd4ae337b41b72e5041135a8b844143c9420c5648734ba12d1a2b14c",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/faster-scientific-image-analysis-with-nvidia-cuphoton": {
+      "list_fingerprint": "01cb47fc3feb0b779c028fc07bd13aff28e50c95256e858dbc2b0d828477401d",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages": {
+      "list_fingerprint": "2227f01ae0d3ce879dc620a938b11fb57dcbf3919d9c88cf6c4c2a9af7be014f",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
+      "list_fingerprint": "98559625fad74686d8d8017f18e36ceee41eb227751a7c961e536cac9c585ebe",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/from-wafer-out-to-first-token-codifying-supply-chain-expertise-with-nemotron-and-palantir-foundry": {
+      "list_fingerprint": "ef7164b77d73938d062fbffeac2582346232cc8062bd76f5e33f675f0d57ff33",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/frontier-reasoning-reaches-the-edge-how-to-deploy-and-optimize-models-on-nvidia-jetson": {
+      "list_fingerprint": "73ac5d03d3843e4a99febe4ad5dccba7f875ff0109ceabdc881ce71c4c048272",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/giga-scale-ai-ethernet-evolution-spectrum-x-ethernet-rewrites-rules": {
+      "list_fingerprint": "681d88fe8cf5389cd533cde7fa835858c0d878363e6e8854908657ce35727009",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/gpu-accelerated-clustering-for-financial-instruments-at-scale": {
+      "list_fingerprint": "d807cae7ffa3518b417ebb6a17a795a7faa6f040508a79d6def6a310a83da831",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/high-throughput-structure-prediction-with-bionemo-inference-runtime": {
+      "list_fingerprint": "4daccef8c6aae6317697e47a6c0def1da3ed4fbef42078ba2c312bce8551b787",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-full-stack-nim-optimizations-deliver-2-5x-more-users-on-nemotron-3-ultra": {
+      "list_fingerprint": "1e7e77d89fbb460a18040335430a72f6fbeee5166469dd3d3ac3df29d1927bb5",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-generative-recommenders-are-redefining-recsys-at-scale": {
+      "list_fingerprint": "b508c2ec585eae8037a62362c996170670699e18f834bee39dbb0f826b84beee",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency": {
+      "list_fingerprint": "00a0a0cfffb84ee9fbcb7cc49f11d3062ca4aa861ccc83de57a2c309fef18a7f",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin": {
+      "list_fingerprint": "66516ac17d00a051f4863623bf0657590100d2bdd5de80a620beafd8fb310e2e",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-unlocks-ultrafast-interactivity-at-long-context-on-nvidia-vera-rubin": {
+      "list_fingerprint": "6ad9e673ae2138b337bb9fb7d64fab0a2472104a73b9212968e390f0e1e323fc",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield": {
+      "list_fingerprint": "d50feb101e9bf859e5cb9353f63f8883b47c04ac05e59e8dbed1e1cb3c8c9b0c",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes": {
+      "list_fingerprint": "34d3d6cc83212d2e5b2f4754acba8e08cfb848c121a543c83e02c158c485aa0c",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories": {
+      "list_fingerprint": "72fd4f363bde4ac27bd5e86cf6ec303077e994a447f4794c28d5dac178cbb8c9",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale": {
+      "list_fingerprint": "818843e9489776e04cd4c62e436c88ea300c9ce4342f3f312d9d88da8500863f",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving": {
+      "list_fingerprint": "79ff4761e12ba6bfecca9f324fb02a1e825a03c4856e909301d71e737073c68e",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-to-carry-user-identity-across-federated-kubernetes-and-ai-platforms": {
+      "list_fingerprint": "b34f438a3bf8d843ab2c11c552a19767c201beed3bbf273bf30688feb930305e",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-to-evaluate-ai-agents-from-tool-calls-to-task-completion": {
+      "list_fingerprint": "53e43591e6f4add3a43663a7890418f13732ea8385577758a5a15b4225d35178",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-to-read-data-into-gpu-memory-in-python-with-nvidia-gpudirect-storage": {
+      "list_fingerprint": "31d99a785ff1986d2208a755f68246415bdc6ca359675860d5723c597b429dae",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-to-size-gpus-for-ai-inference-and-tco-without-overspending": {
+      "list_fingerprint": "9c89e6c623496f0981d09841de08f8e5e7cf842a7bcb1b50364be22c21d041c2",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-to-train-a-cross-embodiment-robot-navigation-policy-with-ai-agents": {
+      "list_fingerprint": "1826eb1af3b058a7902665163bdf2f752aae85fb3efc7fcaf13a6b6493248689",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation": {
+      "list_fingerprint": "84c1dc05fdd73a6612218b69f1cd142de69e78497a676e5c9ca978afad026eaa",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime": {
+      "list_fingerprint": "da0ea13fe3f861ac9bbb93ae7147f7457c902a4ea5a38faa0b82a6ed4ad0e015",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels": {
+      "list_fingerprint": "4c9f6f4a61b81d0f88442cb72c6c2f6d4e09b36230f7f63b8d211a4993a09958",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning": {
+      "list_fingerprint": "551f0daf589401cf7cef466201154f898a7524328638ae932331c7a5a62e7c69",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/lower-the-cost-of-building-and-running-visual-ai-agents-with-nvidia-vss-blueprint-3-3": {
+      "list_fingerprint": "dd77c4f82d4f8aa478a6d265b15f09f1006cf6b71a7610c0d8eb493f91c72d2b",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright": {
+      "list_fingerprint": "1b91ee85bdc6a01a07644533862435b0faedd258ab2beac157010d964f208078",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/maximizing-ai-factory-performance-per-watt-with-nvidia-dsx-maxlps": {
+      "list_fingerprint": "66eb7450c3df554bc4993ab6f335bd7bff7479780919c1e7b974b9164cb321e7",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
+      "list_fingerprint": "80f5dd22c00bcca471384a380ef2e805821c52005ec498f35db3831bfe6499b0",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents": {
+      "list_fingerprint": "ebfad5159570c7f141afd9d9b9bac86a4523f99145a620e3a5f5de3e44e8d924",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-bluefield-4-powers-new-scale-in-network-infrastructure-for-agentic-ai-factories": {
+      "list_fingerprint": "a108d2d281a19513b2ce35f8919677eb65faf49efeb1549663c21da7865fb84c",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning": {
+      "list_fingerprint": "d02f2660d4ba59710c3a15b48546a6a3763fc10ad4e9a6d6088cb3bf86d0a6b3",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-nvlink-fusion-brings-nvhbm-to-next-generation-ai-infrastructure": {
+      "list_fingerprint": "a8a5292b5d4a2192820446981d45daa3e33c66ef898035654339c3642d63121c",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-open-agent-safety-platform-a-reference-for-continuous-in-silicon-agent-monitoring": {
+      "list_fingerprint": "6d26f591f48ab04f705f64ed1ee7e113fdbfcc6c707803b6ef011350b18d84c9",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network": {
+      "list_fingerprint": "3e86cfd764105f6373d381e8571462ee72b46fe9039807098247585ea45ea33e",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": {
+      "list_fingerprint": "390dbe846bfe64a8e52dd2563ad6d7a019fa9a0db39e9114af72f7aa1c7cf051",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform": {
+      "list_fingerprint": "e07973fc16840b8f596b6909579779baff00fac0f5b9c82baf7bb405ecbd10fc",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt": {
+      "list_fingerprint": "589a6c47e0625fb0925624509269fbdb2a24ef80bec9ad1dc51e0f9436afc4fd",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/optimizing-agent-reliability-and-tool-calling-efficiency-for-chip-design-using-nvidia-nemo-gym": {
+      "list_fingerprint": "e609ed6e46eae6b81c81ad35636088fd80d0f87de84e1f8ca17c2b0d7ddf383f",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding": {
+      "list_fingerprint": "38c8c2ba51fe01d3f97ea6d2efa1a633435c37992a254a40c8715ea5caa99420",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/restore-llm-inference-capacity-in-seconds-with-shadow-engine-recovery-in-nvidia-dynamo": {
+      "list_fingerprint": "d8fbd1664b499bd9adb047d9cab5faf0d99b9e45675f76ecf9c9e933eb18d7c5",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/rewrite-apache-spark-udfs-gpu-acceleration-ai-agents": {
+      "list_fingerprint": "e12d0c56ef85358b8a6db0ab7211d3dfbc0171abc3be97d209fd968912db675d",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/run-nvidia-bionemo-nim-microservices-for-protein-structure-prediction-in-claude-science": {
+      "list_fingerprint": "435d26b85de1d03d421a7e7da0c081d4355f312021a0d78d69a0c778345e08d2",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes": {
+      "list_fingerprint": "934ee44e98a86ee9ae8984ba3b7f19c908f804bd8f6a764cf20280a804f127a0",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72": {
+      "list_fingerprint": "84bf8cacc108679f67fabcaee1fd2f8d369ffc28ee7c4d43ead9a58265694729",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/scale-av-perception-across-vehicle-platforms-with-nvidia-omniverse-nurec": {
+      "list_fingerprint": "944d1bae2095d1b10b6ed99ab2de123aff89e7668db8b8d3c32807ae32922ae9",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core": {
+      "list_fingerprint": "707227996ded3b35e8e1e6f6411f157e20bb306025993c098e6965d5a9ef7fbb",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/scaling-decision-optimization-to-100-million-variables-and-beyond-with-mpdlp-in-nvidia-cuopt": {
+      "list_fingerprint": "bb6c470f3eac3778c4b1e3bdbbebe184fb8528227d5a28011a5a0b903c1357da",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/scaling-federated-learning-across-docker-kubernetes-and-slurm-with-nvidia-flare": {
+      "list_fingerprint": "6bbbfded44b308bab4fad31e82810dea29980e467d85587778d1936605010b4b",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1": {
+      "list_fingerprint": "3d3d9f9098102859da0b30ca1ba7e022d710302378aa5394c2f6d76b894e4e1c",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2": {
+      "list_fingerprint": "d9fdd7e2c5e393268334b788cfc3a98937a9ba819687012169e4b369d3b0eab0",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/simplifying-model-serving-across-multiple-gpus-with-nvidia-tensorrt-multi-device-integration-in-nvidia-dynamo-triton": {
+      "list_fingerprint": "912290a88bda551c0bc83148979db6040e87d710c64e64c3a35aa7e39fffa72a",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/solving-agentic-ai-fleet-challenges-with-nvidia-vera-cpu": {
+      "list_fingerprint": "a3f83c94dd205ebeb4c2152252ba8818d2e54dd4b6865258286df80a59a9bdd9",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor": {
+      "list_fingerprint": "f6f249e32a9a86ff18aa830076a73119a2271fd3fe38a48f1cf92781baea34a3",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/the-machines-that-make-the-machines": {
+      "list_fingerprint": "d1548ef10d2a193b3c3b0a3bb90661189ceecdba9317839b760812d996381ae3",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/the-modern-cuda-toolbox-in-practice-a-step-by-step-optimization-walkthrough": {
+      "list_fingerprint": "3127695c668cb3e2f4e79c4e51190f8db764402c314838380190c78775d190e8",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/topology-aware-workload-scheduling-with-nvidia-topograph": {
+      "list_fingerprint": "bb05bfed0ecdc532313b1ff13c84e6ab8ed7c79f134938ce19f71e8b9c60fce1",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/tracing-agent-harness-behavior-with-nvidia-nemo-relay": {
+      "list_fingerprint": "adef654c3b3a2a41288fb8977e22f99ff9de41ae376a841ce7701580b370967a",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai": {
+      "list_fingerprint": "77962d9fc1a763a69aec281117238d101e7eedadb5a7d2897c973155440b4ca0",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/turn-your-latest-observations-into-timely-weather-decisions-with-nvidia-earth-2": {
+      "list_fingerprint": "a61adec02029b634ebd647f3b1f77bd7032437331c7a75198a593f777d6b8758",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation": {
+      "list_fingerprint": "69c252242e8417080b9de7c8c51fadc2ffec22346d0910cbcde449d388805aec",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/validate-ai-factory-changes-with-digital-twins-and-ai-agents": {
+      "list_fingerprint": "22ae2e3e64a99448663b777aa295ee9e3d11df6c21fc11c8c9baf32cfd36f626",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land": {
+      "list_fingerprint": "6472c3f1adfb9ed8c89e239f3d2caf90f7fcb713468090ff4c17f4026405066f",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities": {
+      "list_fingerprint": "97f4e4e9b577f220bc1cf14ab07c3b7b5de9efcbd2aecc06f6c28fc20ef57655",
+      "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/when-to-use-encode-prefill-decode-disaggregation-to-accelerate-multimodal-model-serving": {
+      "list_fingerprint": "4a94153b0d0948414e5d4525aba2001c3a26509aa0c1958da3bd561527a35614",
+      "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/where-security-fits-in-an-ai-agent-stack": {
+      "list_fingerprint": "b3d4b672d5aa577904c01eeef17e4e9ae5f414227d53af8eabb38ce8f563a8c0",
+      "status": "older_material"
     },
     "openai-en:https://openai.com/index/chatgpt": {
       "list_fingerprint": "ca50d15e6892086d5dbffed9fb4fa84193a4a01dc16b026071aa3abcae0b266c",
@@ -1462,6 +3860,136 @@
     "openai-en:https://openai.com/index/upgrading-the-moderation-api-with-our-new-multimodal-moderation-model": {
       "list_fingerprint": "cb6e0602f5b6ac40160e85c8840ed49a1a0ae48164029af19c487e5297e59b21",
       "status": "older_material"
+    },
+    "papers:https://arxiv.org/abs/2610.36298": {
+      "fingerprint": "286522ce7d03c620f000b0b0bde6e02cb1223e6662daaff150c36b4e401eb4b8",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2610.36298"
+    },
+    "papers:https://arxiv.org/abs/2610.36776": {
+      "fingerprint": "81081eedc79f1d843b50289b9b34b8e37d5e2920a7b94c7684636c5b490d6988",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2610.36776"
+    },
+    "papers:https://arxiv.org/abs/2610.37070": {
+      "fingerprint": "5e993acfa8c4508324d5961f0e9f60474de76a18a83d28ba9772ced6ac1c00fa",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2610.37070"
+    },
+    "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": {
+      "fingerprint": "59645777377c4f76c9c0b82549e453f4c8162304ae24cb869044064ac7a5a8cf",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018"
+    },
+    "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
+      "fingerprint": "d5e7a8628a836559d6af65563f30f246ef13e3b1b7a8ce83011a14e618415099",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014"
+    },
+    "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": {
+      "fingerprint": "fa2737a108382852fb1d323901f13b681623eb0780eac151c0e8e8cb370aa91f",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019"
+    },
+    "products:https://blog.st.com/rust-mems-drivers": {
+      "fingerprint": "92d69c47c15e40d19b4e99d480d764da1d57f6dd20cbab38c16b77356991519f",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/rust-mems-drivers/"
+    },
+    "products:https://blog.st.com/stspin9p": {
+      "fingerprint": "5f26f59b3dfbb6e71fcc48a7a8a626579757f6337cbe12facbb3b0017badd64b",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/stspin9p/"
+    },
+    "products:https://blog.st.com/touchgfx": {
+      "fingerprint": "3b0cec06bfed9a6c046c3d9bbfd3fc70309bd92ba8fd761cf0a46e14bfb7842c",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/touchgfx/"
+    },
+    "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": {
+      "fingerprint": "2289da89b05de560fc6ae4e2037d1f2adc546a63ec7f437befd436022f2a3bcf",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction/"
+    },
+    "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure": {
+      "fingerprint": "1f6d85f97738f85e6310b95144e45bd7b3fbd627ac9e9890f9b26bda7347921b",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure/"
+    },
+    "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {
+      "fingerprint": "299f555a94a94f81b5ed93747f1f8303770414462df94ff1633f1d155405266d",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/"
+    },
+    "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
+      "fingerprint": "98559625fad74686d8d8017f18e36ceee41eb227751a7c961e536cac9c585ebe",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
+    },
+    "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
+      "fingerprint": "80f5dd22c00bcca471384a380ef2e805821c52005ec498f35db3831bfe6499b0",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
+    },
+    "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": {
+      "fingerprint": "390dbe846bfe64a8e52dd2563ad6d7a019fa9a0db39e9114af72f7aa1c7cf051",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+    },
+    "python-releases:https://blog.python.org/2026/02/python-3143-and-31312-are-now-available": {
+      "list_fingerprint": "3aa6aefd87f6309afce225bf6cd1a2a5756dbbc67ba4362fceceea4e8f1c28e2",
+      "status": "older_material"
+    },
+    "python-releases:https://blog.python.org/2026/03/python-31213-31115-31020": {
+      "list_fingerprint": "0f415ec4d4c39991872b672b59e8868af9fc1479a3a23c5544242859415e6c13",
+      "status": "older_material"
+    },
+    "python-releases:https://blog.python.org/2026/05/python-3145-is-out": {
+      "list_fingerprint": "6d1ea8e52c617d3874dfc0c81b2a852c0da61647b69de998092868d9e9d11251",
+      "status": "older_material"
+    },
+    "python-releases:https://blog.python.org/2026/06/python-3146-31314": {
+      "list_fingerprint": "6408939adc66baa09b8caae23791aa00c2dd521f965ae3c4a03191ebf9d11ca4",
+      "status": "older_material"
+    },
+    "python-releases:https://blog.python.org/2026/08/python-31214-31116-31021": {
+      "list_fingerprint": "49aadbc945d2374e3027e22616c8a873e1041f7e8ede64142741115ba00e71dc",
+      "status": "older_material"
+    },
+    "python-releases:https://blog.python.org/2026/08/python-3147-31315": {
+      "list_fingerprint": "5fb8cc10bdd0d81b73f342c667866ad1fb02b610ef66b5bbce6909624a4cc351",
+      "status": "older_material"
+    },
+    "python-releases:https://blog.python.org/2026/10/python-31022-31117": {
+      "list_fingerprint": "f22506667319380221798054cdc49d17eab14bcf32f04a012fdeb6498c4ecc79",
+      "status": "bootstrap_skipped"
+    },
+    "python-releases:https://blog.python.org/2026/10/python-3150-final-is-here": {
+      "list_fingerprint": "70f042aa36202b6f5ab9f709ebdae73ffff991bf508303de0a5e182aeadaa708",
+      "status": "posted"
+    },
+    "python-releases:https://blog.python.org/2026/10/python-3151-3149-31317": {
+      "list_fingerprint": "72cd0229242d4c11136bdc0d27dabac3e204ff583eab848c6eb2d09bdad4c5b1",
+      "status": "posted"
+    },
+    "python-releases:https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118": {
+      "list_fingerprint": "ca2388313074f84523e9486d66edd9ef34bcc9eeb7af98d81fec7e00bd3bfa82",
+      "status": "posted"
     },
     "qwen:https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B": {
       "list_fingerprint": "34414ca962c2734df85e172e0c57d5c85eb70bf2ee136458946005835fe1ee1a",
@@ -1659,6 +4187,220 @@
       "list_fingerprint": "52dd8c1337c32ef2b27ac08e3dd8acd4dc614134cdfa35fd3171913c6a9db690",
       "status": "older_material"
     },
+    "spri-ai-brief:https://www.spri.kr/posts/view/23931?code=AI-Brief": {
+      "list_fingerprint": "9855173b1bf45becd9a6aee9cf462eaee9590a053b514771e00239f651244ccb",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/23943?code=AI-Brief": {
+      "list_fingerprint": "3b861032047a0f8050b94799bd0c387110008b19912a75fda6751f3d1aabab56",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/23950?code=AI-Brief": {
+      "list_fingerprint": "edf5d552a2b892d033b4928f05fe100d0b9bb00fec99896ad4e4024b10ad1408",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/23956?code=AI-Brief": {
+      "list_fingerprint": "6a8f3dc3aacac372c5a708fe9df69b1799fe0e0a8215da8d7aaa5b842f00e998",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/23959?code=AI-Brief": {
+      "list_fingerprint": "c387b181cdbc03dc55d8f92cbb3acdfb6d838d17d75201736e1e413de0079b9e",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/23964?code=AI-Brief": {
+      "list_fingerprint": "60bfd7fa3179d810e2c6daaec5613466726e16107bd2ded089e50be4ae414ec0",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/23982?code=AI-Brief": {
+      "list_fingerprint": "700fafba1533d59e716d8e06081b4be43bbdb2b3758b1a3cc4b28b4fe40307c6",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/23992?code=AI-Brief": {
+      "list_fingerprint": "9f14fca16bc1aeafc14bf81a66cc247da145d92da9855f862aa7b919c06092fa",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/24003?code=AI-Brief": {
+      "list_fingerprint": "c2566f38c452e036734402c966738530b233a5620cccf05971da752be1777a9f",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/24007?code=AI-Brief": {
+      "list_fingerprint": "ea15bec563788d5a2c73e2f02fca6aeb7a53ff557a69d6f97f2a7ea728c00283",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/24023?code=AI-Brief": {
+      "list_fingerprint": "007e7390f5cfdcdfb8f399aec7680f6585a16b27b72b513bbbc90cafd9826bdd",
+      "status": "older_material"
+    },
+    "spri-ai-brief:https://www.spri.kr/posts/view/24031?code=AI-Brief": {
+      "list_fingerprint": "3d15364f25d601b64c6352245a2cf111d7d1989610e3983dfec3b8bdafff0353",
+      "status": "posted"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/23927?code=magazine": {
+      "list_fingerprint": "2445b998d5ba5d865a69765ac21430470c2942909314b8f686f6bc32682ce1dc",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/23940?code=magazine": {
+      "list_fingerprint": "e005e497b41ab31d0eb587b08f5f56597217ee4dea0303c989104d0ba22d9165",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/23945?code=magazine": {
+      "list_fingerprint": "ba3985a58d092774070d1a90e5c7a56ace48d80a12c9784556f93a826bce4bd2",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/23955?code=magazine": {
+      "list_fingerprint": "46660b47588a39fd6d4c506f493f6638730486cacad9253923fa57a11555cb15",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/23958?code=magazine": {
+      "list_fingerprint": "5c89d24ec4d3c0c288343240bf99edde08785acc4f69f34f573a279edcce110a",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/23967?code=magazine": {
+      "list_fingerprint": "d699d377852396b4ed8e4d0c820287e46e4572a1c569abbcf3d8ec70120e6461",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/23989?code=magazine": {
+      "list_fingerprint": "0dabe99275a9f54794ea5aabbf8730474e275ec3e03d18d1a6d83b96b5e560df",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/23999?code=magazine": {
+      "list_fingerprint": "cb67622c63e602859a847b102bc7541bc3f5ad27fb572427223fa4d0d59d63d1",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/24005?code=magazine": {
+      "list_fingerprint": "fc1b95b9a399e3bdaadefa1715b0565634ced61facb48a506504690de7575c31",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/24013?code=magazine": {
+      "list_fingerprint": "5210f747f21ba0c07d982f3a4bc9ed4189b342e403467f9a2c4c711e175b0208",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/24022?code=magazine": {
+      "list_fingerprint": "a00ccd3adab39e4d32cc040f9c873839e45e1c38b07d239b20a8d325bc1634e9",
+      "status": "older_material"
+    },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/24032?code=magazine": {
+      "list_fingerprint": "79d396efa8bb7604c53fa62b48bbcac1d9732268ea78a383a0d314fe41f6e614",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/humanoid-robots-building-a-workforce": {
+      "list_fingerprint": "e51d535df79e1323376abadd170d1f1f31128694d372a6b76c0f08f320a465dc",
+      "status": "older_material"
+    },
+    "st-technical:https://blog.st.com/matter-commissioning-st25da-c": {
+      "list_fingerprint": "1590332e135ecd1725173f9d489e1293edd39f723913d5e29b1b54e7defb5140",
+      "status": "bootstrap_skipped"
+    },
+    "st-technical:https://blog.st.com/physical-ai": {
+      "list_fingerprint": "3a76cfd434d4dfbe4a062d2e829aa5f52033023172b2bf81cc5564af0697fba3",
+      "status": "bootstrap_skipped"
+    },
+    "st-technical:https://blog.st.com/phytec": {
+      "list_fingerprint": "8053e76641eb70ab65ddc3afa9ef0586ccaede0e1f62a19bc7d14f72158595ed",
+      "status": "bootstrap_skipped"
+    },
+    "st-technical:https://blog.st.com/rust-mems-drivers": {
+      "list_fingerprint": "92d69c47c15e40d19b4e99d480d764da1d57f6dd20cbab38c16b77356991519f",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/smart-power-distribution": {
+      "list_fingerprint": "b516a70f5830e04d52e6269cd9e61367169335c67cf7639a2afb1d9c1e074600",
+      "status": "older_material"
+    },
+    "st-technical:https://blog.st.com/stspin9p": {
+      "list_fingerprint": "5f26f59b3dfbb6e71fcc48a7a8a626579757f6337cbe12facbb3b0017badd64b",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/sustainable-mems-high-performance-motion-sensing": {
+      "list_fingerprint": "8015a78d3eee752d52f3461dc1ad37b042a02de8cb987a37e19d28febdad4408",
+      "status": "bootstrap_skipped"
+    },
+    "st-technical:https://blog.st.com/the-evolution-of-automotive-safety-and-the-sensors-driving-it": {
+      "list_fingerprint": "16c063d864a1de9504071d3ffc18a3fcb273d71dbe1ec2bc17b15e4eb180379c",
+      "status": "bootstrap_skipped"
+    },
+    "st-technical:https://blog.st.com/touchgfx": {
+      "list_fingerprint": "3b0cec06bfed9a6c046c3d9bbfd3fc70309bd92ba8fd761cf0a46e14bfb7842c",
+      "status": "posted"
+    },
+    "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {
+      "fingerprint": "a3a36ae8613ad6def0456e0fa0e9714177b88818a4ec842965cd7a9a0d1b57c2",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://www.kistep.re.kr/board.es?mid=a10306040000&bid=0031&list_no=94905&act=view"
+    },
+    "technology:https://www.spri.kr/posts/view/24031?code=AI-Brief": {
+      "fingerprint": "b2b63d426e0775a0ec83a7487cfc66bee90792fc92ed025319bcd05193730eba",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://www.spri.kr/posts/view/24031?code=AI-Brief"
+    },
+    "technology:https://www.spri.kr/posts/view/24032?code=magazine": {
+      "fingerprint": "f65662c01677fab218516dd3a634c27affa9de46160c392df47d981ba43b9e23",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://www.spri.kr/posts/view/24032?code=magazine"
+    },
+    "tools:https://blog.python.org/2026/10/python-3150-final-is-here": {
+      "fingerprint": "fb0cdd3e1358b6a241d03781851caceccece1b81b829f037adb762cdd36076b1",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://blog.python.org/2026/10/python-3150-final-is-here/"
+    },
+    "tools:https://blog.python.org/2026/10/python-3151-3149-31317": {
+      "fingerprint": "863f520abbcbe4232f9c234b3a876d513dc13e5fae7d2ed9b5e2c699b4fd5a0f",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://blog.python.org/2026/10/python-3151-3149-31317/"
+    },
+    "tools:https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118": {
+      "fingerprint": "ca2388313074f84523e9486d66edd9ef34bcc9eeb7af98d81fec7e00bd3bfa82",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/"
+    },
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2": {
+      "fingerprint": "67670951309cf27d04dc380f281a00865b98b84347f9cd59fd954f9d1a09004f",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2"
+    },
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3": {
+      "fingerprint": "612d10487c804bd84d328104289a540f6dea9a48174f41efbe81c5da3600deb6",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3"
+    },
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4": {
+      "fingerprint": "e42a17032b0892ef0a9e6199b6e5d2adb1266671deb1b9c3f4e582599cf746fe",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4"
+    },
+    "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": {
+      "fingerprint": "7fe3be758befd535f1758288d461ccb964354ced0b2f4483255c4db11e6454fe",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "en",
+      "url": "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": {
+      "fingerprint": "0999eb6992c5bbd4001fe63183e57f53d116f958357a9a2f069afc6fb73da254",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72244"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245": {
+      "fingerprint": "89bd5ba08763cfaef3d7ed5e61ebc298a26f49a1b355f639246280e0688ac911",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72245"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": {
+      "fingerprint": "980eccc98413adfad670f3a5d18102144156fc590d0c7a7d7e89924b59bd124f",
+      "first_seen": "2026-10-29T04:12:29.166428+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72246"
+    },
     "zai:https://huggingface.co/zai-org/GLM-4-32B-0414": {
       "list_fingerprint": "668099737dbb9d78c04a151552a14b44e342232eb86aaf585c3669bf90b8b004",
       "status": "older_material"
@@ -1734,13 +4476,68 @@
     "zai:https://huggingface.co/zai-org/GLM-Z1-Rumination-32B-0414": {
       "list_fingerprint": "c0a5ac1a68801e4367a765ab4c687d766e28c24adcaa13435c9d478a724638e0",
       "status": "older_material"
+    },
+    "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v3.7.2": {
+      "list_fingerprint": "a63ca5516407dc2d521497af29461463c17cdf4d5bb12e94d3feda90f4b7e82c",
+      "status": "older_material"
+    },
+    "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.2.1": {
+      "list_fingerprint": "514b31b6cc10d213282d6fd65df5f0902f51564b97a9fa271fa47bf095e437c7",
+      "status": "older_material"
+    },
+    "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.2.2": {
+      "list_fingerprint": "b8be0940cecd8b3b14046dbcb8b515d1b3e9baa55aa59dc2f4d6998fe6440a31",
+      "status": "older_material"
+    },
+    "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.0": {
+      "list_fingerprint": "bb22d18eb94aa9ef4bd93bd771d77ff35f8529b1e46b92851f82bd41d2b478c2",
+      "status": "older_material"
+    },
+    "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.1": {
+      "list_fingerprint": "785cfcd263d8f6f288486e8dbda605e60f362b50923762149bbed262456c64d0",
+      "status": "older_material"
+    },
+    "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.4.0": {
+      "list_fingerprint": "debfbd3d8c307a6b5a208f7219e704c4dd0143b9052643fe6807ab95aec2e6bb",
+      "status": "older_material"
+    },
+    "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.4.1": {
+      "list_fingerprint": "5bfb01377a9cc21443c47a7606511935677c5cfa4efcf7c9f595f84eb52e6bde",
+      "status": "older_material"
+    },
+    "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.4.2": {
+      "list_fingerprint": "1f09db1d3c5655c60bef85b928a79180f840d1cbc8137188958c40b6359fd800",
+      "status": "older_material"
+    },
+    "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": {
+      "list_fingerprint": "7fe3be758befd535f1758288d461ccb964354ced0b2f4483255c4db11e6454fe",
+      "status": "posted"
     }
   },
   "sources": {
     "anthropic": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://www.anthropic.com/news",
       "since": "2026-10-29T03:34:54.131044+00:00"
+    },
+    "arxiv-ai-surveys": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://rss.arxiv.org/rss/cs.AI",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "arxiv-architecture": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://rss.arxiv.org/rss/cs.AR",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "arxiv-signal-systems": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://rss.arxiv.org/rss/eess.SP",
+      "since": "2026-10-29T04:12:29.166428+00:00"
     },
     "deepseek": {
       "candidates": [],
@@ -1750,72 +4547,193 @@
     "etri-reports": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://ksp.etri.re.kr/ksp/plan-report/search",
       "since": "2026-10-29T03:34:54.131044+00:00"
     },
     "google-deepmind": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://deepmind.google/blog/rss.xml",
       "since": "2026-10-29T03:34:54.131044+00:00"
     },
     "google-ko": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://blog.google/intl/ko-kr/rss/",
       "since": "2026-10-29T03:34:54.131044+00:00"
     },
     "kaist-future": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://futures.kaist.ac.kr/ko/?c=203",
       "since": "2026-10-29T03:34:54.131044+00:00"
+    },
+    "kari-aerospace-insights": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://www.kari.re.kr/kor/134/pblc/AEROPLCYRSCH",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "kari-research-reports": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://www.kari.re.kr/kor/89/pblc/RSCHRPTP",
+      "since": "2026-10-29T04:12:29.166428+00:00"
     },
     "kdi-monthly": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://www.kdi.re.kr/research/monTrends",
       "since": "2026-10-29T03:34:54.131044+00:00"
     },
     "kdi-outlook": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://www.kdi.re.kr/research/economy",
       "since": "2026-10-29T03:34:54.131044+00:00"
     },
     "kimi": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://www.kimi.com/en/blog/",
       "since": "2026-10-29T03:34:54.131044+00:00"
+    },
+    "kisa-security": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "kistep-technology-brief": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://www.kistep.re.kr/board.es?mid=a10306040000&bid=0031&cg_code=C03",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "kmooc-courses": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://www.kmooc.kr/",
+      "since": "2026-10-29T04:12:29.166428+00:00"
     },
     "lg-business": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://www.lgbr.co.kr/business/list.do",
       "since": "2026-10-29T03:34:54.131044+00:00"
     },
     "lg-economy": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://www.lgbr.co.kr/economy/list.do",
       "since": "2026-10-29T03:34:54.131044+00:00"
+    },
+    "llvm-releases": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "mcee-energy": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=10598&boardMasterId=939",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "mit-ai-research": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "mit-ocw-materials": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://www.ocw-openmatters.org/feed/",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "mit-open-learning": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://news.mit.edu/rss/topic/mitx",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "nasa-technology": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://www.nasa.gov/technology/feed/",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "nvidia-korea": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://blogs.nvidia.co.kr/feed/",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "nvidia-technical": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://developer.nvidia.com/blog/feed/",
+      "since": "2026-10-29T04:12:29.166428+00:00"
     },
     "openai-en": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://openai.com/news/rss.xml",
       "since": "2026-10-29T03:34:54.131044+00:00"
+    },
+    "python-releases": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://blog.python.org/feeds/posts/default?alt=rss",
+      "since": "2026-10-29T04:12:29.166428+00:00"
     },
     "qwen": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=100&full=true",
       "since": "2026-10-29T03:34:54.131044+00:00"
     },
     "snu-briefs": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://ifs.snu.ac.kr/publication/issue-brief",
       "since": "2026-10-29T03:34:54.131044+00:00"
     },
     "snu-reports": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://ifs.snu.ac.kr/publication/report",
       "since": "2026-10-29T03:34:54.131044+00:00"
+    },
+    "spri-ai-brief": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://www.spri.kr/posts?code=AI-Brief",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "spri-sw-magazine": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://www.spri.kr/posts?code=magazine",
+      "since": "2026-10-29T04:12:29.166428+00:00"
+    },
+    "st-technical": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://blog.st.com/feed/",
+      "since": "2026-10-29T04:12:29.166428+00:00"
     },
     "zai": {
       "candidates": [],
       "initialized": true,
       "since": "2026-10-29T03:34:54.131044+00:00"
+    },
+    "zephyr-releases": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20",
+      "since": "2026-10-29T04:12:29.166428+00:00"
     }
   }
 }
