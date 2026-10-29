@@ -20,6 +20,10 @@
 
 글자 인식 정확도뿐 아니라 읽기 속도, 표·수식 탐색, 메뉴 접근, 음성·점자 전환 시간, 실내외 안내 오류, 위험한 오안내, 주변 사람의 도움 없이 완료한 과제를 평가합니다. 화면 읽기 사용자는 키보드와 모바일 터치 등 실제 입력 방식으로 시험에 참여해야 합니다. 자동 접근성 검사만으로 사용자 경험을 검증할 수 없습니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#vision-access)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Vision access includes screen readers, refreshable braille, magnification, contrast controls, OCR and camera-based description. Interfaces must expose accessible labels and keyboard focus, while navigation systems need careful evaluation of missed hazards and privacy. Retinal prostheses are specialized and limited technologies, not a general restoration of normal vision.

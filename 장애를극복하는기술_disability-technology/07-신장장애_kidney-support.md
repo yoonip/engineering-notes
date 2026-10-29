@@ -20,6 +20,10 @@
 
 기술 성능은 노폐물 제거량만이 아니라 혈압·체액량·전해질 안정성, 혈관 접근부 합병증, 오염·용혈 위험, 치료 중단률, 가정 사용의 부담, 소모품·수리 접근성, 삶의 질과 장기 임상 결과로 평가합니다. 소형화나 연속 운전이 임상적 이득으로 이어지는지를 별도로 검증해야 합니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#kidney-support)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Hemodialysis machines pump blood through a dialyzer and monitor pressure, temperature, conductivity, air and leaks. Peritoneal dialysis cyclers automate fluid exchange through the peritoneum. Wearable and implantable artificial kidneys remain research or clinical-trial projects; registration or funding does not imply routine availability.

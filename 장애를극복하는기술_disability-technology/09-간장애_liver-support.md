@@ -20,6 +20,10 @@
 
 물질 제거율뿐 아니라 알부민·세포 성분 손실, 혈액 응고와 용혈, 혈압·전해질 변화, 회로 막힘, 치료 시간, 부작용, 간이식까지의 생존과 장기 생존을 확인해야 합니다. 체외 장치의 전임상 성능과 환자에게 의미 있는 임상 결과를 구분하고, 환자군·중증도·동시 치료를 함께 봅니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#liver-support)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Extracorporeal liver support systems use dialysis, filtration or adsorption to remove selected substances from blood. Bioartificial systems add cultured liver cells in an attempt to provide selected metabolic functions. Neither approach reproduces the full liver. Clinical benefit and availability remain limited and should not be inferred from laboratory performance alone.

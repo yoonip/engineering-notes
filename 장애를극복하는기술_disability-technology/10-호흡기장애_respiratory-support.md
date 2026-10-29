@@ -18,6 +18,10 @@
 
 가정용 환기와 산소 장치에서는 더 조용하고 가벼운 전원, 휴대용 배터리, 비침습 인터페이스, 호흡 패턴에 반응하는 제어, 원격 유지관리와 장치 간 자료 연동이 연구·개발됩니다. 폐쇄회로 제어는 센서가 호흡과 가스 상태를 읽어 보조를 자동 조정하는 방식이지만 센서 지연·오차와 급격한 상태 변화를 고려해야 합니다. 자율 제어의 편의성은 고장 시 안전 정지, 사람이 설정을 확인·수정할 수 있는 기능과 함께 검증해야 합니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#respiratory-support)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Respiratory support ranges from supplemental oxygen and non-invasive positive-pressure ventilation to mechanical ventilation. These devices perform different functions and monitor pressure, flow, leaks, power and alarms. Diaphragm pacing is approved only for specific patient groups and is not a general treatment for respiratory disability.

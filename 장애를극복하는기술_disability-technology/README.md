@@ -31,6 +31,10 @@
 |---|---|
 | [췌장장애](13-췌장장애_glucose-technology.md) | 췌장 내분비 기능 저하와 혈당 조절, 연속혈당측정기·인슐린 펌프·자동 인슐린 전달 |
 
+## 실제 제품과 연구 도구
+
+[장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md)에서 지체 보조기기, 접근성 기술, 투석·호흡·심장 장치, 신경보철 연구의 센서·제어 흐름과 확인된 개발 도구를 살펴보실 수 있습니다.
+
 ## 분야를 가로지르는 설계 원칙
 
 [공통 설계와 근거 단계](공통설계와근거단계_common-design-and-evidence.md)에서는 사용자 평가부터 센서·신호처리·제어·출력, 임상 검증과 유지관리까지 연결합니다. 각 기술을 읽을 때는 다음을 구분합니다.
@@ -53,3 +57,5 @@
 This section explains how assistive, rehabilitation and medical technologies support communication, mobility, health management and participation. It covers the twelve requested categories and adds pancreatic disability because the Korean Enforcement Decree, revised on 16 December 2025 and effective from 1 September 2026, now lists sixteen disability categories. Thirteen concern physical or internal-organ functions; intellectual disability, autism spectrum disorder and mental disability are outside this section's scope. Legal categories do not diagnose or describe an individual's needs. Each article separates widely used technologies from indication-specific medical devices, clinical studies and early research.
 
 [Subject index](../분야별목차_CATALOG.md) · [Biomedical engineering and medical AI](../전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md)
+
+[Assistive devices and rehabilitation engineering](실제기기와연구개발도구_engineering-cases-and-tools.md) connects current products and research systems to their sensors, control paths, engineering tools and evidence stages.

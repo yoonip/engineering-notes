@@ -23,6 +23,10 @@
 
 연구 중인 방향에는 의지의 촉각을 피부나 신경 자극으로 돌려주는 감각 피드백, 착용 압력을 줄이는 맞춤 소켓, 사용자의 보행에 맞춰 제어를 조정하는 장치, 뇌·신경 신호와 보조기기를 연결하는 폐회로 인터페이스가 있습니다. 일부는 실험실이나 제한된 임상 연구 단계이며 일상 제품으로 널리 쓰이는 기술과 구분해야 합니다. 장기 사용에는 전극 안정성, 수술·감염 위험, 배터리·충전, 정비, 개인 데이터 보호 문제가 함께 남습니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#limb-mobility)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Mobility technology includes prosthetic limbs, orthoses, wheelchairs and powered exoskeletons. Fit, control, skin pressure, fatigue, battery life and safety in real tasks matter as much as actuator performance. Sensory feedback and neural control remain research directions with different levels of clinical evidence and availability.

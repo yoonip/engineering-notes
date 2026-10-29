@@ -54,6 +54,10 @@
 
 WHO와 UNICEF의 보조기술 보고서는 제품과 함께 평가·맞춤·사용 교육·후속 관리 서비스가 필요하다고 설명합니다. 따라서 이 분류의 기술 설명은 기기 구성뿐 아니라 실제 사용 조건과 유지관리까지 이어서 다룹니다.
 
+## 실제 제품·연구와 연결
+
+[장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md)에서는 이 설계 흐름을 의지·외골격, 접근성 기술, 생체 신호 장치와 임상·전임상 연구 사례에 적용합니다.
+
 ## English
 
 Assistive technology should be designed around a person's goals, activities and environments rather than a diagnosis alone. A complete system may include sensing, signal processing, control, an actuator or interface, user training and follow-up. Performance claims should be evaluated at the same level as the intended benefit, from sensor accuracy to safe task completion and long-term use. Regulatory authorization, clinical trials and early research are different evidence stages.

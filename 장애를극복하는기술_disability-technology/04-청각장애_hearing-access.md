@@ -18,6 +18,10 @@
 
 연구 방향에는 개인별 청각 프로필에 맞춘 보청기 신호처리, 인공와우의 영상 기반 전극 위치·자극 설정, 실시간 자막과 다중 감각 경보가 있습니다. 수어 인식·생성 모델은 수어의 문법과 지역·개인 차이를 보존하고, 수어 사용자의 참여를 바탕으로 평가해야 합니다. 음성 인식 결과를 수어와 동등한 대화로 간주하거나 보청기·인공와우가 모두에게 적합하다고 단정하지 않습니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#hearing-access)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Hearing access combines hearing aids or cochlear implants with captions, remote microphones, induction loops and visual or vibration alerts. A cochlear implant processes sound and electrically stimulates the auditory nerve; it does not restore normal hearing. Fitting, communication preferences and real-world noise conditions are part of the system.

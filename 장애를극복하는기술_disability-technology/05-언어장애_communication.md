@@ -20,6 +20,10 @@
 
 AAC 도입 전후에 의사 전달 성공률, 대화 시작과 응답 시간, 단어 수정 횟수, 하루 사용 시간, 대화 상대·장소별 사용성, 사용자의 피로와 만족도를 확인합니다. 기기 고장이나 충전 부족에도 의사소통을 이어갈 수 있도록 종이판·기본 음성·긴급 호출 같은 대체 경로를 준비합니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#communication)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Augmentative and alternative communication includes communication boards, signs, speech-generating devices, switches and eye-gaze access. The user should be able to create and edit messages rather than being confined to preset choices. Speech neuroprostheses have demonstrated promising results in individual clinical research participants, but are not broadly available communication products.

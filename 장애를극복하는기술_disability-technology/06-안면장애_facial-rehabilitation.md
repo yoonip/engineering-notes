@@ -20,6 +20,10 @@
 
 스캔·출력의 기하 오차만 재지 말고 접촉면 압력, 유지력, 착탈 시간, 피부 자극, 세척 주기, 색상 변화, 말하기·섭식·시야의 기능, 당사자의 선호와 장기 교체 비용을 확인합니다. 안면 영상은 개인을 식별할 수 있는 민감 정보이므로 사용 목적과 저장 기간을 정하고, 공유 범위를 제한해야 합니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#facial-rehabilitation)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Facial rehabilitation may involve reconstructive surgery, patient-specific facial prostheses and digital planning. Imaging or optical scans can inform CAD/CAM, while fit, skin contact, retention, color, function and long-term maintenance remain central. Three-dimensional printing supports models, molds and selected components; direct printing of lifelike flexible silicone prostheses remains a research challenge.

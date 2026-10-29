@@ -20,6 +20,10 @@
 
 연구·개발에서는 심장 신호에 반응해 자극을 조정하는 적응형 기기, 배터리 수명과 통신 안정성, 여러 장치의 동기화, 원격 감시의 보안과 경보 정확도를 다룹니다. 리드리스 심박조율기도 이미 일부 환자군에서 사용되는 기술이므로 미래 제품으로만 분류하지 않습니다. 장치의 사용 범위는 국가의 허가와 질환별 적응증을 확인해야 합니다. 원격 모니터링이나 심박 데이터 분석이 심부전을 치료하거나 갑작스러운 악화를 항상 미리 알린다고 말할 수는 없습니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#cardiac-support)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Pacemakers sense cardiac activity and deliver pacing when needed. Implantable cardioverter-defibrillators detect certain dangerous rhythms, while cardiac resynchronization therapy coordinates ventricular timing in selected patients. Ventricular assist devices use a pump, controller and power source to support circulation. Each device has specific indications, risks and maintenance needs.

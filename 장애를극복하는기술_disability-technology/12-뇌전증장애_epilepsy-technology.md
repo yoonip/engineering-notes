@@ -20,6 +20,10 @@
 
 EEG·가속도·심박·피부전도 등 여러 신호를 결합하는 개인별 감지, 발작 전 위험 변화 추정, 상태에 따라 자극을 조절하는 폐회로 치료가 연구되고 있습니다. ‘발작 위험 추정’, ‘발작 감지’, ‘발작 예측’, ‘발작 치료’는 서로 다른 기능입니다. 미래 알고리즘의 예측 정확도만으로 발작을 예방한다고 표현하지 말고, 전향적 임상시험에서 안전성과 환자에게 중요한 결과를 확인해야 합니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#epilepsy)에서 이어서 보실 수 있습니다.
+
 ## English
 
 EEG supports clinical assessment; wearable sensors may alert caregivers to selected convulsive seizure patterns; responsive neurostimulation detects intracranial patterns and delivers stimulation in selected patients. Detection, prediction and treatment are different functions. Wearable alerts are adjuncts and should not be treated as seizure prevention or as a standalone diagnostic system.

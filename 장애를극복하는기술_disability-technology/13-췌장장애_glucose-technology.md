@@ -22,6 +22,10 @@
 
 연구 방향에는 더 빠르고 정확한 센서, 인슐린과 글루카곤을 함께 제어하는 이중 호르몬 시스템, 주입 중단·오작동을 조기에 감지하는 알고리즘, 더 긴 사용 주기의 센서와 주입 세트가 있습니다. 이중 호르몬 방식은 연구·시험 중인 구성과 이미 허가된 인슐린 단독 시스템을 구분해야 합니다. 알고리즘 성능만으로 사용자가 안전하게 쓸 수 있다는 결론을 내리지 않고, 기기 조합의 임상시험과 허가·사후 감시를 확인합니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#glucose-control)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Continuous glucose monitoring, insulin pumps and automated insulin delivery connect sensing, control software and drug delivery. A CGM estimates glucose from interstitial fluid; an algorithm uses its readings and delivery history to adjust insulin. Hybrid closed-loop systems still require user input in some situations and do not reproduce every function of a pancreas. Device compatibility, alarms, failure handling and clinical evidence are essential.

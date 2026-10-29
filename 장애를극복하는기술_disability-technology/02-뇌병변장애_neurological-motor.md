@@ -18,6 +18,10 @@
 
 보행 로봇·외골격, 뇌-컴퓨터 인터페이스, 전기자극과 움직임 센서를 결합한 폐회로 재활이 연구되고 있습니다. 폐회로란 센서가 실제 움직임이나 신경 신호를 읽고 자극·보조를 상황에 맞춰 조정하는 방식입니다. 아직 소규모 시험이나 특정 질환·기능을 대상으로 한 연구인 경우가 많으므로, 모든 뇌병변이나 모든 보행 문제를 회복시킨다고 확대해서는 안 됩니다. 웨어러블 센서로 가정의 움직임을 측정하는 방식도 임상에서 쓰는 평가를 대체하기보다 실제 활동을 보충해 관찰하는 연구 방향으로 다룹니다.
 
+## 실제 제품·연구와 공학 도구
+
+실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#neurological-motor)에서 이어서 보실 수 있습니다.
+
 ## English
 
 Brain lesions can affect posture, movement, communication, swallowing, sensation and cognition in different combinations. Seating, mobility equipment, AAC, switch access, functional electrical stimulation and robotic rehabilitation support specific tasks. Research on exoskeletons and brain–computer interfaces is promising but remains condition- and study-specific.
