@@ -144,6 +144,12 @@ class PublicationTests(unittest.TestCase):
             self.run_at(NOW + timedelta(hours=1), fetcher=fetch)
         self.assertEqual(calls.count(item()['url']), 1)
 
+    def test_processed_source_body_is_not_kept_in_retry_cache(self):
+        self.run_at()
+        state = json.loads(self.state.read_text(encoding='utf-8'))
+        self.assertEqual(state['sources']['example']['candidates'], [])
+        self.assertTrue(state['seen'])
+
     def test_optional_detail_403_uses_official_feed_introduction(self):
         self.sources[0]['detail_if_empty'] = True
         self.body = feed([item(description='전력 수요와 새로운 설비 도입의 조건을 설명합니다.')])

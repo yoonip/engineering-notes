@@ -425,6 +425,10 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                 candidates = [item for item in (validate_item(item, source) for item in candidates) if item]
                 if not candidates:
                     raise FetchFailure('parse_empty')
+                if source['group'] == 'models':
+                    candidates = [item for item in candidates if adapter.eligible(source, item)]
+                    if not candidates:
+                        report['status'] = 'no_eligible_items'
                 source_state['candidates'] = candidates
             initial = not source_state.get('initialized')
             posted = 0
@@ -530,6 +534,11 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                 state['seen'][observation_key] = {'list_fingerprint': marker, 'status': 'posted'}
                 report['updated' if previous else 'new'] += 1
                 posted += 1
+            # 304 재시도에는 미처리 항목만 필요합니다. 전체 피드·고객 활용기 본문은 보관하지 않습니다.
+            source_state['candidates'] = [item for item in candidates if state['seen'].get(
+                source['id'] + ':' + canonical(item['url'], source.get('keep_fragment', False)), {}
+                ).get('status') in (None, 'pending') and
+                (source['group'] != 'models' or adapter.eligible(source, item))]
             source_state.update(initialized=True, since=source_state.get('since', started))
             state['sources'][source['id']] = source_state
         except (FetchFailure, ValueError, TypeError, KeyError, ET.ParseError) as exc:
