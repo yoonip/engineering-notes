@@ -1,6 +1,6 @@
 # 오늘의 뉴스 | Daily news
 
-수집 시각: 2026-10-29 09:00 KST(한국 표준시)
+수집 시각: 2026-10-29 09:02 KST(한국 표준시)
 
 매체별 공식 피드에서 최근 24시간에 발행된 기사 중 앞에 실린 기사를 연결합니다. 제목과 링크는 원문을 유지하며, 기사 발행 시각은 한국 표준시로 표시합니다.
 
@@ -46,16 +46,16 @@
 
 ### [연합뉴스](https://www.yna.co.kr/)
 
-- [삼성SDI 3분기 영업이익 4천78억원…흑자 전환](<https://www.yna.co.kr/view/AKR20261029040200527>) · 10-29 08:56 KST · 작성·제공: 공시뉴스
-- [김필, 오늘 정규 2집 '저니'…진정한 나 찾아가는 이야기 담아](<https://www.yna.co.kr/view/AKR20261029039200005>) · 10-29 08:54 KST · 작성·제공: 이태수
-- [서울 올가을 첫서리…낮에도 쌀쌀, 오후 중부 비](<https://www.yna.co.kr/view/AKR20261029034100530>) · 10-29 08:54 KST · 작성·제공: 이재영
-- [군산사랑상품권 5% 추가 환급…착한가격업소 중복 혜택](<https://www.yna.co.kr/view/AKR20261029038600055>) · 10-29 08:54 KST · 작성·제공: 김진방
+- [SSG닷컴, 쓱데이 단독상품 100여종…장보기부터 명품 뷰티까지](<https://www.yna.co.kr/view/AKR20261029035800030>) · 10-29 08:45 KST · 작성·제공: 조민정
+- [키움증권, 인텔리안테크 목표가↓…"3분기 실적 일시적 부진 예상"](<https://www.yna.co.kr/view/AKR20261029036700008>) · 10-29 08:45 KST · 작성·제공: 김유향
+- [커피·치킨 조리 편의점 등 점검했더니…33곳 위생 불량](<https://www.yna.co.kr/view/AKR20261029034000017>) · 10-29 08:43 KST · 작성·제공: 박상현
+- [인천서 흉기 난동범 제압한 시민 5명 GS칼텍스 참사람상](<https://www.yna.co.kr/view/AKR20261028178500003>) · 10-29 08:42 KST · 작성·제공: 강태우
 
 ### [SBS 뉴스](https://news.sbs.co.kr/)
 
 - [\[단독\] "담배 냄새 지적에 약 과다 복용"…피해자 남편, "막을 수 있었다" 분통](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008820210&plink=RSSLINK&cooper=RSSREADER>) · 10-29 08:35 KST · 작성·제공: mk@sbs.co.kr \(조민기\)
 - [무려 35억 싸게 팔렸다…"빨리 처분해야" 곳곳서 비상](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008820035&plink=RSSLINK&cooper=RSSREADER>) · 10-29 08:21 KST · 작성·제공: dennoch@sbs.co.kr \(전형우 기자\)
-- ["교사 말고 학교에 말하세요"…달라지는 민원 처리](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008819978&plink=RSSLINK&cooper=RSSREADER>) · 10-29 07:55 KST · 작성·제공: jdono@sbs.co.kr \(조제행 기자\)
+- ["교사 말고 학교에 말하세요"…민원 스트레스 끝날까](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008819978&plink=RSSLINK&cooper=RSSREADER>) · 10-29 09:00 KST · 작성·제공: jdono@sbs.co.kr \(조제행 기자\)
 - ["사진만 봐도 짜증"…분노 부른 뒷좌석 '민폐 승객'](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008819974&plink=RSSLINK&cooper=RSSREADER>) · 10-29 08:25 KST · 작성·제공: jdono@sbs.co.kr \(조제행 기자\)
 
 ### [동아일보](https://www.donga.com/)
