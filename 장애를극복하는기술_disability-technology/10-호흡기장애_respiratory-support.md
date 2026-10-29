@@ -18,6 +18,16 @@
 
 가정용 환기와 산소 장치에서는 더 조용하고 가벼운 전원, 휴대용 배터리, 비침습 인터페이스, 호흡 패턴에 반응하는 제어, 원격 유지관리와 장치 간 자료 연동이 연구·개발됩니다. 폐쇄회로 제어는 센서가 호흡과 가스 상태를 읽어 보조를 자동 조정하는 방식이지만 센서 지연·오차와 급격한 상태 변화를 고려해야 합니다. 자율 제어의 편의성은 고장 시 안전 정지, 사람이 설정을 확인·수정할 수 있는 기능과 함께 검증해야 합니다.
 
+## 호흡을 보조하는 장치와 원인 치료를 구분합니다
+
+인공호흡기는 압력과 유량을 조절해 폐로 공기를 넣고 내보내며, 호흡 근육이나 폐가 충분히 작동하지 않을 때 환기를 대신합니다. Astral 같은 가정용 환기 장치는 호흡 회로와 마스크 또는 기관절개관, 압력·유량 센서, 송풍기, 밸브, 배터리, 누출·회로 분리 경보를 하나의 제어 시스템으로 묶습니다. 이 장치는 산소화와 환기를 지원하지만 폐포 손상이나 신경근육 원인을 고치지는 않습니다. 설정은 질환과 혈액가스·수면·호흡 평가에 따라 정하므로 임의 변경 대상으로 다루지 않습니다. [ResMed Astral 150 지원자료](https://support.resmed.com/en-us/ventilators/astral-150/)는 기기 기능과 회로 구성을 확인할 수 있는 제조사 자료입니다.
+
+원인 치료가 가능한 사례도 있습니다. 낭성섬유증의 CFTR 변이 가운데 일부는 단백질이 접히거나 세포막으로 이동하는 문제, 염소 이온 통로의 열림 문제를 일으킵니다. CFTR 조절제는 해당 변이에 맞춰 단백질의 이동·작동을 개선해 점액과 폐 기능에 영향을 줄 수 있지만, 대상 변이가 제한되고 이미 생긴 기관지 확장·흉터를 모두 되돌리는 치료는 아닙니다. [NHLBI 치료 안내](https://www.nhlbi.nih.gov/health/cystic-fibrosis/treatment)는 약물의 유전자형별 적용을 설명합니다.
+
+유전자 치료·유전자 편집·정지코돈을 읽어내려는 tRNA 접근은 폐 질환 원인을 겨냥하는 연구입니다. 특히 CFTR 정지코돈 대응 tRNA 연구는 세포·동물 실험 단계이며 사람의 폐 기능을 회복시킨 임상 치료로 간주할 수 없습니다. [NIH의 2026년 연구 소개](https://www.nih.gov/news-events/nih-research-matters/trna-treatment-may-help-restore-cystic-fibrosis-proteins)는 전임상 근거를 다룹니다. 반면 폐이식은 말기 환자에게 손상된 폐를 기증 장기로 대체하는 치료지만, 거부반응·감염·수술 위험과 이식 후 평생 관리가 필요합니다. 이식은 새 폐의 기능을 제공하며, 원래 폐를 재생시키는 치료는 아닙니다.
+
+그러므로 호흡기 기술은 세 층으로 나눠야 합니다. 산소와 환기 장치는 생리 기능을 보조하고, CFTR 조절제처럼 원인 경로에 맞춘 치료는 특정 질환의 진행과 기능에 영향을 주며, 폐이식은 손상 장기를 대체합니다. 어느 접근도 모든 호흡기장애에 공통으로 적용되지는 않습니다.
+
 ## 실제 제품·연구와 공학 도구
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#respiratory-support)에서 이어서 보실 수 있습니다.
@@ -45,7 +55,14 @@ flowchart LR
 
 Respiratory support ranges from supplemental oxygen and non-invasive positive-pressure ventilation to mechanical ventilation. These devices perform different functions and monitor pressure, flow, leaks, power and alarms. Diaphragm pacing is approved only for specific patient groups and is not a general treatment for respiratory disability.
 
+Some cause-directed therapies, such as CFTR modulators, improve a defective protein for eligible cystic-fibrosis variants. Lung transplantation replaces a diseased organ in selected patients; ventilators support breathing but do not repair lung tissue.
+
 ## 출처
+
+- [ResMed, Astral 150 product support](https://support.resmed.com/en-us/ventilators/astral-150/): 가정용 환기 장치의 제품 구성과 기능.
+- [미국 NHLBI, Cystic Fibrosis Treatment](https://www.nhlbi.nih.gov/health/cystic-fibrosis/treatment): CFTR 조절제의 변이별 적용 범위.
+- [NIH, tRNA treatment may help restore cystic fibrosis proteins (2026)](https://www.nih.gov/news-events/nih-research-matters/trna-treatment-may-help-restore-cystic-fibrosis-proteins): 세포·동물 단계 tRNA 연구.
+- [MedlinePlus, Lung Transplantation](https://medlineplus.gov/lungtransplantation.html): 말기 폐질환에서 폐이식의 목적과 위험.
 
 - [대한민국 법제처, 장애인복지법 시행령 별표 1](https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110201&flSeq=159613615&gubun=): 호흡기장애의 법적 유형 기준.
 - [미국 NIH/NHLBI, Respiratory Failure Treatment](https://www.nhlbi.nih.gov/health/respiratory-failure/treatment): 산소요법·NPPV·인공호흡기의 역할과 위험.

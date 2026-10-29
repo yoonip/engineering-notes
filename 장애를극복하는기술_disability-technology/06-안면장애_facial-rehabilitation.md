@@ -20,6 +20,14 @@
 
 스캔·출력의 기하 오차만 재지 말고 접촉면 압력, 유지력, 착탈 시간, 피부 자극, 세척 주기, 색상 변화, 말하기·섭식·시야의 기능, 당사자의 선호와 장기 교체 비용을 확인합니다. 안면 영상은 개인을 식별할 수 있는 민감 정보이므로 사용 목적과 저장 기간을 정하고, 공유 범위를 제한해야 합니다.
 
+## 신경·근육 재건과 맞춤 보철의 역할
+
+안면신경 손상으로 눈 감기, 미소, 입술 닫기 같은 움직임이 약해진 경우에는 손상 원인과 기간에 따라 신경 봉합·신경 이식·신경 이전술, 힘줄 또는 근육 이전술을 검토할 수 있습니다. 예를 들어 다른 기능이 보존된 안면신경 가지를 이용해 마비된 쪽 근육에 신호가 도달하도록 연결하는 방식이 있습니다. 신경 축삭이 자라 목표 근육에 도달하고 뇌가 새로운 움직임을 학습하는 시간이 필요하므로, 수술 직후 곧바로 정상 표정이 돌아오는 방식은 아닙니다. 감각·눈물·침 분비·청력 등 손상 위치에 따른 다른 기능도 별도로 평가합니다.
+
+광범위한 조직 손실에서는 미세혈관 조직 이식이나 얼굴 이식이 형태와 일부 기능을 함께 복원할 수 있습니다. 얼굴 이식은 여러 조직을 혈관과 신경에 연결하는 복합 이식이며, 면역억제제를 장기간 사용해야 하고 감염·거부반응·혈관 및 신경 합병증과 심리사회적 부담이 따릅니다. Johns Hopkins의 임상 설명과 미국 국립학술원 기준은 이식이 드문 중증 환자에 대한 다학제 치료임을 보여줍니다. [Johns Hopkins 얼굴 이식 안내](https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/face-transplant), [미국 국립학술원 임상 기준](https://www.ncbi.nlm.nih.gov/books/NBK615580/)을 참고할 수 있습니다. 얼굴 이식을 모든 안면장애의 근본 치료로 일반화할 수는 없습니다.
+
+귀·코·안와 등 결손 부위를 만드는 맞춤 보철은 CT·3차원 스캔과 CAD로 피부 접촉면 및 고정점을 설계하고, 실리콘과 임플란트형 고정구 등으로 제작합니다. 외형과 보호 기능은 복원할 수 있지만, 보철 자체가 신경·근육·눈물샘·후각을 재생하지는 않습니다. 따라서 조직 재건이나 신경 재활이 가능한지 먼저 살피고, 보철은 필요한 기능을 보완하는 선택지로 설명해야 합니다. 제작 후에도 색 변화·접착력·피부 자극·세척과 재제작 주기를 관리합니다.
+
 ## 실제 제품·연구와 공학 도구
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#facial-rehabilitation)에서 이어서 보실 수 있습니다.
@@ -46,7 +54,13 @@ flowchart LR
 
 Facial rehabilitation may involve reconstructive surgery, patient-specific facial prostheses and digital planning. Imaging or optical scans can inform CAD/CAM, while fit, skin contact, retention, color, function and long-term maintenance remain central. Three-dimensional printing supports models, molds and selected components; direct printing of lifelike flexible silicone prostheses remains a research challenge.
 
+Nerve repair or muscle transfer may restore selected movement after facial paralysis. A face transplant can replace extensive tissue loss in rare cases, but requires nerve regeneration, intensive rehabilitation and lifelong immunosuppression; a prosthesis restores form rather than nerves or muscles.
+
 ## 출처
+
+- [Johns Hopkins, Face Transplant](https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/face-transplant): 얼굴 이식의 목적과 장기 관리.
+- [National Academies, Standards of Care for Face Transplantation (2025)](https://www.ncbi.nlm.nih.gov/books/NBK615580/): 얼굴 이식의 환자 선정과 다학제 관리.
+- [Facial nerve restoration review (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12901399/): 안면신경 기능 재건의 임상 접근과 근거 범위.
 
 - [대한민국 법제처, 장애인복지법 시행령 별표 1](https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110201&flSeq=159613615&gubun=): 안면장애의 법적 유형 기준.
 - [A Contemporary Review of the Role of Facial Prostheses in Complex Facial Reconstruction, PubMed (2023)](https://pubmed.ncbi.nlm.nih.gov/36696329/): 안면 보철, CAD와 3D 제작 방향 및 장기 근거의 필요성.

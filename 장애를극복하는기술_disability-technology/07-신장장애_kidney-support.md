@@ -20,6 +20,16 @@
 
 기술 성능은 노폐물 제거량만이 아니라 혈압·체액량·전해질 안정성, 혈관 접근부 합병증, 오염·용혈 위험, 치료 중단률, 가정 사용의 부담, 소모품·수리 접근성, 삶의 질과 장기 임상 결과로 평가합니다. 소형화나 연속 운전이 임상적 이득으로 이어지는지를 별도로 검증해야 합니다.
 
+## 투석 보조에서 장기 기능 대체까지
+
+혈액투석기는 혈액 속 요소·칼륨 등 일부 용질과 여분의 수분을 제거해 신장 기능 일부를 대신합니다. 반투과성 막 양쪽으로 혈액과 투석액이 흐르면 농도 차에 따라 작은 용질이 이동하고, 압력 차가 수분 제거량에 영향을 줍니다. 펌프·압력·공기방울·혈액 누출·전도도 센서는 회로 상태를 감시합니다. 그러나 투석은 신장의 조절 기능 전체나 호르몬 분비를 모두 대신하지 않습니다. 장치의 성능이 좋다는 것과 신장 조직이 회복됐다는 것을 구분해야 합니다.
+
+신장 이식은 기증자의 신장을 연결해 여과·체액 조절 기능을 생체 장기로 대체하는 확립된 치료입니다. 수술 후에도 거부반응과 감염 위험을 낮추기 위한 면역억제와 장기 추적이 필요하며, 모든 환자에게 적합하거나 이용 가능한 것은 아닙니다. 투석은 이식 대기와 이식이 어려운 경우에도 생명을 유지하는 핵심 치료입니다.
+
+유전자 편집 돼지 신장은 면역 거부 원인을 줄이도록 돼지 유전자를 바꾼 뒤 사람에게 이식하는 이종이식 연구입니다. 임상시험과 개별 환자 사례가 시작됐지만, 장기 생존·감염 위험·면역억제 전략이 충분히 확인된 표준 치료는 아닙니다. [NYU Langone의 첫 임상시험 안내](https://nyulangone.org/news/first-gene-edited-pig-kidney-transplant-clinical-trial-begins-nyu-langone-health)와 [이종이식 원논문](https://www.nature.com/articles/s41587-025-02912-5)은 연구 단계와 조건을 설명합니다.
+
+UCSF의 이식형 바이오인공신장은 미세가공 막으로 혈액에서 여과액을 만든 뒤, 생체반응기 속 신장세포가 일부 물질을 재흡수·처리하도록 설계합니다. 이는 단순 투석막보다 신장 생리 기능을 더 가깝게 흉내 내려는 공학적 방향입니다. UCSF 연구팀의 공개 FAQ 기준으로 사람 대상 임상시험은 아직 시작되지 않았으며, 소형 동물 모델에서의 작동과 사람에게 장기 이식했을 때의 치료 효과는 다른 근거 수준입니다. [UCSF Kidney Project의 현황과 작동 원리](https://pharm.ucsf.edu/kidney/device/faq)를 확인해 주세요.
+
 ## 실제 제품·연구와 공학 도구
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#kidney-support)에서 이어서 보실 수 있습니다.
@@ -46,7 +56,13 @@ flowchart LR
 
 Hemodialysis machines pump blood through a dialyzer and monitor pressure, temperature, conductivity, air and leaks. Peritoneal dialysis cyclers automate fluid exchange through the peritoneum. Wearable and implantable artificial kidneys remain research or clinical-trial projects; registration or funding does not imply routine availability.
 
+Kidney transplantation replaces organ function for eligible patients. Gene-edited pig kidneys are entering clinical research, while UCSF’s implantable bioartificial kidney remains preclinical and has not begun human trials.
+
 ## 출처
+
+- [NYU Langone, First gene-edited pig kidney transplant clinical trial](https://nyulangone.org/news/first-gene-edited-pig-kidney-transplant-clinical-trial-begins-nyu-langone-health): 유전자 편집 돼지 신장 임상시험의 시작.
+- [Nature Biotechnology, gene-edited pig kidney xenotransplantation study (2025)](https://www.nature.com/articles/s41587-025-02912-5): 이종이식의 실험·임상 근거.
+- [UCSF Kidney Project, Patient FAQ](https://pharm.ucsf.edu/kidney/device/faq): 바이오인공신장의 작동 원리와 임상시험 전 연구 현황.
 
 - [대한민국 법제처, 장애인복지법 시행령 별표 1](https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110201&flSeq=159613615&gubun=): 신장장애의 법적 유형 기준.
 - [미국 NIH/NIDDK, Choosing a Treatment for Kidney Failure](https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/choosing-treatment): 혈액투석·복막투석·이식과 각 치료의 역할·한계.

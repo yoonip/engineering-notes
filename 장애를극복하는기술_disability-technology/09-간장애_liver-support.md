@@ -20,6 +20,14 @@
 
 물질 제거율뿐 아니라 알부민·세포 성분 손실, 혈액 응고와 용혈, 혈압·전해질 변화, 회로 막힘, 치료 시간, 부작용, 간이식까지의 생존과 장기 생존을 확인해야 합니다. 체외 장치의 전임상 성능과 환자에게 의미 있는 임상 결과를 구분하고, 환자군·중증도·동시 치료를 함께 봅니다.
 
+## 간 보조 회로와 간이식은 기능 범위가 다릅니다
+
+알부민 투석 MARS 같은 체외 간 보조 장치는 혈액 속 일부 알부민 결합 독성 물질을 막을 사이로 이동시키고, 알부민 투석액과 흡착 카트리지로 제거를 돕습니다. 혈액 펌프·투석기·알부민 회로·활성탄 및 이온교환 수지·압력과 응고 감시가 연결됩니다. 단백질 합성, 담즙 생성, 호르몬·영양 대사, 면역 조절 등 간의 모든 일을 대신하는 것은 아닙니다. 따라서 혈중 특정 물질이 감소했다는 사실만으로 간세포가 재생되거나 생존율이 높아졌다고 결론 내릴 수 없습니다. [FDA의 MARS 장치 기록](https://www.accessdata.fda.gov/cdrh_docs/pdf11/K113313.pdf)은 기기의 범위와 안전 조건을 보여줍니다.
+
+말기 간질환에서 간이식은 손상된 장기를 공여 간으로 대체하는 확립된 치료가 될 수 있습니다. 수술 전에는 원인 질환과 다른 장기 상태, 감염·암 위험, 수술 가능성을 평가하고, 이후에는 거부반응과 감염을 관리하며 장기 추적을 합니다. 이식은 간의 생물학적 기능을 장기 단위로 대신하지만 모든 환자에게 가능하지 않고, 공여 장기 수에도 제한이 있습니다. 간이식 지침은 수술 대상 선정과 이식 후 관리가 치료 성과에 중요함을 설명합니다. [EASL 간이식 임상진료지침](https://easlcampus.eu/Documents/easl-clinical-practice-guidelines-liver-transplantation)을 참고해 주세요.
+
+간 오가노이드와 줄기세포 유래 간세포는 약물 반응·질환 모델과 조직 재생을 연구하는 데 쓰이지만, 이식 가능한 크기와 혈관·담관·면역 기능을 갖춘 성숙 간 전체를 만드는 기술과는 다릅니다. 현재 환자 치료와 장기 이식 가능성이 입증된 기술처럼 소개하지 않습니다. 바이오인공간이 임상에서 보인 효과도 대조군, 생존, 이식까지의 연결, 환자군과 부작용을 함께 살펴야 합니다.
+
 ## 실제 제품·연구와 공학 도구
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#liver-support)에서 이어서 보실 수 있습니다.
@@ -43,7 +51,12 @@ flowchart LR
 
 Extracorporeal liver support systems use dialysis, filtration or adsorption to remove selected substances from blood. Bioartificial systems add cultured liver cells in an attempt to provide selected metabolic functions. Neither approach reproduces the full liver. Clinical benefit and availability remain limited and should not be inferred from laboratory performance alone.
 
+Liver transplantation can replace broad organ function in selected patients. Albumin dialysis supports removal of some compounds but does not regenerate liver tissue or reproduce the organ’s full metabolic and synthetic roles.
+
 ## 출처
+
+- [미국 FDA, MARS 510(k) device record](https://www.accessdata.fda.gov/cdrh_docs/pdf11/K113313.pdf): 알부민 투석 장치의 분류와 안전 정보.
+- [EASL Clinical Practice Guidelines on Liver Transplantation](https://easlcampus.eu/Documents/easl-clinical-practice-guidelines-liver-transplantation): 간이식 대상 선정과 이식 후 관리.
 
 - [대한민국 법제처, 장애인복지법 시행령 별표 1](https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110201&flSeq=159613615&gubun=): 간장애의 법적 유형 기준.
 - [미국 NIH/NIDDK, Treatment for Cirrhosis](https://www.niddk.nih.gov/health-information/liver-disease/cirrhosis/treatment): 간경변의 원인·합병증 관리와 간이식 고려.

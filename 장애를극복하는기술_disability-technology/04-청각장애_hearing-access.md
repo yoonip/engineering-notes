@@ -18,6 +18,24 @@
 
 연구 방향에는 개인별 청각 프로필에 맞춘 보청기 신호처리, 인공와우의 영상 기반 전극 위치·자극 설정, 실시간 자막과 다중 감각 경보가 있습니다. 수어 인식·생성 모델은 수어의 문법과 지역·개인 차이를 보존하고, 수어 사용자의 참여를 바탕으로 평가해야 합니다. 음성 인식 결과를 수어와 동등한 대화로 간주하거나 보청기·인공와우가 모두에게 적합하다고 단정하지 않습니다.
 
+## 손상 원인을 겨냥하는 유전자 치료와 인공와우
+
+청각을 회복하려는 치료도 손상된 부위와 원인에 따라 달라집니다. 2026년 미국 FDA는 양쪽 OTOF 유전자 변이로 심도 이상의 감각신경성 난청이 생긴 소아·성인에게 Otarmeni(lunsotogene parvec-cwha)를 승인했습니다. OTOF 유전자는 내이 유모세포가 청신경에 신호를 전달할 때 필요한 오토페린 단백질을 만드는 데 관여합니다. 치료는 두 개의 AAV 벡터가 기능성 유전자 정보를 내이 유모세포에 전달해 오토페린 생산과 신호 전달을 돕습니다. 이는 특정 유전자형·내이 상태에 해당하는 치료이며, 소음성 난청·노화성 난청·청신경 손상 등 모든 난청에 적용되는 치료가 아닙니다. FDA가 공개한 근거는 단일군 임상시험의 소아 24명 중 효과 평가가 가능했던 20명에서 80%가 청력 개선을 보인 결과입니다. 장기 지속성, 말·언어 발달 결과도 계속 확인해야 합니다. [FDA 승인 자료](https://www.fda.gov/news-events/press-announcements/fda-approves-first-ever-gene-therapy-treatment-genetic-hearing-loss-under-national-priority-voucher)에서 대상과 근거를 확인할 수 있습니다.
+
+```mermaid
+flowchart LR
+    A[OTOF 양쪽 변이] --> B[오토페린 부족]
+    B --> C[내이 유모세포에서 청신경으로 전달 저하]
+    D[기능성 OTOF 유전자 정보] --> E[내이 유모세포]
+    E --> F[오토페린 생성 지원]
+    F --> G[청각 신호 전달 개선 가능]
+    C -. 유전자형과 살아 있는 세포가 맞는 경우에 한정 .-> G
+```
+
+그림 3. OTOF 관련 난청의 원인과 승인된 유전자 치료의 작동 경로를 단순화했습니다. 모든 난청이 유전자 치료로 회복된다는 뜻은 아닙니다.
+
+인공와우는 유전자 치료와 다른 방식으로 청각을 대체합니다. 외부 음성처리기가 소리를 주파수·시간 정보로 나누고, 코일과 내부 수신기가 정보를 전달하면 달팽이관 전극이 청신경을 전기 자극합니다. 손상된 유모세포의 기능 일부를 우회하지만, 자연 청력이나 정상적인 소리 해석을 그대로 되돌리지는 않습니다. 기기 선택, 수술 후 맵핑과 청각 재활에 따라 말소리 이해 결과가 달라집니다. OTOF 유전자 치료가 가능한 환자에게 인공와우와 치료 순서를 어떻게 정할지는 청력검사·유전자검사·해부학적 조건을 고려한 전문 평가가 필요합니다. [NIDCD 인공와우 설명](https://www.nidcd.nih.gov/health/cochlear-implants)은 우회 자극과 자연 청력의 차이를 설명합니다.
+
 ## 실제 제품·연구와 공학 도구
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#hearing-access)에서 이어서 보실 수 있습니다.
@@ -42,8 +60,11 @@ flowchart LR
 
 Hearing access combines hearing aids or cochlear implants with captions, remote microphones, induction loops and visual or vibration alerts. A cochlear implant processes sound and electrically stimulates the auditory nerve; it does not restore normal hearing. Fitting, communication preferences and real-world noise conditions are part of the system.
 
+In 2026, the FDA approved an AAV gene therapy for severe OTOF-related hearing loss in a narrowly defined group. It delivers functional OTOF information to inner-ear hair cells; it is not a treatment for all forms of deafness.
+
 ## 출처
 
+- [미국 FDA, Otarmeni approval announcement (2026-04-23)](https://www.fda.gov/news-events/press-announcements/fda-approves-first-ever-gene-therapy-treatment-genetic-hearing-loss-under-national-priority-voucher): OTOF 유전자형, 작동 기전, 승인 근거와 추적 조건.
 - [대한민국 법제처, 장애인복지법 시행령 별표 1](https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110201&flSeq=159613615&gubun=): 청각장애의 법적 유형 기준.
 - [미국 NIH/NIDCD, Cochlear Implants](https://www.nidcd.nih.gov/health/cochlear-implants): 구성 부품과 신호 처리 원리, 자연 청력과의 차이.
 - [미국 NIH/NIDCD, Assistive Devices for Hearing, Voice, Speech, or Language Disorders](https://www.nidcd.nih.gov/sites/default/files/Documents/publications/AssistiveDevices-508.pdf): 원격 마이크·유도루프·보조기기.

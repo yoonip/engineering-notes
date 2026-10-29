@@ -20,6 +20,14 @@
 
 연구·개발에서는 심장 신호에 반응해 자극을 조정하는 적응형 기기, 배터리 수명과 통신 안정성, 여러 장치의 동기화, 원격 감시의 보안과 경보 정확도를 다룹니다. 리드리스 심박조율기도 이미 일부 환자군에서 사용되는 기술이므로 미래 제품으로만 분류하지 않습니다. 장치의 사용 범위는 국가의 허가와 질환별 적응증을 확인해야 합니다. 원격 모니터링이나 심박 데이터 분석이 심부전을 치료하거나 갑작스러운 악화를 항상 미리 알린다고 말할 수는 없습니다.
 
+## 전기 신호 교정과 손상된 펌프 기능 대체
+
+심장 문제도 전기 전도 장애와 심장근육의 펌프 기능 저하를 구분해야 합니다. 심박조율기는 느린 심박이나 전도 문제에서 전기 자극으로 박동 시점을 조절하고, 심장 재동기화 치료(CRT)는 양쪽 심실의 수축 시점을 맞춰 일부 심부전 환자의 박출 효율을 높입니다. 두 장치는 심장 근육을 새로 만들지는 않습니다. 심근경색 뒤 약물·재관류·재활로 심장 기능이 회복될 수 있는 정도는 손상 범위와 원인에 달려 있습니다. [미국 NHLBI의 심부전 치료 안내](https://www.nhlbi.nih.gov/health/heart-failure/treatment)는 CRT·심실보조장치·이식의 역할을 구분합니다.
+
+좌심실보조장치(VAD)는 혈액을 심실에서 받아 대동맥으로 보내는 회전 펌프와 캐뉼라, 전원·제어기로 구성되어 약해진 펌프를 보조합니다. 이는 심장 이식 대기 중의 가교 치료나 일부 환자의 장기 치료로 사용할 수 있지만, 감염·출혈·혈전·뇌졸중·기계 고장과 지속적인 전원 관리가 필요합니다. 심장이식은 손상된 심장을 기증 장기로 대체하는 치료지만, 기증 장기 부족·거부반응·평생 면역억제라는 제약이 있습니다. 따라서 보조 펌프를 “심장 회복”으로, 이식을 “원래 심장 재생”으로 설명해서는 안 됩니다.
+
+재생의학은 심근세포와 조직을 보충해 손상된 심근을 복원하려는 방향으로 연구됩니다. 다만 세포가 심장 안에서 생존하고 혈관과 연결되며, 주변 심근과 전기적으로 동기화되어 부정맥을 만들지 않아야 합니다. 전임상·초기 임상에서 세포가 발견되거나 영상 지표가 바뀌었다고 해서 장기 생존이나 심장 기능의 임상적 회복이 확립된 것은 아닙니다. 현재의 기기 기술은 특정 전기·펌프 기능을 교정 또는 대체하고, 원인 치료와 약물·재활·이식 여부는 별도로 판단합니다.
+
 ## 실제 제품·연구와 공학 도구
 
 실제 제품의 작동 흐름, 제조사가 공개한 사용 범위, 관련 연구와 개발 도구는 [장애 보조기기와 재활 연구의 실제 제품·개발 도구](실제기기와연구개발도구_engineering-cases-and-tools.md#cardiac-support)에서 이어서 보실 수 있습니다.
@@ -40,6 +48,8 @@ flowchart LR
 ## English
 
 Pacemakers sense cardiac activity and deliver pacing when needed. Implantable cardioverter-defibrillators detect certain dangerous rhythms, while cardiac resynchronization therapy coordinates ventricular timing in selected patients. Ventricular assist devices use a pump, controller and power source to support circulation. Each device has specific indications, risks and maintenance needs.
+
+These devices correct or replace selected electrical and pumping functions rather than rebuilding heart muscle. Heart transplantation replaces the damaged organ for eligible patients; regenerative cell therapies remain under investigation.
 
 ## 출처
 
