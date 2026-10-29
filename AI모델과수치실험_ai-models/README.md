@@ -23,6 +23,7 @@
 
 ## 관련 학습 자료
 
+- [AI 모델 동향과 분석](../AI모델동향_ai-model-updates/README.md)은 새 모델의 출시 변화·API 제공·평가·이용 조건을 다룹니다. 이 폴더의 특정 배포물 설명과 연결해 읽으실 수 있습니다.
 - [모델의 구성과 실행 방식](../전자컴퓨터공학_ece/26-AI모델-API_open-model-lab/README.md)은 tokenizer·가중치·runtime의 역할을 설명합니다.
 - [학습·미세조정·경량화](../전자컴퓨터공학_ece/45-AI학습최적화_ai-training-optimization/README.md)는 가중치와 구조를 바꾸는 과정을 설명합니다.
 - [응용·RAG·에이전트·평가](../전자컴퓨터공학_ece/46-AI응용에이전트평가_ai-agents-evaluation/README.md)는 모델을 프로그램에 연결하는 과정을 다룹니다.
