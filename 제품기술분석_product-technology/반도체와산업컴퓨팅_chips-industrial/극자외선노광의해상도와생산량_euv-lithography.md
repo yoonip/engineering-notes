@@ -2,17 +2,36 @@
 
 2026년 10월 20일을 기준으로 NXE:3800E와 EXE:5200B의 공개 사양·운영 발표를 살펴봅니다. 노광 장비를 직접 운전한 리뷰가 아니라 ASML 자료와 공동 연구기관 imec의 실험 발표를 대조한 문헌 분석입니다. 공개 연구 패턴의 성공과 고객 공장의 장기 양산 수율은 별개의 증거입니다.
 
+![ASML TWINSCAN EXE:5200B EUV 노광 장비의 공식 제품 이미지](https://edge.sitecorecloud.io/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/images/products/euv-lithography-systems/twinscan-exe5200b.png?h=608&iar=0&w=1080)
+
+그림 1. ASML이 공개한 EXE:5200B 제품 이미지입니다. 장비의 외형과 대략적인 규모를 보여 주는 공식 이미지이며 내부 광학계 사진이나 고객 현장 설치 사례는 아닙니다. [ASML EXE:5200B 제품 안내](https://www.asml.com/en/products/euv-lithography-systems/twinscan-exe-5200b)
+
 ## 노광기는 무엇을 하나요
 
 노광은 빛에 반응하는 감광막에 회로의 모양을 전달하는 과정입니다. 그 뒤 현상·식각·증착 등이 이어져 실제 구조가 만들어집니다. 칩의 모든 층을 한 번에 인쇄하는 장치가 아니며, 층마다 서로 다른 노광·재료·공정 조건을 씁니다.
 
 EUV의 파장은 약 13.5nm입니다. 이 빛은 공기와 많은 물질에 흡수되므로 진공과 반사 광학계를 사용합니다. 해상도는 두 구조를 구별하여 인쇄하는 능력이고, 오버레이는 여러 번 만든 층의 상대 정렬 오차입니다. 얇은 선 하나가 잘 나왔다고 연결 구멍과 다른 층까지 모두 정렬되었다는 뜻은 아닙니다.
 
+![ASML이 공개한 NXE:3400 EUV 장비 내부 사진](https://edge.sitecorecloud.io/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/images/technology/43679-inside-nxe3400.jpg?h=1080&iar=0&w=1920)
+
+그림 2. 이전 세대 NXE:3400 장비 내부를 보여 주는 ASML 공식 사진입니다. 현 세대 EXE:5200B의 내부 구조로 오해하지 않도록 제품 세대를 구분했습니다. 진공 안에서 거울과 웨이퍼 스테이지가 작동해야 하는 장비의 공간적 복잡성을 살펴보실 수 있습니다. [ASML의 EUV 제품 설명](https://www.asml.com/en/products/euv-lithography-systems)
+
 NA는 수치 개구수로 광학계가 받아들이는 빛의 각도 범위와 관련됩니다. 더 큰 NA는 미세한 공간 정보를 전달할 여지를 늘리지만 초점 여유와 광학·공정 설계도 함께 바꿉니다. ‘High NA’는 단순히 광원의 출력만 높인 제품명이 아닙니다.
 
 ## 빛을 만들고 전달하는 것부터 어려운 이유
 
 EUV 광원은 강한 레이저로 작은 주석 방울을 플라스마로 만들고 거기서 나오는 빛을 모읍니다. 플라스마는 원자의 전자가 일부 떨어져 나온 상태입니다. 레이저의 빛을 그대로 감광막에 비추는 과정과 다릅니다. [ASML의 광원 설명](https://www.asml.com/en/technology/lithography-principles/light-and-lasers), [TRUMPF의 직접 개발 설명](https://www.trumpf.com/en_GB/solutions/applications/euv-lithography/euv-drive-laser/)
+
+```mermaid
+flowchart LR
+    A[주석 방울] --> B[CO₂ 레이저로 플라스마 생성]
+    B --> C[집광 거울이 EUV를 모읍니다]
+    C --> D[진공 중 반사 거울·마스크]
+    D --> E[광학계가 패턴을 축소해 웨이퍼에 투영]
+    E --> F[감광막에 패턴 형성]
+```
+
+그림 3. ASML이 설명하는 EUV 노광의 빛 경로를 요약한 개념도입니다. 거울 수·배치와 장비 내부의 정확한 형상을 그린 설계도가 아닙니다. [ASML의 EUV 작동 원리](https://www.asml.com/en/products/euv-lithography-systems)
 
 빛을 얻은 뒤에도 정밀한 다층 반사 거울과 진공, 오염 억제·정렬이 필요합니다. 다층막은 여러 경계의 반사를 원하는 파장에서 잘 합치도록 만드는 구조입니다. 설명용으로 각 거울이 빛의 70%를 다음으로 보내고 그런 반사가 여섯 번 필요하다면 남는 비율은 0.7⁶≈11.76%입니다. 실제 EXE 광학계의 전체 효율을 추정한 값이 아니라 작은 손실도 여러 단계에서 누적된다는 계산입니다. [ASML의 렌즈·거울 설명](https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors)
 

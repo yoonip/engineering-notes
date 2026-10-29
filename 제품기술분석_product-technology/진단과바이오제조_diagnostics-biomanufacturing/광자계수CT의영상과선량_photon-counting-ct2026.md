@@ -4,6 +4,14 @@
 
 2026년 10월 20일 기준으로 Siemens NAEOTOM Alpha 계열과 GE Photonova Spectra의 공개 자료를 살펴봅니다. 허가·판매 자료, 외부 병원 연구진의 팬텀 계측을 구분합니다. 기술과 근거를 설명하는 글이며 개인의 검사 선택이나 방사선량을 정하는 진료 안내는 아닙니다.
 
+![GE HealthCare Photonova Spectra 광자 계수 CT의 제품 렌더링](https://s7d9.scene7.com/is/image/gehealthcare/gehc-photonova-spectra-rendering-on-white-left?$desktop-1920x650$&fmt=avif)
+
+그림 1. GE HealthCare가 공개한 Photonova Spectra 장비 렌더링입니다. 제품의 외형과 환자 테이블·검출기 배치를 보여 주며, 내부 검출기 단면이나 실제 촬영 성능을 나타내지는 않습니다. [GE HealthCare 제품 안내](https://www.gehealthcare.com/en-us/products/computed-tomography/photonova-spectra)
+
+![Photonova Spectra로 촬영한 복부 췌장관 요오드 색상 지도의 예](https://s7d9.scene7.com/is/image/gehealthcare/product-media-carousel-abdomen-pancreas-duct-iodine-color-desktop-4?fmt=webp)
+
+그림 2. 같은 제조사 페이지에 실린 요오드 색상 지도의 예입니다. 색상은 CT 신호를 처리해 만든 영상 표현이며, 일반 사진이나 독립적인 진단 정확도 시험은 아닙니다. [GE HealthCare의 영상 예시와 설명](https://www.gehealthcare.com/en-us/products/computed-tomography/photonova-spectra)
+
 ## 시제품 단계와 허가된 제품을 나누기
 
 NAEOTOM Alpha.Peak·Pro·Prime은 FDA의 K243523·K251061 문서에서 확인할 수 있습니다. GE Photonova Spectra·Select는 K253520에서 2026년 3월 20일 clearance를 받았습니다. 2025년 RSNA 발표 당시 pending이었다는 자료만 보고 2026년에도 미허가라고 쓰면 시점이 틀립니다. [Siemens 2025년 허가 요약](https://www.accessdata.fda.gov/cdrh_docs/pdf24/K243523.pdf), [추가 FDA 기록](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?id=K251061), [GE FDA 기록](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K253520)

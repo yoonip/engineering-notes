@@ -2,6 +2,18 @@
 
 기준일: 2026년 10월 20일. 모델 카드, 배포 기록, 외부 평가를 읽은 문헌 분석입니다. Argo-Bench의 판본과 점수는 10월 21일에 다시 확인했습니다. Gemini 앱이나 API로 새 성능 시험을 실행하지 않았습니다.
 
+
+~~~mermaid
+flowchart LR
+    A[텍스트·이미지·음성 입력] --> B[앱·API 요청]
+    B --> C[지원 모델에 맞는 추론]
+    C <--> D[선택된 도구·검색·코드 실행]
+    C --> E[응답 생성]
+    E --> F[앱·API로 전달]
+~~~
+
+그림 1. 멀티모달 AI 제품에서 입력과 모델 추론, 선택적 도구 사용, 응답이 연결되는 개념도입니다. Google의 비공개 모델 아키텍처나 내부 안전 처리 단계를 나타내지 않습니다.
+
 ## 모델과 앱의 배포 상태
 
 [공식 API 변경 기록](https://ai.google.dev/gemini-api/docs/changelog)은 Gemini 4 Argon의 일반 제공일을 2026년 10월 13일로 기록합니다. 앞선 제한 제공과 같은 상태로 취급하지 않습니다. [모델 카드](https://deepmind.google/models/model-cards/gemini-4-argon/)는 Gemini 앱·API·AI Studio·기업 서비스·Antigravity 등 여러 배포 경로를 제시합니다. API 제공이 곧 모든 앱 계정에서 같은 이용량으로 선택할 수 있다는 뜻은 아닙니다.

@@ -4,6 +4,24 @@
 
 기준일은 2026년 10월 20일입니다. GE Vernova Hitachi의 BWRX-300과 캐나다 Darlington 사업을 중심으로, 중국 HTR-PM의 상업운전 사례 및 ITER 핵융합 실험의 목적을 비교합니다. 제조사 설명을 규제기관의 허가 상태·공공 기술 검토·사업자 현장 보고와 대조한 문헌 분석입니다.
 
+![GE Vernova Hitachi가 공개한 BWRX-300 원자로 건물 렌더링](https://www.gevernova.com/news/sites/default/files/2026-08/ge-vernova-hitachi-nuclear-energy-bwrx-300-small-modular-reactor.jpg)
+
+그림 1. BWRX-300 원자로 건물의 제조사 렌더링입니다. 실제 완공 시설의 사진은 아니며, 건물 외형과 설계 구상을 보여 줍니다. 내부 구조와 안전계통은 [GE Vernova Hitachi의 설계 설명서 2장 그림 2-1·2-2](https://www.gevernova.com/content/dam/gevernova-nuclear/global/en_us/documents/carbon-free-power/005N9751-BWRX-300-General-Description.pdf)에서 확인할 수 있습니다.
+
+```mermaid
+flowchart LR
+    A[원자로 노심에서 물 가열·비등] --> B[증기 분리]
+    B --> C[증기 터빈]
+    C --> D[발전기]
+    D --> E[변압기와 전력망]
+    C --> F[복수기]
+    F --> G[급수 펌프와 급수]
+    G --> A
+    A -. 붕괴열 제거 계통 .-> H[열 저장수와 최종 방열원]
+```
+
+그림 2. 비등수형 원자로의 직접 증기 사이클을 단순화한 설명도입니다. BWRX-300 설계 전체의 배관도나 안전 분석 도면은 아니며, 정상 발전 경로와 정지 뒤 잔열 제거 경로를 구분해 보여 줍니다.
+
 ## 핵분열에서 콘센트까지의 흐름
 
 핵분열은 무거운 원자핵이 나뉘며 에너지와 중성자를 내놓는 반응입니다. 연료에서 나온 열을 냉각재가 받아 증기를 만들고, 증기가 터빈을 돌리며, 발전기가 전기를 만듭니다. 터빈을 지난 증기는 응축기에서 열을 내놓고 물로 돌아갑니다. 원자로의 열출력 MWth와 송전 가능한 전기출력 MWe가 다른 이유입니다. 펌프와 보조 설비가 쓰는 전기를 뺀 순출력인지도 확인합니다.

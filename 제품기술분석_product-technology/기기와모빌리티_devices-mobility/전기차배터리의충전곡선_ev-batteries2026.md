@@ -2,6 +2,24 @@
 
 2026년 10월 20일 기준으로 BYD Blade Battery 2.0·FLASH Charging, CATL 3세대 Shenxing 발표와 자동차 독립 시험을 함께 읽습니다. 충전 시연, 셀 연구, 판매 차량의 시험은 서로 다른 근거입니다. 이 글에서 차량이나 배터리를 직접 충방전하지 않았습니다.
 
+![BYD가 공개한 배터리 충전 성능 자료](https://prod.byd.com/material/byd-site/mea/news-list/byd-unveils-2nd-generation-blade-battery/Charging%20performance.jpg)
+
+그림 1. BYD가 2세대 Blade Battery 발표에서 공개한 충전 성능 자료입니다. 제조사의 발표 자료이므로 시험 조건과 독립 차량 시험은 본문의 비교 표에서 따로 확인합니다. [BYD 공식 발표와 이미지 출처](https://prod.byd.com/mea/news-list/BYD%20Unveils%202nd%20Generation%20Blade%20Battery%20and%20FLASH%20Charging%20Technology)
+
+```mermaid
+flowchart LR
+    A[전력망] --> B[충전소 전력변환기]
+    C[현장 에너지저장장치] --> B
+    B --> D[차량 충전구]
+    D --> E[배터리 관리 시스템]
+    E --> F[배터리 셀]
+    E --> G[전압·전류·온도 감시]
+    G --> H[충전 전류 조절]
+    H --> E
+```
+
+그림 2. 전기차 급속 충전의 일반적인 에너지·제어 흐름입니다. 특정 BYD 차량이나 충전기의 내부 회로를 나타내지 않습니다. 충전기는 전력을 변환하고, 차량의 배터리 관리 시스템은 셀 상태와 온도를 확인해 충전 허용 전류를 조절합니다.
+
 ## 2026년 발표는 어디까지 확인되나요?
 
 BYD는 3월 5일 Blade Battery 2.0을 발표하며 상온 10→70% 5분, 10→97% 9분과 −30°C의 20→97% 12분을 제시했습니다. CATL은 4월 21일 Shenxing 3세대를 공개하며 10→80% 3분 44초와 10→98% 6분 27초를 제시했습니다. 시작·종료 충전량이 다르므로 제목의 분 수만 나란히 놓고 동일 시험의 승자를 정할 수 없습니다. [BYD 공식 발표](https://prod.byd.com/mea/news-list/BYD%20Unveils%202nd%20Generation%20Blade%20Battery%20and%20FLASH%20Charging%20Technology), [CATL 공식 발표](https://www.catl.com/en/news/6811.html)

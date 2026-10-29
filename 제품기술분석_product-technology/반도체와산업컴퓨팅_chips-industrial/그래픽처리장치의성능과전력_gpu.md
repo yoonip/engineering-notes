@@ -2,6 +2,24 @@
 
 RTX 5090 Founders Edition을 중심으로 NVIDIA 공개 사양과 TechSpot의 2025년 1월 원측정을 읽습니다. 자료 검토일은 2026년 10월 20일입니다. 출시 당시 시험을 현재 드라이버의 성능으로 바꾸어 적지 않으며, 이 글에서 그래픽카드를 직접 시험하지 않았습니다.
 
+
+![NVIDIA GeForce RTX 5090 그래픽 카드](https://iprsoftwaremedia.com/219/files/20250/202501271934/geforce-rtx-5090.jpg?download=true)
+
+그림 1. NVIDIA가 공개한 RTX 5090 Founders Edition 제품 이미지입니다. 외관을 보여 주는 사진이며 GPU 다이 내부 배치나 성능 시험 결과는 아닙니다. [NVIDIA 뉴스룸 미디어 자료](https://nvidianews.nvidia.com/multimedia/gaming-creating/gaming-geforce-graphics-cards) · [제품 사양](https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/)
+
+~~~mermaid
+flowchart LR
+    A[CPU·응용 프로그램] --> B[그래픽 작업·커널 준비]
+    B --> C[GPU 명령 실행]
+    C --> D[연산 유닛]
+    C <--> E[캐시·VRAM]
+    D --> E
+    E --> F[영상·계산 결과]
+    G[전력·온도 제한] --> C
+~~~
+
+그림 2. CPU가 작업을 준비하고 GPU 연산과 메모리가 함께 결과를 만드는 일반 흐름입니다. RTX 5090의 실제 die 배치나 회로도를 나타내지 않습니다.
+
 ## GPU가 잘하는 작업과 어려워하는 작업
 
 GPU는 많은 자료에 비슷한 계산을 동시에 적용할 때 유리합니다. CPU가 작업과 명령을 준비하고, GPU가 자료를 읽고 계산하고, 결과를 기록합니다. 연산기가 많아도 준비 작업·메모리·동기화 중 하나가 느리면 일부 연산기가 기다릴 수 있습니다.

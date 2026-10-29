@@ -2,6 +2,24 @@
 
 2026년 10월 20일을 기준으로 Samsung 9100 PRO와 WD_BLACK SN8100의 공개 자료를 검토합니다. 구체적인 독립 측정은 Tom's Hardware의 2025년 9월 9100 PRO 8TB 시험을 기준으로 읽으며 다른 용량에 그대로 적용하지 않습니다. 이 글에서는 SSD를 직접 시험하거나 데이터를 기록하지 않았습니다.
 
+
+![Samsung 9100 PRO M.2 NVMe SSD](https://img.us.news.samsung.com/us/wp-content/uploads/2025/02/24194953/samsung-9100-pro-ssd.png)
+
+그림 1. Samsung이 공개한 9100 PRO SSD 제품 이미지입니다. 제품 외형을 보여 주며, 컨트롤러나 NAND의 실제 내부 배치를 나타내지는 않습니다. [Samsung 공식 발표](https://news.samsung.com/us/samsung-announces-9100-pro-series-ssds-with-breakthrough-pcie-5-0-performance)
+
+~~~mermaid
+flowchart LR
+    A[운영체제 논리 주소] --> B[NVMe 명령]
+    B --> C[SSD 컨트롤러]
+    C --> D[FTL 주소 변환]
+    C --> E[ECC·오류 처리]
+    D --> F[NAND 페이지 기록]
+    F --> G[유효 데이터 이동·블록 정리]
+    G --> D
+~~~
+
+그림 2. SSD 컨트롤러가 논리 주소를 NAND 물리 위치로 변환하고 오류·정리를 관리하는 일반 흐름입니다. 특정 SSD 펌웨어의 내부 구현을 그린 것은 아닙니다.
+
 ## SSD 안에서 파일 쓰기는 어떻게 진행되나요
 
 운영체제는 논리 주소로 데이터를 보내지만 NAND는 제자리 덮어쓰기가 자유로운 매체가 아닙니다. 컨트롤러는 새 위치에 데이터를 기록하고 논리 주소와 실제 위치의 대응을 바꿉니다. 이 대응을 관리하는 FTL, 오류를 다루는 ECC, 유효 자료를 옮기고 블록을 지우는 가비지 컬렉션이 함께 작동합니다.

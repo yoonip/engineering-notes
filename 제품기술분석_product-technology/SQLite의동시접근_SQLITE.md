@@ -2,6 +2,21 @@
 
 SQLite는 프로그램 안에서 사용하는 관계형 데이터베이스 엔진입니다. 별도 DB 서버 없이 파일을 사용할 수 있어 로컬 분석 도구와 장치 기록에 적합한 경우가 있습니다. 여기서는 제품의 동시 접근 동작을 두 연결로 확인합니다. Python 3.12.14에 연결된 SQLite 3.53.1을 2026-10-19에 실행했습니다.
 
+
+~~~mermaid
+sequenceDiagram
+    participant R as 읽기 연결
+    participant W as 쓰기 연결
+    participant L as WAL 로그
+    participant C as 체크포인트
+    R->>L: 읽기 스냅샷
+    W->>L: 변경 기록
+    L-->>R: 기존 시점의 데이터 제공
+    L->>C: 체크포인트 때 DB 파일로 반영
+~~~
+
+그림 1. WAL 모드에서 읽기와 단일 쓰기, 체크포인트가 이어지는 개념도입니다. 실제 실행 순서는 연결의 트랜잭션 시점과 설정에 따라 달라집니다.
+
 ## 비교할 동작
 
 공식 [WAL 안내](https://www.sqlite.org/wal.html#concurrency)는 읽기와 쓰기가 겹쳐 진행될 수 있다고 설명합니다. 동시에 진행할 수 있는 쓰기 트랜잭션은 하나입니다. WAL은 수정 내용을 로그에 추가하므로 독자는 자신이 읽기 시작한 시점의 내용을 계속 볼 수 있습니다. [격리 설명](https://www.sqlite.org/isolation.html)은 이러한 snapshot과 새 트랜잭션의 차이를 설명합니다.

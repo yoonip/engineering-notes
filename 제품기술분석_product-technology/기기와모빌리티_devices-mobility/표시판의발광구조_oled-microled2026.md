@@ -2,6 +2,22 @@
 
 2026년 10월 20일 기준으로 LG G6 OLED, 삼성의 Micro RGB TV, 자발광 microLED를 구분합니다. 공식 패널 설명과 판매 자료, RTINGS의 실제 측정을 비교하는 분석이며 이 글에서 TV를 직접 계측하지는 않았습니다.
 
+
+~~~mermaid
+flowchart TB
+    subgraph O[OLED]
+        O1[화소별 유기 발광층] --> O2[화소 자체 발광]
+    end
+    subgraph M[자발광 MicroLED]
+        M1[화소별 무기 LED] --> M2[화소 자체 발광]
+    end
+    subgraph R[Micro RGB LCD]
+        R1[RGB 미니 LED 백라이트] --> R2[액정층·컬러 필터] --> R3[화면 빛]
+    end
+~~~
+
+그림 1. OLED·자발광 MicroLED·RGB 미니 LED 백라이트 LCD의 빛 생성 위치를 비교했습니다. 특정 TV의 층 두께·화소 배치나 실제 패널 단면은 아닙니다.
+
 ## 이름보다 빛이 나오는 위치를 확인합니다
 
 OLED는 각 화소의 유기 발광층이 빛을 냅니다. 자발광 microLED는 매우 작은 무기 LED가 화면의 빛을 직접 만듭니다. 반면 삼성 Micro RGB는 작은 RGB LED를 LCD 뒤의 광원으로 사용하는 제품입니다. 이름에 Micro가 들어가도 액정 층을 통과하는 백라이트 방식이라는 차이가 남습니다. [LG Display의 Tandem WOLED](https://www.lgdisplay.com/eng/technology/tandem-woled), [삼성의 Micro RGB 구조 설명](https://news.samsung.com/us/samsung-launches-world-first-micro-rgb-tv-setting-new-standard-premium-tv-technology/)

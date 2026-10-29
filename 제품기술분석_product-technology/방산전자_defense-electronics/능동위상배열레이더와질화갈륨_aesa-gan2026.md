@@ -2,6 +2,10 @@
 
 확인일은 2026-10-20입니다. KF-21 탑재 AESA와 지상 감시 레이더를 사례로 전자식 빔 조향과 고주파 반도체를 설명합니다. 공개 원리·시험·인도 자료에 관한 분석이며 실제 탐지 성능이나 비공개 구성품을 측정한 자료는 아닙니다.
 
+![한화시스템 KF-21 AESA 레이더의 공식 형상 이미지](https://www.hanwhasystems.com/resources/img/pc/business/defense/isr/radar/tab01-aesa-img.jpg)
+
+그림 1. 한화시스템이 공개한 KF-21 AESA 레이더의 형상 이미지입니다. 탑재 장치의 외형을 보여 주며 송수신 모듈의 실제 배치·회로도나 비공개 안테나 설계 치수를 제공하지는 않습니다. [한화시스템 AESA 레이더 소개](https://www.hanwhasystems.com/kr/business/defense/isr/radar01-aesa.do)
+
 ## 안테나를 돌리는 것과 신호를 합치는 것
 
 레이더는 전자기파를 보내고 돌아온 신호를 분석합니다. 신호의 도착 시간·주파수 변화·여러 수신 채널 사이의 차이를 이용해 주변 상황을 추정합니다. 반사 신호가 약하고 배경·잡음·방향·물체의 상태가 달라지므로 ‘최대 거리’ 하나로 모든 상황의 성능을 설명할 수 없습니다.
@@ -9,6 +13,17 @@
 위상 배열은 여러 소자의 신호를 적절히 합쳐 방향성을 만듭니다. 위상은 파동 주기 안에서 어느 위치에 있는지를 나타냅니다. 같은 방향에서 도착한 신호라도 소자의 위치가 다르면 도착 시각이 조금 다르므로 이를 맞추는 처리가 필요합니다. [Analog Devices의 배열 원리](https://www.analog.com/en/resources/analog-dialogue/articles/phased-array-antenna-patterns-part1.html)
 
 능동 전자주사 배열 AESA에서는 여러 송수신 모듈이 증폭과 신호 제어를 나누어 맡습니다. 수동 배열 PESA는 중앙 신호원과 분배 구조를 이용합니다. 이름의 능동·수동은 레이더가 켜져 있는지, 주파수를 전혀 바꿀 수 있는지를 뜻하지 않습니다. PESA도 전자식 조향을 할 수 있으므로 ‘기계식 대 AESA’와 ‘PESA 대 AESA’는 다른 구분입니다.
+
+```mermaid
+flowchart LR
+    A[파형 생성·송신 기준] --> B[배열의 송수신 모듈]
+    B --> C[소자별 위상·진폭을 조절해 빔 조향]
+    C --> D[대상에서 반사된 신호 수신]
+    D --> E[증폭·변환·디지털 신호 처리]
+    E --> F[탐지·위치·속도 추정]
+```
+
+그림 2. AESA 레이더의 기본 신호 흐름을 단순화한 개념도입니다. 실제 장비의 회로 구성이나 특정 제품의 처리 순서를 재현한 그림은 아닙니다. 위상·진폭을 조절해 빔을 움직이는 부분과 돌아온 신호를 수신·해석하는 부분을 나누어 읽으실 수 있습니다. [한화시스템의 AESA 설명](https://www.hanwhasystems.com/kr/business/defense/isr/radar01-aesa.do), [Analog Devices의 위상 배열 원리](https://www.analog.com/en/resources/analog-dialogue/articles/phased-array-antenna-patterns-part1.html)
 
 ## 모듈이 많으면 전 방향을 동시에 완벽하게 보나요?
 

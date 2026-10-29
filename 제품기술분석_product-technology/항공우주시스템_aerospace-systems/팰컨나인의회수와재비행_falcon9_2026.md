@@ -2,6 +2,10 @@
 
 확인일은 2026-10-20입니다. Falcon 9의 1단 회수·재비행과 그에 필요한 추진·제어·정비를 살펴봅니다. 이 글은 공개 문서와 기술 해설을 대조한 분석 글이며 발사체를 직접 시험한 기록은 아닙니다.
 
+![Falcon 9 1단이 해상 무인 선박에 착륙하는 NASA 공개 사진](https://www.nasa.gov/wp-content/uploads/2021/12/crs-24-landing.jpg)
+
+그림 1. 2021년 CRS-24 임무에서 Falcon 9 1단이 무인 선박에 착륙한 NASA 사진입니다. 사진에서 발사체 전체가 아니라 1단 부스터만 회수되는 점과 바다 위 착륙 지점을 확인할 수 있습니다. [NASA 임무 기록과 사진 설명](https://www.nasa.gov/blogs/commercialresupply/2021/12/21/successful-landing-for-falcon-9-first-stage/)
+
 ## 무엇을 재사용하나요?
 
 [SpaceX의 현재 차량 설명](https://www.spacex.com/vehicles/falcon-9)은 높이 70 m, 지름 3.7 m인 2단 발사체와 1단의 Merlin 엔진 9개를 설명합니다. 연료는 RP-1이라는 정제 등유, 산화제는 액체산소입니다. 산화제는 연료와 반응하는 물질이며 우주에서는 필요한 산소도 함께 가져갑니다.

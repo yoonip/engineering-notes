@@ -2,6 +2,10 @@
 
 기준일은 2026년 10월 20일입니다. Galaxy Z Fold8의 실제 시험 자료와 iPhone Duo의 공개 사양을 함께 읽되, 일반 판매 중인 기기의 시험과 출시 전 발표를 구분합니다. 이 글은 직접 제품을 사용한 후기가 아니라 공식 설계 설명·연구 논문·시험자가 공개한 측정을 비교한 분석입니다.
 
+![Galaxy Z Flip8, Galaxy Z Fold8, Galaxy Z Fold8 Ultra의 제품 이미지](https://img.global.news.samsung.com/global/wp-content/uploads/2026/07/22220302/Samsung-Mobile-Galaxy-Unpacked-July-2026-Galaxy-Z-Fold8-Ultra-Galaxy-Z-Fold8-Galaxy-Z-Flip8-A-First-Look_main1.jpg)
+
+그림 1. 삼성 뉴스룸이 공개한 Galaxy Z8 시리즈 제품 이미지입니다. 접이식 제품의 펼친 화면과 본체 구성을 비교해 보실 수 있습니다. 이 사진만으로 힌지 내부나 패널 적층 순서를 확인할 수는 없습니다. [삼성 뉴스룸의 2026년 첫 공개](https://news.samsung.com/global/galaxy-unpacked-july-2026-a-first-look-at-galaxy-z-fold8-ultra-galaxy-z-fold8-and-galaxy-z-flip8)
+
 ## 발표·예약·판매를 나누어 보기
 
 삼성은 7월 22일 Fold8·Fold8 Ultra·Flip8을 공개했습니다. Fold8은 7.6인치 내부·5.5인치 외부 화면, 4,800mAh, 201g이며 Ultra의 8인치·5,000mAh와 다릅니다. Apple은 9월 9일 Duo를 발표했고 예약은 10월 16일, 일반 출시는 23일입니다. 7.6인치 내부·5.4인치 외부 화면을 발표했으며 Pencil USB-C 지원은 연말 예정입니다. [삼성 발표](https://www.samsungmobilepress.com/articles/first-look-galaxy-z-fold8-ultra-galaxy-z-fold8-galaxy-z-flip8), [Apple 발표](https://www.apple.com/newsroom/2026/09/apple-unveils-iphone-duo/)
@@ -29,6 +33,16 @@ OLED는 유기 발광층에서 빛을 내는 표시 방식입니다. 빛을 뒤�
 t는 두께, R은 굽힘 반경이며 두 단위를 맞춥니다. 가상 시편의 두께 0.05mm와 반경 5mm를 넣으면 약 0.5%입니다. 같은 두께에서 반경을 2.5mm로 줄이면 1%가 됩니다. 더 작게 접는 일이 단순히 힌지를 작게 만드는 문제가 아닌 이유를 보여 줍니다.
 
 힌지는 화면이 돌아가는 축이면서 접힐 때 만들어지는 곡선과 펼쳤을 때의 지지 조건도 정합니다. 바깥 표면이 평평해 보여도 접착층의 반복 변형이나 먼지에 의한 국소 압력은 남을 수 있습니다. 주름이 덜 보인다는 관찰과 피로 수명이 길다는 실험은 다른 주장입니다.
+
+```mermaid
+flowchart TB
+    A[힌지가 접힘 경로와 곡률을 만듭니다] --> B[바깥쪽 층은 늘어나고 안쪽 층은 눌립니다]
+    B --> C[중립면 주변은 길이 변화가 상대적으로 작습니다]
+    C --> D[접힘·펼침 반복으로 층과 접착부에 피로가 쌓입니다]
+    D --> E[패널·덮개·접착층·힌지를 함께 설계하고 시험합니다]
+```
+
+그림 2. 다층 접이식 표시 장치의 변형 관계를 설명하는 일반 개념도입니다. Galaxy Z Fold8의 실제 층 순서나 치수를 나타내는 단면도는 아닙니다. 화면 표면의 주름만 보고 내부 층의 응력이나 장기 수명을 단정하지 않도록 연결했습니다.
 
 ## 큰 화면이 영상에서 항상 두 배일까요?
 
