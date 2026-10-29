@@ -1,5 +1,111 @@
 # 새 논문·연구 소개
 
-검토와 해설 작성에 참고할 공식 새 자료를 모읍니다. 한국어 소개와 원문 링크, 가져온 시각·경로·방법을 항목마다 기록합니다.
+반영: 2026-10-29 13:12 KST
 
-[카테고리 목차](../README.md) · [날짜별 자료](날짜별/README.md)
+[카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
+
+검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## Correctness Conditioning as Selection in Chain-of-Thought Faithfulness Evaluation
+
+arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가 주제를 다룹니다.
+
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2610.37070>) · arXiv 공지일: 2026-10-29 13:00 KST
+
+원문 작성자: Yueer Pan, Yuexi Pan
+
+가져온 시각: 2026-10-29 13:14:02 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Dependency Graphs of Mathematical Arguments: Representation, Structural Measurement, and Proof Review
+
+arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·긴 문맥·장기 작업 주제를 다룹니다.
+
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2610.36776>) · arXiv 공지일: 2026-10-29 13:00 KST
+
+원문 작성자: Eunji Park
+
+가져온 시각: 2026-10-29 13:14:02 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Spiking Neural Networks Are Harder to Steal: A Benchmark Study of Model Stealing Attacks
+
+arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가 주제를 다룹니다.
+
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2610.36298>) · arXiv 공지일: 2026-10-29 13:00 KST
+
+원문 작성자: Ayana Moshruba, Maryam Parsa
+
+가져온 시각: 2026-10-29 13:14:02 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Why teaching AI about symmetry could make prenatal diagnosis more reliable
+
+MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다.
+
+출처: [MIT News AI 연구 소개](<https://news.mit.edu/topic/artificial-intelligence2>) · [원문](<https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019>) · 공식 페이지 표기일: 2026-10-20 03:20 KST
+
+원문 작성자: Alex Ouyang \| Abdul Latif Jameel Clinic for Machine Learning in Health
+
+가져온 시각: 2026-10-29 13:14:08 KST
+
+수집 경로: [공식 목록·피드](<https://news.mit.edu/rss/topic/artificial-intelligence2>) · 방법: MIT News 공식 연구 소개 RSS
+
+자료 유형: 대학 연구 소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Giving AI a “crystal clear” view of the materials world
+
+MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다.
+
+출처: [MIT News AI 연구 소개](<https://news.mit.edu/topic/artificial-intelligence2>) · [원문](<https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018>) · 공식 페이지 표기일: 2026-10-18 13:00 KST
+
+원문 작성자: Zach Winn \| MIT News
+
+가져온 시각: 2026-10-29 13:14:08 KST
+
+수집 경로: [공식 목록·피드](<https://news.mit.edu/rss/topic/artificial-intelligence2>) · 방법: MIT News 공식 연구 소개 RSS
+
+자료 유형: 대학 연구 소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Researchers improve weather forecasts looking two to six weeks out
+
+MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다.
+
+출처: [MIT News AI 연구 소개](<https://news.mit.edu/topic/artificial-intelligence2>) · [원문](<https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014>) · 공식 페이지 표기일: 2026-10-15 00:00 KST
+
+원문 작성자: Zach Winn \| MIT News
+
+가져온 시각: 2026-10-29 13:14:08 KST
+
+수집 경로: [공식 목록·피드](<https://news.mit.edu/rss/topic/artificial-intelligence2>) · 방법: MIT News 공식 연구 소개 RSS
+
+자료 유형: 대학 연구 소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+공식 한국어 소개는 짧게 발췌하며, 다른 언어의 자료는 제목과 공개 정보의 주제를 한국어로 안내합니다. 원문 전체를 번역하거나 새로운 분석을 작성한 글과는 구분합니다.
