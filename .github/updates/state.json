@@ -110,7 +110,13 @@
     "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245",
-    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246"
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72247": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72247",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72248": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72248",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72249": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72249",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72250": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72250",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72251": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72251",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72252": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72252"
   },
   "days": {
     "industry": {
@@ -1025,6 +1031,120 @@
           "title": "JFrog 제품 보안 업데이트 권고",
           "update": false,
           "url": "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246"
+        },
+        {
+          "acquired_at": "2026-10-29T10:23:27.573344+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-29",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-10-29T10:22:10.498589+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72247",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Adobe社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1][2] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Adobe 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72247"
+        },
+        {
+          "acquired_at": "2026-10-29T10:23:26.240014+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-29",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-10-29T10:22:10.498589+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72248",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Linux 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Linux 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72248"
+        },
+        {
+          "acquired_at": "2026-10-29T10:23:24.856188+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-29",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-10-29T10:22:10.498589+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72249",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Juniper Networks社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Juniper Networks 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72249"
+        },
+        {
+          "acquired_at": "2026-10-29T10:23:23.694453+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-29",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-10-29T10:22:10.498589+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72250",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Samba社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Samba 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72250"
+        },
+        {
+          "acquired_at": "2026-10-29T10:23:22.373385+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-29",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-10-29T10:22:10.498589+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72251",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Synology社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Synology 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72251"
+        },
+        {
+          "acquired_at": "2026-10-29T10:23:21.209923+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-29",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-10-29T10:22:10.498589+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72252",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Palo Alto Networks社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Palo Alto Networks 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72252"
         }
       ]
     }
@@ -1293,6 +1413,42 @@
       "date": "2026-10-29",
       "description": "JFrog社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
       "title": "JFrog 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72247": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-10-29",
+      "description": "Adobe社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1][2] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Adobe 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72248": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-10-29",
+      "description": "Linux 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Linux 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72249": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-10-29",
+      "description": "Juniper Networks社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Juniper Networks 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72250": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-10-29",
+      "description": "Samba社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Samba 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72251": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-10-29",
+      "description": "Synology社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Synology 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72252": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-10-29",
+      "description": "Palo Alto Networks社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Palo Alto Networks 제품 보안 업데이트 권고"
     },
     "https://www.kdi.re.kr/research/economy?pub_no=18120": {
       "date": "",
@@ -1745,6 +1901,30 @@
       "group": "tools",
       "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246"
     },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72247": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72247"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72248": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72248"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72249": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72249"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72250": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72250"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72251": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72251"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72252": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72252"
+    },
     "https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {
       "group": "technology",
       "key": "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000"
@@ -1788,10 +1968,10 @@
       "Last-Modified": "Mon, 19 Oct 2026 06:05:47 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"72d7498851ae54957645d0d4585ae29a8a1fb22b2db554421d738efc3c307552\""
+      "ETag": "W/\"10d88294bbdd4efbd6866b3bb376b289a13795d4ab8789c32b1e3169d4c7444a\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"135922a3adcd6af9f047370fa8f33c4e48bc272d58aabd8bf4fc5f4a3c9f450e\""
+      "ETag": "W/\"4cdd136f34ce7796c5c8ff3cbde8708eff6831381cea54f9bb1660e9e18641a6\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -1826,7 +2006,7 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/rss.xml": {
-      "Last-Modified": "Wed, 28 Oct 2026 17:00:58 GMT"
+      "ETag": "\"OwQW3A\""
     },
     "https://deepmind.google/robots.txt": {},
     "https://developer.nvidia.com/blog/feed": {
@@ -1839,10 +2019,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b8d-bcF+WZw/1xkYIu1R4/nKWVFxqwg\""
+      "ETag": "W/\"33b8d-iiKfmFNqB6VixK5T5qg2Owuq/Wo\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40145-x8h3qSElNObygIF56SWcfe21eCc\""
+      "ETag": "W/\"40144-HPrqJnyhHHV7FmaAurmmVgWYJjI\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -1877,7 +2057,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -1887,12 +2066,12 @@
       "Last-Modified": "Thu, 29 Oct 2026 03:55:37 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793246674\"",
-      "Last-Modified": "Thu, 29 Oct 2026 04:04:34 GMT"
+      "ETag": "\"1793268012\"",
+      "Last-Modified": "Thu, 29 Oct 2026 10:00:12 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793246446\"",
-      "Last-Modified": "Thu, 29 Oct 2026 04:00:46 GMT"
+      "ETag": "\"1793268243\"",
+      "Last-Modified": "Thu, 29 Oct 2026 10:04:03 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -1915,6 +2094,12 @@
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72247": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72248": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72249": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72250": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72251": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72252": {},
     "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133": {},
     "https://www.boho.or.kr/robots.txt": {
       "ETag": "W/\"316-1677147811000\"",
@@ -1957,7 +2142,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0b3daf1ab23eae368b86521edaf90902a\""
+      "ETag": "\"0dbbedecc6e9af0d474d7dbadba4a7dda\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -2042,8 +2227,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"562c5b38b3a338e1735acdbe0fbed5c4\"",
-      "Last-Modified": "Thu, 29 Oct 2026 02:49:59 GMT"
+      "ETag": "\"10b58cf77f9831592da032d133908a2e\"",
+      "Last-Modified": "Thu, 29 Oct 2026 09:38:01 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -2811,6 +2996,30 @@
     },
     "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72246": {
       "list_fingerprint": "fe83751805409a6cfbc81d875b92adf9a144d3a62b2f3df206a156732b3594d0",
+      "status": "posted"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72247": {
+      "list_fingerprint": "de82c09aa37c4ab1c367b0c407c48946b6db41ed568c3618694bcac0f6906a66",
+      "status": "posted"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72248": {
+      "list_fingerprint": "9c72450e08beab8cb12fe3cb23755469ed78f02f5885e6472789bb572bbd3d00",
+      "status": "posted"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72249": {
+      "list_fingerprint": "9e3c2481008d3cc365a3ee40c81489344f979284b98a820317b523a4307709fb",
+      "status": "posted"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72250": {
+      "list_fingerprint": "3fc1b91b337f197c046da4c399bdb19661bc8c33d2ad197f8b45533db8852b6e",
+      "status": "posted"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72251": {
+      "list_fingerprint": "0aa8c63337dc8edff3f8747ab34b08b771f6bd59e0eba20fcab4b8f0c1147d14",
+      "status": "posted"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72252": {
+      "list_fingerprint": "b81fa55ab9cfc6eccde54c3570cfbf085fc26c73da7ccd94adc2a6a0b6a00bec",
       "status": "posted"
     },
     "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93860&mid=a10306040000": {
@@ -4451,6 +4660,42 @@
       "language": "ko",
       "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72246"
     },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72247": {
+      "fingerprint": "cf352565d07a7a8b6002a1da6ef1516bd84babd1af5937946093dc2f311809e2",
+      "first_seen": "2026-10-29T10:22:10.498589+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72247"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72248": {
+      "fingerprint": "bc49d3990bd5e9b25a500b16463737cc4f625a394114d09235f894aaa047f074",
+      "first_seen": "2026-10-29T10:22:10.498589+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72248"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72249": {
+      "fingerprint": "bc4495a6c602a49d24fbfba7a0f2079aca4d441404b7b2828d8da4139cdb0131",
+      "first_seen": "2026-10-29T10:22:10.498589+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72249"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72250": {
+      "fingerprint": "10ca9706b2b32795bc980f4d40b06a53e764302d4bdebf68ff553b006121a250",
+      "first_seen": "2026-10-29T10:22:10.498589+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72250"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72251": {
+      "fingerprint": "63364f12fc41651ed94359aa6e40a072dff74afa585abbf98861b026b33032a6",
+      "first_seen": "2026-10-29T10:22:10.498589+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72251"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72252": {
+      "fingerprint": "7d40496892263c090a8eb0f663a6348772afcae10261e3b8c19a0c941cbe1bb3",
+      "first_seen": "2026-10-29T10:22:10.498589+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72252"
+    },
     "zai:https://huggingface.co/zai-org/GLM-4-32B-0414": {
       "list_fingerprint": "668099737dbb9d78c04a151552a14b44e342232eb86aaf585c3669bf90b8b004",
       "status": "older_material"
@@ -4777,6 +5022,7 @@
     "zai": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://huggingface.co/api/models?author=zai-org&sort=createdAt&direction=-1&limit=100&full=true",
       "since": "2026-10-29T03:34:54.131044+00:00"
     },
     "zephyr-releases": {
