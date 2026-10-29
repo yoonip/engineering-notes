@@ -1,0 +1,76 @@
+name: 매일 뉴스 링크 수집 / Daily news links
+
+on:
+  schedule:
+    - cron: '17 0 * * *'  # UTC 00:17 = 한국 표준시 09:17
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-news-main
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.repository == 'yoonip/engineering-notes' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: 저장소 읽기 / Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 1
+          sparse-checkout: |
+            세계주요뉴스_daily-news
+          sparse-checkout-cone-mode: true
+
+      - name: 수집기 검사 / Test collector
+        run: python3 -m unittest discover -s '세계주요뉴스_daily-news/자동수집_automation' -p 'test_*.py' -v
+
+      - name: 공식 피드 수집 / Collect official feeds
+        run: >-
+          python3 '세계주요뉴스_daily-news/자동수집_automation/collect_news.py'
+          --report "$RUNNER_TEMP/daily-news-status.json"
+
+      - name: 수집 상태 기록 / Record collection status
+        if: always()
+        env:
+          NEWS_REPORT: ${{ runner.temp }}/daily-news-status.json
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          report = Path(os.environ['NEWS_REPORT'])
+          if report.exists():
+              data = json.loads(report.read_text())
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+                  out.write('## News collection\n\n')
+                  out.write('```json\n' + json.dumps(data, ensure_ascii=False, indent=2) + '\n```\n')
+              failed = [s['id'] for s in data['sources'] if s['state'] != 'ok']
+              if failed:
+                  print('::warning::Some feeds did not supply current articles: ' + ', '.join(failed))
+          PY
+
+      - name: 최신 뉴스 게시 / Publish latest news
+        run: |
+          set -euo pipefail
+          news_file='세계주요뉴스_daily-news/최신뉴스_latest.md'
+          git add -- "$news_file"
+          if git diff --cached --quiet; then
+            echo 'The news list has not changed.'
+            exit 0
+          fi
+          git diff --cached --check
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          stamp="$(TZ=Asia/Seoul date +%F)"
+          git commit -m "오늘의 뉴스 ${stamp} / Daily news ${stamp}"
+          # 사람이 작업한 커밋은 보존합니다. 같은 파일 충돌은 실패로 남깁니다.
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main

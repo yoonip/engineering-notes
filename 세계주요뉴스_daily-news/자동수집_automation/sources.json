@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "lookback_hours": 24,
+  "items_per_source": 4,
+  "sources": [
+    {
+      "id": "abc-us", "name": "ABC News 미국", "group": "world",
+      "homepage": "https://abcnews.com/",
+      "feed_url": "https://feeds.abcnews.com/abcnews/internationalheadlines",
+      "feed_hosts": ["feeds.abcnews.com", "abcnews.com", "abcnews.go.com"],
+      "article_hosts": ["abcnews.com", "abcnews.go.com"],
+      "policy_url": "https://abcnews.com/Site/page/rss-feeds-3520115",
+      "policy_checked_on": "2026-10-29",
+      "usage": "공식 RSS 안내의 뉴스 집계·다른 사이트의 헤드라인 링크 표시 용도입니다."
+    },
+    {
+      "id": "npr", "name": "NPR", "group": "world",
+      "homepage": "https://www.npr.org/",
+      "feed_url": "https://feeds.npr.org/1004/rss.xml",
+      "feed_hosts": ["feeds.npr.org", "npr.org"],
+      "article_hosts": ["npr.org"],
+      "policy_url": "https://www.npr.org/about-npr/179876898/terms-of-use",
+      "policy_checked_on": "2026-10-29",
+      "usage": "Content Feeds의 개인 비상업 사이트 표시·직접 링크 허용 범위입니다. NPR 출처와 원제·링크를 유지합니다."
+    },
+    {
+      "id": "csmonitor", "name": "The Christian Science Monitor", "group": "world",
+      "homepage": "https://www.csmonitor.com/",
+      "feed_url": "https://rss.csmonitor.com/feeds/world",
+      "feed_hosts": ["rss.csmonitor.com", "csmonitor.com"],
+      "article_hosts": ["csmonitor.com"],
+      "policy_url": "https://www.csmonitor.com/About/RSS",
+      "policy_checked_on": "2026-10-29",
+      "usage": "비상업 사이트에서 CSMonitor.com으로 연결하는 헤드라인 링크 표시입니다."
+    },
+    {
+      "id": "allafrica", "name": "AllAfrica · allAfrica.com", "group": "world",
+      "homepage": "https://allafrica.com/",
+      "feed_url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
+      "feed_hosts": ["allafrica.com"],
+      "article_hosts": ["allafrica.com"],
+      "policy_url": "https://allafrica.com/misc/tools/rss.html",
+      "policy_checked_on": "2026-10-29",
+      "usage": "공식 RSS의 웹 헤드라인 표시 허용 범위입니다. AllAfrica 출처와 홈페이지 링크를 인접하게 둡니다."
+    },
+    {
+      "id": "yonhap-world", "name": "연합뉴스 국제", "group": "world",
+      "homepage": "https://www.yna.co.kr/international/all",
+      "feed_url": "https://www.yna.co.kr/rss/international.xml",
+      "feed_hosts": ["yna.co.kr"], "article_hosts": ["yna.co.kr"],
+      "policy_url": "https://www.yna.co.kr/rss/index",
+      "policy_checked_on": "2026-10-29",
+      "usage": "공식 RSS 안내에서 허용하는 비상업 블로그·개인 이용입니다."
+    },
+    {
+      "id": "yonhap", "name": "연합뉴스", "group": "korea",
+      "homepage": "https://www.yna.co.kr/",
+      "feed_url": "https://www.yna.co.kr/rss/news.xml",
+      "feed_hosts": ["yna.co.kr"], "article_hosts": ["yna.co.kr"],
+      "policy_url": "https://www.yna.co.kr/rss/index",
+      "policy_checked_on": "2026-10-29",
+      "usage": "공식 RSS 안내에서 허용하는 비상업 블로그·개인 이용입니다."
+    },
+    {
+      "id": "sbs", "name": "SBS 뉴스", "group": "korea",
+      "homepage": "https://news.sbs.co.kr/",
+      "feed_url": "https://news.sbs.co.kr/news/headlineRssFeed.do?plink=RSSREADER",
+      "feed_hosts": ["news.sbs.co.kr"], "article_hosts": ["news.sbs.co.kr"],
+      "policy_url": "https://news.sbs.co.kr/news/rss.do",
+      "policy_checked_on": "2026-10-29",
+      "usage": "개인 이용자의 비상업 RSS 이용 조건에 맞춰 소수 제목과 직접 링크만 표시합니다."
+    },
+    {
+      "id": "donga", "name": "동아일보", "group": "korea",
+      "homepage": "https://www.donga.com/",
+      "feed_url": "https://rss.donga.com/total.xml",
+      "feed_hosts": ["rss.donga.com"], "article_hosts": ["donga.com"],
+      "policy_url": "https://rss.donga.com/",
+      "policy_checked_on": "2026-10-29",
+      "usage": "개인 비상업 RSS 이용 조건에 맞춰 제목과 원문 링크만 표시합니다."
+    }
+  ]
+}

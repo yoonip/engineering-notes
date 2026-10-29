@@ -20,6 +20,7 @@ I hope this repository will be more than a store of finished answers. One reader
 
 | Section | Coverage |
 | --- | --- |
+| [Daily news](세계주요뉴스_daily-news/README.md) | Original headlines and article links from international and Korean official feeds, refreshed daily at 09:17 Asia/Seoul |
 | [Roles and engineering practice](직무와실무기술_job-practice/README.md) | Product development, semiconductor design and manufacturing, memory engineering, tests and operations connected to technical foundations, programming tasks and engineering evidence |
 | [Electronics and computing across industries](산업별전자와컴퓨팅_industry-systems/README.md) | Automotive, consumer electronics, defense/aerospace, marine, energy, industrial automation, enterprise IT, medical, rail and urban systems; subsystems, interfaces, tests and company roles |
 | [Measurement, debugging and validation](현장계측과검증_measurement-validation/README.md) | Instrument guides, DMA/cache, fault tracing, PVT, industrial communications and SCPI automation |
