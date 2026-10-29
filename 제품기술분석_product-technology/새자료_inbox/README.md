@@ -1,5 +1,135 @@
 # 제품·기술 새 자료
 
-검토와 해설 작성에 참고할 공식 새 자료를 모읍니다. 한국어 소개와 원문 링크, 가져온 시각·경로·방법을 항목마다 기록합니다.
+반영: 2026-10-29 13:12 KST
 
-[카테고리 목차](../README.md) · [날짜별 자료](날짜별/README.md)
+[카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
+
+검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## 공급망 파트너와 생산 역량 확대해 AI 인프라 구축을 가속하는 NVIDIA - NVIDIA Blog Korea
+
+> 새로운 생산 능력 계약과 제조 시설이 물량 증대를 뒷받침하고 공급망 복원력을…
+
+출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/>) · 공식 페이지 표기일: 2026-10-28 14:02 KST
+
+원문 작성자: NVIDIA Korea
+
+가져온 시각: 2026-10-29 13:13:58 KST
+
+수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4
+
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기·메모리·캐시 주제를 다룹니다.
+
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/>) · 공식 페이지 표기일: 2026-10-28 05:50 KST
+
+원문 작성자: Elizabeth Goodman
+
+가져온 시각: 2026-10-29 13:13:56 KST
+
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games
+
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.
+
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/>) · 공식 페이지 표기일: 2026-10-28 02:00 KST
+
+원문 작성자: Elizabeth Goodman
+
+가져온 시각: 2026-10-29 13:13:56 KST
+
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages
+
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.
+
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/>) · 공식 페이지 표기일: 2026-10-28 01:00 KST
+
+원문 작성자: Shara Tibken
+
+가져온 시각: 2026-10-29 13:13:56 KST
+
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Rust MEMS drivers: 3 reasons to try and adopt our new sensor drivers written in Rust
+
+STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.
+
+출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/rust-mems-drivers/>) · 공식 페이지 표기일: 2026-10-27 23:00 KST
+
+원문 작성자: David Civera
+
+가져온 시각: 2026-10-29 13:13:59 KST
+
+수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## NVIDIA, AI 팩토리 엔드투엔드 관측성을 위한 Minerva를 공개하다
+
+> 새로운 AIOps 플랫폼이 인프라와 워크로드 텔레메트리를 하나로 이어, 운영자가 가동률을 높이고 AI 팩토리 수율을 끌어올리도록 돕습니다.
+
+출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure/>) · 공식 페이지 표기일: 2026-10-26 12:12 KST
+
+원문 작성자: NVIDIA Korea
+
+가져온 시각: 2026-10-29 13:13:57 KST
+
+수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
+
+개요: 공식 한국어 소개 발췌
+
+## 유럽 전역의 선구자들, NVIDIA Earth-2 오픈 모델로 실제 날씨·기후 예측에 나서다
+
+> NVIDIA Earth-2는 개발자와 연구자에게 자체 데이터로 맞춤 구성할 수 있는 오픈 모델과 도구 제품군을…
+
+출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction/>) · 공식 페이지 표기일: 2026-10-26 12:06 KST
+
+원문 작성자: NVIDIA Korea
+
+가져온 시각: 2026-10-29 13:13:57 KST
+
+수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
+
+개요: 공식 한국어 소개 발췌
+
+## TouchGFX 4.27: Hybrid double buffering or how to shorten render times by 50% thanks to a new framebuffer strategy
+
+STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.
+
+출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/touchgfx/>) · 공식 페이지 표기일: 2026-10-14 22:00 KST
+
+원문 작성자: David Civera
+
+가져온 시각: 2026-10-29 13:13:59 KST
+
+수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## STSPIN9P: ST’s first 75 V high-current motor drivers with low RDS\(on\) is so small it helps grow new applications
+
+STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.
+
+출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/stspin9p/>) · 공식 페이지 표기일: 2026-10-01 22:00 KST
+
+원문 작성자: David Civera
+
+가져온 시각: 2026-10-29 13:13:59 KST
+
+수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+공식 한국어 소개는 짧게 발췌하며, 다른 언어의 자료는 제목과 공개 정보의 주제를 한국어로 안내합니다. 원문 전체를 번역하거나 새로운 분석을 작성한 글과는 구분합니다.
