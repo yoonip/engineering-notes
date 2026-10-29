@@ -165,6 +165,7 @@
 | 분야 | 주요 글 |
 |---|---|
 | [의공학과 의료 AI](전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md) | [측정·지표·자료 분리·임상 평가](전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/해설_notes/측정에서진단과치료까지_medical-ai-evidence.md) · [의료영상](논문해설_papers/의료영상과진단_ai-medical-imaging/README.md) · [신경보철과 재활](논문해설_papers/신경보철과재활_neuroprosthetics-rehabilitation/README.md) · [AI 신약 개발](논문해설_papers/AI신약개발_ai-drug-discovery/README.md) |
+| [장애를 극복하는 기술](장애를극복하는기술_disability-technology/README.md) | [공통 설계와 근거 단계](장애를극복하는기술_disability-technology/공통설계와근거단계_common-design-and-evidence.md) · [지체·뇌병변](장애를극복하는기술_disability-technology/01-지체장애_limb-and-mobility.md) · [감각·의사소통](장애를극복하는기술_disability-technology/03-시각장애_vision-access.md) · [내부기관 기능](장애를극복하는기술_disability-technology/07-신장장애_kidney-support.md) · [췌장과 혈당 조절](장애를극복하는기술_disability-technology/13-췌장장애_glucose-technology.md) |
 
 ## 논문·코드·특허 읽기 | Reading papers, code and patents
 

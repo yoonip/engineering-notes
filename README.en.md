@@ -30,6 +30,7 @@ I hope this repository will be more than a store of finished answers. One reader
 | [Semiconductor fabrication](반도체제조공정_semiconductor-fabrication/README.md) | Wafer manufacturing, oxidation, lithography, etching, deposition and implantation, interconnects, testing, packaging and process integration |
 | [Semiconductor design](반도체설계_semiconductor-design/README.md) | Linux, licenses and PDKs; full-custom analog layout, SRAM/DRAM, RTL implementation, mixed-signal chips and SoCs, physical verification, GDS handoff and HBM |
 | [Electrical and computer engineering](전자컴퓨터공학_ece/README.md) | Development, circuits, digital design, embedded systems, GPUs, AI and services |
+| [Disability and assistive technology](장애를극복하는기술_disability-technology/README.md) | Assistive products, rehabilitation engineering and medical devices across mobility, sensory access, communication and organ support, with evidence stages distinguished |
 | [Reading comprehension and argument reasoning](언어이해와추리논증_reading-reasoning/README.md) | CSAT/LEET past questions, choice-by-choice reasoning and original practice |
 | [Foreign languages and technical English](외국어와기술영어_foreign-languages/README.md) | English foundations and exercises, study methods and technical reading |
 | [Humanities](인문사회_humanities/README.md) | [Philosophy concepts](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), economics, society, legal rights, facts, procedure and judgments |
@@ -54,3 +55,5 @@ I hope this repository will be more than a store of finished answers. One reader
 [Philosophy concepts](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md) introduces reality, knowledge, ethics, mind, freedom, identity, political legitimacy, and cultivation and action through worked cases. [Recent AI evidence and classical questions](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md) compares experiments and arguments while separating measured functions from claims about experience and identity.
 
 [Biomedical engineering and medical AI](전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md) connects imaging, diagnostic support, neuroprosthetics and AI-assisted drug discovery through mechanisms and clinical evidence.
+
+[Disability and assistive technology](장애를극복하는기술_disability-technology/README.md) explains how assistive products, rehabilitation engineering and medical devices support everyday functions. It distinguishes routine use, indication-specific authorization, clinical research and early-stage concepts.

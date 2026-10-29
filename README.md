@@ -32,6 +32,7 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 �
 | [반도체 제조 공정](반도체제조공정_semiconductor-fabrication/README.md) | 웨이퍼·산화·포토·식각·증착과 이온주입·배선·검사·패키징, 공정 통합과 로직·메모리의 차이 |
 | [반도체 설계](반도체설계_semiconductor-design/README.md) | Linux·PDK·Spectre, 아날로그 풀커스텀·SRAM·DRAM·RTL 구현, 혼합신호 칩·SoC 통합·물리 검증·GDS·HBM |
 | [전자·컴퓨터공학](전자컴퓨터공학_ece/README.md) | 소프트웨어, 회로·반도체, 임베디드·제어, GPU·AI |
+| [장애를 극복하는 기술](장애를극복하는기술_disability-technology/README.md) | 지체·감각·의사소통·내부기관 장애를 지원하는 보조기기·재활공학·의료기술. 법령의 이용 상태와 연구 단계도 구분합니다. |
 | [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md) | 문해력·논리·논증, [수능·LEET 기출 분석](언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)과 자체 연습 |
 | [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md) | [영어 기초와 문법 연습](외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), 외국어 학습 방법과 기술 문서 읽기 |
 | [인문사회](인문사회_humanities/README.md) | [철학의 주요 개념](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), 경제, 사회·제도, 법의 권리·사실·절차·판결 |
@@ -53,6 +54,8 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 �
 | [AI 모델과 수치 실험](AI모델과수치실험_ai-models/README.md) | 공식 모델의 구조·공개 범위, 연산 프레임워크와 별도의 교육용 수치 예제 |
 
 [의공학과 의료 AI](전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md)는 의료영상·진단, 신경보철·재활, AI 신약 연구를 측정·계산·임상 근거로 연결하는 학습 경로입니다.
+
+[장애를 극복하는 기술](장애를극복하는기술_disability-technology/README.md)은 보조기술과 재활·의료 장치가 실제로 지원하는 기능을 설명합니다. 12개 요청 유형과 2026년 시행 법령에 추가된 췌장장애를 다루며, 제품·허가·임상시험·초기 연구를 구분합니다.
 
 [철학 개념 학습](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)에서 기초 용어와 사례를 읽고, [최근 AI 연구와 고전의 비교](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)에서 의식·자유의지·인격 동일성의 주장과 근거·반론을 살펴봅니다.
 
