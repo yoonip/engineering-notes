@@ -1,5 +1,7 @@
 # 산업별 전자·컴퓨터 기술 | Electronics and computing across industries
 
+[새 자료](새자료_inbox/README.md)에서 공식 출처의 새 소개와 원문을 날짜별로 확인하실 수 있습니다.
+
 자동차·가전·방산·항공우주·해양조선·발전·산업설비·기업 IT 등에서 전자공학과 컴퓨터공학이 어떤 시스템을 만드는지 공부합니다. 산업 이름 아래에 제품과 하위 시스템을 나누고, 센서·회로·전력·통신·제어·소프트웨어·데이터·검증을 연결합니다.
 
 [저장소 첫 화면](../README.md) · [시스템으로 읽는 산업과 직무](00-시스템으로읽는산업과직무_systems-and-roles.md) · [기업과 사업 분야](09-기업과사업분야_company-domain-map.md) · [기술별 학습 연결](10-공통기술과세부학습분야_cross-industry-technologies.md) · [출처와 확인 범위](출처와확인범위_SOURCES.md)
