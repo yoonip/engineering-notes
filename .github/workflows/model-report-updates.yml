@@ -1,4 +1,4 @@
-name: 모델 발표와 보고서 / Model and report updates
+name: 공식 새 자료 / Official source updates
 
 on:
   schedule:
@@ -31,6 +31,12 @@ jobs:
             .github/updates
             AI모델동향_ai-model-updates
             미래경제보고서_future-economic-reports
+            기술동향_technology
+            도구와환경_tools
+            산업별전자와컴퓨팅_industry-systems
+            제품기술분석_product-technology
+            논문해설_papers
+            학습사이트와채널_learning-resources
           sparse-checkout-cone-mode: true
 
       - name: HTML 파서 설치 / Install HTML parser
@@ -39,7 +45,7 @@ jobs:
       - name: 중복·날짜·출처 검사 / Test deduplication and parsers
         run: python3 -m unittest discover -s .github/updates -p 'test_*.py' -v
 
-      - name: 공식 발표와 보고서 확인 / Check official publications
+      - name: 공식 새 자료 확인 / Check official sources
         run: python3 .github/updates/update_pipeline.py --report "$RUNNER_TEMP/publication-status.json"
 
       - name: 출처별 실행 기록 / Record source status
@@ -57,37 +63,10 @@ jobs:
                   out.write('## Official publications\n\n```json\n')
                   out.write(json.dumps(report, ensure_ascii=False, indent=2) + '\n```\n')
               problems = [s['id'] for s in report['sources']
-                          if s['status'] not in ('ok', 'unchanged', 'no_eligible_items') or s.get('detail_errors')]
+                          if s['status'] not in ('ok', 'unchanged', 'no_eligible_items', 'no_recent_items') or s.get('detail_errors')]
               if problems:
                   print('::warning::Some sources need checking: ' + ', '.join(problems))
           PY
 
       - name: 주제별 게시 / Publish by topic
-        run: |
-          set -euo pipefail
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          stamp="$(TZ=Asia/Seoul date '+%F %H:%M')"
-          git add -- AI모델동향_ai-model-updates/새소식_updates
-          if ! git diff --cached --quiet; then
-            git diff --cached --check
-            git commit -m "모델 발표 ${stamp} / Model announcements ${stamp}"
-          fi
-          git add -- 미래경제보고서_future-economic-reports/새소식_updates
-          if ! git diff --cached --quiet; then
-            git diff --cached --check
-            git commit -m "보고서 소식 ${stamp} / Report updates ${stamp}"
-          fi
-          git add -- .github/updates/state.json
-          if ! git diff --cached --quiet; then
-            git diff --cached --check
-            git commit -m "모델·보고서 확인 상태 ${stamp} / Publication check state ${stamp}"
-          fi
-          for attempt in 1 2 3; do
-            git fetch origin main
-            git rebase origin/main
-            if git push origin HEAD:main; then
-              exit 0
-            fi
-          done
-          exit 1
+        run: python3 .github/updates/publish_changes.py --push

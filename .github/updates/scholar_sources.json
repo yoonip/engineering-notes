@@ -1,0 +1,156 @@
+{
+  "sources": [
+    {
+      "id": "arxiv-ai-surveys",
+      "name": "arXiv AI 조사·평가 논문",
+      "group": "papers",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "homepage": "https://arxiv.org/list/cs.AI/recent",
+      "format": "feed",
+      "adapter": "arxiv",
+      "hosts": [
+        "rss.arxiv.org",
+        "arxiv.org"
+      ],
+      "language": "en",
+      "allow_empty_feed": true,
+      "detail": false,
+      "max_new_items": 8,
+      "title_patterns": [
+        "\\b(?:survey|review|benchmark|dataset|reproducib\\w*|evaluation)\\b"
+      ],
+      "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+      "date_label": "arXiv 공지일",
+      "source_checked_on": "2026-10-29",
+      "policy_url": "https://info.arxiv.org/help/api/tou.html",
+      "min_interval_seconds": 3,
+      "rate_limit_group": "arxiv",
+      "detail_if_empty": false
+    },
+    {
+      "id": "arxiv-architecture",
+      "name": "arXiv 컴퓨터구조 논문",
+      "group": "papers",
+      "url": "https://rss.arxiv.org/rss/cs.AR",
+      "homepage": "https://arxiv.org/list/cs.AR/recent",
+      "format": "feed",
+      "adapter": "arxiv",
+      "hosts": [
+        "rss.arxiv.org",
+        "arxiv.org"
+      ],
+      "language": "en",
+      "allow_empty_feed": true,
+      "detail": false,
+      "max_new_items": 8,
+      "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+      "date_label": "arXiv 공지일",
+      "source_checked_on": "2026-10-29",
+      "policy_url": "https://info.arxiv.org/help/api/tou.html",
+      "min_interval_seconds": 3,
+      "rate_limit_group": "arxiv",
+      "detail_if_empty": false
+    },
+    {
+      "id": "arxiv-signal-systems",
+      "name": "arXiv 신호처리·통신 논문",
+      "group": "papers",
+      "url": "https://rss.arxiv.org/rss/eess.SP",
+      "homepage": "https://arxiv.org/list/eess.SP/recent",
+      "format": "feed",
+      "adapter": "arxiv",
+      "hosts": [
+        "rss.arxiv.org",
+        "arxiv.org"
+      ],
+      "language": "en",
+      "allow_empty_feed": true,
+      "detail": false,
+      "max_new_items": 8,
+      "title_patterns": [
+        "\\b(?:survey|review|benchmark|communication|radar|sensing|MIMO|array|hardware)\\b"
+      ],
+      "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+      "date_label": "arXiv 공지일",
+      "source_checked_on": "2026-10-29",
+      "policy_url": "https://info.arxiv.org/help/api/tou.html",
+      "min_interval_seconds": 3,
+      "rate_limit_group": "arxiv",
+      "detail_if_empty": false
+    },
+    {
+      "id": "mit-ai-research",
+      "name": "MIT News AI 연구 소개",
+      "group": "papers",
+      "url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+      "homepage": "https://news.mit.edu/topic/artificial-intelligence2",
+      "format": "feed",
+      "adapter": "mit_research",
+      "hosts": [
+        "news.mit.edu"
+      ],
+      "language": "en",
+      "detail": false,
+      "max_new_items": 5,
+      "acquisition_method": "MIT News 공식 연구 소개 RSS",
+      "source_checked_on": "2026-10-29",
+      "policy_url": "https://news.mit.edu/robots.txt"
+    },
+    {
+      "id": "mit-ocw-materials",
+      "name": "MIT OpenCourseWare 자료 안내",
+      "group": "learning",
+      "url": "https://www.ocw-openmatters.org/feed/",
+      "homepage": "https://www.ocw-openmatters.org/",
+      "format": "feed",
+      "adapter": "ocw_notices",
+      "hosts": [
+        "www.ocw-openmatters.org",
+        "ocw-openmatters.org",
+        "ocw.mit.edu"
+      ],
+      "language": "en",
+      "detail": false,
+      "max_new_items": 5,
+      "acquisition_method": "MIT OpenCourseWare 공식 블로그 RSS의 자료 소개",
+      "source_checked_on": "2026-10-29",
+      "policy_url": "https://ocw.mit.edu/terms/"
+    },
+    {
+      "id": "mit-open-learning",
+      "name": "MIT Open Learning 공개 학습 자료",
+      "group": "learning",
+      "url": "https://news.mit.edu/rss/topic/mitx",
+      "homepage": "https://news.mit.edu/topic/mitx",
+      "format": "feed",
+      "adapter": "mit_learning",
+      "hosts": [
+        "news.mit.edu"
+      ],
+      "language": "en",
+      "detail": false,
+      "max_new_items": 5,
+      "acquisition_method": "MIT News의 공식 MITx·Open Learning RSS",
+      "source_checked_on": "2026-10-29",
+      "policy_url": "https://news.mit.edu/robots.txt"
+    },
+    {
+      "id": "kmooc-courses",
+      "name": "K-MOOC 공개 강좌",
+      "group": "learning",
+      "url": "https://www.kmooc.kr/",
+      "homepage": "https://www.kmooc.kr/",
+      "format": "html",
+      "adapter": "kmooc",
+      "hosts": [
+        "www.kmooc.kr"
+      ],
+      "language": "ko",
+      "detail": true,
+      "max_new_items": 5,
+      "acquisition_method": "K-MOOC 홈페이지의 공개 강좌카드·강좌 소개문",
+      "source_checked_on": "2026-10-29",
+      "policy_url": "https://www.kmooc.kr/robots.txt"
+    }
+  ]
+}

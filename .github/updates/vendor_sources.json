@@ -1,0 +1,123 @@
+{
+  "sources": [
+    {
+      "id": "kisa-security",
+      "name": "KISA 보호나라 보안공지",
+      "group": "tools",
+      "url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+      "homepage": "https://www.boho.or.kr/",
+      "adapter": "kisa_notice",
+      "format": "feed",
+      "hosts": [
+        "www.boho.or.kr"
+      ],
+      "language": "ko",
+      "acquisition_method": "공식 RSS와 보안공지의 개요",
+      "policy_url": "https://www.boho.or.kr/kr/subPage.do?menuNo=205121",
+      "policy_checked_on": "2026-10-29",
+      "detail": true
+    },
+    {
+      "id": "python-releases",
+      "name": "Python 코어 개발팀",
+      "group": "tools",
+      "url": "https://blog.python.org/feeds/posts/default?alt=rss",
+      "homepage": "https://blog.python.org/",
+      "adapter": "python_releases",
+      "format": "feed",
+      "hosts": [
+        "blog.python.org"
+      ],
+      "language": "en",
+      "acquisition_method": "공식 릴리스 RSS의 제목·소개",
+      "policy_url": "https://blog.python.org/",
+      "policy_checked_on": "2026-10-29"
+    },
+    {
+      "id": "zephyr-releases",
+      "name": "Zephyr Project",
+      "group": "tools",
+      "url": "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20",
+      "homepage": "https://github.com/zephyrproject-rtos/zephyr/releases",
+      "adapter": "github_releases",
+      "format": "json",
+      "hosts": [
+        "api.github.com",
+        "github.com"
+      ],
+      "repository": "zephyrproject-rtos/zephyr",
+      "detail": false,
+      "language": "en",
+      "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
+      "policy_url": "https://docs.github.com/en/rest/releases/releases#list-releases",
+      "policy_checked_on": "2026-10-29"
+    },
+    {
+      "id": "llvm-releases",
+      "name": "LLVM Project",
+      "group": "tools",
+      "url": "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20",
+      "homepage": "https://github.com/llvm/llvm-project/releases",
+      "adapter": "github_releases",
+      "format": "json",
+      "hosts": [
+        "api.github.com",
+        "github.com"
+      ],
+      "repository": "llvm/llvm-project",
+      "detail": false,
+      "language": "en",
+      "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
+      "policy_url": "https://docs.github.com/en/rest/releases/releases#list-releases",
+      "policy_checked_on": "2026-10-29"
+    },
+    {
+      "id": "nvidia-technical",
+      "name": "NVIDIA Technical Blog",
+      "group": "products",
+      "url": "https://developer.nvidia.com/blog/feed/",
+      "homepage": "https://developer.nvidia.com/blog/",
+      "adapter": "vendor_feed",
+      "format": "feed",
+      "hosts": [
+        "developer.nvidia.com"
+      ],
+      "language": "en",
+      "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+      "policy_url": "https://developer.nvidia.com/robots.txt",
+      "policy_checked_on": "2026-10-29"
+    },
+    {
+      "id": "nvidia-korea",
+      "name": "NVIDIA 한국어 블로그",
+      "group": "products",
+      "url": "https://blogs.nvidia.co.kr/feed/",
+      "homepage": "https://blogs.nvidia.co.kr/",
+      "adapter": "vendor_feed",
+      "format": "feed",
+      "hosts": [
+        "blogs.nvidia.co.kr"
+      ],
+      "language": "ko",
+      "acquisition_method": "공식 한국어 블로그 RSS의 제목·소개",
+      "policy_url": "https://blogs.nvidia.co.kr/robots.txt",
+      "policy_checked_on": "2026-10-29"
+    },
+    {
+      "id": "st-technical",
+      "name": "STMicroelectronics 기술 블로그",
+      "group": "products",
+      "url": "https://blog.st.com/feed/",
+      "homepage": "https://blog.st.com/",
+      "adapter": "vendor_feed",
+      "format": "feed",
+      "hosts": [
+        "blog.st.com"
+      ],
+      "language": "en",
+      "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+      "policy_url": "https://blog.st.com/robots.txt",
+      "policy_checked_on": "2026-10-29"
+    }
+  ]
+}

@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 import re
 import sys
+import time
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 from urllib.request import Request, build_opener
@@ -27,6 +28,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'news'))
 from collect_news import FeedError, RestrictedRedirect, safe_url, md_text, md_url
 import model_adapters
 import report_adapters
+import sector_adapters
+import vendor_adapters
+import scholar_adapters
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -36,7 +40,18 @@ MAX_BYTES = 3_000_000
 GROUPS = {
     'models': ('AI모델동향_ai-model-updates', '모델 발표'),
     'reports': ('미래경제보고서_future-economic-reports', '보고서 소식'),
+    'technology': ('기술동향_technology', '기술 동향 새 자료'),
+    'tools': ('도구와환경_tools', '도구·보안 새 자료'),
+    'industry': ('산업별전자와컴퓨팅_industry-systems', '산업 기술 새 자료'),
+    'products': ('제품기술분석_product-technology', '제품·기술 새 자료'),
+    'papers': ('논문해설_papers', '새 논문·연구 소개'),
+    'learning': ('학습사이트와채널_learning-resources', '새 강의·학습 자료'),
 }
+OUTPUT_DIRS = {group: ('새소식_updates' if group in ('models', 'reports') else '새자료_inbox') for group in GROUPS}
+ADAPTERS = {'models': model_adapters, 'reports': report_adapters,
+            'technology': sector_adapters, 'industry': sector_adapters,
+            'tools': vendor_adapters, 'products': vendor_adapters,
+            'papers': scholar_adapters, 'learning': scholar_adapters}
 TOPICS = [
     (r'reasoning|inference|추론|推理', '추론'),
     (r'coding|code generation|software engineering|코딩|코드|编程', '코딩'),
@@ -46,13 +61,21 @@ TOPICS = [
     (r'context|long.horizon|long.running|문맥|컨텍스트|장기 작업|上下文', '긴 문맥·장기 작업'),
     (r'multimodal|vision|image|video|다중모달|멀티모달|이미지|영상|多模态', '이미지·영상 처리'),
     (r'audio|speech|음성|语音', '음성 처리'),
-    (r'cyber|security|보안|安全', '보안'),
+    (r'cyber|security|vulnerabilit|CVE-\d|보안|安全', '보안'),
     (r'benchmark|evaluation|벤치마크|평가|评估', '평가'),
     (r'pricing|cost|efficien|latency|가격|비용|효율|지연', '비용·실행 효율'),
     (r'econom|growth|inflation|경제|성장률|물가', '경제·경기'),
     (r'energy|electric|climate|에너지|전력|탄소', '에너지·전력'),
     (r'semiconductor|chip|반도체', '반도체'),
     (r'robot|mobility|로봇|모빌리티', '로봇·모빌리티'),
+    (r'\b(?:GPU|accelerator|CUDA)\b|가속기', 'GPU·가속기'),
+    (r'processor|microarchitecture|RISC-V|\bCPU\b|프로세서|컴퓨터구조', '프로세서·컴퓨터구조'),
+    (r'\b(?:memory|cache|DRAM|HBM)\b|메모리|캐시', '메모리·캐시'),
+    (r'compiler|\b(?:Python|LLVM|Zephyr|RTOS)\b|firmware|컴파일러|펌웨어', '개발 도구·시스템 소프트웨어'),
+    (r'communication|wireless|radar|MIMO|signal processing|통신|레이더|신호처리', '통신·신호 처리'),
+    (r'display|OLED|circuit|디스플레이|회로', '회로·디스플레이'),
+    (r'satellite|spacecraft|propulsion|우주|항공', '우주·항공 시스템'),
+    (r'\b(?:course|lecture|tutorial|curriculum|textbook)\b|강의|강좌|교재', '강의·학습 자료'),
 ]
 
 
@@ -71,11 +94,24 @@ def canonical(url: str, keep_fragment: bool = False) -> str:
         path = re.sub(r'^/ko-KR(?=/)', '', path)
     query = sorted((k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
                    if not k.lower().startswith(('utm_', 'fbclid', 'gclid')))
+    if (parts.hostname or '').endswith('boho.or.kr') and path.endswith('/bbs/view.do'):
+        ids = [(k, v) for k, v in query if k in ('bbsId', 'nttId')]
+        if len(ids) == 2:
+            query = ids
     return urlunsplit(('https', parts.netloc.lower(), path, urlencode(query), parts.fragment if keep_fragment else ''))
 
 
 def digest(value) -> str:
     return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+
+def original_identity(url: str) -> str:
+    parts = urlsplit(canonical(url, True))
+    if parts.hostname in ('arxiv.org', 'export.arxiv.org'):
+        match = re.fullmatch(r'/(?:abs|pdf)/((?:\d{4}\.\d{4,5}|[a-z-]+/\d{7}))(?:v\d+)?(?:\.pdf)?', parts.path, re.I)
+        if match:
+            return 'arxiv:' + match[1].lower()
+    return canonical(url, True)
 
 
 def publication_key(group: str, url: str, keep_fragment: bool = False) -> str:
@@ -123,15 +159,21 @@ def parse_feed(text: str) -> list[dict]:
             continue
         fields = {local(child.tag): child for child in node}
         value = lambda name: ''.join(fields[name].itertext()).strip() if name in fields else ''
-        link = value('link')
-        if 'link' in fields and fields['link'].get('href'):
-            link = fields['link'].get('href')
+        links = [child for child in node if local(child.tag) == 'link']
+        alternate = next((child for child in links if child.get('href') and child.get('rel', 'alternate') == 'alternate'), None)
+        link = alternate.get('href') if alternate is not None else value('link')
         raw_date = value('pubDate') or value('published') or value('date')
         parsed_date = date_time(raw_date)
         display_date = raw_date if re.fullmatch(r'\d{4}-\d{2}(?:-\d{2})?', raw_date) else (parsed_date.isoformat() if parsed_date else '')
+        description = clean(value('description') or value('summary'))
+        description = re.sub(r'\s+The post .+? appeared first on .+\.?$', '', description, flags=re.I)
+        author = clean(value('creator') or value('author'))
+        if len(author) > 160:
+            author = author[:157].rsplit(' ', 1)[0] + '…'
         result.append({'title': clean(value('title')), 'url': link,
-                       'description': clean(value('description') or value('summary'))[:3000],
+                       'description': description[:3000],
                        'date': display_date,
+                       'author': author,
                        'categories': [''.join(child.itertext()).strip() for child in node if local(child.tag) == 'category']})
     return result[:1500]
 
@@ -169,9 +211,36 @@ class FetchFailure(Exception):
     pass
 
 
+class PacedRedirect(RestrictedRedirect):
+    def __init__(self, hosts, throttle):
+        super().__init__(hosts)
+        self.throttle = throttle
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        next_request = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if next_request is not None:
+            self.throttle(newurl)
+        return next_request
+
+
 class Client:
-    def __init__(self, request_state: dict):
+    def __init__(self, request_state: dict, sources: list[dict] | None = None):
         self.state = request_state
+        self.policies, self.last_request = {}, {}
+        for source in sources or []:
+            if source.get('min_interval_seconds'):
+                for host in source['hosts']:
+                    self.policies[host] = (source.get('rate_limit_group', host), float(source['min_interval_seconds']))
+
+    def throttle(self, url: str) -> None:
+        policy = self.policies.get(urlsplit(url).hostname)
+        if policy:
+            group, interval = policy
+            if group in self.last_request:
+                delay = interval - (time.monotonic() - self.last_request[group])
+                if delay > 0:
+                    time.sleep(delay)
+            self.last_request[group] = time.monotonic()
 
     def fetch(self, url: str, hosts: list[str]) -> tuple[str | None, str]:
         if not safe_url(url, hosts):
@@ -183,7 +252,8 @@ class Client:
             if previous.get(header):
                 headers[request_header] = previous[header]
         try:
-            opener = build_opener(RestrictedRedirect(hosts))
+            self.throttle(url)
+            opener = build_opener(PacedRedirect(hosts, self.throttle))
             with opener.open(Request(url, headers=headers), timeout=22) as response:
                 if not safe_url(response.url, hosts):
                     raise FetchFailure('unsafe_redirect')
@@ -257,8 +327,12 @@ def overview(item: dict, source: dict) -> tuple[str, str]:
         first = source['name'] + '의 공식 모델 배포물 등록 소식입니다.'
     elif source['group'] == 'models':
         first = source['name'] + '의 모델 관련 공식 발표입니다.'
-    else:
+    elif source['group'] == 'reports':
         first = source['name'] + '에서 발행한 보고서입니다.'
+    else:
+        subjects = {'technology': '기술 동향 자료', 'tools': '도구·보안 공지', 'industry': '산업 기술 자료',
+                    'products': '제품·기술 자료', 'papers': '논문·연구 소개', 'learning': '강의·학습 안내'}
+        first = source['name'] + '에서 공개한 ' + subjects[source['group']] + '입니다.'
     if topics:
         first += ' 공개 제목·소개에서 ' + '·'.join(topics) + ' 주제를 다룹니다.'
     return first, '제목·공개 정보에 따른 한국어 안내'
@@ -281,7 +355,7 @@ def validate_item(item: dict, source: dict) -> dict | None:
 
 def load_config() -> dict:
     sources = []
-    for name in ('model_sources.json', 'report_sources.json'):
+    for name in ('model_sources.json', 'report_sources.json', 'sector_sources.json', 'vendor_sources.json', 'scholar_sources.json'):
         sources.extend(json.loads((HERE / name).read_text(encoding='utf-8'))['sources'])
     assert len({s['id'] for s in sources}) == len(sources)
     for source in sources:
@@ -290,10 +364,12 @@ def load_config() -> dict:
         if source.get('adapter') == 'deepseek_updates':
             source['detail'] = False  # 날짜별 절의 소개가 이미 목록에 있습니다.
         if source.get('format') == 'feed':
-            source['detail'] = False  # 충분한 피드 소개는 다시 기사 본문을 요청하지 않습니다.
-            source['detail_if_empty'] = True
+            source.setdefault('detail', False)
+            source.setdefault('detail_if_empty', True)
         if source['group'] not in GROUPS or not safe_url(source['url'], source['hosts']):
             raise ValueError('Invalid source configuration: ' + source['id'])
+        for pattern in source.get('include_patterns', []) + source.get('exclude_patterns', []):
+            re.compile(pattern)
     return {'sources': sources, 'initial_days': 45, 'initial_per_source': 3}
 
 
@@ -302,17 +378,27 @@ def covered_urls(repo: Path) -> set[str]:
     result = set()
     for group, (folder, _) in GROUPS.items():
         for path in (repo / folder).rglob('*.md'):
-            if '새소식_updates' in path.parts:
+            if any(output in path.parts for output in set(OUTPUT_DIRS.values())):
                 continue
             for url in re.findall(r'\]\(<?(https://[^\s)>]+)', path.read_text(encoding='utf-8')):
                 result.add(publication_key(group, url, True))
+                result.add('original:' + original_identity(url))
     return result
+
+
+def eligible(source: dict, item: dict, adapter) -> bool:
+    text = item['title'] + ' ' + item.get('description', '')
+    if source.get('include_patterns') and not any(re.search(pattern, text, re.I) for pattern in source['include_patterns']):
+        return False
+    if any(re.search(pattern, text, re.I) for pattern in source.get('exclude_patterns', [])):
+        return False
+    return not hasattr(adapter, 'eligible') or adapter.eligible(source, item)
 
 
 def outside_window(value: str, cutoff: datetime, now: datetime) -> tuple[bool, bool]:
     """월 단위 발행일은 월끼리 비교하고 공개 표시에 임의의 날짜를 넣지 않습니다."""
     if re.fullmatch(r'\d{4}-\d{2}', value):
-        return value < cutoff.strftime('%Y-%m'), value > now.strftime('%Y-%m')
+        return value < cutoff.astimezone(KST).strftime('%Y-%m'), value > now.astimezone(KST).strftime('%Y-%m')
     if re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
         return value < cutoff.astimezone(KST).date().isoformat(), value > (now.astimezone(KST).date() + timedelta(days=1)).isoformat()
     parsed = date_time(value)
@@ -335,15 +421,17 @@ def render(items: list[dict], group: str, stamp: str, prefix: str) -> str:
     label = GROUPS[group][1]
     lines = ['# ' + label, '', '반영: ' + stamp + ' KST', '',
              f'[카테고리 목차]({prefix}../README.md) · [날짜별 소식]({prefix}날짜별/README.md)', '']
+    if group not in ('models', 'reports'):
+        lines += ['검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.', '']
     for item in sorted(items, key=lambda item: (item.get('date', ''), item['key']), reverse=True):
         lines += ['## ' + md_text(item['title']), '']
         if item.get('update'):
-            lines += ['기존 발표의 소개 내용이 갱신되었습니다.', '']
+            lines += ['기존 자료의 소개 내용이 갱신되었습니다.', '']
         if item['summary_mode'] == '공식 한국어 소개 발췌':
             lines += ['> ' + md_text(item['summary_ko']), '']
         else:
             lines += [md_text(item['summary_ko']), '']
-        date_label = '배포 저장소 등록일' if item.get('published_kind') == 'repository_created' else ('발표일' if group == 'models' else '공식 페이지 표기일')
+        date_label = item.get('date_label') or ('배포 저장소 등록일' if item.get('published_kind') == 'repository_created' else ('발표일' if group == 'models' else '공식 페이지 표기일'))
         date = item.get('date') or '원문에 미표기'
         if 'T' in date and date_time(date):
             date = date_time(date).astimezone(KST).strftime('%Y-%m-%d %H:%M KST')
@@ -351,6 +439,21 @@ def render(items: list[dict], group: str, stamp: str, prefix: str) -> str:
                   f"[원문](<{md_url(item['url'])}>) · {date_label}: {md_text(date)}", '']
         if item.get('pdf_url'):
             lines += [f"[발행 기관의 PDF](<{md_url(item['pdf_url'])}>)", '']
+        if item.get('author'):
+            lines += [('원문 작성자(일부): ' if item['author'].endswith('…') else '원문 작성자: ') + md_text(item['author']), '']
+        if item.get('acquired_at'):
+            acquired = date_time(item['acquired_at']).astimezone(KST).strftime('%Y-%m-%d %H:%M:%S KST')
+            lines += ['가져온 시각: ' + acquired, '']
+        if item.get('source_url'):
+            lines += [f"수집 경로: [공식 목록·피드](<{md_url(item['source_url'])}>) · 방법: {md_text(item['acquisition_method'])}", '']
+        if item.get('kind') and item['kind'] != 'weights':
+            lines += ['자료 유형: ' + md_text(item['kind']), '']
+        if item.get('course_period'):
+            lines += ['강좌 운영기간: ' + md_text(item['course_period']), '']
+        if item.get('institution'):
+            lines += ['제공 기관: ' + md_text(item['institution']), '']
+        if item.get('version'):
+            lines += ['확인한 판본: v' + md_text(str(item['version'])), '']
         lines += ['개요: ' + item['summary_mode'], '']
     lines += ['공식 한국어 소개는 짧게 발췌하며, 다른 언어의 자료는 제목과 공개 정보의 주제를 한국어로 안내합니다. '
               '원문 전체를 번역하거나 새로운 분석을 작성한 글과는 구분합니다.', '']
@@ -365,7 +468,7 @@ def publish(repo: Path, state: dict, accepted: list[dict], now: datetime) -> lis
         updates = [item for item in accepted if item['group'] == group]
         if not updates:
             continue
-        base = repo / category / '새소식_updates'
+        base = repo / category / OUTPUT_DIRS[group]
         dated = base / '날짜별' / (day + '.md')
         # 당일 기록만 합치며 이전 날짜 문서는 다시 쓰지 않습니다.
         days = state.setdefault('days', {}).setdefault(group, {})
@@ -390,20 +493,27 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
     state = json.loads(original) if original else {'schema': 1, 'requests': {}, 'sources': {}, 'seen': {}, 'aliases': {}, 'robots': {}}
     if state.get('schema') != 1:
         raise ValueError('Unsupported state schema')
-    client = Client(state['requests'])
+    client = Client(state['requests'], config['sources'])
     fetch = fetcher or client.fetch
     covered = covered_urls(repo)
     accepted, reports = [], []
     started = now.isoformat()
+    # 같은 원문의 게시 위치를 보관하여 다른 분류에 복제하지 않습니다.
+    originals = state.setdefault('originals', {})
+    for key, value in state['seen'].items():
+        group = key.split(':', 1)[0]
+        if group in GROUPS and value.get('url') and value.get('fingerprint'):
+            originals.setdefault(original_identity(value['url']), {'group': group, 'key': key})
     for source in config['sources']:
         source_state = state['sources'].get(source['id'], {})
         report = {'id': source['id'], 'status': 'ok', 'new': 0, 'updated': 0}
         reports.append(report)
-        adapter = model_adapters if source['group'] == 'models' else report_adapters
+        adapter = ADAPTERS[source['group']]
         try:
             if fetcher is None and not allowed_by_robots(client, source, state, now):
                 raise FetchFailure('robots_disallowed')
             text, final_url = fetch(source['url'], source['hosts'])
+            source_acquired_at = now.isoformat() if fetcher else datetime.now(timezone.utc).isoformat()
             if text is None:
                 candidates = source_state.get('candidates', [])
                 if not source_state:
@@ -412,6 +522,12 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                 report['status'] = 'unchanged'
             else:
                 candidates = parse_feed(text) if source.get('format') == 'feed' else adapter.discover(source, text)
+                source_state['response_url'] = final_url
+                if not candidates and source.get('format') == 'feed' and source.get('allow_empty_feed'):
+                    report['status'] = 'no_recent_items'
+                    source_state.update(initialized=True, candidates=[], since=source_state.get('since', started))
+                    state['sources'][source['id']] = source_state
+                    continue
                 if not candidates and source.get('adapter') == 'huggingface_models':
                     models = json.loads(text)
                     if isinstance(models, list) and models and all(isinstance(row, dict) and
@@ -422,19 +538,20 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                         continue
                 if not candidates:
                     raise FetchFailure('parse_empty')
+                if hasattr(adapter, 'prepare_item'):
+                    candidates = [adapter.prepare_item(source, dict(item)) for item in candidates]
                 candidates = [item for item in (validate_item(item, source) for item in candidates) if item]
                 if not candidates:
                     raise FetchFailure('parse_empty')
-                if source['group'] == 'models':
-                    candidates = [item for item in candidates if adapter.eligible(source, item)]
-                    if not candidates:
-                        report['status'] = 'no_eligible_items'
+                candidates = [item for item in candidates if eligible(source, item, adapter)]
+                if not candidates:
+                    report['status'] = 'no_eligible_items'
                 source_state['candidates'] = candidates
             initial = not source_state.get('initialized')
             posted = 0
             # 모든 목록 항목을 관측합니다. 첫 실행 제한 이후 구판을 조금씩 게시하지 않습니다.
             for item in candidates:
-                if source['group'] == 'models' and hasattr(adapter, 'eligible') and not adapter.eligible(source, item):
+                if not eligible(source, item, adapter):
                     continue
                 observation_key = source['id'] + ':' + canonical(item['url'], source.get('keep_fragment', False))
                 identity = publication_key(source['group'], item['url'], source.get('keep_fragment', False))
@@ -443,8 +560,13 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                 marker = fingerprint(item)
                 if observed and observed.get('list_fingerprint') == marker and observed.get('status') != 'pending':
                     continue
-                if identity in covered:
+                if identity in covered or 'original:' + original_identity(item['url']) in covered:
                     state['seen'][observation_key] = {'list_fingerprint': marker, 'status': 'existing_analysis'}
+                    continue
+                owner = originals.get(original_identity(item['url']))
+                if owner and owner['group'] != source['group']:
+                    state['seen'][observation_key] = {'list_fingerprint': marker, 'status': 'other_category', 'owner': owner['key']}
+                    report['other_category'] = report.get('other_category', 0) + 1
                     continue
                 list_cutoff = now - timedelta(days=config.get('initial_days', 45)) if initial else date_time(source_state.get('since', started))
                 if observed and observed.get('status') == 'pending' and observed.get('cutoff'):
@@ -458,8 +580,14 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                 if initial and posted >= config.get('initial_per_source', 3):
                     state['seen'][observation_key] = {'list_fingerprint': marker, 'status': 'bootstrap_skipped'}
                     continue
+                if not initial and posted >= source.get('max_new_items', 100):
+                    state['seen'][observation_key] = {'list_fingerprint': marker, 'status': 'selection_limit'}
+                    report['not_selected'] = report.get('not_selected', 0) + 1
+                    continue
                 try:
                     full = dict(item)
+                    used_detail = False
+                    item_acquired_at = source_acquired_at
                     if source.get('detail', True) or (source.get('detail_if_empty') and len(full.get('description', '')) < 60):
                         detail_url = item.get('detail_url') or item['url']
                         if fetcher is None and not allowed_by_robots(client, source, state, now, detail_url):
@@ -473,10 +601,13 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                                 raise FetchFailure('detail_304_without_body')
                         else:
                             values = generic_detail(detail_text, detail_final)
-                            values.update(adapter.detail(source, detail_text, detail_final))
+                            if source.get('format') != 'feed' or source.get('detail'):
+                                values.update(adapter.detail(source, detail_text, detail_final))
                             if values.get('description'):
                                 values['description'] = clean(values['description'])[:600]
                             state.setdefault('details', {})[canonical(detail_url)] = values
+                        used_detail = True
+                        item_acquired_at = now.isoformat() if fetcher else datetime.now(timezone.utc).isoformat()
                         # 메타 제목이 일반 사이트명인 경우 어댑터가 반환한 원문 제목을 우선합니다.
                         full.update({k: v for k, v in values.items() if v})
                         proposed = full.pop('canonical_url', detail_final)
@@ -493,6 +624,7 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                     if source.get('format') == 'feed' and not source.get('detail', True) and item.get('description') and item.get('date'):
                         # RSS 자체에 날짜·소개가 있으면 차단된 웹 본문 없이 그 공개 소개를 씁니다.
                         full = dict(item)
+                        used_detail = False
                         report['feed_only'] = report.get('feed_only', 0) + 1
                     else:
                         retry_cutoff = (observed or {}).get('cutoff') or (
@@ -503,10 +635,15 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                         report.setdefault('detail_errors', []).append({'url': item['url'], 'error': str(exc) if isinstance(exc, FetchFailure) else type(exc).__name__})
                         continue
                 actual = publication_key(source['group'], full['url'], source.get('keep_fragment', False))
+                owner = originals.get(original_identity(full['url']))
+                if owner and owner['group'] != source['group']:
+                    state['seen'][observation_key] = {'list_fingerprint': marker, 'status': 'other_category', 'owner': owner['key']}
+                    report['other_category'] = report.get('other_category', 0) + 1
+                    continue
                 state['aliases'][identity] = actual
                 previous = state['seen'].get(actual)
                 full_fingerprint = fingerprint(full)
-                if actual in covered or (previous and (previous.get('fingerprint') == full_fingerprint or
+                if actual in covered or 'original:' + original_identity(full['url']) in covered or (previous and (previous.get('fingerprint') == full_fingerprint or
                     (previous.get('language') == 'ko' and source.get('language') != 'ko'))):
                     state['seen'][observation_key] = {'list_fingerprint': marker, 'status': 'unchanged'}
                     continue
@@ -524,28 +661,34 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                     continue
                 summary, mode = overview(full, source)
                 display = {key: value for key, value in full.items()
-                           if key in ('title', 'url', 'date', 'pdf_url', 'kind', 'published_kind')}
+                           if key in ('title', 'url', 'date', 'pdf_url', 'kind', 'published_kind', 'author', 'course_period', 'institution', 'version', 'paper_id')}
+                method = source.get('acquisition_method') or ('공식 RSS·Atom의 제목·소개문' if source.get('format') == 'feed' else '공식 목록·공개 소개문')
+                if used_detail and source.get('format') == 'feed':
+                    method += ' 및 원문의 공개 메타데이터'
                 display.update(key=actual, group=source['group'], source_name=source['name'], homepage=source.get('homepage', source['url']),
-                               summary_ko=summary, summary_mode=mode, update=bool(previous), first_seen=now.isoformat())
+                               summary_ko=summary, summary_mode=mode, update=bool(previous), first_seen=previous.get('first_seen', now.isoformat()) if previous else now.isoformat(),
+                               acquired_at=item_acquired_at, source_url=source_state.get('response_url', source['url']), acquisition_method=method,
+                               date_label=source.get('date_label', ''))
                 accepted.append(display)
                 state['seen'][actual] = {'fingerprint': full_fingerprint, 'url': full['url'],
                                         'language': source.get('language', ''),
                                         'first_seen': previous.get('first_seen', started) if previous else started}
                 state['seen'][observation_key] = {'list_fingerprint': marker, 'status': 'posted'}
+                originals[original_identity(full['url'])] = {'group': source['group'], 'key': actual}
                 report['updated' if previous else 'new'] += 1
                 posted += 1
             # 304 재시도에는 미처리 항목만 필요합니다. 전체 피드·고객 활용기 본문은 보관하지 않습니다.
             source_state['candidates'] = [item for item in candidates if state['seen'].get(
                 source['id'] + ':' + canonical(item['url'], source.get('keep_fragment', False)), {}
                 ).get('status') in (None, 'pending') and
-                (source['group'] != 'models' or adapter.eligible(source, item))]
+                eligible(source, item, adapter)]
             source_state.update(initialized=True, since=source_state.get('since', started))
             state['sources'][source['id']] = source_state
         except (FetchFailure, ValueError, TypeError, KeyError, ET.ParseError) as exc:
             report['status'] = str(exc) if isinstance(exc, FetchFailure) else 'parse_error'
             # 본문을 해석하지 못한 응답의 ETag로 304 상태에 고착되지 않게 합니다.
             state['requests'].pop(canonical(source['url']), None)
-    if not any(report['status'] in ('ok', 'unchanged', 'no_eligible_items') for report in reports):
+    if not any(report['status'] in ('ok', 'unchanged', 'no_eligible_items', 'no_recent_items') for report in reports):
         raise RuntimeError('All official sources failed; existing publications are unchanged.')
     # 한 실행의 같은 원문은 하나로 남깁니다. 한국어 원문 소개를 우선합니다.
     unique = {}
