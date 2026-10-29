@@ -48,6 +48,8 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 �
 | [논문 해설](논문해설_papers/README.md) | 한국어로 읽는 연구의 배경·원리·근거: 컴퓨팅·AI·전자·생명·산업, 마음·자유의지·인격 동일성과 계산 예제 |
 | [기술 동향](기술동향_technology/README.md) | 날짜와 근거를 갖춘 기술 현황, 표준과 벤치마크의 변화 |
 | [제품·기술 분석](제품기술분석_product-technology/README.md) | 제품·서비스의 기술과 산업 분석: 원리·경쟁 방식·공급망·표준·사업 모델·전환 비용 |
+| [AI 모델 동향과 분석](AI모델동향_ai-model-updates/README.md) | 주요 모델의 출시 변화, API·공개 가중치, 평가 조건과 실제 업무 비용 |
+| [미래·경제 보고서](미래경제보고서_future-economic-reports/README.md) | 기업·연구기관·대학의 경기 전망, 유망 기술·산업 전략과 장기 시나리오 |
 | [AI 모델과 수치 실험](AI모델과수치실험_ai-models/README.md) | 공식 모델의 구조·공개 범위, 연산 프레임워크와 별도의 교육용 수치 예제 |
 
 [의공학과 의료 AI](전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md)는 의료영상·진단, 신경보철·재활, AI 신약 연구를 측정·계산·임상 근거로 연결하는 학습 경로입니다.
@@ -86,6 +88,7 @@ These notes connect circuits, semiconductors, RTL, firmware, systems software, G
 
 - Learning: [Learning sites and channels](학습사이트와채널_learning-resources/README.md), [Engineering foundations](공학기초_foundations/README.md#english), [electrical and computer engineering](전자컴퓨터공학_ece/README.md), [semiconductor fabrication](반도체제조공정_semiconductor-fabrication/README.md), [semiconductor design](반도체설계_semiconductor-design/README.md), [reading and argument reasoning](언어이해와추리논증_reading-reasoning/README.md), [foreign languages and technical English](외국어와기술영어_foreign-languages/README.md), [humanities](인문사회_humanities/README.md).
 - Analysis: [Paper studies](논문해설_papers/README.md), [technology landscape](기술동향_technology/README.md), [product and technology analyses](제품기술분석_product-technology/README.md), [AI models and numerical experiments](AI모델과수치실험_ai-models/README.md).
+- Model releases and outlooks: [AI model releases and analysis](AI모델동향_ai-model-updates/README.md), [future and economic outlooks](미래경제보고서_future-economic-reports/README.md).
 - Practical work: [Roles and engineering practice](직무와실무기술_job-practice/README.md), [measurement and debugging](현장계측과검증_measurement-validation/README.md), [engineering cases and dated checks](설계와검증사례_engineering-cases/README.md).
 
 - Implementations: [Projects](프로젝트_projects/README.md), [examples](예제_examples/README.md), [Programmers solutions](programmers/README.md), [hardware coding practice](하드웨어코딩_hardware-coding/README.md).

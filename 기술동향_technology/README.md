@@ -6,6 +6,8 @@
 | --- | --- | --- |
 | AI 추론 시스템 | [MLPerf Inference v6.1과 비교 조건](AI추론평가_2026-10.md) | 단일 모델 처리에서 RAG·도구 사용·전체 시스템 평가로 넓어지는 범위 |
 | 모델 배포 | [공급사와 실제 모델](../AI모델과수치실험_ai-models/PROVIDERS.md) | API, 공개 가중치, 연구 코드가 제공하는 접근 범위 |
+| 새 AI 모델 | [AI 모델 동향과 분석](../AI모델동향_ai-model-updates/README.md) | 날짜가 있는 출시·평가·배포 조건의 변화 |
+| 중장기 전망 | [미래·경제 보고서](../미래경제보고서_future-economic-reports/README.md) | 경기 전망의 전제, 산업·기술 로드맵과 정책 시나리오 |
 | 메모리와 연산 | [차세대 소자·컴퓨팅](../전자컴퓨터공학_ece/54-차세대소자컴퓨팅_research-frontiers/README.md) | PIM의 데이터 이동 이점과 변환·교정 비용 |
 | 공개 하드웨어 | [EDA와 공개 하드웨어](../전자컴퓨터공학_ece/35-EDA오픈하드웨어_eda-open-hardware/README.md) | ISA·CPU 구현·PDK·설계 도구의 서로 다른 역할 |
 

@@ -2,6 +2,8 @@
 
 [뉴스](뉴스_news/README.md)는 학습 자료와 별도로, 해외·국내의 주요 소식과 기사 개요를 날짜별로 보관하는 목록입니다.
 
+[AI 모델 동향과 분석](AI모델동향_ai-model-updates/README.md)은 새 모델의 배포·평가·사용 조건을, [미래·경제 보고서](미래경제보고서_future-economic-reports/README.md)는 경기 전망과 기술·산업의 중장기 조건을 다룹니다.
+
 공학 분야는 계산·구현 대상을 기준으로 묶었습니다. 언어이해·추리논증과 인문사회, 작성자 이력은 별도의 큰 분류에 있습니다. [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md), [논문 해설](논문해설_papers/README.md), [기술 동향](기술동향_technology/README.md), [제품·기술 분석](제품기술분석_product-technology/README.md)도 독립된 목차로 읽으실 수 있습니다.
 
 논문은 계산 이론·시스템·AI·전자공학에서 뇌신경·생명공학·소재·우주 연구로 이어집니다. 제품·기술 분석은 [반도체·산업 컴퓨팅](제품기술분석_product-technology/반도체와산업컴퓨팅_chips-industrial/README.md), [기기·모빌리티](제품기술분석_product-technology/기기와모빌리티_devices-mobility/README.md), [AI·로봇](제품기술분석_product-technology/AI와로봇_ai-robotics/README.md), [항공우주 시스템](제품기술분석_product-technology/항공우주시스템_aerospace-systems/README.md), [방산 전자](제품기술분석_product-technology/방산전자_defense-electronics/README.md), [의약품·생명공학](제품기술분석_product-technology/의약품과생명공학_biomedical/README.md)으로 나누었습니다. 실제 본문에서 용어와 원리·비교 근거를 함께 읽으실 수 있습니다.

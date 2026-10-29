@@ -42,6 +42,8 @@ I hope this repository will be more than a store of finished answers. One reader
 | [Technology landscape](기술동향_technology/README.md) | Dated analysis of benchmarks and technical developments |
 | [Product and technology analyses](제품기술분석_product-technology/README.md) | Analyses of principles, competing technologies, evidence, supply chains, standards, business models and switching costs |
 | [AI models and numerical experiments](AI모델과수치실험_ai-models/README.md) | Official model descriptions and separately documented educational numerical examples |
+| [AI model releases and analysis](AI모델동향_ai-model-updates/README.md) | Dated frontier-model releases, access conditions, public weights, evaluation settings and practical costs |
+| [Future and economic outlooks](미래경제보고서_future-economic-reports/README.md) | Corporate, public-institute and university reports on economic conditions, emerging technologies and long-term scenarios |
 | [Projects](프로젝트_projects/README.md) · [examples](예제_examples/README.md) | Implementations, execution steps and recorded checks |
 | [Programmers](programmers/README.md) | Submitted solutions, study notes and incomplete-attempt analysis |
 | [Hardware coding practice](하드웨어코딩_hardware-coding/README.md) | HDLBits Verilog solutions and recorded results, original SystemVerilog/VHDL/Amaranth circuits, annotated sources, cycle traces and self-checking tests |
