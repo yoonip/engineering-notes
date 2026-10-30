@@ -70,6 +70,7 @@
     "papers:https://arxiv.org/abs/2610.39353": "papers:https://arxiv.org/abs/2610.39353",
     "papers:https://arxiv.org/abs/2610.39380": "papers:https://arxiv.org/abs/2610.39380",
     "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
+    "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030",
     "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
     "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
     "products:https://blog.st.com/ai-data-centers": "products:https://blog.st.com/ai-data-centers",
@@ -85,6 +86,7 @@
     "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform",
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
     "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
+    "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
     "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132",
@@ -136,6 +138,7 @@
     "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2",
     "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3",
     "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4",
+    "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2",
     "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72245",
@@ -1094,6 +1097,28 @@
           "url": "https://arxiv.org/abs/2610.39380",
           "version": "1"
         }
+      ],
+      "2026-10-31": [
+        {
+          "acquired_at": "2026-10-30T21:00:20.836860+00:00",
+          "acquisition_method": "MIT News 공식 연구 소개 RSS",
+          "author": "Amanda Moore | Jane Halpern | MIT Laboratory for Information and Decision Systems | Department of Electrical Engineering and Computer Science",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-30T20:15:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-10-30T20:59:11.051787+00:00",
+          "group": "papers",
+          "homepage": "https://news.mit.edu/topic/artificial-intelligence2",
+          "key": "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030",
+          "kind": "대학 연구 소개",
+          "source_name": "MIT News AI 연구 소개",
+          "source_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+          "summary_ko": "MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "MIT affiliates named 2026 Schmidt Sciences AI2050 Fellows",
+          "update": false,
+          "url": "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030"
+        }
       ]
     },
     "products": {
@@ -1393,6 +1418,25 @@
           "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
           "update": false,
           "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/"
+        },
+        {
+          "acquired_at": "2026-10-30T21:00:13.265286+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Shara Tibken",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-30T20:33:18+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-10-30T20:59:11.051787+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/"
         }
       ]
     },
@@ -1973,6 +2017,25 @@
         }
       ],
       "2026-10-31": [
+        {
+          "acquired_at": "2026-10-30T21:00:12.484295+00:00",
+          "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
+          "date": "2026-10-30T20:17:12+00:00",
+          "date_label": "공식 릴리스 게시 시각",
+          "first_seen": "2026-10-30T20:59:11.051787+00:00",
+          "group": "tools",
+          "homepage": "https://github.com/zephyrproject-rtos/zephyr/releases",
+          "key": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2",
+          "kind": "공식 안정판 릴리스",
+          "published_kind": "official_release",
+          "source_name": "Zephyr Project",
+          "source_url": "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20",
+          "summary_ko": "Zephyr Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Zephyr 4.3.2",
+          "update": false,
+          "url": "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2"
+        },
         {
           "acquired_at": "2026-10-30T16:11:28.535252+00:00",
           "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
@@ -2819,6 +2882,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games"
     },
+    "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands"
+    },
     "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials"
@@ -2838,6 +2905,10 @@
     "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4": {
       "group": "tools",
       "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4"
+    },
+    "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": {
+      "group": "tools",
+      "key": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2"
     },
     "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": {
       "group": "tools",
@@ -2866,6 +2937,10 @@
     "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027": {
       "group": "learning",
       "key": "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027"
+    },
+    "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": {
+      "group": "papers",
+      "key": "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030"
     },
     "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
       "group": "papers",
@@ -3010,10 +3085,10 @@
       "Last-Modified": "Fri, 30 Oct 2026 11:03:47 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"c762e147a3ae9e8be50e9d534b2e8a18e30b99299993d959c0995cb78557ddbc\""
+      "ETag": "W/\"7f5157386998682e33881afee5ff84064a6fb78d91fc33ae2f99773951f5f255\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"6c2c2ca9430e6b9585a441e4cb190e43fdeeb09fa839cd6d1f72ff7481efcb96\""
+      "ETag": "W/\"ac71cdfb7980de4cc3c93f4348b5fe0f15159e668e8a4af2e7bb9d3112009b60\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -3051,8 +3126,8 @@
       "ETag": "\"-HwKlA\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"098212ab6b11e5be9599e9e1955d67c6\"",
-      "Last-Modified": "Fri, 30 Oct 2026 16:00:00 GMT"
+      "ETag": "\"af9697af6757677549dea8717ec5dbda\"",
+      "Last-Modified": "Fri, 30 Oct 2026 20:33:21 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -3060,10 +3135,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b8f-qZH2dmkoxwQRC0v5yjY3LMuZN8I\""
+      "ETag": "W/\"33b8f-/1uWYAcWUnUIlvhavQjpui3c7Go\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40145-SVQcQlUDK6bWaVPTgdEcvKAYlNY\""
+      "ETag": "W/\"40145-eXWDa+k75nAa74yIchzIstsERjA\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -3108,12 +3183,12 @@
       "Last-Modified": "Fri, 30 Oct 2026 01:55:18 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793375487\"",
-      "Last-Modified": "Fri, 30 Oct 2026 15:51:27 GMT"
+      "ETag": "\"1793393674\"",
+      "Last-Modified": "Fri, 30 Oct 2026 20:54:34 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793376698\"",
-      "Last-Modified": "Fri, 30 Oct 2026 16:11:38 GMT"
+      "ETag": "\"1793392717\"",
+      "Last-Modified": "Fri, 30 Oct 2026 20:38:37 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -3192,7 +3267,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0985c7bdec056c818017fab567406c4f3\""
+      "ETag": "\"0fc09adc5c47c486cef480dc6ce278b9d\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -3277,8 +3352,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"470f6e23c28454acfcbd0210ea0b26e7\"",
-      "Last-Modified": "Fri, 30 Oct 2026 15:41:05 GMT"
+      "ETag": "\"23ded0fa0499384a4b51b31c03a956fc\"",
+      "Last-Modified": "Fri, 30 Oct 2026 20:36:29 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -4834,6 +4909,10 @@
       "list_fingerprint": "fe5fb9bf9eb9ecf32af1d37e3304a841d80f637f1f798761db57aa83a3a301e1",
       "status": "older_material"
     },
+    "mit-ai-research:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": {
+      "list_fingerprint": "a9828d2191b88b63de30cb0876b729e13654b5bd96d5a9c7aa631d9e3c57d1bc",
+      "status": "posted"
+    },
     "mit-ai-research:https://news.mit.edu/2026/mit-spinout-turns-plastic-waste-into-resilient-building-materials-0914": {
       "list_fingerprint": "ca060601abb056f7cf2fc0bc48657ecf892652c0828a790384c52fb31b298ef2",
       "status": "older_material"
@@ -5302,6 +5381,10 @@
       "list_fingerprint": "e12d0c56ef85358b8a6db0ab7211d3dfbc0171abc3be97d209fd968912db675d",
       "status": "bootstrap_skipped"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
+      "list_fingerprint": "c0caf0b3091b411159753d334e32fe472ad2269e6eb3d9e3e5974dfe2ad31d99",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/run-nvidia-bionemo-nim-microservices-for-protein-structure-prediction-in-claude-science": {
       "list_fingerprint": "435d26b85de1d03d421a7e7da0c081d4355f312021a0d78d69a0c778345e08d2",
       "status": "older_material"
@@ -5754,6 +5837,12 @@
       "language": "en",
       "url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018"
     },
+    "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": {
+      "fingerprint": "a9828d2191b88b63de30cb0876b729e13654b5bd96d5a9c7aa631d9e3c57d1bc",
+      "first_seen": "2026-10-30T20:59:11.051787+00:00",
+      "language": "en",
+      "url": "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030"
+    },
     "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
       "fingerprint": "d5e7a8628a836559d6af65563f30f246ef13e3b1b7a8ce83011a14e618415099",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -5843,6 +5932,12 @@
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+    },
+    "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
+      "fingerprint": "c0caf0b3091b411159753d334e32fe472ad2269e6eb3d9e3e5974dfe2ad31d99",
+      "first_seen": "2026-10-30T20:59:11.051787+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/"
     },
     "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": {
       "fingerprint": "8972799e585a4e9fd6c467a0e57ad0e36aefb4b1e6554a56404f917ae2a77e76",
@@ -6284,6 +6379,12 @@
       "language": "en",
       "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4"
     },
+    "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": {
+      "fingerprint": "98bcac827f10cb00408e01b7c797ed9429ccda2277a4ca50b210914f68590d45",
+      "first_seen": "2026-10-30T20:59:11.051787+00:00",
+      "language": "en",
+      "url": "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2"
+    },
     "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": {
       "fingerprint": "7fe3be758befd535f1758288d461ccb964354ced0b2f4483255c4db11e6454fe",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -6487,6 +6588,10 @@
     "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.1": {
       "list_fingerprint": "785cfcd263d8f6f288486e8dbda605e60f362b50923762149bbed262456c64d0",
       "status": "older_material"
+    },
+    "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": {
+      "list_fingerprint": "98bcac827f10cb00408e01b7c797ed9429ccda2277a4ca50b210914f68590d45",
+      "status": "posted"
     },
     "zephyr-releases:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.4.0": {
       "list_fingerprint": "debfbd3d8c307a6b5a208f7219e704c4dd0143b9052643fe6807ab95aec2e6bb",
