@@ -1,14 +1,26 @@
 # 세계 주요뉴스
 
-갱신: 2026-10-30 10:00 KST
+갱신: 2026-10-30 16:07 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 日銀, 금리동결 속 '물가 목표 2% 도달' 판단…"금리 계속 인상"\(종합\)
+
+> 일본 중앙은행인 일본은행이 30일 금융정책결정회의에서 기준금리인 단기 정책금리를 현행 '1.25% 정도'로 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030092451073>) · 2026-10-30 14:26 KST · 작성·제공: 이도연
 
 ## 네타냐후, 총선 '반쪽 승리'…개표완료 결과 과반진영 없어
 
 > 이스라엘 총선에서 베냐민 네타냐후 총리가 이끄는 여권이 다수를 차지했으나 여야 모두 과반을 확보하지 못했다.
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030054900009>) · 2026-10-30 09:55 KST · 작성·제공: 강훈상
+
+## \[쇼츠\] 튀르키예 바위 관광지서 바위 붕괴로 3명 사망
+
+> \(서울=연합뉴스\) 튀르키예의 바위산 유적지에서 바위가 굴러떨어지는 사고가 일어났습니다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030131800704>) · 2026-10-30 15:36 KST · 작성·제공: 김화영
 
 ## 파키스탄서 구급차 내부 산소통 폭발…임신부 포함 10명 사망
 
@@ -40,6 +52,12 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030005000071>) · 2026-10-30 04:06 KST · 작성·제공: 이유미
 
+## 일본은행, 기준금리 1.25% 유지…'물가 목표 2% 달성' 판단
+
+> 일본 중앙은행인 일본은행이 30일 금융정책결정회의에서 기준금리인 단기 정책금리를 현행 '1.25% 정도'로 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030092400073>) · 2026-10-30 12:25 KST · 작성·제공: 이도연
+
 ## 푸틴 "유럽과 전쟁 원치 않아…관계 회복 조치 지지"
 
 > 블라디미르 푸틴 러시아 대통령은 29일\(현지시간\) 러시아가 유럽으로 확전에 나설 것이라는 전망에 선을 그...
@@ -70,11 +88,35 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-iran-102926/8216592.html>) · 2026-10-30 04:23 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
+## 강신철 국방장관, “헤그세스 장관과 한미 동맹 굳건함 재확인.” 미한 공군 편대비행 실시
+
+> 강신철 한국 국방부 장관은 30일 피트 헤그세스 미국 전쟁부 장관과의 지난 28일 회담에 대해 “한미 동맹의 굳건함을 재확인할 수 있었던 좋은 회담이었다”고 말했습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korean-peninsula-10-30-26/8216821.html>) · 2026-10-30 14:16 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
+
+## 청와대 “북한군 지뢰 폭발 사건 필요한 조치 지속 취할 것. 호르무즈 관련 기여 방안 모색 중”
+
+> 한국 정부는 북한군이 군사분계선\(MDL\) 이남 지역에 매설한 지뢰로 인해 지난달 발생한 사건에 대해 분명한 원칙을 갖고 필요한 조치를 지속적으로 취해 나갈 것이라고 30일 밝혔습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korean-peninsula-10-30-26/8216824.html>) · 2026-10-30 15:19 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
+
+## 김정은 “무인기·AI 국방 최우선”…스텔스 무인기·600㎜ 방사포 동시 공개
+
+> 김정은 북한 국무위원장이 무인기와 국방 인공지능\(AI\) 기술 개발을 군 현대화의 최우선 과제로 제시했다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/10/30/north-korea-ai-drones/>) · 2026-10-30 14:48 KST · 작성·제공: 서울-김태이 kimt@rfa.org
+
 ## \[뉴스 동서남북\] 사진 한 장에 담긴 권력…김정은의 ‘사진 정치’
 
 > 오늘은 북한 김정은 위원장의 ‘사진 정치’의 배경과 의미에 대해 살펴보겠습니다.
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/nk-across-nation-102926/8216585.html>) · 2026-10-30 04:09 KST · 작성·제공: voadigital@voanews.com \(최원기\)
+
+## 중국, 김정은 방중 때 아펙 성공적 개최 협조 요청했을 것
+
+> 28일 일본 고베의 호텔에서 열린 한일 특별 심포지엄에서 전문가들은 지난 김정은의 단둥 방문 배경과 의미를 놓고 열띤 토론을 벌였다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/10/30/kim-jong-un-dandong-visit-us-north-korea-summit/>) · 2026-10-30 14:11 KST · 작성·제공: 마키노 요시히로 일본 히로시마대 객원교수
 
 ## 북 청진∙남포서 새 구축함 선체 조립 속도
 
@@ -84,7 +126,10 @@
 
 ## 다른 매체의 원문
 
+- [European Central Bank head resigns, allowing EU leaders to choose successor before French election](<https://abcnews.com/International/wireStory/european-central-bank-head-resigns-allowing-eu-leaders-137667888>) · ABC News 미국
 - [Ethiopia: Abiy, Putin Discuss Nuclear Energy, Trade Cooperation At Moscow Summit](<https://allafrica.com/stories/202610290539.html>) · AllAfrica · allAfrica.com
+- [Africa: All of Africa Today - October 30, 2026](<https://allafrica.com/stories/202610300163.html>) · AllAfrica · allAfrica.com
+- [Guinea Bissau: Human Trafficking Victims Stranded in Guinea-Bissau](<https://allafrica.com/stories/202610300161.html>) · AllAfrica · allAfrica.com
 - [Ghana: Breast Cancer Claims Nearly 2,000 Lives Yearly - Gender Minister](<https://allafrica.com/stories/202610290657.html>) · AllAfrica · allAfrica.com
 - [King Charles III arrives in Guyana as part of official nine-day Caribbean trip](<https://abcnews.com/International/wireStory/king-charles-iii-arrives-guyana-part-official-day-137684812>) · ABC News 미국
 - [Ghana: Pres Mahama Honoured With Doctorate in Russia](<https://allafrica.com/stories/202610290646.html>) · AllAfrica · allAfrica.com
