@@ -72,6 +72,7 @@
     "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
     "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
     "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
+    "products:https://blog.st.com/ai-data-centers": "products:https://blog.st.com/ai-data-centers",
     "products:https://blog.st.com/rust-mems-drivers": "products:https://blog.st.com/rust-mems-drivers",
     "products:https://blog.st.com/snapdragon-wear-elite": "products:https://blog.st.com/snapdragon-wear-elite",
     "products:https://blog.st.com/stspin9p": "products:https://blog.st.com/stspin9p",
@@ -79,7 +80,9 @@
     "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction",
     "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure": "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure",
     "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+    "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw",
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
+    "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform",
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
     "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
     "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
@@ -149,7 +152,8 @@
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72257": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72257",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72258": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72258",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72259": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72259",
-    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72260": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72260"
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72260": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72260",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72261": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72261"
   },
   "days": {
     "industry": {
@@ -1331,6 +1335,65 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/"
         }
+      ],
+      "2026-10-31": [
+        {
+          "acquired_at": "2026-10-30T16:11:32.300334+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "Giulia Pasqualini",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-30T10:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-10-30T16:10:24.506358+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/ai-data-centers",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "AI data centers are trading copper for control",
+          "update": false,
+          "url": "https://blog.st.com/ai-data-centers/"
+        },
+        {
+          "acquired_at": "2026-10-30T16:11:30.562903+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Nicola Sessions",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-30T16:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-10-30T16:10:24.506358+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+        },
+        {
+          "acquired_at": "2026-10-30T16:11:30.562903+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Phil Carns",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-30T15:01:36+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-10-30T16:10:24.506358+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 비용·실행 효율·GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/"
+        }
       ]
     },
     "reports": {
@@ -1908,6 +1971,27 @@
           "update": false,
           "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72260"
         }
+      ],
+      "2026-10-31": [
+        {
+          "acquired_at": "2026-10-30T16:11:28.535252+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-30",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-10-30T16:10:24.506358+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72261",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "다우기술社는 자사 제품에서 발생하는 취약점을 해결한 보안 패치 지원 o 영향을 받는 버전을 사용 중인 사용자는 다우기술 지원에 따라 패치…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "다우기술 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72261"
+        }
       ]
     }
   },
@@ -2253,6 +2337,12 @@
       "date": "2026-10-30",
       "description": "Sophos社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
       "title": "Sophos 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72261": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-10-30",
+      "description": "다우기술社는 자사 제품에서 발생하는 취약점을 해결한 보안 패치 지원 o 영향을 받는 버전을 사용 중인 사용자는 다우기술 지원에 따라 패치 적용",
+      "title": "다우기술 제품 보안 업데이트 권고"
     },
     "https://www.kdi.re.kr/research/economy?pub_no=18120": {
       "date": "",
@@ -2677,6 +2767,10 @@
       "group": "tools",
       "key": "tools:https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118"
     },
+    "https://blog.st.com/ai-data-centers": {
+      "group": "products",
+      "key": "products:https://blog.st.com/ai-data-centers"
+    },
     "https://blog.st.com/rust-mems-drivers": {
       "group": "products",
       "key": "products:https://blog.st.com/rust-mems-drivers"
@@ -2705,9 +2799,17 @@
       "group": "products",
       "key": "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout"
     },
+    "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw"
+    },
     "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages"
+    },
+    "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform"
     },
     "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
       "group": "products",
@@ -2861,6 +2963,10 @@
       "group": "tools",
       "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72260"
     },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72261": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72261"
+    },
     "https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {
       "group": "technology",
       "key": "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000"
@@ -2900,14 +3006,14 @@
       "Last-Modified": "Mon, 19 Oct 2026 06:05:51 GMT"
     },
     "https://api-docs.deepseek.com/updates": {
-      "ETag": "\"f27bf4fa502153c549a1aa187d51b077\"",
-      "Last-Modified": "Mon, 19 Oct 2026 06:05:47 GMT"
+      "ETag": "\"2db961c0d83db1b6b672649ae3584cc7\"",
+      "Last-Modified": "Fri, 30 Oct 2026 11:03:47 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"9dc069b267519c84a2c9b27589061eff1a2ba7d6ffe0409f9862f116c98e93b3\""
+      "ETag": "W/\"c762e147a3ae9e8be50e9d534b2e8a18e30b99299993d959c0995cb78557ddbc\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"4d8001c0e9a04d515daa18eaae80986eb10cec46b2e6fd22dc9119cce8b003c7\""
+      "ETag": "W/\"6c2c2ca9430e6b9585a441e4cb190e43fdeeb09fa839cd6d1f72ff7481efcb96\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -2925,7 +3031,7 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Thu, 29 Oct 2026 18:00:32 GMT"
+      "Last-Modified": "Fri, 30 Oct 2026 10:00:00 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -2945,8 +3051,8 @@
       "ETag": "\"-HwKlA\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"e6b4bf0b4f27fec9131a77dd81ef99dd\"",
-      "Last-Modified": "Thu, 29 Oct 2026 19:58:59 GMT"
+      "ETag": "\"098212ab6b11e5be9599e9e1955d67c6\"",
+      "Last-Modified": "Fri, 30 Oct 2026 16:00:00 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -2954,10 +3060,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b8d-VyHabKpM5N9tg3HhnkVF+c97jz8\""
+      "ETag": "W/\"33b8f-qZH2dmkoxwQRC0v5yjY3LMuZN8I\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40144-YJqrkHxx5454L4+n03dFlpyrgds\""
+      "ETag": "W/\"40145-SVQcQlUDK6bWaVPTgdEcvKAYlNY\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -3002,12 +3108,12 @@
       "Last-Modified": "Fri, 30 Oct 2026 01:55:18 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793348737\"",
-      "Last-Modified": "Fri, 30 Oct 2026 08:25:37 GMT"
+      "ETag": "\"1793375487\"",
+      "Last-Modified": "Fri, 30 Oct 2026 15:51:27 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793350486\"",
-      "Last-Modified": "Fri, 30 Oct 2026 08:54:46 GMT"
+      "ETag": "\"1793376698\"",
+      "Last-Modified": "Fri, 30 Oct 2026 16:11:38 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -3043,6 +3149,7 @@
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72258": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72259": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72260": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72261": {},
     "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133": {},
     "https://www.boho.or.kr/robots.txt": {
       "ETag": "W/\"316-1677147811000\"",
@@ -3085,7 +3192,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"062f9162498cd110a5b6a552bdca362f1\""
+      "ETag": "\"0985c7bdec056c818017fab567406c4f3\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -3170,8 +3277,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"c9567505b898ac98963dcfbef65a5dd0\"",
-      "Last-Modified": "Fri, 30 Oct 2026 04:05:00 GMT"
+      "ETag": "\"470f6e23c28454acfcbd0210ea0b26e7\"",
+      "Last-Modified": "Fri, 30 Oct 2026 15:41:05 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -4365,6 +4472,10 @@
       "list_fingerprint": "cdadc7621df96a80a67c3496e1e725fc6b719db724634d8b6fc0333f39d9fe60",
       "status": "posted"
     },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72261": {
+      "list_fingerprint": "911ca2663d4c3d10de70d1d4c185d2cd5093a8047737a7e75d26ca66b9787c97",
+      "status": "posted"
+    },
     "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93860&mid=a10306040000": {
       "list_fingerprint": "d8d15543a49c2c241f17085238c50bbbc61e603451d3734f26ff9c1f1821d2ae",
       "status": "older_material"
@@ -4927,6 +5038,10 @@
       "list_fingerprint": "22a0e66a75a5c51ca01ea930a0f72340e0b916226ed5f7e8980a4b3296a66965",
       "status": "bootstrap_skipped"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": {
+      "list_fingerprint": "e5fdd08afd7e3e8eedeaaa4b0bb4f505a7aa92a35439d3cc28ead78929c2febe",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/building-a-memory-driven-agent-with-nvidia-nemoclaw": {
       "list_fingerprint": "2e8193db873dd839cfa8892781d5b0642e85171a975c0b4d7184c384605adffe",
       "status": "older_material"
@@ -5082,6 +5197,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/how-to-carry-user-identity-across-federated-kubernetes-and-ai-platforms": {
       "list_fingerprint": "b34f438a3bf8d843ab2c11c552a19767c201beed3bbf273bf30688feb930305e",
       "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": {
+      "list_fingerprint": "3d47176caed748d0e6228df83a48e5d29d4bd4476977c282f0c319d90dd63bc0",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/how-to-evaluate-ai-agents-from-tool-calls-to-task-completion": {
       "list_fingerprint": "53e43591e6f4add3a43663a7890418f13732ea8385577758a5a15b4225d35178",
@@ -5647,6 +5766,12 @@
       "language": "en",
       "url": "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019"
     },
+    "products:https://blog.st.com/ai-data-centers": {
+      "fingerprint": "09e4f32f721d460325a03f02d380846d5928dd1e9d52b4f926447b3b30a9c116",
+      "first_seen": "2026-10-30T16:10:24.506358+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/ai-data-centers/"
+    },
     "products:https://blog.st.com/rust-mems-drivers": {
       "fingerprint": "92d69c47c15e40d19b4e99d480d764da1d57f6dd20cbab38c16b77356991519f",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -5689,11 +5814,23 @@
       "language": "ko",
       "url": "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/"
     },
+    "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": {
+      "fingerprint": "e5fdd08afd7e3e8eedeaaa4b0bb4f505a7aa92a35439d3cc28ead78929c2febe",
+      "first_seen": "2026-10-30T16:10:24.506358+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+    },
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
       "fingerprint": "98559625fad74686d8d8017f18e36ceee41eb227751a7c961e536cac9c585ebe",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
+    },
+    "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": {
+      "fingerprint": "3d47176caed748d0e6228df83a48e5d29d4bd4476977c282f0c319d90dd63bc0",
+      "first_seen": "2026-10-30T16:10:24.506358+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/"
     },
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
       "fingerprint": "80f5dd22c00bcca471384a380ef2e805821c52005ec498f35db3831bfe6499b0",
@@ -6045,6 +6182,10 @@
       "list_fingerprint": "79d396efa8bb7604c53fa62b48bbcac1d9732268ea78a383a0d314fe41f6e614",
       "status": "posted"
     },
+    "st-technical:https://blog.st.com/ai-data-centers": {
+      "list_fingerprint": "09e4f32f721d460325a03f02d380846d5928dd1e9d52b4f926447b3b30a9c116",
+      "status": "posted"
+    },
     "st-technical:https://blog.st.com/humanoid-robots-building-a-workforce": {
       "list_fingerprint": "e51d535df79e1323376abadd170d1f1f31128694d372a6b76c0f08f320a465dc",
       "status": "older_material"
@@ -6245,6 +6386,12 @@
       "language": "ko",
       "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72260"
     },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72261": {
+      "fingerprint": "7d511b298f75d5c5af3fe2baae293bf11f1a0d1662d9de0499ee8320a70cf88f",
+      "first_seen": "2026-10-30T16:10:24.506358+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72261"
+    },
     "zai:https://huggingface.co/zai-org/GLM-4-32B-0414": {
       "list_fingerprint": "668099737dbb9d78c04a151552a14b44e342232eb86aaf585c3669bf90b8b004",
       "status": "older_material"
@@ -6386,6 +6533,7 @@
     "deepseek": {
       "candidates": [],
       "initialized": true,
+      "response_url": "https://api-docs.deepseek.com/updates/",
       "since": "2026-10-29T03:34:54.131044+00:00"
     },
     "etri-reports": {
