@@ -1,8 +1,26 @@
 # 세계 주요뉴스
 
-갱신: 2026-10-30 05:18 KST
+갱신: 2026-10-30 10:00 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 네타냐후, 총선 '반쪽 승리'…개표완료 결과 과반진영 없어
+
+> 이스라엘 총선에서 베냐민 네타냐후 총리가 이끄는 여권이 다수를 차지했으나 여야 모두 과반을 확보하지 못했다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030054900009>) · 2026-10-30 09:55 KST · 작성·제공: 강훈상
+
+## 파키스탄서 구급차 내부 산소통 폭발…임신부 포함 10명 사망
+
+> 파키스탄 의료시설에 주차된 구급차 안에서 산소통이 폭발해 임신부를 포함한 10명이 숨졌다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030047600104>) · 2026-10-30 09:36 KST · 작성·제공: 손현규
+
+## 중동 정세 불안에 美에너지 공룡들 UAE 행사 참석 취소
+
+> 예멘 후티 반군의 사우디아라비아 공습이 계속되면서 미국 에너지 공룡들이 다음주 아랍에미리트\(UAE\)에서 열리는...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030032700009>) · 2026-10-30 09:24 KST · 작성·제공: 오수진
 
 ## 美국방, 기밀유출 의혹 합참 국장 해임…군 장성 또 '축출'\(종합\)
 
@@ -58,9 +76,18 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/nk-across-nation-102926/8216585.html>) · 2026-10-30 04:09 KST · 작성·제공: voadigital@voanews.com \(최원기\)
 
+## 북 청진∙남포서 새 구축함 선체 조립 속도
+
+> 북한이 올해 5천 톤급 구축함인 최현호와 강건호를 취역한 가운데, 세 번째와 네 번째 구축함의 선체 조립도 속도를 내는 정황이 위성사진에서 확인됐다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/10/29/north-korea-shipyard-destroyer-building/>) · 2026-10-30 06:56 KST · 작성·제공: 워싱턴-노정민 nohj@rfa.org
+
 ## 다른 매체의 원문
 
 - [Ethiopia: Abiy, Putin Discuss Nuclear Energy, Trade Cooperation At Moscow Summit](<https://allafrica.com/stories/202610290539.html>) · AllAfrica · allAfrica.com
+- [Ghana: Breast Cancer Claims Nearly 2,000 Lives Yearly - Gender Minister](<https://allafrica.com/stories/202610290657.html>) · AllAfrica · allAfrica.com
+- [King Charles III arrives in Guyana as part of official nine-day Caribbean trip](<https://abcnews.com/International/wireStory/king-charles-iii-arrives-guyana-part-official-day-137684812>) · ABC News 미국
+- [Ghana: Pres Mahama Honoured With Doctorate in Russia](<https://allafrica.com/stories/202610290646.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
