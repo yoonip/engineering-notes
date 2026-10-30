@@ -1,36 +1,50 @@
 # 제품·기술 새 자료
 
-반영: 2026-10-30 02:02 KST
+반영: 2026-10-31 01:10 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## The 1st ST applications on the Snapdragon Wear Elite eNPU shape future products thanks to AI expertise and LSM6DSV32X IMU
+## Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw
 
-STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.
 
-출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/snapdragon-wear-elite/>) · RSS·Atom 발행 시각: 2026-10-30 00:42 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/>) · RSS·Atom 발행 시각: 2026-10-31 01:00 KST
 
-RSS·Atom 표기 작성자: David Civera
+RSS·Atom 표기 작성자: Nicola Sessions
 
-가져온 시각: 2026-10-30 02:03:39 KST
+가져온 시각: 2026-10-31 01:11:30 KST
 
-수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials
+## How to Check and Configure NVIDIA GPUDirect Storage for Your Platform
 
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 비용·실행 효율·GPU·가속기 주제를 다룹니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/>) · RSS·Atom 발행 시각: 2026-10-30 00:00 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/>) · RSS·Atom 발행 시각: 2026-10-31 00:01 KST
 
-RSS·Atom 표기 작성자: Anoushka Bhutani
+RSS·Atom 표기 작성자: Phil Carns
 
-가져온 시각: 2026-10-30 02:03:37 KST
+가져온 시각: 2026-10-31 01:11:30 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## AI data centers are trading copper for control
+
+STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.
+
+출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/ai-data-centers/>) · RSS·Atom 발행 시각: 2026-10-30 19:00 KST
+
+RSS·Atom 표기 작성자: Giulia Pasqualini
+
+가져온 시각: 2026-10-31 01:11:32 KST
+
+수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
