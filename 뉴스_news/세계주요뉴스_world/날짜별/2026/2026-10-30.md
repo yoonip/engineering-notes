@@ -1,8 +1,14 @@
 # 세계 주요뉴스
 
-갱신: 2026-10-30 16:07 KST
+갱신: 2026-10-30 23:09 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 스페인 열차 참사에 산체스 '조기총선 승부수' 타격
+
+> 스페인에서 올해 들어서만 두 차례 열차 참사가 벌어지면서 다음달 조기 총선 승부수를 던진 페드로 산체스 스페...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030180200085>) · 2026-10-30 21:16 KST · 작성·제공: 김지연
 
 ## 日銀, 금리동결 속 '물가 목표 2% 도달' 판단…"금리 계속 인상"\(종합\)
 
@@ -27,6 +33,12 @@
 > 파키스탄 의료시설에 주차된 구급차 안에서 산소통이 폭발해 임신부를 포함한 10명이 숨졌다.
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030047600104>) · 2026-10-30 09:36 KST · 작성·제공: 손현규
+
+## 러·우크라 국지휴전 나흘째 올레시키 고립 주민들 대피 시작
+
+> 러시아가 점령한 우크라이나 남부 올레시키에서 국지적 휴전이 발효한지 나흘째인 30일\(현지시간\) 수개월째 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030183300108>) · 2026-10-30 22:21 KST · 작성·제공: 김동호
 
 ## 중동 정세 불안에 美에너지 공룡들 UAE 행사 참석 취소
 
@@ -64,6 +76,12 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030005600108>) · 2026-10-30 03:56 KST · 작성·제공: 김동호
 
+## 트럼프 "이란 전쟁 곧 마무리될 것…핵무기 불가 보장 필요"
+
+> 도널드 트럼프 미국 대통령이 30일\(현지시간\) 이란과의 전쟁이 곧 마무리될 것이라고 예고하면서도 이란의 핵무기...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030180500009>) · 2026-10-30 21:12 KST · 작성·제공: 신재우
+
 ## 러시아 드론, 우크라이나 드니프로 기차역 공격…14명 사망
 
 > 러시아가 발사한 제트 추진 드론이 29일 우크라이나 드니프로의 중앙역을 공격해 플랫폼에서 통근 열차를 기다리던 14명이 숨졌다고 우크라이나 당국이 밝혔습니다.
@@ -87,12 +105,6 @@
 > 중동 분쟁을 둘러싸고 미국과 이란 간 협상을 재개하려는 새로운 노력이 진행되는 가운데, 도널드 트럼프 미국 대통령은 JD 밴스 부통령이 인도주의적 지원을 제안하기 위해 이란 지도부와 접촉했다고 밝혔습니다.
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-iran-102926/8216592.html>) · 2026-10-30 04:23 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 강신철 국방장관, “헤그세스 장관과 한미 동맹 굳건함 재확인.” 미한 공군 편대비행 실시
-
-> 강신철 한국 국방부 장관은 30일 피트 헤그세스 미국 전쟁부 장관과의 지난 28일 회담에 대해 “한미 동맹의 굳건함을 재확인할 수 있었던 좋은 회담이었다”고 말했습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korean-peninsula-10-30-26/8216821.html>) · 2026-10-30 14:16 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
 
 ## 청와대 “북한군 지뢰 폭발 사건 필요한 조치 지속 취할 것. 호르무즈 관련 기여 방안 모색 중”
 
@@ -124,12 +136,31 @@
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/10/29/north-korea-shipyard-destroyer-building/>) · 2026-10-30 06:56 KST · 작성·제공: 워싱턴-노정민 nohj@rfa.org
 
+## 한국 국방 "미한 동맹 굳건함 재확인"...KF-21, 미 공군 전력과 첫 편대비행
+
+후속 내용이 반영된 기사입니다.
+
+> 강신철 한국 국방부 장관은 30일 피트 헤그세스 미국 전쟁부 장관과의 지난 28일 회담에 대해 “한미 동맹의 굳건함을 재확인할 수 있었던 좋은 회담이었다”고 말했습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korean-peninsula-10-30-26/8216821.html>) · 2026-10-30 14:16 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
+
+## "VOA로 희망 전했다"...한국 정부, 애국지사 3인 '11월의 독립운동가' 선정
+
+> 한국 정부는 일제강점기 VOA를 청취해 국제정세를 한국 국내에 알린 애국지사 3인을 \`2026년 11월의 독립운동가’로 선정했다고 밝혔습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korean-peninsula-10-30-26/8216825.html>) · 2026-10-30 16:19 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
+
 ## 다른 매체의 원문
 
 - [European Central Bank head resigns, allowing EU leaders to choose successor before French election](<https://abcnews.com/International/wireStory/european-central-bank-head-resigns-allowing-eu-leaders-137667888>) · ABC News 미국
 - [Ethiopia: Abiy, Putin Discuss Nuclear Energy, Trade Cooperation At Moscow Summit](<https://allafrica.com/stories/202610290539.html>) · AllAfrica · allAfrica.com
 - [Africa: All of Africa Today - October 30, 2026](<https://allafrica.com/stories/202610300163.html>) · AllAfrica · allAfrica.com
+- [Blockchain intelligence firms link North Korea to $6.3B hack on Binance](<https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance>) · NPR
 - [Guinea Bissau: Human Trafficking Victims Stranded in Guinea-Bissau](<https://allafrica.com/stories/202610300161.html>) · AllAfrica · allAfrica.com
+- [Africa: From Commonwealth Connections to Economic Opportunity - Expanding Africa-Caribbean Trade Linkages](<https://allafrica.com/stories/202610300354.html>) · AllAfrica · allAfrica.com
+- [Sporadic gunfire sends Ethiopians fleeing into Kenya as trucks remain stuck at border](<https://abcnews.com/International/wireStory/sporadic-gunfire-sends-ethiopians-fleeing-kenya-trucks-remain-137699895>) · ABC News 미국
+- [Nigeria: Warning Over Nigerian President Bola Tinubu's 2027 Re-Election Bid Issued By Lobbying Firm, Not U.S. Government](<https://allafrica.com/stories/202610300313.html>) · AllAfrica · allAfrica.com
+- [Alaska's Senate race faces claims of spoiler candidate. And, Hegseth ousts Army general](<https://www.npr.org/2026/10/30/g-s1-150889/up-first-newsletter-midterm-elections-iran-war-veteran-affairs-loans>) · NPR
 - [Ghana: Breast Cancer Claims Nearly 2,000 Lives Yearly - Gender Minister](<https://allafrica.com/stories/202610290657.html>) · AllAfrica · allAfrica.com
 - [King Charles III arrives in Guyana as part of official nine-day Caribbean trip](<https://abcnews.com/International/wireStory/king-charles-iii-arrives-guyana-part-official-day-137684812>) · ABC News 미국
 - [Ghana: Pres Mahama Honoured With Doctorate in Russia](<https://allafrica.com/stories/202610290646.html>) · AllAfrica · allAfrica.com
