@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-10-31 14:42 KST
+갱신: 2026-10-31 21:30 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -26,6 +26,12 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261030172500797>) · 2026-10-31 08:00 KST · 작성·제공: 이준삼
 
+## 폴란드, 전 정권 임명한 헌재소장 직무정지…야권 "쿠데타"\(종합\)
+
+> 폴란드에서 헌법재판소의 주도권을 둘러싸고 도날트 투스크 총리가 이끄는 친유럽 중도 성향 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261031027851009>) · 2026-10-31 20:00 KST · 작성·제공: 김계연
+
 ## 이란 공격 급증에도 호르무즈 원유수송은 현상 유지
 
 > 호르무즈 해협을 통과하는 선박에 대한 이란의 공격이 급증했지만, 원유 수출에는 큰 영향을 미치지 못하는 것으로...
@@ -38,11 +44,23 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261031027800009>) · 2026-10-31 12:52 KST · 작성·제공: 송진원
 
+## 민주콩고 에볼라 사망자 5천명 넘어…아프리카 전역 확산 우려
+
+> 아프리카 콩고민주공화국\(민주콩고\)의 에볼라 사망자가 5천명을 넘어섰다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261031044500108>) · 2026-10-31 19:14 KST · 작성·제공: 김동호
+
 ## 키옥시아, AI발 낸드 수요 폭발에 역대 최대 실적…순이익 37배
 
 > 인공지능\(AI\) 보급으로 낸드플래시 수요가 늘어난 덕분에 일본 반도체 기업 키옥시아 홀딩스가 역대 최대 반기...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261031026600073>) · 2026-10-31 11:59 KST · 작성·제공: 이도연
+
+## '독극물 사형' 생존 美죄수 "육체와 마음에 통증"…재집행 거부
+
+> 미국에서 독극물 주입 사형 집행에도 살아남은 여성 사형수 크리스타 파이크\(50\)가 "깨어보니 끔찍한 통증과 혼...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261031047700009>) · 2026-10-31 21:23 KST · 작성·제공: 김승욱
 
 ## 美중간선거 역대최다 4천800만명 사전투표…상원 접전지서 급증
 
@@ -126,8 +144,14 @@
 
 ## 다른 매체의 원문
 
+- [Drone photo award winners: Far-out landscapes. Ship recycling. Rugs, rugs rugs\!](<https://www.npr.org/2026/10/31/g-s1-150698/drone-photo-award-winners>) · NPR
+- [Police detain 3 protesters during rally as Polish president backs suspended judge](<https://abcnews.com/International/wireStory/police-detain-3-protesters-overnight-rally-polish-president-137731099>) · ABC News 미국
+- [UK PM signals the government will consider an apology for its role in the slave trade](<https://abcnews.com/International/wireStory/uk-prime-minister-signals-government-apology-role-slave-137730910>) · ABC News 미국
 - [As their doubts about US grow, Gulf Arabs turn to middle powers for security](<https://www.csmonitor.com/World/Middle-East/2026/1030/persian-gulf-arabs-security-alliances-europe-asia?icid=rss>) · The Christian Science Monitor
+- [France heads into third weekend of protests as youth-led rallies sweep Europe](<https://abcnews.com/International/wireStory/france-heads-weekend-protests-youth-led-rallies-sweep-137729925>) · ABC News 미국
 - [Gambia: Man Jailed for Seven Months After Stabbing Brother in Chest](<https://allafrica.com/stories/202610300529.html>) · AllAfrica · allAfrica.com
+- [Africa: South Africa, Netherlands Strengthen Water Management](<https://allafrica.com/stories/202610300542.html>) · AllAfrica · allAfrica.com
+- [Tunisia: Tunisia's 1st Agricultural Census Launched](<https://allafrica.com/stories/202610300525.html>) · AllAfrica · allAfrica.com
 - [Kenya: Ruto - Why Bayern V Ajax in Nairobi Is Perfect Tribute to Former PM Raila Odinga](<https://allafrica.com/stories/202610300524.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
