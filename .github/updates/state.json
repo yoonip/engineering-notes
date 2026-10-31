@@ -12,12 +12,15 @@
     "learning:https://www.kmooc.kr/view/course/detail/15940": "learning:https://www.kmooc.kr/view/course/detail/15940",
     "learning:https://www.kmooc.kr/view/course/detail/16143": "learning:https://www.kmooc.kr/view/course/detail/16143",
     "learning:https://www.kmooc.kr/view/course/detail/20133": "learning:https://www.kmooc.kr/view/course/detail/20133",
+    "learning:https://www.kmooc.kr/view/course/detail/20221": "learning:https://www.kmooc.kr/view/course/detail/20221",
     "learning:https://www.kmooc.kr/view/course/detail/20261": "learning:https://www.kmooc.kr/view/course/detail/20261",
     "learning:https://www.kmooc.kr/view/course/detail/20390": "learning:https://www.kmooc.kr/view/course/detail/20390",
     "learning:https://www.kmooc.kr/view/course/detail/20392": "learning:https://www.kmooc.kr/view/course/detail/20392",
+    "learning:https://www.kmooc.kr/view/course/detail/20402": "learning:https://www.kmooc.kr/view/course/detail/20402",
     "learning:https://www.kmooc.kr/view/course/detail/20491": "learning:https://www.kmooc.kr/view/course/detail/20491",
     "learning:https://www.kmooc.kr/view/course/detail/20552": "learning:https://www.kmooc.kr/view/course/detail/20552",
     "learning:https://www.kmooc.kr/view/course/detail/20794": "learning:https://www.kmooc.kr/view/course/detail/20794",
+    "learning:https://www.kmooc.kr/view/course/detail/20818": "learning:https://www.kmooc.kr/view/course/detail/20818",
     "learning:https://www.kmooc.kr/view/course/detail/20826": "learning:https://www.kmooc.kr/view/course/detail/20826",
     "learning:https://www.kmooc.kr/view/course/detail/20949": "learning:https://www.kmooc.kr/view/course/detail/20949",
     "learning:https://www.kmooc.kr/view/course/detail/20956": "learning:https://www.kmooc.kr/view/course/detail/20956",
@@ -30,7 +33,9 @@
     "learning:https://www.kmooc.kr/view/course/detail/21284": "learning:https://www.kmooc.kr/view/course/detail/21284",
     "learning:https://www.kmooc.kr/view/course/detail/21288": "learning:https://www.kmooc.kr/view/course/detail/21288",
     "learning:https://www.kmooc.kr/view/course/detail/21310": "learning:https://www.kmooc.kr/view/course/detail/21310",
+    "learning:https://www.kmooc.kr/view/course/detail/21313": "learning:https://www.kmooc.kr/view/course/detail/21313",
     "learning:https://www.kmooc.kr/view/course/detail/21316": "learning:https://www.kmooc.kr/view/course/detail/21316",
+    "learning:https://www.kmooc.kr/view/course/detail/21387": "learning:https://www.kmooc.kr/view/course/detail/21387",
     "models:google-announcement:gemini-4-argon-for-robotics": "models:https://developers.googleblog.com/gemini-4-argon-for-robotics",
     "models:google-announcement:gemini-4-argon-our-next-era-of-frontier-intelligence": "models:google-announcement:gemini-4-argon",
     "models:google-announcement:gemini-4-carbon-our-next-frontier-model": "models:google-announcement:introducing-gemini-4-carbon",
@@ -270,6 +275,108 @@
           "title": "AI 경영자 과정 수강생들의 공동 집필 사례 / Learner collaborates with MIT peers to develop book of AI insights",
           "update": false,
           "url": "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027"
+        }
+      ],
+      "2026-11-01": [
+        {
+          "acquired_at": "2026-10-31T18:43:18.424317+00:00",
+          "acquisition_method": "K-MOOC 홈페이지의 공개 강좌카드·강좌 소개문",
+          "course_period": "2026.07.17 ~ 2026.12.08",
+          "date": "",
+          "date_label": "",
+          "first_seen": "2026-10-31T18:41:45.885569+00:00",
+          "group": "learning",
+          "homepage": "https://www.kmooc.kr/",
+          "institution": "대구한의대학교",
+          "key": "learning:https://www.kmooc.kr/view/course/detail/20221",
+          "kind": "강좌 안내",
+          "source_name": "K-MOOC 공개 강좌",
+          "source_url": "https://www.kmooc.kr/",
+          "summary_ko": "K-MOOC 공개 강좌에서 공개한 강의·학습 안내입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "외국인 학습자를 위한 대학생활 101 : 성공적인 대학생활을 위한 핵심정보",
+          "update": false,
+          "url": "https://www.kmooc.kr/view/course/detail/20221"
+        },
+        {
+          "acquired_at": "2026-10-31T18:43:16.329119+00:00",
+          "acquisition_method": "K-MOOC 홈페이지의 공개 강좌카드·강좌 소개문",
+          "course_period": "2026.09.01 ~ 2026.12.18",
+          "date": "",
+          "date_label": "",
+          "first_seen": "2026-10-31T18:41:45.885569+00:00",
+          "group": "learning",
+          "homepage": "https://www.kmooc.kr/",
+          "institution": "충남대학교",
+          "key": "learning:https://www.kmooc.kr/view/course/detail/20402",
+          "kind": "강좌 안내",
+          "source_name": "K-MOOC 공개 강좌",
+          "source_url": "https://www.kmooc.kr/",
+          "summary_ko": "K-MOOC 공개 강좌에서 공개한 강의·학습 안내입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "심리학 START",
+          "update": false,
+          "url": "https://www.kmooc.kr/view/course/detail/20402"
+        },
+        {
+          "acquired_at": "2026-10-31T18:43:22.701213+00:00",
+          "acquisition_method": "K-MOOC 홈페이지의 공개 강좌카드·강좌 소개문",
+          "course_period": "2026.10.15 ~ 2026.12.31",
+          "date": "",
+          "date_label": "",
+          "first_seen": "2026-10-31T18:41:45.885569+00:00",
+          "group": "learning",
+          "homepage": "https://www.kmooc.kr/",
+          "institution": "동국대학교 K학술확산연구소",
+          "key": "learning:https://www.kmooc.kr/view/course/detail/20818",
+          "kind": "강좌 안내",
+          "source_name": "K-MOOC 공개 강좌",
+          "source_url": "https://www.kmooc.kr/",
+          "summary_ko": "K-MOOC 공개 강좌에서 공개한 강의·학습 안내입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "서양철학과 불교",
+          "update": false,
+          "url": "https://www.kmooc.kr/view/course/detail/20818"
+        },
+        {
+          "acquired_at": "2026-10-31T18:43:20.291166+00:00",
+          "acquisition_method": "K-MOOC 홈페이지의 공개 강좌카드·강좌 소개문",
+          "course_period": "2026.10.18 ~ 2027.01.31",
+          "date": "",
+          "date_label": "",
+          "first_seen": "2026-10-31T18:41:45.885569+00:00",
+          "group": "learning",
+          "homepage": "https://www.kmooc.kr/",
+          "institution": "계명대학교",
+          "key": "learning:https://www.kmooc.kr/view/course/detail/21313",
+          "kind": "강좌 안내",
+          "source_name": "K-MOOC 공개 강좌",
+          "source_url": "https://www.kmooc.kr/",
+          "summary_ko": "K-MOOC 공개 강좌에서 공개한 강의·학습 안내입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "게임컨셉디자인",
+          "update": false,
+          "url": "https://www.kmooc.kr/view/course/detail/21313"
+        },
+        {
+          "acquired_at": "2026-10-31T18:43:24.730263+00:00",
+          "acquisition_method": "K-MOOC 홈페이지의 공개 강좌카드·강좌 소개문",
+          "course_period": "2026.10.12 ~ 2026.12.31",
+          "date": "",
+          "date_label": "",
+          "first_seen": "2026-10-31T18:41:45.885569+00:00",
+          "group": "learning",
+          "homepage": "https://www.kmooc.kr/",
+          "institution": "대구대학교",
+          "key": "learning:https://www.kmooc.kr/view/course/detail/21387",
+          "kind": "강좌 안내",
+          "source_name": "K-MOOC 공개 강좌",
+          "source_url": "https://www.kmooc.kr/",
+          "summary_ko": "K-MOOC 공개 강좌에서 공개한 강의·학습 안내입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "디지털텍스처링",
+          "update": false,
+          "url": "https://www.kmooc.kr/view/course/detail/21387"
         }
       ]
     },
@@ -2568,6 +2675,12 @@
       "kind": "강좌 안내",
       "title": "건강보험 보장성강화 제대로 알기"
     },
+    "https://www.kmooc.kr/view/course/detail/20221": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "외국인 학습자를 위한 대학생활 101 : 성공적인 대학생활을 위한 핵심정보"
+    },
     "https://www.kmooc.kr/view/course/detail/20261": {
       "date": "",
       "description": "",
@@ -2586,6 +2699,12 @@
       "kind": "강좌 안내",
       "title": "인공지능 시대의 언어학 입문"
     },
+    "https://www.kmooc.kr/view/course/detail/20402": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "심리학 START"
+    },
     "https://www.kmooc.kr/view/course/detail/20491": {
       "date": "",
       "description": "본 과목은 소셜 네트워크 분석을 이해하는 심화 과정으로, 네트워크 지표 중 사회 자본, 중개, 구조적 등위성, 중심-주변 등을 살펴본다. 또한, 알고리즘을 기반으로 네트워크내 커뮤니티를 감지하는 기법에 대해서도 공부하게 된다. 본 수업 이수후 네트워크 지표에 관한 고급 분석을 수행할 수 있다.",
@@ -2603,6 +2722,12 @@
       "description": "",
       "kind": "강좌 안내",
       "title": "삶을 버티게 하는 가치들"
+    },
+    "https://www.kmooc.kr/view/course/detail/20818": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "서양철학과 불교"
     },
     "https://www.kmooc.kr/view/course/detail/20826": {
       "date": "",
@@ -2676,11 +2801,23 @@
       "kind": "강좌 안내",
       "title": "일반화학"
     },
+    "https://www.kmooc.kr/view/course/detail/21313": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "게임컨셉디자인"
+    },
     "https://www.kmooc.kr/view/course/detail/21316": {
       "date": "",
       "description": "",
       "kind": "강좌 안내",
       "title": "고급게임엔진"
+    },
+    "https://www.kmooc.kr/view/course/detail/21387": {
+      "date": "",
+      "description": "",
+      "kind": "강좌 안내",
+      "title": "디지털텍스처링"
     },
     "https://www.spri.kr/posts/view/23959?code=AI-Brief": {
       "date": "2026-03-24",
@@ -3070,6 +3207,26 @@
       "group": "technology",
       "key": "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000"
     },
+    "https://www.kmooc.kr/view/course/detail/20221": {
+      "group": "learning",
+      "key": "learning:https://www.kmooc.kr/view/course/detail/20221"
+    },
+    "https://www.kmooc.kr/view/course/detail/20402": {
+      "group": "learning",
+      "key": "learning:https://www.kmooc.kr/view/course/detail/20402"
+    },
+    "https://www.kmooc.kr/view/course/detail/20818": {
+      "group": "learning",
+      "key": "learning:https://www.kmooc.kr/view/course/detail/20818"
+    },
+    "https://www.kmooc.kr/view/course/detail/21313": {
+      "group": "learning",
+      "key": "learning:https://www.kmooc.kr/view/course/detail/21313"
+    },
+    "https://www.kmooc.kr/view/course/detail/21387": {
+      "group": "learning",
+      "key": "learning:https://www.kmooc.kr/view/course/detail/21387"
+    },
     "https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
       "group": "industry",
       "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
@@ -3109,10 +3266,10 @@
       "Last-Modified": "Fri, 30 Oct 2026 11:03:47 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"6db37ddef92eaa6b13cae7a58d9a8ad27f85f2e37bbf3f474a618950ce973bb3\""
+      "ETag": "W/\"c2ca1c1a31a43f2fa1a77a98e3b3020ee8adb1a76508ad53726f5bcfae78c7f0\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"16c191fd72a599e3de734462f07642a6d79d2032d45724590bda0172029327c2\""
+      "ETag": "W/\"b54d5377e7e8054d52553ae9f2ebf54b88290814542b8658ad2a93065657d750\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -3147,7 +3304,7 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"hKhzMA\""
+      "ETag": "\"K7V_4w\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"bAkg8A\""
@@ -3162,10 +3319,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b8f-5H0fBqAFhUl15B78yCwoelU+oDM\""
+      "ETag": "W/\"33b8f-NGnLiOPg/M2a5AfTzrUTSmyKojs\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40145-EYsp+aF5cz4J5LVJptqkaJtGWAo\""
+      "ETag": "W/\"40145-j6I6d5f9tvR0p72zwkvtDlvcSS4\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -3209,12 +3366,12 @@
       "Last-Modified": "Sat, 31 Oct 2026 00:55:16 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793453799\"",
-      "Last-Modified": "Sat, 31 Oct 2026 13:36:39 GMT"
+      "ETag": "\"1793471846\"",
+      "Last-Modified": "Sat, 31 Oct 2026 18:37:26 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793452858\"",
-      "Last-Modified": "Sat, 31 Oct 2026 13:20:58 GMT"
+      "ETag": "\"1793472190\"",
+      "Last-Modified": "Sat, 31 Oct 2026 18:43:10 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -3293,7 +3450,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0332653fcc2ce0c861e040018371d5259\""
+      "ETag": "\"099bdffa5e42605c591a5a1f0bf07ab39\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -3313,6 +3470,9 @@
     "https://www.kmooc.kr/view/course/detail/20133": {
       "ETag": "\"05a16b116dd43e6291cf4e20bb2f376f2\""
     },
+    "https://www.kmooc.kr/view/course/detail/20221": {
+      "ETag": "\"05cd8cc3113f0875b636be69bbf456cef\""
+    },
     "https://www.kmooc.kr/view/course/detail/20261": {
       "ETag": "\"01af24c4495ba9412125858c86988a4fa\""
     },
@@ -3322,6 +3482,9 @@
     "https://www.kmooc.kr/view/course/detail/20392": {
       "ETag": "\"0c6e829cc117a3fc949b3e457d322f65e\""
     },
+    "https://www.kmooc.kr/view/course/detail/20402": {
+      "ETag": "\"0e616f172c4300bed61055236de27e9af\""
+    },
     "https://www.kmooc.kr/view/course/detail/20491": {
       "ETag": "\"07a98fddcea3243776b57eb9d0cbb7a0f\""
     },
@@ -3330,6 +3493,9 @@
     },
     "https://www.kmooc.kr/view/course/detail/20794": {
       "ETag": "\"01190f14983cbccf0a5659155f91af612\""
+    },
+    "https://www.kmooc.kr/view/course/detail/20818": {
+      "ETag": "\"0b7954a14d63abacb19ae4066139bee57\""
     },
     "https://www.kmooc.kr/view/course/detail/20826": {
       "ETag": "\"082f4aacf5e9f9bdb948f68851f1fb585\""
@@ -3367,8 +3533,14 @@
     "https://www.kmooc.kr/view/course/detail/21310": {
       "ETag": "\"095a2a55b6f6ff7aa16076ab5f0ad87f0\""
     },
+    "https://www.kmooc.kr/view/course/detail/21313": {
+      "ETag": "\"0794c44c7b58c9278f9aa7373b749b1e9\""
+    },
     "https://www.kmooc.kr/view/course/detail/21316": {
       "ETag": "\"0731ee4650b756bdbf7a1964ac623f561\""
+    },
+    "https://www.kmooc.kr/view/course/detail/21387": {
+      "ETag": "\"0baa9aae01dfe68b181a9a9e6cc69b3a1\""
     },
     "https://www.lgbr.co.kr/business/list.do": {},
     "https://www.lgbr.co.kr/economy/list.do": {},
@@ -3378,8 +3550,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"15f58b9577ff93250c0a2c533676c3fa\"",
-      "Last-Modified": "Sat, 31 Oct 2026 12:40:19 GMT"
+      "ETag": "\"05921a4f4fcd3a16e954143aae277550\"",
+      "Last-Modified": "Sat, 31 Oct 2026 17:16:29 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -4637,6 +4809,10 @@
       "list_fingerprint": "9f8c8d048f80df070d560922e742aefc7f5de3de96c8d189d406c925f5ac56ae",
       "status": "older_material"
     },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20221": {
+      "list_fingerprint": "b0b17515fb9636e6dc47860907b965b4aa2711acb7ac63c62edb10342b494700",
+      "status": "posted"
+    },
     "kmooc-courses:https://www.kmooc.kr/view/course/detail/20261": {
       "list_fingerprint": "306be25d78e98ae016a82ead7d9ca9b3d766fef1d3568bb001bf8d1e26381a80",
       "status": "older_material"
@@ -4649,6 +4825,10 @@
       "list_fingerprint": "0f0248d92894c8874c95b413b0c0b8fec72877c259ed04884b41528f4c6029f0",
       "status": "older_material"
     },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20402": {
+      "list_fingerprint": "cc902fa219c565467053164ea1c064ea2545229c3a4b26bc2808cac70481ada3",
+      "status": "posted"
+    },
     "kmooc-courses:https://www.kmooc.kr/view/course/detail/20491": {
       "list_fingerprint": "518c39ac5871b0d81c7fff8969c53dd27973aea097d5bd52bf5ebf6d685abcab",
       "status": "older_material"
@@ -4660,6 +4840,10 @@
     "kmooc-courses:https://www.kmooc.kr/view/course/detail/20794": {
       "list_fingerprint": "86c828f98bac76d0460d7212c7627b7df15cb790f8861ce2e0249c2ae52827ed",
       "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/20818": {
+      "list_fingerprint": "d514ee107d284844db7a9bc43163701a82c510ee0714cdbd6adc3efbd1c23a11",
+      "status": "posted"
     },
     "kmooc-courses:https://www.kmooc.kr/view/course/detail/20826": {
       "list_fingerprint": "f19239418196ef316a3e91c0c571aaf9858dbb3c926e9796363de3381dd30ece",
@@ -4709,15 +4893,57 @@
       "list_fingerprint": "caf164df2f6beba4d908109dbc3428276c57a27f23d244e4f126e7832111db42",
       "status": "older_material"
     },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21313": {
+      "list_fingerprint": "d661e41c53d8e167f4a66fb2f3fbb40c846a874188d600b7ab1263714027ecaa",
+      "status": "posted"
+    },
     "kmooc-courses:https://www.kmooc.kr/view/course/detail/21316": {
       "list_fingerprint": "35f083cba2659ab49f8a14726dadaa8019ebc10089266a9513bebd7bd4facd76",
       "status": "older_material"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21351": {
+      "list_fingerprint": "1d8e6a1975449985b1c520b489de905f545d4651c52a125bb1aa99a14ba32b2b",
+      "status": "selection_limit"
+    },
+    "kmooc-courses:https://www.kmooc.kr/view/course/detail/21387": {
+      "list_fingerprint": "f689c68ce64ccc1b24bd1b184eb99ea3a2bbb35486f2d1c4c49079dc4030a4ff",
+      "status": "posted"
     },
     "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027": {
       "fingerprint": "008f526abce7a6d78488f0e939578b43b55d6afece244def83bf6859deb79d85",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027"
+    },
+    "learning:https://www.kmooc.kr/view/course/detail/20221": {
+      "fingerprint": "b0b17515fb9636e6dc47860907b965b4aa2711acb7ac63c62edb10342b494700",
+      "first_seen": "2026-10-31T18:41:45.885569+00:00",
+      "language": "ko",
+      "url": "https://www.kmooc.kr/view/course/detail/20221"
+    },
+    "learning:https://www.kmooc.kr/view/course/detail/20402": {
+      "fingerprint": "cc902fa219c565467053164ea1c064ea2545229c3a4b26bc2808cac70481ada3",
+      "first_seen": "2026-10-31T18:41:45.885569+00:00",
+      "language": "ko",
+      "url": "https://www.kmooc.kr/view/course/detail/20402"
+    },
+    "learning:https://www.kmooc.kr/view/course/detail/20818": {
+      "fingerprint": "d514ee107d284844db7a9bc43163701a82c510ee0714cdbd6adc3efbd1c23a11",
+      "first_seen": "2026-10-31T18:41:45.885569+00:00",
+      "language": "ko",
+      "url": "https://www.kmooc.kr/view/course/detail/20818"
+    },
+    "learning:https://www.kmooc.kr/view/course/detail/21313": {
+      "fingerprint": "d661e41c53d8e167f4a66fb2f3fbb40c846a874188d600b7ab1263714027ecaa",
+      "first_seen": "2026-10-31T18:41:45.885569+00:00",
+      "language": "ko",
+      "url": "https://www.kmooc.kr/view/course/detail/21313"
+    },
+    "learning:https://www.kmooc.kr/view/course/detail/21387": {
+      "fingerprint": "f689c68ce64ccc1b24bd1b184eb99ea3a2bbb35486f2d1c4c49079dc4030a4ff",
+      "first_seen": "2026-10-31T18:41:45.885569+00:00",
+      "language": "ko",
+      "url": "https://www.kmooc.kr/view/course/detail/21387"
     },
     "lg-business:https://www.lgbr.co.kr/report/view.do?idx=19732": {
       "list_fingerprint": "c3710ff71ff2d7f3a6d43df43bee3b99f7f2d127ca4fb1d83a2533b66c65fcaf",
