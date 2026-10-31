@@ -4357,10 +4357,10 @@
       "day": "2026-10-31"
     },
     "https://abcnews.com/International/wireStory/police-detain-3-protesters-overnight-rally-polish-president-137731099": {
-      "title": "Police detain 3 protesters during rally as Polish president backs suspended judge",
+      "title": "Protests erupt around a top court in Poland after its president is suspended",
       "url": "https://abcnews.com/International/wireStory/police-detain-3-protesters-overnight-rally-polish-president-137731099",
-      "published_at": "2026-10-31T10:31:40+00:00",
-      "feed_rank": 0,
+      "published_at": "2026-10-31T16:50:20+00:00",
+      "feed_rank": 2,
       "source_id": "abc-us",
       "source_name": "ABC News 미국",
       "group": "world",
@@ -4368,12 +4368,17 @@
       "homepage": "https://abcnews.com/",
       "license_url": null,
       "source_kind": "news",
-      "score": 10.016717181111112,
+      "score": 10.799980453055555,
       "key": "https://abcnews.com/International/wireStory/police-detain-3-protesters-overnight-rally-polish-president-137731099",
-      "seen_at": "2026-10-31T12:30:39.818148+00:00",
-      "update": false,
-      "history": [],
-      "day": "2026-10-31"
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": true,
+      "history": [
+        {
+          "title": "Police detain 3 protesters during rally as Polish president backs suspended judge",
+          "seen_at": "2026-10-31T12:30:39.818148+00:00"
+        }
+      ],
+      "day": "2026-11-01"
     },
     "https://abcnews.com/International/wireStory/uk-prime-minister-signals-government-apology-role-slave-137730910": {
       "title": "UK PM signals the government will consider an apology for its role in the slave trade",
@@ -4450,58 +4455,385 @@
       "update": false,
       "history": [],
       "day": "2026-10-31"
+    },
+    "https://www.yna.co.kr/view/AKR20261101001600071": {
+      "title": "[속보] 美국무 \"韓의원 비자문제, 수십년전 행동 관련…해결할 것\"",
+      "url": "https://www.yna.co.kr/view/AKR20261101001600071",
+      "published_at": "2026-10-31T16:59:11+00:00",
+      "credit": "박성민",
+      "feed_rank": 4,
+      "source_id": "yonhap-world",
+      "source_name": "연합뉴스 국제",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/international/all",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 48.64748045305556,
+      "key": "https://www.yna.co.kr/view/AKR20261101001600071",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261101001400071": {
+      "title": "[속보] 美국무 \"트럼프, 김정은과 대화 준비돼…아직 회담일정 없어\"",
+      "url": "https://www.yna.co.kr/view/AKR20261101001400071",
+      "published_at": "2026-10-31T16:52:03+00:00",
+      "credit": "박성민",
+      "feed_rank": 5,
+      "source_id": "yonhap-world",
+      "source_name": "연합뉴스 국제",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/international/all",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 48.37859156416667,
+      "key": "https://www.yna.co.kr/view/AKR20261101001400071",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261101000700071": {
+      "title": "\"미군기지 26곳 이란 공격에 수십억불 피해…레이더 우선표적\"",
+      "url": "https://www.yna.co.kr/view/AKR20261101000700071",
+      "published_at": "2026-10-31T16:39:16+00:00",
+      "credit": "박성민",
+      "excerpt": "이란 전쟁이 시작된 이후 중동 지역의 미군 기지가 이란 측 공격에 파손·파괴돼 수십억 달러의 피해가 발생했...",
+      "feed_rank": 6,
+      "source_id": "yonhap-world",
+      "source_name": "연합뉴스 국제",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/international/all",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 48.015536008611114,
+      "key": "https://www.yna.co.kr/view/AKR20261101000700071",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.voakorea.com/a/8217264.html": {
+      "title": "G20 외교장관 회의 오늘 폐막…공동성명 채택 여부 주목",
+      "url": "https://www.voakorea.com/a/8217264.html",
+      "published_at": "2026-10-31T15:57:54+00:00",
+      "credit": "voadigital@voanews.com (함지하)",
+      "excerpt": "미국 애틀랜타에서 열린 주요 20개국(G20) 외교장관 회의가 31일 이틀간의 일정을 마무리했습니다.",
+      "feed_rank": 0,
+      "source_id": "voa-ko-peninsula",
+      "source_name": "VOA 한국어 · 한반도",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://voakorea.com/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 37.226091564166666,
+      "key": "https://www.voakorea.com/a/8217264.html",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031044652004": {
+      "title": "'핼러윈' 홍대·이태원 16만 인파…새벽까지 시끌벅적(종합2보)",
+      "url": "https://www.yna.co.kr/view/AKR20261031044652004",
+      "published_at": "2026-10-31T16:02:07+00:00",
+      "credit": "정지수",
+      "excerpt": "4년 전 10·29 이태원 참사 이후 처음으로 주말과 핼러윈이 겹친 10월 31일 밤 이태원과 홍대에는...",
+      "feed_rank": 0,
+      "source_id": "yonhap-society",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 36.29636934194444,
+      "key": "https://www.yna.co.kr/view/AKR20261031044652004",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031049900004": {
+      "title": "[속보] 핼러윈 인파 혼잡으로 지하철 이태원역 무정차 통과",
+      "url": "https://www.yna.co.kr/view/AKR20261031049900004",
+      "published_at": "2026-10-31T14:45:53+00:00",
+      "credit": "이동환",
+      "excerpt": "dhlee@yna.co.kr (끝)",
+      "feed_rank": 2,
+      "source_id": "yonhap-society",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 34.72581378638889,
+      "key": "https://www.yna.co.kr/view/AKR20261031049900004",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031044651004": {
+      "title": "'핼러윈' 토요일밤 홍대 13만·이태원 3만명…질서 속 자유(종합)",
+      "url": "https://www.yna.co.kr/view/AKR20261031044651004",
+      "published_at": "2026-10-31T13:45:11+00:00",
+      "credit": "정지수",
+      "excerpt": "4년 전 10·29 이태원 참사 이후 처음으로 주말과 핼러윈이 겹친 31일, 밤이 될수록 이태원과 홍대...",
+      "feed_rank": 1,
+      "source_id": "yonhap-culture",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 33.864147119722226,
+      "key": "https://www.yna.co.kr/view/AKR20261031044651004",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261101000300007": {
+      "title": "'골대 불운' 이강인 67분 뛴 아틀레티코, 7연승으로 선두 도약",
+      "url": "https://www.yna.co.kr/view/AKR20261101000300007",
+      "published_at": "2026-10-31T15:39:31+00:00",
+      "credit": "오명언",
+      "excerpt": "스페인 프로축구 아틀레티코 마드리드에서 뛰는 이강인(25)이 선발 출전해 팀의 7연승에 힘을 보탰다.",
+      "feed_rank": 0,
+      "source_id": "yonhap-sports",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 31.919702675277776,
+      "key": "https://www.yna.co.kr/view/AKR20261101000300007",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.donga.com/news/Entertainment/article/all/20261101/134942952/1": {
+      "title": "아일릿 원희, 삼촌들 정답 스틸에 서운함 폭발…“너무 신났는데요”",
+      "url": "https://www.donga.com/news/Entertainment/article/all/20261101/134942952/1",
+      "published_at": "2026-10-31T15:00:10+00:00",
+      "excerpt": "그룹 아일릿(ILLIT) 원희가 ‘놀라운 토요일’ 멤버들의 장난에 귀여운 서운함을 드러내 웃음을 안겼다.31일 오후 방송된 tvN 예능 프로그램 ‘놀라운 토요일’은 ‘2026 천생연분’ 특집으로 꾸며졌으며, 게스트로는 엔믹스 멤버 릴리와 설윤, 아일릿 멤버 윤아와 원희가 출연했다.이날 방송에서는 과자 사진을 보고 한 명당 한 글자씩 이름을 맞히는 ‘여섯이 한마음-과자 이름 편’ 미션이 진행됐다.",
+      "feed_rank": 0,
+      "source_id": "donga",
+      "source_name": "동아일보",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.donga.com/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 31.263869341944446,
+      "key": "https://www.donga.com/news/Entertainment/article/all/20261101/134942952/1",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031050000004": {
+      "title": "핼러윈 인파 혼잡에 이태원역 무정차 통과…\"진입 자제\"",
+      "url": "https://www.yna.co.kr/view/AKR20261031050000004",
+      "published_at": "2026-10-31T14:50:20+00:00",
+      "credit": "정지수",
+      "excerpt": "31일 오후 11시 47분부터 지하철 6호선이 이태원역을 무정차 통과한다.",
+      "feed_rank": 0,
+      "source_id": "yonhap-industry",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 31.099980453055558,
+      "key": "https://www.yna.co.kr/view/AKR20261031050000004",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031049800004": {
+      "title": "핼러윈 홍대서 '마약 사탕' 나눠줬다?…경찰 \"오인신고로 확인\"",
+      "url": "https://www.yna.co.kr/view/AKR20261031049800004",
+      "published_at": "2026-10-31T14:44:58+00:00",
+      "credit": "정지수",
+      "excerpt": "핼러윈을 맞은 31일 토요일 밤 서울 마포구 홍대 거리에서 '마약 사탕'을 건네받았다는 신고가 들어왔으나 이는...",
+      "feed_rank": 3,
+      "source_id": "yonhap-society",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 30.560536008611113,
+      "key": "https://www.yna.co.kr/view/AKR20261031049800004",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.donga.com/news/Society/article/all/20261031/134942945/1": {
+      "title": "가평 단독주택 화재로 50대 남녀 2명 숨져…1명 화상",
+      "url": "https://www.donga.com/news/Society/article/all/20261031/134942945/1",
+      "published_at": "2026-10-31T14:04:29+00:00",
+      "excerpt": "31일 오전 0시 38분께 경기 가평군 조종면 신하리의 한 단독주택에서 불이 나 50대 남녀 2명이 숨졌다.“50대 아내와 남동생이 집 안에 남아 있다”는 신고를 받은 소방 당국은 인력 58명과 장비 24대를 투입해 진화에 나섰다.구조대는 오전 1시 23분께 건물 안쪽 방에서 심정지 상태인 2명을 발견해 병원으로 옮겼으나 숨졌다.함께 있던 3명은 대피했으며, 이 중 50대 남성 1명은 손에 2도 화상을 입어 병원 치료를 받았다.불은 샌드위치 패널로 된 주택과 인접한 간이 찜질방을 태운 뒤 오전 2시 24분께 완전히 꺼졌다.경찰과 소방 당국은 LPG 난로에서 가스가 새 불이 났을 가능성 등 화재 원인을 조사 중이다.",
+      "feed_rank": 1,
+      "source_id": "donga",
+      "source_name": "동아일보",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.donga.com/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 30.18581378638889,
+      "key": "https://www.donga.com/news/Society/article/all/20261031/134942945/1",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.donga.com/news/Politics/article/all/20261031/134942931/1": {
+      "title": "조현, 독일·폴란드 외교장관과 회담…“방산 협력 강화 기대”",
+      "url": "https://www.donga.com/news/Politics/article/all/20261031/134942931/1",
+      "published_at": "2026-10-31T13:33:29+00:00",
+      "excerpt": "조현 외교부 장관은 독일·폴란드 외교장과 만나 방산 등 분야에서 협력을 강화해 나가자고 밝혔다.외교부에 따르면 조 장관은 30일(현지시간) 미국 애틀랜타에서 열린 주요 20개국(G20) 외교장관회의 참석을 계기로 요한 바데풀 독일 외교장관과 회담했다.조 장관은 프리드리히 메르츠 독일 총리 방한을 계기로 양국이 ‘강화된 전략적 동반자 관계’를 최초 수립한 것을 평가했다.또 “국방·방산, 경제, 첨단산업 등 제반 분야에서의 협력을 더욱 강화해 나가기를 기대한다”고 말했다.바데풀 장관은 “앞으로 외교당국 간 더욱 긴밀히 협력해 나가기를 기대한다”며 “무역·투자, 첨단산업 등 분야에서 양국 협력이 한층 강화되길 바란다”고 했다.아울러 조 장관은 라도스와프 시코르스키 폴란드 부총리 겸 외교장관과 첫 회담을 갖고 양국 관계 발전 방안과 지역 정세에 대해 의견을 교환했다.조 장관은 지난 4월 도날드 투스크 총리의 공식 방한을 계기로 양국 관계가 ‘포괄적 전략 동반자 관계’로 격상된 것",
+      "feed_rank": 2,
+      "source_id": "donga",
+      "source_name": "동아일보",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.donga.com/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 29.519147119722223,
+      "key": "https://www.donga.com/news/Politics/article/all/20261031/134942931/1",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031048200504": {
+      "title": "조현, 독일·폴란드 외교장관과 회담…방산 등 협력 논의",
+      "url": "https://www.yna.co.kr/view/AKR20261031048200504",
+      "published_at": "2026-10-31T12:53:07+00:00",
+      "credit": "민선희",
+      "excerpt": "조현 외교부 장관은 미국 애틀랜타에서 열린 주요 20개국(G20) 외교장관회의 참석을 계기로 독일·폴란드 외교...",
+      "feed_rank": 0,
+      "source_id": "yonhap-politics",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 29.146369341944443,
+      "key": "https://www.yna.co.kr/view/AKR20261031048200504",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://abcnews.com/International/wireStory/evacuees-reunite-family-ukrainian-belarusian-border-after-fleeing-137730820": {
+      "title": "Evacuees reunite with family at the Ukrainian-Belarusian border after fleeing Oleshky",
+      "url": "https://abcnews.com/International/wireStory/evacuees-reunite-family-ukrainian-belarusian-border-after-fleeing-137730820",
+      "published_at": "2026-10-31T17:00:19+00:00",
+      "feed_rank": 5,
+      "source_id": "abc-us",
+      "source_name": "ABC News 미국",
+      "group": "world",
+      "summary_mode": "link_only",
+      "homepage": "https://abcnews.com/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 10.516369341944444,
+      "key": "https://abcnews.com/International/wireStory/evacuees-reunite-family-ukrainian-belarusian-border-after-fleeing-137730820",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://abcnews.com/International/wireStory/netherlands-coast-guard-rescues-38-people-adrift-rubber-137734449": {
+      "title": "Netherlands coast guard rescues 38 people adrift in a rubber boat",
+      "url": "https://abcnews.com/International/wireStory/netherlands-coast-guard-rescues-38-people-adrift-rubber-137734449",
+      "published_at": "2026-10-31T16:03:12+00:00",
+      "feed_rank": 0,
+      "source_id": "abc-us",
+      "source_name": "ABC News 미국",
+      "group": "world",
+      "summary_mode": "link_only",
+      "homepage": "https://abcnews.com/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 10.3144248975,
+      "key": "https://abcnews.com/International/wireStory/netherlands-coast-guard-rescues-38-people-adrift-rubber-137734449",
+      "seen_at": "2026-10-31T17:44:20.070369+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
     }
   },
   "feeds": {
     "abc-us": {
-      "ETag": "W/\"NQkDbMJFbdZOsVoEuDZ+ag==\""
+      "ETag": "W/\"/9BIrWdMwJ5Djp+FZrkJiQ==\""
     },
     "allafrica": {
-      "Last-Modified": "Sat, 31 Oct 2026 12:30:00 GMT"
+      "Last-Modified": "Sat, 31 Oct 2026 17:30:00 GMT"
     },
     "yonhap-world": {
-      "ETag": "1793449843688",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:55 GMT"
+      "ETag": "1793468671221",
+      "Last-Modified": "Sat, 31 Oct 2026 17:43:55 GMT"
     },
     "yonhap": {
-      "ETag": "1793449845288",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:54 GMT"
+      "ETag": "1793468680493",
+      "Last-Modified": "Sat, 31 Oct 2026 17:40:54 GMT"
     },
     "yonhap-politics": {
-      "ETag": "1793449849959",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:54 GMT"
+      "ETag": "1793468664005",
+      "Last-Modified": "Sat, 31 Oct 2026 17:40:54 GMT"
     },
     "yonhap-economy": {
-      "ETag": "1793449860176",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:54 GMT"
+      "ETag": "1793468681299",
+      "Last-Modified": "Sat, 31 Oct 2026 17:43:54 GMT"
     },
     "yonhap-industry": {
-      "ETag": "1793449858232",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:55 GMT"
+      "ETag": "1793468689692",
+      "Last-Modified": "Sat, 31 Oct 2026 17:43:55 GMT"
     },
     "yonhap-society": {
-      "ETag": "1793449874500",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:55 GMT"
+      "ETag": "1793468681847",
+      "Last-Modified": "Sat, 31 Oct 2026 17:43:55 GMT"
     },
     "yonhap-health": {
-      "ETag": "1793449866409",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:55 GMT"
+      "ETag": "1793468652728",
+      "Last-Modified": "Sat, 31 Oct 2026 17:40:55 GMT"
     },
     "yonhap-culture": {
-      "ETag": "1793449873051",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:55 GMT"
+      "ETag": "1793468689925",
+      "Last-Modified": "Sat, 31 Oct 2026 17:43:55 GMT"
     },
     "yonhap-sports": {
-      "ETag": "1793449845956",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:56 GMT"
+      "ETag": "1793468671939",
+      "Last-Modified": "Sat, 31 Oct 2026 17:43:56 GMT"
     },
     "yonhap-northkorea": {
-      "ETag": "1793449847609",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:54 GMT"
+      "ETag": "1793468683226",
+      "Last-Modified": "Sat, 31 Oct 2026 17:40:54 GMT"
     },
     "rfa-ko": {
-      "ETag": "W/\"3fadb-h04D3CB8a43qBRSoKdgcMyqahPE\"",
-      "Last-Modified": "Sat, 31 Oct 2026 12:28:30 GMT"
+      "ETag": "W/\"3fadb-bwzwKa1JLgernVMSP38wpptrT8U\"",
+      "Last-Modified": "Sat, 31 Oct 2026 17:42:37 GMT"
     }
   },
   "observed": {
@@ -18670,16 +19002,16 @@
       "at": "2026-10-31T05:42:51.011124+00:00"
     },
     "6b7285a182e15f34a228b2e84f463475b749f7f3c3122340c9f58621fd6f78b4": {
-      "fingerprint": "9a119c9411fda868c077bdcc6ecccd0b55161e7ef9c94ee17d81916b1764b6a1",
-      "at": "2026-10-31T12:30:39.818148+00:00"
+      "fingerprint": "775b56902aea2287fd697b601463dd5417595127681f4628ae97c3ee748bfdf9",
+      "at": "2026-10-31T17:44:20.070369+00:00"
     },
     "c731852c057c98cdb8b45b454cc36fc47a322d627d52a24aeec8e9d50f80fcd8": {
       "fingerprint": "0655b847942f4a0b5263342a4106f8944f9682e6d16db541468731fdc04dde19",
       "at": "2026-10-31T12:30:39.818148+00:00"
     },
     "d559c23e3517019a6b7678d6db1583c1d421f5fa0500499adc45f42dbaf03b8d": {
-      "fingerprint": "23e4a247bdde9390be73e891f0d0070fb3b0acc2d69171b8b025fd324152eb77",
-      "at": "2026-10-31T12:30:39.818148+00:00"
+      "fingerprint": "933934d5b71e23c1f6b5ec4bf455c248d681bfd867a49a9084d7eb14c15180fc",
+      "at": "2026-10-31T17:44:20.070369+00:00"
     },
     "836afd5e8b102b1b21e3727830d711816e2a7764874a791e5560e9ea6a80cce7": {
       "fingerprint": "d0cd2d6c700510d7a47fbf2997ee1d3677a1cfa8267f76c6c6fe9f4305ed7679",
@@ -19066,8 +19398,8 @@
       "at": "2026-10-31T12:30:39.818148+00:00"
     },
     "c739d7fc55d0f3c95b551996d338ad92e4a0a8b9089e590bac47a5e59c44229b": {
-      "fingerprint": "cdaf58275c45fb3b2fe03a868915b3c126b2f63b92a8c72c1c11abd7aaf82db6",
-      "at": "2026-10-31T12:30:39.818148+00:00"
+      "fingerprint": "43e9a823ac32cc0e33fa0ac4d884bd4976160cd2b1829b6c4608a4415ba8b748",
+      "at": "2026-10-31T17:44:20.070369+00:00"
     },
     "1ad0d857c6df92149796547e504076861f461697d2be2fdfc805f9f1a6ff3426": {
       "fingerprint": "96a24d94e51927bf27af977411f0176f3b2e9e738411d4abfa93961713550d8a",
@@ -19160,6 +19492,150 @@
     "65a0da71ad37731429b509c8fd5c8649a6a155fb0c9bca6b739bcd0c009e8b63": {
       "fingerprint": "f63b081660684eab7ef32dbedb042cbf55e3bd14f0724144e3bc9264de16644d",
       "at": "2026-10-31T12:30:39.818148+00:00"
+    },
+    "33eb2583d7b08c9c3fbce24267b3143ebda54fbeb2cc5378cc7ffe92eba9e132": {
+      "fingerprint": "e9027ce29e94b3a0284dae058fd31b7b2cee0e42f2e0f6c251591f9d84e2814c",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "2ccb3c674e56f4c0ae065adcddf51c89718c6c1bc8f6fee7b2c5a27dbfac5506": {
+      "fingerprint": "ca2eb1f4e2863bb56619645dc0f531121c9f8abf6e6b0c83c3bddc7b1d45bf23",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "f0ac33144fc13e7c52a8fb45f2b388d73ee587a1f2fbf0478aa86dd1e573c26d": {
+      "fingerprint": "a2f075028f0ce8f89309075815ce1b5524a17bd7a1f4b9140355fafc4d33b679",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "9a8b6cc4859943a06c3af611610ed5edfc2db49ef518ddb01a1ff425a29a6b1c": {
+      "fingerprint": "ae2e56648aa2e2b12bc7a759b39e5d0cef8c8efff576d3c9f27ee5b0ef3829c4",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "ed88c602b3755daa3b9b04a9beb93576a9b208db65a046db50d7202ad41ea215": {
+      "fingerprint": "0cb6266ddaab32fdaf9e1baf550ed81bc807274eec0759aa47d63ee8b80f1ef3",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "b5897b893d30a2f9bf8bfb69e69629902d36208e97d4658eb45041d9c99ecc49": {
+      "fingerprint": "9e067c8e88933102926954534bc390028e1edbe7e3e78326b8f12fca10dc7a8c",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "376ea58ee91bd121aa921db07928ff61b85aab43c627afec24f8bc0e775926a7": {
+      "fingerprint": "37f92896b30bd19acd52859380ad12db2b7aad4dd963373b109a90073793b0c2",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "1cc6c38683bfd80c0f06c8ce92c2836467e02c3b2508423a439aa730f81528e8": {
+      "fingerprint": "27a145ed5fe8ce6b690a2436dd3f52eb954fa67f015f29f5afa5fff8c03d1a0b",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "21e4a4e22386bc76f0f61d8a60468b123db855616a84f9c2edb1adabe4f2be58": {
+      "fingerprint": "ca5c0c378ee3e5ecd12a5cf654ba115da7324f6f5bc0daed397eb1d69a7db647",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "ef6976e1b56452be0d64db98a12d0d60cdc2249f50943dae69218a5bcf99218c": {
+      "fingerprint": "9c4f6f938117f9323982220a6176eca67854d698ab633d249a0ed41c500fa3f1",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "fac011f74442ffea882f6e82471fe4831476901f9a35fc31e9fa415e7289519b": {
+      "fingerprint": "5ee478f7d2c58d15976bb5ccefe445ff279bbd884bc338e6518af351b40d1838",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "fad338f96fc74956ef177ef19334e55f499266462a0462a69ea69d2a124c40dd": {
+      "fingerprint": "b3def9dd5c2f663145ba03839d126058fae287314f76a2508e252a94a41bee96",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "efb4aeb520a56f2dbcb5de523ef920241f0ae77acbd132569dac8833fce573a9": {
+      "fingerprint": "6882b5752cef2fc8ea336482a3b6212d2aac98337916651ee69229bdd4261358",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "55e80798851107a0fb8e821265990c0d40c16ed759a47f251a3ba9c7109216de": {
+      "fingerprint": "5660537e1fe989bfa06c855eb3a57c46869c63749e698d8108dfcc0e62fe0e57",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "451795efbe0199468033a04e10fc8b482c08898a57d753e555b6fd816711f134": {
+      "fingerprint": "d217f5c48f7a2c3bef4a063a410ce99767d313b7ef5fa6dbafd2e3c913ca5ba1",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "2673deb984ab9f6d0560824f62e1f575a0e31bf40ef2107bb920f9b8856374ef": {
+      "fingerprint": "b706d1d52de97b1f5fe28413b818aeabb22e2ab1ed6e35f074f08af9aa1f967d",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "6593ab55718e430b4a6312f63cb564ee1c282f8ddb814e4735e28ec4cba4dd92": {
+      "fingerprint": "f91f2e4c9e8fb4e215028375b778de5ba2cda9998ddfe36581754fbbd89bac56",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "1b600d6023e63a2b28e3fb78fa74cb647525831cbb8d5b3188f869cf7980d22f": {
+      "fingerprint": "8bb931b94c0275d1cb1cf6ac3054df7e0d73b3068d25d04ab16321db398ce914",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "b64a5fef30af9d623fdf7a2cd20ee6ef54e796ab5c6ee42ca54b188c827ccdae": {
+      "fingerprint": "919b791f6a1d838c9433fd1cdcf135545aff7f7c1dcd52d084831e2db78f33c2",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "d2a96b1a56cf9a1d188904eb6ed3a96547fbd4b3fb2fe52956d89d6fc1de0cb5": {
+      "fingerprint": "851e24b4d145c912522cd19e3b003fe67537d3c76afbf7d4e5a20ab4ae4e61e2",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "8695f98036d61d719482a84d0dc8281ed372686932921dce6223cf8a9fcf24e8": {
+      "fingerprint": "1cf961909cecb1f66ad921dae377d393dfab0fbd6241af763b82450a8be503d7",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "3beec2b7db4c8749de3bbd92c16ae4942869d801ffd043d684fd3a890a142f09": {
+      "fingerprint": "32d33f5e1291246e7ec71f8cf5549490ace830231ee3e05e15377049e5018c9a",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "7c3a3b59fea5af8f456865cc077dcbf60567f2f4518e9c6b2132f64fe1fbeaba": {
+      "fingerprint": "455c1d515ecd2537e7084118825c7745d4f2cb34ecb104db5474924fcb58215b",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "c5bf411fb313d9df1c666137bb076524d2a381244673842e6ac267103c38bf79": {
+      "fingerprint": "ee8252633a4373b3568fd3a4dac1f7b65b317d4fc0f2c94ca410c322b9870966",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "761af87df31fcb286d7024bb68e078024728bd4e7e17f76994fc11c610a1c6f8": {
+      "fingerprint": "72593418c3132eaec9c123bfb9477a6ebbb12fd19145dd203a94ea0b8935dc6c",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "695c98de83b33bebbdcaf68c4e05a2dc110cd8ed92bf983c73cc87b37801fd68": {
+      "fingerprint": "c485f24fc0c1215fc58f25f129fe508722141564b0b88a8af51ebe3c7a493b4e",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "89f0e921bc7c92f0a40ba8ac23bbe012826404208f73c8fe8a9c49eb384396b4": {
+      "fingerprint": "54bb17c71d07516e7cc44c88362c3666753e60c9a64d0c5c22e3b250fb902ae7",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "3c5d460facc7941dde6ad1fe3cb91c56efb3548b5027611b840cf27dfb2a5fcd": {
+      "fingerprint": "8847cc1ca40ec874237f69359b1d4b57cc9743a85d9aea5d68d207285478df6d",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "6fdccf101eb27a878fa6d35a3c96941872744c2d0b96a22cbfc2aebbbcfaddde": {
+      "fingerprint": "5e9549fbbe79c66e5cbdc7b2eb4725f93ed7ab0f98042d5323ac927843904275",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "3c784e9ae98f311a567ec7fb5f122490edd387927084c196d0673def826c4cca": {
+      "fingerprint": "62a8b8c70ba1f132861ce2801b9d98b50e4fe979b1fabb38a3c6bc5b36c7c883",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "9227054427c18c1083b39e7df7498e451337dee9cd7d289db99e2f17478f0d15": {
+      "fingerprint": "d6a1bba0e4d20af8ab1b8b6b83a628fcb0d01afd1468cae85747b38ca5ad4f56",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "2df23cbf729a79db4a488ff00e4207a7452e33cd398eeac0fb964738dbf63d22": {
+      "fingerprint": "1947fabfbe2ebf33b8a72e92022125ffb9fa841d25fcd4fa4fbe305213ee61e8",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "91da7118fbdc4ed926a0bd20a8764da6df61cf43bf4695d0e5d1e8b06967f5d8": {
+      "fingerprint": "d5c02b5c4ad536dbab27e3b7fe1bb728cabf76a589a9022ee81f358e041b4b03",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "6d1c61d3036cde4da72409d8af301361f3cdbcc295cb83f749118b05fae96a33": {
+      "fingerprint": "ba05afce6a8820796908895bb6de81836797797f0bb1ff1d5764236e723e2867",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "dc6eb91cef4701784815ef3509627490ed2762b5650d85a59d6b6b9082cd1854": {
+      "fingerprint": "f87b434d91d3b6e5ae9f08d000e82c3d74b687a85a4944cb9a53e91ebaabaff7",
+      "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "8f28aaca72ea732a32f30ec5b861f69796cb7e170e41eee6d3a173c0d6761b28": {
+      "fingerprint": "79bc3130ea7ac0d2037b1b2de26f478328a18c290e2257af069c18cd0aba00b9",
+      "at": "2026-10-31T17:44:20.070369+00:00"
     }
   }
 }
