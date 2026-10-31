@@ -3265,12 +3265,6 @@
       "ETag": "\"2db961c0d83db1b6b672649ae3584cc7\"",
       "Last-Modified": "Fri, 30 Oct 2026 11:03:47 GMT"
     },
-    "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"c2ca1c1a31a43f2fa1a77a98e3b3020ee8adb1a76508ad53726f5bcfae78c7f0\""
-    },
-    "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"b54d5377e7e8054d52553ae9f2ebf54b88290814542b8658ad2a93065657d750\""
-    },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
     "https://blog.google/robots.txt": {},
@@ -3304,7 +3298,7 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"K7V_4w\""
+      "ETag": "\"li3g7w\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"bAkg8A\""
@@ -3319,10 +3313,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b8f-NGnLiOPg/M2a5AfTzrUTSmyKojs\""
+      "ETag": "W/\"33b8f-w9nGMH9n3w9qgqjcKnXu4CB84Dg\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40145-j6I6d5f9tvR0p72zwkvtDlvcSS4\""
+      "ETag": "W/\"40145-6R/MazvFuIoiWQflK46BDySK03I\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -3366,12 +3360,12 @@
       "Last-Modified": "Sat, 31 Oct 2026 00:55:16 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793471846\"",
-      "Last-Modified": "Sat, 31 Oct 2026 18:37:26 GMT"
+      "ETag": "\"1793485382\"",
+      "Last-Modified": "Sat, 31 Oct 2026 22:23:02 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793472190\"",
-      "Last-Modified": "Sat, 31 Oct 2026 18:43:10 GMT"
+      "ETag": "\"1793485526\"",
+      "Last-Modified": "Sat, 31 Oct 2026 22:25:26 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -3450,7 +3444,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"099bdffa5e42605c591a5a1f0bf07ab39\""
+      "ETag": "\"0edc59178d5270fcb8c35f43cb803c747\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
