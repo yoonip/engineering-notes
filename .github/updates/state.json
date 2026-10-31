@@ -3109,10 +3109,10 @@
       "Last-Modified": "Fri, 30 Oct 2026 11:03:47 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"9f0092a9c715f026ea5a1d002234f753575798a7cd9c535a35538480cda345b9\""
+      "ETag": "W/\"4d0f7ce0c19937a33649640c6ddb40bb3fb3de0794264812385f76d01bfb3789\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"e87fd18ed222571b9eb004141e863a0addaf34d01ad6a492f78bf11f5e8946f6\""
+      "ETag": "W/\"77809fb30b656acabb34f36774e58840bff1e558daeeafbb4369a55a0977e077\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -3147,7 +3147,7 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"bAkg8A\""
+      "ETag": "\"XDn8hw\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"bAkg8A\""
@@ -3162,10 +3162,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b8f-BSkhWB5fhvLJPqGVurcpfYk6aUk\""
+      "ETag": "W/\"33b8f-Oc/0jAIr1d6FDiC2SNq01NFSs/g\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40145-db2osnMSxrzso2MyRnvP4yOwujw\""
+      "ETag": "W/\"40145-OcOvEuMAiokT2Qq8ZiXMEIHEMW0\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -3200,6 +3200,7 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
+    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -3209,12 +3210,12 @@
       "Last-Modified": "Sat, 31 Oct 2026 00:55:16 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793407205\"",
-      "Last-Modified": "Sat, 31 Oct 2026 00:40:05 GMT"
+      "ETag": "\"1793431552\"",
+      "Last-Modified": "Sat, 31 Oct 2026 07:25:52 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793408457\"",
-      "Last-Modified": "Sat, 31 Oct 2026 01:00:57 GMT"
+      "ETag": "\"1793431637\"",
+      "Last-Modified": "Sat, 31 Oct 2026 07:27:17 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -3222,13 +3223,13 @@
       "Last-Modified": "Wed, 28 Oct 2026 20:20:49 GMT"
     },
     "https://rss.arxiv.org/rss/cs.AI": {
-      "ETag": "3d54c071942e5c5fff30fdcf6ed6602bd9b740e8f7e01eda29b5a4dcec21510a"
+      "ETag": "fdb7368b1523b673e6212cee532e09968ddab51652088c02e7c53ae814b58192"
     },
     "https://rss.arxiv.org/rss/cs.AR": {
-      "ETag": "eb38a2954f6c9113e681a7f62a0b8dd22847c80cf084a17a6309211f5802b59c"
+      "ETag": "f67901bd40ad3722ab75a3e73f4954f8fbe08fa62ae92b39b3e5cb991307411b"
     },
     "https://rss.arxiv.org/rss/eess.SP": {
-      "ETag": "75bde4e75fc57fc73a712ce3141e9bcba51481a362448c396f0f203e262fdeae"
+      "ETag": "d364633dd9f35c097b89e14c074bb5cd272ecc5de4d6a1372dd04c246d23eea3"
     },
     "https://www.anthropic.com/claude-haiku-5-5": {},
     "https://www.anthropic.com/claude-sonnet-5-5": {},
@@ -3257,6 +3258,7 @@
       "Last-Modified": "Thu, 23 Feb 2023 10:23:31 GMT"
     },
     "https://www.kari.re.kr/kor/134/pblc/AEROPLCYRSCH": {},
+    "https://www.kari.re.kr/kor/89/pblc/RSCHRPTP": {},
     "https://www.kari.re.kr/robots.txt": {
       "Last-Modified": "Wed, 16 Sep 2026 04:30:16 GMT"
     },
@@ -3292,7 +3294,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0f7c042bf86ae2fd0486d4f18f7e96a97\""
+      "ETag": "\"03549790f51c167710fc94424e5fae819\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -3377,8 +3379,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"3e28f4d838fbaf53904f0bbb84ffcd78\"",
-      "Last-Modified": "Fri, 30 Oct 2026 23:12:06 GMT"
+      "ETag": "\"8862b1661b46809a18328b5d73f6b4e5\"",
+      "Last-Modified": "Sat, 31 Oct 2026 04:05:00 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -3446,7 +3448,7 @@
       "rules": "User-agent: *\r\nAllow: /\r\nDisallow:/webdata"
     },
     "https://ksp.etri.re.kr/robots.txt": {
-      "day": "2026-10-30",
+      "day": "2026-10-31",
       "rules": "Sitemap: https://ksp.etri.re.kr/ksp/sitemap.xml\n\nUser-agent: *\nDisallow: /ksp/funding/\nDisallow: /ksp/edr/\nDisallow: /ksp/rcp/\nDisallow: /ksp/git/\n\nUser-agent: Mediapartners-Google*\nDisallow: /\n\nUser-agent: UbiCrawler\nDisallow: /\n\nUser-agent: DOC\nDisallow: /\n\nUser-agent: Zao\nDisallow: /\n\nUser-agent: sitecheck.internetseer.com\nDisallow: /\n\nUser-agent: Zealbot\nDisallow: /\n\nUser-agent: MSIECrawler\nDisallow: /\n\nUser-agent: SiteSnagger\nDisallow: /\n\nUser-agent: WebStripper\nDisallow: /\n\nUser-agent: WebCopier\nDisallow: /\n\nUser-agent: Fetch\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: Teleport\nDisallow: /\n\nUser-agent: TeleportPro\nDisallow: /\n\nUser-agent: WebZIP\nDisallow: /\n\nUser-agent: linko\nDisallow: /\n\nUser-agent: HTTrack\nDisallow: /\n\nUser-agent: Microsoft.URL.Control\nDisallow: /\n\nUser-agent: Xenu\nDisallow: /\n\nUser-agent: larbin\nDisallow: /\n\nUser-agent: libwww\nDisallow: /\n\nUser-agent: ZyBORG\nDisallow: /\n\nUser-agent: Download Ninja\nDisallow: /\n\nUser-agent: fast\nDisallow: /\n\nUser-agent: grub-client\nDisallow: /\n\nUser-agent: k2spider\nDisallow: /\n\nUser-agent: NPBot\nDisallow: /\n\nUser-agent: WebReaper\nDisallow: /\n\n\n"
     },
     "https://news.mit.edu/robots.txt": {
