@@ -1,8 +1,14 @@
 # 세계 주요뉴스
 
-갱신: 2026-10-31 08:47 KST
+갱신: 2026-10-31 14:42 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## '최악 산불' 인니서 대기질 악화로 지난달 3천500명 사망 추정
+
+> 11년 만에 최악의 산불이 발생한 인도네시아에서 대기질 악화로 9월에만 3천500명 넘게 숨진 것으로 추...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261031025800104>) · 2026-10-31 11:26 KST · 작성·제공: 손현규
 
 ## \[속보\] 한미일 외교장관 "北 완전한 비핵화 위한 확고한 의지 재확인"
 
@@ -25,6 +31,18 @@
 > 호르무즈 해협을 통과하는 선박에 대한 이란의 공격이 급증했지만, 원유 수출에는 큰 영향을 미치지 못하는 것으로...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261031014300009>) · 2026-10-31 07:58 KST · 작성·제공: 고일환
+
+## 폴란드, 전 정권 임명한 헌재소장 직무정지…야권 "쿠데타" 반발
+
+> 폴란드에서 헌법재판소의 주도권을 둘러싸고 도날트 투스크 총리가 이끄는 친유럽 중도 성향 정부와 카롤 나브로츠키...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261031027800009>) · 2026-10-31 12:52 KST · 작성·제공: 송진원
+
+## 키옥시아, AI발 낸드 수요 폭발에 역대 최대 실적…순이익 37배
+
+> 인공지능\(AI\) 보급으로 낸드플래시 수요가 늘어난 덕분에 일본 반도체 기업 키옥시아 홀딩스가 역대 최대 반기...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261031026600073>) · 2026-10-31 11:59 KST · 작성·제공: 이도연
 
 ## 美중간선거 역대최다 4천800만명 사전투표…상원 접전지서 급증
 
@@ -100,10 +118,17 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8217026.html>) · 2026-10-31 04:41 KST · 작성·제공: voadigital@voanews.com \(최원기\)
 
+## 미한일 외교장관, 북한 완전한 비핵화 의지 재확인
+
+> 미국과 한국, 일본 외교장관이 북한의 완전한 비핵화에 대한 확고한 의지를 재확인했습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-korea-japan-foreign-ministers-meeting/8217097.html>) · 2026-10-31 08:58 KST · 작성·제공: voadigital@voanews.com \(김철한\)
+
 ## 다른 매체의 원문
 
 - [As their doubts about US grow, Gulf Arabs turn to middle powers for security](<https://www.csmonitor.com/World/Middle-East/2026/1030/persian-gulf-arabs-security-alliances-europe-asia?icid=rss>) · The Christian Science Monitor
 - [Gambia: Man Jailed for Seven Months After Stabbing Brother in Chest](<https://allafrica.com/stories/202610300529.html>) · AllAfrica · allAfrica.com
+- [Kenya: Ruto - Why Bayern V Ajax in Nairobi Is Perfect Tribute to Former PM Raila Odinga](<https://allafrica.com/stories/202610300524.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
