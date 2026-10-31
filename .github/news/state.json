@@ -4782,58 +4782,474 @@
       "update": false,
       "history": [],
       "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261101003100082": {
+      "title": "[르포] \"정부는 전쟁 원하나\"…독일 'Z세대 집회' 반전 목소리",
+      "url": "https://www.yna.co.kr/view/AKR20261101003100082",
+      "published_at": "2026-10-31T20:04:35+00:00",
+      "credit": "김계연",
+      "excerpt": "31일 오후(현지시간) 독일 베를린의 상징 브란덴부르크문 서쪽 '3월18일 광장'이 관광객 대신 팻말과 현...",
+      "feed_rank": 2,
+      "source_id": "yonhap-world",
+      "source_name": "연합뉴스 국제",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/international/all",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 48.179909549722225,
+      "key": "https://www.yna.co.kr/view/AKR20261101003100082",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261101002700071": {
+      "title": "美국무 \"트럼프, 이란 공격 재개 아직 결정 안 내렸다\"",
+      "url": "https://www.yna.co.kr/view/AKR20261101002700071",
+      "published_at": "2026-10-31T19:04:24+00:00",
+      "credit": "박성민",
+      "excerpt": "마코 루비오 미국 국무장관은 31일(현지시간) 도널드 트럼프 미국 대통령이 이란에 대한 대규모 군사작전 재...",
+      "feed_rank": 5,
+      "source_id": "yonhap-world",
+      "source_name": "연합뉴스 국제",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/international/all",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 46.72685399416667,
+      "key": "https://www.yna.co.kr/view/AKR20261101002700071",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261101001051082": {
+      "title": "프랑스 전역 3주째 주말 시위…강경대응에도 32만명 거리로(종합)",
+      "url": "https://www.yna.co.kr/view/AKR20261101001051082",
+      "published_at": "2026-10-31T18:42:17+00:00",
+      "credit": "김계연",
+      "excerpt": "고등학생들이 시작한 시위가 대규모 소요 사태로 번진 프랑스에서 31일(현지시간) 세 번째 주말 시위가 열렸...",
+      "feed_rank": 6,
+      "source_id": "yonhap-world",
+      "source_name": "연합뉴스 국제",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/international/all",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 46.208242883055554,
+      "key": "https://www.yna.co.kr/view/AKR20261101001051082",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.voakorea.com/a/8217306.html": {
+      "title": "폴란드 대통령, \"투스크 총리 헌법재판소 강제 장악\" 비난",
+      "url": "https://www.voakorea.com/a/8217306.html",
+      "published_at": "2026-10-31T19:46:06+00:00",
+      "credit": "voadigital@voanews.com (VOA 뉴스)",
+      "excerpt": "카롤 나브로츠키 폴란드 대통령은 31 일, 전임 정부가 선임한 헌법재판소장이 직무 정지되자 도날트 투스크 총리가 폴란드 최고 법원의 강제 장악을 시도했다고 비난했습니다.",
+      "feed_rank": 0,
+      "source_id": "voa-ko-world",
+      "source_name": "VOA 한국어 · 세계",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://voakorea.com/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 44.17185399416667,
+      "key": "https://www.voakorea.com/a/8217306.html",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.voakorea.com/a/8217307.html": {
+      "title": "G20 외교장관 회의 의장국 성명…에너지 안보·공급망 회복력 강조",
+      "url": "https://www.voakorea.com/a/8217307.html",
+      "published_at": "2026-10-31T19:58:02+00:00",
+      "credit": "voadigital@voanews.com (함지하)",
+      "excerpt": "미국이 주요 20개국(G20) 외교장관 회의 의장국 성명을 통해 에너지 안보 강화와 핵심 광물 공급망 확보의 중요성을 강조했습니다.",
+      "feed_rank": 0,
+      "source_id": "voa-ko-peninsula",
+      "source_name": "VOA 한국어 · 한반도",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://voakorea.com/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 41.370742883055556,
+      "key": "https://www.voakorea.com/a/8217307.html",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031047500003": {
+      "title": "국산 하이브리드차 EU 수출 연 10만대…수입제한 움직임 촉각",
+      "url": "https://www.yna.co.kr/view/AKR20261031047500003",
+      "published_at": "2026-10-31T21:15:00+00:00",
+      "credit": "홍규빈",
+      "excerpt": "매년 유럽연합(EU)에 하이브리드차 10만대 안팎을 수출하는 국내 자동차업계가 EU의 수입 제한 움직임에 촉각...",
+      "feed_rank": 3,
+      "source_id": "yonhap-industry",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 41.203520660833334,
+      "key": "https://www.yna.co.kr/view/AKR20261031047500003",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.voakorea.com/a/8217305.html": {
+      "title": "이란 최고지도자, \"어떠한 공격에도 즉각 대응” 주문",
+      "url": "https://www.voakorea.com/a/8217305.html",
+      "published_at": "2026-10-31T19:40:09+00:00",
+      "credit": "voadigital@voanews.com (VOA 뉴스)",
+      "excerpt": "이란의 최고지도자 아야톨라 모즈타바 하메네이가 잠재적인 공격에 즉각 대응하겠다고 경고했습니다.",
+      "feed_rank": 1,
+      "source_id": "voa-ko-world",
+      "source_name": "VOA 한국어 · 세계",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://voakorea.com/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 39.9226873275,
+      "key": "https://www.voakorea.com/a/8217305.html",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031030900008": {
+      "title": "새 분류체계로 본 업종별 체급…반도체-바이오 시총 10배 차",
+      "url": "https://www.yna.co.kr/view/AKR20261031030900008",
+      "published_at": "2026-10-31T21:20:01+00:00",
+      "credit": "김유아",
+      "excerpt": "한국거래소가 개발한 산업분류체계 'KRICS'의 종목별 분류가 마무리되며 새 산업 지도가 완성된 가운데, 국내...",
+      "feed_rank": 2,
+      "source_id": "yonhap-economy",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 37.43713177194445,
+      "key": "https://www.yna.co.kr/view/AKR20261031030900008",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031028400003": {
+      "title": "삼성전자 창사 첫 2개 창립기념사…최대실적 속 '원삼성' 물음표",
+      "url": "https://www.yna.co.kr/view/AKR20261031028400003",
+      "published_at": "2026-10-31T21:07:01+00:00",
+      "credit": "조성흠",
+      "excerpt": "삼성전자가 올해 3분기 107조원이 넘는 영업이익으로 역대 최대 실적 행진을 이어갔으나, 반도체와 완제품 부문...",
+      "feed_rank": 5,
+      "source_id": "yonhap-industry",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 36.77046510527778,
+      "key": "https://www.yna.co.kr/view/AKR20261031028400003",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.voakorea.com/a/8217303.html": {
+      "title": "G20 외교장관 회의 폐막…루비오 “트럼프 대통령, 김정은과 대화 준비돼”",
+      "url": "https://www.voakorea.com/a/8217303.html",
+      "published_at": "2026-10-31T19:28:54+00:00",
+      "credit": "voadigital@voanews.com (함지하)",
+      "excerpt": "마코 루비오 미국 국무장관은 트럼프 대통령이 김정은 북한 국무위원장과 대화할 준비가 돼 있다고 밝혔습니다.",
+      "feed_rank": 1,
+      "source_id": "voa-ko-peninsula",
+      "source_name": "VOA 한국어 · 한반도",
+      "group": "world",
+      "summary_mode": "feed",
+      "homepage": "https://voakorea.com/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 36.7351873275,
+      "key": "https://www.voakorea.com/a/8217303.html",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261030165200003": {
+      "title": "메모리 호황 속 HBM4 경쟁 새 국면…삼성 추격·SK하이닉스 수성",
+      "url": "https://www.yna.co.kr/view/AKR20261030165200003",
+      "published_at": "2026-10-31T21:05:01+00:00",
+      "credit": "강태우",
+      "excerpt": "메모리 반도체 초호황 속에 삼성전자[005930]와 SK하이닉스[000660]의 고대역폭 메모리(HBM) 경쟁...",
+      "feed_rank": 10,
+      "source_id": "yonhap-industry",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 35.98713177194445,
+      "key": "https://www.yna.co.kr/view/AKR20261030165200003",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031028000002": {
+      "title": "반도체 훈풍 무색한 내수…소매판매 5분기만에 감소",
+      "url": "https://www.yna.co.kr/view/AKR20261031028000002",
+      "published_at": "2026-10-31T20:52:05+00:00",
+      "credit": "송정은",
+      "excerpt": "반도체를 중심으로 견조한 경제 성장세가 이어지고 있지만 내수로는 온기가 좀처럼 퍼지지 않고 있는 모습이다.",
+      "feed_rank": 18,
+      "source_id": "yonhap-economy",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 34.571576216388884,
+      "key": "https://www.yna.co.kr/view/AKR20261031028000002",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031042800002": {
+      "title": "금감원 불법공매도 긴급점검…\"5개 안팎 종목 조사\"",
+      "url": "https://www.yna.co.kr/view/AKR20261031042800002",
+      "published_at": "2026-10-31T20:49:01+00:00",
+      "credit": "강수련",
+      "excerpt": "금융당국이 최근 증시 변동성 확대를 틈탄 불법 공매도 의심거래조사에 착수했다.",
+      "feed_rank": 20,
+      "source_id": "yonhap-economy",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 34.22046510527778,
+      "key": "https://www.yna.co.kr/view/AKR20261031042800002",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261030182800030": {
+      "title": "멜버른 직항길 열리자…경유 불편 덜고 '여름 호주' 예약 바람",
+      "url": "https://www.yna.co.kr/view/AKR20261030182800030",
+      "published_at": "2026-10-31T21:31:00+00:00",
+      "credit": "구정모",
+      "excerpt": "대한항공의 호주 멜버른 직항 노선 재취항을 앞두고 국내 여행사들이 시드니와 멜버른, 골드코스트 등을 연계한 여...",
+      "feed_rank": 0,
+      "source_id": "yonhap",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 33.9201873275,
+      "key": "https://www.yna.co.kr/view/AKR20261030182800030",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261101005000055": {
+      "title": "전북 흐리고 낮부터 비…낮 기온 11∼14도",
+      "url": "https://www.yna.co.kr/view/AKR20261101005000055",
+      "published_at": "2026-10-31T21:23:57+00:00",
+      "credit": "정경재",
+      "excerpt": "1일 전북은 대체로 흐리고 낮부터 비가 오겠다.",
+      "feed_rank": 0,
+      "source_id": "yonhap-society",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 33.802687327499996,
+      "key": "https://www.yna.co.kr/view/AKR20261101005000055",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261030163700017": {
+      "title": "네이버, 6분기 연속 매출 신기록 쓸까…카카오는 수익성 주목",
+      "url": "https://www.yna.co.kr/view/AKR20261030163700017",
+      "published_at": "2026-10-31T21:30:01+00:00",
+      "credit": "한상용",
+      "excerpt": "국내 양대 플랫폼 기업 네이버와 카카오의 3분기 실적 발표를 앞두고 네이버가 역대 최대 분기 매출 기록을 이어...",
+      "feed_rank": 1,
+      "source_id": "yonhap",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 33.75379843861111,
+      "key": "https://www.yna.co.kr/view/AKR20261030163700017",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.yna.co.kr/view/AKR20261031011800007": {
+      "title": "◇내일의 경기(2일)",
+      "url": "https://www.yna.co.kr/view/AKR20261031011800007",
+      "published_at": "2026-10-31T21:15:03+00:00",
+      "credit": "안홍석",
+      "feed_rank": 0,
+      "source_id": "yonhap-sports",
+      "source_name": "연합뉴스",
+      "group": "korea",
+      "summary_mode": "feed",
+      "homepage": "https://www.yna.co.kr/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 33.65435399416667,
+      "key": "https://www.yna.co.kr/view/AKR20261031011800007",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.npr.org/2026/10/31/nx-s1-6022223/secretary-rubio-has-a-tough-time-getting-officials-at-g20-on-the-same-page": {
+      "title": "Secretary Rubio has a tough time getting officials at G20 on the same page",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6022223/secretary-rubio-has-a-tough-time-getting-officials-at-g20-on-the-same-page",
+      "published_at": "2026-10-31T21:14:34+00:00",
+      "credit": "Michele Kelemen",
+      "feed_rank": 0,
+      "source_id": "npr",
+      "source_name": "NPR",
+      "group": "world",
+      "summary_mode": "link_only",
+      "homepage": "https://www.npr.org/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 11.646298438611112,
+      "key": "https://www.npr.org/2026/10/31/nx-s1-6022223/secretary-rubio-has-a-tough-time-getting-officials-at-g20-on-the-same-page",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines": {
+      "title": "A new political era in the Southern Philippines",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines",
+      "published_at": "2026-10-31T21:14:32+00:00",
+      "credit": "Jan Camenzind Broomby",
+      "feed_rank": 1,
+      "source_id": "npr",
+      "source_name": "NPR",
+      "group": "world",
+      "summary_mode": "link_only",
+      "homepage": "https://www.npr.org/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 11.495742883055556,
+      "key": "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
+    },
+    "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe": {
+      "title": "France seethes again as youth-led protests sweep Europe",
+      "url": "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe",
+      "published_at": "2026-10-31T19:30:19+00:00",
+      "credit": "The Associated Press",
+      "feed_rank": 2,
+      "source_id": "npr",
+      "source_name": "NPR",
+      "group": "world",
+      "summary_mode": "link_only",
+      "homepage": "https://www.npr.org/",
+      "license_url": null,
+      "source_kind": "news",
+      "score": 9.60879843861111,
+      "key": "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe",
+      "seen_at": "2026-10-31T21:35:47.325621+00:00",
+      "update": false,
+      "history": [],
+      "day": "2026-11-01"
     }
   },
   "feeds": {
     "abc-us": {
-      "ETag": "W/\"/9BIrWdMwJ5Djp+FZrkJiQ==\""
+      "ETag": "W/\"UUWy1HBtRUbVpqezXtHfgw==\""
     },
     "allafrica": {
-      "Last-Modified": "Sat, 31 Oct 2026 17:30:00 GMT"
+      "Last-Modified": "Sat, 31 Oct 2026 21:30:00 GMT"
     },
     "yonhap-world": {
-      "ETag": "1793468671221",
-      "Last-Modified": "Sat, 31 Oct 2026 17:43:55 GMT"
+      "ETag": "1793482546020",
+      "Last-Modified": "Sat, 31 Oct 2026 21:34:55 GMT"
     },
     "yonhap": {
-      "ETag": "1793468680493",
-      "Last-Modified": "Sat, 31 Oct 2026 17:40:54 GMT"
+      "ETag": "1793482570319",
+      "Last-Modified": "Sat, 31 Oct 2026 21:34:54 GMT"
     },
     "yonhap-politics": {
-      "ETag": "1793468664005",
-      "Last-Modified": "Sat, 31 Oct 2026 17:40:54 GMT"
+      "ETag": "1793482577615",
+      "Last-Modified": "Sat, 31 Oct 2026 21:34:54 GMT"
     },
     "yonhap-economy": {
-      "ETag": "1793468681299",
-      "Last-Modified": "Sat, 31 Oct 2026 17:43:54 GMT"
+      "ETag": "1793482566199",
+      "Last-Modified": "Sat, 31 Oct 2026 21:34:54 GMT"
     },
     "yonhap-industry": {
-      "ETag": "1793468689692",
-      "Last-Modified": "Sat, 31 Oct 2026 17:43:55 GMT"
+      "ETag": "1793482578744",
+      "Last-Modified": "Sat, 31 Oct 2026 21:34:55 GMT"
     },
     "yonhap-society": {
-      "ETag": "1793468681847",
-      "Last-Modified": "Sat, 31 Oct 2026 17:43:55 GMT"
+      "ETag": "1793482580178",
+      "Last-Modified": "Sat, 31 Oct 2026 21:34:55 GMT"
     },
     "yonhap-health": {
-      "ETag": "1793468652728",
-      "Last-Modified": "Sat, 31 Oct 2026 17:40:55 GMT"
+      "ETag": "1793482549049",
+      "Last-Modified": "Sat, 31 Oct 2026 21:34:55 GMT"
     },
     "yonhap-culture": {
-      "ETag": "1793468689925",
-      "Last-Modified": "Sat, 31 Oct 2026 17:43:55 GMT"
+      "ETag": "1793482575798",
+      "Last-Modified": "Sat, 31 Oct 2026 21:34:55 GMT"
     },
     "yonhap-sports": {
-      "ETag": "1793468671939",
-      "Last-Modified": "Sat, 31 Oct 2026 17:43:56 GMT"
+      "ETag": "1793482565351",
+      "Last-Modified": "Sat, 31 Oct 2026 21:34:56 GMT"
     },
     "yonhap-northkorea": {
-      "ETag": "1793468683226",
-      "Last-Modified": "Sat, 31 Oct 2026 17:40:54 GMT"
+      "ETag": "1793482556648",
+      "Last-Modified": "Sat, 31 Oct 2026 21:34:54 GMT"
     },
     "rfa-ko": {
-      "ETag": "W/\"3fadb-bwzwKa1JLgernVMSP38wpptrT8U\"",
-      "Last-Modified": "Sat, 31 Oct 2026 17:42:37 GMT"
+      "ETag": "W/\"3fadb-rukSQN6pwOYrAcM7SQ8JLGs/ir0\"",
+      "Last-Modified": "Sat, 31 Oct 2026 21:30:40 GMT"
     }
   },
   "observed": {
@@ -19636,6 +20052,338 @@
     "8f28aaca72ea732a32f30ec5b861f69796cb7e170e41eee6d3a173c0d6761b28": {
       "fingerprint": "79bc3130ea7ac0d2037b1b2de26f478328a18c290e2257af069c18cd0aba00b9",
       "at": "2026-10-31T17:44:20.070369+00:00"
+    },
+    "57a1ff9bde8d276ea29855142d01ab4d0991845d419b021cc68340d98bb5b5ef": {
+      "fingerprint": "a10994db6f9ccfc8214a099eb8db24ddc12e15ebf1537792701c11f14abf5592",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "aeaa58f172c3395c5a8d920cf998054f9f7d19867ed8d6b70d930ca190e4dc4b": {
+      "fingerprint": "adca359fed5270b7cbb39538c9a8111b09a4058261765b1fa9fae6bc6098991d",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "7c0ce3d8dd2c4b7e24e448c1e674dcd934c2135be53c826b735a4b30b1ea43c3": {
+      "fingerprint": "246e13b3aa5f62b53de14e24693d7e0823c5b0c47a8b73734ae0fbe9a501717a",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "98e47325920a6fd8509e34f03bb28c46d10badc75481990b7d6a8aa76043f8b8": {
+      "fingerprint": "3670f062c865068bd28e4cb0cdfc7ae6c47d00aa7b50be97895f1657b678793e",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "c5193ece55308be3b05a3e709424c251e112a6af747f4f1f4e78a431cb90a2e3": {
+      "fingerprint": "58908d67c698e5e6e0853c573580a031d5d212489784721df45bec00aaa5432e",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "8e880bb425de13e41e9af0fabc1705ace777efd9c7791f16e551b73e8f120fab": {
+      "fingerprint": "dba741b58dc909610f053e3594ac947f42450416a2fc800e798a02da2d42ee27",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "03d369b96b2bc87d73041c7c09fc9fd4a47b6d0d79b521a584ca386d5411cf40": {
+      "fingerprint": "b285dc09c1ade2bccb5c6582cf03afa51c63957a4d2cdd2fb7fe9c1bca592938",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "deca0841be0fcb1a34c55ca106d75b47b9b908607e8ed76d414587057cf5bd47": {
+      "fingerprint": "36e40933c53d74d4308ea477af62af6354f3a20d7cb91a61c8f3a85428eaab70",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "46fffad42536f1889cec36ab48f962062121d6b4a15bded02f154fca87f2b645": {
+      "fingerprint": "7ad122c6b22e7a13ff7bd60cbffb2126d9941610cc7ca79dbfe192351209629e",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "3937a09c4e4137c135725d54a74ef7e6a236adca6707e3de44a2ef2ced89ab16": {
+      "fingerprint": "6d19c2c1eb0033848cfd654299abda3d0433e2dfa7b4448123c44a398d3493bc",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "96b621e766d74f7c08545633095da9a35e98a8b05cceac9f3e070e5e9f73eaaa": {
+      "fingerprint": "9cd3fbfcfdbdea19172ed4428d78923c8b06f2fd6e6b7cb7aca1e9b7dbb923d5",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "69878c9f6addd49ce30da44733855a013881a1c2e5454a7f47f19a503abe69c9": {
+      "fingerprint": "3beaa033c48e654d9474a5354ecf0d393d98ef5fb83eb5ed278db75e2060268c",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "bf3284a184267bc83bdf80c636eded78adafb782c3b27cea36d8a0eb8e309e75": {
+      "fingerprint": "6882b5752cef2fc8ea336482a3b6212d2aac98337916651ee69229bdd4261358",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "3f2fc1ce338074490efa2763a9657748ed0c2c437d926c4664b9274f4721adcd": {
+      "fingerprint": "6b791ea12626a09a0346ec7b4fdbed169103b787e233820c11169d9a9df1854f",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "0fad77efacca9180de56588a441be16cfe47b3fdf4372ca3faeb2382e9e44e48": {
+      "fingerprint": "cd280a6f57fc312a219fac85a4f9d035a151a8b55ad48e15312a89480c6775d5",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "791f2d0bac9a37a3bfc7a011d76e73eeba618e467f435ac4778a1e61ccfd6dfc": {
+      "fingerprint": "18012a7774e8868d7a9ba41ef8f6379d96b28da0349eecc055ec60c50726a3a6",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "c97313692c8009ebd0d933884f3ef19495e92c27884b8f1bb6486bbc33ca6a8e": {
+      "fingerprint": "52e91e49ad160507b5319098cd1a854d7e5ece44ad5e50cf78073accb7dbe51f",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "87dc000458bedd671b3fa853243396f88f9505440352440da27f1326f75b2d7a": {
+      "fingerprint": "e5054dad4e10d356ded42c8da605bc13668f1e98eddfb7fc2edc8f12c27e13e9",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "ea915121d3ad1f30358d40dc505ac95224787d7804dd2e87019c5978c6c0d5a6": {
+      "fingerprint": "e50d0a2bbb1c8f6dc3d95feae6393410f5815b4fb0566350babcd75000154b82",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "86610b4b81180ce925fa96a7cf601f6802b581ef58350f071d96d724e35a9f66": {
+      "fingerprint": "8391b2f35ef2cb915552a78297abf32296a1ae166547256c107ef8c82050fa68",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "5dbf8d6b37a065529f4644002ed9f0239cfcb7b603b65603b93ee1a933f6a872": {
+      "fingerprint": "b3f9992fb831f564d11759d5382b3d2ad657ffa00dc9cbfbb52b1c86a53bde2e",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "6cf7f7561e6ca18d8045832f724091ce2657c52475f790ce1efeae58470fb133": {
+      "fingerprint": "d5e28e36d68d15af37cfad23e871d3f09a6f32cdea08fb4144386a82fd215c45",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "7e38da5de1897bca15a60fdfbaad57fa8cc0954d5f7ba10aa7732a4f8c528510": {
+      "fingerprint": "9d99ab52a8a28178bc5b8aa5ecbe22b3fd2169e79ad2693478027d03ba8b19e9",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "cad040285247847f3c410f796b60b56e10523d115348e8a8c3332c53f09a52a6": {
+      "fingerprint": "19c68dd49556008c4df71a173709a34ea95828072077a49d114ea7f5d683402b",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "a61d50bb068362d5cbb9de5377b0ba7244f33ab3ee93b115b04a077b059ec223": {
+      "fingerprint": "4cc19d783f1dc70ab33ec979a5de49b70ce1fb64c35a4d839e42e534a8d0f5b0",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "689e83e96ad56315c66afcb853f225208cf0a2a5bf19619d12abbfdd04160aaf": {
+      "fingerprint": "b19ecca30b0d03c29c9a4d57d9f68ab7fd96ae1648bab0826037bd199ee5f5bf",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "f713f3d1d0de5cd5c3cc6a64b59726f193e48cf768aec6ba907768631edf3ebe": {
+      "fingerprint": "9340ae57c9bde3af66d5c106b87f11c30333308ef011133414168fd80ed78084",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "5c51b06e4f924d24def97c1b1a517c20fd9e9666aaecfaa2905d06166e0b2d76": {
+      "fingerprint": "7c7681d93ea1705569c1bc0dac0a0914cc0371503be025c8f2bb52e1828910cb",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "f0dc863c9a57ceeeefb324bb0b135099355f68d8564a53df2f31e855e96ff87f": {
+      "fingerprint": "da1b10002a945772ec8401e3ab2e524434ad3647dda0790f40f69946e0fe402d",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "6481d3107854a2ce9beb26e1363b6c000f4813a69addda3bbf5750c512c38a6c": {
+      "fingerprint": "d91c0410e8b3c5f90125d84af49810b6363e5a5c7d63f5296ea7867cc72a8b12",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "b6c31c186bc4e62d9b7175a0fef84d33947dcb6cddb31515044bb30b531dbf28": {
+      "fingerprint": "44b2147eaece51cec40e06f88d45100ec6d6351c3fe5de1ccff0df083556a2e4",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "989bf185eb5ec0fe412bfdc23f686a3bf8f24f9873c159567d74483e3f0973b1": {
+      "fingerprint": "2a91497eef79fd708cc30a44dc5ca16462e30683a5d1a3d80052625d42f48d6d",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "04e320ed034c3f4e9c05a0bedfeb8821e06a380a7bc0131816bc555712ad963c": {
+      "fingerprint": "6ae55d319a2f04f7f385b80fe90b2e97f5299beb24c37f27f4c07ad38634bef7",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "7a6fe661f2f0a2ed4cf37006f42783370f39eca227630484b13158ca6f7a9c83": {
+      "fingerprint": "0d38fd65517b573a975cd1a78427ad2d1099bcade71924087ec1d721dc81e6bc",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "6077ea1e10f6ef72ea1f4fa7acc6f846b2c399023213202bbd5f3c990d873cc1": {
+      "fingerprint": "37cc332d4e66bd345fcda25a19a553eaedd62c505da80e62bb611dc9a0ef0eea",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "738c60afdbdf5e52ac623386a8059f9d4739489120996c15e9b778fa4681a1dc": {
+      "fingerprint": "4018a40f7aac46a02f7e2e8de29527188b2ce9b5c1a70ec3ecaa6d8acf5cda7f",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "06f5b16a72f52c2c8501a8c8b5d9400d55a688e103e9d6e8ea0062baa5dd3a8d": {
+      "fingerprint": "ab535f0c31a50cfe26d3ee1b335a28f4cc71763b4cd27c970650ece011cd1277",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "df294edb8a95f6d5f0a68ef335c926690a908c0cb71d3d2b0cda04e59ed4ecd7": {
+      "fingerprint": "82df0f16b59d9f78d7e4aacf5dc71dfeff7b9546446da36dfc1c3383db214e79",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "926e2ea484ba02cc13d7e3a47207852729b7bfc52a89e1acf02ce9f8447f6efa": {
+      "fingerprint": "d759ccec7866c081bb23a10251d26dccebef7053eb24cd88c2e95b25d730c8b3",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "93028e95e32b5e1bd9de295c15fdda0e3cd3c5374c604e1a71708c16f8e08668": {
+      "fingerprint": "409e2f7005848a3c5469e12a46bbeb99871a7c4b90166f85275d38ae056fcc90",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "9a9568dd047b057aec1cae4cab2700588e7bda117fcd31734b07c294d9117e06": {
+      "fingerprint": "f6e3bfdf0c8c4b4760df1813b7b05d07ebaaf731db50026fd0fb61ded8359a59",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "c186fd9f7c67520d64680c4116cf9ed347b260db07adccf5bb26633bd834c251": {
+      "fingerprint": "7cdaebca3bb4b1bed5aeb735610c86ed328a4ca246950f7bff844eadb3eacc99",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "8e921a6a064a4fe40dc271914566b6d55dc462584aee6697e38b6c54b61d95ec": {
+      "fingerprint": "fe63e1044b40465f6e410e4c88f25e2b6c495ad9e550b5ac3082cfe64796b124",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "9fb4b804f9e8ea8f448c4f21370c447ee987cb24f48108e358d3220aaea0cbd8": {
+      "fingerprint": "95c03d6e60516b8443e0654a46ea8d49e9bc9f193f09ba0376c5ec68c782b7bb",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "b9edad76e3b5c85d96dece73ebfd34421e9ab5e98605295fe41dcf87c061374e": {
+      "fingerprint": "f52cc3253414da4cf8bfcd6d6009c7d0ceaeb3cdf8fe54dafd0b8e34b7c5ff60",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "3cc4b5f9d331b9d9f4562286bedf0474fabdd825321101e440449b8725e01a72": {
+      "fingerprint": "7c0c624fdfc5a6ef05fbd0804e2cf0ec42e7db224316fd800382f167a68d222d",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "c5b2f51f4bd2779be856aee9ca19665dced234f97d3bc994f0f9a8bba473705e": {
+      "fingerprint": "157a0f29d9d69d07013267b8e79762f6f009870fcf92dc77a2e3ec858579394e",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "584638c5bf3ec0f30e38cf39727f78a1367ba6fc5a30ad2e4685e3918c02bbfa": {
+      "fingerprint": "61c2f2af9e486e5ad582dbf811be63d329eaa906de39e66129a6890aa43d79e5",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "32cf4d5d50f2d41d127aa9c4f706c3f5bd4e42d7916c19ea193f12c454154c8e": {
+      "fingerprint": "2a58d001cfca88d7fb5e4941b11baa91242895a74bd98e198d73adbfc0521ef5",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "c6c22def1d59ab1492e2b9833a9b62e12470a546bfc79029e407aef398418e36": {
+      "fingerprint": "b1f58d712068d794ae8455aa717f6e0f404f513f7f790e2ecbac0cdf9b420437",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "36eaefe5481a3627245e5f5d1c8a3ef38f9446b685f28352b626b11c419b2118": {
+      "fingerprint": "8545cc6fc6eed214b32562e987f032a2177d230a009ee8379f6f9b87f1a8757b",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "4719633b8cab8bab974ad5f9872b9e9bb7b349d54b1699fb409b7a66ec722095": {
+      "fingerprint": "024eb98d497ca850b34dbe0b8537decb78afc01b100919314312350c9fa74f64",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "81df4d5b7660df11934c960c6da6f51a5cdf2b55fc2b914fb32498d5c5b2e633": {
+      "fingerprint": "4d0dd6fc9ae958636fedc6194e278397da19abad109b121d2e81c86ddf02c869",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "3eb03e3e9a3184d1c43b0005ff009d84e1b1d87abf3e07e1ab7af99326f1f087": {
+      "fingerprint": "40358f60cb78e9b304a7058fc833c893c849f0393aa8b29a7335f0ebfdf82f58",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "dd7c700dda4cadad479f842ef0779225fb363b61122a3e795c0ea490b1363be2": {
+      "fingerprint": "53d0a7296eec1e18b0d0ff15c45a875e70f77acd7faa2ed15ec84646949a6f78",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "7e1006090c731a26de2bf0f69de36c0eeac1b9059518078892b1ac3c2ee73096": {
+      "fingerprint": "b370d4d393c65c7f45ccf8de53a961fea294339c5bf1020cafaa5a98ab0fa4d9",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "145dc60c951d4c15fc2ab9a7e4a773f777d1be813feddddf7de0e5b1ad1ca74c": {
+      "fingerprint": "fdfe87291ec4d96711d5bad43500ee76ebfca3c7da988c09ee447c993f6ff997",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "08c182830838ae499c69be5cdd45f53071519cf1a979423da0a3d39d4c901633": {
+      "fingerprint": "c12fc25296253e19da21c930146dd3813ea0253c473423de36fcfb4c204b7f66",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "c6884958775f58a93a4f13bfa68201f0c22e441ceaee079186611adad2486976": {
+      "fingerprint": "d819d108601396e793463cc3faed126bfdb2f99c25584d69dc48ec0934e1c9a9",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "dae495b2bdd0b27f45ec4174661a067e4b7f4fdbb83ff53ce59aa5410b62d72c": {
+      "fingerprint": "385c9c2222c2083f6d3c22f9d6c5e9c8565109ad5264e9184ebed0c740d36970",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "50cf5ae91509b782b297d359eb7e05593fdc7165e6449974aef2c39038c9c016": {
+      "fingerprint": "4de7d4f391081e146e97e0546edd7e047314b0021c753b50897ae44014da73da",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "2d5bb7586829a014c0facf469d0f5cdef05ccc5e03534d58369c3603113a3fa8": {
+      "fingerprint": "375f545692b57b1647a2ba081731de28ef31c8e43807bdfe4b3087f19f668404",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "83ed02a7c592e94b51e7d64e5a6f4527185246373a2eff823f381752b1fe5898": {
+      "fingerprint": "d34ee16f1721795704c53919e4d6fbf567450b761a1ffa76ac15164bbebe3573",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "ab518f955fcd56f3ab88a55f3fdaac562ce700a5c3aa4e59718821f5a111b518": {
+      "fingerprint": "e3463089942e9e560238d93874b41fc146617e97cf8a3c0fbc68592a19424967",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "8e370a02cf9452a5e24a9b2b03fbd2ef19d357fb6f905e7a0f68fbff546d76c2": {
+      "fingerprint": "d67b45cf9c1142bd21c89430c4e228752aa61f92136cb0ea0f63b5cc9c20aa23",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "5beb6c8e6fa9451687695d722bc35d9d293bb416548431d1a0655f2c31504eca": {
+      "fingerprint": "e959985302986a91b4eec0dd4a5cbaddaf6af6cebf0f5d7660f4fbded6994e53",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "457b2760b6902bcbd98bf4f5a6e250c552e0329afd19f8c78ccb9bfab58321d3": {
+      "fingerprint": "5fe5c0ddea6e4382f4bce7be345933032048aaaf0ae850f55d4f65bdd9a03270",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "715274f9536e5d758d65eaeafd62445e671acd81b410c171b851d711832a96ec": {
+      "fingerprint": "a7062d605305e015bb3232c5f7c6b39b646d2d74294716c9bc7466fde629861e",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "82323d60280938d095ee79e157b41954039ce4243db4208a4aef2a1fbc5e20e6": {
+      "fingerprint": "ba9875ec2f5bb128987b489945a07026760c9eec9dd2cd35f62273a7726d0ac1",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "8b03c5caccae9517e2dff80681cb2f7ad557f7658b050482caebb74b811c30ba": {
+      "fingerprint": "68cb8b27fc9f1ec06b987be36db84c5f7cf318a02f1ef4fd610bcb9eba59a3eb",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "960ffd45964a059a1f50ddb73c79ee7ba6580dca787fa39350a17438d87b26e4": {
+      "fingerprint": "f679593283047a5ed4e2e3a78228b850580fbe44b5f8219eafe00a59c2a05421",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "94bab718c70cbc878dba24e0af1cea8e15558f2a773345218ec8b27d323f22f4": {
+      "fingerprint": "4a031dfbfe91c1525bca74a3ef30c43eabc679ad33ec1f964c7481aa4b8c0d58",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "f6c54235b24a61971ad19f30e00692d135965324375b9be323e8f2896320e6eb": {
+      "fingerprint": "0cc56b8cd6d51e30e48ab9d073853541b5628dd087f22fe20a2fcf10d98991ee",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "2a9758cbf3d67ab59835969b74c020164f442b19857bb79b642a6c561380735e": {
+      "fingerprint": "32ea6cab1124d60925cd8ddc6489747876080c9c9e8d0983e4a382d28055c26f",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "fa053e608e518ce81c0950006f67ffd3ab2c1fc05af28e9590893003996ae7ae": {
+      "fingerprint": "41a035a7230fe8e1fedac6f77d04588297e5d6adb72f79e9984d0acf5ae51496",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "e6e113d65ecbff89c78a0673eaf4e3db4b964a9cca1ab739e45c243820b3ea20": {
+      "fingerprint": "f247d7900d50b466841031f549cdad2ff43294a419a7011fc3b11e8c80200dd9",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "02029c57880ebf9025b04d185194505c3b9ca74b656d88104934cfcff558ad45": {
+      "fingerprint": "d1fedbc87f1773fa0e51f7ca4f995881ed184d45217c00157c0c42b3af9f0d33",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "749e18bf666b863df6b36c9b091c490ebb139ebb8abe5e422b4ec412e0fecff6": {
+      "fingerprint": "f198050bf332fe8e155a7a63c264913a1c4daafea9181441909e54a0c43af12e",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "c61c731a2f69b3b3c8200a3abafb80061fda3e2ee3d93a6c1bd53d43f235bd2f": {
+      "fingerprint": "f52fbd8ad0955915877e7befda894c0e8103e9469b5fbaa0f50e608b7761664f",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "feaaa9e478dee1fa6524bf79b04e67226987425235cdc500b1aece295a2cdd00": {
+      "fingerprint": "3150ae70bd2caa04ba98747a9a6162315ee846ab1fd2b32abba81d20b776d85c",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "ba24ea38493f3956c276ed40e02d7077b816f492b1d8beebba9f30cba6a22ccf": {
+      "fingerprint": "497787a9442f3e5f5799175da25b03c56d51cc06d4e531878829d1cf56b1ea7e",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "0f48a1f0b10934c7eb76446d85b874772dea66fc5c86b08fde1e6318a49f744e": {
+      "fingerprint": "51c5ee28e6465dcb01a3831861c68ae8b551f290c73c5ba8225fbb06ce197b52",
+      "at": "2026-10-31T21:35:47.325621+00:00"
+    },
+    "b4787c80c5ef653bd2509ffe4af29386cb8b51a42d3a02fa592923af8a01868f": {
+      "fingerprint": "6f9cb473118d345ef8b4b9c85133db53142a7d1425e6339e8d568b471a1f77e1",
+      "at": "2026-10-31T21:35:47.325621+00:00"
     }
   }
 }
