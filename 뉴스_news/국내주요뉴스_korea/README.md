@@ -1,6 +1,6 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-02 00:10 KST
+갱신: 2026-11-02 04:41 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
 
@@ -21,6 +21,24 @@
 > 미 연방수사국 FBI가 세계 최대 가상자산 거래소 '바이낸스'에서 벌어진 천문학적인 액수의 해킹 사건이 북한의 소행이라고 지목했습…
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008825245&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-01 22:50 KST · 작성·제공: minpyo@sbs.co.kr \(김민표\)
+
+## 루비오 “북미회담 잡힌 일정 없지만, 대화할 준비돼 있다”
+
+> 마코 루비오 미국 국무장관이 북-미 정상회담에 대해 “도널드 트럼프 대통령은 준비가 돼 있다”면서도 “예정된 일정은 없다\(Nothing has been scheduled\)”고 말했다. 18일부터 중국 선전에서 열리는 아시아태평양경제협력체\(APEC\) 정상회의가 약 보름 앞으로 다가왔지만 북-미 간 회담을 위한 구체적인 논의가 이뤄지지 않고 있다고 밝힌 것이다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Politics/article/all/20261102/134947240/2>) · 2026-11-02 04:30 KST
+
+## 인텔 하루새 28.58% 폭락… 52년만에 최대 낙폭
+
+> 미국 반도체 기업 인텔의 주가가 하루 만에 28.58% 폭락하며 1974년 이후 52년 만에 최대 낙폭을 기록했다. 4분기 실적 전망이 시장 예상치를 밑돌면서 향후 성장세가 둔화할 것이란 우려가 주가를 끌어내렸다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261102/134947238/2>) · 2026-11-02 04:30 KST
+
+## 수출, 獨-美-中 이어 1조달러 눈앞… 성장률 뛰는데 체감경기는 ‘한파’
+
+> 한국 경제가 사상 첫 연간 수출 1조 달러 돌파를 눈앞에 뒀지만 체감경기는 좀처럼 살아나지 않고 있다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261102/134947226/2>) · 2026-11-02 04:30 KST
 
 ## \[횡설수설/신광영\]산분장〈散粉葬〉
 
