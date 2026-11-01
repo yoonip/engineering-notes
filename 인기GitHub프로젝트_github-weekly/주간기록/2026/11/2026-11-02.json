@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "label": "2026년 11월 1주차",
+  "week_start": "2026-11-02",
+  "collected_at": "2026-11-02T08:56:08+09:00",
+  "source_url": "https://github.com/trending?since=weekly",
+  "source_sha256": "725cfd1acbee8bd560c1048535bc90a40dd7072c0b1b205534a87f8d19cc41e6",
+  "selection": "GitHub Trending, all languages, since=weekly, first 10 in displayed order",
+  "run_url": null,
+  "items": [
+    {
+      "rank": 1,
+      "requested_full_name": "Nutlope/hallmark",
+      "weekly_stars": 12062,
+      "repository": {
+        "id": 1222917575,
+        "full_name": "Nutlope/hallmark",
+        "html_url": "https://github.com/Nutlope/hallmark",
+        "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+        "language": "CSS",
+        "stargazers_count": 44849,
+        "forks_count": 2382,
+        "topics": [],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/Nutlope/hallmark"
+      },
+      "introduction": {
+        "text": "웹페이지를 만들거나 다시 설계할 때 테마·이미지·레이아웃 방향과 브라우저 검사를 제공하는 디자인 스킬입니다.",
+        "detail": "페이지의 목적에 맞게 화면을 구성하고 대비·초점·모바일 배치를 검사하도록 안내합니다. 디자인 방향을 코드와 화면 확인으로 연결하는 절차를 살펴볼 수 있습니다.",
+        "method": "README 해설 (2026-11-02 확인)",
+        "source_url": "https://github.com/Nutlope/hallmark#readme"
+      }
+    },
+    {
+      "rank": 2,
+      "requested_full_name": "pbakaus/impeccable",
+      "weekly_stars": 12031,
+      "repository": {
+        "id": 1097346685,
+        "full_name": "pbakaus/impeccable",
+        "html_url": "https://github.com/pbakaus/impeccable",
+        "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+        "language": "Rust",
+        "stargazers_count": 99290,
+        "forks_count": 5870,
+        "topics": [
+          "agent-skills",
+          "ai",
+          "anti-slop",
+          "design",
+          "slop"
+        ],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0",
+          "node_id": "MDc6TGljZW5zZTI="
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/pbakaus/impeccable"
+      },
+      "introduction": {
+        "text": "코딩 에이전트가 화면 디자인을 구체적으로 지시하고 검토할 때 쓰는 디자인 어휘와 명령을 제공합니다.",
+        "detail": "polish·bolder·critique·audit 같은 작업으로 시각적 방향과 UI 품질을 조정합니다. 디자인 지침과 실제 검토 명령이 어떻게 연결되는지 살펴볼 수 있습니다.",
+        "method": "README 해설 (2026-11-02 확인)",
+        "source_url": "https://github.com/pbakaus/impeccable#readme"
+      }
+    },
+    {
+      "rank": 3,
+      "requested_full_name": "AgriciDaniel/claude-seo",
+      "weekly_stars": 4814,
+      "repository": {
+        "id": 1152014594,
+        "full_name": "AgriciDaniel/claude-seo",
+        "html_url": "https://github.com/AgriciDaniel/claude-seo",
+        "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+        "language": "Python",
+        "stargazers_count": 25518,
+        "forks_count": 3357,
+        "topics": [
+          "ai",
+          "ai-seo",
+          "claude-code",
+          "claude-code-skill",
+          "marketing-automation",
+          "open-source",
+          "seo"
+        ],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/AgriciDaniel/claude-seo"
+      },
+      "introduction": {
+        "text": "Claude Code에서 웹사이트의 검색 노출과 콘텐츠 구조를 점검하는 SEO 플러그인입니다.",
+        "detail": "크롤링·색인·리디렉션·사이트맵·페이지 속도·구조화 데이터를 검사하고 작업 우선순위를 정리합니다. 검색 순위를 보장하는 서비스가 아니라 점검 항목과 실행 흐름을 제공하는 도구입니다.",
+        "method": "README 해설 (2026-11-02 확인)",
+        "source_url": "https://github.com/AgriciDaniel/claude-seo#readme"
+      }
+    },
+    {
+      "rank": 4,
+      "requested_full_name": "thedotmack/claude-mem",
+      "weekly_stars": 4575,
+      "repository": {
+        "id": 1048065319,
+        "full_name": "thedotmack/claude-mem",
+        "html_url": "https://github.com/thedotmack/claude-mem",
+        "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+        "language": "TypeScript",
+        "stargazers_count": 109203,
+        "forks_count": 9563,
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-memory",
+          "anthropic",
+          "artificial-intelligence",
+          "chromadb",
+          "claude",
+          "claude-agent-sdk",
+          "claude-agents",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-skills",
+          "embeddings",
+          "long-term-memory",
+          "mem0",
+          "memory-engine",
+          "openmemory",
+          "rag",
+          "sqlite",
+          "supermemory"
+        ],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0",
+          "node_id": "MDc6TGljZW5zZTI="
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/thedotmack/claude-mem"
+      },
+      "introduction": {
+        "text": "에이전트의 도구 사용 기록을 수집·요약해 다음 세션에서 필요한 프로젝트 맥락을 다시 찾도록 돕는 메모리 시스템입니다.",
+        "detail": "검색 도구와 뷰어로 과거 관찰을 확인하고 문맥에 포함할 내용을 설정합니다. 이 프로젝트 자체의 요약 기능은 AI를 사용하므로 제공자 설정과 비용 조건을 살펴야 합니다.",
+        "method": "README 해설 (2026-11-02 확인)",
+        "source_url": "https://github.com/thedotmack/claude-mem#readme"
+      }
+    },
+    {
+      "rank": 5,
+      "requested_full_name": "cloudflare/security-audit-skill",
+      "weekly_stars": 11908,
+      "repository": {
+        "id": 1273427276,
+        "full_name": "cloudflare/security-audit-skill",
+        "html_url": "https://github.com/cloudflare/security-audit-skill",
+        "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+        "language": "JavaScript",
+        "stargazers_count": 56343,
+        "forks_count": 3672,
+        "topics": [],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/cloudflare/security-audit-skill"
+      },
+      "introduction": {
+        "text": "코드 구조와 신뢰 경계를 파악하고 취약점 후보 탐색·검증·보고를 단계별로 수행하도록 구성한 보안 감사 스킬입니다.",
+        "detail": "서로 독립적인 검증 역할, 구조화된 findings.json과 감사 범위 기록을 사용합니다. 어떤 코드를 조사했는지와 취약점 근거가 무엇인지 남기는 흐름을 살펴볼 수 있습니다.",
+        "method": "README 해설 (2026-11-02 확인)",
+        "source_url": "https://github.com/cloudflare/security-audit-skill#readme"
+      }
+    },
+    {
+      "rank": 6,
+      "requested_full_name": "obra/superpowers",
+      "weekly_stars": 5636,
+      "repository": {
+        "id": 1073224795,
+        "full_name": "obra/superpowers",
+        "html_url": "https://github.com/obra/superpowers",
+        "description": "An agentic skills framework & software development methodology that works.",
+        "language": "Shell",
+        "stargazers_count": 310622,
+        "forks_count": 27648,
+        "topics": [
+          "ai",
+          "brainstorming",
+          "coding",
+          "obra",
+          "sdlc",
+          "skills",
+          "subagent-driven-development",
+          "superpowers"
+        ],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/obra/superpowers"
+      },
+      "introduction": {
+        "text": "요구사항과 설계를 정리한 뒤 구현 계획·테스트·리뷰·검증으로 이어지는 코딩 에이전트용 개발 방법론과 스킬 모음입니다.",
+        "detail": "작업을 작은 단위로 나누고 테스트 주도 개발과 코드 검토를 반복하는 흐름을 제공합니다. 개별 스킬의 호출 조건과 결과물을 순서대로 읽어볼 수 있습니다.",
+        "method": "README 해설 (2026-11-02 확인)",
+        "source_url": "https://github.com/obra/superpowers#readme"
+      }
+    },
+    {
+      "rank": 7,
+      "requested_full_name": "JetBrains/thinkrail",
+      "weekly_stars": 5738,
+      "repository": {
+        "id": 1293238217,
+        "full_name": "JetBrains/thinkrail",
+        "html_url": "https://github.com/JetBrains/thinkrail",
+        "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+        "language": "TypeScript",
+        "stargazers_count": 6964,
+        "forks_count": 391,
+        "topics": [
+          "agent",
+          "agent-skills",
+          "agentic-ai",
+          "agentic-workflow",
+          "ai-coding",
+          "ai-tools",
+          "pi-agent",
+          "pi-agent-extension",
+          "spec-driven",
+          "spec-driven-coding",
+          "spec-driven-development",
+          "vibe-coding",
+          "vibecoding"
+        ],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0",
+          "node_id": "MDc6TGljZW5zZTI="
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/JetBrains/thinkrail"
+      },
+      "introduction": {
+        "text": "pi 코딩 에이전트 주변에 편집기·터미널·변경 검토 화면을 묶은 IDE입니다.",
+        "detail": "Git worktree로 작업 공간을 나누고 프로젝트 명세와 재사용 스킬을 유지하며 변경과 PR 상태를 살펴볼 수 있습니다. 에이전트 작업과 편집기 화면을 연결하는 구조를 확인할 수 있습니다.",
+        "method": "README 해설 (2026-11-02 확인)",
+        "source_url": "https://github.com/JetBrains/thinkrail#readme"
+      }
+    },
+    {
+      "rank": 8,
+      "requested_full_name": "pingdotgg/t3code",
+      "weekly_stars": 3718,
+      "repository": {
+        "id": 1153130349,
+        "full_name": "pingdotgg/t3code",
+        "html_url": "https://github.com/pingdotgg/t3code",
+        "description": null,
+        "language": "TypeScript",
+        "stargazers_count": 37904,
+        "forks_count": 8910,
+        "topics": [],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/pingdotgg/t3code"
+      },
+      "introduction": {
+        "text": "사용자의 컴퓨터에 설치된 코딩 에이전트를 데스크톱·웹·모바일 화면에서 다루는 인터페이스입니다.",
+        "detail": "지원하는 에이전트 제공자를 먼저 설치·인증한 뒤 대화와 작업을 연결합니다. 모델 서비스와 사용 화면이 나뉘어 있는 구성을 살펴볼 수 있습니다.",
+        "method": "README 해설 (2026-11-02 확인)",
+        "source_url": "https://github.com/pingdotgg/t3code#readme"
+      }
+    },
+    {
+      "rank": 9,
+      "requested_full_name": "multica-ai/andrej-karpathy-skills",
+      "weekly_stars": 4277,
+      "repository": {
+        "id": 1142983825,
+        "full_name": "multica-ai/andrej-karpathy-skills",
+        "html_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+        "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+        "language": null,
+        "stargazers_count": 227979,
+        "forks_count": 22742,
+        "topics": [],
+        "archived": false,
+        "disabled": false,
+        "license": null,
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/multica-ai/andrej-karpathy-skills"
+      },
+      "introduction": {
+        "text": "Andrej Karpathy가 지적한 LLM 코딩 문제를 바탕으로 가정 확인·단순한 구현·필요한 범위의 수정·검증 가능한 목표를 정리한 지침입니다.",
+        "detail": "제3자가 구성한 CLAUDE.md와 스킬을 코딩 에이전트에 적용할 수 있습니다. 이름에 등장하는 Karpathy 본인의 공식 저장소와는 구분합니다.",
+        "method": "README 해설 (2026-11-02 확인)",
+        "source_url": "https://github.com/multica-ai/andrej-karpathy-skills#readme"
+      }
+    },
+    {
+      "rank": 10,
+      "requested_full_name": "jakubkrehel/skills",
+      "weekly_stars": 1272,
+      "repository": {
+        "id": 1296300799,
+        "full_name": "jakubkrehel/skills",
+        "html_url": "https://github.com/jakubkrehel/skills",
+        "description": "A collection of agent skills that help you build great interfaces.",
+        "language": "Markdown",
+        "stargazers_count": 10064,
+        "forks_count": 391,
+        "topics": [],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/jakubkrehel/skills"
+      },
+      "introduction": {
+        "text": "UI·타이포그래피·색상·접근성·레이아웃·제품 문구를 점검하는 인터페이스 설계 스킬 모음입니다.",
+        "detail": "화면 전체의 문제를 우선순위로 정리하거나 대비·키보드 조작·반응형 배치 같은 항목을 개별적으로 다룰 수 있습니다. 필요한 검토 항목을 골라 적용하는 구성입니다.",
+        "method": "README 해설 (2026-11-02 확인)",
+        "source_url": "https://github.com/jakubkrehel/skills#readme"
+      }
+    }
+  ]
+}

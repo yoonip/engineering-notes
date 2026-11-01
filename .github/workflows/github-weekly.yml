@@ -1,0 +1,82 @@
+name: 주간 GitHub 프로젝트 / Weekly GitHub projects
+
+on:
+  schedule:
+    - cron: '23 0 * * 1' # 월요일 09:23 KST, UTC는 00:23입니다.
+  workflow_dispatch:
+    inputs:
+      check_translation:
+        description: 'CPU 번역 모델의 실제 실행도 검사합니다.'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-news-main
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    if: github.repository == 'yoonip/engineering-notes' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    env:
+      ARGOS_MODEL_PROVIDER: OPENNMT
+      ARGOS_DEVICE_TYPE: cpu
+      ARGOS_CHUNK_TYPE: MINISBD
+    steps:
+      - name: 저장소 읽기 / Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 1
+          sparse-checkout: |
+            .github/github-weekly
+            인기GitHub프로젝트_github-weekly
+          sparse-checkout-cone-mode: true
+
+      - name: 수집·번역 도구 설치 / Install collection and translation tools
+        run: |
+          python3 -m pip install --disable-pip-version-check torch==2.9.0 --index-url https://download.pytorch.org/whl/cpu
+          python3 -m pip install --disable-pip-version-check -r .github/github-weekly/requirements.txt
+
+      - name: 날짜·중복·수집 실패 검사 / Test archives and failure handling
+        run: python3 -m unittest discover -s .github/github-weekly -p 'test_*.py' -v
+
+      - name: CPU 번역 모델 확인 / Check CPU translation
+        if: inputs.check_translation == true
+        env:
+          ARGOS_DEVICE_TYPE: cpu
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/github-weekly/check_translation.py
+
+      - name: 주간 프로젝트 수집 / Collect weekly projects
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ARGOS_DEVICE_TYPE: cpu
+        run: python3 .github/github-weekly/collect.py --report "$RUNNER_TEMP/github-weekly.json"
+
+      - name: 주간 기록 게시 / Publish weekly archive
+        run: python3 .github/github-weekly/publish.py
+
+      - name: 실행 결과 / Record result
+        if: always()
+        env:
+          WEEKLY_REPORT: ${{ runner.temp }}/github-weekly.json
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path(os.environ['WEEKLY_REPORT'])
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+              out.write('## Weekly GitHub projects\n\n')
+              if path.exists():
+                  data = json.loads(path.read_text())
+                  out.write('```json\n' + json.dumps(data, ensure_ascii=False, indent=2) + '\n```\n')
+              else:
+                  out.write('Collection did not complete. See the failed step; no partial archive was published.\n')
+          PY
