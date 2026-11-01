@@ -1,8 +1,14 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-01 10:10 KST
+갱신: 2026-11-01 16:33 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 日방재청 출범하며 "비상용품 준비" 요청 논란…"전쟁예고 아냐"
+
+> 지진 등 자연재해가 잦은 일본에서 피해를 최소화하고 방재 기술 산업화를 총괄할 방재청이 2일 출범한다고 니혼...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101029500073>) · 2026-11-01 15:10 KST · 작성·제공: 조성미
 
 ## \[속보\] 美국무 "韓의원 비자문제, 수십년전 행동 관련…해결할 것"
 
@@ -24,11 +30,23 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101012200091>) · 2026-11-01 08:46 KST · 작성·제공: 권영전
 
+## "마지막 기회"…이스라엘 야권 지지자들, 아랍계 연대 촉구
+
+> 이스라엘 총선에서 과반 정당이 나오지 않아 정국이 안갯속인 상황에서 야권 지지자들이 베냐민 네타냐후 총리 축출...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101031400009>) · 2026-11-01 15:25 KST · 작성·제공: 송진원
+
 ## "미군기지 26곳 이란 공격에 수십억불 피해…레이더 우선표적"
 
 > 이란 전쟁이 시작된 이후 중동 지역의 미군 기지가 이란 측 공격에 파손·파괴돼 수십억 달러의 피해가 발생했...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101000700071>) · 2026-11-01 01:39 KST · 작성·제공: 박성민
+
+## 중국군, '고위급 숙청'에 연일 결속 다지기…"당중앙 굳게 옹호"
+
+> 중국군 기관지가 군부 고위급 대규모 숙청이 확정된 당 20기 중앙위원회 제5차 전체회의\(20기 5중전회\) ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101029000083>) · 2026-11-01 14:55 KST · 작성·제공: 정성조
 
 ## 美국무 "트럼프, 이란 공격 재개 아직 결정 안 내렸다"
 
@@ -90,6 +108,12 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8217303.html>) · 2026-11-01 04:28 KST · 작성·제공: voadigital@voanews.com \(함지하\)
 
+## FBI, “ 60억 달러 이상 규모의 바이낸스 공격, 북한에 책임 있어”
+
+> 미국 연방수사국\(FBI\)이 최근 발생한 사상 최대 암호화폐 탈취 배후로 북한을 지목했습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8217431.html>) · 2026-11-01 10:27 KST · 작성·제공: voadigital@voanews.com \(서승재\)
+
 ## 다른 매체의 원문
 
 - [Secretary Rubio has a tough time getting officials at G20 on the same page](<https://www.npr.org/2026/10/31/nx-s1-6022223/secretary-rubio-has-a-tough-time-getting-officials-at-g20-on-the-same-page>) · NPR
@@ -97,6 +121,7 @@
 - [Protests erupt around a top court in Poland after its president is suspended](<https://abcnews.com/International/wireStory/police-detain-3-protesters-overnight-rally-polish-president-137731099>) · ABC News 미국
 - [Evacuees reunite with family at the Ukrainian-Belarusian border after fleeing Oleshky](<https://abcnews.com/International/wireStory/evacuees-reunite-family-ukrainian-belarusian-border-after-fleeing-137730820>) · ABC News 미국
 - [Netherlands coast guard rescues 38 people adrift in a rubber boat](<https://abcnews.com/International/wireStory/netherlands-coast-guard-rescues-38-people-adrift-rubber-137734449>) · ABC News 미국
+- [Bulgarians vote in a presidential runoff marked by regional security threats](<https://abcnews.com/International/wireStory/bulgarians-vote-presidential-runoff-marked-regional-security-threats-137744157>) · ABC News 미국
 - [France seethes again as youth-led protests sweep Europe](<https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe>) · NPR
 - [320,000 protested nationwide, French government says](<https://abcnews.com/International/wireStory/france-heads-weekend-protests-youth-led-rallies-sweep-137729925>) · ABC News 미국
 
