@@ -83,6 +83,7 @@
     "products:https://blog.st.com/snapdragon-wear-elite": "products:https://blog.st.com/snapdragon-wear-elite",
     "products:https://blog.st.com/stspin9p": "products:https://blog.st.com/stspin9p",
     "products:https://blog.st.com/touchgfx": "products:https://blog.st.com/touchgfx",
+    "products:https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure": "products:https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure",
     "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction",
     "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure": "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure",
     "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
@@ -1565,6 +1566,27 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/"
         }
+      ],
+      "2026-11-02": [
+        {
+          "acquired_at": "2026-11-01T16:18:34.006678+00:00",
+          "acquisition_method": "공식 한국어 블로그 RSS의 제목·소개",
+          "author": "NVIDIA Korea",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-01T12:32:33+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-01T16:17:38.516550+00:00",
+          "group": "products",
+          "homepage": "https://blogs.nvidia.co.kr/",
+          "key": "products:https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure",
+          "source_name": "NVIDIA 한국어 블로그",
+          "source_url": "https://blogs.nvidia.co.kr/feed/",
+          "summary_ko": "NVIDIA와 사이버보안 파트너 Eclypsium이 NVIDIA BlueField와 Eclypsium 인프라 어슈어런스로 클라우드 컴퓨팅과 에이전틱 AI의 인프라 보안을…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "안전하고 믿을 수 있는 AI를 위한 신뢰 기반 인프라 구축",
+          "update": false,
+          "url": "https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure/"
+        }
       ]
     },
     "reports": {
@@ -3007,6 +3029,10 @@
       "group": "products",
       "key": "products:https://blog.st.com/touchgfx"
     },
+    "https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure": {
+      "group": "products",
+      "key": "products:https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure"
+    },
     "https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": {
       "group": "products",
       "key": "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction"
@@ -3266,10 +3292,10 @@
       "Last-Modified": "Fri, 30 Oct 2026 11:03:47 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"cf19bca789670fab5f7596f121e02b899fb86410811bd41054bfeb86787d0c48\""
+      "ETag": "W/\"f877955af970a7ef751c0f0ef9e8318483d8d2c72aa27e07aeee417f6650097a\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"1c0ffe581e133f37021d94a0ef7a2829668119058c604d68d0cefac6ffeb2453\""
+      "ETag": "W/\"df0cb58fef0137a86a2967f992e6f0143648cf87a478ae10e1e6a01455778e44\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -3283,8 +3309,8 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.python.org/feeds/posts/default?alt=rss": {
-      "ETag": "\"6ae6d18d-609e\"",
-      "Last-Modified": "Sun, 01 Nov 2026 05:43:41 GMT"
+      "ETag": "\"6ae72d98-609e\"",
+      "Last-Modified": "Sun, 01 Nov 2026 12:16:24 GMT"
     },
     "https://blog.st.com/feed": {
       "Last-Modified": "Fri, 30 Oct 2026 23:35:52 GMT"
@@ -3292,8 +3318,8 @@
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
     "https://blogs.nvidia.co.kr/feed": {
-      "ETag": "\"8f54a3293ef793744318eb931e3c5b1b-gzip\"",
-      "Last-Modified": "Wed, 28 Oct 2026 05:02:53 GMT"
+      "ETag": "\"aaca387bcf57c8ea41af9a55e31b33ca-gzip\"",
+      "Last-Modified": "Sun, 01 Nov 2026 12:32:33 GMT"
     },
     "https://blogs.nvidia.co.kr/robots.txt": {
       "ETag": "\"1712-657221424d6b4-gzip\"",
@@ -3303,6 +3329,9 @@
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "ETag": "\"OT6HjQ\""
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"j_vRpw\""
     },
@@ -3316,10 +3345,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b9d-Ndev62rFXnGMt55ytlTswDMdEWQ\""
+      "ETag": "W/\"33b9d-4nUz2EB0W1nOKBssZLbgTXCq2Ec\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40144-4ZBQRxa8isDA7RkcTmSt/5m9D+c\""
+      "ETag": "W/\"40144-1g0tbx9TRvX03BNeuVhiK0rKv54\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -3354,6 +3383,7 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
+    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -3363,12 +3393,12 @@
       "Last-Modified": "Sun, 01 Nov 2026 02:09:37 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793525077\"",
-      "Last-Modified": "Sun, 01 Nov 2026 09:24:37 GMT"
+      "ETag": "\"1793548520\"",
+      "Last-Modified": "Sun, 01 Nov 2026 15:55:20 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793525097\"",
-      "Last-Modified": "Sun, 01 Nov 2026 09:24:57 GMT"
+      "ETag": "\"1793548728\"",
+      "Last-Modified": "Sun, 01 Nov 2026 15:58:48 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -3447,7 +3477,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0b225b5463661b1a52933ec14a32ab284\""
+      "ETag": "\"0343dc38035d86f8ed1d5ad28225f0233\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -3547,8 +3577,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"101ea211b386fc2a3922d5a85cf34fb1\"",
-      "Last-Modified": "Sun, 01 Nov 2026 04:05:00 GMT"
+      "ETag": "\"1f52958da3e26b883610a79a73c59a1e\"",
+      "Last-Modified": "Sun, 01 Nov 2026 14:36:37 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -3616,7 +3646,7 @@
       "rules": "User-agent: *\r\nAllow: /\r\nDisallow:/webdata"
     },
     "https://ksp.etri.re.kr/robots.txt": {
-      "day": "2026-10-31",
+      "day": "2026-11-01",
       "rules": "Sitemap: https://ksp.etri.re.kr/ksp/sitemap.xml\n\nUser-agent: *\nDisallow: /ksp/funding/\nDisallow: /ksp/edr/\nDisallow: /ksp/rcp/\nDisallow: /ksp/git/\n\nUser-agent: Mediapartners-Google*\nDisallow: /\n\nUser-agent: UbiCrawler\nDisallow: /\n\nUser-agent: DOC\nDisallow: /\n\nUser-agent: Zao\nDisallow: /\n\nUser-agent: sitecheck.internetseer.com\nDisallow: /\n\nUser-agent: Zealbot\nDisallow: /\n\nUser-agent: MSIECrawler\nDisallow: /\n\nUser-agent: SiteSnagger\nDisallow: /\n\nUser-agent: WebStripper\nDisallow: /\n\nUser-agent: WebCopier\nDisallow: /\n\nUser-agent: Fetch\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: Teleport\nDisallow: /\n\nUser-agent: TeleportPro\nDisallow: /\n\nUser-agent: WebZIP\nDisallow: /\n\nUser-agent: linko\nDisallow: /\n\nUser-agent: HTTrack\nDisallow: /\n\nUser-agent: Microsoft.URL.Control\nDisallow: /\n\nUser-agent: Xenu\nDisallow: /\n\nUser-agent: larbin\nDisallow: /\n\nUser-agent: libwww\nDisallow: /\n\nUser-agent: ZyBORG\nDisallow: /\n\nUser-agent: Download Ninja\nDisallow: /\n\nUser-agent: fast\nDisallow: /\n\nUser-agent: grub-client\nDisallow: /\n\nUser-agent: k2spider\nDisallow: /\n\nUser-agent: NPBot\nDisallow: /\n\nUser-agent: WebReaper\nDisallow: /\n\n\n"
     },
     "https://news.mit.edu/robots.txt": {
@@ -5290,6 +5320,10 @@
       "list_fingerprint": "bc6bcc48db9e2306b018cf1007368b92fe05210c204a0f19f31557f022a4e191",
       "status": "bootstrap_skipped"
     },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure": {
+      "list_fingerprint": "6ea10ead17793cbe54df28827962a5178c827ecbd34be0564f9d7eaaf8d489ae",
+      "status": "posted"
+    },
     "nvidia-korea:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": {
       "list_fingerprint": "2289da89b05de560fc6ae4e2037d1f2adc546a63ec7f437befd436022f2a3bcf",
       "status": "posted"
@@ -6137,6 +6171,12 @@
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://blog.st.com/touchgfx/"
+    },
+    "products:https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure": {
+      "fingerprint": "6ea10ead17793cbe54df28827962a5178c827ecbd34be0564f9d7eaaf8d489ae",
+      "first_seen": "2026-11-01T16:17:38.516550+00:00",
+      "language": "ko",
+      "url": "https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure/"
     },
     "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": {
       "fingerprint": "2289da89b05de560fc6ae4e2037d1f2adc546a63ec7f437befd436022f2a3bcf",
