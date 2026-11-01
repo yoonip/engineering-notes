@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-02 04:41 KST
+갱신: 2026-11-02 08:36 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -16,11 +16,29 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261102002900079>) · 2026-11-02 04:38 KST · 작성·제공: 김상훈
 
+## 日언론 "北에 무기·철강류 밀반출 中조직, 홍콩 기반 암약"
+
+> 북한으로 수출이 금지된 철강류 등의 자원이나 무기를 선편으로 몰래 보내는 중국계 민간인 조직이 자유무역항인 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261102017900073>) · 2026-11-02 08:15 KST · 작성·제공: 조성미
+
 ## 불가리아 대선 출구조사서 친러 현직 대통령 우세
 
 > 1일\(현지시간\) 치러진 불가리아 대통령 선거 출구조사 결과 현직 친러 대통령이 친서방 성향의 후보에 앞서는 ...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261102002600109>) · 2026-11-02 04:03 KST · 작성·제공: 민경락
+
+## 9명탄 제트기 美플로리다 주택가 도로에 추락…탑승자 전원 사망
+
+> 미국 플로리다주 팜비치 카운티에서 9명을 태운 제트기가 주택가 인근 도로에 추락해 탑승자 전원이 사망했다고 C...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261102013100009>) · 2026-11-02 07:47 KST · 작성·제공: 이신영
+
+## '美민주 대선잠룡' 크리스 머피 상원의원, 뇌졸중으로 입원
+
+> 미국 민주당 소속 크리스 머피 상원의원\(코네티컷\)이 뇌졸중으로 입원해 치료받고 있다고 워싱턴포스트\(WP\) ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261102007700071>) · 2026-11-02 06:51 KST · 작성·제공: 이유미
 
 ## 교황 "러·우크라 올레시키 휴전, 평화 조치로 이어지길"
 
@@ -58,6 +76,12 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261102001951071>) · 2026-11-02 04:21 KST · 작성·제공: 백나리
 
+## \[심층기획: 북한 대중 수출 구조 분석 ①\] ‘가발·텅스텐’ 특정 품목에 지나친 의존… 저부가가치의 덫에 빠질 수도
+
+> 북한의 대중국 수출 구조가 크게 바뀌고 있다. 10년 전 북한의 전체 대중 수출에서 절반 가까이를 차지했던 석탄과 철광석은 대북 제재 이후 공식 무역통계에서 사실상 자취를 감췄다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/01/north-korea-export-shift/>) · 2026-11-02 06:00 KST · 작성·제공: 서울-김태이 kimt@rfa.org
+
 ## 북한, 집속탄두 위력시험…한국 합참 “발사 전부터 동향 추적”
 
 > 북한이 전술탄도미사일에 탑재하는 집속탄두의 위력시험을 실시하고, 축구장 18개에 해당하는 면적을 초토화할 수 있다고 주장했습니다.
@@ -81,9 +105,13 @@
 ## 다른 매체의 원문
 
 - [Civilians in Ukraine's Kherson prepare for the return of war as localized ceasefire ends](<https://abcnews.com/International/wireStory/civilians-ukraines-kherson-prepare-return-war-localized-ceasefire-137747046>) · ABC News 미국
+- [Gulf leaders meet in Qatar in effort to stave off new escalation in U.S and Iran war](<https://www.npr.org/2026/11/01/nx-s1-6023237/gulf-leaders-meet-in-qatar-in-effort-to-stave-off-new-escalation-in-u-s-and-iran-war>) · NPR
+- [This legendary board game could take decades to complete](<https://www.npr.org/2026/11/01/nx-s1-6025438/this-legendary-board-game-could-take-decades-to-complete>) · NPR
 - [Somali pirates seize Iranian fishing vessel, raising fears of attacks on cargo ships](<https://abcnews.com/International/wireStory/somali-pirates-seize-iranian-fishing-vessel-raising-fears-137745870>) · ABC News 미국
 - [They signed up for a lifetime at sea on an endless cruise. High gas prices intervened](<https://www.npr.org/2026/11/01/nx-s1-6022214/they-signed-up-for-a-lifetime-at-sea-on-an-endless-cruise-high-gas-prices-intervened>) · NPR
 - [Israeli strike kills boy in Gaza as Qataris say vessel struck in Gulf, and other Mideast news](<https://abcnews.com/International/wireStory/israeli-strike-kills-boy-gaza-qataris-vessel-struck-137745763>) · ABC News 미국
+- [Exit polls suggest Bulgarians elected first female president](<https://abcnews.com/International/wireStory/bulgarians-vote-presidential-runoff-marked-regional-security-threats-137744157>) · ABC News 미국
+- [UN’s peacekeeping mission in Western Sahara ends after 35 years following US-Russia standoff](<https://abcnews.com/International/wireStory/uns-peacekeeping-mission-western-sahara-ends-after-35-137752621>) · ABC News 미국
 - [The UK's stance on its role in the slave trade is shifting, but reparations remain off the table](<https://abcnews.com/International/wireStory/uks-stance-role-slave-trade-shifting-reparations-remain-137749095>) · ABC News 미국
 - [Ukraine’s farmers dig in as Russia turns its sights back on grain shipments](<https://www.csmonitor.com/World/Europe/2026/1101/ukraine-grain-trade-breadbasket-russia-war-ports?icid=rss>) · The Christian Science Monitor
 - [Canadian Prime Minister Carney reports progress in trade talks with Trump days before US midterms](<https://abcnews.com/International/wireStory/canadian-prime-minister-carney-reports-progress-trade-talks-137750777>) · ABC News 미국
