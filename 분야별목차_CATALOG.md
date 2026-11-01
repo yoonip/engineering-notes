@@ -1,5 +1,7 @@
 # 분야별 목차 | Subject index
 
+[인기 GitHub 프로젝트](인기GitHub프로젝트_github-weekly/README.md)는 프로젝트의 용도·기능과 원본을 소개하고, 매주 수집한 Trending을 발행 월과 주차별로 보관합니다.
+
 [뉴스](뉴스_news/README.md)는 학습 자료와 별도로, 해외·국내의 주요 소식과 기사 개요를 날짜별로 보관하는 목록입니다.
 
 [AI 모델 동향과 분석](AI모델동향_ai-model-updates/README.md)은 새 모델의 배포·평가·사용 조건을, [미래·경제 보고서](미래경제보고서_future-economic-reports/README.md)는 경기 전망과 기술·산업의 중장기 조건을 다룹니다.

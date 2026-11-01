@@ -1,5 +1,7 @@
 # Engineering Notes
 
+[Popular GitHub projects](인기GitHub프로젝트_github-weekly/README.md) introduces project purposes and features in Korean, with source links and weekly Trending snapshots archived by publication month and week.
+
 Technical notes on electronics, computer engineering, and AI by [yoonip](https://github.com/yoonip). The collection connects circuits and semiconductors with RTL, firmware, systems software, GPU computing, and AI. It includes explanations, equations, implementations and recorded results. The paper studies explain the methods in Korean with original English terms; many technical notes also provide English summaries.
 
 ## Engineering and shared knowledge
