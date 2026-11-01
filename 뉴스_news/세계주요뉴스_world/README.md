@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-01 06:35 KST
+갱신: 2026-11-01 10:10 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -18,6 +18,12 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101003100082>) · 2026-11-01 05:04 KST · 작성·제공: 김계연
 
+## 美법원 "스페이스X 데이터센터의 대기오염 의혹소송 진행돼야"
+
+> 일론 머스크의 우주기업 스페이스X가 환경 관련 법률 위반 의혹 소송을 회피하는 데 실패했다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101012200091>) · 2026-11-01 08:46 KST · 작성·제공: 권영전
+
 ## "미군기지 26곳 이란 공격에 수십억불 피해…레이더 우선표적"
 
 > 이란 전쟁이 시작된 이후 중동 지역의 미군 기지가 이란 측 공격에 파손·파괴돼 수십억 달러의 피해가 발생했...
@@ -30,11 +36,23 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101002700071>) · 2026-11-01 04:04 KST · 작성·제공: 박성민
 
+## 일본 아이치현 도요하시시 바다서 규모 6.1 지진
+
+> \(서울=연합뉴스\) 1일 오전 7시 15분\(한국시간\) 일본 아이치현 도요하시시 남남서쪽 122km 해역에서 규모 6.1의 지진이 발생했다고 기상청...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101007600530>) · 2026-11-01 07:26 KST · 작성·제공: 기상뉴스
+
 ## 프랑스 전역 3주째 주말 시위…강경대응에도 32만명 거리로\(종합\)
 
 > 고등학생들이 시작한 시위가 대규모 소요 사태로 번진 프랑스에서 31일\(현지시간\) 세 번째 주말 시위가 열렸...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101001051082>) · 2026-11-01 03:42 KST · 작성·제공: 김계연
+
+## 무차별 인터넷 긁어가기 사라지나…빅테크, AI학습차단 표준도입
+
+> 앞으로 웹사이트 운영자는 사이트 내 콘텐츠의 주요 인공지능\(AI\) 모델 학습을 한 번에 거부할 수 있...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261101016900091>) · 2026-11-01 10:02 KST · 작성·제공: 권영전
 
 ## 폴란드 대통령, "투스크 총리 헌법재판소 강제 장악" 비난
 
@@ -53,6 +71,12 @@
 > 이란의 최고지도자 아야톨라 모즈타바 하메네이가 잠재적인 공격에 즉각 대응하겠다고 경고했습니다.
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8217305.html>) · 2026-11-01 04:40 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 루비오 미 국무장관, G20 회의서 VOA에 트럼프 행정부 외교 구상 밝혀
+
+> 마코 루비오 미국 국무장관은 31일, 애틀랜타에서 열린 주요 20개국\(G20\) 외교장관 회의에서 VOA의 질문에 답하며 트럼프 행정부의 외교 정책 우선 순위를 설명하고 주요 국제 현안에 대한 입장을 밝혔습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8217337.html>) · 2026-11-01 09:21 KST
 
 ## G20 외교장관 회의 오늘 폐막…공동성명 채택 여부 주목
 
@@ -74,6 +98,7 @@
 - [Evacuees reunite with family at the Ukrainian-Belarusian border after fleeing Oleshky](<https://abcnews.com/International/wireStory/evacuees-reunite-family-ukrainian-belarusian-border-after-fleeing-137730820>) · ABC News 미국
 - [Netherlands coast guard rescues 38 people adrift in a rubber boat](<https://abcnews.com/International/wireStory/netherlands-coast-guard-rescues-38-people-adrift-rubber-137734449>) · ABC News 미국
 - [France seethes again as youth-led protests sweep Europe](<https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe>) · NPR
+- [320,000 protested nationwide, French government says](<https://abcnews.com/International/wireStory/france-heads-weekend-protests-youth-led-rallies-sweep-137729925>) · ABC News 미국
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
