@@ -6,7 +6,7 @@
 
 ## 현재 쓰이는 기술
 
-자세와 이동을 돕는 맞춤 좌석, 수동·전동 휠체어, 보행기, 보조기, 이동 리프트는 신체와 공간 사이의 부담을 줄입니다. 스위치 입력, 키보드 대체 장치, 시선 추적, 음성 출력 의사소통 기기는 손 움직임이나 발화가 제한된 상황에서 컴퓨터와 대화를 사용할 수 있게 합니다. 보완대체의사소통(AAC)은 그림판, 글자판, 제스처, 음성생성기기처럼 여러 방식을 포함하며, 필요한 사람에게는 말이 일부 가능해도 도움이 될 수 있습니다.
+자세와 이동을 돕는 맞춤 좌석, 수동·전동 휠체어, 보행기, 보조기, 이동 리프트는 신체와 공간 사이의 부담을 줄입니다. 스위치 입력, 키보드 대체 장치, 시선 추적, 음성 출력 의사소통 기기는 손 움직임이나 발화가 제한된 상황에서 컴퓨터를 조작하고 대화에 참여하도록 돕습니다. 보완대체의사소통(AAC)은 그림판, 글자판, 제스처, 음성생성기기처럼 여러 방식을 포함하며, 필요한 사람에게는 말이 일부 가능해도 도움이 될 수 있습니다.
 
 기능적 전기자극(FES)은 피부 전극을 통해 말초 신경과 근육에 전기 자극을 주어 정해진 움직임을 유도합니다. 보행 보조 장치나 상지 재활에서 사용할 수 있지만, 병변 위치·근육 반응·관절 상태·피부 감각에 따라 적용성이 달라집니다. 재활 로봇은 반복 움직임을 지원하고, 센서로 관절 각도·힘·보행 시간을 기록해 훈련량과 동작을 조정합니다. 로봇이 움직임을 만들어 준 횟수만으로 일상생활의 기능 향상을 입증할 수는 없으므로 실제 과제와 피로·통증을 함께 평가합니다.
 
@@ -20,7 +20,7 @@
 
 ## 재활 보조와 신경 손상 회복의 현재 근거
 
-뇌병변은 한 가지 상태가 아닙니다. 뇌졸중은 혈관이 막히거나 터져 뇌 조직이 손상되는 사건이고, 뇌성마비는 발달 중인 뇌의 비진행성 손상으로 움직임과 자세에 장기적인 영향을 주며, 척수 손상은 뇌와 몸 사이의 신경 신호 경로를 손상합니다. 따라서 같은 로봇 보행 훈련을 받아도 회복 목표와 가능한 변화가 다릅니다.
+뇌병변은 한 가지 상태가 아닙니다. 뇌졸중은 혈관이 막히거나 터져 뇌 조직이 손상되는 사건이고, 뇌성마비는 발달 중인 뇌의 비진행성 손상으로 움직임과 자세에 장기적인 영향을 줍니다. 척수 손상은 뇌가 아닌 척수의 손상이며, 여기서는 신경재활 기술을 비교하는 관련 사례로 다룹니다. 같은 보행 훈련 장비를 사용하더라도 손상 위치에 따라 회복 목표와 근거가 다릅니다.
 
 허혈성 뇌졸중의 급성기에는 적격 환자에서 혈전용해제나 혈관 내 혈전제거술로 막힌 혈관을 다시 열어 추가 뇌 손상을 줄일 수 있습니다. 이미 죽은 뇌 조직을 되살리는 수술은 아니며, 치료 시간·영상 소견·출혈 위험 등 환자 조건이 중요합니다. 이후 재활은 남아 있는 신경 회로가 반복 과제를 통해 움직임을 다시 학습하도록 돕습니다. 로봇과 기능적 전기자극은 반복 횟수와 운동 범위를 확보하고 기록을 남길 수 있지만, 장치가 움직임을 만들어낸 것과 환자가 일상에서 독립적으로 기능하게 된 것은 별도로 평가해야 합니다. [미국 NINDS의 뇌졸중 치료 안내](https://www.ninds.nih.gov/health-information/stroke/assess-and-treat)는 급성기 혈류 회복 치료와 재활을 구분합니다.
 
@@ -55,7 +55,7 @@ flowchart LR
 
 Brain lesions can affect posture, movement, communication, swallowing, sensation and cognition in different combinations. Seating, mobility equipment, AAC, switch access, functional electrical stimulation and robotic rehabilitation support specific tasks. Research on exoskeletons and brain–computer interfaces is promising but remains condition- and study-specific.
 
-Acute stroke treatment can restore blood flow in eligible patients, while rehabilitation trains remaining neural pathways. A 2023 brain–spine interface report involved one participant; a 2026 randomized trial found no added walking benefit from transcutaneous spinal stimulation over training alone.
+Acute stroke treatment can restore blood flow in eligible patients, while rehabilitation trains remaining neural pathways. As a related spinal-cord-injury example rather than evidence for brain lesions, a 2023 brain–spine interface report involved one participant; a 2026 randomized trial found no added walking benefit from transcutaneous spinal stimulation over training alone.
 
 ## 출처
 

@@ -4,11 +4,11 @@
 
 ## 범위와 읽는 방법
 
-요청하신 12개 유형을 모두 정리하고, 최신 법령에 추가된 췌장장애도 별도 항목으로 덧붙였습니다. 2025년 12월 16일 개정된 [장애인복지법 시행령 별표 1](https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110201&flSeq=159613615&gubun=)에는 췌장장애가 포함되어 있으며, 2026년 9월 1일 시행령 기준 장애 유형은 총 16개입니다. 그중 이 자료에서 다루는 신체·내부기관 기능 관련 유형은 13개이고, 지적·자폐성·정신장애는 이 목차의 범위에 넣지 않았습니다. 이 문서의 요약은 법률상 분류를 이해하기 위한 것이며, 개인의 기능이나 필요한 기술을 진단하거나 등록 기준을 대신하지 않습니다. 자세한 절차는 [보건복지부의 장애인 등록 안내](https://www.law.go.kr/LSW/cgmExpcInfoP.do?cgmExpcDatSeq=2290435&mode=2&ofiClsCd=350116)에서 확인하실 수 있습니다.
+이 목차는 외부 신체 기능과 내부기관 기능에 관한 장애 유형을 다룹니다. 2025년 12월 16일 개정된 [장애인복지법 시행령 별표 1](https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110201&flSeq=159613615&gubun=)에는 췌장장애가 포함되어 있으며, 해당 유형의 등록은 [2026년 7월 1일부터 시행됐습니다](https://www.110.go.kr/data/counselView.do?curPage=2&num=A01_721059). 별표의 장애 유형은 총 16개입니다. 그중 이 자료에서 다루는 신체·내부기관 기능 관련 유형은 13개이고, 지적·자폐성·정신장애는 이 목차의 범위에 넣지 않았습니다. 이 문서의 요약은 법률상 분류를 이해하기 위한 것이며, 개인의 기능이나 필요한 기술을 진단하거나 등록 기준을 대신하지 않습니다. 일반적인 등록 절차는 [보건복지부의 2024년 안내](https://www.law.go.kr/LSW/cgmExpcInfoP.do?cgmExpcDatSeq=2290435&mode=2&ofiClsCd=350116)에서 확인할 수 있습니다. 이 안내는 췌장장애 신설 이전 자료이므로 현재 유형 수와 췌장장애 등록은 위의 개정 별표와 2026년 시행 안내를 함께 확인합니다.
 
 보조기술은 기기 하나만을 뜻하지 않습니다. 사용자와 함께 필요를 평가하고, 몸과 환경에 맞춰 조정하고, 사용법을 익히며, 수리와 사후 지원을 받을 수 있어야 기능을 오래 활용할 수 있습니다. WHO는 이를 제품과 관련 서비스·체계가 함께 있는 영역으로 설명합니다. 이 저장소에서는 보편적으로 쓰이는 제품, 특정 적응증에 허가된 의료기기, 임상시험 기술, 실험실 연구를 구분합니다.
 
-## 요청하신 신체 장애 12개 유형
+## 외부 신체 기능과 내부기관 기능의 장애 유형
 
 | 구분 | 유형 | 기술과 기능을 살펴볼 주제 |
 |---|---|---|
@@ -54,7 +54,7 @@
 
 ## English
 
-This section explains how assistive, rehabilitation and medical technologies support communication, mobility, health management and participation. It covers the twelve requested categories and adds pancreatic disability because the Korean Enforcement Decree, revised on 16 December 2025 and effective from 1 September 2026, now lists sixteen disability categories. Thirteen concern physical or internal-organ functions; intellectual disability, autism spectrum disorder and mental disability are outside this section's scope. Legal categories do not diagnose or describe an individual's needs. Each article separates widely used technologies from indication-specific medical devices, clinical studies and early research.
+This section explains how assistive, rehabilitation and medical technologies support communication, mobility, health management and participation. The schedule to the Korean Enforcement Decree, revised on 16 December 2025, lists sixteen disability categories. Registration for the newly added pancreatic disability category began on 1 July 2026. Thirteen concern physical or internal-organ functions; intellectual disability, autism spectrum disorder and mental disability are outside this section's scope. Legal categories do not diagnose or describe an individual's needs. Each article separates widely used technologies from indication-specific medical devices, clinical studies and early research.
 
 [Subject index](../분야별목차_CATALOG.md) · [Biomedical engineering and medical AI](../전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md)
 

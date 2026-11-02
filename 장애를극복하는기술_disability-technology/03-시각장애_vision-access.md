@@ -22,7 +22,7 @@
 
 ## 시각 정보를 실제로 다시 만들려는 치료
 
-시각을 회복시키는 접근은 손상 위치에 따라 달라집니다. 망막의 특정 유전자 결함이 원인이고 살아 있는 망막 세포가 남아 있다면 유전자 치료가 결함 경로를 보완할 수 있습니다. 미국 FDA가 승인한 LUXTURNA는 양쪽 RPE65 유전자 변이가 확인된 망막 이영양증 환자를 대상으로 합니다. 정상적인 시력을 누구에게나 되돌리는 치료가 아니며, 다른 원인의 시각장애에 적용되지 않습니다. 치료 벡터가 망막 세포에 기능성 RPE65 유전 정보를 전달해 시각회로의 특정 생화학 단계를 돕는 방식입니다. [FDA 적응증과 제품 정보](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/luxturna)를 확인할 수 있습니다.
+시각을 회복시키는 접근은 손상 위치에 따라 달라집니다. 망막의 특정 유전자 결함이 원인이고 살아 있는 망막 세포가 남아 있다면 유전자 치료가 결함 경로를 보완할 수 있습니다. 미국 FDA가 승인한 LUXTURNA는 RPE65 유전자의 두 대립유전자 모두에 변이가 확인된 망막 이영양증 환자를 대상으로 합니다. 정상적인 시력을 누구에게나 되돌리는 치료가 아니며, 다른 원인의 시각장애에 적용되지 않습니다. 치료 벡터가 망막 세포에 기능성 RPE65 유전 정보를 전달해 시각회로의 특정 생화학 단계를 돕는 방식입니다. [FDA 적응증과 제품 정보](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/luxturna)를 확인할 수 있습니다.
 
 광수용세포가 넓게 소실된 건성 황반변성의 지도모양 위축에서는 망막 아래에 놓는 PRIMA 광전지 임플란트가 중심 시각을 일부 복원하려는 접근입니다. 안경의 카메라가 영상을 받고, 안경의 적외선 프로젝터가 이를 망막 아래 임플란트에 비춥니다. 임플란트의 픽셀은 빛을 전기 신호로 바꾸어 남아 있는 망막 회로를 자극합니다. 즉 손상된 광수용세포를 다시 자라게 하는 치료가 아니라, 빛 감지 기능을 작은 전자 배열로 대체하는 방식입니다. NEJM 임상시험에서 38명이 이식받았고, 12개월 평가가 가능한 32명 중 26명(81%)이 미리 정한 임상적으로 의미 있는 시력표 개선 기준을 충족했습니다. 이는 해당 질환과 시험 조건에 국한된 결과이며, 자연 시력을 정상 수준으로 회복했다는 뜻은 아닙니다. 제조사는 유럽에서 지도모양 위축으로 심하게 시력이 저하된 성인을 대상으로 승인됐으며, EU/EEA 밖에서는 아직 판매 승인을 받지 않았다고 안내합니다. [NEJM 임상시험](https://www.nejm.org/doi/abs/10.1056/NEJMoa2501396), [PRIMA 작동 원리와 적용 범위](https://primasicht.de/en/)를 함께 확인할 수 있습니다.
 
@@ -70,7 +70,7 @@ Cause-specific treatments include RPE65 gene therapy and a photovoltaic retinal 
 
 ## 출처
 
-- [미국 FDA, LUXTURNA](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/luxturna): 양쪽 RPE65 변이 망막 이영양증에 한정된 승인 적응증.
+- [미국 FDA, LUXTURNA](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/luxturna): RPE65 양대립유전자 변이 관련 망막 이영양증에 한정된 승인 적응증.
 - [PRIMA pivotal study, New England Journal of Medicine (2025)](https://www.nejm.org/doi/abs/10.1056/NEJMoa2501396): 지도모양 위축 환자 대상 망막 임플란트 임상 결과.
 - [PRIMA implant system](https://primasicht.de/en/): 광전지 임플란트와 특수 안경의 작동 원리와 적용 범위.
 - [MCO-010 optogenetic therapy study, PubMed](https://pubmed.ncbi.nlm.nih.gov/40838197/): 광유전학 접근의 임상 연구 단계.

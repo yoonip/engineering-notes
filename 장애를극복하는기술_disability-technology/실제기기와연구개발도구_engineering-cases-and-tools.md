@@ -68,7 +68,7 @@ AI가 모든 보조기기에 들어가는 것은 아닙니다. 정해진 파형 
 
 ### C-Leg: 보행 상태에 맞춰 무릎 저항을 바꾸는 의지
 
-Ottobock의 C-Leg는 무릎 관절 의지 안에 관절각 센서, 가속도계·자이로스코프, 마이크로프로세서, 유압 장치를 둡니다. 센서로 무릎과 하퇴의 움직임을 읽고, 제어기가 보행 주기와 상황을 추정한 뒤 유압 저항을 조절합니다. 제조사 전문가 안내서는 센서 정보가 초당 100회 갱신·평가된다고 밝히며, 배터리 부족·고장 때의 안전 모드도 설명합니다. 보행 속도 하나만 읽는 장치가 아니라 입각기와 유각기, 앉기·서기, 경사 등 서로 다른 상황에서 무릎이 접히거나 펴지는 속도를 조정하는 시스템입니다. ([Ottobock 사용 및 전문가 안내서](https://spa-prod-commerce.cep.ottobock.com/medias/C-Leg4Update-InstructionsforProfessionals-English-7-2024.pdf?attachment=true&context=bWFzdGVyfHJvb3R8MzQ2NjA5NnxhcHBsaWNhdGlvbi9wZGZ8aDZkL2g4OC85Mzk3MDgxNDQwMjg2LnBkZnwwZDEzYTkzODI1YzlhZjUwYTVjZTRmODdkOWQ4OTlmMjJiYTE0MmEwNDBjYjUxN2ZmYTM0NDVmOTZjODBiZDVi)
+Ottobock의 C-Leg는 무릎 관절 의지 안에 관절각 센서, 가속도계·자이로스코프, 마이크로프로세서, 유압 장치를 둡니다. 센서로 무릎과 하퇴의 움직임을 읽고, 제어기가 보행 주기와 상황을 추정한 뒤 유압 저항을 조절합니다. 제조사 전문가 안내서는 센서 정보가 초당 100회 갱신·평가된다고 밝히며, 배터리 부족·고장 때의 안전 모드도 설명합니다. 보행 속도 하나만 읽는 장치가 아니라 입각기와 유각기, 앉기·서기, 경사 등 서로 다른 상황에서 무릎이 접히거나 펴지는 속도를 조정하는 시스템입니다. ([Ottobock 사용 및 전문가 안내서](https://spa-prod-commerce.cep.ottobock.com/medias/C-Leg4Update-InstructionsforProfessionals-English-7-2024.pdf?attachment=true&context=bWFzdGVyfHJvb3R8MzQ2NjA5NnxhcHBsaWNhdGlvbi9wZGZ8aDZkL2g4OC85Mzk3MDgxNDQwMjg2LnBkZnwwZDEzYTkzODI1YzlhZjUwYTVjZTRmODdkOWQ4OTlmMjJiYTE0MmEwNDBjYjUxN2ZmYTM0NDVmOTZjODBiZDVi))
 
 ![Ottobock C-Leg 마이크로프로세서 무릎 의지의 제품 사진](https://images.ctfassets.net/6ip7bnhvpajs/1V3OX5uX46h2oIiwJypnKH/9da978c8274c4c6bb20668749fc26d3c/4819172.jpg?fm=webp&fit=fill&f=faces&w=1200&h=1200&q=75)
 
@@ -82,7 +82,7 @@ flowchart LR
     D --> A
 ```
 
-그림 2. 제조사가 안내한 센서·제어기·유압 관절의 기능 관계를 간단히 나타냈습니다. 실제 제품의 세부 회로와 제어 알고리즘을 뜻하지 않습니다. 관절이 놓인 시점에 따라 지지와 움직임을 조절하는 원리를 확인하는 그림입니다. ([Ottobock 전문가 안내서](https://spa-prod-commerce.cep.ottobock.com/medias/C-Leg4Update-InstructionsforProfessionals-English-7-2024.pdf?attachment=true&context=bWFzdGVyfHJvb3R8MzQ2NjA5NnxhcHBsaWNhdGlvbi9wZGZ8aDZkL2g4OC85Mzk3MDgxNDQwMjg2LnBkZnwwZDEzYTkzODI1YzlhZjUwYTVjZTRmODdkOWQ4OTlmMjJiYTE0MmEwNDBjYjUxN2ZmYTM0NDVmOTZjODBiZDVi))
+그림 2. 제조사가 안내한 센서·제어기·유압 관절의 기능 관계를 간단히 나타냈습니다. 실제 제품의 세부 회로와 제어 알고리즘을 뜻하지 않습니다. 보행 단계에 따라 관절의 지지와 움직임을 조절하는 원리를 확인하는 그림입니다. ([Ottobock 전문가 안내서](https://spa-prod-commerce.cep.ottobock.com/medias/C-Leg4Update-InstructionsforProfessionals-English-7-2024.pdf?attachment=true&context=bWFzdGVyfHJvb3R8MzQ2NjA5NnxhcHBsaWNhdGlvbi9wZGZ8aDZkL2g4OC85Mzk3MDgxNDQwMjg2LnBkZnwwZDEzYTkzODI1YzlhZjUwYTVjZTRmODdkOWQ4OTlmMjJiYTE0MmEwNDBjYjUxN2ZmYTM0NDVmOTZjODBiZDVi))
 
 보장구 전문가는 C-Soft Plus 설정 소프트웨어로 장치 설정과 정렬을 조정합니다. 제조사 안내서는 설정 절차를 단계별로 안내하고, 설정을 저장·출력해 기록할 수 있다고 설명합니다. 조정 결과를 확인할 때는 평지 보행뿐 아니라 경사·계단·의자에서 일어나기, 속도 변화, 배터리 저하 때의 동작을 사용자의 안전 조건에 맞춰 살펴야 합니다.
 
@@ -105,7 +105,7 @@ Lifeward의 ReWalk 7은 다리와 몸통 일부에 착용하는 배터리 구동
 <a id="neurological-motor"></a>
 ## 뇌병변장애: 기능적 전기자극과 운동 재활
 
-Bioness L300 Go는 발처짐이나 일부 하지 근력 저하를 돕는 기능적 전기자극(FES) 시스템의 예입니다. 피부 전극이 말초신경·근육을 자극해 발목을 들어 올리거나, 적응증에 해당하는 성인의 무릎 굴곡·신전을 돕습니다. 이 방식은 마비된 근육을 로봇처럼 외부에서 움직이는 것이 아니라, 자극할 신경과 근육의 반응이 남아 있을 때 보행 과제의 특정 시점에 전기 펄스를 전달합니다. ([Bioness 사용 안내](https://www.bionessuniversity.com/documents/L300Go%20User%27s%20Guide%20Rev.%20E%20%5Befile%5D.pdf), [제조사 사용 목적 자료](https://bionessrehab.com/wp-content/uploads/2022/02/03785_productbrochure.pdf))
+Bioness L300 Go는 발처짐이나 일부 하지 근력 저하를 돕는 기능적 전기자극(FES) 시스템의 예입니다. 피부 전극이 말초신경·근육을 자극해 발목을 들어 올리거나, 적응증에 해당하는 성인의 무릎 굴곡·신전을 돕습니다. 이 방식은 마비된 근육을 로봇처럼 외부에서 움직이는 것이 아니라, 자극할 신경과 근육의 반응이 남아 있을 때 보행 과제의 특정 시점에 전기 펄스를 전달합니다. ([Bioness 사용 안내, Rev. L](https://bionessmobility.com/wp-content/uploads/2025/05/MP602-00664-001-Rev.-L-efile.pdf), [제조사 사용 목적 자료](https://bionessrehab.com/wp-content/uploads/2022/02/03785_productbrochure.pdf))
 
 재활 로봇 연구에서는 관절 위치, 힘, 보행 속도, 근전도, 균형을 측정해 과제 난이도를 조정합니다. Stanford의 OpenSim은 근골격 모델을 이용해 동작을 시뮬레이션하고, OpenSense는 IMU 관성 센서 자료로 움직임을 추정하며, Moco는 동작 궤적·근육 사용 등의 최적화 문제를 다룹니다. 이 도구들은 임상 판단을 대체하지 않고, 모델의 가정과 환자별 몸의 차이를 검토하는 연구 도구입니다. ([Stanford OpenSim](https://opensim.stanford.edu/), [Mobilize Center 도구 목록](https://mobilize.stanford.edu/software/))
 
@@ -169,14 +169,16 @@ Medtronic Micra는 심장 안에 직접 삽입하는 리드리스 심박조율�
 
 Abbott Aveir DR은 심방용과 심실용 리드리스 장치가 서로 통신해 특정 환자에게 이중방 조율을 제공하는 시스템입니다. 두 개의 독립된 이식 장치 사이 통신, 시간 동기화, 감지 신호 신뢰성, 배터리 교체·회수 전략이 설계 과제입니다. ([FDA Aveir DR PMA 기록](https://www.accessdata.fda.gov/cdrh/devicesatfda/index.cfm?db=pma&id=520981)) FDA PMA 자료는 승인과 적응증, 임상 평가 내용을 확인하는 출처이며 모든 환자군에 대한 임상 우월성을 의미하지 않습니다.
 
-심실보조장치(VAD)는 펌프, 심실 유입관·대동맥 유출관, 피부를 통과하는 구동선, 외부 제어기와 배터리로 이루어진 시스템입니다. HeartMate 3 등 제품의 평가에서는 혈류량, 혈전·용혈, 펌프 회전, 구동선 감염, 전원·제어기 교체와 경보가 중요합니다. 실제 임상에서 관리하는 항응고와 감염 대응은 전자 제어 성능과 별개로 안전한 사용에 필수적입니다. ([FDA HeartMate 3 보충 허가자료](https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160054S008D.pdf))
+HeartMate 3 같은 좌심실보조장치(LVAD)는 펌프, 좌심실 유입관·대동맥 유출관, 피부를 통과하는 구동선, 외부 제어기와 배터리로 이루어진 시스템입니다. HeartMate 3 등 제품의 평가에서는 혈류량, 혈전·용혈, 펌프 회전, 구동선 감염, 전원·제어기 교체와 경보가 중요합니다. 실제 임상에서 관리하는 항응고와 감염 대응은 전자 제어 성능과 별개로 안전한 사용에 필수적입니다. ([FDA HeartMate 3 보충 허가자료](https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160054S008D.pdf))
 
 <a id="liver-support"></a>
 ## 간장애: 체외 간 보조와 임상시험
 
 MARS(Molecular Adsorbent Recirculating System)는 알부민 투석을 이용해 혈액의 알부민 결합 독성 물질을 체외 회로에서 제거하는 간 보조 기술입니다. FDA K113313 자료에는 두 개의 투석기와 흡착 컬럼, 알부민 포함 투석액, 롤러 펌프 및 혈액·알부민 회로 감시 항목이 설명되어 있습니다. 이 문서의 표시사항은 약물 과량·중독과 만성 간질환 악화에 따른 간성뇌증이며, 간이식 가교로 허가된 장치라고 설명하지 않습니다. 간세포의 모든 대사·합성·응고 기능을 대신하는 완전한 인공 간은 아닙니다. ([FDA MARS 5.0 510(k) K113313](https://www.accessdata.fda.gov/cdrh_docs/pdf11/K113313.pdf))
 
-Fresenius Medical Care가 2007년 제품자료에서 설명한 Prometheus 체외회로는 알부민 투과 필터로 혈장 일부를 분리하고, 중성 수지·음이온 교환 흡착기로 알부민 결합 물질을 제거한 뒤, 고유량 투석기로 수용성 물질을 처리합니다. 회로에는 혈액 회로와 분리된 혈장 회로, 혈액·혈장 펌프, 필터와 흡착기가 포함됩니다. 2003년 첫 임상 적용 논문은 초기 환자군에서 안전성과 물질 제거를 연구했습니다. 이 장치의 회로 구조나 독성물질 제거만으로 환자의 생존 이득이 입증되는 것은 아닙니다. ([Fresenius Medical Care의 2007년 Prometheus 제품 기술자료](https://www.freseniusmedicalcare.com/fileadmin/data/masterContent/pdf/Prometheus/Prometheus_Product_Range.pdf), [Prometheus 최초 임상 적용 연구](https://www.sciencedirect.com/science/article/pii/S0168827803004689))
+Fresenius Medical Care가 2007년 제품자료에서 설명한 Prometheus 체외회로는 알부민 투과 필터로 혈장 일부를 분리하고, 중성 수지·음이온 교환 흡착기로 알부민 결합 물질을 제거한 뒤, 고유량 투석기로 수용성 물질을 처리합니다. 회로에는 혈액 회로와 분리된 혈장 회로, 혈액·혈장 펌프, 필터와 흡착기가 포함됩니다. 2003년 첫 임상 적용 논문은 초기 환자군에서 안전성과 물질 제거를 연구했습니다. 이 장치의 회로 구조나 독성물질 제거만으로 환자의 생존 이득이 입증되는 것은 아닙니다. ([Prometheus 회로와 제거 선택성 연구, 2006](https://www.wjgnet.com/1007-9327/full/v12/i6/940.htm), [Prometheus 최초 임상 적용 연구](https://www.sciencedirect.com/science/article/pii/S0168827803004689))
+
+여기서는 과거에 임상 적용된 회로를 살펴봅니다. 제조사가 배포하고 BfArM이 공개한 2025년 안전성 안내는 Prometheus를 더 이상 판매하지 않는 장비로 명시합니다. ([제조사 안내, BfArM 공개본](https://www.bfarm.de/SharedDocs/Kundeninfos/EN/07/2025/45042-24_kundeninfo_en.pdf?__blob=publicationFile))
 
 간 보조 장치의 실험·임상 평가에는 회로 압력, 혈액 손상, 응고, 알부민·독성물질 제거, 전해질·열·체액 균형, 치료 세션별 임상 결과가 포함됩니다. EASL 2023 가이드라인은 급성-만성 간부전에서 인공·바이오인공 간 보조를 임상시험 외 일상적으로 사용하도록 권고할 근거가 충분하지 않다고 정리합니다. ([EASL 임상지침 (2023)](https://www.journal-of-hepatology.eu/article/S0168-8278%2823%2900244-1/fulltext)) UK HRA에 등록된 DIALIVE 2.0 계획은 영국 약 12개 병원에서 72명을 모집해 표준 치료와 비교하고, 10일 동안 최대 7회의 치료와 90일 추적을 하도록 설계됐습니다. 이는 연구 계획이며 효과가 입증되거나 상용화된 결과가 아닙니다. ([UK HRA 연구 요약](https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/dialive-20-in-aclf/))
 
@@ -218,7 +220,7 @@ FDA가 2023년 510(k) 실질적 동등성 결정을 내린 Beta Bionics iLet 시
 
 검증은 정상적인 식사·운동뿐 아니라 CGM 지연·탈락·압축 저혈당·통신 단절·펌프 막힘·잔량 부족·사용자 입력 누락을 포함합니다. 안전 상태로 전환하는 규칙과 알람, 수동 인슐린 투여를 위한 백업 계획, 사용자가 장치를 다시 제어할 수 있는 방법도 시스템 요구사항입니다. 알고리즘을 분석할 때는 평균 혈당만 보지 않고 저혈당 시간, 목표 범위 시간, 고혈당 시간, 센서 누락과 사용자별 편차를 함께 봅니다.
 
-제품 상태를 볼 때는 FDA가 2026년 10월 27일 갱신한 공개 회수 기록도 확인할 수 있습니다. 기록에는 특정 iLet 소프트웨어 버전에서 상태 표시줄 아이콘으로 잠금 화면이나 제한 접근 화면을 우회할 수 있는 문제가 기재되어 있습니다. 승인된 사용자 외 사람이 식사량을 입력하거나 인슐린 전달을 중단할 경우 중증 저혈당 위험이 생길 수 있어, FDA는 소프트웨어 설계 문제로 분류했습니다. 이 기록은 특정 버전의 수정 조치에 관한 것이며, 제품 전체나 다른 버전에 같은 결함이 있다는 뜻은 아닙니다. ([FDA iLet 소프트웨어 회수 기록 Z-1809-2026](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=218989))
+제품 상태를 볼 때는 FDA가 2026년 10월 27일 갱신한 공개 회수 기록도 확인할 수 있습니다. 기록에는 특정 iLet 소프트웨어 버전에서 상태 표시줄 아이콘으로 잠금 화면이나 제한 접근 화면을 우회할 수 있는 문제가 기재되어 있습니다. 기록은 권한이 없는 사람이 식사량 입력이나 인슐린 전달 중단을 조작할 수 있는 문제를 설명하며, FDA는 이를 소프트웨어 설계 문제로 분류했습니다. 이 기록은 특정 버전의 수정 조치에 관한 것이며, 제품 전체나 다른 버전에 같은 결함이 있다는 뜻은 아닙니다. ([FDA iLet 소프트웨어 회수 기록 Z-1809-2026](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRES/res.cfm?id=218989))
 
 ## 미래 연구를 읽을 때 구분할 단계
 
@@ -297,8 +299,8 @@ This article connects disability-specific overviews to real assistive devices, r
 - [Ottobock, C-Leg 사용 및 전문가 안내서](https://spa-prod-commerce.cep.ottobock.com/medias/C-Leg4Update-InstructionsforProfessionals-English-7-2024.pdf?attachment=true&context=bWFzdGVyfHJvb3R8MzQ2NjA5NnxhcHBsaWNhdGlvbi9wZGZ8aDZkL2g4OC85Mzk3MDgxNDQwMjg2LnBkZnwwZDEzYTkzODI1YzlhZjUwYTVjZTRmODdkOWQ4OTlmMjJiYTE0MmEwNDBjYjUxN2ZmYTM0NDVmOTZjODBiZDVi): 센서·유압 무릎 구조, 안전 모드, 전문가용 C-Soft-Plus 설정.
 - [Open Bionics, Hero Arm 사용자 안내](https://openbionics.com/en/hero-arm-user-guide/): 근육 제어, 손 모터 구성, 3D 스캔 기반 소켓, 사용 조건과 안전 정보.
 - [미국 FDA, ReWalk 7 510(k) K241822](https://www.accessdata.fda.gov/cdrh_docs/pdf24/K241822.pdf): 결정일 2025년 3월 12일, 제품 설명과 척수 손상 수준·장소별 표시사항.
-- [Courtine et al., Walking naturally after spinal cord injury using a brain–spine interface, Nature (2023)](https://www.nature.com/articles/s41586-023-06094-5): 뇌-척수 인터페이스 임상 개념 증명.
-- [Bioness, L300 Go 사용 안내서](https://www.bionessuniversity.com/documents/L300Go%20User%27s%20Guide%20Rev.%20E%20%5Befile%5D.pdf): FES 기기 사용·안전 정보.
+- [Lorach et al., Walking naturally after spinal cord injury using a brain–spine interface, Nature (2023)](https://www.nature.com/articles/s41586-023-06094-5): 뇌-척수 인터페이스 임상 개념 증명.
+- [Bioness, L300 Go 사용 안내서, Rev. L (2023)](https://bionessmobility.com/wp-content/uploads/2025/05/MP602-00664-001-Rev.-L-efile.pdf): FES 기기 사용·안전 정보.
 - [Stanford OpenSim](https://opensim.stanford.edu/), [Mobilize Center software](https://mobilize.stanford.edu/software/): OpenSim, OpenSense, Moco, AddBiomechanics의 공식 소프트웨어 소개.
 - [MATLAB/Simulink and ROS/Gazebo Co-Simulation of an Upper Limb Rehabilitation Robot for Kinematics and Dynamic Modeling, IEEE ATiGB (2025)](https://ieeexplore.ieee.org/abstract/document/11142188): SolidWorks, Gazebo, ROS, MATLAB/Simulink를 연결한 6자유도 상지 재활 로봇 시뮬레이션.
 - [RehabBot: Reinforcement learning environment for upper and lower limb robot-assisted rehabilitation, SoftwareX (2026)](https://doi.org/10.1016/j.softx.2026.102800): MuJoCo 기반 강화학습 연구 환경과 가상 사람 모델.
@@ -324,7 +326,7 @@ This article connects disability-specific overviews to real assistive devices, r
 - [미국 FDA, Micra 리드리스 심박조율기 승인 자료](https://www.fda.gov/news-events/press-announcements/fda-approves-first-leadless-pacemaker-treat-heart-rhythm-disorders), [Abbott Aveir DR PMA](https://www.accessdata.fda.gov/cdrh/devicesatfda/index.cfm?db=pma&id=520981): 리드리스 조율기의 규제·제품 자료.
 - [미국 FDA, HeartMate 3 허가·표시자료](https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160054S008D.pdf): 심실보조장치 구성과 사용 범위.
 - [미국 FDA, MARS 510(k) K113313](https://www.accessdata.fda.gov/cdrh_docs/pdf11/K113313.pdf): 알부민 투석 장치 및 회로 감시 정보.
-- [Fresenius Medical Care, Prometheus 2007 제품 기술자료](https://www.freseniusmedicalcare.com/fileadmin/data/masterContent/pdf/Prometheus/Prometheus_Product_Range.pdf), [Rifai et al., Prometheus 최초 임상 적용 연구, Journal of Hepatology (2003)](https://www.sciencedirect.com/science/article/pii/S0168827803004689): 혈장 분획·흡착·고유량 투석 회로와 초기 임상 평가.
+- Fresenius Medical Care, Prometheus Product Range (2007); [Rifai et al., Removal selectivity of Prometheus (2006)](https://www.wjgnet.com/1007-9327/full/v12/i6/940.htm), [Rifai et al., Prometheus 최초 임상 적용 연구, Journal of Hepatology (2003)](https://www.sciencedirect.com/science/article/pii/S0168827803004689): 혈장 분획·흡착·고유량 투석 회로와 초기 임상 평가.
 - [EASL Clinical Practice Guidelines on acute-on-chronic liver failure (2023)](https://www.journal-of-hepatology.eu/article/S0168-8278%2823%2900244-1/fulltext): 체외 간 보조의 임상 권고 근거.
 - [UK HRA, DIALIVE 2.0 in ACLF](https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/dialive-20-in-aclf/): 임상시험 설계와 윤리 검토 현황.
 

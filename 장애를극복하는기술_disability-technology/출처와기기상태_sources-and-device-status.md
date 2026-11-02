@@ -7,8 +7,9 @@
 | 출처 | 확인한 내용 |
 |---|---|
 | [장애인복지법 시행령 별표 1, 2025년 12월 16일 개정](https://www.law.go.kr/LSW/flDownload.do?bylClsCd=110201&flSeq=159613615&gubun=) | 현행 유형의 법적 명칭·요약 기준. 췌장장애 항목이 추가되어 별표에 16개 유형이 있습니다. |
-| [장애인복지법 시행령 현행법령 검색](https://www.law.go.kr/LSW/unSc.do?pageIndex=1&query=%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EB%B2%95&tabMenuId=tab73) | 2026년 9월 시행 법령 상태와 시행령·시행규칙의 현재 판본을 확인합니다. |
-| [보건복지부 장애인 등록 안내](https://www.law.go.kr/LSW/cgmExpcInfoP.do?cgmExpcDatSeq=2290435&mode=2&ofiClsCd=350116) | 장애인 등록이 법령상 유형 및 세부 장애정도 기준에 따른다는 점을 확인합니다. |
+| [장애인복지법 시행령 현행법령 검색](https://www.law.go.kr/LSW/unSc.do?pageIndex=1&query=%EC%9E%A5%EC%95%A0%EC%9D%B8%EB%B3%B5%EC%A7%80%EB%B2%95&tabMenuId=tab73) | 시행령·시행규칙의 현재 판본과 부칙을 확인합니다. |
+| [보건복지부 장애인 등록 안내 (2024-07-30)](https://www.law.go.kr/LSW/cgmExpcInfoP.do?cgmExpcDatSeq=2290435&mode=2&ofiClsCd=350116) | 등록 절차의 설명입니다. 췌장장애 신설 전의 15개 유형을 열거한 자료이므로 현행 유형 수의 근거로 쓰지 않습니다. |
+| [정부민원안내콜센터, 췌장장애 등록 안내 (2026-07-09)](https://www.110.go.kr/data/counselView.do?curPage=2&num=A01_721059) | 췌장장애 등록의 시행일은 2026년 7월 1일입니다. |
 | [WHO·UNICEF, Global Report on Assistive Technology (2022)](https://www.who.int/publications/i/item/9789240049451) | 보조기술을 제품과 관련 서비스·체계로 함께 설명하고, 접근성과 사후 지원의 필요성을 다룹니다. |
 
 ## 기기·연구 근거를 읽는 기준
