@@ -42,10 +42,10 @@ A와 B가 각각 읽기를 끝낸 다음 A의 쓰기, B의 쓰기 순서로 실�
 아래는 기존 코드의 설계 의도를 읽기 위한 짧은 예입니다. 전체 실행 코드와 동일한 독립 프로그램은 아닙니다.
 
 ```python
-sql = "UPDATE counter SET value=value+1, version=version+1 WHERE id=1 AND version=?"
-changed = connection.execute(sql, (expected_version,)).rowcount
-if changed == 0:
-    raise RuntimeError("읽은 이후 상태가 바뀌었습니다.")
+sql = "UPDATE counter SET value=value+1, version=version+1 WHERE id=1 AND version=?"  # 문자열에 갱신 조건을 적고 ?에는 예상 버전을 전달합니다.
+changed = connection.execute(sql, (expected_version,)).rowcount  # 원소 하나인 튜플로 값을 전달하고 변경 행 수를 읽습니다.
+if changed == 0:  # if는 조건문이며 갱신된 행이 없는지 확인합니다.
+    raise RuntimeError("읽은 이후 상태가 바뀌었습니다.")  # raise는 충돌을 호출자에게 예외로 알립니다.
 ```
 
 `?`는 값이 들어갈 자리표시자입니다. `(expected_version,)`은 원소가 하나인 튜플이며, 쉼표가 있어야 함수 인자용 값 묶음이 됩니다. `execute()`는 SQL을 실행하고 커서를 돌려줍니다. `rowcount`는 이 갱신에서 영향을 받은 행 수입니다. 이 테이블의 기본키 조건에서 0이면 예상 버전의 행을 갱신하지 못했고, 1이면 갱신했습니다. “예외가 없었다”와 “업무 변경이 적용되었다”를 나누어 보는 부분입니다.
@@ -67,9 +67,9 @@ python -m unittest -v test_advanced_ai.TilingDecodeAndData.test_real_sqlite_wal_
 
 ## 확인 문제
 
-1. 두 `UPDATE`의 `rowcount`가 모두 1인데 증가분이 하나 사라질 수 있습니까?
-2. 버전 조건 갱신에서 변경 행 수가 0이면 똑같은 값을 즉시 다시 보내면 됩니까?
-3. WAL이면 두 연결이 동시에 DB 파일을 쓰는 것입니까?
+1. 두 `UPDATE`의 `rowcount`가 모두 1인데 증가분이 하나 사라질 수 있나요?
+2. 버전 조건 갱신에서 변경 행 수가 0이면 똑같은 값을 즉시 다시 보내면 되나요?
+3. WAL이면 두 연결이 동시에 DB 파일을 쓰는 것인가요?
 
 답: 1번은 그렇습니다. 둘 다 이전 값 0을 근거로 1을 덮어쓰면 최종 값이 1입니다. 2번은 최신 상태를 읽고 업무 판단을 다시 해야 합니다. 3번은 아닙니다. 이 사례의 WAL은 읽기와 쓰기의 공존을 확인하며, SQLite의 쓰기는 한 번에 하나입니다.
 

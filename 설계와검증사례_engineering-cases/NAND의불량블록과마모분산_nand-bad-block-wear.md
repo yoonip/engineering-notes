@@ -10,7 +10,7 @@ NAND를 바이트 배열처럼 같은 위치에 계속 덮어쓰면 소거 조�
 
 ## 2. erase와 program을 다르게 처리합니다
 
-소거는 블록을 1로 되돌리고 프로그램은 지울 비트를 0으로 만듭니다. 이 제약 때문에 예전 자료가 들어 있는 페이지를 임의 값으로 바꿀 수 없습니다. [Micron TN-29-19 Rev. B, 2010-04, Flash Basics·PROGRAM Operations, pp. 2·14](https://s3-us-west-1.amazonaws.com/ptab-filings%2FIPR2023-00904%2F1035)은 이 원리를 설명합니다. 링크는 제조사 원문이 공개 증거로 보관된 사본이며 최신 제품의 정격 자료가 아닙니다.
+소거는 블록을 1로 되돌리고 프로그램은 선택한 비트를 1에서 0으로 바꿉니다. 이 제약 때문에 예전 자료가 들어 있는 페이지를 임의 값으로 바꿀 수 없습니다. [Micron TN-29-19 Rev. B, 2010-04, Flash Basics·PROGRAM Operations, pp. 2·14](https://s3-us-west-1.amazonaws.com/ptab-filings%2FIPR2023-00904%2F1035)은 이 원리를 설명합니다. 링크는 제조사 원문이 공개 증거로 보관된 사본이며 최신 제품의 정격 자료가 아닙니다.
 
 | 실제 실행한 논리 동작 | 모델 판정 |
 |---|---|

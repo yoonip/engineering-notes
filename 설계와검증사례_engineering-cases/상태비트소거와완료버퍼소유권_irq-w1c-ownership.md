@@ -84,9 +84,9 @@ python -B verify.py --inject allow-owned-reuse --output C:/temp/irq-owner-fault-
 
 ## 확인 문제
 
-1. pending=10, 처리 mask=2인 W1C에 `pending | mask`를 쓰면 왜 잘못됩니까?
-2. DMA 완료 비트를 소거했으면 CPU가 보던 A를 즉시 새 전송에 써도 됩니까?
-3. A가 CPU 소유, B가 READY이면 이 모형의 수정 경로는 입력 19를 어디에 받습니까?
+1. pending=10, 처리 mask=2인 W1C에 `pending | mask`를 쓰면 왜 잘못되나요?
+2. DMA 완료 비트를 소거했으면 CPU가 보던 A를 즉시 새 전송에 써도 되나요?
+3. A가 CPU 소유, B가 READY이면 이 모형의 수정 경로는 입력 19를 어디에 받나요?
 
 답: 1. 처리하지 않은 비트 3에도 1을 써서 소거합니다. 2. 아닙니다. 완료 관측과 CPU 소비 후 반환은 다릅니다. 3. 새 전송 할당을 거부합니다. 실제 제품에서는 유실·재시도·추가 버퍼·흐름 제어 정책을 정해야 합니다.
 

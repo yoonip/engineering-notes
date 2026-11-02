@@ -99,9 +99,9 @@ python -X utf8 -B -O verify.py --inject periodic-feed --output C:/temp/watchdog-
 
 ## 확인 문제
 
-1. 수집 task가 멈췄는데 timer ISR의 feed가 계속되면 무엇을 놓칩니까?
-2. tick=250에서 12 뒤 deadline=6을 만든 다음 now=254와 단순 대소 비교하면 왜 틀립니까?
-3. raw reset flags를 지운 뒤 원인을 읽고 부팅 실패값도 매번 0으로 만들면 어떤 두 가지 증거를 잃습니까?
+1. 수집 task가 멈췄는데 timer ISR의 feed가 계속되면 무엇을 놓치나요?
+2. tick=250에서 12 뒤 deadline=6을 만든 다음 now=254와 단순 대소 비교하면 왜 잘못된 판정이 나오나요?
+3. raw reset flags를 지운 뒤 원인을 읽고 부팅 실패값도 매번 0으로 만들면 어떤 두 가지 증거를 잃나요?
 
 답: 1. 실제 업무 진행 정지를 놓칩니다. 의미 있는 checkpoint와 task별 epoch를 확인해야 합니다. 2. 순환 뒤의 작은 숫자 6과 아직 순환 전인 254의 크기가 시간 순서와 다릅니다. 선언한 비교 범위 안에서 경과량을 구합니다. 3. 이번 원시 원인 조합과 연속 실패 이력을 잃어 같은 boot loop를 반복할 수 있습니다.
 

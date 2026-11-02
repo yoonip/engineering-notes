@@ -78,9 +78,9 @@ python -B 예제_examples/실무검증_practical-validation/chip/run_chip_cases.
 
 ## 확인 문제
 
-1. 입력이 int8이면 출력 185는 반드시 오류입니까?
-2. host 입력 hash가 같고 stale 모형이 실패하면 실제 캐시 고장까지 증명합니까?
-3. 전치 fault가 모든 원소 1인 입력에서 통과하면 정상 구현입니까?
+1. 입력이 int8이면 출력 185는 반드시 오류인가요?
+2. host 입력 hash가 같고 stale 모형이 실패하면 실제 캐시 고장까지 증명하나요?
+3. 전치 fault가 모든 원소 1인 입력에서 통과하면 정상 구현인가요?
 
 <details>
 <summary>답과 이유</summary>

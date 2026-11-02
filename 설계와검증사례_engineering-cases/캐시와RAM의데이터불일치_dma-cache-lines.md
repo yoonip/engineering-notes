@@ -2,7 +2,7 @@
 
 CPU 코드가 읽은 값이 맞는데 DMA가 이전 값을 보낼 수 있습니다. 반대로 DMA가 RAM을 갱신했는데 CPU는 캐시의 옛 값을 읽을 수 있습니다. 이 사례는 두 저장 공간을 따로 둔 실행 모델에서 TX·RX·dirty 사본·공유 line의 이웃 데이터 문제를 분리합니다.
 
-[실행 코드](../예제_examples/실무검증_practical-validation/interrupt_dma/models.py), [자체 입력과 검사](../예제_examples/실무검증_practical-validation/interrupt_dma/README.md), [검증 기록](검증기록_evidence/인터럽트DMA캐시모델검증_20261021.md)을 연결했습니다. 실제 Cortex-M7·DMA·캐시 명령·성능을 측정한 것이 아닙니다. 자동 캐시 일관성이 없는 write-back 구성을 이해하기 위한 결정적인 Python 모형입니다.
+[실행 코드](../예제_examples/실무검증_practical-validation/interrupt_dma/models.py), [자체 입력과 검사](../예제_examples/실무검증_practical-validation/interrupt_dma/README.md), [검증 기록](검증기록_evidence/인터럽트DMA캐시모델검증_20261021.md)을 연결했습니다. 실제 Cortex-M7·DMA·캐시 명령·성능을 측정한 것이 아닙니다. 자동 캐시 일관성이 없는 write-back 구성을 이해하기 위한 Python 모형입니다. 같은 입력과 사건 순서에는 같은 결과를 내는 결정론적 모형입니다.
 
 ## 1. 같은 주소의 값이 한 곳에만 있지는 않습니다
 
@@ -83,9 +83,9 @@ python -B verify.py --inject tx-no-clean --output C:/temp/cache-dma-fault-new
 
 ## 확인 문제
 
-1. CPU가 TX를 맞게 읽었는데 DMA가 0을 읽었다면 무엇을 나누어 봐야 합니까?
-2. 같은 line의 flag를 잃지 않으려고 RX 완료 뒤 clean까지 추가하면 항상 안전합니까?
-3. 32바이트 정렬인 16바이트 배열은 line 전체를 독점합니까?
+1. CPU가 TX를 맞게 읽었는데 DMA가 0을 읽었다면 어떤 항목을 확인해야 하나요?
+2. 같은 line의 flag를 잃지 않으려고 RX 완료 뒤 clean까지 추가하면 항상 안전하나요?
+3. 32바이트 정렬인 16바이트 배열은 line 전체를 독점하나요?
 
 답: 1. CPU 캐시의 값과 DMA가 읽는 RAM, 사전 clean·주소 접근성·소유권을 봅니다. 2. 아닙니다. 캐시의 옛 RX를 새 DMA 결과 위에 쓸 수 있습니다. 3. 아닙니다. 남은 16바이트의 실제 배치도 확인해야 합니다.
 

@@ -95,9 +95,9 @@ crc = zlib.crc32(canonical(state))  # CRC32는 정해진 바이트의 오류 검
 
 ## 확인 문제
 
-1. B 파일의 길이와 해시가 맞으면 즉시 active를 B로 바꾸어도 됩니까?
-2. trial 표시의 전체 기록 뒤 B를 선택하기 전에 중단되면 왜 다음 재시작이 A로 돌아갑니까?
-3. CRC가 맞고 generation이 가장 큰 metadata가 있으면 악의적인 downgrade까지 막았습니까?
+1. B 파일의 길이와 해시가 맞으면 즉시 active를 B로 바꾸어도 되나요?
+2. trial 표시의 전체 기록 뒤 B를 선택하기 전에 중단되면 다음 재시작에서 왜 A를 선택하나요?
+3. CRC가 맞고 generation이 가장 큰 metadata가 있으면 악의적인 downgrade까지 막았나요?
 
 답: 1. 이 계약에서는 안 됩니다. pending·trial과 업무 checkpoint 뒤 confirm을 구분합니다. 2. 기록은 이미 시도한 상태이므로 보수적으로 rollback합니다. 실제 실행 여부를 추측해 무한 재시도하지 않습니다. 3. 아닙니다. CRC와 쓰기 순번은 인증·신뢰된 보안 counter가 아닙니다.
 

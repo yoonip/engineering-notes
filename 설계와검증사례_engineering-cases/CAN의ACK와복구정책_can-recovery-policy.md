@@ -1,6 +1,6 @@
 # CAN의 ACK와 복구 정책 / CAN acknowledgment evidence and restart policy
 
-송신 함수를 호출한 직후 완료 건수를 올리거나, 재시작 요청이 반환됐다는 이유로 송신을 다시 허용하면 실제 상태와 응용 기록이 어긋날 수 있습니다. 이 사례는 합성 controller 관측을 순서대로 읽으며 요청·전송·응용 완료와 bus-off 복구 정책을 구분합니다. 실제 ECU의 장애나 CAN 물리층 시험이 아니라, 의도적인 오류를 넣은 결정적 소프트웨어 예제입니다.
+송신 함수를 호출한 직후 완료 건수를 올리거나, 재시작 요청이 반환됐다는 이유로 송신을 다시 허용하면 실제 상태와 응용 기록이 어긋날 수 있습니다. 이 사례는 합성 controller 관측을 순서대로 읽으며 요청·전송·응용 완료와 bus-off 복구 정책을 구분합니다. 실제 ECU의 장애나 CAN 물리층 시험이 아니라, 의도적인 오류를 넣고 정해진 사건 순서로 실행하는 소프트웨어 예제입니다.
 
 [실행 코드](../예제_examples/실무검증_practical-validation/can/run_cases.py), [합성 controller trace](../예제_examples/실무검증_practical-validation/can/controller_trace.json), [실행 안내](../예제_examples/실무검증_practical-validation/can/README.md), [검증 기록](검증기록_evidence/CAN정책과수신계약검증_20261021.md)을 연결합니다.
 
@@ -16,7 +16,7 @@
 
 ACK error는 배선 문제의 단서일 수 있지만 상대 노드 부재, 설정 불일치 등 대안이 있습니다. ACK가 있더라도 특정 응용의 처리 완료까지 입증하지 않습니다. 실제 송신 API의 반환 의미·송신 완료 이벤트·local echo도 사용한 드라이버 문서에 맞춰 구분해야 합니다. 이 코드의 사건 이름은 SocketCAN API를 직접 실행해 받은 구조체가 아닙니다.
 
-Bosch M_CAN Rev.3.3.1의 PSR.LEC는 AckError와 Bus_Off 상태를 별도로 설명합니다. 이 사례는 그 의미를 참고하지만 레지스터를 읽거나 TEC·REC를 계산하지 않습니다. ACK 오류마다 TEC에 8을 더해 bus-off까지 가는 단순 모형은 error confinement 전체와 같지 않으므로 구현하지 않았습니다. [M_CAN 매뉴얼, §2.3.13~14](https://www.bosch-semiconductors.com/media/ip_modules/pdf_2/m_can/mcan_users_manual_v331.pdf)
+Bosch M_CAN Rev.3.3.1에서 ACK 오류는 `PSR.LEC=3`으로 나타나며, bus-off 상태는 별도 필드인 `PSR.BO`로 확인합니다. 이 사례는 그 의미를 참고하지만 레지스터를 읽거나 TEC·REC를 계산하지 않습니다. ACK 오류마다 TEC에 8을 더해 bus-off까지 가는 단순 모형은 error confinement 전체와 같지 않으므로 구현하지 않았습니다. [M_CAN 매뉴얼, §2.3.13~14, 인쇄본 18쪽](https://www.bosch-semiconductors.com/media/ip_modules/pdf_2/m_can/mcan_users_manual_v331.pdf)
 
 ## 2. 의도적으로 잘못 만든 경로
 
@@ -90,7 +90,7 @@ ACK 오류의 원인은 오프라인 정책 코드로 결정할 수 없습니다
 
 ## 확인 문제
 
-1. 40 ms의 bus-off 뒤 100 ms를 기다리는 정책이라면 139 ms와 140 ms는 어떻게 다릅니까?
+1. 40 ms의 bus-off 뒤 100 ms를 기다리는 정책이라면 139 ms와 140 ms는 어떻게 다른가요?
 2. 재시작 요청이 성공 반환됐다는 이유로 WAIT_ACTIVE를 생략해도 될까요?
 3. `tx_complete` 하나를 관측하면 특정 ECU의 작업 완료도 하나로 셀 수 있을까요?
 

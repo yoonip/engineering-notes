@@ -2,7 +2,7 @@
 
 작업 큐가 비었는지 확인한 뒤 잠들었는데, 큐에 처리할 데이터가 남아 있는 상황을 다룹니다. 알림이 오지 않은 것이 아니라 너무 일찍 도착해 사라질 수도 있습니다. 이 사례는 “지금 자고 있으면 깨운다”는 동작과 “도착 사실을 보관하고 필요하면 깨운다”는 동작을 세 가지 사건 순서에서 비교합니다.
 
-[실행 모델](../예제_examples/실무검증_practical-validation/rtos/models.py), [독립 검사](../예제_examples/실무검증_practical-validation/rtos/verify.py), [실행 안내](../예제_examples/실무검증_practical-validation/rtos/README.md), [검증 기록](검증기록_evidence/RTOS스케줄과알림검사_20261021.md)을 연결했습니다. Python 표준 라이브러리로 구성한 결정적 모델이며 실제 FreeRTOS·인터럽트·DMA를 실행하지 않습니다.
+[실행 모델](../예제_examples/실무검증_practical-validation/rtos/models.py), [독립 검사](../예제_examples/실무검증_practical-validation/rtos/verify.py), [실행 안내](../예제_examples/실무검증_practical-validation/rtos/README.md), [검증 기록](검증기록_evidence/RTOS스케줄과알림검사_20261021.md)을 연결했습니다. Python 표준 라이브러리로 정해진 사건 순서를 재현한 모델이며 실제 FreeRTOS·인터럽트·DMA를 실행하지 않습니다.
 
 ## 1. 빈 큐 확인과 대기 사이의 상태 변화
 
@@ -93,15 +93,15 @@ W 직전 sleep을 넣거나 타임아웃을 짧게 만들어 큐를 다시 확�
 
 ## 확인 문제
 
-1. 큐가 비었다고 확인한 직후의 `vTaskSuspend()`가 안전한 이유를 그 확인만으로 만들 수 있습니까?
-2. 알림 값 2를 지운 뒤 payload 한 건만 처리하면 어떤 일이 남습니까?
-3. 보존된 알림을 소비했지만 큐가 비어 있다면 반드시 오류입니까?
+1. 큐가 비어 있다는 확인만으로, 곧이어 실행하는 `vTaskSuspend()`가 알림을 놓치지 않는다고 보장할 수 있나요?
+2. 알림 값 2를 지운 뒤 payload 한 건만 처리하면, 나머지 데이터는 어떻게 되나요?
+3. 보존된 알림을 소비했지만 큐가 비어 있다면 반드시 오류인가요?
 
 답: 1. 아닙니다. 검사와 대기 사이에 생산자가 올 수 있습니다. 2. 나머지 payload를 깨울 알림이 없어 다음 도착까지 처리하지 못할 수 있습니다. 3. 아닙니다. 이미 payload를 처리한 동안 알림이 남았다면 추가 깨움일 수 있으므로 실제 작업 조건을 다시 확인합니다.
 
 ## English
 
-The fixture enumerates publication before, between, and after a queue check and wait. Resume-only signaling loses the CPW arrival, while a retained notification permits all three payloads to be consumed. A separate batch exposes clearing two notifications but processing only one queued item. Fault injection that clears pending state before waiting fails verification. The model assumes atomic notification-check/wait registration and abstracts wake-to-consume scheduling; it does not execute FreeRTOS or an ISR.
+The fixture enumerates publication before, between, and after a queue check and wait. Resume-only signaling loses the CPW arrival, while a retained notification permits the single payload to be consumed in each of the three schedules. A separate batch exposes clearing two notifications but processing only one queued item. Fault injection that clears pending state before waiting fails verification. The model assumes atomic notification-check/wait registration and abstracts wake-to-consume scheduling; it does not execute FreeRTOS or an ISR.
 
 ## 출처와 실제 열람 범위
 

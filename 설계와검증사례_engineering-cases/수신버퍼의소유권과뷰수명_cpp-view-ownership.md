@@ -91,9 +91,9 @@ python run_cases.py --zig C:/tools/zig/zig.exe --output C:/temp/ownership-review
 
 ## 확인 문제
 
-1. `const string_view`를 사용하면 원본 버퍼를 다른 코드가 수정하지 못합니까?
-2. `reserve(100)` 뒤 원소 수가 100이 됩니까?
-3. 뷰로부터 `string`을 만들 때 `string(view.data())`와 `string(view)`는 언제 다른 결과를 냅니까?
+1. `const string_view`를 사용하면 원본 버퍼를 다른 코드가 수정하지 못하나요?
+2. `reserve(100)` 뒤 원소 수가 100이 되나요?
+3. 뷰로부터 `string`을 만들 때 `string(view.data())`와 `string(view)`는 언제 다른 결과를 내나요?
 
 답: 1. 그렇지 않습니다. 뷰를 통해 문자를 수정하지 않는 것과 원본이 불변인 것은 다릅니다. 2. 아닙니다. 용량과 크기는 다르며 `reserve`는 원소 수를 늘리지 않습니다. 3. 뷰가 NUL 앞의 일부만 가리키거나 중간에 NUL을 포함하는 등, 뷰 길이와 NUL로 정한 길이가 다를 때입니다.
 

@@ -95,9 +95,9 @@ python -B 예제_examples/실무검증_practical-validation/chip_automation/run_
 
 ## 확인 문제
 
-1. 종료 0과 PASS 글자가 있으면 결과 파일 없이 통과시켜도 됩니까?
-2. 3개 계획 항목 중 2개만 PASS라면 전체 PASS입니까?
-3. timeout 경로의 returncode가 `null`이면 기능 FAIL과 같습니까?
+1. 종료 0과 PASS 글자가 있으면 결과 파일 없이 통과시켜도 되나요?
+2. 3개 계획 항목 중 2개만 PASS라면 전체 PASS인가요?
+3. timeout 경로의 returncode가 `null`이면 기능 FAIL과 같나요?
 
 <details>
 <summary>답과 이유</summary>
