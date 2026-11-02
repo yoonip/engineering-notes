@@ -85,7 +85,7 @@ def plain(text: str, strip_list: bool = True) -> str:
 def sections(markdown: str) -> list[dict]:
     """ATX·Setext 제목과 코드 펜스를 구분하고 코드 안의 #을 제목으로 읽지 않습니다."""
     def section(heading, level):
-        return {'heading': heading, 'level': level, 'paragraphs': [], 'codes': [], 'links': [], 'tables': [], '_rows': []}
+        return {'heading': heading, 'level': level, 'paragraphs': [], 'codes': [], 'links': [], 'tables': [], '_rows': [], '_raw': []}
 
     result = [section('Introduction', 0)]
     paragraph, code, fence, language, context = [], [], None, '', ''
@@ -101,6 +101,7 @@ def sections(markdown: str) -> list[dict]:
     for index, line in enumerate(lines):
         stripped = line.strip()
         if fence:
+            result[-1]['_raw'].append(line)
             if re.fullmatch(re.escape(fence[0]) + '{' + str(len(fence)) + r',}\s*', stripped):
                 result[-1]['codes'].append({'language': language, 'code': '\n'.join(code), 'context': context})
                 code, fence = [], None
@@ -112,6 +113,7 @@ def sections(markdown: str) -> list[dict]:
             if match[1][0] == '`' and '`' in match[2]:
                 continue
             flush()
+            result[-1]['_raw'].append(line)
             fence, info = match.groups()
             language = info.strip().split()[0] if info.strip() else ''
             context = result[-1]['paragraphs'][-1] if result[-1]['paragraphs'] else ''
@@ -138,9 +140,11 @@ def sections(markdown: str) -> list[dict]:
         for label, url in re.findall(r'(?<!!)\[([^\]\n]+)\]\((https://[^\s)]+)\)', line):
             result[-1]['links'].append({'label': label, 'url': url, 'context': plain(line),
                                        'kind': 'table' if stripped.startswith('|') else 'text'})
+        result[-1]['_raw'].append(line)
     flush()
     # 닫히지 않은 코드 블록은 설치 예시로 재게시하지 않습니다.
     for item in result:
+        item['raw'] = '\n'.join(item.pop('_raw'))
         rows = item.pop('_rows')
         for index in range(len(rows) - 1):
             header = [cell.strip() for cell in re.split(r'(?<!\\)\|', rows[index].strip('|'))]

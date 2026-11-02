@@ -39,7 +39,21 @@ class SourceChecksTests(TestCase):
         guide = {'method': '공식 문서 한국어 해설', 'example_code':
                  {'code': 'tool --help\ntool --name a & b', 'source_url': ROOT + 'README.md#custom-anchor'}}
         report = source_checks.verify(guide, document(), Mock(), '')
-        self.assertEqual(report['command_checks'][0]['mode'], 'manual_line_presence_inline_table_or_fence')
+        self.assertEqual(report['command_checks'][0]['mode'], 'manual_exact_command_units_inline_table_or_fence')
+
+    def test_command_substring_does_not_count_as_the_same_command(self):
+        readme=document('## Commands\n```sh\nuninstall-tool\n```')
+        guide={'method':'공식 문서 한국어 해설','install_code':{'code':'install-tool','source_url':ROOT+'README.md'}}
+        with self.assertRaisesRegex(ValueError,'Command does not match'):
+            source_checks.verify(guide,readme,Mock(),'')
+
+    def test_command_from_a_different_section_does_not_match_an_install_source(self):
+        readme=document('## Install\n```sh\ninstall-tool\n```\n## Uninstall\n```sh\nuninstall-tool\n```')
+        for method in (source_checks.AUTOMATIC,'공식 문서 한국어 해설'):
+            for scope in ({'source_url':ROOT+'README.md#install'}, {'source_url':ROOT+'README.md','heading':'Install'}):
+                guide={'method':method,'install_code':dict(scope,code='uninstall-tool')}
+                with self.assertRaisesRegex(ValueError,'Command does not match'):
+                    source_checks.verify(guide,readme,Mock(),'')
 
     def test_manual_table_and_unquoted_html_anchor(self):
         text = '## Commands\n| Name | Command |\n| --- | --- |\n| Help | `tool --help` |\n<a name=help></a>\n'

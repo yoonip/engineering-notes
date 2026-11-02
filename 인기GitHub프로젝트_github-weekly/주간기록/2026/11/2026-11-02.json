@@ -180,13 +180,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#install",
               "nonempty_lines": 1
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#redesign",
               "nonempty_lines": 2
             }
@@ -386,13 +386,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#installation",
               "nonempty_lines": 1
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#why",
               "nonempty_lines": 1
             }
@@ -604,13 +604,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#install",
               "nonempty_lines": 3
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#commands",
               "nonempty_lines": 2
             }
@@ -827,7 +827,7 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md#quick-start",
               "nonempty_lines": 1
             }
@@ -1006,13 +1006,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#installation",
               "nonempty_lines": 2
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#usage",
               "nonempty_lines": 1
             }
@@ -1208,7 +1208,7 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md#installation",
               "nonempty_lines": 1
             }
@@ -1425,13 +1425,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md#command-line",
               "nonempty_lines": 1
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md#command-line",
               "nonempty_lines": 1
             }
@@ -1645,13 +1645,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line",
               "nonempty_lines": 1
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line",
               "nonempty_lines": 2
             }
@@ -1840,7 +1840,7 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md#install",
               "nonempty_lines": 2
             }
@@ -2027,7 +2027,7 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md#install",
               "nonempty_lines": 1
             }

@@ -8,6 +8,7 @@ from html.parser import HTMLParser
 import json
 import re
 from urllib.parse import quote, unquote, urlsplit
+from bs4 import BeautifulSoup
 
 import guides
 
@@ -39,20 +40,7 @@ def _blob_sha(raw: bytes) -> str:
     return hashlib.sha1(b'blob ' + str(len(raw)).encode('ascii') + b'\0' + raw).hexdigest()
 
 
-def _anchors(text: str) -> set[str]:
-    result, counts = set(), {}
-    for section in guides.sections(text):
-        if not section['level']:
-            continue
-        slug = re.sub(r'[^\w\- ]', '', html.unescape(section['heading']).lower()).replace(' ', '-')
-        number = counts.get(slug, 0)
-        candidate = slug + ('-' + str(number) if number else '')
-        while candidate in result:
-            number += 1
-            candidate = slug + '-' + str(number)
-        counts[slug] = number + 1
-        result.add(candidate)
-    # HTML anchors inside a code example do not create anchors in the rendered page.
+def _outside_code(text: str) -> str:
     outside, fence = [], None
     for line in text.splitlines():
         stripped = line.strip()
@@ -65,13 +53,69 @@ def _anchors(text: str) -> set[str]:
                 fence = match[1]
             else:
                 outside.append(line)
-    class AnchorParser(HTMLParser):
-        def handle_starttag(self, tag, attrs):
-            for name, value in attrs:
-                if name in ('id', 'name') and value:
-                    result.add(value)
-    AnchorParser(convert_charrefs=True).feed('\n'.join(outside))
+    return '\n'.join(outside)
+
+
+def _anchor_sections(parsed: list[dict]) -> dict[str, int]:
+    result, counts = {}, {}
+    for index, section in enumerate(parsed):
+        if not section['level']:
+            continue
+        slug = re.sub(r'[^\w\- ]', '', html.unescape(section['heading']).lower()).replace(' ', '-')
+        number = counts.get(slug, 0)
+        candidate = slug + ('-' + str(number) if number else '')
+        while candidate in result:
+            number += 1
+            candidate = slug + '-' + str(number)
+        counts[slug] = number + 1
+        result[candidate] = index
+    for index, section in enumerate(parsed):
+        class AnchorParser(HTMLParser):
+            def handle_starttag(self, tag, attrs):
+                for name, value in attrs:
+                    if name in ('id', 'name') and value:
+                        result[value] = index
+        AnchorParser(convert_charrefs=True).feed(_outside_code(section['raw']))
     return result
+
+
+def _anchors(text: str) -> set[str]:
+    return set(_anchor_sections(guides.sections(text)))
+
+
+def _command_sections(document: dict, block: dict) -> list[dict]:
+    parsed = guides.sections(document['text'])
+    allowed = set(range(len(parsed)))
+    fragment = unquote(urlsplit(block['source_url']).fragment)
+    if fragment:
+        start = _anchor_sections(parsed)[fragment]
+        end = next((i for i in range(start + 1, len(parsed)) if parsed[i]['level'] <= parsed[start]['level']), len(parsed))
+        allowed &= set(range(start, end))
+    if block.get('heading') or block.get('heading_path'):
+        candidates, parents = set(), []
+        for index, section in enumerate(parsed):
+            while parents and section['level'] <= parents[-1]['level']:
+                parents.pop()
+            path = [item['heading'] for item in parents if item['level']] + [section['heading']]
+            matches = path == block['heading_path'] if block.get('heading_path') else section['heading'] == block['heading']
+            if matches:
+                candidates.add(index)
+            parents.append(section)
+        allowed &= candidates
+    return [section for index, section in enumerate(parsed) if index in allowed]
+
+
+def _command_units(parsed: list[dict]) -> set[str]:
+    units = set()
+    for section in parsed:
+        for block in section['codes']:
+            units.update(line.strip() for line in block['code'].splitlines() if line.strip())
+        outside = _outside_code(section['raw'])
+        for value in re.findall(r'(?<!`)`(?!`)([^`\n]+)`(?!`)', outside):
+            units.add(html.unescape(value).strip())
+        for element in BeautifulSoup(outside, 'html.parser').find_all('code'):
+            units.update(line.strip() for line in element.get_text().splitlines() if line.strip())
+    return units
 
 
 def verify(guide: dict, readme: dict, getter, token: str = '') -> dict:
@@ -139,17 +183,18 @@ def verify(guide: dict, readme: dict, getter, token: str = '') -> dict:
         document = source(block.get('source_url', ''))
         if document is None:
             raise ValueError('Command requires a pinned GitHub source: ' + name)
-        if automatic:
+        parsed = _command_sections(document, block)
+        if automatic or block.get('language', '').lower() in ('python', 'py', 'javascript', 'js', 'typescript', 'ts', 'c', 'cpp', 'java'):
             wanted = code.splitlines()
             valid = any(any(lines[index:index + len(wanted)] == wanted
                             for index in range(len(lines) - len(wanted) + 1))
-                        for section in guides.sections(document['text']) for item in section['codes']
+                        for section in parsed for item in section['codes']
                         for lines in [item['code'].splitlines()])
             mode = 'contiguous_fenced_excerpt'
         else:
-            original = html.unescape(document['text'])
-            valid = all(line.strip() in original for line in code.splitlines() if line.strip())
-            mode = 'manual_line_presence_inline_table_or_fence'
+            units = _command_units(parsed)
+            valid = all(line.strip() in units for line in code.splitlines() if line.strip())
+            mode = 'manual_exact_command_units_inline_table_or_fence'
         if not valid:
             raise ValueError('Command does not match its source: ' + name)
         command_checks.append({'field': name, 'mode': mode, 'source_url': block['source_url'],

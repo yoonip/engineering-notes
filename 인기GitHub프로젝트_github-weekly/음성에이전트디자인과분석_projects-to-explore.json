@@ -190,7 +190,7 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md#get-started",
               "nonempty_lines": 1
             }
@@ -407,13 +407,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md#install",
               "nonempty_lines": 2
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md#commands",
               "nonempty_lines": 1
             }
@@ -589,13 +589,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#installation",
               "nonempty_lines": 2
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#usage",
               "nonempty_lines": 1
             }
@@ -800,13 +800,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md#recommended-universal-guided-setup",
               "nonempty_lines": 1
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md#start-using-ecc",
               "nonempty_lines": 1
             }
@@ -1003,13 +1003,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#installation",
               "nonempty_lines": 1
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#why",
               "nonempty_lines": 1
             }
@@ -1198,13 +1198,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#manually-with-the-cli",
               "nonempty_lines": 2
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#manually-with-the-cli",
               "nonempty_lines": 2
             }
@@ -1421,13 +1421,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/docs/install.md#1-install-and-set-up",
               "nonempty_lines": 2
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/agent_reach/skill/SKILL.md",
               "nonempty_lines": 2
             }
@@ -1632,7 +1632,7 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md#install",
               "nonempty_lines": 1
             }
@@ -1837,7 +1837,7 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md#install",
               "nonempty_lines": 1
             }
@@ -2029,13 +2029,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/docs/en/install/01-install.md#docker-compose",
               "nonempty_lines": 5
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "contiguous_fenced_excerpt",
               "source_url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md#using-the-api",
               "nonempty_lines": 10
             }
@@ -2225,13 +2225,13 @@
           "command_checks": [
             {
               "field": "install_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md#build-from-source",
               "nonempty_lines": 2
             },
             {
               "field": "example_code",
-              "mode": "manual_line_presence_inline_table_or_fence",
+              "mode": "manual_exact_command_units_inline_table_or_fence",
               "source_url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md#offline-inference",
               "nonempty_lines": 1
             }
