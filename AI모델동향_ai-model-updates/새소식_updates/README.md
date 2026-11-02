@@ -4,84 +4,84 @@
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
-## Gemini 4 Carbon: our next frontier model
+## Gemini 4 Carbon의 보안·장기 작업 평가 / Gemini 4 Carbon: our next frontier model
 
-Google DeepMind의 모델 관련 공식 발표입니다. 공개 제목·소개에서 긴 문맥·장기 작업·보안 주제를 다룹니다.
+Google이 사이버보안과 여러 단계에 걸친 장기 작업을 중심으로 발표한 모델입니다. 취약점 탐색·패치와 코딩·에이전트 평가 결과를 소개하며, 수치는 발표자가 제시한 시험 조건에 따른 결과입니다.
 
 출처: [Google DeepMind](<https://deepmind.google/>) · [원문](<https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/>) · 발표일: 2026-10-28
 
-개요: 제목·공개 정보에 따른 한국어 안내
+개요: 공식 원문을 대조한 한국어 소개
 
-## 지니 4\(Genie 4\): 월드 시뮬레이션의 새로운 세대
+## Genie 4의 실시간 가상 세계와 오디오 생성 / 지니 4\(Genie 4\): 월드 시뮬레이션의 새로운 세대
 
-> 역대 가장 사실적이고 인터랙티브한 구글의 최신 월드 모델, ‘지니 4\(Genie 4\)’를 소개합니다.
+텍스트와 조작 입력에 반응하는 가상 세계에 음악·환경음·대화를 함께 생성하는 월드 모델입니다. 발표 당시 일부 테스터에게 연구 프리뷰를 제공하고, 로봇·에이전트 학습 환경과 상호작용 콘텐츠로의 활용을 설명합니다.
 
 출처: [Google 한국어](<https://blog.google/>) · [원문](<https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr/>) · 발표일: 2026-10-28
 
-개요: 공식 한국어 소개 발췌
+개요: 공식 원문을 대조한 한국어 소개
 
-## Introducing GPT-6.1 Terra
+## GPT-6.1 Terra의 시각 이해와 컴퓨터 사용 / Introducing GPT-6.1 Terra
 
-OpenAI의 모델 관련 공식 발표입니다. 공개 제목·소개에서 컴퓨터·브라우저 사용 주제를 다룹니다.
+시각적 추론과 컴퓨터 조작, 글쓰기를 함께 다루는 모델 발표입니다. 도면 해석·양식 입력·영상 편집 같은 활용 예와 컴퓨터 사용·코딩·사실성 평가, 제공 경로를 설명합니다.
 
-출처: [OpenAI](<https://openai.com/>) · [원문](<https://openai.com/index/introducing-gpt-6-1-terra>) · 발표일: 2026-10-26 09:00 KST
+출처: [OpenAI](<https://openai.com/>) · [원문](<https://openai.com/index/introducing-gpt-6-1-terra>) · 공식 RSS 발행 시각: 2026-10-26 09:00 KST
 
-개요: 제목·공개 정보에 따른 한국어 안내
+개요: 공식 원문을 대조한 한국어 소개
 
-## DeepSeek-V4.1-Flash-1017 Update
+## DeepSeek-V4.1-Flash-1017의 모델 갱신 / DeepSeek-V4.1-Flash-1017 Update
 
-DeepSeek의 모델 관련 공식 발표입니다. 공개 제목·소개에서 에이전트·도구 사용·이미지·영상 처리·평가·비용·실행 효율 주제를 다룹니다.
+기존 V4.1 Flash의 웹·앱·API 모델을 갱신한 발표입니다. API 호출 방식과 가격을 유지하면서 코딩·에이전트·시각 평가 결과, 작업 시간과 출력 길이의 변화를 보고합니다.
 
 출처: [DeepSeek](<https://api-docs.deepseek.com/>) · [원문](<https://api-docs.deepseek.com/updates/#deepseek-v41-flash-1017-update>) · 발표일: 2026-10-17
 
-개요: 제목·공개 정보에 따른 한국어 안내
+개요: 공식 원문을 대조한 한국어 소개
 
-## Gemini 4 Argon for Robotics- Google Developers Blog
+## Gemini 4 Argon의 로봇 제어·시뮬레이션 사례 / Gemini 4 Argon for Robotics- Google Developers Blog
 
-Google DeepMind의 모델 관련 공식 발표입니다. 공개 제목·소개에서 추론·에이전트·도구 사용·평가·로봇·모빌리티 주제를 다룹니다.
+로봇 제어, 실제 장면의 시뮬레이션 복원, 행동 영상 분석에 모델을 적용한 사례입니다. Spot의 물체 조작과 MuJoCo 사전 연습, 카메라 관측을 이용한 로봇팔 제어를 예시로 보여 줍니다.
 
 출처: [Google DeepMind](<https://deepmind.google/>) · [원문](<https://developers.googleblog.com/gemini-4-argon-for-robotics/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=>) · 발표일: 2026-10-13
 
-개요: 제목·공개 정보에 따른 한국어 안내
+개요: 공식 원문을 대조한 한국어 소개
 
-## GPT-6 and Intelligent UI for everyone
+## GPT-6의 대화형 화면 구성 / GPT-6 and Intelligent UI for everyone
 
-OpenAI의 모델 관련 공식 발표입니다.
+ChatGPT 응답에 글·그림·버튼·입력 양식·대화형 도구를 함께 구성하는 Intelligent UI를 소개합니다. 질문에 맞는 표현을 선택하고, 구성 요소 라이브러리와 스트리밍 컴파일러로 화면을 생성하는 방식을 설명합니다.
 
-출처: [OpenAI](<https://openai.com/>) · [원문](<https://openai.com/index/gpt-6-for-everyone>) · 발표일: 2026-10-07 09:00 KST
+출처: [OpenAI](<https://openai.com/>) · [원문](<https://openai.com/index/gpt-6-for-everyone>) · 공식 RSS 발행 시각: 2026-10-07 09:00 KST
 
-개요: 제목·공개 정보에 따른 한국어 안내
+개요: 공식 원문을 대조한 한국어 소개
 
-## Introducing Claude Haiku 5.5
+## Claude Haiku 5.5의 반복 작업과 실행 비용 / Introducing Claude Haiku 5.5
 
-Anthropic의 모델 관련 공식 발표입니다. 공개 제목·소개에서 에이전트·도구 사용·컴퓨터·브라우저 사용 주제를 다룹니다.
+요약·분류·데이터베이스 질의처럼 요청이 많은 작업과 코딩 보조 에이전트를 대상으로 한 소형 모델입니다. 추론 노력 설정에 따른 성능·비용, 브라우저 사용과 응답 속도에 관한 제작자 평가를 소개합니다.
 
 출처: [Anthropic](<https://www.anthropic.com/>) · [원문](<https://www.anthropic.com/claude-haiku-5-5>) · 발표일: 2026-10-07
 
-개요: 제목·공개 정보에 따른 한국어 안내
+개요: 공식 원문을 대조한 한국어 소개
 
-## Introducing GPT-6.1 Sol
+## GPT-6.1 Sol의 코딩·문서·컴퓨터 작업 평가 / Introducing GPT-6.1 Sol
 
-OpenAI의 모델 관련 공식 발표입니다. 공개 제목·소개에서 코딩·컴퓨터·브라우저 사용 주제를 다룹니다.
+코딩, 복잡한 문서 처리, 여러 단계의 업무와 컴퓨터 사용을 다루는 모델 발표입니다. 이전 Sol 및 Astra와 비교한 제작자 평가에서 성능과 작업당 비용을 함께 제시하고, 사실성 평가의 표본 조건도 설명합니다.
 
-출처: [OpenAI](<https://openai.com/>) · [원문](<https://openai.com/index/introducing-gpt-6-1-sol>) · 발표일: 2026-09-30 02:00 KST
+출처: [OpenAI](<https://openai.com/>) · [원문](<https://openai.com/index/introducing-gpt-6-1-sol>) · 공식 RSS 발행 시각: 2026-09-30 02:00 KST
 
-개요: 제목·공개 정보에 따른 한국어 안내
+개요: 공식 원문을 대조한 한국어 소개
 
-## Introducing Claude Sonnet 5.5
+## Claude Sonnet 5.5의 일상 업무·코딩 평가 / Introducing Claude Sonnet 5.5
 
-Anthropic의 모델 관련 공식 발표입니다. 공개 제목·소개에서 비용·실행 효율 주제를 다룹니다.
+버그 수정과 문서·슬라이드·스프레드시트 작성 등 범위가 명확한 업무를 중심으로 소개한 모델입니다. 이전 Sonnet과의 속도·작업당 비용·코딩 평가를 비교하며, 복잡하고 개방적인 작업에서는 Opus와의 차이도 설명합니다.
 
 출처: [Anthropic](<https://www.anthropic.com/>) · [원문](<https://www.anthropic.com/claude-sonnet-5-5>) · 발표일: 2026-09-28
 
-개요: 제목·공개 정보에 따른 한국어 안내
+개요: 공식 원문을 대조한 한국어 소개
 
-## Introducing Gemini 3.8 Live with Live Avatar
+## Gemini 3.8 Live의 음성·영상 아바타 / Introducing Gemini 3.8 Live with Live Avatar
 
-Google DeepMind의 모델 관련 공식 발표입니다.
+실시간 대화에 낮은 지연의 영상 생성과 입 모양·표정 동기화를 결합한 기능입니다. 시청각 입력에 응답하는 아바타와 대화를 유지하면서 배경에서 도구를 호출하는 기업용 활용을 설명합니다.
 
 출처: [Google DeepMind](<https://deepmind.google/>) · [원문](<https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/>) · 발표일: 2026-09-24
 
-개요: 제목·공개 정보에 따른 한국어 안내
+개요: 공식 원문을 대조한 한국어 소개
 
 공식 한국어 소개는 짧게 발췌하며, 다른 언어의 자료는 제목과 공개 정보의 주제를 한국어로 안내합니다. 원문 전체를 번역하거나 새로운 분석을 작성한 글과는 구분합니다.
