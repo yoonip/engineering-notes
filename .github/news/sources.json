@@ -109,26 +109,6 @@
       "language": "ko"
     },
     {
-      "id": "yonhap",
-      "name": "연합뉴스",
-      "group": "korea",
-      "homepage": "https://www.yna.co.kr/",
-      "feed_url": "https://www.yna.co.kr/rss/news.xml",
-      "feed_hosts": [
-        "yna.co.kr"
-      ],
-      "article_hosts": [
-        "yna.co.kr"
-      ],
-      "policy_url": "https://www.yna.co.kr/rss/index",
-      "policy_checked_on": "2026-10-29",
-      "usage": "공식 RSS 안내에서 허용하는 비상업 블로그·개인 이용입니다.",
-      "news_mode": true,
-      "summary_mode": "feed",
-      "priority": 22,
-      "language": "ko"
-    },
-    {
       "id": "sbs",
       "name": "SBS 뉴스",
       "group": "korea",
@@ -146,7 +126,16 @@
       "news_mode": true,
       "summary_mode": "feed",
       "priority": 30,
-      "language": "ko"
+      "language": "ko",
+      "category_groups": {
+        "국제": "world",
+        "정치": "korea",
+        "경제": "korea",
+        "사회": "korea",
+        "생활 · 문화": "korea",
+        "스포츠": "korea",
+        "연예": "korea"
+      }
     },
     {
       "id": "donga",
@@ -166,7 +155,10 @@
       "news_mode": true,
       "summary_mode": "feed",
       "priority": 22,
-      "language": "ko"
+      "language": "ko",
+      "article_path_groups": {
+        "/news/Inter/": "world"
+      }
     },
     {
       "id": "yonhap-politics",
@@ -346,12 +338,17 @@
       "summary_mode": "feed",
       "language": "ko",
       "priority": 30,
-      "exclude_credit_pattern": "AP\\s*통신|AFP\\s*통신|로이터|Reuters|Associated Press|Agence France|\\bAP\\b|\\bAFP\\b"
+      "exclude_credit_pattern": "AP\\s*통신|AFP\\s*통신|로이터|Reuters|Associated Press|Agence France|\\bAP\\b|\\bAFP\\b",
+      "category_groups": {
+        "한반도": "korea",
+        "세계": "world",
+        "미국": "world"
+      }
     },
     {
       "id": "voa-ko-peninsula",
       "name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "homepage": "https://voakorea.com/",
       "feed_url": "https://www.voakorea.com/api/zoikol-vomx-tpepgjp",
       "feed_hosts": [
@@ -366,7 +363,12 @@
       "summary_mode": "feed",
       "language": "ko",
       "priority": 27,
-      "exclude_credit_pattern": "AP\\s*통신|AFP\\s*통신|로이터|Reuters|Associated Press|Agence France|\\bAP\\b|\\bAFP\\b"
+      "exclude_credit_pattern": "AP\\s*통신|AFP\\s*통신|로이터|Reuters|Associated Press|Agence France|\\bAP\\b|\\bAFP\\b",
+      "category_groups": {
+        "한반도": "korea",
+        "세계": "world",
+        "미국": "world"
+      }
     },
     {
       "id": "rfa-ko",

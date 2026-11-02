@@ -45,6 +45,60 @@ def parsed_item(identifier):
             'published_at': (NOW - timedelta(hours=1)).isoformat()}
 
 
+class BriefDescriptionTests(unittest.TestCase):
+    def test_email_only_footer_is_not_an_article_excerpt(self):
+        self.assertEqual(news.brief_description('reporter@example.org (끝)'), '')
+        self.assertEqual(news.brief_description('reporter@example.org'), '')
+
+    def test_private_font_icon_is_removed_without_losing_article_words(self):
+        self.assertEqual(news.brief_description('참전용사\uf071 가족이 기념행사에 참석했습니다.'),
+                         '참전용사 가족이 기념행사에 참석했습니다.')
+
+    def test_address_inside_a_sentence_is_not_a_footer(self):
+        text = '문의는 contact@example.org 주소로 접수합니다.'
+        self.assertEqual(news.brief_description(text), text)
+
+    def test_caption_joined_to_body_is_not_presented_as_article_excerpt(self):
+        self.assertEqual(news.brief_description('&#9650; 법원 엠블럼창원지법은 오늘 선고했습니다.'), '')
+
+    def test_korean_sentence_followed_by_date_without_space(self):
+        self.assertEqual(news.brief_description('항소심 판결이 확정됐습니다.30일 법조계에 따르면 추가 설명입니다.'),
+                         '항소심 판결이 확정됐습니다.')
+
+    def test_korean_sentence_without_space_stops_at_first_sentence(self):
+        self.assertEqual(news.brief_description('금리를 3.6%로 유지했습니다.정부는 다음 주 발표합니다.'),
+                         '금리를 3.6%로 유지했습니다.')
+
+    def test_quoted_sentence_keeps_its_closing_quote(self):
+        self.assertEqual(news.brief_description('“새로운 장비를 도입했습니다.”다음 시험은 내일입니다.'),
+                         '“새로운 장비를 도입했습니다.”')
+
+    def test_html_and_agency_prefix_are_removed(self):
+        self.assertEqual(news.brief_description('<p>(서울=연합뉴스) 홍길동 기자 = 첫 시험 결과를 발표했습니다.</p><p>추가 설명입니다.</p>'),
+                         '첫 시험 결과를 발표했습니다.')
+
+    def test_long_sentence_is_an_explicit_excerpt_with_character_limit(self):
+        raw = '연구진은 ' + '새로운 장치의 작동 조건을 설명하고 ' * 30
+        brief = news.brief_description(raw)
+        self.assertTrue(brief.endswith('…'))
+        self.assertLessEqual(len(brief), 201)
+        self.assertLessEqual(len(brief.split()), 25)
+        self.assertTrue(raw.startswith(brief[:-1]))
+        self.assertEqual(news.brief_description(brief), brief)
+
+    def test_word_limit_is_independent_of_character_limit(self):
+        raw = ' '.join(['a'] * 40)
+        brief = news.brief_description(raw)
+        self.assertEqual(brief, ' '.join(['a'] * 25) + '…')
+
+    def test_no_space_long_sentence_has_a_character_limit(self):
+        self.assertEqual(news.brief_description('가' * 250), '가' * 200 + '…')
+
+    def test_decimal_and_version_numbers_are_not_sentence_boundaries(self):
+        self.assertEqual(news.brief_description('버전 3.6 장비의 전압은 1.2V입니다.다음 문장입니다.'),
+                         '버전 3.6 장비의 전압은 1.2V입니다.')
+
+
 class FeedDateTests(unittest.TestCase):
     def test_rfc822_edt_converts_to_known_utc_time(self):
         self.assertEqual(news.date_value('Wed, 28 Oct 2026 17:15:56 EDT'),

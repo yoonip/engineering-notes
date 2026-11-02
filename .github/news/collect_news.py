@@ -86,6 +86,15 @@ def load_config(path: Path) -> dict:
             raise ValueError('피드 URL이 허용된 HTTPS 주소가 아닙니다.')
         if not source['article_hosts'] or not source['policy_url'].startswith('https://'):
             raise ValueError('기사 호스트와 이용 조건 출처가 필요합니다.')
+        for key in ('category_groups', 'article_path_groups'):
+            mapping = source.get(key, {})
+            if not isinstance(mapping, dict) or any(
+                    not isinstance(label, str) or not label.strip() or group not in GROUPS
+                    for label, group in mapping.items()):
+                raise ValueError('기사 분야와 뉴스 분류의 대응이 올바르지 않습니다.')
+        if any(not path.startswith('/') or not path.endswith('/')
+               for path in source.get('article_path_groups', {})):
+            raise ValueError('기사 분야 경로는 슬래시로 시작하고 끝나야 합니다.')
     return config
 
 
@@ -177,14 +186,46 @@ def plain_description(value: str) -> str:
     return ' '.join(''.join(parser.parts).split())
 
 
+def article_classification(node: ET.Element, source: dict, link: str) -> dict:
+    """매체의 첫 분야 태그 또는 확인한 분야 URL만 사용합니다."""
+    categories = [child for child in node if local_name(child.tag) == 'category']
+    if categories:
+        # SBS의 뒤쪽 category에는 인물·국가 등의 자유 키워드도 섞여 있습니다.
+        category = clean_title(categories[0].get('term') or categories[0].text)
+        group = source.get('category_groups', {}).get(category)
+        if group:
+            return {'group': group, 'classification_basis': 'rss_category:' + category}
+    path = urlsplit(link).path
+    for prefix, group in source.get('article_path_groups', {}).items():
+        if path.startswith(prefix):
+            return {'group': group, 'classification_basis': 'article_path:' + prefix}
+    return {}
+
+
 def brief_description(value: str) -> str:
     text = plain_description(value)
+    # RSS에 남은 사설 글꼴 아이콘은 기사 문자가 아니므로 제외합니다.
+    text = re.sub(r'[\uE000-\uF8FF\U000F0000-\U000FFFFD\U00100000-\U0010FFFD]', '', text)
     text = re.sub(r'^\([^)]*=연합뉴스\)\s*[^=]{0,100}=\s*', '', text)
-    # 피드가 제공한 첫 완결 문장만 사용하며 잘린 문장을 사실 요약으로 꾸미지 않습니다.
-    sentences = re.split(r'(?<=[.!?。])\s+(?=[A-Z가-힣“\"\'])', text)
-    first = sentences[0].strip() if sentences else ''
-    if len(first) < 12 or len(first) > 700 or re.search(r'(?i)read more|continue reading', first):
+    # 기자 연락처만 있는 피드는 본문 발췌로 표시하지 않습니다.
+    if re.fullmatch(r'[^\s@]+@[^\s@]+\.[^\s@]+(?:\s*\(끝\))?', text):
         return ''
+    # 사진 설명과 본문이 구분 없이 붙은 RSS는 기사 개요로 사용하지 않습니다.
+    if text.startswith('▲'):
+        return ''
+    # 한국어 RSS에는 마침표 다음 공백이 없기도 합니다. 소수점은 문장 경계로 보지 않습니다.
+    boundary = re.search(r'[.!?。][”\"’\']?(?=\s+[A-Z가-힣“\"\'\d]|[가-힣“])|(?<=[가-힣])[.!?][”\"’\']?(?=\d)', text)
+    first = text[:boundary.end()].strip() if boundary else text.strip()
+    if len(first) < 12 or re.search(r'(?i)read more|continue reading', first):
+        return ''
+    # 첫 문장이 길면 짧게 발췌하고 생략을 표시합니다. 내용을 새로 요약하지 않습니다.
+    words = list(re.finditer(r'\S+', first))
+    end = min(len(first), 200, words[24].end() if len(words) > 25 else len(first))
+    if end < len(first):
+        space = first.rfind(' ', 0, end + 1)
+        if space >= 120 and end == 200:
+            end = space
+        return first[:end].rstrip() + '…'
     return first
 
 
@@ -224,6 +265,7 @@ def parse_feed(data: bytes, source: dict, now: datetime) -> tuple[list[dict], di
         seen.add(key)
         # 원 피드의 항목 순서를 유지합니다. 별도의 중요도 점수를 만들지 않습니다.
         entry = {'title': title, 'url': link, 'published_at': published.isoformat()}
+        entry.update(article_classification(node, source, link))
         credit = clean_title(field(node, ('creator', 'publisher', 'author')))
         if credit:
             entry['credit'] = credit
@@ -302,8 +344,9 @@ def choose_items(reports: list[dict], limit: int) -> dict[str, list[dict]]:
 def publishable(reports: list[dict], selected: dict[str, list[dict]]) -> bool:
     counts = {group: 0 for group in GROUPS}
     for report in reports:
-        if selected.get(report['source']['id']):
-            counts[report['source']['group']] += 1
+        source = report['source']
+        for group in {item.get('group', source['group']) for item in selected.get(source['id'], [])}:
+            counts[group] += 1
     return counts['world'] >= 2 and counts['korea'] >= 1
 
 
@@ -328,10 +371,11 @@ def render(reports: list[dict], selected: dict[str, list[dict]], now: datetime) 
         lines += ['## ' + label, '']
         for report in reports:
             source = report['source']
-            if source['group'] != group:
+            source_entries = selected[source['id']]
+            entries = [item for item in source_entries if item.get('group', source['group']) == group]
+            if not entries and (source_entries or source['group'] != group):
                 continue
             lines += [f"### [{md_text(source['name'])}]({source['homepage']})", '']
-            entries = selected[source['id']]
             if not entries:
                 reason = REASONS[report['state']] if report['state'] != 'ok' else '다른 피드와 같은 기사'
                 lines += [f'이번 수집: {reason}', '']

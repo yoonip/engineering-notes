@@ -69,7 +69,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008820307&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-29T00:32:00+00:00",
       "credit": "khanporter@sbs.co.kr (강민우)",
-      "excerpt": "▲ 이재명 대통령이 28일 청와대에서 열린 국민생명안전위원회 제2차 전체회의에서 발언을 하고 있다.이재명 대통령이 외국인 노동자들의 …",
+      "excerpt": "",
       "feed_rank": 0,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -153,7 +153,7 @@
       "url": "https://rfa.org/korean/in-focus/2026/10/28/north-korea-workers-russia-working-conditions/",
       "published_at": "2026-10-28T20:15:30+00:00",
       "credit": "워싱턴-자민 앤더슨 andersonj@rfa.org",
-      "excerpt": "러시아 열차 사고로 북한인 6명이 숨진 것으로 알려진 가운데, HRNK 그렉 스칼라튜 회장으로부터 러시아 내 북한 노동자들의 작업 환경과 비자 실태, 비인도적인 시신 송환 관행을 짚어봤다.",
+      "excerpt": "러시아 열차 사고로 북한인 6명이 숨진 것으로 알려진 가운데, HRNK 그렉 스칼라튜 회장으로부터 러시아 내 북한 노동자들의 작업 환경과 비자 실태, 비인도적인 시신 송환 관행을…",
       "feed_rank": 1,
       "source_id": "rfa-ko",
       "source_name": "RFA 뉴스 헤드라인",
@@ -194,7 +194,7 @@
       "title": "중기수출 업종간 격차…“서비스 웃고, 제조 울상”",
       "url": "https://www.donga.com/news/Economy/article/all/20261029/134930170/1",
       "published_at": "2026-10-29T00:43:07+00:00",
-      "excerpt": "중소기업 수출 호조 속에서도 업종 별로 다른 추세가 나타났다. 29일 중소벤처기업연구원(중기연)의 ‘KOSI 중소기업 동향’에 따르면 지난 8월 중소 제조업 생산은 감소세로 전환했다.",
+      "excerpt": "중소기업 수출 호조 속에서도 업종 별로 다른 추세가 나타났다.",
       "feed_rank": 0,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -214,7 +214,7 @@
       "title": "국힘, 與진성준 국방위원장 美비자 발급 거부에 “한미동맹 파탄”",
       "url": "https://www.donga.com/news/Politics/article/all/20261029/134930100/1",
       "published_at": "2026-10-29T00:38:00+00:00",
-      "excerpt": "국민의힘이 국회 국방위원장인 더불어민주당 진성준 의원의 미국 비자 발급이 거부된 것에 대해 “대한민국의 국방위원장이 동맹국의 문턱조차 넘지 못하는 이 기막힌 현실이야말로 민주당과 이재명 정권의 뒤틀린 안보관이 빚어낸 치욕적인 외교 참사”라며 “한미 관계를 이 지경까지 파탄으로 몰고 간 근본 원인은 미국에 있는 것이 아니라, 맹목적인 반미·친북 인사들을 국가 안보의 전면에 내세운 이재명 정부와 민주당에 있다”고 밝혔다.",
+      "excerpt": "국민의힘이 국회 국방위원장인 더불어민주당 진성준 의원의 미국 비자 발급이 거부된 것에 대해 “대한민국의 국방위원장이 동맹국의 문턱조차 넘지 못하는 이 기막힌 현실이야말로 민주당과 이재명 정권의 뒤틀린…",
       "feed_rank": 2,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -256,7 +256,7 @@
       "url": "https://www.voakorea.com/a/israel-election-102826/8216105.html",
       "published_at": "2026-10-28T16:22:42+00:00",
       "credit": "voadigital@voanews.com (VOA 뉴스)",
-      "excerpt": "27일 실시된 이스라엘 총선의 개표가 85% 진행된 가운데, 이스라엘 언론은 베냐민 네타냐후 총리와 최대 야권 경쟁자인 가디 아이젠코트 모두 각각의 동맹 정당들과 함께 과반 연립정부를 구성하는 데 필요한 의석을 확보하지 못했다고 보도했습니다.",
+      "excerpt": "27일 실시된 이스라엘 총선의 개표가 85% 진행된 가운데, 이스라엘 언론은 베냐민 네타냐후 총리와 최대 야권 경쟁자인 가디 아이젠코트 모두 각각의 동맹 정당들과 함께 과반 연립정부를…",
       "feed_rank": 3,
       "source_id": "voa-ko-world",
       "source_name": "VOA 한국어 · 세계",
@@ -405,7 +405,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -415,13 +415,14 @@
       "seen_at": "2026-10-29T00:44:43.556894+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-29"
+      "day": "2026-10-29",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.donga.com/news/Sports/article/all/20261029/134930228/1": {
       "title": "‘김민재 결장’ 뮌헨, 2부 팀 6-1 완파하고 컵 대회 16강 진출",
       "url": "https://www.donga.com/news/Sports/article/all/20261029/134930228/1",
       "published_at": "2026-10-29T00:47:25+00:00",
-      "excerpt": "축구 국가대표 센터백 김민재가 벤치를 지킨 바이에른 뮌헨이 2부 팀을 완파하고 독일축구협회컵(DFB 포칼) 16강에 진출했다.뮌헨은 29일(한국 시간) 독일 뮌헨의 알리안츠 아레나에서 펼쳐진 2026~2027 DFB 포칼 32강전에서 마그데부르크(2부리그)를 6-1로 크게 이겼다.김민재는 이날 교체 명단에 이름을 올렸으나, 팀이 대승을 거둔 가운데 그라운드를 밟진 않았다.김민재는 지난 22일 아스널(잉글랜드)과의 2026~2027 유럽축구연맹(UEFA) 챔피언스리그(UCL) 리그 페이즈 3차전 홈 경기(2-2 무)에 선발로 출전했다가 전반만 뛰고 교체됐다.사타구니 부위와 무릎 부상 여파로 조기 교체된 김민재는 26일 열린 프라이부르크와의 분데스리가 원정 경기에는 아예 출전 명단에서 제외됐다.마그데부르크에서 임대로 뛰는 공격수 윤도영과 이충현은 이날 명단 이름을 올리지 못했다.이날 경기 전에는 27일 세계 최고 선수에게 주는 발롱도르를 수상한 해리 케인이 동료 선수들로부터",
+      "excerpt": "축구 국가대표 센터백 김민재가 벤치를 지킨 바이에른 뮌헨이 2부 팀을 완파하고 독일축구협회컵(DFB 포칼) 16강에 진출했다.",
       "feed_rank": 0,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -588,7 +589,7 @@
       "title": "서울 ‘국평’ 아파트 매매가 2.5% 하락…전세 보증금은 3.8% 올라",
       "url": "https://www.donga.com/news/Economy/article/all/20261029/134930188/1",
       "published_at": "2026-10-29T00:43:50+00:00",
-      "excerpt": "올해 3분기 서울 아파트 매매가격은 전년 동기 대비 2.5% 하락한 반면 전세 보증금은 3.8% 상승한 것으로 나타났다.29일 부동산 플랫폼 다방이 국토교통부 실거래가를 바탕으로 서울 25개 자치구별 전용면적 84㎡ 아파트 시세를 분석한 결과 이같이 나타났다.",
+      "excerpt": "올해 3분기 서울 아파트 매매가격은 전년 동기 대비 2.5% 하락한 반면 전세 보증금은 3.8% 상승한 것으로 나타났다.",
       "feed_rank": 1,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -672,7 +673,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008821347&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-29T06:31:00+00:00",
       "credit": "ha@sbs.co.kr (하정연)",
-      "excerpt": "▲ 이재명 대통령이재명 대통령은 오늘 \"다문화 가정이 내국인 가정에 비해 차별받지 않도록 하는 것은 필요한 정책이고 당연히 계…",
+      "excerpt": "",
       "feed_rank": 0,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -693,7 +694,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008820713&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-29T06:31:00+00:00",
       "credit": "sha@sbs.co.kr (손형안)",
-      "excerpt": "음식을 직접 조리하는 일부 편의점과 무인 식품 판매점에서 소비기한을 경과하거나 위생 상태가 불량한 제품을 취급하다 당국에 적발됐습니다.식품의약품…",
+      "excerpt": "음식을 직접 조리하는 일부 편의점과 무인 식품 판매점에서 소비기한을 경과하거나 위생 상태가 불량한 제품을 취급하다 당국에 적발됐습니다.",
       "feed_rank": 2,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -714,7 +715,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008820624&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-29T06:31:00+00:00",
       "credit": "jwlee@sbs.co.kr (이재원)",
-      "excerpt": "▲ 울산 태화강 번영교 남단 강변서 발견된 물고기 폐사체울산 태화강 하류에서 죽은 물고기가 무더기로 발견돼 지자체가 조사에 나섰습니다…",
+      "excerpt": "",
       "feed_rank": 4,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -905,7 +906,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -915,7 +916,8 @@
       "seen_at": "2026-10-29T07:06:35.444289+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-29"
+      "day": "2026-10-29",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://abcnews.com/International/wireStory/north-korea-fires-missile-barrage-sea-tensions-south-137662901": {
       "title": "North Korea fires missile barrage toward the sea as tensions with South rise",
@@ -1104,7 +1106,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008821064&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-29T13:16:00+00:00",
       "credit": "sy230 (이세영)",
-      "excerpt": "지난 23일 출시된 게임 '콜 오브 듀티: 모던 워페어 4'를 두고 논란이 번지는 가운데, SBS '뉴스헌터스'에서 전문가의 분석을 들어봤습니다.'콜 오브 듀티'는 2003년 출시된 전쟁 게임 시리즈로, 이번 신작은 북한의 기습 남침으로 한반도 전면전이 벌어진 상황을 배경으로 합니다.남북 간 전쟁으로 오락물을 만든 건 외국 게임사의 도 넘는 상업화라는 의견이 있는 반면, 창작의 자유에 속하는 것으로 오히려 전쟁의 위험성을 일깨울 수 있다는 목소리도 있습니다.우선 김정은 국무위원장과 김여정 부장이 연상되는 게임 캐릭터들에 대해서 실제 북한과 크게 다르다고 설명했습니다.[조한범/통일연구원 석좌연구위원 : 전혀 말이 안 되는 거죠.",
+      "excerpt": "지난 23일 출시된 게임 '콜 오브 듀티: 모던 워페어 4'를 두고 논란이 번지는 가운데, SBS '뉴스헌터스'에서 전문가의 분석을 들어봤습니다.'",
       "feed_rank": 2,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -1166,7 +1168,7 @@
       "title": "영장 기각 닷새 만에 또 편의점 턴 20대…결국 구속",
       "url": "https://www.donga.com/news/Society/article/all/20261029/134936617/2",
       "published_at": "2026-10-29T14:11:46+00:00",
-      "excerpt": "절도 혐의로 구속영장이 기각돼 풀려났던 20대 남성이 닷새 만에 또다시 편의점에서 금품을 훔쳤다가 결국 구속됐다.충남 천안동남경찰서는 상습적으로 편의점에서 금품을 훔친 혐의(절도)로 20대 남성을 구속했다고 29일 밝혔다.이 남성은 지난달 24일부터 이달 25일까지 천안 시내 편의점 2곳에서 4차례에 걸쳐 현금과 담배 등 62만원 상당의 금품을 훔친 혐의를 받는다.경찰은 앞서 확인된 절도 3건을 토대로 지난 19일 이 남성에 대한 구속영장을 신청했지만, 법원은 이튿날 영장을 기각했다.풀려난 남성은 닷새 만인 지난 25일 오후 8시경 천안시 동남구 영성동의 한 편의점에서 계산대에 있던 현금과 담배 등을 훔친 뒤 달아났다.경찰은 추적 끝에 지난 27일 낮 12시 35분경 경기 수원시의 한 주차장에서 이 남성을 긴급체포했다.조사 결과 이 남성은 편의점 업주가 고령이거나 혼자 근무하는 곳을 노린 것으로 파악됐다.",
+      "excerpt": "절도 혐의로 구속영장이 기각돼 풀려났던 20대 남성이 닷새 만에 또다시 편의점에서 금품을 훔쳤다가 결국 구속됐다.",
       "feed_rank": 3,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -1233,7 +1235,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -1243,7 +1245,8 @@
       "seen_at": "2026-10-29T14:20:37.668014+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-29"
+      "day": "2026-10-29",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.yna.co.kr/view/AKR20261029178200001": {
       "title": "독일과 '하이테크 파트너십' 추진…에너지 협력도 강화",
@@ -1270,7 +1273,7 @@
       "title": "옥주현 190억 한남더힐 경매 넘어가…“채무 정리 과정”",
       "url": "https://www.donga.com/news/Society/article/all/20261029/134936358/2",
       "published_at": "2026-10-29T13:23:00+00:00",
-      "excerpt": "그룹 핑클 출신 뮤지컬 배우 옥주현이 190억원에 매입한 서울 용산구 한남동 고급 아파트가 법원 경매에 넘어간 가운데, 옥주현 측은 신규 사업 추진과 법인 인수합병(M&A)에 따른 채무 정리 절차를 진행 중이라고 밝혔다.옥주현을 대리하는 젬스톤이앤엠은 29일 공식 입장을 통해 “옥주현은 공연, 공연기획, 교육 등 다양한 분야에서 새로운 사업을 추진하기 위해 기존 신사동 법인 건물을 중심으로 구체적인 사업 계획을 수립하고 실질적인 준비를 진행해 왔다”며 “이 과정에서 한 사업투자회사로부터 대규모 투자를 유치하게 됐다”고 설명했다.이어 “사업 추진 및 투자 유치 과정에서 올해 4월 한남동 주택을 매입했으며, 최근 옥주현의 법인과 투자사 간 M&A가 성사됨에 따라 해당 주택과 관련된 채무를 포함해 기존 사안들을 정리하는 절차를 진행하고 있다”고 밝혔다.그러면서 “이번 한남동 주택의 경매 관련 사안 역시 이러한 사업 추진 및 채무 정리 과정과 맞물려 있는 상황”이라며 “",
+      "excerpt": "그룹 핑클 출신 뮤지컬 배우 옥주현이 190억원에 매입한 서울 용산구 한남동 고급 아파트가 법원 경매에 넘어간 가운데, 옥주현 측은 신규 사업 추진과 법인 인수합병(M&A)에 따른…",
       "feed_rank": 14,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -1540,7 +1543,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -1550,7 +1553,8 @@
       "seen_at": "2026-10-29T20:18:59.495970+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-30"
+      "day": "2026-10-30",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.voakorea.com/a/us-rok-scm-delay-response-102926/8216586.html": {
       "title": "미 전쟁부 “미한 SCM, 지도부 일정 문제로 연기…전작권 전환 결과 예단 않을 것”",
@@ -1578,11 +1582,11 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008822175&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-29T17:20:00+00:00",
       "credit": "captain@sbs.co.kr (정성진)",
-      "excerpt": "▲ 29일 카파도키아 관광지 붕괴 현장 모습튀르키예의 관광 명소인 카파도키아의 기암괴석이 무너져 내려 사상자가 발생했다고 현지 방송 …",
+      "excerpt": "",
       "feed_rank": 11,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -1592,14 +1596,15 @@
       "seen_at": "2026-10-29T20:18:59.495970+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-30"
+      "day": "2026-10-30",
+      "classification_basis": "official_article_section:국제"
     },
     "https://www.voakorea.com/a/us-iran-102926/8216592.html": {
       "title": "트럼프 대통령 “밴스 부통령, 이란 지도부와 접촉…인도주의적 지원 제안”",
       "url": "https://www.voakorea.com/a/us-iran-102926/8216592.html",
       "published_at": "2026-10-29T19:23:12+00:00",
       "credit": "voadigital@voanews.com (VOA 뉴스)",
-      "excerpt": "중동 분쟁을 둘러싸고 미국과 이란 간 협상을 재개하려는 새로운 노력이 진행되는 가운데, 도널드 트럼프 미국 대통령은 JD 밴스 부통령이 인도주의적 지원을 제안하기 위해 이란 지도부와 접촉했다고 밝혔습니다.",
+      "excerpt": "중동 분쟁을 둘러싸고 미국과 이란 간 협상을 재개하려는 새로운 노력이 진행되는 가운데, 도널드 트럼프 미국 대통령은 JD 밴스 부통령이 인도주의적 지원을 제안하기 위해 이란 지도부와…",
       "feed_rank": 0,
       "source_id": "voa-ko-world",
       "source_name": "VOA 한국어 · 세계",
@@ -1645,7 +1650,7 @@
       "feed_rank": 2,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -1655,7 +1660,8 @@
       "seen_at": "2026-10-29T20:18:59.495970+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-30"
+      "day": "2026-10-30",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://news.sbs.co.kr/news/endPage.do?news_id=N1008821976&plink=RSSLINK&cooper=RSSREADER": {
       "title": "\"커피 마시다 날아갔다\"…스페인 열차 추돌 69명 숨져",
@@ -1666,7 +1672,7 @@
       "feed_rank": 3,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -1676,7 +1682,8 @@
       "seen_at": "2026-10-29T20:18:59.495970+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-30"
+      "day": "2026-10-30",
+      "classification_basis": "official_article_section:국제"
     },
     "https://www.donga.com/news/Economy/article/all/20261030/134936455/2": {
       "title": "삼성전자, 3분기 반도체로만 영업이익 106조",
@@ -1702,7 +1709,7 @@
       "title": "김포아라-하남미사, 서울 가까워… 광역교통망-공급속도 관건",
       "url": "https://www.donga.com/news/Economy/article/all/20261030/134936240/2",
       "published_at": "2026-10-29T19:30:00+00:00",
-      "excerpt": "이번 신규 공공택지 발표는 서울에 인접한 지역에서 대규모 주택을 공급해 수도권 15억 원 이하 아파트 밀집 지역을 중심으로 이어지고 있는 주택 가격 상승세와 전월세난을 완화하겠다는 정부 의도가 반영된 것으로 보인다.",
+      "excerpt": "이번 신규 공공택지 발표는 서울에 인접한 지역에서 대규모 주택을 공급해 수도권 15억 원 이하 아파트 밀집 지역을 중심으로 이어지고 있는 주택 가격 상승세와 전월세난을 완화하겠다는…",
       "feed_rank": 10,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -1910,7 +1917,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008822477&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-30T00:00:00+00:00",
       "credit": "sunghoon@sbs.co.kr (이성훈)",
-      "excerpt": "▲ 사진은 왼쪽부터 반도체 부문의 전영현 부회장, 모바일·가전 부문의 노태문 사장.글로벌 테크 기업 최초로 분기 영업이익 100조 원…",
+      "excerpt": "",
       "feed_rank": 11,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -1931,7 +1938,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008822321&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-30T00:47:00+00:00",
       "credit": "nina@sbs.co.kr (김아영)",
-      "excerpt": "▲ 북한 김정은 노동당 총비서북한 김정은 노동당 총비서가 어제 각종 무인기를 망라한 '무인항공기술발전-2026' 전시회…",
+      "excerpt": "",
       "feed_rank": 0,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -1952,11 +1959,11 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008822195&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-30T00:47:00+00:00",
       "credit": "captain@sbs.co.kr (정성진)",
-      "excerpt": "▲ 젠슨 황 엔비디아 최고경영자와, 중국 정부 스파이 의심을 받는 앨리스 황이 지난 2024년 타이베이의 한 바에서 나란히 앉아 있다…",
+      "excerpt": "",
       "feed_rank": 1,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -1966,7 +1973,8 @@
       "seen_at": "2026-10-30T01:00:38.107842+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-30"
+      "day": "2026-10-30",
+      "classification_basis": "official_article_section:국제"
     },
     "https://www.yna.co.kr/view/AKR20261030048400003": {
       "title": "SK, 이노 정승일 발탁·곽노정 유임…반도체 안정·에너지 쇄신",
@@ -2261,7 +2269,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008823179&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-30T07:04:00+00:00",
       "credit": "jh98park (박지혜)",
-      "excerpt": "▲ 이태원 참사 자료화면이 포함된 '콜 오브 듀티: 모던 워페어 4' 시네마틱이태원 참사 당시 자료 영상을 게임 속에 …",
+      "excerpt": "",
       "feed_rank": 2,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -2282,7 +2290,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008823016&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-30T06:29:00+00:00",
       "credit": "eyebrow@sbs.co.kr (조성현)",
-      "excerpt": "▲ 30일 서울 용산구 의사협회에서 열린 '소아응급실 압수수색 규탄 및 진료권 보호 촉구 긴급기자회견'에서 류정민 대한…",
+      "excerpt": "",
       "feed_rank": 9,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -2303,7 +2311,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008823365&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-30T07:04:00+00:00",
       "credit": "young12 (이기영 에디터)",
-      "excerpt": "▲ 국민의힘 김기현 의원이 30일 서울중앙지법에서 열린 1심 선고공판에 출석하고 있다.김건희 씨에게 당 대표 선거 지원 대가로 명품 …",
+      "excerpt": "",
       "feed_rank": 0,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -2328,7 +2336,7 @@
       "feed_rank": 2,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -2343,7 +2351,8 @@
           "seen_at": "2026-10-30T07:07:15.984296+00:00"
         }
       ],
-      "day": "2026-10-30"
+      "day": "2026-10-30",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.voakorea.com/a/korean-peninsula-10-30-26/8216824.html": {
       "title": "청와대 “북한군 지뢰 폭발 사건 필요한 조치 지속 취할 것. 호르무즈 관련 기여 방안 모색 중”",
@@ -2354,7 +2363,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -2364,7 +2373,8 @@
       "seen_at": "2026-10-30T07:07:15.984296+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-30"
+      "day": "2026-10-30",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.yna.co.kr/view/AKR20261030137800008": {
       "title": "메모리반도체 투자 등 ETF 2종, 내달 3일 신규 상장",
@@ -2517,7 +2527,7 @@
       "title": "대법 ‘학폭재판 노쇼’ 피해 유족이 제기한 손배소 종료 확정",
       "url": "https://www.donga.com/news/Society/article/all/20261030/134939638/1",
       "published_at": "2026-10-30T06:52:26+00:00",
-      "excerpt": "학교폭력 피해자 고(故) 박주원 양의 유족 측이 가해자들과 학교 등을 상대로 낸 손해배상청구 소송에 대해 항소 취하 간주 효력을 인정한 2심 판결이 대법원에서 확정됐다.30일 법조계에 따르면 대법원 2부(주심 김성수 대법관)는 이날 박 양의 어머니 이기철 씨가 학교폭력 가해자 측에 제기한 손해배상 청구 소송에서 소송 종료 선언을 한 항소심을 심리불속행 기각으로 확정했다.이 씨는 2015년 박 양이 학교폭력으로 숨지자, 권경애 변호사를 선임해 가해자들과 학교 법인·서울시를 상대로 손해배상 소송을 냈다.1심은 재판에 불출석한 학부모 1명에 대한 손해배상 소송 청구만 받아들이며 사실상 원고 패소 판결을 했다.이 씨 측이 항소했지만, 권 변호사는 2022년 9~11월 항소심 재판에 세 차례 불출석해 패소 판결을 받게 했다.민사소송법상 항소심 소송 당사자는 재판에 2회 출석하지 않으면 1개월 이내에 기일 지정을 신청할 수 있다.",
+      "excerpt": "학교폭력 피해자 고(故) 박주원 양의 유족 측이 가해자들과 학교 등을 상대로 낸 손해배상청구 소송에 대해 항소 취하 간주 효력을 인정한 2심 판결이 대법원에서 확정됐다.",
       "feed_rank": 7,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -2680,11 +2690,11 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008823826&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-30T12:27:00+00:00",
       "credit": "k022@sbs.co.kr (권영인)",
-      "excerpt": "한 달 넘게 이어지고 있는 프랑스 시위 사태는 교육 환경을 개선해 달라는 학생들의 요구에서 시작됐습니다.학생들이 학교를 봉쇄하고 거리로 나설 수밖에 없었던 이유를 권영인 특파원이 학생 대표를 만나 직접 들어봤습니다.",
+      "excerpt": "한 달 넘게 이어지고 있는 프랑스 시위 사태는 교육 환경을 개선해 달라는 학생들의 요구에서 시작됐습니다.",
       "feed_rank": 12,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -2694,7 +2704,8 @@
       "seen_at": "2026-10-30T14:09:39.515676+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-30"
+      "day": "2026-10-30",
+      "classification_basis": "official_article_section:국제"
     },
     "https://news.sbs.co.kr/news/endPage.do?news_id=N1008823811&plink=RSSLINK&cooper=RSSREADER": {
       "title": "\"오도가도 못해\" 1,200명 '발 동동'…인천공항 '먹통' 원인은?",
@@ -2763,7 +2774,7 @@
       "title": "오세훈측, 특검 상고에 “주장 반복한다고 없던 증거 생기지 않아”",
       "url": "https://www.donga.com/news/Politics/article/all/20261030/134941635/1",
       "published_at": "2026-10-30T12:14:00+00:00",
-      "excerpt": "오세훈 서울시장 측은 30일 정치자금법 위반 사건 항소심 무죄 판결에 불복해 대법원에 상고한 김건희특검(특별검사 민중기)을 향해 “같은 주장을 반복한다고 없던 증거가 생기지는 않는다”고 말했다.이종현 서울시 민생소통특보는 이날 입장문을 내고 “특검의 상고이유는 1·2심 내내 이어온 논리에서 벗어나지 못했다”며 이같이 밝혔다.",
+      "excerpt": "오세훈 서울시장 측은 30일 정치자금법 위반 사건 항소심 무죄 판결에 불복해 대법원에 상고한 김건희특검(특별검사 민중기)을 향해 “같은 주장을 반복한다고 없던 증거가 생기지는 않는다”고 말했다.",
       "feed_rank": 9,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -2783,7 +2794,7 @@
       "title": "바둑 김은지, 스미레 3-0 완파…수협은행배 초대 챔피언 등극",
       "url": "https://www.donga.com/news/Culture/article/all/20261030/134941615/1",
       "published_at": "2026-10-30T11:51:26+00:00",
-      "excerpt": "김은지 9단이 스미레 6단(일본)을 꺾고 Sh수협은행 여자바둑 최강전 초대 챔피언으로 등극했다.김은지는 30일 서울 성동구의 한국기원 바둑TV 스튜디오에서 열린 스미레와의 2026 Sh수협은행 여자바둑 최강전 결승 5번기 3국에서 259수 만에 흑 불계승을 거둬 종합 전적 3-0으로 우승을 확정했다.이로써 김은지는 지난 2022년 제1회 효림배에서 첫 타이틀을 획득한 이후 통산 14번째 타이틀을 손에 넣었다.초중반까지는 스미레가 우세했지만, 김은지는 우변 전투에서 대마를 잡아 뒤집기에 성공한 뒤 굳히기에 들어가 승리를 따냈다.한국기원에 따르면 김은지는 “이번 수협은행배가 중요한 대회라고 생각해 열심히 준비했다. 5번기라 체력적으로 힘들었지만, 우승하게 돼 기쁘다”고 소감을 밝혔다.이어 “앞으로 중요한 대회들이 많이 남아 있는데, 지금처럼 꾸준히 준비해 좋은 성적을 내겠다”고 덧붙였다.",
+      "excerpt": "김은지 9단이 스미레 6단(일본)을 꺾고 Sh수협은행 여자바둑 최강전 초대 챔피언으로 등극했다.",
       "feed_rank": 11,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -2803,7 +2814,7 @@
       "title": "[고양이 눈]배려",
       "url": "https://www.donga.com/news/Opinion/article/all/20261030/134941782/2",
       "published_at": "2026-10-30T14:06:00+00:00",
-      "excerpt": "“화장실 비밀번호는 비밀이 아닙니다!” 남자 화장실 문에 도어록 비밀번호가 큼지막하게 적혀 있네요.",
+      "excerpt": "“화장실 비밀번호는 비밀이 아닙니다!”",
       "feed_rank": 0,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -2891,7 +2902,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -2901,7 +2912,8 @@
       "seen_at": "2026-10-30T14:09:39.515676+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-30"
+      "day": "2026-10-30",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance": {
       "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
@@ -3112,7 +3124,7 @@
       "url": "https://www.voakorea.com/a/g20-diplomats/8217008.html",
       "published_at": "2026-10-30T19:13:05+00:00",
       "credit": "voadigital@voanews.com (VOA 뉴스)",
-      "excerpt": "마코 루비오 미 국무장관이 30일 조지아주 애틀랜타에서 이틀 일정으로 개막한 주요 20개국 외교장관 회의에서, 세계 주요 경제국들이 식량 시장과 글로벌 공급망, 무역, 항행의 자유를 위협하는 위기에 공동 대응해야 한다고 강조했습니다.",
+      "excerpt": "마코 루비오 미 국무장관이 30일 조지아주 애틀랜타에서 이틀 일정으로 개막한 주요 20개국 외교장관 회의에서, 세계 주요 경제국들이 식량 시장과 글로벌 공급망, 무역, 항행의 자유를 위협하는…",
       "feed_rank": 1,
       "source_id": "voa-ko-world",
       "source_name": "VOA 한국어 · 세계",
@@ -3163,7 +3175,7 @@
       "feed_rank": 1,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -3173,7 +3185,8 @@
       "seen_at": "2026-10-30T19:23:13.478421+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-31"
+      "day": "2026-10-31",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.voakorea.com/a/north-korean-hackers-binance-heist/8217003.html": {
       "title": "'63억 달러' 사상 최대 암호화폐 탈취...북한 해킹조직 배후 지목",
@@ -3184,7 +3197,7 @@
       "feed_rank": 2,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -3194,7 +3207,8 @@
       "seen_at": "2026-10-30T19:23:13.478421+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-31"
+      "day": "2026-10-31",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.voakorea.com/a/8216980.html": {
       "title": "스위스 외무장관, 북한·한국 잇단 회동...'대화 재개' 지원 의지",
@@ -3205,7 +3219,7 @@
       "feed_rank": 3,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -3215,7 +3229,8 @@
       "seen_at": "2026-10-30T19:23:13.478421+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-31"
+      "day": "2026-10-31",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.donga.com/news/Politics/article/all/20261031/134941988/2": {
       "title": "與, 조희대 국정조사 내달 12일 본회의 처리 예고",
@@ -3241,11 +3256,11 @@
       "title": "트럼프와 각 세운 레오 교황, 美중간선거 우편투표 참여",
       "url": "https://www.donga.com/news/Inter/article/all/20261031/134942232/1",
       "published_at": "2026-10-30T19:22:39+00:00",
-      "excerpt": "강경한 이민단속 정책 등에 쓴소리를 내며 도널드 트럼프 미국 대통령과 각을 세웠던 레오 14세 교황이 11월3일 치러지는 미국 중간선거에 한표를 행사했다.교황청은 30일(현지 시간) 성명에서 레오 14세가 우편투표를 통해 미 중간선거에 참여했다고 밝혔다.교황청은 “레오 14세는 미국 시민으로서 투표 자격이 주어질 때마다 투표권을 행사해왔다”며 “이러한 오랜 시민적 참여 관행을 지키면서 그는 시카고에 우편투표를 제출했다”고 전했다.또한 “교황 성하는 민주적 절차들에 참여할 시민들의 권리와 의무에 대한 믿음을 표명했다”고 덧붙였다.레오 14세는 지난해 5월 미국인으로서는 처음으로 교황에 선출됐다.",
+      "excerpt": "강경한 이민단속 정책 등에 쓴소리를 내며 도널드 트럼프 미국 대통령과 각을 세웠던 레오 14세 교황이 11월3일 치러지는 미국 중간선거에 한표를 행사했다.",
       "feed_rank": 0,
       "source_id": "donga",
       "source_name": "동아일보",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://www.donga.com/",
       "license_url": null,
@@ -3255,13 +3270,14 @@
       "seen_at": "2026-10-30T19:23:13.478421+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-31"
+      "day": "2026-10-31",
+      "classification_basis": "official_article_path:/news/Inter/"
     },
     "https://www.donga.com/news/Sports/article/all/20261031/134942002/2": {
       "title": "동생 손에도 마침내 WS 우승반지… ML 베네수엘라 형제 화려한 2026",
       "url": "https://www.donga.com/news/Sports/article/all/20261031/134942002/2",
       "published_at": "2026-10-30T16:40:00+00:00",
-      "excerpt": "“콘트레라스 형제의 엄청난 한 해가 월드시리즈(WS) 우승으로 마무리됐다.” 29일 미국프로야구 메이저리그(MLB) 밀워키의 창단 첫 WS 우승을 이끌며 최우수선수(MVP)로 선정된 포수 윌리엄 콘트레라스(29)와 관중석에서 동생의 우승 순간을 지켜 본 형 윌슨 콘트레라스(34·보스턴). 30일 MLB 공식 홈페이지 MLB닷컴은 베네수엘라의 가난한 가정에서 태어나 모든 야구 선수가 꿈꾸는 월드시리즈 정상에 오른 콘트레라스 형제를 집중 조명했다.",
+      "excerpt": "“콘트레라스 형제의 엄청난 한 해가 월드시리즈(WS) 우승으로 마무리됐다.”",
       "feed_rank": 9,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -3491,7 +3507,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008824134&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-30T23:45:00+00:00",
       "credit": "goodjung@sbs.co.kr (정준형 기자)",
-      "excerpt": "베트남 천재 소녀는 왜 한국을 선택했나?최근 한국 유학 소식으로 화제를 모은 베트남의 천재 소녀 호앙 흐엉 지앙 씨.",
+      "excerpt": "베트남 천재 소녀는 왜 한국을 선택했나?",
       "feed_rank": 3,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -3641,7 +3657,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -3651,7 +3667,8 @@
       "seen_at": "2026-10-30T23:47:32.228186+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-31"
+      "day": "2026-10-31",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.voakorea.com/a/8217026.html": {
       "title": "한국 국정원 “북한, 600㎜ 초대형 방사포 전방 배치 가능성 주시”",
@@ -3662,7 +3679,7 @@
       "feed_rank": 1,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -3672,7 +3689,8 @@
       "seen_at": "2026-10-30T23:47:32.228186+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-31"
+      "day": "2026-10-31",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.yna.co.kr/view/AKR20261030088100030": {
       "title": "[이번주뭘살까] 막 오른 11월 쇼핑대전…할인상품 담아볼까",
@@ -3823,7 +3841,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008824344&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-31T05:32:00+00:00",
       "credit": "mrae@sbs.co.kr (김형래)",
-      "excerpt": "▲ 해외 순방길에 오른 이재명 대통령과 김혜경 여사가 인사하고 있다.이재명 대통령은 해외 순방이 너무 잦다는 야당의 비판에 \"…",
+      "excerpt": "",
       "feed_rank": 1,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -3844,7 +3862,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008824203&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-31T04:29:00+00:00",
       "credit": "ship@sbs.co.kr (배성재)",
-      "excerpt": "▲ 전조등 (위 사진은 기사 내용과 관련이 없습니다.)차량 전조등 불빛이 자신의 얼굴을 비췄다는 이유로 운전자를 폭행한 50대 남성이…",
+      "excerpt": "",
       "feed_rank": 2,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -3865,7 +3883,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008824206&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-31T04:29:00+00:00",
       "credit": "ship@sbs.co.kr (배성재)",
-      "excerpt": "▲ 소주병음주 상태로 보복 운전을 하다가 경찰이 출동하자 이른바 '술 타기' 수법으로 음주 측정을 방해하고는 그 상태로…",
+      "excerpt": "",
       "feed_rank": 3,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -3886,7 +3904,7 @@
       "url": "https://www.yna.co.kr/view/AKR20261030111500051",
       "published_at": "2026-10-31T05:01:00+00:00",
       "credit": "손형주",
-      "excerpt": "대한민국을 자신의 두 번째 조국이라고 말하던 프랑스 6·25전쟁 참전용사 고(故) 세르주 가브리엘 아르샹보 ...",
+      "excerpt": "대한민국을 자신의 두 번째 조국이라고 말하던 프랑스 6·25전쟁 참전용사 고(故) 세르주 가브리엘 아르샹보 ...",
       "feed_rank": 0,
       "source_id": "yonhap-politics",
       "source_name": "연합뉴스",
@@ -3906,7 +3924,7 @@
       "title": "이재성 시즌 첫 결장…마인츠, 엘버스베르크에 1-4 완패",
       "url": "https://www.donga.com/news/Sports/article/all/20261031/134942667/1",
       "published_at": "2026-10-31T04:46:27+00:00",
-      "excerpt": "축구 국가대표 미드필더 이재성이 시즌 첫 결장한 가운데 소속팀 독일 프로축구 분데스리가 마인츠가 완패했다.마인츠는 31일(한국 시간) 독일 엘버스베르크의 우르사파름 아레나 안 데어 카이저린데에서 펼쳐진 2026~2027시즌 분데스리가 8라운드 원정 경기에서 엘버스베르크에 1-4로 크게 졌다.승점 10점에 그친 마인츠는 리그 8위에 자리했다.승격팀 엘버스베르크는 리그 5위(승점 13)로 도약했다.이재성은 이날 교체 명단에 이름을 올렸으나, 출전 기회를 얻진 못했다.이재성이 이번 시즌 결장한 건 처음이다.마인츠는 전반 7분과 26분 그리고 추가시간 연속 실점하며 전반에만 3골을 허용하며 끌려갔다.후반에도 고전한 마인츠는 후반 46분 한 골을 더 실점하며 무너졌다.마인츠는 곧바로 베네딕트 홀러바흐가 만회골을 넣어 겨우 영패는 면했다.[서울=뉴시스]",
+      "excerpt": "축구 국가대표 미드필더 이재성이 시즌 첫 결장한 가운데 소속팀 독일 프로축구 분데스리가 마인츠가 완패했다.",
       "feed_rank": 5,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -3926,7 +3944,7 @@
       "title": "“아사다 마오가 벌써 36세?”…김연아의 日 라이벌, 우아해진 근황에 팬들 깜짝",
       "url": "https://www.donga.com/news/Sports/article/all/20261031/134942664/1",
       "published_at": "2026-10-31T04:45:52+00:00",
-      "excerpt": "‘피겨 여왕’ 김연아와 라이벌로 잘 알려진 일본 피겨스케이팅 선수 출신 아사다 마오가 한층 우아해진 분위기로 공식 행사에 등장해 현지 팬들의 관심을 모았다.일본 매체 데일리 스포츠는 29일(현지 시간) 아사다 마오가 일본 도쿄에서 열린 침구 제조업체 에어위브의 신제품 발표회에 참석했다고 보도했다.행사에는 2026 밀라노·코르티나 담페초 동계올림픽 피겨스케이팅 페어 금메달리스트인 미우라 리쿠와 기하라 류이치도 함께했다.",
+      "excerpt": "‘피겨 여왕’ 김연아와 라이벌로 잘 알려진 일본 피겨스케이팅 선수 출신 아사다 마오가 한층 우아해진 분위기로 공식 행사에 등장해 현지 팬들의 관심을 모았다.",
       "feed_rank": 6,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -3946,7 +3964,7 @@
       "title": "‘디펜딩 챔피언’ 대한항공 감독 “우승은 지난 일…새로운 시작”",
       "url": "https://www.donga.com/news/Sports/article/all/20261031/134942661/1",
       "published_at": "2026-10-31T04:45:35+00:00",
-      "excerpt": "2026~2027시즌 첫 경기에 나서는 프로배구 ‘디펜딩 챔피언’ 대한항공 헤난 달 조토 감독이 “우승은 지난 일”이라며 새로운 시작을 다짐했다.대한항공은 31일 오후 2시 인천계약체육관에서 현대캐피탈과 HK흥국금융 2026~2027 V-리그 남자부 개막전을 치른다.두 팀은 지난 시즌 챔피언결정전에서 만났고, 대한항공이 5차전까지 가는 접전 끝에 우승했다.또 최근 컵대회에서도 대한항공이 현대캐피탈을 누르고 정상에 올랐다.헤난 감독은 “지난해 챔프전에서 1, 2차전을 이기고 3, 4차전을 졌다. 5차전을 앞두고 현대캐피탈의 상승세를 어떻게 꺾을 것인지에 관한 질문을 받았고, 많은 분이 걱정했다”고 말했다.그러면서 “기억해야 할 건 매 경기가 또 하나의 새로운 이야기라는 것이다.",
+      "excerpt": "2026~2027시즌 첫 경기에 나서는 프로배구 ‘디펜딩 챔피언’ 대한항공 헤난 달 조토 감독이 “우승은 지난 일”이라며 새로운 시작을 다짐했다.",
       "feed_rank": 7,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -4034,7 +4052,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -4044,7 +4062,8 @@
       "seen_at": "2026-10-31T05:42:51.011124+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-31"
+      "day": "2026-10-31",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://allafrica.com/stories/202610300524.html": {
       "title": "Kenya: Ruto - Why Bayern V Ajax in Nairobi Is Perfect Tribute to Former PM Raila Odinga",
@@ -4154,7 +4173,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008824418&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-10-31T11:31:00+00:00",
       "credit": "young12 (이기영 에디터)",
-      "excerpt": "▲ 고 세르주 아르샹보 유해 봉환식대한민국을 자신의 두 번째 조국이라고 말했던 프랑스 6·25전쟁 참전용사 고 세르주 가브리엘 아르샹…",
+      "excerpt": "",
       "feed_rank": 7,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -4179,7 +4198,7 @@
       "feed_rank": 9,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -4189,7 +4208,8 @@
       "seen_at": "2026-10-31T12:30:39.818148+00:00",
       "update": false,
       "history": [],
-      "day": "2026-10-31"
+      "day": "2026-10-31",
+      "classification_basis": "official_article_section:국제"
     },
     "https://www.yna.co.kr/view/AKR20261031044600004": {
       "title": "'핼러윈' 토요일 저녁 홍대 12만·이태원 2만 인파…국화꽃 추모도",
@@ -4258,7 +4278,7 @@
       "title": "진주 송전탑 전선교체 작업 중 60대 추락해 사망",
       "url": "https://www.donga.com/news/Society/article/all/20261031/134942815/1",
       "published_at": "2026-10-31T09:57:23+00:00",
-      "excerpt": "31일 오후 5시 5분께 경남 진주시 가좌동 뚝방국수 뒷편 송전탑에서 전선교체 작업을 하던 60대 근로자 A씨가 20m 아래로 추락했다.이 사고로 머리 등을 크게 다친 A씨는 심정지 상태로 병원으로 이송됐지만 숨졌다.경찰조사 결과, 이날 오전 7시부터 사고가 난 송전탑 위에서 근로자 3명이 전선 교체작업을 하는 것을 확인했다.경찰은 정확한 사고 경위와 함께 안전관리 책임자를 상대로 안전수칙 준수 등 업무상과실 여부도 수사 중이다.[진주=뉴시스]",
+      "excerpt": "31일 오후 5시 5분께 경남 진주시 가좌동 뚝방국수 뒷편 송전탑에서 전선교체 작업을 하던 60대 근로자 A씨가 20m 아래로 추락했다.",
       "feed_rank": 11,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -4278,7 +4298,7 @@
       "title": "‘놀토’ 엔믹스·아일릿, 서로 향한 팬심 고백…훈훈한 칭찬 릴레이",
       "url": "https://www.donga.com/news/Entertainment/article/all/20261031/134942875/1",
       "published_at": "2026-10-31T12:13:57+00:00",
-      "excerpt": "그룹 엔믹스(NMIXX)와 아일릿(ILLIT) 멤버들이 서로를 향한 칭찬으로 훈훈한 분위기를 자아냈다.31일 오후 방송된 tvN 예능 프로그램 ‘놀라운 토요일’은 ‘2026 천생연분’ 특집으로 꾸며졌다.",
+      "excerpt": "그룹 엔믹스(NMIXX)와 아일릿(ILLIT) 멤버들이 서로를 향한 칭찬으로 훈훈한 분위기를 자아냈다.",
       "feed_rank": 0,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -4531,7 +4551,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -4541,7 +4561,8 @@
       "seen_at": "2026-10-31T17:44:20.070369+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-01"
+      "day": "2026-11-01",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.yna.co.kr/view/AKR20261031044652004": {
       "title": "'핼러윈' 홍대·이태원 16만 인파…새벽까지 시끌벅적(종합2보)",
@@ -4569,7 +4590,7 @@
       "url": "https://www.yna.co.kr/view/AKR20261031049900004",
       "published_at": "2026-10-31T14:45:53+00:00",
       "credit": "이동환",
-      "excerpt": "dhlee@yna.co.kr (끝)",
+      "excerpt": "",
       "feed_rank": 2,
       "source_id": "yonhap-society",
       "source_name": "연합뉴스",
@@ -4631,7 +4652,7 @@
       "title": "아일릿 원희, 삼촌들 정답 스틸에 서운함 폭발…“너무 신났는데요”",
       "url": "https://www.donga.com/news/Entertainment/article/all/20261101/134942952/1",
       "published_at": "2026-10-31T15:00:10+00:00",
-      "excerpt": "그룹 아일릿(ILLIT) 원희가 ‘놀라운 토요일’ 멤버들의 장난에 귀여운 서운함을 드러내 웃음을 안겼다.31일 오후 방송된 tvN 예능 프로그램 ‘놀라운 토요일’은 ‘2026 천생연분’ 특집으로 꾸며졌으며, 게스트로는 엔믹스 멤버 릴리와 설윤, 아일릿 멤버 윤아와 원희가 출연했다.이날 방송에서는 과자 사진을 보고 한 명당 한 글자씩 이름을 맞히는 ‘여섯이 한마음-과자 이름 편’ 미션이 진행됐다.",
+      "excerpt": "그룹 아일릿(ILLIT) 원희가 ‘놀라운 토요일’ 멤버들의 장난에 귀여운 서운함을 드러내 웃음을 안겼다.",
       "feed_rank": 0,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -4693,7 +4714,7 @@
       "title": "가평 단독주택 화재로 50대 남녀 2명 숨져…1명 화상",
       "url": "https://www.donga.com/news/Society/article/all/20261031/134942945/1",
       "published_at": "2026-10-31T14:04:29+00:00",
-      "excerpt": "31일 오전 0시 38분께 경기 가평군 조종면 신하리의 한 단독주택에서 불이 나 50대 남녀 2명이 숨졌다.“50대 아내와 남동생이 집 안에 남아 있다”는 신고를 받은 소방 당국은 인력 58명과 장비 24대를 투입해 진화에 나섰다.구조대는 오전 1시 23분께 건물 안쪽 방에서 심정지 상태인 2명을 발견해 병원으로 옮겼으나 숨졌다.함께 있던 3명은 대피했으며, 이 중 50대 남성 1명은 손에 2도 화상을 입어 병원 치료를 받았다.불은 샌드위치 패널로 된 주택과 인접한 간이 찜질방을 태운 뒤 오전 2시 24분께 완전히 꺼졌다.경찰과 소방 당국은 LPG 난로에서 가스가 새 불이 났을 가능성 등 화재 원인을 조사 중이다.",
+      "excerpt": "31일 오전 0시 38분께 경기 가평군 조종면 신하리의 한 단독주택에서 불이 나 50대 남녀 2명이 숨졌다.",
       "feed_rank": 1,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -4713,7 +4734,7 @@
       "title": "조현, 독일·폴란드 외교장관과 회담…“방산 협력 강화 기대”",
       "url": "https://www.donga.com/news/Politics/article/all/20261031/134942931/1",
       "published_at": "2026-10-31T13:33:29+00:00",
-      "excerpt": "조현 외교부 장관은 독일·폴란드 외교장과 만나 방산 등 분야에서 협력을 강화해 나가자고 밝혔다.외교부에 따르면 조 장관은 30일(현지시간) 미국 애틀랜타에서 열린 주요 20개국(G20) 외교장관회의 참석을 계기로 요한 바데풀 독일 외교장관과 회담했다.조 장관은 프리드리히 메르츠 독일 총리 방한을 계기로 양국이 ‘강화된 전략적 동반자 관계’를 최초 수립한 것을 평가했다.또 “국방·방산, 경제, 첨단산업 등 제반 분야에서의 협력을 더욱 강화해 나가기를 기대한다”고 말했다.바데풀 장관은 “앞으로 외교당국 간 더욱 긴밀히 협력해 나가기를 기대한다”며 “무역·투자, 첨단산업 등 분야에서 양국 협력이 한층 강화되길 바란다”고 했다.아울러 조 장관은 라도스와프 시코르스키 폴란드 부총리 겸 외교장관과 첫 회담을 갖고 양국 관계 발전 방안과 지역 정세에 대해 의견을 교환했다.조 장관은 지난 4월 도날드 투스크 총리의 공식 방한을 계기로 양국 관계가 ‘포괄적 전략 동반자 관계’로 격상된 것",
+      "excerpt": "조현 외교부 장관은 독일·폴란드 외교장과 만나 방산 등 분야에서 협력을 강화해 나가자고 밝혔다.",
       "feed_rank": 2,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -4986,7 +5007,7 @@
       "feed_rank": 1,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -4996,7 +5017,8 @@
       "seen_at": "2026-10-31T21:35:47.325621+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-01"
+      "day": "2026-11-01",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.yna.co.kr/view/AKR20261030165200003": {
       "title": "메모리 호황 속 HBM4 경쟁 새 국면…삼성 추격·SK하이닉스 수성",
@@ -5272,7 +5294,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008824839&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-11-01T00:58:00+00:00",
       "credit": "newsservice@sbs.co.kr(SBS)",
-      "excerpt": "▲ 지난 8월 6일 부산항 신선대부두에 수출입 화물이 쌓여 있는 모습.우리나라의 1∼10월 누적 수출액이 사상 처음으로 9천억…",
+      "excerpt": "",
       "feed_rank": 0,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -5293,11 +5315,11 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008824700&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-11-01T00:06:00+00:00",
       "credit": "cbcb@sbs.co.kr (박찬범)",
-      "excerpt": "▲ 바이낸스세계 최대의 가상화폐 거래소 바이낸스가 63억 달러의 자산을 탈취당하는 동안 임원진은 이를 무력하게 지켜볼 수밖에 없었던 …",
+      "excerpt": "",
       "feed_rank": 4,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -5307,7 +5329,8 @@
       "seen_at": "2026-11-01T01:10:54.792068+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-01"
+      "day": "2026-11-01",
+      "classification_basis": "official_article_section:국제"
     },
     "https://www.yna.co.kr/view/AKR20261101014000003": {
       "title": "[속보] 반도체 10월 수출 564억달러…2개월 연속 500억달러대",
@@ -5338,7 +5361,7 @@
       "feed_rank": 1,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -5348,13 +5371,14 @@
       "seen_at": "2026-11-01T01:10:54.792068+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-01"
+      "day": "2026-11-01",
+      "classification_basis": "official_article_section:국제"
     },
     "https://www.voakorea.com/a/8217337.html": {
       "title": "루비오 \"트럼프, 북한과 대화 열려 있어…예정된 회동은 없어\"",
       "url": "https://www.voakorea.com/a/8217337.html",
       "published_at": "2026-11-01T00:21:38+00:00",
-      "excerpt": "마코 루비오 미국 국무장관은 31일, 애틀랜타에서 열린 주요 20개국(G20) 외교장관 회의에서 VOA의 질문에 답하며 트럼프 행정부의 외교 정책 우선 순위를 설명하고 주요 국제 현안에 대한 입장을 밝혔습니다.",
+      "excerpt": "마코 루비오 미국 국무장관은 31일, 애틀랜타에서 열린 주요 20개국(G20) 외교장관 회의에서 VOA의 질문에 답하며 트럼프 행정부의 외교 정책 우선 순위를 설명하고 주요 국제 현안에 대한…",
       "feed_rank": 2,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
@@ -5379,7 +5403,7 @@
       "title": "韓수출액, 사상 첫 9000억 달러 돌파…이달 1조달러 달성 눈앞",
       "url": "https://www.donga.com/news/Economy/article/all/20261101/134943426/1",
       "published_at": "2026-11-01T00:39:00+00:00",
-      "excerpt": "우리나라의 올해 1∼10월 누적 수출액이 사상 처음으로 9000억 달러를 돌파했다. 9월에 이어 10월에도 월 수출액이 1100억 달러를 넘어서면서 이달(11월) 중 연간 수출액 1조 달러 달성이 확실시되고 있다.산업통상자원부는 1일 발표한 ‘10월 수출입 동향’을 통해 지난달 수출액이 전년 동기 대비 93.7% 급증한 1152억 8000만 달러로 집계됐다고 밝혔다.",
+      "excerpt": "우리나라의 올해 1∼10월 누적 수출액이 사상 처음으로 9000억 달러를 돌파했다.",
       "feed_rank": 2,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -5420,7 +5444,7 @@
       "title": "휴직 사립 교사, 의원 보좌관 겸직 못 한다…대법 “양립 불가능 지위”",
       "url": "https://www.donga.com/news/Society/article/all/20261101/134943404/1",
       "published_at": "2026-11-01T00:27:27+00:00",
-      "excerpt": "사립학교 교사가 휴직을 했더라도 국회의원 보좌관으로 활동할 수 없다는 대법원 판단이 나왔다.1일 법조계에 따르면 대법원 3부(주심 이숙연 대법관)는 전 모 씨가 국회사무총장을 상대로 낸 임명취소처분 취소소송 상고심에서 원고승소 판결한 원심을 파기하고 사건을 서울고법으로 환송했다.사립고 교사인 전 씨는 2020년 5월 고용휴직을 신청했다.",
+      "excerpt": "사립학교 교사가 휴직을 했더라도 국회의원 보좌관으로 활동할 수 없다는 대법원 판단이 나왔다.",
       "feed_rank": 3,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -5465,7 +5489,7 @@
       "feed_rank": 5,
       "source_id": "donga",
       "source_name": "동아일보",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://www.donga.com/",
       "license_url": null,
@@ -5475,7 +5499,8 @@
       "seen_at": "2026-11-01T01:10:54.792068+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-01"
+      "day": "2026-11-01",
+      "classification_basis": "official_article_path:/news/Inter/"
     },
     "https://www.yna.co.kr/view/AKR20261101014400003": {
       "title": "[속보] 10월 무역수지 425억달러 흑자…2개월 연속 400억달러대",
@@ -5565,7 +5590,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008824926&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-11-01T07:27:00+00:00",
       "credit": "noisycart@sbs.co.kr (최승훈)",
-      "excerpt": "▲ 부산항 신선대 부두에 수출입 화물이 가득 쌓여 있다.우리나라의 10월 수출이 1,153억 달러를 기록하며 올해 누적 수출액이 사상…",
+      "excerpt": "",
       "feed_rank": 0,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -5586,11 +5611,11 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008825131&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-11-01T07:27:00+00:00",
       "credit": "jwlee@sbs.co.kr (이재원)",
-      "excerpt": "▲ 일본 시민들 지진 등 자연재해가 잦은 일본에서 피해를 최소화하고 방재 기술 산업화를 총괄할 방재청이 오늘 출범한다고 니혼게이자이신…",
+      "excerpt": "",
       "feed_rank": 2,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -5600,18 +5625,19 @@
       "seen_at": "2026-11-01T07:33:42.531608+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-01"
+      "day": "2026-11-01",
+      "classification_basis": "official_article_section:국제"
     },
     "https://news.sbs.co.kr/news/endPage.do?news_id=N1008825142&plink=RSSLINK&cooper=RSSREADER": {
       "title": "선거 앞두고 \"처리해야\"…콕 집은 '곡괭이산' 정체는",
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008825142&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-11-01T07:27:00+00:00",
       "credit": "jwlee@sbs.co.kr (이재원)",
-      "excerpt": "▲ 도널드 트럼프 미국 대통령도널드 트럼프 미국 대통령이 중간선거를 불과 사흘 앞둔 현지시간 31일 처리해야 할 곳으로 재차 언급한 …",
+      "excerpt": "",
       "feed_rank": 1,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -5621,7 +5647,8 @@
       "seen_at": "2026-11-01T07:33:42.531608+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-01"
+      "day": "2026-11-01",
+      "classification_basis": "official_article_section:국제"
     },
     "https://www.yna.co.kr/view/AKR20261101034400007": {
       "title": "'봄 여왕' 이예원, 가을에 활짝…S-오일 챔피언십서 통산 11승째",
@@ -5669,7 +5696,7 @@
       "title": "‘근육 긴장 이상증’ 이봉주 “숨어 있었으면, 회복 못했을 것”",
       "url": "https://www.donga.com/news/Culture/article/all/20261101/134945068/1",
       "published_at": "2026-11-01T06:56:51+00:00",
-      "excerpt": "근육 긴장 이상증으로 투병 중인 ‘국민 마라토너’ 이봉주가 병마를 딛고 다시 세상 밖으로 나온 과정을 전한다.1일 오후 9시10분 방송하는 EBS 1TV 다큐멘터리 ‘시대목격’ 12회에서는 의지와 무관하게 근육이 뒤틀리는 난치 질환 속에서도 삶의 레이스를 멈추지 않는 이봉주의 투병기와 40년 마라톤 인생을 다룬다.이봉주는 간호사 출신 아내와 함께 건강을 되찾기 위해 분투한 시간을 돌아보며 “숨어 있었으면 회복하지 못했을 것”이라며 같은 아픔을 겪는 이들에게 희망이 되고 싶다는 뜻을 밝힌다.방송은 평발과 짝발 등 신체적 한계를 극복하고 1996 애틀랜타 올림픽 은메달, 2001 보스턴 마라톤 제패를 일궈낸 그의 전성기 궤적도 함께 짚는다.[서울=뉴시스]",
+      "excerpt": "근육 긴장 이상증으로 투병 중인 ‘국민 마라토너’ 이봉주가 병마를 딛고 다시 세상 밖으로 나온 과정을 전한다.",
       "feed_rank": 4,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -5710,7 +5737,7 @@
       "title": "손지창, 배우에서 60억 매출 CEO로…직원들 “성격 급해 잔소리”",
       "url": "https://www.donga.com/news/Entertainment/article/all/20261101/134945045/1",
       "published_at": "2026-11-01T06:55:09+00:00",
-      "excerpt": "배우 손지창이 연 매출 최대 60억 원을 기록한 이벤트 기획 회사를 운영하는 일상을 공개한다. 1일 방송되는 KBS 2TV ‘사장님 귀는 당나귀 귀’(이하 ‘사당귀’)에는 원조 꽃미남 청춘스타에서 사업가로 완벽 변신한 손지창이 새로운 보스로 출격한다.26년간 이벤트 기획 회사를 이끌어 온 손지창은 “예전에는 무대에 섰었고, 지금은 무대를 만든다”라며 “연 매출은 최대 60억 원”이라고 전해 출연진들의 탄성을 자아낸다.18년 동안 함께해 온 실장부터 5년 차 막내 대리까지, 오랜 시간 손발을 맞춰 탄탄한 조직력을 자랑하는 직원들은 손지창 보스에 대해 “성격이 급해서 직원들이 자기 속도를 따라오지 못하면 잔소리한다”라고 거침없이 폭로해 웃음을 자아낸다.이날 방송에서는 고급 수입차 브랜드의 고객 180명을 초청하는 행사를 위해 기획부터 현장 운영까지 꼼꼼하게 챙기는 손지창 보스의 모습이 공개된다.손지창은 직접 협찬 받은 경품을 수령하기 위해 매장을 방문한다.",
+      "excerpt": "배우 손지창이 연 매출 최대 60억 원을 기록한 이벤트 기획 회사를 운영하는 일상을 공개한다.",
       "feed_rank": 8,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -5777,7 +5804,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -5787,7 +5814,8 @@
       "seen_at": "2026-11-01T07:33:42.531608+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-01"
+      "day": "2026-11-01",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://abcnews.com/International/wireStory/bulgarians-vote-presidential-runoff-marked-regional-security-threats-137744157": {
       "title": "Exit polls suggest Bulgarians elected first female president",
@@ -5927,7 +5955,7 @@
       "feed_rank": 1,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -5937,7 +5965,8 @@
       "seen_at": "2026-11-01T15:10:10.649851+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-02"
+      "day": "2026-11-02",
+      "classification_basis": "official_article_section:국제"
     },
     "https://www.voakorea.com/a/8217465.html": {
       "title": "북한, 집속탄두 위력시험…한국 합참 “발사 전부터 동향 추적”",
@@ -5948,7 +5977,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -5958,13 +5987,14 @@
       "seen_at": "2026-11-01T15:10:10.649851+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-02"
+      "day": "2026-11-02",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.donga.com/news/Opinion/article/all/20261101/134946772/2": {
       "title": "[횡설수설/신광영]산분장〈散粉葬〉",
       "url": "https://www.donga.com/news/Opinion/article/all/20261101/134946772/2",
       "published_at": "2026-11-01T14:18:00+00:00",
-      "excerpt": "미국 뉴욕 센트럴파크의 스트로베리 필즈 정원에선 매년 12월 8일 비틀스 멤버 존 레넌의 솔로곡 ‘이매진(Imagine)’이 울려 퍼진다. 1980년 그날, 총격으로 사망한 그를 추모하는 행사가 20년 넘게 이어지고 있다.",
+      "excerpt": "미국 뉴욕 센트럴파크의 스트로베리 필즈 정원에선 매년 12월 8일 비틀스 멤버 존 레넌의 솔로곡 ‘이매진(Imagine)’이 울려 퍼진다.",
       "feed_rank": 4,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -6331,7 +6361,7 @@
       "title": "루비오 “북미회담 잡힌 일정 없지만, 대화할 준비돼 있다”",
       "url": "https://www.donga.com/news/Politics/article/all/20261102/134947240/2",
       "published_at": "2026-11-01T19:30:00+00:00",
-      "excerpt": "마코 루비오 미국 국무장관이 북-미 정상회담에 대해 “도널드 트럼프 대통령은 준비가 돼 있다”면서도 “예정된 일정은 없다(Nothing has been scheduled)”고 말했다. 18일부터 중국 선전에서 열리는 아시아태평양경제협력체(APEC) 정상회의가 약 보름 앞으로 다가왔지만 북-미 간 회담을 위한 구체적인 논의가 이뤄지지 않고 있다고 밝힌 것이다.",
+      "excerpt": "마코 루비오 미국 국무장관이 북-미 정상회담에 대해 “도널드 트럼프 대통령은 준비가 돼 있다”면서도 “예정된 일정은 없다(Nothing has been scheduled)”고 말했다.",
       "feed_rank": 3,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -6351,7 +6381,7 @@
       "title": "인텔 하루새 28.58% 폭락… 52년만에 최대 낙폭",
       "url": "https://www.donga.com/news/Economy/article/all/20261102/134947238/2",
       "published_at": "2026-11-01T19:30:00+00:00",
-      "excerpt": "미국 반도체 기업 인텔의 주가가 하루 만에 28.58% 폭락하며 1974년 이후 52년 만에 최대 낙폭을 기록했다. 4분기 실적 전망이 시장 예상치를 밑돌면서 향후 성장세가 둔화할 것이란 우려가 주가를 끌어내렸다.",
+      "excerpt": "미국 반도체 기업 인텔의 주가가 하루 만에 28.58% 폭락하며 1974년 이후 52년 만에 최대 낙폭을 기록했다.",
       "feed_rank": 5,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -6376,7 +6406,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -6386,7 +6416,8 @@
       "seen_at": "2026-11-01T19:41:54.181942+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-02"
+      "day": "2026-11-02",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.donga.com/news/Economy/article/all/20261102/134947226/2": {
       "title": "수출, 獨-美-中 이어 1조달러 눈앞… 성장률 뛰는데 체감경기는 ‘한파’",
@@ -6523,7 +6554,7 @@
       "feed_rank": 3,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -6533,14 +6564,15 @@
       "seen_at": "2026-11-01T23:36:53.887701+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-02"
+      "day": "2026-11-02",
+      "classification_basis": "official_article_section:국제"
     },
     "https://news.sbs.co.kr/news/endPage.do?news_id=N1008825381&plink=RSSLINK&cooper=RSSREADER": {
       "title": "비만약 먹고 굶다가…영양실조로 응급실 오는 청년들",
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008825381&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-11-01T22:47:00+00:00",
       "credit": "jdono@sbs.co.kr (조제행 기자)",
-      "excerpt": "마지막 알찬 뉴스 '비만약 영양실조'입니다.비만 치료제를 맞으면서 식사까지 지나치게 줄였다가 영양실조로 응급실을 찾는 젊은 층들이…",
+      "excerpt": "마지막 알찬 뉴스 '비만약 영양실조'입니다.",
       "feed_rank": 1,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -6561,7 +6593,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008825384&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-11-01T22:59:00+00:00",
       "credit": "hkk@sbs.co.kr (고희경 기자)",
-      "excerpt": "절에 직접 안 가도 방 안에서 108배를 하고 염불까지 들을 수 있는 '온라인 사찰'이 인기라고요?네, 취업을 준비 중인 20대 …",
+      "excerpt": "절에 직접 안 가도 방 안에서 108배를 하고 염불까지 들을 수 있는 '온라인 사찰'이 인기라고요?",
       "feed_rank": 4,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -6582,7 +6614,7 @@
       "url": "https://rfa.org/korean/in-focus/2026/11/01/north-korea-export-shift/",
       "published_at": "2026-11-01T21:00:00+00:00",
       "credit": "서울-김태이 kimt@rfa.org",
-      "excerpt": "북한의 대중국 수출 구조가 크게 바뀌고 있다. 10년 전 북한의 전체 대중 수출에서 절반 가까이를 차지했던 석탄과 철광석은 대북 제재 이후 공식 무역통계에서 사실상 자취를 감췄다.",
+      "excerpt": "북한의 대중국 수출 구조가 크게 바뀌고 있다.",
       "feed_rank": 0,
       "source_id": "rfa-ko",
       "source_name": "RFA 뉴스 헤드라인",
@@ -6603,7 +6635,7 @@
       "url": "https://www.yna.co.kr/view/AKR20261102018600003",
       "published_at": "2026-11-01T23:14:45+00:00",
       "credit": "강태우",
-      "excerpt": "한국반도체산업협회가 반도체 연구개발(R&amp;D) 인력에 대한 근로시간 특례 등을 담은 '초광역특구법' 발의...",
+      "excerpt": "한국반도체산업협회가 반도체 연구개발(R&D) 인력에 대한 근로시간 특례 등을 담은 '초광역특구법' 발의...",
       "feed_rank": 1,
       "source_id": "yonhap-industry",
       "source_name": "연합뉴스",
@@ -6623,7 +6655,7 @@
       "title": "이지후, 월드클라이밍 아시아시리즈 남자부 볼더 금메달",
       "url": "https://www.donga.com/news/Sports/article/all/20261102/134947713/1",
       "published_at": "2026-11-01T23:12:40+00:00",
-      "excerpt": "이지후가 2026 월드클라이밍 군산 아시아 시리즈 남자 볼더에서 금메달을 땄다.이지후는 1일 전북 군산에서 열린 대회 남자 볼더 결승에서 총 4개 과제 중 3개를 완등하며 우승했다.함께 결승에 오른 정찬진은 2개 과제를 완등하며 은메달을 차지했다.동메달은 일본의 야마구치 켄토에게 돌아갔다.여자 볼더에서는 서채현이 은메달을 거머쥐었다.서채현은 결승에서 4개 과제 중 3개를 완등했으나, 야마 마나미보다 시도 횟수가 많아 밀렸다.함께 출전한 오가영은 동메달을 목에 걸었다.이로써 한국은 이번 아시아 시리즈에서 금메달 2개, 은메달 2개, 동메달 1개 등 총 5개 메달을 수확했다.앞서 열린 스피드 종목에선 정지민이 금메달을 딴 바 있다.[서울=뉴시스]",
+      "excerpt": "이지후가 2026 월드클라이밍 군산 아시아 시리즈 남자 볼더에서 금메달을 땄다.",
       "feed_rank": 2,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -6664,7 +6696,7 @@
       "title": "강릉서 실종 신고된 50대男, 배수로서 숨진채 발견",
       "url": "https://www.donga.com/news/Society/article/all/20261102/134947624/2",
       "published_at": "2026-11-01T22:49:00+00:00",
-      "excerpt": "강원 강릉시에서 실종된 50대 남성이 배수로에서 숨진 채 발견됐다.2일 경찰 등에 따르면 1일 오후 4시 47분경 강릉시 연곡면 동덕리 인근 배수로에서 50대 남성이 숨진 채 발견됐다.앞서 경찰은 이날 ‘전날 새벽 집을 나선 뒤 귀가하지 않는다’는 신고를 접수하고 수색을 벌여왔다.이후 경찰은 수색 과정에서 남성의 신발 등 흔적을 발견했으며 이후 소방당국에 지원을 요청해 배수로에서 시신을 인양했다.경찰은 구체적인 사망 경위 등을 조사 중이다.",
+      "excerpt": "강원 강릉시에서 실종된 50대 남성이 배수로에서 숨진 채 발견됐다.",
       "feed_rank": 4,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -6870,7 +6902,7 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008825774&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-11-02T04:56:00+00:00",
       "credit": "dan@sbs.co.kr (정다은)",
-      "excerpt": "피를 토하며 움직이지 못하는 아들을 방치해 숨지게 하고, 사망 전날 가입한 보험으로 보험금을 타낸 어머니가 실형을 선고받았습니다.의정부지법 형사…",
+      "excerpt": "피를 토하며 움직이지 못하는 아들을 방치해 숨지게 하고, 사망 전날 가입한 보험으로 보험금을 타낸 어머니가 실형을 선고받았습니다.",
       "feed_rank": 2,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
@@ -6891,11 +6923,11 @@
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008826099&plink=RSSLINK&cooper=RSSREADER",
       "published_at": "2026-11-02T04:57:00+00:00",
       "credit": "jwlee@sbs.co.kr (이재원)",
-      "excerpt": "▲ 해변서 작전 훈련 중인 러시아 FSB 소속 군인들 러시아가 미국 측의 제보를 바탕으로 모스크바의 주요 박물관을 겨냥한 테러 시도를…",
+      "excerpt": "",
       "feed_rank": 6,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -6905,7 +6937,8 @@
       "seen_at": "2026-11-02T06:04:15.269180+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-02"
+      "day": "2026-11-02",
+      "classification_basis": "official_article_section:국제"
     },
     "https://www.donga.com/news/Inter/article/all/20261102/134950419/1": {
       "title": "중간선거 뒤 헤그세스 압박 커지나…美 민주당, 탄핵·조사 예고",
@@ -6915,7 +6948,7 @@
       "feed_rank": 1,
       "source_id": "donga",
       "source_name": "동아일보",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://www.donga.com/",
       "license_url": null,
@@ -6925,7 +6958,8 @@
       "seen_at": "2026-11-02T06:04:15.269180+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-02"
+      "day": "2026-11-02",
+      "classification_basis": "official_article_path:/news/Inter/"
     },
     "https://news.sbs.co.kr/news/endPage.do?news_id=N1008826375&plink=RSSLINK&cooper=RSSREADER": {
       "title": "트럼프 \"한중일행 선박 위한 가스관 있다\"…또 알래스카 거론",
@@ -6935,7 +6969,7 @@
       "feed_rank": 0,
       "source_id": "sbs",
       "source_name": "SBS 뉴스",
-      "group": "korea",
+      "group": "world",
       "summary_mode": "feed",
       "homepage": "https://news.sbs.co.kr/",
       "license_url": null,
@@ -6945,7 +6979,8 @@
       "seen_at": "2026-11-02T06:04:15.269180+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-02"
+      "day": "2026-11-02",
+      "classification_basis": "official_article_section:국제"
     },
     "https://www.yna.co.kr/view/AKR20261102090900546": {
       "title": "[머니톡스] 소수의 온기, 곳곳으로 퍼져야…국회가 길 터줘야 한다",
@@ -6977,7 +7012,7 @@
       "feed_rank": 0,
       "source_id": "voa-ko-peninsula",
       "source_name": "VOA 한국어 · 한반도",
-      "group": "world",
+      "group": "korea",
       "summary_mode": "feed",
       "homepage": "https://voakorea.com/",
       "license_url": null,
@@ -6987,13 +7022,14 @@
       "seen_at": "2026-11-02T06:04:15.269180+00:00",
       "update": false,
       "history": [],
-      "day": "2026-11-02"
+      "day": "2026-11-02",
+      "classification_basis": "official_article_section:한반도"
     },
     "https://www.donga.com/news/Society/article/all/20261102/134950555/2": {
       "title": "전자발찌 전원 끄고 ‘청와대 흉기 난동’ 예고한 50대 남성",
       "url": "https://www.donga.com/news/Society/article/all/20261102/134950555/2",
       "published_at": "2026-11-02T05:55:00+00:00",
-      "excerpt": "청와대 등에서 흉기 난동을 벌이겠다고 예고한 뒤 전자발찌 전원을 끈 50대 남성이 경찰에 붙잡혔다. 2일 경찰에 따르면 서울 종로경찰서는 전날 오후 1시 55분경 50대 남성을 스토킹처벌법 위반(전자발찌 훼손) 혐의로 긴급체포했다.이 남성은 전날 서울동부보호관찰소에 전화를 걸어 청와대와 경찰청, 서울경찰청 등에서 칼부림을 하겠다고 말한 뒤 전자발찌 전원을 끈 혐의를 받는다.",
+      "excerpt": "청와대 등에서 흉기 난동을 벌이겠다고 예고한 뒤 전자발찌 전원을 끈 50대 남성이 경찰에 붙잡혔다.",
       "feed_rank": 2,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -7097,7 +7133,7 @@
       "title": "올 3분기 스마트 출하량 20% 감소…삼성전자, 프리미엄-보급형 쌍끌이 효과로 1위 수성",
       "url": "https://www.donga.com/news/Economy/article/all/20261102/134950429/1",
       "published_at": "2026-11-02T05:50:00+00:00",
-      "excerpt": "인공지능(AI)발 ‘칩플레이션’(반도체 인플레이션)의 영향으로 스마트폰 가격이 오르면서 올해 3분기(7∼9월) 글로벌 스마트폰 출하량이 1년 전보다 20% 줄었다. 3분기 기준으로 13년 만에 가장 적은 것으로 나타났다.2일 시장조사업체 옴디아에 따르면 3분기 글로벌 스마트폰 출하량은 2억5470만 대로 2013년 이후 3분기 기준 최저치를 기록했다.",
+      "excerpt": "인공지능(AI)발 ‘칩플레이션’(반도체 인플레이션)의 영향으로 스마트폰 가격이 오르면서 올해 3분기(7∼9월) 글로벌 스마트폰 출하량이 1년 전보다 20% 줄었다.",
       "feed_rank": 6,
       "source_id": "donga",
       "source_name": "동아일보",
@@ -7981,7 +8017,7 @@
       "at": "2026-10-30T07:07:15.984296+00:00"
     },
     "4f61a9c7f1e78709f6eb571670b7a0e8fbd961ec7e16c237e8d6a85818df9526": {
-      "fingerprint": "468cf886768aea77ee4719c692d0aae4a506d1389a9505af42817afaa897392e",
+      "fingerprint": "374f2fc8557adf76acc728f1ea891423e1e2e8dc4bbffbebcea6865e55c964f8",
       "at": "2026-10-30T07:07:15.984296+00:00"
     },
     "e2797ee4c9f4e88eea932d736576f37f52948325648eccbad6923cf279b2ea76": {
@@ -7989,7 +8025,7 @@
       "at": "2026-10-30T07:07:15.984296+00:00"
     },
     "84bb07fec1249921989aa6f244f0e10092be3cf963816d327fb206caa44d6909": {
-      "fingerprint": "527aec4863dd2130283a9e221991739354e16c3351c5b1eb6892b2d67b7d5897",
+      "fingerprint": "6ce558f3e22923786cb9ce80d4d801dd20994e19bf95698007bd13ddb005063b",
       "at": "2026-10-30T07:07:15.984296+00:00"
     },
     "d6c0e2e2f4520d761bcbe0a2107f25f124a23a6e1f0a6b97c344c2f95d3ea4a5": {
@@ -8013,7 +8049,7 @@
       "at": "2026-10-30T07:07:15.984296+00:00"
     },
     "169693eac6a3eecc70117b64165cfd52528a8b6eb2ea234f125312e74d5a2dec": {
-      "fingerprint": "09e7938a2dba4e791c3f22142caa593c1d8385f85b2c2f3676f728c93e46561b",
+      "fingerprint": "97e220dd4b9ea856b6504da21ed808864bbfe2a60137fa5d2aec5c3dfbd4f9b7",
       "at": "2026-10-30T07:07:15.984296+00:00"
     },
     "41571b80961e11dbbef7e21f6d51b6c78466eee3d1dd9c1557e1b83901cfc901": {
@@ -8057,7 +8093,7 @@
       "at": "2026-10-30T07:07:15.984296+00:00"
     },
     "2181f41494333678da2ddb39e5974238dfebd6b4073c0ce1d188ff376a13a9e8": {
-      "fingerprint": "6a24422b1d27dfe9b7110430011a6517f4fafb996b3f295221508366156d48cd",
+      "fingerprint": "d0d7293a43883bc62ea86bd4e32bffbf93c30495b321c5a3b400615293fc15b4",
       "at": "2026-10-30T07:07:15.984296+00:00"
     },
     "45231e957e0d9484d6ceb18f623409154858dc36b8d4b5a69606388270bb45df": {
@@ -10041,7 +10077,7 @@
       "at": "2026-10-30T14:09:39.515676+00:00"
     },
     "c8b5fc049bad30cda87121ea61e36fabf55e843d45d526e7b7b76905b7df0ca8": {
-      "fingerprint": "a657fac1779826fc5b13a7928d6153ec087cf2ceb1b19b879eb8c0a2081e5741",
+      "fingerprint": "6133bb217f6b98b42d5f02a166579d286a5b7291b443ff976ede0fdf75eb60c5",
       "at": "2026-10-30T14:09:39.515676+00:00"
     },
     "664fb3af7d046f0ca1fd8fe286c04c071c13b568bc555082907bdacbbeaac5d3": {
@@ -10053,7 +10089,7 @@
       "at": "2026-10-30T14:09:39.515676+00:00"
     },
     "f24da924701ad58e09eb3266676b0c5a2c40e560f9c9a02ccacd24fc2fcf386b": {
-      "fingerprint": "d0e1003f358fc30674fe0fc2448387bc14d765c41b78c2be23a6722bc4aec858",
+      "fingerprint": "47a294c7dc747e56d883be0023b00eec6eb84de53770e78d2742ac9ce8b052bd",
       "at": "2026-10-30T14:09:39.515676+00:00"
     },
     "7a8c7e6bf0565e39d1072b792254697baed7810a1a020ca4afea3420c7248a78": {
@@ -10089,7 +10125,7 @@
       "at": "2026-10-30T14:09:39.515676+00:00"
     },
     "a57a34f1744ec1d3933a5a69641ced6e806b99c569fe4c0a743a3af31c39e53c": {
-      "fingerprint": "01e6f8a508ad09c2ad936eddd1d844ab639bd255c38a7101d64bb8849e68ae8c",
+      "fingerprint": "a82557bfcc5956eeb40afe24d2ad47140fe708fc349c86fd0dcc9b4381d03acd",
       "at": "2026-10-30T14:09:39.515676+00:00"
     },
     "75be3df105c5b2762ea984e1964c0aae4b3256d4089dde68f2c51a8f2c24d23e": {
@@ -10097,7 +10133,7 @@
       "at": "2026-10-30T14:09:39.515676+00:00"
     },
     "b5b605fdf95f541278b2f67d241064ca2c8df94091e4d5065b64ae62da7fa365": {
-      "fingerprint": "1a74be8f59a978d708dcf4b5edaa420287167a2f6ea207eb438e3436ee6692cd",
+      "fingerprint": "7a86108d400fe2bef671e897894c87f4461e502744fb2d68d919a4100d7178d9",
       "at": "2026-10-30T14:09:39.515676+00:00"
     },
     "ffd47e2faf058e0bbdcb360f15a58346f96c5e3ba602e7da28093aa247f3d4e8": {
@@ -10801,7 +10837,7 @@
       "at": "2026-10-30T19:23:13.478421+00:00"
     },
     "c5e554304f6c7f777f971ab8d01ce61425ee86d0ed2aed71b57ade34140b429e": {
-      "fingerprint": "c67f424a70d331adf882180d665eb0f29c3d748fde673484158f1401c8a0401a",
+      "fingerprint": "cf935c7975b1b43a0b80956a073d7443addbc0f83167620e5d207a1ca5e96504",
       "at": "2026-10-30T19:23:13.478421+00:00"
     },
     "2c9994f28d2c8653a56cccb0367ce937a5c4a50cf2155d4c11aafaab64bfb184": {
@@ -10837,7 +10873,7 @@
       "at": "2026-10-30T19:23:13.478421+00:00"
     },
     "c01f55e66aa019529c12604d5daa42609af1c60712d6b0b80debd0e5c5facc7c": {
-      "fingerprint": "b931201b06cbbd8d045c0d4b8fc5a304fe743cd8fe091cab490ec5a17bdf000a",
+      "fingerprint": "b3e37749ef4c53b8535ae7c68c5d715809206132c7ffc152f0c795f2ab1ad0dd",
       "at": "2026-10-30T19:23:13.478421+00:00"
     },
     "de9efff67fc475cfee3012e92bde81f4fd4ad58a10178233da47f7225d923c61": {
@@ -11001,7 +11037,7 @@
       "at": "2026-10-30T19:23:13.478421+00:00"
     },
     "c17c8fc0e44d7e1ea28fc347518d6f6978018b2d9981ea78a5d3a80f0e1d8538": {
-      "fingerprint": "35e11acd51116ca36e301380282019d2b09b89fffdb1996fa0a38fa0ece792bb",
+      "fingerprint": "1386d44a8a462d986b7b438143f6571855a4e5e9a8ebed6051f5ae8f09df7b31",
       "at": "2026-10-30T23:47:32.228186+00:00"
     },
     "513ae1701d8740e86aaeaa8880d2894f0d04e03fc812fb3004b8a447fa011237": {
@@ -11461,7 +11497,7 @@
       "at": "2026-10-30T23:47:32.228186+00:00"
     },
     "c90558c61221f3636b53e6c91aab7dd6822238a1f0731e0e9cde019aea71c798": {
-      "fingerprint": "613233b4ff15ed4107454da5d1d4b987f88e6e9927ee9a86b031253393034fe9",
+      "fingerprint": "3af9ccb62d96fd010145c6e47909dc6f81be8693e4f12ed27e146e2ebfa85ae0",
       "at": "2026-10-30T23:47:32.228186+00:00"
     },
     "5613b149f456939e6515ca27d3c1aff818af8f0167d9fd5d9283adc3eb8a6703": {
@@ -11941,15 +11977,15 @@
       "at": "2026-10-31T05:42:51.011124+00:00"
     },
     "f787a627a084de12e2162f60eb9688f8553fb9a7085ad1043b1d5ad0e03c0457": {
-      "fingerprint": "cca424b85aad93fece2fc9b49d8e3d057e94e6eea79c7333e406ee1a3ca1ce16",
+      "fingerprint": "1b8036705e8fc5a352b4b6935739bf8adb436b8c8ae13f009eb5587a2b7e3989",
       "at": "2026-10-31T05:42:51.011124+00:00"
     },
     "d1c005c14aeb399434986c2b479fcbc2c97f5dc230dd7a2de6f6c6c7c9e1abee": {
-      "fingerprint": "74e9bc3affe897bd099238ac5ee58818279c27be8fe1671854f43817bad13251",
+      "fingerprint": "8ff75ff135e23705519e9d4cc3972e660358e9e88b63a29501cadd2caad57286",
       "at": "2026-10-31T05:42:51.011124+00:00"
     },
     "2aeb64a73cfbd8c5bbdc042d58d7cee80d017e6e8bbc66b914bbcc71abd3cfde": {
-      "fingerprint": "47f795a3ac2535c0bb8cbb3f2665d5b8e51493471b3713d073235cbf2e3b306e",
+      "fingerprint": "b2b68a4612dd0622d4af33cd121df34f48e73b74255947857b9a898a29c9c635",
       "at": "2026-10-31T05:42:51.011124+00:00"
     },
     "ae409a94e4c584538c2ceea322b8ff571650ec5196c1392841333df0fc9213e1": {
@@ -12009,15 +12045,15 @@
       "at": "2026-10-31T05:42:51.011124+00:00"
     },
     "a6d463b41bcdc4d5d8e6979a9937a3c0199f5744e2cbdd3b2e9ac476efb901f1": {
-      "fingerprint": "dc4746b7fde6ff57faea50f95bd9f80439cbdcfb16f32fb064ac2d8ae017f4c3",
+      "fingerprint": "b9f96a955480e77b17d9ae97db16330e9bc415bbefd65923f79d5a081e6fc95b",
       "at": "2026-10-31T05:42:51.011124+00:00"
     },
     "adf3ef2c20cc3d8bb116f1046f493115c743b48365ae47e1766b2c772526e9e9": {
-      "fingerprint": "8b1417e0d436489ecc61aa479338d527078b4898c51ea93bbfc099f7a990120e",
+      "fingerprint": "799a4c36b57a2249172c406031c7fe5344268673c9c7f646f25c56881e5aa783",
       "at": "2026-10-31T05:42:51.011124+00:00"
     },
     "d001f71e8eed95b0f8715a3502bff5b138c6374bcf5458e2279d4fb0da597aff": {
-      "fingerprint": "8f7b92a3c4bdf3360ba3ece8b7a2d7c053af55a914280e67f1f6730cd3e69c31",
+      "fingerprint": "f0f20d452ffe1908e1eef5c06a69cc9b97bef25fd8bdf006fde67db2a0e27f57",
       "at": "2026-10-31T05:42:51.011124+00:00"
     },
     "967fda4e89e409a48cda3599a93b8ec74c53c3ccd61526194d1a521ebbc432aa": {
@@ -12505,7 +12541,7 @@
       "at": "2026-10-31T12:30:39.818148+00:00"
     },
     "7c4c225c9454c8afbebef7a59b2ced31796ce41b6cb4b6ebd9bb63f1af811421": {
-      "fingerprint": "cf18c1123df48a125ad6856135b2c7ab3b9d345fed09ffc0fe546af4f5ddb1f2",
+      "fingerprint": "b1c42e2cc55bc634b327cf69e9915a5dd6d7a8c8984df5ec5f12586ce94aa90b",
       "at": "2026-10-31T12:30:39.818148+00:00"
     },
     "2d7d9cbac23ef3642fea392056330c14b55054598f49da597d9fa085d185ac0a": {
@@ -12537,7 +12573,7 @@
       "at": "2026-10-31T12:30:39.818148+00:00"
     },
     "19b78a56026d93ffb5d718c78c81d68008da0a5bc33bb820510ce8f673e25995": {
-      "fingerprint": "0046f47318ba29b1ad92ec3a1da4abffb8b64e05a6083a474a0cae4aa5f1466c",
+      "fingerprint": "12e4b4e9e3c8c4ec5283919f8269ddd0551f84777d216c8ce708023245073573",
       "at": "2026-10-31T12:30:39.818148+00:00"
     },
     "c739d7fc55d0f3c95b551996d338ad92e4a0a8b9089e590bac47a5e59c44229b": {
@@ -12581,7 +12617,7 @@
       "at": "2026-10-31T12:30:39.818148+00:00"
     },
     "f268ca9f4f97b1cf3b4897d69171fea16daa23bcf2991fda7854ab422c060bc8": {
-      "fingerprint": "32a3ec21b2d4840d30f2a7b573a0e71a74d392830920235719403ebed5ece0cc",
+      "fingerprint": "0874aba1e31939efe891dd68c7037d2f28ba9796f2b7415ff951ca2fb3e3c58c",
       "at": "2026-10-31T12:30:39.818148+00:00"
     },
     "94b1af7b3b573360d396ea8c838591c1b537ec49529a3e7b3680e106925e1513": {
@@ -12733,7 +12769,7 @@
       "at": "2026-10-31T17:44:20.070369+00:00"
     },
     "761af87df31fcb286d7024bb68e078024728bd4e7e17f76994fc11c610a1c6f8": {
-      "fingerprint": "72593418c3132eaec9c123bfb9477a6ebbb12fd19145dd203a94ea0b8935dc6c",
+      "fingerprint": "f526b68e7c9f776c8cb2d168318765228f4631844840bcb3ab54114b104efd76",
       "at": "2026-10-31T17:44:20.070369+00:00"
     },
     "695c98de83b33bebbdcaf68c4e05a2dc110cd8ed92bf983c73cc87b37801fd68": {
@@ -12761,15 +12797,15 @@
       "at": "2026-10-31T17:44:20.070369+00:00"
     },
     "2df23cbf729a79db4a488ff00e4207a7452e33cd398eeac0fb964738dbf63d22": {
-      "fingerprint": "1947fabfbe2ebf33b8a72e92022125ffb9fa841d25fcd4fa4fbe305213ee61e8",
+      "fingerprint": "9aec95d365f4a9b916a4ccdea75a7659fcceddb1239096e837b018a34e17b7d6",
       "at": "2026-10-31T17:44:20.070369+00:00"
     },
     "91da7118fbdc4ed926a0bd20a8764da6df61cf43bf4695d0e5d1e8b06967f5d8": {
-      "fingerprint": "d5c02b5c4ad536dbab27e3b7fe1bb728cabf76a589a9022ee81f358e041b4b03",
+      "fingerprint": "66d861dd9f892cd40fb4425558117771ac09b39a35e75200a6bcf0bcfd695553",
       "at": "2026-10-31T17:44:20.070369+00:00"
     },
     "6d1c61d3036cde4da72409d8af301361f3cdbcc295cb83f749118b05fae96a33": {
-      "fingerprint": "ba05afce6a8820796908895bb6de81836797797f0bb1ff1d5764236e723e2867",
+      "fingerprint": "efdfa95ce1442866dd2dbb2f3a50fc5823c56391efa8a252ec3377b355b205d1",
       "at": "2026-10-31T17:44:20.070369+00:00"
     },
     "dc6eb91cef4701784815ef3509627490ed2762b5650d85a59d6b6b9082cd1854": {
@@ -13625,7 +13661,7 @@
       "at": "2026-11-01T01:10:54.792068+00:00"
     },
     "940b40128777bc7ee4d81df852b9534969fa193cf4efeaf6673bb7c2baeef0a9": {
-      "fingerprint": "336e5b9ba53201099e945d8457e7bf7b9246d9f3a2c9be8f772365bae3904c33",
+      "fingerprint": "13a3bf172825b8a01c3eaeeb69ad47c74988389b561cab184986af8cbf59292c",
       "at": "2026-11-01T01:10:54.792068+00:00"
     },
     "6f3e80d8693a56032448000f7dfd8131b61a5f1f044e2d2f17c1514600fbe7ed": {
@@ -13641,7 +13677,7 @@
       "at": "2026-11-01T01:10:54.792068+00:00"
     },
     "7266b9404f50ea8e64977ee33adeb8e2bf1c6c3f2d0f3c05a4277d7ec5d5c32a": {
-      "fingerprint": "7bcbe35fc40f03d7fd909630952f02c72f56f53233b7a0c2172fcc0d02cb60f9",
+      "fingerprint": "3a0c75e3adac8fd990020496dffa69560181b781a8379689cc197e942f34e51b",
       "at": "2026-11-01T01:10:54.792068+00:00"
     },
     "c7b28b419476aa607362fb9257bd626026dcdd9949ce6f6abfb530051bb5fbf8": {
@@ -13653,11 +13689,11 @@
       "at": "2026-11-01T01:10:54.792068+00:00"
     },
     "abef4826b7f288ba9d57aeba7738f87ab410d958611b8d43c939b8cd44f0dc09": {
-      "fingerprint": "941e308a8730d150f6091922a14db235af9426a598aea268e3811fb5a52700a5",
+      "fingerprint": "54831388bbc4256e9ad6dbb1e94e06ec474f8f694f525e07d57df9b320df78a2",
       "at": "2026-11-01T01:10:54.792068+00:00"
     },
     "7f6e5836e0668ba2c4d8fa320fd28c530ba9ffd317a375604e375b47e5cac238": {
-      "fingerprint": "8063d8333ca89d9236c2ad80e1546667eafbdbba0a59e888509ef3bbd208719f",
+      "fingerprint": "52c165ddead2faec5a6905c9c9f4b925380166666f5feeebad39afdd7b390c94",
       "at": "2026-11-01T01:10:54.792068+00:00"
     },
     "17e53fce7240ffbfc6f8d91d0f737452e08f076365db54b83f0aa207e0402ff7": {
@@ -13813,7 +13849,7 @@
       "at": "2026-11-01T01:10:54.792068+00:00"
     },
     "1617801e048706dcc49260dba455e3f42a0a0deb47e5a81548b76ad7326c26de": {
-      "fingerprint": "3658478c8584df8c7e1939f9634232ccb1cb50dac71dc30f0fa856fb2d19a17d",
+      "fingerprint": "e167640533519dad19d6bc699bc588e5520225266866a134432f8ba556be7335",
       "at": "2026-11-01T15:10:10.649851+00:00"
     },
     "c58fc0d7804f592ebd2c49fd7578e9c7c2dc0a3acf2b7fe700929333fabda90c": {
@@ -14321,15 +14357,15 @@
       "at": "2026-11-01T07:33:42.531608+00:00"
     },
     "79f209fc42ca27b4e03c96071ae759554b3a76fbe323da534b56f2fa18163122": {
-      "fingerprint": "91cb19d814f7f246da6d5d2e619562d9457e8a364709eef91769c8e3059f968c",
+      "fingerprint": "ffad3aa17f63aabca107ccb5a9070b86a445eaa478cb0d9f3b8bb45227e4a47c",
       "at": "2026-11-01T07:33:42.531608+00:00"
     },
     "5370a8e73a903e644fbfb21da54676c93c6fab681a44e038a93b3e1375940781": {
-      "fingerprint": "e6a879bd3472d2c10f5cb28afd1eacceedd70743e91ae69e039bcaa07c4b9c49",
+      "fingerprint": "478777966d3f053601fa6a5a4d8c255bcd6fbd9630cf898a1ad1f450aef75ee6",
       "at": "2026-11-01T07:33:42.531608+00:00"
     },
     "a19f93dea77a2bf28917dd3629c82c13f93ba253a8fb26f954ee03a8bc78cfd6": {
-      "fingerprint": "a11ad9385fb81211b8c1f37b318528b9363807739dacc0cf45f4b0986339eb10",
+      "fingerprint": "8646cc38e4a0a0137e2b58590589a89f0588708153e19bfb3c6b8c305a7800b7",
       "at": "2026-11-01T07:33:42.531608+00:00"
     },
     "726bf9aef694d4ac04bd95c4c1babeb921805a5dd579583e076c2f5622616e20": {
@@ -14385,7 +14421,7 @@
       "at": "2026-11-01T07:33:42.531608+00:00"
     },
     "56c57b416803ff8ea0e920f3a3527a46bf4a8b5eaf81c8b268595efaf44258de": {
-      "fingerprint": "2c36b6ab8e0f118e1523c420c39dce5e0988730efd7be8219521c71905cfd79a",
+      "fingerprint": "2a61f42f1ad0da8a4c26fa084e0a5328a7a4dd7f90bf143216c60d106a10bff2",
       "at": "2026-11-01T07:33:42.531608+00:00"
     },
     "75467f0eb27aa87162e6b87b33f5026e746c2e875e684acff0b4af731eab8b46": {
@@ -14401,7 +14437,7 @@
       "at": "2026-11-01T07:33:42.531608+00:00"
     },
     "45ca53b560944c45adf50d39e7d7c12227c13d41610c96f1805c681288eedf8b": {
-      "fingerprint": "289eaa3abafdc7242c4b83120e53637cbc10119992e88df614c7b879e132a011",
+      "fingerprint": "cf0cc612f935530816401b17f71ee26a8497b7a9eb49cbc0a7b49aa2942baf51",
       "at": "2026-11-01T07:33:42.531608+00:00"
     },
     "95019ef3c312d8217eb096493f5f4cabaa10259b4d14cb16827efdd7a2726318": {
@@ -15149,7 +15185,7 @@
       "at": "2026-11-01T15:10:10.649851+00:00"
     },
     "f13d49b702f649bf7996525f12024b16562604cb9486a0c7790f6338b1dc95e9": {
-      "fingerprint": "0ee120a802cd025130d68231a8a5334ebe5821bf3d0d06680adb1148e42d8d1d",
+      "fingerprint": "99c38b9007da692703417703c61fd80bd649cb4cdade7c1c4704f21c7a0bccdc",
       "at": "2026-11-01T15:10:10.649851+00:00"
     },
     "72508f3a707c88fecaa5e7f1bfba2414fa45a0d7e58c5c33c32e7034937542f7": {
@@ -15409,7 +15445,7 @@
       "at": "2026-11-01T19:41:54.181942+00:00"
     },
     "8ddc1ca748a9b25c7d8d405767f5f2ff07a2ee6cfacac21bbfaf98515c8c1732": {
-      "fingerprint": "9279d4d08d72e3c7276478079b1221db94e0c3559e10e4a489e89d2186918711",
+      "fingerprint": "8cb14dac5ea005cb2ef8d6f996d7f9d5c7a7de485693db951cdd141dad1b5ad3",
       "at": "2026-11-01T19:41:54.181942+00:00"
     },
     "bb3eac74eea39fcd3285a1a701598b9aadfd4e1d54277c2592477871e9f9da5f": {
@@ -15417,7 +15453,7 @@
       "at": "2026-11-01T19:41:54.181942+00:00"
     },
     "7fa56b09550bdd46a9aa97eab3302f6cbcbf65b9d5ce0dadbaed942a7f48d17b": {
-      "fingerprint": "120299d68b5fb1e9110437abfd587869ce11532dc9651ee471e65ff35beb716a",
+      "fingerprint": "8907f994333505bae06f674b0842769751f96d71151354cd682743677fc4d2d1",
       "at": "2026-11-01T19:41:54.181942+00:00"
     },
     "f60b0d584f516df482bcfe6d607e5207ee914a0427d37ef088b0a4fc9a8174a6": {
@@ -15717,7 +15753,7 @@
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "ad3de1fff4a6f9c40a5effb6c0ba0f97ef6fc2bcf122fd59c6d9a6b97ab819f8": {
-      "fingerprint": "697551345c4f82997c2b73b2db3f94bb05ee6daae082ef145f545bdcaf2b70ac",
+      "fingerprint": "9fc53ae3458340e591f35c746c9c95f13eb6230bb671802f8b78f0b1290a9dcf",
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "2de7275a7ac2572305393513ff3f5904b4959b3782852b7a073febf6c0dbfeb8": {
@@ -15977,7 +16013,7 @@
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "d10e607d4ba36e264597dd072d595feb21f354f403ba823054013d7ce7eb53b9": {
-      "fingerprint": "c8ab644ebbd55111feaeb89ac57a0517c1090f57b517463331648e586cfe5fbc",
+      "fingerprint": "3f831386a2a7928087b978f7c3256fd46d1bd3a2c08e89ee50f31620d74c862e",
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "07bbbd2add1bc87477e465dd8590d85541cddc4504afc221b4082af572003100": {
@@ -15989,7 +16025,7 @@
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "7554498bfe2fafecba4d0469471814194f5ab7503ba52528f9ca85a072eeb104": {
-      "fingerprint": "16e547bce989fc4fd85ddc872ae544b8678554930f66e95a428f19f7b3d081f8",
+      "fingerprint": "3bacae96082d8eb7d1cd3a5ac05ce8517d5551b4e4ef67c8117790bdaddf5dc2",
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "aad4355cf9a1dc73f5690dfe8bb48baa361c5f6535eb98dec752acbc7fb2456f": {
@@ -16013,7 +16049,7 @@
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "5589e83faf171412900c1d7ca94350e565a0bc94d913680ce07db244992adc9d": {
-      "fingerprint": "a3bb64d4cfb266cc0a87b66e2973ecdb72fc0c7d7f54414b58e66214f12f0820",
+      "fingerprint": "22590f47ff749a528451eb6c1b7deeecf25f1a012e0bbcf00283547e378b246b",
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "c507f0d808a8a6cff6f76d2374a2f168439e59f9cf0c3c733f4a5a873e30fba3": {
@@ -16021,7 +16057,7 @@
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "2721b283fcac1d7d46ec250fc9276a025d704949883bbfe8d67dba237e5fd0c3": {
-      "fingerprint": "06eb4a4df80dbcbd1a263fc68fa03c500f86312278a7260fefbe6431e77c1698",
+      "fingerprint": "397c3b6602ff81ccd6828adb070b2ee9a962a37cd8c0afe6c7056319374bb408",
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "511d7b56d0ddfa6a612976b166ffeb0d0a97c677849d27ce081442fc844693b3": {
@@ -16053,7 +16089,7 @@
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "fbd51ad5d6dd932bca9ce71084cff7b033a7193d181c34019c206bc00465bfde": {
-      "fingerprint": "5099b1ee7750e8aa13f1bf06642b1f3b303ea1a0c70fe791f51b016b82a06c1a",
+      "fingerprint": "97fdd5a7e333062c16823ddd33c1013da63337bf2b967ab4100a9797b0069f0b",
       "at": "2026-11-01T23:36:53.887701+00:00"
     },
     "393afddce7ba9f8dd427111a0f1cbc96e0b155e8c67ee3bee32ec362edf33cd0": {
@@ -16877,7 +16913,7 @@
       "at": "2026-11-02T06:04:15.269180+00:00"
     },
     "839685e6ac7e905a84239d7f92bcf6e53b2f34a8dc2513a50abb2f883ff1f787": {
-      "fingerprint": "0518c9c4adfff670d505b5fae49f08baf017097fec9233f5f75330f7c716a817",
+      "fingerprint": "60a9ce8e7721a71e1a5b8b6230aeddfaf37b2f34ab59d7a40c6b7dfa30279d1f",
       "at": "2026-11-02T06:04:15.269180+00:00"
     },
     "c64a573f9717ba45bd4e790acbe4bdae486b5a798705d1de9db770b97379b008": {
@@ -16893,7 +16929,7 @@
       "at": "2026-11-02T06:04:15.269180+00:00"
     },
     "ed5e47457681124c7483c4d901902af68358e71ef74a96c291fd46718c403668": {
-      "fingerprint": "0a2def9c568806bf53772c6047688eb75b366aa7bfee8fd16d2ca43a382db081",
+      "fingerprint": "ef82ded92788f8eb9b99a4b8dc6ed02f9cac9df2b348295c3839c3973df2ef23",
       "at": "2026-11-02T06:04:15.269180+00:00"
     },
     "fc821b1fb2681099efe16bf044e7c1fe29624f467ef259323b4d84112c52ec4d": {
@@ -16917,7 +16953,7 @@
       "at": "2026-11-02T06:04:15.269180+00:00"
     },
     "6d4797f17689e643b70a094ecc4d46d580e1c4e54f985330c792e5031de6a6d8": {
-      "fingerprint": "5b8d9be30973946d6f1533c7bf92391eaa345fb6d668af1c1e71338cea9d0b84",
+      "fingerprint": "57d9503a7f977fedf9fd84e5743c86c4156c752e827181a1339df4c1beadaec0",
       "at": "2026-11-02T06:04:15.269180+00:00"
     },
     "3ffdb9331d7bf7f8218a6f2b5bd4d556e52dd5b6f39dc75d5d02dcded7b508f2": {
@@ -16933,7 +16969,7 @@
       "at": "2026-11-02T06:04:15.269180+00:00"
     },
     "1002e4acf6b43897e7b26274479af2d0f26640fedcbaeb4bb612cd3065551120": {
-      "fingerprint": "4171f397aebe1ff9f6de7819dce567531b1d5d5737c10f4b6b42c1a4ccd6667a",
+      "fingerprint": "7c0d29d39325434090bb4f5d688951c4c07b24484908f0534df47053e56607e3",
       "at": "2026-11-02T06:04:15.269180+00:00"
     },
     "49111da628bb71776c54b3e7a38a6b7abeff94d12fb9ecb04627c14ce9fee726": {

@@ -97,7 +97,7 @@ def pick_candidates(reports: list[dict], state: dict, now: datetime, limit: int 
             posted = state['articles'].get(core.url_key(item['url']))
             if posted and not substantive(posted, item):
                 continue
-            candidate = dict(item, source_id=source['id'], source_name=source['name'], group=source['group'],
+            candidate = dict(item, source_id=source['id'], source_name=source['name'], group=item.get('group', source['group']),
                 summary_mode=source.get('summary_mode', 'link_only'), homepage=source['homepage'],
                 license_url=source.get('license_url'), source_kind=source.get('kind', 'news'),
                 score=priority(item, source, now))
@@ -136,6 +136,8 @@ def render_group(items: list[dict], group: str, now: datetime) -> str:
     group_url = root_url + '뉴스_news/' + GROUP_PATHS[group]
     lines = ['# ' + title, '', '갱신: ' + now.astimezone(core.KST).strftime('%Y-%m-%d %H:%M') + ' KST', '',
         f'[뉴스](<{root_url}뉴스_news>) · [날짜별 뉴스](<{group_url}/날짜별>)', '']
+    if not items:
+        lines += ['이 날짜의 기사 목록이 비어 있습니다.', '']
     main = [a for a in items if a.get('summary_mode') != 'link_only']
     links = [a for a in items if a.get('summary_mode') == 'link_only']
     for item in sorted(main, key=lambda i: (i['score'], i['seen_at']), reverse=True):
@@ -173,6 +175,22 @@ def run(config: dict, state_path: Path, news_root: Path, now: datetime, translat
     if not any(r['state'] in ('ok', 'unchanged', 'no_recent_items') for r in reports):
         raise RuntimeError('모든 피드 확인에 실패해 이전 뉴스를 유지합니다.')
     candidates = pick_candidates(reports, state, now, config.get('new_items_per_group', 10))
+    day = now.astimezone(core.KST).date().isoformat()
+    changed_groups, reclassified = set(), 0
+    for report in reports:
+        for item in report['items']:
+            previous = state['articles'].get(core.url_key(item['url']))
+            group = item.get('group')
+            # 같은 출처의 명시적 분류 정정은 당일 항목을 옮기되 새 기사로 세지 않습니다.
+            # 이전 날짜 보관본과 기사 내용·수집 시각·후속 이력은 보존합니다.
+            if (previous and previous.get('day') == day
+                    and previous.get('source_id') == report['source']['id']
+                    and item.get('classification_basis') and group in GROUP_PATHS
+                    and previous['group'] != group and not substantive(previous, item)):
+                changed_groups.update((previous['group'], group))
+                previous.update(group=group, classification_basis=item['classification_basis'])
+                reclassified += 1
+    result['reclassified_articles'] = reclassified
     before_metadata = json.dumps([state.get('observed', {}), state['feeds']], sort_keys=True)
     observed = state.setdefault('observed', {})
     for report in reports:
@@ -188,25 +206,28 @@ def run(config: dict, state_path: Path, news_root: Path, now: datetime, translat
                 observed[key] = {'fingerprint': value, 'at': now.isoformat()}
     state['observed'] = {k: v for k, v in observed.items() if datetime.fromisoformat(v['at']) >= now - timedelta(days=3)}
     metadata_changed = before_metadata != json.dumps([state['observed'], state['feeds']], sort_keys=True)
-    if not candidates:
+    if not candidates and not changed_groups:
         result['new_articles'] = result['updated_articles'] = 0
         if metadata_changed:
             save_state(state_path, state)
         return result
-    day = now.astimezone(core.KST).date()
     for item in candidates:
-        item['day'] = day.isoformat()
+        previous = state['articles'].get(item['key'])
+        if previous and previous.get('day') == day:
+            changed_groups.add(previous['group'])
+        changed_groups.add(item['group'])
+        item['day'] = day
         state['articles'][item['key']] = item
     for report in reports:
         if report.get('conditional'):
             state['feeds'][report['source']['id']] = report['conditional']
     # 이전 날짜는 보존하고 당일에는 새 기사와 같은 URL의 실질적인 변경만 반영합니다.
     for group, folder in GROUP_PATHS.items():
-        if not any(a['group'] == group for a in candidates):
+        if group not in changed_groups:
             continue
-        todays = [a for a in state['articles'].values() if a['group'] == group and a['day'] == day.isoformat()]
-        if todays:
-            publish_bundle(news_root / folder / 'README.md', render_group(todays, group, now), now)
+        todays = [a for a in state['articles'].values() if a['group'] == group and a['day'] == day]
+        # 마지막 기사가 다른 분야로 옮겨지면 이전 분야의 당일 목록도 비웁니다.
+        publish_bundle(news_root / folder / 'README.md', render_group(todays, group, now), now)
     # 제목과 짧은 표시 내용만 유지하며 원문 본문이나 RSS 전체는 저장하지 않습니다.
     state['articles'] = {k: a for k, a in state['articles'].items() if datetime.fromisoformat(a['seen_at']) >= now - timedelta(days=14)}
     save_state(state_path, state)

@@ -96,21 +96,9 @@
 
 ## \[심층기획: 북한 대중 수출 구조 분석 ①\] ‘가발·텅스텐’ 특정 품목에 지나친 의존… 저부가가치의 덫에 빠질 수도
 
-> 북한의 대중국 수출 구조가 크게 바뀌고 있다. 10년 전 북한의 전체 대중 수출에서 절반 가까이를 차지했던 석탄과 철광석은 대북 제재 이후 공식 무역통계에서 사실상 자취를 감췄다.
+> 북한의 대중국 수출 구조가 크게 바뀌고 있다.
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/01/north-korea-export-shift/>) · 2026-11-02 06:00 KST · 작성·제공: 서울-김태이 kimt@rfa.org
-
-## 북한, 집속탄두 위력시험…한국 합참 “발사 전부터 동향 추적”
-
-> 북한이 전술탄도미사일에 탑재하는 집속탄두의 위력시험을 실시하고, 축구장 18개에 해당하는 면적을 초토화할 수 있다고 주장했습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8217465.html>) · 2026-11-01 23:42 KST · 작성·제공: voadigital@voanews.com \(조은정\)
-
-## 한국군, 국방드론본부 창설. “드론 군사 활용 확대, 드론 위협 대응 역량 강화”
-
-> 한국 국방부가 2일 기존 드론작전사령부를 대체하는 국방드론본부를 창설했습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korean-peninsula-11-02-26/8217709.html>) · 2026-11-02 14:35 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
 
 ## ‘북한 집속탄 무력 시위’ 미공개한 합참 “사전포착해 감시∙추적”
 
@@ -118,19 +106,41 @@
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/02/north-korea-missile/>) · 2026-11-02 13:03 KST · 작성·제공: 서울-목용재 moky@rfa.org
 
-## 트럼프 “바이낸스 해킹, 북한 소행 확인되면 대화할 것”
-
-> 도널드 트럼프 미국 대통령은 31일 세계 최대 가상화폐 거래소 바이낸스 해킹 사건이 북한 소행으로 확인되면 북한과 직접 논의하겠다고 말했습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8217503.html>) · 2026-11-02 02:22 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
 ## 루비오 "트럼프, 북한과 대화 열려 있어…예정된 회동은 없어"
 
 후속 내용이 반영된 기사입니다.
 
-> 마코 루비오 미국 국무장관은 31일, 애틀랜타에서 열린 주요 20개국\(G20\) 외교장관 회의에서 VOA의 질문에 답하며 트럼프 행정부의 외교 정책 우선 순위를 설명하고 주요 국제 현안에 대한 입장을 밝혔습니다.
+> 마코 루비오 미국 국무장관은 31일, 애틀랜타에서 열린 주요 20개국\(G20\) 외교장관 회의에서 VOA의 질문에 답하며 트럼프 행정부의 외교 정책 우선 순위를 설명하고 주요 국제 현안에 대한…
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8217337.html>) · 2026-11-01 09:21 KST
+
+## "찾았다" 틱톡에 수상한 영상…대형 참사 막았다
+
+
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008826099&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-02 13:57 KST · 작성·제공: jwlee@sbs.co.kr \(이재원\)
+
+## 중간선거 뒤 헤그세스 압박 커지나…美 민주당, 탄핵·조사 예고
+
+> 도널드 트럼프 미국 대통령의 최측근인 피트 헤그세스 전쟁부\(국방부\) 장관이 미 중간선거 뒤 의회의 탄핵안 표결과 조사 같은 다양한 압박에 직면할 것이라고 워싱턴포스트\(WP\)가 1일\(현지 시간\) 전했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261102/134950419/1>) · 2026-11-02 15:00 KST
+
+## 트럼프 "한중일행 선박 위한 가스관 있다"…또 알래스카 거론
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008826375&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-02 14:25 KST · 작성·제공: youngah@sbs.co.kr \(김영아\)
+
+## 과일 썰다가 발톱에 '쓱쓱'…태국여행 중 충격 장면
+
+> 외국여행 가서 노점 음식 즐겨드시는 분들은 충격적일 수 있는 소식인데요.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008825385&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-02 08:06 KST · 작성·제공: hkk@sbs.co.kr \(고희경 기자\)
+
+## "배후는 북한"…8조 원 빠져나가는데 '속수무책'
+
+> 미 연방수사국 FBI가 세계 최대 가상자산 거래소 '바이낸스'에서 벌어진 천문학적인 액수의 해킹 사건이 북한의 소행이라고 지목했습…
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008825245&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-01 22:50 KST · 작성·제공: minpyo@sbs.co.kr \(김민표\)
 
 ## 다른 매체의 원문
 
