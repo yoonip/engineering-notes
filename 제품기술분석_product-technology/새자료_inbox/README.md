@@ -1,10 +1,24 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-02 01:17 KST
+반영: 2026-11-02 17:07 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## 플래너리 세션부터 Build-a-Claw까지: NVIDIA AI Day Seoul 2026 미리보기
+
+> 11월 9–10일 코엑스에서 열리는 이번 행사에서는 NVIDIA 리더들의 플래너리 세션과 한국 대표 기업이 함께하는 15개 브레이크아웃…
+
+출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview/>) · RSS·Atom 발행 시각: 2026-11-02 14:37 KST
+
+RSS·Atom 표기 작성자: NVIDIA Korea
+
+가져온 시각: 2026-11-02 17:08:18 KST
+
+수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
+
+개요: 공식 한국어 소개 발췌
 
 ## 안전하고 믿을 수 있는 AI를 위한 신뢰 기반 인프라 구축
 
