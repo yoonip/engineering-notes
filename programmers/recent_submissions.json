@@ -2799,12 +2799,13 @@
       "directory": "Python/level0/extra_120887_k의_개수",
       "readme": "Python/level0/extra_120887_k의_개수/README.md",
       "solution": "Python/level0/extra_120887_k의_개수/solution.py",
-      "solution_sha256": "f79d5a13de6beb13c1c820bf96435b78541b0b7cabb7e14ad378a02051ecab40",
+      "solution_sha256": "847a8c88a731c7f54f64209fc1c4d961a06653baaf6666891a4badfff3ec293b",
       "original_local_grade": 100,
       "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120887",
       "comments_submitted": true,
       "locked_template": false,
-      "documentation": "commented_submission"
+      "documentation": "commented_submission",
+      "saved_annotation_source_sha256": "f79d5a13de6beb13c1c820bf96435b78541b0b7cabb7e14ad378a02051ecab40"
     },
     {
       "id": 120886,
@@ -3039,12 +3040,13 @@
       "directory": "Python/level0/extra_120862_최댓값_만들기_(2)",
       "readme": "Python/level0/extra_120862_최댓값_만들기_(2)/README.md",
       "solution": "Python/level0/extra_120862_최댓값_만들기_(2)/solution.py",
-      "solution_sha256": "f98775c3679d2e7db7f127ec8d506dc9496f9c7f5e515e38a74fb2fe85cfe4c1",
+      "solution_sha256": "2d51d218ee90d8f87b1810bf9d31264291420645169af8d365f15c094bee04b2",
       "original_local_grade": 100,
       "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120862",
       "comments_submitted": true,
       "locked_template": false,
-      "documentation": "commented_submission"
+      "documentation": "commented_submission",
+      "saved_annotation_source_sha256": "f98775c3679d2e7db7f127ec8d506dc9496f9c7f5e515e38a74fb2fe85cfe4c1"
     },
     {
       "id": 120861,
@@ -3339,12 +3341,13 @@
       "directory": "Python/level0/extra_120837_개미_군단",
       "readme": "Python/level0/extra_120837_개미_군단/README.md",
       "solution": "Python/level0/extra_120837_개미_군단/solution.py",
-      "solution_sha256": "9e9aa6e4f6282dff867ef716711401b57061ad0d7bfb8322cf729f5d553d5d92",
+      "solution_sha256": "d3fa5bc255ff0d4a8e4ccb442938def0d472ecb8dad09abac6c6a0724e597516",
       "original_local_grade": 100,
       "official_url": "https://school.programmers.co.kr/learn/courses/30/lessons/120837",
       "comments_submitted": true,
       "locked_template": false,
-      "documentation": "commented_submission"
+      "documentation": "commented_submission",
+      "saved_annotation_source_sha256": "9e9aa6e4f6282dff867ef716711401b57061ad0d7bfb8322cf729f5d553d5d92"
     },
     {
       "id": 120836,
@@ -4156,5 +4159,7 @@
       "locked_template": false,
       "documentation": "commented_submission"
     }
-  ]
+  ],
+  "source_hashes_updated_on": "2026-11-02",
+  "source_hash_scope": "Current annotated archive files; saved hashes and grading records retain their original dates and values. This is not a new judge submission."
 }

@@ -95,7 +95,7 @@
       "directory": "Python/level1/extra_340213_[PCCP_기출문제]_1번___동영상_재생기",
       "readme": "Python/level1/extra_340213_[PCCP_기출문제]_1번___동영상_재생기/README.md",
       "solution": "Python/level1/extra_340213_[PCCP_기출문제]_1번___동영상_재생기/solution.py",
-      "solution_sha256": "3c41229ff4f06a9f34427f41575ff4c9d8cfa735eec400f5748e30b7f995cce0",
+      "solution_sha256": "36c30bc4e84638b6f96a1bcb43328bea093a2207e7332d1baa449674748ca2ec",
       "original": "Python/level1/extra_340213_[PCCP_기출문제]_1번___동영상_재생기/submitted_original.py",
       "original_sha256": "deec248379a4acf9707c64c9b4b2e77f5f7ae6190cd4409d0b3561d47341b1eb",
       "original_local_grade": 100,
@@ -104,7 +104,8 @@
       "category": "구현 · 시간 변환",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-15 23:43:07"
+      "submitted_at": "2026-10-15 23:43:07",
+      "saved_annotation_source_sha256": "3c41229ff4f06a9f34427f41575ff4c9d8cfa735eec400f5748e30b7f995cce0"
     },
     {
       "id": 340207,
@@ -242,7 +243,7 @@
       "directory": "Python/level1/extra_258712_가장_많이_받은_선물",
       "readme": "Python/level1/extra_258712_가장_많이_받은_선물/README.md",
       "solution": "Python/level1/extra_258712_가장_많이_받은_선물/solution.py",
-      "solution_sha256": "9f4b2b2bfd4e1e62e7acf64c4c35f3c970d8f8604236b629ef0f96a8630bcdad",
+      "solution_sha256": "91dad48df1ad73f6625036d9f0a7c0c91c6883a83c7b393aaa09238459a35b85",
       "original": "Python/level1/extra_258712_가장_많이_받은_선물/submitted_original.py",
       "original_sha256": "3a23c39ef05f7f851633bc8031c75d87467b06bcd1fb741ad183fe7fc0a19202",
       "original_local_grade": 100,
@@ -251,7 +252,8 @@
       "category": "해시 · 2차원 집계",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-15 23:47:09"
+      "submitted_at": "2026-10-15 23:47:09",
+      "saved_annotation_source_sha256": "9f4b2b2bfd4e1e62e7acf64c4c35f3c970d8f8604236b629ef0f96a8630bcdad"
     },
     {
       "id": 250137,
@@ -305,7 +307,7 @@
       "directory": "Python/level1/extra_250121_[PCCE_기출문제]_10번___데이터_분석",
       "readme": "Python/level1/extra_250121_[PCCE_기출문제]_10번___데이터_분석/README.md",
       "solution": "Python/level1/extra_250121_[PCCE_기출문제]_10번___데이터_분석/solution.py",
-      "solution_sha256": "7ef75ad2d09d58fb98992f16a62c8e3787feb504dfc9e3553552e8abab25f4ea",
+      "solution_sha256": "ee1b21a9008e7d0fb206ae975b7425ecdbe7549451641e996acb12f28f8aff01",
       "original": "Python/level1/extra_250121_[PCCE_기출문제]_10번___데이터_분석/submitted_original.py",
       "original_sha256": "1da01d2de5b094ea86296f06d0f2dcfdb9434e85748df9cd203c942f30d9e2b7",
       "original_local_grade": 100,
@@ -314,7 +316,8 @@
       "category": "필터 · 정렬 · 딕셔너리",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-15 23:48:09"
+      "submitted_at": "2026-10-15 23:48:09",
+      "saved_annotation_source_sha256": "7ef75ad2d09d58fb98992f16a62c8e3787feb504dfc9e3553552e8abab25f4ea"
     },
     {
       "id": 178871,
@@ -326,7 +329,7 @@
       "directory": "Python/level1/extra_178871_달리기_경주",
       "readme": "Python/level1/extra_178871_달리기_경주/README.md",
       "solution": "Python/level1/extra_178871_달리기_경주/solution.py",
-      "solution_sha256": "2107edb84c21b95db05e8e73b3efb52b04fbd973913c9fe246bc96fc0493acc0",
+      "solution_sha256": "88d5c475e157196ff8fca8563a23122ee53f22149e708d2ff47e3880fc7a3f50",
       "original": "Python/level1/extra_178871_달리기_경주/submitted_original.py",
       "original_sha256": "79d443a23066c20ef4dc7f3aaa426e13f2c3f183295228afc6225b5d1edd5a8a",
       "original_local_grade": 100,
@@ -335,7 +338,8 @@
       "category": "해시 · 배열 갱신",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-15 23:55:02"
+      "submitted_at": "2026-10-15 23:55:02",
+      "saved_annotation_source_sha256": "2107edb84c21b95db05e8e73b3efb52b04fbd973913c9fe246bc96fc0493acc0"
     },
     {
       "id": 176963,
@@ -368,7 +372,7 @@
       "directory": "Python/level1/extra_172928_공원_산책",
       "readme": "Python/level1/extra_172928_공원_산책/README.md",
       "solution": "Python/level1/extra_172928_공원_산책/solution.py",
-      "solution_sha256": "3bc8e11d67bf1d662aa5b4853863204914db3ece967f88fc0027c1920a5970e7",
+      "solution_sha256": "b810efeb96a355f2b98f47a68a9e9bebac70c805434f93ef87214baa71eb3e0e",
       "original": "Python/level1/extra_172928_공원_산책/submitted_original.py",
       "original_sha256": "0e6f7654fa6ebc80ba5dfa32d3ea1ed14cfb64ae080b143bd484a9492b23977d",
       "original_local_grade": 100,
@@ -377,7 +381,8 @@
       "category": "구현 · 격자 시뮬레이션",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 00:16:17"
+      "submitted_at": "2026-10-16 00:16:17",
+      "saved_annotation_source_sha256": "3bc8e11d67bf1d662aa5b4853863204914db3ece967f88fc0027c1920a5970e7"
     },
     {
       "id": 161990,
@@ -389,7 +394,7 @@
       "directory": "Python/level1/extra_161990_바탕화면_정리",
       "readme": "Python/level1/extra_161990_바탕화면_정리/README.md",
       "solution": "Python/level1/extra_161990_바탕화면_정리/solution.py",
-      "solution_sha256": "7a30b9278920cca30a1adce893cf9bb49d04bc8593d3de70b5a49889cdf02760",
+      "solution_sha256": "14e2f560a5706648cdc9b166dec951dc2600f7cfd0442e2b1a7adacce5b2294e",
       "original": "Python/level1/extra_161990_바탕화면_정리/submitted_original.py",
       "original_sha256": "6434f3bbfb477b4e02e8367377613dd3e62f0be485307703553c809087b7ba0c",
       "original_local_grade": 100,
@@ -398,7 +403,8 @@
       "category": "구현 · 최솟값·최댓값",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 00:17:09"
+      "submitted_at": "2026-10-16 00:17:09",
+      "saved_annotation_source_sha256": "7a30b9278920cca30a1adce893cf9bb49d04bc8593d3de70b5a49889cdf02760"
     },
     {
       "id": 161989,
@@ -431,7 +437,7 @@
       "directory": "Python/level1/extra_160586_대충_만든_자판",
       "readme": "Python/level1/extra_160586_대충_만든_자판/README.md",
       "solution": "Python/level1/extra_160586_대충_만든_자판/solution.py",
-      "solution_sha256": "555290653e72804cb684f77ae2d5cfb6a1273f558b933702fabff756c3b9d631",
+      "solution_sha256": "12b07c6a23330816dc64a19213d847e2bc60d27c8dcc96f5753ff3d1b4ec8971",
       "original": "Python/level1/extra_160586_대충_만든_자판/submitted_original.py",
       "original_sha256": "bb4cae8eb1e73ff91da53192b24830e432df043fee2b774b6e1d711348eb1d24",
       "original_local_grade": 100,
@@ -440,7 +446,8 @@
       "category": "해시 · 최솟값 집계",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 00:18:08"
+      "submitted_at": "2026-10-16 00:18:08",
+      "saved_annotation_source_sha256": "555290653e72804cb684f77ae2d5cfb6a1273f558b933702fabff756c3b9d631"
     },
     {
       "id": 159994,
@@ -494,7 +501,7 @@
       "directory": "Python/level1/extra_150370_개인정보_수집_유효기간",
       "readme": "Python/level1/extra_150370_개인정보_수집_유효기간/README.md",
       "solution": "Python/level1/extra_150370_개인정보_수집_유효기간/solution.py",
-      "solution_sha256": "79bdf48d458140a78bd52df76ffa6a13934cf047231b4b9af6fec304e87637b3",
+      "solution_sha256": "4ce34658f465760aaffdb7e48b8ba65e884811c5cce5444a16cc9723c93f30fb",
       "original": "Python/level1/extra_150370_개인정보_수집_유효기간/submitted_original.py",
       "original_sha256": "544a868a274cf7c6b4850c9917f72183e20ffde8339882c38190e070c2540435",
       "original_local_grade": 100,
@@ -503,7 +510,8 @@
       "category": "날짜 계산 · 해시",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 00:21:54"
+      "submitted_at": "2026-10-16 00:21:54",
+      "saved_annotation_source_sha256": "79bdf48d458140a78bd52df76ffa6a13934cf047231b4b9af6fec304e87637b3"
     },
     {
       "id": 147355,
@@ -536,7 +544,7 @@
       "directory": "Python/level1/extra_142086_가장_가까운_같은_글자",
       "readme": "Python/level1/extra_142086_가장_가까운_같은_글자/README.md",
       "solution": "Python/level1/extra_142086_가장_가까운_같은_글자/solution.py",
-      "solution_sha256": "178fbe2433740cae24a1437cad04ef3bcca21450522dfa65188b331513d1690d",
+      "solution_sha256": "da26f2ddfff81892613d3ab5cba98a45d9398675ca6f80f6e14d7bc4023706b0",
       "original": "Python/level1/extra_142086_가장_가까운_같은_글자/submitted_original.py",
       "original_sha256": "4170c9f36750d7f4f5f9e7e0095e12639e8b63a11ca2f4d30897142f96f3f2d1",
       "original_local_grade": 100,
@@ -545,7 +553,8 @@
       "category": "해시 · 최근 위치",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 00:29:12"
+      "submitted_at": "2026-10-16 00:29:12",
+      "saved_annotation_source_sha256": "178fbe2433740cae24a1437cad04ef3bcca21450522dfa65188b331513d1690d"
     },
     {
       "id": 140108,
@@ -557,7 +566,7 @@
       "directory": "Python/level1/extra_140108_문자열_나누기",
       "readme": "Python/level1/extra_140108_문자열_나누기/README.md",
       "solution": "Python/level1/extra_140108_문자열_나누기/solution.py",
-      "solution_sha256": "33b1c8257d81c7df32464632b455ae6d5585adec51dad6fcaa9113b1fdeca073",
+      "solution_sha256": "56fdbbb7ef83260805890522fa6f8b72e311774b0e0255542811420e69a86438",
       "original": "Python/level1/extra_140108_문자열_나누기/submitted_original.py",
       "original_sha256": "cda7c162a416f53b0cfb20b55ce7c57547c8788b9acd0ceed02d1910f70b41db",
       "original_local_grade": 100,
@@ -566,7 +575,8 @@
       "category": "문자열 · 개수 비교",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 00:29:29"
+      "submitted_at": "2026-10-16 00:29:29",
+      "saved_annotation_source_sha256": "33b1c8257d81c7df32464632b455ae6d5585adec51dad6fcaa9113b1fdeca073"
     },
     {
       "id": 138477,
@@ -683,7 +693,7 @@
       "directory": "Python/level1/extra_133499_옹알이_(2)",
       "readme": "Python/level1/extra_133499_옹알이_(2)/README.md",
       "solution": "Python/level1/extra_133499_옹알이_(2)/solution.py",
-      "solution_sha256": "cf2048a6b96dbd4ccb2befd08db4c35a3d52ab6a6cde14509c721467b26ec9bc",
+      "solution_sha256": "7153981327511aec7e274416176e62ac04fc0a69f445b9549d0a0801cc9734b9",
       "original": "Python/level1/extra_133499_옹알이_(2)/submitted_original.py",
       "original_sha256": "68937d28dad646bb762b300e8b3bc760e6b8f8d60aec262b0eb0ba1ed4a3179c",
       "original_local_grade": 100,
@@ -692,7 +702,8 @@
       "category": "문자열 · 순차 파싱",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 00:55:08"
+      "submitted_at": "2026-10-16 00:55:08",
+      "saved_annotation_source_sha256": "cf2048a6b96dbd4ccb2befd08db4c35a3d52ab6a6cde14509c721467b26ec9bc"
     },
     {
       "id": 132267,
@@ -767,7 +778,7 @@
       "directory": "Python/level1/extra_118666_성격_유형_검사하기",
       "readme": "Python/level1/extra_118666_성격_유형_검사하기/README.md",
       "solution": "Python/level1/extra_118666_성격_유형_검사하기/solution.py",
-      "solution_sha256": "185a619dd20bd26b214fffae205f69f1495da1c5fa2336b64defc6404717c3ec",
+      "solution_sha256": "2c7ec3bb64ae58083398415fe66eda1a6b891b5c87b7d8e71469e1864a5b5f14",
       "original": "Python/level1/extra_118666_성격_유형_검사하기/submitted_original.py",
       "original_sha256": "742921c75e0f2b916a01f300a1c58e225fbd25a067f0d2a1adcb35c53f7b2189",
       "original_local_grade": 100,
@@ -776,7 +787,8 @@
       "category": "해시 · 점수 집계",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 01:04:54"
+      "submitted_at": "2026-10-16 01:04:54",
+      "saved_annotation_source_sha256": "185a619dd20bd26b214fffae205f69f1495da1c5fa2336b64defc6404717c3ec"
     },
     {
       "id": 92334,
@@ -788,7 +800,7 @@
       "directory": "Python/level1/extra_92334_신고_결과_받기",
       "readme": "Python/level1/extra_92334_신고_결과_받기/README.md",
       "solution": "Python/level1/extra_92334_신고_결과_받기/solution.py",
-      "solution_sha256": "d120931e86c8e6f73eb236eea15368701791b3f57d264eda78ccf10bd6cc1155",
+      "solution_sha256": "5156e007e06c773686c7f07b0355d5bc4927616b79f33da128f421ece22fdba7",
       "original": "Python/level1/extra_92334_신고_결과_받기/submitted_original.py",
       "original_sha256": "65836a6abbbf97f823fcbe4e9a6e45366e3e2e6d3dee6f1dcd920b8770e89bf9",
       "original_local_grade": 100,
@@ -797,7 +809,8 @@
       "category": "집합 · 해시 · 중복 제거",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 01:25:31"
+      "submitted_at": "2026-10-16 01:25:31",
+      "saved_annotation_source_sha256": "d120931e86c8e6f73eb236eea15368701791b3f57d264eda78ccf10bd6cc1155"
     },
     {
       "id": 87389,
@@ -893,7 +906,7 @@
       "directory": "Python/level1/extra_81301_숫자_문자열과_영단어",
       "readme": "Python/level1/extra_81301_숫자_문자열과_영단어/README.md",
       "solution": "Python/level1/extra_81301_숫자_문자열과_영단어/solution.py",
-      "solution_sha256": "aa685aad3677692b0ab1c67fa3a5c9e5294b167f01437e0ef6ac712a3ae75db6",
+      "solution_sha256": "07131728ce0b7f6d1c2ccb399206a8ac339daeb5d23692a4d7c15722d057fcd6",
       "original": "Python/level1/extra_81301_숫자_문자열과_영단어/submitted_original.py",
       "original_sha256": "73f02adf4e7618888a3dd59e2f50d7745a719d3d483ed54dabe679ab703fc267",
       "original_local_grade": 100,
@@ -902,7 +915,8 @@
       "category": "문자열 · 치환",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 01:49:02"
+      "submitted_at": "2026-10-16 01:49:02",
+      "saved_annotation_source_sha256": "aa685aad3677692b0ab1c67fa3a5c9e5294b167f01437e0ef6ac712a3ae75db6"
     },
     {
       "id": 77884,
@@ -956,7 +970,7 @@
       "directory": "Python/level1/extra_76501_음양_더하기",
       "readme": "Python/level1/extra_76501_음양_더하기/README.md",
       "solution": "Python/level1/extra_76501_음양_더하기/solution.py",
-      "solution_sha256": "865f5f64605aef39273cab0669a0c4a8e28eef8cdd5d5aff88723f1b92f411d4",
+      "solution_sha256": "0ff52be4b4ea4d160422f03fcf84234ab3d1798f395d763d702460af36fdfccf",
       "original": "Python/level1/extra_76501_음양_더하기/submitted_original.py",
       "original_sha256": "26eca7794f15f2b16bfd07b0b0a242389bf5a35c712754d5ace7f70fa4dac08c",
       "original_local_grade": 100,
@@ -965,7 +979,8 @@
       "category": "배열 · 부호 적용",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 01:54:09"
+      "submitted_at": "2026-10-16 01:54:09",
+      "saved_annotation_source_sha256": "865f5f64605aef39273cab0669a0c4a8e28eef8cdd5d5aff88723f1b92f411d4"
     },
     {
       "id": 72410,
@@ -998,7 +1013,7 @@
       "directory": "Python/level1/extra_70128_내적",
       "readme": "Python/level1/extra_70128_내적/README.md",
       "solution": "Python/level1/extra_70128_내적/solution.py",
-      "solution_sha256": "cc683dcaf17a51d5a670bcc24aa509cc29dfdc29f30223caf7ecfe46639b2916",
+      "solution_sha256": "d44afece3d91def14ebb95028cf040a251f4bb5587f5200559e199dfa15d9e20",
       "original": "Python/level1/extra_70128_내적/submitted_original.py",
       "original_sha256": "9c5be6c7597b53bc9225ee46029e614869c4f4d830c7f8d9ddcb70810602ba41",
       "original_local_grade": 100,
@@ -1007,7 +1022,8 @@
       "category": "배열 · 누적 합",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 02:26:27"
+      "submitted_at": "2026-10-16 02:26:27",
+      "saved_annotation_source_sha256": "cc683dcaf17a51d5a670bcc24aa509cc29dfdc29f30223caf7ecfe46639b2916"
     },
     {
       "id": 68935,
@@ -1061,7 +1077,7 @@
       "directory": "Python/level1/extra_67256_키패드_누르기",
       "readme": "Python/level1/extra_67256_키패드_누르기/README.md",
       "solution": "Python/level1/extra_67256_키패드_누르기/solution.py",
-      "solution_sha256": "f4314a290d778893640820c87a0e954ac9074ae58704b67d60d2a82830c4577b",
+      "solution_sha256": "cb154e3e3214fa8b264c1550e23de1a755695ad18aba35b4e3d14e0d1280dd79",
       "original": "Python/level1/extra_67256_키패드_누르기/submitted_original.py",
       "original_sha256": "a75ade44cb62fc83099982efed6bb605add0808f1551c9e7a277d698326beba9",
       "original_local_grade": 100,
@@ -1070,7 +1086,8 @@
       "category": "구현 · 맨해튼 거리",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 02:01:43"
+      "submitted_at": "2026-10-16 02:01:43",
+      "saved_annotation_source_sha256": "f4314a290d778893640820c87a0e954ac9074ae58704b67d60d2a82830c4577b"
     },
     {
       "id": 64061,
@@ -1082,7 +1099,7 @@
       "directory": "Python/level1/extra_64061_크레인_인형뽑기_게임",
       "readme": "Python/level1/extra_64061_크레인_인형뽑기_게임/README.md",
       "solution": "Python/level1/extra_64061_크레인_인형뽑기_게임/solution.py",
-      "solution_sha256": "314e199e0568d82ec6ee9d05acd5980d831ddc535d808de5c139b35e2e9393f1",
+      "solution_sha256": "bfd0f135c75d2c1daf426a8f3151deeb5ea214f0dde2940e563c4d44096b328d",
       "original": "Python/level1/extra_64061_크레인_인형뽑기_게임/submitted_original.py",
       "original_sha256": "6c01f43c5146ed55101ae692b35ab27e360f53ee26c4ec1afb9c82ea1c8e39ac",
       "original_local_grade": 100,
@@ -1091,7 +1108,8 @@
       "category": "스택 · 격자 탐색",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 22:03:20"
+      "submitted_at": "2026-10-16 22:03:20",
+      "saved_annotation_source_sha256": "314e199e0568d82ec6ee9d05acd5980d831ddc535d808de5c139b35e2e9393f1"
     },
     {
       "id": 42889,
@@ -1103,7 +1121,7 @@
       "directory": "Python/level1/extra_42889_실패율",
       "readme": "Python/level1/extra_42889_실패율/README.md",
       "solution": "Python/level1/extra_42889_실패율/solution.py",
-      "solution_sha256": "382393d2ec95d5edc859a47f5e77585878f6f3d3e0887176b589ff3b82104d95",
+      "solution_sha256": "3323bdd9cf6cf98ab2eaee5d6985bdd03ec70ef941a0ad49baceaec292b1fffb",
       "original": "Python/level1/extra_42889_실패율/submitted_original.py",
       "original_sha256": "92e460b0f4171179aecac8feb05a56b481b1869eea3ac342dc5beb96a1e54903",
       "original_local_grade": 100,
@@ -1112,7 +1130,8 @@
       "category": "집계 · 정렬",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 02:11:22"
+      "submitted_at": "2026-10-16 02:11:22",
+      "saved_annotation_source_sha256": "382393d2ec95d5edc859a47f5e77585878f6f3d3e0887176b589ff3b82104d95"
     },
     {
       "id": 42862,
@@ -1124,7 +1143,7 @@
       "directory": "Python/level1/extra_42862_체육복",
       "readme": "Python/level1/extra_42862_체육복/README.md",
       "solution": "Python/level1/extra_42862_체육복/solution.py",
-      "solution_sha256": "ac843ce6e40a7565f1eed2c80e89f6f8a8fdcfcada38189018b2ec82c95ee3c0",
+      "solution_sha256": "35609c49dd0de303b90f6581fa1e6e6a4b81e7c270be284a8e4b18d06ca31cdc",
       "original": "Python/level1/extra_42862_체육복/submitted_original.py",
       "original_sha256": "cf131bbcc6b04c238ed622b2bbe616c7023e69ac31846e560cdfdd9bb9874528",
       "original_local_grade": 100,
@@ -1133,7 +1152,8 @@
       "category": "그리디 · 집합",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 02:11:03"
+      "submitted_at": "2026-10-16 02:11:03",
+      "saved_annotation_source_sha256": "ac843ce6e40a7565f1eed2c80e89f6f8a8fdcfcada38189018b2ec82c95ee3c0"
     },
     {
       "id": 42840,
@@ -1145,7 +1165,7 @@
       "directory": "Python/level1/extra_42840_모의고사",
       "readme": "Python/level1/extra_42840_모의고사/README.md",
       "solution": "Python/level1/extra_42840_모의고사/solution.py",
-      "solution_sha256": "5c625a9c9e9237971d52746b9d0499063492332d14b91dd2ae3683e5120ede18",
+      "solution_sha256": "a2ed2bb71415a18cc87b1afa6d1f91fbb2cf4c8d9152628e99e2f9fc647ca16c",
       "original": "Python/level1/extra_42840_모의고사/submitted_original.py",
       "original_sha256": "1ba4889b049e8bc220ebe81b0cd1d26ca90aaf6dc90207cb8a1aefe1463b409e",
       "original_local_grade": 100,
@@ -1154,7 +1174,8 @@
       "category": "구현 · 반복 패턴",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 02:21:50"
+      "submitted_at": "2026-10-16 02:21:50",
+      "saved_annotation_source_sha256": "5c625a9c9e9237971d52746b9d0499063492332d14b91dd2ae3683e5120ede18"
     },
     {
       "id": 42748,
@@ -1187,7 +1208,7 @@
       "directory": "Python/level1/extra_42576_완주하지_못한_선수",
       "readme": "Python/level1/extra_42576_완주하지_못한_선수/README.md",
       "solution": "Python/level1/extra_42576_완주하지_못한_선수/solution.py",
-      "solution_sha256": "30b4d222abba5ee30b85f455786737b0efaa545ff3914e7073b4c585906d2d85",
+      "solution_sha256": "d811edb223b4b40f71b5361048990939898348733f743f4bdf9a781fb7294b19",
       "original": "Python/level1/extra_42576_완주하지_못한_선수/submitted_original.py",
       "original_sha256": "97ab66079139c535c86ba41aef458f4663ef16d4f01afc938e1bbd1c402933ff",
       "original_local_grade": 100,
@@ -1196,7 +1217,8 @@
       "category": "정렬 · 동명이인 처리",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 18:01:57"
+      "submitted_at": "2026-10-16 18:01:57",
+      "saved_annotation_source_sha256": "30b4d222abba5ee30b85f455786737b0efaa545ff3914e7073b4c585906d2d85"
     },
     {
       "id": 17682,
@@ -1208,7 +1230,7 @@
       "directory": "Python/level1/extra_17682_[1차]_다트_게임",
       "readme": "Python/level1/extra_17682_[1차]_다트_게임/README.md",
       "solution": "Python/level1/extra_17682_[1차]_다트_게임/solution.py",
-      "solution_sha256": "1cc5e7954e874539ea7335bc4eedf1343e816e990dc26fb1451884bdef13188d",
+      "solution_sha256": "0b8aa8abad424d08cb8568899ca8b4670094be25168d8ccb92801ff2a270f6a3",
       "original": "Python/level1/extra_17682_[1차]_다트_게임/submitted_original.py",
       "original_sha256": "c1238f8b56aeb3a32066dc55532815f540b4d1c4c869e488537f721f74a21df6",
       "original_local_grade": 100,
@@ -1217,7 +1239,8 @@
       "category": "문자열 · 파싱 · 스택",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 02:11:12"
+      "submitted_at": "2026-10-16 02:11:12",
+      "saved_annotation_source_sha256": "1cc5e7954e874539ea7335bc4eedf1343e816e990dc26fb1451884bdef13188d"
     },
     {
       "id": 17681,
@@ -1229,7 +1252,7 @@
       "directory": "Python/level1/extra_17681_[1차]_비밀지도",
       "readme": "Python/level1/extra_17681_[1차]_비밀지도/README.md",
       "solution": "Python/level1/extra_17681_[1차]_비밀지도/solution.py",
-      "solution_sha256": "e8a46f2f316b6e3e589a272d424f34bff998a8f3f118983b2cfcbbffe5782cea",
+      "solution_sha256": "fb48770dc500421260b4dbf321bb1ae36938e128b83305fd91c83df2a6f8607b",
       "original": "Python/level1/extra_17681_[1차]_비밀지도/submitted_original.py",
       "original_sha256": "c9b06822a198c05c0993617f73b0d1a0813b0a8b2f580bc2952f711bad7e24cb",
       "original_local_grade": 100,
@@ -1238,7 +1261,8 @@
       "category": "비트 연산 · 문자열",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 02:34:16"
+      "submitted_at": "2026-10-16 02:34:16",
+      "saved_annotation_source_sha256": "e8a46f2f316b6e3e589a272d424f34bff998a8f3f118983b2cfcbbffe5782cea"
     },
     {
       "id": 12982,
@@ -1271,7 +1295,7 @@
       "directory": "Python/level1/extra_12977_소수_만들기",
       "readme": "Python/level1/extra_12977_소수_만들기/README.md",
       "solution": "Python/level1/extra_12977_소수_만들기/solution.py",
-      "solution_sha256": "02bd2f0d41ef1c574942ab374e0b9b006abb410379f64ea4d6b9f22bead85e54",
+      "solution_sha256": "6febdd71915272e02ce00cfa83c9f08ad69dc438de1c12d6cb83c767a23d4109",
       "original": "Python/level1/extra_12977_소수_만들기/submitted_original.py",
       "original_sha256": "f46642543606ed433ebfd446e920e5f5200fcfa4ed3cabf52aca5b3cfa61fa1c",
       "original_local_grade": 100,
@@ -1280,7 +1304,8 @@
       "category": "조합 · 소수 판정",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 02:15:09"
+      "submitted_at": "2026-10-16 02:15:09",
+      "saved_annotation_source_sha256": "02bd2f0d41ef1c574942ab374e0b9b006abb410379f64ea4d6b9f22bead85e54"
     },
     {
       "id": 12969,
@@ -1292,7 +1317,7 @@
       "directory": "Python/level1/extra_12969_직사각형_별찍기",
       "readme": "Python/level1/extra_12969_직사각형_별찍기/README.md",
       "solution": "Python/level1/extra_12969_직사각형_별찍기/solution.py",
-      "solution_sha256": "71375314604e1a5f5523ee8b0a559bb3fc7606a549c86963349e4ecebd4478d3",
+      "solution_sha256": "0f451edf7b9b385d0c3c93508b4a43350420c61f4f3dedb3eba7dcc0f687ec2e",
       "original": "Python/level1/extra_12969_직사각형_별찍기/submitted_original.py",
       "original_sha256": "2af7cb1b9351168f4657cc0e074136a3cc0456b9c1f8b1710b049ee68e51dcb5",
       "original_local_grade": 100,
@@ -1301,7 +1326,8 @@
       "category": "기초 문법 · 반복 출력",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 02:31:57"
+      "submitted_at": "2026-10-16 02:31:57",
+      "saved_annotation_source_sha256": "71375314604e1a5f5523ee8b0a559bb3fc7606a549c86963349e4ecebd4478d3"
     },
     {
       "id": 12954,
@@ -1586,7 +1612,7 @@
       "directory": "Python/level1/extra_12930_이상한_문자_만들기",
       "readme": "Python/level1/extra_12930_이상한_문자_만들기/README.md",
       "solution": "Python/level1/extra_12930_이상한_문자_만들기/solution.py",
-      "solution_sha256": "39a92b50affca7233eb3775a1acf440f0898ac6afa1495284d6da57b3e0a46ef",
+      "solution_sha256": "1932aa421c0e0cdf6a371841c001b1d6d248c72219f4ee21cb766f04cf048838",
       "original": "Python/level1/extra_12930_이상한_문자_만들기/submitted_original.py",
       "original_sha256": "470e94c3697f9274807ee7b704ad6e85c1d3400698e15ac55627f8286003dcd2",
       "original_local_grade": 100,
@@ -1595,7 +1621,8 @@
       "category": "문자열 · 상태 관리",
       "documentation": "commented_submission",
       "provenance": "accepted_submission_history",
-      "submitted_at": "2026-10-16 02:55:23"
+      "submitted_at": "2026-10-16 02:55:23",
+      "saved_annotation_source_sha256": "39a92b50affca7233eb3775a1acf440f0898ac6afa1495284d6da57b3e0a46ef"
     },
     {
       "id": 12928,
@@ -1807,5 +1834,7 @@
       "provenance": "accepted_submission_history",
       "submitted_at": "2026-10-16 02:17:26"
     }
-  ]
+  ],
+  "source_hashes_updated_on": "2026-11-02",
+  "source_hash_scope": "Current annotated archive files; saved hashes and grading records retain their original dates and values. This is not a new judge submission."
 }

@@ -4,6 +4,7 @@ from collections import Counter
 from datetime import datetime, timezone
 import hashlib
 import json
+import argparse
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -17,6 +18,10 @@ def sha(path):
 
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',type=Path,default=ROOT/'ARCHIVE_CHECK.json',
+                        help='검사 결과를 저장할 경로입니다. 과거 기록을 보존하려면 별도 경로를 지정합니다.')
+    args=parser.parse_args()
     full=read(ROOT/'catalog.json')['problems']
     recent=read(ROOT/'recent_submissions.json')['problems']
     historical=read(ROOT/'historical_submissions.json')['problems']
@@ -56,7 +61,9 @@ def main():
         assert source.rstrip() in (ROOT/p['readme']).read_text(encoding='utf-8'),p['id']
         grade=read(path.parent/'grading.json')
         assert grade['score']==100 and grade['status']=='accepted',p['id']
-        assert grade['source_sha256']==p['solution_sha256'],p['id']
+        # 주석 수정 뒤의 파일 해시와 저장된 채점 당시의 파일 해시를 구분합니다.
+        saved_hash=p.get('saved_annotation_source_sha256',p['solution_sha256'])
+        assert grade['source_sha256']==saved_hash,p['id']
         if p.get('provenance')=='accepted_submission_history':
             assert sha(ROOT/p['original'])==p['original_sha256'],p['id']
         records.append({'id':p['id'],'documentation':'commented_submission','source_hash_match':True,'exact_commented_copy':True,'nonempty_line_notes':True,'saved_grade':100})
@@ -71,7 +78,7 @@ def main():
         'languages':dict(Counter(p['language'] for p in combined)),
         'scope':'File integrity and annotation checks; saved grades, not new judge submissions',
         'records':records}
-    (ROOT/'ARCHIVE_CHECK.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    args.output.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({k:v for k,v in report.items() if k!='records'},ensure_ascii=False))
 
 
