@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "label": "MIT News의 창업·사업 기사 원문 후보",
+      "kind": "rss",
+      "url": "https://news.mit.edu/rss/topic/business",
+      "allowed_hosts": ["news.mit.edu"]
+    },
+    {
+      "label": "Y Combinator 기업 소개 후보",
+      "kind": "html",
+      "url": "https://www.ycombinator.com/companies",
+      "allowed_hosts": ["www.ycombinator.com", "ycombinator.com"],
+      "candidate_path_pattern": "^/companies/[a-z0-9-]+/?$"
+    },
+    {
+      "label": "NAVER D2SF 포트폴리오 원문 후보",
+      "kind": "html",
+      "url": "https://d2sf.naver.com/en/portfolio",
+      "allowed_hosts": ["d2sf.naver.com"],
+      "candidate_path_pattern": "^/(?:en/)?portfolio/[A-Za-z0-9_-]+/?$"
+    }
+  ]
+}

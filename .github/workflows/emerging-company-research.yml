@@ -1,0 +1,100 @@
+name: 신생기업 원문 조사와 자동 분석
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매일 09:00 KST입니다. GitHub 부하에 따라 지연될 수 있습니다.
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: '이번 실행의 최대 기업 수입니다.'
+        type: choice
+        options: ['1', '2', '3']
+        default: '3'
+      publish:
+        description: '검사를 통과한 자동 분석과 조사 상태를 게시합니다.'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: emerging-company-research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    if: github.repository == 'yoonip/engineering-notes' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 75
+    outputs:
+      has_manifest: ${{ steps.output_state.outputs.has_manifest }}
+    env:
+      LOCAL_MODEL_ENDPOINT: http://127.0.0.1:8080/v1/chat/completions
+      LOCAL_MODEL_ID: Qwen/Qwen3-4B-GGUF:Q4_K_M
+      LOCAL_MODEL_REVISION: bc640142c66e1fdd12af0bd68f40445458f3869b
+      RESEARCH_LIMIT: ${{ inputs.limit || '3' }}
+    steps:
+      - name: 조사 코드와 현재 기업 목록 읽기
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: main
+          persist-credentials: false
+          fetch-depth: 1
+          sparse-checkout: |
+            .github/emerging-companies
+            신생기업과기술사업_emerging-companies
+      - name: 출처·중복·검사 경로 테스트
+        run: python3 -m unittest discover -s .github/emerging-companies -p 'test_*.py' -v
+      - name: 해시를 고정한 공개 CPU 모델 기동
+        run: python3 .github/emerging-companies/prepare_runtime.py --cache-dir "$RUNNER_TEMP/company-runtime" --serve
+      - name: 신규 원문 조사·생성·별도 자동 검토
+        run: python3 .github/emerging-companies/pipeline.py --root . --output research-output --auto-research --limit "$RESEARCH_LIMIT" --publish-ready
+      - name: 결과·런타임 확인 정보 보존
+        id: output_state
+        if: always()
+        run: |
+          mkdir -p research-output/runtime
+          test ! -f "$RUNNER_TEMP/company-runtime/provenance.json" || cp "$RUNNER_TEMP/company-runtime/provenance.json" research-output/runtime/
+          test ! -f "$RUNNER_TEMP/company-runtime/server.log" || tail -n 100 "$RUNNER_TEMP/company-runtime/server.log" > research-output/runtime/server-tail.log
+          if test -f research-output/manifest.json; then
+            echo 'has_manifest=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'has_manifest=false' >> "$GITHUB_OUTPUT"
+          fi
+      - name: 초안·검사 결과 파일 전달
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: emerging-company-research
+          path: research-output/
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error
+
+  publish:
+    needs: research
+    if: ${{ always() && needs.research.outputs.has_manifest == 'true' && (github.event_name == 'schedule' || inputs.publish == true) }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    concurrency:
+      group: daily-news-main
+      cancel-in-progress: false
+    steps:
+      - name: 게시 직전 최신 저장소 읽기
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: main
+          fetch-depth: 1
+          sparse-checkout: |
+            .github/emerging-companies
+            신생기업과기술사업_emerging-companies
+      - name: 검토된 실행 결과 받기
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: emerging-company-research
+          path: research-output/
+      - name: 허용 경로와 생성 기준을 확인한 뒤 게시
+        run: python3 .github/emerging-companies/publish.py --root . --output research-output --push
