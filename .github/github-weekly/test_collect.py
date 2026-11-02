@@ -12,6 +12,7 @@ from urllib.error import HTTPError
 from urllib.request import Request
 
 import collect as weekly
+import source_checks
 
 
 def trending_html(slugs=None, missing_metric=None):
@@ -171,8 +172,9 @@ class ArchiveTests(unittest.TestCase):
 
     def test_detailed_publication_fetches_and_preserves_pinned_readme_sources(self):
         def readme_for(repo, token, getter):
-            return {'status': 'ok', 'text': '## 기능\n공식 기능을 설명하는 한국어 문서입니다.\n## 설치\nPython을 준비합니다.\n```sh\nrun-official-example\n```',
-                    'sha': str(repo['id']) * 40, 'commit': 'a' * 40, 'path': 'README.md',
+            text = '## 기능\n공식 기능을 설명하는 한국어 문서입니다.\n## 설치\nPython을 준비합니다.\n```sh\nrun-official-example\n```'
+            return {'status': 'ok', 'text': text,
+                    'sha': source_checks._blob_sha(text.encode()), 'commit': 'a' * 40, 'path': 'README.md',
                     'source_url': repo['html_url'] + '/blob/' + 'a' * 40 + '/README.md',
                     'fetched_at': '2026-11-02T00:00:00+00:00'}
         with patch.object(weekly, 'get', return_value=(trending_html(), weekly.TRENDING)), \
@@ -183,8 +185,23 @@ class ArchiveTests(unittest.TestCase):
         data = json.loads((self.output / '주간기록/2026/11/2026-11-02.json').read_text(encoding='utf8'))
         self.assertTrue(all('guide' in item and 'readme' in item for item in data['items']))
         self.assertTrue(all(item['guide']['assessment']['origin'] == 'extracted' for item in data['items']))
+        self.assertTrue(all(item['guide']['source_checks']['commands_checked'] == 1 for item in data['items']))
         self.assertNotIn('text', data['items'][0]['readme'])
         self.assertEqual(data['items'][0]['guide']['install_code']['code'], 'run-official-example')
+
+    def test_source_check_failure_cannot_publish_archive_or_translation_cache(self):
+        readme = {'status':'ok','text':'# Example','sha':'a'*40,'commit':'b'*40,
+                  'source_url':'https://github.com/owner/project/blob/'+'b'*40+'/README.md',
+                  'fetched_at':'2026-11-02T00:00:00Z'}
+        with patch.object(weekly,'get',return_value=(trending_html(),weekly.TRENDING)), \
+             patch.object(weekly,'repository',return_value=metadata(1)), \
+             patch.object(weekly.guides,'fetch_readme',return_value=readme), \
+             patch.object(weekly.guides,'linked_documents',return_value=[]), \
+             patch.object(weekly.source_checks,'verify',side_effect=ValueError('Source anchor is missing')):
+            with self.assertRaisesRegex(ValueError,'Source anchor'):
+                weekly.collect(self.output,self.now,'',{},self.cache,details={})
+        self.assertFalse(self.output.exists())
+        self.assertFalse(self.cache.exists())
 
     def test_readme_failure_cannot_publish_a_partial_detailed_week(self):
         with patch.object(weekly, 'get', return_value=(trending_html(), weekly.TRENDING)), \
@@ -241,6 +258,15 @@ class ContentTests(unittest.TestCase):
         self.assertEqual(introductions.for_repo(changed)['text'], changed['description'])
         recreated = dict(repo, id=99)
         self.assertEqual(introductions.for_repo(recreated)['text'], repo['description'])
+
+    def test_production_summary_requires_the_reviewed_readme_as_well(self):
+        repo = metadata(1)
+        reviewed = {repo['full_name']:{'repository_id':repo['id'],
+            'description_sha256':weekly.digest(repo['description']),'readme_sha':'a'*40,
+            'reviewed_at':'2026-11-02','summary_ko':'검토한 소개입니다.'}}
+        introductions=weekly.Introductions(reviewed,{})
+        self.assertEqual(introductions.for_repo(repo,readme_sha='a'*40)['text'],'검토한 소개입니다.')
+        self.assertEqual(introductions.for_repo(repo,readme_sha='b'*40)['text'],repo['description'])
 
 
 class RedirectTests(unittest.TestCase):

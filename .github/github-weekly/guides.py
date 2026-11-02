@@ -40,7 +40,7 @@ def fetch_readme(repo: dict, token: str, getter) -> dict:
 
 
 def linked_documents(repo: dict, readme: dict, token: str, getter) -> list[dict]:
-    """README가 연결한 같은 저장소의 설치·사용 Markdown 문서를 최대 두 개 읽습니다."""
+    """README에 연결된 같은 저장소의 설치·사용·비교 문서를 최대 두 개 읽습니다."""
     result, seen = [], set()
     for label, target in re.findall(r'(?<!!)\[([^\]\n]+)\]\(([^\s)]+)\)', readme['text']):
         if not re.search(r'install|quick.?start|getting.?started|usage|examples?|comparisons?|alternatives?|설치|사용|비교', label + ' ' + target, re.I):
@@ -72,12 +72,13 @@ def linked_documents(repo: dict, readme: dict, token: str, getter) -> list[dict]
     return result
 
 
-def plain(text: str) -> str:
+def plain(text: str, strip_list: bool = True) -> str:
     """번역할 짧은 설명에서 링크 문법과 장식만 제거합니다."""
     text = re.sub(r'!\[[^\]]*\]\([^)]*\)', '', text)
     text = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', text)
     text = re.sub(r'<[^>]+>', '', text)
-    text = re.sub(r'^\s*(?:>\s*)?(?:[-+*]\s+|\d+[.)]\s+)?', '', text)
+    if strip_list:
+        text = re.sub(r'^\s*(?:>\s*)?(?:[-+*]\s+|\d+[.)]\s+)?', '', text)
     return ' '.join(text.replace('**', '').replace('`', '').split())
 
 
@@ -106,10 +107,13 @@ def sections(markdown: str) -> list[dict]:
             else:
                 code.append(line)
             continue
-        match = re.match(r'^(`{3,}|~{3,})([\w+.-]*)\s*$', stripped)
+        match = re.match(r'^(`{3,}|~{3,})([^\n]*)$', stripped)
         if match:
+            if match[1][0] == '`' and '`' in match[2]:
+                continue
             flush()
-            fence, language = match.groups()
+            fence, info = match.groups()
+            language = info.strip().split()[0] if info.strip() else ''
             context = result[-1]['paragraphs'][-1] if result[-1]['paragraphs'] else ''
             continue
         if result[-1]['_rows'] and result[-1]['_rows'][-1] and not stripped.startswith('|'):
@@ -117,11 +121,11 @@ def sections(markdown: str) -> list[dict]:
         heading = re.match(r'^ {0,3}(#{1,6})\s+(.+?)\s*#*$', line)
         if heading:
             flush()
-            result.append(section(plain(heading[2]), len(heading[1])))
+            result.append(section(plain(heading[2], strip_list=False), len(heading[1])))
         elif stripped and index + 1 < len(lines) and re.fullmatch(r'(?:={3,}|-{3,})\s*', lines[index + 1].strip()):
             flush()
             level = 1 if lines[index + 1].lstrip().startswith('=') else 2
-            result.append(section(plain(line), level))
+            result.append(section(plain(line, strip_list=False), level))
         elif re.fullmatch(r'(?:={3,}|-{3,})\s*', stripped):
             flush()
         elif not stripped:
@@ -164,18 +168,26 @@ PATTERNS = {
 
 def select_sections(parsed: list[dict], kind: str) -> list[dict]:
     """일치 제목의 하위 절만 포함하고 다음 동급 제목을 넘어가지 않습니다."""
-    selected, active_level = [], None
+    selected, scopes, ancestors, source = [], [], [], None
     for section in parsed:
-        matches = re.search(PATTERNS[kind], section['heading'], re.I)
-        if re.search(r'uninstall|remov|changelog|release.notes|security.policy', section['heading'], re.I):
-            matches = None
-            active_level = None
-        if matches:
-            active_level = min(active_level, section['level']) if active_level is not None else section['level']
-        elif active_level is not None and section['level'] <= active_level:
-            active_level = None
-        if active_level is not None:
-            selected.append(section)
+        if section.get('source_url') != source:
+            scopes.clear(); ancestors.clear()
+            source = section.get('source_url')
+        while scopes and section['level'] <= scopes[-1][0]:
+            scopes.pop()
+        while ancestors and section['level'] <= ancestors[-1]['level']:
+            ancestors.pop()
+        matches = bool(re.search(PATTERNS[kind], section['heading'], re.I))
+        blocked = bool(re.search(r'uninstall|remov|changelog|release.notes|security.policy', section['heading'], re.I))
+        if kind in ('installation', 'examples'):
+            other = 'examples' if kind == 'installation' else 'installation'
+            blocked = blocked or (not matches and bool(re.search(PATTERNS[other], section['heading'], re.I)))
+        if matches or blocked:
+            scopes.append((section['level'], matches and not blocked))
+        if scopes and scopes[-1][1]:
+            selected.append(dict(section, parent_headings=[s['heading'] for s in ancestors if s['level']],
+                                 parent_context=[p for s in ancestors if s['level'] >= scopes[0][0] for p in s['paragraphs']]))
+        ancestors.append(section)
     return selected
 
 
@@ -201,12 +213,23 @@ def excerpts(parsed: list[dict], kind: str) -> list[dict]:
 def code_example(parsed: list[dict], kind: str) -> dict | None:
     for section in select_sections(parsed, kind):
         if kind == 'installation' and re.search(r'prerequisites?|requirements?', section['heading'], re.I):
+            if section['codes']:
+                # 선행 코드가 버전 확인인지 필수 준비인지 단정하지 않고 전체 절차로 연결합니다.
+                return None
             continue
         for block in section['codes']:
             text = block['code'].strip('\n')
             # 짧은 명령·예시를 통째로 남기며 긴 설치 스크립트를 임의로 자르지 않습니다.
             if text and len(text) <= 1200 and len(text.splitlines()) <= 14 and len(text.split()) <= 35:
-                return dict(block, code=text, heading=section['heading'], source_url=section.get('source_url'))
+                contexts = list(dict.fromkeys(section.get('parent_context', []) + ([block['context']] if block.get('context') else [])))
+                context = ' '.join(contexts)
+                if len(context.split()) > 65 or len(context) > 900:
+                    return None
+                return dict(block, code=text, heading=section['heading'],
+                            heading_path=section.get('parent_headings', []) + [section['heading']],
+                            context=context, source_url=section.get('source_url'))
+            # 앞 단계의 긴 스크립트를 건너뛰어 다음 단계만 설치법으로 내보내지 않습니다.
+            return None
     return None
 
 
@@ -245,7 +268,7 @@ def make_guide(repo: dict, readme: dict, details: dict, introductions) -> dict:
     guide['example_code'] = code_example(parsed, 'examples')
     for name in ('install_code', 'example_code'):
         block = guide[name]
-        if block and block.get('context') and len(block['context'].split()) <= 35:
+        if block and block.get('context'):
             block['context_translation'] = korean_text(block['context'], introductions)
     guide['sources'] = [{'title': '공식 README (' + readme['commit'][:12] + ')', 'url': readme['source_url']}]
     guide['sources'] += [{'title': document['path'], 'url': document['source_url']} for document in readme.get('documents', [])]
@@ -285,10 +308,13 @@ def render_guide(guide: dict, clean) -> list[str]:
             fence = '`' * max(3, max((len(m[0]) for m in re.finditer(r'`+', code)), default=0) + 1)
             language = block.get('language', '')
             language = language if re.fullmatch(r'[A-Za-z0-9_+.-]{0,25}', language) else ''
-            section = ' — ' + clean(block['heading']) if block.get('heading') else ''
+            path = block.get('heading_path', [block['heading']] if block.get('heading') else [])
+            section = ' — ' + clean(' → '.join(path)) if path else ''
             lines.extend(['공식 문서의 명령·예시' + section + ':', ''])
             if block.get('context_translation', {}).get('text'):
                 lines.extend([clean(block['context_translation']['text']), ''])
+            if block.get('context'):
+                lines.extend(['원문 조건: ' + clean(block['context']), ''])
             lines.extend([fence + language, code, fence, ''])
             if block.get('source_url'):
                 lines.extend(['[명령·예시 원문](' + block['source_url'] + ')', ''])

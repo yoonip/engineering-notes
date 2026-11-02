@@ -3,152 +3,171 @@
     "reviewed_at": "2026-11-02",
     "summary_ko": "음성 복제·음성 생성·영상 더빙·받아쓰기·오디오북 제작을 한 작업 공간에서 다루는 로컬 음성 도구입니다.",
     "detail_ko": "필요한 음성 엔진과 모델을 골라 내려받고 로컬 API·MCP로 작업을 연결할 수 있습니다. 앱의 AGPL 라이선스와 모델 가중치·음성 자산의 이용 조건은 별도로 확인합니다.",
-    "source_url": "https://github.com/debpalash/VoiceStudio#readme",
+    "source_url": "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md",
     "repository_id": 1206390571,
-    "description_sha256": "f5cb1ec90245f9d7d088726c0d4ffb162bb496f01e9736324d21fe83f8ab779b"
+    "description_sha256": "f5cb1ec90245f9d7d088726c0d4ffb162bb496f01e9736324d21fe83f8ab779b",
+    "readme_sha": "d34d1b10f50857223890a9de8dc63264670c38dc"
   },
   "DietrichGebert/ponytail": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "코딩 에이전트가 필요한 변경을 작게 작성하고 기존 해법을 활용하도록 안내하는 스킬·플러그인입니다.",
     "detail_ko": "검증·오류 처리·보안·접근성을 유지하면서 불필요한 코드와 작업을 줄이는 개발 원칙을 제공합니다. 기존 시스템에 기능을 추가할 때 변경 범위를 좁히는 흐름을 살펴볼 수 있습니다.",
-    "source_url": "https://github.com/DietrichGebert/ponytail#readme",
+    "source_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md",
     "repository_id": 1266797999,
-    "description_sha256": "b4c66a09f2c118ca2fed4364f32b6ddb2e2328fc047dd08686cff77d62d9e1ef"
+    "description_sha256": "b4c66a09f2c118ca2fed4364f32b6ddb2e2328fc047dd08686cff77d62d9e1ef",
+    "readme_sha": "ff6a92573ef6412495055d979cff1d7464e1fa65"
   },
   "cloudflare/security-audit-skill": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "코드 구조와 신뢰 경계를 파악하고 취약점 후보 탐색·검증·보고를 단계별로 수행하도록 구성한 보안 감사 스킬입니다.",
     "detail_ko": "서로 독립적인 검증 역할, 구조화된 findings.json과 감사 범위 기록을 사용합니다. 어떤 코드를 조사했는지와 취약점 근거가 무엇인지 남기는 흐름을 살펴볼 수 있습니다.",
-    "source_url": "https://github.com/cloudflare/security-audit-skill#readme",
+    "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
     "repository_id": 1273427276,
-    "description_sha256": "4bce776d471955537bce57ff8de60926fbbdbce4e2779d04a107a654b463a137"
+    "description_sha256": "4bce776d471955537bce57ff8de60926fbbdbce4e2779d04a107a654b463a137",
+    "readme_sha": "c80305c88cd5087db37f76a0d230c1fc092c864c"
   },
   "affaan-m/ECC": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "코딩 에이전트의 계획·테스트·구현·리뷰·검증·기억을 연결하는 스킬과 작업 흐름 모음입니다.",
     "detail_ko": "Claude Code·Codex·OpenCode·Cursor 등 여러 환경에서 반복되는 개발 절차를 재사용하도록 구성합니다. 스킬 수를 외우기보다 프로젝트에 필요한 절차와 설정 파일을 골라 읽는 데 적합합니다.",
-    "source_url": "https://github.com/affaan-m/ECC#readme",
+    "source_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
     "repository_id": 1136590548,
-    "description_sha256": "e4eb8aaa1f3709dfbddd66df722d80fd434b7b9b9867fddd8330683c2965308f"
+    "description_sha256": "e4eb8aaa1f3709dfbddd66df722d80fd434b7b9b9867fddd8330683c2965308f",
+    "readme_sha": "d8017086ca85d2e851ef2e0c88470b0b09dc3d4d"
   },
   "pbakaus/impeccable": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "코딩 에이전트가 화면 디자인을 구체적으로 지시하고 검토할 때 쓰는 디자인 어휘와 명령을 제공합니다.",
     "detail_ko": "polish·bolder·critique·audit 같은 작업으로 시각적 방향과 UI 품질을 조정합니다. 디자인 지침과 실제 검토 명령이 어떻게 연결되는지 살펴볼 수 있습니다.",
-    "source_url": "https://github.com/pbakaus/impeccable#readme",
+    "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md",
     "repository_id": 1097346685,
-    "description_sha256": "1807e46f985f2a3c3f62a9b0f014d7010e945e466771059024488bdd2b7fb722"
+    "description_sha256": "1807e46f985f2a3c3f62a9b0f014d7010e945e466771059024488bdd2b7fb722",
+    "readme_sha": "8f27aa965cb56ab578d637e53f0392ae4e2d06db"
   },
   "heygen-com/hyperframes": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "HTML·CSS와 시간 탐색이 가능한 애니메이션으로 영상을 작성하고 미리보기·렌더링하는 도구입니다.",
     "detail_ko": "에이전트용 스킬이 영상 계획·미디어 배치·검사·렌더링을 안내하며 GSAP·CSS·Lottie·Three.js 등의 애니메이션을 연결할 수 있습니다. 웹 기반 장면을 영상으로 출력하는 구조를 익히는 데 도움이 됩니다.",
-    "source_url": "https://github.com/heygen-com/hyperframes#readme",
+    "source_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md",
     "repository_id": 1177402105,
-    "description_sha256": "c2acab8414e0cd4d310185bc491d2d9a4728df72d9fba80bff586d4de508f97c"
+    "description_sha256": "c2acab8414e0cd4d310185bc491d2d9a4728df72d9fba80bff586d4de508f97c",
+    "readme_sha": "e76e22f63cd7b6f5ffce43d522781bbf30efdf6c"
   },
   "Panniantong/Agent-Reach": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "웹·소셜·영상 플랫폼의 자료를 읽고 검색해 에이전트에서 다루기 쉽게 연결하는 CLI 도구입니다.",
-    "detail_ko": "YouTube·Bilibili의 자막과 전사, GitHub 저장소·이슈 등 플랫폼별 입력을 제공합니다. 일부 기능은 인증이나 별도 도구가 필요하며 플랫폼마다 지원 범위가 다릅니다.",
-    "source_url": "https://github.com/Panniantong/Agent-Reach#readme",
+    "detail_ko": "YouTube의 영상 정보·자막·음성 전사, Bilibili의 영상 정보·자막, GitHub 저장소·이슈 등 플랫폼별 자료를 제공합니다. 일부 기능은 인증이나 별도 도구가 필요하며 플랫폼마다 지원 범위가 다릅니다.",
+    "source_url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md",
     "repository_id": 1165277268,
-    "description_sha256": "4ab8da157b2c3c50aea01899755d173f5046233b1ea49808911588e0d1a9ade9"
+    "description_sha256": "4ab8da157b2c3c50aea01899755d173f5046233b1ea49808911588e0d1a9ade9",
+    "readme_sha": "5d355b2bd0c451a5394e6e0978fe4933c4e1f061"
   },
   "NationalSecurityAgency/ghidra": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "NSA 연구부서가 만들고 유지하는 소프트웨어 역공학 프레임워크입니다.",
     "detail_ko": "컴파일된 실행 파일을 디스어셈블·디컴파일하고 제어 흐름 그래프와 스크립팅으로 분석합니다. Windows·macOS·Linux에서 바이너리 분석 구조와 디컴파일 결과를 공부할 때 활용할 수 있습니다.",
-    "source_url": "https://github.com/NationalSecurityAgency/ghidra#readme",
+    "source_url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md",
     "repository_id": 173228436,
-    "description_sha256": "e0da9f5ac838a6ef323e6c17d49bbe79e40328cc77e8ef2d27214aec367ca52d"
+    "description_sha256": "e0da9f5ac838a6ef323e6c17d49bbe79e40328cc77e8ef2d27214aec367ca52d",
+    "readme_sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f"
   },
   "Leonxlnx/taste-skill": {
     "reviewed_at": "2026-11-02",
-    "summary_ko": "웹사이트와 앱 화면을 만들 때 코딩 에이전트에 미술적 방향·참고 이미지·브라우저 확인 절차를 제공하는 디자인 스킬입니다.",
+    "summary_ko": "웹사이트와 앱 화면을 만들 때 코딩 에이전트에 시각적 방향·참고 이미지·브라우저 확인 절차를 제공하는 디자인 스킬입니다.",
     "detail_ko": "실제 이미지를 참고해 방향을 정하고 구현한 화면을 브라우저에서 확인하는 흐름을 제공합니다. 설치 환경은 저장소의 현재 요구사항에서 확인할 수 있습니다.",
-    "source_url": "https://github.com/Leonxlnx/taste-skill#readme",
+    "source_url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md",
     "repository_id": 1162099055,
-    "description_sha256": "4df70089be2cffd3eeea38b37740d7f02a09fe168b1b4dfdda5f06840535454e"
+    "description_sha256": "4df70089be2cffd3eeea38b37740d7f02a09fe168b1b4dfdda5f06840535454e",
+    "readme_sha": "8efa355f7d03ada51edccea568dccf26e628b511"
   },
   "tashfeenahmed/freellmapi": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "여러 LLM 제공자의 무료 사용 구간과 사용자 지정 엔드포인트를 하나의 OpenAI 호환 API에 연결하는 라우터입니다.",
     "detail_ko": "제공자가 제한에 걸리면 다음 제공자로 전환하고 키별 사용량을 추적합니다. 무료 범위와 이용 조건은 각 제공자에 따르며, 제작자는 개인 실험·학습 용도로 설명합니다.",
-    "source_url": "https://github.com/tashfeenahmed/freellmapi#readme",
+    "source_url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md",
     "repository_id": 1217040185,
-    "description_sha256": "9654c885c709838bc3901bd6e134c67153d8e3c75fd5862a6676f7046ec1de8e"
+    "description_sha256": "9654c885c709838bc3901bd6e134c67153d8e3c75fd5862a6676f7046ec1de8e",
+    "readme_sha": "97031d8ebe8c9e9ecfbf204ee3a99c47bb2bcb26"
   },
   "deepseek-ai/DeepInfer": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "DeepSeek 모델용 대규모 추론 프레임워크로 최적화 커널·병렬 실행·비동기 스케줄링·구조화 출력을 제공합니다.",
     "detail_ko": "공개판은 오프라인 추론을 중심으로 하며 완전한 서비스에는 KV 캐시·분리형 서빙·부하 분산 등의 추가 구성이 필요합니다. 지원 모델과 GPU·가속기 조건은 공식 README에서 확인합니다.",
-    "source_url": "https://github.com/deepseek-ai/DeepInfer#readme",
+    "source_url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md",
     "repository_id": 1421825221,
-    "description_sha256": "7a46e9a6c8725a6332338a18c53cce84cd928229910182578e73a323d6ab52d6"
+    "description_sha256": "7a46e9a6c8725a6332338a18c53cce84cd928229910182578e73a323d6ab52d6",
+    "readme_sha": "7143caadd1258f56295e2c7766889478556836b3"
   },
   "Nutlope/hallmark": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "웹페이지를 만들거나 다시 설계할 때 테마·이미지·레이아웃 방향과 브라우저 검사를 제공하는 디자인 스킬입니다.",
     "detail_ko": "페이지의 목적에 맞게 화면을 구성하고 대비·초점·모바일 배치를 검사하도록 안내합니다. 디자인 방향을 코드와 화면 확인으로 연결하는 절차를 살펴볼 수 있습니다.",
-    "source_url": "https://github.com/Nutlope/hallmark#readme",
+    "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md",
     "repository_id": 1222917575,
-    "description_sha256": "356dfb29b89cae6c9ee3b4f6721f233edb60ec19f7379097087cc49c046a9ad7"
+    "description_sha256": "356dfb29b89cae6c9ee3b4f6721f233edb60ec19f7379097087cc49c046a9ad7",
+    "readme_sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623"
   },
   "AgriciDaniel/claude-seo": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "Claude Code에서 웹사이트의 검색 노출과 콘텐츠 구조를 점검하는 SEO 플러그인입니다.",
     "detail_ko": "크롤링·색인·리디렉션·사이트맵·페이지 속도·구조화 데이터를 검사하고 작업 우선순위를 정리합니다. 검색 순위를 보장하는 서비스가 아니라 점검 항목과 실행 흐름을 제공하는 도구입니다.",
-    "source_url": "https://github.com/AgriciDaniel/claude-seo#readme",
+    "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md",
     "repository_id": 1152014594,
-    "description_sha256": "320a35ec8b34937eb4f2a10931e32e7b2c5ecb7283ba5d41a7f7e84927adafde"
+    "description_sha256": "320a35ec8b34937eb4f2a10931e32e7b2c5ecb7283ba5d41a7f7e84927adafde",
+    "readme_sha": "70b98e1ad7cd3aa7228781bbd12458e1a15577ce"
   },
   "thedotmack/claude-mem": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "에이전트의 도구 사용 기록을 수집·요약해 다음 세션에서 필요한 프로젝트 맥락을 다시 찾도록 돕는 메모리 시스템입니다.",
     "detail_ko": "검색 도구와 뷰어로 과거 관찰을 확인하고 문맥에 포함할 내용을 설정합니다. 이 프로젝트 자체의 요약 기능은 AI를 사용하므로 제공자 설정과 비용 조건을 살펴야 합니다.",
-    "source_url": "https://github.com/thedotmack/claude-mem#readme",
+    "source_url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md",
     "repository_id": 1048065319,
-    "description_sha256": "34c0a4154a905506b56778bd86c2750dca9318806b3824bd9b3aaf62902ec089"
+    "description_sha256": "34c0a4154a905506b56778bd86c2750dca9318806b3824bd9b3aaf62902ec089",
+    "readme_sha": "e6095776b1697376286db94962ccf52d17a2687a"
   },
   "obra/superpowers": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "요구사항과 설계를 정리한 뒤 구현 계획·테스트·리뷰·검증으로 이어지는 코딩 에이전트용 개발 방법론과 스킬 모음입니다.",
     "detail_ko": "작업을 작은 단위로 나누고 테스트 주도 개발과 코드 검토를 반복하는 흐름을 제공합니다. 개별 스킬의 호출 조건과 결과물을 순서대로 읽어볼 수 있습니다.",
-    "source_url": "https://github.com/obra/superpowers#readme",
+    "source_url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
     "repository_id": 1073224795,
-    "description_sha256": "92f209e7344165c360d1025c9525accffea5726558abcc94d051ad7e8e55ac49"
+    "description_sha256": "92f209e7344165c360d1025c9525accffea5726558abcc94d051ad7e8e55ac49",
+    "readme_sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b"
   },
   "JetBrains/thinkrail": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "pi 코딩 에이전트 주변에 편집기·터미널·변경 검토 화면을 묶은 IDE입니다.",
     "detail_ko": "Git worktree로 작업 공간을 나누고 프로젝트 명세와 재사용 스킬을 유지하며 변경과 PR 상태를 살펴볼 수 있습니다. 에이전트 작업과 편집기 화면을 연결하는 구조를 확인할 수 있습니다.",
-    "source_url": "https://github.com/JetBrains/thinkrail#readme",
+    "source_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md",
     "repository_id": 1293238217,
-    "description_sha256": "031038be6aa299464628a7d235c7fdc1eb3c03601c63200d18caa31890ce1e0c"
+    "description_sha256": "031038be6aa299464628a7d235c7fdc1eb3c03601c63200d18caa31890ce1e0c",
+    "readme_sha": "7594cab8513d03f0b699bb225a78322ad89ac0bc"
   },
   "pingdotgg/t3code": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "사용자의 컴퓨터에 설치된 코딩 에이전트를 데스크톱·웹·모바일 화면에서 다루는 인터페이스입니다.",
     "detail_ko": "지원하는 에이전트 제공자를 먼저 설치·인증한 뒤 대화와 작업을 연결합니다. 모델 서비스와 사용 화면이 나뉘어 있는 구성을 살펴볼 수 있습니다.",
-    "source_url": "https://github.com/pingdotgg/t3code#readme",
+    "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md",
     "repository_id": 1153130349,
-    "description_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    "description_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "readme_sha": "1f63f3609ae0dd709256623cf34f6fab8168d2f2"
   },
   "multica-ai/andrej-karpathy-skills": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "Andrej Karpathy가 지적한 LLM 코딩 문제를 바탕으로 가정 확인·단순한 구현·필요한 범위의 수정·검증 가능한 목표를 정리한 지침입니다.",
     "detail_ko": "제3자가 구성한 CLAUDE.md와 스킬을 코딩 에이전트에 적용할 수 있습니다. 이름에 등장하는 Karpathy 본인의 공식 저장소와는 구분합니다.",
-    "source_url": "https://github.com/multica-ai/andrej-karpathy-skills#readme",
+    "source_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md",
     "repository_id": 1142983825,
-    "description_sha256": "a9de5c4449094aa47d55ff17676c6abe77ab412e312126aed14c3c1f0cb0b870"
+    "description_sha256": "a9de5c4449094aa47d55ff17676c6abe77ab412e312126aed14c3c1f0cb0b870",
+    "readme_sha": "7cf07a786532bebe01c65179c8e2c3a98cc0a09b"
   },
   "jakubkrehel/skills": {
     "reviewed_at": "2026-11-02",
     "summary_ko": "UI·타이포그래피·색상·접근성·레이아웃·제품 문구를 점검하는 인터페이스 설계 스킬 모음입니다.",
     "detail_ko": "화면 전체의 문제를 우선순위로 정리하거나 대비·키보드 조작·반응형 배치 같은 항목을 개별적으로 다룰 수 있습니다. 필요한 검토 항목을 골라 적용하는 구성입니다.",
-    "source_url": "https://github.com/jakubkrehel/skills#readme",
+    "source_url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md",
     "repository_id": 1296300799,
-    "description_sha256": "b3243f5075423079054e00f406571949afffea54cc1b0a3a9ea553aa92dea25d"
+    "description_sha256": "b3243f5075423079054e00f406571949afffea54cc1b0a3a9ea553aa92dea25d",
+    "readme_sha": "4a98833328ce2fbcf3338ece1fb4a9459121bc58"
   }
 }

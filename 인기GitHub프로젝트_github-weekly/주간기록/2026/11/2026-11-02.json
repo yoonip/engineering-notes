@@ -37,7 +37,7 @@
         "text": "웹페이지를 만들거나 다시 설계할 때 테마·이미지·레이아웃 방향과 브라우저 검사를 제공하는 디자인 스킬입니다.",
         "detail": "페이지의 목적에 맞게 화면을 구성하고 대비·초점·모바일 배치를 검사하도록 안내합니다. 디자인 방향을 코드와 화면 확인으로 연결하는 절차를 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/Nutlope/hallmark#readme"
+        "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -64,7 +64,7 @@
           "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#install"
         },
         "example_steps_ko": [
-          "공식 README의 기존 페이지 점검 예시는 아래와 같습니다. 경로는 작업할 실제 프로젝트의 경로에 맞춥니다.",
+          "공식 README의 기존 페이지 재설계·점검 예시는 아래와 같습니다. 경로는 작업할 실제 프로젝트의 경로에 맞춥니다.",
           "audit 결과에서 링크·입력·키보드 초점·반응형 배치 등 확인 항목을 읽고 필요한 변경을 결정합니다.",
           "redesign을 선택하면 기존 내용과 연결 기능을 기록한 뒤 레이아웃을 바꿉니다. 전후 화면과 링크·폼 동작이 유지됐는지 함께 확인합니다."
         ],
@@ -159,6 +159,42 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 2,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md",
+              "sha": "8efa355f7d03ada51edccea568dccf26e628b511",
+              "commit": "12af471f627f866411b4bd785b19646d3672784c",
+              "bytes": 15088
+            },
+            {
+              "url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md",
+              "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
+              "commit": "4f6a46c6dc325d40ab268c93e25c7b96676ebccd",
+              "bytes": 8742
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#install",
+              "nonempty_lines": 1
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#redesign",
+              "nonempty_lines": 2
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -205,7 +241,7 @@
         "text": "코딩 에이전트가 화면 디자인을 구체적으로 지시하고 검토할 때 쓰는 디자인 어휘와 명령을 제공합니다.",
         "detail": "polish·bolder·critique·audit 같은 작업으로 시각적 방향과 UI 품질을 조정합니다. 디자인 지침과 실제 검토 명령이 어떻게 연결되는지 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/pbakaus/impeccable#readme"
+        "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -224,7 +260,7 @@
         "install_steps_ko": [
           "적용할 프로젝트의 루트 디렉터리에서 아래 설치 명령을 실행합니다.",
           "설치 프로그램이 감지한 코딩 도구와 프로젝트·전역 범위를 선택합니다. 훅을 지원하는 호스트에서는 해당 설정도 확인합니다.",
-          "코딩 도구를 다시 열고 impeccable init을 실행해 프로젝트 목적을 정리합니다. Codex의 훅은 /hooks에서 신뢰해야 적용됩니다."
+          "코딩 도구를 다시 열고 에이전트에서 /impeccable init을 실행해 프로젝트 목적을 정리합니다. Codex에서는 $impeccable init을 사용하며, 훅은 /hooks에서 신뢰해야 적용됩니다."
         ],
         "install_code": {
           "language": "sh",
@@ -323,6 +359,48 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md",
+              "sha": "8efa355f7d03ada51edccea568dccf26e628b511",
+              "commit": "12af471f627f866411b4bd785b19646d3672784c",
+              "bytes": 15088
+            },
+            {
+              "url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md",
+              "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
+              "commit": "4f6a46c6dc325d40ab268c93e25c7b96676ebccd",
+              "bytes": 8742
+            },
+            {
+              "url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md",
+              "sha": "8f27aa965cb56ab578d637e53f0392ae4e2d06db",
+              "commit": "e89e3ada3e875a89ac2c5d33d11e65ebef6fe285",
+              "bytes": 15892
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#installation",
+              "nonempty_lines": 1
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#why",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -371,7 +449,7 @@
         "text": "Claude Code에서 웹사이트의 검색 노출과 콘텐츠 구조를 점검하는 SEO 플러그인입니다.",
         "detail": "크롤링·색인·리디렉션·사이트맵·페이지 속도·구조화 데이터를 검사하고 작업 우선순위를 정리합니다. 검색 순위를 보장하는 서비스가 아니라 점검 항목과 실행 흐름을 제공하는 도구입니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/AgriciDaniel/claude-seo#readme"
+        "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md"
       },
       "guide": {
         "checked_at": "2026-11-02",
@@ -385,7 +463,7 @@
           "선택 기능으로 Google 관련 API와 외부 SEO 데이터를 연결할 수 있으며, 연결 기능의 인증 조건은 별도로 적용됩니다."
         ],
         "prerequisites_ko": [
-          "공식 README 기준 Claude Code 1.0.33 이상이 필요합니다. 아래 슬래시 명령은 일반 PowerShell이 아니라 Claude Code 대화창에 입력합니다.",
+          "공식 문서 기준 Claude Code 1.0.33 이상과 Python 3.11~3.14 및 pip가 필요합니다. 아래 슬래시 명령은 Claude Code 대화창에 입력합니다.",
           "/seo setup이 이 플러그인용 Python 환경과 headless Chromium을 준비합니다. 검사에는 Claude Code의 모델 사용 환경이 필요합니다."
         ],
         "install_steps_ko": [
@@ -424,6 +502,10 @@
           {
             "url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#how-an-audit-works",
             "title": "감사 과정과 보고서"
+          },
+          {
+            "title": "Python·pip 선행 요건과 플러그인 환경 준비",
+            "url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/docs/INSTALLATION.md#prerequisites"
           }
         ],
         "repository_id": 1152014594,
@@ -468,7 +550,7 @@
               "source_urls": [
                 "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md",
                 "https://developer.chrome.com/docs/lighthouse/overview/",
-                "https://github.com/GoogleChrome/lighthouse#readme"
+                "https://github.com/GoogleChrome/lighthouse/blob/2934860cdc5ed2b622497055b5f1a63594927c8a/readme.md"
               ]
             }
           ],
@@ -484,7 +566,7 @@
               "source_urls": [
                 "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md",
                 "https://developer.chrome.com/docs/lighthouse/overview/",
-                "https://github.com/GoogleChrome/lighthouse#readme"
+                "https://github.com/GoogleChrome/lighthouse/blob/2934860cdc5ed2b622497055b5f1a63594927c8a/readme.md"
               ]
             }
           ],
@@ -495,6 +577,50 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md",
+              "sha": "70b98e1ad7cd3aa7228781bbd12458e1a15577ce",
+              "commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+              "bytes": 22871
+            },
+            {
+              "url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/docs/INSTALLATION.md",
+              "sha": "9c0aeb2efdb16e68a1bb9a833d32775ae975dd0a",
+              "commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+              "bytes": 4389
+            },
+            {
+              "url": "https://github.com/GoogleChrome/lighthouse/blob/2934860cdc5ed2b622497055b5f1a63594927c8a/readme.md",
+              "sha": "2eaa7464da6e44239a59ee45687df99355d3557d",
+              "commit": "2934860cdc5ed2b622497055b5f1a63594927c8a",
+              "bytes": 33924
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#install",
+              "nonempty_lines": 3
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#commands",
+              "nonempty_lines": 2
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [
+            "https://developer.chrome.com/docs/lighthouse/overview/"
+          ],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -556,7 +682,7 @@
         "text": "에이전트의 도구 사용 기록을 수집·요약해 다음 세션에서 필요한 프로젝트 맥락을 다시 찾도록 돕는 메모리 시스템입니다.",
         "detail": "검색 도구와 뷰어로 과거 관찰을 확인하고 문맥에 포함할 내용을 설정합니다. 이 프로젝트 자체의 요약 기능은 AI를 사용하므로 제공자 설정과 비용 조건을 살펴야 합니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/thedotmack/claude-mem#readme"
+        "source_url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md"
       },
       "guide": {
         "checked_at": "2026-11-02",
@@ -647,8 +773,8 @@
               "difference_ko": "Claude-Mem은 작업 관찰·요약의 지속 메모리와 검색에 초점을 둡니다. Context Mode는 큰 도구 출력을 격리된 실행·색인·검색으로 줄여 전달하고 SQLite·FTS5로 세션 사건을 회수하는 데 초점을 둡니다. 또한 Claude-Mem의 Apache-2.0과 Context Mode의 Elastic License 2.0은 재배포·서비스 제공 조건이 다릅니다.",
               "source_urls": [
                 "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md",
-                "https://github.com/mksglu/context-mode#readme",
-                "https://github.com/mksglu/context-mode/blob/main/LICENSE"
+                "https://github.com/mksglu/context-mode/blob/a35dd45f3976b4a22baa0032db2b3c050c00a163/README.md",
+                "https://github.com/mksglu/context-mode/blob/a35dd45f3976b4a22baa0032db2b3c050c00a163/LICENSE"
               ]
             }
           ],
@@ -663,7 +789,7 @@
               "text": "문제의 중심이 긴 로그·브라우저 결과·파일 묶음이 모델 문맥을 차지하는 데 있다면 Context Mode의 출력 격리·검색 경로와 비교해 선택할 수 있습니다.",
               "source_urls": [
                 "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md",
-                "https://github.com/mksglu/context-mode#readme"
+                "https://github.com/mksglu/context-mode/blob/a35dd45f3976b4a22baa0032db2b3c050c00a163/README.md"
               ]
             }
           ],
@@ -674,6 +800,42 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/mksglu/context-mode/blob/a35dd45f3976b4a22baa0032db2b3c050c00a163/LICENSE",
+              "sha": "15259beb88afda1c8790d41cdf948c9e0e4f211d",
+              "commit": "a35dd45f3976b4a22baa0032db2b3c050c00a163",
+              "bytes": 3840
+            },
+            {
+              "url": "https://github.com/mksglu/context-mode/blob/a35dd45f3976b4a22baa0032db2b3c050c00a163/README.md",
+              "sha": "b796169524473691594af24995d21ca94027f7c7",
+              "commit": "a35dd45f3976b4a22baa0032db2b3c050c00a163",
+              "bytes": 94871
+            },
+            {
+              "url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md",
+              "sha": "e6095776b1697376286db94962ccf52d17a2687a",
+              "commit": "c239a048a8a07607148f4c1f26b258ccfb28b80d",
+              "bytes": 20957
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md#quick-start",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -714,7 +876,7 @@
         "text": "코드 구조와 신뢰 경계를 파악하고 취약점 후보 탐색·검증·보고를 단계별로 수행하도록 구성한 보안 감사 스킬입니다.",
         "detail": "서로 독립적인 검증 역할, 구조화된 findings.json과 감사 범위 기록을 사용합니다. 어떤 코드를 조사했는지와 취약점 근거가 무엇인지 남기는 흐름을 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/cloudflare/security-audit-skill#readme"
+        "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -829,6 +991,40 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 1,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
+              "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+              "commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+              "bytes": 6950
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#installation",
+              "nonempty_lines": 2
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#usage",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [
+            "https://docs.semgrep.dev/deployment/oss-deployment",
+            "https://docs.semgrep.dev/writing-rules/overview",
+            "https://github.com/cloudflare/security-audit-skill/tree/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit"
+          ],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -878,7 +1074,7 @@
         "text": "요구사항과 설계를 정리한 뒤 구현 계획·테스트·리뷰·검증으로 이어지는 코딩 에이전트용 개발 방법론과 스킬 모음입니다.",
         "detail": "작업을 작은 단위로 나누고 테스트 주도 개발과 코드 검토를 반복하는 흐름을 제공합니다. 개별 스킬의 호출 조건과 결과물을 순서대로 읽어볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/obra/superpowers#readme"
+        "source_url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
       },
       "guide": {
         "checked_at": "2026-11-02",
@@ -991,6 +1187,36 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 2,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+              "sha": "d8017086ca85d2e851ef2e0c88470b0b09dc3d4d",
+              "commit": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+              "bytes": 116660
+            },
+            {
+              "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+              "sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+              "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+              "bytes": 14847
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md#installation",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -1045,7 +1271,7 @@
         "text": "pi 코딩 에이전트 주변에 편집기·터미널·변경 검토 화면을 묶은 IDE입니다.",
         "detail": "Git worktree로 작업 공간을 나누고 프로젝트 명세와 재사용 스킬을 유지하며 변경과 PR 상태를 살펴볼 수 있습니다. 에이전트 작업과 편집기 화면을 연결하는 구조를 확인할 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/JetBrains/thinkrail#readme"
+        "source_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md"
       },
       "guide": {
         "checked_at": "2026-11-02",
@@ -1064,7 +1290,7 @@
         ],
         "install_steps_ko": [
           "Windows의 PowerShell 또는 cmd에서 공식 설치기를 호출합니다. 설치기는 플랫폼에 맞는 바이너리와 체크섬을 확인하고 PATH를 설정합니다.",
-          "설치 후 thinkrail을 실행하고 최초 안내에서 모델 제공자와 프로젝트를 연결합니다.",
+          "설치가 끝나면 새 터미널을 열어 PATH 변경을 반영한 뒤 thinkrail을 실행하고, 최초 안내에서 모델 제공자와 프로젝트를 연결합니다.",
           "GUI 설치를 선호하면 Releases의 운영체제별 데스크톱 파일을 받아 README의 해당 운영체제 절차를 따릅니다."
         ],
         "install_code": {
@@ -1099,6 +1325,10 @@
           {
             "url": "https://github.com/JetBrains/thinkrail/releases",
             "title": "운영체제별 공식 배포 파일"
+          },
+          {
+            "title": "Windows CLI 설치기의 PATH 설정",
+            "url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/install.ps1"
           }
         ],
         "repository_id": 1293238217,
@@ -1168,6 +1398,50 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md",
+              "sha": "7594cab8513d03f0b699bb225a78322ad89ac0bc",
+              "commit": "344aafcb0b56902e5fc87834059a353d54ca8892",
+              "bytes": 19568
+            },
+            {
+              "url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/install.ps1",
+              "sha": "4fdb9ca9567b1cc4dfd62aaf0a11650a31d88bd0",
+              "commit": "344aafcb0b56902e5fc87834059a353d54ca8892",
+              "bytes": 18875
+            },
+            {
+              "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md",
+              "sha": "1f63f3609ae0dd709256623cf34f6fab8168d2f2",
+              "commit": "fa31b66bbb2ae5234205a8628a78e038d917202f",
+              "bytes": 5256
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md#command-line",
+              "nonempty_lines": 1
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md#command-line",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [
+            "https://github.com/JetBrains/thinkrail/releases"
+          ],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -1208,7 +1482,7 @@
         "text": "사용자의 컴퓨터에 설치된 코딩 에이전트를 데스크톱·웹·모바일 화면에서 다루는 인터페이스입니다.",
         "detail": "지원하는 에이전트 제공자를 먼저 설치·인증한 뒤 대화와 작업을 연결합니다. 모델 서비스와 사용 화면이 나뉘어 있는 구성을 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/pingdotgg/t3code#readme"
+        "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md"
       },
       "guide": {
         "checked_at": "2026-11-02",
@@ -1236,13 +1510,13 @@
           "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line"
         },
         "example_steps_ko": [
-          "t3로 로컬 웹 앱을 열고 인증해 둔 에이전트 제공자를 선택합니다.",
+          "먼저 t3 --help로 옵션을 확인합니다. 이어서 t3로 로컬 웹 앱을 열고 인증해 둔 에이전트 제공자를 선택합니다.",
           "프로젝트 작업을 시작해 대화와 에이전트의 변경 내용을 해당 화면에서 확인합니다.",
-          "백그라운드 상시 실행이 필요하면 공식 t3 service install 명령을 검토하고, 먼저 사용 가능한 옵션은 t3 --help로 확인합니다."
+          "macOS·Linux에서는 t3 service install로 백그라운드 서비스를 설치할 수 있습니다. Windows에서는 서버를 실행한 터미널이나 로컬 환경이 켜진 데스크톱 앱을 계속 열어 둡니다. 명령 옵션은 t3 --help에서 확인합니다."
         ],
         "example_code": {
-          "language": "bash",
-          "code": "t3\nt3 --help",
+          "language": "powershell",
+          "code": "t3 --help\nt3",
           "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line"
         },
         "sources": [
@@ -1261,6 +1535,14 @@
           {
             "url": "https://github.com/pingdotgg/t3code/releases",
             "title": "공식 데스크톱 배포 파일"
+          },
+          {
+            "title": "백그라운드 서비스의 macOS·Linux 지원",
+            "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/docs/user/background-service.md#manage-the-service"
+          },
+          {
+            "title": "원격 연결과 Windows 서버 실행 유지",
+            "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/docs/user/remote-access.md"
           }
         ],
         "repository_id": 1153130349,
@@ -1330,6 +1612,56 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 4,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md",
+              "sha": "7594cab8513d03f0b699bb225a78322ad89ac0bc",
+              "commit": "344aafcb0b56902e5fc87834059a353d54ca8892",
+              "bytes": 19568
+            },
+            {
+              "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md",
+              "sha": "1f63f3609ae0dd709256623cf34f6fab8168d2f2",
+              "commit": "fa31b66bbb2ae5234205a8628a78e038d917202f",
+              "bytes": 5256
+            },
+            {
+              "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/docs/user/background-service.md",
+              "sha": "c36527b2c425c13341cc3edc9cf922ff3fde75d7",
+              "commit": "fa31b66bbb2ae5234205a8628a78e038d917202f",
+              "bytes": 9795
+            },
+            {
+              "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/docs/user/remote-access.md",
+              "sha": "259f58c00e570e66017259dddf7987961eba11c8",
+              "commit": "fa31b66bbb2ae5234205a8628a78e038d917202f",
+              "bytes": 22957
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line",
+              "nonempty_lines": 1
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line",
+              "nonempty_lines": 2
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [
+            "https://github.com/pingdotgg/t3code/releases"
+          ],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -1364,7 +1696,7 @@
         "text": "Andrej Karpathy가 지적한 LLM 코딩 문제를 바탕으로 가정 확인·단순한 구현·필요한 범위의 수정·검증 가능한 목표를 정리한 지침입니다.",
         "detail": "제3자가 구성한 CLAUDE.md와 스킬을 코딩 에이전트에 적용할 수 있습니다. 이름에 등장하는 Karpathy 본인의 공식 저장소와는 구분합니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/multica-ai/andrej-karpathy-skills#readme"
+        "source_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md"
       },
       "guide": {
         "checked_at": "2026-11-02",
@@ -1481,6 +1813,42 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md",
+              "sha": "ff6a92573ef6412495055d979cff1d7464e1fa65",
+              "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+              "bytes": 14837
+            },
+            {
+              "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/CURSOR.md",
+              "sha": "d1f69408b4f2428b8c9c72cef1eb751317e0f71d",
+              "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+              "bytes": 1955
+            },
+            {
+              "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md",
+              "sha": "7cf07a786532bebe01c65179c8e2c3a98cc0a09b",
+              "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+              "bytes": 6198
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md#install",
+              "nonempty_lines": 2
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -1521,7 +1889,7 @@
         "text": "UI·타이포그래피·색상·접근성·레이아웃·제품 문구를 점검하는 인터페이스 설계 스킬 모음입니다.",
         "detail": "화면 전체의 문제를 우선순위로 정리하거나 대비·키보드 조작·반응형 배치 같은 항목을 개별적으로 다룰 수 있습니다. 필요한 검토 항목을 골라 적용하는 구성입니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/jakubkrehel/skills#readme"
+        "source_url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md"
       },
       "guide": {
         "checked_at": "2026-11-02",
@@ -1638,6 +2006,36 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 2,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md",
+              "sha": "4a98833328ce2fbcf3338ece1fb4a9459121bc58",
+              "commit": "592aedc44d7d5b3e29740984252902f3e5402a1c",
+              "bytes": 3633
+            },
+            {
+              "url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md",
+              "sha": "8f27aa965cb56ab578d637e53f0392ae4e2d06db",
+              "commit": "e89e3ada3e875a89ac2c5d33d11e65ebef6fe285",
+              "bytes": 15892
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md#install",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {

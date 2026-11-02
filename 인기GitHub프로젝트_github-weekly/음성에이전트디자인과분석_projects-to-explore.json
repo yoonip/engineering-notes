@@ -49,7 +49,7 @@
         "text": "음성 복제·음성 생성·영상 더빙·받아쓰기·오디오북 제작을 한 작업 공간에서 다루는 로컬 음성 도구입니다.",
         "detail": "필요한 음성 엔진과 모델을 골라 내려받고 로컬 API·MCP로 작업을 연결할 수 있습니다. 앱의 AGPL 라이선스와 모델 가중치·음성 자산의 이용 조건은 별도로 확인합니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/debpalash/VoiceStudio#readme"
+        "source_url": "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -137,7 +137,7 @@
               "difference_ko": "VoiceStudio는 여러 음성 엔진을 묶는 작업용 앱입니다. F5-TTS는 해당 TTS 모델의 CLI·Gradio 추론과 학습·미세조정을 제공하는 연구 코드이므로, 한 모델의 동작을 직접 다루는 목적에 더 가깝습니다.",
               "source_urls": [
                 "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md",
-                "https://github.com/SWivid/F5-TTS#readme"
+                "https://github.com/SWivid/F5-TTS/blob/45868abaabd74aabf03cd673d6dd00cc9d9c01ae/README.md"
               ]
             }
           ],
@@ -152,7 +152,7 @@
               "text": "특정 음성 모델의 학습 코드나 추론 설정을 연구하는 것이 목적이면, VoiceStudio의 통합 화면과 F5-TTS 같은 원 모델 저장소의 연구 기능을 나누어 비교하는 편이 좋습니다.",
               "source_urls": [
                 "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md",
-                "https://github.com/SWivid/F5-TTS#readme"
+                "https://github.com/SWivid/F5-TTS/blob/45868abaabd74aabf03cd673d6dd00cc9d9c01ae/README.md"
               ]
             }
           ],
@@ -163,6 +163,44 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/SWivid/F5-TTS/blob/45868abaabd74aabf03cd673d6dd00cc9d9c01ae/README.md",
+              "sha": "e0903aea55ae3e02c0cfa77407dcf7a49940633d",
+              "commit": "45868abaabd74aabf03cd673d6dd00cc9d9c01ae",
+              "bytes": 10449
+            },
+            {
+              "url": "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/LICENSE-NOTICE.md",
+              "sha": "d5d0478f628e090883ef617ce23376050e94ba45",
+              "commit": "1a29929cb87f8ff1470271e6498f0694d395f54d",
+              "bytes": 5164
+            },
+            {
+              "url": "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md",
+              "sha": "d34d1b10f50857223890a9de8dc63264670c38dc",
+              "commit": "1a29929cb87f8ff1470271e6498f0694d395f54d",
+              "bytes": 18937
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md#get-started",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [
+            "https://github.com/debpalash/VoiceStudio/releases/latest"
+          ],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -211,7 +249,7 @@
         "text": "코딩 에이전트가 필요한 변경을 작게 작성하고 기존 해법을 활용하도록 안내하는 스킬·플러그인입니다.",
         "detail": "검증·오류 처리·보안·접근성을 유지하면서 불필요한 코드와 작업을 줄이는 개발 원칙을 제공합니다. 기존 시스템에 기능을 추가할 때 변경 범위를 좁히는 흐름을 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/DietrichGebert/ponytail#readme"
+        "source_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -225,7 +263,8 @@
         ],
         "prerequisites_ko": [
           "스킬 또는 플러그인을 지원하는 코딩 에이전트가 필요합니다. 실제 코드 생성은 연결된 에이전트와 모델이 수행합니다.",
-          "명령 제공 방식은 호스트마다 다르며, Codex에서는 플러그인 이름공간의 스킬을 사용합니다."
+          "명령 제공 방식은 호스트마다 다르며, Codex에서는 플러그인 이름공간의 스킬을 사용합니다.",
+          "Codex·Claude Code 플러그인의 생명주기 훅에는 Node.js가 필요합니다. 에이전트가 여는 비대화형 셸의 PATH에서도 node 명령을 찾을 수 있어야 합니다."
         ],
         "install_steps_ko": [
           "아래는 README가 제시하는 Codex용 설치 명령입니다. 두 명령을 차례로 실행합니다.",
@@ -335,6 +374,54 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 4,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/INSTALL.md",
+              "sha": "efb0deba75dbe947ebeab1a7bf480772e1c997bd",
+              "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+              "bytes": 15774
+            },
+            {
+              "url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md",
+              "sha": "ff6a92573ef6412495055d979cff1d7464e1fa65",
+              "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+              "bytes": 14837
+            },
+            {
+              "url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+              "sha": "d8017086ca85d2e851ef2e0c88470b0b09dc3d4d",
+              "commit": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+              "bytes": 116660
+            },
+            {
+              "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+              "sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+              "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+              "bytes": 14847
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md#install",
+              "nonempty_lines": 2
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md#commands",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -372,7 +459,7 @@
         "text": "코드 구조와 신뢰 경계를 파악하고 취약점 후보 탐색·검증·보고를 단계별로 수행하도록 구성한 보안 감사 스킬입니다.",
         "detail": "서로 독립적인 검증 역할, 구조화된 findings.json과 감사 범위 기록을 사용합니다. 어떤 코드를 조사했는지와 취약점 근거가 무엇인지 남기는 흐름을 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/cloudflare/security-audit-skill#readme"
+        "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -487,6 +574,40 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 1,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
+              "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+              "commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+              "bytes": 6950
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#installation",
+              "nonempty_lines": 2
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#usage",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [
+            "https://docs.semgrep.dev/deployment/oss-deployment",
+            "https://docs.semgrep.dev/writing-rules/overview",
+            "https://github.com/cloudflare/security-audit-skill/tree/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit"
+          ],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -533,7 +654,7 @@
         "text": "코딩 에이전트의 계획·테스트·구현·리뷰·검증·기억을 연결하는 스킬과 작업 흐름 모음입니다.",
         "detail": "Claude Code·Codex·OpenCode·Cursor 등 여러 환경에서 반복되는 개발 절차를 재사용하도록 구성합니다. 스킬 수를 외우기보다 프로젝트에 필요한 절차와 설정 파일을 골라 읽는 데 적합합니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/affaan-m/ECC#readme"
+        "source_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -652,6 +773,48 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md",
+              "sha": "ff6a92573ef6412495055d979cff1d7464e1fa65",
+              "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+              "bytes": 14837
+            },
+            {
+              "url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+              "sha": "d8017086ca85d2e851ef2e0c88470b0b09dc3d4d",
+              "commit": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+              "bytes": 116660
+            },
+            {
+              "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+              "sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+              "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+              "bytes": 14847
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md#recommended-universal-guided-setup",
+              "nonempty_lines": 1
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md#start-using-ecc",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -695,7 +858,7 @@
         "text": "코딩 에이전트가 화면 디자인을 구체적으로 지시하고 검토할 때 쓰는 디자인 어휘와 명령을 제공합니다.",
         "detail": "polish·bolder·critique·audit 같은 작업으로 시각적 방향과 UI 품질을 조정합니다. 디자인 지침과 실제 검토 명령이 어떻게 연결되는지 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/pbakaus/impeccable#readme"
+        "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -714,7 +877,7 @@
         "install_steps_ko": [
           "적용할 프로젝트의 루트 디렉터리에서 아래 설치 명령을 실행합니다.",
           "설치 프로그램이 감지한 코딩 도구와 프로젝트·전역 범위를 선택합니다. 훅을 지원하는 호스트에서는 해당 설정도 확인합니다.",
-          "코딩 도구를 다시 열고 impeccable init을 실행해 프로젝트 목적을 정리합니다. Codex의 훅은 /hooks에서 신뢰해야 적용됩니다."
+          "코딩 도구를 다시 열고 에이전트에서 /impeccable init을 실행해 프로젝트 목적을 정리합니다. Codex에서는 $impeccable init을 사용하며, 훅은 /hooks에서 신뢰해야 적용됩니다."
         ],
         "install_code": {
           "language": "sh",
@@ -813,6 +976,48 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md",
+              "sha": "8efa355f7d03ada51edccea568dccf26e628b511",
+              "commit": "12af471f627f866411b4bd785b19646d3672784c",
+              "bytes": 15088
+            },
+            {
+              "url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md",
+              "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
+              "commit": "4f6a46c6dc325d40ab268c93e25c7b96676ebccd",
+              "bytes": 8742
+            },
+            {
+              "url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md",
+              "sha": "8f27aa965cb56ab578d637e53f0392ae4e2d06db",
+              "commit": "e89e3ada3e875a89ac2c5d33d11e65ebef6fe285",
+              "bytes": 15892
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#installation",
+              "nonempty_lines": 1
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#why",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -866,7 +1071,7 @@
         "text": "HTML·CSS와 시간 탐색이 가능한 애니메이션으로 영상을 작성하고 미리보기·렌더링하는 도구입니다.",
         "detail": "에이전트용 스킬이 영상 계획·미디어 배치·검사·렌더링을 안내하며 GSAP·CSS·Lottie·Three.js 등의 애니메이션을 연결할 수 있습니다. 웹 기반 장면을 영상으로 출력하는 구조를 익히는 데 도움이 됩니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/heygen-com/hyperframes#readme"
+        "source_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -895,11 +1100,11 @@
         "example_steps_ko": [
           "짧은 제품 소개 영상에 제목이 나타나는 장면·배경 영상·배경 음악을 배치하는 상황을 가정합니다.",
           "아래 preview 명령으로 브라우저에서 장면과 시간축을 확인하고, 제목 표시 시점과 미디어 배치를 조정합니다.",
-          "render 명령으로 MP4를 출력한 뒤 길이·프레임·자막·소리가 의도한 결과와 맞는지 확인합니다."
+          "미리보기를 마치면 preview 서버를 종료하거나 다른 터미널에서 같은 my-video 디렉터리로 이동한 뒤 render 명령을 실행합니다. 출력한 MP4의 길이·프레임·자막·소리가 의도한 결과와 맞는지 확인합니다."
         ],
         "example_code": {
           "language": "sh",
-          "code": "npx hyperframes preview\nnpx hyperframes render",
+          "code": "npx hyperframes preview      # preview in browser with live reload\nnpx hyperframes render       # render to MP4",
           "source_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#manually-with-the-cli"
         },
         "sources": [
@@ -978,6 +1183,38 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 1,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md",
+              "sha": "e76e22f63cd7b6f5ffce43d522781bbf30efdf6c",
+              "commit": "7c5c1ce849a6b479f957b69de8dcac8db7eab127",
+              "bytes": 23433
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#manually-with-the-cli",
+              "nonempty_lines": 2
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#manually-with-the-cli",
+              "nonempty_lines": 2
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [
+            "https://www.remotion.dev/docs/idea"
+          ],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -1031,9 +1268,9 @@
       },
       "introduction": {
         "text": "웹·소셜·영상 플랫폼의 자료를 읽고 검색해 에이전트에서 다루기 쉽게 연결하는 CLI 도구입니다.",
-        "detail": "YouTube·Bilibili의 자막과 전사, GitHub 저장소·이슈 등 플랫폼별 입력을 제공합니다. 일부 기능은 인증이나 별도 도구가 필요하며 플랫폼마다 지원 범위가 다릅니다.",
+        "detail": "YouTube의 영상 정보·자막·음성 전사, Bilibili의 영상 정보·자막, GitHub 저장소·이슈 등 플랫폼별 자료를 제공합니다. 일부 기능은 인증이나 별도 도구가 필요하며 플랫폼마다 지원 범위가 다릅니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/Panniantong/Agent-Reach#readme"
+        "source_url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -1125,13 +1362,13 @@
               "difference_ko": "yt-dlp는 영상·오디오 다운로드, 형식 선택, 자막 파일 저장을 세밀하게 제어하는 CLI입니다. Agent-Reach는 GitHub·웹·커뮤니티·영상 자료를 에이전트의 채널 작업으로 연결합니다. 영상 파일과 자막을 일괄 보관하는 작업과 여러 출처의 내용을 조사하는 작업에서 선택 기준이 달라집니다.",
               "source_urls": [
                 "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md",
-                "https://github.com/yt-dlp/yt-dlp#readme"
+                "https://github.com/yt-dlp/yt-dlp/blob/b77c9304e1c4220cca450c583491904daf8455af/README.md"
               ]
             }
           ],
           "choose_ko": [
             {
-              "text": "GitHub README, 웹페이지, 영상 자막을 같은 조사 흐름에서 읽어야 하고 채널별 로그인·의존성을 관리할 수 있다면 Agent-Reach를 검토할 수 있습니다. 이 선택은 지원 채널과 대체 도구 구조에 근거합니다.",
+              "text": "GitHub README, 웹페이지, 영상 자막을 같은 조사 흐름에서 읽어야 하고 채널별 로그인·의존성을 관리할 수 있다면 Agent-Reach를 검토할 수 있습니다.",
               "source_urls": [
                 "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md"
               ]
@@ -1140,7 +1377,7 @@
               "text": "영상의 해상도·컨테이너·오디오 트랙·자막 파일을 정확히 골라 저장하는 작업이 중심이라면 yt-dlp의 다운로드 옵션을 먼저 비교하는 편이 맞습니다.",
               "source_urls": [
                 "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md",
-                "https://github.com/yt-dlp/yt-dlp#readme"
+                "https://github.com/yt-dlp/yt-dlp/blob/b77c9304e1c4220cca450c583491904daf8455af/README.md"
               ]
             }
           ],
@@ -1151,6 +1388,54 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 4,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md",
+              "sha": "5d355b2bd0c451a5394e6e0978fe4933c4e1f061",
+              "commit": "7a38047acf26a729cbb27851e3cb81639da86b29",
+              "bytes": 16010
+            },
+            {
+              "url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/agent_reach/skill/SKILL.md",
+              "sha": "b16129cccb2bb0a79339f923b4dceb2e108622f4",
+              "commit": "7a38047acf26a729cbb27851e3cb81639da86b29",
+              "bytes": 7119
+            },
+            {
+              "url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/docs/install.md",
+              "sha": "ceda54e4c515c759fe423d90fdacb6fd626ab88a",
+              "commit": "7a38047acf26a729cbb27851e3cb81639da86b29",
+              "bytes": 3341
+            },
+            {
+              "url": "https://github.com/yt-dlp/yt-dlp/blob/b77c9304e1c4220cca450c583491904daf8455af/README.md",
+              "sha": "750fae655ea0d5221bf49901508deb44681f3db0",
+              "commit": "b77c9304e1c4220cca450c583491904daf8455af",
+              "bytes": 179127
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/docs/install.md#1-install-and-set-up",
+              "nonempty_lines": 2
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/agent_reach/skill/SKILL.md",
+              "nonempty_lines": 2
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -1192,7 +1477,7 @@
         "text": "NSA 연구부서가 만들고 유지하는 소프트웨어 역공학 프레임워크입니다.",
         "detail": "컴파일된 실행 파일을 디스어셈블·디컴파일하고 제어 흐름 그래프와 스크립팅으로 분석합니다. Windows·macOS·Linux에서 바이너리 분석 구조와 디컴파일 결과를 공부할 때 활용할 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/NationalSecurityAgency/ghidra#readme"
+        "source_url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -1207,7 +1492,7 @@
         "prerequisites_ko": [
           "현재 공식 README의 사전 빌드 배포판 설치 기준은 64비트 JDK 25입니다.",
           "운영체제에 맞는 공식 multi-platform Release ZIP을 사용합니다. Release의 Source Code ZIP은 사전 빌드 프로그램과 다릅니다.",
-          "Python은 PyGhidra를 사용할 때 별도로 필요하며, 일반 GUI를 시작하는 절차와 소스 빌드 요구사항은 구분합니다."
+          "PyGhidra나 Debugger 연동에는 Python도 필요합니다. 일반 GUI를 시작하는 절차와 소스 빌드 요구사항은 구분합니다."
         ],
         "install_steps_ko": [
           "공식 Releases에서 ghidra_<version>_<release>_<date>.zip 형태의 배포 파일을 받습니다.",
@@ -1288,7 +1573,7 @@
               "difference_ko": "radare2는 저수준 CLI·라이브러리·플러그인과 r2pipe 스크립팅을 중심으로 분석·디버깅·수정을 연결합니다. Ghidra는 디컴파일러·그래프·주석을 함께 탐색하는 통합 분석 환경을 제공합니다. radare2에도 공식 Qt GUI와 Ghidra 디컴파일러 연동 플러그인이 있어 GUI 유무만으로 구분하지 않습니다.",
               "source_urls": [
                 "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md",
-                "https://github.com/radareorg/radare2/blob/master/README.md"
+                "https://github.com/radareorg/radare2/blob/95dc2b15c1f3123a745cd9bad1b1ee027487ff39/README.md"
               ]
             }
           ],
@@ -1303,7 +1588,7 @@
               "text": "분석 명령을 터미널 파이프라인이나 기존 스크립트에 촘촘히 연결하고 디버깅·바이너리 수정 작업을 함께 하려면 radare2의 CLI와 r2pipe를 비교해 볼 수 있습니다.",
               "source_urls": [
                 "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md",
-                "https://github.com/radareorg/radare2/blob/master/README.md"
+                "https://github.com/radareorg/radare2/blob/95dc2b15c1f3123a745cd9bad1b1ee027487ff39/README.md"
               ]
             }
           ],
@@ -1314,6 +1599,50 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 4,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/GhidraDocs/GettingStarted.md",
+              "sha": "2dd828b7f1b83b51ec7104ecc775f8ce9b9db4d7",
+              "commit": "4718f50d9941b9d7b7ebd1febc2982f055560a73",
+              "bytes": 26142
+            },
+            {
+              "url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/GhidraDocs/GhidraClass/Beginner/Introduction_to_Ghidra_Student_Guide.html",
+              "sha": "4fc0d4db859090cd3d5c47942a171cc05369ee83",
+              "commit": "4718f50d9941b9d7b7ebd1febc2982f055560a73",
+              "bytes": 122370
+            },
+            {
+              "url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md",
+              "sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
+              "commit": "4718f50d9941b9d7b7ebd1febc2982f055560a73",
+              "bytes": 7205
+            },
+            {
+              "url": "https://github.com/radareorg/radare2/blob/95dc2b15c1f3123a745cd9bad1b1ee027487ff39/README.md",
+              "sha": "9a8a827054adc8a3c1e7c822cd6476f65472adb7",
+              "commit": "95dc2b15c1f3123a745cd9bad1b1ee027487ff39",
+              "bytes": 10644
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md#install",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [
+            "https://github.com/NationalSecurityAgency/ghidra/releases"
+          ],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -1360,10 +1689,10 @@
         "metadata_url": "https://api.github.com/repos/Leonxlnx/taste-skill"
       },
       "introduction": {
-        "text": "웹사이트와 앱 화면을 만들 때 코딩 에이전트에 미술적 방향·참고 이미지·브라우저 확인 절차를 제공하는 디자인 스킬입니다.",
+        "text": "웹사이트와 앱 화면을 만들 때 코딩 에이전트에 시각적 방향·참고 이미지·브라우저 확인 절차를 제공하는 디자인 스킬입니다.",
         "detail": "실제 이미지를 참고해 방향을 정하고 구현한 화면을 브라우저에서 확인하는 흐름을 제공합니다. 설치 환경은 저장소의 현재 요구사항에서 확인할 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/Leonxlnx/taste-skill#readme"
+        "source_url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -1481,6 +1810,42 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md",
+              "sha": "8efa355f7d03ada51edccea568dccf26e628b511",
+              "commit": "12af471f627f866411b4bd785b19646d3672784c",
+              "bytes": 15088
+            },
+            {
+              "url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/skills/taste-skill/SKILL.md",
+              "sha": "d8444f13b76be100b3b088dfdae738e85288d6b6",
+              "commit": "12af471f627f866411b4bd785b19646d3672784c",
+              "bytes": 39537
+            },
+            {
+              "url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md",
+              "sha": "8f27aa965cb56ab578d637e53f0392ae4e2d06db",
+              "commit": "e89e3ada3e875a89ac2c5d33d11e65ebef6fe285",
+              "bytes": 15892
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md#install",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -1518,7 +1883,7 @@
         "text": "여러 LLM 제공자의 무료 사용 구간과 사용자 지정 엔드포인트를 하나의 OpenAI 호환 API에 연결하는 라우터입니다.",
         "detail": "제공자가 제한에 걸리면 다음 제공자로 전환하고 키별 사용량을 추적합니다. 무료 범위와 이용 조건은 각 제공자에 따르며, 제작자는 개인 실험·학습 용도로 설명합니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/tashfeenahmed/freellmapi#readme"
+        "source_url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -1547,7 +1912,7 @@
         },
         "example_steps_ko": [
           "공식 README의 Python 클라이언트 예시는 base_url을 로컬 라우터의 /v1 주소로 정하고 통합 키로 요청을 보냅니다.",
-          "아래 api_key의 예시 문자열을 자신의 통합 키로 바꾸고, OpenAI 호환 Python SDK가 준비된 별도 클라이언트에서 실행합니다. model=auto는 라우터의 선택을 사용합니다.",
+          "아래 api_key의 예시 문자열을 자신의 통합 키로 바꾸고, 라우터와 같은 컴퓨터에서 Python용 OpenAI SDK가 설치된 환경으로 실행합니다. model=auto는 라우터의 선택을 사용합니다.",
           "대시보드의 요청 기록에서 실제 사용된 제공자·모델과 실패·대체 여부를 확인합니다. 아래 코드는 공식 예시에서 응답 본문을 출력하는 부분까지 발췌했으며 이 문서 작성 중 실행한 결과는 아닙니다."
         ],
         "example_code": {
@@ -1611,7 +1976,7 @@
               "difference_ko": "LiteLLM은 Python SDK와 팀·조직용 중앙 Proxy Server를 제공하며 가상 키, 사용자·프로젝트별 비용 관리, 로깅·가드레일·부하 분산을 다룹니다. FreeLLMAPI는 개인 로컬 환경에서 제공자별 무료 한도와 대체 체인을 묶는 흐름을 강조합니다. 두 도구 모두 실제 추론은 연결한 제공자나 모델 서버가 수행합니다.",
               "source_urls": [
                 "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md",
-                "https://github.com/BerriAI/litellm/blob/main/README.md"
+                "https://github.com/BerriAI/litellm/blob/60fc121ce8ab995cb2997e0bbd0a980ee93c627d/README.md"
               ]
             }
           ],
@@ -1626,7 +1991,7 @@
               "text": "팀별 가상 키·프로젝트 예산·권한·감사 기록을 중앙에서 관리해야 한다면 LiteLLM Proxy의 운영 기능을 먼저 검토하는 편이 좋습니다. 무료 한도를 합치는 것과 조직 운영 요건을 충족하는 것은 별도 판단입니다.",
               "source_urls": [
                 "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md",
-                "https://github.com/BerriAI/litellm/blob/main/README.md"
+                "https://github.com/BerriAI/litellm/blob/60fc121ce8ab995cb2997e0bbd0a980ee93c627d/README.md"
               ]
             }
           ],
@@ -1637,6 +2002,50 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/BerriAI/litellm/blob/60fc121ce8ab995cb2997e0bbd0a980ee93c627d/README.md",
+              "sha": "3b5710fa0c5677be55b90ef02291c70a7101c932",
+              "commit": "60fc121ce8ab995cb2997e0bbd0a980ee93c627d",
+              "bytes": 40943
+            },
+            {
+              "url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md",
+              "sha": "97031d8ebe8c9e9ecfbf204ee3a99c47bb2bcb26",
+              "commit": "21d287aed0aad56cf74bd001d24194916b5a4515",
+              "bytes": 62589
+            },
+            {
+              "url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/docs/en/install/01-install.md",
+              "sha": "54cc22c8f57d65723902a603a2128fbe2f229efb",
+              "commit": "21d287aed0aad56cf74bd001d24194916b5a4515",
+              "bytes": 21481
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/docs/en/install/01-install.md#docker-compose",
+              "nonempty_lines": 5
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md#using-the-api",
+              "nonempty_lines": 10
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [
+            "https://github.com/tashfeenahmed/freellmapi/releases/latest"
+          ],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {
@@ -1674,7 +2083,7 @@
         "text": "DeepSeek 모델용 대규모 추론 프레임워크로 최적화 커널·병렬 실행·비동기 스케줄링·구조화 출력을 제공합니다.",
         "detail": "공개판은 오프라인 추론을 중심으로 하며 완전한 서비스에는 KV 캐시·분리형 서빙·부하 분산 등의 추가 구성이 필요합니다. 지원 모델과 GPU·가속기 조건은 공식 README에서 확인합니다.",
         "method": "README 해설 (2026-11-02 확인)",
-        "source_url": "https://github.com/deepseek-ai/DeepInfer#readme"
+        "source_url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md"
       },
       "guide": {
         "audience_ko": [
@@ -1763,7 +2172,7 @@
               "difference_ko": "vLLM은 여러 모델 아키텍처·하드웨어를 대상으로 추론과 온라인 서빙을 제공하고 OpenAI 호환 API 서버를 포함합니다. DeepInfer의 현재 공개 범위는 특정 DeepSeek 모델과 가속기의 오프라인 실행·핵심 엔진에 집중합니다.",
               "source_urls": [
                 "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md",
-                "https://github.com/vllm-project/vllm/blob/main/README.md"
+                "https://github.com/vllm-project/vllm/blob/49fee5b34c164532b889747eef6d194fe0103d1c/README.md"
               ]
             }
           ],
@@ -1778,7 +2187,7 @@
               "text": "여러 모델을 바꿔 가며 OpenAI 호환 API 서버를 빠르게 구성하는 것이 우선이면, 자신이 가진 하드웨어와 모델이 지원되는지 확인한 뒤 vLLM을 먼저 비교하는 편이 적합합니다.",
               "source_urls": [
                 "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md",
-                "https://github.com/vllm-project/vllm/blob/main/README.md"
+                "https://github.com/vllm-project/vllm/blob/49fee5b34c164532b889747eef6d194fe0103d1c/README.md"
               ]
             }
           ],
@@ -1789,6 +2198,48 @@
           "method": "공식 문서의 기능·조건에 근거한 비교",
           "origin": "reviewed",
           "source_url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md"
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md",
+              "sha": "7143caadd1258f56295e2c7766889478556836b3",
+              "commit": "553741557a57df44a46fb3ab72b6aafeaf945337",
+              "bytes": 4660
+            },
+            {
+              "url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/examples/README.md",
+              "sha": "a9bd750659682d33ef4769240c2e1b4efbf54fde",
+              "commit": "553741557a57df44a46fb3ab72b6aafeaf945337",
+              "bytes": 13550
+            },
+            {
+              "url": "https://github.com/vllm-project/vllm/blob/49fee5b34c164532b889747eef6d194fe0103d1c/README.md",
+              "sha": "ff92fface4421933f1056f53d736c0840eac4728",
+              "commit": "49fee5b34c164532b889747eef6d194fe0103d1c",
+              "bytes": 5772
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md#build-from-source",
+              "nonempty_lines": 2
+            },
+            {
+              "field": "example_code",
+              "mode": "manual_line_presence_inline_table_or_fence",
+              "source_url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md#offline-inference",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 0,
+          "excerpt_checks": [],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
         }
       },
       "readme": {

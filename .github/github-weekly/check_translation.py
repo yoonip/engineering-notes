@@ -7,6 +7,7 @@ import tempfile
 from collect import HERE, Introductions, KST, clean, collect, datetime, get, repository
 import guides
 import comparisons
+import source_checks
 
 cache = {}
 introductions = Introductions({}, cache)
@@ -29,6 +30,7 @@ with tempfile.TemporaryDirectory(prefix='github-weekly-live-') as directory:
     items = json.loads(record.read_text(encoding='utf-8'))['items']
     assert all(item.get('guide') and item.get('readme') for item in items)
     assert all(item['guide'].get('assessment') for item in items)
+    assert all(item['guide'].get('source_checks') for item in items)
     print(json.dumps(result, ensure_ascii=False))
     # 처음 등장한 저장소와 같은 경로로 원문 추출·CPU 번역도 실제 확인합니다.
     repo = items[0]['repository']
@@ -39,6 +41,8 @@ with tempfile.TemporaryDirectory(prefix='github-weekly-live-') as directory:
     assert extracted['method'] == '공식 README 구간 추출·한국어 번역'
     extracted['assessment'] = comparisons.build(repo, readme, {}, introductions, get,
                                                repository, os.environ.get('GITHUB_TOKEN', ''))
+    checked = source_checks.verify(extracted, readme, get, os.environ.get('GITHUB_TOKEN', ''))
     comparison_markdown = '\n'.join(guides.render_guide(extracted, clean))
     assert all('### ' + heading in comparison_markdown for heading in ('장점', '제약과 확인할 점', '비슷한 도구와의 차이', '선택하기 좋은 상황'))
     print('README extraction and CPU translation: ' + repo['full_name'] + ' @ ' + readme['commit'][:12])
+    print(json.dumps(checked, ensure_ascii=False))

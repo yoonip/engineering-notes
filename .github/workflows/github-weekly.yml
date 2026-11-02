@@ -44,7 +44,7 @@ jobs:
           python3 -m pip install --disable-pip-version-check torch==2.9.0 --index-url https://download.pytorch.org/whl/cpu
           python3 -m pip install --disable-pip-version-check -r .github/github-weekly/requirements.txt
 
-      - name: 날짜·중복·수집 실패 검사 / Test archives and failure handling
+      - name: 주차·출처·원문 발췌 검사 / Test archives and source excerpts
         run: python3 -m unittest discover -s .github/github-weekly -p 'test_*.py' -v
 
       - name: CPU 번역 모델 확인 / Check CPU translation

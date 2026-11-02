@@ -69,6 +69,37 @@ class ParserTests(TestCase):
         parsed = guides.sections('Installation\n------------\n~~~bash\ninstall-tool\n~~~\n')
         self.assertEqual(guides.code_example(parsed, 'installation')['code'], 'install-tool')
 
+    def test_spaced_fence_keeps_shell_comments_and_following_heading(self):
+        parsed = guides.sections('## Build from source\n``` bash\n# Keep this exported\nexport ENGINE=nvidia\n./build.sh\n```\n### Offline inference\n``` bash\npython examples/offline_inference.py\n```')
+        self.assertEqual([s['heading'] for s in parsed], ['Introduction','Build from source','Offline inference'])
+        self.assertEqual(parsed[1]['codes'][0]['language'], 'bash')
+        self.assertEqual(parsed[1]['codes'][0]['code'], '# Keep this exported\nexport ENGINE=nvidia\n./build.sh')
+        self.assertEqual(parsed[2]['codes'][0]['code'], 'python examples/offline_inference.py')
+
+    def test_numbered_heading_is_not_treated_as_a_list_item(self):
+        parsed = guides.sections('## 1. Install and set up\nInstall the package.')
+        self.assertEqual(parsed[1]['heading'], '1. Install and set up')
+
+    def test_long_first_step_does_not_expose_only_a_later_step(self):
+        text='## Installation\n```sh\n'+'\n'.join('prepare-environment' for _ in range(16))+'\n```\n```sh\nstart-server\n```'
+        self.assertIsNone(guides.code_example(guides.sections(text),'installation'))
+
+    def test_prerequisite_script_is_not_skipped_before_install(self):
+        text='## Installation\n### Prerequisites\nPrepare the required certificate.\n```sh\n'+'\n'.join('prepare-certificate' for _ in range(16))+'\n```\n### Install package\n```sh\ninstall-tool\n```'
+        self.assertIsNone(guides.code_example(guides.sections(text),'installation'))
+
+    def test_usage_nested_under_installation_is_not_an_install_step(self):
+        parsed=guides.sections('## Installation\n### Usage\n```sh\nstart-server\n```\n### Windows\n```powershell\ninstall-tool.ps1\n```')
+        self.assertEqual(guides.code_example(parsed,'installation')['code'],'install-tool.ps1')
+        self.assertEqual(guides.code_example(parsed,'examples')['code'],'start-server')
+
+    def test_install_scope_stops_at_another_document(self):
+        parsed=guides.sections('## Installation\nPrepare Python.')
+        for s in parsed:s['source_url']='first'
+        second=guides.sections('### Run\n```sh\nstart-server\n```')
+        for s in second:s['source_url']='second'
+        self.assertIsNone(guides.code_example(parsed+second,'installation'))
+
     def test_incomplete_or_long_script_is_not_truncated_into_a_command(self):
         self.assertIsNone(guides.code_example(guides.sections('## Install\n```sh\nincomplete'), 'installation'))
         text = '## Install\n```sh\n' + '\n'.join('run-tool' for _ in range(16)) + '\n```'
@@ -176,8 +207,15 @@ class GuideTests(TestCase):
         readme = dict(self.readme, text='## Install\n### Windows\nUse PowerShell on Windows.\n```powershell\ninstall-tool.ps1\n```')
         guide = guides.make_guide(self.repo, readme, {}, self.translations)
         output = '\n'.join(guides.render_guide(guide, collect.clean))
-        self.assertIn('공식 문서의 명령·예시 — Windows:', output)
+        self.assertIn('공식 문서의 명령·예시 — Install → Windows:', output)
         self.assertEqual(guide['install_code']['context'], 'Use PowerShell on Windows.')
+
+    def test_parent_install_condition_remains_with_a_platform_command(self):
+        readme=dict(self.readme,text='## Install\nUse an isolated Python environment before installing this package.\n### Windows\nUse PowerShell on Windows.\n```powershell\ninstall-tool.ps1\n```')
+        guide=guides.make_guide(self.repo,readme,{},self.translations)
+        output='\n'.join(guides.render_guide(guide,collect.clean))
+        self.assertIn('Use an isolated Python environment before installing this package. Use PowerShell on Windows.',output)
+        self.assertIn('원문 조건:',output)
 
     def test_chinese_prose_is_not_sent_to_english_translator(self):
         result = guides.korean_text('这是中文说明文字。', self.translations)

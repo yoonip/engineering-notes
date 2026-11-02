@@ -60,7 +60,8 @@
     ],
     "prerequisites_ko": [
       "스킬 또는 플러그인을 지원하는 코딩 에이전트가 필요합니다. 실제 코드 생성은 연결된 에이전트와 모델이 수행합니다.",
-      "명령 제공 방식은 호스트마다 다르며, Codex에서는 플러그인 이름공간의 스킬을 사용합니다."
+      "명령 제공 방식은 호스트마다 다르며, Codex에서는 플러그인 이름공간의 스킬을 사용합니다.",
+      "Codex·Claude Code 플러그인의 생명주기 훅에는 Node.js가 필요합니다. 에이전트가 여는 비대화형 셸의 PATH에서도 node 명령을 찾을 수 있어야 합니다."
     ],
     "install_steps_ko": [
       "아래는 README가 제시하는 Codex용 설치 명령입니다. 두 명령을 차례로 실행합니다.",
@@ -209,7 +210,7 @@
     "install_steps_ko": [
       "적용할 프로젝트의 루트 디렉터리에서 아래 설치 명령을 실행합니다.",
       "설치 프로그램이 감지한 코딩 도구와 프로젝트·전역 범위를 선택합니다. 훅을 지원하는 호스트에서는 해당 설정도 확인합니다.",
-      "코딩 도구를 다시 열고 impeccable init을 실행해 프로젝트 목적을 정리합니다. Codex의 훅은 /hooks에서 신뢰해야 적용됩니다."
+      "코딩 도구를 다시 열고 에이전트에서 /impeccable init을 실행해 프로젝트 목적을 정리합니다. Codex에서는 $impeccable init을 사용하며, 훅은 /hooks에서 신뢰해야 적용됩니다."
     ],
     "install_code": {
       "language": "sh",
@@ -264,11 +265,11 @@
     "example_steps_ko": [
       "짧은 제품 소개 영상에 제목이 나타나는 장면·배경 영상·배경 음악을 배치하는 상황을 가정합니다.",
       "아래 preview 명령으로 브라우저에서 장면과 시간축을 확인하고, 제목 표시 시점과 미디어 배치를 조정합니다.",
-      "render 명령으로 MP4를 출력한 뒤 길이·프레임·자막·소리가 의도한 결과와 맞는지 확인합니다."
+      "미리보기를 마치면 preview 서버를 종료하거나 다른 터미널에서 같은 my-video 디렉터리로 이동한 뒤 render 명령을 실행합니다. 출력한 MP4의 길이·프레임·자막·소리가 의도한 결과와 맞는지 확인합니다."
     ],
     "example_code": {
       "language": "sh",
-      "code": "npx hyperframes preview\nnpx hyperframes render",
+      "code": "npx hyperframes preview      # preview in browser with live reload\nnpx hyperframes render       # render to MP4",
       "source_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#manually-with-the-cli"
     },
     "sources": [
@@ -348,7 +349,7 @@
     "prerequisites_ko": [
       "현재 공식 README의 사전 빌드 배포판 설치 기준은 64비트 JDK 25입니다.",
       "운영체제에 맞는 공식 multi-platform Release ZIP을 사용합니다. Release의 Source Code ZIP은 사전 빌드 프로그램과 다릅니다.",
-      "Python은 PyGhidra를 사용할 때 별도로 필요하며, 일반 GUI를 시작하는 절차와 소스 빌드 요구사항은 구분합니다."
+      "PyGhidra나 Debugger 연동에는 Python도 필요합니다. 일반 GUI를 시작하는 절차와 소스 빌드 요구사항은 구분합니다."
     ],
     "install_steps_ko": [
       "공식 Releases에서 ghidra_<version>_<release>_<date>.zip 형태의 배포 파일을 받습니다.",
@@ -472,7 +473,7 @@
     },
     "example_steps_ko": [
       "공식 README의 Python 클라이언트 예시는 base_url을 로컬 라우터의 /v1 주소로 정하고 통합 키로 요청을 보냅니다.",
-      "아래 api_key의 예시 문자열을 자신의 통합 키로 바꾸고, OpenAI 호환 Python SDK가 준비된 별도 클라이언트에서 실행합니다. model=auto는 라우터의 선택을 사용합니다.",
+      "아래 api_key의 예시 문자열을 자신의 통합 키로 바꾸고, 라우터와 같은 컴퓨터에서 Python용 OpenAI SDK가 설치된 환경으로 실행합니다. model=auto는 라우터의 선택을 사용합니다.",
       "대시보드의 요청 기록에서 실제 사용된 제공자·모델과 실패·대체 여부를 확인합니다. 아래 코드는 공식 예시에서 응답 본문을 출력하는 부분까지 발췌했으며 이 문서 작성 중 실행한 결과는 아닙니다."
     ],
     "example_code": {
@@ -574,7 +575,7 @@
       "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#install"
     },
     "example_steps_ko": [
-      "공식 README의 기존 페이지 점검 예시는 아래와 같습니다. 경로는 작업할 실제 프로젝트의 경로에 맞춥니다.",
+      "공식 README의 기존 페이지 재설계·점검 예시는 아래와 같습니다. 경로는 작업할 실제 프로젝트의 경로에 맞춥니다.",
       "audit 결과에서 링크·입력·키보드 초점·반응형 배치 등 확인 항목을 읽고 필요한 변경을 결정합니다.",
       "redesign을 선택하면 기존 내용과 연결 기능을 기록한 뒤 레이아웃을 바꿉니다. 전후 화면과 링크·폼 동작이 유지됐는지 함께 확인합니다."
     ],
@@ -618,7 +619,7 @@
       "선택 기능으로 Google 관련 API와 외부 SEO 데이터를 연결할 수 있으며, 연결 기능의 인증 조건은 별도로 적용됩니다."
     ],
     "prerequisites_ko": [
-      "공식 README 기준 Claude Code 1.0.33 이상이 필요합니다. 아래 슬래시 명령은 일반 PowerShell이 아니라 Claude Code 대화창에 입력합니다.",
+      "공식 문서 기준 Claude Code 1.0.33 이상과 Python 3.11~3.14 및 pip가 필요합니다. 아래 슬래시 명령은 Claude Code 대화창에 입력합니다.",
       "/seo setup이 이 플러그인용 Python 환경과 headless Chromium을 준비합니다. 검사에는 Claude Code의 모델 사용 환경이 필요합니다."
     ],
     "install_steps_ko": [
@@ -657,6 +658,10 @@
       {
         "url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#how-an-audit-works",
         "title": "감사 과정과 보고서"
+      },
+      {
+        "title": "Python·pip 선행 요건과 플러그인 환경 준비",
+        "url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/docs/INSTALLATION.md#prerequisites"
       }
     ],
     "repository_id": 1152014594,
@@ -780,7 +785,7 @@
     ],
     "install_steps_ko": [
       "Windows의 PowerShell 또는 cmd에서 공식 설치기를 호출합니다. 설치기는 플랫폼에 맞는 바이너리와 체크섬을 확인하고 PATH를 설정합니다.",
-      "설치 후 thinkrail을 실행하고 최초 안내에서 모델 제공자와 프로젝트를 연결합니다.",
+      "설치가 끝나면 새 터미널을 열어 PATH 변경을 반영한 뒤 thinkrail을 실행하고, 최초 안내에서 모델 제공자와 프로젝트를 연결합니다.",
       "GUI 설치를 선호하면 Releases의 운영체제별 데스크톱 파일을 받아 README의 해당 운영체제 절차를 따릅니다."
     ],
     "install_code": {
@@ -815,6 +820,10 @@
       {
         "url": "https://github.com/JetBrains/thinkrail/releases",
         "title": "운영체제별 공식 배포 파일"
+      },
+      {
+        "title": "Windows CLI 설치기의 PATH 설정",
+        "url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/install.ps1"
       }
     ],
     "repository_id": 1293238217,
@@ -847,13 +856,13 @@
       "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line"
     },
     "example_steps_ko": [
-      "t3로 로컬 웹 앱을 열고 인증해 둔 에이전트 제공자를 선택합니다.",
+      "먼저 t3 --help로 옵션을 확인합니다. 이어서 t3로 로컬 웹 앱을 열고 인증해 둔 에이전트 제공자를 선택합니다.",
       "프로젝트 작업을 시작해 대화와 에이전트의 변경 내용을 해당 화면에서 확인합니다.",
-      "백그라운드 상시 실행이 필요하면 공식 t3 service install 명령을 검토하고, 먼저 사용 가능한 옵션은 t3 --help로 확인합니다."
+      "macOS·Linux에서는 t3 service install로 백그라운드 서비스를 설치할 수 있습니다. Windows에서는 서버를 실행한 터미널이나 로컬 환경이 켜진 데스크톱 앱을 계속 열어 둡니다. 명령 옵션은 t3 --help에서 확인합니다."
     ],
     "example_code": {
-      "language": "bash",
-      "code": "t3\nt3 --help",
+      "language": "powershell",
+      "code": "t3 --help\nt3",
       "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line"
     },
     "sources": [
@@ -872,6 +881,14 @@
       {
         "url": "https://github.com/pingdotgg/t3code/releases",
         "title": "공식 데스크톱 배포 파일"
+      },
+      {
+        "title": "백그라운드 서비스의 macOS·Linux 지원",
+        "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/docs/user/background-service.md#manage-the-service"
+      },
+      {
+        "title": "원격 연결과 Windows 서버 실행 유지",
+        "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/docs/user/remote-access.md"
       }
     ],
     "repository_id": 1153130349,

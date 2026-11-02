@@ -60,12 +60,12 @@ irm https://voicestudio.sh/install.ps1 | iex
 
 | 비교 도구 | 차이 | 공식 근거 |
 | --- | --- | --- |
-| [F5-TTS](https://github.com/SWivid/F5-TTS) | VoiceStudio는 여러 음성 엔진을 묶는 작업용 앱입니다. F5-TTS는 해당 TTS 모델의 CLI·Gradio 추론과 학습·미세조정을 제공하는 연구 코드이므로, 한 모델의 동작을 직접 다루는 목적에 더 가깝습니다. | [근거 1](https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md) · [근거 2](https://github.com/SWivid/F5-TTS#readme) |
+| [F5-TTS](https://github.com/SWivid/F5-TTS) | VoiceStudio는 여러 음성 엔진을 묶는 작업용 앱입니다. F5-TTS는 해당 TTS 모델의 CLI·Gradio 추론과 학습·미세조정을 제공하는 연구 코드이므로, 한 모델의 동작을 직접 다루는 목적에 더 가깝습니다. | [근거 1](https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md) · [근거 2](https://github.com/SWivid/F5-TTS/blob/45868abaabd74aabf03cd673d6dd00cc9d9c01ae/README.md) |
 
 ### 선택하기 좋은 상황
 
 - 음성 생성뿐 아니라 전사·더빙·배치 내보내기까지 같은 화면에서 진행하고 로컬 파일 중심으로 관리하려는 경우 선택할 만합니다. [근거 1](https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md)
-- 특정 음성 모델의 학습 코드나 추론 설정을 연구하는 것이 목적이면, VoiceStudio의 통합 화면과 F5-TTS 같은 원 모델 저장소의 연구 기능을 나누어 비교하는 편이 좋습니다. [근거 1](https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md) · [근거 2](https://github.com/SWivid/F5-TTS#readme)
+- 특정 음성 모델의 학습 코드나 추론 설정을 연구하는 것이 목적이면, VoiceStudio의 통합 화면과 F5-TTS 같은 원 모델 저장소의 연구 기능을 나누어 비교하는 편이 좋습니다. [근거 1](https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md) · [근거 2](https://github.com/SWivid/F5-TTS/blob/45868abaabd74aabf03cd673d6dd00cc9d9c01ae/README.md)
 
 비교 기준: 공식 문서의 기능·조건에 근거한 비교 · 문서 확인: 2026-11-02
 
@@ -79,7 +79,7 @@ irm https://voicestudio.sh/install.ps1 | iex
 
 ### 저장소 정보
 
-- [저장소](https://github.com/debpalash/VoiceStudio) · [README](https://github.com/debpalash/VoiceStudio#readme) · [소개 근거](https://github.com/debpalash/VoiceStudio#readme)
+- [저장소](https://github.com/debpalash/VoiceStudio) · [README](https://github.com/debpalash/VoiceStudio#readme) · [소개 근거](https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md)
 - 주요 언어: Python · 라이선스: AGPL-3.0
 - 누적 별: 97,890개 · 포크: 10,871개
 - 소개 방식: README 해설 (2026-11-02 확인)
@@ -105,7 +105,7 @@ irm https://voicestudio.sh/install.ps1 | iex
 
 ### 설치 방법
 
-준비 사항: 스킬 또는 플러그인을 지원하는 코딩 에이전트가 필요합니다. 실제 코드 생성은 연결된 에이전트와 모델이 수행합니다. 명령 제공 방식은 호스트마다 다르며, Codex에서는 플러그인 이름공간의 스킬을 사용합니다.
+준비 사항: 스킬 또는 플러그인을 지원하는 코딩 에이전트가 필요합니다. 실제 코드 생성은 연결된 에이전트와 모델이 수행합니다. 명령 제공 방식은 호스트마다 다르며, Codex에서는 플러그인 이름공간의 스킬을 사용합니다. Codex·Claude Code 플러그인의 생명주기 훅에는 Node.js가 필요합니다. 에이전트가 여는 비대화형 셸의 PATH에서도 node 명령을 찾을 수 있어야 합니다.
 
 - 아래는 README가 제시하는 Codex용 설치 명령입니다. 두 명령을 차례로 실행합니다.
 - 설치 후 Codex의 /hooks에서 생명주기 훅을 확인·신뢰한 뒤 새 대화를 시작합니다.
@@ -168,7 +168,7 @@ $ponytail:ponytail-review
 
 ### 저장소 정보
 
-- [저장소](https://github.com/DietrichGebert/ponytail) · [README](https://github.com/DietrichGebert/ponytail#readme) · [소개 근거](https://github.com/DietrichGebert/ponytail#readme)
+- [저장소](https://github.com/DietrichGebert/ponytail) · [README](https://github.com/DietrichGebert/ponytail#readme) · [소개 근거](https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md)
 - 주요 언어: JavaScript · 라이선스: MIT
 - 누적 별: 182,100개 · 포크: 10,036개
 - 소개 방식: README 해설 (2026-11-02 확인)
@@ -255,7 +255,7 @@ find security vulnerabilities in ./src
 
 ### 저장소 정보
 
-- [저장소](https://github.com/cloudflare/security-audit-skill) · [README](https://github.com/cloudflare/security-audit-skill#readme) · [소개 근거](https://github.com/cloudflare/security-audit-skill#readme)
+- [저장소](https://github.com/cloudflare/security-audit-skill) · [README](https://github.com/cloudflare/security-audit-skill#readme) · [소개 근거](https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md)
 - 주요 언어: JavaScript · 라이선스: MIT
 - 누적 별: 56,343개 · 포크: 3,672개
 - 소개 방식: README 해설 (2026-11-02 확인)
@@ -341,7 +341,7 @@ npx ecc-universal@2.2.3 setup
 
 ### 저장소 정보
 
-- [저장소](https://github.com/affaan-m/ECC) · [README](https://github.com/affaan-m/ECC#readme) · [소개 근거](https://github.com/affaan-m/ECC#readme)
+- [저장소](https://github.com/affaan-m/ECC) · [README](https://github.com/affaan-m/ECC#readme) · [소개 근거](https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md)
 - 주요 언어: JavaScript · 라이선스: MIT
 - 누적 별: 294,782개 · 포크: 43,635개
 - 소개 방식: README 해설 (2026-11-02 확인)
@@ -371,7 +371,7 @@ polish·bolder·critique·audit 같은 작업으로 시각적 방향과 UI 품�
 
 - 적용할 프로젝트의 루트 디렉터리에서 아래 설치 명령을 실행합니다.
 - 설치 프로그램이 감지한 코딩 도구와 프로젝트·전역 범위를 선택합니다. 훅을 지원하는 호스트에서는 해당 설정도 확인합니다.
-- 코딩 도구를 다시 열고 impeccable init을 실행해 프로젝트 목적을 정리합니다. Codex의 훅은 /hooks에서 신뢰해야 적용됩니다.
+- 코딩 도구를 다시 열고 에이전트에서 /impeccable init을 실행해 프로젝트 목적을 정리합니다. Codex에서는 $impeccable init을 사용하며, 훅은 /hooks에서 신뢰해야 적용됩니다.
 
 공식 문서의 명령·예시:
 
@@ -427,7 +427,7 @@ npx impeccable install
 
 ### 저장소 정보
 
-- [저장소](https://github.com/pbakaus/impeccable) · [README](https://github.com/pbakaus/impeccable#readme) · [소개 근거](https://github.com/pbakaus/impeccable#readme)
+- [저장소](https://github.com/pbakaus/impeccable) · [README](https://github.com/pbakaus/impeccable#readme) · [소개 근거](https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md)
 - 주요 언어: Rust · 라이선스: Apache-2.0
 - 누적 별: 99,290개 · 포크: 5,870개
 - 소개 방식: README 해설 (2026-11-02 확인)
@@ -472,13 +472,13 @@ cd my-video
 
 - 짧은 제품 소개 영상에 제목이 나타나는 장면·배경 영상·배경 음악을 배치하는 상황을 가정합니다.
 - 아래 preview 명령으로 브라우저에서 장면과 시간축을 확인하고, 제목 표시 시점과 미디어 배치를 조정합니다.
-- render 명령으로 MP4를 출력한 뒤 길이·프레임·자막·소리가 의도한 결과와 맞는지 확인합니다.
+- 미리보기를 마치면 preview 서버를 종료하거나 다른 터미널에서 같은 my-video 디렉터리로 이동한 뒤 render 명령을 실행합니다. 출력한 MP4의 길이·프레임·자막·소리가 의도한 결과와 맞는지 확인합니다.
 
 공식 문서의 명령·예시:
 
 ```sh
-npx hyperframes preview
-npx hyperframes render
+npx hyperframes preview      # preview in browser with live reload
+npx hyperframes render       # render to MP4
 ```
 
 [명령·예시 원문](https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#manually-with-the-cli)
@@ -514,7 +514,7 @@ npx hyperframes render
 
 ### 저장소 정보
 
-- [저장소](https://github.com/heygen-com/hyperframes) · [README](https://github.com/heygen-com/hyperframes#readme) · [소개 근거](https://github.com/heygen-com/hyperframes#readme)
+- [저장소](https://github.com/heygen-com/hyperframes) · [README](https://github.com/heygen-com/hyperframes#readme) · [소개 근거](https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md)
 - 주요 언어: TypeScript · 라이선스: Apache-2.0
 - 누적 별: 77,097개 · 포크: 7,067개
 - 소개 방식: README 해설 (2026-11-02 확인)
@@ -525,7 +525,7 @@ npx hyperframes render
 
 웹·소셜·영상 플랫폼의 자료를 읽고 검색해 에이전트에서 다루기 쉽게 연결하는 CLI 도구입니다.
 
-YouTube·Bilibili의 자막과 전사, GitHub 저장소·이슈 등 플랫폼별 입력을 제공합니다. 일부 기능은 인증이나 별도 도구가 필요하며 플랫폼마다 지원 범위가 다릅니다.
+YouTube의 영상 정보·자막·음성 전사, Bilibili의 영상 정보·자막, GitHub 저장소·이슈 등 플랫폼별 자료를 제공합니다. 일부 기능은 인증이나 별도 도구가 필요하며 플랫폼마다 지원 범위가 다릅니다.
 
 ### 어떤 일을 하나요
 
@@ -584,12 +584,12 @@ agent-reach doctor --text
 
 | 비교 도구 | 차이 | 공식 근거 |
 | --- | --- | --- |
-| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | yt-dlp는 영상·오디오 다운로드, 형식 선택, 자막 파일 저장을 세밀하게 제어하는 CLI입니다. Agent-Reach는 GitHub·웹·커뮤니티·영상 자료를 에이전트의 채널 작업으로 연결합니다. 영상 파일과 자막을 일괄 보관하는 작업과 여러 출처의 내용을 조사하는 작업에서 선택 기준이 달라집니다. | [근거 1](https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md) · [근거 2](https://github.com/yt-dlp/yt-dlp#readme) |
+| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | yt-dlp는 영상·오디오 다운로드, 형식 선택, 자막 파일 저장을 세밀하게 제어하는 CLI입니다. Agent-Reach는 GitHub·웹·커뮤니티·영상 자료를 에이전트의 채널 작업으로 연결합니다. 영상 파일과 자막을 일괄 보관하는 작업과 여러 출처의 내용을 조사하는 작업에서 선택 기준이 달라집니다. | [근거 1](https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md) · [근거 2](https://github.com/yt-dlp/yt-dlp/blob/b77c9304e1c4220cca450c583491904daf8455af/README.md) |
 
 ### 선택하기 좋은 상황
 
-- GitHub README, 웹페이지, 영상 자막을 같은 조사 흐름에서 읽어야 하고 채널별 로그인·의존성을 관리할 수 있다면 Agent-Reach를 검토할 수 있습니다. 이 선택은 지원 채널과 대체 도구 구조에 근거합니다. [근거 1](https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md)
-- 영상의 해상도·컨테이너·오디오 트랙·자막 파일을 정확히 골라 저장하는 작업이 중심이라면 yt-dlp의 다운로드 옵션을 먼저 비교하는 편이 맞습니다. [근거 1](https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md) · [근거 2](https://github.com/yt-dlp/yt-dlp#readme)
+- GitHub README, 웹페이지, 영상 자막을 같은 조사 흐름에서 읽어야 하고 채널별 로그인·의존성을 관리할 수 있다면 Agent-Reach를 검토할 수 있습니다. [근거 1](https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md)
+- 영상의 해상도·컨테이너·오디오 트랙·자막 파일을 정확히 골라 저장하는 작업이 중심이라면 yt-dlp의 다운로드 옵션을 먼저 비교하는 편이 맞습니다. [근거 1](https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md) · [근거 2](https://github.com/yt-dlp/yt-dlp/blob/b77c9304e1c4220cca450c583491904daf8455af/README.md)
 
 비교 기준: 공식 문서의 기능·조건에 근거한 비교 · 문서 확인: 2026-11-02
 
@@ -603,7 +603,7 @@ agent-reach doctor --text
 
 ### 저장소 정보
 
-- [저장소](https://github.com/Panniantong/Agent-Reach) · [README](https://github.com/Panniantong/Agent-Reach#readme) · [소개 근거](https://github.com/Panniantong/Agent-Reach#readme)
+- [저장소](https://github.com/Panniantong/Agent-Reach) · [README](https://github.com/Panniantong/Agent-Reach#readme) · [소개 근거](https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md)
 - 주요 언어: Python · 라이선스: MIT
 - 누적 별: 107,596개 · 포크: 9,593개
 - 소개 방식: README 해설 (2026-11-02 확인)
@@ -629,7 +629,7 @@ NSA 연구부서가 만들고 유지하는 소프트웨어 역공학 프레임�
 
 ### 설치 방법
 
-준비 사항: 현재 공식 README의 사전 빌드 배포판 설치 기준은 64비트 JDK 25입니다. 운영체제에 맞는 공식 multi-platform Release ZIP을 사용합니다. Release의 Source Code ZIP은 사전 빌드 프로그램과 다릅니다. Python은 PyGhidra를 사용할 때 별도로 필요하며, 일반 GUI를 시작하는 절차와 소스 빌드 요구사항은 구분합니다.
+준비 사항: 현재 공식 README의 사전 빌드 배포판 설치 기준은 64비트 JDK 25입니다. 운영체제에 맞는 공식 multi-platform Release ZIP을 사용합니다. Release의 Source Code ZIP은 사전 빌드 프로그램과 다릅니다. PyGhidra나 Debugger 연동에는 Python도 필요합니다. 일반 GUI를 시작하는 절차와 소스 빌드 요구사항은 구분합니다.
 
 - 공식 Releases에서 ghidra\_&lt;version&gt;\_&lt;release&gt;\_&lt;date&gt;.zip 형태의 배포 파일을 받습니다.
 - JDK를 준비하고 새 폴더에 ZIP을 압축 해제합니다. 기존 설치 폴더 위에 덮어 풀지 않는 방식이 공식 안내입니다.
@@ -663,12 +663,12 @@ NSA 연구부서가 만들고 유지하는 소프트웨어 역공학 프레임�
 
 | 비교 도구 | 차이 | 공식 근거 |
 | --- | --- | --- |
-| [radare2](https://github.com/radareorg/radare2) | radare2는 저수준 CLI·라이브러리·플러그인과 r2pipe 스크립팅을 중심으로 분석·디버깅·수정을 연결합니다. Ghidra는 디컴파일러·그래프·주석을 함께 탐색하는 통합 분석 환경을 제공합니다. radare2에도 공식 Qt GUI와 Ghidra 디컴파일러 연동 플러그인이 있어 GUI 유무만으로 구분하지 않습니다. | [근거 1](https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md) · [근거 2](https://github.com/radareorg/radare2/blob/master/README.md) |
+| [radare2](https://github.com/radareorg/radare2) | radare2는 저수준 CLI·라이브러리·플러그인과 r2pipe 스크립팅을 중심으로 분석·디버깅·수정을 연결합니다. Ghidra는 디컴파일러·그래프·주석을 함께 탐색하는 통합 분석 환경을 제공합니다. radare2에도 공식 Qt GUI와 Ghidra 디컴파일러 연동 플러그인이 있어 GUI 유무만으로 구분하지 않습니다. | [근거 1](https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md) · [근거 2](https://github.com/radareorg/radare2/blob/95dc2b15c1f3123a745cd9bad1b1ee027487ff39/README.md) |
 
 ### 선택하기 좋은 상황
 
 - 낯선 실행 파일의 함수·분기·자료형을 GUI에서 대조하고 분석 주석을 쌓는 학습이나 펌웨어 조사라면 Ghidra의 통합 프로젝트 구성이 선택 기준이 됩니다. [근거 1](https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md)
-- 분석 명령을 터미널 파이프라인이나 기존 스크립트에 촘촘히 연결하고 디버깅·바이너리 수정 작업을 함께 하려면 radare2의 CLI와 r2pipe를 비교해 볼 수 있습니다. [근거 1](https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md) · [근거 2](https://github.com/radareorg/radare2/blob/master/README.md)
+- 분석 명령을 터미널 파이프라인이나 기존 스크립트에 촘촘히 연결하고 디버깅·바이너리 수정 작업을 함께 하려면 radare2의 CLI와 r2pipe를 비교해 볼 수 있습니다. [근거 1](https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md) · [근거 2](https://github.com/radareorg/radare2/blob/95dc2b15c1f3123a745cd9bad1b1ee027487ff39/README.md)
 
 비교 기준: 공식 문서의 기능·조건에 근거한 비교 · 문서 확인: 2026-11-02
 
@@ -684,7 +684,7 @@ NSA 연구부서가 만들고 유지하는 소프트웨어 역공학 프레임�
 
 ### 저장소 정보
 
-- [저장소](https://github.com/NationalSecurityAgency/ghidra) · [README](https://github.com/NationalSecurityAgency/ghidra#readme) · [소개 근거](https://github.com/NationalSecurityAgency/ghidra#readme)
+- [저장소](https://github.com/NationalSecurityAgency/ghidra) · [README](https://github.com/NationalSecurityAgency/ghidra#readme) · [소개 근거](https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md)
 - 주요 언어: Java · 라이선스: Apache-2.0
 - 누적 별: 96,768개 · 포크: 10,927개
 - 소개 방식: README 해설 (2026-11-02 확인)
@@ -693,7 +693,7 @@ NSA 연구부서가 만들고 유지하는 소프트웨어 역공학 프레임�
 
 ## Leonxlnx/taste-skill
 
-웹사이트와 앱 화면을 만들 때 코딩 에이전트에 미술적 방향·참고 이미지·브라우저 확인 절차를 제공하는 디자인 스킬입니다.
+웹사이트와 앱 화면을 만들 때 코딩 에이전트에 시각적 방향·참고 이미지·브라우저 확인 절차를 제공하는 디자인 스킬입니다.
 
 실제 이미지를 참고해 방향을 정하고 구현한 화면을 브라우저에서 확인하는 흐름을 제공합니다. 설치 환경은 저장소의 현재 요구사항에서 확인할 수 있습니다.
 
@@ -764,7 +764,7 @@ npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-fro
 
 ### 저장소 정보
 
-- [저장소](https://github.com/Leonxlnx/taste-skill) · [README](https://github.com/Leonxlnx/taste-skill#readme) · [소개 근거](https://github.com/Leonxlnx/taste-skill#readme)
+- [저장소](https://github.com/Leonxlnx/taste-skill) · [README](https://github.com/Leonxlnx/taste-skill#readme) · [소개 근거](https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md)
 - 주요 언어: JavaScript · 라이선스: MIT
 - 누적 별: 107,759개 · 포크: 7,279개
 - 소개 방식: README 해설 (2026-11-02 확인)
@@ -812,7 +812,7 @@ docker compose up -d
 ### 사용 예시
 
 - 공식 README의 Python 클라이언트 예시는 base\_url을 로컬 라우터의 /v1 주소로 정하고 통합 키로 요청을 보냅니다.
-- 아래 api\_key의 예시 문자열을 자신의 통합 키로 바꾸고, OpenAI 호환 Python SDK가 준비된 별도 클라이언트에서 실행합니다. model=auto는 라우터의 선택을 사용합니다.
+- 아래 api\_key의 예시 문자열을 자신의 통합 키로 바꾸고, 라우터와 같은 컴퓨터에서 Python용 OpenAI SDK가 설치된 환경으로 실행합니다. model=auto는 라우터의 선택을 사용합니다.
 - 대시보드의 요청 기록에서 실제 사용된 제공자·모델과 실패·대체 여부를 확인합니다. 아래 코드는 공식 예시에서 응답 본문을 출력하는 부분까지 발췌했으며 이 문서 작성 중 실행한 결과는 아닙니다.
 
 공식 문서의 명령·예시:
@@ -848,12 +848,12 @@ print(resp.choices[0].message.content)
 
 | 비교 도구 | 차이 | 공식 근거 |
 | --- | --- | --- |
-| [LiteLLM](https://github.com/BerriAI/litellm) | LiteLLM은 Python SDK와 팀·조직용 중앙 Proxy Server를 제공하며 가상 키, 사용자·프로젝트별 비용 관리, 로깅·가드레일·부하 분산을 다룹니다. FreeLLMAPI는 개인 로컬 환경에서 제공자별 무료 한도와 대체 체인을 묶는 흐름을 강조합니다. 두 도구 모두 실제 추론은 연결한 제공자나 모델 서버가 수행합니다. | [근거 1](https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md) · [근거 2](https://github.com/BerriAI/litellm/blob/main/README.md) |
+| [LiteLLM](https://github.com/BerriAI/litellm) | LiteLLM은 Python SDK와 팀·조직용 중앙 Proxy Server를 제공하며 가상 키, 사용자·프로젝트별 비용 관리, 로깅·가드레일·부하 분산을 다룹니다. FreeLLMAPI는 개인 로컬 환경에서 제공자별 무료 한도와 대체 체인을 묶는 흐름을 강조합니다. 두 도구 모두 실제 추론은 연결한 제공자나 모델 서버가 수행합니다. | [근거 1](https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md) · [근거 2](https://github.com/BerriAI/litellm/blob/60fc121ce8ab995cb2997e0bbd0a980ee93c627d/README.md) |
 
 ### 선택하기 좋은 상황
 
 - 개인 학습·프로토타입에서 여러 제공자의 무료 구간을 시험하고, 한도 초과와 대체 모델의 응답 차이를 받아들일 수 있다면 FreeLLMAPI의 로컬 라우터 구성이 맞을 수 있습니다. [근거 1](https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md)
-- 팀별 가상 키·프로젝트 예산·권한·감사 기록을 중앙에서 관리해야 한다면 LiteLLM Proxy의 운영 기능을 먼저 검토하는 편이 좋습니다. 무료 한도를 합치는 것과 조직 운영 요건을 충족하는 것은 별도 판단입니다. [근거 1](https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md) · [근거 2](https://github.com/BerriAI/litellm/blob/main/README.md)
+- 팀별 가상 키·프로젝트 예산·권한·감사 기록을 중앙에서 관리해야 한다면 LiteLLM Proxy의 운영 기능을 먼저 검토하는 편이 좋습니다. 무료 한도를 합치는 것과 조직 운영 요건을 충족하는 것은 별도 판단입니다. [근거 1](https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md) · [근거 2](https://github.com/BerriAI/litellm/blob/60fc121ce8ab995cb2997e0bbd0a980ee93c627d/README.md)
 
 비교 기준: 공식 문서의 기능·조건에 근거한 비교 · 문서 확인: 2026-11-02
 
@@ -867,7 +867,7 @@ print(resp.choices[0].message.content)
 
 ### 저장소 정보
 
-- [저장소](https://github.com/tashfeenahmed/freellmapi) · [README](https://github.com/tashfeenahmed/freellmapi#readme) · [소개 근거](https://github.com/tashfeenahmed/freellmapi#readme)
+- [저장소](https://github.com/tashfeenahmed/freellmapi) · [README](https://github.com/tashfeenahmed/freellmapi#readme) · [소개 근거](https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md)
 - 주요 언어: TypeScript · 라이선스: MIT
 - 누적 별: 45,707개 · 포크: 6,241개
 - 소개 방식: README 해설 (2026-11-02 확인)
@@ -936,12 +936,12 @@ python examples/offline_inference.py
 
 | 비교 도구 | 차이 | 공식 근거 |
 | --- | --- | --- |
-| [vLLM](https://github.com/vllm-project/vllm) | vLLM은 여러 모델 아키텍처·하드웨어를 대상으로 추론과 온라인 서빙을 제공하고 OpenAI 호환 API 서버를 포함합니다. DeepInfer의 현재 공개 범위는 특정 DeepSeek 모델과 가속기의 오프라인 실행·핵심 엔진에 집중합니다. | [근거 1](https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md) · [근거 2](https://github.com/vllm-project/vllm/blob/main/README.md) |
+| [vLLM](https://github.com/vllm-project/vllm) | vLLM은 여러 모델 아키텍처·하드웨어를 대상으로 추론과 온라인 서빙을 제공하고 OpenAI 호환 API 서버를 포함합니다. DeepInfer의 현재 공개 범위는 특정 DeepSeek 모델과 가속기의 오프라인 실행·핵심 엔진에 집중합니다. | [근거 1](https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md) · [근거 2](https://github.com/vllm-project/vllm/blob/49fee5b34c164532b889747eef6d194fe0103d1c/README.md) |
 
 ### 선택하기 좋은 상황
 
 - 지원되는 DeepSeek 모델과 대규모 가속기를 보유하고 커널·MoE 병렬화·스케줄링 내부를 연구하거나 직접 서빙 인프라를 구성하려면 DeepInfer를 검토할 수 있습니다. [근거 1](https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md)
-- 여러 모델을 바꿔 가며 OpenAI 호환 API 서버를 빠르게 구성하는 것이 우선이면, 자신이 가진 하드웨어와 모델이 지원되는지 확인한 뒤 vLLM을 먼저 비교하는 편이 적합합니다. [근거 1](https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md) · [근거 2](https://github.com/vllm-project/vllm/blob/main/README.md)
+- 여러 모델을 바꿔 가며 OpenAI 호환 API 서버를 빠르게 구성하는 것이 우선이면, 자신이 가진 하드웨어와 모델이 지원되는지 확인한 뒤 vLLM을 먼저 비교하는 편이 적합합니다. [근거 1](https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md) · [근거 2](https://github.com/vllm-project/vllm/blob/49fee5b34c164532b889747eef6d194fe0103d1c/README.md)
 
 비교 기준: 공식 문서의 기능·조건에 근거한 비교 · 문서 확인: 2026-11-02
 
@@ -954,7 +954,7 @@ python examples/offline_inference.py
 
 ### 저장소 정보
 
-- [저장소](https://github.com/deepseek-ai/DeepInfer) · [README](https://github.com/deepseek-ai/DeepInfer#readme) · [소개 근거](https://github.com/deepseek-ai/DeepInfer#readme)
+- [저장소](https://github.com/deepseek-ai/DeepInfer) · [README](https://github.com/deepseek-ai/DeepInfer#readme) · [소개 근거](https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md)
 - 주요 언어: Python · 라이선스: Apache-2.0
 - 누적 별: 24,808개 · 포크: 3,010개
 - 소개 방식: README 해설 (2026-11-02 확인)

@@ -17,6 +17,7 @@ from urllib.request import HTTPRedirectHandler, Request, build_opener
 from bs4 import BeautifulSoup
 import guides
 import comparisons
+import source_checks
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -138,9 +139,9 @@ class Introductions:
         self.cache[key] = result
         return result
 
-    def for_repo(self, repo: dict) -> dict:
+    def for_repo(self, repo: dict, readme_sha: str | None = None) -> dict:
         item = self.reviewed.get(repo['full_name'].casefold())
-        if item and item.get('repository_id') == repo['id'] and item.get('description_sha256') == digest(repo.get('description') or ''):
+        if item and item.get('repository_id') == repo['id'] and item.get('description_sha256') == digest(repo.get('description') or '') and (readme_sha is None or item.get('readme_sha') == readme_sha):
             return {'text': item['summary_ko'], 'detail': item.get('detail_ko', ''),
                     'method': 'README 해설 (' + item['reviewed_at'] + ' 확인)',
                     'source_url': item.get('source_url', repo['html_url'] + '#readme')}
@@ -238,9 +239,10 @@ def collect(output: Path, now: datetime, token: str, reviewed: dict, cache_path:
         if repo['id'] in identities:
             raise ValueError('Redirected duplicate repository')
         identities.add(repo['id'])
-        row.update(repository=repo, introduction=introductions.for_repo(repo))
+        row['repository'] = repo
         if details is not None:
             readme = guides.fetch_readme(repo, token, get)
+            row['introduction'] = introductions.for_repo(repo, readme_sha=readme['sha'])
             detail_map = {k.casefold(): v for k, v in details.items()}
             manual = detail_map.get(repo['full_name'].casefold(), {})
             if manual.get('repository_id') != repo['id'] or manual.get('readme_sha') != readme['sha']:
@@ -252,6 +254,9 @@ def collect(output: Path, now: datetime, token: str, reviewed: dict, cache_path:
             if assessments is not None:
                 row['guide']['assessment'] = comparisons.build(repo, readme,
                     {k.casefold(): v for k, v in assessments.items()}, introductions, get, repository, token)
+            row['guide']['source_checks'] = source_checks.verify(row['guide'], readme, get, token)
+        else:
+            row['introduction'] = introductions.for_repo(repo)
     stamp = now.astimezone(KST).isoformat(timespec='seconds')
     data = {'schema_version': 1, 'label': label(start), 'week_start': start.date().isoformat(),
             'collected_at': stamp, 'source_url': final_url, 'source_sha256': hashlib.sha256(raw).hexdigest(),
