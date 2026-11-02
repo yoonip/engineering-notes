@@ -11,7 +11,7 @@
 | [부분곱 제거 · CNN](cnn-partial-product-reproduction/README.md) | Signed 부분곱 열 제거, CMOS MAC netlist, CIFAR ResNet 양자화 | 산술 전수 비교 548,864건, 회귀 23개, 정수 출력 비교 |
 | [MNIST 회로 추론](mnist-circuit-inference/README.md) | 학습 가중치의 저항 행렬 매핑, 2-layer 아날로그 추론 netlist | ngspice 두 표본 재실행, Python 기준 출력과 수치 비교 |
 | [Embedded validation lab](embedded-validation-lab/README.md) | RV32I CPU, Arm·STM32·ESP32 펌웨어, UART 자동화 | RTL 14회, QEMU 실행, STM32 빌드, UART 검사 10개 |
-| [FPGA validation harness](fpga-validation-harness/README.md) | FPGA 입력·출력 프레임, ADC 오류 시나리오, 검증 자동화 | RTL 64개 패턴, Python 오류·프레임 검사 |
+| [FPGA validation harness](fpga-validation-harness/README.md) | FPGA 입력·출력 프레임, ADC 오류 시나리오, 검증 자동화 | RTL 64샘플, Python 오류·프레임 검사 |
 | [Practical Silicon Lab](practical-silicon-lab/README.md) | Arm64 시작 코드, JTAG TAP, Linux driver, 가상 bench | 오프라인·mock 검사 19개 |
 | [신경망 에너지 모델](neural-network-energy-models/README.md) | 연산 정밀도·메모리 이동·에너지 수식의 수치 모델 | 단위 검사 8개와 수치 비교 108조건 |
 | [Tiny Transformer RTL](tiny-transformer-rtl/README.md) | NumPy 학습과 Q8.8 가중치 export, SystemVerilog token 생성 | 네 입력 조건의 token·causal mask·EOS, RTL·JSON 가중치 일치 |
@@ -55,7 +55,7 @@ These projects connect circuits, firmware, integer reference models and machine-
 | [Partial-product removal/CNN](cnn-partial-product-reproduction/README.md) | Signed partial-product removal, CMOS MAC netlists and quantized CIFAR ResNets | 548,864 exhaustive arithmetic cases, 23 regressions and integer-output comparisons |
 | [MNIST circuit inference](mnist-circuit-inference/README.md) | Trained-weight resistor mapping and two-layer analog inference netlists | Two ngspice samples replayed against a Python reference |
 | [Embedded validation lab](embedded-validation-lab/README.md) | RV32I CPU, Arm/STM32/ESP32 firmware and UART automation | Fourteen RTL runs, QEMU execution, STM32 build and ten UART tests |
-| [FPGA validation harness](fpga-validation-harness/README.md) | Input/output frames, ADC fault scenarios and automated validation | Sixty-four RTL patterns and Python fault/frame checks |
+| [FPGA validation harness](fpga-validation-harness/README.md) | Input/output frames, ADC fault scenarios and automated validation | Sixty-four RTL samples and Python fault/frame checks |
 | [Practical Silicon Lab](practical-silicon-lab/README.md) | Arm64 startup, JTAG TAP, Linux driver and virtual bench | Nineteen offline/mock checks |
 | [Neural-network energy models](neural-network-energy-models/README.md) | Precision, data movement and analytical energy models | Eight unit tests and 108 numerical conditions |
 | [Tiny Transformer RTL](tiny-transformer-rtl/README.md) | NumPy training, Q8.8 weight export and SystemVerilog token generation | Four input cases, causal masking, EOS and matching RTL/JSON weights |

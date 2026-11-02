@@ -20,7 +20,7 @@ models/parameters/lod.spice
 
 LOD 파일은 `parameters/lod.spice` 위치도 지원합니다. 모델 준비 결과는 공급사 계수를 포함하므로 소스 checkout 바깥에만 생성합니다. 외부 모델의 이용·재배포 조건은 해당 모델 배포물에 따릅니다.
 
-아래 예시는 저장소와 나란히 있는 `external-models/sky130_fd_pr`을 입력으로 사용합니다. 모델 자체를 받거나 설치하는 명령은 아닙니다.
+아래 명령은 이 프로젝트의 최상위 폴더인 `cnn-partial-product-reproduction`에서 실행합니다. 프로젝트 폴더와 나란히 있는 `external-models/sky130_fd_pr`을 입력으로 사용하며, 모델 자체를 받거나 설치하는 명령은 아닙니다.
 
 ```sh
 python circuit_open_pdk/prepare_models.py --model-root ../external-models/sky130_fd_pr --output-dir ../private-models/sky130
@@ -52,7 +52,7 @@ This directory contains adapter code that prepares a local SKY130 model and conn
 
 Supply an existing local model through `--model-root`, using the nfet/pfet TT, corner, mismatch and LOD files listed above. `parameters/lod.spice` is also accepted for LOD. Prepared output contains vendor coefficients and is written outside the source checkout. The model distribution's usage and redistribution terms apply.
 
-The example commands use `../external-models/sky130_fd_pr` as input and `../private-models/sky130` as output. They prepare a model and generate netlists; they do not install or download it. The selector retains bins at L=0.15 µm: nfet W=0.42/0.84/1.26 µm and pfet W=1.26 µm. Coefficients are unchanged; hashes identify the input files and selected blocks. Other versions may have different bin layouts and behavior.
+Run the example commands from the `cnn-partial-product-reproduction` project root. They use `../external-models/sky130_fd_pr` as input and `../private-models/sky130` as output, alongside the project directory. They prepare a model and generate netlists; they do not install or download it. The selector retains bins at L=0.15 µm: nfet W=0.42/0.84/1.26 µm and pfet W=1.26 µm. Coefficients are unchanged; hashes identify the input files and selected blocks. Other versions may have different bin layouts and behavior.
 
 ### Simulation and measurement conditions
 

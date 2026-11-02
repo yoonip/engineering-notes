@@ -2,7 +2,7 @@
   "algorithm": "SHA256",
   "scope": "supplied source files; manifest itself excluded",
   "file_count": 27,
-  "total_bytes": 197697,
+  "total_bytes": 197912,
   "files": [
     {
       "path": ".gitignore",
@@ -51,8 +51,8 @@
     },
     {
       "path": "circuit_open_pdk/README.md",
-      "bytes": 5918,
-      "sha256": "4ee291116ea63fe26fc02fb51fce0b4dc07a63eb4b335cae6fb5b1380c738101"
+      "bytes": 6123,
+      "sha256": "b75a64cf641c0e8982ef24fe8294e281a6afcd2b545282c0c00314c06482c0f9"
     },
     {
       "path": "circuit_open_pdk/run_sky130.py",
@@ -81,8 +81,8 @@
     },
     {
       "path": "metrics/README.md",
-      "bytes": 4341,
-      "sha256": "552218950eabd5e7950f75909b7fc64addea06a661165ba2923377dad8916f3f"
+      "bytes": 4351,
+      "sha256": "b9ec80f4187fe8f5cca27e926cd7f4c0705de5bae2cf7c38d2f11595aec7359c"
     },
     {
       "path": "NOTICE.md",

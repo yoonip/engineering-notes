@@ -60,7 +60,7 @@ CPU 재학습은 `requirements-training.txt`, 보드 UART 연결은 `requirement
 
 ## 학습 데이터
 
-문자 모델의 학습 원문은 [karpathy/char-rnn의 Tiny Shakespeare](https://github.com/karpathy/char-rnn/tree/master/data/tinyshakespeare)입니다. 학습 코드의 원문 SHA-256은 `86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed`이며, corpus 원문이나 외부 도구·라이브러리는 이 폴더에 포함하지 않았습니다.
+문자 모델의 학습 원문은 [karpathy/char-rnn의 Tiny Shakespeare](https://github.com/karpathy/char-rnn/tree/master/data/tinyshakespeare)입니다. 학습에 사용한 텍스트 파일의 SHA-256은 `86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed`이며, corpus 원문이나 외부 도구·라이브러리는 이 폴더에 포함하지 않았습니다. 이 값은 [학습 기록의 `data_sha256`](output/tiny_gpt_full_ops/training_report.json)에서 확인할 수 있습니다.
 
 ## English
 
@@ -104,4 +104,4 @@ Cache/repetition analysis varies weight reuse and intermediate residency. An ide
 
 Use Python 3.12+ and Icarus Verilog, with `iverilog`/`vvp` on PATH. Integer references and RTL tests need no PyTorch. The commands above run Python/event/RTL checks, QAT generation and offline host inference, then generate traffic/event reports and Vivado weights. CPU retraining uses `requirements-training.txt`; board UART uses `requirements-uart.txt`. `fpga/nexys4_ddr/build.ps1` accepts tool, temporary-path, context and cache options. Runs create artifacts under `build/`.
 
-Training text comes from [Tiny Shakespeare in karpathy/char-rnn](https://github.com/karpathy/char-rnn/tree/master/data/tinyshakespeare), with SHA-256 `86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed`. Corpus text, external tools and libraries are not bundled.
+Training text comes from [Tiny Shakespeare in karpathy/char-rnn](https://github.com/karpathy/char-rnn/tree/master/data/tinyshakespeare). Its text-file SHA-256 is `86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed`, recorded as [`data_sha256` in the training report](output/tiny_gpt_full_ops/training_report.json). Corpus text, external tools and libraries are not bundled.

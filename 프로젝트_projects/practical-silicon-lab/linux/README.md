@@ -1,4 +1,4 @@
-# Software-backed misc character device
+# 소프트웨어 기반 문자 장치 / Software-backed misc character device
 
 `valdemo.c`는 외부 장치 없이 kernel의 `write`/`read` callback을 연결하는 모듈입니다. 입력은 1~256 byte이며 각 byte의 unsigned 합, 길이, 증가하는 sequence를 저장합니다. `client.py`는 `[1, 2, 3, 250]`을 쓰고 길이 4와 합 256을 확인합니다.
 
