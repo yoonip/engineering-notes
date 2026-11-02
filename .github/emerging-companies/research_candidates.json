@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "companies": [
+    {
+      "id": "BTRY",
+      "company": "BTRY",
+      "topic": "박막고체전지의적층과제품화",
+      "sector": "전지·재료",
+      "problem": "박막 고체 전지의 적층과 제품 적용",
+      "allowed_hosts": ["btry.ch", "www.btry.ch"],
+      "sources": [
+        {"title": "BTRY 회사 소개", "url": "https://btry.ch/about/"},
+        {"title": "BTRY 기술 설명", "url": "https://btry.ch/technology/"}
+      ]
+    },
+    {
+      "id": "Koidra",
+      "company": "Koidra",
+      "topic": "온실운영의의사결정과자동제어",
+      "sector": "농업·공정 제어",
+      "problem": "온실 운영의 의사결정과 자동 제어",
+      "allowed_hosts": ["www.koidra.ai", "koidra.ai"],
+      "sources": [
+        {"title": "Koidra 회사 소개", "url": "https://www.koidra.ai/about/"},
+        {"title": "KoPilot 제품 설명", "url": "https://www.koidra.ai/solutions/kopilot/"}
+      ]
+    },
+    {
+      "id": "Kumulus-Water",
+      "company": "Kumulus Water",
+      "topic": "대기수분에서물을얻는장치",
+      "sector": "물·환경",
+      "problem": "대기 수분에서 물을 얻는 장치",
+      "allowed_hosts": ["www.kumuluswater.com", "kumuluswater.com"],
+      "sources": [
+        {"title": "Kumulus Water 회사 소개", "url": "https://www.kumuluswater.com/about"},
+        {"title": "Kumulus Water 기술 설명", "url": "https://www.kumuluswater.com/how-our-technology-works"}
+      ]
+    }
+  ]
+}
