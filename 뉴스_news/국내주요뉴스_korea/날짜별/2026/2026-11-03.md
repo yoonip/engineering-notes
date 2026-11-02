@@ -1,6 +1,6 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-03 00:54 KST
+갱신: 2026-11-03 08:30 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
 
@@ -16,17 +16,75 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008827038&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-02 21:40 KST · 작성·제공: ho@sbs.co.kr \(민경호 기자\)
 
+## "옷에 뭐가 많으시네요"…당황한 어르신에 건넨 예우
+
+> '버스비는 이미 내셨습니다.'
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008827260&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-03 07:35 KST · 작성·제공: jdono@sbs.co.kr \(조제행 기자\)
+
+## 김여정, 바이낸스 사태에 "황당무계 낭설…재고해볼 문제 있다"
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008827365&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-03 07:06 KST · 작성·제공: nina@sbs.co.kr \(김아영 기자\)
+
+## "버스에 2시간 갇혔다" 분통…거리엔 종이컵 쓰레기
+
+> '200m를 5km 돌아서?'
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008827258&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-03 07:09 KST · 작성·제공: jdono@sbs.co.kr \(조제행 기자\)
+
 ## \[애널리스트의 마켓뷰\]코스피 반등, 중동-러우 전쟁 종전에 달렸다
 
 > 코스피 등 국내 주식시장의 변동성이 다시 커지고 있다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261102/134952567/2>) · 2026-11-03 00:30 KST
 
+## 정부, 김장 물가 안정에 640억 투입… 배추·무 최대 50% 할인
+
+> 정부가 본격적인 김장철을 앞두고 소비자 부담을 낮추기 위해 역대 최대 규모인 640억원을 투입한다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261103/134954804/1>) · 2026-11-03 08:19 KST
+
 ## 역대급 실적 K반도체, 주가수익비율은 6년래 최저
 
 > 삼성전자, SK하이닉스 실적은 급등하는데 주가는 이를 따라오지 못하는 현상이 이어지고 있다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261102/134953115/2>) · 2026-11-03 00:30 KST
+
+## 조명우 시즌 4승 도전…양구 3쿠션당구월드컵 8일까지 열전
+
+> 세계 최정상급 3쿠션 선수들이 참가하는 2026 양구 세계3쿠션당구월드컵이 2일부터 8일까지 강원특별자치도 양...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261103026100007>) · 2026-11-03 08:13 KST · 작성·제공: 이대호
+
+## 부산 10월 소비자물가 2.8% 상승…기름값↑·신선식품↓
+
+> 10월 부산 소비자물가가 1년 전 물가와 비교해 상승한 것으로 나타났다.
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261103025700051>) · 2026-11-03 08:11 KST · 작성·제공: 오수희
+
+## 케인의 우승 갈증 "챔스 트로피 위해선 발롱도르 맞바꾸겠다"
+
+> 최근 생애 첫 발롱도르를 수상한 해리 케인\(33·바이에른 뮌헨\)이 유럽축구연맹\(UEFA\) 챔피언스리그\(UCL\)...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261103021300007>) · 2026-11-03 07:55 KST · 작성·제공: 오명언
+
+## \[뉴스 동서남북\] 북한 무인기 기술 급진전…일부는 대량생산에 들어가
+
+> 북한 주요 뉴스의 배경과 의미를 살펴보는 ‘쉬운 뉴스, 흥미로운 소식, 뉴스 동서남북’입니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8217950.html>) · 2026-11-03 06:36 KST · 작성·제공: voadigital@voanews.com \(최원기\)
+
+## 정부 "체감 물가 여전히 높아…역대 최대 규모 김장 대책"
+
+> 권대영 재정경제부 제1차관은 3일 물가관계차관회의를 주재하고 "누적된 물가 상승 여파로 체감 물가가 여전히 높...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261103024500002>) · 2026-11-03 08:02 KST · 작성·제공: 김수현
+
+## 신상훈·장유빈·정찬민, KPGA 대상 놓고 시즌 최종전서 격돌
+
+> '신상훈의 1위 수성 vs 장유빈·정찬민의 대역전극'
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261103014600007>) · 2026-11-03 07:45 KST · 작성·제공: 최태용
 
 ## 경찰, '강남 임플란트 치과 사망사건' 의사 공소청 송치
 
