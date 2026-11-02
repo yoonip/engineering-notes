@@ -13,7 +13,7 @@
 | 전압 인가 | 소자 양단 전압 | 흐르는 전류 | 전류 제한 |
 | 전류 인가 | 소자를 통과하는 전류 | 소자 양단 전압 | 전압 제한 |
 
-compliance는 설정한 인가값을 계속 유지하면 반대 전기량의 제한을 넘게 되는 경계입니다. 제한에 도달하면 설정값을 그대로 유지할 수 없습니다. 자체 예제로 100 Ω에 1 V를 요구하면 10 mA가 필요합니다. 전류 제한을 1 mA로 두면 이상적 제한 동작에서 소자 전압은 약 0.1 V입니다. “1 V에서 1 mA가 흘렀다”로 기록하면 실제 동작점을 잘못 적습니다. 실제 전압·전류와 제한 상태를 함께 읽습니다. [참조 매뉴얼, 4-35~4-36·5-1~5-7](https://download.tek.com/manual/2450-901-01E_Sept_2019_Ref.pdf)
+Compliance limit은 전압을 인가할 때 설정하는 전류 한계, 또는 전류를 인가할 때 설정하는 전압 한계입니다. 한계에 도달하면 장비가 출력을 제한하므로 처음 설정한 인가값을 그대로 유지하지 못할 수 있습니다. 자체 예제로 100 Ω에 1 V를 요구하면 10 mA가 필요합니다. 전류 제한을 1 mA로 두면 이상적 제한 동작에서 소자 전압은 약 0.1 V입니다. “1 V에서 1 mA가 흘렀다”로 기록하면 실제 동작점을 잘못 적습니다. 실제 전압·전류와 제한 상태를 함께 읽습니다. [공식 데이터시트, Operating Characteristics의 Source Limits](https://www.tek.com/en/datasheet/smu-2400-graphical-sourcemeter/model-2450-touchscreen-source-measure-unit-smu-instrument) · [참조 매뉴얼, 4-35~4-36·5-1~5-7](https://download.tek.com/manual/2450-901-01E_Sept_2019_Ref.pdf)
 
 ## FORCE와 SENSE를 나누는 이유
 
