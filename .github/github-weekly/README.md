@@ -31,3 +31,5 @@ python3 .github/github-weekly/collect.py
 로컬 명령은 수집 파일만 만듭니다. 게시 명령은 GitHub Actions에서 `python3 .github/github-weekly/publish.py`로 실행합니다. 번역 모델도 직접 확인하려면 수동 실행의 `check_translation`을 켭니다. 번역 검사 문장은 운영 캐시에 넣지 않습니다.
 
 2026년 11월 2일 [첫 서버 실행](https://github.com/yoonip/engineering-notes/actions/runs/41364746396)에서 21개 검사, 공개 영어→한국어 모델의 CPU 번역과 임시 폴더를 이용한 실제 원본 수집을 통과했습니다. 운영 기록은 같은 주가 이미 발행되어 재작성하지 않았으며, 게시 단계도 새 변경 없이 종료했습니다.
+
+같은 날 [상세 안내 서버 검사](https://github.com/yoonip/engineering-notes/actions/runs/41366634386)에서는 41개 검사와 실제 원본 수집을 통과했습니다. 기존 상세 해설을 사용하는 경로와, 해당 해설을 비우고 README 구간을 추출해 CPU로 번역하는 신규 프로젝트 경로를 모두 실행했습니다. 기존 소개의 설치·사용 코드 31개도 해당 공식 문서의 고정 판본과 줄 단위로 대조했습니다. 이 검사는 수집·표시 코드의 실행 확인이며 소개한 프로젝트 자체의 설치·실행 시험과는 구분합니다.
