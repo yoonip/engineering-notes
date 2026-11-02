@@ -8,9 +8,7 @@
 
 ## 조건과 입출력
 
-입력 매개변수: `places`. 반환값은 수치 배열이며 아래 풀이의 조건을 만족하는 결과입니다.
-
-
+입력 매개변수는 5개의 5×5 대기실 `places`입니다. `P`는 응시자, `O`는 빈자리, `X`는 파티션입니다. 각 대기실이 거리두기를 지키면 1, 그렇지 않으면 0을 반환합니다.
 
 ## 풀이를 따라가기
 
@@ -47,7 +45,7 @@ def solution(places):
 
 거리 2 이하인 가장 짧은 경로는 일직선이면 하나, 대각선이면 둘입니다. 모든 짧은 경로가 파티션에 막힌 경우만 허용하므로 조건과 일치합니다.
 
-고정 5×5 입력에서 O(1), 일반화하면 방마다 O(P²) / O(1) for fixed rooms; O(P²) per room when generalized
+고정 입력은 O(1), R×C 방과 응시자 P명으로 일반화하면 시간 O(RC+P²), 보조 공간 O(P) / O(1) for fixed inputs; O(RC+P²) time and O(P) auxiliary space per generalized room
 
 주의할 점: 대각선에서는 중간 칸 둘 다 X여야 합니다. 한쪽만 막혀 있으면 다른 짧은 경로가 남습니다.
 
@@ -79,7 +77,7 @@ def solution(places):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 응시자 쌍의 맨해튼 거리를 확인합니다. 거리 1은 바로 위반입니다. 거리 2는 일직선 가운데 칸 또는 대각선의 두 중간 칸이 파티션인지 검사합니다. | 응시자별 깊이 2 BFS |
-| 비용 | 고정 5×5 입력에서 O(1), 일반화하면 방마다 O(P²) / O(1) for fixed rooms; O(P²) per room when generalized | 방마다 O(P)개의 상수 크기 탐색, 공간 O(1) / O(P) constant-size searches per room, space O(1) |
+| 비용 | 고정 입력은 O(1), R×C 방과 응시자 P명으로 일반화하면 시간 O(RC+P²), 보조 공간 O(P) / O(1) for fixed inputs; O(RC+P²) time and O(P) auxiliary space per generalized room | R×C 방마다 시간 O(RC+P), 보조 공간 O(1); 깊이 2 탐색은 크기가 일정합니다. / O(RC+P) time and O(1) auxiliary space per room; each depth-two search has constant size |
 
 ## 검증
 
@@ -108,17 +106,17 @@ The runnable code is linked above; its comments are in Korean.
 
 There is one shortest path for aligned distance-two pairs and two for diagonal pairs. The rule permits them exactly when all such short paths are blocked.
 
-고정 5×5 입력에서 O(1), 일반화하면 방마다 O(P²) / O(1) for fixed rooms; O(P²) per room when generalized
+고정 입력은 O(1), R×C 방과 응시자 P명으로 일반화하면 시간 O(RC+P²), 보조 공간 O(P) / O(1) for fixed inputs; O(RC+P²) time and O(P) auxiliary space per generalized room
 
 Boundary cases: Both intermediate diagonal cells must be X. Blocking only one leaves another short path.
 
 ### Alternative: Depth-two BFS from each participant
 
-방마다 O(P)개의 상수 크기 탐색, 공간 O(1) / O(P) constant-size searches per room, space O(1)
+R×C 방마다 시간 O(RC+P), 보조 공간 O(1); 깊이 2 탐색은 크기가 일정합니다. / O(RC+P) time and O(1) auxiliary space per room; each depth-two search has constant size
 
 ### Verification
 
-Local checks covered 1 official examples and 70 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.
+Local checks covered 1 official example and 70 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.
 
 Run `python test_solution.py` in this problem directory. The local archive records the original submission as accepted with a score of 100. Comment cleanup and alternative implementations are covered by the local checks described here.
 

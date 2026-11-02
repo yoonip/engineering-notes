@@ -87,7 +87,7 @@ def solution(plans):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 시각을 분으로 바꾸고 시작순으로 정렬합니다. 두 시작 사이의 시간을 스택 꼭대기 과제에 씁니다. 남은 시간이 부족하면 잔여 시간을 갱신해 다시 넣습니다. | 분 단위 시간 시뮬레이션 |
-| 비용 | 시간 O(N log N), 공간 O(N) / Time O(N log N), space O(N) | 시간 O(정렬+총 수행 시간), 공간 O(N) / Time O(N log N + total work duration), space O(N) |
+| 비용 | 시간 O(N log N), 공간 O(N) / Time O(N log N), space O(N) | 시간 O(N log N + T + W), 공간 O(N) / Time O(N log N + T + W), space O(N); T=마지막 시작−첫 시작 시각 / span between first and last starts, W=총 작업 시간 / total work duration |
 
 ## 검증
 
@@ -123,7 +123,7 @@ Boundary cases: A task finishing exactly at the next start counts as completed. 
 
 ### Alternative: Minute-by-minute simulation
 
-시간 O(정렬+총 수행 시간), 공간 O(N) / Time O(N log N + total work duration), space O(N)
+시간 O(N log N + T + W), 공간 O(N) / Time O(N log N + T + W), space O(N); T=마지막 시작−첫 시작 시각 / span between first and last starts, W=총 작업 시간 / total work duration
 
 ### Verification
 

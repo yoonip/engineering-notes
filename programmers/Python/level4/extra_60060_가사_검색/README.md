@@ -26,10 +26,10 @@ Level 4 · `60060` · Python3 · [공식 문제](https://school.programmers.co.k
 
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
-| 기본 풀이 | `O((W+Q) log N), 문자열 비교 포함 / including comparisons` | `O(W)` |
-| 대안 풀이 | `O(W+Q) 평균 해시 / expected hashing` | `O(W)` |
+| 기본 풀이 | `O((W+Q) log N), 문자열 비교 포함 / including comparisons` | `O(W+qmax)` |
+| 대안 풀이 | `O(W+Q) 평균 해시 / expected hashing` | `O(W+qmax)` |
 
-W는 단어의 총 글자 수, Q는 질의의 총 글자 수, N은 단어 수입니다.
+W는 단어의 총 글자 수, Q는 질의의 총 글자 수, N은 단어 수, qmax는 가장 긴 질의의 길이입니다. 반환 목록을 제외해도 질의 반전·경계 문자열을 만드는 임시 공간이 필요합니다.
 
 ## 코드와 검증
 
@@ -59,9 +59,9 @@ Equal lengths and lowercase characters make the lexical interval exact. The same
 
 The alternative stores prefix counts in forward/reversed tries by word length. Expected work follows total characters, but many small Python dictionary nodes can increase memory overhead.
 
-W and Q are total characters in words and queries, and N is the word count.
+W and Q are total characters in words and queries, N is the word count, and qmax is the longest query length. Space excludes the returned list but includes temporary reversed queries and search-bound strings.
 
-The primary solution takes `O((W+Q) log N), including comparisons` time and `O(W)` additional space. The alternative takes `O(W+Q) expected hashing` time. Its additional space is `O(W)`.
+The primary solution takes `O((W+Q) log N), including comparisons` time and `O(W+qmax)` additional space. The alternative takes `O(W+Q) expected hashing` time. Its additional space is `O(W+qmax)`.
 
 ### Code and verification
 

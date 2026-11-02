@@ -24,12 +24,12 @@ Level 3 · [12907 공식 문제 / Official problem](https://school.programmers.c
 
 ## 다른 방법과 비교
 
-현재 화폐를 0개부터 가능한 개수까지 사용하고 다음 화폐로 넘어갑니다. 조합을 직접 세어 1차원 DP의 바깥 반복 순서를 검증합니다.
+현재 화폐를 0개부터 가능한 개수까지 사용하고 다음 화폐로 넘어갑니다. (화폐 인덱스, 남은 금액)별 결과를 캐시해 같은 부분문제의 재계산을 줄입니다. 조합을 직접 세어 1차원 DP의 반복 순서를 확인합니다.
 
 | 항목 | 기본 풀이 | 동전 개수 재귀 |
 |---|---|---|
 | 코드 | [solution.py](solution.py) | [alternative.py](alternative.py) |
-| 비용 | 시간 O(NC), 공간 O(N). 금액 반복을 내림차순으로 바꾸면 동전당 한 번만 사용하는 다른 문제가 됩니다. | 작은 금액에서 조합 탐색, 공간 O(화폐 수) |
+| 비용 | 시간 O(NC), 공간 O(N). 금액 반복을 내림차순으로 바꾸면 동전당 한 번만 사용하는 다른 문제가 됩니다. | 화폐 C종·금액 N에서 시간 O(CN²) 상한, 캐시 공간 O(CN) |
 | 용도 | 기본 제출 구현 | 작은 입력 비교·검증용 |
 
 ## 예제와 검증
@@ -58,11 +58,11 @@ Main complexity: O(amount·coin types) time, O(amount) space.
 
 ### Alternative and trade-offs
 
-Choose the count of the current denomination, then move to the next denomination. This counts combinations directly and checks the coin-outer-loop order of the 1D DP.
+Choose the count of the current denomination, then move to the next denomination. Cache results by denomination index and remaining amount. This counts combinations directly and checks the coin-outer-loop order of the 1D DP.
 
 Code: [alternative.py](alternative.py). Scope: tiny-input oracle; not for maximum-size submissions.
 
-Complexity: combination search for tiny amounts, space O(coin types).
+Complexity: O(CN²) upper-bound time and O(CN) cached space for C denominations and target N.
 
 ### Verification
 

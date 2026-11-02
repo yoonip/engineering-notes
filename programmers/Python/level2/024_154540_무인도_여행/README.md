@@ -82,7 +82,9 @@ def solution(maps):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 아직 방문하지 않은 육지에서 DFS를 시작합니다. 방문할 때 식량을 더하고 바다 표시로 바꿔 중복 방문을 막습니다. 섬별 합계를 정렬합니다. | 분리 집합과 루트별 식량 합산 |
-| 비용 | 시간 O(RC+I log I), 공간 O(RC) / Time O(RC+I log I), space O(RC); I=섬 수 / island count | 시간 O(RC α(RC)+I log I), 공간 O(RC) / Time O(RC α(RC)+I log I), space O(RC) |
+| 비용 | 시간 O(RC+I log I), 공간 O(RC) / Time O(RC+I log I), space O(RC); I=섬 수 / island count | 상각 시간 O(RC log(RC)+I log I), 공간 O(RC) / Amortized time O(RC log(RC)+I log I), space O(RC) |
+
+이 대안은 경로 압축만 사용하며 크기·랭크 기준으로 합치지 않습니다. 따라서 크기·랭크와 경로 압축을 함께 쓰는 α(RC) 경계를 그대로 적용하지 않습니다. [Princeton의 경로 압축 구현 설명](https://algs4.cs.princeton.edu/15uf/QuickUnionPathCompressionUF.java.html)을 참고하시면 됩니다.
 
 ## 검증
 
@@ -116,7 +118,7 @@ Boundary cases: Diagonal contact does not connect islands. Return [-1], not an e
 
 ### Alternative: Disjoint-set union with food totals by root
 
-시간 O(RC α(RC)+I log I), 공간 O(RC) / Time O(RC α(RC)+I log I), space O(RC)
+상각 시간 O(RC log(RC)+I log I), 공간 O(RC) / Amortized time O(RC log(RC)+I log I), space O(RC)
 
 ### Verification
 

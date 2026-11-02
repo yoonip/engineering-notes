@@ -24,7 +24,7 @@ Assume the counts after i numbers are correct. Every next choice decomposes uniq
 
 ## 비용 / Complexity
 
-도달 합 상태 S개 기준 시간 O(nS), 공간 O(S); 최악 O(2ⁿ) / O(nS) time and O(S) space; exponential worst case
+도달 가능한 합의 최대 개수를 S라 하면 시간 O(nS), 공간 O(S)입니다. 합의 절댓값은 V=Σnumbers를 넘지 않으므로 S≤2V+1입니다. / O(nS) time and O(S) space, where S is the maximum number of reachable sums and S≤2V+1 for V=Σnumbers.
 
 ## 구현 / Implementation
 
@@ -98,9 +98,9 @@ python verify.py
 
 Separately from the original grading record, 30 local cases passed. Inputs and expected results are in [cases.json](cases.json), the reproducer is [verify.py](verify.py), and the run record is [verification.json](verification.json).
 
-비교 구현은 작은 입력 30개에서 함께 통과했습니다. 큰 입력용 제출 풀이와 전수 탐색 기준 코드는 파일명과 설명으로 구분합니다.
+비교 구현은 작은 입력 30개에서 함께 통과했습니다. 기본 풀이와 비교 구현의 알고리즘·적용 범위는 위에서 구분합니다.
 
-The comparison also passed 30 small-input cases. Exhaustive reference implementations are distinguished from the submission solution in their filenames and descriptions.
+The comparison also passed 30 small-input cases. The algorithms and intended input ranges of the main and comparison implementations are described above.
 
 원본 채점 기록: 100점. [submitted_original.py](submitted_original.py)는 당시 원본 파일을 그대로 보존하며, `solution.py`는 설명을 정리한 구현입니다.
 

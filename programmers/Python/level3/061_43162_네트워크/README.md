@@ -24,12 +24,12 @@ Level 3 · [43162 공식 문제 / Official problem](https://school.programmers.c
 
 ## 다른 방법과 비교
 
-연결된 컴퓨터의 집합을 합치고 서로 다른 대표의 개수를 셉니다. DFS 대신 연결 관계를 하나씩 처리하는 방식입니다.
+연결된 컴퓨터의 집합을 합치고 서로 다른 대표의 개수를 셉니다. DFS 대신 연결 관계를 하나씩 처리하는 방식입니다. 이 구현은 경로 압축만 적용하므로, 크기·랭크 병합을 함께 쓸 때의 역 아커만 복잡도를 그대로 적용하지 않습니다.
 
 | 항목 | 기본 풀이 | Union–Find |
 |---|---|---|
 | 코드 | [solution.py](solution.py) | [alternative.py](alternative.py) |
-| 비용 | 시간 O(N²), 추가 공간 O(N). | O(N² α(N)), 공간 O(N) |
+| 비용 | 시간 O(N²), 추가 공간 O(N). | O(N² log N), 공간 O(N) |
 | 용도 | 기본 제출 구현 | 대안 구현 |
 
 ## 예제와 검증
@@ -59,11 +59,11 @@ Main complexity: O(N²) time, O(N) extra space.
 
 ### Alternative and trade-offs
 
-Union connected computer pairs and count distinct representatives. This builds components incrementally instead of exploring them by DFS.
+Union connected computer pairs and count distinct representatives. This builds components incrementally instead of exploring them by DFS. The implementation uses path compression without size/rank linking, so the table gives an O(N² log N) upper bound rather than assuming the inverse-Ackermann bound.
 
 Code: [alternative.py](alternative.py).
 
-Complexity: O(N² α(N)), space O(N).
+Complexity: O(N² log N), space O(N).
 
 ### Verification
 
@@ -74,6 +74,8 @@ The table above supplies argument arrays and expected results; [examples.json](e
 ## 출처 / Sources
 
 - [프로그래머스 공식 문제: 네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) — 문제 조건·예제·함수 인터페이스 / task rules, examples and interface. 확인 / checked: 2026-10-19.
+
+- [Princeton Union–Find 강의](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/UnionFind-2x2.pdf) — 임의 병합과 경로 압축의 시간 상한 / path compression with naïve linking.
 
 ## 실행 / Run
 

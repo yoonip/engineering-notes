@@ -23,7 +23,7 @@ def solution(board):
         cost, row, col, old_direction = heappop(heap)
         # 더 좋은 경로로 대체된 오래된 후보는 무시.
         if cost != distance[row][col][old_direction]:
-            # 이동 불가 방향 건너뜀.
+            # 오래된 비용 후보는 처리하지 않고 다음 후보로 넘어갑니다.
             continue
         # 방향별 이동 확인.
         for direction, (dr, dc) in enumerate(directions):

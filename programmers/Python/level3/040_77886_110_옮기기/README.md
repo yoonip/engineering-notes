@@ -29,7 +29,7 @@ Level 3 · [77886 공식 문제 / Official problem](https://school.programmers.c
 | 항목 | 기본 풀이 | 문자열 상태 그래프 탐색 |
 |---|---|---|
 | 코드 | [solution.py](solution.py) | [alternative.py](alternative.py) |
-| 비용 | 시간·공간 O(전체 글자 수). | 상태 수 S에서 O(SL²), 아주 짧은 문자열 비교용 |
+| 비용 | 시간·공간 O(전체 글자 수). | 상태 수 S·문자열 길이 L에서 시간 O(SL³), 공간 O(SL), 아주 짧은 문자열 비교용 |
 | 용도 | 기본 제출 구현 | 작은 입력 비교·검증용 |
 
 ## 예제와 검증
@@ -62,7 +62,7 @@ Explore all strings obtainable by removing a 110 block and reinserting it at eve
 
 Code: [alternative.py](alternative.py). Scope: tiny-input oracle; not for maximum-size submissions.
 
-Complexity: states Swith O(SL²), very-short-string oracle.
+Complexity: O(SL³) time and O(SL) space for S states of length L; each of O(L²) moves constructs and hashes an O(L)-length string. Intended for very short strings.
 
 ### Verification
 

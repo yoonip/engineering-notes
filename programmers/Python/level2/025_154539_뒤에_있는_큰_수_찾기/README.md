@@ -15,7 +15,7 @@
 
 ## 풀이를 따라가기
 
-아직 답을 못 찾은 인덱스를 감소 스택에 둡니다. 새 값이 스택 끝의 값보다 크면 그 인덱스의 답을 새 값으로 정합니다.
+아직 답을 못 찾은 인덱스를 단조 비증가 스택에 둡니다. 새 값이 스택 끝의 값보다 크면 그 인덱스의 답을 새 값으로 정합니다.
 
 [기본 풀이 / Main](solution.py) · [다른 풀이 / Alternative](alternative.py) · [제출 원본 / Archived submission](submitted_original.py)
 
@@ -57,8 +57,10 @@ def solution(numbers):
 
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
-| 계산 방식 | 아직 답을 못 찾은 인덱스를 감소 스택에 둡니다. 새 값이 스택 끝의 값보다 크면 그 인덱스의 답을 새 값으로 정합니다. | 오른쪽부터 답 인덱스 건너뛰기 |
-| 비용 | 시간 O(N), 공간 O(N) / Time and space O(N) | 최악 시간 O(N²), 공간 O(N) / Worst-case time O(N²), space O(N); 스택 풀이가 선형 보장 / the stack guarantees linear time |
+| 계산 방식 | 아직 답을 못 찾은 인덱스를 단조 비증가 스택에 둡니다. 새 값이 스택 끝의 값보다 크면 그 인덱스의 답을 새 값으로 정합니다. | 오른쪽부터 답 인덱스 건너뛰기 |
+| 비용 | 시간 O(N), 공간 O(N) / Time and space O(N) | 상각 시간 O(N), 공간 O(N) / Amortized time O(N), space O(N) |
+
+대안의 `following` 연결은 오른쪽에서 왼쪽으로 만든 단조 스택과 같습니다. 현재 값에 가려져 건너뛴 인덱스는 이후 연결에서 다시 등장하지 않습니다. 각 인덱스를 한 번씩 제거하므로 중첩 반복문이어도 총 이동 횟수는 선형입니다.
 
 ## 검증
 
@@ -78,7 +80,7 @@ Input arguments: `numbers`. The return value is a numeric list satisfying the ta
 
 ### Approach
 
-Keep unresolved indices in a decreasing stack. When the new value exceeds the stack-top value, resolve that index with the new value.
+Keep unresolved indices in a nonincreasing stack. When the new value exceeds the stack-top value, resolve that index with the new value.
 
 The runnable code is linked above; its comments are in Korean.
 
@@ -92,7 +94,9 @@ Boundary cases: Equal values do not qualify. Any index left unresolved keeps −
 
 ### Alternative: Right-to-left jumping through next-greater links
 
-최악 시간 O(N²), 공간 O(N) / Worst-case time O(N²), space O(N); 스택 풀이가 선형 보장 / the stack guarantees linear time
+상각 시간 O(N), 공간 O(N) / Amortized time O(N), space O(N)
+
+The next-greater links encode a monotonic stack built from right to left. A skipped index is removed from the active chain permanently, so the total number of jumps is linear.
 
 ### Verification
 

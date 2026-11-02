@@ -24,7 +24,7 @@ The collected union counts every removed cell once. Column compaction preserves 
 
 ## 비용 / Complexity
 
-제거 단계 R에 시간 O(Rmn), 공간 O(mn); R≤mn/4 / O(Rmn) time, O(mn) space; R≤mn/4
+제거 단계 R에 시간 O((R+1)mn), 공간 O(mn); R≤mn/4이며 마지막 확인 순회도 포함합니다. / O((R+1)mn) time and O(mn) space; R≤mn/4, including the final scan with no removals
 
 ## 구현 / Implementation
 
@@ -123,9 +123,9 @@ python verify.py
 
 Separately from the original grading record, 30 local cases passed. Inputs and expected results are in [cases.json](cases.json), the reproducer is [verify.py](verify.py), and the run record is [verification.json](verification.json).
 
-비교 구현은 작은 입력 30개에서 함께 통과했습니다. 큰 입력용 제출 풀이와 전수 탐색 기준 코드는 파일명과 설명으로 구분합니다.
+비교 구현은 작은 입력 30개에서 함께 통과했습니다. 기본 풀이와 비교 구현의 알고리즘·적용 범위는 위에서 구분합니다.
 
-The comparison also passed 30 small-input cases. Exhaustive reference implementations are distinguished from the submission solution in their filenames and descriptions.
+The comparison also passed 30 small-input cases. The algorithms and intended input ranges of the main and comparison implementations are described above.
 
 원본 채점 기록: 100점. [submitted_original.py](submitted_original.py)는 당시 원본 파일을 그대로 보존하며, `solution.py`는 설명을 정리한 구현입니다.
 

@@ -24,12 +24,12 @@ Level 3 · [1833 공식 문제 / Official problem](https://school.programmers.co
 
 ## 다른 방법과 비교
 
-두 쐐기를 대각 꼭짓점으로 정한 뒤 다른 모든 쐐기가 직사각형의 엄격한 내부에 있는지 확인합니다. 경계에 있는 쐐기는 허용합니다.
+두 쐐기를 대각 꼭짓점으로 정한 뒤 다른 모든 쐐기가 직사각형의 엄격한 내부에 있는지 확인합니다. 경계에 있는 쐐기는 허용합니다. `combinations`가 입력 원소 참조를 내부 튜플에 보관하므로 보조 공간은 O(N)입니다.
 
 | 항목 | 기본 풀이 | 모든 쐐기 내부 검사 |
 |---|---|---|
 | 코드 | [solution.cpp](solution.cpp) | [alternative.py](alternative.py) |
-| 비용 | 시간 O(N²+N log N), 공간 O(N). | O(N³), 공간 O(1), 작은 입력 비교용 |
+| 비용 | 시간 O(N²+N log N), 공간 O(N). | O(N³), 공간 O(N), 작은 입력 비교용 |
 | 용도 | 기본 제출 구현 | 작은 입력 비교·검증용 |
 
 ## 예제와 검증
@@ -58,11 +58,11 @@ Main complexity: O(N²+N log N) time, O(N) space.
 
 ### Alternative and trade-offs
 
-Choose each pair of pegs as diagonal corners and test every other peg for strict interior membership. Pegs on the boundary are allowed.
+Choose each pair of pegs as diagonal corners and test every other peg for strict interior membership. Pegs on the boundary are allowed. `combinations` stores references to the input elements in a tuple, using O(N) auxiliary space.
 
 Code: [alternative.py](alternative.py). Scope: tiny-input oracle; not for maximum-size submissions.
 
-Complexity: O(N³), space O(1), small-input checking.
+Complexity: O(N³), space O(N), small-input checking.
 
 ### Verification
 
@@ -73,6 +73,8 @@ The table above supplies argument arrays and expected results; [examples.json](e
 ## 출처 / Sources
 
 - [프로그래머스 공식 문제: 캠핑](https://school.programmers.co.kr/learn/courses/30/lessons/1833) — 문제 조건·예제·함수 인터페이스 / task rules, examples and interface. 확인 / checked: 2026-10-19.
+
+- [Python `itertools.combinations`](https://docs.python.org/3/library/itertools.html#itertools.combinations) — 입력을 보관하는 `pool`과 조합 순회 / input pool and combination iteration.
 
 ## 실행 / Run
 

@@ -45,7 +45,7 @@ def solution(n):
 
 ## 다른 방법: 양끝 포인터 구간 합 / Sliding window sum
 
-오른쪽 끝을 늘려 합을 키우고 n을 넘으면 왼쪽 끝을 줄입니다. 양의 수이므로 한쪽 이동마다 합이 단조롭게 바뀌며 시간 O(n), 공간 O(1)입니다.
+오른쪽 끝을 늘려 합을 키우고 n을 넘으면 왼쪽 끝을 오른쪽으로 옮겨 구간을 줄입니다. 양의 수이므로 한쪽 이동마다 합이 단조롭게 바뀌며 시간 O(n), 공간 O(1)입니다.
 
 Increase the right endpoint to grow the sum and move the left endpoint while it exceeds n. Positivity makes each adjustment monotone; time is O(n), space O(1).
 
@@ -88,9 +88,9 @@ python verify.py
 
 Separately from the original grading record, 29 local cases passed. Inputs and expected results are in [cases.json](cases.json), the reproducer is [verify.py](verify.py), and the run record is [verification.json](verification.json).
 
-비교 구현은 작은 입력 29개에서 함께 통과했습니다. 큰 입력용 제출 풀이와 전수 탐색 기준 코드는 파일명과 설명으로 구분합니다.
+비교 구현은 작은 입력 29개에서 함께 통과했습니다. 기본 풀이와 비교 구현의 알고리즘·적용 범위는 위에서 구분합니다.
 
-The comparison also passed 29 small-input cases. Exhaustive reference implementations are distinguished from the submission solution in their filenames and descriptions.
+The comparison also passed 29 small-input cases. The algorithms and intended input ranges of the main and comparison implementations are described above.
 
 원본 채점 기록: 100점. [submitted_original.py](submitted_original.py)는 당시 원본 파일을 그대로 보존하며, `solution.py`는 설명을 정리한 구현입니다.
 

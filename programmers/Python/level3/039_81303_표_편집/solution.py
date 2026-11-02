@@ -31,11 +31,11 @@ def solution(n, k, cmd):
             deleted.append((k, left, right))
             # 삭제 여부 표시.
             alive[k] = 'X'
-            # 위 행이 있으면 연결 복원.
+            # 위 행이 있으면 연결 갱신.
             if left != -1:
                 # 위 행이 삭제 행을 건너뛰어 아래 행을 가리키게 함.
                 following[left] = right
-            # 아래 행이 있으면 연결 복원.
+            # 아래 행이 있으면 연결 갱신.
             if right != n:
                 # 아래 행도 위 행과 직접 연결.
                 previous[right] = left
@@ -46,11 +46,11 @@ def solution(n, k, cmd):
             row, left, right = deleted.pop()
             # 현재 선택 k는 유지.
             alive[row] = 'O'
-            # 위 행이 있으면 연결 복원.
+            # 위 행이 있으면 연결 갱신.
             if left != -1:
                 # 위 행의 다음 행을 복구한 행으로 바꿈.
                 following[left] = row
-            # 아래 행이 있으면 연결 복원.
+            # 아래 행이 있으면 연결 갱신.
             if right != n:
                 # 아래 행의 이전 행을 복구한 행으로 바꿈.
                 previous[right] = row

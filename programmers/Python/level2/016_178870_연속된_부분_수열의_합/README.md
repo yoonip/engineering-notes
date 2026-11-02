@@ -39,7 +39,7 @@ def solution(sequence, k):
 
 ## 정답이 되는 이유
 
-모든 값이 양수라 오른쪽을 늘리면 합이 증가하고 왼쪽을 빼면 감소합니다. 버린 왼쪽 끝은 이후 더 긴 구간만 만들므로 다시 볼 필요가 없습니다.
+모든 값이 양수라 오른쪽을 늘리면 합이 증가하고 왼쪽을 빼면 감소합니다. 합이 k를 넘어 버린 왼쪽 끝은 오른쪽을 더 늘려도 합이 k보다 크므로 다시 볼 필요가 없습니다.
 
 시간 O(N), 공간 O(1) / Time O(N), space O(1)
 
@@ -93,7 +93,7 @@ The runnable code is linked above; its comments are in Korean.
 
 ### Correctness and cost
 
-All values are positive: extending increases the sum and shrinking decreases it. A discarded left endpoint cannot later yield a better interval.
+All values are positive: extending increases the sum and shrinking decreases it. Once an interval sum exceeds k, extending its right endpoint cannot make that same left endpoint valid again.
 
 시간 O(N), 공간 O(1) / Time O(N), space O(1)
 

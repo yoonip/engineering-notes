@@ -18,8 +18,8 @@ def solution(wallpaper):
 #     luy = len(wallpaper[0])  # len은 길이. []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. =는 값 저장. 시작 열: 첫 행의 길이, 즉 전체 열 수로 초기화
 #     rdx = 0  # =는 값 저장. 끝 행: 파일을 찾을 때마다 필요한 아래쪽 경계로 갱신
 #     rdy = 0  # =는 값 저장. 끝 열: 파일을 찾을 때마다 필요한 오른쪽 경계로 갱신
-#     for r, row in enumerate(wallpaper):  # for·in은 원소를 차례로 꺼내는 반복문. enumerate는 인덱스·값을 함께 제공. ()로 묶은 여러 값은 변경 불가 튜플. 행 번호 r과 해당 행의 문자열을 함께 꺼냄
-#         for c, cell in enumerate(row):  # for·in은 원소를 차례로 꺼내는 반복문. enumerate는 인덱스·값을 함께 제공. ()로 묶은 여러 값은 변경 불가 튜플. 그 행에서 열 번호 c와 문자 하나를 함께 꺼냄
+#     for r, row in enumerate(wallpaper):  # for·in은 원소를 차례로 꺼내는 반복문. enumerate는 인덱스·값을 함께 제공. 쉼표로 나열한 변수에 값을 차례로 나누어 저장. 행 번호 r과 해당 행의 문자열을 함께 꺼냄
+#         for c, cell in enumerate(row):  # for·in은 원소를 차례로 꺼내는 반복문. enumerate는 인덱스·값을 함께 제공. 쉼표로 나열한 변수에 값을 차례로 나누어 저장. 그 행에서 열 번호 c와 문자 하나를 함께 꺼냄
 #             if cell == "#":  # if는 조건이 참일 때 실행. ==는 같음 비교. 파일이 있는 칸만 처리. 빈칸 "."은 건너뜀
 #                 lux = min(lux, r)  # min은 최솟값. =는 값 저장. 기존 시작 행과 현재 행 중 작은 값 → 가장 위쪽
 #                 luy = min(luy, c)  # min은 최솟값. =는 값 저장. 기존 시작 열과 현재 열 중 작은 값 → 가장 왼쪽

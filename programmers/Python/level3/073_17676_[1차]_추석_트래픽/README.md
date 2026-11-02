@@ -48,7 +48,7 @@ Level 3 · [17676 공식 문제 / Official problem](https://school.programmers.c
 
 ### Task and constraints
 
-Find the maximum concurrent request count over any one-second window from millisecond logs.
+Find the maximum number of requests whose processing intervals intersect a single one-second window, using millisecond logs.
 
 Request intervals include both endpoints at millisecond resolution. Logs are ordered by end time.
 
@@ -72,7 +72,7 @@ Complexity: O(N log N), space O(N).
 
 Use official examples and separate edge/random inputs. Exhaustive alternatives are compared only on small inputs.
 
-The table above supplies argument arrays and expected results; [examples.json](examples.json) stores them as executable data. The original locally stored submission was graded 100; comments and the separate alternative are reviewed and tested locally, which is distinct from a new website submission.
+[examples.json](examples.json) stores the example argument arrays and expected results as executable data. The original locally stored submission was graded 100; comments and the separate alternative are reviewed and tested locally, which is distinct from a new website submission.
 
 ## 출처 / Sources
 

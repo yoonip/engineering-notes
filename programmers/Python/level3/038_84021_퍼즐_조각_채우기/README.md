@@ -67,7 +67,7 @@ Extract holes and pieces, compare all four rotations pairwise, and use bipartite
 
 Code: [alternative.py](alternative.py).
 
-Complexity: piece counts H,Pwith O(HP·6 log 6+H²P), space O(N²+HP).
+Complexity: with H holes and P pieces, O(HP·6 log 6+H²P), space O(N²+HP).
 
 ### Verification
 

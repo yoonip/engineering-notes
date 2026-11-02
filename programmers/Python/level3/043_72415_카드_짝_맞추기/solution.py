@@ -39,11 +39,11 @@ def solution(board, r, c):
                 nr, nc = row + dr, col + dc
                 # 보드 안인지 확인.
                 if 0 <= nr < 4 and 0 <= nc < 4:
-                    # Ctrl 이동의 도착점.
+                    # 일반 방향키로 한 칸 이동한 도착점입니다.
                     target = nr * 4 + nc
                     # 처음 도달했다면 최단 거리 확정.
                     if distance[target] == -1:
-                        # Ctrl+방향키도 조작 한 번.
+                        # 일반 방향키 한 번의 이동 비용은 1입니다.
                         distance[target] = distance[point] + 1
                         queue.append(target)
                 # Ctrl 이동은 현재 칸에서 새로 시작.

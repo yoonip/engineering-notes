@@ -3,7 +3,7 @@ from heapq import heappush, heappop
 
 def solution(city, road):
     cameras = {}
-    # 도로별로 카메라 없는 조각을 생성.
+    # 도로 중앙의 카메라 위치와 제한 속도를 모읍니다.
     for x1, y1, x2, y2, limit in road:
         point = ((x1 + x2) // 2, (y1 + y2) // 2)
         # 같은 위치의 가장 엄격한 제한만 남김.
@@ -47,7 +47,7 @@ def solution(city, road):
         offset = min(bisect_right(cuts[index], x + y) - 1, len(cuts[index]) - 2)
         return bases[index] + offset
 
-    # 도시가 놓인 도로를 찾음.
+    # 카메라가 없는 교점에서 만나는 도로 조각들을 합칩니다.
     for i, (x1, y1, x2, y2, _) in enumerate(road):
         for j in range(i):
             # 다른 도로의 양 끝 좌표를 언패킹.

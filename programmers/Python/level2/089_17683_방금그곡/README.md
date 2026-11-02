@@ -24,7 +24,7 @@ Normalization gives a one-to-one note encoding and prevents a C from matching C#
 
 ## 비용 / Complexity
 
-단순 부분 문자열 탐색의 보수적 상한 O(Σ(duration·|m|)), 공간 O(최대 duration) / Conservative O(Σ(duration·|m|)) time, O(max duration) space
+시간 O(M+Σ(I+D·M)), 공간 O(M+최대 I+최대 D)의 보수적 상한입니다. M은 기억한 멜로디 길이, I는 곡 정보 길이, D는 재생 시간입니다. / Conservative O(M+Σ(I+D·M)) time and O(M+max I+max D) space, where M is the remembered melody length, I the song-record length, and D the playback duration.
 
 ## 구현 / Implementation
 
@@ -56,9 +56,9 @@ def solution(m, musicinfos):
 
 ## 다른 방법: 순환 악보 KMP 검색 / KMP over a cyclic score
 
-재생 문자열을 만들지 않고 악보의 순환 인덱스에서 KMP로 찾습니다. 시간 O(|m|+전체 재생 분수), 보조 공간 O(|m|)로 긴 재생에서도 반복 문자열이 필요 없습니다.
+재생 문자열을 만들지 않고 악보의 순환 인덱스에서 KMP로 찾습니다. 시간 O(M+Σ(I+D)), 보조 공간 O(M+최대 I)이며, 곡 정보 파싱과 음표 목록도 포함합니다. 긴 재생에서도 반복 문자열이 필요 없습니다.
 
-Run KMP on cyclic score indices without materializing the playback. It uses O(|m|+total playback minutes) time and O(|m|) auxiliary space.
+Run KMP on cyclic score indices without materializing the playback. Including record parsing and the score-note list, it uses O(M+Σ(I+D)) time and O(M+max I) auxiliary space.
 
 [alternative.py](alternative.py)
 
@@ -129,9 +129,9 @@ python verify.py
 
 Separately from the original grading record, 31 local cases passed. Inputs and expected results are in [cases.json](cases.json), the reproducer is [verify.py](verify.py), and the run record is [verification.json](verification.json).
 
-비교 구현은 작은 입력 31개에서 함께 통과했습니다. 큰 입력용 제출 풀이와 전수 탐색 기준 코드는 파일명과 설명으로 구분합니다.
+비교 구현은 작은 입력 31개에서 함께 통과했습니다. 기본 풀이와 비교 구현의 알고리즘·적용 범위는 위에서 구분합니다.
 
-The comparison also passed 31 small-input cases. Exhaustive reference implementations are distinguished from the submission solution in their filenames and descriptions.
+The comparison also passed 31 small-input cases. The algorithms and intended input ranges of the main and comparison implementations are described above.
 
 원본 채점 기록: 100점. [submitted_original.py](submitted_original.py)는 당시 원본 파일을 그대로 보존하며, `solution.py`는 설명을 정리한 구현입니다.
 

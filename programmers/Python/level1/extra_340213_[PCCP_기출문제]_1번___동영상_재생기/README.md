@@ -49,7 +49,7 @@ def solution(video_len, pos, op_start, op_end, commands):
 
 # 전체 코드 줄별 설명
 # def to_seconds(time_string):  # def는 함수 정의, () 안은 입력 매개변수, : 뒤 들여쓰기는 함수 본문. 분:초 문자열을 초로 바꾸는 보조 함수.
-#     minutes, seconds = time_string.split(":")  # split은 구분자로 문자열 분리. ()로 묶은 여러 값은 변경 불가 튜플. =는 값 저장. 콜론으로 분·초 문자열을 나눔.
+#     minutes, seconds = time_string.split(":")  # split은 구분자로 문자열 분리. 쉼표로 나열한 변수에 값을 차례로 나누어 저장. =는 값 저장. 콜론으로 분·초 문자열을 나눔.
 #     return int(minutes) * 60 + int(seconds)  # return은 결과를 돌려주고 함수 종료. int는 정수 변환. 분을 60배 하고 초를 더해 정수 초 반환.
 # 
 # def solution(video_len, pos, op_start, op_end, commands):  # def는 함수 정의, () 안은 입력 매개변수, : 뒤 들여쓰기는 함수 본문. 영상 길이·현재 위치·오프닝·명령을 입력받음.

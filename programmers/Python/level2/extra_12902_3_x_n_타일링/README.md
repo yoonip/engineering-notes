@@ -18,7 +18,7 @@ A 3×n board must have even area, so odd n is impossible. Grouping ordinary widt
 
 ## 정답이 되는 이유 / Why it works
 
-먼저 f(n)=3f(n−2)+2Σf(n−4),f(n−6),…를 얻습니다. n−2에 대한 같은 식을 빼면 합이 소거되어 4f(n−2)−f(n−4)가 됩니다. f(0)=1,f(2)=3입니다.
+짝수 n≥2에서 먼저 f(n)=3f(n−2)+2[f(n−4)+f(n−6)+…+f(0)]을 얻습니다. 대괄호의 합은 n=2일 때 0입니다. n−2에 대한 같은 식을 빼면 합이 소거되어 4f(n−2)−f(n−4)가 됩니다. f(0)=1,f(2)=3입니다.
 
 Start with f(n)=3f(n−2)+2 times the sum f(n−4)+f(n−6)+…. Subtract the corresponding recurrence for n−2 to eliminate the sum, leaving 4f(n−2)−f(n−4). Bases are f(0)=1 and f(2)=3.
 
@@ -95,9 +95,9 @@ python verify.py
 
 Separately from the original grading record, 29 local cases passed. Inputs and expected results are in [cases.json](cases.json), the reproducer is [verify.py](verify.py), and the run record is [verification.json](verification.json).
 
-비교 구현은 작은 입력 29개에서 함께 통과했습니다. 큰 입력용 제출 풀이와 전수 탐색 기준 코드는 파일명과 설명으로 구분합니다.
+비교 구현은 작은 입력 29개에서 함께 통과했습니다. 기본 풀이와 비교 구현의 알고리즘·적용 범위는 위에서 구분합니다.
 
-The comparison also passed 29 small-input cases. Exhaustive reference implementations are distinguished from the submission solution in their filenames and descriptions.
+The comparison also passed 29 small-input cases. The algorithms and intended input ranges of the main and comparison implementations are described above.
 
 원본 채점 기록: 100점. [submitted_original.py](submitted_original.py)는 당시 원본 파일을 그대로 보존하며, `solution.py`는 설명을 정리한 구현입니다.
 

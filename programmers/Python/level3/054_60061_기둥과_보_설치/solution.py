@@ -18,7 +18,7 @@ def solution(n, build_frame):
         if action == 1:
             # 설치는 기존 구조물의 지지를 약화시키지 않음.
             if valid(x, y, kind):
-                # 삭제한 구조물을 다시 넣어 원래 상태로 복구.
+                # 지지 조건을 만족하는 새 구조물을 설치합니다.
                 structures.add(structure)
         else:
             # 먼저 지운 상태를 가정.

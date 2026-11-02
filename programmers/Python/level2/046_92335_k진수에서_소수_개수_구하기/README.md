@@ -84,7 +84,7 @@ def solution(n,k):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | divmod로 진수 표현을 만듭니다. 0으로 나눠 빈 조각을 버립니다. 2는 소수로, 그보다 큰 홀수는 제곱근 이하 홀수 약수가 없는지 확인합니다. | 체로 소수 약수를 먼저 준비 |
-| 비용 | 시간 O(L²+Σsqrt(P)), 공간 O(L) / Time O(L²+Σsqrt(P)), space O(L); L=진수 표현 길이, P=조각의 십진수 값 / digit length and decimal token values | 시간 O(sqrt(M) log log M+Σπ(sqrt(P))), 공간 O(sqrt(M)) / Time O(sqrt(M) log log M+Σπ(sqrt(P))), space O(sqrt(M)); M=최대 조각 / largest token |
+| 비용 | 시간 O(L²+Σsqrt(P)), 공간 O(L) / Time O(L²+Σsqrt(P)), space O(L); L=진수 표현 길이, P=조각의 십진수 값 / digit length and decimal token values | 시간 O(L+sqrt(M) log log(M+2)+Σπ(sqrt(P))), 공간 O(L+sqrt(M)) / Time O(L+sqrt(M) log log(M+2)+Σπ(sqrt(P))), space O(L+sqrt(M)); L=진수 표현 길이, M=최대 조각 / digit length and largest token |
 
 ## 검증
 
@@ -118,7 +118,7 @@ Boundary cases: Read tokens in decimal, not base k. One is not prime, and consec
 
 ### Alternative: Sieve prime trial divisors once
 
-시간 O(sqrt(M) log log M+Σπ(sqrt(P))), 공간 O(sqrt(M)) / Time O(sqrt(M) log log M+Σπ(sqrt(P))), space O(sqrt(M)); M=최대 조각 / largest token
+시간 O(L+sqrt(M) log log(M+2)+Σπ(sqrt(P))), 공간 O(L+sqrt(M)) / Time O(L+sqrt(M) log log(M+2)+Σπ(sqrt(P))), space O(L+sqrt(M)); L=진수 표현 길이, M=최대 조각 / digit length and largest token
 
 ### Verification
 

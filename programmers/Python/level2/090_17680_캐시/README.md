@@ -52,9 +52,9 @@ def solution(cacheSize, cities):
 
 ## 다른 방법: 작은 deque 캐시 / Small deque cache
 
-캐시에서 도시를 직접 찾고 적중한 항목을 지운 뒤 뒤로 붙입니다. 시간 O(n·cacheSize)이지만 문제의 작은 캐시 용량에서는 간단한 비교 구현입니다.
+캐시에서 도시를 직접 찾고 적중한 항목을 지운 뒤 뒤로 붙입니다. 시간 O(n·(cacheSize+1))이지만 문제의 작은 캐시 용량에서는 간단한 비교 구현입니다.
 
-Find and remove a hit from a deque before appending it. This costs O(n·cacheSize), but is a simple comparison implementation for the problem’s small cache capacity.
+Find and remove a hit from a deque before appending it. This costs O(n·(cacheSize+1)), but is a simple comparison implementation for the problem’s small cache capacity.
 
 [alternative.py](alternative.py)
 
@@ -112,9 +112,9 @@ python verify.py
 
 Separately from the original grading record, 34 local cases passed. Inputs and expected results are in [cases.json](cases.json), the reproducer is [verify.py](verify.py), and the run record is [verification.json](verification.json).
 
-비교 구현은 작은 입력 34개에서 함께 통과했습니다. 큰 입력용 제출 풀이와 전수 탐색 기준 코드는 파일명과 설명으로 구분합니다.
+비교 구현은 작은 입력 34개에서 함께 통과했습니다. 기본 풀이와 비교 구현의 알고리즘·적용 범위는 위에서 구분합니다.
 
-The comparison also passed 34 small-input cases. Exhaustive reference implementations are distinguished from the submission solution in their filenames and descriptions.
+The comparison also passed 34 small-input cases. The algorithms and intended input ranges of the main and comparison implementations are described above.
 
 원본 채점 기록: 100점. [submitted_original.py](submitted_original.py)는 당시 원본 파일을 그대로 보존하며, `solution.py`는 설명을 정리한 구현입니다.
 

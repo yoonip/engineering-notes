@@ -27,9 +27,9 @@ Level 4 · `150364` · Python3 · [공식 문제](https://school.programmers.co.
 | 구분 | 시간 | 추가 공간 |
 |---|---|---|
 | 기본 풀이 | `O(B·H + n log n), B=공 수/balls, H=높이/height` | `O(B+n)` |
-| 대안 풀이 | `O(3^B · B + B·H)` | `O(n+B)` |
+| 대안 풀이 | `O(n log n + B·H + 3^B·(n+B))` | `O(n+B)` |
 
-n은 정점 수, B는 실제로 떨어뜨린 공 수, H는 트리 높이입니다.
+n은 정점 수, B는 실제로 떨어뜨린 공 수, H는 트리 높이입니다. 대안은 값 배열마다 n개 리프 합계 칸을 초기화하므로 O(n) 비용도 포함합니다.
 
 ## 코드와 검증
 
@@ -59,9 +59,9 @@ Assign labels left to right using max(1, remaining target minus three times the 
 
 The alternative enumerates label arrays in length and lexicographic order. A target-sum cap of ten keeps this independent exhaustive reference finite.
 
-n is the vertex count, B the number of dropped balls and H the tree height.
+n is the vertex count, B the number of dropped balls and H the tree height. Each alternative label assignment also initializes n sum entries, contributing O(n) work.
 
-The primary solution takes `O(B·H + n log n), B=balls, H=height` time and `O(B+n)` additional space. The alternative takes `O(3^B · B + B·H)` time. Its additional space is `O(n+B)`.
+The primary solution takes `O(B·H + n log n), B=balls, H=height` time and `O(B+n)` additional space. The alternative takes `O(n log n + B·H + 3^B·(n+B))` time. Its additional space is `O(n+B)`.
 
 ### Code and verification
 

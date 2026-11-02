@@ -11,14 +11,14 @@ Level 3 · [118668 공식 문제 / Official problem](https://school.programmers.
 ## 풀이를 따라가기
 
 1. 모든 문제를 실제로 풀 필요는 없고, 알고력·코딩력이 각각 최대 요구치 이상이면 끝입니다. 공부와 문제 풀이를 같은 종류의 행동으로 처리합니다.
-2. 능력은 감소하지 않으므로 작은 능력 상태부터 DP를 갱신합니다. 목표 이상의 능력은 하나로 묶습니다. 목표 능력 A·C와 문제 수 P에 대해 시간 O(AC(P+2)), 공간 O(AC).
+2. 능력은 감소하지 않으므로 작은 능력 상태부터 DP를 갱신합니다. 목표 이상의 능력은 하나로 묶습니다. 목표 능력을 A·C라 하고 S=(A+1)(C+1)로 두면 시간 O(S(P+2)), 공간 O(S+P)입니다. P는 문제 수입니다.
 3. 예: 이미 모든 요구치 이상이면 초기 상태가 목표이므로 추가 시간 0입니다. 같은 문제를 반복해 능력을 올리는 선택도 DP에 자연스럽게 포함됩니다.
 
 ## 왜 이 방법으로 풀 수 있나
 
 모든 문제를 실제로 풀 필요는 없고, 알고력·코딩력이 각각 최대 요구치 이상이면 끝입니다. 공부와 문제 풀이를 같은 종류의 행동으로 처리합니다.
 
-시간·공간: 시간 O(AC(P+2)), 공간 O(AC).
+시간·공간: 시간 O(S(P+2)), 공간 O(S+P). S=(A+1)(C+1)입니다.
 
 ## 다른 방법과 비교
 
@@ -27,7 +27,7 @@ Level 3 · [118668 공식 문제 / Official problem](https://school.programmers.
 | 항목 | 기본 풀이 | 능력 상태 다익스트라 |
 |---|---|---|
 | 코드 | [solution.py](solution.py) | [alternative.py](alternative.py) |
-| 비용 | 시간 O(AC(P+2)), 공간 O(AC). | O(AC(P+2) log(AC)), 공간 O(AC) |
+| 비용 | 시간 O(S(P+2)), 공간 O(S+P). S=(A+1)(C+1)입니다. | O(S(P+2) log(S(P+2)+1)), 공간 O(S(P+2)) |
 | 용도 | 기본 제출 구현 | 대안 구현 |
 
 ## 예제와 검증
@@ -53,7 +53,7 @@ Minimize study and practice time until both skills meet every problem requiremen
 
 The goal is to reach the maximum required algorithm and coding skills; solving every problem is unnecessary. Add one-hour single-skill study actions to the available problems. Cap skills at the goal and update a two-dimensional minimum-time DP in increasing skill order. Since skills never decrease, every relevant transition is covered; a no-gain problem cannot improve a positive-cost state.
 
-Main complexity: O(AC(P+2)) time, O(AC) space.
+With S=(A+1)(C+1) skill states and P problems, the main solution uses O(S(P+2)) time and O(S+P) auxiliary space, including its copied action list.
 
 ### Alternative and trade-offs
 
@@ -61,7 +61,7 @@ Use skill pairs as vertices and study/problem actions as edges. Both versions ca
 
 Code: [alternative.py](alternative.py).
 
-Complexity: O(AC(P+2) log(AC)), space O(AC).
+Complexity: O(S(P+2) log(S(P+2)+1)) time and O(S(P+2)) auxiliary space as upper bounds. The lazy-update heap can retain multiple entries per skill state.
 
 ### Verification
 

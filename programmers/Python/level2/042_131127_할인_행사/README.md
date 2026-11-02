@@ -63,7 +63,9 @@ def solution(want,number,discount):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 원하는 품목을 빈도 사전으로 만듭니다. 각 시작일부터 10일을 Counter로 세고 두 사전이 같은지 비교합니다. | 빠지는 상품과 들어오는 상품만 갱신 |
-| 비용 | 시간 O(10N), 공간 O(10+U) / Time O(10N), space O(10+U) | 시간 O(NU), 공간 O(U+10) / Time O(NU), space O(U+10); U≤10 |
+| 비용 | 시간 O(10N), 공간 O(10+U) / Time O(10N), space O(10+U) | 시간 O(NU), 공간 O(U+D) / Time O(NU), space O(U+D); U=원하는 품목 수(≤10), D=전체 할인 품목 종류 수 / desired types and all distinct discounted types |
+
+대안의 Counter는 빈도가 0이 된 키도 보관합니다. 따라서 현재 열흘의 상품뿐 아니라 앞서 등장한 상품의 키가 남아 공간은 전체 품목 종류 수에 비례합니다.
 
 ## 검증
 
@@ -98,7 +100,7 @@ Boundary cases: Skip starts with fewer than ten days remaining. Matching product
 
 ### Alternative: Incremental sliding-window frequencies
 
-시간 O(NU), 공간 O(U+10) / Time O(NU), space O(U+10); U≤10
+시간 O(NU), 공간 O(U+D) / Time O(NU), space O(U+D); U=원하는 품목 수(≤10), D=전체 할인 품목 종류 수 / desired types and all distinct discounted types
 
 ### Verification
 

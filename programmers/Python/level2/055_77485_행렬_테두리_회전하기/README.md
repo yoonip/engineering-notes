@@ -44,7 +44,7 @@ def solution(rows, columns, queries):
 
 경로가 모든 테두리 칸을 중복 없이 포함합니다. 값 배열을 먼저 보관하므로 덮어쓰기 없이 순환 순열을 정확히 적용합니다.
 
-시간 O(RC+ΣP), 공간 O(RC+최대 P) / Time O(RC+ΣP), space O(RC+max P); P=테두리 길이 / perimeter length
+시간 O(RC+ΣP), 보조 공간 O(RC+최대 P), 출력 공간 O(Q) / Time O(RC+ΣP), auxiliary space O(RC+max P), output space O(Q); P=테두리 길이, Q=질의 수 / perimeter length and query count
 
 주의할 점: 좌표는 입력에서 1부터 셉니다. 다음 회전은 이전 회전이 반영된 행렬에 적용합니다.
 
@@ -68,7 +68,7 @@ def solution(rows,columns,queries):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 테두리를 시계방향 경로로 나열합니다. 기존 값을 별도 배열에 복사하고 각 칸에 바로 앞 경로의 값을 넣습니다. 복사한 값의 최솟값을 답에 추가합니다. | 임시 값 하나로 네 변 제자리 교환 |
-| 비용 | 시간 O(RC+ΣP), 공간 O(RC+최대 P) / Time O(RC+ΣP), space O(RC+max P); P=테두리 길이 / perimeter length | 시간 O(RC+ΣP), 공간 O(RC) / Time O(RC+ΣP), space O(RC) |
+| 비용 | 시간 O(RC+ΣP), 보조 공간 O(RC+최대 P), 출력 공간 O(Q) / Time O(RC+ΣP), auxiliary space O(RC+max P), output space O(Q); P=테두리 길이, Q=질의 수 / perimeter length and query count | 시간 O(RC+ΣP), 보조 공간 O(RC), 출력 공간 O(Q) / Time O(RC+ΣP), auxiliary space O(RC), output space O(Q) |
 
 ## 검증
 
@@ -97,13 +97,13 @@ The runnable code is linked above; its comments are in Korean.
 
 The path includes every border cell once. Copying first prevents overwrite corruption and implements the circular permutation exactly.
 
-시간 O(RC+ΣP), 공간 O(RC+최대 P) / Time O(RC+ΣP), space O(RC+max P); P=테두리 길이 / perimeter length
+시간 O(RC+ΣP), 보조 공간 O(RC+최대 P), 출력 공간 O(Q) / Time O(RC+ΣP), auxiliary space O(RC+max P), output space O(Q); P=테두리 길이, Q=질의 수 / perimeter length and query count
 
 Boundary cases: Input coordinates are one-based. Every rotation uses the matrix resulting from earlier queries.
 
 ### Alternative: In-place four-edge rotation with one carried value
 
-시간 O(RC+ΣP), 공간 O(RC) / Time O(RC+ΣP), space O(RC)
+시간 O(RC+ΣP), 보조 공간 O(RC), 출력 공간 O(Q) / Time O(RC+ΣP), auxiliary space O(RC), output space O(Q)
 
 ### Verification
 

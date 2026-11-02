@@ -26,7 +26,7 @@ int solution(int m, int n, vector<vector<int>> city_map) {
             } else if (city_map[row][col] == 0) {
                 // 두 방향의 도착 경로 합계.
                 int total = (vertical[col] + horizontal) % MOD;
-                // 2칸에서는 두 방향 값을 그대로 유지.
+                // 일반 도로에서는 합친 경로 수를 두 출발 방향에 각각 저장합니다.
                 vertical[col] = horizontal = total;
             }
         }

@@ -50,7 +50,7 @@ def solution(n, wires):
 
 주의할 점: 임의 그래프가 아니라 트리라는 조건이 중요합니다. DFS에서 부모 간선으로 되돌아가지 않습니다.
 
-## 다른 방법: 간선마다 실제 제거 후 BFS
+## 다른 방법: 간선마다 실제 제거 후 DFS
 
 ```python
 def solution(n,wires):
@@ -74,7 +74,7 @@ def solution(n,wires):
 
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
-| 계산 방식 | DFS로 각 자식 부분 트리 크기를 구합니다. 그 자식 간선을 끊으면 크기는 size와 n−size이므로 abs(n−2size)를 후보로 봅니다. | 간선마다 실제 제거 후 BFS |
+| 계산 방식 | DFS로 각 자식 부분 트리 크기를 구합니다. 그 자식 간선을 끊으면 크기는 size와 n−size이므로 abs(n−2size)를 후보로 봅니다. | 간선마다 실제 제거 후 DFS |
 | 비용 | 시간 O(n), 공간 O(n) / Time and space O(n) | 시간 O(n²), 공간 O(n) / Time O(n²), space O(n) |
 
 ## 검증
@@ -107,7 +107,7 @@ Removing a tree edge separates exactly the child subtree from the remainder. Pro
 
 Boundary cases: The tree assumption is essential. Skip the parent edge during DFS.
 
-### Alternative: Remove each edge and BFS the remaining component
+### Alternative: Remove each edge and DFS the remaining component
 
 시간 O(n²), 공간 O(n) / Time O(n²), space O(n)
 

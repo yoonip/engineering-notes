@@ -71,12 +71,12 @@ def solution(numbers, hand):
 #     right_pos = (3, 2)  # ()로 묶은 여러 값은 변경 불가 튜플. =는 값 저장. 오른손 시작 위치: "#"의 좌표
 #     answer = []  # []는 리스트. =는 값 저장. 번호를 누를 때마다 사용한 손 "L" 또는 "R"을 저장
 #     for number in numbers:  # for·in은 원소를 차례로 꺼내는 반복문. 눌러야 할 번호를 순서대로 하나씩 꺼냄
-#         target = positions[number]  # []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. =는 값 저장. 현재 누를 번호의 좌표. 예: 번호 5 → (1, 1)
+#         target = positions[number]  # 딕셔너리[키]로 해당 값을 조회하거나 저장. =는 값 저장. 현재 누를 번호의 좌표. 예: 번호 5 → (1, 1)
 #         if number in (1, 4, 7):  # if는 조건이 참일 때 실행. in은 포함 여부. ()로 묶은 여러 값은 변경 불가 튜플. 현재 번호가 왼쪽 열의 숫자라면
 #             used_hand = "L"  # =는 값 저장. 왼손을 선택
 #         elif number in (3, 6, 9):  # elif는 앞 조건이 거짓일 때 검사할 다음 조건. in은 포함 여부. ()로 묶은 여러 값은 변경 불가 튜플. 현재 번호가 오른쪽 열의 숫자라면
 #             used_hand = "R"  # =는 값 저장. 오른손을 선택
-#         else:  # else는 앞 조건들에 해당하지 않는 경우. 이번 번호를 오른손으로 눌렀다면
+#         else:  # else는 가운데 열의 2·5·8·0을 누를 때 실행합니다. 두 손의 거리를 비교합니다.
 #             left_distance = abs(left_pos[0] - target[0]) + abs(left_pos[1] - target[1])  # abs는 절댓값. []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. =는 값 저장. 왼손 거리
 #             right_distance = abs(right_pos[0] - target[0]) + abs(right_pos[1] - target[1])  # abs는 절댓값. []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. =는 값 저장. 오른손 거리
 #             if left_distance < right_distance:  # if는 조건이 참일 때 실행. <는 작음 비교. 왼손이 더 가까우면
@@ -85,7 +85,7 @@ def solution(numbers, hand):
 #                 used_hand = "R"  # =는 값 저장. 오른손을 선택
 #             elif hand == "left":  # elif는 앞 조건이 거짓일 때 검사할 다음 조건. ==는 같음 비교. 두 거리가 같고, 왼손잡이라면
 #                 used_hand = "L"  # =는 값 저장. 왼손을 선택
-#             else:  # else는 앞 조건들에 해당하지 않는 경우. 이번 번호를 오른손으로 눌렀다면
+#             else:  # else는 두 손의 거리가 같고 오른손잡이일 때 실행합니다.
 #                 used_hand = "R"  # =는 값 저장. 오른손을 선택
 #         if used_hand == "L":  # if는 조건이 참일 때 실행. ==는 같음 비교. 이번 번호를 왼손으로 눌렀다면
 #             left_pos = target  # =는 값 저장. 왼손 위치만 누른 번호의 좌표로 변경

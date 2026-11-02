@@ -20,7 +20,7 @@ def solution(commands):
         operation = parts[0]
         # 네 단어면 특정 셀 갱신.
         if operation == 'UPDATE' and len(parts) == 4:
-            # 출력할 셀 번호 계산.
+            # 명령을 적용할 셀 번호를 계산합니다.
             cell = position(parts[1], parts[2])
             # 병합 그룹 대표의 값을 변경해 모든 소속 셀에 반영.
             values[groups[cell]] = parts[3]
@@ -58,7 +58,7 @@ def solution(commands):
             values[second] = ''
         # 선택 셀이 속한 그룹 전체 해제.
         elif operation == 'UNMERGE':
-            # 출력할 셀 번호 계산.
+            # 명령을 적용할 셀 번호를 계산합니다.
             cell = position(parts[1], parts[2])
             # 해제할 그룹 번호.
             group = groups[cell]
@@ -75,7 +75,7 @@ def solution(commands):
             # 선택한 셀 하나에만 이전 값을 복원.
             values[cell] = value
         else:
-            # 출력할 셀 번호 계산.
+            # 명령을 적용할 셀 번호를 계산합니다.
             cell = position(parts[1], parts[2])
             # 빈 문자열은 거짓이므로 or 뒤의 EMPTY 출력.
             answer.append(values[groups[cell]] or 'EMPTY')

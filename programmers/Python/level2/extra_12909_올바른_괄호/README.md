@@ -12,7 +12,7 @@ The parenthesis string has length 1–100000. Return True exactly when all brack
 
 ## 풀이 흐름 / Approach
 
-여는 괄호는 잔액을 1 늘리고 닫는 괄호는 1 줄입니다. 중간에 음수가 되면 앞서 연 괄호 없이 닫은 것이므로 즉시 실패합니다. 끝에서 0이어야 남은 괄호도 없습니다.
+아직 짝지어지지 않은 여는 괄호 수를 셉니다. 여는 괄호에서는 1을 더하고 닫는 괄호에서는 1을 뺍니다. 중간에 음수가 되면 앞서 연 괄호 없이 닫은 것이므로 즉시 실패합니다. 끝에서 0이어야 남은 괄호도 없습니다.
 
 Increase a balance for an opening bracket and decrease it for a closing bracket. A negative prefix is invalid immediately, and the final balance must be zero.
 
@@ -87,9 +87,9 @@ python verify.py
 
 Separately from the original grading record, 32 local cases passed. Inputs and expected results are in [cases.json](cases.json), the reproducer is [verify.py](verify.py), and the run record is [verification.json](verification.json).
 
-비교 구현은 작은 입력 32개에서 함께 통과했습니다. 큰 입력용 제출 풀이와 전수 탐색 기준 코드는 파일명과 설명으로 구분합니다.
+비교 구현은 작은 입력 32개에서 함께 통과했습니다. 기본 풀이와 비교 구현의 알고리즘·적용 범위는 위에서 구분합니다.
 
-The comparison also passed 32 small-input cases. Exhaustive reference implementations are distinguished from the submission solution in their filenames and descriptions.
+The comparison also passed 32 small-input cases. The algorithms and intended input ranges of the main and comparison implementations are described above.
 
 원본 채점 기록: 100점. [submitted_original.py](submitted_original.py)는 당시 원본 파일을 그대로 보존하며, `solution.py`는 설명을 정리한 구현입니다.
 

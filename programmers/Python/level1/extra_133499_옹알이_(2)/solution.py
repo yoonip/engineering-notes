@@ -35,7 +35,7 @@ def solution(babbling):
 #                     prev = word  # =는 값 저장. 현재 발음을 직전 발음으로 저장
 #                     i += len(word)  # len은 길이. +=는 더하거나 연결한 값을 저장. 발음한 단어의 길이만큼 인덱스 이동
 #                     matched = True  # =는 값 저장. True·False는 참·거짓. 발음 가능한 단어를 찾았다고 표시
-#                     break  # break는 가장 가까운 반복문 종료. while 반복문 종료
+#                     break  # break로 네 발음을 검사하는 안쪽 for문을 끝냅니다. 바깥 while문은 다음 문자 위치에서 계속됩니다.
 #             if not matched:  # if는 조건이 참일 때 실행. not은 참·거짓 반전. 현재 위치에서 가능한 발음을 찾지 못했다면
 #                 valid = False  # =는 값 저장. True·False는 참·거짓. 발음할 수 없는 문자열로 표시
 #                 break  # break는 가장 가까운 반복문 종료. while 반복문 종료

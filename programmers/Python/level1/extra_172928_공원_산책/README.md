@@ -63,9 +63,9 @@ def solution(park, routes):
 #     height = len(park)  # len은 길이. =는 값 저장. 지도 행 수.
 #     width = len(park[0])  # len은 길이. []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. =는 값 저장. 지도 열 수.
 #     row, col = 0, 0  # =는 값 저장. 시작 좌표를 담을 변수 초기화.
-#     for r, line in enumerate(park):  # for·in은 원소를 차례로 꺼내는 반복문. enumerate는 인덱스·값을 함께 제공. ()로 묶은 여러 값은 변경 불가 튜플. 각 행 번호와 문자열을 순회.
+#     for r, line in enumerate(park):  # for·in은 원소를 차례로 꺼내는 반복문. enumerate는 인덱스·값을 함께 제공. 쉼표로 나열한 변수에 값을 차례로 나누어 저장. 각 행 번호와 문자열을 순회.
 #         if "S" in line:  # if는 조건이 참일 때 실행. in은 포함 여부. 해당 행에 시작 표시 S가 있는지 확인.
-#             row, col = r, line.index("S")  # index는 값이 처음 나오는 위치. ()로 묶은 여러 값은 변경 불가 튜플. =는 값 저장. S의 행·열 좌표 저장.
+#             row, col = r, line.index("S")  # index는 값이 처음 나오는 위치. 쉼표로 나열한 변수에 값을 차례로 나누어 저장. =는 값 저장. S의 행·열 좌표 저장.
 #             break  # break는 가장 가까운 반복문 종료. 시작점을 찾았으므로 탐색 종료.
 #     directions = {  # {}는 키:값을 저장하는 딕셔너리. =는 값 저장. 방향 이름을 행·열 변화량에 연결할 딕셔너리.
 #         "N": (-1, 0),  # ()로 묶은 여러 값은 변경 불가 튜플. 북쪽은 행 -1, 열 0.
@@ -74,9 +74,9 @@ def solution(park, routes):
 #         "E": (0, 1),  # ()로 묶은 여러 값은 변경 불가 튜플. 동쪽은 행 0, 열 +1.
 #     }  # 딕셔너리 정의의 닫는 중괄호. 방향 정의 마침.
 #     for route in routes:  # for·in은 원소를 차례로 꺼내는 반복문. 이동 명령을 순서대로 처리.
-#         direction, distance = route.split()  # split은 구분자로 문자열 분리. ()로 묶은 여러 값은 변경 불가 튜플. =는 값 저장. 명령을 방향 문자열과 거리 문자열로 나눔.
+#         direction, distance = route.split()  # split은 구분자로 문자열 분리. 쉼표로 나열한 변수에 값을 차례로 나누어 저장. =는 값 저장. 명령을 방향 문자열과 거리 문자열로 나눔.
 #         distance = int(distance)  # int는 정수 변환. =는 값 저장. 거리를 계산 가능한 정수로 바꿈.
-#         dr, dc = directions[direction]  # []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. =는 값 저장. 해당 방향의 행·열 변화량을 읽음.
+#         dr, dc = directions[direction]  # 딕셔너리[키]로 해당 값을 조회하거나 저장. =는 값 저장. 해당 방향의 행·열 변화량을 읽음.
 #         next_row, next_col = row, col  # =는 값 저장. 명령을 시험할 임시 위치를 현재 위치로 시작.
 #         valid = True  # =는 값 저장. True·False는 참·거짓. 이동 가능하다고 가정.
 #         for _ in range(distance):  # for·in은 원소를 차례로 꺼내는 반복문. range는 끝값 직전까지 정수 순서 생성. 명령 거리만큼 한 칸씩 시험 이동.

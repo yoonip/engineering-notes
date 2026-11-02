@@ -2,9 +2,11 @@
 
 [Level 5 목록 / Level 5 index](../../README.md) · [풀이 전체 목차 / Solution index](../../../../README.md)
 
-[공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/389632) · Level 5 · 미완료
+[공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/389632) · Level 5 · 초기 미완료 시도
 
 ## 결과부터 보기
+
+이 글은 초기 네 가지 구현의 시간 초과를 보관한 기록입니다. 이후 [2026년 10월 24일 재풀이](../../revisit_20261024/009_389632_문자열과_알파벳과_쿼리/README.md)에서는 별도 Python3 코드의 100점 통과 기록을 확인할 수 있습니다. 아래 코드와 측정값은 초기 시도의 기록으로 유지합니다.
 
 Python으로 네 가지 구현을 시도했습니다. 저장된 사이트 결과는 v1과 v4 모두 15점이며, v4도 전체 통과하지 못했습니다. 정답 코드 목록에는 넣지 않았습니다.
 
@@ -84,4 +86,4 @@ v4 unrolls some loops, precomputes six-letter unions and fixes K at 18. The full
 
 The included comparison script adds 24 fixed-seed small cases against a direct per-character reference. All four versions matched. On 29,978 characters and 6,001 range queries, this run measured v1/v2/v3/v4 at 0.9339/0.7140/0.0977/0.1395 seconds. A separate v1 profile counted 3,546,124 `assign` calls and 1,441,603 `find` calls. Environment and seeds are recorded in [local_comparison.json](local_comparison.json). These are local observations, not a replay of hidden judge cases or proof of correctness.
 
-A future Python attempt should establish bounds on repeated fragmentation and merging, investigate updates limited to changed blocks or intervals, and defer counts needed only by the final report. It must retain creation order and ownership semantics, pass reference comparisons and maximum-size checks, and then pass the website judge. No such accepted replacement is claimed here.
+A future Python attempt should establish bounds on repeated fragmentation and merging, investigate updates limited to changed blocks or intervals, and defer counts needed only by the final report. It must retain creation order and ownership semantics, pass reference comparisons and maximum-size checks, and then pass the website judge. Those four versions remain unsuccessful historical attempts. A later Python3 solution has a saved 100-point result in the [24 October 2026 revisit](../../revisit_20261024/009_389632_문자열과_알파벳과_쿼리/README.md); its result is separate from the versions and measurements on this page.

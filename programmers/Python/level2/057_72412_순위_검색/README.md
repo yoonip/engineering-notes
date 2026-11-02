@@ -114,7 +114,7 @@ This alternative is for understanding and checking small inputs; use the main im
 
 ### Verification
 
-Local checks covered 1 official examples and 40 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.
+Local checks covered 1 official example and 40 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.
 
 Run `python test_solution.py` in this problem directory. The local archive records the original submission as accepted with a score of 100. Comment cleanup and alternative implementations are covered by the local checks described here.
 

@@ -139,9 +139,9 @@ Separately from the original grading record, 9 local cases passed. Inputs and ex
 
 A [Python counterpart](solution.py) is included. Local Python checks are separate from the original C++ grading record.
 
-비교 구현은 작은 입력 9개에서 함께 통과했습니다. 큰 입력용 제출 풀이와 전수 탐색 기준 코드는 파일명과 설명으로 구분합니다.
+비교 구현은 작은 입력 9개에서 함께 통과했습니다. 기본 풀이와 비교 구현의 알고리즘·적용 범위는 위에서 구분합니다.
 
-The comparison also passed 9 small-input cases. Exhaustive reference implementations are distinguished from the submission solution in their filenames and descriptions.
+The comparison also passed 9 small-input cases. The algorithms and intended input ranges of the main and comparison implementations are described above.
 
 원본 채점 기록: 100점. [submitted_original.cpp](submitted_original.cpp)는 당시 원본 파일을 그대로 보존하며, `solution.cpp`는 설명을 정리한 구현입니다.
 

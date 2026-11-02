@@ -40,7 +40,7 @@ def solution(s):
 #         "zero", "one", "two", "three", "four",  # 인덱스는 0부터입니다. words[0]은 "zero"입니다.
 #         "five", "six", "seven", "eight", "nine"  # 쉼표로 원소를 구분합니다. 따옴표 안의 값은 문자열입니다.
 #     ]  # 리스트 정의의 닫는 대괄호. 리스트의 끝입니다.
-#     for number, word in enumerate(words):  # for·in은 원소를 차례로 꺼내는 반복문. enumerate는 인덱스·값을 함께 제공. ()로 묶은 여러 값은 변경 불가 튜플. enumerate는 인덱스와 원소를 함께 제공합니다. 예: number=1, word="one".
+#     for number, word in enumerate(words):  # for·in은 원소를 차례로 꺼내는 반복문. enumerate는 인덱스·값을 함께 제공. 쉼표로 나열한 변수에 값을 차례로 나누어 저장. enumerate는 인덱스와 원소를 함께 제공합니다. 예: number=1, word="one".
 #         s = s.replace(word, str(number))  # str은 문자열 변환. replace는 문자열 치환. =는 값 저장. str()로 숫자를 문자열로 바꿉니다. replace(기존, 새값)는 일치하는 부분을 모두 교체합니다.
 #     return int(s)  # return은 결과를 돌려주고 함수 종료. int는 정수 변환. int()로 숫자 문자열을 정수로 바꾸어 반환하고 함수를 종료합니다.
 

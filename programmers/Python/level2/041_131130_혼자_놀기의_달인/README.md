@@ -108,7 +108,7 @@ Boundary cases: A single cycle leaves no second group, giving zero. Convert one-
 
 ### Verification
 
-Local checks covered 1 official examples and 48 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.
+Local checks covered 1 official example and 48 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.
 
 Run `python test_solution.py` in this problem directory. The local archive records the original submission as accepted with a score of 100. Comment cleanup and alternative implementations are covered by the local checks described here.
 

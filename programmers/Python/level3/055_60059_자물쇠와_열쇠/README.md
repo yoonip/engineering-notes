@@ -24,12 +24,12 @@ Level 3 · [60059 공식 문제 / Official problem](https://school.programmers.c
 
 ## 다른 방법과 비교
 
-자물쇠 주변에 여백을 만들고 회전한 열쇠를 실제로 더합니다. 자물쇠 영역의 모든 합이 정확히 1인지 검사합니다. 좌표 집합 비교와 독립된 배열 구현입니다.
+여백이 있는 좌표계에서 각 자물쇠 칸과 겹치는 열쇠 칸을 계산하고 두 값의 합이 1인지 검사합니다. 확장 배열을 실제로 만들지 않으며, 좌표 집합 대신 칸별 덧셈으로 확인합니다.
 
-| 항목 | 기본 풀이 | 확장 보드 합 검사 |
+| 항목 | 기본 풀이 | 좌표 변환과 칸별 합 검사 |
 |---|---|---|
 | 코드 | [solution.py](solution.py) | [alternative.py](alternative.py) |
-| 비용 | 시간 O((N+M)²·M² + N²), 공간 O(N²+M²). N,M≤20이므로 모든 배치를 검사해도 충분합니다. | O((N+M)²(N²+M²)), 공간 O((N+M)²) |
+| 비용 | 시간 O((N+M)²·M² + N²), 공간 O(N²+M²). N,M≤20이므로 모든 배치를 검사해도 충분합니다. | O((N+M)²N²+M²), 공간 O(M²) |
 | 용도 | 기본 제출 구현 | 대안 구현 |
 
 ## 예제와 검증
@@ -58,11 +58,11 @@ Main complexity: O((N+M)²M²+N²) time, O(N²+M²) space.
 
 ### Alternative and trade-offs
 
-Place the lock in a padded board and add each rotated key placement. Every lock cell must sum to exactly one, independently checking the coordinate-set formulation.
+Use a virtual padded coordinate system to locate the key cell overlapping each lock cell. Require their sum to equal one; no padded array is allocated. This checks the coordinate-set formulation using per-cell arithmetic.
 
 Code: [alternative.py](alternative.py).
 
-Complexity: O((N+M)²(N²+M²)), space O((N+M)²).
+Complexity: O((N+M)²N²+M²), space O(M²).
 
 ### Verification
 

@@ -49,9 +49,9 @@ def solution(data, ext, val_ext, sort_by):
 #     }  # 딕셔너리 정의의 닫는 중괄호. 항목별 열 번호 정의를 마침.
 #     answer = []  # []는 리스트. =는 값 저장. 남길 행을 저장할 리스트.
 #     for row in data:  # for·in은 원소를 차례로 꺼내는 반복문. 데이터의 각 행을 확인.
-#         if row[columns[ext]] < val_ext:  # if는 조건이 참일 때 실행. []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. <는 작음 비교. 필터 항목의 값이 기준값보다 작은지 확인.
+#         if row[columns[ext]] < val_ext:  # if는 조건이 참일 때 실행. columns[키]로 열 번호를 조회하고 행 리스트[열 번호]로 값을 읽음. <는 작음 비교. 필터 항목의 값이 기준값보다 작은지 확인.
 #             answer.append(row)  # append는 리스트 끝에 추가. 조건을 만족하는 행을 결과에 추가.
-#     answer.sort(key=lambda x: x[columns[sort_by]])  # sort는 원래 리스트 정렬. []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. =는 이름 붙인 인수에 값 지정. lambda는 이름 없는 짧은 함수, key는 정렬 기준. 지정한 열의 값으로 결과 행들을 오름차순 정렬.
+#     answer.sort(key=lambda x: x[columns[sort_by]])  # sort는 원래 리스트 정렬. columns[키]로 열 번호를 조회하고 행 리스트[열 번호]로 값을 읽음. =는 이름 붙인 인수에 값 지정. lambda는 이름 없는 짧은 함수, key는 정렬 기준. 지정한 열의 값으로 결과 행들을 오름차순 정렬.
 #     return answer  # return은 결과를 돌려주고 함수 종료. 필터와 정렬을 마친 행 리스트 반환.
 
 # 풀이 요약

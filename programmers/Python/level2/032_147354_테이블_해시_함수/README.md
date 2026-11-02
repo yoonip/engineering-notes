@@ -57,7 +57,7 @@ def solution(data,col,row_begin,row_end):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | col열 오름차순·첫 열 내림차순으로 정렬합니다. 정렬 후 i행의 모든 값을 i로 나눈 나머지 합 S_i를 구합니다. row_begin부터 row_end까지 XOR합니다. | 안정 정렬 두 번 + XOR 누적합 |
-| 비용 | 시간 O(N log N+NM), 공간 O(N) 이하 / Time O(N log N+NM), auxiliary space at most O(N) | 시간 O(N log N+NM), 공간 O(NM) / Time O(N log N+NM), space O(NM) with copied rows |
+| 비용 | 시간 O(N log N+NM), 공간 O(N) 이하 / Time O(N log N+NM), auxiliary space at most O(N) | 시간 O(N log N+NM), 추가 공간 O(N) / Time O(N log N+NM), auxiliary space O(N); 행 참조 목록과 누적 XOR만 별도로 저장합니다 / only row references and prefix XORs are stored separately |
 
 ## 검증
 
@@ -92,11 +92,11 @@ Boundary cases: The modulus uses the sorted one-based row number. The main imple
 
 ### Alternative: Two stable sorts with prefix XOR
 
-시간 O(N log N+NM), 공간 O(NM) / Time O(N log N+NM), space O(NM) with copied rows
+시간 O(N log N+NM), 추가 공간 O(N) / Time O(N log N+NM), auxiliary space O(N); 행 참조 목록과 누적 XOR만 별도로 저장합니다 / only row references and prefix XORs are stored separately
 
 ### Verification
 
-Local checks covered 1 official examples and 50 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.
+Local checks covered 1 official example and 50 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases.
 
 Run `python test_solution.py` in this problem directory. The local archive records the original submission as accepted with a score of 100. Comment cleanup and alternative implementations are covered by the local checks described here.
 

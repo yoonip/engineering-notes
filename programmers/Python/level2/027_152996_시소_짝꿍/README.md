@@ -58,7 +58,7 @@ def solution(weights):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 같은 무게는 c(c−1)/2로 셉니다. 다른 무게는 작은 쪽 기준 2:1·3:2·4:3 비율만 확인하고 빈도를 곱합니다. | 사람 쌍과 거리 조합 전수 확인 |
-| 비용 | 평균 시간 O(N+U), 공간 O(U) / Expected time O(N+U), space O(U); U=서로 다른 무게 수 / distinct weights | 시간 O(N²), 공간 O(1) / Time O(N²), space O(1) |
+| 비용 | 평균 시간 O(N+U), 공간 O(U) / Expected time O(N+U), space O(U); U=서로 다른 무게 수 / distinct weights | 시간 O(N²), 공간 O(N) / Time O(N²), space O(N); combinations가 입력 원소를 내부 튜플에 보관합니다 / combinations retains an input pool |
 
 ## 검증
 
@@ -93,14 +93,16 @@ Boundary cases: Use divisibility and integer division rather than floating-point
 
 ### Alternative: Check every person pair and distance combination
 
-This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 시간 O(N²), 공간 O(1) / Time O(N²), space O(1)
+This alternative is for understanding and checking small inputs; use the main implementation for the full constraints. 시간 O(N²), 공간 O(N) / Time O(N²), space O(N); combinations가 입력 원소를 내부 튜플에 보관합니다 / combinations retains an input pool
 
 ### Verification
 
-Local checks covered 1 official examples and 71 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases. Saved tests also include a size or numeric boundary at the stated upper limit.
+Local checks covered 1 official example and 71 generated inputs. Generated inputs were compared between the main and alternative implementations. Saved tests include official examples and small/boundary cases. Saved tests also include a size or numeric boundary at the stated upper limit.
 
 Run `python test_solution.py` in this problem directory. The local archive records the original submission as accepted with a score of 100. Comment cleanup and alternative implementations are covered by the local checks described here.
 
 ## 출처 / Source
+
+- [Python itertools.combinations](https://docs.python.org/3/library/itertools.html#itertools.combinations) — 입력을 내부 튜플에 보관하는 동등 구현 / equivalent implementation retaining the input pool.
 
 - [프로그래머스: 시소 짝꿍](https://school.programmers.co.kr/learn/courses/30/lessons/152996) — 조건·입출력·예제 확인 / conditions, inputs, outputs and examples; 2026-10-19.

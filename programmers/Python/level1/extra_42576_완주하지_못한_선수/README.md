@@ -87,13 +87,13 @@ def solution(participant, completion):
 #     counts = {}  # {}는 키:값을 저장하는 딕셔너리. =는 값 저장. 이름별 참가 횟수 딕셔너리.
 #     for name in participant:  # for·in은 원소를 차례로 꺼내는 반복문. 참가자 이름들을 셈.
 #         if name in counts:  # if는 조건이 참일 때 실행. in은 포함 여부. 이 이름을 전에 센 적 있는지 확인.
-#             counts[name] = counts[name] + 1  # []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. =는 값 저장. 동명이인 참가 횟수 증가.
+#             counts[name] = counts[name] + 1  # 딕셔너리[키]로 해당 값을 조회하거나 저장. =는 값 저장. 동명이인 참가 횟수 증가.
 #         else:  # else는 앞 조건들에 해당하지 않는 경우. 처음 나온 이름인 경우.
-#             counts[name] = 1  # []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. =는 값 저장. 첫 참가 횟수 1을 저장.
+#             counts[name] = 1  # 딕셔너리[키]로 해당 값을 조회하거나 저장. =는 값 저장. 첫 참가 횟수 1을 저장.
 #     for name in completion:  # for·in은 원소를 차례로 꺼내는 반복문. 완주한 이름들을 확인.
-#         counts[name] = counts[name] - 1  # []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. =는 값 저장. 해당 이름의 남은 참가 횟수를 하나 줄임.
+#         counts[name] = counts[name] - 1  # 딕셔너리[키]로 해당 값을 조회하거나 저장. =는 값 저장. 해당 이름의 남은 참가 횟수를 하나 줄임.
 #     for name in counts:  # for·in은 원소를 차례로 꺼내는 반복문. 모든 이름의 남은 횟수를 검사.
-#         if counts[name] > 0:  # if는 조건이 참일 때 실행. []는 0부터 시작하는 인덱스 접근, 음수는 뒤에서 셈. >는 큼 비교. 완주 기록에서 지워지지 않은 참가자가 있는지 확인.
+#         if counts[name] > 0:  # if는 조건이 참일 때 실행. 딕셔너리[키]로 해당 값을 조회하거나 저장. >는 큼 비교. 완주 기록에서 지워지지 않은 참가자가 있는지 확인.
 #             return name  # return은 결과를 돌려주고 함수 종료. 미완주자 이름 반환.
 # 
 # def solution(participant, completion):  # def는 함수 정의, () 안은 입력 매개변수, : 뒤 들여쓰기는 함수 본문. 참가자 목록과 완주자 목록을 입력받는 함수

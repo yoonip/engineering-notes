@@ -72,7 +72,7 @@ Complexity: O(S+E), space O(S+E), excluding Fraction arithmetic.
 
 Use official examples and separate edge/random inputs. Exhaustive alternatives are compared only on small inputs.
 
-The table above supplies argument arrays and expected results; [examples.json](examples.json) stores them as executable data. The original locally stored submission was graded 100; comments and the separate alternative are reviewed and tested locally, which is distinct from a new website submission.
+[examples.json](examples.json) stores the example argument arrays and expected results as executable data. The original locally stored submission was graded 100; comments and the separate alternative are reviewed and tested locally, which is distinct from a new website submission.
 
 ## 출처 / Sources
 

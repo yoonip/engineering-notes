@@ -43,11 +43,15 @@ def solution(orders, course):
     return sorted(answer)
 ```
 
+N은 주문 수, L은 최대 주문 길이, K는 코스 길이 종류 수입니다. G는 중복을 포함해 생성한 모든 조합 수, C는 코스 길이별 서로 다른 후보 수의 합, A는 최종 정답 수입니다. 아래 비용에는 입력·출력 정렬과 조합 문자열 저장도 포함합니다.
+
+N is the number of orders, L their maximum length, and K the number of requested course sizes. G counts all generated combinations including duplicates, C sums distinct candidates across sizes, and A counts output items. The bounds include input/output sorting and stored combination strings.
+
 ## 정답이 되는 이유
 
 정렬된 조합은 메뉴 순서와 무관하게 같은 키가 됩니다. 주문당 해당 조합을 한 번 세고 길이별 최댓값을 고르면 문제의 코스 선정 조건과 일치합니다.
 
-시간 O(Σ주문 Σ길이 C(L,k)·k), 공간 O(서로 다른 조합 수) / Time O(Σorders Σsizes C(L,k)·k), space O(distinct combinations)
+시간 O(NL log L+GL+AL log(A+1)), 공간 O(NL+CL+AL) / Time O(NL log L+GL+AL log(A+1)), space O(NL+CL+AL)
 
 주의할 점: 최빈 조합이 한 번만 등장하면 제외합니다. 각 코스 길이는 따로 최댓값을 구합니다.
 
@@ -70,7 +74,7 @@ def solution(orders,course):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 주문 문자를 정렬해 조합 표현을 통일합니다. 각 길이의 조합을 Counter로 셉니다. 두 번 이상 나온 조합 중 최고 빈도인 것을 모두 고르고 전체를 정렬합니다. | 후보 집합 생성 후 주문 포함 검사 |
-| 비용 | 시간 O(Σ주문 Σ길이 C(L,k)·k), 공간 O(서로 다른 조합 수) / Time O(Σorders Σsizes C(L,k)·k), space O(distinct combinations) | 시간 O(C·N·L), 공간 O(C·L) / Time O(C·N·L), space O(C·L); C=후보 수 / candidate count |
+| 비용 | 시간 O(NL log L+GL+AL log(A+1)), 공간 O(NL+CL+AL) / Time O(NL log L+GL+AL log(A+1)), space O(NL+CL+AL) | 시간 O(KNL log L+GL+CNL+AL log(A+1)), 공간 O(NL+CL+AL) / Time O(KNL log L+GL+CNL+AL log(A+1)), space O(NL+CL+AL) |
 
 ## 검증
 
@@ -100,13 +104,13 @@ The runnable code is linked above; its comments are in Korean.
 
 Canonical combinations ignore menu order. Counting each per order and selecting each size’s maximum exactly implements the course rule.
 
-시간 O(Σ주문 Σ길이 C(L,k)·k), 공간 O(서로 다른 조합 수) / Time O(Σorders Σsizes C(L,k)·k), space O(distinct combinations)
+시간 O(NL log L+GL+AL log(A+1)), 공간 O(NL+CL+AL) / Time O(NL log L+GL+AL log(A+1)), space O(NL+CL+AL)
 
 Boundary cases: Exclude combinations occurring only once. Find the maximum separately for each course size.
 
 ### Alternative: Generate candidate sets, then test order containment
 
-시간 O(C·N·L), 공간 O(C·L) / Time O(C·N·L), space O(C·L); C=후보 수 / candidate count
+시간 O(KNL log L+GL+CNL+AL log(A+1)), 공간 O(NL+CL+AL) / Time O(KNL log L+GL+CNL+AL log(A+1)), space O(NL+CL+AL)
 
 ### Verification
 

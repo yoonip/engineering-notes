@@ -12,7 +12,7 @@ There are at most 100 jobs, progress values 1–99 and speeds 1–100. Releases 
 
 ## 풀이 흐름 / Approach
 
-각 기능이 100에 도달하는 날을 올림 나눗셈으로 구합니다. 맨 앞 기능의 배포일보다 일찍 끝난 뒤 기능은 같은 묶음에 넣습니다. 더 늦게 끝나는 기능이 나오면 새 배포일이 됩니다.
+각 기능이 100에 도달하는 날을 올림 나눗셈으로 구합니다. 맨 앞 기능의 배포일까지 끝나는 뒤 기능은 같은 묶음에 넣습니다. 더 늦게 끝나는 기능이 나오면 새 배포일이 됩니다.
 
 Compute completion days with ceiling division. A later feature finishing no later than the front feature joins its release batch; a later completion starts a new batch.
 
@@ -109,9 +109,9 @@ python verify.py
 
 Separately from the original grading record, 30 local cases passed. Inputs and expected results are in [cases.json](cases.json), the reproducer is [verify.py](verify.py), and the run record is [verification.json](verification.json).
 
-비교 구현은 작은 입력 30개에서 함께 통과했습니다. 큰 입력용 제출 풀이와 전수 탐색 기준 코드는 파일명과 설명으로 구분합니다.
+비교 구현은 작은 입력 30개에서 함께 통과했습니다. 기본 풀이와 비교 구현의 알고리즘·적용 범위는 위에서 구분합니다.
 
-The comparison also passed 30 small-input cases. Exhaustive reference implementations are distinguished from the submission solution in their filenames and descriptions.
+The comparison also passed 30 small-input cases. The algorithms and intended input ranges of the main and comparison implementations are described above.
 
 원본 채점 기록: 100점. [submitted_original.py](submitted_original.py)는 당시 원본 파일을 그대로 보존하며, `solution.py`는 설명을 정리한 구현입니다.
 

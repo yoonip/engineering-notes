@@ -5,7 +5,7 @@ from collections import deque
 def solution(begin, target, words):
     # 목표가 목록에 없으면 변환 불가능.
     if target not in words:
-        # 큐가 빌 때까지 목표에 도달하지 못하면 불가능.
+        # 목표 단어가 허용 목록에 없으므로 바로 실패를 반환합니다.
         return 0
     # (단어,변환 횟수)를 담은 선입선출 큐 생성.
     queue = deque([(begin, 0)])

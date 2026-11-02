@@ -31,7 +31,7 @@ Level 3 · [12938 공식 문제 / Official problem](https://school.programmers.c
 | 항목 | 기본 풀이 | 자연수 분할 전수검사 |
 |---|---|---|
 | 코드 | [solution.py](solution.py) | [alternative.py](alternative.py) |
-| 비용 | 시간 O(N), 반환 배열을 포함한 공간 O(N). | 분할 수에 비례한 지수 시간, 작은 합 비교용 |
+| 비용 | 시간 O(N), 반환 배열을 포함한 공간 O(N). | 가능한 자연수 분할을 모두 탐색하므로 작은 합 비교용 |
 | 용도 | 기본 제출 구현 | 작은 입력 비교·검증용 |
 
 ## 예제와 검증
@@ -50,7 +50,7 @@ Level 3 · [12938 공식 문제 / Official problem](https://school.programmers.c
 
 ### Task and constraints
 
-Find a sorted set of n positive integers with sum s and maximum product.
+Find a sorted list of n positive integers, allowing duplicates, with sum s and maximum product.
 
 Maximize the product of n positive integers summing to s. Return them sorted, or [−1] if impossible.
 
@@ -68,7 +68,7 @@ Enumerate nondecreasing positive integer partitions and maximize their product. 
 
 Code: [alternative.py](alternative.py). Scope: tiny-input oracle; not for maximum-size submissions.
 
-Complexity: exponential time in the partition count, tiny-total oracle.
+Complexity: exhaustive partition search with rapidly growing cost; intended only for tiny totals.
 
 ### Verification
 

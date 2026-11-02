@@ -41,7 +41,7 @@ def solution(k, ranges):
 
 각 선분 아래 넓이는 양 끝 높이의 평균입니다. 겹치지 않는 단위 구간 넓이를 누적하면 임의 구간 넓이를 두 누적값의 차이로 정확히 얻습니다.
 
-시간 O(L+Q), 공간 O(L) / Time O(L+Q), space O(L); L=해당 입력의 수열 길이 / sequence length for this input
+시간 O(L+Q), 추가 공간 O(L), 출력 공간 O(Q) / Time O(L+Q), auxiliary space O(L), output space O(Q); L=해당 입력의 수열 길이 / sequence length for this input
 
 주의할 점: 시작이 끝보다 크면 −1, 같으면 0입니다. 이 구현은 주어진 입력에서의 계산이며 콜라츠 추측의 일반 증명이 아닙니다.
 
@@ -67,7 +67,7 @@ def solution(k,ranges):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 문제의 규칙으로 k가 1이 될 때까지 다음 수를 구합니다. 폭 1인 사다리꼴 넓이를 누적합니다. [a,b]의 오른쪽 끝은 전체 단계 수+b이므로 누적합 차이로 답합니다. | 유리수 사다리꼴을 구간마다 직접 합산 |
-| 비용 | 시간 O(L+Q), 공간 O(L) / Time O(L+Q), space O(L); L=해당 입력의 수열 길이 / sequence length for this input | 시간 O(LQ), 공간 O(L) / Time O(LQ), space O(L) |
+| 비용 | 시간 O(L+Q), 추가 공간 O(L), 출력 공간 O(Q) / Time O(L+Q), auxiliary space O(L), output space O(Q); L=해당 입력의 수열 길이 / sequence length for this input | 시간 O(LQ), 추가 공간 O(L), 출력 공간 O(Q) / Time O(LQ), auxiliary space O(L), output space O(Q) |
 
 ## 검증
 
@@ -88,7 +88,7 @@ Input arguments: `k, ranges`. The return value is a numeric list satisfying the 
 
 ### Approach
 
-Generate the sequence until it reaches one, prefix-summing each unit-width trapezoid area. A query’s right endpoint is sequence_length+b; answer by subtracting prefixes.
+Generate the sequence until it reaches one, prefix-summing each unit-width trapezoid area. A query’s right endpoint is the number of sequence steps plus b; answer by subtracting prefixes.
 
 The runnable code is linked above; its comments are in Korean.
 
@@ -96,13 +96,13 @@ The runnable code is linked above; its comments are in Korean.
 
 Each segment’s area is the average of its endpoint heights. Disjoint unit intervals add, so prefix differences give exact requested areas.
 
-시간 O(L+Q), 공간 O(L) / Time O(L+Q), space O(L); L=해당 입력의 수열 길이 / sequence length for this input
+시간 O(L+Q), 추가 공간 O(L), 출력 공간 O(Q) / Time O(L+Q), auxiliary space O(L), output space O(Q); L=해당 입력의 수열 길이 / sequence length for this input
 
 Boundary cases: Return −1 for reversed endpoints and zero for an empty-width range. Computing these inputs does not prove the Collatz conjecture in general.
 
 ### Alternative: Direct per-range summation with exact rational trapezoids
 
-시간 O(LQ), 공간 O(L) / Time O(LQ), space O(L)
+시간 O(LQ), 추가 공간 O(L), 출력 공간 O(Q) / Time O(LQ), auxiliary space O(L), output space O(Q)
 
 ### Verification
 

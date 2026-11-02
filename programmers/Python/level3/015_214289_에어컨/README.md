@@ -13,14 +13,14 @@ Level 3 · [214289 공식 문제 / Official problem](https://school.programmers.
 ## 풀이를 따라가기
 
 1. DP 상태는 현재 시각의 온도별 최소 소비전력입니다. 매 분 전원 끄기(무료 자연 변화), 유지(b), 1도 상승·하강(a)을 모두 비교합니다.
-2. 탑승 시각의 다음 온도가 쾌적 범위 밖이면 제외합니다. 마지막 시각 이후의 비용은 더하지 않습니다. 시간 O(51T), 공간 O(51).
+2. 탑승 시각의 다음 온도가 쾌적 범위 밖이면 제외합니다. 마지막 시각 이후의 비용은 더하지 않습니다. 시간 O(51T), 공간 O(T+51)입니다. DP 배열은 51칸이지만 `onboard[1:]`가 T−1개 원소의 사본을 만듭니다.
 3. 예: 28도에서 26도까지 두 번 냉방한 뒤 계속 유지할 수도 있지만, 24도까지 더 냉방하고 전원을 꺼 자연 상승시키면 첫 예제에서 총 40이 됩니다.
 
 ## 왜 이 방법으로 풀 수 있나
 
 DP 상태는 현재 시각의 온도별 최소 소비전력입니다. 매 분 전원 끄기(무료 자연 변화), 유지(b), 1도 상승·하강(a)을 모두 비교합니다.
 
-시간·공간: 시간 O(51T), 공간 O(51).
+시간·공간: 시간 O(51T), 공간 O(T+51)입니다. DP 배열은 51칸이지만 `onboard[1:]`가 T−1개 원소의 사본을 만듭니다.
 
 ## 다른 방법과 비교
 
@@ -29,7 +29,7 @@ DP 상태는 현재 시각의 온도별 최소 소비전력입니다. 매 분 �
 | 항목 | 기본 풀이 | 시간·온도 최단경로 |
 |---|---|---|
 | 코드 | [solution.py](solution.py) | [alternative.py](alternative.py) |
-| 비용 | 시간 O(51T), 공간 O(51). | O(51T log(51T)), 공간 O(51T) |
+| 비용 | 시간 O(51T), 공간 O(T+51)입니다. DP 배열은 51칸이지만 `onboard[1:]`가 T−1개 원소의 사본을 만듭니다. | O(51T log(51T)), 공간 O(51T) |
 | 용도 | 기본 제출 구현 | 대안 구현 |
 
 ## 예제와 검증
@@ -59,7 +59,7 @@ The outside temperature is outside the comfort interval. Occupancy is binary, co
 
 Let dp[t] be the minimum energy required to reach temperature t at the current minute. For each next minute, try switching off, holding temperature, heating one degree, and cooling one degree. Reject temperatures outside the comfort range when a passenger is present. Keep only the cheapest route to each temperature because future choices depend only on that temperature and time. There is no charge after the final observed minute.
 
-Main complexity: O(51T) time, O(51) space.
+Main complexity: O(51T) time, O(T+51) extra space: the DP arrays use 51 states, but `onboard[1:]` also copies T−1 list entries.
 
 ### Alternative and trade-offs
 

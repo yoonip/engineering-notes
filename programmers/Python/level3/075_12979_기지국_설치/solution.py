@@ -12,7 +12,7 @@ def solution(n, stations, w):
         gap = station - w - next_start
         # 빈 구간이 있을 때만 설치 수 추가.
         if gap > 0:
-            # 마지막 구간도 같은 올림 나눗셈으로 채움.
+            # 현재 빈 구간 길이를 전파 범위로 나눈 몫을 올림합니다.
             answer += (gap + coverage - 1) // coverage
         # 현재 전파가 끝난 다음 아파트로 이동하며 겹치는 구간도 처리.
         next_start = max(next_start, station + w + 1)

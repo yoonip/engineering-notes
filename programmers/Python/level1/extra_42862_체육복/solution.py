@@ -18,9 +18,9 @@ def solution(n, lost, reserve):
 #     extra = reserve_set - lost_set  # =는 값 저장. 여벌이 있는 학생 중 도난당하지 않은 학생 → 빌려줄 수 있는 대상
 #     for student in sorted(extra):  # for·in은 원소를 차례로 꺼내는 반복문. sorted는 정렬한 새 리스트. 빌려줄 수 있는 학생을 번호가 작은 순서로 하나씩 확인
 #         if student - 1 in need:  # if는 조건이 참일 때 실행. in은 포함 여부. 바로 앞 번호 학생에게 체육복이 없다면
-#             need.remove(student - 1)  # remove는 지정한 값의 첫 항목 삭제. 앞 학생에게 빌려주고, 필요한 학생 집합에서 제거
+#             need.remove(student - 1)  # remove는 집합에서 지정한 원소 삭제. 앞 학생에게 빌려주고, 필요한 학생 집합에서 제거
 #         elif student + 1 in need:  # elif는 앞 조건이 거짓일 때 검사할 다음 조건. in은 포함 여부. 앞 학생에게 빌려주지 않았고, 바로 뒤 학생에게 체육복이 없다면
-#             need.remove(student + 1)  # remove는 지정한 값의 첫 항목 삭제. 뒤 학생에게 빌려주고, 필요한 학생 집합에서 제거
+#             need.remove(student + 1)  # remove는 집합에서 지정한 원소 삭제. 뒤 학생에게 빌려주고, 필요한 학생 집합에서 제거
 #     return n - len(need)  # return은 결과를 돌려주고 함수 종료. len은 길이. 전체 학생 수에서 끝까지 체육복이 없는 학생 수를 빼서 반환
 
 # 풀이 요약

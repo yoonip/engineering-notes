@@ -28,9 +28,9 @@ If the lightest cannot accompany the heaviest, nobody can. Otherwise an exchange
 
 ## 구현 / Implementation
 
-이 구현은 입력 배열을 제자리에서 정렬하거나 힙으로 바꿉니다.
+이 구현은 입력 배열을 오름차순으로 제자리 정렬합니다.
 
-This implementation sorts or heapifies the input array in place.
+This implementation sorts the input array in ascending order in place.
 
 [solution.py](solution.py)
 
@@ -107,9 +107,9 @@ python verify.py
 
 Separately from the original grading record, 30 local cases passed. Inputs and expected results are in [cases.json](cases.json), the reproducer is [verify.py](verify.py), and the run record is [verification.json](verification.json).
 
-비교 구현은 작은 입력 30개에서 함께 통과했습니다. 큰 입력용 제출 풀이와 전수 탐색 기준 코드는 파일명과 설명으로 구분합니다.
+비교 구현은 작은 입력 30개에서 함께 통과했습니다. 기본 풀이와 비교 구현의 알고리즘·적용 범위는 위에서 구분합니다.
 
-The comparison also passed 30 small-input cases. Exhaustive reference implementations are distinguished from the submission solution in their filenames and descriptions.
+The comparison also passed 30 small-input cases. The algorithms and intended input ranges of the main and comparison implementations are described above.
 
 원본 채점 기록: 100점. [submitted_original.py](submitted_original.py)는 당시 원본 파일을 그대로 보존하며, `solution.py`는 설명을 정리한 구현입니다.
 

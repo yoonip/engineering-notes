@@ -28,7 +28,7 @@ int solution(int n, vector<vector<int>> data) {
             int end = j;
             // 현재 x에 속한 모든 점의 범위 찾기.
             while (end < n && data[end][0] == data[j][0]) ++end;
-            // 현재 그룹은 다음 그룹부터 직사각형 안쪽에 들어가므로 경계 갱신.
+            // 현재 x그룹의 각 점을 오른쪽 꼭짓점 후보로 검사합니다.
             for (int p = j; p < end; ++p) {
                 // 현재 점 y조회.
                 int other = data[p][1];

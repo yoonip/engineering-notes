@@ -11,6 +11,7 @@
 입력 매개변수: `n, infection, edges, k`. 반환값은 정수이며 아래 풀이의 조건을 만족하는 결과입니다.
 
 - 2 ≤ n ≤ 100
+- 간선은 n−1개이며 전체 그래프는 트리입니다.
 - 1 ≤ infection ≤ n
 - 1 ≤ x < y ≤ n
 - 1 ≤ type ≤ 3
@@ -123,7 +124,8 @@ Choose up to k pipe-type activations to maximize the number of infected nodes.
 
 Input arguments: `n, infection, edges, k`. The return value is an integer satisfying the task described below.
 
-- 2 ≤ n ≤ 100; len(edges)=n−1; 1 ≤ infection ≤ n
+- 2 ≤ n ≤ 100
+- 간선은 n−1개이며 전체 그래프는 트리입니다.; len(edges)=n−1; 1 ≤ infection ≤ n
 - 1 ≤ type ≤ 3; 1 ≤ k ≤ 10; input is a tree
 
 ### Approach

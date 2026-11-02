@@ -45,7 +45,7 @@ def solution(nums):
 # 
 # def solution(nums):  # def는 함수 정의, () 안은 입력 매개변수, : 뒤 들여쓰기는 함수 본문. nums: 서로 다른 숫자들이 들어 있는 리스트
 #     answer = 0  # =는 값 저장. 합이 소수가 되는 조합의 개수를 저장. 처음에는 0
-#     for a, b, c in combinations(nums, 3):  # for·in은 원소를 차례로 꺼내는 반복문. combinations는 중복 선택 없는 조합 생성. ()로 묶은 여러 값은 변경 불가 튜플. nums에서 숫자 3개를 선택하는 모든 조합을 하나씩 꺼냄
+#     for a, b, c in combinations(nums, 3):  # for·in은 원소를 차례로 꺼내는 반복문. combinations는 중복 선택 없는 조합 생성. 쉼표로 나열한 변수에 값을 차례로 나누어 저장. nums에서 숫자 3개를 선택하는 모든 조합을 하나씩 꺼냄
 #         total = a + b + c  # =는 값 저장. 선택한 숫자 3개를 더한 결과를 total에 저장
 #         is_prime = True  # =는 값 저장. True·False는 참·거짓. 일단 합계가 소수라고 가정하고 검사 시작
 #         for i in range(2, int(total ** 0.5) + 1):  # for·in은 원소를 차례로 꺼내는 반복문. range는 끝값 직전까지 정수 순서 생성. int는 정수 변환. **는 거듭제곱. 2부터 total의 제곱근까지 나누어떨어지는지 검사

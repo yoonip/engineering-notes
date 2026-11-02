@@ -53,7 +53,7 @@ Count balloons that can survive when the larger of adjacent balloons is removed,
 
 ### Method and correctness
 
-A balloon can survive if it is a strict minimum from the left or from the right. If a smaller balloon exists on both sides, retaining it would need the forbidden larger-balloon deletion twice. Count record minima in both directions and subtract the global minimum counted twice; all values are distinct.
+A balloon can survive if it is a strict minimum from the left or from the right. If a smaller balloon exists on both sides, retaining it would need the smaller-balloon deletion twice, exceeding the one-exception limit. Count record minima in both directions and subtract the global minimum counted twice; all values are distinct.
 
 Main complexity: O(N) time, O(1) extra state.
 

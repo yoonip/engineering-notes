@@ -78,7 +78,7 @@ def solution(users,emoticons):
 | 비교 | 기본 풀이 | 다른 풀이 |
 |---|---|---|
 | 계산 방식 | 각 이모티콘에 10·20·30·40% 할인 중 하나를 배정합니다. 사용자별 구매 합계를 구해 기준 이상이면 가입, 아니면 매출에 더합니다. 결과를 (가입자,매출) 튜플로 비교합니다. | 사용자별 누적 구매액을 갱신하는 DFS |
-| 비용 | 시간 O(4^M·U·M), 공간 O(M) / Time O(4^M·U·M), space O(M) | 시간 O(4^M·U), 공간 O(U+M) / Time O(4^M·U), space O(U+M) |
+| 비용 | 시간 O(4^M·U·M), 공간 O(M) / Time O(4^M·U·M), space O(M) | 시간 O(4^M·U), 공간 O(MU+M) / Time O(4^M·U), space O(MU+M); 재귀 깊이마다 buyers 목록이 남습니다 / each active recursion frame retains a buyers list |
 
 ## 검증
 
@@ -114,7 +114,7 @@ Boundary cases: Do not add subscribers’ canceled purchases to revenue. A disco
 
 ### Alternative: DFS with incremental per-user spending
 
-시간 O(4^M·U), 공간 O(U+M) / Time O(4^M·U), space O(U+M)
+시간 O(4^M·U), 공간 O(MU+M) / Time O(4^M·U), space O(MU+M); 재귀 깊이마다 buyers 목록이 남습니다 / each active recursion frame retains a buyers list
 
 ### Verification
 
