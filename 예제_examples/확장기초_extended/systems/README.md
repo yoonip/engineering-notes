@@ -1,4 +1,4 @@
-# 시스템 기초의 실행 모형
+# 시스템 기초의 실행 모형 / Executable system foundation models
 
 ## 한국어
 

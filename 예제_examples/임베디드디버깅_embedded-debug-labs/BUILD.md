@@ -2,7 +2,7 @@
 
 ## Arm Cortex-M7
 
-프로젝트 루트에서 실행하는 GNU Arm Embedded Toolchain 명령입니다. ELF에는 실행 코드, 데이터 배치, 심볼과 디버그 정보가 포함됩니다.
+이 예제 폴더(`예제_examples/임베디드디버깅_embedded-debug-labs`)에서 실행하는 GNU Arm Embedded Toolchain 명령입니다. ELF에는 실행 코드, 데이터 배치, 심볼과 디버그 정보가 포함됩니다.
 
 ```sh
 mkdir -p arm/build

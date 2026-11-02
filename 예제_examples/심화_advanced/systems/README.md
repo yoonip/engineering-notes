@@ -1,8 +1,8 @@
-# Systems 심화 실행 예제 / Advanced systems examples
+# 시스템 심화 실행 예제 / Advanced systems examples
 
 ## 한국어
 
-Python 3.10 이상과 표준 라이브러리로 실행합니다. 외부 package 설치는 필요하지 않습니다. 아래 명령은 저장소 루트 기준입니다.
+Python 3.10 이상과 표준 라이브러리로 실행합니다. 외부 패키지 설치는 필요하지 않습니다. 아래 명령은 저장소 루트 기준입니다.
 
 ```sh
 python "예제_examples/심화_advanced/systems/demo.py" all

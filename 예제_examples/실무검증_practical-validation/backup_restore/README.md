@@ -31,7 +31,7 @@ python -X utf8 -B verify.py --mutation publish-before-complete --output C:/temp/
 python -X utf8 -B model.py --backup C:/temp/backup-fixed-new/restore_deleted_and_changed/backup --request C:/temp/backup-fixed-new/restore_deleted_and_changed/request.json --destination C:/temp/backup-manual-new
 ```
 
-복원 CLI는 RESTORED·종료 0, REFUSED·종료 3, 의도한 중단 INTERRUPTED·종료 4를 구분합니다. `--cut-after 1`은 첫 파일 기록 뒤 함수가 반환되는 결정적 중단점입니다. 프로세스를 강제 종료하거나 전원을 끈 실험은 아닙니다. 정상 중단은 destination.staging에 config.bin만 남기고 목적지는 만들지 않습니다. 같은 staging을 자동 재사용하지 않습니다.
+복원 CLI는 RESTORED·종료 0, REFUSED·종료 3, 의도한 중단 INTERRUPTED·종료 4를 구분합니다. `--cut-after 1`은 첫 파일 기록 뒤 함수가 반환되도록 정한 중단점입니다. 프로세스를 강제 종료하거나 전원을 끈 실험은 아닙니다. 정상 중단은 destination.staging에 config.bin만 남기고 목적지는 만들지 않습니다. 같은 staging을 자동 재사용하지 않습니다.
 
 ## 신뢰와 범위
 

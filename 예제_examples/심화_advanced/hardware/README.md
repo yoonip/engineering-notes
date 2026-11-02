@@ -1,4 +1,4 @@
-# Hardware 심화 실행 예제 / Advanced hardware examples
+# 하드웨어 심화 실행 예제 / Advanced hardware examples
 
 Python 3.11 이상 표준 라이브러리만으로 회로·통신·계측·상태전이 모델을 실행합니다. `models.py`는 참조모델, `demo.py`는 19개 주제의 CLI, `test_models.py`는 해석해·보존식·독립 구현·전수검사와 비교하는 검산입니다. 실행 위치는 이 폴더입니다.
 

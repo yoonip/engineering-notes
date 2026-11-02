@@ -2,7 +2,7 @@
 
 ## 한국어
 
-[models.py](models.py)는 회로 식과 디지털 계약을 작은 Python 모델로 표현합니다. [test_models.py](test_models.py)는 해석적 한계, 독립 계산, 완전 열거와 통계적 simulation으로 가정을 확인합니다. 외부 패키지가 필요하지 않으며 저장소 root에서 다음처럼 실행합니다.
+[models.py](models.py)는 회로 식과 디지털 계약을 작은 Python 모델로 표현합니다. [test_models.py](test_models.py)는 해석적 한계, 독립 계산, 완전 열거와 통계적 시뮬레이션으로 가정을 확인합니다. 외부 패키지가 필요하지 않으며 저장소 루트에서 다음처럼 실행합니다.
 
 ```text
 python -m unittest discover -s 예제_examples/확장기초_extended/hardware -p "test_*.py" -v
