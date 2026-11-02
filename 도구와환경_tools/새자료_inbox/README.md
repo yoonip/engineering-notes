@@ -1,32 +1,42 @@
 # 도구·보안 새 자료
 
-반영: 2026-10-31 05:59 KST
+반영: 2026-11-02 17:07 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## Zephyr 4.3.2
+## TeamViewer 제품 보안 업데이트 권고
 
-Zephyr Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.
+> TeamViewer社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
 
-출처: [Zephyr Project](<https://github.com/zephyrproject-rtos/zephyr/releases>) · [원문](<https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2>) · 공식 릴리스 게시 시각: 2026-10-31 05:17 KST
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72264>) · 공식 RSS 게시일: 2026-11-02
 
-가져온 시각: 2026-10-31 06:00:12 KST
+가져온 시각: 2026-11-02 17:08:13 KST
 
-수집 경로: [공식 목록·피드](<https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20>) · 방법: 공식 저장소의 공개 Releases API\(안정판\)
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
 
-자료 유형: 공식 안정판 릴리스
+개요: 공식 한국어 소개 발췌
 
-개요: 제목·공개 정보에 따른 한국어 안내
+## Ivanti 제품 보안 업데이트 권고
 
-## 다우기술 제품 보안 업데이트 권고
+> Ivanti社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
 
-> 다우기술社는 자사 제품에서 발생하는 취약점을 해결한 보안 패치 지원 o 영향을 받는 버전을 사용 중인 사용자는 다우기술 지원에 따라 패치…
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72263>) · 공식 RSS 게시일: 2026-11-02
 
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72261>) · 공식 RSS 게시일: 2026-10-30
+가져온 시각: 2026-11-02 17:08:14 KST
 
-가져온 시각: 2026-10-31 01:11:28 KST
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## WordPress 제품 보안 업데이트 권고
+
+> WordPress의 weDevs Project Manager 플러그인 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72262>) · 공식 RSS 게시일: 2026-11-02
+
+가져온 시각: 2026-11-02 17:08:15 KST
 
 수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
 
