@@ -1,6 +1,6 @@
 # 추론 연습과 통찰: 익숙함을 이해로 착각하지 않기
 
-[추론과 적성시험](README.md) · [인문·사회와 추론](개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
+[언어이해와 추리논증](README.md) · [인문·사회와 추론](개념과판단_CONCEPTS_AND_JUDGMENT.md) · [English](#english)
 
 ## 무엇이 좋아졌는지 나누어 보기
 

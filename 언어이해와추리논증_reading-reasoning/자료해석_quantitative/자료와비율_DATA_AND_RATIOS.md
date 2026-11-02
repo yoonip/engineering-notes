@@ -1,6 +1,6 @@
 # 자료를 숫자로 읽기: 기준, 비율, 평균 | Quantitative data reasoning
 
-[추론·적성](../README.md) · [실행 코드](../../예제_examples/추론_reasoning/README.md)
+[언어이해와 추리논증](../README.md) · [실행 코드](../../예제_examples/추론_reasoning/README.md)
 
 ## 한국어
 
@@ -49,11 +49,11 @@ $$P(H\mid E)=\frac{P(E\mid H)P(H)}{P(E\mid H)P(H)+P(E\mid\neg H)P(\neg H)},\quad
 ### 구현과 독립 검증
 
 ```python
-from 예제_examples.추론_reasoning.models import weighted_mean, bayes_binary
+from 예제_examples.추론_reasoning.models import weighted_mean, bayes_binary  # from/import로 가중평균·베이즈 계산 함수를 불러옵니다.
 
-# 정수·분수·소수 문자열은 유리수로 정확히 계산한다.
-print(weighted_mean([80, 50], [20, 80]))
-print(bayes_binary("0.01", "0.9", "0.05"))
+# 정수·분수·소수 문자열을 유리수로 바꾸어 계산합니다.
+print(weighted_mean([80, 50], [20, 80]))  # []로 값·가중치 목록을 전달하고 print로 가중평균을 출력합니다.
+print(bayes_binary("0.01", "0.9", "0.05"))  # 문자열로 확률을 전달해 양성일 때의 사후확률을 출력합니다.
 ```
 
 `Fraction`은 이 작은 예에서 반올림을 뒤로 미룹니다. 소수 `0.1`을 float로 넘기면 이미 이진 근사가 들어 있으므로 정확한 십진값이 필요할 때는 문자열을 씁니다. 가중평균은 한 번의 순회에서 $`O(n)`$개의 유리수 연산과 $`O(1)`$개 누산기를 씁니다. 분자·분모의 비트 길이에 따른 연산 비용은 별도입니다. Bayes도 산술 연산 수는 일정하지만 비트 비용이 무조건 일정한 것은 아닙니다.

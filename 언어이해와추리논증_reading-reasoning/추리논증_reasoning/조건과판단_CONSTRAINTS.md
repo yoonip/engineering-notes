@@ -1,6 +1,6 @@
 # 조건을 표로 바꾸고 반례로 확인하기 | Constraint and decision reasoning
 
-[추론·적성](../README.md) · [실행 코드](../../예제_examples/추론_reasoning/README.md)
+[언어이해와 추리논증](../README.md) · [실행 코드](../../예제_examples/추론_reasoning/README.md)
 
 ## 한국어
 
@@ -37,13 +37,13 @@ $`X`$의 도메인이 줄면 $`X`$를 참고하던 이웃을 다시 검사합니
 유한 도메인의 모든 값을 빠짐없이 분기하고, 전파가 실제 가능한 해를 지우지 않는다면 탐색은 완전합니다. 제약을 만족하는 완성 배정만 반환하므로 건전성도 확인할 수 있습니다. 하지만 변수 $`n`$개에 후보가 최대 $`d`$개면 가능한 완성 배정이 최대 $`d^n`$개입니다. 제약 전파가 이를 늘 다항 시간으로 바꾸는 것은 아닙니다. 코드의 이항 관계 검사 비용을 $`C`$라 두면 AC-3 한 번의 표준 상한은 $`O(ed^3C)`$이며, $`e`$는 방향 있는 관계 수입니다. 도메인 복사를 유지하는 깊이 우선 재귀의 보수적인 저장 상한은 $`O(n^2d+e)`$입니다. 모든 해를 리스트로 모으면 출력 크기만큼 더 듭니다.
 
 ```python
-from 예제_examples.추론_reasoning.models import iter_solutions
+from 예제_examples.추론_reasoning.models import iter_solutions  # from/import로 가능한 배정을 생성하는 함수를 불러옵니다.
 
-domains = {name: [1, 2, 3] for name in "ABC"}
-rules = [("A", "B", lambda a, b: a < b),
-         ("B", "C", lambda b, c: b < c)]
-# 가능한 배정을 하나씩 받으며 원래 입력 도메인은 바꾸지 않는다.
-print(list(iter_solutions(domains, rules)))
+domains = {name: [1, 2, 3] for name in "ABC"}  # 사전 컴프리헨션으로 A·B·C에 각각 후보 목록을 연결합니다.
+rules = [("A", "B", lambda a, b: a < b),  # 튜플에 변수 쌍과 lambda 익명 함수로 만든 A<B 조건을 담습니다.
+         ("B", "C", lambda b, c: b < c)]  # B<C 조건을 더하고 []로 조건 목록을 닫습니다.
+# 가능한 배정을 하나씩 받으며 원래 입력 도메인은 바꾸지 않습니다.
+print(list(iter_solutions(domains, rules)))  # list로 모든 배정을 모으고 print로 출력합니다.
 ```
 
 예상 결과는 `A=1, B=2, C=3`입니다. 이 구현은 정수의 유한 도메인과 이항 제약을 다룹니다. 단항 조건은 도메인을 미리 줄입니다. 모든 값이 다르다는 조건은 쌍별 부등식으로 표현할 수 있지만, 전용 global all-different 전파가 더 강한 가지치기를 할 수 있습니다. 세 변수 이상인 임의 조건을 이항 함수 하나로 옮겼다고 가정해서는 안 됩니다.
