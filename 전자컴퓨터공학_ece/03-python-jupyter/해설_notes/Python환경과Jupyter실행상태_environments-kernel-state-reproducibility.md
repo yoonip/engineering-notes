@@ -6,7 +6,7 @@
 
 ### 설치한 Python과 노트북의 Python이 같을까요
 
-Python 인터프리터는 코드를 실행하고, 패키지는 그 인터프리터가 찾는 경로에 설치됩니다. Jupyter의 화면과 코드를 실행하는 kernel은 별개입니다. 브라우저에서 같은 노트북을 열었어도 선택된 kernel이 다른 환경을 가리키면 import 결과와 패키지 버전이 달라집니다. IPython은 Jupyter에서 Python 실행을 맡는 kernel 구현입니다. [IPython kernel 설치](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
+Python 인터프리터는 코드를 실행하고, 패키지는 그 인터프리터가 찾는 경로에 설치됩니다. Jupyter의 화면과 코드를 실행하는 kernel은 별개입니다. 브라우저에서 같은 노트북을 열었어도 선택된 kernel이 다른 환경을 가리키면 import 결과와 패키지 버전이 달라집니다. Jupyter의 Python 커널인 `ipykernel`은 IPython을 기반으로 코드를 실행합니다. [IPython kernel 설치](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
 
 `venv`는 Python 설치를 바탕으로 별도 패키지 경로를 갖는 가상환경을 만듭니다. 활성화는 보통 그 환경의 실행 파일 경로를 PATH 앞에 놓는 편의 기능입니다. 활성화 없이도 환경의 Python을 직접 실행할 수 있습니다. 환경 폴더를 다른 PC에 복사하기보다 같은 입력 목록으로 다시 만드는 편이 맞습니다. 절대 경로를 사용하는 스크립트 등이 있어 일반적으로 이동 가능한 묶음이 아니기 때문입니다. 가상환경은 보안 격리 장치나 GPU 드라이버까지 포함한 운영체제 복제본도 아닙니다. [Python venv](https://docs.python.org/3/library/venv.html)
 
@@ -40,7 +40,7 @@ Windows PowerShell에서는 `.venv/bin/python` 대신 `.venv\Scripts\python.exe`
 
 ### The notebook's Python can differ from the installed one
 
-An interpreter executes code and searches its own package paths. The Jupyter interface and execution kernel are separate. Opening the same notebook with a different kernel can change imports and versions. IPython implements a Python kernel for Jupyter. [IPython kernel installation](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
+An interpreter executes code and searches its own package paths. The Jupyter interface and execution kernel are separate. Opening the same notebook with a different kernel can change imports and versions. Jupyter's `ipykernel` executes Python code using IPython. [IPython kernel installation](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
 
 `venv` creates separate package paths based on an existing Python installation. Activation mainly adjusts PATH; directly calling the environment's interpreter also works. Recreate an environment from its inputs instead of assuming its directory can be copied between computers: installed scripts can contain absolute paths. A virtual environment is neither a security sandbox nor an operating-system image containing GPU drivers. [venv](https://docs.python.org/3/library/venv.html)
 

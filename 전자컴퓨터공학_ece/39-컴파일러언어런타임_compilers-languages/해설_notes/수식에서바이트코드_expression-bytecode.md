@@ -24,7 +24,7 @@ stack 높이는 PUSH에서 +1, NEG에서 0, binary operation에서 -1 변합니�
 
 ### 입력 크기와 실행 범위를 제한합니다
 
-`compile_expression()`는 source 512문자, 재귀 깊이 64를 상한으로 둡니다. 알 수 없는 token, 남은 token, 닫히지 않은 괄호를 거부합니다. 전체 토큰 수 T에 대한 tokenization·parsing·instruction 생성은 이 문법에서 선형 작업을 합니다. 정수는 Python 임의 정밀도이므로 산술 instruction의 비용까지 항상 O(1)이라고 세면 안 됩니다. 큰 정수 곱셈은 operand의 bit 수에 따라 달라집니다.
+`compile_expression()`는 source 512문자, 재귀 깊이 64를 상한으로 둡니다. 알 수 없는 token, 남은 token, 닫히지 않은 괄호를 거부합니다. 문자열 길이를 L, 토큰 수를 T라고 하면 문자 검색·tokenization은 O(L), parsing과 instruction 생성의 구조적 작업은 O(T)입니다. 긴 숫자나 공백도 읽어야 하므로 tokenization 비용을 토큰 수만으로 세지 않습니다. 정수는 Python 임의 정밀도이므로 산술 instruction의 비용까지 항상 O(1)이라고 세면 안 됩니다. 큰 정수 곱셈은 operand의 bit 수에 따라 달라집니다.
 
 이 VM은 instruction tuple을 해석하는 작은 계산기이며 실제 CPU instruction이나 ELF를 생성하지 않습니다. 허용 operation을 좁혔다고 범용 sandbox가 완성된 것도 아닙니다. 입력 경계와 자원 한도는 서비스를 붙일 때에도 그대로 유지해야 합니다.
 
@@ -61,7 +61,7 @@ PUSH increases stack height by one, NEG preserves it, and binary operations redu
 
 ### Bound the input and execution model
 
-Source length is capped at 512 characters and recursive depth at 64. Unknown tokens, trailing tokens, and unmatched parentheses are errors. Tokenization, parsing, and instruction generation perform linear work in token count T for this grammar. Python integers have arbitrary precision, so arithmetic instruction cost is not universally constant: multiplication depends on operand bit lengths.
+Source length is capped at 512 characters and recursive depth at 64. Unknown tokens, trailing tokens, and unmatched parentheses are errors. For source length L and token count T, character scanning and tokenization take O(L), while the structural parsing and instruction-emission work takes O(T). Long numeric literals and whitespace still have to be read, so token count alone does not describe scanning cost. Python integers have arbitrary precision, so arithmetic instruction cost is not universally constant: multiplication depends on operand bit lengths.
 
 The VM interprets instruction tuples; it emits neither CPU instructions nor ELF. Restricting operations does not establish a general-purpose sandbox. Input and resource limits remain necessary when integrating the calculator into a service.
 

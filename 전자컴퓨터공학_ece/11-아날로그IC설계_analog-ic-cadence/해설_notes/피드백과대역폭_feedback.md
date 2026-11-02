@@ -41,7 +41,7 @@ L(j\omega)=\frac{L_0}{(1+j\omega/\omega_1)(1+j\omega/\omega_2)},
 \quad PM=180^\circ-\tan^{-1}(\omega_c/\omega_1)-\tan^{-1}(\omega_c/\omega_2).
 ```
 
-$`\omega_c`$는 loop gain의 0 dB 교차점입니다. 코드에서는 양의 pole 두 개에 의해 크기가 단조 감소하는 성질을 이용해 이분법으로 구합니다. 두 번째 pole이 교차점 가까이 오면 추가 위상 지연 때문에 PM이 작아집니다. 이 단순한 두 pole·양의 DC gain 시스템의 폐루프 분모 계수는 모두 양수여서 안정하지만, 작은 PM에서는 overshoot와 ringing이 커질 수 있습니다. 이 관찰을 임의의 다중 루프·우반평면 pole·시간지연 시스템의 안정성 정리로 확대하지 않습니다. 그런 경우에는 Nyquist 조건과 정확한 loop 정의가 필요합니다.
+$`\omega_c`$는 loop gain의 0 dB 교차점입니다. 여기서 ω1·ω2는 양의 주파수이고, 실제 pole 위치는 s=−ω1·−ω2로 좌반평면에 있습니다. 코드에서는 DC loop gain L0가 1보다 큰 경우 크기가 단조 감소하는 성질을 이용해 교차점을 이분법으로 구합니다. 두 번째 pole이 교차점 가까이 오면 추가 위상 지연 때문에 PM이 작아집니다. 이 단순한 두 pole·양의 DC gain 시스템의 폐루프 분모 계수는 모두 양수여서 안정하지만, 작은 PM에서는 overshoot와 ringing이 커질 수 있습니다. 이 관찰을 임의의 다중 루프·우반평면 pole·시간지연 시스템의 안정성 정리로 확대하지 않습니다. 그런 경우에는 Nyquist 조건과 정확한 loop 정의가 필요합니다.
 
 ### 구현과 검증, 실제 회로에 옮기는 조건
 
@@ -72,7 +72,7 @@ Here x is the reference at the `x−βy` summing point. Do not identify `1/β` w
 
 ### A second pole and phase margin
 
-For the displayed two-pole loop, the crossover frequency satisfies $`|L(j\omega_c)|=1`$. The phase margin is 180 degrees minus the sum of the two arctangent lags. With two positive poles, magnitude decreases monotonically, so bisection finds the unique crossover when the DC loop gain exceeds one. Moving the second pole toward crossover reduces phase margin.
+For the displayed two-pole loop, the crossover frequency satisfies $`|L(j\omega_c)|=1`$. The phase margin is 180 degrees minus the sum of the two arctangent lags. The frequencies ω1 and ω2 are positive, placing the actual poles at s=−ω1 and s=−ω2 in the left half-plane. Magnitude decreases monotonically, so bisection finds the unique crossover when the DC loop gain exceeds one. Moving the second pole toward crossover reduces phase margin.
 
 This particular two-pole closed loop with positive DC gain has positive second-order denominator coefficients and is stable, although a small margin can cause pronounced overshoot and ringing. This is not a general stability theorem for systems with multiple loops, right-half-plane poles or delay. Those require the appropriate Nyquist analysis and a carefully defined loop transfer.
 

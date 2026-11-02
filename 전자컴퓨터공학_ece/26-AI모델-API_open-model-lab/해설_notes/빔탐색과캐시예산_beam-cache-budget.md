@@ -37,7 +37,7 @@ Batch B, 층 L, KV head 수 H, 길이 T, head 차원 d, 원소당 s byte라면 �
 D_{\mathrm{KV}}=2BLHTds.
 ```
 
-앞의 2는 key와 value입니다. GQA/MQA에서는 query head 수가 아니라 실제 KV head 수를 넣습니다. 예제 B=1, L=32, H=8, T=4096, d=128, s=2이면 536,870,912 byte, 즉 512 MiB입니다. 이것은 가중치·activation·allocator 여유·임시 workspace를 제외한 값 배열의 계산량입니다. Python 객체 cache의 실제 메모리와도 같지 않습니다.
+앞의 2는 key와 value입니다. GQA/MQA에서는 query head 수가 아니라 실제 KV head 수를 넣습니다. 예제 B=1, L=32, H=8, T=4096, d=128, s=2이면 536,870,912 byte, 즉 512 MiB입니다. 이것은 가중치·activation·allocator 여유·임시 workspace를 제외한 값 배열에 필요한 저장량입니다. Python 객체 cache의 실제 메모리와도 같지 않습니다.
 
 Beam마다 논리적 prefix가 갈라지면 cache의 소유 관계도 맞춰야 합니다. 단순 복제는 메모리를 늘리고, 공유 prefix 관리나 paged cache는 구현 조건을 바꿉니다. 모델의 가중치, prompt 앞부분, position 규칙이 바뀌었는데 과거 cache를 재사용하면 같은 계산이라는 전제가 무너집니다.
 

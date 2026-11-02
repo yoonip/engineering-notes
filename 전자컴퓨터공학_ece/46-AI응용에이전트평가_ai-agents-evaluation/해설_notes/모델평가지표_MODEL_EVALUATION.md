@@ -89,3 +89,21 @@ Latency is the time until a request finishes; throughput is the amount processed
 ### Comparison conditions
 
 Model revision, tokenizer, inputs, output length, sampling, precision, device, and batch size define the comparison conditions. Separating model changes from execution-setting changes makes differences in the results easier to explain.
+
+### Worked classification example
+
+The Korean table is an authored example of 1,000 predictions, not a measured model result. It contains TP=8, FN=2, FP=12 and TN=978. Accuracy is 98.6%, precision is 40%, recall is 80%, and F1 is approximately 53.33%. Predicting every sample as negative instead gives 99% accuracy while finding none of the ten positives. Its precision has a zero denominator; any tool-specific replacement value must be stated. The [scikit-learn definitions](https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics) distinguish these metrics. Threshold selection changes the error trade-off and must not reuse the final evaluation labels as tuning data.
+
+### Generated answers and timing
+
+For a task requiring `{"city":"서울"}`, the sentence `서울입니다.` conveys the city but does not satisfy the JSON contract. Check the extracted value, JSON syntax, field/type requirements and unsupported additions separately. Exact match also depends on declared whitespace or case normalization; human and model-based judgments use different criteria.
+
+In the authored timing example, a request starts at zero, its first token arrives at 0.2 seconds, and its fifth and final token arrives at 1.4 seconds. TTFT is 0.2 seconds. Four subsequent intervals average `(1.4−0.2)/(5−1)=0.3` seconds per token, or about 3.33 tokens/second. Dividing all five tokens by total request time gives about 3.57 tokens/second, a different scope. A one-token output has no subsequent interval. The [NVIDIA benchmark metric definitions](https://docs.nvidia.com/nim/benchmarking/llm/metrics) identify the aggregation convention.
+
+Concurrent service throughput is not the reciprocal of individual latency. Ten overlapping requests completed within a two-second observation interval give five requests/second; each request's waiting time still requires its own timestamps.
+
+### Storage and memory
+
+Seven billion weights at 16 bits each occupy `14×10⁹` bytes, or 14 GB (about 13.04 GiB), for the weight elements alone. Execution additionally requires caches, activations and temporary buffers, while quantized representations can require scale metadata. A 14 GB weight calculation does not establish that inference fits in 14 GB of memory.
+
+For the practice questions above, 15 true positives among 20 positive predictions give 75% precision; 15 detected positives among 30 actual positives give 50% recall. Comparing completion time for different output lengths mixes processing speed with the amount generated. Match input/output conditions and assess task quality as well.

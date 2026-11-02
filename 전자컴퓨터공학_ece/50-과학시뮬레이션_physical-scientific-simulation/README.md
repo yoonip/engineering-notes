@@ -101,6 +101,18 @@ Electromagnetic, thermal, structural, fluid, and device simulations use differen
 
 COMSOL, Ansys, HFSS, and CST support multiphysics or electromagnetic analysis. OpenFOAM supports fluid simulation, FEniCS supports finite elements, MEEP and openEMS support electromagnetics, and LAMMPS supports molecular dynamics. Analytical solutions, conserved quantities, independent calculations, and measurements provide different ways to check results.
 
+### A constructed mixing-tank example
+
+For a constant-volume, perfectly mixed tank with equal inlet/outlet flow Q, no reaction or leakage, and inlet concentration C_in, conservation gives `d(VC)/dt=Q C_in−Q C`. At constant V, `dC/dt=(Q/V)(C_in−C)` and `C(t)=C_in+(C(0)−C_in)exp(−Qt/V)`. These assumptions are part of the model, not properties of every tank.
+
+The authored values V=20 L, Q=10 L/h, C_in=1 g/L and C(0)=0 give C(2 h)≈0.6321 g/L. The time constant V/Q=2 h leaves about 36.8% of the initial-to-final difference; it does not mean complete equilibration. This is a calculated example, not a reactor measurement.
+
+Forward Euler updates `C[k+1]=C[k]+(Q Δt/V)(C_in−C[k])`. At two hours, steps of 1, 0.5 and 0.25 hours give approximately 0.7500, 0.6836 and 0.6564 g/L, with absolute errors 0.1179, 0.0515 and 0.0243 g/L. Refinement verifies this mathematical calculation; it does not establish perfect mixing or the response of a real sensor.
+
+The error multiplier is `1−Q Δt/V`. Its magnitude below one ensures decay in this model, but a negative multiplier alternates around the target. At Δt=3 h, the multiplier is −0.5 and the computed sequence starts 0→1.5→0.75, exceeding the inlet concentration despite numerical stability. Positivity and monotonicity therefore need separate checks.
+
+Residuals check the chosen equations; mass balances check incoming, outgoing and accumulated quantities. Neither alone validates boundary conditions, mixing assumptions or sensor placement. A wall-mounted sensor's instantaneous reading need not equal a perfectly mixed average. The [continuous-biomanufacturing article](../../제품기술분석_product-technology/진단과바이오제조_diagnostics-biomanufacturing/연속바이오제조의공정과비용_continuous-biomanufacturing2026.md) connects mean residence time with actual distributions. Accordingly, the practice questions distinguish numerical convergence from physical validity, a time constant from completion, and stability from physically plausible intermediate values.
+
 ### Foundation article
 
 - [수치해석의 V&V: 수렴, 잔차, 보존을 따로 확인하기](해설_notes/수치해석의VV_verification-convergence-and-conservation.md#english)

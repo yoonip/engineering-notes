@@ -8,7 +8,7 @@
 
 차동구동의 기구학은 원하는 전진·회전 속도를 좌우 바퀴의 목표 속도로 바꿉니다. 그러나 목표값을 motor PWM에 그대로 넣어 실제 속도를 보장할 수는 없습니다. 부하, 마찰과 전압에 따라 같은 명령에서도 속도가 달라집니다. encoder로 측정한 속도와 목표를 비교해 명령을 조정하는 폐루프가 필요합니다. 여기서는 한 바퀴의 속도 제어를 분리해 다룹니다.
 
-오차 $`e=r-\omega`$에서 비례 항은 현재 차이에 반응하고 적분 항은 남아 있는 차이를 시간에 걸쳐 누적합니다. PI는 PID에서 미분 항을 사용하지 않는 형태입니다. encoder 차분의 노이즈를 무조건 미분으로 키우지 않기 위해 이 작은 모델에서는 PI를 선택합니다. 실제 PID의 미분 필터와 측정값 기반 미분은 별도 설계입니다. [MIT Control fundamentals](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/d98dc04f3311eb4e8c786a342dd07f87_MIT2_017JF09_ch11.pdf)
+오차 $`e=r-\omega`$에서 비례 항은 현재 차이에 반응하고 적분 항은 남아 있는 차이를 시간에 걸쳐 누적합니다. PI는 PID에서 미분 항을 사용하지 않는 형태입니다. encoder 차분의 노이즈를 무조건 미분으로 키우지 않기 위해 이 작은 모델에서는 PI를 선택합니다. 실제 PID의 미분 필터와 측정값 기반 미분은 별도 설계입니다. [MIT Control fundamentals](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/mit2_017j_f09_coursetextbook.pdf#page=97)
 
 ### 제어기와 plant를 함께 정의합니다
 
@@ -51,7 +51,7 @@ python "예제_examples/심화_advanced/systems/test_advanced_models.py" -v
 
 Differential-drive kinematics converts desired body motion into wheel-speed targets. Mapping those targets directly to PWM does not guarantee actual speed because load, friction, and supply voltage vary. A closed loop compares encoder-derived speed with the target. This example isolates one wheel's speed loop.
 
-For error $`e=r-\omega`$, proportional action responds to the present difference and integral action accumulates persistent error. PI is PID without derivative action. This model avoids amplifying noisy encoder differences with an unfiltered derivative; derivative filtering and measurement-based derivative action are separate design choices. [MIT Control fundamentals](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/d98dc04f3311eb4e8c786a342dd07f87_MIT2_017JF09_ch11.pdf)
+For error $`e=r-\omega`$, proportional action responds to the present difference and integral action accumulates persistent error. PI is PID without derivative action. This model avoids amplifying noisy encoder differences with an unfiltered derivative; derivative filtering and measurement-based derivative action are separate design choices. [MIT Control fundamentals](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/mit2_017j_f09_coursetextbook.pdf#page=97)
 
 ### Define controller and plant together
 
@@ -90,5 +90,5 @@ python "예제_examples/심화_advanced/systems/test_advanced_models.py" -v
 
 ## 출처 / Sources
 
-- [MIT 2.017J: Control fundamentals](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/d98dc04f3311eb4e8c786a342dd07f87_MIT2_017JF09_ch11.pdf): 폐루프와 PI/PID / feedback and PI/PID
+- [MIT 2.017J: Control fundamentals](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/mit2_017j_f09_coursetextbook.pdf#page=97): 폐루프와 PI/PID / feedback and PI/PID
 - [MathWorks: Anti-windup control](https://www.mathworks.com/help/simulink/slref/anti-windup-control-using-a-pid-controller.html): 포화·clamping / saturation and clamping

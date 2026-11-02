@@ -6,7 +6,7 @@
 
 ### 두 점 중 어느 쪽에 가까운가
 
-BPSK는 두 bit를 서로 반대 위상의 신호로 보냅니다. 수신기가 carrier 위상과 symbol timing을 정확히 알고 matched filter로 신호를 모았다면, 한 bit의 판단을 실수축의 두 점 중 하나를 고르는 문제로 줄일 수 있습니다. AWGN은 신호에 더해지는 white Gaussian noise입니다. 여기서는 uncoded bit가 독립·동일 확률이며 동기 오차, fading, 간섭이 없는 coherent 검출만 다룹니다. [MIT 16.36 Lecture 11](https://ocw.mit.edu/courses/16-36-communication-systems-engineering-spring-2009/ecba60e6759f2eb6683f340cc5fed6b2_MIT16_36s09_lec11.pdf)
+BPSK는 비트값 0과 1을 서로 반대 위상의 신호에 대응시켜, 심벌당 한 비트를 보냅니다. 수신기가 carrier 위상과 symbol timing을 정확히 알고 matched filter로 신호를 모았다면, 한 bit의 판단을 실수축의 두 점 중 하나를 고르는 문제로 줄일 수 있습니다. AWGN은 신호에 더해지는 white Gaussian noise입니다. 여기서는 uncoded bit가 독립·동일 확률이며 동기 오차, fading, 간섭이 없는 coherent 검출만 다룹니다. [MIT 16.36 Lecture 11](https://ocw.mit.edu/courses/16-36-communication-systems-engineering-spring-2009/ecba60e6759f2eb6683f340cc5fed6b2_MIT16_36s09_lec11.pdf)
 
 정규직교 basis에 투영한 송신값을 $`x\in\{-\sqrt{E_b},+\sqrt{E_b}\}`$라 두면 수신 통계량은
 

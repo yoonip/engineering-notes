@@ -20,7 +20,7 @@ find notes -type f -name '*.csv'
 
 ## 파일과 권한
 
-Linux의 경로는 `/`에서 시작합니다. `/home`은 일반 사용자 데이터, `/etc`는 시스템 설정, `/dev`는 장치 접근, `/proc`는 실행 중인 시스템 정보를 다루는 데 사용됩니다. 읽기·쓰기·실행 권한은 소유자, 그룹, 그 외 사용자로 나뉩니다. 디렉터리의 실행 권한은 그 경로를 통과할 수 있는 권한입니다.
+Linux의 절대 경로는 `/`에서 시작하고, 상대 경로는 현재 디렉터리 등 기준 위치에서 해석합니다. [Linux 경로 해석](https://man7.org/linux/man-pages/man7/path_resolution.7.html) `/home`은 일반 사용자 데이터, `/etc`는 시스템 설정, `/dev`는 장치 접근, `/proc`는 실행 중인 시스템 정보를 다루는 데 사용됩니다. 읽기·쓰기·실행 권한은 소유자, 그룹, 그 외 사용자로 나뉩니다. 디렉터리의 실행 권한은 그 경로를 통과할 수 있는 권한입니다.
 
 패키지 관리자는 의존성과 설치 파일을 함께 관리합니다. Ubuntu·Debian은 APT, Fedora는 DNF, Arch Linux는 pacman을 사용합니다. 배포판 패키지와 Python의 pip 패키지는 관리 범위가 다릅니다.
 
@@ -75,7 +75,7 @@ A pipe, `|`, sends one program's standard output to the next program's standard 
 
 ### Files and permissions
 
-Linux paths begin at `/`. `/home` holds user data, `/etc` contains system configuration, `/dev` exposes devices, and `/proc` provides information about the running system. Read, write, and execute permissions are assigned separately to the owner, group, and other users. Execute permission on a directory allows traversal through it.
+Absolute Linux paths begin at `/`; relative paths are resolved from a base such as the current directory. [Linux path resolution](https://man7.org/linux/man-pages/man7/path_resolution.7.html) `/home` holds user data, `/etc` contains system configuration, `/dev` exposes devices, and `/proc` provides information about the running system. Read, write, and execute permissions are assigned separately to the owner, group, and other users. Execute permission on a directory allows traversal through it.
 
 Package managers track installed files and their dependencies. Ubuntu and Debian use APT, Fedora uses DNF, and Arch Linux uses pacman. Distribution packages and Python packages installed with pip belong to different management layers.
 

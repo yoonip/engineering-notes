@@ -6,7 +6,7 @@
 
 한 개의 직선으로 나눌 수 없는 데이터가 있습니다. 두 입력의 부호가 다를 때만 1인 XOR가 작은 예입니다. 입력을 직선으로 분류하는 대신 여러 중간 특징을 만들고 이를 조합하면 경계를 구부릴 수 있습니다. MLP의 은닉층은 이런 중간 특징을 계산합니다. 역전파는 그 특징을 만드는 가중치까지 손실의 변화량을 전달합니다.
 
-여기서는 입력 2개, tanh 은닉 unit 3개, 출력 2개를 사용합니다. 복잡한 모델의 성능을 주장하기 위한 데이터가 아니라 모든 매개변수의 계산을 펼쳐 볼 수 있는 크기입니다. 학습할 수는 입력 가중치 6개, 은닉 bias 3개, 출력 가중치 6개, 출력 bias 2개로 총 17개입니다. 비선형 함수를 빼면 두 affine 층의 합성도 다시 하나의 affine 변환이므로 은닉층 개수만 늘린 효과를 얻지 못합니다. [Stanford CS231n의 계산 그래프](https://cs231n.github.io/optimization-2/), [CS224n 신경망 강의](https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes03-neuralnets.pdf)
+여기서는 입력 2개, tanh 은닉 unit 3개, 출력 2개를 사용합니다. 복잡한 모델의 성능을 주장하기 위한 데이터가 아니라 모든 매개변수의 계산을 펼쳐 볼 수 있는 크기입니다. 학습하는 매개변수는 입력 가중치 6개, 은닉 bias 3개, 출력 가중치 6개, 출력 bias 2개로 총 17개입니다. 비선형 함수를 빼면 두 affine 층의 합성도 다시 하나의 affine 변환이므로 은닉층 개수만 늘린 효과를 얻지 못합니다. [Stanford CS231n의 계산 그래프](https://cs231n.github.io/optimization-2/), [CS224n 신경망 강의](https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes03-neuralnets.pdf)
 
 ## 순전파와 손실
 

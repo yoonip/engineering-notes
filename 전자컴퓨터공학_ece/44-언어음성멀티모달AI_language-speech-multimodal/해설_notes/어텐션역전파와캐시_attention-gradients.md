@@ -6,7 +6,7 @@
 
 Attention의 출력은 value의 가중합입니다. 학습에서는 value만 바꾸는 것이 아니라 어떤 key를 더 볼지 정하는 query·key도 바뀝니다. 출력이 조금 변할 때 손실이 얼마나 달라지는지 알면 이 세 경로로 기울기를 되돌릴 수 있습니다.
 
-여기서는 query 한 개 $`q\in\mathbb R^d`$, key n개, value 폭 r을 다룹니다. Dropout, 여러 head, projection weight와 layer norm은 포함하지 않습니다. K와 V는 같은 위치 수를 가지지만 d와 r은 달라도 됩니다. Scaled dot-product의 정의는 원 논문과 PyTorch 연산 정의를 대조했습니다. [Attention Is All You Need `3.2](https://arxiv.org/pdf/1706.03762), [PyTorch SDPA](https://docs.pytorch.org/docs/2.9/generated/torch.nn.functional.scaled_dot_product_attention.html)
+여기서는 query 한 개 $`q\in\mathbb R^d`$, key n개, value 폭 r을 다룹니다. Dropout, 여러 head, projection weight와 layer norm은 포함하지 않습니다. K와 V는 같은 위치 수를 가지지만 d와 r은 달라도 됩니다. Scaled dot-product의 정의는 원 논문과 PyTorch 연산 정의를 대조했습니다. [Attention Is All You Need §3.2](https://arxiv.org/pdf/1706.03762), [PyTorch SDPA](https://docs.pytorch.org/docs/2.9/generated/torch.nn.functional.scaled_dot_product_attention.html)
 
 ```math
 s_j=\frac{q^Tk_j}{\sqrt d},\qquad

@@ -81,4 +81,4 @@ These runs execute CPU address and resource arithmetic. Real GPU evaluation firs
 ## 출처 / Sources
 
 - [NVIDIA, Writing SIMT Kernels](https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/writing-cuda-kernels.html): memory scope, block cooperation and barriers.
-- [NVIDIA, CUDA Best Practices `10.2.3](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#shared-memory): tile reuse, 32-bit bank mapping and transpose padding. 확인 / checked: 2026-10-19.
+- [NVIDIA, CUDA Best Practices §10.2.3](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#shared-memory): tile reuse, 32-bit bank mapping and transpose padding. 확인 / checked: 2026-10-19.

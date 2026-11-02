@@ -100,5 +100,5 @@ These values are calculation examples, not physical measurement records. A repro
 
 - Keithley, *Making Precision Low Current and High Resistance Measurements* 및 *Low Level Measurements Handbook*, §1.5.6·§2.4: SMU·force/sense·연결의 영향 / SMU, force/sense and connection effects.
 - Tektronix, *ABCs of Probes*, §§4–5: 저항·정전용량 부하와 단일 RC 상승 시간 / resistive/capacitive loading and single-RC rise time.
-- NIST TN 1297, §5 and Appendix A: 보정·공분산·1차 불확도 전파 / corrections, covariance and first-order uncertainty propagation. 장비 자료의 부하 모델과 NIST의 불확도 개념을 구분해 적용했다 / instrument loading models and NIST uncertainty concepts were applied as distinct parts of the measurement model.
-- 그림·계산 예제·표본 검산은 직접 구성했다 / diagram, calculation examples and sampling checks constructed here. 출처 확인 / sources checked: 2026-10-19.
+- NIST TN 1297, §5 and Appendix A: 보정·공분산·1차 불확도 전파 / corrections, covariance and first-order uncertainty propagation. 장비 자료의 부하 모델과 NIST의 불확도 개념을 구분해 적용했습니다 / instrument loading models and NIST uncertainty concepts were applied as distinct parts of the measurement model.
+- 그림·계산 예제·표본 검산은 직접 구성했습니다 / diagram, calculation examples and sampling checks constructed here. 출처 확인 / sources checked: 2026-10-19.

@@ -18,7 +18,7 @@
 |S|=1+2+2^2=7.
 ```
 
-매 cycle 입력은 valid, data, ready입니다. 세 입력을 각각 1비트로 훑으면 상태 하나당 8가지입니다. input ready는 갱신 전 occupancy가 2보다 작은지로 결정합니다. output valid도 갱신 전 상태가 비어 있지 않은지로 결정합니다. 이 queue는 full 상태에서 pop과 동시에 새 push를 받아 throughput을 높이는 bypass 최적화를 포함하지 않습니다.
+매 cycle 입력은 valid, data, ready입니다. 세 입력을 각각 1비트로 훑으면 상태 하나당 8가지입니다. input ready는 갱신 전 occupancy가 2보다 작은지로 결정합니다. output valid도 갱신 전 상태가 비어 있지 않은지로 결정합니다. 이 queue는 full 상태에서 pop과 동시에 새 push를 받아 처리율을 높이는 최적화를 포함하지 않습니다.
 
 ```math
 p_{in}=valid\land(n\lt2),\qquad p_{out}=ready\land(n>0),
