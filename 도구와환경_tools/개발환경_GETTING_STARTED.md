@@ -20,10 +20,10 @@ Linux·WSL은 운영체제 실행 환경과 관련되고, GCC·Clang은 컴파�
 가상환경은 프로젝트가 사용할 Python 실행 파일과 라이브러리를 구분하는 디렉터리입니다. 운영체제를 새로 만드는 가상 머신과는 다릅니다. 아래 명령은 Python이 설치되어 있고 `python` 명령으로 실행되는 경우의 예입니다. 작업할 프로젝트 디렉터리에서 한 줄씩 실행합니다.
 
 ```powershell
-python --version
-python -m venv .venv
-.\.venv\Scripts\python.exe -c "import sys; print(sys.executable)"
-.\.venv\Scripts\python.exe -m pip --version
+python --version  # --version 옵션으로 현재 Python 버전을 표시합니다.
+python -m venv .venv  # -m으로 venv 모듈을 실행해 .venv 환경을 만듭니다.
+.\.venv\Scripts\python.exe -c "import sys; print(sys.executable)"  # -c의 코드를 실행해 환경의 Python 경로를 출력합니다.
+.\.venv\Scripts\python.exe -m pip --version  # 해당 Python의 pip 모듈을 실행해 버전과 설치 경로를 확인합니다.
 ```
 
 `--version`은 버전을 표시하는 옵션입니다. `-m venv`는 선택한 Python으로 표준 라이브러리의 venv 모듈을 실행합니다. `.venv`는 생성할 디렉터리 이름입니다. `-c` 뒤의 문자열은 짧게 실행할 Python 코드입니다. `import sys`는 실행 환경 정보를 제공하는 표준 모듈을 불러오고, `sys.executable`은 현재 실행 파일의 경로를 나타냅니다.
@@ -70,7 +70,7 @@ A development environment combines an operating system, tools, dependencies, and
 
 ### How the layers fit together
 
-Linux and WSL provide operating environments. GCC and Clang are compilers; Python is an interpreter. venv and Conda separate project dependencies. A Jupyter kernel is the process that actually runs notebook code. GPU work adds compatibility requirements between the driver, runtime, and framework.
+Linux and WSL provide operating environments. GCC and Clang are compilers. Python is a language; implementations such as CPython execute Python code. venv and Conda separate project dependencies. A Jupyter kernel is the process that actually runs notebook code. GPU work adds compatibility requirements between the driver, runtime, and framework.
 
 - [Linux and Bash](../전자컴퓨터공학_ece/01-linux-bash/README.md)
 - [Git and build tools](../전자컴퓨터공학_ece/02-개발도구_git-development-tools/README.md)
