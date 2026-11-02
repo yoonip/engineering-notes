@@ -7,6 +7,8 @@
 | 공학기초_foundations/ | 기초·분야별·심화 학습과 용어·계산 검증 |
 | 전자컴퓨터공학_ece/ | 수학·물리·회로·컴퓨터 구조·SW·통신·제어·AI의 전공별 해설 |
 | 반도체제조공정_semiconductor-fabrication/ | 반도체 8대 공정의 원리·장비·재료·결함·계측과 제품별 공정 통합 |
+| 반도체설계_semiconductor-design/ | 아날로그·디지털·메모리 설계, EDA 도구와 칩 구현 흐름 |
+| 장애를극복하는기술_disability-technology/ | 신체 기능의 회복·대체·지원을 위한 공학 기술과 연구 |
 | 산업별전자와컴퓨팅_industry-systems/ | 자동차·방산항공우주·해양조선·발전·산업설비 등의 시스템과 공통 기술 |
 | 직무와실무기술_job-practice/ | 제품 개발·반도체 설계·제조·평가·운영의 업무와 검사·공개 코드 |
 | 학습사이트와채널_learning-resources/ | 전공 강의·기관 자료·기술 해설·외국어 학습의 외부 자료 |
@@ -15,6 +17,10 @@
 | 인문사회_humanities/ | 철학·경제·사회·법·역사·음악·문학·예술·미술 |
 | 논문해설_papers/ | 개별 논문의 수식·구현·주장 분석 |
 | 기술동향_technology/ | 날짜가 있는 기술 현황과 비교 |
+| 뉴스_news/ | 국내·세계 주요 뉴스와 날짜별 원문 링크 |
+| AI모델동향_ai-model-updates/ | 공개된 모델 발표·기술 자료와 출처 |
+| 미래경제보고서_future-economic-reports/ | 경제·산업·기술 전망 보고서와 해설 |
+| 인기GitHub프로젝트_github-weekly/ | 주간 프로젝트 소개, 사용 예시와 공식 자료 |
 | 제품기술분석_product-technology/ | 공개 자료에 근거한 제품·서비스·산업 시스템의 원리·사양·비교 조건 분석 |
 | AI모델과수치실험_ai-models/ | models의 모델 자료, frameworks의 연산 도구, experiments의 자체 수치 계산 |
 | 현장계측과검증_measurement-validation/ | 계측기 사용 조건, 측정 절차와 검증 방법 |
@@ -35,4 +41,4 @@
 
 ## English
 
-The root navigation separates engineering subjects, industry systems, technical roles, reading and reasoning, languages, humanities, paper studies, dated technology developments and product/system analysis. AI models, computation frameworks and numerical experiments have separate locations. Instruments, engineering fault cases, code examples, projects, research, author information, tools, figures and references each have a defined scope. JSON retains machine-readable paths while Markdown provides readable indexes.
+The root navigation separates engineering subjects, industry systems, technical roles, reading and reasoning, languages, humanities, paper studies, dated technology developments and product/system analysis. Semiconductor design and technologies for restoring or supporting bodily functions have their own categories. News, model announcements, economic and technology outlook reports, and weekly GitHub project introductions are also separate. AI models, computation frameworks and numerical experiments have separate locations. Instruments, engineering fault cases, code examples, projects, research, author information, tools, figures and references each have a defined scope. JSON retains machine-readable paths while Markdown provides readable indexes.
