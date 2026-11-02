@@ -169,6 +169,31 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual(path.read_bytes(), expected)
         self.assertEqual(json_path.read_bytes(), original_json)
 
+    def test_detailed_publication_fetches_and_preserves_pinned_readme_sources(self):
+        def readme_for(repo, token, getter):
+            return {'status': 'ok', 'text': '## 기능\n공식 기능을 설명하는 한국어 문서입니다.\n## 설치\nPython을 준비합니다.\n```sh\nrun-official-example\n```',
+                    'sha': str(repo['id']) * 40, 'commit': 'a' * 40, 'path': 'README.md',
+                    'source_url': repo['html_url'] + '/blob/' + 'a' * 40 + '/README.md',
+                    'fetched_at': '2026-11-02T00:00:00+00:00'}
+        with patch.object(weekly, 'get', return_value=(trending_html(), weekly.TRENDING)), \
+             patch.object(weekly, 'repository', side_effect=lambda slug, token: metadata(int(slug.rsplit('-', 1)[1]))), \
+             patch.object(weekly.guides, 'fetch_readme', side_effect=readme_for), \
+             patch.object(weekly.guides, 'linked_documents', return_value=[]):
+            weekly.collect(self.output, self.now, '', {}, self.cache, details={})
+        data = json.loads((self.output / '주간기록/2026/11/2026-11-02.json').read_text(encoding='utf8'))
+        self.assertTrue(all('guide' in item and 'readme' in item for item in data['items']))
+        self.assertNotIn('text', data['items'][0]['readme'])
+        self.assertEqual(data['items'][0]['guide']['install_code']['code'], 'run-official-example')
+
+    def test_readme_failure_cannot_publish_a_partial_detailed_week(self):
+        with patch.object(weekly, 'get', return_value=(trending_html(), weekly.TRENDING)), \
+             patch.object(weekly, 'repository', return_value=metadata(1)), \
+             patch.object(weekly.guides, 'fetch_readme', side_effect=TimeoutError('README unavailable')):
+            with self.assertRaises(TimeoutError):
+                weekly.collect(self.output, self.now, '', {}, self.cache, details={})
+        self.assertFalse(self.output.exists())
+        self.assertFalse(self.cache.exists())
+
 
 class ContentTests(unittest.TestCase):
     def test_markdown_and_html_from_descriptions_are_displayed_as_text(self):

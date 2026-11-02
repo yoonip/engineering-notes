@@ -15,6 +15,7 @@ from urllib.parse import urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 from bs4 import BeautifulSoup
+import guides
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -176,6 +177,9 @@ def render_entry(item: dict, numbered: bool = True) -> str:
     lines = [f"## {prefix}{repo['full_name']}", '', clean(intro['text']), '']
     if intro.get('detail'):
         lines.extend([clean(intro['detail']), ''])
+    if item.get('guide'):
+        lines.extend(guides.render_guide(item['guide'], clean))
+    lines.extend(['### 저장소 정보', ''])
     lines.extend([f"- [저장소]({repo['html_url']}) · [README]({repo['html_url']}#readme) · [소개 근거]({intro['source_url']})",
                   f"- 주요 언어: {clean(repo.get('language') or '미표기')} · 라이선스: {clean(license_id)}",
                   f"- 누적 별: {repo['stargazers_count']:,}개 · 포크: {repo['forks_count']:,}개",
@@ -212,7 +216,7 @@ def update_index(output: Path) -> None:
     (output / '주간기록' / 'README.md').write_text('\n'.join(lines), encoding='utf-8')
 
 
-def collect(output: Path, now: datetime, token: str, reviewed: dict, cache_path: Path) -> dict:
+def collect(output: Path, now: datetime, token: str, reviewed: dict, cache_path: Path, details: dict | None = None) -> dict:
     start = week_start(now)
     target = output / '주간기록' / f'{start.year:04d}' / f'{start.month:02d}' / start.strftime('%Y-%m-%d')
     # 발행된 같은 주는 그대로 두므로 재실행으로 과거 순위가 바뀌지 않습니다.
@@ -234,6 +238,16 @@ def collect(output: Path, now: datetime, token: str, reviewed: dict, cache_path:
             raise ValueError('Redirected duplicate repository')
         identities.add(repo['id'])
         row.update(repository=repo, introduction=introductions.for_repo(repo))
+        if details is not None:
+            readme = guides.fetch_readme(repo, token, get)
+            detail_map = {k.casefold(): v for k, v in details.items()}
+            manual = detail_map.get(repo['full_name'].casefold(), {})
+            if manual.get('repository_id') != repo['id'] or manual.get('readme_sha') != readme['sha']:
+                readme['documents'] = guides.linked_documents(repo, readme, token, get)
+            row['readme'] = {key: value for key, value in readme.items() if key not in ('text', 'documents')}
+            row['readme']['documents'] = [{k: v for k, v in document.items() if k != 'text'}
+                                        for document in readme.get('documents', [])]
+            row['guide'] = guides.make_guide(repo, readme, detail_map, introductions)
     stamp = now.astimezone(KST).isoformat(timespec='seconds')
     data = {'schema_version': 1, 'label': label(start), 'week_start': start.date().isoformat(),
             'collected_at': stamp, 'source_url': final_url, 'source_sha256': hashlib.sha256(raw).hexdigest(),
@@ -261,7 +275,8 @@ def main() -> None:
     parser.add_argument('--report', type=Path)
     args = parser.parse_args()
     reviewed = json.loads((HERE / 'reviewed.json').read_text(encoding='utf-8'))
-    result = collect(args.output, datetime.now(KST), os.environ.get('GITHUB_TOKEN', ''), reviewed, HERE / 'translations.json')
+    details = json.loads((HERE / 'details.json').read_text(encoding='utf-8'))
+    result = collect(args.output, datetime.now(KST), os.environ.get('GITHUB_TOKEN', ''), reviewed, HERE / 'translations.json', details)
     if args.report:
         write_json(args.report, result)
     print(json.dumps(result, ensure_ascii=False))

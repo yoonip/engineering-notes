@@ -38,6 +38,73 @@
         "detail": "페이지의 목적에 맞게 화면을 구성하고 대비·초점·모바일 배치를 검사하도록 안내합니다. 디자인 방향을 코드와 화면 확인으로 연결하는 절차를 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
         "source_url": "https://github.com/Nutlope/hallmark#readme"
+      },
+      "guide": {
+        "audience_ko": [
+          "코딩 에이전트로 새 웹페이지를 만들면서 시각적 방향과 실제 동작 검사를 함께 적용하려는 프런트엔드 개발자에게 유용합니다.",
+          "기존 페이지의 내용과 연결 기능을 유지하면서 디자인을 재구성하거나 점검하려는 제작자에게 적합합니다."
+        ],
+        "features_ko": [
+          "요청 목적에 맞춰 테마·페이지 구성을 정하고 실제 이미지와 제품 자료를 활용해 화면을 만드는 흐름을 제공합니다.",
+          "대비·키보드 초점·동작 감소 설정·반응형 화면과 링크·폼 등 구현 결과를 검사합니다.",
+          "redesign은 기존 내용을 유지하면서 재설계하고 audit은 보고서를 만듭니다. 기존 디자인을 바꿀 때에는 대상 경로를 명시합니다."
+        ],
+        "prerequisites_ko": [
+          "현재 README 기준 Node.js 18 이상과 스킬을 지원하는 코딩 에이전트가 필요합니다.",
+          "실제 브라우저 스크린샷·렌더 검사를 하려면 Chrome과 puppeteer-core가 추가로 필요합니다. 정적 검사만 실행하는 경우와 구분합니다."
+        ],
+        "install_steps_ko": [
+          "공식 npx skills 명령으로 설치합니다. -g는 여러 프로젝트에서 사용할 전역 설치이며 현재 프로젝트에만 넣으려면 공식 안내대로 -g를 생략합니다.",
+          "사용하는 에이전트가 hallmark 스킬을 불러오는지 확인합니다. Claude Code·Cursor에서는 /hallmark, Codex CLI에서는 $hallmark 형태로 호출합니다.",
+          "브라우저 검사를 사용할 경우 README의 npm i -g puppeteer-core 안내와 Chrome 설치 조건을 준비합니다."
+        ],
+        "install_code": {
+          "language": "bash",
+          "code": "npx skills add nutlope/hallmark -g",
+          "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#install"
+        },
+        "example_steps_ko": [
+          "공식 README의 기존 페이지 점검 예시는 아래와 같습니다. 경로는 작업할 실제 프로젝트의 경로에 맞춥니다.",
+          "audit 결과에서 링크·입력·키보드 초점·반응형 배치 등 확인 항목을 읽고 필요한 변경을 결정합니다.",
+          "redesign을 선택하면 기존 내용과 연결 기능을 기록한 뒤 레이아웃을 바꿉니다. 전후 화면과 링크·폼 동작이 유지됐는지 함께 확인합니다."
+        ],
+        "example_code": {
+          "language": "text",
+          "code": "/hallmark redesign ./src/app\n/hallmark audit ./index.html",
+          "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#redesign"
+        },
+        "sources": [
+          {
+            "title": "공식 README 고정 판본 (4f6a46c6dc32)",
+            "url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md"
+          },
+          {
+            "url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#install",
+            "title": "공식 설치 명령·에이전트별 호출·실행 환경"
+          },
+          {
+            "url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#redesign",
+            "title": "공식 재설계·점검 명령 예시"
+          },
+          {
+            "url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md#how-a-build-runs",
+            "title": "공식 제작과 브라우저 검사 흐름"
+          }
+        ],
+        "checked_at": "2026-11-02",
+        "repository_id": 1222917575,
+        "readme_sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
+        "readme_commit": "4f6a46c6dc325d40ab268c93e25c7b96676ebccd",
+        "method": "공식 문서 한국어 해설",
+        "readme_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
+        "commit": "4f6a46c6dc325d40ab268c93e25c7b96676ebccd",
+        "path": "README.md",
+        "source_url": "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md",
+        "fetched_at": "2026-11-02T00:12:45.235639+00:00"
       }
     },
     {
@@ -76,6 +143,61 @@
         "detail": "polish·bolder·critique·audit 같은 작업으로 시각적 방향과 UI 품질을 조정합니다. 디자인 지침과 실제 검토 명령이 어떻게 연결되는지 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
         "source_url": "https://github.com/pbakaus/impeccable#readme"
+      },
+      "guide": {
+        "audience_ko": [
+          "화면 구현은 가능하지만 디자인 방향을 말로 구체화하거나 검토하기 어려운 프런트엔드 개발자에게 유용합니다.",
+          "기존 제품의 가격표·가입 흐름·설정 화면처럼 범위가 분명한 UI를 점검하려는 팀에 적합합니다."
+        ],
+        "features_ko": [
+          "critique는 사용성과 시각적 완성도를 검토하고, audit는 접근성·성능·테마·반응형 문제를 정리합니다.",
+          "bolder·quieter·polish 등 디자인 방향과 마무리 작업을 구체적인 명령으로 제공합니다.",
+          "프로젝트 목적을 PRODUCT.md에, 기존 시각 규칙을 DESIGN.md에 기록해 후속 작업이 같은 맥락을 사용하도록 합니다."
+        ],
+        "prerequisites_ko": [
+          "npx 설치 경로에는 Node.js가 필요하며, 사용할 코딩 도구가 스킬 또는 플러그인 설치를 지원해야 합니다.",
+          "아래 slash 예시는 Claude Code 계열 호출이며 Codex에서는 README가 안내하는 $impeccable 호출을 사용합니다."
+        ],
+        "install_steps_ko": [
+          "적용할 프로젝트의 루트 디렉터리에서 아래 설치 명령을 실행합니다.",
+          "설치 프로그램이 감지한 코딩 도구와 프로젝트·전역 범위를 선택합니다. 훅을 지원하는 호스트에서는 해당 설정도 확인합니다.",
+          "코딩 도구를 다시 열고 impeccable init을 실행해 프로젝트 목적을 정리합니다. Codex의 훅은 /hooks에서 신뢰해야 적용됩니다."
+        ],
+        "install_code": {
+          "language": "sh",
+          "code": "npx impeccable install",
+          "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#installation"
+        },
+        "example_steps_ko": [
+          "가격 요금제 카드의 위계·대비·문구가 불명확한 화면에서 아래 공식 critique 예시를 실행합니다.",
+          "검토 결과의 우선순위를 읽고 카드 한 영역씩 수정합니다. 전체 사이트를 한 번에 바꾸기보다 대상을 명확히 지정합니다.",
+          "수정한 화면에서 모바일 배치·키보드 초점·대비를 확인하고, 필요한 경우 audit 또는 polish로 후속 검토합니다."
+        ],
+        "example_code": {
+          "language": "text",
+          "code": "/impeccable critique the pricing cards",
+          "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#why"
+        },
+        "sources": [
+          {
+            "title": "공식 README 고정 판본 (e89e3ada3e87)",
+            "url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md"
+          }
+        ],
+        "checked_at": "2026-11-02",
+        "repository_id": 1097346685,
+        "readme_sha": "8f27aa965cb56ab578d637e53f0392ae4e2d06db",
+        "readme_commit": "e89e3ada3e875a89ac2c5d33d11e65ebef6fe285",
+        "method": "공식 문서 한국어 해설",
+        "readme_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "8f27aa965cb56ab578d637e53f0392ae4e2d06db",
+        "commit": "e89e3ada3e875a89ac2c5d33d11e65ebef6fe285",
+        "path": "README.md",
+        "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md",
+        "fetched_at": "2026-11-02T00:12:38.219497+00:00"
       }
     },
     {
@@ -116,6 +238,73 @@
         "detail": "크롤링·색인·리디렉션·사이트맵·페이지 속도·구조화 데이터를 검사하고 작업 우선순위를 정리합니다. 검색 순위를 보장하는 서비스가 아니라 점검 항목과 실행 흐름을 제공하는 도구입니다.",
         "method": "README 해설 (2026-11-02 확인)",
         "source_url": "https://github.com/AgriciDaniel/claude-seo#readme"
+      },
+      "guide": {
+        "checked_at": "2026-11-02",
+        "audience_ko": [
+          "회사 사이트·쇼핑몰·블로그를 운영하면서 검색엔진이 페이지를 제대로 읽고 색인하는지 확인하려는 개발자와 콘텐츠 담당자에게 유용합니다.",
+          "검색 문제를 기술·콘텐츠·구조화 데이터·속도로 나누고, 수정 우선순위와 확인 방법을 함께 정리하려는 팀에 적합합니다."
+        ],
+        "features_ko": [
+          "크롤링과 색인, 리디렉션, 사이트맵, 페이지 속도, hreflang, Schema.org 구조화 데이터 등을 항목별로 검사합니다.",
+          "사이트의 사업 유형을 고려해 여러 전문 에이전트가 검사하고, 결과를 Markdown 보고서와 우선순위가 있는 실행 계획으로 묶습니다.",
+          "선택 기능으로 Google 관련 API와 외부 SEO 데이터를 연결할 수 있으며, 연결 기능의 인증 조건은 별도로 적용됩니다."
+        ],
+        "prerequisites_ko": [
+          "공식 README 기준 Claude Code 1.0.33 이상이 필요합니다. 아래 슬래시 명령은 일반 PowerShell이 아니라 Claude Code 대화창에 입력합니다.",
+          "/seo setup이 이 플러그인용 Python 환경과 headless Chromium을 준비합니다. 검사에는 Claude Code의 모델 사용 환경이 필요합니다."
+        ],
+        "install_steps_ko": [
+          "Claude Code에서 공식 저장소를 플러그인 마켓플레이스로 추가합니다.",
+          "claude-seo 플러그인을 설치한 뒤 /seo setup으로 검사 실행 환경을 준비합니다.",
+          "/seo doctor를 실행해 준비 상태를 확인합니다."
+        ],
+        "install_code": {
+          "language": "text",
+          "code": "/plugin marketplace add AgriciDaniel/claude-seo\n/plugin install claude-seo@agricidaniel-claude-seo\n/seo setup",
+          "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#install"
+        },
+        "example_steps_ko": [
+          "회사 홈페이지를 점검한다면 아래 공식 명령의 <url>을 검사할 사이트 주소로 바꾸어 실행합니다.",
+          "생성된 보고서에서 색인 차단·잘못된 리디렉션 같은 기술 문제와 콘텐츠·구조화 데이터 문제를 구분해 읽습니다.",
+          "보고서의 근거와 검증 방법을 확인하고 실제 사이트를 수정한 뒤 같은 검사로 변화를 비교합니다. 보고서 점수 자체가 검색 순위 상승을 보장하지는 않습니다."
+        ],
+        "example_code": {
+          "language": "text",
+          "code": "/seo audit <url>\n/seo doctor",
+          "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#commands"
+        },
+        "sources": [
+          {
+            "title": "공식 README 고정 판본 (6be93f45064f)",
+            "url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md"
+          },
+          {
+            "url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#install",
+            "title": "공식 설치와 실행 환경"
+          },
+          {
+            "url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#commands",
+            "title": "공식 명령 목록"
+          },
+          {
+            "url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md#how-an-audit-works",
+            "title": "감사 과정과 보고서"
+          }
+        ],
+        "repository_id": 1152014594,
+        "readme_sha": "70b98e1ad7cd3aa7228781bbd12458e1a15577ce",
+        "readme_commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+        "method": "공식 문서 한국어 해설",
+        "readme_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "70b98e1ad7cd3aa7228781bbd12458e1a15577ce",
+        "commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+        "path": "README.md",
+        "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md",
+        "fetched_at": "2026-11-02T00:12:46.151961+00:00"
       }
     },
     {
@@ -169,6 +358,68 @@
         "detail": "검색 도구와 뷰어로 과거 관찰을 확인하고 문맥에 포함할 내용을 설정합니다. 이 프로젝트 자체의 요약 기능은 AI를 사용하므로 제공자 설정과 비용 조건을 살펴야 합니다.",
         "method": "README 해설 (2026-11-02 확인)",
         "source_url": "https://github.com/thedotmack/claude-mem#readme"
+      },
+      "guide": {
+        "checked_at": "2026-11-02",
+        "audience_ko": [
+          "여러 날에 걸쳐 같은 코드베이스를 다루며 이전 세션의 결정·수정 이유·버그 해결 과정을 다시 찾는 개발자에게 유용합니다.",
+          "긴 대화 전체를 매번 다시 넣기보다 필요한 관찰 기록부터 검색하고 관련 내용만 읽게 하려는 에이전트 사용자에게 적합합니다."
+        ],
+        "features_ko": [
+          "세션 시작·도구 사용·세션 종료 같은 이벤트를 훅으로 기록하고, 관찰과 요약을 다음 작업의 문맥으로 연결합니다.",
+          "로컬 worker·웹 뷰어·SQLite 기록과 검색 도구를 제공하며, 검색 결과의 짧은 목록에서 필요한 기록의 자세한 내용으로 들어가는 방식입니다.",
+          "메모리 요약에는 AI 제공자를 사용합니다. 이 프로젝트를 이용하는 모델·호스팅 비용은 GitHub 주간 소개를 수집하는 비용과 별개입니다."
+        ],
+        "prerequisites_ko": [
+          "공식 README의 시스템 요구사항은 Node.js 20 이상과 플러그인 기능을 지원하는 최신 Claude Code입니다.",
+          "Bun과 uv는 필요하면 설치기가 준비하며 SQLite가 포함됩니다. 설치 뒤 메모리 제공자와 인증·요금 조건을 선택해야 합니다."
+        ],
+        "install_steps_ko": [
+          "Node.js와 npm이 PATH에서 실행되는 환경에서 공식 설치 명령을 실행합니다.",
+          "설치기의 안내에 따라 메모리 제공자를 선택합니다. 기본 설치는 브라우저 로그인 과정을 안내할 수 있습니다.",
+          "터미널이나 IDE를 다시 열어 실행 경로 변경을 반영하고 새 세션에서 메모리 기능을 사용합니다."
+        ],
+        "install_code": {
+          "language": "bash",
+          "code": "npx claude-mem install",
+          "source_url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md#quick-start"
+        },
+        "example_steps_ko": [
+          "이전에 고친 인증 오류를 다시 조사할 때 mem-search에 authentication bug처럼 찾을 주제를 전달합니다.",
+          "에이전트는 search로 관련 기록의 ID 목록을 먼저 확인하고, timeline으로 당시 작업 맥락을 살핀 뒤 get_observations로 선택한 기록만 읽습니다.",
+          "과거 요약에 적힌 판단을 현재 코드·로그와 대조해 수정 근거로 사용합니다. 예전 세션의 기록은 현재 코드 상태를 자동으로 입증하지 않습니다."
+        ],
+        "sources": [
+          {
+            "title": "공식 README 고정 판본 (c239a048a8a0)",
+            "url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md"
+          },
+          {
+            "url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md#quick-start",
+            "title": "공식 설치와 제공자 설정"
+          },
+          {
+            "url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md#system-requirements",
+            "title": "시스템 요구사항"
+          },
+          {
+            "url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md#mcp-search-tools",
+            "title": "검색 도구와 authentication bug 사용 예시"
+          }
+        ],
+        "repository_id": 1048065319,
+        "readme_sha": "e6095776b1697376286db94962ccf52d17a2687a",
+        "readme_commit": "c239a048a8a07607148f4c1f26b258ccfb28b80d",
+        "method": "공식 문서 한국어 해설",
+        "readme_url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "e6095776b1697376286db94962ccf52d17a2687a",
+        "commit": "c239a048a8a07607148f4c1f26b258ccfb28b80d",
+        "path": "README.md",
+        "source_url": "https://github.com/thedotmack/claude-mem/blob/c239a048a8a07607148f4c1f26b258ccfb28b80d/README.md",
+        "fetched_at": "2026-11-02T00:12:47.095511+00:00"
       }
     },
     {
@@ -201,6 +452,65 @@
         "detail": "서로 독립적인 검증 역할, 구조화된 findings.json과 감사 범위 기록을 사용합니다. 어떤 코드를 조사했는지와 취약점 근거가 무엇인지 남기는 흐름을 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
         "source_url": "https://github.com/cloudflare/security-audit-skill#readme"
+      },
+      "guide": {
+        "audience_ko": [
+          "자신이 관리하는 코드의 입력 경계·인증·데이터 격리·의존성 등을 체계적으로 검토하려는 개발자와 보안 담당자에게 유용합니다.",
+          "발견한 취약점 후보를 근거와 함께 기록하고 다른 검증자가 재확인할 수 있게 만들려는 팀에 적합합니다."
+        ],
+        "features_ko": [
+          "구조·신뢰 경계·입력면을 파악한 뒤 조사 범위를 나누고, 후보를 독립 검증하는 단계별 감사 흐름을 제공합니다.",
+          "findings.json에 확인·추가 검증 필요·기각 상태를 구분하고, 범위 장부와 결과 보고서를 생성합니다.",
+          "Node.js 검증기로 결과 형식과 범위 기록의 일관성을 확인합니다."
+        ],
+        "prerequisites_ko": [
+          "도구 사용과 병렬 하위 에이전트를 지원하는 모델·코딩 에이전트가 필요합니다.",
+          "결과·범위 검증기를 실행할 Node.js와 검사할 코드베이스가 필요합니다."
+        ],
+        "install_steps_ko": [
+          "Skills CLI를 통해 아래 명령으로 security-audit 스킬을 설치합니다.",
+          "사용할 에이전트 선택과 비대화형 설치 옵션은 npx skills --help에서 확인합니다.",
+          "검사할 프로젝트 디렉터리에서 에이전트를 시작하거나 해당 코드베이스를 대상으로 지정합니다."
+        ],
+        "install_code": {
+          "language": "sh",
+          "code": "npx skills add https://github.com/cloudflare/security-audit-skill \\\n  --skill security-audit",
+          "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#installation"
+        },
+        "example_steps_ko": [
+          "프로젝트의 src 경로를 먼저 검사하려는 상황에서는 아래의 공식 요청 예시를 에이전트에 입력합니다.",
+          "에이전트가 파악한 구조·입력면·조사 범위를 확인하고, 후보별 코드 위치와 검증 결과를 읽습니다.",
+          "findings.json과 보고서에서 confirmed·needs_validation·rejected를 구분합니다. 미해결 후보를 확정된 취약점으로 취급하지 않습니다."
+        ],
+        "example_code": {
+          "language": "text",
+          "code": "find security vulnerabilities in ./src",
+          "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#usage"
+        },
+        "sources": [
+          {
+            "title": "공식 README 고정 판본 (c1c8a8c14710)",
+            "url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md"
+          },
+          {
+            "title": "공식 스킬·검증기 파일",
+            "url": "https://github.com/cloudflare/security-audit-skill/tree/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/skills/security-audit"
+          }
+        ],
+        "checked_at": "2026-11-02",
+        "repository_id": 1273427276,
+        "readme_sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+        "readme_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+        "method": "공식 문서 한국어 해설",
+        "readme_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+        "commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+        "path": "README.md",
+        "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
+        "fetched_at": "2026-11-02T00:12:35.809307+00:00"
       }
     },
     {
@@ -242,6 +552,64 @@
         "detail": "작업을 작은 단위로 나누고 테스트 주도 개발과 코드 검토를 반복하는 흐름을 제공합니다. 개별 스킬의 호출 조건과 결과물을 순서대로 읽어볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
         "source_url": "https://github.com/obra/superpowers#readme"
+      },
+      "guide": {
+        "checked_at": "2026-11-02",
+        "audience_ko": [
+          "코딩 에이전트가 구현 전에 요구사항과 설계를 확인하고 테스트·리뷰까지 이어가도록 작업 방식을 정리하려는 개발자에게 유용합니다.",
+          "여러 단계의 기능 개발을 작은 작업과 검증 가능한 결과로 나누려는 팀에 적합합니다."
+        ],
+        "features_ko": [
+          "brainstorming으로 요구사항을 구체화하고 writing-plans로 파일·구현·검증 단위를 계획합니다.",
+          "격리된 Git worktree, 테스트 주도 개발, 구현 후 코드 리뷰와 개발 브랜치 마무리를 연결하는 스킬을 제공합니다.",
+          "플러그인은 작업 절차를 안내하며 실제 구현·판단에는 사용 중인 코딩 에이전트의 모델이 필요합니다."
+        ],
+        "prerequisites_ko": [
+          "플러그인을 지원하는 코딩 에이전트가 필요합니다. Claude Code·Codex·Cursor 등 환경마다 공식 설치 절차가 다릅니다.",
+          "아래 명령은 Claude Code용이며 Claude Code 대화창에 입력합니다. Codex 앱은 사이드바 Plugins에서 Superpowers를 선택하는 경로를 제공합니다."
+        ],
+        "install_steps_ko": [
+          "Claude Code에서는 공식 마켓플레이스의 Superpowers 플러그인을 설치합니다.",
+          "사용하는 에이전트가 여러 개라면 각 환경에 맞는 설치 절차를 따릅니다.",
+          "설치 후 새 작업에서 요구사항 확인과 계획 단계가 시작되는지 살펴봅니다."
+        ],
+        "install_code": {
+          "language": "text",
+          "code": "/plugin install superpowers@claude-plugins-official",
+          "source_url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md#installation"
+        },
+        "example_steps_ko": [
+          "예를 들어 할 일 목록 기능을 추가하려면 먼저 사용자의 동작·저장 방식·완료 조건을 에이전트와 정리합니다.",
+          "확인된 설계를 기준으로 구현 계획을 받고 각 작업에 실패하는 테스트·최소 구현·통과 확인이 연결되는지 검토합니다.",
+          "작업 사이의 코드 리뷰에서 계획과 다른 부분을 확인한 뒤, 브랜치 마무리 단계에서 테스트 결과와 변경 내용을 보고 병합이나 PR 여부를 결정합니다."
+        ],
+        "sources": [
+          {
+            "title": "공식 README 고정 판본 (2ce8aa15d05b)",
+            "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+          },
+          {
+            "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md#installation",
+            "title": "에이전트별 공식 설치 방법"
+          },
+          {
+            "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md#the-basic-workflow",
+            "title": "요구사항·계획·구현·리뷰의 기본 흐름"
+          }
+        ],
+        "repository_id": 1073224795,
+        "readme_sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+        "readme_commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+        "method": "공식 문서 한국어 해설",
+        "readme_url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+        "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+        "path": "README.md",
+        "source_url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md",
+        "fetched_at": "2026-11-02T00:12:48.112977+00:00"
       }
     },
     {
@@ -288,6 +656,74 @@
         "detail": "Git worktree로 작업 공간을 나누고 프로젝트 명세와 재사용 스킬을 유지하며 변경과 PR 상태를 살펴볼 수 있습니다. 에이전트 작업과 편집기 화면을 연결하는 구조를 확인할 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
         "source_url": "https://github.com/JetBrains/thinkrail#readme"
+      },
+      "guide": {
+        "checked_at": "2026-11-02",
+        "audience_ko": [
+          "pi 에이전트의 대화·코드 편집·터미널·Git 변경을 하나의 화면에서 관리하려는 개발자에게 유용합니다.",
+          "여러 작업을 Git worktree로 나누고 에이전트가 바꾼 내용을 검토한 뒤 PR로 넘기려는 사용자에게 적합합니다."
+        ],
+        "features_ko": [
+          "저장소마다 격리된 작업 공간을 만들고 Monaco 편집기·파일 트리·터미널·변경 검토 화면을 제공합니다.",
+          "SPEC.md 기반 명세, 재사용 스킬, MCP 연결과 에이전트 대화를 같은 작업 공간에 연결합니다.",
+          "원격 브랜치·PR·CI 상태를 표시하며, 변경과 검토 의견을 에이전트의 다음 작업 문맥으로 보낼 수 있습니다."
+        ],
+        "prerequisites_ko": [
+          "Git이 PATH에 있어야 하며 JetBrains AI 또는 다른 모델 제공자의 인증이 필요합니다.",
+          "아래는 Windows용 공식 CLI 설치 명령입니다. 데스크톱 설치 파일은 Releases에서 Windows x64, macOS 14 이상, Linux x64·ARM64 대상으로 제공합니다."
+        ],
+        "install_steps_ko": [
+          "Windows의 PowerShell 또는 cmd에서 공식 설치기를 호출합니다. 설치기는 플랫폼에 맞는 바이너리와 체크섬을 확인하고 PATH를 설정합니다.",
+          "설치 후 thinkrail을 실행하고 최초 안내에서 모델 제공자와 프로젝트를 연결합니다.",
+          "GUI 설치를 선호하면 Releases의 운영체제별 데스크톱 파일을 받아 README의 해당 운영체제 절차를 따릅니다."
+        ],
+        "install_code": {
+          "language": "powershell",
+          "code": "powershell -c \"irm https://raw.githubusercontent.com/JetBrains/thinkrail/main/install.ps1 | iex\"",
+          "source_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md#command-line"
+        },
+        "example_steps_ko": [
+          "기존 Git 저장소를 프로젝트로 열고 별도 worktree 작업 공간에서 수정할 기능을 에이전트에 요청합니다.",
+          "Changes와 diff 화면에서 바뀐 파일을 읽고 필요한 위치에 검토 의견을 남겨 수정하도록 합니다.",
+          "테스트와 변경 내용을 확인한 뒤 해당 작업 브랜치를 push하거나 PR을 여는 흐름으로 이어갑니다.",
+          "아래 ~/code/my-repo는 macOS·Linux 형식의 예시 경로입니다. Windows에서는 자신의 실제 저장소 경로로 바꿉니다."
+        ],
+        "example_code": {
+          "language": "bash",
+          "code": "thinkrail ~/code/my-repo",
+          "source_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md#command-line"
+        },
+        "sources": [
+          {
+            "title": "공식 README 고정 판본 (344aafcb0b56)",
+            "url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md"
+          },
+          {
+            "url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md#what-you-get",
+            "title": "작업 공간·편집기·PR 기능"
+          },
+          {
+            "url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md#install",
+            "title": "공식 설치와 실행 명령"
+          },
+          {
+            "url": "https://github.com/JetBrains/thinkrail/releases",
+            "title": "운영체제별 공식 배포 파일"
+          }
+        ],
+        "repository_id": 1293238217,
+        "readme_sha": "7594cab8513d03f0b699bb225a78322ad89ac0bc",
+        "readme_commit": "344aafcb0b56902e5fc87834059a353d54ca8892",
+        "method": "공식 문서 한국어 해설",
+        "readme_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "7594cab8513d03f0b699bb225a78322ad89ac0bc",
+        "commit": "344aafcb0b56902e5fc87834059a353d54ca8892",
+        "path": "README.md",
+        "source_url": "https://github.com/JetBrains/thinkrail/blob/344aafcb0b56902e5fc87834059a353d54ca8892/README.md",
+        "fetched_at": "2026-11-02T00:12:49.219719+00:00"
       }
     },
     {
@@ -320,6 +756,73 @@
         "detail": "지원하는 에이전트 제공자를 먼저 설치·인증한 뒤 대화와 작업을 연결합니다. 모델 서비스와 사용 화면이 나뉘어 있는 구성을 살펴볼 수 있습니다.",
         "method": "README 해설 (2026-11-02 확인)",
         "source_url": "https://github.com/pingdotgg/t3code#readme"
+      },
+      "guide": {
+        "checked_at": "2026-11-02",
+        "audience_ko": [
+          "컴퓨터에 설치한 코딩 에이전트를 데스크톱·브라우저·모바일 화면에서 관리하려는 개발자에게 유용합니다.",
+          "기존 에이전트 구독과 인증을 유지하면서 대화·작업을 다루는 인터페이스를 추가하려는 사용자에게 적합합니다."
+        ],
+        "features_ko": [
+          "컴퓨터에서 실행되는 에이전트를 웹 앱·Electron 데스크톱 앱·모바일 앱의 작업 화면으로 연결합니다.",
+          "공식 README는 Codex·Claude Code·Cursor·Grok Build·OpenCode·Antigravity·fx 연결을 안내하며, 각 제공자를 설치·인증한 환경에서 사용합니다.",
+          "T3 Code는 제어 화면과 서버를 제공하며, 연결하는 모델 서비스와 인증·구독 조건은 각 제공자에 따릅니다."
+        ],
+        "prerequisites_ko": [
+          "지원하는 에이전트 제공자 중 하나 이상을 먼저 설치하고 로그인해야 합니다. 예를 들어 Claude Code는 claude auth login으로 인증합니다.",
+          "아래 설치 코드는 Windows PowerShell용입니다. 운영체제별 데스크톱 배포본도 공식 Releases에서 제공합니다."
+        ],
+        "install_steps_ko": [
+          "사용할 코딩 에이전트를 해당 제공자의 공식 절차로 설치·인증합니다.",
+          "PowerShell에서 T3 Code 공식 설치기를 실행합니다.",
+          "설치 후 t3를 실행하면 로컬 서버를 시작하고 웹 앱을 엽니다."
+        ],
+        "install_code": {
+          "language": "powershell",
+          "code": "irm https://t3.codes/install.ps1 | iex",
+          "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line"
+        },
+        "example_steps_ko": [
+          "t3로 로컬 웹 앱을 열고 인증해 둔 에이전트 제공자를 선택합니다.",
+          "프로젝트 작업을 시작해 대화와 에이전트의 변경 내용을 해당 화면에서 확인합니다.",
+          "백그라운드 상시 실행이 필요하면 공식 t3 service install 명령을 검토하고, 먼저 사용 가능한 옵션은 t3 --help로 확인합니다."
+        ],
+        "example_code": {
+          "language": "bash",
+          "code": "t3\nt3 --help",
+          "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line"
+        },
+        "sources": [
+          {
+            "title": "공식 README 고정 판본 (fa31b66bbb2a)",
+            "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md"
+          },
+          {
+            "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#installation",
+            "title": "제공자 설치·인증과 공식 설치 방법"
+          },
+          {
+            "url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md#command-line",
+            "title": "로컬 서버 시작과 CLI 명령"
+          },
+          {
+            "url": "https://github.com/pingdotgg/t3code/releases",
+            "title": "공식 데스크톱 배포 파일"
+          }
+        ],
+        "repository_id": 1153130349,
+        "readme_sha": "1f63f3609ae0dd709256623cf34f6fab8168d2f2",
+        "readme_commit": "fa31b66bbb2ae5234205a8628a78e038d917202f",
+        "method": "공식 문서 한국어 해설",
+        "readme_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "1f63f3609ae0dd709256623cf34f6fab8168d2f2",
+        "commit": "fa31b66bbb2ae5234205a8628a78e038d917202f",
+        "path": "README.md",
+        "source_url": "https://github.com/pingdotgg/t3code/blob/fa31b66bbb2ae5234205a8628a78e038d917202f/README.md",
+        "fetched_at": "2026-11-02T00:12:50.287425+00:00"
       }
     },
     {
@@ -346,6 +849,68 @@
         "detail": "제3자가 구성한 CLAUDE.md와 스킬을 코딩 에이전트에 적용할 수 있습니다. 이름에 등장하는 Karpathy 본인의 공식 저장소와는 구분합니다.",
         "method": "README 해설 (2026-11-02 확인)",
         "source_url": "https://github.com/multica-ai/andrej-karpathy-skills#readme"
+      },
+      "guide": {
+        "checked_at": "2026-11-02",
+        "audience_ko": [
+          "코딩 에이전트가 숨겨진 가정을 두거나 불필요하게 큰 수정과 추상화를 만드는 문제를 줄이려는 개발자에게 유용합니다.",
+          "기존 프로젝트 지침에 짧은 개발 원칙을 추가하고 변경 범위와 성공 조건을 명확히 하려는 사용자에게 적합합니다."
+        ],
+        "features_ko": [
+          "코딩 전 가정 확인, 단순한 구현, 필요한 범위의 수정, 검증 가능한 목표라는 네 원칙을 제공합니다.",
+          "Claude Code 플러그인 또는 프로젝트 CLAUDE.md로 적용할 수 있고 Cursor용 프로젝트 규칙도 포함합니다.",
+          "Karpathy의 관찰을 바탕으로 제3자가 정리한 지침이며, Karpathy가 직접 제공하는 실행 도구나 모델은 아닙니다."
+        ],
+        "prerequisites_ko": [
+          "플러그인 방식은 Claude Code의 플러그인 기능이 필요합니다. 아래 명령은 Claude Code 대화창에서 실행합니다.",
+          "공식 README의 플러그인 설치 예시는 forrestchang/andrej-karpathy-skills 마켓플레이스를 사용합니다. 아래 설치 주소는 해당 배포 경로입니다."
+        ],
+        "install_steps_ko": [
+          "Claude Code에서 README에 나온 마켓플레이스를 등록합니다.",
+          "andrej-karpathy-skills 플러그인을 설치합니다.",
+          "프로젝트별 CLAUDE.md 방식을 사용하려면 기존 지침과 충돌하는 내용을 검토한 뒤 필요한 원칙을 합칩니다."
+        ],
+        "install_code": {
+          "language": "text",
+          "code": "/plugin marketplace add forrestchang/andrej-karpathy-skills\n/plugin install andrej-karpathy-skills@karpathy-skills",
+          "source_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md#install"
+        },
+        "example_steps_ko": [
+          "입력 검사를 추가하는 작업이라면 검사할 잘못된 입력과 기대 결과를 먼저 지정합니다.",
+          "에이전트가 테스트를 작성하고 그 테스트를 통과시키는 최소 수정만 하도록 작업 목표를 정합니다.",
+          "최종 diff에서 모든 변경이 요청과 연결되는지 확인하고, 주변 코드의 불필요한 정리나 추가 기능이 섞이지 않았는지 검토합니다."
+        ],
+        "sources": [
+          {
+            "title": "공식 README 고정 판본 (2c606141936f)",
+            "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md"
+          },
+          {
+            "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md#install",
+            "title": "공식 README의 설치 명령과 프로젝트 지침 적용"
+          },
+          {
+            "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md#the-four-principles-in-detail",
+            "title": "네 가지 원칙과 입력 검사 사용 예시"
+          },
+          {
+            "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/CURSOR.md",
+            "title": "Cursor 적용 안내"
+          }
+        ],
+        "repository_id": 1142983825,
+        "readme_sha": "7cf07a786532bebe01c65179c8e2c3a98cc0a09b",
+        "readme_commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+        "method": "공식 문서 한국어 해설",
+        "readme_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "7cf07a786532bebe01c65179c8e2c3a98cc0a09b",
+        "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+        "path": "README.md",
+        "source_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md",
+        "fetched_at": "2026-11-02T00:12:51.269219+00:00"
       }
     },
     {
@@ -378,7 +943,70 @@
         "detail": "화면 전체의 문제를 우선순위로 정리하거나 대비·키보드 조작·반응형 배치 같은 항목을 개별적으로 다룰 수 있습니다. 필요한 검토 항목을 골라 적용하는 구성입니다.",
         "method": "README 해설 (2026-11-02 확인)",
         "source_url": "https://github.com/jakubkrehel/skills#readme"
+      },
+      "guide": {
+        "checked_at": "2026-11-02",
+        "audience_ko": [
+          "웹·앱 인터페이스의 구현과 디자인을 함께 다루는 프런트엔드 개발자·디자인 엔지니어에게 유용합니다.",
+          "화면의 전체 문제를 한 번에 검토하거나 접근성·글자·색상·문구 같은 항목을 따로 점검하려는 팀에 적합합니다."
+        ],
+        "features_ko": [
+          "better-interface는 화면 전반의 문제를 우선순위가 있는 보고서로 정리하고 better-ui·better-typography·better-colors는 세부 표현을 다룹니다.",
+          "better-accessibility는 키보드·초점·ARIA·폼·화면읽기 알림·확대 등을, better-layout은 읽기 순서·반응형 배치·번역된 문장의 공간을 점검합니다.",
+          "interface-review로 변경사항의 회귀를 검토하고 build-design으로 Figma·디자인 이미지를 기존 컴포넌트와 토큰에 맞춰 구현하는 흐름도 제공합니다."
+        ],
+        "prerequisites_ko": [
+          "스킬을 읽고 실행할 수 있는 코딩 에이전트가 필요합니다. npx 설치 경로를 사용하려면 Node.js·npm 환경을 준비합니다.",
+          "일반 스킬 설치와 Claude Code 플러그인 설치 중 사용하는 에이전트에 맞는 방식을 선택합니다."
+        ],
+        "install_steps_ko": [
+          "터미널에서 공식 npx skills add 명령을 실행하고 사용할 에이전트·설치 범위를 선택합니다.",
+          "Claude Code 플러그인 경로를 사용하면 README의 마켓플레이스 등록과 interfaces 플러그인 설치 절차를 따릅니다.",
+          "검토할 화면이나 변경사항을 준비하고 목적에 맞는 스킬을 선택합니다."
+        ],
+        "install_code": {
+          "language": "bash",
+          "code": "npx skills add jakubkrehel/skills",
+          "source_url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md#install"
+        },
+        "example_steps_ko": [
+          "로그인 폼을 검토한다면 better-interface로 먼저 전체 문제의 우선순위를 정리합니다.",
+          "better-accessibility로 Tab 이동·초점 표시·입력 이름·오류 알림을 살피고, better-writing으로 버튼과 오류 문구가 다음 행동을 명확히 알려주는지 점검합니다.",
+          "수정 후에는 interface-review로 변경 중 접근성·배치·타이포그래피 문제가 새로 생기지 않았는지 확인합니다."
+        ],
+        "sources": [
+          {
+            "title": "공식 README 고정 판본 (592aedc44d7d)",
+            "url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md"
+          },
+          {
+            "url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md#install",
+            "title": "일반 스킬 설치"
+          },
+          {
+            "url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md#claude-code-plugin",
+            "title": "Claude Code 플러그인 설치"
+          },
+          {
+            "url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md#skills-that-help-build-great-interfaces",
+            "title": "스킬별 기능과 적용 범위"
+          }
+        ],
+        "repository_id": 1296300799,
+        "readme_sha": "4a98833328ce2fbcf3338ece1fb4a9459121bc58",
+        "readme_commit": "592aedc44d7d5b3e29740984252902f3e5402a1c",
+        "method": "공식 문서 한국어 해설",
+        "readme_url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "4a98833328ce2fbcf3338ece1fb4a9459121bc58",
+        "commit": "592aedc44d7d5b3e29740984252902f3e5402a1c",
+        "path": "README.md",
+        "source_url": "https://github.com/jakubkrehel/skills/blob/592aedc44d7d5b3e29740984252902f3e5402a1c/README.md",
+        "fetched_at": "2026-11-02T00:12:52.250674+00:00"
       }
     }
-  ]
+  ],
+  "guide_format_version": 2
 }
