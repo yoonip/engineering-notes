@@ -1,4 +1,4 @@
-# 공개 전문가 모델의 범위: xAI Grok-1 | Public MoE checkpoint
+# 공개 혼합전문가 모델의 범위: xAI Grok-1 | Public MoE checkpoint
 
 공식 자료 재확인일: 2026-10-21입니다. 아래 내용은 특정 배포물의 자료 분석이며, 가중치 추론이나 유료 API 실험 결과는 아닙니다.
 
@@ -25,7 +25,7 @@
 
 공개 참조 코드의 속도를 Grok API 지연으로 해석할 수 없습니다. 이 분석은 공개 1세대 배포물에 한정하며 서비스 모델의 구조·성능을 추정하지 않습니다.
 
-## 공개 JAX 예제에서 무엇이 흘러갑니까
+## 공개 JAX 예제의 입력과 출력
 
 참조 실행 코드는 모델 구조·체크포인트 경로·추론 실행기를 구성하고 시험 입력에서 토큰을 샘플링합니다. SentencePiece tokenizer의 정수 ID와 JAX의 가중치 배열, 생성 결과를 글자로 되돌리는 단계는 서로 다른 자료입니다. 현재 서비스의 대화 API 요청 형식을 이 로컬 예제의 입력 계약으로 대신하지 않습니다. [공식 run.py](https://raw.githubusercontent.com/xai-org/grok-1/main/run.py)
 

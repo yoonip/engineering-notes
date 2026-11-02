@@ -48,4 +48,4 @@ TRM의 연구 주체는 Samsung SAIL Montréal입니다. 이 문서는 해당 �
 
 ## English
 
-TRM reuses one small network to update latent and answer states. The default configuration gives 21 reasoning-module calls, or 42 two-block evaluations, per inner forward; 16 evaluation steps give 672 block executions, excluding other operations. These are code-derived counts, not measured FLOPs or latency. The linked educational scalar experiment is kept under experiments; it does not implement TRM training, gradient flow, halting, or benchmark reproduction.
+TRM reuses one small network to update latent and answer states. The default configuration gives 21 calls to the two-block reasoning module, or 42 individual block executions, per inner forward; 16 evaluation steps give 672 block executions, excluding other operations. These are code-derived counts, not measured FLOPs or latency. The linked educational scalar experiment is kept under experiments; it does not implement TRM training, gradient flow, halting, or benchmark reproduction.

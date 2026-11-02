@@ -537,4 +537,4 @@ Z.ai GLM-4.5-Air의 [공식 모델·도구 설명](../models/zai.md)과 구분�
 
 ## English
 
-These prompts, expected answers, example scoring fractions and array checks are author-designed evaluation plans, not observed model responses or benchmark reproductions. Model and framework explanations are under `models`; executed educational numerical code and historical results are linked separately.
+These prompts, expected answers, example scoring fractions and array checks are author-designed evaluation plans, not observed model responses or benchmark reproductions. Model explanations are under `models` and framework explanations under `frameworks`; executed educational numerical code and historical results are linked separately.
