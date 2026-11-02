@@ -6,7 +6,7 @@ int compare(const void* a, const void* b) { // qsort가 사용할 오름차순 �
     return (x > y) - (x < y); // 뺄셈 넘침 없이 비교 부호 반환
 } // 비교 함수 끝
 int lower_bound_index(long long* sums, int count, long long target) { // target 이상인 첫 위치 검색
-    int low = 0, high = count; // 정답 위치가 포함된 반열린 탐색 구간
+    int low = 0, high = count; // 검사할 원소 구간 [low, high); 삽입 위치는 high도 가능
     while (low < high) { // 경계가 하나로 좁혀질 때까지 반복
         int middle = low + (high - low) / 2; // 중앙 인덱스
         if (sums[middle] < target) low = middle + 1; // target보다 작은 부분을 제외

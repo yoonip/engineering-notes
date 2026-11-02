@@ -105,7 +105,6 @@ V E C T 뒤에 E개의 무방향 간선 u v가 주어집니다. 1≤V≤8, 0≤E
 
 ```c
 #include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
-#include <stdlib.h>  // qsort와 정수 절댓값 함수
 static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
     int value = 0;  // 입력값을 받을 정수
     scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
@@ -152,7 +151,6 @@ int main(void) {  // 단순 배송 명세를 두 거리 문제로 해결
 
 ```cpp
 #include <iostream>  // cin과 cout으로 표준 입력·출력 처리
-#include <cstdlib>  // qsort와 정수 절댓값 함수
 using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
 static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
     int value = 0;  // 입력값을 받을 정수

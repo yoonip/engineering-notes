@@ -65,7 +65,7 @@ K개를 채운 뒤 새 값이 루트 이하이면 그 값보다 크거나 같은
 
 이진 힙의 높이는 O(log N)이며 한 원소의 삽입·제거는 위아래 경로를 따라 복구할 수 있습니다.
 배열 전체를 아래부터 힙으로 만드는 작업은 O(N)이며 N번 삽입하는 O(N log N) 방식과 구별합니다. [MIT 강의 8, Binary Heaps·Build Heap](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/40d4851e550507ca14dc778b9b2266cc_MIT6_006S20_lec8.pdf)
-예제는 N개 입력에 O(N log K), 보관 공간 O(K)이며 마지막 정렬에 O(K log K)가 추가됩니다.
+예제는 N개 입력에 O(N log(K+1)), 보관 공간 O(K)이며 마지막 정렬에 O(K log(K+1))가 추가됩니다. K=1일 때도 입력 순회 비용 O(N)을 포함한 표현입니다.
 거리 후보를 계속 추가하는 방식에서는 힙 크기가 정점 수가 아니라 후보 수에 비례할 수 있습니다.
 
 ## 언어별 구현 차이

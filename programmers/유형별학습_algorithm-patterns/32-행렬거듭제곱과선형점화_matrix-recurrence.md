@@ -8,7 +8,7 @@
 행렬 곱셈은 결합법칙이 있으므로 전이를 두 배씩 합쳐 지수를 이진수로 처리할 수 있습니다.
 단계 수 N이 커도 상태 차원 d가 작으면 N번 반복하는 대신 O(log N)번의 행렬 곱으로 줄입니다.
 곱셈의 순서는 일반적으로 바꿀 수 없으므로 결합법칙과 교환법칙을 혼동하지 않습니다.
-피보나치 행렬과 이진 거듭제곱의 관계는 [Williams 대학 원저자 해설](https://web.williams.edu/Mathematics/sjmiller/public_html/math/papers/ComputingFibonacciRevised.pdf)에서 확인합니다.
+피보나치 행렬과 이진 거듭제곱의 관계는 [Miller·Rysmakhanov·Sheafification of G의 해설](https://web.williams.edu/Mathematics/sjmiller/public_html/math/papers/ComputingFibonacciRevised.pdf) §5–6(2025-09-25 판본)에서 확인할 수 있습니다. 원문은 기본적으로 F0=F1=1을 사용하며, 이 글은 아래와 같이 F0=0, F1=1로 지표를 정합니다.
 
 ## 알아보는 단서와 불가 조건
 
@@ -224,7 +224,7 @@ print(answer[1][0] % modulus)  # 초기 벡터에서 F_N인 성분
 | 비교할 점 | C | C++ | Python |
 | --- | --- | --- | --- |
 | 표준 입출력 | scanf와 printf의 서식 지정자를 자료형에 맞춥니다. | std::cin과 std::cout으로 같은 토큰과 결과를 처리합니다. | sys.stdin.read().split()으로 읽은 토큰을 필요한 자료형으로 바꿉니다. |
-| 배열과 허용 범위 | 2×2 long long 행렬 세 개와 지수 변수만 사용합니다. | 같은 2×2 구조체를 값으로 반환하여 행렬 입력을 덮어쓰지 않습니다. | 상태 길이에 맞춰 리스트를 만들지만 입력의 허용 범위는 같습니다. |
+| 배열과 허용 범위 | 2×2 long long 행렬을 구조체에 담고 곱셈 결과를 별도로 만듭니다. | 같은 2×2 구조체를 값으로 반환하여 행렬 입력을 덮어쓰지 않습니다. | 2×2 중첩 리스트로 행렬을 보관하고 곱셈마다 새 결과를 만듭니다. |
 | 정수 연산 | 이 예제의 입력 상한에서 int 또는 long long의 연산 범위를 지킵니다. | C와 같은 정수 상한을 사용하며 중간 계산의 자료형을 확인합니다. | 정수는 임의 정밀도이지만 같은 입력 상한에서 같은 계산을 수행합니다. |
 
 ### 예제의 비용과 실행 파일

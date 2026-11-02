@@ -8,7 +8,7 @@
 
 | 작업 | C | C++ | Python |
 | --- | --- | --- | --- |
-| 가변 길이 배열 | capacity와 길이, realloc 실패 처리를 직접 관리합니다. | vector의 크기·용량과 참조 무효화를 확인합니다. | list가 원소 참조를 저장하며 슬라이싱은 새 리스트를 만듭니다. |
+| 길이가 바뀌는 배열 | capacity와 길이, realloc 실패 처리를 직접 관리합니다. | vector의 크기·용량과 참조 무효화를 확인합니다. | list가 원소 참조를 저장하며 슬라이싱은 새 리스트를 만듭니다. |
 | FIFO 큐 | 배열+head/tail 또는 원형 버퍼를 만듭니다. | queue/deque를 사용합니다. | collections.deque를 사용합니다. |
 | 빈도 집계 | 값 범위가 작으면 배열, 크면 해시 테이블 등을 구성합니다. | unordered_map/map의 목적과 최악 비용을 구별합니다. | dict/Counter를 사용하며 키의 hash 가능성을 확인합니다. |
 | 최소 힙 | sift-up/down과 크기를 관리합니다. | priority_queue의 기본은 최대 힙이므로 비교자를 확인합니다. | heapq의 기본은 최소 힙입니다. |
@@ -92,7 +92,6 @@ Python의 key는 정렬 키를 먼저 계산하는 방식이고 C++ comparator�
 
 ```c
 #include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
-#include <stdlib.h>  // qsort와 정수 절댓값 함수
 static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
     int value = 0;  // 입력값을 받을 정수
     scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
@@ -124,7 +123,6 @@ int main(void) {  // 양의 분모에 대한 floor 나눗셈 비교
 
 ```cpp
 #include <iostream>  // cin과 cout으로 표준 입력·출력 처리
-#include <cstdlib>  // qsort와 정수 절댓값 함수
 using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
 static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
     int value = 0;  // 입력값을 받을 정수

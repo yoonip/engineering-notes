@@ -81,7 +81,7 @@ def minimum_capacity(work, limit):  # 연속 묶음의 최소 허용 용량을 �
 
 ## 비용과 언어 차이
 
-작업 수 N, 탐색 값 범위의 폭 U에서 판정 한 번은 O(N), 전체는 O(N log(U+1))입니다.
+작업 수 N, 탐색 값 범위의 폭 U에서 판정 한 번은 O(N), 초기 범위 계산을 포함한 전체 시간은 O(N log(U+2))입니다. U=0이면 초기 범위를 계산한 뒤 바로 답을 반환하므로 O(N)입니다.
 별도 분할을 저장하지 않으면 판정의 보조 공간은 O(1)입니다.
 정렬 배열의 위치 탐색은 O(log N)이지만 그 위치에 배열 삽입까지 하면 이동 비용이 추가됩니다. [Python bisect, Performance Notes](https://docs.python.org/3/library/bisect.html#performance-notes)
 

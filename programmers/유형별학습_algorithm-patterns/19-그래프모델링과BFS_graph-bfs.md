@@ -36,7 +36,7 @@ BFS는 시작점에서 간선 수가 적은 상태부터 확인합니다. 모든
 
 ~~~python
 from collections import deque  # deque에서 왼쪽 원소를 상수 시간에 꺼내기
-def bfs(adj, start):  # 인접 리스트에서 시작점까지의 최단 간선 수 계산
+def bfs(adj, start):  # 인접 리스트에서 시작점으로부터의 최단 간선 수 계산
     dist = [-1] * len(adj)  # -1을 아직 발견하지 않은 상태로 사용
     dist[start] = 0  # 시작점의 이동 횟수는 0
     queue = deque([start])  # 시작점 하나가 든 FIFO 큐 생성
@@ -120,7 +120,6 @@ A에서 B로 비용 100, A-C-B로 각각 비용 1인 그래프에서 BFS는 B를
 
 ```c
 #include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
-#include <stdlib.h>  // qsort와 정수 절댓값 함수
 static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
     int value = 0;  // 입력값을 받을 정수
     scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
@@ -168,7 +167,6 @@ int main(void) {  // 작은 그래프의 BFS 거리 계산
 
 ```cpp
 #include <iostream>  // cin과 cout으로 표준 입력·출력 처리
-#include <cstdlib>  // qsort와 정수 절댓값 함수
 using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
 static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
     int value = 0;  // 입력값을 받을 정수

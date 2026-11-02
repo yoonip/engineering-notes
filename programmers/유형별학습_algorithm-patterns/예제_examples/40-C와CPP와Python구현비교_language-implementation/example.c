@@ -1,5 +1,4 @@
 #include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
-#include <stdlib.h>  // qsort와 정수 절댓값 함수
 static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
     int value = 0;  // 입력값을 받을 정수
     scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기

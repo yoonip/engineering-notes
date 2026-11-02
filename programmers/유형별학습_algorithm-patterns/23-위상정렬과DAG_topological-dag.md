@@ -102,7 +102,6 @@ V E, 이어서 V개 작업 시간, E개의 선행 간선 u v입니다. 1≤V≤8
 
 ```c
 #include <stdio.h>  // 표준 입력과 숫자·문자열 출력 함수
-#include <stdlib.h>  // qsort와 정수 절댓값 함수
 static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
     int value = 0;  // 입력값을 받을 정수
     scanf("%d", &value);  // 공백을 건너뛰고 정수 읽기
@@ -149,7 +148,6 @@ int main(void) {  // Kahn 순서와 완료 시각 DP
 
 ```cpp
 #include <iostream>  // cin과 cout으로 표준 입력·출력 처리
-#include <cstdlib>  // qsort와 정수 절댓값 함수
 using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
 static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
     int value = 0;  // 입력값을 받을 정수

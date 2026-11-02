@@ -291,10 +291,10 @@ print("MATCHES", count)  # KMP 발생 수 출력
 
 ### 예제의 비용과 실행 파일
 
-- 시간: O(P+T+M)
-- 보조 공간: O(26P+M+T)
+- 시간: O(P+Q+M+T)
+- 보조 공간: O(26P+Q+M+T)
 
-고정 알파벳 트라이와 선형 접두사·텍스트 탐색을 사용하며 읽은 문자열도 보관합니다.
+여기서 P는 사전 단어의 총길이, Q는 질의 단어 길이, M은 검색 패턴 길이, T는 텍스트 길이입니다. 고정 알파벳 트라이와 선형 KMP 탐색을 사용하며 읽은 문자열도 보관합니다.
 
 [예제 입력](<예제_examples/28-트라이와문자열매칭_trie-kmp-aho/input.txt>) · [예상 출력](<예제_examples/28-트라이와문자열매칭_trie-kmp-aho/output.txt>) · [예제 실행 방법](<예제_examples/28-트라이와문자열매칭_trie-kmp-aho/README.md>) · [세 언어 확인 기록](<예제_examples/확인기록_validation.md>)
 <!-- multilang-examples:end -->

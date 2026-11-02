@@ -2784,7 +2784,7 @@
       "tags": [
         "basic-math"
       ],
-      "classification_reason": "정수의 사칙연산·몫과 나머지·자리값·수열 관계를 계산합니다.",
+      "classification_reason": "입력된 부등호와 등호 포함 여부에 따라 두 수의 대소 관계를 판정합니다.",
       "classification_evidence": [
         {
           "file": "programmers/Python/level0/extra_181934_조건_문자열/solution.py",
@@ -4078,7 +4078,7 @@
       "tags": [
         "basic-math"
       ],
-      "classification_reason": "정수의 사칙연산·몫과 나머지·자리값·수열 관계를 계산합니다.",
+      "classification_reason": "각 쌍의 논리합을 구한 뒤 두 결과의 논리곱을 계산합니다.",
       "classification_evidence": [
         {
           "file": "programmers/Python/level0/extra_181917_간단한_논리_연산/solution.py",

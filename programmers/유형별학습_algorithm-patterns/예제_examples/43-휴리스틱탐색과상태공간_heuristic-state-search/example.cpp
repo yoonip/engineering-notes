@@ -1,5 +1,4 @@
 #include <iostream>  // cin과 cout으로 표준 입력·출력 처리
-#include <cstdlib>  // qsort와 정수 절댓값 함수
 using namespace std;  // 작은 예제에서 표준 라이브러리 이름을 짧게 사용
 static int read_int(void) {  // 다음 정수 하나를 읽는 공통 함수
     int value = 0;  // 입력값을 받을 정수
