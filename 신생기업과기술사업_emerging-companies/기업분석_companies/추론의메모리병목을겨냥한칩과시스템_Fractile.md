@@ -22,7 +22,7 @@ AI를 학습시키는 것과 실제 사용자 요청에 계속 답하도록 운�
 
 ## 기술 공개의 범위
 
-회사 홈페이지는 매우 긴 문맥과 용량 문제를 함께 다루며 칩부터 시스템까지 개발한다고 설명합니다. Oxford Science Enterprises는 메모리 안쪽 또는 가까운 곳의 연산을 뜻하는 in-memory compute 계열의 접근으로 소개합니다. 이 설명은 방향을 파악하는 근거이며 실제 상용 칩의 모든 회로·메모리 구조와 제조 조건을 공개한 자료는 아닙니다. [회사 방향](https://fractile.ai/), [Oxford Science Enterprises의 기술 소개](https://www.oxfordscienceenterprises.com/portfolio/fractile)
+회사 홈페이지는 매우 긴 문맥과 용량 문제를 함께 다루며 칩부터 시스템까지 개발한다고 설명합니다. Oxford Science Enterprises는 메모리 내 연산(in-memory compute)을 이용한 접근으로 소개합니다. 메모리 주변에 별도 연산기를 배치하는 near-memory computing과는 구분되는 용어입니다. [EPFL의 두 방식 비교](https://www.epfl.ch/labs/esl/research/in-and-near-memory/) 이 설명은 방향을 파악하는 근거이며 실제 상용 칩의 모든 회로·메모리 구조와 제조 조건을 공개한 자료는 아닙니다. [회사 방향](https://fractile.ai/), [Oxford Science Enterprises의 기술 소개](https://www.oxfordscienceenterprises.com/portfolio/fractile)
 
 따라서 공개 소개만으로 SRAM의 정확한 용량, 칩 수, 사용 공정, 프로그램 가능한 연산과 실제 전력 수치를 채우지 않습니다. 특히 초기 자료에 나온 성능 배수는 비교한 모델·장치·정밀도와 시뮬레이션 여부를 확인해야 합니다. 투자사 페이지가 예전 시드 설명을 남겨 두었다는 이유로 현재도 시드 단계라고 정리하지 않습니다. 시점이 명확한 2026년 투자 발표와 구분합니다.
 

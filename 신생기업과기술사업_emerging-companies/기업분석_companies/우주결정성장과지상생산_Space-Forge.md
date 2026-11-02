@@ -19,7 +19,7 @@ Space Forge는 우주 환경을 반도체 재료 제조에 활용하려는 기�
 
 결정은 원자가 일정한 규칙으로 배열된 고체입니다. 반도체 재료를 키울 때 결함과 불순물이 생기면 전기적 특성이나 제조 수율에 영향을 줄 수 있습니다. 회사는 미세중력과 진공 등의 조건을 활용해 지상과 다른 성장 환경을 만들려 합니다. 미세중력은 중력이 완전히 사라졌다는 뜻보다 궤도에서 자유낙하하는 환경을 설명하는 표현입니다.
 
-목표 고객은 전력전자·통신 등에서 고품질 재료를 필요로 하는 조직입니다. 광대역갭 반도체는 전자가 움직이기 위한 에너지 간격이 큰 재료를 가리키며 고전압·고온 등의 응용과 연결됩니다. 다만 회사가 열거한 응용 분야 전체에 제품이 상용 공급된 것은 아닙니다. [우주 제조 실증 발표](https://www.spaceforge.com/press-releases/space-forge-ignites-a-new-industrial-era-delivering-world-first-capability-for-orbital-semiconductor-manufacturing)
+목표 고객은 전력전자·통신 등에서 고품질 재료를 필요로 하는 조직입니다. 광대역갭 반도체는 SiC·GaN처럼 가전자대의 맨 위와 전도대의 맨 아래 사이의 에너지 차이가 실리콘보다 훨씬 큰 재료를 가리키며, 고전압·고온 등의 응용과 연결됩니다. [Sandia의 밴드갭 설명](https://www.sandia.gov/labnews/2016/02/18/switch/) 다만 회사가 열거한 응용 분야 전체에 제품이 상용 공급된 것은 아닙니다. [우주 제조 실증 발표](https://www.spaceforge.com/press-releases/space-forge-ignites-a-new-industrial-era-delivering-world-first-capability-for-orbital-semiconductor-manufacturing)
 
 ## 공개된 증거와 아직 남은 단계
 
