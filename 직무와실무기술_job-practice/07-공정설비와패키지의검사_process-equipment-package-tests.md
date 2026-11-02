@@ -145,7 +145,7 @@ PM은 예방정비, BM은 고장 뒤의 사후정비를 가리킵니다. 정비 
 | ESD HBM·CDM | 정전기 방전 모델에 대한 내성을 평가합니다. 여기서 HBM은 human body model이며 고대역폭 메모리가 아닙니다. |
 | Latch-up | 기생 구조에 의해 비정상 전류 경로가 유지되는 위험을 평가합니다. |
 
-[NXP Product Qualification의 methodology·시험 표](https://www.nxp.com/company/about-nxp/quality/product-qualification:QUALITY__QUALIF)는 제품 사용 조건과 표준·고객 요구에 따라 시험을 정하는 예입니다. 표의 온도·시간·전압을 모든 회사·제품의 공통 조건으로 가져오지 않았습니다. 표준 판본·제품군·고장 기구·사용 조건이 시험 계획을 결정합니다.
+[NXP Product Qualification의 methodology·시험 표](https://www.nxp.com/products/nxp-product-information/quality/product-qualification%3AQUALITY__QUALIF)는 제품 사용 조건과 표준·고객 요구에 따라 시험을 정하는 예입니다. 표의 온도·시간·전압을 모든 회사·제품의 공통 조건으로 가져오지 않았습니다. 표준 판본·제품군·고장 기구·사용 조건이 시험 계획을 결정합니다.
 
 가속 스트레스에서 관측한 시간이 실사용 수명으로 곧바로 환산되지는 않습니다. 동일한 고장 기구인지와 적용 가능한 가속 모형·계수·분포가 필요합니다. 높은 온도에서 다른 고장 기구가 생기면 단순한 배수 환산이 잘못될 수 있습니다.
 
@@ -167,7 +167,7 @@ UPW·APC·AMHS 같은 약어의 공식 범위는 [SEMI Compilation of Terms, Upd
 
 인프라 데이터에 Python·SQL을 적용하면 기간·부하·이벤트별 추세와 누락을 비교할 수 있습니다. 그러나 데이터를 처리하는 코드가 보호 장치의 설계·설정·안전 승인이나 현장 작업 자격을 대신하지는 않습니다. 이 글은 계통을 이해하는 개념 설명이며 활선 작업·임의 설정 변경 절차를 제시하지 않습니다.
 
-환경 직무 46–47쪽의 측정·증빙도 같은 추적성이 필요합니다. 배출·폐기물 데이터의 단위·기간·시설·계량 방법과 원증빙이 맞아야 변경 전후를 비교할 수 있습니다. 현행 인허가·법적 한계는 각 사업장과 적용 법령의 별도 근거가 필요합니다.
+환경 관리의 측정·증빙에도 같은 추적성이 필요합니다. 배출·폐기물 데이터의 단위·기간·시설·계량 방법과 원증빙이 맞아야 변경 전후를 비교할 수 있습니다. 현행 인허가·법적 한계는 각 사업장과 적용 법령의 별도 근거가 필요합니다.
 
 ## 8. 공정 이상을 끝까지 조사하는 학습 예
 
@@ -186,14 +186,14 @@ Python을 썼다는 사실보다 어떤 키로 자료를 연결했고, 어떤 �
 
 | 자료 | 사용한 범위 |
 | --- | --- |
-| [Thermo Fisher 전자산업 분석](https://em-info.thermofisher.com/analysis-solutions-for-the-electronics-industry) | 물리·원소·구조·전기 분석과 SEM/TEM·EDS·XPS·Raman/FTIR의 방법 목록입니다. |
+| [Thermo Fisher 전자산업 분석](https://em-info.thermofisher.com/analysis-solutions-for-the-electronics-industry) | 2018년 공개 페이지의 물리·원소·구조·전기 분석과 SEM/TEM·EDS·XPS·Raman/FTIR 방법 목록입니다. |
 | [TSRI 분석 기술](https://www.tsri.org.tw/english/commonPage.jsp?kindId=EE0016) | Surface Chemical and Spectrometric Analysis Technologies의 XPS·Micro-FTIR·Micro-Raman 목록입니다. |
 | [NIST Gauge R&R](https://www.itl.nist.gov/div898/handbook/mpc/section4/mpc4.htm) | 반복성·재현성·안정성·편향·장비/설정 차이의 연구 구성입니다. |
 | [NIST 공정능력](https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm) | Cp·Cpk 정의와 안정된 공정·분포·표본 관련 가정입니다. |
 | [NIST DOE](https://www.itl.nist.gov/div898/handbook/pri/section3/pri3.htm) | 목표·요인·수준·무작위·block·factorial 구분입니다. |
 | [SEMI PCS task force](https://downloads.semi.org/web/wstdsbal.nsf/18a679096dfd445188256d35007d447d/f82b47d62539257a882577dd006759e1!OpenDocument) | 2007년 갱신 charter의 APC/run-to-run·FDC·SPC 구분입니다. 현행 표준 전문으로 취급하지 않았습니다. |
 | [SEMI Compilation of Terms](https://www.semi.org/sites/semi.org/files/2024-07/CompilationTerms0624.pdf) | Updated 0624의 APC·AMHS·UPW 용어입니다. 개별 표준의 전체 요구는 검토 범위에 없습니다. |
-| [NXP Product Qualification](https://www.nxp.com/company/about-nxp/quality/product-qualification:QUALITY__QUALIF) | 제품 사용 환경·고장 기구·표준/고객 요구와 가속 시험 종류를 확인했습니다. 예시 조건을 공통 사양으로 사용하지 않았습니다. |
+| [NXP Product Qualification](https://www.nxp.com/products/nxp-product-information/quality/product-qualification%3AQUALITY__QUALIF) | 제품 사용 환경·고장 기구·표준/고객 요구와 가속 시험 종류를 확인했습니다. 예시 조건을 공통 사양으로 사용하지 않았습니다. |
 | [ABB Selectivity](https://new.abb.com/low-voltage/solutions/selectivity/basic-concepts/selectivity-techniques) | 보호 선택성과 시간·전류·오차를 함께 보는 원리입니다. 특정 설비의 설정값은 제시하지 않았습니다. |
 
 날짜가 없는 웹 자료의 확인일은 2026-10-26입니다. 자체 예의 숫자·시나리오는 회사의 실측·사고·설비 사양이 아닙니다.
