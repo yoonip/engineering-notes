@@ -179,9 +179,10 @@ class ArchiveTests(unittest.TestCase):
              patch.object(weekly, 'repository', side_effect=lambda slug, token: metadata(int(slug.rsplit('-', 1)[1]))), \
              patch.object(weekly.guides, 'fetch_readme', side_effect=readme_for), \
              patch.object(weekly.guides, 'linked_documents', return_value=[]):
-            weekly.collect(self.output, self.now, '', {}, self.cache, details={})
+            weekly.collect(self.output, self.now, '', {}, self.cache, details={}, assessments={})
         data = json.loads((self.output / '주간기록/2026/11/2026-11-02.json').read_text(encoding='utf8'))
         self.assertTrue(all('guide' in item and 'readme' in item for item in data['items']))
+        self.assertTrue(all(item['guide']['assessment']['origin'] == 'extracted' for item in data['items']))
         self.assertNotIn('text', data['items'][0]['readme'])
         self.assertEqual(data['items'][0]['guide']['install_code']['code'], 'run-official-example')
 

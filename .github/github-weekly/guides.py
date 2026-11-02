@@ -43,7 +43,7 @@ def linked_documents(repo: dict, readme: dict, token: str, getter) -> list[dict]
     """README가 연결한 같은 저장소의 설치·사용 Markdown 문서를 최대 두 개 읽습니다."""
     result, seen = [], set()
     for label, target in re.findall(r'(?<!!)\[([^\]\n]+)\]\(([^\s)]+)\)', readme['text']):
-        if not re.search(r'install|quick.?start|getting.?started|usage|examples?|설치|사용', label + ' ' + target, re.I):
+        if not re.search(r'install|quick.?start|getting.?started|usage|examples?|comparisons?|alternatives?|설치|사용|비교', label + ' ' + target, re.I):
             continue
         parsed = urlsplit(target)
         if parsed.scheme or parsed.netloc or parsed.path.startswith('/'):
@@ -83,7 +83,10 @@ def plain(text: str) -> str:
 
 def sections(markdown: str) -> list[dict]:
     """ATX·Setext 제목과 코드 펜스를 구분하고 코드 안의 #을 제목으로 읽지 않습니다."""
-    result = [{'heading': 'Introduction', 'level': 0, 'paragraphs': [], 'codes': []}]
+    def section(heading, level):
+        return {'heading': heading, 'level': level, 'paragraphs': [], 'codes': [], 'links': [], 'tables': [], '_rows': []}
+
+    result = [section('Introduction', 0)]
     paragraph, code, fence, language, context = [], [], None, '', ''
 
     def flush():
@@ -109,22 +112,45 @@ def sections(markdown: str) -> list[dict]:
             fence, language = match.groups()
             context = result[-1]['paragraphs'][-1] if result[-1]['paragraphs'] else ''
             continue
+        if result[-1]['_rows'] and result[-1]['_rows'][-1] and not stripped.startswith('|'):
+            result[-1]['_rows'].append('')
         heading = re.match(r'^ {0,3}(#{1,6})\s+(.+?)\s*#*$', line)
         if heading:
             flush()
-            result.append({'heading': plain(heading[2]), 'level': len(heading[1]), 'paragraphs': [], 'codes': []})
+            result.append(section(plain(heading[2]), len(heading[1])))
         elif stripped and index + 1 < len(lines) and re.fullmatch(r'(?:={3,}|-{3,})\s*', lines[index + 1].strip()):
             flush()
             level = 1 if lines[index + 1].lstrip().startswith('=') else 2
-            result.append({'heading': plain(line), 'level': level, 'paragraphs': [], 'codes': []})
+            result.append(section(plain(line), level))
         elif re.fullmatch(r'(?:={3,}|-{3,})\s*', stripped):
             flush()
         elif not stripped:
             flush()
-        elif not stripped.startswith(('<', '|', '[!')):
+        elif stripped.startswith('|'):
+            flush()
+            result[-1]['_rows'].append(stripped)
+        elif not stripped.startswith(('<', '[!')):
             paragraph.append(line)
+        for label, url in re.findall(r'(?<!!)\[([^\]\n]+)\]\((https://[^\s)]+)\)', line):
+            result[-1]['links'].append({'label': label, 'url': url, 'context': plain(line),
+                                       'kind': 'table' if stripped.startswith('|') else 'text'})
     flush()
     # 닫히지 않은 코드 블록은 설치 예시로 재게시하지 않습니다.
+    for item in result:
+        rows = item.pop('_rows')
+        for index in range(len(rows) - 1):
+            header = [cell.strip() for cell in re.split(r'(?<!\\)\|', rows[index].strip('|'))]
+            separator = [cell.strip() for cell in rows[index + 1].strip('|').split('|')]
+            if len(header) < 2 or len(header) != len(separator) or not all(re.fullmatch(r':?-{3,}:?', cell) for cell in separator):
+                continue
+            data = []
+            for row in rows[index + 2:]:
+                cells = [cell.strip() for cell in re.split(r'(?<!\\)\|', row.strip('|'))]
+                if len(cells) != len(header) or all(re.fullmatch(r':?-{3,}:?', cell) for cell in cells):
+                    break
+                data.append(cells)
+            if data:
+                item['tables'].append({'header': header, 'rows': data})
     return result
 
 
@@ -227,7 +253,7 @@ def make_guide(repo: dict, readme: dict, details: dict, introductions) -> dict:
 
 
 def render_guide(guide: dict, clean) -> list[str]:
-    """네 가지 독자용 항목을 모든 프로젝트에 같은 순서로 표시합니다."""
+    """기능·사용·비교 항목을 모든 프로젝트에 같은 순서로 표시합니다."""
     lines = []
     headings = [('features', '어떤 일을 하나요', 'features_ko'),
                 ('audience', '누구에게 유용한가요', 'audience_ko'),
@@ -266,6 +292,9 @@ def render_guide(guide: dict, clean) -> list[str]:
             lines.extend([fence + language, code, fence, ''])
             if block.get('source_url'):
                 lines.extend(['[명령·예시 원문](' + block['source_url'] + ')', ''])
+    if guide.get('assessment'):
+        import comparisons
+        lines.extend(comparisons.render(guide['assessment'], clean))
     lines.extend(['### 출처와 확인 범위', '',
                   '소개 방식: ' + clean(guide['method']) + ' · 문서 확인: ' + clean(guide['checked_at']), ''])
     for source in guide.get('sources', []):

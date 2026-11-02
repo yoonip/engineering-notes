@@ -100,7 +100,70 @@
         "readme_sha": "d34d1b10f50857223890a9de8dc63264670c38dc",
         "readme_commit": "1a29929cb87f8ff1470271e6498f0694d395f54d",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md"
+        "readme_url": "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "음성 복제·더빙·전사·오디오북 작업과 모델 관리를 한 앱에서 연결할 수 있습니다. 여러 작업마다 별도 실행 화면을 오가는 부담을 줄이는 구성입니다.",
+              "source_urls": [
+                "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md"
+              ]
+            },
+            {
+              "text": "로컬 모델과 API·MCP·작업 대기열을 제공하므로, 파일을 자신의 장치에서 처리하고 반복 작업을 자동화할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "모델 파일을 직접 보관하고 장치의 연산 자원을 사용합니다. 공식 안내도 CPU에서는 더 느리다고 설명하므로 장시간 음성의 처리량은 엔진·하드웨어 조건을 함께 봐야 합니다.",
+              "source_urls": [
+                "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md"
+              ]
+            },
+            {
+              "text": "앱의 AGPL 라이선스와 모델 가중치·음성·출력물의 이용 조건이 다릅니다. 앱을 설치했다는 이유만으로 모든 모델을 같은 조건으로 사용할 수는 없습니다.",
+              "source_urls": [
+                "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md#license--responsible-use"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "F5-TTS",
+              "url": "https://github.com/SWivid/F5-TTS",
+              "difference_ko": "VoiceStudio는 여러 음성 엔진을 묶는 작업용 앱입니다. F5-TTS는 해당 TTS 모델의 CLI·Gradio 추론과 학습·미세조정을 제공하는 연구 코드이므로, 한 모델의 동작을 직접 다루는 목적에 더 가깝습니다.",
+              "source_urls": [
+                "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md",
+                "https://github.com/SWivid/F5-TTS#readme"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "음성 생성뿐 아니라 전사·더빙·배치 내보내기까지 같은 화면에서 진행하고 로컬 파일 중심으로 관리하려는 경우 선택할 만합니다.",
+              "source_urls": [
+                "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md"
+              ]
+            },
+            {
+              "text": "특정 음성 모델의 학습 코드나 추론 설정을 연구하는 것이 목적이면, VoiceStudio의 통합 화면과 F5-TTS 같은 원 모델 저장소의 연구 기능을 나누어 비교하는 편이 좋습니다.",
+              "source_urls": [
+                "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md",
+                "https://github.com/SWivid/F5-TTS#readme"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 1206390571,
+          "readme_sha": "d34d1b10f50857223890a9de8dc63264670c38dc",
+          "readme_commit": "1a29929cb87f8ff1470271e6498f0694d395f54d",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/debpalash/VoiceStudio/blob/1a29929cb87f8ff1470271e6498f0694d395f54d/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -200,7 +263,79 @@
         "readme_sha": "ff6a92573ef6412495055d979cff1d7464e1fa65",
         "readme_commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md"
+        "readme_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "기존 코드를 읽고 재사용한 뒤 필요한 변경만 하도록 작업 원칙을 제공합니다. 작은 기능 추가나 유지보수에서 변경 범위를 관리하는 데 도움이 되는 구성입니다.",
+              "source_urls": [
+                "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md#how-it-works"
+              ]
+            },
+            {
+              "text": "현재 diff 검토와 전체 저장소 감사의 진입점이 따로 있고, 문제·원인·수정 방법을 함께 제시하도록 안내합니다.",
+              "source_urls": [
+                "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md#commands"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "호스트에 따라 기능이 다릅니다. 지침 파일만 지원하는 어댑터는 상시 규칙을 읽지만 대화형 명령은 제공하지 않으므로 설치 환경별 지원을 확인해야 합니다.",
+              "source_urls": [
+                "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md#commands"
+              ]
+            },
+            {
+              "text": "비용·시간 등을 표시하는 band는 지정된 Claude Code 환경에 한정되며 VS Code 채팅 패널·클라우드 세션·claude -p에서는 표시되지 않습니다.",
+              "source_urls": [
+                "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md#new-in-53-the-band"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "Superpowers",
+              "url": "https://github.com/obra/superpowers",
+              "difference_ko": "Ponytail은 기존 해법 재사용과 필요한 범위의 변경·검토에 초점을 둡니다. Superpowers는 요구사항 확인부터 설계 승인·구현 계획·TDD·작업별 리뷰로 이어지는 개발 절차를 중심으로 구성합니다.",
+              "source_urls": [
+                "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md",
+                "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+              ]
+            },
+            {
+              "name": "ECC",
+              "url": "https://github.com/affaan-m/ECC",
+              "difference_ko": "ECC는 계획·테스트·리뷰 외에도 메모리·훅·보안·여러 전문 작업을 묶는 넓은 도구 모음입니다. Ponytail은 변경의 크기와 검토 방식을 일관되게 적용하려는 목적에서 비교할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md",
+                "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "이미 개발·테스트 절차가 있는 저장소에서 불필요한 추상화와 주변 코드 수정을 줄이고 싶은 경우 선택할 만합니다.",
+              "source_urls": [
+                "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md"
+              ]
+            },
+            {
+              "text": "요구사항 정리와 설계·TDD 절차 자체를 새로 정해야 하는 큰 기능 개발이라면 Superpowers 같은 단계형 작업 흐름도 함께 비교하는 편이 좋습니다.",
+              "source_urls": [
+                "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md",
+                "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 1266797999,
+          "readme_sha": "ff6a92573ef6412495055d979cff1d7464e1fa65",
+          "readme_commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -288,7 +423,71 @@
         "readme_sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
         "readme_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md"
+        "readme_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "발견자와 검증자를 분리하고 확인됨·추가 검증 필요·기각을 다른 상태로 기록합니다. 취약점 후보와 확정된 근거가 섞이는 일을 줄이도록 설계했습니다.",
+              "source_urls": [
+                "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#what-it-does"
+              ]
+            },
+            {
+              "text": "코드 구조·신뢰 경계·조사 범위 장부와 findings.json을 연결하고 검증기로 형식을 점검하므로, 조사 범위와 판단 근거를 후속 검토에 남길 수 있습니다.",
+              "source_urls": [
+                "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#what-it-does"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "도구 사용과 병렬 하위 에이전트를 지원하는 모델·호스트 및 결과 검증기를 실행할 Node.js가 필요합니다.",
+              "source_urls": [
+                "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#requirements"
+              ]
+            },
+            {
+              "text": "대상 코드를 실제 실행해 검증하려면 네트워크·환경변수·쓰기 경로·자원 제한을 강제하는 OS 샌드박스가 필요합니다. 해당 조건을 마련하지 못하면 후보를 추가 검증 필요 상태로 남깁니다.",
+              "source_urls": [
+                "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md#requirements"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "Semgrep CE",
+              "url": "https://github.com/semgrep/semgrep",
+              "difference_ko": "Semgrep CE는 패턴과 YAML 룰을 정의해 반복 스캔하는 방식입니다. 이 스킬은 에이전트가 구조와 신뢰 경계를 조사하고 후보별 검증·보고를 진행하는 방식이므로, 룰 검사와 조사형 감사의 역할이 다릅니다.",
+              "source_urls": [
+                "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
+                "https://docs.semgrep.dev/writing-rules/overview"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "관리하는 저장소의 신뢰 경계와 데이터 흐름을 따라가며 후보별 근거·미해결 사실·조사 범위를 기록하려는 경우 선택할 만합니다.",
+              "source_urls": [
+                "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md"
+              ]
+            },
+            {
+              "text": "이미 정의한 금지 패턴을 매 PR마다 반복 검사하는 목적에는 Semgrep CE의 룰 기반 CI 스캔이 비교 대상입니다. 에이전트 감사는 별도 조사 단계로 함께 둘 수 있습니다.",
+              "source_urls": [
+                "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
+                "https://docs.semgrep.dev/writing-rules/overview",
+                "https://docs.semgrep.dev/deployment/oss-deployment"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 1273427276,
+          "readme_sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+          "readme_commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -381,7 +580,79 @@
         "readme_sha": "d8017086ca85d2e851ef2e0c88470b0b09dc3d4d",
         "readme_commit": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md"
+        "readme_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "계획·테스트·구현·리뷰·검증·기억을 연결하고 여러 전문 스킬을 제공합니다. 팀이 반복하는 개발 절차를 재사용할 수 있는 구성입니다.",
+              "source_urls": [
+                "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md"
+              ]
+            },
+            {
+              "text": "Claude Code 외에 Codex 등 여러 호스트의 설치 경로와 지원 표를 제공하므로, 호스트별 적용 범위를 비교하며 필요한 도구를 선택할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md#platform-support"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "공식 README는 현재 Claude Code에서 가장 잘 작동하며 일부 호스트는 기능이 제한된 어댑터라고 설명합니다. 같은 설치 이름이 있어도 훅·메모리·명령의 기능이 같지는 않습니다.",
+              "source_urls": [
+                "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md#platform-support"
+              ]
+            },
+            {
+              "text": "Claude Code 플러그인 설치와 전체 수동 설치를 겹치지 않도록 안내합니다. 훅 프로필·설치 범위·기존 프로젝트 규칙을 먼저 정해야 구성 중복을 피할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md#install-with-claude-code"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "Superpowers",
+              "url": "https://github.com/obra/superpowers",
+              "difference_ko": "Superpowers는 설계·구현 계획·TDD·작업별 리뷰의 기본 절차를 중심으로 합니다. ECC는 이와 겹치는 개발 절차에 메모리·보안·분야별 도구와 호스트별 설정을 더 넓게 묶습니다.",
+              "source_urls": [
+                "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+                "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/README.md"
+              ]
+            },
+            {
+              "name": "Ponytail",
+              "url": "https://github.com/DietrichGebert/ponytail",
+              "difference_ko": "Ponytail은 재사용·최소 변경·diff 검토 원칙을 적용하는 데 집중합니다. 여러 전문 도구까지 필요한지, 변경 원칙만 필요한지에 따라 ECC와 비교할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+                "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "계획·테스트·리뷰·메모리·보안 작업을 한 도구 모음에서 선택해 팀의 반복 절차로 묶으려는 경우 선택할 만합니다.",
+              "source_urls": [
+                "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md"
+              ]
+            },
+            {
+              "text": "한 가지 변경 원칙만 추가하려는 경우에는 Ponytail 같은 범위가 좁은 도구도 비교할 수 있습니다. 필요한 기능과 현재 호스트의 지원 항목을 먼저 대조하는 편이 좋습니다.",
+              "source_urls": [
+                "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+                "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 1136590548,
+          "readme_sha": "d8017086ca85d2e851ef2e0c88470b0b09dc3d4d",
+          "readme_commit": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -471,7 +742,78 @@
         "readme_sha": "8f27aa965cb56ab578d637e53f0392ae4e2d06db",
         "readme_commit": "e89e3ada3e875a89ac2c5d33d11e65ebef6fe285",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md"
+        "readme_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "critique·audit·polish·bolder처럼 목적이 다른 명령에 화면이나 컴포넌트를 지정할 수 있어, 기존 UI를 작은 범위로 반복 수정하는 데 적합한 구성입니다.",
+              "source_urls": [
+                "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#why"
+              ]
+            },
+            {
+              "text": "에이전트 지침 외에 독립적인 디자인 탐지 CLI를 제공합니다. 소스나 렌더링한 페이지를 검사하고 JSON·GitHub Actions 주석으로 결과를 받을 수 있습니다.",
+              "source_urls": [
+                "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#three-ways-to-run-the-detector"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "JSX·TSX 같은 소스 파일 검사만으로는 렌더링 후의 낮은 대비나 작은 글자를 모두 검사하지 못합니다. 이런 항목은 실제 페이지 URL과 브라우저를 대상으로 확인해야 합니다.",
+              "source_urls": [
+                "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#three-ways-to-run-the-detector"
+              ]
+            },
+            {
+              "text": "수동 복사는 디자인 훅과 하위 에이전트를 포함하지 않습니다. 호스트별 훅 지원·신뢰 절차에 따라 자동 검토가 적용되는 범위가 달라집니다.",
+              "source_urls": [
+                "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#installation"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "Hallmark",
+              "url": "https://github.com/Nutlope/hallmark",
+              "difference_ko": "Hallmark는 테마 선택·첫 화면 제작·여러 화면 폭 검사로 새 페이지를 만드는 흐름을 제공합니다. Impeccable은 기존 화면의 특정 요소를 지시·검토·수정하는 명령이 중심이라는 차이가 있습니다.",
+              "source_urls": [
+                "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md",
+                "https://github.com/Nutlope/hallmark/blob/4f6a46c6dc325d40ab268c93e25c7b96676ebccd/README.md"
+              ]
+            },
+            {
+              "name": "taste-skill",
+              "url": "https://github.com/Leonxlnx/taste-skill",
+              "difference_ko": "taste-skill은 시각적 방향과 참고 이미지·브라우저 검사를 연결해 페이지나 앱 화면을 만드는 흐름입니다. Impeccable은 기존 제품의 목적·디자인 규칙을 기록하고 대상별 명령으로 반복 수정하는 데 초점을 둡니다.",
+              "source_urls": [
+                "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md",
+                "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "이미 있는 가입 흐름·가격 카드·설정 화면을 대상으로 위계·문구·접근성·반응형 문제를 단계적으로 고치려는 경우 선택할 만합니다.",
+              "source_urls": [
+                "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#how-it-works"
+              ]
+            },
+            {
+              "text": "에이전트가 작성하는 UI에 자동 탐지나 CI 점검을 추가하려면 detector·훅 기능이 선택 기준입니다. 제품의 실제 사용성과 미적 판단은 별도 화면 검토와 함께 확인합니다.",
+              "source_urls": [
+                "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md#three-ways-to-run-the-detector"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 1097346685,
+          "readme_sha": "8f27aa965cb56ab578d637e53f0392ae4e2d06db",
+          "readme_commit": "e89e3ada3e875a89ac2c5d33d11e65ebef6fe285",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -571,7 +913,72 @@
         "readme_sha": "e76e22f63cd7b6f5ffce43d522781bbf30efdf6c",
         "readme_commit": "7c5c1ce849a6b479f957b69de8dcac8db7eab127",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md"
+        "readme_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "HTML·CSS와 시간 탐색이 가능한 애니메이션으로 장면을 작성하며 React를 필수로 요구하지 않습니다. 기존 웹 표현과 미디어를 영상 장면으로 옮기는 데 유용한 구성입니다.",
+              "source_urls": [
+                "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#why-hyperframes"
+              ]
+            },
+            {
+              "text": "프로젝트 생성·미리보기·검사·렌더링 CLI를 제공하고 로컬·Docker·분산 렌더링 경로를 연결할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#hyperframes-stack"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "수동 CLI에는 Node.js 22 이상과 FFmpeg가 필요하며, 렌더링은 headless Chrome에서 프레임을 캡처하는 구조입니다. 웹페이지 파일만 전달한다고 영상 출력 환경까지 준비되는 것은 아닙니다.",
+              "source_urls": [
+                "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#manually-with-the-cli",
+                "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#how-it-works"
+              ]
+            },
+            {
+              "text": "애니메이션을 특정 시간으로 정확히 이동할 수 있게 구성해야 합니다. GSAP·CSS·Lottie 등의 어댑터 또는 직접 만든 프레임 어댑터에 맞춰 시간축과 미디어를 작성하는 작업이 필요합니다.",
+              "source_urls": [
+                "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#how-it-works"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "Remotion",
+              "url": "https://www.remotion.dev/",
+              "difference_ko": "둘 다 웹 기술로 장면을 렌더링하지만 작성 방식이 다릅니다. HyperFrames는 HTML·CSS와 시간 탐색 애니메이션을 사용하고, Remotion은 React 컴포넌트와 프레임 기반 코드를 사용합니다.",
+              "source_urls": [
+                "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#hyperframes-vs-remotion",
+                "https://www.remotion.dev/docs/idea"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "HTML·CSS로 제품 소개·자막·차트·모션그래픽을 작성하고 CLI로 반복 렌더링하려는 경우 선택할 만합니다.",
+              "source_urls": [
+                "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#what-you-can-build",
+                "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#how-it-works"
+              ]
+            },
+            {
+              "text": "이미 React 컴포넌트와 프레임 기반 영상 코드를 재사용하고 있다면 Remotion의 작성 모델도 비교하는 편이 좋습니다. 어느 쪽이 기존 작성 자산과 팀의 작업 흐름에 맞는지가 선택 기준입니다.",
+              "source_urls": [
+                "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md#hyperframes-vs-remotion",
+                "https://www.remotion.dev/docs/idea"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 1177402105,
+          "readme_sha": "e76e22f63cd7b6f5ffce43d522781bbf30efdf6c",
+          "readme_commit": "7c5c1ce849a6b479f957b69de8dcac8db7eab127",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/heygen-com/hyperframes/blob/7c5c1ce849a6b479f957b69de8dcac8db7eab127/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -681,7 +1088,70 @@
         "readme_sha": "5d355b2bd0c451a5394e6e0978fe4933c4e1f061",
         "readme_commit": "7a38047acf26a729cbb27851e3cb81639da86b29",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md"
+        "readme_url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "여러 사이트의 검색·읽기·영상 자막을 채널별 CLI로 묶어, 에이전트가 플랫폼마다 다른 명령을 직접 조합하는 부담을 줄입니다. GitHub 자료와 동영상 내용을 함께 조사할 때 이 구성이 유용합니다.",
+              "source_urls": [
+                "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md"
+              ]
+            },
+            {
+              "text": "각 동작에 우선 도구와 대체 도구를 순서대로 두므로 한 경로가 실패했을 때 다른 경로를 시도할 수 있습니다. 채널 상태를 확인하고 필요한 채널만 추가하거나 제거하는 관리 흐름도 제공합니다.",
+              "source_urls": [
+                "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "지원 범위는 채널마다 다릅니다. 로그인·브라우저 세션이나 별도 전사 API 키가 필요한 기능이 있고, 실험 채널은 플랫폼의 자동 접근 제한이나 개편으로 작동하지 않을 수 있습니다.",
+              "source_urls": [
+                "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md"
+              ]
+            },
+            {
+              "text": "자료 검색·읽기를 위한 도구입니다. 공식 문서는 게시·댓글·좋아요·개인 메시지를 하지 않는 읽기 전용 범위를 명시하므로, 소셜 계정을 운영하는 자동화 도구로 선택하면 요구가 맞지 않습니다.",
+              "source_urls": [
+                "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "yt-dlp",
+              "url": "https://github.com/yt-dlp/yt-dlp",
+              "difference_ko": "yt-dlp는 영상·오디오 다운로드, 형식 선택, 자막 파일 저장을 세밀하게 제어하는 CLI입니다. Agent-Reach는 GitHub·웹·커뮤니티·영상 자료를 에이전트의 채널 작업으로 연결합니다. 영상 파일과 자막을 일괄 보관하는 작업과 여러 출처의 내용을 조사하는 작업에서 선택 기준이 달라집니다.",
+              "source_urls": [
+                "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md",
+                "https://github.com/yt-dlp/yt-dlp#readme"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "GitHub README, 웹페이지, 영상 자막을 같은 조사 흐름에서 읽어야 하고 채널별 로그인·의존성을 관리할 수 있다면 Agent-Reach를 검토할 수 있습니다. 이 선택은 지원 채널과 대체 도구 구조에 근거합니다.",
+              "source_urls": [
+                "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md"
+              ]
+            },
+            {
+              "text": "영상의 해상도·컨테이너·오디오 트랙·자막 파일을 정확히 골라 저장하는 작업이 중심이라면 yt-dlp의 다운로드 옵션을 먼저 비교하는 편이 맞습니다.",
+              "source_urls": [
+                "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md",
+                "https://github.com/yt-dlp/yt-dlp#readme"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 1165277268,
+          "readme_sha": "5d355b2bd0c451a5394e6e0978fe4933c4e1f061",
+          "readme_commit": "7a38047acf26a729cbb27851e3cb81639da86b29",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/Panniantong/Agent-Reach/blob/7a38047acf26a729cbb27851e3cb81639da86b29/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -781,7 +1251,70 @@
         "readme_sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
         "readme_commit": "4718f50d9941b9d7b7ebd1febc2982f055560a73",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md"
+        "readme_url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "디스어셈블리·디컴파일·함수 그래프·자료형·주석을 하나의 분석 프로젝트에서 다룹니다. 같은 함수를 여러 표현으로 대조하며 바이너리를 이해할 수 있다는 점이 장점입니다.",
+              "source_urls": [
+                "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md"
+              ]
+            },
+            {
+              "text": "다양한 명령어 집합·실행 파일 형식을 지원하며 대화형 분석과 자동 분석을 모두 제공합니다. Java·Python 스크립트와 확장 기능으로 반복 분석을 연결할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "현재 확인한 사전 빌드 배포판에도 64비트 JDK 25가 필요합니다. 소스에서 빌드하려면 Gradle·Python·플랫폼별 컴파일러까지 준비해야 하므로, GUI 배포판 사용과 도구 개발의 환경 부담이 다릅니다.",
+              "source_urls": [
+                "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md"
+              ]
+            },
+            {
+              "text": "바이너리의 기계어와 자료 구조를 분석하는 프레임워크이므로, 화면에 나온 디컴파일 표현을 이해하려면 대상 프로세서·실행 형식과 분석 설정을 함께 알아야 합니다. 단순 문자열 검색만 필요한 작업에는 분석 환경 구성이 과할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "radare2",
+              "url": "https://github.com/radareorg/radare2",
+              "difference_ko": "radare2는 저수준 CLI·라이브러리·플러그인과 r2pipe 스크립팅을 중심으로 분석·디버깅·수정을 연결합니다. Ghidra는 디컴파일러·그래프·주석을 함께 탐색하는 통합 분석 환경을 제공합니다. radare2에도 공식 Qt GUI와 Ghidra 디컴파일러 연동 플러그인이 있어 GUI 유무만으로 구분하지 않습니다.",
+              "source_urls": [
+                "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md",
+                "https://github.com/radareorg/radare2/blob/master/README.md"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "낯선 실행 파일의 함수·분기·자료형을 GUI에서 대조하고 분석 주석을 쌓는 학습이나 펌웨어 조사라면 Ghidra의 통합 프로젝트 구성이 선택 기준이 됩니다.",
+              "source_urls": [
+                "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md"
+              ]
+            },
+            {
+              "text": "분석 명령을 터미널 파이프라인이나 기존 스크립트에 촘촘히 연결하고 디버깅·바이너리 수정 작업을 함께 하려면 radare2의 CLI와 r2pipe를 비교해 볼 수 있습니다.",
+              "source_urls": [
+                "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md",
+                "https://github.com/radareorg/radare2/blob/master/README.md"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 173228436,
+          "readme_sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
+          "readme_commit": "4718f50d9941b9d7b7ebd1febc2982f055560a73",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/NationalSecurityAgency/ghidra/blob/4718f50d9941b9d7b7ebd1febc2982f055560a73/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -885,7 +1418,70 @@
         "readme_sha": "8efa355f7d03ada51edccea568dccf26e628b511",
         "readme_commit": "12af471f627f866411b4bd785b19646d3672784c",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md"
+        "readme_url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "제작 의도에서 시각적 방향을 고르고 실제 이미지·영상 자료를 연결한 뒤 브라우저에서 결과를 확인하는 과정이 하나의 스킬로 묶여 있습니다. 자료 조사와 구현이 따로 흩어지기 쉬운 새 페이지 작업에 도움이 됩니다.",
+              "source_urls": [
+                "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md"
+              ]
+            },
+            {
+              "text": "일반 웹페이지와 대시보드·설정 화면을 구분하고, 앱 화면에는 데이터·표·차트·반응형 내비게이션을 위한 별도 규칙을 적용합니다. React·Vue·Svelte·HTML 등 특정 프레임워크 하나에만 묶인 지침은 아닙니다.",
+              "source_urls": [
+                "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "도구 스크립트에 Node.js 22 이상과 Chrome·Edge·Chromium이 필요하고, 공개 이미지 탐색에는 네트워크 연결이 필요합니다. 브라우저를 실행할 수 없는 환경에서는 문서가 제시한 전체 확인 흐름을 그대로 적용하기 어렵습니다.",
+              "source_urls": [
+                "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md"
+              ]
+            },
+            {
+              "text": "스킬 자체가 별도 API 키를 요구하지 않는다는 안내와 코딩 에이전트의 모델 사용량은 다릅니다. 공식 문서도 제작 과정에 모델 토큰과 여러 차례의 브라우저 검토가 들어간다고 설명하므로, 작은 문구 수정까지 전체 제작 절차로 돌릴 필요는 없습니다.",
+              "source_urls": [
+                "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "Impeccable",
+              "url": "https://github.com/pbakaus/impeccable",
+              "difference_ko": "Impeccable은 critique·audit·polish 등 명령으로 기존 화면의 특정 부분을 진단하고 반복 수정하는 흐름을 강조합니다. Taste Skill은 새 시각 방향·실제 이미지·페이지 또는 앱 구성·브라우저 확인을 연결하는 제작 흐름을 제공합니다.",
+              "source_urls": [
+                "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md",
+                "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "콘텐츠는 있지만 시각적 방향이 정해지지 않은 새 랜딩 페이지나 앱 화면을 만들고, 이미지 선택부터 브라우저 확인까지 진행할 여유가 있다면 Taste Skill을 검토할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md"
+              ]
+            },
+            {
+              "text": "이미 운영 중인 UI에서 가격표·가입 폼·설정 영역처럼 대상을 좁혀 진단하고 다듬으려면 Impeccable의 개별 검토·수정 명령을 먼저 비교하는 편이 좋습니다.",
+              "source_urls": [
+                "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md",
+                "https://github.com/pbakaus/impeccable/blob/e89e3ada3e875a89ac2c5d33d11e65ebef6fe285/README.md"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 1162099055,
+          "readme_sha": "8efa355f7d03ada51edccea568dccf26e628b511",
+          "readme_commit": "12af471f627f866411b4bd785b19646d3672784c",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/Leonxlnx/taste-skill/blob/12af471f627f866411b4bd785b19646d3672784c/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -978,7 +1574,70 @@
         "readme_sha": "97031d8ebe8c9e9ecfbf204ee3a99c47bb2bcb26",
         "readme_commit": "21d287aed0aad56cf74bd001d24194916b5a4515",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md"
+        "readme_url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "여러 제공자의 무료 사용 구간과 사용자 지정 엔드포인트를 하나의 OpenAI 호환 주소로 묶습니다. 기존 클라이언트의 주소와 통합 키를 바꿔 여러 제공자를 시험하는 흐름을 만들 수 있습니다.",
+              "source_urls": [
+                "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md"
+              ]
+            },
+            {
+              "text": "제공자·모델·키별 사용량을 기록하고 제한·오류가 생기면 대체 체인을 적용합니다. 개인용 로컬 대시보드와 암호화된 키 저장소를 함께 제공해 여러 API 키를 한곳에서 관리할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "무료 구간은 제공자의 한도·가용성에 종속됩니다. 공식 문서도 변동하는 지연, 서비스 수준 보장 부재와 일일 한도 소진에 따른 모델 선택 변화를 제약으로 설명하므로 일정한 지연·모델 응답이 필요한 서비스에는 그대로 전제할 수 없습니다.",
+              "source_urls": [
+                "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md"
+              ]
+            },
+            {
+              "text": "기본 설계는 로컬 우선의 단일 사용자용입니다. 여러 사용자의 권한·예산을 나눠 운영하는 공용 게이트웨이가 필요하다면 그 관리 기능을 별도로 비교해야 합니다.",
+              "source_urls": [
+                "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "LiteLLM",
+              "url": "https://github.com/BerriAI/litellm",
+              "difference_ko": "LiteLLM은 Python SDK와 팀·조직용 중앙 Proxy Server를 제공하며 가상 키, 사용자·프로젝트별 비용 관리, 로깅·가드레일·부하 분산을 다룹니다. FreeLLMAPI는 개인 로컬 환경에서 제공자별 무료 한도와 대체 체인을 묶는 흐름을 강조합니다. 두 도구 모두 실제 추론은 연결한 제공자나 모델 서버가 수행합니다.",
+              "source_urls": [
+                "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md",
+                "https://github.com/BerriAI/litellm/blob/main/README.md"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "개인 학습·프로토타입에서 여러 제공자의 무료 구간을 시험하고, 한도 초과와 대체 모델의 응답 차이를 받아들일 수 있다면 FreeLLMAPI의 로컬 라우터 구성이 맞을 수 있습니다.",
+              "source_urls": [
+                "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md"
+              ]
+            },
+            {
+              "text": "팀별 가상 키·프로젝트 예산·권한·감사 기록을 중앙에서 관리해야 한다면 LiteLLM Proxy의 운영 기능을 먼저 검토하는 편이 좋습니다. 무료 한도를 합치는 것과 조직 운영 요건을 충족하는 것은 별도 판단입니다.",
+              "source_urls": [
+                "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md",
+                "https://github.com/BerriAI/litellm/blob/main/README.md"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 1217040185,
+          "readme_sha": "97031d8ebe8c9e9ecfbf204ee3a99c47bb2bcb26",
+          "readme_commit": "21d287aed0aad56cf74bd001d24194916b5a4515",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/tashfeenahmed/freellmapi/blob/21d287aed0aad56cf74bd001d24194916b5a4515/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -1067,7 +1726,70 @@
         "readme_sha": "7143caadd1258f56295e2c7766889478556836b3",
         "readme_commit": "553741557a57df44a46fb3ab72b6aafeaf945337",
         "method": "공식 문서 한국어 해설",
-        "readme_url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md"
+        "readme_url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md",
+        "assessment": {
+          "advantages_ko": [
+            {
+              "text": "DeepSeek 모델 실행에 필요한 최적화 커널, 모델·샘플러 실행기, 병렬화와 비동기 스케줄링을 함께 공개합니다. 해당 모델의 추론 시스템을 연구하거나 실행 경로를 수정할 때 살펴볼 범위가 명확합니다.",
+              "source_urls": [
+                "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md"
+              ]
+            },
+            {
+              "text": "구조화 출력과 결정적 샘플링·배치 구성에 따른 결과 일관성 같은 제어 기능을 제공합니다. 다만 일부 기능은 NVIDIA 전용 설정이며 문서의 활성화 조건을 함께 적용해야 합니다.",
+              "source_urls": [
+                "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md"
+              ]
+            }
+          ],
+          "limitations_ko": [
+            {
+              "text": "확인한 공개판의 지원 모델은 DeepSeek-V4.1-Flash이고 하드웨어도 NVIDIA SM100·Ascend 950으로 제한됩니다. Linux·컴파일러·가속기 런타임 조건까지 맞춰야 하므로 범용 CPU PC용 추론 도구로 선택할 수는 없습니다.",
+              "source_urls": [
+                "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md"
+              ]
+            },
+            {
+              "text": "공개판은 오프라인 추론 중심이며 완전한 서비스에 필요한 KV 캐시 시스템, 프리필·디코드 분리와 복제본 간 부하 분산은 추가 구성 대상으로 명시합니다. 공개 코드만 빌드했다고 완성된 온라인 서비스가 생기는 것은 아닙니다.",
+              "source_urls": [
+                "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md"
+              ]
+            }
+          ],
+          "alternatives": [
+            {
+              "name": "vLLM",
+              "url": "https://github.com/vllm-project/vllm",
+              "difference_ko": "vLLM은 여러 모델 아키텍처·하드웨어를 대상으로 추론과 온라인 서빙을 제공하고 OpenAI 호환 API 서버를 포함합니다. DeepInfer의 현재 공개 범위는 특정 DeepSeek 모델과 가속기의 오프라인 실행·핵심 엔진에 집중합니다.",
+              "source_urls": [
+                "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md",
+                "https://github.com/vllm-project/vllm/blob/main/README.md"
+              ]
+            }
+          ],
+          "choose_ko": [
+            {
+              "text": "지원되는 DeepSeek 모델과 대규모 가속기를 보유하고 커널·MoE 병렬화·스케줄링 내부를 연구하거나 직접 서빙 인프라를 구성하려면 DeepInfer를 검토할 수 있습니다.",
+              "source_urls": [
+                "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md"
+              ]
+            },
+            {
+              "text": "여러 모델을 바꿔 가며 OpenAI 호환 API 서버를 빠르게 구성하는 것이 우선이면, 자신이 가진 하드웨어와 모델이 지원되는지 확인한 뒤 vLLM을 먼저 비교하는 편이 적합합니다.",
+              "source_urls": [
+                "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md",
+                "https://github.com/vllm-project/vllm/blob/main/README.md"
+              ]
+            }
+          ],
+          "checked_at": "2026-11-02",
+          "repository_id": 1421825221,
+          "readme_sha": "7143caadd1258f56295e2c7766889478556836b3",
+          "readme_commit": "553741557a57df44a46fb3ab72b6aafeaf945337",
+          "method": "공식 문서의 기능·조건에 근거한 비교",
+          "origin": "reviewed",
+          "source_url": "https://github.com/deepseek-ai/DeepInfer/blob/553741557a57df44a46fb3ab72b6aafeaf945337/README.md"
+        }
       },
       "readme": {
         "status": "ok",
@@ -1079,5 +1801,6 @@
       }
     }
   ],
-  "guide_format_version": 2
+  "guide_format_version": 2,
+  "comparison_format_version": 1
 }

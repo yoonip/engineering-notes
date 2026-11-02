@@ -16,6 +16,7 @@ from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 from bs4 import BeautifulSoup
 import guides
+import comparisons
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -216,7 +217,7 @@ def update_index(output: Path) -> None:
     (output / '주간기록' / 'README.md').write_text('\n'.join(lines), encoding='utf-8')
 
 
-def collect(output: Path, now: datetime, token: str, reviewed: dict, cache_path: Path, details: dict | None = None) -> dict:
+def collect(output: Path, now: datetime, token: str, reviewed: dict, cache_path: Path, details: dict | None = None, assessments: dict | None = None) -> dict:
     start = week_start(now)
     target = output / '주간기록' / f'{start.year:04d}' / f'{start.month:02d}' / start.strftime('%Y-%m-%d')
     # 발행된 같은 주는 그대로 두므로 재실행으로 과거 순위가 바뀌지 않습니다.
@@ -248,6 +249,9 @@ def collect(output: Path, now: datetime, token: str, reviewed: dict, cache_path:
             row['readme']['documents'] = [{k: v for k, v in document.items() if k != 'text'}
                                         for document in readme.get('documents', [])]
             row['guide'] = guides.make_guide(repo, readme, detail_map, introductions)
+            if assessments is not None:
+                row['guide']['assessment'] = comparisons.build(repo, readme,
+                    {k.casefold(): v for k, v in assessments.items()}, introductions, get, repository, token)
     stamp = now.astimezone(KST).isoformat(timespec='seconds')
     data = {'schema_version': 1, 'label': label(start), 'week_start': start.date().isoformat(),
             'collected_at': stamp, 'source_url': final_url, 'source_sha256': hashlib.sha256(raw).hexdigest(),
@@ -276,7 +280,8 @@ def main() -> None:
     args = parser.parse_args()
     reviewed = json.loads((HERE / 'reviewed.json').read_text(encoding='utf-8'))
     details = json.loads((HERE / 'details.json').read_text(encoding='utf-8'))
-    result = collect(args.output, datetime.now(KST), os.environ.get('GITHUB_TOKEN', ''), reviewed, HERE / 'translations.json', details)
+    assessments = json.loads((HERE / 'comparisons.json').read_text(encoding='utf-8'))
+    result = collect(args.output, datetime.now(KST), os.environ.get('GITHUB_TOKEN', ''), reviewed, HERE / 'translations.json', details, assessments)
     if args.report:
         write_json(args.report, result)
     print(json.dumps(result, ensure_ascii=False))
