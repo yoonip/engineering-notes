@@ -37,7 +37,7 @@ N개 아이템을 순차 검사하면 시간 O(N), 누적 합계 상태는 O(1)�
 
 주의할 점: 개수나 평균이 아니라 가격 합계입니다. 대상 행이 없으면 SQL SUM의 결과는 NULL입니다.
 
-공식 스키마 표의 RARITY 자료형 표기와 달리 예제·조회 조건은 `COMMON`, `RARE`, `LEGEND` 문자열을 사용합니다. 쿼리에서도 이 문자열 값으로 비교합니다.
+공식 스키마 표의 RARITY 자료형 표기와 달리 예제·조회 조건은 `COMMON`, `LEGEND`, `UNIQUE` 문자열을 사용합니다. 쿼리에서도 이 문자열 값으로 비교합니다.
 
 ## 다른 방법: 조건부 SUM
 
@@ -83,7 +83,7 @@ A sequential scan takes O(N) time and O(1) aggregate state. The result is one ro
 
 Boundary cases: Return a price sum, not a count or mean. SQL SUM returns NULL when no rows qualify.
 
-Although the official schema’s RARITY type label is inconsistent, its examples and predicates use string values `COMMON`, `RARE` and `LEGEND`. The queries compare those string values.
+Although the official schema’s RARITY type label is inconsistent, its examples and predicates use string values `COMMON`, `LEGEND` and `UNIQUE`. The queries compare those string values.
 
 ### Alternative: Conditional SUM
 

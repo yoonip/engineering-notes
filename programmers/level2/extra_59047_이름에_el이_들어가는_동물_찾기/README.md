@@ -8,7 +8,7 @@
 
 ## 문제와 조건 / Task and conditions
 
-개 중 이름에 대소문자 없이 el이 포함된 동물의 ID·이름을 이름순으로 출력합니다.
+개 중 이름에 대소문자 구분 없이 el이 포함된 동물의 ID·이름을 이름순으로 출력합니다.
 
 Output IDs and names of dogs containing el case-insensitively, ordered by name.
 

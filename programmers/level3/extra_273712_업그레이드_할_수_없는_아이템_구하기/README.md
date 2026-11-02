@@ -26,7 +26,7 @@ A terminal item is one whose ID never appears as another item’s parent. A null
 
 ## 비용 / Complexity
 
-인덱스 없는 중첩 검사 최악 O(it), 부모 인덱스·안티조인 계획이면 개선 / Unindexed nested-check worst case O(it); parent indexes and antijoin plans improve it
+아이템 정보 i개와 관계 t개를 인덱스 없이 중첩 검사하면 O(it)이고, 결과 r개의 비교 정렬은 O(r log r)입니다. 부모 ID 인덱스와 안티조인 실행계획에 따라 조회 비용이 달라집니다. / A nested check of i items and t relations without indexes costs O(it), plus O(r log r) comparison sorting for r results. Parent-ID indexes and antijoin plans affect lookup cost.
 
 ## 구현 / Implementation
 

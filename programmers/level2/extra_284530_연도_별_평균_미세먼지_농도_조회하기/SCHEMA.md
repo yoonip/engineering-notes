@@ -13,8 +13,8 @@ Columns, types and nullability for the tables used by the solution. NULL is dist
 | `LOCATION1` | `VARCHAR` | FALSE |
 | `LOCATION2` | `VARCHAR` | FALSE |
 | `YM` | `DATE` | FALSE |
-| `PM_VAL1` | `NUMBER` | FLASE |
-| `PM_VAL2` | `NUMBER` | FLASE |
+| `PM_VAL1` | `NUMBER` | FALSE |
+| `PM_VAL2` | `NUMBER` | FALSE |
 
 자료형 표의 TRUE는 NULL 허용, FALSE는 NULL 불가를 뜻합니다. 기본키·고유성·행 수의 추가 조건은 공식 문제 본문을 따릅니다.
 

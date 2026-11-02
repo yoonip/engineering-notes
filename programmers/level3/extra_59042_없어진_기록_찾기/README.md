@@ -8,15 +8,11 @@ Level 3 · [59042 공식 문제 / Official problem](https://school.programmers.c
 
 입양 기록은 있지만 같은 ID의 입소 기록이 없는 동물의 ID·이름을 ID 오름차순으로 구합니다.
 
-## 풀이를 따라가기
+## 풀이와 정답이 되는 이유
 
-1. 입양 기록은 있지만 같은 ID의 입소 기록이 없는 동물의 ID·이름을 ID 오름차순으로 구합니다.
+입양 기록을 기준으로 LEFT JOIN하면 입소 기록이 없어도 입양 행이 유지됩니다. 연결된 입소 ID가 NULL인 행만 남기면 입소 정보가 누락된 동물을 정확히 찾습니다.
 
-## 왜 이 방법으로 풀 수 있나
-
-WHERE로 행을 먼저 제한하고, 필요한 키로 묶어 집계하며, 마지막에 출력 열과 정렬을 적용합니다. 조인으로 행이 늘어날 수 있는 곳은 DISTINCT·집계·EXISTS 중 문제에 맞는 방법으로 중복을 제어합니다.
-
-시간·공간: I개 입소·O개 입양에서 중첩 조인과 정렬 상한 O(IO+O log O)
+실행 비용: I개 입소·O개 입양에서 중첩 조인과 정렬 상한 O(IO+O log O)
 
 ## 다른 방법과 비교
 
@@ -25,7 +21,7 @@ WHERE로 행을 먼저 제한하고, 필요한 키로 묶어 집계하며, 마�
 | 항목 | 기본 풀이 | NOT EXISTS |
 |---|---|---|
 | 코드 | [solution.sql](solution.sql) | [alternative.sql](alternative.sql) |
-| 비용 | I개 입소·O개 입양에서 중첩 조인과 정렬 상한 O(IO+O log O) | SQL runtime depends on row counts, indexes and join plans |
+| 비용 | I개 입소·O개 입양에서 중첩 조인과 정렬 상한 O(IO+O log O) | 행 수·인덱스·조인 계획에 따라 달라집니다 |
 | 용도 | 기본 제출 구현 | 대안 구현 |
 
 ## 예제와 검증
@@ -48,7 +44,7 @@ Return adopted animals missing the corresponding admission ID, ordered by animal
 
 ### Method and correctness
 
-Return adopted animals missing the corresponding admission ID, ordered by animal ID ascending.
+A LEFT JOIN starting from adoptions retains rows without matching admissions. A NULL admission ID identifies exactly the missing admission records.
 
 ### Alternative and trade-offs
 
@@ -62,11 +58,11 @@ Complexity: SQL runtime depends on row counts, indexes and join plans; sorting R
 
 The original 100-point grading record is retained; local compatibility checks are distinguished from MySQL grading.
 
-The table above supplies argument arrays and expected results; [examples.json](examples.json) stores them as executable data. The original locally stored submission was graded 100; comments and the separate alternative are reviewed and tested locally, which is distinct from a new website submission.
+[query_fixtures.json](query_fixtures.json) contains input tables and expected rows. The saved original submission received 100 points; running the current queries in SQLite is a separate compatibility check, not a new MySQL submission.
 
 ## 출처 / Sources
 
-- [프로그래머스 공식 문제: 없어진 기록 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59042) — 문제 조건·예제·함수 인터페이스 / task rules, examples and interface. 확인 / checked: 2026-10-19.
+- [프로그래머스 공식 문제: 없어진 기록 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59042) — 문제 조건·입력 테이블·예제 / task rules, input tables and examples. 확인 / checked: 2026-10-19.
 
 ## 실행 / Run
 

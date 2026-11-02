@@ -20,7 +20,7 @@ Group by species to count all fish and obtain maximum length. Replace NULL lengt
 
 ## 정답이 되는 이유 / Why it works
 
-AVG는 원래 NULL을 무시하므로 먼저 10으로 바꿔야 문제의 평균입니다. MAX는 실제 측정 최대 길이이고 qualifying 그룹에는 33 이상 값이 반드시 있어 NULL 보정이 최대값을 바꾸지 않습니다.
+AVG는 원래 NULL을 무시하므로 먼저 10으로 바꿔야 문제의 평균입니다. MAX는 실제 측정 최대 길이이고 조건을 만족하는 그룹에는 33 이상 값이 반드시 있어 NULL 보정이 최대값을 바꾸지 않습니다.
 
 AVG normally ignores NULL, so replacing it with ten is essential. MAX uses measured lengths; a qualifying group must include a value at least 33, so the NULL substitution cannot alter its maximum.
 

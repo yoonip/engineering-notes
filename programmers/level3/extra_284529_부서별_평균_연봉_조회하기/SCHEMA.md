@@ -13,7 +13,7 @@ Columns, types and nullability for the tables used by the solution. NULL is dist
 | `DEPT_ID` | `VARCHAR` | FALSE |
 | `DEPT_NAME_KR` | `VARCHAR` | FALSE |
 | `DEPT_NAME_EN` | `VARCHAR` | FALSE |
-| `LOCATION` | `VARCHAR` | FLASE |
+| `LOCATION` | `VARCHAR` | FALSE |
 
 ## `HR_EMPLOYEES`
 

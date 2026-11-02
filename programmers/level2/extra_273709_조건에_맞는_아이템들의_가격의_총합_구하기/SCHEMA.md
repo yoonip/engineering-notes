@@ -12,7 +12,7 @@ Columns, types and nullability for the tables used by the solution. NULL is dist
 |---|---|---|
 | `ITEM_ID` | `INTEGER` | FALSE |
 | `ITEM_NAME` | `VARCHAR(N)` | FALSE |
-| `RARITY` | `문자열 / string (COMMON, RARE, LEGEND)` | FALSE |
+| `RARITY` | `문자열 / string` | FALSE |
 | `PRICE` | `INTEGER` | FALSE |
 
 공식 자료형 표에는 RARITY가 INTEGER로 적혀 있으나, 본문의 등급 값과 예제 입력은 문자열입니다. 여기에는 본문과 입력에 맞는 값의 종류를 표시했습니다.

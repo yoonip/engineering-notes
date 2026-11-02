@@ -26,7 +26,7 @@ The department-ID join associates each salary with its department. Grouping by d
 
 ## 비용 / Complexity
 
-일반 조인·그룹 계획은 인덱스 의존; 중첩 조인 최악 O(de), 그룹 정렬 O(d log d) / Plan-dependent join/grouping; unindexed nested-loop O(de), group sort O(d log d)
+부서 d개와 사원 e개를 인덱스 없이 중첩 조인하면 O(de), 부서별 결과의 비교 정렬은 O(d log d)입니다. 실제 조인·집계 비용은 실행계획에 따라 달라집니다. / For d departments and e employees, an unindexed nested-loop join costs O(de), with O(d log d) comparison sorting of department results. Actual join and aggregation costs depend on the plan.
 
 ## 구현 / Implementation
 

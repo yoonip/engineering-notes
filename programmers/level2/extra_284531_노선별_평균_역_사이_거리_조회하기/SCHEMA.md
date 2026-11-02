@@ -13,9 +13,9 @@ Columns, types and nullability for the tables used by the solution. NULL is dist
 | `LINE` | `VARCHAR(10)` | FALSE |
 | `NO` | `NUMBER` | FALSE |
 | `ROUTE` | `VARCHAR(50)` | FALSE |
-| `STATION_NAME` | `VARCHAR(100)` | FLASE |
-| `D_BETWEEN_DIST` | `NUMBER` | FLASE |
-| `D_CUMULATIVE` | `NUMBER` | FLASE |
+| `STATION_NAME` | `VARCHAR(100)` | FALSE |
+| `D_BETWEEN_DIST` | `NUMBER` | FALSE |
+| `D_CUMULATIVE` | `NUMBER` | FALSE |
 
 자료형 표의 TRUE는 NULL 허용, FALSE는 NULL 불가를 뜻합니다. 기본키·고유성·행 수의 추가 조건은 공식 문제 본문을 따릅니다.
 

@@ -26,7 +26,7 @@ WHERE removes unnamed rows before aggregation. GROUP BY and COUNT(*) form per-na
 
 ## 비용 / Complexity
 
-일반 스캔·해시 집계 O(n), 정렬 그룹 수 g에 O(g log g) / Typical O(n) scan/hash aggregation plus O(g log g) group sort
+해시 집계를 가정하면 n개 행의 집계 O(n), g개 그룹의 비교 정렬 O(g log g)입니다. 실제 접근 방식은 실행계획에 따라 달라집니다. / With hash aggregation, n rows take O(n) aggregation work and g groups take O(g log g) comparison sorting; the actual access method depends on the execution plan.
 
 ## 구현 / Implementation
 

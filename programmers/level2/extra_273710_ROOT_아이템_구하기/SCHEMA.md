@@ -12,7 +12,7 @@ Columns, types and nullability for the tables used by the solution. NULL is dist
 |---|---|---|
 | `ITEM_ID` | `INTEGER` | FALSE |
 | `ITEM_NAME` | `VARCHAR(N)` | FALSE |
-| `RARITY` | `문자열 / string (COMMON, RARE, LEGEND)` | FALSE |
+| `RARITY` | `문자열 / string` | FALSE |
 | `PRICE` | `INTEGER` | FALSE |
 
 ## `ITEM_TREE`

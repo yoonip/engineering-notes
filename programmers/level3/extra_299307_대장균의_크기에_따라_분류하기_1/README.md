@@ -20,7 +20,7 @@ First check whether size is at most 100, then whether it is at most 1000. Failin
 
 ## 정답이 되는 이유 / Why it works
 
-CASE는 처음 참인 조건의 결과를 반환합니다. 따라서 ≤100, 100~1000, >1000 세 구간이 겹치지 않고 모든 크기를 포함합니다.
+CASE는 처음 참인 조건의 결과를 반환합니다. 따라서 100 이하, 100 초과 1000 이하, 1000 초과 세 구간이 겹치지 않고 모든 크기를 포함합니다.
 
 CASE returns the first matching branch. The three resulting intervals are disjoint and exhaust all non-null sizes.
 

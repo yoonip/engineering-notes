@@ -41,7 +41,7 @@ ORDER BY child.ITEM_ID DESC
 
 주의할 점: 자식 자체가 RARE일 필요는 없습니다. 모든 후손이 아니라 바로 다음 단계만 반환합니다.
 
-공식 스키마 표의 RARITY 자료형 표기와 달리 예제·조회 조건은 `COMMON`, `RARE`, `LEGEND` 문자열을 사용합니다. 쿼리에서도 이 문자열 값으로 비교합니다.
+공식 스키마 표의 RARITY 자료형 표기와 달리 예제·조회 조건은 `RARE`, `LEGEND` 문자열을 사용합니다. 쿼리에서도 이 문자열 값으로 비교합니다.
 
 ## 다른 방법: 부모 ID 집합의 IN 서브쿼리
 
@@ -91,7 +91,7 @@ Look up parent and child information for M relations among N items, then sort R 
 
 Boundary cases: The child need not itself be RARE. Return direct upgrades, not all descendants.
 
-Although the official schema’s RARITY type label is inconsistent, its examples and predicates use string values `COMMON`, `RARE` and `LEGEND`. The queries compare those string values.
+Although the official schema’s RARITY type label is inconsistent, its examples and predicates use string values `RARE` and `LEGEND`. The queries compare those string values.
 
 ### Alternative: IN subquery over qualifying parent IDs
 

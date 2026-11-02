@@ -190,5 +190,73 @@
         5
       ]
     ]
+  },
+  {
+    "name": "독립 경계: NULL만 있는 분류와 숫자·NULL 혼합 분류",
+    "tables": {
+      "REST_INFO": {
+        "columns": [
+          "REST_ID",
+          "REST_NAME",
+          "FOOD_TYPE",
+          "VIEWS",
+          "FAVORITES",
+          "PARKING_LOT",
+          "ADDRESS",
+          "TEL"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER",
+          "INTEGER",
+          "TEXT",
+          "TEXT",
+          "TEXT"
+        ],
+        "rows": [
+          [
+            "N1",
+            "정보 없음",
+            "한식",
+            0,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "R1",
+            "알려진 값",
+            "양식",
+            0,
+            3,
+            null,
+            null,
+            null
+          ],
+          [
+            "R2",
+            "정보 없음 2",
+            "양식",
+            0,
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "양식",
+        "R1",
+        "알려진 값",
+        3
+      ]
+    ],
+    "source": "자체 구성: 공식 스키마에서 허용하는 NULL과 MAX의 NULL 제외 규칙 확인"
   }
 ]

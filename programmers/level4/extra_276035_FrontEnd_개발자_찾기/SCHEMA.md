@@ -8,25 +8,25 @@ Columns, types and nullability for the tables used by the solution. NULL is dist
 
 ## `SKILLCODES`
 
-| 열 / Column | 자료형 / Type | NULL 허용 / Nullable |
-|---|---|---|
-| `NAME` | `VARCHAR(N)` | Y |
-| `CATEGORY` | `VARCHAR(N)` | N |
-| `CODE` | `INTEGER` | Y |
+| 열 / Column | 자료형 / Type | 고유성 / Unique | NULL 허용 / Nullable |
+|---|---|---|---|
+| `NAME` | `VARCHAR(N)` | Y | N |
+| `CATEGORY` | `VARCHAR(N)` | N | N |
+| `CODE` | `INTEGER` | Y | N |
 
 ## `DEVELOPERS`
 
-| 열 / Column | 자료형 / Type | NULL 허용 / Nullable |
-|---|---|---|
-| `ID` | `VARCHAR(N)` | Y |
-| `FIRST_NAME` | `VARCHAR(N)` | N |
-| `LAST_NAME` | `VARCHAR(N)` | N |
-| `EMAIL` | `VARCHAR(N)` | Y |
-| `SKILL_CODE` | `INTEGER` | N |
+| 열 / Column | 자료형 / Type | 고유성 / Unique | NULL 허용 / Nullable |
+|---|---|---|---|
+| `ID` | `VARCHAR(N)` | Y | N |
+| `FIRST_NAME` | `VARCHAR(N)` | N | Y |
+| `LAST_NAME` | `VARCHAR(N)` | N | Y |
+| `EMAIL` | `VARCHAR(N)` | Y | N |
+| `SKILL_CODE` | `INTEGER` | N | N |
 
-자료형 표의 TRUE는 NULL 허용, FALSE는 NULL 불가를 뜻합니다. 기본키·고유성·행 수의 추가 조건은 공식 문제 본문을 따릅니다.
+고유성 열의 Y는 값이 중복되지 않는다는 뜻이고, NULL 허용 열의 Y는 값이 없어도 된다는 뜻입니다. 두 조건은 서로 다릅니다.
 
-TRUE in a nullability column permits NULL; FALSE does not. Additional primary-key, uniqueness and row-count conditions follow the official statement.
+Y in Unique means values must be unique; Y in Nullable permits NULL. These are separate constraints.
 
 출처 / Source: [Programmers 276035](https://school.programmers.co.kr/learn/courses/30/lessons/276035), 2026-10-19.
 

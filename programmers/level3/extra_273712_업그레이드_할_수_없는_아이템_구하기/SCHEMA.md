@@ -12,7 +12,7 @@ Columns, types and nullability for the tables used by the solution. NULL is dist
 |---|---|---|
 | `ITEM_ID` | `INTEGER` | FALSE |
 | `ITEM_NAME` | `VARCHAR(N)` | FALSE |
-| `RARITY` | `INTEGER` | FALSE |
+| `RARITY` | `문자열 / string` | FALSE |
 | `PRICE` | `INTEGER` | FALSE |
 
 ## `ITEM_TREE`
@@ -21,6 +21,10 @@ Columns, types and nullability for the tables used by the solution. NULL is dist
 |---|---|---|
 | `ITEM_ID` | `INTEGER` | FALSE |
 | `PARENT_ITEM_ID` | `INTEGER` | TRUE |
+
+공식 자료형 표에는 RARITY가 INTEGER로 적혀 있지만 예제 값은 RARE·LEGEND 문자열입니다. 이 표는 실제 예제의 값 종류를 따릅니다.
+
+The official type label is INTEGER, but the example RARITY values are strings such as RARE and LEGEND. This table follows those values.
 
 자료형 표의 TRUE는 NULL 허용, FALSE는 NULL 불가를 뜻합니다. 기본키·고유성·행 수의 추가 조건은 공식 문제 본문을 따릅니다.
 

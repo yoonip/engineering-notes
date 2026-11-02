@@ -18,6 +18,10 @@ Level 4 · [131124 공식 문제 / Official problem](https://school.programmers.
 
 [기본 SQL](solution.sql) · [다른 SQL](alternative.sql) · [제출 원본](submitted_original.sql)
 
+과거 제출 원본의 동점 처리 관련 주석은 당시 기록입니다. 한 명을 선택한 코드의 저장된 통과 결과만으로 공동 최다 작성자에 대한 일반 조건을 단정할 수는 없습니다. 현재 두 풀이는 최다 작성자가 여러 명이면 모두 포함합니다.
+
+Comments about ties in the archived submission describe that historical version. Its saved passing result does not establish a general rule for tied top reviewers. Both current queries retain all reviewers tied for the maximum.
+
 ## 다른 방법과 비교
 
 DENSE_RANK로 회원별 리뷰 수 순위를 매긴 뒤 1위 회원들의 리뷰를 조인합니다.

@@ -38,9 +38,9 @@ ORDER BY i.ITEM_ID
 
 정보 N개와 관계 M개의 조인·필터 뒤 R개 ROOT를 정렬합니다. 키 인덱스와 조인 계획에 따라 비용이 달라지며 결과 비교 정렬은 O(R log R)입니다.
 
-주의할 점: NULL은 = NULL이 아니라 IS NULL로 검사합니다. ROOT는 업그레이드할 수 없는 마지막 아이템과 다릅니다.
+NULL은 = NULL이 아니라 IS NULL로 검사합니다. ROOT는 부모가 없는 아이템이고, 마지막 아이템은 자식이 없는 아이템입니다. 부모와 자식이 모두 없으면 두 조건을 함께 만족합니다.
 
-공식 스키마 표의 RARITY 자료형 표기와 달리 예제·조회 조건은 `COMMON`, `RARE`, `LEGEND` 문자열을 사용합니다. 쿼리에서도 이 문자열 값으로 비교합니다.
+공식 스키마 표의 RARITY 자료형 표기와 달리 예제·조회 조건은 `COMMON`, `LEGEND`, `UNIQUE` 문자열을 사용합니다. 쿼리에서도 이 문자열 값으로 비교합니다.
 
 ## 다른 방법: EXISTS로 ROOT 관계 확인
 
@@ -86,9 +86,9 @@ A relation with a NULL parent ID identifies a root. Joining by item ID retrieves
 
 Join/filter N item records and M relations, then sort R roots. Key indexes and join strategy affect cost; result comparison sorting is O(R log R).
 
-Boundary cases: Use IS NULL, not = NULL. A ROOT item is distinct from a terminal upgrade item.
+Use IS NULL, not = NULL. A root has no parent, whereas a terminal item has no child. An isolated item can satisfy both conditions.
 
-Although the official schema’s RARITY type label is inconsistent, its examples and predicates use string values `COMMON`, `RARE` and `LEGEND`. The queries compare those string values.
+Although the official schema’s RARITY type label is inconsistent, its examples and predicates use string values `COMMON`, `LEGEND` and `UNIQUE`. The queries compare those string values.
 
 ### Alternative: EXISTS over root relationship rows
 

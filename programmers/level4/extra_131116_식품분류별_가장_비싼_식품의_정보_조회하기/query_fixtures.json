@@ -190,5 +190,57 @@
         "two"
       ]
     ]
+  },
+  {
+    "name": "독립 경계: NULL만 있는 분류와 숫자·NULL 혼합 분류",
+    "tables": {
+      "FOOD_PRODUCT": {
+        "columns": [
+          "PRODUCT_ID",
+          "PRODUCT_NAME",
+          "PRODUCT_CD",
+          "CATEGORY",
+          "PRICE"
+        ],
+        "types": [
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "TEXT",
+          "INTEGER"
+        ],
+        "rows": [
+          [
+            "N1",
+            "가격 미정",
+            null,
+            "국",
+            null
+          ],
+          [
+            "P1",
+            "가격 확인",
+            null,
+            "과자",
+            100
+          ],
+          [
+            "P2",
+            "가격 미정 2",
+            null,
+            "과자",
+            null
+          ]
+        ]
+      }
+    },
+    "expected": [
+      [
+        "과자",
+        100,
+        "가격 확인"
+      ]
+    ],
+    "source": "자체 구성: 공식 스키마에서 허용하는 NULL과 MAX의 NULL 제외 규칙 확인"
   }
 ]
