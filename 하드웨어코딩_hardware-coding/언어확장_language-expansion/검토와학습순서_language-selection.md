@@ -2,11 +2,11 @@
 
 [언어 확장 목차](README.md) · [기존 회로 설계 언어 비교](../언어와검증도구_languages-and-verification.md)
 
-## 이번에 선택한 기준
+## 언어와 도구를 선택하는 기준
 
 기존 자료에는 Verilog·SystemVerilog·VHDL·Amaranth 회로, C·C++·Python 알고리즘, 임베디드 디버깅과 일부 설계 스크립트가 있습니다. 추가 자료는 그 언어가 하드웨어 작업에서 담당하는 대상과 실제로 검사할 수 있는 결과를 기준으로 골랐습니다. 아래 순서는 이 저장소의 학습 경로에 대한 판단이며, 언어의 보편적인 우열이나 채용 수요 순위가 아닙니다.
 
-| 공부할 대상 | 추천하는 언어·도구 | 추가할 가치 | 먼저 익힐 내용 |
+| 공부할 대상 | 추천하는 언어·도구 | 학습에서 맡는 역할 | 먼저 익힐 내용 |
 | --- | --- | --- | --- |
 | CPU가 명령을 실행하는 과정 | RISC-V 어셈블리 | C 코드와 레지스터·메모리·호출 규약의 관계를 직접 확인합니다. | 정수·비트 연산, 주소와 배열 |
 | RTL의 자동 검사 | Python·cocotb | 이미 익숙한 Python으로 클록·리셋·정체를 제어하고 독립 기대값과 비교합니다. | 조합·순차논리와 샘플링 시점 |
@@ -58,7 +58,7 @@ RISC-V 예제와 Rust 예제의 필드 갱신은 오류 정책도 확인하며 �
 | 대상 | 다음 자료 | 선택할 조건과 이번 확인 범위 |
 | --- | --- | --- |
 | 매개변수화한 RTL 생성 | [Chisel 공식 설치](https://www.chisel-lang.org/docs/installation) | Scala의 타입·생성 단계와 하드웨어 값을 함께 익힐 때 적합합니다. 이번에는 공식 경로를 조사했으며 Scala 예제를 실행하지 않았습니다. |
-| 레지스터 주소·필드 명세 | [SystemRDL 표준](https://accellera.org/downloads/standards/systemrdl), [SystemRDL Compiler](https://systemrdl-compiler.readthedocs.io/en/stable/) | 문서·RTL·드라이버가 같은 주소와 접근 속성을 공유해야 할 때 검토합니다. 이번에는 컴파일러나 생성기를 실행하지 않았습니다. |
+| 레지스터 주소·필드 명세 | [SystemRDL 표준](https://accellera.org/downloads/standards/systemrdl), [SystemRDL Compiler](https://systemrdl-compiler.readthedocs.io/en/stable/) | 문서·RTL·드라이버가 같은 주소와 접근 속성을 공유해야 할 때 검토합니다. 별도 [SystemRDL 실습](../현업언어_industry-languages/01-레지스터명세_systemrdl/README.md)에서는 명세를 컴파일하고 생성한 C 헤더의 주소·마스크를 독립 기대값과 대조했습니다. |
 | C·C++ 알고리즘의 하드웨어 구현 | [Vitis HLS UG1399](https://docs.amd.com/r/en-US/ug1399-vitis-hls/Introduction) | 연산·메모리·입출력의 병렬성과 지연을 설계할 때 검토합니다. 일반 C++ 실행 결과만으로 합성·처리율을 판단하지 않으며 이번에는 HLS를 실행하지 않았습니다. |
 
 Chisel은 기존 Amaranth와 같은 RTL 생성 목적을 다른 호스트 언어로 다루므로, 먼저 기존 회로의 클록·비트 폭과 생성 결과를 이해한 뒤 비교하는 순서로 두었습니다. 공식 안내의 Scala CLI 예제와 과거 Bootcamp의 Binder 실행 상태는 구분합니다. [Bootcamp README](https://github.com/freechipsproject/chisel-bootcamp)는 일부 노트북 환경의 노후화와 오류를 알립니다.

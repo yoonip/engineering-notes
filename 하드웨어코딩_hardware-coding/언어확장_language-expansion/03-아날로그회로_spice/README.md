@@ -212,7 +212,7 @@ if __name__ == "__main__":  # import만으로 시뮬레이터를 실행하지 �
 
 ## 출처와 라이선스
 
-- [ngspice 다운로드](https://ngspice.sourceforge.io/download.html)·[버전47 배포 폴더](https://sourceforge.net/projects/ngspice/files/ng-spice-rework/47/)는 실행한 도구의 출처입니다. 다운로드 archive의 SHA도 example.json에 기록합니다.
+- [ngspice 다운로드](https://ngspice.sourceforge.io/download.html)·[버전 47 배포 폴더](https://sourceforge.net/projects/ngspice/files/ng-spice-rework/47/)는 실행한 도구의 출처입니다. 다운로드 archive의 SHA도 example.json에 기록합니다.
 - [공식 문서](https://ngspice.sourceforge.io/docs.html)·[control-language tutorial](https://ngspice.sourceforge.io/ngspice-control-language-tutorial.html)은 소자·해석·데이터 출력 문법의 근거입니다. 이 netlist는 공식 예제를 복사한 것이 아닙니다.
 - [ngspice 개발 안내의 라이선스 설명](https://ngspice.sourceforge.io/devel.html)은 주된 코드를 modified BSD로 설명하며 예외가 있다고 명시합니다. 배포본 COPYING도 KLU·OSDI 등의 별도 라이선스를 구분하므로 프로그램 전체를 단일 BSD 코드라고 요약하지 않습니다. 바이너리·매뉴얼 전문은 이 폴더에 재배포하지 않습니다.
 - [MIT의 The Art of Insight](https://ocw.mit.edu/courses/res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014/3bca850386a3005c22134fa62fb3bad5_MITRES_6-011F14_art_insfin.pdf)는 RC 전달함수의 근거이며 도서의 CC BY-NC-SA 4.0과 자체 netlist·로컬 결과를 구분합니다. 원문·그림을 복제하지 않았습니다.

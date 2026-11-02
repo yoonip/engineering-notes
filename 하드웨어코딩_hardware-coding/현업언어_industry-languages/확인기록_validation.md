@@ -9,7 +9,7 @@
 | [SystemRDL](01-레지스터명세_systemrdl/example.json) | systemrdl-compiler 1.33.0의 compile·elaborate, PeakRDL-CHeader 1.1.0의 헤더 생성, Zig/Clang의 호스트 C 컴파일·실행입니다. | AST 속성 비교 50개, C 정적 단언 21개를 통과했고 헤더 두 번의 생성 결과가 같은 바이트였습니다. | 잘못된 RDL 4종을 실제 컴파일러가 거절했고 생성 헤더의 모드 마스크를 바꾼 대조 1종이 정적 단언에서 실패했습니다. |
 | [MATLAB 계열 수치 코드](02-수치계산_matlab-octave/example.json) | GNU Octave 11.3.0에서 `.m` 파일을 실행했습니다. | 검사 496개, 행렬 표본 153개, ode45 설정 3개와 RK4 격자 3개를 확인했습니다. | 입력 거절 8건과 영평형·무감쇠 등 정한 조건을 비교했습니다. |
 | [Ada·계약](03-계약과범위_ada-spark/example.json) | GNAT 16.1.0으로 컴파일·바인드·링크하고 호스트에서 실행했습니다. | 비교 3,098개에서 정상 입력 2,063개와 사전조건 거절 1,034개를 확인했습니다. 별도 CLI 11건도 기대 출력·종료 코드와 같았습니다. | 경계·형 변환·범위·사전조건의 예외를 구분했습니다. GNATprove는 실행하지 않았습니다. |
-| [PLC Structured Text](04-PLC스캔_structured-text/example.json) | Beremiz 1.6.0 번들의 실제 matiec로 ST→C 번역 후 Zig/Clang으로 생성 코드를 컴파일·실행했습니다. | 8,000개 길이3 입력 순서와 고정 흐름에서 상태 비교 32,008개를 통과했습니다. | 복사본의 `<=250`을 `<250`으로 바꾼 경계 결함이 실제 실행의 비교에서 실패했습니다. |
+| [PLC Structured Text](04-PLC스캔_structured-text/example.json) | Beremiz 1.6.0 번들의 실제 matiec로 ST→C 번역 후 Zig/Clang으로 생성 코드를 컴파일·실행했습니다. | 8,000개 길이 3 입력 순서와 고정 흐름에서 상태 비교 32,008개를 통과했습니다. | 복사본의 `<=250`을 `<250`으로 바꾼 경계 결함이 실제 실행의 비교에서 실패했습니다. |
 
 표의 단위가 서로 다르므로 비교 수·입력 순서·생성 횟수를 합쳐 성능 수치나 전체 커버리지로 표시하지 않습니다. 각 `example.json`에 정상·오류 결과의 실제 명령·종료 코드·stdout·stderr와 소스 해시가 있습니다. C·Python으로 작성한 호스트 검사와 원래 검사 대상인 RDL·ST·Ada·`.m`의 역할도 구분합니다.
 

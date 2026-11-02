@@ -2,13 +2,13 @@
 
 [하드웨어 코딩 목차](../../README.md) · [공식 문제](https://hdlbits.01xz.net/wiki/fadd)
 
-세 입력의 XOR로 합 비트를 만들고 두 개 이상이1인지로 올림을 구합니다. [HDLBits fadd](https://hdlbits.01xz.net/wiki/fadd)의 문제 본문과 모듈 선언을 기준으로 직접 구성한 풀이입니다. 공식 문제는 회로 명세의 출처이며 이 문서의 로컬 검사 결과를 보고한 자료는 아닙니다.
+세 입력의 XOR로 합 비트를 만들고 두 개 이상이 1인지로 올림을 구합니다. [HDLBits fadd](https://hdlbits.01xz.net/wiki/fadd)의 문제 본문과 모듈 선언을 기준으로 직접 구성한 풀이입니다. 공식 문제는 회로 명세의 출처이며 이 문서의 로컬 검사 결과를 보고한 자료는 아닙니다.
 
 ## 입출력과 회로 원리
 
 한 비트 입력 a·b·cin, 한 비트 출력 cout·sum입니다.
 
-sum은1의 개수가 홀수일 때1이고 cout은 둘 이상의 입력이1일 때1입니다. 따라서 세 입력의 정수 합은 항상2*cout+sum과 같습니다. cout은 비트별AND 세 쌍의 OR로 구성합니다.
+sum은 1의 개수가 홀수일 때 1이고 cout은 둘 이상의 입력이 1일 때 1입니다. 따라서 세 입력의 정수 합은 항상 2*cout+sum과 같습니다. cout은 비트별AND 세 쌍의 OR로 구성합니다.
 
 ## 입력부터 결과까지의 흐름
 
@@ -16,14 +16,14 @@ sum은1의 개수가 홀수일 때1이고 cout은 둘 이상의 입력이1일 �
 
 | 단계·관측 | 입력·조건 | 기대 결과 |
 | --- | --- | --- |
-| a,b,cin=0,0,0 | 정수 합0 | cout,sum=00 |
-| a,b,cin=1,0,0 | 정수 합1 | cout,sum=01 |
-| a,b,cin=1,1,0 | 정수 합2 | cout,sum=10 |
-| a,b,cin=1,1,1 | 정수 합3 | cout,sum=11 |
+| a,b,cin=0,0,0 | 정수 합 0 | cout,sum=00 |
+| a,b,cin=1,0,0 | 정수 합 1 | cout,sum=01 |
+| a,b,cin=1,1,0 | 정수 합 2 | cout,sum=10 |
+| a,b,cin=1,1,1 | 정수 합 3 | cout,sum=11 |
 
 ## 실수와 정당성 조건
 
-반가산기의 a^b만 사용하면 cin이 빠집니다. 세 입력 중 정확히 두 개가1인 경우도 올림이 발생합니다.
+반가산기의 a^b만 사용하면 cin이 빠집니다. 세 입력 중 정확히 두 개가 1인 경우도 올림이 발생합니다.
 
 오버플로 플래그나 부호 있는 정수의 전체 연산은 다루지 않습니다. sum만 확인하면 올림 오류를 놓칠 수 있으므로 두 출력을 함께 검사합니다.
 
@@ -35,9 +35,9 @@ sum은1의 개수가 홀수일 때1이고 cout은 둘 이상의 입력이1일 �
 
 세 입력을 정수로 더한 뒤 {cout,sum}의 두 비트와 비교합니다. 게이트식과 다른 산술 기준입니다.
 
-a·b·cin의 모든8개 이진 조합을 검사합니다.
+a·b·cin의 모든 8개 이진 조합을 검사합니다.
 
-2026-10-26에 실제 Icarus Verilog12.0 devel로 컴파일하고 VVP로 실행했습니다. compile 종료 코드는0, simulation 종료 코드는0입니다. 실제 집계는 비교8회·입력 벡터 또는 샘플8개입니다.
+2026-10-26에 실제 Icarus Verilog12.0 devel로 컴파일하고 VVP로 실행했습니다. compile 종료 코드는 0, simulation 종료 코드는 0입니다. 실제 집계는 비교 8회·입력 벡터 또는 샘플 8개입니다.
 
 ```text
 PASS id=fadd checks=8 vectors=8
@@ -108,7 +108,7 @@ endmodule // 자체 검사 모듈 끝
 - [HDLBits fadd 문제·입출력 명세](https://hdlbits.01xz.net/wiki/fadd)
 - [Icarus Verilog의 언어·최상위 모듈·출력 옵션](https://github.com/steveicarus/iverilog/blob/master/Documentation/usage/command_line_flags.rst)
 
-공식 문제의 열람 기준일은2026-10-26입니다.
+공식 문제의 열람 기준일은 2026-10-26입니다.
 
 ## 사이트 채점
 

@@ -233,7 +233,7 @@ def main():  # 새 출력 디렉터리에서만 생성과 검사 진행
     print(marker)  # 실제 실행과 독립 비교가 모두 끝났을 때만 출력
 
 if __name__ == "__main__":  # 다른 코드에서 import할 때는 검사하지 않기
-    main()  # 明示的なコマンド実行で検査開始
+    main()  # 스크립트를 직접 실행했을 때 검사를 시작
 ```
 
 ## 생성 헤더용 독립 C 검사 전체 코드
@@ -275,7 +275,7 @@ int main(void) { // 메모리 장치 없이 호스트에서 검사 결과 출력
 
 ## 실제 실행과 결과
 
-2026-10-26의 로컬 실행에서 Python 3.12.14, SystemRDL Compiler 1.33.0, PeakRDL-CHeader 1.1.0을 사용했습니다. 생성 헤더의 호스트 C 검사는 Zig의 Clang 21.1.0, `x86_64-unknown-windows-gnu`, GNU C11 모드로 컴파일했습니다. 버전·실제 명령·종료값·표준출력·오류 진단·소스 SHA-256은 [실행 메타데이터](example.json)에 기록합니다.
+2026-10-26의 로컬 실행에서 Python 3.12.14, SystemRDL Compiler 1.33.0, PeakRDL-CHeader 1.1.0을 사용했습니다. 생성 헤더의 호스트 C 검사는 Zig의 Clang 21.1.0, `x86_64-unknown-windows-gnu`, GNU C11 모드로 컴파일했습니다. 당시 버전·실제 명령·종료값·표준출력·오류 진단·소스 SHA-256은 [실행 메타데이터](example.json)에 보관합니다. 이후 설명 주석을 수정한 현재 파일의 전체 해시와 당시 실행본의 해시는 다를 수 있습니다. 이 실행 기록을 새 실행 결과로 바꾸지는 않습니다.
 
 ```text
 PASS header assertions=21 size=12 offsets=0,4,8 control_reset=4

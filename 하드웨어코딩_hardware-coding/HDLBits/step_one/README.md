@@ -1,14 +1,14 @@
-# 입력 없는 상수1 출력
+# 입력 없는 상수 1 출력
 
 [하드웨어 코딩 목차](../../README.md) · [공식 문제](https://hdlbits.01xz.net/wiki/step_one)
 
-입력과 상태 없이 출력 한 비트를 항상1에 연결합니다. [HDLBits step_one](https://hdlbits.01xz.net/wiki/step_one)의 문제 본문과 모듈 선언을 기준으로 직접 구성한 풀이입니다. 공식 문제는 회로 명세의 출처이며 이 문서의 로컬 검사 결과를 보고한 자료는 아닙니다.
+입력과 상태 없이 출력 한 비트를 항상 1에 연결합니다. [HDLBits step_one](https://hdlbits.01xz.net/wiki/step_one)의 문제 본문과 모듈 선언을 기준으로 직접 구성한 풀이입니다. 공식 문제는 회로 명세의 출처이며 이 문서의 로컬 검사 결과를 보고한 자료는 아닙니다.
 
 ## 입출력과 회로 원리
 
 입력은 없으며 출력 one 하나만 있습니다.
 
-연속 대입 assign은 소프트웨어에서 한 번 실행하는 문장이 아니라 출력의 연결 관계를 정합니다. 1'b1은 폭이1비트인 이진 상수이므로 출력 폭과 같습니다. 클록이나 initial 블록이 필요하지 않습니다.
+연속 대입 assign은 소프트웨어에서 한 번 실행하는 문장이 아니라 출력의 연결 관계를 정합니다. 1'b1은 폭이 1비트인 이진 상수이므로 출력 폭과 같습니다. 클록이나 initial 블록이 필요하지 않습니다.
 
 ## 입력부터 결과까지의 흐름
 
@@ -32,11 +32,11 @@
 
 ## 독립 로컬 검사
 
-1ns·5ns·25ns에 one이 정확히1인지 비교합니다. X나Z도 실패로 처리합니다.
+1ns·5ns·25ns에 one이 정확히 1인지 비교합니다. X나Z도 실패로 처리합니다.
 
 입력 조합이 없는 상수 회로의 세 시점 검사입니다.
 
-2026-10-26에 실제 Icarus Verilog12.0 devel로 컴파일하고 VVP로 실행했습니다. compile 종료 코드는0, simulation 종료 코드는0입니다. 실제 집계는 비교3회·입력 벡터 또는 샘플3개입니다.
+2026-10-26에 실제 Icarus Verilog12.0 devel로 컴파일하고 VVP로 실행했습니다. compile 종료 코드는 0, simulation 종료 코드는 0입니다. 실제 집계는 비교 3회·입력 벡터 또는 샘플 3개입니다.
 
 ```text
 PASS id=step_one checks=3 vectors=3
@@ -102,7 +102,7 @@ endmodule // 자체 검사 모듈 끝
 - [HDLBits step_one 문제·입출력 명세](https://hdlbits.01xz.net/wiki/step_one)
 - [Icarus Verilog의 언어·최상위 모듈·출력 옵션](https://github.com/steveicarus/iverilog/blob/master/Documentation/usage/command_line_flags.rst)
 
-공식 문제의 열람 기준일은2026-10-26입니다.
+공식 문제의 열람 기준일은 2026-10-26입니다.
 
 ## 사이트 채점
 

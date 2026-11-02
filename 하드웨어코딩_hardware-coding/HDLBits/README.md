@@ -6,18 +6,18 @@
 
 | 문제와 풀이 | 회로에서 확인할 내용 | 사이트 판정 |
 | --- | --- | --- |
-| [step_one: 입력 없는 상수1 출력](step_one/README.md) | 입력과 상태 없이 출력 한 비트를 항상1에 연결합니다. | Success! |
+| [step_one: 입력 없는 상수 1 출력](step_one/README.md) | 입력과 상태 없이 출력 한 비트를 항상 1에 연결합니다. | Success! |
 | [vector2: 32비트 단어의 네 바이트 순서 바꾸기](vector2/README.md) | 각 바이트 내부의 비트는 보존하고 네 바이트의 위치만 역순으로 연결합니다. | Success! |
-| [vectorr: 8비트 입력의 비트 순서 반전](vectorr/README.md) | 입력의0번 비트를 출력의7번에 보내며 여덟 위치를 역순으로 연결합니다. | Success! |
-| [popcount3: 세 비트에서1의 개수 세기](popcount3/README.md) | 세 입력을 각각2비트로 넓혀 더하고0~3의 개수를 두 비트로 출력합니다. | Success! |
-| [mux2to1v: 100비트 두 후보 중 하나 선택](mux2to1v/README.md) | sel이0이면a,1이면b의100비트 전체를 출력에 연결합니다. | Success! |
-| [fadd: 올림 입력을 포함한 한 비트 전가산기](fadd/README.md) | 세 입력의 XOR로 합 비트를 만들고 두 개 이상이1인지로 올림을 구합니다. | Success! |
-| [always_case2: 가장 낮은1을 고르는4비트 우선순위 인코더](always_case2/README.md) | 입력16개를 가장 낮은1의 위치별로 나누어 case 문에서 결과를 정합니다. | Success! |
-| [dff8r: 동기식 active-high 리셋의8비트 레지스터](dff8r/README.md) | 상승 에지마다 reset이1이면0을 저장하고 아니면d를 저장합니다. | Success! |
-| [count10: 0부터9까지 순환하는 십진 카운터](count10/README.md) | 동기 리셋 또는 현재9인 에지에서0으로 돌아가며 나머지 정상 상태는1씩 증가합니다. | Success! |
+| [vectorr: 8비트 입력의 비트 순서 반전](vectorr/README.md) | 입력의 0번 비트를 출력의 7번에 보내며 여덟 위치를 역순으로 연결합니다. | Success! |
+| [popcount3: 세 비트에서 1의 개수 세기](popcount3/README.md) | 세 입력을 각각 2비트로 넓혀 더하고 0~3의 개수를 두 비트로 출력합니다. | Success! |
+| [mux2to1v: 100비트 두 후보 중 하나 선택](mux2to1v/README.md) | sel이 0이면a,1이면b의 100비트 전체를 출력에 연결합니다. | Success! |
+| [fadd: 올림 입력을 포함한 한 비트 전가산기](fadd/README.md) | 세 입력의 XOR로 합 비트를 만들고 두 개 이상이 1인지로 올림을 구합니다. | Success! |
+| [always_case2: 가장 낮은 1을 고르는 4비트 우선순위 인코더](always_case2/README.md) | 입력 16개를 가장 낮은 1의 위치별로 나누어 case 문에서 결과를 정합니다. | Success! |
+| [dff8r: 동기식 active-high 리셋의 8비트 레지스터](dff8r/README.md) | 상승 에지마다 reset이 1이면 0을 저장하고 아니면d를 저장합니다. | Success! |
+| [count10: 0부터 9까지 순환하는 십진 카운터](count10/README.md) | 동기 리셋 또는 현재 9인 에지에서 0으로 돌아가며 나머지 정상 상태는 1씩 증가합니다. | Success! |
 | [shift4: 비동기 리셋과 병렬 적재를 갖는 우측 시프트](shift4/README.md) | 비동기 리셋을 가장 먼저 처리하고 상승 에지에서는load가ena보다 우선하도록 상태를 갱신합니다. | Success! |
-| [edgedetect: 이전0·현재1을 등록 출력으로 검출](edgedetect/README.md) | 직전 입력과 현재 입력을 비교하고0에서1로 바뀐 비트만pedge 레지스터에 저장합니다. | Success! |
-| [fsm1s: B에서 리셋하고0에서 토글하는 두 상태 FSM](fsm1s/README.md) | 동기 리셋에서B로 들어가며 입력0은 상태를 바꾸고 입력1은 유지합니다. | Success! |
+| [edgedetect: 이전 0·현재 1을 등록 출력으로 검출](edgedetect/README.md) | 직전 입력과 현재 입력을 비교하고 0에서 1로 바뀐 비트만pedge 레지스터에 저장합니다. | Success! |
+| [fsm1s: B에서 리셋하고 0에서 토글하는 두 상태 FSM](fsm1s/README.md) | 동기 리셋에서B로 들어가며 입력 0은 상태를 바꾸고 입력 1은 유지합니다. | Success! |
 
 ## 코드와 설명을 읽는 방법
 

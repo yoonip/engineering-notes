@@ -57,7 +57,7 @@ PASS
 
 ## 실행 방법
 
-[공식 3.0.2 설치 안내](https://github.com/accellera-official/systemc/blob/3.0.2/INSTALL.md)의 CMake 경로로 라이브러리를 먼저 설치합니다. C++ 표준과 컴파일러 ABI가 라이브러리와 응용 프로그램에서 맞아야 합니다. 아래 예제의 CMake 하한은 3.16입니다.
+[공식 3.0.2 설치 안내](https://github.com/accellera-official/systemc/blob/3.0.2/INSTALL.md)의 CMake 경로로 라이브러리를 먼저 설치합니다. C++ 표준과 컴파일러 ABI가 라이브러리와 응용 프로그램에서 맞아야 합니다. 아래 예제의 CMake 하한은 3.16입니다. 아래 명령의 `cmake -S .`는 이 예제 폴더에서 실행합니다.
 
 ```bash
 cmake -S /path/to/systemc-3.0.2 -B /path/to/systemc-build -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_STANDARD=17 -DBUILD_SHARED_LIBS=OFF -DENABLE_EXAMPLES=OFF -DCMAKE_INSTALL_PREFIX=/path/to/systemc-install
@@ -168,7 +168,7 @@ int sc_main(int argc, char* argv[]) { // SystemC 라이브러리가 호출하는
 
 시뮬레이션의 1ns는 모델이 정한 시간 단위입니다. 컴퓨터에서 프로그램이 실행되는 데 걸린 벽시계 시간이나 물리 회로의 전파 지연 측정값이 아닙니다. 클록 핀, 동기 리셋, `valid/ready` 에지 동작, 합성, 배치·배선, 정적 타이밍, 보드·실리콘은 검사하지 않았습니다. 확인한 범위는 네 원소와 두 소비 속도에서 값·순서·시간 규칙이 일치한다는 로컬 결과입니다.
 
-전송 수를 N으로 늘린 같은 구조에서는 기록 배열이 O(N) 공간을 사용하고 FIFO 저장 용량은 O(1)입니다. 이 두 프로세스가 만드는 이벤트 수는 N에 비례하며, 예제처럼 동시에 예약하는 이벤트 수가 제한된 조건에서 처리량도 N에 비례합니다. 일반적인 SystemC 모델 전체의 성능 보장은 아닙니다.
+전송 수를 N으로 늘린 같은 구조에서는 기록 배열이 O(N) 공간을 사용하고 FIFO 저장 용량은 O(1)입니다. 이 두 프로세스가 만드는 이벤트 수와 처리 횟수는 N에 비례합니다. 이는 전송 건수에 따른 작업량 설명이며, 단위 시간당 전송량이나 일반적인 SystemC 모델의 실행 속도를 보장하는 뜻은 아닙니다.
 
 ## 출처와 코드 이용 조건
 
