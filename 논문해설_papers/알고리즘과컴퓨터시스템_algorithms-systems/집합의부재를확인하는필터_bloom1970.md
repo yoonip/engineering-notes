@@ -1,4 +1,4 @@
-# Bloom: ‘없습니다’를 빠르게 확인하는 필터 / Fast negative membership checks
+# Bloom: 집합에 없는 원소를 빠르게 확인하는 필터 / Fast negative membership checks
 
 | 항목 | 내용 |
 |---|---|

@@ -6,7 +6,7 @@
 | 저자·당시 기관 | Cynthia Dwork·Frank McSherry: Microsoft Research Silicon Valley, Kobbi Nissim: Ben-Gurion University, Adam Smith: Weizmann Institute of Science |
 | 발표 | TCC 2006, LNCS 3876, 265–284쪽, 2006년. DOI: 10.1007/11681878_14 |
 | 읽은 판본 | [공동저자 Smith의 공개 원고](https://people.csail.mit.edu/asmith/PS/sensitivity-tcc-final.pdf) 20쪽 전체입니다. 원고 자체의 1–20쪽을 아래 위치로 사용합니다. |
-| 판본·정정 | [출판사 기록](https://doi.org/10.1007/11681878_14)은 저작권 줄을 바로잡았다고 고지하며 [정정 DOI](https://doi.org/10.1007/978-3-540-32732-5_32)를 연결합니다. 이 고지를 수학 정리의 수정이라고 해석하지 않습니다. 확인일은 2026-10-20입니다. |
+| 판본·정정 | [출판사 기록](https://doi.org/10.1007/11681878_14)은 저작권 줄을 바로잡았다고 고지하며 정정 식별자 `10.1007/978-3-540-32732-5_32`를 안내합니다. 이 고지를 수학 정리의 수정이라고 해석하지 않습니다. 확인일은 2026-10-20입니다. |
 
 ## 평균을 공개하면서 개인은 어떻게 보호하나요?
 

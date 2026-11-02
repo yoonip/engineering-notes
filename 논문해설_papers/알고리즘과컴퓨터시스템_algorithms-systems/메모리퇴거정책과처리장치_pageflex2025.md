@@ -1,4 +1,4 @@
-# PageFlex: 메모리를 내보낼 정책과 페이지 처리 장치를 분리하기
+# PageFlex: 메모리 회수 정책과 처리 구조 분리하기 / Separating paging policy from mechanism
 
 Anil Yelam, Kan Wu, Zhiyuan Guo, Suli Yang, Rajath Shashidhara, Wei Xu, Stanko Novaković, Alex C. Snoeren, Kimberly Keeton의 「PageFlex: Flexible and Efficient User-space Delegation of Linux Paging Policies with eBPF」는 USENIX ATC 2025 논문입니다. 소속은 Google, UC San Diego, University of Washington입니다. [학회 페이지](https://www.usenix.org/conference/atc25/presentation/yelam), [원문 PDF](https://www.usenix.org/system/files/atc25-yelam.pdf)를 기준으로 설명합니다.
 
