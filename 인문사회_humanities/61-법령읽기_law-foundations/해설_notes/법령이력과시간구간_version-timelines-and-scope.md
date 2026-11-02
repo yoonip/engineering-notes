@@ -40,7 +40,7 @@ i=\max\{j:s_j\le t\}
 
 ### 4. 이진 탐색으로 구현합니다
 
-`VersionTimeline`은 생성할 때 날짜를 파싱하고 정렬하며 중복 시작일을 거부합니다. 조회에는 `bisect_right`를 사용합니다. 이는 조회일과 같은 시작일들의 오른쪽 경계를 반환하므로, 1을 빼면 가장 최근의 시작일 인덱스가 됩니다. 생성은 $`O(n\log n)`$, 날짜 조회는 $`O(\log n)`$입니다. 반환값은 내부 레코드의 복사여서 호출자가 결과를 수정해도 이력 자체는 바뀌지 않습니다.
+`VersionTimeline`은 생성할 때 날짜를 파싱하고 정렬하며 중복 시작일을 거부합니다. 조회에는 `bisect_right`를 사용합니다. 이는 조회일과 같은 시작일들의 오른쪽 경계를 반환하므로, 1을 빼면 가장 최근의 시작일 인덱스가 됩니다. 생성은 $`O(n\log n)`$, 날짜 조회는 $`O(\log n)`$입니다. 반환값은 `dict(...)`로 만든 얕은 복사입니다. 예제처럼 값이 문자열인 레코드에서는 반환된 `id` 등의 값을 다시 대입해도 내부 레코드가 바뀌지 않습니다. 다만 중첩 리스트·딕셔너리는 공유되므로, 그 내부까지 독립적으로 수정하려면 깊은 복사나 불변 데이터 구조가 필요합니다.
 
 예제 레코드 `v1`, `v2`는 날짜 경계 검사를 위해 만든 메타데이터입니다. 실제 법령 번호나 특정 조문의 적용 결과를 뜻하지 않습니다. `v1`은 2024.2.1부터, `v2`는 2025.1.1부터 시작하며 `v2`의 공포일 필드는 2024.11.1입니다. 따라서 2024.12.1에 이 시행 이력을 조회하면 `v1`, 2025.1.1에는 `v2`가 나옵니다.
 
@@ -52,7 +52,7 @@ python 예제_examples/심화_advanced/math_reasoning/demo.py
 
 ### 5. 검증과 재현성
 
-테스트는 최초 시행 전날, 최초 시행일, 다음 개정 전날과 개정 당일을 검사합니다. 50개 이력을 넣고 361개 날짜에서 단순 선형 탐색의 결과와 이진 탐색을 비교합니다. 같은 시작일의 중복, 빈 입력을 거부하고, 반환 레코드를 바꿔도 원본 이력이 유지되는지 확인합니다.
+테스트는 최초 시행 전날, 최초 시행일, 다음 개정 전날과 개정 당일을 검사합니다. 50개 이력을 넣고 361개 날짜에서 단순 선형 탐색의 결과와 이진 탐색을 비교합니다. 같은 시작일의 중복, 빈 입력을 거부하고, 반환 레코드의 `id` 값을 다시 대입해도 원본의 `id`가 유지되는지 확인합니다. 중첩 가변 객체의 독립성까지 검사한 것은 아닙니다.
 
 법령 자료를 실제 연구나 시스템 요구사항에 연결할 때에는 조회 URL, 법령·조문 식별자, 개정 버전, 조회 기준일, 수집 시점을 함께 기록해야 같은 문장을 다시 찾을 수 있습니다. 원본 응답을 별도로 보관하면 API 표시나 현행 버전이 달라져도 비교 기준을 남길 수 있습니다. 날짜 형식은 API의 숫자형 표현을 그대로 연산하지 않고, 정규화 과정에서 달력 날짜로 검증합니다. 이 예제는 ISO 날짜 문자열을 그 내부 표현으로 사용합니다.
 
@@ -74,13 +74,13 @@ One lookup does not answer all four questions. Different provisions may have dif
 
 For strictly increasing starts $`s_i`$, the simplified successive-replacement model uses half-open intervals $`[s_i,s_{i+1})`$ and a final interval extending forward. A date equal to a new start selects the new version. Compute the largest index with $`s_i\le t`$; dates before the first start have no version in the supplied history. Reconstructing historical knowledge as well as effective time requires an additional recorded-time dimension, not implemented here.
 
-`VersionTimeline` parses and sorts dates and rejects duplicate starts. `bisect_right` returns the position after an equal start; subtracting one locates the desired index. Construction costs $`O(n\log n)`$, lookup $`O(\log n)`$. Results are copied so callers cannot mutate internal records.
+`VersionTimeline` parses and sorts dates and rejects duplicate starts. `bisect_right` returns the position after an equal start; subtracting one locates the desired index. Construction costs $`O(n\log n)`$, lookup $`O(\log n)`$. Results are shallow copies made with `dict(...)`. Reassigning a field such as `id` does not change the internal record in this flat, string-valued example. Nested lists or dictionaries would still be shared; independent mutation of those objects would require a deep copy or immutable data structures.
 
 The `v1` and `v2` sample records are constructed boundary-test metadata, not real statute identifiers. Their effective starts are February 1, 2024 and January 1, 2025; the second promulgation field is November 1, 2024. Consequently December 1 returns `v1`, while January 1 returns `v2`. The command prints this effective-interval selection, not a conclusion about which law governs a case.
 
 ### 4. Verification and traceability
 
-Tests cover the day before initial commencement, both commencement boundaries, the preceding day, duplicate starts and empty input. A 50-version history is checked against a linear oracle across 361 dates. Returned-record mutation must leave the source intact.
+Tests cover the day before initial commencement, both commencement boundaries, the preceding day, duplicate starts and empty input. A 50-version history is checked against a linear oracle across 361 dates. The test reassigns the returned record’s `id` and checks that the original `id` remains unchanged. It does not establish independence of nested mutable values.
 
 Traceable research and requirement work records source URL, provision identity, version, reference date and collection time. Retaining original responses preserves a comparison point when a service or its current version changes. Calendar dates should be validated during normalization instead of treating numeric API dates as ordinary arithmetic; ISO strings are this example's internal format.
 

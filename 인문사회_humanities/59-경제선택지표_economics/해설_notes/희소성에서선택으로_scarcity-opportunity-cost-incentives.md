@@ -31,12 +31,11 @@ $$N'(q)=B'(q)-C'(q).$$
 가상 점수 $`U_A=[0,7,12,15,17,18,18]`$, $`U_B=[0,9,15,19,21]`$를 각각 생산량의 편익으로 정하고 합산 가능하다고 가정해 보겠습니다. 이것은 가치 판단을 설명하기 위해 정한 점수이며 관측 자료가 아닙니다.
 
 ```python
-benefit_a = [0, 7, 12, 15, 17, 18, 18]
-benefit_b = [0, 9, 15, 19, 21]
-# 작은 정수 문제는 모든 가능한 조합을 확인해 경계와 끝점을 놓치지 않는다.
-plans = [(a, b) for a in range(7) for b in range(5) if 2*a + 3*b <= 12]
-best = max(plans, key=lambda pair: benefit_a[pair[0]] + benefit_b[pair[1]])
-print(best)  # 최적 조합은 (3, 2)이며 점수는 30이다.
+benefit_a = [0, 7, 12, 15, 17, 18, 18]  # []는 리스트이며 A의 생산량별 편익을 저장합니다.
+benefit_b = [0, 9, 15, 19, 21]  # 인덱스가 B의 생산량이고 해당 원소가 편익입니다.
+plans = [(a, b) for a in range(7) for b in range(5) if 2*a + 3*b <= 12]  # 리스트 내포·range·if로 시간 제약을 만족하는 정수 쌍을 모읍니다.
+best = max(plans, key=lambda pair: benefit_a[pair[0]] + benefit_b[pair[1]])  # lambda가 계산한 합산 편익을 기준으로 max가 최댓값의 쌍을 고릅니다.
+print(best)  # print는 결과를 출력합니다. 최적 조합은 (3, 2)이며 점수는 30입니다.
 ```
 
 이 예에서는 제약을 만족하는 모든 조합을 직접 비교하므로 선택이 점수 정의와 일치하는지 확인할 수 있습니다. 점수의 합산 방식이나 자원 조건을 바꾸면 답도 달라질 수 있습니다. 계산의 정확성과 점수에 대한 사회적 동의는 다른 질문입니다.
@@ -45,7 +44,7 @@ print(best)  # 최적 조합은 (3, 2)이며 점수는 30이다.
 
 유인은 행동의 예상 편익과 비용을 바꾸는 조건입니다. 가격, 보상, 벌칙뿐 아니라 시간, 정보와 사회적 기대도 영향을 줍니다. 같은 유인이라도 제약과 정보가 다르면 반응이 다를 수 있습니다. 가격 변화의 효과를 볼 때는 다른 조건도 함께 바뀌었는지 확인합니다.
 
-외부효과는 거래 당사자 바깥의 사람에게 미치는 영향을 말합니다. 오염 비용이 가격에 반영되지 않으면 개인의 한계비용과 사회적 한계비용이 달라질 수 있습니다. 단순 모델에서 $`MSC=MPC+MEC`$로 씁니다. 각각 사회적·사적·외부 한계비용입니다. 그러나 외부효과가 있다는 말만으로 특정 정책의 효과나 정당성이 입증되지는 않습니다. 피해 추정, 집행 비용, 대안과 부담의 분포를 함께 비교합니다. [OpenStax §12.1](https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution)
+외부효과는 거래 당사자가 아닌 사람에게 미치지만 그 대가가 시장 거래에 반영되지 않는 비용이나 편익입니다. 오염 비용이 가격에 반영되지 않으면 개인의 한계비용과 사회적 한계비용이 달라질 수 있습니다. 단순 모델에서 $`MSC=MPC+MEC`$로 씁니다. 각각 사회적·사적·외부 한계비용입니다. 그러나 외부효과가 있다는 말만으로 특정 정책의 효과나 정당성이 입증되지는 않습니다. 피해 추정, 집행 비용, 대안과 부담의 분포를 함께 비교합니다. [OpenStax §12.1](https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution)
 
 실제 분석에서는 예산·시간·가격의 기준을 기록하고, 고정비와 추가 비용, 개인과 사회의 범위를 나눕니다. 이후 자료에서 선택과 결과의 변화를 확인하되, 단순 상관관계를 유인의 인과효과라고 단정하지 않습니다. 경제모형은 선택의 조건을 드러내는 도구이며 사람의 목적이나 공정성의 기준을 대신 정하지 않습니다.
 
@@ -77,7 +76,7 @@ The code defines hypothetical additive benefit scores $`[0,7,12,15,17,18,18]`$ f
 
 An incentive changes the expected benefits or costs of an action. Prices, rewards, penalties, time, information, and social expectations can all matter. Responses can differ because constraints and information differ. When examining a price change, check what else changed too.
 
-An externality affects people outside a transaction. Unpriced pollution can create a gap between private and social marginal costs. A simple model writes $`MSC=MPC+MEC`$, adding marginal external cost to private marginal cost. Recognizing an externality does not establish a particular policy's effectiveness or justification. Compare estimated harm, enforcement costs, alternatives, and the distribution of burdens. [OpenStax §12.1](https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution)
+An externality is a cost or benefit to people outside a transaction that is not reflected in its market terms. Unpriced pollution can create a gap between private and social marginal costs. A simple model writes $`MSC=MPC+MEC`$, adding marginal external cost to private marginal cost. Recognizing an externality does not establish a particular policy's effectiveness or justification. Compare estimated harm, enforcement costs, alternatives, and the distribution of burdens. [OpenStax §12.1](https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution)
 
 Applied analysis records the budget, time and price basis, distinguishes fixed from incremental costs, and separates private from social scope. Subsequent evidence can track choices and outcomes, but correlation alone does not establish an incentive's causal effect. Economic models clarify conditions; they do not choose people's purposes or settle fairness criteria.
 
