@@ -37,7 +37,7 @@ Micron 자료는 University of Washington의 공식 수업 배포본인 2025 검
 
 © 2020-2025 Micron Technology, Inc. All Rights Reserved. Used with permission.
 
-Micron 원 배포 경로는 [Educator Hub 자료](https://www.micron.com/content/dam/micron/educatorhub/intro-to-memory/micron-intro-to-memory-presentation.pdf)입니다. 사용한 판본은 표에 연결한 대학 수업 배포본에서 확인할 수 있습니다.
+사용한 2025 검토판은 [University of Washington 공식 수업 배포본](https://courses.cs.washington.edu/courses/cse470/26sp/readings/micron-intro-to-memory-presentation.pdf)에서 확인하실 수 있습니다.
 
 ## 사진과 설계 자료를 연결해 읽기
 

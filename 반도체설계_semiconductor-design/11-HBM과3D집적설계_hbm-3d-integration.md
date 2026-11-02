@@ -102,7 +102,7 @@ Cheemalamarri 외, A*STAR, [Communications Engineering 5, 104, 2026, Figure 4](h
 | 인터페이스 모델 | 기능·전기 특성·타이밍·훈련과 검사 조건 | 디지털 기능 통과와 실제 접속 동작이 달라집니다. |
 | 전력 지도와 냉각 조건 | 블록별 소비 전력·시간 변화·외기·방열 구조 | 칩 평균 전력만으로 국소 고온을 놓칠 수 있습니다. |
 
-이 표는 필요한 정보를 업무별로 분류한 것입니다. 모든 공급사가 같은 확장자·폴더를 쓰는 것은 아닙니다. 3Dblox는 이 중 구성 요소·물리 속성·연결을 기술하는 공개 언어의 한 예입니다. [Siemens의 3Dblox 자료](https://www.siemens.com/en-us/3dblox-resources/)에는 언어 설명과 FOWLP 예제 파일의 배포 경로가 있습니다. 3Dblox 파일이 트랜지스터 모델·전체 GDS·모든 열 재료 값을 대신하지는 않습니다.
+이 표는 필요한 정보를 업무별로 분류한 것입니다. 모든 공급사가 같은 확장자·폴더를 쓰는 것은 아닙니다. 3Dblox는 이 중 구성 요소·물리 속성·연결을 기술하는 공개 언어의 한 예입니다. [Siemens의 3Dblox 자료](https://www.siemens.com/en-us/solutions/3d-ic-design/3dblox-resources/)에는 언어 설명과 FOWLP 예제 파일의 배포 경로가 있습니다. 3Dblox 파일이 트랜지스터 모델·전체 GDS·모든 열 재료 값을 대신하지는 않습니다.
 
 서로 다른 공정의 다이를 하나의 2D PDK로 검증하지 않습니다. 다이 내부에는 해당 다이의 공정 규칙을 적용하고, 다이 사이에는 조립·접합·인터포저의 규칙과 연결 정의를 적용합니다. 공정 제공기관이 지원하는 도구·판본·검증 범위는 [TSMC EDA Alliance의 공정 및 3DFabric 인증 표](https://www.tsmc.com/english/dedicatedFoundry/oip/eda_alliance)처럼 해당 제공기관 자료에서 확인합니다.
 
