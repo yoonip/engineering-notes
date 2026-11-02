@@ -4,7 +4,7 @@ from __future__ import annotations
 import re
 from urllib.parse import urljoin, urlsplit
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment, NavigableString
 
 
 def _text(node) -> str:
@@ -14,6 +14,22 @@ def _text(node) -> str:
 def _allowed(source: dict, url: str) -> bool:
     parts = urlsplit(url)
     return parts.scheme == 'https' and parts.hostname in source['hosts'] and not parts.username and not parts.password
+
+
+def _following_intro(heading) -> str:
+    """Read visible text up to the next section, including boundaries inside a div."""
+    pieces = []
+    for sibling in heading.next_siblings:
+        if not getattr(sibling, 'name', None):
+            continue
+        for node in (sibling, *sibling.descendants):
+            if getattr(node, 'name', None) in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'table', 'article'):
+                return ' '.join(''.join(pieces).split())
+            if getattr(node, 'name', None) in ('p', 'div', 'li', 'br', 'ul', 'ol'):
+                pieces.append(' ')
+            if isinstance(node, NavigableString) and not isinstance(node, Comment):
+                pieces.append(str(node))
+    return ' '.join(''.join(pieces).split())
 
 
 def prepare_item(source: dict, item: dict) -> dict:
@@ -104,15 +120,29 @@ def detail(source: dict, text: str, url: str) -> dict:
         node.decompose()
     title = _text(soup.find('title')).split('| K-MOOC', 1)[0].strip()
     description = ''
-    for heading in soup.find_all('h3'):
-        if '수업내용/목표' not in _text(heading):
+    # 현재 강좌의 .introduce/h6와 이전 h3 양식을 모두 읽습니다.
+    # 일정·평가기준·추천 강좌까지 소개문에 섞지 않습니다.
+    headings = soup.select('.introduce h6') + soup.find_all('h3')
+    for heading in headings:
+        if _text(heading) not in ('수업내용/목표', '강좌소개', 'Course Introduction'):
             continue
-        paragraphs = []
-        for sibling in heading.next_siblings:
-            if getattr(sibling, 'name', None) in ('h2', 'h3'):
+        description = _following_intro(heading)
+        if description:
+            break
+    intro = soup.select_one('.introduce')
+    if not description and intro:
+        for row in intro.select('tr'):
+            cells = row.find_all(['th', 'td'], recursive=False)
+            if len(cells) >= 2 and _text(cells[0]) in ('학습목표', 'Learning Objectives'):
+                description = ' '.join(_text(cell) for cell in cells[1:])
                 break
-            if getattr(sibling, 'name', None) in ('p', 'div', 'ul', 'ol'):
-                paragraphs.append(_text(sibling))
-        description = ' '.join(paragraphs).strip()
-        break
+    if not description and intro:
+        # 제목 대신 이미지로 구획을 표시하는 강좌의 첫 설명 문단입니다.
+        # 뒤의 주차표·평가기준으로 넘어가지 않습니다.
+        for node in intro.children:
+            if getattr(node, 'name', None) in ('table', 'article', 'h3', 'h4', 'h5', 'h6'):
+                break
+            if getattr(node, 'name', None) == 'p' and len(_text(node)) >= 60:
+                description = _text(node)
+                break
     return {'title': title, 'description': description, 'date': '', 'kind': '강좌 안내'}

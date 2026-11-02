@@ -119,6 +119,229 @@
       "scope": "원문 날짜·필자, The AI Anthology 공동 집필과 프로그램 경험 설명",
       "source_url": "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027"
     },
+    "learning:https://www.kmooc.kr/view/course/detail/20221": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-31T18:43:18.424317+00:00",
+      "fields": {
+        "summary_ko": "한국 대학에 진학하려는 외국인 학습자를 위한 생활·학사 안내 강좌입니다. 대학의 역할과 학사규정 등 대학생활에 필요한 정보를 다루며, 강좌 자료는 PDF로 제공합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개"
+      },
+      "fingerprint": "b0b17515fb9636e6dc47860907b965b4aa2711acb7ac63c62edb10342b494700",
+      "reason": "",
+      "scope": "공식 강좌 소개·학습목표·수업계획서와 강좌 운영기간",
+      "source_url": "https://www.kmooc.kr/view/course/detail/20221"
+    },
+    "learning:https://www.kmooc.kr/view/course/detail/20402": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-31T18:43:16.329119+00:00",
+      "fields": {
+        "summary_ko": "심리학의 연구 대상을 먼저 익히고 조건형성·인지 발달·뇌와 마음·기억·정서를 차례로 공부합니다. 일상 사례를 통해 심리학을 독심술과 구분하고 행동과 사고를 연구하는 방법을 배웁니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개"
+      },
+      "fingerprint": "cc902fa219c565467053164ea1c064ea2545229c3a4b26bc2808cac70481ada3",
+      "reason": "",
+      "scope": "공식 강좌 소개·학습목표·수업계획서와 강좌 운영기간",
+      "source_url": "https://www.kmooc.kr/view/course/detail/20402"
+    },
+    "learning:https://www.kmooc.kr/view/course/detail/20818": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-31T18:43:22.701213+00:00",
+      "fields": {
+        "summary_ko": "고대부터 현대까지 서양철학의 주요 사상을 불교와 비교하는 강좌입니다. 플라톤·칸트·니체 등의 논의를 불교적 관점에서 살펴보며 불교철학의 현대적 의미를 탐구합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개"
+      },
+      "fingerprint": "d514ee107d284844db7a9bc43163701a82c510ee0714cdbd6adc3efbd1c23a11",
+      "reason": "",
+      "scope": "공식 강좌 소개·학습목표·수업계획서와 강좌 운영기간",
+      "source_url": "https://www.kmooc.kr/view/course/detail/20818"
+    },
+    "learning:https://www.kmooc.kr/view/course/detail/21313": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-31T18:43:20.291166+00:00",
+      "fields": {
+        "summary_ko": "게임의 아이디어를 세계관·스토리·캐릭터·규칙으로 구체화하고, 컨셉 기획서를 만드는 강좌입니다. AR·VR 등 실감미디어를 활용한 기획과 UI·UX, 레벨 디자인을 함께 다룹니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개"
+      },
+      "fingerprint": "d661e41c53d8e167f4a66fb2f3fbb40c846a874188d600b7ab1263714027ecaa",
+      "reason": "",
+      "scope": "공식 강좌 소개·학습목표·수업계획서와 강좌 운영기간",
+      "source_url": "https://www.kmooc.kr/view/course/detail/21313"
+    },
+    "learning:https://www.kmooc.kr/view/course/detail/21387": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-31T18:43:24.730263+00:00",
+      "fields": {
+        "summary_ko": "3D 의상에 사용할 직물의 표면과 그래픽 이미지를 만드는 과정입니다. CLO의 텍스처 표현, 패턴 반복, 패브릭 이미지 편집과 그래픽 제작을 배웁니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개"
+      },
+      "fingerprint": "f689c68ce64ccc1b24bd1b184eb99ea3a2bbb35486f2d1c4c49079dc4030a4ff",
+      "reason": "",
+      "scope": "공식 강좌 소개·학습목표·수업계획서와 강좌 운영기간",
+      "source_url": "https://www.kmooc.kr/view/course/detail/21387"
+    },
+    "models:google-announcement:gemini-3-8-live-with-live-avatar": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T03:34:54.131044+00:00",
+      "fields": {
+        "summary_ko": "실시간 대화에 낮은 지연의 영상 생성과 입 모양·표정 동기화를 결합한 기능입니다. 시청각 입력에 응답하는 아바타와 대화를 유지하면서 배경에서 도구를 호출하는 기업용 활용을 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Gemini 3.8 Live의 음성·영상 아바타 / Introducing Gemini 3.8 Live with Live Avatar"
+      },
+      "fingerprint": "3d926b2132cc4dce5d68522283787cfb5cd5a9fd6483da2a257728b8780ae91e",
+      "reason": "",
+      "scope": "도입부·multimodal conversations·asynchronous tool execution",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/"
+    },
+    "models:google-announcement:genie-4-a-new-generation-of-world-simulation": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T03:34:54.131044+00:00",
+      "fields": {
+        "summary_ko": "텍스트와 조작 입력에 반응하는 가상 세계에 음악·환경음·대화를 함께 생성하는 월드 모델입니다. 발표 당시 일부 테스터에게 연구 프리뷰를 제공하고, 로봇·에이전트 학습 환경과 상호작용 콘텐츠로의 활용을 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Genie 4의 실시간 가상 세계와 오디오 생성 / 지니 4(Genie 4): 월드 시뮬레이션의 새로운 세대"
+      },
+      "fingerprint": "4c41995c121c3a9ed5d52753459a16ebe06b9d59921472fa891ed1ba89d3befa",
+      "reason": "",
+      "scope": "한국어 원문의 도입부·연구 프리뷰 제공 범위",
+      "source_url": "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr/"
+    },
+    "models:google-announcement:introducing-gemini-4-carbon": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T03:34:54.131044+00:00",
+      "fields": {
+        "summary_ko": "Google이 사이버보안과 여러 단계에 걸친 장기 작업을 중심으로 발표한 모델입니다. 취약점 탐색·패치와 코딩·에이전트 평가 결과를 소개하며, 수치는 발표자가 제시한 시험 조건에 따른 결과입니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Gemini 4 Carbon의 보안·장기 작업 평가 / Gemini 4 Carbon: our next frontier model"
+      },
+      "fingerprint": "d03a9a25e823df8af209b59549578fa993d863e23581ea40938fd442a34aa432",
+      "reason": "",
+      "scope": "도입부와 보안·코딩 평가 설명",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    },
+    "models:https://api-docs.deepseek.com/updates#deepseek-v41-flash-1017-update": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T03:34:54.131044+00:00",
+      "fields": {
+        "summary_ko": "기존 V4.1 Flash의 웹·앱·API 모델을 갱신한 발표입니다. API 호출 방식과 가격을 유지하면서 코딩·에이전트·시각 평가 결과, 작업 시간과 출력 길이의 변화를 보고합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "DeepSeek-V4.1-Flash-1017의 모델 갱신 / DeepSeek-V4.1-Flash-1017 Update"
+      },
+      "fingerprint": "6b05cff13c1aa332f4f23b1580ae0dd8c913b8b62894f5fbe6be5764cc9e6442",
+      "reason": "",
+      "scope": "2026-10-17의 Flash-1017 절만 대조; 인접 검색 API 발표와 구분",
+      "source_url": "https://api-docs.deepseek.com/updates/#deepseek-v41-flash-1017-update"
+    },
+    "models:https://developers.googleblog.com/gemini-4-argon-for-robotics": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T03:34:54.131044+00:00",
+      "fields": {
+        "summary_ko": "로봇 제어, 실제 장면의 시뮬레이션 복원, 행동 영상 분석에 모델을 적용한 사례입니다. Spot의 물체 조작과 MuJoCo 사전 연습, 카메라 관측을 이용한 로봇팔 제어를 예시로 보여 줍니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Gemini 4 Argon의 로봇 제어·시뮬레이션 사례 / Gemini 4 Argon for Robotics- Google Developers Blog"
+      },
+      "fingerprint": "867deffcf6108800b501479f6aee9415dea755a141b73c161f744bc35c386ec5",
+      "reason": "",
+      "scope": "도입부·네 가지 활용 영역·Spot/MuJoCo·로봇팔 예시",
+      "source_url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content="
+    },
+    "models:https://openai.com/index/gpt-6-for-everyone": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T03:34:54.131044+00:00",
+      "fields": {
+        "date_label": "공식 RSS 발행 시각",
+        "summary_ko": "ChatGPT 응답에 글·그림·버튼·입력 양식·대화형 도구를 함께 구성하는 Intelligent UI를 소개합니다. 질문에 맞는 표현을 선택하고, 구성 요소 라이브러리와 스트리밍 컴파일러로 화면을 생성하는 방식을 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "GPT-6의 대화형 화면 구성 / GPT-6 and Intelligent UI for everyone"
+      },
+      "fingerprint": "5add94e46052b45a7e81ae08c3fc9a56c1ad6f5aa9840739e80ff8b8beb6cb57",
+      "reason": "",
+      "scope": "도입부·Introducing Intelligent UI·How Intelligent UI works",
+      "source_url": "https://openai.com/index/gpt-6-for-everyone"
+    },
+    "models:https://openai.com/index/introducing-gpt-6-1-sol": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T03:34:54.131044+00:00",
+      "fields": {
+        "date_label": "공식 RSS 발행 시각",
+        "summary_ko": "코딩, 복잡한 문서 처리, 여러 단계의 업무와 컴퓨터 사용을 다루는 모델 발표입니다. 이전 Sol 및 Astra와 비교한 제작자 평가에서 성능과 작업당 비용을 함께 제시하고, 사실성 평가의 표본 조건도 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "GPT-6.1 Sol의 코딩·문서·컴퓨터 작업 평가 / Introducing GPT-6.1 Sol"
+      },
+      "fingerprint": "6a5fddcbe7a74e6016d01952488bc0c4fe04069948c4f70c4cf121c71459076f",
+      "reason": "",
+      "scope": "도입부·Coding·Professional work·Computer use·Scientific research·Factuality",
+      "source_url": "https://openai.com/index/introducing-gpt-6-1-sol"
+    },
+    "models:https://openai.com/index/introducing-gpt-6-1-terra": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T03:34:54.131044+00:00",
+      "fields": {
+        "date_label": "공식 RSS 발행 시각",
+        "summary_ko": "시각적 추론과 컴퓨터 조작, 글쓰기를 함께 다루는 모델 발표입니다. 도면 해석·양식 입력·영상 편집 같은 활용 예와 컴퓨터 사용·코딩·사실성 평가, 제공 경로를 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "GPT-6.1 Terra의 시각 이해와 컴퓨터 사용 / Introducing GPT-6.1 Terra"
+      },
+      "fingerprint": "c3c794254a22a5ed4aa11c3009488878cd2e3af6490de2c65fa4fd56054194e4",
+      "reason": "",
+      "scope": "도입부·computer use·factuality and coding·availability",
+      "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
+    },
+    "models:https://www.anthropic.com/claude-haiku-5-5": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T03:34:54.131044+00:00",
+      "fields": {
+        "summary_ko": "요약·분류·데이터베이스 질의처럼 요청이 많은 작업과 코딩 보조 에이전트를 대상으로 한 소형 모델입니다. 추론 노력 설정에 따른 성능·비용, 브라우저 사용과 응답 속도에 관한 제작자 평가를 소개합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Claude Haiku 5.5의 반복 작업과 실행 비용 / Introducing Claude Haiku 5.5"
+      },
+      "fingerprint": "f488e60c44958774e3ede0844702dc6b1609bcd42943ebe6136c32f23a7c233b",
+      "reason": "",
+      "scope": "도입부·Performance·effort 설정",
+      "source_url": "https://www.anthropic.com/claude-haiku-5-5"
+    },
+    "models:https://www.anthropic.com/claude-sonnet-5-5": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T03:34:54.131044+00:00",
+      "fields": {
+        "summary_ko": "버그 수정과 문서·슬라이드·스프레드시트 작성 등 범위가 명확한 업무를 중심으로 소개한 모델입니다. 이전 Sonnet과의 속도·작업당 비용·코딩 평가를 비교하며, 복잡하고 개방적인 작업에서는 Opus와의 차이도 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Claude Sonnet 5.5의 일상 업무·코딩 평가 / Introducing Claude Sonnet 5.5"
+      },
+      "fingerprint": "3249798a0b4bcb08282ff208fabe3c675ed2423ad0bda22c8611d06f15034f26",
+      "reason": "",
+      "scope": "도입부·Performance and cost 설명",
+      "source_url": "https://www.anthropic.com/claude-sonnet-5-5"
+    },
+    "papers:https://arxiv.org/abs/2511.20572": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-11-02T08:08:25.007893+00:00",
+      "fields": {
+        "kind": "프리프린트 초록 · 무선 채널 모델",
+        "summary_ko": "벽·천장처럼 넓은 면에서 반사되는 전파를 포함한 근거리장 MIMO 채널 모델을 제안합니다. 직접 보이는 경로만으로는 여러 사용자에게 충분한 다중화 이득을 얻기 어려운 조건을 분석하고, 비가시선 반사 경로의 역할을 모의실험으로 평가합니다.",
+        "summary_mode": "원문 초록을 대조한 한국어 소개",
+        "title": "벽과 천장 반사를 포함한 근거리장 MIMO 채널 모델 / Near-Field Multipath MIMO Channels: Modeling Reflectors and Exploiting NLOS Paths"
+      },
+      "fingerprint": "a3cd32b6839342d30a517a457748cf37a794fe402166549abd25d83cfad1ebbe",
+      "reason": "",
+      "scope": "v2 초록, 저자, 제목, 최초 2025-11-25/개정 2026-10-30 확인; 긴 문맥 연구 아님",
+      "source_url": "https://arxiv.org/abs/2511.20572"
+    },
     "papers:https://arxiv.org/abs/2610.36298": {
       "action": "keep",
       "checked_on": "2026-10-29",
@@ -179,6 +402,36 @@
       "scope": "초록과 v1 제출 이력",
       "source_url": "https://arxiv.org/abs/2610.37070"
     },
+    "papers:https://arxiv.org/abs/2610.37958": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-30T08:54:46.392335+00:00",
+      "fields": {
+        "kind": "프리프린트 초록 · 신경과학·즉흥 수행",
+        "summary_ko": "음악·무용·연극 등에서 즉흥적으로 행동을 만들어 내는 과정을 다룬 연구를 정리합니다. fMRI·EEG 등으로 관찰한 결과를 비교하고, 분야와 숙련도에 따라 차이가 있어 모든 즉흥 수행에 공통된 신경 신호를 확정하기 어렵다고 설명합니다.",
+        "summary_mode": "원문 초록을 대조한 한국어 소개",
+        "title": "음악 등 여러 활동의 즉흥 수행을 설명하는 신경과학 연구 / Neuroscience of Improvisation Across Music and Other Domains: A Survey and Outlook"
+      },
+      "fingerprint": "f058aaba60fd3177d03f907ee2f3075be60c8e84c2d8d25f3d3230b1c4ebcad5",
+      "reason": "",
+      "scope": "v1 초록, 저자, 제목, 2026-10-27 최초 제출 확인; LLM 긴 문맥 연구 아님",
+      "source_url": "https://arxiv.org/abs/2610.37958"
+    },
+    "papers:https://arxiv.org/abs/2610.38868": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-30T08:54:46.392335+00:00",
+      "fields": {
+        "kind": "프리프린트 초록 · 무선 채널 에뮬레이션",
+        "summary_ko": "NI USRP X4xx와 FPGA로 실제 무선장치 사이의 채널을 재현합니다. 외부에서 전달받은 채널 응답을 적용해 전파의 지연·감쇠·도플러 변화를 조절하고, 실제 하드웨어 측정으로 정확도를 확인한 연구입니다.",
+        "summary_mode": "원문 초록을 대조한 한국어 소개",
+        "title": "소프트웨어 정의 무선장치로 여러 무선 채널을 재현하는 xCHEM / xCHEM: SDR-Based Multi-Link Channel Emulator for Real-Time Hardware-in-the-Loop Digital-Twin"
+      },
+      "fingerprint": "032f80e280f4226b392a3bdd65a1983a8fd0cc439b39241674772b44fe5b03ef",
+      "reason": "",
+      "scope": "v1 초록, 저자, 제목, 2026-10-28 최초 제출 확인; 캐시 연구 아님",
+      "source_url": "https://arxiv.org/abs/2610.38868"
+    },
     "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": {
       "action": "keep",
       "checked_on": "2026-10-29",
@@ -198,6 +451,24 @@
       "reason": "",
       "scope": "원문 날짜·필자, 멀티모달 구조와 전해질 후보 사례",
       "source_url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018"
+    },
+    "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-30T21:00:20.836860+00:00",
+      "fields": {
+        "date": "2026-10-30",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-30T20:15:00+00:00",
+        "kind": "대학 소식 · 연구지원·연구자 소개",
+        "summary_ko": "MIT 교수 다섯 명과 동문 두 명이 AI2050 펠로로 선정된 소식입니다. AI가 사람과 사회에 도움이 되도록 하는 수학적 기반·의사결정·인간 중심 AI 등의 연구 방향을 소개합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "MIT 교수·동문들의 2026 AI2050 펠로 선정과 연구 주제 / MIT affiliates named 2026 Schmidt Sciences AI2050 Fellows"
+      },
+      "fingerprint": "a9828d2191b88b63de30cb0876b729e13654b5bd96d5a9c7aa631d9e3c57d1bc",
+      "reason": "",
+      "scope": "MIT News 본문 제목/작성자/게시일 2026-10-30과 선정 인원·연구 소개 확인; 연구결과 논문 자체 아님",
+      "source_url": "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030"
     },
     "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
       "action": "keep",
@@ -239,6 +510,24 @@
       "scope": "원문 날짜·필자와 E(3)-Pose 및 MRI 단면 방향 추적 설명",
       "source_url": "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019"
     },
+    "products:https://blog.st.com/ai-data-centers": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-30T16:11:32.300334+00:00",
+      "fields": {
+        "date": "2026-10-30",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-30T10:00:00+00:00",
+        "kind": "데이터센터 전력 변환 기술 소개",
+        "summary_ko": "AI 데이터센터의 고전압 DC 배전이 전력 변환 제어에 주는 영향을 설명합니다. 800V 배전, GaN·SiC 스위치, 부하 변동과 하드웨어 보호를 연결한 제조사 관점의 글입니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "AI 데이터센터의 고전압 배전과 전력 제어 / AI data centers are trading copper for control"
+      },
+      "fingerprint": "09e4f32f721d460325a03f02d380846d5928dd1e9d52b4f926447b3b30a9c116",
+      "reason": "",
+      "scope": "실제 본문 도입·800volts·controller 요구를 읽었습니다. 2027–2028 MW급 랙 전망은 운용 실적으로 쓰지 않습니다.",
+      "source_url": "https://blog.st.com/ai-data-centers/"
+    },
     "products:https://blog.st.com/rust-mems-drivers": {
       "action": "keep",
       "checked_on": "2026-10-29",
@@ -259,6 +548,24 @@
       "reason": "",
       "scope": "원문 제목·상단 표기일, Update/Original publication 절, Reason #2와 시작 방법을 확인했습니다.",
       "source_url": "https://blog.st.com/rust-mems-drivers/"
+    },
+    "products:https://blog.st.com/snapdragon-wear-elite": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T17:03:39.153360+00:00",
+      "fields": {
+        "date": "2026-10-29",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-29T15:42:23+00:00",
+        "kind": "웨어러블 센서·온디바이스 추론 사례",
+        "summary_ko": "Snapdragon Wear Elite의 eNPU와 LSM6DSV32X 센서를 이용한 보행 속도 추정·착용 여부·낙상 감지 사례입니다. eNPU와 센서 내부 MLC·FSM이 맡는 역할과 전력 관리 방법을 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "웨어러블의 보행·착용·낙상 감지 / The 1st ST applications on the Snapdragon Wear Elite eNPU shape future products thanks to AI expertise and LSM6DSV32X IMU"
+      },
+      "fingerprint": "8fcc808a68eeca0130a103422213c9ec5c1c505ad041158cd76ec20a7f8734a8",
+      "reason": "",
+      "scope": "공식 본문 도입과 세 application 절. 제조사의 정확도 주장을 독립 측정으로 바꾸지 않습니다.",
+      "source_url": "https://blog.st.com/snapdragon-wear-elite/"
     },
     "products:https://blog.st.com/stspin9p": {
       "action": "keep",
@@ -364,6 +671,42 @@
       "scope": "원문 h1·상단 날짜·작성자와 기판, 패키징, 반도체 테스트, 광학 엔진 절을 확인했습니다.",
       "source_url": "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/"
     },
+    "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-31T01:00:45.925280+00:00",
+      "fields": {
+        "date": "2026-10-30",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-30T21:35:31+00:00",
+        "kind": "추론 서비스 배포 안내",
+        "summary_ko": "NVIDIA Dynamo를 Kubernetes에서 실행하기 위한 AICR 구성 방법입니다. GPU 드라이버·자원 할당·스케줄링·관측 도구의 버전을 묶고, 프런트엔드와 Gateway/EPP 두 라우팅 경로를 비교합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Kubernetes에서 NVIDIA Dynamo 실행 환경 구성 / Build a Validated Kubernetes Runtime for NVIDIA Dynamo"
+      },
+      "fingerprint": "fbc012361000fa3a384f2bd55c410b5b4b81e3773613c084151e07d5596294f6",
+      "reason": "",
+      "scope": "공식 본문 도입·What AICR ships·routing paths를 읽었습니다. 설치 절 전체 실행 아님.",
+      "source_url": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/"
+    },
+    "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-30T16:11:30.562903+00:00",
+      "fields": {
+        "date": "2026-10-30",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-30T16:00:00+00:00",
+        "kind": "에이전트 개발·실행 환경 안내",
+        "summary_ko": "NemoClaw blueprint가 기존 에이전트 harness, Nemotron 모델, NeMo 도구, OpenShell 실행 환경을 연결하는 방법을 소개합니다. 에이전트 자체와 접근 정책을 적용하는 실행 환경의 역할을 구분합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "NemoClaw의 에이전트 구성과 실행 환경 / Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw"
+      },
+      "fingerprint": "e5fdd08afd7e3e8eedeaaa4b0bb4f505a7aa92a35439d3cc28ead78929c2febe",
+      "reason": "",
+      "scope": "실제 본문 What harness provides·Using NemoClaw·When to use each를 읽었습니다. 가격우위 주장과 자동요약의 성능값은 소개에 옮기지 않습니다.",
+      "source_url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+    },
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
       "action": "keep",
       "checked_on": "2026-10-29",
@@ -384,6 +727,24 @@
       "reason": "",
       "scope": "원문 제목·상단 날짜·post-authors byline, The difference post-training makes와 When to use this workflow 절 및 Figure 1을 확인했습니다. AI-Generated Summary만을 근거로 삼지 않았습니다.",
       "source_url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
+    },
+    "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-30T16:11:30.562903+00:00",
+      "fields": {
+        "date": "2026-10-30",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-30T15:01:36+00:00",
+        "kind": "스토리지·GPU 데이터 경로 진단 안내",
+        "summary_ko": "GPUDirect Storage 환경을 점검하는 gds-diag 사용 안내입니다. 설치 전후 확인, 설정 검사, 컨테이너·마운트 경로 진단을 나누고 명령줄 도구와 선택적인 에이전트 연동을 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "GPUDirect Storage 설정과 환경 진단 / How to Check and Configure NVIDIA GPUDirect Storage for Your Platform"
+      },
+      "fingerprint": "3d47176caed748d0e6228df83a48e5d29d4bd4476977c282f0c319d90dd63bc0",
+      "reason": "",
+      "scope": "실제 본문 도입·다운로드·command-line usage를 확인했습니다. 도구 자체 요구조건과 GDS GPU/CUDA 요구조건을 구분합니다.",
+      "source_url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/"
     },
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
       "action": "keep",
@@ -426,6 +787,44 @@
       "reason": "",
       "scope": "원문 제목·상단 날짜·post-authors byline, 본문 첫 문단과 기술 목록, DLSS·ACE 절을 확인했습니다. AI-Generated Summary만을 근거로 삼지 않았습니다.",
       "source_url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+    },
+    "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-30T21:00:13.265286+00:00",
+      "fields": {
+        "author": "Joe Halabi, Lin Chai, Maximilien Breughe, Michael Ferry, Charlotte Mallo",
+        "author_label": "원문 작성자",
+        "date": "2026-10-30",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-30T20:33:18+00:00",
+        "kind": "임베디드 AI 추론 개발 안내",
+        "summary_ko": "DGX Spark에서 TensorRT Edge-LLM으로 모델을 실행하는 개발 안내입니다. trtedge를 이용한 모델 다운로드·엔진 생성·로컬 API 제공과 DSpark 추측 디코딩 설정을 설명합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "DGX Spark의 TensorRT Edge-LLM 실행 / Run AI Models for Edge Application Development with Just a Few Commands"
+      },
+      "fingerprint": "c0caf0b3091b411159753d334e32fe472ad2269e6eb3d9e3e5974dfe2ad31d99",
+      "reason": "",
+      "scope": "본문 도입·prerequisites·serve·speculative decoding 확인. 원문 저자 Joe Halabi, Lin Chai, Maximilien Breughe, Michael Ferry, Charlotte Mallo이며 저장 RSS Shara Tibken과 불일치합니다. RSS 표기 저자라는 기존 라벨은 유지하되 원문 저자를 함께 대조해야 합니다.",
+      "source_url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/"
+    },
+    "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-29T17:03:37.395421+00:00",
+      "fields": {
+        "date": "2026-10-29",
+        "date_label": "원문 게시일",
+        "feed_date": "2026-10-29T15:00:00+00:00",
+        "kind": "과학 계산의 수치 정밀도·가속 비교",
+        "summary_ko": "원자 간 에너지와 힘을 예측하는 PET 모델에서 BF16x9·TF32x3 행렬곱을 비교합니다. Tensor Core를 활용한 속도와 FP32 기준의 수치 오차·분자동역학 안정성을 함께 평가합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "원자 간 상호작용 예측의 Tensor Core 연산 / Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials"
+      },
+      "fingerprint": "8972799e585a4e9fd6c467a0e57ad0e36aefb4b1e6554a56404f917ae2a77e76",
+      "reason": "",
+      "scope": "AI 자동요약 아래 실제 본문 도입·방법·benchmark 절을 읽었습니다. 원문의 실험을 직접 실행한 것은 아닙니다.",
+      "source_url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/"
     },
     "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {
       "action": "keep",
@@ -579,6 +978,20 @@
       "reason": "",
       "scope": "공식 원문 HTML을 HTTP 200으로 열어 본문을 읽었습니다.",
       "source_url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4"
+    },
+    "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": {
+      "action": "keep",
+      "checked_on": "2026-11-02",
+      "collected_date": "2026-10-30T21:00:12.484295+00:00",
+      "fields": {
+        "summary_ko": "Zephyr 4.3.1에 대한 오류 수정 릴리스입니다. POSIX 디렉터리 처리, ext2 메타데이터, DTLS 소켓과 시스템 호출 검증 등에서 발견된 메모리 접근·경쟁 상태·권한 검사 문제의 수정 내역을 연결합니다.",
+        "summary_mode": "공식 원문을 대조한 한국어 소개",
+        "title": "Zephyr 4.3.2의 오류·보안 수정 / Zephyr 4.3.2"
+      },
+      "fingerprint": "98bcac827f10cb00408e01b7c797ed9429ccda2277a4ca50b210914f68590d45",
+      "reason": "",
+      "scope": "릴리스 도입부 및 Security Vulnerability Related 목록",
+      "source_url": "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2"
     },
     "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": {
       "action": "keep",

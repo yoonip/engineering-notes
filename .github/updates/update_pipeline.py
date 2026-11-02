@@ -54,12 +54,12 @@ ADAPTERS = {'models': model_adapters, 'reports': report_adapters,
             'papers': scholar_adapters, 'learning': scholar_adapters}
 TOPICS = [
     (r'reasoning|inference|추론|推理', '추론'),
-    (r'coding|code generation|software engineering|코딩|코드|编程', '코딩'),
-    (r'agent|tool use|tool calling|에이전트|도구 사용|智能体', '에이전트·도구 사용'),
+    (r'\b(?:coding|code generation|software engineering)\b|코딩|코드|编程', '코딩'),
+    (r'\b(?:agents?|agentic|tool use|tool calling)\b|에이전트|도구 사용|智能体', '에이전트·도구 사용'),
     (r'computer use|browser|컴퓨터 사용|브라우저', '컴퓨터·브라우저 사용'),
     (r'world model|world simulation|월드 모델|세계 모형|시뮬레이션', '세계 모형·시뮬레이션'),
-    (r'context|long.horizon|long.running|문맥|컨텍스트|장기 작업|上下文', '긴 문맥·장기 작업'),
-    (r'multimodal|vision|image|video|다중모달|멀티모달|이미지|영상|多模态', '이미지·영상 처리'),
+    (r'\b(?:long[- ]context|context window|long[- ]horizon|long[- ]running)\b|긴 문맥|긴 컨텍스트|장기 작업|长上下文', '긴 문맥·장기 작업'),
+    (r'\b(?:multimodal|vision|images?|videos?)\b|다중모달|멀티모달|이미지|영상|多模态', '이미지·영상 처리'),
     (r'audio|speech|음성|语音', '음성 처리'),
     (r'cyber|security|vulnerabilit|CVE-\d|보안|安全', '보안'),
     (r'benchmark|evaluation|벤치마크|평가|评估', '평가'),
@@ -70,7 +70,7 @@ TOPICS = [
     (r'robot|mobility|로봇|모빌리티', '로봇·모빌리티'),
     (r'\b(?:GPU|accelerator|CUDA)\b|가속기', 'GPU·가속기'),
     (r'processor|microarchitecture|RISC-V|\bCPU\b|프로세서|컴퓨터구조', '프로세서·컴퓨터구조'),
-    (r'\b(?:memory|cache|DRAM|HBM)\b|메모리|캐시', '메모리·캐시'),
+    (r'\b(?:cache|DRAM|SRAM|HBM|memory bandwidth|memory capacity|memory controller|memory allocation|memory hierarchy)\b|메모리 대역폭|메모리 용량|메모리 할당|캐시', '메모리·캐시'),
     (r'compiler|\b(?:Python|LLVM|Zephyr|RTOS)\b|firmware|컴파일러|펌웨어', '개발 도구·시스템 소프트웨어'),
     (r'communication|wireless|radar|MIMO|signal processing|통신|레이더|신호처리', '통신·신호 처리'),
     (r'display|OLED|circuit|디스플레이|회로', '회로·디스플레이'),
@@ -525,13 +525,14 @@ def publish(repo: Path, state: dict, accepted: list[dict], now: datetime) -> lis
     return changed
 
 
-def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None) -> dict:
+def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None, clock=None) -> dict:
     original = state_path.read_text(encoding='utf-8') if state_path.exists() else ''
     state = json.loads(original) if original else {'schema': 1, 'requests': {}, 'sources': {}, 'seen': {}, 'aliases': {}, 'robots': {}}
     if state.get('schema') != 1:
         raise ValueError('Unsupported state schema')
     client = Client(state['requests'], config['sources'])
     fetch = fetcher or client.fetch
+    clock = clock or ((lambda: now) if fetcher else (lambda: datetime.now(timezone.utc)))
     covered = covered_urls(repo)
     accepted, reports = [], []
     started = now.isoformat()
@@ -550,7 +551,7 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
             if fetcher is None and not allowed_by_robots(client, source, state, now):
                 raise FetchFailure('robots_disallowed')
             text, final_url = fetch(source['url'], source['hosts'])
-            source_acquired_at = now.isoformat() if fetcher else datetime.now(timezone.utc).isoformat()
+            source_acquired_at = clock().isoformat()
             if text is None:
                 candidates = source_state.get('candidates', [])
                 if not source_state:
@@ -648,7 +649,7 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
                                 values['description'] = clean(values['description'])[:600]
                             state.setdefault('details', {})[canonical(detail_url)] = values
                         used_detail = True
-                        item_acquired_at = now.isoformat() if fetcher else datetime.now(timezone.utc).isoformat()
+                        item_acquired_at = clock().isoformat()
                         # 메타 제목이 일반 사이트명인 경우 어댑터가 반환한 원문 제목을 우선합니다.
                         full.update({k: v for k, v in values.items() if v})
                         proposed = full.pop('canonical_url', detail_final)
@@ -742,11 +743,12 @@ def run(config: dict, state_path: Path, repo: Path, now: datetime, fetcher=None)
         old_item = unique.get(item['key'])
         if not old_item or item['summary_mode'] == '공식 한국어 소개 발췌':
             unique[item['key']] = item
-    changed = publish(repo, state, list(unique.values()), now)
+    completed_at = clock()
+    changed = publish(repo, state, list(unique.values()), completed_at)
     serialized = json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + '\n'
     if serialized != original:
         write_if_changed(state_path, serialized)
-    return {'checked_at': now.isoformat(), 'sources': reports, 'changed_files': changed,
+    return {'started_at': started, 'checked_at': completed_at.isoformat(), 'sources': reports, 'changed_files': changed,
             'new_or_updated': len(unique), 'state_changed': serialized != original}
 
 

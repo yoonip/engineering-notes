@@ -24,6 +24,43 @@ class ExpandedTests(unittest.TestCase):
             return p.run({'sources': sources, 'initial_days': 45, 'initial_per_source': 3},
                          self.state, self.repo, now, lambda url, hosts: (body, url))
 
+    def test_topic_words_do_not_match_inside_unrelated_english_words(self):
+        source = {'group': 'products', 'name': '공식 자료'}
+        for title, unwanted in [('Reagent quality in DNA sequencing', '에이전트·도구 사용'),
+                                ('Decoding retinal signals for visual prostheses', '코딩'),
+                                ('Neural encoding of speech sounds', '코딩'),
+                                ('Firmware revision 2.1 release notes', '이미지·영상 처리')]:
+            with self.subTest(title=title):
+                summary, _ = p.overview({'title': title}, source)
+                self.assertNotIn(unwanted, summary)
+        for title, expected in [('Agents and tool calling', '에이전트·도구 사용'),
+                                ('Coding assistants for software engineering', '코딩'),
+                                ('Code generation with static checks', '코딩'),
+                                ('Agentic systems', '에이전트·도구 사용'),
+                                ('Computer vision and videos', '이미지·영상 처리')]:
+            with self.subTest(title=title):
+                summary, _ = p.overview({'title': title}, source)
+                self.assertIn(expected, summary)
+
+    def test_general_context_and_memory_do_not_imply_ai_context_or_chip_memory(self):
+        source = {'group': 'papers', 'name': '공식 논문 초록'}
+        examples = [
+            ('Neuroscience of Improvisation Across Music and Other Domains',
+             'Memory and creative behavior depend on context.', '긴 문맥·장기 작업'),
+            ('Near-Field Multipath MIMO Channels',
+             'We evaluate channel models in the context of wireless communications.', '긴 문맥·장기 작업'),
+            ('xCHEM: SDR-Based Multi-Link Channel Emulator',
+             'The implementation uses FPGA memory for wireless channel responses.', '메모리·캐시'),
+        ]
+        for title, description, unwanted in examples:
+            with self.subTest(title=title):
+                summary, _ = p.overview({'title': title, 'description': description}, source)
+                self.assertNotIn(unwanted, summary)
+        for title, expected in [('Long-context models and context windows', '긴 문맥·장기 작업'),
+                                ('HBM memory bandwidth and SRAM cache', '메모리·캐시')]:
+            summary, _ = p.overview({'title': title}, source)
+            self.assertIn(expected, summary)
+
     def test_six_inboxes_preserve_all_existing_analysis_bytes_and_record_provenance(self):
         for group in ('technology', 'tools', 'industry', 'products', 'papers', 'learning'):
             root = self.repo / p.GROUPS[group][0]
@@ -102,6 +139,23 @@ class ExpandedTests(unittest.TestCase):
     def test_month_boundary_uses_korean_calendar(self):
         now = datetime(2026, 10, 31, 15, 37, tzinfo=timezone.utc)
         self.assertEqual(p.outside_window('2026-11', now - timedelta(days=45), now), (False, False))
+
+    def test_publication_uses_completion_date_when_collection_crosses_midnight(self):
+        started = datetime(2026, 10, 31, 14, 59, tzinfo=timezone.utc)
+        fetched = started + timedelta(minutes=2)
+        finished = started + timedelta(minutes=3)
+        ticks = iter((fetched, finished))
+        with patch.dict(p.ADAPTERS, {'reports': SimpleNamespace()}):
+            result = p.run({'sources': [SOURCE]}, self.state, self.repo, started,
+                           lambda url, hosts: (feed([item()]), url), clock=lambda: next(ticks))
+        directory = self.repo / p.GROUPS['reports'][0] / p.OUTPUT_DIRS['reports']
+        self.assertTrue((directory / '날짜별/2026-11-01.md').exists())
+        self.assertFalse((directory / '날짜별/2026-10-31.md').exists())
+        text = (directory / 'README.md').read_text(encoding='utf-8')
+        self.assertIn('반영: 2026-11-01 00:02 KST', text)
+        self.assertIn('가져온 시각: 2026-11-01 00:01:00 KST', text)
+        self.assertEqual(result['started_at'], started.isoformat())
+        self.assertEqual(result['checked_at'], finished.isoformat())
 
 
 if __name__ == '__main__':

@@ -66,6 +66,53 @@ class ScholarAdapterTests(unittest.TestCase):
             s.discover({'adapter': 'unknown'}, '<html/>')
         self.assertEqual(s.detail({'adapter': 'arxiv'}, '<html/>', 'https://arxiv.org/abs/2610.12345'), {})
 
+    def test_current_kmooc_intro_stops_before_schedule_and_assessment(self):
+        source = {'adapter': 'kmooc', 'hosts': ['www.kmooc.kr']}
+        text = '''<title>디지털텍스처링 | K-MOOC</title><div class="introduce">
+        <article><h6>강좌소개</h6><ul><li><p>직물의 색과 표면을 디지털 이미지로 표현합니다.</p></li></ul></article>
+        <article><h6>강좌 운영일정</h6><p>2026년 1월</p></article>
+        <article><h6>이수 및 평가기준</h6><p>퀴즈 60점</p></article></div>
+        <h6>강좌소개</h6><p>다른 추천 강좌입니다.</p>'''
+        row = s.detail(source, text, 'https://www.kmooc.kr/view/course/detail/21387')
+        self.assertEqual(row['description'], '직물의 색과 표면을 디지털 이미지로 표현합니다.')
+        self.assertEqual(row['date'], '')
+
+    def test_missing_kmooc_introduction_does_not_extract_an_assessment(self):
+        source = {'adapter': 'kmooc', 'hosts': ['www.kmooc.kr']}
+        row = s.detail(source, '<div class="introduce"><h6>이수 및 평가기준</h6><p>퀴즈 60점</p></div>',
+                       'https://www.kmooc.kr/view/course/detail/42')
+        self.assertEqual(row['description'], '')
+
+    def test_kmooc_nested_heading_and_table_stop_the_introduction(self):
+        source = {'adapter': 'kmooc', 'hosts': ['www.kmooc.kr']}
+        for boundary in ('<table><tr><td>주차표</td></tr></table>',
+                         '<div><h6>이수 및 평가기준</h6><p>평가 안내</p></div>'):
+            with self.subTest(boundary=boundary):
+                text = ('<div class="introduce"><h6>강좌소개</h6>'
+                        '<div><p>회로의 <em>기초</em>를 배웁니다.</p></div>'
+                        + boundary + '<p>퀴즈 60점입니다.</p></div>')
+                row = s.detail(source, text, 'https://www.kmooc.kr/view/course/detail/42')
+                self.assertEqual(row['description'], '회로의 기초를 배웁니다.')
+
+    def test_empty_current_heading_does_not_hide_a_valid_older_section(self):
+        source = {'adapter': 'kmooc', 'hosts': ['www.kmooc.kr']}
+        text = ('<div class="introduce"><h6>강좌소개</h6></div>'
+                '<article><h3>수업내용/목표</h3><p>전류와 전압의 관계를 배웁니다.</p>'
+                '<h3>평가</h3><p>퀴즈 안내</p></article>')
+        row = s.detail(source, text, 'https://www.kmooc.kr/view/course/detail/42')
+        self.assertEqual(row['description'], '전류와 전압의 관계를 배웁니다.')
+
+    def test_kmooc_table_objective_and_leading_paragraph_have_separate_boundaries(self):
+        source = {'adapter': 'kmooc', 'hosts': ['www.kmooc.kr']}
+        text = '''<div class="introduce"><table><tr><td>강좌명</td><td>대학생활</td></tr>
+        <tr><td><p>학습목표</p></td><td>학사규정과 생활 정보를 제공합니다.</td></tr>
+        <tr><td>평가</td><td>시험 60점</td></tr></table></div>'''
+        self.assertEqual(s.detail(source, text, 'https://www.kmooc.kr/view/course/detail/42')['description'],
+                         '학사규정과 생활 정보를 제공합니다.')
+        intro = '이 강좌는 심리학의 연구 대상을 소개하고 학습과 기억을 구체적인 사례로 설명하며, 심리학을 처음 접하는 학습자가 핵심 개념을 이해할 수 있도록 구성합니다.'
+        text = '<div class="introduce"><img alt="개요"><p>짧은 질문?</p><p>' + intro + '</p><table><tr><td>시험 안내</td></tr></table><p>추천 과정</p></div>'
+        self.assertEqual(s.detail(source, text, 'https://www.kmooc.kr/view/course/detail/42')['description'], intro)
+
 
 if __name__ == '__main__':
     unittest.main()
