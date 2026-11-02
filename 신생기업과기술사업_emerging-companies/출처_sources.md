@@ -148,4 +148,94 @@
 - [직접 운영하는 코드·설계 저장소](https://github.com/TheRobotStudio/HOPEJr)
 - [참여 개발자의 LeRobot 글](https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot)
 
+## .lumen
+
+[기술·사업 본문](기업분석_companies/이마촉각으로보행방향을전달하는안경_dot-lumen.md)
+
+- [회사와 팀](https://www.dotlumen.com/aboutus)
+- [EIC 프로젝트 소개](https://eic.ec.europa.eu/impact/lumen_en)
+- [제품 설명](https://www.dotlumen.com/glasses)
+- [기술 소개](https://www.dotlumen.com/technology)
+
+## Augmental
+
+[기술·사업 본문](기업분석_companies/혀와머리움직임을컴퓨터입력으로바꾸기_Augmental.md)
+
+- [MIT News, 2024-06-05](https://news.mit.edu/2024/mouth-based-touchpad-augmental-0605)
+- [Berkeley Engineering, 2024-01-30](https://engineering.berkeley.edu/news/2024/01/berkeley-alum-develops-tongue-controlled-touchpad/)
+- [현재 주문 안내](https://www.augmental.tech/)
+- [MouthPad·VOX 출시 발표](https://www.augmental.tech/blog/mouthpad-and-vox-launch)
+
+## Mimica
+
+[기술·사업 본문](기업분석_companies/온도이력을촉각신선도표시로바꾸는포장_Mimica.md)
+
+- [공식 팀](https://www.mimicalab.com/jointheteam)
+- [Bump 제품 원리](https://www.mimicalab.com/bump)
+- [진행 프로젝트](https://www.mimicalab.com/projects)
+- [공식 행사·시험 발표 기록](https://www.mimicalab.com/events)
+
+## Sparxell
+
+[기술·사업 본문](기업분석_companies/셀룰로오스미세구조로색을만드는안료_Sparxell.md)
+
+- [현재 투자·사업화 소개](https://www.enterprise.cam.ac.uk/news/sparxell-raises-5m-pre-series-a-to-scale-revolutionary-plant-based-colour-technology/)
+- [창업 배경](https://www.enterprise.cam.ac.uk/case-studies/sparxell-biodegradable-colour-pigments-from-plant-based-cellulose/)
+- [공식 팀](https://sparxell.com/team/)
+- [공식 기술 설명](https://sparxell.com/technology/)
+- [제품과 적용 지원](https://sparxell.com/products/)
+
+## Epic Cleantec
+
+[기술·사업 본문](기업분석_companies/건물안에서물을처리하고다시쓰는설비_Epic-Cleantec.md)
+
+- [공식 팀](https://epiccleantec.com/team)
+- [회사 제품·서비스](https://epiccleantec.com/)
+- [솔루션 구성](https://epiccleantec.com/solutions)
+- [SFPUC 사례집의 Fifteen-Fifty 항목](https://www.sfpuc.gov/sites/default/files/documents/Onsite_Water_Recycling_Ebook_2022.pdf)
+
+## Orbital Industries
+
+[기술·사업 본문](기업분석_companies/원자모델에서냉각하드웨어로이어지는사업_Orbital-Industries.md)
+
+- [Orbital Industries 창업팀·시리즈 B 발표, 2026-05-28](https://www.orbitalindustries.com/news/press/orbital-industries-series-b-50-million)
+- [공식 회사 소개](https://www.orbitalindustries.com/)
+- [Orb 공식 공개 코드](https://github.com/orbital-materials/orb-models)
+- [Orbital IT 냉각 제품·설계·조달](https://it.orbitalindustries.com/)
+- [Orbital IT의 2상 냉각 원리](https://it.orbitalindustries.com/next-generation-cooling)
+
+## Lumai
+
+[기술·사업 본문](기업분석_companies/빛으로AI행렬연산을처리하는서버_Lumai.md)
+
+- [Lumai 현재 공동창업자·경영진](https://lumai.ai/about-us)
+- [Runa Capital의 초기 이력](https://runacap.com/companies/lumai/)
+- [Iris Nova 발표, 2026-04-28](https://lumai.ai/resources/a-first-for-optical-compute-running-billion-parameter-llms-in-real-time)
+- [현재 제품·기술](https://lumai.ai/)
+- [후속 개발·평가 상태, 2026-09-15](https://lumai.ai/resources/two-new-advisors-join-lumai-as-we-bring-optical-computing-to-the-data-center)
+
+## Fractile
+
+[기술·사업 본문](기업분석_companies/추론의메모리병목을겨냥한칩과시스템_Fractile.md)
+
+- [Fractile 회사 소개](https://fractile.ai/)
+- [Accel 시리즈 B·창업자 소개, 2026-05-15](https://www.accel.com/news/fractile-the-future-of-ai-inference)
+- [Oxford Science Enterprises의 기술·단계 소개](https://www.oxfordscienceenterprises.com/portfolio/fractile)
+
+## IONATE
+
+[기술·사업 본문](기업분석_companies/전력품질을제어하는하이브리드변압기_IONATE.md)
+
+- [IONATE 공식 회사·제품 소개](https://www.ionate.energy/)
+- [HIT·Aurora 기술 설명](https://www.ionate.energy/tech)
+- [2025년 회고, 2025-12-19](https://www.ionate.energy/post/a-year-in-review-2025)
+- [GM 협력·제작 시험 상태 발표](https://www.ionate.energy/post/ionate-and-general-motors-collaborate-to-modernize-u-s-electrical-infrastructure-with-smart-grid-technology)
+
+## Capacities
+
+[기술·사업 본문](기업분석_companies/객체형노트와소규모자체조달제품사업_Capacities.md)
+
+- [Capacities Facts, 2026-10-05 갱신](https://capacities.io/about/facts)
+- [Dgraph에서 PostgreSQL로의 전환, 2026-01-12](https://capacities.io/blog/migration-to-postgres)
+
 [기업 목록으로](README.md) · [근거를 읽는 기준](선정과근거읽기_selection-and-evidence.md)
