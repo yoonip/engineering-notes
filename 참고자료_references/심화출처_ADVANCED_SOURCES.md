@@ -145,7 +145,7 @@
 
 [해설 읽기](../전자컴퓨터공학_ece/20-인터페이스통신_interfaces-communications/해설_notes/I2C묶음전송_i2c-combined-transactions.md)
 
-- [nxp.com · UM10204.pdf](https://www.nxp.com/docs/en/user-guide/UM10204.pdf)
+- [nxp.com · UM10204.pdf](https://cache.nxp.com/docs/en/user-guide/UM10204.pdf)
 - [docs.kernel.org · i2c-protocol.html](https://docs.kernel.org/i2c/i2c-protocol.html)
 
 ### 21. 이산 PI 제어: 표본 주기, 안정성과 적분 포화
@@ -159,7 +159,7 @@
 
 [해설 읽기](../전자컴퓨터공학_ece/22-로봇제어_robotics-boards/해설_notes/속도PI와포화_speed-pi-anti-windup.md)
 
-- [ocw.mit.edu · d98dc04f3311eb4e8c786a342dd07f87_MIT2_017JF09_ch11.pdf](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/d98dc04f3311eb4e8c786a342dd07f87_MIT2_017JF09_ch11.pdf)
+- [MIT OCW · 이산시간 제어 교재 §11.8 (인쇄 91쪽)](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/mit2_017j_f09_coursetextbook.pdf#page=97)
 - [mathworks.com · anti-windup-control-using-a-pid-controller.html](https://www.mathworks.com/help/simulink/slref/anti-windup-control-using-a-pid-controller.html)
 
 ### 23. 작은 MLP로 역전파를 끝까지 계산하기
@@ -369,8 +369,7 @@
 
 [해설 읽기](../전자컴퓨터공학_ece/51-반도체테스트제조_test-manufacturing/해설_notes/서명이같아지는오류_signature-aliasing.md)
 
-- [citeseerx.ist.psu.edu · document](https://citeseerx.ist.psu.edu/document?doi=a210ff0bfb04cb20d21c45e5a74880ebf2cea1a8&repid=rep1&type=pdf)
-- [www-verimag.imag.fr · ieeetc91.html](https://www-verimag.imag.fr/~caspi/PAPIERS/ieeetc91.html)
+- [Verimag · 서명 분석의 효율에 관한 저자 초록](https://www-verimag.imag.fr/~caspi/PAPIERS/ieeetc91.html)
 
 ### 52. 두 사용자의 수정이 겹치면: ETag와 조건부 갱신
 
