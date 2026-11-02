@@ -43,7 +43,7 @@ vector<int> solution(vector<string> cpr) {
 //         for(int j=0; j<basic_order.size(); j++){  // for문으로 올바른 순서 배열의 단계 이름을 차례로 비교
 //             if(cpr[i] == basic_order[j]){  // ==로 입력 단계와 표준 단계의 문자열이 같은지 검사
 //                 answer[i] = j + 1;  // 0부터 시작하는 인덱스에 1을 더해 실제 단계 번호를 저장
-//                 break;  // 일치하는 단계를 찾았으므로 안쪽 반복문을 끝
+//                 break;  // 일치하는 단계를 찾았으므로 안쪽 반복문을 끝냅니다.
 //             }  // 블록 끝
 //         }  // 블록 끝
 //     }  // 블록 끝

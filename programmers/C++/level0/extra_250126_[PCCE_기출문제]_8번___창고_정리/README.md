@@ -24,7 +24,7 @@ string solution(vector<string> storage, vector<int> num) {
     int num_item = 0;
     vector<string> clean_storage(storage.size());
     vector<int> clean_num(num.size());
-    
+
     for(int i=0; i<storage.size(); i++){
         int clean_idx = -1;
         for(int j=0; j<num_item; j++){
@@ -42,9 +42,9 @@ string solution(vector<string> storage, vector<int> num) {
             clean_num[clean_idx] += num[i];
         }
     }
-    
+
     // 아래 코드에는 틀린 부분이 없습니다.
-    
+
     int num_max = -1;
     string answer = "";
     for(int i=0; i<num_item; i++){
@@ -72,7 +72,7 @@ string solution(vector<string> storage, vector<int> num) {
 //         for(int j=0; j<num_item; j++){  // 이미 합친 물건 이름 중 같은 이름 찾기
 //             if(storage[i] == clean_storage[j]){  // 현재 물건이 이미 기록된 종류인 경우
 //                 clean_idx = j;  // clean_idx에 j 저장
-//                 break;  // break로 가장 가까운 반복문이나 switch를 끝
+//                 break;  // break로 가장 가까운 반복문이나 switch를 끝냅니다.
 //             }  // 블록 끝
 //         }  // 블록 끝
 //         if(clean_idx == -1){  // clean_idx == -1이면 이 분기에서 처리

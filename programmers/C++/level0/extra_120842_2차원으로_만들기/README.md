@@ -50,13 +50,15 @@ vector<vector<int>> solution(vector<int> num_list, int n) {
 // vector<vector<int>> solution(vector<int> num_list, int n) {  // 2차원으로 만들기 풀이 시작
 //     vector<vector<int>> answer;  // n개씩 묶은 각 행
 //     for (size_t i = 0; i < num_list.size(); i += n)  // 한 행의 시작점을 n개 간격으로 이동
-//         answer.emplace_back(num_list.begin() + i, num_list.begin() + i + n);  // answer 끝에 num_list.begin() + i, num_list.begin() + i + n 추가
+//         answer.emplace_back(num_list.begin() + i, num_list.begin() + i + n);  // emplace_back이 두 반복자 사이의 원소 n개로 새 vector를 생성하여 answer의 마지막 행으로 추가합니다. 끝 반복자는 포함하지 않습니다.
 //     return answer;  // 완성한 결과 반환
 // }  // 블록 끝
 
 // 풀이 요약
 // 앞에서 n개씩 잘라 한 행으로 만들고 입력 순서대로 모으기
 ```
+
+문법 참고: [C++ 표준 초안 — emplace_back](https://eel.is/c++draft/sequence.reqmts) · [vector의 구간 생성자](https://eel.is/c++draft/vector.cons)
 
 ## 채점 기록
 

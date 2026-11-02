@@ -57,7 +57,7 @@ int solution(int n, vector<vector<int>> q, vector<int> ans) {
 // if (matches != ans[i]) return;  // 응답과 다르면 이 조합을 제외
 // }  // 블록 끝
 // ++answer;  // 모든 조건을 만족하는 조합을 하나 세기
-// return;  // 완성한 조합의 탐색을 끝
+// return;  // 완성한 조합의 탐색을 끝내기
 // }  // 블록 끝
 // for (int value = start; value <= n - (4 - (int)chosen.size()); ++value) {  // 다섯 개를 채울 수 있는 범위에서 다음 숫자 선택
 // chosen.push_back(value);  // 선택한 숫자 추가

@@ -29,7 +29,7 @@ vector<int> solution(vector<string> enroll, vector<string> referral, vector<stri
 // for (int i = 0; i < (int)seller.size(); ++i) {  // 각 판매 기록의 수익을 분배
 // int person = index[seller[i]], money = amount[i] * 100;  // 판매원과 총 판매 수익 구하기
 // while (person != -1 && money > 0) {  // 추천인이 있고 분배금이 남는 동안 위로 전달
-// int share = money / 10; profit[person] += money - share;  // 정수로 버린 10퍼센트만 올리고 나머지를 보유
+// int share = money / 10; profit[person] += money - share;  // 10퍼센트에서 소수 부분을 버린 금액만 전달하고 나머지를 보유
 // person = parent[person]; money = share;  // 다음 추천인과 전달 금액으로 이동
 // }  // 블록 끝
 // }  // 블록 끝

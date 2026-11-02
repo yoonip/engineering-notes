@@ -66,7 +66,7 @@ int solution(int distance, vector<int> rocks, int n) {
 //     int low = 1, high = distance, answer = 0;  // 가능한 최소 간격의 탐색 범위와 현재 답 준비
 //     while (low <= high) {  // 최소 간격의 가능한 경계를 이진 탐색
 //         int gap = low + (high - low) / 2, previous = 0, removed = 0;  // 시험할 간격 gap, 마지막 남긴 위치 previous, 제거 수 removed 준비
-//         for (int position : rocks) { if (position - previous < gap) ++removed; else previous = position; if (removed > n) break; }  // gap보다 가까운 위치를 제거하고, 충분히 멀면 남김. 제거 수가 n을 넘으면 검사 중단
+//         for (int position : rocks) { if (position - previous < gap) ++removed; else previous = position; if (removed > n) break; }  // 간격이 짧으면 제거 수를 늘리고, 충분하면 위치 갱신. 도착점에서 간격이 짧은 경우는 직전 바위를 제거하는 것으로 해석
 //         if (removed <= n) { answer = gap; low = gap + 1; } else high = gap - 1;  // n개 이내로 제거 가능하면 답을 저장하고 더 큰 간격, 아니면 더 작은 간격 탐색
 //     }  // 블록 끝
 //     return answer;  // 유지할 수 있는 최소 간격의 최댓값 반환

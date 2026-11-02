@@ -34,7 +34,7 @@ string solution(string my_string) {
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
 // string solution(string my_string) {  // 중복된 문자 제거 풀이 시작
-//     bool seen[256] = {};  // 참·거짓 또는 비트 표시로 현재 위치의 안전 여부·일치 여부·사용한 발음을 관리
+//     bool seen[256] = {};  // bool 배열 seen의 256칸을 false로 초기화하여 각 문자 코드의 등장 여부를 기록합니다.
 //     string answer;  // 처음 등장한 문자만 모을 결과
 //     for (unsigned char c : my_string)  // 입력 순서대로 각 문자의 첫 등장 여부 확인
 //         if (!seen[c]) { seen[c] = true; answer += c; }  // 처음 본 문자만 결과에 넣고 이미 보았다고 표시

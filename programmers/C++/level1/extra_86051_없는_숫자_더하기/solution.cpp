@@ -41,4 +41,4 @@ int solution(vector<int> numbers) { return 45 - accumulate(numbers.begin(), numb
 //
 
 // 풀이 요약
-// 0부터 9까지의 합 45에서 배열에 있는 숫자의 합을 빼서 빠진 숫자의 합 계산.
+// 0부터 9까지의 합 45에서 배열에 있는 숫자의 합을 빼서 빠진 숫자의 합을 구합니다.

@@ -21,7 +21,7 @@ int solution(vector<int> stones, int k) {
 // #include <deque>  // 양 끝에서 넣고 뺄 수 있는 deque
 // #include <vector>  // 크기를 바꿀 수 있는 연속 배열 vector
 // using namespace std;  // std:: 접두사 생략
-// int solution(vector<int> stones, int k) {  // 건널 수 있는 인원 수를 이분 탐색
+// int solution(vector<int> stones, int k) {  // 길이 k 구간의 최댓값을 단조 deque로 구해 최대 통과 인원 계산
 // deque<int> q; int answer = INT_MAX;  // 길이 k 창의 최댓값 후보와 그 최솟값 저장
 // for (int i = 0; i < (int)stones.size(); ++i) {  // 오른쪽 끝을 한 칸씩 옮기기
 // while (!q.empty() && q.front() <= i - k) q.pop_front();  // 창 밖의 인덱스를 앞에서 제거

@@ -49,7 +49,7 @@ vector<int> solution(vector<int> arr, vector<int> query) {
 //     int begin = 0, end = (int)arr.size();  // 남아 있는 구간의 시작과 끝 다음 위치
 //     for (int i = 0; i < (int)query.size(); ++i) {  // 잘라낸 뒤의 구간을 기준으로 쿼리 차례대로 적용
 //         if (i % 2 == 0) end = begin + query[i] + 1;  // i % 2 == 0이면 end에 begin + query[i] + 1 저장
-//         else begin += query[i];  // 홀수 번째 쿼리는 남은 구간의 앞부분을 버리기
+//         else begin += query[i];  // 홀수 인덱스의 쿼리는 남은 구간의 앞부분을 버립니다.
 //     }  // 블록 끝
 //     return vector<int>(arr.begin() + begin, arr.begin() + end);  // 두 반복자가 가리키는 반열린 구간을 복사해 새 vector로 반환
 // }  // 블록 끝

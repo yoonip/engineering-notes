@@ -47,7 +47,7 @@ vector<string> solution(string myString) {
 //
 // vector<string> solution(string myString) {  // 문자열 잘라서 정렬하기 풀이 시작
 //     vector<string> answer;  // x로 나눈 뒤 빈 조각을 뺀 문자열 목록
-//     istringstream stream(myString);  // myString를 공백 단위로 읽을 스트림 stream
+//     istringstream stream(myString);  // myString의 내용을 읽을 입력 문자열 스트림을 생성합니다. 구분자 x는 아래 getline 호출에서 지정합니다.
 //     string part;  // x 사이에서 읽은 현재 문자열 조각
 //     while (getline(stream, part, 'x')) if (!part.empty()) answer.push_back(part);  // getline으로 x를 구분자로 부분 문자열을 읽고 빈 문자열을 제외
 //     sort(answer.begin(), answer.end());  // sort로 주어진 구간을 지정한 기준에 따라 오름차순으로 정렬
@@ -57,6 +57,8 @@ vector<string> solution(string myString) {
 // 풀이 요약
 // x로 나눈 뒤 빈 조각은 버리고 남은 문자열을 정렬
 ```
+
+문법 참고: [C++ 표준 초안 — 문자열 getline](https://eel.is/c++draft/string.io)
 
 ## 채점 기록
 

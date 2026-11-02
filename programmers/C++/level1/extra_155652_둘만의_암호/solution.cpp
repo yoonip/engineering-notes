@@ -51,4 +51,4 @@ string solution(string s, string skip, int index) {
 //
 
 // 풀이 요약
-// skip 문자를 뺀 알파벳 표를 만든 뒤, 표 안에서 index칸 이동. 나머지 연산으로 끝에서 처음으로 순환.
+// skip 문자를 뺀 알파벳 표를 만듭니다. 각 문자의 표 안 위치에서 index칸 이동하고, 표의 길이로 나눈 나머지로 끝에서 처음으로 순환합니다.

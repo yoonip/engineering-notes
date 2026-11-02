@@ -57,4 +57,4 @@ string solution(vector<string> cards1, vector<string> cards2, vector<string> goa
 //
 
 // 풀이 요약
-// 두 카드 뭉치에서 다음으로 쓸 위치만 관리. 목표 단어가 어느 뭉치의 다음 카드와도 맞지 않으면 실패.
+// 각 카드 뭉치에서 다음에 꺼낼 위치를 따로 관리합니다. 목표 단어가 어느 뭉치의 맨 앞 카드와도 같지 않으면 만들 수 없습니다.

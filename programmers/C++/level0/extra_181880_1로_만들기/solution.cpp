@@ -30,7 +30,7 @@ int solution(vector<int> num_list) {
 // int solution(vector<int> num_list) {  // 1로 만들기 풀이 시작
 //     int count = 0;  // 모든 원소를 1로 만들 때의 총 나눗셈 횟수
 //     for (int value : num_list) while (value > 1) { value /= 2; ++count; }  // 각 원소를 정수로 절반씩 줄이며 1이 될 때까지 횟수 추가
-//     return count;  // 조건을 만족한 횟수 값을 반환하고 함수를 끝
+//     return count;  // 조건을 만족한 횟수 값을 반환하고 함수를 끝냅니다.
 // }  // 블록 끝
 
 // 풀이 요약

@@ -53,7 +53,7 @@ int solution(vector<vector<int>> cost, vector<vector<int>> hint) {
 // total += cost[stage][min(tickets[stage], n - 1)];  // 받은 힌트 수에 해당하는 현재 스테이지 비용을 더하기
 // if (stage == n - 1) {  // 마지막 스테이지를 마쳤는지 확인
 // answer = min(answer, total);  // 최소 총비용 갱신
-// return;  // 완성한 경로의 탐색을 끝
+// return;  // 완성한 경로의 탐색을 끝내기
 // }  // 블록 끝
 // dfs(stage + 1, total);  // 힌트 묶음을 사지 않는 경우 탐색
 // const auto& bundle = hint[stage];  // 현재 스테이지에서 살 수 있는 힌트 묶음 읽기

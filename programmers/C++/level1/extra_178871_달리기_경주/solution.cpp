@@ -61,4 +61,4 @@ vector<string> solution(vector<string> players, vector<string> callings) {
 //
 
 // 풀이 요약
-// 선수 배열과 이름별 현재 위치를 함께 관리. 호명될 때 앞 선수와 교환하고 두 사람의 위치도 갱신.
+// 선수 배열과 이름별 현재 위치를 함께 관리합니다. 호명된 선수와 바로 앞 선수를 교환하고 두 사람의 위치도 갱신합니다.

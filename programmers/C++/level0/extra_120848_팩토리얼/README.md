@@ -48,7 +48,7 @@ int solution(int n) {
 //
 // int solution(int n) {  // 팩토리얼 풀이 시작
 //     int factorial = 1, answer = 1;  // 현재 팩토리얼 값과 그 값에 해당하는 정수 i
-//     while (factorial <= n / (answer + 1)) factorial *= ++answer;  // 다음 팩토리얼이 n을 넘지 않는 동안 반복하며 정수 나눗셈으로 곱셈 오버플로를 피
+//     while (factorial <= n / (answer + 1)) factorial *= ++answer;  // 다음 팩토리얼이 n을 넘지 않는 동안 반복하며 정수 나눗셈으로 곱셈 오버플로를 피합니다.
 //     return answer;  // 완성한 결과 반환
 // }  // 블록 끝
 

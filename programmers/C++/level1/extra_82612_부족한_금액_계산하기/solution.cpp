@@ -45,4 +45,4 @@ long long solution(int price, int money, int count) {
 //
 
 // 풀이 요약
-// 이용료 합은 price × (1 + … + count). 등차수열 공식으로 합산하고 보유금보다 부족한 금액만 반환.
+// 등차수열의 합으로 전체 이용료를 구하고 보유금을 뺍니다. 중간 곱셈부터 long long으로 계산하며, 부족하지 않으면 0을 반환합니다.

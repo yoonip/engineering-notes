@@ -41,4 +41,4 @@ string solution(int num) { return num % 2 == 0 ? "Even" : "Odd"; }
 //
 
 // 풀이 요약
-// 2로 나눈 나머지가 0인지에 따라 Even 또는 Odd 선택.
+// 2로 나눈 나머지가 0이면 Even, 아니면 Odd를 반환합니다.

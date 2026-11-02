@@ -49,4 +49,4 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
 //
 
 // 풀이 요약
-// 두 지도의 행을 비트 OR로 합침. 왼쪽부터 해당 비트가 1이면 #, 아니면 공백 유지.
+// 두 지도의 행을 비트 OR로 합칩니다. 각 비트가 1이면 벽인 #, 0이면 공백으로 표시합니다.

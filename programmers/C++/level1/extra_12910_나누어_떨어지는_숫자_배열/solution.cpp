@@ -53,4 +53,4 @@ vector<int> solution(vector<int> arr, int divisor) {
 //
 
 // 풀이 요약
-// divisor로 나누어떨어지는 원소만 모아 정렬. 남는 원소가 없으면 -1 하나 반환.
+// divisor로 나누어떨어지는 원소만 모아 오름차순으로 정렬합니다. 조건을 만족하는 원소가 없으면 -1 하나를 담은 배열을 반환합니다.

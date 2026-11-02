@@ -30,7 +30,7 @@ int solution(vector<int> numbers, int n) {
 // int solution(vector<int> numbers, int n) {  // n보다 커질 때까지 더하기 풀이 시작
 //     int sum = 0;  // 앞에서부터 더한 원소의 합
 //     for (int value : numbers) { sum += value; if (sum > n) break; }  // 현재 원소까지 더한 뒤 합이 n을 초과하면 중단
-//     return sum;  // 누적 합계 값을 반환하고 함수를 끝
+//     return sum;  // 누적 합계 값을 반환하고 함수를 끝냅니다.
 // }  // 블록 끝
 
 // 풀이 요약

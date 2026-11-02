@@ -27,7 +27,7 @@ vector<int> solution(string s) {
 // #include <utility>  // 두 값을 묶는 pair와 이동 유틸리티
 // #include <vector>  // 크기를 바꿀 수 있는 연속 배열 vector
 // using namespace std;  // std:: 접두사 생략
-// vector<int> solution(string s) {  // 작은 집합부터 새 원소를 찾아 튜플 복원
+// vector<int> solution(string s) {  // 원소의 등장 횟수를 내림차순으로 정렬해 튜플 복원
 // unordered_map<int, int> counts;  // 각 원소가 집합들에 등장한 횟수 세기
 // int value = 0; bool reading = false;  // 현재 정수 토큰과 읽는 중인지 여부 저장
 // for (char c : s) {  // 문자열에서 정수 토큰만 추출

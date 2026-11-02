@@ -74,7 +74,7 @@ int solution(int h, vector<string> grid, vector<vector<int>> panels, vector<vect
 // #include <vector>  // 크기를 바꿀 수 있는 연속 배열 vector
 // using namespace std;  // std:: 접두사 생략
 // int solution(int h, vector<string> grid, vector<vector<int>> panels, vector<vector<int>> seqs) {  // 선행 복구 조건을 지키며 패널 이동 비용 최소화
-// (void)h;  // 실제 층 이동은 패널의 층 번호 차이로 계산
+// (void)h;  // 층 수 h를 직접 쓰지 않음을 명시하며, 이동 거리는 패널 층 번호 차이로 계산
 // int n = (int)grid.size(), m = (int)grid[0].size(), k = (int)panels.size(), elevator = -1;  // 격자 및 패널 수와 승강기 위치 초기화
 // const int INF = 1000000000;  // 도달할 수 없는 거리와 비용의 상한
 // for (int r = 0; r < n; ++r) for (int c = 0; c < m; ++c) if (grid[r][c] == '@') elevator = r * m + c;  // 승강기의 일차원 좌표 찾기

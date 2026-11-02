@@ -83,7 +83,7 @@ int solution(int dist_limit, int split_limit) {
 // }  // 블록 끝
 // }  // 블록 끝
 // }  // 블록 끝
-// if (width > split / 2) break;  // 다음 두 배 폭이 범위를 넘으면 반복을 끝
+// if (width > split / 2) break;  // 다음 두 배 폭이 범위를 넘으면 반복을 끝내기
 // width *= 2;  // 다음 이진 깊이의 폭으로 바꾸기
 // ++depth;  // 이진 분기 깊이를 한 단계 늘리기
 // }  // 블록 끝

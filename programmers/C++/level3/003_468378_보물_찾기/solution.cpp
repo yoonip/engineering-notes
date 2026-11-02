@@ -34,7 +34,7 @@ int solution(vector<int> depth, int money) {
 // using namespace std;  // std:: 접두사 생략
 // extern int excavate(int);  // 채점 환경이 제공하는 굴착 함수를 외부 선언
 // int solution(vector<int> depth, int money) {  // 최악의 굴착 비용을 줄이는 위치를 골라 보물 찾기
-// (void)money;  // 예산 내의 최악 비용을 보장하는 선택 순서 계산
+// (void)money;  // money를 쓰지 않음을 명시하며, 문제에서 보장한 예산 안의 순서는 아래 DP로 계산
 // int n = (int)depth.size();  // 보물이 있을 수 있는 열 수 구하기
 // vector<vector<long long>> dp(n + 1, vector<long long>(n + 1, 0));  // 반열린 열 구간의 최소 최악 굴착 비용 저장
 // vector<vector<int>> choice(n, vector<int>(n + 1, 0));  // 각 구간에서 먼저 굴착할 열 저장

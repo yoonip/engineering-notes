@@ -47,4 +47,4 @@ vector<vector<int>> solution(vector<vector<int>> arr1, vector<vector<int>> arr2)
 //
 
 // 풀이 요약
-// 같은 행·열 위치의 원소를 더해 첫 행렬에 저장.
+// 같은 행과 열에 있는 두 원소를 더해 첫 번째 행렬의 사본에 저장합니다.

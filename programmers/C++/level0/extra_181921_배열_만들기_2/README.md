@@ -43,7 +43,7 @@ vector<int> solution(int l, int r) {
 //         bool valid = true;  // 모든 자릿수가 0 또는 5라는 검사 결과를 true로 초기화
 //         while (rest) {  // 남은 수가 0이 아닐 동안 while로 자릿수 검사를 반복
 //             int digit = rest % 10;  // 나머지 연산자 %로 현재 수의 마지막 자릿수를 구하기
-//             if (digit != 0 && digit != 5) { valid = false; break; }  // !=와 &&로 0과 5가 아닌 자릿수를 확인하면 실패 표시를 남기고 break로 검사를 끝
+//             if (digit != 0 && digit != 5) { valid = false; break; }  // !=와 &&로 0과 5가 아닌 자릿수를 확인하면 실패 표시를 남기고 break로 검사를 끝냅니다.
 //             rest /= 10;  // 정수 나눗셈의 복합 대입 /=로 검사한 마지막 자릿수를 제거
 //         }  // 블록 끝
 //         if (valid) answer.push_back(value);  // if로 모든 자릿수가 유효한지 확인하고 push_back으로 결과에 넣기

@@ -49,4 +49,4 @@ vector<long long> solution(int x, int n) {
 //
 
 // 풀이 요약
-// x부터 x × n까지의 배수를 차례로 추가. 곱셈 시작부터 long long을 사용해 큰 결과도 저장.
+// x의 1배부터 n배까지 차례대로 결과에 넣습니다. 중간 곱셈부터 long long으로 계산합니다.

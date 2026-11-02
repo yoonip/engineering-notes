@@ -63,4 +63,4 @@ string solution(string video_len, string pos, string op_start, string op_end, ve
 //
 
 // 풀이 요약
-// MM:SS를 초로 바꿔 계산. 명령마다 영상 범위 안에서 10초 이동하고, 시작 시각과 이동 후 시각이 오프닝 구간이면 끝으로 건너뜀.
+// 분:초 표기를 초로 바꿔 계산합니다. 시작 위치와 각 명령 이후의 위치가 오프닝 구간이면 끝으로 건너뛰며, 10초 이동은 영상 범위 안으로 제한합니다.

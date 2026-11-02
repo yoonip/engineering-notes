@@ -41,4 +41,4 @@ double solution(vector<int> arr) { return (double)accumulate(arr.begin(), arr.en
 //
 
 // 풀이 요약
-// 합은 long long으로 누적하고 double로 바꿔 원소 수로 나눔. 정수 나눗셈으로 소수 부분이 없어지지 않게 주의.
+// 모든 원소의 합을 long long으로 누적합니다. 합을 double로 바꾼 뒤 원소 수로 나누어 소수 부분을 포함한 평균을 구합니다.

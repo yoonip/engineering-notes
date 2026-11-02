@@ -56,7 +56,7 @@ int solution(vector<vector<int>> board, vector<int> moves) {
 //         for (int row = 0; row < (int)board.size(); ++row) if (board[row][col]) {  // 선택한 열을 위에서 아래로 찾아 첫 인형이 있는 칸 처리
 //             int doll = board[row][col]; board[row][col] = 0;  // 인형 값을 저장하고 보드의 해당 칸을 빈칸으로 변경
 //             if (!basket.empty() && basket.back() == doll) { basket.pop_back(); answer += 2; }  // 바구니 꼭대기와 같으면 기존 인형을 꺼내고 사라진 수에 2 추가
-//             else basket.push_back(doll);  // 다른 인형이면 바구니 맨 위에 쌓음
+//             else basket.push_back(doll);  // 바구니가 비었거나 맨 위 인형과 다르면 새 인형을 쌓음
 //             break;  // 한 번에 한 인형만 꺼내므로 이 열 탐색 종료
 //         }  // 블록 끝
 //     }  // 블록 끝
@@ -65,4 +65,4 @@ int solution(vector<vector<int>> board, vector<int> moves) {
 //
 
 // 풀이 요약
-// 선택한 열에서 위쪽의 첫 인형을 꺼냄. 바구니 맨 위와 같으면 둘을 없애고 아니면 바구니에 추가.
+// 선택한 열에서 위쪽의 첫 인형을 꺼냅니다. 바구니 맨 위 인형과 같으면 두 인형을 없애고, 바구니가 비었거나 다르면 새 인형을 쌓습니다.

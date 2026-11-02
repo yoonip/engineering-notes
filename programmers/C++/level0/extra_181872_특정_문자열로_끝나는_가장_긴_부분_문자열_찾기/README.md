@@ -41,12 +41,14 @@ string solution(string myString, string pat) {
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 //
 // string solution(string myString, string pat) {  // 특정 문자열로 끝나는 가장 긴 부분 문자열 찾기 풀이 시작
-//     return myString.substr(0, myString.rfind(pat) + pat.size());  // 검색 결과가 존재하는지 비교해 참이면 1, 거짓이면 0을 반환
+//     return myString.substr(0, myString.rfind(pat) + pat.size());  // rfind로 pat의 마지막 시작 위치를 찾고, substr로 처음부터 pat의 끝까지인 부분 문자열을 반환합니다.
 // }  // 블록 끝
 
 // 풀이 요약
 // 가장 뒤에 등장한 pat까지 처음부터 가져오면 가능한 가장 긴 부분 문자열임
 ```
+
+문법 참고: [C++ 표준 초안 — substr](https://eel.is/c++draft/string.substr)
 
 ## 채점 기록
 

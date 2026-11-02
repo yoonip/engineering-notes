@@ -41,4 +41,4 @@ int solution(vector<int> a, vector<int> b) { return inner_product(a.begin(), a.e
 //
 
 // 풀이 요약
-// 같은 위치의 두 원소를 곱해 더하는 inner_product 사용.
+// 같은 위치의 두 원소를 곱한 값을 모두 더해 내적을 구합니다.

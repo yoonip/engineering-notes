@@ -48,7 +48,7 @@ string solution(string cipher, int code) {
 //
 // string solution(string cipher, int code) {  // 암호 해독 풀이 시작
 //     string answer;  // string 변수 answer를 빈 문자열로 초기화하여 code의 배수 번째 문자들을 순서대로 붙이기
-//     for (size_t i = code - 1; i < cipher.size(); i += code) answer += cipher[i];  // for의 첫 인덱스를 code - 1로 정. i를 code씩 늘리며 문자열 범위 안의 cipher[i]를 붙여, 1부터 센 위치 code, 2 * code, 3 * code의 문자들을 선택
+//     for (size_t i = code - 1; i < cipher.size(); i += code) answer += cipher[i];  // for의 첫 인덱스를 code - 1로 정합니다. i를 code씩 늘리며 문자열 범위 안의 cipher[i]를 붙여, 1부터 센 위치 code, 2 * code, 3 * code의 문자들을 선택
 //     return answer;  // 완성한 결과 반환
 // }  // 블록 끝
 

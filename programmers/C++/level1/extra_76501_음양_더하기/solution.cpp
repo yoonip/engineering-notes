@@ -49,4 +49,4 @@ int solution(vector<int> absolutes, vector<bool> signs) {
 //
 
 // 풀이 요약
-// 각 절댓값에 signs의 부호를 적용해 더함.
+// 부호가 참이면 절댓값을 더하고 거짓이면 빼서 전체 합을 구합니다.

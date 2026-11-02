@@ -41,4 +41,4 @@ int solution(vector<int> nums) { unordered_set<int> kinds(nums.begin(), nums.end
 //
 
 // 풀이 요약
-// 서로 다른 종류 수와 고를 수 있는 N/2 중 작은 값이 최대 종류 수.
+// 서로 다른 종류 수와 선택할 수 있는 전체 개수의 절반을 비교합니다. 두 값 중 작은 값이 최대로 고를 수 있는 종류 수입니다.

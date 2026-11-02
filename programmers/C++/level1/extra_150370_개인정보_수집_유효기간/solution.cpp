@@ -63,4 +63,4 @@ vector<int> solution(string today, vector<string> terms, vector<string> privacie
 //
 
 // 풀이 요약
-// 모든 달을 28일로 두고 날짜를 정수로 변환. 오늘이 수집일 + 약관 개월 수 × 28 이상이면 파기할 개인정보 번호에 추가.
+// 문제의 달력 규칙에 따라 모든 달을 28일로 두고 날짜를 정수로 변환합니다. 오늘이 수집일에 유효기간을 더한 날 이상이면 파기 대상에 넣습니다.

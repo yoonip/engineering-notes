@@ -48,7 +48,7 @@ int solution(vector<int> diffs, vector<int> times, long long limit) {
 // if (elapsed > limit) break;  // 제한을 넘으면 더 계산하지 않음
 // }  // 블록 끝
 // if (elapsed <= limit) right = level;  // 가능하면 더 낮은 숙련도 찾기
-// else left = level + 1;  // 불가능하면 숙련도를 높
+// else left = level + 1;  // 불가능하면 숙련도를 높이기
 // }  // 블록 끝
 // return left;  // 가능한 최소 숙련도 반환
 // }  // 블록 끝

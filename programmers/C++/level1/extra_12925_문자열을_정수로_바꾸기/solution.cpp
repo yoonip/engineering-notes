@@ -41,4 +41,4 @@ int solution(string s) { return stoi(s); }
 //
 
 // 풀이 요약
-// stoi로 부호가 포함된 십진 문자열을 정수로 변환.
+// 부호를 포함한 십진 문자열을 정수로 변환합니다.

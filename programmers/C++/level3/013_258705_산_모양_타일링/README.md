@@ -31,7 +31,7 @@ int solution(int n, vector<int> tops) {
 // #include <vector>  // 크기를 바꿀 수 있는 연속 배열 vector
 // using namespace std;  // std:: 접두사 생략
 // int solution(int n, vector<int> tops) {  // 경계 연결 상태를 나눠 산 모양 타일링 수 계산
-// (void)n;  // 위쪽 삼각형 정보 배열의 각 위치를 순회
+// (void)n;  // n을 직접 쓰지 않음을 명시하며, 아래 반복문에서 tops를 순회
 // const int MOD = 10007; int joined = 0, free = 1;  // 오른쪽 경계 상태별 타일링 수 초기화
 // for (int top : tops) {  // 산 모양의 한 구간씩 추가
 // int next_joined = (joined + free) % MOD;  // 다음 구간과 이어지는 타일의 경우 합치기

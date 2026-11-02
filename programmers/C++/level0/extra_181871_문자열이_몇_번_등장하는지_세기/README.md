@@ -45,7 +45,7 @@ int solution(string myString, string pat) {
 // int solution(string myString, string pat) {  // 문자열이 몇 번 등장하는지 세기 풀이 시작
 //     int count = 0;  // 패턴이 등장한 시작 위치의 수
 //     for (size_t pos = myString.find(pat); pos != string::npos; pos = myString.find(pat, pos + 1)) ++count;  // 발견 위치의 한 칸 뒤부터 다시 찾아 겹치는 등장도 포함
-//     return count;  // 조건을 만족한 횟수 값을 반환하고 함수를 끝
+//     return count;  // 조건을 만족한 횟수 값을 반환하고 함수를 끝냅니다.
 // }  // 블록 끝
 
 // 풀이 요약

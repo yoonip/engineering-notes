@@ -30,7 +30,7 @@ int solution(vector<string> order) {
 // int solution(vector<string> order) {  // 커피 심부름 풀이 시작
 //     int total = 0;  // 전체 주문의 커피 가격 합
 //     for (const string& item : order) total += item.find("cafelatte") != string::npos ? 5000 : 4500;  // 카페라테는 5000원, 나머지는 아메리카노 가격 4500원
-//     return total;  // 전체 합계 값을 반환하고 함수를 끝
+//     return total;  // 전체 합계 값을 반환하고 함수를 끝냅니다.
 // }  // 블록 끝
 
 // 풀이 요약

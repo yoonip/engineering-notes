@@ -32,7 +32,7 @@ int solution(vector<vector<int>> board, int k) {
 //     int sum = 0;  // 행·열 인덱스 합 조건에 맞는 원소의 합
 //     for (int i = 0; i < (int)board.size(); ++i)  // 행을 하나씩 확인
 //         for (int j = 0; j < (int)board[i].size(); ++j) if (i + j <= k) sum += board[i][j];  // 행 번호와 열 번호의 합이 k 이하인 칸만 더하기
-//     return sum;  // 누적 합계 값을 반환하고 함수를 끝
+//     return sum;  // 누적 합계 값을 반환하고 함수를 끝냅니다.
 // }  // 블록 끝
 
 // 풀이 요약

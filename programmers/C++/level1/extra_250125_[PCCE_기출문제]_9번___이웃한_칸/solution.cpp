@@ -57,4 +57,4 @@ int solution(vector<vector<string>> board, int h, int w) {
 //
 
 // 풀이 요약
-// 상하좌우 네 위치 중 보드 안에 있고 기준 칸과 색이 같은 칸만 셈.
+// 상하좌우 네 위치 중 보드 범위 안에 있고 기준 칸과 색이 같은 칸만 셉니다.

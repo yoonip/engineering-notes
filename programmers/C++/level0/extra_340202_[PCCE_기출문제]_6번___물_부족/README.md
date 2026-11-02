@@ -44,7 +44,7 @@ int solution(int storage, int usage, vector<int> change) {
 //         usage = usage * (100 + change[i]) / 100;  // 이전 사용량에 100과 변동률의 합을 곱하고 100으로 나눠 이번 달 사용량을 구하기
 //         total_usage += usage;  // 이번 달 사용량까지 저장량에서 사용한 총량에 포함
 //         if(total_usage > storage){  // 누적 사용량이 저장량을 넘으면 이 달부터 물 부족
-//             return i;  // 현재 인덱스 값을 반환하고 함수를 끝
+//             return i;  // 현재 인덱스 값을 반환하고 함수를 끝냅니다.
 //         }  // 블록 끝
 //     }  // 블록 끝
 //     return -1;  // 조건을 만족하는 위치가 없으므로 -1을 반환

@@ -59,7 +59,7 @@ vector<int> solution(vector<vector<int>> users, vector<int> emoticons) {
 // else revenue += cost;  // 가입하지 않으면 구매 금액을 매출에 더하기
 // }  // 블록 끝
 // best = max(best, make_pair(subscribers, revenue));  // pair의 사전순 비교로 더 나은 조합 고르기
-// return;  // 완성한 할인율 조합의 처리를 끝
+// return;  // 완성한 할인율 조합의 처리를 끝내기
 // }  // 블록 끝
 // for (int rate : {10, 20, 30, 40}) { rates[index] = rate; dfs(index + 1); }  // 현재 상품의 네 할인율을 모두 탐색
 // };  // 블록 끝

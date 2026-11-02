@@ -49,4 +49,4 @@ vector<int> solution(vector<int> array, vector<vector<int>> commands) {
 //
 
 // 풀이 요약
-// 명령의 1기준 시작·끝을 반복자 구간으로 바꾸어 복사. 복사한 구간을 정렬해 k번째 원소 선택.
+// 명령의 1부터 시작하는 구간을 반복자 범위로 바꿔 복사합니다. 복사한 구간을 정렬하고 k번째 원소를 고릅니다.

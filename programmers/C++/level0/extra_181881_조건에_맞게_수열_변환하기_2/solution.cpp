@@ -48,7 +48,7 @@ int solution(vector<int> arr) {
 //         }  // 블록 끝
 //         longest = max(longest, steps);  // 가장 늦게 고정되는 원소의 횟수 유지
 //     }  // 블록 끝
-//     return longest;  // 가장 오래 걸리는 변환 횟수 값을 반환하고 함수를 끝
+//     return longest;  // 가장 오래 걸리는 변환 횟수 값을 반환하고 함수를 끝냅니다.
 // }  // 블록 끝
 
 // 풀이 요약

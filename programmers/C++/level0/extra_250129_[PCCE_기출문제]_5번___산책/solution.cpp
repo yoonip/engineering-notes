@@ -42,16 +42,16 @@ vector<int> solution(string route) {
 //         switch(route[i]){  // switch로 이동 문자에 해당하는 case를 선택
 //             case 'N':  // switch에서 현재 이동 문자가 이 case에 해당하면 다음 구문을 실행
 //                 north++;  // 북쪽으로 한 칸
-//                 break;  // break로 가장 가까운 반복문이나 switch를 끝
+//                 break;  // break로 가장 가까운 반복문이나 switch를 끝냅니다.
 //             case 'S':  // switch에서 현재 이동 문자가 이 case에 해당하면 다음 구문을 실행
 //                 north--;  // 남쪽으로 한 칸
-//                 break;  // break로 가장 가까운 반복문이나 switch를 끝
+//                 break;  // break로 가장 가까운 반복문이나 switch를 끝냅니다.
 //             case 'E':  // switch에서 현재 이동 문자가 이 case에 해당하면 다음 구문을 실행
 //                 east++;  // 동쪽으로 한 칸
-//                 break;  // break로 가장 가까운 반복문이나 switch를 끝
+//                 break;  // break로 가장 가까운 반복문이나 switch를 끝냅니다.
 //             case 'W':  // switch에서 현재 이동 문자가 이 case에 해당하면 다음 구문을 실행
 //                 east--;  // 서쪽으로 한 칸
-//                 break;  // break로 가장 가까운 반복문이나 switch를 끝
+//                 break;  // break로 가장 가까운 반복문이나 switch를 끝냅니다.
 //         }  // 블록 끝
 //     }  // 블록 끝
 //     answer[0] = east;  // 첫 원소에 동서 방향의 최종 좌표
@@ -60,4 +60,4 @@ vector<int> solution(string route) {
 // }  // 블록 끝
 
 // 풀이 요약
-// 동·서를 east의 증감으로, 남·북을 north의 증감으로 표현. switch의 각 case에서 이동한 뒤 break로 끝
+// 동·서를 east의 증감으로, 남·북을 north의 증감으로 표현. switch의 각 case에서 이동한 뒤 break로 끝냅니다.

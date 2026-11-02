@@ -18,7 +18,7 @@
 
 기존 값 항목을 재사용하므로 추가 항목 없이 N개만 유지; 깊은 원래 트리의 전처리는 모두 반복문으로 처리
 
-N개 정점과 Q개 쿼리에서 기대 시간 O(N+Q log²N), 합 조회 한 번은 기대 O(logN), 보조 공간 O(N); 반환 배열은 별도
+독립적인 무작위 우선순위를 가정하면 전체 시간은 기대 O(N+Q log²N), 합 조회는 기대 O(log N)입니다. 이 구현은 고정 혼합 함수를 사용하므로 모든 입력에서 그 기대 성능을 보장하지 않습니다. 트립 높이가 N이면 경로 갱신의 상한은 O(N log N), 합 조회는 O(N)입니다. 보조 공간은 O(N)이며 반환 배열은 별도입니다.
 
 ## 코드와 줄별 설명
 
@@ -187,7 +187,7 @@ vector<long long> solution(vector<int> values, vector<vector<int>> edges, vector
 // 
 // using namespace std;  // 표준 라이브러리 이름의 std:: 생략
 // 
-// typedef struct { int left, right, size; uint64_t priority; long long value, sum; } Item;  // 값 항목의 양쪽 자식, 항목 수, 무작위 우선순위와 구간 합
+// typedef struct { int left, right, size; uint64_t priority; long long value, sum; } Item;  // 값 항목의 양쪽 자식, 항목 수, 고정 혼합 함수의 우선순위와 구간 합
 // typedef struct { int n, root; Item* item; int* parent; int* size; int* head; int* position; } Gravity;  // 값 순서 트립의 루트와 고정된 트리 정점의 부모·서브트리 크기·중경로 정보
 // 
 // static uint64_t priority_for(uint64_t index) {  // 항목 번호를 섞어 트립의 고정 우선순위 만들기
@@ -343,8 +343,12 @@ vector<long long> solution(vector<int> values, vector<vector<int>> edges, vector
 // 루트에서 대상 정점까지의 중경로 조각을 위에서 아래로 처리; 마지막 값 항목을 잘라 전달받은 값으로 바꾸고 구간 맨 앞에 붙이기
 // 구간 길이는 그대로이므로 경로 밖 정점의 위치와 값은 유지되고 구간 사이에는 부모의 예전 값이 순서대로 전달됨
 // 기존 값 항목을 재사용하므로 추가 항목 없이 N개만 유지; 깊은 원래 트리의 전처리는 모두 반복문으로 처리
-// N개 정점과 Q개 쿼리에서 기대 시간 O(N+Q log²N), 합 조회 한 번은 기대 O(logN), 보조 공간 O(N); 반환 배열은 별도
+// 독립적인 무작위 우선순위를 가정하면 전체 시간은 기대 O(N+Q log²N), 합 조회는 기대 O(log N)입니다. 이 구현은 고정 혼합 함수를 사용하므로 모든 입력에서 그 기대 성능을 보장하지 않습니다. 트립 높이가 N이면 경로 갱신의 상한은 O(N log N), 합 조회는 O(N)입니다. 보조 공간은 O(N)이며 반환 배열은 별도입니다.
 ~~~
+
+## 복잡도 근거
+
+[Open Data Structures의 무작위 탐색 트리·트립 설명](https://opendatastructures.org/newhtml/ods/latex/rbs.html)은 무작위 순서와 우선순위에 대한 기대 분석입니다. 고정 혼합 함수의 출력 자체에는 같은 확률적 보장이 주어지지 않습니다.
 
 ## 채점 기록
 

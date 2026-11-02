@@ -34,7 +34,7 @@ int solution(int n) {
 //
 // int solution(int n) {  // 순서쌍의 개수 풀이 시작
 //     int count = 0;  // int 변수 count를 0으로 초기화하여 찾은 순서쌍의 수를 누적
-//     for (int i = 1; i <= n / i; ++i)  // i를 1부터 n의 제곱근 이하까지만 검사. i * i 대신 i <= n / i로 비교하여 큰 제곱의 계산을 피
+//     for (int i = 1; i <= n / i; ++i)  // i를 1부터 n의 제곱근 이하까지만 검사. i * i 대신 i <= n / i로 비교하여 큰 제곱의 계산을 피합니다.
 //         if (n % i == 0) count += i == n / i ? 1 : 2;  // 나머지가 0인 약수 i에 대해, i와 n / i가 같으면 한 쌍을 더하고 다르면 순서를 바꾼 두 쌍을 더하기
 //     return count;  // 검사한 약수 쌍으로 센 순서쌍의 총수 count를 반환
 // }  // 블록 끝
