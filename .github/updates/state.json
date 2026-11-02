@@ -109,11 +109,14 @@
     "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
     "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo",
     "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw",
+    "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos",
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
     "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform",
+    "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one",
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
     "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
     "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
+    "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map",
     "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132",
@@ -2086,6 +2089,65 @@
           "update": false,
           "url": "https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure/"
         }
+      ],
+      "2026-11-03": [
+        {
+          "acquired_at": "2026-11-02T18:46:12.487911+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Elizabeth Goodman",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-02T17:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-02T18:45:12.564666+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 세계 모형·시뮬레이션 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/"
+        },
+        {
+          "acquired_at": "2026-11-02T18:46:12.487911+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Shara Tibken",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-02T18:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-02T18:45:12.564666+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/"
+        },
+        {
+          "acquired_at": "2026-11-02T18:46:12.487911+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Alon Lavian",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-02T16:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-02T18:45:12.564666+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 비용·실행 효율 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Support New AI Frameworks Faster Using NVIDIA Workload Map",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/"
+        }
       ]
     },
     "reports": {
@@ -3709,6 +3771,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw"
     },
+    "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos"
+    },
     "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages"
@@ -3716,6 +3782,10 @@
     "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform"
+    },
+    "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one"
     },
     "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
       "group": "products",
@@ -3728,6 +3798,10 @@
     "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands"
+    },
+    "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map"
     },
     "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": {
       "group": "products",
@@ -3960,10 +4034,10 @@
       "Last-Modified": "Fri, 30 Oct 2026 11:03:47 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"d91a94676ab66bf1bf03996303ca9a3146db74dfb32f5df8fc1e030a6cd6b524\""
+      "ETag": "W/\"5a52652c83230a1626d3227de823b684063aa23ae2830ce14c78483819c8b157\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"2e3413e7bf0f33f7f04a2a849bd6d6ea3d7d2895f6a1ad61d37c4ea96f2575e2\""
+      "ETag": "W/\"403cbf712f12c5e06ee56e250f5b9e2bcb5604b35bec8a0b1d9961a1525b61e8\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -3997,15 +4071,12 @@
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
-    "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"lLJL6g\""
-    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"TRFBfA\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"497d7d2e305ced223a31a5847545c8fc\"",
-      "Last-Modified": "Fri, 30 Oct 2026 22:52:36 GMT"
+      "ETag": "\"eb97a5998d1f74edec0e7d0ea2b94223\"",
+      "Last-Modified": "Mon, 02 Nov 2026 18:22:47 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -4013,10 +4084,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b9d-EnsFd/jlFcXi6C8yX8RjyTG1YHI\""
+      "ETag": "W/\"33b9b-yqboEoCxLr+NFTIyYlx8NEv+r5s\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40144-3WldqqmxjAj+54AhVJ+Aka8rWnw\""
+      "ETag": "W/\"40144-H9Lpy9B0u8iLn+uc3XHx5so6WN8\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -4061,12 +4132,12 @@
       "Last-Modified": "Mon, 02 Nov 2026 00:52:57 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793606096\"",
-      "Last-Modified": "Mon, 02 Nov 2026 07:54:56 GMT"
+      "ETag": "\"1793644819\"",
+      "Last-Modified": "Mon, 02 Nov 2026 18:40:19 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793606905\"",
-      "Last-Modified": "Mon, 02 Nov 2026 08:08:25 GMT"
+      "ETag": "\"1793644834\"",
+      "Last-Modified": "Mon, 02 Nov 2026 18:40:34 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -4148,7 +4219,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"00da848e52ee6fd850e5d7eead9ee540b\""
+      "ETag": "\"015974dcc99890507dd795dbd05b8ffdc\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -4248,8 +4319,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"a6b130383a840b70c56c2ebc16b44cca\"",
-      "Last-Modified": "Mon, 02 Nov 2026 05:05:00 GMT"
+      "ETag": "\"aaa585405bed4c675865c2b5a6f1e361\"",
+      "Last-Modified": "Mon, 02 Nov 2026 18:08:52 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -6195,6 +6266,10 @@
       "list_fingerprint": "e5fdd08afd7e3e8eedeaaa4b0bb4f505a7aa92a35439d3cc28ead78929c2febe",
       "status": "posted"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": {
+      "list_fingerprint": "1e60770e308e595b7cae4417ed9d1b6080457cadb9c5b078ae406903c4ad6199",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/building-a-memory-driven-agent-with-nvidia-nemoclaw": {
       "list_fingerprint": "2e8193db873dd839cfa8892781d5b0642e85171a975c0b4d7184c384605adffe",
       "status": "older_material"
@@ -6319,6 +6394,10 @@
       "list_fingerprint": "00a0a0cfffb84ee9fbcb7cc49f11d3062ca4aa861ccc83de57a2c309fef18a7f",
       "status": "bootstrap_skipped"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues": {
+      "list_fingerprint": "ab470859497635bb4bce0240076578406344141e8f6745193abc896d2aa58b29",
+      "status": "older_material"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/how-nvidia-groq-3-lpx-deterministic-execution-drives-power-efficient-high-interactivity-inference-on-nvidia-vera-rubin": {
       "list_fingerprint": "66516ac17d00a051f4863623bf0657590100d2bdd5de80a620beafd8fb310e2e",
       "status": "bootstrap_skipped"
@@ -6390,6 +6469,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/lower-the-cost-of-building-and-running-visual-ai-agents-with-nvidia-vss-blueprint-3-3": {
       "list_fingerprint": "dd77c4f82d4f8aa478a6d265b15f09f1006cf6b71a7610c0d8eb493f91c72d2b",
       "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": {
+      "list_fingerprint": "4331313706958a977c157a4159142d713b003eedde084b0dcb32950f7262e2ee",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright": {
       "list_fingerprint": "1b91ee85bdc6a01a07644533862435b0faedd258ab2beac157010d964f208078",
@@ -6502,6 +6585,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/solving-agentic-ai-fleet-challenges-with-nvidia-vera-cpu": {
       "list_fingerprint": "a3f83c94dd205ebeb4c2152252ba8818d2e54dd4b6865258286df80a59a9bdd9",
       "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": {
+      "list_fingerprint": "8b4e4b7975f38a0abf974f5f47f43b7a1e6447f3317a0cb3638916d193c3280c",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor": {
       "list_fingerprint": "f6f249e32a9a86ff18aa830076a73119a2271fd3fe38a48f1cf92781baea34a3",
@@ -7115,6 +7202,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
     },
+    "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": {
+      "fingerprint": "1e60770e308e595b7cae4417ed9d1b6080457cadb9c5b078ae406903c4ad6199",
+      "first_seen": "2026-11-02T18:45:12.564666+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/"
+    },
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
       "fingerprint": "98559625fad74686d8d8017f18e36ceee41eb227751a7c961e536cac9c585ebe",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -7126,6 +7219,12 @@
       "first_seen": "2026-10-30T16:10:24.506358+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/"
+    },
+    "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": {
+      "fingerprint": "4331313706958a977c157a4159142d713b003eedde084b0dcb32950f7262e2ee",
+      "first_seen": "2026-11-02T18:45:12.564666+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/"
     },
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
       "fingerprint": "80f5dd22c00bcca471384a380ef2e805821c52005ec498f35db3831bfe6499b0",
@@ -7144,6 +7243,12 @@
       "first_seen": "2026-10-30T20:59:11.051787+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/"
+    },
+    "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": {
+      "fingerprint": "8b4e4b7975f38a0abf974f5f47f43b7a1e6447f3317a0cb3638916d193c3280c",
+      "first_seen": "2026-11-02T18:45:12.564666+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/"
     },
     "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": {
       "fingerprint": "8972799e585a4e9fd6c467a0e57ad0e36aefb4b1e6554a56404f917ae2a77e76",
