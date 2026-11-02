@@ -457,6 +457,286 @@
           "url": "https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot"
         }
       ]
+    },
+    {
+      "id": "dot-lumen",
+      "company": ".lumen",
+      "sector": "접근성·입력장치",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/이마촉각으로보행방향을전달하는안경_dot-lumen.md",
+      "checked_on": "2026-11-02",
+      "problem": "보행 공간 인식과 이마 촉각 안내",
+      "stage_summary": "루마니아 우선 예약·상용화, 목적지 내비게이션은 향후 기능",
+      "sources": [
+        {
+          "title": "회사와 팀",
+          "url": "https://www.dotlumen.com/aboutus"
+        },
+        {
+          "title": "EIC 프로젝트 소개",
+          "url": "https://eic.ec.europa.eu/impact/lumen_en"
+        },
+        {
+          "title": "제품 설명",
+          "url": "https://www.dotlumen.com/glasses"
+        },
+        {
+          "title": "기술 소개",
+          "url": "https://www.dotlumen.com/technology"
+        }
+      ]
+    },
+    {
+      "id": "Augmental",
+      "company": "Augmental",
+      "sector": "접근성·입력장치",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/혀와머리움직임을컴퓨터입력으로바꾸기_Augmental.md",
+      "checked_on": "2026-11-02",
+      "problem": "혀·머리 움직임의 컴퓨터 입력 변환",
+      "stage_summary": "미국 공개 출시·맞춤 제작, VOX는 베타",
+      "sources": [
+        {
+          "title": "MIT News, 2024-06-05",
+          "url": "https://news.mit.edu/2024/mouth-based-touchpad-augmental-0605"
+        },
+        {
+          "title": "Berkeley Engineering, 2024-01-30",
+          "url": "https://engineering.berkeley.edu/news/2024/01/berkeley-alum-develops-tongue-controlled-touchpad/"
+        },
+        {
+          "title": "현재 주문 안내",
+          "url": "https://www.augmental.tech/"
+        },
+        {
+          "title": "MouthPad·VOX 출시 발표",
+          "url": "https://www.augmental.tech/blog/mouthpad-and-vox-launch"
+        }
+      ]
+    },
+    {
+      "id": "Mimica",
+      "company": "Mimica",
+      "sector": "식품·포장",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/온도이력을촉각신선도표시로바꾸는포장_Mimica.md",
+      "checked_on": "2026-11-02",
+      "problem": "보관 온도에 반응하는 촉각 신선도 표시",
+      "stage_summary": "고객별 시험·적용 프로젝트와 공급망 구축",
+      "sources": [
+        {
+          "title": "공식 팀",
+          "url": "https://www.mimicalab.com/jointheteam"
+        },
+        {
+          "title": "Bump 제품 원리",
+          "url": "https://www.mimicalab.com/bump"
+        },
+        {
+          "title": "진행 프로젝트",
+          "url": "https://www.mimicalab.com/projects"
+        },
+        {
+          "title": "공식 행사·시험 발표 기록",
+          "url": "https://www.mimicalab.com/events"
+        }
+      ]
+    },
+    {
+      "id": "Sparxell",
+      "company": "Sparxell",
+      "sector": "제조·소재·우주",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/셀룰로오스미세구조로색을만드는안료_Sparxell.md",
+      "checked_on": "2026-11-02",
+      "problem": "셀룰로오스 구조색 안료와 잉크",
+      "stage_summary": "Pre-Series A·상업용 잉크와 생산 확대",
+      "sources": [
+        {
+          "title": "현재 투자·사업화 소개",
+          "url": "https://www.enterprise.cam.ac.uk/news/sparxell-raises-5m-pre-series-a-to-scale-revolutionary-plant-based-colour-technology/"
+        },
+        {
+          "title": "창업 배경",
+          "url": "https://www.enterprise.cam.ac.uk/case-studies/sparxell-biodegradable-colour-pigments-from-plant-based-cellulose/"
+        },
+        {
+          "title": "공식 팀",
+          "url": "https://sparxell.com/team/"
+        },
+        {
+          "title": "공식 기술 설명",
+          "url": "https://sparxell.com/technology/"
+        },
+        {
+          "title": "제품과 적용 지원",
+          "url": "https://sparxell.com/products/"
+        }
+      ]
+    },
+    {
+      "id": "Epic-Cleantec",
+      "company": "Epic Cleantec",
+      "sector": "물·건물 인프라",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/건물안에서물을처리하고다시쓰는설비_Epic-Cleantec.md",
+      "checked_on": "2026-11-02",
+      "problem": "건물 현장 물 재이용과 운영 서비스",
+      "stage_summary": "운영 사례가 있는 전문기업, 설립 직후 팀과 구분",
+      "sources": [
+        {
+          "title": "공식 팀",
+          "url": "https://epiccleantec.com/team"
+        },
+        {
+          "title": "회사 제품·서비스",
+          "url": "https://epiccleantec.com/"
+        },
+        {
+          "title": "솔루션 구성",
+          "url": "https://epiccleantec.com/solutions"
+        },
+        {
+          "title": "SFPUC 사례집의 Fifteen-Fifty 항목",
+          "url": "https://www.sfpuc.gov/sites/default/files/documents/Onsite_Water_Recycling_Ebook_2022.pdf"
+        }
+      ]
+    },
+    {
+      "id": "Orbital-Industries",
+      "company": "Orbital Industries",
+      "sector": "AI 소재·냉각 인프라",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/원자모델에서냉각하드웨어로이어지는사업_Orbital-Industries.md",
+      "checked_on": "2026-11-02",
+      "problem": "원자 모델을 이용한 소재 후보 탐색과 데이터센터 냉각 제품",
+      "stage_summary": "시리즈 B·냉각 제품 배치 확대, 공개 원자 모델과 현장 성능을 구분",
+      "sources": [
+        {
+          "title": "Orbital Industries 창업팀·시리즈 B 발표, 2026-05-28",
+          "url": "https://www.orbitalindustries.com/news/press/orbital-industries-series-b-50-million"
+        },
+        {
+          "title": "공식 회사 소개",
+          "url": "https://www.orbitalindustries.com/"
+        },
+        {
+          "title": "Orb 공식 공개 코드",
+          "url": "https://github.com/orbital-materials/orb-models"
+        },
+        {
+          "title": "Orbital IT 냉각 제품·설계·조달",
+          "url": "https://it.orbitalindustries.com/"
+        },
+        {
+          "title": "Orbital IT의 2상 냉각 원리",
+          "url": "https://it.orbitalindustries.com/next-generation-cooling"
+        }
+      ]
+    },
+    {
+      "id": "Lumai",
+      "company": "Lumai",
+      "sector": "컴퓨팅·반도체",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/빛으로AI행렬연산을처리하는서버_Lumai.md",
+      "checked_on": "2026-11-02",
+      "problem": "광학 행렬 연산을 이용한 AI 프리필 처리",
+      "stage_summary": "Iris Nova 평가 하드웨어·LLM 데모, 차기 에너지 목표는 별도",
+      "sources": [
+        {
+          "title": "Lumai 현재 공동창업자·경영진",
+          "url": "https://lumai.ai/about-us"
+        },
+        {
+          "title": "Runa Capital의 초기 이력",
+          "url": "https://runacap.com/companies/lumai/"
+        },
+        {
+          "title": "Iris Nova 발표, 2026-04-28",
+          "url": "https://lumai.ai/resources/a-first-for-optical-compute-running-billion-parameter-llms-in-real-time"
+        },
+        {
+          "title": "현재 제품·기술",
+          "url": "https://lumai.ai/"
+        },
+        {
+          "title": "후속 개발·평가 상태, 2026-09-15",
+          "url": "https://lumai.ai/resources/two-new-advisors-join-lumai-as-we-bring-optical-computing-to-the-data-center"
+        }
+      ]
+    },
+    {
+      "id": "Fractile",
+      "company": "Fractile",
+      "sector": "컴퓨팅·반도체",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/추론의메모리병목을겨냥한칩과시스템_Fractile.md",
+      "checked_on": "2026-11-02",
+      "problem": "AI 추론의 메모리 이동과 긴 문맥 처리 병목",
+      "stage_summary": "시리즈 B·칩부터 시스템까지 개발, 양산·독립 벤치마크는 미확인",
+      "sources": [
+        {
+          "title": "Fractile 회사 소개",
+          "url": "https://fractile.ai/"
+        },
+        {
+          "title": "Accel 시리즈 B·창업자 소개, 2026-05-15",
+          "url": "https://www.accel.com/news/fractile-the-future-of-ai-inference"
+        },
+        {
+          "title": "Oxford Science Enterprises의 기술·단계 소개",
+          "url": "https://www.oxfordscienceenterprises.com/portfolio/fractile"
+        }
+      ]
+    },
+    {
+      "id": "IONATE",
+      "company": "IONATE",
+      "sector": "에너지·전력 인프라",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/전력품질을제어하는하이브리드변압기_IONATE.md",
+      "checked_on": "2026-11-02",
+      "problem": "하이브리드 변압기로 전압·고조파·무효전력 제어",
+      "stage_summary": "시리즈 A 이후 고객 도입 추진, GM 설치 계획과 장기 운전 완료를 구분",
+      "sources": [
+        {
+          "title": "IONATE 공식 회사·제품 소개",
+          "url": "https://www.ionate.energy/"
+        },
+        {
+          "title": "HIT·Aurora 기술 설명",
+          "url": "https://www.ionate.energy/tech"
+        },
+        {
+          "title": "2025년 회고, 2025-12-19",
+          "url": "https://www.ionate.energy/post/a-year-in-review-2025"
+        },
+        {
+          "title": "GM 협력·제작 시험 상태 발표",
+          "url": "https://www.ionate.energy/post/ionate-and-general-motors-collaborate-to-modernize-u-s-electrical-infrastructure-with-smart-grid-technology"
+        }
+      ]
+    },
+    {
+      "id": "Capacities",
+      "company": "Capacities",
+      "sector": "개인 생산성·소프트웨어",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/객체형노트와소규모자체조달제품사업_Capacities.md",
+      "checked_on": "2026-11-02",
+      "problem": "객체와 연결로 구성하는 개인 지식 관리",
+      "stage_summary": "자체 자금 기반 구독 제품, 팀 협업 없이 개인 사용 상황에 집중",
+      "sources": [
+        {
+          "title": "Capacities Facts, 2026-10-05 갱신",
+          "url": "https://capacities.io/about/facts"
+        },
+        {
+          "title": "Dgraph에서 PostgreSQL로의 전환, 2026-01-12",
+          "url": "https://capacities.io/blog/migration-to-postgres"
+        }
+      ]
     }
   ]
 }

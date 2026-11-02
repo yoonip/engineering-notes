@@ -1,0 +1,22 @@
+name: 기업 조사 공개 모델 실행 검사
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  cpu-inference:
+    if: github.repository == 'yoonip/engineering-notes'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/emerging-companies
+      - name: 공개 모델·런타임 해시 확인과 기동
+        run: python3 .github/emerging-companies/prepare_runtime.py --cache-dir "$RUNNER_TEMP/company-runtime" --serve
+      - name: 실제 CPU 추론과 JSON 응답 검사
+        run: python3 .github/emerging-companies/smoke_runtime.py
+      - name: 실패 원인 확인
+        if: failure()
+        run: tail -n 60 "$RUNNER_TEMP/company-runtime/server.log" || true
