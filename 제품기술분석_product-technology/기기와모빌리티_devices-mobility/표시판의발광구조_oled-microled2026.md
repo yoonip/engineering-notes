@@ -12,11 +12,11 @@ flowchart TB
         M1[화소별 무기 LED] --> M2[화소 자체 발광]
     end
     subgraph R[Micro RGB LCD]
-        R1[RGB 미니 LED 백라이트] --> R2[액정층·컬러 필터] --> R3[화면 빛]
+        R1[미세 RGB LED 백라이트] --> R2[액정층·컬러 필터] --> R3[화면 빛]
     end
 ~~~
 
-그림 1. OLED·자발광 MicroLED·RGB 미니 LED 백라이트 LCD의 빛 생성 위치를 비교했습니다. 특정 TV의 층 두께·화소 배치나 실제 패널 단면은 아닙니다.
+그림 1. OLED·자발광 MicroLED·미세 RGB LED 백라이트 LCD의 빛 생성 위치를 비교했습니다. 특정 TV의 층 두께·화소 배치나 실제 패널 단면은 아닙니다.
 
 ## 이름보다 빛이 나오는 위치를 확인합니다
 

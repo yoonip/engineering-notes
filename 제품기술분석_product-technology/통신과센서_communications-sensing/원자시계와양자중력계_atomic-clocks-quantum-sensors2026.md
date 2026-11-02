@@ -22,7 +22,7 @@ flowchart TB
 
 [Microchip SA65 현행 페이지](https://www.microchip.com/en-us/products/clock-and-timing/components/atomic-clocks/embedded-atomic-oscillators/csac)는 정상상태 전력 120 mW, 1초 Allan deviation 3×10⁻¹⁰ 미만과 41×35×12 mm를 설명합니다. [2026년 8월 발표](https://www.microchip.com/en-us/about/news-releases/products/microchip-advances-space-grade-timing-with-enhanced-radiation-tolerance)는 별도 Space CSAC-SA65의 방사선·온도 조건을 설명합니다. 일반 지상용 모델에 우주용 적격성을 그대로 붙이지 않습니다.
 
-[Safran mRO-50 Ruggedized](https://safran-navigation-timing.com/product/mro-50-ruggedized/)는 소형 루비듐 발진기입니다. 현행 웹 본문은 소비 전력을 0.36 W로 소개합니다. 그러나 그 페이지에 연결된 [2023-08-28 사양서](https://safran-navigation-timing.com/wp-content/uploads/2023/05/mRO-50-Ruggedized_SAFRAN_Datasheet_08-28-2023_US.pdf)의 전기 사양란은 25°C 정상상태에서 기본 5 V형 <0.57 W, 선택 3.3 V형 <0.5 W와 각각의 기동 전력을 제시합니다. 판본이 다른 수치를 같은 조건의 최신 보장치로 합치지 않습니다. 웹 본문의 하루 holdover 1 µs 미만 설명도 모든 환경의 무조건적 최대 오차로 확장하지 않으며, 구매 시 적용 형식·판본과 시험 조건을 맞춰야 합니다.
+[Safran mRO-50 Ruggedized](https://safran-navigation-timing.com/product/mro-50-ruggedized/)는 소형 루비듐 발진기입니다. 현행 웹 본문은 소비 전력을 0.36 W로 소개합니다. 그러나 그 페이지에 연결된 [2023-08-28 사양서](https://safran-navigation-timing.com/wp-content/uploads/2026/10/mRO-50-Ruggedized_SAFRAN_Datasheet_08-28-2023_US.pdf)의 전기 사양란은 25°C 정상상태에서 기본 5 V형 <0.57 W, 선택 3.3 V형 <0.5 W와 각각의 기동 전력을 제시합니다. 판본이 다른 수치를 같은 조건의 최신 보장치로 합치지 않습니다. 웹 본문의 하루 holdover 1 µs 미만 설명도 모든 환경의 무조건적 최대 오차로 확장하지 않으며, 구매 시 적용 형식·판본과 시험 조건을 맞춰야 합니다.
 
 [Exail의 현행 양자 중력 센서 안내](https://www.exail.com/photonics/quantum-gravity-sensing)는 실내 AQG-A, 현장용 AQG-B와 차등 DQG를 구분합니다. 2026년 봄 Reims의 rover DQG 탐사를 설명하지만 그것만으로 임의의 이동 속도에서 성능을 확인할 수는 없습니다. 같은 페이지의 ObQG는 2027년 말 인도와 2028년 비행 시험을 목표로 적고 있습니다. 이 미래 계획을 현재 납품 완료로 바꾸어 읽지 않습니다.
 
@@ -75,7 +75,7 @@ flowchart TB
 
 BKG 시험은 복잡한 문제 해결에 제조사 지원이 필요할 수 있음을 적습니다. 통합 레이저·제어 소프트웨어는 운용을 쉽게 하는 동시에 공급사 지원에 대한 의존을 만들 수 있습니다. 반면 연속 측정으로 현장 방문을 줄일 수 있다면 더 비싼 장치가 전체 운영비에서는 유리할 수도 있습니다. 공개되지 않은 구매가·유지비를 만들어 수익성을 계산하지는 않습니다.
 
-시간 기준은 입력·출력 전압, 주파수, 1 PPS와 제어 방식이 맞아야 교체하기 쉽습니다. 공간용 부품은 방사선·온도 평가와 공급 이력이 추가됩니다. 중력 탐사는 센서 구매 외에 지형·토양 모형과 해석 인력이 필요합니다. 따라서 가장 작은 Allan deviation이나 가장 작은 µGal 숫자 하나가 시장 선택을 결정하지 않습니다.
+시간 기준은 입력·출력 전압, 주파수, 1 PPS와 제어 방식이 맞아야 교체하기 쉽습니다. 우주용 부품은 방사선·온도 평가와 공급 이력이 추가됩니다. 중력 탐사는 센서 구매 외에 지형·토양 모형과 해석 인력이 필요합니다. 따라서 가장 작은 Allan deviation이나 가장 작은 µGal 숫자 하나가 시장 선택을 결정하지 않습니다.
 
 ## 스스로 확인해 보세요
 

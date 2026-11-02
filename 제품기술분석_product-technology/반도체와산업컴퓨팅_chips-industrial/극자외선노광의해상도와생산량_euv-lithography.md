@@ -12,9 +12,9 @@
 
 EUV의 파장은 약 13.5nm입니다. 이 빛은 공기와 많은 물질에 흡수되므로 진공과 반사 광학계를 사용합니다. 해상도는 두 구조를 구별하여 인쇄하는 능력이고, 오버레이는 여러 번 만든 층의 상대 정렬 오차입니다. 얇은 선 하나가 잘 나왔다고 연결 구멍과 다른 층까지 모두 정렬되었다는 뜻은 아닙니다.
 
-![ASML이 공개한 NXE:3400 EUV 장비 내부 사진](https://edge.sitecorecloud.io/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/images/technology/43679-inside-nxe3400.jpg?h=1080&iar=0&w=1920)
+![ASML이 공개한 NXE:3400 EUV 장비 이미지](https://edge.sitecorecloud.io/asmlnetherlaaea-asmlcom-prd-5369/media/project/asmlcom/asmlcom/asml/images/products/euv-lithography-systems/43666-nxe3400.jpg?h=949&iar=0&w=1920)
 
-그림 2. 이전 세대 NXE:3400 장비 내부를 보여 주는 ASML 공식 사진입니다. 현 세대 EXE:5200B의 내부 구조로 오해하지 않도록 제품 세대를 구분했습니다. 진공 안에서 거울과 웨이퍼 스테이지가 작동해야 하는 장비의 공간적 복잡성을 살펴보실 수 있습니다. [ASML의 EUV 제품 설명](https://www.asml.com/en/products/euv-lithography-systems)
+그림 2. ASML의 EUV 제품 안내에 실린 NXE:3400 장비 이미지입니다. 위의 EXE:5200B와는 세대와 광학 구성이 다릅니다. 장비 내부의 정확한 광 경로와 치수는 이 이미지가 아니라 해당 모델의 기술 자료에서 확인해야 합니다. [ASML의 EUV 제품 설명](https://www.asml.com/en/products/euv-lithography-systems)
 
 NA는 수치 개구수로 광학계가 받아들이는 빛의 각도 범위와 관련됩니다. 더 큰 NA는 미세한 공간 정보를 전달할 여지를 늘리지만 초점 여유와 광학·공정 설계도 함께 바꿉니다. ‘High NA’는 단순히 광원의 출력만 높인 제품명이 아닙니다.
 
