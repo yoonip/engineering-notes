@@ -46,7 +46,7 @@ DRAM에서 전하가 많다는 사실과 논리값 1이 항상 일치하는 것�
 
 ### 높게 만든 뒤에도 구조가 서 있어야 합니다
 
-원통·기둥형 전극에서는 희생 재료 제거 뒤의 기계적 지지가 중요합니다. 구조를 더 높게 만들면 면적을 늘릴 수 있지만 휘어짐·인접 전극 접촉·공정 중 붕괴가 새로운 불량 후보가 됩니다. 지지 구조가 남아 있는 단면과 제거 후 단면을 구분해야 합니다. [TEL Investor Guide, 2026-09-15, 63쪽](https://www.tel.com/ir/library/investors-guide/hq95qj0000000734-att/InvestorsGuide_E20260915_rev00.pdf#page=63)의 6F² 구조에는 높은 커패시터와 가로 지지 구조가 함께 표시되어 있습니다.
+원통·기둥형 전극에서는 희생 재료 제거 뒤의 기계적 지지가 중요합니다. 구조를 더 높게 만들면 면적을 늘릴 수 있지만 휘어짐·인접 전극 접촉·공정 중 붕괴가 새로운 불량 후보가 됩니다. 지지 구조가 남아 있는 단면과 제거 후 단면을 구분해야 합니다. [TEL Investor Guide, 2026-09-15, 63쪽](https://www.tel.com/ir/library/investors-guide/)의 6F² 구조에는 높은 커패시터와 가로 지지 구조가 함께 표시되어 있습니다.
 
 같은 페이지의 4F²·3D DRAM 그림과 미래 연도 표는 TEL의 일반화한 전망입니다. 높은 커패시터 하나를 가진 현재의 셀, 수직 접근 트랜지스터를 연구하는 셀, 여러 셀층을 만드는 3D DRAM을 서로 같은 구조로 읽지 않습니다. HBM의 여러 DRAM die 적층과도 구분합니다.
 
@@ -147,7 +147,6 @@ SK하이닉스의 [2026-07-22 CTI 연구 소개, Figure 2·5](https://news.skhyn
 | 공식 자료·그림 | 바로 보기 | 그림에서 읽을 내용 |
 | --- | --- | --- |
 | 서울대·UIUC, DRAMScope Figure 2 | [논문 PDF 3쪽](https://scale.snu.ac.kr/papers/2024-04-Conference-ISCA-DRAMScope.pdf#page=3) | 상면의 WL·BL 관계와 saddle-fin의 단면, 매립 게이트·저장 노드·공유 접촉을 구분합니다. |
-| TEL, DRAM Technology Roadmap 63쪽 | [공식 PDF 63쪽](https://www.tel.com/ir/library/investors-guide/hq95qj0000000734-att/InvestorsGuide_E20260915_rev00.pdf#page=63) | 왼쪽 6F²의 높은 커패시터·지지 구조와 오른쪽 3D DRAM 개념을 비교합니다. 연도별 수치는 TEL 전망입니다. |
 | SK하이닉스, Cell-formation Figure 1 | [공식 원도면](https://d18r0a86za96sg.cloudfront.net/wp-content/uploads/2026/07/20050427/Inside-the-Research_ep1_01_ect_Infographic_2026.jpg) · [설명](https://news.skhynix.com/en/research-inside-ep1/) | 적층, 구멍, blocking oxide·CTN·tunnel oxide·polysilicon의 위치를 읽습니다. |
 | SK하이닉스, Conventional CTI Figure 2 | [공식 원도면](https://d18r0a86za96sg.cloudfront.net/wp-content/uploads/2026/07/20050429/Inside-the-Research_ep1_02_ect_Infographic_2026.jpg) | 포켓 형성→저장막 분리의 예입니다. Figure 5의 새 방식과 구분합니다. |
 | Lam, Tier bending Figure 1a·1b | [공식 원도면](https://newsroom.lamresearch.com/image/Figure+1+-+3D+NAND+Flash+Memory++A+Study+of+Tier+Bending+using+SEMulator3D.jpg) · [설명](https://newsroom.lamresearch.com/semulator3d-sheds-light-on-tier-bending-in-3d-nand-flash-memory) | contact와 slit 사이 지지되지 않은 층, 원문이 인용한 붕괴 SEM을 비교합니다. 뒤의 DOE 그래프는 가상 실험입니다. |
@@ -161,7 +160,7 @@ SK하이닉스의 [2026-07-22 CTI 연구 소개, Figure 2·5](https://news.skhyn
 | [Nam 외, DRAMScope](https://scale.snu.ac.kr/papers/2024-04-Conference-ISCA-DRAMScope.pdf) | ISCA 2024 저자 공개본입니다. II-A–C절·Figure 2의 조직·6F²·접근·복원을 확인했습니다. 제조 레시피 논문이나 모든 제품의 내부 도면으로 제시하지 않았습니다. |
 | [Applied Materials, DRAM](https://www.appliedmaterials.com/us/en/semiconductor/markets-and-inflections/memory/dram.html) | 2026-10-26 확인입니다. Anatomy·Cell Array Scaling·Periphery Logic Scaling 본문을 읽었습니다. |
 | [Chun-Chuan Chien, Study on Electrical Characteristics of High-k Metal-Insulator-Metal Capacitors](https://ir.lib.nycu.edu.tw/handle/11536/80450) | 국립교통대 2006년 학위논문이며 현재 NYCU 공식 저장소에 있습니다. 본문 파일의 인쇄 5–6쪽 1.3절에서 MIM 공정·재료 구성 설명을 읽었습니다. ITRS 2005 등의 당시 전망·조건은 현재 사양으로 사용하지 않았습니다. |
-| [TEL Investor Guide](https://www.tel.com/ir/library/investors-guide/hq95qj0000000734-att/InvestorsGuide_E20260915_rev00.pdf) | 2026-09-15 판의 인쇄/PDF 63쪽을 렌더링하여 확인했습니다. 오른쪽 위의 기준 시점은 2026-08-06이며 표는 TEL의 일반 전망입니다. |
+| [TEL Investor Guide](https://www.tel.com/ir/library/investors-guide/) | 2026-10-26 열람 기록은 2026-09-15 판 63쪽이며, 표의 기준 시점은 2026-08-06입니다. 2026-11-02에는 해당 PDF 경로가 열리지 않아 공식 자료실로 연결합니다. 본문의 구조 비교는 당시 열람본을 바탕으로 하며, 연도별 수치는 TEL의 전망입니다. |
 | [Applied Materials, 3D NAND](https://www.appliedmaterials.com/us/en/semiconductor/markets-and-inflections/memory/3d-nand.html) | 2026-10-26 확인입니다. Anatomy·Lateral Scaling·Vertical Scaling의 재료·계단·주변 CMOS·희생층 교체와 contact를 확인했습니다. |
 | [SK하이닉스, CTI 연구 소개](https://news.skhynix.com/en/research-inside-ep1/) | 2026-07-22입니다. 셀 형성·CTN·CTI Figure 1–3·5와 IEDM 2025 원논문 연결을 확인했습니다. Figure 1–3 원도면을 직접 보았습니다. 성능 배수를 별도 검증한 결과로 쓰지 않았습니다. |
 | [SK하이닉스, 4D NAND 적층 설명](https://news.skhynix.com/en/how-sk-hynixs-advanced-4d-nand-technologies-are-overcoming-stacking-limitations/) | 2023-12-19입니다. 3-Plug·Sideway Source·All PUC의 본문을 확인했습니다. 당시 장비·층수 설명을 고정 한계로 일반화하지 않았습니다. |

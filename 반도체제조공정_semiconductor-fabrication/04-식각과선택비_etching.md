@@ -117,7 +117,7 @@ ARDE(aspect-ratio-dependent etching)는 구조의 종횡비에 따라 식각 속
 
 ### 3D NAND의 높은 종횡비 식각
 
-여러 층이 쌓인 막을 관통하는 통로에서는 깊이가 증가할수록 수송과 측벽 형상 제어가 어려워집니다. 입구가 넓어지는 보잉(bowing), 아래로 갈수록 좁아지는 테이퍼, 구멍이 기울거나 옆으로 휘는 현상을 구분해야 합니다. 하나의 수직 단면에서 정상처럼 보여도 다른 방향에서는 치우칠 수 있습니다. Lam의 제품 설명은 유전체 식각에 ALE·RIE·극저온 식각을 포함하고, 높은 종횡비 구조를 별도 과제로 다룹니다. 특정 장비의 홍보 성능을 모든 재료와 구조에 일반화해서는 안 됩니다. [Lam Research, Etch의 공정 및 제품 분류](https://www.lamresearch.com/products/our-processes/etch/)
+여러 층이 쌓인 막을 관통하는 통로에서는 깊이가 증가할수록 수송과 측벽 형상 제어가 어려워집니다. 중간 측벽이 바깥으로 휘어 폭이 넓어지는 보잉(bowing), 아래로 갈수록 좁아지는 테이퍼, 구멍이 기울거나 옆으로 휘는 현상을 구분해야 합니다. 하나의 수직 단면에서 정상처럼 보여도 다른 방향에서는 치우칠 수 있습니다. Lam의 제품 설명은 유전체 식각에 ALE·RIE·극저온 식각을 포함하고, 높은 종횡비 구조를 별도 과제로 다룹니다. 특정 장비의 홍보 성능을 모든 재료와 구조에 일반화해서는 안 됩니다. [Lam Research, Etch의 공정 및 제품 분류](https://www.lamresearch.com/products/our-processes/etch/) · [Lam Research 강의, Bowing, 슬라이드 25–26](https://willson.cm.utexas.edu/Teaching/LithoClass2017/Files/Introduction%20to%20Plasma%20Etching_Lecture_102417_Day2_sntzd.pdf)
 
 ### 실제 장비와 재료를 연결하기
 
