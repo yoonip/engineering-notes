@@ -36,7 +36,7 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 �
 | [반도체 제조 공정](반도체제조공정_semiconductor-fabrication/README.md) | 웨이퍼·산화·포토·식각·증착과 이온주입·배선·검사·패키징, 공정 통합과 로직·메모리의 차이 |
 | [반도체 설계](반도체설계_semiconductor-design/README.md) | Linux·PDK·Spectre, 아날로그 풀커스텀·SRAM·DRAM·RTL 구현, 혼합신호 칩·SoC 통합·물리 검증·GDS·HBM |
 | [전자·컴퓨터공학](전자컴퓨터공학_ece/README.md) | 소프트웨어, 회로·반도체, 임베디드·제어, GPU·AI |
-| [장애를 극복하는 기술](장애를극복하는기술_disability-technology/README.md) | 지체·감각·의사소통·내부기관 장애를 지원하는 보조기기·재활공학·의료기술. 법령의 이용 상태와 연구 단계도 구분합니다. |
+| [장애를 극복하는 기술](장애를극복하는기술_disability-technology/README.md) | 지체·감각·의사소통·내부기관 장애를 지원하는 보조기기·재활공학·의료기술. 제품의 허가·이용 범위와 연구 단계도 구분합니다. |
 | [언어이해·추리논증](언어이해와추리논증_reading-reasoning/README.md) | 문해력·논리·논증, [수능·LEET 기출 분석](언어이해와추리논증_reading-reasoning/시험자료_assessments/README.md)과 자체 연습 |
 | [외국어와 기술 영어](외국어와기술영어_foreign-languages/README.md) | [영어 기초와 문법 연습](외국어와기술영어_foreign-languages/영어기초_english-basics/README.md), 외국어 학습 방법과 기술 문서 읽기 |
 | [인문사회](인문사회_humanities/README.md) | [철학의 주요 개념](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md), 경제, 사회·제도, 법의 권리·사실·절차·판결 |
@@ -59,7 +59,7 @@ C/C++·펌웨어·컴퓨터구조·칩 검증·AI·Python 구현은 [업무별 �
 
 [의공학과 의료 AI](전자컴퓨터공학_ece/62-의공학의료AI_medical-engineering/README.md)는 의료영상·진단, 신경보철·재활, AI 신약 연구를 측정·계산·임상 근거로 연결하는 학습 경로입니다.
 
-[장애를 극복하는 기술](장애를극복하는기술_disability-technology/README.md)은 보조기술과 재활·의료 장치가 실제로 지원하는 기능을 설명합니다. 12개 요청 유형과 2026년 시행 법령에 추가된 췌장장애를 다루며, 제품·허가·임상시험·초기 연구를 구분합니다.
+[장애를 극복하는 기술](장애를극복하는기술_disability-technology/README.md)은 보조기술과 재활·의료 장치가 실제로 지원하는 기능을 설명합니다. 외부 신체 기능·내부기관 장애와 2026년 법령에 추가된 췌장장애를 다루며, 제품·허가·임상시험·초기 연구를 구분합니다.
 
 [철학 개념 학습](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/개념_concepts/README.md)에서 기초 용어와 사례를 읽고, [최근 AI 연구와 고전의 비교](인문사회_humanities/58-철학비판적사고_philosophy-critical-thinking/해설_notes/AI연구와고전개념_ai-evidence-and-classical-concepts.md)에서 의식·자유의지·인격 동일성의 주장과 근거·반론을 살펴봅니다.
 
@@ -113,7 +113,7 @@ I view efficiency through the same lens. Faster computation matters when it solv
 
 Useful technology must also be trustworthy. I aim to record the conditions under which a result holds, what was measured, what was assumed, and how the result can be checked independently. When an explanation proves wrong, I value correcting it through evidence and making the design and verification process understandable to others. Sharing knowledge also means respecting readers' time and taking care that a mistaken explanation does not propagate into their work.
 
-I hope this work can strengthen scientific and technological capacity and industrial competitiveness. Those contributions have their greatest value when they help build better technology and support an exchange of knowledge across borders. My wider purpose is to contribute to humanity: engineering that benefits people living in different regions and circumstances, rather than ending with the achievements of any single country.
+I hope this work can strengthen Korea's scientific and technological capacity and national and industrial competitiveness. I see this contribution as part of building better technology and sharing knowledge across borders. My wider purpose is to contribute to humanity: engineering that benefits people living in different regions and circumstances, rather than ending with the achievements of any single country.
 
 I hope this repository will be more than a store of finished answers. One reader may use it to understand a concept for the first time; another may improve a program or begin a new research project. I want future generations, including my children and nieces or nephews, to be able to follow not only what was built but also why it was designed and checked that way. By sharing knowledge in a readable, reusable form, I hope learning and improvement can continue as tools and technologies change.
 
