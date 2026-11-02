@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-11-02",
+  "entries": [
+    {
+      "id": "OpenGraph-Labs",
+      "company": "OpenGraph Labs",
+      "sector": "로봇·현실 데이터",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/촉각과영상으로로봇학습데이터를만드는사업_OpenGraph-Labs.md",
+      "checked_on": "2026-11-02",
+      "problem": "촉각 장갑·영상 수집과 데이터 공급",
+      "stage_summary": "제품·공개 데이터·SDK, 고객 실적의 범위 확인",
+      "sources": [
+        {
+          "title": "EO 인터뷰 기사",
+          "url": "https://eopla.net/magazines/48409"
+        },
+        {
+          "title": "공식 소개",
+          "url": "https://www.opengraphlabs.com/"
+        },
+        {
+          "title": "OGLO 제품",
+          "url": "https://www.opengraphlabs.com/products/oglo"
+        },
+        {
+          "title": "OVISION 사양",
+          "url": "https://www.opengraphlabs.com/products/ovision"
+        },
+        {
+          "title": "데이터 카드와 이용 조건",
+          "url": "https://huggingface.co/datasets/OpenGraphLabs-Research/ego-tactile-manipulation"
+        },
+        {
+          "title": "NVIDIA 공식 지원 목록",
+          "url": "https://developer.nvidia.com/blog/develop-humanoid-robot-policies-end-to-end-with-nvidia-isaac-gr00t/"
+        },
+        {
+          "title": "OGLO Python SDK와 현재 제한",
+          "url": "https://github.com/OpenGraphLabs/oglo-python"
+        }
+      ]
+    },
+    {
+      "id": "RLWRLD",
+      "company": "RLWRLD",
+      "sector": "로봇·현실 데이터",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/손가락작업용로봇기반모델_RLWRLD.md",
+      "checked_on": "2026-11-02",
+      "problem": "손가락 작업의 영상·이력·물리 신호 학습",
+      "stage_summary": "공개 모델·보고서·코드, 시드 단계 발표",
+      "sources": [
+        {
+          "title": "회사 소개",
+          "url": "https://www.rlwrld.ai/en/company"
+        },
+        {
+          "title": "RLDX-1 설명",
+          "url": "https://www.rlwrld.ai/en/rldx-1"
+        },
+        {
+          "title": "공개 코드",
+          "url": "https://github.com/RLWRLD/RLDX-1"
+        },
+        {
+          "title": "기술보고서",
+          "url": "https://arxiv.org/abs/2605.03269"
+        },
+        {
+          "title": "회사 뉴스, 2026-04-29",
+          "url": "https://www.rlwrld.ai/en/news/31"
+        }
+      ]
+    },
+    {
+      "id": "AeiROBOT",
+      "company": "AeiROBOT",
+      "sector": "로봇·현실 데이터",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/산업현장용이동형휴머노이드_AeiROBOT.md",
+      "checked_on": "2026-11-02",
+      "problem": "바퀴형·이족형 산업 휴머노이드",
+      "stage_summary": "제품·사전 주문·실증, 설립 직후 팀과 구분",
+      "sources": [
+        {
+          "title": "공식 회사 소개",
+          "url": "https://arobot-eng.imweb.me/intro"
+        },
+        {
+          "title": "CES 전시 소개",
+          "url": "https://www.ces2026-humanoidmaxalliance.com/aeirobot"
+        }
+      ]
+    },
+    {
+      "id": "mimic-robotics",
+      "company": "mimic robotics",
+      "sector": "로봇·현실 데이터",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/영상기반로봇조작_mimic-robotics.md",
+      "checked_on": "2026-11-02",
+      "problem": "수집 장치와 로봇 손·행동 모델의 대응",
+      "stage_summary": "시드 이후 M1·U1 공개와 산업 도입",
+      "sources": [
+        {
+          "title": "회사 소개",
+          "url": "https://www.mimicrobotics.com/about"
+        },
+        {
+          "title": "2026년 7월 기술 발표",
+          "url": "https://www.mimicrobotics.com/blog/solving-dexterity-a-full-stack-approach"
+        },
+        {
+          "title": "기술 설명",
+          "url": "https://www.mimicrobotics.com/technology"
+        },
+        {
+          "title": "ETH AI Center의 공동창업자·연구 배경 소개",
+          "url": "https://ai.ethz.ch/news-and-events/ai-center-news/2025/09/mimic_Robotics_Seed_Round_2025.html"
+        },
+        {
+          "title": "Speedinvest의 CEO 인터뷰 소개",
+          "url": "https://www.linkedin.com/posts/speedinvest_how-do-you-hire-hard-to-reach-ai-and-robotics-activity-7468565749364604929-RgiP"
+        },
+        {
+          "title": "회사 공동창업자 소개 게시물",
+          "url": "https://www.linkedin.com/posts/mimicrobotics_this-is-how-you-kick-off-the-year-right-activity-7285323502369320962-YgRG"
+        }
+      ]
+    },
+    {
+      "id": "AIM-Intelligence",
+      "company": "AIM Intelligence",
+      "sector": "AI·개발 도구",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/기업AI취약점시험과실시간통제_AIM-Intelligence.md",
+      "checked_on": "2026-11-02",
+      "problem": "기업 AI 취약점 시험과 운영 통제",
+      "stage_summary": "제품 제공·투자사 시리즈 A 소개",
+      "sources": [
+        {
+          "title": "제품 소개",
+          "url": "https://www.aim-intelligence.com/"
+        },
+        {
+          "title": "투자사 소개",
+          "url": "https://d2sf.naver.com/en/portfolio/AIMIntelligence"
+        },
+        {
+          "title": "Stinger 공식 설명",
+          "url": "https://www.aim-intelligence.com/stinger"
+        }
+      ]
+    },
+    {
+      "id": "Pebblous",
+      "company": "Pebblous",
+      "sector": "AI·개발 도구",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/AI학습데이터진단과합성데이터_Pebblous.md",
+      "checked_on": "2026-11-02",
+      "problem": "학습 데이터 진단과 구성 조정",
+      "stage_summary": "진단 서비스·표본 보고서",
+      "sources": [
+        {
+          "title": "회사 소개",
+          "url": "https://www.pebblous.ai/kr/company"
+        },
+        {
+          "title": "Data Clinic",
+          "url": "https://dataclinic.ai/en"
+        },
+        {
+          "title": "Data Clinic 회사 소개",
+          "url": "https://dataclinic.ai/en/pebblous"
+        }
+      ]
+    },
+    {
+      "id": "Bifrost-AI",
+      "company": "Bifrost AI",
+      "sector": "AI·개발 도구",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/합성데이터와로봇평가_Bifrost-AI.md",
+      "checked_on": "2026-11-02",
+      "problem": "드문 장면의 합성 데이터·로봇 평가",
+      "stage_summary": "기존 데이터 사업·새 평가 제품 조기 접근",
+      "sources": [
+        {
+          "title": "Peak XV 소개",
+          "url": "https://surge.peakxv.com/companies/bifrost"
+        },
+        {
+          "title": "Stardust 소개",
+          "url": "https://www.bifrost.ai/stardust/"
+        },
+        {
+          "title": "Manifold 공식 페이지",
+          "url": "https://www.bifrost.ai/manifold/"
+        },
+        {
+          "title": "회사 소개",
+          "url": "https://www.bifrost.ai/company/"
+        }
+      ]
+    },
+    {
+      "id": "Diode-Computers",
+      "company": "Diode Computers",
+      "sector": "AI·개발 도구",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/회로설계와제조_Diode-Computers.md",
+      "checked_on": "2026-11-02",
+      "problem": "코드로 기술한 회로와 설계·제조 연결",
+      "stage_summary": "공개 도구·서비스·공개 시작 가격",
+      "sources": [
+        {
+          "title": "YC 기업 소개",
+          "url": "https://www.ycombinator.com/companies/diode-computers-inc"
+        },
+        {
+          "title": "공식 서비스 소개",
+          "url": "https://www.diode.computer/"
+        },
+        {
+          "title": "공식 코드 저장소",
+          "url": "https://github.com/diodeinc/pcb"
+        }
+      ]
+    },
+    {
+      "id": "bitsensing",
+      "company": "bitsensing",
+      "sector": "센서·의료 신호",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/차량교통과비접촉센싱레이더_bitsensing.md",
+      "checked_on": "2026-11-02",
+      "problem": "차량·교통·비접촉 센싱 레이더",
+      "stage_summary": "전문 센서기업·제품 출시·도로 파일럿",
+      "sources": [
+        {
+          "title": "회사 소개",
+          "url": "https://www.bitsensing.com/about"
+        },
+        {
+          "title": "이재은의 기고, 2020-07-14",
+          "url": "https://times.postech.ac.kr/news/articleView.html?idxno=21264"
+        },
+        {
+          "title": "교통 제품 소개",
+          "url": "https://www.bitsensing.com/solutions/smart-cities"
+        },
+        {
+          "title": "비접촉 센싱 제품",
+          "url": "https://www.bitsensing.com/solutions/healthcare"
+        },
+        {
+          "title": "ADAS Kit 출시 발표",
+          "url": "https://www.bitsensing.com/newsroom/bitsensing-unveils-adas-kit-to-bring-advanced-driver-warning-features-to-upgrade-safety-for-existing-commercial-vehicles"
+        },
+        {
+          "title": "기술 소개",
+          "url": "https://www.bitsensing.com/technology"
+        },
+        {
+          "title": "공식 제품 구성",
+          "url": "https://www.bitsensing.com/"
+        }
+      ]
+    },
+    {
+      "id": "Piramidal",
+      "company": "Piramidal",
+      "sector": "센서·의료 신호",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/뇌파분석파운데이션모델_Piramidal.md",
+      "checked_on": "2026-11-02",
+      "problem": "장시간 뇌파의 사건 후보와 판독 지원",
+      "stage_summary": "후향적 파일럿·제품화, 허가 상태 별도 확인",
+      "sources": [
+        {
+          "title": "회사 홈페이지",
+          "url": "https://piramidal.ai/"
+        },
+        {
+          "title": "YC 소개",
+          "url": "https://www.ycombinator.com/companies/piramidal"
+        },
+        {
+          "title": "자체 협업 소개",
+          "url": "https://consultqd.clevelandclinic.org/harnessing-ai-to-bring-real-time-eeg-interpretation-to-the-icu"
+        }
+      ]
+    },
+    {
+      "id": "Molg",
+      "company": "Molg",
+      "sector": "제조·소재·우주",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/전자제품분해와재사용_Molg.md",
+      "checked_on": "2026-11-02",
+      "problem": "전자제품 분해·부품 재사용과 설계",
+      "stage_summary": "산업 파트너 개념검증·설비 사업화",
+      "sources": [
+        {
+          "title": "Molg 제품 소개",
+          "url": "https://www.molg.ai/"
+        },
+        {
+          "title": "ABB 공식 발표",
+          "url": "https://new.abb.com/news/detail/124038/abb-invests-in-strategic-partnership-with-us-start-up-molg-to-transform-drive-design-and-accelerate-its-contribution-to-the-circular-economy"
+        },
+        {
+          "title": "투자사 발표",
+          "url": "https://www.prnewswire.com/news-releases/molg-raises-5-5-million-in-seed-funding-to-tackle-electronics-waste-through-circular-manufacturing-302271656.html"
+        }
+      ]
+    },
+    {
+      "id": "Furno",
+      "company": "Furno Materials",
+      "sector": "제조·소재·우주",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/모듈형시멘트생산_Furno.md",
+      "checked_on": "2026-11-02",
+      "problem": "작은 반응기를 연결한 시멘트 생산",
+      "stage_summary": "상용 규모 실증·조건부 MOU",
+      "sources": [
+        {
+          "title": "Furno 공식 소개",
+          "url": "https://furno.com/"
+        },
+        {
+          "title": "시드 투자 발표",
+          "url": "https://www.businesswire.com/news/home/20240312564039/en/Furno-Secures-6.5-Million-Seed-Funding-to-Cement-a-Carbon-Neutral-Future"
+        },
+        {
+          "title": "Project OZ 발표",
+          "url": "https://www.businesswire.com/news/home/20241025273931/en/Furno-Materials-Selected-for-20M-DOE-Grant-for-Project-OZ-First-Commercial-Pilot-Plant-for-Low-Carbon-Modular-Cement-Production"
+        },
+        {
+          "title": "Maschmeyer 협력의 조건",
+          "url": "https://www.businesswire.com/news/home/20251217427505/en/Furno-Materials-and-Maschmeyer-Concrete-Partner-to-Pioneer-Onshored-Cement-Production"
+        }
+      ]
+    },
+    {
+      "id": "Sublime-Systems",
+      "company": "Sublime Systems",
+      "sector": "제조·소재·우주",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/전기화학시멘트_Sublime-Systems.md",
+      "checked_on": "2026-11-02",
+      "problem": "전기화학 경로의 시멘트",
+      "stage_summary": "파일럿 생산·실제 현장 타설·상용 확대",
+      "sources": [
+        {
+          "title": "제조 공정 설명",
+          "url": "https://sublime-systems.com/our-process/"
+        },
+        {
+          "title": "STACK 공식 발표",
+          "url": "https://www.stackinfra.com/about/news-press/stack-infrastructure-pilots-first-use-of-electrochemical-low-carbon-cement-in-data-center-construction/"
+        },
+        {
+          "title": "회사 경영진·상용화 발표",
+          "url": "https://sublime-systems.com/sublime-systems-appoints-new-chief-executive-officer-an-executive-chair-and-a-board-member-as-it-continues-to-establish-its-commercial-and-industrial-footprint/"
+        },
+        {
+          "title": "공식 팀 소개",
+          "url": "https://sublime-systems.com/our-team/"
+        }
+      ]
+    },
+    {
+      "id": "Allonnia",
+      "company": "Allonnia",
+      "sector": "제조·소재·우주",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/생물학기반광물처리_Allonnia.md",
+      "checked_on": "2026-11-02",
+      "problem": "생물학적 선택성을 이용한 광물 처리",
+      "stage_summary": "제품별 현장 파일럿·연구 단계 구분",
+      "sources": [
+        {
+          "title": "공식 경영진 소개",
+          "url": "https://allonnia.com/investors-media/"
+        },
+        {
+          "title": "D-Solve 제품 설명",
+          "url": "https://allonnia.com/d-solve/"
+        },
+        {
+          "title": "투자·파일럿 발표",
+          "url": "https://allonnia.com/allonnia-raises-more-than-20-million-to-accelerate-deployment-of-critical-materials-biotechnology/"
+        },
+        {
+          "title": "회사 제품별 현재 단계",
+          "url": "https://allonnia.com/"
+        },
+        {
+          "title": "시험·도입 절차",
+          "url": "https://allonnia.com/about-us/"
+        }
+      ]
+    },
+    {
+      "id": "Space-Forge",
+      "company": "Space Forge",
+      "sector": "제조·소재·우주",
+      "entry_type": "company_analysis",
+      "path": "기업분석_companies/우주결정성장과지상생산_Space-Forge.md",
+      "checked_on": "2026-11-02",
+      "problem": "우주 결정 성장과 지상 재료 제조",
+      "stage_summary": "궤도 핵심 조건 실증·지상 연구",
+      "sources": [
+        {
+          "title": "공식 창업자 소개",
+          "url": "https://www.spaceforge.com/about-us"
+        },
+        {
+          "title": "우주 제조 실증 발표",
+          "url": "https://www.spaceforge.com/press-releases/space-forge-ignites-a-new-industrial-era-delivering-world-first-capability-for-orbital-semiconductor-manufacturing"
+        },
+        {
+          "title": "지상 제조 첫해 발표",
+          "url": "https://www.spaceforge.com/press-releases/forged-on-earth-space-forges-first-year-of-terrestrial-manufacturing"
+        },
+        {
+          "title": "시리즈 A 공식 발표",
+          "url": "https://www.spaceforge.com/press-releases/space-forge-secures-record-breaking-series-a-funding-to-revolutionise-industrial-materials-using-space"
+        }
+      ]
+    },
+    {
+      "id": "The-Robot-Studio",
+      "company": "The Robot Studio",
+      "sector": "비교 사례",
+      "entry_type": "comparison",
+      "path": "비교사례_comparisons/공개로봇설계_The-Robot-Studio.md",
+      "checked_on": "2026-11-02",
+      "problem": "공개 로봇 손·원격조종 설계",
+      "stage_summary": "신설기업과 구분하는 전문 설계 스튜디오",
+      "sources": [
+        {
+          "title": "회사 소개",
+          "url": "https://www.therobotstudio.com/"
+        },
+        {
+          "title": "직접 운영하는 코드·설계 저장소",
+          "url": "https://github.com/TheRobotStudio/HOPEJr"
+        },
+        {
+          "title": "참여 개발자의 LeRobot 글",
+          "url": "https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot"
+        }
+      ]
+    }
+  ]
+}
