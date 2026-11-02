@@ -6,7 +6,7 @@
 
 ## 풀이
 
-길이가 4 또는 6인지 확인하고 모든 문자가 십진 숫자인지 확인
+문자열 길이가 4 또는 6인지 확인하고, 모든 문자가 십진 숫자인지 검사합니다.
 
 ## 코드와 줄별 설명
 
@@ -36,14 +36,14 @@ bool solution(const char* s) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// bool solution(const char* s) {  // 길이가 4 또는 6인지 확인하고 모든 문자가 십진 숫자인지 확인
+// bool solution(const char* s) {  // 문자열 길이가 4 또는 6인지 확인하고, 모든 문자가 십진 숫자인지 검사합니다.
 //     size_t n = strlen(s); if (n != 4 && n != 6) return false;  // 길이가 4나 6이 아니면 바로 false
 //     for (size_t i = 0; i < n; ++i) if (!isdigit((unsigned char)s[i])) return false;  // 숫자가 아닌 문자가 하나라도 있으면 false
 //     return true;  // 끝까지 조건을 지켰으니 성공
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 길이가 4 또는 6인지 확인하고 모든 문자가 십진 숫자인지 확인
+// 문자열 길이가 4 또는 6인지 확인하고, 모든 문자가 십진 숫자인지 검사합니다.
 ```
 
 ## 채점 기록

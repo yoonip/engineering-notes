@@ -6,9 +6,11 @@
 
 ## 풀이
 
-방 번호만으로 방문 처리하면 안 됨; 같은 방도 함정 활성 조합이 다르면 다른 상태로 보고 다익스트라 최단 경로를 계산
-통로 양 끝 함정 중 하나만 활성일 때 역방향; 예제 2처럼 1→2→3→2→4 재방문이 필요할 수 있음
-함정 수 T, 통로 수 E일 때 시간 O((n+E)*2^T*log(n*2^T)), 공간 O(n*2^T+E)
+방 번호와 함정 활성 비트 마스크를 함께 상태로 사용합니다. 같은 방이라도 활성화된 함정이 다르면 가능한 통로 방향이 달라지므로 별도의 거리로 관리합니다.
+
+통로 양 끝 중 한쪽의 함정만 활성화되어 있으면 방향이 뒤집힙니다. 공식 예제 2처럼 `1→2→3→2→4`의 재방문이 필요할 수 있습니다.
+
+함정 수 T, 통로 수 E에 대해 S=n*2^T, A=E*2^T로 두면 시간 O(S+A*log(A+2)), 공간 O(S+A+E)입니다. 거리 갱신마다 새 항목을 넣는 힙에는 아직 꺼내지 않은 이전 비용 항목도 남을 수 있습니다.
 
 ## 코드와 줄별 설명
 
@@ -70,25 +72,25 @@ int solution(int n, int start, int end, int** roads, size_t roads_rows, size_t r
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// typedef struct { int to, cost, next; bool reverse; } Edge;  // 다음 도로까지의 누적 비용를 한 상태로 묶기
+// typedef struct { int to, cost, next; bool reverse; } Edge;  // 목적지·간선 비용·다음 간선 인덱스·역방향 표시를 묶는 구조체
 // typedef struct { long long cost; int node; unsigned mask; } State;  // 다음 도로까지의 누적 비용 / 다음 칸에 들어간 뒤 함정 상태를 한 상태로 묶기
-// typedef struct { State* items; size_t count, capacity; } Heap;  // 저장한 방향 간선 수를 한 상태로 묶기
+// typedef struct { State* items; size_t count, capacity; } Heap;  // 상태 배열·현재 항목 수·할당 용량을 묶는 최소 힙 구조체
 // static void push(Heap* heap, State value) {  // 새 상태를 힙에 넣고 부모 방향으로 자리 찾기
 //     if (heap->count == heap->capacity) { heap->capacity *= 2; heap->items = realloc(heap->items,heap->capacity * sizeof(*heap->items)); }  // 힙이 꽉 찼으면 저장 공간을 두 배로 늘리기
 //     size_t at = heap->count++;  // 힙에서 재배치할 위치 저장
-//     while (at && heap->items[(at - 1) / 2].cost > value.cost) { heap->items[at] = heap->items[(at - 1) / 2]; at = (at - 1) / 2; }  // 힙에 미처리 상태가 남아 있는 동안 우선순위가 가장 높은 상태를 처리
+//     while (at && heap->items[(at - 1) / 2].cost > value.cost) { heap->items[at] = heap->items[(at - 1) / 2]; at = (at - 1) / 2; }  // 부모의 비용이 더 크면 부모를 아래로 옮기고 삽입 위치를 올림
 //     heap->items[at] = value;  // 힙에서 재배치할 위치 / 힙에 내려놓을 상태 확인
 // }  // 이 범위 끝
 // static State pop(Heap* heap) {  // 힙의 첫 값을 꺼내고 마지막 값으로 빈자리 메우기
 //     State result = heap->items[0], value = heap->items[--heap->count]; size_t at = 0;  // 힙에서 꺼낸 최소 비용 상태 / 힙에 내려놓을 상태 / 힙에서 재배치할 위치 저장
-//     while (at * 2 + 1 < heap->count) {  // 힙에 미처리 상태가 남아 있는 동안 우선순위가 가장 높은 상태를 처리
+//     while (at * 2 + 1 < heap->count) {  // 왼쪽 자식이 있는 동안 마지막 원소를 놓을 위치를 아래로 찾음
 //         size_t child = at * 2 + 1; if (child + 1 < heap->count && heap->items[child + 1].cost < heap->items[child].cost) ++child;  // 비용이 더 작은 자식을 골라 힙의 아래 빈자리 찾기
 //         if (heap->items[child].cost >= value.cost) break; heap->items[at] = heap->items[child]; at = child;  // 부모와 자식의 힙 순서가 이미 맞으면 이번 후보 확인을 끝내기
 //     }  // 이 범위 끝
 //     if (heap->count) heap->items[at] = value;  // 꺼낸 뒤 힙이 남아 있으면 마지막 값을 찾은 자리에 넣기
 //     return result;  // 힙에서 꺼낸 최소 비용 상태 반환
 // }  // 이 범위 끝
-// int solution(int n, int start, int end, int** roads, size_t roads_rows, size_t roads_cols, int traps[], size_t traps_len) {  // 방 번호만으로 방문 처리하면 안 됨; 같은 방도 함정 활성 조합이 다르면 다른 상태로 보고 다익스트라 최단 경로를 계산
+// int solution(int n, int start, int end, int** roads, size_t roads_rows, size_t roads_cols, int traps[], size_t traps_len) {  // 방 번호와 함정 활성 비트 마스크를 함께 상태로 사용합니다. 같은 방이라도 활성화된 함정이 다르면 가능한 통로 방향이 달라지므로 별도의 거리로 관리합니다.
 //     (void)roads_cols; size_t states = (size_t)1 << traps_len;  // 함정 활성 조합 수 비트 상태 갱신
 //     unsigned* bits = calloc((size_t)n + 1,sizeof(*bits)); for (size_t i = 0; i < traps_len; ++i) bits[traps[i]] = 1u << i;  // 노드별 함정 비트 / 함정 또는 거리 초기화 위치 공간 확보하고 0으로 시작
 //     int* head = malloc(((size_t)n + 1) * sizeof(*head)); for (int i = 0; i <= n; ++i) head[i] = -1;  // 노드별 첫 원래 또는 역방향 간선 / 함정 또는 거리 초기화 위치 공간 확보
@@ -111,9 +113,9 @@ int solution(int n, int start, int end, int** roads, size_t roads_rows, size_t r
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 방 번호만으로 방문 처리하면 안 됨; 같은 방도 함정 활성 조합이 다르면 다른 상태로 보고 다익스트라 최단 경로를 계산
-// 통로 양 끝 함정 중 하나만 활성일 때 역방향; 예제 2처럼 1→2→3→2→4 재방문이 필요할 수 있음
-// 함정 수 T, 통로 수 E일 때 시간 O((n+E)*2^T*log(n*2^T)), 공간 O(n*2^T+E)
+// 방 번호와 함정 활성 비트 마스크를 함께 상태로 사용합니다. 같은 방이라도 활성화된 함정이 다르면 가능한 통로 방향이 달라지므로 별도의 거리로 관리합니다.
+// 통로 양 끝 중 한쪽의 함정만 활성화되어 있으면 방향이 뒤집힙니다. 공식 예제 2처럼 1→2→3→2→4의 재방문이 필요할 수 있습니다.
+// 함정 수 T, 통로 수 E에 대해 S=n*2^T, A=E*2^T로 두면 시간 O(S+A*log(A+2)), 공간 O(S+A+E)입니다. 거리 갱신마다 새 항목을 넣는 힙에는 아직 꺼내지 않은 이전 비용 항목도 남을 수 있습니다.
 ```
 
 ## 채점 기록

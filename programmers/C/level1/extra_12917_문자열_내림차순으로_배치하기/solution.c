@@ -24,7 +24,7 @@ char* solution(const char* s) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// char* solution(const char* s) {  // 알파벳 문자를 문자 코드의 내림차순으로 배치하기
+// char* solution(const char* s) {  // 문자 코드별 등장 횟수를 센 뒤 큰 문자 코드부터 그 개수만큼 결과에 넣습니다. 문제의 영문자 범위에서는 소문자가 대문자보다 뒤의 문자 코드를 가집니다.
 //     int counts[128] = {0}; size_t n = strlen(s), out = 0;  // 문자 코드별 등장 횟수 / 전체 글자 수 / 내림차순 결과의 다음 위치 저장
 //     for (size_t i = 0; i < n; ++i) ++counts[(unsigned char)s[i]];  // i 순서대로 확인; 문자 코드별 등장 횟수 갱신
 //     char* answer = malloc(n + 1);  // 내림차순 문자열 공간 확보
@@ -34,4 +34,4 @@ char* solution(const char* s) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 알파벳 문자를 문자 코드의 내림차순으로 배치하기
+// 문자 코드별 등장 횟수를 센 뒤 큰 문자 코드부터 그 개수만큼 결과에 넣습니다. 문제의 영문자 범위에서는 소문자가 대문자보다 뒤의 문자 코드를 가집니다.

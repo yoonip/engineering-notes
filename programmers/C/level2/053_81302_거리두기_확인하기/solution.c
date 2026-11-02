@@ -37,7 +37,7 @@ int* solution(const char*** places, size_t places_rows, size_t places_cols) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static int valid(const char** room) {  // 조건을 모두 지키는 구조인지 확인
 //     for (int r = 0; r < 5; ++r) for (int c = 0; c < 5; ++c) {  // 첫 사람 행 순서대로 확인; 첫 사람 열 갱신
@@ -46,7 +46,7 @@ int* solution(const char*** places, size_t places_rows, size_t places_cols) {
 //             if (nr == r && nc <= c) continue;  // 같은 줄에서 앞서 검사한 사람 쌍은 중복 확인하지 않기
 //             if (room[nr][nc] != 'P') continue;  // 둘째 위치도 사람 P인 경우만 거리두기 검사
 //             int distance = abs(r - nr) + abs(c - nc);  // 두 사람의 맨해튼 거리 저장
-//             if (distance == 1) return 0;  // 두 사람의 맨해튼 거리가 1이면 더 이어갈 수 없으면 0
+//             if (distance == 1) return 0;  // 맨해튼 거리가 1인 두 사람이 있으면 거리두기 위반으로 0 반환
 //             if (distance == 2) {  // 두 사람의 맨해튼 거리가 2이면 처리
 //                 if (r == nr && room[r][(c + nc) / 2] != 'X') return 0;  // 가로로 두 칸 떨어졌는데 중간이 파티션이 아니면 거리두기 위반
 //                 if (c == nc && room[(r + nr) / 2][c] != 'X') return 0;  // 세로로 두 칸 떨어졌는데 중간이 파티션이 아니면 거리두기 위반
@@ -56,7 +56,7 @@ int* solution(const char*** places, size_t places_rows, size_t places_cols) {
 //     }  // 이 범위 끝
 //     return 1;  // 검사한 모든 사람 쌍이 거리두기를 지켰으면 1
 // }  // 이 범위 끝
-// int* solution(const char*** places, size_t places_rows, size_t places_cols) {  // 모든 사람 쌍 중 거리 1은 위반, 거리 2는 사이의 경로가 파티션으로 막혔는지 확인
+// int* solution(const char*** places, size_t places_rows, size_t places_cols) {  // 모든 사람 쌍에서 거리가 1이면 위반입니다. 거리가 2이면 두 사람 사이의 최단 경로가 파티션으로 막혔는지 확인합니다.
 //     (void)places_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int* answer = malloc(places_rows * sizeof(*answer));  // 대기실별 거리두기 여부 공간 확보
 //     for (size_t i = 0; i < places_rows; ++i) answer[i] = valid(places[i]);  // 검사할 대기실 번호 순서대로 확인; 대기실별 거리두기 여부 갱신
@@ -64,5 +64,5 @@ int* solution(const char*** places, size_t places_rows, size_t places_cols) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 모든 사람 쌍 중 거리 1은 위반, 거리 2는 사이의 경로가 파티션으로 막혔는지 확인
-// 예: 예제의 둘째 방만 위반해 [1,0,1,1,1]; 한 방의 사람 수 P일 때 시간 O(P²), 공간 O(P); 방 크기는 5×5 고정
+// 모든 사람 쌍에서 거리가 1이면 위반입니다. 거리가 2이면 두 사람 사이의 최단 경로가 파티션으로 막혔는지 확인합니다.
+// 예: 공개 예제의 둘째 방만 위반하므로 [1,0,1,1,1]입니다. 문제의 방 크기 5×5에서는 방 하나의 시간·보조 공간이 O(1)이며, 사람 목록을 별도 저장하지 않습니다. 방 수를 R로 일반화하면 전체 시간과 결과 배열 공간은 O(R)입니다.

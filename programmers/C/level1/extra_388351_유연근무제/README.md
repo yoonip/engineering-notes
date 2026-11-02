@@ -6,7 +6,7 @@
 
 ## 풀이
 
-시각을 분으로 바꾸고 출근 희망 시각에 10분을 더하기; 주말을 제외한 모든 출근 기록이 제한 이내인 직원 수를 세기
+시각을 분으로 바꿔 출근 희망 시각에 10분을 더한 값과 비교합니다. 주말은 제외하고 모든 평일에 허용 시각을 지킨 직원만 셉니다.
 
 ## 코드와 줄별 설명
 
@@ -45,7 +45,7 @@ int solution(int schedules[], size_t schedules_len, int** timelogs, size_t timel
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(int schedules[], size_t schedules_len, int** timelogs, size_t timelogs_rows, size_t timelogs_cols, int startday) {  // 시각을 분으로 바꾸고 출근 희망 시각에 10분을 더하기; 주말을 제외한 모든 출근 기록이 제한 이내인 직원 수를 세기
+// int solution(int schedules[], size_t schedules_len, int** timelogs, size_t timelogs_rows, size_t timelogs_cols, int startday) {  // 시각을 분으로 바꿔 출근 희망 시각에 10분을 더한 값과 비교합니다. 주말은 제외하고 모든 평일에 허용 시각을 지킨 직원만 셉니다.
 //     int answer = 0;  // 이벤트 대상 직원 수 저장
 //     for (size_t i = 0; i < schedules_len; ++i) {  // 검사할 직원 번호 순서대로 확인
 //         int limit = schedules[i] / 100 * 60 + schedules[i] % 100 + 10;  // 희망 출근 시각에 10분 더한 기준 저장
@@ -55,13 +55,13 @@ int solution(int schedules[], size_t schedules_len, int** timelogs, size_t timel
 //             int arrival = timelogs[i][day] / 100 * 60 + timelogs[i][day] % 100;  // 현재 날짜의 출근 시각 저장
 //             if (arrival > limit) { eligible = false; break; }  // 평일 출근이 허용 시각을 넘으면 대상에서 제외하고 이 직원 확인 종료
 //         }  // 이 범위 끝
-//         if (eligible) ++answer;  // 평일을 모두 지킨 직원인지 여부가 남아 있으면 이벤트 대상 직원 수 갱신
+//         if (eligible) ++answer;  // 모든 평일에 허용 출근 시각을 지킨 직원이면 대상자 수 증가
 //     }  // 이 범위 끝
 //     return answer;  // 이벤트 대상 직원 수 반환
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 시각을 분으로 바꾸고 출근 희망 시각에 10분을 더하기; 주말을 제외한 모든 출근 기록이 제한 이내인 직원 수를 세기
+// 시각을 분으로 바꿔 출근 희망 시각에 10분을 더한 값과 비교합니다. 주말은 제외하고 모든 평일에 허용 시각을 지킨 직원만 셉니다.
 ```
 
 ## 채점 기록

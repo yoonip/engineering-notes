@@ -60,15 +60,15 @@ int solution(int depth[], size_t depth_len, int money) {
 //         size_t right = left + size; int best = INT_MAX;  // 남은 후보의 열린 오른쪽 끝 / 이번 구간의 최소 최악 비용 저장
 //         for (size_t middle = left; middle < right; ++middle) {  // 먼저 팔 위치 순서대로 확인
 //             int first = dp[left * stride + middle], second = dp[(middle + 1) * stride + right]; int cost = depth[middle] + (first > second ? first : second);  // 왼쪽으로 갔을 때 비용 / 오른쪽으로 갔을 때 비용 / 현재 위치 비용과 더 비싼 하위 구간 합 저장
-//             if (cost < best) { best = cost; choice[left * stride + right] = (int)middle; }  // 더 싼 굴착 분할점을 찾으면 비용과 실제 선택할 깊이 함께 저장
+//             if (cost < best) { best = cost; choice[left * stride + right] = (int)middle; }  // 더 싼 굴착 분할점을 찾으면 비용과 먼저 팔 열 번호를 함께 저장
 //         }  // 이 범위 끝
 //         dp[left * stride + right] = best;  // 탐색 구간별 최악의 최소 발굴 비용 갱신
 //     }  // 이 범위 끝
 //     size_t left = 0, right = n; int answer = 0;  // 남은 후보의 왼쪽 끝 / 남은 후보의 열린 오른쪽 끝 / 발견한 보물 위치 저장
-//     while (left < right) {  // 굴착 범위가 한 값으로 좁혀질 때까지 선택한 깊이 질의
+//     while (left < right) {  // 보물을 찾을 때까지 DP가 선택한 열을 굴착하고 후보 구간 축소
 //         size_t middle = (size_t)choice[left * stride + right]; int result = excavate((int)middle + 1);  // 먼저 팔 위치 / 발굴 콜백의 방향 응답 저장
-//         if (!result) { answer = (int)middle + 1; break; }  // 발굴 콜백의 방향 응답가 없으면 발견한 보물 위치 갱신
-//         if (result < 0) right = middle; else left = middle + 1;  // 발굴 콜백의 방향 응답가 0보다 작으면 남은 후보의 열린 오른쪽 끝 / 남은 후보의 왼쪽 끝 갱신
+//         if (!result) { answer = (int)middle + 1; break; }  // excavate의 응답이 0이면 보물을 찾은 열을 기록하고 종료
+//         if (result < 0) right = middle; else left = middle + 1;  // 응답이 음수이면 왼쪽 구간, 양수이면 오른쪽 구간으로 후보 축소
 //     }  // 이 범위 끝
 //     free(dp); free(choice);  // 탐색 구간별 최악의 최소 발굴 비용 / 각 구간에서 먼저 팔 위치 임시 공간 정리
 //     return answer;  // 발견한 보물 위치 반환

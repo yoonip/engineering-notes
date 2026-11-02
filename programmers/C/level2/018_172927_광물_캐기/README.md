@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/172927) · Level 2 · C
 
-## 풀이
+광물을 순서대로 다섯 개씩 묶고, 각 묶음에 사용할 곡괭이를 선택합니다. 남은 곡괭이 수가 같은 상태의 결과는 메모이제이션으로 재사용합니다.
 
-광물을 순서대로 다섯 개씩 묶고, 각 묶음에 쓸 곡괭이를 모두 선택해 보기; 남은 수가 같은 상태는 캐시로 재사용
-
-예: 첫 묶음은 다이아, 나머지는 철 곡괭이를 쓰면 12; 묶음 수 B, 초기 곡괭이 수 D,I,S일 때 시간·공간 O(B(D+1)(I+1)(S+1))
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 첫 공개 예제에서 첫 묶음은 다이아, 나머지는 철 곡괭이를 쓰면 피로도는 12입니다. 광물 M개, 묶음 B개, 초기 곡괭이 수 D,I,S에 대해 Z=(D+1)(I+1)(S+1)로 두면 시간은 O(M+Z), 공간은 O(B+Z)입니다. 처리한 묶음 번호는 초기 곡괭이 총수에서 남은 총수를 빼서 구하므로 별도 상태 차원이 필요하지 않습니다.
 
 ```c
 #include <stdio.h>
@@ -58,7 +52,7 @@ int solution(int picks[], size_t picks_len, const char* minerals[], size_t miner
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // typedef struct { int (*blocks)[3]; size_t count; int initial; int b_size; int c_size; int* memo; } Context;  // 묶음별 곡괭이 종류에 따른 피로도 / 광물 묶음 수 / 남은 곡괭이 조합별 최소 피로도를 한 상태로 묶기
 // static int search(Context* ctx, int a, int b, int c) {  // 남은 세 종류 곡괭이 수를 상태로 최소 피로도 탐색
@@ -73,7 +67,7 @@ int solution(int picks[], size_t picks_len, const char* minerals[], size_t miner
 //     ctx->memo[key] = best;  // 남은 곡괭이 조합별 최소 피로도 갱신
 //     return best;  // 앞으로 캘 때 최소 피로도 반환
 // }  // 이 범위 끝
-// int solution(int picks[], size_t picks_len, const char* minerals[], size_t minerals_len) {  // 광물을 순서대로 다섯 개씩 묶고, 각 묶음에 쓸 곡괭이를 모두 선택해 보기; 남은 수가 같은 상태는 캐시로 재사용
+// int solution(int picks[], size_t picks_len, const char* minerals[], size_t minerals_len) {  // 광물을 순서대로 다섯 개씩 묶고, 각 묶음에 사용할 곡괭이를 선택합니다. 남은 곡괭이 수가 같은 상태의 결과는 메모이제이션으로 재사용합니다.
 //     (void)picks_len;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     size_t count = (minerals_len + 4) / 5; int (*blocks)[3] = calloc(count, sizeof(*blocks));  // 다섯 개씩 묶을 광물 묶음 수를 구하고 묶음별 세 곡괭이의 피로도 배열을 0으로 초기화
 //     for (size_t i = 0; i < minerals_len; ++i) {  // 광물 또는 메모 위치 순서대로 확인
@@ -89,8 +83,8 @@ int solution(int picks[], size_t picks_len, const char* minerals[], size_t miner
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 광물을 순서대로 다섯 개씩 묶고, 각 묶음에 쓸 곡괭이를 모두 선택해 보기; 남은 수가 같은 상태는 캐시로 재사용
-// 예: 첫 묶음은 다이아, 나머지는 철 곡괭이를 쓰면 12; 묶음 수 B, 초기 곡괭이 수 D,I,S일 때 시간·공간 O(B(D+1)(I+1)(S+1))
+// 광물을 순서대로 다섯 개씩 묶고, 각 묶음에 사용할 곡괭이를 선택합니다. 남은 곡괭이 수가 같은 상태의 결과는 메모이제이션으로 재사용합니다.
+// 예: 첫 공개 예제에서 첫 묶음은 다이아, 나머지는 철 곡괭이를 쓰면 피로도는 12입니다. 광물 M개, 묶음 B개, 초기 곡괭이 수 D,I,S에 대해 Z=(D+1)(I+1)(S+1)로 두면 시간은 O(M+Z), 공간은 O(B+Z)입니다. 처리한 묶음 번호는 초기 곡괭이 총수에서 남은 총수를 빼서 구하므로 별도 상태 차원이 필요하지 않습니다.
 ```
 
 ## 채점 기록

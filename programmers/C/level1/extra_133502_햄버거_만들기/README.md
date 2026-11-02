@@ -6,7 +6,7 @@
 
 ## 풀이
 
-재료를 스택에 쌓기; 끝의 네 재료가 1·2·3·1이면 제거하고 완성한 햄버거 수를 늘리기
+재료를 스택에 쌓다가 끝의 네 재료가 1·2·3·1이면 제거하고 햄버거 수를 늘립니다. 다음 재료도 남은 스택에서 같은 방식으로 처리합니다.
 
 ## 코드와 줄별 설명
 
@@ -40,7 +40,7 @@ int solution(int ingredient[], size_t ingredient_len) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(int ingredient[], size_t ingredient_len) {  // 재료를 스택에 쌓기; 끝의 네 재료가 1·2·3·1이면 제거하고 완성한 햄버거 수를 늘리기
+// int solution(int ingredient[], size_t ingredient_len) {  // 재료를 스택에 쌓다가 끝의 네 재료가 1·2·3·1이면 제거하고 햄버거 수를 늘립니다. 다음 재료도 남은 스택에서 같은 방식으로 처리합니다.
 //     int* stack = malloc(ingredient_len * sizeof(int)); size_t length = 0; int answer = 0;  // 아직 햄버거로 빼지 않은 재료 / 쌓인 재료 수 / 완성해서 뺀 햄버거 수 공간 확보
 //     for (size_t i = 0; i < ingredient_len; ++i) {  // 다음 재료 위치 순서대로 확인
 //         stack[length++] = ingredient[i];  // 아직 햄버거로 빼지 않은 재료 갱신
@@ -51,7 +51,7 @@ int solution(int ingredient[], size_t ingredient_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 재료를 스택에 쌓기; 끝의 네 재료가 1·2·3·1이면 제거하고 완성한 햄버거 수를 늘리기
+// 재료를 스택에 쌓다가 끝의 네 재료가 1·2·3·1이면 제거하고 햄버거 수를 늘립니다. 다음 재료도 남은 스택에서 같은 방식으로 처리합니다.
 ```
 
 ## 채점 기록

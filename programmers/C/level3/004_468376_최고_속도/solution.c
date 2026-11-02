@@ -159,7 +159,7 @@ int* solution(int** city, size_t city_rows, size_t city_cols, int** road, size_t
 // typedef struct { int to, limit, next; } Edge;  // 현재 카메라의 제한 속도를 한 상태로 묶기
 // typedef struct { int node, speed; } State;  // 다음 연결을 지난 뒤 가능한 속도를 한 상태로 묶기
 //
-// static int compare_camera(const void* a, const void* b) {  // 첫 조각 대표 / 둘째 조각 대표 계산용 함수
+// static int compare_camera(const void* a, const void* b) {  // 카메라를 x좌표, 같은 x에서는 y좌표 순으로 비교
 //     const Camera* x = a; const Camera* y = b;  // void 포인터를 카메라 구조체 포인터로 해석하기
 //     if (x->x != y->x) return (x->x > y->x) - (x->x < y->x);  // x좌표가 다르면 x좌표 순서를 반환
 //     return (x->y > y->y) - (x->y < y->y);  // 교차점 x좌표 / 교차점 y좌표로 최종값 계산
@@ -207,7 +207,7 @@ int* solution(int** city, size_t city_rows, size_t city_cols, int** road, size_t
 // static State heap_pop(State* heap, int* count) {  // 현재 속도가 가장 큰 상태를 꺼내기
 //     State result = heap[1], last = heap[(*count)--];  // 루트와 마지막 상태를 보관하고 크기를 줄이기
 //     int parent = 1;  // 마지막 상태를 내릴 위치를 루트로 초기화
-//     while (parent * 2 <= *count) {  // 자식 상태가 있으면 힙 순서를 복계산
+//     while (parent * 2 <= *count) {  // 자식이 있는 동안 큰 속도가 위에 오도록 힙 순서를 복구
 //         int child = parent * 2;  // 왼쪽 자식을 선택
 //         if (child < *count && heap[child + 1].speed > heap[child].speed) ++child;  // 두 자식 중 속도가 더 큰 쪽을 선택
 //         if (heap[child].speed <= last.speed) break;  // 마지막 상태가 자식보다 크거나 같으면 이동을 끝
@@ -303,5 +303,5 @@ int* solution(int** city, size_t city_rows, size_t city_cols, int** road, size_t
 
 // 풀이 요약
 // 모든 카메라 지점에서 도로를 자르고, 카메라가 없는 교점으로 이어진 조각은 서로소 집합으로 합치기; 카메라가 교점에 있어도 우회해 무료 통과하지 않도록 그 지점은 합치지 않음
-// 카메라 간선만 남은 그래프에서 경로의 최소 제한을 최대화하는 우선순위 탐색을 하기; 도로 수 M에 대해 전처리 O(M² log M), 압축 그래프 공간 O(M)
+// 카메라 간선만 남은 그래프에서 경로의 최소 제한을 최대화하는 우선순위 탐색을 하기; 도시 수 N·도로 수 M에서 도로 전처리는 O(M² log M), 도시 위치 탐색은 O(NM)입니다. 이 C 구현은 조각·연결 배열을 상한으로 미리 할당하므로 보조 공간은 O(M²+N)입니다
 // 예: 제한 80·70을 지나는 경로는 70까지 가능하며, 제한 45를 지나는 경로보다 좋음; 카메라 없는 연결 집합에 목적 도시가 있으면 0

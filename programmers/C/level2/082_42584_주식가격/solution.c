@@ -29,9 +29,9 @@ int* solution(int prices[], size_t prices_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int* solution(int prices[], size_t prices_len) {  // 가격 하락을 기다리는 시점들을 스택에 모으고, 더 낮은 가격이 오면 해당 시점들의 기간을 확정하기; 끝까지 남으면 마지막 초까지의 기간
+// int* solution(int prices[], size_t prices_len) {  // 가격 하락을 기다리는 시점들을 스택에 모으고, 더 낮은 가격이 오면 해당 시점의 기간을 확정합니다. 끝까지 남으면 마지막 초까지의 기간입니다.
 //     int* answer = malloc(prices_len * sizeof(*answer));  // 각 가격이 떨어지기까지의 시간 공간 확보
 //     size_t* stack = malloc(prices_len * sizeof(*stack));  // 아직 하락 시점을 못 찾은 인덱스 공간 확보
 //     size_t top = 0;  // 스택에 쌓인 가격 수 저장
@@ -48,5 +48,5 @@ int* solution(int prices[], size_t prices_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 가격 하락을 기다리는 시점들을 스택에 모으고, 더 낮은 가격이 오면 해당 시점들의 기간을 확정하기; 끝까지 남으면 마지막 초까지의 기간
-// 예: [1,2,3,2,3]의 3은 1초 뒤 하락해 [4,3,1,1,0]; 시간·공간 O(N)
+// 가격 하락을 기다리는 시점들을 스택에 모으고, 더 낮은 가격이 오면 해당 시점의 기간을 확정합니다. 끝까지 남으면 마지막 초까지의 기간입니다.
+// 예: [1,2,3,2,3]에서 세 번째 가격 3은 1초 뒤 하락하므로 답은 [4,3,1,1,0]입니다. 가격 N개에 대해 시간·공간은 O(N)입니다.

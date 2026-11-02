@@ -4,14 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/388352) · Level 2 · C
 
-## 풀이
+1부터 n까지 서로 다른 5개를 고른 모든 조합을 확인합니다. 각 시도와의 교집합 크기가 ans와 모두 같으면 정답 후보입니다.
 
-1..n에서 서로 다른 5개를 고른 모든 조합을 확인; 각 시도와의 교집합 크기가 ans와 모두 같으면 정답 후보
-예: 후보 {1,2,3,4,5}, 시도 {1,2,6,7,8}의 일치 개수는 2; 시간 O(nC5*시도 수), 집합 크기는 5로 고정
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 후보 {1,2,3,4,5}와 시도 {1,2,6,7,8}의 일치 개수는 2입니다. 집합 크기는 5로 고정되며 시간은 O(nC5*시도 수)입니다.
 
 ```c
 #include <stdio.h>
@@ -45,9 +40,9 @@ int solution(int n, int** q, size_t q_rows, size_t q_cols, int ans[], size_t ans
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(int n, int** q, size_t q_rows, size_t q_cols, int ans[], size_t ans_len) {  // 1..n에서 서로 다른 5개를 고른 모든 조합을 확인; 각 시도와의 교집합 크기가 ans와 모두 같으면 정답 후보
+// int solution(int n, int** q, size_t q_rows, size_t q_cols, int ans[], size_t ans_len) {  // 1부터 n까지 서로 다른 5개를 고른 모든 조합을 확인합니다. 각 시도와의 교집합 크기가 ans와 모두 같으면 정답 후보입니다.
 //     (void)ans_len;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int answer = 0;  // 응답을 모두 만족하는 비밀 코드 수 저장
 //     for (int a = 1; a <= n - 4; ++a) for (int b = a + 1; b <= n - 3; ++b)  // 첫 비밀 숫자 순서대로 확인; 둘째 비밀 숫자 갱신
@@ -64,8 +59,8 @@ int solution(int n, int** q, size_t q_rows, size_t q_cols, int ans[], size_t ans
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 1..n에서 서로 다른 5개를 고른 모든 조합을 확인; 각 시도와의 교집합 크기가 ans와 모두 같으면 정답 후보
-// 예: 후보 {1,2,3,4,5}, 시도 {1,2,6,7,8}의 일치 개수는 2; 시간 O(nC5*시도 수), 집합 크기는 5로 고정
+// 1부터 n까지 서로 다른 5개를 고른 모든 조합을 확인합니다. 각 시도와의 교집합 크기가 ans와 모두 같으면 정답 후보입니다.
+// 예: 후보 {1,2,3,4,5}와 시도 {1,2,6,7,8}의 일치 개수는 2입니다. 집합 크기는 5로 고정되며 시간은 O(nC5*시도 수)입니다.
 ```
 
 ## 채점 기록

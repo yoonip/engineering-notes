@@ -23,7 +23,7 @@ char* solution(int num) { return copy_text(num % 2 == 0 ? "Even" : "Odd"); }
 // static char* copy_text(const char* text) {  // 문자열을 새 공간에 복사해서 돌려주기
 //     char* result = malloc(strlen(text) + 1); strcpy(result, text); return result;  // Even 또는 Odd 문자열 사본 공간 확보
 // }  // 이 범위 끝
-// char* solution(int num) { return copy_text(num % 2 == 0 ? "Even" : "Odd"); }  // 2로 나눈 나머지가 0이면 Even, 아니면 Odd를 반환
+// char* solution(int num) { return copy_text(num % 2 == 0 ? "Even" : "Odd"); }  // 2로 나눈 나머지가 0이면 Even, 아니면 Odd를 반환합니다.
 
 // 풀이 요약
-// 2로 나눈 나머지가 0이면 Even, 아니면 Odd를 반환
+// 2로 나눈 나머지가 0이면 Even, 아니면 Odd를 반환합니다.

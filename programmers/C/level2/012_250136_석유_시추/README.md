@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/250136) · Level 2 · C
 
-## 풀이
+연결된 석유를 큐로 탐색하여 크기와 걸친 열을 구합니다. 그 크기를 해당 열마다 한 번씩 더합니다.
 
-연결된 석유를 큐로 탐색해 크기와 걸친 열 구하기; 덩어리 크기를 해당 열마다 한 번씩 더하기
-
-예: 7번 열이 크기 7과 2 덩어리를 지나면 9; 각 덩어리는 열마다 한 번만 더하기; 시간·공간 O(행*열)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 시추할 열이 크기 7과 2인 덩어리를 지나면 합은 9입니다. 각 덩어리는 한 열에 한 번만 더하며 시간·공간은 O(행*열)입니다.
 
 ```c
 #include <stdio.h>
@@ -55,9 +49,9 @@ int solution(int** land, size_t land_rows, size_t land_cols) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(int** land, size_t land_rows, size_t land_cols) {  // 연결된 석유를 큐로 탐색해 크기와 걸친 열 구하기; 덩어리 크기를 해당 열마다 한 번씩 더하기
+// int solution(int** land, size_t land_rows, size_t land_cols) {  // 연결된 석유를 큐로 탐색하여 크기와 걸친 열을 구합니다. 그 크기를 해당 열마다 한 번씩 더합니다.
 //     int rows = (int)land_rows, cols = (int)land_cols;  // 행 수 / 열 수 저장
 //     bool* visited = calloc(land_rows * land_cols, sizeof(*visited)); int* queue = malloc(land_rows * land_cols * sizeof(*queue));  // 이미 확인한 석유 칸 / 현재 석유 덩어리의 칸 공간 확보하고 0으로 시작
 //     int* totals = calloc(land_cols, sizeof(*totals)); const int dr[4] = {1,-1,0,0}, dc[4] = {0,0,1,-1};  // 열별 시추 가능한 총석유량 / 행 이동 / 열 이동 공간 확보하고 0으로 시작
@@ -83,8 +77,8 @@ int solution(int** land, size_t land_rows, size_t land_cols) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 연결된 석유를 큐로 탐색해 크기와 걸친 열 구하기; 덩어리 크기를 해당 열마다 한 번씩 더하기
-// 예: 7번 열이 크기 7과 2 덩어리를 지나면 9; 각 덩어리는 열마다 한 번만 더하기; 시간·공간 O(행*열)
+// 연결된 석유를 큐로 탐색하여 크기와 걸친 열을 구합니다. 그 크기를 해당 열마다 한 번씩 더합니다.
+// 예: 시추할 열이 크기 7과 2인 덩어리를 지나면 합은 9입니다. 각 덩어리는 한 열에 한 번만 더하며 시간·공간은 O(행*열)입니다.
 ```
 
 ## 채점 기록

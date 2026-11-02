@@ -27,7 +27,7 @@ int* solution(int k, int score[], size_t score_len) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int* solution(int k, int score[], size_t score_len) {  // 매일까지의 상위 k개 점수를 유지하고 그중 최솟값을 기록; C는 정렬된 배열을, C++는 최소 힙을 사용
+// int* solution(int k, int score[], size_t score_len) {  // 배열에 지금까지의 상위 k개 점수를 유지합니다. 덜 찼으면 추가하고, 가득 찼으면 최하위보다 높은 점수만 교체합니다. 삽입 정렬로 순서를 맞춘 뒤 최솟값을 그날의 발표 점수로 기록합니다.
 //     int* hall = malloc(k * sizeof(int)); size_t length = 0;  // 오름차순 명예의 전당 점수 / 현재 전당에 들어간 점수 수 공간 확보
 //     int* answer = malloc(score_len * sizeof(int));  // 날짜별 전당 최저 점수 공간 확보
 //     for (size_t i = 0; i < score_len; ++i) {  // 오늘 점수 위치 순서대로 확인
@@ -40,4 +40,4 @@ int* solution(int k, int score[], size_t score_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 매일까지의 상위 k개 점수를 유지하고 그중 최솟값을 기록; C는 정렬된 배열을, C++는 최소 힙을 사용
+// 배열에 지금까지의 상위 k개 점수를 유지합니다. 덜 찼으면 추가하고, 가득 찼으면 최하위보다 높은 점수만 교체합니다. 삽입 정렬로 순서를 맞춘 뒤 최솟값을 그날의 발표 점수로 기록합니다.

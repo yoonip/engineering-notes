@@ -6,7 +6,7 @@
 
 ## 풀이
 
-현재 위치가 오프닝 구간이면 끝으로 건너뛰기; 각 명령마다 10초 이동과 영상 범위 제한을 적용한 뒤 오프닝을 다시 확인
+분:초 표기를 초로 바꿔 계산합니다. 시작 위치와 각 명령 이후의 위치가 오프닝 구간이면 끝으로 건너뛰며, 10초 이동은 영상 범위 안으로 제한합니다.
 
 ## 코드와 줄별 설명
 
@@ -48,12 +48,12 @@ char* solution(const char* video_len, const char* pos, const char* op_start, con
 // static int seconds_of(const char* time) {  // 분:초 표기를 전체 초 수로 바꾸기
 //     int minutes, seconds; sscanf(time, "%d:%d", &minutes, &seconds); return minutes * 60 + seconds;  // 분과 초를 읽어 전체 초 수로 환산
 // }  // 이 범위 끝
-// char* solution(const char* video_len, const char* pos, const char* op_start, const char* op_end, const char* commands[], size_t commands_len) {  // 현재 위치가 오프닝 구간이면 끝으로 건너뛰기; 각 명령마다 10초 이동과 영상 범위 제한을 적용한 뒤 오프닝을 다시 확인
+// char* solution(const char* video_len, const char* pos, const char* op_start, const char* op_end, const char* commands[], size_t commands_len) {  // 분:초 표기를 초로 바꿔 계산합니다. 시작 위치와 각 명령 이후의 위치가 오프닝 구간이면 끝으로 건너뛰며, 10초 이동은 영상 범위 안으로 제한합니다.
 //     int end = seconds_of(video_len), current = seconds_of(pos), opening = seconds_of(op_start), closing = seconds_of(op_end);  // 동영상 끝 시각 / 현재 재생 시각 / 오프닝 시작 / 오프닝 끝 저장
 //     if (opening <= current && current <= closing) current = closing;  // 현재 시각이 오프닝 안이면 오프닝 끝으로 건너뛰기
 //     for (size_t i = 0; i < commands_len; ++i) {  // 재생 명령 위치 순서대로 확인
-//         current += strcmp(commands[i], "prev") == 0 ? -10 : 10;  // 현재 재생 시각 / 재생 명령 위치 더해 누적
-//         if (current < 0) current = 0; if (current > end) current = end;  // 현재 재생 시각가 0보다 작으면 현재 재생 시각 갱신
+//         current += strcmp(commands[i], "prev") == 0 ? -10 : 10;  // prev 명령이면 10초를 빼고 next 명령이면 10초를 더함
+//         if (current < 0) current = 0; if (current > end) current = end;  // 재생 위치가 0초보다 작으면 0초, 영상 끝보다 크면 끝 시각으로 제한
 //         if (opening <= current && current <= closing) current = closing;  // 현재 시각이 오프닝 안이면 오프닝 끝으로 건너뛰기
 //     }  // 이 범위 끝
 //     char* answer = malloc(6); sprintf(answer, "%02d:%02d", current / 60, current % 60);  // 분과 초로 바꾼 최종 시각 공간 확보
@@ -61,7 +61,7 @@ char* solution(const char* video_len, const char* pos, const char* op_start, con
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 현재 위치가 오프닝 구간이면 끝으로 건너뛰기; 각 명령마다 10초 이동과 영상 범위 제한을 적용한 뒤 오프닝을 다시 확인
+// 분:초 표기를 초로 바꿔 계산합니다. 시작 위치와 각 명령 이후의 위치가 오프닝 구간이면 끝으로 건너뛰며, 10초 이동은 영상 범위 안으로 제한합니다.
 ```
 
 ## 채점 기록

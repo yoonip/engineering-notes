@@ -60,7 +60,7 @@ int solution(const char* babbling[], size_t babbling_len) {
 //             for (int j = 0; j < 4; ++j) {  // 허용 발음의 번호 j를 0부터 3까지 순회
 //                 size_t len = strlen(sounds[j]);  // 현재 후보 발음 sounds[j]의 문자 수를 len에 저장
 //                 if (!(used & (1u << j)) && strncmp(p, sounds[j], len) == 0) {  // 해당 발음을 아직 사용하지 않았고 남은 문자열의 앞 len글자가 일치할 때만 선택
-//                     p += len; used |= 1u << j; matched = true; break;  // 일치한 길이만큼 p를 옮기고 발음 사용 비트를 켠 뒤 성공을 기록하고 후보 탐색을 끝
+//                     p += len; used |= 1u << j; matched = true; break;  // 일치한 길이만큼 p를 옮기고 발음 사용 비트를 켠 뒤 성공을 기록하고 후보 탐색을 끝냅니다.
 //                 }  // 블록 끝
 //             }  // 블록 끝
 //             if (!matched) break;  // 어떤 발음도 일치하지 않으면 더 읽을 수 없으므로 현재 문자열의 처리를 중단

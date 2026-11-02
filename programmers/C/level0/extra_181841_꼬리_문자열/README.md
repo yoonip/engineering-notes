@@ -50,7 +50,7 @@ char* solution(const char* str_list[], size_t str_list_len, const char* ex) {
 //         memcpy(answer + out, str_list[i], n);  // answer + out 위치에 현재 문자열의 문자 n개를 memcpy로 복사
 //         out += n;  // 복사한 길이 n만큼 out을 늘려 다음 문자열을 붙일 위치로 이동
 //     }  // 블록 끝
-//     answer[out] = '\0';  // 마지막 복사 위치에 널 문자를 넣어 결과를 유효한 C 문자열로 끝
+//     answer[out] = '\0';  // 마지막 복사 위치에 널 문자를 넣어 결과를 유효한 C 문자열로 끝냅니다.
 //     return answer;  // 완성한 결과 반환
 // }  // 블록 끝
 

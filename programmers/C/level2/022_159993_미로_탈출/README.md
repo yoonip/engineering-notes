@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/159993) · Level 2 · C
 
-## 풀이
+시작→레버와 레버→출구의 최단 거리를 각각 BFS로 구해 더합니다. 어느 한 경로라도 없으면 탈출할 수 없습니다.
 
-시작→레버와 레버→출구의 최단 거리를 각각 BFS로 구해 더하기; 어느 한 경로라도 없으면 탈출 불가
-
-예: 첫 미로는 4+12=16초; 레버 전에도 출구 칸은 통과할 수 있음; 시간·공간 O(행*열)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 첫 공개 미로는 시작→레버 4초, 레버→출구 12초로 총 16초입니다. 레버를 당기기 전에도 출구 칸은 통과할 수 있습니다. 시간·공간은 O(행*열)입니다.
 
 ```c
 #include <stdio.h>
@@ -58,7 +52,7 @@ int solution(const char* maps[], size_t maps_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static int bfs(const char** maps, int rows, int cols, int start, int goal) {  // 큐를 사용하여 시작점부터 목표점까지의 최단 거리를 구하는 보조 함수를 정의하기
 //     int* distance = malloc((size_t)rows * cols * sizeof(*distance)); int* queue = malloc((size_t)rows * cols * sizeof(*queue));  // 시작점부터의 최단 거리 / 갈 수 있는 미로 칸 공간 확보
@@ -75,9 +69,9 @@ int solution(const char* maps[], size_t maps_len) {
 //         }  // 이 범위 끝
 //     }  // 이 범위 끝
 //     int answer = distance[goal]; free(distance); free(queue);  // 필요한 결과를 먼저 보관하고 임시 배열 정리
-//     return answer;  // 레버를 거치는 최소 이동 수 반환
+//     return answer;  // 이 호출의 start에서 goal까지 최단 거리 반환; 도달할 수 없으면 -1
 // }  // 이 범위 끝
-// int solution(const char* maps[], size_t maps_len) {  // 시작→레버와 레버→출구의 최단 거리를 각각 BFS로 구해 더하기; 어느 한 경로라도 없으면 탈출 불가
+// int solution(const char* maps[], size_t maps_len) {  // 시작→레버와 레버→출구의 최단 거리를 각각 BFS로 구해 더합니다. 어느 한 경로라도 없으면 탈출할 수 없습니다.
 //     int rows = (int)maps_len, cols = (int)strlen(maps[0]), start = 0, lever = 0, exit = 0;  // 미로 행 수 / 미로 열 수 / 시작점 S / 레버 L / 출구 E 저장
 //     for (int r = 0; r < rows; ++r) for (int c = 0; c < cols; ++c) {  // 현재 행 순서대로 확인; 현재 열 갱신
 //         if (maps[r][c] == 'S') start = r * cols + c;  // S 칸의 일차원 위치를 시작점으로 기록
@@ -89,8 +83,8 @@ int solution(const char* maps[], size_t maps_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 시작→레버와 레버→출구의 최단 거리를 각각 BFS로 구해 더하기; 어느 한 경로라도 없으면 탈출 불가
-// 예: 첫 미로는 4+12=16초; 레버 전에도 출구 칸은 통과할 수 있음; 시간·공간 O(행*열)
+// 시작→레버와 레버→출구의 최단 거리를 각각 BFS로 구해 더합니다. 어느 한 경로라도 없으면 탈출할 수 없습니다.
+// 예: 첫 공개 미로는 시작→레버 4초, 레버→출구 12초로 총 16초입니다. 레버를 당기기 전에도 출구 칸은 통과할 수 있습니다. 시간·공간은 O(행*열)입니다.
 ```
 
 ## 채점 기록

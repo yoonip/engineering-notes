@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/86971) · Level 2 · C
 
-## 풀이
+자식으로 가는 전선을 끊으면 자식 부분 트리 s개와 나머지 n-s개로 나뉩니다. 모든 간선에서 |n-2s|를 비교합니다.
 
-자식으로 가는 전선을 끊으면 자식 부분 트리 s개와 나머지 n-s개로 나뉨; 모든 간선의 |n-2s|를 비교
-
-예: 일자형 4개 송전탑은 가운데 전선을 끊어 2:2, 차이 0; 시간·공간 O(N)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 일자형 4개 송전탑은 가운데 전선을 끊으면 2:2로 나뉘어 차이가 0입니다. 이 코드는 인접행렬을 저장하고 각 노드에서 모든 노드 번호를 확인하므로 시간·공간은 O(N²)입니다.
 
 ```c
 #include <stdio.h>
@@ -47,7 +41,7 @@ int solution(int n, int** wires, size_t wires_rows, size_t wires_cols) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static int walk(int node, int parent, int n, const bool* graph, int* best) {  // 자식 서브트리 크기로 전력망 분리 차이 확인
 //     int size = 1;  // 현재 서브트리 크기 저장
@@ -58,7 +52,7 @@ int solution(int n, int** wires, size_t wires_rows, size_t wires_cols) {
 //     }  // 이 범위 끝
 //     return size;  // 현재 서브트리 크기 반환
 // }  // 이 범위 끝
-// int solution(int n, int** wires, size_t wires_rows, size_t wires_cols) {  // 자식으로 가는 전선을 끊으면 자식 부분 트리 s개와 나머지 n-s개로 나뉨; 모든 간선의 |n-2s|를 비교
+// int solution(int n, int** wires, size_t wires_rows, size_t wires_cols) {  // 자식으로 가는 전선을 끊으면 자식 부분 트리 s개와 나머지 n-s개로 나뉩니다. 모든 간선에서 |n-2s|를 비교합니다.
 //     (void)wires_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     bool* graph = calloc((size_t)(n + 1) * (n + 1), sizeof(*graph));  // 송전탑 연결 여부 공간 확보하고 0으로 시작
 //     for (size_t i = 0; i < wires_rows; ++i) graph[wires[i][0] * (n + 1) + wires[i][1]] = graph[wires[i][1] * (n + 1) + wires[i][0]] = true;  // 송전선 위치 순서대로 확인; 송전탑 연결 여부 / 송전선 위치 확인
@@ -67,8 +61,8 @@ int solution(int n, int** wires, size_t wires_rows, size_t wires_cols) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 자식으로 가는 전선을 끊으면 자식 부분 트리 s개와 나머지 n-s개로 나뉨; 모든 간선의 |n-2s|를 비교
-// 예: 일자형 4개 송전탑은 가운데 전선을 끊어 2:2, 차이 0; 시간·공간 O(N)
+// 자식으로 가는 전선을 끊으면 자식 부분 트리 s개와 나머지 n-s개로 나뉩니다. 모든 간선에서 |n-2s|를 비교합니다.
+// 예: 일자형 4개 송전탑은 가운데 전선을 끊으면 2:2로 나뉘어 차이가 0입니다. 이 코드는 인접행렬을 저장하고 각 노드에서 모든 노드 번호를 확인하므로 시간·공간은 O(N²)입니다.
 ```
 
 ## 채점 기록

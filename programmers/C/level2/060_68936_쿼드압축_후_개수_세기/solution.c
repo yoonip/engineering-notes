@@ -30,19 +30,19 @@ int* solution(int** arr, size_t arr_rows, size_t arr_cols) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static void compress(int** arr, int row, int col, int size, int* answer) {  // 한 영역이 같으면 압축, 다르면 네 부분으로 분할
 //     int value = arr[row][col]; bool uniform = true;  // 영역의 기준 숫자 / 영역이 모두 같은지 여부 저장
 //     for (int r = row; r < row + size && uniform; ++r)  // 검사할 행 순서대로 확인
 //         for (int c = col; c < col + size; ++c)  // 검사할 열 순서대로 확인
 //             if (arr[r][c] != value) { uniform = false; break; }  // 기준 칸과 다른 값이 있으면 한 덩어리로 압축할 수 없음
-//     if (uniform) { ++answer[value]; return; }  // 영역이 모두 같은지 여부가 남아 있으면 압축 후 0과 1의 개수 갱신
+//     if (uniform) { ++answer[value]; return; }  // 영역이 모두 같은 값이면 해당 0 또는 1의 압축 개수를 하나 늘리고 반환
 //     int half = size / 2;  // 나눈 영역의 한 변 저장
 //     compress(arr, row, col, half, answer); compress(arr, row, col + half, half, answer);  // 영역을 네 부분으로 나누어 같은 압축 검사를 재귀적으로 적용하기
 //     compress(arr, row + half, col, half, answer); compress(arr, row + half, col + half, half, answer);  // 영역을 네 부분으로 나누어 같은 압축 검사를 재귀적으로 적용하기
 // }  // 이 범위 끝
-// int* solution(int** arr, size_t arr_rows, size_t arr_cols) {  // 영역 값이 모두 같으면 한 개로 세고, 다르면 네 사분면으로 나눠 같은 규칙을 재귀 적용하기
+// int* solution(int** arr, size_t arr_rows, size_t arr_cols) {  // 영역 값이 모두 같으면 하나로 세고, 다르면 네 사분면으로 나누어 같은 규칙을 재귀 적용합니다.
 //     (void)arr_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int* answer = calloc(2, sizeof(*answer));  // 압축 후 0과 1의 개수 공간 확보하고 0으로 시작
 //     compress(arr, 0, 0, (int)arr_rows, answer);  // 영역을 네 부분으로 나누어 같은 압축 검사를 재귀적으로 적용하기
@@ -50,5 +50,5 @@ int* solution(int** arr, size_t arr_rows, size_t arr_cols) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 영역 값이 모두 같으면 한 개로 세고, 다르면 네 사분면으로 나눠 같은 규칙을 재귀 적용하기
-// 예: 전체가 1인 행렬은 크기와 무관하게 [0,1]; 한 변 N일 때 시간 상한 O(N² log N), 재귀 공간 O(log N)
+// 영역 값이 모두 같으면 하나로 세고, 다르면 네 사분면으로 나누어 같은 규칙을 재귀 적용합니다.
+// 예: 전체가 1인 행렬은 크기와 무관하게 [0,1]입니다. 한 변 N에 대해 시간 상한은 O(N² log N), 재귀 공간은 O(log N)입니다.

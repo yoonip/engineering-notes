@@ -47,7 +47,7 @@ int solution(int coin, int cards[], size_t cards_len) {
 // int solution(int coin, int cards[], size_t cards_len) {  // 각 카드의 짝은 n+1-card로 유일하므로 서로 다른 쌍은 카드를 공유하지 않음; 완성된 쌍을 구매 비용 0·1·2로 분류해 매 라운드 가장 싼 쌍부터 쓰기
 //     int n = (int)cards_len, target = n + 1; bool* initial = calloc((size_t)n + 1, sizeof(*initial)); bool* drawn = calloc((size_t)n + 1, sizeof(*drawn)); int available[3] = {0}, round = 1;  // 전체 카드 수 / 한 쌍의 목표 합 / 처음 공짜로 받은 카드 표시 / 라운드에서 꺼내 본 카드 표시 공간 확보하고 0으로 시작
 //     for (int i = 0; i < n / 3; ++i) initial[cards[i]] = true;  // 초기 카드 위치 순서대로 확인; 처음 공짜로 받은 카드 표시 / 초기 카드 위치 확인
-//     for (int card = 1; card < target - card; ++card) available[0] += initial[card] && initial[target - card];  // 새로 뽑은 카드 순서대로 확인; 0 1 2동전으로 만들 수 있는 쌍 수 / 처음 공짜로 받은 카드 표시 / 새로 뽑은 카드 더해 누적
+//     for (int card = 1; card < target - card; ++card) available[0] += initial[card] && initial[target - card];  // 초기 손패에서 합이 n+1인 쌍을 작은 카드 기준으로 한 번씩 세어 0동전 쌍에 추가
 //     for (int index = n / 3; index < n; index += 2) {  // 이번에 뽑을 카드 시작 순서대로 확인
 //         for (int j = index; j < index + 2 && j < n; ++j) { int card = cards[j], partner = target - card; if (initial[partner]) ++available[1]; else if (drawn[partner]) ++available[2]; drawn[card] = true; }  // 이번 라운드의 카드 위치 순서대로 확인; 새로 뽑은 카드 / 목표 합을 만드는 반대 카드 / 라운드에서 꺼내 본 카드 표시 저장
 //         bool success = false;  // 이번 라운드에 낼 쌍을 찾았는지 여부 저장

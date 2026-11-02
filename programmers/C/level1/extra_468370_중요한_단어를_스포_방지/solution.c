@@ -63,7 +63,7 @@ int solution(const char* message, int** spoiler_ranges, size_t spoiler_ranges_ro
 //     while (map[slot].key && strcmp(map[slot].key, key)) slot = (slot + 1) & (capacity - 1);  // 2의 거듭제곱 크기에 맞춰 비트 AND로 해시 인덱스를 계산
 //     return slot;  // 단어를 넣을 해시 칸 반환
 // }  // 이 범위 끝
-// int solution(const char* message, int** spoiler_ranges, size_t spoiler_ranges_rows, size_t spoiler_ranges_cols) {  // 차분 배열로 가려진 위치를 표시하고 단어를 해시 집합으로 구분하기; 가려진 곳에 등장하면서 완전히 보이는 곳에는 등장하지 않는 서로 다른 단어 수를 세기
+// int solution(const char* message, int** spoiler_ranges, size_t spoiler_ranges_rows, size_t spoiler_ranges_cols) {  // 차분 배열과 누적합으로 가려진 위치를 표시합니다. 일부라도 가려진 단어를 중복 없이 모으고, 완전히 보이는 곳에도 등장한 단어는 제외합니다.
 //     size_t n = strlen(message), capacity = 1;  // 메시지 길이 / 단어 해시표 칸 수 저장
 //     size_t words = 1; for (size_t i = 0; i < n; ++i) if (message[i] == ' ') ++words;  // 해시표 크기를 잡을 단어 수 / 문자 또는 해시 칸 위치 저장
 //     while (capacity < 2 * words) capacity *= 2;  // 단어 수의 두 배 이상이 되도록 해시표 크기를 2배씩 늘리기
@@ -81,7 +81,7 @@ int solution(const char* message, int** spoiler_ranges, size_t spoiler_ranges_ro
 //                 map[slot].value |= hidden ? 2 : 1;  // 단어별 공개와 가림 상태 / 단어를 넣을 해시 칸 / 현재 단어가 한 번이라도 가려졌는지 여부 비트 상태 갱신
 //             }  // 이 범위 끝
 //             start = i + 1; hidden = false;  // 현재 단어의 시작 / 현재 단어가 한 번이라도 가려졌는지 여부 갱신
-//         } else if (cover > 0) hidden = true;  // 앞 조건을 만족하지 않은 경우의 처리를 시작하기
+//         } else if (cover > 0) hidden = true;  // 공백이 아닌 현재 문자가 가려졌으면 해당 단어를 숨은 단어로 표시
 //     }  // 이 범위 끝
 //     int answer = 0;  // 공개된 적 없이 가려진 단어 수 저장
 //     for (size_t i = 0; i < capacity; ++i) if (map[i].key) { if (map[i].value == 2) ++answer; free((void*)map[i].key); }  // 등록된 단어 중 가려진 적만 있는 상태 2를 세고 저장한 단어 메모리 정리
@@ -90,4 +90,4 @@ int solution(const char* message, int** spoiler_ranges, size_t spoiler_ranges_ro
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 차분 배열로 가려진 위치를 표시하고 단어를 해시 집합으로 구분하기; 가려진 곳에 등장하면서 완전히 보이는 곳에는 등장하지 않는 서로 다른 단어 수를 세기
+// 차분 배열과 누적합으로 가려진 위치를 표시합니다. 일부라도 가려진 단어를 중복 없이 모으고, 완전히 보이는 곳에도 등장한 단어는 제외합니다.

@@ -47,7 +47,7 @@ long long solution(int sequence[], size_t sequence_len) {
 //         prefix += i % 2 ? -(long long)sequence[i] : sequence[i];  // 번갈아 부호를 적용한 누적합 / 펄스 부호를 적용할 원소 위치 더해 누적
 //         if (prefix < lowest) lowest = prefix; if (prefix > highest) highest = prefix;  // 펄스 누적합의 최솟값과 최댓값 갱신
 //     }  // 이 범위 끝
-//     return highest - lowest;  // 지금까지 가장 큰 누적합 / 지금까지 가장 작은 누적합로 최종값 계산
+//     return highest - lowest;  // 누적합의 최댓값에서 최솟값을 빼 가능한 펄스 구간 합의 최댓값 반환
 // }  // 이 범위 끝
 
 // 풀이 요약

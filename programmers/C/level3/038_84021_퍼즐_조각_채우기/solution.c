@@ -53,8 +53,8 @@ int solution(int** game_board, size_t game_board_rows, size_t game_board_cols, i
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// typedef struct { int row, col; } Cell;  // 회전 전에 보관할 행를 한 상태로 묶기
-// typedef struct { uint64_t key; int size; bool used; } Shape;  // 정렬한 좌표를 압축한 비트 키를 한 상태로 묶기
+// typedef struct { int row, col; } Cell;  // struct로 한 칸의 행과 열 좌표를 묶고 Cell이라는 이름 지정
+// typedef struct { uint64_t key; int size; bool used; } Shape;  // 조각의 정규 키·칸 수·사용 여부를 Shape 구조체에 저장
 // static int compare_cell(const void* p, const void* q) { const Cell* a = p; const Cell* b = q; return a->row != b->row ? a->row - b->row : a->col - b->col; }  // 좌표를 행 우선, 열 다음 순서로 정렬
 // static uint64_t canonical(Cell* cells, int count) {  // 네 회전을 비교해서 같은 조각의 정규 키 만들기
 //     uint64_t best = UINT64_MAX;  // 네 회전 중 정규 모양 키 갱신
@@ -70,7 +70,7 @@ int solution(int** game_board, size_t game_board_rows, size_t game_board_cols, i
 //     return best;  // 네 회전 중 정규 모양 키 반환
 // }  // 이 범위 끝
 // static int collect(int** board, int n, int target, Shape* result) {  // 연결된 칸을 한 조각으로 묶어 정규 키 저장
-//     bool* visited = calloc((size_t)n * n, sizeof(*visited)); int* queue = malloc((size_t)n * n * sizeof(*queue)); int count = 0;  // 이미 조각에 포함한 칸 / 연결 조각 탐색 큐 / 조각의 칸 수 공간 확보하고 0으로 시작
+//     bool* visited = calloc((size_t)n * n, sizeof(*visited)); int* queue = malloc((size_t)n * n * sizeof(*queue)); int count = 0;  // 방문 배열만 calloc으로 0 초기화하고 BFS 큐 공간과 추출한 조각 수 준비
 //     const int dr[4] = {1,-1,0,0}, dc[4] = {0,0,1,-1};  // 행 변화 / 열 변화 저장
 //     for (int r = 0; r < n; ++r) for (int c = 0; c < n; ++c) {  // 새 조각 시작 행 순서대로 확인; 새 조각 시작 열 갱신
 //         if (visited[r * n + c] || board[r][c] != target) continue;  // 이미 조각에 넣은 칸이나 찾는 값과 다른 칸은 건너뛰기
@@ -84,8 +84,8 @@ int solution(int** game_board, size_t game_board_rows, size_t game_board_cols, i
 //     free(visited); free(queue);  // 이미 조각에 포함한 칸 / 연결 조각 탐색 큐 임시 공간 정리
 //     return count;  // 추출한 조각 개수 반환
 // }  // 이 범위 끝
-// int solution(int** game_board, size_t game_board_rows, size_t game_board_cols, int** table, size_t table_rows, size_t table_cols) {  // 빈 공간과 조각을 큐로 추출하고 네 회전 중 가장 작은 좌표 키로 정규화; 같은 키의 아직 안 쓴 조각과 짝짓기
-//     (void)game_board_cols; (void)table_rows; (void)table_cols; int n = (int)game_board_rows;  // (void)game_board_cols; (void)table_rows; (void)table_cols; int n = (int)game_board_rows
+// int solution(int** game_board, size_t game_board_rows, size_t game_board_cols, int** table, size_t table_rows, size_t table_cols) {  // 빈 공간과 퍼즐 조각을 BFS로 추출하고 네 회전 중 가장 작은 좌표 키를 대표값으로 정합니다. 같은 키를 가진 미사용 조각과 빈 공간을 연결합니다.
+//     (void)game_board_cols; (void)table_rows; (void)table_cols; int n = (int)game_board_rows;  // 계산에 쓰지 않는 크기 매개변수를 명시하고 정사각형의 한 변 길이를 int로 변환
 //     Shape* holes = malloc((size_t)n * n * sizeof(*holes)); Shape* pieces = malloc((size_t)n * n * sizeof(*pieces));  // 보드 빈칸의 정규 모양 / 테이블 조각의 정규 모양 공간 확보
 //     int h = collect(game_board,n,0,holes), p = collect(table,n,1,pieces), answer = 0;  // 빈칸 조각 수 / 테이블 조각 수 / 채운 전체 칸 수 저장
 //     for (int i = 0; i < h; ++i) for (int j = 0; j < p; ++j) if (!pieces[j].used && holes[i].key == pieces[j].key) { pieces[j].used = true; answer += holes[i].size; break; }  // 채울 빈칸 조각 순서대로 확인; 맞춰 볼 테이블 조각 갱신
@@ -94,6 +94,6 @@ int solution(int** game_board, size_t game_board_rows, size_t game_board_cols, i
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 빈 공간과 조각을 큐로 추출하고 네 회전 중 가장 작은 좌표 키로 정규화; 같은 키의 아직 안 쓴 조각과 짝짓기
-// 예: 4칸 빈 공간과 회전해서 같은 조각이 만나면 4칸 추가하고 사용 표시; 반사는 허용하지 않기
-// 조각 크기는 최대 6; 빈 공간 H개·조각 P개이면 시간 O(N²+HP), 공간 O(N²); 각 공간은 같은 키의 조각 중 아무 하나와 연결 가능
+// 빈 공간과 퍼즐 조각을 BFS로 추출하고 네 회전 중 가장 작은 좌표 키를 대표값으로 정합니다. 같은 키를 가진 미사용 조각과 빈 공간을 연결합니다.
+// 예를 들어 네 칸짜리 빈 공간과 회전해서 모양이 같은 조각이 만나면 답에 4를 더하고 조각을 사용 처리합니다. 좌우 반사는 허용하지 않습니다.
+// 빈 공간과 조각의 크기는 각각 최대 6칸입니다. 보드 한 변 N·빈 공간 H개·조각 P개에 대해 시간은 O(N²+HP), 공간은 O(N²)입니다. 같은 대표 키의 조각들은 서로 대체할 수 있습니다.

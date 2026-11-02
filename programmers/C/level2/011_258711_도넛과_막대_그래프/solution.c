@@ -29,9 +29,9 @@ int* solution(int** edges, size_t edges_rows, size_t edges_cols) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int* solution(int** edges, size_t edges_rows, size_t edges_cols) {  // 진입·진출 차수로 추가 정점, 막대의 끝, 8자의 중심을 센 뒤 나머지를 도넛으로 계산
+// int* solution(int** edges, size_t edges_rows, size_t edges_cols) {  // 진입·진출 차수로 추가 정점, 막대의 끝, 8자의 중심을 센 뒤 나머지를 도넛으로 계산합니다.
 //     (void)edges_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int size = 0;  // 가장 큰 정점 번호 저장
 //     for (size_t i = 0; i < edges_rows; ++i) for (int j = 0; j < 2; ++j) if (edges[i][j] > size) size = edges[i][j];  // 간선 번호 순서대로 확인; 간선의 시작 또는 끝 위치 갱신
@@ -48,5 +48,5 @@ int* solution(int** edges, size_t edges_rows, size_t edges_cols) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 진입·진출 차수로 추가 정점, 막대의 끝, 8자의 중심을 센 뒤 나머지를 도넛으로 계산
-// 예: 첫 예제는 추가 정점 2의 진출 2개에서 막대 1개를 빼 [2,1,1,0]; 시간 O(E+M), 공간 O(M), M은 최대 정점 번호
+// 진입·진출 차수로 추가 정점, 막대의 끝, 8자의 중심을 센 뒤 나머지를 도넛으로 계산합니다.
+// 예: 첫 공개 예제는 추가 정점 2의 진출 간선 2개에서 막대 1개를 빼므로 [2,1,1,0]입니다. 간선 E개·최대 정점 번호 M에 대해 시간은 O(E+M), 공간은 O(M)입니다.

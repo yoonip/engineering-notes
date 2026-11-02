@@ -49,13 +49,13 @@ int solution(int** board, size_t board_rows, size_t board_cols, int aloc[], size
 //     if (!(mask & (1u << current))) return 0;  // 현재 발판이 사라졌으면 이동할 수 없으므로 0턴
 //     uint64_t key = (((uint64_t)mask * 25 + current) * 25 + other) + 1;  // 발판과 두 위치의 메모 키 갱신
 //     size_t slot = (size_t)(key * 11400714819323198485ull) & (ctx->cap - 1), probes = 0;  // 메모 해시 칸 / 해시 충돌로 이동한 칸 수 저장
-//     while (ctx->memo[slot].key && ctx->memo[slot].key != key && probes < ctx->cap) { slot = (slot + 1) & (ctx->cap - 1); ++probes; }  // 같은 선택 상태를 이미 계산했으면 반복; 메모 해시 칸 갱신
-//     if (ctx->memo[slot].key == key) return ctx->memo[slot].value;  // 같은 선택 상태를 이미 계산했으면 발판 상태별 최선의 길이 / 메모 해시 칸로 최종값 계산
+//     while (ctx->memo[slot].key && ctx->memo[slot].key != key && probes < ctx->cap) { slot = (slot + 1) & (ctx->cap - 1); ++probes; }  // 다른 키가 차지한 칸이면 다음 칸으로 이동해 같은 키 또는 빈칸 탐색
+//     if (ctx->memo[slot].key == key) return ctx->memo[slot].value;  // 같은 발판·두 위치 상태의 기록이 있으면 저장한 최적 이동 수 반환
 //     int best_win = INT_MAX, best_lose = 0, r = current / ctx->cols, c = current % ctx->cols;  // 이길 때의 가장 짧은 게임 길이 / 질 때의 가장 긴 게임 길이 / 현재 행 / 현재 열 저장
 //     const int dr[4] = {1,-1,0,0}, dc[4] = {0,0,1,-1};  // 행 변화 / 열 변화 저장
 //     for (int d = 0; d < 4; ++d) {  // 이동 방향 순서대로 확인
 //         int nr = r + dr[d], nc = c + dc[d];  // 다음 행 / 다음 열 저장
-//         if (nr < 0 || nr >= ctx->rows || nc < 0 || nc >= ctx->cols) continue;  // 격자 밖이거나 막혔거나 이미 처리한 칸이면 다음 후보로 넘어가기
+//         if (nr < 0 || nr >= ctx->rows || nc < 0 || nc >= ctx->cols) continue;  // 이동할 좌표가 격자 밖이면 해당 방향 건너뛰기
 //         int next = nr * ctx->cols + nc; if (!(mask & (1u << next))) continue;  // 다음 발판 번호 저장
 //         int turns = play(ctx, mask ^ (1u << current), other, next) + 1;  // 현재 발판을 없애고 두 플레이어의 차례를 바꿔 남은 턴 수 계산
 //         if (turns % 2) { if (turns < best_win) best_win = turns; }  // 홀수 턴으로 끝나는 이기는 선택 중 가장 빨리 끝나는 값 선택
@@ -65,7 +65,7 @@ int solution(int** board, size_t board_rows, size_t board_cols, int aloc[], size
 //     if (probes < ctx->cap) { ctx->memo[slot].key = key; ctx->memo[slot].value = answer; }  // 해시 칸을 찾았으면 현재 보드·두 위치 상태의 최적 턴 수 저장
 //     return answer;  // 최선의 수를 둔 게임 길이 반환
 // }  // 이 범위 끝
-// int solution(int** board, size_t board_rows, size_t board_cols, int aloc[], size_t aloc_len, int bloc[], size_t bloc_len) {  // 미니맥스는 상대도 최적으로 움직인다고 보고 자신의 최선의 선택을 구하는 게임 탐색; 현재 플레이어 기준으로 이기면 최소 이동, 반드시 지면 최대 이동을 택하기
+// int solution(int** board, size_t board_rows, size_t board_cols, int aloc[], size_t aloc_len, int bloc[], size_t bloc_len) {  // 미니맥스는 상대도 최적으로 움직인다고 가정하는 게임 탐색입니다. 이길 수 있으면 최소 이동 횟수를, 반드시 지면 최대 이동 횟수를 선택합니다.
 //     (void)aloc_len; (void)bloc_len; unsigned mask = 0;  // 아직 남은 발판 갱신
 //     for (size_t r = 0; r < board_rows; ++r) for (size_t c = 0; c < board_cols; ++c) if (board[r][c]) mask |= 1u << (r * board_cols + c);  // 현재 행 순서대로 확인; 현재 열 갱신
 //     size_t cap = (size_t)1 << 20; Entry* memo = calloc(cap, sizeof(*memo)); Context ctx = {(int)board_rows,(int)board_cols,memo,cap};  // 메모 해시표 크기 / 발판 상태별 최선의 길이 / 보드와 메모 탐색 정보 공간 확보하고 0으로 시작
@@ -74,6 +74,6 @@ int solution(int** board, size_t board_rows, size_t board_cols, int aloc[], size
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 미니맥스는 상대도 최적으로 움직인다고 보고 자신의 최선의 선택을 구하는 게임 탐색; 현재 플레이어 기준으로 이기면 최소 이동, 반드시 지면 최대 이동을 택하기
-// 이동할 때 발판 하나를 지우고 플레이어 역할을 바꾸기; 보드 비트마스크·두 위치를 캐시 키로 써 같은 게임 상태를 재사용; 시간·공간은 도달 가능한 상태 수에 비례하며 최악에는 지수적
-// 예: 두 플레이어가 같은 칸에 있을 때 한 명이 떠나면 그 칸이 사라져 다음 플레이어가 즉시 짐; 시작부터 이동할 곳이 없으면 이동 횟수는 0
+// 미니맥스는 상대도 최적으로 움직인다고 가정하는 게임 탐색입니다. 이길 수 있으면 최소 이동 횟수를, 반드시 지면 최대 이동 횟수를 선택합니다.
+// 이동할 때 현재 발판을 지우고 두 플레이어의 역할을 바꿉니다. 이 C 구현은 2^20칸의 고정 해시표에 발판 비트마스크와 두 위치의 결과를 저장합니다. 충돌이나 캐시 대체로 같은 상태를 다시 계산할 수 있어 시간을 고유 상태 수에만 비례한다고 볼 수 없습니다. 최악의 탐색 시간은 지수적이며, 발판 수 B에 대한 추가 공간은 O(2^20+B)입니다.
+// 두 플레이어가 같은 칸에 있다면 한 명이 떠난 뒤 그 칸이 사라져 다음 플레이어가 집니다. 시작부터 이동할 수 없으면 이동 횟수는 0입니다.

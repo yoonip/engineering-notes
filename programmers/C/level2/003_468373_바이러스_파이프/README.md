@@ -4,15 +4,11 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/468373) · Level 2 · C
 
-## 풀이
+파이프 종류별 연결 성분을 서로소 집합으로 구하고, 각 노드의 대표 번호를 배열에 저장합니다.
 
-파이프 종류별 연결 성분을 서로소 집합으로 구하고 각 노드의 대표 번호를 배열에 저장
-한 종류를 선택하면 감염 정점과 닿은 연결 요소 전체가 감염됨; 최대 k번의 선택을 DFS로 비교
-예: 감염 집합 {1}, 선택한 종류의 연결 요소 {1,2,3}이면 다음 감염 집합은 {1,2,3}
+한 종류를 선택하면 현재 감염 정점과 닿은 연결 성분 전체가 감염됩니다. 최대 k번의 선택을 DFS로 비교합니다.
 
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 감염 집합 {1}, 선택한 종류의 연결 성분 {1,2,3}이면 다음 감염 집합은 {1,2,3}입니다.
 
 ```c
 #include <stdio.h>
@@ -63,7 +59,7 @@ int solution(int n, int infection, int** edges, size_t edges_rows, size_t edges_
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static int find(int* parent, int node) {  // 부모를 따라가며 연결 성분 대표 찾기
 //     while (parent[node] != node) { parent[node] = parent[parent[node]]; node = parent[node]; }  // 루트까지 올라가며 조부모로 연결해서 다음 탐색 경로 압축
@@ -84,7 +80,7 @@ int solution(int n, int infection, int** edges, size_t edges_rows, size_t edges_
 //     }  // 이 범위 끝
 //     free(marked); free(next);  // 감염원이 있는 연결 성분 / 같은 종류를 한 번 열었을 때 감염 표시 임시 공간 정리
 // }  // 이 범위 끝
-// int solution(int n, int infection, int** edges, size_t edges_rows, size_t edges_cols, int k) {  // 파이프 종류별 연결 성분을 서로소 집합으로 구하고 각 노드의 대표 번호를 배열에 저장
+// int solution(int n, int infection, int** edges, size_t edges_rows, size_t edges_cols, int k) {  // 파이프 종류별 연결 성분을 서로소 집합으로 구하고, 각 노드의 대표 번호를 배열에 저장합니다.
 //     (void)edges_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int* groups = malloc((size_t)3 * n * sizeof(*groups));  // 종류별 노드의 연결 성분 공간 확보
 //     for (int kind = 0; kind < 3; ++kind) for (int i = 0; i < n; ++i) groups[kind * n + i] = i;  // 이번에 열 파이프 종류 순서대로 확인; 노드 또는 간선 번호 갱신
@@ -99,9 +95,9 @@ int solution(int n, int infection, int** edges, size_t edges_rows, size_t edges_
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 파이프 종류별 연결 성분을 서로소 집합으로 구하고 각 노드의 대표 번호를 배열에 저장
-// 한 종류를 선택하면 감염 정점과 닿은 연결 요소 전체가 감염됨; 최대 k번의 선택을 DFS로 비교
-// 예: 감염 집합 {1}, 선택한 종류의 연결 요소 {1,2,3}이면 다음 감염 집합은 {1,2,3}
+// 파이프 종류별 연결 성분을 서로소 집합으로 구하고, 각 노드의 대표 번호를 배열에 저장합니다.
+// 한 종류를 선택하면 현재 감염 정점과 닿은 연결 성분 전체가 감염됩니다. 최대 k번의 선택을 DFS로 비교합니다.
+// 예: 감염 집합 {1}, 선택한 종류의 연결 성분 {1,2,3}이면 다음 감염 집합은 {1,2,3}입니다.
 ```
 
 ## 채점 기록

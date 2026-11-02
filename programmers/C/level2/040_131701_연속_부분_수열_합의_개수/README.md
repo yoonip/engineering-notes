@@ -4,14 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/131701) · Level 2 · C
 
-## 풀이
+각 시작점에서 나머지 연산으로 원형 인덱스를 순회하며 길이 1부터 N까지의 합을 누적합니다. 합별 bool 표로 중복을 제거합니다.
 
-각 시작점에서 원형 인덱스를 나머지 연산으로 돌리며 길이 1~N의 합 누적; 합별 bool 표로 중복 제거
-예: [7,9,1,1,4]의 서로 다른 합은 18종류; 전체 합 S에 대해 시간 O(N²+S), 공간 O(S)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: [7,9,1,1,4]의 서로 다른 합은 18종류입니다. 원소 N개·전체 합 S에 대해 시간은 O(N²+S), 공간은 O(S)입니다.
 
 ```c
 #include <stdio.h>
@@ -44,9 +39,9 @@ int solution(int elements[], size_t elements_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(int elements[], size_t elements_len) {  // 각 시작점에서 원형 인덱스를 나머지 연산으로 돌리며 길이 1~N의 합 누적; 합별 bool 표로 중복 제거
+// int solution(int elements[], size_t elements_len) {  // 각 시작점에서 나머지 연산으로 원형 인덱스를 순회하며 길이 1부터 N까지의 합을 누적합니다. 합별 bool 표로 중복을 제거합니다.
 //     int total_sum = 0;  // 원형 배열 전체 합 저장
 //     for (size_t i = 0; i < elements_len; ++i) total_sum += elements[i];  // 전체 합에 더할 원소 위치 순서대로 확인; 원형 배열 전체 합 / 전체 합에 더할 원소 위치 더해 누적
 //     bool* seen = calloc((size_t)total_sum + 1, sizeof(*seen)); int answer = 0;  // 만들어 본 연속 부분합 표시 / 서로 다른 부분합 수 공간 확보하고 0으로 시작
@@ -62,8 +57,8 @@ int solution(int elements[], size_t elements_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 각 시작점에서 원형 인덱스를 나머지 연산으로 돌리며 길이 1~N의 합 누적; 합별 bool 표로 중복 제거
-// 예: [7,9,1,1,4]의 서로 다른 합은 18종류; 전체 합 S에 대해 시간 O(N²+S), 공간 O(S)
+// 각 시작점에서 나머지 연산으로 원형 인덱스를 순회하며 길이 1부터 N까지의 합을 누적합니다. 합별 bool 표로 중복을 제거합니다.
+// 예: [7,9,1,1,4]의 서로 다른 합은 18종류입니다. 원소 N개·전체 합 S에 대해 시간은 O(N²+S), 공간은 O(S)입니다.
 ```
 
 ## 채점 기록

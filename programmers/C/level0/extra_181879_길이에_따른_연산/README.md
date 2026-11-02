@@ -42,7 +42,8 @@ int solution(int num_list[], size_t num_list_len) {
 //         else result *= num_list[i];  // 길이가 10 이하이면 현재 원소를 누적 곱에 곱함
 //     }  // 블록 끝
 //     return result;  // 배열 길이에 맞춰 계산한 합 또는 곱 반환
-// }  // 블록 끝// 풀이 요약
+// }  // 블록 끝
+// 풀이 요약
 // 길이에 따라 합계 또는 곱을 선택
 ```
 

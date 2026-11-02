@@ -4,15 +4,11 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/468372) · Level 2 · C
 
-## 풀이
+이진 분기 앞부분과 삼진 분기 뒷부분으로 구성한 후보를 비교합니다.
 
-이진 분기 앞부분과 삼진 분기 뒷부분으로 구성한 후보를 비교
-이진 깊이를 순회하고, 비용 제한을 넘는 경계의 양쪽을 이진 탐색으로 확인
-이진 분기는 리프를 1개, 삼진 분기는 2개 늘리기; 예: 분기 없이 1개, 삼진 분기 한 번이면 3개
+이진 깊이를 순회하고, 비용 제한을 넘는 경계의 양쪽을 이진 탐색으로 확인합니다.
 
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+이진 분기는 리프를 1개, 삼진 분기는 2개 늘립니다. 분기가 없으면 리프는 1개이고, 삼진 분기 한 번이면 3개입니다.
 
 ```c
 #include <stdio.h>
@@ -65,14 +61,14 @@ int solution(int dist_limit, int split_limit) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static long long binary_cost(long long count, int depth) {  // 이진 분기 층마다 필요한 거리 더하기
 //     long long total = 0;  // 깊이별 필요한 거리 합 저장
 //     for (int i = 0; i < depth; ++i) { total += count; count = (count + 1) / 2; }  // 거리를 더할 깊이 순서대로 확인; 깊이별 필요한 거리 합 / 분배할 이진 가지 수 더해 누적
 //     return total;  // 깊이별 필요한 거리 합 반환
 // }  // 이 범위 끝
-// int solution(int dist_limit, int split_limit) {  // 이진 분기 앞부분과 삼진 분기 뒷부분으로 구성한 후보를 비교
+// int solution(int dist_limit, int split_limit) {  // 이진 분기 앞부분과 삼진 분기 뒷부분으로 구성한 후보를 비교합니다.
 //     long long answer = 1, width = 1; int depth = 0;  // 가능한 최대 리프 수 / 현재 이진 단계의 가지 폭 / 이진 분기 깊이 저장
 //     while (width <= split_limit) {  // 가지 폭이 분기 한도를 넘지 않는 이진 단계만 검사
 //         long long candidate = width < dist_limit + 1 ? width : dist_limit + 1;  // 이번 구조로 얻는 리프 수 저장
@@ -103,9 +99,9 @@ int solution(int dist_limit, int split_limit) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 이진 분기 앞부분과 삼진 분기 뒷부분으로 구성한 후보를 비교
-// 이진 깊이를 순회하고, 비용 제한을 넘는 경계의 양쪽을 이진 탐색으로 확인
-// 이진 분기는 리프를 1개, 삼진 분기는 2개 늘리기; 예: 분기 없이 1개, 삼진 분기 한 번이면 3개
+// 이진 분기 앞부분과 삼진 분기 뒷부분으로 구성한 후보를 비교합니다.
+// 이진 깊이를 순회하고, 비용 제한을 넘는 경계의 양쪽을 이진 탐색으로 확인합니다.
+// 이진 분기는 리프를 1개, 삼진 분기는 2개 늘립니다. 분기가 없으면 리프는 1개이고, 삼진 분기 한 번이면 3개입니다.
 ```
 
 ## 채점 기록

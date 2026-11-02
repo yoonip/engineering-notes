@@ -53,7 +53,7 @@ int* solution(const char* id_list[], size_t id_list_len, const char* report[], s
 //     while (map[slot].key && strcmp(map[slot].key, key)) slot = (slot + 1) & (capacity - 1);  // 2의 거듭제곱 크기에 맞춰 비트 AND로 해시 인덱스를 계산
 //     return slot;  // 아이디가 들어갈 해시 칸 반환
 // }  // 이 범위 끝
-// int* solution(const char* id_list[], size_t id_list_len, const char* report[], size_t report_len, int k) {  // 신고자와 대상의 쌍을 중복 없이 기록; 대상의 신고 횟수가 k 이상이면 해당 신고자에게 보낼 메일 수를 늘리기
+// int* solution(const char* id_list[], size_t id_list_len, const char* report[], size_t report_len, int k) {  // 신고자와 대상의 쌍을 중복 없이 기록합니다. 대상의 신고 횟수가 k 이상이면 해당 대상을 신고한 사용자에게 보낼 메일 수를 늘립니다.
 //     size_t n = id_list_len, capacity = 1; while (capacity < n * 2) capacity *= 2;  // 전체 사용자 수 / 해시표 칸 수 저장
 //     MapEntry* index = calloc(capacity, sizeof(MapEntry));  // 아이디를 사용자 번호로 바꾸는 해시표 공간 확보하고 0으로 시작
 //     for (size_t i = 0; i < n; ++i) { size_t slot = map_slot(index, capacity, id_list[i]); index[slot].key = id_list[i]; index[slot].value = (int)i; }  // 신고자 또는 입력 기록 위치 순서대로 확인; 아이디가 들어갈 해시 칸 저장
@@ -70,4 +70,4 @@ int* solution(const char* id_list[], size_t id_list_len, const char* report[], s
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 신고자와 대상의 쌍을 중복 없이 기록; 대상의 신고 횟수가 k 이상이면 해당 신고자에게 보낼 메일 수를 늘리기
+// 신고자와 대상의 쌍을 중복 없이 기록합니다. 대상의 신고 횟수가 k 이상이면 해당 대상을 신고한 사용자에게 보낼 메일 수를 늘립니다.

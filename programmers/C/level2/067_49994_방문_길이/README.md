@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/49994) · Level 2 · C
 
-## 풀이
+두 칸 사이의 길을 양방향 bool 표에 함께 기록합니다. 같은 길을 반대로 걸어도 처음 한 번만 셉니다.
 
-두 칸 사이의 길을 양방향 bool 표에 함께 기록; 같은 길을 반대로 걸어도 처음 한 번만 세기
-
-예: 'ULURRDLLU'의 9번 이동 중 새 길은 7개; 명령 N개에 시간 O(N), 길 집합은 고정 격자 안에서 최대 220개
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 'ULURRDLLU'의 9개 명령에서 새 길은 7개입니다. 명령 N개에 대해 시간은 O(N)이며, 고정 격자의 무방향 길은 최대 220개입니다. bool 표도 고정 크기이므로 공간은 O(1)입니다.
 
 ```c
 #include <stdio.h>
@@ -47,9 +41,9 @@ int solution(const char* dirs) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(const char* dirs) {  // 두 칸 사이의 길을 양방향 bool 표에 함께 기록; 같은 길을 반대로 걸어도 처음 한 번만 세기
+// int solution(const char* dirs) {  // 두 칸 사이의 길을 양방향 bool 표에 함께 기록합니다. 같은 길을 반대로 걸어도 처음 한 번만 셉니다.
 //     bool edges[121][121] = {{false}};  // 이미 지난 두 칸 사이의 길 저장
 //     int x = 5, y = 5, answer = 0;  // 현재 가로 위치 / 현재 세로 위치 / 처음 지나간 길 수 저장
 //     for (size_t i = 0; dirs[i]; ++i) {  // 이동 명령 위치 순서대로 확인
@@ -58,7 +52,7 @@ int solution(const char* dirs) {
 //         else if (dirs[i] == 'D') --ny;  // D 명령이면 세로 좌표를 한 칸 내리기
 //         else if (dirs[i] == 'R') ++nx;  // R 명령이면 가로 좌표를 한 칸 오른쪽으로 이동
 //         else --nx;  // 앞 조건이 아니면 다음 가로 위치 갱신
-//         if (nx < 0 || nx > 10 || ny < 0 || ny > 10) continue;  // 격자 밖이거나 막혔거나 이미 처리한 칸이면 다음 후보로 넘어가기
+//         if (nx < 0 || nx > 10 || ny < 0 || ny > 10) continue;  // 다음 좌표가 격자 밖이면 이번 이동 명령을 무시
 //         int a = y * 11 + x, b = ny * 11 + nx;  // 현재 칸의 일차원 번호 / 다음 칸의 일차원 번호 저장
 //         if (!edges[a][b]) { ++answer; edges[a][b] = edges[b][a] = true; }  // 처음 지나는 길일 때만 세고 양방향을 함께 방문 표시
 //         x = nx; y = ny;  // 현재 가로 위치 / 현재 세로 위치 갱신
@@ -67,8 +61,8 @@ int solution(const char* dirs) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 두 칸 사이의 길을 양방향 bool 표에 함께 기록; 같은 길을 반대로 걸어도 처음 한 번만 세기
-// 예: 'ULURRDLLU'의 9번 이동 중 새 길은 7개; 명령 N개에 시간 O(N), 길 집합은 고정 격자 안에서 최대 220개
+// 두 칸 사이의 길을 양방향 bool 표에 함께 기록합니다. 같은 길을 반대로 걸어도 처음 한 번만 셉니다.
+// 예: 'ULURRDLLU'의 9개 명령에서 새 길은 7개입니다. 명령 N개에 대해 시간은 O(N)이며, 고정 격자의 무방향 길은 최대 220개입니다. bool 표도 고정 크기이므로 공간은 O(1)입니다.
 ```
 
 ## 채점 기록

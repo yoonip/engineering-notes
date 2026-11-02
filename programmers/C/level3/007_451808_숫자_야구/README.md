@@ -98,7 +98,7 @@ int solution(int n) {
 //                 if (worst < best) { best = worst; selected = guess; if (best == 1) break; }  // 최악의 후보 묶음을 가장 작게 만드는 추측 선택, 모두 구별되면 탐색 종료
 //             }  // 이 범위 끝
 //         }  // 이 범위 끝
-//         char* clue = submit(patterns[selected].number); int strikes = clue[0] - '0', balls = clue[3] - '0', observed = (strikes + balls) * 5 + strikes;  // 추측과 후보의 네 자리 중 같은 위치의 같은 숫자 세기
+//         char* clue = submit(patterns[selected].number); int strikes = clue[0] - '0', balls = clue[3] - '0', observed = (strikes + balls) * 5 + strikes;  // 채점기 응답의 스트라이크·볼 숫자를 읽고 피드백 번호로 변환
 //         unsigned char* row = feedback(selected,patterns,count,cache); int next_count = 0;  // 이번 추측과 모든 후보의 피드백 / 이번 응답과 맞는 후보 수 저장
 //         for (int i = 0; i < remaining; ++i) if (row[candidates[i]] == observed) candidates[next_count++] = candidates[i];  // 관측한 스트라이크·볼 응답과 같은 후보만 앞으로 모으기
 //         remaining = next_count;  // 남은 후보 수 갱신

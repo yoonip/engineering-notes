@@ -24,7 +24,7 @@ int solution(const char* s) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(const char* s) {  // 숫자 문자는 그대로 읽고 숫자 영단어는 해당 숫자로 바꾸기; 지금까지 읽은 값에 10을 곱하고 다음 숫자를 더하기
+// int solution(const char* s) {  // 숫자 문자는 바로 읽고, 영단어는 0부터 9까지의 표와 대조합니다. 결과에 10을 곱하고 읽은 숫자를 더한 뒤 다음 문자나 단어로 이동합니다.
 //     const char* words[10] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}; int answer = 0;  // 숫자와 영어 이름의 대응표 / 읽은 숫자들을 이어 붙인 값 저장
 //     for (size_t i = 0; s[i]; ) {  // 다음 숫자 또는 단어의 시작 순서대로 확인
 //         if (isdigit((unsigned char)s[i])) answer = answer * 10 + s[i++] - '0';  // 숫자 문자는 바로 정수 값에 이어 붙이고 다음 문자로 이동
@@ -34,4 +34,4 @@ int solution(const char* s) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 숫자 문자는 그대로 읽고 숫자 영단어는 해당 숫자로 바꾸기; 지금까지 읽은 값에 10을 곱하고 다음 숫자를 더하기
+// 숫자 문자는 바로 읽고, 영단어는 0부터 9까지의 표와 대조합니다. 결과에 10을 곱하고 읽은 숫자를 더한 뒤 다음 문자나 단어로 이동합니다.

@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/181187) · Level 2 · C
 
-## 풀이
+x를 고정하고 두 원 사이에 놓이는 정수 y의 최솟값·최댓값을 구합니다. 제곱근의 반올림 오차를 정수 곱셈으로 보정하며 경계도 포함합니다.
 
-x를 고정해 두 원 사이에 놓이는 정수 y의 최솟값·최댓값을 정수 제곱근으로 계산; 경계도 포함하기
-
-예: r1=2,r2=3이면 한 영역 5개, 전체 20개; x>0,y>=0을 세면 축도 중복 없이 네 배 됨; 시간 O(r2), 공간 O(1)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: r1=2, r2=3이면 x>0, y>=0인 영역에 5개, 전체에는 20개입니다. 이 영역을 세어 네 배 하면 축 위 점도 중복되지 않습니다. 시간은 O(r2), 공간은 O(1)입니다.
 
 ```c
 #include <stdio.h>
@@ -47,7 +41,7 @@ long long solution(int r1, int r2) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static long long integer_sqrt(long long value) {  // 제곱근 근삿값을 정수 비교로 보정
 //     long long root = (long long)sqrtl((long double)value);  // 정수 제곱근 후보 저장
@@ -55,7 +49,7 @@ long long solution(int r1, int r2) {
 //     while (root * root > value) --root;  // 현재 제곱이 value를 넘는 동안 근삿값 내리기
 //     return root;  // 정수 제곱근 후보 반환
 // }  // 이 범위 끝
-// long long solution(int r1, int r2) {  // x를 고정해 두 원 사이에 놓이는 정수 y의 최솟값·최댓값을 정수 제곱근으로 계산; 경계도 포함하기
+// long long solution(int r1, int r2) {  // x를 고정하고 두 원 사이에 놓이는 정수 y의 최솟값·최댓값을 구합니다. 제곱근의 반올림 오차를 정수 곱셈으로 보정하며 경계도 포함합니다.
 //     long long answer = 0;  // 한 사분면에서 센 격자점 수 저장
 //     for (long long x = 1; x <= r2; ++x) {  // 양의 가로 좌표 순서대로 확인
 //         long long high = integer_sqrt((long long)r2 * r2 - x * x), inner = (long long)r1 * r1 - x * x;  // 큰 원 안의 가장 높은 y / 작은 원의 남은 세로 제곱 길이 저장
@@ -67,8 +61,8 @@ long long solution(int r1, int r2) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// x를 고정해 두 원 사이에 놓이는 정수 y의 최솟값·최댓값을 정수 제곱근으로 계산; 경계도 포함하기
-// 예: r1=2,r2=3이면 한 영역 5개, 전체 20개; x>0,y>=0을 세면 축도 중복 없이 네 배 됨; 시간 O(r2), 공간 O(1)
+// x를 고정하고 두 원 사이에 놓이는 정수 y의 최솟값·최댓값을 구합니다. 제곱근의 반올림 오차를 정수 곱셈으로 보정하며 경계도 포함합니다.
+// 예: r1=2, r2=3이면 x>0, y>=0인 영역에 5개, 전체에는 20개입니다. 이 영역을 세어 네 배 하면 축 위 점도 중복되지 않습니다. 시간은 O(r2), 공간은 O(1)입니다.
 ```
 
 ## 채점 기록

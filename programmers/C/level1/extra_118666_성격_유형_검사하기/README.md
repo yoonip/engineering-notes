@@ -6,7 +6,7 @@
 
 ## 풀이
 
-선택지의 동의·비동의 정도를 각 성격 지표의 점수에 더하기; 점수가 같으면 사전순으로 앞선 지표를 선택
+응답이 중립점 4에서 떨어진 만큼 해당 성격 지표에 점수를 더합니다. 네 지표 쌍에서 점수가 높은 문자를 고르고, 동점이면 사전순으로 앞선 문자를 선택합니다.
 
 ## 코드와 줄별 설명
 
@@ -42,7 +42,7 @@ char* solution(const char* survey[], size_t survey_len, int choices[], size_t ch
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// char* solution(const char* survey[], size_t survey_len, int choices[], size_t choices_len) {  // 선택지의 동의·비동의 정도를 각 성격 지표의 점수에 더하기; 점수가 같으면 사전순으로 앞선 지표를 선택
+// char* solution(const char* survey[], size_t survey_len, int choices[], size_t choices_len) {  // 응답이 중립점 4에서 떨어진 만큼 해당 성격 지표에 점수를 더합니다. 네 지표 쌍에서 점수가 높은 문자를 고르고, 동점이면 사전순으로 앞선 문자를 선택합니다.
 //     int points[128] = {0};  // 성격 문자별 누적 점수 저장
 //     for (size_t i = 0; i < survey_len; ++i) {  // 설문 또는 성격 쌍 위치 순서대로 확인
 //         if (choices[i] < 4) points[(unsigned char)survey[i][0]] += 4 - choices[i];  // 비동의 응답이면 첫 성격 문자에 4와의 차이만큼 점수 추가
@@ -55,7 +55,7 @@ char* solution(const char* survey[], size_t survey_len, int choices[], size_t ch
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 선택지의 동의·비동의 정도를 각 성격 지표의 점수에 더하기; 점수가 같으면 사전순으로 앞선 지표를 선택
+// 응답이 중립점 4에서 떨어진 만큼 해당 성격 지표에 점수를 더합니다. 네 지표 쌍에서 점수가 높은 문자를 고르고, 동점이면 사전순으로 앞선 문자를 선택합니다.
 ```
 
 ## 채점 기록

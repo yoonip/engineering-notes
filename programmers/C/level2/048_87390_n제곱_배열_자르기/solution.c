@@ -22,9 +22,9 @@ int* solution(int n, long long left, long long right) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int* solution(int n, long long left, long long right) {  // 0부터인 (행,열)의 값은 max(행,열)+1; 전체 n² 배열을 만들지 않고 필요한 인덱스만 행·열로 바꾸기
+// int* solution(int n, long long left, long long right) {  // 0부터 세는 (행, 열)의 값은 max(행, 열) + 1입니다. 전체 n² 배열을 만들지 않고 필요한 인덱스만 행·열로 바꿉니다.
 //     int* answer = malloc((size_t)(right - left + 1) * sizeof(*answer));  // 요청한 일차원 구간의 값 공간 확보
 //     for (long long index = left; index <= right; ++index) {  // 전체 배열을 펼친 위치 순서대로 확인
 //         long long row = index / n, col = index % n;  // 원래 배열의 행 / 원래 배열의 열 저장
@@ -34,5 +34,5 @@ int* solution(int n, long long left, long long right) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 0부터인 (행,열)의 값은 max(행,열)+1; 전체 n² 배열을 만들지 않고 필요한 인덱스만 행·열로 바꾸기
-// 예: n=3의 인덱스 2~5는 [3,2,2,3]; 구간 길이 L일 때 시간·결과 공간 O(L)
+// 0부터 세는 (행, 열)의 값은 max(행, 열) + 1입니다. 전체 n² 배열을 만들지 않고 필요한 인덱스만 행·열로 바꿉니다.
+// 예: n=3의 인덱스 2~5는 [3,2,2,3]입니다. 구간 길이가 L이면 시간·결과 공간은 O(L)입니다.

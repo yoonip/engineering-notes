@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/92341) · Level 2 · C
 
-## 풀이
+입출차를 짝지어 차량별 총 시간을 구하고, 출차 기록이 없으면 23:59에 마감합니다. 기본 시간을 초과한 부분에만 단위 요금을 올림 적용합니다.
 
-입출차를 짝지어 차량별 총 시간을 모으고, 미출차는 23:59로 마감하기; 기본 초과 시간에만 단위 요금을 올림 적용하기
-
-예: 총 334분이면 5000+ceil(154/10)×600=14600; 기록 R개·차량 C대일 때 시간 O(R+C log C), 공간 O(C)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 요금표가 [180,5000,10,600]이고 총 334분이면 5000+ceil(154/10)×600=14600입니다. 길이가 제한된 기록 R개에 대해 시간은 O(R+10000), 공간은 O(10000)입니다. 차량 번호 0000..9999의 배열을 순서대로 읽으므로 별도 정렬은 없습니다.
 
 ```c
 #include <stdio.h>
@@ -50,9 +44,9 @@ int* solution(int fees[], size_t fees_len, const char* records[], size_t records
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int* solution(int fees[], size_t fees_len, const char* records[], size_t records_len) {  // 입출차를 짝지어 차량별 총 시간을 모으고, 미출차는 23:59로 마감하기; 기본 초과 시간에만 단위 요금을 올림 적용하기
+// int* solution(int fees[], size_t fees_len, const char* records[], size_t records_len) {  // 입출차를 짝지어 차량별 총 시간을 구하고, 출차 기록이 없으면 23:59에 마감합니다. 기본 시간을 초과한 부분에만 단위 요금을 올림 적용합니다.
 //     (void)fees_len;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int entered[10000], totals[10000] = {0}; bool seen[10000] = {false};  // 차량별 누적 주차 시간 / 입차 기록이 있는 차량 저장
 //     for (int i = 0; i < 10000; ++i) entered[i] = -1;  // 주차 기록 위치 순서대로 확인; 차량별 마지막 입차 시각 갱신
@@ -73,8 +67,8 @@ int* solution(int fees[], size_t fees_len, const char* records[], size_t records
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 입출차를 짝지어 차량별 총 시간을 모으고, 미출차는 23:59로 마감하기; 기본 초과 시간에만 단위 요금을 올림 적용하기
-// 예: 총 334분이면 5000+ceil(154/10)×600=14600; 기록 R개·차량 C대일 때 시간 O(R+C log C), 공간 O(C)
+// 입출차를 짝지어 차량별 총 시간을 구하고, 출차 기록이 없으면 23:59에 마감합니다. 기본 시간을 초과한 부분에만 단위 요금을 올림 적용합니다.
+// 예: 요금표가 [180,5000,10,600]이고 총 334분이면 5000+ceil(154/10)×600=14600입니다. 길이가 제한된 기록 R개에 대해 시간은 O(R+10000), 공간은 O(10000)입니다. 차량 번호 0000..9999의 배열을 순서대로 읽으므로 별도 정렬은 없습니다.
 ```
 
 ## 채점 기록

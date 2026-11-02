@@ -49,7 +49,7 @@ char** solution(const char* quiz[], size_t quiz_len) {
 //         sscanf(quiz[i], "%d %c %d = %d", &a, &operation, &b, &result);  // sscanf로 quiz[i]에서 두 피연산자, 연산자, 오른쪽 결과를 읽기. &는 각 변수에 값을 기록할 주소를 전달
 //         int actual = operation == '+' ? a + b : a - b;  // 삼항 연산자 ?:로 operation이 +이면 a + b, 그렇지 않으면 a - b를 계산하여 actual에 저장
 //         answer[i] = malloc(2);  // 판정 문자 한 개와 문자열 종료 문자 한 개를 담도록 현재 결과 문자열에 2바이트를 확보
-//         answer[i][0] = actual == result ? 'O' : 'X'; answer[i][1] = '\0';  // 실제 계산값 actual과 result가 같으면 O, 다르면 X를 첫 칸에 기록하고, 두 번째 칸에 널 문자를 넣어 문자열을 끝
+//         answer[i][0] = actual == result ? 'O' : 'X'; answer[i][1] = '\0';  // 실제 계산값 actual과 result가 같으면 O, 다르면 X를 첫 칸에 기록하고, 두 번째 칸에 널 문자를 넣어 문자열을 끝냅니다.
 //     }  // 블록 끝
 //     return answer;  // 완성한 결과 반환
 // }  // 블록 끝

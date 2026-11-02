@@ -6,7 +6,7 @@
 
 ## 풀이
 
-현재 칠한 마지막 위치보다 뒤에 있는 미도색 구간을 만날 때만 롤러를 한 번 사용; 가능한 오른쪽까지 함께 칠하기
+왼쪽부터 아직 칠하지 않은 구역을 만날 때만 롤러를 사용합니다. 벽을 넘지 않는 범위에서 가능한 오른쪽까지 칠하고, 마지막으로 칠한 위치를 기록합니다.
 
 ## 코드와 줄별 설명
 
@@ -38,7 +38,7 @@ int solution(int n, int m, int section[], size_t section_len) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(int n, int m, int section[], size_t section_len) {  // 현재 칠한 마지막 위치보다 뒤에 있는 미도색 구간을 만날 때만 롤러를 한 번 사용; 가능한 오른쪽까지 함께 칠하기
+// int solution(int n, int m, int section[], size_t section_len) {  // 왼쪽부터 아직 칠하지 않은 구역을 만날 때만 롤러를 사용합니다. 벽을 넘지 않는 범위에서 가능한 오른쪽까지 칠하고, 마지막으로 칠한 위치를 기록합니다.
 //     int answer = 0, painted_until = 0;  // 롤러를 놓은 횟수 / 마지막으로 칠한 구간의 오른쪽 끝 저장
 //     for (size_t i = 0; i < section_len; ++i) if (section[i] > painted_until) {  // 아직 칠하지 않은 구역을 만나면 이 위치부터 롤러 놓기
 //         ++answer; int start = section[i] < n - m + 1 ? section[i] : n - m + 1; painted_until = start + m - 1;  // 롤러 횟수를 늘리고 벽을 넘지 않는 시작점에서 칠한 끝점 기록
@@ -47,7 +47,7 @@ int solution(int n, int m, int section[], size_t section_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 현재 칠한 마지막 위치보다 뒤에 있는 미도색 구간을 만날 때만 롤러를 한 번 사용; 가능한 오른쪽까지 함께 칠하기
+// 왼쪽부터 아직 칠하지 않은 구역을 만날 때만 롤러를 사용합니다. 벽을 넘지 않는 범위에서 가능한 오른쪽까지 칠하고, 마지막으로 칠한 위치를 기록합니다.
 ```
 
 ## 채점 기록

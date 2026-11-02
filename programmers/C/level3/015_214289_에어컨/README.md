@@ -57,7 +57,7 @@ int solution(int temperature, int t1, int t2, int a, int b, int onboard[], size_
 //             int natural = current + (current < outside) - (current > outside), targets[4] = {natural,current,current - 1,current + 1}, costs[4] = {0,b,a,a};  // 에어컨을 끈 다음 분 온도 / 끄기 유지 내리기 올리기의 다음 온도 / 네 동작의 추가 전력 저장
 //             for (int j = 0; j < 4; ++j) {  // 에어컨 동작 번호 순서대로 확인
 //                 int target = targets[j]; if (target < 0 || target > 50 || (onboard[time] && (target < low || target > high))) continue;  // 시험할 다음 실내 온도 저장
-//                 if (dp[current] + costs[j] < next[target]) next[target] = dp[current] + costs[j];  // 다음 온도에 도달하는 전기 요금이 더 적으면 갱신
+//                 if (dp[current] + costs[j] < next[target]) next[target] = dp[current] + costs[j];  // 다음 온도에 도달하는 누적 소비전력이 더 적으면 갱신
 //             }  // 이 범위 끝
 //         }  // 이 범위 끝
 //         memcpy(dp, next, sizeof(dp));  // 현재 온도별 최소 전력 / 다음 분의 온도별 최소 전력 복사

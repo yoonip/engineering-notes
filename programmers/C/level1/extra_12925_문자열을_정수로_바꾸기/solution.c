@@ -17,7 +17,7 @@ int solution(const char* s) { return atoi(s); }
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(const char* s) { return atoi(s); }  // 부호를 포함한 십진 문자열을 정수로 변환
+// int solution(const char* s) { return atoi(s); }  // 부호를 포함한 십진 문자열을 정수로 변환합니다.
 
 // 풀이 요약
-// 부호를 포함한 십진 문자열을 정수로 변환
+// 부호를 포함한 십진 문자열을 정수로 변환합니다.

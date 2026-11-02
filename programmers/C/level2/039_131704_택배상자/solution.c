@@ -23,9 +23,9 @@ int solution(int order[], size_t order_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(int order[], size_t order_len) {  // 상자를 순서대로 스택에 넣고, 스택 위가 다음 요청이면 즉시 적재하기; 마지막 도착 뒤에도 못 꺼낸 상자는 적재 불가
+// int solution(int order[], size_t order_len) {  // 상자를 순서대로 스택에 넣고, 맨 위가 다음 요청 상자이면 즉시 적재합니다. 마지막 상자가 도착한 뒤에도 꺼내지 못한 상자는 적재할 수 없습니다.
 //     int* stack = malloc(order_len * sizeof(*stack)); size_t top = 0, answer = 0;  // 보조 컨테이너 벨트 / 보조 벨트의 상자 수 / 지금까지 실은 상자 수 공간 확보
 //     for (size_t box = 1; box <= order_len; ++box) {  // 주 벨트에서 들어오는 상자 번호 순서대로 확인
 //         stack[top++] = (int)box;  // 보조 컨테이너 벨트 갱신
@@ -36,5 +36,5 @@ int solution(int order[], size_t order_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 상자를 순서대로 스택에 넣고, 스택 위가 다음 요청이면 즉시 적재하기; 마지막 도착 뒤에도 못 꺼낸 상자는 적재 불가
-// 예: [4,3,1,2,5]에서는 4·3만 적재해 2; 각 상자는 한 번씩 들어가고 나오므로 시간·공간 O(N)
+// 상자를 순서대로 스택에 넣고, 맨 위가 다음 요청 상자이면 즉시 적재합니다. 마지막 상자가 도착한 뒤에도 꺼내지 못한 상자는 적재할 수 없습니다.
+// 예: [4,3,1,2,5]에서는 4·3만 적재하므로 답은 2입니다. 각 상자는 한 번씩 들어가고 나오므로 N개 상자의 시간·공간은 O(N)입니다.

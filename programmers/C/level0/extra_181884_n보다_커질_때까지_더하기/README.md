@@ -36,7 +36,8 @@ int solution(int numbers[], size_t numbers_len, int n) {
 //     int sum = 0;  // 누적 합계 저장
 //     for (size_t i = 0; i < numbers_len && sum <= n; ++i) sum += numbers[i];  // 누적합이 n 이하인 동안 다음 수를 더해, 처음 n을 초과하면 종료
 //     return sum;  // 처음으로 n을 초과하게 된 누적합 반환
-// }  // 블록 끝// 풀이 요약
+// }  // 블록 끝
+// 풀이 요약
 // 앞에서부터 더하며 누적합이 처음 n을 초과하는 순간 종료. n과 같을 때는 다음 원소도 더함.
 ```
 

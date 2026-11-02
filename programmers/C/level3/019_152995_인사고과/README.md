@@ -53,7 +53,7 @@ int solution(int** scores, size_t scores_rows, size_t scores_cols) {
 // static int compare(const void* p, const void* q) {  // 첫 점수 내림차순, 같은 첫 점수는 둘째 점수 오름차순 비교
 //     const Score* a = p; const Score* b = q;  // 첫 비교 직원 / 둘째 비교 직원 저장
 //     if (a->first != b->first) return (b->first > a->first) - (b->first < a->first);  // 첫 점수가 다르면 내림차순으로 비교
-//     return (a->second > b->second) - (a->second < b->second);  // 첫 비교 직원 / 둘째 비교 직원로 최종값 계산
+//     return (a->second > b->second) - (a->second < b->second);  // 첫 점수가 같으면 둘째 점수를 오름차순으로 비교
 // }  // 이 범위 끝
 // int solution(int** scores, size_t scores_rows, size_t scores_cols) {  // 첫 점수를 내림차순, 같은 첫 점수에서는 둘째 점수를 오름차순으로 정렬; 이 순서면 앞에서 본 둘째 점수보다 낮은 직원만 두 점수 모두 낮은 제외 대상
 //     (void)scores_cols; Score target = {scores[0][0],scores[0][1]}; int target_sum = target.first + target.second;  // 완호의 두 점수 / 완호의 점수 합 갱신
@@ -61,7 +61,7 @@ int solution(int** scores, size_t scores_rows, size_t scores_cols) {
 //     qsort(sorted, scores_rows, sizeof(*sorted), compare); int answer = 1, best_second = -1;  // 첫 점수 내림차순 둘째 점수 오름차순 사본 / 완호보다 높은 유효 직원 수에 1을 더한 순위 정렬 순서 맞추기
 //     for (size_t i = 0; i < scores_rows; ++i) {  // 직원 정렬 위치 순서대로 확인
 //         Score current = sorted[i];  // 현재 비교할 직원 점수 저장
-//         if (current.second < best_second) { if (current.first == target.first && current.second == target.second) { free(sorted); return -1; } continue; }  // 앞 사람보다 두 번째 점수가 낮으면 탈락, 원호라면 -1 반환
+//         if (current.second < best_second) { if (current.first == target.first && current.second == target.second) { free(sorted); return -1; } continue; }  // 앞에서 본 둘째 점수의 최댓값보다 낮으면 제외하고, 완호이면 -1 반환
 //         best_second = current.second; if (current.first + current.second > target_sum) ++answer;  // 앞선 직원의 둘째 점수 최댓값 갱신
 //     }  // 이 범위 끝
 //     free(sorted);  // 첫 점수 내림차순 둘째 점수 오름차순 사본 임시 공간 정리

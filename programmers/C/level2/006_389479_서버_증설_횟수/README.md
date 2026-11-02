@@ -4,15 +4,11 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/389479) · Level 2 · C
 
-## 풀이
+매 시간 만료된 서버를 먼저 빼고, 필요한 서버 수 people / m에서 부족한 만큼 증설합니다. C에서 음이 아닌 정수끼리의 / 연산은 몫을 구합니다.
 
-매 시간 만료 서버를 먼저 빼고, 필요한 서버 수 people//m에서 부족한 만큼만 증설하기
-새 서버는 hour+k에 만료됨; 시간·공간 O(시간 수+k)
-예: m=3, 현재 2대, 이용자 10명이면 10//3=3대가 필요하므로 1대를 추가하기
+새 서버는 hour+k에 만료됩니다. 시간·공간은 O(시간 수+k)입니다.
 
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: m=3, 현재 2대, 이용자 10명이면 10/3의 몫인 3대가 필요하므로 1대를 추가합니다.
 
 ```c
 #include <stdio.h>
@@ -41,9 +37,9 @@ int solution(int players[], size_t players_len, int m, int k) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(int players[], size_t players_len, int m, int k) {  // 매 시간 만료 서버를 먼저 빼고, 필요한 서버 수 people//m에서 부족한 만큼만 증설하기
+// int solution(int players[], size_t players_len, int m, int k) {  // 매 시간 만료된 서버를 먼저 빼고, 필요한 서버 수 people / m에서 부족한 만큼 증설합니다. C에서 음이 아닌 정수끼리의 / 연산은 몫을 구합니다.
 //     int* expires = calloc(players_len + k, sizeof(*expires)); int active = 0, answer = 0;  // 시각별 반납할 서버 수 / 현재 돌아가는 증설 서버 수 / 서버를 증설한 총대수 공간 확보하고 0으로 시작
 //     for (size_t hour = 0; hour < players_len; ++hour) {  // 현재 시간대 순서대로 확인
 //         active -= expires[hour]; int added = players[hour] / m - active;  // 현재 돌아가는 증설 서버 수 / 시각별 반납할 서버 수 / 현재 시간대에서 이번 사용량 빼기
@@ -55,9 +51,9 @@ int solution(int players[], size_t players_len, int m, int k) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 매 시간 만료 서버를 먼저 빼고, 필요한 서버 수 people//m에서 부족한 만큼만 증설하기
-// 새 서버는 hour+k에 만료됨; 시간·공간 O(시간 수+k)
-// 예: m=3, 현재 2대, 이용자 10명이면 10//3=3대가 필요하므로 1대를 추가하기
+// 매 시간 만료된 서버를 먼저 빼고, 필요한 서버 수 people / m에서 부족한 만큼 증설합니다. C에서 음이 아닌 정수끼리의 / 연산은 몫을 구합니다.
+// 새 서버는 hour+k에 만료됩니다. 시간·공간은 O(시간 수+k)입니다.
+// 예: m=3, 현재 2대, 이용자 10명이면 10/3의 몫인 3대가 필요하므로 1대를 추가합니다.
 ```
 
 ## 채점 기록

@@ -29,5 +29,6 @@ int solution(int sides[], size_t sides_len) {
 //         if (sides[i] > largest) largest = sides[i];  // sides[i] > largest이면 largest에 sides[i] 저장
 //     }  // 블록 끝
 //     return total - largest > largest ? 1 : 2;  // 가장 긴 변이 나머지 두 변의 합보다 작으면 1, 아니면 2 반환
-// }  // 블록 끝// 풀이 요약
+// }  // 블록 끝
+// 풀이 요약
 // 전체 합에서 가장 긴 변을 뺀 값이 가장 긴 변보다 큰지 확인

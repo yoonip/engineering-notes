@@ -40,7 +40,8 @@ int* solution(const char* intStrs[], size_t intStrs_len, int k, int s, int l) {
 //         if (value > k) answer[used++] = value;  // >로 기준을 초과하는지 검사하고 결과 배열에 저장한 뒤 개수를 늘림
 //     }  // 블록 끝
 //     return answer;  // 완성한 결과 반환
-// }  // 블록 끝// 풀이 요약
+// }  // 블록 끝
+// 풀이 요약
 // 시작 위치 s에서 l글자를 정수로 읽고 k보다 큰 값만 저장
 ```
 

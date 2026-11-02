@@ -27,7 +27,7 @@ int* solution(int e, int starts[], size_t starts_len) {
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// int* solution(int e, int starts[], size_t starts_len) {  // 정수 x가 곱셈표에 나오는 횟수는 x의 약수 개수; 소인수 지수가 a일 때 약수 선택 수 a+1을 곱하는 체로 개수를 계산
+// int* solution(int e, int starts[], size_t starts_len) {  // 정수 x가 곱셈표에 나타나는 횟수는 x의 약수 개수입니다. 각 소인수의 지수가 a이면 약수 개수에 a+1을 곱하는 원리를 체에 적용합니다.
 //     int* divisors = malloc(((size_t)e + 1) * sizeof(*divisors)); int* winner = malloc(((size_t)e + 1) * sizeof(*winner));  // 정수별 약수 개수 / 각 시작 이상에서 최선인 정수 공간 확보
 //     for (int i = 0; i <= e; ++i) divisors[i] = 1;  // 뒤에서 확인할 정수 또는 질의 순서대로 확인; 정수별 약수 개수 갱신
 //     for (int prime = 2; prime <= e; ++prime) if (divisors[prime] == 1) {  // 아직 약수 정보가 없는 수를 소수로 잡아 배수의 약수 수 계산
@@ -42,6 +42,6 @@ int* solution(int e, int starts[], size_t starts_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 정수 x가 곱셈표에 나오는 횟수는 x의 약수 개수; 소인수 지수가 a일 때 약수 선택 수 a+1을 곱하는 체로 개수를 계산
-// 시작점을 내림차순으로 처리하면 오른쪽부터 구간을 늘리며 한 번만 스캔할 수 있음; 같은 약수 개수면 더 작은 수로 갱신; 시간 O(E log log E+Q log Q), 공간 O(E+Q)
-// 예: 1~8에서 6과 8의 약수는 네 개로 최다; [1,8]·[3,8]은 작은 수 6, [7,8]은 8이 답
+// 정수 x가 곱셈표에 나타나는 횟수는 x의 약수 개수입니다. 각 소인수의 지수가 a이면 약수 개수에 a+1을 곱하는 원리를 체에 적용합니다.
+// 끝값 E부터 1까지 내려오며 각 구간 [i,E]의 최선인 수를 winner[i]에 저장합니다. 약수 개수가 같으면 더 작은 수를 고르고, Q개 질의는 배열에서 바로 조회합니다. 시간은 O(E log log E+Q), 반환 배열을 포함한 공간은 O(E+Q)입니다.
+// 예를 들어 1~8에서는 6과 8의 약수가 각각 네 개로 가장 많습니다. [1,8]과 [3,8]의 답은 더 작은 6이고, [7,8]의 답은 8입니다.

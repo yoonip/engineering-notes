@@ -20,10 +20,10 @@ double solution(int arr[], size_t arr_len) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// double solution(int arr[], size_t arr_len) {  // 모든 원소의 합을 실수로 바꾸어 원소 수로 나누기
+// double solution(int arr[], size_t arr_len) {  // 모든 원소의 합을 long long으로 누적합니다. 합을 double로 바꾼 뒤 원소 수로 나누어 소수 부분을 포함한 평균을 구합니다.
 //     long long sum = 0; for (size_t i = 0; i < arr_len; ++i) sum += arr[i];  // 배열 원소의 합 / 평균에 더할 원소 위치 저장
-//     return (double)sum / arr_len;  // 배열 원소의 합로 최종값 계산
+//     return (double)sum / arr_len;  // (double) 형 변환 후 원소 수로 나누어 실수 평균 반환
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 모든 원소의 합을 실수로 바꾸어 원소 수로 나누기
+// 모든 원소의 합을 long long으로 누적합니다. 합을 double로 바꾼 뒤 원소 수로 나누어 소수 부분을 포함한 평균을 구합니다.

@@ -57,8 +57,8 @@ int solution(int** maze, size_t maze_rows, size_t maze_cols) {
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// typedef struct { uint64_t key; int turns; } Entry;  // 두 수레의 위치와 방문 집합 키 / 지금까지 움직인 턴를 한 상태로 묶기
-// typedef struct { int rows, cols, red_goal, blue_goal, best; int** maze; Entry* memo; size_t cap; } Context;  // 같은 상태에 도달한 최소 턴 / 메모 용량를 한 상태로 묶기
+// typedef struct { uint64_t key; int turns; } Entry;  // 두 수레의 위치와 방문 집합 키 / 지금까지 움직인 턴 수를 한 상태로 묶기
+// typedef struct { int rows, cols, red_goal, blue_goal, best; int** maze; Entry* memo; size_t cap; } Context;  // 같은 상태에 도달한 최소 턴 / 메모 용량을 한 상태로 묶기
 // static void search(Context* ctx, int red, int blue, unsigned red_mask, unsigned blue_mask, int turns) {  // 수레의 목표와 탐색 정보 / 빨간 수레 위치 / 파란 수레 위치 / 빨간 수레가 지났던 칸 계산용 함수
 //     if (red == ctx->red_goal && blue == ctx->blue_goal) { if (turns < ctx->best) ctx->best = turns; return; }  // 두 수레가 모두 도착하면 최단 턴 수를 갱신하고 탐색 종료
 //     int rd = abs(red / ctx->cols - ctx->red_goal / ctx->cols) + abs(red % ctx->cols - ctx->red_goal % ctx->cols);  // 빨간 수레의 목표 최소 거리 저장
@@ -81,7 +81,7 @@ int solution(int** maze, size_t maze_rows, size_t maze_cols) {
 //     for (size_t r = 0; r < maze_rows; ++r) for (size_t c = 0; c < maze_cols; ++c) if (maze[r][c] >= 1 && maze[r][c] <= 4) places[maze[r][c]] = (int)(r * maze_cols + c);  // 다음 후보 행 순서대로 확인; 다음 후보 열 갱신
 //     size_t cap = (size_t)1 << 20; Entry* memo = calloc(cap, sizeof(*memo)); int impossible = (int)(maze_rows * maze_cols) + 1;  // 메모 용량 / 같은 상태에 도달한 최소 턴 / 목표에 못 가는 경우의 상한 공간 확보하고 0으로 시작
 //     Context ctx = {(int)maze_rows,(int)maze_cols,places[3],places[4],impossible,maze,memo,cap}; search(&ctx,places[1],places[2],1u << places[1],1u << places[2],0); free(memo);  // 수레의 목표와 탐색 정보 / 빨강 파랑의 출발과 도착 위치 / 목표에 못 가는 경우의 상한 / 같은 상태에 도달한 최소 턴 임시 공간 정리
-//     return ctx.best == impossible ? 0 : ctx.best;  // 수레의 목표와 탐색 정보 / 목표에 못 가는 경우의 상한로 최종값 계산
+//     return ctx.best == impossible ? 0 : ctx.best;  // 최단 턴을 찾았으면 그 값을 반환하고 도달할 수 없으면 0 반환
 // }  // 이 범위 끝
 
 // 풀이 요약

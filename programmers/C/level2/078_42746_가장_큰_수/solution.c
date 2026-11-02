@@ -36,17 +36,17 @@ char* solution(int numbers[], size_t numbers_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// typedef struct { char digits[5]; } Number;  // 숫자 한 개의 십진수 표현를 한 상태로 묶기
+// typedef struct { char digits[5]; } Number;  // 숫자 한 개의 십진수 표현을 한 상태로 묶기
 // static int compare(const void* p, const void* q) {  // 두 숫자를 이어 붙인 순서를 비교해 더 큰 조합이 앞으로 오게 정렬
-//     const Number* a = p; const Number* b = q;  // const Number* a = p; const Number* b = q
+//     const Number* a = p; const Number* b = q;  // void 포인터를 읽기 전용 Number 포인터로 받아 비교 대상에 접근
 //     char ab[10], ba[10];  // a 뒤에 b를 붙인 수 / b 뒤에 a를 붙인 수 확인
 //     snprintf(ab, sizeof(ab), "%s%s", a->digits, b->digits);  // snprintf로 정수 또는 이어 붙인 문자열을 버퍼 크기에 맞게 기록
 //     snprintf(ba, sizeof(ba), "%s%s", b->digits, a->digits);  // snprintf로 정수 또는 이어 붙인 문자열을 버퍼 크기에 맞게 기록
-//     return strcmp(ba, ab);  // b 뒤에 a를 붙인 수 / a 뒤에 b를 붙인 수로 최종값 계산
+//     return strcmp(ba, ab);  // ba와 ab의 사전순 비교 부호를 반환하여 큰 연결 문자열이 앞에 오도록 정렬
 // }  // 이 범위 끝
-// char* solution(int numbers[], size_t numbers_len) {  // 앞뒤 연결 순서에서 더 큰 수를 만드는 숫자를 먼저 두기; 입력은 1000 이하라 반복 문자열 비교로 그 순서를 정할 수 있음
+// char* solution(int numbers[], size_t numbers_len) {  // 두 숫자 문자열 a, b를 ab와 ba 순으로 연결해 비교합니다. 더 큰 문자열을 만드는 순서로 정렬하며, 입력 1000 이하에서는 비교 문자열 길이가 일정하게 제한됩니다.
 //     Number* parts = malloc(numbers_len * sizeof(*parts));  // 숫자를 문자열로 바꾼 목록 공간 확보
 //     for (size_t i = 0; i < numbers_len; ++i) snprintf(parts[i].digits, sizeof(parts[i].digits), "%d", numbers[i]);  // snprintf로 정수 또는 이어 붙인 문자열을 버퍼 크기에 맞게 기록
 //     qsort(parts, numbers_len, sizeof(*parts), compare);  // 숫자를 문자열로 바꾼 목록 정렬 순서 맞추기
@@ -62,5 +62,5 @@ char* solution(int numbers[], size_t numbers_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 앞뒤 연결 순서에서 더 큰 수를 만드는 숫자를 먼저 두기; 입력은 1000 이하라 반복 문자열 비교로 그 순서를 정할 수 있음
-// 예: [3,30,34,5,9]→9·5·34·3·30→'9534330'; 숫자 N개일 때 시간 O(N log N), 공간 O(N)
+// 두 숫자 문자열 a, b를 ab와 ba 순으로 연결해 비교합니다. 더 큰 문자열을 만드는 순서로 정렬하며, 입력 1000 이하에서는 비교 문자열 길이가 일정하게 제한됩니다.
+// 예: [3,30,34,5,9]는 9·5·34·3·30 순으로 연결해 '9534330'입니다. 숫자 N개에 대해 시간은 O(N log N), 공간은 O(N)입니다.

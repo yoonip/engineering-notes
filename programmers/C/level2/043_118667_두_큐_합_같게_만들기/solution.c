@@ -30,9 +30,9 @@ int solution(int queue1[], size_t queue1_len, int queue2[], size_t queue2_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(int queue1[], size_t queue1_len, int queue2[], size_t queue2_len) {  // 합이 큰 큐의 앞 원소를 작은 큐로 옮기기; 양수이므로 목표보다 큰 구간은 앞을 줄이고 작으면 뒤를 늘리는 두 포인터와 같음
+// int solution(int queue1[], size_t queue1_len, int queue2[], size_t queue2_len) {  // 합이 큰 큐의 앞 원소를 작은 큐로 옮깁니다. 원소가 양수이므로 목표보다 큰 구간은 앞을 줄이고 작으면 뒤를 늘리는 두 포인터와 같습니다.
 //     size_t length = queue1_len + queue2_len, left = 0, right = queue1_len;  // 두 큐 전체 길이 / 첫 큐에서 뺄 위치 / 둘째 큐에서 가져올 위치 저장
 //     int* circle = malloc(length * sizeof(*circle)); long long current = 0, total = 0;  // 두 큐를 이어 붙인 원형 배열 / 현재 첫 큐 합 / 두 큐 전체 합 공간 확보
 //     for (size_t i = 0; i < queue1_len; ++i) { circle[i] = queue1[i]; current += queue1[i]; }  // 큐 원소 복사 위치 순서대로 확인; 두 큐를 이어 붙인 원형 배열 갱신
@@ -50,5 +50,5 @@ int solution(int queue1[], size_t queue1_len, int queue2[], size_t queue2_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 합이 큰 큐의 앞 원소를 작은 큐로 옮기기; 양수이므로 목표보다 큰 구간은 앞을 줄이고 작으면 뒤를 늘리는 두 포인터와 같음
-// 예: 첫 예제는 3을 옮긴 뒤 4를 받아 2회; 같은 길이 N인 큐에서 시간·공간 O(N)
+// 합이 큰 큐의 앞 원소를 작은 큐로 옮깁니다. 원소가 양수이므로 목표보다 큰 구간은 앞을 줄이고 작으면 뒤를 늘리는 두 포인터와 같습니다.
+// 예: 첫 공개 예제는 3을 옮긴 뒤 4를 받아 2회입니다. 두 큐의 길이가 각각 N이면 시간·공간은 O(N)입니다.

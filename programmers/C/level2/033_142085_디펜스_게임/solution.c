@@ -40,11 +40,11 @@ int solution(int n, int k, int enemy[], size_t enemy_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static void push(int* heap, size_t* count, int value) {  // 새 상태를 힙에 넣고 부모 방향으로 자리 찾기
 //     size_t pos = (*count)++;  // 힙에서 값을 둘 위치 저장
-//     while (pos && heap[(pos - 1) / 2] > value) { heap[pos] = heap[(pos - 1) / 2]; pos = (pos - 1) / 2; }  // 무적권으로 막아 둔 적 수의 최소 힙에 남은 경로를 비용순으로 처리
+//     while (pos && heap[(pos - 1) / 2] > value) { heap[pos] = heap[(pos - 1) / 2]; pos = (pos - 1) / 2; }  // 새 값보다 큰 부모를 아래로 옮기며 삽입 위치를 위로 이동
 //     heap[pos] = value;  // 무적권으로 막아 둔 적 수의 최소 힙 갱신
 // }  // 이 범위 끝
 // static int pop(int* heap, size_t* count) {  // 힙의 첫 값을 꺼내고 마지막 값으로 빈자리 메우기
@@ -58,10 +58,10 @@ int solution(int n, int k, int enemy[], size_t enemy_len) {
 //     if (*count) heap[pos] = value;  // 꺼낸 뒤 힙이 남아 있으면 찾은 자리에 마지막 값 넣기
 //     return result;  // 힙의 최솟값 반환
 // }  // 이 범위 끝
-// int solution(int n, int k, int enemy[], size_t enemy_len) {  // 진행한 공격 중 큰 k개에 무적권을 배정하고 나머지를 병사로 막기; 최소 힙에서 가장 작은 공격을 병사 비용으로 옮기기
+// int solution(int n, int k, int enemy[], size_t enemy_len) {  // 진행한 공격 중 큰 k개에 무적권을 배정하고 나머지는 병사로 막습니다. 최소 힙에서 가장 작은 공격을 꺼내 병사 비용으로 계산합니다.
 //     int* heap = malloc((enemy_len + 1) * sizeof(*heap)); size_t count = 0;  // 무적권으로 막아 둔 적 수의 최소 힙 / 힙에 담긴 라운드 수 공간 확보
 //     for (size_t i = 0; i < enemy_len; ++i) {  // 현재 라운드 번호 순서대로 확인
-//         push(heap, &count, enemy[i]);  // 다음에 확인할 경로를 힙에 추가
+//         push(heap, &count, enemy[i]);  // 현재 라운드의 적 수를 무적권 후보 최소 힙에 추가
 //         if (count > (size_t)k) n -= pop(heap, &count);  // 무적권 수보다 많은 라운드를 담았으면 가장 작은 적 수만 병사로 막기
 //         if (n < 0) { free(heap); return (int)i; }  // 아직 남은 병사 수가 0보다 작으면 무적권으로 막아 둔 적 수의 최소 힙 / 현재 라운드 번호 임시 공간 정리
 //     }  // 이 범위 끝
@@ -70,5 +70,5 @@ int solution(int n, int k, int enemy[], size_t enemy_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 진행한 공격 중 큰 k개에 무적권을 배정하고 나머지를 병사로 막기; 최소 힙에서 가장 작은 공격을 병사 비용으로 옮기기
-// 예: 병사 7·무적권 3이면 예제에서 5라운드 성공; 라운드 N개일 때 시간 O(N log(min(k,N)+1)), 공간 O(min(k,N))
+// 진행한 공격 중 큰 k개에 무적권을 배정하고 나머지는 병사로 막습니다. 최소 힙에서 가장 작은 공격을 꺼내 병사 비용으로 계산합니다.
+// 예: 병사 7·무적권 3인 첫 공개 예제는 5라운드까지 성공합니다. N개 라운드의 시간은 O(N log(min(k,N)+2))입니다. 힙의 사용량은 최대 min(k,N)+1개이나, 이 코드는 처음부터 N+1칸을 할당하므로 추가 공간은 O(N)입니다.

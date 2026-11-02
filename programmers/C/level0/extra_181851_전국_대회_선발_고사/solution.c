@@ -29,7 +29,7 @@ int solution(int rank[], size_t rank_len, bool attendance[], size_t attendance_l
 //         for (int j = 0; j < 3; ++j) if (selected[j] < 0 || rank[i] < rank[selected[j]]) {  // 상위 세 자리 j를 살피며 빈자리이거나 현재 학생의 등수가 더 작은 첫 위치를 찾기
 //             for (int q = 2; q > j; --q) selected[q] = selected[q - 1];  // 뒤쪽 자리부터 오른쪽으로 한 칸씩 옮겨 현재 학생을 등수순으로 끼워 넣을 자리를 만들기
 //             selected[j] = (int)i;  // 현재 학생의 배열 인덱스 i를 학생 번호로 변환하여 선발 위치 j에 저장
-//             break;  // 한 학생을 한 자리만 차지하게 하려고 선발 위치를 찾는 안쪽 반복문을 끝
+//             break;  // 한 학생이 한 자리만 차지하도록 선발 위치를 찾는 안쪽 반복문을 끝냅니다.
 //         }  // 블록 끝
 //     }  // 블록 끝
 //     return 10000 * selected[0] + 100 * selected[1] + selected[2];  // 등수가 높은 세 학생 번호를 a, b, c 순서로 10000a + 100b + c에 대입해 반환

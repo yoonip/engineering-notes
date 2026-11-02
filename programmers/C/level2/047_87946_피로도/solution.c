@@ -26,7 +26,7 @@ int solution(int k, int** dungeons, size_t dungeons_rows, size_t dungeons_cols) 
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static int search(int fatigue, int** dungeons, size_t count, unsigned used) {  // 지금 남은 피로도 / 던전 개수 / 이미 탐험한 던전 비트 계산용 함수
 //     int best = 0;  // 앞으로 갈 수 있는 최대 던전 수 저장
@@ -36,11 +36,11 @@ int solution(int k, int** dungeons, size_t dungeons_rows, size_t dungeons_cols) 
 //     }  // 이 범위 끝
 //     return best;  // 앞으로 갈 수 있는 최대 던전 수 반환
 // }  // 이 범위 끝
-// int solution(int k, int** dungeons, size_t dungeons_rows, size_t dungeons_cols) {  // 던전이 최대 8개이므로 모든 방문 순서를 확인; 입장 조건을 만족하는 동안 피로도를 차감해 방문 수를 세기
+// int solution(int k, int** dungeons, size_t dungeons_rows, size_t dungeons_cols) {  // 던전이 최대 8개이므로 가능한 방문 순서를 탐색합니다. 입장 조건을 만족하는 던전에만 들어가 피로도를 차감하고 방문 수를 셉니다.
 //     (void)dungeons_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     return search(k, dungeons, dungeons_rows, 0);  // 아직 방문한 던전 없이 피로도 k에서 최대 방문 수 탐색
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 던전이 최대 8개이므로 모든 방문 순서를 확인; 입장 조건을 만족하는 동안 피로도를 차감해 방문 수를 세기
-// 예: 80에서 80/20→30/10→50/40 순으로 세 곳 방문 가능; 던전 N개일 때 시간 O(N!*N), 순열 작업 공간 O(N)
+// 던전이 최대 8개이므로 가능한 방문 순서를 탐색합니다. 입장 조건을 만족하는 던전에만 들어가 피로도를 차감하고 방문 수를 셉니다.
+// 예: 피로도 80에서 [최소 필요/소모]가 80/20→30/10→50/40인 순서로 세 곳을 방문할 수 있습니다. 던전 N개에 대해 시간 상한은 O(N!*N), 탐색 공간은 O(N)입니다.

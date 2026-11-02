@@ -6,7 +6,7 @@
 
 ## 풀이
 
-두 문자열에서 각 숫자의 등장 횟수를 세기; 공통 개수만큼 큰 숫자부터 붙이고 공통 숫자가 없거나 0만 있는 경우를 따로 처리
+두 문자열에서 숫자별 등장 횟수를 셉니다. 공통으로 사용할 수 있는 개수만큼 큰 숫자부터 붙이고, 공통 숫자가 없거나 0만 있는 경우를 따로 처리합니다.
 
 ## 코드와 줄별 설명
 
@@ -48,7 +48,7 @@ char* solution(const char* X, const char* Y) {
 // static char* copy_text(const char* text) {  // 문자열을 새 공간에 복사해서 돌려주기
 //     char* result = malloc(strlen(text) + 1); strcpy(result, text); return result;  // 문자열 길이와 널 문자 공간을 확보해서 원문 사본 반환
 // }  // 이 범위 끝
-// char* solution(const char* X, const char* Y) {  // 두 문자열에서 각 숫자의 등장 횟수를 세기; 공통 개수만큼 큰 숫자부터 붙이고 공통 숫자가 없거나 0만 있는 경우를 따로 처리
+// char* solution(const char* X, const char* Y) {  // 두 문자열에서 숫자별 등장 횟수를 셉니다. 공통으로 사용할 수 있는 개수만큼 큰 숫자부터 붙이고, 공통 숫자가 없거나 0만 있는 경우를 따로 처리합니다.
 //     int x[10] = {0}, y[10] = {0};  // X의 숫자별 등장 횟수 / Y의 숫자별 등장 횟수 저장
 //     for (size_t i = 0; X[i]; ++i) ++x[X[i] - '0']; for (size_t i = 0; Y[i]; ++i) ++y[Y[i] - '0'];  // X와 Y에서 숫자별 등장 횟수 따로 세기
 //     size_t length = 0; for (int digit = 0; digit < 10; ++digit) length += x[digit] < y[digit] ? x[digit] : y[digit];  // 공통으로 쓸 수 있는 자릿수 / 꺼낼 공통 숫자 저장
@@ -61,7 +61,7 @@ char* solution(const char* X, const char* Y) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 두 문자열에서 각 숫자의 등장 횟수를 세기; 공통 개수만큼 큰 숫자부터 붙이고 공통 숫자가 없거나 0만 있는 경우를 따로 처리
+// 두 문자열에서 숫자별 등장 횟수를 셉니다. 공통으로 사용할 수 있는 개수만큼 큰 숫자부터 붙이고, 공통 숫자가 없거나 0만 있는 경우를 따로 처리합니다.
 ```
 
 ## 채점 기록

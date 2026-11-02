@@ -28,9 +28,9 @@ int solution(const char* skill, const char* skill_trees[], size_t skill_trees_le
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(const char* skill, const char* skill_trees[], size_t skill_trees_len) {  // 선행 조건이 없는 스킬을 지운 뒤, 남은 순서가 skill의 앞부분과 같으면 가능; 앞 스킬을 생략하고 뒤 스킬만 배울 수 없음
+// int solution(const char* skill, const char* skill_trees[], size_t skill_trees_len) {  // 선행 순서에 없는 스킬은 건너뛰고, 나머지가 skill의 앞부분과 일치하는지 확인합니다. 별도 문자열을 만들지는 않습니다.
 //     int answer = 0;  // 선행 순서를 지킨 스킬트리 수 저장
 //     for (size_t i = 0; i < skill_trees_len; ++i) {  // 확인할 스킬트리 위치 순서대로 확인
 //         size_t index = 0; bool valid = true;  // 다음에 나와야 할 선행 스킬 / 현재 트리의 유효 여부 저장
@@ -46,5 +46,5 @@ int solution(const char* skill, const char* skill_trees[], size_t skill_trees_le
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 선행 조건이 없는 스킬을 지운 뒤, 남은 순서가 skill의 앞부분과 같으면 가능; 앞 스킬을 생략하고 뒤 스킬만 배울 수 없음
-// 예: CBD에서 CBADF→CBD, AECB→CB는 가능해 2개; 전체 문자열 길이 합 L에 대해 시간 O(L), 임시 공간 O(스킬트리 길이)
+// 선행 순서에 없는 스킬은 건너뛰고, 나머지가 skill의 앞부분과 일치하는지 확인합니다. 별도 문자열을 만들지는 않습니다.
+// 예: skill=CBD에서 CBADF의 관련 스킬은 CBD, AECB는 CB이므로 둘 다 가능합니다. 입력 문자열 길이 합 L, 선행 스킬 길이 S에 대해 strchr 검색을 포함한 시간은 O(LS), 추가 공간은 O(1)입니다. 이 문제에서는 S가 알파벳 수로 제한됩니다.

@@ -27,9 +27,9 @@ int* solution(const char* keymap[], size_t keymap_len, const char* targets[], si
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int* solution(const char* keymap[], size_t keymap_len, const char* targets[], size_t targets_len) {  // 알파벳마다 필요한 최소 누름 횟수를 계산; 목표 문자열의 횟수를 더하고 입력할 수 없는 문자가 있으면 -1을 반환
+// int* solution(const char* keymap[], size_t keymap_len, const char* targets[], size_t targets_len) {  // 알파벳마다 필요한 최소 누름 횟수를 미리 구합니다. 목표 문자열의 문자별 횟수를 더하고, 입력할 수 없는 문자가 하나라도 있으면 -1을 반환합니다.
 //     int presses[26]; for (int i = 0; i < 26; ++i) presses[i] = INT_MAX;  // 키 또는 목표 단어의 문자 위치 / 알파벳별 최소 누름 횟수 저장
-//     for (size_t k = 0; k < keymap_len; ++k) for (size_t i = 0; keymap[k][i]; ++i) { int c = keymap[k][i] - 'A'; if ((int)i + 1 < presses[c]) presses[c] = (int)i + 1; }  // 키맵의 키 번호 순서대로 확인; 키 또는 목표 단어의 문자 위치 갱신
+//     for (size_t k = 0; k < keymap_len; ++k) for (size_t i = 0; keymap[k][i]; ++i) { int c = keymap[k][i] - 'A'; if ((int)i + 1 < presses[c]) presses[c] = (int)i + 1; }  // 모든 키의 문자 위치를 확인해 각 알파벳의 최소 누름 횟수를 i + 1로 갱신
 //     int* answer = malloc(targets_len * sizeof(int));  // 목표별 최소 누름 횟수 공간 확보
 //     for (size_t t = 0; t < targets_len; ++t) {  // 목표 단어 번호 순서대로 확인
 //         int total = 0;  // 현재 목표를 쓰는 총 누름 횟수 저장
@@ -40,4 +40,4 @@ int* solution(const char* keymap[], size_t keymap_len, const char* targets[], si
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 알파벳마다 필요한 최소 누름 횟수를 계산; 목표 문자열의 횟수를 더하고 입력할 수 없는 문자가 있으면 -1을 반환
+// 알파벳마다 필요한 최소 누름 횟수를 미리 구합니다. 목표 문자열의 문자별 횟수를 더하고, 입력할 수 없는 문자가 하나라도 있으면 -1을 반환합니다.

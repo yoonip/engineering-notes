@@ -29,7 +29,7 @@ char* solution(const char* my_string) {
 //     char* answer = malloc(n + 1);  // 문자 n개와 끝의 널 문자 한 칸을 담을 결과 공간을 할당
 //     for (size_t i = 0; i < n; ++i) ++counts[tolower((unsigned char)my_string[i]) - 'a'];  // 각 문자를 unsigned char로 변환해 tolower에 전달하고, 소문자에서 'a'를 뺀 칸의 개수를 늘림
 //     for (int i = 0; i < 26; ++i) for (int j = 0; j < counts[i]; ++j) answer[pos++] = 'a' + i;  // 알파벳 번호 i를 작은 순서로 순회하며 그 문자를 counts[i]번 써서 결과를 오름차순으로 만들기
-//     answer[pos] = '\0';  // 마지막 문자를 쓴 위치 뒤에 널 문자를 넣어 결과 문자열을 끝
+//     answer[pos] = '\0';  // 마지막 문자를 쓴 위치 뒤에 널 문자를 넣어 결과 문자열을 끝냅니다.
 //     return answer;  // 완성한 결과 반환
 // }  // 블록 끝
 // 풀이 요약

@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/181188) · Level 2 · C
 
-## 풀이
+끝점이 빠른 구간부터 끝점 바로 왼쪽에 요격 지점을 잡습니다. 다음 구간이 그 위치를 포함하지 않을 때만 새로 발사합니다.
 
-끝이 빠른 구간부터 끝 바로 왼쪽에서 요격하기; 다음 구간이 그 위치를 포함하지 않을 때만 새로 발사하기
-
-예: 예제 구간을 끝 순으로 처리하면 3회; 끝점은 포함하지 않아 start >= end일 때 추가하기; 시간 O(N log N), 정렬 공간 O(N)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 첫 공개 예제는 끝점 순으로 처리하면 3회입니다. 열린 구간이므로 start >= end이면 새 요격이 필요합니다. N개 구간의 시간은 O(N log N), 정렬할 사본 공간은 O(N)입니다.
 
 ```c
 #include <stdio.h>
@@ -45,14 +39,14 @@ int solution(int** targets, size_t targets_rows, size_t targets_cols) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// typedef struct { int start, end; } Interval;  // 현재 한 발로 묶은 구간의 열린 오른쪽 끝를 한 상태로 묶기
+// typedef struct { int start, end; } Interval;  // 구간의 시작점과 끝점을 구조체로 묶기
 // static int compare(const void* p, const void* q) {  // 오른쪽 끝점이 작은 구간부터 정렬
 //     int a = ((const Interval*)p)->end, b = ((const Interval*)q)->end;  // 첫 구간 끝점 / 둘째 구간 끝점 저장
 //     return (a > b) - (a < b);  // 첫 구간 끝점 / 둘째 구간 끝점로 최종값 계산
 // }  // 이 범위 끝
-// int solution(int** targets, size_t targets_rows, size_t targets_cols) {  // 끝이 빠른 구간부터 끝 바로 왼쪽에서 요격하기; 다음 구간이 그 위치를 포함하지 않을 때만 새로 발사하기
+// int solution(int** targets, size_t targets_rows, size_t targets_cols) {  // 끝점이 빠른 구간부터 끝점 바로 왼쪽에 요격 지점을 잡습니다. 다음 구간이 그 위치를 포함하지 않을 때만 새로 발사합니다.
 //     (void)targets_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     Interval* intervals = malloc(targets_rows * sizeof(*intervals));  // 끝점순으로 정렬할 요격 구간 공간 확보
 //     for (size_t i = 0; i < targets_rows; ++i) intervals[i] = (Interval){targets[i][0],targets[i][1]};  // 확인할 표적 구간 순서대로 확인; 끝점순으로 정렬할 요격 구간 갱신
@@ -63,8 +57,8 @@ int solution(int** targets, size_t targets_rows, size_t targets_cols) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 끝이 빠른 구간부터 끝 바로 왼쪽에서 요격하기; 다음 구간이 그 위치를 포함하지 않을 때만 새로 발사하기
-// 예: 예제 구간을 끝 순으로 처리하면 3회; 끝점은 포함하지 않아 start >= end일 때 추가하기; 시간 O(N log N), 정렬 공간 O(N)
+// 끝점이 빠른 구간부터 끝점 바로 왼쪽에 요격 지점을 잡습니다. 다음 구간이 그 위치를 포함하지 않을 때만 새로 발사합니다.
+// 예: 첫 공개 예제는 끝점 순으로 처리하면 3회입니다. 열린 구간이므로 start >= end이면 새 요격이 필요합니다. N개 구간의 시간은 O(N log N), 정렬할 사본 공간은 O(N)입니다.
 ```
 
 ## 채점 기록

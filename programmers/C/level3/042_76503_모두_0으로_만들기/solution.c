@@ -31,10 +31,10 @@ long long solution(int a[], size_t a_len, int** edges, size_t edges_rows, size_t
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// long long solution(int a[], size_t a_len, int** edges, size_t edges_rows, size_t edges_cols) {  // 전체 가중치 합이 0일 때만 가능하다; 잎부터 가중치를 부모에게 넘기고 넘긴 양의 절댓값을 더하기
+// long long solution(int a[], size_t a_len, int** edges, size_t edges_rows, size_t edges_cols) {  // 전체 가중치 합이 0일 때만 모두 0으로 만들 수 있습니다. 잎에서 부모 방향으로 가중치를 넘기며 이동량의 절댓값을 더합니다.
 //     (void)edges_cols; long long total = 0;  // 처음 가중치 총합 갱신
 //     for (size_t i = 0; i < a_len; ++i) total += a[i];  // 노드 또는 간선 위치 순서대로 확인; 처음 가중치 총합 / 노드 또는 간선 위치 더해 누적
-//     if (total) return -1;  // 처음 가중치 총합가 남아 있으면 조건에 맞는 답이 없으면 -1
+//     if (total) return -1;  // 가중치 합이 0이 아니면 모두 0으로 만들 수 없으므로 -1 반환
 //     int* head = malloc(a_len * sizeof(*head)); int* next = malloc(2 * edges_rows * sizeof(*next)); int* to = malloc(2 * edges_rows * sizeof(*to));  // 노드별 첫 간선 / 인접 리스트의 다음 간선 / 간선의 도착 노드 공간 확보
 //     for (size_t i = 0; i < a_len; ++i) head[i] = -1;  // 노드 또는 간선 위치 순서대로 확인; 노드별 첫 간선 갱신
 //     int count = 0;  // 채운 양방향 간선 수 저장
@@ -50,6 +50,6 @@ long long solution(int a[], size_t a_len, int** edges, size_t edges_rows, size_t
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 전체 가중치 합이 0일 때만 가능하다; 잎부터 가중치를 부모에게 넘기고 넘긴 양의 절댓값을 더하기
-// 예: [-5,0,2,1,2]에서는 두 잎의 2씩과 가운데 누적 5를 옮겨 2+2+5=9번
-// 트리의 간선을 끊으면 부분 트리의 합만큼 반드시 그 간선을 지나야 하므로 이 횟수가 최소; 시간·공간 O(N)
+// 전체 가중치 합이 0일 때만 모두 0으로 만들 수 있습니다. 잎에서 부모 방향으로 가중치를 넘기며 이동량의 절댓값을 더합니다.
+// 공식 첫 예제의 가중치 [-5,0,2,1,2]와 간선에서는 두 잎의 2씩과 가운데 누적값 5를 옮깁니다. 비용은 2+2+5=9입니다.
+// 트리의 간선을 끊었을 때 한쪽 서브트리의 합만큼은 반드시 그 간선을 통해 이동해야 합니다. 따라서 각 간선의 필요한 이동량만 합친 이 비용이 최소입니다. 노드 수 N에 대해 시간과 공간은 O(N)입니다.

@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/131130) · Level 2 · C
 
-## 풀이
+카드가 중복 없는 순열이므로 연결을 따라가면 서로 겹치지 않는 사이클이 나옵니다. 각 크기를 구하면서 가장 큰 두 값만 갱신합니다.
 
-카드가 중복 없는 순열이므로 연결을 따라가면 서로 겹치지 않는 사이클 그룹이 됨; 가장 큰 두 그룹을 선택
-
-예: 그룹 크기 4,3,1이면 4×3=12; 시간 O(N log N), 공간 O(N)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 그룹 크기 4,3,1이면 4×3=12입니다. 정렬하지 않고 최댓값 두 개만 갱신하므로 시간·공간은 O(N)입니다.
 
 ```c
 #include <stdio.h>
@@ -42,9 +36,9 @@ int solution(int cards[], size_t cards_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(int cards[], size_t cards_len) {  // 카드가 중복 없는 순열이므로 연결을 따라가면 서로 겹치지 않는 사이클 그룹이 됨; 가장 큰 두 그룹을 선택
+// int solution(int cards[], size_t cards_len) {  // 카드가 중복 없는 순열이므로 연결을 따라가면 서로 겹치지 않는 사이클이 나옵니다. 각 크기를 구하면서 가장 큰 두 값만 갱신합니다.
 //     bool* visited = calloc(cards_len, sizeof(*visited)); int first = 0, second = 0;  // 이미 연 상자 표시 / 가장 큰 상자 그룹 크기 / 두 번째로 큰 그룹 크기 공간 확보하고 0으로 시작
 //     for (size_t start = 0; start < cards_len; ++start) {  // 새 그룹을 시작할 상자 순서대로 확인
 //         int node = (int)start, count = 0;  // 현재 열 상자 / 이번 그룹에서 연 상자 수 저장
@@ -57,8 +51,8 @@ int solution(int cards[], size_t cards_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 카드가 중복 없는 순열이므로 연결을 따라가면 서로 겹치지 않는 사이클 그룹이 됨; 가장 큰 두 그룹을 선택
-// 예: 그룹 크기 4,3,1이면 4×3=12; 시간 O(N log N), 공간 O(N)
+// 카드가 중복 없는 순열이므로 연결을 따라가면 서로 겹치지 않는 사이클이 나옵니다. 각 크기를 구하면서 가장 큰 두 값만 갱신합니다.
+// 예: 그룹 크기 4,3,1이면 4×3=12입니다. 정렬하지 않고 최댓값 두 개만 갱신하므로 시간·공간은 O(N)입니다.
 ```
 
 ## 채점 기록

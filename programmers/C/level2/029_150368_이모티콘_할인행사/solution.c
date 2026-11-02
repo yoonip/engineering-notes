@@ -35,9 +35,9 @@ int* solution(int** users, size_t users_rows, size_t users_cols, int emoticons[]
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// typedef struct { int** users; size_t user_count; int* prices; size_t item_count; int* rates; int subscribers; int revenue; } Context;  // 선택한 이모티콘별 할인율 / 현재 할인 조합의 가입자 수 / 가입하지 않은 사용자의 구매 금액를 한 상태로 묶기
+// typedef struct { int** users; size_t user_count; int* prices; size_t item_count; int* rates; int subscribers; int revenue; } Context;  // 선택한 이모티콘별 할인율 / 현재 할인 조합의 가입자 수 / 가입하지 않은 사용자의 구매 금액을 한 상태로 묶기
 // static void search(Context* ctx, size_t index) {  // 할인 조합 탐색 정보 / 할인율을 정할 이모티콘 계산용 함수
 //     if (index < ctx->item_count) {  // 아직 할인율을 정하지 않은 이모티콘이 있으면 다음 할인 선택으로 진행
 //         for (int rate = 10; rate <= 40; rate += 10) { ctx->rates[index] = rate; search(ctx, index + 1); }  // 이번에 선택할 할인율 순서대로 확인; 선택한 이모티콘별 할인율로 다음 선택 탐색
@@ -51,7 +51,7 @@ int* solution(int** users, size_t users_rows, size_t users_cols, int emoticons[]
 //     }  // 이 범위 끝
 //     if (subscribers > ctx->subscribers || (subscribers == ctx->subscribers && revenue > ctx->revenue)) { ctx->subscribers = subscribers; ctx->revenue = revenue; }  // 가입자 수가 더 많거나 동률에서 매출이 더 높을 때 최선 조합 교체
 // }  // 이 범위 끝
-// int* solution(int** users, size_t users_rows, size_t users_cols, int emoticons[], size_t emoticons_len) {  // 할인율 4가지의 모든 조합을 평가해 사용자별 가입 또는 구매 결과를 합산하기; (가입자,매출)의 사전식 최댓값을 선택
+// int* solution(int** users, size_t users_rows, size_t users_cols, int emoticons[], size_t emoticons_len) {  // 할인율 4가지의 모든 조합을 평가하여 사용자별 가입 또는 구매 결과를 합산합니다. 가입자를 우선하고, 같으면 매출이 큰 조합을 선택합니다.
 //     (void)users_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int* rates = malloc(emoticons_len * sizeof(*rates)); Context ctx = {users,users_rows,emoticons,emoticons_len,rates,0,0};  // 선택한 이모티콘별 할인율 / 할인 조합 탐색 정보 공간 확보
 //     search(&ctx, 0); free(rates); int* answer = malloc(2 * sizeof(*answer));  // 최대 가입자 수와 그때의 매출 공간 확보
@@ -60,5 +60,5 @@ int* solution(int** users, size_t users_rows, size_t users_cols, int emoticons[]
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 할인율 4가지의 모든 조합을 평가해 사용자별 가입 또는 구매 결과를 합산하기; (가입자,매출)의 사전식 최댓값을 선택
-// 예: 첫 예제는 30%,40% 할인으로 [1,5400]; 사용자 N명·이모티콘 M개일 때 시간 O(4^M*N*M), 추가 공간 O(M)
+// 할인율 4가지의 모든 조합을 평가하여 사용자별 가입 또는 구매 결과를 합산합니다. 가입자를 우선하고, 같으면 매출이 큰 조합을 선택합니다.
+// 예: 첫 공개 예제는 30%,40% 할인으로 [1,5400]입니다. 사용자 N명·이모티콘 M개에 대해 시간은 O(4^M*N*M), 추가 공간은 O(M)입니다.

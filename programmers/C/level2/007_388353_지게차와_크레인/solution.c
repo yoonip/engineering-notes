@@ -44,9 +44,9 @@ int solution(const char* storage[], size_t storage_len, const char* requests[], 
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(const char* storage[], size_t storage_len, const char* requests[], size_t requests_len) {  // 크레인은 목표 종류를 모두 제거하고, 지게차는 바깥 빈칸에서 BFS(가까운 칸부터 큐로 탐색)해 닿는 목표만 제거
+// int solution(const char* storage[], size_t storage_len, const char* requests[], size_t requests_len) {  // 크레인은 목표 종류를 모두 제거합니다. 지게차는 바깥 빈칸에서 BFS(큐를 쓰는 너비 우선 탐색)로 접근할 수 있는 목표만 제거합니다.
 //     int rows = (int)storage_len + 2, cols = (int)strlen(storage[0]) + 2, remaining = (rows - 2) * (cols - 2);  // 테두리를 포함한 행 수 / 테두리를 포함한 열 수 / 남은 컨테이너 수 저장
 //     size_t size = (size_t)rows * cols;  // 테두리 포함 전체 칸 수 저장
 //     char* board = malloc(size); memset(board, '.', size);  // 바깥 빈칸을 덧댄 창고 공간 확보
@@ -78,6 +78,6 @@ int solution(const char* storage[], size_t storage_len, const char* requests[], 
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 크레인은 목표 종류를 모두 제거하고, 지게차는 바깥 빈칸에서 BFS(가까운 칸부터 큐로 탐색)해 닿는 목표만 제거
-// 한 요청의 탐색이 끝난 뒤 한꺼번에 지워, 방금 열린 통로를 같은 요청에서 사용하지 않게 하기
-// 예: A로 가득한 3x3 창고에서 요청 A 한 번이면 바깥 8개만 빠져 1개가 남음; 시간 O(요청 수*행*열)
+// 크레인은 목표 종류를 모두 제거합니다. 지게차는 바깥 빈칸에서 BFS(큐를 쓰는 너비 우선 탐색)로 접근할 수 있는 목표만 제거합니다.
+// 한 요청의 탐색이 끝난 뒤 한꺼번에 지워, 방금 열린 통로를 같은 요청에서 사용하지 않습니다.
+// 예: A로 가득한 3×3 창고에서 요청 A 한 번이면 바깥 8개가 빠지고 1개가 남습니다. 시간은 O(요청 수*행*열)입니다.

@@ -6,7 +6,7 @@
 
 ## 풀이
 
-등차수열의 합으로 전체 이용료를 구하고 현재 금액을 빼기; 중간 곱셈부터 long long을 사용
+등차수열의 합으로 전체 이용료를 구하고 보유금을 뺍니다. 중간 곱셈부터 long long으로 계산하며, 부족하지 않으면 0을 반환합니다.
 
 ## 코드와 줄별 설명
 
@@ -35,13 +35,13 @@ long long solution(int price, int money, int count) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// long long solution(int price, int money, int count) {  // 등차수열의 합으로 전체 이용료를 구하고 현재 금액을 빼기; 중간 곱셈부터 long long을 사용
+// long long solution(int price, int money, int count) {  // 등차수열의 합으로 전체 이용료를 구하고 보유금을 뺍니다. 중간 곱셈부터 long long으로 계산하며, 부족하지 않으면 0을 반환합니다.
 //     long long needed = 1LL * price * count * (count + 1) / 2 - money;  // 등차수열 이용료 합에서 가진 돈을 뺀 값 저장
-//     return needed > 0 ? needed : 0;  // 등차수열 이용료 합에서 가진 돈을 뺀 값로 최종값 계산
+//     return needed > 0 ? needed : 0;  // 필요한 돈이 보유금보다 많으면 부족분, 아니면 0 반환
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 등차수열의 합으로 전체 이용료를 구하고 현재 금액을 빼기; 중간 곱셈부터 long long을 사용
+// 등차수열의 합으로 전체 이용료를 구하고 보유금을 뺍니다. 중간 곱셈부터 long long으로 계산하며, 부족하지 않으면 0을 반환합니다.
 ```
 
 ## 채점 기록

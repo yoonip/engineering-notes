@@ -31,7 +31,7 @@ int solution(const char* A, const char* B) {
 //     for (size_t shift = 0; shift < n; ++shift) {  // 오른쪽으로 민 횟수 shift를 0부터 n - 1까지 작은 순서대로 검사
 //         bool match = true;  // 현재 shift에서 모든 문자가 일치하는지 기록할 match를 참으로 초기화
 //         for (size_t i = 0; i < n; ++i)  // A에서 비교할 원래 문자 위치 i를 0부터 n - 1까지 순회
-//             if (A[i] != B[(i + shift) % n]) { match = false; break; }  // 오른쪽 회전 후 위치 (i + shift) % n의 B 문자와 다르면 실패를 기록하고 문자 비교를 끝
+//             if (A[i] != B[(i + shift) % n]) { match = false; break; }  // 오른쪽 회전 후 위치 (i + shift) % n의 B 문자와 다르면 실패를 기록하고 문자 비교를 끝냅니다.
 //         if (match) return (int)shift;  // 모든 문자가 일치한 첫 shift는 가능한 최소 이동 횟수이므로 int로 변환해 반환
 //     }  // 블록 끝
 //     return -1;  // 0부터 n - 1회까지 모두 불일치하면 회전으로 만들 수 없으므로 -1을 반환

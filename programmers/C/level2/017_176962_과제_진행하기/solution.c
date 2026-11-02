@@ -38,16 +38,16 @@ char** solution(const char*** plans, size_t plans_rows, size_t plans_cols) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // typedef struct { int start, duration; const char* name; } Task;  // 과제의 시작 시각·남은 시간·이름을 한 항목으로 묶기
 // static int compare(const void* p, const void* q) { return ((const Task*)p)->start - ((const Task*)q)->start; }  // 시작 시각이 빠른 과제부터 정렬
 // static char* copy_name(const char* name) { char* result = malloc(strlen(name) + 1); strcpy(result, name); return result; }  // 과제 이름 사본 계산용 함수
-// char** solution(const char*** plans, size_t plans_rows, size_t plans_cols) {  // 시작 시각 순으로 정렬하고, 다음 시작까지의 시간에 스택 위 과제를 처리; 새 과제는 스택 위에 올리기
+// char** solution(const char*** plans, size_t plans_rows, size_t plans_cols) {  // 시작 시각 순으로 정렬하고, 다음 과제 시작까지 스택 위의 과제를 처리합니다. 새 과제가 시작되면 스택 위에 올립니다.
 //     (void)plans_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     Task* tasks = malloc(plans_rows * sizeof(*tasks)); Task* stack = malloc(plans_rows * sizeof(*stack)); char** answer = malloc(plans_rows * sizeof(*answer));  // 시작 시각순 과제 / 중단된 과제의 LIFO 목록 / 끝낸 순서의 과제 이름 공간 확보
 //     for (size_t i = 0; i < plans_rows; ++i) {  // 다음 시작 과제 번호 순서대로 확인
-//         int hour, minute; sscanf(plans[i][1], "%d:%d", &hour, &minute);  // sscanf로 시각·차량번호·입출차 상태 등의 입력 항목을 형식에 맞게 읽기
+//         int hour, minute; sscanf(plans[i][1], "%d:%d", &hour, &minute);  // sscanf로 HH:MM 문자열에서 시와 분을 읽어 두 정수 변수에 저장
 //         tasks[i] = (Task){hour * 60 + minute,atoi(plans[i][2]),plans[i][0]};  // 시작 시각순 과제 갱신
 //     }  // 이 범위 끝
 //     qsort(tasks, plans_rows, sizeof(*tasks), compare); size_t top = 0, count = 0; int previous = 0;  // 시작 시각순 과제 / 중단된 과제 수 정렬 순서 맞추기
@@ -66,5 +66,5 @@ char** solution(const char*** plans, size_t plans_rows, size_t plans_cols) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 시작 시각 순으로 정렬하고, 다음 시작까지의 시간에 스택 위 과제를 처리; 새 과제는 스택 위에 올리기
-// 예: aaa를 멈추고 bbb를 끝낸 뒤 ccc, aaa 순으로 완료하기; 시간 O(N log N), 공간 O(N)
+// 시작 시각 순으로 정렬하고, 다음 과제 시작까지 스택 위의 과제를 처리합니다. 새 과제가 시작되면 스택 위에 올립니다.
+// 예: 세 번째 공개 예제에서 12:00에 시작한 aaa를 12:10에 중단합니다. bbb가 끝나는 12:40에 ccc를 먼저 시작하므로 완료 순서는 bbb, ccc, aaa입니다. 과제 N개에 대해 시간은 O(N log N), 공간은 O(N)입니다.

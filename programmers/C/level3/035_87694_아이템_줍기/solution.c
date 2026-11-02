@@ -31,10 +31,10 @@ int solution(int** rectangle, size_t rectangle_rows, size_t rectangle_cols, int 
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// int solution(int** rectangle, size_t rectangle_rows, size_t rectangle_cols, int characterX, int characterY, int itemX, int itemY) {  // 좌표를 두 배로 확대하고 직사각형들을 전부 채운 뒤, 각 직사각형의 내부를 모두 지워 합친 지형의 테두리를 만들기
+// int solution(int** rectangle, size_t rectangle_rows, size_t rectangle_cols, int characterX, int characterY, int itemX, int itemY) {  // 좌표를 두 배로 확대해 직사각형을 모두 채운 뒤 각 직사각형의 내부를 지웁니다. 이렇게 남은 테두리에서 이동 경로를 찾습니다.
 //     (void)rectangle_cols; int board[102][102] = {{0}};  // 두 배 좌표의 외곽선 표시 갱신
-//     for (size_t i = 0; i < rectangle_rows; ++i) for (int y = 2 * rectangle[i][1]; y <= 2 * rectangle[i][3]; ++y) for (int x = 2 * rectangle[i][0]; x <= 2 * rectangle[i][2]; ++x) board[y][x] = 1;  // 직사각형 번호 순서대로 확인; 현재 세로 좌표 / 현재 가로 좌표 갱신
-//     for (size_t i = 0; i < rectangle_rows; ++i) for (int y = 2 * rectangle[i][1] + 1; y < 2 * rectangle[i][3]; ++y) for (int x = 2 * rectangle[i][0] + 1; x < 2 * rectangle[i][2]; ++x) board[y][x] = 0;  // 직사각형 번호 순서대로 확인; 현재 세로 좌표 / 현재 가로 좌표 갱신
+//     for (size_t i = 0; i < rectangle_rows; ++i) for (int y = 2 * rectangle[i][1]; y <= 2 * rectangle[i][3]; ++y) for (int x = 2 * rectangle[i][0]; x <= 2 * rectangle[i][2]; ++x) board[y][x] = 1;  // 모든 직사각형의 경계와 내부를 두 배 좌표 격자에 1로 채우기
+//     for (size_t i = 0; i < rectangle_rows; ++i) for (int y = 2 * rectangle[i][1] + 1; y < 2 * rectangle[i][3]; ++y) for (int x = 2 * rectangle[i][0] + 1; x < 2 * rectangle[i][2]; ++x) board[y][x] = 0;  // 각 직사각형의 내부만 0으로 지워 합친 지형에서 걸을 수 있는 경계 남기기
 //     int queue[10404], distance[10404] = {0}, head = 0, tail = 0, answer = 0;  // 두 배 격자에서의 이동 거리 / 큐에서 읽을 위치 / 큐에 넣을 위치 / 원래 좌표의 최단 거리 저장
 //     int start = 2 * characterY * 102 + 2 * characterX, goal = 2 * itemY * 102 + 2 * itemX; queue[tail++] = start; board[2 * characterY][2 * characterX] = 0;  // 캐릭터 시작 좌표 / 아이템 좌표 / 외곽선 BFS 대기 칸 / 두 배 좌표의 외곽선 표시 저장
 //     const int dx[4] = {1,-1,0,0}, dy[4] = {0,0,1,-1};  // 가로 이동 / 세로 이동 저장
@@ -50,6 +50,6 @@ int solution(int** rectangle, size_t rectangle_rows, size_t rectangle_cols, int 
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 좌표를 두 배로 확대하고 직사각형들을 전부 채운 뒤, 각 직사각형의 내부를 모두 지워 합친 지형의 테두리를 만들기
-// 테두리 위에서 BFS를 하면 최단 이동 거리; 좌표 확대 때문에 생긴 거리 두 배를 마지막에 나누기; 좌표 최대값 C에 대해 시간·공간 O(C²), 직사각형 수는 최대 4
-// 예: 원래 한 칸 너비의 굴곡도 두 칸 간격으로 표현되어, 인접해 보이는 서로 다른 테두리를 가로지르는 지름길을 막기
+// 좌표를 두 배로 확대해 직사각형을 모두 채운 뒤 각 직사각형의 내부를 지웁니다. 이렇게 남은 테두리에서 이동 경로를 찾습니다.
+// 테두리 위에서 BFS로 최단 거리를 구하고, 확대된 거리를 마지막에 2로 나눕니다. 직사각형은 최대 4개이므로 좌표 상한 C에 대해 시간과 격자 공간은 O(C²)입니다. 코드는 공식 좌표 범위에 맞춰 102×102 배열을 사용합니다.
+// 원래 한 칸 너비인 굴곡도 두 칸 간격으로 표현됩니다. 서로 다른 테두리가 인접해 보이는 부분에서 경계를 가로지르는 잘못된 지름길을 막습니다.

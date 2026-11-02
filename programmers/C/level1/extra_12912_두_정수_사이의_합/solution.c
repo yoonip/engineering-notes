@@ -20,10 +20,10 @@ long long solution(int a, int b) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// long long solution(int a, int b) {  // 작은 수부터 큰 수까지의 등차수열 합을 계산; 중간 계산부터 long long을 사용
+// long long solution(int a, int b) {  // 두 끝값 중 작은 값과 큰 값을 구한 뒤 등차수열의 합 공식을 적용합니다. 중간 곱셈부터 long long으로 계산합니다.
 //     long long start = a < b ? a : b, end = a > b ? a : b;  // 두 수 중 작은 끝점 / 두 수 중 큰 끝점 저장
-//     return (start + end) * (end - start + 1) / 2;  // 두 수 중 작은 끝점 / 두 수 중 큰 끝점로 최종값 계산
+//     return (start + end) * (end - start + 1) / 2;  // 양 끝값의 합에 정수 개수를 곱하고 2로 나누어 등차수열의 합 반환
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 작은 수부터 큰 수까지의 등차수열 합을 계산; 중간 계산부터 long long을 사용
+// 두 끝값 중 작은 값과 큰 값을 구한 뒤 등차수열의 합 공식을 적용합니다. 중간 곱셈부터 long long으로 계산합니다.

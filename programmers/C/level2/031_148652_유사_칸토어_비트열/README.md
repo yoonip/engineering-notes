@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/148652) · Level 2 · C
 
-## 풀이
+비트열은 이전 단계 네 덩어리와 가운데 0 덩어리로 나뉩니다. 완전한 덩어리는 4의 거듭제곱으로 세고 남은 부분만 재귀 처리합니다.
 
-비트열은 이전 단계 네 덩어리와 가운데 0 덩어리로 나뉨; 완전한 덩어리는 4의 거듭제곱으로 세고 남은 부분만 재귀 처리
-
-예: n=2의 [4,17]은 8개; 비트열을 직접 만들지 않으며 시간·재귀 공간 O(n)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: n=2의 구간 [4,17]에서 1은 8개입니다. 비트열을 직접 만들지 않으며 시간·재귀 공간은 O(n)입니다.
 
 ```c
 #include <stdio.h>
@@ -42,7 +36,7 @@ int solution(int n, long long l, long long r) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static long long prefix(int level, long long length, const long long* five, const long long* four) {  // 칸토어 비트열의 처음 length개 위치에 있는 1의 개수를 재귀적으로 계산
 //     if (!level) return length;  // 현재 칸토어 단계가 없으면 접두사에서 셀 길이 반환
@@ -50,15 +44,15 @@ int solution(int n, long long l, long long r) {
 //     long long total = (groups - (groups > 2)) * four[level - 1];  // 완전히 지난 블록들의 1 개수 저장
 //     return groups == 2 ? total : total + prefix(level - 1, rest, five, four);  // 완전히 지난 블록 수 / 완전히 지난 블록들의 1 개수 / 현재 칸토어 단계로 최종값 계산
 // }  // 이 범위 끝
-// int solution(int n, long long l, long long r) {  // 비트열은 이전 단계 네 덩어리와 가운데 0 덩어리로 나뉨; 완전한 덩어리는 4의 거듭제곱으로 세고 남은 부분만 재귀 처리
+// int solution(int n, long long l, long long r) {  // 비트열은 이전 단계 네 덩어리와 가운데 0 덩어리로 나뉩니다. 완전한 덩어리는 4의 거듭제곱으로 세고 남은 부분만 재귀 처리합니다.
 //     long long five[21] = {1}, four[21] = {1};  // 단계별 5의 거듭제곱 / 단계별 1 개수 저장
 //     for (int i = 1; i <= n; ++i) { five[i] = five[i - 1] * 5; four[i] = four[i - 1] * 4; }  // 거듭제곱을 채울 단계 순서대로 확인; 단계별 5의 거듭제곱 / 단계별 1 개수 갱신
 //     return (int)(prefix(n, r, five, four) - prefix(n, l - 1, five, four));  // 단계별 5의 거듭제곱 / 단계별 1 개수로 최종값 계산
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 비트열은 이전 단계 네 덩어리와 가운데 0 덩어리로 나뉨; 완전한 덩어리는 4의 거듭제곱으로 세고 남은 부분만 재귀 처리
-// 예: n=2의 [4,17]은 8개; 비트열을 직접 만들지 않으며 시간·재귀 공간 O(n)
+// 비트열은 이전 단계 네 덩어리와 가운데 0 덩어리로 나뉩니다. 완전한 덩어리는 4의 거듭제곱으로 세고 남은 부분만 재귀 처리합니다.
+// 예: n=2의 구간 [4,17]에서 1은 8개입니다. 비트열을 직접 만들지 않으며 시간·재귀 공간은 O(n)입니다.
 ```
 
 ## 채점 기록

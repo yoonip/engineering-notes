@@ -19,9 +19,9 @@ int solution(int numbers[], size_t numbers_len) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(int numbers[], size_t numbers_len) {  // 0부터 9까지의 합 45에서 입력된 숫자들의 합을 빼기
+// int solution(int numbers[], size_t numbers_len) {  // 0부터 9까지의 합 45에서 배열에 있는 숫자의 합을 빼서 빠진 숫자의 합을 구합니다.
 //     int answer = 45; for (size_t i = 0; i < numbers_len; ++i) answer -= numbers[i]; return answer;  // 0부터 9의 합에서 나온 숫자를 뺀 값 / 합에서 제외할 입력 숫자 위치 저장
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 0부터 9까지의 합 45에서 입력된 숫자들의 합을 빼기
+// 0부터 9까지의 합 45에서 배열에 있는 숫자의 합을 빼서 빠진 숫자의 합을 구합니다.

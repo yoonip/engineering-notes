@@ -32,9 +32,9 @@ int solution(const char* board[], size_t board_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(const char* board[], size_t board_len) {  // 멈출 수 있는 위치를 정점으로 보고 한 번 미끄러지는 이동을 간선으로 삼아 너비 우선 탐색
+// int solution(const char* board[], size_t board_len) {  // 멈출 수 있는 위치를 정점으로, 한 번 미끄러지는 이동을 간선으로 삼아 너비 우선 탐색을 합니다.
 //     int rows = (int)board_len, cols = (int)strlen(board[0]), answer = -1;  // 보드 행 수 / 보드 열 수 / 목표까지의 최소 이동 횟수 저장
 //     int* distance = malloc((size_t)rows * cols * sizeof(*distance)); int* queue = malloc((size_t)rows * cols * sizeof(*queue));  // 각 정지 칸까지의 최소 이동 수 / 다음으로 미끄러질 정지 칸 공간 확보
 //     for (int i = 0; i < rows * cols; ++i) distance[i] = -1;  // 거리 초기화 위치 순서대로 확인; 각 정지 칸까지의 최소 이동 수 갱신
@@ -54,5 +54,5 @@ int solution(const char* board[], size_t board_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 멈출 수 있는 위치를 정점으로 보고 한 번 미끄러지는 이동을 간선으로 삼아 너비 우선 탐색
-// 예: 첫 게임판은 7번, 둘째는 목표에서 멈출 수 없어 -1; 시간 O(행*열*max(행,열)), 공간 O(행*열)
+// 멈출 수 있는 위치를 정점으로, 한 번 미끄러지는 이동을 간선으로 삼아 너비 우선 탐색을 합니다.
+// 예: 첫 공개 게임판은 7번 이동하며, 둘째는 목표에서 멈출 수 없어 -1입니다. 시간은 O(행*열*max(행,열)), 공간은 O(행*열)입니다.

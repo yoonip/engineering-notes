@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/135807) · Level 2 · C
 
-## 풀이
+한쪽 카드 전체를 나누는 최대 후보는 최대공약수입니다. 그 값이 반대쪽 카드 하나를 나누면 그 약수들도 같은 카드를 나누므로 후보가 될 수 없습니다.
 
-한쪽 전체를 나누는 최대 후보는 최대공약수; 그것이 반대쪽 카드 하나를 나누면 그 약수들도 그 카드를 나누므로 모두 불가능
-
-예: A=[14,35,119]의 최대공약수 7은 B의 어떤 수도 나누지 않아 답 7; 카드 N개·최댓값 V일 때 시간 O(N log V), 추가 공간 O(1)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: A=[14,35,119], B=[18,30,102]에서는 A의 최대공약수 7이 B의 어떤 수도 나누지 않으므로 답은 7입니다. 카드 N개·최댓값 V에 대해 시간은 O(N log V), 추가 공간은 O(1)입니다.
 
 ```c
 #include <stdio.h>
@@ -41,10 +35,10 @@ int solution(int arrayA[], size_t arrayA_len, int arrayB[], size_t arrayB_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static int gcd(int a, int b) { while (b) { int r = a % b; a = b; b = r; } return a; }  // 나머지를 반복해서 최대공약수 구하기
-// int solution(int arrayA[], size_t arrayA_len, int arrayB[], size_t arrayB_len) {  // 한쪽 전체를 나누는 최대 후보는 최대공약수; 그것이 반대쪽 카드 하나를 나누면 그 약수들도 그 카드를 나누므로 모두 불가능
+// int solution(int arrayA[], size_t arrayA_len, int arrayB[], size_t arrayB_len) {  // 한쪽 카드 전체를 나누는 최대 후보는 최대공약수입니다. 그 값이 반대쪽 카드 하나를 나누면 그 약수들도 같은 카드를 나누므로 후보가 될 수 없습니다.
 //     int a = 0, b = 0;  // A 전체의 최대공약수 / B 전체의 최대공약수 저장
 //     for (size_t i = 0; i < arrayA_len; ++i) a = gcd(a, arrayA[i]);  // 다른 배열의 나눗셈 검사 위치 순서대로 확인; A 전체의 최대공약수 갱신
 //     for (size_t i = 0; i < arrayB_len; ++i) b = gcd(b, arrayB[i]);  // 다른 배열의 나눗셈 검사 위치 순서대로 확인; B 전체의 최대공약수 갱신
@@ -55,8 +49,8 @@ int solution(int arrayA[], size_t arrayA_len, int arrayB[], size_t arrayB_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 한쪽 전체를 나누는 최대 후보는 최대공약수; 그것이 반대쪽 카드 하나를 나누면 그 약수들도 그 카드를 나누므로 모두 불가능
-// 예: A=[14,35,119]의 최대공약수 7은 B의 어떤 수도 나누지 않아 답 7; 카드 N개·최댓값 V일 때 시간 O(N log V), 추가 공간 O(1)
+// 한쪽 카드 전체를 나누는 최대 후보는 최대공약수입니다. 그 값이 반대쪽 카드 하나를 나누면 그 약수들도 같은 카드를 나누므로 후보가 될 수 없습니다.
+// 예: A=[14,35,119], B=[18,30,102]에서는 A의 최대공약수 7이 B의 어떤 수도 나누지 않으므로 답은 7입니다. 카드 N개·최댓값 V에 대해 시간은 O(N log V), 추가 공간은 O(1)입니다.
 ```
 
 ## 채점 기록

@@ -48,7 +48,8 @@ char** solution(const char* names[], size_t names_len) {
 //     char** answer = malloc(length * sizeof(char*));  // answer를 저장할 메모리 확보
 //     for (size_t i = 0; i < length; ++i) answer[i] = copy_text(names[i * 5]);  // 각 다섯 명 묶음의 첫 사람인 인덱스 0, 5, 10, …의 이름 복사
 //     return answer;  // 완성한 결과 반환
-// }  // 블록 끝// 풀이 요약
+// }  // 블록 끝
+// 풀이 요약
 // 각 그룹의 첫 위치는 0, 5, 10 순서임. 마지막 소규모 그룹도 자동 포함됨
 ```
 

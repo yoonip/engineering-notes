@@ -52,7 +52,7 @@ int solution(int** grid, size_t grid_rows, size_t grid_cols) {
 //     while (!ctx->seen[current]) {  // 삼각형을 방문 표시하고 해당 원래 칸 번호를 경로에 추가
 //         ctx->seen[current] = true; ctx->order[length++] = current / 2; int next = -1;  // 삼각형을 방문 표시하고 해당 원래 칸 번호를 경로에 추가
 //         for (int i = 0; i < ctx->degree[current]; ++i) if (ctx->neighbors[current][i] != previous) { next = ctx->neighbors[current][i]; break; }  // 직전에 온 삼각형을 빼고 앞으로 이어지는 이웃 선택
-//         if (next < 0) break; previous = current; current = next;  // 직전 칸을 제외한 다음 삼각형가 0보다 작으면 이번 후보 확인을 끝내기
+//         if (next < 0) break; previous = current; current = next;  // 직전 칸을 제외한 다음 삼각형 번호가 0보다 작으면 이번 후보 확인을 끝내기
 //     }  // 이 범위 끝
 //     bool cycle = current == start && ctx->degree[start] == 2; ++ctx->component; int left = 0;  // 시작점으로 돌아오는 경로인지 여부 / 같은 칸이 중복되지 않는 구간 시작 저장
 //     for (int right = 0; right < (cycle ? 2 * length : length); ++right) {  // 경로에서 확장할 위치 순서대로 확인
@@ -64,7 +64,7 @@ int solution(int** grid, size_t grid_rows, size_t grid_cols) {
 //     }  // 이 범위 끝
 // }  // 이 범위 끝
 // static void connect(int (*neighbors)[2], unsigned char* degree, int a, int b) { neighbors[a][degree[a]++] = b; neighbors[b][degree[b]++] = a; }  // 두 삼각형을 양방향으로 연결
-// int solution(int** grid, size_t grid_rows, size_t grid_cols) {  // 삼각형은 두 바깥 변으로만 연결되어 이웃이 최대 2개; 따라서 전체 그래프는 경로 또는 고리로 나뉨
+// int solution(int** grid, size_t grid_rows, size_t grid_cols) {  // 각 삼각형은 정사각형의 바깥 변 두 개로만 이웃과 연결되므로 차수가 최대 2입니다. 연결 성분은 경로나 고리로 나뉩니다.
 //     int rows = (int)grid_rows, cols = (int)grid_cols, cells = rows * cols, size = 2 * cells;  // 원래 격자 칸 수 / 작은 삼각형 전체 수 저장
 //     int (*neighbors)[2] = malloc((size_t)size * sizeof(*neighbors)); unsigned char* degree = calloc((size_t)size,sizeof(*degree)); bool* seen = calloc((size_t)size,sizeof(*seen));  // 작은 삼각형의 연결 수 / 이미 경로에 넣은 삼각형 공간 확보하고 0으로 시작
 //     int* order = malloc((size_t)size * sizeof(*order)); int* last = malloc((size_t)cells * sizeof(*last)); int* stamp = calloc((size_t)cells,sizeof(*stamp));  // 경로에서 만난 원래 칸 번호 / 원래 칸을 마지막으로 본 순서 / last가 속한 연결 성분 표시 공간 확보하고 0으로 시작
@@ -80,6 +80,6 @@ int solution(int** grid, size_t grid_rows, size_t grid_cols) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 삼각형은 두 바깥 변으로만 연결되어 이웃이 최대 2개; 따라서 전체 그래프는 경로 또는 고리로 나뉨
-// 덩어리는 그 위의 연속 구간이며, 같은 정사각형의 삼각형 두 개를 함께 고를 수 없으므로 중복 칸 없는 최장 구간을 찾기
-// 예: [[1]]은 넓이 1; 고리는 두 번 이어 경계를 넘는 구간도 확인; 시간·공간 O(N*M)
+// 각 삼각형은 정사각형의 바깥 변 두 개로만 이웃과 연결되므로 차수가 최대 2입니다. 연결 성분은 경로나 고리로 나뉩니다.
+// 같은 정사각형의 삼각형 두 개를 함께 고를 수 없으므로, 경로 위에서 원래 칸 번호가 중복되지 않는 최장 연속 구간을 찾습니다.
+// [[1]]의 답은 1입니다. 고리는 두 번 이어서 경계를 넘는 구간도 검사하되 한 바퀴를 넘지 않게 제한합니다. 시간·공간은 O(N*M)입니다.

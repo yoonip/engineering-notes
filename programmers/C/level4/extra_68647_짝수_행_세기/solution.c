@@ -34,7 +34,7 @@ int solution(int** a, size_t a_rows, size_t a_cols) {
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// int solution(int** a, size_t a_rows, size_t a_cols) {  // 열별 1의 개수만 고정되어 있으므로, 행의 구체적인 모양 대신 짝수 합인 행 개수만 DP 상태로 저장
+// int solution(int** a, size_t a_rows, size_t a_cols) {  // 열별 1의 개수만 유지하면 되므로 행의 구체적인 모양 대신 지금까지 합이 짝수인 행의 개수를 DP 상태로 저장합니다.
 //     const int mod = 10000019; int n = (int)a_rows; size_t stride = a_rows + 1;  // 전체 행 수 / 이항계수 표 한 행 길이 저장
 //     int* choose = calloc(stride * stride, sizeof(*choose)); int* dp = calloc(stride, sizeof(*dp)); int* next = malloc(stride * sizeof(*next));  // 행을 고르는 이항계수 표 / 짝수 행 개수별 현재 경우의 수 / 다음 열까지 채운 경우의 수 공간 확보하고 0으로 시작
 //     for (int total = 0; total <= n; ++total) { choose[total * stride] = choose[total * stride + total] = 1; for (int selected = 1; selected < total; ++selected) choose[total * stride + selected] = (choose[(total - 1) * stride + selected - 1] + choose[(total - 1) * stride + selected]) % mod; }  // 파스칼 점화식으로 행을 고르는 이항계수 표 계산
@@ -56,6 +56,6 @@ int solution(int** a, size_t a_rows, size_t a_cols) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 열별 1의 개수만 고정되어 있으므로, 행의 구체적인 모양 대신 짝수 합인 행 개수만 DP 상태로 저장
-// 이번 열에 1을 놓은 행은 짝수↔홀수가 바뀜; 각 그룹에서 고르는 행의 조합 수를 곱해 전이하기
-// 예: 한 행의 합이 0이어도 짝수; 행 R, 열 C일 때 시간 O(C*R^2), 공간 O(R^2)
+// 열별 1의 개수만 유지하면 되므로 행의 구체적인 모양 대신 지금까지 합이 짝수인 행의 개수를 DP 상태로 저장합니다.
+// 이번 열에 1을 놓은 행은 합의 홀짝이 바뀝니다. 짝수 행과 홀수 행에서 고르는 조합 수를 곱해 다음 상태의 경우의 수에 더합니다.
+// 합이 0인 행도 짝수입니다. 행 수 R, 열 수 C에 대해 시간 O(C*R²), 공간 O(R²)입니다.

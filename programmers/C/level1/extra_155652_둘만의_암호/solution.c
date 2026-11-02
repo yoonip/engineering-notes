@@ -24,7 +24,7 @@ char* solution(const char* s, const char* skip, int index) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// char* solution(const char* s, const char* skip, int index) {  // 제외 문자를 뺀 알파벳을 만들기; 각 문자의 위치에서 index만큼 이동하고 나머지 연산으로 끝과 처음을 연결하기
+// char* solution(const char* s, const char* skip, int index) {  // skip 문자를 뺀 알파벳 표를 만듭니다. 각 문자의 표 안 위치에서 index칸 이동하고, 표의 길이로 나눈 나머지로 끝에서 처음으로 순환합니다.
 //     char alphabet[27]; int length = 0, position[26];  // 남은 알파벳 개수 저장
 //     for (char c = 'a'; c <= 'z'; ++c) if (!strchr(skip, c)) { position[c - 'a'] = length; alphabet[length++] = c; }  // skip에 없는 소문자만 순환표에 넣고 문자별 위치도 함께 기록
 //     size_t n = strlen(s); char* answer = malloc(n + 1);  // 원문 길이 / 정해진 칸만큼 옮긴 문자열 공간 확보
@@ -34,4 +34,4 @@ char* solution(const char* s, const char* skip, int index) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 제외 문자를 뺀 알파벳을 만들기; 각 문자의 위치에서 index만큼 이동하고 나머지 연산으로 끝과 처음을 연결하기
+// skip 문자를 뺀 알파벳 표를 만듭니다. 각 문자의 표 안 위치에서 index칸 이동하고, 표의 길이로 나눈 나머지로 끝에서 처음으로 순환합니다.

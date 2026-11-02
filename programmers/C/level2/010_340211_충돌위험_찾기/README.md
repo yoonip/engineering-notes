@@ -4,15 +4,11 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/340211) · Level 2 · C
 
-## 풀이
+매 초 로봇의 현재 좌표별 대수를 세고, 행을 우선하여 한 칸 움직인 다음 상태를 계산합니다.
 
-매 초 로봇의 현재 좌표를 세고, 행 우선으로 한 칸 움직여 다음 초 상태를 만들기
-0초와 마지막 도착 순간을 포함하며, 센터를 떠난 로봇은 다음 초부터 제외하기; 시간 O(로봇 수*최대 이동 시간), 공간 O(로봇 수)
-예: 같은 초 (4,4)에 네 대가 모여도 위험 상황은 1번; 서로 다른 두 좌표에서 모이면 2번
+0초와 마지막 도착 순간을 포함하며, 센터를 떠난 로봇은 다음 초부터 제외합니다. 포인트 P개, 로봇 R대, 처리 시각 T개, 좌표 범위 H×W이면 시간은 O(P+T(R+HW)), 공간은 O(R+HW)입니다. 매 초 counts 배열 전체를 초기화하는 비용을 포함합니다.
 
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 같은 초 (4,4)에 네 대가 모여도 위험 상황은 1번입니다. 서로 다른 두 좌표에서 모이면 2번입니다.
 
 ```c
 #include <stdio.h>
@@ -54,9 +50,9 @@ int solution(int** points, size_t points_rows, size_t points_cols, int** routes,
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(int** points, size_t points_rows, size_t points_cols, int** routes, size_t routes_rows, size_t routes_cols) {  // 매 초 로봇의 현재 좌표를 세고, 행 우선으로 한 칸 움직여 다음 초 상태를 만들기
+// int solution(int** points, size_t points_rows, size_t points_cols, int** routes, size_t routes_rows, size_t routes_cols) {  // 매 초 로봇의 현재 좌표별 대수를 세고, 행을 우선하여 한 칸 움직인 다음 상태를 계산합니다.
 //     (void)points_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int max_r = 0, max_c = 0;  // 점들의 최대 행 / 점들의 최대 열 저장
 //     for (size_t i = 0; i < points_rows; ++i) { if (points[i][0] > max_r) max_r = points[i][0]; if (points[i][1] > max_c) max_c = points[i][1]; }  // 로봇 또는 지점 번호 순서대로 확인; 점들의 최대 행 / 점들의 최대 열 갱신
@@ -81,9 +77,9 @@ int solution(int** points, size_t points_rows, size_t points_cols, int** routes,
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 매 초 로봇의 현재 좌표를 세고, 행 우선으로 한 칸 움직여 다음 초 상태를 만들기
-// 0초와 마지막 도착 순간을 포함하며, 센터를 떠난 로봇은 다음 초부터 제외하기; 시간 O(로봇 수*최대 이동 시간), 공간 O(로봇 수)
-// 예: 같은 초 (4,4)에 네 대가 모여도 위험 상황은 1번; 서로 다른 두 좌표에서 모이면 2번
+// 매 초 로봇의 현재 좌표별 대수를 세고, 행을 우선하여 한 칸 움직인 다음 상태를 계산합니다.
+// 0초와 마지막 도착 순간을 포함하며, 센터를 떠난 로봇은 다음 초부터 제외합니다. 포인트 P개, 로봇 R대, 처리 시각 T개, 좌표 범위 H×W이면 시간은 O(P+T(R+HW)), 공간은 O(R+HW)입니다. 매 초 counts 배열 전체를 초기화하는 비용을 포함합니다.
+// 예: 같은 초 (4,4)에 네 대가 모여도 위험 상황은 1번입니다. 서로 다른 두 좌표에서 모이면 2번입니다.
 ```
 
 ## 채점 기록

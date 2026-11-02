@@ -27,14 +27,14 @@ int solution(const char* board[], size_t board_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static bool wins(const char** board, char c) {  // 가로·세로·대각선 세 칸이 같은지 확인
 //     for (int i = 0; i < 3; ++i)  // 가로세로 승리 줄 번호 순서대로 확인
 //         if ((board[i][0] == c && board[i][1] == c && board[i][2] == c) || (board[0][i] == c && board[1][i] == c && board[2][i] == c)) return true;  // 현재 가로줄이나 세로줄이 모두 같은 말이면 승리
 //     return (board[0][0] == c && board[1][1] == c && board[2][2] == c) || (board[0][2] == c && board[1][1] == c && board[2][0] == c);  // 확인할 말 문자로 최종값 계산
 // }  // 이 범위 끝
-// int solution(const char* board[], size_t board_len) {  // O·X 개수로 차례를 검사하고, 승자가 있으면 그 승자의 마지막 차례에서 끝났는지 확인
+// int solution(const char* board[], size_t board_len) {  // O·X 개수로 차례를 검사하고, 승자가 있으면 그 승자의 마지막 차례에서 경기가 끝났는지 확인합니다.
 //     (void)board_len;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int o = 0, x = 0;  // O를 둔 횟수 / X를 둔 횟수 저장
 //     for (int r = 0; r < 3; ++r) for (int c = 0; c < 3; ++c) { o += board[r][c] == 'O'; x += board[r][c] == 'X'; }  // 보드 행 순서대로 확인; 확인할 말 문자 갱신
@@ -44,5 +44,5 @@ int solution(const char* board[], size_t board_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// O·X 개수로 차례를 검사하고, 승자가 있으면 그 승자의 마지막 차례에서 끝났는지 확인
-// 예: OOO와 XXX가 함께 있으면 0, 빈 판은 1; 판이 항상 3×3이므로 시간·공간 O(1)
+// O·X 개수로 차례를 검사하고, 승자가 있으면 그 승자의 마지막 차례에서 경기가 끝났는지 확인합니다.
+// 예: OOO와 XXX가 함께 있으면 0, 빈 판은 1입니다. 판이 항상 3×3이므로 시간·공간은 O(1)입니다.

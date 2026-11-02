@@ -6,7 +6,7 @@
 
 ## 풀이
 
-각 수의 배수를 순회하며 약수의 개수를 누적하기; 약수 개수가 제한을 넘으면 정해진 공격력을 사용
+각 약수 후보의 배수를 순회하며 번호별 약수 개수를 구합니다. 약수 개수가 제한을 넘으면 정해진 대체 공격력을 적용해 철의 총량을 더합니다.
 
 ## 코드와 줄별 설명
 
@@ -39,7 +39,7 @@ int solution(int number, int limit, int power) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(int number, int limit, int power) {  // 각 수의 배수를 순회하며 약수의 개수를 누적하기; 약수 개수가 제한을 넘으면 정해진 공격력을 사용
+// int solution(int number, int limit, int power) {  // 각 약수 후보의 배수를 순회하며 번호별 약수 개수를 구합니다. 약수 개수가 제한을 넘으면 정해진 대체 공격력을 적용해 철의 총량을 더합니다.
 //     int* counts = calloc(number + 1, sizeof(int));  // 기사 번호별 약수 개수 공간 확보하고 0으로 시작
 //     for (int divisor = 1; divisor <= number; ++divisor) for (int multiple = divisor; multiple <= number; multiple += divisor) ++counts[multiple];  // 약수 후보의 모든 배수에 약수 개수 1씩 추가
 //     int answer = 0;  // 제한을 적용한 철의 총무게 저장
@@ -49,7 +49,7 @@ int solution(int number, int limit, int power) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 각 수의 배수를 순회하며 약수의 개수를 누적하기; 약수 개수가 제한을 넘으면 정해진 공격력을 사용
+// 각 약수 후보의 배수를 순회하며 번호별 약수 개수를 구합니다. 약수 개수가 제한을 넘으면 정해진 대체 공격력을 적용해 철의 총량을 더합니다.
 ```
 
 ## 채점 기록

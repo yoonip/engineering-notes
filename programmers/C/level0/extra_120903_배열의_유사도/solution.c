@@ -27,5 +27,6 @@ int solution(const char* s1[], size_t s1_len, const char* s2[], size_t s2_len) {
 //         for (size_t j = 0; j < s2_len; ++j)  // 두 번째 배열에서 같은 문자열 탐색
 //             if (strcmp(s1[i], s2[j]) == 0) { ++count; break; }  // 같은 문자열을 찾으면 공통 개수를 늘리고 현재 기준 문자열의 탐색 종료
 //     return count;  // 두 배열에 공통으로 들어 있는 문자열 수 반환
-// }  // 블록 끝// 풀이 요약
+// }  // 블록 끝
+// 풀이 요약
 // 두 집합에 모두 포함된 원소의 개수를 구하기

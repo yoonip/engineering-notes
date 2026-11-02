@@ -34,18 +34,18 @@ int* solution(const char* today, const char* terms[], size_t terms_len, const ch
 // static int date_days(const char* date) {  // 한 달 28일 기준으로 날짜를 정수화
 //     int y, m, d; sscanf(date, "%d.%d.%d", &y, &m, &d); return y * 336 + m * 28 + d;  // 연·월·일을 읽어 1년 336일, 한 달 28일 기준 날짜로 바꾸기
 // }  // 이 범위 끝
-// int* solution(const char* today, const char* terms[], size_t terms_len, const char* privacies[], size_t privacies_len) {  // 모든 달을 28일로 바꾸어 날짜를 비교; 수집일에 약관 개월 수만큼 더한 날짜가 오늘 이하이면 파기 대상으로 선택
+// int* solution(const char* today, const char* terms[], size_t terms_len, const char* privacies[], size_t privacies_len) {  // 문제의 달력 규칙에 따라 모든 달을 28일로 두고 날짜를 정수로 변환합니다. 오늘이 수집일에 유효기간을 더한 날 이상이면 파기 대상에 넣습니다.
 //     int months[26] = {0};  // 약관 문자별 보관 개월 수 저장
 //     for (size_t i = 0; i < terms_len; ++i) { char kind; int duration; sscanf(terms[i], "%c %d", &kind, &duration); months[kind - 'A'] = duration; }  // 약관 문자별 보관 개월 수 기록
 //     int now = date_days(today); int* work = malloc(privacies_len * sizeof(int)); size_t length = 0;  // 오늘을 28일 기준으로 바꾼 날짜 / 파기 대상 번호를 모을 임시 배열 / 파기 대상 수 공간 확보
 //     for (size_t i = 0; i < privacies_len; ++i) {  // 약관 또는 개인정보 위치 순서대로 확인
 //         char kind = privacies[i][strlen(privacies[i]) - 1];  // 개인정보의 약관 종류 저장
 //         int expiration = date_days(privacies[i]) + months[kind - 'A'] * 28;  // 보관 기간이 끝나는 다음 날 저장
-//         if (now >= expiration) work[length++] = (int)i + 1;  // 오늘이 보관 종료일 이상이면 파기 대상의 1부터 시작하는 번호 추가
+//         if (now >= expiration) work[length++] = (int)i + 1;  // 오늘이 보관 가능한 마지막 날의 다음 날 이상이면 1부터 시작하는 번호 추가
 //     }  // 이 범위 끝
 //     int* answer = malloc(length * sizeof(int)); memcpy(answer, work, length * sizeof(int)); free(work);  // 파기할 개인정보 번호 공간 확보
 //     return answer;  // 파기할 개인정보 번호 반환
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 모든 달을 28일로 바꾸어 날짜를 비교; 수집일에 약관 개월 수만큼 더한 날짜가 오늘 이하이면 파기 대상으로 선택
+// 문제의 달력 규칙에 따라 모든 달을 28일로 두고 날짜를 정수로 변환합니다. 오늘이 수집일에 유효기간을 더한 날 이상이면 파기 대상에 넣습니다.

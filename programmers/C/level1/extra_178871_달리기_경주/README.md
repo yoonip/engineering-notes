@@ -6,7 +6,7 @@
 
 ## 풀이
 
-선수 이름별 현재 위치를 해시 테이블에 저장; 호명된 선수와 바로 앞 선수를 교환하고 두 위치를 함께 갱신
+선수 배열과 이름별 현재 위치를 함께 관리합니다. 호명된 선수와 바로 앞 선수를 교환하고 두 사람의 위치도 갱신합니다.
 
 ## 코드와 줄별 설명
 
@@ -74,7 +74,7 @@ char** solution(const char* players[], size_t players_len, const char* callings[
 //     while (map[slot].key && strcmp(map[slot].key, key)) slot = (slot + 1) & (capacity - 1);  // 빈 칸이나 같은 선수 이름을 만날 때까지 충돌 칸을 한 칸씩 이동
 //     return slot;  // 선수 이름의 해시 칸 반환
 // }  // 이 범위 끝
-// char** solution(const char* players[], size_t players_len, const char* callings[], size_t callings_len) {  // 선수 이름별 현재 위치를 해시 테이블에 저장; 호명된 선수와 바로 앞 선수를 교환하고 두 위치를 함께 갱신
+// char** solution(const char* players[], size_t players_len, const char* callings[], size_t callings_len) {  // 선수 배열과 이름별 현재 위치를 함께 관리합니다. 호명된 선수와 바로 앞 선수를 교환하고 두 사람의 위치도 갱신합니다.
 //     size_t capacity = 1; while (capacity < players_len * 2) capacity *= 2;  // 선수 수 두 배 이상의 2의 거듭제곱으로 해시표 크기 설정
 //     MapEntry* position = calloc(capacity, sizeof(MapEntry));  // 선수 이름별 현재 순위 공간 확보하고 0으로 시작
 //     char** answer = malloc(players_len * sizeof(char*));  // 현재 순서로 놓은 선수 이름 공간 확보
@@ -91,7 +91,7 @@ char** solution(const char* players[], size_t players_len, const char* callings[
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 선수 이름별 현재 위치를 해시 테이블에 저장; 호명된 선수와 바로 앞 선수를 교환하고 두 위치를 함께 갱신
+// 선수 배열과 이름별 현재 위치를 함께 관리합니다. 호명된 선수와 바로 앞 선수를 교환하고 두 사람의 위치도 갱신합니다.
 ```
 
 ## 채점 기록

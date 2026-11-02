@@ -49,7 +49,7 @@ int solution(int** grid, size_t grid_rows, size_t grid_cols, int d[], size_t d_l
 //     for (int i = 0; i < size; ++i) for (int mid = 0; mid < size; ++mid) if (a[i * size + mid]) for (int j = 0; j < size; ++j) result[i * size + j] = (int)((result[i * size + j] + (long long)a[i * size + mid] * b[mid * size + j]) % MOD);  // 중간 칸을 거치는 경로 수의 곱을 더해 전이 행렬 곱 계산
 //     return result;  // 행렬 곱의 경로 수 반환
 // }  // 이 범위 끝
-// int solution(int** grid, size_t grid_rows, size_t grid_cols, int d[], size_t d_len, int k) {  // 수열 d 한 번의 출발·도착별 경로 수를 DP로 계산하고, 그 전이 행렬의 k제곱을 빠른 거듭제곱으로 적용하기
+// int solution(int** grid, size_t grid_rows, size_t grid_cols, int d[], size_t d_len, int k) {  // 수열 d를 한 번 따를 때의 출발·도착 칸별 경로 수를 DP로 계산합니다. 이 전이 행렬의 k제곱을 빠른 거듭제곱으로 적용합니다.
 //     int rows = (int)grid_rows, cols = (int)grid_cols, size = rows * cols; int* matrix = calloc((size_t)size * size,sizeof(*matrix)); int* ways = malloc((size_t)size * sizeof(*ways)); int* next = malloc((size_t)size * sizeof(*next));  // 격자 크기를 구해 한 수열의 전이 행렬을 0으로 초기화하고 두 단계 경로 수 배열 확보
 //     const int dr[4] = {1,-1,0,0}, dc[4] = {0,0,1,-1};  // 행 이동 / 열 이동 저장
 //     for (int start = 0; start < size; ++start) {  // 한 번의 경로를 시작할 칸 순서대로 확인
@@ -74,6 +74,6 @@ int solution(int** grid, size_t grid_rows, size_t grid_cols, int d[], size_t d_l
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 수열 d 한 번의 출발·도착별 경로 수를 DP로 계산하고, 그 전이 행렬의 k제곱을 빠른 거듭제곱으로 적용하기
-// 예: A→B가 2가지, B→C가 3가지라면 이어지는 경로는 6가지; 재방문을 허용하므로 행렬 곱으로 연결 가능
-// V=n*m, L=len(d); 시간 O(L*V^2+V^3*log k), 공간 O(V^2)
+// 수열 d를 한 번 따를 때의 출발·도착 칸별 경로 수를 DP로 계산합니다. 이 전이 행렬의 k제곱을 빠른 거듭제곱으로 적용합니다.
+// A→B가 2가지이고 B→C가 3가지이면 두 경로를 이어 붙이는 방법은 6가지입니다. 문제에서 재방문을 허용하므로 앞 경로에서 방문한 칸을 별도 상태로 저장하지 않아도 됩니다.
+// V=n*m, L=d의 길이에 대해 시간 O(L*V²+V³*log k), 공간 O(V²)입니다.

@@ -25,15 +25,15 @@ int solution(int nums[], size_t nums_len) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(int nums[], size_t nums_len) {  // 서로 다른 세 수의 합을 계산; 2부터 제곱근 이하의 약수가 없는 합의 개수를 세기
+// int solution(int nums[], size_t nums_len) {  // 서로 다른 세 인덱스를 i < j < k로 골라 합을 구합니다. 2부터 합의 제곱근 이하까지 약수가 없으면 소수가 되는 조합으로 셉니다.
 //     int answer = 0;  // 합이 소수가 되는 세 수 조합 수 저장
 //     for (size_t i = 0; i < nums_len; ++i) for (size_t j = i + 1; j < nums_len; ++j) for (size_t k = j + 1; k < nums_len; ++k) {  // 서로 다른 세 위치를 i < j < k로 골라 중복 조합 피하기
 //         int sum = nums[i] + nums[j] + nums[k]; bool prime = true;  // 고른 세 수의 합 / 현재 합의 소수 여부 저장
 //         for (int divisor = 2; divisor * divisor <= sum; ++divisor) if (sum % divisor == 0) { prime = false; break; }  // 제곱근까지 나눠 보고 약수가 하나라도 나오면 소수가 아니므로 중단
-//         if (prime) ++answer;  // 현재 합의 소수 여부가 남아 있으면 합이 소수가 되는 세 수 조합 수 갱신
+//         if (prime) ++answer;  // 합이 소수인 조합이면 정답 개수를 1 늘림
 //     }  // 이 범위 끝
 //     return answer;  // 합이 소수가 되는 세 수 조합 수 반환
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 서로 다른 세 수의 합을 계산; 2부터 제곱근 이하의 약수가 없는 합의 개수를 세기
+// 서로 다른 세 인덱스를 i < j < k로 골라 합을 구합니다. 2부터 합의 제곱근 이하까지 약수가 없으면 소수가 되는 조합으로 셉니다.

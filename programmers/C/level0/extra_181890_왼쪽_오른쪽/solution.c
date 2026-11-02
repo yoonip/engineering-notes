@@ -41,5 +41,6 @@ char** solution(const char* str_list[], size_t str_list_len) {
 //     char** answer = malloc((end - begin) * sizeof(char*));  // answer를 저장할 메모리 확보
 //     for (size_t i = begin; i < end; ++i) answer[i - begin] = copy_text(str_list[i]);  // 선택한 시작·끝 범위의 문자열을 결과에 차례로 복사
 //     return answer;  // 완성한 결과 반환
-// }  // 블록 끝// 풀이 요약
+// }  // 블록 끝
+// 풀이 요약
 // 앞에서부터 보다가 l 또는 r을 처음 만나는 즉시 해당 부분을 반환

@@ -6,9 +6,9 @@
 
 ## 풀이
 
-허용할 산길 강도를 이분 탐색하고, 그 이하 간선만 쓰는 다중 시작점 BFS로 산봉우리 도달 여부 확인
-산봉우리에 도달하면 그 뒤로 확장하지 않기; 가능한 최소 강도를 찾은 뒤 도달한 산봉우리 중 최소 번호 선택; 최대 강도 W일 때 시간 O((N+E) log(W+1)), 공간 O(N+E)
-예: 간선이 3·2·3인 코스는 합 8이 아니라 intensity 3; 같은 intensity라면 산봉우리 번호가 작은 코스를 고르기
+허용할 산길 이동 시간의 상한을 이분 탐색합니다. 그 상한 이하인 간선만 사용해 모든 출입구에서 BFS를 시작하고 산봉우리 도달 여부를 확인합니다.
+산봉우리는 도착점으로만 쓰고 그 뒤로 확장하지 않습니다. 가능한 최소 상한을 찾은 뒤 도달한 산봉우리 중 번호가 가장 작은 곳을 고릅니다. 정점 N개·간선 E개·최대 이동 시간 W에 대해 시간은 O((N+E) log(W+1)), 공간은 O(N+E)입니다.
+예를 들어 산길 이동 시간이 3·2·3인 코스의 intensity는 합계 8이 아닌 최댓값 3입니다. intensity가 같으면 산봉우리 번호가 더 작은 코스를 고릅니다.
 
 ## 코드와 줄별 설명
 
@@ -53,8 +53,8 @@ int* solution(int n, int** paths, size_t paths_rows, size_t paths_cols, int gate
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// typedef struct { int to, weight, next; } Edge;  // 도착 정점·산길 강도·다음 간선 번호를 한 항목으로 묶기
-// static int reachable(int n, const int* head, const Edge* edges, const bool* summit, const int* gates, size_t gates_len, int limit, bool* visited, int* queue) {  // 큐를 이용한 너비 우선 탐색으로 도달 가능성 또는 최단 거리를 계산
+// typedef struct { int to, weight, next; } Edge;  // struct로 산길 도착점·이동 시간·다음 간선 번호를 묶고 Edge라는 이름 지정
+// static int reachable(int n, const int* head, const Edge* edges, const bool* summit, const int* gates, size_t gates_len, int limit, bool* visited, int* queue) {  // 이동 시간 제한 이하의 산길로 출입구에서 도달할 수 있는 최소 번호 봉우리 탐색
 //     memset(visited, 0, ((size_t)n + 1) * sizeof(*visited)); int first = 0, last = 0, best = 0;  // 큐에서 읽을 위치 / 큐에 넣을 위치 초기화
 //     for (size_t i = 0; i < gates_len; ++i) { visited[gates[i]] = true; queue[last++] = gates[i]; }  // 산길 또는 출입구 위치 순서대로 확인; 큐에 넣을 위치 갱신
 //     while (first < last) {  // 큐에 미처리 정점이 남아 있는 동안 너비 우선 탐색을 계속하기
@@ -64,10 +64,10 @@ int* solution(int n, int** paths, size_t paths_rows, size_t paths_cols, int gate
 //     }  // 이 범위 끝
 //     return best;  // 도달한 산봉우리 중 최소 번호 반환
 // }  // 이 범위 끝
-// int* solution(int n, int** paths, size_t paths_rows, size_t paths_cols, int gates[], size_t gates_len, int summits[], size_t summits_len) {  // 허용할 산길 강도를 이분 탐색하고, 그 이하 간선만 쓰는 다중 시작점 BFS로 산봉우리 도달 여부 확인
-//     (void)paths_cols; int* head = malloc(((size_t)n + 1) * sizeof(*head)); Edge* edges = malloc(2 * paths_rows * sizeof(*edges)); bool* summit = calloc((size_t)n + 1, sizeof(*summit));  // 노드별 첫 산길 / 양방향 산길 목록 / 산봉우리 표시 공간 확보하고 0으로 시작
+// int* solution(int n, int** paths, size_t paths_rows, size_t paths_cols, int gates[], size_t gates_len, int summits[], size_t summits_len) {  // 허용할 산길 이동 시간의 상한을 이분 탐색합니다. 그 상한 이하인 간선만 사용해 모든 출입구에서 BFS를 시작하고 산봉우리 도달 여부를 확인합니다.
+//     (void)paths_cols; int* head = malloc(((size_t)n + 1) * sizeof(*head)); Edge* edges = malloc(2 * paths_rows * sizeof(*edges)); bool* summit = calloc((size_t)n + 1, sizeof(*summit));  // 간선 배열을 malloc으로 확보하고 봉우리 표시 배열만 calloc으로 0 초기화
 //     bool* visited = malloc(((size_t)n + 1) * sizeof(*visited)); int* queue = malloc(((size_t)n + 1) * sizeof(*queue)); for (int i = 0; i <= n; ++i) head[i] = -1;  // 현재 강도로 갈 수 있는 정점 / 다중 출발 BFS 큐 / 산길 또는 출입구 위치 / 노드별 첫 산길 공간 확보
-//     int count = 0, low = 0, high = 0;  // 저장한 방향 간선 수 / 가능한 최대 경사 하한 / 최대 경사 상한 저장
+//     int count = 0, low = 0, high = 0;  // 방향 간선 수와 산길 이동 시간 상한을 찾는 이분 탐색의 양끝 초기화
 //     for (size_t i = 0; i < paths_rows; ++i) { if (paths[i][2] > high) high = paths[i][2]; for (int d = 0; d < 2; ++d) { int a = paths[i][d], b = paths[i][1 - d]; edges[count] = (Edge){b,paths[i][2],head[a]}; head[a] = count++; } }  // 산길 또는 출입구 위치 순서대로 확인; 양방향 간선 방향 / 저장한 방향 간선 수 갱신
 //     for (size_t i = 0; i < summits_len; ++i) summit[summits[i]] = true;  // 산길 또는 출입구 위치 순서대로 확인; 산봉우리 표시 / 산길 또는 출입구 위치 확인
 //     while (low < high) { int mid = low + (high - low) / 2; if (reachable(n,head,edges,summit,gates,gates_len,mid,visited,queue)) high = mid; else low = mid + 1; }  // 이분 탐색 범위가 한 값으로 좁혀질 때까지 가능 여부를 확인
@@ -77,9 +77,9 @@ int* solution(int n, int** paths, size_t paths_rows, size_t paths_cols, int gate
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 허용할 산길 강도를 이분 탐색하고, 그 이하 간선만 쓰는 다중 시작점 BFS로 산봉우리 도달 여부 확인
-// 산봉우리에 도달하면 그 뒤로 확장하지 않기; 가능한 최소 강도를 찾은 뒤 도달한 산봉우리 중 최소 번호 선택; 최대 강도 W일 때 시간 O((N+E) log(W+1)), 공간 O(N+E)
-// 예: 간선이 3·2·3인 코스는 합 8이 아니라 intensity 3; 같은 intensity라면 산봉우리 번호가 작은 코스를 고르기
+// 허용할 산길 이동 시간의 상한을 이분 탐색합니다. 그 상한 이하인 간선만 사용해 모든 출입구에서 BFS를 시작하고 산봉우리 도달 여부를 확인합니다.
+// 산봉우리는 도착점으로만 쓰고 그 뒤로 확장하지 않습니다. 가능한 최소 상한을 찾은 뒤 도달한 산봉우리 중 번호가 가장 작은 곳을 고릅니다. 정점 N개·간선 E개·최대 이동 시간 W에 대해 시간은 O((N+E) log(W+1)), 공간은 O(N+E)입니다.
+// 예를 들어 산길 이동 시간이 3·2·3인 코스의 intensity는 합계 8이 아닌 최댓값 3입니다. intensity가 같으면 산봉우리 번호가 더 작은 코스를 고릅니다.
 ```
 
 ## 채점 기록

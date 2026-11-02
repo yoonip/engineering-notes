@@ -6,7 +6,7 @@
 
 ## 풀이
 
-시작 칸을 찾고 명령의 이동 경로를 한 칸씩 확인; 공원 밖이나 장애물을 만나는 명령은 적용하지 않음
+시작점을 찾고 각 명령의 경로를 임시 좌표로 한 칸씩 검사합니다. 공원 밖이나 장애물을 만나면 명령 전체를 취소하고, 끝까지 이동할 수 있을 때만 실제 위치를 갱신합니다.
 
 ## 코드와 줄별 설명
 
@@ -48,7 +48,7 @@ int* solution(const char* park[], size_t park_len, const char* routes[], size_t 
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int* solution(const char* park[], size_t park_len, const char* routes[], size_t routes_len) {  // 시작 칸을 찾고 명령의 이동 경로를 한 칸씩 확인; 공원 밖이나 장애물을 만나는 명령은 적용하지 않음
+// int* solution(const char* park[], size_t park_len, const char* routes[], size_t routes_len) {  // 시작점을 찾고 각 명령의 경로를 임시 좌표로 한 칸씩 검사합니다. 공원 밖이나 장애물을 만나면 명령 전체를 취소하고, 끝까지 이동할 수 있을 때만 실제 위치를 갱신합니다.
 //     int height = (int)park_len, width = (int)strlen(park[0]), row = 0, col = 0;  // 공원의 행 수 / 공원의 열 수 / 현재 행 / 현재 열 저장
 //     for (int r = 0; r < height; ++r) for (int c = 0; c < width; ++c) if (park[r][c] == 'S') { row = r; col = c; }  // 출발점을 찾을 행 순서대로 확인; 출발점을 찾을 열 갱신
 //     for (size_t q = 0; q < routes_len; ++q) {  // 현재 이동 명령 순서대로 확인
@@ -57,17 +57,17 @@ int* solution(const char* park[], size_t park_len, const char* routes[], size_t 
 //         int dc = direction == 'W' ? -1 : direction == 'E' ? 1 : 0;  // 한 걸음의 열 변화 저장
 //         int nr = row, nc = col; bool valid = true;  // 이동을 시험할 행 / 이동을 시험할 열 / 명령 전체를 끝낼 수 있는지 여부 저장
 //         for (int step = 0; step < distance; ++step) {  // 시험 중인 걸음 번호 순서대로 확인
-//             nr += dr; nc += dc;  // 이동을 시험할 행 / 한 걸음의 행 변화 / 이동을 시험할 열 더해 누적
-//             if (nr < 0 || nr >= height || nc < 0 || nc >= width || park[nr][nc] == 'X') { valid = false; break; }  // 격자 밖이거나 막혔거나 이미 처리한 칸이면 명령 전체를 끝낼 수 있는지 여부 갱신
+//             nr += dr; nc += dc;  // 임시 행과 열에 각 방향의 한 걸음 이동량을 더함
+//             if (nr < 0 || nr >= height || nc < 0 || nc >= width || park[nr][nc] == 'X') { valid = false; break; }  // 범위를 벗어나거나 장애물 X이면 이동 불가로 표시하고 현재 경로 검사 종료
 //         }  // 이 범위 끝
-//         if (valid) { row = nr; col = nc; }  // 명령 전체를 끝낼 수 있는지 여부가 남아 있으면 현재 행 / 현재 열 갱신
+//         if (valid) { row = nr; col = nc; }  // 경로의 모든 칸이 유효할 때만 임시 좌표를 실제 위치에 반영
 //     }  // 이 범위 끝
 //     int* answer = malloc(2 * sizeof(int)); answer[0] = row; answer[1] = col;  // 명령 처리 후 최종 좌표 공간 확보
 //     return answer;  // 명령 처리 후 최종 좌표 반환
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 시작 칸을 찾고 명령의 이동 경로를 한 칸씩 확인; 공원 밖이나 장애물을 만나는 명령은 적용하지 않음
+// 시작점을 찾고 각 명령의 경로를 임시 좌표로 한 칸씩 검사합니다. 공원 밖이나 장애물을 만나면 명령 전체를 취소하고, 끝까지 이동할 수 있을 때만 실제 위치를 갱신합니다.
 ```
 
 ## 채점 기록

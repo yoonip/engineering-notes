@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/169198) · Level 2 · C
 
-## 풀이
+목표 공을 네 벽에 대칭시켜 반사 경로를 직선으로 바꿉니다. 벽에 닿기 전에 목표 공을 먼저 맞히는 방향은 제외합니다.
 
-목표 공을 네 벽에 대칭시켜 반사 경로를 직선으로 바꾸기; 벽 전에 목표 공을 먼저 맞히는 방향은 제외하기
-
-예: (3,7)에서 (7,7)은 아래·위 벽 후보 중 위 벽을 거치면 거리 제곱 52; 공 B개일 때 시간·결과 공간 O(B)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: m=n=10이고 시작점 (3,7), 목표점 (7,7)이면 위 벽을 거친 거리의 제곱은 4²+6²=52입니다. 목표 공 B개에 대해 시간·결과 공간은 O(B)입니다.
 
 ```c
 #include <stdio.h>
@@ -44,9 +38,9 @@ int* solution(int m, int n, int startX, int startY, int** balls, size_t balls_ro
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int* solution(int m, int n, int startX, int startY, int** balls, size_t balls_rows, size_t balls_cols) {  // 목표 공을 네 벽에 대칭시켜 반사 경로를 직선으로 바꾸기; 벽 전에 목표 공을 먼저 맞히는 방향은 제외하기
+// int* solution(int m, int n, int startX, int startY, int** balls, size_t balls_rows, size_t balls_cols) {  // 목표 공을 네 벽에 대칭시켜 반사 경로를 직선으로 바꿉니다. 벽에 닿기 전에 목표 공을 먼저 맞히는 방향은 제외합니다.
 //     (void)balls_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int* answer = malloc(balls_rows * sizeof(*answer));  // 공별 한 번 반사 최소 거리 제곱 공간 확보
 //     for (size_t i = 0; i < balls_rows; ++i) {  // 목표 공 번호 순서대로 확인
@@ -61,8 +55,8 @@ int* solution(int m, int n, int startX, int startY, int** balls, size_t balls_ro
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 목표 공을 네 벽에 대칭시켜 반사 경로를 직선으로 바꾸기; 벽 전에 목표 공을 먼저 맞히는 방향은 제외하기
-// 예: (3,7)에서 (7,7)은 아래·위 벽 후보 중 위 벽을 거치면 거리 제곱 52; 공 B개일 때 시간·결과 공간 O(B)
+// 목표 공을 네 벽에 대칭시켜 반사 경로를 직선으로 바꿉니다. 벽에 닿기 전에 목표 공을 먼저 맞히는 방향은 제외합니다.
+// 예: m=n=10이고 시작점 (3,7), 목표점 (7,7)이면 위 벽을 거친 거리의 제곱은 4²+6²=52입니다. 목표 공 B개에 대해 시간·결과 공간은 O(B)입니다.
 ```
 
 ## 채점 기록

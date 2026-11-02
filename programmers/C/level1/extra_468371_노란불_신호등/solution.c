@@ -41,7 +41,7 @@ int solution(int** signals, size_t signals_rows, size_t signals_cols) {
 //     while (b) { long long remainder = a % b; a = b; b = remainder; }  // 나머지가 0이 될 때까지 두 값을 바꿔 최대공약수 계산
 //     return a;  // 나머지 연산이 끝난 최대공약수 반환
 // }  // 이 범위 끝
-// int solution(int** signals, size_t signals_rows, size_t signals_cols) {  // 각 신호등의 주기들의 최소공배수만큼 시각을 확인; 모든 신호등이 노란불인 첫 시각을 반환하고, 한 주기에도 없으면 -1을 반환
+// int solution(int** signals, size_t signals_rows, size_t signals_cols) {  // 모든 신호 주기의 최소공배수를 구하고 그 시간만큼 검사합니다. 모든 신호가 노란불인 첫 시각을 반환하며, 한 주기에 없다면 이후에도 없으므로 -1을 반환합니다.
 //     long long period = 1;  // 모든 신호 패턴의 최소공배수 저장
 //     for (size_t i = 0; i < signals_rows; ++i) {  // 확인할 신호등 번호 순서대로 확인
 //         long long cycle = signals[i][0] + signals[i][1] + signals[i][2];  // 현재 신호등의 한 주기 저장
@@ -54,10 +54,10 @@ int solution(int** signals, size_t signals_rows, size_t signals_cols) {
 //             long long pos = (time - 1) % (signal[0] + signal[1] + signal[2]);  // 현재 신호 주기 안의 위치 저장
 //             if (pos < signal[0] || pos >= signal[0] + signal[1]) { all_yellow = false; break; }  // 신호 주기에서 노란 구간 밖이면 동시 노란불이 아니므로 중단
 //         }  // 이 범위 끝
-//         if (all_yellow) return (int)time;  // 모든 신호가 노란색인지 여부가 남아 있으면 확인할 전체 시각로 최종값 계산
+//         if (all_yellow) return (int)time;  // 모든 신호가 노란불이면 처음 발견한 현재 시각을 int로 변환해 반환
 //     }  // 이 범위 끝
 //     return -1;  // 조건에 맞는 답이 없으면 -1
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 각 신호등의 주기들의 최소공배수만큼 시각을 확인; 모든 신호등이 노란불인 첫 시각을 반환하고, 한 주기에도 없으면 -1을 반환
+// 모든 신호 주기의 최소공배수를 구하고 그 시간만큼 검사합니다. 모든 신호가 노란불인 첫 시각을 반환하며, 한 주기에 없다면 이후에도 없으므로 -1을 반환합니다.

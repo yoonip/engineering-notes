@@ -6,7 +6,7 @@
 
 ## 풀이
 
-점수를 내림차순으로 정렬해 m개씩 묶기; 각 묶음의 최솟값에 m을 곱해 합산하고 남는 과일은 제외하기
+점수를 내림차순으로 정렬해 m개씩 묶습니다. 각 묶음의 최솟값에 m을 곱해 합산하고, 한 상자를 채우지 못하는 나머지는 제외합니다.
 
 ## 코드와 줄별 설명
 
@@ -44,7 +44,7 @@ int solution(int k, int m, int score[], size_t score_len) {
 // static int descending_int(const void* a, const void* b) {  // 큰 점수부터 정렬
 //     int x = *(const int*)a, y = *(const int*)b; return (y > x) - (y < x);  // 비교할 첫 점수 / 비교할 둘째 점수 저장
 // }  // 이 범위 끝
-// int solution(int k, int m, int score[], size_t score_len) {  // 점수를 내림차순으로 정렬해 m개씩 묶기; 각 묶음의 최솟값에 m을 곱해 합산하고 남는 과일은 제외하기
+// int solution(int k, int m, int score[], size_t score_len) {  // 점수를 내림차순으로 정렬해 m개씩 묶습니다. 각 묶음의 최솟값에 m을 곱해 합산하고, 한 상자를 채우지 못하는 나머지는 제외합니다.
 //     int* sorted = malloc(score_len * sizeof(int)); memcpy(sorted, score, score_len * sizeof(int)); qsort(sorted, score_len, sizeof(int), descending_int);  // 점수 내림차순 사본 공간 확보
 //     int answer = 0;  // 팔 수 있는 상자의 총금액 저장
 //     for (size_t i = m - 1; i < score_len; i += m) answer += sorted[i] * m;  // 각 상자의 최저 점수 위치 순서대로 확인; 팔 수 있는 상자의 총금액 / 점수 내림차순 사본 / 각 상자의 최저 점수 위치 더해 누적
@@ -53,7 +53,7 @@ int solution(int k, int m, int score[], size_t score_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 점수를 내림차순으로 정렬해 m개씩 묶기; 각 묶음의 최솟값에 m을 곱해 합산하고 남는 과일은 제외하기
+// 점수를 내림차순으로 정렬해 m개씩 묶습니다. 각 묶음의 최솟값에 m을 곱해 합산하고, 한 상자를 채우지 못하는 나머지는 제외합니다.
 ```
 
 ## 채점 기록

@@ -48,7 +48,7 @@ int** solution(int n) {
 //     int row = 0, col = 0, direction = 0;  // 현재 칸을 왼쪽 위 (0, 0), 현재 방향을 오른쪽인 0으로 초기화
 //     for (int value = 1; value <= n * n; ++value) {  // 쓸 값 value를 1부터 n²까지 하나씩 늘리며 격자를 채움
 //         answer[row][col] = value;  // 현재 행 row와 열 col의 칸에 value를 기록
-//         if (value == n * n) break;  // 마지막 값 n²를 썼다면 다음 칸으로 이동할 필요가 없으므로 반복문을 끝
+//         if (value == n * n) break;  // 마지막 값 n²를 썼다면 다음 칸으로 이동할 필요가 없으므로 반복문을 끝냅니다.
 //         int nr = row + dr[direction], nc = col + dc[direction];  // 현재 방향의 이동량을 더해 직진했을 때의 다음 행 nr과 열 nc를 계산
 //         if (nr < 0 || nr >= n || nc < 0 || nc >= n || answer[nr][nc]) direction = (direction + 1) % 4;  // 다음 칸이 격자 밖이거나 이미 채워졌으면 방향 번호를 1 늘리고 % 4로 시계 방향 회전
 //         row += dr[direction]; col += dc[direction];  // 확정된 방향의 이동량을 현재 행과 열에 더해 다음에 채울 칸으로 이동

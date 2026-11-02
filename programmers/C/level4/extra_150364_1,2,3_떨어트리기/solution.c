@@ -43,7 +43,7 @@ int* solution(int** edges, size_t edges_rows, size_t edges_cols, int target[], s
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
 // static int compare(const void* p, const void* q) { return *(const int*)p - *(const int*)q; }  // 자식 노드 번호를 작은 값부터 정렬
-// int* solution(int** edges, size_t edges_rows, size_t edges_cols, int target[], size_t target_len) {  // 공의 값은 도착 리프에 영향을 주지 않음; 리프마다 공 개수 c에 대해 c≤target≤3c가 처음 모두 성립할 때 멈추기
+// int* solution(int** edges, size_t edges_rows, size_t edges_cols, int target[], size_t target_len) {  // 공에 적힌 값은 도착할 리프를 바꾸지 않습니다. 리프마다 도착한 공 수 c가 c ≤ target ≤ 3c를 처음 모두 만족할 때 낙하를 멈춥니다.
 //     (void)edges_cols; size_t n = target_len; int* degree = calloc(n,sizeof(*degree)); size_t* start = calloc(n + 1,sizeof(*start));  // 노드별 자식 수 / 노드별 자식 목록 시작 공간 확보하고 0으로 시작
 //     for (size_t i = 0; i < edges_rows; ++i) ++degree[edges[i][0] - 1];  // 간선 노드 또는 공 위치 순서대로 확인; 노드별 자식 수 갱신
 //     for (size_t i = 0; i < n; ++i) start[i + 1] = start[i] + degree[i];  // 간선 노드 또는 공 위치 순서대로 확인; 노드별 자식 목록 시작 갱신
@@ -72,6 +72,6 @@ int* solution(int** edges, size_t edges_rows, size_t edges_cols, int target[], s
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 공의 값은 도착 리프에 영향을 주지 않음; 리프마다 공 개수 c에 대해 c≤target≤3c가 처음 모두 성립할 때 멈추기
-// 이후 앞자리부터 가능한 가장 작은 값을 선택; 예: 목표 7에 공 3개면 [1,3,3]으로 배정하기
-// 공 수를 B, 트리 높이를 H라 하면 시간 O(B*H+n*log n), 공간 O(B+n)
+// 공에 적힌 값은 도착할 리프를 바꾸지 않습니다. 리프마다 도착한 공 수 c가 c ≤ target ≤ 3c를 처음 모두 만족할 때 낙하를 멈춥니다.
+// 그 뒤 떨어뜨린 순서대로, 남은 공으로 목표를 채울 수 있는 가장 작은 값을 배정합니다. 목표 7을 공 3개로 만들 때에는 [1,3,3]을 선택합니다.
+// 공 수 B, 트리 높이 H, 노드 수 n, 목표값 총합 S에 대해 시간 O(B*H+n*log n), 공간 O(S+n)입니다. 이 C 구현의 order는 실제 공 수 B가 아니라 S+1칸을 미리 확보합니다.

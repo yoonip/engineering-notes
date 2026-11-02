@@ -27,11 +27,11 @@ char* solution(int a, int b) {
 // static char* copy_text(const char* text) {  // 문자열을 새 공간에 복사해서 돌려주기
 //     char* result = malloc(strlen(text) + 1); strcpy(result, text); return result;  // 요일 문자열 사본 공간 확보
 // }  // 이 범위 끝
-// char* solution(int a, int b) {  // 윤년인 2016년의 월별 일수를 누적하고 1월 1일 금요일을 기준으로 요일을 계산
+// char* solution(int a, int b) {  // 윤년인 2016년의 월별 일수를 합산합니다. 1월 1일 금요일을 기준으로 지난 일수를 7로 나눈 나머지에 따라 요일을 구합니다.
 //     int days[12] = {31,29,31,30,31,30,31,31,30,31,30,31}; const char* weekdays[7] = {"FRI", "SAT", "SUN", "MON", "TUE", "WED", "THU"};  // 윤년의 월별 일수 / 금요일부터 시작하는 요일표 저장
 //     int elapsed = b - 1; for (int month = 0; month < a - 1; ++month) elapsed += days[month];  // 1월 1일부터 지난 날짜 수 / 날짜에 더할 이전 달 저장
-//     return copy_text(weekdays[elapsed % 7]);  // 금요일부터 시작하는 요일표 / 1월 1일부터 지난 날짜 수로 최종값 계산
+//     return copy_text(weekdays[elapsed % 7]);  // 지난 일수를 7로 나눈 나머지에 해당하는 요일 문자열을 복사해 반환
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 윤년인 2016년의 월별 일수를 누적하고 1월 1일 금요일을 기준으로 요일을 계산
+// 윤년인 2016년의 월별 일수를 합산합니다. 1월 1일 금요일을 기준으로 지난 일수를 7로 나눈 나머지에 따라 요일을 구합니다.

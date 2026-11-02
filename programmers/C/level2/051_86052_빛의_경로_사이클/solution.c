@@ -34,10 +34,10 @@ int* solution(const char* grid[], size_t grid_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static int compare(const void* p, const void* q) { return *(const int*)p - *(const int*)q; }  // 사이클 길이를 작은 값부터 정렬
-// int* solution(const char* grid[], size_t grid_len) {  // (칸,진행 방향)을 상태로 탐색; 각 상태의 다음·이전 상태가 유일하므로 미방문 상태에서 출발하면 하나의 사이클을 얻기
+// int* solution(const char* grid[], size_t grid_len) {  // (칸, 진행 방향)을 상태로 탐색합니다. 각 상태의 다음·이전 상태가 유일하므로 미방문 상태에서 출발하면 하나의 사이클을 얻습니다.
 //     int rows = (int)grid_len, cols = (int)strlen(grid[0]);  // 격자 행 수 / 격자 열 수 저장
 //     bool* visited = calloc((size_t)rows * cols * 4, sizeof(*visited));  // 행 열 방향별 방문 여부 공간 확보하고 0으로 시작
 //     int* answer = malloc((size_t)rows * cols * 4 * sizeof(*answer));  // 각 빛 경로의 사이클 길이 공간 확보
@@ -58,5 +58,5 @@ int* solution(const char* grid[], size_t grid_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// (칸,진행 방향)을 상태로 탐색; 각 상태의 다음·이전 상태가 유일하므로 미방문 상태에서 출발하면 하나의 사이클을 얻기
-// 예: ['SL','LR']은 16, ['S']는 길이 1 네 개; 상태 수 V=4*행*열, 사이클 수 K일 때 시간 O(V+K log K), 공간 O(V)
+// (칸, 진행 방향)을 상태로 탐색합니다. 각 상태의 다음·이전 상태가 유일하므로 미방문 상태에서 출발하면 하나의 사이클을 얻습니다.
+// 예: ['SL','LR']은 길이 16인 사이클 하나, ['S']는 길이 1인 사이클 네 개입니다. 상태 수 V=4*행*열, 사이클 K개에 대해 시간은 O(V+K log K), 공간은 O(V)입니다.

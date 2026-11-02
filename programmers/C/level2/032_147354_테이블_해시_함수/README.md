@@ -4,15 +4,9 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/147354) · Level 2 · C
 
-## 풀이
+지정 열 오름차순·기본키 내림차순으로 정렬한 뒤, 각 행 번호로 나눈 나머지 합을 XOR합니다.
 
-지정 열 오름차순·기본키 내림차순으로 정렬하고, 각 행 번호로 나눈 나머지 합을 XOR하기
-
-예: 정렬 후 S2=0,S3=4이므로 0 XOR 4=4; N행·M열일 때 시간 O(N log N+NM), 정렬 공간 O(N)
-
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 첫 공개 예제에서 정렬 후 S2=0, S3=4이므로 0 XOR 4=4입니다. N행·M열에 대해 시간은 O(N log N+NM), 정렬할 행 포인터 공간은 O(N)입니다.
 
 ```c
 #include <stdio.h>
@@ -48,7 +42,7 @@ int solution(int** data, size_t data_rows, size_t data_cols, int col, int row_be
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static int sort_column;  // 정렬 기준 열 번호 확인
 // static int compare(const void* p, const void* q) {  // 지정 열 오름차순, 같은 값이면 첫 열 내림차순 비교
@@ -56,7 +50,7 @@ int solution(int** data, size_t data_rows, size_t data_cols, int col, int row_be
 //     if (a[sort_column] != b[sort_column]) return (a[sort_column] > b[sort_column]) - (a[sort_column] < b[sort_column]);  // 지정 열 값이 다르면 그 열을 기준으로 오름차순 비교
 //     return (b[0] > a[0]) - (b[0] < a[0]);  // 비교할 둘째 행 / 비교할 첫 행로 최종값 계산
 // }  // 이 범위 끝
-// int solution(int** data, size_t data_rows, size_t data_cols, int col, int row_begin, int row_end) {  // 지정 열 오름차순·기본키 내림차순으로 정렬하고, 각 행 번호로 나눈 나머지 합을 XOR하기
+// int solution(int** data, size_t data_rows, size_t data_cols, int col, int row_begin, int row_end) {  // 지정 열 오름차순·기본키 내림차순으로 정렬한 뒤, 각 행 번호로 나눈 나머지 합을 XOR합니다.
 //     int** rows = malloc(data_rows * sizeof(*rows)); memcpy(rows, data, data_rows * sizeof(*rows));  // 정렬할 행 포인터 사본 공간 확보
 //     sort_column = col - 1; qsort(rows, data_rows, sizeof(*rows), compare); int answer = 0;  // 정렬 기준 열 번호 / 정렬할 행 포인터 사본 정렬 순서 맞추기
 //     for (int index = row_begin; index <= row_end; ++index) {  // 해시에 포함할 1부터 시작하는 행 번호 순서대로 확인
@@ -69,8 +63,8 @@ int solution(int** data, size_t data_rows, size_t data_cols, int col, int row_be
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 지정 열 오름차순·기본키 내림차순으로 정렬하고, 각 행 번호로 나눈 나머지 합을 XOR하기
-// 예: 정렬 후 S2=0,S3=4이므로 0 XOR 4=4; N행·M열일 때 시간 O(N log N+NM), 정렬 공간 O(N)
+// 지정 열 오름차순·기본키 내림차순으로 정렬한 뒤, 각 행 번호로 나눈 나머지 합을 XOR합니다.
+// 예: 첫 공개 예제에서 정렬 후 S2=0, S3=4이므로 0 XOR 4=4입니다. N행·M열에 대해 시간은 O(N log N+NM), 정렬할 행 포인터 공간은 O(N)입니다.
 ```
 
 ## 채점 기록

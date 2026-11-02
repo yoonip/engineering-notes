@@ -6,7 +6,7 @@
 
 ## 풀이
 
-허용된 네 발음을 앞에서부터 읽기; 바로 이전과 같은 발음을 연속해서 쓰지 않고 문자열을 끝까지 읽을 수 있는지 확인
+허용된 네 발음을 앞에서부터 이어 읽습니다. 직전과 같은 발음의 연속 사용을 제외하고 문자열 끝까지 읽을 수 있는 경우만 셉니다.
 
 ## 코드와 줄별 설명
 
@@ -45,15 +45,15 @@ int solution(const char* babbling[], size_t babbling_len) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(const char* babbling[], size_t babbling_len) {  // 허용된 네 발음을 앞에서부터 읽기; 바로 이전과 같은 발음을 연속해서 쓰지 않고 문자열을 끝까지 읽을 수 있는지 확인
+// int solution(const char* babbling[], size_t babbling_len) {  // 허용된 네 발음을 앞에서부터 이어 읽습니다. 직전과 같은 발음의 연속 사용을 제외하고 문자열 끝까지 읽을 수 있는 경우만 셉니다.
 //     const char* words[4] = {"aya", "ye", "woo", "ma"}; int answer = 0;  // 발음 가능한 네 소리 / 끝까지 발음 가능한 단어 수 저장
 //     for (size_t b = 0; b < babbling_len; ++b) {  // 검사할 단어 위치 순서대로 확인
 //         const char* sound = babbling[b]; size_t i = 0; int previous = -1;  // 현재 단어 / 다음에 읽을 발음 위치 / 바로 전 발음 번호 저장
 //         while (sound[i]) {  // 단어 끝까지 다음 발음을 이어서 확인
 //             int found = -1;  // 현재 위치와 맞는 발음 번호 저장
-//             for (int w = 0; w < 4; ++w) if (w != previous && strncmp(sound + i, words[w], strlen(words[w])) == 0) { found = w; break; }  // 검사 중인 발음 후보 순서대로 확인; 찾는 이름 또는 앞부분 문자열이 같으면 현재 위치와 맞는 발음 번호 갱신
-//             if (found < 0) break;  // 현재 위치와 맞는 발음 번호가 0보다 작으면 이번 후보 확인을 끝내기
-//             i += strlen(words[found]); previous = found;  // 다음에 읽을 발음 위치 / 발음 가능한 네 소리 / 현재 위치와 맞는 발음 번호 더해 누적
+//             for (int w = 0; w < 4; ++w) if (w != previous && strncmp(sound + i, words[w], strlen(words[w])) == 0) { found = w; break; }  // 직전과 다른 발음 중 현재 위치와 일치하는 후보를 찾으면 번호를 저장하고 for 반복 종료
+//             if (found < 0) break;  // 맞는 발음을 찾지 못했으면 현재 단어를 읽는 while 반복 종료
+//             i += strlen(words[found]); previous = found;  // 읽기 위치에 발음 길이를 더하고 직전 발음 번호를 갱신
 //         }  // 이 범위 끝
 //         if (!sound[i]) ++answer;  // 막힘없이 단어 끝까지 읽었으면 발음 가능한 단어로 세기
 //     }  // 이 범위 끝
@@ -61,7 +61,7 @@ int solution(const char* babbling[], size_t babbling_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 허용된 네 발음을 앞에서부터 읽기; 바로 이전과 같은 발음을 연속해서 쓰지 않고 문자열을 끝까지 읽을 수 있는지 확인
+// 허용된 네 발음을 앞에서부터 이어 읽습니다. 직전과 같은 발음의 연속 사용을 제외하고 문자열 끝까지 읽을 수 있는 경우만 셉니다.
 ```
 
 ## 채점 기록

@@ -6,9 +6,9 @@
 
 ## 풀이
 
-각 칸의 필요한 변화는 행 뒤집기 XOR 열 뒤집기; 첫 행을 안 뒤집는다고 고정하면 나머지 모든 선택이 결정됨
-모든 칸이 일치하는지 확인한 뒤, 그 선택과 모든 행·열 선택을 반대로 한 경우 두 개만 비교하면 됨; 같은 줄을 두 번 뒤집는 것은 불필요하기; 시간·공간 O(NM)
-예: 첫 행 고정 해법이 행 2개·열 3개를 뒤집는다면 총 5번; 선택을 전부 뒤집은 해법의 비용은 N+M-5
+각 칸의 변화 여부는 행 뒤집기와 열 뒤집기의 XOR입니다. 첫 행을 뒤집지 않는다고 고정하면 나머지 행과 열의 선택이 결정됩니다.
+결정한 선택이 모든 칸의 목표와 일치하는지 검사합니다. 가능하다면 그 선택과 모든 행·열의 선택을 반대로 한 경우 중 더 적은 횟수를 고릅니다. N행 M열에 대해 시간은 O(NM), 이 C 구현의 추가 공간은 O(1)입니다.
+예를 들어 한 해법이 행 2개와 열 3개를 뒤집으면 비용은 5입니다. 모든 선택을 반대로 한 해법의 비용은 N+M-5입니다.
 
 ## 코드와 줄별 설명
 
@@ -40,7 +40,7 @@ int solution(int** beginning, size_t beginning_rows, size_t beginning_cols, int*
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// int solution(int** beginning, size_t beginning_rows, size_t beginning_cols, int** target, size_t target_rows, size_t target_cols) {  // 각 칸의 필요한 변화는 행 뒤집기 XOR 열 뒤집기; 첫 행을 안 뒤집는다고 고정하면 나머지 모든 선택이 결정됨
+// int solution(int** beginning, size_t beginning_rows, size_t beginning_cols, int** target, size_t target_rows, size_t target_cols) {  // 각 칸의 변화 여부는 행 뒤집기와 열 뒤집기의 XOR입니다. 첫 행을 뒤집지 않는다고 고정하면 나머지 행과 열의 선택이 결정됩니다.
 //     (void)target_rows; (void)target_cols; int flips = 0;  // 한 가지 행열 뒤집기 횟수 갱신
 //     for (size_t r = 0; r < beginning_rows; ++r) flips += beginning[r][0] ^ target[r][0] ^ beginning[0][0] ^ target[0][0];  // 확인할 행 순서대로 확인; 한 가지 행열 뒤집기 횟수 / 확인할 행 더해 누적
 //     for (size_t c = 0; c < beginning_cols; ++c) flips += beginning[0][c] ^ target[0][c];  // 확인할 열 순서대로 확인; 한 가지 행열 뒤집기 횟수 / 확인할 열 더해 누적
@@ -51,9 +51,9 @@ int solution(int** beginning, size_t beginning_rows, size_t beginning_cols, int*
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 각 칸의 필요한 변화는 행 뒤집기 XOR 열 뒤집기; 첫 행을 안 뒤집는다고 고정하면 나머지 모든 선택이 결정됨
-// 모든 칸이 일치하는지 확인한 뒤, 그 선택과 모든 행·열 선택을 반대로 한 경우 두 개만 비교하면 됨; 같은 줄을 두 번 뒤집는 것은 불필요하기; 시간·공간 O(NM)
-// 예: 첫 행 고정 해법이 행 2개·열 3개를 뒤집는다면 총 5번; 선택을 전부 뒤집은 해법의 비용은 N+M-5
+// 각 칸의 변화 여부는 행 뒤집기와 열 뒤집기의 XOR입니다. 첫 행을 뒤집지 않는다고 고정하면 나머지 행과 열의 선택이 결정됩니다.
+// 결정한 선택이 모든 칸의 목표와 일치하는지 검사합니다. 가능하다면 그 선택과 모든 행·열의 선택을 반대로 한 경우 중 더 적은 횟수를 고릅니다. N행 M열에 대해 시간은 O(NM), 이 C 구현의 추가 공간은 O(1)입니다.
+// 예를 들어 한 해법이 행 2개와 열 3개를 뒤집으면 비용은 5입니다. 모든 선택을 반대로 한 해법의 비용은 N+M-5입니다.
 ```
 
 ## 채점 기록

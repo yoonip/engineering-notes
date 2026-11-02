@@ -4,15 +4,11 @@
 
 [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/340212) · Level 2 · C
 
-## 풀이
+퍼즐 시간은 current + max(0, diff - level) * (current + previous)입니다. 숙련도가 높아질수록 시간은 감소하거나 같습니다.
 
-퍼즐 시간은 current+max(0,diff-level)*(current+previous); 숙련도가 높아질수록 시간은 줄거나 같음
-이 단조성을 이용해 제한 시간 안에 가능한 최소 숙련도를 이진 탐색; 시간 O(n log 최대 난이도), 추가 공간 O(1)
-예: [1,5,3], [2,4,7], 제한30에서 숙련도2는42, 3은25이므로 최소3
+이 단조성을 이용해 제한 시간 안에 가능한 최소 숙련도를 이진 탐색합니다. 시간은 O(n log 최대 난이도), 추가 공간은 O(1)입니다.
 
-## 코드와 줄별 설명
-
-[코드 파일](solution.c) · [채점 기록](grading.json)
+예: 난이도 [1,5,3], 시간 [2,4,7], 제한 30에서 숙련도 2이면 42, 3이면 25이므로 최소 숙련도는 3입니다.
 
 ```c
 #include <stdio.h>
@@ -47,9 +43,9 @@ int solution(int diffs[], size_t diffs_len, int times[], size_t times_len, long 
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int solution(int diffs[], size_t diffs_len, int times[], size_t times_len, long long limit) {  // 퍼즐 시간은 current+max(0,diff-level)*(current+previous); 숙련도가 높아질수록 시간은 줄거나 같음
+// int solution(int diffs[], size_t diffs_len, int times[], size_t times_len, long long limit) {  // 퍼즐 시간은 current + max(0, diff - level) * (current + previous)입니다. 숙련도가 높아질수록 시간은 감소하거나 같습니다.
 //     (void)times_len;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int low = 1, high = 1;  // 가능한 숙련도 하한 / 숙련도 상한 저장
 //     for (size_t i = 0; i < diffs_len; ++i) if (diffs[i] > high) high = diffs[i];  // 가장 높은 난도를 숙련도 이분 탐색의 상한으로 사용
@@ -67,9 +63,9 @@ int solution(int diffs[], size_t diffs_len, int times[], size_t times_len, long 
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 퍼즐 시간은 current+max(0,diff-level)*(current+previous); 숙련도가 높아질수록 시간은 줄거나 같음
-// 이 단조성을 이용해 제한 시간 안에 가능한 최소 숙련도를 이진 탐색; 시간 O(n log 최대 난이도), 추가 공간 O(1)
-// 예: [1,5,3], [2,4,7], 제한30에서 숙련도2는42, 3은25이므로 최소3
+// 퍼즐 시간은 current + max(0, diff - level) * (current + previous)입니다. 숙련도가 높아질수록 시간은 감소하거나 같습니다.
+// 이 단조성을 이용해 제한 시간 안에 가능한 최소 숙련도를 이진 탐색합니다. 시간은 O(n log 최대 난이도), 추가 공간은 O(1)입니다.
+// 예: 난이도 [1,5,3], 시간 [2,4,7], 제한 30에서 숙련도 2이면 42, 3이면 25이므로 최소 숙련도는 3입니다.
 ```
 
 ## 채점 기록

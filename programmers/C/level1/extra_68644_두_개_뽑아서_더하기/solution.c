@@ -24,7 +24,7 @@ int* solution(int numbers[], size_t numbers_len) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int* solution(int numbers[], size_t numbers_len) {  // 서로 다른 두 인덱스의 합을 모두 기록; 중복을 제거하고 오름차순으로 반환
+// int* solution(int numbers[], size_t numbers_len) {  // 서로 다른 두 인덱스의 합을 모두 구합니다. 중복을 제거하고 작은 값부터 결과에 넣습니다.
 //     bool sums[201] = {false};  // 두 수의 합이 나왔는지 표시한 표 저장
 //     for (size_t i = 0; i < numbers_len; ++i) for (size_t j = i + 1; j < numbers_len; ++j) sums[numbers[i] + numbers[j]] = true;  // 서로 다른 두 위치만 골라 합이 나왔는지 표시
 //     size_t length = 0; for (int sum = 0; sum <= 200; ++sum) if (sums[sum]) ++length;  // 서로 다른 합의 개수 / 결과로 꺼낼 합 후보 저장
@@ -34,4 +34,4 @@ int* solution(int numbers[], size_t numbers_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 서로 다른 두 인덱스의 합을 모두 기록; 중복을 제거하고 오름차순으로 반환
+// 서로 다른 두 인덱스의 합을 모두 구합니다. 중복을 제거하고 작은 값부터 결과에 넣습니다.

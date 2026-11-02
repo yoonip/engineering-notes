@@ -43,13 +43,13 @@ int* solution(int rows, int columns, int** queries, size_t queries_rows, size_t 
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int* solution(int rows, int columns, int** queries, size_t queries_rows, size_t queries_cols) {  // 테두리 좌표를 시계 방향으로 모은 뒤 각 칸에 직전 칸의 기존 값을 넣기; 안쪽 값은 경로에 포함되지 않음
+// int* solution(int rows, int columns, int** queries, size_t queries_rows, size_t queries_cols) {  // 테두리를 시계 방향으로 직접 순회하며 각 칸에 직전 칸의 기존 값을 넣습니다. 안쪽 값은 이동하지 않습니다.
 //     (void)queries_cols;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int* board = malloc((size_t)rows * columns * sizeof(*board));  // 회전 중인 행렬 공간 확보
 //     int* answer = malloc(queries_rows * sizeof(*answer));  // 회전마다 옮긴 값의 최솟값 공간 확보
-//     for (int i = 0; i < rows * columns; ++i) board[i] = i + 1;  // 회전 질의 번호 순서대로 확인; 회전 중인 행렬 갱신
+//     for (int i = 0; i < rows * columns; ++i) board[i] = i + 1;  // 일차원 칸 번호 i를 순회하며 행렬을 1부터 순서대로 초기화
 //     for (size_t i = 0; i < queries_rows; ++i) {  // 회전 질의 번호 순서대로 확인
 //         int top = queries[i][0] - 1, left = queries[i][1] - 1, bottom = queries[i][2] - 1, right = queries[i][3] - 1;  // 회전 영역 위 행 / 회전 영역 왼쪽 열 / 회전 영역 아래 행 / 회전 영역 오른쪽 열 저장
 //         int previous = board[top * columns + left], minimum = previous;  // 다음 칸에 넘길 이전 값 / 이번 테두리의 최솟값 저장
@@ -76,5 +76,5 @@ int* solution(int rows, int columns, int** queries, size_t queries_rows, size_t 
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 테두리 좌표를 시계 방향으로 모은 뒤 각 칸에 직전 칸의 기존 값을 넣기; 안쪽 값은 경로에 포함되지 않음
-// 예: 첫 6×6 예제의 회전별 최솟값은 [8,10,25]; 회전 Q개일 때 시간 O(행*열+Q(행+열)), 공간 O(행*열+Q)
+// 테두리를 시계 방향으로 직접 순회하며 각 칸에 직전 칸의 기존 값을 넣습니다. 안쪽 값은 이동하지 않습니다.
+// 예: 첫 6×6 공개 예제의 회전별 최솟값은 [8,10,25]입니다. 회전 Q개에 대해 시간은 O(행*열+Q(행+열)), 공간은 O(행*열+Q)입니다.

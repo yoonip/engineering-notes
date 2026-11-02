@@ -32,7 +32,7 @@ int solution(int** visible, size_t visible_rows, size_t visible_cols, int** hidd
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// int solution(int** visible, size_t visible_rows, size_t visible_cols, int** hidden, size_t hidden_rows, size_t hidden_cols, int k) {  // 양쪽 길이가 짝수면 홀수 색 칸 하나만 빼고, 그 외에는 모든 칸을 방문하는 경로가 있음; 양수 점수라 더 뺄 필요가 없음
+// int solution(int** visible, size_t visible_rows, size_t visible_cols, int** hidden, size_t hidden_rows, size_t hidden_cols, int k) {  // 두 변의 길이가 모두 짝수이면 행·열 인덱스 합이 홀수인 칸 하나를 제외하고 방문하는 경로가 있습니다. 그 외에는 모든 칸을 방문할 수 있습니다. 칸의 점수가 양수이므로 더 많은 칸을 제외할 필요가 없습니다.
 //     (void)hidden_rows; (void)hidden_cols; int n = (int)visible_rows, m = (int)visible_cols, answer = INT_MIN; bool skip = n % 2 == 0 && m % 2 == 0;  // 격자 행 수 / 격자 열 수 / 이동 조건과 뒤집기 비용을 적용한 최대 합 / 짝수 곱하기 짝수 격자라 한 칸을 빼야 하는지 여부 갱신
 //     for (unsigned mask = 0; mask < (1u << n); ++mask) {  // 남은 후보를 순서대로 확인
 //         int total = -k * __builtin_popcount(mask), best_loss = INT_MIN;  // 행 뒤집기 비용을 반영한 합 / 한 칸 제외 시 손실이 가장 적은 선택 저장
@@ -52,6 +52,6 @@ int solution(int** visible, size_t visible_rows, size_t visible_cols, int** hidd
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 양쪽 길이가 짝수면 홀수 색 칸 하나만 빼고, 그 외에는 모든 칸을 방문하는 경로가 있음; 양수 점수라 더 뺄 필요가 없음
-// 행 뒤집기 2^n가지를 고정하면 각 열은 독립적으로 선택됨; 짝수×짝수에서는 한 칸 제외 손실도 함께 비교
-// 예: [[1,2],[3,4]], 숨은 면 [[5,6],[7,8]], k=0이면 5+7+8=20; 시간 O(2^n*n*m), 추가 공간 O(n)
+// 두 변의 길이가 모두 짝수이면 행·열 인덱스 합이 홀수인 칸 하나를 제외하고 방문하는 경로가 있습니다. 그 외에는 모든 칸을 방문할 수 있습니다. 칸의 점수가 양수이므로 더 많은 칸을 제외할 필요가 없습니다.
+// 행 뒤집기 2^n가지를 고정하면 각 열의 뒤집기 여부를 독립적으로 선택할 수 있습니다. 짝수×짝수에서는 한 칸을 제외했을 때의 최적 열 선택도 비교합니다.
+// 앞면 [[1,2],[3,4]], 뒷면 [[5,6],[7,8]], k=0이면 최대 합은 5+7+8=20입니다. 시간 O(2^n*n*m), 추가 공간 O(1)입니다. 행별 배열이나 재귀 호출 없이 정수 마스크와 누적값만 사용합니다.

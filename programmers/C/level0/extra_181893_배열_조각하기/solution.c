@@ -25,8 +25,8 @@ int* solution(int arr[], size_t arr_len, int query[], size_t query_len) {
 // int* solution(int arr[], size_t arr_len, int query[], size_t query_len) {  // 배열 조각하기 풀이 시작
 //     int first = 0, last = (int)arr_len - 1;  // 남아 있는 원본 구간의 양 끝을 전체 배열 범위로 초기화
 //     for (size_t i = 0; i < query_len; ++i) {  // 쿼리를 순서대로 적용하며 남길 구간의 시작·끝 조정
-//         if (i % 2 == 0) last = first + query[i];  // 짝수 번째 쿼리는 현재 구간에서 query[i] 뒤쪽을 버리므로 끝 위치 조정
-//         else first += query[i];  // 홀수 번째 쿼리는 앞부분을 버리므로 현재 시작점을 query[i]칸 이동
+//         if (i % 2 == 0) last = first + query[i];  // 짝수 인덱스의 쿼리는 현재 구간에서 query[i] 뒤쪽을 버리므로 끝 위치 조정
+//         else first += query[i];  // 홀수 인덱스의 쿼리는 앞부분을 버리므로 현재 시작점을 query[i]칸 이동
 //     }  // 블록 끝
 //     int* answer = malloc((last - first + 1) * sizeof(int));  // answer를 저장할 메모리 확보
 //     memcpy(answer, arr + first, (last - first + 1) * sizeof(int));  // 최종적으로 남은 시작점부터 끝점까지 한 번에 복사

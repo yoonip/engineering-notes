@@ -39,7 +39,7 @@ int solution(int n, int** edges, size_t edges_rows, size_t edges_cols) {
 //     for (int i = 1; i <= n; ++i) *count += distance[i] == distance[farthest];  // 정점 또는 간선 번호 순서대로 확인; 최대 거리에 있는 정점 수 / 시작점에서 각 정점까지의 거리 / 정점 또는 간선 번호 더해 누적
 //     return farthest;  // 가장 먼 정점 반환
 // }  // 이 범위 끝
-// int solution(int n, int** edges, size_t edges_rows, size_t edges_cols) {  // BFS로 지름 양 끝점을 찾기; 어느 한 끝점에서 지름 거리의 정점이 둘 이상이면 두 거리가 지름인 세 점을 고를 수 있음
+// int solution(int n, int** edges, size_t edges_rows, size_t edges_cols) {  // BFS로 트리 지름의 양 끝점을 찾습니다. 어느 한 끝점에서 지름만큼 떨어진 정점이 둘 이상이면, 세 정점 사이 거리 중 두 개를 지름과 같게 만들 수 있습니다.
 //     (void)edges_cols; int* head = malloc(((size_t)n + 1) * sizeof(*head)); int* to = malloc(2 * edges_rows * sizeof(*to)); int* next = malloc(2 * edges_rows * sizeof(*next)); int* distance = malloc(((size_t)n + 1) * sizeof(*distance)); int* queue = malloc((size_t)n * sizeof(*queue));  // 정점별 첫 트리 간선 / 연결된 정점 / 같은 정점의 다음 간선 / 시작점에서 각 정점까지의 거리 공간 확보
 //     for (int i = 0; i <= n; ++i) head[i] = -1; int total = 0;  // 정점 또는 간선 번호 순서대로 확인; 정점별 첫 트리 간선 / 저장한 양방향 간선 수 갱신
 //     for (size_t i = 0; i < edges_rows; ++i) for (int d = 0; d < 2; ++d) { int a = edges[i][d], b = edges[i][1 - d]; to[total] = b; next[total] = head[a]; head[a] = total++; }  // 정점 또는 간선 번호 순서대로 확인; 양방향 방향 / 저장한 양방향 간선 수 갱신
@@ -50,6 +50,6 @@ int solution(int n, int** edges, size_t edges_rows, size_t edges_cols) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// BFS로 지름 양 끝점을 찾기; 어느 한 끝점에서 지름 거리의 정점이 둘 이상이면 두 거리가 지름인 세 점을 고를 수 있음
-// 그렇지 않으면 지름 경로에서 끝점 바로 옆 점을 세 번째 점으로 골라 지름-1을 얻기; 예: 4점 일자 트리는 2, 별 모양은 2
-// BFS를 최대 세 번 수행하기; 시간·공간 O(n)
+// BFS로 트리 지름의 양 끝점을 찾습니다. 어느 한 끝점에서 지름만큼 떨어진 정점이 둘 이상이면, 세 정점 사이 거리 중 두 개를 지름과 같게 만들 수 있습니다.
+// 그렇지 않으면 지름 경로의 끝점 바로 옆 정점을 세 번째 정점으로 골라 중간값 지름-1을 얻습니다. 4개 정점의 일자 트리와 중심·잎 세 개로 이루어진 별 모양 트리의 답은 모두 2입니다.
+// BFS를 최대 세 번 수행하므로 시간·공간 O(n)입니다.

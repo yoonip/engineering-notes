@@ -24,9 +24,9 @@ int* solution(int numbers[], size_t numbers_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// int* solution(int numbers[], size_t numbers_len) {  // 아직 답을 못 찾은 인덱스를 값이 비증가하는 스택에 모으기; 더 큰 값이 나타나면 작은 원소의 답을 확정하기
+// int* solution(int numbers[], size_t numbers_len) {  // 아직 답을 못 찾은 인덱스를 값이 비증가하는 스택에 모읍니다. 더 큰 값이 나타나면 스택에 남은 작은 원소의 답을 확정합니다.
 //     int* answer = malloc(numbers_len * sizeof(*answer)); size_t* stack = malloc(numbers_len * sizeof(*stack)); size_t top = 0;  // 각 원소 뒤의 첫 큰 수 / 아직 큰 수를 못 찾은 위치 / 스택에 남은 위치 수 공간 확보
 //     for (size_t i = 0; i < numbers_len; ++i) {  // 새로 들어온 숫자 위치 순서대로 확인
 //         answer[i] = -1;  // 각 원소 뒤의 첫 큰 수 갱신
@@ -38,5 +38,5 @@ int* solution(int numbers[], size_t numbers_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 아직 답을 못 찾은 인덱스를 값이 비증가하는 스택에 모으기; 더 큰 값이 나타나면 작은 원소의 답을 확정하기
-// 예: [2,3,3,5]는 [3,5,5,-1]; 같은 수는 큰 수가 아니므로 빼지 않음; 시간·공간 O(N)
+// 아직 답을 못 찾은 인덱스를 값이 비증가하는 스택에 모읍니다. 더 큰 값이 나타나면 스택에 남은 작은 원소의 답을 확정합니다.
+// 예: [2,3,3,5]의 답은 [3,5,5,-1]입니다. 같은 값은 더 큰 수가 아니므로 스택에서 꺼내지 않습니다. 원소 N개에 대해 시간·공간은 O(N)입니다.

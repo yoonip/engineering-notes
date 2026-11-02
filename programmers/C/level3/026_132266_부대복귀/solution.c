@@ -26,7 +26,7 @@ int* solution(int n, int** roads, size_t roads_rows, size_t roads_cols, int sour
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// int* solution(int n, int** roads, size_t roads_rows, size_t roads_cols, int sources[], size_t sources_len, int destination) {  // 길이 양방향이므로 각 출발지→목적지 거리와 목적지→각 출발지 거리가 같음; 목적지에서 BFS 한 번으로 모든 답을 계산
+// int* solution(int n, int** roads, size_t roads_rows, size_t roads_cols, int sources[], size_t sources_len, int destination) {  // 길이 양방향이므로 각 출발지에서 목적지까지의 거리와 그 반대 방향의 거리는 같습니다. 목적지에서 BFS를 한 번 수행해 모든 출발지의 답을 구합니다.
 //     (void)roads_cols; int* head = malloc(((size_t)n + 1) * sizeof(*head)); int* to = malloc(2 * roads_rows * sizeof(*to)); int* next = malloc(2 * roads_rows * sizeof(*next));  // 정점별 첫 도로 / 도로의 도착 정점 / 같은 정점의 다음 도로 공간 확보
 //     int* distance = malloc(((size_t)n + 1) * sizeof(*distance)); int* queue = malloc(((size_t)n + 1) * sizeof(*queue));  // 목적지에서의 최단 거리 / 역방향 BFS 대기 정점 공간 확보
 //     for (int i = 0; i <= n; ++i) { head[i] = -1; distance[i] = -1; }  // 도로 또는 소스 위치 순서대로 확인; 정점별 첫 도로 / 목적지에서의 최단 거리 갱신
@@ -40,6 +40,6 @@ int* solution(int n, int** roads, size_t roads_rows, size_t roads_cols, int sour
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 길이 양방향이므로 각 출발지→목적지 거리와 목적지→각 출발지 거리가 같음; 목적지에서 BFS 한 번으로 모든 답을 계산
-// 거리를 -1로 시작해 도달하지 못한 지역을 그대로 구분하기; 시간 O(N+E+S), 공간 O(N+E)
-// 예: 두 번째 예제에서 5번부터 거리를 구하면 1번까지 2, 단절된 3번은 -1, 5번 자기 자신은 0
+// 길이 양방향이므로 각 출발지에서 목적지까지의 거리와 그 반대 방향의 거리는 같습니다. 목적지에서 BFS를 한 번 수행해 모든 출발지의 답을 구합니다.
+// 거리를 -1로 초기화해 도달하지 못한 지역을 구분합니다. 정점 N개·도로 E개·출발지 S개에 대해 시간은 O(N+E+S), 반환 배열을 포함한 공간은 O(N+E+S)입니다.
+// 두 번째 예제에서는 5번에서 1번까지의 거리가 2이고, 단절된 3번의 거리는 -1입니다. 5번 자기 자신까지의 거리는 0입니다.

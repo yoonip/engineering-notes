@@ -21,11 +21,11 @@ int solution(int a[], size_t a_len, int b[], size_t b_len) {
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(int a[], size_t a_len, int b[], size_t b_len) {  // 같은 위치의 두 원소를 곱한 값을 모두 더하기
+// int solution(int a[], size_t a_len, int b[], size_t b_len) {  // 같은 위치의 두 원소를 곱한 값을 모두 더해 내적을 구합니다.
 //     int answer = 0;  // 두 벡터의 내적 저장
-//     for (size_t i = 0; i < a_len; ++i) answer += a[i] * b[i];  // 같은 위치의 두 원소를 곱할 인덱스 순서대로 확인; 두 벡터의 내적 / 같은 위치의 두 원소를 곱할 인덱스 더해 누적
+//     for (size_t i = 0; i < a_len; ++i) answer += a[i] * b[i];  // 같은 인덱스의 a[i]와 b[i]를 곱해 내적에 누적
 //     return answer;  // 두 벡터의 내적 반환
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 같은 위치의 두 원소를 곱한 값을 모두 더하기
+// 같은 위치의 두 원소를 곱한 값을 모두 더해 내적을 구합니다.

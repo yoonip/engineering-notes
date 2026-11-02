@@ -25,10 +25,10 @@ long long solution(int cap, int n, int deliveries[], size_t deliveries_len, int 
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
-// long long solution(int cap, int n, int deliveries[], size_t deliveries_len, int pickups[], size_t pickups_len) {  // 먼 집부터 필요한 왕복을 확정하기; 한 왕복에서 배달·수거를 각각 cap개까지 처리하고 남는 용량은 가까운 집에 쓰기
-//     (void)deliveries_len; (void)pickups_len;  // (void)deliveries_len; (void)pickups_len
+// long long solution(int cap, int n, int deliveries[], size_t deliveries_len, int pickups[], size_t pickups_len) {  // 먼 집부터 필요한 왕복 횟수를 확정합니다. 한 왕복에서 배달·수거를 각각 cap개까지 처리하고 남는 용량은 가까운 집에 씁니다.
+//     (void)deliveries_len; (void)pickups_len;  // 사용하지 않는 입력 길이를 (void) 변환으로 명시적으로 무시
 //     long long delivery = 0, pickup = 0, answer = 0;  // 현재 위치까지 남은 배달 수요 / 현재 위치까지 남은 수거 수요 / 배달과 수거의 최소 총거리 저장
 //     for (int i = n - 1; i >= 0; --i) {  // 먼 곳부터 확인할 집 위치 순서대로 확인
 //         delivery += deliveries[i]; pickup += pickups[i]; long long trips = 0;  // 현재 위치까지 남은 배달 수요 / 먼 곳부터 확인할 집 위치 / 현재 위치까지 남은 수거 수요 더해 누적
@@ -40,5 +40,5 @@ long long solution(int cap, int n, int deliveries[], size_t deliveries_len, int 
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 먼 집부터 필요한 왕복을 확정하기; 한 왕복에서 배달·수거를 각각 cap개까지 처리하고 남는 용량은 가까운 집에 쓰기
-// 예: 첫 예제는 5번·3번 집까지 왕복해 10+6=16; 시간 O(N), 추가 공간 O(1)
+// 먼 집부터 필요한 왕복 횟수를 확정합니다. 한 왕복에서 배달·수거를 각각 cap개까지 처리하고 남는 용량은 가까운 집에 씁니다.
+// 예: 첫 공개 예제는 5번·3번 집까지 왕복하여 10+6=16입니다. 집 N개에 대해 시간은 O(N), 추가 공간은 O(1)입니다.

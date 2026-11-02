@@ -27,7 +27,7 @@ char* solution(int n, int m, int x, int y, int r, int c, int k) {
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// char* solution(int n, int m, int x, int y, int r, int c, int k) {  // 정확히 남은 횟수로 도착하려면 최단거리 이하의 이동 횟수를 줄 수 없고, 여분은 왕복 이동처럼 짝수여야 하기
+// char* solution(int n, int m, int x, int y, int r, int c, int k) {  // 정확히 남은 횟수로 도착하려면 남은 횟수가 최단거리 이상이고, 두 값의 차이가 짝수여야 합니다
 //     int distance = abs(x - r) + abs(y - c); char* answer = malloc((size_t)k + 12);  // 출발점과 도착점의 맨해튼 거리 / 사전순으로 가장 빠른 탈출 명령 공간 확보
 //     if (distance > k || (k - distance) % 2) { strcpy(answer, "impossible"); return answer; }  // 최소 거리보다 짧거나 남은 이동 수의 홀짝이 다르면 탈출 불가능
 //     const char letters[4] = {'d','l','r','u'}; const int dr[4] = {1,0,0,-1}, dc[4] = {0,-1,1,0};  // 사전순 d l r u / 방향별 행 변화 / 방향별 열 변화 저장
@@ -42,6 +42,6 @@ char* solution(int n, int m, int x, int y, int r, int c, int k) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 정확히 남은 횟수로 도착하려면 최단거리 이하의 이동 횟수를 줄 수 없고, 여분은 왕복 이동처럼 짝수여야 하기
+// 정확히 남은 횟수로 도착하려면 남은 횟수가 최단거리 이상이고, 두 값의 차이가 짝수여야 합니다
 // 매 칸마다 d·l·r·u 사전순으로 보면서 이 조건을 만족하는 첫 방향을 고르면 가장 앞선 경로가 됨; 시간 O(K), 공간 O(K)
 // 예: 3×4 격자의 (2,3)에서 (3,1)까지 5칸이면 가능한 가장 작은 접두사를 차례로 확정해 dllrl을 얻기

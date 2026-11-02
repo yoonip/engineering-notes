@@ -29,13 +29,13 @@ int solution(int A[], size_t A_len, int B[], size_t B_len) {
 // #include <stdbool.h>  // 참·거짓 표시용 bool, true, false
 // #include <ctype.h>  // 문자 종류 확인과 대소문자 변환
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
-// #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
+// #include <math.h>  // sqrtl 등 실수 수학 함수의 선언
 //
 // static int compare(const void* p, const void* q) {  // 두 정수를 오름차순으로 비교
-//     int a = *(const int*)p, b = *(const int*)q;  // A의 오름차순 사본 / B의 오름차순 사본 저장
-//     return (a > b) - (a < b);  // A의 오름차순 사본 / B의 오름차순 사본로 최종값 계산
+//     int a = *(const int*)p, b = *(const int*)q;  // 비교할 두 원소 주소를 int 포인터로 변환하고 역참조하여 값 읽기
+//     return (a > b) - (a < b);  // 두 비교 결과 0 또는 1을 빼서 -1, 0, 1의 비교 부호 반환
 // }  // 이 범위 끝
-// int solution(int A[], size_t A_len, int B[], size_t B_len) {  // 작은 수와 큰 수를 짝지어야 큰 수끼리 곱해지는 비용을 줄일 수 있음; 한쪽 오름차순·다른 쪽 내림차순인 그리디 풀이
+// int solution(int A[], size_t A_len, int B[], size_t B_len) {  // 한쪽은 작은 수부터, 다른 쪽은 큰 수부터 짝짓습니다. 큰 수끼리 곱해지는 비용을 줄이는 그리디 풀이입니다.
 //     (void)B_len;  // 입력 형식에만 필요한 길이 값은 계산에서 생략
 //     int* a = malloc(A_len * sizeof(*a));  // A의 오름차순 사본 공간 확보
 //     int* b = malloc(A_len * sizeof(*b));  // B의 오름차순 사본 공간 확보
@@ -48,5 +48,5 @@ int solution(int A[], size_t A_len, int B[], size_t B_len) {
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 작은 수와 큰 수를 짝지어야 큰 수끼리 곱해지는 비용을 줄일 수 있음; 한쪽 오름차순·다른 쪽 내림차순인 그리디 풀이
-// 예: [1,2,4]와 [5,4,4]는 5+8+16=29; a≤b,c≤d이면 ac+bd-(ad+bc)=(b-a)(d-c)≥0; 시간 O(N log N), 공간 O(N)
+// 한쪽은 작은 수부터, 다른 쪽은 큰 수부터 짝짓습니다. 큰 수끼리 곱해지는 비용을 줄이는 그리디 풀이입니다.
+// 예: [1,2,4]와 [5,4,4]는 5+8+16=29입니다. a≤b, c≤d이면 ac+bd-(ad+bc)=(b-a)(d-c)≥0이므로 반대 순서가 불리하지 않습니다. 원소 N개에 대해 시간은 O(N log N), 공간은 O(N)입니다.

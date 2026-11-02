@@ -58,7 +58,7 @@ int solution(const char* friends[], size_t friends_len, const char* gifts[], siz
 //     while (map[slot].key && strcmp(map[slot].key, key)) slot = (slot + 1) & (capacity - 1);  // 2의 거듭제곱 크기에 맞춰 비트 AND로 해시 인덱스를 계산
 //     return slot;  // 친구 이름을 찾은 해시 칸 번호 반환
 // }  // 이 범위 끝
-// int solution(const char* friends[], size_t friends_len, const char* gifts[], size_t gifts_len) {  // 친구별 선물 전달 횟수와 준 개수에서 받은 개수를 뺀 선물 지수를 기록; 두 친구의 기록을 비교해 다음 달 받을 선물 수를 세기
+// int solution(const char* friends[], size_t friends_len, const char* gifts[], size_t gifts_len) {  // 방향별 선물 횟수와 준 수에서 받은 수를 뺀 선물 지수를 기록합니다. 두 친구씩 비교해 다음 달 받을 사람을 정하고, 받을 선물 수의 최댓값을 반환합니다.
 //     size_t n = friends_len, capacity = 1;  // 친구 수 / 해시표 칸 수 저장
 //     while (capacity < n * 2) capacity *= 2;  // 친구 수의 두 배 이상이 되는 2의 거듭제곱으로 해시표 크기 잡기
 //     MapEntry* map = calloc(capacity, sizeof(MapEntry));  // 이름을 친구 번호로 바꾸는 해시표 공간 확보하고 0으로 시작
@@ -80,4 +80,4 @@ int solution(const char* friends[], size_t friends_len, const char* gifts[], siz
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 친구별 선물 전달 횟수와 준 개수에서 받은 개수를 뺀 선물 지수를 기록; 두 친구의 기록을 비교해 다음 달 받을 선물 수를 세기
+// 방향별 선물 횟수와 준 수에서 받은 수를 뺀 선물 지수를 기록합니다. 두 친구씩 비교해 다음 달 받을 사람을 정하고, 받을 선물 수의 최댓값을 반환합니다.

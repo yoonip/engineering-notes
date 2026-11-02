@@ -28,14 +28,14 @@ long long solution(int a, int b, int g[], size_t g_len, int s[], size_t s_len, i
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 // #include <stdint.h>  // 비트 마스크와 해시 키에 쓸 고정 폭 정수
 //
-// long long solution(int a, int b, int g[], size_t g_len, int s[], size_t s_len, int w[], size_t w_len, int t[], size_t t_len) {  // 주어진 시간 안에 운반 가능한 최대 금·은·총량을 계산; 개별량이 각각 충분해도 같은 트럭 용량을 중복 사용하지 않도록 합계 조건이 필요하기
-//     (void)s_len; (void)w_len; (void)t_len;  // (void)s_len; (void)w_len; (void)t_len
+// long long solution(int a, int b, int g[], size_t g_len, int s[], size_t s_len, int w[], size_t w_len, int t[], size_t t_len) {  // 주어진 시간 안에 운반할 수 있는 금·은·전체 적재량을 계산합니다. 금과 은의 개별 조건만 검사하면 같은 트럭 용량을 중복 계산할 수 있으므로 합계 조건도 확인합니다.
+//     (void)s_len; (void)w_len; (void)t_len;  // 입력 형식에 필요한 길이 매개변수를 사용하지 않음을 명시
 //     long long low = 0, high = 400000000000000LL;  // 운반 완료 시간 하한 / 시간 상한 저장
 //     while (low < high) {  // 이분 탐색 범위가 한 값으로 좁혀질 때까지 가능 여부를 확인
 //         long long mid = low + (high - low) / 2, gold = 0, silver = 0, total = 0;  // 시험할 운반 시간 / 그 시간에 옮길 수 있는 금 / 그 시간에 옮길 수 있는 은 / 금과 은을 함께 옮길 수 있는 양 저장
 //         for (size_t i = 0; i < g_len; ++i) {  // 도시 번호 순서대로 확인
 //             long long capacity = ((mid + t[i]) / (2LL * t[i])) * w[i];  // 현재 도시의 시간 내 운송 용량 저장
-//             gold += g[i] < capacity ? g[i] : capacity; silver += s[i] < capacity ? s[i] : capacity;  // 그 시간에 옮길 수 있는 금 / 도시 번호 / 현재 도시의 시간 내 운송 용량 더해 누적
+//             gold += g[i] < capacity ? g[i] : capacity; silver += s[i] < capacity ? s[i] : capacity;  // 삼항 연산자로 보유량과 운송 용량 중 작은 값을 골라 금·은의 최대량에 각각 누적
 //             long long all = (long long)g[i] + s[i]; total += all < capacity ? all : capacity;  // 현재 도시의 금과 은 합 저장
 //         }  // 이 범위 끝
 //         if (gold >= a && silver >= b && total >= (long long)a + b) high = mid; else low = mid + 1;  // 금·은 각각의 수요와 전체 수요를 모두 옮길 수 있으면 시간 상한 줄이기
@@ -44,6 +44,6 @@ long long solution(int a, int b, int g[], size_t g_len, int s[], size_t s_len, i
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 주어진 시간 안에 운반 가능한 최대 금·은·총량을 계산; 개별량이 각각 충분해도 같은 트럭 용량을 중복 사용하지 않도록 합계 조건이 필요하기
-// 시간이 늘면 운반 가능량이 줄지 않으므로 이진 탐색으로 최소 시간을 찾기; 마지막 운반은 편도만 필요하기; 도시 수 N·시간 상한 T에 대해 시간 O(N log T), 추가 공간 O(1)
-// 예: 편도 10·적재량 7인 트럭은 10,30,50에 각각 배달하기; 금·은 합계 20을 운반하려면 세 번 필요해 답은 50
+// 주어진 시간 안에 운반할 수 있는 금·은·전체 적재량을 계산합니다. 금과 은의 개별 조건만 검사하면 같은 트럭 용량을 중복 계산할 수 있으므로 합계 조건도 확인합니다.
+// 시간이 늘어도 운반 가능량은 줄지 않으므로 이분 탐색으로 최소 시간을 찾습니다. 마지막 배달은 편도만 이동해도 됩니다. 도시 수 N·탐색 시간 상한 T에 대해 시간은 O(N log T), 추가 공간은 O(1)입니다.
+// 도시가 하나이고 편도 시간이 10, 적재량이 7이면 시각 10·30·50에 배달합니다. 재고가 충분한 금과 은 합계 20을 운반하려면 세 번 배달해야 하므로 최소 시간은 50입니다.

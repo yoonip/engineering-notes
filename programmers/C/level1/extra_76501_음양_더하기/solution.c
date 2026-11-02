@@ -21,11 +21,11 @@ int solution(int absolutes[], size_t absolutes_len, bool signs[], size_t signs_l
 // #include <math.h>  // 정수 제곱근 계산 등에 쓸 수학 함수
 // #include <limits.h>  // 최솟값·최댓값 초기화에 쓸 정수 범위 상수
 //
-// int solution(int absolutes[], size_t absolutes_len, bool signs[], size_t signs_len) {  // 부호 배열이 참이면 절댓값을 더하고 거짓이면 빼기
+// int solution(int absolutes[], size_t absolutes_len, bool signs[], size_t signs_len) {  // 부호가 참이면 절댓값을 더하고 거짓이면 빼서 전체 합을 구합니다.
 //     int answer = 0;  // 부호를 적용한 정수 합 저장
-//     for (size_t i = 0; i < absolutes_len; ++i) answer += signs[i] ? absolutes[i] : -absolutes[i];  // 부호와 절댓값을 함께 읽을 위치 순서대로 확인; 부호를 적용한 정수 합 / 부호와 절댓값을 함께 읽을 위치 더해 누적
+//     for (size_t i = 0; i < absolutes_len; ++i) answer += signs[i] ? absolutes[i] : -absolutes[i];  // 조건 연산자 ?:로 부호에 맞는 값을 선택해 합에 더함
 //     return answer;  // 부호를 적용한 정수 합 반환
 // }  // 이 범위 끝
 
 // 풀이 요약
-// 부호 배열이 참이면 절댓값을 더하고 거짓이면 빼기
+// 부호가 참이면 절댓값을 더하고 거짓이면 빼서 전체 합을 구합니다.
