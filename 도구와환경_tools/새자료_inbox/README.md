@@ -1,42 +1,66 @@
 # 도구·보안 새 자료
 
-수집 시작: 2026-11-02 17:07 KST
+반영: 2026-11-03 18:57 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## TeamViewer 제품 보안 업데이트 권고
+## Apache 제품 보안 업데이트 권고
 
-> TeamViewer社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
+> Apache 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]\[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
 
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72264>) · 공식 RSS 게시일: 2026-11-02
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72270>) · 공식 RSS 게시일: 2026-11-03
 
-가져온 시각: 2026-11-02 17:08:13 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
-
-## Ivanti 제품 보안 업데이트 권고
-
-> Ivanti社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72263>) · 공식 RSS 게시일: 2026-11-02
-
-가져온 시각: 2026-11-02 17:08:14 KST
+가져온 시각: 2026-11-03 18:56:54 KST
 
 수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
 
 개요: 공식 한국어 소개 발췌
 
-## WordPress 제품 보안 업데이트 권고
+## 지란지교소프트 제품 보안 조치 권고
 
-> WordPress의 weDevs Project Manager 플러그인 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
+> 지란지교소프트社는 자사 제품에서 발견된 보안 취약점에 대한 조치 방법 발표 \[1\] o 해당 제품을 사용 중인 사용자는 제조사 권고에 따라…
 
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72262>) · 공식 RSS 게시일: 2026-11-02
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72269>) · 공식 RSS 게시일: 2026-11-03
 
-가져온 시각: 2026-11-02 17:08:15 KST
+가져온 시각: 2026-11-03 18:56:55 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## Linux 제품 보안 업데이트 권고
+
+> Linux 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72268>) · 공식 RSS 게시일: 2026-11-03
+
+가져온 시각: 2026-11-03 18:56:56 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## Synology NAS 대상 랜섬웨어 공격 주의 권고
+
+> 보안공지 &gt; 알림마당 : KISA 보호나라&amp;KrCERT/CC
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72267>) · 공식 RSS 게시일: 2026-11-03
+
+가져온 시각: 2026-11-03 18:56:57 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## Termix 제품 보안 업데이트 권고
+
+> Termix 프로젝트는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72266>) · 공식 RSS 게시일: 2026-11-03
+
+가져온 시각: 2026-11-03 18:56:59 KST
 
 수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
 
