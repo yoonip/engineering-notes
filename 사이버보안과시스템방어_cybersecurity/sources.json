@@ -400,6 +400,94 @@
       "edition": "2008-09-30 최종판",
       "read_scope": "기술 보안 시험의 계획·수행·분석·완화 개요와 적용 범위",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "ms-ad-tier-model",
+      "title": "Microsoft AD DS Tier Model",
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/tier-model",
+      "edition": "2026-11-04 확인",
+      "read_scope": "Tier 0·1·2, PAW, 계층별 자격 증명 분리, 도입과 지속 검증",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "ms-ad-security",
+      "title": "Microsoft Active Directory Security Best Practices",
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory",
+      "edition": "2026-11-04 확인",
+      "read_scope": "최소 권한, 보안 관리자 단말, 도메인 컨트롤러 보호, 감사 권고",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "nist-800-124r2",
+      "title": "NIST SP 800-124 Rev. 2 Guidelines for Managing the Security of Mobile Devices in the Enterprise",
+      "url": "https://csrc.nist.gov/pubs/sp/800/124/r2/final",
+      "edition": "2023-05 최종판",
+      "read_scope": "조직 소유·개인 소유 모바일 기기의 도입·사용·폐기, MDM/EMM 및 단말 보호",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "owasp-masvs",
+      "title": "OWASP Mobile Application Security Verification Standard",
+      "url": "https://mas.owasp.org/MASVS/",
+      "edition": "2026-11-04 확인",
+      "read_scope": "STORAGE·CRYPTO·AUTH·NETWORK·PLATFORM·CODE·RESILIENCE·PRIVACY 통제 영역",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "owasp-mastg",
+      "title": "OWASP Mobile Application Security Testing Guide",
+      "url": "https://mas.owasp.org/MASTG/",
+      "edition": "2026-11-04 확인",
+      "read_scope": "MASVS 통제를 Android·iOS 앱에서 검증하는 시험·기술·도구 안내",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "owasp-masvs-assessment",
+      "title": "OWASP MASVS Assessment and Certification",
+      "url": "https://mas.owasp.org/MASVS/04-Assessment_and_Certification/",
+      "edition": "2026-11-04 확인",
+      "read_scope": "모바일 클라이언트 범위, 백엔드 별도 검증, 자동화 도구 한계, 보고 범위",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "nist-800-153",
+      "title": "NIST SP 800-153 Guidelines for Securing Wireless Local Area Networks",
+      "url": "https://csrc.nist.gov/pubs/sp/800/153/final",
+      "edition": "2012-02 최종판",
+      "read_scope": "WLAN 구성요소의 설계·배포·유지·모니터링 수명 주기; 현재 암호 설정 기준으로 사용하지 않음",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "cisa-wifi-guide-2017",
+      "title": "CISA Guide to Securing Networks for Wi-Fi",
+      "url": "https://www.cisa.gov/sites/default/files/publications/A_Guide_to_Securing_Networks_for_Wi-Fi.pdf",
+      "edition": "2017-03-15, DHS Cybersecurity Engineering 1.0",
+      "read_scope": "무선 위협 및 유선·무선 관측 결합의 배경; 미 연방기관 맞춤형 자료이며 최신 암호 설정 근거로 사용하지 않음",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "nist-ir-8374r1",
+      "title": "NIST IR 8374 Rev. 1 Ransomware Risk Management: A CSF 2.0 Community Profile",
+      "url": "https://csrc.nist.gov/pubs/ir/8374/r1/final",
+      "edition": "2026-06 최종판",
+      "read_scope": "CSF 2.0에 연결한 랜섬웨어 위험 관리·준비·대응·복구 결과",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "mitre-t1486",
+      "title": "MITRE ATT&CK T1486 Data Encrypted for Impact",
+      "url": "https://attack.mitre.org/techniques/T1486/",
+      "edition": "2026-11-04 확인",
+      "read_scope": "데이터 암호화를 이용한 가용성 영향의 행위 분류; 단독 귀속·판정 증거로 사용하지 않음",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "powershell-get-filehash",
+      "title": "Microsoft PowerShell Get-FileHash",
+      "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.5",
+      "edition": "PowerShell 7.5 문서",
+      "read_scope": "파일 내용의 SHA-256 계산과 해시 결과의 의미·한계",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."

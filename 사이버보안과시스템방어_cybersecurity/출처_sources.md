@@ -55,6 +55,17 @@
 | [OWASP WSTG 4.2](https://owasp.org/www-project-web-security-testing-guide/v42/) | 안정판 4.2 | 웹 시험의 범위·접근법·테스트 절차 안내 |
 | [PortSwigger Web Security Academy](https://portswigger.net/web-security) | 2026-11-04 확인 | 공식 무료 웹 보안 학습·제공자 실습 안내 |
 | [Carnegie Mellon picoCTF](https://picoctf.org/) | 2026-11-04 확인 | 교육용 보안 문제·연습 환경·운영 주체 소개 |
+| [Microsoft AD DS Tier Model](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/tier-model) | 2026-11-04 확인 | Tier 0·1·2, 관리자 작업 단말, 자격 증명 계층 분리, 단계적 도입 |
+| [Microsoft Active Directory 보안 권고](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory) | 2026-11-04 확인 | 최소 권한·보안 관리자 단말·도메인 컨트롤러 보호·감사 정책 |
+| [NIST SP 800-124 Rev. 2](https://csrc.nist.gov/pubs/sp/800/124/r2/final) | 2023-05 최종판 | 조직 소유·개인 소유 모바일 기기의 도입·사용·폐기, MDM/EMM·단말 보호 |
+| [OWASP MASVS](https://mas.owasp.org/MASVS/) | 2026-11-04 확인 | STORAGE·CRYPTO·AUTH·NETWORK·PLATFORM·CODE·RESILIENCE·PRIVACY 통제 영역 |
+| [OWASP MASTG](https://mas.owasp.org/MASTG/) | 2026-11-04 확인 | MASVS 통제를 Android·iOS 앱에서 확인하는 시험 가이드 |
+| [OWASP MASVS 평가와 인증 안내](https://mas.owasp.org/MASVS/04-Assessment_and_Certification/) | 2026-11-04 확인 | 클라이언트 범위·백엔드 별도 검증·자동 도구의 한계·보고 항목 |
+| [NIST SP 800-153](https://csrc.nist.gov/pubs/sp/800/153/final) | 2012-02 최종판 | WLAN 구성요소의 설계·배포·유지·모니터링 수명 주기; 현재 암호 설정 기준으로 사용하지 않음 |
+| [CISA Guide to Securing Networks for Wi-Fi](https://www.cisa.gov/sites/default/files/publications/A_Guide_to_Securing_Networks_for_Wi-Fi.pdf) | 2017-03-15, DHS Cybersecurity Engineering 1.0 | 무선 위협·유선/무선 관측 결합의 배경; 미 연방기관 맞춤형 자료이며 최신 암호 설정 근거로 사용하지 않음 |
+| [NIST IR 8374 Rev. 1](https://csrc.nist.gov/pubs/ir/8374/r1/final) | 2026-06 최종판 | CSF 2.0에 연결한 랜섬웨어 위험 관리·준비·대응·복구 결과 |
+| [MITRE ATT&CK T1486 Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/) | 2026-11-04 확인 | 데이터 암호화를 이용한 가용성 영향의 행위 분류; 단독 귀속·판정 증거로 사용하지 않음 |
+| [Microsoft PowerShell Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.5) | PowerShell 7.5 문서, 2026-11-04 확인 | 파일 내용의 SHA-256 계산과 결과 해석 범위 |
 
 ## 코드 출처
 

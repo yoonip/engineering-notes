@@ -1,6 +1,6 @@
 # 사이버보안과 시스템 방어 | Cybersecurity and system defense
 
-보안의 기본 개념에서 웹·운영체제·네트워크·클라우드·firmware의 신뢰 경계를 살펴보고, AI를 이용한 공격과 AI 시스템을 보호하는 방법을 연결합니다. 원리, 실패 조건, 방어 설계와 작은 실행 예제로 공부하는 자료입니다.
+보안의 기본 개념에서 웹·운영체제·네트워크·클라우드·firmware의 신뢰 경계를 살펴보고, 기업 계정·모바일 앱·무선망·랜섬웨어 대응까지 연결합니다. AI를 이용한 공격과 AI 시스템을 보호하는 방법도 다룹니다. 원리, 실패 조건, 방어 설계와 작은 실행 예제로 공부하는 자료입니다.
 
 [전체 분야별 목차](../분야별목차_CATALOG.md) · [용어](용어_glossary.md) · [출처와 판본](출처_sources.md) · [실습](실습_labs/README.md) · [실행 결과](실습_labs/검증기록_validation.md)
 
@@ -29,6 +29,10 @@
 | 심화 | [고급 보안의 설계 가정](17-고급보안의설계가정_advanced-security.md) | 형식 검증·부채널·TEE·증명·양자내성 |
 | 학습 경로 | [실무 점검과 학습 경로](18-실무점검과학습경로_practice-paths.md) | 업무별 읽기 순서·공식 강좌·기록 방법 |
 | 허가된 평가 | [허가된 보안 시험과 책임 있는 제보](19-허가된보안시험과책임있는제보_authorized-security-testing.md) | 범위 승인·안전한 증거·취약점 보고서 작성입니다. |
+| 기업 보안 | [기업 계정과 관리자 권한](20-기업계정과관리자권한_enterprise-identity.md) | 디렉터리·하이브리드 ID·권한 계층·관리자 단말·감사입니다. |
+| 앱·기기 보안 | [모바일 기기와 앱 보안](21-모바일기기와앱보안_mobile-security.md) | MASVS·기기 데이터·딥링크·백엔드 권한·수명 주기입니다. |
+| 네트워크 보안 | [무선랜과 기업 Wi-Fi 보안](22-무선랜과기업와이파이보안_wireless-lan-security.md) | 인증·망 분리·AP 관리·무선 탐지·운영 점검입니다. |
+| 사고 대응 | [랜섬웨어와 악성코드 대응](23-랜섬웨어와악성코드대응_ransomware-malware-response.md) | 초기 대응·증거 보존·복구 검증·안전한 파일 식별입니다. |
 
 ## 글과 근거의 성격
 
@@ -51,4 +55,4 @@
 
 ## English
 
-This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, and includes a chapter on authorized testing and responsible disclosure. Korean chapters include source editions, explicit assumptions and line-commented educational code. Offline exercises cover SQL binding, authorization, message authentication and replay state, output encoding, artifact digests, constrained agent tools, login detection and C frame bounds. The validation record identifies what was actually executed; conceptual guides and forecasts are not presented as penetration tests or production implementations.
+This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, and ransomware response. It distinguishes client-side mobile controls from backend verification, wireless lifecycle guidance from current protocol decisions, and file hashes from malware verdicts. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.
