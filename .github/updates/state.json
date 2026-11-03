@@ -125,6 +125,9 @@
     "products:https://blog.st.com/ai-data-centers": "products:https://blog.st.com/ai-data-centers",
     "products:https://blog.st.com/rust-mems-drivers": "products:https://blog.st.com/rust-mems-drivers",
     "products:https://blog.st.com/snapdragon-wear-elite": "products:https://blog.st.com/snapdragon-wear-elite",
+    "products:https://blog.st.com/stm32g5": "products:https://blog.st.com/stm32g5",
+    "products:https://blog.st.com/stm32g5-security": "products:https://blog.st.com/stm32g5-security",
+    "products:https://blog.st.com/stm32h7p": "products:https://blog.st.com/stm32h7p",
     "products:https://blog.st.com/stspin9p": "products:https://blog.st.com/stspin9p",
     "products:https://blog.st.com/touchgfx": "products:https://blog.st.com/touchgfx",
     "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview": "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview",
@@ -2792,6 +2795,65 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/"
         }
+      ],
+      "2026-11-04": [
+        {
+          "acquired_at": "2026-11-03T18:01:11.998855+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-03T16:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-03T18:00:05.892422+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/stm32g5",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "STM32G5: 2x the performance, unprecedented peripherals – our new flagship mixed-signal MCU for digital power and motor control",
+          "update": false,
+          "url": "https://blog.st.com/stm32g5/"
+        },
+        {
+          "acquired_at": "2026-11-03T18:01:11.998855+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-03T16:08:29+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-03T18:00:05.892422+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/stm32g5-security",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "STM32G5: The most secure mixed-signal STM32 MCU supports PQC to future-proof designs against regulations",
+          "update": false,
+          "url": "https://blog.st.com/stm32g5-security/"
+        },
+        {
+          "acquired_at": "2026-11-03T18:01:11.998855+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-03T16:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-03T18:00:05.892422+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/stm32h7p",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 프로세서·컴퓨터구조 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "STM32H7P: the 1st Cortex-M7 with ST’s Neural-ART NPU and a Hardware Signal Processor, with no price increase",
+          "update": false,
+          "url": "https://blog.st.com/stm32h7p/"
+        }
       ]
     },
     "reports": {
@@ -4602,6 +4664,18 @@
       "group": "products",
       "key": "products:https://blog.st.com/snapdragon-wear-elite"
     },
+    "https://blog.st.com/stm32g5": {
+      "group": "products",
+      "key": "products:https://blog.st.com/stm32g5"
+    },
+    "https://blog.st.com/stm32g5-security": {
+      "group": "products",
+      "key": "products:https://blog.st.com/stm32g5-security"
+    },
+    "https://blog.st.com/stm32h7p": {
+      "group": "products",
+      "key": "products:https://blog.st.com/stm32h7p"
+    },
     "https://blog.st.com/stspin9p": {
       "group": "products",
       "key": "products:https://blog.st.com/stspin9p"
@@ -4933,10 +5007,10 @@
       "Last-Modified": "Fri, 30 Oct 2026 11:03:47 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"9be4295701f46ddf8235826ccfa27ccf6fc1deab1e1ddc6e19e73712506375b9\""
+      "ETag": "W/\"51903bcb0c639a5d9791086b4798ffc188d8b84cc38dd457dfc95023482a756d\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"3f753b69f6675e3e63a37e0f0e721f0b11c5ed0de2e84dd85f44e77999a80fdd\""
+      "ETag": "W/\"0bfb62feaa72b05b71d02f481fcacd9a16929feb634d4237499276a7cd1f55e1\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -4954,7 +5028,7 @@
       "Last-Modified": "Sun, 01 Nov 2026 12:16:24 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Tue, 03 Nov 2026 05:53:40 GMT"
+      "Last-Modified": "Tue, 03 Nov 2026 16:20:25 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -4971,14 +5045,14 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"Jd4a6w\""
+      "Last-Modified": "Tue, 03 Nov 2026 17:01:49 GMT"
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"T2ncjg\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"02562c51c916603ffb96fef8d802a991\"",
-      "Last-Modified": "Mon, 02 Nov 2026 23:39:38 GMT"
+      "ETag": "\"1ae913c709d02cd4ee78064737f61fec\"",
+      "Last-Modified": "Tue, 03 Nov 2026 17:47:42 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -4986,10 +5060,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b9a-mdSnQq8MeR9QjDEZncBrknP3sIA\""
+      "ETag": "W/\"33b9a-f96/QVbKT5kqruNtg5XAKs2K5us\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40145-/DUgM7t50oXLhMTGn99jd03nSTA\""
+      "ETag": "W/\"40145-5i71vp4FnbuCU6FhzfaeIXw6iWQ\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -5024,6 +5098,7 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
+    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -5033,12 +5108,12 @@
       "Last-Modified": "Tue, 03 Nov 2026 01:39:41 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793699591\"",
-      "Last-Modified": "Tue, 03 Nov 2026 09:53:11 GMT"
+      "ETag": "\"1793728469\"",
+      "Last-Modified": "Tue, 03 Nov 2026 17:54:29 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793698931\"",
-      "Last-Modified": "Tue, 03 Nov 2026 09:42:11 GMT"
+      "ETag": "\"1793728003\"",
+      "Last-Modified": "Tue, 03 Nov 2026 17:46:43 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -5125,7 +5200,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"089726e8a894fc5cfe20290cd6212e64f\""
+      "ETag": "\"0ebc35c723c1feeddeca927796e7e960c\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -5225,8 +5300,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"d73ac2561cdb9f1093a981f6443e4276\"",
-      "Last-Modified": "Tue, 03 Nov 2026 05:05:00 GMT"
+      "ETag": "\"4cfc5359608bbe132ef8ab4adb9fc815\"",
+      "Last-Modified": "Tue, 03 Nov 2026 17:26:35 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -8716,6 +8791,24 @@
       "language": "en",
       "url": "https://blog.st.com/snapdragon-wear-elite/"
     },
+    "products:https://blog.st.com/stm32g5": {
+      "fingerprint": "36745e4c1a0cb8dbf10289cd90afae7639929d7c121108f4c41c34b9932cb011",
+      "first_seen": "2026-11-03T18:00:05.892422+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/stm32g5/"
+    },
+    "products:https://blog.st.com/stm32g5-security": {
+      "fingerprint": "5ff186f14475f0c7dd4d2e88a0c533d65eaf2405927db9283899ff4bc10297ba",
+      "first_seen": "2026-11-03T18:00:05.892422+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/stm32g5-security/"
+    },
+    "products:https://blog.st.com/stm32h7p": {
+      "fingerprint": "161915151253e1a5bdccb5a08e3611a355e73338f41d275748f339b827755c19",
+      "first_seen": "2026-11-03T18:00:05.892422+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/stm32h7p/"
+    },
     "products:https://blog.st.com/stspin9p": {
       "fingerprint": "5f26f59b3dfbb6e71fcc48a7a8a626579757f6337cbe12facbb3b0017badd64b",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -9198,6 +9291,18 @@
     },
     "st-technical:https://blog.st.com/snapdragon-wear-elite": {
       "list_fingerprint": "8fcc808a68eeca0130a103422213c9ec5c1c505ad041158cd76ec20a7f8734a8",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/stm32g5": {
+      "list_fingerprint": "36745e4c1a0cb8dbf10289cd90afae7639929d7c121108f4c41c34b9932cb011",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/stm32g5-security": {
+      "list_fingerprint": "5ff186f14475f0c7dd4d2e88a0c533d65eaf2405927db9283899ff4bc10297ba",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/stm32h7p": {
+      "list_fingerprint": "161915151253e1a5bdccb5a08e3611a355e73338f41d275748f339b827755c19",
       "status": "posted"
     },
     "st-technical:https://blog.st.com/stspin9p": {
