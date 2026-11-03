@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-03 08:30 KST
+갱신: 2026-11-03 15:48 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -9,6 +9,12 @@
 > 러시아가 우크라이나 구호센터를 폭격해 최소 26명이 목숨을 잃었다고 영국 BBC 방송이 2일\(현지시간\) 보도했...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261103022300009>) · 2026-11-03 08:04 KST · 작성·제공: 이신영
+
+## 밀수업자들이 한국산 HBM을 중국에 빼돌리는 방법
+
+> 미국의 대중 수출금지 조치에도 밀수업자들이 규정의 허점을 이용해 삼성전자와 SK하이닉스가 만든 첨단 고대역폭 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261103123500009>) · 2026-11-03 15:16 KST · 작성·제공: 주종국
 
 ## 애플, 7∼9월 분기 최고매출…"제품 가격 올려 메모리대란 상쇄"\(종합\)
 
@@ -28,11 +34,23 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261102174700109>) · 2026-11-02 22:49 KST · 작성·제공: 민경락
 
+## 헝가리, 공산정권 시절 '밀고자들' 이름 공개…과거사 청산
+
+> 헝가리에 들어선 새 정부가 공산주의 시절 보안경찰에 협력하던 '밀고자들'의 이름을 일반에 공개하기로 했다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261103132900009>) · 2026-11-03 15:40 KST · 작성·제공: 임화섭
+
 ## 민주콩고 에볼라 치명률 50% 넘어…누락된 사망자 추가
 
 > 콩고민주공화국\(민주콩고\)에서 발병한 에볼라 확진자 가운데 사망한 비율이 50%를 넘어섰다.
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261102173700099>) · 2026-11-02 21:47 KST · 작성·제공: 나확진
+
+## 미얀마군, 반군지역 병원·학교 등 폭격…신생아 등 15명 사망
+
+> 군사정권에서 민간 정부로 변신한 뒤 국제사회와 관계 개선을 추진하는 미얀마 정권이 반군 지역의 산부인과 병...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261103107600084>) · 2026-11-03 14:06 KST · 작성·제공: 박진형
 
 ## 런던발 소피아행 여객기 폭탄 위협…헝가리로 회항
 
@@ -52,6 +70,10 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-russia-ukraine/8217886.html>) · 2026-11-03 05:46 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
+## 1.5톤 우주망원경 곧 지구 추락…잔해 어디로 떨어지나
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008828248&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-03 13:37 KST · 작성·제공: jwlee@sbs.co.kr \(이재원\)
+
 ## 미 전문가 “북, 해킹으로 최소 120억 달러 훔쳐”
 
 > 미국의 암호화폐 전문가인 TRM 랩스의 닉 칼슨 선임 분석관은 “이미 파악하고 있던 북한의 활동과 실제 사건 사이에 연관성이 있다"며 "최근 해킹 사건의 배후가 북한이라는 데…
@@ -69,6 +91,12 @@
 > 미국 국무부는 지난 10월 29일 발생한 가상자산 탈취 사건과 관련해 “북한의 사이버 범죄는 미국을 포함해 전 세계 기업에 영향을 미치는 국제적 문제"라고 RFA에 밝혔다.
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/02/north-korea-cybercrime-hacker-cryptocurrency/>) · 2026-11-03 06:22 KST · 작성·제공: 워싱턴 - 노정민 nohj@rfa.org 자민 앤더슨 andersonj@rfa.org
+
+## “북, 탈취 가상자산 새로운 세탁 단계 착수”
+
+> ‘체이널리시스’와 ‘룩온체인’ 등에 따르면 북한 해커는 바이낸스 탈취 가상 자산을 분산, 보관했던 임시지갑에서 가상자산 거래소인 ‘솔라나’\(Solana\)의 네트워크 등으로 이동시키기 시작했다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/03/north-korea-binance-laundering-coin/>) · 2026-11-03 12:16 KST · 작성·제공: 서울-목용재 moky@rfa.org
 
 ## 트럼프 “중간선거 민주당 승리 땐 측근 선제 사면할 것”
 
@@ -92,10 +120,15 @@
 
 - [Rights group accuses Zambia of violent post-election crackdown on opposition](<https://abcnews.com/International/wireStory/rights-group-accuses-zambia-violent-post-election-crackdown-137765585>) · ABC News 미국
 - [Nigeria: INEC Chairman Says Ai Can Strengthen Democracy, Warns Against Election Disinformation](<https://allafrica.com/stories/202611020531.html>) · AllAfrica · allAfrica.com
+- [Africa: All of Africa Today - November 3, 2026](<https://allafrica.com/stories/202611030156.html>) · AllAfrica · allAfrica.com
 - [Congo-Kinshasa: Congolese Refugees Caught Between War and Closing Doors](<https://allafrica.com/stories/202611020358.html>) · AllAfrica · allAfrica.com
+- [Somalia: Indian Navy Rescues 20 Crew Members From Hijacked Fishing Vessel Off Somalia](<https://allafrica.com/stories/202611030141.html>) · AllAfrica · allAfrica.com
+- [South Africa: Cape Town Taxi Rivals Agree to Seven-Day Truce - South African News Briefs - November 3, 2026](<https://allafrica.com/stories/202611030125.html>) · AllAfrica · allAfrica.com
 - [Kenya: Gachagua Threatens to Leave Kenya for U.S. If Opposition Loses 2027 Election](<https://allafrica.com/stories/202611020296.html>) · AllAfrica · allAfrica.com
+- [Heavy rain falls in eastern India after second cyclone in a week](<https://abcnews.com/International/wireStory/heavy-rain-falls-eastern-india-after-cyclone-week-137792512>) · ABC News 미국
 - [As EV race heats up, Germany finds itself falling behind pack leaders](<https://www.csmonitor.com/World/Europe/2026/1102/germany-cars-automakers-volkswagen-ev-china-strikes?icid=rss>) · The Christian Science Monitor
 - [Africa: UK Open to Formal Apology for Britain's Slave Trade Role, Rejects Reparations](<https://allafrica.com/stories/202611020732.html>) · AllAfrica · allAfrica.com
+- [North Korea denies involvement in Binance hack, criticizes FBI probe](<https://abcnews.com/International/wireStory/north-korea-denies-involvement-binance-hack-criticizes-fbi-137788208>) · ABC News 미국
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
