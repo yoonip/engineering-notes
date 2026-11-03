@@ -66,6 +66,15 @@
 | [NIST IR 8374 Rev. 1](https://csrc.nist.gov/pubs/ir/8374/r1/final) | 2026-06 최종판 | CSF 2.0에 연결한 랜섬웨어 위험 관리·준비·대응·복구 결과 |
 | [MITRE ATT&CK T1486 Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/) | 2026-11-04 확인 | 데이터 암호화를 이용한 가용성 영향의 행위 분류; 단독 귀속·판정 증거로 사용하지 않음 |
 | [Microsoft PowerShell Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.5) | PowerShell 7.5 문서, 2026-11-04 확인 | 파일 내용의 SHA-256 계산과 결과 해석 범위 |
+| [Microsoft Active Directory Forest Recovery Guide](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/forest-recovery-guide/ad-forest-recovery-guide) | Windows Server 2025·2022·2019·2016 적용 문서, 2026-11-04 확인 | 포리스트 전체 장애 복구 계획의 단계와 판본 적용 범위 |
+| [Microsoft Active Directory 초기 포리스트 복구 절차](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/forest-recovery-guide/ad-forest-recovery-perform-initial-recovery) | 2026-11-04 확인 | 격리 복구, 루트 도메인 순서, SYSVOL·자격 증명·검증 주의사항 |
+| [Android Keystore system](https://developer.android.com/privacy-and-security/keystore) | 2026-11-04 확인 | 키 추출 방지·사용 권한·하드웨어 지원에 따른 차이와 한계 |
+| [Apple Keychain Services](https://developer.apple.com/documentation/security/keychain-services/) | 2026-11-04 확인 | 암호화된 키체인 저장소와 접근 제어 기능의 개요 |
+| [Android Security checklist](https://developer.android.com/privacy-and-security/security-tips) | 2026-11-04 확인 | 앱 인증·데이터 저장·네트워크·권한·구성요소 보안 권고 |
+| [Android exported component 위험](https://developer.android.com/privacy-and-security/risks/android-exported) | 2026-11-04 확인 | 다른 앱에서 실행 가능한 Android 컴포넌트의 접근 범위 |
+| [IETF RFC 9190 EAP-TLS 1.3](https://www.rfc-editor.org/rfc/rfc9190.html) | 2022-02 | EAP-TLS 1.3 상호 인증·Identity 응답의 한계·인증서 폐기 확인 |
+| [CISA StopRansomware Guide](https://www.cisa.gov/sites/default/files/2023-10/StopRansomware-Guide-508C-v3_1.pdf) | 2023-10 공개판 | 오프라인 백업·복원 훈련·대응 준비 권고 |
+| [MITRE ATT&CK DET0215](https://attack.mitre.org/detectionstrategies/DET0215/) | 2026-05-12 수정판, 2026-11-04 확인 | 다중 플랫폼 파일 암호화 탐지 신호·자료원·분석 변수 |
 
 ## 코드 출처
 
