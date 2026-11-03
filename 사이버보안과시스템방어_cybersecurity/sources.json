@@ -211,10 +211,10 @@
     },
     {
       "id": "asvs",
-      "title": "OWASP ASVS",
-      "url": "https://owasp.org/www-project-application-security-verification-standard/",
-      "edition": "2026-11-04 확인",
-      "read_scope": "검증 요구사항·판본·프로젝트 목적",
+      "title": "OWASP Application Security Verification Standard",
+      "url": "https://asvs.owasp.org/",
+      "edition": "5.0.0, 2025-05-30 공개 안정판",
+      "read_scope": "웹 애플리케이션 보안 요구사항·버전 고정 인용 방법",
       "checked_on": "2026-11-04"
     },
     {
@@ -316,9 +316,9 @@
     {
       "id": "wstg",
       "title": "OWASP Web Security Testing Guide",
-      "url": "https://owasp.org/www-project-web-security-testing-guide/",
-      "edition": "2026-11-04 확인",
-      "read_scope": "프로젝트 개요·시험 가이드 연결",
+      "url": "https://owasp.org/www-project-web-security-testing-guide/v42/",
+      "edition": "안정판 4.2",
+      "read_scope": "시험 범위·접근법·웹 테스트 절차 안내",
       "checked_on": "2026-11-04"
     },
     {
@@ -335,6 +335,70 @@
       "url": "https://picoctf.org/",
       "edition": "2026-11-04 확인",
       "read_scope": "교육용 보안 문제·연습 환경·운영 주체 소개",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "llm-top10-2026",
+      "title": "OWASP GenAI LLM Top 10 2026",
+      "url": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/README.md",
+      "edition": "2026-08 공개판",
+      "read_scope": "공식 최종 위험 항목의 명칭·순서",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "agent-top10-2026",
+      "title": "OWASP Top 10 for Agentic Applications 2026",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+      "edition": "2025-12-09 공개, 2026판",
+      "read_scope": "ASI01–ASI10 공식 항목·설명",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "acs",
+      "title": "OWASP Agent Control Standard",
+      "url": "https://genai.owasp.org/resource/agent-control-standard-acs/",
+      "edition": "2026-09-01 공개",
+      "read_scope": "middleware hook·런타임 정책 집행의 표준 목적",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "wstg-v42",
+      "title": "OWASP Web Security Testing Guide",
+      "url": "https://owasp.org/www-project-web-security-testing-guide/v42/",
+      "edition": "안정판 4.2",
+      "read_scope": "시험 범위·접근법·웹 테스트 절차 안내",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "cvss-v4-guide",
+      "title": "FIRST CVSS v4.0 User Guide",
+      "url": "https://www.first.org/cvss/v4.0/user-guide",
+      "edition": "CVSS v4.0, 문서 버전 1.2",
+      "read_scope": "Base·Threat·Environmental·Supplemental 지표 그룹과 심각도·위험 구분",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "epss-faq",
+      "title": "FIRST EPSS FAQ",
+      "url": "https://www.first.org/epss/faq",
+      "edition": "2026-11-04 확인",
+      "read_scope": "30일 악용 확률·일일 갱신·환경 위험과의 차이",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "attack-t1110",
+      "title": "MITRE ATT&CK T1110 Brute Force",
+      "url": "https://attack.mitre.org/techniques/T1110/index.html",
+      "edition": "2026-11-04 확인",
+      "read_scope": "Password Guessing·Password Cracking·Password Spraying·Credential Stuffing 분류",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "nist-800-115",
+      "title": "NIST SP 800-115 Technical Guide to Information Security Testing and Assessment",
+      "url": "https://csrc.nist.gov/pubs/sp/800/115/final",
+      "edition": "2008-09-30 최종판",
+      "read_scope": "기술 보안 시험의 계획·수행·분석·완화 개요와 적용 범위",
       "checked_on": "2026-11-04"
     }
   ],

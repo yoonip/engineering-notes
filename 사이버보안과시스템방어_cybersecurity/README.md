@@ -28,6 +28,11 @@
 | 검증·운영 | [로그 탐지와 사고 대응](16-로그탐지와사고대응_detection-response.md) | 합성 로그·시간창·경보·조사·복구 |
 | 심화 | [고급 보안의 설계 가정](17-고급보안의설계가정_advanced-security.md) | 형식 검증·부채널·TEE·증명·양자내성 |
 | 학습 경로 | [실무 점검과 학습 경로](18-실무점검과학습경로_practice-paths.md) | 업무별 읽기 순서·공식 강좌·기록 방법 |
+| 허가된 평가 | [허가된 보안 시험과 책임 있는 제보](19-허가된보안시험과책임있는제보_authorized-security-testing.md) | 범위 승인·안전한 증거·취약점 보고서 작성입니다. |
+
+## 글과 근거의 성격
+
+각 주제는 취약점이 성립하는 조건, 영향을 받는 신뢰 경계, 예방·탐지·복구 통제, 수정 후 확인할 결과를 연결합니다. 표준·분류표는 설계 질문을 만드는 출발점으로 사용하며 특정 서비스의 안전성을 대신 증명하지 않습니다. 취약점 시험은 소유자의 승인과 정해진 범위에서 수행해야 합니다.
 
 ## 코드와 근거의 성격
 
@@ -46,4 +51,4 @@
 
 ## English
 
-This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security. Korean chapters include source editions, explicit assumptions and line-commented educational code. Offline exercises cover SQL binding, authorization, message authentication and replay state, output encoding, artifact digests, constrained agent tools, login detection and C frame bounds. The validation record identifies what was actually executed; conceptual guides and forecasts are not presented as penetration tests or production implementations.
+This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, and includes a chapter on authorized testing and responsible disclosure. Korean chapters include source editions, explicit assumptions and line-commented educational code. Offline exercises cover SQL binding, authorization, message authentication and replay state, output encoding, artifact digests, constrained agent tools, login detection and C frame bounds. The validation record identifies what was actually executed; conceptual guides and forecasts are not presented as penetration tests or production implementations.

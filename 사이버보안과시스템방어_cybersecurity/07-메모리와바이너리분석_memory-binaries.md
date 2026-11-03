@@ -52,6 +52,19 @@ int copy_frame(const uint8_t *src, size_t len, uint8_t *dst, size_t cap, size_t 
 } /* 함수 본문을 닫습니다. */
 ```
 
+## 메모리 오류는 데이터 경계와 객체 수명에서 시작합니다
+
+C와 C++의 포인터는 가리키는 메모리의 실제 길이나 유효 기간을 스스로 보장하지 않습니다. 대표 실패는 배열 범위 초과, 정수 오버플로 뒤의 잘못된 크기 계산, 해제한 객체 접근(use-after-free), 이중 해제, 초기화되지 않은 값, 경쟁 상태입니다. 단순히 입력 문자열 길이만 비교해도 덧셈·곱셈의 오버플로, 동시 해제, 포인터 수명 오류가 남을 수 있습니다.
+
+| 결함 | 흔한 원인 | 확인·예방 방법 |
+| --- | --- | --- |
+| 경계 초과 | 길이와 버퍼 크기, 오프셋의 단위가 다릅니다. | 길이 검사를 인덱스 계산보다 먼저 하고 크기 산술의 오버플로를 검사합니다. |
+| use-after-free | 비동기 작업·참조·콜백이 객체를 계속 사용합니다. | 소유권·수명을 명시하고 주소 sanitizer·수명 분석을 사용합니다. |
+| 정수 오버플로 | 입력 길이에 헤더·요소 크기를 더하거나 곱합니다. | 연산 전 상한을 검사하고 안전한 크기 계산 함수를 사용합니다. |
+| 데이터 경쟁 | 여러 스레드가 동기화 없이 상태를 갱신합니다. | 잠금·원자 연산·소유권 분리를 설계하고 race detector로 보조 확인합니다. |
+
+ASLR, non-executable memory, stack canary, control-flow integrity 같은 완화책은 악용을 어렵게 하거나 피해를 줄일 수 있지만 정의되지 않은 동작 자체를 고치지는 않습니다. sanitizer와 fuzzing은 실행한 입력·환경에서 발견한 문제를 보여 주며 모든 입력에서 오류가 없다는 증명은 아닙니다. 수정 뒤에는 원래 재현 입력뿐 아니라 길이 0·최대·최대 초과·잘린 입력·경계 정렬을 함께 검사합니다. [SEI CERT C ARR30-C](https://wiki.sei.cmu.edu/confluence/display/c/ARR30-C.+Do+not+form+or+use+out-of-bounds+pointers+or+array+subscripts)
+
 ## 원문에서 이어 읽기
 
 - [SEI CERT C ARR30-C](https://wiki.sei.cmu.edu/confluence/display/c/ARR30-C.+Do+not+form+or+use+out-of-bounds+pointers+or+array+subscripts): 배열·포인터 범위의 규칙과 예제입니다.

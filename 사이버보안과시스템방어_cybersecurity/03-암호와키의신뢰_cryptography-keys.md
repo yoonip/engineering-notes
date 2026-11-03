@@ -57,12 +57,31 @@ def verify_once(key, timestamp, event_id, body, tag, now, seen):  # seen은 단�
     return True  # 이 예제에서 한 번의 수신을 승인합니다.
 ```
 
+## 비밀번호 추측 공격은 저장 방식과 로그인 경로를 나누어 봅니다
+
+MITRE ATT&CK은 무차별 대입을 온라인 서비스에 반복해서 대조하는 경우와 탈취된 해시를 오프라인에서 후보 비밀번호와 비교하는 경우로 구분합니다. 비밀번호 추측은 한 계정에 여러 후보를 대입할 수 있고, password spraying은 여러 계정에 소수 후보를 분산하며, credential stuffing은 다른 사고에서 얻은 사용자명·비밀번호 조합을 재사용합니다. [ATT&CK T1110](https://attack.mitre.org/techniques/T1110/index.html)
+
+| 공격 조건 | 서버 제한이 미치는 범위 | 우선 통제 |
+| --- | --- | --- |
+| 온라인 로그인 후보 대조 | 로그인 엔드포인트의 시도 속도와 탐지에 영향을 줍니다. | 속도 제한·추가 인증·이상 징후 탐지를 적용합니다. |
+| 여러 계정에 후보 분산 | 계정 하나의 실패 횟수만 보면 놓칠 수 있습니다. | 계정·IP·기기·시간을 함께 묶어 탐지합니다. |
+| 유출 조합 재사용 | 사용자가 다른 곳에서 쓴 비밀번호가 출발점입니다. | 고유 비밀번호·패스키·유출 자격증명 차단을 검토합니다. |
+| 해시 파일 오프라인 대조 | 로그인 서버의 속도 제한을 거치지 않습니다. | salt와 메모리·연산 비용이 있는 비밀번호 해싱을 씁니다. |
+
+비밀번호 해시는 암호화처럼 원문을 복호화하는 값이 아닙니다. 공격자는 후보를 같은 방식으로 해싱해 저장된 검증값과 대조합니다. 사용자별 무작위 salt는 미리 계산한 표와 사용자 간 동일 해시의 재사용을 어렵게 하지만, 후보 하나의 계산 비용 자체를 높이지 않습니다. Argon2id와 같은 전용 비밀번호 해싱의 비용을 서버 성능·로그인 부하와 함께 설정하고, 유출 시 해당 비용으로 모든 후보를 빠르게 검증할 수 없도록 보호해야 합니다. 자세한 권고는 [OWASP Password Storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)를 참고합니다.
+
+## 암호화·인증·서명은 다른 실패를 다룹니다
+
+데이터베이스 전체를 암호화해도 애플리케이션이 허용한 사용자가 다른 고객의 자료를 조회하면 정보가 노출됩니다. HMAC은 공유키를 가진 발신자 중 하나가 메시지를 인증했음을 보이지만, 어느 발신자가 만들었는지는 구분하지 않습니다. 전자서명은 개인키 보유자의 서명을 공개키로 검증하지만, 공개키가 올바른 주체에 연결됐다는 신뢰 설정이 필요합니다. AEAD는 암호문과 인증 태그를 제공하지만, 같은 키에서 nonce를 잘못 재사용하면 보안 가정이 무너질 수 있습니다.
+
+키 운영은 생성·분배·사용·교체·폐기를 포함합니다. 키 ID와 키 값, 암호화 키와 서명 키, 서비스별 키를 분리하고 키 접근 로그와 폐기 후 재검증 경로를 정합니다. KMS나 HSM 사용 여부만으로 키 접근 정책이 맞다는 결론을 내리지 않습니다.
+
 ## 원문에서 이어 읽기
 
 - [OWASP Cryptographic Storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html): 암호 선택·키 관리·인증 암호 절입니다.
 - [OWASP Password Storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html): 비밀번호 해싱·salt·Argon2id 절입니다.
 - [Python hmac](https://docs.python.org/3.12/library/hmac.html): digest·compare_digest API입니다.
-- [IETF RFC 4231](https://www.rfc-editor.org/rfc/rfc4231.html): §4.2 HMAC-SHA-256 시험 벡터1입니다.
+- [IETF RFC 4231](https://www.rfc-editor.org/rfc/rfc4231.html): §4.2 HMAC-SHA-256 시험 벡터 1입니다.
 
 ## English
 

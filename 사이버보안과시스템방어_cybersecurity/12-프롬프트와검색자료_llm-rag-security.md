@@ -30,6 +30,25 @@ RAG는 외부 자료를 검색해 모델 입력에 붙이는 구조입니다. �
 
 정상 문서, 지시문을 인용한 교육 문서, 악의적 지시가 있는 문서, 다른 조직 문서, 삭제·권한 변경 문서, 상충하는 판본을 각각 시험합니다. 거부율만 높이면 정상 검색도 망가질 수 있으므로 정상 작업 성공률과 권한 위반률을 함께 봅니다. 이 카테고리의 실습은 LLM을 실행하지 않으며 모델의 주입 저항률을 측정한 결과도 아닙니다. 대신 모델이 잘못 제안했을 때 실행기가 거부하는 경계를 검사합니다.
 
+## OWASP LLM Top 10:2026을 시스템 경계에 연결합니다
+
+OWASP의 2026판은 2025판과 항목 구성·순서가 달라졌습니다. 이를 실제 발생 빈도의 순위나 한 제품의 결함 목록으로 읽지 않습니다. 각 항목을 시스템 설계의 점검 질문으로 옮깁니다. 공식 목록은 [OWASP GenAI LLM Top 10 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/)과 [정식 GitHub 원고](https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/README.md)에서 확인할 수 있습니다.
+
+| OWASP 항목 | 설계에서 확인할 질문 |
+| --- | --- |
+| LLM01 Prompt Injection | 사용자·검색·도구 결과의 지시가 실행 경계를 바꾸나요? |
+| LLM02 Sensitive Information Disclosure | 문맥·출력·로그·캐시에서 다른 주체 자료가 노출되나요? |
+| LLM03 Excessive Agency | 모델이 필요한 범위를 넘어 도구·자원에 접근하나요? |
+| LLM04 Supply Chain | 모델·데이터·도구·빌더의 출처와 판본을 확인할 수 있나요? |
+| LLM05 Data and Model Poisoning | 학습·검색·평가 데이터의 변경과 출처를 추적하나요? |
+| LLM06 Unbounded Consumption | 입력·반복 호출·출력 크기·비용에 상한이 있나요? |
+| LLM07 Misinformation | 검증되지 않은 답변이 결정·업무 실행으로 이어지나요? |
+| LLM08 Hidden Context Exposure | 시스템 지시·숨은 문맥·다른 대화가 응답에 드러나나요? |
+| LLM09 Vector and Embedding Weaknesses | 유사도 검색과 문서 ACL·삭제·테넌트 경계가 분리되어 있나요? |
+| LLM10 Improper Output Handling | 출력 문자열이 HTML·명령·쿼리·파일 경로로 실행되나요? |
+
+RAG에서는 검색 전에 인증 주체로 접근 가능한 문서만 필터링하고, 검색 후에는 원문 판본·문서 ID·인용 구간을 답변과 연결합니다. 유사도 점수는 읽기 권한이 아니며, 임베딩 인덱스에서 결과를 숨기는 것만으로 모델 입력에 이미 들어간 자료를 되돌릴 수 없습니다. 시스템 지시를 비밀로 숨기는 것보다 접근 통제·최소 수집·출력 검사·감사 기록을 신뢰 경계에서 집행합니다.
+
 ## 원문에서 이어 읽기
 
 - [OWASP LLM Prompt Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html): 직접·간접 주입·도구 권한·다층 방어 절입니다.

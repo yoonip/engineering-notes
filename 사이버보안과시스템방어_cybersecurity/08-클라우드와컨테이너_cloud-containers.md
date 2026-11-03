@@ -29,6 +29,25 @@ Kubernetes의 [Security Checklist](https://kubernetes.io/docs/concepts/security/
 
 시험에서는 다른 조직의 객체 키, 과도한 파일 크기, 만료된 토큰, 거부된 출구 연결을 넣어 봅니다. 정책이 파일에 적혀 있다는 사실보다 실제 요청이 거부되는지와 누가 예외를 줄 수 있는지를 확인합니다. [NIST Zero Trust의 자원 중심 관점](https://csrc.nist.gov/pubs/sp/800/207/final)
 
+## 클라우드 권한은 신원·정책·자원 경로를 묶어 봅니다
+
+클라우드 역할의 정책 문구뿐 아니라 누가 그 역할을 맡을 수 있는지, 어떤 리소스에 어떤 API를 호출할 수 있는지, 그 권한이 어느 서비스까지 이어지는지 확인합니다. 장기 access key를 코드나 CI 변수에 보관하기보다 짧은 수명의 workload identity를 검토하되, 발급자·대상·저장소·브랜치·실행 이벤트 조건을 좁힙니다. 단기 토큰도 지나치게 넓은 역할을 받으면 침해 범위가 큽니다.
+
+컨테이너는 일반적으로 호스트 커널을 공유하므로 VM과 같은 격리 경계로 간주하면 안 됩니다. 실행 사용자, Linux capabilities, seccomp·AppArmor 정책, hostPath·socket 마운트, 네트워크 출구, 비밀 접근, 이미지 공급망을 한 묶음으로 검토합니다. Kubernetes의 네트워크 정책은 실제 CNI 구현이 이를 집행해야 효과가 있으므로 설정 파일만 확인하지 않습니다. [Kubernetes Security Checklist](https://kubernetes.io/docs/concepts/security/security-checklist/)
+
+## 격리 계층과 시험 결과를 연결합니다
+
+| 통제 | 확인할 실효성 | 경계 사례 |
+| --- | --- | --- |
+| 비특권 실행·capabilities | 프로세스가 실제로 가진 Linux 권한입니다. | 특정 기능을 위해 추가한 capability가 다른 경로에서 쓰입니다. |
+| 읽기 전용 파일시스템 | 이미지와 root filesystem의 변경 여부입니다. | 임시 경로·마운트된 hostPath는 쓰기 가능합니다. |
+| 서비스 계정 | Pod가 받을 토큰과 API 권한입니다. | 필요 없는 자동 토큰이나 네임스페이스 밖 권한이 있습니다. |
+| 네트워크 정책 | Pod에서 나가는 연결도 실제 차단되는지입니다. | DNS·프록시·노드 경로가 정책을 우회합니다. |
+| 비밀 저장 | 접근 주체·암호화·회전·감사 경로입니다. | manifest 인코딩이나 로그에 평문이 남습니다. |
+| 이미지 검증 | digest·서명·빌더·기반 이미지의 출처입니다. | 신뢰한 태그가 다른 digest를 가리킵니다. |
+
+이 항목의 통과 조건은 정책이 선언됐다는 사실이 아니라 권한 없는 동작이 실행 환경에서 거부되고 감사 기록에 남는 것입니다. 제품별 정책 평가기와 예외 권한을 확인하고, 클러스터 변경 시험은 승인된 비운영 환경에서 먼저 수행합니다.
+
 ## 원문에서 이어 읽기
 
 - [Kubernetes Security Checklist](https://kubernetes.io/docs/concepts/security/security-checklist/): 인증·권한·네트워크·Pod 보안·이미지 절입니다.

@@ -49,6 +49,20 @@ def matches_pinned_digest(data, expected_hex):  # expected_hex는 별도 신뢰 
     return len(expected) == 32 and hmac.compare_digest(hashlib.sha256(data).digest(), expected)  # and는 두 조건이 모두 맞아야 True를 반환합니다.
 ```
 
+## 공급망 점검은 구성 목록에서 실행 권한까지 이어집니다
+
+공급망 위험은 오래된 취약 라이브러리 외에도 비슷한 이름의 패키지 혼동, 유지관리 계정 탈취, 악성 빌드 스크립트, CI 권한 오용, 서명키 노출에서 발생할 수 있습니다. SBOM은 산출물에 포함된 구성요소를 설명하지만 구성요소가 안전하거나 실제 빌드 과정이 신뢰된다는 증명은 아닙니다. provenance는 빌더·소스·빌드 과정의 연결 근거이며, 서명은 지정된 키가 특정 자료를 서명했다는 사실을 확인합니다. 이 세 가지를 서로 대체물로 취급하지 않습니다.
+
+| 증거 | 답할 수 있는 질문 | 답하지 못하는 질문 |
+| --- | --- | --- |
+| SBOM | 무엇이 산출물에 들어 있나요? | 이 코드가 악성 행위를 하지 않나요? |
+| digest | 바이트가 기준값과 일치하나요? | 기준값을 준 주체가 신뢰할 만한가요? |
+| 서명 | 어떤 키가 이 자료를 서명했나요? | 서명 키가 침해되지 않았고 내용이 안전한가요? |
+| provenance | 어떤 소스와 빌드 경로가 산출물을 만들었나요? | 그 소스와 빌드 규칙 자체가 무해한가요? |
+| 취약점 스캔 | 알려진 결함과 버전이 일치하나요? | 자체 코드의 업무 로직 결함이 없나요? |
+
+외부 PR이나 issue 내용을 shell에 넣을 때는 신뢰하지 않는 텍스트를 코드로 해석하지 않도록 단계와 입력을 분리합니다. 외부 action은 검토된 commit SHA로 고정하고 `GITHUB_TOKEN` 권한은 작업별로 줄입니다. 배포 비밀이 필요한 workflow는 외부 기여자의 코드를 실행하는 시험과 분리합니다. [GitHub Actions Secure use](https://docs.github.com/en/actions/reference/security/secure-use)
+
 ## 원문에서 이어 읽기
 
 - [NIST SP 800-218](https://csrc.nist.gov/pubs/sp/800/218/final): 공식 초록·SDLC에 보안 개발 활동을 넣는 목적입니다.

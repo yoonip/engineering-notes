@@ -27,12 +27,19 @@
 | [NIST SP 800-82 Rev. 3](https://csrc.nist.gov/pubs/sp/800/82/r3/final) | 2023-09 | 공식 초록·OT의 성능·신뢰성·안전 제약 |
 | [NCSC Impact of AI on cyber threat from now to 2027](https://www.ncsc.gov.uk/report/impact-ai-cyber-threat-now-2027) | 2025년 공개 전망, 2027년까지의 시나리오 | Key judgements·Assessment·Implications; 전망의 확률 표현 |
 | [OWASP LLM Prompt Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html) | 2026-11-04 확인 | 직접·간접 주입·도구 권한·다층 방어 절 |
+| [OWASP GenAI LLM Top 10 2026](https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/README.md) | 2026-08 공개판 | 공식 위험 항목의 명칭·순서 |
+| [OWASP Agentic Top 10 for 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) | 2025-12-09 공개, 2026판 | 에이전트 위험 항목과 공식 설명 |
+| [OWASP Agent Control Standard](https://genai.owasp.org/resource/agent-control-standard-acs/) | 2026-09-01 공개 | middleware hook·런타임 정책 집행 설명 |
+| [FIRST CVSS v4.0 User Guide](https://www.first.org/cvss/v4.0/user-guide) | CVSS v4.0, 문서 버전 1.2 | Base·Threat·Environmental·Supplemental 지표와 점수 해석 |
+| [FIRST EPSS FAQ](https://www.first.org/epss/faq) | 2026-11-04 확인 | 30일 악용 확률·일일 점수·환경 위험과의 차이 |
+| [MITRE ATT&CK T1110 Brute Force](https://attack.mitre.org/techniques/T1110/index.html) | 2026-11-04 확인 | Password Guessing·Password Cracking·Password Spraying·Credential Stuffing의 분류 |
+| [NIST SP 800-115](https://csrc.nist.gov/pubs/sp/800/115/final) | 2008-09-30 최종판 | 기술 보안 시험의 계획·수행·결과 분석·완화; 현행 모든 기술을 포괄하는 안내서는 아님 |
 | [OWASP AI Agent Security](https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html) | 2026-11-04 확인 | 도구 호출·최소권한·신뢰 경계·승인 절 |
 | [NIST AI 100-2 E2025](https://csrc.nist.gov/pubs/ai/100/2/e2025/final) | 2025-03, 공식 페이지의 정정 안내 포함 | 공식 초록의 생명주기·공격자 지식·목표에 따른 AML 분류 |
 | [NIST SP 800-218A](https://csrc.nist.gov/pubs/sp/800/218/a/final) | 2024-07 | 공식 초록의 AI 모델 생산자·시스템 생산자·구매자 범위 |
 | [MITRE ATT&CK Enterprise](https://attack.mitre.org/matrices/enterprise/) | 2026-11-04 확인 | 전술·기술 행렬과 기법별 탐지 연결 |
 | [MITRE ATLAS 공개 데이터](https://github.com/mitre-atlas/atlas-data) | 2026-11-04 확인 | 공식 저장소의 AI 위협·사례 데이터 안내 |
-| [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) | 2026-11-04 확인 | 검증 요구사항·판본·프로젝트 목적 |
+| [OWASP ASVS 5.0.0](https://asvs.owasp.org/) | 2025-05-30 공개된 안정판 | 요구사항 버전 표기·웹 애플리케이션 보안 검증의 목적 |
 | [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | 2025-04 | 공식 초록·CSF 2.0과 연결한 탐지·대응·복구 |
 | [OWASP Logging](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html) | 2026-11-04 확인 | 기록할 사건·민감정보 제외·로그 위변조 대응 |
 | [NIST FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) | 2024-08-13 | 공식 초록·ML-KEM의 공유 비밀 설정 목적·정정 안내 |
@@ -45,7 +52,7 @@
 | [Wireshark User’s Guide](https://www.wireshark.org/docs/wsug_html_chunked/) | 2026-11-04 확인 | 캡처·표시 필터·TLS 분석의 진입 경로 |
 | [CodeQL documentation](https://codeql.github.com/docs/) | 2026-11-04 확인 | 공식 도구 문서의 진입 경로·정적 질의 목적 |
 | [OWASP ZAP documentation](https://www.zaproxy.org/docs/) | 2026-11-04 확인 | 공식 웹 검사 도구의 문서 진입 경로 |
-| [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) | 2026-11-04 확인 | 프로젝트 개요·시험 가이드 연결 |
+| [OWASP WSTG 4.2](https://owasp.org/www-project-web-security-testing-guide/v42/) | 안정판 4.2 | 웹 시험의 범위·접근법·테스트 절차 안내 |
 | [PortSwigger Web Security Academy](https://portswigger.net/web-security) | 2026-11-04 확인 | 공식 무료 웹 보안 학습·제공자 실습 안내 |
 | [Carnegie Mellon picoCTF](https://picoctf.org/) | 2026-11-04 확인 | 교육용 보안 문제·연습 환경·운영 주체 소개 |
 
