@@ -6,6 +6,7 @@
 | --- | --- |
 | 공학기초_foundations/ | 기초·분야별·심화 학습과 용어·계산 검증 |
 | 전자컴퓨터공학_ece/ | 수학·물리·회로·컴퓨터 구조·SW·통신·제어·AI의 전공별 해설 |
+| 사이버보안과시스템방어_cybersecurity/ | 위협 모델·웹·클라우드·펌웨어·AI 보안의 설명, 출처와 오프라인 실습 |
 | 반도체제조공정_semiconductor-fabrication/ | 반도체 8대 공정의 원리·장비·재료·결함·계측과 제품별 공정 통합 |
 | 반도체설계_semiconductor-design/ | 아날로그·디지털·메모리 설계, EDA 도구와 칩 구현 흐름 |
 | 장애를극복하는기술_disability-technology/ | 신체 기능의 회복·대체·지원을 위한 공학 기술과 연구 |
@@ -41,4 +42,4 @@
 
 ## English
 
-The root navigation separates engineering subjects, industry systems, technical roles, reading and reasoning, languages, humanities, paper studies, dated technology developments and product/system analysis. Semiconductor design and technologies for restoring or supporting bodily functions have their own categories. News, model announcements, economic and technology outlook reports, and weekly GitHub project introductions are also separate. AI models, computation frameworks and numerical experiments have separate locations. Instruments, engineering fault cases, code examples, projects, research, author information, tools, figures and references each have a defined scope. JSON retains machine-readable paths while Markdown provides readable indexes.
+The root navigation separates engineering subjects, industry systems, technical roles, cybersecurity, reading and reasoning, languages, humanities, paper studies, dated technology developments and product/system analysis. Semiconductor design and technologies for restoring or supporting bodily functions have their own categories. News, model announcements, economic and technology outlook reports, and weekly GitHub project introductions are also separate. AI models, computation frameworks and numerical experiments have separate locations. Instruments, engineering fault cases, code examples, projects, research, author information, tools, figures and references each have a defined scope. JSON retains machine-readable paths while Markdown provides readable indexes.

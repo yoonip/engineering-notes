@@ -18,6 +18,8 @@ Secure boot는 실행할 코드의 신뢰성을 확인하는 부팅 체계입니
 
 TLS, AES, RSA, ECC, Secure Boot, TrustZone, TPM, Sanitizers, Fuzzing, CodeQL
 
+웹·API·클라우드·소프트웨어 공급망과 AI 시스템의 위협 모델, 접근 통제, 운영 대응은 [사이버보안과 시스템 방어](../../사이버보안과시스템방어_cybersecurity/README.md)에서 단계별로 이어서 살펴보실 수 있습니다. 이 문서의 암호·하드웨어 신뢰 개론과 세부 보안 학습 경로를 구분해 연결합니다.
+
 ## 참고 자료
 
 - [OpenSSL documentation](https://docs.openssl.org/)

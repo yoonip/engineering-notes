@@ -1821,6 +1821,38 @@
       "summary_en": "Connects design environments and process data with full-custom analog, memory and RTL implementation, mixed-signal chip and SoC integration, chip-level verification and tapeout handoff.",
       "category_ko": "반도체 설계",
       "category_en": "Semiconductor design"
+    },
+    {
+      "number": 72,
+      "slug": "cybersecurity-system-defense",
+      "title": "사이버보안과 시스템 방어",
+      "english_title": "Cybersecurity and System Defense",
+      "sections": [
+        "위협 모델링·암호·인증·인가",
+        "웹·API·Linux·네트워크·메모리 보안",
+        "클라우드·소프트웨어 공급망·펌웨어·산업 시스템",
+        "AI 기반 위협과 생성형 AI·에이전트 방어",
+        "취약점 검증·로그·사고 대응·고급 주제"
+      ],
+      "keywords": "cybersecurity, threat modeling, cryptography, authentication, authorization, web security, API security, Linux, network, memory safety, cloud, software supply chain, firmware, OT, AI security, prompt injection, agent security, incident response",
+      "path": "사이버보안과시스템방어_cybersecurity/README.md",
+      "references": [
+        "https://www.nist.gov/cyberframework",
+        "https://top10.owasp.org/2025/",
+        "https://csrc.nist.gov/pubs/sp/800/218/final",
+        "https://www.ncsc.gov.uk/report/impact-ai-cyber-threat-now-2027"
+      ],
+      "english_sections": [
+        "Threat modeling, cryptography, authentication and authorization",
+        "Web, API, Linux, network and memory security",
+        "Cloud, software supply chain, firmware and operational technology",
+        "AI-enabled threats and generative AI or agent defenses",
+        "Vulnerability validation, logging, incident response and advanced topics"
+      ],
+      "summary_ko": "위협 모델과 기본 보안 원리에서 웹·운영체제·클라우드·펌웨어의 방어 설계, AI를 이용한 위협과 AI 시스템 보호까지 연결합니다. 직접 작성한 오프라인 교육 코드와 실행한 검사 결과를 출처·범위와 함께 제공합니다.",
+      "summary_en": "Connects threat modeling and security foundations with web, operating system, cloud and firmware defense, AI-enabled threats, and protection of AI systems. Authored offline examples and executed checks are documented with sources and scope.",
+      "category_ko": "소프트웨어·보안·서비스",
+      "category_en": "Software, security and services"
     }
   ],
   "providers": [
@@ -2217,7 +2249,8 @@
         41,
         48,
         52,
-        53
+        53,
+        72
       ]
     },
     {
