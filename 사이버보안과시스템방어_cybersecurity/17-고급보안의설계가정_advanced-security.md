@@ -1,0 +1,41 @@
+# 고급 보안의 설계 가정 | Advanced security assumptions
+
+[분야 목차](README.md) · [용어](용어_glossary.md) · [출처와 판본](출처_sources.md)
+
+## 고급 기법은 실패 가정을 더 정밀하게 만듭니다
+
+| 주제 | 핵심 질문 | 확인해야 할 조건 |
+| --- | --- | --- |
+| 형식 검증 | 모든 허용 상태에서 불변식이 유지되나요? | 모델·가정·정수·동시성·환경이 구현과 맞아야 합니다. |
+| 부채널 | 정답 출력 밖의 시간·전력·캐시가 정보를 드러내나요? | 관측 능력·노이즈·반복 횟수·하드웨어를 정합니다. |
+| confidential computing | 사용 중인 자료를 어떤 운영자에게서 분리하나요? | TEE의 공격 모델·증명·업데이트·I/O 경계를 읽습니다. |
+| 원격 증명 | 상대가 어떤 상태를 측정했다고 증명하나요? | 측정 주체·nonce·신뢰 기준·시점과 판정을 연결합니다. |
+| post-quantum cryptography | 양자 공격 가정에서 키 설정·서명을 어떻게 바꾸나요? | 상호운용·메시지 크기·라이브러리·키 수명을 조사합니다. |
+
+이름이 고급이라고 기본 권한·키·입력 검사가 필요 없어지는 것은 아닙니다. 암호 모듈이 검증돼도 그 앞에서 다른 고객 자료를 선택하면 올바르게 암호화된 오노출이 생길 수 있습니다.
+
+## 형식 명제와 구현 시험을 연결합니다
+
+자체 명제로 ‘문서가 반환되었다면 scope·tenant·owner가 모두 일치한다’를 생각할 수 있습니다. 실습은 몇 가지 입력에서 이를 확인합니다. 형식 검증이라면 가능한 상태와 전이를 정의하고 불변식이 초기 상태와 모든 전이에서 유지됨을 확인해야 합니다. 캐시·백그라운드 작업·권한 회수 경로가 모델 밖이면 증명 범위도 거기까지입니다.
+
+메모리 프레임 검사에서 `len >= 2`를 먼저 확인하면 뒤의 `len - 2`가 underflow하지 않는다는 국소 논리를 세울 수 있습니다. 하지만 입력 포인터가 실제로 `len`바이트를 가리킨다는 호출자의 계약까지 함수 안에서 증명한 것은 아닙니다. 정적 분석·소유권·인터페이스 설계를 함께 읽습니다. [CERT C 범위 규칙](https://wiki.sei.cmu.edu/confluence/display/c/ARR30-C.+Do+not+form+or+use+out-of-bounds+pointers+or+array+subscripts)
+
+## 양자내성 암호의 역할을 정확히 구분합니다
+
+FIPS 203의 ML-KEM은 공유 비밀을 설정하는 key encapsulation mechanism입니다. 파일 전체를 직접 암호화하는 대칭키 암호나 전자서명과 같은 역할이 아닙니다. 합의된 비밀을 키 유도와 대칭키 통신에 연결합니다. ‘양자내성’도 알려진 공격과 현재 분석에 대한 평가이며 미래의 모든 공격에 대한 무조건적 보장은 아닙니다. [NIST FIPS 203 공식 초록·판본 안내](https://csrc.nist.gov/pubs/fips/203/final)
+
+전환은 알고리즘 이름 교체만으로 끝나지 않습니다. 현재 프로토콜·키·인증서·하드웨어·검증 장치·장기 비밀 데이터의 보존 기간을 목록화하고, 지원 판본·성능·패킷 크기·downgrade·실패 처리를 시험합니다. 이 글은 ML-KEM을 자체 구현하거나 특정 TLS 스택의 상호운용을 측정하지 않았습니다.
+
+## 다음 공부의 기준
+
+부채널을 배울 때는 공격자가 알 수 있는 값과 관측할 수 있는 값을 먼저 적습니다. TEE에서는 어떤 구성요소를 신뢰하고 어떤 운영자·물리 공격을 제외하는지 봅니다. 형식 도구에서는 ‘증명 성공’의 모델과 실제 코드 사이의 대응을 확인합니다. 이러한 질문을 해결할 수 있어야 기능 이름이 실제 설계 판단으로 이어집니다.
+
+## 원문에서 이어 읽기
+
+- [SEI CERT C ARR30-C](https://wiki.sei.cmu.edu/confluence/display/c/ARR30-C.+Do+not+form+or+use+out-of-bounds+pointers+or+array+subscripts): 배열·포인터 범위의 규칙과 예제입니다.
+- [NIST FIPS 203](https://csrc.nist.gov/pubs/fips/203/final): 공식 초록·ML-KEM의 공유 비밀 설정 목적·정정 안내입니다.
+- [NIST SP 800-207](https://csrc.nist.gov/pubs/sp/800/207/final): 공식 초록·자원 중심 접근과 내부망 신뢰의 구분입니다.
+
+## English
+
+Advanced methods require precise assumptions: formal models, side-channel observations, attestation trust and post-quantum migration each have distinct limits.
