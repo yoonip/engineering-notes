@@ -1,69 +1,23 @@
 # 도구·보안 새 자료
 
-반영: 2026-11-03 18:57 KST
+반영: 2026-11-04 08:37 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## Apache 제품 보안 업데이트 권고
+## LLVM 23.1.5
 
-> Apache 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]\[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
+LLVM Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.
 
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72270>) · 공식 RSS 게시일: 2026-11-03
+출처: [LLVM Project](<https://github.com/llvm/llvm-project/releases>) · [원문](<https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5>) · 공식 릴리스 게시 시각: 2026-11-04 06:35 KST
 
-가져온 시각: 2026-11-03 18:56:54 KST
+가져온 시각: 2026-11-04 08:37:00 KST
 
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+수집 경로: [공식 목록·피드](<https://api.github.com/repos/llvm/llvm-project/releases?per_page=20>) · 방법: 공식 저장소의 공개 Releases API\(안정판\)
 
-개요: 공식 한국어 소개 발췌
+자료 유형: 공식 안정판 릴리스
 
-## 지란지교소프트 제품 보안 조치 권고
-
-> 지란지교소프트社는 자사 제품에서 발견된 보안 취약점에 대한 조치 방법 발표 \[1\] o 해당 제품을 사용 중인 사용자는 제조사 권고에 따라…
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72269>) · 공식 RSS 게시일: 2026-11-03
-
-가져온 시각: 2026-11-03 18:56:55 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
-
-## Linux 제품 보안 업데이트 권고
-
-> Linux 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72268>) · 공식 RSS 게시일: 2026-11-03
-
-가져온 시각: 2026-11-03 18:56:56 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
-
-## Synology NAS 대상 랜섬웨어 공격 주의 권고
-
-> 보안공지 &gt; 알림마당 : KISA 보호나라&amp;KrCERT/CC
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72267>) · 공식 RSS 게시일: 2026-11-03
-
-가져온 시각: 2026-11-03 18:56:57 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
-
-## Termix 제품 보안 업데이트 권고
-
-> Termix 프로젝트는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72266>) · 공식 RSS 게시일: 2026-11-03
-
-가져온 시각: 2026-11-03 18:56:59 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
+개요: 제목·공개 정보에 따른 한국어 안내
 
 원문을 대조한 한국어 소개와 자동으로 작성한 주제 안내는 항목별로 구분합니다. 공식 한국어 소개를 발췌한 경우에는 인용문으로 표시합니다. 원문 전체를 번역하거나 새로운 분석을 작성한 글과는 구분합니다.
