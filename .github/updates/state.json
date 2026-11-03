@@ -117,6 +117,7 @@
     "papers:https://arxiv.org/abs/2611.01407": "papers:https://arxiv.org/abs/2611.01407",
     "papers:https://arxiv.org/abs/2611.01521": "papers:https://arxiv.org/abs/2611.01521",
     "papers:https://arxiv.org/abs/2611.01927": "papers:https://arxiv.org/abs/2611.01927",
+    "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103": "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103",
     "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
     "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030",
     "papers:https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102": "papers:https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102",
@@ -198,6 +199,7 @@
     "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.2",
     "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3",
     "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4",
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5",
     "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2",
     "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244",
@@ -576,6 +578,27 @@
           "title": "Claude Sonnet 5.5의 일상 업무·코딩 평가 / Introducing Claude Sonnet 5.5",
           "update": false,
           "url": "https://www.anthropic.com/claude-sonnet-5-5"
+        }
+      ],
+      "2026-11-04": [
+        {
+          "acquired_at": "2026-11-03T23:35:40.059451+00:00",
+          "acquisition_method": "공식 RSS·Atom의 제목·소개문",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-26T18:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T03:34:54.131044+00:00",
+          "group": "models",
+          "homepage": "https://openai.com/",
+          "key": "models:https://openai.com/index/introducing-gpt-6-1-terra",
+          "source_name": "OpenAI",
+          "source_url": "https://openai.com/news/rss.xml",
+          "summary_ko": "OpenAI의 모델 관련 공식 발표입니다. 공개 제목·소개에서 컴퓨터·브라우저 사용 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Introducing GPT-6.1 Terra",
+          "update": true,
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra"
         }
       ]
     },
@@ -2306,6 +2329,28 @@
           "update": false,
           "url": "https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102"
         }
+      ],
+      "2026-11-04": [
+        {
+          "acquired_at": "2026-11-03T23:37:08.963309+00:00",
+          "acquisition_method": "MIT News 공식 연구 소개 RSS",
+          "author": "MIT.nano",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-03T19:30:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-03T23:35:39.739875+00:00",
+          "group": "papers",
+          "homepage": "https://news.mit.edu/topic/artificial-intelligence2",
+          "key": "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103",
+          "kind": "대학 연구 소개",
+          "source_name": "MIT News AI 연구 소개",
+          "source_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+          "summary_ko": "MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Building connections across the research infrastructure",
+          "update": false,
+          "url": "https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103"
+        }
       ]
     },
     "products": {
@@ -3627,6 +3672,27 @@
           "update": false,
           "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72270"
         }
+      ],
+      "2026-11-04": [
+        {
+          "acquired_at": "2026-11-03T23:37:00.591435+00:00",
+          "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
+          "date": "2026-11-03T21:35:47+00:00",
+          "date_label": "공식 릴리스 게시 시각",
+          "first_seen": "2026-11-03T23:35:39.739875+00:00",
+          "group": "tools",
+          "homepage": "https://github.com/llvm/llvm-project/releases",
+          "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5",
+          "kind": "공식 안정판 릴리스",
+          "published_kind": "official_release",
+          "source_name": "LLVM Project",
+          "source_url": "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20",
+          "summary_ko": "LLVM Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "LLVM 23.1.5",
+          "update": false,
+          "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5"
+        }
       ]
     }
   },
@@ -4772,6 +4838,10 @@
       "group": "tools",
       "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4"
     },
+    "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5": {
+      "group": "tools",
+      "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5"
+    },
     "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": {
       "group": "tools",
       "key": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2"
@@ -4795,6 +4865,10 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {
       "group": "reports",
       "key": "reports:https://ksp.etri.re.kr/ksp/plan-report/read?id=1572"
+    },
+    "https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103": {
+      "group": "papers",
+      "key": "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103"
     },
     "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": {
       "group": "papers",
@@ -5007,10 +5081,10 @@
       "Last-Modified": "Fri, 30 Oct 2026 11:03:47 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"51903bcb0c639a5d9791086b4798ffc188d8b84cc38dd457dfc95023482a756d\""
+      "ETag": "W/\"40b7ea9bedd82b3af1673c6a6eaea9ca3c013f6a386a69ca384b5d33c82f4056\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"0bfb62feaa72b05b71d02f481fcacd9a16929feb634d4237499276a7cd1f55e1\""
+      "ETag": "W/\"0aeac9ddd8b7a66b28ef8279e051888379e6e0ab6258ba7ed80d6615e1f10464\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -5044,15 +5118,12 @@
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
-    "https://deepmind.google/blog/rss.xml": {
-      "Last-Modified": "Tue, 03 Nov 2026 17:01:49 GMT"
-    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"T2ncjg\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"1ae913c709d02cd4ee78064737f61fec\"",
-      "Last-Modified": "Tue, 03 Nov 2026 17:47:42 GMT"
+      "ETag": "\"0f606a121642a28a1e74ab73c4764709\"",
+      "Last-Modified": "Tue, 03 Nov 2026 22:34:40 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -5060,10 +5131,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b9a-f96/QVbKT5kqruNtg5XAKs2K5us\""
+      "ETag": "W/\"33b9a-xwbwb+sePEb2R7dqYQIH6cu+l9E\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40145-5i71vp4FnbuCU6FhzfaeIXw6iWQ\""
+      "ETag": "W/\"40145-JvDT0KhTHmiuM1E/Wix0OPt7IW0\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -5098,7 +5169,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -5108,12 +5178,12 @@
       "Last-Modified": "Tue, 03 Nov 2026 01:39:41 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793728469\"",
-      "Last-Modified": "Tue, 03 Nov 2026 17:54:29 GMT"
+      "ETag": "\"1793748155\"",
+      "Last-Modified": "Tue, 03 Nov 2026 23:22:35 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793728003\"",
-      "Last-Modified": "Tue, 03 Nov 2026 17:46:43 GMT"
+      "ETag": "\"1793748023\"",
+      "Last-Modified": "Tue, 03 Nov 2026 23:20:23 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -5200,7 +5270,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0ebc35c723c1feeddeca927796e7e960c\""
+      "ETag": "\"01a7f809c8b5a18004f1b55d4ef3ea27d\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -5300,8 +5370,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"4cfc5359608bbe132ef8ab4adb9fc815\"",
-      "Last-Modified": "Tue, 03 Nov 2026 17:26:35 GMT"
+      "ETag": "\"32ea9252df4c2d1527a4fe28b1843225\"",
+      "Last-Modified": "Tue, 03 Nov 2026 23:20:57 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -7463,6 +7533,10 @@
       "list_fingerprint": "e42a17032b0892ef0a9e6199b6e5d2adb1266671deb1b9c3f4e582599cf746fe",
       "status": "posted"
     },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5": {
+      "list_fingerprint": "71a93219a3d9e4917e791be82c27cbb43180d6d3468af5aa798dad3a512b02d5",
+      "status": "posted"
+    },
     "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1901970&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
       "list_fingerprint": "87d221f90d8d089a687dc793a66a33bdccae494af5cfaca6521f4df42ccb832a",
       "status": "bootstrap_skipped"
@@ -7506,6 +7580,10 @@
     "mit-ai-research:https://news.mit.edu/2026/algorithmic-monoculture-effects-depend-on-details-0929": {
       "list_fingerprint": "505f6457ba39393290511c3f874819a2621d848174d4873f03a80ecf326d2467",
       "status": "bootstrap_skipped"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103": {
+      "list_fingerprint": "cf26516008a9b3fc4164f6013a5acbf1e8a48b99a84d64fc6640f47441353519",
+      "status": "posted"
     },
     "mit-ai-research:https://news.mit.edu/2026/chris-bourg-named-vice-provost-and-barbara-ostrom-director-mit-libraries-1006": {
       "list_fingerprint": "aa0a5200639d55a033521f38b631ca7de63030cd1107f12fc12e4c187df7c49e",
@@ -7618,7 +7696,7 @@
       "url": "https://openai.com/index/introducing-gpt-6-1-sol"
     },
     "models:https://openai.com/index/introducing-gpt-6-1-terra": {
-      "fingerprint": "c3c794254a22a5ed4aa11c3009488878cd2e3af6490de2c65fa4fd56054194e4",
+      "fingerprint": "8f976c19f91e376345748aa5a5d18f59ce674a7d987c093156891d7c03f29f39",
       "first_seen": "2026-10-29T03:34:54.131044+00:00",
       "language": "en",
       "url": "https://openai.com/index/introducing-gpt-6-1-terra"
@@ -8240,7 +8318,7 @@
       "status": "posted"
     },
     "openai-en:https://openai.com/index/introducing-gpt-6-1-terra": {
-      "list_fingerprint": "c3c794254a22a5ed4aa11c3009488878cd2e3af6490de2c65fa4fd56054194e4",
+      "list_fingerprint": "8f976c19f91e376345748aa5a5d18f59ce674a7d987c093156891d7c03f29f39",
       "status": "posted"
     },
     "openai-en:https://openai.com/index/introducing-gpt-6-sol-and-luna": {
@@ -8742,6 +8820,12 @@
       "first_seen": "2026-11-03T09:55:34.197502+00:00",
       "language": "en",
       "url": "https://arxiv.org/abs/2611.01927"
+    },
+    "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103": {
+      "fingerprint": "cf26516008a9b3fc4164f6013a5acbf1e8a48b99a84d64fc6640f47441353519",
+      "first_seen": "2026-11-03T23:35:39.739875+00:00",
+      "language": "en",
+      "url": "https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103"
     },
     "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": {
       "fingerprint": "59645777377c4f76c9c0b82549e453f4c8162304ae24cb869044064ac7a5a8cf",
@@ -9374,6 +9458,12 @@
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4"
+    },
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5": {
+      "fingerprint": "71a93219a3d9e4917e791be82c27cbb43180d6d3468af5aa798dad3a512b02d5",
+      "first_seen": "2026-11-03T23:35:39.739875+00:00",
+      "language": "en",
+      "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5"
     },
     "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": {
       "fingerprint": "98bcac827f10cb00408e01b7c797ed9429ccda2277a4ca50b210914f68590d45",
