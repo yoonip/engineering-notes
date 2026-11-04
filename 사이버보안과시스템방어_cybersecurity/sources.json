@@ -1368,6 +1368,38 @@
       "edition": "공식 프로젝트 설치 안내; 2026-11-04 확인",
       "read_scope": "Linux 배포판별 도구·모듈 설치 경로",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "nist-sp800-41r1-firewall-policy",
+      "title": "Guidelines on Firewalls and Firewall Policy",
+      "url": "https://csrc.nist.gov/pubs/sp/800/41/r1/final",
+      "edition": "NIST SP 800-41 Rev. 1, 2009-09; 2026-11-04 확인",
+      "read_scope": "공식 발행 범위·초록 및 정책 수립·선택·구성·시험·배포·관리 원칙. 오래된 판본이므로 제품별 현재 설정 기준으로 사용하지 않음",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "cisa-comms-infrastructure-hardening-2024",
+      "title": "Enhanced Visibility and Hardening Guidance for Communications Infrastructure",
+      "url": "https://www.cisa.gov/sites/default/files/2025-01/joint-guidance-enhanced-visibility-hardening-guide-for-comms-infrastructure-508c_0.pdf",
+      "edition": "CISA, NSA, FBI, ASD ACSC, CCCS, NCSC-NZ 공동 지침, 2024-12-03; 2026-11-04 확인",
+      "read_scope": "기본 거부 ACL·인바운드 및 아웃바운드 제어·DMZ와 VLAN 분할·대역외 관리망·중앙 설정과 변경 감시",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "cisa-zero-trust-microsegmentation-part1-2025",
+      "title": "The Journey to Zero Trust: Microsegmentation in Zero Trust, Part One: Introduction and Planning",
+      "url": "https://www.cisa.gov/sites/default/files/2025-07/ZT-Microsegmentation-Guidance-Part-One_508c.pdf",
+      "edition": "CISA Version 1.0, 2025-07-29; 2026-11-04 확인",
+      "read_scope": "마이크로세그먼테이션 개요·세분화 방식과 단계적 자산 선정·의존성 조사·정책 선택·시험·배포 §1·§2·§3",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "netfilter-nftables-manual",
+      "title": "nftables manual",
+      "url": "https://netfilter.org/projects/nftables/manpage.html",
+      "edition": "Netfilter 프로젝트 공식 매뉴얼; 2026-11-04 확인",
+      "read_scope": "inet family, base chain hook·priority·policy, conntrack 상태, accept 및 drop 판정 순서",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."

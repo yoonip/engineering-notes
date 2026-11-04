@@ -176,6 +176,10 @@
 | [WireGuard Protocol & Cryptography](https://www.wireguard.com/protocol/) | 공식 프로젝트 프로토콜 설명; 2026-11-04 확인 | 암호 구성요소·handshake·세션 키 갱신 |
 | [WireGuard Quick Start](https://www.wireguard.com/quickstart/) | 공식 프로젝트 시작 안내; 2026-11-04 확인 | 인터페이스·키 생성·NAT 뒤 PersistentKeepalive 사용 조건 |
 | [WireGuard Installation](https://www.wireguard.com/install/) | 공식 프로젝트 설치 안내; 2026-11-04 확인 | Linux 배포판별 도구·모듈 설치 경로 |
+| [NIST SP 800-41 Rev. 1: Guidelines on Firewalls and Firewall Policy](https://csrc.nist.gov/pubs/sp/800/41/r1/final) | 2009-09 최종판; 2026-11-04 확인 | 방화벽 기술·정책의 공식 범위 및 정책 수립·시험·배포·관리 원칙. 제품별 최신 설정으로 사용하지 않음 |
+| [Enhanced Visibility and Hardening Guidance for Communications Infrastructure](https://www.cisa.gov/sites/default/files/2025-01/joint-guidance-enhanced-visibility-hardening-guide-for-comms-infrastructure-508c_0.pdf) | CISA·NSA·FBI·ASD ACSC·CCCS·NCSC-NZ, 2024-12-03 | 기본 거부 ACL, 인바운드·아웃바운드 제어, DMZ·VLAN, 대역외 관리망, 설정 변경 감시 |
+| [The Journey to Zero Trust: Microsegmentation in Zero Trust, Part One](https://www.cisa.gov/sites/default/files/2025-07/ZT-Microsegmentation-Guidance-Part-One_508c.pdf) | CISA, v1.0, 2025-07-29 | 세분화 범위와 자산·의존성 조사, 정책 선택·시험·단계적 배포 §1·§2·§3 |
+| [Netfilter nftables manual](https://netfilter.org/projects/nftables/manpage.html) | 공식 프로젝트 매뉴얼; 2026-11-04 확인 | `inet` family, base chain의 hook·priority·policy, conntrack 상태와 accept/drop 평가 |
 
 ## 코드 출처
 
