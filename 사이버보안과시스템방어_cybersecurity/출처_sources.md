@@ -198,6 +198,15 @@
 | [OWASP Web Security Testing Guide: Testing for HTTP Request Smuggling](https://wstg.owasp.org/latest/4-Web_Application_Security_Testing/07-Injection/16-HTTP_Request_Smuggling/) | OWASP WSTG 온라인 문서; 2026-11-04 확인 | 프런트엔드·백엔드 파서 차이와 프로토콜 변환 경계; 공격 페이로드는 사용하지 않음 |
 | [PortSwigger Web Security Academy: HTTP request smuggling](https://portswigger.net/web-security/request-smuggling) | 온라인 교육 문서; 2026-11-04 확인 | HTTP/2 다운그레이드·연결 재사용의 고수준 방어 설명; RFC 규정과 구분해 보조 자료로 사용 |
 
+
+| [OWASP Server Side Request Forgery Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) | OWASP 공식 방어 지침; 2026-11-04 확인 | allowlist·URL/도메인 검사·redirect·DNS rebinding·metadata 접근 방어 |
+| [Amazon EC2: Use the Instance Metadata Service](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html) | AWS 공식 사용자 안내; 2026-11-04 확인 | IMDSv2 세션 token, token 필수 설정, TTL, 기본 hop limit과 컨테이너 조건 |
+| [Amazon EC2: Configure the Instance Metadata Service options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-options.html) | AWS 공식 사용자 안내; 2026-11-04 확인 | 계정·AMI·인스턴스 metadata 설정 우선순위, hop limit, 적용 시 주의사항 |
+| [Google Cloud: About VM metadata](https://docs.cloud.google.com/compute/docs/metadata/overview) | Google Cloud 공식 문서; 2026-11-04 확인 | metadata endpoint와 VM 내부 프로세스의 접근 범위, 민감 정보 취급 |
+| [Google Cloud: Best practices for using service accounts securely](https://docs.cloud.google.com/iam/docs/best-practices-service-accounts) | Google Cloud 공식 IAM 지침; 2026-11-04 확인 | VM workload가 metadata server로 서비스 계정 token을 요청할 수 있는 범위 |
+| [Google Kubernetes Engine: Protecting cluster metadata](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/protecting-cluster-metadata) | GKE 공식 문서; 2026-11-04 확인 | metadata concealment 보호 대상·제한·hostNetwork 적용 조건 |
+| [Microsoft Azure: Instance Metadata Service for virtual machines](https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service) | Microsoft Learn 공식 문서; 2026-11-04 확인 | VM 내부 접근, Metadata 헤더와 X-Forwarded-For 요청 조건 |
+
 ## 코드 출처
 
 `실습_labs`의 코드는 공식 코드를 복사한 것이 아니라 직접 작성한 교육 예제입니다. 표준 라이브러리 API와 설계 원칙의 출처를 각 장에 연결했습니다. HMAC 검사의 공개 정답은 RFC 4231 §4.2에서 가져왔습니다. 자체 SQL 입력·문서·로그·프레임과 계산값은 외부 기관의 측정 데이터가 아닙니다.

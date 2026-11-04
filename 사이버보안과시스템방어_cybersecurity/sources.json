@@ -1520,6 +1520,62 @@
       "edition": "PortSwigger Web Security Academy 온라인 문서; 2026-11-04 확인",
       "read_scope": "HTTP/2 downgrade·연결 재사용 관련 고수준 방어 대조; RFC 규정과 구분한 보조 설명",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "owasp-ssrf-prevention-cheatsheet",
+      "title": "Server Side Request Forgery Prevention Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "edition": "OWASP 공식 방어 지침; 2026-11-04 확인",
+      "read_scope": "allowlist·URL 및 도메인 검사·redirect 비활성화·DNS rebinding·metadata 서비스 방어",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "aws-ec2-instance-metadata-service",
+      "title": "Use the Instance Metadata Service to access instance metadata",
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html",
+      "edition": "AWS EC2 공식 사용자 안내; 2026-11-04 확인",
+      "read_scope": "IMDSv2 세션 token 요청·사용, token required, token TTL, 기본 PUT response hop limit와 container caveat",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "aws-ec2-instance-metadata-options",
+      "title": "Configure the Instance Metadata Service options",
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-options.html",
+      "edition": "AWS EC2 공식 사용자 안내; 2026-11-04 확인",
+      "read_scope": "account·AMI·instance 설정 계층과 우선순위, token 요구, hop limit과 변경 영향",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "google-compute-vm-metadata-overview",
+      "title": "About VM metadata",
+      "url": "https://docs.cloud.google.com/compute/docs/metadata/overview",
+      "edition": "Google Cloud 공식 문서; 2026-11-04 확인",
+      "read_scope": "VM metadata endpoint, 내부 workload의 접근, metadata에 기록할 민감 정보 주의",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "google-cloud-service-account-best-practices",
+      "title": "Best practices for using service accounts securely",
+      "url": "https://docs.cloud.google.com/iam/docs/best-practices-service-accounts",
+      "edition": "Google Cloud 공식 IAM 지침; 2026-11-04 확인",
+      "read_scope": "권한 있는 서비스 계정이 부착된 VM에서 실행되는 프로세스의 metadata token 접근",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "gke-protecting-cluster-metadata",
+      "title": "Protecting cluster metadata",
+      "url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/protecting-cluster-metadata",
+      "edition": "Google Kubernetes Engine 공식 문서; 2026-11-04 확인",
+      "read_scope": "metadata concealment 대상·범위 제한·HostNetwork Pod와 서비스 계정 접근 조건",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "azure-vm-instance-metadata-service",
+      "title": "Instance Metadata Service for virtual machines",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service",
+      "edition": "Microsoft Learn 공식 문서; 2026-11-04 확인",
+      "read_scope": "IMDS 내부 접근·Metadata: true 요구·X-Forwarded-For 금지 및 redirect 방지 취지",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."
