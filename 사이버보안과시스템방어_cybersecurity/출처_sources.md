@@ -145,6 +145,20 @@
 | [BIND 9 DNSSEC Guide](https://bind9.readthedocs.io/en/stable/dnssec-guide.html) | BIND 9.20 안정 문서; 2026-11-04 확인 | DNSSEC validation·parent DS·key rollover·SERVFAIL 진단·delv |
 | [Australian Cyber Security Centre, Domain Name System security for domain owners](https://www.cyber.gov.au/publication/domain-name-system-security-for-domain-owners) | 2021-10 공개 자료; 2026-11-04 확인 | registrar MFA·접근 로그·변경 알림·domain lock의 보호 범위 |
 | [ICANN SSAC SAC-044, A Registrant’s Guide to Protecting Domain Name Registration Accounts](https://www.icann.org/en/groups/ssac/documents/sac-044-en.pdf) | 2025 공개; 2026-11-04 확인 | 등록자 계정 보호 권고와 등록 운영 절차 |
+| [RFC 6480: An Infrastructure to Support Secure Internet Routing](https://www.rfc-editor.org/rfc/rfc6480.html) | 2012-02; Informational; 2026-11-04 확인 | RPKI 구조·ROA·저장소·cache 운영 §2·§3·§6 |
+| [RFC 6482: A Profile for Route Origin Authorizations (ROAs)](https://www.rfc-editor.org/rfc/rfc6482.html) | 2012-02; 2026-11-04 확인 | ROA prefix·origin AS·maxLength 구조 §3·§4 |
+| [RFC 6811: BGP Prefix Origin Validation](https://www.rfc-editor.org/rfc/rfc6811.html) | 2013-01; RFC 8481·8893으로 갱신; 2026-11-04 확인 | VRP 대조와 Valid·Invalid·NotFound 판정·정책 §2·§3·§5 |
+| [RFC 8481: Clarifications to BGP Origin Validation Based on RPKI](https://www.rfc-editor.org/rfc/rfc8481.html) | 2018-09; RFC 6811 갱신; 2026-11-04 확인 | 검증 상태 설정과 정책 적용의 구분 §4·§5 |
+| [RFC 8210: The RPKI to Router Protocol, Version 1](https://www.rfc-editor.org/rfc/rfc8210.html) | 2017-09; RFC 6810 대체; 2026-11-04 확인 | RPKI cache와 라우터 사이 자료 전달·세션·전송 보호 §3·§4·§8·§9 |
+| [RFC 9319: The Use of maxLength in the RPKI](https://www.rfc-editor.org/rfc/rfc9319.html) | 2022-10; 2026-11-04 확인 | maxLength가 허용하는 더 구체적인 경로와 ROA 구성 지침 §2·§3 |
+| [RFC 7454: BGP Operations and Security](https://www.rfc-editor.org/rfc/rfc7454.html) | 2015-02; BCP 194; 2026-11-04 확인 | BGP 세션·제어면·prefix filter·최대 prefix·AS_PATH 운영 보안 §4·§5·§6·§8·§9 |
+| [RFC 8212: Default External BGP Route Propagation Behavior without Policies](https://www.rfc-editor.org/rfc/rfc8212.html) | 2017-07; RFC 4271 갱신; 2026-11-04 확인 | eBGP import·export 정책이 명시되지 않았을 때 기본 거부 §1·§3 |
+| [RFC 7908: Problem Definition and Classification of BGP Route Leaks](https://www.rfc-editor.org/rfc/rfc7908.html) | 2016-06; Informational; 2026-11-04 확인 | route leak의 작업 정의와 분류 §2·§3 |
+| [RFC 9234: Route Leak Prevention and Detection Using Roles in UPDATE and OPEN Messages](https://www.rfc-editor.org/rfc/rfc9234.html) | 2022-05; 2026-11-04 확인 | BGP Role과 OTC 기반 경로 누출 예방·탐지 §3·§4·§5 |
+| [RFC 8893: RPKI Origin Validation for BGP Export](https://www.rfc-editor.org/rfc/rfc8893.html) | 2020-09; RFC 6811 갱신; 2026-11-04 확인 | export policy의 effective origin AS 검증 §3·§4 |
+| [RFC 5398: Autonomous System Number Reservation for Documentation Use](https://www.rfc-editor.org/rfc/rfc5398.html) | 2008-12; Informational; 2026-11-04 확인 | 문서 예시용 AS 번호 범위 §2·§4 |
+| [RFC 5737: IPv4 Address Blocks Reserved for Documentation](https://www.rfc-editor.org/rfc/rfc5737.html) | 2010-01; Informational; 2026-11-04 확인 | 문서 예시용 IPv4 주소 prefix §3·§4 |
+| [Python `ipaddress` library](https://docs.python.org/3/library/ipaddress.html) | Python 3 표준 라이브러리 문서; 2026-11-04 확인 | IPv4·IPv6 network 해석과 subnet_of API |
 
 ## 코드 출처
 

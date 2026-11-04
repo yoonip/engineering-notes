@@ -134,5 +134,21 @@
 | `dig +dnssec` | DNSSEC 레코드를 요청하는 DNS 질의 옵션입니다. 옵션을 추가한 것만으로 질의 도구가 신뢰 사슬을 검증했다고 볼 수 없습니다. |
 | `delv` | BIND 9에 포함된 DNSSEC 검증 질의 도구입니다. 사용할 resolver·trust anchor·환경에 따른 한계를 함께 고려합니다. |
 | DNS registrar lock | 도메인 이전이나 등록정보 변경을 제한하는 등록 사업자·registry의 정책 통제입니다. 계정 탈취나 DNS 공급자 침해를 모두 막지는 못합니다. |
+| BGP / Border Gateway Protocol | 서로 다른 자율 시스템이 도달 가능한 IP prefix와 경로 정보를 교환하는 인터넷 경계 라우팅 protocol입니다. |
+| AS / Autonomous System | 공통 라우팅 정책 아래 인터넷 경로를 관리하며 하나의 자율 시스템 번호(ASN)로 식별되는 네트워크 집합입니다. |
+| prefix / IP prefix | IP 주소 범위와 네트워크 경계를 나타내는 표기입니다. 예를 들어 /24는 앞의 24비트가 네트워크 부분임을 나타냅니다. |
+| AS_PATH | BGP 경로 속성으로, UPDATE가 거쳐 온 AS 정보를 나타냅니다. origin AS는 BGP 규격에 따라 AS_PATH에서 도출합니다. |
+| RPKI / Resource Public Key Infrastructure | 인터넷 번호 자원의 할당 관계를 인증서와 서명된 객체로 표현해 라우팅 보안에 활용하는 공개키 기반 체계입니다. |
+| ROA / Route Origin Authorization | 주소 자원 보유자가 특정 prefix를 어느 AS가 원점으로 광고할 수 있는지와 maxLength를 승인하는 RPKI 객체입니다. |
+| VRP / Validated ROA Payload | RPKI 서명 자료를 검증한 뒤 경로 판정에 사용할 수 있도록 정규화한 prefix·origin ASN·maxLength 정보입니다. |
+| ROV / Route Origin Validation | BGP 경로 prefix와 origin AS를 검증된 VRP 집합과 비교해 Valid·Invalid·NotFound 상태를 붙이는 기능입니다. |
+| origin AS | 특정 BGP 경로를 원점으로 광고한다고 주장하는 AS 번호입니다. 경로의 모든 중간 AS를 검증한 결과와는 다릅니다. |
+| maxLength | ROA가 허용하는 더 구체적인 광고 prefix 길이의 상한입니다. 필요 이상 넓게 허용하면 의도하지 않은 subprefix 경로도 유효해질 수 있습니다. |
+| RPKI-RTR | 검증 cache가 라우터에 VRP 자료와 변경을 전달하는 protocol입니다. 라우터가 repository의 서명 객체를 직접 수집하는 흐름과 구분합니다. |
+| RPKI cache | RPKI 저장소 자료를 수집·검증해 라우터에 전달하는 신뢰 구성요소입니다. 갱신 시각·session·trust anchor·전송 보호를 운영해야 합니다. |
+| ROV 상태 / Origin validation state | BGP 경로를 VRP에 대조한 결과인 Valid, Invalid, NotFound입니다. 상태를 붙이는 것과 라우팅 정책에서 경로를 거부하는 것은 별도 동작입니다. |
+| route leak | BGP 이웃 간 경로 전달 관계·정책을 위반해 의도하지 않은 경로가 전파되는 현상입니다. prefix 원점이 유효해도 발생할 수 있습니다. |
+| BGP Role | RFC 9234가 eBGP 이웃 관계를 Provider·Customer·Peer·Route Server 등의 역할로 협상하는 capability입니다. |
+| OTC / Only-to-Customer | BGP 경로가 customer·peer 방향으로 전달된 뒤 provider 등으로 재전파되지 않도록 돕는 경로 속성입니다. |
 
 용어는 각 장의 적용 조건과 함께 읽습니다. 예를 들어 인증된 메시지도 재전송일 수 있고, 유사한 검색 결과에도 읽기 권한이 없을 수 있습니다. 정의를 판단 근거로 바꾸는 예제는 각 장에 연결했습니다.

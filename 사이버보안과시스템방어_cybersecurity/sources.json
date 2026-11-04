@@ -1120,6 +1120,118 @@
       "edition": "2025 publication; 2026-11-04 확인",
       "read_scope": "등록자 계정 보호 권고와 도메인 등록 운영 절차",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc6480-rpki-architecture",
+      "title": "An Infrastructure to Support Secure Internet Routing",
+      "url": "https://www.rfc-editor.org/rfc/rfc6480.html",
+      "edition": "2012-02; Informational; 2026-11-04 확인",
+      "read_scope": "RPKI 구조·ROA·저장소·cache 운영 §2·§3·§6",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc6482-roa",
+      "title": "A Profile for Route Origin Authorizations (ROAs)",
+      "url": "https://www.rfc-editor.org/rfc/rfc6482.html",
+      "edition": "2012-02; 2026-11-04 확인",
+      "read_scope": "ROA prefix·origin AS·maxLength 구조 §3·§4",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc6811-bgp-origin-validation",
+      "title": "BGP Prefix Origin Validation",
+      "url": "https://www.rfc-editor.org/rfc/rfc6811.html",
+      "edition": "2013-01; RFC 8481·8893으로 갱신; 2026-11-04 확인",
+      "read_scope": "VRP 대조와 Valid·Invalid·NotFound 판정, 검증 상태와 로컬 정책 §2·§3·§5",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc8481-origin-validation-clarifications",
+      "title": "Clarifications to BGP Origin Validation Based on RPKI",
+      "url": "https://www.rfc-editor.org/rfc/rfc8481.html",
+      "edition": "2018-09; RFC 6811 갱신; 2026-11-04 확인",
+      "read_scope": "검증 상태 설정과 정책 적용의 구분 §4·§5",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc8210-rpki-router-protocol",
+      "title": "The RPKI to Router Protocol, Version 1",
+      "url": "https://www.rfc-editor.org/rfc/rfc8210.html",
+      "edition": "2017-09; RFC 6810 대체; 2026-11-04 확인",
+      "read_scope": "RPKI cache와 라우터 사이 자료 전달·session·전송 보호 §3·§4·§8·§9",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc9319-rpki-maxlength",
+      "title": "The Use of maxLength in the Resource Public Key Infrastructure (RPKI)",
+      "url": "https://www.rfc-editor.org/rfc/rfc9319.html",
+      "edition": "2022-10; 2026-11-04 확인",
+      "read_scope": "maxLength가 허용하는 더 구체적인 경로와 ROA 구성 §2·§3",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc7454-bgp-operations-security",
+      "title": "BGP Operations and Security",
+      "url": "https://www.rfc-editor.org/rfc/rfc7454.html",
+      "edition": "2015-02; BCP 194; 2026-11-04 확인",
+      "read_scope": "BGP session·제어면·prefix filter·최대 prefix·AS_PATH 운영 보안 §4·§5·§6·§8·§9",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc8212-bgp-default-reject",
+      "title": "Default External BGP Route Propagation Behavior without Policies",
+      "url": "https://www.rfc-editor.org/rfc/rfc8212.html",
+      "edition": "2017-07; RFC 4271 갱신; 2026-11-04 확인",
+      "read_scope": "eBGP import·export 정책이 명시되지 않았을 때 기본 거부 §1·§3",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc7908-route-leaks",
+      "title": "Problem Definition and Classification of BGP Route Leaks",
+      "url": "https://www.rfc-editor.org/rfc/rfc7908.html",
+      "edition": "2016-06; Informational; 2026-11-04 확인",
+      "read_scope": "route leak 작업 정의와 분류 §2·§3",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc9234-bgp-roles-otc",
+      "title": "Route Leak Prevention and Detection Using Roles in UPDATE and OPEN Messages",
+      "url": "https://www.rfc-editor.org/rfc/rfc9234.html",
+      "edition": "2022-05; 2026-11-04 확인",
+      "read_scope": "BGP Role과 OTC 기반 경로 누출 예방·탐지 §3·§4·§5",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc8893-rpki-export-validation",
+      "title": "Resource Public Key Infrastructure (RPKI) Origin Validation for BGP Export",
+      "url": "https://www.rfc-editor.org/rfc/rfc8893.html",
+      "edition": "2020-09; RFC 6811 갱신; 2026-11-04 확인",
+      "read_scope": "export policy에서 effective origin AS를 검증하는 조건 §3·§4",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc5398-documentation-asn",
+      "title": "Autonomous System Number Reservation for Documentation Use",
+      "url": "https://www.rfc-editor.org/rfc/rfc5398.html",
+      "edition": "2008-12; Informational; 2026-11-04 확인",
+      "read_scope": "문서 예시용 AS 번호 범위 §2·§4",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc5737-documentation-ipv4",
+      "title": "IPv4 Address Blocks Reserved for Documentation",
+      "url": "https://www.rfc-editor.org/rfc/rfc5737.html",
+      "edition": "2010-01; Informational; 2026-11-04 확인",
+      "read_scope": "문서 예시용 IPv4 address prefix §3·§4",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "python-ipaddress-library",
+      "title": "ipaddress — IPv4/IPv6 manipulation library",
+      "url": "https://docs.python.org/3/library/ipaddress.html",
+      "edition": "Python 3 standard library documentation; 2026-11-04 확인",
+      "read_scope": "IPv4·IPv6 network parsing와 subnet_of method",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."
