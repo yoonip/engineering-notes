@@ -936,6 +936,86 @@
       "edition": "2023-05; 2026-11-04 확인",
       "read_scope": "discoverable FIDO credential이라는 passkey 용어·로그인 UX·동기화 배경",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc5280-x509-pkix",
+      "title": "Internet X.509 Public Key Infrastructure Certificate and CRL Profile",
+      "url": "https://www.rfc-editor.org/rfc/rfc5280.html",
+      "edition": "2008-05; 2026-11-04 확인",
+      "read_scope": "X.509 인증서·확장·인증서 경로 검증·CRL profile",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc9525-tls-service-identity",
+      "title": "Service Identity in TLS",
+      "url": "https://www.rfc-editor.org/rfc/rfc9525.html",
+      "edition": "2023-11; 2026-11-04 확인",
+      "read_scope": "DNS/IP reference identity·SAN 검증·CN-ID 사용 중단·wildcard 제한",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc8555-acme",
+      "title": "Automatic Certificate Management Environment (ACME)",
+      "url": "https://www.rfc-editor.org/rfc/rfc8555.html",
+      "edition": "2019-03; 2026-11-04 확인",
+      "read_scope": "ACME account·order·HTTP-01·DNS-01·certificate revocation",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc8737-acme-tls-alpn",
+      "title": "ACME TLS-ALPN-01 Challenge Extension",
+      "url": "https://www.rfc-editor.org/rfc/rfc8737.html",
+      "edition": "2020-02; 2026-11-04 확인",
+      "read_scope": "TLS ALPN protocol을 통한 domain validation challenge",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc6960-ocsp",
+      "title": "X.509 Internet Public Key Infrastructure Online Certificate Status Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc6960.html",
+      "edition": "2013-06; 2026-11-04 확인",
+      "read_scope": "인증서 상태 확인 protocol인 OCSP",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc9162-certificate-transparency",
+      "title": "Certificate Transparency Version 2.0",
+      "url": "https://www.rfc-editor.org/rfc/rfc9162.html",
+      "edition": "2021-12; Experimental; 2026-11-04 확인",
+      "read_scope": "공개 TLS 인증서 transparency log의 감사·오발급 탐지 범위와 문서 상태",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "cabforum-tls-baseline-requirements",
+      "title": "CA/Browser Forum Baseline Requirements for TLS Server Certificates",
+      "url": "https://cabforum.org/working-groups/server/baseline-requirements/requirements/",
+      "edition": "Version 2.3.1, 2026-10-04; 2026-11-04 확인",
+      "read_scope": "공개적으로 신뢰되는 TLS 서버 인증서의 발급·수명주기 기준과 적용 범위",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openssl-s_client-docs",
+      "title": "OpenSSL s_client command documentation",
+      "url": "https://docs.openssl.org/master/man1/openssl-s_client/",
+      "edition": "OpenSSL master command documentation; 2026-11-04 확인",
+      "read_scope": "SNI·hostname·chain 검증 옵션과 -showcerts 출력 범위",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openssl-x509-docs",
+      "title": "OpenSSL x509 command documentation",
+      "url": "https://docs.openssl.org/master/man1/openssl-x509/",
+      "edition": "OpenSSL master command documentation; 2026-11-04 확인",
+      "read_scope": "subject·issuer·기간·SAN 출력 옵션",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openssl-verify-docs",
+      "title": "OpenSSL verify command documentation",
+      "url": "https://docs.openssl.org/master/man1/openssl-verify/",
+      "edition": "OpenSSL master command documentation; 2026-11-04 확인",
+      "read_scope": "CA·intermediate·purpose·hostname 검증 command option",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."

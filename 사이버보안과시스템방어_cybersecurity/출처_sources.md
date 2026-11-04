@@ -122,6 +122,16 @@
 | [NIST SP 800-63B-4: Authenticator and Verifier Requirements](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/) | 2025-07 최종판; 2026-11-04 확인 | 피싱 저항성의 정의·수동 입력 OTP의 한계 |
 | [FIDO Alliance, Synced Passkey Deployment: Emerging Practices for Consumer Use Cases](https://fidoalliance.org/wp-content/uploads/2024/05/Synced-Passkey-Deployment_-Emerging-Practices-for-Consumer-Use-Cases_2024-Final.pdf) | 2024-05; 2026-11-04 확인 | 동기화형·기기 고정형 credential의 사용자·서비스 운영 tradeoff와 계정 복구 |
 | [FIDO Alliance UX Guidelines for Passkey Creation and Sign-ins](https://fidoalliance.org/wp-content/uploads/2023/05/FIDO-Alliance-UX-Guidelines-for-Passkey-Creation-and-Sign-ins.pdf) | 2023-05; 2026-11-04 확인 | discoverable FIDO credential이라는 passkey 용어와 소비자 로그인 흐름 |
+| [RFC 5280: Internet X.509 Public Key Infrastructure Certificate and CRL Profile](https://www.rfc-editor.org/rfc/rfc5280.html) | 2008-05; 2026-11-04 확인 | X.509 인증서·확장·인증서 경로 검증·CRL profile |
+| [RFC 9525: Service Identity in TLS](https://www.rfc-editor.org/rfc/rfc9525.html) | 2023-11; 2026-11-04 확인 | DNS/IP reference identity, SAN 검증, CN-ID 사용 중단과 wildcard 제한 |
+| [RFC 8555: Automatic Certificate Management Environment](https://www.rfc-editor.org/rfc/rfc8555.html) | 2019-03; 2026-11-04 확인 | ACME account·order·HTTP-01·DNS-01·certificate revocation |
+| [RFC 8737: ACME TLS-ALPN-01 Challenge](https://www.rfc-editor.org/rfc/rfc8737.html) | 2020-02; 2026-11-04 확인 | TLS ALPN protocol을 통한 domain validation challenge |
+| [RFC 6960: Online Certificate Status Protocol](https://www.rfc-editor.org/rfc/rfc6960.html) | 2013-06; 2026-11-04 확인 | 인증서 상태 확인 protocol인 OCSP |
+| [RFC 9162: Certificate Transparency Version 2.0](https://www.rfc-editor.org/rfc/rfc9162.html) | 2021-12; Experimental; 2026-11-04 확인 | 공개 TLS 인증서 transparency log의 감사·오발급 탐지 범위 |
+| [CA/Browser Forum Baseline Requirements](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) | Version 2.3.1, 2026-10-04; 2026-11-04 확인 | 공개적으로 신뢰되는 TLS 서버 인증서의 발급·수명주기 기준 |
+| [OpenSSL `s_client`](https://docs.openssl.org/master/man1/openssl-s_client/) | OpenSSL master command documentation; 2026-11-04 확인 | SNI·hostname·chain 검증 옵션과 `-showcerts` 출력 범위 |
+| [OpenSSL `x509`](https://docs.openssl.org/master/man1/openssl-x509/) | OpenSSL master command documentation; 2026-11-04 확인 | subject·issuer·기간·SAN 출력 옵션 |
+| [OpenSSL `verify`](https://docs.openssl.org/master/man1/openssl-verify/) | OpenSSL master command documentation; 2026-11-04 확인 | CA·intermediate·purpose·hostname을 통한 인증서 검증 명령 |
 
 ## 코드 출처
 

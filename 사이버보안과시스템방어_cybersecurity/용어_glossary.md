@@ -36,6 +36,18 @@
 | BS / Backup State | 동기화 가능한 credential의 현재 백업 상태를 나타내며 바뀔 수 있습니다. |
 | attestation | 등록 시 인증기 특성에 관한 증거를 제공하는 WebAuthn 데이터입니다. 공개 서비스에서는 개인정보 영향과 기기 지원 범위를 고려합니다. |
 | `signCount` | 일부 인증기가 assertion마다 갱신하는 서명 횟수입니다. 복제 탐지의 보조 신호이며 불일치만으로 복제를 확정하지 않습니다. |
+| X.509 인증서 | 공개키·서비스 식별자·용도·기간을 발급자의 서명으로 묶은 인증 자료입니다. 유효성은 신뢰 경로와 client의 용도·이름 검증 정책에 따라 판단합니다. |
+| PKI / Public Key Infrastructure | 공개키 인증서를 발급·검증·갱신·폐기하고 신뢰 anchor를 배포하는 조직·기술·운영 체계입니다. |
+| CA / Certification Authority | 정책에 따라 인증서 서명·발급·폐기 정보를 관리하는 인증기관입니다. CA 서명만으로 인증서에 적힌 모든 내용을 무조건 신뢰하지는 않습니다. |
+| trust anchor | client가 미리 신뢰하도록 설정한 인증 경로의 시작점입니다. Root CA 인증서 또는 별도로 구성한 공개키가 될 수 있습니다. |
+| intermediate CA | trust anchor와 서비스 인증서 사이에서 하위 인증서를 발급하는 CA입니다. 서버는 client가 경로를 구성하는 데 필요한 중간 인증서를 보낼 수 있습니다. |
+| SAN / subjectAltName | 인증서의 DNS 이름·IP 주소 등 서비스 식별자를 담는 X.509 확장입니다. TLS client는 접속한 이름에 맞는 SAN을 검증합니다. |
+| ACME | 도메인 제어 확인과 인증서 발급·갱신·폐기 요청을 자동화하는 protocol입니다. |
+| HTTP-01 / DNS-01 | ACME에서 HTTP challenge 경로나 DNS TXT record로 도메인 제어를 증명하는 방식입니다. |
+| CRL / Certificate Revocation List | CA가 폐기한 인증서의 serial 정보를 모아 배포하는 목록입니다. client가 실제로 확인하는지는 구현·정책에 달려 있습니다. |
+| OCSP | client가 특정 X.509 인증서의 폐기 상태를 확인할 수 있도록 하는 protocol입니다. |
+| Certificate Transparency / CT | 공개 TLS 인증서 발급 기록을 append-only log에 남겨 운영자가 잘못 발급된 certificate를 발견하도록 돕는 체계입니다. log 기록 자체가 오발급을 막거나 certificate를 폐기하지는 않습니다. |
+| mTLS / Mutual TLS | TLS client와 server 양쪽이 인증서를 제시하고 peer를 인증하는 연결 방식입니다. 인증 결과와 애플리케이션의 작업 권한은 별도로 판단합니다. |
 | ACL | 자원에 접근할 수 있는 주체·작업을 정한 접근 제어 목록입니다. |
 | IAM | 사용자·서비스의 신원과 자원 접근 정책을 관리하는 체계입니다. |
 | tenant | 서비스에서 분리해 관리하는 고객·조직의 단위입니다. |

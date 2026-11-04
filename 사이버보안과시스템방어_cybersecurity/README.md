@@ -41,6 +41,7 @@
 | CI 보안 | [외부 PR과 권한 있는 GitHub Actions workflow](29-외부PR과권한있는워크플로우_github-actions-trust-boundaries.md) | `pull_request_target`·`workflow_run`의 권한 경계, artifact·cache 취급과 PR 시험 분리를 설명합니다. |
 | 인증 연동 | [OAuth 2.0과 OpenID Connect 로그인 보안](30-OAuth와OpenIDConnect인증_oauth-oidc-security.md) | authorization code·PKCE·token 검증과 browser·mobile client 구조를 연결합니다. |
 | 패스키 인증 | [패스키와 WebAuthn 인증](31-패스키와WebAuthn인증_passkeys-webauthn.md) | credential 등록·challenge 검증·동기화와 계정 복구를 설명합니다. |
+| TLS 인증서 | [TLS 인증서와 PKI 운영](32-TLS인증서와PKI운영_tls-certificates-pki-operations.md) | 인증 경로·서비스 이름 확인·ACME 갱신·폐기와 진단 명령을 연결합니다. |
 
 ## 글과 근거의 성격
 
@@ -63,4 +64,4 @@
 
 ## English
 
-This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, ransomware response, email authentication, endpoint detection, detection engineering, log-pipeline health, secret lifecycle management, workload identity, privileged GitHub Actions workflows, OAuth/OpenID Connect, and passkeys with WebAuthn. It distinguishes client-side mobile controls from backend verification, sender-domain authentication from business-request legitimacy, and endpoint alert signals from incident evidence. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.
+This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, ransomware response, email authentication, endpoint detection, detection engineering, log-pipeline health, secret lifecycle management, workload identity, privileged GitHub Actions workflows, OAuth/OpenID Connect, passkeys with WebAuthn, and TLS certificate operations. It distinguishes client-side mobile controls from backend verification, sender-domain authentication from business-request legitimacy, and endpoint alert signals from incident evidence. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.
