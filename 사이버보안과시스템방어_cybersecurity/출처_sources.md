@@ -93,6 +93,14 @@
 | [OpenTelemetry Logs Data Model](https://opentelemetry.io/docs/specs/otel/logs/data-model/) | Stable specification, 2026-11-04 확인 | 원천 사건 시각과 수집 관측 시각을 분리하는 로그 필드 정의 |
 | [OpenTelemetry Collector internal telemetry](https://opentelemetry.io/docs/collector/internal-telemetry/) | 2026-11-04 확인 | Collector receiver·exporter·전송 큐의 상태 계측과 판본별 확인 항목 |
 | [OpenTelemetry Collector resiliency](https://opentelemetry.io/docs/collector/resiliency/) | 2026-11-04 확인 | 큐·재시도·지속 저장·메시지 큐와 유실 가능 조건 |
+| [OWASP Secrets Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html) | 2026-11-04 확인 | 비밀정보 수명주기·CI/CD 접근·회전·동적 자격 증명·감사·노출 대응 |
+| [GitHub Actions OIDC cloud providers](https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-cloud-providers) | 2026-11-04 확인 | 클라우드 연합 신뢰 설정·id-token 권한·보호 환경·단기 token 교환 |
+| [GitHub Actions OpenID Connect reference](https://docs.github.com/en/actions/reference/security/oidc) | 2026-11-04 확인 | iss·aud·sub claim·branch/environment 조건·2026-07-15 immutable subject 변경 |
+| [GitHub Secret Scanning](https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning) | 2026-11-04 확인 | 저장소 기록 검사·경보·validity check·custom pattern |
+| [GitHub Push Protection](https://docs.github.com/en/code-security/concepts/secret-security/push-protection) | 2026-11-04 확인 | 지원 패턴 push 차단·기능 활성화 조건·우회 감사 경보 |
+| [Remediating a leaked secret in your repository](https://docs.github.com/en/code-security/tutorials/remediate-leaked-secrets/remediating-a-leaked-secret) | 2026-11-04 확인 | 노출 평가·폐기·재발급·서비스 갱신·Git 기록 정리 |
+| [Removing sensitive data from a repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) | 2026-11-04 확인 | credential 폐기 우선·history rewrite·clone·fork·cache 영향 |
+| [GitHub Actions Secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) | 2026-11-04 확인 | workflow 최소 권한·secret masking의 한계·구조화된 비밀값·생성된 민감 값 등록 |
 
 ## 코드 출처
 
