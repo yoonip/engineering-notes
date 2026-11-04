@@ -180,6 +180,9 @@
 | [Enhanced Visibility and Hardening Guidance for Communications Infrastructure](https://www.cisa.gov/sites/default/files/2025-01/joint-guidance-enhanced-visibility-hardening-guide-for-comms-infrastructure-508c_0.pdf) | CISA·NSA·FBI·ASD ACSC·CCCS·NCSC-NZ, 2024-12-03 | 기본 거부 ACL, 인바운드·아웃바운드 제어, DMZ·VLAN, 대역외 관리망, 설정 변경 감시 |
 | [The Journey to Zero Trust: Microsegmentation in Zero Trust, Part One](https://www.cisa.gov/sites/default/files/2025-07/ZT-Microsegmentation-Guidance-Part-One_508c.pdf) | CISA, v1.0, 2025-07-29 | 세분화 범위와 자산·의존성 조사, 정책 선택·시험·단계적 배포 §1·§2·§3 |
 | [Netfilter nftables manual](https://netfilter.org/projects/nftables/manpage.html) | 공식 프로젝트 매뉴얼; 2026-11-04 확인 | `inet` family, base chain의 hook·priority·policy, conntrack 상태와 accept/drop 평가 |
+| [Kubernetes Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/) | 공식 문서 v1.37; 2026-11-04 확인 | CNI 전제, Pod 선택·격리, 정책 합집합, 양방향 허용, DNS·NAT·hostNetwork·표준 API 한계 |
+| [Cilium: Overview of Network Policy](https://docs.cilium.io/en/stable/security/policy/) | Cilium 1.20.4 stable 공식 문서; 2026-11-04 확인 | Kubernetes 기본 정책과 Cilium 전용 CRD, L3·L4·L7 정책 경계 |
+| [Calico: Enable a default deny policy for Kubernetes pods](https://docs.tigera.io/calico/latest/network-policy/get-started/kubernetes-default-deny) | Calico 공식 문서; 2026-11-04 확인 | Kubernetes 기본 허용·선택 방향 격리, 시스템 Namespace 예외, 단계적 정책 시험 |
 
 ## 코드 출처
 

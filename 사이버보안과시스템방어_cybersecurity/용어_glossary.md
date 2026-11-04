@@ -182,5 +182,10 @@
 | 마이크로세그먼테이션 / Microsegmentation | 작은 응용·자산·업무 구역 단위로 연결 정책을 적용하는 방식입니다. 자산과 의존성을 먼저 파악하고 단계적으로 배포해야 운영 중단 위험을 줄일 수 있습니다. |
 | 규칙 가림 / Rule shadowing | 앞선 규칙이 더 넓은 조건으로 패킷을 먼저 처리해 뒤의 규칙이 도달 불가능하거나 효과를 내지 못하는 상황입니다. 규칙 순서와 장비별 평가 방식을 함께 봐야 합니다. |
 | 연결 추적 / Connection tracking | 방화벽이 통신의 상태와 양방향 패킷 관계를 기록해 후속 패킷을 분류하는 기능입니다. 기록된 상태가 모든 추가 체인이나 다른 보안 경계의 허용을 보장하지는 않습니다. |
+| Kubernetes NetworkPolicy | Pod에 적용할 ingress·egress 연결 규칙을 선언하는 Kubernetes API입니다. 실제 집행은 NetworkPolicy를 지원하는 네트워크 플러그인이 맡습니다. |
+| CNI / Container Network Interface | 컨테이너 런타임과 네트워크 플러그인 사이의 연결 규격과 생태계입니다. CNI를 사용한다는 사실만으로 설치된 플러그인이 Kubernetes NetworkPolicy를 집행한다고 단정할 수 없습니다. |
+| Pod 격리 / Pod isolation | NetworkPolicy가 특정 Pod를 ingress 또는 egress 방향에서 제한 대상으로 만드는 동작입니다. 두 방향은 독립적으로 격리되며 적용되지 않은 방향은 기본 허용일 수 있습니다. |
+| `podSelector` | NetworkPolicy가 적용될 Pod 집합이나 통신 상대 Pod를 label로 고르는 Kubernetes 선택자입니다. |
+| `namespaceSelector` | Pod가 속한 Namespace 집합을 label로 선택하는 NetworkPolicy 필드입니다. 같은 `from`·`to` 항목에 `podSelector`와 함께 쓰면 두 조건을 모두 만족하는 Pod를 가리킵니다. |
 
 용어는 각 장의 적용 조건과 함께 읽습니다. 예를 들어 인증된 메시지도 재전송일 수 있고, 유사한 검색 결과에도 읽기 권한이 없을 수 있습니다. 정의를 판단 근거로 바꾸는 예제는 각 장에 연결했습니다.
