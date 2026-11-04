@@ -1,6 +1,6 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-04 05:59 KST
+갱신: 2026-11-04 10:22 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
 
@@ -22,11 +22,27 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008829062&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-03 22:52 KST · 작성·제공: an.heejae@sbs.co.kr \(안희재 기자\)
 
+## 사망한 남편 약봉투에 '3천만 원'…무사히 되찾았다
+
+> 세 번째 핫토픽, '약봉지에 남긴 3천만 원'입니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008829268&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-04 08:55 KST · 작성·제공: jdono@sbs.co.kr \(조제행 기자\)
+
 ## '진보' 판사도 "사법 독립 침해"…다음 달 '법관대표회의'
 
 > 여권이 추진하는 조희대 대법원장 국정조사를 두고, 판사들이 공개 반발하고 나섰습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008829068&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-03 23:03 KST · 작성·제공: minq@sbs.co.kr \(권민규 기자\)
+
+## 제왕절개 후 쓰러져 숨진 산모…유족, 2심서도 패소
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008829623&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-04 10:13 KST · 작성·제공: jwlee@sbs.co.kr \(이재원\)
+
+## 대법, 檢수집자료 증거능력 배제에 "우려 알아…문제 살피겠다"
+
+> 검사가 수집한 자료의 증거능력을 없앤 개정 형사소송법 조항에 대해 대법원이 여러 우려를 알고 있다며 "향후 실...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104060800004>) · 2026-11-04 10:14 KST · 작성·제공: 이미령
 
 ## \[뉴스 동서남북\] 북한, 연이어 탄도·순항미사일 집속탄두 시험
 
@@ -34,17 +50,49 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8218309.html>) · 2026-11-04 04:17 KST · 작성·제공: voadigital@voanews.com \(최원기\)
 
+## 반효진, 세계사격선수권 공기소총 金…LA 올림픽 출전권 확보
+
+> 한국 여자 사격 간판 반효진\(대구공공시설관리공단\)이 2026 국제사격연맹\(ISSF\) 도하 세계선수권대회에서 우...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104051100007>) · 2026-11-04 09:55 KST · 작성·제공: 이대호
+
+## \[속보\] 김민석, 정부에 '가상자산 과세 유예' 공식 제안
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104057600001>) · 2026-11-04 10:06 KST · 작성·제공: 김남권
+
 ## \[사설\]대통령 여권번호까지 줄줄… 어처구니없는 보안 참사
 
 > 이재명 대통령 부부와 장관들, 청와대 비서실·경호처 직원, 기자단 등 해외 순방단의 개인정보가 인터넷 사이트에 약 5개월간 노출됐던 사실이 뒤늦게 확인됐다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Opinion/article/all/20261103/134961022/2>) · 2026-11-03 23:24 KST
 
+## 북한 해커, 바이낸스 5개월간 사이버 공격…가짜 면접으로 직원 속여 침투
+
+> 세계 최대 가상화폐 거래소 바이낸스에서 63억 달러가 넘는 가상자산이 탈취된 사건과 관련해, 북한 해커들이 약 5개월에 걸쳐 여러 단계의 사이버 공격을 벌인 것으로 파악됐습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8218525.html>) · 2026-11-04 07:58 KST · 작성·제공: voadigital@voanews.com \(조진우\)
+
+## 진실화해위, '6·25 처형자 명단' 첫 직권조사…희생자 2만6천여명
+
+> 진실·화해를위한과거사정리위원회\(진실화해위\)가 한국전쟁 전후 군인과 경찰에 의해 희생된 민간인 2만6천여명의 인...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104037700004>) · 2026-11-04 10:00 KST · 작성·제공: 윤민혁
+
+## \[속보\] 합참 "북한, 동해상으로 미상 발사체 발사"
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104053300504>) · 2026-11-04 09:53 KST · 작성·제공: 김효정
+
 ## '진땀승' 이강철 kt 감독 "로건 기용 실수…계투 운용 정리됐다"
 
 > 진땀을 흘리며 우승 확률 73.8％를 잡은 프로야구 kt wiz의 이강철 감독이 씁쓸한 웃음과 함께 경...
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261103187200007>) · 2026-11-03 22:48 KST · 작성·제공: 장현구
+
+## \[속보\]합참 “北, 동해상으로 미상 발사체 발사”
+
+> 북한이 4일 동해상으로 미상의 발사체를 발사했다고 합동참모본부가 이날 밝혔다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Politics/article/all/20261104/134962724/2>) · 2026-11-04 10:03 KST
 
 ## \[박상준 칼럼\]우주, 韓日 기업 협력의 새 장 될 수 있다
 
@@ -75,6 +123,12 @@
 > 여당이 조희대 대법원장에 대한 국정조사와 탄핵을 거론하는 상황에서 각급 법원 대표 판사들의 협의체인 전국법관대표회의가 다음 달 7일 열린다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Society/article/all/20261103/134957402/1>) · 2026-11-03 20:12 KST
+
+## 충남도의회, 교직원 소송비 지원 확대 추진…참고인 조사도 포함
+
+> 충남도의회가 교직원이 직무수행 과정에서 법적 분쟁에 휘말릴 경우 지원하는 소송비용의 범위와 한도를 확대하는 방...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104061700063>) · 2026-11-04 10:18 KST · 작성·제공: 김준범
 
 ## \[이런말저런글\] '주어'만 '주연'이라는 착각
 
