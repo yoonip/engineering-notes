@@ -664,6 +664,46 @@
       "edition": "2026-11-04 확인",
       "read_scope": "로그온 실패 이벤트 생성 위치·XML 필드·로그온 유형·모니터링 권고",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "joint-event-logging-2024",
+      "title": "Best practices for event logging and threat detection",
+      "url": "https://www.cyber.gov.au/publication/best-practices-for-event-logging-and-threat-detection",
+      "edition": "2024-08-22 게시판; ASD ACSC 주도 국제 공동 지침",
+      "read_scope": "로그 원천 우선순위·UTC와 시간 동기화·중앙 수집·보존·전송 보호·무결성",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "priority-siem-logs-2025",
+      "title": "Priority logs for SIEM ingestion: Practitioner guidance",
+      "url": "https://www.cyber.gov.au/publication/priority-logs-for-siem-ingestion-practitioner-guidance",
+      "edition": "2025-05-27 게시판",
+      "read_scope": "SIEM 수집 로그의 위험 기반 우선순위·단계적 도입·유입량·분석 가치·건강 점검",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "otel-logs-data-model",
+      "title": "OpenTelemetry Logs Data Model",
+      "url": "https://opentelemetry.io/docs/specs/otel/logs/data-model/",
+      "edition": "Stable specification; 2026-11-04 확인",
+      "read_scope": "원천 Timestamp·수집 ObservedTimestamp·로그 레코드 필드 정의",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "otel-collector-internal-telemetry",
+      "title": "OpenTelemetry Collector internal telemetry",
+      "url": "https://opentelemetry.io/docs/collector/internal-telemetry/",
+      "edition": "2026-11-04 확인; Collector 판본·계측 수준별 차이 있음",
+      "read_scope": "receiver·processor·exporter 계측, 전송 큐·용량·수신 거부 지표와 모니터링",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "otel-collector-resiliency",
+      "title": "OpenTelemetry Collector resiliency",
+      "url": "https://opentelemetry.io/docs/collector/resiliency/",
+      "edition": "2026-11-04 확인; Collector 구성 설명은 판본별 확인 필요",
+      "read_scope": "전송 큐·재시도·write-ahead log·메시지 큐와 데이터 유실 조건",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."

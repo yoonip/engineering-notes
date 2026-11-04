@@ -88,6 +88,11 @@
 | [SigmaHQ pySigma](https://github.com/SigmaHQ/pySigma) | 2026-11-04 확인 | 규칙 파싱·변환과 backend·pipeline plugin의 분리 구조 |
 | [SigmaHQ sigma-cli](https://github.com/SigmaHQ/sigma-cli) | 2026-11-04 확인 | 설치·plugin·변환 명령과 공식 사용 예시 |
 | [Microsoft Windows Event 4625](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625) | 2026-11-04 확인 | 실패 이벤트의 생성 위치·필드·로그온 유형·모니터링 권고 |
+| [Best practices for event logging and threat detection](https://www.cyber.gov.au/publication/best-practices-for-event-logging-and-threat-detection) | 2024-08-22 게시판 | 로그 원천 우선순위·시각 동기화·중앙 수집·보존·전송 보호·무결성 |
+| [Priority logs for SIEM ingestion: Practitioner guidance](https://www.cyber.gov.au/publication/priority-logs-for-siem-ingestion-practitioner-guidance) | 2025-05-27 게시판 | SIEM 수집 로그의 위험 기반 우선순위·단계적 도입·유입량·건강 점검 |
+| [OpenTelemetry Logs Data Model](https://opentelemetry.io/docs/specs/otel/logs/data-model/) | Stable specification, 2026-11-04 확인 | 원천 사건 시각과 수집 관측 시각을 분리하는 로그 필드 정의 |
+| [OpenTelemetry Collector internal telemetry](https://opentelemetry.io/docs/collector/internal-telemetry/) | 2026-11-04 확인 | Collector receiver·exporter·전송 큐의 상태 계측과 판본별 확인 항목 |
+| [OpenTelemetry Collector resiliency](https://opentelemetry.io/docs/collector/resiliency/) | 2026-11-04 확인 | 큐·재시도·지속 저장·메시지 큐와 유실 가능 조건 |
 
 ## 코드 출처
 
