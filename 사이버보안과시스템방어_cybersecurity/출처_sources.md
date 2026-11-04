@@ -132,6 +132,19 @@
 | [OpenSSL `s_client`](https://docs.openssl.org/master/man1/openssl-s_client/) | OpenSSL master command documentation; 2026-11-04 확인 | SNI·hostname·chain 검증 옵션과 `-showcerts` 출력 범위 |
 | [OpenSSL `x509`](https://docs.openssl.org/master/man1/openssl-x509/) | OpenSSL master command documentation; 2026-11-04 확인 | subject·issuer·기간·SAN 출력 옵션 |
 | [OpenSSL `verify`](https://docs.openssl.org/master/man1/openssl-verify/) | OpenSSL master command documentation; 2026-11-04 확인 | CA·intermediate·purpose·hostname을 통한 인증서 검증 명령 |
+| [RFC 1034: Domain Names — Concepts and Facilities](https://www.rfc-editor.org/rfc/rfc1034.html) | 1987-11; 2026-11-04 확인 | DNS 이름 공간과 해석 구조 §2·§4 |
+| [RFC 1035: Domain Names — Implementation and Specification](https://www.rfc-editor.org/rfc/rfc1035.html) | 1987-11; 2026-11-04 확인 | DNS 메시지와 기본 레코드 §3·§4 |
+| [RFC 4033: DNS Security Introduction and Requirements](https://www.rfc-editor.org/rfc/rfc4033.html) | 2005-03; RFC 6840 등으로 갱신; 2026-11-04 확인 | DNSSEC의 인증·무결성, 기밀성·가용성 범위 §3·§4 |
+| [RFC 4034: Resource Records for the DNS Security Extensions](https://www.rfc-editor.org/rfc/rfc4034.html) | 2005-03; 2026-11-04 확인 | DNSKEY·RRSIG·DS·NSEC 레코드 정의 §2·§3 |
+| [RFC 4035: Protocol Modifications for the DNS Security Extensions](https://www.rfc-editor.org/rfc/rfc4035.html) | 2005-03; RFC 6840 등으로 갱신; 2026-11-04 확인 | 검증 resolver 동작·secure/insecure/bogus/indeterminate 상태 §4·§5 |
+| [RFC 9364: DNS Security Extensions (DNSSEC)](https://www.rfc-editor.org/rfc/rfc9364.html) | 2023-02; BCP 237; 2026-11-04 확인 | DNSSEC 핵심 RFC의 개요와 현재 모범 관행 §1·§2 |
+| [RFC 7858: Specification for DNS over TLS](https://www.rfc-editor.org/rfc/rfc7858.html) | 2016-05; RFC 8310으로 사용 프로파일 보완; 2026-11-04 확인 | client-resolver 구간의 TLS 전송 기밀성·세션 §1·§3 |
+| [RFC 8310: Usage Profiles for DNS over TLS and DNS over DTLS](https://www.rfc-editor.org/rfc/rfc8310.html) | 2018-03; RFC 7858 갱신; 2026-11-04 확인 | DoT·DoDTLS 사용 프로파일과 resolver 인증 §5·§6 |
+| [RFC 8484: DNS Queries over HTTPS](https://www.rfc-editor.org/rfc/rfc8484.html) | 2018-10; 2026-11-04 확인 | HTTPS 기반 DNS 교환, 개인정보·운영 고려사항 §3·§8·§10 |
+| [RFC 8659: DNS Certification Authority Authorization](https://www.rfc-editor.org/rfc/rfc8659.html) | 2019-11; RFC 6844 대체; 2026-11-04 확인 | CAA 발급 제한과 CA 처리, 인증서 검증과의 구분 §1·§3·§4 |
+| [BIND 9 DNSSEC Guide](https://bind9.readthedocs.io/en/stable/dnssec-guide.html) | BIND 9.20 안정 문서; 2026-11-04 확인 | DNSSEC validation·parent DS·key rollover·SERVFAIL 진단·delv |
+| [Australian Cyber Security Centre, Domain Name System security for domain owners](https://www.cyber.gov.au/publication/domain-name-system-security-for-domain-owners) | 2021-10 공개 자료; 2026-11-04 확인 | registrar MFA·접근 로그·변경 알림·domain lock의 보호 범위 |
+| [ICANN SSAC SAC-044, A Registrant’s Guide to Protecting Domain Name Registration Accounts](https://www.icann.org/en/groups/ssac/documents/sac-044-en.pdf) | 2025 공개; 2026-11-04 확인 | 등록자 계정 보호 권고와 등록 운영 절차 |
 
 ## 코드 출처
 

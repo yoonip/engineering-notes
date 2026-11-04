@@ -1016,6 +1016,110 @@
       "edition": "OpenSSL master command documentation; 2026-11-04 확인",
       "read_scope": "CA·intermediate·purpose·hostname 검증 command option",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc1034-domain-names",
+      "title": "Domain Names — Concepts and Facilities",
+      "url": "https://www.rfc-editor.org/rfc/rfc1034.html",
+      "edition": "1987-11; 2026-11-04 확인",
+      "read_scope": "DNS 이름 공간과 해석 구조 §2·§4",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc1035-dns-implementation",
+      "title": "Domain Names — Implementation and Specification",
+      "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+      "edition": "1987-11; 2026-11-04 확인",
+      "read_scope": "DNS 메시지와 기본 레코드 §3·§4",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc4033-dnssec-requirements",
+      "title": "DNS Security Introduction and Requirements",
+      "url": "https://www.rfc-editor.org/rfc/rfc4033.html",
+      "edition": "2005-03; RFC 6840 등으로 갱신; 2026-11-04 확인",
+      "read_scope": "DNSSEC의 인증·무결성, 기밀성·가용성 범위 §3·§4",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc4034-dnssec-rr",
+      "title": "Resource Records for the DNS Security Extensions",
+      "url": "https://www.rfc-editor.org/rfc/rfc4034.html",
+      "edition": "2005-03; 2026-11-04 확인",
+      "read_scope": "DNSKEY·RRSIG·DS·NSEC 레코드 정의 §2·§3",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc4035-dnssec-protocol",
+      "title": "Protocol Modifications for the DNS Security Extensions",
+      "url": "https://www.rfc-editor.org/rfc/rfc4035.html",
+      "edition": "2005-03; RFC 6840 등으로 갱신; 2026-11-04 확인",
+      "read_scope": "검증 resolver 동작과 secure·insecure·bogus·indeterminate 상태 §4·§5",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc9364-dnssec-bcp",
+      "title": "DNS Security Extensions (DNSSEC)",
+      "url": "https://www.rfc-editor.org/rfc/rfc9364.html",
+      "edition": "2023-02; BCP 237; 2026-11-04 확인",
+      "read_scope": "DNSSEC 핵심 RFC 개요와 현재 표준 참조 §1·§2",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc7858-dot",
+      "title": "Specification for DNS over TLS",
+      "url": "https://www.rfc-editor.org/rfc/rfc7858.html",
+      "edition": "2016-05; RFC 8310으로 사용 프로파일 보완; 2026-11-04 확인",
+      "read_scope": "client-resolver 구간의 TLS 전송 기밀성·세션 §1·§3",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc8310-dot-profiles",
+      "title": "Usage Profiles for DNS over TLS and DNS over DTLS",
+      "url": "https://www.rfc-editor.org/rfc/rfc8310.html",
+      "edition": "2018-03; RFC 7858 갱신; 2026-11-04 확인",
+      "read_scope": "DoT·DoDTLS 사용 프로파일과 resolver 인증 §5·§6",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc8484-doh",
+      "title": "DNS Queries over HTTPS",
+      "url": "https://www.rfc-editor.org/rfc/rfc8484.html",
+      "edition": "2018-10; 2026-11-04 확인",
+      "read_scope": "HTTPS 기반 DNS 교환과 개인정보·운영 고려사항 §3·§8·§10",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc8659-caa",
+      "title": "DNS Certification Authority Authorization",
+      "url": "https://www.rfc-editor.org/rfc/rfc8659.html",
+      "edition": "2019-11; RFC 6844 대체; 2026-11-04 확인",
+      "read_scope": "CAA 발급 제한과 CA 처리, 인증서 검증과의 구분 §1·§3·§4",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "bind9-dnssec-guide",
+      "title": "BIND 9 DNSSEC Guide",
+      "url": "https://bind9.readthedocs.io/en/stable/dnssec-guide.html",
+      "edition": "BIND 9.20 stable documentation; 2026-11-04 확인",
+      "read_scope": "validation·parent DS·key rollover·SERVFAIL 진단·delv",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "acsc-domain-dns-security",
+      "title": "Domain Name System security for domain owners",
+      "url": "https://www.cyber.gov.au/publication/domain-name-system-security-for-domain-owners",
+      "edition": "2021-10 publication; 2026-11-04 확인",
+      "read_scope": "registrar MFA·접근 로그·변경 알림·domain lock의 보호 범위",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "icann-ssac-sac044",
+      "title": "A Registrant’s Guide to Protecting Domain Name Registration Accounts",
+      "url": "https://www.icann.org/en/groups/ssac/documents/sac-044-en.pdf",
+      "edition": "2025 publication; 2026-11-04 확인",
+      "read_scope": "등록자 계정 보호 권고와 도메인 등록 운영 절차",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."

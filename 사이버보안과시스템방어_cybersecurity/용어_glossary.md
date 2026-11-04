@@ -117,5 +117,22 @@
 | 권한 있는 workflow / Privileged workflow | 쓰기 권한 token, secret, 배포 권한 또는 내부 자원 접근을 가진 GitHub Actions workflow입니다. 실행 코드와 입력의 신뢰 수준을 권한에 맞춰 제한해야 합니다. |
 | 신뢰하지 않는 artifact / Untrusted artifact | 외부 PR 또는 낮은 권한 job이 만든 빌드 결과·시험 보고서입니다. workflow 실행 정보와 연결해도 파일 내용 자체가 안전하다는 증명은 아니므로 실행 가능한 코드로 취급하지 않습니다. |
 | pwn request | 외부 PR의 변경 코드를 권한 있는 `pull_request_target` 또는 `workflow_run` 문맥에서 실행해 secret·token을 노출하는 GitHub Actions 취약 구성입니다. |
+| DNS / Domain Name System | 사람이 읽는 도메인 이름을 IP 주소와 메일·서비스 관련 레코드에 연결하는 분산형 이름 시스템입니다. |
+| stub resolver | 응용프로그램·운영체제에서 재귀 DNS resolver로 질의를 전달하는 클라이언트 구성요소입니다. |
+| 재귀 resolver / Recursive resolver | 클라이언트 대신 DNS 계층을 따라 권한 있는 답을 찾고 캐시하는 서버입니다. DNSSEC 검증을 수행하는 resolver와 단순 전달 resolver를 구분해야 합니다. |
+| 권한 있는 DNS 서버 / Authoritative name server | 자신이 관리하는 zone의 DNS 레코드를 공식 응답으로 제공하는 서버입니다. |
+| DNSSEC | DNS 데이터의 출처와 무결성을 공개키 서명으로 확인하는 DNS 확장입니다. 질의 내용을 암호화하거나 DNS 가용성을 보장하지 않습니다. |
+| DNSKEY | DNSSEC 서명을 검증하거나 zone 데이터를 서명하는 공개키 정보를 담는 DNS 레코드입니다. |
+| DS / Delegation Signer | 부모 zone에 게시해 자식 zone의 DNSKEY를 연결하는 DNSSEC 레코드입니다. 부모 DS와 자식 키가 맞지 않으면 검증 resolver가 응답을 거부할 수 있습니다. |
+| RRSIG | DNS 레코드 집합에 대한 DNSSEC 전자서명과 유효 기간을 담는 레코드입니다. |
+| trust anchor | DNSSEC 검증이 신뢰 사슬을 시작할 때 미리 신뢰하도록 설정한 공개키·키 집합입니다. |
+| DNSSEC validation state | 서명 사슬 검증 결과를 secure·insecure·bogus·indeterminate로 구분한 상태입니다. |
+| DoT / DNS over TLS | DNS 질의·응답을 TLS 연결로 전달해 client와 resolver 사이 전송을 보호하는 방식입니다. |
+| DoH / DNS over HTTPS | DNS 질의·응답을 HTTPS 요청·응답으로 전달하는 표준 방식입니다. resolver를 신뢰하는 문제는 별도로 남습니다. |
+| CAA / Certification Authority Authorization | 도메인 소유자가 해당 이름의 공개 TLS 인증서를 발급할 수 있는 CA를 제한하도록 DNS에 게시하는 레코드입니다. client가 이미 발급된 인증서를 검증하는 용도는 아닙니다. |
+| DNSSEC key rollover | DNSKEY와 부모 DS를 계획적으로 교체하는 작업입니다. 부모·자식 zone의 게시 상태와 캐시 TTL을 맞춰야 검증 실패를 피할 수 있습니다. |
+| `dig +dnssec` | DNSSEC 레코드를 요청하는 DNS 질의 옵션입니다. 옵션을 추가한 것만으로 질의 도구가 신뢰 사슬을 검증했다고 볼 수 없습니다. |
+| `delv` | BIND 9에 포함된 DNSSEC 검증 질의 도구입니다. 사용할 resolver·trust anchor·환경에 따른 한계를 함께 고려합니다. |
+| DNS registrar lock | 도메인 이전이나 등록정보 변경을 제한하는 등록 사업자·registry의 정책 통제입니다. 계정 탈취나 DNS 공급자 침해를 모두 막지는 못합니다. |
 
 용어는 각 장의 적용 조건과 함께 읽습니다. 예를 들어 인증된 메시지도 재전송일 수 있고, 유사한 검색 결과에도 읽기 권한이 없을 수 있습니다. 정의를 판단 근거로 바꾸는 예제는 각 장에 연결했습니다.

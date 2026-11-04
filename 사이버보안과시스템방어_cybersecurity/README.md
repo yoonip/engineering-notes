@@ -42,6 +42,7 @@
 | 인증 연동 | [OAuth 2.0과 OpenID Connect 로그인 보안](30-OAuth와OpenIDConnect인증_oauth-oidc-security.md) | authorization code·PKCE·token 검증과 browser·mobile client 구조를 연결합니다. |
 | 패스키 인증 | [패스키와 WebAuthn 인증](31-패스키와WebAuthn인증_passkeys-webauthn.md) | credential 등록·challenge 검증·동기화와 계정 복구를 설명합니다. |
 | TLS 인증서 | [TLS 인증서와 PKI 운영](32-TLS인증서와PKI운영_tls-certificates-pki-operations.md) | 인증 경로·서비스 이름 확인·ACME 갱신·폐기와 진단 명령을 연결합니다. |
+| DNS·도메인 보안 | [DNSSEC와 암호화 DNS, 도메인 운영](33-DNS보안과도메인운영_dnssec-encrypted-dns-domain-security.md) | DNSSEC·DoT·DoH·CAA의 보호 범위와 도메인 계정·키 교체 운영을 설명합니다. |
 
 ## 글과 근거의 성격
 
@@ -64,4 +65,4 @@
 
 ## English
 
-This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, ransomware response, email authentication, endpoint detection, detection engineering, log-pipeline health, secret lifecycle management, workload identity, privileged GitHub Actions workflows, OAuth/OpenID Connect, passkeys with WebAuthn, and TLS certificate operations. It distinguishes client-side mobile controls from backend verification, sender-domain authentication from business-request legitimacy, and endpoint alert signals from incident evidence. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.
+This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, ransomware response, email authentication, endpoint detection, detection engineering, log-pipeline health, secret lifecycle management, workload identity, privileged GitHub Actions workflows, OAuth/OpenID Connect, passkeys with WebAuthn, TLS certificate operations, DNS integrity, encrypted DNS transport, and domain-registration security. It distinguishes client-side mobile controls from backend verification, sender-domain authentication from business-request legitimacy, and endpoint alert signals from incident evidence. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.
