@@ -1232,6 +1232,86 @@
       "edition": "Python 3 standard library documentation; 2026-11-04 확인",
       "read_scope": "IPv4·IPv6 network parsing와 subnet_of method",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc4251-ssh-architecture",
+      "title": "The Secure Shell (SSH) Protocol Architecture",
+      "url": "https://www.rfc-editor.org/rfc/rfc4251.html",
+      "edition": "2006-01; Standards Track; 2026-11-04 확인",
+      "read_scope": "SSH 전송·사용자 인증·연결 프로토콜의 역할 구분 §4",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc4252-ssh-authentication",
+      "title": "The Secure Shell (SSH) Authentication Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc4252.html",
+      "edition": "2006-01; Standards Track; 2026-11-04 확인",
+      "read_scope": "사용자 인증 framework와 공개키 서명 절차 §4·§5·§7",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc4253-ssh-transport",
+      "title": "The Secure Shell (SSH) Transport Layer Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc4253.html",
+      "edition": "2006-01; Standards Track; 2026-11-04 확인",
+      "read_scope": "키 교환·서버 호스트 인증·기밀성·무결성 §4·§8",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openbsd-ssh-manual",
+      "title": "ssh(1) — OpenSSH remote login client",
+      "url": "https://man.openbsd.org/ssh",
+      "edition": "OpenBSD-current manual; 2026-11-04 확인",
+      "read_scope": "호스트 키 확인·에이전트 전달·jump host 사용",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openbsd-ssh-config-manual",
+      "title": "ssh_config(5) — OpenSSH client configuration file",
+      "url": "https://man.openbsd.org/ssh_config",
+      "edition": "OpenBSD-current manual; 2026-11-04 확인",
+      "read_scope": "StrictHostKeyChecking·ForwardAgent·ProxyJump·identity 설정",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openbsd-sshd-config-manual",
+      "title": "sshd_config(5) — OpenSSH daemon configuration file",
+      "url": "https://man.openbsd.org/sshd_config",
+      "edition": "OpenBSD-current manual; 2026-11-04 확인",
+      "read_scope": "사용자 인증·그룹·CA·principal·키 폐기 설정",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openbsd-sshd-manual",
+      "title": "sshd(8) — OpenSSH daemon",
+      "url": "https://man.openbsd.org/sshd",
+      "edition": "OpenBSD-current manual; 2026-11-04 확인",
+      "read_scope": "-t·-T·-C 설정 검증과 조건별 출력",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openbsd-ssh-keygen-manual",
+      "title": "ssh-keygen(1) — OpenSSH authentication key utility",
+      "url": "https://man.openbsd.org/ssh-keygen",
+      "edition": "OpenBSD-current manual; 2026-11-04 확인",
+      "read_scope": "키 지문·OpenSSH 인증서·KRL·known_hosts 작업",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openbsd-ssh-agent-manual",
+      "title": "ssh-agent(1) — OpenSSH authentication agent",
+      "url": "https://man.openbsd.org/ssh-agent",
+      "edition": "OpenBSD-current manual; 2026-11-04 확인",
+      "read_scope": "인증 에이전트의 역할과 key lifetime 설정",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openbsd-ssh-add-manual",
+      "title": "ssh-add(1) — adds private key identities to the OpenSSH authentication agent",
+      "url": "https://man.openbsd.org/ssh-add",
+      "edition": "OpenBSD-current manual; 2026-11-04 확인",
+      "read_scope": "에이전트 키 적재·수명 제한·지문 조회",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."

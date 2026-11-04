@@ -159,6 +159,16 @@
 | [RFC 5398: Autonomous System Number Reservation for Documentation Use](https://www.rfc-editor.org/rfc/rfc5398.html) | 2008-12; Informational; 2026-11-04 확인 | 문서 예시용 AS 번호 범위 §2·§4 |
 | [RFC 5737: IPv4 Address Blocks Reserved for Documentation](https://www.rfc-editor.org/rfc/rfc5737.html) | 2010-01; Informational; 2026-11-04 확인 | 문서 예시용 IPv4 주소 prefix §3·§4 |
 | [Python `ipaddress` library](https://docs.python.org/3/library/ipaddress.html) | Python 3 표준 라이브러리 문서; 2026-11-04 확인 | IPv4·IPv6 network 해석과 subnet_of API |
+| [RFC 4251: The Secure Shell (SSH) Protocol Architecture](https://www.rfc-editor.org/rfc/rfc4251.html) | 2006-01; Standards Track; 2026-11-04 확인 | SSH 전송·사용자 인증·연결 프로토콜의 구분 §4 |
+| [RFC 4252: The Secure Shell (SSH) Authentication Protocol](https://www.rfc-editor.org/rfc/rfc4252.html) | 2006-01; Standards Track; 2026-11-04 확인 | 사용자 인증 framework와 공개키 서명 절차 §4·§5·§7 |
+| [RFC 4253: The Secure Shell (SSH) Transport Layer Protocol](https://www.rfc-editor.org/rfc/rfc4253.html) | 2006-01; Standards Track; 2026-11-04 확인 | 키 교환·서버 호스트 인증·기밀성·무결성 §4·§8 |
+| [OpenBSD `ssh(1)`](https://man.openbsd.org/ssh) | OpenBSD-current 매뉴얼; 2026-11-04 확인 | 서버 호스트 키 확인·에이전트 전달·jump host 사용 절 |
+| [OpenBSD `ssh_config(5)`](https://man.openbsd.org/ssh_config) | OpenBSD-current 매뉴얼; 2026-11-04 확인 | `StrictHostKeyChecking`·`ForwardAgent`·`ProxyJump`·identity 옵션 |
+| [OpenBSD `sshd_config(5)`](https://man.openbsd.org/sshd_config) | OpenBSD-current 매뉴얼; 2026-11-04 확인 | 사용자 인증·그룹·CA·principal·키 폐기 설정 |
+| [OpenBSD `sshd(8)`](https://man.openbsd.org/sshd) | OpenBSD-current 매뉴얼; 2026-11-04 확인 | `-t`·`-T`·`-C` 설정 검증과 조건별 출력 |
+| [OpenBSD `ssh-keygen(1)`](https://man.openbsd.org/ssh-keygen) | OpenBSD-current 매뉴얼; 2026-11-04 확인 | 키 지문·OpenSSH 인증서·KRL·known_hosts 작업 |
+| [OpenBSD `ssh-agent(1)`](https://man.openbsd.org/ssh-agent) | OpenBSD-current 매뉴얼; 2026-11-04 확인 | 인증 에이전트의 역할과 key lifetime 설정 |
+| [OpenBSD `ssh-add(1)`](https://man.openbsd.org/ssh-add) | OpenBSD-current 매뉴얼; 2026-11-04 확인 | 에이전트 키 적재·수명 제한·지문 조회 |
 
 ## 코드 출처
 
