@@ -162,5 +162,16 @@
 | principal | OpenSSH 인증서가 나타내는 허용 사용자 이름 또는 호스트 이름입니다. 서버는 신뢰한 CA와 principal 정책을 함께 확인합니다. |
 | KRL / Key Revocation List | OpenSSH 키·인증서를 폐기 목록으로 표현하는 자료입니다. 서버에 배포되고 `RevokedKeys`로 적용되는 상태를 확인해야 합니다. |
 | `StrictHostKeyChecking` | 저장된 서버 호스트 키의 변경을 검사하고 알 수 없는 키의 자동 수용을 제어하는 SSH 클라이언트 옵션입니다. |
+| VPN / Virtual Private Network | 공용망 위에 논리적인 통신망을 만들고 종단점 사이 트래픽을 보호하는 기술입니다. 연결만으로 사용자·단말의 내부 서비스 권한이 생기지는 않습니다. |
+| IPsec | IP 계층의 패킷을 보호하기 위한 표준 체계입니다. 정책·SA·ESP와 키 관리 방식의 실제 구성을 함께 확인해야 합니다. |
+| IKEv2 / Internet Key Exchange Version 2 | IPsec peer를 인증하고 암호 설정·키·Security Association을 협상하고 관리하는 프로토콜입니다. |
+| SA / Security Association | IPsec에서 보호 방향·프로토콜·키·암호 조건을 관리하는 보안 연결 상태입니다. 제어 교환인 IKE SA와 데이터 패킷을 보호하는 Child SA를 구분합니다. |
+| SPD / Security Policy Database | IPsec 경계에서 패킷을 보호·통과·폐기할지 트래픽 조건에 따라 정하는 정책 데이터베이스입니다. |
+| SAD / Security Association Database | 현재 성립한 IPsec SA의 키·알고리즘·상태 등 처리 정보를 관리하는 데이터베이스입니다. |
+| 분할 터널 / Split tunnel | 지정된 내부 네트워크만 VPN으로 보내고 나머지 트래픽은 기존 인터넷 경로로 전달하는 구성입니다. |
+| 전체 터널 / Full tunnel | 단말의 기본 인터넷 경로도 VPN으로 보내 조직의 출구 통제를 거치도록 구성한 방식입니다. IPv4·IPv6·DNS를 모두 점검해야 합니다. |
+| WireGuard `AllowedIPs` | peer별 IP 범위를 지정하는 설정입니다. 송신 때는 대상 peer 선택에, 수신 때는 해당 peer가 보낼 수 있는 출발지 주소 확인에 사용됩니다. |
+| cryptokey routing | WireGuard가 peer 공개키와 허용 IP를 연결해 송신 경로와 수신 출발지 검사를 함께 수행하는 방식입니다. |
+| VPN MTU | 터널 캡슐화 후 경로에서 전달할 수 있는 최대 패킷 크기입니다. 지나치게 큰 값은 특정 응답 정체·단편화·재전송 문제를 일으킬 수 있습니다. |
 
 용어는 각 장의 적용 조건과 함께 읽습니다. 예를 들어 인증된 메시지도 재전송일 수 있고, 유사한 검색 결과에도 읽기 권한이 없을 수 있습니다. 정의를 판단 근거로 바꾸는 예제는 각 장에 연결했습니다.

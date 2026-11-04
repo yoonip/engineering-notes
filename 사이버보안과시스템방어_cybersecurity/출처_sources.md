@@ -169,6 +169,13 @@
 | [OpenBSD `ssh-keygen(1)`](https://man.openbsd.org/ssh-keygen) | OpenBSD-current 매뉴얼; 2026-11-04 확인 | 키 지문·OpenSSH 인증서·KRL·known_hosts 작업 |
 | [OpenBSD `ssh-agent(1)`](https://man.openbsd.org/ssh-agent) | OpenBSD-current 매뉴얼; 2026-11-04 확인 | 인증 에이전트의 역할과 key lifetime 설정 |
 | [OpenBSD `ssh-add(1)`](https://man.openbsd.org/ssh-add) | OpenBSD-current 매뉴얼; 2026-11-04 확인 | 에이전트 키 적재·수명 제한·지문 조회 |
+| [NIST SP 800-77 Rev. 1: Guide to IPsec VPNs](https://csrc.nist.gov/pubs/sp/800/77/r1/final) | 2020-06 최종판; 2026-11-04 확인 | IPsec·IKE VPN 구성·운영·대안에 대한 공식 발행 정보와 범위 |
+| [RFC 4301: Security Architecture for the Internet Protocol](https://www.rfc-editor.org/rfc/rfc4301.html) | 2005-12; Standards Track; 2026-11-04 확인 | SPD·SAD·SA, 트래픽 정책·터널 모드·IP 처리·Path MTU §3·§4·§5·§8 |
+| [RFC 7296: Internet Key Exchange Protocol Version 2 (IKEv2)](https://www.rfc-editor.org/rfc/rfc7296.html) | 2014-10; STD 79; 2026-11-04 확인 | IKE_SA_INIT·IKE_AUTH, SA 협상·인증·키 관리 §1.2·§1.3·§2.14 |
+| [WireGuard: Conceptual Overview](https://www.wireguard.com/) | 공식 프로젝트 문서; 2026-11-04 확인 | peer 키·AllowedIPs·cryptokey routing과 키 배포 범위 |
+| [WireGuard Protocol & Cryptography](https://www.wireguard.com/protocol/) | 공식 프로젝트 프로토콜 설명; 2026-11-04 확인 | 암호 구성요소·handshake·세션 키 갱신 |
+| [WireGuard Quick Start](https://www.wireguard.com/quickstart/) | 공식 프로젝트 시작 안내; 2026-11-04 확인 | 인터페이스·키 생성·NAT 뒤 PersistentKeepalive 사용 조건 |
+| [WireGuard Installation](https://www.wireguard.com/install/) | 공식 프로젝트 설치 안내; 2026-11-04 확인 | Linux 배포판별 도구·모듈 설치 경로 |
 
 ## 코드 출처
 

@@ -45,6 +45,7 @@
 | DNS·도메인 보안 | [DNSSEC와 암호화 DNS, 도메인 운영](33-DNS보안과도메인운영_dnssec-encrypted-dns-domain-security.md) | DNSSEC·DoT·DoH·CAA의 보호 범위와 도메인 계정·키 교체 운영을 설명합니다. |
 | BGP·경로 보안 | [BGP 경로 보안과 RPKI 원점 검증](34-BGP경로보안과RPKI원점검증_bgp-rpki-origin-validation.md) | ROA·VRP·Valid/Invalid/NotFound 판정과 route leak 방어를 구분합니다. |
 | 원격 접속 보안 | [SSH 접속 신원과 키 운영](35-SSH접속신원과키운영_ssh-identity-key-operations.md) | 호스트 키·사용자 키·에이전트 전달·ProxyJump·OpenSSH 인증서와 폐기 절차를 설명합니다. |
+| VPN 운영 | [원격 접속 VPN 설계와 운영](36-원격접속VPN설계와운영_remote-access-vpn.md) | IPsec/IKEv2·WireGuard, 분할 터널, DNS·IPv6·MTU와 권한 경계를 설명합니다. |
 
 ## 글과 근거의 성격
 
@@ -67,4 +68,4 @@
 
 ## English
 
-This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, ransomware response, email authentication, endpoint detection, detection engineering, log-pipeline health, secret lifecycle management, workload identity, privileged GitHub Actions workflows, OAuth/OpenID Connect, passkeys with WebAuthn, TLS certificate operations, DNS integrity, encrypted DNS transport, domain-registration security, BGP route-origin validation, and SSH identity operations. It distinguishes client-side mobile controls from backend verification, sender-domain authentication from business-request legitimacy, origin validation from AS-path validation, endpoint alert signals from incident evidence, and SSH server host keys from user authentication keys. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.
+This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, ransomware response, email authentication, endpoint detection, detection engineering, log-pipeline health, secret lifecycle management, workload identity, privileged GitHub Actions workflows, OAuth/OpenID Connect, passkeys with WebAuthn, TLS certificate operations, DNS integrity, encrypted DNS transport, domain-registration security, BGP route-origin validation, SSH identity operations, and remote-access VPN design. It distinguishes client-side mobile controls from backend verification, sender-domain authentication from business-request legitimacy, origin validation from AS-path validation, endpoint alert signals from incident evidence, SSH server host keys from user authentication keys, and encrypted network paths from application authorization. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.

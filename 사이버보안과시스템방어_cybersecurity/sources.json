@@ -1312,6 +1312,62 @@
       "edition": "OpenBSD-current manual; 2026-11-04 확인",
       "read_scope": "에이전트 키 적재·수명 제한·지문 조회",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "nist-sp800-77r1-ipsec-vpn",
+      "title": "Guide to IPsec VPNs",
+      "url": "https://csrc.nist.gov/pubs/sp/800/77/r1/final",
+      "edition": "NIST SP 800-77 Rev. 1, final, 2020-06-30; 2026-11-04 확인",
+      "read_scope": "공식 발행 정보와 초록의 IPsec·IKE 기반 VPN 구현 가이드 범위",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc4301-ipsec-architecture",
+      "title": "Security Architecture for the Internet Protocol",
+      "url": "https://www.rfc-editor.org/rfc/rfc4301.html",
+      "edition": "2005-12; Standards Track; 2026-11-04 확인",
+      "read_scope": "SPD·SAD·SA, 트래픽 정책·터널 모드·IP 처리·Path MTU §3·§4·§5·§8",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc7296-ikev2",
+      "title": "Internet Key Exchange Protocol Version 2 (IKEv2)",
+      "url": "https://www.rfc-editor.org/rfc/rfc7296.html",
+      "edition": "2014-10; STD 79; 2026-11-04 확인",
+      "read_scope": "IKE_SA_INIT·IKE_AUTH, SA 협상·인증·키 관리 §1.2·§1.3·§2.14",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "wireguard-conceptual-overview",
+      "title": "WireGuard: Conceptual Overview",
+      "url": "https://www.wireguard.com/",
+      "edition": "공식 프로젝트 문서; 2026-11-04 확인",
+      "read_scope": "peer 키·AllowedIPs·cryptokey routing과 키 배포 범위",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "wireguard-protocol-cryptography",
+      "title": "Protocol & Cryptography",
+      "url": "https://www.wireguard.com/protocol/",
+      "edition": "공식 프로젝트 프로토콜 설명; 2026-11-04 확인",
+      "read_scope": "암호 구성요소·handshake·세션 키 갱신",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "wireguard-quickstart",
+      "title": "Quick Start",
+      "url": "https://www.wireguard.com/quickstart/",
+      "edition": "공식 프로젝트 시작 안내; 2026-11-04 확인",
+      "read_scope": "인터페이스·키 생성·NAT 뒤 PersistentKeepalive 사용 조건",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "wireguard-installation",
+      "title": "Installation",
+      "url": "https://www.wireguard.com/install/",
+      "edition": "공식 프로젝트 설치 안내; 2026-11-04 확인",
+      "read_scope": "Linux 배포판별 도구·모듈 설치 경로",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."
