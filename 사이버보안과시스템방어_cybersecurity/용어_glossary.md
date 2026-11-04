@@ -12,6 +12,16 @@
 | 신뢰 경계 / Trust boundary | 입력이나 주체가 갖는 신뢰·권한이 달라지는 지점입니다. |
 | 인증 / Authentication | 주체가 주장하는 신원을 확인하는 과정입니다. |
 | 인가 / Authorization | 그 주체가 이 자원에 이 작업을 할 수 있는지 판정합니다. |
+| OAuth 2.0 | 사용자가 허용한 scope에 따라 client가 보호된 API에 접근하도록 권한을 위임하는 protocol입니다. 그 자체로 로그인 사용자 신원 claim을 표준화하지는 않습니다. |
+| OpenID Connect / OIDC | OAuth 2.0 위에 사용자 인증과 신원 claim 전달을 추가하는 protocol입니다. 인증 결과를 ID Token으로 전달합니다. |
+| ID Token | OIDC client가 인증 결과와 subject claim을 확인하는 token입니다. issuer·audience·서명·만료와 요청에 사용한 nonce를 검증합니다. |
+| Access token | resource server에 API 접근 권한을 제시하는 자격 증명입니다. 발급자·대상·scope를 확인하며 사용자 로그인 정보로 대신 쓰지 않습니다. |
+| Refresh token | authorization server에 새 access token을 요청하는 자격 증명입니다. 공개 client에서는 회전 또는 sender constraint, 만료와 폐기를 관리합니다. |
+| PKCE | `code_verifier`의 변환값을 authorization 요청에 묶어 authorization code를 다른 client가 교환하지 못하게 하는 OAuth 확장입니다. |
+| `state` | 시작한 OAuth 요청과 callback을 연결하는 transaction 값입니다. 예측하기 어렵고 transaction·browser session에 안전하게 묶어 확인합니다. |
+| `nonce` | OIDC 인증 요청과 ID Token을 연결하는 값입니다. 요청에서 보낸 값과 ID Token claim을 대조해 응답 재사용을 줄입니다. |
+| BFF / Backend for Frontend | browser 앱을 위한 server-side component가 OAuth token을 보관하고 API 요청을 대신 전달하는 구조입니다. browser는 cookie session으로 BFF에 요청합니다. |
+| OAuth mix-up attack | client가 여러 authorization server를 사용할 때 응답의 발급자를 잘못 연결해 code나 token을 엉뚱한 server에 보내는 공격입니다. |
 | ACL | 자원에 접근할 수 있는 주체·작업을 정한 접근 제어 목록입니다. |
 | IAM | 사용자·서비스의 신원과 자원 접근 정책을 관리하는 체계입니다. |
 | tenant | 서비스에서 분리해 관리하는 고객·조직의 단위입니다. |

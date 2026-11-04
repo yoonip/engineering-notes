@@ -824,6 +824,78 @@
       "edition": "Python 3 standard library documentation; 2026-11-04 확인",
       "read_scope": "Path 객체의 open과 바이너리 스트림 읽기",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "oauth-rfc9700",
+      "title": "Best Current Practice for OAuth 2.0 Security",
+      "url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+      "edition": "2025-01; 2026-11-04 확인",
+      "read_scope": "redirect 검증·PKCE·CSRF·grant 선택·token 권한·refresh token 보안",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "oauth-rfc6749",
+      "title": "The OAuth 2.0 Authorization Framework",
+      "url": "https://www.rfc-editor.org/rfc/rfc6749.html",
+      "edition": "2012-10; 2026-11-04 확인",
+      "read_scope": "client 유형·authorization code·token endpoint·protocol 기본 구조",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "oauth-rfc7636-pkce",
+      "title": "Proof Key for Code Exchange by OAuth Public Clients",
+      "url": "https://www.rfc-editor.org/rfc/rfc7636.html",
+      "edition": "2015-09; 2026-11-04 확인",
+      "read_scope": "code_verifier·code_challenge·S256 challenge binding과 검증",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "openid-connect-core-1-0",
+      "title": "OpenID Connect Core 1.0 incorporating errata set 2",
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "edition": "Errata set 2; 2026-11-04 확인",
+      "read_scope": "ID Token 구조·iss·sub·aud·exp·nonce와 검증 규칙",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "oauth-rfc10017-browser-apps",
+      "title": "OAuth 2.0 for Browser-Based Applications",
+      "url": "https://www.rfc-editor.org/rfc/rfc10017.html",
+      "edition": "2026-08; IETF Best Current Practice; 2026-11-04 확인",
+      "read_scope": "browser-only public client·token-mediating backend·BFF와 token exposure 위험",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "oauth-rfc8252-native-apps",
+      "title": "OAuth 2.0 for Native Apps",
+      "url": "https://www.rfc-editor.org/rfc/rfc8252.html",
+      "edition": "2017-10; 2026-11-04 확인",
+      "read_scope": "external user-agent·native redirect URI·public native client PKCE",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "oauth-rfc7009-revocation",
+      "title": "OAuth 2.0 Token Revocation",
+      "url": "https://www.rfc-editor.org/rfc/rfc7009.html",
+      "edition": "2013-08; 2026-11-04 확인",
+      "read_scope": "access·refresh token revoke endpoint와 관련 token invalidation 조건",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "oauth-rfc9207-issuer-identification",
+      "title": "OAuth 2.0 Authorization Server Issuer Identification",
+      "url": "https://www.rfc-editor.org/rfc/rfc9207.html",
+      "edition": "2022-03; 2026-11-04 확인",
+      "read_scope": "authorization response iss 검증·multi-provider mix-up 방어",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "owasp-oauth2-cheat-sheet",
+      "title": "OAuth2 Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet.html",
+      "edition": "2026-11-04 확인",
+      "read_scope": "OAuth client의 state·PKCE·issuer validation 점검 항목",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."

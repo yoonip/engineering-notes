@@ -108,6 +108,15 @@
 | [Preventing pwn requests](https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/) | 2021년 게시, 2026-11-04 확인 | PR build·test·설치 hook에서 권한 있는 workflow로 이어지는 공격 경로 |
 | [Python `json` library](https://docs.python.org/3/library/json.html) | Python 3 표준 라이브러리 문서, 2026-11-04 확인 | JSON 파싱과 `object_pairs_hook` 인터페이스 |
 | [Python `pathlib`](https://docs.python.org/3/library/pathlib.html) | Python 3 표준 라이브러리 문서, 2026-11-04 확인 | 경로 객체와 바이너리 파일 읽기 |
+| [RFC 9700: Best Current Practice for OAuth 2.0 Security](https://www.rfc-editor.org/rfc/rfc9700.html) | 2025-01; 2026-11-04 확인 | redirect·PKCE·CSRF·implicit/password grant·token 권한·refresh token 보안 |
+| [RFC 6749: The OAuth 2.0 Authorization Framework](https://www.rfc-editor.org/rfc/rfc6749.html) | 2012-10; 2026-11-04 확인 | OAuth client·authorization code·token endpoint·기본 framework |
+| [RFC 7636: Proof Key for Code Exchange by OAuth Public Clients](https://www.rfc-editor.org/rfc/rfc7636.html) | 2015-09; 2026-11-04 확인 | `code_verifier`·`code_challenge`·S256 검증 |
+| [OpenID Connect Core 1.0 incorporating errata set 2](https://openid.net/specs/openid-connect-core-1_0.html) | Errata set 2; 2026-11-04 확인 | ID Token claim과 issuer·audience·nonce 검증 |
+| [RFC 10017: OAuth 2.0 for Browser-Based Applications](https://www.rfc-editor.org/rfc/rfc10017.html) | 2026-08; IETF Best Current Practice; 2026-11-04 확인 | browser-only client·token-mediating backend·BFF의 보안 tradeoff |
+| [RFC 8252: OAuth 2.0 for Native Apps](https://www.rfc-editor.org/rfc/rfc8252.html) | 2017-10; 2026-11-04 확인 | 외부 user-agent·native app redirect·public client PKCE |
+| [RFC 7009: OAuth 2.0 Token Revocation](https://www.rfc-editor.org/rfc/rfc7009.html) | 2013-08; 2026-11-04 확인 | access·refresh token 폐기 endpoint와 발급자별 연관 token 처리 |
+| [RFC 9207: OAuth 2.0 Authorization Server Issuer Identification](https://www.rfc-editor.org/rfc/rfc9207.html) | 2022-03; 2026-11-04 확인 | authorization response의 `iss`와 등록 issuer 비교·mix-up 방어 |
+| [OWASP OAuth 2.0 Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet.html) | 2026-11-04 확인 | state·PKCE·issuer 확인 등 OAuth client 구현 점검 |
 
 ## 코드 출처
 
