@@ -1,8 +1,26 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-05 02:16 KST
+갱신: 2026-11-05 07:40 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 美선거 후 이란전쟁 종식 기대에 다우 3%↑…AI주 희비\(종합\)
+
+> 미국 중간선거에서 민주당이 의회 상·하원을 모두 장악하는 '블루웨이브'\(민주당 압승\)가 현실화하자 4...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105009852072>) · 2026-11-05 07:31 KST · 작성·제공: 임수정
+
+## 스페이스X, 스타링크 이동통신사업 본격화…퀄컴과 5G망 구축
+
+> 일론 머스크의 우주기업 스페이스X가 모바일 반도체 기업 퀄컴과 손잡고 이동통신 사업에 본격적으로 뛰어...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105006900091>) · 2026-11-05 04:55 KST · 작성·제공: 권영전
+
+## 미 데이터센터·반도체주 ↓…하이퍼스케일러 ↑
+
+> 미국 중간선거에서 민주당이 상·하원을 모두 장악하면서 인공지능\(AI\) 데이터센터 규제 강화 우려가 커져 4일\(...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105013600009>) · 2026-11-05 07:11 KST · 작성·제공: 정주호
 
 ## '에볼라 신음' 민주콩고에 탄저병도…하마 30마리 폐사
 
@@ -22,10 +40,42 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105002400072>) · 2026-11-05 02:09 KST · 작성·제공: 김연숙
 
+## 미 민주 상·하원 압승…트럼프 "탄핵하면 파멸"
+
+> 미국 중간선거에서 민주당이 일찌감치 상·하원을 모두 탈환하자 트럼프 대통령은 민주당이 자신을 탄핵하려고 하면 파멸할 거라고 말했습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008831301&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-05 07:33 KST · 작성·제공: lucaside@sbs.co.kr \(이한석\)
+
+## 멜라니아 트럼프, 러·우크라 대표단 백악관 초청
+
+> 미국의 대통령 영부인 멜라니아 트럼프 여사가 우크라이나 남부 올레슈키의 국지 휴전과 관련해 백악관 행사를 주최할 예정입니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8218944.html>) · 2026-11-05 03:43 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 美제프리스 “이란 전쟁 끝내고 트럼프 관세 멈출 것”…탄핵엔 선긋기
+
+> 차기 미국 하원의장에 오를 하킴 제프리스 민주당 원내대표가 “하원이 트럼프 행정부의 ‘100% 자회사’처럼 움직이던 시절은 끝났다”며 도널드 트럼프 대통령에 대한 견제를 예고했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261105/134969054/1>) · 2026-11-05 07:19 KST
+
+## 전문가들 “미 중간선거로 북한 협상력 커져”
+
+> 11월 3일 미국에서 치러진 중간선거에서 민주당이 상∙하 양원의 다수당을 차지하며 압승을 거둔 가운데 전문가들은 북중러 협력이 더 강화하면서 김정은 북한 국무위원장의 협상력은 더 커질 것으로…
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/04/us-mid-term-election-kim-trump-negotiation/>) · 2026-11-05 06:21 KST · 작성·제공: 워싱턴 - 노정민 nohj@rfa.org, 자민 앤더슨 - andersonj@rfa.org
+
+## 밴스 美부통령 “이란 전쟁이 중간선거 패배 원인”…트럼프와 거리두기
+
+> JD 밴스 미국 부통령이 공화당의 중간선거 완패 원인으로 ‘이란과의 전쟁’을 직접 지목하며 도널드 트럼프 대통령의 강경책과 거리두기에 나섰다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261105/134969051/1>) · 2026-11-05 07:19 KST
+
 ## 다른 매체의 원문
 
 - [Nigeria: Cheap Version of Breakthrough HIV Prevention Shot Approved](<https://allafrica.com/stories/202611040645.html>) · AllAfrica · allAfrica.com
+- [Iranians celebrate setback for Trump in US election, and other Mideast news](<https://abcnews.com/International/wireStory/iranians-celebrate-setback-trump-us-election-mideast-news-137854076>) · ABC News 미국
 - [Africa: Dakar 2026 Youth Olympic Games - Kenya on Top, Madagascar on Podium, Senegal Looks to Future](<https://allafrica.com/stories/202611040426.html>) · AllAfrica · allAfrica.com
+- [How the Democrats’ surge impacts the US-Israel relationship](<https://www.csmonitor.com/World/Middle-East/2026/1104/israel-us-relationship-democrats-midterms?icid=rss>) · The Christian Science Monitor
 - [EU offers Serbia fresh hope for membership talks, says more countries could join soon](<https://abcnews.com/International/wireStory/eu-offers-serbia-fresh-hope-membership-talks-countries-137844800>) · ABC News 미국
 - [Bangladesh garment factories close as workers clash with police in pay protests](<https://abcnews.com/International/wireStory/bangladesh-garment-factories-close-workers-clash-police-pay-137843912>) · ABC News 미국
 - [Mozambique: Two Court Battles Challenge Frelimo Attempts to Channel Foreign Trade Through Party Oligarchs](<https://allafrica.com/stories/202611040564.html>) · AllAfrica · allAfrica.com
