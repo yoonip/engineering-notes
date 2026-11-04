@@ -1,8 +1,12 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-04 10:22 KST
+갱신: 2026-11-04 18:13 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
+
+## \[속보\] 신촌 세브란스병원서 흉기 난동…의사 1명 부상
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008830914&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-04 17:54 KST · 작성·제공: replay@sbs.co.kr \(박재현 기자\)
 
 ## "민주당이 승리 시 '반도체 걱정'…공화당은 '관세 압박'"
 
@@ -22,6 +26,12 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008829062&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-03 22:52 KST · 작성·제공: an.heejae@sbs.co.kr \(안희재 기자\)
 
+## 400만 원 들여 '생존가방' 싼다…커지는 '전쟁 공포'
+
+> 생수 묶음 수십 병이 쌓여 있고, 대형 쇼핑카트에는 통조림과 시리얼, 멸균우유 같은 비상식량이 가득 담겼습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008829716&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-04 16:58 KST · 작성·제공: leehy@sbs.co.kr \(이현영\)
+
 ## 사망한 남편 약봉투에 '3천만 원'…무사히 되찾았다
 
 > 세 번째 핫토픽, '약봉지에 남긴 3천만 원'입니다.
@@ -37,6 +47,14 @@
 ## 제왕절개 후 쓰러져 숨진 산모…유족, 2심서도 패소
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008829623&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-04 10:13 KST · 작성·제공: jwlee@sbs.co.kr \(이재원\)
+
+## \[속보\] 한진칼 최대주주, 조원태 회장 측서 호반건설로 변경
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104165800003>) · 2026-11-04 18:08 KST · 작성·제공: 김윤구
+
+## \[속보\] 다우·CJ컨소시엄, '5천200억 규모' 중앙일보 인수계약 5일 체결
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104164700005>) · 2026-11-04 18:01 KST · 작성·제공: 고미혜
 
 ## 대법, 檢수집자료 증거능력 배제에 "우려 알아…문제 살피겠다"
 
@@ -60,6 +78,12 @@
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104057600001>) · 2026-11-04 10:06 KST · 작성·제공: 김남권
 
+## \[속보\]신촌 세브란스서 환자가 흉기 난동…정신과 의사 부상
+
+> 대학병원 정신건강의학과 교수가 환자가 휘두른 흉기에 찔려 부상을 입은 사건이 발생했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Society/article/all/20261104/134967073/1>) · 2026-11-04 17:57 KST
+
 ## \[사설\]대통령 여권번호까지 줄줄… 어처구니없는 보안 참사
 
 > 이재명 대통령 부부와 장관들, 청와대 비서실·경호처 직원, 기자단 등 해외 순방단의 개인정보가 인터넷 사이트에 약 5개월간 노출됐던 사실이 뒤늦게 확인됐다.
@@ -72,15 +96,37 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8218525.html>) · 2026-11-04 07:58 KST · 작성·제공: voadigital@voanews.com \(조진우\)
 
+## 부산 영도 부두서 1t 트럭 바다로 추락해 60대 운전자 사망\(종합\)
+
+> 4일 오후 1시 55분께 부산 영도구 청학 안벽 부두에서 1t 트럭이 해상으로 떨어졌다.
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104135351051>) · 2026-11-04 17:34 KST · 작성·제공: 김재홍
+
 ## 진실화해위, '6·25 처형자 명단' 첫 직권조사…희생자 2만6천여명
 
 > 진실·화해를위한과거사정리위원회\(진실화해위\)가 한국전쟁 전후 군인과 경찰에 의해 희생된 민간인 2만6천여명의 인...
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104037700004>) · 2026-11-04 10:00 KST · 작성·제공: 윤민혁
 
+## \[속보\]신촌 세브란스병원서 흉기 난동…의사 1명 부상
+
+> \[속보\]신촌 세브란스병원서 흉기 난동…의사 1명 부상
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Society/article/all/20261104/134967041/1>) · 2026-11-04 17:48 KST
+
 ## \[속보\] 합참 "북한, 동해상으로 미상 발사체 발사"
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104053300504>) · 2026-11-04 09:53 KST · 작성·제공: 김효정
+
+## 전문가들 “북 가상자산 해킹은 비대칭 전략자산..금융제재 피해 무기 개발 자금 확보가 목표”
+
+> 북한의 가상자산 해킹은 핵과 미사일처럼 최소 인력과 비용으로 거액을 탈취할 수 있는 \`비대칭 전략자산’이라고 한국의 전문가가 밝혔습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korean-peninsula-11-04-26/8218812.html>) · 2026-11-04 15:34 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
+
+## \[게시판\] 산업부, 대학생 통상정책 토론대회…한양대 통상이몽팀 우승
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104157900003>) · 2026-11-04 17:26 KST · 작성·제공: 신창용
 
 ## '진땀승' 이강철 kt 감독 "로건 기용 실수…계투 운용 정리됐다"
 
@@ -99,6 +145,12 @@
 > 15세기 말 유럽 국가들이 대서양 너머 신대륙을 향해 앞다퉈 배를 띄웠듯이, 지금 세계 각국의 정부와 기업은 우주를 향해 로켓을 쏘아 올리고 있다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Opinion/article/all/20261103/134961071/2>) · 2026-11-03 23:12 KST
+
+## 美, 中공장 장비 반입 제동설에…SK하닉 “美승인절차 진행중”
+
+> SK하이닉스가 미국에서 추진 중인 450억 달러\(약 63조 원\) 규모의 반도체 공장 투자 계획이 미국의 대중국 반도체 장비 수출 규제로 차질을 빚고 있다는 외신 보도가 나왔다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261104/134965538/1>) · 2026-11-04 16:45 KST
 
 ## “韓서 초연 뮤지컬 ‘워더링 하이츠’, 원작의 폭발적 에너지 살려”
 

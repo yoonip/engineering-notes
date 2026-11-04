@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-04 10:22 KST
+갱신: 2026-11-04 18:13 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -9,6 +9,12 @@
 > 미국 정부가 SK하이닉스의 중국 공장 증설에 필요한 미국산 반도체 제조 장비의 수출 허가를 보류하면서, SK...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261104006700072>) · 2026-11-04 05:42 KST · 작성·제공: 김연숙
+
+## \[영상\] 러-우크라 휴전 끝나자 난타전…에너지 시설도 타격
+
+> \(서울=연합뉴스\) 러시아와 우크라이나가 우크라이나 남부 일부 지역에서 시행한 엿새간의 인도적 휴전을 끝내자마자 대규모 공격을 주고받았습니다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261104109300704>) · 2026-11-04 14:21 KST · 작성·제공: 전석우
 
 ## 진실화해위, 한국전쟁 전후 민간인 49명 피해 진실규명
 
@@ -28,11 +34,23 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261104043400009>) · 2026-11-04 09:51 KST · 작성·제공: 오수진
 
+## \[영상\] 中 고고도 무인기, 오키나와 인근 비행…日 전투기 출동
+
+> \(서울=연합뉴스\) 중국군의 고고도 무인정찰기 '우전\(WZ\)-7'이 미야코\(宮古\) 해협 상공을 비행해 일본 항공자위대 F-15 전투기가 긴급발진 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261104156700704>) · 2026-11-04 17:23 KST · 작성·제공: 류재갑
+
 ## 스웨덴, 총리 선임 또 무산…크리스테르손 연임 기회
 
 > 스웨덴이 총선을 치르고 두 달 가까이 새 정부를 구성하지 못하고 있다.
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261103187900082>) · 2026-11-03 23:08 KST · 작성·제공: 김계연
+
+## 中외교부 "미중러 정상회담 관련국들과 소통"…회담 가능성 언급
+
+> 중국이 아시아태평양경제협력체\(APEC\) 정상회의를 계기로 열릴 가능성이 거론되는 '미중러 정상회담'에 관해...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261104157100083>) · 2026-11-04 17:20 KST · 작성·제공: 정성조
 
 ## 뉴욕마라톤서도 20대 여성 사망…사인은 횡문근융해증
 
@@ -74,6 +92,10 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8218708.html>) · 2026-11-04 09:18 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
+## "백악관, 장례식 같았다"…"트럼프 버럭" 돌연 올린 사진
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008830632&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-04 16:58 KST · 작성·제공: minpyo@sbs.co.kr \(김민표\)
+
 ## \[북한 한 달 가계부 ①\] 쌀 1kg도 못 사는 월급…매달 적자로 시작
 
 > RFA는 최근 북한 내부 소식통을 통해 확인한 10월 물가와 임금 자료를 바탕으로 공장 노동자 김 씨와 아내 이 씨, 중학생과 소학생 자녀 등 가상의 4인…
@@ -92,11 +114,23 @@
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261104/134962841/2>) · 2026-11-04 10:16 KST
 
+## 김여정, 이틀만에 또 ‘해킹 담화’… 미북대화 무산 시사하며 ‘대미 압박’
+
+> 김여정 노동당 총무부장이 지난 2일에 이어 재차 바이낸스 해킹 사태 관련 담화를 내놨다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/04/north-korea-binance-laundering-coin/>) · 2026-11-04 16:08 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
 ## 일 전문가 “김정은 정권, 시장 통제로 새로운 빈부 격차 만들어”
 
 > 김정은 정북한 시장 통제 강화로 주민들의 경제 활동이 위축되고 생활고가 심화하면서 새로운 형태의 빈부 격차와 발생했다고 일본 언론매체 ‘아시아프레스’의 이시마루 지로 오사카 사무소 대표가 3일…
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/03/north-korea-regime-crackdown-wealth-poor-gap/>) · 2026-11-04 07:06 KST · 작성·제공: 워싱턴-노정민 nohj@rfa.org
+
+## 북, 인구 감소에 고아·미혼모 자녀도 적극 수용…낙태 단속은 강화
+
+> 최근 북한 당국이 부모를 잃은 고아나 미혼모가 출산한 아이들을 당국 관할의 육아원이나 애육원에 적극 수용하고 있는 것으로 알려졌다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/04/north-korea-population-decline-orphanage/>) · 2026-11-04 13:44 KST · 작성·제공: 서울-안창규 nk@rfa.org, 목용재 moky@rfa.org
 
 ## 북 잇단 집속탄두 시험발사…한미 공군력 무력화 노리나
 
@@ -120,9 +154,13 @@
 - [For Ukraine's Kherson region, a short ceasefire meant a momentary return to normal life](<https://www.npr.org/2026/11/03/g-s1-151238/ukraine-russia-ceasefire-oleshky-kherson>) · NPR
 - [South Africa: President Visits Shoddily Built Homes for Flood Victims](<https://allafrica.com/stories/202611030577.html>) · AllAfrica · allAfrica.com
 - [Uganda: Uganda Arrests Former Army Deputy Chief](<https://allafrica.com/stories/202611030567.html>) · AllAfrica · allAfrica.com
+- [South Africa: South Africans Head to Polls to Elect Local Government Leaders](<https://allafrica.com/stories/202611040161.html>) · AllAfrica · allAfrica.com
+- [Africa: All of Africa Today - November 4, 2026](<https://allafrica.com/stories/202611040155.html>) · AllAfrica · allAfrica.com
+- [Ethiopia: Ethiopian-American Pleads Guilty to Spying for Ethiopia, Faces Up to 22 Years in U.S. Prison](<https://allafrica.com/stories/202611040148.html>) · AllAfrica · allAfrica.com
 - [Indonesia detains 3 police generals suspected of wiretapping president](<https://abcnews.com/International/wireStory/indonesia-detains-3-police-generals-suspected-wiretapping-president-137815036>) · ABC News 미국
 - [Greenland approves security deal with Denmark and US](<https://abcnews.com/International/wireStory/greenland-approves-security-deal-denmark-us-months-trump-137812697>) · ABC News 미국
 - [Israeli-Palestinian conflict tests limits of free speech for artists](<https://www.csmonitor.com/World/Europe/2026/1103/artists-israeli-palestinian-canceled-free-speech?icid=rss>) · The Christian Science Monitor
+- [Indonesia deploys troops to boost Jakarta's security after generals' arrest](<https://abcnews.com/International/wireStory/indonesias-military-deploys-thousands-troops-boost-jakartas-security-137838412>) · ABC News 미국
 - [Afghanistan's Taliban officials will attend UN climate summit for second time](<https://abcnews.com/International/wireStory/afghanistans-taliban-officials-attend-climate-summit-time-observers-137804124>) · ABC News 미국
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
