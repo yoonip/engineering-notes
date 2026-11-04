@@ -22,6 +22,20 @@
 | `nonce` | OIDC 인증 요청과 ID Token을 연결하는 값입니다. 요청에서 보낸 값과 ID Token claim을 대조해 응답 재사용을 줄입니다. |
 | BFF / Backend for Frontend | browser 앱을 위한 server-side component가 OAuth token을 보관하고 API 요청을 대신 전달하는 구조입니다. browser는 cookie session으로 BFF에 요청합니다. |
 | OAuth mix-up attack | client가 여러 authorization server를 사용할 때 응답의 발급자를 잘못 연결해 code나 token을 엉뚱한 server에 보내는 공격입니다. |
+| 패스키 / Passkey | FIDO 표준에 기반한 공개키 인증 자격 증명입니다. discoverable passkey는 사용자가 계정 이름을 먼저 입력하지 않아도 인증기에서 선택할 수 있습니다. 동기화형과 기기 고정형이 있습니다. |
+| WebAuthn | 브라우저·인증기·relying party가 공개키 credential을 등록하고 검증하는 W3C 웹 인증 API와 사양입니다. |
+| relying party / RP | WebAuthn credential을 등록한 뒤 인증 응답을 검증하는 서비스입니다. |
+| RP ID | credential의 사용 범위를 묶는 relying party의 도메인 식별자입니다. 응답의 `rpIdHash`가 서버 설정과 일치해야 합니다. |
+| user handle | relying party가 credential과 계정을 연결하기 위해 정하는 불투명한 계정 식별자입니다. discoverable credential 인증에서 반환될 수 있으므로 이메일·사용자 이름 같은 개인정보를 넣지 않습니다. |
+| WebAuthn challenge | 서버가 ceremony마다 생성하는 신선도 값입니다. transaction과 연결하고 응답 검증 후 재사용하지 않습니다. |
+| UP / User Present | 사용자가 인증기에 참여했다는 WebAuthn flag입니다. 사용자 신원을 기기에서 확인했다는 뜻인 UV와 구별합니다. |
+| UV / User Verified | 인증기가 PIN·생체 확인 등으로 사용자를 로컬에서 확인했다는 WebAuthn flag입니다. 서비스가 요구하는 정책에 맞춰 요청·검증합니다. |
+| 동기화형 패스키 / Syncable passkey | passkey provider가 여러 기기에서 이용할 수 있도록 credential을 동기화하는 방식입니다. provider 계정의 보안과 복구 경로도 보호 경계에 들어옵니다. |
+| 기기 고정형 패스키 / Device-bound passkey | 한 보안 키나 기기에 묶여 다른 기기로 복원되지 않는 방식입니다. 분실에 대비한 추가 인증기와 복구 절차가 필요합니다. |
+| BE / Backup Eligibility | WebAuthn credential이 다른 기기로 백업될 수 있도록 만들어졌는지를 나타내는 고정 속성입니다. |
+| BS / Backup State | 동기화 가능한 credential의 현재 백업 상태를 나타내며 바뀔 수 있습니다. |
+| attestation | 등록 시 인증기 특성에 관한 증거를 제공하는 WebAuthn 데이터입니다. 공개 서비스에서는 개인정보 영향과 기기 지원 범위를 고려합니다. |
+| `signCount` | 일부 인증기가 assertion마다 갱신하는 서명 횟수입니다. 복제 탐지의 보조 신호이며 불일치만으로 복제를 확정하지 않습니다. |
 | ACL | 자원에 접근할 수 있는 주체·작업을 정한 접근 제어 목록입니다. |
 | IAM | 사용자·서비스의 신원과 자원 접근 정책을 관리하는 체계입니다. |
 | tenant | 서비스에서 분리해 관리하는 고객·조직의 단위입니다. |

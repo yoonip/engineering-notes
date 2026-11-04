@@ -117,6 +117,11 @@
 | [RFC 7009: OAuth 2.0 Token Revocation](https://www.rfc-editor.org/rfc/rfc7009.html) | 2013-08; 2026-11-04 확인 | access·refresh token 폐기 endpoint와 발급자별 연관 token 처리 |
 | [RFC 9207: OAuth 2.0 Authorization Server Issuer Identification](https://www.rfc-editor.org/rfc/rfc9207.html) | 2022-03; 2026-11-04 확인 | authorization response의 `iss`와 등록 issuer 비교·mix-up 방어 |
 | [OWASP OAuth 2.0 Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet.html) | 2026-11-04 확인 | state·PKCE·issuer 확인 등 OAuth client 구현 점검 |
+| [W3C Web Authentication: An API for accessing Public Key Credentials, Level 3](https://www.w3.org/TR/webauthn-3/) | 2026-08-25 W3C Recommendation; 2026-11-04 확인 | credential 등록·assertion 검증·challenge·origin·RP ID·UP/UV·counter·backup flag |
+| [NIST SP 800-63B-4: Syncable Authenticators](https://pages.nist.gov/800-63-4/sp800-63b/syncable/) | 2025-07 최종판; 2026-11-04 확인 | BE/BS·동기화형 credential 공유·복구·attestation 고려사항 |
+| [NIST SP 800-63B-4: Authenticator and Verifier Requirements](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/) | 2025-07 최종판; 2026-11-04 확인 | 피싱 저항성의 정의·수동 입력 OTP의 한계 |
+| [FIDO Alliance, Synced Passkey Deployment: Emerging Practices for Consumer Use Cases](https://fidoalliance.org/wp-content/uploads/2024/05/Synced-Passkey-Deployment_-Emerging-Practices-for-Consumer-Use-Cases_2024-Final.pdf) | 2024-05; 2026-11-04 확인 | 동기화형·기기 고정형 credential의 사용자·서비스 운영 tradeoff와 계정 복구 |
+| [FIDO Alliance UX Guidelines for Passkey Creation and Sign-ins](https://fidoalliance.org/wp-content/uploads/2023/05/FIDO-Alliance-UX-Guidelines-for-Passkey-Creation-and-Sign-ins.pdf) | 2023-05; 2026-11-04 확인 | discoverable FIDO credential이라는 passkey 용어와 소비자 로그인 흐름 |
 
 ## 코드 출처
 

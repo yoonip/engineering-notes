@@ -896,6 +896,46 @@
       "edition": "2026-11-04 확인",
       "read_scope": "OAuth client의 state·PKCE·issuer validation 점검 항목",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "w3c-webauthn-level-3",
+      "title": "Web Authentication: An API for accessing Public Key Credentials, Level 3",
+      "url": "https://www.w3.org/TR/webauthn-3/",
+      "edition": "2026-08-25 W3C Recommendation; 2026-11-04 확인",
+      "read_scope": "credential 등록·assertion 검증·challenge·origin·RP ID·UP/UV·signCount·backup flag·privacy",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "nist-800-63b4-syncable-authenticators",
+      "title": "NIST SP 800-63B-4, Syncable Authenticators",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b/syncable/",
+      "edition": "2025-07 최종판; 2026-11-04 확인",
+      "read_scope": "BE/BS·동기화형 credential 공유·복구·attestation",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "nist-800-63b4-authenticators",
+      "title": "NIST SP 800-63B-4, Authenticator and Verifier Requirements",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
+      "edition": "2025-07 최종판; 2026-11-04 확인",
+      "read_scope": "피싱 저항성 정의·인증기 요구·수동 입력 OTP의 한계",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "fido-synced-passkey-deployment",
+      "title": "Synced Passkey Deployment: Emerging Practices for Consumer Use Cases",
+      "url": "https://fidoalliance.org/wp-content/uploads/2024/05/Synced-Passkey-Deployment_-Emerging-Practices-for-Consumer-Use-Cases_2024-Final.pdf",
+      "edition": "2024-05; 2026-11-04 확인",
+      "read_scope": "동기화형·기기 고정형 credential의 사용자 경험·서비스 운영·계정 복구",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "fido-passkey-ux-guidelines",
+      "title": "FIDO Alliance UX Guidelines for Passkey Creation and Sign-ins",
+      "url": "https://fidoalliance.org/wp-content/uploads/2023/05/FIDO-Alliance-UX-Guidelines-for-Passkey-Creation-and-Sign-ins.pdf",
+      "edition": "2023-05; 2026-11-04 확인",
+      "read_scope": "discoverable FIDO credential이라는 passkey 용어·로그인 UX·동기화 배경",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."
