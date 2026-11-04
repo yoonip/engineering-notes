@@ -191,6 +191,13 @@
 | [Cloudflare Authenticated Origin Pulls](https://developers.cloudflare.com/ssl/origin-configuration/authenticated-origin-pull/) | 공식 문서; 2026-11-04 확인 | Cloudflare와 원본 사이 클라이언트 인증서 검사, 적용 가능한 TLS 모드 |
 | [Cloudflare Full (strict)](https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full-strict/) | 공식 문서; 2026-11-04 확인 | Cloudflare에서 원본 서버로 이어지는 TLS 연결과 원본 인증서 검증 |
 
+
+| [RFC 9112: HTTP/1.1](https://www.rfc-editor.org/rfc/rfc9112.html) | 2022-06; IETF Standards Track; 2026-11-04 확인 | Transfer-Encoding·Content-Length와 본문 길이, 요청 파서 오류·연결 종료 §6.1–§6.3; request smuggling §11.2 |
+| [RFC 9113: HTTP/2](https://www.rfc-editor.org/rfc/rfc9113.html) | 2022-06; IETF Standards Track; 2026-11-04 확인 | malformed 메시지·DATA 길이·field 검증과 중개자의 전달 금지 §8.1.1·§8.2 |
+| [MITRE CWE-444: Inconsistent Interpretation of HTTP Requests](https://cwe.mitre.org/data/definitions/444) | MITRE CWE 온라인 항목; 2026-11-04 확인 | 프록시·방화벽과 원본 서버의 해석 차이, 보안 필터·캐시 영향의 분류 |
+| [OWASP Web Security Testing Guide: Testing for HTTP Request Smuggling](https://wstg.owasp.org/latest/4-Web_Application_Security_Testing/07-Injection/16-HTTP_Request_Smuggling/) | OWASP WSTG 온라인 문서; 2026-11-04 확인 | 프런트엔드·백엔드 파서 차이와 프로토콜 변환 경계; 공격 페이로드는 사용하지 않음 |
+| [PortSwigger Web Security Academy: HTTP request smuggling](https://portswigger.net/web-security/request-smuggling) | 온라인 교육 문서; 2026-11-04 확인 | HTTP/2 다운그레이드·연결 재사용의 고수준 방어 설명; RFC 규정과 구분해 보조 자료로 사용 |
+
 ## 코드 출처
 
 `실습_labs`의 코드는 공식 코드를 복사한 것이 아니라 직접 작성한 교육 예제입니다. 표준 라이브러리 API와 설계 원칙의 출처를 각 장에 연결했습니다. HMAC 검사의 공개 정답은 RFC 4231 §4.2에서 가져왔습니다. 자체 SQL 입력·문서·로그·프레임과 계산값은 외부 기관의 측정 데이터가 아닙니다.

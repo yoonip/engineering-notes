@@ -1480,6 +1480,46 @@
       "edition": "Cloudflare 공식 문서; 2026-11-04 확인",
       "read_scope": "원본 서버와의 TLS 연결, 원본 인증서 일치·유효성 검증, 배포 조건",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc9112-http11-message-framing",
+      "title": "HTTP/1.1",
+      "url": "https://www.rfc-editor.org/rfc/rfc9112.html",
+      "edition": "RFC 9112, IETF Standards Track, 2022-06; 2026-11-04 확인",
+      "read_scope": "§6.1–§6.3 Transfer-Encoding·Content-Length·본문 길이·오류 시 연결 종료; §11.2 request smuggling",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc9113-http2-malformed-messages",
+      "title": "HTTP/2",
+      "url": "https://www.rfc-editor.org/rfc/rfc9113.html",
+      "edition": "RFC 9113, IETF Standards Track, 2022-06; 2026-11-04 확인",
+      "read_scope": "§8.1.1·§8.2 malformed 메시지·DATA payload 길이·field 검증·중개자의 전달 금지",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "mitre-cwe-444-http-request-interpretation",
+      "title": "Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')",
+      "url": "https://cwe.mitre.org/data/definitions/444",
+      "edition": "MITRE CWE 온라인 항목; 2026-11-04 확인",
+      "read_scope": "프록시·방화벽과 최종 수신자의 해석 차이, 보안 필터 우회·캐시 영향 분류",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "owasp-wstg-http-request-smuggling",
+      "title": "Testing for HTTP Request Smuggling",
+      "url": "https://wstg.owasp.org/latest/4-Web_Application_Security_Testing/07-Injection/16-HTTP_Request_Smuggling/",
+      "edition": "OWASP WSTG 온라인 문서; 2026-11-04 확인",
+      "read_scope": "프런트엔드·백엔드 파서 차이와 protocol translation 경계; 공격 페이로드 미사용",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "portswigger-academy-http-request-smuggling",
+      "title": "HTTP request smuggling",
+      "url": "https://portswigger.net/web-security/request-smuggling",
+      "edition": "PortSwigger Web Security Academy 온라인 문서; 2026-11-04 확인",
+      "read_scope": "HTTP/2 downgrade·연결 재사용 관련 고수준 방어 대조; RFC 규정과 구분한 보조 설명",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."
