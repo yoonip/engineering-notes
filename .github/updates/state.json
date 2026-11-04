@@ -6,6 +6,7 @@
     "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
     "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module",
     "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team": "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team",
+    "industry:https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications": "industry:https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications",
     "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027": "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027",
     "learning:https://www.kmooc.kr/view/course/detail/11495": "learning:https://www.kmooc.kr/view/course/detail/11495",
     "learning:https://www.kmooc.kr/view/course/detail/14760": "learning:https://www.kmooc.kr/view/course/detail/14760",
@@ -167,10 +168,12 @@
     "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery": "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery",
     "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one",
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
+    "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support": "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support",
     "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
     "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
     "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map",
     "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
+    "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes": "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133",
@@ -337,6 +340,27 @@
           "title": "존슨우주센터의 로봇 조작 기술과 시험시설 / Reliable Robots: Meet Johnson’s Dexterous Robotics Team",
           "update": false,
           "url": "https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team/"
+        }
+      ],
+      "2026-11-05": [
+        {
+          "acquired_at": "2026-11-04T18:48:21.640321+00:00",
+          "acquisition_method": "공식 기술 분야 RSS의 제목·발행일·소개",
+          "author": "Jessica Taveau",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-04T18:00:02+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-04T18:47:11.298518+00:00",
+          "group": "industry",
+          "homepage": "https://www.nasa.gov/technology/",
+          "key": "industry:https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications",
+          "source_name": "NASA 기술 자료",
+          "source_url": "https://www.nasa.gov/technology/feed/",
+          "summary_ko": "NASA 기술 자료에서 공개한 산업 기술 자료입니다. 공개 제목·소개에서 통신·신호 처리·우주·항공 시스템 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NASA Announces Ka-Band Satellite Relay Awards for Space Communications",
+          "update": false,
+          "url": "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/"
         }
       ]
     },
@@ -3424,6 +3448,46 @@
           "update": false,
           "url": "https://blogs.nvidia.co.kr/blog/cities-physical-agentic-ai-applications/"
         }
+      ],
+      "2026-11-05": [
+        {
+          "acquired_at": "2026-11-04T18:48:25.188046+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Shara Tibken",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-04T18:46:07+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-04T18:47:11.298518+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/"
+        },
+        {
+          "acquired_at": "2026-11-04T18:48:25.188046+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Patrick Moorhead",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-04T16:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-04T18:47:11.298518+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용·평가 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/"
+        }
       ]
     },
     "reports": {
@@ -5445,6 +5509,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4"
     },
+    "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support"
+    },
     "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games"
@@ -5460,6 +5528,10 @@
     "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials"
+    },
+    "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes"
     },
     "https://developers.googleblog.com/gemini-4-argon-for-robotics": {
       "group": "models",
@@ -5705,6 +5777,10 @@
       "group": "industry",
       "key": "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team"
     },
+    "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications": {
+      "group": "industry",
+      "key": "industry:https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications"
+    },
     "https://www.spri.kr/posts/view/24031?code=AI-Brief": {
       "group": "technology",
       "key": "technology:https://www.spri.kr/posts/view/24031?code=AI-Brief"
@@ -5723,6 +5799,12 @@
       "ETag": "\"bb8656333fa5271b51dc2e8bdb0eddc2\"",
       "Last-Modified": "Wed, 04 Nov 2026 08:22:57 GMT"
     },
+    "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
+      "ETag": "W/\"413b2693cad105322c1ca74c848663b6693093b91ca4493c0043f5d745babc74\""
+    },
+    "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
+      "ETag": "W/\"8e6321996ef149c6b5a67eb8db51cd871411c41a7d34e6c18e5b60ab37acb5df\""
+    },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
     "https://blog.google/robots.txt": {},
@@ -5739,7 +5821,7 @@
       "Last-Modified": "Sun, 01 Nov 2026 12:16:24 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Wed, 04 Nov 2026 10:48:13 GMT"
+      "Last-Modified": "Wed, 04 Nov 2026 13:23:22 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -5756,14 +5838,14 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"Z6Dc_A\""
+      "ETag": "\"euEIBg\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"Y-CQng\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"0f606a121642a28a1e74ab73c4764709\"",
-      "Last-Modified": "Tue, 03 Nov 2026 22:34:40 GMT"
+      "ETag": "\"09d91810d7f98ec6f17b6455b73da9df\"",
+      "Last-Modified": "Wed, 04 Nov 2026 18:46:28 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -5771,10 +5853,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33b9b-W66tlXltnlDDWOdgwLUtyhnZERw\""
+      "ETag": "W/\"33b9c-5QHhA+WSaIpOgF+Dljl62E1P9IQ\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40146-UTtwhzPOMEriG9TbvDMsQpFFOzU\""
+      "ETag": "W/\"40146-sFcekKPmnbq09bNb+FOoy/6Ghs8\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -5818,12 +5900,12 @@
       "Last-Modified": "Wed, 04 Nov 2026 03:10:04 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793791448\"",
-      "Last-Modified": "Wed, 04 Nov 2026 11:24:08 GMT"
+      "ETag": "\"1793817309\"",
+      "Last-Modified": "Wed, 04 Nov 2026 18:35:09 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793790686\"",
-      "Last-Modified": "Wed, 04 Nov 2026 11:11:26 GMT"
+      "ETag": "\"1793817947\"",
+      "Last-Modified": "Wed, 04 Nov 2026 18:45:47 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -5911,7 +5993,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"032f4753495b6d151ade01b125ef7f1e5\""
+      "ETag": "\"0399ea1cbd4fccabe69643b4eb92e0581\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -6011,8 +6093,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"74df763bb497602de1b73a85fa966f8c\"",
-      "Last-Modified": "Wed, 04 Nov 2026 05:05:00 GMT"
+      "ETag": "\"bd1336eb0fb213d2b1c862da222b5401\"",
+      "Last-Modified": "Wed, 04 Nov 2026 18:48:15 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -7638,6 +7720,12 @@
       "language": "en",
       "url": "https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team/"
     },
+    "industry:https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications": {
+      "fingerprint": "49b87a6eaecb843a0019e2c7ed6399de026897e8fa2cb5b6fac6434f4f3f6816",
+      "first_seen": "2026-11-04T18:47:11.298518+00:00",
+      "language": "en",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/"
+    },
     "kaist-future:https://futures.kaist.ac.kr/ko?c=203&gbn=view&ix=1144": {
       "list_fingerprint": "35d666ea3e9c699ad94442d361f23a259476e6fe72685bbdb80a85008611830f",
       "status": "older_material"
@@ -8534,6 +8622,10 @@
       "list_fingerprint": "2a334b3d68c148514db47ea8f37861f5bf0caa96f8c908186a8f56aa69f7d293",
       "status": "posted"
     },
+    "nasa-technology:https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications": {
+      "list_fingerprint": "49b87a6eaecb843a0019e2c7ed6399de026897e8fa2cb5b6fac6434f4f3f6816",
+      "status": "posted"
+    },
     "nvidia-korea:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview": {
       "list_fingerprint": "675710415c5f6a04048be047dcc7886224374f89c0bd17963bbc6c2c5c0f1898",
       "status": "posted"
@@ -8878,6 +8970,10 @@
       "list_fingerprint": "a108d2d281a19513b2ce35f8919677eb65faf49efeb1549663c21da7865fb84c",
       "status": "older_material"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support": {
+      "list_fingerprint": "86687b33d32d3325514bda9b57a8689e3a9bd850172a93d539861b7bdc32d61c",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning": {
       "list_fingerprint": "d02f2660d4ba59710c3a15b48546a6a3763fc10ad4e9a6d6088cb3bf86d0a6b3",
       "status": "bootstrap_skipped"
@@ -9004,6 +9100,10 @@
     },
     "nvidia-technical:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": {
       "list_fingerprint": "8972799e585a4e9fd6c467a0e57ad0e36aefb4b1e6554a56404f917ae2a77e76",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes": {
+      "list_fingerprint": "5fa7f33e22ed92767ded43adca53d4b185c7b50d181167c5ee06f25bd8a36b92",
       "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation": {
@@ -9934,6 +10034,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
     },
+    "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support": {
+      "fingerprint": "86687b33d32d3325514bda9b57a8689e3a9bd850172a93d539861b7bdc32d61c",
+      "first_seen": "2026-11-04T18:47:11.298518+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/"
+    },
     "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": {
       "fingerprint": "390dbe846bfe64a8e52dd2563ad6d7a019fa9a0db39e9114af72f7aa1c7cf051",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -9957,6 +10063,12 @@
       "first_seen": "2026-10-29T17:02:41.996428+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/"
+    },
+    "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes": {
+      "fingerprint": "5fa7f33e22ed92767ded43adca53d4b185c7b50d181167c5ee06f25bd8a36b92",
+      "first_seen": "2026-11-04T18:47:11.298518+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/"
     },
     "python-releases:https://blog.python.org/2026/02/python-3143-and-31312-are-now-available": {
       "list_fingerprint": "3aa6aefd87f6309afce225bf6cd1a2a5756dbbc67ba4362fceceea4e8f1c28e2",
