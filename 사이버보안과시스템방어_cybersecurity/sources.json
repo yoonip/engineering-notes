@@ -560,6 +560,70 @@
       "edition": "2026-05-12 수정판",
       "read_scope": "다중 플랫폼 파일 암호화 탐지 신호·자료원·분석 변수",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc-7208-spf",
+      "title": "IETF RFC 7208 Sender Policy Framework",
+      "url": "https://www.rfc-editor.org/rfc/rfc7208.html",
+      "edition": "2014-04, Standards Track",
+      "read_scope": "SPF 발신 식별자·처리 결과·DNS 조회 제한",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc-6376-dkim",
+      "title": "IETF RFC 6376 DomainKeys Identified Mail Signatures",
+      "url": "https://www.rfc-editor.org/rfc/rfc6376.html",
+      "edition": "2011-09, Standards Track; 서명 구조 설명에 한정",
+      "read_scope": "DKIM 서명·selector·d= 서명 도메인의 기본 구조",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc-9989-dmarc",
+      "title": "IETF RFC 9989 Domain-Based Message Authentication, Reporting, and Conformance",
+      "url": "https://www.rfc-editor.org/rfc/rfc9989.html",
+      "edition": "2026-05, Standards Track; RFC 7489 대체",
+      "read_scope": "식별자 정렬·정책 처리·집계 보고·단계적 배포·pct 태그 제거",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc-8601-authentication-results",
+      "title": "IETF RFC 8601 Message Header Field for Indicating Message Authentication Status",
+      "url": "https://www.rfc-editor.org/rfc/rfc8601.html",
+      "edition": "2019-05, Standards Track",
+      "read_scope": "Authentication-Results 필드의 용도·신뢰 경계·위조 헤더 보안 고려사항",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "fbi-bec",
+      "title": "FBI Business Email Compromise",
+      "url": "https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise",
+      "edition": "2026-11-04 확인",
+      "read_scope": "BEC 유형·사칭·피싱·지급 요청과 계좌 변경의 독립 확인 권고",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "microsoft-defender-response",
+      "title": "Microsoft Defender for Endpoint: Take response actions on a device",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts",
+      "edition": "2026-11-04 확인",
+      "read_scope": "장치 격리·조사 자료 수집·지원 OS·권한·고가치 자산과 네트워크 영향",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "microsoft-defender-investigate-device",
+      "title": "Microsoft Defender for Endpoint: Investigate devices",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/investigate-machines",
+      "edition": "2026-11-04 확인",
+      "read_scope": "장치 시간선·프로세스 트리·연관 경보·대응 기능의 제품별 조사 흐름",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "microsoft-defender-investigate-alerts",
+      "title": "Microsoft Defender for Endpoint: Investigate alerts",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/investigate-alerts",
+      "edition": "2026-11-04 확인",
+      "read_scope": "경보 스토리·시간선·사건 분류와 조사 절차",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."

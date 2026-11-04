@@ -33,6 +33,8 @@
 | 앱·기기 보안 | [모바일 기기와 앱 보안](21-모바일기기와앱보안_mobile-security.md) | MASVS·기기 데이터·딥링크·백엔드 권한·수명 주기입니다. |
 | 네트워크 보안 | [무선랜과 기업 Wi-Fi 보안](22-무선랜과기업와이파이보안_wireless-lan-security.md) | 인증·망 분리·AP 관리·무선 탐지·운영 점검입니다. |
 | 사고 대응 | [랜섬웨어와 악성코드 대응](23-랜섬웨어와악성코드대응_ransomware-malware-response.md) | 초기 대응·증거 보존·복구 검증·안전한 파일 식별입니다. |
+| 메일 보안 | [메일 인증과 업무 메일 침해](24-메일인증과업무메일침해_email-authentication-bec.md) | SPF·DKIM·DMARC, 계정 탈취, 결제 변경 확인과 BEC 대응입니다. |
+| 단말 보안 | [단말 탐지와 대응](25-단말탐지와대응_endpoint-detection-response.md) | EDR 구성·이벤트 조사·격리 영향·복구 확인과 탐지 품질입니다. |
 
 ## 글과 근거의 성격
 
@@ -55,4 +57,4 @@
 
 ## English
 
-This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, and ransomware response. It distinguishes client-side mobile controls from backend verification, wireless lifecycle guidance from current protocol decisions, and file hashes from malware verdicts. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.
+This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, ransomware response, email authentication and endpoint detection. It distinguishes client-side mobile controls from backend verification, sender-domain authentication from business-request legitimacy, and endpoint alert signals from incident evidence. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.

@@ -75,6 +75,14 @@
 | [IETF RFC 9190 EAP-TLS 1.3](https://www.rfc-editor.org/rfc/rfc9190.html) | 2022-02 | EAP-TLS 1.3 상호 인증·Identity 응답의 한계·인증서 폐기 확인 |
 | [CISA StopRansomware Guide](https://www.cisa.gov/sites/default/files/2023-10/StopRansomware-Guide-508C-v3_1.pdf) | 2023-10 공개판 | 오프라인 백업·복원 훈련·대응 준비 권고 |
 | [MITRE ATT&CK DET0215](https://attack.mitre.org/detectionstrategies/DET0215/) | 2026-05-12 수정판, 2026-11-04 확인 | 다중 플랫폼 파일 암호화 탐지 신호·자료원·분석 변수 |
+| [IETF RFC 7208 SPF](https://www.rfc-editor.org/rfc/rfc7208.html) | 2014-04, Standards Track | SPF 발신 식별자·평가 결과·DNS 조회 제한 |
+| [IETF RFC 6376 DKIM](https://www.rfc-editor.org/rfc/rfc6376.html) | 2011-09, Standards Track; 서명 구조 설명 범위 | DKIM 서명·selector·서명 도메인의 기본 구조 |
+| [IETF RFC 9989 DMARC](https://www.rfc-editor.org/rfc/rfc9989.html) | 2026-05, Standards Track; RFC 7489 대체 | 식별자 정렬·정책·보고·배포 절차와 pct 태그 제거 |
+| [IETF RFC 8601 Authentication-Results](https://www.rfc-editor.org/rfc/rfc8601.html) | 2019-05, Standards Track | 인증 결과 필드의 용도·신뢰 경계·위조 헤더 위험 |
+| [FBI Business Email Compromise](https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise) | 2026-11-04 확인 | BEC 유형과 지급 요청·계좌 변경의 독립 확인 권고 |
+| [Microsoft Defender for Endpoint: 단말 대응 조치](https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts) | 2026-11-04 확인 | 단말 격리·조사 자료 수집·지원 조건·업무 영향 |
+| [Microsoft Defender for Endpoint: 장치 조사](https://learn.microsoft.com/en-us/defender-endpoint/investigate-machines) | 2026-11-04 확인 | 장치 시간선·프로세스 트리·경보·대응 기능의 제품별 흐름 |
+| [Microsoft Defender for Endpoint: 경보 조사](https://learn.microsoft.com/en-us/defender-endpoint/investigate-alerts) | 2026-11-04 확인 | 경보 스토리·시간선·사건 분류와 조사 절차 |
 
 ## 코드 출처
 
