@@ -83,6 +83,11 @@
 | [Microsoft Defender for Endpoint: 단말 대응 조치](https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts) | 2026-11-04 확인 | 단말 격리·조사 자료 수집·지원 조건·업무 영향 |
 | [Microsoft Defender for Endpoint: 장치 조사](https://learn.microsoft.com/en-us/defender-endpoint/investigate-machines) | 2026-11-04 확인 | 장치 시간선·프로세스 트리·경보·대응 기능의 제품별 흐름 |
 | [Microsoft Defender for Endpoint: 경보 조사](https://learn.microsoft.com/en-us/defender-endpoint/investigate-alerts) | 2026-11-04 확인 | 경보 스토리·시간선·사건 분류와 조사 절차 |
+| [Sigma Rule Specification v2.1.0](https://github.com/SigmaHQ/sigma-specification/blob/v2.1.0/specification/sigma-rules-specification.md) | v2.1.0 release | 단일 이벤트 규칙의 logsource·detection·필드·상태·오탐 조건 |
+| [Sigma Correlation Rules Specification v2.1.0](https://github.com/SigmaHQ/sigma-specification/blob/v2.1.0/specification/sigma-correlation-rules-specification.md) | v2.1.0 release | 이벤트·고유값 집계, 그룹 키, 시간창과 backend 지원 범위 |
+| [SigmaHQ pySigma](https://github.com/SigmaHQ/pySigma) | 2026-11-04 확인 | 규칙 파싱·변환과 backend·pipeline plugin의 분리 구조 |
+| [SigmaHQ sigma-cli](https://github.com/SigmaHQ/sigma-cli) | 2026-11-04 확인 | 설치·plugin·변환 명령과 공식 사용 예시 |
+| [Microsoft Windows Event 4625](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625) | 2026-11-04 확인 | 실패 이벤트의 생성 위치·필드·로그온 유형·모니터링 권고 |
 
 ## 코드 출처
 

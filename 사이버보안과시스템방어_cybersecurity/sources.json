@@ -624,6 +624,46 @@
       "edition": "2026-11-04 확인",
       "read_scope": "경보 스토리·시간선·사건 분류와 조사 절차",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "sigma-rules-v2.1",
+      "title": "Sigma Rule Specification v2.1.0",
+      "url": "https://github.com/SigmaHQ/sigma-specification/blob/v2.1.0/specification/sigma-rules-specification.md",
+      "edition": "v2.1.0 release",
+      "read_scope": "단일 이벤트 규칙의 logsource·detection·필드·status·falsepositives·level",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "sigma-correlation-v2.1",
+      "title": "Sigma Correlation Rules Specification v2.1.0",
+      "url": "https://github.com/SigmaHQ/sigma-specification/blob/v2.1.0/specification/sigma-correlation-rules-specification.md",
+      "edition": "v2.1.0 release",
+      "read_scope": "event_count·value_count·group-by·timespan·condition·변환 backend 지원과 한계",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "sigma-pysigma",
+      "title": "SigmaHQ pySigma",
+      "url": "https://github.com/SigmaHQ/pySigma",
+      "edition": "2026-11-04 확인",
+      "read_scope": "규칙 파싱·변환·별도 backend와 pipeline plugin·Python 요구사항",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "sigma-cli",
+      "title": "SigmaHQ sigma-cli",
+      "url": "https://github.com/SigmaHQ/sigma-cli",
+      "edition": "2026-11-04 확인",
+      "read_scope": "공식 설치·plugin·변환 명령과 backend·pipeline 예시",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "microsoft-event-4625",
+      "title": "Microsoft Windows Security Auditing Event 4625",
+      "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4625",
+      "edition": "2026-11-04 확인",
+      "read_scope": "로그온 실패 이벤트 생성 위치·XML 필드·로그온 유형·모니터링 권고",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."
