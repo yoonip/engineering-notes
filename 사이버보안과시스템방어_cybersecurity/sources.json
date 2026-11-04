@@ -1576,6 +1576,126 @@
       "edition": "Microsoft Learn 공식 문서; 2026-11-04 확인",
       "read_scope": "IMDS 내부 접근·Metadata: true 요구·X-Forwarded-For 금지 및 redirect 방지 취지",
       "checked_on": "2026-11-04"
+    },
+    {
+      "id": "w3c-csp-level3",
+      "title": "Content Security Policy Level 3",
+      "url": "https://www.w3.org/TR/CSP3/",
+      "edition": "W3C Working Draft, 2026-10-27; 2026-11-04 확인",
+      "read_scope": "CSP directive와 policy 적용 구조; final Recommendation으로 표기하지 않음",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "owasp-csp-cheatsheet",
+      "title": "Content Security Policy Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html",
+      "edition": "OWASP 공식 지침; 2026-11-04 확인",
+      "read_scope": "nonce·hash strict CSP, strict-dynamic, nonce 발급·template 적용 조건",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "whatwg-fetch-cors",
+      "title": "Fetch Standard: CORS protocol",
+      "url": "https://fetch.spec.whatwg.org/#cors-protocol",
+      "edition": "WHATWG Living Standard, 2026-10-19 갱신; 2026-11-04 확인",
+      "read_scope": "CORS response sharing, preflight, credentialed request, Access-Control-Allow-Origin 규칙",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "rfc6797-hsts",
+      "title": "HTTP Strict Transport Security (HSTS)",
+      "url": "https://datatracker.ietf.org/doc/html/rfc6797",
+      "edition": "RFC 6797, IETF Standards Track, 2012-11; 2026-11-04 확인",
+      "read_scope": "HTTPS 응답을 통한 HSTS 저장·includeSubDomains·UA 정책 처리 §5·§6",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "owasp-secure-headers-best-practices",
+      "title": "Best Practices",
+      "url": "https://secure-headers-project.owasp.org/best-practices/",
+      "edition": "OWASP Secure Headers Project 공식 문서; 2026-11-04 확인",
+      "read_scope": "CSP·HSTS·frame 제한·nosniff·Referrer-Policy 제안값 및 적용 고려사항",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "owasp-secure-headers-reference",
+      "title": "Response Headers",
+      "url": "https://secure-headers-project.owasp.org/response-headers/",
+      "edition": "OWASP Secure Headers Project 공식 문서; 2026-11-04 확인",
+      "read_scope": "HSTS·X-Frame-Options·nosniff·Referrer-Policy 동작과 제한",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "mdn-csp-implementation",
+      "title": "Content Security Policy (CSP) implementation",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/CSP",
+      "edition": "MDN Web Docs; 2026-11-04 확인",
+      "read_scope": "Report-Only 관찰, nonce/hash 도입과 script 의존성 정리",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "mdn-cors-guide",
+      "title": "Cross-Origin Resource Sharing (CORS)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+      "edition": "MDN Web Docs; 2026-11-04 확인",
+      "read_scope": "simple request·preflight·credentialed CORS 및 browser response sharing",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "mdn-csrf",
+      "title": "Cross-site request forgery (CSRF)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF",
+      "edition": "MDN Web Docs; 2026-11-04 확인",
+      "read_scope": "CORS·SameSite와 별도로 필요한 CSRF defense 및 state-changing request protection",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "mdn-hsts-header",
+      "title": "Strict-Transport-Security header",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security",
+      "edition": "MDN Web Docs; 2026-11-04 확인",
+      "read_scope": "HSTS host/subdomain caching, first-visit limitation, preload distinction",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "mdn-referrer-policy",
+      "title": "Referrer-Policy header",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Referrer-Policy",
+      "edition": "MDN Web Docs; 2026-11-04 확인",
+      "read_scope": "same-origin·cross-origin navigation 및 fetch에서 Referer 정보 범위",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "mdn-coop-header",
+      "title": "Cross-Origin-Opener-Policy (COOP) header",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy",
+      "edition": "MDN Web Docs; 2026-11-04 확인",
+      "read_scope": "browsing context opener 분리와 COOP/COEP cross-origin isolation 조건",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "mdn-coep-header",
+      "title": "Cross-Origin-Embedder-Policy (COEP) header",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy",
+      "edition": "MDN Web Docs; 2026-11-04 확인",
+      "read_scope": "no-CORS cross-origin resource embedding, CORP/CORS consent, isolation requirements",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "w3c-permissions-policy",
+      "title": "Permissions Policy",
+      "url": "https://www.w3.org/TR/permissions-policy-1/",
+      "edition": "W3C Working Draft, 2026-10-26; 2026-11-04 확인",
+      "read_scope": "document·iframe browser feature use policy; Working Draft 상태",
+      "checked_on": "2026-11-04"
+    },
+    {
+      "id": "mdn-csp-report-only",
+      "title": "Content-Security-Policy-Report-Only header",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy-Report-Only",
+      "edition": "MDN Web Docs; 2026-11-04 확인",
+      "read_scope": "Report-Only does not enforce policy; report-to and Reporting-Endpoints configuration, report-uri compatibility",
+      "checked_on": "2026-11-04"
     }
   ],
   "code_origin": "Authored educational examples; no upstream implementation copied. RFC 4231 public test vector is attributed separately."

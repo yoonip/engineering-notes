@@ -206,5 +206,13 @@
 | 클라우드 인스턴스 메타데이터 / Instance metadata | VM의 실행 정보와 플랫폼별 identity 관련 자료를 제공하는 내부 서비스입니다. 접근 가능한 프로세스와 연결된 role·service account 권한을 함께 관리해야 합니다. |
 | AWS IMDSv2 | Amazon EC2 Instance Metadata Service의 세션 token 방식입니다. 인스턴스에서 token을 요구하도록 설정할 수 있으며, hop limit과 컨테이너 호환성을 확인해야 합니다. |
 | URL fetch worker | 사용자가 지정하거나 시스템에 등록된 URL에서 데이터를 가져오는 격리된 worker입니다. 웹 애플리케이션 전체의 내부망·metadata 접근 권한을 공유하지 않도록 설계합니다. |
+| Same-Origin Policy / 동일 출처 정책 | 브라우저 script가 다른 origin의 데이터에 임의로 접근하지 못하게 하는 기본 정책입니다. 서버 API의 인증·인가를 수행하는 기능은 아닙니다. |
+| CORS / Cross-Origin Resource Sharing | 서버 응답을 다른 origin의 browser script와 공유할 수 있는 조건을 응답 header로 선언하는 protocol입니다. 허용되지 않은 request 자체를 모든 client에서 차단하는 방화벽은 아닙니다. |
+| CSP / Content Security Policy | 브라우저가 페이지에서 불러오거나 실행할 수 있는 리소스의 출처와 조건을 제한하는 response policy입니다. 안전한 입력·출력 처리와 함께 사용합니다. |
+| HSTS / HTTP Strict Transport Security | HTTPS 응답으로 정책을 받은 browser가 이후 해당 host에 HTTPS 연결만 하도록 기억하는 정책입니다. 하위 도메인 적용과 preload는 전체 domain 구성을 확인한 뒤 선택합니다. |
+| clickjacking | 투명하거나 겹친 frame 등으로 사용자가 의도와 다르게 다른 사이트의 조작 가능한 화면을 누르게 유도하는 UI 공격입니다. `frame-ancestors` 또는 호환 목적의 frame 정책을 검토합니다. |
+| COOP / Cross-Origin-Opener-Policy | 최상위 문서와 cross-origin browsing context 사이의 opener 관계를 제한하는 response header policy입니다. popup·OAuth 흐름의 영향을 확인합니다. |
+| COEP / Cross-Origin-Embedder-Policy | 문서가 no-CORS 방식으로 cross-origin 리소스를 embed할 수 있는 조건을 제한하는 response policy입니다. CORS·CORP 동의가 없는 리소스가 차단될 수 있습니다. |
+| Permissions Policy | 문서와 iframe이 camera·geolocation 등 browser 기능을 사용할 수 있는 범위를 지정하는 policy입니다. OS·계정·서버 권한을 대체하지 않습니다. |
 
 용어는 각 장의 적용 조건과 함께 읽습니다. 예를 들어 인증된 메시지도 재전송일 수 있고, 유사한 검색 결과에도 읽기 권한이 없을 수 있습니다. 정의를 판단 근거로 바꾸는 예제는 각 장에 연결했습니다.

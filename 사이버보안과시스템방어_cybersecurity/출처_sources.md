@@ -207,6 +207,22 @@
 | [Google Kubernetes Engine: Protecting cluster metadata](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/protecting-cluster-metadata) | GKE 공식 문서; 2026-11-04 확인 | metadata concealment 보호 대상·제한·hostNetwork 적용 조건 |
 | [Microsoft Azure: Instance Metadata Service for virtual machines](https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service) | Microsoft Learn 공식 문서; 2026-11-04 확인 | VM 내부 접근, Metadata 헤더와 X-Forwarded-For 요청 조건 |
 
+| [Content Security Policy Level 3](https://www.w3.org/TR/CSP3/) | W3C Working Draft, 2026-10-27; 2026-11-04 확인 | CSP 지시자와 정책 적용 구조; Working Draft로 표시 |
+| [OWASP Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html) | OWASP 공식 지침; 2026-11-04 확인 | nonce·hash 기반 strict CSP, strict-dynamic, template nonce 적용 주의 |
+| [Fetch Standard §3.3: CORS protocol](https://fetch.spec.whatwg.org/#cors-protocol) | WHATWG Living Standard, 2026-10-19 갱신; 2026-11-04 확인 | CORS의 response-sharing 의미, preflight 및 credentialed request 규칙 |
+| [RFC 6797: HTTP Strict Transport Security](https://datatracker.ietf.org/doc/html/rfc6797) | 2012-11; IETF Standards Track; 2026-11-04 확인 | HTTPS 응답에 따른 HSTS 저장, includeSubDomains, 사용자 에이전트 적용 §5·§6 |
+| [OWASP Secure Headers Project: Best Practices](https://secure-headers-project.owasp.org/best-practices/) | OWASP 공식 프로젝트 문서; 2026-11-04 확인 | CSP·HSTS·frame 제한·nosniff·Referrer-Policy 권고값과 적용 전 고려 |
+| [OWASP Secure Headers Project: Response Headers](https://secure-headers-project.owasp.org/response-headers/) | OWASP 공식 프로젝트 문서; 2026-11-04 확인 | HSTS·X-Frame-Options·nosniff·Referrer-Policy 기능 및 제한 |
+| [MDN: Content Security Policy implementation](https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/CSP) | MDN Web Docs; 2026-11-04 확인 | nonce/hash 선택과 script 의존성 배포 단계 |
+| [MDN: Content-Security-Policy-Report-Only](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy-Report-Only) | MDN Web Docs; 2026-11-04 확인 | Report-Only의 비차단 동작, `report-to`, `Reporting-Endpoints`, report-uri 호환성 |
+| [MDN: Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS) | MDN Web Docs; 2026-11-04 확인 | simple request, preflight, credentialed CORS와 browser response-sharing |
+| [MDN: Cross-Site Request Forgery](https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/CSRF) | MDN Web Docs; 2026-11-04 확인 | CORS·SameSite와 별도의 CSRF 방어 및 상태 변경 요청 보호 |
+| [MDN: Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Strict-Transport-Security) | MDN Web Docs; 2026-11-04 확인 | HSTS 저장·하위 도메인·최초 접속의 제한·preload의 차이 |
+| [MDN: Referrer-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Referrer-Policy) | MDN Web Docs; 2026-11-04 확인 | same-origin·cross-origin 요청에서 Referer URL 정보의 범위 |
+| [MDN: Cross-Origin-Opener-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy) | MDN Web Docs; 2026-11-04 확인 | opener 분리와 cross-origin isolation 관련 구성 |
+| [MDN: Cross-Origin-Embedder-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy) | MDN Web Docs; 2026-11-04 확인 | no-CORS embedding, CORP/CORS 요구와 COEP의 적용 범위 |
+| [W3C Permissions Policy](https://www.w3.org/TR/permissions-policy-1/) | W3C Working Draft, 2026-10-26; 2026-11-04 확인 | 문서·iframe의 browser feature policy 및 현재 초안 상태 |
+
 ## 코드 출처
 
 `실습_labs`의 코드는 공식 코드를 복사한 것이 아니라 직접 작성한 교육 예제입니다. 표준 라이브러리 API와 설계 원칙의 출처를 각 장에 연결했습니다. HMAC 검사의 공개 정답은 RFC 4231 §4.2에서 가져왔습니다. 자체 SQL 입력·문서·로그·프레임과 계산값은 외부 기관의 측정 데이터가 아닙니다.
