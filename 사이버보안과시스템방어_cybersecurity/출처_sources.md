@@ -101,6 +101,13 @@
 | [Remediating a leaked secret in your repository](https://docs.github.com/en/code-security/tutorials/remediate-leaked-secrets/remediating-a-leaked-secret) | 2026-11-04 확인 | 노출 평가·폐기·재발급·서비스 갱신·Git 기록 정리 |
 | [Removing sensitive data from a repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) | 2026-11-04 확인 | credential 폐기 우선·history rewrite·clone·fork·cache 영향 |
 | [GitHub Actions Secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) | 2026-11-04 확인 | workflow 최소 권한·secret masking의 한계·구조화된 비밀값·생성된 민감 값 등록 |
+| [Securely using pull_request_target](https://docs.github.com/en/actions/reference/security/securely-using-pull_request_target) | 2026-11-04 확인 | 기본 브랜치 문맥·PR 코드 실행 위험·cache 읽기 정책·runner 분리 |
+| [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) | 2026-11-04 확인 | `pull_request`·`pull_request_target`·`workflow_run` 실행 문맥과 fork 동작 |
+| [Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) | 2026-11-04 확인 | fork PR workflow의 token·secret·승인 정책 |
+| [Dependency caching reference](https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching) | 2026-11-04 확인 | 낮은 신뢰도의 workflow와 cache 쓰기 권한·poisoning 위험 |
+| [Preventing pwn requests](https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/) | 2021년 게시, 2026-11-04 확인 | PR build·test·설치 hook에서 권한 있는 workflow로 이어지는 공격 경로 |
+| [Python `json` library](https://docs.python.org/3/library/json.html) | Python 3 표준 라이브러리 문서, 2026-11-04 확인 | JSON 파싱과 `object_pairs_hook` 인터페이스 |
+| [Python `pathlib`](https://docs.python.org/3/library/pathlib.html) | Python 3 표준 라이브러리 문서, 2026-11-04 확인 | 경로 객체와 바이너리 파일 읽기 |
 
 ## 코드 출처
 

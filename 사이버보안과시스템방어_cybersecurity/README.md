@@ -38,6 +38,7 @@
 | 탐지 설계 | [탐지 규칙 설계와 검증](26-탐지규칙설계와검증_detection-engineering.md) | Sigma 규칙·로그 필드 매핑·시간 상관·오탐과 운영 전 검증입니다. |
 | 로그 운영 | [보안 로그 수집 파이프라인과 손실 감시](27-보안로그수집과손실감시_log-pipeline-integrity.md) | 원천 이벤트·수집 누락·파서 오류·대기열·중앙 보관 상태를 확인합니다. |
 | 자격 증명 | [비밀정보 수명주기와 CI 자격 증명](28-비밀정보수명주기와CI자격증명_secrets-lifecycle.md) | 저장소 비밀 유출 대응·키 교체·GitHub Actions OIDC·최소 권한을 다룹니다. |
+| CI 보안 | [외부 PR과 권한 있는 GitHub Actions workflow](29-외부PR과권한있는워크플로우_github-actions-trust-boundaries.md) | `pull_request_target`·`workflow_run`의 권한 경계, artifact·cache 취급과 PR 시험 분리를 설명합니다. |
 
 ## 글과 근거의 성격
 
@@ -60,4 +61,4 @@
 
 ## English
 
-This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, ransomware response, email authentication, endpoint detection, detection engineering, log-pipeline health, secret lifecycle management and workload identity. It distinguishes client-side mobile controls from backend verification, sender-domain authentication from business-request legitimacy, and endpoint alert signals from incident evidence. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.
+This section connects security foundations with application, network, memory, cloud, supply-chain, embedded and AI security, authorized testing, enterprise identities, mobile apps, wireless LANs, ransomware response, email authentication, endpoint detection, detection engineering, log-pipeline health, secret lifecycle management, workload identity, and the trust boundaries around pull requests and privileged GitHub Actions workflows. It distinguishes client-side mobile controls from backend verification, sender-domain authentication from business-request legitimacy, and endpoint alert signals from incident evidence. Educational exercises use synthetic data; operational actions remain subject to authorization and incident procedures.

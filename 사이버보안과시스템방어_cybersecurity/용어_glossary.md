@@ -78,5 +78,8 @@
 | 동적 비밀정보 / Dynamic secret | 소비자나 작업이 필요할 때 발급되어 사용기간이 제한된 자격 증명입니다. 소비자가 종료되어도 발급자의 lease 만료나 폐기 처리가 따로 필요할 수 있습니다. |
 | 워크로드 연합 신원 / Federated workload identity | workflow나 서비스가 외부 신원 제공자의 검증된 토큰으로 다른 서비스의 제한된 역할을 얻는 방식입니다. 토큰에 포함된 발급자·대상·주체 조건을 수신 측에서 검증합니다. |
 | 비밀정보 검사 / Secret scanning | 저장소 기록·변경 등에 알려진 패턴 또는 설정한 패턴이 있는지 찾아 경보를 만드는 검사입니다. 제공자에서 실제 자격 증명을 폐기하는 기능과는 구분합니다. |
+| 권한 있는 workflow / Privileged workflow | 쓰기 권한 token, secret, 배포 권한 또는 내부 자원 접근을 가진 GitHub Actions workflow입니다. 실행 코드와 입력의 신뢰 수준을 권한에 맞춰 제한해야 합니다. |
+| 신뢰하지 않는 artifact / Untrusted artifact | 외부 PR 또는 낮은 권한 job이 만든 빌드 결과·시험 보고서입니다. workflow 실행 정보와 연결해도 파일 내용 자체가 안전하다는 증명은 아니므로 실행 가능한 코드로 취급하지 않습니다. |
+| pwn request | 외부 PR의 변경 코드를 권한 있는 `pull_request_target` 또는 `workflow_run` 문맥에서 실행해 secret·token을 노출하는 GitHub Actions 취약 구성입니다. |
 
 용어는 각 장의 적용 조건과 함께 읽습니다. 예를 들어 인증된 메시지도 재전송일 수 있고, 유사한 검색 결과에도 읽기 권한이 없을 수 있습니다. 정의를 판단 근거로 바꾸는 예제는 각 장에 연결했습니다.
