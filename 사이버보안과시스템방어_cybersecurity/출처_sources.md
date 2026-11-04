@@ -183,6 +183,13 @@
 | [Kubernetes Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/) | 공식 문서 v1.37; 2026-11-04 확인 | CNI 전제, Pod 선택·격리, 정책 합집합, 양방향 허용, DNS·NAT·hostNetwork·표준 API 한계 |
 | [Cilium: Overview of Network Policy](https://docs.cilium.io/en/stable/security/policy/) | Cilium 1.20.4 stable 공식 문서; 2026-11-04 확인 | Kubernetes 기본 정책과 Cilium 전용 CRD, L3·L4·L7 정책 경계 |
 | [Calico: Enable a default deny policy for Kubernetes pods](https://docs.tigera.io/calico/latest/network-policy/get-started/kubernetes-default-deny) | Calico 공식 문서; 2026-11-04 확인 | Kubernetes 기본 허용·선택 방향 격리, 시스템 Namespace 예외, 단계적 정책 시험 |
+| [RFC 7239: Forwarded HTTP Extension](https://www.rfc-editor.org/rfc/rfc7239.html) | 2014-06; Standards Track; 2026-11-04 확인 | 전달 헤더 형식·프록시 체인 및 헤더 무결성·개인정보 고려 §4·§8 |
+| [NGINX `ngx_http_realip_module`](https://nginx.org/en/docs/http/ngx_http_realip_module.html) | 공식 매뉴얼; 2026-11-04 확인 | `set_real_ip_from`·`real_ip_header`·`real_ip_recursive`와 실제 신뢰 주소 범위 |
+| [OWASP CRS Anomaly Scoring](https://coreruleset.org/docs/2-how-crs-works/2-1-anomaly_scoring/) | CRS 공식 문서; 2026-11-04 확인 | 규칙 매치 점수 누적, inbound·outbound 임계값과 차단 판정 |
+| [OWASP CRS False Positives and Tuning](https://coreruleset.org/docs/2-how-crs-works/2-3-false-positives-and-tuning/) | CRS 공식 문서; 2026-11-04 확인 | 정상 요청 오탐, 제한된 규칙 예외와 룰셋 직접 수정의 위험 |
+| [Cloudflare Protect your origin server](https://developers.cloudflare.com/fundamentals/security/protect-your-origin-server/) | 2026-10-02 갱신; 2026-11-04 확인 | 원본 주소 노출, Network allowlist·mTLS·Tunnel과 제품별 한계 |
+| [Cloudflare Authenticated Origin Pulls](https://developers.cloudflare.com/ssl/origin-configuration/authenticated-origin-pull/) | 공식 문서; 2026-11-04 확인 | Cloudflare와 원본 사이 클라이언트 인증서 검사, 적용 가능한 TLS 모드 |
+| [Cloudflare Full (strict)](https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/full-strict/) | 공식 문서; 2026-11-04 확인 | Cloudflare에서 원본 서버로 이어지는 TLS 연결과 원본 인증서 검증 |
 
 ## 코드 출처
 
