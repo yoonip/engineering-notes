@@ -1,64 +1,36 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-04 20:28 KST
+반영: 2026-11-05 03:48 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## 전 세계 도시들, NVIDIA 피지컬 AI와 에이전틱 AI로 AI 서비스를 구축하고 확장하다
+## NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support
 
-> 인프라 계획과 교통부터 공공 서비스까지, 도시들이 NVIDIA 기반 애플리케이션으로 지역의 필요에 대응하고 더…
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.
 
-출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/cities-physical-agentic-ai-applications/>) · RSS·Atom 발행 시각: 2026-11-04 15:20 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/>) · RSS·Atom 발행 시각: 2026-11-05 03:46 KST
 
-RSS·Atom 표기 작성자: NVIDIA Korea
+RSS·Atom 표기 작성자: Shara Tibken
 
-가져온 시각: 2026-11-04 20:28:41 KST
+가져온 시각: 2026-11-05 03:48:25 KST
 
-수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
-
-개요: 공식 한국어 소개 발췌
-
-## STM32G5: The most secure mixed-signal STM32 MCU supports PQC to future-proof designs against regulations
-
-STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.
-
-출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/stm32g5-security/>) · RSS·Atom 발행 시각: 2026-11-04 01:08 KST
-
-RSS·Atom 표기 작성자: David Civera
-
-가져온 시각: 2026-11-04 03:01:11 KST
-
-수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## STM32H7P: the 1st Cortex-M7 with ST’s Neural-ART NPU and a Hardware Signal Processor, with no price increase
+## Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes
 
-STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 프로세서·컴퓨터구조 주제를 다룹니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용·평가 주제를 다룹니다.
 
-출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/stm32h7p/>) · RSS·Atom 발행 시각: 2026-11-04 01:00 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/>) · RSS·Atom 발행 시각: 2026-11-05 01:00 KST
 
-RSS·Atom 표기 작성자: David Civera
+RSS·Atom 표기 작성자: Patrick Moorhead
 
-가져온 시각: 2026-11-04 03:01:11 KST
+가져온 시각: 2026-11-05 03:48:25 KST
 
-수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## STM32G5: 2x the performance, unprecedented peripherals – our new flagship mixed-signal MCU for digital power and motor control
-
-STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.
-
-출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/stm32g5/>) · RSS·Atom 발행 시각: 2026-11-04 01:00 KST
-
-RSS·Atom 표기 작성자: David Civera
-
-가져온 시각: 2026-11-04 03:01:11 KST
-
-수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
