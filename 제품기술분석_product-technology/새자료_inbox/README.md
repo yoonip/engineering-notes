@@ -1,10 +1,24 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-05 03:48 KST
+반영: 2026-11-05 09:30 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## How NVIDIA Uses AI Agents to Streamline AI Factory Operations
+
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용·GPU·가속기 주제를 다룹니다.
+
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/>) · RSS·Atom 발행 시각: 2026-11-05 07:00 KST
+
+RSS·Atom 표기 작성자: Shara Tibken
+
+가져온 시각: 2026-11-05 09:30:17 KST
+
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
 
 ## NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support
 
