@@ -187,8 +187,10 @@
     "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo",
     "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw",
     "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos",
+    "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os": "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os",
     "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution": "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution",
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
+    "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory": "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory",
     "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations": "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations",
     "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform",
     "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery": "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery",
@@ -4111,6 +4113,44 @@
           "title": "Update Zephyr 4.5.0: Expanding interface support, now compatible with 26 new development boards",
           "update": false,
           "url": "https://blog.st.com/zephyr/"
+        },
+        {
+          "acquired_at": "2026-11-05T22:13:35.356894+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Sowmyan Soman",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-05T17:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-05T22:12:21.673795+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/"
+        },
+        {
+          "acquired_at": "2026-11-05T22:13:35.356894+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Shara Tibken",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-05T16:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-05T22:12:21.673795+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 메모리·캐시 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
         }
       ]
     },
@@ -6313,6 +6353,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos"
     },
+    "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os"
+    },
     "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution"
@@ -6320,6 +6364,10 @@
     "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages"
+    },
+    "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory"
     },
     "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations": {
       "group": "products",
@@ -6648,10 +6696,10 @@
       "Last-Modified": "Thu, 05 Nov 2026 10:51:34 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"696282da91f42ebf9d885fc5be7678e9a358a764682a1fd0f1b02acea3e7d3ae\""
+      "ETag": "W/\"c2375ca4fb14fc9a7af949841f8ecc6c42bff1cf199e75363b1aee702b77f793\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"60920357dbd6a24662ec804755894c088e7ad5726a4914a100980654d68044de\""
+      "ETag": "W/\"198036296402d8621de6cb213debf5da5db1f4af8867e01085e5c84ba5e26973\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -6686,14 +6734,14 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/rss.xml": {
-      "Last-Modified": "Tue, 03 Nov 2026 17:01:49 GMT"
+      "ETag": "\"J_PmUA\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"78ZFGw\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"a81a58fff2a15752ab98142cb9ef2c25\"",
-      "Last-Modified": "Wed, 04 Nov 2026 22:13:03 GMT"
+      "ETag": "\"e32d7915a138b109ef35a8922fc7b636\"",
+      "Last-Modified": "Thu, 05 Nov 2026 21:29:16 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -6701,10 +6749,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33baa-D8Le7xCOW8NDYSUeJSmiaL18F2c\""
+      "ETag": "W/\"33baa-G8MSKMC8blV6b4ZlFhp9VfivVM4\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40154-IKmj6TfuYHYx/7mO6F4RdCcGlwA\""
+      "ETag": "W/\"40154-0Vde9NbgkjPgmtitNDGS6mE7GnE\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -6749,12 +6797,12 @@
       "Last-Modified": "Thu, 05 Nov 2026 00:21:40 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793893080\"",
-      "Last-Modified": "Thu, 05 Nov 2026 15:38:00 GMT"
+      "ETag": "\"1793916554\"",
+      "Last-Modified": "Thu, 05 Nov 2026 22:09:14 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793893473\"",
-      "Last-Modified": "Thu, 05 Nov 2026 15:44:33 GMT"
+      "ETag": "\"1793916823\"",
+      "Last-Modified": "Thu, 05 Nov 2026 22:13:43 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -6846,7 +6894,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"09e39261b2b889b028d77654a06578afc\""
+      "ETag": "\"09a7d308ee6f8eb22d8e20fc0647e25dc\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -6946,8 +6994,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"13640f655b7b2c68534b1fe6d459cd41\"",
-      "Last-Modified": "Thu, 05 Nov 2026 15:26:22 GMT"
+      "ETag": "\"3ddeeb3af28b4d222a7b8e8ee0a9dccc\"",
+      "Last-Modified": "Thu, 05 Nov 2026 21:58:47 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -9879,6 +9927,10 @@
       "list_fingerprint": "c9aeb5e6ee393898d2be1ad0c4f88c8f1fb2ea1d1cffba1f272b81e328f2092b",
       "status": "bootstrap_skipped"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os": {
+      "list_fingerprint": "693e65cea52f49ffab414c7581abf9b0f19fd9c7d005f880ad83a1d1da20a6d1",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/control-how-your-gpu-shares-work-with-green-contexts": {
       "list_fingerprint": "94916dd80bd80105034b45fef883d6d70a21c90bd0a0fecb329bd4463c8eda9f",
       "status": "bootstrap_skipped"
@@ -9949,6 +10001,10 @@
     },
     "nvidia-technical:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
       "list_fingerprint": "98559625fad74686d8d8017f18e36ceee41eb227751a7c961e536cac9c585ebe",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory": {
+      "list_fingerprint": "47b554d55bda3fb9a9fa1f25f2a7eee360c52670fb81da927ddc289fb0744528",
       "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/from-wafer-out-to-first-token-codifying-supply-chain-expertise-with-nemotron-and-palantir-foundry": {
@@ -11269,6 +11325,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/"
     },
+    "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os": {
+      "fingerprint": "693e65cea52f49ffab414c7581abf9b0f19fd9c7d005f880ad83a1d1da20a6d1",
+      "first_seen": "2026-11-05T22:12:21.673795+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/"
+    },
     "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution": {
       "fingerprint": "500fdd31753a2bd0973ccfae7f53ddfbefaae1b610e926c97a154708eef82de6",
       "first_seen": "2026-11-03T01:44:27.211737+00:00",
@@ -11280,6 +11342,12 @@
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
+    },
+    "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory": {
+      "fingerprint": "47b554d55bda3fb9a9fa1f25f2a7eee360c52670fb81da927ddc289fb0744528",
+      "first_seen": "2026-11-05T22:12:21.673795+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
     },
     "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations": {
       "fingerprint": "80b5f13f329bf66896f64a2f3154821a34267ffc90da707e060e253a6c559933",
