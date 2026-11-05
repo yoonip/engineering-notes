@@ -1,42 +1,18 @@
 # 도구·보안 새 자료
 
-반영: 2026-11-05 16:16 KST
+반영: 2026-11-06 00:44 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## Zyxel 제품 보안 업데이트 권고
+## Debian 및 Ubuntu 패키지 매니저 APT 보안 업데이트 권고
 
-> 보안공지 &gt; 알림마당 : KISA 보호나라&amp;KrCERT/CC
+> 리눅스 운영체제에서 응용 SW 설치 또는 업데이트를 위해 사용하는 패키지 매니저\(APT\)에서 취약점이 발견 \[1\] ~ \[4\]…
 
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72279>) · 공식 RSS 게시일: 2026-11-05
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72283>) · 공식 RSS 게시일: 2026-11-05
 
-가져온 시각: 2026-11-05 16:16:03 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
-
-## WordPress 제품 보안 업데이트 권고
-
-> 보안공지 &gt; 알림마당 : KISA 보호나라&amp;KrCERT/CC
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72278>) · 공식 RSS 게시일: 2026-11-04
-
-가져온 시각: 2026-11-05 16:16:05 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
-
-## 美 CISA 발표 주요 Exploit 정보공유\(Update. 2026-11-04\)
-
-> 보안공지 &gt; 알림마당 : KISA 보호나라&amp;KrCERT/CC
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72277>) · 공식 RSS 게시일: 2026-11-04
-
-가져온 시각: 2026-11-05 16:16:07 KST
+가져온 시각: 2026-11-06 00:44:23 KST
 
 수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
 
