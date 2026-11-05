@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-05 07:40 KST
+갱신: 2026-11-05 12:30 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -28,11 +28,29 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105001900099>) · 2026-11-05 01:27 KST · 작성·제공: 나확진
 
+## 中, 역대급 무역흑자 속 수입박람회 개최…내수시장 개방 강조
+
+> 올해 역대 최대 규모 상품무역 흑자를 기록할 것으로 전망되는 중국이 대규모 수입 박람회를 열어 내수시장 개...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105063100089>) · 2026-11-05 10:27 KST · 작성·제공: 차병섭
+
 ## 스페인 열차참사 여파로 총선 4주 앞 교통장관 교체
 
 > 스페인 고속열차 참사의 책임을 지고 교통 장관이 사퇴하면서 페드로 산체스 총리가 총선이 한 달도 남지 않은 ...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261104182100085>) · 2026-11-04 22:05 KST · 작성·제공: 김지연
+
+## '최악 산불' 인니서 군 헬기 진화 중 추락…2명 사망·1명 실종
+
+> 11년 만에 최악의 산불이 발생한 인도네시아에서 진화 작업 중 군 헬기가 추락해 2명이 숨지고 1명이 실...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105059400104>) · 2026-11-05 10:06 KST · 작성·제공: 손현규
+
+## 방글라데시 의류노동자, 닷새째 임금인상 요구 대규모 시위
+
+> 세계 2위 의류 수출국인 방글라데시의 의류 노동자들이 5일째 임금인상 요구 시위를 이어가자 노사정 대표 등으로...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105056400009>) · 2026-11-05 10:00 KST · 작성·제공: 유창엽
 
 ## \[美중간선거\] 민주당發 규제·조사 철퇴 맞을라…빅테크·월가 긴장
 
@@ -58,6 +76,12 @@
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261105/134969054/1>) · 2026-11-05 07:19 KST
 
+## "선거 참패" 두고 서로 '으르렁'…트럼프 손절한 머독?
+
+> 미국 중간선거에서 공화당이 참패하자 보수의 목소리를 대변했던 미디어 재벌 루퍼트 머독이 이른바, '트럼프 손절'에 나섰다는 분석이…
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008831677&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-05 11:22 KST · 작성·제공: sha@sbs.co.kr \(손형안\)
+
 ## 전문가들 “미 중간선거로 북한 협상력 커져”
 
 > 11월 3일 미국에서 치러진 중간선거에서 민주당이 상∙하 양원의 다수당을 차지하며 압승을 거둔 가운데 전문가들은 북중러 협력이 더 강화하면서 김정은 북한 국무위원장의 협상력은 더 커질 것으로…
@@ -80,7 +104,10 @@
 - [Bangladesh garment factories close as workers clash with police in pay protests](<https://abcnews.com/International/wireStory/bangladesh-garment-factories-close-workers-clash-police-pay-137843912>) · ABC News 미국
 - [Mozambique: Two Court Battles Challenge Frelimo Attempts to Channel Foreign Trade Through Party Oligarchs](<https://allafrica.com/stories/202611040564.html>) · AllAfrica · allAfrica.com
 - [Abdul El-Sayed welcomes Trump's plan to cut Israel aid, calls for end to arms sales](<https://www.npr.org/2026/11/04/nx-s1-6028702/abdul-el-sayed-michigan-senate-israel-aid>) · NPR
+- [Hong Kong pro-democracy activist faces sentencing in 2nd national security case](<https://abcnews.com/International/wireStory/hong-kong-pro-democracy-activist-joshua-wong-faces-137861278>) · ABC News 미국
+- [Authorities say multiple grizzlies may have attacked mother and daughter found dead](<https://abcnews.com/International/wireStory/canadian-authorities-multiple-grizzlies-attacked-mother-daughter-found-137863509>) · ABC News 미국
 - [US contractor admits passing US top-secret information to Ethiopia](<https://abcnews.com/International/wireStory/us-contractor-admits-passing-us-top-secret-information-137841130>) · ABC News 미국
+- [Bob Dylan comes knockin' on pope's door as Leo welcomes legend to Vatican](<https://abcnews.com/International/wireStory/bob-dylan-knockin-popes-door-leo-welcomes-legend-137857488>) · ABC News 미국
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 

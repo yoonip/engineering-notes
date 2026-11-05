@@ -1,6 +1,6 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-05 07:40 KST
+갱신: 2026-11-05 12:30 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
 
@@ -16,6 +16,12 @@
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261104163600002>) · 2026-11-05 05:51 KST · 작성·제공: 채새롬
 
+## 한국 정부, 청해부대 작전 범위 확대·초계기 추가 파견..”전쟁 관여·개입 절대 없을 것”
+
+> 한국 정부는 소말리아 아덴만 해역에서 상선 보호활동을 하는 청해부대의 작전 범위를 호르무즈 해협 인근인 오만 남방 해상 일대까지 확대하기로 했습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/korean-peninsula-11-05-26/8219205.html>) · 2026-11-05 11:24 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
+
 ## '연 100만 명' 온다더니 손실액이…대출 이자도 못 낸다
 
 > 최근 전국의 지자체들이 지역 경제를 살리겠다며 앞다퉈 케이블카 사업에 뛰어들고 있습니다.
@@ -27,6 +33,16 @@
 > 대선 후보 시절 허위 사실을 공표한 혐의로 재판에 넘겨진 윤석열 전 대통령이 항소심에서도 당선 무효형을 선고받았습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008831004&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-04 23:12 KST · 작성·제공: minq@sbs.co.kr \(권민규 기자\)
+
+## \[SDF\] 전장에 투입되는 AI…실전 변수 극복 가능할까? \(이준석-임성신 대담\)
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008831883&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-05 11:22 KST · 작성·제공: newsservice@sbs.co.kr\(SBS\)
+
+## "군악대 끼고 광란의 파티"…잇단 사고에도 정신 못 차린 공군의 민낯 \[취재파일\]
+
+> 쓰리스타도 원스타도 '껑충껑충' 광란의 파티공군 제3훈련비행단의 음주가무 간담회 사건이 큰 논란입니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008831610&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-05 11:23 KST · 작성·제공: oneway@sbs.co.kr \(김태훈 국방전문기자\)
 
 ## 유엔 안보리, 25일 대북제재위 활동 점검…90일 보고서 논의
 
@@ -46,11 +62,29 @@
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Society/article/all/20261105/134969103/1>) · 2026-11-05 07:34 KST
 
+## 지난달 삼전닉스 44조 배당 결정…37개사 기업가치 제고 첫 공시
+
+> 지난달 삼성전자\[005930\]와 SK하이닉스\[000660\] 등 주요 상장사가 잇달아 대규모 자사주 매입·소각 ...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261105086200008>) · 2026-11-05 12:05 KST · 작성·제공: 김유아
+
+## \[속보\]조작기소 특검법 오늘 본회의 상정…국힘 필버 예고
+
+> 여야가 이른바 ‘조작기소 특검법’ 처리 여부를 둘러싸고 정면충돌 양상을 보이는 가운데, 국회가 5일 오후 본회의를 개최한다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Politics/article/all/20261105/134970951/1>) · 2026-11-05 12:11 KST
+
 ## 태평양사령부 “북 미사일 발사, 즉각 위협 아냐… 동맹 방어 공약 확고”
 
 > 미국 태평양사령부는 북한의 최신 미사일 발사와 관련해 미국과 동맹국에 즉각적인 위협을 가하지 않는다고 평가했습니다.
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8218876.html>) · 2026-11-05 00:26 KST · 작성·제공: voadigital@voanews.com \(조은정\)
+
+## \[속보\]조작기소 특검 법안, 오늘 오후 본회의 상정
+
+> 조작기소 특검 법안, 오늘 오후 본회의 상정
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Politics/article/all/20261105/134970883/1>) · 2026-11-05 11:52 KST
 
 ## 북한, 유엔서 또 ‘유엔사 해체’ 주장
 
@@ -58,11 +92,33 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8218999.html>) · 2026-11-05 05:35 KST · 작성·제공: voadigital@voanews.com \(함지하\)
 
+## 3대 국책은행, ‘정책금융기관 글로벌 스케일업 협력펀드’ 위탁운용사 선정
+
+> 3대 국책은행인 IBK기업은행, 한국산업은행, 한국수출입은행이 ‘정책금융기관 글로벌 스케일업 협력펀드’ 위탁운용사 선정을 마쳤다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261105/134970875/1>) · 2026-11-05 11:50 KST
+
 ## \[VOA 인터뷰\] 민주당 상·하원 탈환 성공…한반도에 미칠 파장은?
 
 > 미국 중간선거 결과 의회 권력 지형이 어떻게 재편되느냐는 미국의 대한반도 외교·안보와 통상 정책의 향방을 가르는 핵심 변수 가운데 하나입니다.
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/troy-stangarone-interview/8218984.html>) · 2026-11-05 04:53 KST · 작성·제공: voadigital@voanews.com \(김영교\)
+
+## \[속보\] 趙의장, 오후 3시 본회의에 조작기소 특검법안 상정키로
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261105089500001>) · 2026-11-05 11:45 KST · 작성·제공: 김남권
+
+## 원주환경청, 국가하천 11곳 안전점검…홍수기 피해 살핀다
+
+> 기후에너지환경부 원주지방환경청이 여름철 홍수기를 거친 국가하천의 시설물 피해 여부를 확인하고 내년 홍수기에 대...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261105065800062>) · 2026-11-05 10:36 KST · 작성·제공: 임보연
+
+## 해수부, 미·중·일 등 17개국서 '한국 수산식품 홍보 주간'
+
+> 해양수산부는 오는 7∼28일 우리 수산 식품의 우수성을 알리고 수출을 확대하기 위해 '2026년 한국 수산 식...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261105087900030>) · 2026-11-05 11:42 KST · 작성·제공: 홍국기
 
 ## 中 부상에 韓전기차 수출 경쟁력 반토막 “2030년 2.2조 감소 우려”
 
