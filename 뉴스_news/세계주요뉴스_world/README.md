@@ -1,14 +1,30 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-05 12:30 KST
+갱신: 2026-11-05 21:22 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 러 에너지시설 공격에 키이우 물 끊겼다…"전쟁 발발 후 최악"
+
+> 러시아의 거듭된 우크라이나 에너지시설 공격 여파로 수도 키이우 시민들이 심각한 단수에 시달리는 것으로 나타났...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105174200109>) · 2026-11-05 19:48 KST · 작성·제공: 민경락
 
 ## 美선거 후 이란전쟁 종식 기대에 다우 3%↑…AI주 희비\(종합\)
 
 > 미국 중간선거에서 민주당이 의회 상·하원을 모두 장악하는 '블루웨이브'\(민주당 압승\)가 현실화하자 4...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105009852072>) · 2026-11-05 07:31 KST · 작성·제공: 임수정
+
+## \[2보\] 영국, 3년여만에 기준금리 인상…연 4%로 0.25%p↑
+
+> 영국 중앙은행인 잉글랜드은행\(BOE\)이 5일\(현지시간\) 통화정책위원회에서 기준금리를 연 4.00%로 0.25...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105179051085>) · 2026-11-05 21:07 KST · 작성·제공: 김지연
+
+## \[1보\] 영국, 3년여만에 기준금리 인상…연 4%로 0.25%p↑
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105179000085>) · 2026-11-05 21:00 KST · 작성·제공: 김지연
 
 ## 스페이스X, 스타링크 이동통신사업 본격화…퀄컴과 5G망 구축
 
@@ -70,6 +86,12 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8218944.html>) · 2026-11-05 03:43 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
+## "배수진 쳤나" 트럼프 입 열었다…"측근과 논의" 속내는
+
+> 우리 증시를 강타한 '파란 쓰나미', 트럼프 대통령을 사면초가로 몰고 있습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008832886&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-05 21:07 KST · 작성·제공: lucaside@sbs.co.kr \(이한석 기자\)
+
 ## 美제프리스 “이란 전쟁 끝내고 트럼프 관세 멈출 것”…탄핵엔 선긋기
 
 > 차기 미국 하원의장에 오를 하킴 제프리스 민주당 원내대표가 “하원이 트럼프 행정부의 ‘100% 자회사’처럼 움직이던 시절은 끝났다”며 도널드 트럼프 대통령에 대한 견제를 예고했다.
@@ -88,17 +110,43 @@
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/04/us-mid-term-election-kim-trump-negotiation/>) · 2026-11-05 06:21 KST · 작성·제공: 워싱턴 - 노정민 nohj@rfa.org, 자민 앤더슨 - andersonj@rfa.org
 
+## “등번호 7번 내려놓을 때 왔다”…호날두, 23년만에 국대 은퇴
+
+> 포르투갈 축구 스타 크리스티아누 호날두\(41·알나스르\)가 국가대표 은퇴를 선언했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261105/134975213/1>) · 2026-11-05 20:58 KST
+
 ## 밴스 美부통령 “이란 전쟁이 중간선거 패배 원인”…트럼프와 거리두기
 
 > JD 밴스 미국 부통령이 공화당의 중간선거 완패 원인으로 ‘이란과의 전쟁’을 직접 지목하며 도널드 트럼프 대통령의 강경책과 거리두기에 나섰다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261105/134969051/1>) · 2026-11-05 07:19 KST
 
+## “늙어 보이기 싫다”…美4050이 유독 기피하는 ‘이것’
+
+> 미국 중년층 사이에서 노안으로 시력이 나빠졌다는 사실을 인정하지 못해 돋보기 착용을 미루는 사례가 나타나고 있다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261105/134975496/1>) · 2026-11-05 21:18 KST
+
+## 북한 출신 연구자들 ‘미 중간선거로 북한의 대미 정책 셈법 복잡해졌다’
+
+> 트럼프 행정부와의 협상을 통해 핵 보유국 지위 인정과 대북제재 해제 및 완화 등의 과제를 풀어내려 했던 북한으로서는 트럼프 대통령의 정치적 입지 축소 가능성을 주시할 수밖에…
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/05/us-midterm-elections-sanctions-un-north-korea/>) · 2026-11-05 15:46 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
+## “코인으로만 3조원 벌어”…트럼프 일가 겨눈다
+
+> “변호사를 선임하라\(lawyer up\).”
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261105/134974139/1>) · 2026-11-05 20:20 KST
+
 ## 다른 매체의 원문
 
 - [Nigeria: Cheap Version of Breakthrough HIV Prevention Shot Approved](<https://allafrica.com/stories/202611040645.html>) · AllAfrica · allAfrica.com
 - [Iranians celebrate setback for Trump in US election, and other Mideast news](<https://abcnews.com/International/wireStory/iranians-celebrate-setback-trump-us-election-mideast-news-137854076>) · ABC News 미국
+- [What's next for Democrats after the midterms. And, a look at the outstanding races](<https://www.npr.org/2026/11/05/g-s1-152046/up-first-newsletter-democrats-congress-control-house-senate-trump-reaction>) · NPR
 - [Africa: Dakar 2026 Youth Olympic Games - Kenya on Top, Madagascar on Podium, Senegal Looks to Future](<https://allafrica.com/stories/202611040426.html>) · AllAfrica · allAfrica.com
+- [Tanzania/Uganda: Billions Pour Into Stadia - How EAC Nations are Investing for AFCON](<https://allafrica.com/stories/202611050328.html>) · AllAfrica · allAfrica.com
 - [How the Democrats’ surge impacts the US-Israel relationship](<https://www.csmonitor.com/World/Middle-East/2026/1104/israel-us-relationship-democrats-midterms?icid=rss>) · The Christian Science Monitor
 - [EU offers Serbia fresh hope for membership talks, says more countries could join soon](<https://abcnews.com/International/wireStory/eu-offers-serbia-fresh-hope-membership-talks-countries-137844800>) · ABC News 미국
 - [Bangladesh garment factories close as workers clash with police in pay protests](<https://abcnews.com/International/wireStory/bangladesh-garment-factories-close-workers-clash-police-pay-137843912>) · ABC News 미국
