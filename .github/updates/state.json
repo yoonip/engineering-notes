@@ -177,6 +177,7 @@
     "products:https://blog.st.com/stm32h7p": "products:https://blog.st.com/stm32h7p",
     "products:https://blog.st.com/stspin9p": "products:https://blog.st.com/stspin9p",
     "products:https://blog.st.com/touchgfx": "products:https://blog.st.com/touchgfx",
+    "products:https://blog.st.com/zephyr": "products:https://blog.st.com/zephyr",
     "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview": "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview",
     "products:https://blogs.nvidia.co.kr/blog/cities-physical-agentic-ai-applications": "products:https://blogs.nvidia.co.kr/blog/cities-physical-agentic-ai-applications",
     "products:https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure": "products:https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure",
@@ -280,7 +281,8 @@
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72270": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72270",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72277": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72277",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72278": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72278",
-    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72279": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72279"
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72279": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72279",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72283": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72283"
   },
   "days": {
     "industry": {
@@ -4089,6 +4091,27 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/"
         }
+      ],
+      "2026-11-06": [
+        {
+          "acquired_at": "2026-11-05T15:44:26.569284+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-05T14:00:02+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-05T15:43:22.540976+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/zephyr",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Update Zephyr 4.5.0: Expanding interface support, now compatible with 26 new development boards",
+          "update": false,
+          "url": "https://blog.st.com/zephyr/"
+        }
       ]
     },
     "reports": {
@@ -4961,6 +4984,27 @@
           "update": false,
           "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72279"
         }
+      ],
+      "2026-11-06": [
+        {
+          "acquired_at": "2026-11-05T15:44:23.310675+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-05",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-11-05T15:43:22.540976+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72283",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "리눅스 운영체제에서 응용 SW 설치 또는 업데이트를 위해 사용하는 패키지 매니저(APT)에서 취약점이 발견 [1] ~ [4]…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Debian 및 Ubuntu 패키지 매니저 APT 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72283"
+        }
       ]
     }
   },
@@ -5378,6 +5422,12 @@
       "date": "2026-11-05",
       "description": "보안공지 > 알림마당 : KISA 보호나라&KrCERT/CC",
       "title": "Zyxel 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72283": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-11-05",
+      "description": "리눅스 운영체제에서 응용 SW 설치 또는 업데이트를 위해 사용하는 패키지 매니저(APT)에서 취약점이 발견 [1] ~ [4] ※ APT(Advanced Packaging Tool) : 응용 프로그램 설치, 업데이트, 업그레이드를 수행하는 리눅스 패키지 매니저 o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Debian 및 Ubuntu 패키지 매니저 APT 보안 업데이트 권고"
     },
     "https://www.kdi.re.kr/research/economy?pub_no=18120": {
       "date": "",
@@ -6223,6 +6273,10 @@
       "group": "products",
       "key": "products:https://blog.st.com/touchgfx"
     },
+    "https://blog.st.com/zephyr": {
+      "group": "products",
+      "key": "products:https://blog.st.com/zephyr"
+    },
     "https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview": {
       "group": "products",
       "key": "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview"
@@ -6519,6 +6573,10 @@
       "group": "tools",
       "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72279"
     },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72283": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72283"
+    },
     "https://www.kdi.re.kr/research/economy?pub_no=19321": {
       "group": "reports",
       "key": "reports:https://www.kdi.re.kr/research/economy?pub_no=19321"
@@ -6586,14 +6644,14 @@
       "Last-Modified": "Tue, 03 Nov 2026 03:11:54 GMT"
     },
     "https://api-docs.deepseek.com/updates": {
-      "ETag": "\"bb8656333fa5271b51dc2e8bdb0eddc2\"",
-      "Last-Modified": "Wed, 04 Nov 2026 08:22:57 GMT"
+      "ETag": "\"f20f6f701387b99aab95983b35b8df50\"",
+      "Last-Modified": "Thu, 05 Nov 2026 10:51:34 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"328cc84b5ac1ce261712514fc7c3d547ff52c093767c4c1233e4b15ff22c7318\""
+      "ETag": "W/\"696282da91f42ebf9d885fc5be7678e9a358a764682a1fd0f1b02acea3e7d3ae\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"63958bfb82d2d69083a65719981c8a74753cce6801880d441d134c2bd96976ab\""
+      "ETag": "W/\"60920357dbd6a24662ec804755894c088e7ad5726a4914a100980654d68044de\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -6611,7 +6669,7 @@
       "Last-Modified": "Sun, 01 Nov 2026 12:16:24 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Wed, 04 Nov 2026 13:23:22 GMT"
+      "Last-Modified": "Thu, 05 Nov 2026 10:46:35 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -6627,6 +6685,9 @@
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "Last-Modified": "Tue, 03 Nov 2026 17:01:49 GMT"
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"78ZFGw\""
     },
@@ -6640,10 +6701,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bab-IL+MdmPYA/1EdNQJ5a5MxapVVHs\""
+      "ETag": "W/\"33baa-D8Le7xCOW8NDYSUeJSmiaL18F2c\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40155-TmImqLa3XtpHMFdqlJbuFTYfE8M\""
+      "ETag": "W/\"40154-IKmj6TfuYHYx/7mO6F4RdCcGlwA\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -6678,6 +6739,7 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
+    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -6687,12 +6749,12 @@
       "Last-Modified": "Thu, 05 Nov 2026 00:21:40 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793861532\"",
-      "Last-Modified": "Thu, 05 Nov 2026 06:52:12 GMT"
+      "ETag": "\"1793893080\"",
+      "Last-Modified": "Thu, 05 Nov 2026 15:38:00 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793862975\"",
-      "Last-Modified": "Thu, 05 Nov 2026 07:16:15 GMT"
+      "ETag": "\"1793893473\"",
+      "Last-Modified": "Thu, 05 Nov 2026 15:44:33 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -6740,6 +6802,7 @@
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72277": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72278": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72279": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72283": {},
     "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133": {},
     "https://www.boho.or.kr/robots.txt": {
       "ETag": "W/\"316-1677147811000\"",
@@ -6783,7 +6846,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"065944c4cc12e876c3270fa0d6f9ccbc9\""
+      "ETag": "\"09e39261b2b889b028d77654a06578afc\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -6883,8 +6946,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"9bb26711fa14854415fbb6fc8845de8e\"",
-      "Last-Modified": "Thu, 05 Nov 2026 06:39:56 GMT"
+      "ETag": "\"13640f655b7b2c68534b1fe6d459cd41\"",
+      "Last-Modified": "Thu, 05 Nov 2026 15:26:22 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -9128,6 +9191,10 @@
       "list_fingerprint": "4fefeb4f9f1da16ccf763f41c70c050315e6b75ed52b021b392d64fa870083e6",
       "status": "posted"
     },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72283": {
+      "list_fingerprint": "b0ffb90369e9214c2fbb1688e752668074134e13178561b19a9c47e57083564a",
+      "status": "posted"
+    },
     "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93860&mid=a10306040000": {
       "list_fingerprint": "d8d15543a49c2c241f17085238c50bbbc61e603451d3734f26ff9c1f1821d2ae",
       "status": "older_material"
@@ -11142,6 +11209,12 @@
       "language": "en",
       "url": "https://blog.st.com/touchgfx/"
     },
+    "products:https://blog.st.com/zephyr": {
+      "fingerprint": "e84e40df92ec40c9dcaa3cb4f57f99fff7c9b6751d4a6c995fcbf7fd45df7f01",
+      "first_seen": "2026-11-05T15:43:22.540976+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/zephyr/"
+    },
     "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview": {
       "fingerprint": "675710415c5f6a04048be047dcc7886224374f89c0bd17963bbc6c2c5c0f1898",
       "first_seen": "2026-11-02T08:07:09.272290+00:00",
@@ -11672,6 +11745,10 @@
       "list_fingerprint": "3b0cec06bfed9a6c046c3d9bbfd3fc70309bd92ba8fd761cf0a46e14bfb7842c",
       "status": "posted"
     },
+    "st-technical:https://blog.st.com/zephyr": {
+      "list_fingerprint": "e84e40df92ec40c9dcaa3cb4f57f99fff7c9b6751d4a6c995fcbf7fd45df7f01",
+      "status": "posted"
+    },
     "technology:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {
       "fingerprint": "a3a36ae8613ad6def0456e0fa0e9714177b88818a4ec842965cd7a9a0d1b57c2",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -11911,6 +11988,12 @@
       "first_seen": "2026-11-05T07:14:48.611837+00:00",
       "language": "ko",
       "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72279"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72283": {
+      "fingerprint": "9006982022b33847ed9c6b10352dcadc3a4f9ba4f4cdf00307972f358eba3548",
+      "first_seen": "2026-11-05T15:43:22.540976+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72283"
     },
     "zai:https://huggingface.co/zai-org/GLM-4-32B-0414": {
       "list_fingerprint": "668099737dbb9d78c04a151552a14b44e342232eb86aaf585c3669bf90b8b004",
