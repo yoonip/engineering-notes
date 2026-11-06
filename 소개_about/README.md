@@ -114,6 +114,7 @@
 | --- | --- |
 | 이름 | 윤일평 |
 | 국가연구자번호(IRIS) | 12944496 |
+| 공개 연구 자료 | [ECC latency-contract 재현 자료 · Zenodo](https://doi.org/10.5281/zenodo.24006829) |
 
 ## 영어
 
@@ -243,6 +244,7 @@ My technical work spans semiconductor circuits, digital hardware design, firmwar
 | --- | --- |
 | Name | Yoon IlPyung |
 | National Researcher Number (IRIS, Korea) | 12944496 |
+| Research artifacts | [ECC latency-contract reproducibility artifacts · Zenodo](https://doi.org/10.5281/zenodo.24006829) |
 
 ### English Proficiency
 
