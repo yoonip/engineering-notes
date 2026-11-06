@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-06 10:33 KST
+갱신: 2026-11-06 18:25 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -9,6 +9,12 @@
 > 러시아-우크라이나 전쟁에서 국지 휴전을 중재했던 도널드 트럼프 미국 대통령의 배우자 멜라니아 여사가 5일\(...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261106006900071>) · 2026-11-06 05:22 KST · 작성·제공: 이유미
+
+## 中YMTC, 신규 낸드공장 장비 최대 70% 국산화 추진
+
+> 중국 낸드플래시 업체인 양쯔메모리테크놀로지\(YMTC\)가 신규 공장에 도입할 반도체 제조 장비의 최대 70%...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261106166800083>) · 2026-11-06 17:56 KST · 작성·제공: 김현정
 
 ## 美우주군 특수작전사령부 가동…우주 전문병력 지원
 
@@ -28,6 +34,12 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261105178452085>) · 2026-11-06 03:50 KST · 작성·제공: 김지연
 
+## \[쇼츠\] 흔적도 없이 사라진 엔비디아칩…154억원어치 트럭째 증발
+
+> \(서울=연합뉴스\) 미국 실리콘밸리에서 1천140만 달러\(약 154억원\) 상당의 엔비디아 반도체가 운송 도중 사라져 현지 경찰이 수사에 나섰습니다...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261106142600704>) · 2026-11-06 16:30 KST · 작성·제공: 전석우
+
 ## 멕시코 기준금리 0.25%p 인하…브라질은 대선 후 동결
 
 > 멕시코 중앙은행이 시장의 예상을 깨고 기준금리를 0.25% 인하했다.
@@ -39,6 +51,12 @@
 > 미국 중간선거에서 참패한 도널드 트럼프 미국 대통령이 종전 압박을 받는 가운데, 이란 안보수장이 블라디미르...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261106003951079>) · 2026-11-06 03:21 KST · 작성·제공: 김상훈
+
+## \[연합뉴스 이 시각 헤드라인\] - 18:00
+
+> ■ 조작기소 특검법, 與주도로 국회 통과…국힘 "대통령 공소취소"
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261106160400011>) · 2026-11-06 18:00 KST · 작성·제공: 한미희
 
 ## 파라과이 대통령, 은행 부실 사태에 사임 발표…의회 수리 무산·탄핵 절차 계속
 
@@ -74,11 +92,35 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008832907&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-06 02:14 KST · 작성·제공: leekw@sbs.co.kr \(이경원 기자\)
 
+## “유럽국가들, 러-우 전쟁 계기 북 노동자 파견 문제 우려”
+
+> 유럽국가들은 러시아 파견 북한 노동자들의 외화 획득과 북한군 파병을 연계된 사안으로 보고 이 같은 고리를 끊기 위해 북한 노동자들의 인권 실태를 지적해야 한다는 공감대를 형성하고…
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/06/europe-concerned-north-korean-workers-russia-ukraine-war/>) · 2026-11-06 12:41 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
+## 북한인권결의안 공동제안국 참여 환영하지만… “한국, 좀 더 적극적으로”
+
+> 북한인권단체들은 한국 정부가 유엔 북한인권결의안 공동제안국에 참여하기로 한 데 대해 환영의 입장을 표하면서도 당사국으로서 좀 더 적극적으로 북한인권 문제를 제기할 것을 주문했다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/06/north-korea-resolution-un-humanrights/>) · 2026-11-06 16:11 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
+## 청진 출신 청년, 부산에서 고향을 만나다
+
+> 청진 바다에서 부산 바다까지.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/07/cheongjin-busan-sea-north-korean-defector/>) · 2026-11-06 16:05 KST · 작성·제공: 서울-김지수 kimjis@rfa.org
+
 ## 트럼프 “증시 폭락은 멍청한 민주당 때문…유권자 스스로를 탓하라”
 
 > 도널드 트럼프 미국 대통령이 미국 중간선거 직후 뉴욕증시 3대 지수가 일제히 급락한 것에 대해 민주당을 지지한 유권자들에게 책임을 돌렸다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261106/134976961/2>) · 2026-11-06 10:04 KST
+
+## 박항서, 상대팀 관중에 “내려와”…격분한 이유 따로 있었다
+
+> 태국 프로축구 경기 후 ‘김치맨’ 등 상대팀 관중의 한국인을 비하하는 혐오적 발언에 분노하는 모습을 보였던 박항서 깐짜나부리 파워FC 감독이 당시 강하게 항의했던 진짜 이유를 6일…
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261106/134980881/2>) · 2026-11-06 17:50 KST
 
 ## 알리에서 ‘한복’ 검색하면 中의상과 같이 떠…“외국인들 오해”
 
@@ -89,8 +131,11 @@
 ## 다른 매체의 원문
 
 - [Carney unveils budget to strengthen Canada's economy as Trump's trade war continues](<https://abcnews.com/International/wireStory/carney-unveils-budget-strengthen-canadas-economy-trumps-trade-137894318>) · ABC News 미국
+- [After cancer surgery, Pope Leo embarks on Latin America trip](<https://www.npr.org/2026/11/06/nx-s1-6032454/pope-leo-latin-america-trip>) · NPR
+- [Africa: CANEX Aims to Empower African Creatives to Compete in Global Markets and Drive Economic Growth](<https://allafrica.com/stories/202611060130.html>) · AllAfrica · allAfrica.com
 - [Belarus sentences Catholic priest to 3 years after he opposed the Ukraine war](<https://abcnews.com/International/wireStory/belarus-sentences-catholic-priest-3-years-after-opposed-137885551>) · ABC News 미국
 - [Paraguay's president is impeached minutes after resigning following a bank collapse](<https://www.npr.org/2026/11/05/nx-s1-6030842/paraguay-president-impeached-bank-collapse>) · NPR
+- [Africa: All of Africa Today - November 6, 2026](<https://allafrica.com/stories/202611060129.html>) · AllAfrica · allAfrica.com
 - [South Africa: Parties Keep Close Watch As Election Results Trickle in](<https://allafrica.com/stories/202611050495.html>) · AllAfrica · allAfrica.com
 - [More than a dozen flights in Europe receive bomb threats that an official calls 'malicious' hoaxes](<https://abcnews.com/International/wireStory/dozen-flights-europe-receive-bomb-threats-official-calls-137869253>) · ABC News 미국
 - [Africa: African Development Bank to Present 'Diaspora Initiative' in Paris to Accelerate Africa's Development](<https://allafrica.com/stories/202611050697.html>) · AllAfrica · allAfrica.com
