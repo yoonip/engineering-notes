@@ -1,64 +1,22 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-06 20:24 KST
+반영: 2026-11-07 03:19 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## NVIDIA, RTX Spark로 AI·창작·게이밍 아우르는 차세대 PC 경험 제시하다
+## Accelerating Reinforcement Learning Weight Refit with the Reshard Collective
 
-> NVIDIA는 RTX Spark를 통해 로컬 AI 에이전트, 콘텐츠 제작, 게이밍을 하나의 윈도우 PC에서 구현해 차세대 PC…
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론 주제를 다룹니다.
 
-출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul/>) · RSS·Atom 발행 시각: 2026-11-06 19:56 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/>) · RSS·Atom 발행 시각: 2026-11-07 03:03 KST
 
-RSS·Atom 표기 작성자: NVIDIA Korea
+RSS·Atom 표기 작성자: Tanya Lenz
 
-가져온 시각: 2026-11-06 20:24:37 KST
-
-수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
-
-개요: 공식 한국어 소개 발췌
-
-## Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/>) · RSS·Atom 발행 시각: 2026-11-06 02:00 KST
-
-RSS·Atom 표기 작성자: Sowmyan Soman
-
-가져온 시각: 2026-11-06 07:13:35 KST
+가져온 시각: 2026-11-07 03:19:01 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 메모리·캐시 주제를 다룹니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/>) · RSS·Atom 발행 시각: 2026-11-06 01:00 KST
-
-RSS·Atom 표기 작성자: Shara Tibken
-
-가져온 시각: 2026-11-06 07:13:35 KST
-
-수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Update Zephyr 4.5.0: Expanding interface support, now compatible with 26 new development boards
-
-STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.
-
-출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/zephyr/>) · RSS·Atom 발행 시각: 2026-11-05 23:00 KST
-
-RSS·Atom 표기 작성자: David Civera
-
-가져온 시각: 2026-11-06 00:44:26 KST
-
-수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
