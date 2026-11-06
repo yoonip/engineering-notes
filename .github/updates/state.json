@@ -225,6 +225,7 @@
     "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support": "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support",
     "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
     "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
+    "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus": "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus",
     "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map",
     "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
     "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes": "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes",
@@ -4796,6 +4797,25 @@
           "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
           "update": false,
           "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/"
+        },
+        {
+          "acquired_at": "2026-11-06T23:26:46.195943+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Olivia Stoner",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-06T22:20:20+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-06T23:25:24.962167+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·이미지·영상 처리·비용·실행 효율 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/"
         }
       ]
     },
@@ -7250,6 +7270,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands"
     },
+    "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus"
+    },
     "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map"
@@ -7561,10 +7585,10 @@
       "Last-Modified": "Thu, 05 Nov 2026 10:51:34 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"22ad0f4118466e1c4e59391028d580cec0898ab5a70e32c8e0e6b2232d961e74\""
+      "ETag": "W/\"7a8f75e3188ac8c45b004a55bc32c8f5dc5c927c07b79b53affa09157eaea154\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"c24a5e64219dbc02aa0b54249bb3f3d1eb72613e67da3a1be60f880a9902c3bd\""
+      "ETag": "W/\"d7e679c1f879119fc2f857d41b602696c5d3033378304b7d8c2c5b8c305e7db6\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -7599,14 +7623,14 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"3tITKA\""
+      "ETag": "\"eH3rkQ\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"S9ZwEA\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"880ccb42a1816788643f253b75098fdc\"",
-      "Last-Modified": "Fri, 06 Nov 2026 18:03:30 GMT"
+      "ETag": "\"2b9140979c0d81bca75638603aedf2d3\"",
+      "Last-Modified": "Fri, 06 Nov 2026 22:20:31 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -7614,10 +7638,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc9-nN4Uqyx+bF1HDfzJwuq1aMAEitI\""
+      "ETag": "W/\"33bc9-O0vbs7YDV+aQZU9Hznsaj0Yhiks\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40173-1Q8CvElh2i7jS3PVEmOnHUCqoyo\""
+      "ETag": "W/\"40173-1dH8/2PN0ulVldcH0ohmvY+NEHY\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -7652,7 +7676,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -7662,12 +7685,12 @@
       "Last-Modified": "Fri, 06 Nov 2026 02:38:32 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793988396\"",
-      "Last-Modified": "Fri, 06 Nov 2026 18:06:36 GMT"
+      "ETag": "\"1794007343\"",
+      "Last-Modified": "Fri, 06 Nov 2026 23:22:23 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793988995\"",
-      "Last-Modified": "Fri, 06 Nov 2026 18:16:35 GMT"
+      "ETag": "\"1794007294\"",
+      "Last-Modified": "Fri, 06 Nov 2026 23:21:34 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -7763,7 +7786,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0863ce444e5696a7120426aae9ffcad28\""
+      "ETag": "\"0b3dbc5444e0d95e25bc6fc28840b7de0\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -7863,8 +7886,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"6eac00db7bcff0f4fa124640451ad47e\"",
-      "Last-Modified": "Fri, 06 Nov 2026 18:07:10 GMT"
+      "ETag": "\"93950a57030b609e08cb1208ec37d6b7\"",
+      "Last-Modified": "Fri, 06 Nov 2026 22:51:24 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -7879,8 +7902,6 @@
     "https://www.spri.kr/posts/view/24023?code=AI-Brief": {},
     "https://www.spri.kr/posts/view/24031?code=AI-Brief": {},
     "https://www.spri.kr/posts/view/24032?code=magazine": {},
-    "https://www.spri.kr/posts?code=AI-Brief": {},
-    "https://www.spri.kr/posts?code=magazine": {},
     "https://www.spri.kr/robots.txt": {
       "ETag": "\"51-65f58ac773a86\"",
       "Last-Modified": "Tue, 03 Nov 2026 05:38:35 GMT"
@@ -11352,6 +11373,10 @@
       "list_fingerprint": "a3f83c94dd205ebeb4c2152252ba8818d2e54dd4b6865258286df80a59a9bdd9",
       "status": "older_material"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus": {
+      "list_fingerprint": "0680d26b67832452fd53a32a7fa1d5f4cb865fa518ad39baa8a2c9cb501665a9",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": {
       "list_fingerprint": "8b4e4b7975f38a0abf974f5f47f43b7a1e6447f3317a0cb3638916d193c3280c",
       "status": "posted"
@@ -12661,6 +12686,12 @@
       "first_seen": "2026-10-30T20:59:11.051787+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/"
+    },
+    "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus": {
+      "fingerprint": "0680d26b67832452fd53a32a7fa1d5f4cb865fa518ad39baa8a2c9cb501665a9",
+      "first_seen": "2026-11-06T23:25:24.962167+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/"
     },
     "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": {
       "fingerprint": "8b4e4b7975f38a0abf974f5f47f43b7a1e6447f3317a0cb3638916d193c3280c",
