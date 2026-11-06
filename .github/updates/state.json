@@ -209,6 +209,7 @@
     "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure": "products:https://blogs.nvidia.co.kr/blog/minerva-platform-infrastructure",
     "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": "products:https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
     "products:https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul": "products:https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul",
+    "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective": "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective",
     "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo",
     "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw",
     "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos",
@@ -422,6 +423,27 @@
           "title": "NASA Announces Ka-Band Satellite Relay Awards for Space Communications",
           "update": false,
           "url": "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/"
+        }
+      ],
+      "2026-11-07": [
+        {
+          "acquired_at": "2026-11-06T18:18:56.822494+00:00",
+          "acquisition_method": "공식 기술 분야 RSS의 제목·발행일·소개",
+          "author": "Gary Daines",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-20T18:11:33+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-10-29T04:12:29.166428+00:00",
+          "group": "industry",
+          "homepage": "https://www.nasa.gov/technology/",
+          "key": "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module",
+          "source_name": "NASA 기술 자료",
+          "source_url": "https://www.nasa.gov/technology/feed/",
+          "summary_ko": "NASA 기술 자료에서 공개한 산업 기술 자료입니다. 공개 제목·소개에서 에너지·전력·우주·항공 시스템 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NASA’s SR-1 Freedom Advances with Progress on Nuclear Power Module",
+          "update": true,
+          "url": "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module/"
         }
       ]
     },
@@ -4754,6 +4776,27 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
         }
+      ],
+      "2026-11-07": [
+        {
+          "acquired_at": "2026-11-06T18:19:01.502115+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Tanya Lenz",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-06T18:03:26+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-06T18:18:00.865857+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/"
+        }
       ]
     },
     "reports": {
@@ -7143,6 +7186,10 @@
       "group": "products",
       "key": "products:https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul"
     },
+    "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective"
+    },
     "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo"
@@ -7514,10 +7561,10 @@
       "Last-Modified": "Thu, 05 Nov 2026 10:51:34 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"b486973c3fec3924449c7223105d1dee19707ddbe0c8de33b682b5df5399d060\""
+      "ETag": "W/\"22ad0f4118466e1c4e59391028d580cec0898ab5a70e32c8e0e6b2232d961e74\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"78424198a036a1a3a075a2f9cae52e360403d8a8e0553d1373ee22659c8e09e9\""
+      "ETag": "W/\"c24a5e64219dbc02aa0b54249bb3f3d1eb72613e67da3a1be60f880a9902c3bd\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -7551,12 +7598,15 @@
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "ETag": "\"3tITKA\""
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"S9ZwEA\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"01e7517dcac6f84b6827816d5b63e47a\"",
-      "Last-Modified": "Fri, 06 Nov 2026 00:54:50 GMT"
+      "ETag": "\"880ccb42a1816788643f253b75098fdc\"",
+      "Last-Modified": "Fri, 06 Nov 2026 18:03:30 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -7564,10 +7614,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc9-Fr+LN/krcBq2ij2K0QH6mFBcpJ0\""
+      "ETag": "W/\"33bc9-nN4Uqyx+bF1HDfzJwuq1aMAEitI\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40173-tz1MfqW3ay8DCpCbHzhYDx+ewz8\""
+      "ETag": "W/\"40173-1Q8CvElh2i7jS3PVEmOnHUCqoyo\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -7612,12 +7662,12 @@
       "Last-Modified": "Fri, 06 Nov 2026 02:38:32 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1793962522\"",
-      "Last-Modified": "Fri, 06 Nov 2026 10:55:22 GMT"
+      "ETag": "\"1793988396\"",
+      "Last-Modified": "Fri, 06 Nov 2026 18:06:36 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1793963374\"",
-      "Last-Modified": "Fri, 06 Nov 2026 11:09:34 GMT"
+      "ETag": "\"1793988995\"",
+      "Last-Modified": "Fri, 06 Nov 2026 18:16:35 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -7713,7 +7763,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"08c6d30175379fa80f6b18810dcb14a44\""
+      "ETag": "\"0863ce444e5696a7120426aae9ffcad28\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -7813,8 +7863,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"1027a3924f7f951d5b7c014bf69eccc0\"",
-      "Last-Modified": "Fri, 06 Nov 2026 05:05:00 GMT"
+      "ETag": "\"6eac00db7bcff0f4fa124640451ad47e\"",
+      "Last-Modified": "Fri, 06 Nov 2026 18:07:10 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -9893,7 +9943,7 @@
       "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=vu3_ACiKP7eqexfQqZ9ooVZgG9KKOouPhBCRxmj7.mehome1?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1902920"
     },
     "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": {
-      "fingerprint": "867be9219fd5339d7d7613960badc853e9cfb9599da56266e8c51a773324963b",
+      "fingerprint": "b202bd55f9742fd9dbc4b2c8e9f904611266181f01a467ce93db197ce4c7e84f",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module/"
@@ -10831,7 +10881,7 @@
       "status": "posted"
     },
     "nasa-technology:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": {
-      "list_fingerprint": "867be9219fd5339d7d7613960badc853e9cfb9599da56266e8c51a773324963b",
+      "list_fingerprint": "b202bd55f9742fd9dbc4b2c8e9f904611266181f01a467ce93db197ce4c7e84f",
       "status": "posted"
     },
     "nasa-technology:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team": {
@@ -10917,6 +10967,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile": {
       "list_fingerprint": "62df33cc62c1ef2122a2be7f94ca28690038156eebafd3876c417acc5a336248",
       "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective": {
+      "list_fingerprint": "6cf3454c387472ab1e052a9c097fa795d038708d98c5d8a790873afdb8b59b5b",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod": {
       "list_fingerprint": "47b4360f960a42431642f903b937735df884151445caf1c292ba7b6414346c29",
@@ -12511,6 +12565,12 @@
       "first_seen": "2026-11-06T11:23:31.639489+00:00",
       "language": "ko",
       "url": "https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul/"
+    },
+    "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective": {
+      "fingerprint": "6cf3454c387472ab1e052a9c097fa795d038708d98c5d8a790873afdb8b59b5b",
+      "first_seen": "2026-11-06T18:18:00.865857+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/"
     },
     "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": {
       "fingerprint": "fbc012361000fa3a384f2bd55c410b5b4b81e3773613c084151e07d5596294f6",
