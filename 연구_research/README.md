@@ -68,6 +68,30 @@ FPGA로 디지털 패턴을 전송하고 ADC/DAC 응답을 수집하는 혼성�
 | 석사과정생연구장려금 | 트랜스포머 DRAM-PIM |
 | 산학협력 | Ultra Low Leakage SRAM |
 
+## 최근 연구·투고와 공개 자료
+
+연구의 재현 코드와 실행 기록은 해당 연구의 전용 저장소에서 관리하고, 이 페이지에서는 주제·기여·진행 상태와 공개 자료를 안내합니다. 아래의 투고 기록과 데이터 공개는 학술지 게재 승인 또는 게재 완료를 뜻하지 않습니다. 상태는 2026년 11월 7일까지 확인한 기록을 기준으로 합니다.
+
+| 연구·자료 | 유형 | 확인한 상태 | 공개 자료 |
+| --- | --- | --- | --- |
+| MomentQuant 독립 부분 재현과 수치 정책의 영향 | 재현 연구 · 단독 저자 | 2026-11-05 ReScience C 투고 글 등록 | [투고 기록](https://github.com/ReScience/submissions/issues/152) · [코드·원고·재현 안내](https://github.com/yoonip/momentquant-partial-replication) |
+| Catching SPICE Crossing Errors | 실용기술 기고 | 2026-11-02 Circuit Cellar 웹 제안 제출 및 전체 원고의 보충 메일 발송 | [매체 홈페이지](https://circuitcellar.com/) |
+| Checking Latency Contracts in ECC Memory Maintenance 재현 자료 | 공개 데이터·코드·재현 자료 | 2026-11-06 Zenodo 자료 공개 | [자료와 코드](https://doi.org/10.5281/zenodo.24006829) |
+
+### MomentQuant 독립 부분 재현
+
+시계열 분류를 위한 MomentQuant 특징 추출을 논문에 근거해 독립 구현한 연구입니다. 원논문의 quantile-correlation 하위 실험에 포함된 여섯 데이터셋을 재현하고, 논문의 수식과 공개 구현의 수치 정책이 결과에 미치는 영향을 구분해 살폈습니다. 분류·CPU 비용 비교는 선택한 조건의 보조 실험이며, 원논문의 전체 데이터 아카이브 실험을 모두 재현했다고 주장하지 않습니다.
+
+[전용 저장소](https://github.com/yoonip/momentquant-partial-replication)에서 설치 방법, 실행 명령, 결과와 한계를 확인할 수 있습니다. [ReScience C 투고 글](https://github.com/ReScience/submissions/issues/152)에 연결한 원고와 코드는 같은 커밋 `15076af040411df1757f77fa5c119afefcbf3c1b`로 고정했습니다.
+
+### SPICE crossing 측정값의 회귀검사
+
+저장된 SPICE 파형에서 threshold crossing을 계산하고, native 측정값과 독립적인 PWL 계산을 대조하는 실용기술 기고입니다. 측정 조건·단위·방향을 명시하고, 기대값과 다른 측정값이 후속 프로그램에 전달되지 않도록 검사하는 과정을 설명합니다. 기술잡지 기고 제안으로 제출했으며 동료심사 학술논문의 게재 실적으로 분류하지 않습니다. 전체 원고는 이 저장소에서 공개하지 않습니다.
+
+### ECC 메모리 유지관리의 latency-contract 검증 자료
+
+[Zenodo 공개 기록](https://zenodo.org/records/24006829)의 제목은 “Reproducibility artifacts for Checking Latency Contracts in ECC Memory Maintenance”입니다. 해당 연구의 코드·데이터·재현 자료를 DOI `10.5281/zenodo.24006829`로 연결합니다. Zenodo의 자료 유형은 Dataset이며, 이 DOI 자체는 학술지 논문의 게재 승인이나 학술지 DOI를 나타내지 않습니다.
+
 ## 논문 및 기술 글
 
 ### 2025 · AI 모델의 에너지 분석
@@ -230,6 +254,28 @@ This project uses T5 to convert Braille into contextually appropriate Korean sen
 | National research project | RRAM-based mixed-signal neuromorphic architectures and local-learning circuits |
 | Research grant for master's students | Transformer DRAM-PIM |
 | Industry–university collaboration | Ultra Low Leakage SRAM |
+
+### Recent Research, Submissions, and Public Artifacts
+
+Executable research artifacts are maintained in their dedicated repositories. This page provides an overview of the work, its status, and public entry points. A submission or dataset deposit is distinct from journal acceptance or publication. Statuses below reflect records checked through November 7, 2026.
+
+| Work | Type | Recorded status | Public resources |
+| --- | --- | --- | --- |
+| Independent partial replication of MomentQuant and the effect of numerical policy | Replication study · sole author | ReScience C submission issue posted on November 5, 2026 | [Submission](https://github.com/ReScience/submissions/issues/152) · [Code, manuscript, and reproduction instructions](https://github.com/yoonip/momentquant-partial-replication) |
+| Catching SPICE Crossing Errors | Practical technical article | Circuit Cellar web proposal submitted and full-manuscript supplement emailed on November 2, 2026 | [Publisher](https://circuitcellar.com/) |
+| Reproducibility artifacts for Checking Latency Contracts in ECC Memory Maintenance | Public dataset, code, and reproducibility artifacts | Zenodo record published on November 6, 2026 | [Artifacts](https://doi.org/10.5281/zenodo.24006829) |
+
+#### MomentQuant Partial Replication
+
+This study independently implements the MomentQuant time-series feature transform from the paper and replicates the complete six-dataset quantile-correlation subexperiment. It separates the paper-based implementation from source-informed numerical-policy diagnostics. Selected classifier and CPU-cost experiments are secondary results; replication of the original full archive-wide evaluation is not claimed. The manuscript and code in the [ReScience C submission](https://github.com/ReScience/submissions/issues/152) are pinned to commit `15076af040411df1757f77fa5c119afefcbf3c1b`. Installation, execution, results, and limitations are available in the [dedicated repository](https://github.com/yoonip/momentquant-partial-replication).
+
+#### SPICE Crossing Regression Checks
+
+The technical article compares native crossing measurements on stored SPICE waveforms with an independent PWL calculation under an explicit measurement contract. It illustrates how a regression gate can prevent mismatching values from reaching a downstream consumer. This is a technical-magazine proposal, not a peer-reviewed journal publication. The full manuscript is not redistributed in this repository.
+
+#### ECC Memory-Maintenance Artifacts
+
+The [Zenodo record](https://zenodo.org/records/24006829) preserves code, data, and reproducibility artifacts under DOI `10.5281/zenodo.24006829`. Its registered resource type is Dataset. The artifact DOI is distinct from journal acceptance or a journal article DOI.
 
 ### Publications and Technical Articles
 
