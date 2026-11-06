@@ -1,20 +1,22 @@
 # 산업 기술 새 자료
 
-반영: 2026-11-05 03:48 KST
+반영: 2026-11-07 03:19 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## NASA Announces Ka-Band Satellite Relay Awards for Space Communications
+## NASA’s SR-1 Freedom Advances with Progress on Nuclear Power Module
 
-NASA 기술 자료에서 공개한 산업 기술 자료입니다. 공개 제목·소개에서 통신·신호 처리·우주·항공 시스템 주제를 다룹니다.
+기존 자료의 소개 내용이 갱신되었습니다.
 
-출처: [NASA 기술 자료](<https://www.nasa.gov/technology/>) · [원문](<https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/>) · RSS·Atom 발행 시각: 2026-11-05 03:00 KST
+NASA 기술 자료에서 공개한 산업 기술 자료입니다. 공개 제목·소개에서 에너지·전력·우주·항공 시스템 주제를 다룹니다.
 
-RSS·Atom 표기 작성자: Jessica Taveau
+출처: [NASA 기술 자료](<https://www.nasa.gov/technology/>) · [원문](<https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module/>) · RSS·Atom 발행 시각: 2026-10-21 03:11 KST
 
-가져온 시각: 2026-11-05 03:48:21 KST
+RSS·Atom 표기 작성자: Gary Daines
+
+가져온 시각: 2026-11-07 03:18:56 KST
 
 수집 경로: [공식 목록·피드](<https://www.nasa.gov/technology/feed/>) · 방법: 공식 기술 분야 RSS의 제목·발행일·소개
 
