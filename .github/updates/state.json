@@ -7647,10 +7647,10 @@
       "Last-Modified": "Thu, 05 Nov 2026 10:51:34 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"237cf0687a8008efb12f8c9f58779acbe8652ec54d694366b645b5b486e23e0a\""
+      "ETag": "W/\"fa5228d20acea36af322f50fc8a65c392b8f246c301243430a9869d346f72d9c\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"9660ab2d22abbcd159f07c706eca26cf3778af7370f2ea5b17f19dc67912875f\""
+      "ETag": "W/\"3145f4ada38d27b47e95a402a2cc455689bc0270a513e5b01d72e1774fd32a1d\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -7684,6 +7684,9 @@
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "ETag": "\"qw9CKA\""
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"9-UZ_A\""
     },
@@ -7697,10 +7700,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc9-HLLJudewnKq/cXkK5esmq70shug\""
+      "ETag": "W/\"33bc9-fK0E++im+ktEzOumEC6C70+gZbM\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40173-MvxFyrjp1ZWJPhuhhlGWsibIYyE\""
+      "ETag": "W/\"40173-yXkt28ylk8cEto2e0Xsz65irn/I\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -7745,12 +7748,12 @@
       "Last-Modified": "Sat, 07 Nov 2026 02:55:51 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794020091\"",
-      "Last-Modified": "Sat, 07 Nov 2026 02:54:51 GMT"
+      "ETag": "\"1794047131\"",
+      "Last-Modified": "Sat, 07 Nov 2026 10:25:31 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794020800\"",
-      "Last-Modified": "Sat, 07 Nov 2026 03:06:40 GMT"
+      "ETag": "\"1794047869\"",
+      "Last-Modified": "Sat, 07 Nov 2026 10:37:49 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -7758,13 +7761,13 @@
       "Last-Modified": "Wed, 28 Oct 2026 20:20:49 GMT"
     },
     "https://rss.arxiv.org/rss/cs.AI": {
-      "ETag": "b7958fd8e9c18ffa20906cbf2ca16c282dca4ced8a627578ad564bb8bb894e3e"
+      "ETag": "d96273b5ebca09eb4c05b962407ad0618104a830abe61f293aef421968c9ab6e"
     },
     "https://rss.arxiv.org/rss/cs.AR": {
-      "ETag": "564927ff9064fa3268eaff4f4b3a301fde5502eb4d02afa79cedf7c6a992fdd7"
+      "ETag": "8e8d41cc7fbe23b7dbcaf4410fc84e9e22d5f404df7a9532b3c62081d0461f02"
     },
     "https://rss.arxiv.org/rss/eess.SP": {
-      "ETag": "b7aef8f717fd1bdcc243dea8fd595eba5edb7eb4b7cb4b420918dfaa8be43300"
+      "ETag": "f9165d40b5f5bd405dd9f8bf22d755645008946e0b7f18d0d5ec07f073dcbb70"
     },
     "https://www.anthropic.com/claude-haiku-5-5": {},
     "https://www.anthropic.com/claude-sonnet-5-5": {},
@@ -7848,7 +7851,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0e8ef54a62217506464d4466aea2f3a60\""
+      "ETag": "\"0c3569f320737713ae38996fb1de4200b\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -7948,8 +7951,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"19882618b058b3a4f3556ec28fd3a415\"",
-      "Last-Modified": "Sat, 07 Nov 2026 02:45:02 GMT"
+      "ETag": "\"cf3fb2b47e2fe29d9e63fc3ab039488f\"",
+      "Last-Modified": "Sat, 07 Nov 2026 05:05:00 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
