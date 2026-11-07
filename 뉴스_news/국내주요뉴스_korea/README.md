@@ -1,8 +1,14 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-07 11:48 KST
+갱신: 2026-11-07 19:10 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
+
+## "백화점보다 싸잖아"…음식값 한 번에 평균 12.5% 올렸다
+
+> 철도역 안에 있는 음식점들이 가격을 한 번 올릴 때마다 평균 12% 넘게 인상한 것으로 나타났습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008835280&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-07 18:46 KST · 작성·제공: hyeminan@sbs.co.kr \(안혜민\)
 
 ## 온수관 파열에 신호등 쓰러져…8,965세대 난방 중단
 
@@ -16,11 +22,21 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008834881&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-07 10:56 KST · 작성·제공: cowboy@sbs.co.kr \(소환욱 기자\)
 
+## 안성 공사현장 고소작업대서 추락한 50대 근로자 사망
+
+> 7일 오전 10시 24분께 경기도 안성시 원곡면의 한 반도체 장비 업체 공사현장에서 50대 근로자가 사망하는 ...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261107047000061>) · 2026-11-07 18:05 KST · 작성·제공: 최종호
+
 ## 투표함 빠진 '올공'…"10년은 더 할 것"
 
 > 6.3 지방선거 이후 올림픽공원 핸드볼경기장에선 여전히 시위가 이어지고 있습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008834650&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-06 21:57 KST · 작성·제공: imfact@sbs.co.kr \(임지현\)
+
+## 갑자기 '뚝' 멈춘 집라인…승객 30분간 공중에
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008835349&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-07 17:36 KST · 작성·제공: stopkite@sbs.co.kr \(정지연\)
 
 ## 조셉 윤 전 대사 “민주당 의회 탈환해도 대북·동맹 기본 축 불변…외교는 백악관 영역”
 
@@ -46,6 +62,12 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008834732&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-06 21:58 KST · 작성·제공: newsservice@sbs.co.kr\(SBS\)
 
+## 안성 공사현장에서 50대 근로자 추락해 사망
+
+> 7일 오전 10시22분께 경기 안성시에 있는 한 공장 증축 공사 현장에서 50대 근로자가 숨지는 사고가 발생했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Society/article/all/20261107/134983707/1>) · 2026-11-07 18:50 KST
+
 ## 유엔 사무총장 “DMZ 오판·사고 막아야… 남북 군 통신선 재개 촉구”
 
 > 안토니우 구테흐스 유엔 사무총장이 한반도 비무장지대\(DMZ\)에서 긴장이 고조될 가능성에 우려를 표명했습니다.
@@ -58,11 +80,35 @@
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Sports/article/all/20261107/134982579/2>) · 2026-11-07 01:40 KST
 
+## “이재명 탈옥법” 국힘, ‘조작기소 특검법’ 규탄 도심 집회
+
+> 국민의힘은 더불어민주당 주도로 ‘조작기소 특검법안’이 국회를 통과한 다음 날인 7일 서울 도심에서 대규모 장외집회를 열고 이재명 대통령과 민주당을 비판했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Politics/article/all/20261107/134983683/1>) · 2026-11-07 18:35 KST
+
+## 박승규 3안타 3타점…삼성, 12년 만의 한국시리즈 우승까지 단 1승
+
+> ‘사자 군단’이 12년 만의 한국시리즈\(KS·7전 4선승제\) 우승까지 단 한걸음만을 남겨뒀다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Culture/article/all/20261107/134983516/1>) · 2026-11-07 18:22 KST
+
 ## 노동장관 "안전보다 비용 우선순위 두는 사업주에 무거운 책임"\(종합\)
 
 > 김영훈 고용노동부 장관은 7일 전국 49개 고용노동 관서장을 소집해 산업안전 대응 강화를 위한 긴급 기관장 회...
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261106183951530>) · 2026-11-07 10:38 KST · 작성·제공: 한혜원
+
+## 권순우-박의성, 한국테니스선수권 남자복식 우승
+
+> 권순우\(충남체육회\)-박의성\(대구시청\) 조가 하나증권 제81회 한국테니스선수권대회 남자 복식 정상에 올랐다.
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261107047800007>) · 2026-11-07 18:23 KST · 작성·제공: 안홍석
+
+## 삼성 박승규, 이틀 연속 불방망이…"MVP보다 우승 욕심 더 커"
+
+> 전날에는 홈런으로 쐐기를 박더니 이번에는 적시타 두 방으로 추격을 끊었다.
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261107047700007>) · 2026-11-07 18:20 KST · 작성·제공: 김동한
 
 ## 정밀 표적치료-맞춤형 암백신… 난치암 치료 시대 성큼
 
@@ -70,11 +116,23 @@
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/It/article/all/20261106/134981448/2>) · 2026-11-07 01:40 KST
 
+## 李대통령, 국산 단감 첫 中수출에 "우리 농가에 새로운 기회"
+
+> 이재명 대통령은 7일 국산 단감이 검역 협상 17년 만에 중국에 처음 수출된 것과 관련, "농산물이 더 많이 ...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261107040000001>) · 2026-11-07 16:53 KST · 작성·제공: 설승은
+
 ## “분위기 어쩌다 이렇게 됐나”…이천수, 대표팀 갈등설에 조언
 
 > 축구 국가대표 출신 방송인 이천수가 최근 불거진 대표팀 내 선수들의 갈등설에 대해 중간급 선수들의 가교 역할이 중요하다며 분위기 쇄신을 당부했다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Sports/article/all/20261107/134983161/1>) · 2026-11-07 10:21 KST
+
+## 어제 이글-홀인원, 오늘 버디 7개…유현조, 최종전 2R 공동 1위\(종합\)
+
+> 지난 시즌 한국여자프로골프\(KLPGA\) 투어 대상과 평균 타수 타이틀을 차지했던 유현조가 2026시즌 최종전 ...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261107045951007>) · 2026-11-07 18:06 KST · 작성·제공: 김경윤
 
 ## 브라질 외교부 “평양 주재 대사 파견…북한과 직접 대화 채널 유지”
 

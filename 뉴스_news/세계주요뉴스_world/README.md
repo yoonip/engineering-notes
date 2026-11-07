@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-07 11:48 KST
+갱신: 2026-11-07 19:10 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -9,6 +9,12 @@
 > 전날 폭락했던 뉴욕 증시가 하루 만에 반등했습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008834865&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-07 10:56 KST · 작성·제공: kimhw@sbs.co.kr \(김현우 기자\)
+
+## 트럼프와 좋았지?…민주 '애플·테슬라·메타 등' 정조준
+
+> 미국 중간선거에서 트럼프 대통령의 대패가 관련 빅테크 기업들에도 후폭풍을 일으킬 전망입니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008835297&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-07 17:39 KST · 작성·제공: cjkh@sbs.co.kr \(조기호\)
 
 ## 예멘 공습으로 최소 20명 사망…후티·정부 엇갈린 주장
 
@@ -48,19 +54,25 @@
 
 ## 다른 매체의 원문
 
+- [Missiles target Kyiv and wound 5 as Ukraine prepares for talks with Russia and the US](<https://abcnews.com/International/wireStory/missiles-target-kyiv-injure-5-ukraine-prepares-talks-137937211>) · ABC News 미국
 - [As French students protest, they bear the mantle of May ‘68](<https://www.csmonitor.com/World/Europe/2026/1106/france-student-protests-economic-may-1968-de-gaulle-macron?icid=rss>) · The Christian Science Monitor
 - [Protesters break into Microsoft data center site in Amsterdam as Europe’s backlash spreads](<https://abcnews.com/International/wireStory/protesters-break-microsoft-data-center-site-amsterdam-europes-137915154>) · ABC News 미국
 - [Paraguay’s Peña loses top aides as impeachment trial resumes over failed bank](<https://abcnews.com/International/wireStory/paraguays-pea-loses-top-aides-impeachment-trial-resumes-137913219>) · ABC News 미국
 - [Haitian gang reaches out to state disarmament group as gunfights persist](<https://abcnews.com/International/wireStory/powerful-haitian-gang-reaches-state-disarmament-group-gunfights-137932356>) · ABC News 미국
 - [Israel's Arab-led parties in spotlight after inconclusive election](<https://www.npr.org/2026/11/06/g-s1-152138/israel-election-palestinian-arab-parties>) · NPR
-- [European air traffic is targeted by new threats after a week of hoaxes](<https://www.npr.org/2026/11/06/nx-s1-6032612/europe-flights-hoaxes>) · NPR
 - [Japan announces emergency cybersecurity package following a wave of attacks](<https://abcnews.com/International/wireStory/japan-announces-emergency-cybersecurity-package-wave-attacks-137911772>) · ABC News 미국
 - [The leader of a Kenyan doomsday cult is sentenced to 200 years in prison](<https://www.npr.org/2026/11/06/nx-s1-6032593/kenya-cult-leader-paul-mackenzie-sentenced-murder>) · NPR
 - [In southern Lebanon, caught between war and peace](<https://www.csmonitor.com/World/Middle-East/2026/1106/lebanon-israel-war-naqoura-hezbollah-unifil?icid=rss>) · The Christian Science Monitor
 - [Ex-lawmaker gets 12.5 years in Macao's first national security case](<https://www.npr.org/2026/11/06/g-s1-152217/ex-lawmaker-gets-12-5-years-in-macaos-first-national-security-case>) · NPR
+- [Malaysian palace says house arrest order for imprisoned ex-leader Najib must be respected](<https://abcnews.com/International/wireStory/malaysian-palace-house-arrest-order-imprisoned-leader-najib-137936646>) · ABC News 미국
+- [Writer Nick Harkaway expands his father John le Carré's spyverse in new thriller 'The Taper Man'](<https://abcnews.com/International/wireStory/writer-nick-harkaway-expands-father-john-le-carrs-137936279>) · ABC News 미국
 - [Kenya: Kenya Cult Leader Paul Mackenzie Sentenced to 200 Years](<https://allafrica.com/stories/202611060339.html>) · AllAfrica · allAfrica.com
 - [Tanzania: Tanzania Opposition Leader Lissu Cleared of Treason but Jailed for Incitement](<https://allafrica.com/stories/202611060310.html>) · AllAfrica · allAfrica.com
 - [Namibia: Distance No Longer a Death Sentence](<https://allafrica.com/stories/202611060224.html>) · AllAfrica · allAfrica.com
+- [European flights and broadcasters are targeted with another wave of bomb threats](<https://www.npr.org/2026/11/06/nx-s1-6032612/europe-flights-hoaxes>) · NPR
+- [Nigeria: Cracks in South West APC May Affect Tinubu's Re-Election, Stakeholders Warn](<https://allafrica.com/stories/202611060282.html>) · AllAfrica · allAfrica.com
+- [Ethiopia: Ethiopia, France Vow to Deepen Military and Strategic Cooperation](<https://allafrica.com/stories/202611060296.html>) · AllAfrica · allAfrica.com
+- [Nigeria: Military Pension Board Honours 98-Year-Old Veteran, Ewemiwe, in Delta](<https://allafrica.com/stories/202611060288.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
