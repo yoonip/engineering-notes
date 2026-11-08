@@ -1,8 +1,14 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-08 09:37 KST
+갱신: 2026-11-08 16:21 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 한국전쟁서 구사일생…中 '마지막 건국 장군', 104세로 사망
+
+> 중국의 마지막 생존 '건국 장군'으로 알려진 왕푸즈\(王扶之\) 전 우루무치군구 부사령원이 사망했다고 중국중앙TV...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261108032900009>) · 2026-11-08 15:43 KST · 작성·제공: 권숙희
 
 ## 日 시즈오카현 서부서 규모 5.7 지진…"2∼3일간 큰 지진 주의"\(종합\)
 
@@ -15,6 +21,12 @@
 > 폴란드 제2 도시 크라쿠프 한복판에서 7일\(현지시간\) 총격 사건이 발생해 다수의 인명 피해가 발생했다고 로...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261108001053098>) · 2026-11-08 05:20 KST · 작성·제공: 현윤경
+
+## 이스라엘 야권리더 아이젠코트에 연정구성권…네타냐후 실각위기\(종합\)
+
+> 지난달 총선에서 승리한 이스라엘 야당 야샤르당 대표 가디 아이젠코트에게 차기 연립정부 구...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261108012451009>) · 2026-11-08 15:58 KST · 작성·제공: 김상훈
 
 ## 이스라엘 야권 리더 아이젠코트에 연정구성권…네탄냐후 실각 위기
 
@@ -34,11 +46,23 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261108001751098>) · 2026-11-08 04:52 KST · 작성·제공: 현윤경
 
+## 이란 강경파 "미 중간선거는 우리 승리"…종전협상 요구 높였다
+
+> 이란 강경파가 도널드 트럼프 미국 대통령의 중간선거 패배를 자국의 승리로 받아들이며 종전 협상에서 미국에 더 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261108032800009>) · 2026-11-08 15:34 KST · 작성·제공: 신재우
+
 ## 후티 "사우디 공습으로 예멘 수도 인근서 27명 사망" 주장\(종합\)
 
 > 예멘의 친이란 후티 반군이 장악하고 있는 수도 사나 인근에서 사우디아라비아의 공습으로 27명이 사망했...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261107052851099>) · 2026-11-08 03:49 KST · 작성·제공: 나확진
+
+## 트럼프 참패하자 "양보는 없다"…이란 요구 수준 높였다
+
+> 이란 강경파가 도널드 트럼프 미국 대통령의 중간선거 패배를 자국의 승리로 받아들이며 종전 협상에서 미국에 더 많은 양보를 요구하고 나섰습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008836033&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-08 16:12 KST · 작성·제공: young12 \(이기영 에디터\)
 
 ## 러시아, 종전 협상 앞두고 우크라이나 공격 강화
 
@@ -76,6 +100,12 @@
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261108/134984422/1>) · 2026-11-08 09:16 KST
 
+## 북한, 조총련 ‘세대 갈라치기’… ‘김주애 승계’ 분위기 조성하나
+
+> 북한 당국이 최근 조선학교 학생과 교육자 등의 방북은 적극적으로 받아들이는 반면, 기존 재일조선인의 개별적이고 자유로운 방북은 허용하지 않는 차별적 접근을 취하고 있는 것으로 보인다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/08/north-korea-divides-chongryon-generations-kim-jue-ae-succession/>) · 2026-11-08 12:00 KST · 작성·제공: 마키노 요시히로 일본 히로시마대 객원교수
+
 ## 밴스, ‘중간선거 패배는 이란전 탓’ 트럼프에 미리 알렸다
 
 > JD 밴스 미국 부통령이 이란 전쟁을 공화당의 중간선거 패배 원인으로 공개 지목하겠다는 뜻을 도널드 트럼프 대통령에게 미리 알린 것으로 전해졌다.
@@ -85,6 +115,7 @@
 ## 다른 매체의 원문
 
 - [Earthquake with preliminary magnitude of 5.7 strikes Japan](<https://abcnews.com/International/wireStory/strong-earthquake-preliminary-magnitude-57-strikes-japan-meteorological-137946690>) · ABC News 미국
+- [New Zealanders won't know for weeks who won the election as neither side secures clear victory](<https://abcnews.com/International/wireStory/new-zealanders-weeks-won-election-side-secures-clear-137950485>) · ABC News 미국
 - [Paraguay's former president faces prosecutors after his removal over bank collapse](<https://abcnews.com/International/wireStory/paraguays-former-president-faces-prosecutors-after-removal-bank-137941605>) · ABC News 미국
 - [Israeli president invites Netanyahu's opposition leader to broker new government](<https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government>) · NPR
 - [A correspondent finds Cuba's people struggling](<https://www.npr.org/2026/11/07/nx-s1-6029398/a-correspondent-finds-cubas-people-struggling>) · NPR
@@ -94,6 +125,7 @@
 - [South Africa: The Honeybadger's Revenge - Former Minister Dion George's Nuclear War Over SA's Captive Lions](<https://allafrica.com/stories/202611060653.html>) · AllAfrica · allAfrica.com
 - [Africa: A Just Energy Transition Cannot Leave Water Behind](<https://allafrica.com/stories/202611070229.html>) · AllAfrica · allAfrica.com
 - [What to know about the hoax bomb threats that targeted flights in Europe](<https://abcnews.com/International/wireStory/hoax-bomb-threats-targeted-flights-europe-137937700>) · ABC News 미국
+- [Pope Leo urges faithful in Uruguay to build bridges of fraternity and faith](<https://abcnews.com/International/wireStory/thousands-pour-park-uruguay-pope-leos-mass-south-137938096>) · ABC News 미국
 - [Airstrike kills at least 22 people near Yemen's capital, Houthi official says](<https://abcnews.com/International/wireStory/airstrike-killed-22-people-yemens-capital-houthi-official-137937912>) · ABC News 미국
 - [Ghana/Liberia: Black Challenge Edge Liberia 1-0 in Final World Cup Friendly](<https://allafrica.com/stories/202611060652.html>) · AllAfrica · allAfrica.com
 - [Nigeria: Despite Court's Ruling, Crowd Flood Birnin Kebbi Rally for Atiku](<https://allafrica.com/stories/202611060634.html>) · AllAfrica · allAfrica.com
