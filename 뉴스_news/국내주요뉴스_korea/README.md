@@ -1,6 +1,6 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-09 00:12 KST
+갱신: 2026-11-09 04:42 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
 
@@ -9,6 +9,36 @@
 > 예산 지원만큼이나 중요한 건 현장의 소방 안전 대책입니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008836162&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-08 20:59 KST · 작성·제공: 238@sbs.co.kr \(이세현 기자\)
+
+## 젤렌스키 “러시아, 북한 KN-23 미사일로 우크라 에너지 시설 공격”
+
+> 볼로디미르 젤렌스키 우크라이나 대통령이 러시아가 북한산 탄도미사일을 사용해 우크라이나의 주요 에너지 시설을 공격했다고 밝혔습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8220240.html>) · 2026-11-09 01:43 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 일본 총리 “임기 내 납북 문제 해결할 것… 김정은과 대화 원해”
+
+> 다카이치 사나에 일본 총리가 일본인 납북 피해자들의 귀환을 위해 김정은 북한 국무위원장과 정상회담을 하겠다는 뜻을 거듭 밝혔습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8220237.html>) · 2026-11-09 01:32 KST · 작성·제공: voadigital@voanews.com \(조은정\)
+
+## 미 해군∙해병대 고위급, 한국 조선∙군수지원 역량 점검
+
+> 미국 해군과 해병대 고위 당국자들이 한국 울산의 HD현대중공업 조선소를 방문해 한국의 함정 건조 역량과 군 기반시설, 군수지원 능력을 평가했습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8220257.html>) · 2026-11-09 03:25 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 당정, 소방 재정 2조 지원 추진… 미래기금 활용 검토
+
+> 정부와 여당이 지방정부의 소방 재정 부담을 덜기 위해 2조 원 수준의 긴급 재정 지원 방안을 추진하기로 했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Politics/article/all/20261109/134988528/2>) · 2026-11-09 04:30 KST
+
+## 데뷔 8085일만에… 강민호, 감격의 첫 우승반지
+
+> “\(2008년 베이징\) 올림픽 금메달보다 훨씬 좋다.”
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Sports/article/all/20261109/134988186/2>) · 2026-11-09 04:30 KST
 
 ## 23년차에 '우승 성불' 삼성 강민호 "올림픽 금메달보다 더 좋아"
 
