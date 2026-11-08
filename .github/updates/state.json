@@ -7647,10 +7647,10 @@
       "Last-Modified": "Thu, 05 Nov 2026 10:51:34 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"6a98cefb8bcca5b2a39cabf36d3f019a6e63af922533a4170ddc8c4261759972\""
+      "ETag": "W/\"cf28bc5d4b66d14f28ed4021e45957d886d46b270f31e1fe1f8c3dc57ed5b892\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"b7830e24f41b8278fcf60a62e1c5ce2cf6158c598b557fd9110c003c949c9c03\""
+      "ETag": "W/\"e056d8df31fe408c0eb05fe1cf1bbbc1ff3aee258a0f0150f7671eabe24187db\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -7684,9 +7684,6 @@
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
-    "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"NgpJ8A\""
-    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"NgpJ8A\""
     },
@@ -7700,10 +7697,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc9-iPMh/B+SmqN32Z0LNNu7+7HlWQk\""
+      "ETag": "W/\"33bc8-GefitgF2jkRpYCO40z52//tP1PA\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40173-/MymiaRA+kh7D4peOKrmDn4fsmU\""
+      "ETag": "W/\"40176-B4HLIBuuiPKMvjgGvit7RPaJcMY\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -7738,7 +7735,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -7748,12 +7744,12 @@
       "Last-Modified": "Sun, 08 Nov 2026 06:06:51 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794118108\"",
-      "Last-Modified": "Sun, 08 Nov 2026 06:08:28 GMT"
+      "ETag": "\"1794144271\"",
+      "Last-Modified": "Sun, 08 Nov 2026 13:24:31 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794119775\"",
-      "Last-Modified": "Sun, 08 Nov 2026 06:36:15 GMT"
+      "ETag": "\"1794145136\"",
+      "Last-Modified": "Sun, 08 Nov 2026 13:38:56 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -7814,6 +7810,7 @@
       "Last-Modified": "Thu, 23 Feb 2023 10:23:31 GMT"
     },
     "https://www.kari.re.kr/kor/134/pblc/AEROPLCYRSCH": {},
+    "https://www.kari.re.kr/kor/89/pblc/RSCHRPTP": {},
     "https://www.kari.re.kr/robots.txt": {
       "Last-Modified": "Wed, 16 Sep 2026 04:30:16 GMT"
     },
@@ -7850,7 +7847,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0518e949f4d5a57106312b2c9f32b851d\""
+      "ETag": "\"00e065c003f0b8411dfc142f41634795f\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
