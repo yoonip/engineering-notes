@@ -1,14 +1,32 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-09 04:42 KST
+갱신: 2026-11-09 08:43 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 트럼프, 네타냐후에 가자 평화계획 이행 촉구…총선 끝나자 압박
+
+> 도널드 트럼프 미국 대통령이 이스라엘 총선이 끝나자 베냐민 네타냐후 총리에게 그동안 보류됐던 가자지구 평화계획...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109016600009>) · 2026-11-09 08:14 KST · 작성·제공: 김아람
+
+## "TSMC, 메모리 사업 진출 검토…엔비디아 요청"
+
+> 세계 최대 파운드리\(반도체 위탁생산\) 업체인 대만 TSMC가 첨단 메모리 반도체 제조로 사업 영역을 넓히는 방...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109013800009>) · 2026-11-09 07:59 KST · 작성·제공: 정주호
 
 ## 프랑스 외무 "아부다비 종전협상에 유럽도 참여"
 
 > 오는 10∼11일\(현지시간\) 아랍에미리트\(UAE\) 아부다비에서 열리는 미국과 러시아·우크라이나의 종전회담에...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261108055100082>) · 2026-11-08 23:26 KST · 작성·제공: 김계연
+
+## 트럼프-민주, 금주 '헤그세스 탄핵안' 1라운드 충돌…與반란표 주목
+
+> 도널드 트럼프 미국 행정부와 이번 중간선거 압승으로 차기 의회 권력을 장악한 민주당이 이번 주 피트 헤그세...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109010300071>) · 2026-11-09 07:27 KST · 작성·제공: 박성민
 
 ## 트럼프 "중간선거 후퇴 두려워말라…우린 더 강하게 돌아올 것"
 
@@ -64,11 +82,27 @@
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134988310/2>) · 2026-11-09 04:30 KST
 
+## 젠슨 황, 불륜 시인했다…사내 구성원들에 보낸 메일
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008836433&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-09 07:53 KST · 작성·제공: replay@sbs.co.kr \(박재현\)
+
 ## 미 중부사령부, 이란 무기 육상운송 차단 전담조직 신설
 
 > 미 중부사령부는 7일 이란의 첨단 무기와 제재 대상 물자 운송을 차단하기 위해 ‘태스크포스 아이언 게이트’를 신설한다고 밝혔습니다.
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8220246.html>) · 2026-11-09 02:32 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## \[단독\] \[문서로 본 중국 파견 북한 노동자 실태 ① 임금\] 계약서는 허울뿐, 각종 기부금·지원금 명목 ‘헌납’
+
+> RFA가 단독 입수한 문건을 통해 중국 기업에 파견된 북한 노동자들이 계약서에 명시된 임금의 상당 부분을 받지 못하고 있는 것으로 확인됐다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/08/china-north-korean-workers-wage-exploitation/>) · 2026-11-09 05:59 KST · 작성·제공: 서울-김지은 nk@rfa.org
+
+## 트럼프, ‘UFC 선수 백악관 난동’ 애니메이션 공유
+
+> 도널드 트럼프 미국 대통령이 데이나 화이트 UFC 회장을 신임 백악관 대변인으로 내정했다고 전격 발표한 데 이어 UFC 소속 선수들이 백악관 브리핑룸에서 질문하는 기자들을 때려눕히는 애니메이션…
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134989299/1>) · 2026-11-09 08:20 KST
 
 ## 다른 매체의 원문
 
@@ -78,7 +112,9 @@
 - [Saudi Arabia turns to Syria for help as fighting with Houthis escalates](<https://abcnews.com/International/wireStory/saudi-arabia-turns-syria-fighting-houthis-escalates-137956922>) · ABC News 미국
 - [Tourists and locals recount fatal Krakow mass shooting that left Poland reeling](<https://abcnews.com/International/wireStory/tourists-locals-recount-fatal-krakow-mass-shooting-left-137952616>) · ABC News 미국
 - [Saudi Arabia intercepts missiles as Aramco building in Riyadh is damaged, and other Mideast news](<https://abcnews.com/International/wireStory/saudi-arabia-intercepts-missiles-aramco-building-riyadh-damaged-137951443>) · ABC News 미국
+- [The world's largest telecoms firm is on trial and the outcome has global implications](<https://www.npr.org/2026/11/08/nx-s1-6030670/the-worlds-largest-telecoms-firm-is-on-trial-and-the-outcome-has-global-implications>) · NPR
 - [Pope wraps up Uruguay visit and heads to most fraught stop of his tour in Argentina](<https://abcnews.com/International/wireStory/pope-wraps-uruguay-visit-heads-fraught-stop-tour-137951348>) · ABC News 미국
+- [Trying to find true owners, Paris' Musee D'Orsay exhibits art looted by Nazis](<https://www.npr.org/2026/11/08/nx-s1-5928034/trying-to-find-true-owners-paris-musee-dorsay-exhibits-art-looted-by-nazis>) · NPR
 - [Africa: CANEX WKND 2026 Showcases Africa's Creative Brilliance in a Night of Fashion and Awards](<https://allafrica.com/stories/202611080008.html>) · AllAfrica · allAfrica.com
 - [A desert stirs to life: Chile's Atacama erupts in its biggest floral display in decades](<https://www.npr.org/2026/11/08/nx-s1-6023812/chile-desert-el-nino>) · NPR
 
