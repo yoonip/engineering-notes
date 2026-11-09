@@ -1,20 +1,18 @@
 # 모델 발표
 
-반영: 2026-11-04 08:37 KST
+반영: 2026-11-10 07:40 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
-## Introducing GPT-6.1 Terra
+## Introducing Claude Fable 5.2 and Claude Mythos 5.2
 
-기존 자료의 소개 내용이 갱신되었습니다.
+Anthropic의 모델 관련 공식 발표입니다. 공개 제목·소개에서 코딩 주제를 다룹니다.
 
-OpenAI의 모델 관련 공식 발표입니다. 공개 제목·소개에서 컴퓨터·브라우저 사용 주제를 다룹니다.
+출처: [Anthropic](<https://www.anthropic.com/>) · [원문](<https://www.anthropic.com/claude-fable-and-mythos-5-2>) · 발표일: 2026-11-09
 
-출처: [OpenAI](<https://openai.com/>) · [원문](<https://openai.com/index/introducing-gpt-6-1-terra>) · 발표일: 2026-10-27 03:00 KST
+가져온 시각: 2026-11-10 07:38:46 KST
 
-가져온 시각: 2026-11-04 08:35:40 KST
-
-수집 경로: [공식 목록·피드](<https://openai.com/news/rss.xml>) · 방법: 공식 RSS·Atom의 제목·소개문
+수집 경로: [공식 목록·피드](<https://www.anthropic.com/news>) · 방법: 공식 목록·공개 소개문
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
