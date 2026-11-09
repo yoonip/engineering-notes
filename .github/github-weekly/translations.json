@@ -1,1 +1,192 @@
-{}
+{
+  "860a94f952e9994393cea3efff4a9bd03a6ccf455954c7a7ad89c5464ca0cec2": {
+    "source": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+    "text": "Auto Ontology는 데이터에 대한 그래프 기반 인가 레이어를 구축하기위한 Python 프레임 워크입니다. 조직 쿼리 생성, 더 나은 컨텍스트 검색 및 LLM 및 에이전트 워크플로우에 대한 더 많은 설명 가능한 AI를 가능하게 합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "ca1662eaf4be9e6cfd192acbd848e301ed45f3add9521ed035053ea4024ea039": {
+    "source": "Clone the repository and create .env:",
+    "text": "저장소를 복제하고 .env를 만듭니다:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "9f04d9235868b5c66cddac27efaf649a6eac01935da07843bef067828bece474": {
+    "source": "Then set these values in .env:",
+    "text": "그런 다음 .env의 값을 설정:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "70aed098b1bbe7a07b7bb1f0ecf4f0559896df77d4e89dab7bc4011f89cf93c0": {
+    "source": "This runs Auto-Ontology with Docker Compose against Wide World Importers, Microsoft's sample sales database. You need Docker with Compose v2, uv, and an NVIDIA API key (nvapi-...) from build.nvidia.com.",
+    "text": "이 실행 Auto-Ontology with Docker Compose against Wide World Importers, Microsoft의 샘플 판매 데이터베이스. Compose v2, uv 및 NVIDIA API 키 (nvapi-...)를 Build.nvidia.com에서 Docker가 필요합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "34c0a4154a905506b56778bd86c2750dca9318806b3824bd9b3aaf62902ec089": {
+    "source": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+    "text": "모든 에이전트에 대한 지속적인 Context Across Sessions – 세션 중 모든 에이전트를 캡처, AI로 압축, 그리고 미래의 세션에 관련된 맥락을 거부. 클로드 코드, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More와 함께 작동",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "8e532dcab2545fe1d431492ef0b46c4bfcf5e05067dd670e83fd7a992d180695": {
+    "source": "Prefer to skip the sign-in? Pass an explicit --provider flag, set CLAUDE_MEM_ONLINE_OPTIN=false, or run in CI/non-interactive shells — the installer completes without any account interaction.",
+    "text": "로그인을 건너뛰기 위해 Prefer? 명시된 --provider 플래그를 전달, CLAUDE MEM ONLINE OPTIN=false를 설정, 또는 CI/non-interactive shells에서 실행 - 어떤 계정 상호 작용없이 설치가 완료.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "6ab01b214e4632152a8cc405f4abc0229c6f59f42949946adc9757d43eedbd4f": {
+    "source": "Note: Claude-Mem is also published on npm, but npm install -g claude-mem installs the SDK/library only — it does not register the plugin hooks or set up the worker service. Always install via npx claude-mem install or the /plugin commands above.",
+    "text": "참고 : Claude-Mem은 npm에 게시되지만 npm install -g claude-mem는 SDK/library 만 설치합니다. 플러그인 후크를 등록하거나 worker 서비스를 설정하지 않습니다. 항상 npx claude-mem 설치 또는 /plugin 명령을 통해 설치합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "15e7e46ee95cf26b7584b3edf6be3fb463bdbad448569dd950ed425949293495": {
+    "source": "Grok Bot has no host hooks, so we watch the chat log files. Default is CMEM Pro, the hosted memory. Local observer is opt-in: --provider host. Installing this plugin does not install Cursor.",
+    "text": "Grok Bot에는 호스트 후크가 없습니다. 그래서 채팅 로그 파일을 볼 수 있습니다. 기본값은 CMEM Pro, 호스팅 메모리입니다. Local Observer는 opt-in: --provider 호스트입니다. 이 플러그인을 설치하지 않습니다 Cursor.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "2926722ffa59f169fd9ace1c137ebf97ad6133f85e505006838c843e778b9eaf": {
+    "source": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+    "text": "Worktrunk는 Git worktree 관리의 CLI이며, 평행 AI 에이전트 워크플로우를 위해 설계되었습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "d0aea4ccd581e386cb1995d4532d15fd7ed66031a6ff88a21a66cfdffc09ab60": {
+    "source": "(renders \"CRATES.IO: INVALID\"). Tracking: badges/shields#11879. Restore once fixed. -->",
+    "text": "( \"CRATES.IO : INVALID\"). 추적 : 배지 / 방패 #11879. 한 번 고정 복원. -->",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "2168f3641bc086e640b91e54fe1e57cea7db7560866a449381a296e5ceaeddaa": {
+    "source": "Worktrunk is a CLI for git worktree management, designed for running AI agents in parallel.",
+    "text": "Worktrunk는 git worktree 관리의 CLI이며, AI 에이전트를 병렬로 실행하도록 설계되었습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "d8ba62cf1ce7739fc375346d37925ccb9d705a8023f6e64ab24caa598bc8ad35": {
+    "source": "Homebrew (macOS & Linux):",
+    "text": "Homebrew (맥스 & 리눅스):",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "43fd76f42317009313e4ebfd36d5e35d8c7a6e0b4df20217a4e66f2a82baa1c5": {
+    "source": "Shell integration allows commands to change directories.",
+    "text": "Shell 통합은 명령을 실행할 수 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "7ae43e483891bab636c25a6784cd802ecb7a66fa06519e0a9179f3d11c21f487": {
+    "source": "Public repository for Agent Skills",
+    "text": "Agent Skills에 대한 공개 저장소",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "26877d92843fced91c478466a33aefa63220490ab483fa189e3510575dc2e660": {
+    "source": "Note: This repository contains Anthropic's implementation of skills for Claude. For information about the Agent Skills standard, see agentskills.io.",
+    "text": "참고: 이 저장소에는 Claude의 기술 구현이 포함되어 있습니다. 에이전트 스킬 표준에 대한 정보는 Agentkills.io를 참조하십시오.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "15c7ef15a766da2c14f6d7ecc770cf706992204290a712b24fec0d99490b9ebf": {
+    "source": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+    "text": "턴 클로드 코드 전체 게임 dev 스튜디오에 - 49 AI 에이전트, 72 워크플로우 기술, 그리고 실제 스튜디오 hierarchy를 미러링 완료 조정 시스템.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "f46ee1e5bad31be77507fc6da4e80ba8914acd218d8fe3e565cf3ba3037a036d": {
+    "source": "Turn a single Claude Code session into a full game development studio. 49 agents. 74 skills. One coordinated AI team.",
+    "text": "전체 게임 개발 스튜디오에 단일 클로드 코드 세션을 켭니다. 49 에이전트. 74 기술. 1개의 협조된 AI 팀.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "fef81b31d60d1f95fcc080b4394c87175130436ecb18484e8373b415c980f309": {
+    "source": "Clone or use as template:",
+    "text": "템플릿으로 Clone 또는 사용:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "a009a821e53cca92a840c8e2f2775fea798a1740bf04df3b8f5433bfa763d46d": {
+    "source": "Open Claude Code in the project's root folder (the one holding CLAUDE.md and project.yaml) and start a session:",
+    "text": "프로젝트의 루트 폴더 (CLAUDE.md 및 project.yaml를 보유하는 것)에서 Claude 코드를 열고 세션을 시작합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "ee5df9756ef794fc9fc70482b34e5ab8407ec6c10d46d1107627271c754609aa": {
+    "source": "Or jump directly to a specific skill if you already know what you need: - /brainstorm — explore game ideas from scratch - /setup-engine godot 4.7 — configure your engine if you already know - /project-stage-detect — analyze an existing project",
+    "text": "또는 이미 필요한 것을 알고 있다면 특정 기술에 직접 점프 : - /brainstorm - 처음부터 게임 아이디어를 탐구 - /setup-engine godot 4.7 - 이미 알고있는 경우 엔진 구성 - /project-stage-detect - 기존 프로젝트 분석",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "f880a5cf6e5c0e41be2127fc7c1951b6717b4f12d2c52ccba9c998f8b60ead1c": {
+    "source": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "text": "오픈 소스 Grok 봇이 사용할 수있는 가상 머신과 Bot 대안",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "8bec4361869af7766766c210387e48b701734cb5d0d3661a46649c22d41f9406": {
+    "source": "A model picker with a provider rail — Claude and Codex models side by side, defaults marked, unavailable providers dimmed with the reason. Switch a bot's model mid-conversation.",
+    "text": "공급자 가로장을 가진 모형 피커 - 측에 의하여 표창과 코덱 모형 측, 과태는, 무효한 공급자가 이유로 흐리게 했습니다. 봇의 모델 중계를 전환합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "f781360b15147e9c3a134963ea0a6bc96624b60ee9b40b8cd0443e86f9edfa15": {
+    "source": "Released builds (latest release): the harness server is embedded, so no separate server setup is required.",
+    "text": "빌드 (최신 릴리스) : 하네스 서버는 임베디드이므로 별도의 서버 설정이 필요하지 않습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "567b2e2ee3c13f56cfc7729855f1ab9a8d0a547d3beac88d8270499ae949da92": {
+    "source": "From source:",
+    "text": "근원에서:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "d5a90506ae799d19f40f14614f968c213b2c17c4c1099c78dc28631085af07e5": {
+    "source": "All five side by side: Muse vs Grok Bot vs Dots vs Cue, and a decision guide in five questions: Which AI agent should I use?",
+    "text": "옆의 모든 5면 : Muse vs Grok Bot vs Dots vs Cue 및 다섯 가지 질문의 의사 결정 가이드 : 어떤 AI 에이전트가 사용해야합니까?",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "4ddc71843de5cf9689e234839b6b483954d14ac45595c7fddc952e7d8565a9ab": {
+    "source": "Your server must be running and reachable. This web app does not add offline chat, push notifications or native phone computer control.",
+    "text": "서버가 실행되고 도달해야 합니다. 이 웹 앱은 오프라인 채팅, 푸시 알림 또는 네이티브 폰 컴퓨터 컨트롤을 추가하지 않습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "44540310087b5bd9b398cbd86d74608666ec0fed06f2ee068c7f61c96c5a09eb": {
+    "source": "T3 Code is an \"agent harness control surface\". It enables control of the agents on your machine with a best-in-class mobile app (iOS, Android), web app and Electron-based desktop app.",
+    "text": "T3 부호는 “시약 마구 통제 표면”입니다. 최고의 모바일 앱 (iOS, Android), 웹 앱 및 전자 기반 데스크탑 앱을 사용하여 기계에 에이전트를 제어 할 수 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "dcf2e9a0dd5e56a66d9c763461695ef03bae9c9f5d7d001ba4e20079d9c3214a": {
+    "source": "On Windows, in PowerShell:",
+    "text": "Windows에서 PowerShell에서:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "fc816a23004446552b2e038f975574d86e61c8b179335ba78734ebba412c98b0": {
+    "source": "To try it once without installing, run npx t3@latest. It offers to install the t3 command for you.",
+    "text": "설치하지 않고 한번 시도하려면 npx t3@latest를 실행하십시오. t3 명령어를 설치합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "05e58e195016a1a89a59b7df381416964394918f5ba8f7294ece373384ae20b1": {
+    "source": "T3 Code uses Vite+ so you'll need to install the global vp command-line tool.",
+    "text": "T3 Code는 Vite+를 사용하므로 글로벌 vp 명령행 도구를 설치해야 합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "9d60d1b0cbb062590669ec12e4500035b61dc328fcf1d822d5be578faa354ca8": {
+    "source": "Need support? Join the Discord.",
+    "text": "지원 필요? Discord에 가입하십시오.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "9bc0c42dc804dc38e1108d456b0cf856e651ea982d5fac9b1a84bd07c91b82e6": {
+    "source": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+    "text": "️ 최고의 웹 스크랩 프레임 워크는 단일 요청에서 전체 스케일 크롤러에 이르기까지 모든 것을 취급합니다! 수줍지 마세요, 여기에 가입: https://discord.gg/EMgGbDceNQ 그리고 여기에 따라 매일 팁과 트릭: HTTPS://x.com/Scrapling dev",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "ef556a57a263fd93e8ba76f230a88ebb163caa7b0549b1fa1ad0fde3ea74d570": {
+    "source": "Let's give you a quick glimpse of what Scrapling can do without deep diving.",
+    "text": "스크랩링이 깊은 다이빙 없이 할 수 있는 퀵 글램스를 제공합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "9ab1214c9cbf2919e033f2046cd23c5d417ffffc33c4e88e62005e928ff80da7": {
+    "source": "Build full crawlers with concurrent requests, multiple session types, and pause/resume:",
+    "text": "동시 요청, 다중 세션 유형 및 일시 정지 / 이력서가있는 전체 크롤러 구축 :",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "b868b965f50ced11a3735848f958bab217fbf94e13183e8c1e23791c3b7c991f": {
+    "source": "HTTP requests with session support",
+    "text": "HTTP 요청 세션 지원",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "557f66b8eb2a13a6a2f444f5ed3f95dafd7522c5c604d9742b3fe7bd0a1e59a6": {
+    "source": "Advanced stealth mode",
+    "text": "고급 스텔스 모드",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "52bb4301651bb520fe219143e63d78048266d9fedffa0448af15bbee20355ade": {
+    "source": "Scrapling requires Python 3.10 or higher:",
+    "text": "스크랩링은 Python 3.10 이상이 필요합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "06e0b3f02f8ba3bd02cae2ad67373157c0ebc5056507124094095855f3e32d65": {
+    "source": "If you are going to use any of the extra features below, the fetchers, or their classes, you will need to install fetchers' dependencies and their browser dependencies as follows:",
+    "text": "아래 추가 기능을 사용하려고 하는 경우, fetchers, 또는 그들의 클래스, 당신은 fetchers의 의존성 및 그들의 브라우저 의존성을 설치 해야 합니다:",
+    "method": "Argos Translate en→ko 1.1"
+  }
+}
