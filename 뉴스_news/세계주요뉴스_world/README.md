@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-09 08:43 KST
+갱신: 2026-11-09 15:30 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -21,6 +21,24 @@
 > 오는 10∼11일\(현지시간\) 아랍에미리트\(UAE\) 아부다비에서 열리는 미국과 러시아·우크라이나의 종전회담에...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261108055100082>) · 2026-11-08 23:26 KST · 작성·제공: 김계연
+
+## \[쇼츠\] 폭탄 드론에 갱단 두목 사망…사면초가에 "대화 나서겠다"
+
+> \(서울=연합뉴스\) 수천 명의 엘살바도르군과 유엔이 지원하는 갱단진압부대\(GSF\) 등이 투입된 아이티에서 악명 높은 갱단들이 사면초가에 내몰리고 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109090400704>) · 2026-11-09 14:36 KST · 작성·제공: 전석우
+
+## "돈바스 주민투표" 언급했다 역풍맞은 프랑스 극좌 대선주자
+
+> 프랑스의 극좌 대선 후보인 장뤼크 멜랑숑\(75\) 굴복하지않는프랑스\(LFI\) 대표가 우크라이나 종전 방안을 둘러...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109074800009>) · 2026-11-09 12:18 KST · 작성·제공: 이신영
+
+## 맘다니, 美대선 '킹메이커' 행보…진보인사들과 비공개 회동
+
+> 조란 맘다니 뉴욕시장이 2028년 미국 대선을 2년 앞두고 진보진영의 '킹메이커' 행보를 보이고 있다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109102000009>) · 2026-11-09 14:34 KST · 작성·제공: 고일환
 
 ## 트럼프-민주, 금주 '헤그세스 탄핵안' 1라운드 충돌…與반란표 주목
 
@@ -76,6 +94,10 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008836150&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-08 20:51 KST · 작성·제공: replay@sbs.co.kr \(박재현 기자\)
 
+## 후계자도 없는데…'젠슨 황 불륜 리스크' 엔비디아 위기
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008837281&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-09 14:50 KST · 작성·제공: minpyo@sbs.co.kr \(김민표\)
+
 ## 밴스-헤그세스-루비오, 이란전 다른 목소리… “전쟁 끝내야” vs “공습 재개” vs “경제 제재”
 
 > 미국 중간선거가 집권 공화당의 참패로 끝난 뒤 도널드 트럼프 미 대통령의 핵심 참모들이 선거 패배의 가장 큰 이유로 지목되는 이란 전쟁의 향방을 놓고 종전파, 강경파,…
@@ -98,18 +120,39 @@
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/08/china-north-korean-workers-wage-exploitation/>) · 2026-11-09 05:59 KST · 작성·제공: 서울-김지은 nk@rfa.org
 
+## 딸-아들에 사위까지…‘불륜’ 젠슨 황, 엔비디아 가족경영도 논란
+
+> 세계 최대 반도체 기업 엔비디아의 젠슨 황 최고경영자\(CEO\)가 혼외 관계와 관련해 직원들에게 사과한 가운데 딸과 아들, 사위까지 회사에서 주요 업무를 맡고 있는 것으로 나타나면서 가족…
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134991773/2>) · 2026-11-09 14:14 KST
+
 ## 트럼프, ‘UFC 선수 백악관 난동’ 애니메이션 공유
 
 > 도널드 트럼프 미국 대통령이 데이나 화이트 UFC 회장을 신임 백악관 대변인으로 내정했다고 전격 발표한 데 이어 UFC 소속 선수들이 백악관 브리핑룸에서 질문하는 기자들을 때려눕히는 애니메이션…
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134989299/1>) · 2026-11-09 08:20 KST
 
+## 이란, 전쟁 전 1월 시위 가담자 3명 사형집행…혐의는 “美·이스라엘 협력”
+
+> 이란이 1월 알보르즈주 카라지에서 발생한 소요 사태 당시 무장 공격, 방화, 사보타주를 자행한 혐의로 유죄 판결을 받은 3명에 대해 8일 사형을 집행했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134991338/1>) · 2026-11-09 13:40 KST
+
+## 허리 감싸고 볼 뽀뽀…젠슨 황-불륜女, 스킨십 티났다
+
+> 젠슨 황 미국 엔비디아 최고경영자\(CEO\)가 불륜을 인정한 가운데 상대 여성으로 지목된 중국 국적의 엘리스 황\(黃樂·황러\)에 대한 관심이 높아지고 있다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134991169/1>) · 2026-11-09 14:03 KST
+
 ## 다른 매체의 원문
 
 - [No clear winner in New Zealand election, as leaders prepare for weeks of talks](<https://www.npr.org/2026/11/08/nx-s1-6033999/no-clear-winner-in-new-zealand-election-as-leaders-prepare-for-weeks-of-talks>) · NPR
 - [South Africa's ANC is humbled by its worst election results as it continues its decline](<https://abcnews.com/International/wireStory/south-africas-anc-humbled-worst-election-results-continues-137955443>) · ABC News 미국
+- [How a bank collapse left millions in limbo and toppled Paraguay's president](<https://www.npr.org/2026/11/09/nx-s1-6034066/paraguay-president-pena-ueno>) · NPR
 - [Europe to join U.S.-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections](<https://www.npr.org/2026/11/08/nx-s1-6034014/europe-join-us-brokered-ukraine-talks-abu-dhabi-russia>) · NPR
+- [South Africa: Three Killed in Grassy Park Shooting - South African News Briefs - November 9, 2026](<https://allafrica.com/stories/202611090090.html>) · AllAfrica · allAfrica.com
 - [Saudi Arabia turns to Syria for help as fighting with Houthis escalates](<https://abcnews.com/International/wireStory/saudi-arabia-turns-syria-fighting-houthis-escalates-137956922>) · ABC News 미국
+- [Senegal: Many Killed After Migrant Boat Sinks Off Senegal](<https://allafrica.com/stories/202611090088.html>) · AllAfrica · allAfrica.com
 - [Tourists and locals recount fatal Krakow mass shooting that left Poland reeling](<https://abcnews.com/International/wireStory/tourists-locals-recount-fatal-krakow-mass-shooting-left-137952616>) · ABC News 미국
 - [Saudi Arabia intercepts missiles as Aramco building in Riyadh is damaged, and other Mideast news](<https://abcnews.com/International/wireStory/saudi-arabia-intercepts-missiles-aramco-building-riyadh-damaged-137951443>) · ABC News 미국
 - [The world's largest telecoms firm is on trial and the outcome has global implications](<https://www.npr.org/2026/11/08/nx-s1-6030670/the-worlds-largest-telecoms-firm-is-on-trial-and-the-outcome-has-global-implications>) · NPR
