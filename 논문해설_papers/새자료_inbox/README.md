@@ -1,56 +1,20 @@
 # 새 논문·연구 소개
 
-반영: 2026-11-06 20:24 KST
+반영: 2026-11-09 21:00 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## ReproBridge: Building Reproducibility into ML Research Artifacts
+## Knowing When to Intervene: Causal Evaluation of AI Agents
 
-arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 코딩·에이전트·도구 사용 주제를 다룹니다.
+arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·에이전트·도구 사용·평가·비용·실행 효율 주제를 다룹니다.
 
-출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.08452>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.09792>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Yubo Wang, Rui Meng, Jaehyun Nam, Tomas Pfister, Jinsung Yoon
+RSS·Atom 표기 작성자: Ayush Sawarni, Wenqian Xing, Tijana Zrnic, Ramesh Johari, Vasilis Syrgkanis
 
-가져온 시각: 2026-11-06 20:24:38 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Scaling Up Analog CIM: A Simulation Framework for Topology-Aware Mapping
-
-arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·비용·실행 효율·에너지·전력·반도체·통신·신호 처리 주제를 다룹니다.
-
-출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.08399>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자: Yuxin Ren, Danella Zhao, Huanrui Yang
-
-가져온 시각: 2026-11-06 20:24:41 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## NPCBench: A Clinical Apprenticeship Benchmark for Multimodal Care-Pathway Reasoning in Nasopharyngeal Carcinoma
-
-arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·이미지·영상 처리·평가·강의·학습 자료 주제를 다룹니다.
-
-출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.08369>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자(일부): Pengkai Wang, Wei-Wei Zhang, Yan Li, Min Tang, Zhitian Hou, Zeyu Liu, Guanghao Zhu, Yuanyi Wang, Yanggan Gu, Wenjun Wang, Minheng Ni, Congkai Xie, Zhijie…
-
-가져온 시각: 2026-11-06 20:24:38 KST
+가져온 시각: 2026-11-09 21:00:40 KST
 
 수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
@@ -60,51 +24,15 @@ RSS·Atom 표기 작성자(일부): Pengkai Wang, Wei-Wei Zhang, Yan Li, Min Tan
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Should You Split Decode? Disaggregation Across Future Models and Accelerators
+## Payload-Blind Bistatic Delay-Doppler Sensing with Phase-Injected Chirps in CE-OFDM
 
-arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·평가·비용·실행 효율·GPU·가속기·통신·신호 처리 주제를 다룹니다.
+arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 비용·실행 효율 주제를 다룹니다.
 
-출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.08299>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.09687>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Ramyad Hadidi
+RSS·Atom 표기 작성자: Gustavo P. Gon\\c\{c\}alves, Henrique L. Senger, Bruno S. Chang, Giuseppe Thadeu Freitas de Abreu
 
-가져온 시각: 2026-11-06 20:24:41 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## BabyTheorist: A Benchmark for Learning to Theorize the World from Observation Alone
-
-arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·평가 주제를 다룹니다.
-
-출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.08177>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자: Doojin Baek, Junyeob Baek, Mingyu Jo, Hosung Lee, Taegu Kang, Gyubin Lee, Sungjin Ahn
-
-가져온 시각: 2026-11-06 20:24:38 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Geometry-Aware Channel Aging in MIMO Systems: When Is Kronecker Separability Enough?
-
-arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 비용·실행 효율·로봇·모빌리티·통신·신호 처리 주제를 다룹니다.
-
-출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.08007>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자: Steven Rivetti, Gabor Fodor, Emil Bjornson, Mikael Skoglund
-
-가져온 시각: 2026-11-06 20:24:44 KST
+가져온 시각: 2026-11-09 21:00:46 KST
 
 수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
@@ -114,15 +42,105 @@ RSS·Atom 표기 작성자: Steven Rivetti, Gabor Fodor, Emil Bjornson, Mikael S
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Circe: Training-Free LLM Self-Evaluation via Component Interaction Consistency
+## Sparse Array-Inspired Frame Structure Design for 5G NR ISAC
+
+arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.
+
+출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.09544>) · arXiv 공지일: 2026-11-09 14:00 KST
+
+RSS·Atom 표기 작성자: Haisu Wu, Hong Ren, Cunhua Pan, Yuqing Chen, Ruizhe Wang, Jun Tang, Dongming Wang, Jiangzhou Wang
+
+가져온 시각: 2026-11-09 21:00:46 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Memory as a Temporal Resource: Lifetime Contracts for Multi-Retention Systems
+
+arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다.
+
+출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.09518>) · arXiv 공지일: 2026-11-09 14:00 KST
+
+RSS·Atom 표기 작성자: Adrian Jackson
+
+가져온 시각: 2026-11-09 21:00:43 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Pinching Antenna Systems \(PASS\) for Air-Ground Integrated Sensing and Communications \(ISAC\)
+
+arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.
+
+출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.09435>) · arXiv 공지일: 2026-11-09 14:00 KST
+
+RSS·Atom 표기 작성자: Chaoran Chen, Haochen Li, Jincheng Zhu, Zhiwen Pan, Mark F. Flanagan
+
+가져온 시각: 2026-11-09 21:00:46 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Robust &amp; Scalable Website Fingerprinting via Minimal DRAM Traffic
+
+arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 메모리·캐시 주제를 다룹니다.
+
+출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.09422>) · arXiv 공지일: 2026-11-09 14:00 KST
+
+RSS·Atom 표기 작성자: Shubham Roy, Samar Parwez, Biswabandan Panda
+
+가져온 시각: 2026-11-09 21:00:43 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Beyond the Pseudo-Inverse: GIM Precoding for Per-Antenna Power Minimisation in MU-MIMO
+
+arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.
+
+출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.09409>) · arXiv 공지일: 2026-11-09 14:00 KST
+
+RSS·Atom 표기 작성자: Hernan X. Cordova
+
+가져온 시각: 2026-11-09 21:00:46 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Forecasting cumulative intraoperative hypotension burden: patient-disjoint evaluation of quantile boosting and alert policies
 
 arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가 주제를 다룹니다.
 
-출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.07948>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.09259>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Shuyi Miao, Zheng Li, Xu Xie, Linrui Xu, Fei Shen, Xiaoyu Du, Tat-Seng Chua
+RSS·Atom 표기 작성자: Yunfan Zhao
 
-가져온 시각: 2026-11-06 20:24:38 KST
+가져온 시각: 2026-11-09 21:00:40 KST
 
 수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
@@ -132,35 +150,17 @@ RSS·Atom 표기 작성자: Shuyi Miao, Zheng Li, Xu Xie, Linrui Xu, Fei Shen, X
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Angle Estimation for Initial Access in True-Time-Delay Systems: Communication and Sensing Tradeoff
+## TwinHash: Two-Sided Object Identity Management for Time- and Energy-Efficient Agentic Workflows
 
-arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.
+arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·에이전트·도구 사용·비용·실행 효율·에너지·전력 주제를 다룹니다.
 
-출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.07911>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.09254>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Carl Collmann, Ahmad Nimr, Gerhard Fettweis
+RSS·Atom 표기 작성자: Sangbu Yun, Jung Gyu Min, Jin Hyun, Jeonghwan Ahn, Youngjoo Lee
 
-가져온 시각: 2026-11-06 20:24:44 KST
+가져온 시각: 2026-11-09 21:00:43 KST
 
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Sparse Bayesian Sensing for Antenna Arrays with Per-Element Gain, Phase, and Position Errors
-
-arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.
-
-출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.07823>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자: Patrick H\\"odl, Erik Leitinger, Klaus Witrisal
-
-가져온 시각: 2026-11-06 20:24:44 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
 자료 유형: 프리프린트 초록
 
@@ -168,35 +168,17 @@ RSS·Atom 표기 작성자: Patrick H\\"odl, Erik Leitinger, Klaus Witrisal
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Reliable Bistatic Ranging With Unreliable Communication Payloads
+## MM-DyGraph: A Dataset, Benchmark, and Model for Multimodal Dynamic Graphs
 
-arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.
+arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 이미지·영상 처리·평가 주제를 다룹니다.
 
-출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.07803>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.09240>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Fangping Yu, Fan Liu, Yifeng Xiong, Jie Yang, Lei Xie, Shi Jin
+RSS·Atom 표기 작성자: Zongyuan Wu, Pengjie Wang, Lingshan Chen, Tianhang Wan, Yuan Meng, Xin Wang, Ling Feng, Wenwu Zhu
 
-가져온 시각: 2026-11-06 20:24:44 KST
+가져온 시각: 2026-11-09 21:00:40 KST
 
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Flexible Piezoelectric Tactile Sensing System for Intelligent Object Recognition
-
-arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에너지·전력·로봇·모빌리티 주제를 다룹니다.
-
-출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.07779>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자: Razan Khalifeh, Mohamad Yaacoub, Christian Gianoglio, Moustafa Saleh, Maurizio Valle, Yahya Abbass
-
-가져온 시각: 2026-11-06 20:24:44 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
 자료 유형: 프리프린트 초록
 
@@ -204,15 +186,33 @@ RSS·Atom 표기 작성자: Razan Khalifeh, Mohamad Yaacoub, Christian Gianoglio
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Pediatric ECG foundation model via adult-to-pediatric fine-tuning: downstream tasks and clinical evaluation
+## Evaluation of a Multi-Link Machine Learning Approach for Rainfall Detection Using Satellite Microwave Links
+
+arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가·에너지·전력·우주·항공 시스템 주제를 다룹니다.
+
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.09156>) · arXiv 공지일: 2026-11-09 14:00 KST
+
+RSS·Atom 표기 작성자: Mostafa Ftouni, Margherita Spalla, Matteo Colli, Andrea Randazzo, Christian Gianoglio
+
+가져온 시각: 2026-11-09 21:00:40 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Frame: Form-Restricted Authoring with Model-Based Evaluation
 
 arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가 주제를 다룹니다.
 
-출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.07717>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.08921>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Yu Cao, Haiyan Xu, Xiaohan Li, Jian Yang, Yuqing Feng, Wei Wang, Haomin Li
+RSS·Atom 표기 작성자: Nan Jiang, Mohammed Mohsin Hussain, Onkar Tiwari, Ankit Jain, Thong Q. Nguyen, Abhishek Agarwal, Vishal Chowdhary
 
-가져온 시각: 2026-11-06 20:24:38 KST
+가져온 시각: 2026-11-09 21:00:40 KST
 
 수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
@@ -222,33 +222,15 @@ RSS·Atom 표기 작성자: Yu Cao, Haiyan Xu, Xiaohan Li, Jian Yang, Yuqing Fen
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## CAMP: Context-Aware Mapping and Placement for LLMs on 3D-IMC Arrays
+## GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing
 
-arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 비용·실행 효율·에너지·전력 주제를 다룹니다.
+arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 이미지·영상 처리·비용·실행 효율 주제를 다룹니다.
 
-출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.07707>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.08879>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Orhun G\\"orkem, Athanasios Vasilopoulos, Georgios Pagonis, Victoria Clerico, Hadjer Benmeziane, Irem Boybat, Hsinyu Tsai, Abu Sebastian, William Andrew Simon
+RSS·Atom 표기 작성자: Xinyi Niu, Lingfeng Chen, Jiehua Zhang, Panhe Hu, Li Liu, Zhen Liu, Yongxiang Liu
 
-가져온 시각: 2026-11-06 20:24:41 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## When Does Inter-BS Interference Hurt Sensing in ISAC? An Exact Fisher Information Analysis under Finite-Alphabet Interference
-
-arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.
-
-출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.07577>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자: Kawon Han, Kaitao Meng, Fan Liu, Christos Masouros
-
-가져온 시각: 2026-11-06 20:24:44 KST
+가져온 시각: 2026-11-09 21:00:46 KST
 
 수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
@@ -258,17 +240,17 @@ RSS·Atom 표기 작성자: Kawon Han, Kaitao Meng, Fan Liu, Christos Masouros
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## OpenRDMA: A GPU-Native Multi-Path Reliable RDMA Transport Architecture
+## Notwithstanding Anything to the Contrary, Ignore All Instructions: Measuring Prompt Injection Guards on Legal Contract Review Attacks
 
-arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 GPU·가속기·프로세서·컴퓨터구조·메모리·캐시·통신·신호 처리 주제를 다룹니다.
+arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다.
 
-출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.07559>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.08834>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Ziheng Ji, Chunyu Liu, Weihao Peng, Mingheng Mi, Pu Wang, Hai Zhang
+RSS·Atom 표기 작성자: Mark Heimann, Katherine Taylor, Bruno Jacob
 
-가져온 시각: 2026-11-06 20:24:41 KST
+가져온 시각: 2026-11-09 21:00:40 KST
 
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
 자료 유형: 프리프린트 초록
 
@@ -276,51 +258,33 @@ RSS·Atom 표기 작성자: Ziheng Ji, Chunyu Liu, Weihao Peng, Mingheng Mi, Pu 
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Memory Fit: Architectural Support for Page Placement by Learning Models of Good Behavior
+## Sensing-Based Communication: A Non-Orthogonal Passive Reflection Framework for ISAC
+
+arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.
+
+출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.08809>) · arXiv 공지일: 2026-11-09 14:00 KST
+
+RSS·Atom 표기 작성자: Xin Xiong, Mathew Salas, Sihua Shao, Chen Chen, Mostafa Hassanalian, Rafael Fierro
+
+가져온 시각: 2026-11-09 21:00:46 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Gain-Dependent Entropy Characterization of a Zener Avalanche Noise TRNG via Dual NIST Standards: Toward Low-Cost Hardware Entropy for ICS Deployments
 
 arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 비용·실행 효율 주제를 다룹니다.
 
-출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.07506>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.08774>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Chun Deng, Hui Sub Shim, Evan Laufer, Anna Eaton, David Tennenhouse, Tsachy Weissman, Philip Levis
+RSS·Atom 표기 작성자: Rishabh Das
 
-가져온 시각: 2026-11-06 20:24:41 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance
-
-arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에이전트·도구 사용·평가 주제를 다룹니다.
-
-출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.07464>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자(일부): Yupeng Cao, Xueqing Peng, Lingfei Qian, Haohang Li, Yangyang Yu, Anke Xu, Wenbo Cao, Yan Wang, Yuechen Jiang, Yuyan Wang, Zhuohan Xie, Yankai Chen, Zehan…
-
-가져온 시각: 2026-11-06 20:24:38 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## A Synchronized Tri-Modality Wireless System for Multi-Point Non-Contact Cardiac Monitoring
-
-arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.
-
-출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.07358>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자: Wei Ren, Kaili Zhao, Huansheng Yi, Miaoyang Hu, Jianqi Wang, Canhua Xu, Fugui Qi
-
-가져온 시각: 2026-11-06 20:24:41 KST
+가져온 시각: 2026-11-09 21:00:43 KST
 
 수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
@@ -330,15 +294,15 @@ RSS·Atom 표기 작성자: Wei Ren, Kaili Zhao, Huansheng Yi, Miaoyang Hu, Jian
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Rule-Guided and Trajectory-Aware Repair for LLM-Based HLS Generation
+## CPU Micro-Architectural Characteristic Sensitivity Study on CPU-Side Agentic Task Latency
 
-arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.
+arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에이전트·도구 사용·비용·실행 효율·프로세서·컴퓨터구조 주제를 다룹니다.
 
-출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.07324>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.08697>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Xianjing Zhu, Wenqi Lou, Yuanbo Wen, Teng Wang, Lei Gong, Chao Wang, Xuehai Zhou
+RSS·Atom 표기 작성자: Jack Adiletta, Shixin Ji, Zhuoping Yang, Peipei Zhou
 
-가져온 시각: 2026-11-06 20:24:41 KST
+가져온 시각: 2026-11-09 21:00:43 KST
 
 수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
@@ -348,15 +312,33 @@ RSS·Atom 표기 작성자: Xianjing Zhu, Wenqi Lou, Yuanbo Wen, Teng Wang, Lei 
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## A Novel BVH-accelerated Dynamic Ray-Tracing Channel Model for Vehicular Communication Systems
+## Enabling Retraining-Free Accurate Inference in Analog Compute in Memory Accelerators
 
-arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 비용·실행 효율·통신·신호 처리 주제를 다룹니다.
+arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·비용·실행 효율 주제를 다룹니다.
 
-출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.07311>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.08693>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Songjiang Yang, Cheng-Xiang Wang, Yinghua Wang, Chen Wang, Jie Huang, Yunfei Chen
+RSS·Atom 표기 작성자: George Karfakis, Puneet Gupta
 
-가져온 시각: 2026-11-06 20:24:44 KST
+가져온 시각: 2026-11-09 21:00:43 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Physical Sensing Verification for Cognitive ISAC against UAV Spoofing via Digital Twins
+
+arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에이전트·도구 사용·통신·신호 처리 주제를 다룹니다.
+
+출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.08658>) · arXiv 공지일: 2026-11-09 14:00 KST
+
+RSS·Atom 표기 작성자: Seyed Bagher Hashemi Natanzi, Bo Tang
+
+가져온 시각: 2026-11-09 21:00:46 KST
 
 수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
@@ -366,51 +348,15 @@ RSS·Atom 표기 작성자: Songjiang Yang, Cheng-Xiang Wang, Yinghua Wang, Chen
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Energy Measurement and Optimization of TinyML in Resource-Constrained Embedded Systems: A Systematic Mapping Study
+## PINNeval: A Comprehensive Evaluation Standard for Physics-Informed Neural Networks
 
-arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에너지·전력 주제를 다룹니다.
+arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가 주제를 다룹니다.
 
-출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.07264>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.08559>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Clariele Almeida, Renan Beserra, Rafael Moura, Danilo Ara\\'ujo, Bruno Nogueira, S\\'ergio Chevtchenko, Ermeson Andrade
+RSS·Atom 표기 작성자: Kevin von Bargen, Hamid Ebrahimy, Tim R\\"omer
 
-가져온 시각: 2026-11-06 20:24:41 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## A Particle-Based Multiuser Communication with a Budget Limit
-
-arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 경제·경기·통신·신호 처리 주제를 다룹니다.
-
-출처: [arXiv 신호처리·통신 논문](<https://arxiv.org/list/eess.SP/recent>) · [원문](<https://arxiv.org/abs/2611.07171>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자: Shaojie Zhang, Ozgur B. Akan
-
-가져온 시각: 2026-11-06 20:24:44 KST
-
-수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/eess.SP>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
-
-자료 유형: 프리프린트 초록
-
-확인한 판본: v1
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Closed-Loop Agent Evaluation: Layered Measurement and Self-Calibration
-
-arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에이전트·도구 사용·평가 주제를 다룹니다.
-
-출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.07051>) · arXiv 공지일: 2026-11-06 14:00 KST
-
-RSS·Atom 표기 작성자: Ruifeng Ren, Gun Ahn
-
-가져온 시각: 2026-11-06 20:24:38 KST
+가져온 시각: 2026-11-09 21:00:40 KST
 
 수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
@@ -420,15 +366,51 @@ RSS·Atom 표기 작성자: Ruifeng Ren, Gun Ahn
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## BlockLock: Reproducible LLM Inference with Fixed Batch Geometry
+## SAFTAC: Simulation-Augmented Fine-Tuning of Open-Source LLMs for Analog Circuit Design
 
-arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론 주제를 다룹니다.
+arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·회로·디스플레이 주제를 다룹니다.
 
-출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/2611.06977>) · arXiv 공지일: 2026-11-06 14:00 KST
+출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.08543>) · arXiv 공지일: 2026-11-09 14:00 KST
 
-RSS·Atom 표기 작성자: Xiuyuan Qi, Pedro Reviriego, Javier Conde, Shanshan Liu
+RSS·Atom 표기 작성자: Junsheng Huang, Yifan Sun, Zhuoer Zhang, Ning Wei, Yening Liu, Michael Molter, Pavan Kumar Hanumolu, Elyse Rosenbaum, Bin Hu, Huan Zhang
 
-가져온 시각: 2026-11-06 20:24:38 KST
+가져온 시각: 2026-11-09 21:00:43 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## RoadBlock: Rethinking GPU Tensor Core Microarchitecture for Emerging Microscaling Format Support
+
+arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가·GPU·가속기·프로세서·컴퓨터구조 주제를 다룹니다.
+
+출처: [arXiv 컴퓨터구조 논문](<https://arxiv.org/list/cs.AR/recent>) · [원문](<https://arxiv.org/abs/2611.08526>) · arXiv 공지일: 2026-11-09 14:00 KST
+
+RSS·Atom 표기 작성자: Nikhil Rout, Blaise Tine
+
+가져온 시각: 2026-11-09 21:00:43 KST
+
+수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AR>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
+
+자료 유형: 프리프린트 초록
+
+확인한 판본: v1
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Toward a Robust Crowd-labeling Framework using Expert Evaluation and Pairwise Comparison
+
+arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가 주제를 다룹니다.
+
+출처: [arXiv AI 조사·평가 논문](<https://arxiv.org/list/cs.AI/recent>) · [원문](<https://arxiv.org/abs/1607.02174>) · arXiv 공지일: 2026-11-09 14:00 KST
+
+RSS·Atom 표기 작성자: Faiza Khan Khattak, Ansaf Salleb-Aouissi
+
+가져온 시각: 2026-11-09 21:00:40 KST
 
 수집 경로: [공식 목록·피드](<https://rss.arxiv.org/rss/cs.AI>) · 방법: arXiv 공식 분야별 RSS의 제목·초록·공지일
 
