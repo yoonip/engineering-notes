@@ -1,30 +1,18 @@
 # 도구·보안 새 자료
 
-반영: 2026-11-07 12:06 KST
+반영: 2026-11-09 21:00 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## 인피니트헬스케어 제품 보안 업데이트 권고
+## SonicWall 제품 보안 업데이트 권고
 
-> 인피니트헬스케어社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
+> SonicWall社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
 
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72289>) · 공식 RSS 게시일: 2026-11-07
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72290>) · 공식 RSS 게시일: 2026-11-09
 
-가져온 시각: 2026-11-07 12:06:26 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
-
-## OpenSSH 보안 업데이트 권고
-
-> Alpine Linux는 OpenSSH에서 발생하는 인증 우회 취약점을 해결한 보안 업데이트 발표 o 영향받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신…
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72288>) · 공식 RSS 게시일: 2026-11-07
-
-가져온 시각: 2026-11-07 12:06:27 KST
+가져온 시각: 2026-11-09 21:00:36 KST
 
 수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
 
