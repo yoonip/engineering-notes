@@ -4,6 +4,7 @@
     "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
     "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
     "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
+    "industry:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings": "industry:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings",
     "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module",
     "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team": "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team",
     "industry:https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications": "industry:https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications",
@@ -46,6 +47,7 @@
     "models:https://openai.com/index/gpt-6-for-everyone": "models:https://openai.com/index/gpt-6-for-everyone",
     "models:https://openai.com/index/introducing-gpt-6-1-sol": "models:https://openai.com/index/introducing-gpt-6-1-sol",
     "models:https://openai.com/index/introducing-gpt-6-1-terra": "models:https://openai.com/index/introducing-gpt-6-1-terra",
+    "models:https://www.anthropic.com/claude-fable-and-mythos-5-2": "models:https://www.anthropic.com/claude-fable-and-mythos-5-2",
     "models:https://www.anthropic.com/claude-haiku-5-5": "models:https://www.anthropic.com/claude-haiku-5-5",
     "models:https://www.anthropic.com/claude-sonnet-5-5": "models:https://www.anthropic.com/claude-sonnet-5-5",
     "papers:https://arxiv.org/abs/1607.02174": "papers:https://arxiv.org/abs/1607.02174",
@@ -250,6 +252,7 @@
     "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations": "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations",
     "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform",
     "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery": "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery",
+    "products:https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5": "products:https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5",
     "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one",
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
     "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support": "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support",
@@ -479,6 +482,27 @@
           "title": "NASA’s SR-1 Freedom Advances with Progress on Nuclear Power Module",
           "update": true,
           "url": "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module/"
+        }
+      ],
+      "2026-11-10": [
+        {
+          "acquired_at": "2026-11-09T22:40:01.293163+00:00",
+          "acquisition_method": "공식 기술 분야 RSS의 제목·발행일·소개",
+          "author": "Dede Dinius",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-04T16:52:43+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-09T22:38:44.829266+00:00",
+          "group": "industry",
+          "homepage": "https://www.nasa.gov/technology/",
+          "key": "industry:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings",
+          "source_name": "NASA 기술 자료",
+          "source_url": "https://www.nasa.gov/technology/feed/",
+          "summary_ko": "NASA 기술 자료에서 공개한 산업 기술 자료입니다. 공개 제목·소개에서 우주·항공 시스템 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NASA Navigation Experiment Shows Promise for Planetary Landings",
+          "update": false,
+          "url": "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/"
         }
       ]
     },
@@ -764,6 +788,25 @@
           "title": "Introducing GPT-6.1 Terra",
           "update": true,
           "url": "https://openai.com/index/introducing-gpt-6-1-terra"
+        }
+      ],
+      "2026-11-10": [
+        {
+          "acquired_at": "2026-11-09T22:38:46.146784+00:00",
+          "acquisition_method": "공식 목록·공개 소개문",
+          "date": "2026-11-09",
+          "date_label": "",
+          "first_seen": "2026-11-09T22:38:44.829266+00:00",
+          "group": "models",
+          "homepage": "https://www.anthropic.com/",
+          "key": "models:https://www.anthropic.com/claude-fable-and-mythos-5-2",
+          "source_name": "Anthropic",
+          "source_url": "https://www.anthropic.com/news",
+          "summary_ko": "Anthropic의 모델 관련 공식 발표입니다. 공개 제목·소개에서 코딩 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+          "update": false,
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
         }
       ]
     },
@@ -5517,6 +5560,27 @@
           "update": false,
           "url": "https://blogs.nvidia.co.kr/blog/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion/"
         }
+      ],
+      "2026-11-10": [
+        {
+          "acquired_at": "2026-11-09T22:40:05.519926+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Elizabeth Goodman",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-09T19:09:32+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-09T22:38:44.829266+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 로봇·모빌리티 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/"
+        }
       ]
     },
     "reports": {
@@ -6803,6 +6867,13 @@
       "pdf_url": "https://ksp.etri.re.kr/ksp/plan-report/file/1572.pdf",
       "title": "Physical AI 시대, 디스플레이 역할 재조명",
       "url": "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572"
+    },
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2": {
+      "canonical": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "canonical_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "date": "2026-11-09",
+      "description": "Claude Fable 5.2 and Claude Mythos 5.2, our new models for the hardest technical challenges. Fable 5.2 sets a new bar in coding, finance, and the sciences.",
+      "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2"
     },
     "https://www.anthropic.com/claude-haiku-5-5": {
       "canonical": "https://www.anthropic.com/claude-haiku-5-5",
@@ -8176,6 +8247,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery"
     },
+    "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5"
+    },
     "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one"
@@ -8299,6 +8374,10 @@
     "https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": {
       "group": "industry",
       "key": "industry:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface"
+    },
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2": {
+      "group": "models",
+      "key": "models:https://www.anthropic.com/claude-fable-and-mythos-5-2"
     },
     "https://www.anthropic.com/claude-haiku-5-5": {
       "group": "models",
@@ -8496,6 +8575,10 @@
       "group": "industry",
       "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
     },
+    "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings": {
+      "group": "industry",
+      "key": "industry:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings"
+    },
     "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": {
       "group": "industry",
       "key": "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module"
@@ -8527,10 +8610,10 @@
       "Last-Modified": "Thu, 05 Nov 2026 10:51:34 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"beadb3fe9335ccbea43ab0d2aa5247fcd05d93cc7e31bfc6966564c498cb844f\""
+      "ETag": "W/\"bb8447bd023c0ce62c86db7da0c73b7a055bf077572a02a846d53efd8b481f3c\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"4ccf1818f82a52c81fc6b9858a3f579d7e132787030b281e2a448638431e5a07\""
+      "ETag": "W/\"490257c06ca3c7783d0c1a07574542cc6c5f3cb7267721c6e0d1659c205ccb19\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -8548,14 +8631,10 @@
       "Last-Modified": "Sun, 01 Nov 2026 12:16:24 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Mon, 09 Nov 2026 12:00:36 GMT"
+      "Last-Modified": "Mon, 09 Nov 2026 15:16:41 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
-    "https://blogs.nvidia.co.kr/feed": {
-      "ETag": "\"6a1d60194bec87b648e3c196e4469861-gzip\"",
-      "Last-Modified": "Mon, 09 Nov 2026 11:11:45 GMT"
-    },
     "https://blogs.nvidia.co.kr/robots.txt": {
       "ETag": "\"168f-65ed3880e5f63-gzip\"",
       "Last-Modified": "Tue, 27 Oct 2026 14:47:54 GMT"
@@ -8564,12 +8643,15 @@
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "ETag": "\"DWNE0w\""
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"kqg8HA\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"2b9140979c0d81bca75638603aedf2d3\"",
-      "Last-Modified": "Fri, 06 Nov 2026 22:20:31 GMT"
+      "ETag": "\"561f1038b743f8cd4f467535d3443768\"",
+      "Last-Modified": "Mon, 09 Nov 2026 19:09:36 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -8577,10 +8659,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-vkhJId20GTctWaZLACoMB5wOj/w\""
+      "ETag": "W/\"33bc8-IlTbBRBykwEFx2Zq6QattKPa7SA\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40175-bhrXZxwYG6RlpZ/jJGFj/NrjPuc\""
+      "ETag": "W/\"40175-xvmTPkpJf+5srx69LBUWbYeXfyw\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -8615,7 +8697,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -8625,12 +8706,12 @@
       "Last-Modified": "Mon, 09 Nov 2026 02:51:35 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794225105\"",
-      "Last-Modified": "Mon, 09 Nov 2026 11:51:45 GMT"
+      "ETag": "\"1794263867\"",
+      "Last-Modified": "Mon, 09 Nov 2026 22:37:47 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794225646\"",
-      "Last-Modified": "Mon, 09 Nov 2026 12:00:46 GMT"
+      "ETag": "\"1794264013\"",
+      "Last-Modified": "Mon, 09 Nov 2026 22:40:13 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -8646,6 +8727,7 @@
     "https://rss.arxiv.org/rss/eess.SP": {
       "ETag": "0bb4b3d2c8b3df923569a147991103bd6d5caa9f622c608cb275843ae20ae086"
     },
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2": {},
     "https://www.anthropic.com/claude-haiku-5-5": {},
     "https://www.anthropic.com/claude-sonnet-5-5": {},
     "https://www.anthropic.com/news": {},
@@ -8730,7 +8812,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0d2df33cc2ebb372beb8874b4df7136f6\""
+      "ETag": "\"00b42e297e1741705fc7259a657799031\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -8830,8 +8912,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"e9a903ca347c51a13fbfdcee03349490\"",
-      "Last-Modified": "Fri, 06 Nov 2026 02:39:29 GMT"
+      "ETag": "\"487f639c024b98eba406458756ffad02\"",
+      "Last-Modified": "Mon, 09 Nov 2026 22:14:38 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -8968,6 +9050,10 @@
     "anthropic:https://www.anthropic.com/claude-fable-and-mythos-5-1": {
       "list_fingerprint": "58ae0b95838368bfff61192ca33756164caa839afd094f6818fe7700d4634954",
       "status": "existing_analysis"
+    },
+    "anthropic:https://www.anthropic.com/claude-fable-and-mythos-5-2": {
+      "list_fingerprint": "64087d068f442205fcb26f85f850d90974656ed00064c18105a8001d8f0bb025",
+      "status": "posted"
     },
     "anthropic:https://www.anthropic.com/claude-haiku-5-5": {
       "list_fingerprint": "f488e60c44958774e3ede0844702dc6b1609bcd42943ebe6136c32f23a7c233b",
@@ -11085,6 +11171,12 @@
       "language": "ko",
       "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=vu3_ACiKP7eqexfQqZ9ooVZgG9KKOouPhBCRxmj7.mehome1?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1902920"
     },
+    "industry:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings": {
+      "fingerprint": "145a93fb5578c33c5e5a01158f5bdd1d3a215922df21a8153421ccbdb22c1ce6",
+      "first_seen": "2026-11-09T22:38:44.829266+00:00",
+      "language": "en",
+      "url": "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/"
+    },
     "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": {
       "fingerprint": "b202bd55f9742fd9dbc4b2c8e9f904611266181f01a467ce93db197ce4c7e84f",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -12023,6 +12115,12 @@
       "language": "en",
       "url": "https://openai.com/index/introducing-gpt-6-1-terra"
     },
+    "models:https://www.anthropic.com/claude-fable-and-mythos-5-2": {
+      "fingerprint": "89c535b8b1586363fe1f5b6e5d8f96817000adaa8877bce1fb4b11e2a798e503",
+      "first_seen": "2026-11-09T22:38:44.829266+00:00",
+      "language": "en",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
     "models:https://www.anthropic.com/claude-haiku-5-5": {
       "fingerprint": "f488e60c44958774e3ede0844702dc6b1609bcd42943ebe6136c32f23a7c233b",
       "first_seen": "2026-10-29T03:34:54.131044+00:00",
@@ -12037,6 +12135,10 @@
     },
     "nasa-technology:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": {
       "list_fingerprint": "9a63700995816e9917818c4620da1899d44edf6bc138b070c34b2a9a795c3e46",
+      "status": "posted"
+    },
+    "nasa-technology:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings": {
+      "list_fingerprint": "145a93fb5578c33c5e5a01158f5bdd1d3a215922df21a8153421ccbdb22c1ce6",
       "status": "posted"
     },
     "nasa-technology:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": {
@@ -12418,6 +12520,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/lower-the-cost-of-building-and-running-visual-ai-agents-with-nvidia-vss-blueprint-3-3": {
       "list_fingerprint": "dd77c4f82d4f8aa478a6d265b15f09f1006cf6b71a7610c0d8eb493f91c72d2b",
       "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5": {
+      "list_fingerprint": "aff1ee10a781f5b91e6b17c428c72ba52d7994f78e5c50491daad892777f7b00",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": {
       "list_fingerprint": "4331313706958a977c157a4159142d713b003eedde084b0dcb32950f7262e2ee",
@@ -14002,6 +14108,12 @@
       "first_seen": "2026-11-03T01:44:27.211737+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/"
+    },
+    "products:https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5": {
+      "fingerprint": "aff1ee10a781f5b91e6b17c428c72ba52d7994f78e5c50491daad892777f7b00",
+      "first_seen": "2026-11-09T22:38:44.829266+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/"
     },
     "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": {
       "fingerprint": "4331313706958a977c157a4159142d713b003eedde084b0dcb32950f7262e2ee",
