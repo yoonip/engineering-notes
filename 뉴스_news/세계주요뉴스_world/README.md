@@ -1,165 +1,46 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-09 15:30 KST
+갱신: 2026-11-10 02:30 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
-## 트럼프, 네타냐후에 가자 평화계획 이행 촉구…총선 끝나자 압박
+## 미 중간선거 후 G7에 쏠린 눈…유럽, 종전협상 참여 압박
 
-> 도널드 트럼프 미국 대통령이 이스라엘 총선이 끝나자 베냐민 네타냐후 총리에게 그동안 보류됐던 가자지구 평화계획...
+> 9일\(현지시간\) 프랑스 파리에서 이틀간의 일정으로 막을 올린 주요 7개국\(G7\) 외교장관회의에서 유럽 국가들...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109016600009>) · 2026-11-09 08:14 KST · 작성·제공: 김아람
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110002200085>) · 2026-11-10 02:14 KST · 작성·제공: 김지연
 
-## "TSMC, 메모리 사업 진출 검토…엔비디아 요청"
+## 튀르키예 서부 제철공장서 폭발…16명 사망
 
-> 세계 최대 파운드리\(반도체 위탁생산\) 업체인 대만 TSMC가 첨단 메모리 반도체 제조로 사업 영역을 넓히는 방...
+> 튀르키예 서부 이즈미르 지역의 철강공장에서 9일\(현지시간\) 폭발 사고가 발생해 16명이 사망했다고 로이터통신...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109013800009>) · 2026-11-09 07:59 KST · 작성·제공: 정주호
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110001500109>) · 2026-11-10 01:28 KST · 작성·제공: 민경락
 
-## 프랑스 외무 "아부다비 종전협상에 유럽도 참여"
+## 미·러·우, 10일 아부다비서 '종전 협상' 개최…2월 이후 처음
 
-> 오는 10∼11일\(현지시간\) 아랍에미리트\(UAE\) 아부다비에서 열리는 미국과 러시아·우크라이나의 종전회담에...
+> 미국과 러시아, 우크라이나 협상 대표단이 전쟁 종식을 논의하기 위해 10일 아랍에미리트 아부다비에서 만날 예정입니다.
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261108055100082>) · 2026-11-08 23:26 KST · 작성·제공: 김계연
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8220502.html>) · 2026-11-09 23:39 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
-## \[쇼츠\] 폭탄 드론에 갱단 두목 사망…사면초가에 "대화 나서겠다"
+## 이란 대통령 "최고지도자, '전쟁도 평화도 아닌' 상황 종식 지시"
 
-> \(서울=연합뉴스\) 수천 명의 엘살바도르군과 유엔이 지원하는 갱단진압부대\(GSF\) 등이 투입된 아이티에서 악명 높은 갱단들이 사면초가에 내몰리고 ...
+> 마수드 페제시키안 이란 대통령은 9일\(현지시간\)\) 모즈타바 하메네이 이란 최고지도자가 '전쟁도 평화도 아닌...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109090400704>) · 2026-11-09 14:36 KST · 작성·제공: 전석우
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110000300079>) · 2026-11-10 00:13 KST · 작성·제공: 김상훈
 
-## "돈바스 주민투표" 언급했다 역풍맞은 프랑스 극좌 대선주자
+## 김성남, APEC 앞두고 김정은 메시지 전달했나
 
-> 프랑스의 극좌 대선 후보인 장뤼크 멜랑숑\(75\) 굴복하지않는프랑스\(LFI\) 대표가 우크라이나 종전 방안을 둘러...
+> 평양 북중 정상회담 이후 양국 관계가 빠르게 진전되는 양상이다.
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109074800009>) · 2026-11-09 12:18 KST · 작성·제공: 이신영
-
-## 맘다니, 美대선 '킹메이커' 행보…진보인사들과 비공개 회동
-
-> 조란 맘다니 뉴욕시장이 2028년 미국 대선을 2년 앞두고 진보진영의 '킹메이커' 행보를 보이고 있다.
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109102000009>) · 2026-11-09 14:34 KST · 작성·제공: 고일환
-
-## 트럼프-민주, 금주 '헤그세스 탄핵안' 1라운드 충돌…與반란표 주목
-
-> 도널드 트럼프 미국 행정부와 이번 중간선거 압승으로 차기 의회 권력을 장악한 민주당이 이번 주 피트 헤그세...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109010300071>) · 2026-11-09 07:27 KST · 작성·제공: 박성민
-
-## 트럼프 "중간선거 후퇴 두려워말라…우린 더 강하게 돌아올 것"
-
-> 도널드 트럼프 미국 대통령은 8일\(현지시간\) 민주당의 중간선거 압승으로 미국이 퇴보했다고 주장했다.
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261108055300071>) · 2026-11-08 23:42 KST · 작성·제공: 홍정규
-
-## 이라크 외무 "美, 이란 국경 검문소 2곳 제외 전면 폐쇄 요구"
-
-> 이란에 대한 봉쇄와 경제 제재를 강화해온 미국이 이라크에서 이란으로 가는 육상 국경 검문소 폐쇄를 요청했다...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109003000079>) · 2026-11-09 04:10 KST · 작성·제공: 김상훈
-
-## 이집트 카이로 남부서 열차 추돌로 최소 120명 부상
-
-> 8일\(현지시간\) 이집트 수도 카이로 남부 기자주에서 주행 중이던 두 열차가 추돌해 최소 120명이 다치는 ...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261108055400079>) · 2026-11-08 23:36 KST · 작성·제공: 김상훈
-
-## 젠슨황, 美중간선거 후 AI규제·스파이접촉 의혹에 사면초가
-
-> 엔비디아 젠슨 황 최고경영자\(CEO\)가 민주당이 압승을 거둔 미국 중간선거가 끝난 이후 도널드 트럼프...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109002700091>) · 2026-11-09 03:59 KST · 작성·제공: 권영전
-
-## 트럼프, 이란 재공격 가능성에 합의 전제로 "매우 작아"
-
-> 도널드 트럼프 미국 대통령은 8일\(현지시간\) 이란에 대한 군사공격 재개와 관련, 양측의 합의를 전제로 "그...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261109002900071>) · 2026-11-09 03:55 KST · 작성·제공: 박성민
-
-## "약 30년 만의 일"…지진 진원지 뜨자 일본 초긴장 이유는?
-
-> 일본에서는 지난 금요일에 이어 다시 강한 지진이 발생해 최소 19명이 다쳤습니다.
-
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008836151&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-08 21:45 KST · 작성·제공: shimmy@sbs.co.kr \(심우섭 기자\)
-
-## 폴란드 총기 난사에 6명 사망…당국, 테러 혐의 수사
-
-> 폴란드 크라쿠프에서 7일 발생한 총기 난사 사건으로 6명이 숨진 가운데, 폴란드 검찰이 이번 사건을 테러 범죄로 규정하고 공식 수사에 착수했습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8220241.html>) · 2026-11-09 01:47 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## "총소리 나 달렸다" 6명 사망 참극…범인 집엔 시신 3구
-
-> 폴란드의 관광 명소인 크라쿠프 중심가에서 무차별 총격 사건이 발생해 시민과 관광객 등 최소 6명이 숨졌습니다.
-
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008836150&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-08 20:51 KST · 작성·제공: replay@sbs.co.kr \(박재현 기자\)
-
-## 후계자도 없는데…'젠슨 황 불륜 리스크' 엔비디아 위기
-
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008837281&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-09 14:50 KST · 작성·제공: minpyo@sbs.co.kr \(김민표\)
-
-## 밴스-헤그세스-루비오, 이란전 다른 목소리… “전쟁 끝내야” vs “공습 재개” vs “경제 제재”
-
-> 미국 중간선거가 집권 공화당의 참패로 끝난 뒤 도널드 트럼프 미 대통령의 핵심 참모들이 선거 패배의 가장 큰 이유로 지목되는 이란 전쟁의 향방을 놓고 종전파, 강경파,…
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134988310/2>) · 2026-11-09 04:30 KST
-
-## 젠슨 황, 불륜 시인했다…사내 구성원들에 보낸 메일
-
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008836433&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-09 07:53 KST · 작성·제공: replay@sbs.co.kr \(박재현\)
-
-## 미 중부사령부, 이란 무기 육상운송 차단 전담조직 신설
-
-> 미 중부사령부는 7일 이란의 첨단 무기와 제재 대상 물자 운송을 차단하기 위해 ‘태스크포스 아이언 게이트’를 신설한다고 밝혔습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8220246.html>) · 2026-11-09 02:32 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## \[단독\] \[문서로 본 중국 파견 북한 노동자 실태 ① 임금\] 계약서는 허울뿐, 각종 기부금·지원금 명목 ‘헌납’
-
-> RFA가 단독 입수한 문건을 통해 중국 기업에 파견된 북한 노동자들이 계약서에 명시된 임금의 상당 부분을 받지 못하고 있는 것으로 확인됐다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/08/china-north-korean-workers-wage-exploitation/>) · 2026-11-09 05:59 KST · 작성·제공: 서울-김지은 nk@rfa.org
-
-## 딸-아들에 사위까지…‘불륜’ 젠슨 황, 엔비디아 가족경영도 논란
-
-> 세계 최대 반도체 기업 엔비디아의 젠슨 황 최고경영자\(CEO\)가 혼외 관계와 관련해 직원들에게 사과한 가운데 딸과 아들, 사위까지 회사에서 주요 업무를 맡고 있는 것으로 나타나면서 가족…
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134991773/2>) · 2026-11-09 14:14 KST
-
-## 트럼프, ‘UFC 선수 백악관 난동’ 애니메이션 공유
-
-> 도널드 트럼프 미국 대통령이 데이나 화이트 UFC 회장을 신임 백악관 대변인으로 내정했다고 전격 발표한 데 이어 UFC 소속 선수들이 백악관 브리핑룸에서 질문하는 기자들을 때려눕히는 애니메이션…
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134989299/1>) · 2026-11-09 08:20 KST
-
-## 이란, 전쟁 전 1월 시위 가담자 3명 사형집행…혐의는 “美·이스라엘 협력”
-
-> 이란이 1월 알보르즈주 카라지에서 발생한 소요 사태 당시 무장 공격, 방화, 사보타주를 자행한 혐의로 유죄 판결을 받은 3명에 대해 8일 사형을 집행했다.
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134991338/1>) · 2026-11-09 13:40 KST
-
-## 허리 감싸고 볼 뽀뽀…젠슨 황-불륜女, 스킨십 티났다
-
-> 젠슨 황 미국 엔비디아 최고경영자\(CEO\)가 불륜을 인정한 가운데 상대 여성으로 지목된 중국 국적의 엘리스 황\(黃樂·황러\)에 대한 관심이 높아지고 있다.
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261109/134991169/1>) · 2026-11-09 14:03 KST
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/09/apec-china-north-korea-trump/>) · 2026-11-09 16:54 KST · 작성·제공: 서울-목용재 moky@rfa.org
 
 ## 다른 매체의 원문
 
-- [No clear winner in New Zealand election, as leaders prepare for weeks of talks](<https://www.npr.org/2026/11/08/nx-s1-6033999/no-clear-winner-in-new-zealand-election-as-leaders-prepare-for-weeks-of-talks>) · NPR
-- [South Africa's ANC is humbled by its worst election results as it continues its decline](<https://abcnews.com/International/wireStory/south-africas-anc-humbled-worst-election-results-continues-137955443>) · ABC News 미국
-- [How a bank collapse left millions in limbo and toppled Paraguay's president](<https://www.npr.org/2026/11/09/nx-s1-6034066/paraguay-president-pena-ueno>) · NPR
-- [Europe to join U.S.-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections](<https://www.npr.org/2026/11/08/nx-s1-6034014/europe-join-us-brokered-ukraine-talks-abu-dhabi-russia>) · NPR
-- [South Africa: Three Killed in Grassy Park Shooting - South African News Briefs - November 9, 2026](<https://allafrica.com/stories/202611090090.html>) · AllAfrica · allAfrica.com
-- [Saudi Arabia turns to Syria for help as fighting with Houthis escalates](<https://abcnews.com/International/wireStory/saudi-arabia-turns-syria-fighting-houthis-escalates-137956922>) · ABC News 미국
-- [Senegal: Many Killed After Migrant Boat Sinks Off Senegal](<https://allafrica.com/stories/202611090088.html>) · AllAfrica · allAfrica.com
-- [Tourists and locals recount fatal Krakow mass shooting that left Poland reeling](<https://abcnews.com/International/wireStory/tourists-locals-recount-fatal-krakow-mass-shooting-left-137952616>) · ABC News 미국
-- [Saudi Arabia intercepts missiles as Aramco building in Riyadh is damaged, and other Mideast news](<https://abcnews.com/International/wireStory/saudi-arabia-intercepts-missiles-aramco-building-riyadh-damaged-137951443>) · ABC News 미국
-- [The world's largest telecoms firm is on trial and the outcome has global implications](<https://www.npr.org/2026/11/08/nx-s1-6030670/the-worlds-largest-telecoms-firm-is-on-trial-and-the-outcome-has-global-implications>) · NPR
-- [Pope wraps up Uruguay visit and heads to most fraught stop of his tour in Argentina](<https://abcnews.com/International/wireStory/pope-wraps-uruguay-visit-heads-fraught-stop-tour-137951348>) · ABC News 미국
-- [Trying to find true owners, Paris' Musee D'Orsay exhibits art looted by Nazis](<https://www.npr.org/2026/11/08/nx-s1-5928034/trying-to-find-true-owners-paris-musee-dorsay-exhibits-art-looted-by-nazis>) · NPR
-- [Africa: CANEX WKND 2026 Showcases Africa's Creative Brilliance in a Night of Fashion and Awards](<https://allafrica.com/stories/202611080008.html>) · AllAfrica · allAfrica.com
-- [A desert stirs to life: Chile's Atacama erupts in its biggest floral display in decades](<https://www.npr.org/2026/11/08/nx-s1-6023812/chile-desert-el-nino>) · NPR
+- [Thick smog shrouds New Delhi after Diwali firecrackers add to seasonal pollution](<https://www.npr.org/2026/11/09/g-s1-152634/thick-smog-shrouds-new-delhi-after-diwali-firecrackers-add-to-seasonal-pollution>) · NPR
+- [Japan to provide coastal radar and drones to the Philippines under $27M deal](<https://abcnews.com/International/wireStory/japan-provide-coastal-radar-drones-philippines-27m-deal-137975977>) · ABC News 미국
+- [British comedian Russell Brand sentenced to over 10 years for rape and sexual assault](<https://www.npr.org/2026/11/09/nx-s1-6034335/british-comedian-russell-brand-sentenced>) · NPR
+- [US-led peace talks for Russia and Ukraine will look at security guarantees for both sides](<https://abcnews.com/International/wireStory/us-led-peace-talks-russia-ukraine-security-guarantees-137966016>) · ABC News 미국
+- [Nigeria: Nigerian Woman Entrepreneur Wins Award At World Investment Forum](<https://allafrica.com/stories/202611090711.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
