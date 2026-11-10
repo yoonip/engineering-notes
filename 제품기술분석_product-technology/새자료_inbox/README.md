@@ -1,20 +1,62 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-10 07:40 KST
+반영: 2026-11-11 05:59 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5
+## Running AV Reasoning Models Within Onboard Compute and Latency Limits
 
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 로봇·모빌리티 주제를 다룹니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·비용·실행 효율 주제를 다룹니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/>) · RSS·Atom 발행 시각: 2026-11-10 04:09 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/>) · RSS·Atom 발행 시각: 2026-11-11 01:00 KST
 
-RSS·Atom 표기 작성자: Elizabeth Goodman
+RSS·Atom 표기 작성자: Marco Pavone
 
-가져온 시각: 2026-11-10 07:40:05 KST
+가져온 시각: 2026-11-11 05:58:59 KST
+
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot
+
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·GPU·가속기 주제를 다룹니다.
+
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/>) · RSS·Atom 발행 시각: 2026-11-11 00:00 KST
+
+RSS·Atom 표기 작성자: Ron Kahn
+
+가져온 시각: 2026-11-11 05:58:59 KST
+
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine
+
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.
+
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/>) · RSS·Atom 발행 시각: 2026-11-11 00:00 KST
+
+RSS·Atom 표기 작성자: Nathan Taber
+
+가져온 시각: 2026-11-11 05:58:59 KST
+
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Agent Substrate: Advancing Kubernetes for Agents at Scale
+
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.
+
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/>) · RSS·Atom 발행 시각: 2026-11-11 00:00 KST
+
+RSS·Atom 표기 작성자: Ekin Karabulut
+
+가져온 시각: 2026-11-11 05:58:59 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
