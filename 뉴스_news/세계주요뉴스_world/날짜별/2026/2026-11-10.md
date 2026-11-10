@@ -1,14 +1,26 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-10 02:30 KST
+갱신: 2026-11-10 10:32 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 모디, 3자 종전협상 앞둔 젤렌스키와 통화…"지금 전쟁 끝내야"
+
+> 나렌드라 모디 인도 총리가 러시아와 3자 종전 협상을 앞둔 볼로디미르 젤렌스키 우크라이나 대통령과의 전화...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110048800104>) · 2026-11-10 09:43 KST · 작성·제공: 손현규
 
 ## 미 중간선거 후 G7에 쏠린 눈…유럽, 종전협상 참여 압박
 
 > 9일\(현지시간\) 프랑스 파리에서 이틀간의 일정으로 막을 올린 주요 7개국\(G7\) 외교장관회의에서 유럽 국가들...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110002200085>) · 2026-11-10 02:14 KST · 작성·제공: 김지연
+
+## '이틀내 표결' 美국방 탄핵시계…헤그세스 '전쟁 정당성' 여론전\(종합\)
+
+> 공화당의 참패와 민주당 압승으로 귀결된 미국 중간선거가 끝나자마자 연방 의회가 피트 헤그세스 국방부\(전쟁부...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110006951071>) · 2026-11-10 08:07 KST · 작성·제공: 박성민
 
 ## 튀르키예 서부 제철공장서 폭발…16명 사망
 
@@ -22,11 +34,39 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8220502.html>) · 2026-11-09 23:39 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
+## \[속보\] 트럼프 "헤그세스 국방장관 탄핵돼도 계속 지지하겠다"
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110015800071>) · 2026-11-10 07:19 KST · 작성·제공: 백나리
+
 ## 이란 대통령 "최고지도자, '전쟁도 평화도 아닌' 상황 종식 지시"
 
 > 마수드 페제시키안 이란 대통령은 9일\(현지시간\)\) 모즈타바 하메네이 이란 최고지도자가 '전쟁도 평화도 아닌...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110000300079>) · 2026-11-10 00:13 KST · 작성·제공: 김상훈
+
+## 미·러·우크라, 아부다비서 종전 협상..."전후 안보체제 논의 기대"
+
+> 러시아와 우크라이나 협상단이 10일 아랍에미리트 아부다비에서 미국 특사들과 만날 예정입니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-russia-ukraine-110926/8220615.html>) · 2026-11-10 04:10 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## G7 외무장관 파리 회동…이란·우크라 논의
+
+> 주요 7개국\(G7\) 외무장관들이 9일 프랑스 파리에서 이틀간의 회담을 시작한 가운데, 이란 전쟁과 우크라이나에 대한 지원이 의제에 포함됐습니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/g7-talks-110926/8220585.html>) · 2026-11-10 03:10 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 신압록강대교 북 세관에 수백 대 화물트럭
+
+> 지난 11월 3일에 촬영한 위성사진에 따르면 북중 신압록강대교의 북한 측 물류 창고와 세관, 보안시설 등에 최소 200대 이상의 화물 트럭이 분주하게 작업 중인 정황이 포착됐다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/09/china-north-korea-new-yalu-river-bridge-customs-trucks/>) · 2026-11-10 07:03 KST · 작성·제공: 워싱턴-노정민 nohj@rfa.org
+
+## 트럼프, 카타르 총리와 회동…이란 해법 논의 주목
+
+> 이란과의 분쟁 종식을 위한 협상이 이어지는 가운데 도널드 트럼프 미국 대통령이 9일 백악관에서 셰이크 모하메드 빈 압둘라흐만 알사니 카타르 총리와 회동합니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-iran-110926/8220581.html>) · 2026-11-10 02:56 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
 ## 김성남, APEC 앞두고 김정은 메시지 전달했나
 
@@ -38,8 +78,11 @@
 
 - [Thick smog shrouds New Delhi after Diwali firecrackers add to seasonal pollution](<https://www.npr.org/2026/11/09/g-s1-152634/thick-smog-shrouds-new-delhi-after-diwali-firecrackers-add-to-seasonal-pollution>) · NPR
 - [Japan to provide coastal radar and drones to the Philippines under $27M deal](<https://abcnews.com/International/wireStory/japan-provide-coastal-radar-drones-philippines-27m-deal-137975977>) · ABC News 미국
+- [France accuses Iran of cyber 'sabotage' in fridge attacks](<https://www.npr.org/2026/11/09/g-s1-152724/france-iran-cyber-sabotage-fridge-attacks>) · NPR
 - [British comedian Russell Brand sentenced to over 10 years for rape and sexual assault](<https://www.npr.org/2026/11/09/nx-s1-6034335/british-comedian-russell-brand-sentenced>) · NPR
 - [US-led peace talks for Russia and Ukraine will look at security guarantees for both sides](<https://abcnews.com/International/wireStory/us-led-peace-talks-russia-ukraine-security-guarantees-137966016>) · ABC News 미국
+- [Trinidad and Tobago Coast Guard searches for at least 5 missing after boat crash](<https://abcnews.com/International/wireStory/trinidad-tobago-coast-guard-searches-5-missing-after-137993891>) · ABC News 미국
+- [US midterms open door to Iran diplomacy. Can a deal be struck?](<https://www.csmonitor.com/World/Middle-East/2026/1109/iran-war-diplomacy-trump-qatar-midterms?icid=rss>) · The Christian Science Monitor
 - [Nigeria: Nigerian Woman Entrepreneur Wins Award At World Investment Forum](<https://allafrica.com/stories/202611090711.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
