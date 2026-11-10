@@ -1,6 +1,6 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-10 10:32 KST
+갱신: 2026-11-10 18:51 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
 
@@ -20,6 +20,12 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008838044&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-10 10:27 KST · 작성·제공: jdono@sbs.co.kr \(조제행 기자\)
 
+## '연 100만 명' 약속한 케이블카들…30년 내내 106만 명이라는 장밋빛 계산서 \[취재파일\]
+
+> 경북 문경 주흘산 아래.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008835954&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-10 17:48 KST · 작성·제공: sun@sbs.co.kr \(장선이 기자\)
+
 ## \[단독\] 훈련 도중 쏜 공포탄…"통제력 잃어" 대대장 해명
 
 > 육군 부대에서 훈련 도중 대대장과 중대장급 간부가 서로에게 공포탄을 발사했습니다.
@@ -37,6 +43,18 @@
 > 가짜 명품을 유튜브 라이브 방송에서 팔아온 일당이 경찰에 붙잡혔습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008837876&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-10 01:32 KST · 작성·제공: newsservice@sbs.co.kr\(SBS\)
+
+## "예산 700억 어디에 썼나" 폐막 후에도 '시끌'…감사 받나
+
+> '세계 최초의 섬 테마 박람회'를 표방한 2026 여수세계섬박람회가 61일간의 대장정을 마치고 지난 4일 막을 내렸지만, 운영 부…
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008839166&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-10 16:57 KST · 작성·제공: leehy@sbs.co.kr \(이현영\)
+
+## 자발적 퇴사에도 월 100만 원?…'청년 실업급여' 논란 재점화
+
+> 자의로 회사를 나온 청년 퇴사자에게 한 달에 최대 100만 원의 구직급여, 이른바 실업급여를 지급해도 제도 악용 가능성이 크지 않다는 분석이 나…
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008838745&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-10 16:57 KST · 작성·제공: sha@sbs.co.kr \(손형안\)
 
 ## 금융연 "내년 한국경제 3.1% 성장…반도체 호황에 내수 회복"
 
@@ -74,6 +92,12 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/ambassador-steel-100-days-110926/8220544.html>) · 2026-11-10 01:32 KST · 작성·제공: voadigital@voanews.com \(조은정\)
 
+## 연 1억5000만원 버는 아빠, 무료 상담까지…딸 “그 시간에 200만원 번다”
+
+> KBS Joy ‘무엇이든 물어보살’에 연 수입 약 1억5000만원을 올리는 줄눈 사업가 부녀가 출연해 수강료 문제로 갈등을 겪고 있다고 밝혔다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Culture/article/all/20261110/135000434/2>) · 2026-11-10 18:33 KST
+
 ## 한·일 국립감염병연구소, 감염병 공동연구 협력각서 체결
 
 > 국립보건연구원 국립감염병연구소는 지난 4일 일본 국립감염병연구소와 감염병 예방·관리 및 공동연구 협력 강화를 ...
@@ -86,11 +110,27 @@
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261110059300051>) · 2026-11-10 10:19 KST · 작성·제공: 이영재
 
+## 제주 해상 우주발사체 바지선서 작업하던 다이버 숨져
+
+> 제주 서귀포시 마라도 인근 해상의 우주발사체 바지선에서 수중작업을 하던 50대 남성 스쿠버다이버가 심정지 상...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261110169100056>) · 2026-11-10 18:36 KST · 작성·제공: 박지호
+
+## 산업장관 "호남 반도체 클러스터 팹 배치 이달 내 마무리"\(종합\)
+
+> 김정관 산업통상부 장관은 10일 호남 반도체 클러스터 사업과 관련, "일단 기업들이 팹\(반도체 생산시설...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261110091051001>) · 2026-11-10 18:30 KST · 작성·제공: 이정현
+
 ## 롯데에너지머티리얼즈, 정보보호 경영시스템 국제표준 인증
 
 > 롯데에너지머티리얼즈는 글로벌 규제 대응과 보안 체계 강화를 위해 국제표준 정보보호 경영시스템 'ISO 2700...
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261110063700003>) · 2026-11-10 10:20 KST · 작성·제공: 강태우
+
+## \[인사\] 우주항공청
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261110167400017>) · 2026-11-10 18:17 KST · 작성·제공: 조승한
 
 ## 한병도 “특검, 공소 취소 권한 없어…장동혁 탄핵 선동 멈춰야”
 
@@ -104,11 +144,29 @@
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261109/134994784/2>) · 2026-11-10 00:30 KST
 
+## 한-카리브 고위급 포럼 개최…에너지 공급망 협력 논의
+
+> 외교부는 10일 서울에서 '제16차 한-카리브 고위급 포럼'을 개최했다고 밝혔다.
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261110165000504>) · 2026-11-10 17:57 KST · 작성·제공: 민선희
+
+## "코스피 변동성, 韓 고유 요인이 작용한 것…반도체 집중 구조"\(종합\)
+
+> 미국 민주당의 중간선거 압승을 계기로 글로벌 증시가 크게 출렁이는 가운데 주식시장의 변동성을 주제로 각...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261110122251008>) · 2026-11-10 17:28 KST · 작성·제공: 곽윤아
+
 ## 중동전쟁에 정유 웃고 석화 울어… 당분간 실적격차 지속될듯
 
 > 중동 전쟁 여파와 글로벌 공급망 변동으로 올 3분기\(7∼9월\) 국내 정유업계와 석유화학업계 실적이 크게 엇갈렸다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261109/134994794/2>) · 2026-11-10 00:30 KST
+
+## 고양시청 옥상서 작업하던 60대, 사다리서 떨어져 사망
+
+> 경기 고양시 덕양구 고양시청 본관 뒤편 옥상에서 방수공사를 하던 60대가 사다리에서 추락해 숨졌다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Society/article/all/20261110/135001451/2>) · 2026-11-10 17:59 KST
 
 ## 리벨리온 NPU-엔비디아 GPU 함께 쓴다
 

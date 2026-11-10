@@ -1,8 +1,14 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-10 10:32 KST
+갱신: 2026-11-10 18:51 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 中, 내수 부진 속 역대급 흑자…APEC 앞두고 무역갈등은 '숙제'
+
+> 중국이 내수 부진에도 불구하고 역대급 수출 호조 덕에 대규모 무역 흑자 기조를 이어가고 있지만, 이 때문에...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110162400089>) · 2026-11-10 17:47 KST · 작성·제공: 차병섭
 
 ## 모디, 3자 종전협상 앞둔 젤렌스키와 통화…"지금 전쟁 끝내야"
 
@@ -10,11 +16,23 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110048800104>) · 2026-11-10 09:43 KST · 작성·제공: 손현규
 
+## 우크라 종전 협상일에 젤렌스키는 덴마크행…군사지원 등 논의
+
+> 볼로디미르 젤렌스키 우크라이나 대통령이 10일\(현지시간\) 북유럽 지도자들을 만나 우크라이나에 대한 군사 지...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110169600098>) · 2026-11-10 18:42 KST · 작성·제공: 현윤경
+
 ## 미 중간선거 후 G7에 쏠린 눈…유럽, 종전협상 참여 압박
 
 > 9일\(현지시간\) 프랑스 파리에서 이틀간의 일정으로 막을 올린 주요 7개국\(G7\) 외교장관회의에서 유럽 국가들...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110002200085>) · 2026-11-10 02:14 KST · 작성·제공: 김지연
+
+## 러·우크라 종전협상 9개월만에 재개…더 복잡해진 고차방정식
+
+> 미국이 중재하는 러시아·우크라이나 간 종전협상이 10일\(현지시간\) 아랍에미리트\(UAE\) 아부다비에서 재개됐다...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110162700109>) · 2026-11-10 18:28 KST · 작성·제공: 민경락
 
 ## '이틀내 표결' 美국방 탄핵시계…헤그세스 '전쟁 정당성' 여론전\(종합\)
 
@@ -44,6 +62,12 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261110000300079>) · 2026-11-10 00:13 KST · 작성·제공: 김상훈
 
+## \[단독\] 중국, 트럼프·시진핑 회담 앞두고 ‘5대 무역 요구안’ 준비…관세·반도체·투자 포함
+
+> 도널드 트럼프 미 대통령과 시진핑 중국 국가주석은 APEC 회의를 계기로 올해 세 번째 정상회담을 가질 것으로 예상된다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/10/china-five-trade-demands-trump-xi/>) · 2026-11-10 14:12 KST · 작성·제공: 欧文
+
 ## 미·러·우크라, 아부다비서 종전 협상..."전후 안보체제 논의 기대"
 
 > 러시아와 우크라이나 협상단이 10일 아랍에미리트 아부다비에서 미국 특사들과 만날 예정입니다.
@@ -55,6 +79,18 @@
 > 주요 7개국\(G7\) 외무장관들이 9일 프랑스 파리에서 이틀간의 회담을 시작한 가운데, 이란 전쟁과 우크라이나에 대한 지원이 의제에 포함됐습니다.
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/g7-talks-110926/8220585.html>) · 2026-11-10 03:10 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 청진시, 도시 현대화 내세워 주민에 “건설물자 바쳐라”… 수시로 작업 동원도
+
+> 최근 북한 당국이 각 도 소재지의 면모를 일신한다며 현대화 공사를 적극 추진하면서 주민들에게 건설 물자 조달 과제를 부과하고 수시로 작업에도 동원해 주민들의 불만이 높은 것으로…
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/10/north-korea-forces-residents-to-support-provincial-modernization/>) · 2026-11-10 17:30 KST · 작성·제공: 서울-안창규 nk@rfa.org
+
+## 북, 잇단 신형 어뢰 시험...해군 비대칭 전력 강화 ‘속도전’
+
+> 북한이 내년 초부터 해군이 운용할 신형어뢰무기체계를 시험했다고 10일 밝혔다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/10/north-korea-submarine-nuke-torpedo/>) · 2026-11-10 15:37 KST · 작성·제공: 서울-목용재 moky@rfa.org
 
 ## 신압록강대교 북 세관에 수백 대 화물트럭
 
@@ -74,8 +110,17 @@
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/09/apec-china-north-korea-trump/>) · 2026-11-09 16:54 KST · 작성·제공: 서울-목용재 moky@rfa.org
 
+## 中관영지, 다카이치 ‘APEC 홀대’ 우려에…“도둑이 제 발 저려”
+
+> 다카이치 사나에 일본 총리가 아시아태평양경제협력체\(APEC\) 정상회의에서 중국으로부터 홀대를 받을 것이라는 일본 언론 보도가 나오는 가운데, 중국 관영 매체가 “도둑이 제 발 저린 격”이라며 강도 높게…
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261110/135001579/1>) · 2026-11-10 18:12 KST
+
 ## 다른 매체의 원문
 
+- [Kushner and Witkoff renew peace talks to end war between Russia and Ukraine](<https://www.npr.org/2026/11/10/nx-s1-6034616/kushner-and-witkoff-renew-peace-talks-to-end-war-between-russia-and-ukraine>) · NPR
+- [After midterm losses, Trump sends mixed messaging about next steps in war with Iran](<https://www.npr.org/2026/11/10/nx-s1-6034581/after-midterm-losses-trump-sends-mixed-messaging-about-next-steps-in-war-with-iran>) · NPR
+- [Expert discusses the prospects for negotiations to end the U.S. war with Iran](<https://www.npr.org/2026/11/10/nx-s1-6034562/expert-discusses-the-prospects-for-negotiations-to-end-the-u-s-war-with-iran>) · NPR
 - [Thick smog shrouds New Delhi after Diwali firecrackers add to seasonal pollution](<https://www.npr.org/2026/11/09/g-s1-152634/thick-smog-shrouds-new-delhi-after-diwali-firecrackers-add-to-seasonal-pollution>) · NPR
 - [Japan to provide coastal radar and drones to the Philippines under $27M deal](<https://abcnews.com/International/wireStory/japan-provide-coastal-radar-drones-philippines-27m-deal-137975977>) · ABC News 미국
 - [France accuses Iran of cyber 'sabotage' in fridge attacks](<https://www.npr.org/2026/11/09/g-s1-152724/france-iran-cyber-sabotage-fridge-attacks>) · NPR
