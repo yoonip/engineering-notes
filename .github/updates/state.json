@@ -40,6 +40,7 @@
     "learning:https://www.kmooc.kr/view/course/detail/21387": "learning:https://www.kmooc.kr/view/course/detail/21387",
     "models:google-announcement:gemini-4-argon-for-robotics": "models:https://developers.googleblog.com/gemini-4-argon-for-robotics",
     "models:google-announcement:gemini-4-argon-our-next-era-of-frontier-intelligence": "models:google-announcement:gemini-4-argon",
+    "models:google-announcement:gemini-4-carbon-is-now-available": "models:google-announcement:gemini-4-carbon-now-available",
     "models:google-announcement:gemini-4-carbon-our-next-frontier-model": "models:google-announcement:introducing-gemini-4-carbon",
     "models:google-announcement:genie-4-a-new-generation-of-world-simulation": "models:google-announcement:genie-4-a-new-generation-of-world-simulation",
     "models:google-announcement:introducing-gemini-38-live-with-live-avatar": "models:google-announcement:gemini-3-8-live-with-live-avatar",
@@ -267,6 +268,7 @@
     "products:https://blogs.nvidia.co.kr/blog/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion": "products:https://blogs.nvidia.co.kr/blog/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion",
     "products:https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul": "products:https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul",
     "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective": "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective",
+    "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale": "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale",
     "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo",
     "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw",
     "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos",
@@ -279,11 +281,14 @@
     "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery": "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery",
     "products:https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5": "products:https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5",
     "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one",
+    "products:https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine": "products:https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine",
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
     "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support": "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support",
     "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
     "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
+    "products:https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits": "products:https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits",
     "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus": "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus",
+    "products:https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot": "products:https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot",
     "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map",
     "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
     "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes": "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes",
@@ -837,6 +842,27 @@
           "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
           "update": false,
           "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        }
+      ],
+      "2026-11-11": [
+        {
+          "acquired_at": "2026-11-10T20:57:48.487580+00:00",
+          "acquisition_method": "공식 RSS·Atom의 제목·소개문 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-10",
+          "date_label": "",
+          "first_seen": "2026-11-10T20:57:46.116023+00:00",
+          "group": "models",
+          "homepage": "https://deepmind.google/",
+          "key": "models:google-announcement:gemini-4-carbon-now-available",
+          "source_name": "Google DeepMind",
+          "source_url": "https://deepmind.google/blog/rss.xml",
+          "summary_ko": "Google DeepMind의 모델 관련 공식 발표입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Gemini 4 Carbon is now available",
+          "update": false,
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
         }
       ]
     },
@@ -6185,6 +6211,84 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/"
         }
+      ],
+      "2026-11-11": [
+        {
+          "acquired_at": "2026-11-10T20:58:59.190734+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Ekin Karabulut",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-10T15:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-10T20:57:46.116023+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Agent Substrate: Advancing Kubernetes for Agents at Scale",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/"
+        },
+        {
+          "acquired_at": "2026-11-10T20:58:59.190734+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Nathan Taber",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-10T15:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-10T20:57:46.116023+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/"
+        },
+        {
+          "acquired_at": "2026-11-10T20:58:59.190734+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Marco Pavone",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-10T16:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-10T20:57:46.116023+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·비용·실행 효율 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/"
+        },
+        {
+          "acquired_at": "2026-11-10T20:58:59.190734+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Ron Kahn",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-10T15:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-10T20:57:46.116023+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/"
+        }
       ]
     },
     "reports": {
@@ -7370,6 +7474,12 @@
       "date": "2026-09-30",
       "description": "Announcing Gemini 4 Argon, our frontier model for real-world coding, enterprise knowledge work, and cyber defense, rolling out soon.",
       "title": "Gemini 4 Argon: our next era of frontier intelligence"
+    },
+    "https://deepmind.google/blog/gemini-4-carbon-is-now-available": {
+      "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "date": "2026-11-10",
+      "description": "Today, we’re making Gemini 4 Carbon available to developers, enterprises, scientists, and consumers.",
+      "title": "Gemini 4 Carbon is now available"
     },
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {
       "canonical": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
@@ -8918,6 +9028,10 @@
       "group": "models",
       "key": "models:google-announcement:gemini-3-8-live-with-live-avatar"
     },
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available": {
+      "group": "models",
+      "key": "models:google-announcement:gemini-4-carbon-now-available"
+    },
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon": {
       "group": "models",
       "key": "models:google-announcement:introducing-gemini-4-carbon"
@@ -9034,6 +9148,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective"
     },
+    "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale"
+    },
     "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo"
@@ -9082,6 +9200,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one"
     },
+    "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine"
+    },
     "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4"
@@ -9098,9 +9220,17 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands"
     },
+    "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits"
+    },
     "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus"
+    },
+    "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot"
     },
     "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": {
       "group": "products",
@@ -9461,10 +9591,10 @@
       "Last-Modified": "Tue, 10 Nov 2026 07:38:52 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"213c3d3e945de19f460ca50e8fd359ee3544559d5aa6c448ed3d14fafc2a2de8\""
+      "ETag": "W/\"db92c21d090fc400f609a780888c3e3c31e01814d56c6dd4c1ba1ff0820f833e\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"d1db75ab2d5ae8683ed55084b59a97f0aaa8c0588b820e1b5b1eccee4489e12e\""
+      "ETag": "W/\"324ff9ba4cbe4bed412aae4418f4139afaf6ecf3ebd67fb3621b4bffe9c9b8c3\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -9478,8 +9608,8 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.python.org/feeds/posts/default?alt=rss": {
-      "ETag": "\"6ae72d98-609e\"",
-      "Last-Modified": "Sun, 01 Nov 2026 12:16:24 GMT"
+      "ETag": "\"6af38067-6073\"",
+      "Last-Modified": "Tue, 10 Nov 2026 20:36:55 GMT"
     },
     "https://blog.st.com/feed": {
       "Last-Modified": "Mon, 09 Nov 2026 15:16:41 GMT"
@@ -9496,17 +9626,18 @@
     },
     "https://deepmind.google/blog/gemini-4-argon-for-robotics": {},
     "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {},
+    "https://deepmind.google/blog/gemini-4-carbon-is-now-available": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"_dOJlQ\""
+      "ETag": "\"sBcB6A\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"bL5I-w\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"561f1038b743f8cd4f467535d3443768\"",
-      "Last-Modified": "Mon, 09 Nov 2026 19:09:36 GMT"
+      "ETag": "\"23b500f54d48b21c244e8bba36fd6221\"",
+      "Last-Modified": "Tue, 10 Nov 2026 17:17:33 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -9514,10 +9645,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-eukUDG2r07vw7xKcTY53cxdzOwM\""
+      "ETag": "W/\"33bc8-1sd6xUrIG8v/Sfu03MxQ7hwUJek\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40174-aGEaTT3IkK2izCife3lGCWtciWI\""
+      "ETag": "W/\"40174-zcsvAzj3gg8BHR9kkbCpNniWbAI\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -9561,12 +9692,12 @@
       "Last-Modified": "Tue, 10 Nov 2026 04:22:51 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794317079\"",
-      "Last-Modified": "Tue, 10 Nov 2026 13:24:39 GMT"
+      "ETag": "\"1794343808\"",
+      "Last-Modified": "Tue, 10 Nov 2026 20:50:08 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794317877\"",
-      "Last-Modified": "Tue, 10 Nov 2026 13:37:57 GMT"
+      "ETag": "\"1794344349\"",
+      "Last-Modified": "Tue, 10 Nov 2026 20:59:09 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -9672,7 +9803,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0cba0cca6dbf544937656ce2067584023\""
+      "ETag": "\"05e676c304e5034e8df04889aef93562b\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -9772,8 +9903,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"98fd9907d7b3449e844bfa8236dc3cc7\"",
-      "Last-Modified": "Tue, 10 Nov 2026 13:40:28 GMT"
+      "ETag": "\"24b390f71ea9890855c66db63e875c7f\"",
+      "Last-Modified": "Tue, 10 Nov 2026 20:46:26 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -12383,6 +12514,10 @@
       "list_fingerprint": "ce3fb96853fbdcf92bbd0aa6485c3deb53800eb74261657418caa248f4e11336",
       "status": "unchanged"
     },
+    "google-deepmind:https://deepmind.google/blog/gemini-4-carbon-is-now-available": {
+      "list_fingerprint": "ff3305c3b76a273b8ac27dceb80fe3f4213bb86c9faa36e0755eedd9fe1a93de",
+      "status": "posted"
+    },
     "google-deepmind:https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {
       "list_fingerprint": "4428cb3f8dd098f7200f05783324e0a04f2f5de1afebd95848d7459da4da1de8",
       "status": "posted"
@@ -13397,6 +13532,12 @@
       "language": "en",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/"
     },
+    "models:google-announcement:gemini-4-carbon-now-available": {
+      "fingerprint": "19c3f5967057573ae3c57b20799def519a220a9e186ce56dd4600031e7ca77b1",
+      "first_seen": "2026-11-10T20:57:46.116023+00:00",
+      "language": "en",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+    },
     "models:google-announcement:genie-4-a-new-generation-of-world-simulation": {
       "fingerprint": "4c41995c121c3a9ed5d52753459a16ebe06b9d59921472fa891ed1ba89d3befa",
       "first_seen": "2026-10-29T03:34:54.131044+00:00",
@@ -13592,6 +13733,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell": {
       "list_fingerprint": "f34c74a082d78d625e038f370347c4d08c04ab9e39d0a385e388005698308d91",
       "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale": {
+      "list_fingerprint": "073b9eef41a8a413fb44358b21366757fcd73a57cf4e8e25af82268e719d8abf",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/ai-native-by-design-lessons-learned-from-building-nvidia-tensorrt-model-connect": {
       "list_fingerprint": "6f13fb7a02376ec67754c352d23156b380a97fd8796968bc74274e6284ddb11e",
@@ -13853,6 +13998,10 @@
       "list_fingerprint": "4331313706958a977c157a4159142d713b003eedde084b0dcb32950f7262e2ee",
       "status": "posted"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine": {
+      "list_fingerprint": "b1d4384ae00a8274779854ce788aac9c480c8d565a5dc0c2faa77009da7b9271",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright": {
       "list_fingerprint": "1b91ee85bdc6a01a07644533862435b0faedd258ab2beac157010d964f208078",
       "status": "bootstrap_skipped"
@@ -13929,6 +14078,10 @@
       "list_fingerprint": "435d26b85de1d03d421a7e7da0c081d4355f312021a0d78d69a0c778345e08d2",
       "status": "older_material"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits": {
+      "list_fingerprint": "4b4c3097e3f316a387c46ce16328d7d42781f92fe010e76bd017d8c534a9e90b",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes": {
       "list_fingerprint": "934ee44e98a86ee9ae8984ba3b7f19c908f804bd8f6a764cf20280a804f127a0",
       "status": "bootstrap_skipped"
@@ -13971,6 +14124,10 @@
     },
     "nvidia-technical:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus": {
       "list_fingerprint": "0680d26b67832452fd53a32a7fa1d5f4cb865fa518ad39baa8a2c9cb501665a9",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot": {
+      "list_fingerprint": "1280f6dc69109d286985323f2fc70f24638d151e9f2ecb5301a22e5eaebc7a50",
       "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": {
@@ -15523,6 +15680,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/"
     },
+    "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale": {
+      "fingerprint": "073b9eef41a8a413fb44358b21366757fcd73a57cf4e8e25af82268e719d8abf",
+      "first_seen": "2026-11-10T20:57:46.116023+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/"
+    },
     "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": {
       "fingerprint": "fbc012361000fa3a384f2bd55c410b5b4b81e3773613c084151e07d5596294f6",
       "first_seen": "2026-10-31T00:58:55.323980+00:00",
@@ -15595,6 +15758,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/"
     },
+    "products:https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine": {
+      "fingerprint": "b1d4384ae00a8274779854ce788aac9c480c8d565a5dc0c2faa77009da7b9271",
+      "first_seen": "2026-11-10T20:57:46.116023+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/"
+    },
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": {
       "fingerprint": "80f5dd22c00bcca471384a380ef2e805821c52005ec498f35db3831bfe6499b0",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -15619,11 +15788,23 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/"
     },
+    "products:https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits": {
+      "fingerprint": "4b4c3097e3f316a387c46ce16328d7d42781f92fe010e76bd017d8c534a9e90b",
+      "first_seen": "2026-11-10T20:57:46.116023+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/"
+    },
     "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus": {
       "fingerprint": "0680d26b67832452fd53a32a7fa1d5f4cb865fa518ad39baa8a2c9cb501665a9",
       "first_seen": "2026-11-06T23:25:24.962167+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/"
+    },
+    "products:https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot": {
+      "fingerprint": "1280f6dc69109d286985323f2fc70f24638d151e9f2ecb5301a22e5eaebc7a50",
+      "first_seen": "2026-11-10T20:57:46.116023+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/"
     },
     "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": {
       "fingerprint": "8b4e4b7975f38a0abf974f5f47f43b7a1e6447f3317a0cb3638916d193c3280c",
