@@ -1,10 +1,24 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-12 01:33 KST
+반영: 2026-11-12 07:57 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory
+
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.
+
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/>) · RSS·Atom 발행 시각: 2026-11-12 02:00 KST
+
+RSS·Atom 표기 작성자: Mark Chmarny
+
+가져온 시각: 2026-11-12 07:57:15 KST
+
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
 
 ## GANSPIN1102 and GANSPIN1105, our smallest 100 V GaN motor drivers opened the way for designs previously impossible
 
