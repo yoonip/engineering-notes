@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-11 08:23 KST
+갱신: 2026-11-11 15:22 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -26,6 +26,12 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261111017400075>) · 2026-11-11 07:52 KST · 작성·제공: 김경윤
 
+## 中 "올해 수입박람회서 거래의향 금액 114조원…2.3% 증가"
+
+> 중국이 시장 개방과 수입 확대를 내세워 진행한 올해 중국국제수입박람회 결과, 연간 거래의향 금액이 854억...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261111121200089>) · 2026-11-11 14:59 KST · 작성·제공: 차병섭
+
 ## 美안보 악몽된 젠슨황 스캔들…AI칩 대중수출 허용 의혹 소환
 
 > 엔비디아의 젠슨 황 최고경영자\(CEO\)가 중국 스파이로 의심받는 여성과의 불륜을 인정하면서 개인적 스캔들이...
@@ -43,6 +49,18 @@
 > 미국과 러시아, 우크라이나가 아랍에미리트 아부다비에서 종전 협상을 시작했습니다.
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8220971.html>) · 2026-11-11 00:38 KST · 작성·제공: voadigital@voanews.com \(조은정\)
+
+## TSMC, 앤트로픽·오픈AI에 각각 최대 5억달러 투자
+
+> 세계 최대 파운드리\(반도체 위탁생산\) 업체인 대만 TSMC가 앤트로픽과 오픈AI에 각각 최대 5억 달러\(...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261111087300009>) · 2026-11-11 13:58 KST · 작성·제공: 김철문
+
+## 中알리바바 반도체 자회사, 홍콩IPO 신청…데이터센터 확대 겨냥
+
+> 중국 빅테크\(거대 정보기술기업\) 알리바바의 반도체 설계 자회사 티헤드\(T-Head\)가 홍콩 증시 기업공개\(...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261111101700083>) · 2026-11-11 13:55 KST · 작성·제공: 정성조
 
 ## 사우디아라비아 동서 송유관 또다시 공격받아
 
@@ -102,14 +120,29 @@
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/10/north-korean-workers-china-long-working-hours/>) · 2026-11-11 06:00 KST · 작성·제공: 서울-김지은 nk@rfa.org
 
+## 인터넷 막았는데 북한 스마트폰에 해외 콘텐츠가?
+
+> 스마트폰에는 벽돌 속의 귀여운 고양이가 눈을 동그랗게 뜨고 움직이는 장면이 배경화면으로 깔려 있었다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/11/north-korea-smartphone-live-wallpapers-internet/>) · 2026-11-11 11:30 KST · 작성·제공: 서울-김지수 kimjis@rfa.org
+
 ## 탄핵 위기 헤그세스 “성공적 군사작전 처벌하나” 맹비난
 
 > 피트 헤그세스 미 국방부\(전쟁부\) 장관이 10일\(현지시간\) 기자회견을 열고 자신의 탄핵소추안에 대해 “합법적인 작전을 수행했다는 이유로 탄핵당한 장관은 250년간 없었다”며 “이것은 정치적 쇼\(political spectacle\)”라고 반발했다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261110/135002791/1>) · 2026-11-10 22:30 KST
 
+## 폴 매카트니, 순자산 ‘2조 원’ 돌파…제이지·스위프트 이어 세계 3위
+
+> 영국 전설적 밴드 ‘비틀스\(The Beatles\)’ 출신 폴 매카트니\(84\)의 순자산이 14억 달러\(약 1조9500억 원\)로 집계되며 억만장자 반열에 올랐다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261111/135006663/1>) · 2026-11-11 14:40 KST
+
 ## 다른 매체의 원문
 
+- [Malawi: South Africa Refuses to Let Bushiri Extradition Fight End](<https://allafrica.com/stories/202611110245.html>) · AllAfrica · allAfrica.com
+- [Sudan: Drones and Drought in Sudan - a Combined Assault On Children Like Nothing Seen Before](<https://allafrica.com/stories/202611110190.html>) · AllAfrica · allAfrica.com
+- [Nigeria: Kano Hisbah Arrests 17 Women, Tricycle Operators Over Alleged Immoral Conduct](<https://allafrica.com/stories/202611110187.html>) · AllAfrica · allAfrica.com
 - [Gambia: Electoral Commission Says 12 Presidential Aspirants Submit Papers As Six Withdraw](<https://allafrica.com/stories/202611100605.html>) · AllAfrica · allAfrica.com
 - [Pope urges Argentines to follow model of saints during Mass in the 'land of saints'](<https://abcnews.com/International/wireStory/pope-urges-argentines-follow-model-saints-mass-land-138011787>) · ABC News 미국
 
