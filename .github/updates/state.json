@@ -314,6 +314,7 @@
     "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map": "products:https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map",
     "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
     "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes": "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes",
+    "products:https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory": "products:https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133",
@@ -6843,6 +6844,25 @@
           "title": "GANSPIN1102 and GANSPIN1105, our smallest 100 V GaN motor drivers opened the way for designs previously impossible",
           "update": false,
           "url": "https://blog.st.com/ganspin1102-ganspin1105/"
+        },
+        {
+          "acquired_at": "2026-11-11T22:57:15.696293+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Mark Chmarny",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-11T17:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-11T22:56:03.593831+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/"
         }
       ]
     },
@@ -9992,6 +10012,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes"
     },
+    "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory"
+    },
     "https://developers.googleblog.com/gemini-4-argon-for-robotics": {
       "group": "models",
       "key": "models:https://developers.googleblog.com/gemini-4-argon-for-robotics"
@@ -10355,10 +10379,10 @@
       "Last-Modified": "Tue, 10 Nov 2026 07:38:52 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"ad8f4c400a6b4c13cfab9d4623c85ebe4b267ccba7617681b6207e9d9898ba7a\""
+      "ETag": "W/\"8b096a174d99d0395d28299cb5a74bbd0b83d0928e924726265b47e64f2cf591\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"70277b2a91b4de0e4310ecdf491244cd44b59ebff1a30de0baf7540bfd01571d\""
+      "ETag": "W/\"359d5be36b9ea9f1d8d7469ac2d2364dfe1fda77f1c31c1e1942e908fa98c566\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -10372,8 +10396,8 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.python.org/feeds/posts/default?alt=rss": {
-      "ETag": "\"6af38067-6073\"",
-      "Last-Modified": "Tue, 10 Nov 2026 20:36:55 GMT"
+      "ETag": "\"6af37f58-6073\"",
+      "Last-Modified": "Tue, 10 Nov 2026 20:32:24 GMT"
     },
     "https://blog.st.com/feed": {
       "Last-Modified": "Wed, 11 Nov 2026 14:00:00 GMT"
@@ -10394,14 +10418,14 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/rss.xml": {
-      "Last-Modified": "Wed, 11 Nov 2026 15:00:15 GMT"
+      "ETag": "\"7WdQDA\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"Ux8Xww\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"1ecafcec588f56447f851ec7f786e694\"",
-      "Last-Modified": "Tue, 10 Nov 2026 22:04:05 GMT"
+      "ETag": "\"473d0814ad206679b42ec97d7254d8fa\"",
+      "Last-Modified": "Wed, 11 Nov 2026 17:00:00 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -10409,10 +10433,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc6-AnuCi+HLfADRyllH8lPd7viCN1A\""
+      "ETag": "W/\"33bc6-ezKEvGXVqcrcYeA7gYeyaPTRyIo\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40174-IRSobaEJpfNjytQoThCZvT4PeGY\""
+      "ETag": "W/\"40174-rRMAdsDtjT0G8xBIGT4p6aZ5ueg\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -10457,12 +10481,12 @@
       "Last-Modified": "Wed, 11 Nov 2026 01:11:17 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794414151\"",
-      "Last-Modified": "Wed, 11 Nov 2026 16:22:31 GMT"
+      "ETag": "\"1794437586\"",
+      "Last-Modified": "Wed, 11 Nov 2026 22:53:06 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794413707\"",
-      "Last-Modified": "Wed, 11 Nov 2026 16:15:07 GMT"
+      "ETag": "\"1794437496\"",
+      "Last-Modified": "Wed, 11 Nov 2026 22:51:36 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -10470,13 +10494,13 @@
       "Last-Modified": "Wed, 28 Oct 2026 20:20:49 GMT"
     },
     "https://rss.arxiv.org/rss/cs.AI": {
-      "ETag": "62e7b72fdaae5270e8a09c0f983e59e76a6936cbfcbe2348f341f3c9cefa5c4a"
+      "ETag": "0845075b9928bf3baf4159916eab7a390683de3a547bc28df636af08cea8aebe"
     },
     "https://rss.arxiv.org/rss/cs.AR": {
       "ETag": "a93ad05169a64463eb9e17fea8d5c73444c5dafe63aa1bca2dfa68f5f1e0af89"
     },
     "https://rss.arxiv.org/rss/eess.SP": {
-      "ETag": "6b24dcec4d6ba16d4fe223b8d8134cd1bb976caff6d7ecb8e50af12a37399778"
+      "ETag": "29f88a9086e5199e34b8bec6baacc7888cae77ddab86e1fd7c190b609a39cf90"
     },
     "https://www.anthropic.com/claude-fable-and-mythos-5-2": {},
     "https://www.anthropic.com/claude-haiku-5-5": {},
@@ -10571,7 +10595,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"045a301b6f8ac0eb917dee78c4e055661\""
+      "ETag": "\"0bbed15a078bc09b35d7c272898142e03\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -10671,8 +10695,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"51670e01911e85606df98f5587afa1dd\"",
-      "Last-Modified": "Wed, 11 Nov 2026 14:22:48 GMT"
+      "ETag": "\"97d27ea734e8b892f3bd2ccdd4c1b5ca\"",
+      "Last-Modified": "Wed, 11 Nov 2026 21:40:11 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -15146,6 +15170,10 @@
       "list_fingerprint": "6472c3f1adfb9ed8c89e239f3d2caf90f7fcb713468090ff4c17f4026405066f",
       "status": "bootstrap_skipped"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory": {
+      "list_fingerprint": "bd770555dfc5e6746f5fcf41d342acf57e4848801cde285cea3fee39a09a0581",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities": {
       "list_fingerprint": "97f4e4e9b577f220bc1cf14ab07c3b7b5de9efcbd2aecc06f6c28fc20ef57655",
       "status": "bootstrap_skipped"
@@ -16919,6 +16947,12 @@
       "first_seen": "2026-11-04T18:47:11.298518+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/"
+    },
+    "products:https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory": {
+      "fingerprint": "bd770555dfc5e6746f5fcf41d342acf57e4848801cde285cea3fee39a09a0581",
+      "first_seen": "2026-11-11T22:56:03.593831+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/"
     },
     "python-releases:https://blog.python.org/2026/02/python-3143-and-31312-are-now-available": {
       "list_fingerprint": "3aa6aefd87f6309afce225bf6cd1a2a5756dbbc67ba4362fceceea4e8f1c28e2",
