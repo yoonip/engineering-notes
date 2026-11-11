@@ -1,66 +1,30 @@
 # 도구·보안 새 자료
 
-반영: 2026-11-10 22:44 KST
+반영: 2026-11-11 17:14 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## SAP 제품 보안 업데이트 권고
+## Ivanti 제품 보안 업데이트 권고
 
-> SAP社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]\[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
+> Ivanti社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]~\[4\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
 
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72295>) · 공식 RSS 게시일: 2026-11-10
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72297>) · 공식 RSS 게시일: 2026-11-11
 
-가져온 시각: 2026-11-10 22:43:56 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
-
-## IBM 제품 보안 업데이트 권고
-
-> IBM社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]~\[4\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72294>) · 공식 RSS 게시일: 2026-11-10
-
-가져온 시각: 2026-11-10 22:43:57 KST
+가져온 시각: 2026-11-11 17:14:00 KST
 
 수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
 
 개요: 공식 한국어 소개 발췌
 
-## WordPress 플러그인 보안 업데이트 권고
+## MongoDB 제품 보안 업데이트 권고
 
-> WordPress의 Contact Form 7 플러그인 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
+> MongoDB社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
 
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72293>) · 공식 RSS 게시일: 2026-11-10
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72296>) · 공식 RSS 게시일: 2026-11-11
 
-가져온 시각: 2026-11-10 22:43:58 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
-
-## SonicWall 제품 보안 업데이트 권고
-
-> SonicWall社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72292>) · 공식 RSS 게시일: 2026-11-10
-
-가져온 시각: 2026-11-10 22:43:59 KST
-
-수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
-
-개요: 공식 한국어 소개 발췌
-
-## OWASP 제품 보안 업데이트 권고
-
-> OWASP 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]\[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
-
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72291>) · 공식 RSS 게시일: 2026-11-10
-
-가져온 시각: 2026-11-10 22:44:00 KST
+가져온 시각: 2026-11-11 17:14:02 KST
 
 수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
 
