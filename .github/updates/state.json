@@ -266,6 +266,7 @@
     "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
     "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
     "products:https://blog.st.com/ai-data-centers": "products:https://blog.st.com/ai-data-centers",
+    "products:https://blog.st.com/ganspin1102-ganspin1105": "products:https://blog.st.com/ganspin1102-ganspin1105",
     "products:https://blog.st.com/rust-mems-drivers": "products:https://blog.st.com/rust-mems-drivers",
     "products:https://blog.st.com/snapdragon-wear-elite": "products:https://blog.st.com/snapdragon-wear-elite",
     "products:https://blog.st.com/stm32g5": "products:https://blog.st.com/stm32g5",
@@ -6822,6 +6823,27 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/"
         }
+      ],
+      "2026-11-12": [
+        {
+          "acquired_at": "2026-11-11T16:33:32.601540+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-11T14:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-11T16:32:11.035949+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/ganspin1102-ganspin1105",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "GANSPIN1102 and GANSPIN1105, our smallest 100 V GaN motor drivers opened the way for designs previously impossible",
+          "update": false,
+          "url": "https://blog.st.com/ganspin1102-ganspin1105/"
+        }
       ]
     },
     "reports": {
@@ -9778,6 +9800,10 @@
       "group": "products",
       "key": "products:https://blog.st.com/ai-data-centers"
     },
+    "https://blog.st.com/ganspin1102-ganspin1105": {
+      "group": "products",
+      "key": "products:https://blog.st.com/ganspin1102-ganspin1105"
+    },
     "https://blog.st.com/rust-mems-drivers": {
       "group": "products",
       "key": "products:https://blog.st.com/rust-mems-drivers"
@@ -10329,10 +10355,10 @@
       "Last-Modified": "Tue, 10 Nov 2026 07:38:52 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"c08357953ab810cf1d5d5d7cb7349691e484cc4a0011a5b3b8c4d09d010587be\""
+      "ETag": "W/\"ad8f4c400a6b4c13cfab9d4623c85ebe4b267ccba7617681b6207e9d9898ba7a\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"6bfac96618bc8cb93aeafebed40dfb221e1f108e1d6ffe2704a88c801a3fe8f6\""
+      "ETag": "W/\"70277b2a91b4de0e4310ecdf491244cd44b59ebff1a30de0baf7540bfd01571d\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -10350,7 +10376,7 @@
       "Last-Modified": "Tue, 10 Nov 2026 20:36:55 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Mon, 09 Nov 2026 15:16:41 GMT"
+      "Last-Modified": "Wed, 11 Nov 2026 14:00:00 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -10367,6 +10393,9 @@
     "https://deepmind.google/blog/gemini-4-carbon-is-now-available": {},
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "Last-Modified": "Wed, 11 Nov 2026 15:00:15 GMT"
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"Ux8Xww\""
     },
@@ -10380,10 +10409,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-H+cXMzi0cJWulOAjrNlvE2+KwLg\""
+      "ETag": "W/\"33bc6-AnuCi+HLfADRyllH8lPd7viCN1A\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40174-JukFD4bXt2mN9GHT8h1AzvqG9n8\""
+      "ETag": "W/\"40174-IRSobaEJpfNjytQoThCZvT4PeGY\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -10419,7 +10448,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -10429,12 +10457,12 @@
       "Last-Modified": "Wed, 11 Nov 2026 01:11:17 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794384404\"",
-      "Last-Modified": "Wed, 11 Nov 2026 08:06:44 GMT"
+      "ETag": "\"1794414151\"",
+      "Last-Modified": "Wed, 11 Nov 2026 16:22:31 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794384851\"",
-      "Last-Modified": "Wed, 11 Nov 2026 08:14:11 GMT"
+      "ETag": "\"1794413707\"",
+      "Last-Modified": "Wed, 11 Nov 2026 16:15:07 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -10543,7 +10571,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0c0656f8a435d39b35a6818d18cd8c829\""
+      "ETag": "\"045a301b6f8ac0eb917dee78c4e055661\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -10643,8 +10671,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"abedda675c9c1c1c371afc02e9b26c88\"",
-      "Last-Modified": "Wed, 11 Nov 2026 05:05:00 GMT"
+      "ETag": "\"51670e01911e85606df98f5587afa1dd\"",
+      "Last-Modified": "Wed, 11 Nov 2026 14:22:48 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
@@ -16604,6 +16632,12 @@
       "language": "en",
       "url": "https://blog.st.com/ai-data-centers/"
     },
+    "products:https://blog.st.com/ganspin1102-ganspin1105": {
+      "fingerprint": "72501451fdd1fda29cb56a913295af11fd162ce64d3d1f48fe7ab9feb8e93c49",
+      "first_seen": "2026-11-11T16:32:11.035949+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/ganspin1102-ganspin1105/"
+    },
     "products:https://blog.st.com/rust-mems-drivers": {
       "fingerprint": "92d69c47c15e40d19b4e99d480d764da1d57f6dd20cbab38c16b77356991519f",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -17242,6 +17276,10 @@
     },
     "st-technical:https://blog.st.com/ai-data-centers": {
       "list_fingerprint": "09e4f32f721d460325a03f02d380846d5928dd1e9d52b4f926447b3b30a9c116",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/ganspin1102-ganspin1105": {
+      "list_fingerprint": "72501451fdd1fda29cb56a913295af11fd162ce64d3d1f48fe7ab9feb8e93c49",
       "status": "posted"
     },
     "st-technical:https://blog.st.com/humanoid-robots-building-a-workforce": {
