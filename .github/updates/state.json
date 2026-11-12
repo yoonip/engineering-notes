@@ -267,6 +267,7 @@
     "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
     "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
     "products:https://blog.st.com/ai-data-centers": "products:https://blog.st.com/ai-data-centers",
+    "products:https://blog.st.com/aliro": "products:https://blog.st.com/aliro",
     "products:https://blog.st.com/ganspin1102-ganspin1105": "products:https://blog.st.com/ganspin1102-ganspin1105",
     "products:https://blog.st.com/rust-mems-drivers": "products:https://blog.st.com/rust-mems-drivers",
     "products:https://blog.st.com/snapdragon-wear-elite": "products:https://blog.st.com/snapdragon-wear-elite",
@@ -6894,6 +6895,27 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/"
         }
+      ],
+      "2026-11-13": [
+        {
+          "acquired_at": "2026-11-12T21:02:38.698931+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-12T14:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-12T21:01:39.668009+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/aliro",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Aliro: Unlocking the future of smart locks with an ST reference design",
+          "update": false,
+          "url": "https://blog.st.com/aliro/"
+        }
       ]
     },
     "reports": {
@@ -10027,6 +10049,10 @@
       "group": "products",
       "key": "products:https://blog.st.com/ai-data-centers"
     },
+    "https://blog.st.com/aliro": {
+      "group": "products",
+      "key": "products:https://blog.st.com/aliro"
+    },
     "https://blog.st.com/ganspin1102-ganspin1105": {
       "group": "products",
       "key": "products:https://blog.st.com/ganspin1102-ganspin1105"
@@ -10618,10 +10644,10 @@
       "Last-Modified": "Tue, 10 Nov 2026 07:38:52 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"21d0babd8df87c43f82e490bee22aca6ee29de87bd9a079387ba4c264fa8556f\""
+      "ETag": "W/\"26c82c9c9be2d49ea2b335b68265ff0dcdaab1c7391b7c1d58442dedc84a0b5f\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"326720110275b4e1c31167b5f86994f78f64c57faf3083ff493db7e25a404117\""
+      "ETag": "W/\"61365c1c6b9823db41cfc6509155fde8c1cbc4904a409a73b66b8ca0e2b835ec\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -10635,11 +10661,11 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.python.org/feeds/posts/default?alt=rss": {
-      "ETag": "\"6af38067-6073\"",
-      "Last-Modified": "Tue, 10 Nov 2026 20:36:55 GMT"
+      "ETag": "\"6af37f58-6073\"",
+      "Last-Modified": "Tue, 10 Nov 2026 20:32:24 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Thu, 12 Nov 2026 10:36:53 GMT"
+      "Last-Modified": "Thu, 12 Nov 2026 14:00:00 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -10669,10 +10695,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc7-MrF8f12cKt5DMobksw1SOpjlpHQ\""
+      "ETag": "W/\"33bc7-nW7+2sVR35cJNgd1eq94kZ96tcI\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40175-DIQPeIJb6YAQPXDzqDhXD7Zmxr8\""
+      "ETag": "W/\"40175-vJQCx8EwNIgl+NArHZv5nwiqchU\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -10708,6 +10734,7 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
+    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -10717,12 +10744,12 @@
       "Last-Modified": "Thu, 12 Nov 2026 03:55:57 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794487165\"",
-      "Last-Modified": "Thu, 12 Nov 2026 12:39:25 GMT"
+      "ETag": "\"1794516709\"",
+      "Last-Modified": "Thu, 12 Nov 2026 20:51:49 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794488953\"",
-      "Last-Modified": "Thu, 12 Nov 2026 13:09:13 GMT"
+      "ETag": "\"1794517365\"",
+      "Last-Modified": "Thu, 12 Nov 2026 21:02:45 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -10838,7 +10865,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0554a79132e657467291558481a84ff18\""
+      "ETag": "\"0722c73d49b737097908b668253240735\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -10938,12 +10965,12 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"c1fd0b08e6a7b060088ba340ea998399\"",
-      "Last-Modified": "Thu, 12 Nov 2026 05:01:00 GMT"
+      "ETag": "\"d410cacfb45a8f0c5371cf05bbfd5966\"",
+      "Last-Modified": "Thu, 12 Nov 2026 20:48:11 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
-      "ETag": "\"c1a3573b5663691e1e001c5bdc006736\"",
-      "Last-Modified": "Tue, 22 Sep 2026 20:09:15 GMT"
+      "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
+      "Last-Modified": "Thu, 12 Nov 2026 14:56:06 GMT"
     },
     "https://www.ocw-openmatters.org/robots.txt": {
       "ETag": "\"065a733f5-0;;;\"",
@@ -11007,7 +11034,7 @@
       "rules": "User-agent: *\r\nAllow: /\r\nDisallow:/webdata"
     },
     "https://ksp.etri.re.kr/robots.txt": {
-      "day": "2026-11-11",
+      "day": "2026-11-12",
       "rules": "Sitemap: https://ksp.etri.re.kr/ksp/sitemap.xml\n\nUser-agent: *\nDisallow: /ksp/funding/\nDisallow: /ksp/edr/\nDisallow: /ksp/rcp/\nDisallow: /ksp/git/\n\nUser-agent: Mediapartners-Google*\nDisallow: /\n\nUser-agent: UbiCrawler\nDisallow: /\n\nUser-agent: DOC\nDisallow: /\n\nUser-agent: Zao\nDisallow: /\n\nUser-agent: sitecheck.internetseer.com\nDisallow: /\n\nUser-agent: Zealbot\nDisallow: /\n\nUser-agent: MSIECrawler\nDisallow: /\n\nUser-agent: SiteSnagger\nDisallow: /\n\nUser-agent: WebStripper\nDisallow: /\n\nUser-agent: WebCopier\nDisallow: /\n\nUser-agent: Fetch\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: Teleport\nDisallow: /\n\nUser-agent: TeleportPro\nDisallow: /\n\nUser-agent: WebZIP\nDisallow: /\n\nUser-agent: linko\nDisallow: /\n\nUser-agent: HTTrack\nDisallow: /\n\nUser-agent: Microsoft.URL.Control\nDisallow: /\n\nUser-agent: Xenu\nDisallow: /\n\nUser-agent: larbin\nDisallow: /\n\nUser-agent: libwww\nDisallow: /\n\nUser-agent: ZyBORG\nDisallow: /\n\nUser-agent: Download Ninja\nDisallow: /\n\nUser-agent: fast\nDisallow: /\n\nUser-agent: grub-client\nDisallow: /\n\nUser-agent: k2spider\nDisallow: /\n\nUser-agent: NPBot\nDisallow: /\n\nUser-agent: WebReaper\nDisallow: /\n\n\n"
     },
     "https://news.mit.edu/robots.txt": {
@@ -16941,6 +16968,12 @@
       "language": "en",
       "url": "https://blog.st.com/ai-data-centers/"
     },
+    "products:https://blog.st.com/aliro": {
+      "fingerprint": "4ee9b66aa21ade7f61ff29bdcd9794a47a5db40d7fafa35c912f168d93ff1507",
+      "first_seen": "2026-11-12T21:01:39.668009+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/aliro/"
+    },
     "products:https://blog.st.com/ganspin1102-ganspin1105": {
       "fingerprint": "72501451fdd1fda29cb56a913295af11fd162ce64d3d1f48fe7ab9feb8e93c49",
       "first_seen": "2026-11-11T16:32:11.035949+00:00",
@@ -17591,6 +17624,10 @@
     },
     "st-technical:https://blog.st.com/ai-data-centers": {
       "list_fingerprint": "09e4f32f721d460325a03f02d380846d5928dd1e9d52b4f926447b3b30a9c116",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/aliro": {
+      "list_fingerprint": "4ee9b66aa21ade7f61ff29bdcd9794a47a5db40d7fafa35c912f168d93ff1507",
       "status": "posted"
     },
     "st-technical:https://blog.st.com/ganspin1102-ganspin1105": {
