@@ -1,14 +1,32 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-12 06:58 KST
+갱신: 2026-11-12 11:59 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## \[쇼츠\] 트럼프 "100% 승리로 곧 종전"…이란은 지하 미사일 기지 공개
+
+> \(서울=연합뉴스\) 도널드 트럼프 미국 대통령이 이란 전쟁의 조기 종식을 자신한 가운데 이란은 대규모 지하 미사일 기지를 공개하고 유럽의 미군 기...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261112092500704>) · 2026-11-12 11:43 KST · 작성·제공: 전석우
 
 ## "밴스, 이란 강경파 안보수장과 대면협상 검토…종전협상 전면에"
 
 > JD 밴스 미국 부통령이 이란과의 전쟁 종식을 위해 이란의 강경파 안보 수장과 직접 대면하는 방안을 검토하고...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261112008400072>) · 2026-11-12 06:48 KST · 작성·제공: 김연숙
+
+## \[영상\] 트럼프 "완전한 승리 원한다"…이란은 지하 미사일 기지 과시
+
+> \(서울=연합뉴스\) 도널드 트럼프 미국 대통령이 이란 전쟁의 조기 종식을 자신한 가운데 이란은 대규모 지하 미사일 기지를 공개하고 유럽의 미군 기...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261112078000704>) · 2026-11-12 11:24 KST · 작성·제공: 전석우
+
+## '11년 만에 최악 산불' 인니 피해 규모 288만㏊…서울 면적 48배
+
+> 올해 인도네시아에서 11년 만에 다시 발생한 대규모 산불로 인한 피해 규모가 서울 면적의 48배에 달하는...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261112082600104>) · 2026-11-12 11:12 KST · 작성·제공: 손현규
 
 ## AI반도체주 일제히 급등…마이크론 시총 하루새 130조원↑
 
@@ -52,6 +70,12 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-russia-ukraine-111126/8221542.html>) · 2026-11-12 04:28 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
+## "젠슨 황 불륜" 경고했다 '조롱'…31살 투자자 반년 뒤 반전
+
+> 젠슨 황 엔비디아 최고경영자와 중국 스파이 의혹을 받는 여성의 관계를 반년 전 경고했다가 조롱까지 받았던 31살 공매도 투자자가 뒤늦게 주목받고…
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008842302&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-12 11:10 KST · 작성·제공: dan@sbs.co.kr \(정다은\)
+
 ## "중국에 10조 원대 칩 유출…남편도 가담 의혹"
 
 > 중국 스파이로 의심받는 엘리스 황이 엔비디아의 AI 칩 24만 개, 10조 원어치를 중국에 빼돌렸다는 의혹이 제기됐습니다.
@@ -75,6 +99,18 @@
 > 오늘은 미국의 재향군인의 날 ,Veterans Day입니다.
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8221641.html>) · 2026-11-12 06:46 KST
+
+## EU 외교수장 “러, 우크라 아동 북한 보내 친러 이념 주입”
+
+> 러시아가 강제 이주시킨 우크라이나 아동들을 북한으로 보내 친러시아 이념 교육을 받게 했다고 유럽연합\(EU\) 외교수장이 비판했습니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8221658.html>) · 2026-11-12 07:36 KST · 작성·제공: voadigital@voanews.com \(조진우\)
+
+## 미국 재무장관, 이란 위협에 군사기지로 거처 이동… “이란 압박 흔들림 없다”
+
+> 미국의 이란에 대한 경제 제재를 주도하고 있는 스콧 베선트 재무장관이 이란의 위협으로 신변 안전을 위해 군사기지로 거처를 옮겼다는 보도가 나왔습니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8221656.html>) · 2026-11-12 07:33 KST
 
 ## 트럼프 “이란전 완전한 승리 눈앞, 곧 끝날 것”
 
@@ -105,7 +141,11 @@
 - [Russia and Ukraine agree to a large exchange of prisoners of war, officials say](<https://www.npr.org/2026/11/11/g-s1-152954/russia-ukraine-war-talks>) · NPR
 - [El Salvador's Bukele makes a political gamble with a Haiti gang offensive ahead of an election](<https://abcnews.com/International/wireStory/el-salvadors-bukele-makes-political-gamble-haiti-gang-138040031>) · ABC News 미국
 - [Brazil fines Facebook $1.3M for failing to comply with court orders during election](<https://abcnews.com/International/wireStory/brazil-fines-facebook-13-million-failing-comply-court-138050841>) · ABC News 미국
+- [Lawmakers question police chief about wiretaps alleged to target President Prabowo](<https://abcnews.com/International/wireStory/indonesian-lawmakers-question-police-chief-wiretaps-alleged-target-138065101>) · ABC News 미국
 - [Rebuild, or relocate? Displaced Nepali families remain in limbo weeks after flood.](<https://www.csmonitor.com/World/Asia-South-Central/2026/1111/nepal-flood-rebuilding-homes?icid=rss>) · The Christian Science Monitor
+- [Pope Leo returns to a national celebration in his second homeland of Peru](<https://abcnews.com/International/wireStory/pope-leo-returns-expected-national-party-homeland-peru-138054377>) · ABC News 미국
+- [After 40 years, Chilean mother reunites with two children stolen during dictatorship](<https://abcnews.com/International/wireStory/after-40-years-apart-chilean-mother-reunites-children-138062026>) · ABC News 미국
+- [East Africa: Uganda's Oil and Gas Investments Surpass Shs57 Trillion As First Oil Approaches](<https://allafrica.com/stories/202611110728.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
