@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-12 11:59 KST
+갱신: 2026-11-12 20:11 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -46,11 +46,29 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261112006600071>) · 2026-11-12 06:16 KST · 작성·제공: 박성민
 
+## 라가르드 ECB 총재, 프랑스 중도진영 지지율 선두
+
+> 최근 조기 퇴진을 선언한 크리스틴 라가르드 유럽중앙은행\(ECB\) 총재가 소문대로 프랑스 대선에 출마하면 중...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261112174000082>) · 2026-11-12 18:46 KST · 작성·제공: 김계연
+
+## "우크라전서 러 외국인 병력 1만1천명 사망…100개여국 출신"
+
+> 러시아가 우크라이나와의 전쟁에 투입한 외국인 전투원 중 약 100개국 출신의 1만1천여 명이 사망한 것으로 나...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261112149600009>) · 2026-11-12 16:41 KST · 작성·제공: 김정은
+
 ## 러·우크라, 역대 최대 포로교환 합의…영토·안보 입장차 여전
 
 > 러시아와 우크라이나가 9개월 만에 재개된 종전 협상에서 역대 최대 규모의 포로 교환에 합의했다.
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261111181200109>) · 2026-11-11 22:45 KST · 작성·제공: 민경락
+
+## 美특사, 푸틴·젤렌스키 만난다…종전협상 돌파구 찾나
+
+> 이틀간의 3자 종전협상을 중재한 미국 특사들이 12일\(현지시간\) 러시아·우크라이나 정상을 잇달아 만나 추가 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261112162100109>) · 2026-11-12 17:53 KST · 작성·제공: 민경락
 
 ## 뉴욕증시, 코어위브 실적 소화하며 혼조 출발
 
@@ -70,6 +88,12 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-russia-ukraine-111126/8221542.html>) · 2026-11-12 04:28 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
+## '불륜 스캔들' 젠슨 황 해임 위기…이사회, 거취 논의 중
+
+> 엔비디아 이사회가 긴급회의를 열고 스파이로 의심되는 여성과 불륜을 시인한 젠슨 황 CEO의 해임과 관련한 논의를 하고 있습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008843405&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-12 17:07 KST · 작성·제공: youngah@sbs.co.kr \(김영아\)
+
 ## "젠슨 황 불륜" 경고했다 '조롱'…31살 투자자 반년 뒤 반전
 
 > 젠슨 황 엔비디아 최고경영자와 중국 스파이 의혹을 받는 여성의 관계를 반년 전 경고했다가 조롱까지 받았던 31살 공매도 투자자가 뒤늦게 주목받고…
@@ -81,6 +105,12 @@
 > 중국 스파이로 의심받는 엘리스 황이 엔비디아의 AI 칩 24만 개, 10조 원어치를 중국에 빼돌렸다는 의혹이 제기됐습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008841679&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-11 23:06 KST · 작성·제공: leekang@sbs.co.kr \(이강\)
+
+## 젠슨 황 스캔들, 미 ‘AI칩’ vs 중 ‘희토류’ 전쟁 도화선 되나
+
+> 인공지능 인프라의 핵심 기술을 보유한 미국 업체 엔비디아의 젠슨 황 최고경영자\(CEO\)의 중국 간첩 연루설이 장기적으로 미중 간 전략경쟁을 격화시킬 도화선으로 작용할 수 있다는 전망이 제기됐다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/12/ai-apec-trump-nvidia-scandal/>) · 2026-11-12 17:22 KST · 작성·제공: 서울-목용재 moky@rfa.org
 
 ## 이틀새 570조 날아가…"출근했지만 분위기 침울"
 
@@ -112,6 +142,12 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8221656.html>) · 2026-11-12 07:33 KST
 
+## 김정은 동해 ‘중요 해군기지’ 현지지도… “전력 현대화 단계 진입”
+
+> 전문가들은 최근 북한의 해군력 강화가 단순한 함정 건조를 넘어 해군기지 확충과 작전지원체계 구축 등 실질적인 전력 현대화 단계로 진입하고 있다고 평가했다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/12/north-korea-important-naval-base-east-sea/>) · 2026-11-12 18:34 KST · 작성·제공: 서울-김지수 kimjis@rfa.org
+
 ## 트럼프 “이란전 완전한 승리 눈앞, 곧 끝날 것”
 
 > 도널드 트럼프 미국 대통령이 이란과의 군사적 충돌과 관련해 “완전한 승리가 눈앞에 다가왔다”며 조만간 전쟁이 종식될 것임을 시사했다.
@@ -129,6 +165,30 @@
 > 미국 전쟁\(국방\)부가 올해 말까지 유럽 주둔 미군의 감축 및 재배치를 검토하면서 약 7만8000명인 유럽 주둔 미군의 불확실성이 커지고 있다고 뉴욕타임스\(NYT\)가 10일 보도했다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261111/135006544/1>) · 2026-11-11 22:54 KST
+
+## 일본 엄마·아빠 마음 사로잡는 ‘K 유아용품’ 현지서 인기
+
+> 12일 일본 도쿄 시나가와에서 열린 한 유아용품 전시장.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261112/135017144/1>) · 2026-11-12 20:06 KST
+
+## 쫓겨난 세입자 죽음에…스페인 노동자 400만명 ‘분노의 파업’
+
+> 치솟는 임대료와 이를 따라가지 못하는 임금 등에 분노한 약 400만 명의 스페인 노동자가 11일 총파업을 벌였다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261112/135014074/1>) · 2026-11-12 19:44 KST
+
+## 흑인 혐오 ‘KKK 본거지’서 흑인 美상원의원 탄생…146년만
+
+> 미국 남부의 공화당 텃밭이자 흑인 차별의 역사가 깊은 미시시피주 연방 상원의원 선거에 민주당 후보로 나선 흑인 지방검사장 스콧 콜롬\(44\)이 11일 현역 재선 의원이자 백인 여성인…
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261112/135013920/1>) · 2026-11-12 19:36 KST
+
+## 청와대 “APEC 계기 북미접촉 가능성 작아…전후 상황은 단정 어려워”
+
+> 청와대가 오는 18~19일 중국 선전에서 열리는 아시아태평양경제협력체\(APEC\) 정상회의 기간 중 북미 접촉이 이뤄질 가능성은 작다고 선을 그었다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/12/us-north-korea-contact-unlikely-china-apec/>) · 2026-11-12 14:12 KST · 작성·제공: 서울-김태이 kimt@rfa.org
 
 ## APEC 미중러 정상 총출동에 북핵 후순위로 밀리나
 
