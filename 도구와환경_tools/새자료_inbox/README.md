@@ -1,10 +1,82 @@
 # 도구·보안 새 자료
 
-반영: 2026-11-12 13:05 KST
+반영: 2026-11-12 22:09 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## Apache 제품 보안 업데이트 권고
+
+> Apache 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72304>) · 공식 RSS 게시일: 2026-11-12
+
+가져온 시각: 2026-11-12 22:09:08 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## WordPress 플러그인 보안 업데이트 권고
+
+> WordPress의 WPML Multilingual CMS 플러그인에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]~\[4\] o 영향을 받는 버전을 사용 중인 사용자는 해결…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72303>) · 공식 RSS 게시일: 2026-11-12
+
+가져온 시각: 2026-11-12 22:09:09 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## Node.js 제품 보안 업데이트 권고
+
+> OpenJS 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]~\[3\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72302>) · 공식 RSS 게시일: 2026-11-12
+
+가져온 시각: 2026-11-12 22:09:10 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## Zoom 제품 보안 업데이트 권고
+
+> Zoom社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]\[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72301>) · 공식 RSS 게시일: 2026-11-12
+
+가져온 시각: 2026-11-12 22:09:11 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## Synology 제품 보안 업데이트 권고
+
+> Synology社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]\[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72300>) · 공식 RSS 게시일: 2026-11-12
+
+가져온 시각: 2026-11-12 22:09:13 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## MS 11월 보안 위협에 따른 정기 보안 업데이트 권고
+
+> 보안공지 &gt; 알림마당 : KISA 보호나라&amp;KrCERT/CC
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72299>) · 공식 RSS 게시일: 2026-11-12
+
+가져온 시각: 2026-11-12 22:09:14 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
 
 ## React 서버 컴포넌트 보안 업데이트 권고
 
