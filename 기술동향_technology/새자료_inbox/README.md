@@ -1,22 +1,22 @@
 # 기술 동향 새 자료
 
-반영: 2026-11-11 17:14 KST
+반영: 2026-11-13 11:05 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## 휴머노이드 로봇 R&amp;D 투자전략: 개방형 생태계로의 확장
+## AI 브리프 · 2026년 11월호
 
-> 휴머노이드 로봇이 AI 모델과 하드웨어 기술의 발전에 힘입어 기술 시연을 넘어 실제 현장 적용·실증 단계로 나아가고 있습니다. 미국과…
+> 목차: 정책·법제 ▹ 중국 정부, 대형 모델과 에이전트를 포함한 AI 기술 수출 통제 추진 ▹ 미국 국토안보부, 연방 민간 행정기관에…
 
-출처: [KISTEP 기술동향브리프](<https://www.kistep.re.kr/>) · [원문](<https://www.kistep.re.kr/board.es?mid=a10306040000&bid=0031&list_no=94918&act=view>) · 공식 페이지 표기일: 2026-11-11
+출처: [SPRi AI 브리프](<https://www.spri.kr/>) · [원문](<https://www.spri.kr/posts/view/24039?code=AI-Brief>) · 공식 페이지 표기일: 2026-11-13
 
-[발행 기관의 PDF](<https://www.kistep.re.kr/boardDownload.es?bid=0031&list_no=94918&seq=1>)
+[발행 기관의 PDF](<https://www.spri.kr/download/23920>)
 
-가져온 시각: 2026-11-11 17:13:48 KST
+가져온 시각: 2026-11-13 11:04:32 KST
 
-수집 경로: [공식 목록·피드](<https://www.kistep.re.kr/board.es?mid=a10306040000&bid=0031&cg_code=C03>) · 방법: 공식 기술동향브리프 목록·소개문
+수집 경로: [공식 목록·피드](<https://www.spri.kr/posts?code=AI-Brief>) · 방법: 공식 간행물 목록·상세 목차
 
 개요: 공식 한국어 소개 발췌
 
