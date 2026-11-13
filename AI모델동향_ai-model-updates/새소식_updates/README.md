@@ -1,18 +1,18 @@
 # 모델 발표
 
-반영: 2026-11-13 18:55 KST
+반영: 2026-11-14 03:00 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
-## Introducing Gemini 4 Hydrogen
+## Releasing the full suite of application APIs
 
-Google DeepMind의 모델 관련 공식 발표입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.
+DeepSeek의 모델 관련 공식 발표입니다. 공개 제목·소개에서 추론 주제를 다룹니다.
 
-출처: [Google DeepMind](<https://deepmind.google/>) · [원문](<https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/>) · 발표일: 2026-11-12
+출처: [DeepSeek](<https://api-docs.deepseek.com/>) · [원문](<https://api-docs.deepseek.com/updates/#releasing-the-full-suite-of-application-apis>) · 발표일: 2026-11-13
 
-가져온 시각: 2026-11-13 18:53:54 KST
+가져온 시각: 2026-11-14 02:59:03 KST
 
-수집 경로: [공식 목록·피드](<https://deepmind.google/blog/rss.xml>) · 방법: 공식 RSS·Atom의 제목·소개문 및 원문의 공개 메타데이터
+수집 경로: [공식 목록·피드](<https://api-docs.deepseek.com/updates/>) · 방법: 공식 목록·공개 소개문
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
