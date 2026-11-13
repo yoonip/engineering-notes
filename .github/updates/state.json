@@ -46,6 +46,7 @@
     "models:google-announcement:introducing-gemini-38-live-with-live-avatar": "models:google-announcement:gemini-3-8-live-with-live-avatar",
     "models:google-announcement:introducing-gemini-4-hydrogen": "models:google-announcement:introducing-gemini-4-hydrogen",
     "models:https://api-docs.deepseek.com/updates#deepseek-v41-flash-1017-update": "models:https://api-docs.deepseek.com/updates#deepseek-v41-flash-1017-update",
+    "models:https://api-docs.deepseek.com/updates#releasing-the-full-suite-of-application-apis": "models:https://api-docs.deepseek.com/updates#releasing-the-full-suite-of-application-apis",
     "models:https://openai.com/index/gpt-6-for-everyone": "models:https://openai.com/index/gpt-6-for-everyone",
     "models:https://openai.com/index/introducing-gpt-6-1-sol": "models:https://openai.com/index/introducing-gpt-6-1-sol",
     "models:https://openai.com/index/introducing-gpt-6-1-terra": "models:https://openai.com/index/introducing-gpt-6-1-terra",
@@ -317,6 +318,7 @@
     "products:https://blogs.nvidia.co.kr/blog/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion": "products:https://blogs.nvidia.co.kr/blog/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion",
     "products:https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul": "products:https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul",
     "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective": "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective",
+    "products:https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter": "products:https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter",
     "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale": "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale",
     "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo",
     "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw",
@@ -342,6 +344,7 @@
     "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials": "products:https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials",
     "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes": "products:https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes",
     "products:https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory": "products:https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory",
+    "products:https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm": "products:https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=129",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132",
     "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133": "reports:https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133",
@@ -947,6 +950,25 @@
           "title": "Introducing Gemini 4 Hydrogen",
           "update": false,
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        }
+      ],
+      "2026-11-14": [
+        {
+          "acquired_at": "2026-11-13T17:59:03.200608+00:00",
+          "acquisition_method": "공식 목록·공개 소개문",
+          "date": "2026-11-13",
+          "date_label": "",
+          "first_seen": "2026-11-13T17:59:01.356509+00:00",
+          "group": "models",
+          "homepage": "https://api-docs.deepseek.com/",
+          "key": "models:https://api-docs.deepseek.com/updates#releasing-the-full-suite-of-application-apis",
+          "source_name": "DeepSeek",
+          "source_url": "https://api-docs.deepseek.com/updates/",
+          "summary_ko": "DeepSeek의 모델 관련 공식 발표입니다. 공개 제목·소개에서 추론 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Releasing the full suite of application APIs",
+          "update": false,
+          "url": "https://api-docs.deepseek.com/updates/#releasing-the-full-suite-of-application-apis"
         }
       ]
     },
@@ -7518,6 +7540,46 @@
           "update": false,
           "url": "https://blog.st.com/aliro/"
         }
+      ],
+      "2026-11-14": [
+        {
+          "acquired_at": "2026-11-13T17:59:58.351144+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "John Malaska",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-13T17:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-13T17:59:01.356509+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 로봇·모빌리티 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Adapt Human Motion for Robots with NVIDIA SOMA Retargeter",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/"
+        },
+        {
+          "acquired_at": "2026-11-13T17:59:58.351144+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Fatima Fall",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-13T17:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-13T17:59:01.356509+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/"
+        }
       ]
     },
     "reports": {
@@ -10793,6 +10855,10 @@
       "group": "models",
       "key": "models:https://api-docs.deepseek.com/updates#deepseek-v41-flash-1017-update"
     },
+    "https://api-docs.deepseek.com/updates#releasing-the-full-suite-of-application-apis": {
+      "group": "models",
+      "key": "models:https://api-docs.deepseek.com/updates#releasing-the-full-suite-of-application-apis"
+    },
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar": {
       "group": "models",
       "key": "models:google-announcement:gemini-3-8-live-with-live-avatar"
@@ -10929,6 +10995,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective"
     },
+    "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter"
+    },
     "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale"
@@ -11028,6 +11098,10 @@
     "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory"
+    },
+    "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm"
     },
     "https://developers.googleblog.com/gemini-4-argon-for-robotics": {
       "group": "models",
@@ -11428,14 +11502,14 @@
       "Last-Modified": "Tue, 03 Nov 2026 03:11:54 GMT"
     },
     "https://api-docs.deepseek.com/updates": {
-      "ETag": "\"3c1a0d2907409fa77bfaba56c4c4ba73\"",
-      "Last-Modified": "Tue, 10 Nov 2026 07:38:52 GMT"
+      "ETag": "\"e00984e1bacd95a22642acbc4c21ffd0\"",
+      "Last-Modified": "Fri, 13 Nov 2026 15:01:54 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"b426e53f9da21bc98a08916b5fece5875989f93112928697ec9290a13062ba4d\""
+      "ETag": "W/\"0f7e078411736d98b04eea071586bd699fa0a2c33db384a0e106cec45e3027c8\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"3444e4f44590e0552a0943d559a7e089f528bf5774768a5aa3f47e2210490332\""
+      "ETag": "W/\"e993b13c994e792f7504e9f2ca8b50fc19bce413018307c75d0446e4a818d5ee\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -11449,8 +11523,8 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.python.org/feeds/posts/default?alt=rss": {
-      "ETag": "\"6af37f58-6073\"",
-      "Last-Modified": "Tue, 10 Nov 2026 20:32:24 GMT"
+      "ETag": "\"6af38067-6073\"",
+      "Last-Modified": "Tue, 10 Nov 2026 20:36:55 GMT"
     },
     "https://blog.st.com/feed": {
       "Last-Modified": "Thu, 12 Nov 2026 14:00:00 GMT"
@@ -11472,14 +11546,14 @@
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"jN8LTw\""
+      "ETag": "\"d3yclA\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"PzgpOg\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"473d0814ad206679b42ec97d7254d8fa\"",
-      "Last-Modified": "Wed, 11 Nov 2026 17:00:00 GMT"
+      "ETag": "\"6356573a86027c42e43c18c2a99320ca\"",
+      "Last-Modified": "Fri, 13 Nov 2026 17:17:23 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -11487,10 +11561,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-qP3yGSEL0hWTJqPIp7Baw6USaYU\""
+      "ETag": "W/\"33bc8-eIrgMAYSNe4Q0G5LLZwVCdDpLZI\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40175-gZ2qAcHZfjgfe+UyQAbvbnbsVGo\""
+      "ETag": "W/\"40175-raJD1wO8LFqV05P/zrgxmB5n/4Y\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -11526,6 +11600,7 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
+    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -11535,12 +11610,12 @@
       "Last-Modified": "Fri, 13 Nov 2026 01:55:12 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794563609\"",
-      "Last-Modified": "Fri, 13 Nov 2026 09:53:29 GMT"
+      "ETag": "\"1794592494\"",
+      "Last-Modified": "Fri, 13 Nov 2026 17:54:54 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794563709\"",
-      "Last-Modified": "Fri, 13 Nov 2026 09:55:09 GMT"
+      "ETag": "\"1794592196\"",
+      "Last-Modified": "Fri, 13 Nov 2026 17:49:56 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -11657,7 +11732,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0edb6083c0133b9086cf838345d4a42f3\""
+      "ETag": "\"06e9c5189208acf2532f13bd3220fd5f7\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -11757,8 +11832,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"f3f57d969e67b123b0c0d81e1c31b611\"",
-      "Last-Modified": "Fri, 13 Nov 2026 05:05:00 GMT"
+      "ETag": "\"91d8850fd3109676f3232d95595c367f\"",
+      "Last-Modified": "Fri, 13 Nov 2026 17:44:41 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
@@ -14737,6 +14812,10 @@
       "list_fingerprint": "db65176a8e57a7dbcbb7a59dfdb12487c8f335b70a64d2f76ae022e3ede5a9ac",
       "status": "older_material"
     },
+    "deepseek:https://api-docs.deepseek.com/updates#releasing-the-full-suite-of-application-apis": {
+      "list_fingerprint": "b2eef5f053d340d644800697b2686f58f041a534a629ca4a1348b8db9341b055",
+      "status": "posted"
+    },
     "etri-reports:https://ksp.etri.re.kr/ksp/plan-report/read?id=1552": {
       "list_fingerprint": "6a3b9e4767cea3a5f1f48082a85429e8566f8302bbffa49149b286cdcfedfdcb",
       "status": "older_material"
@@ -15957,6 +16036,12 @@
       "language": "en",
       "url": "https://api-docs.deepseek.com/updates/#deepseek-v41-flash-1017-update"
     },
+    "models:https://api-docs.deepseek.com/updates#releasing-the-full-suite-of-application-apis": {
+      "fingerprint": "b2eef5f053d340d644800697b2686f58f041a534a629ca4a1348b8db9341b055",
+      "first_seen": "2026-11-13T17:59:01.356509+00:00",
+      "language": "en",
+      "url": "https://api-docs.deepseek.com/updates/#releasing-the-full-suite-of-application-apis"
+    },
     "models:https://developers.googleblog.com/gemini-4-argon-for-robotics": {
       "fingerprint": "867deffcf6108800b501479f6aee9415dea755a141b73c161f744bc35c386ec5",
       "first_seen": "2026-10-29T03:34:54.131044+00:00",
@@ -16130,6 +16215,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod": {
       "list_fingerprint": "47b4360f960a42431642f903b937735df884151445caf1c292ba7b6414346c29",
       "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter": {
+      "list_fingerprint": "881883ff362c5d18f632d034d5e89222386feb856008af9423cb8001af819db4",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell": {
       "list_fingerprint": "f34c74a082d78d625e038f370347c4d08c04ab9e39d0a385e388005698308d91",
@@ -16590,6 +16679,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities": {
       "list_fingerprint": "97f4e4e9b577f220bc1cf14ab07c3b7b5de9efcbd2aecc06f6c28fc20ef57655",
       "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm": {
+      "list_fingerprint": "2893550fda713191003644c6f986ea3f26b8bdea5174c5ec87813d3cd11b7ebe",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/when-to-use-encode-prefill-decode-disaggregation-to-accelerate-multimodal-model-serving": {
       "list_fingerprint": "4a94153b0d0948414e5d4525aba2001c3a26509aa0c1958da3bd561527a35614",
@@ -18373,6 +18466,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/"
     },
+    "products:https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter": {
+      "fingerprint": "881883ff362c5d18f632d034d5e89222386feb856008af9423cb8001af819db4",
+      "first_seen": "2026-11-13T17:59:01.356509+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/"
+    },
     "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale": {
       "fingerprint": "073b9eef41a8a413fb44358b21366757fcd73a57cf4e8e25af82268e719d8abf",
       "first_seen": "2026-11-10T20:57:46.116023+00:00",
@@ -18522,6 +18621,12 @@
       "first_seen": "2026-11-11T22:56:03.593831+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/"
+    },
+    "products:https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm": {
+      "fingerprint": "2893550fda713191003644c6f986ea3f26b8bdea5174c5ec87813d3cd11b7ebe",
+      "first_seen": "2026-11-13T17:59:01.356509+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/"
     },
     "python-releases:https://blog.python.org/2026/02/python-3143-and-31312-are-now-available": {
       "list_fingerprint": "3aa6aefd87f6309afce225bf6cd1a2a5756dbbc67ba4362fceceea4e8f1c28e2",
