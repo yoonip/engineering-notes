@@ -325,6 +325,7 @@
     "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos",
     "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os": "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os",
     "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution": "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution",
+    "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas": "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas",
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
     "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory": "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory",
     "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations": "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations",
@@ -337,6 +338,8 @@
     "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support": "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support",
     "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
     "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
+    "products:https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton": "products:https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton",
+    "products:https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla": "products:https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla",
     "products:https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits": "products:https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits",
     "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus": "products:https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus",
     "products:https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot": "products:https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot",
@@ -7562,6 +7565,63 @@
           "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/"
         },
         {
+          "acquired_at": "2026-11-13T23:48:35.649090+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Cole Brower",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-13T22:13:51+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-13T23:47:43.422121+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Faster Scientific Simulations with New FP64 Algorithms in NVIDIA cuBLAS",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas/"
+        },
+        {
+          "acquired_at": "2026-11-13T23:48:35.649090+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Akhilesh Mishra",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-13T21:17:17+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-13T23:47:43.422121+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/"
+        },
+        {
+          "acquired_at": "2026-11-13T23:48:35.649090+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Nikshay Shrivastava",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-13T18:57:10+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-13T23:47:43.422121+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·GPU·가속기·개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Run Native DLA Inference in Python on NVIDIA Jetson AGX Orin Using cuDLA",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla/"
+        },
+        {
           "acquired_at": "2026-11-13T17:59:58.351144+00:00",
           "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
           "author": "Fatima Fall",
@@ -11023,6 +11083,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution"
     },
+    "https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas"
+    },
     "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages"
@@ -11070,6 +11134,14 @@
     "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands"
+    },
+    "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton"
+    },
+    "https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla"
     },
     "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits": {
       "group": "products",
@@ -11506,10 +11578,10 @@
       "Last-Modified": "Fri, 13 Nov 2026 15:01:54 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"0f7e078411736d98b04eea071586bd699fa0a2c33db384a0e106cec45e3027c8\""
+      "ETag": "W/\"f57aa8a0e87ad859c456c77826cb01b704fbdc72fd602ff83996aff634b21f73\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"e993b13c994e792f7504e9f2ca8b50fc19bce413018307c75d0446e4a818d5ee\""
+      "ETag": "W/\"9839432709aa337668ffeed1963ee81283f3e7027c6f8188b782f6c37015c9aa\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -11523,8 +11595,8 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.python.org/feeds/posts/default?alt=rss": {
-      "ETag": "\"6af38067-6073\"",
-      "Last-Modified": "Tue, 10 Nov 2026 20:36:55 GMT"
+      "ETag": "\"6af37f58-6073\"",
+      "Last-Modified": "Tue, 10 Nov 2026 20:32:24 GMT"
     },
     "https://blog.st.com/feed": {
       "Last-Modified": "Thu, 12 Nov 2026 14:00:00 GMT"
@@ -11545,15 +11617,12 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
-    "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"d3yclA\""
-    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"PzgpOg\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"6356573a86027c42e43c18c2a99320ca\"",
-      "Last-Modified": "Fri, 13 Nov 2026 17:17:23 GMT"
+      "ETag": "\"5645099f805c2784fd96280965bdb496\"",
+      "Last-Modified": "Fri, 13 Nov 2026 22:14:10 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -11561,10 +11630,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-eIrgMAYSNe4Q0G5LLZwVCdDpLZI\""
+      "ETag": "W/\"33bc8-KsF5SoDM/tzHTe2BXgy+cMhfrac\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40175-raJD1wO8LFqV05P/zrgxmB5n/4Y\""
+      "ETag": "W/\"40175-xeOg45Eq3GENMotwIU2MtStJVxA\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -11610,12 +11679,12 @@
       "Last-Modified": "Fri, 13 Nov 2026 01:55:12 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794592494\"",
-      "Last-Modified": "Fri, 13 Nov 2026 17:54:54 GMT"
+      "ETag": "\"1794613237\"",
+      "Last-Modified": "Fri, 13 Nov 2026 23:40:37 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794592196\"",
-      "Last-Modified": "Fri, 13 Nov 2026 17:49:56 GMT"
+      "ETag": "\"1794612326\"",
+      "Last-Modified": "Fri, 13 Nov 2026 23:25:26 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -11732,7 +11801,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"06e9c5189208acf2532f13bd3220fd5f7\""
+      "ETag": "\"0fc1bca1a2cf657ac7335ac0c26dc8890\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -11832,8 +11901,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"91d8850fd3109676f3232d95595c367f\"",
-      "Last-Modified": "Fri, 13 Nov 2026 17:44:41 GMT"
+      "ETag": "\"ef2faee14c19e65e54388f515d7dcfe0\"",
+      "Last-Modified": "Fri, 13 Nov 2026 23:20:44 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
@@ -16352,6 +16421,10 @@
       "list_fingerprint": "01cb47fc3feb0b779c028fc07bd13aff28e50c95256e858dbc2b0d828477401d",
       "status": "bootstrap_skipped"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas": {
+      "list_fingerprint": "c7304e36afe816848aed300402cf816edf6953f7e15d10730f2c81ebb41fe815",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages": {
       "list_fingerprint": "2227f01ae0d3ce879dc620a938b11fb57dcbf3919d9c88cf6c4c2a9af7be014f",
       "status": "bootstrap_skipped"
@@ -16562,6 +16635,14 @@
     },
     "nvidia-technical:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
       "list_fingerprint": "c0caf0b3091b411159753d334e32fe472ad2269e6eb3d9e3e5974dfe2ad31d99",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton": {
+      "list_fingerprint": "a7ee9c95438b5e5727b5ec62d9f8c853a43a5aa34ce3a137176027ee053e3a0f",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla": {
+      "list_fingerprint": "1111a7822ca7f6c9e0836d0308288a691bd347caedfea126040ef081fb0aec16",
       "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/run-nvidia-bionemo-nim-microservices-for-protein-structure-prediction-in-claude-science": {
@@ -18508,6 +18589,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/"
     },
+    "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas": {
+      "fingerprint": "c7304e36afe816848aed300402cf816edf6953f7e15d10730f2c81ebb41fe815",
+      "first_seen": "2026-11-13T23:47:43.422121+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas/"
+    },
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": {
       "fingerprint": "98559625fad74686d8d8017f18e36ceee41eb227751a7c961e536cac9c585ebe",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -18579,6 +18666,18 @@
       "first_seen": "2026-10-30T20:59:11.051787+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/"
+    },
+    "products:https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton": {
+      "fingerprint": "a7ee9c95438b5e5727b5ec62d9f8c853a43a5aa34ce3a137176027ee053e3a0f",
+      "first_seen": "2026-11-13T23:47:43.422121+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/"
+    },
+    "products:https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla": {
+      "fingerprint": "1111a7822ca7f6c9e0836d0308288a691bd347caedfea126040ef081fb0aec16",
+      "first_seen": "2026-11-13T23:47:43.422121+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla/"
     },
     "products:https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits": {
       "fingerprint": "4b4c3097e3f316a387c46ce16328d7d42781f92fe010e76bd017d8c534a9e90b",
