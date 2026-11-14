@@ -1,8 +1,20 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-14 07:38 KST
+갱신: 2026-11-14 12:16 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 로이터 "'엔비디아칩 의존' 中 AI프로젝트 규모 4조6천억 이상"
+
+> 젠슨 황 엔비디아 전 최고경영자\(CEO\)의 사임으로 대중국 반도체 수출 규제의 향방에 관심이 쏠리는 가운데...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261114026400089>) · 2026-11-14 10:48 KST · 작성·제공: 차병섭
+
+## "日 차기 5년간 방위비 60조엔으로 축소 조율…대규모 증세 부담"
+
+> 일본 정부가 연내로 예정된 3대 안보 문서 개정 시 2027년도부터 5년간의 방위비 총액을 방위성 요구안보다...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261114028300073>) · 2026-11-14 11:31 KST · 작성·제공: 이도연
 
 ## 美 10월 도매물가 전년 대비 6.5%↑…약 4년만에 최고\(종합\)
 
@@ -15,6 +27,12 @@
 > 유출된 러시아 통계청 자료에 따르면 2022년 우크라이나 전면 침공 이후 올해 여름까지 전쟁에 따른 러시아 ...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261113170200085>) · 2026-11-13 19:22 KST · 작성·제공: 김지연
+
+## 스페이스X, 스타십 시험발사…'우주선 1·2단 전부 회수'는 실패
+
+> 일론 머스크가 이끄는 스페이스X가 대형 발사체 스타십 시험발사에 나섰지만, 사상 첫 1·2단 전부 회...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261114027900075>) · 2026-11-14 11:22 KST · 작성·제공: 김경윤
 
 ## "APEC 계기 미중러 정상회담 19일 개최…북한 논의 가능성"
 
@@ -46,6 +64,12 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8223349.html>) · 2026-11-14 01:09 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
+## "엔비디아 매출 20~40%가 중국 우회 수출?" 따져 보니 \[사실은\]
+
+> 중국 SNS에 퍼지고 있는 영상 이야기로 운을 뗍니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008845234&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-14 09:52 KST · 작성·제공: leekw@sbs.co.kr \(이경원\)
+
 ## 미 특사단 "우크라 평화협상에 유럽 참여 합의"…러 "아직 결정 안 돼"
 
 > 미국과 러시아가 우크라이나 전쟁 종식을 위한 다음 협상에 유럽의 참여를 놓고 이견을 보이고 있습니다.
@@ -57,6 +81,10 @@
 > 이란의 지원을 받는 예멘의 후티 반군이 사우디아라비아의 국영 석유회사 아람코 시설과 주요 원유 수송관 등을 공격했다고 주장했습니다.
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8223343.html>) · 2026-11-14 00:48 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## "'골든' 아직도 차트에?"…영국서 73주째 톱100 장기 흥행
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008845812&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-14 10:45 KST · 작성·제공: so5what@sbs.co.kr \(심영구\)
 
 ## 보이는 모든 걸 읽는다…내 얼굴 위 '만능 비서'
 
