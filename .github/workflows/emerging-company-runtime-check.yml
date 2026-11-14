@@ -17,6 +17,20 @@ jobs:
         run: python3 .github/emerging-companies/prepare_runtime.py --cache-dir "$RUNNER_TEMP/company-runtime" --serve
       - name: 실제 CPU 추론과 JSON 응답 검사
         run: python3 .github/emerging-companies/smoke_runtime.py
+      - name: 실제 원문 후보 한 건의 제안 형식 확인
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          from pathlib import Path
+          sys.path.insert(0, '.github/emerging-companies')
+          from llm_research import propose_candidates
+          state=json.loads(Path('.github/emerging-companies/state.json').read_text(encoding='utf-8'))
+          discovered=sorted(state.get('source_candidates', []), key=lambda r:(r.get('first_seen_on',''),r['url']), reverse=True)
+          proposals,errors=propose_candidates(discovered[:1], set(), limit=1)
+          print(json.dumps({'proposals':proposals,'errors':errors}, ensure_ascii=False))
+          if not proposals:
+              raise SystemExit('The source proposal probe did not produce a valid candidate')
+          PY
       - name: 실패 원인 확인
         if: failure()
         run: tail -n 60 "$RUNNER_TEMP/company-runtime/server.log" || true

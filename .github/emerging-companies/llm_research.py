@@ -292,6 +292,7 @@ def propose_candidates(discovered, known_ids, *, fetcher=fetch, completion=local
         'www.ycombinator.com','ycombinator.com','d2sf.naver.com','www.naver.com'}
     for candidate in discovered[:8]:
         stage='fetching_source'
+        proposal=None
         try:
             source_url=canonical_url(candidate['url'])
             host=urlsplit(source_url).hostname
@@ -334,6 +335,10 @@ def propose_candidates(discovered, known_ids, *, fetcher=fetch, completion=local
                   else 'runtime_error' if stage=='proposing' and (transport or isinstance(exc,ModelConfigurationError))
                   else 'proposal_rejected' if stage!='fetching_source' and isinstance(exc,(ValueError,KeyError,TypeError))
                   else 'internal_error')
-            errors.append({'source':candidate.get('url'),'error':type(exc).__name__,
-                           'kind':kind,'stage':stage,'reason':str(exc)[:160]})
+            detail={'source':candidate.get('url'),'error':type(exc).__name__,
+                    'kind':kind,'stage':stage,'reason':str(exc)[:160]}
+            if stage=='validating_proposal' and isinstance(proposal,dict):
+                detail['proposed_topic']=str(proposal.get('topic',''))[:200]
+                detail['proposed_topic_ascii']=ascii(proposal.get('topic',''))[:600]
+            errors.append(detail)
     return results,errors
