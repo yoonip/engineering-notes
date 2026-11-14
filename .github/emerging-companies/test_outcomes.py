@@ -1,0 +1,128 @@
+"""Regression checks for publication holds versus actual execution failures."""
+import contextlib
+from datetime import datetime, timedelta
+import io
+import json
+import os
+from pathlib import Path
+import sys
+import tempfile
+import unittest
+from unittest.mock import patch
+
+sys.path.insert(0,str(Path(__file__).parent))
+import pipeline as p
+import llm_research as llm
+
+
+class RunOutcomeTests(unittest.TestCase):
+    def setUp(self):
+        self.temporary=tempfile.TemporaryDirectory()
+        self.addCleanup(self.temporary.cleanup)
+        self.root=Path(self.temporary.name)/'root'
+        self.output=Path(self.temporary.name)/'output'
+        self.day=datetime.now(p.KST).strftime('%Y-%m-%d')
+        self.candidate={'id':'Example','company':'Example','sources':[]}
+        self.write(p.CONTROL+'/sources.json',{'sources':[{
+            'url':'https://institution.example/feed','allowed_hosts':['institution.example']}]})
+        self.write(p.CONTROL+'/state.json',{'schema_version':1,'published_ids':[],'source_candidates':[]})
+        self.write(p.CONTROL+'/research_candidates.json',{'companies':[self.candidate]})
+        self.write(p.CATEGORY+'/기업목록_companies.json',{'entries':[]})
+
+    def write(self,path,value):
+        target=self.root/path
+        target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_text(json.dumps(value),encoding='utf-8')
+
+    def run_pipeline(self,*,research=None,proposals=None,fetch_error=None,limit=1):
+        kwargs={'side_effect':fetch_error} if fetch_error else {'return_value':{'text':'source'}}
+        with patch.object(p,'fetch',**kwargs),patch.object(p,'extract_candidates',return_value=[]), \
+             patch.object(p,'load_ready',return_value=[]),patch.object(p,'verify_reviewed_sources'), \
+             patch.object(p,'prepare_publications',return_value=[]) as prepare, \
+             patch.object(llm,'research',side_effect=research) as runner, \
+             patch.object(llm,'propose_candidates',return_value=proposals or ([],[])), \
+             patch.dict(os.environ,{'GITHUB_STEP_SUMMARY':str(self.output/'summary.md')}), \
+             contextlib.redirect_stdout(io.StringIO()),contextlib.redirect_stderr(io.StringIO()):
+            exit_code=p.main(['--root',str(self.root),'--output',str(self.output),
+                '--auto-research','--publish-ready','--limit',str(limit)])
+        result=json.loads((self.output/'result.json').read_text(encoding='utf-8'))
+        state=json.loads((self.output/p.CONTROL/'state.json').read_text(encoding='utf-8'))
+        manifest=json.loads((self.output/'manifest.json').read_text(encoding='utf-8'))
+        self.assertIn(p.CONTROL+'/state.json',manifest['paths'])
+        self.assertEqual(state['last_status'],result['status'])
+        return exit_code,result,state,runner,prepare
+
+    def test_all_candidates_in_cooldown_is_successful_state_only_run(self):
+        self.write(p.CONTROL+'/state.json',{'published_ids':[],'source_candidates':[],
+            'auto_attempts':{'Example':{'last_attempt_on':self.day,'status':'rejected'}}})
+        code,result,state,runner,prepare=self.run_pipeline()
+        self.assertEqual(code,0)
+        self.assertEqual(result['status'],'no_eligible_candidates')
+        self.assertEqual(result['publication_outcome'],'state_only')
+        self.assertEqual(result['attempted_analyses'],0)
+        runner.assert_not_called();prepare.assert_not_called()
+
+    def test_quality_rejection_keeps_audit_and_succeeds_without_article(self):
+        rejection=llm.ResearchRejected('Evidence quote missing',{'status':'rejected','stage':'evidence'})
+        code,result,state,runner,prepare=self.run_pipeline(research=rejection)
+        self.assertEqual(code,0)
+        self.assertEqual(result['status'],'no_publishable_analysis')
+        self.assertEqual(state['auto_attempts']['Example']['status'],'rejected')
+        self.assertTrue((self.output/'audits/Example.rejected.json').is_file())
+        self.assertEqual(result['prepared_analyses'],0)
+        prepare.assert_not_called()
+
+    def test_model_outage_is_failure_with_short_retry_and_no_article(self):
+        outage=RuntimeError('Local inference server unavailable')
+        outage.audit={'status':'runtime_error','stage':'generating'}
+        code,result,state,runner,prepare=self.run_pipeline(research=outage)
+        self.assertEqual(code,1)
+        self.assertEqual(result['status'],'operational_failure')
+        self.assertEqual(state['auto_attempts']['Example']['status'],'runtime_error')
+        self.assertTrue((self.output/'audits/Example.runtime_error.json').is_file())
+        prepare.assert_not_called()
+
+    def test_all_discovery_sources_down_is_failure_even_with_cached_candidates(self):
+        self.write(p.CONTROL+'/research_candidates.json',{'companies':[]})
+        self.write(p.CONTROL+'/state.json',{'source_candidates':[{
+            'url':'https://institution.example/old','title':'Old source'}]})
+        code,result,state,runner,prepare=self.run_pipeline(fetch_error=TimeoutError('source timeout'))
+        self.assertEqual(code,1)
+        self.assertEqual(result['status'],'discovery_failed')
+        self.assertEqual(result['successful_source_checks'],0)
+        self.assertEqual(result['prepared_analyses'],0)
+
+    def test_proposal_model_error_is_failure_not_content_rejection(self):
+        self.write(p.CONTROL+'/research_candidates.json',{'companies':[]})
+        code,result,*_=self.run_pipeline(proposals=([],[{'kind':'runtime_error','reason':'connection refused'}]))
+        self.assertEqual(code,1)
+        self.assertEqual(result['status'],'operational_failure')
+
+    def test_unexpected_research_bug_is_not_hidden(self):
+        code,result,state,*_=self.run_pipeline(research=KeyError('missing field'))
+        self.assertEqual(code,1)
+        self.assertEqual(result['status'],'operational_failure')
+        self.assertEqual(state['auto_attempts']['Example']['status'],'internal_error')
+
+    def test_only_accepted_records_are_prepared_when_another_is_rejected(self):
+        self.write(p.CONTROL+'/research_candidates.json',{'companies':[
+            self.candidate,{'id':'Accepted','company':'Accepted','sources':[]}]})
+        record={'id':'Accepted','company':'Accepted','sources':[]}
+        reject=llm.ResearchRejected('evidence missing',{'status':'rejected'})
+        code,result,state,runner,prepare=self.run_pipeline(limit=2,research=[reject,(record,{'status':'passed_model_review'})])
+        self.assertEqual(code,0)
+        self.assertEqual(result['prepared_analyses'],1)
+        self.assertEqual(result['attempted_analyses'],2)
+        self.assertEqual(result['publication_outcome'],'articles_prepared')
+        self.assertEqual(state['published_ids'],['Accepted'])
+        self.assertEqual(prepare.call_args.args[2],[record])
+
+    def test_transient_retry_is_next_day_while_quality_retry_waits_week(self):
+        yesterday=(datetime.strptime(self.day,'%Y-%m-%d')-timedelta(days=1)).strftime('%Y-%m-%d')
+        for status in ('runtime_error','source_unavailable','internal_error'):
+            self.assertTrue(p.retry_due({'last_attempt_on':yesterday,'status':status},self.day))
+            self.assertFalse(p.retry_due({'last_attempt_on':self.day,'status':status},self.day))
+        self.assertFalse(p.retry_due({'last_attempt_on':yesterday,'status':'rejected'},self.day))
+
+
+if __name__=='__main__':unittest.main()

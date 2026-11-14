@@ -1,10 +1,12 @@
 """Install checksum-pinned public CPU inference tools into the runner's temp folder."""
 import argparse
 import hashlib
+import http.client
 import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 import tarfile
 import time
 import urllib.error
@@ -17,6 +19,8 @@ MODEL_REVISION = 'bc640142c66e1fdd12af0bd68f40445458f3869b'
 MODEL_FILE = 'Qwen3-4B-Q4_K_M.gguf'
 MODEL_SHA256 = '7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5'
 MODEL_URL = f'https://huggingface.co/{MODEL_REPO}/resolve/{MODEL_REVISION}/{MODEL_FILE}'
+DOWNLOAD_ATTEMPTS = 3
+DOWNLOAD_RETRY_DELAYS = (2, 4)
 
 def digest(path):
     value=hashlib.sha256()
@@ -27,18 +31,36 @@ def digest(path):
 def download(url,target,expected,max_bytes):
     if target.exists() and digest(target)==expected:return
     temporary=target.with_suffix(target.suffix+'.part')
-    size=0
     req=urllib.request.Request(url,headers={'User-Agent':'engineering-notes-public-model/1.0'})
-    try:
-        with urllib.request.urlopen(req,timeout=90) as response,temporary.open('wb') as output:
-            while chunk:=response.read(8*1024*1024):
-                size+=len(chunk)
-                if size>max_bytes:raise ValueError('Download exceeded pinned artifact size budget')
-                output.write(chunk)
-        if digest(temporary)!=expected:raise ValueError('Artifact checksum mismatch')
-        temporary.replace(target)
-    finally:
-        if temporary.exists():temporary.unlink()
+    for attempt in range(DOWNLOAD_ATTEMPTS):
+        size=0
+        try:
+            with urllib.request.urlopen(req,timeout=90) as response,temporary.open('wb') as output:
+                length=response.headers.get('Content-Length')
+                declared_size=int(length) if length is not None else None
+                if declared_size is not None and (declared_size<0 or declared_size>max_bytes):
+                    raise ValueError('Download exceeded pinned artifact size budget')
+                while chunk:=response.read(8*1024*1024):
+                    size+=len(chunk)
+                    if size>max_bytes:raise ValueError('Download exceeded pinned artifact size budget')
+                    output.write(chunk)
+                if declared_size is not None and size<declared_size:
+                    # Bounded chunk reads may reach EOF without raising IncompleteRead.
+                    raise http.client.IncompleteRead(b'',declared_size-size)
+            if digest(temporary)!=expected:raise ValueError('Artifact checksum mismatch')
+            temporary.replace(target)
+            return
+        except (urllib.error.URLError,TimeoutError,ConnectionError,http.client.IncompleteRead) as exc:
+            if isinstance(exc,urllib.error.HTTPError) and not (exc.code==429 or 500<=exc.code<600):
+                raise
+            if attempt+1==DOWNLOAD_ATTEMPTS:raise
+            delay=DOWNLOAD_RETRY_DELAYS[attempt]
+            reason=f'HTTP {exc.code}' if isinstance(exc,urllib.error.HTTPError) else type(exc).__name__
+            # Avoid logging exception URLs: a download redirect may contain a signed query.
+            print(f'Artifact download failed temporarily ({reason}); retry {attempt+2}/{DOWNLOAD_ATTEMPTS} in {delay}s',file=sys.stderr)
+        finally:
+            if temporary.exists():temporary.unlink()
+        time.sleep(delay)
 
 def install(cache):
     cache.mkdir(parents=True,exist_ok=True)

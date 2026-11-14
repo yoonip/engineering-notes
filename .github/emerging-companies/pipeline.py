@@ -350,6 +350,14 @@ def is_duplicate(candidate,names,hosts):
     return bool(set(candidate_hosts)&hosts)
 
 
+def retry_due(attempt, day):
+    """Content rejection waits a week; transient execution failures wait a day."""
+    last=attempt.get('last_attempt_on')
+    if not last:return True
+    delay=1 if attempt.get('status') in {'runtime_error','source_unavailable','internal_error'} else 7
+    return (datetime.strptime(day,'%Y-%m-%d')-datetime.strptime(last,'%Y-%m-%d')).days>=delay
+
+
 def main(argv=None) -> int:
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root',type=Path,default=Path.cwd())
@@ -366,43 +374,44 @@ def main(argv=None) -> int:
     day=datetime.now(KST).strftime('%Y-%m-%d')
     candidates={row['url']:row for row in state.get('source_candidates',[])}
     source_errors=[]
+    source_successes=0
     new_count=0
     for source in config['sources']:
         try:
             doc=fetch(source['url'],set(source['allowed_hosts']))
             rows=extract_candidates(doc,source)
+            source_successes+=1
             for row in rows:
                 if row['url'] not in candidates:
                     candidates[row['url']]=dict(row,first_seen_on=day,last_seen_on=day)
                     new_count+=1
                 else: candidates[row['url']]['last_seen_on']=day
         except Exception as exc:
-            source_errors.append({'source':source['url'],'error':type(exc).__name__})
-    if not candidates and not args.auto_research:
-        write_json(output/'result.json',{'status':'discovery_failed','source_errors':source_errors,'published':0})
-        raise RuntimeError('No usable source candidates; see sanitized result artifact')
+            kind='source_unavailable' if isinstance(exc,(ValueError,OSError,ET.ParseError)) else 'internal_error'
+            source_errors.append({'source':source['url'],'error':type(exc).__name__,'kind':kind,'reason':str(exc)[:160]})
     existing_entries=json_load(root/CATEGORY/'기업목록_companies.json')['entries']
     known={r['id'].casefold() for r in existing_entries}
     known_names,known_hosts=identity_sets(existing_entries)
     records=load_ready(root,known,set(state.get('published_ids',[])),args.limit)
     verify_reviewed_sources(records)
     research_errors=[]
+    attempted=0
+    proposed=0
     if args.auto_research and len(records)<args.limit:
-        from llm_research import research,propose_candidates
+        from llm_research import research,propose_candidates,ResearchRejected
         registry=json_load(root/CONTROL/'research_candidates.json',{'companies':[]})
         attempts=state.setdefault('auto_attempts',{})
         def eligible(c):
             if c.get('id','').casefold() in known or is_duplicate(c,known_names,known_hosts):return False
-            last=attempts.get(c.get('id'),{}).get('last_attempt_on')
-            return not last or (datetime.strptime(day,'%Y-%m-%d')-datetime.strptime(last,'%Y-%m-%d')).days>=7
+            return retry_due(attempts.get(c.get('id'),{}),day)
         available=[c for c in registry['companies'] if eligible(c)]
         automatic=[]
         dynamic_added=False
-        attempted=0
         while len(automatic)+len(records)<args.limit and attempted<args.limit+2:
             if not available and not dynamic_added:
                 discovered=sorted(candidates.values(),key=lambda r:(r.get('first_seen_on',''),r['url']),reverse=True)
                 proposals,proposal_errors=propose_candidates(discovered,set(known)|{k.casefold() for k,v in attempts.items() if v.get('last_attempt_on')==day},limit=args.limit-len(records)-len(automatic))
+                proposed+=len(proposals)
                 available.extend(c for c in proposals if eligible(c))
                 research_errors.extend(proposal_errors)
                 dynamic_added=True
@@ -419,12 +428,26 @@ def main(argv=None) -> int:
                 attempts[candidate['id']]={'attempts':prior+1,'last_attempt_on':day,'status':'passed_model_review'}
                 write_json(output/'audits'/(record['id']+'.json'),audit)
             except Exception as exc:
-                attempts[candidate['id']]={'attempts':prior+1,'last_attempt_on':day,'status':'rejected','reason':str(exc)[:220]}
-                research_errors.append({'company_id':candidate.get('id'),'error':type(exc).__name__,'reason':str(exc)[:220]})
+                audit=getattr(exc,'audit',{}) or {}
+                kind=audit.get('status')
+                if kind not in {'runtime_error','source_unavailable'}:
+                    kind='rejected' if isinstance(exc,ResearchRejected) else 'internal_error'
+                attempts[candidate['id']]={'attempts':prior+1,'last_attempt_on':day,'status':kind,'reason':str(exc)[:220]}
+                research_errors.append({'company_id':candidate.get('id'),'error':type(exc).__name__,'kind':kind,'reason':str(exc)[:220]})
                 if getattr(exc,'audit',None):
-                    write_json(output/'audits'/(candidate['id']+'.rejected.json'),exc.audit)
+                    write_json(output/'audits'/(candidate['id']+'.'+kind+'.json'),exc.audit)
         records.extend(automatic)
-    status='ready_to_publish' if records else 'needs_review'
+    operational_errors=[e for e in source_errors+research_errors if e.get('kind') in {'runtime_error','internal_error'}]
+    if records:
+        status='ready_to_publish'
+    elif operational_errors:
+        status='operational_failure'
+    elif not source_successes:
+        status='discovery_failed'
+    elif attempted or research_errors:
+        status='no_publishable_analysis'
+    else:
+        status='no_eligible_candidates'
     paths=[]
     if records and args.publish_ready:
         paths=prepare_publications(root,output,records,day)
@@ -437,6 +460,8 @@ def main(argv=None) -> int:
     paths.append(CONTROL+'/state.json')
     result={'status':status,'new_source_candidates':new_count,'source_candidates':len(candidates),
             'reviewed_ready':len(records),'prepared_analyses':len(records) if args.publish_ready else 0,
+            'successful_source_checks':source_successes,'attempted_analyses':attempted,'proposed_candidates':proposed,
+            'publication_outcome':'articles_prepared' if records and args.publish_ready else 'state_only',
             'source_errors':source_errors,'research_errors':research_errors,'checked_on':day,
             'human_reviewed':False if args.auto_research else None,
             'limitation':'Local-model source-grounded analysis uses a separate model review, not human fact-checking or independent validation. Insufficient drafts are not published.' if args.auto_research else 'This keyless workflow discovers sources and publishes previously reviewed analyses. It does not generate or claim autonomous new research.'}
@@ -446,11 +471,11 @@ def main(argv=None) -> int:
     summary=os.environ.get('GITHUB_STEP_SUMMARY')
     if summary:
         with open(summary,'a',encoding='utf-8') as f:
-            f.write(f"## 신생기업 자료 확인\n\n- 상태: `{status}`\n- 새 원문 후보: {new_count}\n- 본문 준비: {result['prepared_analyses']}\n- 자동 분석 여부: {args.auto_research}\n\n{result['limitation']}\n")
+            f.write(f"## 신생기업 자료 확인\n\n- 상태: `{status}`\n- 확인한 원문 목록: {source_successes}\n- 새 원문 후보: {new_count}\n- 분석 시도: {attempted}\n- 본문 준비: {result['prepared_analyses']}\n- 결과물: `{result['publication_outcome']}`\n- 자동 분석 여부: {args.auto_research}\n\n{result['limitation']}\n")
     print(json.dumps({k:v for k,v in result.items() if k!='source_errors'},ensure_ascii=False))
-    if args.auto_research and not records:
-        print('No automatic draft passed the evidence and review gates',file=sys.stderr)
-        return 2
+    if status in {'operational_failure','discovery_failed'}:
+        print('Research could not complete; inspect source and runtime diagnostics',file=sys.stderr)
+        return 1
     return 0
 
 

@@ -45,16 +45,36 @@ jobs:
             .github/emerging-companies
             신생기업과기술사업_emerging-companies
       - name: 출처·중복·검사 경로 테스트
+        id: tests
         run: python3 -m unittest discover -s .github/emerging-companies -p 'test_*.py' -v
       - name: 해시를 고정한 공개 CPU 모델 기동
-        run: python3 .github/emerging-companies/prepare_runtime.py --cache-dir "$RUNNER_TEMP/company-runtime" --serve
+        id: runtime
+        shell: bash
+        run: |
+          mkdir -p research-output/runtime
+          python3 .github/emerging-companies/prepare_runtime.py --cache-dir "$RUNNER_TEMP/company-runtime" --serve 2>&1 | tee research-output/runtime/prepare.log
+      - name: 실제 모델 JSON 응답 확인
+        id: smoke
+        run: python3 .github/emerging-companies/smoke_runtime.py
       - name: 신규 원문 조사·생성·별도 자동 검토
+        id: pipeline
         run: python3 .github/emerging-companies/pipeline.py --root . --output research-output --auto-research --limit "$RESEARCH_LIMIT" --publish-ready
       - name: 결과·런타임 확인 정보 보존
         id: output_state
         if: always()
+        env:
+          TEST_OUTCOME: ${{ steps.tests.outcome }}
+          RUNTIME_OUTCOME: ${{ steps.runtime.outcome }}
+          SMOKE_OUTCOME: ${{ steps.smoke.outcome }}
+          PIPELINE_OUTCOME: ${{ steps.pipeline.outcome }}
         run: |
           mkdir -p research-output/runtime
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          outcomes = {key: os.environ.get(key, '') for key in ('TEST_OUTCOME', 'RUNTIME_OUTCOME', 'SMOKE_OUTCOME', 'PIPELINE_OUTCOME')}
+          Path('research-output/execution.json').write_text(json.dumps(outcomes, indent=2) + '\n', encoding='utf-8')
+          PY
           test ! -f "$RUNNER_TEMP/company-runtime/provenance.json" || cp "$RUNNER_TEMP/company-runtime/provenance.json" research-output/runtime/
           test ! -f "$RUNNER_TEMP/company-runtime/server.log" || tail -n 100 "$RUNNER_TEMP/company-runtime/server.log" > research-output/runtime/server-tail.log
           if test -f research-output/manifest.json; then
@@ -74,7 +94,7 @@ jobs:
 
   publish:
     needs: research
-    if: ${{ always() && needs.research.outputs.has_manifest == 'true' && (github.event_name == 'schedule' || inputs.publish == true) }}
+    if: ${{ always() && !cancelled() && needs.research.outputs.has_manifest == 'true' && (github.event_name == 'schedule' || inputs.publish == true) }}
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
