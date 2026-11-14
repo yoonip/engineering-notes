@@ -410,10 +410,11 @@
       "reason": "Fact explanation is too shallow"
     },
     "robust-ai": {
-      "attempts": 1,
+      "attempts": 2,
       "last_attempt_on": "2026-11-15",
       "status": "rejected",
-      "reason": "Source exceeds byte limit"
+      "reason": "Fact explanation is too shallow",
+      "source_byte_limit": 2000000
     }
   },
   "last_checked_on": "2026-11-15",
