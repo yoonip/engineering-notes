@@ -82,6 +82,26 @@ class RunOutcomeTests(unittest.TestCase):
         self.assertTrue((self.output/'audits/Example.runtime_error.json').is_file())
         prepare.assert_not_called()
 
+    def test_unusable_model_output_is_failure_and_not_quality_hold(self):
+        failure=RuntimeError('Model output has no usable Korean topic')
+        failure.audit={'status':'model_format_error','stage':'generating'}
+        code,result,state,runner,prepare=self.run_pipeline(research=failure)
+        self.assertEqual(code,1)
+        self.assertEqual(result['status'],'operational_failure')
+        self.assertEqual(result['execution_outcome'],'failed')
+        self.assertEqual(result['operational_error_count'],1)
+        self.assertEqual(state['auto_attempts']['Example']['status'],'model_format_error')
+        self.assertTrue((self.output/'audits/Example.model_format_error.json').is_file())
+        prepare.assert_not_called()
+
+    def test_all_proposal_format_errors_are_not_successful_empty_run(self):
+        self.write(p.CONTROL+'/research_candidates.json',{'companies':[]})
+        code,result,*_=self.run_pipeline(proposals=([],[{
+            'kind':'model_format_error','stage':'validating_proposal','reason':'invalid topic'}]))
+        self.assertEqual(code,1)
+        self.assertEqual(result['status'],'operational_failure')
+        self.assertEqual(result['operational_error_count'],1)
+
     def test_all_discovery_sources_down_is_failure_even_with_cached_candidates(self):
         self.write(p.CONTROL+'/research_candidates.json',{'companies':[]})
         self.write(p.CONTROL+'/state.json',{'source_candidates':[{
@@ -117,9 +137,26 @@ class RunOutcomeTests(unittest.TestCase):
         self.assertEqual(state['published_ids'],['Accepted'])
         self.assertEqual(prepare.call_args.args[2],[record])
 
+    def test_accepted_article_with_other_model_failure_is_explicit_partial_success(self):
+        self.write(p.CONTROL+'/research_candidates.json',{'companies':[
+            self.candidate,{'id':'Accepted','company':'Accepted','sources':[]}]})
+        record={'id':'Accepted','company':'Accepted','sources':[]}
+        failure=RuntimeError('Malformed model output')
+        failure.audit={'status':'model_format_error','stage':'generating'}
+        code,result,state,runner,prepare=self.run_pipeline(limit=2,research=[failure,(record,{'status':'passed_model_review'})])
+        self.assertEqual(code,0)
+        self.assertEqual(result['prepared_analyses'],1)
+        self.assertEqual(result['operational_error_count'],1)
+        self.assertEqual(result['execution_outcome'],'partial_success')
+        self.assertEqual(state['last_execution_outcome'],'partial_success')
+        self.assertEqual(state['last_operational_error_count'],1)
+        self.assertEqual(state['published_ids'],['Accepted'])
+        self.assertEqual(prepare.call_args.args[2],[record])
+        self.assertIn('실행 오류: 1건',(self.output/'summary.md').read_text(encoding='utf-8'))
+
     def test_transient_retry_is_next_day_while_quality_retry_waits_week(self):
         yesterday=(datetime.strptime(self.day,'%Y-%m-%d')-timedelta(days=1)).strftime('%Y-%m-%d')
-        for status in ('runtime_error','source_unavailable','internal_error'):
+        for status in ('runtime_error','model_format_error','source_unavailable','internal_error'):
             self.assertTrue(p.retry_due({'last_attempt_on':yesterday,'status':status},self.day))
             self.assertFalse(p.retry_due({'last_attempt_on':self.day,'status':status},self.day))
         self.assertFalse(p.retry_due({'last_attempt_on':yesterday,'status':'rejected'},self.day))

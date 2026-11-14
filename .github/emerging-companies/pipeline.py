@@ -354,7 +354,7 @@ def retry_due(attempt, day):
     """Content rejection waits a week; transient execution failures wait a day."""
     last=attempt.get('last_attempt_on')
     if not last:return True
-    delay=1 if attempt.get('status') in {'runtime_error','source_unavailable','internal_error'} else 7
+    delay=1 if attempt.get('status') in {'runtime_error','model_format_error','source_unavailable','internal_error'} else 7
     return (datetime.strptime(day,'%Y-%m-%d')-datetime.strptime(last,'%Y-%m-%d')).days>=delay
 
 
@@ -430,14 +430,14 @@ def main(argv=None) -> int:
             except Exception as exc:
                 audit=getattr(exc,'audit',{}) or {}
                 kind=audit.get('status')
-                if kind not in {'runtime_error','source_unavailable'}:
+                if kind not in {'runtime_error','model_format_error','source_unavailable'}:
                     kind='rejected' if isinstance(exc,ResearchRejected) else 'internal_error'
                 attempts[candidate['id']]={'attempts':prior+1,'last_attempt_on':day,'status':kind,'reason':str(exc)[:220]}
                 research_errors.append({'company_id':candidate.get('id'),'error':type(exc).__name__,'kind':kind,'reason':str(exc)[:220]})
                 if getattr(exc,'audit',None):
                     write_json(output/'audits'/(candidate['id']+'.'+kind+'.json'),exc.audit)
         records.extend(automatic)
-    operational_errors=[e for e in source_errors+research_errors if e.get('kind') in {'runtime_error','internal_error'}]
+    operational_errors=[e for e in source_errors+research_errors if e.get('kind') in {'runtime_error','model_format_error','internal_error'}]
     if records:
         status='ready_to_publish'
     elif operational_errors:
@@ -453,14 +453,19 @@ def main(argv=None) -> int:
         paths=prepare_publications(root,output,records,day)
         state['published_ids']=sorted(set(state.get('published_ids',[]))|{r['id'] for r in records})
         status='prepared_reviewed_publications'
+    execution_outcome=('partial_success' if records and operational_errors else
+                       'failed' if status in {'operational_failure','discovery_failed'} else 'completed')
     state['source_candidates']=sorted(candidates.values(),key=lambda r:(r.get('last_seen_on',''),r['url']),reverse=True)[:MAX_CANDIDATES]
     state['last_checked_on']=day
     state['last_status']=status
+    state['last_execution_outcome']=execution_outcome
+    state['last_operational_error_count']=len(operational_errors)
     write_json(output/CONTROL/'state.json',state)
     paths.append(CONTROL+'/state.json')
     result={'status':status,'new_source_candidates':new_count,'source_candidates':len(candidates),
             'reviewed_ready':len(records),'prepared_analyses':len(records) if args.publish_ready else 0,
             'successful_source_checks':source_successes,'attempted_analyses':attempted,'proposed_candidates':proposed,
+            'execution_outcome':execution_outcome,'operational_error_count':len(operational_errors),
             'publication_outcome':'articles_prepared' if records and args.publish_ready else 'state_only',
             'source_errors':source_errors,'research_errors':research_errors,'checked_on':day,
             'human_reviewed':False if args.auto_research else None,
@@ -471,7 +476,7 @@ def main(argv=None) -> int:
     summary=os.environ.get('GITHUB_STEP_SUMMARY')
     if summary:
         with open(summary,'a',encoding='utf-8') as f:
-            f.write(f"## 신생기업 자료 확인\n\n- 상태: `{status}`\n- 확인한 원문 목록: {source_successes}\n- 새 원문 후보: {new_count}\n- 분석 시도: {attempted}\n- 본문 준비: {result['prepared_analyses']}\n- 결과물: `{result['publication_outcome']}`\n- 자동 분석 여부: {args.auto_research}\n\n{result['limitation']}\n")
+            f.write(f"## 신생기업 자료 확인\n\n- 상태: `{status}`\n- 실행 결과: `{execution_outcome}`\n- 실행 오류: {len(operational_errors)}건\n- 확인한 원문 목록: {source_successes}\n- 새 원문 후보: {new_count}\n- 분석 시도: {attempted}\n- 본문 준비: {result['prepared_analyses']}\n- 결과물: `{result['publication_outcome']}`\n- 자동 분석 여부: {args.auto_research}\n\n{result['limitation']}\n")
     print(json.dumps({k:v for k,v in result.items() if k!='source_errors'},ensure_ascii=False))
     if status in {'operational_failure','discovery_failed'}:
         print('Research could not complete; inspect source and runtime diagnostics',file=sys.stderr)

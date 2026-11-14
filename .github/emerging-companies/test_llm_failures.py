@@ -1,6 +1,9 @@
 """Regression checks for proposal filenames and source/model failure outcomes."""
 import copy
+import io
+import json
 import os
+import re
 import unittest
 from unittest.mock import Mock, patch
 
@@ -40,14 +43,20 @@ class ProposalRegressionTests(unittest.TestCase):
                 self.assertEqual(rows[0]['sources'][1]['url'],self.homepage)
                 self.assertEqual(rows[0]['allowed_hosts'],['institution.example','robot.example'])
 
-    def test_invented_url_path_and_english_topic_stay_rejected(self):
-        for changed in ({'homepage_url':'https://invented.example/'},{'topic':'센서/설계'},{'topic':'robot-automation'}):
+    def test_unlinked_url_and_invalid_model_fields_have_distinct_outcomes(self):
+        cases=(({'homepage_url':'https://invented.example/'},'proposal_rejected'),
+               ({'topic':'센서/설계'},'model_format_error'),
+               ({'topic':'robot collaboration in manufacturing'},'model_format_error'),
+               ({'id':'Example Robot'},'model_format_error'),
+               ({'sector':[]},'model_format_error'),
+               ({'sector':'robotics'},'model_format_error'))
+        for changed,kind in cases:
             with self.subTest(changed=changed):
                 proposal=dict(self.proposal,**changed)
                 rows,errors=llm.propose_candidates(self.discovered,set(),fetcher=self.source_fetch,completion=Mock(return_value=proposal),limit=1)
                 self.assertEqual(rows,[])
                 self.assertEqual(len(errors),1)
-                self.assertEqual(errors[0]['kind'],'proposal_rejected')
+                self.assertEqual(errors[0]['kind'],kind)
                 self.assertEqual(errors[0]['stage'],'validating_proposal')
 
     def test_proposal_source_and_model_timeouts_keep_distinct_stages(self):
@@ -71,6 +80,37 @@ class ProposalRegressionTests(unittest.TestCase):
         self.assertEqual((errors[0]['kind'],errors[0]['stage']),('internal_error','fetching_source'))
         fetcher.assert_not_called()
         completion.assert_not_called()
+
+
+class LocalCompletionContractTests(unittest.TestCase):
+    endpoint='http://127.0.0.1:8080/v1/chat/completions'
+
+    def test_malformed_envelope_invalid_json_and_truncation_are_model_output_errors(self):
+        cases=(b'not JSON',b'{"choices":[]}',
+               json.dumps({'choices':[{'message':{'content':'{"invalid":'},'finish_reason':'stop'}]}).encode(),
+               json.dumps({'choices':[{'message':{'content':'{}'},'finish_reason':'length'}]}).encode())
+        for raw in cases:
+            with self.subTest(raw=raw),patch.object(llm,'urlopen',return_value=io.BytesIO(raw)):
+                with self.assertRaises(llm.ModelOutputError):
+                    llm.local_completion('한국어 JSON을 반환합니다.',{},llm.PROPOSAL_SCHEMA,endpoint=self.endpoint)
+
+    def test_serialized_proposal_contract_blocks_observed_english_title(self):
+        proposal={'is_company_candidate':True,'id':'Example-Robot','company':'Example Robot',
+                  'topic':'로봇 작업 자동화','sector':'로봇','homepage_url':'https://robot.example/'}
+        raw=json.dumps({'choices':[{'message':{'content':json.dumps(proposal,ensure_ascii=False)},'finish_reason':'stop'}]}).encode()
+        with patch.object(llm,'urlopen',return_value=io.BytesIO(raw)) as request:
+            result=llm.local_completion('한국어 JSON을 반환합니다.',{'source_text':'Untrusted source text'},llm.PROPOSAL_SCHEMA,endpoint=self.endpoint)
+        self.assertEqual(result,proposal)
+        sent=request.call_args.args[0]
+        self.assertEqual(sent.full_url,self.endpoint)
+        body=json.loads(sent.data)
+        schema=body['response_format']['json_schema']['schema']
+        topic_pattern=schema['properties']['topic']['pattern']
+        self.assertIsNotNone(re.fullmatch(topic_pattern,proposal['topic']))
+        self.assertIsNone(re.fullmatch(topic_pattern,'robot collaboration in manufacturing'))
+        self.assertIsNone(re.fullmatch(schema['properties']['id']['pattern'],'Example Robot'))
+        self.assertFalse(body['chat_template_kwargs']['enable_thinking'])
+        self.assertTrue(body['messages'][0]['content'].endswith('/no_think'))
 
 
 class ResearchFailureTests(unittest.TestCase):
@@ -115,6 +155,33 @@ class ResearchFailureTests(unittest.TestCase):
         self.assertEqual(caught.exception.audit['status'],'source_unavailable')
         self.assertEqual(caught.exception.audit['stage'],'fetching_sources')
         completion.assert_not_called()
+
+    def test_generation_and_review_format_failures_are_not_content_rejections(self):
+        for stage,outputs in (('generating',[llm.ModelOutputError('Invalid structured model response envelope')]),
+                              ('second_model_review',[self.draft,llm.ModelOutputError('Model returned invalid JSON')])):
+            with self.subTest(stage=stage),patch.object(llm,'render') as render:
+                with self.assertRaises(llm.ResearchUnavailable) as caught:
+                    llm.research(self.candidate,fetcher=self.source_fetch,completion=Mock(side_effect=outputs),checked_on='2026-11-15')
+                self.assertEqual(caught.exception.audit['status'],'model_format_error')
+                self.assertEqual(caught.exception.audit['stage'],stage)
+                render.assert_not_called()
+
+    def test_english_prose_wrong_field_type_and_missing_keys_are_format_errors(self):
+        english=copy.deepcopy(self.draft)
+        english['summary']='Robot collaboration in manufacturing.'
+        wrong_type=copy.deepcopy(self.draft)
+        wrong_type['facts'][0]['label']=42
+        missing_key=copy.deepcopy(self.draft)
+        del missing_key['business_analysis']
+        for draft in (english,wrong_type,missing_key):
+            with self.subTest(draft=draft),patch.object(llm,'render') as render:
+                completion=Mock(return_value=draft)
+                with self.assertRaises(llm.ResearchUnavailable) as caught:
+                    llm.research(self.candidate,fetcher=self.source_fetch,completion=completion,checked_on='2026-11-15')
+                self.assertEqual(caught.exception.audit['status'],'model_format_error')
+                self.assertEqual(caught.exception.audit['stage'],'deterministic_evidence_checks')
+                completion.assert_called_once()
+                render.assert_not_called()
 
     def test_evidence_mismatch_remains_rejected_without_article(self):
         draft=copy.deepcopy(self.draft)
