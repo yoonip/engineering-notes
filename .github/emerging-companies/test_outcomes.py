@@ -40,7 +40,7 @@ class RunOutcomeTests(unittest.TestCase):
              patch.object(p,'load_ready',return_value=[]),patch.object(p,'verify_reviewed_sources'), \
              patch.object(p,'prepare_publications',return_value=[]) as prepare, \
              patch.object(llm,'research',side_effect=research) as runner, \
-             patch.object(llm,'propose_candidates',return_value=proposals or ([],[])), \
+             patch.object(llm,'propose_candidates',return_value=proposals or ([],[])) as proposer, \
              patch.dict(os.environ,{'GITHUB_STEP_SUMMARY':str(self.output/'summary.md')}), \
              contextlib.redirect_stdout(io.StringIO()),contextlib.redirect_stderr(io.StringIO()):
             exit_code=p.main(['--root',str(self.root),'--output',str(self.output),
@@ -48,6 +48,7 @@ class RunOutcomeTests(unittest.TestCase):
         result=json.loads((self.output/'result.json').read_text(encoding='utf-8'))
         state=json.loads((self.output/p.CONTROL/'state.json').read_text(encoding='utf-8'))
         manifest=json.loads((self.output/'manifest.json').read_text(encoding='utf-8'))
+        self.proposer=proposer
         self.assertIn(p.CONTROL+'/state.json',manifest['paths'])
         self.assertEqual(state['last_status'],result['status'])
         return exit_code,result,state,runner,prepare
@@ -160,6 +161,65 @@ class RunOutcomeTests(unittest.TestCase):
             self.assertTrue(p.retry_due({'last_attempt_on':yesterday,'status':status},self.day))
             self.assertFalse(p.retry_due({'last_attempt_on':self.day,'status':status},self.day))
         self.assertFalse(p.retry_due({'last_attempt_on':yesterday,'status':'rejected'},self.day))
+
+    def test_old_size_limit_rejection_retries_same_day_after_cap_change(self):
+        attempt={'last_attempt_on':self.day,'status':'rejected','reason':'Source exceeds byte limit'}
+        with patch.object(p,'MAX_BYTES',2_000_000):
+            # Legacy entries without a recorded limit were checked under one megabyte.
+            self.assertTrue(p.retry_due(attempt,self.day))
+            self.assertTrue(p.retry_due(dict(attempt,source_byte_limit=1_000_000),self.day))
+
+    def test_size_rejection_under_current_cap_does_not_retry_same_day(self):
+        with patch.object(p,'MAX_BYTES',2_000_000):
+            attempt={'last_attempt_on':self.day,'status':'source_unavailable',
+                     'reason':'Source exceeds byte limit','source_byte_limit':2_000_000}
+            self.assertFalse(p.retry_due(attempt,self.day))
+            # Reducing the cap also does not make the same document newly eligible.
+            self.assertFalse(p.retry_due(dict(attempt,source_byte_limit=3_000_000),self.day))
+
+    def test_cap_change_does_not_bypass_other_quality_rejection(self):
+        with patch.object(p,'MAX_BYTES',2_000_000):
+            for reason in ('Evidence quote missing','Second model pass rejected the draft',
+                           'Source exceeds byte limit and evidence is missing'):
+                attempt={'last_attempt_on':self.day,'status':'rejected',
+                         'reason':reason,'source_byte_limit':1_000_000}
+                with self.subTest(reason=reason):self.assertFalse(p.retry_due(attempt,self.day))
+
+    def test_source_limit_failure_retains_audit_and_current_limit_for_short_retry(self):
+        failure=llm.ResearchRejected('Source exceeds byte limit',{
+            'status':'source_unavailable','stage':'fetching_sources','reason':'Source exceeds byte limit'})
+        with patch.object(p,'MAX_BYTES',2_000_000):
+            code,result,state,runner,prepare=self.run_pipeline(research=failure)
+            self.assertEqual(code,0)
+            self.assertEqual(result['status'],'no_publishable_analysis')
+            attempt=state['auto_attempts']['Example']
+            self.assertEqual(attempt['status'],'source_unavailable')
+            self.assertEqual(attempt['source_byte_limit'],2_000_000)
+            self.assertFalse(p.retry_due(attempt,self.day))
+            tomorrow=(datetime.strptime(self.day,'%Y-%m-%d')+timedelta(days=1)).strftime('%Y-%m-%d')
+            self.assertTrue(p.retry_due(attempt,tomorrow))
+        audit=json.loads((self.output/'audits/Example.source_unavailable.json').read_text(encoding='utf-8'))
+        self.assertEqual(audit,failure.audit)
+        self.assertEqual(result['prepared_analyses'],0)
+        prepare.assert_not_called()
+
+    def test_dynamic_proposal_exclusion_uses_current_retry_policy(self):
+        self.write(p.CONTROL+'/research_candidates.json',{'companies':[]})
+        self.write(p.CONTROL+'/state.json',{'published_ids':[],'source_candidates':[],
+            'auto_attempts':{
+                'OldSize':{'last_attempt_on':self.day,'status':'rejected',
+                           'reason':'Source exceeds byte limit','source_byte_limit':1_000_000},
+                'CurrentSize':{'last_attempt_on':self.day,'status':'source_unavailable',
+                               'reason':'Source exceeds byte limit','source_byte_limit':2_000_000},
+                'Quality':{'last_attempt_on':self.day,'status':'rejected','reason':'Evidence quote missing'}}})
+        with patch.object(p,'MAX_BYTES',2_000_000):
+            code,result,*_=self.run_pipeline()
+        self.assertEqual(code,0)
+        self.proposer.assert_called_once()
+        excluded=self.proposer.call_args.args[1]
+        self.assertNotIn('oldsize',excluded)
+        self.assertIn('currentsize',excluded)
+        self.assertIn('quality',excluded)
 
 
 if __name__=='__main__':unittest.main()

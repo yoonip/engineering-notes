@@ -25,7 +25,7 @@ import xml.etree.ElementTree as ET
 
 CATEGORY = '신생기업과기술사업_emerging-companies'
 CONTROL = '.github/emerging-companies'
-MAX_BYTES = 1_000_000
+MAX_BYTES = 2_000_000
 MAX_CANDIDATES = 1000
 KST = timezone(timedelta(hours=9))
 USER_AGENT = 'engineering-notes-primary-source-research/1.0'
@@ -352,6 +352,9 @@ def is_duplicate(candidate,names,hosts):
 
 def retry_due(attempt, day):
     """Content rejection waits a week; transient execution failures wait a day."""
+    if attempt.get('reason')=='Source exceeds byte limit' and MAX_BYTES>attempt.get('source_byte_limit',1_000_000):
+        # A size-only rejection under the old bound may be readable after a policy change.
+        return True
     last=attempt.get('last_attempt_on')
     if not last:return True
     delay=1 if attempt.get('status') in {'runtime_error','model_format_error','source_unavailable','internal_error'} else 7
@@ -410,7 +413,7 @@ def main(argv=None) -> int:
         while len(automatic)+len(records)<args.limit and attempted<args.limit+2:
             if not available and not dynamic_added:
                 discovered=sorted(candidates.values(),key=lambda r:(r.get('first_seen_on',''),r['url']),reverse=True)
-                proposals,proposal_errors=propose_candidates(discovered,set(known)|{k.casefold() for k,v in attempts.items() if v.get('last_attempt_on')==day},limit=args.limit-len(records)-len(automatic))
+                proposals,proposal_errors=propose_candidates(discovered,set(known)|{k.casefold() for k,v in attempts.items() if not retry_due(v,day)},limit=args.limit-len(records)-len(automatic))
                 proposed+=len(proposals)
                 available.extend(c for c in proposals if eligible(c))
                 research_errors.extend(proposal_errors)
@@ -432,7 +435,8 @@ def main(argv=None) -> int:
                 kind=audit.get('status')
                 if kind not in {'runtime_error','model_format_error','source_unavailable'}:
                     kind='rejected' if isinstance(exc,ResearchRejected) else 'internal_error'
-                attempts[candidate['id']]={'attempts':prior+1,'last_attempt_on':day,'status':kind,'reason':str(exc)[:220]}
+                attempts[candidate['id']]={'attempts':prior+1,'last_attempt_on':day,'status':kind,'reason':str(exc)[:220],
+                                           'source_byte_limit':MAX_BYTES}
                 research_errors.append({'company_id':candidate.get('id'),'error':type(exc).__name__,'kind':kind,'reason':str(exc)[:220]})
                 if getattr(exc,'audit',None):
                     write_json(output/'audits'/(candidate['id']+'.'+kind+'.json'),exc.audit)

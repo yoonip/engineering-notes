@@ -273,7 +273,10 @@ def research(candidate, *, fetcher=fetch, completion=local_completion, checked_o
         audit['reason']=str(exc)[:400]
         raise ResearchUnavailable(str(exc),audit) from None
     except ValueError as exc:
-        audit['status']='rejected'
+        source_limits={'Source exceeds byte limit','Primary source has insufficient readable text',
+                       'Unsupported source content type','robots.txt disallows this source',
+                       'robots.txt could not be checked','Redirect target robots.txt disallows collection'}
+        audit['status']='source_unavailable' if audit['stage']=='fetching_sources' and str(exc) in source_limits else 'rejected'
         audit['reason']=str(exc)[:400]
         raise ResearchRejected(str(exc),audit) from None
     except Exception as exc:

@@ -156,6 +156,18 @@ class ResearchFailureTests(unittest.TestCase):
         self.assertEqual(caught.exception.audit['stage'],'fetching_sources')
         completion.assert_not_called()
 
+    def test_source_budget_and_collection_policy_are_not_draft_quality_rejections(self):
+        for reason in ('Source exceeds byte limit','Primary source has insufficient readable text',
+                       'Unsupported source content type','robots.txt disallows this source'):
+            with self.subTest(reason=reason):
+                completion=Mock()
+                with self.assertRaises(llm.ResearchRejected) as caught:
+                    llm.research(self.candidate,fetcher=Mock(side_effect=ValueError(reason)),completion=completion,checked_on='2026-11-15')
+                self.assertEqual(caught.exception.audit['status'],'source_unavailable')
+                self.assertEqual(caught.exception.audit['stage'],'fetching_sources')
+                self.assertEqual(caught.exception.audit['reason'],reason)
+                completion.assert_not_called()
+
     def test_generation_and_review_format_failures_are_not_content_rejections(self):
         for stage,outputs in (('generating',[llm.ModelOutputError('Invalid structured model response envelope')]),
                               ('second_model_review',[self.draft,llm.ModelOutputError('Model returned invalid JSON')])):
