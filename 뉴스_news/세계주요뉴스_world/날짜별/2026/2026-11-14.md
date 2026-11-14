@@ -1,14 +1,32 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-14 12:16 KST
+갱신: 2026-11-14 19:39 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 정부가 백신 안믿더니…美, 26년만에 홍역 청정국 지위 상실
+
+> 꾸준한 예방 접종으로 오랫동안 홍역 감염 관리에 성공한 미국이 최근 수천 명의 환자가 발생하며 26년만에 '홍...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261114045400009>) · 2026-11-14 19:24 KST · 작성·제공: 오수진
 
 ## 로이터 "'엔비디아칩 의존' 中 AI프로젝트 규모 4조6천억 이상"
 
 > 젠슨 황 엔비디아 전 최고경영자\(CEO\)의 사임으로 대중국 반도체 수출 규제의 향방에 관심이 쏠리는 가운데...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261114026400089>) · 2026-11-14 10:48 KST · 작성·제공: 차병섭
+
+## "트럼프, AI 반도체 수출통제 풀며 엔비디아 주식 샀다"
+
+> 도널드 트럼프 미국 대통령이 첨단 인공지능\(AI\) 반도체에 대한 수출통제를 완화하면서 직접 수혜를 보는 AI ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261114040400009>) · 2026-11-14 17:29 KST · 작성·제공: 오수진
+
+## 젤렌스키 "美, '우크라 나토 가입 대가' 돈바스 양도안 질의"
+
+> 미국이 중재하는 러시아와 우크라이나 종전 협상에서 우크라이나의 북대서양조약기구\(NATO·나토\) 가입 대가로 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261114045200109>) · 2026-11-14 19:09 KST · 작성·제공: 민경락
 
 ## "日 차기 5년간 방위비 60조엔으로 축소 조율…대규모 증세 부담"
 
@@ -82,6 +100,16 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8223343.html>) · 2026-11-14 00:48 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
+## 규제 풀기 직전 엔비디아 주식 매입…'이해충돌 논란' 휩싸인 트럼프
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008845990&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-14 17:45 KST · 작성·제공: so5what@sbs.co.kr \(심영구\)
+
+## 트럼프, AI칩 中 수출규제 풀기 직전 엔비디아 ‘풀매수’
+
+> 도널드 트럼프 미국 대통령이 첨단 인공지능\(AI\) 반도체 수출통제를 완화하면서 직접 수혜를 보는 엔비디아 주식 수백만 달러 치를 사들였다는 의혹이 제기됐다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261114/135024388/1>) · 2026-11-14 18:11 KST
+
 ## "'골든' 아직도 차트에?"…영국서 73주째 톱100 장기 흥행
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008845812&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-14 10:45 KST · 작성·제공: so5what@sbs.co.kr \(심영구\)
@@ -120,10 +148,15 @@
 
 - [Africa: Dakar 2026 Youth Olympic Games - After The Historic Achievement, The Challenge of a Lasting Legacy for Africa](<https://allafrica.com/stories/202611130334.html>) · AllAfrica · allAfrica.com
 - [Gold smuggled from war zones entered the UAE despite new regulations, report says](<https://abcnews.com/International/wireStory/gold-smuggled-war-zones-entered-uae-despite-new-138117227>) · ABC News 미국
+- [Southeast Asian leaders will call for peaceful resolutions of conflicts. Trump will join final talks](<https://abcnews.com/International/wireStory/southeast-asian-leaders-call-peaceful-resolutions-conflicts-trump-138136538>) · ABC News 미국
 - [Congo-Kinshasa: DR Congo Ebola Outbreak - Armed Groups Unrest Hold Back Response](<https://allafrica.com/stories/202611130262.html>) · AllAfrica · allAfrica.com
 - [Renewed hope among migrants despite little chance of reaching US border](<https://www.csmonitor.com/World/Americas/2026/1113/caravans-southern-border-us-mexico-trump-sheinbaum?icid=rss>) · The Christian Science Monitor
+- [Pope's visit to hub of Afro-Peruvian community casts spotlight on African slave trade to Peru](<https://abcnews.com/International/wireStory/popes-visit-hub-afro-peruvian-community-casts-spotlight-138137149>) · ABC News 미국
 - [Wife of jailed ex-leader of Northern Ireland's largest pro-UK party put on sex offenders register](<https://abcnews.com/International/wireStory/wife-jailed-leader-northern-irelands-largest-pro-uk-138107487>) · ABC News 미국
+- [Judo star Teddy Riner is taking on what may be his toughest battle in the French presidential race](<https://abcnews.com/International/wireStory/judo-star-teddy-riner-taking-toughest-battle-french-138136080>) · ABC News 미국
 - [What's Trump's strategy now with Iran? To keep things as they are](<https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are>) · NPR
+- [Mozambique: Government Calls for Sustainable Financing to Expand Power Infrastructure](<https://allafrica.com/stories/202611130487.html>) · AllAfrica · allAfrica.com
+- [Mozambique: Prime Minister Calls for Modernisation of Dredging Company](<https://allafrica.com/stories/202611130486.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
