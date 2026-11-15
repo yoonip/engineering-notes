@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-15 10:56 KST
+갱신: 2026-11-15 18:27 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -64,11 +64,39 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115000900071>) · 2026-11-15 01:40 KST · 작성·제공: 박성민
 
+## 홍콩 디즈니랜드 전자입장권 1만7천장 도난…온라인 예매 중단
+
+> 홍콩 디즈니랜드의 온라인 예매 시스템에서 전자입장권 QR코드 약 1만7천개가 탈취되는 사건이 발생해 입장권...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115044100083>) · 2026-11-15 17:56 KST · 작성·제공: 한종구
+
+## 트럼프 '궤멸' 주장에도…美, 이란 미사일 보유량 2천500기 추정
+
+> 미국 정보당국은 이란이 여전히 최대 2천500기의 미사일을 보유하고 있는 것으로 추산한다고 월스트리트저널\(WS...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115042800009>) · 2026-11-15 17:51 KST · 작성·제공: 김승욱
+
+## 마이크 켜진 줄 모르고…호주 총리, 또 성적 농담 논란
+
+> 앤서니 앨버니지 호주 총리가 국제 행사장에서 마이크가 켜진 줄 모르고 자국 장관과 저속한 농담을 나눈 사...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115041300104>) · 2026-11-15 17:18 KST · 작성·제공: 손현규
+
 ## 트럼프, 필리핀·중국 순방...당국자 “미북 정상회담 계획 없어”
 
 > 도널드 트럼프 대통령이 17일부터 19일까지 필리핀과 중국에서 열리는 주요 다자 정상회의에 참석해 아시아 지역 동맹국과 협력국들과의 관계 강화에 나섭니다.
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8223717.html>) · 2026-11-15 05:25 KST · 작성·제공: voadigital@voanews.com \(조은정\)
+
+## "나는 쓰레기" 젠슨 황, 공작에 당했다?…"치밀하고 다층적"
+
+> 전 세계를 강타한 젠슨 황 엔비디아 최고경영자의 추문은 미국 최상위층을 노린 중국의 획기적 첩보활동일지 모른다는 분석이 나왔습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846590&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-15 18:19 KST · 작성·제공: sha@sbs.co.kr \(손형안\)
+
+## 미국 '공항 대란' 만든 원인 나왔다…"고장난 것 아냐"
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846708&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-15 18:20 KST · 작성·제공: wisdomwish@sbs.co.kr \(차지환 에디터\)
 
 ## 19일 미중러 정상회담…"트럼프-김정은 회담 예정 없어"
 
@@ -82,6 +110,24 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846002&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-14 22:54 KST · 작성·제공: bn@sbs.co.kr \(전병남\)
 
+## 아세안 정상회의 마닐라서 개막…트럼프 17일부터 정상외교
+
+> 동남아시아국가연합, 아세안 정상회의가 15일 필리핀 마닐라에서 개막했습니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8223826.html>) · 2026-11-15 11:35 KST · 작성·제공: voadigital@voanews.com \(조은정\)
+
+## 파키스탄군 “아프간 접경서 무장대원 16명 사살”
+
+> 파키스탄군이 아프가니스탄과 맞닿은 북서부 북와지리스탄에서 무장단체 대원 16명을 사살했다고 밝혔다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261115/135027837/1>) · 2026-11-15 18:13 KST
+
+## 북한 전직 고위관리 “해외 인력파견, 원가 들지 않아 외화벌이 수단으로 선호”
+
+> 북한 노동당 39호실 산하기관 고위 관리였던 리정호 코리아번영센터 대표는 북한 당국이 노동자 해외파견을 외화벌이 수단으로 선호하는 이유로 원가가 들지 않고 그 자체로 돈이 되기 때문이라고…
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/15/north-korea-labor-exports-easy-source-of-cash/>) · 2026-11-15 12:00 KST · 작성·제공: 서울-김지은 nk@rfa.org
+
 ## 머스크, 젠슨 황 복귀 청원 동참…8만명 넘게 서명
 
 > 일론 머스크 테슬라 최고경영자\(CEO\)가 14일\(현지시간\) 중국 스파이로 지목된 여성과의 불륜으로 자리에서 물러난 젠슨 황 전 엔비디아 CEO의 복귀 청원에 대한 서명을 촉구했다.
@@ -91,8 +137,10 @@
 ## 다른 매체의 원문
 
 - [French-speaking nations hold a summit in Cambodia as a conflict in Africa threatens a rift](<https://abcnews.com/International/wireStory/french-speaking-nations-hold-summit-cambodia-african-conflict-138135244>) · ABC News 미국
+- [Southeast Asian leaders open annual summit with major conflicts and their impact topping the agenda](<https://abcnews.com/International/wireStory/southeast-asian-leaders-open-annual-summit-major-conflicts-138153824>) · ABC News 미국
 - [Fuel crisis and protests pressure Chile's far-right president](<https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students>) · NPR
 - [Zelenskyy says a new European security framework floated by US could benefit Putin](<https://abcnews.com/International/wireStory/zelenskyy-new-european-security-framework-floated-us-benefit-138138301>) · ABC News 미국
+- [Ebola outbreak remains out of control in Congo 6 months into response](<https://abcnews.com/International/wireStory/ebola-outbreak-remains-control-congo-6-months-response-138153553>) · ABC News 미국
 - [Mayan ceremony in Guatemala honors Nobel winner Miguel Ángel Asturias](<https://abcnews.com/International/wireStory/mayan-ceremony-guatemala-honors-nobel-winner-miguel-ngel-138148663>) · ABC News 미국
 - [Bomb rips through Damascus suburb killing 2 including a child](<https://abcnews.com/International/wireStory/bomb-rips-damascus-suburb-killing-2-including-child-138145860>) · ABC News 미국
 - [At least 6 killed and 11 injured when bus overturns in southwestern Colombia](<https://abcnews.com/International/wireStory/6-killed-11-injured-bus-overturns-southwestern-colombia-138145996>) · ABC News 미국
