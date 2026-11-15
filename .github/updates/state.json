@@ -4,6 +4,7 @@
     "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
     "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
     "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1907220&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1907220&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
     "industry:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings": "industry:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings",
     "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module": "industry:https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module",
     "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team": "industry:https://www.nasa.gov/centers-and-facilities/johnson/reliable-robots-meet-johnsons-dexterous-robotics-team",
@@ -607,6 +608,27 @@
           "title": "NASA Navigation Experiment Shows Promise for Planetary Landings",
           "update": false,
           "url": "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/"
+        }
+      ],
+      "2026-11-15": [
+        {
+          "acquired_at": "2026-11-15T11:25:12.805874+00:00",
+          "acquisition_method": "공식 보도자료 RSS; 제목의 에너지·전력 기술 주제로 선택",
+          "author": "이화용",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-15T03:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-15T11:24:14.015550+00:00",
+          "group": "industry",
+          "homepage": "https://www.mcee.go.kr/",
+          "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1907220&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
+          "source_name": "기후에너지환경부 에너지·전력 발표",
+          "source_url": "https://www.mcee.go.kr/home/web/board/rss.do?menuId=10598&boardMasterId=939",
+          "summary_ko": "▷ ‘전력계통영향평가 제도 운영에 관한 규정’ 고시 11월 16일 시행 ▷ 전력계통영향평가 신속하고 투명한 처리 기대…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "대규모 전력수요의 합리적 분산을 위한 전력계통영향평가 제도 본격 시행",
+          "update": false,
+          "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=YvVeSRVwPhytOqJLg9vfuHh67EJoz9LFSuaDgGwg.mehome2?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1907220"
         }
       ]
     },
@@ -11539,6 +11561,10 @@
       "group": "industry",
       "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
     },
+    "https://www.mcee.go.kr/home/web/board/read.do?boardId=1907220&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "group": "industry",
+      "key": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1907220&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue="
+    },
     "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings": {
       "group": "industry",
       "key": "industry:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings"
@@ -11578,10 +11604,10 @@
       "Last-Modified": "Fri, 13 Nov 2026 15:01:54 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"9cd8dfda0d64242cf41c11419e9f4db241b172b24267838162f7243238d2986f\""
+      "ETag": "W/\"4517ceccbc9448b1b859d4adc8cb697d4cf603fc0278fb9ce27f08ece77f67c0\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"769053c36d605930d9c16cb598b52d1b77b094c1824385c6306f9088396111d6\""
+      "ETag": "W/\"0276a9bc10ff4e1b7ef33b1c963c0aae6a59b1441916e142279e2b34e17f29ab\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -11595,8 +11621,8 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.python.org/feeds/posts/default?alt=rss": {
-      "ETag": "\"6af37f58-6073\"",
-      "Last-Modified": "Tue, 10 Nov 2026 20:32:24 GMT"
+      "ETag": "\"6af38067-6073\"",
+      "Last-Modified": "Tue, 10 Nov 2026 20:36:55 GMT"
     },
     "https://blog.st.com/feed": {
       "Last-Modified": "Thu, 12 Nov 2026 14:00:00 GMT"
@@ -11618,7 +11644,7 @@
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"IdLz6g\""
+      "ETag": "\"pGFPvg\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"IdLz6g\""
@@ -11633,10 +11659,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc7-xaXJUyvWt+rNeeWnOm8sY7IEudo\""
+      "ETag": "W/\"33bc8-2d4jOKMSCG9IOltx/0RbqcdB94c\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40176-2huLApnfnuoxP6VjSbk+6mRDcsI\""
+      "ETag": "W/\"40175-0Sc7GWB9LIiV9yBWtLbrLjkjC/w\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -11681,12 +11707,12 @@
       "Last-Modified": "Sun, 15 Nov 2026 02:52:08 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794711228\"",
-      "Last-Modified": "Sun, 15 Nov 2026 02:53:48 GMT"
+      "ETag": "\"1794741900\"",
+      "Last-Modified": "Sun, 15 Nov 2026 11:25:00 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794711629\"",
-      "Last-Modified": "Sun, 15 Nov 2026 03:00:29 GMT"
+      "ETag": "\"1794741439\"",
+      "Last-Modified": "Sun, 15 Nov 2026 11:17:19 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -11694,13 +11720,13 @@
       "Last-Modified": "Wed, 28 Oct 2026 20:20:49 GMT"
     },
     "https://rss.arxiv.org/rss/cs.AI": {
-      "ETag": "5240b2c417ea6e47c2a22821f15dd3f99f23886048a5c5c62671441934f3b0c2"
+      "ETag": "86935cfd833b5a9b4b6c6dd1a57d1ab0090b4e227c564b9c5d0184a6d16c5bac"
     },
     "https://rss.arxiv.org/rss/cs.AR": {
-      "ETag": "d9fb178fc4bed8e4b0d612a4fad1d7a157e54f64343c287ec52c62915c1dc48b"
+      "ETag": "0aa47be1f976a5b68aafe162457687f769c8f707cca52c955e884a2ffc9107e9"
     },
     "https://rss.arxiv.org/rss/eess.SP": {
-      "ETag": "53b6caa1d6fe4f4b1a7765e7ff8a6225367998a79a7700d826082f429a6027d0"
+      "ETag": "f48bb3336194035a214e2f84499cff7f432e0ae7969a9ae6f0455f0d66163786"
     },
     "https://www.anthropic.com/claude-fable-and-mythos-5-2": {},
     "https://www.anthropic.com/claude-haiku-5-5": {},
@@ -11803,7 +11829,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"04aeb8d34c7baf607018c97cbfad9fa44\""
+      "ETag": "\"02cc03d74d6ef9ea6bd4a847628ddfe59\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -11903,12 +11929,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"cbc79cadb3d701343ed9eeec64e29d9a\"",
-      "Last-Modified": "Sat, 14 Nov 2026 21:44:41 GMT"
-    },
-    "https://www.ocw-openmatters.org/feed": {
-      "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
-      "Last-Modified": "Thu, 12 Nov 2026 14:56:06 GMT"
+      "ETag": "\"4e13a5dc53f2f2d02129dc0e0799174f\"",
+      "Last-Modified": "Sun, 15 Nov 2026 10:40:02 GMT"
     },
     "https://www.ocw-openmatters.org/robots.txt": {
       "ETag": "\"065a733f5-0;;;\"",
@@ -15103,6 +15125,12 @@
       "language": "ko",
       "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=vu3_ACiKP7eqexfQqZ9ooVZgG9KKOouPhBCRxmj7.mehome1?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1902920"
     },
+    "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1907220&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "fingerprint": "5f80da77273a7730dac498ffb3254f39647f7cc73e50e40df961da5aaadcca89",
+      "first_seen": "2026-11-15T11:24:14.015550+00:00",
+      "language": "ko",
+      "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=YvVeSRVwPhytOqJLg9vfuHh67EJoz9LFSuaDgGwg.mehome2?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1907220"
+    },
     "industry:https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings": {
       "fingerprint": "145a93fb5578c33c5e5a01158f5bdd1d3a215922df21a8153421ccbdb22c1ce6",
       "first_seen": "2026-11-09T22:38:44.829266+00:00",
@@ -15981,6 +16009,10 @@
     },
     "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902920&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
       "list_fingerprint": "8d4cc696b41dc1020cbfdf9511c4c6c5a974fe952d3503ac5f49764f30978ec8",
+      "status": "posted"
+    },
+    "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1907220&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
+      "list_fingerprint": "5f80da77273a7730dac498ffb3254f39647f7cc73e50e40df961da5aaadcca89",
       "status": "posted"
     },
     "mit-ai-research:https://news.mit.edu/2026/3-questions-best-path-forward-for-ai-academia-1008": {
