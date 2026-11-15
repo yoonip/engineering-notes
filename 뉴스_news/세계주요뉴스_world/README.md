@@ -1,8 +1,14 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-15 06:30 KST
+갱신: 2026-11-15 10:56 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## '아프간 국경' 파키스탄서 무장단체 16명 사살…군인 2명도 사망
+
+> 아프가니스탄과 국경을 맞댄 파키스탄 북서부에서 무장단체 조직원 16명이 사살되고 작전 과정에서 군인 2명...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115019100104>) · 2026-11-15 10:49 KST · 작성·제공: 손현규
 
 ## 美 이어 러도 "19일 미중러 정상회담 개최" 확인
 
@@ -34,11 +40,23 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115000651085>) · 2026-11-15 04:01 KST · 작성·제공: 김지연
 
+## 스페이스X, 사상 첫 우주선 본체 회수…완전재사용 로켓 예고
+
+> 일론 머스크의 우주기업 스페이스X가 사상 처음으로 우주선의 상단 선체 회수에 성공했다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115010500091>) · 2026-11-15 08:32 KST · 작성·제공: 권영전
+
 ## 젤렌스키, “미국, 우크라이나에 나토 가입 대가로 돈바스 양도안 제안”
 
 > 볼로디미르 젤렌스키 우크라이나 대통령은 최근 미국의 중재로 열린 러시아와의 종전 협상에서 미국 협상단이 우크라이나에 북대서양조약기구\(나토∙NATO\) 가입을 대가로 동부 돈바스 지역에서 철수하는 방안을 제시했다고 밝혔습니다.
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8223723.html>) · 2026-11-15 06:17 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 정치생명 연장 승부수…네타냐후 "이란 없애자" 통합정부 요구
+
+> 이스라엘 과도정부를 이끄는 베냐민 네타냐후 총리가 차기 정부 구성권을 쥔 가디 아이젠코트 야샤르당 대표에게 거...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115018500009>) · 2026-11-15 10:38 KST · 작성·제공: 송진원
 
 ## 백악관 '野의회 조사' 대응전략은…"조사 예고를 범죄로 간주"
 
@@ -72,11 +90,14 @@
 
 ## 다른 매체의 원문
 
+- [French-speaking nations hold a summit in Cambodia as a conflict in Africa threatens a rift](<https://abcnews.com/International/wireStory/french-speaking-nations-hold-summit-cambodia-african-conflict-138135244>) · ABC News 미국
 - [Fuel crisis and protests pressure Chile's far-right president](<https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students>) · NPR
 - [Zelenskyy says a new European security framework floated by US could benefit Putin](<https://abcnews.com/International/wireStory/zelenskyy-new-european-security-framework-floated-us-benefit-138138301>) · ABC News 미국
+- [Mayan ceremony in Guatemala honors Nobel winner Miguel Ángel Asturias](<https://abcnews.com/International/wireStory/mayan-ceremony-guatemala-honors-nobel-winner-miguel-ngel-138148663>) · ABC News 미국
 - [Bomb rips through Damascus suburb killing 2 including a child](<https://abcnews.com/International/wireStory/bomb-rips-damascus-suburb-killing-2-including-child-138145860>) · ABC News 미국
 - [At least 6 killed and 11 injured when bus overturns in southwestern Colombia](<https://abcnews.com/International/wireStory/6-killed-11-injured-bus-overturns-southwestern-colombia-138145996>) · ABC News 미국
 - [Methane blast kills 2 at Colombian mine, search continues for 2 missing](<https://abcnews.com/International/wireStory/methane-blast-kills-2-colombian-mine-search-continues-138145217>) · ABC News 미국
+- [Pope denounces ‘suffering and humiliation’ of African enslaved people during Peru visit](<https://abcnews.com/International/wireStory/popes-visit-hub-afro-peruvian-community-casts-spotlight-138137149>) · ABC News 미국
 - [South Sudan postpones first national elections again, to February 2027](<https://abcnews.com/International/wireStory/south-sudan-postpones-national-elections-february-2027-138138151>) · ABC News 미국
 - [Africa: Africa Must Rethink How It Invests in Healthcare](<https://allafrica.com/stories/202611130549.html>) · AllAfrica · allAfrica.com
 - [Rwanda: How Liverpool-Born Paul Mccartney Built a $1.4bn Music Empire](<https://allafrica.com/stories/202611130547.html>) · AllAfrica · allAfrica.com

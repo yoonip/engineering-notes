@@ -1,14 +1,38 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-15 06:30 KST
+갱신: 2026-11-15 10:56 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
+
+## 세무사 수석 'AI 사용' 실토…"초조한 마음에 부정행위"
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846400&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-15 10:49 KST · 작성·제공: newsservice@sbs.co.kr\(김은진\)
+
+## "절대 만지지 말라"…온몸 털 빠진 동물에 송도 '발칵'
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846244&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-15 10:49 KST · 작성·제공: newsservice@sbs.co.kr\(김은진\)
+
+## 즉석밥 훔치다 잡힌 30대 "몇 달째 일 끊겨…배고팠다"
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846278&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-15 10:49 KST · 작성·제공: newsservice@sbs.co.kr\(김은진\)
+
+## 무보, 슬로바키아 수출입은행과 원전·에너지 금융협력 강화
+
+> 한국무역보험공사는 지난 13일 서울 종로구 본사에서 슬로바키아 수출입은행과 원자력 발전소를 비롯한 전력·유틸리...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261115013600003>) · 2026-11-15 09:25 KST · 작성·제공: 신창용
 
 ## "폐업 고민했는데" 반전…문구점 살린 딸의 조언
 
 > 요새 SNS를 보다 보면, 톡톡 튀는 아이디어로 눈길을 끄는 자영업자들이 많습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846010&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-14 23:20 KST · 작성·제공: an.heejae@sbs.co.kr \(안희재\)
+
+## \[속보\]‘세무사 수석 부정행위’ 서울청 광수단 배당…“신속·엄정 수사”
+
+> \[속보\]‘세무사 수석 부정행위’ 서울청 광수단 배당…“신속·엄정 수사”
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Society/article/all/20261115/135025245/1>) · 2026-11-15 10:48 KST
 
 ## 물가 잡으려 묶어둔 석유·전기·가스요금…커지는 청구서
 
@@ -28,6 +52,10 @@
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261113151400530>) · 2026-11-15 06:03 KST · 작성·제공: 고유선
 
+## \[속보\] 경찰, 'AI 부정행위 인정' 세무사 수석 사건 접수…곧 배당
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261115018600004>) · 2026-11-15 10:29 KST · 작성·제공: 한지은
+
 ## 휘청이는 '큰손' 엔비디아…삼전닉스 추가고객 쟁탈전 불붙나
 
 > 국내 반도체 업계가 젠슨 황 엔비디아 최고경영자\(CEO\)의 퇴진 이후 엔비디아와의 협력에 차질이 우려되는 상황...
@@ -39,6 +67,30 @@
 > 내년도 예산안 처리 시한\(다음 달 2일\)이 15일로 2주여 앞으로 다가오면서 여야가 본격적인 예산 전쟁...
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261114034100001>) · 2026-11-15 05:00 KST · 작성·제공: 박수윤
+
+## 민주 “반도체 호황 성과 민생으로”…내일부터 820조 예산안 증액 심사
+
+> 더불어민주당은 15일 내년도 정부 예산안 심사와 관련해 인프라와 지방재정 지원, 3대 민생 프로젝트, 안전사회 투자 등 4개 분야의 예산 증액을 추진하겠다고 밝혔다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Politics/article/all/20261115/135025110/1>) · 2026-11-15 09:59 KST
+
+## 영아에 기한 하루 지난 백신 투여…대법 "의사 면허정지 과해"
+
+> 생후 6개월 영아에게 유효기간이 하루 지난 백신을 투여한 의사의 면허를 정지한 처분은 과하다는 대법원판결이 나...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261114049300004>) · 2026-11-15 09:00 KST · 작성·제공: 이영섭
+
+## 최혜진, LPGA 디안니카 3R 2위로 하락…내일 첫 우승 판가름
+
+> 미국여자프로골프\(LPGA\) 투어 첫 승에 도전하는 최혜진이 디 안니카 드리븐 바이 게인브리지 앳 펠리컨\(총상금 325만 달러\) 셋째 날 선두 자리를 내줬다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Sports/article/all/20261115/135025101/1>) · 2026-11-15 09:58 KST
+
+## 삼성SDI·LG엔솔, 미국서 차세대 ESS·데이터센터 배터리 공개\(종합\)
+
+> 삼성SDI와 LG에너지솔루션이 북미 최대 에너지산업 전시회에서 차세대 에너지저장장치\(ESS\)와 인공지능\(AI\)...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261115011951003>) · 2026-11-15 09:43 KST · 작성·제공: 강태우
 
 ## 지난달 전월세 물가 1.4%↑…3년10개월 만에 최대폭
 
