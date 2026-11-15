@@ -1,154 +1,38 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-15 18:27 KST
+갱신: 2026-11-16 02:12 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
-## '아프간 국경' 파키스탄서 무장단체 16명 사살…군인 2명도 사망
+## 아르헨 경제학자 "월 2% 물가·현재 낮은 환율 지속 불가능"
 
-> 아프가니스탄과 국경을 맞댄 파키스탄 북서부에서 무장단체 조직원 16명이 사살되고 작전 과정에서 군인 2명...
+> 아르헨티나의 경제학자인 로베르토 프렝켈 경제사회연구소\(CEDES\) 소장은 하비에르 밀레이 정부가 ...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115019100104>) · 2026-11-15 10:49 KST · 작성·제공: 손현규
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261116000500009>) · 2026-11-16 01:06 KST · 작성·제공: 김선정
 
-## 美 이어 러도 "19일 미중러 정상회담 개최" 확인
+## 트럼프·민주, 美항공사태 네탓 공방…예산 갈등으로 번져
 
-> 미국에 이어 러시아도 미국·중국·러시아 간 3자 정상회담을 열 계획이라고 공식 발표했다.
+> 지난 13일\(현지시간\) 미국 전역에서 발생한 항공기 이륙 전면 중단 사태가 미 정치권의 네 탓 공방으로 번...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115000800109>) · 2026-11-15 01:08 KST · 작성·제공: 민경락
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261116000800071>) · 2026-11-16 01:21 KST · 작성·제공: 박성민
 
-## 프랑스 5주연속 주말 시위…"정부 부스러기 대책으론 안돼"
+## 美항공 중단사태 여파 사흘째…결항 1만7천편 육박·정상화 진통
 
-> 프랑스에서 14일\(현지시간\) 물가 급등과 열악한 교육 여건에 항의하는 학생과 노동자들의 시위가 5주 연속 벌...
+> 미국 전역에서 발생한 전면적인 항공 이륙 중단의 여파로 15일\(현지시간\)까지 사흘째 항공편 결항과 지연이 이...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115000600085>) · 2026-11-15 00:40 KST · 작성·제공: 김지연
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261116000700072>) · 2026-11-16 01:11 KST · 작성·제공: 임수정
 
-## 콜롬비아서 버스 전복 사고…최소 6명 사망·11명 부상
-
-> 콜롬비아에서 버스가 전복되는 사고로 최소 6명이 숨지고 11명이 다쳤다고 AP통신이 경찰 당국을 인용...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115002000091>) · 2026-11-15 04:25 KST · 작성·제공: 권영전
-
-## 美항공 전면 중단사태 여파 계속…14일에도 4천편 넘게 결항
-
-> 지난 13일\(현지시간\) 미국 전역에서 발생한 대규모 항공 이륙 중단의 여파가 14일에도 이어지면서 전국 공항...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115001800072>) · 2026-11-15 04:18 KST · 작성·제공: 김연숙
-
-## 프랑스 5주째 주말시위에 11만명 참여…포르투갈선 주거난 시위\(종합\)
-
-> 프랑스에서 14일\(현지시간\) 물가 급등과 열악한 교육 여건에 항의하는 학생과 노동자들의 시위가 5주 연속 벌...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115000651085>) · 2026-11-15 04:01 KST · 작성·제공: 김지연
-
-## 스페이스X, 사상 첫 우주선 본체 회수…완전재사용 로켓 예고
-
-> 일론 머스크의 우주기업 스페이스X가 사상 처음으로 우주선의 상단 선체 회수에 성공했다.
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115010500091>) · 2026-11-15 08:32 KST · 작성·제공: 권영전
-
-## 젤렌스키, “미국, 우크라이나에 나토 가입 대가로 돈바스 양도안 제안”
-
-> 볼로디미르 젤렌스키 우크라이나 대통령은 최근 미국의 중재로 열린 러시아와의 종전 협상에서 미국 협상단이 우크라이나에 북대서양조약기구\(나토∙NATO\) 가입을 대가로 동부 돈바스 지역에서 철수하는 방안을 제시했다고 밝혔습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8223723.html>) · 2026-11-15 06:17 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 정치생명 연장 승부수…네타냐후 "이란 없애자" 통합정부 요구
-
-> 이스라엘 과도정부를 이끄는 베냐민 네타냐후 총리가 차기 정부 구성권을 쥔 가디 아이젠코트 야샤르당 대표에게 거...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115018500009>) · 2026-11-15 10:38 KST · 작성·제공: 송진원
-
-## 백악관 '野의회 조사' 대응전략은…"조사 예고를 범죄로 간주"
-
-> 미국 백악관이 미국 중간선거 결과 차기 의회 권력을 차지한 민주당이 도널드 트럼프 행정부에 대한 광범위한 ...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115000900071>) · 2026-11-15 01:40 KST · 작성·제공: 박성민
-
-## 홍콩 디즈니랜드 전자입장권 1만7천장 도난…온라인 예매 중단
-
-> 홍콩 디즈니랜드의 온라인 예매 시스템에서 전자입장권 QR코드 약 1만7천개가 탈취되는 사건이 발생해 입장권...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115044100083>) · 2026-11-15 17:56 KST · 작성·제공: 한종구
-
-## 트럼프 '궤멸' 주장에도…美, 이란 미사일 보유량 2천500기 추정
-
-> 미국 정보당국은 이란이 여전히 최대 2천500기의 미사일을 보유하고 있는 것으로 추산한다고 월스트리트저널\(WS...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115042800009>) · 2026-11-15 17:51 KST · 작성·제공: 김승욱
-
-## 마이크 켜진 줄 모르고…호주 총리, 또 성적 농담 논란
-
-> 앤서니 앨버니지 호주 총리가 국제 행사장에서 마이크가 켜진 줄 모르고 자국 장관과 저속한 농담을 나눈 사...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261115041300104>) · 2026-11-15 17:18 KST · 작성·제공: 손현규
-
-## 트럼프, 필리핀·중국 순방...당국자 “미북 정상회담 계획 없어”
-
-> 도널드 트럼프 대통령이 17일부터 19일까지 필리핀과 중국에서 열리는 주요 다자 정상회의에 참석해 아시아 지역 동맹국과 협력국들과의 관계 강화에 나섭니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8223717.html>) · 2026-11-15 05:25 KST · 작성·제공: voadigital@voanews.com \(조은정\)
-
-## "나는 쓰레기" 젠슨 황, 공작에 당했다?…"치밀하고 다층적"
-
-> 전 세계를 강타한 젠슨 황 엔비디아 최고경영자의 추문은 미국 최상위층을 노린 중국의 획기적 첩보활동일지 모른다는 분석이 나왔습니다.
-
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846590&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-15 18:19 KST · 작성·제공: sha@sbs.co.kr \(손형안\)
-
-## 미국 '공항 대란' 만든 원인 나왔다…"고장난 것 아냐"
-
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846708&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-15 18:20 KST · 작성·제공: wisdomwish@sbs.co.kr \(차지환 에디터\)
-
-## 19일 미중러 정상회담…"트럼프-김정은 회담 예정 없어"
-
-> 도널드 트럼프 미국 대통령과 시진핑 중국 국가주석, 블라디미르 푸틴 러시아 대통령이 오는 19일 중국 선전에서 사상 첫 3자 정상회담을 엽니다.…
-
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846013&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-14 20:55 KST · 작성·제공: 2bwithu@sbs.co.kr \(곽상은\)
-
-## 4시간 넘게 막힌 미국 하늘길…세계 곳곳 혼란
-
-> 미국에서 항공기 이륙이 4시간 넘게 전면 중단되는 초유의 사태가 벌어졌습니다.
-
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008846002&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-14 22:54 KST · 작성·제공: bn@sbs.co.kr \(전병남\)
-
-## 아세안 정상회의 마닐라서 개막…트럼프 17일부터 정상외교
+## 아세안 정상들 역내 단결 강조... 한국·중국과 연쇄 정상회담 예정
 
 > 동남아시아국가연합, 아세안 정상회의가 15일 필리핀 마닐라에서 개막했습니다.
 
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8223826.html>) · 2026-11-15 11:35 KST · 작성·제공: voadigital@voanews.com \(조은정\)
-
-## 파키스탄군 “아프간 접경서 무장대원 16명 사살”
-
-> 파키스탄군이 아프가니스탄과 맞닿은 북서부 북와지리스탄에서 무장단체 대원 16명을 사살했다고 밝혔다.
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261115/135027837/1>) · 2026-11-15 18:13 KST
-
-## 북한 전직 고위관리 “해외 인력파견, 원가 들지 않아 외화벌이 수단으로 선호”
-
-> 북한 노동당 39호실 산하기관 고위 관리였던 리정호 코리아번영센터 대표는 북한 당국이 노동자 해외파견을 외화벌이 수단으로 선호하는 이유로 원가가 들지 않고 그 자체로 돈이 되기 때문이라고…
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/15/north-korea-labor-exports-easy-source-of-cash/>) · 2026-11-15 12:00 KST · 작성·제공: 서울-김지은 nk@rfa.org
-
-## 머스크, 젠슨 황 복귀 청원 동참…8만명 넘게 서명
-
-> 일론 머스크 테슬라 최고경영자\(CEO\)가 14일\(현지시간\) 중국 스파이로 지목된 여성과의 불륜으로 자리에서 물러난 젠슨 황 전 엔비디아 CEO의 복귀 청원에 대한 서명을 촉구했다.
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261114/135024548/1>) · 2026-11-14 22:02 KST
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/asean-summit/8223848.html>) · 2026-11-15 22:30 KST · 작성·제공: voadigital@voanews.com \(조은정\)
 
 ## 다른 매체의 원문
 
-- [French-speaking nations hold a summit in Cambodia as a conflict in Africa threatens a rift](<https://abcnews.com/International/wireStory/french-speaking-nations-hold-summit-cambodia-african-conflict-138135244>) · ABC News 미국
-- [Southeast Asian leaders open annual summit with major conflicts and their impact topping the agenda](<https://abcnews.com/International/wireStory/southeast-asian-leaders-open-annual-summit-major-conflicts-138153824>) · ABC News 미국
-- [Fuel crisis and protests pressure Chile's far-right president](<https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students>) · NPR
-- [Zelenskyy says a new European security framework floated by US could benefit Putin](<https://abcnews.com/International/wireStory/zelenskyy-new-european-security-framework-floated-us-benefit-138138301>) · ABC News 미국
-- [Ebola outbreak remains out of control in Congo 6 months into response](<https://abcnews.com/International/wireStory/ebola-outbreak-remains-control-congo-6-months-response-138153553>) · ABC News 미국
-- [Mayan ceremony in Guatemala honors Nobel winner Miguel Ángel Asturias](<https://abcnews.com/International/wireStory/mayan-ceremony-guatemala-honors-nobel-winner-miguel-ngel-138148663>) · ABC News 미국
-- [Bomb rips through Damascus suburb killing 2 including a child](<https://abcnews.com/International/wireStory/bomb-rips-damascus-suburb-killing-2-including-child-138145860>) · ABC News 미국
-- [At least 6 killed and 11 injured when bus overturns in southwestern Colombia](<https://abcnews.com/International/wireStory/6-killed-11-injured-bus-overturns-southwestern-colombia-138145996>) · ABC News 미국
-- [Methane blast kills 2 at Colombian mine, search continues for 2 missing](<https://abcnews.com/International/wireStory/methane-blast-kills-2-colombian-mine-search-continues-138145217>) · ABC News 미국
-- [Pope denounces ‘suffering and humiliation’ of African enslaved people during Peru visit](<https://abcnews.com/International/wireStory/popes-visit-hub-afro-peruvian-community-casts-spotlight-138137149>) · ABC News 미국
-- [South Sudan postpones first national elections again, to February 2027](<https://abcnews.com/International/wireStory/south-sudan-postpones-national-elections-february-2027-138138151>) · ABC News 미국
-- [Africa: Africa Must Rethink How It Invests in Healthcare](<https://allafrica.com/stories/202611130549.html>) · AllAfrica · allAfrica.com
-- [Rwanda: How Liverpool-Born Paul Mccartney Built a $1.4bn Music Empire](<https://allafrica.com/stories/202611130547.html>) · AllAfrica · allAfrica.com
+- [Czechs gather in big numbers to reject government's plan to overhaul funding of public media](<https://abcnews.com/International/wireStory/czechs-gather-big-numbers-reject-governments-plan-overhaul-138158812>) · ABC News 미국
+- [Zelenskyy warns Starshield restrictions threaten Ukraine’s energy defenses](<https://abcnews.com/International/wireStory/zelenskyy-warns-starshield-restrictions-threaten-ukraines-energy-defenses-138156524>) · ABC News 미국
+- [Southeast Asian leaders denounce violence in Myanmar and extend ban on its leader](<https://abcnews.com/International/wireStory/southeast-asian-leaders-denounce-violence-myanmar-extend-ban-138155822>) · ABC News 미국
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
