@@ -11603,6 +11603,12 @@
       "ETag": "\"e00984e1bacd95a22642acbc4c21ffd0\"",
       "Last-Modified": "Fri, 13 Nov 2026 15:01:54 GMT"
     },
+    "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
+      "ETag": "W/\"9f712ea77fc058d28bb919c0dd44aa2addace30297d20a26dfe944254bbdaeb7\""
+    },
+    "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
+      "ETag": "W/\"361a19f9f0b75cdbb74bb3249c0849588eb2da24ebd624d615435db6b81f572b\""
+    },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
     "https://blog.google/robots.txt": {},
@@ -11615,8 +11621,8 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.python.org/feeds/posts/default?alt=rss": {
-      "ETag": "\"6af38067-6073\"",
-      "Last-Modified": "Tue, 10 Nov 2026 20:36:55 GMT"
+      "ETag": "\"6af37f58-6073\"",
+      "Last-Modified": "Tue, 10 Nov 2026 20:32:24 GMT"
     },
     "https://blog.st.com/feed": {
       "Last-Modified": "Thu, 12 Nov 2026 14:00:00 GMT"
@@ -11637,6 +11643,9 @@
     "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {},
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "ETag": "\"WeUNPw\""
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"IdLz6g\""
     },
@@ -11650,10 +11659,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-OtH+sPOtK2CdyR5V3ul8Pnz8rD8\""
+      "ETag": "W/\"33bc8-nTnHQdVKByOXuTeELk17SyXKT0k\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40175-7Un9RjhgNoSrAa04HJpRDzHkLCg\""
+      "ETag": "W/\"40175-sYCq+Du9rj9VGSEtRF6ZBJ5HeqI\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -11689,7 +11698,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1570": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -11699,12 +11707,12 @@
       "Last-Modified": "Sun, 15 Nov 2026 02:52:08 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794765337\"",
-      "Last-Modified": "Sun, 15 Nov 2026 17:55:37 GMT"
+      "ETag": "\"1794783378\"",
+      "Last-Modified": "Sun, 15 Nov 2026 22:56:18 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794765225\"",
-      "Last-Modified": "Sun, 15 Nov 2026 17:53:45 GMT"
+      "ETag": "\"1794783525\"",
+      "Last-Modified": "Sun, 15 Nov 2026 22:58:45 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -11821,7 +11829,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0660fde8b2a11cb7e0684911b163726ea\""
+      "ETag": "\"0b92a1aee18b4a52bb6aed4d2d55cf3ee\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
