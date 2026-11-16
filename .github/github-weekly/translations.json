@@ -188,5 +188,185 @@
     "source": "If you are going to use any of the extra features below, the fetchers, or their classes, you will need to install fetchers' dependencies and their browser dependencies as follows:",
     "text": "아래 추가 기능을 사용하려고 하는 경우, fetchers, 또는 그들의 클래스, 당신은 fetchers의 의존성 및 그들의 브라우저 의존성을 설치 해야 합니다:",
     "method": "Argos Translate en→ko 1.1"
+  },
+  "6b168f4400b9dd194918c91690578f80be16e7a98b6f2ee95f4b8055f679de8d": {
+    "source": "An open source design system that's fully customizable and agent ready",
+    "text": "완전히 customizable 및 대리인 준비되어 있는 열려있는 근원 디자인 체계",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "8dd16b851b891772e1db827c11de4b7b21fba16a3ef108a1ed825ab69cf73de0": {
+    "source": "What makes Astryx different:",
+    "text": "Astryx는 무엇을 다른:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "300a2ea5799a5d59fa9a29626c17ef193c10c5defe267c4cdf2ba556e09d8620": {
+    "source": "Astryx requires React 19 or later (react and react-dom are peer dependencies of @astryxdesign/core).",
+    "text": "Astryx는 React 19 이상(react and react-dom은 @astryxdesign/core의 피어 의존성)을 요구합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "4d3b5d2a3bf511b12b0dc045af60371393eded77e36f930c959188584ea68d68": {
+    "source": "Install Astryx, a theme, and its peer dependencies:",
+    "text": "Astryx, 테마 및 피어 의존성을 설치하십시오.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "1bd2e5968729b0c5dba78a80cf2d577d3d67079e6d4441fdf78a99326ad0a523": {
+    "source": "Astryx requires React 19 or later (react and react-dom >= 19.0.0 are peer dependencies).",
+    "text": "Astryx는 React 19 이상(react and react-dom >= 19.0.0은 피어 의존성)을 요구합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "e4aaf5e588f3edd7c0a55bb8f414a82c98d4eafb8b8b8459ce69c885a528c9e0": {
+    "source": "Hunt down social media accounts by username across social networks",
+    "text": "소셜 네트워크를 통해 사용자의 소셜 미디어 계정",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "99919c5899c47800e785fca8a12a3bacf705fb222168b20dce87f5419dd36d92": {
+    "source": "[!WARNING] > Packages for ParrotOS and Ubuntu 24.04, maintained by a third party, appear to be __broken__. > Users of these systems should defer to uv/pipx/pip or Docker.",
+    "text": "[!수입] > ParrotOS 및 Ubuntu 24.04에 대한 패키지는 제 3 자에 의해 유지되며   broken  로 나타납니다. · 이 시스템의 사용자는 uv/pipx/pip 또는 Docker에 기인해야 합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "056430f139ab6751f51ff4337b3e729a8433ddaf5cb073eca2d4e8504b20d556": {
+    "source": "See all alternative installation methods here.",
+    "text": "모든 대안 설치 방법을 참조하십시오.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "11bee863995fd313f0b097df819626d64222dd56dd590dc56b8ba3c6f71fc65c": {
+    "source": "To search for only one user:",
+    "text": "하나의 사용자만 검색하려면:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "49f1bca6a42f7c21d1f7cff3b34632b717729976bfed5851b9095839cc5bfc26": {
+    "source": "To search for more than one user:",
+    "text": "1명 이상의 사용자를 검색하려면:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "3745e782d6512a49e757cdfeafdbc1f67e41cd032438f682aa0e4a1d54112f8b": {
+    "source": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+    "text": "루프에 머물기 위해 작업 공간과 에이전트의 상단에 - 모양, 결정, 계획, 주석, 검토 코드, 팀과 공유, 그리고 하나의 클릭으로 에이전트에 모든 피드백을 보냅니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "9809f82971d2dd8ea3b174faa98520b02a08c8d3cfc0bc54b482684759a76c65": {
+    "source": "⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.",
+    "text": "⭐️ NEW : Plannotator Inbox는 당신과 멀티 시약 작업 사이에 누락 된 검토 층입니다. 그것은 표면 결정, 프로토 타입, 변형, 계획, 그리고 당신이 루프에 머물 필요가 모든. 모든 코딩 에이전트 및 개인 조수와 함께 작동합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "de31b71213659d4df51998a26f283d3e62894ed26d6e23abaaf53098ed159810": {
+    "source": "One installer covers almost every agent. It installs the plannotator binary, auto-detects your installed agents, and configures hooks, skills, and slash commands for each:",
+    "text": "1명의 설치자는 거의 각 대리인을 포함합니다. 그것은 plannotator 바이너리를 설치, 자동 감지 설치 에이전트, 및 구성 Hooks, 기술, 그리고 각 슬래시 명령:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "f9a4f95acd63b631c6fd743bed42d197b86c174c13fa98c0d38a65d495d7658d": {
+    "source": "Want just the binary and nothing else? Pass --minimal (or export PLANNOTATOR_MINIMAL=1) to install only the plannotator binary to ~/.local/bin, skipping every skill, hook, slash command, and per-agent config:",
+    "text": "단지 이진과 다른 것을 원하십니까? Pass --minimal (또는 내보내기 PLANNOTATOR MINIMAL=1) 을 설치하여 plannotator 바이너리만 ~/.local/bin에 설치하여 모든 기술, 후크, 슬래시 명령, 과 시약 구성을 건너 뛸 수 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "8fa4d22c07c642e96b081f2ab42823928bcc6a784da4f53ceb9c78b3c54ec932": {
+    "source": "Plan review needs no command at all. The next time your agent proposes a plan, it opens in your browser automatically.",
+    "text": "계획 검토는 전혀 명령이 없습니다. 다음 시간 당신의 에이전트는 계획을 제안, 그것은 자동으로 브라우저에서 열립니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "08a0dbf0846865d0cb036c770c13a4d82697e4f39a4abf673d1ee2ec308fd566": {
+    "source": "Browser automation CLI for AI agents",
+    "text": "브라우저 자동화 CLI for AI Agent",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "37cd498fe65d3f010a5e5bd459c6906746c01d66e1f6362be1764ecb9fb6d015": {
+    "source": "Browser automation for AI agents: open pages, read them as an accessibility tree, and act on elements from the shell.",
+    "text": "AI Agent를 위한 브라우저 자동화: 페이지를 열고, 접근가능성 나무로 읽고, 포탄에서 성분에 행동하십시오.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "c8289e8ae65084527df11f68d0c86ea28ac2561c0bc716fbb3e4c8c2664a4ccd": {
+    "source": "Homebrew: brew install agent-browser, then agent-browser install. - Linux: agent-browser install --with-deps also installs the browser's system libraries. - No install: npx agent-browser open example.com.",
+    "text": "Homebrew: 양조장 설치 에이전트-browser, 그 후 에이전트-browser 설치. - Linux: Agent-browser install --with-deps는 브라우저의 시스템 라이브러리를 설치합니다. - 설치 없음: npx 에이전트-browser 오픈 example.com.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "9d49ebb8a2d71d55247df2c184f977c7763c458550d3da96c74119c70c9dcb73": {
+    "source": "The personal finance app for everyone (by everyone)",
+    "text": "모든 사람에게 개인 금융 앱 (여러분)",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "c5fdace395446562c02f305c8f9391dd7c5d61aa17385c058349aa55b849a1fa": {
+    "source": "involved: Discord • Website • Issues",
+    "text": "관련: Discord • 웹사이트 • 문제",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "1f72a53e73e58085249a06476a4ad788dd6481ed91ddc26e6111cbe82383dd01": {
+    "source": "[!IMPORTANT] > This repository is a community fork of the now-abandoned Maybe Finance project. > Learn more in their final release doc.",
+    "text": "[! 중요] > This repository is a community fork of the now-abandoned 어쩌면 금융 프로젝트. > 최종 릴리스 doc에서 자세히 알아보기.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "d5bb6fabd777ed91584a91cae8be9b832662c7004115d28aaf84d8dedf995a81": {
+    "source": "If you are trying to _self-host_ the app, read this guide to get started.",
+    "text": "self-host  앱을 시도한다면, 이 가이드를 읽어 보세요.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "c84433bc5443d5c97d4d66b32cec307399ce5f249a00d9bfbb531107976120dd": {
+    "source": "Visit http://localhost:3000 to view the app.",
+    "text": "http://localhost:3000을 방문하여 앱을 볼 수 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "c1c9464524132f45eebb6b7403245cc7989c6c4c145dd769d0a7595a8577fcac": {
+    "source": "If you are trying to _self-host_ the app, read this guide to get started. The instructions below are for developers to get started with contributing to the app.",
+    "text": "self-host  앱을 시도한다면, 이 가이드를 읽어 보세요. 아래 지침은 개발자가 앱에 기여하기 시작했습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "57cc505c9f799061389567edc21591328991f74eaecd4833c8a15d4939a245e4": {
+    "source": "Open-source plugin for designing and reviewing software with agents",
+    "text": "에이전트와 소프트웨어를 설계 및 검토하기위한 오픈 소스 플러그인",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "62bb5f886d70c18e4517011fe2bf6765bfa790fe75ac44fd2e4e2e2f963cbb0c": {
+    "source": "Develop ideas with context and review documents with fresh eyes. EGM is an open-source plugin for AI assistants.",
+    "text": "새 눈으로 문질러 문서를 검토하는 아이디어 개발. EGM은 AI 조수를위한 오픈 소스 플러그인입니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "1ac1652b146fe308d516f9eaf9aaf1abecef12d10d1d97da1c662edd2de87c2f": {
+    "source": "Choose your coding agent. Install the complete plugin so its skills can read the reviewer prompts and document standards.",
+    "text": "코딩 에이전트를 선택하십시오. 완전한 플러그인을 설치하기 때문에 그 기술은 검토자 프롬프트 및 문서 표준을 읽을 수 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "ff1bb250aa8f357fe3f3024f5aec9237a7fcb89974f24f1d85eba64cd8fc7dac": {
+    "source": "The general goal is to have:",
+    "text": "일반 목표는 다음과 같습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "ef9ee9c919fb992356a747421bc83cf9b6545be2c0db04187bbfd4c9d9b8e054": {
+    "source": "Code that does what you want * Documentation that explains why the code exists the way it does",
+    "text": "왜 코드가 존재했는지 설명하는 문서 *",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "b3a7674c9a2fa70af8f98b3e58c7be75d2e74569497bcdda6a59ab71d70422f9": {
+    "source": "Open the published EGM plugin in the desktop app and install it. This listing is desktop-only. For Codex CLI, use the commands below.",
+    "text": "데스크톱 앱에서 EGM 플러그인을 열고 설치합니다. 이 목록은 데스크탑 전용입니다. Codex CLI의 경우 아래 명령어를 사용합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "7390c98ad28fd34c7257f40ab8f0a88186e2b1db1e9ad8e548fd5bb70c0651fa": {
+    "source": "Install the whole plugin. Skill-only installers that copy skills/ alone break EGM, because the skills read agents/ and resources/document_standards/ at run time.",
+    "text": "전체 플러그인 설치. Skill-only installers that copy skills/ alone break EGM, 기술 읽기 에이전트 및 리소스/document standards/ at run time.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "453f912a98b28d6c8c11e5cdb38eb3c1cc3f25518739f27b73b82b42f277072f": {
+    "source": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+    "text": "접촉을 가진 다 합동 동적인. 범용 물리 시뮬레이터.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "9fbfec79dc6a5f1398ffc101a6c23ec9d1c38d0bcf4620512704197115883f6d": {
+    "source": "GitHub Issues are reserved for bug reports, feature requests and other development-related subjects.",
+    "text": "GitHub Issues는 버그 보고서, 기능 요청 및 기타 개발 관련 주제에 대해 예약됩니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "d77a14ce45e442ea7c0a8dac946e6dab1526d02c7e78958bf0f87d7fb07a5afb": {
+    "source": "Explore our online IPython notebooks. If you are a Python user, you might want to start with our tutorial notebooks running on Google Colab:",
+    "text": "온라인 IPython 노트북을 탐험하십시오. 파이썬 사용자 인 경우 Google Colab에서 실행되는 튜토리얼 노트북과 함께 시작할 수 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "3260b07b66878336d5dd8c85e2e419bae3977bd2e5c100ffa0690b569e775ab2": {
+    "source": "The native Python bindings, which come pre-packaged with a copy of MuJoCo, can be installed from [PyPI] via:",
+    "text": "MuJoCo의 복사본과 사전 포장된 기본 Python 바인딩은 [PyPI]에서 다음을 통해 설치할 수 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "68e51c25e8c32f676cdf8d83211dd901b247b6ba9bb44e5bf5de55eba56155fd": {
+    "source": "Versioned releases are available as precompiled binaries from the GitHub [releases page], built for Linux (x86-64 and AArch64), Windows (x86-64 only), and macOS (universal). This is the recommended way to use the software.",
+    "text": "버전 릴리스는 GitHub [releases 페이지]에서 사전 컴파일 된 바이너리로 사용할 수 있으며 리눅스 (x86-64 및 AArch64), Windows (x86-64 전용) 및 macOS (대여)를 위해 내장되어 있습니다. 이것은 소프트웨어를 사용하는 것이 좋습니다.",
+    "method": "Argos Translate en→ko 1.1"
   }
 }
