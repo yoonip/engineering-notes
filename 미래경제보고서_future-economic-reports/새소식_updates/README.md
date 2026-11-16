@@ -1,20 +1,20 @@
 # 보고서 소식
 
-반영: 2026-11-13 18:55 KST
+반영: 2026-11-16 20:58 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
-## 특허 기반 전략기술 평가: 기회-위험 프레임워크
+## AI 글래스 확산에 따른 사회적 이슈 및 대응 동향 분석
 
-기존 자료의 소개 내용이 갱신되었습니다.
+> 생성형 AI와 멀티모달 AI의 발전으로 AI 글래스가 일상형 AI 기기로 확산되면서 새로운 사회적 이슈와 대응…
 
-> 이번 이슈브리프는 특허 데이터를 기반으로 전략기술의 경제적 잠재력과 구조적 취약성을 통합적으로 평가하고, 기술별 기회와 위험 수준에 따른 맞춤형 육성·보호…
+출처: [ETRI 보고서](<https://ksp.etri.re.kr/>) · [원문](<https://ksp.etri.re.kr/ksp/plan-report/read?id=1574>) · 공식 페이지 표기일: 2026-10
 
-출처: [서울대 국가미래전략원 이슈브리프](<https://ifs.snu.ac.kr/>) · [원문](<https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=137>) · 공식 페이지 표기일: 2026-11-11
+[발행 기관의 PDF](<https://ksp.etri.re.kr/ksp/plan-report/file/1574.pdf>)
 
-가져온 시각: 2026-11-13 18:54:42 KST
+가져온 시각: 2026-11-16 20:57:17 KST
 
-수집 경로: [공식 목록·피드](<https://ifs.snu.ac.kr/publication/issue-brief>) · 방법: 공식 목록·공개 소개문
+수집 경로: [공식 목록·피드](<https://ksp.etri.re.kr/ksp/plan-report/search>) · 방법: 공식 목록·공개 소개문
 
 개요: 공식 한국어 소개 발췌
 
