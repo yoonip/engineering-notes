@@ -1,76 +1,62 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-14 08:48 KST
+반영: 2026-11-17 07:28 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## Faster Scientific Simulations with New FP64 Algorithms in NVIDIA cuBLAS
+## Update: Smart power distribution in cars, it’s much more than a numbers game, it’s how the future takes shape
 
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.
+STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas/>) · RSS·Atom 발행 시각: 2026-11-14 07:13 KST
+출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/smart-power-distribution/>) · RSS·Atom 발행 시각: 2026-11-17 01:38 KST
 
-RSS·Atom 표기 작성자: Cole Brower
+RSS·Atom 표기 작성자: David Civera
 
-가져온 시각: 2026-11-14 08:48:35 KST
+가져온 시각: 2026-11-17 07:28:12 KST
+
+수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain
+
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.
+
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/>) · RSS·Atom 발행 시각: 2026-11-17 01:00 KST
+
+RSS·Atom 표기 작성자: Gautham Dharuman
+
+가져온 시각: 2026-11-17 07:28:10 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton
+## NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0
 
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·에이전트·도구 사용 주제를 다룹니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/>) · RSS·Atom 발행 시각: 2026-11-14 06:17 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/>) · RSS·Atom 발행 시각: 2026-11-17 01:00 KST
 
-RSS·Atom 표기 작성자: Akhilesh Mishra
+RSS·Atom 표기 작성자: Zhihan Jiang
 
-가져온 시각: 2026-11-14 08:48:35 KST
-
-수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Run Native DLA Inference in Python on NVIDIA Jetson AGX Orin Using cuDLA
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·GPU·가속기·개발 도구·시스템 소프트웨어 주제를 다룹니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla/>) · RSS·Atom 발행 시각: 2026-11-14 03:57 KST
-
-RSS·Atom 표기 작성자: Nikshay Shrivastava
-
-가져온 시각: 2026-11-14 08:48:35 KST
+가져온 시각: 2026-11-17 07:28:10 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM
+## NVIDIA Vera Rubin NVL72 Achieves up to 2x Blackwell Ultra Performance in MLPerf Training v6.1
 
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/>) · RSS·Atom 발행 시각: 2026-11-14 02:00 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1/>) · RSS·Atom 발행 시각: 2026-11-17 01:00 KST
 
-RSS·Atom 표기 작성자: Fatima Fall
+RSS·Atom 표기 작성자: Farshad Ghodsian
 
-가져온 시각: 2026-11-14 02:59:58 KST
-
-수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Adapt Human Motion for Robots with NVIDIA SOMA Retargeter
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 로봇·모빌리티 주제를 다룹니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/>) · RSS·Atom 발행 시각: 2026-11-14 02:00 KST
-
-RSS·Atom 표기 작성자: John Malaska
-
-가져온 시각: 2026-11-14 02:59:58 KST
+가져온 시각: 2026-11-17 07:28:10 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
