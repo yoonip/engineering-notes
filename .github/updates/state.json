@@ -320,6 +320,7 @@
     "products:https://blog.st.com/aliro": "products:https://blog.st.com/aliro",
     "products:https://blog.st.com/ganspin1102-ganspin1105": "products:https://blog.st.com/ganspin1102-ganspin1105",
     "products:https://blog.st.com/rust-mems-drivers": "products:https://blog.st.com/rust-mems-drivers",
+    "products:https://blog.st.com/smart-power-distribution": "products:https://blog.st.com/smart-power-distribution",
     "products:https://blog.st.com/snapdragon-wear-elite": "products:https://blog.st.com/snapdragon-wear-elite",
     "products:https://blog.st.com/stm32g5": "products:https://blog.st.com/stm32g5",
     "products:https://blog.st.com/stm32g5-security": "products:https://blog.st.com/stm32g5-security",
@@ -361,6 +362,9 @@
     "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4": "products:https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
     "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support": "products:https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support",
     "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games",
+    "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1": "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1",
+    "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0": "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0",
+    "products:https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain": "products:https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain",
     "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
     "products:https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton": "products:https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton",
     "products:https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla": "products:https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla",
@@ -8219,6 +8223,84 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/"
         }
+      ],
+      "2026-11-17": [
+        {
+          "acquired_at": "2026-11-16T22:28:12.080308+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-16T16:38:20+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-16T22:26:52.919910+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/smart-power-distribution",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Update: Smart power distribution in cars, it’s much more than a numbers game, it’s how the future takes shape",
+          "update": false,
+          "url": "https://blog.st.com/smart-power-distribution/"
+        },
+        {
+          "acquired_at": "2026-11-16T22:28:10.405896+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Farshad Ghodsian",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-16T16:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-16T22:26:52.919910+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NVIDIA Vera Rubin NVL72 Achieves up to 2x Blackwell Ultra Performance in MLPerf Training v6.1",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1/"
+        },
+        {
+          "acquired_at": "2026-11-16T22:28:10.405896+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Zhihan Jiang",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-16T16:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-16T22:26:52.919910+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·에이전트·도구 사용 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/"
+        },
+        {
+          "acquired_at": "2026-11-16T22:28:10.405896+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Gautham Dharuman",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-16T16:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-16T22:26:52.919910+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/"
+        }
       ]
     },
     "reports": {
@@ -11718,6 +11800,10 @@
       "group": "products",
       "key": "products:https://blog.st.com/rust-mems-drivers"
     },
+    "https://blog.st.com/smart-power-distribution": {
+      "group": "products",
+      "key": "products:https://blog.st.com/smart-power-distribution"
+    },
     "https://blog.st.com/snapdragon-wear-elite": {
       "group": "products",
       "key": "products:https://blog.st.com/snapdragon-wear-elite"
@@ -11881,6 +11967,18 @@
     "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games"
+    },
+    "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1"
+    },
+    "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0"
+    },
+    "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain"
     },
     "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
       "group": "products",
@@ -12344,6 +12442,12 @@
       "ETag": "\"32ebcda8ba954ad4fe86740ed6e53543\"",
       "Last-Modified": "Mon, 16 Nov 2026 09:36:52 GMT"
     },
+    "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
+      "ETag": "W/\"3eb556cdfd41dd6c70a66aa7c2ab8db10640efbf8dc87227a0219db504c50d8d\""
+    },
+    "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
+      "ETag": "W/\"4bc4912368b8798b8dc501bfc206e31d740d849aff9cbfb9c82acda9536340f8\""
+    },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
     "https://blog.google/robots.txt": {},
@@ -12356,17 +12460,17 @@
       "Last-Modified": "Mon, 26 Oct 2026 04:31:30 GMT"
     },
     "https://blog.python.org/feeds/posts/default?alt=rss": {
-      "ETag": "\"6af37f58-6073\"",
-      "Last-Modified": "Tue, 10 Nov 2026 20:32:24 GMT"
+      "ETag": "\"6afb4981-607c\"",
+      "Last-Modified": "Mon, 16 Nov 2026 18:20:49 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Thu, 12 Nov 2026 14:00:00 GMT"
+      "Last-Modified": "Mon, 16 Nov 2026 22:01:13 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
     "https://blogs.nvidia.co.kr/feed": {
-      "ETag": "\"6a1d60194bec87b648e3c196e4469861-gzip\"",
-      "Last-Modified": "Mon, 09 Nov 2026 11:11:45 GMT"
+      "ETag": "\"8da904d033fecada655b017230e560d7-gzip\"",
+      "Last-Modified": "Mon, 16 Nov 2026 15:27:05 GMT"
     },
     "https://blogs.nvidia.co.kr/robots.txt": {
       "ETag": "\"168f-65ed3880e5f63-gzip\"",
@@ -12382,8 +12486,8 @@
       "ETag": "\"DIXp5A\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"046594b0a1b4f4433a0de98d51f55b83\"",
-      "Last-Modified": "Sat, 14 Nov 2026 16:38:36 GMT"
+      "ETag": "\"2c5313c16210a8698325a5a82a53604c\"",
+      "Last-Modified": "Mon, 16 Nov 2026 21:27:31 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -12391,10 +12495,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc7-1IY5VxfPgmKLxH/4ub7u26oEK7g\""
+      "ETag": "W/\"33bc7-Lte5FgldeGMYC5dbPOa7ePKBNrg\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40188-lAmUfLTlSH8oeTdoWRe/hkkcXKA\""
+      "ETag": "W/\"40188-Nn0jnDEUF5kqStZYY3cl9gT6z94\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -12431,7 +12535,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1574": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -12441,12 +12544,12 @@
       "Last-Modified": "Mon, 16 Nov 2026 02:56:03 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794829973\"",
-      "Last-Modified": "Mon, 16 Nov 2026 11:52:53 GMT"
+      "ETag": "\"1794866988\"",
+      "Last-Modified": "Mon, 16 Nov 2026 22:09:48 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794830279\"",
-      "Last-Modified": "Mon, 16 Nov 2026 11:57:59 GMT"
+      "ETag": "\"1794867128\"",
+      "Last-Modified": "Mon, 16 Nov 2026 22:12:08 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -12565,7 +12668,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"021488e7ef42df9165397f1cbfc321252\""
+      "ETag": "\"08b96bbdddfe610dc7a1b233ba4a12078\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -12665,8 +12768,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"c5d7cc1267b18859c868a8666619d9df\"",
-      "Last-Modified": "Mon, 16 Nov 2026 06:12:00 GMT"
+      "ETag": "\"cf84e29d4ea0f6f96ae47bddb4c8a276\"",
+      "Last-Modified": "Mon, 16 Nov 2026 22:03:29 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
@@ -17583,9 +17686,21 @@
       "list_fingerprint": "589a6c47e0625fb0925624509269fbdb2a24ef80bec9ad1dc51e0f9436afc4fd",
       "status": "older_material"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1": {
+      "list_fingerprint": "b40abfa0a1f498fef15c21aa14614f06aa293587d9c8a634d06d1c9d41033ec8",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0": {
+      "list_fingerprint": "52384c0d48a036788921b70b446b737971f8490c2c83937ab4345f640b8c611a",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/optimizing-agent-reliability-and-tool-calling-efficiency-for-chip-design-using-nvidia-nemo-gym": {
       "list_fingerprint": "e609ed6e46eae6b81c81ad35636088fd80d0f87de84e1f8ca17c2b0d7ddf383f",
       "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain": {
+      "list_fingerprint": "08ce84d0d7b387443861df2bb878b4549d560dc029b356ad1c49274d5dc95692",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding": {
       "list_fingerprint": "38c8c2ba51fe01d3f97ea6d2efa1a633435c37992a254a40c8715ea5caa99420",
@@ -19519,6 +19634,12 @@
       "language": "en",
       "url": "https://blog.st.com/rust-mems-drivers/"
     },
+    "products:https://blog.st.com/smart-power-distribution": {
+      "fingerprint": "8dd2177f949f9df52150e7781fea89f783836b069486ec1649396db3410e8db4",
+      "first_seen": "2026-11-16T22:26:52.919910+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/smart-power-distribution/"
+    },
     "products:https://blog.st.com/snapdragon-wear-elite": {
       "fingerprint": "8fcc808a68eeca0130a103422213c9ec5c1c505ad041158cd76ec20a7f8734a8",
       "first_seen": "2026-10-29T17:02:41.996428+00:00",
@@ -19764,6 +19885,24 @@
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+    },
+    "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1": {
+      "fingerprint": "b40abfa0a1f498fef15c21aa14614f06aa293587d9c8a634d06d1c9d41033ec8",
+      "first_seen": "2026-11-16T22:26:52.919910+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1/"
+    },
+    "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0": {
+      "fingerprint": "52384c0d48a036788921b70b446b737971f8490c2c83937ab4345f640b8c611a",
+      "first_seen": "2026-11-16T22:26:52.919910+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/"
+    },
+    "products:https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain": {
+      "fingerprint": "08ce84d0d7b387443861df2bb878b4549d560dc029b356ad1c49274d5dc95692",
+      "first_seen": "2026-11-16T22:26:52.919910+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/"
     },
     "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
       "fingerprint": "c0caf0b3091b411159753d334e32fe472ad2269e6eb3d9e3e5974dfe2ad31d99",
@@ -20228,8 +20367,8 @@
       "status": "posted"
     },
     "st-technical:https://blog.st.com/smart-power-distribution": {
-      "list_fingerprint": "b516a70f5830e04d52e6269cd9e61367169335c67cf7639a2afb1d9c1e074600",
-      "status": "older_material"
+      "list_fingerprint": "8dd2177f949f9df52150e7781fea89f783836b069486ec1649396db3410e8db4",
+      "status": "posted"
     },
     "st-technical:https://blog.st.com/snapdragon-wear-elite": {
       "list_fingerprint": "8fcc808a68eeca0130a103422213c9ec5c1c505ad041158cd76ec20a7f8734a8",
