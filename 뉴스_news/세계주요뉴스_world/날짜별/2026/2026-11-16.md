@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-16 11:08 KST
+갱신: 2026-11-16 18:45 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -14,6 +14,12 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261116050900083>) · 2026-11-16 10:10 KST · 작성·제공: 한종구
 
+## 카보베르데 네베스 대통령 재선…첫 여성 후보는 고배
+
+> 서부 아프리카 섬나라 카보베르데에서 15일\(현지시간\) 치러진 대선에서 조제 마리아 페레이라 네베스\(6...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261116167500099>) · 2026-11-16 18:39 KST · 작성·제공: 나확진
+
 ## 중국도 시진핑·트럼프·푸틴 19일 선전 정상회담 공식 발표\(종합\)
 
 > 중국 정부가 오는 19일 광둥성 선전에서 시진핑 국가주석, 도널드 트럼프 미국 대통령, 블라디미르 푸틴 러...
@@ -25,6 +31,12 @@
 > 미국 엔비디아의 반도체를 중국으로 우회 반출하는 통로로 지목된 싱가포르 회사 메가스피드가 중국 스파이...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261116005400075>) · 2026-11-16 06:31 KST · 작성·제공: 김경윤
+
+## 미중러 정상회담 앞두고 우크라, 모스크바·크림반도 겨눴다
+
+> 우크라이나가 미국·러시아·중국 정상회의를 앞두고 러시아를 겨냥해 드론 공세 수위를 높이고 있다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261116164800109>) · 2026-11-16 18:23 KST · 작성·제공: 민경락
 
 ## 아르헨 경제학자 "월 2% 물가·현재 낮은 환율 지속 불가능"
 
@@ -43,6 +55,12 @@
 > "민주당은 보호관찰 기간에 있다."
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261116003000071>) · 2026-11-16 04:56 KST · 작성·제공: 백나리
+
+## 필리핀, 트럼프 방문 앞두고 대규모 반대시위 예고에 긴장감
+
+> 도널드 트럼프 미국 대통령의 아세안\(ASEAN·동남아시아국가연합\) 정상회의가 열리는 필리핀 방문을 앞두고 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261116139000084>) · 2026-11-16 17:13 KST · 작성·제공: 박진형
 
 ## 트럼프·민주, 美항공사태 네탓 공방…예산 갈등으로 번져
 
@@ -90,11 +108,47 @@
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/15/china-north-korea-trade-building/>) · 2026-11-16 06:00 KST · 작성·제공: 서울-목용재 moky@rfa.org
 
+## 북, 국회의원실 사칭 ‘사이버 첩보’ 활동...피싱메일로 답장 유도
+
+> 한국 국회의원실 선임비서관을 사칭한 북한의 해킹 공격이 한국 보안업체에 의해 포착됐다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/16/north-korea-hacking-binance-kimsuky/>) · 2026-11-16 17:23 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
 ## 美재무 “유가 하락하는데 과도한 금리 인상 안 돼”…연준에 신중론
 
 > 스콧 베선트 미국 재무장관이 에너지 가격 급등을 이유로 금리를 과도하게 올려서는 안 된다고 밝혔다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261116/135030545/1>) · 2026-11-16 10:40 KST
+
+## 미중러 정상회의 앞두고… ‘김정은 복심’ 조용원의 방러 세가지 이유
+
+> 북한은 중국 선전 APEC 정상회의 계기 미중러 3국 회의가 예상되는 상황에서 대미 요구사항 관철과 동시에 북러 관계 및 북중러 진영 외교 강화를 위해 김 위원장의…
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/16/apec-asean-russia-chaina-trump/>) · 2026-11-16 15:47 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
+## 전국 약국 재고를 한눈에…북, 의약품 정보 플랫폼 ‘륭성’ 가동
+
+> 북한이 주민들이 전국 약국의 의약품 재고를 확인하고 제품에 대한 이용자 평가까지 살펴볼 수 있는 온라인 의료품 유통 시스템을 도입했다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/16/north-korea-medical-platform-pharmacy-medicine-stock/>) · 2026-11-16 14:17 KST · 작성·제공: 서울-김지수 kimjis@rfa.org
+
+## 멕시코 마약 카르텔의 대부, 80세로 옥중 사망…‘나르코스’ 실제 주인공
+
+> 1980년대 중남미 마약 밀매의 판도를 뒤바꾸며 현대 멕시코 카르텔의 원형을 설계한 미겔 앙헬 펠릭스 가야르도가 80세를 일기로 37년 간의 수감생활 끝에 옥중사망했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261116/135033796/1>) · 2026-11-16 17:25 KST
+
+## 중동에 3번째 美항모 전단 배치…트럼프, 공격·외교 카드 저울질
+
+> 도널드 트럼프 미국 대통령이 이란에 대한 추가 군사 공격 가능성을 신중히 검토하고 있는 가운데, 미 해군의 세 번째 항공모함 전단이 중동 작전 해역에 추가로 배치됐다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261116/135034732/1>) · 2026-11-16 18:21 KST
+
+## 美 항공마비 사태 결항 1만7000편↑…35년만 ‘역대 최악’ 기록
+
+> 미국 항공 교통 관제 통신 장애로 4시간여 전국 이륙이 멈추면서 사흘 새 항공편 1만7000편 넘게 결항했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261116/135034332/2>) · 2026-11-16 18:19 KST
 
 ## 메가스피드 “앨리스 황 작년 8월 퇴사”…中에 반도체 불법반출 의혹 부인
 
@@ -106,6 +160,7 @@
 
 - [Cape Verde election could deliver first woman president since independence in 1975](<https://abcnews.com/International/wireStory/cape-verde-elect-woman-president-gaining-independence-1975-138154009>) · ABC News 미국
 - [Africa: How Africa Can Mobilize More Climate Finance](<https://allafrica.com/stories/202611150037.html>) · AllAfrica · allAfrica.com
+- [Cape Verde: Neves Wins Second Term As Cape Verde's President](<https://allafrica.com/stories/202611160239.html>) · AllAfrica · allAfrica.com
 - [Czechs gather in big numbers to reject government's plan to overhaul funding of public media](<https://abcnews.com/International/wireStory/czechs-gather-big-numbers-reject-governments-plan-overhaul-138158812>) · ABC News 미국
 - [Zelenskyy warns Starshield restrictions threaten Ukraine’s energy defenses](<https://abcnews.com/International/wireStory/zelenskyy-warns-starshield-restrictions-threaten-ukraines-energy-defenses-138156524>) · ABC News 미국
 - [Southeast Asian leaders denounce violence in Myanmar and extend ban on its leader](<https://abcnews.com/International/wireStory/southeast-asian-leaders-denounce-violence-myanmar-extend-ban-138155822>) · ABC News 미국
