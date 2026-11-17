@@ -1,118 +1,34 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-17 23:49 KST
+반영: 2026-11-18 08:06 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## AUTOIQ.ai, AI-powered ISP tuning on STM32 and with STM32 middleware; the new benchmark in computer vision
+## Co-Designing Sparse Attention for Efficient Long-Context Inference
 
-STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 이미지·영상 처리·평가 주제를 다룹니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·에이전트·도구 사용·긴 문맥·장기 작업·비용·실행 효율 주제를 다룹니다.
 
-출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/autoiq-ai-emmertra/>) · RSS·Atom 발행 시각: 2026-11-17 23:00 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/>) · RSS·Atom 발행 시각: 2026-11-18 02:30 KST
 
-RSS·Atom 표기 작성자: David Civera
+RSS·Atom 표기 작성자: Timmy Liu
 
-가져온 시각: 2026-11-17 23:49:37 KST
-
-수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## NVIDIA, 글로벌 파트너십 기반 AI 인프라 공급망 구축 전략을 소개하다
-
-> NVIDIA 운영 부문 수석부사장 Deb Shoquist가 최근 Global Semiconductor Alliance \(GSA\)의 ‘2026 Dr. Lisa Su…
-
-출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/ai-infrastructure-supply-chain/>) · RSS·Atom 발행 시각: 2026-11-17 12:43 KST
-
-RSS·Atom 표기 작성자: NVIDIA Korea
-
-가져온 시각: 2026-11-17 13:44:34 KST
-
-수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
-
-개요: 공식 한국어 소개 발췌
-
-## AI Day Seoul, 한국의 산업계 리더와 스타트업, 개발자 커뮤니티가 한자리에 모이다
-
-> 코엑스에서 이틀간 열린 AI Day Seoul에 2,000명 넘는 참석자가 모였습니다. 피지컬 AI와 AI 에이전트를…
-
-출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/ai-day-seoul-wrapup/>) · RSS·Atom 발행 시각: 2026-11-17 09:26 KST
-
-RSS·Atom 표기 작성자: NVIDIA Korea
-
-가져온 시각: 2026-11-17 13:44:34 KST
-
-수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
-
-개요: 공식 한국어 소개 발췌
-
-## Accelerate Molecular Dynamics Simulations with Accurate, Flexible Primitives Using NVIDIA cuPotential
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential/>) · RSS·Atom 발행 시각: 2026-11-17 07:30 KST
-
-RSS·Atom 표기 작성자: Yutong Zhao
-
-가져온 시각: 2026-11-17 13:44:33 KST
+가져온 시각: 2026-11-18 08:06:39 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Update: Smart power distribution in cars, it’s much more than a numbers game, it’s how the future takes shape
+## Integrating QPUs into Supercomputing Centers Using Slurm HRES Plugins
 
-STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 프로세서·컴퓨터구조 주제를 다룹니다.
 
-출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/smart-power-distribution/>) · RSS·Atom 발행 시각: 2026-11-17 01:38 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins/>) · RSS·Atom 발행 시각: 2026-11-18 02:00 KST
 
-RSS·Atom 표기 작성자: David Civera
+RSS·Atom 표기 작성자: Stefano Mensa
 
-가져온 시각: 2026-11-17 07:28:12 KST
-
-수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/>) · RSS·Atom 발행 시각: 2026-11-17 01:00 KST
-
-RSS·Atom 표기 작성자: Gautham Dharuman
-
-가져온 시각: 2026-11-17 07:28:10 KST
-
-수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·에이전트·도구 사용 주제를 다룹니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/>) · RSS·Atom 발행 시각: 2026-11-17 01:00 KST
-
-RSS·Atom 표기 작성자: Zhihan Jiang
-
-가져온 시각: 2026-11-17 07:28:10 KST
-
-수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## NVIDIA Vera Rubin NVL72 Achieves up to 2x Blackwell Ultra Performance in MLPerf Training v6.1
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1/>) · RSS·Atom 발행 시각: 2026-11-17 01:00 KST
-
-RSS·Atom 표기 작성자: Farshad Ghodsian
-
-가져온 시각: 2026-11-17 07:28:10 KST
+가져온 시각: 2026-11-18 08:06:39 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
