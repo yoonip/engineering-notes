@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-17 12:54 KST
+갱신: 2026-11-17 22:27 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -20,6 +20,18 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261117003700091>) · 2026-11-17 02:33 KST · 작성·제공: 권영전
 
+## 수단 내전서 올해 민간인 2천230명 사망…"넷 중 셋은 드론에"
+
+> 4년째 내전이 이어지고 있는 아프리카 수단에서 올해에만 민간인 사망자가 2천명이 넘은 것으로 파악됐다...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261117171200099>) · 2026-11-17 21:34 KST · 작성·제공: 나확진
+
+## '트럼프 갈등' 캐나다, 中과 경협 확대…추가 관세인하 합의\(종합\)
+
+> 시진핑 중국 국가주석과 마크 카니 캐나다 총리가 17일\(현지시간\) 정상회담을 열고 양국 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261117123251009>) · 2026-11-17 21:32 KST · 작성·제공: 한종구
+
 ## SAT도 뚫렸다…바칼로레아도 AI 부정행위와 '전쟁'
 
 > 미국 대학입학자격시험\(SAT\)을 비롯한 세계 각국의 주요 시험에서 인공지능\(AI\) 등 첨단 기술을 악용한 부정...
@@ -31,6 +43,12 @@
 > 우크라이나가 지난 밤사이 러시아 본토와 러시아가 점령 중인 크림반도를 잇는 다리를 공격하는 등 대규모 드론 공격을 감행했습니다.
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-russia-ukraine-111726/8224253.html>) · 2026-11-17 03:23 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## EU, 올해 성장률 1.1→1.4%로…"AI 호황이 수출 견인"
+
+> 유럽연합\(EU\)이 올해 경제 성장률을 1.4%로 올려 잡았다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261117168700098>) · 2026-11-17 20:49 KST · 작성·제공: 현윤경
 
 ## 日 3세아동 학대사에 '발칵'…아동상담소 "긴급성 없다" 무시
 
@@ -74,6 +92,24 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/ndaa-korea-provisions-111626/8224284.html>) · 2026-11-17 04:09 KST
 
+## 전시납북가족회 “여전히 보상 사각지대”… 배·보상법 국회 통과 촉구
+
+> 6.25전쟁납북인사가족협의회는 17일 전시 납북피해자 배보상을 위한 입법 촉구 대회를 갖고 전시 납북 피해자에 대한 국가 차원의 배보상이 이뤄지도록 국회 차원의 책임을 촉구했다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/17/north-korea-assembly-korean-war/>) · 2026-11-17 16:56 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
+## \[마닐라 아세안 현장\] 트럼프-김정은 회동 놓고 “가능성 낮다” vs “배제 못 해” 교차
+
+> 트럼프 대통령의 아시아 순방 취재를 위해 마닐라 현지에 특파된 노정민 기자는 북미 정상회담의 개최 가능성을 낮게 보는 분위기가 트럼프 대통령의 발언 이후 달라졌다고 전했다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/17/trump-kim-meeting-asean-manila/>) · 2026-11-17 16:42 KST · 작성·제공: 마닐라-노정민 nohj@rfa.org
+
+## APEC 계기 미북 ‘깜짝 회동’ 시나리오 성사 가능성은
+
+> 현재 미북 정상 간 만남 가능성은 낮다는 것이 전문가들의 중론이지만 일각에서는 김 위원장의 방중 혹은 트럼프 대통령의 방북을 통한 ‘깜짝 시나리오’ 두가지가 거론된다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/17/apec-russia-china-trump-kim/>) · 2026-11-17 17:52 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
 ## 버섯으로 만든 배 타고 42㎞ 바다 항해…美예술가, 기네스 신기록
 
 > 버섯의 뿌리 조직으로 만든 카약을 타고 바다에서 42㎞ 넘게 항해한 미국 예술가가 기네스 세계기록을 세웠다.
@@ -94,7 +130,11 @@
 
 ## 다른 매체의 원문
 
+- [Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia](<https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy>) · NPR
+- [Trump to meet Chinese leader Xi Jinping and Russia's Vladimir Putin for joint summit](<https://www.npr.org/2026/11/17/nx-s1-6042448/trump-to-meet-chinese-leader-xi-jinping-and-russias-vladimir-putin-for-joint-summit>) · NPR
 - [Macron leaves summit of French-speaking nations with leadership dispute on hold](<https://abcnews.com/International/wireStory/macron-leaves-summit-french-speaking-nations-leadership-dispute-138172198>) · ABC News 미국
+- [How Europe decided on 'return hubs' for migrants](<https://abcnews.com/International/wireStory/europe-decided-return-hubs-migrants-138205386>) · ABC News 미국
+- [EU-backed court convicts Kosovo ex-President of attempting to obstruct justice](<https://abcnews.com/International/wireStory/eu-backed-court-convicts-kosovo-president-hashim-thaci-138204660>) · ABC News 미국
 - [Africa: Trading in yuan](<https://www.npr.org/2026/11/16/nx-s1-6035000/africa-trading-in-yuan>) · NPR
 - [Mozambique's Mondlane is the latest opposition leader to go on trial in Africa](<https://abcnews.com/International/wireStory/mozambiques-venancio-mondlane-latest-opposition-leader-trial-africa-138196123>) · ABC News 미국
 - [Israelis voted for change. Can Gadi Eisenkot deliver?](<https://www.csmonitor.com/World/Middle-East/2026/1116/israel-elections-eisenkot-netanyahu-arab-palestinian?icid=rss>) · The Christian Science Monitor

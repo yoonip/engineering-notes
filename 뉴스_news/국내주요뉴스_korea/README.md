@@ -1,8 +1,26 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-17 12:54 KST
+갱신: 2026-11-17 22:27 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
+
+## 미국, AI반도체 중국 우회로 차단…삼전닉스 영향 촉각
+
+> 오늘 코스피가 흔들린 건, 미국에서 날아든 추가 악재의 영향도 컸습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008850412&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-17 22:27 KST · 작성·제공: noisycart@sbs.co.kr \(최승훈\)
+
+## 단추마다 스티커…숨긴 폰에 '재난문자' 울린다
+
+> 온 국민의 불안과 걱정 속에 수능이 이틀 앞으로 다가왔습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008850401&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-17 22:27 KST · 작성·제공: sun@sbs.co.kr \(장선이\)
+
+## \[단독\] '세무사 수석' 7장 분량 경위서엔…"계산기 직접 개조"
+
+> 부정행위를 자백한 세무사 시험 수석 합격자 한 모 씨가, 오늘 경찰에 출석했습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008850406&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-17 22:27 KST · 작성·제공: yhg@sbs.co.kr \(여현교\)
 
 ## ‘한덕수 3심’ 석달 지연… 석방 논란 커지자 구속 만기 직전 선고
 
@@ -38,6 +56,12 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008848517&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-17 01:24 KST · 작성·제공: cbcb@sbs.co.kr \(박찬범\)
 
+## 한국 보디빌딩, 아시아선수권 여자 마스터즈 종합우승
+
+> 대한민국 보디빌딩 선수단이 2026 세계피트니스 &amp;amp; 보디빌딩연맹\(IFBB\) 아시아선수권대회에서 여자 마...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261117173500007>) · 2026-11-17 22:07 KST · 작성·제공: 이영호
+
 ## \[건강포커스\] "베트남전서 고엽제 직접 다룬 미군, 파킨슨병 위험 99% 높아"
 
 > 베트남전쟁 당시 고엽제인 '에이전트 오렌지'\(Agent Orange\)를 직접 취급하거나 살포한 미군 참전용사는...
@@ -68,11 +92,23 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8224267.html>) · 2026-11-17 03:43 KST · 작성·제공: voadigital@voanews.com \(조진우\)
 
+## \[속보\] 李대통령 "AI업체 '불법 시험답안 요구사례' 의무제출法 제정"
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261117171000001>) · 2026-11-17 21:24 KST · 작성·제공: 임형섭
+
 ## 8천억 불법 도박…일등석 타고 월드컵 직관
 
 > 동남아를 돌며 4년 동안 8천억 원 규모의 불법 도박 사이트를 운영한 일당이 경찰에 붙잡혔습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008848538&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-16 22:13 KST · 작성·제공: newsservice@sbs.co.kr\(SBS\)
+
+## \[속보\] 李대통령 "부정 신고시 건당 1억 포상…신고자 처벌 감면"
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261117170900001>) · 2026-11-17 21:25 KST · 작성·제공: 임형섭
+
+## \[속보\] 李대통령 "재난문자 수능 시험 중 수시 발신 검토"
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261117170800001>) · 2026-11-17 21:25 KST · 작성·제공: 임형섭
 
 ## 유럽 최대 우주 전시회서 국내 우주창업기업 알린다
 
@@ -92,6 +128,10 @@
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261117080100053>) · 2026-11-17 11:26 KST · 작성·제공: 한무선
 
+## \[속보\] 李대통령 "시험부정 고려하는 분들, 인생 망치지 말고 포기하길"
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261117170000001>) · 2026-11-17 21:13 KST · 작성·제공: 임형섭
+
 ## 우승 상금 400만 달러 LPGA 최종전 투어 챔피언십 19일 개막
 
 > 2026시즌 미국여자프로골프\(LPGA\) 투어를 뜨겁게 달궜던 강자들이 CME그룹 투어 챔피언십에서 시즌 마지막...
@@ -109,6 +149,14 @@
 > 대한체육회는 민선 3기 지방체육회장 선거에 대비해 서울 송파구 올림픽회관 신관에 종합상황실을 열었다고 17일 ...
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261117072800007>) · 2026-11-17 10:52 KST · 작성·제공: 최송아
+
+## \[속보\] 李대통령 "시험 뒤에도 부정행위 전수조사…엄중처벌 홍보해야"
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261117169200001>) · 2026-11-17 20:57 KST · 작성·제공: 임형섭
+
+## \[속보\] 李대통령 "SNS·커뮤니티 스크린 필요…대책 보완해야"
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261117169100001>) · 2026-11-17 20:57 KST · 작성·제공: 임형섭
 
 ## ETRI, 우주용 전력반도체 2종 국산화…위성 핵심 부품 확보
 
