@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-17 05:29 KST
+갱신: 2026-11-17 12:54 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -20,11 +20,29 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261117003700091>) · 2026-11-17 02:33 KST · 작성·제공: 권영전
 
+## SAT도 뚫렸다…바칼로레아도 AI 부정행위와 '전쟁'
+
+> 미국 대학입학자격시험\(SAT\)을 비롯한 세계 각국의 주요 시험에서 인공지능\(AI\) 등 첨단 기술을 악용한 부정...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261117086400009>) · 2026-11-17 11:51 KST · 작성·제공: 김아람
+
 ## 미·중·러 정상회담 앞두고 러·우 군사 충돌 격화
 
 > 우크라이나가 지난 밤사이 러시아 본토와 러시아가 점령 중인 크림반도를 잇는 다리를 공격하는 등 대규모 드론 공격을 감행했습니다.
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-russia-ukraine-111726/8224253.html>) · 2026-11-17 03:23 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 日 3세아동 학대사에 '발칵'…아동상담소 "긴급성 없다" 무시
+
+> 일본에서 3세 아동이 부친의 폭행으로 숨지는 사건이 발생해 현지 사회에 충격을 주고 있다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261117075700009>) · 2026-11-17 11:08 KST · 작성·제공: 김병규
+
+## 대만 학계 "미중 군사위기관리MOU 체결되면 자주국방 영향 우려"
+
+> 미국과 중국이 군사 관련 위기 예방을 위한 양해각서\(MOU\) 체결을 추진하는 것으로 알려진 가운데 이에 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261117086600009>) · 2026-11-17 12:35 KST · 작성·제공: 김철문
 
 ## 사우디, 예멘 내 연합군 지휘관 교체…전황 악화 속 지휘부 개편
 
@@ -56,9 +74,31 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/ndaa-korea-provisions-111626/8224284.html>) · 2026-11-17 04:09 KST
 
+## 버섯으로 만든 배 타고 42㎞ 바다 항해…美예술가, 기네스 신기록
+
+> 버섯의 뿌리 조직으로 만든 카약을 타고 바다에서 42㎞ 넘게 항해한 미국 예술가가 기네스 세계기록을 세웠다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261117/135038549/1>) · 2026-11-17 12:23 KST
+
+## 미셸 오바마, 세번째 그래미상 도전…남편 기록 넘어설까
+
+> 버락 오바마 전 미국 대통령의 부인 미셸 오바마가 저서 오디오북으로 세 번째 그래미상 후보에 올랐다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261117/135037946/1>) · 2026-11-17 11:06 KST
+
+## 엔비디아 이사회 ‘젠슨 황 복귀’ 일축…트럼프는 “복귀해도 괜찮아”
+
+> 젠슨 황 전 엔비디아 최고경영자\(CEO\)가 11일\(현지 시간\) 최근 일련의 불륜 사태에 책임을 지고 사임했음에도 불구하고 그의 거취를 두고 잡음이 지속되고 있다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261117/135037993/1>) · 2026-11-17 11:06 KST
+
 ## 다른 매체의 원문
 
 - [Macron leaves summit of French-speaking nations with leadership dispute on hold](<https://abcnews.com/International/wireStory/macron-leaves-summit-french-speaking-nations-leadership-dispute-138172198>) · ABC News 미국
+- [Africa: Trading in yuan](<https://www.npr.org/2026/11/16/nx-s1-6035000/africa-trading-in-yuan>) · NPR
+- [Mozambique's Mondlane is the latest opposition leader to go on trial in Africa](<https://abcnews.com/International/wireStory/mozambiques-venancio-mondlane-latest-opposition-leader-trial-africa-138196123>) · ABC News 미국
+- [Israelis voted for change. Can Gadi Eisenkot deliver?](<https://www.csmonitor.com/World/Middle-East/2026/1116/israel-elections-eisenkot-netanyahu-arab-palestinian?icid=rss>) · The Christian Science Monitor
+- [Africa: The End of a Cancer Is in Sight for the First Time in Public Health History](<https://allafrica.com/stories/202611160848.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
