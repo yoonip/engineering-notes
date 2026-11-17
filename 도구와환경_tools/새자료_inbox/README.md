@@ -1,30 +1,54 @@
 # 도구·보안 새 자료
 
-반영: 2026-11-16 20:58 KST
+반영: 2026-11-17 23:49 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## Fortinet 제품 보안 업데이트 권고
+## Citrix 제품 보안 업데이트 권고
 
-> Fortinet社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]~\[14\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
+> Citrix社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]~\[3\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
 
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72308>) · 공식 RSS 게시일: 2026-11-16
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72312>) · 공식 RSS 게시일: 2026-11-17
 
-가져온 시각: 2026-11-16 20:57:50 KST
+가져온 시각: 2026-11-17 23:49:30 KST
 
 수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
 
 개요: 공식 한국어 소개 발췌
 
-## Git 제품 보안 업데이트 권고
+## Check Point 제품 보안 업데이트 권고
 
-> Git 패키지에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]\[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신…
+> Check Point社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]\[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결…
 
-출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72307>) · 공식 RSS 게시일: 2026-11-16
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72311>) · 공식 RSS 게시일: 2026-11-17
 
-가져온 시각: 2026-11-16 20:57:50 KST
+가져온 시각: 2026-11-17 23:49:32 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## PostgreSQL 제품 보안 업데이트 권고
+
+> PostgreSQL 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]~\[25\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72310>) · 공식 RSS 게시일: 2026-11-17
+
+가져온 시각: 2026-11-17 23:49:33 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
+
+## MongoDB 제품 보안 업데이트 권고
+
+> MongoDB社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\]\[2\] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72309>) · 공식 RSS 게시일: 2026-11-17
+
+가져온 시각: 2026-11-17 23:49:34 KST
 
 수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
 
