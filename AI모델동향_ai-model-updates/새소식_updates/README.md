@@ -1,18 +1,18 @@
 # 모델 발표
 
-반영: 2026-11-14 03:00 KST
+반영: 2026-11-18 08:06 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
-## Releasing the full suite of application APIs
+## Introducing GPT-6.2 Astra and Sol
 
-DeepSeek의 모델 관련 공식 발표입니다. 공개 제목·소개에서 추론 주제를 다룹니다.
+OpenAI의 모델 관련 공식 발표입니다. 공개 제목·소개에서 코딩·컴퓨터·브라우저 사용·비용·실행 효율 주제를 다룹니다.
 
-출처: [DeepSeek](<https://api-docs.deepseek.com/>) · [원문](<https://api-docs.deepseek.com/updates/#releasing-the-full-suite-of-application-apis>) · 발표일: 2026-11-13
+출처: [OpenAI](<https://openai.com/>) · [원문](<https://openai.com/index/introducing-gpt-6-2-astra-sol>) · 발표일: 2026-11-18 02:45 KST
 
-가져온 시각: 2026-11-14 02:59:03 KST
+가져온 시각: 2026-11-18 08:05:30 KST
 
-수집 경로: [공식 목록·피드](<https://api-docs.deepseek.com/updates/>) · 방법: 공식 목록·공개 소개문
+수집 경로: [공식 목록·피드](<https://openai.com/news/rss.xml>) · 방법: 공식 RSS·Atom의 제목·소개문
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
