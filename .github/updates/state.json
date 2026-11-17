@@ -1,5 +1,6 @@
 {
   "aliases": {
+    "industry:https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest": "industry:https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest",
     "industry:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": "industry:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface",
     "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902850&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
     "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": "industry:https://www.mcee.go.kr/home/web/board/read.do?boardId=1902910&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=",
@@ -51,6 +52,7 @@
     "models:https://openai.com/index/gpt-6-for-everyone": "models:https://openai.com/index/gpt-6-for-everyone",
     "models:https://openai.com/index/introducing-gpt-6-1-sol": "models:https://openai.com/index/introducing-gpt-6-1-sol",
     "models:https://openai.com/index/introducing-gpt-6-1-terra": "models:https://openai.com/index/introducing-gpt-6-1-terra",
+    "models:https://openai.com/index/introducing-gpt-6-2-astra-sol": "models:https://openai.com/index/introducing-gpt-6-2-astra-sol",
     "models:https://www.anthropic.com/claude-fable-and-mythos-5-2": "models:https://www.anthropic.com/claude-fable-and-mythos-5-2",
     "models:https://www.anthropic.com/claude-haiku-5-5": "models:https://www.anthropic.com/claude-haiku-5-5",
     "models:https://www.anthropic.com/claude-sonnet-5-5": "models:https://www.anthropic.com/claude-sonnet-5-5",
@@ -376,6 +378,7 @@
     "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo",
     "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw",
     "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos",
+    "products:https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference": "products:https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference",
     "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os": "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os",
     "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution": "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution",
     "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas": "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas",
@@ -383,6 +386,7 @@
     "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory": "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory",
     "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations": "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations",
     "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform",
+    "products:https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins": "products:https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins",
     "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery": "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery",
     "products:https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5": "products:https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5",
     "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one": "products:https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one",
@@ -461,6 +465,7 @@
     "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.3",
     "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.4",
     "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5",
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.6": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.6",
     "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2",
     "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72244",
@@ -519,7 +524,8 @@
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72309": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72309",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72310": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72310",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72311": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72311",
-    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72312": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72312"
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72312": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72312",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313"
   },
   "days": {
     "industry": {
@@ -691,6 +697,27 @@
           "title": "대규모 전력수요의 합리적 분산을 위한 전력계통영향평가 제도 본격 시행",
           "update": false,
           "url": "https://www.mcee.go.kr/home/web/board/read.do;jsessionid=YvVeSRVwPhytOqJLg9vfuHh67EJoz9LFSuaDgGwg.mehome2?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1907220"
+        }
+      ],
+      "2026-11-18": [
+        {
+          "acquired_at": "2026-11-17T23:06:35.365203+00:00",
+          "acquisition_method": "공식 기술 분야 RSS의 제목·발행일·소개",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-17T22:02:48+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-17T23:05:30.717250+00:00",
+          "group": "industry",
+          "homepage": "https://www.nasa.gov/technology/",
+          "key": "industry:https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest",
+          "source_name": "NASA 기술 자료",
+          "source_url": "https://www.nasa.gov/technology/feed/",
+          "summary_ko": "NASA 기술 자료에서 공개한 산업 기술 자료입니다. 공개 제목·소개에서 이미지·영상 처리 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NASA Launches Nuclear Power Systems Student Contest",
+          "update": false,
+          "url": "https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest/"
         }
       ]
     },
@@ -1056,6 +1083,27 @@
           "title": "Releasing the full suite of application APIs",
           "update": false,
           "url": "https://api-docs.deepseek.com/updates/#releasing-the-full-suite-of-application-apis"
+        }
+      ],
+      "2026-11-18": [
+        {
+          "acquired_at": "2026-11-17T23:05:30.977264+00:00",
+          "acquisition_method": "공식 RSS·Atom의 제목·소개문",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-17T17:45:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-11-17T23:05:30.717250+00:00",
+          "group": "models",
+          "homepage": "https://openai.com/",
+          "key": "models:https://openai.com/index/introducing-gpt-6-2-astra-sol",
+          "source_name": "OpenAI",
+          "source_url": "https://openai.com/news/rss.xml",
+          "summary_ko": "OpenAI의 모델 관련 공식 발표입니다. 공개 제목·소개에서 코딩·컴퓨터·브라우저 사용·비용·실행 효율 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Introducing GPT-6.2 Astra and Sol",
+          "update": false,
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
         }
       ]
     },
@@ -8963,6 +9011,46 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/"
         }
+      ],
+      "2026-11-18": [
+        {
+          "acquired_at": "2026-11-17T23:06:39.932937+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Timmy Liu",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-17T17:30:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-17T23:05:30.717250+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·에이전트·도구 사용·긴 문맥·장기 작업·비용·실행 효율 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Co-Designing Sparse Attention for Efficient Long-Context Inference",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/"
+        },
+        {
+          "acquired_at": "2026-11-17T23:06:39.932937+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Stefano Mensa",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-17T17:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-17T23:05:30.717250+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 프로세서·컴퓨터구조 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Integrating QPUs into Supercomputing Centers Using Slurm HRES Plugins",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins/"
+        }
       ]
     },
     "reports": {
@@ -10522,6 +10610,46 @@
           "update": false,
           "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72312"
         }
+      ],
+      "2026-11-18": [
+        {
+          "acquired_at": "2026-11-17T23:06:39.746313+00:00",
+          "acquisition_method": "공식 저장소의 공개 Releases API(안정판)",
+          "date": "2026-11-17T16:32:45+00:00",
+          "date_label": "공식 릴리스 게시 시각",
+          "first_seen": "2026-11-17T23:05:30.717250+00:00",
+          "group": "tools",
+          "homepage": "https://github.com/llvm/llvm-project/releases",
+          "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.6",
+          "kind": "공식 안정판 릴리스",
+          "published_kind": "official_release",
+          "source_name": "LLVM Project",
+          "source_url": "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20",
+          "summary_ko": "LLVM Project에서 공개한 도구·보안 공지입니다. 공개 제목·소개에서 개발 도구·시스템 소프트웨어 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "LLVM 23.1.6",
+          "update": false,
+          "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.6"
+        },
+        {
+          "acquired_at": "2026-11-17T23:06:38.488204+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-11-17T23:05:30.717250+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Oracle社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Oracle 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72313"
+        }
       ]
     }
   },
@@ -11148,6 +11276,12 @@
       "date": "2026-11-17",
       "description": "Citrix社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1]~[3] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
       "title": "Citrix 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-11-18",
+      "description": "Oracle社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Oracle 제품 보안 업데이트 권고"
     },
     "https://www.kdi.re.kr/research/economy?pub_no=18120": {
       "date": "",
@@ -12788,6 +12922,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos"
     },
+    "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference"
+    },
     "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os"
@@ -12815,6 +12953,10 @@
     "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform"
+    },
+    "https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins"
     },
     "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery": {
       "group": "products",
@@ -12920,6 +13062,10 @@
       "group": "tools",
       "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5"
     },
+    "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.6": {
+      "group": "tools",
+      "key": "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.6"
+    },
     "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": {
       "group": "tools",
       "key": "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2"
@@ -12999,6 +13145,14 @@
     "https://openai.com/index/introducing-gpt-6-1-terra": {
       "group": "models",
       "key": "models:https://openai.com/index/introducing-gpt-6-1-terra"
+    },
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol": {
+      "group": "models",
+      "key": "models:https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
+    "https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest": {
+      "group": "industry",
+      "key": "industry:https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest"
     },
     "https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": {
       "group": "industry",
@@ -13244,6 +13398,10 @@
       "group": "tools",
       "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72312"
     },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313"
+    },
     "https://www.kdi.re.kr/research/economy?pub_no=19321": {
       "group": "reports",
       "key": "reports:https://www.kdi.re.kr/research/economy?pub_no=19321"
@@ -13335,10 +13493,10 @@
       "Last-Modified": "Mon, 16 Nov 2026 09:36:52 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"a772447f69c26c074b8b8c9e1038225057623457cdf231e7ebcb9fca387491c2\""
+      "ETag": "W/\"d93027c4066a3e6dcfc4c234a87e028d33fbd8af5bdfef2f308f154f2941ec15\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"36d7b64aef9a31f794d38f259c80bff9eccb9b9bbd77cc8ef69f5018c5428366\""
+      "ETag": "W/\"8a3c4c3482b2543d588155f57506fcb6afef973d6740eb307c188e340bb4267e\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -13375,14 +13533,14 @@
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"aDQz3A\""
+      "ETag": "\"5NLHaA\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"vm8RHA\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"0d3f4b6ef268c6c461cee649fdd9489d\"",
-      "Last-Modified": "Mon, 16 Nov 2026 22:30:00 GMT"
+      "ETag": "\"a016b64c7237034d0af07fbdf266438e\"",
+      "Last-Modified": "Tue, 17 Nov 2026 17:30:00 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -13390,10 +13548,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-hLtT/U9PF7/AKmEQy053nSHcl7c\""
+      "ETag": "W/\"33bc8-dEH3ljV+8HiF/RCBOY2p/nj0iSA\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40188-SghDqHGlsFZdLjXJLvgoZTCaalo\""
+      "ETag": "W/\"40188-PwIwMiIHqTmUss5WeIQmhcdsLXw\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -13439,12 +13597,12 @@
       "Last-Modified": "Tue, 17 Nov 2026 04:23:21 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794925303\"",
-      "Last-Modified": "Tue, 17 Nov 2026 14:21:43 GMT"
+      "ETag": "\"1794955127\"",
+      "Last-Modified": "Tue, 17 Nov 2026 22:38:47 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794926065\"",
-      "Last-Modified": "Tue, 17 Nov 2026 14:34:25 GMT"
+      "ETag": "\"1794956808\"",
+      "Last-Modified": "Tue, 17 Nov 2026 23:06:48 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -13522,6 +13680,7 @@
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72310": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72311": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72312": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313": {},
     "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133": {},
     "https://www.boho.or.kr/robots.txt": {
       "ETag": "W/\"243-1794382637620\"",
@@ -13567,7 +13726,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0ce3c260ef764959c2db0e23b448a80e2\""
+      "ETag": "\"01c3b090d4a5d6b9cc419f2cb43a026f3\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -13667,12 +13826,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"972bbcd35e8215d1b649f5bab0327be5\"",
-      "Last-Modified": "Tue, 17 Nov 2026 14:41:49 GMT"
-    },
-    "https://www.ocw-openmatters.org/feed": {
-      "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
-      "Last-Modified": "Thu, 12 Nov 2026 14:56:06 GMT"
+      "ETag": "\"623d4a15c21aecf77c3c3939bbaf8550\"",
+      "Last-Modified": "Tue, 17 Nov 2026 22:41:03 GMT"
     },
     "https://www.ocw-openmatters.org/robots.txt": {
       "ETag": "\"065a733f5-0;;;\"",
@@ -17451,6 +17606,12 @@
       "list_fingerprint": "4c41995c121c3a9ed5d52753459a16ebe06b9d59921472fa891ed1ba89d3befa",
       "status": "posted"
     },
+    "industry:https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest": {
+      "fingerprint": "8bdbb081a30de6f68f5299ea27b581951d9bdd592e6c1a7cefa0a5f9dd437172",
+      "first_seen": "2026-11-17T23:05:30.717250+00:00",
+      "language": "en",
+      "url": "https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest/"
+    },
     "industry:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": {
       "fingerprint": "9a63700995816e9917818c4620da1899d44edf6bc138b070c34b2a9a795c3e46",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -17989,6 +18150,10 @@
       "list_fingerprint": "b879931fa4ac59f68d14c496470e5c0fa05d4c2388a5f19e4ea5f9687f9a11dd",
       "status": "posted"
     },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313": {
+      "list_fingerprint": "15eed495f36a637bddb078f4590fe98c70dd7e23b04f8a2fcd5eb2194ec83b8f",
+      "status": "posted"
+    },
     "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93860&mid=a10306040000": {
       "list_fingerprint": "d8d15543a49c2c241f17085238c50bbbc61e603451d3734f26ff9c1f1821d2ae",
       "status": "older_material"
@@ -18349,6 +18514,10 @@
       "list_fingerprint": "71a93219a3d9e4917e791be82c27cbb43180d6d3468af5aa798dad3a512b02d5",
       "status": "posted"
     },
+    "llvm-releases:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.6": {
+      "list_fingerprint": "39d1d80f73993f437820690243716a1f134b8154ecd46870c525222d29f60828",
+      "status": "posted"
+    },
     "mcee-energy:https://www.mcee.go.kr/home/web/board/read.do?boardId=1901970&boardMasterId=939&maxIndexPages=10&maxPageItems=10&menuId=10598&orgCd=&pagerOffset=0&searchKey=&searchValue=": {
       "list_fingerprint": "87d221f90d8d089a687dc793a66a33bdccae494af5cfaca6521f4df42ccb832a",
       "status": "bootstrap_skipped"
@@ -18543,6 +18712,12 @@
       "language": "en",
       "url": "https://openai.com/index/introducing-gpt-6-1-terra"
     },
+    "models:https://openai.com/index/introducing-gpt-6-2-astra-sol": {
+      "fingerprint": "fa98548b025fcbdcb4e3a3af19ca0234d3c4bb541d141bb2e49b6f59451280d9",
+      "first_seen": "2026-11-17T23:05:30.717250+00:00",
+      "language": "en",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
     "models:https://www.anthropic.com/claude-fable-and-mythos-5-2": {
       "fingerprint": "89c535b8b1586363fe1f5b6e5d8f96817000adaa8877bce1fb4b11e2a798e503",
       "first_seen": "2026-11-09T22:38:44.829266+00:00",
@@ -18560,6 +18735,10 @@
       "first_seen": "2026-10-29T03:34:54.131044+00:00",
       "language": "en",
       "url": "https://www.anthropic.com/claude-sonnet-5-5"
+    },
+    "nasa-technology:https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest": {
+      "list_fingerprint": "8bdbb081a30de6f68f5299ea27b581951d9bdd592e6c1a7cefa0a5f9dd437172",
+      "status": "posted"
     },
     "nasa-technology:https://science.nasa.gov/science-research/science-enabling-technology/technology-highlights/nasas-casals-instrument-bridges-gaps-in-3d-maps-of-earths-surface": {
       "list_fingerprint": "9a63700995816e9917818c4620da1899d44edf6bc138b070c34b2a9a795c3e46",
@@ -18769,6 +18948,10 @@
       "list_fingerprint": "108fa66b23ff6375312c9868a687dc884cc91621d2d7451d4b7b78ea8ef36a53",
       "status": "older_material"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference": {
+      "list_fingerprint": "9f658e8d1dfac53d1c5f9f27daec08acf128bc5c3b206633bc205453038352eb",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark": {
       "list_fingerprint": "c9aeb5e6ee393898d2be1ad0c4f88c8f1fb2ea1d1cffba1f272b81e328f2092b",
       "status": "bootstrap_skipped"
@@ -18956,6 +19139,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime": {
       "list_fingerprint": "da0ea13fe3f861ac9bbb93ae7147f7457c902a4ea5a38faa0b82a6ed4ad0e015",
       "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins": {
+      "list_fingerprint": "e417145053fa9bf92a5f48f031c4aa843f2b53e34af263a41b0616c81ca6472c",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels": {
       "list_fingerprint": "4c9f6f4a61b81d0f88442cb72c6c2f6d4e09b36230f7f63b8d211a4993a09958",
@@ -19307,6 +19494,10 @@
     },
     "openai-en:https://openai.com/index/introducing-gpt-6-1-terra": {
       "list_fingerprint": "8f976c19f91e376345748aa5a5d18f59ce674a7d987c093156891d7c03f29f39",
+      "status": "posted"
+    },
+    "openai-en:https://openai.com/index/introducing-gpt-6-2-astra-sol": {
+      "list_fingerprint": "fa98548b025fcbdcb4e3a3af19ca0234d3c4bb541d141bb2e49b6f59451280d9",
       "status": "posted"
     },
     "openai-en:https://openai.com/index/introducing-gpt-6-sol-and-luna": {
@@ -21321,6 +21512,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/"
     },
+    "products:https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference": {
+      "fingerprint": "9f658e8d1dfac53d1c5f9f27daec08acf128bc5c3b206633bc205453038352eb",
+      "first_seen": "2026-11-17T23:05:30.717250+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/"
+    },
     "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os": {
       "fingerprint": "693e65cea52f49ffab414c7581abf9b0f19fd9c7d005f880ad83a1d1da20a6d1",
       "first_seen": "2026-11-05T22:12:21.673795+00:00",
@@ -21362,6 +21559,12 @@
       "first_seen": "2026-10-30T16:10:24.506358+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/"
+    },
+    "products:https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins": {
+      "fingerprint": "e417145053fa9bf92a5f48f031c4aa843f2b53e34af263a41b0616c81ca6472c",
+      "first_seen": "2026-11-17T23:05:30.717250+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins/"
     },
     "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery": {
       "fingerprint": "000aeb58743f82a512ed88f1cd0744fbf096fe25086c39982d3d4a16029c12b9",
@@ -22001,6 +22204,12 @@
       "language": "en",
       "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.5"
     },
+    "tools:https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.6": {
+      "fingerprint": "39d1d80f73993f437820690243716a1f134b8154ecd46870c525222d29f60828",
+      "first_seen": "2026-11-17T23:05:30.717250+00:00",
+      "language": "en",
+      "url": "https://github.com/llvm/llvm-project/releases/tag/llvmorg-23.1.6"
+    },
     "tools:https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.3.2": {
       "fingerprint": "98bcac827f10cb00408e01b7c797ed9429ccda2277a4ca50b210914f68590d45",
       "first_seen": "2026-10-30T20:59:11.051787+00:00",
@@ -22354,6 +22563,12 @@
       "first_seen": "2026-11-17T14:48:27.578289+00:00",
       "language": "ko",
       "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72312"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313": {
+      "fingerprint": "bf742fc2a393b7c0b01eee60599e8b7386c18c872ced3c16fc222cfbb3ac6a34",
+      "first_seen": "2026-11-17T23:05:30.717250+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72313"
     },
     "zai:https://huggingface.co/zai-org/GLM-4-32B-0414": {
       "list_fingerprint": "668099737dbb9d78c04a151552a14b44e342232eb86aaf585c3669bf90b8b004",
