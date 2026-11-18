@@ -1,62 +1,34 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-18 23:29 KST
+반영: 2026-11-19 07:16 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## VB1943 and robotics: When AI is in the eye \(or CMOS sensor\) of the beholder
+## Build Training-Ready Physical AI Datasets with Two Prompts in NVIDIA Cosmos
 
-STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 이미지·영상 처리·로봇·모빌리티 주제를 다룹니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 세계 모형·시뮬레이션 주제를 다룹니다.
 
-출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/vb1943/>) · RSS·Atom 발행 시각: 2026-11-18 23:00 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos/>) · RSS·Atom 발행 시각: 2026-11-19 02:00 KST
 
-RSS·Atom 표기 작성자: David Civera
+RSS·Atom 표기 작성자: Nakul Arora
 
-가져온 시각: 2026-11-18 23:29:33 KST
-
-수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## NVIDIA, 공급망 파트너와 협력 확대해 AI 인프라 구축 지원하다
-
-> NVIDIA가 가속 컴퓨팅과 AI 인프라 플랫폼에 대한 수요에 맞춰 공급과 제조 생산능력을 확대하고 장기적인 지속 성장을…
-
-출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout/>) · RSS·Atom 발행 시각: 2026-11-18 11:36 KST
-
-RSS·Atom 표기 작성자: NVIDIA Korea
-
-가져온 시각: 2026-11-18 13:41:14 KST
-
-수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
-
-개요: 공식 한국어 소개 발췌
-
-## Co-Designing Sparse Attention for Efficient Long-Context Inference
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론·에이전트·도구 사용·긴 문맥·장기 작업·비용·실행 효율 주제를 다룹니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/>) · RSS·Atom 발행 시각: 2026-11-18 02:30 KST
-
-RSS·Atom 표기 작성자: Timmy Liu
-
-가져온 시각: 2026-11-18 08:06:39 KST
+가져온 시각: 2026-11-19 07:16:49 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Integrating QPUs into Supercomputing Centers Using Slurm HRES Plugins
+## Tackling GPU Bottlenecks in Plane-Wave DFT with K-Point Batching and Mixed Precision
 
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 프로세서·컴퓨터구조 주제를 다룹니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins/>) · RSS·Atom 발행 시각: 2026-11-18 02:00 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/>) · RSS·Atom 발행 시각: 2026-11-19 00:00 KST
 
-RSS·Atom 표기 작성자: Stefano Mensa
+RSS·Atom 표기 작성자: Erica Tsai
 
-가져온 시각: 2026-11-18 08:06:39 KST
+가져온 시각: 2026-11-19 07:16:49 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
