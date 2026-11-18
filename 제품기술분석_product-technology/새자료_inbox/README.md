@@ -1,10 +1,24 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-18 08:06 KST
+반영: 2026-11-18 13:41 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## NVIDIA, 공급망 파트너와 협력 확대해 AI 인프라 구축 지원하다
+
+> NVIDIA가 가속 컴퓨팅과 AI 인프라 플랫폼에 대한 수요에 맞춰 공급과 제조 생산능력을 확대하고 장기적인 지속 성장을…
+
+출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout/>) · RSS·Atom 발행 시각: 2026-11-18 11:36 KST
+
+RSS·Atom 표기 작성자: NVIDIA Korea
+
+가져온 시각: 2026-11-18 13:41:14 KST
+
+수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
+
+개요: 공식 한국어 소개 발췌
 
 ## Co-Designing Sparse Attention for Efficient Long-Context Inference
 
