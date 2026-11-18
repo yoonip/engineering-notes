@@ -1,141 +1,54 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-18 22:59 KST
+갱신: 2026-11-19 06:57 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
-## 우크라군 "전쟁 발발 후 러시아군 사상자 162만명"
+## '테크강국 민낯' 美연쇄장애에 불안 고조…일부 사재기 조짐도
 
-> 러시아가 2022년 2월 우크라이나를 침공한 뒤로 병력 약 162만명이 사망하거나 부상했다고 우크라이나군이 ...
+> 지난 엿새에 걸쳐 미국의 이메일부터 항공, 은행, 정보기관까지 대규모 전산 장애 6건이 이어지면서 미...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118177000109>) · 2026-11-18 19:17 KST · 작성·제공: 민경락
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119007500075>) · 2026-11-19 06:23 KST · 작성·제공: 김경윤
 
-## 日 무역적자 6개월째 지속…원유가격 상승으로 지난달 수입액↑
+## \[속보\] "앤트로픽, 공모가 80∼85달러 검토…예상 훨씬 웃돌아"&lt;블룸버그&gt;
 
-> 원유 가격 급등 등으로 일본의 무역수지가 6개월 연속 적자를 기록했다.
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119008400072>) · 2026-11-19 05:57 KST · 작성·제공: 김연숙
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118101200073>) · 2026-11-18 13:09 KST · 작성·제공: 이도연
+## 美 중부사령관, 이스라엘 방문…참모총장·모사드 국장과 회동\(종합\)
 
-## 앨리스 황, 日에도 데이터센터기업 설립…칩 수출 우회로 노렸나
+> 미국과 이란 사이의 평화 협상 교착과 간헐적인 무력 공방 속에 이란 전쟁을 관할하는 브래드 쿠퍼 미국 중부...
 
-> 엔비디아 최첨단 반도체의 중국 반출 의혹에 연루되면서 중국 스파이로 지목된 앨리스 황\(중국명 황러\)이 일본에...
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119004151079>) · 2026-11-19 05:25 KST · 작성·제공: 김상훈
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118182500073>) · 2026-11-18 20:44 KST · 작성·제공: 조성미
+## IAEA 사무총장 “이란 사찰 비협조, 핵물질 검증 불가”
 
-## \[속보\] 시진핑 "상품·서비스 수입 확대…디지털경제·AI 협력 강화"
+> 국제원자력기구, IAEA가 이란의 사찰 비협조로 인해 고농축 우라늄 등 이란이 보유한 핵물질이 평화적 목적으로만 쓰이고 있는지 확인할 수 없다고 경고했습니다.
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118091100083>) · 2026-11-18 11:33 KST · 작성·제공: 한종구
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8225154.html>) · 2026-11-19 03:41 KST
 
-## \[속보\] 美 '초접전' 알래스카 상원 선거서도 민주 승리 &lt; AP&gt;
+## 이란, 쿠웨이트·바레인 공격…역내 긴장 고조
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118098500009>) · 2026-11-18 12:25 KST · 작성·제공: 이지헌
+> 쿠웨이트와 바레인 당국은 18일 자국의 방공 시스템이 이란의 공중 공격을 요격했다고 밝혔습니다.
 
-## 최루가스 매캐한 프랑스…여성 1만명 "건강 위협"
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/iran-launches-attacks-on-kuwait-bahrain-amid-increased-regional-tension-111826/8225114.html>) · 2026-11-19 02:22 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
-> 프랑스에서 열악한 교육 여건과 고물가에 항의하는 잇단 시위로 경찰의 최루가스 사용이 늘어난 가운데 최루가스 ...
+## 트럼프 회담 앞서 푸틴 만난 시진핑, 美겨냥 “다자무역 지켜내야”
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118185300085>) · 2026-11-18 21:33 KST · 작성·제공: 김지연
+> 시진핑\(習近平\) 중국 국가주석과 블라디미르 푸틴 러시아 대통령은 18일 중국 광둥성 선전에서 아시아태평양경제협력체\(APEC\) 정상회의를 계기로 정상회담을 갖고 양국 간 협력을 강화해 나가기로 했다.
 
-## \[인&amp;아웃\] 미중러 정상회담에 얄타가 소환된 까닭
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261119/135050907/2>) · 2026-11-19 04:30 KST
 
-> 흑해 연안 크림반도의 얄타는 휴양도시로 유명하다.
+## 트럼프 “韓 투자 덕에 알래스카 LNG 승인” 또 기정사실화
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261117111500546>) · 2026-11-18 06:00 KST · 작성·제공: 김종우
+> 도널드 트럼프 미국 대통령이 한국의 대대적인 투자로 알래스카주 액화천연가스\(LNG\) 개발 사업을 추진할 수 있게 됐다고 17일\(현지 시간\) 주장했다.
 
-## 엔비디아 이사회 의장 "젠슨 황 재선임 의사 없어"
-
-> 젠슨 황 전 엔비디아 최고경영자\(CEO\)가 이사회가 요청하면 회사로 복귀하겠다는 의사를 밝힌 가운데 ...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118018200091>) · 2026-11-18 07:19 KST · 작성·제공: 권영전
-
-## 엔비디아, 안보·수출통제委 설치…젠슨 황 사태 '외양간고치기'
-
-> 젠슨 황 전 최고경영자\(CEO\)의 중국 스파이 연루에 따른 인공지능\(AI\) 반도체 유출 의혹으로 곤욕...
-
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118006600091>) · 2026-11-18 03:02 KST · 작성·제공: 권영전
-
-## 트럼프 대통령 중국 도착…시진핑 직접 영접, 미중러 정상회담 앞둬
-
-> 중국 선전에서 열리는 APEC 정상회의 참석을 위해 도널드 트럼프 미국 대통령이 18일 중국에 도착했습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8224993.html>) · 2026-11-18 21:18 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 연이틀 '북미 회담' 군불…"김정은도 오고 싶어해"
-
-> 트럼프 미국 대통령은 김정은 북한 국무위원장 역시 중국에 오고 싶어 한다며, 연이틀 북미 정상회담에 불을 지폈습니다.
-
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008852540&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-18 22:17 KST · 작성·제공: lucaside@sbs.co.kr \(이한석\)
-
-## 미 국무부 “베네수엘라 석유 수입 철저히 감독…공공서비스·재건 사용”
-
-> 미국 국무부는 미국 정부가 관리하고 있는 베네수엘라의 석유와 천연자원 판매 수입이 철저한 감독 아래 공공서비스와 경제 안정, 재건 사업 등에 사용되고 있다고 밝혔습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-venezuela-oil-revenue-voa-/8224737.html>) · 2026-11-18 05:23 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 유엔 보고서 “수단서 드론 공격 급증으로 민간인 사망자 속출”
-
-> 유엔은 새 보고서를 통해 2026년 1월부터 10월까지 수단에서 민간인 2천 230여 명이 숨졌으며 이들 대부분이 드론 공격에 따른 것이라고 밝혔습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/un--sudan-drone-strikes/8224714.html>) · 2026-11-18 04:21 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 미 정보당국자 “북한, 쇠퇴 아닌 강해지는 국가”…대규모 추가 파병은 없어
-
-> 미국 현직 정보당국자가 "북한은 강해지는 국가"라고 진단한 가운데, 러시아의 북한 수요가 병력에서 노동자로 옮겨가고 있다는 분석이 나왔다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/17/north-korea-russia-troops-workers-deployment/>) · 2026-11-18 06:00 KST · 작성·제공: 워싱턴-자민 앤더슨 andersonj@rfa.org
-
-## 미국∙멕시코∙볼리비아, 홍역 퇴치국 지위 상실
-
-> 범미보건기구\(PAHO\)는 17일 미국과 멕시코, 볼리비아에서 홍역 바이러스가 1년 넘게 지속적으로 확산됨에 따라 이들 국가가 홍역 퇴치국 지위를 상실했다고 밝혔습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-measles-111726/8224755.html>) · 2026-11-18 05:53 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 루비오 장관 “트럼프 대통령, 김정은과 대화에 진지”…순방 중 회동은 불확실
-
-> 마코 루비오 미국 국무장관이 도널드 트럼프 대통령은 김정은 북한 국무위원장과의 대화에 진지하다고 밝혔습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8224996.html>) · 2026-11-18 21:25 KST
-
-## 러 여행사, 평양 ‘캐비아·레드와인’ 미식관광 출시… 식재료 반입경로 의문
-
-> 러시아 여행사가 평양 고급 식당에서 캐비아와 수입 와인을 제공하는 미식관광을 출시했다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/18/north-korea-russia-gourmet-tour/>) · 2026-11-18 13:35 KST · 작성·제공: 워싱턴-자민 앤더슨 andersonj@rfa.org
-
-## 베이조스 “젠슨 황 복귀 안 시킬거면 후임 내부서 발탁해야”
-
-> 아마존 창업자 제프 베이조스가 엔비디아 이사회에 젠슨 황 전 최고경영자\(CEO\) 복귀를 추진하지 않을 것이라면 후임은 반드시 내부에서 발탁해야 한다고 조언했다.
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261118/135045702/1>) · 2026-11-18 12:43 KST
-
-## 미중러 회의 앞두고 북한도 ‘제 2얄타 회담’ 우려할까
-
-> 미중러 정상회의를 앞두고 이를 바라보는 북한의 복잡한 속내가 엿보인다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/18/trump-kim-russia-apec-korea/>) · 2026-11-18 16:26 KST · 작성·제공: 서울-목용재 moky@rfa.org
-
-## ‘푸틴 자존심’ 크림대교, 우크라 공격에 일부 구간 붕괴
-
-> 러시아가 2014년 우크라이나 크림반도를 병합한 뒤 건설한 크림대교가 우크라이나의 대규모 미사일·드론 공격으로 크게 파손되면서 러시아의 전쟁 수행 능력은 물론 블라디미르 푸틴 대통령의 정치적 이미지에도 타격을…
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261118/135049181/1>) · 2026-11-18 17:40 KST
-
-## 中 SNS서 北관련 콘텐츠 대거 차단…김정은 방중 임박?
-
-> 중국의 주요 소셜미디어에서 북한 관련 게시물이 사라지고 일부 계정이 정지되는 현상이 나타났다고 북한 전문매체 NK뉴스가 17일\(현지 시간\) 보도했다.
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261118/135045126/1>) · 2026-11-18 11:40 KST
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261119/135050904/2>) · 2026-11-19 04:30 KST
 
 ## 다른 매체의 원문
 
-- [UK inflation rises to year high and keeps risk of second straight rate hike alive](<https://abcnews.com/International/wireStory/uk-inflation-rises-year-high-possibility-straight-rate-138242229>) · ABC News 미국
-- [With few alternatives, Gazans shelter in collapsing buildings](<https://www.csmonitor.com/World/Middle-East/2026/1117/gaza-war-housing-shortage-collapsed-buildings-al-saada?icid=rss>) · The Christian Science Monitor
-- [Some Filipinos, feeling ‘bullied’ by China, are reassured by Trump’s visit](<https://www.csmonitor.com/World/Asia-Pacific/2026/1117/asean-philippines-china-trump-security?icid=rss>) · The Christian Science Monitor
-- [Nabeel Rajab, prominent Bahraini human rights activist, dies at 62](<https://abcnews.com/International/wireStory/nabeel-rajab-prominent-bahraini-human-rights-activist-dies-138231196>) · ABC News 미국
-- [Iran launches a third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet](<https://www.npr.org/2026/11/17/nx-s1-6044255/us-iran-war-latest-bahrain>) · NPR
-- [Xi said China would welcome American students for exchanges. What's the reality?](<https://www.npr.org/2026/11/17/nx-s1-6026589/xi-said-china-would-welcome-american-students-for-exchanges-whats-the-reality>) · NPR
-- [Rare encounter with isolated Indigenous people in Brazil raises concerns over safety](<https://abcnews.com/International/wireStory/rare-encounter-isolated-indigenous-people-brazil-raises-concerns-138230528>) · ABC News 미국
-- [Thousands demonstrate in Haiti’s capital to praise Bukele and Salvadoran troops fighting gangs](<https://abcnews.com/International/wireStory/thousands-demonstrate-haitis-capital-praise-bukele-salvadoran-troops-138217031>) · ABC News 미국
+- [Mexico's Catholic street DJs turn annual pilgrimage into a party](<https://abcnews.com/International/wireStory/mexicos-catholic-street-djs-turn-annual-pilgrimage-party-138262111>) · ABC News 미국
+- [World leaders gather in Shenzhen, China’s youthful, business-friendly melting pot](<https://www.csmonitor.com/World/Asia-Pacific/2026/1118/Shenzhen-China-modern-young-city-APEC-summit?icid=rss>) · The Christian Science Monitor
+- [EU proposes fresh $49 billion loan for Ukraine as war costs mount](<https://abcnews.com/International/wireStory/eu-proposes-fresh-49-billion-loan-ukraine-war-138249084>) · ABC News 미국
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
