@@ -1,14 +1,56 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-18 07:24 KST
+갱신: 2026-11-18 13:21 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
+
+## \[속보\] 이 대통령-시진핑, 한중정상회담 종료…34분간 대좌
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008851722&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-18 12:54 KST · 작성·제공: newsservice@sbs.co.kr\(SBS\)
+
+## \[속보\] 李대통령-시진핑, 韓中 정상회담 종료…34분간 대좌
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261118099400001>) · 2026-11-18 12:41 KST · 작성·제공: 임형섭
 
 ## \[단독\] 13시간 조사 후 귀가…"개조 계산기 사용"
 
 > 세무사 시험에서 AI 부정행위로 수석 합격했다고 자수한 한모 씨가 어젯밤 늦게까지 경찰 조사를 받았습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008850749&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-18 06:17 KST · 작성·제공: yhg@sbs.co.kr \(여현교\)
+
+## 용산 전자상가 뜬금 현수막?…"대치동에 생기겠네" 조롱
+
+> 정부가 2027학년도 대학수학능력시험을 앞두고 인공지능을 활용한 부정행위 방지 대책을 발표한 가운데 온라인에서는 이를 풍자하는 합성 이미지가 확…
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008851190&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-18 11:31 KST · 작성·제공: dan@sbs.co.kr \(정다은\)
+
+## \[속보\] 李대통령-시진핑, 中 선전서 정상회담 시작
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261118097900001>) · 2026-11-18 12:08 KST · 작성·제공: 임형섭
+
+## "싹싹 빌었다" AI 커닝 자백글…이번엔 노무사 합격생
+
+> AI 인공지능을 활용한 시험 부정행위와 관련한 자백글들이 온라인 게시판 등에서 잇따라 올라오고 있는 가운데, 이번엔 AI로 공인노무사 시험에 합…
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008851171&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-18 11:17 KST · 작성·제공: sha@sbs.co.kr \(손형안\)
+
+## KDI, 올해 성장률 3.8%·내년 3.9%로 상향…“성장 3분의 2는 반도체”
+
+> 한국개발연구원\(KDI\)이 반도체 호황을 반영해 올해 우리나라 경제성장률 전망치를 3.8%, 내년은 3.9%로 대폭 상향 조정했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261118/135045562/1>) · 2026-11-18 12:11 KST
+
+## KDI, 내년 성장률 2.2→3.9%로 상향…"성장의 3분의 2가 반도체"
+
+> 국책연구기관인 한국개발연구원\(KDI\)이 내년 한국 경제성장률 전망치를 3.9%로 석 달 만에 1.7%포인트\(p...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261118092700002>) · 2026-11-18 12:00 KST · 작성·제공: 이대희
+
+## 코트라, 19개국 주한무관단 초청 방산수출 교류회
+
+> 대한무역투자진흥공사\(코트라\) 방산물자교역지원센터는 18일 서울 중구 웨스틴조선호텔에서 주한무관협회\(SAMA\)와...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261118051100003>) · 2026-11-18 13:00 KST · 작성·제공: 장보인
 
 ## 페리지에어로스페이스 신임 대표에 심수연 부사장
 
@@ -28,11 +70,23 @@
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/across-nkor/8224732.html>) · 2026-11-18 05:14 KST · 작성·제공: voadigital@voanews.com \(최원기\)
 
+## DGIST 연구팀, 엔비디아 GPU 지원받아 AI 기반 촉매 연구
+
+> 대구경북과학기술원\(DGIST\)은 에너지공학과 이태훈 교수팀이 미국 인공지능\(AI\) 반도체 기업 엔비디아\(NVI...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261118087800053>) · 2026-11-18 11:24 KST · 작성·제공: 최수호
+
 ## 한국 방문 외국인 관광객 '2천만명'
 
 > 한국 내 주요 뉴스를 소개해 드리는 \`한국은 지금’ 시간입니다.
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/measles-korea/8224724.html>) · 2026-11-18 04:55 KST · 작성·제공: voadigital@voanews.com \(윤국한\)
+
+## 포디움 없앤 지휘자…'클래식 구원자' 쿠렌치스의 파격 무대
+
+> 익숙한 클래식 공연의 문법을 뒤집는 파격과 폭발적인 에너지.
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261118087700005>) · 2026-11-18 11:56 KST · 작성·제공: 권지현
 
 ## 세계 4번째 수출 1조달러 초읽기…돼지털 팔던 나라의 기적
 
