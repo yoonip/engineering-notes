@@ -1,18 +1,30 @@
 # 모델 발표
 
-반영: 2026-11-18 08:06 KST
+반영: 2026-11-19 07:16 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
-## Introducing GPT-6.2 Astra and Sol
+## Introducing Gemini 4 Neon
 
-OpenAI의 모델 관련 공식 발표입니다. 공개 제목·소개에서 코딩·컴퓨터·브라우저 사용·비용·실행 효율 주제를 다룹니다.
+Google DeepMind의 모델 관련 공식 발표입니다.
 
-출처: [OpenAI](<https://openai.com/>) · [원문](<https://openai.com/index/introducing-gpt-6-2-astra-sol>) · 발표일: 2026-11-18 02:45 KST
+출처: [Google DeepMind](<https://deepmind.google/>) · [원문](<https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/>) · 발표일: 2026-11-18
 
-가져온 시각: 2026-11-18 08:05:30 KST
+가져온 시각: 2026-11-19 07:15:44 KST
 
-수집 경로: [공식 목록·피드](<https://openai.com/news/rss.xml>) · 방법: 공식 RSS·Atom의 제목·소개문
+수집 경로: [공식 목록·피드](<https://deepmind.google/blog/rss.xml>) · 방법: 공식 RSS·Atom의 제목·소개문 및 원문의 공개 메타데이터
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Genie 4 is now available
+
+Google DeepMind의 모델 관련 공식 발표입니다. 공개 제목·소개에서 세계 모형·시뮬레이션 주제를 다룹니다.
+
+출처: [Google DeepMind](<https://deepmind.google/>) · [원문](<https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/>) · 발표일: 2026-11-18
+
+가져온 시각: 2026-11-19 07:15:45 KST
+
+수집 경로: [공식 목록·피드](<https://deepmind.google/blog/rss.xml>) · 방법: 공식 RSS·Atom의 제목·소개문 및 원문의 공개 메타데이터
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
