@@ -60,6 +60,7 @@
     "papers:https://arxiv.org/abs/2308.07266": "papers:https://arxiv.org/abs/2308.07266",
     "papers:https://arxiv.org/abs/2511.20572": "papers:https://arxiv.org/abs/2511.20572",
     "papers:https://arxiv.org/abs/2512.15754": "papers:https://arxiv.org/abs/2512.15754",
+    "papers:https://arxiv.org/abs/2602.20018": "papers:https://arxiv.org/abs/2602.20018",
     "papers:https://arxiv.org/abs/2602.23539": "papers:https://arxiv.org/abs/2602.23539",
     "papers:https://arxiv.org/abs/2603.07379": "papers:https://arxiv.org/abs/2603.07379",
     "papers:https://arxiv.org/abs/2604.26103": "papers:https://arxiv.org/abs/2604.26103",
@@ -68,6 +69,7 @@
     "papers:https://arxiv.org/abs/2605.01889": "papers:https://arxiv.org/abs/2605.01889",
     "papers:https://arxiv.org/abs/2605.24991": "papers:https://arxiv.org/abs/2605.24991",
     "papers:https://arxiv.org/abs/2606.00277": "papers:https://arxiv.org/abs/2606.00277",
+    "papers:https://arxiv.org/abs/2606.17699": "papers:https://arxiv.org/abs/2606.17699",
     "papers:https://arxiv.org/abs/2607.16408": "papers:https://arxiv.org/abs/2607.16408",
     "papers:https://arxiv.org/abs/2610.11748": "papers:https://arxiv.org/abs/2610.11748",
     "papers:https://arxiv.org/abs/2610.36298": "papers:https://arxiv.org/abs/2610.36298",
@@ -334,6 +336,26 @@
     "papers:https://arxiv.org/abs/2611.21089": "papers:https://arxiv.org/abs/2611.21089",
     "papers:https://arxiv.org/abs/2611.21494": "papers:https://arxiv.org/abs/2611.21494",
     "papers:https://arxiv.org/abs/2611.21561": "papers:https://arxiv.org/abs/2611.21561",
+    "papers:https://arxiv.org/abs/2611.21632": "papers:https://arxiv.org/abs/2611.21632",
+    "papers:https://arxiv.org/abs/2611.21663": "papers:https://arxiv.org/abs/2611.21663",
+    "papers:https://arxiv.org/abs/2611.21666": "papers:https://arxiv.org/abs/2611.21666",
+    "papers:https://arxiv.org/abs/2611.21677": "papers:https://arxiv.org/abs/2611.21677",
+    "papers:https://arxiv.org/abs/2611.21678": "papers:https://arxiv.org/abs/2611.21678",
+    "papers:https://arxiv.org/abs/2611.21679": "papers:https://arxiv.org/abs/2611.21679",
+    "papers:https://arxiv.org/abs/2611.21682": "papers:https://arxiv.org/abs/2611.21682",
+    "papers:https://arxiv.org/abs/2611.21707": "papers:https://arxiv.org/abs/2611.21707",
+    "papers:https://arxiv.org/abs/2611.21954": "papers:https://arxiv.org/abs/2611.21954",
+    "papers:https://arxiv.org/abs/2611.22059": "papers:https://arxiv.org/abs/2611.22059",
+    "papers:https://arxiv.org/abs/2611.22069": "papers:https://arxiv.org/abs/2611.22069",
+    "papers:https://arxiv.org/abs/2611.22100": "papers:https://arxiv.org/abs/2611.22100",
+    "papers:https://arxiv.org/abs/2611.22322": "papers:https://arxiv.org/abs/2611.22322",
+    "papers:https://arxiv.org/abs/2611.22328": "papers:https://arxiv.org/abs/2611.22328",
+    "papers:https://arxiv.org/abs/2611.22338": "papers:https://arxiv.org/abs/2611.22338",
+    "papers:https://arxiv.org/abs/2611.22490": "papers:https://arxiv.org/abs/2611.22490",
+    "papers:https://arxiv.org/abs/2611.22548": "papers:https://arxiv.org/abs/2611.22548",
+    "papers:https://arxiv.org/abs/2611.22763": "papers:https://arxiv.org/abs/2611.22763",
+    "papers:https://arxiv.org/abs/2611.22901": "papers:https://arxiv.org/abs/2611.22901",
+    "papers:https://arxiv.org/abs/2611.23045": "papers:https://arxiv.org/abs/2611.23045",
     "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103": "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103",
     "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
     "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030",
@@ -354,6 +376,7 @@
     "products:https://blog.st.com/stm32h7p": "products:https://blog.st.com/stm32h7p",
     "products:https://blog.st.com/stspin9p": "products:https://blog.st.com/stspin9p",
     "products:https://blog.st.com/touchgfx": "products:https://blog.st.com/touchgfx",
+    "products:https://blog.st.com/vb1943": "products:https://blog.st.com/vb1943",
     "products:https://blog.st.com/zephyr": "products:https://blog.st.com/zephyr",
     "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-live": "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-live",
     "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview": "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-preview",
@@ -7722,6 +7745,514 @@
           "url": "https://arxiv.org/abs/2611.21561",
           "version": "1"
         }
+      ],
+      "2026-11-18": [
+        {
+          "acquired_at": "2026-11-18T14:29:39.130175+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Jiechen Chen, Noemi Giustini, Michele Polese, Osvaldo Simeone",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/eess.SP/recent",
+          "key": "papers:https://arxiv.org/abs/2602.20018",
+          "kind": "프리프린트 초록",
+          "paper_id": "2602.20018",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 신호처리·통신 논문",
+          "source_url": "https://rss.arxiv.org/rss/eess.SP",
+          "summary_ko": "arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "From High-Level Communication Requirements to KPIs via Conformal Signal Temporal Logic Learning",
+          "update": false,
+          "url": "https://arxiv.org/abs/2602.20018",
+          "version": "2"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:39.130175+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Niclas F\\\"uhrling, Hyeon Seok Rou, Kuranage Roche Rayan Ranasinghe, Giuseppe Thadeu Freitas de Abreu, Nuria Gonz\\'alez-Prelcic",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/eess.SP/recent",
+          "key": "papers:https://arxiv.org/abs/2606.17699",
+          "kind": "프리프린트 초록",
+          "paper_id": "2606.17699",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 신호처리·통신 논문",
+          "source_url": "https://rss.arxiv.org/rss/eess.SP",
+          "summary_ko": "arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Joint Synchronization and Radar Parameter Estimation for OFDM-based DISAC Systems",
+          "update": false,
+          "url": "https://arxiv.org/abs/2606.17699",
+          "version": "3"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:33.189339+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Annemarie Wittig, Alina Mailach, Norbert Siegmund",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2611.21632",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.21632",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 코딩 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Fragmented Markers, Mixed Results: A Systematic Review of AI Coding Assistants and Developer Productivity",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.21632",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:36.132296+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Seham Al Abdul Wahid, Farah Mohammadi, Yazan Otoum, Arghavan Asad",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AR/recent",
+          "key": "papers:https://arxiv.org/abs/2611.21663",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.21663",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 컴퓨터구조 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AR",
+          "summary_ko": "arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 비용·실행 효율·경제·경기·에너지·전력·통신·신호 처리 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Multicore Quantum Architecture for Scalable and Energy-Aware Green IoT Computing",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.21663",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:36.132296+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Francesco Angione, Nicola di Gruttola Giardino, Gabriele Filipponi, Giusy Iaria, Irith Pomeranz, Paolo Bernardi",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AR/recent",
+          "key": "papers:https://arxiv.org/abs/2611.21666",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.21666",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 컴퓨터구조 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AR",
+          "summary_ko": "arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가·비용·실행 효율·프로세서·컴퓨터구조 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Testyard Benchmarks: a Dynamic RISC-V-based Benchmark Framework including DfT insertion, Structural and Functional Test Flows",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.21666",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:36.132296+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Zhiheng Chen, Yifan Zhang, Yu-An Chou, Ye Qiao, Sitao Huang",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AR/recent",
+          "key": "papers:https://arxiv.org/abs/2611.21677",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.21677",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 컴퓨터구조 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AR",
+          "summary_ko": "arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·비용·실행 효율·에너지·전력·반도체·GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Chimera: A Configurable LLM Decode Accelerator Architecture with Compute-Memory-Floorplan Co-Design for HBM-Equipped Multi-Die FPGAs",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.21677",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:36.132296+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Yasir Mahmud",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AR/recent",
+          "key": "papers:https://arxiv.org/abs/2611.21678",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.21678",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 컴퓨터구조 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AR",
+          "summary_ko": "arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "RTLReviewBench: LLM Hardware Reviewers Rarely Miss Bugs but Routinely Reject Correct RTL",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.21678",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:36.132296+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Shashank",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AR/recent",
+          "key": "papers:https://arxiv.org/abs/2611.21679",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.21679",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 컴퓨터구조 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AR",
+          "summary_ko": "arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "FCP: Formal Context Protocol for Verifying LLM-Generated Artifacts",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.21679",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:33.189339+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Liyan Wang, Longze Li, Mohamed Hassan, Isshu Lee, Dajie Sun, Ruimin Feng, Aleksandar Vakanski",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2611.21682",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.21682",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·평가 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "NEBench R1: a Reasoning Benchmark for Evaluating Nuclear Domain Competence in Large Language Models",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.21682",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:33.189339+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "James Sadler, Rotimi Alabi, Kotub Uddin",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2611.21707",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.21707",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에이전트·도구 사용·평가 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Bookkeeping Is Not Judgement: EJBench, an Engineering Judgement Benchmark Built from a Conjugate Heat Transfer Design Campaign",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.21707",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:36.132296+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Varun Darshana Parekh, Anusha Devulapally, Sivani Devarapalli, Cassius Henderson, Shimeng Yu, Vijaykrishnan Narayanan",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AR/recent",
+          "key": "papers:https://arxiv.org/abs/2611.21954",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.21954",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 컴퓨터구조 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AR",
+          "summary_ko": "arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 이미지·영상 처리·반도체 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "ThermLeT: Transformer-based Temperature Prediction for 2.5D Chiplet Architecture",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.21954",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:36.132296+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "He Zhu, Zhiheng Dai, Zihan Liu, Ruyang Li, Hui Wei, Yaqian Zhao, Han Zhao, Xiaofeng Hou, Chen Chen, Jingwen Leng, Yu Feng, Minyi Guo",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AR/recent",
+          "key": "papers:https://arxiv.org/abs/2611.22059",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.22059",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 컴퓨터구조 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AR",
+          "summary_ko": "arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Accelerating 3D Gaussian Splatting Training through Selective Freezing and Computation Caching",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.22059",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:33.189339+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Sara Khosravi, Xiaofei Wen, Majid Sarrafzadeh, Muhao Chen",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2611.22069",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.22069",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 평가 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "MedGuardBench: A Patient-Oriented Benchmark for Personalized Guardrail Development",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.22069",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:39.130175+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Christo Kurisummoottil Thomas",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/eess.SP/recent",
+          "key": "papers:https://arxiv.org/abs/2611.22100",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.22100",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 신호처리·통신 논문",
+          "source_url": "https://rss.arxiv.org/rss/eess.SP",
+          "summary_ko": "arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 비용·실행 효율·에너지·전력·통신·신호 처리 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Semantic Communication via Analog RF Computing: When the Radio Computes the Meaning",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.22100",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:39.130175+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Songling Zhang, Zhaohui Yang, Ruopeng Xu, Hao Xu, Xusheng Zhu, Zhaoyang Zhang, Kai-Kit Wong",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/eess.SP/recent",
+          "key": "papers:https://arxiv.org/abs/2611.22322",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.22322",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 신호처리·통신 논문",
+          "source_url": "https://rss.arxiv.org/rss/eess.SP",
+          "summary_ko": "arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 비용·실행 효율·통신·신호 처리 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Hardware Impairment Parameter Estimation in Fluid Antenna Systems by Inverse Optimization",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.22322",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:36.132296+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Zichen Kong, Minghuan Song, Xiyuan Tang, Ziming Wei, Yi Zhong, Yuan Wang",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AR/recent",
+          "key": "papers:https://arxiv.org/abs/2611.22328",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.22328",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 컴퓨터구조 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AR",
+          "summary_ko": "arXiv 컴퓨터구조 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에이전트·도구 사용·비용·실행 효율·회로·디스플레이 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "PVTSizing 2.0: A Fast and Reliable Analog Circuit Sizing Operator for Agentic EDA Workflows",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.22328",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:33.189339+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Dongnuan Tian, Yan Yu, Yangfan Liu, Wenjun Tang, Junting Kan, Xiang Wang, Sicong Liu, Yangyang Zhang, Shuanghong Li",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2611.22338",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.22338",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에이전트·도구 사용·평가 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Reliable Evaluation of AI Agents for Investment Research: A Framework for Performance and Validity Assessment",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.22338",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:33.189339+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Yuchen Zhang, Taolin Han, Jinghang Wang, Jinxin Wang, Yun Wu, Wai Yuet Chiu, Xiaogang Li, Yuting Fu, Kewei Sun, Jiaxin Li, Qile Jin, Jiajia Li, Ruodan Chen,…",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2611.22490",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.22490",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에이전트·도구 사용·평가 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "SciWorkBench: A Benchmark for Real Scientific Workflows",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.22490",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:39.130175+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Rawad Kansoh, Bahaa Ammoury, Charbel Hannoun, Jihad Fahs, Ibrahim Abou-Faycal",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/eess.SP/recent",
+          "key": "papers:https://arxiv.org/abs/2611.22548",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.22548",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 신호처리·통신 논문",
+          "source_url": "https://rss.arxiv.org/rss/eess.SP",
+          "summary_ko": "arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 이미지·영상 처리·통신·신호 처리 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Temporal Diffusion Models for Joint Signal-Channel Estimation under Gaussian and $\\alpha$-Stable MIMO Channels",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.22548",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:39.130175+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "\\'{A}lvaro Pend\\'{a}s-Recondo, Enrique Pend\\'{a}s-Recondo, Rafael Gonz\\'{a}lez Ayestar\\'{a}n, Jes\\'{u}s Alberto L\\'{o}pez-Fern\\'{a}ndez, Ignacio Santamaria",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/eess.SP/recent",
+          "key": "papers:https://arxiv.org/abs/2611.22763",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.22763",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv 신호처리·통신 논문",
+          "source_url": "https://rss.arxiv.org/rss/eess.SP",
+          "summary_ko": "arXiv 신호처리·통신 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 통신·신호 처리 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Structured Design of Layered Sparse Unitary Space-Time Modulation for Integrated Noncoherent and Coherent MIMO Communications",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.22763",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:33.189339+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Zerui Yang, Quan Xue, Miaomiao Dong, Chaorui Zhang, Xuanyu Zheng, Xiyuan Wang, Haolin Ruan, Xueyan Niu, Guangcheng Song, Weixi Zhang, Wei Han, Bo Bai",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2611.22901",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.22901",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 코딩·에이전트·도구 사용·평가·비용·실행 효율 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Done, But Still Working: Anytime Evaluation of When Coding Agents Should Stop",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.22901",
+          "version": "1"
+        },
+        {
+          "acquired_at": "2026-11-18T14:29:33.189339+00:00",
+          "acquisition_method": "arXiv 공식 분야별 RSS의 제목·초록·공지일",
+          "author": "Yicheng Tao, Yuante Li, Zipei Fan",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T05:00:00+00:00",
+          "date_label": "arXiv 공지일",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "papers",
+          "homepage": "https://arxiv.org/list/cs.AI/recent",
+          "key": "papers:https://arxiv.org/abs/2611.23045",
+          "kind": "프리프린트 초록",
+          "paper_id": "2611.23045",
+          "published_kind": "arxiv_announcement",
+          "source_name": "arXiv AI 조사·평가 논문",
+          "source_url": "https://rss.arxiv.org/rss/cs.AI",
+          "summary_ko": "arXiv AI 조사·평가 논문에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 추론·에이전트·도구 사용·평가 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "ForecastGym: A Live, Controlled, and Replayable Benchmark for Forecasting Agents",
+          "update": false,
+          "url": "https://arxiv.org/abs/2611.23045",
+          "version": "1"
+        }
       ]
     },
     "products": {
@@ -9014,6 +9545,25 @@
         }
       ],
       "2026-11-18": [
+        {
+          "acquired_at": "2026-11-18T14:29:33.076470+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T14:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-18T14:28:18.758504+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/vb1943",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 이미지·영상 처리·로봇·모빌리티 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "VB1943 and robotics: When AI is in the eye (or CMOS sensor) of the beholder",
+          "update": false,
+          "url": "https://blog.st.com/vb1943/"
+        },
         {
           "acquired_at": "2026-11-18T04:41:14.402910+00:00",
           "acquisition_method": "공식 한국어 블로그 RSS의 제목·소개",
@@ -11662,6 +12212,10 @@
       "group": "papers",
       "key": "papers:https://arxiv.org/abs/2512.15754"
     },
+    "arxiv:2602.20018": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2602.20018"
+    },
     "arxiv:2602.23539": {
       "group": "papers",
       "key": "papers:https://arxiv.org/abs/2602.23539"
@@ -11693,6 +12247,10 @@
     "arxiv:2606.00277": {
       "group": "papers",
       "key": "papers:https://arxiv.org/abs/2606.00277"
+    },
+    "arxiv:2606.17699": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2606.17699"
     },
     "arxiv:2607.16408": {
       "group": "papers",
@@ -12758,6 +13316,86 @@
       "group": "papers",
       "key": "papers:https://arxiv.org/abs/2611.21561"
     },
+    "arxiv:2611.21632": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.21632"
+    },
+    "arxiv:2611.21663": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.21663"
+    },
+    "arxiv:2611.21666": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.21666"
+    },
+    "arxiv:2611.21677": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.21677"
+    },
+    "arxiv:2611.21678": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.21678"
+    },
+    "arxiv:2611.21679": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.21679"
+    },
+    "arxiv:2611.21682": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.21682"
+    },
+    "arxiv:2611.21707": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.21707"
+    },
+    "arxiv:2611.21954": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.21954"
+    },
+    "arxiv:2611.22059": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.22059"
+    },
+    "arxiv:2611.22069": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.22069"
+    },
+    "arxiv:2611.22100": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.22100"
+    },
+    "arxiv:2611.22322": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.22322"
+    },
+    "arxiv:2611.22328": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.22328"
+    },
+    "arxiv:2611.22338": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.22338"
+    },
+    "arxiv:2611.22490": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.22490"
+    },
+    "arxiv:2611.22548": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.22548"
+    },
+    "arxiv:2611.22763": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.22763"
+    },
+    "arxiv:2611.22901": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.22901"
+    },
+    "arxiv:2611.23045": {
+      "group": "papers",
+      "key": "papers:https://arxiv.org/abs/2611.23045"
+    },
     "https://api-docs.deepseek.com/updates#deepseek-v41-flash-1017-update": {
       "group": "models",
       "key": "models:https://api-docs.deepseek.com/updates#deepseek-v41-flash-1017-update"
@@ -12845,6 +13483,10 @@
     "https://blog.st.com/touchgfx": {
       "group": "products",
       "key": "products:https://blog.st.com/touchgfx"
+    },
+    "https://blog.st.com/vb1943": {
+      "group": "products",
+      "key": "products:https://blog.st.com/vb1943"
     },
     "https://blog.st.com/zephyr": {
       "group": "products",
@@ -13513,14 +14155,14 @@
       "Last-Modified": "Tue, 03 Nov 2026 03:11:54 GMT"
     },
     "https://api-docs.deepseek.com/updates": {
-      "ETag": "\"32ebcda8ba954ad4fe86740ed6e53543\"",
-      "Last-Modified": "Mon, 16 Nov 2026 09:36:52 GMT"
+      "ETag": "\"48c897af8d689a54b30145c992fb8938\"",
+      "Last-Modified": "Wed, 18 Nov 2026 06:33:04 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"af7700b2ae48d373149404bfaaa9ca1b373807756979b17a91ccdd2a7acfb22a\""
+      "ETag": "W/\"36651bb7a52f0f68e89e04fc24c4904fb6f65a61d6eccce2420dfafb0db25422\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"04cd65410e0e5d3665933e19fea3518885c8926a2d0bdb5b4e0393159c52fc2a\""
+      "ETag": "W/\"7de6658b9d4967abe4c3b40e81a52a7448d6dda1c4ec4e14e4256fc10137146b\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -13538,7 +14180,7 @@
       "Last-Modified": "Mon, 16 Nov 2026 18:20:49 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Tue, 17 Nov 2026 14:00:00 GMT"
+      "Last-Modified": "Wed, 18 Nov 2026 14:00:00 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -13557,7 +14199,7 @@
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"04kwNA\""
+      "ETag": "\"LQRfDw\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"04kwNA\""
@@ -13572,10 +14214,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-UhZCZEHE1ZErjzZpySvjipJPLYo\""
+      "ETag": "W/\"33bc8-s8hNQ6zJpL4mWVQQnTJtoQyZ2P0\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40188-4Ow3xsKri9Vyz8KWAP64Xb/tsxs\""
+      "ETag": "W/\"40189-H9T+GRMPRhU/GdQtaLcE1UzmC3E\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -13621,12 +14263,12 @@
       "Last-Modified": "Wed, 18 Nov 2026 04:23:50 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1794975855\"",
-      "Last-Modified": "Wed, 18 Nov 2026 04:24:15 GMT"
+      "ETag": "\"1795011636\"",
+      "Last-Modified": "Wed, 18 Nov 2026 14:20:36 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1794976885\"",
-      "Last-Modified": "Wed, 18 Nov 2026 04:41:25 GMT"
+      "ETag": "\"1795012140\"",
+      "Last-Modified": "Wed, 18 Nov 2026 14:29:00 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -13634,13 +14276,13 @@
       "Last-Modified": "Wed, 28 Oct 2026 20:20:49 GMT"
     },
     "https://rss.arxiv.org/rss/cs.AI": {
-      "ETag": "fe6459eb14dd79c044351878f03723c85ed4d3843c56bd85e8a84b635c62c772"
+      "ETag": "4f7e6ec5ec0e239f44e672ff6d0fe293eb3e4bd587e036a75d9abc9012f70d36"
     },
     "https://rss.arxiv.org/rss/cs.AR": {
-      "ETag": "5f406f2feae19a0b8a4e26648c00df249b562ca1c95400cbaccc2aa0439fd885"
+      "ETag": "6f946e63b613dac516025c7920c35ab4dd2930fa729089550a3c1bc8a16e3cb9"
     },
     "https://rss.arxiv.org/rss/eess.SP": {
-      "ETag": "c5414685f697e4e58385b2eeaea107b9793d57c4de91e9c2e89c1fe18e199b4d"
+      "ETag": "15bbe405d831c9ce287582a5c48172f446930f92d07e1b27ca83742033261d02"
     },
     "https://www.anthropic.com/claude-fable-and-mythos-5-2": {},
     "https://www.anthropic.com/claude-haiku-5-5": {},
@@ -13750,7 +14392,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"03e8a426fc42f522c7e2521abd4975978\""
+      "ETag": "\"0f3b3ebf8f650fcb4e13672914e258b65\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -13850,8 +14492,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"faca3ca7d7e13894534370881aa0c706\"",
-      "Last-Modified": "Wed, 18 Nov 2026 02:40:11 GMT"
+      "ETag": "\"602159b09a9b874bf2f6d1c90d259c18\"",
+      "Last-Modified": "Wed, 18 Nov 2026 13:40:40 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
@@ -14278,6 +14920,10 @@
       "list_fingerprint": "8efe97d7e1dae82d8f155e23d54ace8f6c15e836eff7e4c16f550c36c3cb5f85",
       "status": "bootstrap_skipped"
     },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2604.22774": {
+      "list_fingerprint": "a6cb43216d2ab17d7e4dc7be1b00bce1b5b820cdfa78693488de6f64330b8fbe",
+      "status": "selection_limit"
+    },
     "arxiv-ai-surveys:https://arxiv.org/abs/2604.23018": {
       "list_fingerprint": "7deeccd957ccffa07c2e573cc4d38d5a9833b67b9841179b5d010d0a7f0644b9",
       "status": "bootstrap_skipped"
@@ -14328,6 +14974,10 @@
     },
     "arxiv-ai-surveys:https://arxiv.org/abs/2605.12154": {
       "list_fingerprint": "a174c4c6b4fd8a0fa7c2ad113f8da50771816883e1188b28d58e597677d92722",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2605.12925": {
+      "list_fingerprint": "8bdeb7041c78613839e865a3f9211c22d6ff1411ecd9694a46a1bf9216464371",
       "status": "selection_limit"
     },
     "arxiv-ai-surveys:https://arxiv.org/abs/2605.13171": {
@@ -14434,6 +15084,10 @@
       "list_fingerprint": "6ddf32c313bf0ba8e6f7165d0b7da384d26217a517f7222083faf3761fc98be7",
       "status": "selection_limit"
     },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2606.17541": {
+      "list_fingerprint": "5ed265aa8b1aae89d816abf20f9c0492d747df1a6fb21bb28658b9404bac4a2f",
+      "status": "selection_limit"
+    },
     "arxiv-ai-surveys:https://arxiv.org/abs/2606.25530": {
       "list_fingerprint": "109d526319ec59ad923d3aa3c9c212725e460a654309ca4cc12db01619c465c9",
       "status": "selection_limit"
@@ -14502,6 +15156,10 @@
       "list_fingerprint": "ea3d30be1761b0bf360e6f66d05a8dec9d1fecbc91ff7b091499e386f0c90f7b",
       "status": "selection_limit"
     },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2608.08077": {
+      "list_fingerprint": "79dd6009466c2dbd7d34fd3f63310423d6ae25d902c67a319e9f27239c699932",
+      "status": "selection_limit"
+    },
     "arxiv-ai-surveys:https://arxiv.org/abs/2608.14863": {
       "list_fingerprint": "bb35405324a59572f57396cfdb5a38d12b9efa02440b848c3a4f28b2e7724ac0",
       "status": "selection_limit"
@@ -14536,6 +15194,10 @@
     },
     "arxiv-ai-surveys:https://arxiv.org/abs/2608.25667": {
       "list_fingerprint": "c866c67b9c3637316399004586ad3ea0890b0dc1598afe4aeaae4d3829de4896",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2608.25846": {
+      "list_fingerprint": "09599d452d2940f681e26a4678cd07167f7b917d04d248d98472ff5666fb2e3f",
       "status": "selection_limit"
     },
     "arxiv-ai-surveys:https://arxiv.org/abs/2608.28990": {
@@ -14606,6 +15268,10 @@
       "list_fingerprint": "27297b741c108d6dec2feabc713ab159a2e745e90df86345ab1bdc40d3a0d840",
       "status": "bootstrap_skipped"
     },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2609.33319": {
+      "list_fingerprint": "87d8b05c0b7690cd2261dace15f00c2acbbfc6b5340f3a237f075b2a3f43d2a7",
+      "status": "selection_limit"
+    },
     "arxiv-ai-surveys:https://arxiv.org/abs/2609.34428": {
       "list_fingerprint": "436d5c50cc983266830fc0b74618db4382c496ddef573b040ed7bdbaf70a8946",
       "status": "selection_limit"
@@ -14654,6 +15320,10 @@
       "list_fingerprint": "5f13a8c76c469bb3f46af493c0d4da89c6c6b37b0258beba736023829f5b917e",
       "status": "bootstrap_skipped"
     },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.18352": {
+      "list_fingerprint": "217f1c39a552f2ba32f557dc59254d625bcdc897d59ca12ea2d123bde2a19014",
+      "status": "selection_limit"
+    },
     "arxiv-ai-surveys:https://arxiv.org/abs/2610.21270": {
       "list_fingerprint": "c0be5fccda0c457cd0f72da92e9b23a9642875ffb8eded710790af7abb06dcd9",
       "status": "selection_limit"
@@ -14664,6 +15334,10 @@
     },
     "arxiv-ai-surveys:https://arxiv.org/abs/2610.24206": {
       "list_fingerprint": "0a5c42b7a02e294220d5e2d633425194fcd77285871bdb370b1f62e1e3550621",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2610.24335": {
+      "list_fingerprint": "6481a9fc7e0a02afb56cf09b559297a07ffe3b0a7788c8011c6b9ff4faa3df85",
       "status": "selection_limit"
     },
     "arxiv-ai-surveys:https://arxiv.org/abs/2610.26185": {
@@ -15830,6 +16504,82 @@
       "list_fingerprint": "320d3cf7a484d34561bd37727895a6379f4d721c0045a9b4dbb9f9bd8cd21358",
       "status": "selection_limit"
     },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.21632": {
+      "list_fingerprint": "0602a21d707f7d7dde261401d7d3072effe0a4fd96ec86b50b8a78b53dca0d98",
+      "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.21682": {
+      "list_fingerprint": "46a200b63cc1bdd9f823c8b3807c1d22dcbf2defb025cc3fddfda93451ae86c3",
+      "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.21707": {
+      "list_fingerprint": "629fb755d4f0692a5fdd23b6a92c13f32697b2b6f558462cb02fea5ac7c55512",
+      "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.21781": {
+      "list_fingerprint": "9c5b97943a0cd300048feda0ead18f0c0c4d86cb9d3b7d4b2eb1dc0d4a274502",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.21809": {
+      "list_fingerprint": "3f13302bf1e227244af702ec50e212ed6f7eaeab6f84874f67586f97a4293a5a",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.21823": {
+      "list_fingerprint": "d58c281036b0652292e2e2cdcaa5091920864a0df4632d4679de3495a8292735",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.21914": {
+      "list_fingerprint": "6f43b534d8688515c95509fdd17d7fc8b1dd6e7b6735c2b2bc4473fe00f48830",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22009": {
+      "list_fingerprint": "19f9f57497fb8a616a33c66fd168b74105d3e6df19aaa1db7e9683a140a41819",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22069": {
+      "list_fingerprint": "5513fb9db5ce2b2bed90a4a2de5958f56c07d117c84e1bddd94382330adb2633",
+      "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22297": {
+      "list_fingerprint": "29b834129df5ed0c91c6863d766e7b615f86c4e95a127c4766a3c03a5e19b747",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22338": {
+      "list_fingerprint": "eac791b4ef8946f5e8077354250ee8c16228f57a40cb0f0dc8113332c3ec699f",
+      "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22350": {
+      "list_fingerprint": "e427e38fcfec84392ce3175e8b67b4367b1a9cb9e03f4eb70135f3ff4c705ab8",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22434": {
+      "list_fingerprint": "144d445113dec0b49fe1f9cf0ddb64dc3330e00b108d15466b74aa7c71375cec",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22490": {
+      "list_fingerprint": "6b564ded108775850344cc6c9995db7cc81c560a9d11697839395c9df3b19669",
+      "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22673": {
+      "list_fingerprint": "d19a99a795a8a356a5df6ddad2237a104477afe3ea1ec271994602d9675ca769",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22708": {
+      "list_fingerprint": "dd92eac7e2ee5f5e42b8acaeb219622573b61f4dc6aac5820fc76f0386fd95a5",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22825": {
+      "list_fingerprint": "1a56e649638fa6d5099326ab87eab2fbd9d8f6591d852b529ccd796d3fc34088",
+      "status": "selection_limit"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.22901": {
+      "list_fingerprint": "eaaf719b92826d60b7d610b6b4b8a750c07282e7e352fc8694a084727adf7650",
+      "status": "posted"
+    },
+    "arxiv-ai-surveys:https://arxiv.org/abs/2611.23045": {
+      "list_fingerprint": "bca8f1ec6f8e4d0b4de43a9cd0aab3b6c31eca1d93a22bc6e45adce2b6173583",
+      "status": "posted"
+    },
     "arxiv-architecture:https://arxiv.org/abs/2503.08823": {
       "list_fingerprint": "53c9beaa0c9a3435b6b4f410b55eda3c7ca3793672e69f05ebf4563e98440c8a",
       "status": "selection_limit"
@@ -15984,6 +16734,10 @@
     },
     "arxiv-architecture:https://arxiv.org/abs/2609.22743": {
       "list_fingerprint": "39b2863988e80e523fde3a85b5addfbb71508c79147004f2b8e148709fcf05b5",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2609.23816": {
+      "list_fingerprint": "f57a029f8bfd31acbf965868f4199fe79db5a24f2cdc0be7390111e2d8670255",
       "status": "selection_limit"
     },
     "arxiv-architecture:https://arxiv.org/abs/2610.02236": {
@@ -16814,6 +17568,90 @@
       "list_fingerprint": "f31d2fdc9af2f63384f2e01f23b550ec37fbc99ed35226efb089a58b790d3907",
       "status": "selection_limit"
     },
+    "arxiv-architecture:https://arxiv.org/abs/2611.21663": {
+      "list_fingerprint": "06c721a8b412d68731494031cd042598ccd07d3498554a685f82039e083e3436",
+      "status": "posted"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.21666": {
+      "list_fingerprint": "ab93e326f163877962080885bda3d552370179dc09ef4dd31129b70b7f8711f1",
+      "status": "posted"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.21677": {
+      "list_fingerprint": "799da024cb76e38485a7c6139eb7f74ae318e12eed1157c7500fd154fa457e11",
+      "status": "posted"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.21678": {
+      "list_fingerprint": "edafe9d2288bffa0a06baf7bb65047ecdd014775fa27d552e4b66197cdecd26d",
+      "status": "posted"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.21679": {
+      "list_fingerprint": "bb29f0d4d41bd05b620c59f5f9019030e73b7f3807331ea304e16f836c415e88",
+      "status": "posted"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.21954": {
+      "list_fingerprint": "8bca5efbb68a8a83262a35440e6b4a834d6842f4ac082e9344712c22bcaa46fc",
+      "status": "posted"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22019": {
+      "list_fingerprint": "d0dcd0fa70d3142bd85864596df3688dfd9111d6ea2af88f9505375fcf90414b",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22059": {
+      "list_fingerprint": "4404802066b4e912905ed8d9f8a17fffb12954420fe394bfecff9324a71cdbd7",
+      "status": "posted"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22243": {
+      "list_fingerprint": "602128747491b201080aa376e0aa15122e446b37812a1d17d56de921e1b992bb",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22328": {
+      "list_fingerprint": "1b2dad29b66bfb51fc5a2b51bc3e4c8a33d9671a242de8c630e6663b304bd117",
+      "status": "posted"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22402": {
+      "list_fingerprint": "d19c052fec9d6b1bad38b6016850037aacecebf006f3de4650fb281891f80336",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22411": {
+      "list_fingerprint": "3ad95e479a41e4941f647b7723143a43722306be36c6a2935fbfb802f0b9292b",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22483": {
+      "list_fingerprint": "1f8d37892ce197e92657c7bc19223f11999d72aacfd168f5a02e5478d1186e21",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22674": {
+      "list_fingerprint": "98350f24ec87d11c3b2316f619ea29b1f5a26a216407e535d77a2bc333830273",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22746": {
+      "list_fingerprint": "19c2f04df49707b730e7b9afe2e72860c9b220c12412b75f680201eeb390ccb5",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22772": {
+      "list_fingerprint": "ca5f696366f46d891a34a90a116a9eaa900fecc08627b797fca9f7904afc3826",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22844": {
+      "list_fingerprint": "56d76d0fc7dbdebad28539b9a02218d036cd06183f8102225bc71ac686059a94",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22900": {
+      "list_fingerprint": "24453fe4781cbe48ccd45bce27d6a6f2e8a3b8b7695e0dc8a3189b1861ccf6a5",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.22937": {
+      "list_fingerprint": "0f5a9bdff3587f2cdff3e1ca137c579a348ff6962c0e3e316b3c97a30f593740",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.23022": {
+      "list_fingerprint": "302fa660970a43ba4f531595a6cecf3d61c3761b860e32250640f02821860ec2",
+      "status": "selection_limit"
+    },
+    "arxiv-architecture:https://arxiv.org/abs/2611.23101": {
+      "list_fingerprint": "723af58937036461da4b3c90c5d2512228ba134c64914699ac90ac6794f2777f",
+      "status": "selection_limit"
+    },
     "arxiv-signal-systems:https://arxiv.org/abs/2308.07266": {
       "list_fingerprint": "09bfcfcd256e27cba6b34c60818885ed3ed08346386b1446cec98b2f64e036da",
       "status": "posted"
@@ -16836,6 +17674,10 @@
     },
     "arxiv-signal-systems:https://arxiv.org/abs/2512.15754": {
       "list_fingerprint": "f178974b58ec2cb07350d8c1174d1b6e4321d0abbe6aa80f179ab1f43534b80c",
+      "status": "posted"
+    },
+    "arxiv-signal-systems:https://arxiv.org/abs/2602.20018": {
+      "list_fingerprint": "4b1e393d08871bdbf85c3ab98b1a1882ffe15127f8704656a7afc1b81fca2671",
       "status": "posted"
     },
     "arxiv-signal-systems:https://arxiv.org/abs/2602.20874": {
@@ -16901,6 +17743,10 @@
     "arxiv-signal-systems:https://arxiv.org/abs/2606.02102": {
       "list_fingerprint": "d5d78d1c2ab7f6dcb45ae4318c2da8b9e2b69bf972873d7276e6f89bda358590",
       "status": "selection_limit"
+    },
+    "arxiv-signal-systems:https://arxiv.org/abs/2606.17699": {
+      "list_fingerprint": "8c7b54ca5492002b19270590496db4a24a434a0752ec17329a3f55c925a8b98e",
+      "status": "posted"
     },
     "arxiv-signal-systems:https://arxiv.org/abs/2606.23073": {
       "list_fingerprint": "217122de46e8abe4ccad08251970e838c34530c5ac22f8f56df5be79f7c341c5",
@@ -17412,6 +18258,22 @@
     },
     "arxiv-signal-systems:https://arxiv.org/abs/2611.21561": {
       "list_fingerprint": "7e9ad4a75c3b95dff2349794907d0a4ebdcb8de17a87f0b15f295b9d2518bd66",
+      "status": "posted"
+    },
+    "arxiv-signal-systems:https://arxiv.org/abs/2611.22100": {
+      "list_fingerprint": "b7648e2069c6bcb3a250601b46bcd9cd6cafbf319f2daec20d19fcd325fd8844",
+      "status": "posted"
+    },
+    "arxiv-signal-systems:https://arxiv.org/abs/2611.22322": {
+      "list_fingerprint": "be84e2995ee65675120d76bb26161e4e9b7ded665d8b1654797b71784e7ffa74",
+      "status": "posted"
+    },
+    "arxiv-signal-systems:https://arxiv.org/abs/2611.22548": {
+      "list_fingerprint": "3bb3f2f89d8ddf5b7b535377c5090c9eea64a19db8d320a9d57e70fd23ff81a3",
+      "status": "posted"
+    },
+    "arxiv-signal-systems:https://arxiv.org/abs/2611.22763": {
+      "list_fingerprint": "df0541ef5dbf02315cad21e60bb46199511b84afcdc94ba01c7e51896ec3388e",
       "status": "posted"
     },
     "deepseek:https://api-docs.deepseek.com/updates#deepseek-v4-flash-update": {
@@ -19636,6 +20498,12 @@
       "language": "en",
       "url": "https://arxiv.org/abs/2512.15754"
     },
+    "papers:https://arxiv.org/abs/2602.20018": {
+      "fingerprint": "4b1e393d08871bdbf85c3ab98b1a1882ffe15127f8704656a7afc1b81fca2671",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2602.20018"
+    },
     "papers:https://arxiv.org/abs/2602.23539": {
       "fingerprint": "ae265041a049b8d0f0740439efbf2ed769cce9a9952de18539f893f7575e92e8",
       "first_seen": "2026-11-16T11:57:05.457729+00:00",
@@ -19683,6 +20551,12 @@
       "first_seen": "2026-11-16T11:57:05.457729+00:00",
       "language": "en",
       "url": "https://arxiv.org/abs/2606.00277"
+    },
+    "papers:https://arxiv.org/abs/2606.17699": {
+      "fingerprint": "8c7b54ca5492002b19270590496db4a24a434a0752ec17329a3f55c925a8b98e",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2606.17699"
     },
     "papers:https://arxiv.org/abs/2607.16408": {
       "fingerprint": "2440be5678ee585001fea6517f5135c3ae16576362444e4ed4c784d06b63135e",
@@ -21280,6 +22154,126 @@
       "language": "en",
       "url": "https://arxiv.org/abs/2611.21561"
     },
+    "papers:https://arxiv.org/abs/2611.21632": {
+      "fingerprint": "0602a21d707f7d7dde261401d7d3072effe0a4fd96ec86b50b8a78b53dca0d98",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.21632"
+    },
+    "papers:https://arxiv.org/abs/2611.21663": {
+      "fingerprint": "06c721a8b412d68731494031cd042598ccd07d3498554a685f82039e083e3436",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.21663"
+    },
+    "papers:https://arxiv.org/abs/2611.21666": {
+      "fingerprint": "ab93e326f163877962080885bda3d552370179dc09ef4dd31129b70b7f8711f1",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.21666"
+    },
+    "papers:https://arxiv.org/abs/2611.21677": {
+      "fingerprint": "799da024cb76e38485a7c6139eb7f74ae318e12eed1157c7500fd154fa457e11",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.21677"
+    },
+    "papers:https://arxiv.org/abs/2611.21678": {
+      "fingerprint": "edafe9d2288bffa0a06baf7bb65047ecdd014775fa27d552e4b66197cdecd26d",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.21678"
+    },
+    "papers:https://arxiv.org/abs/2611.21679": {
+      "fingerprint": "bb29f0d4d41bd05b620c59f5f9019030e73b7f3807331ea304e16f836c415e88",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.21679"
+    },
+    "papers:https://arxiv.org/abs/2611.21682": {
+      "fingerprint": "46a200b63cc1bdd9f823c8b3807c1d22dcbf2defb025cc3fddfda93451ae86c3",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.21682"
+    },
+    "papers:https://arxiv.org/abs/2611.21707": {
+      "fingerprint": "629fb755d4f0692a5fdd23b6a92c13f32697b2b6f558462cb02fea5ac7c55512",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.21707"
+    },
+    "papers:https://arxiv.org/abs/2611.21954": {
+      "fingerprint": "8bca5efbb68a8a83262a35440e6b4a834d6842f4ac082e9344712c22bcaa46fc",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.21954"
+    },
+    "papers:https://arxiv.org/abs/2611.22059": {
+      "fingerprint": "4404802066b4e912905ed8d9f8a17fffb12954420fe394bfecff9324a71cdbd7",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.22059"
+    },
+    "papers:https://arxiv.org/abs/2611.22069": {
+      "fingerprint": "5513fb9db5ce2b2bed90a4a2de5958f56c07d117c84e1bddd94382330adb2633",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.22069"
+    },
+    "papers:https://arxiv.org/abs/2611.22100": {
+      "fingerprint": "b7648e2069c6bcb3a250601b46bcd9cd6cafbf319f2daec20d19fcd325fd8844",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.22100"
+    },
+    "papers:https://arxiv.org/abs/2611.22322": {
+      "fingerprint": "be84e2995ee65675120d76bb26161e4e9b7ded665d8b1654797b71784e7ffa74",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.22322"
+    },
+    "papers:https://arxiv.org/abs/2611.22328": {
+      "fingerprint": "1b2dad29b66bfb51fc5a2b51bc3e4c8a33d9671a242de8c630e6663b304bd117",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.22328"
+    },
+    "papers:https://arxiv.org/abs/2611.22338": {
+      "fingerprint": "eac791b4ef8946f5e8077354250ee8c16228f57a40cb0f0dc8113332c3ec699f",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.22338"
+    },
+    "papers:https://arxiv.org/abs/2611.22490": {
+      "fingerprint": "6b564ded108775850344cc6c9995db7cc81c560a9d11697839395c9df3b19669",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.22490"
+    },
+    "papers:https://arxiv.org/abs/2611.22548": {
+      "fingerprint": "3bb3f2f89d8ddf5b7b535377c5090c9eea64a19db8d320a9d57e70fd23ff81a3",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.22548"
+    },
+    "papers:https://arxiv.org/abs/2611.22763": {
+      "fingerprint": "df0541ef5dbf02315cad21e60bb46199511b84afcdc94ba01c7e51896ec3388e",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.22763"
+    },
+    "papers:https://arxiv.org/abs/2611.22901": {
+      "fingerprint": "eaaf719b92826d60b7d610b6b4b8a750c07282e7e352fc8694a084727adf7650",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.22901"
+    },
+    "papers:https://arxiv.org/abs/2611.23045": {
+      "fingerprint": "bca8f1ec6f8e4d0b4de43a9cd0aab3b6c31eca1d93a22bc6e45adce2b6173583",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://arxiv.org/abs/2611.23045"
+    },
     "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103": {
       "fingerprint": "cf26516008a9b3fc4164f6013a5acbf1e8a48b99a84d64fc6640f47441353519",
       "first_seen": "2026-11-03T23:35:39.739875+00:00",
@@ -21399,6 +22393,12 @@
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://blog.st.com/touchgfx/"
+    },
+    "products:https://blog.st.com/vb1943": {
+      "fingerprint": "dc77469f6a4e91a6f88abbad35f769e2784dabd21c566657b0c22c0010a4771f",
+      "first_seen": "2026-11-18T14:28:18.758504+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/vb1943/"
     },
     "products:https://blog.st.com/zephyr": {
       "fingerprint": "e84e40df92ec40c9dcaa3cb4f57f99fff7c9b6751d4a6c995fcbf7fd45df7f01",
@@ -22164,6 +23164,10 @@
     },
     "st-technical:https://blog.st.com/touchgfx": {
       "list_fingerprint": "3b0cec06bfed9a6c046c3d9bbfd3fc70309bd92ba8fd761cf0a46e14bfb7842c",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/vb1943": {
+      "list_fingerprint": "dc77469f6a4e91a6f88abbad35f769e2784dabd21c566657b0c22c0010a4771f",
       "status": "posted"
     },
     "st-technical:https://blog.st.com/zephyr": {
