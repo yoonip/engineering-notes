@@ -1,10 +1,24 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-18 13:41 KST
+반영: 2026-11-18 23:29 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## VB1943 and robotics: When AI is in the eye \(or CMOS sensor\) of the beholder
+
+STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 이미지·영상 처리·로봇·모빌리티 주제를 다룹니다.
+
+출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/vb1943/>) · RSS·Atom 발행 시각: 2026-11-18 23:00 KST
+
+RSS·Atom 표기 작성자: David Civera
+
+가져온 시각: 2026-11-18 23:29:33 KST
+
+수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
 
 ## NVIDIA, 공급망 파트너와 협력 확대해 AI 인프라 구축 지원하다
 
