@@ -1,14 +1,26 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-18 13:21 KST
+갱신: 2026-11-18 22:59 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 우크라군 "전쟁 발발 후 러시아군 사상자 162만명"
+
+> 러시아가 2022년 2월 우크라이나를 침공한 뒤로 병력 약 162만명이 사망하거나 부상했다고 우크라이나군이 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118177000109>) · 2026-11-18 19:17 KST · 작성·제공: 민경락
 
 ## 日 무역적자 6개월째 지속…원유가격 상승으로 지난달 수입액↑
 
 > 원유 가격 급등 등으로 일본의 무역수지가 6개월 연속 적자를 기록했다.
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118101200073>) · 2026-11-18 13:09 KST · 작성·제공: 이도연
+
+## 앨리스 황, 日에도 데이터센터기업 설립…칩 수출 우회로 노렸나
+
+> 엔비디아 최첨단 반도체의 중국 반출 의혹에 연루되면서 중국 스파이로 지목된 앨리스 황\(중국명 황러\)이 일본에...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118182500073>) · 2026-11-18 20:44 KST · 작성·제공: 조성미
 
 ## \[속보\] 시진핑 "상품·서비스 수입 확대…디지털경제·AI 협력 강화"
 
@@ -17,6 +29,12 @@
 ## \[속보\] 美 '초접전' 알래스카 상원 선거서도 민주 승리 &lt; AP&gt;
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118098500009>) · 2026-11-18 12:25 KST · 작성·제공: 이지헌
+
+## 최루가스 매캐한 프랑스…여성 1만명 "건강 위협"
+
+> 프랑스에서 열악한 교육 여건과 고물가에 항의하는 잇단 시위로 경찰의 최루가스 사용이 늘어난 가운데 최루가스 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118185300085>) · 2026-11-18 21:33 KST · 작성·제공: 김지연
 
 ## \[인&amp;아웃\] 미중러 정상회담에 얄타가 소환된 까닭
 
@@ -35,6 +53,18 @@
 > 젠슨 황 전 최고경영자\(CEO\)의 중국 스파이 연루에 따른 인공지능\(AI\) 반도체 유출 의혹으로 곤욕...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261118006600091>) · 2026-11-18 03:02 KST · 작성·제공: 권영전
+
+## 트럼프 대통령 중국 도착…시진핑 직접 영접, 미중러 정상회담 앞둬
+
+> 중국 선전에서 열리는 APEC 정상회의 참석을 위해 도널드 트럼프 미국 대통령이 18일 중국에 도착했습니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8224993.html>) · 2026-11-18 21:18 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 연이틀 '북미 회담' 군불…"김정은도 오고 싶어해"
+
+> 트럼프 미국 대통령은 김정은 북한 국무위원장 역시 중국에 오고 싶어 한다며, 연이틀 북미 정상회담에 불을 지폈습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008852540&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-18 22:17 KST · 작성·제공: lucaside@sbs.co.kr \(이한석\)
 
 ## 미 국무부 “베네수엘라 석유 수입 철저히 감독…공공서비스·재건 사용”
 
@@ -60,11 +90,35 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-measles-111726/8224755.html>) · 2026-11-18 05:53 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
+## 루비오 장관 “트럼프 대통령, 김정은과 대화에 진지”…순방 중 회동은 불확실
+
+> 마코 루비오 미국 국무장관이 도널드 트럼프 대통령은 김정은 북한 국무위원장과의 대화에 진지하다고 밝혔습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8224996.html>) · 2026-11-18 21:25 KST
+
+## 러 여행사, 평양 ‘캐비아·레드와인’ 미식관광 출시… 식재료 반입경로 의문
+
+> 러시아 여행사가 평양 고급 식당에서 캐비아와 수입 와인을 제공하는 미식관광을 출시했다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/18/north-korea-russia-gourmet-tour/>) · 2026-11-18 13:35 KST · 작성·제공: 워싱턴-자민 앤더슨 andersonj@rfa.org
+
 ## 베이조스 “젠슨 황 복귀 안 시킬거면 후임 내부서 발탁해야”
 
 > 아마존 창업자 제프 베이조스가 엔비디아 이사회에 젠슨 황 전 최고경영자\(CEO\) 복귀를 추진하지 않을 것이라면 후임은 반드시 내부에서 발탁해야 한다고 조언했다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261118/135045702/1>) · 2026-11-18 12:43 KST
+
+## 미중러 회의 앞두고 북한도 ‘제 2얄타 회담’ 우려할까
+
+> 미중러 정상회의를 앞두고 이를 바라보는 북한의 복잡한 속내가 엿보인다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/18/trump-kim-russia-apec-korea/>) · 2026-11-18 16:26 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
+## ‘푸틴 자존심’ 크림대교, 우크라 공격에 일부 구간 붕괴
+
+> 러시아가 2014년 우크라이나 크림반도를 병합한 뒤 건설한 크림대교가 우크라이나의 대규모 미사일·드론 공격으로 크게 파손되면서 러시아의 전쟁 수행 능력은 물론 블라디미르 푸틴 대통령의 정치적 이미지에도 타격을…
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261118/135049181/1>) · 2026-11-18 17:40 KST
 
 ## 中 SNS서 北관련 콘텐츠 대거 차단…김정은 방중 임박?
 
@@ -74,6 +128,7 @@
 
 ## 다른 매체의 원문
 
+- [UK inflation rises to year high and keeps risk of second straight rate hike alive](<https://abcnews.com/International/wireStory/uk-inflation-rises-year-high-possibility-straight-rate-138242229>) · ABC News 미국
 - [With few alternatives, Gazans shelter in collapsing buildings](<https://www.csmonitor.com/World/Middle-East/2026/1117/gaza-war-housing-shortage-collapsed-buildings-al-saada?icid=rss>) · The Christian Science Monitor
 - [Some Filipinos, feeling ‘bullied’ by China, are reassured by Trump’s visit](<https://www.csmonitor.com/World/Asia-Pacific/2026/1117/asean-philippines-china-trump-security?icid=rss>) · The Christian Science Monitor
 - [Nabeel Rajab, prominent Bahraini human rights activist, dies at 62](<https://abcnews.com/International/wireStory/nabeel-rajab-prominent-bahraini-human-rights-activist-dies-138231196>) · ABC News 미국
