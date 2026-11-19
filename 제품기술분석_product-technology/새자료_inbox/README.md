@@ -1,34 +1,48 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-19 07:16 KST
+반영: 2026-11-20 07:24 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## Build Training-Ready Physical AI Datasets with Two Prompts in NVIDIA Cosmos
+## Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo
 
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 세계 모형·시뮬레이션 주제를 다룹니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론 주제를 다룹니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos/>) · RSS·Atom 발행 시각: 2026-11-19 02:00 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/>) · RSS·Atom 발행 시각: 2026-11-20 05:28 KST
 
-RSS·Atom 표기 작성자: Nakul Arora
+RSS·Atom 표기 작성자: Amr Elmeleegy
 
-가져온 시각: 2026-11-19 07:16:49 KST
+가져온 시각: 2026-11-20 07:24:29 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Tackling GPU Bottlenecks in Plane-Wave DFT with K-Point Batching and Mixed Precision
+## Enabling Real-Time AI for Scientific Instruments with GPU-Native Data Acquisition
 
 NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/>) · RSS·Atom 발행 시각: 2026-11-19 00:00 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/>) · RSS·Atom 발행 시각: 2026-11-20 02:00 KST
 
-RSS·Atom 표기 작성자: Erica Tsai
+RSS·Atom 표기 작성자: Cara Laasch
 
-가져온 시각: 2026-11-19 07:16:49 KST
+가져온 시각: 2026-11-20 07:24:29 KST
+
+수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
+
+## Build Tool-Calling Parsers in Rust with AI Agents
+
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.
+
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/>) · RSS·Atom 발행 시각: 2026-11-20 01:30 KST
+
+RSS·Atom 표기 작성자: Keiven Chang
+
+가져온 시각: 2026-11-20 07:24:29 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
