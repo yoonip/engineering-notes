@@ -382,6 +382,7 @@
     "papers:https://arxiv.org/abs/2611.24568": "papers:https://arxiv.org/abs/2611.24568",
     "papers:https://arxiv.org/abs/2611.24669": "papers:https://arxiv.org/abs/2611.24669",
     "papers:https://arxiv.org/abs/2611.24867": "papers:https://arxiv.org/abs/2611.24867",
+    "papers:https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119": "papers:https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119",
     "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103": "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103",
     "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
     "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030",
@@ -389,6 +390,7 @@
     "papers:https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112": "papers:https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
     "papers:https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102": "papers:https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102",
     "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
+    "papers:https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119": "papers:https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119",
     "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
     "products:https://blog.st.com/ai-data-centers": "products:https://blog.st.com/ai-data-centers",
     "products:https://blog.st.com/aliro": "products:https://blog.st.com/aliro",
@@ -427,11 +429,13 @@
     "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale": "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale",
     "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo": "products:https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo",
     "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw",
+    "products:https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents": "products:https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents",
     "products:https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos": "products:https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos",
     "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos",
     "products:https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference": "products:https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference",
     "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os": "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os",
     "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution": "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution",
+    "products:https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition": "products:https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition",
     "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas": "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas",
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
     "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory": "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory",
@@ -448,6 +452,7 @@
     "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1": "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1",
     "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0": "products:https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0",
     "products:https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain": "products:https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain",
+    "products:https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo": "products:https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo",
     "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
     "products:https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton": "products:https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton",
     "products:https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla": "products:https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla",
@@ -580,7 +585,8 @@
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72313",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72314": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72314",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72315": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72315",
-    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72316": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72316"
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72316": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72316",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72318": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72318"
   },
   "days": {
     "industry": {
@@ -8878,6 +8884,48 @@
           "url": "https://arxiv.org/abs/2611.24867",
           "version": "1"
         }
+      ],
+      "2026-11-20": [
+        {
+          "acquired_at": "2026-11-19T22:24:36.901728+00:00",
+          "acquisition_method": "MIT News 공식 연구 소개 RSS",
+          "author": "Bwiza Gihana Deborah | Institute for Medical Engineering and Science",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-19T22:15:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-19T22:23:24.342361+00:00",
+          "group": "papers",
+          "homepage": "https://news.mit.edu/topic/artificial-intelligence2",
+          "key": "papers:https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119",
+          "kind": "대학 연구 소개",
+          "source_name": "MIT News AI 연구 소개",
+          "source_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+          "summary_ko": "MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "AI helps researchers investigate how thousands of medical studies share code",
+          "update": false,
+          "url": "https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119"
+        },
+        {
+          "acquired_at": "2026-11-19T22:24:36.901728+00:00",
+          "acquisition_method": "MIT News 공식 연구 소개 RSS",
+          "author": "Adam Zewe | MIT News",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-19T14:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-19T22:23:24.342361+00:00",
+          "group": "papers",
+          "homepage": "https://news.mit.edu/topic/artificial-intelligence2",
+          "key": "papers:https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119",
+          "kind": "대학 연구 소개",
+          "source_name": "MIT News AI 연구 소개",
+          "source_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+          "summary_ko": "MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 에너지·전력 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Study reveals data centers’ long-distance damage to air quality",
+          "update": false,
+          "url": "https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119"
+        }
       ]
     },
     "products": {
@@ -10285,6 +10333,65 @@
           "title": "Tackling GPU Bottlenecks in Plane-Wave DFT with K-Point Batching and Mixed Precision",
           "update": false,
           "url": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/"
+        }
+      ],
+      "2026-11-20": [
+        {
+          "acquired_at": "2026-11-19T22:24:29.248326+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Keiven Chang",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-19T16:30:46+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-19T22:23:24.342361+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에이전트·도구 사용 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Build Tool-Calling Parsers in Rust with AI Agents",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/"
+        },
+        {
+          "acquired_at": "2026-11-19T22:24:29.248326+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Cara Laasch",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-19T17:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-19T22:23:24.342361+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Enabling Real-Time AI for Scientific Instruments with GPU-Native Data Acquisition",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/"
+        },
+        {
+          "acquired_at": "2026-11-19T22:24:29.248326+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Amr Elmeleegy",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-19T20:28:13+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-19T22:23:24.342361+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/"
         }
       ]
     },
@@ -11944,6 +12051,27 @@
           "update": false,
           "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72316"
         }
+      ],
+      "2026-11-20": [
+        {
+          "acquired_at": "2026-11-19T22:24:27.826207+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-19",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-11-19T22:23:24.342361+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72318",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "The PHP Group은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1][2][3][4] o 영향을 받는 버전을 사용 중인 사용자는 해결…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "PHP 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72318"
+        }
       ]
     }
   },
@@ -12606,6 +12734,12 @@
       "date": "2026-11-19",
       "description": "F5社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1]~[12] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
       "title": "F5 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72318": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-11-19",
+      "description": "The PHP Group은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1][2][3][4] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "PHP 제품 보안 업데이트 권고"
     },
     "https://www.kdi.re.kr/research/economy?pub_no=18120": {
       "date": "",
@@ -14442,6 +14576,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw"
     },
+    "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents"
+    },
     "https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos"
@@ -14461,6 +14599,10 @@
     "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution"
+    },
+    "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition"
     },
     "https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas": {
       "group": "products",
@@ -14525,6 +14667,10 @@
     "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain"
+    },
+    "https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo"
     },
     "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
       "group": "products",
@@ -14630,6 +14776,10 @@
       "group": "reports",
       "key": "reports:https://ksp.etri.re.kr/ksp/plan-report/read?id=1574"
     },
+    "https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119": {
+      "group": "papers",
+      "key": "papers:https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119"
+    },
     "https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103": {
       "group": "papers",
       "key": "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103"
@@ -14661,6 +14811,10 @@
     "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
       "group": "papers",
       "key": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014"
+    },
+    "https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119": {
+      "group": "papers",
+      "key": "papers:https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119"
     },
     "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": {
       "group": "papers",
@@ -14946,6 +15100,10 @@
       "group": "tools",
       "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72316"
     },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72318": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72318"
+    },
     "https://www.kdi.re.kr/research/economy?pub_no=19321": {
       "group": "reports",
       "key": "reports:https://www.kdi.re.kr/research/economy?pub_no=19321"
@@ -15037,10 +15195,10 @@
       "Last-Modified": "Thu, 19 Nov 2026 07:35:15 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"69329bdda843a5026927179c2d8d8bf2b74a26a8820905dad4967965b68a7e10\""
+      "ETag": "W/\"c98a7b7480d92b935eba42f066591f01868ac6b696aa6f77a150796c2f355d9e\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"d1c60c69a7a86220f0b4fe802c35471571ead9598c0c6384c1505d4464d59db2\""
+      "ETag": "W/\"62e303f4169bf1dc08a7c92adc70c8038f40c40e931569cdfdc620f15d2da60f\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -15078,12 +15236,15 @@
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/introducing-gemini-4-neon": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "ETag": "\"yFxtiA\""
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"Rt54sA\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"7360e53732b849cde9c947fd9196fa60\"",
-      "Last-Modified": "Wed, 18 Nov 2026 20:02:38 GMT"
+      "ETag": "\"2ad64f241025eece36e332bf4ae546de\"",
+      "Last-Modified": "Thu, 19 Nov 2026 20:28:20 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -15091,10 +15252,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-CKsTIOWlT6piZUjj5n1RX97t4cQ\""
+      "ETag": "W/\"33bc8-8PCVkIwyQR9yn7j8kBw2Jkom3RY\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40189-8PBMqN2gr2Hb1zf4S5SOW4RdNwI\""
+      "ETag": "W/\"40189-8aAp+OkRogmzIwF/QV5zJatq23k\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -15131,6 +15292,7 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1574": {},
+    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -15140,12 +15302,12 @@
       "Last-Modified": "Thu, 19 Nov 2026 03:38:10 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1795094741\"",
-      "Last-Modified": "Thu, 19 Nov 2026 13:25:41 GMT"
+      "ETag": "\"1795127022\"",
+      "Last-Modified": "Thu, 19 Nov 2026 22:23:42 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1795095584\"",
-      "Last-Modified": "Thu, 19 Nov 2026 13:39:44 GMT"
+      "ETag": "\"1795127077\"",
+      "Last-Modified": "Thu, 19 Nov 2026 22:24:37 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -15227,6 +15389,7 @@
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72314": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72315": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72316": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72318": {},
     "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133": {},
     "https://www.boho.or.kr/robots.txt": {
       "ETag": "W/\"243-1794382637620\"",
@@ -15272,7 +15435,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0888684094532cd7b6566a61712759d1b\""
+      "ETag": "\"0b429db689f02653b7d8cf31d02884e23\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -15372,8 +15535,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"9af00cff87ce9b3c5ee8130b01126cfe\"",
-      "Last-Modified": "Thu, 19 Nov 2026 12:55:23 GMT"
+      "ETag": "\"bfdc0039222820d974c3c92e18a36c26\"",
+      "Last-Modified": "Thu, 19 Nov 2026 22:02:36 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
@@ -15442,7 +15605,7 @@
       "rules": "User-agent: *\r\nAllow: /\r\nDisallow:/webdata"
     },
     "https://ksp.etri.re.kr/robots.txt": {
-      "day": "2026-11-16",
+      "day": "2026-11-19",
       "rules": "Sitemap: https://ksp.etri.re.kr/ksp/sitemap.xml\n\nUser-agent: *\nDisallow: /ksp/funding/\nDisallow: /ksp/edr/\nDisallow: /ksp/rcp/\nDisallow: /ksp/git/\n\nUser-agent: Mediapartners-Google*\nDisallow: /\n\nUser-agent: UbiCrawler\nDisallow: /\n\nUser-agent: DOC\nDisallow: /\n\nUser-agent: Zao\nDisallow: /\n\nUser-agent: sitecheck.internetseer.com\nDisallow: /\n\nUser-agent: Zealbot\nDisallow: /\n\nUser-agent: MSIECrawler\nDisallow: /\n\nUser-agent: SiteSnagger\nDisallow: /\n\nUser-agent: WebStripper\nDisallow: /\n\nUser-agent: WebCopier\nDisallow: /\n\nUser-agent: Fetch\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: Teleport\nDisallow: /\n\nUser-agent: TeleportPro\nDisallow: /\n\nUser-agent: WebZIP\nDisallow: /\n\nUser-agent: linko\nDisallow: /\n\nUser-agent: HTTrack\nDisallow: /\n\nUser-agent: Microsoft.URL.Control\nDisallow: /\n\nUser-agent: Xenu\nDisallow: /\n\nUser-agent: larbin\nDisallow: /\n\nUser-agent: libwww\nDisallow: /\n\nUser-agent: ZyBORG\nDisallow: /\n\nUser-agent: Download Ninja\nDisallow: /\n\nUser-agent: fast\nDisallow: /\n\nUser-agent: grub-client\nDisallow: /\n\nUser-agent: k2spider\nDisallow: /\n\nUser-agent: NPBot\nDisallow: /\n\nUser-agent: WebReaper\nDisallow: /\n\n\n"
     },
     "https://news.mit.edu/robots.txt": {
@@ -20176,6 +20339,10 @@
       "list_fingerprint": "2f8cf168cd7c0881532f36835da2e5b5db5702052c155f9adaa3c29f66e30062",
       "status": "posted"
     },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72318": {
+      "list_fingerprint": "a5c1b66e121b4133acee9675e86f46302b0b9c0c6d767c4ac36f61e2d33579b3",
+      "status": "posted"
+    },
     "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93860&mid=a10306040000": {
       "list_fingerprint": "d8d15543a49c2c241f17085238c50bbbc61e603451d3734f26ff9c1f1821d2ae",
       "status": "older_material"
@@ -20584,6 +20751,10 @@
       "list_fingerprint": "5dc6de3a36b22bd5541a8d2a6ba599ea938f86e55af984c8e2434f96226027c3",
       "status": "bootstrap_skipped"
     },
+    "mit-ai-research:https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119": {
+      "list_fingerprint": "553e2e56a332dee3b1852bc7f06e3da24fddc11f760e1488924633a4218d1440",
+      "status": "posted"
+    },
     "mit-ai-research:https://news.mit.edu/2026/algorithmic-monoculture-effects-depend-on-details-0929": {
       "list_fingerprint": "505f6457ba39393290511c3f874819a2621d848174d4873f03a80ecf326d2467",
       "status": "bootstrap_skipped"
@@ -20638,6 +20809,10 @@
     },
     "mit-ai-research:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
       "list_fingerprint": "d5e7a8628a836559d6af65563f30f246ef13e3b1b7a8ce83011a14e618415099",
+      "status": "posted"
+    },
+    "mit-ai-research:https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119": {
+      "list_fingerprint": "35c43fcb238e1cd4caec7ab8aa3fbaa5384dfda3fe961770d479f3fcca3b7d15",
       "status": "posted"
     },
     "mit-ai-research:https://news.mit.edu/2026/studying-cities-using-visual-ai-fabio-duarte-martina-mazzarello-carlo-ratti-fan-zhang-book-0924": {
@@ -20962,6 +21137,10 @@
       "list_fingerprint": "e5fdd08afd7e3e8eedeaaa4b0bb4f505a7aa92a35439d3cc28ead78929c2febe",
       "status": "posted"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents": {
+      "list_fingerprint": "08c20a8e8422ce32a71e131fb7ebd521df63d5036dc0267f381bff5ca17e598e",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos": {
       "list_fingerprint": "660cf1a26bd57289205e9877a2a8d2f097b3145cad3d46383e5c4b5134dc095a",
       "status": "posted"
@@ -21053,6 +21232,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing": {
       "list_fingerprint": "4aa02ef7e9542e56570feb7f86aeca1e6ab004459e2f7c0792aa8b4473f03135",
       "status": "bootstrap_skipped"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition": {
+      "list_fingerprint": "4e9b13355e07c72c12353deaedd4d6ca1ea82f17ba5590043c8ea99580c30740",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia-scada-server-sdk": {
       "list_fingerprint": "b0a98c44663308a709fc3abf863d9b9e84be06bc586533e1808d668360f6b6c8",
@@ -21280,6 +21463,10 @@
     },
     "nvidia-technical:https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain": {
       "list_fingerprint": "08ce84d0d7b387443861df2bb878b4549d560dc029b356ad1c49274d5dc95692",
+      "status": "posted"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo": {
+      "list_fingerprint": "71a7016887c07e5ecfc1f964d411edab257985a64e232959db79f4dc751ce8fb",
       "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding": {
@@ -23570,6 +23757,12 @@
       "language": "en",
       "url": "https://arxiv.org/abs/2611.24867"
     },
+    "papers:https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119": {
+      "fingerprint": "553e2e56a332dee3b1852bc7f06e3da24fddc11f760e1488924633a4218d1440",
+      "first_seen": "2026-11-19T22:23:24.342361+00:00",
+      "language": "en",
+      "url": "https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119"
+    },
     "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103": {
       "fingerprint": "cf26516008a9b3fc4164f6013a5acbf1e8a48b99a84d64fc6640f47441353519",
       "first_seen": "2026-11-03T23:35:39.739875+00:00",
@@ -23611,6 +23804,12 @@
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
       "language": "en",
       "url": "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014"
+    },
+    "papers:https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119": {
+      "fingerprint": "35c43fcb238e1cd4caec7ab8aa3fbaa5384dfda3fe961770d479f3fcca3b7d15",
+      "first_seen": "2026-11-19T22:23:24.342361+00:00",
+      "language": "en",
+      "url": "https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119"
     },
     "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": {
       "fingerprint": "fa2737a108382852fb1d323901f13b681623eb0780eac151c0e8e8cb370aa91f",
@@ -23840,6 +24039,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
     },
+    "products:https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents": {
+      "fingerprint": "08c20a8e8422ce32a71e131fb7ebd521df63d5036dc0267f381bff5ca17e598e",
+      "first_seen": "2026-11-19T22:23:24.342361+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/"
+    },
     "products:https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos": {
       "fingerprint": "660cf1a26bd57289205e9877a2a8d2f097b3145cad3d46383e5c4b5134dc095a",
       "first_seen": "2026-11-18T22:15:43.097344+00:00",
@@ -23869,6 +24074,12 @@
       "first_seen": "2026-11-03T01:44:27.211737+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/"
+    },
+    "products:https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition": {
+      "fingerprint": "4e9b13355e07c72c12353deaedd4d6ca1ea82f17ba5590043c8ea99580c30740",
+      "first_seen": "2026-11-19T22:23:24.342361+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/"
     },
     "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas": {
       "fingerprint": "c7304e36afe816848aed300402cf816edf6953f7e15d10730f2c81ebb41fe815",
@@ -23965,6 +24176,12 @@
       "first_seen": "2026-11-16T22:26:52.919910+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/"
+    },
+    "products:https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo": {
+      "fingerprint": "71a7016887c07e5ecfc1f964d411edab257985a64e232959db79f4dc751ce8fb",
+      "first_seen": "2026-11-19T22:23:24.342361+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/"
     },
     "products:https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands": {
       "fingerprint": "c0caf0b3091b411159753d334e32fe472ad2269e6eb3d9e3e5974dfe2ad31d99",
@@ -24937,6 +25154,12 @@
       "first_seen": "2026-11-19T13:46:00.884101+00:00",
       "language": "ko",
       "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72316"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72318": {
+      "fingerprint": "a09ed337225fc93b5fdaa13f288560ddd9810a60b3e97e7de2cdcf13cb95d990",
+      "first_seen": "2026-11-19T22:23:24.342361+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72318"
     },
     "zai:https://huggingface.co/zai-org/GLM-4-32B-0414": {
       "list_fingerprint": "668099737dbb9d78c04a151552a14b44e342232eb86aaf585c3669bf90b8b004",
