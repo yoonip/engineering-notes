@@ -1,160 +1,66 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-19 22:08 KST
+갱신: 2026-11-20 06:35 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
-## 중화권 언론, 한중 문화교류 확대 합의에 "한한령 완화 신호"
+## \[미중러 정상회담\] "우리는 푸틴 친구 아냐"…발끈한 유럽\(종합\)
 
-> 한국과 중국이 정상회담에서 문화교류 확대에 합의하면서 중화권 언론들이 10년간 이어진 중국의 이른바 '한한...
+> 유럽 각국은 19일\(현지시간\) 미국과 중국·러시아의 정상회담으로 우크라이나 전쟁 종식 논의에서 블라디미르 ...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119086600083>) · 2026-11-19 12:21 KST · 작성·제공: 한종구
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261120003051082>) · 2026-11-20 04:16 KST · 작성·제공: 김계연
 
-## \[미중러 정상회담\] 대형원탁에 마주앉았지만…시진핑이 사실상 '가운데'\(종합\)
+## \[속보\] 앤트로픽, 상장 첫날 97.17달러로 마감
 
-> 미국·중국·러시아 정상의 사상 첫 3자 회담장에서는 대형 라운드테이블\(원탁\)을 둘러싼 정상들의...
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261120010000091>) · 2026-11-20 06:04 KST · 작성·제공: 권영전
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119166451089>) · 2026-11-19 21:59 KST · 작성·제공: 차병섭
+## \[미중러 정상회담\] "트럼프 '강대국 공동지배' 발언…동맹에 최악"
 
-## \[미중러 정상회담\] 강대국들의 국제질서 거래외교 신호탄되나…'승자는 푸틴'
+> 중국 선전 아시아태평양협력체\(APEC\) 정상회의 계기에 19일\(현지시간\) 열린 사상 첫 미·중·러 3자 정...
 
-> 미국과 중국, 러시아 정상이 핵 군축을 비롯한 글로벌 안보 현안을 둘러싸고 초유의 담판을 벌여...
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261120008500071>) · 2026-11-20 06:03 KST · 작성·제공: 박성민
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119177500071>) · 2026-11-19 21:49 KST · 작성·제공: 이유미
+## 미 전문가들 “미중러 정상회담, 실질적 성과 제한적…중국 위상 강화”
 
-## 엔비디아 위기에…MS·오픈AI, 반도체 공급망 다변화 '잰걸음'
+> 미·중·러 3국 정상회담 결과를 두고 미국의 전문가들은 구체적인 합의나 실질적인 성과가 제한적이었다고 평가했습니다.
 
-> 인공지능\(AI\) 반도체 시장을 독점해온 엔비디아가 창업자 젠슨 황의 낙마 등으로 위기에 몰리자, 주요...
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/expert-analysis-trump-xi-putin-talks-111926/8225701.html>) · 2026-11-20 05:22 KST · 작성·제공: voadigital@voanews.com \(조진우\)
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119079000091>) · 2026-11-19 12:04 KST · 작성·제공: 권영전
+## 미중러 사상 첫 3자 정상회담…“핵 위험 감소·유엔 개혁 공동 대응”
 
-## '테크강국 민낯' 美연쇄장애에 불안 고조…일부 사재기 조짐도
+> 미국과 중국, 러시아는 유엔 개혁을 추진하고 석유 정제제품의 공급을 확대하는 한편, 핵 위험을 줄이기 위한 회담을 개최하기로 합의했습니다.
 
-> 지난 엿새에 걸쳐 미국의 이메일부터 항공, 은행, 정보기관까지 대규모 전산 장애 6건이 이어지면서 미...
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/trump-asia-111926/8225657.html>) · 2026-11-20 03:29 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119007500075>) · 2026-11-19 06:23 KST · 작성·제공: 김경윤
+## 유엔 최고 법원, 미얀마의 로힝야족 집단학살 인정
 
-## \[속보\] 푸틴 "얄타 합의 덕분에 80년간 글로벌 분쟁 없어"
+> 유엔 최고 사법기관인 국제사법재판소\(ICJ\)가 미얀마 군부의 로힝야족 집단학살 책임을 공식 인정했습니다.
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119179500109>) · 2026-11-19 21:21 KST · 작성·제공: 민경락
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8225705.html>) · 2026-11-20 05:40 KST
 
-## \[속보\] "앤트로픽, 공모가 80∼85달러 검토…예상 훨씬 웃돌아"&lt;블룸버그&gt;
+## 미·중·러 첫 정상회담 ‘핵 위험 감소 대화’ 합의…트럼프, 미북 회동 확인 없이 귀국길
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119008400072>) · 2026-11-19 05:57 KST · 작성·제공: 김연숙
+> 아시아태평양경제협력체\(APEC\) 정상회의를 계기로 중국 선전에서 미국과 중국, 러시아 정상이 사상 첫 3자 정상회담을 개최했습니다.
 
-## \[속보\] 시진핑 "中 선전에 아태공동체 연구센터 설립"
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/shenzhen-apec-us-russia-china-summit-debrief/8225690.html>) · 2026-11-20 04:39 KST · 작성·제공: voadigital@voanews.com \(조상진\)
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119081100083>) · 2026-11-19 11:31 KST · 작성·제공: 김현정
+## 트럼프, 워싱턴으로… 미북 정상 ‘APEC 깜짝 회동’ 무산
 
-## 美 중부사령관, 이스라엘 방문…참모총장·모사드 국장과 회동\(종합\)
+> 북한의 대미 대화 전제조건이 수용되지 않았고, 미북 정상들도 APEC 정상회의 마지막날까지 각자 ‘빡빡한’ 일정을 소화함에 따라 미북 회동은 물리적으로 성사되기 어려웠다고 전문가들은 평가했다.
 
-> 미국과 이란 사이의 평화 협상 교착과 간헐적인 무력 공방 속에 이란 전쟁을 관할하는 브래드 쿠퍼 미국 중부...
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/19/apec-trump-north-korea-asean/>) · 2026-11-20 06:00 KST · 작성·제공: 서울-목용재 moky@rfa.org
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261119004151079>) · 2026-11-19 05:25 KST · 작성·제공: 김상훈
+## 미 국무부 “북한 완전한 비핵화·대북 유엔 결의 전면 이행 약속”
 
-## 트럼프·시진핑 정상회담…“우크라이나 전쟁 종식 협력”
+> 미국 정부가 북한의 완전한 비핵화와 대북 유엔 안보리 결의의 전면 이행에 대한 의지를 재확인했습니다.
 
-> 도널드 트럼프 미국 대통령과 시진핑 중국 국가주석이 19일 중국 선전에서 정상회담을 갖고 우크라이나 전쟁 종식과 이란 핵 문제 등 주요 국제 현안에 대한 협력 의지를…
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/state-on-eas-111926/8225703.html>) · 2026-11-20 05:33 KST · 작성·제공: voadigital@voanews.com \(함지하\)
 
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8225441.html>) · 2026-11-19 15:46 KST · 작성·제공: voadigital@voanews.com \(조은정\)
+## 트럼프 “김정은과 좋은 관계…언젠가 회담할 것”
 
-## 일본 규슈 서부 구마모토현서 규모 5.7 지진…"향후 1주일간 주의"
+> 도널드 트럼프 미국 대통령이 중국 선전에서 열린 아시아태평양경제협력체\(APEC\) 정상회의 및 미·중·러 3국 정상회담을 계기로 한 이번 순방에서 김정은 북한 국무위원장과의 만남이 불발된 것은 다른 외교…
 
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008853257&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-19 09:58 KST · 작성·제공: kimmy123@sbs.co.kr \(김정기\)
-
-## 미중러 첫 3자 정상회담 개최…트럼프 "역사 만들고 있어"
-
-> 미국과 중국, 러시아 정상이 사상 처음으로 한자리에 모이는 3자 정상회담이 19일 중국 선전에서 개막했습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8225461.html>) · 2026-11-19 18:17 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## APEC 정상회의 본회의 개막…트럼프 "초지능은 거대한 기술적 변혁, 규제 반대"
-
-> 아시아태평양경제협력체 정상회의 본회의가 19일 중국 선전에서 시작됐습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8225423.html>) · 2026-11-19 12:09 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## \[선전 APEC\] 사상 첫 미중러 정상회의 속 각국 치열한 외교전
-
-> 19일 첫 미중러 3자 정상회의와 미중 정상회담 등이 이날 잇달아 열리는 가운데, 각 회원국 정상들이 경제와 안보, AI 협력 등 주요 현안에 대해 본격적인 논의에…
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/19/us-china-russia-leaders-hold-first-trilateral-summit/>) · 2026-11-19 09:45 KST · 작성·제공: 선전-노정민 nohj@rfa.org
-
-## 사상 첫 미중러 회담 ‘평화선언’ 채택…“핵전쟁은 승리할 수 없다”
-
-> 도널드 트럼프 미국 대통령과 시진핑 중국 국가주석, 블라디미르 푸틴 러시아 대통령이 19일\(현지 시간\) 중국 선전에서 역사상 첫 미중러 3국 정상회담을 열고 핵전쟁 방지 등을 주요…
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261119/135057206/1>) · 2026-11-19 20:26 KST
-
-## IAEA 사무총장 “이란 사찰 비협조, 핵물질 검증 불가”
-
-> 국제원자력기구, IAEA가 이란의 사찰 비협조로 인해 고농축 우라늄 등 이란이 보유한 핵물질이 평화적 목적으로만 쓰이고 있는지 확인할 수 없다고 경고했습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8225154.html>) · 2026-11-19 03:41 KST
-
-## 트럼프·시진핑 정상회담 돌입…미중러 첫 3자 회담 임박
-
-> 중국 선전에서 열리고 있는 APEC 정상회의에서 미중 정상회담이 진행되고 있습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8225429.html>) · 2026-11-19 14:18 KST · 작성·제공: voadigital@voanews.com \(조은정\)
-
-## 이란, 쿠웨이트·바레인 공격…역내 긴장 고조
-
-> 쿠웨이트와 바레인 당국은 18일 자국의 방공 시스템이 이란의 공중 공격을 요격했다고 밝혔습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/iran-launches-attacks-on-kuwait-bahrain-amid-increased-regional-tension-111826/8225114.html>) · 2026-11-19 02:22 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## APEC 정상회의 개막…미중러 첫 정상회담 주목
-
-후속 내용이 반영된 기사입니다.
-
-> 중국 선전에서 APEC 정상회의 일정이 본격적으로 시작됐습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8224993.html>) · 2026-11-18 21:18 KST · 작성·제공: voadigital@voanews.com \(조은정\)
-
-## 미국, 북한 인권결의안 기권…미북 대화 재개 위한 포석?
-
-> 미국이 21년간 유지해온 유엔 북한 인권결의안에 기권표를 던졌다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/19/north-korea-human-rights-icc/>) · 2026-11-19 15:33 KST · 작성·제공: 서울-김지수 kimjis@rfa.org
-
-## 겨울 추위 닥친 북한, 부유층 중심으로 중국산 전열기 수요 급증
-
-> 북한에서 돈 많은 부유층을 중심으로 난방용으로 사용할 중국산 온수샤워기나 배터리, 발전기 등의 수요가 늘고 있다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/19/wealthy-north-koreans-turn-to-chinese-heating-products/>) · 2026-11-19 15:19 KST · 작성·제공: 서울-김지은 nk@rfa.org
-
-## 美 연쇄 전산장애에 불안…트럼프 행정부 “조직적 공격 아냐” 진화
-
-> 최근 미국에서 대규모 시스템 장애가 잇달아 발생해 국민들의 우려가 커지자 도널드 트럼프 미국 행정부 관계자들이 진화에 나섰다.
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261119/135052874/1>) · 2026-11-19 10:43 KST
-
-## 트럼프 회담 앞서 푸틴 만난 시진핑, 美겨냥 “다자무역 지켜내야”
-
-> 시진핑\(習近平\) 중국 국가주석과 블라디미르 푸틴 러시아 대통령은 18일 중국 광둥성 선전에서 아시아태평양경제협력체\(APEC\) 정상회의를 계기로 정상회담을 갖고 양국 간 협력을 강화해 나가기로 했다.
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261119/135050907/2>) · 2026-11-19 04:30 KST
-
-## 마라탕·떡볶이 언급한 中대사 “한중, 뗄 수 없는 협력 파트너”
-
-> 다이빙 주한 중국대사가 중국과 한국은 떼려야 뗄 수 없는 협력 파트너라며 “중국의 발전은 한국에 위협이 아닌 기회”라고 밝혔다.
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261119/135053190/1>) · 2026-11-19 11:28 KST
-
-## 트럼프 “韓 투자 덕에 알래스카 LNG 승인” 또 기정사실화
-
-> 도널드 트럼프 미국 대통령이 한국의 대대적인 투자로 알래스카주 액화천연가스\(LNG\) 개발 사업을 추진할 수 있게 됐다고 17일\(현지 시간\) 주장했다.
-
-출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261119/135050904/2>) · 2026-11-19 04:30 KST
-
-## 다른 매체의 원문
-
-- [China and Russia say they and US agree on UN reforms, boosting fuel supplies, dialogue on nuclear](<https://abcnews.com/International/wireStory/china-russia-us-agree-reforms-boosting-fuel-supplies-138269362>) · ABC News 미국
-- [Mexico's Catholic street DJs turn annual pilgrimage into a party](<https://abcnews.com/International/wireStory/mexicos-catholic-street-djs-turn-annual-pilgrimage-party-138262111>) · ABC News 미국
-- [Brazil's Senate approves Lula's $10 billion fiscal package after costly election spending](<https://abcnews.com/International/wireStory/brazils-senate-approves-lulas-10-billion-fiscal-package-138265187>) · ABC News 미국
-- [World leaders gather in Shenzhen, China’s youthful, business-friendly melting pot](<https://www.csmonitor.com/World/Asia-Pacific/2026/1118/Shenzhen-China-modern-young-city-APEC-summit?icid=rss>) · The Christian Science Monitor
-- [EU proposes fresh $49 billion loan for Ukraine as war costs mount](<https://abcnews.com/International/wireStory/eu-proposes-fresh-49-billion-loan-ukraine-war-138249084>) · ABC News 미국
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261120/135058168/1>) · 2026-11-20 06:19 KST
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
