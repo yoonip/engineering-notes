@@ -56,6 +56,7 @@
     "models:https://openai.com/index/introducing-gpt-6-1-sol": "models:https://openai.com/index/introducing-gpt-6-1-sol",
     "models:https://openai.com/index/introducing-gpt-6-1-terra": "models:https://openai.com/index/introducing-gpt-6-1-terra",
     "models:https://openai.com/index/introducing-gpt-6-2-astra-sol": "models:https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "models:https://openai.com/index/introducing-gpt-6-cyber": "models:https://openai.com/index/introducing-gpt-6-cyber",
     "models:https://www.anthropic.com/claude-fable-and-mythos-5-2": "models:https://www.anthropic.com/claude-fable-and-mythos-5-2",
     "models:https://www.anthropic.com/claude-haiku-5-5": "models:https://www.anthropic.com/claude-haiku-5-5",
     "models:https://www.anthropic.com/claude-sonnet-5-5": "models:https://www.anthropic.com/claude-sonnet-5-5",
@@ -414,6 +415,7 @@
     "papers:https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110": "papers:https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110",
     "papers:https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112": "papers:https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
     "papers:https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102": "papers:https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102",
+    "papers:https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120": "papers:https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120",
     "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
     "papers:https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119": "papers:https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119",
     "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019": "papers:https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
@@ -1252,6 +1254,46 @@
           "title": "Introducing Gemini 4 Neon",
           "update": false,
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        }
+      ],
+      "2026-11-21": [
+        {
+          "acquired_at": "2026-11-20T21:27:34.881587+00:00",
+          "acquisition_method": "공식 RSS·Atom의 제목·소개문",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-10-07T00:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-10-29T03:34:54.131044+00:00",
+          "group": "models",
+          "homepage": "https://openai.com/",
+          "key": "models:https://openai.com/index/gpt-6-for-everyone",
+          "source_name": "OpenAI 한국어",
+          "source_url": "https://openai.com/ko-KR/news/rss.xml",
+          "summary_ko": "Intelligent UI를 갖춘 GPT‑6가 전 세계 ChatGPT 사용자에게 순차적으로 제공됩니다. 더 빠른 응답과 함께 직접 살펴보고 활용할 수 있는 시각…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "모두를 위한 GPT-6과 Intelligent UI",
+          "update": true,
+          "url": "https://openai.com/ko-KR/index/gpt-6-for-everyone"
+        },
+        {
+          "acquired_at": "2026-11-20T21:27:34.881587+00:00",
+          "acquisition_method": "공식 RSS·Atom의 제목·소개문",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-05T09:00:00+00:00",
+          "date_label": "",
+          "first_seen": "2026-11-20T21:27:34.487488+00:00",
+          "group": "models",
+          "homepage": "https://openai.com/",
+          "key": "models:https://openai.com/index/introducing-gpt-6-cyber",
+          "source_name": "OpenAI 한국어",
+          "source_url": "https://openai.com/ko-KR/news/rss.xml",
+          "summary_ko": "공격 가능한 취약점을 발견하고 수정 사항을 개발하는 OpenAI의 사이버 보안 모델, GPT‑6 Cyber를 소개합니다. 승인된 범위를 준수하도록…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "GPT‑6 Cyber: 정렬된 사이버 보안 에이전트의 새로운 지평",
+          "update": false,
+          "url": "https://openai.com/ko-KR/index/introducing-gpt-6-cyber"
         }
       ]
     },
@@ -9525,6 +9567,28 @@
           "update": false,
           "url": "https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119"
         }
+      ],
+      "2026-11-21": [
+        {
+          "acquired_at": "2026-11-20T21:28:34.966078+00:00",
+          "acquisition_method": "MIT News 공식 연구 소개 RSS",
+          "author": "Lauren Hinkel | MIT-IBM Computing Research Lab",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-20T21:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-20T21:27:34.487488+00:00",
+          "group": "papers",
+          "homepage": "https://news.mit.edu/topic/artificial-intelligence2",
+          "key": "papers:https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120",
+          "kind": "대학 연구 소개",
+          "source_name": "MIT News AI 연구 소개",
+          "source_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+          "summary_ko": "MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다. 공개 제목·소개에서 이미지·영상 처리 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Q&A: Enabling more human-like interactions and understanding in multimodal foundation models",
+          "update": false,
+          "url": "https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120"
+        }
       ]
     },
     "products": {
@@ -15528,6 +15592,10 @@
       "group": "papers",
       "key": "papers:https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102"
     },
+    "https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120": {
+      "group": "papers",
+      "key": "papers:https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120"
+    },
     "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
       "group": "papers",
       "key": "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014"
@@ -15555,6 +15623,10 @@
     "https://openai.com/index/introducing-gpt-6-2-astra-sol": {
       "group": "models",
       "key": "models:https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
+    "https://openai.com/index/introducing-gpt-6-cyber": {
+      "group": "models",
+      "key": "models:https://openai.com/index/introducing-gpt-6-cyber"
     },
     "https://science.nasa.gov/centers-and-facilities/glenn/nasa-launches-nuclear-power-systems-student-contest": {
       "group": "industry",
@@ -15923,10 +15995,10 @@
       "Last-Modified": "Fri, 20 Nov 2026 08:10:16 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"f98678cac55a0a847574844422e819d2dde92626c1f0c0bf262f5d1e89e5a9c4\""
+      "ETag": "W/\"209b901b34672d4638a81690929d578fc6dd6daba6b2cc0c483d29535c5f7ed0\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"18322551c9bfc0e35190802442563f26da17b20451561590623a7b6fb85ff00f\""
+      "ETag": "W/\"707d3ef6d22558d830e600b3c5006da9e9cb0d769207cd5abdd626551ae1b18b\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -15964,6 +16036,9 @@
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/introducing-gemini-4-neon": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "ETag": "\"Z29BcA\""
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"iqbaNA\""
     },
@@ -15977,10 +16052,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-UUnXH7OwXJRu9F3mYr1fBgDA2f4\""
+      "ETag": "W/\"33bc8-lfb4uNEQUXynFtvXYNvWxQWrsXw\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40189-UXR3UERuAXv3cRr7gbv8kfwQ9Bw\""
+      "ETag": "W/\"40189-TBtKprFpVzsXbf8ZPqZ/6VmlAqA\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -16027,12 +16102,12 @@
       "Last-Modified": "Fri, 20 Nov 2026 03:36:58 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1795181127\"",
-      "Last-Modified": "Fri, 20 Nov 2026 13:25:27 GMT"
+      "ETag": "\"1795209750\"",
+      "Last-Modified": "Fri, 20 Nov 2026 21:22:30 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1795180202\"",
-      "Last-Modified": "Fri, 20 Nov 2026 13:10:02 GMT"
+      "ETag": "\"1795210115\"",
+      "Last-Modified": "Fri, 20 Nov 2026 21:28:35 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -16161,7 +16236,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"09b23c77eafbe49b04301e40f94dc181c\""
+      "ETag": "\"0f783687d2acae7f4ec597868502758c1\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -16261,8 +16336,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"127cae35176f38eb05495c19380ae6ce\"",
-      "Last-Modified": "Fri, 20 Nov 2026 12:58:57 GMT"
+      "ETag": "\"a4141bfe29aad18848f88662e7ff5a00\"",
+      "Last-Modified": "Fri, 20 Nov 2026 19:00:36 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
@@ -21819,6 +21894,10 @@
       "list_fingerprint": "7de562e06bfb3f41ae856121efacc8ef621ddd82e8e50a798b38743f1a4d6cb0",
       "status": "posted"
     },
+    "mit-ai-research:https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120": {
+      "list_fingerprint": "130f88fb6bfbe25ab3dc7b613a3b4af0619e7cf35b239f08470c6cdc60ea62e1",
+      "status": "posted"
+    },
     "mit-ai-research:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
       "list_fingerprint": "d5e7a8628a836559d6af65563f30f246ef13e3b1b7a8ce83011a14e618415099",
       "status": "posted"
@@ -21916,10 +21995,10 @@
       "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content="
     },
     "models:https://openai.com/index/gpt-6-for-everyone": {
-      "fingerprint": "5add94e46052b45a7e81ae08c3fc9a56c1ad6f5aa9840739e80ff8b8beb6cb57",
+      "fingerprint": "bb32bf3e50334ba2479b91316c7bfef4029d08bc850a53c062eff976e9c4e698",
       "first_seen": "2026-10-29T03:34:54.131044+00:00",
-      "language": "en",
-      "url": "https://openai.com/index/gpt-6-for-everyone"
+      "language": "ko",
+      "url": "https://openai.com/ko-KR/index/gpt-6-for-everyone"
     },
     "models:https://openai.com/index/introducing-gpt-6-1-sol": {
       "fingerprint": "6a5fddcbe7a74e6016d01952488bc0c4fe04069948c4f70c4cf121c71459076f",
@@ -21938,6 +22017,12 @@
       "first_seen": "2026-11-17T23:05:30.717250+00:00",
       "language": "en",
       "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
+    "models:https://openai.com/index/introducing-gpt-6-cyber": {
+      "fingerprint": "91af4c4ed02383dd9307dd53b11bf0ab2ff109208bfdaa076d8ec133d9340da5",
+      "first_seen": "2026-11-20T21:27:34.487488+00:00",
+      "language": "ko",
+      "url": "https://openai.com/ko-KR/index/introducing-gpt-6-cyber"
     },
     "models:https://www.anthropic.com/claude-fable-and-mythos-5-2": {
       "fingerprint": "89c535b8b1586363fe1f5b6e5d8f96817000adaa8877bce1fb4b11e2a798e503",
@@ -22823,6 +22908,94 @@
     },
     "openai-en:https://openai.com/index/upgrading-the-moderation-api-with-our-new-multimodal-moderation-model": {
       "list_fingerprint": "cb6e0602f5b6ac40160e85c8840ed49a1a0ae48164029af19c487e5297e59b21",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api": {
+      "list_fingerprint": "029e34a3a07431342277c2057f3b5aae8515fd1e5c87b27820789b87efc2d803",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free": {
+      "list_fingerprint": "ad826ab0af1b6afe0c9b997f1897a894160d96997fa82fbd7b009d2dc333aa6b",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/gpt-5-1-codex-max": {
+      "list_fingerprint": "8ddc0d386f615ef046b91db5af4db470602bf13339d066f0fb4e797254bc9266",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/gpt-5-1-for-developers": {
+      "list_fingerprint": "78b3d178091988fdb733acecc2d5e7452c4fe47d7dba45f43378ad236fb2b865",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/gpt-5-5-instant": {
+      "list_fingerprint": "502963cf7e373074c065edde1029a17538ed653d23e41d06dac4cb74cefb2de5",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber": {
+      "list_fingerprint": "b62385990ea62b94b3e76efb17410190e29409ff08d2925b289e9a12985bf44f",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/gpt-5-6": {
+      "list_fingerprint": "43da10519942b6e4f1719685a8c62816cdc809347f9c72e50c048fad6ab89e58",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/gpt-5-new-era-of-work": {
+      "list_fingerprint": "165fa8ce2fd9345ecc235c6295cf1a67977d05fe20025be06f615ea355f3d1ff",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/gpt-5-system-card-update-gpt-5-2": {
+      "list_fingerprint": "8e8cc03980764e639ab1bd0d8d0e2a9b5c17e8ffde3f12b9253705efa85fd96f",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/gpt-6-astra": {
+      "list_fingerprint": "bda1c8615677d4faae48dd0aa6d621568096cede3fbb4db34869c82f871cd5ce",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/gpt-6-for-everyone": {
+      "list_fingerprint": "bb32bf3e50334ba2479b91316c7bfef4029d08bc850a53c062eff976e9c4e698",
+      "status": "posted"
+    },
+    "openai-ko:https://openai.com/index/hello-gpt-4o": {
+      "list_fingerprint": "4afbe02805f3dc5869f7e2c52e0db3d01d10ef9b6d10758467296740a34516c7",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/introducing-gpt-5-2": {
+      "list_fingerprint": "5457169a4f9b787869ce06f1ee4123b7384878b55f716ec484c8867d07cf4938",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/introducing-gpt-5-2-codex": {
+      "list_fingerprint": "300c5062b8ea664b1af2c7acd1b862ed92b7fb3ec8b363f5aed481604fbf9e2c",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/introducing-gpt-5-3-codex": {
+      "list_fingerprint": "a5944f23409b266865bee2b752c5d437ca91f6ed61ab1ddcba79f07285a7232a",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/introducing-gpt-5-4": {
+      "list_fingerprint": "67352d6115844fe9893898e1a1ca0b51eadb0fb8101f9a729bff6949b0d2bf61",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/introducing-gpt-5-4-mini-and-nano": {
+      "list_fingerprint": "a7bff195faf2980e99a57c1de79bc03dc28a320e8921abadd708ee52054e6cf8",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/introducing-gpt-5-5": {
+      "list_fingerprint": "786bc2663ea9e397cc6945875f28ba0813e47fd24fb556ee363ce1fa484f1ef4",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/introducing-gpt-5-for-developers": {
+      "list_fingerprint": "4fc5e7680fc1a1cd98fdb5009ff20cc082e4e2dfd976c24202482b95bc5a3ea6",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/introducing-gpt-6-cyber": {
+      "list_fingerprint": "91af4c4ed02383dd9307dd53b11bf0ab2ff109208bfdaa076d8ec133d9340da5",
+      "status": "posted"
+    },
+    "openai-ko:https://openai.com/index/introducing-gpt-6-sol-and-luna": {
+      "list_fingerprint": "b619aca98fc023ba5d7ca115ce1b51811728035e3004ff4604222030e63f5f95",
+      "status": "older_material"
+    },
+    "openai-ko:https://openai.com/index/introducing-o3-and-o4-mini": {
+      "list_fingerprint": "861fbf542a6c6685a806bfe5ea1369e88bd3c36a128f03680077f757dffd67d9",
       "status": "older_material"
     },
     "papers:https://arxiv.org/abs/1607.02174": {
@@ -24955,6 +25128,12 @@
       "language": "en",
       "url": "https://news.mit.edu/2026/powering-up-for-pivotal-moment-1102"
     },
+    "papers:https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120": {
+      "fingerprint": "130f88fb6bfbe25ab3dc7b613a3b4af0619e7cf35b239f08470c6cdc60ea62e1",
+      "first_seen": "2026-11-20T21:27:34.487488+00:00",
+      "language": "en",
+      "url": "https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120"
+    },
     "papers:https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014": {
       "fingerprint": "d5e7a8628a836559d6af65563f30f246ef13e3b1b7a8ce83011a14e618415099",
       "first_seen": "2026-10-29T04:12:29.166428+00:00",
@@ -26608,6 +26787,12 @@
       "initialized": true,
       "response_url": "https://openai.com/news/rss.xml",
       "since": "2026-10-29T03:34:54.131044+00:00"
+    },
+    "openai-ko": {
+      "candidates": [],
+      "initialized": true,
+      "response_url": "https://openai.com/ko-KR/news/rss.xml",
+      "since": "2026-11-20T21:27:34.487488+00:00"
     },
     "python-releases": {
       "candidates": [],
