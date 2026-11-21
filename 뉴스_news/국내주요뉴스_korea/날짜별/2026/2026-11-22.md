@@ -1,14 +1,46 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-22 02:33 KST
+갱신: 2026-11-22 08:16 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
+
+## 이제 객관식 말고 서·논술형으로?…'수능 개편론' 급부상
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008857306&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-22 08:05 KST · 작성·제공: jh98park \(박지혜\)
+
+## '쾅' 순식간에 인도 덮쳤다…승객 6명 병원 이송
+
+> 어제 저녁 사람들이 많이 오가는 서울 홍대입구역 앞에서 버스가 인도로 돌진하는 사고가 발생했습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008857284&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-22 08:05 KST · 작성·제공: windy@sbs.co.kr \(서동균 기자\)
+
+## "로또 안 줘?" 식당 주인 부부 흉기로…무기징역→45년 감형
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008857321&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-22 08:05 KST · 작성·제공: jh98park \(박지혜\)
 
 ## "전문성" vs "예산 낭비"…2천억 들인 AI 교육 두고 '팽팽'
 
 > 반도체 호황 등으로 늘어난 세수로 조성되는 미래대응기금, 어떻게 쓸지 각 부처가 계획한 사업들이 줄줄이 국회로 올라왔습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008857101&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-21 22:19 KST · 작성·제공: khm@sbs.co.kr \(김혜민\)
+
+## 한덕수 재판 다시…윤석열 등 내란 혐의 최종 판단은 언제
+
+> 대법원이 한덕수 전 국무총리의 내란 사건을 서울고법으로 돌려보내 다시 심리하도록 하면서 12·3 비상계엄 관련...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261121046300004>) · 2026-11-22 08:00 KST · 작성·제공: 김빛나
+
+## 與, 조희대 탄핵 추진 절차는…탄핵안 국회 통과 시 직무정지
+
+> 더불어민주당이 조희대 대법원장에 대한 탄핵소추를 당론으로 채택하고 본격 추진에 나서면서 향후 절차와 파장에 관...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261121027300004>) · 2026-11-22 05:50 KST · 작성·제공: 이미령
+
+## '수출 1조달러' 한국, 세계 4위 전망…반도체 빼면 세계 8위
+
+> 한국이 올해 사상 처음으로 연간 수출 1조달러를 달성하며 세계 4위 수출강국 반열에 오를 전망이다.
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261120179700003>) · 2026-11-22 06:15 KST · 작성·제공: 신창용
 
 ## 머리 묶고, 앞치마 걸쳤지만…논술시험도 'AI 부정' 불안
 
@@ -21,6 +53,30 @@
 > 오늘 새벽, 세종시에서 경부선 화물 열차가 궤도를 이탈하는 사고가 나 천안과 대전 사이 일반 열차 운행이 종일 중단됐습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008857096&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-21 22:19 KST · 작성·제공: mk@sbs.co.kr \(조민기\)
+
+## 강원 의료기기 11개사, 독일서 726만달러 수출계약 성과
+
+> 강원특별자치도는 독일에서 열린 국제 의료기기 전시회에서 도내 기업 11개사가 726만달러 규모의 수출계약 실적...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261122006500062>) · 2026-11-22 07:54 KST · 작성·제공: 이재현
+
+## “연말 예약 벌써 꽉 찼다”…고물가에도 다시 뜨는 아웃백·빕스
+
+> 고물가로 외식비 부담이 커진 가운데 1세대 패밀리레스토랑인 아웃백과 빕스가 연말 모임 장소로 다시 주목받고 있다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261122/135065423/1>) · 2026-11-22 07:52 KST
+
+## 카스트로프, 시즌 첫 선발 74분 소화…묀헨글라트바흐 0-1 패배
+
+> 국가대표 미드필더 출신 옌스 카스트로프\(묀헨글라트바흐\)가 올 시즌 첫 선발 기회를 잡아 공수 양면에서 활약했으나 팀 패배를...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261122005200007>) · 2026-11-22 07:10 KST · 작성·제공: 오명언
+
+## A형간염 백신 수급 ‘빨간불’…한국MSD 철수에 보령도 공급 차질
+
+> 한국MSD가 소아용 A형간염 백신의 국내 공급 중단을 결정한 데 이어 보령바이오파마도 원액 부족으로 내년부터 성인·소아용 백신 공급에 차질을 빚을 전망이다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Society/article/all/20261122/135065339/1>) · 2026-11-22 07:07 KST
 
 ## 51세 추성훈, 은퇴전서 아쉬운 판정패…22년 파이터 인생 마침표
 
