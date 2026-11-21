@@ -1,6 +1,6 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-21 11:15 KST
+갱신: 2026-11-21 18:55 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
 
@@ -14,17 +14,41 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008856710&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-21 10:27 KST · 작성·제공: young12 \(이기영 에디터\)
 
+## \[단독\] 강원 평창서 공기총 발사로 60대 남성 사망…중과실치사 혐의 검토
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008857081&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-21 18:29 KST · 작성·제공: imfact@sbs.co.kr \(임지현\)
+
+## 국힘 "與 조작기소특검·조희대 탄핵은 반역"…대구서 규탄집회
+
+> 국민의힘은 21일 대구에서 대규모 장외집회를 열어 여당의 '조작기소 특검법' 강행 처리와 조희대 대법원장 탄핵...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261121042300001>) · 2026-11-21 17:00 KST · 작성·제공: 권희원
+
 ## 신압록강대교 개통 첫 달, 북중 교역 랴오닝성 비중 확대
 
 > 지난 10월 신압록강대교가 개통된 가운데, 같은 달 북중 교역에서 중국 랴오닝성이 차지하는 비중이 수출과 수입 양쪽에서 모두 확대된 것으로 나타났습니다.
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/north-korea-china-trade-shifts-112026/8226078.html>) · 2026-11-21 01:48 KST · 작성·제공: voadigital@voanews.com \(함지하\)
 
+## 추미애 "조희대 대법원장 탄핵 실행, 좌고우면 안 돼"
+
+> 추미애 경기도지사는 21일 "조희대 대법원장 탄핵 실행을 좌고우면하면 안 된다"며 즉각 탄핵을 재차 주장했다....
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261121045800061>) · 2026-11-21 18:44 KST · 작성·제공: 최찬흥
+
 ## K화장품·라면도 날았다…수출 1조 달러 견인
 
 > 올해 우리나라가 사상 처음으로 '수출 1조 달러'를 달성한 데에는 반도체만 주인공이 아니었습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008856384&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-20 23:42 KST · 작성·제공: noisycart@sbs.co.kr \(최승훈\)
+
+## 이 대통령 "수능 부정행위 신고포상금 건당 최소 1억…행위자 수만큼 가산"
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008857020&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-21 18:26 KST · 작성·제공: gate@sbs.co.kr \(배준우\)
+
+## 두 차례 '번쩍' 하더니 전철주 '쾅'…경부선 탈선사고 영상 보니
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008857055&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-21 18:29 KST · 작성·제공: wisdomwish@sbs.co.kr \(차지환 에디터\)
 
 ## 與 "면죄부 안돼"·野 "보복성 집단린치"…'曺탄핵' 놓고 공방
 
@@ -64,11 +88,29 @@
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261121028900063>) · 2026-11-21 11:02 KST · 작성·제공: 김준호
 
+## 민형배-서남권, 의대선정 놓고 설전…내주 검증기구 구성 논의
+
+> 민형배 전남광주통합특별시장과 서남권 주민 대표단이 국립의대 신설 대학 선정의 공정성을 놓고 2시간 ...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261121044400054>) · 2026-11-21 18:09 KST · 작성·제공: 박철홍
+
 ## ‘홀인원’ 김아림, LPGA 최종전 둘째 날 단독 선두…우승 보인다
 
 > 김아림\(31·메디힐\)이 미국여자프로골프\(LPGA\) 투어 시즌 최종전 둘째 날에도 선두를 유지, 우승을 향한 발판을 마련했다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Sports/article/all/20261121/135064509/1>) · 2026-11-21 08:54 KST
+
+## 李대통령, 울산 전통시장 두 곳 방문…"내년엔 좀 더 좋아질 것"
+
+> 이재명 대통령은 21일 울산의 전통 시장 두 곳을 잇달아 찾아 장바구니 물가를 점검하고 지역 골목상권의 목소리...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261121045100001>) · 2026-11-21 17:59 KST · 작성·제공: 설승은
+
+## 알카라스, ATP 파이널스 전승으로 준결승 진출…셸턴과 4강 격돌
+
+> 남자 테니스 카를로스 알카라스\(세계랭킹 3위·스페인\)가 부상 우려를 딛고 남자프로테니스\(ATP\) 투어 시즌 최종전 조별리그를 전승으로 마치며 대회 첫 우승에 도전한다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Sports/article/all/20261121/135064955/1>) · 2026-11-21 15:18 KST
 
 ## 與 ‘조희대 탄핵’ 착수… “내달까지 소추안 통과”
 
@@ -88,11 +130,23 @@
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261120120400017>) · 2026-11-21 06:00 KST · 작성·제공: 이주영
 
+## 여자농구 신한은행, 3연승으로 공동 선두…KB는 4연패 수렁\(종합\)
+
+> 여자프로농구 인천 신한은행이 지난 시즌 우승팀 청주 KB를 4연패에 빠뜨리며 공동 선두 자리를 되찾았다.
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261121043751007>) · 2026-11-21 17:50 KST · 작성·제공: 최송아
+
 ## 범여권 186명중 150명 찬성 탄핵안 통과땐 대법원장 직무정지
 
 > 더불어민주당이 조희대 대법원장 탄핵소추를 당론으로 확정하면서 41년 만에 대법원장에 대한 탄핵 절차가 본격화됐다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Politics/article/all/20261120/135064154/2>) · 2026-11-21 01:40 KST
+
+## 경부선 탈선사고 영상 보니…두차례 섬광 이후 10초도 안돼 선로 이탈
+
+> 주말인 21일 대규모 일반 열차 운행 중단·지연사태를 빚은 경부선 소정리역 화물열차 탈선사고는 열차 후미 부분...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261121041600063>) · 2026-11-21 16:34 KST · 작성·제공: 이주형
 
 ## 노승열, PGA 최종전 RSM 클래식 2R 공동 19위…선두와 4타 차
 
