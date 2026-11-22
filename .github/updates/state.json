@@ -15995,10 +15995,10 @@
       "Last-Modified": "Fri, 20 Nov 2026 08:10:16 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"ca11b72ff50da5f1dd5dce8d75f608dcb76fb85b98075ece8c32ff9d2803c21b\""
+      "ETag": "W/\"f9b1e14463cdf3d865b8c50b6dfd9a5feec706d4f8c76f4af0185625328316b2\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"ba15a3636962988cdc6fd3ba7ea84228f531aa91f924463c2dc8d3753fdafab4\""
+      "ETag": "W/\"f01940a5f2e853e01b2bc3be81452c42e6e72f485f514efef6bcea6b283681b1\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -16049,10 +16049,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-aj3T4Tm1kgPWhd6I421RZktrooc\""
+      "ETag": "W/\"33bc8-5gdrZ5ODxiBBA7y1IzrGgQwCEDA\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40189-lvCwNE8Um66Zz2Ymh1xKKtZoSH8\""
+      "ETag": "W/\"40189-7uZVaCirt0SmI6IPhXpw0TbrwbY\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -16089,7 +16089,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1574": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -16099,12 +16098,12 @@
       "Last-Modified": "Sun, 22 Nov 2026 00:09:29 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1795307030\"",
-      "Last-Modified": "Sun, 22 Nov 2026 00:23:50 GMT"
+      "ETag": "\"1795330500\"",
+      "Last-Modified": "Sun, 22 Nov 2026 06:55:00 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1795307488\"",
-      "Last-Modified": "Sun, 22 Nov 2026 00:31:28 GMT"
+      "ETag": "\"1795332255\"",
+      "Last-Modified": "Sun, 22 Nov 2026 07:24:15 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -16112,13 +16111,13 @@
       "Last-Modified": "Wed, 28 Oct 2026 20:20:49 GMT"
     },
     "https://rss.arxiv.org/rss/cs.AI": {
-      "ETag": "a75f7758b0ddf5527e5b35ac1ac3ad0a662ea8163d370b2b108b4cb929befcdb"
+      "ETag": "ca19395e8c37a9018514678f64c6bae05274a39f03cdddd4fea0f3de42b155bd"
     },
     "https://rss.arxiv.org/rss/cs.AR": {
-      "ETag": "c3d80f45adc6f650484bc8fcf0fa22121780a08f3c2496eb527f02786bc3187f"
+      "ETag": "385443eb506d43e85b742035e8196319e751116400df760425a43476ca950080"
     },
     "https://rss.arxiv.org/rss/eess.SP": {
-      "ETag": "ab706629980ba86343497810bc59724fc7ff5ef4c4d7fcb4ed11f725ab762117"
+      "ETag": "ec1ea6d7b5e3847e3d158ae51be3e3dd5869efd82ffb7940d59b42ccd7ef90ad"
     },
     "https://www.anthropic.com/claude-fable-and-mythos-5-2": {},
     "https://www.anthropic.com/claude-haiku-5-5": {},
@@ -16233,7 +16232,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0d9464194d691976873b34f34d40f635a\""
+      "ETag": "\"0b216090cb13dbefcab0dd0e23fe81bc2\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -16333,8 +16332,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"a6a11b3d5de4985f2ac09724a1932e20\"",
-      "Last-Modified": "Sun, 22 Nov 2026 00:13:54 GMT"
+      "ETag": "\"4797ea46016fabcd36f25f14f0f08102\"",
+      "Last-Modified": "Sun, 22 Nov 2026 05:05:00 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
