@@ -450,6 +450,8 @@
     "products:https://blogs.nvidia.co.kr/blog/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout": "products:https://blogs.nvidia.co.kr/blog/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
     "products:https://blogs.nvidia.co.kr/blog/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion": "products:https://blogs.nvidia.co.kr/blog/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion",
     "products:https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul": "products:https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul",
+    "products:https://blogs.nvidia.co.kr/blog/rubin-hpc": "products:https://blogs.nvidia.co.kr/blog/rubin-hpc",
+    "products:https://blogs.nvidia.co.kr/blog/sc26-news": "products:https://blogs.nvidia.co.kr/blog/sc26-news",
     "products:https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential": "products:https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential",
     "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective": "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective",
     "products:https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter": "products:https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter",
@@ -11056,6 +11058,46 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/"
         }
+      ],
+      "2026-11-23": [
+        {
+          "acquired_at": "2026-11-22T15:36:47.997486+00:00",
+          "acquisition_method": "공식 한국어 블로그 RSS의 제목·소개 및 원문의 공개 메타데이터",
+          "author": "NVIDIA Korea",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-22T11:34:52+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-22T15:35:22.695958+00:00",
+          "group": "products",
+          "homepage": "https://blogs.nvidia.co.kr/",
+          "key": "products:https://blogs.nvidia.co.kr/blog/rubin-hpc",
+          "source_name": "NVIDIA 한국어 블로그",
+          "source_url": "https://blogs.nvidia.co.kr/feed/",
+          "summary_ko": "역대 최다 CUDA 코어와 가속된 데이터 이동으로 과학·엔지니어링 워크로드의 결과 도출 시간을…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "NVIDIA, 과학·엔지니어링·분석 에이전트를 가속할 새 GPU ‘Rubin HPC’ 발표 - NVIDIA Blog Korea",
+          "update": false,
+          "url": "https://blogs.nvidia.co.kr/blog/rubin-hpc/"
+        },
+        {
+          "acquired_at": "2026-11-22T15:36:46.943413+00:00",
+          "acquisition_method": "공식 한국어 블로그 RSS의 제목·소개",
+          "author": "NVIDIA Korea",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-22T11:26:14+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-22T15:35:22.695958+00:00",
+          "group": "products",
+          "homepage": "https://blogs.nvidia.co.kr/",
+          "key": "products:https://blogs.nvidia.co.kr/blog/sc26-news",
+          "source_name": "NVIDIA 한국어 블로그",
+          "source_url": "https://blogs.nvidia.co.kr/feed/",
+          "summary_ko": "시카고에서 열린 슈퍼컴퓨팅 콘퍼런스 SC26에서 NVIDIA가 에이전트와 가속 컴퓨팅, 양자 컴퓨팅으로 과학적 발견을 앞당기는 소식을 전했습니다.",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "NVIDIA, SC26에서 과학 컴퓨팅의 최신 혁신을 선보이다",
+          "update": false,
+          "url": "https://blogs.nvidia.co.kr/blog/sc26-news/"
+        }
       ]
     },
     "reports": {
@@ -12780,6 +12822,12 @@
       "date": "2026-10-28T05:02:53+00:00",
       "description": "새로운 생산 능력 계약과 제조 시설이 물량 증대를 뒷받침하고 공급망 복원력을 강화합니다.",
       "title": "공급망 파트너와 생산 역량 확대해 AI 인프라 구축을 가속하는 NVIDIA - NVIDIA Blog Korea"
+    },
+    "https://blogs.nvidia.co.kr/blog/rubin-hpc": {
+      "canonical_url": "https://blogs.nvidia.co.kr/blog/rubin-hpc/",
+      "date": "2026-11-22T11:34:52+00:00",
+      "description": "역대 최다 CUDA 코어와 가속된 데이터 이동으로 과학·엔지니어링 워크로드의 결과 도출 시간을 단축합니다.",
+      "title": "NVIDIA, 과학·엔지니어링·분석 에이전트를 가속할 새 GPU ‘Rubin HPC’ 발표 - NVIDIA Blog Korea"
     },
     "https://deepmind.google/blog/gemini-4-argon-for-robotics": {
       "date": "2026-10-13",
@@ -15336,6 +15384,14 @@
       "group": "products",
       "key": "products:https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul"
     },
+    "https://blogs.nvidia.co.kr/blog/rubin-hpc": {
+      "group": "products",
+      "key": "products:https://blogs.nvidia.co.kr/blog/rubin-hpc"
+    },
+    "https://blogs.nvidia.co.kr/blog/sc26-news": {
+      "group": "products",
+      "key": "products:https://blogs.nvidia.co.kr/blog/sc26-news"
+    },
     "https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential"
@@ -15995,10 +16051,10 @@
       "Last-Modified": "Fri, 20 Nov 2026 08:10:16 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"f9b1e14463cdf3d865b8c50b6dfd9a5feec706d4f8c76f4af0185625328316b2\""
+      "ETag": "W/\"b801c122299809768beec83afe865ee84a6f4dbadeffdd82993565863803ea96\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"f01940a5f2e853e01b2bc3be81452c42e6e72f485f514efef6bcea6b283681b1\""
+      "ETag": "W/\"be04f7e15472e6d32d1a61c1470d8f1e46446c5c5181b2ff43755205dfb8d4db\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -16020,9 +16076,10 @@
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
+    "https://blogs.nvidia.co.kr/blog/rubin-hpc": {},
     "https://blogs.nvidia.co.kr/feed": {
-      "ETag": "\"cb91477b52fc895da39193b422f69e83-gzip\"",
-      "Last-Modified": "Thu, 19 Nov 2026 08:34:46 GMT"
+      "ETag": "\"45e9bc719e0efd88bca4f9b1e56e4297-gzip\"",
+      "Last-Modified": "Sun, 22 Nov 2026 11:39:26 GMT"
     },
     "https://blogs.nvidia.co.kr/robots.txt": {
       "ETag": "\"168f-65ed3880e5f63-gzip\"",
@@ -16049,10 +16106,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-5gdrZ5ODxiBBA7y1IzrGgQwCEDA\""
+      "ETag": "W/\"33bc8-NE8vqdNvBi1iugx50+KRRnE5c0Q\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40189-7uZVaCirt0SmI6IPhXpw0TbrwbY\""
+      "ETag": "W/\"40188-CqWkzkzooMEh3fu0YY7ZuQaVe6w\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -16098,12 +16155,12 @@
       "Last-Modified": "Sun, 22 Nov 2026 00:09:29 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1795330500\"",
-      "Last-Modified": "Sun, 22 Nov 2026 06:55:00 GMT"
+      "ETag": "\"1795361148\"",
+      "Last-Modified": "Sun, 22 Nov 2026 15:25:48 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1795332255\"",
-      "Last-Modified": "Sun, 22 Nov 2026 07:24:15 GMT"
+      "ETag": "\"1795361815\"",
+      "Last-Modified": "Sun, 22 Nov 2026 15:36:55 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -16232,7 +16289,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"0b216090cb13dbefcab0dd0e23fe81bc2\""
+      "ETag": "\"0e9849ad703a4f1a75ac57b509d12ab6d\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -22158,6 +22215,14 @@
       "list_fingerprint": "0a5764f88533fb711bbb57ec139bda2091e75a76616508b1c5911b56754e1c94",
       "status": "posted"
     },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/rubin-hpc": {
+      "list_fingerprint": "5835804984235db21aa5b8af26d689e69d1a429f47be7828cf2a3250f75ab43f",
+      "status": "posted"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/sc26-news": {
+      "list_fingerprint": "b59e8b38e6a0da73673ab374e254b7778bd4ac8bc30c64b16a447c700e6c47a7",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark": {
       "list_fingerprint": "4f04a3508c9edbbf175a047a20e95b41d8ee9d11e6cab551c26acfb1223f292c",
       "status": "bootstrap_skipped"
@@ -25333,6 +25398,18 @@
       "first_seen": "2026-11-06T11:23:31.639489+00:00",
       "language": "ko",
       "url": "https://blogs.nvidia.co.kr/blog/rtx-spark-press-event-seoul/"
+    },
+    "products:https://blogs.nvidia.co.kr/blog/rubin-hpc": {
+      "fingerprint": "6e8368f097a52c361fa0ca262c366202b42e559320ef8e2bb9d02f794c99c19a",
+      "first_seen": "2026-11-22T15:35:22.695958+00:00",
+      "language": "ko",
+      "url": "https://blogs.nvidia.co.kr/blog/rubin-hpc/"
+    },
+    "products:https://blogs.nvidia.co.kr/blog/sc26-news": {
+      "fingerprint": "b59e8b38e6a0da73673ab374e254b7778bd4ac8bc30c64b16a447c700e6c47a7",
+      "first_seen": "2026-11-22T15:35:22.695958+00:00",
+      "language": "ko",
+      "url": "https://blogs.nvidia.co.kr/blog/sc26-news/"
     },
     "products:https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential": {
       "fingerprint": "dd8c93f660702f126ffa9c5ca30a481aae8455fa5b8bcef3d48c42950af264f4",
