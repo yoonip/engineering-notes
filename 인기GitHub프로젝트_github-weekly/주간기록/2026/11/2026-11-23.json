@@ -1,0 +1,2086 @@
+{
+  "schema_version": 1,
+  "label": "2026년 11월 4주차",
+  "week_start": "2026-11-23",
+  "collected_at": "2026-11-23T16:52:44+09:00",
+  "source_url": "https://github.com/trending?since=weekly",
+  "source_sha256": "7f43f73b71e814d88e80a8499f5b7ec0fbeef913fa4c38f35d51996d3a39c8d0",
+  "selection": "GitHub Trending, all languages, since=weekly, first 10 in displayed order",
+  "run_url": "https://github.com/yoonip/engineering-notes/actions/runs/45134204984",
+  "items": [
+    {
+      "rank": 1,
+      "requested_full_name": "backnotprop/plannotator",
+      "weekly_stars": 2815,
+      "repository": {
+        "id": 1123956658,
+        "full_name": "backnotprop/plannotator",
+        "html_url": "https://github.com/backnotprop/plannotator",
+        "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
+        "language": "TypeScript",
+        "stargazers_count": 14522,
+        "forks_count": 1434,
+        "topics": [
+          "agents",
+          "claude-code",
+          "code-review",
+          "codex",
+          "obsidian",
+          "opencode",
+          "pi-mono",
+          "plan-mode",
+          "skills"
+        ],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0",
+          "node_id": "MDc6TGljZW5zZTI="
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/backnotprop/plannotator"
+      },
+      "introduction": {
+        "text": "루프에 머물기 위해 작업 공간과 에이전트의 상단에 - 모양, 결정, 계획, 주석, 검토 코드, 팀과 공유, 그리고 하나의 클릭으로 에이전트에 모든 피드백을 보냅니다.",
+        "detail": "",
+        "method": "Argos Translate en→ko 1.1 기계번역",
+        "source_url": "https://github.com/backnotprop/plannotator"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "b8de95afdf52a703d9013c6ee51bbb5d22f44b18",
+        "commit": "21f91ba1d8e526fdba1bfb5163b69c57ce699c4e",
+        "path": "README.md",
+        "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+        "fetched_at": "2026-11-23T07:52:46.150730+00:00",
+        "documents": []
+      },
+      "guide": {
+        "method": "공식 README 구간 추출·한국어 번역",
+        "readme_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+        "checked_at": "2026-11-23",
+        "readme_sha": "b8de95afdf52a703d9013c6ee51bbb5d22f44b18",
+        "repository_id": 1123956658,
+        "features": [
+          {
+            "heading": "Plannotator",
+            "original": "⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.",
+            "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+            "text": "⭐️ NEW : Plannotator Inbox는 당신과 멀티 시약 작업 사이에 누락 된 검토 층입니다. 그것은 표면 결정, 프로토 타입, 변형, 계획, 그리고 당신이 루프에 머물 필요가 모든. 모든 코딩 에이전트 및 개인 조수와 함께 작동합니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "audience": [],
+        "installation": [
+          {
+            "heading": "Install",
+            "original": "One installer covers almost every agent. It installs the plannotator binary, auto-detects your installed agents, and configures hooks, skills, and slash commands for each:",
+            "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+            "text": "1명의 설치자는 거의 각 대리인을 포함합니다. 그것은 plannotator 바이너리를 설치, 자동 감지 설치 에이전트, 및 구성 Hooks, 기술, 그리고 각 슬래시 명령:",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "examples": [],
+        "install_code": {
+          "language": "bash",
+          "code": "# macOS / Linux / WSL\ncurl -fsSL https://plannotator.ai/install.sh | bash",
+          "context": "One installer covers almost every agent. It installs the plannotator binary, auto-detects your installed agents, and configures hooks, skills, and slash commands for each:",
+          "heading": "Install",
+          "heading_path": [
+            "Plannotator",
+            "Install"
+          ],
+          "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+          "context_translation": {
+            "text": "1명의 설치자는 거의 각 대리인을 포함합니다. 그것은 plannotator 바이너리를 설치, 자동 감지 설치 에이전트, 및 구성 Hooks, 기술, 그리고 각 슬래시 명령:",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        },
+        "example_code": null,
+        "sources": [
+          {
+            "title": "공식 README (21f91ba1d8e5)",
+            "url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md"
+          }
+        ],
+        "assessment": {
+          "method": "제작자 문서의 해당 구간 발췌·CPU 번역",
+          "origin": "extracted",
+          "checked_at": "2026-11-23",
+          "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+          "repository_id": 1123956658,
+          "readme_sha": "b8de95afdf52a703d9013c6ee51bbb5d22f44b18",
+          "advantages": [
+            {
+              "heading": "Plannotator",
+              "original": "⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.",
+              "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+              "text": "⭐️ NEW : Plannotator Inbox는 당신과 멀티 시약 작업 사이에 누락 된 검토 층입니다. 그것은 표면 결정, 프로토 타입, 변형, 계획, 그리고 당신이 루프에 머물 필요가 모든. 모든 코딩 에이전트 및 개인 조수와 함께 작동합니다.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Plannotator"
+            }
+          ],
+          "limitations": [
+            {
+              "text": "단지 이진과 다른 것을 원하십니까? Pass --minimal (또는 내보내기 PLANNOTATOR MINIMAL=1) 을 설치하여 plannotator 바이너리만 ~/.local/bin에 설치하여 모든 기술, 후크, 슬래시 명령, 과 시약 구성을 건너 뛸 수 있습니다.",
+              "original": "Want just the binary and nothing else? Pass --minimal (or export PLANNOTATOR_MINIMAL=1) to install only the plannotator binary to ~/.local/bin, skipping every skill, hook, slash command, and per-agent config:",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Install",
+              "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md"
+            },
+            {
+              "text": "계획 검토는 전혀 명령이 없습니다. 다음 시간 당신의 에이전트는 계획을 제안, 그것은 자동으로 브라우저에서 열립니다.",
+              "original": "Plan review needs no command at all. The next time your agent proposes a plan, it opens in your browser automatically.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Try it",
+              "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md"
+            }
+          ],
+          "comparison": [],
+          "selection": [],
+          "table": null,
+          "official_competitors": [],
+          "advantages_basis": "공식 문서에 명시된 지원 기능입니다."
+        },
+        "source_checks": {
+          "documents_checked": 1,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+              "sha": "b8de95afdf52a703d9013c6ee51bbb5d22f44b18",
+              "commit": "21f91ba1d8e526fdba1bfb5163b69c57ce699c4e",
+              "bytes": 29395
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "contiguous_fenced_excerpt",
+              "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+              "nonempty_lines": 2
+            }
+          ],
+          "excerpts_checked": 5,
+          "excerpt_checks": [
+            {
+              "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+              "section": "Plannotator",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+              "section": "Install",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+              "section": "Plannotator",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+              "section": "Install",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/backnotprop/plannotator/blob/21f91ba1d8e526fdba1bfb5163b69c57ce699c4e/README.md",
+              "section": "Try it",
+              "mode": "parsed_paragraph_presence"
+            }
+          ],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "requested_full_name": "google-labs-code/stitch-skills",
+      "weekly_stars": 2683,
+      "repository": {
+        "id": 1135847870,
+        "full_name": "google-labs-code/stitch-skills",
+        "html_url": "https://github.com/google-labs-code/stitch-skills",
+        "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+        "language": "TypeScript",
+        "stargazers_count": 12050,
+        "forks_count": 1493,
+        "topics": [],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0",
+          "node_id": "MDc6TGljZW5zZTI="
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/google-labs-code/stitch-skills"
+      },
+      "introduction": {
+        "text": "Stitch MCP 서버에 작업하도록 설계된 Agent Skills 라이브러리. 각 기술에 따라 에이전트 스킬 개방 표준, Antigravity, Gemini CLI, Claude Code, Cursor와 같은 코딩 에이전트와 호환.",
+        "detail": "",
+        "method": "Argos Translate en→ko 1.1 기계번역",
+        "source_url": "https://github.com/google-labs-code/stitch-skills"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "e04cc601676a772474a023ba30e7064e6cf23dab",
+        "commit": "62fdcd679747aca0792e5dd6591b10ddfad56825",
+        "path": "README.md",
+        "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+        "fetched_at": "2026-11-23T07:52:47.002953+00:00",
+        "documents": []
+      },
+      "guide": {
+        "method": "공식 README 구간 추출·한국어 번역",
+        "readme_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+        "checked_at": "2026-11-23",
+        "readme_sha": "e04cc601676a772474a023ba30e7064e6cf23dab",
+        "repository_id": 1135847870,
+        "features": [
+          {
+            "heading": "Stitch Design Skills",
+            "original": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install).",
+            "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+            "text": "Agent Skills open standard를 따르는 Google Stitch의 에이전트 기술 및 플러그인 컬렉션. Codex, Antigravity, Gemini CLI, Claude Code, Cursor 및 OpenCode (manual install)와 같은 코딩 에이전트와 호환됩니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "audience": [],
+        "installation": [
+          {
+            "heading": "1. Install Plugins (Recommended)",
+            "original": "The fastest way to set up the full Stitch plugin suite globally.",
+            "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+            "text": "전 세계 Stitch 플러그인 제품군을 설정하는 가장 빠른 방법.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          },
+          {
+            "heading": "Codex",
+            "original": "Add the Stitch Skills marketplace, then install the plugins you need.",
+            "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+            "text": "Stitch Skills Marketplace를 추가하면 필요한 플러그인을 설치합니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "examples": [],
+        "install_code": {
+          "language": "bash",
+          "code": "codex plugin marketplace add google-labs-code/stitch-skills --ref main \\\n  --sparse .agents/plugins \\\n  --sparse plugins/stitch-design \\\n  --sparse plugins/stitch-build \\\n  --sparse plugins/stitch-utilities",
+          "context": "The fastest way to set up the full Stitch plugin suite globally. Add the Stitch Skills marketplace, then install the plugins you need.",
+          "heading": "Codex",
+          "heading_path": [
+            "Stitch Design Skills",
+            "Quick Start",
+            "1. Install Plugins (Recommended)",
+            "Codex"
+          ],
+          "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+          "context_translation": {
+            "text": "전 세계 Stitch 플러그인 제품군을 설정하는 가장 빠른 방법. Stitch Skills Marketplace를 추가하면 필요한 플러그인을 설치합니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        },
+        "example_code": null,
+        "sources": [
+          {
+            "title": "공식 README (62fdcd679747)",
+            "url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md"
+          }
+        ],
+        "assessment": {
+          "method": "제작자 문서의 해당 구간 발췌·CPU 번역",
+          "origin": "extracted",
+          "checked_at": "2026-11-23",
+          "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+          "repository_id": 1135847870,
+          "readme_sha": "e04cc601676a772474a023ba30e7064e6cf23dab",
+          "advantages": [
+            {
+              "heading": "Stitch Design Skills",
+              "original": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install).",
+              "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+              "text": "Agent Skills open standard를 따르는 Google Stitch의 에이전트 기술 및 플러그인 컬렉션. Codex, Antigravity, Gemini CLI, Claude Code, Cursor 및 OpenCode (manual install)와 같은 코딩 에이전트와 호환됩니다.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Stitch Design Skills"
+            }
+          ],
+          "limitations": [
+            {
+              "text": "Stitch Skills Marketplace를 추가하면 필요한 플러그인을 설치합니다.",
+              "original": "Add the Stitch Skills marketplace, then install the plugins you need.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Codex",
+              "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md"
+            },
+            {
+              "text": "[!팁] > --sparse 플래그는 선택 사항입니다 - 그들은 체크 아웃 만 제한 > 빠른 클론을위한 목록 경로. 전체 저장소를 끌어 들일 수 있습니다.",
+              "original": "[!TIP] > The --sparse flags are optional — they limit the checkout to only the > listed paths for a faster clone. Omit them to pull the entire repository.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Codex",
+              "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md"
+            }
+          ],
+          "comparison": [],
+          "selection": [],
+          "table": null,
+          "official_competitors": [],
+          "advantages_basis": "공식 문서에 명시된 지원 기능입니다."
+        },
+        "source_checks": {
+          "documents_checked": 1,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+              "sha": "e04cc601676a772474a023ba30e7064e6cf23dab",
+              "commit": "62fdcd679747aca0792e5dd6591b10ddfad56825",
+              "bytes": 11380
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "contiguous_fenced_excerpt",
+              "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+              "nonempty_lines": 5
+            }
+          ],
+          "excerpts_checked": 6,
+          "excerpt_checks": [
+            {
+              "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+              "section": "Stitch Design Skills",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+              "section": "1. Install Plugins (Recommended)",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+              "section": "Codex",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+              "section": "Stitch Design Skills",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+              "section": "Codex",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/google-labs-code/stitch-skills/blob/62fdcd679747aca0792e5dd6591b10ddfad56825/README.md",
+              "section": "Codex",
+              "mode": "parsed_paragraph_presence"
+            }
+          ],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "requested_full_name": "GoogleChrome/modern-web-guidance-src",
+      "weekly_stars": 3575,
+      "repository": {
+        "id": 1143633223,
+        "full_name": "GoogleChrome/modern-web-guidance-src",
+        "html_url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+        "description": "Keep your coding agent up to date with the latest web best practices",
+        "language": "TypeScript",
+        "stargazers_count": 10308,
+        "forks_count": 814,
+        "topics": [],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0",
+          "node_id": "MDc6TGljZW5zZTI="
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/GoogleChrome/modern-web-guidance-src"
+      },
+      "introduction": {
+        "text": "최신 웹 모범 사례로 최신 상태로 코딩 에이전트 유지",
+        "detail": "",
+        "method": "Argos Translate en→ko 1.1 기계번역",
+        "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "7b1df9846fbdcc222b9846938b5656abce018b07",
+        "commit": "920ee542afc8785ddbadd9aee976c2eab9caf25f",
+        "path": "README.md",
+        "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+        "fetched_at": "2026-11-23T07:52:53.351104+00:00",
+        "documents": []
+      },
+      "guide": {
+        "method": "공식 README 구간 추출·한국어 번역",
+        "readme_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+        "checked_at": "2026-11-23",
+        "readme_sha": "7b1df9846fbdcc222b9846938b5656abce018b07",
+        "repository_id": 1143633223,
+        "features": [
+          {
+            "heading": "JavaScript & APIs (85 features)",
+            "original": "privacy: Action-oriented guidelines for web developers to implement privacy by design, data minimization, third-party audits, and secure data handling. Use this skill when designing applications, integrating third-party services, handling user data, or configuring security headers.",
+            "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+            "text": "개인 정보 보호: 웹 개발자를위한 행동 중심 지침은 디자인, 데이터 최소화, 타사 감사 및 보안 데이터 처리에 의해 개인 정보를 구현합니다. 응용 프로그램을 설계 할 때이 기술을 사용하여 타사 서비스를 통합하거나 사용자 데이터를 처리하거나 보안 헤더를 구성합니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "audience": [],
+        "installation": [
+          {
+            "heading": "Quickstart",
+            "original": "This command runs an interactive wizard to install Modern Web Guidance. See Alternative Installation Methods below. Requires Node.js 22 or later.",
+            "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+            "text": "이 명령은 현대 웹 안내서를 설치하기 위해 대화 형 마법사를 실행합니다. 아래의 대안 설치 방법을 참조하십시오. Node.js 22 이상이 필요합니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "examples": [],
+        "install_code": {
+          "language": "shell",
+          "code": "npx modern-web-guidance@latest install",
+          "context": "",
+          "heading": "Quickstart",
+          "heading_path": [
+            "Modern Web Guidance (Source)",
+            "Quickstart"
+          ],
+          "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md"
+        },
+        "example_code": null,
+        "sources": [
+          {
+            "title": "공식 README (920ee542afc8)",
+            "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md"
+          }
+        ],
+        "assessment": {
+          "method": "제작자 문서의 해당 구간 발췌·CPU 번역",
+          "origin": "extracted",
+          "checked_at": "2026-11-23",
+          "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+          "repository_id": 1143633223,
+          "readme_sha": "7b1df9846fbdcc222b9846938b5656abce018b07",
+          "advantages": [
+            {
+              "heading": "JavaScript & APIs (85 features)",
+              "original": "privacy: Action-oriented guidelines for web developers to implement privacy by design, data minimization, third-party audits, and secure data handling. Use this skill when designing applications, integrating third-party services, handling user data, or configuring security headers.",
+              "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+              "text": "개인 정보 보호: 웹 개발자를위한 행동 중심 지침은 디자인, 데이터 최소화, 타사 감사 및 보안 데이터 처리에 의해 개인 정보를 구현합니다. 응용 프로그램을 설계 할 때이 기술을 사용하여 타사 서비스를 통합하거나 사용자 데이터를 처리하거나 보안 헤더를 구성합니다.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "JavaScript & APIs (85 features)"
+            }
+          ],
+          "limitations": [],
+          "comparison": [],
+          "selection": [],
+          "table": null,
+          "official_competitors": [],
+          "advantages_basis": "공식 문서에 명시된 지원 기능입니다."
+        },
+        "source_checks": {
+          "documents_checked": 1,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+              "sha": "7b1df9846fbdcc222b9846938b5656abce018b07",
+              "commit": "920ee542afc8785ddbadd9aee976c2eab9caf25f",
+              "bytes": 110697
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "contiguous_fenced_excerpt",
+              "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 3,
+          "excerpt_checks": [
+            {
+              "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+              "section": "JavaScript & APIs (85 features)",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+              "section": "Quickstart",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/920ee542afc8785ddbadd9aee976c2eab9caf25f/README.md",
+              "section": "JavaScript & APIs (85 features)",
+              "mode": "parsed_paragraph_presence"
+            }
+          ],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "requested_full_name": "alibaba/open-code-review",
+      "weekly_stars": 3700,
+      "repository": {
+        "id": 1241960226,
+        "full_name": "alibaba/open-code-review",
+        "html_url": "https://github.com/alibaba/open-code-review",
+        "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+        "language": "Go",
+        "stargazers_count": 55511,
+        "forks_count": 4613,
+        "topics": [
+          "agent",
+          "agent-skills",
+          "code-review",
+          "code-review-assistant",
+          "harness",
+          "repository-level-context"
+        ],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0",
+          "node_id": "MDc6TGljZW5zZTI="
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/alibaba/open-code-review"
+      },
+      "introduction": {
+        "text": "안전한, 빠르고, 능률, Alibaba의 가늠자에 전투 시험해. 하이브리드 아키텍처 코드 검토 도구 : deterministic 파이프라인 + LLM 에이전트, 정확한 라인 레벨 의견, 내장 다국어 규칙 (NPE, 스레드 안전, XSS, SQL 주입), OpenAI 및 Anthropic 호환.",
+        "detail": "",
+        "method": "Argos Translate en→ko 1.1 기계번역",
+        "source_url": "https://github.com/alibaba/open-code-review"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "09245c00353c15e0d70d609636eaeef1c096a307",
+        "commit": "e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd",
+        "path": "README.md",
+        "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+        "fetched_at": "2026-11-23T07:52:55.060615+00:00",
+        "documents": [
+          {
+            "sha": "c478273e1fb63348239848446d556121c1aef814",
+            "path": "plugins/open-code-review/README.md",
+            "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/plugins/open-code-review/README.md"
+          }
+        ]
+      },
+      "guide": {
+        "method": "공식 README 구간 추출·한국어 번역",
+        "readme_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+        "checked_at": "2026-11-23",
+        "readme_sha": "09245c00353c15e0d70d609636eaeef1c096a307",
+        "repository_id": 1241960226,
+        "features": [
+          {
+            "heading": "Introduction",
+            "original": "English | 简体中文 | 日本語 | 한국어 | Русский | Türkçe",
+            "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+            "text": "English | 简体中文 | 日本語 | 한국어 | Русский | Türkçe",
+            "method": "공식 한국어 원문"
+          },
+          {
+            "heading": "What is Open Code Review?",
+            "original": "Visit the official website for more details.",
+            "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+            "text": "자세한 내용은 공식 웹 사이트를 방문하십시오.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "audience": [],
+        "installation": [
+          {
+            "heading": "Prerequisites",
+            "original": "Operating system: Windows, macOS, or Linux. - Git >= 2.41 — Open Code Review relies on Git for diff generation, code search, and repository operations.",
+            "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+            "text": "운영 체제 : Windows, macOS 또는 Linux. - Git > = 2.41 - 오픈 코드 검토는 diff 생성, 코드 검색 및 저장소 작업을 위해 Git에 의존합니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "examples": [
+          {
+            "heading": "2. Choose a Review Mode",
+            "original": "For native mode, configure a provider once with ocr config provider and ocr config model. Authentication depends on the provider; see Configuration.",
+            "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+            "text": "네이티브 모드의 경우, ocr config 공급자와 ocr config 모델로 한 공급자를 구성합니다. 인증은 공급자에 달려 있습니다; 윤곽을 보십시오.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "install_code": {
+          "language": "bash",
+          "code": "npx skills add alibaba/open-code-review",
+          "context": "Use the skills in Claude Code, Codex, Cursor, Kimi Code, or another agent that supports Agent Skills and can run local commands. Both modes require Git >= 2.41 and the ocr CLI; only native mode requires an OCR model provider. Run in the project you want to review, then select the skills you need and your agent in the installer:",
+          "heading": "1. Install the Skills",
+          "heading_path": [
+            "How to Use",
+            "Agent Skills",
+            "1. Install the Skills"
+          ],
+          "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+          "context_translation": {
+            "text": "Claude Code, Codex, Cursor, Kimi Code, 또는 Agent Skills를 지원하는 또 다른 에이전트를 사용하여 로컬 명령을 실행할 수 있습니다. 두 모드는 Git > = 2.41 및 ocr CLI가 필요합니다. 네이티브 모드는 OCR 모델 공급자가 필요합니다. 검토하려는 프로젝트에서 실행, 다음 당신이 필요로하는 기술을 선택하고 설치자에 에이전트:",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        },
+        "example_code": null,
+        "sources": [
+          {
+            "title": "공식 README (e74f2c6bd442)",
+            "url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md"
+          },
+          {
+            "title": "plugins/open-code-review/README.md",
+            "url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/plugins/open-code-review/README.md"
+          }
+        ],
+        "assessment": {
+          "method": "제작자 문서의 해당 구간 발췌·CPU 번역",
+          "origin": "extracted",
+          "checked_at": "2026-11-23",
+          "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+          "repository_id": 1241960226,
+          "readme_sha": "09245c00353c15e0d70d609636eaeef1c096a307",
+          "advantages": [
+            {
+              "heading": "Introduction",
+              "original": "English | 简体中文 | 日本語 | 한국어 | Русский | Türkçe",
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "text": "English | 简体中文 | 日本語 | 한국어 | Русский | Türkçe",
+              "method": "공식 한국어 원문",
+              "section": "Introduction"
+            },
+            {
+              "heading": "What is Open Code Review?",
+              "original": "Visit the official website for more details.",
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "text": "자세한 내용은 공식 웹 사이트를 방문하십시오.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "What is Open Code Review?"
+            }
+          ],
+          "limitations": [
+            {
+              "text": "검토하려는 프로젝트에서 실행, 다음 당신이 필요로하는 기술을 선택하고 설치자에 에이전트:",
+              "original": "Run in the project you want to review, then select the skills you need and your agent in the installer:",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "1. Install the Skills",
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md"
+            },
+            {
+              "text": "Delegation Mode를 사용하지 않고 코드를 검토하기 전에 LLM을 구성해야 합니다.",
+              "original": "You must configure an LLM before reviewing code, unless you use Delegation Mode.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Quick Start",
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md"
+            }
+          ],
+          "comparison": [],
+          "selection": [],
+          "table": null,
+          "official_competitors": [],
+          "advantages_basis": "공식 문서에 명시된 지원 기능입니다."
+        },
+        "source_checks": {
+          "documents_checked": 2,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "sha": "09245c00353c15e0d70d609636eaeef1c096a307",
+              "commit": "e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd",
+              "bytes": 16614
+            },
+            {
+              "url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/plugins/open-code-review/README.md",
+              "sha": "c478273e1fb63348239848446d556121c1aef814",
+              "commit": "e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd",
+              "bytes": 4573
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "contiguous_fenced_excerpt",
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 8,
+          "excerpt_checks": [
+            {
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "section": "Introduction",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "section": "What is Open Code Review?",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "section": "Prerequisites",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "section": "2. Choose a Review Mode",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "section": "Introduction",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "section": "What is Open Code Review?",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "section": "1. Install the Skills",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/alibaba/open-code-review/blob/e74f2c6bd4422bd1e12d257d1725bcce1d6b9ddd/README.md",
+              "section": "Quick Start",
+              "mode": "parsed_paragraph_presence"
+            }
+          ],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "requested_full_name": "mvanhorn/last30days-skill",
+      "weekly_stars": 4731,
+      "repository": {
+        "id": 1140843380,
+        "full_name": "mvanhorn/last30days-skill",
+        "html_url": "https://github.com/mvanhorn/last30days-skill",
+        "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+        "language": "Python",
+        "stargazers_count": 72990,
+        "forks_count": 6452,
+        "topics": [
+          "agent-skills",
+          "artificial-intelligence",
+          "automation",
+          "bot",
+          "command-line",
+          "data-science",
+          "dsh",
+          "dsh-plugin",
+          "golang",
+          "instagram",
+          "llms",
+          "nlp",
+          "osint",
+          "polymarket",
+          "python3",
+          "reddit",
+          "terminal",
+          "tiktok",
+          "twitter",
+          "youtube"
+        ],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/mvanhorn/last30days-skill"
+      },
+      "introduction": {
+        "text": "Reddit, X, YouTube, HN, Polymarket 및 웹 전반에 걸쳐 모든 주제를 연구하는 AI 에이전트 기술 - 그 후 지상 요약을 합성",
+        "detail": "",
+        "method": "Argos Translate en→ko 1.1 기계번역",
+        "source_url": "https://github.com/mvanhorn/last30days-skill"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
+        "commit": "331025e662756ca51e86dfddcf59969f6dba25a0",
+        "path": "README.md",
+        "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+        "fetched_at": "2026-11-23T07:52:58.373889+00:00",
+        "documents": []
+      },
+      "guide": {
+        "method": "공식 README 구간 추출·한국어 번역",
+        "readme_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+        "checked_at": "2026-11-23",
+        "readme_sha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
+        "repository_id": 1140843380,
+        "features": [
+          {
+            "heading": "/last30days",
+            "original": "English | Français | Deutsch | Español | Português (Brasil) | 日本語 | 简体中文 | العربية | فارسی | Türkçe",
+            "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+            "text": "",
+            "method": "원문 병기"
+          },
+          {
+            "heading": "/last30days",
+            "original": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors.",
+            "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+            "text": "AI Agent-led search engine scored by upvotes, likes, and real money - 편집기가 아닙니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "audience": [],
+        "installation": [
+          {
+            "heading": "Claude Code (recommended)",
+            "original": "If you'd rather use the agent-skills install path on Claude Code, that's also supported:",
+            "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+            "text": "에이전트-skills를 사용하면 Claude Code의 경로를 설치하면 지원됩니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          },
+          {
+            "heading": "Quick Try-Link",
+            "original": "Try Last30Days Research Skill in Telegram or WhatsApp",
+            "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+            "text": "Telegram 또는 WhatsApp에 Last30Days 연구 기술 사용",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "examples": [],
+        "install_code": {
+          "language": "",
+          "code": "/plugin marketplace add mvanhorn/last30days-skill",
+          "context": "",
+          "heading": "Claude Code (recommended)",
+          "heading_path": [
+            "/last30days",
+            "Install",
+            "Claude Code (recommended)"
+          ],
+          "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md"
+        },
+        "example_code": null,
+        "sources": [
+          {
+            "title": "공식 README (331025e66275)",
+            "url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md"
+          }
+        ],
+        "assessment": {
+          "method": "제작자 문서의 해당 구간 발췌·CPU 번역",
+          "origin": "extracted",
+          "checked_at": "2026-11-23",
+          "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+          "repository_id": 1140843380,
+          "readme_sha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
+          "advantages": [
+            {
+              "heading": "/last30days",
+              "original": "English | Français | Deutsch | Español | Português (Brasil) | 日本語 | 简体中文 | العربية | فارسی | Türkçe",
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "text": "",
+              "method": "원문 병기",
+              "section": "/last30days"
+            },
+            {
+              "heading": "/last30days",
+              "original": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors.",
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "text": "AI Agent-led search engine scored by upvotes, likes, and real money - 편집기가 아닙니다.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "/last30days"
+            }
+          ],
+          "limitations": [
+            {
+              "text": "기본 플러그인과 npx 기술 설치는 coexist 할 수 있습니다. Claude Code가 설치 방법에 따라 dedupe가되지 않습니다. 마켓 플레이스 플러그인과 npx 기술 복사 활성이 있다면 /last30days는 두 항목이 표시됩니다. 기계 당 1개의 설치 방법을 사용하십시오.",
+              "original": "The native plugin and the npx skills install can coexist. Note that Claude Code does not dedupe across install methods: if you have both the marketplace plugin and the npx skills copy active, /last30days will show two entries. Use one install method per machine.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Quick Try-Link",
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md"
+            }
+          ],
+          "comparison": [],
+          "selection": [],
+          "table": null,
+          "official_competitors": [],
+          "advantages_basis": "공식 문서에 명시된 지원 기능입니다."
+        },
+        "source_checks": {
+          "documents_checked": 1,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "sha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
+              "commit": "331025e662756ca51e86dfddcf59969f6dba25a0",
+              "bytes": 35473
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "contiguous_fenced_excerpt",
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 7,
+          "excerpt_checks": [
+            {
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "section": "/last30days",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "section": "/last30days",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "section": "Claude Code (recommended)",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "section": "Quick Try-Link",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "section": "/last30days",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "section": "/last30days",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/mvanhorn/last30days-skill/blob/331025e662756ca51e86dfddcf59969f6dba25a0/README.md",
+              "section": "Quick Try-Link",
+              "mode": "parsed_paragraph_presence"
+            }
+          ],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "requested_full_name": "ChromeDevTools/chrome-devtools-mcp",
+      "weekly_stars": 2268,
+      "repository": {
+        "id": 1054793726,
+        "full_name": "ChromeDevTools/chrome-devtools-mcp",
+        "html_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+        "description": "Chrome DevTools for coding agents",
+        "language": "TypeScript",
+        "stargazers_count": 58908,
+        "forks_count": 4920,
+        "topics": [
+          "browser",
+          "chrome",
+          "chrome-devtools",
+          "debugging",
+          "devtools",
+          "mcp",
+          "mcp-server",
+          "puppeteer"
+        ],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0",
+          "node_id": "MDc6TGljZW5zZTI="
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/ChromeDevTools/chrome-devtools-mcp"
+      },
+      "introduction": {
+        "text": "크롬 DevTools 코딩 에이전트",
+        "detail": "",
+        "method": "Argos Translate en→ko 1.1 기계번역",
+        "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "2dca1a052a314a7c2635fb9da68c96221441e380",
+        "commit": "ab911a6dd71ed4960c1c679f831c7b5607bc5505",
+        "path": "README.md",
+        "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+        "fetched_at": "2026-11-23T07:53:00.572849+00:00",
+        "documents": []
+      },
+      "guide": {
+        "method": "공식 README 구간 추출·한국어 번역",
+        "readme_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+        "checked_at": "2026-11-23",
+        "readme_sha": "2dca1a052a314a7c2635fb9da68c96221441e380",
+        "repository_id": 1054793726,
+        "features": [],
+        "audience": [],
+        "installation": [
+          {
+            "heading": "Requirements",
+            "original": "Node.js LTS version. - Chrome current stable version or newer. - npm",
+            "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+            "text": "Node.js LTS 버전. - Chrome 현재 안정되어 있는 버전 또는 더 새로운. - 시간",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          },
+          {
+            "heading": "Getting started",
+            "original": "Add the following config to your MCP client:",
+            "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+            "text": "MCP 클라이언트에 다음 설정 추가:",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "examples": [
+          {
+            "heading": "Usage statistics",
+            "original": "Google collects usage statistics (such as tool invocation success rates, latency, and environment information) to improve the reliability and performance of Chrome DevTools MCP.",
+            "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+            "text": "Google은 Chrome DevTools MCP의 신뢰성과 성능을 향상시키기 위해 사용 통계를 수집합니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "install_code": {
+          "language": "json",
+          "code": "{\n  \"mcpServers\": {\n    \"chrome-devtools\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"chrome-devtools-mcp@latest\"]\n    }\n  }\n}",
+          "context": "Add the following config to your MCP client:",
+          "heading": "Getting started",
+          "heading_path": [
+            "Chrome DevTools for agents",
+            "Getting started"
+          ],
+          "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+          "context_translation": {
+            "text": "MCP 클라이언트에 다음 설정 추가:",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        },
+        "example_code": {
+          "language": "json",
+          "code": "\"args\": [\"-y\", \"chrome-devtools-mcp@latest\", \"--no-usage-statistics\"]",
+          "context": "Data collection is enabled by default. You can opt-out by passing the --no-usage-statistics flag when starting the server:",
+          "heading": "Usage statistics",
+          "heading_path": [
+            "Chrome DevTools for agents",
+            "Usage statistics"
+          ],
+          "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+          "context_translation": {
+            "text": "Data 수집은 기본적으로 활성화됩니다. 서버를 시작할 때 --no-usage-statistics 플래그를 전달하여 옵트 아웃 할 수 있습니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        },
+        "sources": [
+          {
+            "title": "공식 README (ab911a6dd71e)",
+            "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md"
+          }
+        ],
+        "assessment": {
+          "method": "제작자 문서의 해당 구간 발췌·CPU 번역",
+          "origin": "extracted",
+          "checked_at": "2026-11-23",
+          "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+          "repository_id": 1054793726,
+          "readme_sha": "2dca1a052a314a7c2635fb9da68c96221441e380",
+          "advantages": [],
+          "limitations": [
+            {
+              "text": "[공지] MCP 서버는 MCP 클라이언트가 실행 브라우저 인스턴스를 요구하는 도구를 사용하여 브라우저를 자동으로 시작합니다. 자체에서 Chrome DevTools MCP 서버에 연결하면 브라우저를 자동으로 시작할 수 없습니다.",
+              "original": "[!NOTE] > The MCP server will start the browser automatically once the MCP client uses a tool that requires a running browser instance. Connecting to the Chrome DevTools MCP server on its own will not automatically start the browser.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Your first prompt",
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md"
+            },
+            {
+              "text": "에이전트가 플러그인을 지원하지 않으면 에이전트의 기술 디렉토리에 기술 폴더를 복사합니다. npm 패키지는 기술을 포함합니다:",
+              "original": "If your agent does not support plugins, copy the skill folders into the skills directory of your agent. The npm package contains the skills:",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Install skills manually",
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md"
+            }
+          ],
+          "comparison": [],
+          "selection": [],
+          "table": null,
+          "official_competitors": [],
+          "advantages_basis": "공식 문서에 명시된 지원 기능입니다."
+        },
+        "source_checks": {
+          "documents_checked": 1,
+          "commands_checked": 2,
+          "sources": [
+            {
+              "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+              "sha": "2dca1a052a314a7c2635fb9da68c96221441e380",
+              "commit": "ab911a6dd71ed4960c1c679f831c7b5607bc5505",
+              "bytes": 9583
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "contiguous_fenced_excerpt",
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+              "nonempty_lines": 8
+            },
+            {
+              "field": "example_code",
+              "mode": "contiguous_fenced_excerpt",
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 5,
+          "excerpt_checks": [
+            {
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+              "section": "Requirements",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+              "section": "Getting started",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+              "section": "Usage statistics",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+              "section": "Your first prompt",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/ab911a6dd71ed4960c1c679f831c7b5607bc5505/README.md",
+              "section": "Install skills manually",
+              "mode": "parsed_paragraph_presence"
+            }
+          ],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "requested_full_name": "tradermonty/claude-trading-skills",
+      "weekly_stars": 2616,
+      "repository": {
+        "id": 1079356098,
+        "full_name": "tradermonty/claude-trading-skills",
+        "html_url": "https://github.com/tradermonty/claude-trading-skills",
+        "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+        "language": "Python",
+        "stargazers_count": 7848,
+        "forks_count": 1502,
+        "topics": [],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/tradermonty/claude-trading-skills"
+      },
+      "introduction": {
+        "text": "주식 투자자 및 상인을위한 클로드 코드 기술 - 시장 분석, 기술 차트, 경제 달력, 심사 및 거래 전략 개발.",
+        "detail": "",
+        "method": "Argos Translate en→ko 1.1 기계번역",
+        "source_url": "https://github.com/tradermonty/claude-trading-skills"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
+        "commit": "4080042a7863f5eeb48aabeaf60bd547efb99949",
+        "path": "README.md",
+        "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+        "fetched_at": "2026-11-23T07:53:03.112341+00:00",
+        "documents": [
+          {
+            "sha": "1e8cf08f30c1fb5b8b617571e6e92d4ea352b25d",
+            "path": "docs/en/offline-quickstart.md",
+            "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/docs/en/offline-quickstart.md"
+          },
+          {
+            "sha": "0cc1fd2e0deb7c2929306eda303f776a28c19f84",
+            "path": "docs/dev/skill-automation.md",
+            "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/docs/dev/skill-automation.md"
+          }
+        ]
+      },
+      "guide": {
+        "method": "공식 README 구간 추출·한국어 번역",
+        "readme_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+        "checked_at": "2026-11-23",
+        "readme_sha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
+        "repository_id": 1079356098,
+        "features": [
+          {
+            "heading": "Claude Trading Skills",
+            "original": "Data handling: Privacy policy · Security policy",
+            "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+            "text": "Data Handling: 개인정보 보호정책 · 보안 정책",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          },
+          {
+            "heading": "Claude Trading Skills",
+            "original": "Claude Trading Skills started as a personal project to use AI to improve my own trading process.",
+            "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+            "text": "Claude Trading Skills는 자체 거래 프로세스를 개선하기 위해 AI를 사용하는 개인 프로젝트로 시작되었습니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "audience": [
+          {
+            "heading": "Who This Is For",
+            "original": "This repository is designed for:",
+            "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+            "text": "이 저장소는을 위해 디자인됩니다:",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          },
+          {
+            "heading": "Who This Is For",
+            "original": "It is not designed for fully automated trading, signal outsourcing, or short-term scalping.",
+            "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+            "text": "완전히 자동화된 무역, 신호 아웃소싱, 또는 단기적인 확장을 위해 디자인되지 않습니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "installation": [
+          {
+            "heading": "Getting Started",
+            "original": "First time here? Read the FAQ for plan, cost, safety, and scope answers.",
+            "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+            "text": "처음이신가요? 계획, 비용, 안전 및 범위 답변에 대한 FAQ를 읽으십시오.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          },
+          {
+            "heading": "API Requirements",
+            "original": "Several skills require API keys for data access:",
+            "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+            "text": "몇몇 기술은 자료 접근을 위한 API 열쇠를 요구합니다:",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "examples": [
+          {
+            "heading": "See Example Outputs",
+            "original": "Select a preview to open the full-size SVG; on a phone, zoom after opening.",
+            "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+            "text": "전체 크기의 SVG를 열 수있는 미리보기를 선택하십시오. 전화, 개방 후 급상승.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "install_code": {
+          "language": "bash",
+          "code": "  export ALPACA_API_KEY=\"your_api_key_id\"\n  export ALPACA_SECRET_KEY=\"your_secret_key\"\n  export ALPACA_PAPER=\"true\"  # or \"false\" for live trading",
+          "context": "Several skills require API keys for data access: Alpaca Trading API: - Free paper trading account available - Sign up: https://alpaca.markets/ - Requires Alpaca MCP Server configuration - Set environment variables:",
+          "heading": "API Setup",
+          "heading_path": [
+            "Claude Trading Skills",
+            "API Requirements",
+            "API Setup"
+          ],
+          "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+          "context_translation": {
+            "text": "몇몇 기술은 자료 접근을 위한 API 열쇠를 요구합니다: Alpaca 무역 API: - 유효한 자유로운 서류상 무역 계정 - 위로 서명하십시오: https://alpaca.markets/ - Alpaca MCP를 요구하는 Server Configuration - 환경 변수 설정:",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        },
+        "example_code": null,
+        "sources": [
+          {
+            "title": "공식 README (4080042a7863)",
+            "url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md"
+          },
+          {
+            "title": "docs/en/offline-quickstart.md",
+            "url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/docs/en/offline-quickstart.md"
+          },
+          {
+            "title": "docs/dev/skill-automation.md",
+            "url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/docs/dev/skill-automation.md"
+          }
+        ],
+        "assessment": {
+          "method": "제작자 문서의 해당 구간 발췌·CPU 번역",
+          "origin": "extracted",
+          "checked_at": "2026-11-23",
+          "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+          "repository_id": 1079356098,
+          "readme_sha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
+          "advantages": [
+            {
+              "heading": "Claude Trading Skills",
+              "original": "Data handling: Privacy policy · Security policy",
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "text": "Data Handling: 개인정보 보호정책 · 보안 정책",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Claude Trading Skills"
+            },
+            {
+              "heading": "Claude Trading Skills",
+              "original": "Claude Trading Skills started as a personal project to use AI to improve my own trading process.",
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "text": "Claude Trading Skills는 자체 거래 프로세스를 개선하기 위해 AI를 사용하는 개인 프로젝트로 시작되었습니다.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Claude Trading Skills"
+            }
+          ],
+          "limitations": [
+            {
+              "text": "몇몇 기술은 자료 접근을 위한 API 열쇠를 요구합니다:",
+              "original": "Several skills require API keys for data access:",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "API Requirements",
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md"
+            },
+            {
+              "text": "Alpaca Trading API : - 무료 용지 거래 계정 - 가입 : https://alpaca.markets/ - Alpaca MCP를 요구합니다 Server Configuration - 환경 변수 설정:",
+              "original": "Alpaca Trading API: - Free paper trading account available - Sign up: https://alpaca.markets/ - Requires Alpaca MCP Server configuration - Set environment variables:",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "API Setup",
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md"
+            }
+          ],
+          "comparison": [],
+          "selection": [
+            {
+              "text": "이 저장소는을 위해 디자인됩니다:",
+              "original": "This repository is designed for:",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Who This Is For"
+            },
+            {
+              "text": "Time-constrained 개별 투자자 - 훈련 된 스윙 등급을 원하는 장기 투자자 - 구조 된 포트폴리오 검토를 원하는 디비엔드 및 ETF 투자자 - 무역 후보를 찾기 전에 위험을 관리하려는 상인 - 저널을하고 결정을 개선하려는 투자자",
+              "original": "Time-constrained individual investors - Long-term investors who also want disciplined swing-trading upside - Dividend and ETF investors who want structured portfolio review - Traders who want to manage risk before finding trade candidates - Investors who want to journal and improve their decision process",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Who This Is For"
+            }
+          ],
+          "table": null,
+          "official_competitors": [],
+          "advantages_basis": "공식 문서에 명시된 지원 기능입니다."
+        },
+        "source_checks": {
+          "documents_checked": 3,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "sha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
+              "commit": "4080042a7863f5eeb48aabeaf60bd547efb99949",
+              "bytes": 44238
+            },
+            {
+              "url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/docs/dev/skill-automation.md",
+              "sha": "0cc1fd2e0deb7c2929306eda303f776a28c19f84",
+              "commit": "4080042a7863f5eeb48aabeaf60bd547efb99949",
+              "bytes": 10415
+            },
+            {
+              "url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/docs/en/offline-quickstart.md",
+              "sha": "1e8cf08f30c1fb5b8b617571e6e92d4ea352b25d",
+              "commit": "4080042a7863f5eeb48aabeaf60bd547efb99949",
+              "bytes": 7504
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "contiguous_fenced_excerpt",
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "nonempty_lines": 3
+            }
+          ],
+          "excerpts_checked": 13,
+          "excerpt_checks": [
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Claude Trading Skills",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Claude Trading Skills",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Who This Is For",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Who This Is For",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Getting Started",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "API Requirements",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "See Example Outputs",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Claude Trading Skills",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Claude Trading Skills",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "API Requirements",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "API Setup",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Who This Is For",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/tradermonty/claude-trading-skills/blob/4080042a7863f5eeb48aabeaf60bd547efb99949/README.md",
+              "section": "Who This Is For",
+              "mode": "parsed_paragraph_presence"
+            }
+          ],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
+        }
+      }
+    },
+    {
+      "rank": 8,
+      "requested_full_name": "ag-ui-protocol/ag-ui",
+      "weekly_stars": 3620,
+      "repository": {
+        "id": 979392131,
+        "full_name": "ag-ui-protocol/ag-ui",
+        "html_url": "https://github.com/ag-ui-protocol/ag-ui",
+        "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+        "language": "TypeScript",
+        "stargazers_count": 21262,
+        "forks_count": 2162,
+        "topics": [
+          "ag-ui-protocol",
+          "agent-frontend",
+          "agent-ui",
+          "agentic-workflow",
+          "ai-agents"
+        ],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/ag-ui-protocol/ag-ui"
+      },
+      "introduction": {
+        "text": "AG-UI: 에이전트-사용자 상호 작용 프로토콜. 프론트엔드에 에이전트를 가져옵니다.",
+        "detail": "",
+        "method": "Argos Translate en→ko 1.1 기계번역",
+        "source_url": "https://github.com/ag-ui-protocol/ag-ui"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "511991757bea32ccb96348a311469f0fd345c88b",
+        "commit": "c31e1e819e3a3c3b4af14add04f5b9a9a0208cae",
+        "path": "README.md",
+        "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+        "fetched_at": "2026-11-23T07:53:07.041134+00:00",
+        "documents": []
+      },
+      "guide": {
+        "method": "공식 README 구간 추출·한국어 번역",
+        "readme_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+        "checked_at": "2026-11-23",
+        "readme_sha": "511991757bea32ccb96348a311469f0fd345c88b",
+        "repository_id": 979392131,
+        "features": [
+          {
+            "heading": "Features: what you can build",
+            "original": "Each building block maps to events in the spec, and each has a live demo in the AG-UI Dojo.",
+            "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+            "text": "각 건물 블록 맵은 spec에서 이벤트에, 각각은 AG-UI Dojo에서 라이브 데모를 가지고 있습니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "audience": [],
+        "installation": [
+          {
+            "heading": "Quick start",
+            "original": "Start a new app. The CLI scaffolds a frontend (CopilotKit on Next.js, or a terminal client) wired to the agent framework you pick:",
+            "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+            "text": "새로운 앱을 시작하세요. CLI 비계 (CopilotKit on Next.js, 또는 터미널 클라이언트)가 선택한 에이전트 프레임 워크에 유선 :",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "examples": [],
+        "install_code": {
+          "language": "bash",
+          "code": "npx create-ag-ui-app@latest",
+          "context": "Start a new app. The CLI scaffolds a frontend (CopilotKit on Next.js, or a terminal client) wired to the agent framework you pick:",
+          "heading": "Quick start",
+          "heading_path": [
+            "Quick start"
+          ],
+          "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+          "context_translation": {
+            "text": "새로운 앱을 시작하세요. CLI 비계 (CopilotKit on Next.js, 또는 터미널 클라이언트)가 선택한 에이전트 프레임 워크에 유선 :",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        },
+        "example_code": null,
+        "sources": [
+          {
+            "title": "공식 README (c31e1e819e3a)",
+            "url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md"
+          }
+        ],
+        "assessment": {
+          "method": "제작자 문서의 해당 구간 발췌·CPU 번역",
+          "origin": "extracted",
+          "checked_at": "2026-11-23",
+          "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+          "repository_id": 979392131,
+          "readme_sha": "511991757bea32ccb96348a311469f0fd345c88b",
+          "advantages": [
+            {
+              "heading": "Features: what you can build",
+              "original": "Each building block maps to events in the spec, and each has a live demo in the AG-UI Dojo.",
+              "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+              "text": "각 건물 블록 맵은 spec에서 이벤트에, 각각은 AG-UI Dojo에서 라이브 데모를 가지고 있습니다.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Features: what you can build"
+            }
+          ],
+          "limitations": [
+            {
+              "text": "1. 대리인 (Python). 파이썬 3.9+가 필요합니다.",
+              "original": "1. The agent (Python). Requires Python 3.9+.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Quick start",
+              "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md"
+            }
+          ],
+          "comparison": [],
+          "selection": [],
+          "table": null,
+          "official_competitors": [],
+          "advantages_basis": "공식 문서에 명시된 지원 기능입니다."
+        },
+        "source_checks": {
+          "documents_checked": 1,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+              "sha": "511991757bea32ccb96348a311469f0fd345c88b",
+              "commit": "c31e1e819e3a3c3b4af14add04f5b9a9a0208cae",
+              "bytes": 19476
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "contiguous_fenced_excerpt",
+              "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+              "nonempty_lines": 1
+            }
+          ],
+          "excerpts_checked": 4,
+          "excerpt_checks": [
+            {
+              "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+              "section": "Features: what you can build",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+              "section": "Quick start",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+              "section": "Features: what you can build",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/ag-ui-protocol/ag-ui/blob/c31e1e819e3a3c3b4af14add04f5b9a9a0208cae/README.md",
+              "section": "Quick start",
+              "mode": "parsed_paragraph_presence"
+            }
+          ],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "requested_full_name": "meta/astryx",
+      "weekly_stars": 3626,
+      "repository": {
+        "id": 1131202426,
+        "full_name": "meta/astryx",
+        "html_url": "https://github.com/meta/astryx",
+        "description": "An open source design system that's fully customizable and agent ready",
+        "language": "TypeScript",
+        "stargazers_count": 32333,
+        "forks_count": 2541,
+        "topics": [],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/meta/astryx"
+      },
+      "introduction": {
+        "text": "완전히 customizable 및 대리인 준비되어 있는 열려있는 근원 디자인 체계",
+        "detail": "",
+        "method": "Argos Translate en→ko 1.1 기계번역",
+        "source_url": "https://github.com/meta/astryx"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "fe27aafebbbea98a593d12332e7bc1a65f488f68",
+        "commit": "9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3",
+        "path": "README.md",
+        "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+        "fetched_at": "2026-11-23T07:53:08.827023+00:00",
+        "documents": [
+          {
+            "sha": "6c83e15268ec000274d9cd5ed7086314d8227947",
+            "path": "packages/core/README.md",
+            "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/packages/core/README.md"
+          }
+        ]
+      },
+      "guide": {
+        "method": "공식 README 구간 추출·한국어 번역",
+        "readme_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+        "checked_at": "2026-11-23",
+        "readme_sha": "fe27aafebbbea98a593d12332e7bc1a65f488f68",
+        "repository_id": 1131202426,
+        "features": [
+          {
+            "heading": "Overview",
+            "original": "What makes Astryx different:",
+            "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+            "text": "Astryx는 무엇을 다른:",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "audience": [],
+        "installation": [
+          {
+            "heading": "Getting Started",
+            "original": "Astryx requires React 19 or later (react and react-dom are peer dependencies of @astryxdesign/core).",
+            "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+            "text": "Astryx는 React 19 이상(react and react-dom은 @astryxdesign/core의 피어 의존성)을 요구합니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          },
+          {
+            "heading": "Getting Started",
+            "original": "Install Astryx, a theme, and its peer dependencies:",
+            "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+            "text": "Astryx, 테마 및 피어 의존성을 설치하십시오.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "examples": [],
+        "install_code": {
+          "language": "bash",
+          "code": "# npm\nnpm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nnpm install -D @astryxdesign/cli\n\n# pnpm\npnpm add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\npnpm add -D @astryxdesign/cli\n\n# yarn\nyarn add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nyarn add -D @astryxdesign/cli",
+          "context": "Install Astryx, a theme, and its peer dependencies:",
+          "heading": "Getting Started",
+          "heading_path": [
+            "Astryx",
+            "Getting Started"
+          ],
+          "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+          "context_translation": {
+            "text": "Astryx, 테마 및 피어 의존성을 설치하십시오.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        },
+        "example_code": null,
+        "sources": [
+          {
+            "title": "공식 README (9be5ccc225dd)",
+            "url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md"
+          },
+          {
+            "title": "packages/core/README.md",
+            "url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/packages/core/README.md"
+          }
+        ],
+        "assessment": {
+          "method": "제작자 문서의 해당 구간 발췌·CPU 번역",
+          "origin": "extracted",
+          "checked_at": "2026-11-23",
+          "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+          "repository_id": 1131202426,
+          "readme_sha": "fe27aafebbbea98a593d12332e7bc1a65f488f68",
+          "advantages": [
+            {
+              "heading": "Overview",
+              "original": "What makes Astryx different:",
+              "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+              "text": "Astryx는 무엇을 다른:",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Overview"
+            }
+          ],
+          "limitations": [
+            {
+              "text": "Astryx는 React 19 이상(react and react-dom은 @astryxdesign/core의 피어 의존성)을 요구합니다.",
+              "original": "Astryx requires React 19 or later (react and react-dom are peer dependencies of @astryxdesign/core).",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Getting Started",
+              "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md"
+            },
+            {
+              "text": "Astryx는 React 19 이상(react and react-dom >= 19.0.0은 피어 의존성)을 요구합니다.",
+              "original": "Astryx requires React 19 or later (react and react-dom >= 19.0.0 are peer dependencies).",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Quick Start",
+              "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/packages/core/README.md"
+            }
+          ],
+          "comparison": [],
+          "selection": [],
+          "table": null,
+          "official_competitors": [],
+          "advantages_basis": "공식 문서에 명시된 지원 기능입니다."
+        },
+        "source_checks": {
+          "documents_checked": 2,
+          "commands_checked": 1,
+          "sources": [
+            {
+              "url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+              "sha": "fe27aafebbbea98a593d12332e7bc1a65f488f68",
+              "commit": "9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3",
+              "bytes": 9612
+            },
+            {
+              "url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/packages/core/README.md",
+              "sha": "6c83e15268ec000274d9cd5ed7086314d8227947",
+              "commit": "9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3",
+              "bytes": 15727
+            }
+          ],
+          "command_checks": [
+            {
+              "field": "install_code",
+              "mode": "contiguous_fenced_excerpt",
+              "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+              "nonempty_lines": 9
+            }
+          ],
+          "excerpts_checked": 6,
+          "excerpt_checks": [
+            {
+              "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+              "section": "Overview",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+              "section": "Getting Started",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+              "section": "Getting Started",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+              "section": "Overview",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/README.md",
+              "section": "Getting Started",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/meta/astryx/blob/9be5ccc225dd0e7eb3becd6fafa698521a3c2fc3/packages/core/README.md",
+              "section": "Quick Start",
+              "mode": "parsed_paragraph_presence"
+            }
+          ],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "requested_full_name": "pookjw/HermesEnabler",
+      "weekly_stars": 461,
+      "repository": {
+        "id": 903349957,
+        "full_name": "pookjw/HermesEnabler",
+        "html_url": "https://github.com/pookjw/HermesEnabler",
+        "description": "Enable Hermès Watch Faces on any Apple Watch devices",
+        "language": "Objective-C",
+        "stargazers_count": 2415,
+        "forks_count": 201,
+        "topics": [],
+        "archived": false,
+        "disabled": false,
+        "license": {
+          "key": "mit",
+          "name": "MIT License",
+          "spdx_id": "MIT",
+          "url": "https://api.github.com/licenses/mit",
+          "node_id": "MDc6TGljZW5zZTEz"
+        },
+        "default_branch": "main",
+        "metadata_url": "https://api.github.com/repos/pookjw/HermesEnabler"
+      },
+      "introduction": {
+        "text": "Enable Hermès 손목 시계 얼굴에 어떤 Apple Watch 장치",
+        "detail": "",
+        "method": "Argos Translate en→ko 1.1 기계번역",
+        "source_url": "https://github.com/pookjw/HermesEnabler"
+      },
+      "readme": {
+        "status": "ok",
+        "sha": "a19dddcc32054de2d64b64801b14eec72b2e8300",
+        "commit": "f428f91d7270f53f738429a17fb6a5d51f924284",
+        "path": "README.md",
+        "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+        "fetched_at": "2026-11-23T07:53:09.839736+00:00",
+        "documents": []
+      },
+      "guide": {
+        "method": "공식 README 구간 추출·한국어 번역",
+        "readme_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+        "checked_at": "2026-11-23",
+        "readme_sha": "a19dddcc32054de2d64b64801b14eec72b2e8300",
+        "repository_id": 903349957,
+        "features": [
+          {
+            "heading": "HermesEnabler 2",
+            "original": "English · Tiếng Việt · 한국어 · 简体中文 · 繁體中文 · 日本語 · Español · Français · Deutsch · Português",
+            "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+            "text": "English · Tiếng Việt · 한국어 · 简体中文 · 繁體中文 · 日本語 · Español · Français · Deutsch · Português",
+            "method": "공식 한국어 원문"
+          },
+          {
+            "heading": "HermesEnabler 2",
+            "original": "Supported on watchOS 27.0 through 27.3 beta 1. > If you’re using an unsupported watchOS version, use Clocky.",
+            "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+            "text": "watchOS에 지원 27.0 통해 27.3 베타 1. > 지원되지 않은 watchOS 버전을 사용하는 경우, Clocky를 사용합니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "audience": [],
+        "installation": [
+          {
+            "heading": "Windows",
+            "original": "Developer-mode preparation requires a USB connection. After pairing over USB once, installs and renewals can use Wi-Fi.",
+            "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+            "text": "Developer-mode 준비는 USB 연결을 요구합니다. USB를 한 번에 페어링 한 후, 설치 및 갱신은 Wi-Fi를 사용할 수 있습니다.",
+            "method": "Argos Translate en→ko 1.1 기계번역"
+          }
+        ],
+        "examples": [],
+        "install_code": null,
+        "example_code": null,
+        "sources": [
+          {
+            "title": "공식 README (f428f91d7270)",
+            "url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md"
+          }
+        ],
+        "assessment": {
+          "method": "제작자 문서의 해당 구간 발췌·CPU 번역",
+          "origin": "extracted",
+          "checked_at": "2026-11-23",
+          "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+          "repository_id": 903349957,
+          "readme_sha": "a19dddcc32054de2d64b64801b14eec72b2e8300",
+          "advantages": [
+            {
+              "heading": "HermesEnabler 2",
+              "original": "English · Tiếng Việt · 한국어 · 简体中文 · 繁體中文 · 日本語 · Español · Français · Deutsch · Português",
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+              "text": "English · Tiếng Việt · 한국어 · 简体中文 · 繁體中文 · 日本語 · Español · Français · Deutsch · Português",
+              "method": "공식 한국어 원문",
+              "section": "HermesEnabler 2"
+            },
+            {
+              "heading": "HermesEnabler 2",
+              "original": "Supported on watchOS 27.0 through 27.3 beta 1. > If you’re using an unsupported watchOS version, use Clocky.",
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+              "text": "watchOS에 지원 27.0 통해 27.3 베타 1. > 지원되지 않은 watchOS 버전을 사용하는 경우, Clocky를 사용합니다.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "HermesEnabler 2"
+            }
+          ],
+          "limitations": [
+            {
+              "text": "macOS에서 미리 설치된 IPA를 Sideloadly로 설치하거나 Xcode로 앱을 직접 구축할 수 있습니다. 어느 방법, iPhone은 대상 Apple Watch와 페어링되어야하며, Watch는 지원되는 watchOS 버전을 실행해야합니다.",
+              "original": "On macOS you can install the prebuilt IPA with Sideloadly or build the app directly with Xcode. Either way, the iPhone must be paired with the target Apple Watch, and the Watch must run a supported watchOS version.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "macOS",
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md"
+            },
+            {
+              "text": "Developer-mode 준비는 USB 연결을 요구합니다. USB를 한 번에 페어링 한 후, 설치 및 갱신은 Wi-Fi를 사용할 수 있습니다.",
+              "original": "Developer-mode preparation requires a USB connection. After pairing over USB once, installs and renewals can use Wi-Fi.",
+              "method": "Argos Translate en→ko 1.1 기계번역",
+              "section": "Windows",
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md"
+            }
+          ],
+          "comparison": [],
+          "selection": [],
+          "table": null,
+          "official_competitors": [],
+          "advantages_basis": "공식 문서에 명시된 지원 기능입니다."
+        },
+        "source_checks": {
+          "documents_checked": 1,
+          "commands_checked": 0,
+          "sources": [
+            {
+              "url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+              "sha": "a19dddcc32054de2d64b64801b14eec72b2e8300",
+              "commit": "f428f91d7270f53f738429a17fb6a5d51f924284",
+              "bytes": 4634
+            }
+          ],
+          "command_checks": [],
+          "excerpts_checked": 7,
+          "excerpt_checks": [
+            {
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+              "section": "HermesEnabler 2",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+              "section": "HermesEnabler 2",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+              "section": "Windows",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+              "section": "HermesEnabler 2",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+              "section": "HermesEnabler 2",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+              "section": "macOS",
+              "mode": "parsed_paragraph_presence"
+            },
+            {
+              "source_url": "https://github.com/pookjw/HermesEnabler/blob/f428f91d7270f53f738429a17fb6a5d51f924284/README.md",
+              "section": "Windows",
+              "mode": "parsed_paragraph_presence"
+            }
+          ],
+          "unchecked_urls": [],
+          "scope": "고정판 문서·앵커·명령·발췌 문장의 원문 존재만 확인합니다. 외부 링크 도달 여부, 번역·해석의 정확성, 명령 실행 결과는 검증하지 않습니다."
+        }
+      }
+    }
+  ]
+}

@@ -368,5 +368,240 @@
     "source": "Versioned releases are available as precompiled binaries from the GitHub [releases page], built for Linux (x86-64 and AArch64), Windows (x86-64 only), and macOS (universal). This is the recommended way to use the software.",
     "text": "버전 릴리스는 GitHub [releases 페이지]에서 사전 컴파일 된 바이너리로 사용할 수 있으며 리눅스 (x86-64 및 AArch64), Windows (x86-64 전용) 및 macOS (대여)를 위해 내장되어 있습니다. 이것은 소프트웨어를 사용하는 것이 좋습니다.",
     "method": "Argos Translate en→ko 1.1"
+  },
+  "5d0d6f9824bcbef0efd50a19c39f2f6996220fcf20459fb011cd13e1b7264f37": {
+    "source": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "text": "Stitch MCP 서버에 작업하도록 설계된 Agent Skills 라이브러리. 각 기술에 따라 에이전트 스킬 개방 표준, Antigravity, Gemini CLI, Claude Code, Cursor와 같은 코딩 에이전트와 호환.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "83fd45db48503e35c9c045459094c1e792849bd27befee77486c7b66244b3e66": {
+    "source": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install).",
+    "text": "Agent Skills open standard를 따르는 Google Stitch의 에이전트 기술 및 플러그인 컬렉션. Codex, Antigravity, Gemini CLI, Claude Code, Cursor 및 OpenCode (manual install)와 같은 코딩 에이전트와 호환됩니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "6ae61ab0965995da7c7c7f3750c883719a64a3adb4539c70f9ea7166fba38703": {
+    "source": "The fastest way to set up the full Stitch plugin suite globally.",
+    "text": "전 세계 Stitch 플러그인 제품군을 설정하는 가장 빠른 방법.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "a0ff04e9398d68d9f4a474e934897a5a863c8ef00077febc2f0e11eaa398528f": {
+    "source": "Add the Stitch Skills marketplace, then install the plugins you need.",
+    "text": "Stitch Skills Marketplace를 추가하면 필요한 플러그인을 설치합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "84c152bef2b2143b0ffc9a7f2547fdbfeb943d122a79dbbcbb6e12579ca04627": {
+    "source": "The fastest way to set up the full Stitch plugin suite globally. Add the Stitch Skills marketplace, then install the plugins you need.",
+    "text": "전 세계 Stitch 플러그인 제품군을 설정하는 가장 빠른 방법. Stitch Skills Marketplace를 추가하면 필요한 플러그인을 설치합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "1f9ad34512eb4aac73819ea5f2a472abbc0f9b8fe488bd0e24206afba4e0ba06": {
+    "source": "[!TIP] > The --sparse flags are optional — they limit the checkout to only the > listed paths for a faster clone. Omit them to pull the entire repository.",
+    "text": "[!팁] > --sparse 플래그는 선택 사항입니다 - 그들은 체크 아웃 만 제한 > 빠른 클론을위한 목록 경로. 전체 저장소를 끌어 들일 수 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "a91cb804076e96e1afab4ea265c5964222cc1064142df14ad6aa125e01688e65": {
+    "source": "Keep your coding agent up to date with the latest web best practices",
+    "text": "최신 웹 모범 사례로 최신 상태로 코딩 에이전트 유지",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "622c4d6e3f3fc2f2cabdeae0864893be3d31b1693552c9ab0cb200db59f95d74": {
+    "source": "privacy: Action-oriented guidelines for web developers to implement privacy by design, data minimization, third-party audits, and secure data handling. Use this skill when designing applications, integrating third-party services, handling user data, or configuring security headers.",
+    "text": "개인 정보 보호: 웹 개발자를위한 행동 중심 지침은 디자인, 데이터 최소화, 타사 감사 및 보안 데이터 처리에 의해 개인 정보를 구현합니다. 응용 프로그램을 설계 할 때이 기술을 사용하여 타사 서비스를 통합하거나 사용자 데이터를 처리하거나 보안 헤더를 구성합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "82e84514b6b975fa22b83e0f4c437d4e2f57253f93cd352131ee86ef44d57613": {
+    "source": "This command runs an interactive wizard to install Modern Web Guidance. See Alternative Installation Methods below. Requires Node.js 22 or later.",
+    "text": "이 명령은 현대 웹 안내서를 설치하기 위해 대화 형 마법사를 실행합니다. 아래의 대안 설치 방법을 참조하십시오. Node.js 22 이상이 필요합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "c0beefd0eda93c6f27e5d824f21a542024cc07d035d81646c605d2a1a7d16833": {
+    "source": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "text": "안전한, 빠르고, 능률, Alibaba의 가늠자에 전투 시험해. 하이브리드 아키텍처 코드 검토 도구 : deterministic 파이프라인 + LLM 에이전트, 정확한 라인 레벨 의견, 내장 다국어 규칙 (NPE, 스레드 안전, XSS, SQL 주입), OpenAI 및 Anthropic 호환.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "c9240c00753fb403d1c945013177bb8533bbda0c2f8ff58653d18b3a1542544e": {
+    "source": "Visit the official website for more details.",
+    "text": "자세한 내용은 공식 웹 사이트를 방문하십시오.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "595fe675642a2f635aa357d23b79ad9175bf7b07db4056fe85d0f58dcd4740a8": {
+    "source": "Operating system: Windows, macOS, or Linux. - Git >= 2.41 — Open Code Review relies on Git for diff generation, code search, and repository operations.",
+    "text": "운영 체제 : Windows, macOS 또는 Linux. - Git > = 2.41 - 오픈 코드 검토는 diff 생성, 코드 검색 및 저장소 작업을 위해 Git에 의존합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "d8530913488df6098212a3ff87219219f543dae2e472627616de49829fc0a472": {
+    "source": "For native mode, configure a provider once with ocr config provider and ocr config model. Authentication depends on the provider; see Configuration.",
+    "text": "네이티브 모드의 경우, ocr config 공급자와 ocr config 모델로 한 공급자를 구성합니다. 인증은 공급자에 달려 있습니다; 윤곽을 보십시오.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "b10e20b8155f727ddee955c1475d10555024a6803283cd412ed332622e8ed64d": {
+    "source": "Use the skills in Claude Code, Codex, Cursor, Kimi Code, or another agent that supports Agent Skills and can run local commands. Both modes require Git >= 2.41 and the ocr CLI; only native mode requires an OCR model provider. Run in the project you want to review, then select the skills you need and your agent in the installer:",
+    "text": "Claude Code, Codex, Cursor, Kimi Code, 또는 Agent Skills를 지원하는 또 다른 에이전트를 사용하여 로컬 명령을 실행할 수 있습니다. 두 모드는 Git > = 2.41 및 ocr CLI가 필요합니다. 네이티브 모드는 OCR 모델 공급자가 필요합니다. 검토하려는 프로젝트에서 실행, 다음 당신이 필요로하는 기술을 선택하고 설치자에 에이전트:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "6f830de2181152d41af932f6d5be995c94789cb4788a7154eb84ad1c71e2585e": {
+    "source": "Run in the project you want to review, then select the skills you need and your agent in the installer:",
+    "text": "검토하려는 프로젝트에서 실행, 다음 당신이 필요로하는 기술을 선택하고 설치자에 에이전트:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "9d3160fdef58fdbaec9859b2223e1d0eb9cfd7a3dd7f026176ee4928f5c6105c": {
+    "source": "You must configure an LLM before reviewing code, unless you use Delegation Mode.",
+    "text": "Delegation Mode를 사용하지 않고 코드를 검토하기 전에 LLM을 구성해야 합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "ee626e3e638bfc9b115b0442a83ead012f6badde53d386204b1a4293d461479a": {
+    "source": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "text": "Reddit, X, YouTube, HN, Polymarket 및 웹 전반에 걸쳐 모든 주제를 연구하는 AI 에이전트 기술 - 그 후 지상 요약을 합성",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "d510dd16f50ef3a8e3a88ec8546d90bf467dd4d4f2bf7f9d3f154f99e4b8872d": {
+    "source": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors.",
+    "text": "AI Agent-led search engine scored by upvotes, likes, and real money - 편집기가 아닙니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "62f3469eeecb56aee0c675d9df63a756c23faac6883091788622cc1390be0a47": {
+    "source": "If you'd rather use the agent-skills install path on Claude Code, that's also supported:",
+    "text": "에이전트-skills를 사용하면 Claude Code의 경로를 설치하면 지원됩니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "2c67cb5043abbc9bbc42586f6008df579d70b0d778bcba6cc4330a324cd12e1e": {
+    "source": "Try Last30Days Research Skill in Telegram or WhatsApp",
+    "text": "Telegram 또는 WhatsApp에 Last30Days 연구 기술 사용",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "d81ce60a0f82d92a4b84d822fff135acf8f7834ed4315740e4cf4a91d4080433": {
+    "source": "The native plugin and the npx skills install can coexist. Note that Claude Code does not dedupe across install methods: if you have both the marketplace plugin and the npx skills copy active, /last30days will show two entries. Use one install method per machine.",
+    "text": "기본 플러그인과 npx 기술 설치는 coexist 할 수 있습니다. Claude Code가 설치 방법에 따라 dedupe가되지 않습니다. 마켓 플레이스 플러그인과 npx 기술 복사 활성이 있다면 /last30days는 두 항목이 표시됩니다. 기계 당 1개의 설치 방법을 사용하십시오.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "974036aa8626db5ee58ec95051ef5309c0ac2a586bdf5fa4805681a338838eef": {
+    "source": "Chrome DevTools for coding agents",
+    "text": "크롬 DevTools 코딩 에이전트",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "a03bde5a0949968047021803813a3493d2584006c368477d8864cae1fda14bba": {
+    "source": "Node.js LTS version. - Chrome current stable version or newer. - npm",
+    "text": "Node.js LTS 버전. - Chrome 현재 안정되어 있는 버전 또는 더 새로운. - 시간",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "2c7af59018abb1041454b0da3c1d036dc248773efd401882b76b56f65f67bb20": {
+    "source": "Add the following config to your MCP client:",
+    "text": "MCP 클라이언트에 다음 설정 추가:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "662c206fc0dc83c3397662434488be119c0766424db7ea16ecbcaf9ad8f09cda": {
+    "source": "Google collects usage statistics (such as tool invocation success rates, latency, and environment information) to improve the reliability and performance of Chrome DevTools MCP.",
+    "text": "Google은 Chrome DevTools MCP의 신뢰성과 성능을 향상시키기 위해 사용 통계를 수집합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "c835820b41011e084c9b46fab4fd06b503e49bda2e049feadb168a180df284d5": {
+    "source": "Data collection is enabled by default. You can opt-out by passing the --no-usage-statistics flag when starting the server:",
+    "text": "Data 수집은 기본적으로 활성화됩니다. 서버를 시작할 때 --no-usage-statistics 플래그를 전달하여 옵트 아웃 할 수 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "c6a501bbf7ddd764a8e6c30d5a62029363eb65a1d14bbb05b56923e2efd6a0f7": {
+    "source": "[!NOTE] > The MCP server will start the browser automatically once the MCP client uses a tool that requires a running browser instance. Connecting to the Chrome DevTools MCP server on its own will not automatically start the browser.",
+    "text": "[공지] MCP 서버는 MCP 클라이언트가 실행 브라우저 인스턴스를 요구하는 도구를 사용하여 브라우저를 자동으로 시작합니다. 자체에서 Chrome DevTools MCP 서버에 연결하면 브라우저를 자동으로 시작할 수 없습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "d64f86de1f366e1a0ee363c8ee74c722b02428de3cc944fa40237258c42dd201": {
+    "source": "If your agent does not support plugins, copy the skill folders into the skills directory of your agent. The npm package contains the skills:",
+    "text": "에이전트가 플러그인을 지원하지 않으면 에이전트의 기술 디렉토리에 기술 폴더를 복사합니다. npm 패키지는 기술을 포함합니다:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "7827a95c18cae38d9a6187da3e1f2dd3cc004729866477175d4d453650bd02d7": {
+    "source": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+    "text": "주식 투자자 및 상인을위한 클로드 코드 기술 - 시장 분석, 기술 차트, 경제 달력, 심사 및 거래 전략 개발.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "a6a07eaf3b976f7ac9cfa3647577108b8adde029ca322641792bacf157c2134c": {
+    "source": "Data handling: Privacy policy · Security policy",
+    "text": "Data Handling: 개인정보 보호정책 · 보안 정책",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "1d8569ab2343cb311eea82c9d080c47b4cfc242d7f169a340f967e6a3cca9251": {
+    "source": "Claude Trading Skills started as a personal project to use AI to improve my own trading process.",
+    "text": "Claude Trading Skills는 자체 거래 프로세스를 개선하기 위해 AI를 사용하는 개인 프로젝트로 시작되었습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "9a357ca0cecbe07835d369788417993a70756ec8e4d8276d2d50a6aeefe293a0": {
+    "source": "This repository is designed for:",
+    "text": "이 저장소는을 위해 디자인됩니다:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "017e2ff065cb8f0c1c60d693ec1a9877f991dc88eb7c47dc9e63a7e1c3c88d2f": {
+    "source": "It is not designed for fully automated trading, signal outsourcing, or short-term scalping.",
+    "text": "완전히 자동화된 무역, 신호 아웃소싱, 또는 단기적인 확장을 위해 디자인되지 않습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "5c192bfe954220c39dc815cf1db41019dba329f46aa6ddcac251b739acccb970": {
+    "source": "First time here? Read the FAQ for plan, cost, safety, and scope answers.",
+    "text": "처음이신가요? 계획, 비용, 안전 및 범위 답변에 대한 FAQ를 읽으십시오.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "67110d6ddda304a7d262c2ca2f986ede289fcf5426ce5ad56f749606a316b065": {
+    "source": "Several skills require API keys for data access:",
+    "text": "몇몇 기술은 자료 접근을 위한 API 열쇠를 요구합니다:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "470c187aaa8e888eeebaefa8e8723b54b0c1bda7252a24d17f613c4da9d2461f": {
+    "source": "Select a preview to open the full-size SVG; on a phone, zoom after opening.",
+    "text": "전체 크기의 SVG를 열 수있는 미리보기를 선택하십시오. 전화, 개방 후 급상승.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "7835edc7a0f20a4017f1b2111bf2bb375149f6b4bd8c0fb654e31e57a772a4ed": {
+    "source": "Several skills require API keys for data access: Alpaca Trading API: - Free paper trading account available - Sign up: https://alpaca.markets/ - Requires Alpaca MCP Server configuration - Set environment variables:",
+    "text": "몇몇 기술은 자료 접근을 위한 API 열쇠를 요구합니다: Alpaca 무역 API: - 유효한 자유로운 서류상 무역 계정 - 위로 서명하십시오: https://alpaca.markets/ - Alpaca MCP를 요구하는 Server Configuration - 환경 변수 설정:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "dbc646ad78127eeee31124a07b790b740470d91dbd45ac9284a7edf5edd04560": {
+    "source": "Time-constrained individual investors - Long-term investors who also want disciplined swing-trading upside - Dividend and ETF investors who want structured portfolio review - Traders who want to manage risk before finding trade candidates - Investors who want to journal and improve their decision process",
+    "text": "Time-constrained 개별 투자자 - 훈련 된 스윙 등급을 원하는 장기 투자자 - 구조 된 포트폴리오 검토를 원하는 디비엔드 및 ETF 투자자 - 무역 후보를 찾기 전에 위험을 관리하려는 상인 - 저널을하고 결정을 개선하려는 투자자",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "0c2f292db373effa7230bc18428af0c9a903201d6c96ea4f1503443e3d00164f": {
+    "source": "Alpaca Trading API: - Free paper trading account available - Sign up: https://alpaca.markets/ - Requires Alpaca MCP Server configuration - Set environment variables:",
+    "text": "Alpaca Trading API : - 무료 용지 거래 계정 - 가입 : https://alpaca.markets/ - Alpaca MCP를 요구합니다 Server Configuration - 환경 변수 설정:",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "ed59976bc090a991b2a79521ae4a1a913164f513f2c66391fb25ac2de13df2ab": {
+    "source": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+    "text": "AG-UI: 에이전트-사용자 상호 작용 프로토콜. 프론트엔드에 에이전트를 가져옵니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "590cbc207b911d34bda5db9c8f995ddc61783a3748bdda787f583c08926d7ee5": {
+    "source": "Each building block maps to events in the spec, and each has a live demo in the AG-UI Dojo.",
+    "text": "각 건물 블록 맵은 spec에서 이벤트에, 각각은 AG-UI Dojo에서 라이브 데모를 가지고 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "fd00fe0633fb846e16bc3c4c77d99c01e34eda14e59856bb0eae555e5adacebf": {
+    "source": "Start a new app. The CLI scaffolds a frontend (CopilotKit on Next.js, or a terminal client) wired to the agent framework you pick:",
+    "text": "새로운 앱을 시작하세요. CLI 비계 (CopilotKit on Next.js, 또는 터미널 클라이언트)가 선택한 에이전트 프레임 워크에 유선 :",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "1ad0288785c7833537c513fa67ecffc71a310b39ffc1390dde846312c027e25d": {
+    "source": "1. The agent (Python). Requires Python 3.9+.",
+    "text": "1. 대리인 (Python). 파이썬 3.9+가 필요합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "7fed8cf4a0393dfcaaf2f58602b2b630256e617771a7333eb1b4f8aa2d077f44": {
+    "source": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "text": "Enable Hermès 손목 시계 얼굴에 어떤 Apple Watch 장치",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "3d02db877603d177601cedd9028e28ed1a3d90a638ba6955ad949965f4c6290d": {
+    "source": "Supported on watchOS 27.0 through 27.3 beta 1. > If you’re using an unsupported watchOS version, use Clocky.",
+    "text": "watchOS에 지원 27.0 통해 27.3 베타 1. > 지원되지 않은 watchOS 버전을 사용하는 경우, Clocky를 사용합니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "79cf53e695cf58315db2e6f2fba2eee98116ea723971fbeedfee97e555773db8": {
+    "source": "Developer-mode preparation requires a USB connection. After pairing over USB once, installs and renewals can use Wi-Fi.",
+    "text": "Developer-mode 준비는 USB 연결을 요구합니다. USB를 한 번에 페어링 한 후, 설치 및 갱신은 Wi-Fi를 사용할 수 있습니다.",
+    "method": "Argos Translate en→ko 1.1"
+  },
+  "a5677eea4d5e75ae2c4e52a62ca900a5bbf17a3965caf03f3af57396c608bd63": {
+    "source": "On macOS you can install the prebuilt IPA with Sideloadly or build the app directly with Xcode. Either way, the iPhone must be paired with the target Apple Watch, and the Watch must run a supported watchOS version.",
+    "text": "macOS에서 미리 설치된 IPA를 Sideloadly로 설치하거나 Xcode로 앱을 직접 구축할 수 있습니다. 어느 방법, iPhone은 대상 Apple Watch와 페어링되어야하며, Watch는 지원되는 watchOS 버전을 실행해야합니다.",
+    "method": "Argos Translate en→ko 1.1"
   }
 }
