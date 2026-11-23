@@ -433,6 +433,7 @@
     "papers:https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119": "papers:https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119",
     "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103": "papers:https://news.mit.edu/2026/building-connections-across-research-infrastructure-1103",
     "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018": "papers:https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
+    "papers:https://news.mit.edu/2026/many-languages-one-common-neural-code-1123": "papers:https://news.mit.edu/2026/many-languages-one-common-neural-code-1123",
     "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030",
     "papers:https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110": "papers:https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110",
     "papers:https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112": "papers:https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
@@ -450,6 +451,7 @@
     "products:https://blog.st.com/snapdragon-wear-elite": "products:https://blog.st.com/snapdragon-wear-elite",
     "products:https://blog.st.com/stm32g5": "products:https://blog.st.com/stm32g5",
     "products:https://blog.st.com/stm32g5-security": "products:https://blog.st.com/stm32g5-security",
+    "products:https://blog.st.com/stm32h5": "products:https://blog.st.com/stm32h5",
     "products:https://blog.st.com/stm32h7p": "products:https://blog.st.com/stm32h7p",
     "products:https://blog.st.com/stspin9p": "products:https://blog.st.com/stspin9p",
     "products:https://blog.st.com/touchgfx": "products:https://blog.st.com/touchgfx",
@@ -485,6 +487,7 @@
     "products:https://blogs.nvidia.co.kr/blog/sc26-news": "products:https://blogs.nvidia.co.kr/blog/sc26-news",
     "products:https://blogs.nvidia.co.kr/blog/slurm-quantum-computing-supercomputing": "products:https://blogs.nvidia.co.kr/blog/slurm-quantum-computing-supercomputing",
     "products:https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential": "products:https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential",
+    "products:https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0": "products:https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0",
     "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective": "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective",
     "products:https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter": "products:https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter",
     "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale": "products:https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale",
@@ -495,11 +498,13 @@
     "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos": "products:https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos",
     "products:https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference": "products:https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference",
     "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os": "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os",
+    "products:https://developer.nvidia.com/blog/connecting-energy-use-to-scientific-output-with-science-per-joule": "products:https://developer.nvidia.com/blog/connecting-energy-use-to-scientific-output-with-science-per-joule",
     "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution": "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution",
     "products:https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition": "products:https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition",
     "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas": "products:https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas",
     "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages": "products:https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
     "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory": "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory",
+    "products:https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension": "products:https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension",
     "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations": "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations",
     "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform",
     "products:https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins": "products:https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins",
@@ -10132,6 +10137,28 @@
           "url": "https://arxiv.org/abs/2611.27832",
           "version": "1"
         }
+      ],
+      "2026-11-24": [
+        {
+          "acquired_at": "2026-11-23T22:53:05.141382+00:00",
+          "acquisition_method": "MIT News 공식 연구 소개 RSS",
+          "author": "Rubina Veerakone | McGovern Institute for Brain Research",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-23T21:15:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-23T22:51:48.180106+00:00",
+          "group": "papers",
+          "homepage": "https://news.mit.edu/topic/artificial-intelligence2",
+          "key": "papers:https://news.mit.edu/2026/many-languages-one-common-neural-code-1123",
+          "kind": "대학 연구 소개",
+          "source_name": "MIT News AI 연구 소개",
+          "source_url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+          "summary_ko": "MIT News AI 연구 소개에서 공개한 논문·연구 소개입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Many languages, one common neural code",
+          "update": false,
+          "url": "https://news.mit.edu/2026/many-languages-one-common-neural-code-1123"
+        }
       ]
     },
     "products": {
@@ -11828,6 +11855,84 @@
           "title": "NVIDIA, Slurm 확장으로 양자 컴퓨팅을 슈퍼컴퓨팅 안으로 - NVIDIA Blog Korea",
           "update": false,
           "url": "https://blogs.nvidia.co.kr/blog/slurm-quantum-computing-supercomputing/"
+        }
+      ],
+      "2026-11-24": [
+        {
+          "acquired_at": "2026-11-23T22:52:59.019776+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-23T14:00:01+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-23T22:51:48.180106+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/stm32h5",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 비용·실행 효율·반도체·GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "STM32H5Ex/Fx: The 1st STM32H5 with a Chrom-ART2 accelerator makes UI single-chip designs more impressive and efficient",
+          "update": false,
+          "url": "https://blog.st.com/stm32h5/"
+        },
+        {
+          "acquired_at": "2026-11-23T22:52:57.416214+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Azi Riahi",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-23T19:59:40+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-23T22:51:48.180106+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Accelerating Direct Sparse Solvers for Computational Engineering with NVIDIA cuDSS 1.0",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/"
+        },
+        {
+          "acquired_at": "2026-11-23T22:52:57.416214+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Kibibi Moseley",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-18T21:26:33+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-23T22:51:48.180106+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/connecting-energy-use-to-scientific-output-with-science-per-joule",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에너지·전력 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Connecting Energy Use to Scientific Output with Science per Joule",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/connecting-energy-use-to-scientific-output-with-science-per-joule/"
+        },
+        {
+          "acquired_at": "2026-11-23T22:52:57.416214+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Allison Ding",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-23T17:09:28+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-23T22:51:48.180106+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 GPU·가속기 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/"
         }
       ]
     },
@@ -16154,6 +16259,10 @@
       "group": "products",
       "key": "products:https://blog.st.com/stm32g5-security"
     },
+    "https://blog.st.com/stm32h5": {
+      "group": "products",
+      "key": "products:https://blog.st.com/stm32h5"
+    },
     "https://blog.st.com/stm32h7p": {
       "group": "products",
       "key": "products:https://blog.st.com/stm32h7p"
@@ -16294,6 +16403,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential"
     },
+    "https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0"
+    },
     "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective"
@@ -16334,6 +16447,10 @@
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os"
     },
+    "https://developer.nvidia.com/blog/connecting-energy-use-to-scientific-output-with-science-per-joule": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/connecting-energy-use-to-scientific-output-with-science-per-joule"
+    },
     "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution"
@@ -16353,6 +16470,10 @@
     "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory"
+    },
+    "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension"
     },
     "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations": {
       "group": "products",
@@ -16529,6 +16650,10 @@
     "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027": {
       "group": "learning",
       "key": "learning:https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027"
+    },
+    "https://news.mit.edu/2026/many-languages-one-common-neural-code-1123": {
+      "group": "papers",
+      "key": "papers:https://news.mit.edu/2026/many-languages-one-common-neural-code-1123"
     },
     "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": {
       "group": "papers",
@@ -16952,6 +17077,12 @@
       "ETag": "\"a47402a6175cfac298d421bca4235ddc\"",
       "Last-Modified": "Mon, 23 Nov 2026 08:45:41 GMT"
     },
+    "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
+      "ETag": "W/\"771db5582cfd2400d5d61ac465ee7d822a424fc5b3742940e846f8ad903093df\""
+    },
+    "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
+      "ETag": "W/\"0f1967ca949b4df2e7d11beedcca96d21193e930a88fa74a6f8404df28ed4ff0\""
+    },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
     "https://blog.google/robots.txt": {},
@@ -16968,7 +17099,7 @@
       "Last-Modified": "Mon, 16 Nov 2026 18:20:49 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Thu, 19 Nov 2026 02:28:49 GMT"
+      "Last-Modified": "Mon, 23 Nov 2026 14:00:01 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -16991,12 +17122,15 @@
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/introducing-gemini-4-neon": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "ETag": "\"XeSQQg\""
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"-g3QCw\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"2ad64f241025eece36e332bf4ae546de\"",
-      "Last-Modified": "Thu, 19 Nov 2026 20:28:20 GMT"
+      "ETag": "\"0952dab8281ec3bbb20ae806888decba\"",
+      "Last-Modified": "Mon, 23 Nov 2026 19:59:49 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -17004,10 +17138,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bca-BWsFF0vMbL2QmMhr+qGmZZj4cu8\""
+      "ETag": "W/\"33bca-GUmzuMFNosUP5/ey92Ww09ARj8c\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40188-/7r3qk0YVeF18XLVl/VmujPHL7w\""
+      "ETag": "W/\"40188-4iMCo0ypnAPFTV+c2/j1mkFG+zY\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -17044,7 +17178,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1574": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -17054,12 +17187,12 @@
       "Last-Modified": "Mon, 23 Nov 2026 01:53:52 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1795431203\"",
-      "Last-Modified": "Mon, 23 Nov 2026 10:53:23 GMT"
+      "ETag": "\"1795473492\"",
+      "Last-Modified": "Mon, 23 Nov 2026 22:38:12 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1795431173\"",
-      "Last-Modified": "Mon, 23 Nov 2026 10:52:53 GMT"
+      "ETag": "\"1795474385\"",
+      "Last-Modified": "Mon, 23 Nov 2026 22:53:05 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -17189,7 +17322,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"06d0d450b00c636c6a2ca143b39256a72\""
+      "ETag": "\"089390bdd1fd4dc47a169cc6e6e8347e1\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -17289,8 +17422,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"f8f2578e5829c05df46a2fb5c932792e\"",
-      "Last-Modified": "Mon, 23 Nov 2026 05:05:00 GMT"
+      "ETag": "\"c9b846b7f018797c1c367868161d8cf8\"",
+      "Last-Modified": "Mon, 23 Nov 2026 22:40:26 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
@@ -22991,6 +23124,10 @@
       "list_fingerprint": "fe5fb9bf9eb9ecf32af1d37e3304a841d80f637f1f798761db57aa83a3a301e1",
       "status": "older_material"
     },
+    "mit-ai-research:https://news.mit.edu/2026/many-languages-one-common-neural-code-1123": {
+      "list_fingerprint": "26a53f97cd3c0a7187defa5b778eac25bfdfd0e034f3b4daeb84a4090e70ab5d",
+      "status": "posted"
+    },
     "mit-ai-research:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": {
       "list_fingerprint": "a9828d2191b88b63de30cb0876b729e13654b5bd96d5a9c7aa631d9e3c57d1bc",
       "status": "posted"
@@ -23351,6 +23488,10 @@
       "list_fingerprint": "1c56a0f89ff4e1c97afcb499c7b33c15e57857f5efbbb4c327ac03d90a5d93be",
       "status": "bootstrap_skipped"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0": {
+      "list_fingerprint": "3cb511eb2a31b952ef5d7ebb57d7166fcad002643d81c61c003659824482c4b8",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine": {
       "list_fingerprint": "da7abdbb196b907688fb48f5ba1ae2751d038b486157301a6f56767c4e1662c9",
       "status": "bootstrap_skipped"
@@ -23451,6 +23592,10 @@
       "list_fingerprint": "693e65cea52f49ffab414c7581abf9b0f19fd9c7d005f880ad83a1d1da20a6d1",
       "status": "posted"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/connecting-energy-use-to-scientific-output-with-science-per-joule": {
+      "list_fingerprint": "e95eaccedf7ab0359cd8118dded82eb69fbfd911208aeda6e895a61cb8741770",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/control-how-your-gpu-shares-work-with-green-contexts": {
       "list_fingerprint": "94916dd80bd80105034b45fef883d6d70a21c90bd0a0fecb329bd4463c8eda9f",
       "status": "bootstrap_skipped"
@@ -23542,6 +23687,10 @@
     "nvidia-technical:https://developer.nvidia.com/blog/frontier-reasoning-reaches-the-edge-how-to-deploy-and-optimize-models-on-nvidia-jetson": {
       "list_fingerprint": "73ac5d03d3843e4a99febe4ad5dccba7f875ff0109ceabdc881ce71c4c048272",
       "status": "older_material"
+    },
+    "nvidia-technical:https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension": {
+      "list_fingerprint": "1216bf203409b4d72c45b1c938e6a4ad83418f5636ae3dcabb9afd9f26f3b02e",
+      "status": "posted"
     },
     "nvidia-technical:https://developer.nvidia.com/blog/giga-scale-ai-ethernet-evolution-spectrum-x-ethernet-rewrites-rules": {
       "list_fingerprint": "681d88fe8cf5389cd533cde7fa835858c0d878363e6e8854908657ce35727009",
@@ -26409,6 +26558,12 @@
       "language": "en",
       "url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018"
     },
+    "papers:https://news.mit.edu/2026/many-languages-one-common-neural-code-1123": {
+      "fingerprint": "26a53f97cd3c0a7187defa5b778eac25bfdfd0e034f3b4daeb84a4090e70ab5d",
+      "first_seen": "2026-11-23T22:51:48.180106+00:00",
+      "language": "en",
+      "url": "https://news.mit.edu/2026/many-languages-one-common-neural-code-1123"
+    },
     "papers:https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": {
       "fingerprint": "a9828d2191b88b63de30cb0876b729e13654b5bd96d5a9c7aa631d9e3c57d1bc",
       "first_seen": "2026-10-30T20:59:11.051787+00:00",
@@ -26510,6 +26665,12 @@
       "first_seen": "2026-11-03T18:00:05.892422+00:00",
       "language": "en",
       "url": "https://blog.st.com/stm32g5-security/"
+    },
+    "products:https://blog.st.com/stm32h5": {
+      "fingerprint": "e933a3e1bca61070a779cdde56a1d1c86648edab34ac6de3d709afb9ee71e79c",
+      "first_seen": "2026-11-23T22:51:48.180106+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/stm32h5/"
     },
     "products:https://blog.st.com/stm32h7p": {
       "fingerprint": "161915151253e1a5bdccb5a08e3611a355e73338f41d275748f339b827755c19",
@@ -26721,6 +26882,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential/"
     },
+    "products:https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0": {
+      "fingerprint": "3cb511eb2a31b952ef5d7ebb57d7166fcad002643d81c61c003659824482c4b8",
+      "first_seen": "2026-11-23T22:51:48.180106+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/"
+    },
     "products:https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective": {
       "fingerprint": "6cf3454c387472ab1e052a9c097fa795d038708d98c5d8a790873afdb8b59b5b",
       "first_seen": "2026-11-06T18:18:00.865857+00:00",
@@ -26781,6 +26948,12 @@
       "language": "en",
       "url": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/"
     },
+    "products:https://developer.nvidia.com/blog/connecting-energy-use-to-scientific-output-with-science-per-joule": {
+      "fingerprint": "e95eaccedf7ab0359cd8118dded82eb69fbfd911208aeda6e895a61cb8741770",
+      "first_seen": "2026-11-23T22:51:48.180106+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/connecting-energy-use-to-scientific-output-with-science-per-joule/"
+    },
     "products:https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution": {
       "fingerprint": "500fdd31753a2bd0973ccfae7f53ddfbefaae1b610e926c97a154708eef82de6",
       "first_seen": "2026-11-03T01:44:27.211737+00:00",
@@ -26810,6 +26983,12 @@
       "first_seen": "2026-11-05T22:12:21.673795+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
+    },
+    "products:https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension": {
+      "fingerprint": "1216bf203409b4d72c45b1c938e6a4ad83418f5636ae3dcabb9afd9f26f3b02e",
+      "first_seen": "2026-11-23T22:51:48.180106+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/"
     },
     "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations": {
       "fingerprint": "80b5f13f329bf66896f64a2f3154821a34267ffc90da707e060e253a6c559933",
@@ -27381,6 +27560,10 @@
     },
     "st-technical:https://blog.st.com/stm32g5-security": {
       "list_fingerprint": "5ff186f14475f0c7dd4d2e88a0c533d65eaf2405927db9283899ff4bc10297ba",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/stm32h5": {
+      "list_fingerprint": "e933a3e1bca61070a779cdde56a1d1c86648edab34ac6de3d709afb9ee71e79c",
       "status": "posted"
     },
     "st-technical:https://blog.st.com/stm32h7p": {
