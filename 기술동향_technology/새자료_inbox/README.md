@@ -1,22 +1,22 @@
 # 기술 동향 새 자료
 
-반영: 2026-11-13 11:05 KST
+반영: 2026-11-24 16:04 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## AI 브리프 · 2026년 11월호
+## SW중심사회 · 2026년 11월호
 
-> 목차: 정책·법제 ▹ 중국 정부, 대형 모델과 에이전트를 포함한 AI 기술 수출 통제 추진 ▹ 미국 국토안보부, 연방 민간 행정기관에…
+> 목차: 데이터 기반 가상융합\(XR\) 기술 콘텐츠 글로벌 동향 분석 중간-이호준 신뢰성 있는 사회 인프라의 AX를 위한 뉴로심볼릭 에이전틱 AI 컴퓨팅 산업…
 
-출처: [SPRi AI 브리프](<https://www.spri.kr/>) · [원문](<https://www.spri.kr/posts/view/24039?code=AI-Brief>) · 공식 페이지 표기일: 2026-11-13
+출처: [SPRi SW중심사회](<https://www.spri.kr/>) · [원문](<https://www.spri.kr/posts/view/24042?code=magazine>) · 공식 페이지 표기일: 2026-11-24
 
-[발행 기관의 PDF](<https://www.spri.kr/download/23920>)
+[발행 기관의 PDF](<https://www.spri.kr/download/23922>)
 
-가져온 시각: 2026-11-13 11:04:32 KST
+가져온 시각: 2026-11-24 16:04:21 KST
 
-수집 경로: [공식 목록·피드](<https://www.spri.kr/posts?code=AI-Brief>) · 방법: 공식 간행물 목록·상세 목차
+수집 경로: [공식 목록·피드](<https://www.spri.kr/posts?code=magazine>) · 방법: 공식 간행물 목록·상세 목차
 
 개요: 공식 한국어 소개 발췌
 
