@@ -1,10 +1,24 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-24 07:53 KST
+반영: 2026-11-24 16:04 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## VL53LB: our new flagship single-zone time-of-flight sensor has a range and size that are already disrupting bills of materials
+
+STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.
+
+출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/vl53lb/>) · RSS·Atom 발행 시각: 2026-11-24 16:00 KST
+
+RSS·Atom 표기 작성자: David Civera
+
+가져온 시각: 2026-11-24 16:04:37 KST
+
+수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
+
+개요: 제목·공개 정보에 따른 한국어 안내
 
 ## Accelerating Direct Sparse Solvers for Computational Engineering with NVIDIA cuDSS 1.0
 
