@@ -456,6 +456,7 @@
     "products:https://blog.st.com/stspin9p": "products:https://blog.st.com/stspin9p",
     "products:https://blog.st.com/touchgfx": "products:https://blog.st.com/touchgfx",
     "products:https://blog.st.com/vb1943": "products:https://blog.st.com/vb1943",
+    "products:https://blog.st.com/vl53lb": "products:https://blog.st.com/vl53lb",
     "products:https://blog.st.com/zephyr": "products:https://blog.st.com/zephyr",
     "products:https://blogs.nvidia.co.kr/blog/20-years-cuda": "products:https://blogs.nvidia.co.kr/blog/20-years-cuda",
     "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-live": "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-live",
@@ -581,6 +582,7 @@
     "technology:https://www.spri.kr/posts/view/24031?code=AI-Brief": "technology:https://www.spri.kr/posts/view/24031?code=AI-Brief",
     "technology:https://www.spri.kr/posts/view/24032?code=magazine": "technology:https://www.spri.kr/posts/view/24032?code=magazine",
     "technology:https://www.spri.kr/posts/view/24039?code=AI-Brief": "technology:https://www.spri.kr/posts/view/24039?code=AI-Brief",
+    "technology:https://www.spri.kr/posts/view/24042?code=magazine": "technology:https://www.spri.kr/posts/view/24042?code=magazine",
     "tools:https://blog.python.org/2026/10/python-3150-final-is-here": "tools:https://blog.python.org/2026/10/python-3150-final-is-here",
     "tools:https://blog.python.org/2026/10/python-3151-3149-31317": "tools:https://blog.python.org/2026/10/python-3151-3149-31317",
     "tools:https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118": "tools:https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118",
@@ -11878,6 +11880,25 @@
           "url": "https://blog.st.com/stm32h5/"
         },
         {
+          "acquired_at": "2026-11-24T07:04:37.157553+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-24T07:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-24T07:03:11.695925+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/vl53lb",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "VL53LB: our new flagship single-zone time-of-flight sensor has a range and size that are already disrupting bills of materials",
+          "update": false,
+          "url": "https://blog.st.com/vl53lb/"
+        },
+        {
           "acquired_at": "2026-11-23T22:52:57.416214+00:00",
           "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
           "author": "Azi Riahi",
@@ -12193,6 +12214,26 @@
           "title": "AI 브리프 · 2026년 11월호",
           "update": false,
           "url": "https://www.spri.kr/posts/view/24039?code=AI-Brief"
+        }
+      ],
+      "2026-11-24": [
+        {
+          "acquired_at": "2026-11-24T07:04:21.425437+00:00",
+          "acquisition_method": "공식 간행물 목록·상세 목차",
+          "date": "2026-11-24",
+          "date_label": "",
+          "first_seen": "2026-11-24T07:03:11.695925+00:00",
+          "group": "technology",
+          "homepage": "https://www.spri.kr/",
+          "key": "technology:https://www.spri.kr/posts/view/24042?code=magazine",
+          "pdf_url": "https://www.spri.kr/download/23922",
+          "source_name": "SPRi SW중심사회",
+          "source_url": "https://www.spri.kr/posts?code=magazine",
+          "summary_ko": "목차: 데이터 기반 가상융합(XR) 기술 콘텐츠 글로벌 동향 분석 중간-이호준 신뢰성 있는 사회 인프라의 AX를 위한 뉴로심볼릭 에이전틱 AI 컴퓨팅 산업…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "SW중심사회 · 2026년 11월호",
+          "update": false,
+          "url": "https://www.spri.kr/posts/view/24042?code=magazine"
         }
       ]
     },
@@ -14692,6 +14733,12 @@
       "description": "목차: 정책·법제 ▹ 중국 정부, 대형 모델과 에이전트를 포함한 AI 기술 수출 통제 추진 ▹ 미국 국토안보부, 연방 민간 행정기관에 딥시크 사용 금지 명령 ▹ EU 집행위원회, 「AI 법」 첫 조화표준 발표 ▹ EU 「AI 법」 준수를 위해 생성형 AI 시스템 제공자들 텍스트 워터마크 도입 ▹ 중국 국무원 판공청, 고용 친화 AI 전환 지원 정책 발표 기업·산업 ▹ AI 에이전트 확산에 대응하는 거버넌스 필요성 증대 ▹ PHP 취약점 발견과 대응에 AI 모델 활용 ▹ AI로 어도비 앱을 역설계했다는 무료 대체 앱 등장 ▹ 중국 AI 콘텐츠 업계 추정치에서 촉발된 AI 토큰 사용처 논쟁 ▹ 중국, 데이터 자원 개발과 이용을 위한 중앙 국유기업 출범 기술·연구 ▹ 오픈AI, AI 작성 수학 논문 700여 편 동시 공개 ▹ AI가 생성한 아이디어를 판별하는 탐지기 개발 ▹ 데이터센터 확충이 대기질 개선 성과를 상쇄할 가능성 제기 ▹ AI가 지능뿐만 아니라 의식을 지닐 가능성에 대한 회의론 ▹ 학술 논문 사전 공개 저장소 arXiv, AI 도구 확산 이후 논문 제출 급증 부담에 상한 도입 인력·교육 ▹ 근로자의 AI 챗봇 사용이 직장 내 업무 재편과 직업 이동으로",
       "pdf_url": "https://www.spri.kr/download/23920",
       "title": "AI 브리프 · 2026년 11월호"
+    },
+    "https://www.spri.kr/posts/view/24042?code=magazine": {
+      "date": "2026-11-24",
+      "description": "목차: 데이터 기반 가상융합(XR) 기술 콘텐츠 글로벌 동향 분석 중간-이호준 신뢰성 있는 사회 인프라의 AX를 위한 뉴로심볼릭 에이전틱 AI 컴퓨팅 산업 AI 시대의 핵심 자산, 제조 데이터: 독일의 제조 데이터 생태계 구축 전략",
+      "pdf_url": "https://www.spri.kr/download/23922",
+      "title": "SW중심사회 · 2026년 11월호"
     }
   },
   "originals": {
@@ -16279,6 +16326,10 @@
       "group": "products",
       "key": "products:https://blog.st.com/vb1943"
     },
+    "https://blog.st.com/vl53lb": {
+      "group": "products",
+      "key": "products:https://blog.st.com/vl53lb"
+    },
     "https://blog.st.com/zephyr": {
       "group": "products",
       "key": "products:https://blog.st.com/zephyr"
@@ -17066,6 +17117,10 @@
     "https://www.spri.kr/posts/view/24039?code=AI-Brief": {
       "group": "technology",
       "key": "technology:https://www.spri.kr/posts/view/24039?code=AI-Brief"
+    },
+    "https://www.spri.kr/posts/view/24042?code=magazine": {
+      "group": "technology",
+      "key": "technology:https://www.spri.kr/posts/view/24042?code=magazine"
     }
   },
   "requests": {
@@ -17076,12 +17131,6 @@
     "https://api-docs.deepseek.com/updates": {
       "ETag": "\"a47402a6175cfac298d421bca4235ddc\"",
       "Last-Modified": "Mon, 23 Nov 2026 08:45:41 GMT"
-    },
-    "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"771db5582cfd2400d5d61ac465ee7d822a424fc5b3742940e846f8ad903093df\""
-    },
-    "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"0f1967ca949b4df2e7d11beedcca96d21193e930a88fa74a6f8404df28ed4ff0\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -17099,7 +17148,7 @@
       "Last-Modified": "Mon, 16 Nov 2026 18:20:49 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Mon, 23 Nov 2026 14:00:01 GMT"
+      "Last-Modified": "Tue, 24 Nov 2026 07:00:00 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -17123,10 +17172,10 @@
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/introducing-gemini-4-neon": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"XeSQQg\""
+      "ETag": "\"kYOkvA\""
     },
     "https://deepmind.google/robots.txt": {
-      "ETag": "\"-g3QCw\""
+      "ETag": "\"kYOkvA\""
     },
     "https://developer.nvidia.com/blog/feed": {
       "ETag": "\"0952dab8281ec3bbb20ae806888decba\"",
@@ -17138,10 +17187,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bca-GUmzuMFNosUP5/ey92Ww09ARj8c\""
+      "ETag": "W/\"33bca-GUnO/8jp27es98n46WtnGrhi2ZM\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40188-4iMCo0ypnAPFTV+c2/j1mkFG+zY\""
+      "ETag": "W/\"40188-4dnaFuElks7/uf/I3nCwEDFDuiM\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -17183,16 +17232,16 @@
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
     },
     "https://news.mit.edu/robots.txt": {
-      "ETag": "W/\"1795398832\"",
-      "Last-Modified": "Mon, 23 Nov 2026 01:53:52 GMT"
+      "ETag": "W/\"1795503258\"",
+      "Last-Modified": "Tue, 24 Nov 2026 06:54:18 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1795473492\"",
-      "Last-Modified": "Mon, 23 Nov 2026 22:38:12 GMT"
+      "ETag": "\"1795503137\"",
+      "Last-Modified": "Tue, 24 Nov 2026 06:52:17 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1795474385\"",
-      "Last-Modified": "Mon, 23 Nov 2026 22:53:05 GMT"
+      "ETag": "\"1795503887\"",
+      "Last-Modified": "Tue, 24 Nov 2026 07:04:47 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -17200,13 +17249,13 @@
       "Last-Modified": "Wed, 28 Oct 2026 20:20:49 GMT"
     },
     "https://rss.arxiv.org/rss/cs.AI": {
-      "ETag": "8d8b3b66a58d2ae623e202d6871e8c8cfa12b814c663cc417abbfedcefc9b376"
+      "ETag": "30aa23a8d387a2295df3c290292171a77be36bc2613e031eec3a299ac7b2bb3d"
     },
     "https://rss.arxiv.org/rss/cs.AR": {
-      "ETag": "5e15e1533e928722b08cf320c5cba22dd2cd6f3a8e53c55bee1bb3e7b8e447d9"
+      "ETag": "f2ef68a578bd37b5fc5c2ef1c55e3502a5b0e32bf3783e7c83a0f364a373e796"
     },
     "https://rss.arxiv.org/rss/eess.SP": {
-      "ETag": "7610e8574e2e4474ae9fdee7f345dbaf5b6221c857faaaa1e30fec573b4ebf82"
+      "ETag": "3ec4345d2e53df60f82ac5de7df9d3d406fb05e5dddfd86db6cdc1a99bdf9e1c"
     },
     "https://www.anthropic.com/claude-fable-and-mythos-5-2": {},
     "https://www.anthropic.com/claude-haiku-5-5": {},
@@ -17311,8 +17360,8 @@
     },
     "https://www.kimi.com/en/blog": {},
     "https://www.kimi.com/robots.txt": {
-      "ETag": "W/\"18f-1a1f3c30919\"",
-      "Last-Modified": "Thu, 19 Nov 2026 12:23:27 GMT"
+      "ETag": "W/\"18f-1a208afb42c\"",
+      "Last-Modified": "Mon, 23 Nov 2026 13:54:22 GMT"
     },
     "https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94905&mid=a10306040000": {},
     "https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=94918&mid=a10306040000": {},
@@ -17322,7 +17371,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"089390bdd1fd4dc47a169cc6e6e8347e1\""
+      "ETag": "\"00be3c626a23edeaee67af1a256c43a40\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -17422,8 +17471,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"c9b846b7f018797c1c367868161d8cf8\"",
-      "Last-Modified": "Mon, 23 Nov 2026 22:40:26 GMT"
+      "ETag": "\"a608b27dec36bc805a7e591b10bb82f9\"",
+      "Last-Modified": "Tue, 24 Nov 2026 05:40:44 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
@@ -17439,6 +17488,7 @@
     "https://www.spri.kr/posts/view/24031?code=AI-Brief": {},
     "https://www.spri.kr/posts/view/24032?code=magazine": {},
     "https://www.spri.kr/posts/view/24039?code=AI-Brief": {},
+    "https://www.spri.kr/posts/view/24042?code=magazine": {},
     "https://www.spri.kr/posts?code=AI-Brief": {},
     "https://www.spri.kr/posts?code=magazine": {},
     "https://www.spri.kr/robots.txt": {
@@ -17448,7 +17498,7 @@
   },
   "robots": {
     "https://api-docs.deepseek.com/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: *\nAllow: /\n\nSitemap: https://api-docs.deepseek.com/sitemap.xml\nSitemap: https://api-docs.deepseek.com/zh-cn/sitemap.xml\n"
     },
     "https://api.github.com/robots.txt": {
@@ -17456,39 +17506,39 @@
       "rules": ""
     },
     "https://blog.google/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "\n\n\n\nUser-agent: *\nDisallow: /search/?\nDisallow: /intl/*/search/?\nDisallow: /search?\nDisallow: /intl/*/search?\n\nSitemap: https://blog.google/sitemap.xml\n\n"
     },
     "https://blog.python.org/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": ""
     },
     "https://blog.st.com/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://blog.st.com/sitemap_index.xml\n"
     },
     "https://blogs.nvidia.co.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "#\n# Welcome to the NVIDIA Blog\n#\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@%#@#////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@//////////@@@@@@@@@@@@///////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@//////@@@@@@@@/////////@@@@@@@///////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@//////@@@@@@//////@@@@@@@//////@@@@@@////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@//////@@@@@//////@@@@///@@@@@@@/////&@@@@@//////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@//////@@@@////@@@@@@@/////@@@@/////@@@@@@///////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@/////@@@@/////@@@@@////////////@@@@@///////@//////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@//////@@@@/////@@@/////////@@@@@///////@@@@@@@@//////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@//////@@@@@/////@@@@@@@@@@////////@@@@@@@@@@@//////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@//////@@@@@@@/////////////@@@@@@@@@@@///////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@/////////%/////@@@@@@@@@@@@@/////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@&///@@@@@@@@///////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n#\n# We dig it when people read our code! Check out the jobs while you're here.\n# https://www.nvidia.com/en-us/about-nvidia/careers/\n#\n# Or check out our YouTube channel for our latest\n# https://www.youtube.com/user/nvidia\n#\n# Last updated 20 October 2026 by MK\n\n# AI / LLM crawlers & fetchers\n\nUser-Agent: *\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\nAllow: /\n\n# Global RSS Feeds \nSitemap: https://blogs.nvidia.com/feed/\nSitemap: https://developer.nvidia.com/blog/feed/\nSitemap: https://nvidianews.nvidia.com/releases.xml\nSitemap: https://blogs.nvidia.de/feed/\nSitemap: https://blogs.nvidia.fr/feed/\nSitemap: https://blogs.nvidia.cn/feed/\nSitemap: https://developer.nvidia.com/zh-cn/blog/feed/\nSitemap: https://blogs.nvidia.co.jp/feed/\nSitemap: https://developer.nvidia.com/ja-jp/blog/feed/\nSitemap: https://blogs.nvidia.co.kr/feed/\nSitemap: https://blogs.nvidia.com.tw/feed/\nSitemap: https://blog.nvidia.com.br/feed/\nSitemap: https://la.blogs.nvidia.com/feed/\nSitemap: https://nvidianews.nvidia.com/rss\nSitemap: https://blogs.nvidia.cn/blog/category/news/feed/\nSitemap: https://developer.nvidia.cn/zh-cn/blog/feed\n\n# Global Blog Sitemaps\nSitemap: https://blogs.nvidia.com/sitemap_index.xml\nSitemap: https://blogs.nvidia.co.jp/sitemap_index.xml\nSitemap: https://blog.nvidia.com.br/sitemap_index.xml\nSitemap: https://blogs.nvidia.co.kr/sitemap_index.xml\nSitemap: https://blogs.nvidia.com.tw/sitemap_index.xml\nSitemap: https://blogs.nvidia.cn/sitemap_index.xml\nSitemap: https://blogs.nvidia.fr/sitemap_index.xml\nSitemap: https://la.blogs.nvidia.com/sitemap_index.xml\nSitemap: https://blogs.nvidia.de/sitemap_index.xml\nLLMs.txt: https://blogs.nvidia.com/llms.txt\n\nUser-agent: Googlebot\nUser-agent: Googlebot Smartphone\nUser-agent: Google AdsBot\nUser-agent: Bingbot\nDisallow: /*.md$\nDisallow: /*.llms.txt\n\nUser-agent: *\nDisallow: /email-verify/*\nDisallow: /forms/*\nDisallow: /*.swf$\n\n# Parameters\nDisallow: /*[?&]AccessToken=*\nDisallow: /*[?&]_bhlid=*\nDisallow: /*[?&]campaign_id=*\nDisallow: /*[?&]cid=*\nDisallow: /*[?&]dysig_tid=*\nDisallow: /*[?&]eid=*\nDisallow: /*[?&]emc=*\nDisallow: /*[?&]es_id=*\nDisallow: /*[?&]excludes=*\nDisallow: /*[?&]gad_source=*\nDisallow: /*[?&]gl=*\nDisallow: /*[?&]hstc=*\nDisallow: /*[?&]instance_id=*\nDisallow: /*[?&]jso=*\nDisallow: /*[?&]lang=*\nDisallow: /*[?&]link=*\nDisallow: /*[?&]linkId=*\nDisallow: /*[?&]lx=*\nDisallow: /*[?&]mod=*\nDisallow: /*[?&]ncid=*\nDisallow: /*[?&]nl=*\nDisallow: /*[?&]nvid=*\nDisallow: /*[?&]nv_excludes=*\nDisallow: /*[?&]nv_next_ids=*\nDisallow: /*[?&]page=*\nDisallow: /*[?&]preview_id=*\nDisallow: /*[?&]q=*\nDisallow: /*[?&]reader=*\nDisallow: /*[?&]ref=*\nDisallow: /*[?&]regcode=*\nDisallow: /*[?&]regi_id=*\nDisallow: /*[?&]section=*\nDisallow: /*[?&]segment_id=*\nDisallow: /*[?&]srsltid=*\nDisallow: /*[?&]target=*\nDisallow: /*[?&]topicpage=*\nDisallow: /*[?&]user_id=*\nDisallow: /*[?&]utm*\n\n# AI / LLM crawlers & fetchers\n\nUser-Agent: *\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\nAllow: /\n\nUser-agent: ai2bot\nUser-agent: anthropic-ai\nUser-agent: Amazonbot\nUser-agent: Amazon-kendra\nUser-agent: Applebot-extended\nUser-agent: AutoGPT\nUser-agent: BedrockBot\nUser-agent: Bytespider\nUser-agent: CCBot\nUser-agent: Chatglm-spider\nUser-agent: ChatGPT\nUser-agent: ChatGPT-User\nUser-agent: Claudebot\nUser-agent: Claude-user\nUser-agent: Claude-search\nUser-agent: Claude-web\nUser-agent: Cohere-ai\nUser-agent: Cotoyogi\nUser-agent: Deepseek\nUser-agent: Deepseek Chat\nUser-agent: Deepseekbot\nUser-agent: DuckAssistBot\nUser-agent: DuckDuckBot\nUser-agent: FacebookBot\nUser-agent: Geminiios\nUser-agent: Google-Extended\nUser-agent: Googleagent-manier\nUser-agent: GPTBot\nUser-agent: Grok\nUser-agent: ia-archiver\nUser-agent: iaskbot\nUser-agent: iaskspider\nUser-agent: ICC-crawler\nUser-agent: Linerbot\nUser-agent: Metaaib\nUser-agent: Meta-externalagent\nUser-agent: Meta-externalfetcher\nUser-agent: Meta-llama\nUser-agent: Mistralai-user\nUser-agent: NovaAct\nUser-agent: OAI-Searchbot\nUser-agent: Pangubot\nUser-agent: Perplexity\nUser-agent: PerplexityBot\nUser-agent: Perplexity-user\nUser-agent: Phindbot\nUser-agent: PoeBot\nUser-agent: Qwen\nUser-agent: Sogou\nUser-agent: Timpibot\nUser-agent: Tongyi\nUser-agent: Wenxiaobai\nUser-agent: Xinghuo\nUser-agent: Youbot\nUser-agent: Yuanbaobot\nAllow: /*.md$\nAllow: /*.llms.txt\n"
     },
     "https://deepmind.google/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: *\nAllow: /\n\nSitemap: https://deepmind.google/sitemap.xml\n"
     },
     "https://developer.nvidia.com/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "#\n# Welcome to NVIDIA Developer Zone\n#\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@%#@#////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@//////////@@@@@@@@@@@@///////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@//////@@@@@@@@/////////@@@@@@@///////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@//////@@@@@@//////@@@@@@@//////@@@@@@////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@//////@@@@@//////@@@@///@@@@@@@/////&@@@@@//////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@//////@@@@////@@@@@@@/////@@@@/////@@@@@@///////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@/////@@@@/////@@@@@////////////@@@@@///////@//////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@//////@@@@/////@@@/////////@@@@@///////@@@@@@@@//////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@//////@@@@@/////@@@@@@@@@@////////@@@@@@@@@@@//////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@//////@@@@@@@/////////////@@@@@@@@@@@///////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@/////////%/////@@@@@@@@@@@@@/////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@&///@@@@@@@@///////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@///////////////////////////////////@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n#\n# We dig it when people read our code! Check out the jobs while you're here.\n# https://www.nvidia.com/en-us/about-nvidia/careers/\n#\n# Check out our YouTube channel for our latest\n# https://www.youtube.com/user/nvidia\n#\n# Last updated 4 Jun 2026 by AW\n\nUser-agent: *\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\nAllow: /\nAllow: /llms.txt$\nAllow: /*/llms.txt$\nAllow: /*.md$\nSitemap: https://developer.nvidia.com/sitemap_index.xml\nSitemap: https://www.nvidia.com/sitemap_index.xml\nSitemap: https://build.nvidia.com/sitemap.xml\nSitemap: https://docs.nvidia.com/bsp-sitemap.xml\nSitemap: https://docs.nvidia.com/nvidia_sitemap_index.xml\nSitemap: https://docs.nvidia.com/s3-sitemap-index.xml\n\nUser-agent: Googlebot\nUser-agent: Googlebot Smartphone\nUser-agent: Google AdsBot\nUser-agent: Bingbot\nDisallow: /*.md$\nDisallow: /*.llms.txt$\n\n# GSC Parameters\nUser-agent: *\nDisallow: /*[?&]AMJnQtSpH=*\nDisallow: /*[?&]__prclt=*\nDisallow: /*[?&]_bg=*\nDisallow: /*[?&]_bt=*\nDisallow: /*[?&]_hsenc=*\nDisallow: /*[?&]_hsmi=*\nDisallow: /*[?&]_lrsc=*\nDisallow: /*[?&]adbid=*\nDisallow: /*[?&]adbpl=*\nDisallow: /*[?&]adbpr=*\nDisallow: /*[?&]adbsc=*\nDisallow: /*[?&]amp;utm_medium=*\nDisallow: /*[?&]amp;utm_source=*\nDisallow: /*[?&]by8Vk=*\nDisallow: /*[?&]cat=*\nDisallow: /*[?&]cm_cat=*\nDisallow: /*[?&]cm_ite=*\nDisallow: /*[?&]cm_pla=*\nDisallow: /*[?&]cm_ven=*\nDisallow: /*[?&]dysig_tid=*\nDisallow: /*[?&]es_id=*\nDisallow: /*[?&]fbclid=*\nDisallow: /*[?&]filter_by=*\nDisallow: /*[?&]gad_source=*\nDisallow: /*[?&]gclid=*\nDisallow: /*[?&]gh_src=*\nDisallow: /*[?&]hsCtaTracking=*\nDisallow: /*[?&]infl_anl=*\nDisallow: /*[?&]linkId=*\nDisallow: /*[?&]mkt_tok=*\nDisallow: /*[?&]ncid=*\nDisallow: /*[?&]network=*\nDisallow: /*[?&]nvid=*\nDisallow: /*[?&]org=*\nDisallow: /*[?&]p=*\nDisallow: /*[?&]reader=*\nDisallow: /*[?&]ref=*\nDisallow: /*[?&]rel=*\nDisallow: /*[?&]sfdcid=*\nDisallow: /*[?&]source=*\nDisallow: /*[?&]spm=*\nDisallow: /*[?&]szn-session=*\nDisallow: /*[?&]trk=*\nDisallow: /*[?&]userID=*\nDisallow: /*[?&]utm*\n\n# CSS, JS, Images\nAllow: /misc/*.css$\nAllow: /misc/*.css?\nAllow: /misc/*.js$\nAllow: /misc/*.js?\nAllow: /misc/*.gif\nAllow: /misc/*.jpg\nAllow: /misc/*.jpeg\nAllow: /misc/*.png\nAllow: /modules/*.css$\nAllow: /modules/*.css?\nAllow: /modules/*.js$\nAllow: /modules/*.js?\nAllow: /modules/*.gif\nAllow: /modules/*.jpg\nAllow: /modules/*.jpeg\nAllow: /modules/*.png\nAllow: /profiles/*.css$\nAllow: /profiles/*.css?\nAllow: /profiles/*.js$\nAllow: /profiles/*.js?\nAllow: /profiles/*.gif\nAllow: /profiles/*.jpg\nAllow: /profiles/*.jpeg\nAllow: /profiles/*.png\nAllow: /themes/*.css$\nAllow: /themes/*.css?\nAllow: /themes/*.js$\nAllow: /themes/*.js?\nAllow: /themes/*.gif\nAllow: /themes/*.jpg\nAllow: /themes/*.jpeg\nAllow: /themes/*.png\n\n# Directories\nDisallow: /includes/\nDisallow: /profiles/\nDisallow: /scripts/\n\n# Files\nDisallow: /CHANGELOG.txt\nDisallow: /cron.php\nDisallow: /INSTALL.mysql.txt\nDisallow: /INSTALL.pgsql.txt\nDisallow: /INSTALL.sqlite.txt\nDisallow: /install.php\nDisallow: /INSTALL.txt\nDisallow: /LICENSE.txt\nDisallow: /MAINTAINERS.txt\nDisallow: /update.php\nDisallow: /UPGRADE.txt\nDisallow: /xmlrpc.php\n\n# Paths (clean URLs)\nDisallow: /pt-br/\nDisallow: /es-la/\nDisallow: /admin/\nDisallow: /comment/reply/\nDisallow: /filter/tips/\nDisallow: /node/add/\nDisallow: /search/\nDisallow: /user/\n\n# Paths (no clean URLs)\nDisallow: /?q=admin/\nDisallow: /?q=comment/reply/\nDisallow: /?q=filter/tips/\nDisallow: /?q=node/add/\nDisallow: /?q=search/\nDisallow: /?q=user/*\n\n# DevZone\nDisallow: /buy-jetson?*\nDisallow: /taxonomy/term/\nDisallow: /*.woff$\nDisallow: /*.woff2$\n\n"
     },
     "https://futures.kaist.ac.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "# As a condition of accessing this website, you agree to abide by the following\n# content signals:\n\n# (a)  If a Content-Signal = yes, you may collect content for the corresponding\n#      use.\n# (b)  If a Content-Signal = no, you may not collect content for the\n#      corresponding use.\n# (c)  If the website operator does not include a Content-Signal for a\n#      corresponding use, the website operator neither grants nor restricts\n#      permission via Content-Signal with respect to the corresponding use.\n\n# The content signals and their meanings are:\n\n# search:   building a search index and providing search results (e.g., returning\n#           hyperlinks and short excerpts from your website's contents). Search does not\n#           include providing AI-generated search summaries.\n# ai-input: inputting content into one or more AI models (e.g., retrieval\n#           augmented generation, grounding, or other real-time taking of content for\n#           generative AI search answers).\n# ai-train: training or fine-tuning AI models.\n# use:      how AI systems may consume the content (immediate, reference, or full).\n\n# ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF\n# RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT\n# AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.\n\n# BEGIN Cloudflare Managed content\n\n\nUser-agent: *\nContent-Signal: search=yes,ai-train=no,use=reference\nAllow: /\n\n# Training crawlers\nUser-agent: Amazonbot\nDisallow: /\n\nUser-agent: Applebot-Extended\nDisallow: /\n\nUser-agent: Bytespider\nDisallow: /\n\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: ClaudeBot\nDisallow: /\n\nUser-agent: Diffbot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: omgili\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: Claude-Web\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\nUser-agent: MistralAI-Training\nDisallow: /\n\nUser-agent: meta-externalagent\nDisallow: /\n\nUser-agent: GoogleOther\nDisallow: /\n\nUser-agent: Baiduspider\nDisallow: /\n\nUser-agent: PetalBot\nDisallow: /\n\nUser-agent: AwarioSmartBot\nUser-agent: AwarioRssBot\nDisallow: /\n\nUser-agent: Google-CloudVertexBot\nDisallow: /\n\nUser-agent: QualifiedBot\nDisallow: /\n\nUser-agent: Cotoyogi\nDisallow: /\n\nUser-agent: ICC-Crawler\nDisallow: /\n\nUser-agent: atlassian-bot\nDisallow: /\n\nUser-agent: FishBot\nDisallow: /\n\nUser-agent: BorderxBot\nDisallow: /\n\nUser-agent: NavuBot\nDisallow: /\n\nUser-agent: SemrushBot-SWA\nDisallow: /\n\nUser-agent: WARDBot\nDisallow: /\n\nUser-agent: magpie-crawler\nDisallow: /\n\nUser-agent: KimiBot\nDisallow: /\n\nUser-agent: CitibotSiteCrawler\nDisallow: /\n\n# END Cloudflare Managed Content\n\nUser-agent: *\r\nAllow:/\r\nSitemap: https://futures.kaist.ac.kr/sitemap.php"
     },
     "https://huggingface.co/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: *\nAllow: /\n\nSitemap: https://huggingface.co/sitemap.xml\n"
     },
     "https://ifs.snu.ac.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: *\r\nAllow: /\r\nDisallow:/webdata"
     },
     "https://ksp.etri.re.kr/robots.txt": {
@@ -17496,63 +17546,63 @@
       "rules": "Sitemap: https://ksp.etri.re.kr/ksp/sitemap.xml\n\nUser-agent: *\nDisallow: /ksp/funding/\nDisallow: /ksp/edr/\nDisallow: /ksp/rcp/\nDisallow: /ksp/git/\n\nUser-agent: Mediapartners-Google*\nDisallow: /\n\nUser-agent: UbiCrawler\nDisallow: /\n\nUser-agent: DOC\nDisallow: /\n\nUser-agent: Zao\nDisallow: /\n\nUser-agent: sitecheck.internetseer.com\nDisallow: /\n\nUser-agent: Zealbot\nDisallow: /\n\nUser-agent: MSIECrawler\nDisallow: /\n\nUser-agent: SiteSnagger\nDisallow: /\n\nUser-agent: WebStripper\nDisallow: /\n\nUser-agent: WebCopier\nDisallow: /\n\nUser-agent: Fetch\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: Teleport\nDisallow: /\n\nUser-agent: TeleportPro\nDisallow: /\n\nUser-agent: WebZIP\nDisallow: /\n\nUser-agent: linko\nDisallow: /\n\nUser-agent: HTTrack\nDisallow: /\n\nUser-agent: Microsoft.URL.Control\nDisallow: /\n\nUser-agent: Xenu\nDisallow: /\n\nUser-agent: larbin\nDisallow: /\n\nUser-agent: libwww\nDisallow: /\n\nUser-agent: ZyBORG\nDisallow: /\n\nUser-agent: Download Ninja\nDisallow: /\n\nUser-agent: fast\nDisallow: /\n\nUser-agent: grub-client\nDisallow: /\n\nUser-agent: k2spider\nDisallow: /\n\nUser-agent: NPBot\nDisallow: /\n\nUser-agent: WebReaper\nDisallow: /\n\n\n"
     },
     "https://news.mit.edu/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "#\r\n# robots.txt\r\n#\r\n# This file is to prevent the crawling and indexing of certain parts\r\n# of your site by web crawlers and spiders run by sites like Yahoo!\r\n# and Google. By telling these \"robots\" where not to go on your site,\r\n# you save bandwidth and server resources.\r\n#\r\n# This file will be ignored unless it is at the root of your host:\r\n# Used:    http://example.com/robots.txt\r\n# Ignored: http://example.com/site/robots.txt\r\n#\r\n# For more information about the robots.txt standard, see:\r\n# http://www.robotstxt.org/robotstxt.html\r\n\r\nUser-agent: *\r\n# CSS, JS, Images\r\nAllow: /core/*.css$\r\nAllow: /core/*.css?\r\nAllow: /core/*.js$\r\nAllow: /core/*.js?\r\nAllow: /core/*.gif\r\nAllow: /core/*.jpg\r\nAllow: /core/*.jpeg\r\nAllow: /core/*.png\r\nAllow: /core/*.svg\r\nAllow: /profiles/*.css$\r\nAllow: /profiles/*.css?\r\nAllow: /profiles/*.js$\r\nAllow: /profiles/*.js?\r\nAllow: /profiles/*.gif\r\nAllow: /profiles/*.jpg\r\nAllow: /profiles/*.jpeg\r\nAllow: /profiles/*.png\r\nAllow: /profiles/*.svg\r\n# Directories\r\nDisallow: /core/\r\nDisallow: /profiles/\r\n# Files\r\nDisallow: /README.txt\r\nDisallow: /web.config\r\n# Paths (clean URLs)\r\nDisallow: /admin/\r\nDisallow: /comment/reply/\r\nDisallow: /filter/tips\r\nDisallow: /node/add/\r\nDisallow: /search/\r\nDisallow: /user/register/\r\nDisallow: /user/password/\r\nDisallow: /user/login/\r\nDisallow: /user/logout/\r\n# Paths (no clean URLs)\r\nDisallow: /index.php/admin/\r\nDisallow: /index.php/comment/reply/\r\nDisallow: /index.php/filter/tips\r\nDisallow: /index.php/node/add/\r\nDisallow: /index.php/search/\r\nDisallow: /index.php/user/password/\r\nDisallow: /index.php/user/register/\r\nDisallow: /index.php/user/login/\r\nDisallow: /index.php/user/logout/\r\n\r\nDisallow: /source/\r\nDisallow: /article-type/\r\nDisallow: /author/\r\nDisallow: /keyword/\r\nDisallow: /nav-browse/\r\nDisallow: /press-contact/\r\nDisallow: /user/"
     },
     "https://openai.com/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: *\nAllow: /\nDisallow: /microsoft-for-startups/\n\nSitemap: https://openai.com/sitemap.xml"
     },
     "https://rss.arxiv.org/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": ""
     },
     "https://www.anthropic.com/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-Agent: *\nAllow: /\n\nSitemap: https://www.anthropic.com/sitemap.xml\n"
     },
     "https://www.boho.or.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: googlebot\nAllow: /*/subPage.do\nAllow: /*/bbs/list.do\nAllow: /*/report/list.do\nAllow: /*/consult/consultForm.do\n\n\nUser-agent: Yeti\nAllow: /*/subPage.do\nAllow: /*/bbs/list.do\nAllow: /*/report/list.do\nAllow: /*/consult/consultForm.do\n"
     },
     "https://www.kari.re.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: *\nAllow: /\nSitemap: https://www.kari.re.kr/sitemap.xml\n"
     },
     "https://www.kdi.re.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: *\nAllow:/\n"
     },
     "https://www.kimi.com/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "Sitemap: https://www.kimi.com/sitemap.xml\nSitemap: https://www.kimi.com/sitemap/sitemap-ug.xml\n\nUser-agent: *\nAllow: /\nDisallow: /_prefill_chat\nDisallow: /api\nDisallow: /apiv2-files\nDisallow: /apiv2\nDisallow: /chat/\nAllow: /apiv2/kimi.gateway.slides.v1.SlidesService/ListStyles\nClean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&utm_id&gclid&fbclid&yclid&msclkid&dclid&_ga&_isid /\n"
     },
     "https://www.kistep.re.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: Googlebot\r\nDisallow: /\r\n\r\nUser-agent: Yeti\r\nDisallow: /aivorySearch.es\r\n\r\nUser-agent: Daum\r\nDisallow: /aivorySearch.es\r\n\r\nUser-agent: Bingbot\r\nDisallow: /aivorySearch.es\r\n\r\nUser-agent: *\r\nAllow: /\r\n"
     },
     "https://www.kmooc.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: *\nAllow: /"
     },
     "https://www.lgbr.co.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": ""
     },
     "https://www.mcee.go.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: GoogleOther \r\nDisallow:/\r\n\r\nUser-agent: AionBot \r\nDisallow:/\r\n\r\nUser-agent: * \r\nDisallow:/sodamphew/\r\nDisallow:/sodamphew2/\r\nDisallow:/upload_private/\r\nDisallow:/upload/\r\nDisallow:/search/\r\nDisallow:/kor/webzine/\r\nDisallow:/daegu/wangpicheon/\r\nDisallow:/WEB-INF/jsp/mob/webzine/\r\nDisallow:/api/\r\nDisallow:/file/readDownloadFile.do\r\nDisallow:/file/readDownloadFile4.do\r\nDisallow:/*/readDownloadFile.do\r\nDisallow:/*/readDownloadFile1.do\r\nDisallow:/*/readDownloadFile2.do\r\nDisallow:/*/readDownloadFile3.do\r\nDisallow:/*/readDownloadFile4.do\r\nDisallow:/*/readDownloadFile5.do\r\nDisallow:/home/file/readDownloadFile\r\nDisallow:/m/file/readDownloadFile\r\nDisallow:/web/newsRead.do\r\n#DaumWebMasterTool:d7c01b148661a8d96e8a6006131c5056bf9a23686f8968242790f354f0dfcfbf:SgQVtKE0+akmA+AR7suRxg=="
     },
     "https://www.nasa.gov/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: usasearch\nCrawl-delay: 1\nAllow: /\n\nUser-agent: *\nAllow: /"
     },
     "https://www.ocw-openmatters.org/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "user-agent: * \ndisallow: \ncrawl-delay: 60\n"
     },
     "https://www.spri.kr/robots.txt": {
-      "day": "2026-11-23",
+      "day": "2026-11-24",
       "rules": "User-agent: *\nDisallow:\nAllow: /\n"
     }
   },
@@ -26696,6 +26746,12 @@
       "language": "en",
       "url": "https://blog.st.com/vb1943/"
     },
+    "products:https://blog.st.com/vl53lb": {
+      "fingerprint": "7b81892ac47ba87d4650a2340c1ab30354227dea1abe789cb439d60d434ed589",
+      "first_seen": "2026-11-24T07:03:11.695925+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/vl53lb/"
+    },
     "products:https://blog.st.com/zephyr": {
       "fingerprint": "e84e40df92ec40c9dcaa3cb4f57f99fff7c9b6751d4a6c995fcbf7fd45df7f01",
       "first_seen": "2026-11-05T15:43:22.540976+00:00",
@@ -27510,6 +27566,10 @@
       "list_fingerprint": "79d396efa8bb7604c53fa62b48bbcac1d9732268ea78a383a0d314fe41f6e614",
       "status": "posted"
     },
+    "spri-sw-magazine:https://www.spri.kr/posts/view/24042?code=magazine": {
+      "list_fingerprint": "984693ec971f1cbbae5a1fe983f6c829013f285dba0cdf88be15e98faad0076b",
+      "status": "posted"
+    },
     "st-technical:https://blog.st.com/ai-data-centers": {
       "list_fingerprint": "09e4f32f721d460325a03f02d380846d5928dd1e9d52b4f926447b3b30a9c116",
       "status": "posted"
@@ -27590,6 +27650,10 @@
       "list_fingerprint": "dc77469f6a4e91a6f88abbad35f769e2784dabd21c566657b0c22c0010a4771f",
       "status": "posted"
     },
+    "st-technical:https://blog.st.com/vl53lb": {
+      "list_fingerprint": "7b81892ac47ba87d4650a2340c1ab30354227dea1abe789cb439d60d434ed589",
+      "status": "posted"
+    },
     "st-technical:https://blog.st.com/zephyr": {
       "list_fingerprint": "e84e40df92ec40c9dcaa3cb4f57f99fff7c9b6751d4a6c995fcbf7fd45df7f01",
       "status": "posted"
@@ -27623,6 +27687,12 @@
       "first_seen": "2026-11-13T02:03:40.718638+00:00",
       "language": "ko",
       "url": "https://www.spri.kr/posts/view/24039?code=AI-Brief"
+    },
+    "technology:https://www.spri.kr/posts/view/24042?code=magazine": {
+      "fingerprint": "e180ca7650e316c0fab89ae02f8d7889134a3bdcad602790259a5f58362dd52c",
+      "first_seen": "2026-11-24T07:03:11.695925+00:00",
+      "language": "ko",
+      "url": "https://www.spri.kr/posts/view/24042?code=magazine"
     },
     "tools:https://blog.python.org/2026/10/python-3150-final-is-here": {
       "fingerprint": "fb0cdd3e1358b6a241d03781851caceccece1b81b829f037adb762cdd36076b1",
