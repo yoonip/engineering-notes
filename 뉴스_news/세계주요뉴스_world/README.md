@@ -1,91 +1,51 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-24 15:04 KST
+갱신: 2026-11-25 02:45 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
-## 中, 내일 파키스탄인 탄 유인우주선 발사…톈궁 첫 외국인 방문
+## 美, 韓 외교안보라인 교체에 "한미동맹 내 긴밀한 협력 중요"
 
-> 중국이 파키스탄 우주비행사가 탑승하는 유인우주선 선저우\(神舟\) 24호를 발사한다.
+> 이재명 대통령이 단행한 외교·안보 라인 교체에 대해 도널드 트럼프 미국 행정부는 '동맹의 긴밀한 협...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261124118100083>) · 2026-11-24 14:30 KST · 작성·제공: 한종구
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261125002400071>) · 2026-11-25 02:33 KST · 작성·제공: 홍정규
 
-## 휴렛팩커드 "메모리 공급난 2028년 하반기까지 계속"
+## 우크라, 헝가리와 화해모드…EU가입 속도내나
 
-> 미국 서버·네트워크 장비 업체 휴렛팩커드 엔터프라이즈\(HPE\)가 메모리와 낸드플래시 등 핵심 부품의 공급난이 ...
+> 볼로디미르 젤렌스키 우크라이나 대통령이 24일\(현지시간\) 머저르 페테르 헝가리 총리를 만나 양국 관계 개선과...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261124120300009>) · 2026-11-24 14:28 KST · 작성·제공: 정주호
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261125003600109>) · 2026-11-25 02:23 KST · 작성·제공: 민경락
 
-## 무려 200조 육박…젠슨황 부부 가족자산 관리법 베일 벗었다
+## 이란 전쟁서 '쓴맛' 본 미군, GM·포드 통해 드론 생산 추진
 
-> 무려 200조원에 육박하는 자산을 보유한 젠슨 황과 아내 로리 황.
+> 미국 국방부가 군용 드론 생산을 위해 제너럴모터스\(GM\)·포드 같은 자국의 토종 자동차 제조사와 손을 잡을...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261124106400009>) · 2026-11-24 14:25 KST · 작성·제공: 설원태
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261124183600071>) · 2026-11-25 00:16 KST · 작성·제공: 홍정규
 
-## 젠슨 황, 11일만에 전격 복귀…엔비디아 주가 '폭등'
+## 미 당국자 “미북 정상회담 성사 노력 전혀 없었다…공은 북한에”
 
-> 중국 스파이 의혹을 받은 여성과 불륜 사실을 인정한 뒤 엔비디아를 떠났던 젠슨 황이 11일 만에 최고경영자로 전격 복귀했습니다.
+> 미국 정부가 도널드 트럼프 대통령의 최근 아시아 순방을 계기로 미북 정상회담을 적극 추진했다는 언론 보도를 부인했습니다.
 
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008859931&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-24 06:07 KST · 작성·제공: kimhw@sbs.co.kr \(김현우\)
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/trump-kim-summit-112426/8227414.html>) · 2026-11-25 01:18 KST · 작성·제공: voadigital@voanews.com \(조은정\)
 
-## 유엔 기후 정상회의, 합의 없이 종료
+## “전시납북 가족들, ‘사망자도 있는데 납북됐으면 생존 아니냐’ 핀잔 들어”
 
-> 튀르키예에서 2주 넘에 협상이 이어진 유엔 기후 회의가 합의 도출에 실패한 채 22일 종료됐습니다.
+> 이성의 전시납북자가족협의회 이사장은 “전시 납북 피해자들에 대한 한국의 위정자들이나 정책결정자들의 인식이 부족하다”고 지적했다.
 
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/turkey--cop31-112326/8227078.html>) · 2026-11-24 05:31 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/24/abduction-north-korea-war/>) · 2026-11-24 17:00 KST · 작성·제공: 서울-목용재 moky@rfa.org
 
-## 나토 사무총장 “북한, 핵 개발 지속하며 러시아 전쟁 지원”
+## 북, 학생들한테 걷은 토끼가죽도 중국에 수출
 
-> 마르크 뤼터 나토 사무총장이 북한이 핵 개발을 지속하는 동시에 러시아의 우크라이나 전쟁을 공개적·물질적으로 지원하고 있다고 비판했습니다.
+> 북한당국이 학생들로부터 걷어 들인 ‘토끼가죽’을 중국에 수출하는 것으로 알려졌다.
 
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8226984.html>) · 2026-11-24 01:45 KST · 작성·제공: voadigital@voanews.com \(조진우\)
-
-## 트럼프 "이란의 미사일·드론 공격 증가"
-
-> 도널드 트럼프 미국 대통령은 22일 이란이 지난 한주간 최근 1년여 만에 가장 많은 미사일과 드론을 발사했다고 밝혔습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/trump-cites-increase-in-iranian-missile-drone-attacks-112326/8227037.html>) · 2026-11-24 03:41 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 미 법무부, 북한 바이낸스 해킹 자금 11억 달러 몰수 절차 착수
-
-> 미국 법무부가 북한 해킹 조직이 세계 최대 가상화폐 거래소 바이낸스에서 탈취한 11억 달러 상당의 가상화폐에 대한 몰수 절차에 착수했습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/united-states-files-action-to-recover-112326/8227070.html>) · 2026-11-24 04:54 KST · 작성·제공: voadigital@voanews.com \(함지하\)
-
-## 미 국무부 “APEC 계기 미한 외교당국자 회동…긴밀 협력 기대”
-
-> 마이클 디섬브레 미국 국무부 동아시아태평양 차관보가 아시아태평양경제협력체\(APEC\) 경제지도자 주간을 맞아 한국 외교부의 남진 동북·중앙아시아국장과 만났습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/u-s-rok-diplomacy-112326/8227041.html>) · 2026-11-24 03:53 KST · 작성·제공: voadigital@voanews.com \(조진우\)
-
-## 지중해까지 해상 드론…성탄절 전 종전 협상?
-
-> 우크라이나가 리비아 항구에 정박 중이던 러시아 군함을 해상 드론으로 공격했습니다.
-
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008859627&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-23 22:07 KST · 작성·제공: k022@sbs.co.kr \(권영인\)
-
-## 미국, 이란 '그림자 금융' 시스템 연계 기업들 제재
-
-> 미국 정부가 이란 기업들의 금융 거래를 지원한 기업과 개인들을 대상으로 새로운 제재를 단행했습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-iran-sanctions/8227109.html>) · 2026-11-24 06:40 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 북 노동자, 핵잠 건조한 러시아 군 조선소 단체 견학
-
-> 김정은 북한 국무위원장이 해군력 증강에 총력을 기울이는 가운데, 북한 노동자들이 소련 시절 핵잠수함을 건조했던 러시아 해군 조선소를 찾았다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/23/north-korea-sanctioned-russia-naval-shipyard/>) · 2026-11-24 06:33 KST · 작성·제공: 워싱턴-자민 앤더슨 andersonj@rfa.org
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/24/north-korea-rabbit-skin-exports/>) · 2026-11-24 16:55 KST · 작성·제공: 서울-김지은 nk@rfa.org, 목용재 moky@rfa.org
 
 ## 다른 매체의 원문
 
-- [Ethiopia: Lethal Artillery Strikes On Civilian Neighbourhoods in Tigray's Alamata City Must Be Investigated As War Crimes](<https://allafrica.com/stories/202611240073.html>) · AllAfrica · allAfrica.com
-- [Sudan: 'Famine in Sudan Is a Product of War, Not a Natural Disaster' - Reports](<https://allafrica.com/stories/202611240066.html>) · AllAfrica · allAfrica.com
-- [Syrians say they’re ready for peace despite tensions, and ask: Is Israel?](<https://www.csmonitor.com/World/Middle-East/2026/1123/syria-israel-daraa-peace-eisenkot?icid=rss>) · The Christian Science Monitor
-- [Congo-Kinshasa: Heavy Fighting in Ituri Traps DR Congo Ebola Responders - WHO](<https://allafrica.com/stories/202611240069.html>) · AllAfrica · allAfrica.com
-- [Drone attack on Colombian police base injures civilians and damages homes](<https://abcnews.com/International/wireStory/drone-attack-colombian-police-base-injures-civilians-damages-138381975>) · ABC News 미국
-- [Mozambique: OMR fined $27,400 for Making Documentary Film About Post-election Protests Without Permission](<https://allafrica.com/stories/202611230525.html>) · AllAfrica · allAfrica.com
-- [A spokesperson says ousted Bangladeshi Prime Minister Sheikh Hasina plans to return home from exile in India on Dec. 16](<https://abcnews.com/International/wireStory/spokesperson-ousted-bangladeshi-prime-minister-sheikh-hasina-plans-138398785>) · ABC News 미국
-- [First Eastern Europe, now Libya: The Ukraine war expands its reach](<https://www.csmonitor.com/World/Europe/2026/1123/russia-ukraine-sea-drones-missiles-libya-poland?icid=rss>) · The Christian Science Monitor
+- [North Korea reviews Switzerland relations after sanctions on youth camp linked to war](<https://abcnews.com/International/wireStory/north-korea-reviews-switzerland-relations-after-sanctions-youth-138402640>) · ABC News 미국
+- [Senegal/Morocco: Senegal Reclaims AFCON Crown After Winning Appeal](<https://allafrica.com/stories/202611240596.html>) · AllAfrica · allAfrica.com
+- [South Africa convicts Zimbabwean who tried to travel to Russia to fight against Ukraine](<https://abcnews.com/International/wireStory/south-africa-convicts-zimbabwean-travel-russia-fight-ukraine-138414152>) · ABC News 미국
+- [Who really owns the land in Albania that Jared Kushner wants to develop?](<https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests>) · NPR
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
