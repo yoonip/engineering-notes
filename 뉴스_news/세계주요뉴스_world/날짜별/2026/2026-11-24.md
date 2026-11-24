@@ -1,8 +1,26 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-24 06:26 KST
+갱신: 2026-11-24 15:04 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 中, 내일 파키스탄인 탄 유인우주선 발사…톈궁 첫 외국인 방문
+
+> 중국이 파키스탄 우주비행사가 탑승하는 유인우주선 선저우\(神舟\) 24호를 발사한다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261124118100083>) · 2026-11-24 14:30 KST · 작성·제공: 한종구
+
+## 휴렛팩커드 "메모리 공급난 2028년 하반기까지 계속"
+
+> 미국 서버·네트워크 장비 업체 휴렛팩커드 엔터프라이즈\(HPE\)가 메모리와 낸드플래시 등 핵심 부품의 공급난이 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261124120300009>) · 2026-11-24 14:28 KST · 작성·제공: 정주호
+
+## 무려 200조 육박…젠슨황 부부 가족자산 관리법 베일 벗었다
+
+> 무려 200조원에 육박하는 자산을 보유한 젠슨 황과 아내 로리 황.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261124106400009>) · 2026-11-24 14:25 KST · 작성·제공: 설원태
 
 ## 젠슨 황, 11일만에 전격 복귀…엔비디아 주가 '폭등'
 
@@ -46,11 +64,28 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008859627&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-23 22:07 KST · 작성·제공: k022@sbs.co.kr \(권영인\)
 
+## 미국, 이란 '그림자 금융' 시스템 연계 기업들 제재
+
+> 미국 정부가 이란 기업들의 금융 거래를 지원한 기업과 개인들을 대상으로 새로운 제재를 단행했습니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-iran-sanctions/8227109.html>) · 2026-11-24 06:40 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 북 노동자, 핵잠 건조한 러시아 군 조선소 단체 견학
+
+> 김정은 북한 국무위원장이 해군력 증강에 총력을 기울이는 가운데, 북한 노동자들이 소련 시절 핵잠수함을 건조했던 러시아 해군 조선소를 찾았다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/23/north-korea-sanctioned-russia-naval-shipyard/>) · 2026-11-24 06:33 KST · 작성·제공: 워싱턴-자민 앤더슨 andersonj@rfa.org
+
 ## 다른 매체의 원문
 
+- [Ethiopia: Lethal Artillery Strikes On Civilian Neighbourhoods in Tigray's Alamata City Must Be Investigated As War Crimes](<https://allafrica.com/stories/202611240073.html>) · AllAfrica · allAfrica.com
+- [Sudan: 'Famine in Sudan Is a Product of War, Not a Natural Disaster' - Reports](<https://allafrica.com/stories/202611240066.html>) · AllAfrica · allAfrica.com
 - [Syrians say they’re ready for peace despite tensions, and ask: Is Israel?](<https://www.csmonitor.com/World/Middle-East/2026/1123/syria-israel-daraa-peace-eisenkot?icid=rss>) · The Christian Science Monitor
+- [Congo-Kinshasa: Heavy Fighting in Ituri Traps DR Congo Ebola Responders - WHO](<https://allafrica.com/stories/202611240069.html>) · AllAfrica · allAfrica.com
 - [Drone attack on Colombian police base injures civilians and damages homes](<https://abcnews.com/International/wireStory/drone-attack-colombian-police-base-injures-civilians-damages-138381975>) · ABC News 미국
 - [Mozambique: OMR fined $27,400 for Making Documentary Film About Post-election Protests Without Permission](<https://allafrica.com/stories/202611230525.html>) · AllAfrica · allAfrica.com
+- [A spokesperson says ousted Bangladeshi Prime Minister Sheikh Hasina plans to return home from exile in India on Dec. 16](<https://abcnews.com/International/wireStory/spokesperson-ousted-bangladeshi-prime-minister-sheikh-hasina-plans-138398785>) · ABC News 미국
+- [First Eastern Europe, now Libya: The Ukraine war expands its reach](<https://www.csmonitor.com/World/Europe/2026/1123/russia-ukraine-sea-drones-missiles-libya-poland?icid=rss>) · The Christian Science Monitor
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
