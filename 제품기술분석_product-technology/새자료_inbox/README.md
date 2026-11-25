@@ -1,64 +1,36 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-25 04:03 KST
+반영: 2026-11-26 07:41 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## How to Run NVIDIA Cosmos 3 on Local AI Devices Using Hugging Face Diffusers
+## How to Optimize NVFP4 Attention on NVIDIA RTX Blackwell Through Register Recycling
 
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 이미지·영상 처리·GPU·가속기 주제를 다룹니다.
+NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론 주제를 다룹니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers/>) · RSS·Atom 발행 시각: 2026-11-25 03:44 KST
+출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling/>) · RSS·Atom 발행 시각: 2026-11-26 04:30 KST
 
 RSS·Atom 표기 작성자: Atharva Joshi
 
-가져온 시각: 2026-11-25 04:03:10 KST
+가져온 시각: 2026-11-26 07:41:40 KST
 
 수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## What’s New for Game Developers: AI Animation and RTX Tools
+## Winstar Smart Display, the 1st 8.8-inch stretched display running AI, a camera, and a GUI on one STM32N6 only
 
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 이미지·영상 처리 주제를 다룹니다.
+STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 회로·디스플레이 주제를 다룹니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/whats-new-for-game-developers-ai-animation-and-rtx-tools/>) · RSS·Atom 발행 시각: 2026-11-25 02:00 KST
+출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/winstar-smart-display/>) · RSS·Atom 발행 시각: 2026-11-25 23:00 KST
 
-RSS·Atom 표기 작성자: Phillip Singh
+RSS·Atom 표기 작성자: David Civera
 
-가져온 시각: 2026-11-25 04:03:10 KST
+가져온 시각: 2026-11-26 07:41:42 KST
 
-수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Prepare Market Data for Forecasting with NVIDIA Megatron Core
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/prepare-market-data-for-forecasting-with-nvidia-megatron-core/>) · RSS·Atom 발행 시각: 2026-11-25 02:00 KST
-
-RSS·Atom 표기 작성자: Liana Mikaelyan
-
-가져온 시각: 2026-11-25 04:03:10 KST
-
-수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Q&amp;A: How Everstone Brings Where Winds Meet to Life with NVIDIA DLSS 5
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/qa-how-everstone-brings-where-winds-meet-to-life-with-nvidia-dlss-5/>) · RSS·Atom 발행 시각: 2026-11-24 23:00 KST
-
-RSS·Atom 표기 작성자: Phillip Singh
-
-가져온 시각: 2026-11-25 04:03:10 KST
-
-수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
