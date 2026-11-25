@@ -1,6 +1,6 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-25 11:30 KST
+갱신: 2026-11-25 21:56 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
 
@@ -10,9 +10,21 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008861617&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-24 22:23 KST · 작성·제공: yongil@sbs.co.kr\(신용일\)
 
+## '택배' 찾으러 대마도행…전국서 몰려 "배편 동났다"
+
+> 국내보다 저렴한 가격에 비만치료제를 처방받기 위해 일본을 향하는 사람들이 늘고 있습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008863504&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-25 21:43 KST · 작성·제공: newsservice@sbs.co.kr\(SBS\)
+
 ## \[단독\] 공소청, '노태우 일가 비자금' 의혹 노재헌 대사 소환 통보
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008862523&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-25 10:53 KST · 작성·제공: yongil@sbs.co.kr\(신용일 기자\)
+
+## 스키장서 김주애 튀는 패션…이번에도 보란 듯 노출?
+
+> 북한 김정은의 딸 김주애가 스키 타는 모습이 지난주 북한 매체를 통해 공개됐습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008863512&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-25 21:29 KST · 작성·제공: nina@sbs.co.kr\(김아영\)
 
 ## 화재로 노모와 두 아들 사망…'불에 탄 기름통' 발견
 
@@ -26,11 +38,29 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008861886&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-25 10:30 KST · 작성·제공: jdono@sbs.co.kr\(조제행 기자\)
 
+## 張 "대통령 탄핵하고 대법 지켜야"…국힘 '曺 고향' 경주서 집회\(종합\)
+
+> 국민의힘은 25일 조희대 대법원장의 고향인 경주에서 장외집회를 열고 여당의 조작기소 특검법 강행 처리와...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261125136651001>) · 2026-11-25 21:03 KST · 작성·제공: 김연정
+
 ## \[단독\] 새집에서 단 4분…신상 숨기려는 성범죄자 꼼수?
 
 > 정부는 온라인에 성범죄자들의 주소 등 신상정보를 공개하고 있습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008861618&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-25 01:33 KST · 작성·제공: newsservice@sbs.co.kr\(SBS\)
+
+## 차에 치이고도 '벌떡'…모습 감추자 "외출 자제하라"
+
+> 오늘 서울 도심 등굣길에 멧돼지가 출몰했습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008863509&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-25 20:56 KST · 작성·제공: jessy@sbs.co.kr\(제희원 기자\)
+
+## 창원지법 “법관 탄핵은 사법권 독립 훼손”…판사들 첫 집단행동
+
+> 더불어민주당의 조희대 대법원장 탄핵 추진에 대해 일선 법원 판사들이 처음으로 단체 회의를 열고 “헌법질서를 위태롭게 하는 시도에 대해 깊은 우려를 표한다”는 공식 의견을 냈다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Society/article/all/20261125/135089058/1>) · 2026-11-25 20:22 KST
 
 ## 김민석, '曺탄핵 연대' 진보야당에 제안…"완전한 내란 청산"
 
@@ -44,11 +74,29 @@
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261125054500052>) · 2026-11-25 09:59 KST · 작성·제공: 정종호
 
+## FA 최대어 구자욱·원태인, 삼성 우승 기념 카퍼레이드 불참
+
+> 이번 프리에이전트\(FA\) 시장에서 ‘최대어’로 꼽히는 구자욱과 원태인이 대구에서 열리는 우승 기념 카퍼레이드에 불참한다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Sports/article/all/20261125/135092055/1>) · 2026-11-25 21:52 KST
+
+## 韓-오만 외교장관 회담…“청해부대 활동 지속 협조 당부” “적극 협조”
+
+> 조현 외교부 장관은 25일 서울 외교부 청사에서 바드르 빈 하마드 빈 하무드 알 부사이디 오만 외교장관과 회담을 갖고 양국 관계, 에너지·인프라 등 실질협력 등에 대해…
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Politics/article/all/20261125/135092052/1>) · 2026-11-25 21:51 KST
+
 ## 美마이크론, 韓서 채용행사… HBM 인력 등 대규모 모집
 
 > 미국 마이크론이 한국 반도체 인재 확보에 나섰다.
 
 출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Economy/article/all/20261124/135083676/2>) · 2026-11-25 00:30 KST
+
+## "조희대 탄핵 반대" 판사들 첫 집단성명…30일 법관회의 분수령\(종합\)
+
+> 여권이 조희대 대법원장 탄핵소추 추진을 공식화하면서 사법부 전체가 뒤숭숭한 가운데 전국법관대표회의를 앞...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261125166500004>) · 2026-11-25 18:27 KST · 작성·제공: 이영섭
 
 ## 이 없으면 잇몸으로…남자농구, 월드컵 예선 중동 2연전 출격
 
@@ -67,6 +115,12 @@
 > 북한이 대규모 관광시설을 건설하고 다양한 관광 상품을 개발하며 외화 확보를 위한 해외 관광객 유치에 나서고 있습니다.
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/north-korean-tourism-debunk-/8227521.html>) · 2026-11-25 05:27 KST · 작성·제공: voadigital@voanews.com \(함지하\)
+
+## 서울변회 "재판 결과로 대법원장 탄핵 안 돼…사법독립 우려"
+
+> 서울지방변호사회가 더불어민주당의 조희대 대법원장 탄핵소추 추진에 "사법권 독립 관점에서 깊은 우려를 표한다"는...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261125164800004>) · 2026-11-25 18:07 KST · 작성·제공: 이밝음
 
 ## \[세종소식\] 산불예방 인공지능 감시체계 구축
 
@@ -89,6 +143,12 @@
 > 빅뱅\(Big Bang\) 이후 6억3천만 년밖에 지나지 않은 초기 우주에서 태양 질량의 3억6천만 배에 달하는 ...
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261124140300017>) · 2026-11-25 00:00 KST · 작성·제공: 이주영
+
+## 무안 KTX 공사장서 60대 작업자 추락 사망…노동당국 조사\(종합\)
+
+> 전남광주 무안군의 KTX 공사 현장에서 60대 작업자가 추락해 숨져 경찰과 노동당국이 조사에 나섰다.
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261125131251054>) · 2026-11-25 20:20 KST · 작성·제공: 민현기
 
 ## EU, 하이브리드차도 수입 제한… 국산차 ‘빨간불’
 

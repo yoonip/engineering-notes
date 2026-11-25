@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-25 11:30 KST
+갱신: 2026-11-25 21:56 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -10,17 +10,35 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261125074700009>) · 2026-11-25 10:52 KST · 작성·제공: 이신영
 
+## 전쟁 장기화 속 이란 물가 89% 급등…"물가 억제 총력"
+
+> 미국의 해상 봉쇄와 강력한 경제 제재로 고전 중인 이란이 미국의 해상 봉쇄를 우려하지 않고 있다면서, 물가...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261125164000079>) · 2026-11-25 18:10 KST · 작성·제공: 김상훈
+
 ## 中, 유인우주선 선저우 24호 발사 성공…사상 첫 외국인 탑승
 
 > 중국이 유인우주 개발 역사상 처음으로 외국인 우주비행사를 태운 유인우주선 선저우\(神舟\) 24호 발사에 성공...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261125067200083>) · 2026-11-25 10:35 KST · 작성·제공: 한종구
 
+## 교황, 기후합의 무산 우려…하이브리드 전쟁도 비판
+
+> 레오 14세 교황이 25일\(현지시간\) 기후위기 대응 공동 합의에 실패한 유엔기후총회에 우려를 표명했다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261125175300109>) · 2026-11-25 19:46 KST · 작성·제공: 민경락
+
 ## 브라질, 내년 룰라 취임식에 밀레이 아르헨 대통령 초청 안해
 
 > 브라질 정부가 아르헨티나 외교장관의 브라질 대선 결과 관련 발언에 강하게 반발하며 하비에르 밀레이...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261125063200009>) · 2026-11-25 10:31 KST · 작성·제공: 김선정
+
+## 사우디의 꿈 기사회생하나…원유수출 회복세에 전쟁 충격 완화
+
+> 친이란 예멘 반군 후티의 공격으로 위기에 몰린 사우디아라비아 경제가 활로를 모색하고 있다.
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261125145000009>) · 2026-11-25 17:11 KST · 작성·제공: 설원태
 
 ## 美, 韓 외교안보라인 교체에 "한미동맹 내 긴밀한 협력 중요"
 
@@ -74,6 +92,18 @@
 
 출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8227565.html>) · 2026-11-25 06:51 KST · 작성·제공: voadigital@voanews.com \(오종수\)
 
+## 북, 스위스 외교사무소 전격 폐쇄… “제재 확산 차단 의도”
+
+> 북한이 스위스의 송도원국제소년단야영소 제재에 반발해 평양 주재 스위스 외교사무소 폐쇄를 통보했다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/25/north-korea-orders-closure-of-swiss-diplomatic-office/>) · 2026-11-25 17:31 KST · 작성·제공: 서울-김태이 kimt@rfa.org
+
+## 북 IT노동자 인권보고서 발간... 작업장· 숙소 사방이 감시카메라
+
+> 북한 당국은 해외로 파견된 IT 노동자들의 탈북 등 돌발행동을 막고 통제하기 위해 이들의 작업장 및 숙소 곳곳에 감시카메라를 설치하고 이들을 모니터링하고 있는 것으로 나타났다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/25/it-north-korea-app-camera/>) · 2026-11-25 17:04 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
 ## 유엔 “북한 초청 시 복귀 준비 완료”
 
 > 유엔이 지난 7월 상주조정관 방북에 이어 북한 초청 시 평양에 복귀할 준비가 돼 있다고 RFA에 밝혔다.
@@ -92,10 +122,20 @@
 
 출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/24/north-korea-rabbit-skin-exports/>) · 2026-11-24 16:55 KST · 작성·제공: 서울-김지은 nk@rfa.org, 목용재 moky@rfa.org
 
+## 북한 축구장 광고판 점령한 스마트폰 기업들
+
+> 스마트폰 제조사와 이동통신사, 온라인 쇼핑 플랫폼 등이 북한 축구 경기장의 광고판의 광고주로 등장하면서 북한에서도 기업들의 브랜드 홍보가 확대되고 있다는 분석이 나왔다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/25/north-korea-advertising-brand-football-matches-technology/>) · 2026-11-25 15:49 KST · 작성·제공: 서울-김지수 kimjis@rfa.org
+
 ## 다른 매체의 원문
 
+- [Amnesty calls for independent war crimes probe into Ethiopian shelling in Tigray](<https://abcnews.com/International/wireStory/amnesty-calls-independent-war-crimes-probe-ethiopian-shelling-138434543>) · ABC News 미국
 - [North Korea reviews Switzerland relations after sanctions on youth camp linked to war](<https://abcnews.com/International/wireStory/north-korea-reviews-switzerland-relations-after-sanctions-youth-138402640>) · ABC News 미국
 - [Senegal/Morocco: Senegal Reclaims AFCON Crown After Winning Appeal](<https://allafrica.com/stories/202611240596.html>) · AllAfrica · allAfrica.com
+- [Uganda: Uganda, Somalia Agree to Intensify Military Offensive Against Al-Shabaab](<https://allafrica.com/stories/202611250346.html>) · AllAfrica · allAfrica.com
+- [Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.](<https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang>) · NPR
+- [Ghana: Ghana Protests to Iraq Over Assault On Ghanaian Domestic Worker](<https://allafrica.com/stories/202611250295.html>) · AllAfrica · allAfrica.com
 - [South Africa convicts Zimbabwean who tried to travel to Russia to fight against Ukraine](<https://abcnews.com/International/wireStory/south-africa-convicts-zimbabwean-travel-russia-fight-ukraine-138414152>) · ABC News 미국
 - [Who really owns the land in Albania that Jared Kushner wants to develop?](<https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests>) · NPR
 - [Flooded tents and blocked aid: Gaza waits for relief as winter arrives](<https://www.csmonitor.com/World/Middle-East/2026/1124/gaza-winter-flooding-dual-use-israel-import-restrictions?icid=rss>) · The Christian Science Monitor
