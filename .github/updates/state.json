@@ -503,6 +503,7 @@
     "products:https://blog.st.com/touchgfx": "products:https://blog.st.com/touchgfx",
     "products:https://blog.st.com/vb1943": "products:https://blog.st.com/vb1943",
     "products:https://blog.st.com/vl53lb": "products:https://blog.st.com/vl53lb",
+    "products:https://blog.st.com/winstar-smart-display": "products:https://blog.st.com/winstar-smart-display",
     "products:https://blog.st.com/zephyr": "products:https://blog.st.com/zephyr",
     "products:https://blogs.nvidia.co.kr/blog/20-years-cuda": "products:https://blogs.nvidia.co.kr/blog/20-years-cuda",
     "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-live": "products:https://blogs.nvidia.co.kr/blog/ai-day-seoul-2026-live",
@@ -554,6 +555,7 @@
     "products:https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension": "products:https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension",
     "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations": "products:https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations",
     "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform",
+    "products:https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling": "products:https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling",
     "products:https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers": "products:https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers",
     "products:https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins": "products:https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins",
     "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery": "products:https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery",
@@ -13148,6 +13150,46 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/whats-new-for-game-developers-ai-animation-and-rtx-tools/"
         }
+      ],
+      "2026-11-26": [
+        {
+          "acquired_at": "2026-11-25T22:41:42.360111+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "David Civera",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-25T14:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-25T22:40:54.493846+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/winstar-smart-display",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 회로·디스플레이 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Winstar Smart Display, the 1st 8.8-inch stretched display running AI, a camera, and a GUI on one STM32N6 only",
+          "update": false,
+          "url": "https://blog.st.com/winstar-smart-display/"
+        },
+        {
+          "acquired_at": "2026-11-25T22:41:40.470772+00:00",
+          "acquisition_method": "공식 기술 블로그 Atom의 제목·소개",
+          "author": "Atharva Joshi",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-25T19:30:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-25T22:40:54.493846+00:00",
+          "group": "products",
+          "homepage": "https://developer.nvidia.com/blog/",
+          "key": "products:https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling",
+          "source_name": "NVIDIA Technical Blog",
+          "source_url": "https://developer.nvidia.com/blog/feed/",
+          "summary_ko": "NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "How to Optimize NVFP4 Attention on NVIDIA RTX Blackwell Through Register Recycling",
+          "update": false,
+          "url": "https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling/"
+        }
       ]
     },
     "reports": {
@@ -17834,6 +17876,10 @@
       "group": "products",
       "key": "products:https://blog.st.com/vl53lb"
     },
+    "https://blog.st.com/winstar-smart-display": {
+      "group": "products",
+      "key": "products:https://blog.st.com/winstar-smart-display"
+    },
     "https://blog.st.com/zephyr": {
       "group": "products",
       "key": "products:https://blog.st.com/zephyr"
@@ -18037,6 +18083,10 @@
     "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform": {
       "group": "products",
       "key": "products:https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform"
+    },
+    "https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling": {
+      "group": "products",
+      "key": "products:https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling"
     },
     "https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers": {
       "group": "products",
@@ -18672,6 +18722,12 @@
       "ETag": "\"a47402a6175cfac298d421bca4235ddc\"",
       "Last-Modified": "Mon, 23 Nov 2026 08:45:41 GMT"
     },
+    "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
+      "ETag": "W/\"0d23b2c2598904372cbb332c2aa95a8e4fb3c0c73caac67c2bf4c85e7cd989b4\""
+    },
+    "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
+      "ETag": "W/\"88bb19b8a7bb0376506e5e1de492299bab367a8f4740cff9e2547d00adb25b3c\""
+    },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
     "https://blog.google/robots.txt": {},
@@ -18688,7 +18744,7 @@
       "Last-Modified": "Mon, 16 Nov 2026 18:20:49 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Tue, 24 Nov 2026 09:39:20 GMT"
+      "Last-Modified": "Wed, 25 Nov 2026 16:58:08 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -18711,15 +18767,12 @@
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/introducing-gemini-4-neon": {},
-    "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"N1lnXQ\""
-    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"Ug7JBQ\""
     },
     "https://developer.nvidia.com/blog/feed": {
-      "ETag": "\"85dfa6a1a7635dac5fdbcf51bf2444a6\"",
-      "Last-Modified": "Tue, 24 Nov 2026 22:26:24 GMT"
+      "ETag": "\"c969317e2f6d79bc171f4c5967e4487c\"",
+      "Last-Modified": "Wed, 25 Nov 2026 19:55:58 GMT"
     },
     "https://developer.nvidia.com/robots.txt": {
       "ETag": "W/\"a221012ed37e844af211105107cd5154\""
@@ -18727,10 +18780,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc9-G4WPDnFwx3WUwqmag5uRWpEWTBc\""
+      "ETag": "W/\"33bc9-PSNeRywBC1SER8QrIIrhv1e1mxE\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40189-vB7ZhcTljPAmc/L4mQVwV06W/rA\""
+      "ETag": "W/\"40189-MmhtKLmNcMmAjCRtrWdKMRe+brw\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -18777,12 +18830,12 @@
       "Last-Modified": "Wed, 25 Nov 2026 02:55:16 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1795611351\"",
-      "Last-Modified": "Wed, 25 Nov 2026 12:55:51 GMT"
+      "ETag": "\"1795646137\"",
+      "Last-Modified": "Wed, 25 Nov 2026 22:35:37 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1795612265\"",
-      "Last-Modified": "Wed, 25 Nov 2026 13:11:05 GMT"
+      "ETag": "\"1795646202\"",
+      "Last-Modified": "Wed, 25 Nov 2026 22:36:42 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -18917,7 +18970,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"07aff00db5bafff7c687d610647d8803b\""
+      "ETag": "\"00eb1ecacb72e241bdcca3b1006b13650\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -19017,8 +19070,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"18a75300527cb8f9b07cbbca506bcc27\"",
-      "Last-Modified": "Wed, 25 Nov 2026 05:40:21 GMT"
+      "ETag": "\"749b8218df76bf5b39d29bb14ef243bd\"",
+      "Last-Modified": "Wed, 25 Nov 2026 21:05:34 GMT"
     },
     "https://www.ocw-openmatters.org/feed": {
       "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
@@ -26016,6 +26069,10 @@
       "list_fingerprint": "53e43591e6f4add3a43663a7890418f13732ea8385577758a5a15b4225d35178",
       "status": "bootstrap_skipped"
     },
+    "nvidia-technical:https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling": {
+      "list_fingerprint": "19f270ab3ffd21d87f529f0b370f11485a8bf9a2bdfeddede4ccb93fc4887570",
+      "status": "posted"
+    },
     "nvidia-technical:https://developer.nvidia.com/blog/how-to-read-data-into-gpu-memory-in-python-with-nvidia-gpudirect-storage": {
       "list_fingerprint": "31d99a785ff1986d2208a755f68246415bdc6ca359675860d5723c597b429dae",
       "status": "bootstrap_skipped"
@@ -29246,6 +29303,12 @@
       "language": "en",
       "url": "https://blog.st.com/vl53lb/"
     },
+    "products:https://blog.st.com/winstar-smart-display": {
+      "fingerprint": "f4e291e21686cd7d9e6539529ac22c6c5bbc06001b8ae11ede10f76cdfc581d8",
+      "first_seen": "2026-11-25T22:40:54.493846+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/winstar-smart-display/"
+    },
     "products:https://blog.st.com/zephyr": {
       "fingerprint": "e84e40df92ec40c9dcaa3cb4f57f99fff7c9b6751d4a6c995fcbf7fd45df7f01",
       "first_seen": "2026-11-05T15:43:22.540976+00:00",
@@ -29551,6 +29614,12 @@
       "first_seen": "2026-10-30T16:10:24.506358+00:00",
       "language": "en",
       "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/"
+    },
+    "products:https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling": {
+      "fingerprint": "19f270ab3ffd21d87f529f0b370f11485a8bf9a2bdfeddede4ccb93fc4887570",
+      "first_seen": "2026-11-25T22:40:54.493846+00:00",
+      "language": "en",
+      "url": "https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling/"
     },
     "products:https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers": {
       "fingerprint": "2af6cf3c5d0a65b88523860c3f9de993d032a95389aa7220440dc85b642fe143",
@@ -30170,6 +30239,10 @@
     },
     "st-technical:https://blog.st.com/vl53lb": {
       "list_fingerprint": "7b81892ac47ba87d4650a2340c1ab30354227dea1abe789cb439d60d434ed589",
+      "status": "posted"
+    },
+    "st-technical:https://blog.st.com/winstar-smart-display": {
+      "list_fingerprint": "f4e291e21686cd7d9e6539529ac22c6c5bbc06001b8ae11ede10f76cdfc581d8",
       "status": "posted"
     },
     "st-technical:https://blog.st.com/zephyr": {
