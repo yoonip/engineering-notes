@@ -1,87 +1,61 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-26 14:05 KST
+갱신: 2026-11-27 00:18 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
-## 스페이스X-테슬라 5천조원 초대형 합병 진척…특별위 이사 선임
+## 8차선 삼킨 끔찍한 화마…"최소 31명 사망" 대참사
 
-> 일론 머스크가 이끄는 항공우주 기업 스페이스X와 전기차 업체 테슬라 간의 초대형 인수·합병\(M&amp;amp...
+> 이집트 고속도로에서 유조차가 뒤집히며 큰 불이 나, 대규모 인명피해가 발생했습니다.
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261126012200075>) · 2026-11-26 07:07 KST · 작성·제공: 김경윤
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008865655&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-26 22:21 KST · 작성·제공: kimmy123@sbs.co.kr\(김정기\)
 
-## '美제재 무색' 中상가서 수출금지 엔비디아 최첨단칩 버젓이 유통
+## 노르웨이 저가항공사, 운항 전면 중단…이란전쟁에 생사 기로
 
-> "\(엔비디아의\) 블랙웰 칩이 많이 필요하다면 그냥 화창베이\(華北\) 상가에 가서 거래하면 될 겁니다."
+> 노르웨이 저가항공사 노르스 아틀란틱이 이란 전쟁의 직격탄을 맞으며 파산 위기에 몰렸다고 로이터통신이 보도했...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261126010700091>) · 2026-11-26 06:56 KST · 작성·제공: 권영전
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261127000200098>) · 2026-11-27 00:05 KST · 작성·제공: 현윤경
 
-## D램 우려에 마이크론 이틀새 15% 급락…고점 반토막
+## "쿠웨이트서 이란 드론 공격에 이탈리아인 2명 사망"
 
-> 미국 메모리 반도체 대표주 마이크론이 25일\(현지시간\) 4.5% 하락한 601.3달러로 마감하며 이틀 새 15...
+> 쿠웨이트 국방부는 26일\(현지시간\) 이란 드론이 자국 필수시설을 공격해 인명과 재산 피해가 발생했다고...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261126012100009>) · 2026-11-26 06:41 KST · 작성·제공: 정주호
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261126195700099>) · 2026-11-26 23:38 KST · 작성·제공: 나확진
 
-## 한국국제보건의료재단 창립 20주년…성과중심 보건 ODA 모색
+## "10월 호르무즈 인근 선박 공격 30건 넘어…전쟁 발발 후 최다"
 
-> 한국국제보건의료재단은 26일 창립 20주년을 맞아 보건 공적개발원조\(ODA\) 성과 공유회를 열고 성과 중심의 ...
+> 지난달 호르무즈 해협과 인근 페르시아만, 오만만에서 접수된 상선 공격 신고 건수가 30건을 넘어 지난...
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261126102600530>) · 2026-11-26 13:54 KST · 작성·제공: 김영신
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261126195200099>) · 2026-11-26 23:20 KST · 작성·제공: 나확진
 
-## 우크라 아동 9명 가족 품으로…'외교 보폭' 넓히는 멜라니아
+## 탈북민의 추수감사 만찬…“고향은 멀어도 곁을 지키는 사람들”
 
-> 2022년 2월 러시아 침공으로 시작된 전쟁통에 가족과 헤어져야했던 수많은 우크라이나 어린이 중에 9명이 추가...
+> 고향을 떠나 온 탈북민들에게도 온 가족이 모이는 미국의 명절 땡스기빙데이, 추수감사절은 특별한 날입니다.
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261126055900009>) · 2026-11-26 10:23 KST · 작성·제공: 노효동
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8228220.html>) · 2026-11-26 23:48 KST
 
-## 젠슨황 복귀일에 엔비디아 본사 방문한 머스크…친분·의리 과시
+## 이재용, 메모리 장기구매 요청한 머스크에 “뭘 더 해줄 수 있느냐”
 
-> 스캔들로 사임했다가 재선임된 젠슨 황 엔비디아 최고경영자\(CEO\)의 회사 복귀 현장을 일론 머스크 스...
+> 인공지능\(AI\) 열풍으로 메모리 반도체 공급난이 심화하면서 글로벌 기업들이 물량 확보에 사활을 걸고 있다.
 
-출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261126108500091>) · 2026-11-26 13:53 KST · 작성·제공: 권영전
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Inter/article/all/20261126/135099758/2>) · 2026-11-26 22:49 KST
 
-## 후티 반군, 사우디아라비아 최대 정유시설 공격 주장
+## 북한 AI 전문가 “AI 챗봇, 정치적 질문인지 먼저 판단 뒤 답변 생성”
 
-> 예멘 내 친이란 후티 반군이 사우디아라비아 최대 정유시설인 라스 타누라 정유시설을 공격했다고 주장했습니다.
+> 북한이 자체 개발한 것으로 알려진 인공지능\(AI\) 챗봇 ‘지혜의 샘’이 최근 모습을 드러냈다.
 
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8227954.html>) · 2026-11-26 04:52 KST
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/26/north-korea-ai-chatbot-wisdom-spring-emerges/>) · 2026-11-26 18:01 KST · 작성·제공: 서울-김지수 kimjis@rfa.org
 
-## 미, 한국 등 14곳에 '과잉생산' 관세…15% 상한 유지
+## 북, ‘다영역’ 핵탄두 공개...‘비핵화 의제 없다’ 대미 메시지
 
-출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008863732&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-26 04:48 KST · 작성·제공: captain@sbs.co.kr\(정성진 기자\)
+> 조선중앙통신에 따르면 김 위원장은 전날 핵무기 전력화 관련 사업을 현지지도했다.
 
-## 트럼프 대통령, ‘이란전 예산 차단’ 움직임에 경고
-
-> 도널드 트럼프 미국 대통령은 이란전 예산을 차단하려는 민주당 움직임에 경고했습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8227933.html>) · 2026-11-26 04:08 KST
-
-## 리비아 군 “우크라이나의 러시아 함정 공격에 대응할 것”
-
-> 리비아 군 당국이 우크라이나의 러시아 군함 공격으로 리비아 군인 2명이 숨졌다며, 적절한 시점과 장소에서 대응하겠다고 밝혔습니다.
-
-출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8227922.html>) · 2026-11-26 03:48 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
-
-## 스위스 “북 사무소 폐쇄 유감…대표는 베이징 복귀 조치”
-
-> 스위스 외무부는 평양 외교사무소를 폐쇄한 북한 당국의 결정에 유감을 표하며, 사무소 대표를 베이징 대사관으로 복귀시키고 있다고 RFA에 밝혔다.
-
-출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/25/north-korea-swiss-office-closure-sanctions/>) · 2026-11-26 04:05 KST · 작성·제공: 워싱턴-자민 앤더슨 andersonj@rfa.org
-
-## 미 무역대표부, 한국 등 14개국 '과잉생산' 불공정 판정…한국산 최대 15% 관세 제안
-
-> 미국 정부가 한국을 포함한 14개 교역국의 제조업 과잉생산 관행을 불공정 행위로 판정하고 추가 관세 방안을 내놨습니다.
-
-출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8227899.html>) · 2026-11-26 02:44 KST · 작성·제공: voadigital@voanews.com \(조상진\)
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/26/north-korea-showcases-diverse-tactical-nuclear-warheads-signals-continued-nuclear-buildup/>) · 2026-11-26 17:14 KST · 작성·제공: 서울-목용재 moky@rfa.org
 
 ## 다른 매체의 원문
 
-- [Fighting in eastern Congo forces Ebola workers to evacuate, threatening outbreak response](<https://abcnews.com/International/wireStory/fighting-eastern-congo-forces-ebola-workers-evacuate-threatening-138449760>) · ABC News 미국
-- [Sudan: Sudan Loses OPCW Council Seat Amid Chemical Weapons Allegations](<https://allafrica.com/stories/202611260054.html>) · AllAfrica · allAfrica.com
-- [Sudan: Sudan Rejects Ethiopia's Initiative to Host Peace Talks](<https://allafrica.com/stories/202611260053.html>) · AllAfrica · allAfrica.com
-- [Sudan: Drone Attacks Kill At Least 15 Across Blue Nile](<https://allafrica.com/stories/202611260052.html>) · AllAfrica · allAfrica.com
-- [Puerto Rico's Supreme Court cancels a key power contract and many wonder what's next](<https://abcnews.com/International/wireStory/puerto-ricos-supreme-court-cancels-key-power-contract-138448039>) · ABC News 미국
-- [Fuel tanker crash ignites a massive fire on a highway surrounding Cairo, killing at least 31 people](<https://abcnews.com/International/wireStory/fire-major-highway-surrounding-cairo-kills-30-people-138450467>) · ABC News 미국
+- [Congo Ebola outbreak reaches 12,000 cases as some responders evacuate](<https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders>) · NPR
+- [North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture](<https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump>) · NPR
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
