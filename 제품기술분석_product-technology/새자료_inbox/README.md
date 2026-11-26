@@ -1,64 +1,36 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-26 14:23 KST
+반영: 2026-11-27 00:40 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## MLPerf Training·Endpoints를 석권한 NVIDIA… 첫 참가에서 최고 성능 기록을 세운 Vera Rubin
+## Physical AI at work: inside our robotics area at electronica 2026
 
-> NVIDIA Vera Rubin 플랫폼이 MLPerf 첫 참가에서 학습, 사후 학습, 에이전틱 추론 전반에…
+STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 로봇·모빌리티 주제를 다룹니다.
 
-출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/mlperf-training-endpoints-vera-rubin/>) · RSS·Atom 발행 시각: 2026-11-26 11:56 KST
+출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/physical-ai-electronica-2026/>) · RSS·Atom 발행 시각: 2026-11-26 18:00 KST
 
-RSS·Atom 표기 작성자: NVIDIA Korea
+RSS·Atom 표기 작성자: Giulia Pasqualini
 
-가져온 시각: 2026-11-26 14:22:26 KST
-
-수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
-
-개요: 공식 한국어 소개 발췌
-
-## How to Optimize NVFP4 Attention on NVIDIA RTX Blackwell Through Register Recycling
-
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 추론 주제를 다룹니다.
-
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling/>) · RSS·Atom 발행 시각: 2026-11-26 04:30 KST
-
-RSS·Atom 표기 작성자: Atharva Joshi
-
-가져온 시각: 2026-11-26 07:41:40 KST
-
-수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
-
-개요: 제목·공개 정보에 따른 한국어 안내
-
-## Winstar Smart Display, the 1st 8.8-inch stretched display running AI, a camera, and a GUI on one STM32N6 only
-
-STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 회로·디스플레이 주제를 다룹니다.
-
-출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/winstar-smart-display/>) · RSS·Atom 발행 시각: 2026-11-25 23:00 KST
-
-RSS·Atom 표기 작성자: David Civera
-
-가져온 시각: 2026-11-26 07:41:42 KST
+가져온 시각: 2026-11-27 00:40:14 KST
 
 수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
-## Manage Liquid-Cooled AI Factories with NVIDIA Mission Control
+## electronica 2026: energy, intelligence, and connectivity power the physical AI era
 
-NVIDIA Technical Blog에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 회로·디스플레이 주제를 다룹니다.
+STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에너지·전력 주제를 다룹니다.
 
-출처: [NVIDIA Technical Blog](<https://developer.nvidia.com/blog/>) · [원문](<https://developer.nvidia.com/blog/manage-liquid-cooled-ai-factories-with-nvidia-mission-control/>) · RSS·Atom 발행 시각: 2026-11-20 07:02 KST
+출처: [STMicroelectronics 기술 블로그](<https://blog.st.com/>) · [원문](<https://blog.st.com/electronica-2026/>) · RSS·Atom 발행 시각: 2026-11-26 18:00 KST
 
-RSS·Atom 표기 작성자: Ryan Prout
+RSS·Atom 표기 작성자: Giulia Pasqualini
 
-가져온 시각: 2026-11-26 14:22:25 KST
+가져온 시각: 2026-11-27 00:40:14 KST
 
-수집 경로: [공식 목록·피드](<https://developer.nvidia.com/blog/feed/>) · 방법: 공식 기술 블로그 Atom의 제목·소개
+수집 경로: [공식 목록·피드](<https://blog.st.com/feed/>) · 방법: 공식 기술 블로그 RSS의 제목·소개
 
 개요: 제목·공개 정보에 따른 한국어 안내
 
