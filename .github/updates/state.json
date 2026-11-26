@@ -515,7 +515,9 @@
     "products:https://blog.st.com/ai-data-centers": "products:https://blog.st.com/ai-data-centers",
     "products:https://blog.st.com/aliro": "products:https://blog.st.com/aliro",
     "products:https://blog.st.com/autoiq-ai-emmertra": "products:https://blog.st.com/autoiq-ai-emmertra",
+    "products:https://blog.st.com/electronica-2026": "products:https://blog.st.com/electronica-2026",
     "products:https://blog.st.com/ganspin1102-ganspin1105": "products:https://blog.st.com/ganspin1102-ganspin1105",
+    "products:https://blog.st.com/physical-ai-electronica-2026": "products:https://blog.st.com/physical-ai-electronica-2026",
     "products:https://blog.st.com/rust-mems-drivers": "products:https://blog.st.com/rust-mems-drivers",
     "products:https://blog.st.com/smart-power-distribution": "products:https://blog.st.com/smart-power-distribution",
     "products:https://blog.st.com/snapdragon-wear-elite": "products:https://blog.st.com/snapdragon-wear-elite",
@@ -739,7 +741,9 @@
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72325": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72325",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72326": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72326",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72327": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72327",
-    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72328": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72328"
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72328": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72328",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330"
   },
   "days": {
     "industry": {
@@ -13808,6 +13812,46 @@
           "update": false,
           "url": "https://developer.nvidia.com/blog/manage-liquid-cooled-ai-factories-with-nvidia-mission-control/"
         }
+      ],
+      "2026-11-27": [
+        {
+          "acquired_at": "2026-11-26T15:40:14.624365+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "Giulia Pasqualini",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-26T09:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-26T15:39:17.509921+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/electronica-2026",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 에너지·전력 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "electronica 2026: energy, intelligence, and connectivity power the physical AI era",
+          "update": false,
+          "url": "https://blog.st.com/electronica-2026/"
+        },
+        {
+          "acquired_at": "2026-11-26T15:40:14.624365+00:00",
+          "acquisition_method": "공식 기술 블로그 RSS의 제목·소개",
+          "author": "Giulia Pasqualini",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-26T09:00:00+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-26T15:39:17.509921+00:00",
+          "group": "products",
+          "homepage": "https://blog.st.com/",
+          "key": "products:https://blog.st.com/physical-ai-electronica-2026",
+          "source_name": "STMicroelectronics 기술 블로그",
+          "source_url": "https://blog.st.com/feed/",
+          "summary_ko": "STMicroelectronics 기술 블로그에서 공개한 제품·기술 자료입니다. 공개 제목·소개에서 로봇·모빌리티 주제를 다룹니다.",
+          "summary_mode": "제목·공개 정보에 따른 한국어 안내",
+          "title": "Physical AI at work: inside our robotics area at electronica 2026",
+          "update": false,
+          "url": "https://blog.st.com/physical-ai-electronica-2026/"
+        }
       ]
     },
     "reports": {
@@ -15644,6 +15688,46 @@
           "update": false,
           "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72328"
         }
+      ],
+      "2026-11-27": [
+        {
+          "acquired_at": "2026-11-26T15:40:13.248367+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-26",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-11-26T15:39:17.509921+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Drupal社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1][2] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Drupal 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72329"
+        },
+        {
+          "acquired_at": "2026-11-26T15:40:12.114718+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-26",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-11-26T15:39:17.509921+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Linux 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Linux 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72330"
+        }
       ]
     }
   },
@@ -16372,6 +16456,18 @@
       "date": "2026-11-25",
       "description": "Broadcom社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
       "title": "VMware 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-11-26",
+      "description": "Drupal社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1][2] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Drupal 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-11-26",
+      "description": "Linux 재단은 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Linux 제품 보안 업데이트 권고"
     },
     "https://www.kdi.re.kr/research/economy?pub_no=18120": {
       "date": "",
@@ -18542,9 +18638,17 @@
       "group": "products",
       "key": "products:https://blog.st.com/autoiq-ai-emmertra"
     },
+    "https://blog.st.com/electronica-2026": {
+      "group": "products",
+      "key": "products:https://blog.st.com/electronica-2026"
+    },
     "https://blog.st.com/ganspin1102-ganspin1105": {
       "group": "products",
       "key": "products:https://blog.st.com/ganspin1102-ganspin1105"
+    },
+    "https://blog.st.com/physical-ai-electronica-2026": {
+      "group": "products",
+      "key": "products:https://blog.st.com/physical-ai-electronica-2026"
     },
     "https://blog.st.com/rust-mems-drivers": {
       "group": "products",
@@ -19346,6 +19450,14 @@
       "group": "tools",
       "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72328"
     },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330"
+    },
     "https://www.kdi.re.kr/research/economy?pub_no=19321": {
       "group": "reports",
       "key": "reports:https://www.kdi.re.kr/research/economy?pub_no=19321"
@@ -19444,12 +19556,6 @@
       "ETag": "\"a47402a6175cfac298d421bca4235ddc\"",
       "Last-Modified": "Mon, 23 Nov 2026 08:45:41 GMT"
     },
-    "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"edabaa3ffe7a1271a1f7665c7cf1abcfc7a5d228d7cfbaa68a42e446f9c50a0b\""
-    },
-    "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"1ab28c2c66828fa96bf0538ceadfaff91c16d47a5b32f2e5a08e44af5f182267\""
-    },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
     "https://blog.google/robots.txt": {},
@@ -19466,7 +19572,7 @@
       "Last-Modified": "Mon, 16 Nov 2026 18:20:49 GMT"
     },
     "https://blog.st.com/feed": {
-      "Last-Modified": "Thu, 26 Nov 2026 03:51:30 GMT"
+      "Last-Modified": "Thu, 26 Nov 2026 11:08:18 GMT"
     },
     "https://blog.st.com/robots.txt": {},
     "https://blogs.nvidia.co.kr/blog/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout": {},
@@ -19489,6 +19595,9 @@
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {},
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/introducing-gemini-4-neon": {},
+    "https://deepmind.google/blog/rss.xml": {
+      "ETag": "\"KkSKlA\""
+    },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"0D56qA\""
     },
@@ -19502,10 +19611,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc9-eH/5toRnJxTTZ5sHatV/TxHWeCw\""
+      "ETag": "W/\"33bc9-Q0Sbrpw7LCrsZLDuiiZmYFOhqwo\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40189-VxVUNzbmXIhanJ567yCM9atqFhs\""
+      "ETag": "W/\"40189-BJBLWM9JAFzcP0bdQmeteWhjRbQ\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -19516,7 +19625,6 @@
     "https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=132": {},
     "https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=133": {},
     "https://ifs.snu.ac.kr/publication/issue-brief?mode=view&pubidx=137": {},
-    "https://ifs.snu.ac.kr/publication/report": {},
     "https://ifs.snu.ac.kr/robots.txt": {
       "ETag": "\"2a-63f74ed09bdba\"",
       "Last-Modified": "Tue, 23 Sep 2025 09:54:45 GMT"
@@ -19552,12 +19660,12 @@
       "Last-Modified": "Thu, 26 Nov 2026 05:08:58 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1795670496\"",
-      "Last-Modified": "Thu, 26 Nov 2026 05:21:36 GMT"
+      "ETag": "\"1795706640\"",
+      "Last-Modified": "Thu, 26 Nov 2026 15:24:00 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1795670058\"",
-      "Last-Modified": "Thu, 26 Nov 2026 05:14:18 GMT"
+      "ETag": "\"1795707621\"",
+      "Last-Modified": "Thu, 26 Nov 2026 15:40:21 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -19647,6 +19755,8 @@
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72326": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72327": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72328": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330": {},
     "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133": {},
     "https://www.boho.or.kr/robots.txt": {
       "ETag": "W/\"243-1794382637620\"",
@@ -19692,7 +19802,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"02eb2d6f35bdc6503e0d032b1e3caf926\""
+      "ETag": "\"0dca2965afbbb2c2dec35d081a80cdc72\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -19792,8 +19902,12 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"2eb44635dc8d81db0b5372d392a0e21d\"",
-      "Last-Modified": "Thu, 26 Nov 2026 02:40:15 GMT"
+      "ETag": "\"4d8d499455a33f481cac98fa8d709635\"",
+      "Last-Modified": "Thu, 26 Nov 2026 12:46:13 GMT"
+    },
+    "https://www.ocw-openmatters.org/feed": {
+      "ETag": "\"288e545a72d61d49aa7b72236d55327f\"",
+      "Last-Modified": "Thu, 12 Nov 2026 14:56:06 GMT"
     },
     "https://www.ocw-openmatters.org/robots.txt": {
       "ETag": "\"065a733f5-0;;;\"",
@@ -19915,7 +20029,7 @@
       "rules": "User-agent: usasearch\nCrawl-delay: 1\nAllow: /\n\nUser-agent: *\nAllow: /"
     },
     "https://www.ocw-openmatters.org/robots.txt": {
-      "day": "2026-11-25",
+      "day": "2026-11-26",
       "rules": "user-agent: * \ndisallow: \ncrawl-delay: 60\n"
     },
     "https://www.spri.kr/robots.txt": {
@@ -25887,6 +26001,14 @@
       "list_fingerprint": "85000572e00c59eab88d6fb2fc20123a7cb82f4b95dff62621b42a0ce4054dc2",
       "status": "posted"
     },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329": {
+      "list_fingerprint": "72ce2eca1943d89e459748ca3fa3796953869e45ebd5b6324938ca96960653a8",
+      "status": "posted"
+    },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330": {
+      "list_fingerprint": "9c72450e08beab8cb12fe3cb23755469ed78f02f5885e6472789bb572bbd3d00",
+      "status": "posted"
+    },
     "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93860&mid=a10306040000": {
       "list_fingerprint": "d8d15543a49c2c241f17085238c50bbbc61e603451d3734f26ff9c1f1821d2ae",
       "status": "older_material"
@@ -30281,11 +30403,23 @@
       "language": "en",
       "url": "https://blog.st.com/autoiq-ai-emmertra/"
     },
+    "products:https://blog.st.com/electronica-2026": {
+      "fingerprint": "f4155b345518d528749ed18042a293fd7d5834f4f4e1d2c543e47c85fbd03007",
+      "first_seen": "2026-11-26T15:39:17.509921+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/electronica-2026/"
+    },
     "products:https://blog.st.com/ganspin1102-ganspin1105": {
       "fingerprint": "72501451fdd1fda29cb56a913295af11fd162ce64d3d1f48fe7ab9feb8e93c49",
       "first_seen": "2026-11-11T16:32:11.035949+00:00",
       "language": "en",
       "url": "https://blog.st.com/ganspin1102-ganspin1105/"
+    },
+    "products:https://blog.st.com/physical-ai-electronica-2026": {
+      "fingerprint": "7c97770f633dc4c7b8d1690aa32cd1d0dc240832bbb75a663ee380e3618ac95b",
+      "first_seen": "2026-11-26T15:39:17.509921+00:00",
+      "language": "en",
+      "url": "https://blog.st.com/physical-ai-electronica-2026/"
     },
     "products:https://blog.st.com/rust-mems-drivers": {
       "fingerprint": "92d69c47c15e40d19b4e99d480d764da1d57f6dd20cbab38c16b77356991519f",
@@ -31231,6 +31365,10 @@
       "list_fingerprint": "fd5499447d225312a347500ff0b78bb26f96b00332a49f2cea6094190dd93817",
       "status": "posted"
     },
+    "st-technical:https://blog.st.com/electronica-2026": {
+      "list_fingerprint": "f4155b345518d528749ed18042a293fd7d5834f4f4e1d2c543e47c85fbd03007",
+      "status": "posted"
+    },
     "st-technical:https://blog.st.com/ganspin1102-ganspin1105": {
       "list_fingerprint": "72501451fdd1fda29cb56a913295af11fd162ce64d3d1f48fe7ab9feb8e93c49",
       "status": "posted"
@@ -31246,6 +31384,10 @@
     "st-technical:https://blog.st.com/physical-ai": {
       "list_fingerprint": "3a76cfd434d4dfbe4a062d2e829aa5f52033023172b2bf81cc5564af0697fba3",
       "status": "bootstrap_skipped"
+    },
+    "st-technical:https://blog.st.com/physical-ai-electronica-2026": {
+      "list_fingerprint": "7c97770f633dc4c7b8d1690aa32cd1d0dc240832bbb75a663ee380e3618ac95b",
+      "status": "posted"
     },
     "st-technical:https://blog.st.com/phytec": {
       "list_fingerprint": "8053e76641eb70ab65ddc3afa9ef0586ccaede0e1f62a19bc7d14f72158595ed",
@@ -31820,6 +31962,18 @@
       "first_seen": "2026-11-25T13:23:20.750821+00:00",
       "language": "ko",
       "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72328"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329": {
+      "fingerprint": "81bdf5c5ef7a69e76c13fe103742a802bf810e6de9c9b4e8f535ef4999719897",
+      "first_seen": "2026-11-26T15:39:17.509921+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72329"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330": {
+      "fingerprint": "bc49d3990bd5e9b25a500b16463737cc4f625a394114d09235f894aaa047f074",
+      "first_seen": "2026-11-26T15:39:17.509921+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72330"
     },
     "zai:https://huggingface.co/zai-org/GLM-4-32B-0414": {
       "list_fingerprint": "668099737dbb9d78c04a151552a14b44e342232eb86aaf585c3669bf90b8b004",
