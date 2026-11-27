@@ -1,20 +1,20 @@
 # 산업 기술 새 자료
 
-반영: 2026-11-20 12:42 KST
+반영: 2026-11-27 09:46 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
 
-## 과기정통부-기후부, AI 데이터센터 신속 구축을 위한 전력계통영향평가 제도 개선 추진
+## \(참고\) ESS 중앙계약시장 14개소 선정
 
-> ▷ 비수도권 AIDC 계약전력 50MW 이하는 전력계통영향평가 면제 ▷ AIDC 특구 내 AIDC는 비기술적 평가…
+> ▷ ESS 중앙계약시장, 전남·전북·충남 및 제주 등에 ESS 14개소 구축 추진 기후에너지환경부\(장관 김성환, 이하 기후부\)와 전력거래소는 11월 26일 제3차 ESS…
 
-출처: [기후에너지환경부 에너지·전력 발표](<https://www.mcee.go.kr/>) · [원문](<https://www.mcee.go.kr/home/web/board/read.do;jsessionid=E6uzvlQe-hDQMlsc7SWaN96DLB7ZRdsNpWJe_ezS.mehome2?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1908920>) · RSS·Atom 발행 시각: 2026-11-20 12:00 KST
+출처: [기후에너지환경부 에너지·전력 발표](<https://www.mcee.go.kr/>) · [원문](<https://www.mcee.go.kr/home/web/board/read.do;jsessionid=LGX0B3a_nfXJsZNYtvZ-6tBr7_uPmeZKRoa8Virt.mehome2?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10598&orgCd=&boardMasterId=939&boardId=1910800>) · RSS·Atom 발행 시각: 2026-11-26 19:00 KST
 
-RSS·Atom 표기 작성자: 이화용
+RSS·Atom 표기 작성자: 김유범
 
-가져온 시각: 2026-11-20 12:42:03 KST
+가져온 시각: 2026-11-27 09:45:57 KST
 
 수집 경로: [공식 목록·피드](<https://www.mcee.go.kr/home/web/board/rss.do?menuId=10598&boardMasterId=939>) · 방법: 공식 보도자료 RSS; 제목의 에너지·전력 기술 주제로 선택
 
