@@ -1,10 +1,24 @@
 # 제품·기술 새 자료
 
-반영: 2026-11-27 00:40 KST
+반영: 2026-11-27 19:03 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## Firebird, 아르메니아에 CIS 지역 최대 규모 AI 팩토리 개소
+
+> NVIDIA 가속 컴퓨팅과 Dell Technologies의 AI 인프라를 기반으로 아르메니아에 새로운 AI 컴퓨팅 허브가 문을 열었습니다.
+
+출처: [NVIDIA 한국어 블로그](<https://blogs.nvidia.co.kr/>) · [원문](<https://blogs.nvidia.co.kr/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx/>) · RSS·Atom 발행 시각: 2026-11-27 14:31 KST
+
+RSS·Atom 표기 작성자: NVIDIA Korea
+
+가져온 시각: 2026-11-27 19:03:18 KST
+
+수집 경로: [공식 목록·피드](<https://blogs.nvidia.co.kr/feed/>) · 방법: 공식 한국어 블로그 RSS의 제목·소개
+
+개요: 공식 한국어 소개 발췌
 
 ## Physical AI at work: inside our robotics area at electronica 2026
 
