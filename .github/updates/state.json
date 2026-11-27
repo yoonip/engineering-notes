@@ -542,6 +542,7 @@
     "products:https://blogs.nvidia.co.kr/blog/dgx-spark-hpc-developer-kit-sc26": "products:https://blogs.nvidia.co.kr/blog/dgx-spark-hpc-developer-kit-sc26",
     "products:https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure": "products:https://blogs.nvidia.co.kr/blog/eclypsium-trusted-safe-secure-ai-infrastructure",
     "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction": "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction",
+    "products:https://blogs.nvidia.co.kr/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx": "products:https://blogs.nvidia.co.kr/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx",
     "products:https://blogs.nvidia.co.kr/blog/ian-buck-sc26": "products:https://blogs.nvidia.co.kr/blog/ian-buck-sc26",
     "products:https://blogs.nvidia.co.kr/blog/korea-physical-ai-ecosystem": "products:https://blogs.nvidia.co.kr/blog/korea-physical-ai-ecosystem",
     "products:https://blogs.nvidia.co.kr/blog/korea-secure-agentic-ai": "products:https://blogs.nvidia.co.kr/blog/korea-secure-agentic-ai",
@@ -745,7 +746,8 @@
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72328": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72328",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329",
     "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330",
-    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72331": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72331"
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72331": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72331",
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72332": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72332"
   },
   "days": {
     "industry": {
@@ -13874,6 +13876,25 @@
           "title": "Physical AI at work: inside our robotics area at electronica 2026",
           "update": false,
           "url": "https://blog.st.com/physical-ai-electronica-2026/"
+        },
+        {
+          "acquired_at": "2026-11-27T10:03:18.801633+00:00",
+          "acquisition_method": "공식 한국어 블로그 RSS의 제목·소개",
+          "author": "NVIDIA Korea",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-27T05:31:58+00:00",
+          "date_label": "RSS·Atom 발행 시각",
+          "first_seen": "2026-11-27T10:02:04.122671+00:00",
+          "group": "products",
+          "homepage": "https://blogs.nvidia.co.kr/",
+          "key": "products:https://blogs.nvidia.co.kr/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx",
+          "source_name": "NVIDIA 한국어 블로그",
+          "source_url": "https://blogs.nvidia.co.kr/feed/",
+          "summary_ko": "NVIDIA 가속 컴퓨팅과 Dell Technologies의 AI 인프라를 기반으로 아르메니아에 새로운 AI 컴퓨팅 허브가 문을 열었습니다.",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Firebird, 아르메니아에 CIS 지역 최대 규모 AI 팩토리 개소",
+          "update": false,
+          "url": "https://blogs.nvidia.co.kr/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx/"
         }
       ]
     },
@@ -15769,6 +15790,25 @@
           "title": "Synology 제품 보안 업데이트 권고",
           "update": false,
           "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72331"
+        },
+        {
+          "acquired_at": "2026-11-27T10:03:17.040040+00:00",
+          "acquisition_method": "공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터",
+          "author": "",
+          "author_label": "RSS·Atom 표기 작성자",
+          "date": "2026-11-27",
+          "date_label": "공식 RSS 게시일",
+          "first_seen": "2026-11-27T10:02:04.122671+00:00",
+          "group": "tools",
+          "homepage": "https://www.boho.or.kr/",
+          "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72332",
+          "source_name": "KISA 보호나라 보안공지",
+          "source_url": "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133",
+          "summary_ko": "Palo Alto Networks社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인…",
+          "summary_mode": "공식 한국어 소개 발췌",
+          "title": "Palo Alto Networks 제품 보안 업데이트 권고",
+          "update": false,
+          "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72332"
         }
       ]
     }
@@ -16516,6 +16556,12 @@
       "date": "2026-11-27",
       "description": "Synology社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
       "title": "Synology 제품 보안 업데이트 권고"
+    },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72332": {
+      "canonical_url": "http://www.boho.or.kr:80",
+      "date": "2026-11-27",
+      "description": "Palo Alto Networks社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 [1] o 영향을 받는 버전을 사용 중인 사용자는 해결 방안에 따라 최신 버전으로 업데이트 권고",
+      "title": "Palo Alto Networks 제품 보안 업데이트 권고"
     },
     "https://www.kdi.re.kr/research/economy?pub_no=18120": {
       "date": "",
@@ -18790,6 +18836,10 @@
       "group": "products",
       "key": "products:https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction"
     },
+    "https://blogs.nvidia.co.kr/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx": {
+      "group": "products",
+      "key": "products:https://blogs.nvidia.co.kr/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx"
+    },
     "https://blogs.nvidia.co.kr/blog/ian-buck-sc26": {
       "group": "products",
       "key": "products:https://blogs.nvidia.co.kr/blog/ian-buck-sc26"
@@ -19510,6 +19560,10 @@
       "group": "tools",
       "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72331"
     },
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72332": {
+      "group": "tools",
+      "key": "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72332"
+    },
     "https://www.kdi.re.kr/research/economy?pub_no=19321": {
       "group": "reports",
       "key": "reports:https://www.kdi.re.kr/research/economy?pub_no=19321"
@@ -19609,14 +19663,14 @@
       "Last-Modified": "Tue, 03 Nov 2026 03:11:54 GMT"
     },
     "https://api-docs.deepseek.com/updates": {
-      "ETag": "\"a47402a6175cfac298d421bca4235ddc\"",
-      "Last-Modified": "Mon, 23 Nov 2026 08:45:41 GMT"
+      "ETag": "\"c58990963b46c7eae2d9d2c4a047178a\"",
+      "Last-Modified": "Fri, 27 Nov 2026 07:29:07 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"0eb68f0b4566e438a5b277b14671dadf55c96721c79290cc817b040cd15045e7\""
+      "ETag": "W/\"6b50425f87e94edb25e8fb1a8f5d16bedf36d9d6f3d83901e0eae89f02930184\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"3b4b43a3b8df50ab8c5bcc25f92a0370b8490f533dfc6826afa2114819824759\""
+      "ETag": "W/\"00e14ac3b2cc03d6867c151bdb109e166766ed1908b45d2d2f3ae1ed4ed18975\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -19642,8 +19696,8 @@
     "https://blogs.nvidia.co.kr/blog/rubin-hpc": {},
     "https://blogs.nvidia.co.kr/blog/slurm-quantum-computing-supercomputing": {},
     "https://blogs.nvidia.co.kr/feed": {
-      "ETag": "\"e04e360100a8ee0e1ff5c9f1da6347df-gzip\"",
-      "Last-Modified": "Thu, 26 Nov 2026 03:00:17 GMT"
+      "ETag": "\"33d3f5c97b91b6086dbdcad1882e5fb7-gzip\"",
+      "Last-Modified": "Fri, 27 Nov 2026 05:31:58 GMT"
     },
     "https://blogs.nvidia.co.kr/robots.txt": {
       "ETag": "\"168f-65ed3880e5f63-gzip\"",
@@ -19658,7 +19712,7 @@
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/introducing-gemini-4-neon": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"fOdxEw\""
+      "ETag": "\"ZF6zPA\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"fOdxEw\""
@@ -19673,10 +19727,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc9-RcaKz+ZhBK5iKZbaIAKm+S5bcKE\""
+      "ETag": "W/\"33bc9-FCN4FRsIGj6FA3fijPSdgBj1p5I\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40189-Bu+YG7+BJahDtQv7OjFwG+eCh3U\""
+      "ETag": "W/\"40188-4ebLJcUuBIYbgthDc36ITcS0k9w\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -19713,7 +19767,6 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1574": {},
-    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -19723,12 +19776,12 @@
       "Last-Modified": "Fri, 27 Nov 2026 00:22:15 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1795739097\"",
-      "Last-Modified": "Fri, 27 Nov 2026 00:24:57 GMT"
+      "ETag": "\"1795773657\"",
+      "Last-Modified": "Fri, 27 Nov 2026 10:00:57 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1795739337\"",
-      "Last-Modified": "Fri, 27 Nov 2026 00:28:57 GMT"
+      "ETag": "\"1795773805\"",
+      "Last-Modified": "Fri, 27 Nov 2026 10:03:25 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -19736,13 +19789,13 @@
       "Last-Modified": "Wed, 28 Oct 2026 20:20:49 GMT"
     },
     "https://rss.arxiv.org/rss/cs.AI": {
-      "ETag": "6ac36bec172504b33f37aae82b6f05a0bfe57ae6b3da2927241141ba19a40203"
+      "ETag": "d40c81d3b184c7d6d0dc1224000b6c4ca8b0ebd1e7e62669d436d5497f1f1271"
     },
     "https://rss.arxiv.org/rss/cs.AR": {
-      "ETag": "672a4620faf43c0cd0e625b91d6ef39010c90589394a85cba4843171fcfba54e"
+      "ETag": "74c7846e0b2568523560b4185f63258c06a8a079822b8820dd004768e568b9ae"
     },
     "https://rss.arxiv.org/rss/eess.SP": {
-      "ETag": "abd82fced140a3a2fb3899d014791a1d24e52e0521a4ab40033a05d27ff55d7c"
+      "ETag": "98480f1e21fd1e7ddc27bfe7b9fb5897d5ca03f433a02b64ef2b6d5b646ee40f"
     },
     "https://www.anthropic.com/claude-fable-and-mythos-5-2": {},
     "https://www.anthropic.com/claude-haiku-5-5": {},
@@ -19821,6 +19874,7 @@
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72329": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72330": {},
     "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72331": {},
+    "https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72332": {},
     "https://www.boho.or.kr/kr/rss.do?bbsId=B0000133": {},
     "https://www.boho.or.kr/robots.txt": {
       "ETag": "W/\"243-1794382637620\"",
@@ -19866,7 +19920,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"06496d30dea627427cd04937d65cd5efa\""
+      "ETag": "\"0806d563ca31ac70d5a1dd732d9fdf966\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -19966,8 +20020,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"83280b219fe41726bc8e2d37e0a8d389\"",
-      "Last-Modified": "Thu, 26 Nov 2026 20:40:06 GMT"
+      "ETag": "\"71f5956cf246f1a2b8f87ccba26da998\"",
+      "Last-Modified": "Fri, 27 Nov 2026 05:40:14 GMT"
     },
     "https://www.ocw-openmatters.org/robots.txt": {},
     "https://www.spri.kr/posts/view/23959?code=AI-Brief": {},
@@ -26076,6 +26130,10 @@
       "list_fingerprint": "0aa8c63337dc8edff3f8747ab34b08b771f6bd59e0eba20fcab4b8f0c1147d14",
       "status": "posted"
     },
+    "kisa-security:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72332": {
+      "list_fingerprint": "b81fa55ab9cfc6eccde54c3570cfbf085fc26c73da7ccd94adc2a6a0b6a00bec",
+      "status": "posted"
+    },
     "kistep-technology-brief:https://www.kistep.re.kr/board.es?act=view&bid=0031&list_no=93860&mid=a10306040000": {
       "list_fingerprint": "d8d15543a49c2c241f17085238c50bbbc61e603451d3734f26ff9c1f1821d2ae",
       "status": "older_material"
@@ -26791,6 +26849,10 @@
     "nvidia-korea:https://blogs.nvidia.co.kr/blog/european-retail-open-models-robotics": {
       "list_fingerprint": "28f5839ea063fd5b7aefdedfa5aaacf8df78d3e1027815de23f7d50f2993077c",
       "status": "bootstrap_skipped"
+    },
+    "nvidia-korea:https://blogs.nvidia.co.kr/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx": {
+      "list_fingerprint": "76bd237592b22accdb8bfcf4cfe831a94950afea9bdc741bf90cc2ead4d2c836",
+      "status": "posted"
     },
     "nvidia-korea:https://blogs.nvidia.co.kr/blog/ian-buck-sc26": {
       "list_fingerprint": "835493e8cd5720e59c3b49b5dd4cef7974361ad58ba0a5f764618ab0ef0e58e0",
@@ -30630,6 +30692,12 @@
       "language": "ko",
       "url": "https://blogs.nvidia.co.kr/blog/europe-earth-2-open-models-weather-climate-prediction/"
     },
+    "products:https://blogs.nvidia.co.kr/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx": {
+      "fingerprint": "76bd237592b22accdb8bfcf4cfe831a94950afea9bdc741bf90cc2ead4d2c836",
+      "first_seen": "2026-11-27T10:02:04.122671+00:00",
+      "language": "ko",
+      "url": "https://blogs.nvidia.co.kr/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx/"
+    },
     "products:https://blogs.nvidia.co.kr/blog/ian-buck-sc26": {
       "fingerprint": "835493e8cd5720e59c3b49b5dd4cef7974361ad58ba0a5f764618ab0ef0e58e0",
       "first_seen": "2026-11-23T11:06:27.876053+00:00",
@@ -32051,6 +32119,12 @@
       "first_seen": "2026-11-27T00:45:02.184794+00:00",
       "language": "ko",
       "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72331"
+    },
+    "tools:https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&nttId=72332": {
+      "fingerprint": "7d40496892263c090a8eb0f663a6348772afcae10261e3b8c19a0c941cbe1bb3",
+      "first_seen": "2026-11-27T10:02:04.122671+00:00",
+      "language": "ko",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72332"
     },
     "zai:https://huggingface.co/zai-org/GLM-4-32B-0414": {
       "list_fingerprint": "668099737dbb9d78c04a151552a14b44e342232eb86aaf585c3669bf90b8b004",
