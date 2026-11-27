@@ -1,10 +1,22 @@
 # 도구·보안 새 자료
 
-반영: 2026-11-27 09:46 KST
+반영: 2026-11-27 19:03 KST
 
 [카테고리 목차](../README.md) · [날짜별 소식](날짜별/README.md)
 
 검토와 해설 작성에 참고할 공식 새 자료를 모읍니다.
+
+## Palo Alto Networks 제품 보안 업데이트 권고
+
+> Palo Alto Networks社는 자사 제품에서 발생하는 취약점을 해결한 보안 업데이트 발표 \[1\] o 영향을 받는 버전을 사용 중인…
+
+출처: [KISA 보호나라 보안공지](<https://www.boho.or.kr/>) · [원문](<https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&bbsId=B0000133&searchWrd=&menuNo=205020&pageIndex=1&categoryCode=&nttId=72332>) · 공식 RSS 게시일: 2026-11-27
+
+가져온 시각: 2026-11-27 19:03:17 KST
+
+수집 경로: [공식 목록·피드](<https://www.boho.or.kr/kr/rss.do?bbsId=B0000133>) · 방법: 공식 RSS와 보안공지의 개요 및 원문의 공개 메타데이터
+
+개요: 공식 한국어 소개 발췌
 
 ## Synology 제품 보안 업데이트 권고
 
