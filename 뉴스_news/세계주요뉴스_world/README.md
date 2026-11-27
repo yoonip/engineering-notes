@@ -1,6 +1,6 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-27 09:35 KST
+갱신: 2026-11-27 18:40 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
 
@@ -46,6 +46,24 @@
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261127023000009>) · 2026-11-27 08:30 KST · 작성·제공: 고일환
 
+## "르펜 벌써 대통령 된듯 오만"…마크롱 발끈
+
+> 에마뉘엘 마크롱 프랑스 대통령이 내년 봄 대선의 유력 주자인 극우 국민연합\(RN\) 마린 르펜을 향해 불만을 ...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261127145500085>) · 2026-11-27 17:26 KST · 작성·제공: 김지연
+
+## 日 문부상 문책 결의안 4표차 부결…'관료 초청 정치자금 파티'
+
+> 관료를 초청한 정치자금 파티 개최 사실이 드러나며 파문이 일었던 세키 요시히로 문부과학상에 대한 문책 결의안이...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261127155400009>) · 2026-11-27 18:26 KST · 작성·제공: 김병규
+
+## 中당국, 장중 '증시부양' 메시지…주요지수 2년만에 최고상승률\(종합\)
+
+> 중국 증시가 최근 부진에 빠진 가운데 당국이 27일\(현지시간\) 이례적으로 장중 정부 주도 자금의 역할을 강...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261127111851089>) · 2026-11-27 18:05 KST · 작성·제공: 차병섭
+
 ## 이스라엘 “가자지구서 사흘새 하마스 고위급 3명 제거”
 
 > 이스라엘군이 가자지구에서 하마스 고위급 인사 3명을 잇달아 제거했다고 밝히면서, 휴전 합의에도 불구하고 양측의 긴장이 다시 고조되고 있습니다.
@@ -69,6 +87,24 @@
 > 고향을 떠나 온 탈북민들에게도 온 가족이 모이는 미국의 명절 땡스기빙데이, 추수감사절은 특별한 날입니다.
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8228220.html>) · 2026-11-26 23:48 KST
+
+## 홍익표 북향민 “현실적 조정” 언급… 탈북민 용어 재논의 계기될까
+
+> 상당수 탈북민들은 홍익표 후보자의 "북향민 현실적 조정" 발언을 계기로 관련 표현 사용에 대해 정부가 개입하지 말 것을 주장하고 있다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/27/north-korean-defectors-oppose-government-intervention-in-terminology/>) · 2026-11-27 17:07 KST · 작성·제공: 서울-목용재 moky@rfa.org
+
+## 북 주민들 ‘전기 명당’ 찾아 삼매경… 화력발전소 주변이 1순위
+
+> 북한 전역에서 정전으로 주민들이 큰 불편을 겪고 있는 가운데, 일부 주민들은 전기 공급이 잘되는 지역으로 아예 이사를 하고 있는 것으로 알려졌다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/27/north-koreans-move-to-areas-with-better-electricity-supply/>) · 2026-11-27 17:00 KST · 작성·제공: 서울-안창규 nk@rfa.org
+
+## 북 당국, 휘발유 사용 오토바이 단속 왜?
+
+> 북한 당국이 최근 휘발유를 사용하는 내연기관 오토바이에 대한 단속을 강화하는 것으로 알려졌다.
+
+출처: [RFA 뉴스 헤드라인](<https://rfa.org/>) · [원문](<https://rfa.org/korean/in-focus/2026/11/27/north-korea-tightens-crackdown-on-gasoline-powered-motorcycles-amid-rising-fuel-prices/>) · 2026-11-27 14:10 KST · 작성·제공: 서울-김지은 nk@rfa.org 및 목용재 moky@rfa.org
 
 ## 이재용, 메모리 장기구매 요청한 머스크에 “뭘 더 해줄 수 있느냐”
 
@@ -94,6 +130,10 @@
 - [Congo Ebola outbreak reaches 12,000 cases as some responders evacuate](<https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders>) · NPR
 - [Spain's former central bank head chosen as next European Central Bank president](<https://abcnews.com/International/wireStory/leaders-choose-spains-former-central-bank-head-european-138468703>) · ABC News 미국
 - [North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture](<https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump>) · NPR
+- [Here are the main issues driving Spain's national election and why they matter for Europe](<https://abcnews.com/International/wireStory/main-issues-driving-spains-national-election-matter-europe-138476510>) · ABC News 미국
+- [Zelenskyy warns of imminent major Russian attack on Ukraine’s power grid](<https://abcnews.com/International/wireStory/zelenskyy-warns-imminent-major-russian-attack-ukraines-power-138468250>) · ABC News 미국
+- [Africa: All of Africa Today - November 27, 2026](<https://allafrica.com/stories/202611270160.html>) · AllAfrica · allAfrica.com
+- [Pakistan set to host talks with Saudi Arabia and Turkey under trilateral defense pact](<https://abcnews.com/International/wireStory/pakistan-set-host-talks-saudi-arabia-turkey-trilateral-138477505>) · ABC News 미국
 - [Schizophrenic man found guilty of attempted murders of 14, including 10 on train](<https://abcnews.com/International/wireStory/schizophrenic-man-found-guilty-attempted-murders-14-people-138470756>) · ABC News 미국
 - [Uganda: 15,000 Young People Acquired HIV in 2023, 80 Percent of Them Girls, Parliament Warns](<https://allafrica.com/stories/202611260512.html>) · AllAfrica · allAfrica.com
 
