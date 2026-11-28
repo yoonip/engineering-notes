@@ -1,6 +1,6 @@
 # 국내 주요뉴스
 
-갱신: 2026-11-28 11:41 KST
+갱신: 2026-11-28 20:46 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/국내주요뉴스_korea/날짜별>)
 
@@ -12,9 +12,21 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008867774&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-28 11:28 KST · 작성·제공: chef@sbs.co.kr\(한성희\)
 
+## \[단독\] 배우자 주식 1억 2천만 원…심사도 신탁도 안 해
+
+> 홍익표 통일부 장관 후보자가 국회의원 시절, 배우자 주식을 처분하라는 결정에 불복해 소송까지 냈다가 패소했다는 내용, 어제 저희가 단독으로 전해…
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008868014&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-28 20:11 KST · 작성·제공: ms@sbs.co.kr\(장민성\)
+
 ## 인천공항 출국하던 전역군인 여행가방서 또 '공포탄'
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008867702&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-28 11:09 KST · 작성·제공: newsservice@sbs.co.kr\(김은진\)
+
+## "마운자로 성지" 길게 늘어선 줄…한국인들로 북새통
+
+> 최근 일본 대마도가 비만 치료제, 마운자로의 성지로 불리며 '원정쇼핑'을 가는 한국인들이 크게 늘고 있습니다.
+
+출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008868016&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-28 20:18 KST · 작성·제공: replay@sbs.co.kr\(박재현\)
 
 ## 세종 전동면서 산불 발생…세종시, 인근 주민에 대피 안내
 
@@ -22,17 +34,35 @@
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261128001400034>) · 2026-11-28 00:37 KST · 작성·제공: 지방데
 
+## 김용준 전 헌법재판소장 별세…지체장애인 출신 첫 대법관
+
+> 지체장애인으로 처음 대법관을 지낸 김용준 전 헌법재판소장이 27일 오후 7시 5분 별세했다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Society/article/all/20261128/135107890/1>) · 2026-11-28 20:15 KST
+
 ## 3전 전승 한국, 3위 턱걸이 일본과 U-17 월드컵축구 32강 한일전
 
 > 2026 카타르 17세 이하\(U-17\) 월드컵 축구대회 32강전에서 한일전이 성사됐다.
 
 출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261128026000007>) · 2026-11-28 10:57 KST · 작성·제공: 안홍석
 
+## 쇼트트랙 최민정, 여자 1,000ｍ 4개 대회 연속 우승\(종합\)
+
+> 한국 여자 쇼트트랙 간판 최민정\(성남시청\)이 상하이에서도 여자 1,000ｍ 정상에 올라 월드투어 개막 4개 대...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261128041251007>) · 2026-11-28 19:30 KST · 작성·제공: 김동한
+
 ## "언제 닫았지" 전국 곳곳서 헛걸음…입점 업체 직격탄
 
 > 홈플러스가 영업을 재개한 지 석 달 만에 또다시 문을 닫았습니다.
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008867278&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-27 23:09 KST · 작성·제공: buhwal@sbs.co.kr\(김태원\)
+
+## FC서울 우승 파티 빛낸 막내 손정범…"대표팀서 배우고 왔어요"
+
+> 프로축구 K리그1 우승팀 FC서울의 화려한 우승 파티가 열린 날, 그라운드의 주인공은 팀 막내인 2007년생 ...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261128048800007>) · 2026-11-28 19:25 KST · 작성·제공: 오명언
 
 ## 화물차 실린 지붕에 치여…퇴근 후 기숙사 가다 참변
 
@@ -45,6 +75,34 @@
 > 북한 해커의 소행으로 지목된 가상화폐 거래소 바이낸스 63억 달러 탈취 사건을 심리 중인 아랍에미리트 아부다비 법원이 자체 자산 보전 명령이 미국 법원이나 수사당국 명령과 충돌할…
 
 출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/abu-dhabi-binance-north-korea-us-orders-112726/8228649.html>) · 2026-11-28 01:29 KST · 작성·제공: voadigital@voanews.com \(조상진\)
+
+## 국힘, 대전서 규탄대회…“재판재개는 국민 발포명령, 靑으로 진격”
+
+> 국민의힘은 28일 대전에서 조작기소 특검법 규탄대회를 열고 이재명 대통령 탄핵과 재판 재개를 촉구하는 등 대여 공세를 이어갔다.
+
+출처: [동아일보](<https://www.donga.com/>) · [원문](<https://www.donga.com/news/Politics/article/all/20261128/135107812/1>) · 2026-11-28 19:10 KST
+
+## 추위 잊은 '서울의 봄'…FC서울, 10년 만의 성대한 우승 파티
+
+> 프로축구 K리그1에서 10년 만에 우승 트로피를 들어 올린 FC서울이 28일 안방인 서울월드컵경기장에서 성대한...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261128042600007>) · 2026-11-28 17:24 KST · 작성·제공: 오명언
+
+## 스마일게이트, 'E7WC 2026' 개최…中 '키스' 전승 우승
+
+> 스마일게이트는 28일 서울 송파구 롯데시네마 월드타워점에서 개최한 '에픽세븐 월드 챔피언십\(E7WC\) 2026...
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261128044900017>) · 2026-11-28 18:27 KST · 작성·제공: 이학범
+
+## 김용준 전 헌법재판소장 별세…지체장애인으로 첫 대법관 지내
+
+> 김용준 전 헌법재판소장이 27일 오후 7시 5분 별세했다.
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261128047900004>) · 2026-11-28 18:53 KST · 작성·제공: 이미령
+
+## \[속보\] 철도노조 준법투쟁 첫 주말…"전철 105대 20분 이상 지연"
+
+출처: [연합뉴스](<https://www.yna.co.kr/>) · [원문](<https://www.yna.co.kr/view/AKR20261128046800063>) · 2026-11-28 18:27 KST · 작성·제공: 김소연
 
 ## 주정훈, 패러태권도 그랑프리 파이널 우승…닷새 만에 설욕
 
