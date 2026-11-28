@@ -19667,10 +19667,10 @@
       "Last-Modified": "Fri, 27 Nov 2026 07:29:07 GMT"
     },
     "https://api.github.com/repos/llvm/llvm-project/releases?per_page=20": {
-      "ETag": "W/\"e9f42fb6716f308b6733d7302029774d2fbeb98abf5d92fa85d3ea7b20c1625b\""
+      "ETag": "W/\"95c04b111ae8f63a31589e587e90aad229f3d182930d0cbe3f383293da977cbc\""
     },
     "https://api.github.com/repos/zephyrproject-rtos/zephyr/releases?per_page=20": {
-      "ETag": "W/\"ef1cefa82173250d11a32784a4ba16521db53db3cc7b167f345a9b7f12637bce\""
+      "ETag": "W/\"5864ac40b79f2586f303b9b40a08c939fa062125bc70373052c3b9af892af0e0\""
     },
     "https://blog.google/intl/ko-kr/company-news/technology/genie-4-a-new-generation-of-world-simulation-kr": {},
     "https://blog.google/intl/ko-kr/rss": {},
@@ -19712,7 +19712,7 @@
     "https://deepmind.google/blog/introducing-gemini-4-hydrogen": {},
     "https://deepmind.google/blog/introducing-gemini-4-neon": {},
     "https://deepmind.google/blog/rss.xml": {
-      "ETag": "\"LZ72sQ\""
+      "ETag": "\"ybSI4Q\""
     },
     "https://deepmind.google/robots.txt": {
       "ETag": "\"LZ72sQ\""
@@ -19727,10 +19727,10 @@
     "https://futures.kaist.ac.kr/ko?c=203": {},
     "https://futures.kaist.ac.kr/robots.txt": {},
     "https://huggingface.co/api/models?author=Qwen&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"33bc8-jCMff3C7bWGkAtPyDeOK+aivk5c\""
+      "ETag": "W/\"33bc6-ttEFmPqdpk9NS8LOpPhi+9OxfMo\""
     },
     "https://huggingface.co/api/models?author=zai-org&direction=-1&full=true&limit=100&sort=createdAt": {
-      "ETag": "W/\"40187-Xva1aOzw3IsW0kBTgtioMLMvZ2I\""
+      "ETag": "W/\"40185-p/dV6CvErMvFr6Xjg1AA31Pr+X0\""
     },
     "https://huggingface.co/robots.txt": {
       "ETag": "\"a321c5472b6190720296d70b219a0ec0\"",
@@ -19767,6 +19767,7 @@
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1571": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1572": {},
     "https://ksp.etri.re.kr/ksp/plan-report/read?id=1574": {},
+    "https://ksp.etri.re.kr/ksp/plan-report/search": {},
     "https://ksp.etri.re.kr/robots.txt": {
       "ETag": "\"675ff394-475\"",
       "Last-Modified": "Mon, 16 Dec 2024 09:32:04 GMT"
@@ -19776,12 +19777,12 @@
       "Last-Modified": "Sat, 28 Nov 2026 02:06:53 GMT"
     },
     "https://news.mit.edu/rss/topic/artificial-intelligence2": {
-      "ETag": "\"1795831674\"",
-      "Last-Modified": "Sat, 28 Nov 2026 02:07:54 GMT"
+      "ETag": "\"1795862320\"",
+      "Last-Modified": "Sat, 28 Nov 2026 10:38:40 GMT"
     },
     "https://news.mit.edu/rss/topic/mitx": {
-      "ETag": "\"1795831776\"",
-      "Last-Modified": "Sat, 28 Nov 2026 02:09:36 GMT"
+      "ETag": "\"1795861998\"",
+      "Last-Modified": "Sat, 28 Nov 2026 10:33:18 GMT"
     },
     "https://openai.com/news/rss.xml": {},
     "https://openai.com/robots.txt": {
@@ -19789,13 +19790,13 @@
       "Last-Modified": "Wed, 28 Oct 2026 20:20:49 GMT"
     },
     "https://rss.arxiv.org/rss/cs.AI": {
-      "ETag": "d40c81d3b184c7d6d0dc1224000b6c4ca8b0ebd1e7e62669d436d5497f1f1271"
+      "ETag": "0f51919e665ed79d455326a1daff4c821d3d443eb1dcb2315b4064853477c33b"
     },
     "https://rss.arxiv.org/rss/cs.AR": {
-      "ETag": "74c7846e0b2568523560b4185f63258c06a8a079822b8820dd004768e568b9ae"
+      "ETag": "140ffd1e77f2b879ff8afab7ac11842e44c15574129cc680a4a3cfe0d24124c0"
     },
     "https://rss.arxiv.org/rss/eess.SP": {
-      "ETag": "98480f1e21fd1e7ddc27bfe7b9fb5897d5ca03f433a02b64ef2b6d5b646ee40f"
+      "ETag": "79ffaecc5b608fd1042e088a23f5cc8766c77c234e507b2612c2c38fd0dcc48a"
     },
     "https://www.anthropic.com/claude-fable-and-mythos-5-2": {},
     "https://www.anthropic.com/claude-haiku-5-5": {},
@@ -19920,7 +19921,7 @@
       "Last-Modified": "Thu, 22 Jan 2026 05:13:02 GMT"
     },
     "https://www.kmooc.kr/": {
-      "ETag": "\"06c36e68e88f601bd4203e86e77aaaa7a\""
+      "ETag": "\"05927b2f48ae45a469eb648708419c95f\""
     },
     "https://www.kmooc.kr/robots.txt": {
       "ETag": "\"0f77c87f977e0fcce05a6df46c885a129\""
@@ -20020,8 +20021,8 @@
     },
     "https://www.nasa.gov/robots.txt": {},
     "https://www.nasa.gov/technology/feed": {
-      "ETag": "\"3e7c3378dbb063fd36a1a31192c291f9\"",
-      "Last-Modified": "Fri, 27 Nov 2026 21:51:18 GMT"
+      "ETag": "\"b2c217a7ed8f4255412719132cb5969a\"",
+      "Last-Modified": "Sat, 28 Nov 2026 05:40:25 GMT"
     },
     "https://www.ocw-openmatters.org/robots.txt": {},
     "https://www.spri.kr/posts/view/23959?code=AI-Brief": {},
@@ -20084,7 +20085,7 @@
       "rules": "User-agent: *\r\nAllow: /\r\nDisallow:/webdata"
     },
     "https://ksp.etri.re.kr/robots.txt": {
-      "day": "2026-11-27",
+      "day": "2026-11-28",
       "rules": "Sitemap: https://ksp.etri.re.kr/ksp/sitemap.xml\n\nUser-agent: *\nDisallow: /ksp/funding/\nDisallow: /ksp/edr/\nDisallow: /ksp/rcp/\nDisallow: /ksp/git/\n\nUser-agent: Mediapartners-Google*\nDisallow: /\n\nUser-agent: UbiCrawler\nDisallow: /\n\nUser-agent: DOC\nDisallow: /\n\nUser-agent: Zao\nDisallow: /\n\nUser-agent: sitecheck.internetseer.com\nDisallow: /\n\nUser-agent: Zealbot\nDisallow: /\n\nUser-agent: MSIECrawler\nDisallow: /\n\nUser-agent: SiteSnagger\nDisallow: /\n\nUser-agent: WebStripper\nDisallow: /\n\nUser-agent: WebCopier\nDisallow: /\n\nUser-agent: Fetch\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: Teleport\nDisallow: /\n\nUser-agent: TeleportPro\nDisallow: /\n\nUser-agent: WebZIP\nDisallow: /\n\nUser-agent: linko\nDisallow: /\n\nUser-agent: HTTrack\nDisallow: /\n\nUser-agent: Microsoft.URL.Control\nDisallow: /\n\nUser-agent: Xenu\nDisallow: /\n\nUser-agent: larbin\nDisallow: /\n\nUser-agent: libwww\nDisallow: /\n\nUser-agent: ZyBORG\nDisallow: /\n\nUser-agent: Download Ninja\nDisallow: /\n\nUser-agent: fast\nDisallow: /\n\nUser-agent: grub-client\nDisallow: /\n\nUser-agent: k2spider\nDisallow: /\n\nUser-agent: NPBot\nDisallow: /\n\nUser-agent: WebReaper\nDisallow: /\n\n\n"
     },
     "https://news.mit.edu/robots.txt": {
