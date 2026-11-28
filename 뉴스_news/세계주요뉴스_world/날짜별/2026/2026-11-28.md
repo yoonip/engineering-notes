@@ -1,14 +1,32 @@
 # 세계 주요뉴스
 
-갱신: 2026-11-28 04:28 KST
+갱신: 2026-11-28 11:41 KST
 
 [뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news>) · [날짜별 뉴스](<https://github.com/yoonip/engineering-notes/tree/main/뉴스_news/세계주요뉴스_world/날짜별>)
+
+## 지난해 日 '정치자금 파티' 수입 다시 급증…전년보다 37% 증가
+
+> 일본 집권 자민당 일부 파벌의 정치자금 문제가 불거진 후 줄어들었던 일본 정치권의 정치자금 모금 행사\(파티\)...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261128026300073>) · 2026-11-28 11:19 KST · 작성·제공: 이도연
 
 ## 우파 스웨덴 총리, 총선 지고도 연임하나…'킹메이커' 지지 확보
 
 > 총선을 치른 지 2개월이 지나도록 정부 구성에 난항을 겪고 있는 스웨덴에서 울프 크리스테르손 현 총리의 연...
 
 출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261128004000098>) · 2026-11-28 02:53 KST · 작성·제공: 현윤경
+
+## 美 '블프' 온라인 소비 역대 최대 전망…고물가에 할인상품 몰려
+
+> 미국 최대 쇼핑 행사인 블랙프라이데이를 맞아 소비자들이 대규모 할인에 몰리면서 온라인 쇼핑액이 역대 최대치를...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261128013500072>) · 2026-11-28 07:41 KST · 작성·제공: 임수정
+
+## 우간다서 mRNA 에볼라 백신 임상 착수…아프리카 최초
+
+> 올해 콩고민주공화국\(민주콩고\)에 에볼라 바이러스가 크게 확산한 가운데 이웃 국가인 우간다에서 메신저 리보핵산\(...
+
+출처: [연합뉴스 국제](<https://www.yna.co.kr/international/all>) · [원문](<https://www.yna.co.kr/view/AKR20261128021400009>) · 2026-11-28 09:41 KST · 작성·제공: 오수진
 
 ## 후티 반군 “사우디 공습으로 11명 사망”…사우디·튀르키예·파키스탄, 방위 회담 개최
 
@@ -46,6 +64,30 @@
 
 출처: [SBS 뉴스](<https://news.sbs.co.kr/>) · [원문](<https://news.sbs.co.kr/news/endPage.do?news_id=N1008867282&plink=RSSLINK&cooper=RSSREADER>) · 2026-11-27 22:01 KST · 작성·제공: lucaside@sbs.co.kr\(이한석\)
 
+## 베네수엘라 신임 대법원 법관 선발…역대 최대 규모 후보들 지원
+
+> 베네수엘라 대법원에 해당하는 최고재판소 개편 작업이 중대한 국면에 접어들었습니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/tv-pkg-venezuela-new-tribunal/8228717.html>) · 2026-11-28 04:20 KST
+
+## 미군, 이란 봉쇄 위반 시도 선박 무력화
+
+> 미군은 지난 7월 중순 재개된 이란 항구와 석유 터미널에 대한 미국의 해상 봉쇄를 위반하려던 상선을 오만만에서 무력화했다고 밝혔습니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/us-iran-blockade-112726/8228745.html>) · 2026-11-28 05:31 KST · 작성·제공: voadigital@voanews.com \(VOA 뉴스\)
+
+## 미국서 사상 첫 '쿠르드스기빙' 개최…버지니아 쿠르드 커뮤니티 화합의 장 열려
+
+> 지난 주말 미국 북부 버지니아 지역의 쿠르드인들이 미국의 추수감사절 전통을 본뜬 새로운 축하 행사에 모였습니다.
+
+출처: [VOA 한국어 · 세계](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/kurdsgiving-tv-pkg/8228730.html>) · 2026-11-28 04:55 KST
+
+## 미 국무부 “한국 공정위 공세, 미한동맹 잠재력 훼손”
+
+> 미국 기업들에 대한 한국 공정거래위원회의 조치가 미한동맹의 발전 가능성을 훼손하고 있다고 국무부가 밝혔습니다.
+
+출처: [VOA 한국어 · 한반도](<https://voakorea.com/>) · [원문](<https://www.voakorea.com/a/8228748.html>) · 2026-11-28 05:46 KST · 작성·제공: voadigital@voanews.com \(조진우\)
+
 ## 美추수감사절 덮친 시속 112km ‘괴물 강풍’… 90만여 곳 전기 끊기고 항공기 400편 결항
 
 > 미국 추수감사절인 26일\(현지 시간\) 동부 일대를 강타한 폭풍으로 항공편 결항, 대규모 정전 및 침수 피해가 속출했다.
@@ -56,6 +98,9 @@
 
 - [UN rapporteur Albanese in limbo at airport after being denied entry to Costa Rica](<https://abcnews.com/International/wireStory/rapporteur-albanese-limbo-airport-after-denied-entry-costa-138484778>) · ABC News 미국
 - [Mexico files formal complaint to US over DEA tip line](<https://abcnews.com/International/wireStory/mexico-files-formal-complaint-us-dea-tip-line-138484649>) · ABC News 미국
+- [Polls open across Taiwan in closely watched local elections](<https://abcnews.com/International/wireStory/taiwan-holds-elections-choose-mayors-local-leaders-138489345>) · ABC News 미국
+- [Prosecutors ask for 25 years for man who sold products used by 93 to kill themselves](<https://abcnews.com/International/wireStory/prosecutors-25-years-canadian-man-sold-products-93-138487262>) · ABC News 미국
+- [Africa: 5 Hunger Hotspots the World Cannot Afford to Ignore in 2027](<https://allafrica.com/stories/202611270344.html>) · AllAfrica · allAfrica.com
 
 기사 개요는 각 매체가 공식 피드로 제공한 내용을 기준으로 합니다. 본문의 상세 내용과 정정 사항은 원문에서 확인하실 수 있습니다.
 
